@@ -205,29 +205,22 @@ object AMap {
     }
     object Building {
       
-      @scala.inline
-      def apply(floor: Double, floor_details: FloorDetails, id: String, lnglat: LngLat, name: String): Building = {
+      inline def apply(floor: Double, floor_details: FloorDetails, id: String, lnglat: LngLat, name: String): Building = {
         val __obj = js.Dynamic.literal(floor = floor.asInstanceOf[js.Any], floor_details = floor_details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[Building]
       }
       
-      @scala.inline
-      implicit class BuildingMutableBuilder[Self <: Building] (val x: Self) extends AnyVal {
+      extension [Self <: Building](x: Self) {
         
-        @scala.inline
-        def setFloor(value: Double): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
+        inline def setFloor(value: Double): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFloor_details(value: FloorDetails): Self = StObject.set(x, "floor_details", value.asInstanceOf[js.Any])
+        inline def setFloor_details(value: FloorDetails): Self = StObject.set(x, "floor_details", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
+        inline def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -245,8 +238,7 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         click: MouseEvent[click],
         complete: Event_[complete, Unit],
         floor_complete: Event_[floor_complete, SearchResult],
@@ -257,23 +249,17 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setClick(value: MouseEvent[click]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+        inline def setClick(value: MouseEvent[click]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setComplete(value: Event_[complete, Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+        inline def setComplete(value: Event_[complete, Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFloor_complete(value: Event_[floor_complete, SearchResult]): Self = StObject.set(x, "floor_complete", value.asInstanceOf[js.Any])
+        inline def setFloor_complete(value: Event_[floor_complete, SearchResult]): Self = StObject.set(x, "floor_complete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMouseout(value: MouseEvent[mouseout]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
+        inline def setMouseout(value: MouseEvent[mouseout]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMouseover(value: MouseEvent[mouseover]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
+        inline def setMouseover(value: MouseEvent[mouseover]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
       }
     }
     
@@ -296,32 +282,24 @@ object AMap {
     }
     object FloorDetails {
       
-      @scala.inline
-      def apply(floor_indexs: js.Array[Double], floor_names: js.Array[String], floor_nonas: js.Array[String]): FloorDetails = {
+      inline def apply(floor_indexs: js.Array[Double], floor_names: js.Array[String], floor_nonas: js.Array[String]): FloorDetails = {
         val __obj = js.Dynamic.literal(floor_indexs = floor_indexs.asInstanceOf[js.Any], floor_names = floor_names.asInstanceOf[js.Any], floor_nonas = floor_nonas.asInstanceOf[js.Any])
         __obj.asInstanceOf[FloorDetails]
       }
       
-      @scala.inline
-      implicit class FloorDetailsMutableBuilder[Self <: FloorDetails] (val x: Self) extends AnyVal {
+      extension [Self <: FloorDetails](x: Self) {
         
-        @scala.inline
-        def setFloor_indexs(value: js.Array[Double]): Self = StObject.set(x, "floor_indexs", value.asInstanceOf[js.Any])
+        inline def setFloor_indexs(value: js.Array[Double]): Self = StObject.set(x, "floor_indexs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFloor_indexsVarargs(value: Double*): Self = StObject.set(x, "floor_indexs", js.Array(value :_*))
+        inline def setFloor_indexsVarargs(value: Double*): Self = StObject.set(x, "floor_indexs", js.Array(value :_*))
         
-        @scala.inline
-        def setFloor_names(value: js.Array[String]): Self = StObject.set(x, "floor_names", value.asInstanceOf[js.Any])
+        inline def setFloor_names(value: js.Array[String]): Self = StObject.set(x, "floor_names", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFloor_namesVarargs(value: String*): Self = StObject.set(x, "floor_names", js.Array(value :_*))
+        inline def setFloor_namesVarargs(value: String*): Self = StObject.set(x, "floor_names", js.Array(value :_*))
         
-        @scala.inline
-        def setFloor_nonas(value: js.Array[String]): Self = StObject.set(x, "floor_nonas", value.asInstanceOf[js.Any])
+        inline def setFloor_nonas(value: js.Array[String]): Self = StObject.set(x, "floor_nonas", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFloor_nonasVarargs(value: String*): Self = StObject.set(x, "floor_nonas", js.Array(value :_*))
+        inline def setFloor_nonasVarargs(value: String*): Self = StObject.set(x, "floor_nonas", js.Array(value :_*))
       }
     }
     
@@ -373,86 +351,60 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setAlaysShow(value: Boolean): Self = StObject.set(x, "alaysShow", value.asInstanceOf[js.Any])
+        inline def setAlaysShow(value: Boolean): Self = StObject.set(x, "alaysShow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlaysShowUndefined: Self = StObject.set(x, "alaysShow", js.undefined)
+        inline def setAlaysShowUndefined: Self = StObject.set(x, "alaysShow", js.undefined)
         
-        @scala.inline
-        def setAutoLoadBuildingsInTile(value: Boolean): Self = StObject.set(x, "autoLoadBuildingsInTile", value.asInstanceOf[js.Any])
+        inline def setAutoLoadBuildingsInTile(value: Boolean): Self = StObject.set(x, "autoLoadBuildingsInTile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoLoadBuildingsInTileUndefined: Self = StObject.set(x, "autoLoadBuildingsInTile", js.undefined)
+        inline def setAutoLoadBuildingsInTileUndefined: Self = StObject.set(x, "autoLoadBuildingsInTile", js.undefined)
         
-        @scala.inline
-        def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+        inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+        inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
         
-        @scala.inline
-        def setDisableHoverMarker(value: Boolean): Self = StObject.set(x, "disableHoverMarker", value.asInstanceOf[js.Any])
+        inline def setDisableHoverMarker(value: Boolean): Self = StObject.set(x, "disableHoverMarker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableHoverMarkerUndefined: Self = StObject.set(x, "disableHoverMarker", js.undefined)
+        inline def setDisableHoverMarkerUndefined: Self = StObject.set(x, "disableHoverMarker", js.undefined)
         
-        @scala.inline
-        def setDisableIconRender(value: Boolean): Self = StObject.set(x, "disableIconRender", value.asInstanceOf[js.Any])
+        inline def setDisableIconRender(value: Boolean): Self = StObject.set(x, "disableIconRender", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableIconRenderUndefined: Self = StObject.set(x, "disableIconRender", js.undefined)
+        inline def setDisableIconRenderUndefined: Self = StObject.set(x, "disableIconRender", js.undefined)
         
-        @scala.inline
-        def setDisableLabelRender(value: Boolean): Self = StObject.set(x, "disableLabelRender", value.asInstanceOf[js.Any])
+        inline def setDisableLabelRender(value: Boolean): Self = StObject.set(x, "disableLabelRender", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableLabelRenderUndefined: Self = StObject.set(x, "disableLabelRender", js.undefined)
+        inline def setDisableLabelRenderUndefined: Self = StObject.set(x, "disableLabelRender", js.undefined)
         
-        @scala.inline
-        def setFeaturezIndex(value: Double): Self = StObject.set(x, "featurezIndex", value.asInstanceOf[js.Any])
+        inline def setFeaturezIndex(value: Double): Self = StObject.set(x, "featurezIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFeaturezIndexUndefined: Self = StObject.set(x, "featurezIndex", js.undefined)
+        inline def setFeaturezIndexUndefined: Self = StObject.set(x, "featurezIndex", js.undefined)
         
-        @scala.inline
-        def setHideFloorBar(value: Boolean): Self = StObject.set(x, "hideFloorBar", value.asInstanceOf[js.Any])
+        inline def setHideFloorBar(value: Boolean): Self = StObject.set(x, "hideFloorBar", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHideFloorBarUndefined: Self = StObject.set(x, "hideFloorBar", js.undefined)
+        inline def setHideFloorBarUndefined: Self = StObject.set(x, "hideFloorBar", js.undefined)
         
-        @scala.inline
-        def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+        inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+        inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
         
-        @scala.inline
-        def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+        inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+        inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
         
-        @scala.inline
-        def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+        inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+        inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
         
-        @scala.inline
-        def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
+        inline def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
+        inline def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
       }
     }
     
@@ -471,23 +423,18 @@ object AMap {
     }
     object SearchErrorResult {
       
-      @scala.inline
-      def apply(error: Error, id: String): SearchErrorResult = {
+      inline def apply(error: Error, id: String): SearchErrorResult = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 1)
         __obj.asInstanceOf[SearchErrorResult]
       }
       
-      @scala.inline
-      implicit class SearchErrorResultMutableBuilder[Self <: SearchErrorResult] (val x: Self) extends AnyVal {
+      extension [Self <: SearchErrorResult](x: Self) {
         
-        @scala.inline
-        def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
     
@@ -498,14 +445,12 @@ object AMap {
     trait SearchResult extends StObject
     object SearchResult {
       
-      @scala.inline
-      def SearchErrorResult(error: Error, id: String): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchErrorResult = {
+      inline def SearchErrorResult(error: Error, id: String): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchErrorResult = {
         val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 1)
         __obj.asInstanceOf[typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchErrorResult]
       }
       
-      @scala.inline
-      def SearchSuccessResult(building: Building, id: String): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchSuccessResult = {
+      inline def SearchSuccessResult(building: Building, id: String): typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchSuccessResult = {
         val __obj = js.Dynamic.literal(building = building.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 0)
         __obj.asInstanceOf[typings.amapJsApiIndoorMap.AMap.IndoorMap.SearchSuccessResult]
       }
@@ -529,23 +474,18 @@ object AMap {
     }
     object SearchSuccessResult {
       
-      @scala.inline
-      def apply(building: Building, id: String): SearchSuccessResult = {
+      inline def apply(building: Building, id: String): SearchSuccessResult = {
         val __obj = js.Dynamic.literal(building = building.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], status = 0)
         __obj.asInstanceOf[SearchSuccessResult]
       }
       
-      @scala.inline
-      implicit class SearchSuccessResultMutableBuilder[Self <: SearchSuccessResult] (val x: Self) extends AnyVal {
+      extension [Self <: SearchSuccessResult](x: Self) {
         
-        @scala.inline
-        def setBuilding(value: Building): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
+        inline def setBuilding(value: Building): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: `0`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: `0`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
     
@@ -583,8 +523,7 @@ object AMap {
     }
     object Shop {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         building_id: String,
         category: ShopCategory,
         id: String,
@@ -596,26 +535,19 @@ object AMap {
         __obj.asInstanceOf[Shop]
       }
       
-      @scala.inline
-      implicit class ShopMutableBuilder[Self <: Shop] (val x: Self) extends AnyVal {
+      extension [Self <: Shop](x: Self) {
         
-        @scala.inline
-        def setBuilding_id(value: String): Self = StObject.set(x, "building_id", value.asInstanceOf[js.Any])
+        inline def setBuilding_id(value: String): Self = StObject.set(x, "building_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCategory(value: ShopCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+        inline def setCategory(value: ShopCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
+        inline def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPoiId(value: String): Self = StObject.set(x, "poiId", value.asInstanceOf[js.Any])
+        inline def setPoiId(value: String): Self = StObject.set(x, "poiId", value.asInstanceOf[js.Any])
       }
     }
     
@@ -627,14 +559,11 @@ object AMap {
     trait ShopCategory extends StObject
     object ShopCategory {
       
-      @scala.inline
-      def connection: typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.connection = "connection".asInstanceOf[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.connection]
+      inline def connection: typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.connection = "connection".asInstanceOf[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.connection]
       
-      @scala.inline
-      def public: typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.public = "public".asInstanceOf[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.public]
+      inline def public: typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.public = "public".asInstanceOf[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.public]
       
-      @scala.inline
-      def shop: typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.shop = "shop".asInstanceOf[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.shop]
+      inline def shop: typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.shop = "shop".asInstanceOf[typings.amapJsApiIndoorMap.amapJsApiIndoorMapStrings.shop]
     }
   }
 }

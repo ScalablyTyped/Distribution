@@ -14,22 +14,17 @@ trait ListMoveOp
 }
 object ListMoveOp {
   
-  @scala.inline
-  def apply(lm: js.Any, p: Path): ListMoveOp = {
+  inline def apply(lm: js.Any, p: Path): ListMoveOp = {
     val __obj = js.Dynamic.literal(lm = lm.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMoveOp]
   }
   
-  @scala.inline
-  implicit class ListMoveOpMutableBuilder[Self <: ListMoveOp] (val x: Self) extends AnyVal {
+  extension [Self <: ListMoveOp](x: Self) {
     
-    @scala.inline
-    def setLm(value: js.Any): Self = StObject.set(x, "lm", value.asInstanceOf[js.Any])
+    inline def setLm(value: js.Any): Self = StObject.set(x, "lm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
   }
 }

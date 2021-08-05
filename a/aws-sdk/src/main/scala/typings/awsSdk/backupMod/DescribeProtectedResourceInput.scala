@@ -13,16 +13,13 @@ trait DescribeProtectedResourceInput extends StObject {
 }
 object DescribeProtectedResourceInput {
   
-  @scala.inline
-  def apply(ResourceArn: ARN): DescribeProtectedResourceInput = {
+  inline def apply(ResourceArn: ARN): DescribeProtectedResourceInput = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeProtectedResourceInput]
   }
   
-  @scala.inline
-  implicit class DescribeProtectedResourceInputMutableBuilder[Self <: DescribeProtectedResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProtectedResourceInput](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

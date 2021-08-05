@@ -20,8 +20,7 @@ trait ListDataValidationFailure
 }
 object ListDataValidationFailure {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -37,22 +36,16 @@ object ListDataValidationFailure {
     __obj.asInstanceOf[ListDataValidationFailure]
   }
   
-  @scala.inline
-  implicit class ListDataValidationFailureMutableBuilder[Self <: ListDataValidationFailure] (val x: Self) extends AnyVal {
+  extension [Self <: ListDataValidationFailure](x: Self) {
     
-    @scala.inline
-    def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
+    inline def setGet_displayName(value: () => String): Self = StObject.set(x, "get_displayName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_message(value: () => String): Self = StObject.set(x, "get_message", js.Any.fromFunction0(value))
+    inline def setGet_message(value: () => String): Self = StObject.set(x, "get_message", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_reason(value: () => ListDataValidationFailureReason): Self = StObject.set(x, "get_reason", js.Any.fromFunction0(value))
+    inline def setGet_reason(value: () => ListDataValidationFailureReason): Self = StObject.set(x, "get_reason", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_validationType(value: () => ListDataValidationType): Self = StObject.set(x, "get_validationType", js.Any.fromFunction0(value))
+    inline def setGet_validationType(value: () => ListDataValidationType): Self = StObject.set(x, "get_validationType", js.Any.fromFunction0(value))
   }
 }

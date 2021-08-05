@@ -76,119 +76,82 @@ object mod extends Shortcut {
   }
   object AuthenticateOptions {
     
-    @scala.inline
-    def apply(): AuthenticateOptions = {
+    inline def apply(): AuthenticateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthenticateOptions]
     }
     
-    @scala.inline
-    implicit class AuthenticateOptionsMutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticateOptions](x: Self) {
       
-      @scala.inline
-      def setAssignProperty(value: String): Self = StObject.set(x, "assignProperty", value.asInstanceOf[js.Any])
+      inline def setAssignProperty(value: String): Self = StObject.set(x, "assignProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignPropertyUndefined: Self = StObject.set(x, "assignProperty", js.undefined)
+      inline def setAssignPropertyUndefined: Self = StObject.set(x, "assignProperty", js.undefined)
       
-      @scala.inline
-      def setAuthInfo(value: Boolean): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
+      inline def setAuthInfo(value: Boolean): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
+      inline def setAuthInfoUndefined: Self = StObject.set(x, "authInfo", js.undefined)
       
-      @scala.inline
-      def setFailWithError(value: Boolean): Self = StObject.set(x, "failWithError", value.asInstanceOf[js.Any])
+      inline def setFailWithError(value: Boolean): Self = StObject.set(x, "failWithError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailWithErrorUndefined: Self = StObject.set(x, "failWithError", js.undefined)
+      inline def setFailWithErrorUndefined: Self = StObject.set(x, "failWithError", js.undefined)
       
-      @scala.inline
-      def setFailureFlash(value: String | Boolean): Self = StObject.set(x, "failureFlash", value.asInstanceOf[js.Any])
+      inline def setFailureFlash(value: String | Boolean): Self = StObject.set(x, "failureFlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureFlashUndefined: Self = StObject.set(x, "failureFlash", js.undefined)
+      inline def setFailureFlashUndefined: Self = StObject.set(x, "failureFlash", js.undefined)
       
-      @scala.inline
-      def setFailureMessage(value: Boolean | String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
+      inline def setFailureMessage(value: Boolean | String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureMessageUndefined: Self = StObject.set(x, "failureMessage", js.undefined)
+      inline def setFailureMessageUndefined: Self = StObject.set(x, "failureMessage", js.undefined)
       
-      @scala.inline
-      def setFailureRedirect(value: String): Self = StObject.set(x, "failureRedirect", value.asInstanceOf[js.Any])
+      inline def setFailureRedirect(value: String): Self = StObject.set(x, "failureRedirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureRedirectUndefined: Self = StObject.set(x, "failureRedirect", js.undefined)
+      inline def setFailureRedirectUndefined: Self = StObject.set(x, "failureRedirect", js.undefined)
       
-      @scala.inline
-      def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
+      inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
       
-      @scala.inline
-      def setPauseStream(value: Boolean): Self = StObject.set(x, "pauseStream", value.asInstanceOf[js.Any])
+      inline def setPauseStream(value: Boolean): Self = StObject.set(x, "pauseStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseStreamUndefined: Self = StObject.set(x, "pauseStream", js.undefined)
+      inline def setPauseStreamUndefined: Self = StObject.set(x, "pauseStream", js.undefined)
       
-      @scala.inline
-      def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
-      @scala.inline
-      def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
       
-      @scala.inline
-      def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setSuccessFlash(value: String | Boolean): Self = StObject.set(x, "successFlash", value.asInstanceOf[js.Any])
+      inline def setSuccessFlash(value: String | Boolean): Self = StObject.set(x, "successFlash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessFlashUndefined: Self = StObject.set(x, "successFlash", js.undefined)
+      inline def setSuccessFlashUndefined: Self = StObject.set(x, "successFlash", js.undefined)
       
-      @scala.inline
-      def setSuccessMessage(value: Boolean | String): Self = StObject.set(x, "successMessage", value.asInstanceOf[js.Any])
+      inline def setSuccessMessage(value: Boolean | String): Self = StObject.set(x, "successMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessMessageUndefined: Self = StObject.set(x, "successMessage", js.undefined)
+      inline def setSuccessMessageUndefined: Self = StObject.set(x, "successMessage", js.undefined)
       
-      @scala.inline
-      def setSuccessRedirect(value: String): Self = StObject.set(x, "successRedirect", value.asInstanceOf[js.Any])
+      inline def setSuccessRedirect(value: String): Self = StObject.set(x, "successRedirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessRedirectUndefined: Self = StObject.set(x, "successRedirect", js.undefined)
+      inline def setSuccessRedirectUndefined: Self = StObject.set(x, "successRedirect", js.undefined)
       
-      @scala.inline
-      def setSuccessReturnToOrRedirect(value: String): Self = StObject.set(x, "successReturnToOrRedirect", value.asInstanceOf[js.Any])
+      inline def setSuccessReturnToOrRedirect(value: String): Self = StObject.set(x, "successReturnToOrRedirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessReturnToOrRedirectUndefined: Self = StObject.set(x, "successReturnToOrRedirect", js.undefined)
+      inline def setSuccessReturnToOrRedirectUndefined: Self = StObject.set(x, "successReturnToOrRedirect", js.undefined)
       
-      @scala.inline
-      def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
+      inline def setUserProperty(value: String): Self = StObject.set(x, "userProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPropertyUndefined: Self = StObject.set(x, "userProperty", js.undefined)
+      inline def setUserPropertyUndefined: Self = StObject.set(x, "userProperty", js.undefined)
     }
   }
   
@@ -359,53 +322,38 @@ object mod extends Shortcut {
   }
   object Profile {
     
-    @scala.inline
-    def apply(displayName: String, id: String, provider: String): Profile = {
+    inline def apply(displayName: String, id: String, provider: String): Profile = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[Profile]
     }
     
-    @scala.inline
-    implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+    extension [Self <: Profile](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmails(value: js.Array[Type]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+      inline def setEmails(value: js.Array[Type]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
+      inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
       
-      @scala.inline
-      def setEmailsVarargs(value: Type*): Self = StObject.set(x, "emails", js.Array(value :_*))
+      inline def setEmailsVarargs(value: Type*): Self = StObject.set(x, "emails", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPhotos(value: js.Array[Value]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+      inline def setPhotos(value: js.Array[Value]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
+      inline def setPhotosUndefined: Self = StObject.set(x, "photos", js.undefined)
       
-      @scala.inline
-      def setPhotosVarargs(value: Value*): Self = StObject.set(x, "photos", js.Array(value :_*))
+      inline def setPhotosVarargs(value: Value*): Self = StObject.set(x, "photos", js.Array(value :_*))
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   

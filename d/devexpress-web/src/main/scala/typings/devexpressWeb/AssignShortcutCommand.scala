@@ -20,16 +20,13 @@ trait AssignShortcutCommand
 }
 object AssignShortcutCommand {
   
-  @scala.inline
-  def apply(execute: (Double, js.Function0[Unit]) => Boolean, getState: () => SimpleCommandState): AssignShortcutCommand = {
+  inline def apply(execute: (Double, js.Function0[Unit]) => Boolean, getState: () => SimpleCommandState): AssignShortcutCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[AssignShortcutCommand]
   }
   
-  @scala.inline
-  implicit class AssignShortcutCommandMutableBuilder[Self <: AssignShortcutCommand] (val x: Self) extends AnyVal {
+  extension [Self <: AssignShortcutCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: (Double, js.Function0[Unit]) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
+    inline def setExecute(value: (Double, js.Function0[Unit]) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
   }
 }

@@ -16,25 +16,19 @@ trait ColorLevel extends StObject {
 }
 object ColorLevel {
   
-  @scala.inline
-  def apply(): ColorLevel = {
+  inline def apply(): ColorLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorLevel]
   }
   
-  @scala.inline
-  implicit class ColorLevelMutableBuilder[Self <: ColorLevel] (val x: Self) extends AnyVal {
+  extension [Self <: ColorLevel](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setLevel(value: close | high | low | open): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: close | high | low | open): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

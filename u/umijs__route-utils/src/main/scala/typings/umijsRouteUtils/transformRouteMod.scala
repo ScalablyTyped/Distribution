@@ -21,47 +21,36 @@ object transformRouteMod {
     * @param ignoreFilter 是否筛选掉不展示的 menuItem 项，plugin-layout需要所有项目来计算布局样式
     * @returns { breadcrumb, menuData}
     */
-  @scala.inline
-  def default(routes: js.Array[Route]): Breadcrumb = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any]).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(routes: js.Array[Route], locale: Boolean): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(routes: js.Array[Route]): Breadcrumb = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any]).asInstanceOf[Breadcrumb]
+  inline def default(routes: js.Array[Route], locale: Boolean): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  inline def default(
     routes: js.Array[Route],
     locale: Boolean,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(
     routes: js.Array[Route],
     locale: Boolean,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     ignoreFilter: Boolean
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], ignoreFilter.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(routes: js.Array[Route], locale: Boolean, formatMessage: Unit, ignoreFilter: Boolean): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], ignoreFilter.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(routes: js.Array[Route], locale: Boolean, formatMessage: Unit, ignoreFilter: Boolean): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], ignoreFilter.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  inline def default(
     routes: js.Array[Route],
     locale: Unit,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String]
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(
+  inline def default(
     routes: js.Array[Route],
     locale: Unit,
     formatMessage: js.Function1[/* message */ MessageDescriptor, String],
     ignoreFilter: Boolean
   ): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], ignoreFilter.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
-  @scala.inline
-  def default(routes: js.Array[Route], locale: Unit, formatMessage: Unit, ignoreFilter: Boolean): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], ignoreFilter.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
+  inline def default(routes: js.Array[Route], locale: Unit, formatMessage: Unit, ignoreFilter: Boolean): Breadcrumb = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routes.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], formatMessage.asInstanceOf[js.Any], ignoreFilter.asInstanceOf[js.Any])).asInstanceOf[Breadcrumb]
   
-  @scala.inline
-  def getKeyByPath(item: MenuDataItem): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyByPath")(item.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def getKeyByPath(item: MenuDataItem): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyByPath")(item.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def isUrl(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUrl(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def stripQueryStringAndHashFromPath(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripQueryStringAndHashFromPath")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stripQueryStringAndHashFromPath(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripQueryStringAndHashFromPath")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

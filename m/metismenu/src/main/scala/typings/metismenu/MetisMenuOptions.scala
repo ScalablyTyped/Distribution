@@ -18,43 +18,31 @@ trait MetisMenuOptions extends StObject {
 }
 object MetisMenuOptions {
   
-  @scala.inline
-  def apply(): MetisMenuOptions = {
+  inline def apply(): MetisMenuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetisMenuOptions]
   }
   
-  @scala.inline
-  implicit class MetisMenuOptionsMutableBuilder[Self <: MetisMenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MetisMenuOptions](x: Self) {
     
-    @scala.inline
-    def setParentTrigger(value: String): Self = StObject.set(x, "parentTrigger", value.asInstanceOf[js.Any])
+    inline def setParentTrigger(value: String): Self = StObject.set(x, "parentTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentTriggerUndefined: Self = StObject.set(x, "parentTrigger", js.undefined)
+    inline def setParentTriggerUndefined: Self = StObject.set(x, "parentTrigger", js.undefined)
     
-    @scala.inline
-    def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+    inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     
-    @scala.inline
-    def setSubMenu(value: String): Self = StObject.set(x, "subMenu", value.asInstanceOf[js.Any])
+    inline def setSubMenu(value: String): Self = StObject.set(x, "subMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubMenuUndefined: Self = StObject.set(x, "subMenu", js.undefined)
+    inline def setSubMenuUndefined: Self = StObject.set(x, "subMenu", js.undefined)
     
-    @scala.inline
-    def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    inline def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
-    @scala.inline
-    def setTriggerElement(value: String): Self = StObject.set(x, "triggerElement", value.asInstanceOf[js.Any])
+    inline def setTriggerElement(value: String): Self = StObject.set(x, "triggerElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerElementUndefined: Self = StObject.set(x, "triggerElement", js.undefined)
+    inline def setTriggerElementUndefined: Self = StObject.set(x, "triggerElement", js.undefined)
   }
 }

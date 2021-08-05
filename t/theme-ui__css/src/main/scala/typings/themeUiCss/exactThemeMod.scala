@@ -11,6 +11,5 @@ object exactThemeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeTheme[T /* <: Theme */](t: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTheme")(t.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def makeTheme[T /* <: Theme */](t: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTheme")(t.asInstanceOf[js.Any]).asInstanceOf[T]
 }

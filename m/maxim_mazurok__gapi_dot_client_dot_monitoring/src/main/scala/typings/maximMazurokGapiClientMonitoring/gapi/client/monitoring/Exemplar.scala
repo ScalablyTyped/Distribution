@@ -28,17 +28,14 @@ trait Exemplar extends StObject {
 }
 object Exemplar {
   
-  @scala.inline
-  def apply(): Exemplar = {
+  inline def apply(): Exemplar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Exemplar]
   }
   
-  @scala.inline
-  implicit class ExemplarMutableBuilder[Self <: Exemplar] (val x: Self) extends AnyVal {
+  extension [Self <: Exemplar](x: Self) {
     
-    @scala.inline
-    def setAttachments(
+    inline def setAttachments(
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
@@ -46,26 +43,20 @@ object Exemplar {
         ]
     ): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(
+    inline def setAttachmentsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Exemplar & TopLevel[js.Any])*
     ): Self = StObject.set(x, "attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

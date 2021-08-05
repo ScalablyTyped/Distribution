@@ -12,27 +12,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mailto(recipients: js.Array[String], fields: StringDictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mailto(recipients: js.Array[String], fields: StringDictionary[String], recipientsSeparator: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], recipientsSeparator.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mailto(
+  inline def mailto(recipients: js.Array[String], fields: StringDictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mailto(recipients: js.Array[String], fields: StringDictionary[String], recipientsSeparator: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], recipientsSeparator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def mailto(
     recipients: js.Array[String],
     fields: StringDictionary[String],
     recipientsSeparator: String,
     callback: js.Function1[/* err */ Error, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], recipientsSeparator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def mailto(
+  inline def mailto(
     recipients: js.Array[String],
     fields: StringDictionary[String],
     recipientsSeparator: Unit,
     callback: js.Function1[/* err */ Error, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mailto")(recipients.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], recipientsSeparator.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def open(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def open(url: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def open(url: String, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

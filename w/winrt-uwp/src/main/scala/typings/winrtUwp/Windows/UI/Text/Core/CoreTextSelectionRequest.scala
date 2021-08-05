@@ -22,22 +22,17 @@ trait CoreTextSelectionRequest extends StObject {
 }
 object CoreTextSelectionRequest {
   
-  @scala.inline
-  def apply(getDeferral: () => Deferral, isCanceled: Boolean, selection: CoreTextRange): CoreTextSelectionRequest = {
+  inline def apply(getDeferral: () => Deferral, isCanceled: Boolean, selection: CoreTextRange): CoreTextSelectionRequest = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), isCanceled = isCanceled.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreTextSelectionRequest]
   }
   
-  @scala.inline
-  implicit class CoreTextSelectionRequestMutableBuilder[Self <: CoreTextSelectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CoreTextSelectionRequest](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelection(value: CoreTextRange): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: CoreTextRange): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

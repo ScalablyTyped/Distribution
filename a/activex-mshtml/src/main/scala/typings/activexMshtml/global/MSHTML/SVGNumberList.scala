@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGNumberList")
 @js.native
-class SVGNumberList protected ()
+/* private */ class SVGNumberList ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGNumberList {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGNumberList_typekey")
   var MSHTMLDotSVGNumberList_typekey: typings.activexMshtml.MSHTML.SVGNumberList = js.native
   

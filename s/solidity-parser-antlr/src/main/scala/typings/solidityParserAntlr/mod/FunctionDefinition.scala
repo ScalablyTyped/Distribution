@@ -39,8 +39,7 @@ trait FunctionDefinition
 }
 object FunctionDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isConstructor: Boolean,
     modifiers: js.Array[ModifierInvocation],
     parameters: js.Array[VariableDeclaration],
@@ -51,55 +50,38 @@ object FunctionDefinition {
     __obj.asInstanceOf[FunctionDefinition]
   }
   
-  @scala.inline
-  implicit class FunctionDefinitionMutableBuilder[Self <: FunctionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionDefinition](x: Self) {
     
-    @scala.inline
-    def setBody(value: Block): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Block): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setIsConstructor(value: Boolean): Self = StObject.set(x, "isConstructor", value.asInstanceOf[js.Any])
+    inline def setIsConstructor(value: Boolean): Self = StObject.set(x, "isConstructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiers(value: js.Array[ModifierInvocation]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[ModifierInvocation]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: ModifierInvocation*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: ModifierInvocation*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnParameters(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "returnParameters", value.asInstanceOf[js.Any])
+    inline def setReturnParameters(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "returnParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnParametersUndefined: Self = StObject.set(x, "returnParameters", js.undefined)
+    inline def setReturnParametersUndefined: Self = StObject.set(x, "returnParameters", js.undefined)
     
-    @scala.inline
-    def setReturnParametersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "returnParameters", js.Array(value :_*))
+    inline def setReturnParametersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "returnParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setStateMutability(value: pure | constant | payable | view): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
+    inline def setStateMutability(value: pure | constant | payable | view): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMutabilityUndefined: Self = StObject.set(x, "stateMutability", js.undefined)
+    inline def setStateMutabilityUndefined: Self = StObject.set(x, "stateMutability", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: default | external | internal | public | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: default | external | internal | public | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

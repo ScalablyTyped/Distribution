@@ -12,25 +12,19 @@ trait StreetAddress extends StObject {
 }
 object StreetAddress {
   
-  @scala.inline
-  def apply(): StreetAddress = {
+  inline def apply(): StreetAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreetAddress]
   }
   
-  @scala.inline
-  implicit class StreetAddressMutableBuilder[Self <: StreetAddress] (val x: Self) extends AnyVal {
+  extension [Self <: StreetAddress](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
   }
 }

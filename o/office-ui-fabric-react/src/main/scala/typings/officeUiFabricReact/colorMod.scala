@@ -90,115 +90,79 @@ object colorMod {
     /* 0 */ val Unshaded: typings.officeUiFabricReact.shadesMod.Shade.Unshaded & Double = js.native
   }
   
-  @scala.inline
-  def clamp(value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def clamp(value: Double, max: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def clamp(value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def clamp(value: Double, max: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def correctHSV(color: typings.officeUiFabricReact.interfacesMod.IHSV): typings.officeUiFabricReact.interfacesMod.IHSV = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHSV")(color.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSV]
+  inline def correctHSV(color: typings.officeUiFabricReact.interfacesMod.IHSV): typings.officeUiFabricReact.interfacesMod.IHSV = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHSV")(color.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSV]
   
-  @scala.inline
-  def correctHex(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHex")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def correctHex(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHex")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def correctRGB(color: typings.officeUiFabricReact.interfacesMod.IRGB): typings.officeUiFabricReact.interfacesMod.IRGB = ^.asInstanceOf[js.Dynamic].applyDynamic("correctRGB")(color.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IRGB]
+  inline def correctRGB(color: typings.officeUiFabricReact.interfacesMod.IRGB): typings.officeUiFabricReact.interfacesMod.IRGB = ^.asInstanceOf[js.Dynamic].applyDynamic("correctRGB")(color.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IRGB]
   
-  @scala.inline
-  def cssColor(): js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")().asInstanceOf[js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB]]
-  @scala.inline
-  def cssColor(color: String): js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB]]
+  inline def cssColor(): js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")().asInstanceOf[js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB]]
+  inline def cssColor(color: String): js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.officeUiFabricReact.interfacesMod.IRGB]]
   
-  @scala.inline
-  def getBackgroundShade(color: typings.officeUiFabricReact.interfacesMod.IColor, shade: Shade): typings.officeUiFabricReact.interfacesMod.IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | Null]
-  @scala.inline
-  def getBackgroundShade(color: typings.officeUiFabricReact.interfacesMod.IColor, shade: Shade, isInverted: Boolean): typings.officeUiFabricReact.interfacesMod.IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | Null]
+  inline def getBackgroundShade(color: typings.officeUiFabricReact.interfacesMod.IColor, shade: Shade): typings.officeUiFabricReact.interfacesMod.IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | Null]
+  inline def getBackgroundShade(color: typings.officeUiFabricReact.interfacesMod.IColor, shade: Shade, isInverted: Boolean): typings.officeUiFabricReact.interfacesMod.IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | Null]
   
-  @scala.inline
-  def getColorFromHSV(hsv: typings.officeUiFabricReact.interfacesMod.IHSV): typings.officeUiFabricReact.interfacesMod.IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
-  @scala.inline
-  def getColorFromHSV(hsv: typings.officeUiFabricReact.interfacesMod.IHSV, a: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def getColorFromHSV(hsv: typings.officeUiFabricReact.interfacesMod.IHSV): typings.officeUiFabricReact.interfacesMod.IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def getColorFromHSV(hsv: typings.officeUiFabricReact.interfacesMod.IHSV, a: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
-  @scala.inline
-  def getColorFromRGBA(rgba: typings.officeUiFabricReact.interfacesMod.IRGB): typings.officeUiFabricReact.interfacesMod.IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromRGBA")(rgba.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def getColorFromRGBA(rgba: typings.officeUiFabricReact.interfacesMod.IRGB): typings.officeUiFabricReact.interfacesMod.IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromRGBA")(rgba.asInstanceOf[js.Any]).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
-  @scala.inline
-  def getColorFromString(inputColor: String): js.UndefOr[typings.officeUiFabricReact.interfacesMod.IColor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromString")(inputColor.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.officeUiFabricReact.interfacesMod.IColor]]
+  inline def getColorFromString(inputColor: String): js.UndefOr[typings.officeUiFabricReact.interfacesMod.IColor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromString")(inputColor.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.officeUiFabricReact.interfacesMod.IColor]]
   
-  @scala.inline
-  def getContrastRatio(
+  inline def getContrastRatio(
     color1: typings.officeUiFabricReact.interfacesMod.IColor,
     color2: typings.officeUiFabricReact.interfacesMod.IColor
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getContrastRatio")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getFullColorString(color: typings.officeUiFabricReact.interfacesMod.IColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFullColorString(color: typings.officeUiFabricReact.interfacesMod.IColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getShade(color: typings.officeUiFabricReact.interfacesMod.IColor, shade: Shade): typings.officeUiFabricReact.interfacesMod.IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | Null]
-  @scala.inline
-  def getShade(color: typings.officeUiFabricReact.interfacesMod.IColor, shade: Shade, isInverted: Boolean): typings.officeUiFabricReact.interfacesMod.IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | Null]
+  inline def getShade(color: typings.officeUiFabricReact.interfacesMod.IColor, shade: Shade): typings.officeUiFabricReact.interfacesMod.IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | Null]
+  inline def getShade(color: typings.officeUiFabricReact.interfacesMod.IColor, shade: Shade, isInverted: Boolean): typings.officeUiFabricReact.interfacesMod.IColor | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getShade")(color.asInstanceOf[js.Any], shade.asInstanceOf[js.Any], isInverted.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor | Null]
   
-  @scala.inline
-  def hsl2hsv(h: Double, s: Double, l: Double): typings.officeUiFabricReact.interfacesMod.IHSV = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2hsv")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSV]
+  inline def hsl2hsv(h: Double, s: Double, l: Double): typings.officeUiFabricReact.interfacesMod.IHSV = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2hsv")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSV]
   
-  @scala.inline
-  def hsl2rgb(h: Double, s: Double, l: Double): typings.officeUiFabricReact.interfacesMod.IRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IRGB]
+  inline def hsl2rgb(h: Double, s: Double, l: Double): typings.officeUiFabricReact.interfacesMod.IRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IRGB]
   
-  @scala.inline
-  def hsv2hex(h: Double, s: Double, v: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hex")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def hsv2hex(h: Double, s: Double, v: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hex")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def hsv2hsl(h: Double, s: Double, v: Double): typings.officeUiFabricReact.interfacesMod.IHSL = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hsl")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSL]
+  inline def hsv2hsl(h: Double, s: Double, v: Double): typings.officeUiFabricReact.interfacesMod.IHSL = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hsl")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSL]
   
-  @scala.inline
-  def hsv2rgb(h: Double, s: Double, v: Double): typings.officeUiFabricReact.interfacesMod.IRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IRGB]
+  inline def hsv2rgb(h: Double, s: Double, v: Double): typings.officeUiFabricReact.interfacesMod.IRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IRGB]
   
-  @scala.inline
-  def isDark(color: typings.officeUiFabricReact.interfacesMod.IColor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDark")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDark(color: typings.officeUiFabricReact.interfacesMod.IColor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDark")(color.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValidShade(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidShade")().asInstanceOf[Boolean]
-  @scala.inline
-  def isValidShade(shade: Shade): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidShade")(shade.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidShade(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidShade")().asInstanceOf[Boolean]
+  inline def isValidShade(shade: Shade): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidShade")(shade.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def rgb2hex(r: Double, g: Double, b: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def rgb2hex(r: Double, g: Double, b: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def rgb2hsv(r: Double, g: Double, b: Double): typings.officeUiFabricReact.interfacesMod.IHSV = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsv")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSV]
+  inline def rgb2hsv(r: Double, g: Double, b: Double): typings.officeUiFabricReact.interfacesMod.IHSV = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsv")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IHSV]
   
-  @scala.inline
-  def updateA(color: typings.officeUiFabricReact.interfacesMod.IColor, a: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateA")(color.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def updateA(color: typings.officeUiFabricReact.interfacesMod.IColor, a: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateA")(color.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
-  @scala.inline
-  def updateH(color: typings.officeUiFabricReact.interfacesMod.IColor, h: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateH")(color.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def updateH(color: typings.officeUiFabricReact.interfacesMod.IColor, h: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateH")(color.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
-  @scala.inline
-  def updateRGB_a(color: typings.officeUiFabricReact.interfacesMod.IColor, component: a, value: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def updateRGB_a(color: typings.officeUiFabricReact.interfacesMod.IColor, component: a, value: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
-  @scala.inline
-  def updateRGB_b(color: typings.officeUiFabricReact.interfacesMod.IColor, component: b, value: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def updateRGB_b(color: typings.officeUiFabricReact.interfacesMod.IColor, component: b, value: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
-  @scala.inline
-  def updateRGB_g(color: typings.officeUiFabricReact.interfacesMod.IColor, component: g, value: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def updateRGB_g(color: typings.officeUiFabricReact.interfacesMod.IColor, component: g, value: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
-  @scala.inline
-  def updateRGB_r(color: typings.officeUiFabricReact.interfacesMod.IColor, component: r, value: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def updateRGB_r(color: typings.officeUiFabricReact.interfacesMod.IColor, component: r, value: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
-  @scala.inline
-  def updateSV(color: typings.officeUiFabricReact.interfacesMod.IColor, s: Double, v: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSV")(color.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def updateSV(color: typings.officeUiFabricReact.interfacesMod.IColor, s: Double, v: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSV")(color.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
-  @scala.inline
-  def updateT(color: typings.officeUiFabricReact.interfacesMod.IColor, t: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateT")(color.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
+  inline def updateT(color: typings.officeUiFabricReact.interfacesMod.IColor, t: Double): typings.officeUiFabricReact.interfacesMod.IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateT")(color.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[typings.officeUiFabricReact.interfacesMod.IColor]
   
   trait IColor
     extends StObject
        with typings.officeUiFabricReact.interfacesMod.IColor
   object IColor {
     
-    @scala.inline
-    def apply(b: Double, g: Double, h: Double, hex: String, r: Double, s: Double, str: String, v: Double): IColor = {
+    inline def apply(b: Double, g: Double, h: Double, hex: String, r: Double, s: Double, str: String, v: Double): IColor = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[IColor]
     }
@@ -209,8 +173,7 @@ object colorMod {
        with typings.officeUiFabricReact.interfacesMod.IHSL
   object IHSL {
     
-    @scala.inline
-    def apply(h: Double, l: Double, s: Double): IHSL = {
+    inline def apply(h: Double, l: Double, s: Double): IHSL = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHSL]
     }
@@ -221,8 +184,7 @@ object colorMod {
        with typings.officeUiFabricReact.interfacesMod.IHSV
   object IHSV {
     
-    @scala.inline
-    def apply(h: Double, s: Double, v: Double): IHSV = {
+    inline def apply(h: Double, s: Double, v: Double): IHSV = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHSV]
     }
@@ -233,8 +195,7 @@ object colorMod {
        with typings.officeUiFabricReact.interfacesMod.IRGB
   object IRGB {
     
-    @scala.inline
-    def apply(b: Double, g: Double, r: Double): IRGB = {
+    inline def apply(b: Double, g: Double, r: Double): IRGB = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRGB]
     }

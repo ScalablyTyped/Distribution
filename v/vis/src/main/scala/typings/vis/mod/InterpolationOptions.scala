@@ -10,16 +10,13 @@ trait InterpolationOptions extends StObject {
 }
 object InterpolationOptions {
   
-  @scala.inline
-  def apply(parametrization: ParametrizationInterpolationType): InterpolationOptions = {
+  inline def apply(parametrization: ParametrizationInterpolationType): InterpolationOptions = {
     val __obj = js.Dynamic.literal(parametrization = parametrization.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterpolationOptions]
   }
   
-  @scala.inline
-  implicit class InterpolationOptionsMutableBuilder[Self <: InterpolationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InterpolationOptions](x: Self) {
     
-    @scala.inline
-    def setParametrization(value: ParametrizationInterpolationType): Self = StObject.set(x, "parametrization", value.asInstanceOf[js.Any])
+    inline def setParametrization(value: ParametrizationInterpolationType): Self = StObject.set(x, "parametrization", value.asInstanceOf[js.Any])
   }
 }

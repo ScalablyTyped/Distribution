@@ -21,13 +21,11 @@ object Spreadsheet {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Spreadsheet = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Spreadsheet]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Spreadsheet = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Spreadsheet]
   
   /* static member */
   @JSGlobal("kendo.ui.Spreadsheet.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.Spreadsheet = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.Spreadsheet): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.Spreadsheet): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

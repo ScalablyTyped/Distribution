@@ -16,8 +16,7 @@ object WebProxy {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def invoke(
+  inline def invoke(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     requestInfo: typings.sharepoint.SP.WebRequestInfo
   ): typings.sharepoint.SP.WebResponseInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("invoke")(context.asInstanceOf[js.Any], requestInfo.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.WebResponseInfo]

@@ -25,32 +25,24 @@ object typesProvisionedCapacityDescriptionMod {
   }
   object ProvisionedCapacityDescription {
     
-    @scala.inline
-    def apply(): ProvisionedCapacityDescription = {
+    inline def apply(): ProvisionedCapacityDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProvisionedCapacityDescription]
     }
     
-    @scala.inline
-    implicit class ProvisionedCapacityDescriptionMutableBuilder[Self <: ProvisionedCapacityDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ProvisionedCapacityDescription](x: Self) {
       
-      @scala.inline
-      def setCapacityId(value: String): Self = StObject.set(x, "CapacityId", value.asInstanceOf[js.Any])
+      inline def setCapacityId(value: String): Self = StObject.set(x, "CapacityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityIdUndefined: Self = StObject.set(x, "CapacityId", js.undefined)
+      inline def setCapacityIdUndefined: Self = StObject.set(x, "CapacityId", js.undefined)
       
-      @scala.inline
-      def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
+      inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
       
-      @scala.inline
-      def setStartDate(value: String): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+      inline def setStartDate(value: String): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
+      inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
     }
   }
   

@@ -18,19 +18,15 @@ trait GetDeploymentGroupInput extends StObject {
 }
 object GetDeploymentGroupInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName, deploymentGroupName: DeploymentGroupName): GetDeploymentGroupInput = {
+  inline def apply(applicationName: ApplicationName, deploymentGroupName: DeploymentGroupName): GetDeploymentGroupInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], deploymentGroupName = deploymentGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDeploymentGroupInput]
   }
   
-  @scala.inline
-  implicit class GetDeploymentGroupInputMutableBuilder[Self <: GetDeploymentGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDeploymentGroupInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
+    inline def setDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
   }
 }

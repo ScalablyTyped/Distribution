@@ -23,25 +23,19 @@ trait CodeGenEdge extends StObject {
 }
 object CodeGenEdge {
   
-  @scala.inline
-  def apply(Source: CodeGenIdentifier, Target: CodeGenIdentifier): CodeGenEdge = {
+  inline def apply(Source: CodeGenIdentifier, Target: CodeGenIdentifier): CodeGenEdge = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeGenEdge]
   }
   
-  @scala.inline
-  implicit class CodeGenEdgeMutableBuilder[Self <: CodeGenEdge] (val x: Self) extends AnyVal {
+  extension [Self <: CodeGenEdge](x: Self) {
     
-    @scala.inline
-    def setSource(value: CodeGenIdentifier): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: CodeGenIdentifier): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: CodeGenIdentifier): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: CodeGenIdentifier): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetParameter(value: CodeGenArgName): Self = StObject.set(x, "TargetParameter", value.asInstanceOf[js.Any])
+    inline def setTargetParameter(value: CodeGenArgName): Self = StObject.set(x, "TargetParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetParameterUndefined: Self = StObject.set(x, "TargetParameter", js.undefined)
+    inline def setTargetParameterUndefined: Self = StObject.set(x, "TargetParameter", js.undefined)
   }
 }

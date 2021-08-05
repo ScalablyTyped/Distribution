@@ -38,52 +38,37 @@ trait VpcPeeringConnection extends StObject {
 }
 object VpcPeeringConnection {
   
-  @scala.inline
-  def apply(): VpcPeeringConnection = {
+  inline def apply(): VpcPeeringConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpcPeeringConnection]
   }
   
-  @scala.inline
-  implicit class VpcPeeringConnectionMutableBuilder[Self <: VpcPeeringConnection] (val x: Self) extends AnyVal {
+  extension [Self <: VpcPeeringConnection](x: Self) {
     
-    @scala.inline
-    def setAccepterVpcInfo(value: VpcPeeringConnectionVpcInfo): Self = StObject.set(x, "AccepterVpcInfo", value.asInstanceOf[js.Any])
+    inline def setAccepterVpcInfo(value: VpcPeeringConnectionVpcInfo): Self = StObject.set(x, "AccepterVpcInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccepterVpcInfoUndefined: Self = StObject.set(x, "AccepterVpcInfo", js.undefined)
+    inline def setAccepterVpcInfoUndefined: Self = StObject.set(x, "AccepterVpcInfo", js.undefined)
     
-    @scala.inline
-    def setExpirationTime(value: DateTime): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: DateTime): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
+    inline def setExpirationTimeUndefined: Self = StObject.set(x, "ExpirationTime", js.undefined)
     
-    @scala.inline
-    def setRequesterVpcInfo(value: VpcPeeringConnectionVpcInfo): Self = StObject.set(x, "RequesterVpcInfo", value.asInstanceOf[js.Any])
+    inline def setRequesterVpcInfo(value: VpcPeeringConnectionVpcInfo): Self = StObject.set(x, "RequesterVpcInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterVpcInfoUndefined: Self = StObject.set(x, "RequesterVpcInfo", js.undefined)
+    inline def setRequesterVpcInfoUndefined: Self = StObject.set(x, "RequesterVpcInfo", js.undefined)
     
-    @scala.inline
-    def setStatus(value: VpcPeeringConnectionStateReason): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VpcPeeringConnectionStateReason): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcPeeringConnectionId(value: String): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringConnectionId(value: String): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
+    inline def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
   }
 }

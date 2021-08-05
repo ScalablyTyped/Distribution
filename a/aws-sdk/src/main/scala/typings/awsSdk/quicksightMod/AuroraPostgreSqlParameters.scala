@@ -23,22 +23,17 @@ trait AuroraPostgreSqlParameters extends StObject {
 }
 object AuroraPostgreSqlParameters {
   
-  @scala.inline
-  def apply(Database: Database, Host: Host, Port: Port): AuroraPostgreSqlParameters = {
+  inline def apply(Database: Database, Host: Host, Port: Port): AuroraPostgreSqlParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any], Host = Host.asInstanceOf[js.Any], Port = Port.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuroraPostgreSqlParameters]
   }
   
-  @scala.inline
-  implicit class AuroraPostgreSqlParametersMutableBuilder[Self <: AuroraPostgreSqlParameters] (val x: Self) extends AnyVal {
+  extension [Self <: AuroraPostgreSqlParameters](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
   }
 }

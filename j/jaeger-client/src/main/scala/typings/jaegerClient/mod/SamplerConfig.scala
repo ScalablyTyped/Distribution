@@ -20,44 +20,32 @@ trait SamplerConfig extends StObject {
 }
 object SamplerConfig {
   
-  @scala.inline
-  def apply(param: Double, `type`: String): SamplerConfig = {
+  inline def apply(param: Double, `type`: String): SamplerConfig = {
     val __obj = js.Dynamic.literal(param = param.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SamplerConfig]
   }
   
-  @scala.inline
-  implicit class SamplerConfigMutableBuilder[Self <: SamplerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SamplerConfig](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostPort(value: String): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
+    inline def setHostPort(value: String): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
+    inline def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setParam(value: Double): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: Double): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setRefreshIntervalMs(value: Double): Self = StObject.set(x, "refreshIntervalMs", value.asInstanceOf[js.Any])
+    inline def setRefreshIntervalMs(value: Double): Self = StObject.set(x, "refreshIntervalMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshIntervalMsUndefined: Self = StObject.set(x, "refreshIntervalMs", js.undefined)
+    inline def setRefreshIntervalMsUndefined: Self = StObject.set(x, "refreshIntervalMs", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

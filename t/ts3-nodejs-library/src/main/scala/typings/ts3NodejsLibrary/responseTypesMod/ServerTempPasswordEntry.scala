@@ -25,8 +25,7 @@ trait ServerTempPasswordEntry
 }
 object ServerTempPasswordEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     desc: String,
     end: Double,
     nickname: String,
@@ -39,28 +38,20 @@ object ServerTempPasswordEntry {
     __obj.asInstanceOf[ServerTempPasswordEntry]
   }
   
-  @scala.inline
-  implicit class ServerTempPasswordEntryMutableBuilder[Self <: ServerTempPasswordEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ServerTempPasswordEntry](x: Self) {
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+    inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwClear(value: String): Self = StObject.set(x, "pwClear", value.asInstanceOf[js.Any])
+    inline def setPwClear(value: String): Self = StObject.set(x, "pwClear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTcid(value: String): Self = StObject.set(x, "tcid", value.asInstanceOf[js.Any])
+    inline def setTcid(value: String): Self = StObject.set(x, "tcid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait MlEvaluateDataFrame[T]
 }
 object MlEvaluateDataFrame {
   
-  @scala.inline
-  def apply[T](body: T): MlEvaluateDataFrame[T] = {
+  inline def apply[T](body: T): MlEvaluateDataFrame[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlEvaluateDataFrame[T]]
   }
   
-  @scala.inline
-  implicit class MlEvaluateDataFrameMutableBuilder[Self <: MlEvaluateDataFrame[?], T] (val x: Self & MlEvaluateDataFrame[T]) extends AnyVal {
+  extension [Self <: MlEvaluateDataFrame[?], T](x: Self & MlEvaluateDataFrame[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

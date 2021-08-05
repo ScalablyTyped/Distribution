@@ -13,19 +13,15 @@ trait AwsCloudFrontDistributionOriginS3OriginConfig extends StObject {
 }
 object AwsCloudFrontDistributionOriginS3OriginConfig {
   
-  @scala.inline
-  def apply(): AwsCloudFrontDistributionOriginS3OriginConfig = {
+  inline def apply(): AwsCloudFrontDistributionOriginS3OriginConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCloudFrontDistributionOriginS3OriginConfig]
   }
   
-  @scala.inline
-  implicit class AwsCloudFrontDistributionOriginS3OriginConfigMutableBuilder[Self <: AwsCloudFrontDistributionOriginS3OriginConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCloudFrontDistributionOriginS3OriginConfig](x: Self) {
     
-    @scala.inline
-    def setOriginAccessIdentity(value: NonEmptyString): Self = StObject.set(x, "OriginAccessIdentity", value.asInstanceOf[js.Any])
+    inline def setOriginAccessIdentity(value: NonEmptyString): Self = StObject.set(x, "OriginAccessIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginAccessIdentityUndefined: Self = StObject.set(x, "OriginAccessIdentity", js.undefined)
+    inline def setOriginAccessIdentityUndefined: Self = StObject.set(x, "OriginAccessIdentity", js.undefined)
   }
 }

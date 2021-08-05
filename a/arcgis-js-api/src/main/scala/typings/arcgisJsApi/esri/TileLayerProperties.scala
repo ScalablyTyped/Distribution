@@ -65,58 +65,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TileLayerProperties {
   
-  @scala.inline
-  def apply(): TileLayerProperties = {
+  inline def apply(): TileLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileLayerProperties]
   }
   
-  @scala.inline
-  implicit class TileLayerPropertiesMutableBuilder[Self <: TileLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
-    @scala.inline
-    def setResampling(value: Boolean): Self = StObject.set(x, "resampling", value.asInstanceOf[js.Any])
+    inline def setResampling(value: Boolean): Self = StObject.set(x, "resampling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResamplingUndefined: Self = StObject.set(x, "resampling", js.undefined)
+    inline def setResamplingUndefined: Self = StObject.set(x, "resampling", js.undefined)
     
-    @scala.inline
-    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
+    inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
-    @scala.inline
-    def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
+    inline def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
     
-    @scala.inline
-    def setTileServers(value: js.Array[String]): Self = StObject.set(x, "tileServers", value.asInstanceOf[js.Any])
+    inline def setTileServers(value: js.Array[String]): Self = StObject.set(x, "tileServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileServersUndefined: Self = StObject.set(x, "tileServers", js.undefined)
+    inline def setTileServersUndefined: Self = StObject.set(x, "tileServers", js.undefined)
     
-    @scala.inline
-    def setTileServersVarargs(value: String*): Self = StObject.set(x, "tileServers", js.Array(value :_*))
+    inline def setTileServersVarargs(value: String*): Self = StObject.set(x, "tileServers", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

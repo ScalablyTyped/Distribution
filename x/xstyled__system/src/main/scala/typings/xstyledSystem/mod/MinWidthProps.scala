@@ -14,27 +14,22 @@ trait MinWidthProps[TLength] extends StObject {
 }
 object MinWidthProps {
   
-  @scala.inline
-  def apply[TLength](): MinWidthProps[TLength] = {
+  inline def apply[TLength](): MinWidthProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinWidthProps[TLength]]
   }
   
-  @scala.inline
-  implicit class MinWidthPropsMutableBuilder[Self <: MinWidthProps[?], TLength] (val x: Self & MinWidthProps[TLength]) extends AnyVal {
+  extension [Self <: MinWidthProps[?], TLength](x: Self & MinWidthProps[TLength]) {
     
-    @scala.inline
-    def setMinWidth(
+    inline def setMinWidth(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setMinWidthVarargs(
+    inline def setMinWidthVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MinWidth<TLength> */ js.Any)*
     ): Self = StObject.set(x, "minWidth", js.Array(value :_*))
   }

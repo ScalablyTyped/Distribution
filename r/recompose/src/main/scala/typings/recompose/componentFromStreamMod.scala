@@ -16,11 +16,9 @@ object componentFromStreamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TProps](propsToReactNode: mapper[Subscribable[TProps], Subscribable[ReactNode]]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propsToReactNode.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
+  inline def default[TProps](propsToReactNode: mapper[Subscribable[TProps], Subscribable[ReactNode]]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propsToReactNode.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
   
-  @scala.inline
-  def componentFromStreamWithConfig(config: ObservableConfig): js.Function1[
+  inline def componentFromStreamWithConfig(config: ObservableConfig): js.Function1[
     /* propsToReactNode */ mapper[Subscribable[js.Any], Subscribable[ReactNode]], 
     ComponentType[js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

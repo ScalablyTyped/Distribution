@@ -18,25 +18,19 @@ trait ChangeMessageVisibilityBatchResult extends StObject {
 }
 object ChangeMessageVisibilityBatchResult {
   
-  @scala.inline
-  def apply(Failed: BatchResultErrorEntryList, Successful: ChangeMessageVisibilityBatchResultEntryList): ChangeMessageVisibilityBatchResult = {
+  inline def apply(Failed: BatchResultErrorEntryList, Successful: ChangeMessageVisibilityBatchResultEntryList): ChangeMessageVisibilityBatchResult = {
     val __obj = js.Dynamic.literal(Failed = Failed.asInstanceOf[js.Any], Successful = Successful.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeMessageVisibilityBatchResult]
   }
   
-  @scala.inline
-  implicit class ChangeMessageVisibilityBatchResultMutableBuilder[Self <: ChangeMessageVisibilityBatchResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeMessageVisibilityBatchResult](x: Self) {
     
-    @scala.inline
-    def setFailed(value: BatchResultErrorEntryList): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: BatchResultErrorEntryList): Self = StObject.set(x, "Failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedVarargs(value: BatchResultErrorEntry*): Self = StObject.set(x, "Failed", js.Array(value :_*))
+    inline def setFailedVarargs(value: BatchResultErrorEntry*): Self = StObject.set(x, "Failed", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessful(value: ChangeMessageVisibilityBatchResultEntryList): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
+    inline def setSuccessful(value: ChangeMessageVisibilityBatchResultEntryList): Self = StObject.set(x, "Successful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulVarargs(value: ChangeMessageVisibilityBatchResultEntry*): Self = StObject.set(x, "Successful", js.Array(value :_*))
+    inline def setSuccessfulVarargs(value: ChangeMessageVisibilityBatchResultEntry*): Self = StObject.set(x, "Successful", js.Array(value :_*))
   }
 }

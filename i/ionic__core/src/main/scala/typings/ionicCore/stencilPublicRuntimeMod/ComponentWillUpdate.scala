@@ -18,16 +18,13 @@ trait ComponentWillUpdate extends StObject {
 }
 object ComponentWillUpdate {
   
-  @scala.inline
-  def apply(componentWillUpdate: () => js.Promise[Unit] | Unit): ComponentWillUpdate = {
+  inline def apply(componentWillUpdate: () => js.Promise[Unit] | Unit): ComponentWillUpdate = {
     val __obj = js.Dynamic.literal(componentWillUpdate = js.Any.fromFunction0(componentWillUpdate))
     __obj.asInstanceOf[ComponentWillUpdate]
   }
   
-  @scala.inline
-  implicit class ComponentWillUpdateMutableBuilder[Self <: ComponentWillUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentWillUpdate](x: Self) {
     
-    @scala.inline
-    def setComponentWillUpdate(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction0(value))
+    inline def setComponentWillUpdate(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction0(value))
   }
 }

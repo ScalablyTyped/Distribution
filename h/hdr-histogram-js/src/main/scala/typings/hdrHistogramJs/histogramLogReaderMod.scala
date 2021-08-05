@@ -63,8 +63,7 @@ object histogramLogReaderMod {
     def this(logContent: String, options: HistogramConstr) = this()
   }
   
-  @scala.inline
-  def listTags(content: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTags")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def listTags(content: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTags")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     * A histogram log reader.
@@ -130,9 +129,9 @@ object histogramLogReaderMod {
     def nextIntervalHistogram(rangeStartTimeSec: Double, rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
     def nextIntervalHistogram(rangeStartTimeSec: Unit, rangeEndTimeSec: Double): AbstractHistogram | Null = js.native
     
-    var parseBaseTimeFromLine: js.Any = js.native
+    /* private */ var parseBaseTimeFromLine: js.Any = js.native
     
-    var parseStartTimeFromLine: js.Any = js.native
+    /* private */ var parseStartTimeFromLine: js.Any = js.native
     
     var startTimeSec: Double = js.native
   }

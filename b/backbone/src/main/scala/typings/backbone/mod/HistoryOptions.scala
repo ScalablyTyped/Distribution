@@ -14,25 +14,19 @@ trait HistoryOptions
 }
 object HistoryOptions {
   
-  @scala.inline
-  def apply(): HistoryOptions = {
+  inline def apply(): HistoryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoryOptions]
   }
   
-  @scala.inline
-  implicit class HistoryOptionsMutableBuilder[Self <: HistoryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryOptions](x: Self) {
     
-    @scala.inline
-    def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
+    inline def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
+    inline def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

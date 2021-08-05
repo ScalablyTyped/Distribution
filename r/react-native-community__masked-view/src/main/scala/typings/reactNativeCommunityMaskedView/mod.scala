@@ -31,17 +31,14 @@ object mod {
   }
   object MaskedViewProps {
     
-    @scala.inline
-    def apply(maskElement: ReactElement): MaskedViewProps = {
+    inline def apply(maskElement: ReactElement): MaskedViewProps = {
       val __obj = js.Dynamic.literal(maskElement = maskElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaskedViewProps]
     }
     
-    @scala.inline
-    implicit class MaskedViewPropsMutableBuilder[Self <: MaskedViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: MaskedViewProps](x: Self) {
       
-      @scala.inline
-      def setMaskElement(value: ReactElement): Self = StObject.set(x, "maskElement", value.asInstanceOf[js.Any])
+      inline def setMaskElement(value: ReactElement): Self = StObject.set(x, "maskElement", value.asInstanceOf[js.Any])
     }
   }
 }

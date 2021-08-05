@@ -20,8 +20,7 @@ trait `704` extends StObject {
 }
 object `704` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[GitGetCommitEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[GitGetCommitResponseData]
   ): `704` = {
@@ -29,13 +28,10 @@ object `704` {
     __obj.asInstanceOf[`704`]
   }
   
-  @scala.inline
-  implicit class `704MutableBuilder`[Self <: `704`] (val x: Self) extends AnyVal {
+  extension [Self <: `704`](x: Self) {
     
-    @scala.inline
-    def setParameters(value: RequestParameters & (Omit[GitGetCommitEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: RequestParameters & (Omit[GitGetCommitEndpoint, baseUrl | headers | mediaType])): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[GitGetCommitResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[GitGetCommitResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

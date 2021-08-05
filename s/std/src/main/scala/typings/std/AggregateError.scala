@@ -12,19 +12,15 @@ trait AggregateError
 }
 object AggregateError {
   
-  @scala.inline
-  def apply(errors: js.Array[js.Any], message: java.lang.String, name: java.lang.String): AggregateError = {
+  inline def apply(errors: js.Array[js.Any], message: java.lang.String, name: java.lang.String): AggregateError = {
     val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateError]
   }
   
-  @scala.inline
-  implicit class AggregateErrorMutableBuilder[Self <: AggregateError] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateError](x: Self) {
     
-    @scala.inline
-    def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

@@ -10,12 +10,9 @@ object sanity {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sanityCheck(mflags: Double, uflags: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sanity_check")(mflags.asInstanceOf[js.Any], uflags.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def sanityCheck(mflags: Double, uflags: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sanity_check")(mflags.asInstanceOf[js.Any], uflags.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def sanityCheckDefaults(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sanity_check_defaults")().asInstanceOf[Double]
+  inline def sanityCheckDefaults(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sanity_check_defaults")().asInstanceOf[Double]
   
-  @scala.inline
-  def sanityReply(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sanity_reply")().asInstanceOf[Double]
+  inline def sanityReply(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sanity_reply")().asInstanceOf[Double]
 }

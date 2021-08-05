@@ -16,8 +16,7 @@ trait Concern
 }
 object Concern {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: ConcernCategory,
     createdDate: Date,
     id: Double,
@@ -30,10 +29,8 @@ object Concern {
     __obj.asInstanceOf[Concern]
   }
   
-  @scala.inline
-  implicit class ConcernMutableBuilder[Self <: Concern] (val x: Self) extends AnyVal {
+  extension [Self <: Concern](x: Self) {
     
-    @scala.inline
-    def setCategory(value: ConcernCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: ConcernCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
   }
 }

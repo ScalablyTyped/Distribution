@@ -29,8 +29,7 @@ trait PseudoTtyChannelRequest
 }
 object PseudoTtyChannelRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cols: Double,
     height: Double,
     modes: js.Any,
@@ -44,34 +43,24 @@ object PseudoTtyChannelRequest {
     __obj.asInstanceOf[PseudoTtyChannelRequest]
   }
   
-  @scala.inline
-  implicit class PseudoTtyChannelRequestMutableBuilder[Self <: PseudoTtyChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PseudoTtyChannelRequest](x: Self) {
     
-    @scala.inline
-    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModes(value: js.Any): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+    inline def setModes(value: js.Any): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: `pty-req`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: `pty-req`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
+    inline def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

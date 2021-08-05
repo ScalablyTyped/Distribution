@@ -41,8 +41,7 @@ trait XGridColumnFactory
 }
 object XGridColumnFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnTypes: SafeArray[String],
     acquire: () => Unit,
     createColumn: String => XPropertySet,
@@ -54,16 +53,12 @@ object XGridColumnFactory {
     __obj.asInstanceOf[XGridColumnFactory]
   }
   
-  @scala.inline
-  implicit class XGridColumnFactoryMutableBuilder[Self <: XGridColumnFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XGridColumnFactory](x: Self) {
     
-    @scala.inline
-    def setColumnTypes(value: SafeArray[String]): Self = StObject.set(x, "ColumnTypes", value.asInstanceOf[js.Any])
+    inline def setColumnTypes(value: SafeArray[String]): Self = StObject.set(x, "ColumnTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateColumn(value: String => XPropertySet): Self = StObject.set(x, "createColumn", js.Any.fromFunction1(value))
+    inline def setCreateColumn(value: String => XPropertySet): Self = StObject.set(x, "createColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetColumnTypes(value: () => SafeArray[String]): Self = StObject.set(x, "getColumnTypes", js.Any.fromFunction0(value))
+    inline def setGetColumnTypes(value: () => SafeArray[String]): Self = StObject.set(x, "getColumnTypes", js.Any.fromFunction0(value))
   }
 }

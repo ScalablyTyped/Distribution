@@ -19,19 +19,15 @@ trait Unregistration extends StObject {
 }
 object Unregistration {
   
-  @scala.inline
-  def apply(id: String, method: String): Unregistration = {
+  inline def apply(id: String, method: String): Unregistration = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
     __obj.asInstanceOf[Unregistration]
   }
   
-  @scala.inline
-  implicit class UnregistrationMutableBuilder[Self <: Unregistration] (val x: Self) extends AnyVal {
+  extension [Self <: Unregistration](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
   }
 }

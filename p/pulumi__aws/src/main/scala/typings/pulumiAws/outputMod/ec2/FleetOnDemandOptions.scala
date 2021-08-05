@@ -13,19 +13,15 @@ trait FleetOnDemandOptions extends StObject {
 }
 object FleetOnDemandOptions {
   
-  @scala.inline
-  def apply(): FleetOnDemandOptions = {
+  inline def apply(): FleetOnDemandOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetOnDemandOptions]
   }
   
-  @scala.inline
-  implicit class FleetOnDemandOptionsMutableBuilder[Self <: FleetOnDemandOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FleetOnDemandOptions](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: String): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: String): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationStrategyUndefined: Self = StObject.set(x, "allocationStrategy", js.undefined)
+    inline def setAllocationStrategyUndefined: Self = StObject.set(x, "allocationStrategy", js.undefined)
   }
 }

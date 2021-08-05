@@ -12,16 +12,13 @@ trait AudioGraphUnrecoverableErrorOccurredEventArgs extends StObject {
 }
 object AudioGraphUnrecoverableErrorOccurredEventArgs {
   
-  @scala.inline
-  def apply(error: AudioGraphUnrecoverableError): AudioGraphUnrecoverableErrorOccurredEventArgs = {
+  inline def apply(error: AudioGraphUnrecoverableError): AudioGraphUnrecoverableErrorOccurredEventArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioGraphUnrecoverableErrorOccurredEventArgs]
   }
   
-  @scala.inline
-  implicit class AudioGraphUnrecoverableErrorOccurredEventArgsMutableBuilder[Self <: AudioGraphUnrecoverableErrorOccurredEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AudioGraphUnrecoverableErrorOccurredEventArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: AudioGraphUnrecoverableError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: AudioGraphUnrecoverableError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

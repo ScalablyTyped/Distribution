@@ -17,20 +17,16 @@ trait OrgsUpdateMembershipForAuthenticatedUserEndpoint extends StObject {
 }
 object OrgsUpdateMembershipForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): OrgsUpdateMembershipForAuthenticatedUserEndpoint = {
+  inline def apply(org_ : String): OrgsUpdateMembershipForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(state = "active")
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsUpdateMembershipForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsUpdateMembershipForAuthenticatedUserEndpointMutableBuilder[Self <: OrgsUpdateMembershipForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsUpdateMembershipForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: active): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: active): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

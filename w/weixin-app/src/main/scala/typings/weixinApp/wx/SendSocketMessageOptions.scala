@@ -14,16 +14,13 @@ trait SendSocketMessageOptions
 }
 object SendSocketMessageOptions {
   
-  @scala.inline
-  def apply(data: String | ArrayBuffer): SendSocketMessageOptions = {
+  inline def apply(data: String | ArrayBuffer): SendSocketMessageOptions = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendSocketMessageOptions]
   }
   
-  @scala.inline
-  implicit class SendSocketMessageOptionsMutableBuilder[Self <: SendSocketMessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendSocketMessageOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

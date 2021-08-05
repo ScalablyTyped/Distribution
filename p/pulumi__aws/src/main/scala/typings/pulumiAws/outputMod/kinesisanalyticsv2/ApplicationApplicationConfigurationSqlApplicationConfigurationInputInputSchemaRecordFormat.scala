@@ -18,8 +18,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mappingParameters: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters,
     recordFormatType: String
   ): ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat = {
@@ -27,15 +26,12 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputS
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat](x: Self) {
     
-    @scala.inline
-    def setMappingParameters(
+    inline def setMappingParameters(
       value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters
     ): Self = StObject.set(x, "mappingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordFormatType(value: String): Self = StObject.set(x, "recordFormatType", value.asInstanceOf[js.Any])
+    inline def setRecordFormatType(value: String): Self = StObject.set(x, "recordFormatType", value.asInstanceOf[js.Any])
   }
 }

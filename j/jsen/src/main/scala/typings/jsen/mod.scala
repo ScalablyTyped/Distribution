@@ -21,26 +21,20 @@ object mod extends Shortcut {
   }
   object JsenBuildSettings {
     
-    @scala.inline
-    def apply(): JsenBuildSettings = {
+    inline def apply(): JsenBuildSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsenBuildSettings]
     }
     
-    @scala.inline
-    implicit class JsenBuildSettingsMutableBuilder[Self <: JsenBuildSettings] (val x: Self) extends AnyVal {
+    extension [Self <: JsenBuildSettings](x: Self) {
       
-      @scala.inline
-      def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+      inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+      inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
       
-      @scala.inline
-      def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
     }
   }
   
@@ -76,38 +70,28 @@ object mod extends Shortcut {
   }
   object JsenSettings {
     
-    @scala.inline
-    def apply(): JsenSettings = {
+    inline def apply(): JsenSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsenSettings]
     }
     
-    @scala.inline
-    implicit class JsenSettingsMutableBuilder[Self <: JsenSettings] (val x: Self) extends AnyVal {
+    extension [Self <: JsenSettings](x: Self) {
       
-      @scala.inline
-      def setFormats(value: JsenFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: JsenFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
+      inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
+      inline def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
       
-      @scala.inline
-      def setMissing$Ref(value: Boolean): Self = StObject.set(x, "missing$Ref", value.asInstanceOf[js.Any])
+      inline def setMissing$Ref(value: Boolean): Self = StObject.set(x, "missing$Ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissing$RefUndefined: Self = StObject.set(x, "missing$Ref", js.undefined)
+      inline def setMissing$RefUndefined: Self = StObject.set(x, "missing$Ref", js.undefined)
       
-      @scala.inline
-      def setSchemas(value: js.Any): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: js.Any): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+      inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
     }
   }
   
@@ -133,26 +117,20 @@ object mod extends Shortcut {
   }
   object JsenValidateError {
     
-    @scala.inline
-    def apply(keyword: String, path: String): JsenValidateError = {
+    inline def apply(keyword: String, path: String): JsenValidateError = {
       val __obj = js.Dynamic.literal(keyword = keyword.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsenValidateError]
     }
     
-    @scala.inline
-    implicit class JsenValidateErrorMutableBuilder[Self <: JsenValidateError] (val x: Self) extends AnyVal {
+    extension [Self <: JsenValidateError](x: Self) {
       
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   

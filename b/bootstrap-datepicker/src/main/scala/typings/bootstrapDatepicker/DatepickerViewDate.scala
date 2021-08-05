@@ -16,22 +16,17 @@ trait DatepickerViewDate extends StObject {
 }
 object DatepickerViewDate {
   
-  @scala.inline
-  def apply(day: Double, month: Double, year: Double): DatepickerViewDate = {
+  inline def apply(day: Double, month: Double, year: Double): DatepickerViewDate = {
     val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatepickerViewDate]
   }
   
-  @scala.inline
-  implicit class DatepickerViewDateMutableBuilder[Self <: DatepickerViewDate] (val x: Self) extends AnyVal {
+  extension [Self <: DatepickerViewDate](x: Self) {
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

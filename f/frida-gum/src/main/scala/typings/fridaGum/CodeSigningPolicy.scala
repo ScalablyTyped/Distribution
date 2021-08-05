@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CodeSigningPolicy extends StObject
 object CodeSigningPolicy {
   
-  @scala.inline
-  def optional: typings.fridaGum.fridaGumStrings.optional = "optional".asInstanceOf[typings.fridaGum.fridaGumStrings.optional]
+  inline def optional: typings.fridaGum.fridaGumStrings.optional = "optional".asInstanceOf[typings.fridaGum.fridaGumStrings.optional]
   
-  @scala.inline
-  def required: typings.fridaGum.fridaGumStrings.required = "required".asInstanceOf[typings.fridaGum.fridaGumStrings.required]
+  inline def required: typings.fridaGum.fridaGumStrings.required = "required".asInstanceOf[typings.fridaGum.fridaGumStrings.required]
 }

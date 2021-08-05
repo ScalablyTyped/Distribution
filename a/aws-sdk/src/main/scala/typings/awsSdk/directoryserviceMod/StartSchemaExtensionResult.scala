@@ -13,19 +13,15 @@ trait StartSchemaExtensionResult extends StObject {
 }
 object StartSchemaExtensionResult {
   
-  @scala.inline
-  def apply(): StartSchemaExtensionResult = {
+  inline def apply(): StartSchemaExtensionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartSchemaExtensionResult]
   }
   
-  @scala.inline
-  implicit class StartSchemaExtensionResultMutableBuilder[Self <: StartSchemaExtensionResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartSchemaExtensionResult](x: Self) {
     
-    @scala.inline
-    def setSchemaExtensionId(value: SchemaExtensionId): Self = StObject.set(x, "SchemaExtensionId", value.asInstanceOf[js.Any])
+    inline def setSchemaExtensionId(value: SchemaExtensionId): Self = StObject.set(x, "SchemaExtensionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaExtensionIdUndefined: Self = StObject.set(x, "SchemaExtensionId", js.undefined)
+    inline def setSchemaExtensionIdUndefined: Self = StObject.set(x, "SchemaExtensionId", js.undefined)
   }
 }

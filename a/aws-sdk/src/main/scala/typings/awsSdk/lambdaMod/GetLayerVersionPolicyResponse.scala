@@ -18,25 +18,19 @@ trait GetLayerVersionPolicyResponse extends StObject {
 }
 object GetLayerVersionPolicyResponse {
   
-  @scala.inline
-  def apply(): GetLayerVersionPolicyResponse = {
+  inline def apply(): GetLayerVersionPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLayerVersionPolicyResponse]
   }
   
-  @scala.inline
-  implicit class GetLayerVersionPolicyResponseMutableBuilder[Self <: GetLayerVersionPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLayerVersionPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
   }
 }

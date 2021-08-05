@@ -27,8 +27,7 @@ trait DocumentDigitalSignatures
 }
 object DocumentDigitalSignatures {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentContentSignatureDefaultStreamName: String,
     PackageSignatureDefaultStreamName: String,
     ScriptingContentSignatureDefaultStreamName: String,
@@ -62,16 +61,12 @@ object DocumentDigitalSignatures {
     __obj.asInstanceOf[DocumentDigitalSignatures]
   }
   
-  @scala.inline
-  implicit class DocumentDigitalSignaturesMutableBuilder[Self <: DocumentDigitalSignatures] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentDigitalSignatures](x: Self) {
     
-    @scala.inline
-    def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
+    inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithVersion(value: String => Unit): Self = StObject.set(x, "createWithVersion", js.Any.fromFunction1(value))
+    inline def setCreateWithVersion(value: String => Unit): Self = StObject.set(x, "createWithVersion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateWithVersionAndValidSignature(value: (String, Boolean) => Unit): Self = StObject.set(x, "createWithVersionAndValidSignature", js.Any.fromFunction2(value))
+    inline def setCreateWithVersionAndValidSignature(value: (String, Boolean) => Unit): Self = StObject.set(x, "createWithVersionAndValidSignature", js.Any.fromFunction2(value))
   }
 }

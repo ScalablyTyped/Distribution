@@ -72,125 +72,94 @@ trait Types extends StObject
 object Types {
   
   // aka VARCHAR (?)
-  @scala.inline
-  def BIT: `0x10` = 0x10.asInstanceOf[`0x10`]
+  inline def BIT: `0x10` = 0x10.asInstanceOf[`0x10`]
   
   // aka LONGBLOG, LONGTEXT
-  @scala.inline
-  def BLOB: `0xfc` = 0xfc.asInstanceOf[`0xfc`]
+  inline def BLOB: `0xfc` = 0xfc.asInstanceOf[`0xfc`]
   
   // aka MEDIUMINT, 3 bytes
-  @scala.inline
-  def DATE: `0x0a` = 0x0a.asInstanceOf[`0x0a`]
+  inline def DATE: `0x0a` = 0x0a.asInstanceOf[`0x0a`]
   
   // aka TIME
-  @scala.inline
-  def DATETIME: `0x0c` = 0x0c.asInstanceOf[`0x0c`]
+  inline def DATETIME: `0x0c` = 0x0c.asInstanceOf[`0x0c`]
   
   // aka TIMESTAMP with fractional seconds
-  @scala.inline
-  def DATETIME2: `0x12` = 0x12.asInstanceOf[`0x12`]
+  inline def DATETIME2: `0x12` = 0x12.asInstanceOf[`0x12`]
   
-  @scala.inline
-  def DECIMAL: `0x00` = 0x00.asInstanceOf[`0x00`]
+  inline def DECIMAL: `0x00` = 0x00.asInstanceOf[`0x00`]
   
   // aka FLOAT, 4-8 bytes
-  @scala.inline
-  def DOUBLE: `0x05` = 0x05.asInstanceOf[`0x05`]
+  inline def DOUBLE: `0x05` = 0x05.asInstanceOf[`0x05`]
   
   // aka DECIMAL
-  @scala.inline
-  def ENUM: `0xf7` = 0xf7.asInstanceOf[`0xf7`]
+  inline def ENUM: `0xf7` = 0xf7.asInstanceOf[`0xf7`]
   
   // aka INT, 4 bytes
-  @scala.inline
-  def FLOAT: `0x04` = 0x04.asInstanceOf[`0x04`]
+  inline def FLOAT: `0x04` = 0x04.asInstanceOf[`0x04`]
   
   // aka CHAR, BINARY
-  @scala.inline
-  def GEOMETRY: `0xff` = 0xff.asInstanceOf[`0xff`]
+  inline def GEOMETRY: `0xff` = 0xff.asInstanceOf[`0xff`]
   
   // aka BIGINT, 8 bytes
-  @scala.inline
-  def INT24: `0x09` = 0x09.asInstanceOf[`0x09`]
+  inline def INT24: `0x09` = 0x09.asInstanceOf[`0x09`]
   
   // aka TIME with fractional seconds
-  @scala.inline
-  def JSON: `0xf5` = 0xf5.asInstanceOf[`0xf5`]
+  inline def JSON: `0xf5` = 0xf5.asInstanceOf[`0xf5`]
   
   // aka SMALLINT, 2 bytes
-  @scala.inline
-  def LONG: `0x03` = 0x03.asInstanceOf[`0x03`]
+  inline def LONG: `0x03` = 0x03.asInstanceOf[`0x03`]
   
   // aka TIMESTAMP
-  @scala.inline
-  def LONGLONG: `0x08` = 0x08.asInstanceOf[`0x08`]
+  inline def LONGLONG: `0x08` = 0x08.asInstanceOf[`0x08`]
   
   // aka MEDIUMBLOB, MEDIUMTEXT
-  @scala.inline
-  def LONG_BLOB: `0xfb` = 0xfb.asInstanceOf[`0xfb`]
+  inline def LONG_BLOB: `0xfb` = 0xfb.asInstanceOf[`0xfb`]
   
   // aka TINYBLOB, TINYTEXT
-  @scala.inline
-  def MEDIUM_BLOB: `0xfa` = 0xfa.asInstanceOf[`0xfa`]
+  inline def MEDIUM_BLOB: `0xfa` = 0xfa.asInstanceOf[`0xfa`]
   
   // aka YEAR, 1 byte (don't ask)
-  @scala.inline
-  def NEWDATE: `0x0e` = 0x0e.asInstanceOf[`0x0e`]
+  inline def NEWDATE: `0x0e` = 0x0e.asInstanceOf[`0x0e`]
   
   // aka JSON
-  @scala.inline
-  def NEWDECIMAL: `0xf6` = 0xf6.asInstanceOf[`0xf6`]
+  inline def NEWDECIMAL: `0xf6` = 0xf6.asInstanceOf[`0xf6`]
   
   // aka DOUBLE, 8 bytes
-  @scala.inline
-  def NULL: `0x06` = 0x06.asInstanceOf[`0x06`]
+  inline def NULL: `0x06` = 0x06.asInstanceOf[`0x06`]
   
   // aka ENUM
-  @scala.inline
-  def SET: `0xf8` = 0xf8.asInstanceOf[`0xf8`]
+  inline def SET: `0xf8` = 0xf8.asInstanceOf[`0xf8`]
   
   // aka TINYINT, 1 byte
-  @scala.inline
-  def SHORT: `0x02` = 0x02.asInstanceOf[`0x02`]
+  inline def SHORT: `0x02` = 0x02.asInstanceOf[`0x02`]
   
   // aka VARCHAR, VARBINARY
-  @scala.inline
-  def STRING: `0xfe` = 0xfe.asInstanceOf[`0xfe`]
+  inline def STRING: `0xfe` = 0xfe.asInstanceOf[`0xfe`]
   
   // aka DATE
-  @scala.inline
-  def TIME: `0x0b` = 0x0b.asInstanceOf[`0x0b`]
+  inline def TIME: `0x0b` = 0x0b.asInstanceOf[`0x0b`]
   
   // aka DATETIME with fractional seconds
-  @scala.inline
-  def TIME2: `0x13` = 0x13.asInstanceOf[`0x13`]
+  inline def TIME2: `0x13` = 0x13.asInstanceOf[`0x13`]
   
   // NULL (used for prepared statements, I think)
-  @scala.inline
-  def TIMESTAMP: `0x07` = 0x07.asInstanceOf[`0x07`]
+  inline def TIMESTAMP: `0x07` = 0x07.asInstanceOf[`0x07`]
   
   // aka BIT, 1-8 byte
-  @scala.inline
-  def TIMESTAMP2: `0x11` = 0x11.asInstanceOf[`0x11`]
+  inline def TIMESTAMP2: `0x11` = 0x11.asInstanceOf[`0x11`]
   
   // aka DECIMAL (http://dev.mysql.com/doc/refman/5.0/en/precision-math-decimal-changes.html)
-  @scala.inline
-  def TINY: `0x01` = 0x01.asInstanceOf[`0x01`]
+  inline def TINY: `0x01` = 0x01.asInstanceOf[`0x01`]
   
   // aka SET
-  @scala.inline
-  def TINY_BLOB: `0xf9` = 0xf9.asInstanceOf[`0xf9`]
+  inline def TINY_BLOB: `0xf9` = 0xf9.asInstanceOf[`0xf9`]
   
   // aka ?
-  @scala.inline
-  def VARCHAR: `0x0f` = 0x0f.asInstanceOf[`0x0f`]
+  inline def VARCHAR: `0x0f` = 0x0f.asInstanceOf[`0x0f`]
   
   // aka BLOB, TEXT
-  @scala.inline
-  def VAR_STRING: `0xfd` = 0xfd.asInstanceOf[`0xfd`]
+  inline def VAR_STRING: `0xfd` = 0xfd.asInstanceOf[`0xfd`]
   
   // aka DATETIME
-  @scala.inline
-  def YEAR: `0x0d` = 0x0d.asInstanceOf[`0x0d`]
+  inline def YEAR: `0x0d` = 0x0d.asInstanceOf[`0x0d`]
 }

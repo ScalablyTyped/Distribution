@@ -23,16 +23,13 @@ trait UnsupportedDataSinkException
 }
 object UnsupportedDataSinkException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, Sink: XInterface): UnsupportedDataSinkException = {
+  inline def apply(Context: XInterface, Message: String, Sink: XInterface): UnsupportedDataSinkException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Sink = Sink.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsupportedDataSinkException]
   }
   
-  @scala.inline
-  implicit class UnsupportedDataSinkExceptionMutableBuilder[Self <: UnsupportedDataSinkException] (val x: Self) extends AnyVal {
+  extension [Self <: UnsupportedDataSinkException](x: Self) {
     
-    @scala.inline
-    def setSink(value: XInterface): Self = StObject.set(x, "Sink", value.asInstanceOf[js.Any])
+    inline def setSink(value: XInterface): Self = StObject.set(x, "Sink", value.asInstanceOf[js.Any])
   }
 }

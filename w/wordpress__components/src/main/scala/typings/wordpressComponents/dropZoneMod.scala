@@ -74,44 +74,32 @@ object dropZoneMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+        inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         
-        @scala.inline
-        def setOnDrop(value: (/* event */ DragEvent[HTMLDivElement], /* position */ HoverPosition) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
+        inline def setOnDrop(value: (/* event */ DragEvent[HTMLDivElement], /* position */ HoverPosition) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
+        inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
         
-        @scala.inline
-        def setOnFilesDrop(value: (/* files */ js.Array[File], /* position */ HoverPosition) => Unit): Self = StObject.set(x, "onFilesDrop", js.Any.fromFunction2(value))
+        inline def setOnFilesDrop(value: (/* files */ js.Array[File], /* position */ HoverPosition) => Unit): Self = StObject.set(x, "onFilesDrop", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnFilesDropUndefined: Self = StObject.set(x, "onFilesDrop", js.undefined)
+        inline def setOnFilesDropUndefined: Self = StObject.set(x, "onFilesDrop", js.undefined)
         
-        @scala.inline
-        def setOnHTMLDrop(value: (/* html */ String, /* position */ HoverPosition) => Unit): Self = StObject.set(x, "onHTMLDrop", js.Any.fromFunction2(value))
+        inline def setOnHTMLDrop(value: (/* html */ String, /* position */ HoverPosition) => Unit): Self = StObject.set(x, "onHTMLDrop", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnHTMLDropUndefined: Self = StObject.set(x, "onHTMLDrop", js.undefined)
+        inline def setOnHTMLDropUndefined: Self = StObject.set(x, "onHTMLDrop", js.undefined)
       }
     }
   }

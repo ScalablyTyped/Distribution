@@ -45,7 +45,7 @@ trait Inspector extends StObject {
   
   def OpenFormRegion(Path: String): js.Any = js.native
   
-  @JSName("Outlook.Inspector_typekey")
+  /* private */ @JSName("Outlook.Inspector_typekey")
   var OutlookDotInspector_typekey: Inspector = js.native
   
   val Parent: js.Any = js.native

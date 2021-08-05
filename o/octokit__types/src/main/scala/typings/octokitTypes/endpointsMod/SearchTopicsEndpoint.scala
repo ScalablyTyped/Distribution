@@ -17,16 +17,13 @@ trait SearchTopicsEndpoint
 }
 object SearchTopicsEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[mercy], q: String): SearchTopicsEndpoint = {
+  inline def apply(mediaType: `0`[mercy], q: String): SearchTopicsEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchTopicsEndpoint]
   }
   
-  @scala.inline
-  implicit class SearchTopicsEndpointMutableBuilder[Self <: SearchTopicsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: SearchTopicsEndpoint](x: Self) {
     
-    @scala.inline
-    def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
   }
 }

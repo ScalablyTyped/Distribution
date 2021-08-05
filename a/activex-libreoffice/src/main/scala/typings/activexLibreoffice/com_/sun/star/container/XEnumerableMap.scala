@@ -54,8 +54,7 @@ trait XEnumerableMap
 }
 object XEnumerableMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     KeyType: `type`,
     ValueType: `type`,
@@ -78,16 +77,12 @@ object XEnumerableMap {
     __obj.asInstanceOf[XEnumerableMap]
   }
   
-  @scala.inline
-  implicit class XEnumerableMapMutableBuilder[Self <: XEnumerableMap] (val x: Self) extends AnyVal {
+  extension [Self <: XEnumerableMap](x: Self) {
     
-    @scala.inline
-    def setCreateElementEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createElementEnumeration", js.Any.fromFunction1(value))
+    inline def setCreateElementEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createElementEnumeration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateKeyEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createKeyEnumeration", js.Any.fromFunction1(value))
+    inline def setCreateKeyEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createKeyEnumeration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateValueEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createValueEnumeration", js.Any.fromFunction1(value))
+    inline def setCreateValueEnumeration(value: Boolean => XEnumeration): Self = StObject.set(x, "createValueEnumeration", js.Any.fromFunction1(value))
   }
 }

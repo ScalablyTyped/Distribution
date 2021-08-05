@@ -13,16 +13,13 @@ trait DeleteCustomDataIdentifierRequest extends StObject {
 }
 object DeleteCustomDataIdentifierRequest {
   
-  @scala.inline
-  def apply(id: string): DeleteCustomDataIdentifierRequest = {
+  inline def apply(id: string): DeleteCustomDataIdentifierRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomDataIdentifierRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCustomDataIdentifierRequestMutableBuilder[Self <: DeleteCustomDataIdentifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCustomDataIdentifierRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

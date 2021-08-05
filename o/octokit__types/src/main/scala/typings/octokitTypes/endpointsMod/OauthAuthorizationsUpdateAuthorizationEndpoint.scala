@@ -40,61 +40,43 @@ trait OauthAuthorizationsUpdateAuthorizationEndpoint extends StObject {
 }
 object OauthAuthorizationsUpdateAuthorizationEndpoint {
   
-  @scala.inline
-  def apply(authorization_id: Double): OauthAuthorizationsUpdateAuthorizationEndpoint = {
+  inline def apply(authorization_id: Double): OauthAuthorizationsUpdateAuthorizationEndpoint = {
     val __obj = js.Dynamic.literal(authorization_id = authorization_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthorizationsUpdateAuthorizationEndpoint]
   }
   
-  @scala.inline
-  implicit class OauthAuthorizationsUpdateAuthorizationEndpointMutableBuilder[Self <: OauthAuthorizationsUpdateAuthorizationEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OauthAuthorizationsUpdateAuthorizationEndpoint](x: Self) {
     
-    @scala.inline
-    def setAdd_scopes(value: js.Array[String]): Self = StObject.set(x, "add_scopes", value.asInstanceOf[js.Any])
+    inline def setAdd_scopes(value: js.Array[String]): Self = StObject.set(x, "add_scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdd_scopesUndefined: Self = StObject.set(x, "add_scopes", js.undefined)
+    inline def setAdd_scopesUndefined: Self = StObject.set(x, "add_scopes", js.undefined)
     
-    @scala.inline
-    def setAdd_scopesVarargs(value: String*): Self = StObject.set(x, "add_scopes", js.Array(value :_*))
+    inline def setAdd_scopesVarargs(value: String*): Self = StObject.set(x, "add_scopes", js.Array(value :_*))
     
-    @scala.inline
-    def setAuthorization_id(value: Double): Self = StObject.set(x, "authorization_id", value.asInstanceOf[js.Any])
+    inline def setAuthorization_id(value: Double): Self = StObject.set(x, "authorization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
-    @scala.inline
-    def setNote_url(value: String): Self = StObject.set(x, "note_url", value.asInstanceOf[js.Any])
+    inline def setNote_url(value: String): Self = StObject.set(x, "note_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote_urlUndefined: Self = StObject.set(x, "note_url", js.undefined)
+    inline def setNote_urlUndefined: Self = StObject.set(x, "note_url", js.undefined)
     
-    @scala.inline
-    def setRemove_scopes(value: js.Array[String]): Self = StObject.set(x, "remove_scopes", value.asInstanceOf[js.Any])
+    inline def setRemove_scopes(value: js.Array[String]): Self = StObject.set(x, "remove_scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove_scopesUndefined: Self = StObject.set(x, "remove_scopes", js.undefined)
+    inline def setRemove_scopesUndefined: Self = StObject.set(x, "remove_scopes", js.undefined)
     
-    @scala.inline
-    def setRemove_scopesVarargs(value: String*): Self = StObject.set(x, "remove_scopes", js.Array(value :_*))
+    inline def setRemove_scopesVarargs(value: String*): Self = StObject.set(x, "remove_scopes", js.Array(value :_*))
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

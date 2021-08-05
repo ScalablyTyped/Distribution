@@ -15,8 +15,7 @@ object tabConstantsMod {
     @JSImport("@material/tabs/tab/constants", "cssClasses.ACTIVE")
     @js.native
     def ACTIVE: String = js.native
-    @scala.inline
-    def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
+    inline def ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACTIVE")(x.asInstanceOf[js.Any])
   }
   
   object strings {
@@ -28,7 +27,6 @@ object tabConstantsMod {
     @JSImport("@material/tabs/tab/constants", "strings.SELECTED_EVENT")
     @js.native
     def SELECTED_EVENT: String = js.native
-    @scala.inline
-    def SELECTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_EVENT")(x.asInstanceOf[js.Any])
+    inline def SELECTED_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SELECTED_EVENT")(x.asInstanceOf[js.Any])
   }
 }

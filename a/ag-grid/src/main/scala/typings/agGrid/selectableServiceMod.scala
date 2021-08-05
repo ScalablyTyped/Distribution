@@ -11,13 +11,13 @@ object selectableServiceMod {
   @js.native
   class SelectableService () extends StObject {
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var groupSelectsChildren: js.Any = js.native
+    /* private */ var groupSelectsChildren: js.Any = js.native
     
     def init(): Unit = js.native
     
-    var isRowSelectableFunc: js.Any = js.native
+    /* private */ var isRowSelectableFunc: js.Any = js.native
     
     /* private */ def recurseDown(children: js.Any, nextChildrenFunc: js.Any): js.Any = js.native
     

@@ -33,7 +33,7 @@ object gridstackDdMod {
     def droppable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey): GridStackDD = js.native
     def droppable(el: GridItemHTMLElement, opts: DDOpts, key: DDKey, value: DDValue): GridStackDD = js.native
     
-    var grid: GridStack = js.native
+    /* protected */ var grid: GridStack = js.native
     
     def isDraggable(el: GridStackElement): Boolean = js.native
     
@@ -59,18 +59,15 @@ object gridstackDdMod {
     val ^ : js.Any = js.native
     
     /** get the current registered plugin to use */
-    @scala.inline
-    def get(): TypeofGridStackDD = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[TypeofGridStackDD]
+    inline def get(): TypeofGridStackDD = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[TypeofGridStackDD]
     
     /** call this method to register your plugin instead of the default no-op one */
-    @scala.inline
-    def registerPlugin(pluginClass: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginClass.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerPlugin(pluginClass: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginClass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("gridstack/dist/gridstack-dd", "GridStackDD.registeredPlugins")
     @js.native
     def registeredPlugins: TypeofGridStackDD = js.native
-    @scala.inline
-    def registeredPlugins_=(x: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registeredPlugins")(x.asInstanceOf[js.Any])
+    inline def registeredPlugins_=(x: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registeredPlugins")(x.asInstanceOf[js.Any])
   }
   
   type DDCallback = js.Function3[
@@ -87,20 +84,16 @@ object gridstackDdMod {
   }
   object DDDropOpt {
     
-    @scala.inline
-    def apply(): DDDropOpt = {
+    inline def apply(): DDDropOpt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DDDropOpt]
     }
     
-    @scala.inline
-    implicit class DDDropOptMutableBuilder[Self <: DDDropOpt] (val x: Self) extends AnyVal {
+    extension [Self <: DDDropOpt](x: Self) {
       
-      @scala.inline
-      def setAccept(value: /* el */ GridItemHTMLElement => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
+      inline def setAccept(value: /* el */ GridItemHTMLElement => Boolean): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     }
   }
   

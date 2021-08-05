@@ -10,7 +10,7 @@ trait HTMLAudioElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLAudioElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLAudioElement_typekey")
   var MSHTMLDotHTMLAudioElement_typekey: HTMLAudioElement = js.native
   
   var accessKey: String = js.native

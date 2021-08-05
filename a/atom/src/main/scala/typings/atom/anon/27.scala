@@ -17,25 +17,19 @@ trait `27` extends StObject {
 }
 object `27` {
   
-  @scala.inline
-  def apply(): `27` = {
+  inline def apply(): `27` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`27`]
   }
   
-  @scala.inline
-  implicit class `27MutableBuilder`[Self <: `27`] (val x: Self) extends AnyVal {
+  extension [Self <: `27`](x: Self) {
     
-    @scala.inline
-    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
-    @scala.inline
-    def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+    inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+    inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
   }
 }

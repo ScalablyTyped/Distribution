@@ -14,25 +14,19 @@ trait AudioBufferOptions extends StObject {
 }
 object AudioBufferOptions {
   
-  @scala.inline
-  def apply(length: Double, sampleRate: Double): AudioBufferOptions = {
+  inline def apply(length: Double, sampleRate: Double): AudioBufferOptions = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], sampleRate = sampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioBufferOptions]
   }
   
-  @scala.inline
-  implicit class AudioBufferOptionsMutableBuilder[Self <: AudioBufferOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AudioBufferOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfChannels(value: Double): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
+    inline def setNumberOfChannels(value: Double): Self = StObject.set(x, "numberOfChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfChannelsUndefined: Self = StObject.set(x, "numberOfChannels", js.undefined)
+    inline def setNumberOfChannelsUndefined: Self = StObject.set(x, "numberOfChannels", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
   }
 }

@@ -20,11 +20,11 @@ object semaphoreMod {
     def this(initialCount: Double) = this()
     def this(initialCount: Double, maxCount: Double) = this()
     
-    var _currentCount: js.Any = js.native
+    /* private */ var _currentCount: js.Any = js.native
     
-    var _maxCount: js.Any = js.native
+    /* private */ var _maxCount: js.Any = js.native
     
-    var _waiters: js.Any = js.native
+    /* private */ var _waiters: js.Any = js.native
     
     /**
       * Gets the number of remaining asynchronous operations that can enter

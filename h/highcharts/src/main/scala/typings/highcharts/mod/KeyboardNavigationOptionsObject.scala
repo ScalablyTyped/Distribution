@@ -41,46 +41,33 @@ trait KeyboardNavigationOptionsObject extends StObject {
 }
 object KeyboardNavigationOptionsObject {
   
-  @scala.inline
-  def apply(): KeyboardNavigationOptionsObject = {
+  inline def apply(): KeyboardNavigationOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyboardNavigationOptionsObject]
   }
   
-  @scala.inline
-  implicit class KeyboardNavigationOptionsObjectMutableBuilder[Self <: KeyboardNavigationOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardNavigationOptionsObject](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFocusBorder(value: KeyboardNavigationFocusBorderOptionsObject): Self = StObject.set(x, "focusBorder", value.asInstanceOf[js.Any])
+    inline def setFocusBorder(value: KeyboardNavigationFocusBorderOptionsObject): Self = StObject.set(x, "focusBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusBorderUndefined: Self = StObject.set(x, "focusBorder", js.undefined)
+    inline def setFocusBorderUndefined: Self = StObject.set(x, "focusBorder", js.undefined)
     
-    @scala.inline
-    def setOrder(value: js.Array[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: js.Array[String]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
+    inline def setOrderVarargs(value: String*): Self = StObject.set(x, "order", js.Array(value :_*))
     
-    @scala.inline
-    def setSeriesNavigation(value: KeyboardNavigationSeriesNavigationOptionsObject): Self = StObject.set(x, "seriesNavigation", value.asInstanceOf[js.Any])
+    inline def setSeriesNavigation(value: KeyboardNavigationSeriesNavigationOptionsObject): Self = StObject.set(x, "seriesNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesNavigationUndefined: Self = StObject.set(x, "seriesNavigation", js.undefined)
+    inline def setSeriesNavigationUndefined: Self = StObject.set(x, "seriesNavigation", js.undefined)
     
-    @scala.inline
-    def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
+    inline def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
+    inline def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
   }
 }

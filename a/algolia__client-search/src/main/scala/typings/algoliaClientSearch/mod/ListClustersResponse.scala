@@ -13,19 +13,15 @@ trait ListClustersResponse extends StObject {
 }
 object ListClustersResponse {
   
-  @scala.inline
-  def apply(clusters: js.Array[Cluster]): ListClustersResponse = {
+  inline def apply(clusters: js.Array[Cluster]): ListClustersResponse = {
     val __obj = js.Dynamic.literal(clusters = clusters.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListClustersResponse]
   }
   
-  @scala.inline
-  implicit class ListClustersResponseMutableBuilder[Self <: ListClustersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListClustersResponse](x: Self) {
     
-    @scala.inline
-    def setClusters(value: js.Array[Cluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: js.Array[Cluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "clusters", js.Array(value :_*))
   }
 }

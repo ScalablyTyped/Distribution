@@ -35,61 +35,43 @@ trait CalendarPermission
 }
 object CalendarPermission {
   
-  @scala.inline
-  def apply(): CalendarPermission = {
+  inline def apply(): CalendarPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CalendarPermission]
   }
   
-  @scala.inline
-  implicit class CalendarPermissionMutableBuilder[Self <: CalendarPermission] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarPermission](x: Self) {
     
-    @scala.inline
-    def setAllowedRoles(value: NullableOption[js.Array[CalendarRoleType]]): Self = StObject.set(x, "allowedRoles", value.asInstanceOf[js.Any])
+    inline def setAllowedRoles(value: NullableOption[js.Array[CalendarRoleType]]): Self = StObject.set(x, "allowedRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedRolesNull: Self = StObject.set(x, "allowedRoles", null)
+    inline def setAllowedRolesNull: Self = StObject.set(x, "allowedRoles", null)
     
-    @scala.inline
-    def setAllowedRolesUndefined: Self = StObject.set(x, "allowedRoles", js.undefined)
+    inline def setAllowedRolesUndefined: Self = StObject.set(x, "allowedRoles", js.undefined)
     
-    @scala.inline
-    def setAllowedRolesVarargs(value: CalendarRoleType*): Self = StObject.set(x, "allowedRoles", js.Array(value :_*))
+    inline def setAllowedRolesVarargs(value: CalendarRoleType*): Self = StObject.set(x, "allowedRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
+    inline def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setIsInsideOrganization(value: NullableOption[Boolean]): Self = StObject.set(x, "isInsideOrganization", value.asInstanceOf[js.Any])
+    inline def setIsInsideOrganization(value: NullableOption[Boolean]): Self = StObject.set(x, "isInsideOrganization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInsideOrganizationNull: Self = StObject.set(x, "isInsideOrganization", null)
+    inline def setIsInsideOrganizationNull: Self = StObject.set(x, "isInsideOrganization", null)
     
-    @scala.inline
-    def setIsInsideOrganizationUndefined: Self = StObject.set(x, "isInsideOrganization", js.undefined)
+    inline def setIsInsideOrganizationUndefined: Self = StObject.set(x, "isInsideOrganization", js.undefined)
     
-    @scala.inline
-    def setIsRemovable(value: NullableOption[Boolean]): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
+    inline def setIsRemovable(value: NullableOption[Boolean]): Self = StObject.set(x, "isRemovable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRemovableNull: Self = StObject.set(x, "isRemovable", null)
+    inline def setIsRemovableNull: Self = StObject.set(x, "isRemovable", null)
     
-    @scala.inline
-    def setIsRemovableUndefined: Self = StObject.set(x, "isRemovable", js.undefined)
+    inline def setIsRemovableUndefined: Self = StObject.set(x, "isRemovable", js.undefined)
     
-    @scala.inline
-    def setRole(value: NullableOption[CalendarRoleType]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: NullableOption[CalendarRoleType]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNull: Self = StObject.set(x, "role", null)
+    inline def setRoleNull: Self = StObject.set(x, "role", null)
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

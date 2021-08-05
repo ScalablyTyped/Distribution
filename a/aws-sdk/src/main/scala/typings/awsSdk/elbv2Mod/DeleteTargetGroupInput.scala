@@ -13,16 +13,13 @@ trait DeleteTargetGroupInput extends StObject {
 }
 object DeleteTargetGroupInput {
   
-  @scala.inline
-  def apply(TargetGroupArn: TargetGroupArn): DeleteTargetGroupInput = {
+  inline def apply(TargetGroupArn: TargetGroupArn): DeleteTargetGroupInput = {
     val __obj = js.Dynamic.literal(TargetGroupArn = TargetGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTargetGroupInput]
   }
   
-  @scala.inline
-  implicit class DeleteTargetGroupInputMutableBuilder[Self <: DeleteTargetGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTargetGroupInput](x: Self) {
     
-    @scala.inline
-    def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
   }
 }

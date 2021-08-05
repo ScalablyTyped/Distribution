@@ -24,14 +24,12 @@ object popoverMod {
     @JSImport("wix-style-react/dist/es/src/Popover", "default.Content")
     @js.native
     def Content: SFC[Children] = js.native
-    @scala.inline
-    def Content_=(x: SFC[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+    inline def Content_=(x: SFC[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Popover", "default.Element")
     @js.native
     def Element: SFC[Children] = js.native
-    @scala.inline
-    def Element_=(x: SFC[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
+    inline def Element_=(x: SFC[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
   }
   
   type Popover = Component[PopoverProps, js.Object, js.Any]
@@ -46,26 +44,20 @@ object popoverMod {
   }
   object PopoverProps {
     
-    @scala.inline
-    def apply(placement: Placement, shown: Boolean): PopoverProps = {
+    inline def apply(placement: Placement, shown: Boolean): PopoverProps = {
       val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopoverProps]
     }
     
-    @scala.inline
-    implicit class PopoverPropsMutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setTheme(value: PopoverTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: PopoverTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -76,10 +68,8 @@ object popoverMod {
   trait PopoverTheme extends StObject
   object PopoverTheme {
     
-    @scala.inline
-    def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
+    inline def dark: typings.wixStyleReact.wixStyleReactStrings.dark = "dark".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dark]
     
-    @scala.inline
-    def light: typings.wixStyleReact.wixStyleReactStrings.light = "light".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.light]
+    inline def light: typings.wixStyleReact.wixStyleReactStrings.light = "light".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.light]
   }
 }

@@ -15,24 +15,20 @@ object DEFAULT_SEARCH_OPTIONS {
   @JSImport("react-md", "DEFAULT_SEARCH_OPTIONS.getItemValue")
   @js.native
   def getItemValue: GetItemValue_[js.Any] = js.native
-  @scala.inline
-  def getItemValue_=(x: GetItemValue_[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getItemValue")(x.asInstanceOf[js.Any])
+  inline def getItemValue_=(x: GetItemValue_[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getItemValue")(x.asInstanceOf[js.Any])
   
   @JSImport("react-md", "DEFAULT_SEARCH_OPTIONS.ignoreWhitespace")
   @js.native
   def ignoreWhitespace: Boolean = js.native
-  @scala.inline
-  def ignoreWhitespace_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoreWhitespace")(x.asInstanceOf[js.Any])
+  inline def ignoreWhitespace_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoreWhitespace")(x.asInstanceOf[js.Any])
   
   @JSImport("react-md", "DEFAULT_SEARCH_OPTIONS.trim")
   @js.native
   def trim: Boolean = js.native
-  @scala.inline
-  def trim_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trim")(x.asInstanceOf[js.Any])
+  inline def trim_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trim")(x.asInstanceOf[js.Any])
   
   @JSImport("react-md", "DEFAULT_SEARCH_OPTIONS.valueKey")
   @js.native
   def valueKey: String = js.native
-  @scala.inline
-  def valueKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valueKey")(x.asInstanceOf[js.Any])
+  inline def valueKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valueKey")(x.asInstanceOf[js.Any])
 }

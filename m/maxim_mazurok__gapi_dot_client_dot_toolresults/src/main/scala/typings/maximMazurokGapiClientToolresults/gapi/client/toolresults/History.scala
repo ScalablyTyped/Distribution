@@ -23,37 +23,27 @@ trait History extends StObject {
 }
 object History {
   
-  @scala.inline
-  def apply(): History = {
+  inline def apply(): History = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[History]
   }
   
-  @scala.inline
-  implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
+  extension [Self <: History](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+    inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+    inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTestPlatform(value: String): Self = StObject.set(x, "testPlatform", value.asInstanceOf[js.Any])
+    inline def setTestPlatform(value: String): Self = StObject.set(x, "testPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPlatformUndefined: Self = StObject.set(x, "testPlatform", js.undefined)
+    inline def setTestPlatformUndefined: Self = StObject.set(x, "testPlatform", js.undefined)
   }
 }

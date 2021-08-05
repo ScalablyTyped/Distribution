@@ -16,26 +16,20 @@ object anon {
   }
   object Host {
     
-    @scala.inline
-    def apply(login: String, passcode: String): Host = {
+    inline def apply(login: String, passcode: String): Host = {
       val __obj = js.Dynamic.literal(login = login.asInstanceOf[js.Any], passcode = passcode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Host]
     }
     
-    @scala.inline
-    implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+    extension [Self <: Host](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+      inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasscode(value: String): Self = StObject.set(x, "passcode", value.asInstanceOf[js.Any])
+      inline def setPasscode(value: String): Self = StObject.set(x, "passcode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +41,16 @@ object anon {
   }
   object Incoming {
     
-    @scala.inline
-    def apply(incoming: Double, outgoing: Double): Incoming = {
+    inline def apply(incoming: Double, outgoing: Double): Incoming = {
       val __obj = js.Dynamic.literal(incoming = incoming.asInstanceOf[js.Any], outgoing = outgoing.asInstanceOf[js.Any])
       __obj.asInstanceOf[Incoming]
     }
     
-    @scala.inline
-    implicit class IncomingMutableBuilder[Self <: Incoming] (val x: Self) extends AnyVal {
+    extension [Self <: Incoming](x: Self) {
       
-      @scala.inline
-      def setIncoming(value: Double): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
+      inline def setIncoming(value: Double): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutgoing(value: Double): Self = StObject.set(x, "outgoing", value.asInstanceOf[js.Any])
+      inline def setOutgoing(value: Double): Self = StObject.set(x, "outgoing", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -33,37 +33,27 @@ trait PutRestApiRequest extends StObject {
 }
 object PutRestApiRequest {
   
-  @scala.inline
-  def apply(body: _Blob, restApiId: String): PutRestApiRequest = {
+  inline def apply(body: _Blob, restApiId: String): PutRestApiRequest = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRestApiRequest]
   }
   
-  @scala.inline
-  implicit class PutRestApiRequestMutableBuilder[Self <: PutRestApiRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutRestApiRequest](x: Self) {
     
-    @scala.inline
-    def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: _Blob): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailOnWarnings(value: Boolean): Self = StObject.set(x, "failOnWarnings", value.asInstanceOf[js.Any])
+    inline def setFailOnWarnings(value: Boolean): Self = StObject.set(x, "failOnWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailOnWarningsUndefined: Self = StObject.set(x, "failOnWarnings", js.undefined)
+    inline def setFailOnWarningsUndefined: Self = StObject.set(x, "failOnWarnings", js.undefined)
     
-    @scala.inline
-    def setMode(value: PutMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: PutMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setParameters(value: MapOfStringToString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MapOfStringToString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

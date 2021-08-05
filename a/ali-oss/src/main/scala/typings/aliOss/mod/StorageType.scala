@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StorageType extends StObject
 object StorageType {
   
-  @scala.inline
-  def Archive: typings.aliOss.aliOssStrings.Archive = "Archive".asInstanceOf[typings.aliOss.aliOssStrings.Archive]
+  inline def Archive: typings.aliOss.aliOssStrings.Archive = "Archive".asInstanceOf[typings.aliOss.aliOssStrings.Archive]
   
-  @scala.inline
-  def IA: typings.aliOss.aliOssStrings.IA = "IA".asInstanceOf[typings.aliOss.aliOssStrings.IA]
+  inline def IA: typings.aliOss.aliOssStrings.IA = "IA".asInstanceOf[typings.aliOss.aliOssStrings.IA]
   
-  @scala.inline
-  def Standard: typings.aliOss.aliOssStrings.Standard = "Standard".asInstanceOf[typings.aliOss.aliOssStrings.Standard]
+  inline def Standard: typings.aliOss.aliOssStrings.Standard = "Standard".asInstanceOf[typings.aliOss.aliOssStrings.Standard]
 }

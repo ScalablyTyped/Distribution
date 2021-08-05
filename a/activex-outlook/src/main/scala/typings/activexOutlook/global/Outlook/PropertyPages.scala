@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.PropertyPages")
 @js.native
-class PropertyPages protected ()
+/* private */ class PropertyPages ()
   extends StObject
      with typings.activexOutlook.Outlook.PropertyPages {
   
@@ -26,7 +26,7 @@ class PropertyPages protected ()
   /* CompleteClass */
   override def Item(Index: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.PropertyPages_typekey")
   var OutlookDotPropertyPages_typekey: typings.activexOutlook.Outlook.PropertyPages = js.native
   

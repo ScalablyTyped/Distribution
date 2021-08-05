@@ -88,253 +88,171 @@ trait spreadsheetConfig extends StObject {
 }
 object spreadsheetConfig {
   
-  @scala.inline
-  def apply(): spreadsheetConfig = {
+  inline def apply(): spreadsheetConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[spreadsheetConfig]
   }
   
-  @scala.inline
-  implicit class spreadsheetConfigMutableBuilder[Self <: spreadsheetConfig] (val x: Self) extends AnyVal {
+  extension [Self <: spreadsheetConfig](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: js.Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    @scala.inline
-    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
     
-    @scala.inline
-    def setBottombar(value: Boolean): Self = StObject.set(x, "bottombar", value.asInstanceOf[js.Any])
+    inline def setBottombar(value: Boolean): Self = StObject.set(x, "bottombar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottombarUndefined: Self = StObject.set(x, "bottombar", js.undefined)
+    inline def setBottombarUndefined: Self = StObject.set(x, "bottombar", js.undefined)
     
-    @scala.inline
-    def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setClipboard(value: Boolean): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+    inline def setClipboard(value: Boolean): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipboardDecimalDelimiter(value: String): Self = StObject.set(x, "clipboardDecimalDelimiter", value.asInstanceOf[js.Any])
+    inline def setClipboardDecimalDelimiter(value: String): Self = StObject.set(x, "clipboardDecimalDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipboardDecimalDelimiterUndefined: Self = StObject.set(x, "clipboardDecimalDelimiter", js.undefined)
+    inline def setClipboardDecimalDelimiterUndefined: Self = StObject.set(x, "clipboardDecimalDelimiter", js.undefined)
     
-    @scala.inline
-    def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
+    inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
     
-    @scala.inline
-    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+    inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
-    @scala.inline
-    def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    @scala.inline
-    def setConditionStyle(value: js.Array[js.Any]): Self = StObject.set(x, "conditionStyle", value.asInstanceOf[js.Any])
+    inline def setConditionStyle(value: js.Array[js.Any]): Self = StObject.set(x, "conditionStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionStyleUndefined: Self = StObject.set(x, "conditionStyle", js.undefined)
+    inline def setConditionStyleUndefined: Self = StObject.set(x, "conditionStyle", js.undefined)
     
-    @scala.inline
-    def setConditionStyleVarargs(value: js.Any*): Self = StObject.set(x, "conditionStyle", js.Array(value :_*))
+    inline def setConditionStyleVarargs(value: js.Any*): Self = StObject.set(x, "conditionStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    @scala.inline
-    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+    inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+    inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLiveEditor(value: Boolean): Self = StObject.set(x, "liveEditor", value.asInstanceOf[js.Any])
+    inline def setLiveEditor(value: Boolean): Self = StObject.set(x, "liveEditor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveEditorUndefined: Self = StObject.set(x, "liveEditor", js.undefined)
+    inline def setLiveEditorUndefined: Self = StObject.set(x, "liveEditor", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    @scala.inline
-    def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
-    @scala.inline
-    def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    @scala.inline
-    def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+    inline def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+    inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
     
-    @scala.inline
-    def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+    inline def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+    inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
     
-    @scala.inline
-    def setResizeCell(value: Boolean): Self = StObject.set(x, "resizeCell", value.asInstanceOf[js.Any])
+    inline def setResizeCell(value: Boolean): Self = StObject.set(x, "resizeCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeCellUndefined: Self = StObject.set(x, "resizeCell", js.undefined)
+    inline def setResizeCellUndefined: Self = StObject.set(x, "resizeCell", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
-    @scala.inline
-    def setSheetTabWidth(value: Double): Self = StObject.set(x, "sheetTabWidth", value.asInstanceOf[js.Any])
+    inline def setSheetTabWidth(value: Double): Self = StObject.set(x, "sheetTabWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetTabWidthUndefined: Self = StObject.set(x, "sheetTabWidth", js.undefined)
+    inline def setSheetTabWidthUndefined: Self = StObject.set(x, "sheetTabWidth", js.undefined)
     
-    @scala.inline
-    def setSubbar(value: js.Any): Self = StObject.set(x, "subbar", value.asInstanceOf[js.Any])
+    inline def setSubbar(value: js.Any): Self = StObject.set(x, "subbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubbarUndefined: Self = StObject.set(x, "subbar", js.undefined)
+    inline def setSubbarUndefined: Self = StObject.set(x, "subbar", js.undefined)
     
-    @scala.inline
-    def setToolbar(value: String | Boolean): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: String | Boolean): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

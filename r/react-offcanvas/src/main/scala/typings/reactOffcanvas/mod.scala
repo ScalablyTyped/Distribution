@@ -68,56 +68,40 @@ object mod {
   }
   object OffCanvasBodyProps {
     
-    @scala.inline
-    def apply(): OffCanvasBodyProps = {
+    inline def apply(): OffCanvasBodyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OffCanvasBodyProps]
     }
     
-    @scala.inline
-    implicit class OffCanvasBodyPropsMutableBuilder[Self <: OffCanvasBodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: OffCanvasBodyProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIsMenuOpened(value: Boolean): Self = StObject.set(x, "isMenuOpened", value.asInstanceOf[js.Any])
+      inline def setIsMenuOpened(value: Boolean): Self = StObject.set(x, "isMenuOpened", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMenuOpenedUndefined: Self = StObject.set(x, "isMenuOpened", js.undefined)
+      inline def setIsMenuOpenedUndefined: Self = StObject.set(x, "isMenuOpened", js.undefined)
       
-      @scala.inline
-      def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -139,56 +123,40 @@ object mod {
   }
   object OffCanvasMenuProps {
     
-    @scala.inline
-    def apply(): OffCanvasMenuProps = {
+    inline def apply(): OffCanvasMenuProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OffCanvasMenuProps]
     }
     
-    @scala.inline
-    implicit class OffCanvasMenuPropsMutableBuilder[Self <: OffCanvasMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: OffCanvasMenuProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIsMenuOpened(value: Boolean): Self = StObject.set(x, "isMenuOpened", value.asInstanceOf[js.Any])
+      inline def setIsMenuOpened(value: Boolean): Self = StObject.set(x, "isMenuOpened", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMenuOpenedUndefined: Self = StObject.set(x, "isMenuOpened", js.undefined)
+      inline def setIsMenuOpenedUndefined: Self = StObject.set(x, "isMenuOpened", js.undefined)
       
-      @scala.inline
-      def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -208,50 +176,36 @@ object mod {
   }
   object OffCanvasProps {
     
-    @scala.inline
-    def apply(): OffCanvasProps = {
+    inline def apply(): OffCanvasProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OffCanvasProps]
     }
     
-    @scala.inline
-    implicit class OffCanvasPropsMutableBuilder[Self <: OffCanvasProps] (val x: Self) extends AnyVal {
+    extension [Self <: OffCanvasProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setEffect(value: push | overlay | parallax): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+      inline def setEffect(value: push | overlay | parallax): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+      inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
       
-      @scala.inline
-      def setIsMenuOpened(value: Boolean): Self = StObject.set(x, "isMenuOpened", value.asInstanceOf[js.Any])
+      inline def setIsMenuOpened(value: Boolean): Self = StObject.set(x, "isMenuOpened", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMenuOpenedUndefined: Self = StObject.set(x, "isMenuOpened", js.undefined)
+      inline def setIsMenuOpenedUndefined: Self = StObject.set(x, "isMenuOpened", js.undefined)
       
-      @scala.inline
-      def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

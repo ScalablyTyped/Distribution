@@ -73,88 +73,61 @@ trait SchemaContainer extends StObject {
 }
 object SchemaContainer {
   
-  @scala.inline
-  def apply(): SchemaContainer = {
+  inline def apply(): SchemaContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaContainer]
   }
   
-  @scala.inline
-  implicit class SchemaContainerMutableBuilder[Self <: SchemaContainer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaContainer](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: js.Array[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: js.Array[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
-    @scala.inline
-    def setDomainNameVarargs(value: String*): Self = StObject.set(x, "domainName", js.Array(value :_*))
+    inline def setDomainNameVarargs(value: String*): Self = StObject.set(x, "domainName", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabledBuiltInVariable(value: js.Array[String]): Self = StObject.set(x, "enabledBuiltInVariable", value.asInstanceOf[js.Any])
+    inline def setEnabledBuiltInVariable(value: js.Array[String]): Self = StObject.set(x, "enabledBuiltInVariable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledBuiltInVariableUndefined: Self = StObject.set(x, "enabledBuiltInVariable", js.undefined)
+    inline def setEnabledBuiltInVariableUndefined: Self = StObject.set(x, "enabledBuiltInVariable", js.undefined)
     
-    @scala.inline
-    def setEnabledBuiltInVariableVarargs(value: String*): Self = StObject.set(x, "enabledBuiltInVariable", js.Array(value :_*))
+    inline def setEnabledBuiltInVariableVarargs(value: String*): Self = StObject.set(x, "enabledBuiltInVariable", js.Array(value :_*))
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: String): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
+    inline def setPublicIdUndefined: Self = StObject.set(x, "publicId", js.undefined)
     
-    @scala.inline
-    def setTimeZoneCountryId(value: String): Self = StObject.set(x, "timeZoneCountryId", value.asInstanceOf[js.Any])
+    inline def setTimeZoneCountryId(value: String): Self = StObject.set(x, "timeZoneCountryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneCountryIdUndefined: Self = StObject.set(x, "timeZoneCountryId", js.undefined)
+    inline def setTimeZoneCountryIdUndefined: Self = StObject.set(x, "timeZoneCountryId", js.undefined)
     
-    @scala.inline
-    def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
+    inline def setTimeZoneId(value: String): Self = StObject.set(x, "timeZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneIdUndefined: Self = StObject.set(x, "timeZoneId", js.undefined)
+    inline def setTimeZoneIdUndefined: Self = StObject.set(x, "timeZoneId", js.undefined)
     
-    @scala.inline
-    def setUsageContext(value: js.Array[String]): Self = StObject.set(x, "usageContext", value.asInstanceOf[js.Any])
+    inline def setUsageContext(value: js.Array[String]): Self = StObject.set(x, "usageContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageContextUndefined: Self = StObject.set(x, "usageContext", js.undefined)
+    inline def setUsageContextUndefined: Self = StObject.set(x, "usageContext", js.undefined)
     
-    @scala.inline
-    def setUsageContextVarargs(value: String*): Self = StObject.set(x, "usageContext", js.Array(value :_*))
+    inline def setUsageContextVarargs(value: String*): Self = StObject.set(x, "usageContext", js.Array(value :_*))
   }
 }

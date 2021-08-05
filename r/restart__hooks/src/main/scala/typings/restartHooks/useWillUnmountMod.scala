@@ -10,6 +10,5 @@ object useWillUnmountMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(fn: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

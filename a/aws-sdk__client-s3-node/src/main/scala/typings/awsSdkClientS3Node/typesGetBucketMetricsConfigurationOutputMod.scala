@@ -22,20 +22,16 @@ object typesGetBucketMetricsConfigurationOutputMod {
   }
   object GetBucketMetricsConfigurationOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketMetricsConfigurationOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketMetricsConfigurationOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketMetricsConfigurationOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketMetricsConfigurationOutputMutableBuilder[Self <: GetBucketMetricsConfigurationOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketMetricsConfigurationOutput](x: Self) {
       
-      @scala.inline
-      def setMetricsConfiguration(value: UnmarshalledMetricsConfiguration): Self = StObject.set(x, "MetricsConfiguration", value.asInstanceOf[js.Any])
+      inline def setMetricsConfiguration(value: UnmarshalledMetricsConfiguration): Self = StObject.set(x, "MetricsConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricsConfigurationUndefined: Self = StObject.set(x, "MetricsConfiguration", js.undefined)
+      inline def setMetricsConfigurationUndefined: Self = StObject.set(x, "MetricsConfiguration", js.undefined)
     }
   }
 }

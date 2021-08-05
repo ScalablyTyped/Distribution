@@ -26,23 +26,18 @@ object typesUpdateTableOutputMod {
   }
   object UpdateTableOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UpdateTableOutput = {
+    inline def apply($metadata: ResponseMetadata): UpdateTableOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateTableOutput]
     }
     
-    @scala.inline
-    implicit class UpdateTableOutputMutableBuilder[Self <: UpdateTableOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateTableOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescription(value: UnmarshalledTableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+      inline def setTableDescription(value: UnmarshalledTableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+      inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
     }
   }
 }

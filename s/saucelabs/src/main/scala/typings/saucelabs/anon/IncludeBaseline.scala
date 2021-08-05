@@ -14,28 +14,21 @@ trait IncludeBaseline extends StObject {
 }
 object IncludeBaseline {
   
-  @scala.inline
-  def apply(metricNames: js.Array[String], orderIndex: Double): IncludeBaseline = {
+  inline def apply(metricNames: js.Array[String], orderIndex: Double): IncludeBaseline = {
     val __obj = js.Dynamic.literal(metricNames = metricNames.asInstanceOf[js.Any], orderIndex = orderIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeBaseline]
   }
   
-  @scala.inline
-  implicit class IncludeBaselineMutableBuilder[Self <: IncludeBaseline] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeBaseline](x: Self) {
     
-    @scala.inline
-    def setIncludeBaseline(value: Boolean): Self = StObject.set(x, "includeBaseline", value.asInstanceOf[js.Any])
+    inline def setIncludeBaseline(value: Boolean): Self = StObject.set(x, "includeBaseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBaselineUndefined: Self = StObject.set(x, "includeBaseline", js.undefined)
+    inline def setIncludeBaselineUndefined: Self = StObject.set(x, "includeBaseline", js.undefined)
     
-    @scala.inline
-    def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
+    inline def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderIndex(value: Double): Self = StObject.set(x, "orderIndex", value.asInstanceOf[js.Any])
+    inline def setOrderIndex(value: Double): Self = StObject.set(x, "orderIndex", value.asInstanceOf[js.Any])
   }
 }

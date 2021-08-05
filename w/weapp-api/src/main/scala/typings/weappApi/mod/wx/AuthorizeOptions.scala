@@ -13,16 +13,13 @@ trait AuthorizeOptions
 }
 object AuthorizeOptions {
   
-  @scala.inline
-  def apply(scope: Scope): AuthorizeOptions = {
+  inline def apply(scope: Scope): AuthorizeOptions = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeOptions]
   }
   
-  @scala.inline
-  implicit class AuthorizeOptionsMutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeOptions](x: Self) {
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }
 }

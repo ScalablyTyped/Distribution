@@ -13,7 +13,7 @@ object ctrMod {
   class AES_CTR protected () extends AES {
     def this(key: Uint8Array, nonce: Uint8Array) = this()
     
-    var AES_CTR_set_options: js.Any = js.native
+    /* private */ var AES_CTR_set_options: js.Any = js.native
     
     def decrypt(data: Uint8Array): Uint8Array = js.native
     
@@ -26,10 +26,8 @@ object ctrMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decrypt(data: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def decrypt(data: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
-    @scala.inline
-    def encrypt(data: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def encrypt(data: Uint8Array, key: Uint8Array, nonce: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], key.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
 }

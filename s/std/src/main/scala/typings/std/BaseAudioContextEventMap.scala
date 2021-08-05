@@ -10,16 +10,13 @@ trait BaseAudioContextEventMap extends StObject {
 }
 object BaseAudioContextEventMap {
   
-  @scala.inline
-  def apply(statechange: Event): BaseAudioContextEventMap = {
+  inline def apply(statechange: Event): BaseAudioContextEventMap = {
     val __obj = js.Dynamic.literal(statechange = statechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseAudioContextEventMap]
   }
   
-  @scala.inline
-  implicit class BaseAudioContextEventMapMutableBuilder[Self <: BaseAudioContextEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BaseAudioContextEventMap](x: Self) {
     
-    @scala.inline
-    def setStatechange(value: Event): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
+    inline def setStatechange(value: Event): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
   }
 }

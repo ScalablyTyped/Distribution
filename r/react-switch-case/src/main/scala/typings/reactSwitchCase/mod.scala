@@ -42,17 +42,14 @@ object mod {
   }
   object CaseProps {
     
-    @scala.inline
-    def apply(value: js.Any): CaseProps = {
+    inline def apply(value: js.Any): CaseProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CaseProps]
     }
     
-    @scala.inline
-    implicit class CasePropsMutableBuilder[Self <: CaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: CaseProps](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,17 +61,14 @@ object mod {
   }
   object SwitchProps {
     
-    @scala.inline
-    def apply(condition: js.Any): SwitchProps = {
+    inline def apply(condition: js.Any): SwitchProps = {
       val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
       __obj.asInstanceOf[SwitchProps]
     }
     
-    @scala.inline
-    implicit class SwitchPropsMutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwitchProps](x: Self) {
       
-      @scala.inline
-      def setCondition(value: js.Any): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: js.Any): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     }
   }
 }

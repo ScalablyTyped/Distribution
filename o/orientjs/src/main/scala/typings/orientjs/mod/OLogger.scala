@@ -14,8 +14,7 @@ trait OLogger extends StObject {
 }
 object OLogger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug: /* repeated */ js.Any => Unit,
     error: /* repeated */ js.Any => Unit,
     log: /* repeated */ js.Any => Unit
@@ -24,16 +23,12 @@ object OLogger {
     __obj.asInstanceOf[OLogger]
   }
   
-  @scala.inline
-  implicit class OLoggerMutableBuilder[Self <: OLogger] (val x: Self) extends AnyVal {
+  extension [Self <: OLogger](x: Self) {
     
-    @scala.inline
-    def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+    inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
   }
 }

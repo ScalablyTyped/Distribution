@@ -48,38 +48,28 @@ object grouping {
   }
   object IColumnDef {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.grouping.IColumnDef = {
+    inline def apply(): typings.uiGrid.mod.grouping.IColumnDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.grouping.IColumnDef]
     }
     
-    @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.grouping.IColumnDef] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.grouping.IColumnDef](x: Self) {
       
-      @scala.inline
-      def setEnableGrouping(value: Boolean): Self = StObject.set(x, "enableGrouping", value.asInstanceOf[js.Any])
+      inline def setEnableGrouping(value: Boolean): Self = StObject.set(x, "enableGrouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableGroupingUndefined: Self = StObject.set(x, "enableGrouping", js.undefined)
+      inline def setEnableGroupingUndefined: Self = StObject.set(x, "enableGrouping", js.undefined)
       
-      @scala.inline
-      def setGrouping(value: GroupPriority): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
+      inline def setGrouping(value: GroupPriority): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingShowAggregationMenu(value: Boolean): Self = StObject.set(x, "groupingShowAggregationMenu", value.asInstanceOf[js.Any])
+      inline def setGroupingShowAggregationMenu(value: Boolean): Self = StObject.set(x, "groupingShowAggregationMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingShowAggregationMenuUndefined: Self = StObject.set(x, "groupingShowAggregationMenu", js.undefined)
+      inline def setGroupingShowAggregationMenuUndefined: Self = StObject.set(x, "groupingShowAggregationMenu", js.undefined)
       
-      @scala.inline
-      def setGroupingShowGroupingMenu(value: Boolean): Self = StObject.set(x, "groupingShowGroupingMenu", value.asInstanceOf[js.Any])
+      inline def setGroupingShowGroupingMenu(value: Boolean): Self = StObject.set(x, "groupingShowGroupingMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingShowGroupingMenuUndefined: Self = StObject.set(x, "groupingShowGroupingMenu", js.undefined)
+      inline def setGroupingShowGroupingMenuUndefined: Self = StObject.set(x, "groupingShowGroupingMenu", js.undefined)
       
-      @scala.inline
-      def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
+      inline def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
     }
   }
   
@@ -88,8 +78,7 @@ object grouping {
        with /* key */ StringDictionary[IGridExpandedHash | String]
   object IGridExpandedHash {
     
-    @scala.inline
-    def apply(): IGridExpandedHash = {
+    inline def apply(): IGridExpandedHash = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGridExpandedHash]
     }
@@ -178,32 +167,24 @@ object grouping {
   }
   object IGridGroupingConfiguration {
     
-    @scala.inline
-    def apply(grouping: js.Array[IGripGroup], treeAggregations: js.Array[IGridTreeAggregations]): IGridGroupingConfiguration = {
+    inline def apply(grouping: js.Array[IGripGroup], treeAggregations: js.Array[IGridTreeAggregations]): IGridGroupingConfiguration = {
       val __obj = js.Dynamic.literal(grouping = grouping.asInstanceOf[js.Any], treeAggregations = treeAggregations.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGridGroupingConfiguration]
     }
     
-    @scala.inline
-    implicit class IGridGroupingConfigurationMutableBuilder[Self <: IGridGroupingConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: IGridGroupingConfiguration](x: Self) {
       
-      @scala.inline
-      def setExpandedState(value: IGridExpandedHash): Self = StObject.set(x, "expandedState", value.asInstanceOf[js.Any])
+      inline def setExpandedState(value: IGridExpandedHash): Self = StObject.set(x, "expandedState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedStateUndefined: Self = StObject.set(x, "expandedState", js.undefined)
+      inline def setExpandedStateUndefined: Self = StObject.set(x, "expandedState", js.undefined)
       
-      @scala.inline
-      def setGrouping(value: js.Array[IGripGroup]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
+      inline def setGrouping(value: js.Array[IGripGroup]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingVarargs(value: IGripGroup*): Self = StObject.set(x, "grouping", js.Array(value :_*))
+      inline def setGroupingVarargs(value: IGripGroup*): Self = StObject.set(x, "grouping", js.Array(value :_*))
       
-      @scala.inline
-      def setTreeAggregations(value: js.Array[IGridTreeAggregations]): Self = StObject.set(x, "treeAggregations", value.asInstanceOf[js.Any])
+      inline def setTreeAggregations(value: js.Array[IGridTreeAggregations]): Self = StObject.set(x, "treeAggregations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeAggregationsVarargs(value: IGridTreeAggregations*): Self = StObject.set(x, "treeAggregations", js.Array(value :_*))
+      inline def setTreeAggregationsVarargs(value: IGridTreeAggregations*): Self = StObject.set(x, "treeAggregations", js.Array(value :_*))
     }
   }
   
@@ -242,38 +223,28 @@ object grouping {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.grouping.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.grouping.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.grouping.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.grouping.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.grouping.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setEnableGroupHeaderSelection(value: Boolean): Self = StObject.set(x, "enableGroupHeaderSelection", value.asInstanceOf[js.Any])
+      inline def setEnableGroupHeaderSelection(value: Boolean): Self = StObject.set(x, "enableGroupHeaderSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableGroupHeaderSelectionUndefined: Self = StObject.set(x, "enableGroupHeaderSelection", js.undefined)
+      inline def setEnableGroupHeaderSelectionUndefined: Self = StObject.set(x, "enableGroupHeaderSelection", js.undefined)
       
-      @scala.inline
-      def setEnableGrouping(value: Boolean): Self = StObject.set(x, "enableGrouping", value.asInstanceOf[js.Any])
+      inline def setEnableGrouping(value: Boolean): Self = StObject.set(x, "enableGrouping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableGroupingUndefined: Self = StObject.set(x, "enableGrouping", js.undefined)
+      inline def setEnableGroupingUndefined: Self = StObject.set(x, "enableGrouping", js.undefined)
       
-      @scala.inline
-      def setGroupingNullLabel(value: String): Self = StObject.set(x, "groupingNullLabel", value.asInstanceOf[js.Any])
+      inline def setGroupingNullLabel(value: String): Self = StObject.set(x, "groupingNullLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingNullLabelUndefined: Self = StObject.set(x, "groupingNullLabel", js.undefined)
+      inline def setGroupingNullLabelUndefined: Self = StObject.set(x, "groupingNullLabel", js.undefined)
       
-      @scala.inline
-      def setGroupingShowCounts(value: Boolean): Self = StObject.set(x, "groupingShowCounts", value.asInstanceOf[js.Any])
+      inline def setGroupingShowCounts(value: Boolean): Self = StObject.set(x, "groupingShowCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupingShowCountsUndefined: Self = StObject.set(x, "groupingShowCounts", js.undefined)
+      inline def setGroupingShowCountsUndefined: Self = StObject.set(x, "groupingShowCounts", js.undefined)
     }
   }
   
@@ -287,23 +258,18 @@ object grouping {
   }
   object IGridTreeAggregations {
     
-    @scala.inline
-    def apply(aggregation: String, colName: String, field: String): IGridTreeAggregations = {
+    inline def apply(aggregation: String, colName: String, field: String): IGridTreeAggregations = {
       val __obj = js.Dynamic.literal(aggregation = aggregation.asInstanceOf[js.Any], colName = colName.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGridTreeAggregations]
     }
     
-    @scala.inline
-    implicit class IGridTreeAggregationsMutableBuilder[Self <: IGridTreeAggregations] (val x: Self) extends AnyVal {
+    extension [Self <: IGridTreeAggregations](x: Self) {
       
-      @scala.inline
-      def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
+      inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
+      inline def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,23 +283,18 @@ object grouping {
   }
   object IGripGroup {
     
-    @scala.inline
-    def apply(colName: String, field: String, groupPriority: Double): IGripGroup = {
+    inline def apply(colName: String, field: String, groupPriority: Double): IGripGroup = {
       val __obj = js.Dynamic.literal(colName = colName.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], groupPriority = groupPriority.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGripGroup]
     }
     
-    @scala.inline
-    implicit class IGripGroupMutableBuilder[Self <: IGripGroup] (val x: Self) extends AnyVal {
+    extension [Self <: IGripGroup](x: Self) {
       
-      @scala.inline
-      def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
+      inline def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupPriority(value: Double): Self = StObject.set(x, "groupPriority", value.asInstanceOf[js.Any])
+      inline def setGroupPriority(value: Double): Self = StObject.set(x, "groupPriority", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,8 +311,7 @@ object grouping {
   }
   object IUiGridGroupingConstants {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       COLLAPSED: String,
       EXPANDED: String,
       aggregation: AVG_,
@@ -362,11 +322,9 @@ object grouping {
       __obj.asInstanceOf[IUiGridGroupingConstants]
     }
     
-    @scala.inline
-    implicit class IUiGridGroupingConstantsMutableBuilder[Self <: IUiGridGroupingConstants] (val x: Self) extends AnyVal {
+    extension [Self <: IUiGridGroupingConstants](x: Self) {
       
-      @scala.inline
-      def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
+      inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     }
   }
   

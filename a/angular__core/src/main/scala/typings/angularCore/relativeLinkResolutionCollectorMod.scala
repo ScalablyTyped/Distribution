@@ -19,11 +19,11 @@ object relativeLinkResolutionCollectorMod {
     
     val forRootCalls: js.Array[CallExpression] = js.native
     
-    var getLiteralNeedingMigration: js.Any = js.native
+    /* private */ var getLiteralNeedingMigration: js.Any = js.native
     
-    var getLiteralNeedingMigrationFromIdentifier: js.Any = js.native
+    /* private */ var getLiteralNeedingMigrationFromIdentifier: js.Any = js.native
     
-    val typeChecker: js.Any = js.native
+    /* private */ val typeChecker: js.Any = js.native
     
     def visitNode(node: Node): Unit = js.native
   }

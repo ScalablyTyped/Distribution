@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CopyRecordOptionsEnum extends StObject
 object CopyRecordOptionsEnum {
   
-  @scala.inline
-  def adCopyAllowEmulation: `4` = 4.asInstanceOf[`4`]
+  inline def adCopyAllowEmulation: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adCopyNonRecursive: `2` = 2.asInstanceOf[`2`]
+  inline def adCopyNonRecursive: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adCopyOverWrite: `1` = 1.asInstanceOf[`1`]
+  inline def adCopyOverWrite: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adCopyUnspecified: `-1` = -1.asInstanceOf[`-1`]
+  inline def adCopyUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }

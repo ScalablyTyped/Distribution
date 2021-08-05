@@ -18,20 +18,16 @@ trait JSXExpressionContainer
 }
 object JSXExpressionContainer {
   
-  @scala.inline
-  def apply(expression: Expression | JSXEmptyExpression): JSXExpressionContainer = {
+  inline def apply(expression: Expression | JSXEmptyExpression): JSXExpressionContainer = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXExpressionContainer")
     __obj.asInstanceOf[JSXExpressionContainer]
   }
   
-  @scala.inline
-  implicit class JSXExpressionContainerMutableBuilder[Self <: JSXExpressionContainer] (val x: Self) extends AnyVal {
+  extension [Self <: JSXExpressionContainer](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression | JSXEmptyExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression | JSXEmptyExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXExpressionContainer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXExpressionContainer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

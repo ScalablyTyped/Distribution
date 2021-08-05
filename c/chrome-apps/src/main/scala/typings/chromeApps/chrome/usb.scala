@@ -102,8 +102,7 @@ object usb {
   }
   object ConfigDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       configurationValue: integer,
       extra_data: ArrayBuffer,
@@ -116,38 +115,27 @@ object usb {
       __obj.asInstanceOf[ConfigDescriptor]
     }
     
-    @scala.inline
-    implicit class ConfigDescriptorMutableBuilder[Self <: ConfigDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigDescriptor](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationValue(value: integer): Self = StObject.set(x, "configurationValue", value.asInstanceOf[js.Any])
+      inline def setConfigurationValue(value: integer): Self = StObject.set(x, "configurationValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExtra_data(value: ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
+      inline def setExtra_data(value: ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaces(value: js.Array[InterfaceDescriptor]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
+      inline def setInterfaces(value: js.Array[InterfaceDescriptor]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfacesVarargs(value: InterfaceDescriptor*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
+      inline def setInterfacesVarargs(value: InterfaceDescriptor*): Self = StObject.set(x, "interfaces", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxPower(value: integer): Self = StObject.set(x, "maxPower", value.asInstanceOf[js.Any])
+      inline def setMaxPower(value: integer): Self = StObject.set(x, "maxPower", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteWakeup(value: Boolean): Self = StObject.set(x, "remoteWakeup", value.asInstanceOf[js.Any])
+      inline def setRemoteWakeup(value: Boolean): Self = StObject.set(x, "remoteWakeup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfPowered(value: Boolean): Self = StObject.set(x, "selfPowered", value.asInstanceOf[js.Any])
+      inline def setSelfPowered(value: Boolean): Self = StObject.set(x, "selfPowered", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,23 +158,18 @@ object usb {
   }
   object ConnectionHandle {
     
-    @scala.inline
-    def apply(handle: integer, productId: integer, vendorId: integer): ConnectionHandle = {
+    inline def apply(handle: integer, productId: integer, vendorId: integer): ConnectionHandle = {
       val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any], productId = productId.asInstanceOf[js.Any], vendorId = vendorId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionHandle]
     }
     
-    @scala.inline
-    implicit class ConnectionHandleMutableBuilder[Self <: ConnectionHandle] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionHandle](x: Self) {
       
-      @scala.inline
-      def setHandle(value: integer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: integer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,8 +213,7 @@ object usb {
   }
   object Device {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       device: integer,
       manufacturerName: String,
       productId: integer,
@@ -244,29 +226,21 @@ object usb {
       __obj.asInstanceOf[Device]
     }
     
-    @scala.inline
-    implicit class DeviceMutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
+    extension [Self <: Device](x: Self) {
       
-      @scala.inline
-      def setDevice(value: integer): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: integer): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturerName(value: String): Self = StObject.set(x, "manufacturerName", value.asInstanceOf[js.Any])
+      inline def setManufacturerName(value: String): Self = StObject.set(x, "manufacturerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+      inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+      inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: integer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: integer): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,44 +262,32 @@ object usb {
   }
   object DeviceFilter {
     
-    @scala.inline
-    def apply(): DeviceFilter = {
+    inline def apply(): DeviceFilter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeviceFilter]
     }
     
-    @scala.inline
-    implicit class DeviceFilterMutableBuilder[Self <: DeviceFilter] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceFilter](x: Self) {
       
-      @scala.inline
-      def setInterfaceClass(value: integer): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
+      inline def setInterfaceClass(value: integer): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceClassUndefined: Self = StObject.set(x, "interfaceClass", js.undefined)
+      inline def setInterfaceClassUndefined: Self = StObject.set(x, "interfaceClass", js.undefined)
       
-      @scala.inline
-      def setInterfaceProtocol(value: integer): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
+      inline def setInterfaceProtocol(value: integer): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceProtocolUndefined: Self = StObject.set(x, "interfaceProtocol", js.undefined)
+      inline def setInterfaceProtocolUndefined: Self = StObject.set(x, "interfaceProtocol", js.undefined)
       
-      @scala.inline
-      def setInterfaceSubclass(value: integer): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
+      inline def setInterfaceSubclass(value: integer): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceSubclassUndefined: Self = StObject.set(x, "interfaceSubclass", js.undefined)
+      inline def setInterfaceSubclassUndefined: Self = StObject.set(x, "interfaceSubclass", js.undefined)
       
-      @scala.inline
-      def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+      inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
       
-      @scala.inline
-      def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
+      inline def setVendorIdUndefined: Self = StObject.set(x, "vendorId", js.undefined)
     }
   }
   
@@ -348,41 +310,30 @@ object usb {
   }
   object DeviceFilterStrict {
     
-    @scala.inline
-    def apply(vendorId: integer): DeviceFilterStrict = {
+    inline def apply(vendorId: integer): DeviceFilterStrict = {
       val __obj = js.Dynamic.literal(vendorId = vendorId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeviceFilterStrict]
     }
     
-    @scala.inline
-    implicit class DeviceFilterStrictMutableBuilder[Self <: DeviceFilterStrict] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceFilterStrict](x: Self) {
       
-      @scala.inline
-      def setInterfaceClass(value: integer): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
+      inline def setInterfaceClass(value: integer): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceClassUndefined: Self = StObject.set(x, "interfaceClass", js.undefined)
+      inline def setInterfaceClassUndefined: Self = StObject.set(x, "interfaceClass", js.undefined)
       
-      @scala.inline
-      def setInterfaceProtocol(value: integer): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
+      inline def setInterfaceProtocol(value: integer): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceProtocolUndefined: Self = StObject.set(x, "interfaceProtocol", js.undefined)
+      inline def setInterfaceProtocolUndefined: Self = StObject.set(x, "interfaceProtocol", js.undefined)
       
-      @scala.inline
-      def setInterfaceSubclass(value: integer): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
+      inline def setInterfaceSubclass(value: integer): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceSubclassUndefined: Self = StObject.set(x, "interfaceSubclass", js.undefined)
+      inline def setInterfaceSubclassUndefined: Self = StObject.set(x, "interfaceSubclass", js.undefined)
       
-      @scala.inline
-      def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+      inline def setProductId(value: integer): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+      inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
       
-      @scala.inline
-      def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
+      inline def setVendorId(value: integer): Self = StObject.set(x, "vendorId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -463,8 +414,7 @@ object usb {
   }
   object EndpointDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: integer,
       direction: ToStringLiteral[
           IN, 
@@ -490,14 +440,11 @@ object usb {
       __obj.asInstanceOf[EndpointDescriptor]
     }
     
-    @scala.inline
-    implicit class EndpointDescriptorMutableBuilder[Self <: EndpointDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointDescriptor](x: Self) {
       
-      @scala.inline
-      def setAddress(value: integer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: integer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(
+      inline def setDirection(
         value: ToStringLiteral[
               IN, 
               /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
@@ -508,20 +455,15 @@ object usb {
             ]
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtra_data(value: ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
+      inline def setExtra_data(value: ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumPacketSize(value: integer): Self = StObject.set(x, "maximumPacketSize", value.asInstanceOf[js.Any])
+      inline def setMaximumPacketSize(value: integer): Self = StObject.set(x, "maximumPacketSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollingInterval(value: integer): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
+      inline def setPollingInterval(value: integer): Self = StObject.set(x, "pollingInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollingIntervalUndefined: Self = StObject.set(x, "pollingInterval", js.undefined)
+      inline def setPollingIntervalUndefined: Self = StObject.set(x, "pollingInterval", js.undefined)
       
-      @scala.inline
-      def setSynchronization(
+      inline def setSynchronization(
         value: ToStringLiteral[
               ADAPTIVE, 
               /* keyof chrome-apps.anon.ADAPTIVE */ ASYNCHRONOUS | typings.chromeApps.chromeAppsStrings.ADAPTIVE | SYNCHRONOUS, 
@@ -532,11 +474,9 @@ object usb {
             ]
       ): Self = StObject.set(x, "synchronization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSynchronizationUndefined: Self = StObject.set(x, "synchronization", js.undefined)
+      inline def setSynchronizationUndefined: Self = StObject.set(x, "synchronization", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: ToStringLiteral[
               BULK, 
               /* keyof chrome-apps.anon.BULK */ CONTROL | INTERRUPT | ISOCHRONOUS | typings.chromeApps.chromeAppsStrings.BULK, 
@@ -547,8 +487,7 @@ object usb {
             ]
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage(
+      inline def setUsage(
         value: ToStringLiteral[
               DATA_, 
               /* keyof chrome-apps.anon.DATA */ DATA | FEEDBACK | EXPLICIT_FEEDBACK | PERIODIC | NOTIFICATION, 
@@ -559,8 +498,7 @@ object usb {
             ]
       ): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+      inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
     }
   }
   
@@ -597,8 +535,7 @@ object usb {
   }
   object GenericTransferInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       direction: ToStringLiteral[
           IN, 
           /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
@@ -613,17 +550,13 @@ object usb {
       __obj.asInstanceOf[GenericTransferInfo]
     }
     
-    @scala.inline
-    implicit class GenericTransferInfoMutableBuilder[Self <: GenericTransferInfo] (val x: Self) extends AnyVal {
+    extension [Self <: GenericTransferInfo](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDirection(
+      inline def setDirection(
         value: ToStringLiteral[
               IN, 
               /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
@@ -634,20 +567,15 @@ object usb {
             ]
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: integer): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: integer): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: integer): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: integer): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: integer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: integer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -686,8 +614,7 @@ object usb {
   }
   object InterfaceDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alternateSetting: integer,
       endpoints: js.Array[EndpointDescriptor],
       extra_data: ArrayBuffer,
@@ -700,38 +627,27 @@ object usb {
       __obj.asInstanceOf[InterfaceDescriptor]
     }
     
-    @scala.inline
-    implicit class InterfaceDescriptorMutableBuilder[Self <: InterfaceDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: InterfaceDescriptor](x: Self) {
       
-      @scala.inline
-      def setAlternateSetting(value: integer): Self = StObject.set(x, "alternateSetting", value.asInstanceOf[js.Any])
+      inline def setAlternateSetting(value: integer): Self = StObject.set(x, "alternateSetting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEndpoints(value: js.Array[EndpointDescriptor]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: js.Array[EndpointDescriptor]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsVarargs(value: EndpointDescriptor*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: EndpointDescriptor*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setExtra_data(value: ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
+      inline def setExtra_data(value: ArrayBuffer): Self = StObject.set(x, "extra_data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceClass(value: integer): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
+      inline def setInterfaceClass(value: integer): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceNumber(value: integer): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
+      inline def setInterfaceNumber(value: integer): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceProtocol(value: integer): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
+      inline def setInterfaceProtocol(value: integer): Self = StObject.set(x, "interfaceProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceSubclass(value: integer): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
+      inline def setInterfaceSubclass(value: integer): Self = StObject.set(x, "interfaceSubclass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -752,23 +668,18 @@ object usb {
   }
   object IsochronousTransferInfo {
     
-    @scala.inline
-    def apply(packetLength: integer, packets: integer, transferInfo: GenericTransferInfo): IsochronousTransferInfo = {
+    inline def apply(packetLength: integer, packets: integer, transferInfo: GenericTransferInfo): IsochronousTransferInfo = {
       val __obj = js.Dynamic.literal(packetLength = packetLength.asInstanceOf[js.Any], packets = packets.asInstanceOf[js.Any], transferInfo = transferInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsochronousTransferInfo]
     }
     
-    @scala.inline
-    implicit class IsochronousTransferInfoMutableBuilder[Self <: IsochronousTransferInfo] (val x: Self) extends AnyVal {
+    extension [Self <: IsochronousTransferInfo](x: Self) {
       
-      @scala.inline
-      def setPacketLength(value: integer): Self = StObject.set(x, "packetLength", value.asInstanceOf[js.Any])
+      inline def setPacketLength(value: integer): Self = StObject.set(x, "packetLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackets(value: integer): Self = StObject.set(x, "packets", value.asInstanceOf[js.Any])
+      inline def setPackets(value: integer): Self = StObject.set(x, "packets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferInfo(value: GenericTransferInfo): Self = StObject.set(x, "transferInfo", value.asInstanceOf[js.Any])
+      inline def setTransferInfo(value: GenericTransferInfo): Self = StObject.set(x, "transferInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -839,8 +750,7 @@ object usb {
   }
   object TransferInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       direction: ToStringLiteral[
           IN, 
           /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
@@ -873,17 +783,13 @@ object usb {
       __obj.asInstanceOf[TransferInfo]
     }
     
-    @scala.inline
-    implicit class TransferInfoMutableBuilder[Self <: TransferInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TransferInfo](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDirection(
+      inline def setDirection(
         value: ToStringLiteral[
               IN, 
               /* keyof chrome-apps.anon.IN */ typings.chromeApps.chromeAppsStrings.IN | OUT, 
@@ -894,17 +800,13 @@ object usb {
             ]
       ): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: integer): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: integer): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setRecipient(
+      inline def setRecipient(
         value: ToStringLiteral[
               DEVICE, 
               /* keyof chrome-apps.anon.DEVICE */ typings.chromeApps.chromeAppsStrings.DEVICE | INTERFACE | ENDPOINT | OTHER, 
@@ -915,11 +817,9 @@ object usb {
             ]
       ): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: integer): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: integer): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestType(
+      inline def setRequestType(
         value: ToStringLiteral[
               CLASS, 
               /* keyof chrome-apps.anon.CLASS */ STANDARD | typings.chromeApps.chromeAppsStrings.CLASS | VENDOR | RESERVED, 
@@ -930,14 +830,11 @@ object usb {
             ]
       ): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: integer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: integer): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setValue(value: integer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: integer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -951,26 +848,20 @@ object usb {
   }
   object TransferResultInfo {
     
-    @scala.inline
-    def apply(): TransferResultInfo = {
+    inline def apply(): TransferResultInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransferResultInfo]
     }
     
-    @scala.inline
-    implicit class TransferResultInfoMutableBuilder[Self <: TransferResultInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TransferResultInfo](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setResultCode(value: integer): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
+      inline def setResultCode(value: integer): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultCodeUndefined: Self = StObject.set(x, "resultCode", js.undefined)
+      inline def setResultCodeUndefined: Self = StObject.set(x, "resultCode", js.undefined)
     }
   }
 }

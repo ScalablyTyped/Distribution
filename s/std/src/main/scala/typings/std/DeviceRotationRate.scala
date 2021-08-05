@@ -15,31 +15,23 @@ trait DeviceRotationRate extends StObject {
 }
 object DeviceRotationRate {
   
-  @scala.inline
-  def apply(): DeviceRotationRate = {
+  inline def apply(): DeviceRotationRate = {
     val __obj = js.Dynamic.literal(alpha = null, beta = null, gamma = null)
     __obj.asInstanceOf[DeviceRotationRate]
   }
   
-  @scala.inline
-  implicit class DeviceRotationRateMutableBuilder[Self <: DeviceRotationRate] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceRotationRate](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaNull: Self = StObject.set(x, "alpha", null)
+    inline def setAlphaNull: Self = StObject.set(x, "alpha", null)
     
-    @scala.inline
-    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+    inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetaNull: Self = StObject.set(x, "beta", null)
+    inline def setBetaNull: Self = StObject.set(x, "beta", null)
     
-    @scala.inline
-    def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+    inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGammaNull: Self = StObject.set(x, "gamma", null)
+    inline def setGammaNull: Self = StObject.set(x, "gamma", null)
   }
 }

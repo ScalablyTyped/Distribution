@@ -13,31 +13,23 @@ trait Log extends StObject {
 }
 object Log {
   
-  @scala.inline
-  def apply(): Log = {
+  inline def apply(): Log = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Log]
   }
   
-  @scala.inline
-  implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+  extension [Self <: Log](x: Self) {
     
-    @scala.inline
-    def setLog(value: js.Array[String] | `false`): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: js.Array[String] | `false`): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setLogVarargs(value: String*): Self = StObject.set(x, "log", js.Array(value :_*))
+    inline def setLogVarargs(value: String*): Self = StObject.set(x, "log", js.Array(value :_*))
     
-    @scala.inline
-    def setRequest(value: js.Array[String] | `false`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: js.Array[String] | `false`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setRequestVarargs(value: String*): Self = StObject.set(x, "request", js.Array(value :_*))
+    inline def setRequestVarargs(value: String*): Self = StObject.set(x, "request", js.Array(value :_*))
   }
 }

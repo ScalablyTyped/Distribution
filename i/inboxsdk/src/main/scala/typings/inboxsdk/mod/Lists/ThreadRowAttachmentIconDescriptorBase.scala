@@ -10,19 +10,15 @@ trait ThreadRowAttachmentIconDescriptorBase extends StObject {
 }
 object ThreadRowAttachmentIconDescriptorBase {
   
-  @scala.inline
-  def apply(): ThreadRowAttachmentIconDescriptorBase = {
+  inline def apply(): ThreadRowAttachmentIconDescriptorBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreadRowAttachmentIconDescriptorBase]
   }
   
-  @scala.inline
-  implicit class ThreadRowAttachmentIconDescriptorBaseMutableBuilder[Self <: ThreadRowAttachmentIconDescriptorBase] (val x: Self) extends AnyVal {
+  extension [Self <: ThreadRowAttachmentIconDescriptorBase](x: Self) {
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

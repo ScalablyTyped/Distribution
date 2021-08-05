@@ -27,8 +27,7 @@ trait FoldableComposition[F, G] extends StObject {
 }
 object FoldableComposition {
   
-  @scala.inline
-  def apply[F, G](
+  inline def apply[F, G](
     foldMap: Monoid[js.Any] => js.Function2[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ /* fa */ js.Any, 
       /* f */ js.Function1[/* a */ js.Any, js.Any], 
@@ -41,11 +40,9 @@ object FoldableComposition {
     __obj.asInstanceOf[FoldableComposition[F, G]]
   }
   
-  @scala.inline
-  implicit class FoldableCompositionMutableBuilder[Self <: FoldableComposition[?, ?], F, G] (val x: Self & (FoldableComposition[F, G])) extends AnyVal {
+  extension [Self <: FoldableComposition[?, ?], F, G](x: Self & (FoldableComposition[F, G])) {
     
-    @scala.inline
-    def setFoldMap(
+    inline def setFoldMap(
       value: Monoid[js.Any] => js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ /* fa */ js.Any, 
           /* f */ js.Function1[/* a */ js.Any, js.Any], 
@@ -53,13 +50,11 @@ object FoldableComposition {
         ]
     ): Self = StObject.set(x, "foldMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduce(
+    inline def setReduce(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduce", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReduceRight(
+    inline def setReduceRight(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Any, js.Function2[js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduceRight", js.Any.fromFunction3(value))
   }

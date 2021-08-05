@@ -20,31 +20,23 @@ trait BulkEmailDestination extends StObject {
 }
 object BulkEmailDestination {
   
-  @scala.inline
-  def apply(Destination: Destination): BulkEmailDestination = {
+  inline def apply(Destination: Destination): BulkEmailDestination = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkEmailDestination]
   }
   
-  @scala.inline
-  implicit class BulkEmailDestinationMutableBuilder[Self <: BulkEmailDestination] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEmailDestination](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementTags(value: MessageTagList): Self = StObject.set(x, "ReplacementTags", value.asInstanceOf[js.Any])
+    inline def setReplacementTags(value: MessageTagList): Self = StObject.set(x, "ReplacementTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementTagsUndefined: Self = StObject.set(x, "ReplacementTags", js.undefined)
+    inline def setReplacementTagsUndefined: Self = StObject.set(x, "ReplacementTags", js.undefined)
     
-    @scala.inline
-    def setReplacementTagsVarargs(value: MessageTag*): Self = StObject.set(x, "ReplacementTags", js.Array(value :_*))
+    inline def setReplacementTagsVarargs(value: MessageTag*): Self = StObject.set(x, "ReplacementTags", js.Array(value :_*))
     
-    @scala.inline
-    def setReplacementTemplateData(value: TemplateData): Self = StObject.set(x, "ReplacementTemplateData", value.asInstanceOf[js.Any])
+    inline def setReplacementTemplateData(value: TemplateData): Self = StObject.set(x, "ReplacementTemplateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementTemplateDataUndefined: Self = StObject.set(x, "ReplacementTemplateData", js.undefined)
+    inline def setReplacementTemplateDataUndefined: Self = StObject.set(x, "ReplacementTemplateData", js.undefined)
   }
 }

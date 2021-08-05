@@ -8,11 +8,9 @@ object colorDiffStrings {
   
   @js.native
   sealed trait closest extends StObject
-  @scala.inline
-  def closest: closest = "closest".asInstanceOf[closest]
+  inline def closest: closest = "closest".asInstanceOf[closest]
   
   @js.native
   sealed trait furthest extends StObject
-  @scala.inline
-  def furthest: furthest = "furthest".asInstanceOf[furthest]
+  inline def furthest: furthest = "furthest".asInstanceOf[furthest]
 }

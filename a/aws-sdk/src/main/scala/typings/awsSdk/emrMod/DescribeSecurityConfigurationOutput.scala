@@ -23,31 +23,23 @@ trait DescribeSecurityConfigurationOutput extends StObject {
 }
 object DescribeSecurityConfigurationOutput {
   
-  @scala.inline
-  def apply(): DescribeSecurityConfigurationOutput = {
+  inline def apply(): DescribeSecurityConfigurationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSecurityConfigurationOutput]
   }
   
-  @scala.inline
-  implicit class DescribeSecurityConfigurationOutputMutableBuilder[Self <: DescribeSecurityConfigurationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSecurityConfigurationOutput](x: Self) {
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
+    inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     
-    @scala.inline
-    def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSecurityConfiguration(value: String): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
+    inline def setSecurityConfiguration(value: String): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityConfigurationUndefined: Self = StObject.set(x, "SecurityConfiguration", js.undefined)
+    inline def setSecurityConfigurationUndefined: Self = StObject.set(x, "SecurityConfiguration", js.undefined)
   }
 }

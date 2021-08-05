@@ -31,55 +31,39 @@ trait DeviceConfigurationUserOverview
 }
 object DeviceConfigurationUserOverview {
   
-  @scala.inline
-  def apply(): DeviceConfigurationUserOverview = {
+  inline def apply(): DeviceConfigurationUserOverview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceConfigurationUserOverview]
   }
   
-  @scala.inline
-  implicit class DeviceConfigurationUserOverviewMutableBuilder[Self <: DeviceConfigurationUserOverview] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceConfigurationUserOverview](x: Self) {
     
-    @scala.inline
-    def setConfigurationVersion(value: Double): Self = StObject.set(x, "configurationVersion", value.asInstanceOf[js.Any])
+    inline def setConfigurationVersion(value: Double): Self = StObject.set(x, "configurationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationVersionUndefined: Self = StObject.set(x, "configurationVersion", js.undefined)
+    inline def setConfigurationVersionUndefined: Self = StObject.set(x, "configurationVersion", js.undefined)
     
-    @scala.inline
-    def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
+    inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
+    inline def setErrorCountUndefined: Self = StObject.set(x, "errorCount", js.undefined)
     
-    @scala.inline
-    def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
+    inline def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedCountUndefined: Self = StObject.set(x, "failedCount", js.undefined)
+    inline def setFailedCountUndefined: Self = StObject.set(x, "failedCount", js.undefined)
     
-    @scala.inline
-    def setLastUpdateDateTime(value: String): Self = StObject.set(x, "lastUpdateDateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDateTime(value: String): Self = StObject.set(x, "lastUpdateDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "lastUpdateDateTime", js.undefined)
+    inline def setLastUpdateDateTimeUndefined: Self = StObject.set(x, "lastUpdateDateTime", js.undefined)
     
-    @scala.inline
-    def setNotApplicableCount(value: Double): Self = StObject.set(x, "notApplicableCount", value.asInstanceOf[js.Any])
+    inline def setNotApplicableCount(value: Double): Self = StObject.set(x, "notApplicableCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotApplicableCountUndefined: Self = StObject.set(x, "notApplicableCount", js.undefined)
+    inline def setNotApplicableCountUndefined: Self = StObject.set(x, "notApplicableCount", js.undefined)
     
-    @scala.inline
-    def setPendingCount(value: Double): Self = StObject.set(x, "pendingCount", value.asInstanceOf[js.Any])
+    inline def setPendingCount(value: Double): Self = StObject.set(x, "pendingCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingCountUndefined: Self = StObject.set(x, "pendingCount", js.undefined)
+    inline def setPendingCountUndefined: Self = StObject.set(x, "pendingCount", js.undefined)
     
-    @scala.inline
-    def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
+    inline def setSuccessCount(value: Double): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
+    inline def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
   }
 }

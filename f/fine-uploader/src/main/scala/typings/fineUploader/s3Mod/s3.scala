@@ -157,20 +157,16 @@ object s3 {
   }
   object S3ChunkingOptions {
     
-    @scala.inline
-    def apply(): S3ChunkingOptions = {
+    inline def apply(): S3ChunkingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3ChunkingOptions]
     }
     
-    @scala.inline
-    implicit class S3ChunkingOptionsMutableBuilder[Self <: S3ChunkingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3ChunkingOptions](x: Self) {
       
-      @scala.inline
-      def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
+      inline def setPartSize(value: Double): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
+      inline def setPartSizeUndefined: Self = StObject.set(x, "partSize", js.undefined)
     }
   }
   
@@ -223,62 +219,44 @@ object s3 {
   }
   object S3CoreOptions {
     
-    @scala.inline
-    def apply(): S3CoreOptions = {
+    inline def apply(): S3CoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3CoreOptions]
     }
     
-    @scala.inline
-    implicit class S3CoreOptionsMutableBuilder[Self <: S3CoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3CoreOptions](x: Self) {
       
-      @scala.inline
-      def setChunking(value: S3ChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
+      inline def setChunking(value: S3ChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
+      inline def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
       
-      @scala.inline
-      def setCors(value: S3CorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+      inline def setCors(value: S3CorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+      inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: S3CredentialsOptions): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: S3CredentialsOptions): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setIframeSupport(value: S3iFrameSupportOptions): Self = StObject.set(x, "iframeSupport", value.asInstanceOf[js.Any])
+      inline def setIframeSupport(value: S3iFrameSupportOptions): Self = StObject.set(x, "iframeSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIframeSupportUndefined: Self = StObject.set(x, "iframeSupport", js.undefined)
+      inline def setIframeSupportUndefined: Self = StObject.set(x, "iframeSupport", js.undefined)
       
-      @scala.inline
-      def setObjectProperties(value: S3ObjectPropertyOptions): Self = StObject.set(x, "objectProperties", value.asInstanceOf[js.Any])
+      inline def setObjectProperties(value: S3ObjectPropertyOptions): Self = StObject.set(x, "objectProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectPropertiesUndefined: Self = StObject.set(x, "objectProperties", js.undefined)
+      inline def setObjectPropertiesUndefined: Self = StObject.set(x, "objectProperties", js.undefined)
       
-      @scala.inline
-      def setRequest(value: S3RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: S3RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setSignature(value: S3SignatureOptions): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: S3SignatureOptions): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+      inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
       
-      @scala.inline
-      def setUploadSuccess(value: S3UploadSuccessOptions): Self = StObject.set(x, "uploadSuccess", value.asInstanceOf[js.Any])
+      inline def setUploadSuccess(value: S3UploadSuccessOptions): Self = StObject.set(x, "uploadSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadSuccessUndefined: Self = StObject.set(x, "uploadSuccess", js.undefined)
+      inline def setUploadSuccessUndefined: Self = StObject.set(x, "uploadSuccess", js.undefined)
     }
   }
   
@@ -287,8 +265,7 @@ object s3 {
        with CorsOptions
   object S3CorsOptions {
     
-    @scala.inline
-    def apply(): S3CorsOptions = {
+    inline def apply(): S3CorsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3CorsOptions]
     }
@@ -326,38 +303,28 @@ object s3 {
   }
   object S3CredentialsOptions {
     
-    @scala.inline
-    def apply(): S3CredentialsOptions = {
+    inline def apply(): S3CredentialsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3CredentialsOptions]
     }
     
-    @scala.inline
-    implicit class S3CredentialsOptionsMutableBuilder[Self <: S3CredentialsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3CredentialsOptions](x: Self) {
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      @scala.inline
-      def setExpiration(value: String | Date): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: String | Date): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+      inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
+      inline def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
       
-      @scala.inline
-      def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
+      inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
     }
   }
   
@@ -377,20 +344,16 @@ object s3 {
   }
   object S3Events {
     
-    @scala.inline
-    def apply(): S3Events = {
+    inline def apply(): S3Events = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3Events]
     }
     
-    @scala.inline
-    implicit class S3EventsMutableBuilder[Self <: S3Events] (val x: Self) extends AnyVal {
+    extension [Self <: S3Events](x: Self) {
       
-      @scala.inline
-      def setOnCredentialsExpired(value: () => PromiseOptions): Self = StObject.set(x, "onCredentialsExpired", js.Any.fromFunction0(value))
+      inline def setOnCredentialsExpired(value: () => PromiseOptions): Self = StObject.set(x, "onCredentialsExpired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCredentialsExpiredUndefined: Self = StObject.set(x, "onCredentialsExpired", js.undefined)
+      inline def setOnCredentialsExpiredUndefined: Self = StObject.set(x, "onCredentialsExpired", js.undefined)
     }
   }
   
@@ -405,20 +368,16 @@ object s3 {
   }
   object S3FailedUploadTextDisplayOptions {
     
-    @scala.inline
-    def apply(): S3FailedUploadTextDisplayOptions = {
+    inline def apply(): S3FailedUploadTextDisplayOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3FailedUploadTextDisplayOptions]
     }
     
-    @scala.inline
-    implicit class S3FailedUploadTextDisplayOptionsMutableBuilder[Self <: S3FailedUploadTextDisplayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3FailedUploadTextDisplayOptions](x: Self) {
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
   
@@ -492,65 +451,46 @@ object s3 {
   }
   object S3ObjectPropertyOptions {
     
-    @scala.inline
-    def apply(): S3ObjectPropertyOptions = {
+    inline def apply(): S3ObjectPropertyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3ObjectPropertyOptions]
     }
     
-    @scala.inline
-    implicit class S3ObjectPropertyOptionsMutableBuilder[Self <: S3ObjectPropertyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3ObjectPropertyOptions](x: Self) {
       
-      @scala.inline
-      def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+      inline def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+      inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String | BucketFunction): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String | BucketFunction): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketFunction1(value: /* id */ Double => PromiseOptions | String): Self = StObject.set(x, "bucket", js.Any.fromFunction1(value))
+      inline def setBucketFunction1(value: /* id */ Double => PromiseOptions | String): Self = StObject.set(x, "bucket", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setHost(value: String | HostFunction): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String | HostFunction): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostFunction1(value: /* id */ Double => PromiseOptions | String): Self = StObject.set(x, "host", js.Any.fromFunction1(value))
+      inline def setHostFunction1(value: /* id */ Double => PromiseOptions | String): Self = StObject.set(x, "host", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | KeyFunction): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | KeyFunction): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyFunction1(value: /* id */ Double => PromiseOptions | String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      inline def setKeyFunction1(value: /* id */ Double => PromiseOptions | String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setReducedRedundancy(value: Boolean): Self = StObject.set(x, "reducedRedundancy", value.asInstanceOf[js.Any])
+      inline def setReducedRedundancy(value: Boolean): Self = StObject.set(x, "reducedRedundancy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReducedRedundancyUndefined: Self = StObject.set(x, "reducedRedundancy", js.undefined)
+      inline def setReducedRedundancyUndefined: Self = StObject.set(x, "reducedRedundancy", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setServerSideEncryption(value: Boolean): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: Boolean): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
     }
   }
   
@@ -574,26 +514,20 @@ object s3 {
   }
   object S3RequestOptions {
     
-    @scala.inline
-    def apply(): S3RequestOptions = {
+    inline def apply(): S3RequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3RequestOptions]
     }
     
-    @scala.inline
-    implicit class S3RequestOptionsMutableBuilder[Self <: S3RequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3RequestOptions](x: Self) {
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      @scala.inline
-      def setClockDrift(value: Double): Self = StObject.set(x, "clockDrift", value.asInstanceOf[js.Any])
+      inline def setClockDrift(value: Double): Self = StObject.set(x, "clockDrift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockDriftUndefined: Self = StObject.set(x, "clockDrift", js.undefined)
+      inline def setClockDriftUndefined: Self = StObject.set(x, "clockDrift", js.undefined)
     }
   }
   
@@ -608,20 +542,16 @@ object s3 {
   }
   object S3ResumableFileObject {
     
-    @scala.inline
-    def apply(): S3ResumableFileObject = {
+    inline def apply(): S3ResumableFileObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3ResumableFileObject]
     }
     
-    @scala.inline
-    implicit class S3ResumableFileObjectMutableBuilder[Self <: S3ResumableFileObject] (val x: Self) extends AnyVal {
+    extension [Self <: S3ResumableFileObject](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -652,35 +582,26 @@ object s3 {
   }
   object S3SignatureOptions {
     
-    @scala.inline
-    def apply(): S3SignatureOptions = {
+    inline def apply(): S3SignatureOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3SignatureOptions]
     }
     
-    @scala.inline
-    implicit class S3SignatureOptionsMutableBuilder[Self <: S3SignatureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3SignatureOptions](x: Self) {
       
-      @scala.inline
-      def setCustomHeaders(value: js.Any | S3CustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomHeaders(value: js.Any | S3CustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomHeadersFunction1(value: /* id */ Double => Unit): Self = StObject.set(x, "customHeaders", js.Any.fromFunction1(value))
+      inline def setCustomHeadersFunction1(value: /* id */ Double => Unit): Self = StObject.set(x, "customHeaders", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+      inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -741,68 +662,48 @@ object s3 {
   }
   object S3UIOptions {
     
-    @scala.inline
-    def apply(): S3UIOptions = {
+    inline def apply(): S3UIOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3UIOptions]
     }
     
-    @scala.inline
-    implicit class S3UIOptionsMutableBuilder[Self <: S3UIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3UIOptions](x: Self) {
       
-      @scala.inline
-      def setChunking(value: S3ChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
+      inline def setChunking(value: S3ChunkingOptions): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
+      inline def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
       
-      @scala.inline
-      def setCors(value: S3CorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+      inline def setCors(value: S3CorsOptions): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+      inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: S3CredentialsOptions): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: S3CredentialsOptions): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setFailedUploadTextDisplay(value: S3FailedUploadTextDisplayOptions): Self = StObject.set(x, "failedUploadTextDisplay", value.asInstanceOf[js.Any])
+      inline def setFailedUploadTextDisplay(value: S3FailedUploadTextDisplayOptions): Self = StObject.set(x, "failedUploadTextDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedUploadTextDisplayUndefined: Self = StObject.set(x, "failedUploadTextDisplay", js.undefined)
+      inline def setFailedUploadTextDisplayUndefined: Self = StObject.set(x, "failedUploadTextDisplay", js.undefined)
       
-      @scala.inline
-      def setIframeSupport(value: S3iFrameSupportOptions): Self = StObject.set(x, "iframeSupport", value.asInstanceOf[js.Any])
+      inline def setIframeSupport(value: S3iFrameSupportOptions): Self = StObject.set(x, "iframeSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIframeSupportUndefined: Self = StObject.set(x, "iframeSupport", js.undefined)
+      inline def setIframeSupportUndefined: Self = StObject.set(x, "iframeSupport", js.undefined)
       
-      @scala.inline
-      def setObjectProperties(value: S3ObjectPropertyOptions): Self = StObject.set(x, "objectProperties", value.asInstanceOf[js.Any])
+      inline def setObjectProperties(value: S3ObjectPropertyOptions): Self = StObject.set(x, "objectProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectPropertiesUndefined: Self = StObject.set(x, "objectProperties", js.undefined)
+      inline def setObjectPropertiesUndefined: Self = StObject.set(x, "objectProperties", js.undefined)
       
-      @scala.inline
-      def setRequest(value: S3RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: S3RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setSignature(value: S3SignatureOptions): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: S3SignatureOptions): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+      inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
       
-      @scala.inline
-      def setUploadSuccess(value: S3UploadSuccessOptions): Self = StObject.set(x, "uploadSuccess", value.asInstanceOf[js.Any])
+      inline def setUploadSuccess(value: S3UploadSuccessOptions): Self = StObject.set(x, "uploadSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadSuccessUndefined: Self = StObject.set(x, "uploadSuccess", js.undefined)
+      inline def setUploadSuccessUndefined: Self = StObject.set(x, "uploadSuccess", js.undefined)
     }
   }
   
@@ -841,38 +742,28 @@ object s3 {
   }
   object S3UploadSuccessOptions {
     
-    @scala.inline
-    def apply(): S3UploadSuccessOptions = {
+    inline def apply(): S3UploadSuccessOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3UploadSuccessOptions]
     }
     
-    @scala.inline
-    implicit class S3UploadSuccessOptionsMutableBuilder[Self <: S3UploadSuccessOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3UploadSuccessOptions](x: Self) {
       
-      @scala.inline
-      def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
+      inline def setCustomHeaders(value: js.Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
+      inline def setCustomHeadersUndefined: Self = StObject.set(x, "customHeaders", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
   }
   
@@ -888,20 +779,16 @@ object s3 {
   }
   object S3iFrameSupportOptions {
     
-    @scala.inline
-    def apply(): S3iFrameSupportOptions = {
+    inline def apply(): S3iFrameSupportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3iFrameSupportOptions]
     }
     
-    @scala.inline
-    implicit class S3iFrameSupportOptionsMutableBuilder[Self <: S3iFrameSupportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: S3iFrameSupportOptions](x: Self) {
       
-      @scala.inline
-      def setLocalBlankPagePath(value: String): Self = StObject.set(x, "localBlankPagePath", value.asInstanceOf[js.Any])
+      inline def setLocalBlankPagePath(value: String): Self = StObject.set(x, "localBlankPagePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalBlankPagePathUndefined: Self = StObject.set(x, "localBlankPagePath", js.undefined)
+      inline def setLocalBlankPagePathUndefined: Self = StObject.set(x, "localBlankPagePath", js.undefined)
     }
   }
 }

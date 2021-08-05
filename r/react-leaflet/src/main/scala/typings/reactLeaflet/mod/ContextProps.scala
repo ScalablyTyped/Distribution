@@ -10,19 +10,15 @@ trait ContextProps extends StObject {
 }
 object ContextProps {
   
-  @scala.inline
-  def apply(): ContextProps = {
+  inline def apply(): ContextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContextProps]
   }
   
-  @scala.inline
-  implicit class ContextPropsMutableBuilder[Self <: ContextProps] (val x: Self) extends AnyVal {
+  extension [Self <: ContextProps](x: Self) {
     
-    @scala.inline
-    def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+    inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+    inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
   }
 }

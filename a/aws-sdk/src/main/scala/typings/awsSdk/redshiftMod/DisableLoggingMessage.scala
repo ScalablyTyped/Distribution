@@ -13,16 +13,13 @@ trait DisableLoggingMessage extends StObject {
 }
 object DisableLoggingMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): DisableLoggingMessage = {
+  inline def apply(ClusterIdentifier: String): DisableLoggingMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableLoggingMessage]
   }
   
-  @scala.inline
-  implicit class DisableLoggingMessageMutableBuilder[Self <: DisableLoggingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DisableLoggingMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

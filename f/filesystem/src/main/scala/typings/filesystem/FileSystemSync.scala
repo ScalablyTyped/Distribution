@@ -21,19 +21,15 @@ trait FileSystemSync extends StObject {
 }
 object FileSystemSync {
   
-  @scala.inline
-  def apply(name: String, root: DirectoryEntrySync): FileSystemSync = {
+  inline def apply(name: String, root: DirectoryEntrySync): FileSystemSync = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSystemSync]
   }
   
-  @scala.inline
-  implicit class FileSystemSyncMutableBuilder[Self <: FileSystemSync] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemSync](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: DirectoryEntrySync): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: DirectoryEntrySync): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

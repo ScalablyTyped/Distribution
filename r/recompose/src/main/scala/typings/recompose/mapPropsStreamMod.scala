@@ -15,11 +15,9 @@ object mapPropsStreamMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TInner, TOutter](transform: mapper[Subscribable[TOutter], Subscribable[TInner]]): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(transform.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
+  inline def default[TInner, TOutter](transform: mapper[Subscribable[TOutter], Subscribable[TInner]]): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(transform.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
   
-  @scala.inline
-  def mapPropsStreamWithConfig(config: ObservableConfig): js.Function1[
+  inline def mapPropsStreamWithConfig(config: ObservableConfig): js.Function1[
     /* transform */ mapper[Subscribable[js.Any], Subscribable[js.Any]], 
     ComponentEnhancer[js.Any, js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPropsStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[

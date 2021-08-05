@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[Opts /* <: Config */](title: String, tester: Tester[Opts], testCases: TestCases[Opts]): Unit = (^.asInstanceOf[js.Dynamic].apply(title.asInstanceOf[js.Any], tester.asInstanceOf[js.Any], testCases.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply[Opts /* <: Config */](title: String, tester: Tester[Opts], testCases: TestCases[Opts]): Unit = (^.asInstanceOf[js.Dynamic].apply(title.asInstanceOf[js.Any], tester.asInstanceOf[js.Any], testCases.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("jest-in-case", JSImport.Namespace)
   @js.native
@@ -26,32 +25,24 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+      inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     }
   }
   

@@ -18,22 +18,17 @@ trait ModifyLoadBalancerAttributesInput extends StObject {
 }
 object ModifyLoadBalancerAttributesInput {
   
-  @scala.inline
-  def apply(Attributes: LoadBalancerAttributes, LoadBalancerArn: LoadBalancerArn): ModifyLoadBalancerAttributesInput = {
+  inline def apply(Attributes: LoadBalancerAttributes, LoadBalancerArn: LoadBalancerArn): ModifyLoadBalancerAttributesInput = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], LoadBalancerArn = LoadBalancerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyLoadBalancerAttributesInput]
   }
   
-  @scala.inline
-  implicit class ModifyLoadBalancerAttributesInputMutableBuilder[Self <: ModifyLoadBalancerAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyLoadBalancerAttributesInput](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: LoadBalancerAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: LoadBalancerAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: LoadBalancerAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: LoadBalancerAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerArn(value: LoadBalancerArn): Self = StObject.set(x, "LoadBalancerArn", value.asInstanceOf[js.Any])
   }
 }

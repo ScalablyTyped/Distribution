@@ -18,19 +18,15 @@ trait ClickFeedback extends StObject {
 }
 object ClickFeedback {
   
-  @scala.inline
-  def apply(ClickTime: Timestamp, ResultId: ResultId): ClickFeedback = {
+  inline def apply(ClickTime: Timestamp, ResultId: ResultId): ClickFeedback = {
     val __obj = js.Dynamic.literal(ClickTime = ClickTime.asInstanceOf[js.Any], ResultId = ResultId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClickFeedback]
   }
   
-  @scala.inline
-  implicit class ClickFeedbackMutableBuilder[Self <: ClickFeedback] (val x: Self) extends AnyVal {
+  extension [Self <: ClickFeedback](x: Self) {
     
-    @scala.inline
-    def setClickTime(value: Timestamp): Self = StObject.set(x, "ClickTime", value.asInstanceOf[js.Any])
+    inline def setClickTime(value: Timestamp): Self = StObject.set(x, "ClickTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultId(value: ResultId): Self = StObject.set(x, "ResultId", value.asInstanceOf[js.Any])
+    inline def setResultId(value: ResultId): Self = StObject.set(x, "ResultId", value.asInstanceOf[js.Any])
   }
 }

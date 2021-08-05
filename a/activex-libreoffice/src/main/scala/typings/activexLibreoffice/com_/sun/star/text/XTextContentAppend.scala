@@ -34,8 +34,7 @@ trait XTextContentAppend
 }
 object XTextContentAppend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     appendTextContent: (XTextContent, PropertyValues) => XTextRange,
     insertTextContentWithProperties: (XTextContent, PropertyValues, XTextRange) => XTextRange,
@@ -46,13 +45,10 @@ object XTextContentAppend {
     __obj.asInstanceOf[XTextContentAppend]
   }
   
-  @scala.inline
-  implicit class XTextContentAppendMutableBuilder[Self <: XTextContentAppend] (val x: Self) extends AnyVal {
+  extension [Self <: XTextContentAppend](x: Self) {
     
-    @scala.inline
-    def setAppendTextContent(value: (XTextContent, PropertyValues) => XTextRange): Self = StObject.set(x, "appendTextContent", js.Any.fromFunction2(value))
+    inline def setAppendTextContent(value: (XTextContent, PropertyValues) => XTextRange): Self = StObject.set(x, "appendTextContent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertTextContentWithProperties(value: (XTextContent, PropertyValues, XTextRange) => XTextRange): Self = StObject.set(x, "insertTextContentWithProperties", js.Any.fromFunction3(value))
+    inline def setInsertTextContentWithProperties(value: (XTextContent, PropertyValues, XTextRange) => XTextRange): Self = StObject.set(x, "insertTextContentWithProperties", js.Any.fromFunction3(value))
   }
 }

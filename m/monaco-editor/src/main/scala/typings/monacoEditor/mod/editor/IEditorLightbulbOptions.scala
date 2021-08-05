@@ -14,19 +14,15 @@ trait IEditorLightbulbOptions extends StObject {
 }
 object IEditorLightbulbOptions {
   
-  @scala.inline
-  def apply(): IEditorLightbulbOptions = {
+  inline def apply(): IEditorLightbulbOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEditorLightbulbOptions]
   }
   
-  @scala.inline
-  implicit class IEditorLightbulbOptionsMutableBuilder[Self <: IEditorLightbulbOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEditorLightbulbOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

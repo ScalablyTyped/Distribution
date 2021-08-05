@@ -53,8 +53,7 @@ trait XAnimation
 }
 object XAnimation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AnimationAttributes: AnimationAttributes,
     acquire: () => Unit,
     getAnimationAttributes: () => AnimationAttributes,
@@ -66,16 +65,12 @@ object XAnimation {
     __obj.asInstanceOf[XAnimation]
   }
   
-  @scala.inline
-  implicit class XAnimationMutableBuilder[Self <: XAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: XAnimation](x: Self) {
     
-    @scala.inline
-    def setAnimationAttributes(value: AnimationAttributes): Self = StObject.set(x, "AnimationAttributes", value.asInstanceOf[js.Any])
+    inline def setAnimationAttributes(value: AnimationAttributes): Self = StObject.set(x, "AnimationAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAnimationAttributes(value: () => AnimationAttributes): Self = StObject.set(x, "getAnimationAttributes", js.Any.fromFunction0(value))
+    inline def setGetAnimationAttributes(value: () => AnimationAttributes): Self = StObject.set(x, "getAnimationAttributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: (XCanvas, ViewState, Double) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
+    inline def setRender(value: (XCanvas, ViewState, Double) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
   }
 }

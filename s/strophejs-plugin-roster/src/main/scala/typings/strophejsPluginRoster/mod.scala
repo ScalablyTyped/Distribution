@@ -24,17 +24,13 @@ object mod {
   trait PresenceSubscriptionType extends StObject
   object PresenceSubscriptionType {
     
-    @scala.inline
-    def subscribe: typings.strophejsPluginRoster.strophejsPluginRosterStrings.subscribe = "subscribe".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.subscribe]
+    inline def subscribe: typings.strophejsPluginRoster.strophejsPluginRosterStrings.subscribe = "subscribe".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.subscribe]
     
-    @scala.inline
-    def subscribed: typings.strophejsPluginRoster.strophejsPluginRosterStrings.subscribed = "subscribed".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.subscribed]
+    inline def subscribed: typings.strophejsPluginRoster.strophejsPluginRosterStrings.subscribed = "subscribed".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.subscribed]
     
-    @scala.inline
-    def unsubscribe: typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribe = "unsubscribe".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribe]
+    inline def unsubscribe: typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribe = "unsubscribe".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribe]
     
-    @scala.inline
-    def unsubscribed: typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribed = "unsubscribed".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribed]
+    inline def unsubscribed: typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribed = "unsubscribed".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.unsubscribed]
   }
   
   trait RosterItem extends StObject {
@@ -53,8 +49,7 @@ object mod {
   }
   object RosterItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ask: String,
       groups: js.Array[String],
       jid: String,
@@ -66,29 +61,21 @@ object mod {
       __obj.asInstanceOf[RosterItem]
     }
     
-    @scala.inline
-    implicit class RosterItemMutableBuilder[Self <: RosterItem] (val x: Self) extends AnyVal {
+    extension [Self <: RosterItem](x: Self) {
       
-      @scala.inline
-      def setAsk(value: String): Self = StObject.set(x, "ask", value.asInstanceOf[js.Any])
+      inline def setAsk(value: String): Self = StObject.set(x, "ask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setJid(value: String): Self = StObject.set(x, "jid", value.asInstanceOf[js.Any])
+      inline def setJid(value: String): Self = StObject.set(x, "jid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResources(value: StringDictionary[RosterResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: StringDictionary[RosterResource]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscription(value: RosterSubscriptionState): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: RosterSubscriptionState): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,23 +89,18 @@ object mod {
   }
   object RosterResource {
     
-    @scala.inline
-    def apply(priority: String, show: String, status: String): RosterResource = {
+    inline def apply(priority: String, show: String, status: String): RosterResource = {
       val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[RosterResource]
     }
     
-    @scala.inline
-    implicit class RosterResourceMutableBuilder[Self <: RosterResource] (val x: Self) extends AnyVal {
+    extension [Self <: RosterResource](x: Self) {
       
-      @scala.inline
-      def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,20 +114,15 @@ object mod {
   trait RosterSubscriptionState extends StObject
   object RosterSubscriptionState {
     
-    @scala.inline
-    def both: typings.strophejsPluginRoster.strophejsPluginRosterStrings.both = "both".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.both]
+    inline def both: typings.strophejsPluginRoster.strophejsPluginRosterStrings.both = "both".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.both]
     
-    @scala.inline
-    def from: typings.strophejsPluginRoster.strophejsPluginRosterStrings.from = "from".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.from]
+    inline def from: typings.strophejsPluginRoster.strophejsPluginRosterStrings.from = "from".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.from]
     
-    @scala.inline
-    def none: typings.strophejsPluginRoster.strophejsPluginRosterStrings.none = "none".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.none]
+    inline def none: typings.strophejsPluginRoster.strophejsPluginRosterStrings.none = "none".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.none]
     
-    @scala.inline
-    def remove: typings.strophejsPluginRoster.strophejsPluginRosterStrings.remove = "remove".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.remove]
+    inline def remove: typings.strophejsPluginRoster.strophejsPluginRosterStrings.remove = "remove".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.remove]
     
-    @scala.inline
-    def to: typings.strophejsPluginRoster.strophejsPluginRosterStrings.to = "to".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.to]
+    inline def to: typings.strophejsPluginRoster.strophejsPluginRosterStrings.to = "to".asInstanceOf[typings.strophejsPluginRoster.strophejsPluginRosterStrings.to]
   }
   
   type RosterUpdateCallback = js.Function3[
@@ -215,17 +192,14 @@ object mod {
       }
       object Connection {
         
-        @scala.inline
-        def apply(roster: StropheRosterPlugin): Connection = {
+        inline def apply(roster: StropheRosterPlugin): Connection = {
           val __obj = js.Dynamic.literal(roster = roster.asInstanceOf[js.Any])
           __obj.asInstanceOf[Connection]
         }
         
-        @scala.inline
-        implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+        extension [Self <: Connection](x: Self) {
           
-          @scala.inline
-          def setRoster(value: StropheRosterPlugin): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
+          inline def setRoster(value: StropheRosterPlugin): Self = StObject.set(x, "roster", value.asInstanceOf[js.Any])
         }
       }
     }

@@ -38,43 +38,31 @@ trait TemplateSettings extends StObject {
 }
 object TemplateSettings {
   
-  @scala.inline
-  def apply(): TemplateSettings = {
+  inline def apply(): TemplateSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateSettings]
   }
   
-  @scala.inline
-  implicit class TemplateSettingsMutableBuilder[Self <: TemplateSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateSettings](x: Self) {
     
-    @scala.inline
-    def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+    inline def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+    inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
-    @scala.inline
-    def setEvaluate(value: RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
+    inline def setEvaluate(value: RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
+    inline def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)
     
-    @scala.inline
-    def setImports(value: Dictionary[js.Any]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: Dictionary[js.Any]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    @scala.inline
-    def setInterpolate(value: RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+    inline def setInterpolate(value: RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+    inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
     
-    @scala.inline
-    def setVariable(value: java.lang.String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: java.lang.String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
   }
 }

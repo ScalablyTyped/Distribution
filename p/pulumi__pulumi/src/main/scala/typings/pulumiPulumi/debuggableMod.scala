@@ -11,9 +11,7 @@ object debuggableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def leakedPromises(): js.Tuple2[Set[js.Promise[js.Any]], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("leakedPromises")().asInstanceOf[js.Tuple2[Set[js.Promise[js.Any]], String]]
+  inline def leakedPromises(): js.Tuple2[Set[js.Promise[js.Any]], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("leakedPromises")().asInstanceOf[js.Tuple2[Set[js.Promise[js.Any]], String]]
   
-  @scala.inline
-  def promiseDebugString(p: js.Promise[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseDebugString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def promiseDebugString(p: js.Promise[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseDebugString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
 }

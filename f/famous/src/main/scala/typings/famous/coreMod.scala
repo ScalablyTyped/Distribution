@@ -24,8 +24,7 @@ object coreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def dispatchUIEvent(path: String, event: String, payload: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(path.asInstanceOf[js.Any], event.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def dispatchUIEvent(path: String, event: String, payload: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchUIEvent")(path.asInstanceOf[js.Any], event.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("famous/core", "FamousEngine")
@@ -41,23 +40,17 @@ object coreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createScene(): Scene = ^.asInstanceOf[js.Dynamic].applyDynamic("createScene")().asInstanceOf[Scene]
+    inline def createScene(): Scene = ^.asInstanceOf[js.Dynamic].applyDynamic("createScene")().asInstanceOf[Scene]
     
-    @scala.inline
-    def getClock(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("getClock")().asInstanceOf[Clock]
+    inline def getClock(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("getClock")().asInstanceOf[Clock]
     
-    @scala.inline
-    def getContext(selector: String): Scene = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(selector.asInstanceOf[js.Any]).asInstanceOf[Scene]
+    inline def getContext(selector: String): Scene = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(selector.asInstanceOf[js.Any]).asInstanceOf[Scene]
     
-    @scala.inline
-    def init(): FamousEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[FamousEngine]
+    inline def init(): FamousEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[FamousEngine]
     
-    @scala.inline
-    def requestUpdate(requester: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUpdate")(requester.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def requestUpdate(requester: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUpdate")(requester.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def requestUpdateOnNextTick(requester: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUpdateOnNextTick")(requester.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def requestUpdateOnNextTick(requester: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUpdateOnNextTick")(requester.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("famous/core", "Node")
@@ -251,26 +244,22 @@ object coreMod {
     @JSImport("famous/core", "Node.ABSOLUTE_SIZE")
     @js.native
     def ABSOLUTE_SIZE: Double = js.native
-    @scala.inline
-    def ABSOLUTE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTE_SIZE")(x.asInstanceOf[js.Any])
+    inline def ABSOLUTE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTE_SIZE")(x.asInstanceOf[js.Any])
     
     @JSImport("famous/core", "Node.DEFAULT_SIZE")
     @js.native
     def DEFAULT_SIZE: Double = js.native
-    @scala.inline
-    def DEFAULT_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SIZE")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SIZE")(x.asInstanceOf[js.Any])
     
     @JSImport("famous/core", "Node.RELATIVE_SIZE")
     @js.native
     def RELATIVE_SIZE: Double = js.native
-    @scala.inline
-    def RELATIVE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RELATIVE_SIZE")(x.asInstanceOf[js.Any])
+    inline def RELATIVE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RELATIVE_SIZE")(x.asInstanceOf[js.Any])
     
     @JSImport("famous/core", "Node.RENDER_SIZE")
     @js.native
     def RENDER_SIZE: Double = js.native
-    @scala.inline
-    def RENDER_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RENDER_SIZE")(x.asInstanceOf[js.Any])
+    inline def RENDER_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RENDER_SIZE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("famous/core", "Scene")
@@ -290,26 +279,22 @@ object coreMod {
     @JSImport("famous/core", "Size.ABSOLUTE")
     @js.native
     def ABSOLUTE: Double = js.native
-    @scala.inline
-    def ABSOLUTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTE")(x.asInstanceOf[js.Any])
+    inline def ABSOLUTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ABSOLUTE")(x.asInstanceOf[js.Any])
     
     @JSImport("famous/core", "Size.DEFAULT")
     @js.native
     def DEFAULT: Double = js.native
-    @scala.inline
-    def DEFAULT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT")(x.asInstanceOf[js.Any])
     
     @JSImport("famous/core", "Size.RELATIVE")
     @js.native
     def RELATIVE: Double = js.native
-    @scala.inline
-    def RELATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RELATIVE")(x.asInstanceOf[js.Any])
+    inline def RELATIVE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RELATIVE")(x.asInstanceOf[js.Any])
     
     @JSImport("famous/core", "Size.RENDER")
     @js.native
     def RENDER: Double = js.native
-    @scala.inline
-    def RENDER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RENDER")(x.asInstanceOf[js.Any])
+    inline def RENDER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RENDER")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("famous/core", "SizeSystem")
@@ -322,8 +307,7 @@ object coreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deregisterSizeAtPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterSizeAtPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def deregisterSizeAtPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterSizeAtPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("famous/core", "TransformSystem")
@@ -336,7 +320,6 @@ object coreMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deregisterTransformAtPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterTransformAtPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def deregisterTransformAtPath(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterTransformAtPath")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

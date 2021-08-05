@@ -20,25 +20,19 @@ trait Pubsub extends StObject {
 }
 object Pubsub {
   
-  @scala.inline
-  def apply(): Pubsub = {
+  inline def apply(): Pubsub = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pubsub]
   }
   
-  @scala.inline
-  implicit class PubsubMutableBuilder[Self <: Pubsub] (val x: Self) extends AnyVal {
+  extension [Self <: Pubsub](x: Self) {
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

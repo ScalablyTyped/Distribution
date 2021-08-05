@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[A](fn: RetryFunction[A]): js.Promise[A] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[A]]
-  @scala.inline
-  def apply[A](fn: RetryFunction[A], opts: Options): js.Promise[A] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[A]]
+  inline def apply[A](fn: RetryFunction[A]): js.Promise[A] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[A]]
+  inline def apply[A](fn: RetryFunction[A], opts: Options): js.Promise[A] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[A]]
   
   @JSImport("async-retry-ng/lib", JSImport.Namespace)
   @js.native
@@ -32,50 +30,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+      inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
       
-      @scala.inline
-      def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
+      inline def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
+      inline def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
       
-      @scala.inline
-      def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
+      inline def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
+      inline def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
       
-      @scala.inline
-      def setOnRetry(value: /* e */ Error => js.Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction1(value))
+      inline def setOnRetry(value: /* e */ Error => js.Any): Self = StObject.set(x, "onRetry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
+      inline def setOnRetryUndefined: Self = StObject.set(x, "onRetry", js.undefined)
       
-      @scala.inline
-      def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+      inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
+      inline def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     }
   }
   

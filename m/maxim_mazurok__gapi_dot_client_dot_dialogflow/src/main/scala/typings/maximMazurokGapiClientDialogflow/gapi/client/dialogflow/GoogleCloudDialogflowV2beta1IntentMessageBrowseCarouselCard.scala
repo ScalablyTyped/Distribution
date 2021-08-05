@@ -18,32 +18,25 @@ trait GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCard extends StObje
 }
 object GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCard {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCard = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCard]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCardMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCard] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCard](x: Self) {
     
-    @scala.inline
-    def setImageDisplayOptions(value: String): Self = StObject.set(x, "imageDisplayOptions", value.asInstanceOf[js.Any])
+    inline def setImageDisplayOptions(value: String): Self = StObject.set(x, "imageDisplayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDisplayOptionsUndefined: Self = StObject.set(x, "imageDisplayOptions", js.undefined)
+    inline def setImageDisplayOptionsUndefined: Self = StObject.set(x, "imageDisplayOptions", js.undefined)
     
-    @scala.inline
-    def setItems(
+    inline def setItems(
       value: js.Array[
           GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCardBrowseCarouselCardItem
         ]
     ): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCardBrowseCarouselCardItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GoogleCloudDialogflowV2beta1IntentMessageBrowseCarouselCardBrowseCarouselCardItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

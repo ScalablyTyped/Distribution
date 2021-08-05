@@ -21,25 +21,19 @@ trait NewExtent extends StObject {
 }
 object NewExtent {
   
-  @scala.inline
-  def apply(newExtent: Point, newText: String, oldExtent: Point, start: Point): NewExtent = {
+  inline def apply(newExtent: Point, newText: String, oldExtent: Point, start: Point): NewExtent = {
     val __obj = js.Dynamic.literal(newExtent = newExtent.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any], oldExtent = oldExtent.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewExtent]
   }
   
-  @scala.inline
-  implicit class NewExtentMutableBuilder[Self <: NewExtent] (val x: Self) extends AnyVal {
+  extension [Self <: NewExtent](x: Self) {
     
-    @scala.inline
-    def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
+    inline def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
+    inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
+    inline def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

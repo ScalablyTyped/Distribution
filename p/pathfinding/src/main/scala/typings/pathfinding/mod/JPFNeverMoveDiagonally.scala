@@ -11,6 +11,5 @@ trait JPFNeverMoveDiagonally
      with JumpPointFinderBase
 object JPFNeverMoveDiagonally {
   
-  @scala.inline
-  def apply: JPFNeverMoveDiagonally = ^.asInstanceOf[js.Dynamic].selectDynamic("JPFNeverMoveDiagonally").asInstanceOf[JPFNeverMoveDiagonally]
+  inline def apply: JPFNeverMoveDiagonally = ^.asInstanceOf[js.Dynamic].selectDynamic("JPFNeverMoveDiagonally").asInstanceOf[JPFNeverMoveDiagonally]
 }

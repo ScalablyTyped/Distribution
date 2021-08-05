@@ -20,19 +20,15 @@ trait ProtocolResponseUploadData extends StObject {
 }
 object ProtocolResponseUploadData {
   
-  @scala.inline
-  def apply(contentType: String, data: String | Buffer): ProtocolResponseUploadData = {
+  inline def apply(contentType: String, data: String | Buffer): ProtocolResponseUploadData = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtocolResponseUploadData]
   }
   
-  @scala.inline
-  implicit class ProtocolResponseUploadDataMutableBuilder[Self <: ProtocolResponseUploadData] (val x: Self) extends AnyVal {
+  extension [Self <: ProtocolResponseUploadData](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

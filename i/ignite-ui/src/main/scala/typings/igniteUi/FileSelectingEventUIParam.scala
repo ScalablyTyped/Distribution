@@ -13,19 +13,15 @@ trait FileSelectingEventUIParam extends StObject {
 }
 object FileSelectingEventUIParam {
   
-  @scala.inline
-  def apply(): FileSelectingEventUIParam = {
+  inline def apply(): FileSelectingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSelectingEventUIParam]
   }
   
-  @scala.inline
-  implicit class FileSelectingEventUIParamMutableBuilder[Self <: FileSelectingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FileSelectingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

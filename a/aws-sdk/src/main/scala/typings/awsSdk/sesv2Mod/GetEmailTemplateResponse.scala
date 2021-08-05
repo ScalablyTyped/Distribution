@@ -18,19 +18,15 @@ trait GetEmailTemplateResponse extends StObject {
 }
 object GetEmailTemplateResponse {
   
-  @scala.inline
-  def apply(TemplateContent: EmailTemplateContent, TemplateName: EmailTemplateName): GetEmailTemplateResponse = {
+  inline def apply(TemplateContent: EmailTemplateContent, TemplateName: EmailTemplateName): GetEmailTemplateResponse = {
     val __obj = js.Dynamic.literal(TemplateContent = TemplateContent.asInstanceOf[js.Any], TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEmailTemplateResponse]
   }
   
-  @scala.inline
-  implicit class GetEmailTemplateResponseMutableBuilder[Self <: GetEmailTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEmailTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setTemplateContent(value: EmailTemplateContent): Self = StObject.set(x, "TemplateContent", value.asInstanceOf[js.Any])
+    inline def setTemplateContent(value: EmailTemplateContent): Self = StObject.set(x, "TemplateContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

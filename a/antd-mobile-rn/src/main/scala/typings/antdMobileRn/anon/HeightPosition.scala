@@ -16,25 +16,19 @@ trait HeightPosition extends StObject {
 }
 object HeightPosition {
   
-  @scala.inline
-  def apply(height: Double, position: String, top: Double, width: Double): HeightPosition = {
+  inline def apply(height: Double, position: String, top: Double, width: Double): HeightPosition = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightPosition]
   }
   
-  @scala.inline
-  implicit class HeightPositionMutableBuilder[Self <: HeightPosition] (val x: Self) extends AnyVal {
+  extension [Self <: HeightPosition](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

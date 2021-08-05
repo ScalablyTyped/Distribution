@@ -28,37 +28,27 @@ trait DeleteLifecyclePolicyResponse extends StObject {
 }
 object DeleteLifecyclePolicyResponse {
   
-  @scala.inline
-  def apply(): DeleteLifecyclePolicyResponse = {
+  inline def apply(): DeleteLifecyclePolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteLifecyclePolicyResponse]
   }
   
-  @scala.inline
-  implicit class DeleteLifecyclePolicyResponseMutableBuilder[Self <: DeleteLifecyclePolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLifecyclePolicyResponse](x: Self) {
     
-    @scala.inline
-    def setLastEvaluatedAt(value: EvaluationTimestamp): Self = StObject.set(x, "lastEvaluatedAt", value.asInstanceOf[js.Any])
+    inline def setLastEvaluatedAt(value: EvaluationTimestamp): Self = StObject.set(x, "lastEvaluatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEvaluatedAtUndefined: Self = StObject.set(x, "lastEvaluatedAt", js.undefined)
+    inline def setLastEvaluatedAtUndefined: Self = StObject.set(x, "lastEvaluatedAt", js.undefined)
     
-    @scala.inline
-    def setLifecyclePolicyText(value: LifecyclePolicyText): Self = StObject.set(x, "lifecyclePolicyText", value.asInstanceOf[js.Any])
+    inline def setLifecyclePolicyText(value: LifecyclePolicyText): Self = StObject.set(x, "lifecyclePolicyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecyclePolicyTextUndefined: Self = StObject.set(x, "lifecyclePolicyText", js.undefined)
+    inline def setLifecyclePolicyTextUndefined: Self = StObject.set(x, "lifecyclePolicyText", js.undefined)
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

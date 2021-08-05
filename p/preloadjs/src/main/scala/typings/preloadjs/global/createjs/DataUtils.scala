@@ -11,9 +11,7 @@ object DataUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseJSON(value: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def parseJSON(value: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(value.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @scala.inline
-  def parseXML(text: String, `type`: String): XMLDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXML")(text.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[XMLDocument]
+  inline def parseXML(text: String, `type`: String): XMLDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXML")(text.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[XMLDocument]
 }

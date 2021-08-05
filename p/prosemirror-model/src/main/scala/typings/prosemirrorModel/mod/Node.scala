@@ -34,6 +34,5 @@ object Node {
     * Deserialize a node from its JSON representation.
     */
   /* static member */
-  @scala.inline
-  def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): ProsemirrorNode[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[ProsemirrorNode[S]]
+  inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): ProsemirrorNode[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[ProsemirrorNode[S]]
 }

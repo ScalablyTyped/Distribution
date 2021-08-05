@@ -18,8 +18,7 @@ trait ASPxClientDocumentPreviewTab extends StObject {
 }
 object ASPxClientDocumentPreviewTab {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any,
     model: js.Any,
     template: String,
@@ -30,25 +29,19 @@ object ASPxClientDocumentPreviewTab {
     __obj.asInstanceOf[ASPxClientDocumentPreviewTab]
   }
   
-  @scala.inline
-  implicit class ASPxClientDocumentPreviewTabMutableBuilder[Self <: ASPxClientDocumentPreviewTab] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDocumentPreviewTab](x: Self) {
     
-    @scala.inline
-    def setActive(
+    inline def setActive(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(
+    inline def setVisible(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ js.Any
     ): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }

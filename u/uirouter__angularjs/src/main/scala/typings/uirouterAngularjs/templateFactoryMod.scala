@@ -24,16 +24,16 @@ object templateFactoryMod {
         String | (js.Function3[/* $http */ js.Any, /* $templateCache */ js.Any, /* $injector */ js.Any, this.type])
       ] = js.native
     
-    /** @hidden */ @JSName("$http")
+    /** @hidden */ /* private */ @JSName("$http")
     var $http: js.Any = js.native
     
-    /** @hidden */ @JSName("$templateCache")
+    /** @hidden */ /* private */ @JSName("$templateCache")
     var $templateCache: js.Any = js.native
     
-    /** @hidden */ @JSName("$templateRequest")
+    /** @hidden */ /* private */ @JSName("$templateRequest")
     var $templateRequest: js.Any = js.native
     
-    /** @hidden */ var _useHttp: js.Any = js.native
+    /** @hidden */ /* private */ var _useHttp: js.Any = js.native
     
     /**
       * Creates a component's template by invoking an injectable provider function.

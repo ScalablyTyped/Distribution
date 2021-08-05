@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CriteriaDivider[T] protected () extends StObject {
   def this(table: Table[T]) = this()
   
-  var _table: js.Any = js.native
+  /* private */ var _table: js.Any = js.native
   
   /**
     * Builds the criteria raw object to Criteria object.

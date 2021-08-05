@@ -15,31 +15,23 @@ trait PartialsheetNamestringrow extends StObject {
 }
 object PartialsheetNamestringrow {
   
-  @scala.inline
-  def apply(): PartialsheetNamestringrow = {
+  inline def apply(): PartialsheetNamestringrow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialsheetNamestringrow]
   }
   
-  @scala.inline
-  implicit class PartialsheetNamestringrowMutableBuilder[Self <: PartialsheetNamestringrow] (val x: Self) extends AnyVal {
+  extension [Self <: PartialsheetNamestringrow](x: Self) {
     
-    @scala.inline
-    def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColUndefined: Self = StObject.set(x, "col", js.undefined)
+    inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
+    inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
+    inline def setSheetNameUndefined: Self = StObject.set(x, "sheetName", js.undefined)
   }
 }

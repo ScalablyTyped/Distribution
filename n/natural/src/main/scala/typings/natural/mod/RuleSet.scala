@@ -10,19 +10,15 @@ trait RuleSet extends StObject {
 }
 object RuleSet {
   
-  @scala.inline
-  def apply(rules: js.Array[TransformationRule]): RuleSet = {
+  inline def apply(rules: js.Array[TransformationRule]): RuleSet = {
     val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleSet]
   }
   
-  @scala.inline
-  implicit class RuleSetMutableBuilder[Self <: RuleSet] (val x: Self) extends AnyVal {
+  extension [Self <: RuleSet](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[TransformationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[TransformationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: TransformationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: TransformationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

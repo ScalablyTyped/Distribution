@@ -14,36 +14,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddConstraintOptions extends StObject
 object AddConstraintOptions {
   
-  @scala.inline
-  def AddCheckConstraintOptions(): typings.sequelize.mod.AddCheckConstraintOptions = {
+  inline def AddCheckConstraintOptions(): typings.sequelize.mod.AddCheckConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("check")
     __obj.asInstanceOf[typings.sequelize.mod.AddCheckConstraintOptions]
   }
   
-  @scala.inline
-  def AddDefaultConstraintOptions(): typings.sequelize.mod.AddDefaultConstraintOptions = {
+  inline def AddDefaultConstraintOptions(): typings.sequelize.mod.AddDefaultConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("default")
     __obj.asInstanceOf[typings.sequelize.mod.AddDefaultConstraintOptions]
   }
   
-  @scala.inline
-  def AddForeignKeyConstraintOptions(onDelete: String, onUpdate: String): typings.sequelize.mod.AddForeignKeyConstraintOptions = {
+  inline def AddForeignKeyConstraintOptions(onDelete: String, onUpdate: String): typings.sequelize.mod.AddForeignKeyConstraintOptions = {
     val __obj = js.Dynamic.literal(onDelete = onDelete.asInstanceOf[js.Any], onUpdate = onUpdate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("foreign key")
     __obj.asInstanceOf[typings.sequelize.mod.AddForeignKeyConstraintOptions]
   }
   
-  @scala.inline
-  def AddPrimaryKeyConstraintOptions(): typings.sequelize.mod.AddPrimaryKeyConstraintOptions = {
+  inline def AddPrimaryKeyConstraintOptions(): typings.sequelize.mod.AddPrimaryKeyConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("primary key")
     __obj.asInstanceOf[typings.sequelize.mod.AddPrimaryKeyConstraintOptions]
   }
   
-  @scala.inline
-  def AddUniqueConstraintOptions(): typings.sequelize.mod.AddUniqueConstraintOptions = {
+  inline def AddUniqueConstraintOptions(): typings.sequelize.mod.AddUniqueConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("unique")
     __obj.asInstanceOf[typings.sequelize.mod.AddUniqueConstraintOptions]

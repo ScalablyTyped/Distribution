@@ -12,16 +12,13 @@ trait SpeechRecognitionCompilationResult extends StObject {
 }
 object SpeechRecognitionCompilationResult {
   
-  @scala.inline
-  def apply(status: SpeechRecognitionResultStatus): SpeechRecognitionCompilationResult = {
+  inline def apply(status: SpeechRecognitionResultStatus): SpeechRecognitionCompilationResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionCompilationResult]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionCompilationResultMutableBuilder[Self <: SpeechRecognitionCompilationResult] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionCompilationResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: SpeechRecognitionResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SpeechRecognitionResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

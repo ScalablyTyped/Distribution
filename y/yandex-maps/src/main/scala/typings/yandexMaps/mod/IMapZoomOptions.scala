@@ -13,19 +13,15 @@ trait IMapZoomOptions
 }
 object IMapZoomOptions {
   
-  @scala.inline
-  def apply(): IMapZoomOptions = {
+  inline def apply(): IMapZoomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMapZoomOptions]
   }
   
-  @scala.inline
-  implicit class IMapZoomOptionsMutableBuilder[Self <: IMapZoomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMapZoomOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

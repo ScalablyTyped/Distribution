@@ -19,8 +19,7 @@ trait GitPullRequestQuery extends StObject {
 }
 object GitPullRequestQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     queries: js.Array[GitPullRequestQueryInput],
     results: js.Array[StringDictionary[js.Array[GitPullRequest]]]
   ): GitPullRequestQuery = {
@@ -28,19 +27,14 @@ object GitPullRequestQuery {
     __obj.asInstanceOf[GitPullRequestQuery]
   }
   
-  @scala.inline
-  implicit class GitPullRequestQueryMutableBuilder[Self <: GitPullRequestQuery] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestQuery](x: Self) {
     
-    @scala.inline
-    def setQueries(value: js.Array[GitPullRequestQueryInput]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[GitPullRequestQueryInput]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesVarargs(value: GitPullRequestQueryInput*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: GitPullRequestQueryInput*): Self = StObject.set(x, "queries", js.Array(value :_*))
     
-    @scala.inline
-    def setResults(value: js.Array[StringDictionary[js.Array[GitPullRequest]]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[StringDictionary[js.Array[GitPullRequest]]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: StringDictionary[js.Array[GitPullRequest]]*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: StringDictionary[js.Array[GitPullRequest]]*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

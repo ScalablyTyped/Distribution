@@ -12,19 +12,15 @@ trait `1`[OverlayType /* <: OverlayElement */] extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply[OverlayType /* <: OverlayElement */](): `1`[OverlayType] = {
+  inline def apply[OverlayType /* <: OverlayElement */](): `1`[OverlayType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`1`[OverlayType]]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`[?], OverlayType /* <: OverlayElement */] (val x: Self & `1`[OverlayType]) extends AnyVal {
+  extension [Self <: `1`[?], OverlayType /* <: OverlayElement */](x: Self & `1`[OverlayType]) {
     
-    @scala.inline
-    def setForwardedRef(value: RefObject[OverlayType]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
+    inline def setForwardedRef(value: RefObject[OverlayType]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
+    inline def setForwardedRefUndefined: Self = StObject.set(x, "forwardedRef", js.undefined)
   }
 }

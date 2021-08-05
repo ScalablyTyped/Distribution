@@ -14,25 +14,19 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(): Location = {
+  inline def apply(): Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
+    inline def setSegmentIdUndefined: Self = StObject.set(x, "segmentId", js.undefined)
   }
 }

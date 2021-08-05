@@ -12,22 +12,17 @@ trait PassportData extends StObject {
 }
 object PassportData {
   
-  @scala.inline
-  def apply(credentials: EncryptedCredentials, data: js.Array[EncryptedPassportElement]): PassportData = {
+  inline def apply(credentials: EncryptedCredentials, data: js.Array[EncryptedPassportElement]): PassportData = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PassportData]
   }
   
-  @scala.inline
-  implicit class PassportDataMutableBuilder[Self <: PassportData] (val x: Self) extends AnyVal {
+  extension [Self <: PassportData](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: EncryptedCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: EncryptedCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[EncryptedPassportElement]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[EncryptedPassportElement]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: EncryptedPassportElement*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: EncryptedPassportElement*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

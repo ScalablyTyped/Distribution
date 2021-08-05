@@ -21,28 +21,21 @@ trait CodeFixAction
 }
 object CodeFixAction {
   
-  @scala.inline
-  def apply(changes: js.Array[FileTextChanges], description: java.lang.String, fixName: java.lang.String): CodeFixAction = {
+  inline def apply(changes: js.Array[FileTextChanges], description: java.lang.String, fixName: java.lang.String): CodeFixAction = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], fixName = fixName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeFixAction]
   }
   
-  @scala.inline
-  implicit class CodeFixActionMutableBuilder[Self <: CodeFixAction] (val x: Self) extends AnyVal {
+  extension [Self <: CodeFixAction](x: Self) {
     
-    @scala.inline
-    def setFixAllDescription(value: java.lang.String): Self = StObject.set(x, "fixAllDescription", value.asInstanceOf[js.Any])
+    inline def setFixAllDescription(value: java.lang.String): Self = StObject.set(x, "fixAllDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixAllDescriptionUndefined: Self = StObject.set(x, "fixAllDescription", js.undefined)
+    inline def setFixAllDescriptionUndefined: Self = StObject.set(x, "fixAllDescription", js.undefined)
     
-    @scala.inline
-    def setFixId(value: js.Object): Self = StObject.set(x, "fixId", value.asInstanceOf[js.Any])
+    inline def setFixId(value: js.Object): Self = StObject.set(x, "fixId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixIdUndefined: Self = StObject.set(x, "fixId", js.undefined)
+    inline def setFixIdUndefined: Self = StObject.set(x, "fixId", js.undefined)
     
-    @scala.inline
-    def setFixName(value: java.lang.String): Self = StObject.set(x, "fixName", value.asInstanceOf[js.Any])
+    inline def setFixName(value: java.lang.String): Self = StObject.set(x, "fixName", value.asInstanceOf[js.Any])
   }
 }

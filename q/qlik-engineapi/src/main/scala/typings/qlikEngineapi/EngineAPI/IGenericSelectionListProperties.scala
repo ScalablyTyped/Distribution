@@ -18,19 +18,15 @@ trait IGenericSelectionListProperties
 }
 object IGenericSelectionListProperties {
   
-  @scala.inline
-  def apply(qInfo: IGenericSelectionNxInfo, qSelectionObjectDef: js.Any): IGenericSelectionListProperties = {
+  inline def apply(qInfo: IGenericSelectionNxInfo, qSelectionObjectDef: js.Any): IGenericSelectionListProperties = {
     val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qSelectionObjectDef = qSelectionObjectDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericSelectionListProperties]
   }
   
-  @scala.inline
-  implicit class IGenericSelectionListPropertiesMutableBuilder[Self <: IGenericSelectionListProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericSelectionListProperties](x: Self) {
     
-    @scala.inline
-    def setQInfo(value: IGenericSelectionNxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
+    inline def setQInfo(value: IGenericSelectionNxInfo): Self = StObject.set(x, "qInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSelectionObjectDef(value: js.Any): Self = StObject.set(x, "qSelectionObjectDef", value.asInstanceOf[js.Any])
+    inline def setQSelectionObjectDef(value: js.Any): Self = StObject.set(x, "qSelectionObjectDef", value.asInstanceOf[js.Any])
   }
 }

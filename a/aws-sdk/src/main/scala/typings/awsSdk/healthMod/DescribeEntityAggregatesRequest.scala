@@ -13,22 +13,17 @@ trait DescribeEntityAggregatesRequest extends StObject {
 }
 object DescribeEntityAggregatesRequest {
   
-  @scala.inline
-  def apply(): DescribeEntityAggregatesRequest = {
+  inline def apply(): DescribeEntityAggregatesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEntityAggregatesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEntityAggregatesRequestMutableBuilder[Self <: DescribeEntityAggregatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEntityAggregatesRequest](x: Self) {
     
-    @scala.inline
-    def setEventArns(value: EventArnsList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
+    inline def setEventArns(value: EventArnsList): Self = StObject.set(x, "eventArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventArnsUndefined: Self = StObject.set(x, "eventArns", js.undefined)
+    inline def setEventArnsUndefined: Self = StObject.set(x, "eventArns", js.undefined)
     
-    @scala.inline
-    def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
+    inline def setEventArnsVarargs(value: eventArn*): Self = StObject.set(x, "eventArns", js.Array(value :_*))
   }
 }

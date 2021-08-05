@@ -31,8 +31,7 @@ trait ChatMessageAttachment extends StObject {
 }
 object ChatMessageAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataStreamReference: IRandomAccessStreamReference,
     groupId: Double,
     mimeType: String,
@@ -45,28 +44,20 @@ object ChatMessageAttachment {
     __obj.asInstanceOf[ChatMessageAttachment]
   }
   
-  @scala.inline
-  implicit class ChatMessageAttachmentMutableBuilder[Self <: ChatMessageAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageAttachment](x: Self) {
     
-    @scala.inline
-    def setDataStreamReference(value: IRandomAccessStreamReference): Self = StObject.set(x, "dataStreamReference", value.asInstanceOf[js.Any])
+    inline def setDataStreamReference(value: IRandomAccessStreamReference): Self = StObject.set(x, "dataStreamReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupId(value: Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: Double): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalFileName(value: String): Self = StObject.set(x, "originalFileName", value.asInstanceOf[js.Any])
+    inline def setOriginalFileName(value: String): Self = StObject.set(x, "originalFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferProgress(value: Double): Self = StObject.set(x, "transferProgress", value.asInstanceOf[js.Any])
+    inline def setTransferProgress(value: Double): Self = StObject.set(x, "transferProgress", value.asInstanceOf[js.Any])
   }
 }

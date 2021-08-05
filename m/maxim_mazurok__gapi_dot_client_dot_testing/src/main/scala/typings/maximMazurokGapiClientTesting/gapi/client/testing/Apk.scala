@@ -14,25 +14,19 @@ trait Apk extends StObject {
 }
 object Apk {
   
-  @scala.inline
-  def apply(): Apk = {
+  inline def apply(): Apk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Apk]
   }
   
-  @scala.inline
-  implicit class ApkMutableBuilder[Self <: Apk] (val x: Self) extends AnyVal {
+  extension [Self <: Apk](x: Self) {
     
-    @scala.inline
-    def setLocation(value: FileReference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: FileReference): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

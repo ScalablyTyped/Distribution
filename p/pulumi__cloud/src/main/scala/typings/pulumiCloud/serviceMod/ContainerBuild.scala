@@ -37,37 +37,27 @@ trait ContainerBuild extends StObject {
 }
 object ContainerBuild {
   
-  @scala.inline
-  def apply(): ContainerBuild = {
+  inline def apply(): ContainerBuild = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerBuild]
   }
   
-  @scala.inline
-  implicit class ContainerBuildMutableBuilder[Self <: ContainerBuild] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerBuild](x: Self) {
     
-    @scala.inline
-    def setArgs(value: StringDictionary[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: StringDictionary[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setCacheFrom(value: Boolean | CacheFrom): Self = StObject.set(x, "cacheFrom", value.asInstanceOf[js.Any])
+    inline def setCacheFrom(value: Boolean | CacheFrom): Self = StObject.set(x, "cacheFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheFromUndefined: Self = StObject.set(x, "cacheFrom", js.undefined)
+    inline def setCacheFromUndefined: Self = StObject.set(x, "cacheFrom", js.undefined)
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setDockerfile(value: String): Self = StObject.set(x, "dockerfile", value.asInstanceOf[js.Any])
+    inline def setDockerfile(value: String): Self = StObject.set(x, "dockerfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockerfileUndefined: Self = StObject.set(x, "dockerfile", js.undefined)
+    inline def setDockerfileUndefined: Self = StObject.set(x, "dockerfile", js.undefined)
   }
 }

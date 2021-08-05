@@ -12,19 +12,15 @@ trait Typeofoptions4Validate2 extends StObject {
 }
 object Typeofoptions4Validate2 {
   
-  @scala.inline
-  def apply(payload: TypeofpayloadMaxBytes, validate_2: Typeofvalidate2): Typeofoptions4Validate2 = {
+  inline def apply(payload: TypeofpayloadMaxBytes, validate_2: Typeofvalidate2): Typeofoptions4Validate2 = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], validate_2 = validate_2.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofoptions4Validate2]
   }
   
-  @scala.inline
-  implicit class Typeofoptions4Validate2MutableBuilder[Self <: Typeofoptions4Validate2] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofoptions4Validate2](x: Self) {
     
-    @scala.inline
-    def setPayload(value: TypeofpayloadMaxBytes): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: TypeofpayloadMaxBytes): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate_2(value: Typeofvalidate2): Self = StObject.set(x, "validate_2", value.asInstanceOf[js.Any])
+    inline def setValidate_2(value: Typeofvalidate2): Self = StObject.set(x, "validate_2", value.asInstanceOf[js.Any])
   }
 }

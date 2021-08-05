@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdArabicNumeral extends StObject
 object WdArabicNumeral {
   
-  @scala.inline
-  def wdNumeralArabic: `0` = 0.asInstanceOf[`0`]
+  inline def wdNumeralArabic: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdNumeralContext: `2` = 2.asInstanceOf[`2`]
+  inline def wdNumeralContext: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdNumeralHindi: `1` = 1.asInstanceOf[`1`]
+  inline def wdNumeralHindi: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdNumeralSystem: `3` = 3.asInstanceOf[`3`]
+  inline def wdNumeralSystem: `3` = 3.asInstanceOf[`3`]
 }

@@ -26,8 +26,7 @@ trait XRemoteContentProviderSupplier
 }
 object XRemoteContentProviderSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     queryRemoteContentProvider: String => XMultiServiceFactory,
@@ -37,10 +36,8 @@ object XRemoteContentProviderSupplier {
     __obj.asInstanceOf[XRemoteContentProviderSupplier]
   }
   
-  @scala.inline
-  implicit class XRemoteContentProviderSupplierMutableBuilder[Self <: XRemoteContentProviderSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XRemoteContentProviderSupplier](x: Self) {
     
-    @scala.inline
-    def setQueryRemoteContentProvider(value: String => XMultiServiceFactory): Self = StObject.set(x, "queryRemoteContentProvider", js.Any.fromFunction1(value))
+    inline def setQueryRemoteContentProvider(value: String => XMultiServiceFactory): Self = StObject.set(x, "queryRemoteContentProvider", js.Any.fromFunction1(value))
   }
 }

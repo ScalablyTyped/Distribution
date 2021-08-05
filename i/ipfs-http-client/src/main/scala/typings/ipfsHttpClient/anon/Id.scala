@@ -13,22 +13,17 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(addrs: js.Array[^], id: typings.cids.mod.^): Id = {
+  inline def apply(addrs: js.Array[^], id: typings.cids.mod.^): Id = {
     val __obj = js.Dynamic.literal(addrs = addrs.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setAddrs(value: js.Array[^]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
+    inline def setAddrs(value: js.Array[^]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddrsVarargs(value: ^ *): Self = StObject.set(x, "addrs", js.Array(value :_*))
+    inline def setAddrsVarargs(value: ^ *): Self = StObject.set(x, "addrs", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: typings.cids.mod.^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: typings.cids.mod.^): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

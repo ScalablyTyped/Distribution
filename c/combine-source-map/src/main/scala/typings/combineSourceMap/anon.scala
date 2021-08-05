@@ -14,20 +14,16 @@ object anon {
   }
   object Source {
     
-    @scala.inline
-    def apply(source: String, sourceFile: String): Source = {
+    inline def apply(source: String, sourceFile: String): Source = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], sourceFile = sourceFile.asInstanceOf[js.Any])
       __obj.asInstanceOf[Source]
     }
     
-    @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+    extension [Self <: Source](x: Self) {
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+      inline def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     }
   }
 }

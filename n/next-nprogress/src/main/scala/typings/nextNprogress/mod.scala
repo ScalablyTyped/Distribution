@@ -12,12 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
-  @scala.inline
-  def default(delayMs: Double): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
-  @scala.inline
-  def default(delayMs: Double, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
-  @scala.inline
-  def default(delayMs: Unit, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  inline def default(): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  inline def default(delayMs: Double): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  inline def default(delayMs: Double, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
+  inline def default(delayMs: Unit, options: PartialNProgressOptions): js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(delayMs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Page */ ComponentType[js.Object], ComponentType[js.Object]]]
 }

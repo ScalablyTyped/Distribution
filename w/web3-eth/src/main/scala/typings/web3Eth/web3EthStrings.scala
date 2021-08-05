@@ -8,21 +8,17 @@ object web3EthStrings {
   
   @js.native
   sealed trait logs extends StObject
-  @scala.inline
-  def logs: logs = "logs".asInstanceOf[logs]
+  inline def logs: logs = "logs".asInstanceOf[logs]
   
   @js.native
   sealed trait newBlockHeaders extends StObject
-  @scala.inline
-  def newBlockHeaders: newBlockHeaders = "newBlockHeaders".asInstanceOf[newBlockHeaders]
+  inline def newBlockHeaders: newBlockHeaders = "newBlockHeaders".asInstanceOf[newBlockHeaders]
   
   @js.native
   sealed trait pendingTransactions extends StObject
-  @scala.inline
-  def pendingTransactions: pendingTransactions = "pendingTransactions".asInstanceOf[pendingTransactions]
+  inline def pendingTransactions: pendingTransactions = "pendingTransactions".asInstanceOf[pendingTransactions]
   
   @js.native
   sealed trait syncing extends StObject
-  @scala.inline
-  def syncing: syncing = "syncing".asInstanceOf[syncing]
+  inline def syncing: syncing = "syncing".asInstanceOf[syncing]
 }

@@ -13,19 +13,15 @@ trait VpcInterfaceAttachment extends StObject {
 }
 object VpcInterfaceAttachment {
   
-  @scala.inline
-  def apply(): VpcInterfaceAttachment = {
+  inline def apply(): VpcInterfaceAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpcInterfaceAttachment]
   }
   
-  @scala.inline
-  implicit class VpcInterfaceAttachmentMutableBuilder[Self <: VpcInterfaceAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: VpcInterfaceAttachment](x: Self) {
     
-    @scala.inline
-    def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
+    inline def setVpcInterfaceName(value: string): Self = StObject.set(x, "VpcInterfaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
+    inline def setVpcInterfaceNameUndefined: Self = StObject.set(x, "VpcInterfaceName", js.undefined)
   }
 }

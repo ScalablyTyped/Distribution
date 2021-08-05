@@ -22,8 +22,7 @@ trait CompactableComposition23C[F /* <: /* import warning: transforms.QualifyRef
 }
 object CompactableComposition23C {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
     compact: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, E, Option<A>>> */ js.Any => js.Any,
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, E, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
     separate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, E, Either<A, B>>> */ js.Any => Separated[
@@ -35,16 +34,13 @@ object CompactableComposition23C {
     __obj.asInstanceOf[CompactableComposition23C[F, G, E]]
   }
   
-  @scala.inline
-  implicit class CompactableComposition23CMutableBuilder[Self <: CompactableComposition23C[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (CompactableComposition23C[F, G, E])) extends AnyVal {
+  extension [Self <: CompactableComposition23C[?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (CompactableComposition23C[F, G, E])) {
     
-    @scala.inline
-    def setCompact(
+    inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, E, Option<A>>> */ js.Any => js.Any
     ): Self = StObject.set(x, "compact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparate(
+    inline def setSeparate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, E, Either<A, B>>> */ js.Any => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, E, A>> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind3<G, R, E, B>> */ js.Any

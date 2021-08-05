@@ -96,94 +96,65 @@ trait ParamsResourceProjectsGroupstatsList
 }
 object ParamsResourceProjectsGroupstatsList {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsGroupstatsList = {
+  inline def apply(): ParamsResourceProjectsGroupstatsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsGroupstatsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsGroupstatsListMutableBuilder[Self <: ParamsResourceProjectsGroupstatsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsGroupstatsList](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentTime(value: String): Self = StObject.set(x, "alignmentTime", value.asInstanceOf[js.Any])
+    inline def setAlignmentTime(value: String): Self = StObject.set(x, "alignmentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentTimeUndefined: Self = StObject.set(x, "alignmentTime", js.undefined)
+    inline def setAlignmentTimeUndefined: Self = StObject.set(x, "alignmentTime", js.undefined)
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: js.Array[String]): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: js.Array[String]): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
-    @scala.inline
-    def setGroupIdVarargs(value: String*): Self = StObject.set(x, "groupId", js.Array(value :_*))
+    inline def setGroupIdVarargs(value: String*): Self = StObject.set(x, "groupId", js.Array(value :_*))
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
+    inline def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
     
-    @scala.inline
-    def setServiceFilterDotresourceType(value: String): Self = StObject.set(x, "serviceFilter.resourceType", value.asInstanceOf[js.Any])
+    inline def setServiceFilterDotresourceType(value: String): Self = StObject.set(x, "serviceFilter.resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceFilterDotresourceTypeUndefined: Self = StObject.set(x, "serviceFilter.resourceType", js.undefined)
+    inline def setServiceFilterDotresourceTypeUndefined: Self = StObject.set(x, "serviceFilter.resourceType", js.undefined)
     
-    @scala.inline
-    def setServiceFilterDotservice(value: String): Self = StObject.set(x, "serviceFilter.service", value.asInstanceOf[js.Any])
+    inline def setServiceFilterDotservice(value: String): Self = StObject.set(x, "serviceFilter.service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceFilterDotserviceUndefined: Self = StObject.set(x, "serviceFilter.service", js.undefined)
+    inline def setServiceFilterDotserviceUndefined: Self = StObject.set(x, "serviceFilter.service", js.undefined)
     
-    @scala.inline
-    def setServiceFilterDotversion(value: String): Self = StObject.set(x, "serviceFilter.version", value.asInstanceOf[js.Any])
+    inline def setServiceFilterDotversion(value: String): Self = StObject.set(x, "serviceFilter.version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceFilterDotversionUndefined: Self = StObject.set(x, "serviceFilter.version", js.undefined)
+    inline def setServiceFilterDotversionUndefined: Self = StObject.set(x, "serviceFilter.version", js.undefined)
     
-    @scala.inline
-    def setTimeRangeDotperiod(value: String): Self = StObject.set(x, "timeRange.period", value.asInstanceOf[js.Any])
+    inline def setTimeRangeDotperiod(value: String): Self = StObject.set(x, "timeRange.period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeDotperiodUndefined: Self = StObject.set(x, "timeRange.period", js.undefined)
+    inline def setTimeRangeDotperiodUndefined: Self = StObject.set(x, "timeRange.period", js.undefined)
     
-    @scala.inline
-    def setTimedCountDuration(value: String): Self = StObject.set(x, "timedCountDuration", value.asInstanceOf[js.Any])
+    inline def setTimedCountDuration(value: String): Self = StObject.set(x, "timedCountDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedCountDurationUndefined: Self = StObject.set(x, "timedCountDuration", js.undefined)
+    inline def setTimedCountDurationUndefined: Self = StObject.set(x, "timedCountDuration", js.undefined)
   }
 }

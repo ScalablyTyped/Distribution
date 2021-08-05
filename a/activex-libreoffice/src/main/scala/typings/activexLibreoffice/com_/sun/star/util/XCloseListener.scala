@@ -55,8 +55,7 @@ trait XCloseListener
 }
 object XCloseListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     notifyClosing: EventObject => Unit,
@@ -68,13 +67,10 @@ object XCloseListener {
     __obj.asInstanceOf[XCloseListener]
   }
   
-  @scala.inline
-  implicit class XCloseListenerMutableBuilder[Self <: XCloseListener] (val x: Self) extends AnyVal {
+  extension [Self <: XCloseListener](x: Self) {
     
-    @scala.inline
-    def setNotifyClosing(value: EventObject => Unit): Self = StObject.set(x, "notifyClosing", js.Any.fromFunction1(value))
+    inline def setNotifyClosing(value: EventObject => Unit): Self = StObject.set(x, "notifyClosing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQueryClosing(value: (EventObject, Boolean) => Unit): Self = StObject.set(x, "queryClosing", js.Any.fromFunction2(value))
+    inline def setQueryClosing(value: (EventObject, Boolean) => Unit): Self = StObject.set(x, "queryClosing", js.Any.fromFunction2(value))
   }
 }

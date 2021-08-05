@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait HTMLMSCSSKeyframesRule extends StObject {
   
-  @JSName("MSHTML.HTMLMSCSSKeyframesRule_typekey")
+  /* private */ @JSName("MSHTML.HTMLMSCSSKeyframesRule_typekey")
   var MSHTMLDotHTMLMSCSSKeyframesRule_typekey: HTMLMSCSSKeyframesRule
   
   def appendRule(bstrRule: String): Unit
@@ -31,8 +31,7 @@ trait HTMLMSCSSKeyframesRule extends StObject {
 }
 object HTMLMSCSSKeyframesRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotHTMLMSCSSKeyframesRule_typekey: HTMLMSCSSKeyframesRule,
     appendRule: String => Unit,
     cssRules: IHTMLStyleSheetRulesCollection,
@@ -50,37 +49,26 @@ object HTMLMSCSSKeyframesRule {
     __obj.asInstanceOf[HTMLMSCSSKeyframesRule]
   }
   
-  @scala.inline
-  implicit class HTMLMSCSSKeyframesRuleMutableBuilder[Self <: HTMLMSCSSKeyframesRule] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLMSCSSKeyframesRule](x: Self) {
     
-    @scala.inline
-    def setAppendRule(value: String => Unit): Self = StObject.set(x, "appendRule", js.Any.fromFunction1(value))
+    inline def setAppendRule(value: String => Unit): Self = StObject.set(x, "appendRule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCssRules(value: IHTMLStyleSheetRulesCollection): Self = StObject.set(x, "cssRules", value.asInstanceOf[js.Any])
+    inline def setCssRules(value: IHTMLStyleSheetRulesCollection): Self = StObject.set(x, "cssRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
+    inline def setCssText(value: String): Self = StObject.set(x, "cssText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRule(value: String => Unit): Self = StObject.set(x, "deleteRule", js.Any.fromFunction1(value))
+    inline def setDeleteRule(value: String => Unit): Self = StObject.set(x, "deleteRule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindRule(value: String => IHTMLMSCSSKeyframeRule): Self = StObject.set(x, "findRule", js.Any.fromFunction1(value))
+    inline def setFindRule(value: String => IHTMLMSCSSKeyframeRule): Self = StObject.set(x, "findRule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMSHTMLDotHTMLMSCSSKeyframesRule_typekey(value: HTMLMSCSSKeyframesRule): Self = StObject.set(x, "MSHTML.HTMLMSCSSKeyframesRule_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotHTMLMSCSSKeyframesRule_typekey(value: HTMLMSCSSKeyframesRule): Self = StObject.set(x, "MSHTML.HTMLMSCSSKeyframesRule_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
+    inline def setParentRule(value: IHTMLCSSRule): Self = StObject.set(x, "parentRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
+    inline def setParentStyleSheet(value: IHTMLStyleSheet): Self = StObject.set(x, "parentStyleSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

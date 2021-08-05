@@ -76,8 +76,7 @@ object Kanban {
   @JSGlobal("ej.Kanban.Locale")
   @js.native
   def Locale: js.Any = js.native
-  @scala.inline
-  def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
+  inline def Locale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locale")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ej.Kanban.SelectionType")
   @js.native
@@ -111,6 +110,5 @@ object Kanban {
   @JSGlobal("ej.Kanban.fn")
   @js.native
   def fn: typings.ejWebAll.ej.Kanban = js.native
-  @scala.inline
-  def fn_=(x: typings.ejWebAll.ej.Kanban): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.ejWebAll.ej.Kanban): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

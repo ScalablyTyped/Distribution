@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait popoverImageOptionsFloat extends StObject
 object popoverImageOptionsFloat {
   
-  @scala.inline
-  def floatLeft: typings.summernote.summernoteStrings.floatLeft = "floatLeft".asInstanceOf[typings.summernote.summernoteStrings.floatLeft]
+  inline def floatLeft: typings.summernote.summernoteStrings.floatLeft = "floatLeft".asInstanceOf[typings.summernote.summernoteStrings.floatLeft]
   
-  @scala.inline
-  def floatNone: typings.summernote.summernoteStrings.floatNone = "floatNone".asInstanceOf[typings.summernote.summernoteStrings.floatNone]
+  inline def floatNone: typings.summernote.summernoteStrings.floatNone = "floatNone".asInstanceOf[typings.summernote.summernoteStrings.floatNone]
   
-  @scala.inline
-  def floatRight: typings.summernote.summernoteStrings.floatRight = "floatRight".asInstanceOf[typings.summernote.summernoteStrings.floatRight]
+  inline def floatRight: typings.summernote.summernoteStrings.floatRight = "floatRight".asInstanceOf[typings.summernote.summernoteStrings.floatRight]
 }

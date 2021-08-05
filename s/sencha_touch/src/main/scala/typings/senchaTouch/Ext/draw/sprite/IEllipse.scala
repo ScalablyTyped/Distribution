@@ -32,49 +32,35 @@ trait IEllipse
 }
 object IEllipse {
   
-  @scala.inline
-  def apply(): IEllipse = {
+  inline def apply(): IEllipse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEllipse]
   }
   
-  @scala.inline
-  implicit class IEllipseMutableBuilder[Self <: IEllipse] (val x: Self) extends AnyVal {
+  extension [Self <: IEllipse](x: Self) {
     
-    @scala.inline
-    def setAxisRotation(value: Double): Self = StObject.set(x, "axisRotation", value.asInstanceOf[js.Any])
+    inline def setAxisRotation(value: Double): Self = StObject.set(x, "axisRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisRotationUndefined: Self = StObject.set(x, "axisRotation", js.undefined)
+    inline def setAxisRotationUndefined: Self = StObject.set(x, "axisRotation", js.undefined)
     
-    @scala.inline
-    def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
-    @scala.inline
-    def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: Double): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    @scala.inline
-    def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+    inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+    inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
     
-    @scala.inline
-    def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
     
-    @scala.inline
-    def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
+    inline def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
+    inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
   }
 }

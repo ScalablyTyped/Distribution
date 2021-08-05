@@ -10,17 +10,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toASCII(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASCII")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toASCII(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toASCII")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def toUnicode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnicode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toUnicode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toUnicode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object ucs2 {
     
@@ -28,11 +24,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decode(string: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def decode(string: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
-    @scala.inline
-    def encode(array: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(array.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encode(array: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(array.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("punycode", "version")

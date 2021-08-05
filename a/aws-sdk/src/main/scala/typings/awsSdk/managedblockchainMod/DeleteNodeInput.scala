@@ -23,22 +23,17 @@ trait DeleteNodeInput extends StObject {
 }
 object DeleteNodeInput {
   
-  @scala.inline
-  def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString, NodeId: ResourceIdString): DeleteNodeInput = {
+  inline def apply(MemberId: ResourceIdString, NetworkId: ResourceIdString, NodeId: ResourceIdString): DeleteNodeInput = {
     val __obj = js.Dynamic.literal(MemberId = MemberId.asInstanceOf[js.Any], NetworkId = NetworkId.asInstanceOf[js.Any], NodeId = NodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteNodeInput]
   }
   
-  @scala.inline
-  implicit class DeleteNodeInputMutableBuilder[Self <: DeleteNodeInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteNodeInput](x: Self) {
     
-    @scala.inline
-    def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
+    inline def setMemberId(value: ResourceIdString): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: ResourceIdString): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeId(value: ResourceIdString): Self = StObject.set(x, "NodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: ResourceIdString): Self = StObject.set(x, "NodeId", value.asInstanceOf[js.Any])
   }
 }

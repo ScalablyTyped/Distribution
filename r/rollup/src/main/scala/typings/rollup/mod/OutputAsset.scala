@@ -17,20 +17,16 @@ trait OutputAsset
 }
 object OutputAsset {
   
-  @scala.inline
-  def apply(fileName: String, source: String | Uint8Array): OutputAsset = {
+  inline def apply(fileName: String, source: String | Uint8Array): OutputAsset = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], isAsset = true, source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("asset")
     __obj.asInstanceOf[OutputAsset]
   }
   
-  @scala.inline
-  implicit class OutputAssetMutableBuilder[Self <: OutputAsset] (val x: Self) extends AnyVal {
+  extension [Self <: OutputAsset](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAsset(value: `true`): Self = StObject.set(x, "isAsset", value.asInstanceOf[js.Any])
+    inline def setIsAsset(value: `true`): Self = StObject.set(x, "isAsset", value.asInstanceOf[js.Any])
   }
 }

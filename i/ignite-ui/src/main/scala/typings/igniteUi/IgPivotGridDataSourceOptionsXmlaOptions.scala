@@ -61,67 +61,47 @@ trait IgPivotGridDataSourceOptionsXmlaOptions
 }
 object IgPivotGridDataSourceOptionsXmlaOptions {
   
-  @scala.inline
-  def apply(): IgPivotGridDataSourceOptionsXmlaOptions = {
+  inline def apply(): IgPivotGridDataSourceOptionsXmlaOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotGridDataSourceOptionsXmlaOptions]
   }
   
-  @scala.inline
-  implicit class IgPivotGridDataSourceOptionsXmlaOptionsMutableBuilder[Self <: IgPivotGridDataSourceOptionsXmlaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotGridDataSourceOptionsXmlaOptions](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
+    inline def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
     
-    @scala.inline
-    def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    inline def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
     
-    @scala.inline
-    def setDiscoverProperties(value: js.Any): Self = StObject.set(x, "discoverProperties", value.asInstanceOf[js.Any])
+    inline def setDiscoverProperties(value: js.Any): Self = StObject.set(x, "discoverProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoverPropertiesUndefined: Self = StObject.set(x, "discoverProperties", js.undefined)
+    inline def setDiscoverPropertiesUndefined: Self = StObject.set(x, "discoverProperties", js.undefined)
     
-    @scala.inline
-    def setEnableResultCache(value: Boolean): Self = StObject.set(x, "enableResultCache", value.asInstanceOf[js.Any])
+    inline def setEnableResultCache(value: Boolean): Self = StObject.set(x, "enableResultCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableResultCacheUndefined: Self = StObject.set(x, "enableResultCache", js.undefined)
+    inline def setEnableResultCacheUndefined: Self = StObject.set(x, "enableResultCache", js.undefined)
     
-    @scala.inline
-    def setExecuteProperties(value: js.Any): Self = StObject.set(x, "executeProperties", value.asInstanceOf[js.Any])
+    inline def setExecuteProperties(value: js.Any): Self = StObject.set(x, "executeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutePropertiesUndefined: Self = StObject.set(x, "executeProperties", js.undefined)
+    inline def setExecutePropertiesUndefined: Self = StObject.set(x, "executeProperties", js.undefined)
     
-    @scala.inline
-    def setMdxSettings(value: IgPivotGridDataSourceOptionsXmlaOptionsMdxSettings): Self = StObject.set(x, "mdxSettings", value.asInstanceOf[js.Any])
+    inline def setMdxSettings(value: IgPivotGridDataSourceOptionsXmlaOptionsMdxSettings): Self = StObject.set(x, "mdxSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdxSettingsUndefined: Self = StObject.set(x, "mdxSettings", js.undefined)
+    inline def setMdxSettingsUndefined: Self = StObject.set(x, "mdxSettings", js.undefined)
     
-    @scala.inline
-    def setMeasureGroup(value: String): Self = StObject.set(x, "measureGroup", value.asInstanceOf[js.Any])
+    inline def setMeasureGroup(value: String): Self = StObject.set(x, "measureGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureGroupUndefined: Self = StObject.set(x, "measureGroup", js.undefined)
+    inline def setMeasureGroupUndefined: Self = StObject.set(x, "measureGroup", js.undefined)
     
-    @scala.inline
-    def setRequestOptions(value: IgPivotGridDataSourceOptionsXmlaOptionsRequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRequestOptions(value: IgPivotGridDataSourceOptionsXmlaOptionsRequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     
-    @scala.inline
-    def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
+    inline def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUrlUndefined: Self = StObject.set(x, "serverUrl", js.undefined)
+    inline def setServerUrlUndefined: Self = StObject.set(x, "serverUrl", js.undefined)
   }
 }

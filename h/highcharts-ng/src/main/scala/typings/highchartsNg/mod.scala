@@ -22,17 +22,14 @@ object mod {
     }
     object HighChartsNGChart {
       
-      @scala.inline
-      def apply(getHighcharts: () => js.Any, options: Options): HighChartsNGChart = {
+      inline def apply(getHighcharts: () => js.Any, options: Options): HighChartsNGChart = {
         val __obj = js.Dynamic.literal(getHighcharts = js.Any.fromFunction0(getHighcharts), options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[HighChartsNGChart]
       }
       
-      @scala.inline
-      implicit class HighChartsNGChartMutableBuilder[Self <: HighChartsNGChart] (val x: Self) extends AnyVal {
+      extension [Self <: HighChartsNGChart](x: Self) {
         
-        @scala.inline
-        def setGetHighcharts(value: () => js.Any): Self = StObject.set(x, "getHighcharts", js.Any.fromFunction0(value))
+        inline def setGetHighcharts(value: () => js.Any): Self = StObject.set(x, "getHighcharts", js.Any.fromFunction0(value))
       }
     }
     
@@ -78,76 +75,56 @@ object mod {
     }
     object HighChartsNGConfig {
       
-      @scala.inline
-      def apply(options: Options): HighChartsNGConfig = {
+      inline def apply(options: Options): HighChartsNGConfig = {
         val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[HighChartsNGConfig]
       }
       
-      @scala.inline
-      implicit class HighChartsNGConfigMutableBuilder[Self <: HighChartsNGConfig] (val x: Self) extends AnyVal {
+      extension [Self <: HighChartsNGConfig](x: Self) {
         
-        @scala.inline
-        def setFunc(
+        inline def setFunc(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ js.Any => Unit
         ): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
+        inline def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
         
-        @scala.inline
-        def setLoading(value: Boolean | String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+        inline def setLoading(value: Boolean | String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+        inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
         
-        @scala.inline
-        def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
+        inline def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
+        inline def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
         
-        @scala.inline
-        def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeries(
+        inline def setSeries(
           value: js.Array[
                   /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ js.Any
                 ]
         ): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+        inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
         
-        @scala.inline
-        def setSeriesVarargs(
+        inline def setSeriesVarargs(
           value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IndividualSeriesOptions */ js.Any)*
         ): Self = StObject.set(x, "series", js.Array(value :_*))
         
-        @scala.inline
-        def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+        inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
         
-        @scala.inline
-        def setTitle(value: Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: Text): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setUseHighStocks(value: Boolean): Self = StObject.set(x, "useHighStocks", value.asInstanceOf[js.Any])
+        inline def setUseHighStocks(value: Boolean): Self = StObject.set(x, "useHighStocks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseHighStocksUndefined: Self = StObject.set(x, "useHighStocks", js.undefined)
+        inline def setUseHighStocksUndefined: Self = StObject.set(x, "useHighStocks", js.undefined)
         
-        @scala.inline
-        def setXAxis(value: CurrentMax): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+        inline def setXAxis(value: CurrentMax): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+        inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
       }
     }
   }

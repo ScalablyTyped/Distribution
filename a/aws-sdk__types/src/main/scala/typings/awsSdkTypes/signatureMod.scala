@@ -21,17 +21,14 @@ object signatureMod {
   }
   object EventSigner {
     
-    @scala.inline
-    def apply(sign: (FormattedEvent, EventSigningArguments) => js.Promise[String]): EventSigner = {
+    inline def apply(sign: (FormattedEvent, EventSigningArguments) => js.Promise[String]): EventSigner = {
       val __obj = js.Dynamic.literal(sign = js.Any.fromFunction2(sign))
       __obj.asInstanceOf[EventSigner]
     }
     
-    @scala.inline
-    implicit class EventSignerMutableBuilder[Self <: EventSigner] (val x: Self) extends AnyVal {
+    extension [Self <: EventSigner](x: Self) {
       
-      @scala.inline
-      def setSign(value: (FormattedEvent, EventSigningArguments) => js.Promise[String]): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
+      inline def setSign(value: (FormattedEvent, EventSigningArguments) => js.Promise[String]): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
     }
   }
   
@@ -43,17 +40,14 @@ object signatureMod {
   }
   object EventSigningArguments {
     
-    @scala.inline
-    def apply(priorSignature: String): EventSigningArguments = {
+    inline def apply(priorSignature: String): EventSigningArguments = {
       val __obj = js.Dynamic.literal(priorSignature = priorSignature.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventSigningArguments]
     }
     
-    @scala.inline
-    implicit class EventSigningArgumentsMutableBuilder[Self <: EventSigningArguments] (val x: Self) extends AnyVal {
+    extension [Self <: EventSigningArguments](x: Self) {
       
-      @scala.inline
-      def setPriorSignature(value: String): Self = StObject.set(x, "priorSignature", value.asInstanceOf[js.Any])
+      inline def setPriorSignature(value: String): Self = StObject.set(x, "priorSignature", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,20 +59,16 @@ object signatureMod {
   }
   object FormattedEvent {
     
-    @scala.inline
-    def apply(headers: Uint8Array, payload: Uint8Array): FormattedEvent = {
+    inline def apply(headers: Uint8Array, payload: Uint8Array): FormattedEvent = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormattedEvent]
     }
     
-    @scala.inline
-    implicit class FormattedEventMutableBuilder[Self <: FormattedEvent] (val x: Self) extends AnyVal {
+    extension [Self <: FormattedEvent](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Uint8Array): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Uint8Array): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Uint8Array): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,20 +99,16 @@ object signatureMod {
   }
   object RequestPresigningArguments {
     
-    @scala.inline
-    def apply(): RequestPresigningArguments = {
+    inline def apply(): RequestPresigningArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestPresigningArguments]
     }
     
-    @scala.inline
-    implicit class RequestPresigningArgumentsMutableBuilder[Self <: RequestPresigningArguments] (val x: Self) extends AnyVal {
+    extension [Self <: RequestPresigningArguments](x: Self) {
       
-      @scala.inline
-      def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+      inline def setExpiresIn(value: Double): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
+      inline def setExpiresInUndefined: Self = StObject.set(x, "expiresIn", js.undefined)
     }
   }
   
@@ -159,26 +145,20 @@ object signatureMod {
   }
   object RequestSigningArguments {
     
-    @scala.inline
-    def apply(): RequestSigningArguments = {
+    inline def apply(): RequestSigningArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestSigningArguments]
     }
     
-    @scala.inline
-    implicit class RequestSigningArgumentsMutableBuilder[Self <: RequestSigningArguments] (val x: Self) extends AnyVal {
+    extension [Self <: RequestSigningArguments](x: Self) {
       
-      @scala.inline
-      def setSignableHeaders(value: Set[String]): Self = StObject.set(x, "signableHeaders", value.asInstanceOf[js.Any])
+      inline def setSignableHeaders(value: Set[String]): Self = StObject.set(x, "signableHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignableHeadersUndefined: Self = StObject.set(x, "signableHeaders", js.undefined)
+      inline def setSignableHeadersUndefined: Self = StObject.set(x, "signableHeaders", js.undefined)
       
-      @scala.inline
-      def setUnsignableHeaders(value: Set[String]): Self = StObject.set(x, "unsignableHeaders", value.asInstanceOf[js.Any])
+      inline def setUnsignableHeaders(value: Set[String]): Self = StObject.set(x, "unsignableHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsignableHeadersUndefined: Self = StObject.set(x, "unsignableHeaders", js.undefined)
+      inline def setUnsignableHeadersUndefined: Self = StObject.set(x, "unsignableHeaders", js.undefined)
     }
   }
   
@@ -206,32 +186,24 @@ object signatureMod {
   }
   object SigningArguments {
     
-    @scala.inline
-    def apply(): SigningArguments = {
+    inline def apply(): SigningArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SigningArguments]
     }
     
-    @scala.inline
-    implicit class SigningArgumentsMutableBuilder[Self <: SigningArguments] (val x: Self) extends AnyVal {
+    extension [Self <: SigningArguments](x: Self) {
       
-      @scala.inline
-      def setSigningDate(value: DateInput): Self = StObject.set(x, "signingDate", value.asInstanceOf[js.Any])
+      inline def setSigningDate(value: DateInput): Self = StObject.set(x, "signingDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningDateUndefined: Self = StObject.set(x, "signingDate", js.undefined)
+      inline def setSigningDateUndefined: Self = StObject.set(x, "signingDate", js.undefined)
       
-      @scala.inline
-      def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
+      inline def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
+      inline def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
       
-      @scala.inline
-      def setSigningService(value: String): Self = StObject.set(x, "signingService", value.asInstanceOf[js.Any])
+      inline def setSigningService(value: String): Self = StObject.set(x, "signingService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningServiceUndefined: Self = StObject.set(x, "signingService", js.undefined)
+      inline def setSigningServiceUndefined: Self = StObject.set(x, "signingService", js.undefined)
     }
   }
   

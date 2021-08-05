@@ -45,56 +45,40 @@ object DataTables {
   }
   object RowReorderSettings {
     
-    @scala.inline
-    def apply(): RowReorderSettings = {
+    inline def apply(): RowReorderSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RowReorderSettings]
     }
     
-    @scala.inline
-    implicit class RowReorderSettingsMutableBuilder[Self <: RowReorderSettings] (val x: Self) extends AnyVal {
+    extension [Self <: RowReorderSettings](x: Self) {
       
-      @scala.inline
-      def setDataSrc(value: String): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
+      inline def setDataSrc(value: String): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSrcUndefined: Self = StObject.set(x, "dataSrc", js.undefined)
+      inline def setDataSrcUndefined: Self = StObject.set(x, "dataSrc", js.undefined)
       
-      @scala.inline
-      def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+      inline def setEditor(value: js.Any): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+      inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
       
-      @scala.inline
-      def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+      inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      @scala.inline
-      def setFormOptions(value: js.Any): Self = StObject.set(x, "formOptions", value.asInstanceOf[js.Any])
+      inline def setFormOptions(value: js.Any): Self = StObject.set(x, "formOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormOptionsUndefined: Self = StObject.set(x, "formOptions", js.undefined)
+      inline def setFormOptionsUndefined: Self = StObject.set(x, "formOptions", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setSnapX(value: Double | Boolean): Self = StObject.set(x, "snapX", value.asInstanceOf[js.Any])
+      inline def setSnapX(value: Double | Boolean): Self = StObject.set(x, "snapX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapXUndefined: Self = StObject.set(x, "snapX", js.undefined)
+      inline def setSnapXUndefined: Self = StObject.set(x, "snapX", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -107,20 +91,16 @@ object DataTables {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setRowReorder(value: RowReorderSettings): Self = StObject.set(x, "rowReorder", value.asInstanceOf[js.Any])
+      inline def setRowReorder(value: RowReorderSettings): Self = StObject.set(x, "rowReorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowReorderUndefined: Self = StObject.set(x, "rowReorder", js.undefined)
+      inline def setRowReorderUndefined: Self = StObject.set(x, "rowReorder", js.undefined)
     }
   }
 }

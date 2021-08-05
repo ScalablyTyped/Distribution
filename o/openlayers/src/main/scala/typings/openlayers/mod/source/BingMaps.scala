@@ -41,6 +41,5 @@ object BingMaps {
   @JSImport("openlayers", "source.BingMaps.TOS_ATTRIBUTION")
   @js.native
   def TOS_ATTRIBUTION: Attribution = js.native
-  @scala.inline
-  def TOS_ATTRIBUTION_=(x: Attribution): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOS_ATTRIBUTION")(x.asInstanceOf[js.Any])
+  inline def TOS_ATTRIBUTION_=(x: Attribution): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOS_ATTRIBUTION")(x.asInstanceOf[js.Any])
 }

@@ -18,25 +18,19 @@ trait LaunchTemplateIamInstanceProfileSpecification extends StObject {
 }
 object LaunchTemplateIamInstanceProfileSpecification {
   
-  @scala.inline
-  def apply(): LaunchTemplateIamInstanceProfileSpecification = {
+  inline def apply(): LaunchTemplateIamInstanceProfileSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateIamInstanceProfileSpecification]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateIamInstanceProfileSpecificationMutableBuilder[Self <: LaunchTemplateIamInstanceProfileSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateIamInstanceProfileSpecification](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

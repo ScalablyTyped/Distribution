@@ -23,26 +23,20 @@ object reactMod {
   }
   object LinkifyProps {
     
-    @scala.inline
-    def apply(): LinkifyProps = {
+    inline def apply(): LinkifyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkifyProps]
     }
     
-    @scala.inline
-    implicit class LinkifyPropsMutableBuilder[Self <: LinkifyProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkifyProps](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+      inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     }
   }
 }

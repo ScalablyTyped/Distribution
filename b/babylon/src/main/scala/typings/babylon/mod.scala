@@ -14,15 +14,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(code: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any]).asInstanceOf[File_]
-  @scala.inline
-  def parse(code: String, opts: BabylonOptions): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[File_]
+  inline def parse(code: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any]).asInstanceOf[File_]
+  inline def parse(code: String, opts: BabylonOptions): File_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[File_]
   
-  @scala.inline
-  def parseExpression(input: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any]).asInstanceOf[Expression]
-  @scala.inline
-  def parseExpression(input: String, options: BabylonOptions): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  inline def parseExpression(input: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  inline def parseExpression(input: String, options: BabylonOptions): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpression")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
   trait BabylonOptions extends StObject {
     
@@ -57,53 +53,38 @@ object mod {
   }
   object BabylonOptions {
     
-    @scala.inline
-    def apply(): BabylonOptions = {
+    inline def apply(): BabylonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BabylonOptions]
     }
     
-    @scala.inline
-    implicit class BabylonOptionsMutableBuilder[Self <: BabylonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BabylonOptions](x: Self) {
       
-      @scala.inline
-      def setAllowImportExportEverywhere(value: Boolean): Self = StObject.set(x, "allowImportExportEverywhere", value.asInstanceOf[js.Any])
+      inline def setAllowImportExportEverywhere(value: Boolean): Self = StObject.set(x, "allowImportExportEverywhere", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowImportExportEverywhereUndefined: Self = StObject.set(x, "allowImportExportEverywhere", js.undefined)
+      inline def setAllowImportExportEverywhereUndefined: Self = StObject.set(x, "allowImportExportEverywhere", js.undefined)
       
-      @scala.inline
-      def setAllowReturnOutsideFunction(value: Boolean): Self = StObject.set(x, "allowReturnOutsideFunction", value.asInstanceOf[js.Any])
+      inline def setAllowReturnOutsideFunction(value: Boolean): Self = StObject.set(x, "allowReturnOutsideFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowReturnOutsideFunctionUndefined: Self = StObject.set(x, "allowReturnOutsideFunction", js.undefined)
+      inline def setAllowReturnOutsideFunctionUndefined: Self = StObject.set(x, "allowReturnOutsideFunction", js.undefined)
       
-      @scala.inline
-      def setAllowSuperOutsideMethod(value: Boolean): Self = StObject.set(x, "allowSuperOutsideMethod", value.asInstanceOf[js.Any])
+      inline def setAllowSuperOutsideMethod(value: Boolean): Self = StObject.set(x, "allowSuperOutsideMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSuperOutsideMethodUndefined: Self = StObject.set(x, "allowSuperOutsideMethod", js.undefined)
+      inline def setAllowSuperOutsideMethodUndefined: Self = StObject.set(x, "allowSuperOutsideMethod", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[PluginName]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[PluginName]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: PluginName*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: PluginName*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setSourceFilename(value: String): Self = StObject.set(x, "sourceFilename", value.asInstanceOf[js.Any])
+      inline def setSourceFilename(value: String): Self = StObject.set(x, "sourceFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFilenameUndefined: Self = StObject.set(x, "sourceFilename", js.undefined)
+      inline def setSourceFilenameUndefined: Self = StObject.set(x, "sourceFilename", js.undefined)
       
-      @scala.inline
-      def setSourceType(value: script | module): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: script | module): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     }
   }
   
@@ -126,46 +107,32 @@ object mod {
   trait PluginName extends StObject
   object PluginName {
     
-    @scala.inline
-    def asyncGenerators: typings.babylon.babylonStrings.asyncGenerators = "asyncGenerators".asInstanceOf[typings.babylon.babylonStrings.asyncGenerators]
+    inline def asyncGenerators: typings.babylon.babylonStrings.asyncGenerators = "asyncGenerators".asInstanceOf[typings.babylon.babylonStrings.asyncGenerators]
     
-    @scala.inline
-    def classConstructorCall: typings.babylon.babylonStrings.classConstructorCall = "classConstructorCall".asInstanceOf[typings.babylon.babylonStrings.classConstructorCall]
+    inline def classConstructorCall: typings.babylon.babylonStrings.classConstructorCall = "classConstructorCall".asInstanceOf[typings.babylon.babylonStrings.classConstructorCall]
     
-    @scala.inline
-    def classProperties: typings.babylon.babylonStrings.classProperties = "classProperties".asInstanceOf[typings.babylon.babylonStrings.classProperties]
+    inline def classProperties: typings.babylon.babylonStrings.classProperties = "classProperties".asInstanceOf[typings.babylon.babylonStrings.classProperties]
     
-    @scala.inline
-    def decorators: typings.babylon.babylonStrings.decorators = "decorators".asInstanceOf[typings.babylon.babylonStrings.decorators]
+    inline def decorators: typings.babylon.babylonStrings.decorators = "decorators".asInstanceOf[typings.babylon.babylonStrings.decorators]
     
-    @scala.inline
-    def doExpressions: typings.babylon.babylonStrings.doExpressions = "doExpressions".asInstanceOf[typings.babylon.babylonStrings.doExpressions]
+    inline def doExpressions: typings.babylon.babylonStrings.doExpressions = "doExpressions".asInstanceOf[typings.babylon.babylonStrings.doExpressions]
     
-    @scala.inline
-    def dynamicImport: typings.babylon.babylonStrings.dynamicImport = "dynamicImport".asInstanceOf[typings.babylon.babylonStrings.dynamicImport]
+    inline def dynamicImport: typings.babylon.babylonStrings.dynamicImport = "dynamicImport".asInstanceOf[typings.babylon.babylonStrings.dynamicImport]
     
-    @scala.inline
-    def estree: typings.babylon.babylonStrings.estree = "estree".asInstanceOf[typings.babylon.babylonStrings.estree]
+    inline def estree: typings.babylon.babylonStrings.estree = "estree".asInstanceOf[typings.babylon.babylonStrings.estree]
     
-    @scala.inline
-    def exportExtensions: typings.babylon.babylonStrings.exportExtensions = "exportExtensions".asInstanceOf[typings.babylon.babylonStrings.exportExtensions]
+    inline def exportExtensions: typings.babylon.babylonStrings.exportExtensions = "exportExtensions".asInstanceOf[typings.babylon.babylonStrings.exportExtensions]
     
-    @scala.inline
-    def flow: typings.babylon.babylonStrings.flow = "flow".asInstanceOf[typings.babylon.babylonStrings.flow]
+    inline def flow: typings.babylon.babylonStrings.flow = "flow".asInstanceOf[typings.babylon.babylonStrings.flow]
     
-    @scala.inline
-    def functionBind: typings.babylon.babylonStrings.functionBind = "functionBind".asInstanceOf[typings.babylon.babylonStrings.functionBind]
+    inline def functionBind: typings.babylon.babylonStrings.functionBind = "functionBind".asInstanceOf[typings.babylon.babylonStrings.functionBind]
     
-    @scala.inline
-    def functionSent: typings.babylon.babylonStrings.functionSent = "functionSent".asInstanceOf[typings.babylon.babylonStrings.functionSent]
+    inline def functionSent: typings.babylon.babylonStrings.functionSent = "functionSent".asInstanceOf[typings.babylon.babylonStrings.functionSent]
     
-    @scala.inline
-    def jsx: typings.babylon.babylonStrings.jsx = "jsx".asInstanceOf[typings.babylon.babylonStrings.jsx]
+    inline def jsx: typings.babylon.babylonStrings.jsx = "jsx".asInstanceOf[typings.babylon.babylonStrings.jsx]
     
-    @scala.inline
-    def objectRestSpread: typings.babylon.babylonStrings.objectRestSpread = "objectRestSpread".asInstanceOf[typings.babylon.babylonStrings.objectRestSpread]
+    inline def objectRestSpread: typings.babylon.babylonStrings.objectRestSpread = "objectRestSpread".asInstanceOf[typings.babylon.babylonStrings.objectRestSpread]
     
-    @scala.inline
-    def typescript: typings.babylon.babylonStrings.typescript = "typescript".asInstanceOf[typings.babylon.babylonStrings.typescript]
+    inline def typescript: typings.babylon.babylonStrings.typescript = "typescript".asInstanceOf[typings.babylon.babylonStrings.typescript]
   }
 }

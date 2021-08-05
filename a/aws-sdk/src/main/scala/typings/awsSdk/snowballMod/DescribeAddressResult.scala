@@ -13,19 +13,15 @@ trait DescribeAddressResult extends StObject {
 }
 object DescribeAddressResult {
   
-  @scala.inline
-  def apply(): DescribeAddressResult = {
+  inline def apply(): DescribeAddressResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAddressResult]
   }
   
-  @scala.inline
-  implicit class DescribeAddressResultMutableBuilder[Self <: DescribeAddressResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAddressResult](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Address): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Address): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
   }
 }

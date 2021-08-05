@@ -16,8 +16,7 @@ trait IdentityReference
 }
 object IdentityReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     directoryAlias: String,
     displayName: String,
     id: String,
@@ -34,10 +33,8 @@ object IdentityReference {
     __obj.asInstanceOf[IdentityReference]
   }
   
-  @scala.inline
-  implicit class IdentityReferenceMutableBuilder[Self <: IdentityReference] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

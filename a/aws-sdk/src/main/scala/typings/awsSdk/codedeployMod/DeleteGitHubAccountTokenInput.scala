@@ -13,19 +13,15 @@ trait DeleteGitHubAccountTokenInput extends StObject {
 }
 object DeleteGitHubAccountTokenInput {
   
-  @scala.inline
-  def apply(): DeleteGitHubAccountTokenInput = {
+  inline def apply(): DeleteGitHubAccountTokenInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteGitHubAccountTokenInput]
   }
   
-  @scala.inline
-  implicit class DeleteGitHubAccountTokenInputMutableBuilder[Self <: DeleteGitHubAccountTokenInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGitHubAccountTokenInput](x: Self) {
     
-    @scala.inline
-    def setTokenName(value: GitHubAccountTokenName): Self = StObject.set(x, "tokenName", value.asInstanceOf[js.Any])
+    inline def setTokenName(value: GitHubAccountTokenName): Self = StObject.set(x, "tokenName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenNameUndefined: Self = StObject.set(x, "tokenName", js.undefined)
+    inline def setTokenNameUndefined: Self = StObject.set(x, "tokenName", js.undefined)
   }
 }

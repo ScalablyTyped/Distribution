@@ -14,17 +14,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param index the name of the index to query
   * @param opts
   */
-@scala.inline
-def apply(client: typings.algoliasearchHelper.mod.SearchClient, index: java.lang.String): typings.algoliasearchHelper.mod.AlgoliaSearchHelper = (typings.algoliasearchHelper.mod.^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.algoliasearchHelper.mod.AlgoliaSearchHelper]
-@scala.inline
-def apply(
+inline def apply(client: typings.algoliasearchHelper.mod.SearchClient, index: java.lang.String): typings.algoliasearchHelper.mod.AlgoliaSearchHelper = (typings.algoliasearchHelper.mod.^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[typings.algoliasearchHelper.mod.AlgoliaSearchHelper]
+inline def apply(
   client: typings.algoliasearchHelper.mod.SearchClient,
   index: java.lang.String,
   opts: typings.algoliasearchHelper.mod.PlainSearchParameters
 ): typings.algoliasearchHelper.mod.AlgoliaSearchHelper = (typings.algoliasearchHelper.mod.^.asInstanceOf[js.Dynamic].apply(client.asInstanceOf[js.Any], index.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.algoliasearchHelper.mod.AlgoliaSearchHelper]
 
-@scala.inline
-def version: java.lang.String = typings.algoliasearchHelper.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: java.lang.String = typings.algoliasearchHelper.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
 
 type Client = typings.algoliasearch.algoliasearchMod.SearchClient
 

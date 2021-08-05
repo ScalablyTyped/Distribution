@@ -12,10 +12,8 @@ object ellipsedTooltipWithEllipsedTooltipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def withEllipsedTooltip(): js.Function1[/* Comp */ js.Any, FunctionComponent[WrapperComponentProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withEllipsedTooltip")().asInstanceOf[js.Function1[/* Comp */ js.Any, FunctionComponent[WrapperComponentProps]]]
-  @scala.inline
-  def withEllipsedTooltip(hasShowTooltipShouldLoadAsyncTooltipProps: ShouldLoadAsync): js.Function1[/* Comp */ js.Any, FunctionComponent[WrapperComponentProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withEllipsedTooltip")(hasShowTooltipShouldLoadAsyncTooltipProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Comp */ js.Any, FunctionComponent[WrapperComponentProps]]]
+  inline def withEllipsedTooltip(): js.Function1[/* Comp */ js.Any, FunctionComponent[WrapperComponentProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withEllipsedTooltip")().asInstanceOf[js.Function1[/* Comp */ js.Any, FunctionComponent[WrapperComponentProps]]]
+  inline def withEllipsedTooltip(hasShowTooltipShouldLoadAsyncTooltipProps: ShouldLoadAsync): js.Function1[/* Comp */ js.Any, FunctionComponent[WrapperComponentProps]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withEllipsedTooltip")(hasShowTooltipShouldLoadAsyncTooltipProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Comp */ js.Any, FunctionComponent[WrapperComponentProps]]]
   
   trait WrapperComponentProps extends StObject {
     
@@ -23,20 +21,16 @@ object ellipsedTooltipWithEllipsedTooltipMod {
   }
   object WrapperComponentProps {
     
-    @scala.inline
-    def apply(): WrapperComponentProps = {
+    inline def apply(): WrapperComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrapperComponentProps]
     }
     
-    @scala.inline
-    implicit class WrapperComponentPropsMutableBuilder[Self <: WrapperComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperComponentProps](x: Self) {
       
-      @scala.inline
-      def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+      inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
+      inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
     }
   }
 }

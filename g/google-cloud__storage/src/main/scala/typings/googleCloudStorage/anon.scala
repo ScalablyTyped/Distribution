@@ -14,20 +14,16 @@ object anon {
   }
   object Callback {
     
-    @scala.inline
-    def apply[T, U](callback: U, options: T): Callback[T, U] = {
+    inline def apply[T, U](callback: U, options: T): Callback[T, U] = {
       val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback[T, U]]
     }
     
-    @scala.inline
-    implicit class CallbackMutableBuilder[Self <: Callback[?, ?], T, U] (val x: Self & (Callback[T, U])) extends AnyVal {
+    extension [Self <: Callback[?, ?], T, U](x: Self & (Callback[T, U])) {
       
-      @scala.inline
-      def setCallback(value: U): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+      inline def setCallback(value: U): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,26 +35,20 @@ object anon {
   }
   object Max {
     
-    @scala.inline
-    def apply(): Max = {
+    inline def apply(): Max = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Max]
     }
     
-    @scala.inline
-    implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+    extension [Self <: Max](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     }
   }
   
@@ -72,23 +62,18 @@ object anon {
   }
   object OWNERROLE {
     
-    @scala.inline
-    def apply(OWNER_ROLE: String, READER_ROLE: String, WRITER_ROLE: String): OWNERROLE = {
+    inline def apply(OWNER_ROLE: String, READER_ROLE: String, WRITER_ROLE: String): OWNERROLE = {
       val __obj = js.Dynamic.literal(OWNER_ROLE = OWNER_ROLE.asInstanceOf[js.Any], READER_ROLE = READER_ROLE.asInstanceOf[js.Any], WRITER_ROLE = WRITER_ROLE.asInstanceOf[js.Any])
       __obj.asInstanceOf[OWNERROLE]
     }
     
-    @scala.inline
-    implicit class OWNERROLEMutableBuilder[Self <: OWNERROLE] (val x: Self) extends AnyVal {
+    extension [Self <: OWNERROLE](x: Self) {
       
-      @scala.inline
-      def setOWNER_ROLE(value: String): Self = StObject.set(x, "OWNER_ROLE", value.asInstanceOf[js.Any])
+      inline def setOWNER_ROLE(value: String): Self = StObject.set(x, "OWNER_ROLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREADER_ROLE(value: String): Self = StObject.set(x, "READER_ROLE", value.asInstanceOf[js.Any])
+      inline def setREADER_ROLE(value: String): Self = StObject.set(x, "READER_ROLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWRITER_ROLE(value: String): Self = StObject.set(x, "WRITER_ROLE", value.asInstanceOf[js.Any])
+      inline def setWRITER_ROLE(value: String): Self = StObject.set(x, "WRITER_ROLE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,24 +85,19 @@ object anon {
   }
   object StorageClass {
     
-    @scala.inline
-    def apply(`type`: String): StorageClass = {
+    inline def apply(`type`: String): StorageClass = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageClass]
     }
     
-    @scala.inline
-    implicit class StorageClassMutableBuilder[Self <: StorageClass] (val x: Self) extends AnyVal {
+    extension [Self <: StorageClass](x: Self) {
       
-      @scala.inline
-      def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
+      inline def setStorageClassUndefined: Self = StObject.set(x, "storageClass", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

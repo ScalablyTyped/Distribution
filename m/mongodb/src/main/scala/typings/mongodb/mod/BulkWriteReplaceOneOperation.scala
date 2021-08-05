@@ -13,16 +13,13 @@ trait BulkWriteReplaceOneOperation[TSchema]
 }
 object BulkWriteReplaceOneOperation {
   
-  @scala.inline
-  def apply[TSchema](replaceOne: Collation[TSchema]): BulkWriteReplaceOneOperation[TSchema] = {
+  inline def apply[TSchema](replaceOne: Collation[TSchema]): BulkWriteReplaceOneOperation[TSchema] = {
     val __obj = js.Dynamic.literal(replaceOne = replaceOne.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkWriteReplaceOneOperation[TSchema]]
   }
   
-  @scala.inline
-  implicit class BulkWriteReplaceOneOperationMutableBuilder[Self <: BulkWriteReplaceOneOperation[?], TSchema] (val x: Self & BulkWriteReplaceOneOperation[TSchema]) extends AnyVal {
+  extension [Self <: BulkWriteReplaceOneOperation[?], TSchema](x: Self & BulkWriteReplaceOneOperation[TSchema]) {
     
-    @scala.inline
-    def setReplaceOne(value: Collation[TSchema]): Self = StObject.set(x, "replaceOne", value.asInstanceOf[js.Any])
+    inline def setReplaceOne(value: Collation[TSchema]): Self = StObject.set(x, "replaceOne", value.asInstanceOf[js.Any])
   }
 }

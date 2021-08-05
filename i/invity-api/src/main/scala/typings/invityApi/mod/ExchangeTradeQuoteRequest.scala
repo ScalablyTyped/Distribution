@@ -16,22 +16,17 @@ trait ExchangeTradeQuoteRequest extends StObject {
 }
 object ExchangeTradeQuoteRequest {
   
-  @scala.inline
-  def apply(receive: String, send: String, sendStringAmount: String): ExchangeTradeQuoteRequest = {
+  inline def apply(receive: String, send: String, sendStringAmount: String): ExchangeTradeQuoteRequest = {
     val __obj = js.Dynamic.literal(receive = receive.asInstanceOf[js.Any], send = send.asInstanceOf[js.Any], sendStringAmount = sendStringAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeTradeQuoteRequest]
   }
   
-  @scala.inline
-  implicit class ExchangeTradeQuoteRequestMutableBuilder[Self <: ExchangeTradeQuoteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExchangeTradeQuoteRequest](x: Self) {
     
-    @scala.inline
-    def setReceive(value: String): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
+    inline def setReceive(value: String): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+    inline def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendStringAmount(value: String): Self = StObject.set(x, "sendStringAmount", value.asInstanceOf[js.Any])
+    inline def setSendStringAmount(value: String): Self = StObject.set(x, "sendStringAmount", value.asInstanceOf[js.Any])
   }
 }

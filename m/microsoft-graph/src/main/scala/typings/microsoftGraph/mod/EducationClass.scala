@@ -49,133 +49,91 @@ trait EducationClass
 }
 object EducationClass {
   
-  @scala.inline
-  def apply(): EducationClass = {
+  inline def apply(): EducationClass = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EducationClass]
   }
   
-  @scala.inline
-  implicit class EducationClassMutableBuilder[Self <: EducationClass] (val x: Self) extends AnyVal {
+  extension [Self <: EducationClass](x: Self) {
     
-    @scala.inline
-    def setClassCode(value: NullableOption[String]): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
+    inline def setClassCode(value: NullableOption[String]): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassCodeNull: Self = StObject.set(x, "classCode", null)
+    inline def setClassCodeNull: Self = StObject.set(x, "classCode", null)
     
-    @scala.inline
-    def setClassCodeUndefined: Self = StObject.set(x, "classCode", js.undefined)
+    inline def setClassCodeUndefined: Self = StObject.set(x, "classCode", js.undefined)
     
-    @scala.inline
-    def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
+    inline def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdNull: Self = StObject.set(x, "externalId", null)
+    inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
-    @scala.inline
-    def setExternalName(value: NullableOption[String]): Self = StObject.set(x, "externalName", value.asInstanceOf[js.Any])
+    inline def setExternalName(value: NullableOption[String]): Self = StObject.set(x, "externalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalNameNull: Self = StObject.set(x, "externalName", null)
+    inline def setExternalNameNull: Self = StObject.set(x, "externalName", null)
     
-    @scala.inline
-    def setExternalNameUndefined: Self = StObject.set(x, "externalName", js.undefined)
+    inline def setExternalNameUndefined: Self = StObject.set(x, "externalName", js.undefined)
     
-    @scala.inline
-    def setExternalSource(value: NullableOption[EducationExternalSource]): Self = StObject.set(x, "externalSource", value.asInstanceOf[js.Any])
+    inline def setExternalSource(value: NullableOption[EducationExternalSource]): Self = StObject.set(x, "externalSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalSourceNull: Self = StObject.set(x, "externalSource", null)
+    inline def setExternalSourceNull: Self = StObject.set(x, "externalSource", null)
     
-    @scala.inline
-    def setExternalSourceUndefined: Self = StObject.set(x, "externalSource", js.undefined)
+    inline def setExternalSourceUndefined: Self = StObject.set(x, "externalSource", js.undefined)
     
-    @scala.inline
-    def setGroup(value: NullableOption[Group]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: NullableOption[Group]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNull: Self = StObject.set(x, "group", null)
+    inline def setGroupNull: Self = StObject.set(x, "group", null)
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setMailNickname(value: String): Self = StObject.set(x, "mailNickname", value.asInstanceOf[js.Any])
+    inline def setMailNickname(value: String): Self = StObject.set(x, "mailNickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailNicknameUndefined: Self = StObject.set(x, "mailNickname", js.undefined)
+    inline def setMailNicknameUndefined: Self = StObject.set(x, "mailNickname", js.undefined)
     
-    @scala.inline
-    def setMembers(value: NullableOption[js.Array[EducationUser]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: NullableOption[js.Array[EducationUser]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersNull: Self = StObject.set(x, "members", null)
+    inline def setMembersNull: Self = StObject.set(x, "members", null)
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: EducationUser*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: EducationUser*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setSchools(value: NullableOption[js.Array[EducationSchool]]): Self = StObject.set(x, "schools", value.asInstanceOf[js.Any])
+    inline def setSchools(value: NullableOption[js.Array[EducationSchool]]): Self = StObject.set(x, "schools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchoolsNull: Self = StObject.set(x, "schools", null)
+    inline def setSchoolsNull: Self = StObject.set(x, "schools", null)
     
-    @scala.inline
-    def setSchoolsUndefined: Self = StObject.set(x, "schools", js.undefined)
+    inline def setSchoolsUndefined: Self = StObject.set(x, "schools", js.undefined)
     
-    @scala.inline
-    def setSchoolsVarargs(value: EducationSchool*): Self = StObject.set(x, "schools", js.Array(value :_*))
+    inline def setSchoolsVarargs(value: EducationSchool*): Self = StObject.set(x, "schools", js.Array(value :_*))
     
-    @scala.inline
-    def setTeachers(value: NullableOption[js.Array[EducationUser]]): Self = StObject.set(x, "teachers", value.asInstanceOf[js.Any])
+    inline def setTeachers(value: NullableOption[js.Array[EducationUser]]): Self = StObject.set(x, "teachers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeachersNull: Self = StObject.set(x, "teachers", null)
+    inline def setTeachersNull: Self = StObject.set(x, "teachers", null)
     
-    @scala.inline
-    def setTeachersUndefined: Self = StObject.set(x, "teachers", js.undefined)
+    inline def setTeachersUndefined: Self = StObject.set(x, "teachers", js.undefined)
     
-    @scala.inline
-    def setTeachersVarargs(value: EducationUser*): Self = StObject.set(x, "teachers", js.Array(value :_*))
+    inline def setTeachersVarargs(value: EducationUser*): Self = StObject.set(x, "teachers", js.Array(value :_*))
     
-    @scala.inline
-    def setTerm(value: NullableOption[EducationTerm]): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: NullableOption[EducationTerm]): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermNull: Self = StObject.set(x, "term", null)
+    inline def setTermNull: Self = StObject.set(x, "term", null)
     
-    @scala.inline
-    def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+    inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
   }
 }

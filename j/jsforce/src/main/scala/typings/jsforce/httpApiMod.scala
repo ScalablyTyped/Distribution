@@ -16,32 +16,24 @@ object httpApiMod {
   }
   object HttpApiOptions {
     
-    @scala.inline
-    def apply(): HttpApiOptions = {
+    inline def apply(): HttpApiOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpApiOptions]
     }
     
-    @scala.inline
-    implicit class HttpApiOptionsMutableBuilder[Self <: HttpApiOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpApiOptions](x: Self) {
       
-      @scala.inline
-      def setNoContentResponse(value: js.Object): Self = StObject.set(x, "noContentResponse", value.asInstanceOf[js.Any])
+      inline def setNoContentResponse(value: js.Object): Self = StObject.set(x, "noContentResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoContentResponseUndefined: Self = StObject.set(x, "noContentResponse", js.undefined)
+      inline def setNoContentResponseUndefined: Self = StObject.set(x, "noContentResponse", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      @scala.inline
-      def setTransport(value: js.Object): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: js.Object): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
 }

@@ -15,17 +15,14 @@ trait AssemblyLiteral
 }
 object AssemblyLiteral {
   
-  @scala.inline
-  def apply(): AssemblyLiteral = {
+  inline def apply(): AssemblyLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("AssemblyLiteral")
     __obj.asInstanceOf[AssemblyLiteral]
   }
   
-  @scala.inline
-  implicit class AssemblyLiteralMutableBuilder[Self <: AssemblyLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyLiteral](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

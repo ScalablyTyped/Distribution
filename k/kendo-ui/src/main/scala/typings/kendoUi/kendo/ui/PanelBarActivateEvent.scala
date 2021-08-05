@@ -13,19 +13,15 @@ trait PanelBarActivateEvent
 }
 object PanelBarActivateEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PanelBar): PanelBarActivateEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: PanelBar): PanelBarActivateEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelBarActivateEvent]
   }
   
-  @scala.inline
-  implicit class PanelBarActivateEventMutableBuilder[Self <: PanelBarActivateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PanelBarActivateEvent](x: Self) {
     
-    @scala.inline
-    def setItem(value: Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

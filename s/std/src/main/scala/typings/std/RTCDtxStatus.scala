@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCDtxStatus extends StObject
 object RTCDtxStatus {
   
-  @scala.inline
-  def disabled: typings.std.stdStrings.disabled = "disabled".asInstanceOf[typings.std.stdStrings.disabled]
+  inline def disabled: typings.std.stdStrings.disabled = "disabled".asInstanceOf[typings.std.stdStrings.disabled]
   
-  @scala.inline
-  def enabled: typings.std.stdStrings.enabled = "enabled".asInstanceOf[typings.std.stdStrings.enabled]
+  inline def enabled: typings.std.stdStrings.enabled = "enabled".asInstanceOf[typings.std.stdStrings.enabled]
 }

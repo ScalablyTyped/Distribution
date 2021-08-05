@@ -45,8 +45,7 @@ object coroutineMod {
     extends StObject
        with ClassWorker
   
-  @scala.inline
-  def current(): ClassFiber = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[ClassFiber]
+  inline def current(): ClassFiber = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[ClassFiber]
   
   @JSImport("coroutine", "fibers")
   @js.native
@@ -56,32 +55,22 @@ object coroutineMod {
   @js.native
   val loglevel: Double = js.native
   
-  @scala.inline
-  def parallel(datas: js.Array[js.Any], func: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(datas.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def parallel(datas: js.Array[js.Any], func: js.Function, fibers: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(datas.asInstanceOf[js.Any], func.asInstanceOf[js.Any], fibers.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def parallel(func: js.Function, num: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(func.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def parallel(func: js.Function, num: Double, fibers: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(func.asInstanceOf[js.Any], num.asInstanceOf[js.Any], fibers.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def parallel(funcs: js.Any*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def parallel(funcs: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
-  @scala.inline
-  def parallel(funcs: js.Array[js.Any], fibers: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(funcs.asInstanceOf[js.Any], fibers.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def parallel(datas: js.Array[js.Any], func: js.Function): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(datas.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def parallel(datas: js.Array[js.Any], func: js.Function, fibers: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(datas.asInstanceOf[js.Any], func.asInstanceOf[js.Any], fibers.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def parallel(func: js.Function, num: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(func.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def parallel(func: js.Function, num: Double, fibers: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(func.asInstanceOf[js.Any], num.asInstanceOf[js.Any], fibers.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def parallel(funcs: js.Any*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def parallel(funcs: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(funcs.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def parallel(funcs: js.Array[js.Any], fibers: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(funcs.asInstanceOf[js.Any], fibers.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def sleep(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")().asInstanceOf[Unit]
-  @scala.inline
-  def sleep(ms: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def sleep(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")().asInstanceOf[Unit]
+  inline def sleep(ms: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(ms.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("coroutine", "spareFibers")
   @js.native
   val spareFibers: Double = js.native
   
-  @scala.inline
-  def start(func: js.Function, args: js.Any*): ClassFiber = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassFiber]
+  inline def start(func: js.Function, args: js.Any*): ClassFiber = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ClassFiber]
   
   @JSImport("coroutine", "vmid")
   @js.native

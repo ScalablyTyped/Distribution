@@ -50,8 +50,7 @@ object mod {
   }
   object Message {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inspect: () => String,
       pop: () => js.UndefOr[Buffer],
       push: /* repeated */ Buffer => Double,
@@ -63,26 +62,19 @@ object mod {
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPop(value: () => js.UndefOr[Buffer]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPop(value: () => js.UndefOr[Buffer]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: /* repeated */ Buffer => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: /* repeated */ Buffer => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShift(value: () => js.UndefOr[Buffer]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
+      inline def setShift(value: () => js.UndefOr[Buffer]): Self = StObject.set(x, "shift", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
+      inline def setToBuffer(value: () => Buffer): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnshift(value: /* repeated */ Buffer => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+      inline def setUnshift(value: /* repeated */ Buffer => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     }
   }
 }

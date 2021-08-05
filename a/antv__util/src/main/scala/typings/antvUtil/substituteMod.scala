@@ -11,8 +11,7 @@ object substituteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](str: String, o: ObjectType[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default[T](str: String, o: ObjectType[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type ObjectType[T] = StringDictionary[T]
 }

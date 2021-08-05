@@ -18,8 +18,7 @@ trait ISCEDelegateService extends StObject {
 }
 object ISCEDelegateService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getTrusted: (String, js.Any) => js.Any,
     trustAs: (String, js.Any) => js.Any,
     valueOf: js.Any => js.Any
@@ -28,16 +27,12 @@ object ISCEDelegateService {
     __obj.asInstanceOf[ISCEDelegateService]
   }
   
-  @scala.inline
-  implicit class ISCEDelegateServiceMutableBuilder[Self <: ISCEDelegateService] (val x: Self) extends AnyVal {
+  extension [Self <: ISCEDelegateService](x: Self) {
     
-    @scala.inline
-    def setGetTrusted(value: (String, js.Any) => js.Any): Self = StObject.set(x, "getTrusted", js.Any.fromFunction2(value))
+    inline def setGetTrusted(value: (String, js.Any) => js.Any): Self = StObject.set(x, "getTrusted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTrustAs(value: (String, js.Any) => js.Any): Self = StObject.set(x, "trustAs", js.Any.fromFunction2(value))
+    inline def setTrustAs(value: (String, js.Any) => js.Any): Self = StObject.set(x, "trustAs", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValueOf(value: js.Any => js.Any): Self = StObject.set(x, "valueOf", js.Any.fromFunction1(value))
+    inline def setValueOf(value: js.Any => js.Any): Self = StObject.set(x, "valueOf", js.Any.fromFunction1(value))
   }
 }

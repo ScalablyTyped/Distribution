@@ -23,31 +23,23 @@ trait S3OutputLocation extends StObject {
 }
 object S3OutputLocation {
   
-  @scala.inline
-  def apply(): S3OutputLocation = {
+  inline def apply(): S3OutputLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3OutputLocation]
   }
   
-  @scala.inline
-  implicit class S3OutputLocationMutableBuilder[Self <: S3OutputLocation] (val x: Self) extends AnyVal {
+  extension [Self <: S3OutputLocation](x: Self) {
     
-    @scala.inline
-    def setOutputS3BucketName(value: S3BucketName): Self = StObject.set(x, "OutputS3BucketName", value.asInstanceOf[js.Any])
+    inline def setOutputS3BucketName(value: S3BucketName): Self = StObject.set(x, "OutputS3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3BucketNameUndefined: Self = StObject.set(x, "OutputS3BucketName", js.undefined)
+    inline def setOutputS3BucketNameUndefined: Self = StObject.set(x, "OutputS3BucketName", js.undefined)
     
-    @scala.inline
-    def setOutputS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "OutputS3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "OutputS3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3KeyPrefixUndefined: Self = StObject.set(x, "OutputS3KeyPrefix", js.undefined)
+    inline def setOutputS3KeyPrefixUndefined: Self = StObject.set(x, "OutputS3KeyPrefix", js.undefined)
     
-    @scala.inline
-    def setOutputS3Region(value: S3Region): Self = StObject.set(x, "OutputS3Region", value.asInstanceOf[js.Any])
+    inline def setOutputS3Region(value: S3Region): Self = StObject.set(x, "OutputS3Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3RegionUndefined: Self = StObject.set(x, "OutputS3Region", js.undefined)
+    inline def setOutputS3RegionUndefined: Self = StObject.set(x, "OutputS3Region", js.undefined)
   }
 }

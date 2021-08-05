@@ -33,37 +33,27 @@ trait GetDocumentVersionRequest extends StObject {
 }
 object GetDocumentVersionRequest {
   
-  @scala.inline
-  def apply(DocumentId: ResourceIdType, VersionId: DocumentVersionIdType): GetDocumentVersionRequest = {
+  inline def apply(DocumentId: ResourceIdType, VersionId: DocumentVersionIdType): GetDocumentVersionRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDocumentVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetDocumentVersionRequestMutableBuilder[Self <: GetDocumentVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDocumentVersionRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: FieldNamesType): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: FieldNamesType): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
     
-    @scala.inline
-    def setIncludeCustomMetadata(value: BooleanType): Self = StObject.set(x, "IncludeCustomMetadata", value.asInstanceOf[js.Any])
+    inline def setIncludeCustomMetadata(value: BooleanType): Self = StObject.set(x, "IncludeCustomMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCustomMetadataUndefined: Self = StObject.set(x, "IncludeCustomMetadata", js.undefined)
+    inline def setIncludeCustomMetadataUndefined: Self = StObject.set(x, "IncludeCustomMetadata", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
   }
 }

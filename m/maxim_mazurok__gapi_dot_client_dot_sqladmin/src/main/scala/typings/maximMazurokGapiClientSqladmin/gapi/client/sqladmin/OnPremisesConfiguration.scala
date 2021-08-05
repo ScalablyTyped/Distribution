@@ -32,61 +32,43 @@ trait OnPremisesConfiguration extends StObject {
 }
 object OnPremisesConfiguration {
   
-  @scala.inline
-  def apply(): OnPremisesConfiguration = {
+  inline def apply(): OnPremisesConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnPremisesConfiguration]
   }
   
-  @scala.inline
-  implicit class OnPremisesConfigurationMutableBuilder[Self <: OnPremisesConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: OnPremisesConfiguration](x: Self) {
     
-    @scala.inline
-    def setCaCertificate(value: String): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
+    inline def setCaCertificate(value: String): Self = StObject.set(x, "caCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaCertificateUndefined: Self = StObject.set(x, "caCertificate", js.undefined)
+    inline def setCaCertificateUndefined: Self = StObject.set(x, "caCertificate", js.undefined)
     
-    @scala.inline
-    def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
+    inline def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
+    inline def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
     
-    @scala.inline
-    def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
+    inline def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
+    inline def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
     
-    @scala.inline
-    def setDumpFilePath(value: String): Self = StObject.set(x, "dumpFilePath", value.asInstanceOf[js.Any])
+    inline def setDumpFilePath(value: String): Self = StObject.set(x, "dumpFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDumpFilePathUndefined: Self = StObject.set(x, "dumpFilePath", js.undefined)
+    inline def setDumpFilePathUndefined: Self = StObject.set(x, "dumpFilePath", js.undefined)
     
-    @scala.inline
-    def setHostPort(value: String): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
+    inline def setHostPort(value: String): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
+    inline def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

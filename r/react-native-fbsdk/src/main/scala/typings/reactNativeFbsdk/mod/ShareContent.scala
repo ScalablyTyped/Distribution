@@ -13,26 +13,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShareContent extends StObject
 object ShareContent {
   
-  @scala.inline
-  def ShareLinkContent(contentUrl: String): typings.reactNativeFbsdk.mod.ShareLinkContent = {
+  inline def ShareLinkContent(contentUrl: String): typings.reactNativeFbsdk.mod.ShareLinkContent = {
     val __obj = js.Dynamic.literal(contentType = "link", contentUrl = contentUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactNativeFbsdk.mod.ShareLinkContent]
   }
   
-  @scala.inline
-  def ShareOpenGraphContent(action: ShareOpenGraphAction, previewPropertyName: String): typings.reactNativeFbsdk.mod.ShareOpenGraphContent = {
+  inline def ShareOpenGraphContent(action: ShareOpenGraphAction, previewPropertyName: String): typings.reactNativeFbsdk.mod.ShareOpenGraphContent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], contentType = "open-graph", previewPropertyName = previewPropertyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactNativeFbsdk.mod.ShareOpenGraphContent]
   }
   
-  @scala.inline
-  def SharePhotoContent(photos: js.Array[SharePhoto]): typings.reactNativeFbsdk.mod.SharePhotoContent = {
+  inline def SharePhotoContent(photos: js.Array[SharePhoto]): typings.reactNativeFbsdk.mod.SharePhotoContent = {
     val __obj = js.Dynamic.literal(contentType = "photo", photos = photos.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactNativeFbsdk.mod.SharePhotoContent]
   }
   
-  @scala.inline
-  def ShareVideoContent(video: ShareVideo): typings.reactNativeFbsdk.mod.ShareVideoContent = {
+  inline def ShareVideoContent(video: ShareVideo): typings.reactNativeFbsdk.mod.ShareVideoContent = {
     val __obj = js.Dynamic.literal(contentType = "video", video = video.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactNativeFbsdk.mod.ShareVideoContent]
   }

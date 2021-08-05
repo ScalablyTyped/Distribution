@@ -47,38 +47,28 @@ object textInputTextInputMod extends Shortcut {
   }
   object TextInputProps {
     
-    @scala.inline
-    def apply(id: String): TextInputProps = {
+    inline def apply(id: String): TextInputProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextInputProps]
     }
     
-    @scala.inline
-    implicit class TextInputPropsMutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextInputProps](x: Self) {
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setSize(value: Extract[CarbonInputSize, sm | xl]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Extract[CarbonInputSize, sm | xl]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: Boolean): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnText(value: ReactNode): Self = StObject.set(x, "warnText", value.asInstanceOf[js.Any])
+      inline def setWarnText(value: ReactNode): Self = StObject.set(x, "warnText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnTextUndefined: Self = StObject.set(x, "warnText", js.undefined)
+      inline def setWarnTextUndefined: Self = StObject.set(x, "warnText", js.undefined)
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
   }
   

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutomationRate extends StObject
 object AutomationRate {
   
-  @scala.inline
-  def `a-rate`: typings.std.stdStrings.`a-rate` = "a-rate".asInstanceOf[typings.std.stdStrings.`a-rate`]
+  inline def `a-rate`: typings.std.stdStrings.`a-rate` = "a-rate".asInstanceOf[typings.std.stdStrings.`a-rate`]
   
-  @scala.inline
-  def `k-rate`: typings.std.stdStrings.`k-rate` = "k-rate".asInstanceOf[typings.std.stdStrings.`k-rate`]
+  inline def `k-rate`: typings.std.stdStrings.`k-rate` = "k-rate".asInstanceOf[typings.std.stdStrings.`k-rate`]
 }

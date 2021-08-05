@@ -75,52 +75,37 @@ trait SortField extends StObject {
 }
 object SortField {
   
-  @scala.inline
-  def apply(key: Double): SortField = {
+  inline def apply(key: Double): SortField = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortField]
   }
   
-  @scala.inline
-  implicit class SortFieldMutableBuilder[Self <: SortField] (val x: Self) extends AnyVal {
+  extension [Self <: SortField](x: Self) {
     
-    @scala.inline
-    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
+    inline def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDataOption(value: SortDataOption | Normal | TextAsNumber): Self = StObject.set(x, "dataOption", value.asInstanceOf[js.Any])
+    inline def setDataOption(value: SortDataOption | Normal | TextAsNumber): Self = StObject.set(x, "dataOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataOptionUndefined: Self = StObject.set(x, "dataOption", js.undefined)
+    inline def setDataOptionUndefined: Self = StObject.set(x, "dataOption", js.undefined)
     
-    @scala.inline
-    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOn(value: SortOn | Value | CellColor | FontColor | typings.officeJs.officeJsStrings.Icon): Self = StObject.set(x, "sortOn", value.asInstanceOf[js.Any])
+    inline def setSortOn(value: SortOn | Value | CellColor | FontColor | typings.officeJs.officeJsStrings.Icon): Self = StObject.set(x, "sortOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOnUndefined: Self = StObject.set(x, "sortOn", js.undefined)
+    inline def setSortOnUndefined: Self = StObject.set(x, "sortOn", js.undefined)
     
-    @scala.inline
-    def setSubField(value: String): Self = StObject.set(x, "subField", value.asInstanceOf[js.Any])
+    inline def setSubField(value: String): Self = StObject.set(x, "subField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubFieldUndefined: Self = StObject.set(x, "subField", js.undefined)
+    inline def setSubFieldUndefined: Self = StObject.set(x, "subField", js.undefined)
   }
 }

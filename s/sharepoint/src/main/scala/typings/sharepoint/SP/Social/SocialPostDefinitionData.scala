@@ -23,8 +23,7 @@ trait SocialPostDefinitionData
 }
 object SocialPostDefinitionData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -39,19 +38,14 @@ object SocialPostDefinitionData {
     __obj.asInstanceOf[SocialPostDefinitionData]
   }
   
-  @scala.inline
-  implicit class SocialPostDefinitionDataMutableBuilder[Self <: SocialPostDefinitionData] (val x: Self) extends AnyVal {
+  extension [Self <: SocialPostDefinitionData](x: Self) {
     
-    @scala.inline
-    def setGet_items(value: () => js.Array[SocialPostDefinitionDataItem]): Self = StObject.set(x, "get_items", js.Any.fromFunction0(value))
+    inline def setGet_items(value: () => js.Array[SocialPostDefinitionDataItem]): Self = StObject.set(x, "get_items", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_items(value: js.Array[SocialPostDefinitionDataItem] => js.Array[SocialPostDefinitionDataItem]): Self = StObject.set(x, "set_items", js.Any.fromFunction1(value))
+    inline def setSet_items(value: js.Array[SocialPostDefinitionDataItem] => js.Array[SocialPostDefinitionDataItem]): Self = StObject.set(x, "set_items", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_name(value: String => String): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
+    inline def setSet_name(value: String => String): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
   }
 }

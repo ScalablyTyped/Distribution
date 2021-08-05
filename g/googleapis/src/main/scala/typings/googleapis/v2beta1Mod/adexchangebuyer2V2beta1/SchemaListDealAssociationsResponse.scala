@@ -24,28 +24,21 @@ trait SchemaListDealAssociationsResponse extends StObject {
 }
 object SchemaListDealAssociationsResponse {
   
-  @scala.inline
-  def apply(): SchemaListDealAssociationsResponse = {
+  inline def apply(): SchemaListDealAssociationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListDealAssociationsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListDealAssociationsResponseMutableBuilder[Self <: SchemaListDealAssociationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListDealAssociationsResponse](x: Self) {
     
-    @scala.inline
-    def setAssociations(value: js.Array[SchemaCreativeDealAssociation]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
+    inline def setAssociations(value: js.Array[SchemaCreativeDealAssociation]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
+    inline def setAssociationsUndefined: Self = StObject.set(x, "associations", js.undefined)
     
-    @scala.inline
-    def setAssociationsVarargs(value: SchemaCreativeDealAssociation*): Self = StObject.set(x, "associations", js.Array(value :_*))
+    inline def setAssociationsVarargs(value: SchemaCreativeDealAssociation*): Self = StObject.set(x, "associations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

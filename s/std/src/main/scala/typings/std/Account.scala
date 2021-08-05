@@ -21,34 +21,25 @@ trait Account extends StObject {
 }
 object Account {
   
-  @scala.inline
-  def apply(displayName: java.lang.String, id: java.lang.String, rpDisplayName: java.lang.String): Account = {
+  inline def apply(displayName: java.lang.String, id: java.lang.String, rpDisplayName: java.lang.String): Account = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], rpDisplayName = rpDisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Account]
   }
   
-  @scala.inline
-  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+  extension [Self <: Account](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: java.lang.String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: java.lang.String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageURL(value: java.lang.String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
+    inline def setImageURL(value: java.lang.String): Self = StObject.set(x, "imageURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageURLUndefined: Self = StObject.set(x, "imageURL", js.undefined)
+    inline def setImageURLUndefined: Self = StObject.set(x, "imageURL", js.undefined)
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRpDisplayName(value: java.lang.String): Self = StObject.set(x, "rpDisplayName", value.asInstanceOf[js.Any])
+    inline def setRpDisplayName(value: java.lang.String): Self = StObject.set(x, "rpDisplayName", value.asInstanceOf[js.Any])
   }
 }

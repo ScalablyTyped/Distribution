@@ -25,40 +25,29 @@ trait DescribeUploadBufferOutput extends StObject {
 }
 object DescribeUploadBufferOutput {
   
-  @scala.inline
-  def apply(): DescribeUploadBufferOutput = {
+  inline def apply(): DescribeUploadBufferOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeUploadBufferOutput]
   }
   
-  @scala.inline
-  implicit class DescribeUploadBufferOutputMutableBuilder[Self <: DescribeUploadBufferOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUploadBufferOutput](x: Self) {
     
-    @scala.inline
-    def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
+    inline def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
+    inline def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
     
-    @scala.inline
-    def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
+    inline def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setUploadBufferAllocatedInBytes(value: long): Self = StObject.set(x, "UploadBufferAllocatedInBytes", value.asInstanceOf[js.Any])
+    inline def setUploadBufferAllocatedInBytes(value: long): Self = StObject.set(x, "UploadBufferAllocatedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadBufferAllocatedInBytesUndefined: Self = StObject.set(x, "UploadBufferAllocatedInBytes", js.undefined)
+    inline def setUploadBufferAllocatedInBytesUndefined: Self = StObject.set(x, "UploadBufferAllocatedInBytes", js.undefined)
     
-    @scala.inline
-    def setUploadBufferUsedInBytes(value: long): Self = StObject.set(x, "UploadBufferUsedInBytes", value.asInstanceOf[js.Any])
+    inline def setUploadBufferUsedInBytes(value: long): Self = StObject.set(x, "UploadBufferUsedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadBufferUsedInBytesUndefined: Self = StObject.set(x, "UploadBufferUsedInBytes", js.undefined)
+    inline def setUploadBufferUsedInBytesUndefined: Self = StObject.set(x, "UploadBufferUsedInBytes", js.undefined)
   }
 }

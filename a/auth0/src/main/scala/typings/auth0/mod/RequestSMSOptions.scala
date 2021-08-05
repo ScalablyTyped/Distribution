@@ -10,16 +10,13 @@ trait RequestSMSOptions extends StObject {
 }
 object RequestSMSOptions {
   
-  @scala.inline
-  def apply(phone_number: String): RequestSMSOptions = {
+  inline def apply(phone_number: String): RequestSMSOptions = {
     val __obj = js.Dynamic.literal(phone_number = phone_number.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSMSOptions]
   }
   
-  @scala.inline
-  implicit class RequestSMSOptionsMutableBuilder[Self <: RequestSMSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSMSOptions](x: Self) {
     
-    @scala.inline
-    def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+    inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
   }
 }

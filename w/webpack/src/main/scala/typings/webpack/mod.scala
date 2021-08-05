@@ -15,20 +15,16 @@ object mod {
   }
   object ProfilingPluginOptions {
     
-    @scala.inline
-    def apply(): ProfilingPluginOptions = {
+    inline def apply(): ProfilingPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProfilingPluginOptions]
     }
     
-    @scala.inline
-    implicit class ProfilingPluginOptionsMutableBuilder[Self <: ProfilingPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProfilingPluginOptions](x: Self) {
       
-      @scala.inline
-      def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+      inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+      inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
     }
   }
 }

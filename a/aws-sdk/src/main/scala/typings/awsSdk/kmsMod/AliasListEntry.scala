@@ -23,31 +23,23 @@ trait AliasListEntry extends StObject {
 }
 object AliasListEntry {
   
-  @scala.inline
-  def apply(): AliasListEntry = {
+  inline def apply(): AliasListEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AliasListEntry]
   }
   
-  @scala.inline
-  implicit class AliasListEntryMutableBuilder[Self <: AliasListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: AliasListEntry](x: Self) {
     
-    @scala.inline
-    def setAliasArn(value: ArnType): Self = StObject.set(x, "AliasArn", value.asInstanceOf[js.Any])
+    inline def setAliasArn(value: ArnType): Self = StObject.set(x, "AliasArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasArnUndefined: Self = StObject.set(x, "AliasArn", js.undefined)
+    inline def setAliasArnUndefined: Self = StObject.set(x, "AliasArn", js.undefined)
     
-    @scala.inline
-    def setAliasName(value: AliasNameType): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
+    inline def setAliasName(value: AliasNameType): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
+    inline def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
     
-    @scala.inline
-    def setTargetKeyId(value: KeyIdType): Self = StObject.set(x, "TargetKeyId", value.asInstanceOf[js.Any])
+    inline def setTargetKeyId(value: KeyIdType): Self = StObject.set(x, "TargetKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetKeyIdUndefined: Self = StObject.set(x, "TargetKeyId", js.undefined)
+    inline def setTargetKeyIdUndefined: Self = StObject.set(x, "TargetKeyId", js.undefined)
   }
 }

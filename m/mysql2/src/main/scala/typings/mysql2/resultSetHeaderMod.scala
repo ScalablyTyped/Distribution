@@ -25,8 +25,7 @@ object resultSetHeaderMod {
   }
   object ResultSetHeader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       affectedRows: Double,
       constructor: `2`,
       fieldCount: Double,
@@ -39,29 +38,21 @@ object resultSetHeaderMod {
       __obj.asInstanceOf[ResultSetHeader]
     }
     
-    @scala.inline
-    implicit class ResultSetHeaderMutableBuilder[Self <: ResultSetHeader] (val x: Self) extends AnyVal {
+    extension [Self <: ResultSetHeader](x: Self) {
       
-      @scala.inline
-      def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
+      inline def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstructor(value: `2`): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+      inline def setConstructor(value: `2`): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
+      inline def setFieldCount(value: Double): Self = StObject.set(x, "fieldCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
+      inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerStatus(value: Double): Self = StObject.set(x, "serverStatus", value.asInstanceOf[js.Any])
+      inline def setServerStatus(value: Double): Self = StObject.set(x, "serverStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningStatus(value: Double): Self = StObject.set(x, "warningStatus", value.asInstanceOf[js.Any])
+      inline def setWarningStatus(value: Double): Self = StObject.set(x, "warningStatus", value.asInstanceOf[js.Any])
     }
   }
 }

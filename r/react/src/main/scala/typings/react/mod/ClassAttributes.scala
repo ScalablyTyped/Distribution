@@ -12,25 +12,19 @@ trait ClassAttributes[T]
 }
 object ClassAttributes {
   
-  @scala.inline
-  def apply[T](): ClassAttributes[T] = {
+  inline def apply[T](): ClassAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassAttributes[T]]
   }
   
-  @scala.inline
-  implicit class ClassAttributesMutableBuilder[Self <: ClassAttributes[?], T] (val x: Self & ClassAttributes[T]) extends AnyVal {
+  extension [Self <: ClassAttributes[?], T](x: Self & ClassAttributes[T]) {
     
-    @scala.inline
-    def setRef(value: LegacyRef[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: LegacyRef[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefFunction1(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ T | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefNull: Self = StObject.set(x, "ref", null)
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

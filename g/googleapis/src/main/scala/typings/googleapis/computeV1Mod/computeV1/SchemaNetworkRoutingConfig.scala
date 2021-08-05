@@ -22,19 +22,15 @@ trait SchemaNetworkRoutingConfig extends StObject {
 }
 object SchemaNetworkRoutingConfig {
   
-  @scala.inline
-  def apply(): SchemaNetworkRoutingConfig = {
+  inline def apply(): SchemaNetworkRoutingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetworkRoutingConfig]
   }
   
-  @scala.inline
-  implicit class SchemaNetworkRoutingConfigMutableBuilder[Self <: SchemaNetworkRoutingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNetworkRoutingConfig](x: Self) {
     
-    @scala.inline
-    def setRoutingMode(value: String): Self = StObject.set(x, "routingMode", value.asInstanceOf[js.Any])
+    inline def setRoutingMode(value: String): Self = StObject.set(x, "routingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingModeUndefined: Self = StObject.set(x, "routingMode", js.undefined)
+    inline def setRoutingModeUndefined: Self = StObject.set(x, "routingMode", js.undefined)
   }
 }

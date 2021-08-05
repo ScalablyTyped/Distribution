@@ -11,16 +11,13 @@ trait PickImplsetSize extends StObject {
 }
 object PickImplsetSize {
   
-  @scala.inline
-  def apply(setSize: Boolean): PickImplsetSize = {
+  inline def apply(setSize: Boolean): PickImplsetSize = {
     val __obj = js.Dynamic.literal(setSize = setSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplsetSize]
   }
   
-  @scala.inline
-  implicit class PickImplsetSizeMutableBuilder[Self <: PickImplsetSize] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplsetSize](x: Self) {
     
-    @scala.inline
-    def setSetSize(value: Boolean): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
+    inline def setSetSize(value: Boolean): Self = StObject.set(x, "setSize", value.asInstanceOf[js.Any])
   }
 }

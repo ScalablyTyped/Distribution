@@ -23,26 +23,20 @@ object Graphics {
   }
   object FillStyle {
     
-    @scala.inline
-    def apply(): FillStyle = {
+    inline def apply(): FillStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FillStyle]
     }
     
-    @scala.inline
-    implicit class FillStyleMutableBuilder[Self <: FillStyle] (val x: Self) extends AnyVal {
+    extension [Self <: FillStyle](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     }
   }
   
@@ -68,32 +62,24 @@ object Graphics {
   }
   object LineStyle {
     
-    @scala.inline
-    def apply(): LineStyle = {
+    inline def apply(): LineStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LineStyle]
     }
     
-    @scala.inline
-    implicit class LineStyleMutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
+    extension [Self <: LineStyle](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -116,26 +102,20 @@ object Graphics {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -163,38 +143,28 @@ object Graphics {
   }
   object RoundedRectRadius {
     
-    @scala.inline
-    def apply(): RoundedRectRadius = {
+    inline def apply(): RoundedRectRadius = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoundedRectRadius]
     }
     
-    @scala.inline
-    implicit class RoundedRectRadiusMutableBuilder[Self <: RoundedRectRadius] (val x: Self) extends AnyVal {
+    extension [Self <: RoundedRectRadius](x: Self) {
       
-      @scala.inline
-      def setBl(value: Double): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
+      inline def setBl(value: Double): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlUndefined: Self = StObject.set(x, "bl", js.undefined)
+      inline def setBlUndefined: Self = StObject.set(x, "bl", js.undefined)
       
-      @scala.inline
-      def setBr(value: Double): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
+      inline def setBr(value: Double): Self = StObject.set(x, "br", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
+      inline def setBrUndefined: Self = StObject.set(x, "br", js.undefined)
       
-      @scala.inline
-      def setTl(value: Double): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
+      inline def setTl(value: Double): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlUndefined: Self = StObject.set(x, "tl", js.undefined)
+      inline def setTlUndefined: Self = StObject.set(x, "tl", js.undefined)
       
-      @scala.inline
-      def setTr(value: Double): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
+      inline def setTr(value: Double): Self = StObject.set(x, "tr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
+      inline def setTrUndefined: Self = StObject.set(x, "tr", js.undefined)
     }
   }
   
@@ -215,26 +185,20 @@ object Graphics {
   }
   object Styles {
     
-    @scala.inline
-    def apply(): Styles = {
+    inline def apply(): Styles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Styles]
     }
     
-    @scala.inline
-    implicit class StylesMutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
+    extension [Self <: Styles](x: Self) {
       
-      @scala.inline
-      def setFillStyle(value: FillStyle): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+      inline def setFillStyle(value: FillStyle): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
+      inline def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
       
-      @scala.inline
-      def setLineStyle(value: LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+      inline def setLineStyle(value: LineStyle): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+      inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     }
   }
 }

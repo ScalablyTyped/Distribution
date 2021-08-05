@@ -43,8 +43,7 @@ trait CustomerAgentInfo extends StObject {
 }
 object CustomerAgentInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeAgents: Integer,
     blackListedAgents: Integer,
     healthyAgents: Integer,
@@ -57,28 +56,20 @@ object CustomerAgentInfo {
     __obj.asInstanceOf[CustomerAgentInfo]
   }
   
-  @scala.inline
-  implicit class CustomerAgentInfoMutableBuilder[Self <: CustomerAgentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerAgentInfo](x: Self) {
     
-    @scala.inline
-    def setActiveAgents(value: Integer): Self = StObject.set(x, "activeAgents", value.asInstanceOf[js.Any])
+    inline def setActiveAgents(value: Integer): Self = StObject.set(x, "activeAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlackListedAgents(value: Integer): Self = StObject.set(x, "blackListedAgents", value.asInstanceOf[js.Any])
+    inline def setBlackListedAgents(value: Integer): Self = StObject.set(x, "blackListedAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthyAgents(value: Integer): Self = StObject.set(x, "healthyAgents", value.asInstanceOf[js.Any])
+    inline def setHealthyAgents(value: Integer): Self = StObject.set(x, "healthyAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShutdownAgents(value: Integer): Self = StObject.set(x, "shutdownAgents", value.asInstanceOf[js.Any])
+    inline def setShutdownAgents(value: Integer): Self = StObject.set(x, "shutdownAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAgents(value: Integer): Self = StObject.set(x, "totalAgents", value.asInstanceOf[js.Any])
+    inline def setTotalAgents(value: Integer): Self = StObject.set(x, "totalAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhealthyAgents(value: Integer): Self = StObject.set(x, "unhealthyAgents", value.asInstanceOf[js.Any])
+    inline def setUnhealthyAgents(value: Integer): Self = StObject.set(x, "unhealthyAgents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownAgents(value: Integer): Self = StObject.set(x, "unknownAgents", value.asInstanceOf[js.Any])
+    inline def setUnknownAgents(value: Integer): Self = StObject.set(x, "unknownAgents", value.asInstanceOf[js.Any])
   }
 }

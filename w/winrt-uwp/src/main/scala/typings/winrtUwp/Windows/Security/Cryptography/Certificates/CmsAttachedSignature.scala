@@ -25,8 +25,7 @@ trait CmsAttachedSignature extends StObject {
 }
 object CmsAttachedSignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     certificates: IVectorView[Certificate],
     content: Double,
     signers: IVectorView[CmsSignerInfo],
@@ -36,19 +35,14 @@ object CmsAttachedSignature {
     __obj.asInstanceOf[CmsAttachedSignature]
   }
   
-  @scala.inline
-  implicit class CmsAttachedSignatureMutableBuilder[Self <: CmsAttachedSignature] (val x: Self) extends AnyVal {
+  extension [Self <: CmsAttachedSignature](x: Self) {
     
-    @scala.inline
-    def setCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
+    inline def setCertificates(value: IVectorView[Certificate]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Double): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Double): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigners(value: IVectorView[CmsSignerInfo]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
+    inline def setSigners(value: IVectorView[CmsSignerInfo]): Self = StObject.set(x, "signers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifySignature(value: () => SignatureValidationResult): Self = StObject.set(x, "verifySignature", js.Any.fromFunction0(value))
+    inline def setVerifySignature(value: () => SignatureValidationResult): Self = StObject.set(x, "verifySignature", js.Any.fromFunction0(value))
   }
 }

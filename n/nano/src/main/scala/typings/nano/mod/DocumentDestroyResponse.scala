@@ -18,22 +18,17 @@ trait DocumentDestroyResponse extends StObject {
 }
 object DocumentDestroyResponse {
   
-  @scala.inline
-  def apply(id: String, ok: Boolean, rev: String): DocumentDestroyResponse = {
+  inline def apply(id: String, ok: Boolean, rev: String): DocumentDestroyResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], rev = rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentDestroyResponse]
   }
   
-  @scala.inline
-  implicit class DocumentDestroyResponseMutableBuilder[Self <: DocumentDestroyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentDestroyResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
   }
 }

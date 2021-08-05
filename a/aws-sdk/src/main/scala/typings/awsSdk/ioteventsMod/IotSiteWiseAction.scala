@@ -33,40 +33,29 @@ trait IotSiteWiseAction extends StObject {
 }
 object IotSiteWiseAction {
   
-  @scala.inline
-  def apply(propertyValue: AssetPropertyValue): IotSiteWiseAction = {
+  inline def apply(propertyValue: AssetPropertyValue): IotSiteWiseAction = {
     val __obj = js.Dynamic.literal(propertyValue = propertyValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IotSiteWiseAction]
   }
   
-  @scala.inline
-  implicit class IotSiteWiseActionMutableBuilder[Self <: IotSiteWiseAction] (val x: Self) extends AnyVal {
+  extension [Self <: IotSiteWiseAction](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: AssetId): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: AssetId): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
+    inline def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
     
-    @scala.inline
-    def setEntryId(value: AssetPropertyEntryId): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
+    inline def setEntryId(value: AssetPropertyEntryId): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryIdUndefined: Self = StObject.set(x, "entryId", js.undefined)
+    inline def setEntryIdUndefined: Self = StObject.set(x, "entryId", js.undefined)
     
-    @scala.inline
-    def setPropertyAlias(value: AssetPropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
+    inline def setPropertyAlias(value: AssetPropertyAlias): Self = StObject.set(x, "propertyAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
+    inline def setPropertyAliasUndefined: Self = StObject.set(x, "propertyAlias", js.undefined)
     
-    @scala.inline
-    def setPropertyId(value: AssetPropertyId): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
+    inline def setPropertyId(value: AssetPropertyId): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
+    inline def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
     
-    @scala.inline
-    def setPropertyValue(value: AssetPropertyValue): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
+    inline def setPropertyValue(value: AssetPropertyValue): Self = StObject.set(x, "propertyValue", value.asInstanceOf[js.Any])
   }
 }

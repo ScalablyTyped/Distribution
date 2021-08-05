@@ -16,32 +16,27 @@ object deleteEventSourceMappingExceptionsUnionMod {
   trait DeleteEventSourceMappingExceptionsUnion extends StObject
   object DeleteEventSourceMappingExceptionsUnion {
     
-    @scala.inline
-    def InvalidParameterValueException(): typings.awsSdkClientLambdaNode.typesInvalidParameterValueExceptionMod.InvalidParameterValueException = {
+    inline def InvalidParameterValueException(): typings.awsSdkClientLambdaNode.typesInvalidParameterValueExceptionMod.InvalidParameterValueException = {
       val __obj = js.Dynamic.literal(name = "InvalidParameterValueException")
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesInvalidParameterValueExceptionMod.InvalidParameterValueException]
     }
     
-    @scala.inline
-    def ResourceInUseException(): typings.awsSdkClientLambdaNode.typesResourceInUseExceptionMod.ResourceInUseException = {
+    inline def ResourceInUseException(): typings.awsSdkClientLambdaNode.typesResourceInUseExceptionMod.ResourceInUseException = {
       val __obj = js.Dynamic.literal(name = "ResourceInUseException")
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesResourceInUseExceptionMod.ResourceInUseException]
     }
     
-    @scala.inline
-    def ResourceNotFoundException(): typings.awsSdkClientLambdaNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
+    inline def ResourceNotFoundException(): typings.awsSdkClientLambdaNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException]
     }
     
-    @scala.inline
-    def ServiceException(): typings.awsSdkClientLambdaNode.typesServiceExceptionMod.ServiceException = {
+    inline def ServiceException(): typings.awsSdkClientLambdaNode.typesServiceExceptionMod.ServiceException = {
       val __obj = js.Dynamic.literal(name = "ServiceException")
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesServiceExceptionMod.ServiceException]
     }
     
-    @scala.inline
-    def TooManyRequestsException(): typings.awsSdkClientLambdaNode.typesTooManyRequestsExceptionMod.TooManyRequestsException = {
+    inline def TooManyRequestsException(): typings.awsSdkClientLambdaNode.typesTooManyRequestsExceptionMod.TooManyRequestsException = {
       val __obj = js.Dynamic.literal(name = "TooManyRequestsException")
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesTooManyRequestsExceptionMod.TooManyRequestsException]
     }

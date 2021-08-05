@@ -13,25 +13,19 @@ trait LiveStreamStatus extends StObject {
 }
 object LiveStreamStatus {
   
-  @scala.inline
-  def apply(): LiveStreamStatus = {
+  inline def apply(): LiveStreamStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiveStreamStatus]
   }
   
-  @scala.inline
-  implicit class LiveStreamStatusMutableBuilder[Self <: LiveStreamStatus] (val x: Self) extends AnyVal {
+  extension [Self <: LiveStreamStatus](x: Self) {
     
-    @scala.inline
-    def setHealthStatus(value: LiveStreamHealthStatus): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
+    inline def setHealthStatus(value: LiveStreamHealthStatus): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
+    inline def setHealthStatusUndefined: Self = StObject.set(x, "healthStatus", js.undefined)
     
-    @scala.inline
-    def setStreamStatus(value: String): Self = StObject.set(x, "streamStatus", value.asInstanceOf[js.Any])
+    inline def setStreamStatus(value: String): Self = StObject.set(x, "streamStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamStatusUndefined: Self = StObject.set(x, "streamStatus", js.undefined)
+    inline def setStreamStatusUndefined: Self = StObject.set(x, "streamStatus", js.undefined)
   }
 }

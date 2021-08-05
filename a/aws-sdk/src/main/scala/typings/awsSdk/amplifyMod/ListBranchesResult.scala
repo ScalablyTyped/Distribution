@@ -18,25 +18,19 @@ trait ListBranchesResult extends StObject {
 }
 object ListBranchesResult {
   
-  @scala.inline
-  def apply(branches: Branches): ListBranchesResult = {
+  inline def apply(branches: Branches): ListBranchesResult = {
     val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBranchesResult]
   }
   
-  @scala.inline
-  implicit class ListBranchesResultMutableBuilder[Self <: ListBranchesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListBranchesResult](x: Self) {
     
-    @scala.inline
-    def setBranches(value: Branches): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+    inline def setBranches(value: Branches): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchesVarargs(value: Branch*): Self = StObject.set(x, "branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: Branch*): Self = StObject.set(x, "branches", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

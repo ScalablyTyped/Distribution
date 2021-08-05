@@ -18,28 +18,21 @@ trait ListVPCEConfigurationsResult extends StObject {
 }
 object ListVPCEConfigurationsResult {
   
-  @scala.inline
-  def apply(): ListVPCEConfigurationsResult = {
+  inline def apply(): ListVPCEConfigurationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVPCEConfigurationsResult]
   }
   
-  @scala.inline
-  implicit class ListVPCEConfigurationsResultMutableBuilder[Self <: ListVPCEConfigurationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListVPCEConfigurationsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setVpceConfigurations(value: VPCEConfigurations): Self = StObject.set(x, "vpceConfigurations", value.asInstanceOf[js.Any])
+    inline def setVpceConfigurations(value: VPCEConfigurations): Self = StObject.set(x, "vpceConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceConfigurationsUndefined: Self = StObject.set(x, "vpceConfigurations", js.undefined)
+    inline def setVpceConfigurationsUndefined: Self = StObject.set(x, "vpceConfigurations", js.undefined)
     
-    @scala.inline
-    def setVpceConfigurationsVarargs(value: VPCEConfiguration*): Self = StObject.set(x, "vpceConfigurations", js.Array(value :_*))
+    inline def setVpceConfigurationsVarargs(value: VPCEConfiguration*): Self = StObject.set(x, "vpceConfigurations", js.Array(value :_*))
   }
 }

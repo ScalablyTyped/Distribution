@@ -49,49 +49,35 @@ trait OtpauthURLOptions
 }
 object OtpauthURLOptions {
   
-  @scala.inline
-  def apply(label: String, secret: String): OtpauthURLOptions = {
+  inline def apply(label: String, secret: String): OtpauthURLOptions = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[OtpauthURLOptions]
   }
   
-  @scala.inline
-  implicit class OtpauthURLOptionsMutableBuilder[Self <: OtpauthURLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OtpauthURLOptions](x: Self) {
     
-    @scala.inline
-    def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
+    inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
     
-    @scala.inline
-    def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+    inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+    inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: htop | typings.speakeasy.speakeasyStrings.totp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: htop | typings.speakeasy.speakeasyStrings.totp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

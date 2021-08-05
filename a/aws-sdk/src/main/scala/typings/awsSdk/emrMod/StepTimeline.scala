@@ -23,31 +23,23 @@ trait StepTimeline extends StObject {
 }
 object StepTimeline {
   
-  @scala.inline
-  def apply(): StepTimeline = {
+  inline def apply(): StepTimeline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StepTimeline]
   }
   
-  @scala.inline
-  implicit class StepTimelineMutableBuilder[Self <: StepTimeline] (val x: Self) extends AnyVal {
+  extension [Self <: StepTimeline](x: Self) {
     
-    @scala.inline
-    def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
+    inline def setCreationDateTimeUndefined: Self = StObject.set(x, "CreationDateTime", js.undefined)
     
-    @scala.inline
-    def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: Date): Self = StObject.set(x, "EndDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "EndDateTime", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: Date): Self = StObject.set(x, "StartDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "StartDateTime", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait FalseExpr extends StObject {
 }
 object FalseExpr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     __type: String,
     column: Double,
     falseExpr: Expression,
@@ -37,28 +36,20 @@ object FalseExpr {
     __obj.asInstanceOf[FalseExpr]
   }
   
-  @scala.inline
-  implicit class FalseExprMutableBuilder[Self <: FalseExpr] (val x: Self) extends AnyVal {
+  extension [Self <: FalseExpr](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalseExpr(value: Expression): Self = StObject.set(x, "falseExpr", value.asInstanceOf[js.Any])
+    inline def setFalseExpr(value: Expression): Self = StObject.set(x, "falseExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+    inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueExpr(value: Expression): Self = StObject.set(x, "trueExpr", value.asInstanceOf[js.Any])
+    inline def setTrueExpr(value: Expression): Self = StObject.set(x, "trueExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+    inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait TypeofColorPalette extends StObject {
 }
 object TypeofColorPalette {
   
-  @scala.inline
-  def apply(extend: js.Object => ColorPalette, fn: ColorPalette): TypeofColorPalette = {
+  inline def apply(extend: js.Object => ColorPalette, fn: ColorPalette): TypeofColorPalette = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofColorPalette]
   }
   
-  @scala.inline
-  implicit class TypeofColorPaletteMutableBuilder[Self <: TypeofColorPalette] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofColorPalette](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ColorPalette): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ColorPalette): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ColorPalette): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ColorPalette): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

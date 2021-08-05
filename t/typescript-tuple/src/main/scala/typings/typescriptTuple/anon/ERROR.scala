@@ -14,19 +14,15 @@ trait ERROR extends StObject {
 }
 object ERROR {
   
-  @scala.inline
-  def apply(CODENAME: InfiniteLeft & typings.typescriptTuple.typescriptTupleStrings.Infinite): ERROR = {
+  inline def apply(CODENAME: InfiniteLeft & typings.typescriptTuple.typescriptTupleStrings.Infinite): ERROR = {
     val __obj = js.Dynamic.literal(CODENAME = CODENAME.asInstanceOf[js.Any], ERROR = "Left is not finite")
     __obj.asInstanceOf[ERROR]
   }
   
-  @scala.inline
-  implicit class ERRORMutableBuilder[Self <: ERROR] (val x: Self) extends AnyVal {
+  extension [Self <: ERROR](x: Self) {
     
-    @scala.inline
-    def setCODENAME(value: InfiniteLeft & typings.typescriptTuple.typescriptTupleStrings.Infinite): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
+    inline def setCODENAME(value: InfiniteLeft & typings.typescriptTuple.typescriptTupleStrings.Infinite): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setERROR(value: `Left is not finite`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: `Left is not finite`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
   }
 }

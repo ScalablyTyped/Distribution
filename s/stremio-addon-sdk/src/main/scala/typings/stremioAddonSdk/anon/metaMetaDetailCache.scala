@@ -28,34 +28,25 @@ trait metaMetaDetailCache extends StObject {
 }
 object metaMetaDetailCache {
   
-  @scala.inline
-  def apply(meta: MetaDetail): metaMetaDetailCache = {
+  inline def apply(meta: MetaDetail): metaMetaDetailCache = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[metaMetaDetailCache]
   }
   
-  @scala.inline
-  implicit class metaMetaDetailCacheMutableBuilder[Self <: metaMetaDetailCache] (val x: Self) extends AnyVal {
+  extension [Self <: metaMetaDetailCache](x: Self) {
     
-    @scala.inline
-    def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
+    inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
+    inline def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
     
-    @scala.inline
-    def setMeta(value: MetaDetail): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: MetaDetail): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
+    inline def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
+    inline def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
     
-    @scala.inline
-    def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
+    inline def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
+    inline def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
   }
 }

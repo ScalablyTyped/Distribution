@@ -48,64 +48,45 @@ trait VpnConnectionOptions extends StObject {
 }
 object VpnConnectionOptions {
   
-  @scala.inline
-  def apply(): VpnConnectionOptions = {
+  inline def apply(): VpnConnectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnConnectionOptions]
   }
   
-  @scala.inline
-  implicit class VpnConnectionOptionsMutableBuilder[Self <: VpnConnectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VpnConnectionOptions](x: Self) {
     
-    @scala.inline
-    def setEnableAcceleration(value: Boolean): Self = StObject.set(x, "EnableAcceleration", value.asInstanceOf[js.Any])
+    inline def setEnableAcceleration(value: Boolean): Self = StObject.set(x, "EnableAcceleration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAccelerationUndefined: Self = StObject.set(x, "EnableAcceleration", js.undefined)
+    inline def setEnableAccelerationUndefined: Self = StObject.set(x, "EnableAcceleration", js.undefined)
     
-    @scala.inline
-    def setLocalIpv4NetworkCidr(value: String): Self = StObject.set(x, "LocalIpv4NetworkCidr", value.asInstanceOf[js.Any])
+    inline def setLocalIpv4NetworkCidr(value: String): Self = StObject.set(x, "LocalIpv4NetworkCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalIpv4NetworkCidrUndefined: Self = StObject.set(x, "LocalIpv4NetworkCidr", js.undefined)
+    inline def setLocalIpv4NetworkCidrUndefined: Self = StObject.set(x, "LocalIpv4NetworkCidr", js.undefined)
     
-    @scala.inline
-    def setLocalIpv6NetworkCidr(value: String): Self = StObject.set(x, "LocalIpv6NetworkCidr", value.asInstanceOf[js.Any])
+    inline def setLocalIpv6NetworkCidr(value: String): Self = StObject.set(x, "LocalIpv6NetworkCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalIpv6NetworkCidrUndefined: Self = StObject.set(x, "LocalIpv6NetworkCidr", js.undefined)
+    inline def setLocalIpv6NetworkCidrUndefined: Self = StObject.set(x, "LocalIpv6NetworkCidr", js.undefined)
     
-    @scala.inline
-    def setRemoteIpv4NetworkCidr(value: String): Self = StObject.set(x, "RemoteIpv4NetworkCidr", value.asInstanceOf[js.Any])
+    inline def setRemoteIpv4NetworkCidr(value: String): Self = StObject.set(x, "RemoteIpv4NetworkCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteIpv4NetworkCidrUndefined: Self = StObject.set(x, "RemoteIpv4NetworkCidr", js.undefined)
+    inline def setRemoteIpv4NetworkCidrUndefined: Self = StObject.set(x, "RemoteIpv4NetworkCidr", js.undefined)
     
-    @scala.inline
-    def setRemoteIpv6NetworkCidr(value: String): Self = StObject.set(x, "RemoteIpv6NetworkCidr", value.asInstanceOf[js.Any])
+    inline def setRemoteIpv6NetworkCidr(value: String): Self = StObject.set(x, "RemoteIpv6NetworkCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteIpv6NetworkCidrUndefined: Self = StObject.set(x, "RemoteIpv6NetworkCidr", js.undefined)
+    inline def setRemoteIpv6NetworkCidrUndefined: Self = StObject.set(x, "RemoteIpv6NetworkCidr", js.undefined)
     
-    @scala.inline
-    def setStaticRoutesOnly(value: Boolean): Self = StObject.set(x, "StaticRoutesOnly", value.asInstanceOf[js.Any])
+    inline def setStaticRoutesOnly(value: Boolean): Self = StObject.set(x, "StaticRoutesOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticRoutesOnlyUndefined: Self = StObject.set(x, "StaticRoutesOnly", js.undefined)
+    inline def setStaticRoutesOnlyUndefined: Self = StObject.set(x, "StaticRoutesOnly", js.undefined)
     
-    @scala.inline
-    def setTunnelInsideIpVersion(value: TunnelInsideIpVersion): Self = StObject.set(x, "TunnelInsideIpVersion", value.asInstanceOf[js.Any])
+    inline def setTunnelInsideIpVersion(value: TunnelInsideIpVersion): Self = StObject.set(x, "TunnelInsideIpVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelInsideIpVersionUndefined: Self = StObject.set(x, "TunnelInsideIpVersion", js.undefined)
+    inline def setTunnelInsideIpVersionUndefined: Self = StObject.set(x, "TunnelInsideIpVersion", js.undefined)
     
-    @scala.inline
-    def setTunnelOptions(value: TunnelOptionsList): Self = StObject.set(x, "TunnelOptions", value.asInstanceOf[js.Any])
+    inline def setTunnelOptions(value: TunnelOptionsList): Self = StObject.set(x, "TunnelOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelOptionsUndefined: Self = StObject.set(x, "TunnelOptions", js.undefined)
+    inline def setTunnelOptionsUndefined: Self = StObject.set(x, "TunnelOptions", js.undefined)
     
-    @scala.inline
-    def setTunnelOptionsVarargs(value: TunnelOption*): Self = StObject.set(x, "TunnelOptions", js.Array(value :_*))
+    inline def setTunnelOptionsVarargs(value: TunnelOption*): Self = StObject.set(x, "TunnelOptions", js.Array(value :_*))
   }
 }

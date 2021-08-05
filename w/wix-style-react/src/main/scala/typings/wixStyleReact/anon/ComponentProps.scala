@@ -13,19 +13,15 @@ trait ComponentProps[T] extends StObject {
 }
 object ComponentProps {
   
-  @scala.inline
-  def apply[T](componentProps: T, ellipsisProps: EllipsisProps): ComponentProps[T] = {
+  inline def apply[T](componentProps: T, ellipsisProps: EllipsisProps): ComponentProps[T] = {
     val __obj = js.Dynamic.literal(componentProps = componentProps.asInstanceOf[js.Any], ellipsisProps = ellipsisProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentProps[T]]
   }
   
-  @scala.inline
-  implicit class ComponentPropsMutableBuilder[Self <: ComponentProps[?], T] (val x: Self & ComponentProps[T]) extends AnyVal {
+  extension [Self <: ComponentProps[?], T](x: Self & ComponentProps[T]) {
     
-    @scala.inline
-    def setComponentProps(value: T): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
+    inline def setComponentProps(value: T): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsisProps(value: EllipsisProps): Self = StObject.set(x, "ellipsisProps", value.asInstanceOf[js.Any])
+    inline def setEllipsisProps(value: EllipsisProps): Self = StObject.set(x, "ellipsisProps", value.asInstanceOf[js.Any])
   }
 }

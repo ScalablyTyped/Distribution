@@ -98,91 +98,63 @@ trait PointMarkerOptionsObject extends StObject {
 }
 object PointMarkerOptionsObject {
   
-  @scala.inline
-  def apply(): PointMarkerOptionsObject = {
+  inline def apply(): PointMarkerOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointMarkerOptionsObject]
   }
   
-  @scala.inline
-  implicit class PointMarkerOptionsObjectMutableBuilder[Self <: PointMarkerOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: PointMarkerOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledThreshold(value: Double): Self = StObject.set(x, "enabledThreshold", value.asInstanceOf[js.Any])
+    inline def setEnabledThreshold(value: Double): Self = StObject.set(x, "enabledThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledThresholdUndefined: Self = StObject.set(x, "enabledThreshold", js.undefined)
+    inline def setEnabledThresholdUndefined: Self = StObject.set(x, "enabledThreshold", js.undefined)
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFillColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLineColor(value: String | ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: String | ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setStates(value: PointStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: PointStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: String | SymbolKeyValue): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String | SymbolKeyValue): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

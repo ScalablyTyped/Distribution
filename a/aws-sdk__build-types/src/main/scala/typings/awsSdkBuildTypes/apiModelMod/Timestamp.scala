@@ -17,23 +17,18 @@ trait Timestamp
 }
 object Timestamp {
   
-  @scala.inline
-  def apply(): Timestamp = {
+  inline def apply(): Timestamp = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("timestamp")
     __obj.asInstanceOf[Timestamp]
   }
   
-  @scala.inline
-  implicit class TimestampMutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
+  extension [Self <: Timestamp](x: Self) {
     
-    @scala.inline
-    def setTimestampFormat(value: java.lang.String): Self = StObject.set(x, "timestampFormat", value.asInstanceOf[js.Any])
+    inline def setTimestampFormat(value: java.lang.String): Self = StObject.set(x, "timestampFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampFormatUndefined: Self = StObject.set(x, "timestampFormat", js.undefined)
+    inline def setTimestampFormatUndefined: Self = StObject.set(x, "timestampFormat", js.undefined)
     
-    @scala.inline
-    def setType(value: timestamp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: timestamp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

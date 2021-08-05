@@ -62,8 +62,7 @@ trait RelationshipSchemeForPolyline
 }
 object RelationshipSchemeForPolyline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colorsForClassBreaks: js.Array[RelationshipSchemeForPolylineColorsForClassBreaks],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -79,34 +78,24 @@ object RelationshipSchemeForPolyline {
     __obj.asInstanceOf[RelationshipSchemeForPolyline]
   }
   
-  @scala.inline
-  implicit class RelationshipSchemeForPolylineMutableBuilder[Self <: RelationshipSchemeForPolyline] (val x: Self) extends AnyVal {
+  extension [Self <: RelationshipSchemeForPolyline](x: Self) {
     
-    @scala.inline
-    def setColorsForClassBreaks(value: js.Array[RelationshipSchemeForPolylineColorsForClassBreaks]): Self = StObject.set(x, "colorsForClassBreaks", value.asInstanceOf[js.Any])
+    inline def setColorsForClassBreaks(value: js.Array[RelationshipSchemeForPolylineColorsForClassBreaks]): Self = StObject.set(x, "colorsForClassBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsForClassBreaksVarargs(value: RelationshipSchemeForPolylineColorsForClassBreaks*): Self = StObject.set(x, "colorsForClassBreaks", js.Array(value :_*))
+    inline def setColorsForClassBreaksVarargs(value: RelationshipSchemeForPolylineColorsForClassBreaks*): Self = StObject.set(x, "colorsForClassBreaks", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataColor(value: Color_): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
+    inline def setNoDataColor(value: Color_): Self = StObject.set(x, "noDataColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

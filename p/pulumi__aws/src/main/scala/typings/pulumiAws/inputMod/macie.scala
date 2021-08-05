@@ -23,26 +23,20 @@ object macie {
   }
   object S3BucketAssociationClassificationType {
     
-    @scala.inline
-    def apply(): S3BucketAssociationClassificationType = {
+    inline def apply(): S3BucketAssociationClassificationType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3BucketAssociationClassificationType]
     }
     
-    @scala.inline
-    implicit class S3BucketAssociationClassificationTypeMutableBuilder[Self <: S3BucketAssociationClassificationType] (val x: Self) extends AnyVal {
+    extension [Self <: S3BucketAssociationClassificationType](x: Self) {
       
-      @scala.inline
-      def setContinuous(value: Input[String]): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+      inline def setContinuous(value: Input[String]): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+      inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
       
-      @scala.inline
-      def setOneTime(value: Input[String]): Self = StObject.set(x, "oneTime", value.asInstanceOf[js.Any])
+      inline def setOneTime(value: Input[String]): Self = StObject.set(x, "oneTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneTimeUndefined: Self = StObject.set(x, "oneTime", js.undefined)
+      inline def setOneTimeUndefined: Self = StObject.set(x, "oneTime", js.undefined)
     }
   }
 }

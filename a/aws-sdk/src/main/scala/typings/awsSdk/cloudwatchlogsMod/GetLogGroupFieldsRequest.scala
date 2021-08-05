@@ -18,22 +18,17 @@ trait GetLogGroupFieldsRequest extends StObject {
 }
 object GetLogGroupFieldsRequest {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName): GetLogGroupFieldsRequest = {
+  inline def apply(logGroupName: LogGroupName): GetLogGroupFieldsRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLogGroupFieldsRequest]
   }
   
-  @scala.inline
-  implicit class GetLogGroupFieldsRequestMutableBuilder[Self <: GetLogGroupFieldsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetLogGroupFieldsRequest](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Timestamp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Timestamp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

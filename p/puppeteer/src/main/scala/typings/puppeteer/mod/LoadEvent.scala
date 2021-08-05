@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoadEvent extends StObject
 object LoadEvent {
   
-  @scala.inline
-  def domcontentloaded: typings.puppeteer.puppeteerStrings.domcontentloaded = "domcontentloaded".asInstanceOf[typings.puppeteer.puppeteerStrings.domcontentloaded]
+  inline def domcontentloaded: typings.puppeteer.puppeteerStrings.domcontentloaded = "domcontentloaded".asInstanceOf[typings.puppeteer.puppeteerStrings.domcontentloaded]
   
-  @scala.inline
-  def load: typings.puppeteer.puppeteerStrings.load = "load".asInstanceOf[typings.puppeteer.puppeteerStrings.load]
+  inline def load: typings.puppeteer.puppeteerStrings.load = "load".asInstanceOf[typings.puppeteer.puppeteerStrings.load]
   
-  @scala.inline
-  def networkidle0: typings.puppeteer.puppeteerStrings.networkidle0 = "networkidle0".asInstanceOf[typings.puppeteer.puppeteerStrings.networkidle0]
+  inline def networkidle0: typings.puppeteer.puppeteerStrings.networkidle0 = "networkidle0".asInstanceOf[typings.puppeteer.puppeteerStrings.networkidle0]
   
-  @scala.inline
-  def networkidle2: typings.puppeteer.puppeteerStrings.networkidle2 = "networkidle2".asInstanceOf[typings.puppeteer.puppeteerStrings.networkidle2]
+  inline def networkidle2: typings.puppeteer.puppeteerStrings.networkidle2 = "networkidle2".asInstanceOf[typings.puppeteer.puppeteerStrings.networkidle2]
 }

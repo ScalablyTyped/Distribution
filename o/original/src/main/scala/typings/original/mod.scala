@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(url: js.Object): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(url: Host): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(url: String): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(url: js.Object): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(url: Host): String = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("original", JSImport.Namespace)
   @js.native
@@ -26,6 +23,5 @@ object mod {
     * @returns true if origins are the same, false otherwise
     * @api public
     */
-  @scala.inline
-  def same(a: String, b: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("same")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def same(a: String, b: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("same")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

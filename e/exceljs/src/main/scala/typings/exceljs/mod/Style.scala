@@ -24,8 +24,7 @@ trait Style extends StObject {
 }
 object Style {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignment: PartialAlignment,
     border: PartialBorders,
     fill: Fill,
@@ -37,25 +36,18 @@ object Style {
     __obj.asInstanceOf[Style]
   }
   
-  @scala.inline
-  implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+  extension [Self <: Style](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: PartialAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: PartialAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: PartialBorders): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: PartialBorders): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: Fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumFmt(value: String): Self = StObject.set(x, "numFmt", value.asInstanceOf[js.Any])
+    inline def setNumFmt(value: String): Self = StObject.set(x, "numFmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection(value: PartialProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: PartialProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait ModelScores extends StObject {
 }
 object ModelScores {
   
-  @scala.inline
-  def apply(): ModelScores = {
+  inline def apply(): ModelScores = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelScores]
   }
   
-  @scala.inline
-  implicit class ModelScoresMutableBuilder[Self <: ModelScores] (val x: Self) extends AnyVal {
+  extension [Self <: ModelScores](x: Self) {
     
-    @scala.inline
-    def setModelVersion(value: ModelVersion): Self = StObject.set(x, "modelVersion", value.asInstanceOf[js.Any])
+    inline def setModelVersion(value: ModelVersion): Self = StObject.set(x, "modelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionUndefined: Self = StObject.set(x, "modelVersion", js.undefined)
+    inline def setModelVersionUndefined: Self = StObject.set(x, "modelVersion", js.undefined)
     
-    @scala.inline
-    def setScores(value: ModelPredictionMap): Self = StObject.set(x, "scores", value.asInstanceOf[js.Any])
+    inline def setScores(value: ModelPredictionMap): Self = StObject.set(x, "scores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoresUndefined: Self = StObject.set(x, "scores", js.undefined)
+    inline def setScoresUndefined: Self = StObject.set(x, "scores", js.undefined)
   }
 }

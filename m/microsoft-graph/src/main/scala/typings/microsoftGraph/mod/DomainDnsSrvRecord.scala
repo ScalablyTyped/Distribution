@@ -28,67 +28,47 @@ trait DomainDnsSrvRecord
 }
 object DomainDnsSrvRecord {
   
-  @scala.inline
-  def apply(): DomainDnsSrvRecord = {
+  inline def apply(): DomainDnsSrvRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDnsSrvRecord]
   }
   
-  @scala.inline
-  implicit class DomainDnsSrvRecordMutableBuilder[Self <: DomainDnsSrvRecord] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDnsSrvRecord](x: Self) {
     
-    @scala.inline
-    def setNameTarget(value: NullableOption[String]): Self = StObject.set(x, "nameTarget", value.asInstanceOf[js.Any])
+    inline def setNameTarget(value: NullableOption[String]): Self = StObject.set(x, "nameTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameTargetNull: Self = StObject.set(x, "nameTarget", null)
+    inline def setNameTargetNull: Self = StObject.set(x, "nameTarget", null)
     
-    @scala.inline
-    def setNameTargetUndefined: Self = StObject.set(x, "nameTarget", js.undefined)
+    inline def setNameTargetUndefined: Self = StObject.set(x, "nameTarget", js.undefined)
     
-    @scala.inline
-    def setPort(value: NullableOption[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: NullableOption[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNull: Self = StObject.set(x, "port", null)
+    inline def setPortNull: Self = StObject.set(x, "port", null)
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setPriority(value: NullableOption[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: NullableOption[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityNull: Self = StObject.set(x, "priority", null)
+    inline def setPriorityNull: Self = StObject.set(x, "priority", null)
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: NullableOption[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: NullableOption[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolNull: Self = StObject.set(x, "protocol", null)
+    inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setService(value: NullableOption[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: NullableOption[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNull: Self = StObject.set(x, "service", null)
+    inline def setServiceNull: Self = StObject.set(x, "service", null)
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def setWeight(value: NullableOption[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: NullableOption[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightNull: Self = StObject.set(x, "weight", null)
+    inline def setWeightNull: Self = StObject.set(x, "weight", null)
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

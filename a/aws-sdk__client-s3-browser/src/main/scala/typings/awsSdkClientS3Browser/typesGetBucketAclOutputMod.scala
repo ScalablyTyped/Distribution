@@ -28,29 +28,22 @@ object typesGetBucketAclOutputMod {
   }
   object GetBucketAclOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketAclOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketAclOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketAclOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketAclOutputMutableBuilder[Self <: GetBucketAclOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketAclOutput](x: Self) {
       
-      @scala.inline
-      def setGrants(value: js.Array[UnmarshalledGrant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
+      inline def setGrants(value: js.Array[UnmarshalledGrant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
+      inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
       
-      @scala.inline
-      def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
       
-      @scala.inline
-      def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     }
   }
 }

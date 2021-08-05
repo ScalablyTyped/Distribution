@@ -10,19 +10,15 @@ trait CreateStorageDataRelationshipsTarget extends StObject {
 }
 object CreateStorageDataRelationshipsTarget {
   
-  @scala.inline
-  def apply(): CreateStorageDataRelationshipsTarget = {
+  inline def apply(): CreateStorageDataRelationshipsTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStorageDataRelationshipsTarget]
   }
   
-  @scala.inline
-  implicit class CreateStorageDataRelationshipsTargetMutableBuilder[Self <: CreateStorageDataRelationshipsTarget] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStorageDataRelationshipsTarget](x: Self) {
     
-    @scala.inline
-    def setData(value: StorageRelationshipsTargetData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StorageRelationshipsTargetData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

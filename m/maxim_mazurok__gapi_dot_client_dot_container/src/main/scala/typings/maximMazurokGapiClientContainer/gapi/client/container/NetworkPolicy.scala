@@ -14,25 +14,19 @@ trait NetworkPolicy extends StObject {
 }
 object NetworkPolicy {
   
-  @scala.inline
-  def apply(): NetworkPolicy = {
+  inline def apply(): NetworkPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkPolicy]
   }
   
-  @scala.inline
-  implicit class NetworkPolicyMutableBuilder[Self <: NetworkPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPolicy](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
   }
 }

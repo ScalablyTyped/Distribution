@@ -14,31 +14,23 @@ trait ContentLink extends StObject {
 }
 object ContentLink {
   
-  @scala.inline
-  def apply(): ContentLink = {
+  inline def apply(): ContentLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentLink]
   }
   
-  @scala.inline
-  implicit class ContentLinkMutableBuilder[Self <: ContentLink] (val x: Self) extends AnyVal {
+  extension [Self <: ContentLink](x: Self) {
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkToDestination(value: String): Self = StObject.set(x, "linkToDestination", value.asInstanceOf[js.Any])
+    inline def setLinkToDestination(value: String): Self = StObject.set(x, "linkToDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkToDestinationUndefined: Self = StObject.set(x, "linkToDestination", js.undefined)
+    inline def setLinkToDestinationUndefined: Self = StObject.set(x, "linkToDestination", js.undefined)
     
-    @scala.inline
-    def setLinkToPage(value: Double): Self = StObject.set(x, "linkToPage", value.asInstanceOf[js.Any])
+    inline def setLinkToPage(value: Double): Self = StObject.set(x, "linkToPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkToPageUndefined: Self = StObject.set(x, "linkToPage", js.undefined)
+    inline def setLinkToPageUndefined: Self = StObject.set(x, "linkToPage", js.undefined)
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
   }
 }

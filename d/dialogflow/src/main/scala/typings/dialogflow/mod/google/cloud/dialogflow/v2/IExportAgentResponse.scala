@@ -16,31 +16,23 @@ trait IExportAgentResponse extends StObject {
 }
 object IExportAgentResponse {
   
-  @scala.inline
-  def apply(): IExportAgentResponse = {
+  inline def apply(): IExportAgentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IExportAgentResponse]
   }
   
-  @scala.inline
-  implicit class IExportAgentResponseMutableBuilder[Self <: IExportAgentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IExportAgentResponse](x: Self) {
     
-    @scala.inline
-    def setAgentContent(value: Uint8Array | String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
+    inline def setAgentContent(value: Uint8Array | String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentContentNull: Self = StObject.set(x, "agentContent", null)
+    inline def setAgentContentNull: Self = StObject.set(x, "agentContent", null)
     
-    @scala.inline
-    def setAgentContentUndefined: Self = StObject.set(x, "agentContent", js.undefined)
+    inline def setAgentContentUndefined: Self = StObject.set(x, "agentContent", js.undefined)
     
-    @scala.inline
-    def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
+    inline def setAgentUri(value: String): Self = StObject.set(x, "agentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentUriNull: Self = StObject.set(x, "agentUri", null)
+    inline def setAgentUriNull: Self = StObject.set(x, "agentUri", null)
     
-    @scala.inline
-    def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
+    inline def setAgentUriUndefined: Self = StObject.set(x, "agentUri", js.undefined)
   }
 }

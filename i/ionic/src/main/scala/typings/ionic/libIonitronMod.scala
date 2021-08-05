@@ -10,8 +10,7 @@ object libIonitronMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getIonitronString(quote: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonitronString")(quote.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getIonitronString(quote: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonitronString")(quote.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object ionitronStatements {
     
@@ -22,13 +21,11 @@ object libIonitronMod {
     @JSImport("ionic/lib/ionitron", "ionitronStatements.en")
     @js.native
     def en: js.Array[String] = js.native
-    @scala.inline
-    def en_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("en")(x.asInstanceOf[js.Any])
+    inline def en_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("en")(x.asInstanceOf[js.Any])
     
     @JSImport("ionic/lib/ionitron", "ionitronStatements.es")
     @js.native
     def es: js.Array[String] = js.native
-    @scala.inline
-    def es_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("es")(x.asInstanceOf[js.Any])
+    inline def es_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("es")(x.asInstanceOf[js.Any])
   }
 }

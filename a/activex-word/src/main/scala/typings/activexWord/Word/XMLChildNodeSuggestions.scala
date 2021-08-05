@@ -16,13 +16,12 @@ trait XMLChildNodeSuggestions extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.XMLChildNodeSuggestions_typekey")
+  /* private */ @JSName("Word.XMLChildNodeSuggestions_typekey")
   var WordDotXMLChildNodeSuggestions_typekey: XMLChildNodeSuggestions
 }
 object XMLChildNodeSuggestions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object XMLChildNodeSuggestions {
     __obj.asInstanceOf[XMLChildNodeSuggestions]
   }
   
-  @scala.inline
-  implicit class XMLChildNodeSuggestionsMutableBuilder[Self <: XMLChildNodeSuggestions] (val x: Self) extends AnyVal {
+  extension [Self <: XMLChildNodeSuggestions](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => XMLChildNodeSuggestion): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => XMLChildNodeSuggestion): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotXMLChildNodeSuggestions_typekey(value: XMLChildNodeSuggestions): Self = StObject.set(x, "Word.XMLChildNodeSuggestions_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotXMLChildNodeSuggestions_typekey(value: XMLChildNodeSuggestions): Self = StObject.set(x, "Word.XMLChildNodeSuggestions_typekey", value.asInstanceOf[js.Any])
   }
 }

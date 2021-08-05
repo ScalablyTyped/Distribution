@@ -20,23 +20,18 @@ object typesSequenceNumberRangeMod {
   }
   object SequenceNumberRange {
     
-    @scala.inline
-    def apply(StartingSequenceNumber: String): SequenceNumberRange = {
+    inline def apply(StartingSequenceNumber: String): SequenceNumberRange = {
       val __obj = js.Dynamic.literal(StartingSequenceNumber = StartingSequenceNumber.asInstanceOf[js.Any])
       __obj.asInstanceOf[SequenceNumberRange]
     }
     
-    @scala.inline
-    implicit class SequenceNumberRangeMutableBuilder[Self <: SequenceNumberRange] (val x: Self) extends AnyVal {
+    extension [Self <: SequenceNumberRange](x: Self) {
       
-      @scala.inline
-      def setEndingSequenceNumber(value: String): Self = StObject.set(x, "EndingSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setEndingSequenceNumber(value: String): Self = StObject.set(x, "EndingSequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndingSequenceNumberUndefined: Self = StObject.set(x, "EndingSequenceNumber", js.undefined)
+      inline def setEndingSequenceNumberUndefined: Self = StObject.set(x, "EndingSequenceNumber", js.undefined)
       
-      @scala.inline
-      def setStartingSequenceNumber(value: String): Self = StObject.set(x, "StartingSequenceNumber", value.asInstanceOf[js.Any])
+      inline def setStartingSequenceNumber(value: String): Self = StObject.set(x, "StartingSequenceNumber", value.asInstanceOf[js.Any])
     }
   }
   

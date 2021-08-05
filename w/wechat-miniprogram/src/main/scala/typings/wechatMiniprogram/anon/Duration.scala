@@ -13,19 +13,15 @@ trait Duration extends StObject {
 }
 object Duration {
   
-  @scala.inline
-  def apply(duration: Double, height: Double): Duration = {
+  inline def apply(duration: Double, height: Double): Duration = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
   
-  @scala.inline
-  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+  extension [Self <: Duration](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

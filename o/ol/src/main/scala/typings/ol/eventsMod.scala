@@ -13,20 +13,16 @@ object eventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
-  @scala.inline
-  def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: js.Any): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
-  @scala.inline
-  def listen(
+  inline def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
+  inline def listen(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: js.Any): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
+  inline def listen(
     target: EventTargetLike,
     `type`: String,
     listener: ListenerFunction,
     opt_this: js.Any,
     opt_once: Boolean
   ): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any], opt_once.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
-  @scala.inline
-  def listen(
+  inline def listen(
     target: EventTargetLike,
     `type`: String,
     listener: ListenerFunction,
@@ -34,13 +30,10 @@ object eventsMod {
     opt_once: Boolean
   ): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any], opt_once.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
   
-  @scala.inline
-  def listenOnce(target: EventTargetLike, `type`: String, listener: ListenerFunction): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listenOnce")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
-  @scala.inline
-  def listenOnce(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: js.Any): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listenOnce")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
+  inline def listenOnce(target: EventTargetLike, `type`: String, listener: ListenerFunction): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listenOnce")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
+  inline def listenOnce(target: EventTargetLike, `type`: String, listener: ListenerFunction, opt_this: js.Any): EventsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("listenOnce")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_this.asInstanceOf[js.Any])).asInstanceOf[EventsKey]
   
-  @scala.inline
-  def unlistenByKey(key: EventsKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlistenByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unlistenByKey(key: EventsKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlistenByKey")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait EventsKey extends StObject {
     
@@ -55,24 +48,19 @@ object eventsMod {
   }
   object EventsKey {
     
-    @scala.inline
-    def apply(listener: /* p0 */ Event | default => Boolean, target: EventTargetLike, `type`: String): EventsKey = {
+    inline def apply(listener: /* p0 */ Event | default => Boolean, target: EventTargetLike, `type`: String): EventsKey = {
       val __obj = js.Dynamic.literal(listener = js.Any.fromFunction1(listener), target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventsKey]
     }
     
-    @scala.inline
-    implicit class EventsKeyMutableBuilder[Self <: EventsKey] (val x: Self) extends AnyVal {
+    extension [Self <: EventsKey](x: Self) {
       
-      @scala.inline
-      def setListener(value: /* p0 */ Event | default => Boolean): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
+      inline def setListener(value: /* p0 */ Event | default => Boolean): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTarget(value: EventTargetLike): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: EventTargetLike): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,17 +77,14 @@ object eventsMod {
   }
   object ListenerObject {
     
-    @scala.inline
-    def apply(handleEvent: /* p0 */ Event | default => Boolean): ListenerObject = {
+    inline def apply(handleEvent: /* p0 */ Event | default => Boolean): ListenerObject = {
       val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
       __obj.asInstanceOf[ListenerObject]
     }
     
-    @scala.inline
-    implicit class ListenerObjectMutableBuilder[Self <: ListenerObject] (val x: Self) extends AnyVal {
+    extension [Self <: ListenerObject](x: Self) {
       
-      @scala.inline
-      def setHandleEvent(value: /* p0 */ Event | default => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: /* p0 */ Event | default => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
 }

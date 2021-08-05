@@ -18,22 +18,17 @@ trait RmResult extends StObject {
 }
 object RmResult {
   
-  @scala.inline
-  def apply(file: String, isDir: Boolean, path: String): RmResult = {
+  inline def apply(file: String, isDir: Boolean, path: String): RmResult = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], isDir = isDir.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[RmResult]
   }
   
-  @scala.inline
-  implicit class RmResultMutableBuilder[Self <: RmResult] (val x: Self) extends AnyVal {
+  extension [Self <: RmResult](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDir(value: Boolean): Self = StObject.set(x, "isDir", value.asInstanceOf[js.Any])
+    inline def setIsDir(value: Boolean): Self = StObject.set(x, "isDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

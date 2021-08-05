@@ -160,41 +160,30 @@ object mod {
   }
   object PathOption {
     
-    @scala.inline
-    def apply(): PathOption = {
+    inline def apply(): PathOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PathOption]
     }
     
-    @scala.inline
-    implicit class PathOptionMutableBuilder[Self <: PathOption] (val x: Self) extends AnyVal {
+    extension [Self <: PathOption](x: Self) {
       
-      @scala.inline
-      def setAvoid(value: js.Array[js.Any]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
+      inline def setAvoid(value: js.Array[js.Any]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
+      inline def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)
       
-      @scala.inline
-      def setAvoidVarargs(value: js.Any*): Self = StObject.set(x, "avoid", js.Array(value :_*))
+      inline def setAvoidVarargs(value: js.Any*): Self = StObject.set(x, "avoid", js.Array(value :_*))
       
-      @scala.inline
-      def setCost(value: Boolean): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+      inline def setCost(value: Boolean): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
+      inline def setCostUndefined: Self = StObject.set(x, "cost", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
 }

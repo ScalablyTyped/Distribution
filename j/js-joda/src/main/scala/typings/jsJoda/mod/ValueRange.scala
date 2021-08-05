@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("js-joda", "ValueRange")
 @js.native
-class ValueRange protected () extends StObject {
+/* private */ class ValueRange () extends StObject {
   
   def checkValidIntValue(value: Double, field: TemporalField): Double = js.native
   
@@ -37,12 +37,9 @@ object ValueRange {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def of(minSmallest: Double, minLargest: Double, maxSmallest: Double, maxLargest: Double): ValueRange = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(minSmallest.asInstanceOf[js.Any], minLargest.asInstanceOf[js.Any], maxSmallest.asInstanceOf[js.Any], maxLargest.asInstanceOf[js.Any])).asInstanceOf[ValueRange]
+  inline def of(minSmallest: Double, minLargest: Double, maxSmallest: Double, maxLargest: Double): ValueRange = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(minSmallest.asInstanceOf[js.Any], minLargest.asInstanceOf[js.Any], maxSmallest.asInstanceOf[js.Any], maxLargest.asInstanceOf[js.Any])).asInstanceOf[ValueRange]
   /* static member */
-  @scala.inline
-  def of(min: Double, maxSmallest: Double, maxLargest: Double): ValueRange = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(min.asInstanceOf[js.Any], maxSmallest.asInstanceOf[js.Any], maxLargest.asInstanceOf[js.Any])).asInstanceOf[ValueRange]
+  inline def of(min: Double, maxSmallest: Double, maxLargest: Double): ValueRange = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(min.asInstanceOf[js.Any], maxSmallest.asInstanceOf[js.Any], maxLargest.asInstanceOf[js.Any])).asInstanceOf[ValueRange]
   /* static member */
-  @scala.inline
-  def of(min: Double, max: Double): ValueRange = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValueRange]
+  inline def of(min: Double, max: Double): ValueRange = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValueRange]
 }

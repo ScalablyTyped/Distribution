@@ -22,46 +22,33 @@ trait Extend extends StObject {
 }
 object Extend {
   
-  @scala.inline
-  def apply(): Extend = {
+  inline def apply(): Extend = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Extend]
   }
   
-  @scala.inline
-  implicit class ExtendMutableBuilder[Self <: Extend] (val x: Self) extends AnyVal {
+  extension [Self <: Extend](x: Self) {
     
-    @scala.inline
-    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setFont(value: js.Object): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: js.Object): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setLevel(value: `2`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: `2`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setResponsiveBreakpoint(value: String): Self = StObject.set(x, "responsiveBreakpoint", value.asInstanceOf[js.Any])
+    inline def setResponsiveBreakpoint(value: String): Self = StObject.set(x, "responsiveBreakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsiveBreakpointUndefined: Self = StObject.set(x, "responsiveBreakpoint", js.undefined)
+    inline def setResponsiveBreakpointUndefined: Self = StObject.set(x, "responsiveBreakpoint", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

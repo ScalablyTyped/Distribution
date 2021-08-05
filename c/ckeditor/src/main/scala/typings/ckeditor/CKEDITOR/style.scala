@@ -57,30 +57,23 @@ object style {
   }
   object customHandler {
     
-    @scala.inline
-    def apply(`type`: String | Double): customHandler = {
+    inline def apply(`type`: String | Double): customHandler = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[customHandler]
     }
     
-    @scala.inline
-    implicit class customHandlerMutableBuilder[Self <: customHandler] (val x: Self) extends AnyVal {
+    extension [Self <: customHandler](x: Self) {
       
-      @scala.inline
-      def setAssignedTo(value: Double): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
+      inline def setAssignedTo(value: Double): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
+      inline def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
       
-      @scala.inline
-      def setSetup(value: /* style */ definition => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
+      inline def setSetup(value: /* style */ definition => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+      inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
       
-      @scala.inline
-      def setType(value: String | Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,41 +110,30 @@ object style {
   }
   object definition {
     
-    @scala.inline
-    def apply(element: String): definition = {
+    inline def apply(element: String): definition = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
       __obj.asInstanceOf[definition]
     }
     
-    @scala.inline
-    implicit class definitionMutableBuilder[Self <: definition] (val x: Self) extends AnyVal {
+    extension [Self <: definition](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStyles(value: StringDictionary[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: StringDictionary[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setType(value: String | Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

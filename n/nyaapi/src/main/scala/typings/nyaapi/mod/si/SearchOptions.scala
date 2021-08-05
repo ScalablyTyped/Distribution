@@ -24,55 +24,39 @@ trait SearchOptions extends StObject {
 }
 object SearchOptions {
   
-  @scala.inline
-  def apply(): SearchOptions = {
+  inline def apply(): SearchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchOptions]
   }
   
-  @scala.inline
-  implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchOptions](x: Self) {
     
-    @scala.inline
-    def setCategory(value: Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUndefined: Self = StObject.set(x, "n", js.undefined)
+    inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
-    @scala.inline
-    def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+    inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    @scala.inline
-    def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+    inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
   }
 }

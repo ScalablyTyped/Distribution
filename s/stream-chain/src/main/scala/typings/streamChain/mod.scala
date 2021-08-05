@@ -21,10 +21,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def chain(fns: js.Array[StreamItem]): Chain_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(fns.asInstanceOf[js.Any]).asInstanceOf[Chain_]
-  @scala.inline
-  def chain(fns: js.Array[StreamItem], options: ChainOptions): Chain_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(fns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain_]
+  inline def chain(fns: js.Array[StreamItem]): Chain_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(fns.asInstanceOf[js.Any]).asInstanceOf[Chain_]
+  inline def chain(fns: js.Array[StreamItem], options: ChainOptions): Chain_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chain")(fns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chain_]
   
   trait ChainOptions
     extends StObject
@@ -34,20 +32,16 @@ object mod {
   }
   object ChainOptions {
     
-    @scala.inline
-    def apply(): ChainOptions = {
+    inline def apply(): ChainOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChainOptions]
     }
     
-    @scala.inline
-    implicit class ChainOptionsMutableBuilder[Self <: ChainOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ChainOptions](x: Self) {
       
-      @scala.inline
-      def setSkipEvents(value: Boolean): Self = StObject.set(x, "skipEvents", value.asInstanceOf[js.Any])
+      inline def setSkipEvents(value: Boolean): Self = StObject.set(x, "skipEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipEventsUndefined: Self = StObject.set(x, "skipEvents", js.undefined)
+      inline def setSkipEventsUndefined: Self = StObject.set(x, "skipEvents", js.undefined)
     }
   }
   

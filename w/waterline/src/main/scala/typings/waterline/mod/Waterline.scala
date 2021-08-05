@@ -17,8 +17,7 @@ trait Waterline extends StObject {
 }
 object Waterline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collections: js.Any,
     initialize: (Config, js.Function2[/* err */ Error, /* ontology */ Ontology, js.Any]) => js.Any,
     loadCollection: CollectionClass => Unit,
@@ -28,19 +27,14 @@ object Waterline {
     __obj.asInstanceOf[Waterline]
   }
   
-  @scala.inline
-  implicit class WaterlineMutableBuilder[Self <: Waterline] (val x: Self) extends AnyVal {
+  extension [Self <: Waterline](x: Self) {
     
-    @scala.inline
-    def setCollections(value: js.Any): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+    inline def setCollections(value: js.Any): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialize(value: (Config, js.Function2[/* err */ Error, /* ontology */ Ontology, js.Any]) => js.Any): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
+    inline def setInitialize(value: (Config, js.Function2[/* err */ Error, /* ontology */ Ontology, js.Any]) => js.Any): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadCollection(value: CollectionClass => Unit): Self = StObject.set(x, "loadCollection", js.Any.fromFunction1(value))
+    inline def setLoadCollection(value: CollectionClass => Unit): Self = StObject.set(x, "loadCollection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterModel(value: CollectionClass => Unit): Self = StObject.set(x, "registerModel", js.Any.fromFunction1(value))
+    inline def setRegisterModel(value: CollectionClass => Unit): Self = StObject.set(x, "registerModel", js.Any.fromFunction1(value))
   }
 }

@@ -33,40 +33,29 @@ trait KeyboardAvoidingViewProps
 }
 object KeyboardAvoidingViewProps {
   
-  @scala.inline
-  def apply(): KeyboardAvoidingViewProps = {
+  inline def apply(): KeyboardAvoidingViewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyboardAvoidingViewProps]
   }
   
-  @scala.inline
-  implicit class KeyboardAvoidingViewPropsMutableBuilder[Self <: KeyboardAvoidingViewProps] (val x: Self) extends AnyVal {
+  extension [Self <: KeyboardAvoidingViewProps](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: height | position | padding): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: height | position | padding): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     
-    @scala.inline
-    def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentContainerStyle", value.asInstanceOf[js.Any])
+    inline def setContentContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "contentContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentContainerStyleNull: Self = StObject.set(x, "contentContainerStyle", null)
+    inline def setContentContainerStyleNull: Self = StObject.set(x, "contentContainerStyle", null)
     
-    @scala.inline
-    def setContentContainerStyleUndefined: Self = StObject.set(x, "contentContainerStyle", js.undefined)
+    inline def setContentContainerStyleUndefined: Self = StObject.set(x, "contentContainerStyle", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setKeyboardVerticalOffset(value: Double): Self = StObject.set(x, "keyboardVerticalOffset", value.asInstanceOf[js.Any])
+    inline def setKeyboardVerticalOffset(value: Double): Self = StObject.set(x, "keyboardVerticalOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardVerticalOffsetUndefined: Self = StObject.set(x, "keyboardVerticalOffset", js.undefined)
+    inline def setKeyboardVerticalOffsetUndefined: Self = StObject.set(x, "keyboardVerticalOffset", js.undefined)
   }
 }

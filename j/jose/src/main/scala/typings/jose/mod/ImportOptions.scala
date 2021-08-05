@@ -10,19 +10,15 @@ trait ImportOptions extends StObject {
 }
 object ImportOptions {
   
-  @scala.inline
-  def apply(): ImportOptions = {
+  inline def apply(): ImportOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportOptions]
   }
   
-  @scala.inline
-  implicit class ImportOptionsMutableBuilder[Self <: ImportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImportOptions](x: Self) {
     
-    @scala.inline
-    def setCalculateMissingRSAPrimes(value: Boolean): Self = StObject.set(x, "calculateMissingRSAPrimes", value.asInstanceOf[js.Any])
+    inline def setCalculateMissingRSAPrimes(value: Boolean): Self = StObject.set(x, "calculateMissingRSAPrimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculateMissingRSAPrimesUndefined: Self = StObject.set(x, "calculateMissingRSAPrimes", js.undefined)
+    inline def setCalculateMissingRSAPrimesUndefined: Self = StObject.set(x, "calculateMissingRSAPrimes", js.undefined)
   }
 }

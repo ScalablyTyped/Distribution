@@ -13,28 +13,21 @@ trait PBKDF2Params extends StObject {
 }
 object PBKDF2Params {
   
-  @scala.inline
-  def apply(): PBKDF2Params = {
+  inline def apply(): PBKDF2Params = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PBKDF2Params]
   }
   
-  @scala.inline
-  implicit class PBKDF2ParamsMutableBuilder[Self <: PBKDF2Params] (val x: Self) extends AnyVal {
+  extension [Self <: PBKDF2Params](x: Self) {
     
-    @scala.inline
-    def setIter(value: Double): Self = StObject.set(x, "iter", value.asInstanceOf[js.Any])
+    inline def setIter(value: Double): Self = StObject.set(x, "iter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterUndefined: Self = StObject.set(x, "iter", js.undefined)
+    inline def setIterUndefined: Self = StObject.set(x, "iter", js.undefined)
     
-    @scala.inline
-    def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+    inline def setSalt(value: BitArray_): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+    inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
     
-    @scala.inline
-    def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
+    inline def setSaltVarargs(value: Double*): Self = StObject.set(x, "salt", js.Array(value :_*))
   }
 }

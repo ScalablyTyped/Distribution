@@ -97,16 +97,13 @@ object PolyfillXMLHttpRequest {
   @js.native
   val UNSENT: Double = js.native
   
-  @scala.inline
-  def addBinaryContentType(substr: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBinaryContentType")(substr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addBinaryContentType(substr: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBinaryContentType")(substr.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("rn-fetch-blob", "PolyfillXMLHttpRequest.binaryContentTypes")
   @js.native
   val binaryContentTypes: js.Array[String] = js.native
   
-  @scala.inline
-  def removeBinaryContentType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBinaryContentType")().asInstanceOf[Unit]
+  inline def removeBinaryContentType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBinaryContentType")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setLog(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLog")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLog(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLog")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

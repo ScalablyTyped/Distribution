@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
-  @scala.inline
-  def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
+  inline def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  inline def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
   @JSImport("jsreport-docx", JSImport.Namespace)
   @js.native
@@ -28,20 +26,16 @@ object mod {
     }
     object Configuration {
       
-      @scala.inline
-      def apply(): Configuration = {
+      inline def apply(): Configuration = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Configuration]
       }
       
-      @scala.inline
-      implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+      extension [Self <: Configuration](x: Self) {
         
-        @scala.inline
-        def setPreview(value: Enabled): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+        inline def setPreview(value: Enabled): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+        inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       }
     }
     
@@ -53,26 +47,20 @@ object mod {
     }
     object DocxTemplate {
       
-      @scala.inline
-      def apply(): DocxTemplate = {
+      inline def apply(): DocxTemplate = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DocxTemplate]
       }
       
-      @scala.inline
-      implicit class DocxTemplateMutableBuilder[Self <: DocxTemplate] (val x: Self) extends AnyVal {
+      extension [Self <: DocxTemplate](x: Self) {
         
-        @scala.inline
-        def setTemplateAsetShortid(value: String): Self = StObject.set(x, "templateAsetShortid", value.asInstanceOf[js.Any])
+        inline def setTemplateAsetShortid(value: String): Self = StObject.set(x, "templateAsetShortid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateAsetShortidUndefined: Self = StObject.set(x, "templateAsetShortid", js.undefined)
+        inline def setTemplateAsetShortidUndefined: Self = StObject.set(x, "templateAsetShortid", js.undefined)
         
-        @scala.inline
-        def setTemplateAsset(value: Content): Self = StObject.set(x, "templateAsset", value.asInstanceOf[js.Any])
+        inline def setTemplateAsset(value: Content): Self = StObject.set(x, "templateAsset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateAssetUndefined: Self = StObject.set(x, "templateAsset", js.undefined)
+        inline def setTemplateAssetUndefined: Self = StObject.set(x, "templateAsset", js.undefined)
       }
     }
   }
@@ -86,20 +74,16 @@ object mod {
     }
     object Template {
       
-      @scala.inline
-      def apply(): Template = {
+      inline def apply(): Template = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Template]
       }
       
-      @scala.inline
-      implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+      extension [Self <: Template](x: Self) {
         
-        @scala.inline
-        def setDocx(value: DocxTemplate): Self = StObject.set(x, "docx", value.asInstanceOf[js.Any])
+        inline def setDocx(value: DocxTemplate): Self = StObject.set(x, "docx", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDocxUndefined: Self = StObject.set(x, "docx", js.undefined)
+        inline def setDocxUndefined: Self = StObject.set(x, "docx", js.undefined)
       }
     }
   }

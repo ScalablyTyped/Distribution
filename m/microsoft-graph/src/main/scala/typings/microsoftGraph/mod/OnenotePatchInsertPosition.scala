@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnenotePatchInsertPosition extends StObject
 object OnenotePatchInsertPosition {
   
-  @scala.inline
-  def After: typings.microsoftGraph.microsoftGraphStrings.After = "After".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.After]
+  inline def After: typings.microsoftGraph.microsoftGraphStrings.After = "After".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.After]
   
-  @scala.inline
-  def Before: typings.microsoftGraph.microsoftGraphStrings.Before = "Before".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Before]
+  inline def Before: typings.microsoftGraph.microsoftGraphStrings.Before = "Before".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.Before]
 }

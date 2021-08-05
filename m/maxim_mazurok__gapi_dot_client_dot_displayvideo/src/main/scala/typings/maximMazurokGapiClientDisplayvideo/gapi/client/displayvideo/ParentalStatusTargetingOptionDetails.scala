@@ -11,19 +11,15 @@ trait ParentalStatusTargetingOptionDetails extends StObject {
 }
 object ParentalStatusTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ParentalStatusTargetingOptionDetails = {
+  inline def apply(): ParentalStatusTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParentalStatusTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ParentalStatusTargetingOptionDetailsMutableBuilder[Self <: ParentalStatusTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ParentalStatusTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setParentalStatus(value: String): Self = StObject.set(x, "parentalStatus", value.asInstanceOf[js.Any])
+    inline def setParentalStatus(value: String): Self = StObject.set(x, "parentalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentalStatusUndefined: Self = StObject.set(x, "parentalStatus", js.undefined)
+    inline def setParentalStatusUndefined: Self = StObject.set(x, "parentalStatus", js.undefined)
   }
 }

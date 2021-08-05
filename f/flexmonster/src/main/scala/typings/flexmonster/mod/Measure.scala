@@ -24,64 +24,45 @@ trait Measure extends StObject {
 }
 object Measure {
   
-  @scala.inline
-  def apply(): Measure = {
+  inline def apply(): Measure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Measure]
   }
   
-  @scala.inline
-  implicit class MeasureMutableBuilder[Self <: Measure] (val x: Self) extends AnyVal {
+  extension [Self <: Measure](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
+    inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationUndefined: Self = StObject.set(x, "aggregation", js.undefined)
+    inline def setAggregationUndefined: Self = StObject.set(x, "aggregation", js.undefined)
     
-    @scala.inline
-    def setAvailableAggregations(value: js.Array[String]): Self = StObject.set(x, "availableAggregations", value.asInstanceOf[js.Any])
+    inline def setAvailableAggregations(value: js.Array[String]): Self = StObject.set(x, "availableAggregations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableAggregationsUndefined: Self = StObject.set(x, "availableAggregations", js.undefined)
+    inline def setAvailableAggregationsUndefined: Self = StObject.set(x, "availableAggregations", js.undefined)
     
-    @scala.inline
-    def setAvailableAggregationsVarargs(value: String*): Self = StObject.set(x, "availableAggregations", js.Array(value :_*))
+    inline def setAvailableAggregationsVarargs(value: String*): Self = StObject.set(x, "availableAggregations", js.Array(value :_*))
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setGrandTotalCaption(value: String): Self = StObject.set(x, "grandTotalCaption", value.asInstanceOf[js.Any])
+    inline def setGrandTotalCaption(value: String): Self = StObject.set(x, "grandTotalCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrandTotalCaptionUndefined: Self = StObject.set(x, "grandTotalCaption", js.undefined)
+    inline def setGrandTotalCaptionUndefined: Self = StObject.set(x, "grandTotalCaption", js.undefined)
     
-    @scala.inline
-    def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+    inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
   }
 }

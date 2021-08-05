@@ -12,25 +12,19 @@ trait Apnsdevicetoken extends StObject {
 }
 object Apnsdevicetoken {
   
-  @scala.inline
-  def apply(): Apnsdevicetoken = {
+  inline def apply(): Apnsdevicetoken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Apnsdevicetoken]
   }
   
-  @scala.inline
-  implicit class ApnsdevicetokenMutableBuilder[Self <: Apnsdevicetoken] (val x: Self) extends AnyVal {
+  extension [Self <: Apnsdevicetoken](x: Self) {
     
-    @scala.inline
-    def setApns_device_token(value: String): Self = StObject.set(x, "apns_device_token", value.asInstanceOf[js.Any])
+    inline def setApns_device_token(value: String): Self = StObject.set(x, "apns_device_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApns_device_tokenUndefined: Self = StObject.set(x, "apns_device_token", js.undefined)
+    inline def setApns_device_tokenUndefined: Self = StObject.set(x, "apns_device_token", js.undefined)
     
-    @scala.inline
-    def setApns_environment(value: String): Self = StObject.set(x, "apns_environment", value.asInstanceOf[js.Any])
+    inline def setApns_environment(value: String): Self = StObject.set(x, "apns_environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApns_environmentUndefined: Self = StObject.set(x, "apns_environment", js.undefined)
+    inline def setApns_environmentUndefined: Self = StObject.set(x, "apns_environment", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait ModifyRecommendationDetail extends StObject {
 }
 object ModifyRecommendationDetail {
   
-  @scala.inline
-  def apply(): ModifyRecommendationDetail = {
+  inline def apply(): ModifyRecommendationDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyRecommendationDetail]
   }
   
-  @scala.inline
-  implicit class ModifyRecommendationDetailMutableBuilder[Self <: ModifyRecommendationDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyRecommendationDetail](x: Self) {
     
-    @scala.inline
-    def setTargetInstances(value: TargetInstancesList): Self = StObject.set(x, "TargetInstances", value.asInstanceOf[js.Any])
+    inline def setTargetInstances(value: TargetInstancesList): Self = StObject.set(x, "TargetInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetInstancesUndefined: Self = StObject.set(x, "TargetInstances", js.undefined)
+    inline def setTargetInstancesUndefined: Self = StObject.set(x, "TargetInstances", js.undefined)
     
-    @scala.inline
-    def setTargetInstancesVarargs(value: TargetInstance*): Self = StObject.set(x, "TargetInstances", js.Array(value :_*))
+    inline def setTargetInstancesVarargs(value: TargetInstance*): Self = StObject.set(x, "TargetInstances", js.Array(value :_*))
   }
 }

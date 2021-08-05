@@ -31,70 +31,49 @@ trait MotionToastProps extends StObject {
 }
 object MotionToastProps {
   
-  @scala.inline
-  def apply(): MotionToastProps = {
+  inline def apply(): MotionToastProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MotionToastProps]
   }
   
-  @scala.inline
-  implicit class MotionToastPropsMutableBuilder[Self <: MotionToastProps] (val x: Self) extends AnyVal {
+  extension [Self <: MotionToastProps](x: Self) {
     
-    @scala.inline
-    def setAnimationConfig(value: Delay): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
+    inline def setAnimationConfig(value: Delay): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationConfigUndefined: Self = StObject.set(x, "animationConfig", js.undefined)
+    inline def setAnimationConfigUndefined: Self = StObject.set(x, "animationConfig", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setHideDuration(value: Double): Self = StObject.set(x, "hideDuration", value.asInstanceOf[js.Any])
+    inline def setHideDuration(value: Double): Self = StObject.set(x, "hideDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideDurationUndefined: Self = StObject.set(x, "hideDuration", js.undefined)
+    inline def setHideDurationUndefined: Self = StObject.set(x, "hideDuration", js.undefined)
     
-    @scala.inline
-    def setInitScale(value: Double): Self = StObject.set(x, "initScale", value.asInstanceOf[js.Any])
+    inline def setInitScale(value: Double): Self = StObject.set(x, "initScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitScaleUndefined: Self = StObject.set(x, "initScale", js.undefined)
+    inline def setInitScaleUndefined: Self = StObject.set(x, "initScale", js.undefined)
     
-    @scala.inline
-    def setOnFinish(value: () => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction0(value))
+    inline def setOnFinish(value: () => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
+    inline def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+    inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDuration(value: Double): Self = StObject.set(x, "showDuration", value.asInstanceOf[js.Any])
+    inline def setShowDuration(value: Double): Self = StObject.set(x, "showDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDurationUndefined: Self = StObject.set(x, "showDuration", js.undefined)
+    inline def setShowDurationUndefined: Self = StObject.set(x, "showDuration", js.undefined)
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

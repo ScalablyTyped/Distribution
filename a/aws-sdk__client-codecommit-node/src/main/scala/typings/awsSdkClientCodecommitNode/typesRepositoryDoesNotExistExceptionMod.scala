@@ -66,17 +66,14 @@ object typesRepositoryDoesNotExistExceptionMod {
   }
   object RepositoryDoesNotExistException {
     
-    @scala.inline
-    def apply(): RepositoryDoesNotExistException = {
+    inline def apply(): RepositoryDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "RepositoryDoesNotExistException")
       __obj.asInstanceOf[RepositoryDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class RepositoryDoesNotExistExceptionMutableBuilder[Self <: RepositoryDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

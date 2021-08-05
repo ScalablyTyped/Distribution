@@ -21,8 +21,7 @@ trait UncaughtPromiseError
 }
 object UncaughtPromiseError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     message: String,
     name: String,
     promise: js.Promise[js.Any],
@@ -34,25 +33,18 @@ object UncaughtPromiseError {
     __obj.asInstanceOf[UncaughtPromiseError]
   }
   
-  @scala.inline
-  implicit class UncaughtPromiseErrorMutableBuilder[Self <: UncaughtPromiseError] (val x: Self) extends AnyVal {
+  extension [Self <: UncaughtPromiseError](x: Self) {
     
-    @scala.inline
-    def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: js.Promise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejection(value: js.Any): Self = StObject.set(x, "rejection", value.asInstanceOf[js.Any])
+    inline def setRejection(value: js.Any): Self = StObject.set(x, "rejection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrowOriginal(value: Boolean): Self = StObject.set(x, "throwOriginal", value.asInstanceOf[js.Any])
+    inline def setThrowOriginal(value: Boolean): Self = StObject.set(x, "throwOriginal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrowOriginalUndefined: Self = StObject.set(x, "throwOriginal", js.undefined)
+    inline def setThrowOriginalUndefined: Self = StObject.set(x, "throwOriginal", js.undefined)
     
-    @scala.inline
-    def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }
 }

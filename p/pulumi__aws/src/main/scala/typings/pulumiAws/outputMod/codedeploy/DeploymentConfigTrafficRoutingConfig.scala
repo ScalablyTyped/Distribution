@@ -23,31 +23,23 @@ trait DeploymentConfigTrafficRoutingConfig extends StObject {
 }
 object DeploymentConfigTrafficRoutingConfig {
   
-  @scala.inline
-  def apply(): DeploymentConfigTrafficRoutingConfig = {
+  inline def apply(): DeploymentConfigTrafficRoutingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentConfigTrafficRoutingConfig]
   }
   
-  @scala.inline
-  implicit class DeploymentConfigTrafficRoutingConfigMutableBuilder[Self <: DeploymentConfigTrafficRoutingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentConfigTrafficRoutingConfig](x: Self) {
     
-    @scala.inline
-    def setTimeBasedCanary(value: DeploymentConfigTrafficRoutingConfigTimeBasedCanary): Self = StObject.set(x, "timeBasedCanary", value.asInstanceOf[js.Any])
+    inline def setTimeBasedCanary(value: DeploymentConfigTrafficRoutingConfigTimeBasedCanary): Self = StObject.set(x, "timeBasedCanary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeBasedCanaryUndefined: Self = StObject.set(x, "timeBasedCanary", js.undefined)
+    inline def setTimeBasedCanaryUndefined: Self = StObject.set(x, "timeBasedCanary", js.undefined)
     
-    @scala.inline
-    def setTimeBasedLinear(value: DeploymentConfigTrafficRoutingConfigTimeBasedLinear): Self = StObject.set(x, "timeBasedLinear", value.asInstanceOf[js.Any])
+    inline def setTimeBasedLinear(value: DeploymentConfigTrafficRoutingConfigTimeBasedLinear): Self = StObject.set(x, "timeBasedLinear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeBasedLinearUndefined: Self = StObject.set(x, "timeBasedLinear", js.undefined)
+    inline def setTimeBasedLinearUndefined: Self = StObject.set(x, "timeBasedLinear", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

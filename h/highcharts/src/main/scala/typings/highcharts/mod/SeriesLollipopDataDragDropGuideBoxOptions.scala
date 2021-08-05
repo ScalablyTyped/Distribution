@@ -13,19 +13,15 @@ trait SeriesLollipopDataDragDropGuideBoxOptions extends StObject {
 }
 object SeriesLollipopDataDragDropGuideBoxOptions {
   
-  @scala.inline
-  def apply(): SeriesLollipopDataDragDropGuideBoxOptions = {
+  inline def apply(): SeriesLollipopDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesLollipopDataDragDropGuideBoxOptions]
   }
   
-  @scala.inline
-  implicit class SeriesLollipopDataDragDropGuideBoxOptionsMutableBuilder[Self <: SeriesLollipopDataDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesLollipopDataDragDropGuideBoxOptions](x: Self) {
     
-    @scala.inline
-    def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

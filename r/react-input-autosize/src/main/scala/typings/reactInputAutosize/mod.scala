@@ -47,62 +47,44 @@ object mod {
   }
   object AutosizeInputProps {
     
-    @scala.inline
-    def apply(): AutosizeInputProps = {
+    inline def apply(): AutosizeInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutosizeInputProps]
     }
     
-    @scala.inline
-    implicit class AutosizeInputPropsMutableBuilder[Self <: AutosizeInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: AutosizeInputProps](x: Self) {
       
-      @scala.inline
-      def setExtraWidth(value: String | Double): Self = StObject.set(x, "extraWidth", value.asInstanceOf[js.Any])
+      inline def setExtraWidth(value: String | Double): Self = StObject.set(x, "extraWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraWidthUndefined: Self = StObject.set(x, "extraWidth", js.undefined)
+      inline def setExtraWidthUndefined: Self = StObject.set(x, "extraWidth", js.undefined)
       
-      @scala.inline
-      def setInjectStyles(value: Boolean): Self = StObject.set(x, "injectStyles", value.asInstanceOf[js.Any])
+      inline def setInjectStyles(value: Boolean): Self = StObject.set(x, "injectStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectStylesUndefined: Self = StObject.set(x, "injectStyles", js.undefined)
+      inline def setInjectStylesUndefined: Self = StObject.set(x, "injectStyles", js.undefined)
       
-      @scala.inline
-      def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
+      inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
+      inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
       
-      @scala.inline
-      def setInputRef(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRef(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      @scala.inline
-      def setInputStyle(value: CSSProperties): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+      inline def setInputStyle(value: CSSProperties): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
+      inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: String | Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: String | Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setOnAutosize(value: /* inputWidth */ String | Double => Unit): Self = StObject.set(x, "onAutosize", js.Any.fromFunction1(value))
+      inline def setOnAutosize(value: /* inputWidth */ String | Double => Unit): Self = StObject.set(x, "onAutosize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAutosizeUndefined: Self = StObject.set(x, "onAutosize", js.undefined)
+      inline def setOnAutosizeUndefined: Self = StObject.set(x, "onAutosize", js.undefined)
       
-      @scala.inline
-      def setPlaceholderIsMinWidth(value: Boolean): Self = StObject.set(x, "placeholderIsMinWidth", value.asInstanceOf[js.Any])
+      inline def setPlaceholderIsMinWidth(value: Boolean): Self = StObject.set(x, "placeholderIsMinWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderIsMinWidthUndefined: Self = StObject.set(x, "placeholderIsMinWidth", js.undefined)
+      inline def setPlaceholderIsMinWidthUndefined: Self = StObject.set(x, "placeholderIsMinWidth", js.undefined)
     }
   }
 }

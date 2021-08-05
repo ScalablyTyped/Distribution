@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CloudAppSecuritySessionControlType extends StObject
 object CloudAppSecuritySessionControlType {
   
-  @scala.inline
-  def blockDownloads: typings.microsoftGraph.microsoftGraphStrings.blockDownloads = "blockDownloads".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockDownloads]
+  inline def blockDownloads: typings.microsoftGraph.microsoftGraphStrings.blockDownloads = "blockDownloads".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockDownloads]
   
-  @scala.inline
-  def mcasConfigured: typings.microsoftGraph.microsoftGraphStrings.mcasConfigured = "mcasConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mcasConfigured]
+  inline def mcasConfigured: typings.microsoftGraph.microsoftGraphStrings.mcasConfigured = "mcasConfigured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mcasConfigured]
   
-  @scala.inline
-  def monitorOnly: typings.microsoftGraph.microsoftGraphStrings.monitorOnly = "monitorOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorOnly]
+  inline def monitorOnly: typings.microsoftGraph.microsoftGraphStrings.monitorOnly = "monitorOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.monitorOnly]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

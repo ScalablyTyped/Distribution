@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaKeyStatus extends StObject
 object MediaKeyStatus {
   
-  @scala.inline
-  def expired: typings.std.stdStrings.expired = "expired".asInstanceOf[typings.std.stdStrings.expired]
+  inline def expired: typings.std.stdStrings.expired = "expired".asInstanceOf[typings.std.stdStrings.expired]
   
-  @scala.inline
-  def `internal-error`: typings.std.stdStrings.`internal-error` = "internal-error".asInstanceOf[typings.std.stdStrings.`internal-error`]
+  inline def `internal-error`: typings.std.stdStrings.`internal-error` = "internal-error".asInstanceOf[typings.std.stdStrings.`internal-error`]
   
-  @scala.inline
-  def `output-downscaled`: typings.std.stdStrings.`output-downscaled` = "output-downscaled".asInstanceOf[typings.std.stdStrings.`output-downscaled`]
+  inline def `output-downscaled`: typings.std.stdStrings.`output-downscaled` = "output-downscaled".asInstanceOf[typings.std.stdStrings.`output-downscaled`]
   
-  @scala.inline
-  def `output-restricted`: typings.std.stdStrings.`output-restricted` = "output-restricted".asInstanceOf[typings.std.stdStrings.`output-restricted`]
+  inline def `output-restricted`: typings.std.stdStrings.`output-restricted` = "output-restricted".asInstanceOf[typings.std.stdStrings.`output-restricted`]
   
-  @scala.inline
-  def released: typings.std.stdStrings.released = "released".asInstanceOf[typings.std.stdStrings.released]
+  inline def released: typings.std.stdStrings.released = "released".asInstanceOf[typings.std.stdStrings.released]
   
-  @scala.inline
-  def `status-pending`: typings.std.stdStrings.`status-pending` = "status-pending".asInstanceOf[typings.std.stdStrings.`status-pending`]
+  inline def `status-pending`: typings.std.stdStrings.`status-pending` = "status-pending".asInstanceOf[typings.std.stdStrings.`status-pending`]
   
-  @scala.inline
-  def usable: typings.std.stdStrings.usable = "usable".asInstanceOf[typings.std.stdStrings.usable]
+  inline def usable: typings.std.stdStrings.usable = "usable".asInstanceOf[typings.std.stdStrings.usable]
 }

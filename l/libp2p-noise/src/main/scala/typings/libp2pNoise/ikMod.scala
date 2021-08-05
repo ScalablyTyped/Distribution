@@ -19,20 +19,20 @@ object ikMod {
     
     def initSession(initiator: Boolean, prologue: bytes32, s: KeyPair, rs: bytes32): NoiseSession = js.native
     
-    var initializeInitiator: js.Any = js.native
+    /* private */ var initializeInitiator: js.Any = js.native
     
-    var initializeResponder: js.Any = js.native
+    /* private */ var initializeResponder: js.Any = js.native
     
-    var readMessageA: js.Any = js.native
+    /* private */ var readMessageA: js.Any = js.native
     
-    var readMessageB: js.Any = js.native
+    /* private */ var readMessageB: js.Any = js.native
     
     def recvMessage(session: NoiseSession, message: MessageBuffer): Plaintext = js.native
     
     def sendMessage(session: NoiseSession, message: bytes): MessageBuffer = js.native
     
-    var writeMessageA: js.Any = js.native
+    /* private */ var writeMessageA: js.Any = js.native
     
-    var writeMessageB: js.Any = js.native
+    /* private */ var writeMessageB: js.Any = js.native
   }
 }

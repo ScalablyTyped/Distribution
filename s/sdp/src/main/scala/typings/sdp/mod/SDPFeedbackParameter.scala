@@ -12,20 +12,16 @@ trait SDPFeedbackParameter extends StObject {
 }
 object SDPFeedbackParameter {
   
-  @scala.inline
-  def apply(parameter: String, `type`: String): SDPFeedbackParameter = {
+  inline def apply(parameter: String, `type`: String): SDPFeedbackParameter = {
     val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPFeedbackParameter]
   }
   
-  @scala.inline
-  implicit class SDPFeedbackParameterMutableBuilder[Self <: SDPFeedbackParameter] (val x: Self) extends AnyVal {
+  extension [Self <: SDPFeedbackParameter](x: Self) {
     
-    @scala.inline
-    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

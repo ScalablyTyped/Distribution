@@ -15,7 +15,7 @@ object amtRatingPopoverMod {
       */
     def this(options: AskmethatRatingPopoverOptions) = this()
     
-    var _options: js.Any = js.native
+    /* private */ var _options: js.Any = js.native
     
     /**
       * @function get the default option for the rating
@@ -81,32 +81,24 @@ object amtRatingPopoverMod {
   }
   object AskmethatRatingPopoverOptions {
     
-    @scala.inline
-    def apply(color: String, fontClass: String, values: js.Array[Double]): AskmethatRatingPopoverOptions = {
+    inline def apply(color: String, fontClass: String, values: js.Array[Double]): AskmethatRatingPopoverOptions = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], fontClass = fontClass.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[AskmethatRatingPopoverOptions]
     }
     
-    @scala.inline
-    implicit class AskmethatRatingPopoverOptionsMutableBuilder[Self <: AskmethatRatingPopoverOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AskmethatRatingPopoverOptions](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: AskmethatRatingPopoverDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: AskmethatRatingPopoverDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setFontClass(value: String): Self = StObject.set(x, "fontClass", value.asInstanceOf[js.Any])
+      inline def setFontClass(value: String): Self = StObject.set(x, "fontClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

@@ -40,46 +40,33 @@ trait SchemaBuildBazelRemoteExecutionV2CacheCapabilities extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2CacheCapabilities {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2CacheCapabilities = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2CacheCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2CacheCapabilities]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2CacheCapabilitiesMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2CacheCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2CacheCapabilities](x: Self) {
     
-    @scala.inline
-    def setActionCacheUpdateCapabilities(value: SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities): Self = StObject.set(x, "actionCacheUpdateCapabilities", value.asInstanceOf[js.Any])
+    inline def setActionCacheUpdateCapabilities(value: SchemaBuildBazelRemoteExecutionV2ActionCacheUpdateCapabilities): Self = StObject.set(x, "actionCacheUpdateCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionCacheUpdateCapabilitiesUndefined: Self = StObject.set(x, "actionCacheUpdateCapabilities", js.undefined)
+    inline def setActionCacheUpdateCapabilitiesUndefined: Self = StObject.set(x, "actionCacheUpdateCapabilities", js.undefined)
     
-    @scala.inline
-    def setCachePriorityCapabilities(value: SchemaBuildBazelRemoteExecutionV2PriorityCapabilities): Self = StObject.set(x, "cachePriorityCapabilities", value.asInstanceOf[js.Any])
+    inline def setCachePriorityCapabilities(value: SchemaBuildBazelRemoteExecutionV2PriorityCapabilities): Self = StObject.set(x, "cachePriorityCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachePriorityCapabilitiesUndefined: Self = StObject.set(x, "cachePriorityCapabilities", js.undefined)
+    inline def setCachePriorityCapabilitiesUndefined: Self = StObject.set(x, "cachePriorityCapabilities", js.undefined)
     
-    @scala.inline
-    def setDigestFunction(value: js.Array[String]): Self = StObject.set(x, "digestFunction", value.asInstanceOf[js.Any])
+    inline def setDigestFunction(value: js.Array[String]): Self = StObject.set(x, "digestFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestFunctionUndefined: Self = StObject.set(x, "digestFunction", js.undefined)
+    inline def setDigestFunctionUndefined: Self = StObject.set(x, "digestFunction", js.undefined)
     
-    @scala.inline
-    def setDigestFunctionVarargs(value: String*): Self = StObject.set(x, "digestFunction", js.Array(value :_*))
+    inline def setDigestFunctionVarargs(value: String*): Self = StObject.set(x, "digestFunction", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxBatchTotalSizeBytes(value: String): Self = StObject.set(x, "maxBatchTotalSizeBytes", value.asInstanceOf[js.Any])
+    inline def setMaxBatchTotalSizeBytes(value: String): Self = StObject.set(x, "maxBatchTotalSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBatchTotalSizeBytesUndefined: Self = StObject.set(x, "maxBatchTotalSizeBytes", js.undefined)
+    inline def setMaxBatchTotalSizeBytesUndefined: Self = StObject.set(x, "maxBatchTotalSizeBytes", js.undefined)
     
-    @scala.inline
-    def setSymlinkAbsolutePathStrategy(value: String): Self = StObject.set(x, "symlinkAbsolutePathStrategy", value.asInstanceOf[js.Any])
+    inline def setSymlinkAbsolutePathStrategy(value: String): Self = StObject.set(x, "symlinkAbsolutePathStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymlinkAbsolutePathStrategyUndefined: Self = StObject.set(x, "symlinkAbsolutePathStrategy", js.undefined)
+    inline def setSymlinkAbsolutePathStrategyUndefined: Self = StObject.set(x, "symlinkAbsolutePathStrategy", js.undefined)
   }
 }

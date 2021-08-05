@@ -13,19 +13,15 @@ trait PollForTaskOutput extends StObject {
 }
 object PollForTaskOutput {
   
-  @scala.inline
-  def apply(): PollForTaskOutput = {
+  inline def apply(): PollForTaskOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PollForTaskOutput]
   }
   
-  @scala.inline
-  implicit class PollForTaskOutputMutableBuilder[Self <: PollForTaskOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PollForTaskOutput](x: Self) {
     
-    @scala.inline
-    def setTaskObject(value: TaskObject): Self = StObject.set(x, "taskObject", value.asInstanceOf[js.Any])
+    inline def setTaskObject(value: TaskObject): Self = StObject.set(x, "taskObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskObjectUndefined: Self = StObject.set(x, "taskObject", js.undefined)
+    inline def setTaskObjectUndefined: Self = StObject.set(x, "taskObject", js.undefined)
   }
 }

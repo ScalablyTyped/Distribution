@@ -16,23 +16,18 @@ object anon {
   }
   object Format {
     
-    @scala.inline
-    def apply(format: String, variant: String, version: Unit): Format = {
+    inline def apply(format: String, variant: String, version: Unit): Format = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], variant = variant.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Format]
     }
     
-    @scala.inline
-    implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+    extension [Self <: Format](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Unit): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Unit): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,23 +41,18 @@ object anon {
   }
   object Variant {
     
-    @scala.inline
-    def apply(format: String, variant: String, version: Double): Variant = {
+    inline def apply(format: String, variant: String, version: Double): Variant = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], variant = variant.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Variant]
     }
     
-    @scala.inline
-    implicit class VariantMutableBuilder[Self <: Variant] (val x: Self) extends AnyVal {
+    extension [Self <: Variant](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+      inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

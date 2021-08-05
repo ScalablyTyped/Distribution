@@ -13,19 +13,15 @@ trait DisassociateDeviceFromRoomRequest extends StObject {
 }
 object DisassociateDeviceFromRoomRequest {
   
-  @scala.inline
-  def apply(): DisassociateDeviceFromRoomRequest = {
+  inline def apply(): DisassociateDeviceFromRoomRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateDeviceFromRoomRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateDeviceFromRoomRequestMutableBuilder[Self <: DisassociateDeviceFromRoomRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateDeviceFromRoomRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceArnUndefined: Self = StObject.set(x, "DeviceArn", js.undefined)
+    inline def setDeviceArnUndefined: Self = StObject.set(x, "DeviceArn", js.undefined)
   }
 }

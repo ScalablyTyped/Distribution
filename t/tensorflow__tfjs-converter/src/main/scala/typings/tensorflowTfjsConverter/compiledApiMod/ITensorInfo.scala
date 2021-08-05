@@ -21,49 +21,35 @@ trait ITensorInfo extends StObject {
 }
 object ITensorInfo {
   
-  @scala.inline
-  def apply(): ITensorInfo = {
+  inline def apply(): ITensorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITensorInfo]
   }
   
-  @scala.inline
-  implicit class ITensorInfoMutableBuilder[Self <: ITensorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ITensorInfo](x: Self) {
     
-    @scala.inline
-    def setCooSparse(value: ICooSparse): Self = StObject.set(x, "cooSparse", value.asInstanceOf[js.Any])
+    inline def setCooSparse(value: ICooSparse): Self = StObject.set(x, "cooSparse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCooSparseNull: Self = StObject.set(x, "cooSparse", null)
+    inline def setCooSparseNull: Self = StObject.set(x, "cooSparse", null)
     
-    @scala.inline
-    def setCooSparseUndefined: Self = StObject.set(x, "cooSparse", js.undefined)
+    inline def setCooSparseUndefined: Self = StObject.set(x, "cooSparse", js.undefined)
     
-    @scala.inline
-    def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+    inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDtypeNull: Self = StObject.set(x, "dtype", null)
+    inline def setDtypeNull: Self = StObject.set(x, "dtype", null)
     
-    @scala.inline
-    def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+    inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTensorShape(value: ITensorShape): Self = StObject.set(x, "tensorShape", value.asInstanceOf[js.Any])
+    inline def setTensorShape(value: ITensorShape): Self = StObject.set(x, "tensorShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTensorShapeNull: Self = StObject.set(x, "tensorShape", null)
+    inline def setTensorShapeNull: Self = StObject.set(x, "tensorShape", null)
     
-    @scala.inline
-    def setTensorShapeUndefined: Self = StObject.set(x, "tensorShape", js.undefined)
+    inline def setTensorShapeUndefined: Self = StObject.set(x, "tensorShape", js.undefined)
   }
 }

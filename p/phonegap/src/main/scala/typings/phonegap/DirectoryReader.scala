@@ -13,19 +13,16 @@ trait DirectoryReader extends StObject {
 }
 object DirectoryReader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     readEntries: (js.Function1[/* entries */ FileSystemEntry, Unit], js.Function1[/* error */ FileError, Unit]) => Unit
   ): DirectoryReader = {
     val __obj = js.Dynamic.literal(readEntries = js.Any.fromFunction2(readEntries))
     __obj.asInstanceOf[DirectoryReader]
   }
   
-  @scala.inline
-  implicit class DirectoryReaderMutableBuilder[Self <: DirectoryReader] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryReader](x: Self) {
     
-    @scala.inline
-    def setReadEntries(
+    inline def setReadEntries(
       value: (js.Function1[/* entries */ FileSystemEntry, Unit], js.Function1[/* error */ FileError, Unit]) => Unit
     ): Self = StObject.set(x, "readEntries", js.Any.fromFunction2(value))
   }

@@ -62,55 +62,39 @@ trait SchemaRevisionSpec extends StObject {
 }
 object SchemaRevisionSpec {
   
-  @scala.inline
-  def apply(): SchemaRevisionSpec = {
+  inline def apply(): SchemaRevisionSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevisionSpec]
   }
   
-  @scala.inline
-  implicit class SchemaRevisionSpecMutableBuilder[Self <: SchemaRevisionSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevisionSpec](x: Self) {
     
-    @scala.inline
-    def setConcurrencyModel(value: String): Self = StObject.set(x, "concurrencyModel", value.asInstanceOf[js.Any])
+    inline def setConcurrencyModel(value: String): Self = StObject.set(x, "concurrencyModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrencyModelUndefined: Self = StObject.set(x, "concurrencyModel", js.undefined)
+    inline def setConcurrencyModelUndefined: Self = StObject.set(x, "concurrencyModel", js.undefined)
     
-    @scala.inline
-    def setContainer(value: SchemaContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: SchemaContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerConcurrency(value: Double): Self = StObject.set(x, "containerConcurrency", value.asInstanceOf[js.Any])
+    inline def setContainerConcurrency(value: Double): Self = StObject.set(x, "containerConcurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerConcurrencyUndefined: Self = StObject.set(x, "containerConcurrency", js.undefined)
+    inline def setContainerConcurrencyUndefined: Self = StObject.set(x, "containerConcurrency", js.undefined)
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setServiceAccountName(value: String): Self = StObject.set(x, "serviceAccountName", value.asInstanceOf[js.Any])
+    inline def setServiceAccountName(value: String): Self = StObject.set(x, "serviceAccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountNameUndefined: Self = StObject.set(x, "serviceAccountName", js.undefined)
+    inline def setServiceAccountNameUndefined: Self = StObject.set(x, "serviceAccountName", js.undefined)
     
-    @scala.inline
-    def setServingState(value: String): Self = StObject.set(x, "servingState", value.asInstanceOf[js.Any])
+    inline def setServingState(value: String): Self = StObject.set(x, "servingState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServingStateUndefined: Self = StObject.set(x, "servingState", js.undefined)
+    inline def setServingStateUndefined: Self = StObject.set(x, "servingState", js.undefined)
     
-    @scala.inline
-    def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutSeconds(value: Double): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
+    inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
   }
 }

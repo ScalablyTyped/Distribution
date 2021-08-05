@@ -27,8 +27,7 @@ trait CompletionsQueryResult extends StObject {
 }
 object CompletionsQueryResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completions: js.Array[Depth | String],
     end: Double | Position,
     isProperty: Boolean,
@@ -38,22 +37,16 @@ object CompletionsQueryResult {
     __obj.asInstanceOf[CompletionsQueryResult]
   }
   
-  @scala.inline
-  implicit class CompletionsQueryResultMutableBuilder[Self <: CompletionsQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionsQueryResult](x: Self) {
     
-    @scala.inline
-    def setCompletions(value: js.Array[Depth | String]): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
+    inline def setCompletions(value: js.Array[Depth | String]): Self = StObject.set(x, "completions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionsVarargs(value: (Depth | String)*): Self = StObject.set(x, "completions", js.Array(value :_*))
+    inline def setCompletionsVarargs(value: (Depth | String)*): Self = StObject.set(x, "completions", js.Array(value :_*))
     
-    @scala.inline
-    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsProperty(value: Boolean): Self = StObject.set(x, "isProperty", value.asInstanceOf[js.Any])
+    inline def setIsProperty(value: Boolean): Self = StObject.set(x, "isProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

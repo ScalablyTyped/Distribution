@@ -106,21 +106,16 @@ object flowLogMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FlowLogState): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FlowLogState, opts: CustomResourceOptions): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
+    inline def get(name: String, id: Input[ID]): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
+    inline def get(name: String, id: Input[ID], state: FlowLogState): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
+    inline def get(name: String, id: Input[ID], state: FlowLogState, opts: CustomResourceOptions): FlowLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FlowLog]
     
     /**
       * Returns true if the given object is an instance of FlowLog.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/flowLog.FlowLog */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/flowLog.FlowLog */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/flowLog.FlowLog */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/flowLog.FlowLog */ Boolean]
   }
   
   trait FlowLogArgs extends StObject {
@@ -187,77 +182,54 @@ object flowLogMod {
   }
   object FlowLogArgs {
     
-    @scala.inline
-    def apply(trafficType: Input[String]): FlowLogArgs = {
+    inline def apply(trafficType: Input[String]): FlowLogArgs = {
       val __obj = js.Dynamic.literal(trafficType = trafficType.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlowLogArgs]
     }
     
-    @scala.inline
-    implicit class FlowLogArgsMutableBuilder[Self <: FlowLogArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FlowLogArgs](x: Self) {
       
-      @scala.inline
-      def setEniId(value: Input[String]): Self = StObject.set(x, "eniId", value.asInstanceOf[js.Any])
+      inline def setEniId(value: Input[String]): Self = StObject.set(x, "eniId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEniIdUndefined: Self = StObject.set(x, "eniId", js.undefined)
+      inline def setEniIdUndefined: Self = StObject.set(x, "eniId", js.undefined)
       
-      @scala.inline
-      def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+      inline def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
+      inline def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
       
-      @scala.inline
-      def setLogDestination(value: Input[String]): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
+      inline def setLogDestination(value: Input[String]): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogDestinationType(value: Input[String]): Self = StObject.set(x, "logDestinationType", value.asInstanceOf[js.Any])
+      inline def setLogDestinationType(value: Input[String]): Self = StObject.set(x, "logDestinationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogDestinationTypeUndefined: Self = StObject.set(x, "logDestinationType", js.undefined)
+      inline def setLogDestinationTypeUndefined: Self = StObject.set(x, "logDestinationType", js.undefined)
       
-      @scala.inline
-      def setLogDestinationUndefined: Self = StObject.set(x, "logDestination", js.undefined)
+      inline def setLogDestinationUndefined: Self = StObject.set(x, "logDestination", js.undefined)
       
-      @scala.inline
-      def setLogFormat(value: Input[String]): Self = StObject.set(x, "logFormat", value.asInstanceOf[js.Any])
+      inline def setLogFormat(value: Input[String]): Self = StObject.set(x, "logFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogFormatUndefined: Self = StObject.set(x, "logFormat", js.undefined)
+      inline def setLogFormatUndefined: Self = StObject.set(x, "logFormat", js.undefined)
       
-      @scala.inline
-      def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+      inline def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
+      inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
       
-      @scala.inline
-      def setMaxAggregationInterval(value: Input[Double]): Self = StObject.set(x, "maxAggregationInterval", value.asInstanceOf[js.Any])
+      inline def setMaxAggregationInterval(value: Input[Double]): Self = StObject.set(x, "maxAggregationInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAggregationIntervalUndefined: Self = StObject.set(x, "maxAggregationInterval", js.undefined)
+      inline def setMaxAggregationIntervalUndefined: Self = StObject.set(x, "maxAggregationInterval", js.undefined)
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTrafficType(value: Input[String]): Self = StObject.set(x, "trafficType", value.asInstanceOf[js.Any])
+      inline def setTrafficType(value: Input[String]): Self = StObject.set(x, "trafficType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
   
@@ -330,86 +302,60 @@ object flowLogMod {
   }
   object FlowLogState {
     
-    @scala.inline
-    def apply(): FlowLogState = {
+    inline def apply(): FlowLogState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlowLogState]
     }
     
-    @scala.inline
-    implicit class FlowLogStateMutableBuilder[Self <: FlowLogState] (val x: Self) extends AnyVal {
+    extension [Self <: FlowLogState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEniId(value: Input[String]): Self = StObject.set(x, "eniId", value.asInstanceOf[js.Any])
+      inline def setEniId(value: Input[String]): Self = StObject.set(x, "eniId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEniIdUndefined: Self = StObject.set(x, "eniId", js.undefined)
+      inline def setEniIdUndefined: Self = StObject.set(x, "eniId", js.undefined)
       
-      @scala.inline
-      def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+      inline def setIamRoleArn(value: Input[String]): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
+      inline def setIamRoleArnUndefined: Self = StObject.set(x, "iamRoleArn", js.undefined)
       
-      @scala.inline
-      def setLogDestination(value: Input[String]): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
+      inline def setLogDestination(value: Input[String]): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogDestinationType(value: Input[String]): Self = StObject.set(x, "logDestinationType", value.asInstanceOf[js.Any])
+      inline def setLogDestinationType(value: Input[String]): Self = StObject.set(x, "logDestinationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogDestinationTypeUndefined: Self = StObject.set(x, "logDestinationType", js.undefined)
+      inline def setLogDestinationTypeUndefined: Self = StObject.set(x, "logDestinationType", js.undefined)
       
-      @scala.inline
-      def setLogDestinationUndefined: Self = StObject.set(x, "logDestination", js.undefined)
+      inline def setLogDestinationUndefined: Self = StObject.set(x, "logDestination", js.undefined)
       
-      @scala.inline
-      def setLogFormat(value: Input[String]): Self = StObject.set(x, "logFormat", value.asInstanceOf[js.Any])
+      inline def setLogFormat(value: Input[String]): Self = StObject.set(x, "logFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogFormatUndefined: Self = StObject.set(x, "logFormat", js.undefined)
+      inline def setLogFormatUndefined: Self = StObject.set(x, "logFormat", js.undefined)
       
-      @scala.inline
-      def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+      inline def setLogGroupName(value: Input[String]): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
+      inline def setLogGroupNameUndefined: Self = StObject.set(x, "logGroupName", js.undefined)
       
-      @scala.inline
-      def setMaxAggregationInterval(value: Input[Double]): Self = StObject.set(x, "maxAggregationInterval", value.asInstanceOf[js.Any])
+      inline def setMaxAggregationInterval(value: Input[Double]): Self = StObject.set(x, "maxAggregationInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAggregationIntervalUndefined: Self = StObject.set(x, "maxAggregationInterval", js.undefined)
+      inline def setMaxAggregationIntervalUndefined: Self = StObject.set(x, "maxAggregationInterval", js.undefined)
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTrafficType(value: Input[String]): Self = StObject.set(x, "trafficType", value.asInstanceOf[js.Any])
+      inline def setTrafficType(value: Input[String]): Self = StObject.set(x, "trafficType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrafficTypeUndefined: Self = StObject.set(x, "trafficType", js.undefined)
+      inline def setTrafficTypeUndefined: Self = StObject.set(x, "trafficType", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

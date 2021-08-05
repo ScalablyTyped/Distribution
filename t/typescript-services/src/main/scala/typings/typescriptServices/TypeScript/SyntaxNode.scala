@@ -9,7 +9,7 @@ trait SyntaxNode
   extends StObject
      with ISyntaxNodeOrToken {
   
-  var _data: js.Any = js.native
+  /* private */ var _data: js.Any = js.native
   
   /* private */ def computeData(): js.Any = js.native
   

@@ -14,31 +14,23 @@ trait DurationOptions extends StObject {
 }
 object DurationOptions {
   
-  @scala.inline
-  def apply(): DurationOptions = {
+  inline def apply(): DurationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DurationOptions]
   }
   
-  @scala.inline
-  implicit class DurationOptionsMutableBuilder[Self <: DurationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DurationOptions](x: Self) {
     
-    @scala.inline
-    def setConversionAccuracy(value: ConversionAccuracy): Self = StObject.set(x, "conversionAccuracy", value.asInstanceOf[js.Any])
+    inline def setConversionAccuracy(value: ConversionAccuracy): Self = StObject.set(x, "conversionAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionAccuracyUndefined: Self = StObject.set(x, "conversionAccuracy", js.undefined)
+    inline def setConversionAccuracyUndefined: Self = StObject.set(x, "conversionAccuracy", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setNumberingSystem(value: NumberingSystem): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
+    inline def setNumberingSystem(value: NumberingSystem): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
+    inline def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
   }
 }

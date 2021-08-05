@@ -20,43 +20,31 @@ trait PartialPickTopicalExplore extends StObject {
 }
 object PartialPickTopicalExplore {
   
-  @scala.inline
-  def apply(): PartialPickTopicalExplore = {
+  inline def apply(): PartialPickTopicalExplore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickTopicalExplore]
   }
   
-  @scala.inline
-  implicit class PartialPickTopicalExploreMutableBuilder[Self <: PartialPickTopicalExplore] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickTopicalExplore](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
-    @scala.inline
-    def setLat(value: String | Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    inline def setLat(value: String | Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
+    inline def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
     
-    @scala.inline
-    def setLng(value: String | Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+    inline def setLng(value: String | Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
+    inline def setLngUndefined: Self = StObject.set(x, "lng", js.undefined)
     
-    @scala.inline
-    def setModule(value: IgAppModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: IgAppModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+    inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
   }
 }

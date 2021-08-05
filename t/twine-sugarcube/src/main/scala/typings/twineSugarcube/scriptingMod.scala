@@ -22,23 +22,18 @@ object scriptingMod {
   }
   object ScriptingAPI {
     
-    @scala.inline
-    def apply(evalJavaScript: String => js.Any, evalTwineScript: String => js.Any, parse: String => String): ScriptingAPI = {
+    inline def apply(evalJavaScript: String => js.Any, evalTwineScript: String => js.Any, parse: String => String): ScriptingAPI = {
       val __obj = js.Dynamic.literal(evalJavaScript = js.Any.fromFunction1(evalJavaScript), evalTwineScript = js.Any.fromFunction1(evalTwineScript), parse = js.Any.fromFunction1(parse))
       __obj.asInstanceOf[ScriptingAPI]
     }
     
-    @scala.inline
-    implicit class ScriptingAPIMutableBuilder[Self <: ScriptingAPI] (val x: Self) extends AnyVal {
+    extension [Self <: ScriptingAPI](x: Self) {
       
-      @scala.inline
-      def setEvalJavaScript(value: String => js.Any): Self = StObject.set(x, "evalJavaScript", js.Any.fromFunction1(value))
+      inline def setEvalJavaScript(value: String => js.Any): Self = StObject.set(x, "evalJavaScript", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvalTwineScript(value: String => js.Any): Self = StObject.set(x, "evalTwineScript", js.Any.fromFunction1(value))
+      inline def setEvalTwineScript(value: String => js.Any): Self = StObject.set(x, "evalTwineScript", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParse(value: String => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => String): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
   }
 }

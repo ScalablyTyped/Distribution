@@ -47,8 +47,7 @@ trait XDocumentType
 }
 object XDocumentType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: XNamedNodeMap,
     ChildNodes: XNodeList,
     Entities: XNamedNodeMap,
@@ -108,43 +107,30 @@ object XDocumentType {
     __obj.asInstanceOf[XDocumentType]
   }
   
-  @scala.inline
-  implicit class XDocumentTypeMutableBuilder[Self <: XDocumentType] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentType](x: Self) {
     
-    @scala.inline
-    def setEntities(value: XNamedNodeMap): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: XNamedNodeMap): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEntities(value: () => XNamedNodeMap): Self = StObject.set(x, "getEntities", js.Any.fromFunction0(value))
+    inline def setGetEntities(value: () => XNamedNodeMap): Self = StObject.set(x, "getEntities", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInternalSubset(value: () => String): Self = StObject.set(x, "getInternalSubset", js.Any.fromFunction0(value))
+    inline def setGetInternalSubset(value: () => String): Self = StObject.set(x, "getInternalSubset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNotations(value: () => XNamedNodeMap): Self = StObject.set(x, "getNotations", js.Any.fromFunction0(value))
+    inline def setGetNotations(value: () => XNamedNodeMap): Self = StObject.set(x, "getNotations", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
+    inline def setGetPublicId(value: () => String): Self = StObject.set(x, "getPublicId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSystemId(value: () => String): Self = StObject.set(x, "getSystemId", js.Any.fromFunction0(value))
+    inline def setGetSystemId(value: () => String): Self = StObject.set(x, "getSystemId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInternalSubset(value: String): Self = StObject.set(x, "InternalSubset", value.asInstanceOf[js.Any])
+    inline def setInternalSubset(value: String): Self = StObject.set(x, "InternalSubset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotations(value: XNamedNodeMap): Self = StObject.set(x, "Notations", value.asInstanceOf[js.Any])
+    inline def setNotations(value: XNamedNodeMap): Self = StObject.set(x, "Notations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicId(value: String): Self = StObject.set(x, "PublicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: String): Self = StObject.set(x, "PublicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemId(value: String): Self = StObject.set(x, "SystemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: String): Self = StObject.set(x, "SystemId", value.asInstanceOf[js.Any])
   }
 }

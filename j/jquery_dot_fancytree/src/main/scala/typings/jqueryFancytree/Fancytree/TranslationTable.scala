@@ -28,37 +28,27 @@ trait TranslationTable extends StObject {
 }
 object TranslationTable {
   
-  @scala.inline
-  def apply(): TranslationTable = {
+  inline def apply(): TranslationTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TranslationTable]
   }
   
-  @scala.inline
-  implicit class TranslationTableMutableBuilder[Self <: TranslationTable] (val x: Self) extends AnyVal {
+  extension [Self <: TranslationTable](x: Self) {
     
-    @scala.inline
-    def setLoadError(value: String): Self = StObject.set(x, "loadError", value.asInstanceOf[js.Any])
+    inline def setLoadError(value: String): Self = StObject.set(x, "loadError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadErrorUndefined: Self = StObject.set(x, "loadError", js.undefined)
+    inline def setLoadErrorUndefined: Self = StObject.set(x, "loadError", js.undefined)
     
-    @scala.inline
-    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    @scala.inline
-    def setMoreData(value: String): Self = StObject.set(x, "moreData", value.asInstanceOf[js.Any])
+    inline def setMoreData(value: String): Self = StObject.set(x, "moreData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreDataUndefined: Self = StObject.set(x, "moreData", js.undefined)
+    inline def setMoreDataUndefined: Self = StObject.set(x, "moreData", js.undefined)
     
-    @scala.inline
-    def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
+    inline def setNoData(value: String): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
+    inline def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
   }
 }

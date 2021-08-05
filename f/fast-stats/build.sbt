@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "fast-stats"
-version := "0.0.2-dt-20201027Z-3b6b52"
+version := "0.0.2-dt-20201027Z-2afc90"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

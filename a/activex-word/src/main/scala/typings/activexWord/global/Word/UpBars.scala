@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.UpBars")
 @js.native
-class UpBars protected ()
+/* private */ class UpBars ()
   extends StObject
      with typings.activexWord.Word.UpBars {
   
@@ -40,7 +40,7 @@ class UpBars protected ()
   /* CompleteClass */
   override def Select(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.UpBars_typekey")
   var WordDotUpBars_typekey: typings.activexWord.Word.UpBars = js.native
 }

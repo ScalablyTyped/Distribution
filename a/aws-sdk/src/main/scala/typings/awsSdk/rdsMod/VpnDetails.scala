@@ -38,49 +38,35 @@ trait VpnDetails extends StObject {
 }
 object VpnDetails {
   
-  @scala.inline
-  def apply(): VpnDetails = {
+  inline def apply(): VpnDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpnDetails]
   }
   
-  @scala.inline
-  implicit class VpnDetailsMutableBuilder[Self <: VpnDetails] (val x: Self) extends AnyVal {
+  extension [Self <: VpnDetails](x: Self) {
     
-    @scala.inline
-    def setVpnGatewayIp(value: String): Self = StObject.set(x, "VpnGatewayIp", value.asInstanceOf[js.Any])
+    inline def setVpnGatewayIp(value: String): Self = StObject.set(x, "VpnGatewayIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnGatewayIpUndefined: Self = StObject.set(x, "VpnGatewayIp", js.undefined)
+    inline def setVpnGatewayIpUndefined: Self = StObject.set(x, "VpnGatewayIp", js.undefined)
     
-    @scala.inline
-    def setVpnId(value: String): Self = StObject.set(x, "VpnId", value.asInstanceOf[js.Any])
+    inline def setVpnId(value: String): Self = StObject.set(x, "VpnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnIdUndefined: Self = StObject.set(x, "VpnId", js.undefined)
+    inline def setVpnIdUndefined: Self = StObject.set(x, "VpnId", js.undefined)
     
-    @scala.inline
-    def setVpnName(value: String): Self = StObject.set(x, "VpnName", value.asInstanceOf[js.Any])
+    inline def setVpnName(value: String): Self = StObject.set(x, "VpnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnNameUndefined: Self = StObject.set(x, "VpnName", js.undefined)
+    inline def setVpnNameUndefined: Self = StObject.set(x, "VpnName", js.undefined)
     
-    @scala.inline
-    def setVpnPSK(value: StringSensitive): Self = StObject.set(x, "VpnPSK", value.asInstanceOf[js.Any])
+    inline def setVpnPSK(value: StringSensitive): Self = StObject.set(x, "VpnPSK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnPSKUndefined: Self = StObject.set(x, "VpnPSK", js.undefined)
+    inline def setVpnPSKUndefined: Self = StObject.set(x, "VpnPSK", js.undefined)
     
-    @scala.inline
-    def setVpnState(value: String): Self = StObject.set(x, "VpnState", value.asInstanceOf[js.Any])
+    inline def setVpnState(value: String): Self = StObject.set(x, "VpnState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnStateUndefined: Self = StObject.set(x, "VpnState", js.undefined)
+    inline def setVpnStateUndefined: Self = StObject.set(x, "VpnState", js.undefined)
     
-    @scala.inline
-    def setVpnTunnelOriginatorIP(value: String): Self = StObject.set(x, "VpnTunnelOriginatorIP", value.asInstanceOf[js.Any])
+    inline def setVpnTunnelOriginatorIP(value: String): Self = StObject.set(x, "VpnTunnelOriginatorIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnTunnelOriginatorIPUndefined: Self = StObject.set(x, "VpnTunnelOriginatorIP", js.undefined)
+    inline def setVpnTunnelOriginatorIPUndefined: Self = StObject.set(x, "VpnTunnelOriginatorIP", js.undefined)
   }
 }

@@ -23,7 +23,7 @@ object bplustreeMod {
       */
     def this(cmp: js.Function2[/* a */ T, /* b */ T, Double]) = this()
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
     /**
       * Assign new items to the tree, replacing all current items.
@@ -282,7 +282,6 @@ object bplustreeMod {
       * #### Complexity
       * `O(n log32 n)`
       */
-    @scala.inline
-    def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): BPlusTree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[BPlusTree[T]]
+    inline def from[T](items: IterableOrArrayLike[T], cmp: js.Function2[/* a */ T, /* b */ T, Double]): BPlusTree[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any], cmp.asInstanceOf[js.Any])).asInstanceOf[BPlusTree[T]]
   }
 }

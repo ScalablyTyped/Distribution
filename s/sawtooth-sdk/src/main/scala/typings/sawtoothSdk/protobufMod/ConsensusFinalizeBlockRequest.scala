@@ -42,10 +42,8 @@ object ConsensusFinalizeBlockRequest {
     * @param [properties] Properties to set
     * @returns ConsensusFinalizeBlockRequest instance
     */
-  @scala.inline
-  def create(): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusFinalizeBlockRequest]
-  @scala.inline
-  def create(properties: IConsensusFinalizeBlockRequest): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
+  inline def create(): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusFinalizeBlockRequest]
+  inline def create(properties: IConsensusFinalizeBlockRequest): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
   
   /**
     * Decodes a ConsensusFinalizeBlockRequest message from the specified reader or buffer.
@@ -55,14 +53,10 @@ object ConsensusFinalizeBlockRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decode(reader: Reader): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ConsensusFinalizeBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusFinalizeBlockRequest]
-  @scala.inline
-  def decode(reader: Uint8Array): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ConsensusFinalizeBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusFinalizeBlockRequest]
+  inline def decode(reader: Reader): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
+  inline def decode(reader: Reader, length: Double): ConsensusFinalizeBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusFinalizeBlockRequest]
+  inline def decode(reader: Uint8Array): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
+  inline def decode(reader: Uint8Array, length: Double): ConsensusFinalizeBlockRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusFinalizeBlockRequest]
   
   /**
     * Decodes a ConsensusFinalizeBlockRequest message from the specified reader or buffer, length delimited.
@@ -71,10 +65,8 @@ object ConsensusFinalizeBlockRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
+  inline def decodeDelimited(reader: Reader): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
+  inline def decodeDelimited(reader: Uint8Array): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
   
   /**
     * Encodes the specified ConsensusFinalizeBlockRequest message. Does not implicitly {@link ConsensusFinalizeBlockRequest.verify|verify} messages.
@@ -82,10 +74,8 @@ object ConsensusFinalizeBlockRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encode(message: IConsensusFinalizeBlockRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IConsensusFinalizeBlockRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IConsensusFinalizeBlockRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IConsensusFinalizeBlockRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ConsensusFinalizeBlockRequest message, length delimited. Does not implicitly {@link ConsensusFinalizeBlockRequest.verify|verify} messages.
@@ -93,18 +83,15 @@ object ConsensusFinalizeBlockRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encodeDelimited(message: IConsensusFinalizeBlockRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IConsensusFinalizeBlockRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IConsensusFinalizeBlockRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IConsensusFinalizeBlockRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ConsensusFinalizeBlockRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusFinalizeBlockRequest
     */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusFinalizeBlockRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusFinalizeBlockRequest]
   
   /**
     * Creates a plain object from a ConsensusFinalizeBlockRequest message. Also converts values to other types if specified.
@@ -112,16 +99,13 @@ object ConsensusFinalizeBlockRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @scala.inline
-  def toObject(message: ConsensusFinalizeBlockRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ConsensusFinalizeBlockRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusFinalizeBlockRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusFinalizeBlockRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ConsensusFinalizeBlockRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

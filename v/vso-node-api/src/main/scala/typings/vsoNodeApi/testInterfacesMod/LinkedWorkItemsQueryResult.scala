@@ -20,8 +20,7 @@ trait LinkedWorkItemsQueryResult extends StObject {
 }
 object LinkedWorkItemsQueryResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     automatedTestName: String,
     planId: Double,
     pointId: Double,
@@ -33,28 +32,20 @@ object LinkedWorkItemsQueryResult {
     __obj.asInstanceOf[LinkedWorkItemsQueryResult]
   }
   
-  @scala.inline
-  implicit class LinkedWorkItemsQueryResultMutableBuilder[Self <: LinkedWorkItemsQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: LinkedWorkItemsQueryResult](x: Self) {
     
-    @scala.inline
-    def setAutomatedTestName(value: String): Self = StObject.set(x, "automatedTestName", value.asInstanceOf[js.Any])
+    inline def setAutomatedTestName(value: String): Self = StObject.set(x, "automatedTestName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanId(value: Double): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: Double): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointId(value: Double): Self = StObject.set(x, "pointId", value.asInstanceOf[js.Any])
+    inline def setPointId(value: Double): Self = StObject.set(x, "pointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuiteId(value: Double): Self = StObject.set(x, "suiteId", value.asInstanceOf[js.Any])
+    inline def setSuiteId(value: Double): Self = StObject.set(x, "suiteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseId(value: Double): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
+    inline def setTestCaseId(value: Double): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItems(value: js.Array[WorkItemReference]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
+    inline def setWorkItems(value: js.Array[WorkItemReference]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemsVarargs(value: WorkItemReference*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: WorkItemReference*): Self = StObject.set(x, "workItems", js.Array(value :_*))
   }
 }

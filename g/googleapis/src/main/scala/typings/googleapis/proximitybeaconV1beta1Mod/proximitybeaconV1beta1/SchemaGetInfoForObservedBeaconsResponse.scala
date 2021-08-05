@@ -18,22 +18,17 @@ trait SchemaGetInfoForObservedBeaconsResponse extends StObject {
 }
 object SchemaGetInfoForObservedBeaconsResponse {
   
-  @scala.inline
-  def apply(): SchemaGetInfoForObservedBeaconsResponse = {
+  inline def apply(): SchemaGetInfoForObservedBeaconsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetInfoForObservedBeaconsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetInfoForObservedBeaconsResponseMutableBuilder[Self <: SchemaGetInfoForObservedBeaconsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetInfoForObservedBeaconsResponse](x: Self) {
     
-    @scala.inline
-    def setBeacons(value: js.Array[SchemaBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
+    inline def setBeacons(value: js.Array[SchemaBeaconInfo]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
+    inline def setBeaconsUndefined: Self = StObject.set(x, "beacons", js.undefined)
     
-    @scala.inline
-    def setBeaconsVarargs(value: SchemaBeaconInfo*): Self = StObject.set(x, "beacons", js.Array(value :_*))
+    inline def setBeaconsVarargs(value: SchemaBeaconInfo*): Self = StObject.set(x, "beacons", js.Array(value :_*))
   }
 }

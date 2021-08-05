@@ -23,28 +23,21 @@ trait GetPossibleBreakpointsParameterType extends StObject {
 }
 object GetPossibleBreakpointsParameterType {
   
-  @scala.inline
-  def apply(start: Location): GetPossibleBreakpointsParameterType = {
+  inline def apply(start: Location): GetPossibleBreakpointsParameterType = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPossibleBreakpointsParameterType]
   }
   
-  @scala.inline
-  implicit class GetPossibleBreakpointsParameterTypeMutableBuilder[Self <: GetPossibleBreakpointsParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: GetPossibleBreakpointsParameterType](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setRestrictToFunction(value: Boolean): Self = StObject.set(x, "restrictToFunction", value.asInstanceOf[js.Any])
+    inline def setRestrictToFunction(value: Boolean): Self = StObject.set(x, "restrictToFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictToFunctionUndefined: Self = StObject.set(x, "restrictToFunction", js.undefined)
+    inline def setRestrictToFunctionUndefined: Self = StObject.set(x, "restrictToFunction", js.undefined)
     
-    @scala.inline
-    def setStart(value: Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

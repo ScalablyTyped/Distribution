@@ -31,25 +31,21 @@ object componentsSignatureInputMod {
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput.ClearButton")
     @js.native
     def ClearButton: FunctionComponent[PickClearButtonPropschildChildren] = js.native
-    @scala.inline
-    def ClearButton_=(x: FunctionComponent[PickClearButtonPropschildChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearButton")(x.asInstanceOf[js.Any])
+    inline def ClearButton_=(x: FunctionComponent[PickClearButtonPropschildChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearButton")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput.SigningPad")
     @js.native
     def SigningPad: FunctionComponent[PickSigningPadPropsrequirAbout] = js.native
-    @scala.inline
-    def SigningPad_=(x: FunctionComponent[PickSigningPadPropsrequirAbout]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SigningPad")(x.asInstanceOf[js.Any])
+    inline def SigningPad_=(x: FunctionComponent[PickSigningPadPropsrequirAbout]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SigningPad")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput.Title")
     @js.native
     def Title: FunctionComponent[PickTitlePropschildrenChildren] = js.native
-    @scala.inline
-    def Title_=(x: FunctionComponent[PickTitlePropschildrenChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+    inline def Title_=(x: FunctionComponent[PickTitlePropschildrenChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
 }

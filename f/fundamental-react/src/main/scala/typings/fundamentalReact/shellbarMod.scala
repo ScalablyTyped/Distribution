@@ -32,8 +32,7 @@ object shellbarMod {
     @JSImport("fundamental-react/lib/Shellbar/Shellbar", "default.displayName")
     @js.native
     def displayName: typings.fundamentalReact.fundamentalReactStrings.Shellbar = js.native
-    @scala.inline
-    def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Shellbar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Shellbar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   type Shellbar = Component[ShellbarProps, js.Object, js.Any]
@@ -78,122 +77,84 @@ object shellbarMod {
   }
   object ShellbarProps {
     
-    @scala.inline
-    def apply(): ShellbarProps = {
+    inline def apply(): ShellbarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShellbarProps]
     }
     
-    @scala.inline
-    implicit class ShellbarPropsMutableBuilder[Self <: ShellbarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ShellbarProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[Glyph]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[Glyph]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setActionsVarargs(value: Glyph*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Glyph*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setBackAction(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "backAction", js.Any.fromFunction1(value))
+      inline def setBackAction(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "backAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBackActionUndefined: Self = StObject.set(x, "backAction", js.undefined)
+      inline def setBackActionUndefined: Self = StObject.set(x, "backAction", js.undefined)
       
-      @scala.inline
-      def setCopilot(value: Boolean): Self = StObject.set(x, "copilot", value.asInstanceOf[js.Any])
+      inline def setCopilot(value: Boolean): Self = StObject.set(x, "copilot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopilotUndefined: Self = StObject.set(x, "copilot", js.undefined)
+      inline def setCopilotUndefined: Self = StObject.set(x, "copilot", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setLocalizedText(value: NotificationsButton): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+      inline def setLocalizedText(value: NotificationsButton): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+      inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
       
-      @scala.inline
-      def setLogo(value: ReactNode): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: ReactNode): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoSAP(value: Boolean): Self = StObject.set(x, "logoSAP", value.asInstanceOf[js.Any])
+      inline def setLogoSAP(value: Boolean): Self = StObject.set(x, "logoSAP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogoSAPUndefined: Self = StObject.set(x, "logoSAP", js.undefined)
+      inline def setLogoSAPUndefined: Self = StObject.set(x, "logoSAP", js.undefined)
       
-      @scala.inline
-      def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+      inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
       
-      @scala.inline
-      def setNotifications(value: Label): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Label): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+      inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      @scala.inline
-      def setProductMenu(value: js.Array[Link]): Self = StObject.set(x, "productMenu", value.asInstanceOf[js.Any])
+      inline def setProductMenu(value: js.Array[Link]): Self = StObject.set(x, "productMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductMenuUndefined: Self = StObject.set(x, "productMenu", js.undefined)
+      inline def setProductMenuUndefined: Self = StObject.set(x, "productMenu", js.undefined)
       
-      @scala.inline
-      def setProductMenuVarargs(value: Link*): Self = StObject.set(x, "productMenu", js.Array(value :_*))
+      inline def setProductMenuVarargs(value: Link*): Self = StObject.set(x, "productMenu", js.Array(value :_*))
       
-      @scala.inline
-      def setProductSwitch(value: js.Object): Self = StObject.set(x, "productSwitch", value.asInstanceOf[js.Any])
+      inline def setProductSwitch(value: js.Object): Self = StObject.set(x, "productSwitch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductSwitchList(value: js.Array[Image]): Self = StObject.set(x, "productSwitchList", value.asInstanceOf[js.Any])
+      inline def setProductSwitchList(value: js.Array[Image]): Self = StObject.set(x, "productSwitchList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductSwitchListUndefined: Self = StObject.set(x, "productSwitchList", js.undefined)
+      inline def setProductSwitchListUndefined: Self = StObject.set(x, "productSwitchList", js.undefined)
       
-      @scala.inline
-      def setProductSwitchListVarargs(value: Image*): Self = StObject.set(x, "productSwitchList", js.Array(value :_*))
+      inline def setProductSwitchListVarargs(value: Image*): Self = StObject.set(x, "productSwitchList", js.Array(value :_*))
       
-      @scala.inline
-      def setProductSwitchUndefined: Self = StObject.set(x, "productSwitch", js.undefined)
+      inline def setProductSwitchUndefined: Self = StObject.set(x, "productSwitch", js.undefined)
       
-      @scala.inline
-      def setProductTitle(value: String): Self = StObject.set(x, "productTitle", value.asInstanceOf[js.Any])
+      inline def setProductTitle(value: String): Self = StObject.set(x, "productTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductTitleUndefined: Self = StObject.set(x, "productTitle", js.undefined)
+      inline def setProductTitleUndefined: Self = StObject.set(x, "productTitle", js.undefined)
       
-      @scala.inline
-      def setProfile(value: StringDictionary[js.Any]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: StringDictionary[js.Any]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileMenu(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "profileMenu", value.asInstanceOf[js.Any])
+      inline def setProfileMenu(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "profileMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileMenuUndefined: Self = StObject.set(x, "profileMenu", js.undefined)
+      inline def setProfileMenuUndefined: Self = StObject.set(x, "profileMenu", js.undefined)
       
-      @scala.inline
-      def setProfileMenuVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "profileMenu", js.Array(value :_*))
+      inline def setProfileMenuVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "profileMenu", js.Array(value :_*))
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setSearchInput(value: StringDictionary[js.Any]): Self = StObject.set(x, "searchInput", value.asInstanceOf[js.Any])
+      inline def setSearchInput(value: StringDictionary[js.Any]): Self = StObject.set(x, "searchInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchInputUndefined: Self = StObject.set(x, "searchInput", js.undefined)
+      inline def setSearchInputUndefined: Self = StObject.set(x, "searchInput", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     }
   }
 }

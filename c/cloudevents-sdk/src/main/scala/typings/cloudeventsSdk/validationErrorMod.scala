@@ -57,20 +57,16 @@ object validationErrorMod {
   }
   object ValidationError {
     
-    @scala.inline
-    def apply(errors: js.Array[typings.ajv.mod.ErrorObject | String], message: String, name: String): ValidationError = {
+    inline def apply(errors: js.Array[typings.ajv.mod.ErrorObject | String], message: String, name: String): ValidationError = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationError]
     }
     
-    @scala.inline
-    implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationError](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[typings.ajv.mod.ErrorObject | String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[typings.ajv.mod.ErrorObject | String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: (typings.ajv.mod.ErrorObject | String)*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: (typings.ajv.mod.ErrorObject | String)*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
 }

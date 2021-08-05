@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object FootnoteAnchorToken {
   
-  @scala.inline
-  def apply(id: Double, level: Double): FootnoteAnchorToken = {
+  inline def apply(id: Double, level: Double): FootnoteAnchorToken = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("footnote_anchor")
     __obj.asInstanceOf[FootnoteAnchorToken]
   }
   
-  @scala.inline
-  implicit class FootnoteAnchorTokenMutableBuilder[Self <: FootnoteAnchorToken] (val x: Self) extends AnyVal {
+  extension [Self <: FootnoteAnchorToken](x: Self) {
     
-    @scala.inline
-    def setType(value: footnote_anchor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: footnote_anchor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

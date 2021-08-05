@@ -15,16 +15,13 @@ trait TextNotification
 }
 object TextNotification {
   
-  @scala.inline
-  def apply(text: String): TextNotification = {
+  inline def apply(text: String): TextNotification = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextNotification]
   }
   
-  @scala.inline
-  implicit class TextNotificationMutableBuilder[Self <: TextNotification] (val x: Self) extends AnyVal {
+  extension [Self <: TextNotification](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

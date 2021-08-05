@@ -24,55 +24,39 @@ trait DotMarking
 }
 object DotMarking {
   
-  @scala.inline
-  def apply(): DotMarking = {
+  inline def apply(): DotMarking = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DotMarking]
   }
   
-  @scala.inline
-  implicit class DotMarkingMutableBuilder[Self <: DotMarking] (val x: Self) extends AnyVal {
+  extension [Self <: DotMarking](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+    inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
-    @scala.inline
-    def setDisableTouchEvent(value: Boolean): Self = StObject.set(x, "disableTouchEvent", value.asInstanceOf[js.Any])
+    inline def setDisableTouchEvent(value: Boolean): Self = StObject.set(x, "disableTouchEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableTouchEventUndefined: Self = StObject.set(x, "disableTouchEvent", js.undefined)
+    inline def setDisableTouchEventUndefined: Self = StObject.set(x, "disableTouchEvent", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setDotColor(value: String): Self = StObject.set(x, "dotColor", value.asInstanceOf[js.Any])
+    inline def setDotColor(value: String): Self = StObject.set(x, "dotColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotColorUndefined: Self = StObject.set(x, "dotColor", js.undefined)
+    inline def setDotColorUndefined: Self = StObject.set(x, "dotColor", js.undefined)
     
-    @scala.inline
-    def setMarked(value: Boolean): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
+    inline def setMarked(value: Boolean): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkedUndefined: Self = StObject.set(x, "marked", js.undefined)
+    inline def setMarkedUndefined: Self = StObject.set(x, "marked", js.undefined)
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
+    inline def setSelectedColor(value: String): Self = StObject.set(x, "selectedColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
+    inline def setSelectedColorUndefined: Self = StObject.set(x, "selectedColor", js.undefined)
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

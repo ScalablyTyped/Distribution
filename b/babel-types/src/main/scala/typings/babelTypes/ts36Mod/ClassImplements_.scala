@@ -19,8 +19,7 @@ trait ClassImplements_
 }
 object ClassImplements_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
@@ -32,16 +31,12 @@ object ClassImplements_ {
     __obj.asInstanceOf[ClassImplements_]
   }
   
-  @scala.inline
-  implicit class ClassImplements_MutableBuilder[Self <: ClassImplements_] (val x: Self) extends AnyVal {
+  extension [Self <: ClassImplements_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ClassImplements): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ClassImplements): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
   }
 }

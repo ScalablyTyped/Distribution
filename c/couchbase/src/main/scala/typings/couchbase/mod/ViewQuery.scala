@@ -235,6 +235,5 @@ object ViewQuery {
     * @param name The view to use.
     */
   /* static member */
-  @scala.inline
-  def from(ddoc: String, name: String): ViewQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(ddoc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ViewQuery]
+  inline def from(ddoc: String, name: String): ViewQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(ddoc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ViewQuery]
 }

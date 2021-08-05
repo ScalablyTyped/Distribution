@@ -11,9 +11,7 @@ object ISO8061Date {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def format(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def format(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parse(stringDateTime: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stringDateTime.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def parse(stringDateTime: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stringDateTime.asInstanceOf[js.Any]).asInstanceOf[Date]
 }

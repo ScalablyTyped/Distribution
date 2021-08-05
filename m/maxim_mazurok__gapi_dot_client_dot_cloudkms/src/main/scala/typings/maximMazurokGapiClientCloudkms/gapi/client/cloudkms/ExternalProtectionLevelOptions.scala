@@ -11,19 +11,15 @@ trait ExternalProtectionLevelOptions extends StObject {
 }
 object ExternalProtectionLevelOptions {
   
-  @scala.inline
-  def apply(): ExternalProtectionLevelOptions = {
+  inline def apply(): ExternalProtectionLevelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExternalProtectionLevelOptions]
   }
   
-  @scala.inline
-  implicit class ExternalProtectionLevelOptionsMutableBuilder[Self <: ExternalProtectionLevelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalProtectionLevelOptions](x: Self) {
     
-    @scala.inline
-    def setExternalKeyUri(value: String): Self = StObject.set(x, "externalKeyUri", value.asInstanceOf[js.Any])
+    inline def setExternalKeyUri(value: String): Self = StObject.set(x, "externalKeyUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalKeyUriUndefined: Self = StObject.set(x, "externalKeyUri", js.undefined)
+    inline def setExternalKeyUriUndefined: Self = StObject.set(x, "externalKeyUri", js.undefined)
   }
 }

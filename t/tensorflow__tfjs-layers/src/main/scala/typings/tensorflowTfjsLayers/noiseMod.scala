@@ -34,8 +34,7 @@ object noiseMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "AlphaDropout.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "GaussianDropout")
@@ -56,8 +55,7 @@ object noiseMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "GaussianDropout.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "GaussianNoise")
@@ -78,8 +76,7 @@ object noiseMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/noise", "GaussianNoise.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   trait AlphaDropoutArgs
@@ -97,26 +94,20 @@ object noiseMod {
   }
   object AlphaDropoutArgs {
     
-    @scala.inline
-    def apply(rate: Double): AlphaDropoutArgs = {
+    inline def apply(rate: Double): AlphaDropoutArgs = {
       val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlphaDropoutArgs]
     }
     
-    @scala.inline
-    implicit class AlphaDropoutArgsMutableBuilder[Self <: AlphaDropoutArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AlphaDropoutArgs](x: Self) {
       
-      @scala.inline
-      def setNoiseShape(value: Shape): Self = StObject.set(x, "noiseShape", value.asInstanceOf[js.Any])
+      inline def setNoiseShape(value: Shape): Self = StObject.set(x, "noiseShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoiseShapeUndefined: Self = StObject.set(x, "noiseShape", js.undefined)
+      inline def setNoiseShapeUndefined: Self = StObject.set(x, "noiseShape", js.undefined)
       
-      @scala.inline
-      def setNoiseShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "noiseShape", js.Array(value :_*))
+      inline def setNoiseShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "noiseShape", js.Array(value :_*))
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,17 +120,14 @@ object noiseMod {
   }
   object GaussianDropoutArgs {
     
-    @scala.inline
-    def apply(rate: Double): GaussianDropoutArgs = {
+    inline def apply(rate: Double): GaussianDropoutArgs = {
       val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
       __obj.asInstanceOf[GaussianDropoutArgs]
     }
     
-    @scala.inline
-    implicit class GaussianDropoutArgsMutableBuilder[Self <: GaussianDropoutArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GaussianDropoutArgs](x: Self) {
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,17 +140,14 @@ object noiseMod {
   }
   object GaussianNoiseArgs {
     
-    @scala.inline
-    def apply(stddev: Double): GaussianNoiseArgs = {
+    inline def apply(stddev: Double): GaussianNoiseArgs = {
       val __obj = js.Dynamic.literal(stddev = stddev.asInstanceOf[js.Any])
       __obj.asInstanceOf[GaussianNoiseArgs]
     }
     
-    @scala.inline
-    implicit class GaussianNoiseArgsMutableBuilder[Self <: GaussianNoiseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GaussianNoiseArgs](x: Self) {
       
-      @scala.inline
-      def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+      inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     }
   }
 }

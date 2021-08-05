@@ -10,19 +10,15 @@ trait CreateChannelOptions extends StObject {
 }
 object CreateChannelOptions {
   
-  @scala.inline
-  def apply(): CreateChannelOptions = {
+  inline def apply(): CreateChannelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateChannelOptions]
   }
   
-  @scala.inline
-  implicit class CreateChannelOptionsMutableBuilder[Self <: CreateChannelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChannelOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

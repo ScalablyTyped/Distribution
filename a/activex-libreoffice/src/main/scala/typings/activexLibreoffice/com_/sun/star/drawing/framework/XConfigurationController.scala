@@ -194,8 +194,7 @@ trait XConfigurationController
 }
 object XConfigurationController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentConfiguration: XConfiguration,
     RequestedConfiguration: XConfiguration,
     addConfigurationChangeListener: (XConfigurationChangeListener, String, js.Any) => Unit,
@@ -221,40 +220,28 @@ object XConfigurationController {
     __obj.asInstanceOf[XConfigurationController]
   }
   
-  @scala.inline
-  implicit class XConfigurationControllerMutableBuilder[Self <: XConfigurationController] (val x: Self) extends AnyVal {
+  extension [Self <: XConfigurationController](x: Self) {
     
-    @scala.inline
-    def setCurrentConfiguration(value: XConfiguration): Self = StObject.set(x, "CurrentConfiguration", value.asInstanceOf[js.Any])
+    inline def setCurrentConfiguration(value: XConfiguration): Self = StObject.set(x, "CurrentConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentConfiguration(value: () => XConfiguration): Self = StObject.set(x, "getCurrentConfiguration", js.Any.fromFunction0(value))
+    inline def setGetCurrentConfiguration(value: () => XConfiguration): Self = StObject.set(x, "getCurrentConfiguration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRequestedConfiguration(value: () => XConfiguration): Self = StObject.set(x, "getRequestedConfiguration", js.Any.fromFunction0(value))
+    inline def setGetRequestedConfiguration(value: () => XConfiguration): Self = StObject.set(x, "getRequestedConfiguration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResource(value: XResourceId => XResource): Self = StObject.set(x, "getResource", js.Any.fromFunction1(value))
+    inline def setGetResource(value: XResourceId => XResource): Self = StObject.set(x, "getResource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
+    inline def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRequestResourceActivation(value: (XResourceId, ResourceActivationMode) => Unit): Self = StObject.set(x, "requestResourceActivation", js.Any.fromFunction2(value))
+    inline def setRequestResourceActivation(value: (XResourceId, ResourceActivationMode) => Unit): Self = StObject.set(x, "requestResourceActivation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRequestResourceDeactivation(value: XResourceId => Unit): Self = StObject.set(x, "requestResourceDeactivation", js.Any.fromFunction1(value))
+    inline def setRequestResourceDeactivation(value: XResourceId => Unit): Self = StObject.set(x, "requestResourceDeactivation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestedConfiguration(value: XConfiguration): Self = StObject.set(x, "RequestedConfiguration", value.asInstanceOf[js.Any])
+    inline def setRequestedConfiguration(value: XConfiguration): Self = StObject.set(x, "RequestedConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreConfiguration(value: XConfiguration => Unit): Self = StObject.set(x, "restoreConfiguration", js.Any.fromFunction1(value))
+    inline def setRestoreConfiguration(value: XConfiguration => Unit): Self = StObject.set(x, "restoreConfiguration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
+    inline def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

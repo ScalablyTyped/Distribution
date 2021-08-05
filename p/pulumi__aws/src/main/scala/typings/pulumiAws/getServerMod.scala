@@ -11,10 +11,8 @@ object getServerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getServer(args: GetServerArgs): js.Promise[GetServerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServer")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServerResult]]
-  @scala.inline
-  def getServer(args: GetServerArgs, opts: InvokeOptions): js.Promise[GetServerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServer")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServerResult]]
+  inline def getServer(args: GetServerArgs): js.Promise[GetServerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServer")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServerResult]]
+  inline def getServer(args: GetServerArgs, opts: InvokeOptions): js.Promise[GetServerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServer")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServerResult]]
   
   trait GetServerArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getServerMod {
   }
   object GetServerArgs {
     
-    @scala.inline
-    def apply(serverId: String): GetServerArgs = {
+    inline def apply(serverId: String): GetServerArgs = {
       val __obj = js.Dynamic.literal(serverId = serverId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetServerArgs]
     }
     
-    @scala.inline
-    implicit class GetServerArgsMutableBuilder[Self <: GetServerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetServerArgs](x: Self) {
       
-      @scala.inline
-      def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+      inline def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,8 +75,7 @@ object getServerMod {
   }
   object GetServerResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       endpoint: String,
       id: String,
@@ -95,32 +89,23 @@ object getServerMod {
       __obj.asInstanceOf[GetServerResult]
     }
     
-    @scala.inline
-    implicit class GetServerResultMutableBuilder[Self <: GetServerResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetServerResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityProviderType(value: String): Self = StObject.set(x, "identityProviderType", value.asInstanceOf[js.Any])
+      inline def setIdentityProviderType(value: String): Self = StObject.set(x, "identityProviderType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvocationRole(value: String): Self = StObject.set(x, "invocationRole", value.asInstanceOf[js.Any])
+      inline def setInvocationRole(value: String): Self = StObject.set(x, "invocationRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingRole(value: String): Self = StObject.set(x, "loggingRole", value.asInstanceOf[js.Any])
+      inline def setLoggingRole(value: String): Self = StObject.set(x, "loggingRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+      inline def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

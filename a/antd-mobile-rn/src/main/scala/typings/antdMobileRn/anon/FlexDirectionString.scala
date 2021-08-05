@@ -10,16 +10,13 @@ trait FlexDirectionString extends StObject {
 }
 object FlexDirectionString {
   
-  @scala.inline
-  def apply(flexDirection: String): FlexDirectionString = {
+  inline def apply(flexDirection: String): FlexDirectionString = {
     val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexDirectionString]
   }
   
-  @scala.inline
-  implicit class FlexDirectionStringMutableBuilder[Self <: FlexDirectionString] (val x: Self) extends AnyVal {
+  extension [Self <: FlexDirectionString](x: Self) {
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
   }
 }

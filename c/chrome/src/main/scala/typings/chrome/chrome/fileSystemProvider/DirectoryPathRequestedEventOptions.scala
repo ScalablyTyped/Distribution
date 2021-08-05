@@ -13,16 +13,13 @@ trait DirectoryPathRequestedEventOptions
 }
 object DirectoryPathRequestedEventOptions {
   
-  @scala.inline
-  def apply(directoryPath: String, fileSystemId: String, requestId: Double): DirectoryPathRequestedEventOptions = {
+  inline def apply(directoryPath: String, fileSystemId: String, requestId: Double): DirectoryPathRequestedEventOptions = {
     val __obj = js.Dynamic.literal(directoryPath = directoryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectoryPathRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class DirectoryPathRequestedEventOptionsMutableBuilder[Self <: DirectoryPathRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryPathRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setDirectoryPath(value: String): Self = StObject.set(x, "directoryPath", value.asInstanceOf[js.Any])
+    inline def setDirectoryPath(value: String): Self = StObject.set(x, "directoryPath", value.asInstanceOf[js.Any])
   }
 }

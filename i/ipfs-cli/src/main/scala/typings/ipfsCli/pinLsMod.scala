@@ -25,26 +25,22 @@ object pinLsMod {
     @js.native
     def cidBase: Choices = js.native
     
-    @scala.inline
-    def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/pin/ls", "builder.quiet")
     @js.native
     def quiet: AliasString = js.native
-    @scala.inline
-    def quiet_=(x: AliasString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quiet")(x.asInstanceOf[js.Any])
+    inline def quiet_=(x: AliasString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quiet")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/pin/ls", "builder.stream")
     @js.native
     def stream: AliasString = js.native
-    @scala.inline
-    def stream_=(x: AliasString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
+    inline def stream_=(x: AliasString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/pin/ls", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/pin/ls", "builder.type")
     @js.native
@@ -59,6 +55,5 @@ object pinLsMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintIpfsPathTypeQuietCidBaseStreamTimeout: Quiet): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintIpfsPathTypeQuietCidBaseStreamTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintIpfsPathTypeQuietCidBaseStreamTimeout: Quiet): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintIpfsPathTypeQuietCidBaseStreamTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

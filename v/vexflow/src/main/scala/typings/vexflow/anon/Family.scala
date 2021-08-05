@@ -14,22 +14,17 @@ trait Family extends StObject {
 }
 object Family {
   
-  @scala.inline
-  def apply(family: String, size: Double, weight: String): Family = {
+  inline def apply(family: String, size: Double, weight: String): Family = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Family]
   }
   
-  @scala.inline
-  implicit class FamilyMutableBuilder[Self <: Family] (val x: Self) extends AnyVal {
+  extension [Self <: Family](x: Self) {
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

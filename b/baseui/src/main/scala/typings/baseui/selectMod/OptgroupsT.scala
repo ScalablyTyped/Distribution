@@ -13,19 +13,15 @@ trait OptgroupsT
 }
 object OptgroupsT {
   
-  @scala.inline
-  def apply(__ungrouped: Value): OptgroupsT = {
+  inline def apply(__ungrouped: Value): OptgroupsT = {
     val __obj = js.Dynamic.literal(__ungrouped = __ungrouped.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptgroupsT]
   }
   
-  @scala.inline
-  implicit class OptgroupsTMutableBuilder[Self <: OptgroupsT] (val x: Self) extends AnyVal {
+  extension [Self <: OptgroupsT](x: Self) {
     
-    @scala.inline
-    def set__ungrouped(value: Value): Self = StObject.set(x, "__ungrouped", value.asInstanceOf[js.Any])
+    inline def set__ungrouped(value: Value): Self = StObject.set(x, "__ungrouped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__ungroupedVarargs(value: Option*): Self = StObject.set(x, "__ungrouped", js.Array(value :_*))
+    inline def set__ungroupedVarargs(value: Option*): Self = StObject.set(x, "__ungrouped", js.Array(value :_*))
   }
 }

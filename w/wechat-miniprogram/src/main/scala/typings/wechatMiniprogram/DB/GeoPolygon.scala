@@ -14,22 +14,17 @@ trait GeoPolygon
 }
 object GeoPolygon {
   
-  @scala.inline
-  def apply(lines: js.Array[GeoLineString], toJSON: () => IGeoJSONPolygon): GeoPolygon = {
+  inline def apply(lines: js.Array[GeoLineString], toJSON: () => IGeoJSONPolygon): GeoPolygon = {
     val __obj = js.Dynamic.literal(lines = lines.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[GeoPolygon]
   }
   
-  @scala.inline
-  implicit class GeoPolygonMutableBuilder[Self <: GeoPolygon] (val x: Self) extends AnyVal {
+  extension [Self <: GeoPolygon](x: Self) {
     
-    @scala.inline
-    def setLines(value: js.Array[GeoLineString]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[GeoLineString]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesVarargs(value: GeoLineString*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: GeoLineString*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
-    @scala.inline
-    def setToJSON(value: () => IGeoJSONPolygon): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => IGeoJSONPolygon): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

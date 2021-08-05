@@ -10,6 +10,5 @@ object isSegmentEqualMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(obj1: js.Any, obj2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(obj1: js.Any, obj2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

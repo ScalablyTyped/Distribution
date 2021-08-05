@@ -13,16 +13,13 @@ trait DescribeGlobalTableInput extends StObject {
 }
 object DescribeGlobalTableInput {
   
-  @scala.inline
-  def apply(GlobalTableName: TableName): DescribeGlobalTableInput = {
+  inline def apply(GlobalTableName: TableName): DescribeGlobalTableInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGlobalTableInput]
   }
   
-  @scala.inline
-  implicit class DescribeGlobalTableInputMutableBuilder[Self <: DescribeGlobalTableInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGlobalTableInput](x: Self) {
     
-    @scala.inline
-    def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
+    inline def setGlobalTableName(value: TableName): Self = StObject.set(x, "GlobalTableName", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object cacheManagerIoredisStrings {
   
   @js.native
   sealed trait redis extends StObject
-  @scala.inline
-  def redis: redis = "redis".asInstanceOf[redis]
+  inline def redis: redis = "redis".asInstanceOf[redis]
 }

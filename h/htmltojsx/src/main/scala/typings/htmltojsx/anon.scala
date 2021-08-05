@@ -17,32 +17,24 @@ object anon {
   }
   object CreateClass {
     
-    @scala.inline
-    def apply(): CreateClass = {
+    inline def apply(): CreateClass = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateClass]
     }
     
-    @scala.inline
-    implicit class CreateClassMutableBuilder[Self <: CreateClass] (val x: Self) extends AnyVal {
+    extension [Self <: CreateClass](x: Self) {
       
-      @scala.inline
-      def setCreateClass(value: Boolean): Self = StObject.set(x, "createClass", value.asInstanceOf[js.Any])
+      inline def setCreateClass(value: Boolean): Self = StObject.set(x, "createClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateClassUndefined: Self = StObject.set(x, "createClass", js.undefined)
+      inline def setCreateClassUndefined: Self = StObject.set(x, "createClass", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setOutputClassName(value: String): Self = StObject.set(x, "outputClassName", value.asInstanceOf[js.Any])
+      inline def setOutputClassName(value: String): Self = StObject.set(x, "outputClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputClassNameUndefined: Self = StObject.set(x, "outputClassName", js.undefined)
+      inline def setOutputClassNameUndefined: Self = StObject.set(x, "outputClassName", js.undefined)
     }
   }
 }

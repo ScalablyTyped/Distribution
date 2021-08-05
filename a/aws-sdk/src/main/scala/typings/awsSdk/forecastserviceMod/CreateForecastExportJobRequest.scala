@@ -28,31 +28,23 @@ trait CreateForecastExportJobRequest extends StObject {
 }
 object CreateForecastExportJobRequest {
   
-  @scala.inline
-  def apply(Destination: DataDestination, ForecastArn: Arn, ForecastExportJobName: Name): CreateForecastExportJobRequest = {
+  inline def apply(Destination: DataDestination, ForecastArn: Arn, ForecastExportJobName: Name): CreateForecastExportJobRequest = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], ForecastArn = ForecastArn.asInstanceOf[js.Any], ForecastExportJobName = ForecastExportJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateForecastExportJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateForecastExportJobRequestMutableBuilder[Self <: CreateForecastExportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateForecastExportJobRequest](x: Self) {
     
-    @scala.inline
-    def setDestination(value: DataDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: DataDestination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
+    inline def setForecastArn(value: Arn): Self = StObject.set(x, "ForecastArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastExportJobName(value: Name): Self = StObject.set(x, "ForecastExportJobName", value.asInstanceOf[js.Any])
+    inline def setForecastExportJobName(value: Name): Self = StObject.set(x, "ForecastExportJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

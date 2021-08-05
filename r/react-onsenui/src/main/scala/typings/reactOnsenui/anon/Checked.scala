@@ -25,61 +25,43 @@ trait Checked extends StObject {
 }
 object Checked {
   
-  @scala.inline
-  def apply(): Checked = {
+  inline def apply(): Checked = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Checked]
   }
   
-  @scala.inline
-  implicit class CheckedMutableBuilder[Self <: Checked] (val x: Self) extends AnyVal {
+  extension [Self <: Checked](x: Self) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    @scala.inline
-    def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
+    inline def setDefaultChecked(value: Boolean): Self = StObject.set(x, "defaultChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
+    inline def setDefaultCheckedUndefined: Self = StObject.set(x, "defaultChecked", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
+    inline def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
     
-    @scala.inline
-    def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
+    inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* e */ Event => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* e */ Event => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

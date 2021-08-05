@@ -25,25 +25,19 @@ trait SchemaDynamicSourceSplit extends StObject {
 }
 object SchemaDynamicSourceSplit {
   
-  @scala.inline
-  def apply(): SchemaDynamicSourceSplit = {
+  inline def apply(): SchemaDynamicSourceSplit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDynamicSourceSplit]
   }
   
-  @scala.inline
-  implicit class SchemaDynamicSourceSplitMutableBuilder[Self <: SchemaDynamicSourceSplit] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDynamicSourceSplit](x: Self) {
     
-    @scala.inline
-    def setPrimary(value: SchemaDerivedSource): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: SchemaDerivedSource): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setResidual(value: SchemaDerivedSource): Self = StObject.set(x, "residual", value.asInstanceOf[js.Any])
+    inline def setResidual(value: SchemaDerivedSource): Self = StObject.set(x, "residual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResidualUndefined: Self = StObject.set(x, "residual", js.undefined)
+    inline def setResidualUndefined: Self = StObject.set(x, "residual", js.undefined)
   }
 }

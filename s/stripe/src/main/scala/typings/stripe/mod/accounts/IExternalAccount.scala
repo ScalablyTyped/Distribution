@@ -33,8 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IExternalAccount extends StObject
 object IExternalAccount {
   
-  @scala.inline
-  def IBankAccount(
+  inline def IBankAccount(
     bank_name: String,
     country: String,
     currency: String,
@@ -50,8 +49,7 @@ object IExternalAccount {
     __obj.asInstanceOf[typings.stripe.mod.bankAccounts.IBankAccount]
   }
   
-  @scala.inline
-  def ICard(
+  inline def ICard(
     brand: Visa | (`American Express`) | MasterCard | Discover | JCB | (`Diners Club`) | Unknown,
     country: String,
     cvc_check: pass | fail | unavailable | unchecked,

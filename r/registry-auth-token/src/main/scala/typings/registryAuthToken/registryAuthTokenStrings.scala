@@ -8,11 +8,9 @@ object registryAuthTokenStrings {
   
   @js.native
   sealed trait Basic extends StObject
-  @scala.inline
-  def Basic: Basic = "Basic".asInstanceOf[Basic]
+  inline def Basic: Basic = "Basic".asInstanceOf[Basic]
   
   @js.native
   sealed trait Bearer extends StObject
-  @scala.inline
-  def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
+  inline def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
 }

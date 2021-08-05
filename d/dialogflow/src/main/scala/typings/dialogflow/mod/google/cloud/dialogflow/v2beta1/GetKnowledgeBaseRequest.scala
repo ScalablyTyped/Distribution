@@ -43,10 +43,8 @@ object GetKnowledgeBaseRequest {
     * @returns GetKnowledgeBaseRequest instance
     */
   /* static member */
-  @scala.inline
-  def create(): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetKnowledgeBaseRequest]
-  @scala.inline
-  def create(properties: IGetKnowledgeBaseRequest): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
+  inline def create(): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetKnowledgeBaseRequest]
+  inline def create(properties: IGetKnowledgeBaseRequest): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
   
   /**
     * Decodes a GetKnowledgeBaseRequest message from the specified reader or buffer.
@@ -57,14 +55,10 @@ object GetKnowledgeBaseRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
-  @scala.inline
-  def decode(reader: Reader, length: Double): GetKnowledgeBaseRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetKnowledgeBaseRequest]
-  @scala.inline
-  def decode(reader: Uint8Array): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): GetKnowledgeBaseRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetKnowledgeBaseRequest]
+  inline def decode(reader: Reader): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
+  inline def decode(reader: Reader, length: Double): GetKnowledgeBaseRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetKnowledgeBaseRequest]
+  inline def decode(reader: Uint8Array): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
+  inline def decode(reader: Uint8Array, length: Double): GetKnowledgeBaseRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetKnowledgeBaseRequest]
   
   /**
     * Decodes a GetKnowledgeBaseRequest message from the specified reader or buffer, length delimited.
@@ -74,10 +68,8 @@ object GetKnowledgeBaseRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
+  inline def decodeDelimited(reader: Reader): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
+  inline def decodeDelimited(reader: Uint8Array): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
   
   /**
     * Encodes the specified GetKnowledgeBaseRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.GetKnowledgeBaseRequest.verify|verify} messages.
@@ -86,10 +78,8 @@ object GetKnowledgeBaseRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IGetKnowledgeBaseRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IGetKnowledgeBaseRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IGetKnowledgeBaseRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IGetKnowledgeBaseRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GetKnowledgeBaseRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.GetKnowledgeBaseRequest.verify|verify} messages.
@@ -98,10 +88,8 @@ object GetKnowledgeBaseRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IGetKnowledgeBaseRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IGetKnowledgeBaseRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IGetKnowledgeBaseRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IGetKnowledgeBaseRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GetKnowledgeBaseRequest message from a plain object. Also converts values to their respective internal types.
@@ -109,8 +97,7 @@ object GetKnowledgeBaseRequest {
     * @returns GetKnowledgeBaseRequest
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
+  inline def fromObject(`object`: StringDictionary[js.Any]): GetKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetKnowledgeBaseRequest]
   
   /**
     * Creates a plain object from a GetKnowledgeBaseRequest message. Also converts values to other types if specified.
@@ -119,10 +106,8 @@ object GetKnowledgeBaseRequest {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: GetKnowledgeBaseRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: GetKnowledgeBaseRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: GetKnowledgeBaseRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: GetKnowledgeBaseRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a GetKnowledgeBaseRequest message.
@@ -130,6 +115,5 @@ object GetKnowledgeBaseRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

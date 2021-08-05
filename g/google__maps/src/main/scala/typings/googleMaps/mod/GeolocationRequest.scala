@@ -32,61 +32,43 @@ trait GeolocationRequest extends StObject {
 }
 object GeolocationRequest {
   
-  @scala.inline
-  def apply(): GeolocationRequest = {
+  inline def apply(): GeolocationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeolocationRequest]
   }
   
-  @scala.inline
-  implicit class GeolocationRequestMutableBuilder[Self <: GeolocationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GeolocationRequest](x: Self) {
     
-    @scala.inline
-    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
+    inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
+    inline def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
-    @scala.inline
-    def setCellTowers(value: js.Array[CellTower]): Self = StObject.set(x, "cellTowers", value.asInstanceOf[js.Any])
+    inline def setCellTowers(value: js.Array[CellTower]): Self = StObject.set(x, "cellTowers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellTowersUndefined: Self = StObject.set(x, "cellTowers", js.undefined)
+    inline def setCellTowersUndefined: Self = StObject.set(x, "cellTowers", js.undefined)
     
-    @scala.inline
-    def setCellTowersVarargs(value: CellTower*): Self = StObject.set(x, "cellTowers", js.Array(value :_*))
+    inline def setCellTowersVarargs(value: CellTower*): Self = StObject.set(x, "cellTowers", js.Array(value :_*))
     
-    @scala.inline
-    def setConsiderIp(value: Boolean): Self = StObject.set(x, "considerIp", value.asInstanceOf[js.Any])
+    inline def setConsiderIp(value: Boolean): Self = StObject.set(x, "considerIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsiderIpUndefined: Self = StObject.set(x, "considerIp", js.undefined)
+    inline def setConsiderIpUndefined: Self = StObject.set(x, "considerIp", js.undefined)
     
-    @scala.inline
-    def setHomeMobileCountryCode(value: Double): Self = StObject.set(x, "homeMobileCountryCode", value.asInstanceOf[js.Any])
+    inline def setHomeMobileCountryCode(value: Double): Self = StObject.set(x, "homeMobileCountryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeMobileCountryCodeUndefined: Self = StObject.set(x, "homeMobileCountryCode", js.undefined)
+    inline def setHomeMobileCountryCodeUndefined: Self = StObject.set(x, "homeMobileCountryCode", js.undefined)
     
-    @scala.inline
-    def setHomeMobileNetworkCode(value: Double): Self = StObject.set(x, "homeMobileNetworkCode", value.asInstanceOf[js.Any])
+    inline def setHomeMobileNetworkCode(value: Double): Self = StObject.set(x, "homeMobileNetworkCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeMobileNetworkCodeUndefined: Self = StObject.set(x, "homeMobileNetworkCode", js.undefined)
+    inline def setHomeMobileNetworkCodeUndefined: Self = StObject.set(x, "homeMobileNetworkCode", js.undefined)
     
-    @scala.inline
-    def setRadioType(value: RadioType): Self = StObject.set(x, "radioType", value.asInstanceOf[js.Any])
+    inline def setRadioType(value: RadioType): Self = StObject.set(x, "radioType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioTypeUndefined: Self = StObject.set(x, "radioType", js.undefined)
+    inline def setRadioTypeUndefined: Self = StObject.set(x, "radioType", js.undefined)
     
-    @scala.inline
-    def setWifiAccessPoints(value: js.Array[WifiAccessPoint]): Self = StObject.set(x, "wifiAccessPoints", value.asInstanceOf[js.Any])
+    inline def setWifiAccessPoints(value: js.Array[WifiAccessPoint]): Self = StObject.set(x, "wifiAccessPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiAccessPointsUndefined: Self = StObject.set(x, "wifiAccessPoints", js.undefined)
+    inline def setWifiAccessPointsUndefined: Self = StObject.set(x, "wifiAccessPoints", js.undefined)
     
-    @scala.inline
-    def setWifiAccessPointsVarargs(value: WifiAccessPoint*): Self = StObject.set(x, "wifiAccessPoints", js.Array(value :_*))
+    inline def setWifiAccessPointsVarargs(value: WifiAccessPoint*): Self = StObject.set(x, "wifiAccessPoints", js.Array(value :_*))
   }
 }

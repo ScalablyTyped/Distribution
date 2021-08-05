@@ -14,23 +14,18 @@ trait DataType extends StObject {
 }
 object DataType {
   
-  @scala.inline
-  def apply(data: js.Any, `type`: String, url: String): DataType = {
+  inline def apply(data: js.Any, `type`: String, url: String): DataType = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataType]
   }
   
-  @scala.inline
-  implicit class DataTypeMutableBuilder[Self <: DataType] (val x: Self) extends AnyVal {
+  extension [Self <: DataType](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait MarginLeft extends StObject {
 }
 object MarginLeft {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alignItems: String,
     flexDirection: String,
     marginLeft: Double,
@@ -30,22 +29,16 @@ object MarginLeft {
     __obj.asInstanceOf[MarginLeft]
   }
   
-  @scala.inline
-  implicit class MarginLeftMutableBuilder[Self <: MarginLeft] (val x: Self) extends AnyVal {
+  extension [Self <: MarginLeft](x: Self) {
     
-    @scala.inline
-    def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    inline def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingVertical(value: Double): Self = StObject.set(x, "paddingVertical", value.asInstanceOf[js.Any])
+    inline def setPaddingVertical(value: Double): Self = StObject.set(x, "paddingVertical", value.asInstanceOf[js.Any])
   }
 }

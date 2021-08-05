@@ -24,8 +24,7 @@ object baseAutoFillMod {
     @JSImport("office-ui-fabric-react/lib/components/pickers/AutoFill/BaseAutoFill", "Autofill.defaultProps")
     @js.native
     def defaultProps: EnableAutofillOnKeyPress = js.native
-    @scala.inline
-    def defaultProps_=(x: EnableAutofillOnKeyPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: EnableAutofillOnKeyPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/pickers/AutoFill/BaseAutoFill", "BaseAutoFill")

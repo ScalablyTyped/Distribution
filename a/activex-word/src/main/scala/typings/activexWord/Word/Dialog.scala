@@ -31,6 +31,6 @@ trait Dialog extends StObject {
   
   def Update(): Unit = js.native
   
-  @JSName("Word.Dialog_typekey")
+  /* private */ @JSName("Word.Dialog_typekey")
   var WordDotDialog_typekey: Dialog = js.native
 }

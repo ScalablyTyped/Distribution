@@ -17,22 +17,22 @@ object interactionIndicatorMod {
        with InteractionIndicator {
     def this(hasEventEmitterEngineConfigRootContainer: RootContainer) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initUI: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _showPlaybackChangeIndicator: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unbindEvents: js.Any = js.native
     
     /* CompleteClass */
@@ -84,44 +84,40 @@ object interactionIndicatorMod {
     @JSImport("playable/dist/src/modules/ui/interaction-indicator/interaction-indicator", "default.View")
     @js.native
     def View: Instantiable0[typings.playable.interactionIndicatorViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable0[typings.playable.interactionIndicatorViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable0[typings.playable.interactionIndicatorViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/interaction-indicator/interaction-indicator", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/interaction-indicator/interaction-indicator", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   trait InteractionIndicator
     extends StObject
        with IInteractionIndicator {
     
-    var _bindEvents: js.Any
+    /* private */ var _bindEvents: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _initUI: js.Any
+    /* private */ var _initUI: js.Any
     
-    var _showPlaybackChangeIndicator: js.Any
+    /* private */ var _showPlaybackChangeIndicator: js.Any
     
-    var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: js.Any
     
     var view: typings.playable.interactionIndicatorViewMod.default
   }
   object InteractionIndicator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindEvents: js.Any,
       _engine: js.Any,
       _eventEmitter: js.Any,
@@ -146,29 +142,21 @@ object interactionIndicatorMod {
       __obj.asInstanceOf[InteractionIndicator]
     }
     
-    @scala.inline
-    implicit class InteractionIndicatorMutableBuilder[Self <: InteractionIndicator] (val x: Self) extends AnyVal {
+    extension [Self <: InteractionIndicator](x: Self) {
       
-      @scala.inline
-      def setView(value: typings.playable.interactionIndicatorViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.playable.interactionIndicatorViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_showPlaybackChangeIndicator(value: js.Any): Self = StObject.set(x, "_showPlaybackChangeIndicator", value.asInstanceOf[js.Any])
+      inline def set_showPlaybackChangeIndicator(value: js.Any): Self = StObject.set(x, "_showPlaybackChangeIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
     }
   }
 }

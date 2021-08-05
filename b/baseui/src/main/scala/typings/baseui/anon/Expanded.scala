@@ -10,19 +10,15 @@ trait Expanded extends StObject {
 }
 object Expanded {
   
-  @scala.inline
-  def apply(expanded: js.Array[typings.react.mod.Key]): Expanded = {
+  inline def apply(expanded: js.Array[typings.react.mod.Key]): Expanded = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expanded]
   }
   
-  @scala.inline
-  implicit class ExpandedMutableBuilder[Self <: Expanded] (val x: Self) extends AnyVal {
+  extension [Self <: Expanded](x: Self) {
     
-    @scala.inline
-    def setExpanded(value: js.Array[typings.react.mod.Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: js.Array[typings.react.mod.Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedVarargs(value: typings.react.mod.Key*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+    inline def setExpandedVarargs(value: typings.react.mod.Key*): Self = StObject.set(x, "expanded", js.Array(value :_*))
   }
 }

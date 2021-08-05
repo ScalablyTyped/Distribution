@@ -11,19 +11,15 @@ trait AgeRangeTargetingOptionDetails extends StObject {
 }
 object AgeRangeTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): AgeRangeTargetingOptionDetails = {
+  inline def apply(): AgeRangeTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AgeRangeTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class AgeRangeTargetingOptionDetailsMutableBuilder[Self <: AgeRangeTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AgeRangeTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setAgeRange(value: String): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
+    inline def setAgeRange(value: String): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeRangeUndefined: Self = StObject.set(x, "ageRange", js.undefined)
+    inline def setAgeRangeUndefined: Self = StObject.set(x, "ageRange", js.undefined)
   }
 }

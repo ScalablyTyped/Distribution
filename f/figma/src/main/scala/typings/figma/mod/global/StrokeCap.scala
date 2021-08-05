@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StrokeCap extends StObject
 object StrokeCap {
   
-  @scala.inline
-  def ARROW_EQUILATERAL: typings.figma.figmaStrings.ARROW_EQUILATERAL = "ARROW_EQUILATERAL".asInstanceOf[typings.figma.figmaStrings.ARROW_EQUILATERAL]
+  inline def ARROW_EQUILATERAL: typings.figma.figmaStrings.ARROW_EQUILATERAL = "ARROW_EQUILATERAL".asInstanceOf[typings.figma.figmaStrings.ARROW_EQUILATERAL]
   
-  @scala.inline
-  def ARROW_LINES: typings.figma.figmaStrings.ARROW_LINES = "ARROW_LINES".asInstanceOf[typings.figma.figmaStrings.ARROW_LINES]
+  inline def ARROW_LINES: typings.figma.figmaStrings.ARROW_LINES = "ARROW_LINES".asInstanceOf[typings.figma.figmaStrings.ARROW_LINES]
   
-  @scala.inline
-  def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
+  inline def NONE: typings.figma.figmaStrings.NONE = "NONE".asInstanceOf[typings.figma.figmaStrings.NONE]
   
-  @scala.inline
-  def ROUND: typings.figma.figmaStrings.ROUND = "ROUND".asInstanceOf[typings.figma.figmaStrings.ROUND]
+  inline def ROUND: typings.figma.figmaStrings.ROUND = "ROUND".asInstanceOf[typings.figma.figmaStrings.ROUND]
   
-  @scala.inline
-  def SQUARE: typings.figma.figmaStrings.SQUARE = "SQUARE".asInstanceOf[typings.figma.figmaStrings.SQUARE]
+  inline def SQUARE: typings.figma.figmaStrings.SQUARE = "SQUARE".asInstanceOf[typings.figma.figmaStrings.SQUARE]
 }

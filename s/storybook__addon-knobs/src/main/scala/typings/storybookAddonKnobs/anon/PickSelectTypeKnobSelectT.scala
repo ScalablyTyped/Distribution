@@ -19,34 +19,25 @@ trait PickSelectTypeKnobSelectT extends StObject {
 }
 object PickSelectTypeKnobSelectT {
   
-  @scala.inline
-  def apply(options: SelectTypeOptionsProp[SelectTypeKnobValue]): PickSelectTypeKnobSelectT = {
+  inline def apply(options: SelectTypeOptionsProp[SelectTypeKnobValue]): PickSelectTypeKnobSelectT = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], selectV2 = true)
     __obj.asInstanceOf[PickSelectTypeKnobSelectT]
   }
   
-  @scala.inline
-  implicit class PickSelectTypeKnobSelectTMutableBuilder[Self <: PickSelectTypeKnobSelectT] (val x: Self) extends AnyVal {
+  extension [Self <: PickSelectTypeKnobSelectT](x: Self) {
     
-    @scala.inline
-    def setOptions(value: SelectTypeOptionsProp[SelectTypeKnobValue]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SelectTypeOptionsProp[SelectTypeKnobValue]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsVarargs(value: SelectTypeKnobValue*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: SelectTypeKnobValue*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectV2(value: `true`): Self = StObject.set(x, "selectV2", value.asInstanceOf[js.Any])
+    inline def setSelectV2(value: `true`): Self = StObject.set(x, "selectV2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: SelectTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SelectTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: PropertyKey*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: PropertyKey*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

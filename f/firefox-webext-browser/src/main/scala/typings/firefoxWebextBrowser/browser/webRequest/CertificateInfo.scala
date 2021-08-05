@@ -26,8 +26,7 @@ trait CertificateInfo extends StObject {
 }
 object CertificateInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fingerprint: CertificateInfoFingerprint,
     isBuiltInRoot: Boolean,
     issuer: String,
@@ -40,37 +39,26 @@ object CertificateInfo {
     __obj.asInstanceOf[CertificateInfo]
   }
   
-  @scala.inline
-  implicit class CertificateInfoMutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateInfo](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: CertificateInfoFingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: CertificateInfoFingerprint): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBuiltInRoot(value: Boolean): Self = StObject.set(x, "isBuiltInRoot", value.asInstanceOf[js.Any])
+    inline def setIsBuiltInRoot(value: Boolean): Self = StObject.set(x, "isBuiltInRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawDER(value: js.Array[Double]): Self = StObject.set(x, "rawDER", value.asInstanceOf[js.Any])
+    inline def setRawDER(value: js.Array[Double]): Self = StObject.set(x, "rawDER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawDERUndefined: Self = StObject.set(x, "rawDER", js.undefined)
+    inline def setRawDERUndefined: Self = StObject.set(x, "rawDER", js.undefined)
     
-    @scala.inline
-    def setRawDERVarargs(value: Double*): Self = StObject.set(x, "rawDER", js.Array(value :_*))
+    inline def setRawDERVarargs(value: Double*): Self = StObject.set(x, "rawDER", js.Array(value :_*))
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectPublicKeyInfoDigest(value: CertificateInfoSubjectPublicKeyInfoDigest): Self = StObject.set(x, "subjectPublicKeyInfoDigest", value.asInstanceOf[js.Any])
+    inline def setSubjectPublicKeyInfoDigest(value: CertificateInfoSubjectPublicKeyInfoDigest): Self = StObject.set(x, "subjectPublicKeyInfoDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidity(value: CertificateInfoValidity): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
+    inline def setValidity(value: CertificateInfoValidity): Self = StObject.set(x, "validity", value.asInstanceOf[js.Any])
   }
 }

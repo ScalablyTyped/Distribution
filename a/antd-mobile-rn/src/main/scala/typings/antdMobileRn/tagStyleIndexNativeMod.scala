@@ -30,14 +30,12 @@ object tagStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.activeText")
     @js.native
     def activeText: ColorString = js.native
-    @scala.inline
-    def activeText_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeText")(x.asInstanceOf[js.Any])
+    inline def activeText_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.activeWrap")
     @js.native
     def activeWrap: BorderColor = js.native
-    @scala.inline
-    def activeWrap_=(x: BorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeWrap")(x.asInstanceOf[js.Any])
+    inline def activeWrap_=(x: BorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("activeWrap")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.close")
     @js.native
@@ -46,59 +44,49 @@ object tagStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.closeAndroid")
     @js.native
     def closeAndroid: HeightLeft = js.native
-    @scala.inline
-    def closeAndroid_=(x: HeightLeft): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeAndroid")(x.asInstanceOf[js.Any])
+    inline def closeAndroid_=(x: HeightLeft): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeAndroid")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.closeIOS")
     @js.native
     def closeIOS: BorderRadiusHeight = js.native
-    @scala.inline
-    def closeIOS_=(x: BorderRadiusHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeIOS")(x.asInstanceOf[js.Any])
+    inline def closeIOS_=(x: BorderRadiusHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeIOS")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.closeText")
     @js.native
     def closeText: FontSizeLineHeight = js.native
-    @scala.inline
-    def closeText_=(x: FontSizeLineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeText")(x.asInstanceOf[js.Any])
+    inline def closeText_=(x: FontSizeLineHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.closeTransform")
     @js.native
     def closeTransform: TransformArray = js.native
-    @scala.inline
-    def closeTransform_=(x: TransformArray): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeTransform")(x.asInstanceOf[js.Any])
+    inline def closeTransform_=(x: TransformArray): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("closeTransform")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def close_=(x: BackgroundColorPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("close")(x.asInstanceOf[js.Any])
+    inline def close_=(x: BackgroundColorPosition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("close")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.disabledText")
     @js.native
     def disabledText: ColorString = js.native
-    @scala.inline
-    def disabledText_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabledText")(x.asInstanceOf[js.Any])
+    inline def disabledText_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabledText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.disabledWrap")
     @js.native
     def disabledWrap: BackgroundColorBorderWidth = js.native
-    @scala.inline
-    def disabledWrap_=(x: BackgroundColorBorderWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabledWrap")(x.asInstanceOf[js.Any])
+    inline def disabledWrap_=(x: BackgroundColorBorderWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabledWrap")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.normalText")
     @js.native
     def normalText: ColorString = js.native
-    @scala.inline
-    def normalText_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalText")(x.asInstanceOf[js.Any])
+    inline def normalText_=(x: ColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.normalWrap")
     @js.native
     def normalWrap: BorderColor = js.native
-    @scala.inline
-    def normalWrap_=(x: BorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalWrap")(x.asInstanceOf[js.Any])
+    inline def normalWrap_=(x: BorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalWrap")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.tag")
     @js.native
     def tag: BorderRadiusFlexDirection = js.native
-    @scala.inline
-    def tag_=(x: BorderRadiusFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tag")(x.asInstanceOf[js.Any])
+    inline def tag_=(x: BorderRadiusFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tag")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.text")
     @js.native
@@ -107,11 +95,9 @@ object tagStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.textSmall")
     @js.native
     def textSmall: FontSizeNumber = js.native
-    @scala.inline
-    def textSmall_=(x: FontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textSmall")(x.asInstanceOf[js.Any])
+    inline def textSmall_=(x: FontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textSmall")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def text_=(x: FontSizeNumberTextAlignString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
+    inline def text_=(x: FontSizeNumberTextAlignString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.wrap")
     @js.native
@@ -120,11 +106,9 @@ object tagStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/tag/style/index.native", "default.wrapSmall")
     @js.native
     def wrapSmall: PaddingHorizontalPaddingVertical = js.native
-    @scala.inline
-    def wrapSmall_=(x: PaddingHorizontalPaddingVertical): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapSmall")(x.asInstanceOf[js.Any])
+    inline def wrapSmall_=(x: PaddingHorizontalPaddingVertical): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapSmall")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def wrap_=(x: BorderRadiusBorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrap")(x.asInstanceOf[js.Any])
+    inline def wrap_=(x: BorderRadiusBorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrap")(x.asInstanceOf[js.Any])
   }
   
   trait ITagStyle extends StObject {
@@ -163,8 +147,7 @@ object tagStyleIndexNativeMod {
   }
   object ITagStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activeText: TextStyle,
       activeWrap: ViewStyle,
       close: ViewStyle,
@@ -186,56 +169,39 @@ object tagStyleIndexNativeMod {
       __obj.asInstanceOf[ITagStyle]
     }
     
-    @scala.inline
-    implicit class ITagStyleMutableBuilder[Self <: ITagStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ITagStyle](x: Self) {
       
-      @scala.inline
-      def setActiveText(value: TextStyle): Self = StObject.set(x, "activeText", value.asInstanceOf[js.Any])
+      inline def setActiveText(value: TextStyle): Self = StObject.set(x, "activeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveWrap(value: ViewStyle): Self = StObject.set(x, "activeWrap", value.asInstanceOf[js.Any])
+      inline def setActiveWrap(value: ViewStyle): Self = StObject.set(x, "activeWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: ViewStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: ViewStyle): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseAndroid(value: ViewStyle): Self = StObject.set(x, "closeAndroid", value.asInstanceOf[js.Any])
+      inline def setCloseAndroid(value: ViewStyle): Self = StObject.set(x, "closeAndroid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIOS(value: ViewStyle): Self = StObject.set(x, "closeIOS", value.asInstanceOf[js.Any])
+      inline def setCloseIOS(value: ViewStyle): Self = StObject.set(x, "closeIOS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
+      inline def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseTransform(value: ViewStyle): Self = StObject.set(x, "closeTransform", value.asInstanceOf[js.Any])
+      inline def setCloseTransform(value: ViewStyle): Self = StObject.set(x, "closeTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledText(value: TextStyle): Self = StObject.set(x, "disabledText", value.asInstanceOf[js.Any])
+      inline def setDisabledText(value: TextStyle): Self = StObject.set(x, "disabledText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledWrap(value: ViewStyle): Self = StObject.set(x, "disabledWrap", value.asInstanceOf[js.Any])
+      inline def setDisabledWrap(value: ViewStyle): Self = StObject.set(x, "disabledWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalText(value: TextStyle): Self = StObject.set(x, "normalText", value.asInstanceOf[js.Any])
+      inline def setNormalText(value: TextStyle): Self = StObject.set(x, "normalText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalWrap(value: ViewStyle): Self = StObject.set(x, "normalWrap", value.asInstanceOf[js.Any])
+      inline def setNormalWrap(value: ViewStyle): Self = StObject.set(x, "normalWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: ViewStyle): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ViewStyle): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: TextStyle): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextSmall(value: TextStyle): Self = StObject.set(x, "textSmall", value.asInstanceOf[js.Any])
+      inline def setTextSmall(value: TextStyle): Self = StObject.set(x, "textSmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: ViewStyle): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapSmall(value: ViewStyle): Self = StObject.set(x, "wrapSmall", value.asInstanceOf[js.Any])
+      inline def setWrapSmall(value: ViewStyle): Self = StObject.set(x, "wrapSmall", value.asInstanceOf[js.Any])
     }
   }
 }

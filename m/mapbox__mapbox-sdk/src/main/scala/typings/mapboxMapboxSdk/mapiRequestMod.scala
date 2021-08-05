@@ -21,11 +21,9 @@ object mapiRequestMod {
   trait DirectionsApproach extends StObject
   object DirectionsApproach {
     
-    @scala.inline
-    def curb: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.curb = "curb".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.curb]
+    inline def curb: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.curb = "curb".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.curb]
     
-    @scala.inline
-    def unrestricted: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unrestricted = "unrestricted".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unrestricted]
+    inline def unrestricted: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unrestricted = "unrestricted".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unrestricted]
   }
   
   trait EventEmitter extends StObject {
@@ -40,8 +38,7 @@ object mapiRequestMod {
   }
   object EventEmitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       downloadProgress: ProgressEvent[EventTarget],
       error: MapiError,
       response: MapiResponse,
@@ -51,20 +48,15 @@ object mapiRequestMod {
       __obj.asInstanceOf[EventEmitter]
     }
     
-    @scala.inline
-    implicit class EventEmitterMutableBuilder[Self <: EventEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: EventEmitter](x: Self) {
       
-      @scala.inline
-      def setDownloadProgress(value: ProgressEvent[EventTarget]): Self = StObject.set(x, "downloadProgress", value.asInstanceOf[js.Any])
+      inline def setDownloadProgress(value: ProgressEvent[EventTarget]): Self = StObject.set(x, "downloadProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: MapiError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: MapiError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: MapiResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: MapiResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadProgress(value: ProgressEvent[EventTarget]): Self = StObject.set(x, "uploadProgress", value.asInstanceOf[js.Any])
+      inline def setUploadProgress(value: ProgressEvent[EventTarget]): Self = StObject.set(x, "uploadProgress", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,14 +68,11 @@ object mapiRequestMod {
   trait MapboxProfile extends StObject
   object MapboxProfile {
     
-    @scala.inline
-    def cycling: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling = "cycling".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling]
+    inline def cycling: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling = "cycling".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling]
     
-    @scala.inline
-    def driving: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving = "driving".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving]
+    inline def driving: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving = "driving".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving]
     
-    @scala.inline
-    def walking: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking = "walking".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking]
+    inline def walking: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking = "walking".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking]
   }
   
   @js.native
@@ -181,23 +170,18 @@ object mapiRequestMod {
   }
   object PageCallbackFunction {
     
-    @scala.inline
-    def apply(error: MapiError, next: () => Unit, response: MapiResponse): PageCallbackFunction = {
+    inline def apply(error: MapiError, next: () => Unit, response: MapiResponse): PageCallbackFunction = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], next = js.Any.fromFunction0(next), response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageCallbackFunction]
     }
     
-    @scala.inline
-    implicit class PageCallbackFunctionMutableBuilder[Self <: PageCallbackFunction] (val x: Self) extends AnyVal {
+    extension [Self <: PageCallbackFunction](x: Self) {
       
-      @scala.inline
-      def setError(value: MapiError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: MapiError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Unit): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResponse(value: MapiResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: MapiResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

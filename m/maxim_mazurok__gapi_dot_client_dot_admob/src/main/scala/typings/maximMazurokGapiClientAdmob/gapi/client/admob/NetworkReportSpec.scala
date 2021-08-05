@@ -44,73 +44,51 @@ trait NetworkReportSpec extends StObject {
 }
 object NetworkReportSpec {
   
-  @scala.inline
-  def apply(): NetworkReportSpec = {
+  inline def apply(): NetworkReportSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkReportSpec]
   }
   
-  @scala.inline
-  implicit class NetworkReportSpecMutableBuilder[Self <: NetworkReportSpec] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkReportSpec](x: Self) {
     
-    @scala.inline
-    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+    inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
-    @scala.inline
-    def setDimensionFilters(value: js.Array[NetworkReportSpecDimensionFilter]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
+    inline def setDimensionFilters(value: js.Array[NetworkReportSpecDimensionFilter]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
+    inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    @scala.inline
-    def setDimensionFiltersVarargs(value: NetworkReportSpecDimensionFilter*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: NetworkReportSpecDimensionFilter*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: String*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setLocalizationSettings(value: LocalizationSettings): Self = StObject.set(x, "localizationSettings", value.asInstanceOf[js.Any])
+    inline def setLocalizationSettings(value: LocalizationSettings): Self = StObject.set(x, "localizationSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizationSettingsUndefined: Self = StObject.set(x, "localizationSettings", js.undefined)
+    inline def setLocalizationSettingsUndefined: Self = StObject.set(x, "localizationSettings", js.undefined)
     
-    @scala.inline
-    def setMaxReportRows(value: Double): Self = StObject.set(x, "maxReportRows", value.asInstanceOf[js.Any])
+    inline def setMaxReportRows(value: Double): Self = StObject.set(x, "maxReportRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxReportRowsUndefined: Self = StObject.set(x, "maxReportRows", js.undefined)
+    inline def setMaxReportRowsUndefined: Self = StObject.set(x, "maxReportRows", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[String]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: String*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setSortConditions(value: js.Array[NetworkReportSpecSortCondition]): Self = StObject.set(x, "sortConditions", value.asInstanceOf[js.Any])
+    inline def setSortConditions(value: js.Array[NetworkReportSpecSortCondition]): Self = StObject.set(x, "sortConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortConditionsUndefined: Self = StObject.set(x, "sortConditions", js.undefined)
+    inline def setSortConditionsUndefined: Self = StObject.set(x, "sortConditions", js.undefined)
     
-    @scala.inline
-    def setSortConditionsVarargs(value: NetworkReportSpecSortCondition*): Self = StObject.set(x, "sortConditions", js.Array(value :_*))
+    inline def setSortConditionsVarargs(value: NetworkReportSpecSortCondition*): Self = StObject.set(x, "sortConditions", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

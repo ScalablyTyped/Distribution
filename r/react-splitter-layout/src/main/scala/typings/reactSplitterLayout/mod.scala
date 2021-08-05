@@ -106,80 +106,56 @@ object mod {
   }
   object SplitterLayoutProps {
     
-    @scala.inline
-    def apply(): SplitterLayoutProps = {
+    inline def apply(): SplitterLayoutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SplitterLayoutProps]
     }
     
-    @scala.inline
-    implicit class SplitterLayoutPropsMutableBuilder[Self <: SplitterLayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: SplitterLayoutProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCustomClassName(value: String): Self = StObject.set(x, "customClassName", value.asInstanceOf[js.Any])
+      inline def setCustomClassName(value: String): Self = StObject.set(x, "customClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomClassNameUndefined: Self = StObject.set(x, "customClassName", js.undefined)
+      inline def setCustomClassNameUndefined: Self = StObject.set(x, "customClassName", js.undefined)
       
-      @scala.inline
-      def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
+      inline def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+      inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
+      inline def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnSecondaryPaneSizeChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onSecondaryPaneSizeChange", js.Any.fromFunction1(value))
+      inline def setOnSecondaryPaneSizeChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onSecondaryPaneSizeChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSecondaryPaneSizeChangeUndefined: Self = StObject.set(x, "onSecondaryPaneSizeChange", js.undefined)
+      inline def setOnSecondaryPaneSizeChangeUndefined: Self = StObject.set(x, "onSecondaryPaneSizeChange", js.undefined)
       
-      @scala.inline
-      def setPercentage(value: Boolean): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Boolean): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+      inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
-      @scala.inline
-      def setPrimaryIndex(value: TPrimaryIndex): Self = StObject.set(x, "primaryIndex", value.asInstanceOf[js.Any])
+      inline def setPrimaryIndex(value: TPrimaryIndex): Self = StObject.set(x, "primaryIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryIndexUndefined: Self = StObject.set(x, "primaryIndex", js.undefined)
+      inline def setPrimaryIndexUndefined: Self = StObject.set(x, "primaryIndex", js.undefined)
       
-      @scala.inline
-      def setPrimaryMinSize(value: Double): Self = StObject.set(x, "primaryMinSize", value.asInstanceOf[js.Any])
+      inline def setPrimaryMinSize(value: Double): Self = StObject.set(x, "primaryMinSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryMinSizeUndefined: Self = StObject.set(x, "primaryMinSize", js.undefined)
+      inline def setPrimaryMinSizeUndefined: Self = StObject.set(x, "primaryMinSize", js.undefined)
       
-      @scala.inline
-      def setSecondaryInitialSize(value: Double): Self = StObject.set(x, "secondaryInitialSize", value.asInstanceOf[js.Any])
+      inline def setSecondaryInitialSize(value: Double): Self = StObject.set(x, "secondaryInitialSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryInitialSizeUndefined: Self = StObject.set(x, "secondaryInitialSize", js.undefined)
+      inline def setSecondaryInitialSizeUndefined: Self = StObject.set(x, "secondaryInitialSize", js.undefined)
       
-      @scala.inline
-      def setSecondaryMinSize(value: Double): Self = StObject.set(x, "secondaryMinSize", value.asInstanceOf[js.Any])
+      inline def setSecondaryMinSize(value: Double): Self = StObject.set(x, "secondaryMinSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryMinSizeUndefined: Self = StObject.set(x, "secondaryMinSize", js.undefined)
+      inline def setSecondaryMinSizeUndefined: Self = StObject.set(x, "secondaryMinSize", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -190,10 +166,8 @@ object mod {
   trait TPrimaryIndex extends StObject
   object TPrimaryIndex {
     
-    @scala.inline
-    def `0`: typings.reactSplitterLayout.reactSplitterLayoutNumbers.`0` = 0.asInstanceOf[typings.reactSplitterLayout.reactSplitterLayoutNumbers.`0`]
+    inline def `0`: typings.reactSplitterLayout.reactSplitterLayoutNumbers.`0` = 0.asInstanceOf[typings.reactSplitterLayout.reactSplitterLayoutNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.reactSplitterLayout.reactSplitterLayoutNumbers.`1` = 1.asInstanceOf[typings.reactSplitterLayout.reactSplitterLayoutNumbers.`1`]
+    inline def `1`: typings.reactSplitterLayout.reactSplitterLayoutNumbers.`1` = 1.asInstanceOf[typings.reactSplitterLayout.reactSplitterLayoutNumbers.`1`]
   }
 }

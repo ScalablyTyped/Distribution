@@ -17,31 +17,23 @@ trait OperationStatus extends StObject {
 }
 object OperationStatus {
   
-  @scala.inline
-  def apply(): OperationStatus = {
+  inline def apply(): OperationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OperationStatus]
   }
   
-  @scala.inline
-  implicit class OperationStatusMutableBuilder[Self <: OperationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: OperationStatus](x: Self) {
     
-    @scala.inline
-    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

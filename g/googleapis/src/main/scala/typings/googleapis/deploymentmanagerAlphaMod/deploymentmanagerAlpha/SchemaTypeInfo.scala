@@ -50,55 +50,39 @@ trait SchemaTypeInfo extends StObject {
 }
 object SchemaTypeInfo {
   
-  @scala.inline
-  def apply(): SchemaTypeInfo = {
+  inline def apply(): SchemaTypeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTypeInfo]
   }
   
-  @scala.inline
-  implicit class SchemaTypeInfoMutableBuilder[Self <: SchemaTypeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTypeInfo](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDocumentationLink(value: String): Self = StObject.set(x, "documentationLink", value.asInstanceOf[js.Any])
+    inline def setDocumentationLink(value: String): Self = StObject.set(x, "documentationLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationLinkUndefined: Self = StObject.set(x, "documentationLink", js.undefined)
+    inline def setDocumentationLinkUndefined: Self = StObject.set(x, "documentationLink", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSchema(value: SchemaTypeInfoSchemaInfo): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: SchemaTypeInfoSchemaInfo): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

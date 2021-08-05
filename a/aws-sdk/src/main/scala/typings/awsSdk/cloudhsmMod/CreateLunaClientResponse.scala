@@ -13,19 +13,15 @@ trait CreateLunaClientResponse extends StObject {
 }
 object CreateLunaClientResponse {
   
-  @scala.inline
-  def apply(): CreateLunaClientResponse = {
+  inline def apply(): CreateLunaClientResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLunaClientResponse]
   }
   
-  @scala.inline
-  implicit class CreateLunaClientResponseMutableBuilder[Self <: CreateLunaClientResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLunaClientResponse](x: Self) {
     
-    @scala.inline
-    def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
+    inline def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientArnUndefined: Self = StObject.set(x, "ClientArn", js.undefined)
+    inline def setClientArnUndefined: Self = StObject.set(x, "ClientArn", js.undefined)
   }
 }

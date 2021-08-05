@@ -21,8 +21,7 @@ trait XJobListener
 }
 object XJobListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     jobFinished: (XAsyncJob, js.Any) => Unit,
@@ -33,10 +32,8 @@ object XJobListener {
     __obj.asInstanceOf[XJobListener]
   }
   
-  @scala.inline
-  implicit class XJobListenerMutableBuilder[Self <: XJobListener] (val x: Self) extends AnyVal {
+  extension [Self <: XJobListener](x: Self) {
     
-    @scala.inline
-    def setJobFinished(value: (XAsyncJob, js.Any) => Unit): Self = StObject.set(x, "jobFinished", js.Any.fromFunction2(value))
+    inline def setJobFinished(value: (XAsyncJob, js.Any) => Unit): Self = StObject.set(x, "jobFinished", js.Any.fromFunction2(value))
   }
 }

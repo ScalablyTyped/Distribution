@@ -15,22 +15,17 @@ trait servicesArrayuuidstringis extends StObject {
 }
 object servicesArrayuuidstringis {
   
-  @scala.inline
-  def apply(errMsg: ok | String, services: js.Array[IsPrimary]): servicesArrayuuidstringis = {
+  inline def apply(errMsg: ok | String, services: js.Array[IsPrimary]): servicesArrayuuidstringis = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], services = services.asInstanceOf[js.Any])
     __obj.asInstanceOf[servicesArrayuuidstringis]
   }
   
-  @scala.inline
-  implicit class servicesArrayuuidstringisMutableBuilder[Self <: servicesArrayuuidstringis] (val x: Self) extends AnyVal {
+  extension [Self <: servicesArrayuuidstringis](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServices(value: js.Array[IsPrimary]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[IsPrimary]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesVarargs(value: IsPrimary*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: IsPrimary*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

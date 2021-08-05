@@ -18,25 +18,19 @@ trait LinkAttributeAction extends StObject {
 }
 object LinkAttributeAction {
   
-  @scala.inline
-  def apply(): LinkAttributeAction = {
+  inline def apply(): LinkAttributeAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkAttributeAction]
   }
   
-  @scala.inline
-  implicit class LinkAttributeActionMutableBuilder[Self <: LinkAttributeAction] (val x: Self) extends AnyVal {
+  extension [Self <: LinkAttributeAction](x: Self) {
     
-    @scala.inline
-    def setAttributeActionType(value: UpdateActionType): Self = StObject.set(x, "AttributeActionType", value.asInstanceOf[js.Any])
+    inline def setAttributeActionType(value: UpdateActionType): Self = StObject.set(x, "AttributeActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeActionTypeUndefined: Self = StObject.set(x, "AttributeActionType", js.undefined)
+    inline def setAttributeActionTypeUndefined: Self = StObject.set(x, "AttributeActionType", js.undefined)
     
-    @scala.inline
-    def setAttributeUpdateValue(value: TypedAttributeValue): Self = StObject.set(x, "AttributeUpdateValue", value.asInstanceOf[js.Any])
+    inline def setAttributeUpdateValue(value: TypedAttributeValue): Self = StObject.set(x, "AttributeUpdateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUpdateValueUndefined: Self = StObject.set(x, "AttributeUpdateValue", js.undefined)
+    inline def setAttributeUpdateValueUndefined: Self = StObject.set(x, "AttributeUpdateValue", js.undefined)
   }
 }

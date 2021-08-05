@@ -12,20 +12,16 @@ trait Left extends StObject {
 }
 object Left {
   
-  @scala.inline
-  def apply(`animation-delay`: String, left: String): Left = {
+  inline def apply(`animation-delay`: String, left: String): Left = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
     __obj.updateDynamic("animation-delay")(`animation-delay`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Left]
   }
   
-  @scala.inline
-  implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+  extension [Self <: Left](x: Self) {
     
-    @scala.inline
-    def `setAnimation-delay`(value: String): Self = StObject.set(x, "animation-delay", value.asInstanceOf[js.Any])
+    inline def `setAnimation-delay`(value: String): Self = StObject.set(x, "animation-delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
   }
 }

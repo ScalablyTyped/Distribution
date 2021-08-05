@@ -33,43 +33,31 @@ trait Condition extends StObject {
 }
 object Condition {
   
-  @scala.inline
-  def apply(): Condition = {
+  inline def apply(): Condition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Condition]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+  extension [Self <: Condition](x: Self) {
     
-    @scala.inline
-    def setCrawlState(value: CrawlState): Self = StObject.set(x, "CrawlState", value.asInstanceOf[js.Any])
+    inline def setCrawlState(value: CrawlState): Self = StObject.set(x, "CrawlState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlStateUndefined: Self = StObject.set(x, "CrawlState", js.undefined)
+    inline def setCrawlStateUndefined: Self = StObject.set(x, "CrawlState", js.undefined)
     
-    @scala.inline
-    def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
+    inline def setCrawlerName(value: NameString): Self = StObject.set(x, "CrawlerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlerNameUndefined: Self = StObject.set(x, "CrawlerName", js.undefined)
+    inline def setCrawlerNameUndefined: Self = StObject.set(x, "CrawlerName", js.undefined)
     
-    @scala.inline
-    def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
-    @scala.inline
-    def setLogicalOperator(value: LogicalOperator): Self = StObject.set(x, "LogicalOperator", value.asInstanceOf[js.Any])
+    inline def setLogicalOperator(value: LogicalOperator): Self = StObject.set(x, "LogicalOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalOperatorUndefined: Self = StObject.set(x, "LogicalOperator", js.undefined)
+    inline def setLogicalOperatorUndefined: Self = StObject.set(x, "LogicalOperator", js.undefined)
     
-    @scala.inline
-    def setState(value: JobRunState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: JobRunState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

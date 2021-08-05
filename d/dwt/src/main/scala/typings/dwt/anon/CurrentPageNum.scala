@@ -10,19 +10,15 @@ trait CurrentPageNum extends StObject {
 }
 object CurrentPageNum {
   
-  @scala.inline
-  def apply(): CurrentPageNum = {
+  inline def apply(): CurrentPageNum = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrentPageNum]
   }
   
-  @scala.inline
-  implicit class CurrentPageNumMutableBuilder[Self <: CurrentPageNum] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentPageNum](x: Self) {
     
-    @scala.inline
-    def setCurrentPageNum(value: Double): Self = StObject.set(x, "currentPageNum", value.asInstanceOf[js.Any])
+    inline def setCurrentPageNum(value: Double): Self = StObject.set(x, "currentPageNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageNumUndefined: Self = StObject.set(x, "currentPageNum", js.undefined)
+    inline def setCurrentPageNumUndefined: Self = StObject.set(x, "currentPageNum", js.undefined)
   }
 }

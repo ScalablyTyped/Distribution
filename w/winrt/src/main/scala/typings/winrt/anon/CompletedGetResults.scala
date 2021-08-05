@@ -17,8 +17,7 @@ trait CompletedGetResults extends StObject {
 }
 object CompletedGetResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completed: (/* asyncInfo */ IAsyncOperation[js.Any], /* asyncStatus */ AsyncStatus) => Unit,
     getResults: () => js.Any
   ): CompletedGetResults = {
@@ -26,13 +25,10 @@ object CompletedGetResults {
     __obj.asInstanceOf[CompletedGetResults]
   }
   
-  @scala.inline
-  implicit class CompletedGetResultsMutableBuilder[Self <: CompletedGetResults] (val x: Self) extends AnyVal {
+  extension [Self <: CompletedGetResults](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: (/* asyncInfo */ IAsyncOperation[js.Any], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
+    inline def setCompleted(value: (/* asyncInfo */ IAsyncOperation[js.Any], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetResults(value: () => js.Any): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => js.Any): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
   }
 }

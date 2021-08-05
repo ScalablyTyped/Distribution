@@ -23,28 +23,21 @@ trait DescribeEngineDefaultParametersMessage extends StObject {
 }
 object DescribeEngineDefaultParametersMessage {
   
-  @scala.inline
-  def apply(CacheParameterGroupFamily: String): DescribeEngineDefaultParametersMessage = {
+  inline def apply(CacheParameterGroupFamily: String): DescribeEngineDefaultParametersMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupFamily = CacheParameterGroupFamily.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEngineDefaultParametersMessage]
   }
   
-  @scala.inline
-  implicit class DescribeEngineDefaultParametersMessageMutableBuilder[Self <: DescribeEngineDefaultParametersMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEngineDefaultParametersMessage](x: Self) {
     
-    @scala.inline
-    def setCacheParameterGroupFamily(value: String): Self = StObject.set(x, "CacheParameterGroupFamily", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupFamily(value: String): Self = StObject.set(x, "CacheParameterGroupFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait CreateBLEConnectionOptions
 }
 object CreateBLEConnectionOptions {
   
-  @scala.inline
-  def apply(deviceId: String, success: ErrMsgResponse => Unit): CreateBLEConnectionOptions = {
+  inline def apply(deviceId: String, success: ErrMsgResponse => Unit): CreateBLEConnectionOptions = {
     val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[CreateBLEConnectionOptions]
   }
   
-  @scala.inline
-  implicit class CreateBLEConnectionOptionsMutableBuilder[Self <: CreateBLEConnectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBLEConnectionOptions](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

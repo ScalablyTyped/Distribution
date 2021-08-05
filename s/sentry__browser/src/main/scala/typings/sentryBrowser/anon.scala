@@ -26,20 +26,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
+      inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
+      inline def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
     }
   }
   
@@ -51,26 +47,20 @@ object anon {
   }
   object AttachStacktrace {
     
-    @scala.inline
-    def apply(): AttachStacktrace = {
+    inline def apply(): AttachStacktrace = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttachStacktrace]
     }
     
-    @scala.inline
-    implicit class AttachStacktraceMutableBuilder[Self <: AttachStacktrace] (val x: Self) extends AnyVal {
+    extension [Self <: AttachStacktrace](x: Self) {
       
-      @scala.inline
-      def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
+      inline def setAttachStacktrace(value: Boolean): Self = StObject.set(x, "attachStacktrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
+      inline def setAttachStacktraceUndefined: Self = StObject.set(x, "attachStacktrace", js.undefined)
       
-      @scala.inline
-      def setRejection(value: Boolean): Self = StObject.set(x, "rejection", value.asInstanceOf[js.Any])
+      inline def setRejection(value: Boolean): Self = StObject.set(x, "rejection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectionUndefined: Self = StObject.set(x, "rejection", js.undefined)
+      inline def setRejectionUndefined: Self = StObject.set(x, "rejection", js.undefined)
     }
   }
   
@@ -82,26 +72,20 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(): Email = {
+    inline def apply(): Email = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -130,26 +114,20 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply(): Key = {
+    inline def apply(): Key = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
   
@@ -159,20 +137,16 @@ object anon {
   }
   object Mechanism {
     
-    @scala.inline
-    def apply(): Mechanism = {
+    inline def apply(): Mechanism = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Mechanism]
     }
     
-    @scala.inline
-    implicit class MechanismMutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
+    extension [Self <: Mechanism](x: Self) {
       
-      @scala.inline
-      def setMechanism(value: typings.sentryTypes.mechanismMod.Mechanism): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+      inline def setMechanism(value: typings.sentryTypes.mechanismMod.Mechanism): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMechanismUndefined: Self = StObject.set(x, "mechanism", js.undefined)
+      inline def setMechanismUndefined: Self = StObject.set(x, "mechanism", js.undefined)
     }
   }
   
@@ -193,50 +167,36 @@ object anon {
   }
   object PartialBreadcrumbsOptions {
     
-    @scala.inline
-    def apply(): PartialBreadcrumbsOptions = {
+    inline def apply(): PartialBreadcrumbsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialBreadcrumbsOptions]
     }
     
-    @scala.inline
-    implicit class PartialBreadcrumbsOptionsMutableBuilder[Self <: PartialBreadcrumbsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialBreadcrumbsOptions](x: Self) {
       
-      @scala.inline
-      def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+      inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
       
-      @scala.inline
-      def setDom(value: Boolean): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: Boolean): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
+      inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
       
-      @scala.inline
-      def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+      inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
       
-      @scala.inline
-      def setSentry(value: Boolean): Self = StObject.set(x, "sentry", value.asInstanceOf[js.Any])
+      inline def setSentry(value: Boolean): Self = StObject.set(x, "sentry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentryUndefined: Self = StObject.set(x, "sentry", js.undefined)
+      inline def setSentryUndefined: Self = StObject.set(x, "sentry", js.undefined)
       
-      @scala.inline
-      def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+      inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
     }
   }
   
@@ -255,47 +215,34 @@ object anon {
   }
   object PartialTryCatchOptions {
     
-    @scala.inline
-    def apply(): PartialTryCatchOptions = {
+    inline def apply(): PartialTryCatchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialTryCatchOptions]
     }
     
-    @scala.inline
-    implicit class PartialTryCatchOptionsMutableBuilder[Self <: PartialTryCatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialTryCatchOptions](x: Self) {
       
-      @scala.inline
-      def setEventTarget(value: Boolean | js.Array[String]): Self = StObject.set(x, "eventTarget", value.asInstanceOf[js.Any])
+      inline def setEventTarget(value: Boolean | js.Array[String]): Self = StObject.set(x, "eventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTargetUndefined: Self = StObject.set(x, "eventTarget", js.undefined)
+      inline def setEventTargetUndefined: Self = StObject.set(x, "eventTarget", js.undefined)
       
-      @scala.inline
-      def setEventTargetVarargs(value: String*): Self = StObject.set(x, "eventTarget", js.Array(value :_*))
+      inline def setEventTargetVarargs(value: String*): Self = StObject.set(x, "eventTarget", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
+      inline def setRequestAnimationFrame(value: Boolean): Self = StObject.set(x, "requestAnimationFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestAnimationFrameUndefined: Self = StObject.set(x, "requestAnimationFrame", js.undefined)
+      inline def setRequestAnimationFrameUndefined: Self = StObject.set(x, "requestAnimationFrame", js.undefined)
       
-      @scala.inline
-      def setSetInterval(value: Boolean): Self = StObject.set(x, "setInterval", value.asInstanceOf[js.Any])
+      inline def setSetInterval(value: Boolean): Self = StObject.set(x, "setInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetIntervalUndefined: Self = StObject.set(x, "setInterval", js.undefined)
+      inline def setSetIntervalUndefined: Self = StObject.set(x, "setInterval", js.undefined)
       
-      @scala.inline
-      def setSetTimeout(value: Boolean): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
+      inline def setSetTimeout(value: Boolean): Self = StObject.set(x, "setTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
+      inline def setSetTimeoutUndefined: Self = StObject.set(x, "setTimeout", js.undefined)
       
-      @scala.inline
-      def setXMLHttpRequest(value: Boolean): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
+      inline def setXMLHttpRequest(value: Boolean): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
+      inline def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
     }
   }
   

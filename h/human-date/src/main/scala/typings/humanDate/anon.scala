@@ -23,41 +23,30 @@ object anon {
   }
   object RelativeTimeOptionsreturn {
     
-    @scala.inline
-    def apply(returnObject: js.UndefOr[Boolean] & js.UndefOr[`false`]): RelativeTimeOptionsreturn = {
+    inline def apply(returnObject: js.UndefOr[Boolean] & js.UndefOr[`false`]): RelativeTimeOptionsreturn = {
       val __obj = js.Dynamic.literal(returnObject = returnObject.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelativeTimeOptionsreturn]
     }
     
-    @scala.inline
-    implicit class RelativeTimeOptionsreturnMutableBuilder[Self <: RelativeTimeOptionsreturn] (val x: Self) extends AnyVal {
+    extension [Self <: RelativeTimeOptionsreturn](x: Self) {
       
-      @scala.inline
-      def setAllUnits(value: Boolean): Self = StObject.set(x, "allUnits", value.asInstanceOf[js.Any])
+      inline def setAllUnits(value: Boolean): Self = StObject.set(x, "allUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUnitsUndefined: Self = StObject.set(x, "allUnits", js.undefined)
+      inline def setAllUnitsUndefined: Self = StObject.set(x, "allUnits", js.undefined)
       
-      @scala.inline
-      def setFutureSuffix(value: String): Self = StObject.set(x, "futureSuffix", value.asInstanceOf[js.Any])
+      inline def setFutureSuffix(value: String): Self = StObject.set(x, "futureSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFutureSuffixUndefined: Self = StObject.set(x, "futureSuffix", js.undefined)
+      inline def setFutureSuffixUndefined: Self = StObject.set(x, "futureSuffix", js.undefined)
       
-      @scala.inline
-      def setPastSuffix(value: String): Self = StObject.set(x, "pastSuffix", value.asInstanceOf[js.Any])
+      inline def setPastSuffix(value: String): Self = StObject.set(x, "pastSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPastSuffixUndefined: Self = StObject.set(x, "pastSuffix", js.undefined)
+      inline def setPastSuffixUndefined: Self = StObject.set(x, "pastSuffix", js.undefined)
       
-      @scala.inline
-      def setPresentText(value: String): Self = StObject.set(x, "presentText", value.asInstanceOf[js.Any])
+      inline def setPresentText(value: String): Self = StObject.set(x, "presentText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresentTextUndefined: Self = StObject.set(x, "presentText", js.undefined)
+      inline def setPresentTextUndefined: Self = StObject.set(x, "presentText", js.undefined)
       
-      @scala.inline
-      def setReturnObject(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
+      inline def setReturnObject(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,41 +65,30 @@ object anon {
   }
   object RelativeTimeOptionsreturnAllUnits {
     
-    @scala.inline
-    def apply(returnObject: js.UndefOr[Boolean] & `true`): RelativeTimeOptionsreturnAllUnits = {
+    inline def apply(returnObject: js.UndefOr[Boolean] & `true`): RelativeTimeOptionsreturnAllUnits = {
       val __obj = js.Dynamic.literal(returnObject = returnObject.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelativeTimeOptionsreturnAllUnits]
     }
     
-    @scala.inline
-    implicit class RelativeTimeOptionsreturnAllUnitsMutableBuilder[Self <: RelativeTimeOptionsreturnAllUnits] (val x: Self) extends AnyVal {
+    extension [Self <: RelativeTimeOptionsreturnAllUnits](x: Self) {
       
-      @scala.inline
-      def setAllUnits(value: Boolean): Self = StObject.set(x, "allUnits", value.asInstanceOf[js.Any])
+      inline def setAllUnits(value: Boolean): Self = StObject.set(x, "allUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUnitsUndefined: Self = StObject.set(x, "allUnits", js.undefined)
+      inline def setAllUnitsUndefined: Self = StObject.set(x, "allUnits", js.undefined)
       
-      @scala.inline
-      def setFutureSuffix(value: String): Self = StObject.set(x, "futureSuffix", value.asInstanceOf[js.Any])
+      inline def setFutureSuffix(value: String): Self = StObject.set(x, "futureSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFutureSuffixUndefined: Self = StObject.set(x, "futureSuffix", js.undefined)
+      inline def setFutureSuffixUndefined: Self = StObject.set(x, "futureSuffix", js.undefined)
       
-      @scala.inline
-      def setPastSuffix(value: String): Self = StObject.set(x, "pastSuffix", value.asInstanceOf[js.Any])
+      inline def setPastSuffix(value: String): Self = StObject.set(x, "pastSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPastSuffixUndefined: Self = StObject.set(x, "pastSuffix", js.undefined)
+      inline def setPastSuffixUndefined: Self = StObject.set(x, "pastSuffix", js.undefined)
       
-      @scala.inline
-      def setPresentText(value: String): Self = StObject.set(x, "presentText", value.asInstanceOf[js.Any])
+      inline def setPresentText(value: String): Self = StObject.set(x, "presentText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresentTextUndefined: Self = StObject.set(x, "presentText", js.undefined)
+      inline def setPresentTextUndefined: Self = StObject.set(x, "presentText", js.undefined)
       
-      @scala.inline
-      def setReturnObject(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
+      inline def setReturnObject(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "returnObject", value.asInstanceOf[js.Any])
     }
   }
 }

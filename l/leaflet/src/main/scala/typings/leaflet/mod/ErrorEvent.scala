@@ -14,8 +14,7 @@ trait ErrorEvent
 }
 object ErrorEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: Double,
     layer: js.Any,
     message: String,
@@ -29,13 +28,10 @@ object ErrorEvent {
     __obj.asInstanceOf[ErrorEvent]
   }
   
-  @scala.inline
-  implicit class ErrorEventMutableBuilder[Self <: ErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorEvent](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

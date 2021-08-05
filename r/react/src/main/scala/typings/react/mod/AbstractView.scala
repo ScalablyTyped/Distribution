@@ -18,19 +18,15 @@ trait AbstractView extends StObject {
 }
 object AbstractView {
   
-  @scala.inline
-  def apply(document: Document, styleMedia: StyleMedia): AbstractView = {
+  inline def apply(document: Document, styleMedia: StyleMedia): AbstractView = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], styleMedia = styleMedia.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractView]
   }
   
-  @scala.inline
-  implicit class AbstractViewMutableBuilder[Self <: AbstractView] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractView](x: Self) {
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleMedia(value: StyleMedia): Self = StObject.set(x, "styleMedia", value.asInstanceOf[js.Any])
+    inline def setStyleMedia(value: StyleMedia): Self = StObject.set(x, "styleMedia", value.asInstanceOf[js.Any])
   }
 }

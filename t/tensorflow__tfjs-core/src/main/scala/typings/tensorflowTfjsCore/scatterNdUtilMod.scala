@@ -13,14 +13,11 @@ object scatterNdUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateShapes")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[ScatterShapeInfo]
+  inline def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateShapes")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[ScatterShapeInfo]
   
-  @scala.inline
-  def validateInput(updates: Tensor[Rank], indices: Tensor[Rank], shape: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateInput")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateInput(updates: Tensor[Rank], indices: Tensor[Rank], shape: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateInput")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateUpdateShape(shape: js.Array[Double], indices: Tensor[Rank], updates: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateUpdateShape")(shape.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateUpdateShape(shape: js.Array[Double], indices: Tensor[Rank], updates: Tensor[Rank]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateUpdateShape")(shape.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ScatterShapeInfo extends StObject {
     
@@ -36,8 +33,7 @@ object scatterNdUtilMod {
   }
   object ScatterShapeInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       numUpdates: Double,
       outputSize: Double,
       sliceRank: Double,
@@ -48,26 +44,19 @@ object scatterNdUtilMod {
       __obj.asInstanceOf[ScatterShapeInfo]
     }
     
-    @scala.inline
-    implicit class ScatterShapeInfoMutableBuilder[Self <: ScatterShapeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ScatterShapeInfo](x: Self) {
       
-      @scala.inline
-      def setNumUpdates(value: Double): Self = StObject.set(x, "numUpdates", value.asInstanceOf[js.Any])
+      inline def setNumUpdates(value: Double): Self = StObject.set(x, "numUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputSize(value: Double): Self = StObject.set(x, "outputSize", value.asInstanceOf[js.Any])
+      inline def setOutputSize(value: Double): Self = StObject.set(x, "outputSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliceRank(value: Double): Self = StObject.set(x, "sliceRank", value.asInstanceOf[js.Any])
+      inline def setSliceRank(value: Double): Self = StObject.set(x, "sliceRank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliceSize(value: Double): Self = StObject.set(x, "sliceSize", value.asInstanceOf[js.Any])
+      inline def setSliceSize(value: Double): Self = StObject.set(x, "sliceSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrides(value: js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+      inline def setStrides(value: js.Array[Double]): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
+      inline def setStridesVarargs(value: Double*): Self = StObject.set(x, "strides", js.Array(value :_*))
     }
   }
 }

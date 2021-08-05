@@ -13,19 +13,15 @@ trait MessageTag extends StObject {
 }
 object MessageTag {
   
-  @scala.inline
-  def apply(message: Uint8Array, tag: Double): MessageTag = {
+  inline def apply(message: Uint8Array, tag: Double): MessageTag = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageTag]
   }
   
-  @scala.inline
-  implicit class MessageTagMutableBuilder[Self <: MessageTag] (val x: Self) extends AnyVal {
+  extension [Self <: MessageTag](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Uint8Array): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Uint8Array): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

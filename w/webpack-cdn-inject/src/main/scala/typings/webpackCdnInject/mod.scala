@@ -29,32 +29,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Array[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Array[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setBodyVarargs(value: String*): Self = StObject.set(x, "body", js.Array(value :_*))
+      inline def setBodyVarargs(value: String*): Self = StObject.set(x, "body", js.Array(value :_*))
       
-      @scala.inline
-      def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: js.Array[String]): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+      inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
       
-      @scala.inline
-      def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
+      inline def setHeadVarargs(value: String*): Self = StObject.set(x, "head", js.Array(value :_*))
     }
   }
   

@@ -23,28 +23,21 @@ trait RegisterOnPremisesInstanceInput extends StObject {
 }
 object RegisterOnPremisesInstanceInput {
   
-  @scala.inline
-  def apply(instanceName: InstanceName): RegisterOnPremisesInstanceInput = {
+  inline def apply(instanceName: InstanceName): RegisterOnPremisesInstanceInput = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterOnPremisesInstanceInput]
   }
   
-  @scala.inline
-  implicit class RegisterOnPremisesInstanceInputMutableBuilder[Self <: RegisterOnPremisesInstanceInput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterOnPremisesInstanceInput](x: Self) {
     
-    @scala.inline
-    def setIamSessionArn(value: IamSessionArn): Self = StObject.set(x, "iamSessionArn", value.asInstanceOf[js.Any])
+    inline def setIamSessionArn(value: IamSessionArn): Self = StObject.set(x, "iamSessionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamSessionArnUndefined: Self = StObject.set(x, "iamSessionArn", js.undefined)
+    inline def setIamSessionArnUndefined: Self = StObject.set(x, "iamSessionArn", js.undefined)
     
-    @scala.inline
-    def setIamUserArn(value: IamUserArn): Self = StObject.set(x, "iamUserArn", value.asInstanceOf[js.Any])
+    inline def setIamUserArn(value: IamUserArn): Self = StObject.set(x, "iamUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUserArnUndefined: Self = StObject.set(x, "iamUserArn", js.undefined)
+    inline def setIamUserArnUndefined: Self = StObject.set(x, "iamUserArn", js.undefined)
     
-    @scala.inline
-    def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: InstanceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
   }
 }

@@ -41,43 +41,31 @@ trait SchemaCustomMetric extends StObject {
 }
 object SchemaCustomMetric {
   
-  @scala.inline
-  def apply(): SchemaCustomMetric = {
+  inline def apply(): SchemaCustomMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomMetric]
   }
   
-  @scala.inline
-  implicit class SchemaCustomMetricMutableBuilder[Self <: SchemaCustomMetric] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomMetric](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
     
-    @scala.inline
-    def setSingleInstanceAssignment(value: Double): Self = StObject.set(x, "singleInstanceAssignment", value.asInstanceOf[js.Any])
+    inline def setSingleInstanceAssignment(value: Double): Self = StObject.set(x, "singleInstanceAssignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleInstanceAssignmentUndefined: Self = StObject.set(x, "singleInstanceAssignment", js.undefined)
+    inline def setSingleInstanceAssignmentUndefined: Self = StObject.set(x, "singleInstanceAssignment", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "targetType", js.undefined)
     
-    @scala.inline
-    def setTargetUtilization(value: Double): Self = StObject.set(x, "targetUtilization", value.asInstanceOf[js.Any])
+    inline def setTargetUtilization(value: Double): Self = StObject.set(x, "targetUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUtilizationUndefined: Self = StObject.set(x, "targetUtilization", js.undefined)
+    inline def setTargetUtilizationUndefined: Self = StObject.set(x, "targetUtilization", js.undefined)
   }
 }

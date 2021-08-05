@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlSpecialFolders extends StObject
 object OlSpecialFolders {
   
-  @scala.inline
-  def olSpecialFolderAllTasks: `0` = 0.asInstanceOf[`0`]
+  inline def olSpecialFolderAllTasks: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olSpecialFolderReminders: `1` = 1.asInstanceOf[`1`]
+  inline def olSpecialFolderReminders: `1` = 1.asInstanceOf[`1`]
 }

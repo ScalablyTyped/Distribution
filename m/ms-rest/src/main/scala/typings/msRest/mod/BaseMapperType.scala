@@ -10,16 +10,13 @@ trait BaseMapperType extends StObject {
 }
 object BaseMapperType {
   
-  @scala.inline
-  def apply(name: MapperType): BaseMapperType = {
+  inline def apply(name: MapperType): BaseMapperType = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMapperType]
   }
   
-  @scala.inline
-  implicit class BaseMapperTypeMutableBuilder[Self <: BaseMapperType] (val x: Self) extends AnyVal {
+  extension [Self <: BaseMapperType](x: Self) {
     
-    @scala.inline
-    def setName(value: MapperType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: MapperType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

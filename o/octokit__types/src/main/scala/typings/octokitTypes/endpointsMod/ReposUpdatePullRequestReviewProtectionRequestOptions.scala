@@ -20,26 +20,20 @@ trait ReposUpdatePullRequestReviewProtectionRequestOptions extends StObject {
 }
 object ReposUpdatePullRequestReviewProtectionRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposUpdatePullRequestReviewProtectionRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposUpdatePullRequestReviewProtectionRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews")
     __obj.asInstanceOf[ReposUpdatePullRequestReviewProtectionRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReposUpdatePullRequestReviewProtectionRequestOptionsMutableBuilder[Self <: ReposUpdatePullRequestReviewProtectionRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReposUpdatePullRequestReviewProtectionRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(
+    inline def setUrl(
       value: SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_pull_request_reviews
     ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

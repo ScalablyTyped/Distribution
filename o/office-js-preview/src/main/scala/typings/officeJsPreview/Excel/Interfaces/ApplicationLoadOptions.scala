@@ -87,67 +87,47 @@ trait ApplicationLoadOptions extends StObject {
 }
 object ApplicationLoadOptions {
   
-  @scala.inline
-  def apply(): ApplicationLoadOptions = {
+  inline def apply(): ApplicationLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationLoadOptions]
   }
   
-  @scala.inline
-  implicit class ApplicationLoadOptionsMutableBuilder[Self <: ApplicationLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCalculationEngineVersion(value: Boolean): Self = StObject.set(x, "calculationEngineVersion", value.asInstanceOf[js.Any])
+    inline def setCalculationEngineVersion(value: Boolean): Self = StObject.set(x, "calculationEngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationEngineVersionUndefined: Self = StObject.set(x, "calculationEngineVersion", js.undefined)
+    inline def setCalculationEngineVersionUndefined: Self = StObject.set(x, "calculationEngineVersion", js.undefined)
     
-    @scala.inline
-    def setCalculationMode(value: Boolean): Self = StObject.set(x, "calculationMode", value.asInstanceOf[js.Any])
+    inline def setCalculationMode(value: Boolean): Self = StObject.set(x, "calculationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationModeUndefined: Self = StObject.set(x, "calculationMode", js.undefined)
+    inline def setCalculationModeUndefined: Self = StObject.set(x, "calculationMode", js.undefined)
     
-    @scala.inline
-    def setCalculationState(value: Boolean): Self = StObject.set(x, "calculationState", value.asInstanceOf[js.Any])
+    inline def setCalculationState(value: Boolean): Self = StObject.set(x, "calculationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationStateUndefined: Self = StObject.set(x, "calculationState", js.undefined)
+    inline def setCalculationStateUndefined: Self = StObject.set(x, "calculationState", js.undefined)
     
-    @scala.inline
-    def setCultureInfo(value: CultureInfoLoadOptions): Self = StObject.set(x, "cultureInfo", value.asInstanceOf[js.Any])
+    inline def setCultureInfo(value: CultureInfoLoadOptions): Self = StObject.set(x, "cultureInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCultureInfoUndefined: Self = StObject.set(x, "cultureInfo", js.undefined)
+    inline def setCultureInfoUndefined: Self = StObject.set(x, "cultureInfo", js.undefined)
     
-    @scala.inline
-    def setDecimalSeparator(value: Boolean): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+    inline def setDecimalSeparator(value: Boolean): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
+    inline def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
     
-    @scala.inline
-    def setIterativeCalculation(value: IterativeCalculationLoadOptions): Self = StObject.set(x, "iterativeCalculation", value.asInstanceOf[js.Any])
+    inline def setIterativeCalculation(value: IterativeCalculationLoadOptions): Self = StObject.set(x, "iterativeCalculation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterativeCalculationUndefined: Self = StObject.set(x, "iterativeCalculation", js.undefined)
+    inline def setIterativeCalculationUndefined: Self = StObject.set(x, "iterativeCalculation", js.undefined)
     
-    @scala.inline
-    def setThousandsSeparator(value: Boolean): Self = StObject.set(x, "thousandsSeparator", value.asInstanceOf[js.Any])
+    inline def setThousandsSeparator(value: Boolean): Self = StObject.set(x, "thousandsSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThousandsSeparatorUndefined: Self = StObject.set(x, "thousandsSeparator", js.undefined)
+    inline def setThousandsSeparatorUndefined: Self = StObject.set(x, "thousandsSeparator", js.undefined)
     
-    @scala.inline
-    def setUseSystemSeparators(value: Boolean): Self = StObject.set(x, "useSystemSeparators", value.asInstanceOf[js.Any])
+    inline def setUseSystemSeparators(value: Boolean): Self = StObject.set(x, "useSystemSeparators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSystemSeparatorsUndefined: Self = StObject.set(x, "useSystemSeparators", js.undefined)
+    inline def setUseSystemSeparatorsUndefined: Self = StObject.set(x, "useSystemSeparators", js.undefined)
   }
 }

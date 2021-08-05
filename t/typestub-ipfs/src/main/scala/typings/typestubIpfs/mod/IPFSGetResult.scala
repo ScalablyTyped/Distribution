@@ -24,8 +24,7 @@ trait IPFSGetResult extends StObject {
 }
 object IPFSGetResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content: Buffer,
     depth: Double,
     hash: Buffer,
@@ -39,28 +38,20 @@ object IPFSGetResult {
     __obj.asInstanceOf[IPFSGetResult]
   }
   
-  @scala.inline
-  implicit class IPFSGetResultMutableBuilder[Self <: IPFSGetResult] (val x: Self) extends AnyVal {
+  extension [Self <: IPFSGetResult](x: Self) {
     
-    @scala.inline
-    def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: file | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: file | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

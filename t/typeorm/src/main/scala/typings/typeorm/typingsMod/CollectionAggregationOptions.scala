@@ -36,49 +36,35 @@ trait CollectionAggregationOptions extends StObject {
 }
 object CollectionAggregationOptions {
   
-  @scala.inline
-  def apply(): CollectionAggregationOptions = {
+  inline def apply(): CollectionAggregationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionAggregationOptions]
   }
   
-  @scala.inline
-  implicit class CollectionAggregationOptionsMutableBuilder[Self <: CollectionAggregationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionAggregationOptions](x: Self) {
     
-    @scala.inline
-    def setAllowDiskUse(value: Boolean): Self = StObject.set(x, "allowDiskUse", value.asInstanceOf[js.Any])
+    inline def setAllowDiskUse(value: Boolean): Self = StObject.set(x, "allowDiskUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDiskUseUndefined: Self = StObject.set(x, "allowDiskUse", js.undefined)
+    inline def setAllowDiskUseUndefined: Self = StObject.set(x, "allowDiskUse", js.undefined)
     
-    @scala.inline
-    def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
+    inline def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
+    inline def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
     
-    @scala.inline
-    def setCursor(value: BatchSizeNumber): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: BatchSizeNumber): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
+    inline def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
+    inline def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
     
-    @scala.inline
-    def setMaxTimeMS(value: Boolean): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
+    inline def setMaxTimeMS(value: Boolean): Self = StObject.set(x, "maxTimeMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
+    inline def setMaxTimeMSUndefined: Self = StObject.set(x, "maxTimeMS", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

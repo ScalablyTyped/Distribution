@@ -25,48 +25,35 @@ trait Durationinseconds extends StObject {
 }
 object Durationinseconds {
   
-  @scala.inline
-  def apply(`phase-type`: CodeBuildPhaseType, `start-time`: String): Durationinseconds = {
+  inline def apply(`phase-type`: CodeBuildPhaseType, `start-time`: String): Durationinseconds = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("phase-type")(`phase-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("start-time")(`start-time`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Durationinseconds]
   }
   
-  @scala.inline
-  implicit class DurationinsecondsMutableBuilder[Self <: Durationinseconds] (val x: Self) extends AnyVal {
+  extension [Self <: Durationinseconds](x: Self) {
     
-    @scala.inline
-    def `setDuration-in-seconds`(value: Double): Self = StObject.set(x, "duration-in-seconds", value.asInstanceOf[js.Any])
+    inline def `setDuration-in-seconds`(value: Double): Self = StObject.set(x, "duration-in-seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDuration-in-secondsUndefined`: Self = StObject.set(x, "duration-in-seconds", js.undefined)
+    inline def `setDuration-in-secondsUndefined`: Self = StObject.set(x, "duration-in-seconds", js.undefined)
     
-    @scala.inline
-    def `setEnd-time`(value: String): Self = StObject.set(x, "end-time", value.asInstanceOf[js.Any])
+    inline def `setEnd-time`(value: String): Self = StObject.set(x, "end-time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEnd-timeUndefined`: Self = StObject.set(x, "end-time", js.undefined)
+    inline def `setEnd-timeUndefined`: Self = StObject.set(x, "end-time", js.undefined)
     
-    @scala.inline
-    def `setPhase-context`(value: js.Array[String]): Self = StObject.set(x, "phase-context", value.asInstanceOf[js.Any])
+    inline def `setPhase-context`(value: js.Array[String]): Self = StObject.set(x, "phase-context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPhase-contextUndefined`: Self = StObject.set(x, "phase-context", js.undefined)
+    inline def `setPhase-contextUndefined`: Self = StObject.set(x, "phase-context", js.undefined)
     
-    @scala.inline
-    def `setPhase-contextVarargs`(value: String*): Self = StObject.set(x, "phase-context", js.Array(value :_*))
+    inline def `setPhase-contextVarargs`(value: String*): Self = StObject.set(x, "phase-context", js.Array(value :_*))
     
-    @scala.inline
-    def `setPhase-status`(value: CodeBuildPhaseStatusType): Self = StObject.set(x, "phase-status", value.asInstanceOf[js.Any])
+    inline def `setPhase-status`(value: CodeBuildPhaseStatusType): Self = StObject.set(x, "phase-status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPhase-statusUndefined`: Self = StObject.set(x, "phase-status", js.undefined)
+    inline def `setPhase-statusUndefined`: Self = StObject.set(x, "phase-status", js.undefined)
     
-    @scala.inline
-    def `setPhase-type`(value: CodeBuildPhaseType): Self = StObject.set(x, "phase-type", value.asInstanceOf[js.Any])
+    inline def `setPhase-type`(value: CodeBuildPhaseType): Self = StObject.set(x, "phase-type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setStart-time`(value: String): Self = StObject.set(x, "start-time", value.asInstanceOf[js.Any])
+    inline def `setStart-time`(value: String): Self = StObject.set(x, "start-time", value.asInstanceOf[js.Any])
   }
 }

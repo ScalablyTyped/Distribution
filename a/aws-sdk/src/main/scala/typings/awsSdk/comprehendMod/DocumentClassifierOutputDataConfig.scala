@@ -18,25 +18,19 @@ trait DocumentClassifierOutputDataConfig extends StObject {
 }
 object DocumentClassifierOutputDataConfig {
   
-  @scala.inline
-  def apply(): DocumentClassifierOutputDataConfig = {
+  inline def apply(): DocumentClassifierOutputDataConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentClassifierOutputDataConfig]
   }
   
-  @scala.inline
-  implicit class DocumentClassifierOutputDataConfigMutableBuilder[Self <: DocumentClassifierOutputDataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentClassifierOutputDataConfig](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
+    inline def setS3UriUndefined: Self = StObject.set(x, "S3Uri", js.undefined)
   }
 }

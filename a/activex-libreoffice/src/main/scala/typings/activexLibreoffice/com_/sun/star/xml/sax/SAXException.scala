@@ -24,16 +24,13 @@ trait SAXException
 }
 object SAXException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, WrappedException: js.Any): SAXException = {
+  inline def apply(Context: XInterface, Message: String, WrappedException: js.Any): SAXException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], WrappedException = WrappedException.asInstanceOf[js.Any])
     __obj.asInstanceOf[SAXException]
   }
   
-  @scala.inline
-  implicit class SAXExceptionMutableBuilder[Self <: SAXException] (val x: Self) extends AnyVal {
+  extension [Self <: SAXException](x: Self) {
     
-    @scala.inline
-    def setWrappedException(value: js.Any): Self = StObject.set(x, "WrappedException", value.asInstanceOf[js.Any])
+    inline def setWrappedException(value: js.Any): Self = StObject.set(x, "WrappedException", value.asInstanceOf[js.Any])
   }
 }

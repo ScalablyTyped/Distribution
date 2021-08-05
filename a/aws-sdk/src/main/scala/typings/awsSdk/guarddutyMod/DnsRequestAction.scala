@@ -13,19 +13,15 @@ trait DnsRequestAction extends StObject {
 }
 object DnsRequestAction {
   
-  @scala.inline
-  def apply(): DnsRequestAction = {
+  inline def apply(): DnsRequestAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DnsRequestAction]
   }
   
-  @scala.inline
-  implicit class DnsRequestActionMutableBuilder[Self <: DnsRequestAction] (val x: Self) extends AnyVal {
+  extension [Self <: DnsRequestAction](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
   }
 }

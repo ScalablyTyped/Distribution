@@ -18,25 +18,19 @@ trait PutConfigurationSetSuppressionOptionsRequest extends StObject {
 }
 object PutConfigurationSetSuppressionOptionsRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName): PutConfigurationSetSuppressionOptionsRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName): PutConfigurationSetSuppressionOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutConfigurationSetSuppressionOptionsRequest]
   }
   
-  @scala.inline
-  implicit class PutConfigurationSetSuppressionOptionsRequestMutableBuilder[Self <: PutConfigurationSetSuppressionOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutConfigurationSetSuppressionOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressedReasons(value: SuppressionListReasons): Self = StObject.set(x, "SuppressedReasons", value.asInstanceOf[js.Any])
+    inline def setSuppressedReasons(value: SuppressionListReasons): Self = StObject.set(x, "SuppressedReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressedReasonsUndefined: Self = StObject.set(x, "SuppressedReasons", js.undefined)
+    inline def setSuppressedReasonsUndefined: Self = StObject.set(x, "SuppressedReasons", js.undefined)
     
-    @scala.inline
-    def setSuppressedReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "SuppressedReasons", js.Array(value :_*))
+    inline def setSuppressedReasonsVarargs(value: SuppressionListReason*): Self = StObject.set(x, "SuppressedReasons", js.Array(value :_*))
   }
 }

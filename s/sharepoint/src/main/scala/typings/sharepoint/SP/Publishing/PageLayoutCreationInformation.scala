@@ -34,8 +34,7 @@ trait PageLayoutCreationInformation
 }
 object PageLayoutCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -56,37 +55,26 @@ object PageLayoutCreationInformation {
     __obj.asInstanceOf[PageLayoutCreationInformation]
   }
   
-  @scala.inline
-  implicit class PageLayoutCreationInformationMutableBuilder[Self <: PageLayoutCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: PageLayoutCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_associatedContentTypeId(value: () => String): Self = StObject.set(x, "get_associatedContentTypeId", js.Any.fromFunction0(value))
+    inline def setGet_associatedContentTypeId(value: () => String): Self = StObject.set(x, "get_associatedContentTypeId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_masterPageUrl(value: () => String): Self = StObject.set(x, "get_masterPageUrl", js.Any.fromFunction0(value))
+    inline def setGet_masterPageUrl(value: () => String): Self = StObject.set(x, "get_masterPageUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_newPageLayoutEditablePath(value: () => String): Self = StObject.set(x, "get_newPageLayoutEditablePath", js.Any.fromFunction0(value))
+    inline def setGet_newPageLayoutEditablePath(value: () => String): Self = StObject.set(x, "get_newPageLayoutEditablePath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_newPageLayoutNameWithoutExtension(value: () => String): Self = StObject.set(x, "get_newPageLayoutNameWithoutExtension", js.Any.fromFunction0(value))
+    inline def setGet_newPageLayoutNameWithoutExtension(value: () => String): Self = StObject.set(x, "get_newPageLayoutNameWithoutExtension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_web(value: () => Web): Self = StObject.set(x, "get_web", js.Any.fromFunction0(value))
+    inline def setGet_web(value: () => Web): Self = StObject.set(x, "get_web", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_associatedContentTypeId(value: String => String): Self = StObject.set(x, "set_associatedContentTypeId", js.Any.fromFunction1(value))
+    inline def setSet_associatedContentTypeId(value: String => String): Self = StObject.set(x, "set_associatedContentTypeId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_masterPageUrl(value: String => String): Self = StObject.set(x, "set_masterPageUrl", js.Any.fromFunction1(value))
+    inline def setSet_masterPageUrl(value: String => String): Self = StObject.set(x, "set_masterPageUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_newPageLayoutEditablePath(value: String => String): Self = StObject.set(x, "set_newPageLayoutEditablePath", js.Any.fromFunction1(value))
+    inline def setSet_newPageLayoutEditablePath(value: String => String): Self = StObject.set(x, "set_newPageLayoutEditablePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_newPageLayoutNameWithoutExtension(value: String => String): Self = StObject.set(x, "set_newPageLayoutNameWithoutExtension", js.Any.fromFunction1(value))
+    inline def setSet_newPageLayoutNameWithoutExtension(value: String => String): Self = StObject.set(x, "set_newPageLayoutNameWithoutExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_web(value: Web => Web): Self = StObject.set(x, "set_web", js.Any.fromFunction1(value))
+    inline def setSet_web(value: Web => Web): Self = StObject.set(x, "set_web", js.Any.fromFunction1(value))
   }
 }

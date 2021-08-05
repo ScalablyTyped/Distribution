@@ -19,12 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): MondayClientSdk = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MondayClientSdk]
-  @scala.inline
-  def apply(config: PartialclientIdstringapiT): MondayClientSdk = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[MondayClientSdk]
-  @scala.inline
-  def apply(config: Partialtokenstring): MondayServerSdk = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[MondayServerSdk]
+  inline def apply(): MondayClientSdk = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MondayClientSdk]
+  inline def apply(config: PartialclientIdstringapiT): MondayClientSdk = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[MondayClientSdk]
+  inline def apply(config: Partialtokenstring): MondayServerSdk = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[MondayServerSdk]
   
   @JSImport("monday-sdk-js", JSImport.Namespace)
   @js.native
@@ -45,26 +42,20 @@ object mod {
   }
   object APIOptions {
     
-    @scala.inline
-    def apply(): APIOptions = {
+    inline def apply(): APIOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[APIOptions]
     }
     
-    @scala.inline
-    implicit class APIOptionsMutableBuilder[Self <: APIOptions] (val x: Self) extends AnyVal {
+    extension [Self <: APIOptions](x: Self) {
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setVariables(value: js.Object): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: js.Object): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
   }
   
@@ -76,20 +67,16 @@ object mod {
   }
   object GetResponse {
     
-    @scala.inline
-    def apply(value: js.Any, version: js.Any): GetResponse = {
+    inline def apply(value: js.Any, version: js.Any): GetResponse = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetResponse]
     }
     
-    @scala.inline
-    implicit class GetResponseMutableBuilder[Self <: GetResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetResponse](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -222,26 +209,20 @@ object mod {
   }
   object OAuthOptions {
     
-    @scala.inline
-    def apply(): OAuthOptions = {
+    inline def apply(): OAuthOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OAuthOptions]
     }
     
-    @scala.inline
-    implicit class OAuthOptionsMutableBuilder[Self <: OAuthOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OAuthOptions](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
       
-      @scala.inline
-      def setMondayOauthUrl(value: String): Self = StObject.set(x, "mondayOauthUrl", value.asInstanceOf[js.Any])
+      inline def setMondayOauthUrl(value: String): Self = StObject.set(x, "mondayOauthUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMondayOauthUrlUndefined: Self = StObject.set(x, "mondayOauthUrl", js.undefined)
+      inline def setMondayOauthUrlUndefined: Self = StObject.set(x, "mondayOauthUrl", js.undefined)
     }
   }
   
@@ -253,23 +234,18 @@ object mod {
   }
   object SetResponse {
     
-    @scala.inline
-    def apply(success: Boolean): SetResponse = {
+    inline def apply(success: Boolean): SetResponse = {
       val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetResponse]
     }
     
-    @scala.inline
-    implicit class SetResponseMutableBuilder[Self <: SetResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SetResponse](x: Self) {
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     }
   }
   
@@ -282,16 +258,12 @@ object mod {
   trait SubscribableEvents extends StObject
   object SubscribableEvents {
     
-    @scala.inline
-    def context: typings.mondaySdkJs.mondaySdkJsStrings.context = "context".asInstanceOf[typings.mondaySdkJs.mondaySdkJsStrings.context]
+    inline def context: typings.mondaySdkJs.mondaySdkJsStrings.context = "context".asInstanceOf[typings.mondaySdkJs.mondaySdkJsStrings.context]
     
-    @scala.inline
-    def events: typings.mondaySdkJs.mondaySdkJsStrings.events = "events".asInstanceOf[typings.mondaySdkJs.mondaySdkJsStrings.events]
+    inline def events: typings.mondaySdkJs.mondaySdkJsStrings.events = "events".asInstanceOf[typings.mondaySdkJs.mondaySdkJsStrings.events]
     
-    @scala.inline
-    def itemIds: typings.mondaySdkJs.mondaySdkJsStrings.itemIds = "itemIds".asInstanceOf[typings.mondaySdkJs.mondaySdkJsStrings.itemIds]
+    inline def itemIds: typings.mondaySdkJs.mondaySdkJsStrings.itemIds = "itemIds".asInstanceOf[typings.mondaySdkJs.mondaySdkJsStrings.itemIds]
     
-    @scala.inline
-    def settings: typings.mondaySdkJs.mondaySdkJsStrings.settings = "settings".asInstanceOf[typings.mondaySdkJs.mondaySdkJsStrings.settings]
+    inline def settings: typings.mondaySdkJs.mondaySdkJsStrings.settings = "settings".asInstanceOf[typings.mondaySdkJs.mondaySdkJsStrings.settings]
   }
 }

@@ -10,16 +10,13 @@ trait QDownloadInfo extends StObject {
 }
 object QDownloadInfo {
   
-  @scala.inline
-  def apply(qDownloadInfo: js.Any): QDownloadInfo = {
+  inline def apply(qDownloadInfo: js.Any): QDownloadInfo = {
     val __obj = js.Dynamic.literal(qDownloadInfo = qDownloadInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[QDownloadInfo]
   }
   
-  @scala.inline
-  implicit class QDownloadInfoMutableBuilder[Self <: QDownloadInfo] (val x: Self) extends AnyVal {
+  extension [Self <: QDownloadInfo](x: Self) {
     
-    @scala.inline
-    def setQDownloadInfo(value: js.Any): Self = StObject.set(x, "qDownloadInfo", value.asInstanceOf[js.Any])
+    inline def setQDownloadInfo(value: js.Any): Self = StObject.set(x, "qDownloadInfo", value.asInstanceOf[js.Any])
   }
 }

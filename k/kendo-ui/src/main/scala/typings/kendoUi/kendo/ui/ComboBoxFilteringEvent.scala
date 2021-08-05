@@ -12,19 +12,15 @@ trait ComboBoxFilteringEvent
 }
 object ComboBoxFilteringEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ComboBox): ComboBoxFilteringEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ComboBox): ComboBoxFilteringEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComboBoxFilteringEvent]
   }
   
-  @scala.inline
-  implicit class ComboBoxFilteringEventMutableBuilder[Self <: ComboBoxFilteringEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ComboBoxFilteringEvent](x: Self) {
     
-    @scala.inline
-    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

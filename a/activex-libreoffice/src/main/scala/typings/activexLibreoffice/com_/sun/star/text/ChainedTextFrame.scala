@@ -45,8 +45,7 @@ trait ChainedTextFrame
 }
 object ChainedTextFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorFrame: XTextFrame,
     AnchorPageNo: Double,
@@ -156,13 +155,10 @@ object ChainedTextFrame {
     __obj.asInstanceOf[ChainedTextFrame]
   }
   
-  @scala.inline
-  implicit class ChainedTextFrameMutableBuilder[Self <: ChainedTextFrame] (val x: Self) extends AnyVal {
+  extension [Self <: ChainedTextFrame](x: Self) {
     
-    @scala.inline
-    def setChainNextName(value: String): Self = StObject.set(x, "ChainNextName", value.asInstanceOf[js.Any])
+    inline def setChainNextName(value: String): Self = StObject.set(x, "ChainNextName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChainPrevName(value: String): Self = StObject.set(x, "ChainPrevName", value.asInstanceOf[js.Any])
+    inline def setChainPrevName(value: String): Self = StObject.set(x, "ChainPrevName", value.asInstanceOf[js.Any])
   }
 }

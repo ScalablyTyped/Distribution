@@ -12,31 +12,23 @@ trait RadarData extends StObject {
 }
 object RadarData {
   
-  @scala.inline
-  def apply(): RadarData = {
+  inline def apply(): RadarData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadarData]
   }
   
-  @scala.inline
-  implicit class RadarDataMutableBuilder[Self <: RadarData] (val x: Self) extends AnyVal {
+  extension [Self <: RadarData](x: Self) {
     
-    @scala.inline
-    def setDataSets(value: js.Array[RadarDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+    inline def setDataSets(value: js.Array[RadarDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
+    inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    @scala.inline
-    def setDataSetsVarargs(value: RadarDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: RadarDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: String*): Self = StObject.set(x, "labels", js.Array(value :_*))
   }
 }

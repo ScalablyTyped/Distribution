@@ -11,8 +11,7 @@ object mod {
     *
     * @param filepath
     */
-  @scala.inline
-  def apply(filepath: String): ParsedPath = ^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
+  inline def apply(filepath: String): ParsedPath = ^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
   
   @JSImport("parse-filepath", JSImport.Namespace)
   @js.native
@@ -82,8 +81,7 @@ object mod {
   }
   object ParsedPath {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       absolute: String,
       base: String,
       basename: String,
@@ -101,44 +99,31 @@ object mod {
       __obj.asInstanceOf[ParsedPath]
     }
     
-    @scala.inline
-    implicit class ParsedPathMutableBuilder[Self <: ParsedPath] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedPath](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: String): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: String): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+      inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
+      inline def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAbsolute(value: Boolean): Self = StObject.set(x, "isAbsolute", value.asInstanceOf[js.Any])
+      inline def setIsAbsolute(value: Boolean): Self = StObject.set(x, "isAbsolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStem(value: String): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
+      inline def setStem(value: String): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     }
   }
 }

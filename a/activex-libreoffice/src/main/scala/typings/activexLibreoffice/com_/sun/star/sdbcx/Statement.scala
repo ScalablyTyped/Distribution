@@ -26,8 +26,7 @@ trait Statement
 }
 object Statement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Connection: XConnection,
     CursorName: String,
     EscapeProcessing: Boolean,
@@ -76,10 +75,8 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   
-  @scala.inline
-  implicit class StatementMutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
+  extension [Self <: Statement](x: Self) {
     
-    @scala.inline
-    def setUseBookmarks(value: Boolean): Self = StObject.set(x, "UseBookmarks", value.asInstanceOf[js.Any])
+    inline def setUseBookmarks(value: Boolean): Self = StObject.set(x, "UseBookmarks", value.asInstanceOf[js.Any])
   }
 }

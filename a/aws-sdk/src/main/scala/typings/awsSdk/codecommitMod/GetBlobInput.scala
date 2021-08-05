@@ -18,19 +18,15 @@ trait GetBlobInput extends StObject {
 }
 object GetBlobInput {
   
-  @scala.inline
-  def apply(blobId: ObjectId, repositoryName: RepositoryName): GetBlobInput = {
+  inline def apply(blobId: ObjectId, repositoryName: RepositoryName): GetBlobInput = {
     val __obj = js.Dynamic.literal(blobId = blobId.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBlobInput]
   }
   
-  @scala.inline
-  implicit class GetBlobInputMutableBuilder[Self <: GetBlobInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBlobInput](x: Self) {
     
-    @scala.inline
-    def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
+    inline def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

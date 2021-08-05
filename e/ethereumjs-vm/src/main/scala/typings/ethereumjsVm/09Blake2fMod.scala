@@ -13,9 +13,7 @@ object `09Blake2fMod` {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(opts: PrecompileInput): ExecResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[ExecResult]
+  inline def default(opts: PrecompileInput): ExecResult = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[ExecResult]
   
-  @scala.inline
-  def F(h: Uint32Array, m: Uint32Array, t: Uint32Array, f: Boolean, rounds: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("F")(h.asInstanceOf[js.Any], m.asInstanceOf[js.Any], t.asInstanceOf[js.Any], f.asInstanceOf[js.Any], rounds.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def F(h: Uint32Array, m: Uint32Array, t: Uint32Array, f: Boolean, rounds: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("F")(h.asInstanceOf[js.Any], m.asInstanceOf[js.Any], t.asInstanceOf[js.Any], f.asInstanceOf[js.Any], rounds.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

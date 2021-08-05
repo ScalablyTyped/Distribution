@@ -11,8 +11,7 @@ trait PlayToReceiver
      with IPlayToReceiver
 object PlayToReceiver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friendlyName: String,
     notifyDurationChange: Double => Unit,
     notifyEnded: () => Unit,

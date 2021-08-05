@@ -13,16 +13,13 @@ trait S3Parameters extends StObject {
 }
 object S3Parameters {
   
-  @scala.inline
-  def apply(ManifestFileLocation: ManifestFileLocation): S3Parameters = {
+  inline def apply(ManifestFileLocation: ManifestFileLocation): S3Parameters = {
     val __obj = js.Dynamic.literal(ManifestFileLocation = ManifestFileLocation.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Parameters]
   }
   
-  @scala.inline
-  implicit class S3ParametersMutableBuilder[Self <: S3Parameters] (val x: Self) extends AnyVal {
+  extension [Self <: S3Parameters](x: Self) {
     
-    @scala.inline
-    def setManifestFileLocation(value: ManifestFileLocation): Self = StObject.set(x, "ManifestFileLocation", value.asInstanceOf[js.Any])
+    inline def setManifestFileLocation(value: ManifestFileLocation): Self = StObject.set(x, "ManifestFileLocation", value.asInstanceOf[js.Any])
   }
 }

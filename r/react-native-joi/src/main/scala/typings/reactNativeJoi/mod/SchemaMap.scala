@@ -11,8 +11,7 @@ trait SchemaMap
      with _SchemaLike
 object SchemaMap {
   
-  @scala.inline
-  def apply(): SchemaMap = {
+  inline def apply(): SchemaMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMap]
   }

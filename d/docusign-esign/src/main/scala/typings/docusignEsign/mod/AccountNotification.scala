@@ -27,33 +27,25 @@ trait AccountNotification extends StObject {
 }
 object AccountNotification {
   
-  @scala.inline
-  def apply(): AccountNotification = {
+  inline def apply(): AccountNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountNotification]
   }
   
-  @scala.inline
-  implicit class AccountNotificationMutableBuilder[Self <: AccountNotification] (val x: Self) extends AnyVal {
+  extension [Self <: AccountNotification](x: Self) {
     
-    @scala.inline
-    def setExpirations(
+    inline def setExpirations(
       value: /* A complex element that specifies the expiration settings for the envelope. */ Expirations
     ): Self = StObject.set(x, "expirations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationsUndefined: Self = StObject.set(x, "expirations", js.undefined)
+    inline def setExpirationsUndefined: Self = StObject.set(x, "expirations", js.undefined)
     
-    @scala.inline
-    def setReminders(value: /* A complex element that specifies reminder settings for the envelope. */ Reminders): Self = StObject.set(x, "reminders", value.asInstanceOf[js.Any])
+    inline def setReminders(value: /* A complex element that specifies reminder settings for the envelope. */ Reminders): Self = StObject.set(x, "reminders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemindersUndefined: Self = StObject.set(x, "reminders", js.undefined)
+    inline def setRemindersUndefined: Self = StObject.set(x, "reminders", js.undefined)
     
-    @scala.inline
-    def setUserOverrideEnabled(value: String): Self = StObject.set(x, "userOverrideEnabled", value.asInstanceOf[js.Any])
+    inline def setUserOverrideEnabled(value: String): Self = StObject.set(x, "userOverrideEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserOverrideEnabledUndefined: Self = StObject.set(x, "userOverrideEnabled", js.undefined)
+    inline def setUserOverrideEnabledUndefined: Self = StObject.set(x, "userOverrideEnabled", js.undefined)
   }
 }

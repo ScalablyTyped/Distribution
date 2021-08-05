@@ -23,37 +23,27 @@ trait SourceSplitResponse extends StObject {
 }
 object SourceSplitResponse {
   
-  @scala.inline
-  def apply(): SourceSplitResponse = {
+  inline def apply(): SourceSplitResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceSplitResponse]
   }
   
-  @scala.inline
-  implicit class SourceSplitResponseMutableBuilder[Self <: SourceSplitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SourceSplitResponse](x: Self) {
     
-    @scala.inline
-    def setBundles(value: js.Array[DerivedSource]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
+    inline def setBundles(value: js.Array[DerivedSource]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
+    inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    @scala.inline
-    def setBundlesVarargs(value: DerivedSource*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: DerivedSource*): Self = StObject.set(x, "bundles", js.Array(value :_*))
     
-    @scala.inline
-    def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
+    inline def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
     
-    @scala.inline
-    def setShards(value: js.Array[SourceSplitShard]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
+    inline def setShards(value: js.Array[SourceSplitShard]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardsUndefined: Self = StObject.set(x, "shards", js.undefined)
+    inline def setShardsUndefined: Self = StObject.set(x, "shards", js.undefined)
     
-    @scala.inline
-    def setShardsVarargs(value: SourceSplitShard*): Self = StObject.set(x, "shards", js.Array(value :_*))
+    inline def setShardsVarargs(value: SourceSplitShard*): Self = StObject.set(x, "shards", js.Array(value :_*))
   }
 }

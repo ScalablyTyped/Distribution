@@ -13,35 +13,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compress(buffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def compress(buffer: Buffer, callback: IltorbCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def compress(buffer: Buffer, options: BrotliEncodeParams): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def compress(buffer: Buffer, options: BrotliEncodeParams, callback: IltorbCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compress(buffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def compress(buffer: Buffer, callback: IltorbCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compress(buffer: Buffer, options: BrotliEncodeParams): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+  inline def compress(buffer: Buffer, options: BrotliEncodeParams, callback: IltorbCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compress")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def compressStream(): Transform & BrotliFlushable = ^.asInstanceOf[js.Dynamic].applyDynamic("compressStream")().asInstanceOf[Transform & BrotliFlushable]
-  @scala.inline
-  def compressStream(options: BrotliEncodeParams): Transform & BrotliFlushable = ^.asInstanceOf[js.Dynamic].applyDynamic("compressStream")(options.asInstanceOf[js.Any]).asInstanceOf[Transform & BrotliFlushable]
+  inline def compressStream(): Transform & BrotliFlushable = ^.asInstanceOf[js.Dynamic].applyDynamic("compressStream")().asInstanceOf[Transform & BrotliFlushable]
+  inline def compressStream(options: BrotliEncodeParams): Transform & BrotliFlushable = ^.asInstanceOf[js.Dynamic].applyDynamic("compressStream")(options.asInstanceOf[js.Any]).asInstanceOf[Transform & BrotliFlushable]
   
-  @scala.inline
-  def compressSync(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def compressSync(buffer: Buffer, options: BrotliEncodeParams): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def compressSync(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def compressSync(buffer: Buffer, options: BrotliEncodeParams): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("compressSync")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def decompress(buffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
-  @scala.inline
-  def decompress(buffer: Buffer, callback: IltorbCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decompress(buffer: Buffer): js.Promise[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer]]
+  inline def decompress(buffer: Buffer, callback: IltorbCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def decompressStream(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressStream")().asInstanceOf[Transform]
+  inline def decompressStream(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressStream")().asInstanceOf[Transform]
   
-  @scala.inline
-  def decompressSync(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def decompressSync(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressSync")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /* Rewritten from type alias, can be one of: 
     - typings.iltorb.iltorbNumbers.`0`
@@ -60,41 +48,29 @@ object mod {
   trait BrotliCompressionQuality extends StObject
   object BrotliCompressionQuality {
     
-    @scala.inline
-    def `0`: typings.iltorb.iltorbNumbers.`0` = 0.asInstanceOf[typings.iltorb.iltorbNumbers.`0`]
+    inline def `0`: typings.iltorb.iltorbNumbers.`0` = 0.asInstanceOf[typings.iltorb.iltorbNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.iltorb.iltorbNumbers.`1` = 1.asInstanceOf[typings.iltorb.iltorbNumbers.`1`]
+    inline def `1`: typings.iltorb.iltorbNumbers.`1` = 1.asInstanceOf[typings.iltorb.iltorbNumbers.`1`]
     
-    @scala.inline
-    def `10`: typings.iltorb.iltorbNumbers.`10` = 10.asInstanceOf[typings.iltorb.iltorbNumbers.`10`]
+    inline def `10`: typings.iltorb.iltorbNumbers.`10` = 10.asInstanceOf[typings.iltorb.iltorbNumbers.`10`]
     
-    @scala.inline
-    def `11`: typings.iltorb.iltorbNumbers.`11` = 11.asInstanceOf[typings.iltorb.iltorbNumbers.`11`]
+    inline def `11`: typings.iltorb.iltorbNumbers.`11` = 11.asInstanceOf[typings.iltorb.iltorbNumbers.`11`]
     
-    @scala.inline
-    def `2`: typings.iltorb.iltorbNumbers.`2` = 2.asInstanceOf[typings.iltorb.iltorbNumbers.`2`]
+    inline def `2`: typings.iltorb.iltorbNumbers.`2` = 2.asInstanceOf[typings.iltorb.iltorbNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.iltorb.iltorbNumbers.`3` = 3.asInstanceOf[typings.iltorb.iltorbNumbers.`3`]
+    inline def `3`: typings.iltorb.iltorbNumbers.`3` = 3.asInstanceOf[typings.iltorb.iltorbNumbers.`3`]
     
-    @scala.inline
-    def `4`: typings.iltorb.iltorbNumbers.`4` = 4.asInstanceOf[typings.iltorb.iltorbNumbers.`4`]
+    inline def `4`: typings.iltorb.iltorbNumbers.`4` = 4.asInstanceOf[typings.iltorb.iltorbNumbers.`4`]
     
-    @scala.inline
-    def `5`: typings.iltorb.iltorbNumbers.`5` = 5.asInstanceOf[typings.iltorb.iltorbNumbers.`5`]
+    inline def `5`: typings.iltorb.iltorbNumbers.`5` = 5.asInstanceOf[typings.iltorb.iltorbNumbers.`5`]
     
-    @scala.inline
-    def `6`: typings.iltorb.iltorbNumbers.`6` = 6.asInstanceOf[typings.iltorb.iltorbNumbers.`6`]
+    inline def `6`: typings.iltorb.iltorbNumbers.`6` = 6.asInstanceOf[typings.iltorb.iltorbNumbers.`6`]
     
-    @scala.inline
-    def `7`: typings.iltorb.iltorbNumbers.`7` = 7.asInstanceOf[typings.iltorb.iltorbNumbers.`7`]
+    inline def `7`: typings.iltorb.iltorbNumbers.`7` = 7.asInstanceOf[typings.iltorb.iltorbNumbers.`7`]
     
-    @scala.inline
-    def `8`: typings.iltorb.iltorbNumbers.`8` = 8.asInstanceOf[typings.iltorb.iltorbNumbers.`8`]
+    inline def `8`: typings.iltorb.iltorbNumbers.`8` = 8.asInstanceOf[typings.iltorb.iltorbNumbers.`8`]
     
-    @scala.inline
-    def `9`: typings.iltorb.iltorbNumbers.`9` = 9.asInstanceOf[typings.iltorb.iltorbNumbers.`9`]
+    inline def `9`: typings.iltorb.iltorbNumbers.`9` = 9.asInstanceOf[typings.iltorb.iltorbNumbers.`9`]
   }
   
   trait BrotliEncodeParams extends StObject {
@@ -115,50 +91,36 @@ object mod {
   }
   object BrotliEncodeParams {
     
-    @scala.inline
-    def apply(): BrotliEncodeParams = {
+    inline def apply(): BrotliEncodeParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrotliEncodeParams]
     }
     
-    @scala.inline
-    implicit class BrotliEncodeParamsMutableBuilder[Self <: BrotliEncodeParams] (val x: Self) extends AnyVal {
+    extension [Self <: BrotliEncodeParams](x: Self) {
       
-      @scala.inline
-      def setDisable_literal_context_modeling(value: Boolean): Self = StObject.set(x, "disable_literal_context_modeling", value.asInstanceOf[js.Any])
+      inline def setDisable_literal_context_modeling(value: Boolean): Self = StObject.set(x, "disable_literal_context_modeling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_literal_context_modelingUndefined: Self = StObject.set(x, "disable_literal_context_modeling", js.undefined)
+      inline def setDisable_literal_context_modelingUndefined: Self = StObject.set(x, "disable_literal_context_modeling", js.undefined)
       
-      @scala.inline
-      def setLgblock(value: Double): Self = StObject.set(x, "lgblock", value.asInstanceOf[js.Any])
+      inline def setLgblock(value: Double): Self = StObject.set(x, "lgblock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLgblockUndefined: Self = StObject.set(x, "lgblock", js.undefined)
+      inline def setLgblockUndefined: Self = StObject.set(x, "lgblock", js.undefined)
       
-      @scala.inline
-      def setLgwin(value: Double): Self = StObject.set(x, "lgwin", value.asInstanceOf[js.Any])
+      inline def setLgwin(value: Double): Self = StObject.set(x, "lgwin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLgwinUndefined: Self = StObject.set(x, "lgwin", js.undefined)
+      inline def setLgwinUndefined: Self = StObject.set(x, "lgwin", js.undefined)
       
-      @scala.inline
-      def setMode(value: BrotliMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: BrotliMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setQuality(value: BrotliCompressionQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: BrotliCompressionQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setSize_hint(value: Double): Self = StObject.set(x, "size_hint", value.asInstanceOf[js.Any])
+      inline def setSize_hint(value: Double): Self = StObject.set(x, "size_hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize_hintUndefined: Self = StObject.set(x, "size_hint", js.undefined)
+      inline def setSize_hintUndefined: Self = StObject.set(x, "size_hint", js.undefined)
     }
   }
   
@@ -168,17 +130,14 @@ object mod {
   }
   object BrotliFlushable {
     
-    @scala.inline
-    def apply(flush: () => Unit): BrotliFlushable = {
+    inline def apply(flush: () => Unit): BrotliFlushable = {
       val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush))
       __obj.asInstanceOf[BrotliFlushable]
     }
     
-    @scala.inline
-    implicit class BrotliFlushableMutableBuilder[Self <: BrotliFlushable] (val x: Self) extends AnyVal {
+    extension [Self <: BrotliFlushable](x: Self) {
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     }
   }
   
@@ -190,14 +149,11 @@ object mod {
   trait BrotliMode extends StObject
   object BrotliMode {
     
-    @scala.inline
-    def `0`: typings.iltorb.iltorbNumbers.`0` = 0.asInstanceOf[typings.iltorb.iltorbNumbers.`0`]
+    inline def `0`: typings.iltorb.iltorbNumbers.`0` = 0.asInstanceOf[typings.iltorb.iltorbNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.iltorb.iltorbNumbers.`1` = 1.asInstanceOf[typings.iltorb.iltorbNumbers.`1`]
+    inline def `1`: typings.iltorb.iltorbNumbers.`1` = 1.asInstanceOf[typings.iltorb.iltorbNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.iltorb.iltorbNumbers.`2` = 2.asInstanceOf[typings.iltorb.iltorbNumbers.`2`]
+    inline def `2`: typings.iltorb.iltorbNumbers.`2` = 2.asInstanceOf[typings.iltorb.iltorbNumbers.`2`]
   }
   
   type IltorbCallback = js.Function2[/* err */ js.UndefOr[Error | Null], /* output */ Buffer, Unit]

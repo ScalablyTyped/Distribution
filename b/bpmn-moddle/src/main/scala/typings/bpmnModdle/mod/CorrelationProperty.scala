@@ -16,8 +16,7 @@ trait CorrelationProperty
 }
 object CorrelationProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     correlationPropertyRetrievalExpression: CorrelationPropertyRetrievalExpression,
@@ -30,16 +29,12 @@ object CorrelationProperty {
     __obj.asInstanceOf[CorrelationProperty]
   }
   
-  @scala.inline
-  implicit class CorrelationPropertyMutableBuilder[Self <: CorrelationProperty] (val x: Self) extends AnyVal {
+  extension [Self <: CorrelationProperty](x: Self) {
     
-    @scala.inline
-    def setCorrelationPropertyRetrievalExpression(value: CorrelationPropertyRetrievalExpression): Self = StObject.set(x, "correlationPropertyRetrievalExpression", value.asInstanceOf[js.Any])
+    inline def setCorrelationPropertyRetrievalExpression(value: CorrelationPropertyRetrievalExpression): Self = StObject.set(x, "correlationPropertyRetrievalExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ItemDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ItemDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

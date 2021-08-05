@@ -13,16 +13,13 @@ trait MemoizedFunction extends StObject {
 }
 object MemoizedFunction {
   
-  @scala.inline
-  def apply(cache: MapCache): MemoizedFunction = {
+  inline def apply(cache: MapCache): MemoizedFunction = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[MemoizedFunction]
   }
   
-  @scala.inline
-  implicit class MemoizedFunctionMutableBuilder[Self <: MemoizedFunction] (val x: Self) extends AnyVal {
+  extension [Self <: MemoizedFunction](x: Self) {
     
-    @scala.inline
-    def setCache(value: MapCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: MapCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
   }
 }

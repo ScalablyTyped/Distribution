@@ -34,37 +34,27 @@ trait SchemaTargetingValue extends StObject {
 }
 object SchemaTargetingValue {
   
-  @scala.inline
-  def apply(): SchemaTargetingValue = {
+  inline def apply(): SchemaTargetingValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetingValue]
   }
   
-  @scala.inline
-  implicit class SchemaTargetingValueMutableBuilder[Self <: SchemaTargetingValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetingValue](x: Self) {
     
-    @scala.inline
-    def setCreativeSizeValue(value: SchemaCreativeSize): Self = StObject.set(x, "creativeSizeValue", value.asInstanceOf[js.Any])
+    inline def setCreativeSizeValue(value: SchemaCreativeSize): Self = StObject.set(x, "creativeSizeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeSizeValueUndefined: Self = StObject.set(x, "creativeSizeValue", js.undefined)
+    inline def setCreativeSizeValueUndefined: Self = StObject.set(x, "creativeSizeValue", js.undefined)
     
-    @scala.inline
-    def setDayPartTargetingValue(value: SchemaDayPartTargeting): Self = StObject.set(x, "dayPartTargetingValue", value.asInstanceOf[js.Any])
+    inline def setDayPartTargetingValue(value: SchemaDayPartTargeting): Self = StObject.set(x, "dayPartTargetingValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayPartTargetingValueUndefined: Self = StObject.set(x, "dayPartTargetingValue", js.undefined)
+    inline def setDayPartTargetingValueUndefined: Self = StObject.set(x, "dayPartTargetingValue", js.undefined)
     
-    @scala.inline
-    def setLongValue(value: String): Self = StObject.set(x, "longValue", value.asInstanceOf[js.Any])
+    inline def setLongValue(value: String): Self = StObject.set(x, "longValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongValueUndefined: Self = StObject.set(x, "longValue", js.undefined)
+    inline def setLongValueUndefined: Self = StObject.set(x, "longValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

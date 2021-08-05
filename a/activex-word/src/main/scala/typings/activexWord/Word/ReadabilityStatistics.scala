@@ -16,13 +16,12 @@ trait ReadabilityStatistics extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.ReadabilityStatistics_typekey")
+  /* private */ @JSName("Word.ReadabilityStatistics_typekey")
   var WordDotReadabilityStatistics_typekey: ReadabilityStatistics
 }
 object ReadabilityStatistics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object ReadabilityStatistics {
     __obj.asInstanceOf[ReadabilityStatistics]
   }
   
-  @scala.inline
-  implicit class ReadabilityStatisticsMutableBuilder[Self <: ReadabilityStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ReadabilityStatistics](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => ReadabilityStatistic): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => ReadabilityStatistic): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotReadabilityStatistics_typekey(value: ReadabilityStatistics): Self = StObject.set(x, "Word.ReadabilityStatistics_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotReadabilityStatistics_typekey(value: ReadabilityStatistics): Self = StObject.set(x, "Word.ReadabilityStatistics_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ trait ParametersResponseOctokitResponse extends StObject {
 }
 object ParametersResponseOctokitResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[ActionsCreateRegistrationTokenForOrgEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ActionsCreateRegistrationTokenForOrgResponseData]
   ): ParametersResponseOctokitResponse = {
@@ -29,15 +28,12 @@ object ParametersResponseOctokitResponse {
     __obj.asInstanceOf[ParametersResponseOctokitResponse]
   }
   
-  @scala.inline
-  implicit class ParametersResponseOctokitResponseMutableBuilder[Self <: ParametersResponseOctokitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersResponseOctokitResponse](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[ActionsCreateRegistrationTokenForOrgEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsCreateRegistrationTokenForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsCreateRegistrationTokenForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

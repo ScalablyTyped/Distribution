@@ -18,19 +18,15 @@ trait ShellQuotedString extends StObject {
 }
 object ShellQuotedString {
   
-  @scala.inline
-  def apply(quoting: ShellQuoting, value: String): ShellQuotedString = {
+  inline def apply(quoting: ShellQuoting, value: String): ShellQuotedString = {
     val __obj = js.Dynamic.literal(quoting = quoting.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShellQuotedString]
   }
   
-  @scala.inline
-  implicit class ShellQuotedStringMutableBuilder[Self <: ShellQuotedString] (val x: Self) extends AnyVal {
+  extension [Self <: ShellQuotedString](x: Self) {
     
-    @scala.inline
-    def setQuoting(value: ShellQuoting): Self = StObject.set(x, "quoting", value.asInstanceOf[js.Any])
+    inline def setQuoting(value: ShellQuoting): Self = StObject.set(x, "quoting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

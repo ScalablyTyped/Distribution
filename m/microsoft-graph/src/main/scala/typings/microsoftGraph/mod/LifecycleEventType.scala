@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LifecycleEventType extends StObject
 object LifecycleEventType {
   
-  @scala.inline
-  def missed: typings.microsoftGraph.microsoftGraphStrings.missed = "missed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.missed]
+  inline def missed: typings.microsoftGraph.microsoftGraphStrings.missed = "missed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.missed]
   
-  @scala.inline
-  def reauthorizationRequired: typings.microsoftGraph.microsoftGraphStrings.reauthorizationRequired = "reauthorizationRequired".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reauthorizationRequired]
+  inline def reauthorizationRequired: typings.microsoftGraph.microsoftGraphStrings.reauthorizationRequired = "reauthorizationRequired".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.reauthorizationRequired]
   
-  @scala.inline
-  def subscriptionRemoved: typings.microsoftGraph.microsoftGraphStrings.subscriptionRemoved = "subscriptionRemoved".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.subscriptionRemoved]
+  inline def subscriptionRemoved: typings.microsoftGraph.microsoftGraphStrings.subscriptionRemoved = "subscriptionRemoved".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.subscriptionRemoved]
 }

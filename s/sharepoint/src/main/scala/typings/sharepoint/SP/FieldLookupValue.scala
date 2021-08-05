@@ -16,8 +16,7 @@ trait FieldLookupValue
 }
 object FieldLookupValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -31,16 +30,12 @@ object FieldLookupValue {
     __obj.asInstanceOf[FieldLookupValue]
   }
   
-  @scala.inline
-  implicit class FieldLookupValueMutableBuilder[Self <: FieldLookupValue] (val x: Self) extends AnyVal {
+  extension [Self <: FieldLookupValue](x: Self) {
     
-    @scala.inline
-    def setGet_lookupId(value: () => Double): Self = StObject.set(x, "get_lookupId", js.Any.fromFunction0(value))
+    inline def setGet_lookupId(value: () => Double): Self = StObject.set(x, "get_lookupId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_lookupValue(value: () => String): Self = StObject.set(x, "get_lookupValue", js.Any.fromFunction0(value))
+    inline def setGet_lookupValue(value: () => String): Self = StObject.set(x, "get_lookupValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_lookupId(value: Double => Unit): Self = StObject.set(x, "set_lookupId", js.Any.fromFunction1(value))
+    inline def setSet_lookupId(value: Double => Unit): Self = StObject.set(x, "set_lookupId", js.Any.fromFunction1(value))
   }
 }

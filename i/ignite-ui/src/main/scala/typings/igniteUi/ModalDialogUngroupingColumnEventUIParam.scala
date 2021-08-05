@@ -23,31 +23,23 @@ trait ModalDialogUngroupingColumnEventUIParam extends StObject {
 }
 object ModalDialogUngroupingColumnEventUIParam {
   
-  @scala.inline
-  def apply(): ModalDialogUngroupingColumnEventUIParam = {
+  inline def apply(): ModalDialogUngroupingColumnEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalDialogUngroupingColumnEventUIParam]
   }
   
-  @scala.inline
-  implicit class ModalDialogUngroupingColumnEventUIParamMutableBuilder[Self <: ModalDialogUngroupingColumnEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ModalDialogUngroupingColumnEventUIParam](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -16,7 +16,7 @@ object musicSearchFeedMod {
   class MusicSearchFeed protected () extends Feed[MusicSearchFeedResponseRootObject, MusicSearchFeedResponseItemsItem] {
     def this(client: IgApiClient) = this()
     
-    var nextCursor: js.UndefOr[String] = js.native
+    /* protected */ var nextCursor: js.UndefOr[String] = js.native
     
     var product: IgAppModule = js.native
     

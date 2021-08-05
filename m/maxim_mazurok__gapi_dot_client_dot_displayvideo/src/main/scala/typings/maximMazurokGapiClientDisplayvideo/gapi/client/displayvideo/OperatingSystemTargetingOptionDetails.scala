@@ -11,19 +11,15 @@ trait OperatingSystemTargetingOptionDetails extends StObject {
 }
 object OperatingSystemTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): OperatingSystemTargetingOptionDetails = {
+  inline def apply(): OperatingSystemTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OperatingSystemTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class OperatingSystemTargetingOptionDetailsMutableBuilder[Self <: OperatingSystemTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OperatingSystemTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
   }
 }

@@ -43,46 +43,33 @@ trait CreateDatasetRequest extends StObject {
 }
 object CreateDatasetRequest {
   
-  @scala.inline
-  def apply(DatasetName: Name, DatasetType: DatasetType, Domain: Domain, Schema: Schema): CreateDatasetRequest = {
+  inline def apply(DatasetName: Name, DatasetType: DatasetType, Domain: Domain, Schema: Schema): CreateDatasetRequest = {
     val __obj = js.Dynamic.literal(DatasetName = DatasetName.asInstanceOf[js.Any], DatasetType = DatasetType.asInstanceOf[js.Any], Domain = Domain.asInstanceOf[js.Any], Schema = Schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDatasetRequest]
   }
   
-  @scala.inline
-  implicit class CreateDatasetRequestMutableBuilder[Self <: CreateDatasetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDatasetRequest](x: Self) {
     
-    @scala.inline
-    def setDataFrequency(value: Frequency): Self = StObject.set(x, "DataFrequency", value.asInstanceOf[js.Any])
+    inline def setDataFrequency(value: Frequency): Self = StObject.set(x, "DataFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFrequencyUndefined: Self = StObject.set(x, "DataFrequency", js.undefined)
+    inline def setDataFrequencyUndefined: Self = StObject.set(x, "DataFrequency", js.undefined)
     
-    @scala.inline
-    def setDatasetName(value: Name): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: Name): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetType(value: DatasetType): Self = StObject.set(x, "DatasetType", value.asInstanceOf[js.Any])
+    inline def setDatasetType(value: DatasetType): Self = StObject.set(x, "DatasetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
+    inline def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
     
-    @scala.inline
-    def setSchema(value: Schema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Schema): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

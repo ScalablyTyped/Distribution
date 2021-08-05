@@ -13,19 +13,15 @@ trait CreateEnvironmentMembershipResult extends StObject {
 }
 object CreateEnvironmentMembershipResult {
   
-  @scala.inline
-  def apply(): CreateEnvironmentMembershipResult = {
+  inline def apply(): CreateEnvironmentMembershipResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateEnvironmentMembershipResult]
   }
   
-  @scala.inline
-  implicit class CreateEnvironmentMembershipResultMutableBuilder[Self <: CreateEnvironmentMembershipResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEnvironmentMembershipResult](x: Self) {
     
-    @scala.inline
-    def setMembership(value: EnvironmentMember): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
+    inline def setMembership(value: EnvironmentMember): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
+    inline def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
   }
 }

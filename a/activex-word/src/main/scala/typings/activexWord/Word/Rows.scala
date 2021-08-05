@@ -82,7 +82,7 @@ trait Rows extends StObject {
   
   var VerticalPosition: Double = js.native
   
-  @JSName("Word.Rows_typekey")
+  /* private */ @JSName("Word.Rows_typekey")
   var WordDotRows_typekey: Rows = js.native
   
   var WrapAroundText: Double = js.native

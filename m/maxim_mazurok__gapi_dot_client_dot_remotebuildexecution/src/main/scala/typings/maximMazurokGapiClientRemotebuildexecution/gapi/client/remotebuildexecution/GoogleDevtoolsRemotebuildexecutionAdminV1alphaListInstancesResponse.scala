@@ -11,22 +11,17 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse extend
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse = {
+  inline def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponseMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaListInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaInstance*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

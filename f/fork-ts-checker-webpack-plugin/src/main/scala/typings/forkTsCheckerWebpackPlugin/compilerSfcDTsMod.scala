@@ -19,23 +19,18 @@ object compilerSfcDTsMod {
   }
   object CompilerError {
     
-    @scala.inline
-    def apply(code: Double, message: String, name: String): CompilerError = {
+    inline def apply(code: Double, message: String, name: String): CompilerError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompilerError]
     }
     
-    @scala.inline
-    implicit class CompilerErrorMutableBuilder[Self <: CompilerError] (val x: Self) extends AnyVal {
+    extension [Self <: CompilerError](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+      inline def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+      inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     }
   }
   
@@ -49,23 +44,18 @@ object compilerSfcDTsMod {
   }
   object Position {
     
-    @scala.inline
-    def apply(column: Double, line: Double, offset: Double): Position = {
+    inline def apply(column: Double, line: Double, offset: Double): Position = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Position]
     }
     
-    @scala.inline
-    implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+    extension [Self <: Position](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,39 +75,29 @@ object compilerSfcDTsMod {
   }
   object SFCBlock {
     
-    @scala.inline
-    def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation, `type`: String): SFCBlock = {
+    inline def apply(attrs: Record[String, String | `true`], content: String, loc: SourceLocation, `type`: String): SFCBlock = {
       val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SFCBlock]
     }
     
-    @scala.inline
-    implicit class SFCBlockMutableBuilder[Self <: SFCBlock] (val x: Self) extends AnyVal {
+    extension [Self <: SFCBlock](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: Record[String, String | `true`]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: Record[String, String | `true`]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      @scala.inline
-      def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+      inline def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,41 +115,30 @@ object compilerSfcDTsMod {
   }
   object SFCDescriptor {
     
-    @scala.inline
-    def apply(customBlocks: js.Array[SFCBlock], filename: String, styles: js.Array[SFCBlock]): SFCDescriptor = {
+    inline def apply(customBlocks: js.Array[SFCBlock], filename: String, styles: js.Array[SFCBlock]): SFCDescriptor = {
       val __obj = js.Dynamic.literal(customBlocks = customBlocks.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], script = null, template = null)
       __obj.asInstanceOf[SFCDescriptor]
     }
     
-    @scala.inline
-    implicit class SFCDescriptorMutableBuilder[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: SFCDescriptor](x: Self) {
       
-      @scala.inline
-      def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
+      inline def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
+      inline def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: SFCBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: SFCBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptNull: Self = StObject.set(x, "script", null)
+      inline def setScriptNull: Self = StObject.set(x, "script", null)
       
-      @scala.inline
-      def setStyles(value: js.Array[SFCBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[SFCBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplate(value: SFCBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: SFCBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateNull: Self = StObject.set(x, "template", null)
+      inline def setTemplateNull: Self = StObject.set(x, "template", null)
     }
   }
   
@@ -181,23 +150,18 @@ object compilerSfcDTsMod {
   }
   object SFCParseResult {
     
-    @scala.inline
-    def apply(descriptor: SFCDescriptor, errors: js.Array[CompilerError]): SFCParseResult = {
+    inline def apply(descriptor: SFCDescriptor, errors: js.Array[CompilerError]): SFCParseResult = {
       val __obj = js.Dynamic.literal(descriptor = descriptor.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[SFCParseResult]
     }
     
-    @scala.inline
-    implicit class SFCParseResultMutableBuilder[Self <: SFCParseResult] (val x: Self) extends AnyVal {
+    extension [Self <: SFCParseResult](x: Self) {
       
-      @scala.inline
-      def setDescriptor(value: SFCDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+      inline def setDescriptor(value: SFCDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: js.Array[CompilerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[CompilerError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: CompilerError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: CompilerError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   
@@ -211,23 +175,18 @@ object compilerSfcDTsMod {
   }
   object SourceLocation {
     
-    @scala.inline
-    def apply(end: Position, source: String, start: Position): SourceLocation = {
+    inline def apply(end: Position, source: String, start: Position): SourceLocation = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceLocation]
     }
     
-    @scala.inline
-    implicit class SourceLocationMutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
+    extension [Self <: SourceLocation](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   

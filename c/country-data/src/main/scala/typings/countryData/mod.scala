@@ -78,14 +78,11 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def countries(query: js.Any): js.Array[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("countries")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Country]]
+    inline def countries(query: js.Any): js.Array[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("countries")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Country]]
     
-    @scala.inline
-    def currencies(query: js.Any): js.Array[Currency] = ^.asInstanceOf[js.Dynamic].applyDynamic("currencies")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Currency]]
+    inline def currencies(query: js.Any): js.Array[Currency] = ^.asInstanceOf[js.Dynamic].applyDynamic("currencies")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Currency]]
     
-    @scala.inline
-    def languages(query: js.Any): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Language]]
+    inline def languages(query: js.Any): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[Language]]
   }
   
   object regions {
@@ -193,29 +190,22 @@ object mod {
   }
   object Continent {
     
-    @scala.inline
-    def apply(countries: js.Array[Country], name: String, regions: js.Array[String]): Continent = {
+    inline def apply(countries: js.Array[Country], name: String, regions: js.Array[String]): Continent = {
       val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], regions = regions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Continent]
     }
     
-    @scala.inline
-    implicit class ContinentMutableBuilder[Self <: Continent] (val x: Self) extends AnyVal {
+    extension [Self <: Continent](x: Self) {
       
-      @scala.inline
-      def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+      inline def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
+      inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
     }
   }
   
@@ -241,8 +231,7 @@ object mod {
   }
   object Country {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha2: String,
       alpha3: String,
       countryCallingCodes: js.Array[String],
@@ -257,44 +246,31 @@ object mod {
       __obj.asInstanceOf[Country]
     }
     
-    @scala.inline
-    implicit class CountryMutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
+    extension [Self <: Country](x: Self) {
       
-      @scala.inline
-      def setAlpha2(value: String): Self = StObject.set(x, "alpha2", value.asInstanceOf[js.Any])
+      inline def setAlpha2(value: String): Self = StObject.set(x, "alpha2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlpha3(value: String): Self = StObject.set(x, "alpha3", value.asInstanceOf[js.Any])
+      inline def setAlpha3(value: String): Self = StObject.set(x, "alpha3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCallingCodes(value: js.Array[String]): Self = StObject.set(x, "countryCallingCodes", value.asInstanceOf[js.Any])
+      inline def setCountryCallingCodes(value: js.Array[String]): Self = StObject.set(x, "countryCallingCodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryCallingCodesVarargs(value: String*): Self = StObject.set(x, "countryCallingCodes", js.Array(value :_*))
+      inline def setCountryCallingCodesVarargs(value: String*): Self = StObject.set(x, "countryCallingCodes", js.Array(value :_*))
       
-      @scala.inline
-      def setCurrencies(value: js.Array[String]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
+      inline def setCurrencies(value: js.Array[String]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrenciesVarargs(value: String*): Self = StObject.set(x, "currencies", js.Array(value :_*))
+      inline def setCurrenciesVarargs(value: String*): Self = StObject.set(x, "currencies", js.Array(value :_*))
       
-      @scala.inline
-      def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+      inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIoc(value: String): Self = StObject.set(x, "ioc", value.asInstanceOf[js.Any])
+      inline def setIoc(value: String): Self = StObject.set(x, "ioc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: js.Array[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -312,29 +288,22 @@ object mod {
   }
   object Currency {
     
-    @scala.inline
-    def apply(code: String, decimals: Double, name: String, number: Double, symbol: String): Currency = {
+    inline def apply(code: String, decimals: Double, name: String, number: Double, symbol: String): Currency = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], decimals = decimals.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Currency]
     }
     
-    @scala.inline
-    implicit class CurrencyMutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
+    extension [Self <: Currency](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+      inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,26 +319,20 @@ object mod {
   }
   object Language {
     
-    @scala.inline
-    def apply(alpha2: String, alpha3: String, bibliographic: String, name: String): Language = {
+    inline def apply(alpha2: String, alpha3: String, bibliographic: String, name: String): Language = {
       val __obj = js.Dynamic.literal(alpha2 = alpha2.asInstanceOf[js.Any], alpha3 = alpha3.asInstanceOf[js.Any], bibliographic = bibliographic.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Language]
     }
     
-    @scala.inline
-    implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
+    extension [Self <: Language](x: Self) {
       
-      @scala.inline
-      def setAlpha2(value: String): Self = StObject.set(x, "alpha2", value.asInstanceOf[js.Any])
+      inline def setAlpha2(value: String): Self = StObject.set(x, "alpha2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlpha3(value: String): Self = StObject.set(x, "alpha3", value.asInstanceOf[js.Any])
+      inline def setAlpha3(value: String): Self = StObject.set(x, "alpha3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBibliographic(value: String): Self = StObject.set(x, "bibliographic", value.asInstanceOf[js.Any])
+      inline def setBibliographic(value: String): Self = StObject.set(x, "bibliographic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -381,23 +344,18 @@ object mod {
   }
   object Region {
     
-    @scala.inline
-    def apply(countries: js.Array[String], name: String): Region = {
+    inline def apply(countries: js.Array[String], name: String): Region = {
       val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Region]
     }
     
-    @scala.inline
-    implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+    extension [Self <: Region](x: Self) {
       
-      @scala.inline
-      def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+      inline def setCountries(value: js.Array[String]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
+      inline def setCountriesVarargs(value: String*): Self = StObject.set(x, "countries", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,22 +18,17 @@ trait SetUserSettingsRequest extends StObject {
 }
 object SetUserSettingsRequest {
   
-  @scala.inline
-  def apply(AccessToken: TokenModelType, MFAOptions: MFAOptionListType): SetUserSettingsRequest = {
+  inline def apply(AccessToken: TokenModelType, MFAOptions: MFAOptionListType): SetUserSettingsRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any], MFAOptions = MFAOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetUserSettingsRequest]
   }
   
-  @scala.inline
-  implicit class SetUserSettingsRequestMutableBuilder[Self <: SetUserSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetUserSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMFAOptions(value: MFAOptionListType): Self = StObject.set(x, "MFAOptions", value.asInstanceOf[js.Any])
+    inline def setMFAOptions(value: MFAOptionListType): Self = StObject.set(x, "MFAOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
+    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
   }
 }

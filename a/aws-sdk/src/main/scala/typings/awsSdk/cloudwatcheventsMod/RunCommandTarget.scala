@@ -18,22 +18,17 @@ trait RunCommandTarget extends StObject {
 }
 object RunCommandTarget {
   
-  @scala.inline
-  def apply(Key: RunCommandTargetKey, Values: RunCommandTargetValues): RunCommandTarget = {
+  inline def apply(Key: RunCommandTargetKey, Values: RunCommandTargetValues): RunCommandTarget = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunCommandTarget]
   }
   
-  @scala.inline
-  implicit class RunCommandTargetMutableBuilder[Self <: RunCommandTarget] (val x: Self) extends AnyVal {
+  extension [Self <: RunCommandTarget](x: Self) {
     
-    @scala.inline
-    def setKey(value: RunCommandTargetKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: RunCommandTargetKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: RunCommandTargetValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: RunCommandTargetValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: RunCommandTargetValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: RunCommandTargetValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

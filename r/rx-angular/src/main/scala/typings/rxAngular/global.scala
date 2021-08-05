@@ -27,7 +27,6 @@ object global {
       def this($scope: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ js.Any) = this()
     }
     
-    @scala.inline
-    def ScopeScheduler_=(x: ScopeSchedulerStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScopeScheduler")(x.asInstanceOf[js.Any])
+    inline def ScopeScheduler_=(x: ScopeSchedulerStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScopeScheduler")(x.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Linejoin extends StObject
 object Linejoin {
   
-  @scala.inline
-  def bevel: typings.reactNativeSvg.reactNativeSvgStrings.bevel = "bevel".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.bevel]
+  inline def bevel: typings.reactNativeSvg.reactNativeSvgStrings.bevel = "bevel".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.bevel]
   
-  @scala.inline
-  def miter: typings.reactNativeSvg.reactNativeSvgStrings.miter = "miter".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.miter]
+  inline def miter: typings.reactNativeSvg.reactNativeSvgStrings.miter = "miter".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.miter]
   
-  @scala.inline
-  def round: typings.reactNativeSvg.reactNativeSvgStrings.round = "round".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.round]
+  inline def round: typings.reactNativeSvg.reactNativeSvgStrings.round = "round".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.round]
 }

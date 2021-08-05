@@ -28,32 +28,24 @@ trait CreateReportGroupInput extends StObject {
 }
 object CreateReportGroupInput {
   
-  @scala.inline
-  def apply(exportConfig: ReportExportConfig, name: ReportGroupName, `type`: ReportType): CreateReportGroupInput = {
+  inline def apply(exportConfig: ReportExportConfig, name: ReportGroupName, `type`: ReportType): CreateReportGroupInput = {
     val __obj = js.Dynamic.literal(exportConfig = exportConfig.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReportGroupInput]
   }
   
-  @scala.inline
-  implicit class CreateReportGroupInputMutableBuilder[Self <: CreateReportGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReportGroupInput](x: Self) {
     
-    @scala.inline
-    def setExportConfig(value: ReportExportConfig): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
+    inline def setExportConfig(value: ReportExportConfig): Self = StObject.set(x, "exportConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ReportGroupName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ReportGroupName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ReportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ReportType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

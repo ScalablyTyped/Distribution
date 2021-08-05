@@ -17,8 +17,7 @@ trait ParametersActionsDownloadArtifactEndpoint extends StObject {
 }
 object ParametersActionsDownloadArtifactEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsDownloadArtifactEndpoint,
     request: ActionsDownloadArtifactRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActionsDownloadArtifactEndpoint {
     __obj.asInstanceOf[ParametersActionsDownloadArtifactEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsDownloadArtifactEndpointMutableBuilder[Self <: ParametersActionsDownloadArtifactEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsDownloadArtifactEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsDownloadArtifactEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsDownloadArtifactEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsDownloadArtifactRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsDownloadArtifactRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

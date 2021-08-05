@@ -13,16 +13,13 @@ trait MonitoringResources extends StObject {
 }
 object MonitoringResources {
   
-  @scala.inline
-  def apply(ClusterConfig: MonitoringClusterConfig): MonitoringResources = {
+  inline def apply(ClusterConfig: MonitoringClusterConfig): MonitoringResources = {
     val __obj = js.Dynamic.literal(ClusterConfig = ClusterConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringResources]
   }
   
-  @scala.inline
-  implicit class MonitoringResourcesMutableBuilder[Self <: MonitoringResources] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringResources](x: Self) {
     
-    @scala.inline
-    def setClusterConfig(value: MonitoringClusterConfig): Self = StObject.set(x, "ClusterConfig", value.asInstanceOf[js.Any])
+    inline def setClusterConfig(value: MonitoringClusterConfig): Self = StObject.set(x, "ClusterConfig", value.asInstanceOf[js.Any])
   }
 }

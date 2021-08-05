@@ -17,8 +17,7 @@ trait ParametersInteractionsRemoveRestrictionsForOrgEndpoint extends StObject {
 }
 object ParametersInteractionsRemoveRestrictionsForOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: InteractionsRemoveRestrictionsForOrgEndpoint,
     request: InteractionsRemoveRestrictionsForOrgRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersInteractionsRemoveRestrictionsForOrgEndpoint {
     __obj.asInstanceOf[ParametersInteractionsRemoveRestrictionsForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersInteractionsRemoveRestrictionsForOrgEndpointMutableBuilder[Self <: ParametersInteractionsRemoveRestrictionsForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersInteractionsRemoveRestrictionsForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: InteractionsRemoveRestrictionsForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: InteractionsRemoveRestrictionsForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: InteractionsRemoveRestrictionsForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: InteractionsRemoveRestrictionsForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

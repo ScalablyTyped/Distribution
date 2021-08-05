@@ -47,6 +47,6 @@ object finMod {
     
     val me: (View | Window | Frame | js.Object) & Identity & EntityTypeHelpers = js.native
     
-    var wire: js.Any = js.native
+    /* private */ var wire: js.Any = js.native
   }
 }

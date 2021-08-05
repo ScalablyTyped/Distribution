@@ -20,8 +20,7 @@ trait EditInitializeParams
 }
 object EditInitializeParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filters: EditInitializeFiltering,
     objectName: String,
     objectType: String,
@@ -33,22 +32,16 @@ object EditInitializeParams {
     __obj.asInstanceOf[EditInitializeParams]
   }
   
-  @scala.inline
-  implicit class EditInitializeParamsMutableBuilder[Self <: EditInitializeParams] (val x: Self) extends AnyVal {
+  extension [Self <: EditInitializeParams](x: Self) {
     
-    @scala.inline
-    def setFilters(value: EditInitializeFiltering): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: EditInitializeFiltering): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
+    inline def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
   }
 }

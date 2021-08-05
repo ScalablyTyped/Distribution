@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Bool extends StObject
 object Bool {
   
-  @scala.inline
-  def FALSE: `0` = 0.asInstanceOf[`0`]
+  inline def FALSE: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def TRUE: `1` = 1.asInstanceOf[`1`]
+  inline def TRUE: `1` = 1.asInstanceOf[`1`]
 }

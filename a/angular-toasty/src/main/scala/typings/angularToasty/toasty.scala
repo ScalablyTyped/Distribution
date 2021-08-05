@@ -69,80 +69,56 @@ object toasty {
   }
   object IGlobalConfig {
     
-    @scala.inline
-    def apply(): IGlobalConfig = {
+    inline def apply(): IGlobalConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGlobalConfig]
     }
     
-    @scala.inline
-    implicit class IGlobalConfigMutableBuilder[Self <: IGlobalConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IGlobalConfig](x: Self) {
       
-      @scala.inline
-      def setClickToClose(value: Boolean): Self = StObject.set(x, "clickToClose", value.asInstanceOf[js.Any])
+      inline def setClickToClose(value: Boolean): Self = StObject.set(x, "clickToClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickToCloseUndefined: Self = StObject.set(x, "clickToClose", js.undefined)
+      inline def setClickToCloseUndefined: Self = StObject.set(x, "clickToClose", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+      inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setShake(value: Boolean): Self = StObject.set(x, "shake", value.asInstanceOf[js.Any])
+      inline def setShake(value: Boolean): Self = StObject.set(x, "shake", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShakeUndefined: Self = StObject.set(x, "shake", js.undefined)
+      inline def setShakeUndefined: Self = StObject.set(x, "shake", js.undefined)
       
-      @scala.inline
-      def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
+      inline def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
+      inline def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
       
-      @scala.inline
-      def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+      inline def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+      inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double | Boolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | Boolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -224,89 +200,62 @@ object toasty {
   }
   object IToastyConfig {
     
-    @scala.inline
-    def apply(title: String): IToastyConfig = {
+    inline def apply(title: String): IToastyConfig = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[IToastyConfig]
     }
     
-    @scala.inline
-    implicit class IToastyConfigMutableBuilder[Self <: IToastyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IToastyConfig](x: Self) {
       
-      @scala.inline
-      def setClickToClose(value: Boolean): Self = StObject.set(x, "clickToClose", value.asInstanceOf[js.Any])
+      inline def setClickToClose(value: Boolean): Self = StObject.set(x, "clickToClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickToCloseUndefined: Self = StObject.set(x, "clickToClose", js.undefined)
+      inline def setClickToCloseUndefined: Self = StObject.set(x, "clickToClose", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+      inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
       
-      @scala.inline
-      def setOnAdd(value: js.Function): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
+      inline def setOnAdd(value: js.Function): Self = StObject.set(x, "onAdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+      inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      inline def setOnClick(value: js.Function): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnRemove(value: js.Function): Self = StObject.set(x, "onRemove", value.asInstanceOf[js.Any])
+      inline def setOnRemove(value: js.Function): Self = StObject.set(x, "onRemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+      inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
       
-      @scala.inline
-      def setShake(value: Boolean): Self = StObject.set(x, "shake", value.asInstanceOf[js.Any])
+      inline def setShake(value: Boolean): Self = StObject.set(x, "shake", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShakeUndefined: Self = StObject.set(x, "shake", js.undefined)
+      inline def setShakeUndefined: Self = StObject.set(x, "shake", js.undefined)
       
-      @scala.inline
-      def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
+      inline def setShowClose(value: Boolean): Self = StObject.set(x, "showClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
+      inline def setShowCloseUndefined: Self = StObject.set(x, "showClose", js.undefined)
       
-      @scala.inline
-      def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+      inline def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+      inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -319,20 +268,16 @@ object toasty {
   }
   object IToastyConfigProvider {
     
-    @scala.inline
-    def apply($get: () => IGlobalConfig, setConfig: IGlobalConfig => Unit): IToastyConfigProvider = {
+    inline def apply($get: () => IGlobalConfig, setConfig: IGlobalConfig => Unit): IToastyConfigProvider = {
       val __obj = js.Dynamic.literal($get = js.Any.fromFunction0($get), setConfig = js.Any.fromFunction1(setConfig))
       __obj.asInstanceOf[IToastyConfigProvider]
     }
     
-    @scala.inline
-    implicit class IToastyConfigProviderMutableBuilder[Self <: IToastyConfigProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IToastyConfigProvider](x: Self) {
       
-      @scala.inline
-      def set$get(value: () => IGlobalConfig): Self = StObject.set(x, "$get", js.Any.fromFunction0(value))
+      inline def set$get(value: () => IGlobalConfig): Self = StObject.set(x, "$get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetConfig(value: IGlobalConfig => Unit): Self = StObject.set(x, "setConfig", js.Any.fromFunction1(value))
+      inline def setSetConfig(value: IGlobalConfig => Unit): Self = StObject.set(x, "setConfig", js.Any.fromFunction1(value))
     }
   }
   

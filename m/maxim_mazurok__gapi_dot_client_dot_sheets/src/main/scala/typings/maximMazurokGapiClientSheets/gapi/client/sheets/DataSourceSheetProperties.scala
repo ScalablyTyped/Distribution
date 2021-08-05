@@ -17,34 +17,25 @@ trait DataSourceSheetProperties extends StObject {
 }
 object DataSourceSheetProperties {
   
-  @scala.inline
-  def apply(): DataSourceSheetProperties = {
+  inline def apply(): DataSourceSheetProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSheetProperties]
   }
   
-  @scala.inline
-  implicit class DataSourceSheetPropertiesMutableBuilder[Self <: DataSourceSheetProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSheetProperties](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[DataSourceColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[DataSourceColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: DataSourceColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
+    inline def setDataExecutionStatus(value: DataExecutionStatus): Self = StObject.set(x, "dataExecutionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
+    inline def setDataExecutionStatusUndefined: Self = StObject.set(x, "dataExecutionStatus", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
   }
 }

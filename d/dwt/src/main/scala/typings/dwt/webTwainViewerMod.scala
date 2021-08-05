@@ -35,23 +35,18 @@ object webTwainViewerMod {
   }
   object BasicViewerConfig {
     
-    @scala.inline
-    def apply(Height: Double | String, Width: Double | String, view: ContentView): BasicViewerConfig = {
+    inline def apply(Height: Double | String, Width: Double | String, view: ContentView): BasicViewerConfig = {
       val __obj = js.Dynamic.literal(Height = Height.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasicViewerConfig]
     }
     
-    @scala.inline
-    implicit class BasicViewerConfigMutableBuilder[Self <: BasicViewerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BasicViewerConfig](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double | String): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: ContentView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: ContentView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,20 +65,16 @@ object webTwainViewerMod {
   }
   object ContentView {
     
-    @scala.inline
-    def apply(Width: Double | String, bShow: Boolean): ContentView = {
+    inline def apply(Width: Double | String, bShow: Boolean): ContentView = {
       val __obj = js.Dynamic.literal(Width = Width.asInstanceOf[js.Any], bShow = bShow.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContentView]
     }
     
-    @scala.inline
-    implicit class ContentViewMutableBuilder[Self <: ContentView] (val x: Self) extends AnyVal {
+    extension [Self <: ContentView](x: Self) {
       
-      @scala.inline
-      def setBShow(value: Boolean): Self = StObject.set(x, "bShow", value.asInstanceOf[js.Any])
+      inline def setBShow(value: Boolean): Self = StObject.set(x, "bShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -247,92 +238,64 @@ object webTwainViewerMod {
   }
   object ViewerConfig {
     
-    @scala.inline
-    def apply(): ViewerConfig = {
+    inline def apply(): ViewerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewerConfig]
     }
     
-    @scala.inline
-    implicit class ViewerConfigMutableBuilder[Self <: ViewerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ViewerConfig](x: Self) {
       
-      @scala.inline
-      def setButtonResize(value: IfResize): Self = StObject.set(x, "buttonResize", value.asInstanceOf[js.Any])
+      inline def setButtonResize(value: IfResize): Self = StObject.set(x, "buttonResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonResizeUndefined: Self = StObject.set(x, "buttonResize", js.undefined)
+      inline def setButtonResizeUndefined: Self = StObject.set(x, "buttonResize", js.undefined)
       
-      @scala.inline
-      def setButtons(value: AutoFit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: AutoFit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setComponent(value: AsideMenu): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: AsideMenu): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setContent(value: AllImage): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: AllImage): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setCropStyle(value: CropBar): Self = StObject.set(x, "cropStyle", value.asInstanceOf[js.Any])
+      inline def setCropStyle(value: CropBar): Self = StObject.set(x, "cropStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropStyleUndefined: Self = StObject.set(x, "cropStyle", js.undefined)
+      inline def setCropStyleUndefined: Self = StObject.set(x, "cropStyle", js.undefined)
       
-      @scala.inline
-      def setGroup(value: Global): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Global): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setPresetMode(value: String): Self = StObject.set(x, "presetMode", value.asInstanceOf[js.Any])
+      inline def setPresetMode(value: String): Self = StObject.set(x, "presetMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetModeUndefined: Self = StObject.set(x, "presetMode", js.undefined)
+      inline def setPresetModeUndefined: Self = StObject.set(x, "presetMode", js.undefined)
       
-      @scala.inline
-      def setSkinColor(value: AsideBackground): Self = StObject.set(x, "skinColor", value.asInstanceOf[js.Any])
+      inline def setSkinColor(value: AsideBackground): Self = StObject.set(x, "skinColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinColorUndefined: Self = StObject.set(x, "skinColor", js.undefined)
+      inline def setSkinColorUndefined: Self = StObject.set(x, "skinColor", js.undefined)
       
-      @scala.inline
-      def setTag(value: DisplayMode): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: DisplayMode): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setThumbnail(value: BackgroundColor): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: BackgroundColor): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+      inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
       
-      @scala.inline
-      def setTipsConfig(value: Crop): Self = StObject.set(x, "tipsConfig", value.asInstanceOf[js.Any])
+      inline def setTipsConfig(value: Crop): Self = StObject.set(x, "tipsConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTipsConfigUndefined: Self = StObject.set(x, "tipsConfig", js.undefined)
+      inline def setTipsConfigUndefined: Self = StObject.set(x, "tipsConfig", js.undefined)
       
-      @scala.inline
-      def setTree(value: GoToThumbnail): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+      inline def setTree(value: GoToThumbnail): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
+      inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
     }
   }
   

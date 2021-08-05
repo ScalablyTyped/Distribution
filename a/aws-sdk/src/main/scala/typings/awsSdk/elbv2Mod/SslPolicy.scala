@@ -23,37 +23,27 @@ trait SslPolicy extends StObject {
 }
 object SslPolicy {
   
-  @scala.inline
-  def apply(): SslPolicy = {
+  inline def apply(): SslPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SslPolicy]
   }
   
-  @scala.inline
-  implicit class SslPolicyMutableBuilder[Self <: SslPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SslPolicy](x: Self) {
     
-    @scala.inline
-    def setCiphers(value: Ciphers): Self = StObject.set(x, "Ciphers", value.asInstanceOf[js.Any])
+    inline def setCiphers(value: Ciphers): Self = StObject.set(x, "Ciphers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphersUndefined: Self = StObject.set(x, "Ciphers", js.undefined)
+    inline def setCiphersUndefined: Self = StObject.set(x, "Ciphers", js.undefined)
     
-    @scala.inline
-    def setCiphersVarargs(value: Cipher*): Self = StObject.set(x, "Ciphers", js.Array(value :_*))
+    inline def setCiphersVarargs(value: Cipher*): Self = StObject.set(x, "Ciphers", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: SslPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SslPolicyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSslProtocols(value: SslProtocols): Self = StObject.set(x, "SslProtocols", value.asInstanceOf[js.Any])
+    inline def setSslProtocols(value: SslProtocols): Self = StObject.set(x, "SslProtocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslProtocolsUndefined: Self = StObject.set(x, "SslProtocols", js.undefined)
+    inline def setSslProtocolsUndefined: Self = StObject.set(x, "SslProtocols", js.undefined)
     
-    @scala.inline
-    def setSslProtocolsVarargs(value: SslProtocol*): Self = StObject.set(x, "SslProtocols", js.Array(value :_*))
+    inline def setSslProtocolsVarargs(value: SslProtocol*): Self = StObject.set(x, "SslProtocols", js.Array(value :_*))
   }
 }

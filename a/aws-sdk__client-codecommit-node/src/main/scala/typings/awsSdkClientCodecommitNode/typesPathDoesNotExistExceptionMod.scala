@@ -20,17 +20,14 @@ object typesPathDoesNotExistExceptionMod {
   }
   object PathDoesNotExistException {
     
-    @scala.inline
-    def apply(): PathDoesNotExistException = {
+    inline def apply(): PathDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "PathDoesNotExistException")
       __obj.asInstanceOf[PathDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class PathDoesNotExistExceptionMutableBuilder[Self <: PathDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: PathDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PathDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -25,23 +25,18 @@ object typesInvokeAsyncOutputMod {
   }
   object InvokeAsyncOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): InvokeAsyncOutput = {
+    inline def apply($metadata: ResponseMetadata): InvokeAsyncOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvokeAsyncOutput]
     }
     
-    @scala.inline
-    implicit class InvokeAsyncOutputMutableBuilder[Self <: InvokeAsyncOutput] (val x: Self) extends AnyVal {
+    extension [Self <: InvokeAsyncOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     }
   }
 }

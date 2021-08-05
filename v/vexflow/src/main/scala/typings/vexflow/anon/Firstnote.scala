@@ -12,19 +12,15 @@ trait Firstnote extends StObject {
 }
 object Firstnote {
   
-  @scala.inline
-  def apply(first_note: typings.vexflow.Vex.Flow.Note, last_note: typings.vexflow.Vex.Flow.Note): Firstnote = {
+  inline def apply(first_note: typings.vexflow.Vex.Flow.Note, last_note: typings.vexflow.Vex.Flow.Note): Firstnote = {
     val __obj = js.Dynamic.literal(first_note = first_note.asInstanceOf[js.Any], last_note = last_note.asInstanceOf[js.Any])
     __obj.asInstanceOf[Firstnote]
   }
   
-  @scala.inline
-  implicit class FirstnoteMutableBuilder[Self <: Firstnote] (val x: Self) extends AnyVal {
+  extension [Self <: Firstnote](x: Self) {
     
-    @scala.inline
-    def setFirst_note(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "first_note", value.asInstanceOf[js.Any])
+    inline def setFirst_note(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "first_note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_note(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "last_note", value.asInstanceOf[js.Any])
+    inline def setLast_note(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "last_note", value.asInstanceOf[js.Any])
   }
 }

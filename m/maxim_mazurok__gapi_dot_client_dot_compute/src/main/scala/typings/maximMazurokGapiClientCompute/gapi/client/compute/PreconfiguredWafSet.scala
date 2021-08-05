@@ -11,22 +11,17 @@ trait PreconfiguredWafSet extends StObject {
 }
 object PreconfiguredWafSet {
   
-  @scala.inline
-  def apply(): PreconfiguredWafSet = {
+  inline def apply(): PreconfiguredWafSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreconfiguredWafSet]
   }
   
-  @scala.inline
-  implicit class PreconfiguredWafSetMutableBuilder[Self <: PreconfiguredWafSet] (val x: Self) extends AnyVal {
+  extension [Self <: PreconfiguredWafSet](x: Self) {
     
-    @scala.inline
-    def setExpressionSets(value: js.Array[WafExpressionSet]): Self = StObject.set(x, "expressionSets", value.asInstanceOf[js.Any])
+    inline def setExpressionSets(value: js.Array[WafExpressionSet]): Self = StObject.set(x, "expressionSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionSetsUndefined: Self = StObject.set(x, "expressionSets", js.undefined)
+    inline def setExpressionSetsUndefined: Self = StObject.set(x, "expressionSets", js.undefined)
     
-    @scala.inline
-    def setExpressionSetsVarargs(value: WafExpressionSet*): Self = StObject.set(x, "expressionSets", js.Array(value :_*))
+    inline def setExpressionSetsVarargs(value: WafExpressionSet*): Self = StObject.set(x, "expressionSets", js.Array(value :_*))
   }
 }

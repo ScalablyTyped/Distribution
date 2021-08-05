@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterType extends StObject
 object ParameterType {
   
-  @scala.inline
-  def array: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.array = "array".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.array]
+  inline def array: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.array = "array".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.array]
   
-  @scala.inline
-  def boolean: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.boolean = "boolean".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.boolean]
+  inline def boolean: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.boolean = "boolean".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.boolean]
   
-  @scala.inline
-  def file: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.file = "file".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.file]
+  inline def file: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.file = "file".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.file]
   
-  @scala.inline
-  def integer: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer = "integer".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer]
+  inline def integer: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer = "integer".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer]
   
-  @scala.inline
-  def number: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.number = "number".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.number]
+  inline def number: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.number = "number".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.number]
   
-  @scala.inline
-  def `object`: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.`object` = "object".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.`object`]
+  inline def `object`: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.`object` = "object".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.`object`]
   
-  @scala.inline
-  def string: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string = "string".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string]
+  inline def string: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string = "string".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string]
 }

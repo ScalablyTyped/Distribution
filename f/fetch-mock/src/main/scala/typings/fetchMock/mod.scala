@@ -561,98 +561,68 @@ object mod extends Shortcut {
   }
   object MockOptions {
     
-    @scala.inline
-    def apply(): MockOptions = {
+    inline def apply(): MockOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockOptions]
     }
     
-    @scala.inline
-    implicit class MockOptionsMutableBuilder[Self <: MockOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MockOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setFunctionMatcher(value: (/* url */ String, /* opts */ MockRequest) => Boolean): Self = StObject.set(x, "functionMatcher", js.Any.fromFunction2(value))
+      inline def setFunctionMatcher(value: (/* url */ String, /* opts */ MockRequest) => Boolean): Self = StObject.set(x, "functionMatcher", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFunctionMatcherUndefined: Self = StObject.set(x, "functionMatcher", js.undefined)
+      inline def setFunctionMatcherUndefined: Self = StObject.set(x, "functionMatcher", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String | Double]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setIncludeContentLength(value: Boolean): Self = StObject.set(x, "includeContentLength", value.asInstanceOf[js.Any])
+      inline def setIncludeContentLength(value: Boolean): Self = StObject.set(x, "includeContentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeContentLengthUndefined: Self = StObject.set(x, "includeContentLength", js.undefined)
+      inline def setIncludeContentLengthUndefined: Self = StObject.set(x, "includeContentLength", js.undefined)
       
-      @scala.inline
-      def setMatcher(value: MockMatcher): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
+      inline def setMatcher(value: MockMatcher): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatcherFunction2(value: (/* url */ String, /* opts */ MockRequest) => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
+      inline def setMatcherFunction2(value: (/* url */ String, /* opts */ MockRequest) => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
+      inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOverwriteRoutes(value: Boolean): Self = StObject.set(x, "overwriteRoutes", value.asInstanceOf[js.Any])
+      inline def setOverwriteRoutes(value: Boolean): Self = StObject.set(x, "overwriteRoutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteRoutesUndefined: Self = StObject.set(x, "overwriteRoutes", js.undefined)
+      inline def setOverwriteRoutesUndefined: Self = StObject.set(x, "overwriteRoutes", js.undefined)
       
-      @scala.inline
-      def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setQuery(value: StringDictionary[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringDictionary[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+      inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
       
-      @scala.inline
-      def setResponse(value: MockResponse | MockResponseFunction): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: MockResponse | MockResponseFunction): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseFunction2(value: (/* url */ String, /* opts */ MockRequest) => MockResponse): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
+      inline def setResponseFunction2(value: (/* url */ String, /* opts */ MockRequest) => MockResponse): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      @scala.inline
-      def setSendAsJson(value: Boolean): Self = StObject.set(x, "sendAsJson", value.asInstanceOf[js.Any])
+      inline def setSendAsJson(value: Boolean): Self = StObject.set(x, "sendAsJson", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendAsJsonUndefined: Self = StObject.set(x, "sendAsJson", js.undefined)
+      inline def setSendAsJsonUndefined: Self = StObject.set(x, "sendAsJson", js.undefined)
     }
   }
   
@@ -665,20 +635,16 @@ object mod extends Shortcut {
   }
   object MockOptionsMethodDelete {
     
-    @scala.inline
-    def apply(): MockOptionsMethodDelete = {
+    inline def apply(): MockOptionsMethodDelete = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockOptionsMethodDelete]
     }
     
-    @scala.inline
-    implicit class MockOptionsMethodDeleteMutableBuilder[Self <: MockOptionsMethodDelete] (val x: Self) extends AnyVal {
+    extension [Self <: MockOptionsMethodDelete](x: Self) {
       
-      @scala.inline
-      def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
   
@@ -691,20 +657,16 @@ object mod extends Shortcut {
   }
   object MockOptionsMethodGet {
     
-    @scala.inline
-    def apply(): MockOptionsMethodGet = {
+    inline def apply(): MockOptionsMethodGet = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockOptionsMethodGet]
     }
     
-    @scala.inline
-    implicit class MockOptionsMethodGetMutableBuilder[Self <: MockOptionsMethodGet] (val x: Self) extends AnyVal {
+    extension [Self <: MockOptionsMethodGet](x: Self) {
       
-      @scala.inline
-      def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
   
@@ -717,20 +679,16 @@ object mod extends Shortcut {
   }
   object MockOptionsMethodHead {
     
-    @scala.inline
-    def apply(): MockOptionsMethodHead = {
+    inline def apply(): MockOptionsMethodHead = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockOptionsMethodHead]
     }
     
-    @scala.inline
-    implicit class MockOptionsMethodHeadMutableBuilder[Self <: MockOptionsMethodHead] (val x: Self) extends AnyVal {
+    extension [Self <: MockOptionsMethodHead](x: Self) {
       
-      @scala.inline
-      def setMethod(value: HEAD): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: HEAD): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
   
@@ -743,20 +701,16 @@ object mod extends Shortcut {
   }
   object MockOptionsMethodPost {
     
-    @scala.inline
-    def apply(): MockOptionsMethodPost = {
+    inline def apply(): MockOptionsMethodPost = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockOptionsMethodPost]
     }
     
-    @scala.inline
-    implicit class MockOptionsMethodPostMutableBuilder[Self <: MockOptionsMethodPost] (val x: Self) extends AnyVal {
+    extension [Self <: MockOptionsMethodPost](x: Self) {
       
-      @scala.inline
-      def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
   
@@ -769,20 +723,16 @@ object mod extends Shortcut {
   }
   object MockOptionsMethodPut {
     
-    @scala.inline
-    def apply(): MockOptionsMethodPut = {
+    inline def apply(): MockOptionsMethodPut = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockOptionsMethodPut]
     }
     
-    @scala.inline
-    implicit class MockOptionsMethodPutMutableBuilder[Self <: MockOptionsMethodPut] (val x: Self) extends AnyVal {
+    extension [Self <: MockOptionsMethodPut](x: Self) {
       
-      @scala.inline
-      def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
   
@@ -840,44 +790,32 @@ object mod extends Shortcut {
   }
   object MockResponseObject {
     
-    @scala.inline
-    def apply(): MockResponseObject = {
+    inline def apply(): MockResponseObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockResponseObject]
     }
     
-    @scala.inline
-    implicit class MockResponseObjectMutableBuilder[Self <: MockResponseObject] (val x: Self) extends AnyVal {
+    extension [Self <: MockResponseObject](x: Self) {
       
-      @scala.inline
-      def setBody(value: String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+      inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
+      inline def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setThrows(value: Error): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
+      inline def setThrows(value: Error): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowsUndefined: Self = StObject.set(x, "throws", js.undefined)
+      inline def setThrowsUndefined: Self = StObject.set(x, "throws", js.undefined)
     }
   }
   

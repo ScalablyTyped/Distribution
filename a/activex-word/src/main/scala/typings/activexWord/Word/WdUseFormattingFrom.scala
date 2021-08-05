@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdUseFormattingFrom extends StObject
 object WdUseFormattingFrom {
   
-  @scala.inline
-  def wdFormattingFromCurrent: `0` = 0.asInstanceOf[`0`]
+  inline def wdFormattingFromCurrent: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdFormattingFromPrompt: `2` = 2.asInstanceOf[`2`]
+  inline def wdFormattingFromPrompt: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdFormattingFromSelected: `1` = 1.asInstanceOf[`1`]
+  inline def wdFormattingFromSelected: `1` = 1.asInstanceOf[`1`]
 }

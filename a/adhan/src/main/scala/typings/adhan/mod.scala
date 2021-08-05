@@ -123,8 +123,7 @@ object mod {
   }
   object AdhanCalculationMethod {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Dubai: () => Parameter,
       Egyptian: () => Parameter,
       Karachi: () => Parameter,
@@ -141,41 +140,29 @@ object mod {
       __obj.asInstanceOf[AdhanCalculationMethod]
     }
     
-    @scala.inline
-    implicit class AdhanCalculationMethodMutableBuilder[Self <: AdhanCalculationMethod] (val x: Self) extends AnyVal {
+    extension [Self <: AdhanCalculationMethod](x: Self) {
       
-      @scala.inline
-      def setDubai(value: () => Parameter): Self = StObject.set(x, "Dubai", js.Any.fromFunction0(value))
+      inline def setDubai(value: () => Parameter): Self = StObject.set(x, "Dubai", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEgyptian(value: () => Parameter): Self = StObject.set(x, "Egyptian", js.Any.fromFunction0(value))
+      inline def setEgyptian(value: () => Parameter): Self = StObject.set(x, "Egyptian", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKarachi(value: () => Parameter): Self = StObject.set(x, "Karachi", js.Any.fromFunction0(value))
+      inline def setKarachi(value: () => Parameter): Self = StObject.set(x, "Karachi", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKuwait(value: () => Parameter): Self = StObject.set(x, "Kuwait", js.Any.fromFunction0(value))
+      inline def setKuwait(value: () => Parameter): Self = StObject.set(x, "Kuwait", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMoonsightingCommittee(value: () => Parameter): Self = StObject.set(x, "MoonsightingCommittee", js.Any.fromFunction0(value))
+      inline def setMoonsightingCommittee(value: () => Parameter): Self = StObject.set(x, "MoonsightingCommittee", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMuslimWorldLeague(value: () => Parameter): Self = StObject.set(x, "MuslimWorldLeague", js.Any.fromFunction0(value))
+      inline def setMuslimWorldLeague(value: () => Parameter): Self = StObject.set(x, "MuslimWorldLeague", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNorthAmerica(value: () => Parameter): Self = StObject.set(x, "NorthAmerica", js.Any.fromFunction0(value))
+      inline def setNorthAmerica(value: () => Parameter): Self = StObject.set(x, "NorthAmerica", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOther(value: () => Parameter): Self = StObject.set(x, "Other", js.Any.fromFunction0(value))
+      inline def setOther(value: () => Parameter): Self = StObject.set(x, "Other", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setQatar(value: () => Parameter): Self = StObject.set(x, "Qatar", js.Any.fromFunction0(value))
+      inline def setQatar(value: () => Parameter): Self = StObject.set(x, "Qatar", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSingapore(value: () => Parameter): Self = StObject.set(x, "Singapore", js.Any.fromFunction0(value))
+      inline def setSingapore(value: () => Parameter): Self = StObject.set(x, "Singapore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUmmAlQura(value: () => Parameter): Self = StObject.set(x, "UmmAlQura", js.Any.fromFunction0(value))
+      inline def setUmmAlQura(value: () => Parameter): Self = StObject.set(x, "UmmAlQura", js.Any.fromFunction0(value))
     }
   }
   
@@ -218,8 +205,7 @@ object mod {
   }
   object AdhanMath {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       degreesToRadians: Double => Double,
       normalizeToScale: (Double, Double) => Double,
       quadrantShiftAngle: Double => Double,
@@ -231,26 +217,19 @@ object mod {
       __obj.asInstanceOf[AdhanMath]
     }
     
-    @scala.inline
-    implicit class AdhanMathMutableBuilder[Self <: AdhanMath] (val x: Self) extends AnyVal {
+    extension [Self <: AdhanMath](x: Self) {
       
-      @scala.inline
-      def setDegreesToRadians(value: Double => Double): Self = StObject.set(x, "degreesToRadians", js.Any.fromFunction1(value))
+      inline def setDegreesToRadians(value: Double => Double): Self = StObject.set(x, "degreesToRadians", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNormalizeToScale(value: (Double, Double) => Double): Self = StObject.set(x, "normalizeToScale", js.Any.fromFunction2(value))
+      inline def setNormalizeToScale(value: (Double, Double) => Double): Self = StObject.set(x, "normalizeToScale", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQuadrantShiftAngle(value: Double => Double): Self = StObject.set(x, "quadrantShiftAngle", js.Any.fromFunction1(value))
+      inline def setQuadrantShiftAngle(value: Double => Double): Self = StObject.set(x, "quadrantShiftAngle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRadiansToDegrees(value: Double => Double): Self = StObject.set(x, "radiansToDegrees", js.Any.fromFunction1(value))
+      inline def setRadiansToDegrees(value: Double => Double): Self = StObject.set(x, "radiansToDegrees", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimeComponents(value: Double => Double): Self = StObject.set(x, "timeComponents", js.Any.fromFunction1(value))
+      inline def setTimeComponents(value: Double => Double): Self = StObject.set(x, "timeComponents", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnwindAngle(value: Double => Double): Self = StObject.set(x, "unwindAngle", js.Any.fromFunction1(value))
+      inline def setUnwindAngle(value: Double => Double): Self = StObject.set(x, "unwindAngle", js.Any.fromFunction1(value))
     }
   }
   
@@ -272,8 +251,7 @@ object mod {
   }
   object Parameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adjustments: Asr,
       fajrAngle: Double,
       highLatitudeRule: HighLatitudeRule,
@@ -286,29 +264,21 @@ object mod {
       __obj.asInstanceOf[Parameter]
     }
     
-    @scala.inline
-    implicit class ParameterMutableBuilder[Self <: Parameter] (val x: Self) extends AnyVal {
+    extension [Self <: Parameter](x: Self) {
       
-      @scala.inline
-      def setAdjustments(value: Asr): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
+      inline def setAdjustments(value: Asr): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFajrAngle(value: Double): Self = StObject.set(x, "fajrAngle", value.asInstanceOf[js.Any])
+      inline def setFajrAngle(value: Double): Self = StObject.set(x, "fajrAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighLatitudeRule(value: HighLatitudeRule): Self = StObject.set(x, "highLatitudeRule", value.asInstanceOf[js.Any])
+      inline def setHighLatitudeRule(value: HighLatitudeRule): Self = StObject.set(x, "highLatitudeRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIshaAngle(value: Double): Self = StObject.set(x, "ishaAngle", value.asInstanceOf[js.Any])
+      inline def setIshaAngle(value: Double): Self = StObject.set(x, "ishaAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIshaInterval(value: Double): Self = StObject.set(x, "ishaInterval", value.asInstanceOf[js.Any])
+      inline def setIshaInterval(value: Double): Self = StObject.set(x, "ishaInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMadhab(value: Madhab): Self = StObject.set(x, "madhab", value.asInstanceOf[js.Any])
+      inline def setMadhab(value: Madhab): Self = StObject.set(x, "madhab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     }
   }
   
@@ -319,10 +289,8 @@ object mod {
   trait TimeMode extends StObject
   object TimeMode {
     
-    @scala.inline
-    def `12h`: typings.adhan.adhanStrings.`12h` = "12h".asInstanceOf[typings.adhan.adhanStrings.`12h`]
+    inline def `12h`: typings.adhan.adhanStrings.`12h` = "12h".asInstanceOf[typings.adhan.adhanStrings.`12h`]
     
-    @scala.inline
-    def `24h`: typings.adhan.adhanStrings.`24h` = "24h".asInstanceOf[typings.adhan.adhanStrings.`24h`]
+    inline def `24h`: typings.adhan.adhanStrings.`24h` = "24h".asInstanceOf[typings.adhan.adhanStrings.`24h`]
   }
 }

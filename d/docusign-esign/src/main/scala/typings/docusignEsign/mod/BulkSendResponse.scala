@@ -28,43 +28,31 @@ trait BulkSendResponse extends StObject {
 }
 object BulkSendResponse {
   
-  @scala.inline
-  def apply(): BulkSendResponse = {
+  inline def apply(): BulkSendResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkSendResponse]
   }
   
-  @scala.inline
-  implicit class BulkSendResponseMutableBuilder[Self <: BulkSendResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BulkSendResponse](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setEnvelopeOrTemplateId(value: String): Self = StObject.set(x, "envelopeOrTemplateId", value.asInstanceOf[js.Any])
+    inline def setEnvelopeOrTemplateId(value: String): Self = StObject.set(x, "envelopeOrTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeOrTemplateIdUndefined: Self = StObject.set(x, "envelopeOrTemplateId", js.undefined)
+    inline def setEnvelopeOrTemplateIdUndefined: Self = StObject.set(x, "envelopeOrTemplateId", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(value: js.Array[String]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: js.Array[String]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setErrorDetailsVarargs(value: String*): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
+    inline def setErrorDetailsVarargs(value: String*): Self = StObject.set(x, "errorDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait GetBLEDeviceRSSISuccessCallbackResult extends StObject {
 }
 object GetBLEDeviceRSSISuccessCallbackResult {
   
-  @scala.inline
-  def apply(RSSI: Double, errMsg: String): GetBLEDeviceRSSISuccessCallbackResult = {
+  inline def apply(RSSI: Double, errMsg: String): GetBLEDeviceRSSISuccessCallbackResult = {
     val __obj = js.Dynamic.literal(RSSI = RSSI.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBLEDeviceRSSISuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetBLEDeviceRSSISuccessCallbackResultMutableBuilder[Self <: GetBLEDeviceRSSISuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBLEDeviceRSSISuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRSSI(value: Double): Self = StObject.set(x, "RSSI", value.asInstanceOf[js.Any])
+    inline def setRSSI(value: Double): Self = StObject.set(x, "RSSI", value.asInstanceOf[js.Any])
   }
 }

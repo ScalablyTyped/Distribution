@@ -36,43 +36,31 @@ trait LocationFilter extends StObject {
 }
 object LocationFilter {
   
-  @scala.inline
-  def apply(): LocationFilter = {
+  inline def apply(): LocationFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationFilter]
   }
   
-  @scala.inline
-  implicit class LocationFilterMutableBuilder[Self <: LocationFilter] (val x: Self) extends AnyVal {
+  extension [Self <: LocationFilter](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setDistanceInMiles(value: Double): Self = StObject.set(x, "distanceInMiles", value.asInstanceOf[js.Any])
+    inline def setDistanceInMiles(value: Double): Self = StObject.set(x, "distanceInMiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceInMilesUndefined: Self = StObject.set(x, "distanceInMiles", js.undefined)
+    inline def setDistanceInMilesUndefined: Self = StObject.set(x, "distanceInMiles", js.undefined)
     
-    @scala.inline
-    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+    inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
-    @scala.inline
-    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
     
-    @scala.inline
-    def setTelecommutePreference(value: String): Self = StObject.set(x, "telecommutePreference", value.asInstanceOf[js.Any])
+    inline def setTelecommutePreference(value: String): Self = StObject.set(x, "telecommutePreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelecommutePreferenceUndefined: Self = StObject.set(x, "telecommutePreference", js.undefined)
+    inline def setTelecommutePreferenceUndefined: Self = StObject.set(x, "telecommutePreference", js.undefined)
   }
 }

@@ -44,8 +44,7 @@ trait WorkItemQueryResult extends StObject {
 }
 object WorkItemQueryResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asOf: Date,
     columns: js.Array[WorkItemFieldReference],
     queryResultType: QueryResultType,
@@ -58,40 +57,28 @@ object WorkItemQueryResult {
     __obj.asInstanceOf[WorkItemQueryResult]
   }
   
-  @scala.inline
-  implicit class WorkItemQueryResultMutableBuilder[Self <: WorkItemQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemQueryResult](x: Self) {
     
-    @scala.inline
-    def setAsOf(value: Date): Self = StObject.set(x, "asOf", value.asInstanceOf[js.Any])
+    inline def setAsOf(value: Date): Self = StObject.set(x, "asOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryResultType(value: QueryResultType): Self = StObject.set(x, "queryResultType", value.asInstanceOf[js.Any])
+    inline def setQueryResultType(value: QueryResultType): Self = StObject.set(x, "queryResultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryType(value: QueryType): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
+    inline def setQueryType(value: QueryType): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortColumns(value: js.Array[WorkItemQuerySortColumn]): Self = StObject.set(x, "sortColumns", value.asInstanceOf[js.Any])
+    inline def setSortColumns(value: js.Array[WorkItemQuerySortColumn]): Self = StObject.set(x, "sortColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortColumnsVarargs(value: WorkItemQuerySortColumn*): Self = StObject.set(x, "sortColumns", js.Array(value :_*))
+    inline def setSortColumnsVarargs(value: WorkItemQuerySortColumn*): Self = StObject.set(x, "sortColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkItemRelations(value: js.Array[WorkItemLink]): Self = StObject.set(x, "workItemRelations", value.asInstanceOf[js.Any])
+    inline def setWorkItemRelations(value: js.Array[WorkItemLink]): Self = StObject.set(x, "workItemRelations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemRelationsVarargs(value: WorkItemLink*): Self = StObject.set(x, "workItemRelations", js.Array(value :_*))
+    inline def setWorkItemRelationsVarargs(value: WorkItemLink*): Self = StObject.set(x, "workItemRelations", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkItems(value: js.Array[WorkItemReference]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
+    inline def setWorkItems(value: js.Array[WorkItemReference]): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemsVarargs(value: WorkItemReference*): Self = StObject.set(x, "workItems", js.Array(value :_*))
+    inline def setWorkItemsVarargs(value: WorkItemReference*): Self = StObject.set(x, "workItems", js.Array(value :_*))
   }
 }

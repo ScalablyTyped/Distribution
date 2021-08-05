@@ -12,19 +12,15 @@ trait EndAt extends StObject {
 }
 object EndAt {
   
-  @scala.inline
-  def apply(endAt: String, startAt: String): EndAt = {
+  inline def apply(endAt: String, startAt: String): EndAt = {
     val __obj = js.Dynamic.literal(endAt = endAt.asInstanceOf[js.Any], startAt = startAt.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndAt]
   }
   
-  @scala.inline
-  implicit class EndAtMutableBuilder[Self <: EndAt] (val x: Self) extends AnyVal {
+  extension [Self <: EndAt](x: Self) {
     
-    @scala.inline
-    def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
+    inline def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+    inline def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
   }
 }

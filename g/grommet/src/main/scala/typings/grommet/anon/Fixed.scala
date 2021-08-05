@@ -18,49 +18,35 @@ trait Fixed extends StObject {
 }
 object Fixed {
   
-  @scala.inline
-  def apply(): Fixed = {
+  inline def apply(): Fixed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fixed]
   }
   
-  @scala.inline
-  implicit class FixedMutableBuilder[Self <: Fixed] (val x: Self) extends AnyVal {
+  extension [Self <: Fixed](x: Self) {
     
-    @scala.inline
-    def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+    inline def setFixed(value: String): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+    inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double | js.Array[Double]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double | js.Array[Double]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setLengthVarargs(value: Double*): Self = StObject.set(x, "length", js.Array(value :_*))
+    inline def setLengthVarargs(value: Double*): Self = StObject.set(x, "length", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: js.Array[Double | String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[Double | String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: (Double | String)*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: (Double | String)*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setRegexp(value: js.Object): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
+    inline def setRegexp(value: js.Object): Self = StObject.set(x, "regexp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
+    inline def setRegexpUndefined: Self = StObject.set(x, "regexp", js.undefined)
   }
 }

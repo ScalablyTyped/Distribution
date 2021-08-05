@@ -17,20 +17,16 @@ trait Limit extends StObject {
 }
 object Limit {
   
-  @scala.inline
-  def apply(limit: Double | String, `type`: TIAS | AS | CT | RR | RS): Limit = {
+  inline def apply(limit: Double | String, `type`: TIAS | AS | CT | RR | RS): Limit = {
     val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limit]
   }
   
-  @scala.inline
-  implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
+  extension [Self <: Limit](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TIAS | AS | CT | RR | RS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TIAS | AS | CT | RR | RS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

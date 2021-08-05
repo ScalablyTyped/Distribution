@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(transformer: ChangeFunction): MapStream = ^.asInstanceOf[js.Dynamic].apply(transformer.asInstanceOf[js.Any]).asInstanceOf[MapStream]
+  inline def apply(transformer: ChangeFunction): MapStream = ^.asInstanceOf[js.Dynamic].apply(transformer.asInstanceOf[js.Any]).asInstanceOf[MapStream]
   
   @JSImport("gulp-change", JSImport.Namespace)
   @js.native

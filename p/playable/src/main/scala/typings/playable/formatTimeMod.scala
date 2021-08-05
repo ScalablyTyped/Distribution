@@ -10,6 +10,5 @@ object formatTimeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(seconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(seconds.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(seconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(seconds.asInstanceOf[js.Any]).asInstanceOf[String]
 }

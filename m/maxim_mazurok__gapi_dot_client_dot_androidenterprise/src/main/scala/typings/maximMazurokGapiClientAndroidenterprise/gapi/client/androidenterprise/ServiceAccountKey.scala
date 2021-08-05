@@ -23,37 +23,27 @@ trait ServiceAccountKey extends StObject {
 }
 object ServiceAccountKey {
   
-  @scala.inline
-  def apply(): ServiceAccountKey = {
+  inline def apply(): ServiceAccountKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceAccountKey]
   }
   
-  @scala.inline
-  implicit class ServiceAccountKeyMutableBuilder[Self <: ServiceAccountKey] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccountKey](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPublicData(value: String): Self = StObject.set(x, "publicData", value.asInstanceOf[js.Any])
+    inline def setPublicData(value: String): Self = StObject.set(x, "publicData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicDataUndefined: Self = StObject.set(x, "publicData", js.undefined)
+    inline def setPublicDataUndefined: Self = StObject.set(x, "publicData", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait ListImagesFilter extends StObject {
 }
 object ListImagesFilter {
   
-  @scala.inline
-  def apply(): ListImagesFilter = {
+  inline def apply(): ListImagesFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListImagesFilter]
   }
   
-  @scala.inline
-  implicit class ListImagesFilterMutableBuilder[Self <: ListImagesFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ListImagesFilter](x: Self) {
     
-    @scala.inline
-    def setTagStatus(value: TagStatus): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
+    inline def setTagStatus(value: TagStatus): Self = StObject.set(x, "tagStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagStatusUndefined: Self = StObject.set(x, "tagStatus", js.undefined)
+    inline def setTagStatusUndefined: Self = StObject.set(x, "tagStatus", js.undefined)
   }
 }

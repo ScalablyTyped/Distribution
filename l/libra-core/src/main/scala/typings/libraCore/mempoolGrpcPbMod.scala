@@ -144,8 +144,7 @@ object mempoolGrpcPbMod {
   }
   object IMempoolServer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addTransactionWithValidation: (/* call */ ServerUnaryCall[AddTransactionWithValidationRequest], /* callback */ sendUnaryData[AddTransactionWithValidationResponse]) => Unit,
       commitTransactions: (/* call */ ServerUnaryCall[CommitTransactionsRequest], /* callback */ sendUnaryData[CommitTransactionsResponse]) => Unit,
       getBlock: (/* call */ ServerUnaryCall[GetBlockRequest], /* callback */ sendUnaryData[GetBlockResponse]) => Unit,
@@ -155,26 +154,21 @@ object mempoolGrpcPbMod {
       __obj.asInstanceOf[IMempoolServer]
     }
     
-    @scala.inline
-    implicit class IMempoolServerMutableBuilder[Self <: IMempoolServer] (val x: Self) extends AnyVal {
+    extension [Self <: IMempoolServer](x: Self) {
       
-      @scala.inline
-      def setAddTransactionWithValidation(
+      inline def setAddTransactionWithValidation(
         value: (/* call */ ServerUnaryCall[AddTransactionWithValidationRequest], /* callback */ sendUnaryData[AddTransactionWithValidationResponse]) => Unit
       ): Self = StObject.set(x, "addTransactionWithValidation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCommitTransactions(
+      inline def setCommitTransactions(
         value: (/* call */ ServerUnaryCall[CommitTransactionsRequest], /* callback */ sendUnaryData[CommitTransactionsResponse]) => Unit
       ): Self = StObject.set(x, "commitTransactions", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetBlock(
+      inline def setGetBlock(
         value: (/* call */ ServerUnaryCall[GetBlockRequest], /* callback */ sendUnaryData[GetBlockResponse]) => Unit
       ): Self = StObject.set(x, "getBlock", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHealthCheck(
+      inline def setHealthCheck(
         value: (/* call */ ServerUnaryCall[HealthCheckRequest], /* callback */ sendUnaryData[HealthCheckResponse]) => Unit
       ): Self = StObject.set(x, "healthCheck", js.Any.fromFunction2(value))
     }
@@ -193,8 +187,7 @@ object mempoolGrpcPbMod {
   }
   object IMempoolService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addTransactionWithValidation: IMempoolServiceIAddTransactionWithValidation,
       commitTransactions: IMempoolServiceICommitTransactions,
       getBlock: IMempoolServiceIGetBlock,
@@ -204,20 +197,15 @@ object mempoolGrpcPbMod {
       __obj.asInstanceOf[IMempoolService]
     }
     
-    @scala.inline
-    implicit class IMempoolServiceMutableBuilder[Self <: IMempoolService] (val x: Self) extends AnyVal {
+    extension [Self <: IMempoolService](x: Self) {
       
-      @scala.inline
-      def setAddTransactionWithValidation(value: IMempoolServiceIAddTransactionWithValidation): Self = StObject.set(x, "addTransactionWithValidation", value.asInstanceOf[js.Any])
+      inline def setAddTransactionWithValidation(value: IMempoolServiceIAddTransactionWithValidation): Self = StObject.set(x, "addTransactionWithValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitTransactions(value: IMempoolServiceICommitTransactions): Self = StObject.set(x, "commitTransactions", value.asInstanceOf[js.Any])
+      inline def setCommitTransactions(value: IMempoolServiceICommitTransactions): Self = StObject.set(x, "commitTransactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetBlock(value: IMempoolServiceIGetBlock): Self = StObject.set(x, "getBlock", value.asInstanceOf[js.Any])
+      inline def setGetBlock(value: IMempoolServiceIGetBlock): Self = StObject.set(x, "getBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheck(value: IMempoolServiceIHealthCheck): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+      inline def setHealthCheck(value: IMempoolServiceIHealthCheck): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,8 +214,7 @@ object mempoolGrpcPbMod {
        with MethodDefinition[AddTransactionWithValidationRequest, AddTransactionWithValidationResponse]
   object IMempoolServiceIAddTransactionWithValidation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       path: String,
       requestDeserialize: /* data */ Buffer => AddTransactionWithValidationRequest,
       requestSerialize: AddTransactionWithValidationRequest => Buffer,
@@ -246,8 +233,7 @@ object mempoolGrpcPbMod {
        with MethodDefinition[CommitTransactionsRequest, CommitTransactionsResponse]
   object IMempoolServiceICommitTransactions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       path: String,
       requestDeserialize: /* data */ Buffer => CommitTransactionsRequest,
       requestSerialize: CommitTransactionsRequest => Buffer,
@@ -266,8 +252,7 @@ object mempoolGrpcPbMod {
        with MethodDefinition[GetBlockRequest, GetBlockResponse]
   object IMempoolServiceIGetBlock {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       path: String,
       requestDeserialize: /* data */ Buffer => GetBlockRequest,
       requestSerialize: GetBlockRequest => Buffer,
@@ -286,8 +271,7 @@ object mempoolGrpcPbMod {
        with MethodDefinition[HealthCheckRequest, HealthCheckResponse]
   object IMempoolServiceIHealthCheck {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       path: String,
       requestDeserialize: /* data */ Buffer => HealthCheckRequest,
       requestSerialize: HealthCheckRequest => Buffer,

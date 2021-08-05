@@ -11,16 +11,13 @@ trait RowHeaderCellRenderer extends StObject {
 }
 object RowHeaderCellRenderer {
   
-  @scala.inline
-  def apply(rowHeaderCellRenderer: /* rowIndex */ Double => Element): RowHeaderCellRenderer = {
+  inline def apply(rowHeaderCellRenderer: /* rowIndex */ Double => Element): RowHeaderCellRenderer = {
     val __obj = js.Dynamic.literal(rowHeaderCellRenderer = js.Any.fromFunction1(rowHeaderCellRenderer))
     __obj.asInstanceOf[RowHeaderCellRenderer]
   }
   
-  @scala.inline
-  implicit class RowHeaderCellRendererMutableBuilder[Self <: RowHeaderCellRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: RowHeaderCellRenderer](x: Self) {
     
-    @scala.inline
-    def setRowHeaderCellRenderer(value: /* rowIndex */ Double => Element): Self = StObject.set(x, "rowHeaderCellRenderer", js.Any.fromFunction1(value))
+    inline def setRowHeaderCellRenderer(value: /* rowIndex */ Double => Element): Self = StObject.set(x, "rowHeaderCellRenderer", js.Any.fromFunction1(value))
   }
 }

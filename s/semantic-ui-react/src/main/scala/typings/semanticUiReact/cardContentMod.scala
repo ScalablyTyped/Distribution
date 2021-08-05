@@ -31,8 +31,7 @@ object cardContentMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object CardContentProps {
     
-    @scala.inline
-    def apply(): CardContentProps = {
+    inline def apply(): CardContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardContentProps]
     }
@@ -69,83 +68,60 @@ object cardContentMod extends Shortcut {
   }
   object StrictCardContentProps {
     
-    @scala.inline
-    def apply(): StrictCardContentProps = {
+    inline def apply(): StrictCardContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictCardContentProps]
     }
     
-    @scala.inline
-    implicit class StrictCardContentPropsMutableBuilder[Self <: StrictCardContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictCardContentProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDescription(value: SemanticShorthandItem[CardDescriptionProps]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: SemanticShorthandItem[CardDescriptionProps]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionFunction3(
+      inline def setDescriptionFunction3(
         value: (/* component */ ElementType[CardDescriptionProps], CardDescriptionProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "description", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExtra(value: Boolean): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: Boolean): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setHeader(value: SemanticShorthandItem[CardHeaderProps]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: SemanticShorthandItem[CardHeaderProps]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderFunction3(
+      inline def setHeaderFunction3(
         value: (/* component */ ElementType[CardHeaderProps], CardHeaderProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "header", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setMeta(value: SemanticShorthandItem[CardMetaProps]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: SemanticShorthandItem[CardMetaProps]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaFunction3(
+      inline def setMetaFunction3(
         value: (/* component */ ElementType[CardMetaProps], CardMetaProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "meta", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: center | left | right): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     }
   }
   

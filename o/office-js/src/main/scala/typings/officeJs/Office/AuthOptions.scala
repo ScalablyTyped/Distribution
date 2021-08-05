@@ -62,55 +62,39 @@ trait AuthOptions extends StObject {
 }
 object AuthOptions {
   
-  @scala.inline
-  def apply(): AuthOptions = {
+  inline def apply(): AuthOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthOptions]
   }
   
-  @scala.inline
-  implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthOptions](x: Self) {
     
-    @scala.inline
-    def setAllowConsentPrompt(value: Boolean): Self = StObject.set(x, "allowConsentPrompt", value.asInstanceOf[js.Any])
+    inline def setAllowConsentPrompt(value: Boolean): Self = StObject.set(x, "allowConsentPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowConsentPromptUndefined: Self = StObject.set(x, "allowConsentPrompt", js.undefined)
+    inline def setAllowConsentPromptUndefined: Self = StObject.set(x, "allowConsentPrompt", js.undefined)
     
-    @scala.inline
-    def setAllowSignInPrompt(value: Boolean): Self = StObject.set(x, "allowSignInPrompt", value.asInstanceOf[js.Any])
+    inline def setAllowSignInPrompt(value: Boolean): Self = StObject.set(x, "allowSignInPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSignInPromptUndefined: Self = StObject.set(x, "allowSignInPrompt", js.undefined)
+    inline def setAllowSignInPromptUndefined: Self = StObject.set(x, "allowSignInPrompt", js.undefined)
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setAuthChallenge(value: String): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
+    inline def setAuthChallenge(value: String): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthChallengeUndefined: Self = StObject.set(x, "authChallenge", js.undefined)
+    inline def setAuthChallengeUndefined: Self = StObject.set(x, "authChallenge", js.undefined)
     
-    @scala.inline
-    def setForMSGraphAccess(value: Boolean): Self = StObject.set(x, "forMSGraphAccess", value.asInstanceOf[js.Any])
+    inline def setForMSGraphAccess(value: Boolean): Self = StObject.set(x, "forMSGraphAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForMSGraphAccessUndefined: Self = StObject.set(x, "forMSGraphAccess", js.undefined)
+    inline def setForMSGraphAccessUndefined: Self = StObject.set(x, "forMSGraphAccess", js.undefined)
     
-    @scala.inline
-    def setForceAddAccount(value: Boolean): Self = StObject.set(x, "forceAddAccount", value.asInstanceOf[js.Any])
+    inline def setForceAddAccount(value: Boolean): Self = StObject.set(x, "forceAddAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceAddAccountUndefined: Self = StObject.set(x, "forceAddAccount", js.undefined)
+    inline def setForceAddAccountUndefined: Self = StObject.set(x, "forceAddAccount", js.undefined)
     
-    @scala.inline
-    def setForceConsent(value: Boolean): Self = StObject.set(x, "forceConsent", value.asInstanceOf[js.Any])
+    inline def setForceConsent(value: Boolean): Self = StObject.set(x, "forceConsent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceConsentUndefined: Self = StObject.set(x, "forceConsent", js.undefined)
+    inline def setForceConsentUndefined: Self = StObject.set(x, "forceConsent", js.undefined)
   }
 }

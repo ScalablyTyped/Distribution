@@ -14,25 +14,19 @@ trait CloudRunConfig extends StObject {
 }
 object CloudRunConfig {
   
-  @scala.inline
-  def apply(): CloudRunConfig = {
+  inline def apply(): CloudRunConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudRunConfig]
   }
   
-  @scala.inline
-  implicit class CloudRunConfigMutableBuilder[Self <: CloudRunConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CloudRunConfig](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerType(value: String): Self = StObject.set(x, "loadBalancerType", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerType(value: String): Self = StObject.set(x, "loadBalancerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerTypeUndefined: Self = StObject.set(x, "loadBalancerType", js.undefined)
+    inline def setLoadBalancerTypeUndefined: Self = StObject.set(x, "loadBalancerType", js.undefined)
   }
 }

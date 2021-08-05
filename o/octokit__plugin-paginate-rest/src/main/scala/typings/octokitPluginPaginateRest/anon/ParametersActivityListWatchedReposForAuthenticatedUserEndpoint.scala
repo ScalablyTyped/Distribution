@@ -15,8 +15,7 @@ trait ParametersActivityListWatchedReposForAuthenticatedUserEndpoint extends StO
 }
 object ParametersActivityListWatchedReposForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListWatchedReposForAuthenticatedUserEndpoint,
     response: OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]
   ): ParametersActivityListWatchedReposForAuthenticatedUserEndpoint = {
@@ -24,13 +23,10 @@ object ParametersActivityListWatchedReposForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersActivityListWatchedReposForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListWatchedReposForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListWatchedReposForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListWatchedReposForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActivityListWatchedReposForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

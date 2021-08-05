@@ -16,19 +16,15 @@ trait SchemaAcceptProposalRequest extends StObject {
 }
 object SchemaAcceptProposalRequest {
   
-  @scala.inline
-  def apply(): SchemaAcceptProposalRequest = {
+  inline def apply(): SchemaAcceptProposalRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAcceptProposalRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAcceptProposalRequestMutableBuilder[Self <: SchemaAcceptProposalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAcceptProposalRequest](x: Self) {
     
-    @scala.inline
-    def setProposalRevision(value: String): Self = StObject.set(x, "proposalRevision", value.asInstanceOf[js.Any])
+    inline def setProposalRevision(value: String): Self = StObject.set(x, "proposalRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalRevisionUndefined: Self = StObject.set(x, "proposalRevision", js.undefined)
+    inline def setProposalRevisionUndefined: Self = StObject.set(x, "proposalRevision", js.undefined)
   }
 }

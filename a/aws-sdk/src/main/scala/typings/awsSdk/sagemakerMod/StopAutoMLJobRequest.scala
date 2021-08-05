@@ -13,16 +13,13 @@ trait StopAutoMLJobRequest extends StObject {
 }
 object StopAutoMLJobRequest {
   
-  @scala.inline
-  def apply(AutoMLJobName: AutoMLJobName): StopAutoMLJobRequest = {
+  inline def apply(AutoMLJobName: AutoMLJobName): StopAutoMLJobRequest = {
     val __obj = js.Dynamic.literal(AutoMLJobName = AutoMLJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopAutoMLJobRequest]
   }
   
-  @scala.inline
-  implicit class StopAutoMLJobRequestMutableBuilder[Self <: StopAutoMLJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopAutoMLJobRequest](x: Self) {
     
-    @scala.inline
-    def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
+    inline def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
   }
 }

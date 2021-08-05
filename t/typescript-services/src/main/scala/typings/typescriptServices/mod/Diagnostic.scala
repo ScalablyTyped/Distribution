@@ -44,25 +44,25 @@ class Diagnostic protected ()
     additionalLocations: js.Array[typings.typescriptServices.TypeScript.Location]
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _additionalLocations: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _arguments: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _diagnosticKey: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _fileName: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _length: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _lineMap: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _start: js.Any = js.native
   
   /* CompleteClass */
@@ -111,8 +111,7 @@ object Diagnostic {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def equals_(
+  inline def equals_(
     diagnostic1: typings.typescriptServices.TypeScript.Diagnostic,
     diagnostic2: typings.typescriptServices.TypeScript.Diagnostic
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(diagnostic1.asInstanceOf[js.Any], diagnostic2.asInstanceOf[js.Any])).asInstanceOf[Boolean]

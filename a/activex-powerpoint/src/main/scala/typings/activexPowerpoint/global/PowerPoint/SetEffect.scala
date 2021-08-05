@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.SetEffect")
 @js.native
-class SetEffect protected ()
+/* private */ class SetEffect ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.SetEffect {
   
@@ -17,7 +17,7 @@ class SetEffect protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.SetEffect_typekey")
   var PowerPointDotSetEffect_typekey: typings.activexPowerpoint.PowerPoint.SetEffect = js.native
   

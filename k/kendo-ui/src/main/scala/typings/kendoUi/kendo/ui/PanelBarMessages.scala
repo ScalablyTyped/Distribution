@@ -14,31 +14,23 @@ trait PanelBarMessages extends StObject {
 }
 object PanelBarMessages {
   
-  @scala.inline
-  def apply(): PanelBarMessages = {
+  inline def apply(): PanelBarMessages = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PanelBarMessages]
   }
   
-  @scala.inline
-  implicit class PanelBarMessagesMutableBuilder[Self <: PanelBarMessages] (val x: Self) extends AnyVal {
+  extension [Self <: PanelBarMessages](x: Self) {
     
-    @scala.inline
-    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    @scala.inline
-    def setRequestFailed(value: String): Self = StObject.set(x, "requestFailed", value.asInstanceOf[js.Any])
+    inline def setRequestFailed(value: String): Self = StObject.set(x, "requestFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestFailedUndefined: Self = StObject.set(x, "requestFailed", js.undefined)
+    inline def setRequestFailedUndefined: Self = StObject.set(x, "requestFailed", js.undefined)
     
-    @scala.inline
-    def setRetry(value: String): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: String): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+    inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
   }
 }

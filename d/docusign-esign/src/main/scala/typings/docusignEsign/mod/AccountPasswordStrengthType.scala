@@ -13,22 +13,17 @@ trait AccountPasswordStrengthType extends StObject {
 }
 object AccountPasswordStrengthType {
   
-  @scala.inline
-  def apply(): AccountPasswordStrengthType = {
+  inline def apply(): AccountPasswordStrengthType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountPasswordStrengthType]
   }
   
-  @scala.inline
-  implicit class AccountPasswordStrengthTypeMutableBuilder[Self <: AccountPasswordStrengthType] (val x: Self) extends AnyVal {
+  extension [Self <: AccountPasswordStrengthType](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Array[AccountPasswordStrengthTypeOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[AccountPasswordStrengthTypeOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: AccountPasswordStrengthTypeOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: AccountPasswordStrengthTypeOption*): Self = StObject.set(x, "options", js.Array(value :_*))
   }
 }

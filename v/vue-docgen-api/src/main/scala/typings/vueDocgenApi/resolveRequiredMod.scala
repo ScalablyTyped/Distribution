@@ -12,10 +12,8 @@ object resolveRequiredMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(ast: File_): ImportedVariableSet = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any]).asInstanceOf[ImportedVariableSet]
-  @scala.inline
-  def default(ast: File_, varNameFilter: js.Array[String]): ImportedVariableSet = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], varNameFilter.asInstanceOf[js.Any])).asInstanceOf[ImportedVariableSet]
+  inline def default(ast: File_): ImportedVariableSet = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any]).asInstanceOf[ImportedVariableSet]
+  inline def default(ast: File_, varNameFilter: js.Array[String]): ImportedVariableSet = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], varNameFilter.asInstanceOf[js.Any])).asInstanceOf[ImportedVariableSet]
   
   trait ImportedVariable extends StObject {
     
@@ -25,23 +23,18 @@ object resolveRequiredMod {
   }
   object ImportedVariable {
     
-    @scala.inline
-    def apply(exportName: String, filePath: js.Array[String]): ImportedVariable = {
+    inline def apply(exportName: String, filePath: js.Array[String]): ImportedVariable = {
       val __obj = js.Dynamic.literal(exportName = exportName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImportedVariable]
     }
     
-    @scala.inline
-    implicit class ImportedVariableMutableBuilder[Self <: ImportedVariable] (val x: Self) extends AnyVal {
+    extension [Self <: ImportedVariable](x: Self) {
       
-      @scala.inline
-      def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
+      inline def setExportName(value: String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: js.Array[String]): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: js.Array[String]): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePathVarargs(value: String*): Self = StObject.set(x, "filePath", js.Array(value :_*))
+      inline def setFilePathVarargs(value: String*): Self = StObject.set(x, "filePath", js.Array(value :_*))
     }
   }
   

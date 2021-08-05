@@ -8,16 +8,13 @@ object grayPercentageStrings {
   
   @js.native
   sealed trait cool extends StObject
-  @scala.inline
-  def cool: cool = "cool".asInstanceOf[cool]
+  inline def cool: cool = "cool".asInstanceOf[cool]
   
   @js.native
   sealed trait slate extends StObject
-  @scala.inline
-  def slate: slate = "slate".asInstanceOf[slate]
+  inline def slate: slate = "slate".asInstanceOf[slate]
   
   @js.native
   sealed trait warm extends StObject
-  @scala.inline
-  def warm: warm = "warm".asInstanceOf[warm]
+  inline def warm: warm = "warm".asInstanceOf[warm]
 }

@@ -26,23 +26,18 @@ object typesContinuousBackupsDescriptionMod {
   }
   object ContinuousBackupsDescription {
     
-    @scala.inline
-    def apply(ContinuousBackupsStatus: ENABLED | DISABLED | String): ContinuousBackupsDescription = {
+    inline def apply(ContinuousBackupsStatus: ENABLED | DISABLED | String): ContinuousBackupsDescription = {
       val __obj = js.Dynamic.literal(ContinuousBackupsStatus = ContinuousBackupsStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContinuousBackupsDescription]
     }
     
-    @scala.inline
-    implicit class ContinuousBackupsDescriptionMutableBuilder[Self <: ContinuousBackupsDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ContinuousBackupsDescription](x: Self) {
       
-      @scala.inline
-      def setContinuousBackupsStatus(value: ENABLED | DISABLED | String): Self = StObject.set(x, "ContinuousBackupsStatus", value.asInstanceOf[js.Any])
+      inline def setContinuousBackupsStatus(value: ENABLED | DISABLED | String): Self = StObject.set(x, "ContinuousBackupsStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointInTimeRecoveryDescription(value: PointInTimeRecoveryDescription): Self = StObject.set(x, "PointInTimeRecoveryDescription", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecoveryDescription(value: PointInTimeRecoveryDescription): Self = StObject.set(x, "PointInTimeRecoveryDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointInTimeRecoveryDescriptionUndefined: Self = StObject.set(x, "PointInTimeRecoveryDescription", js.undefined)
+      inline def setPointInTimeRecoveryDescriptionUndefined: Self = StObject.set(x, "PointInTimeRecoveryDescription", js.undefined)
     }
   }
   
@@ -58,20 +53,16 @@ object typesContinuousBackupsDescriptionMod {
   }
   object UnmarshalledContinuousBackupsDescription {
     
-    @scala.inline
-    def apply(ContinuousBackupsStatus: ENABLED | DISABLED | String): UnmarshalledContinuousBackupsDescription = {
+    inline def apply(ContinuousBackupsStatus: ENABLED | DISABLED | String): UnmarshalledContinuousBackupsDescription = {
       val __obj = js.Dynamic.literal(ContinuousBackupsStatus = ContinuousBackupsStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnmarshalledContinuousBackupsDescription]
     }
     
-    @scala.inline
-    implicit class UnmarshalledContinuousBackupsDescriptionMutableBuilder[Self <: UnmarshalledContinuousBackupsDescription] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledContinuousBackupsDescription](x: Self) {
       
-      @scala.inline
-      def setPointInTimeRecoveryDescription(value: UnmarshalledPointInTimeRecoveryDescription): Self = StObject.set(x, "PointInTimeRecoveryDescription", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecoveryDescription(value: UnmarshalledPointInTimeRecoveryDescription): Self = StObject.set(x, "PointInTimeRecoveryDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointInTimeRecoveryDescriptionUndefined: Self = StObject.set(x, "PointInTimeRecoveryDescription", js.undefined)
+      inline def setPointInTimeRecoveryDescriptionUndefined: Self = StObject.set(x, "PointInTimeRecoveryDescription", js.undefined)
     }
   }
 }

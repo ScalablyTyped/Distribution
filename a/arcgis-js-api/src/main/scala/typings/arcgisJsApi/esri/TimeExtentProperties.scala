@@ -22,25 +22,19 @@ trait TimeExtentProperties extends StObject {
 }
 object TimeExtentProperties {
   
-  @scala.inline
-  def apply(): TimeExtentProperties = {
+  inline def apply(): TimeExtentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeExtentProperties]
   }
   
-  @scala.inline
-  implicit class TimeExtentPropertiesMutableBuilder[Self <: TimeExtentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TimeExtentProperties](x: Self) {
     
-    @scala.inline
-    def setEnd(value: DateProperties): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: DateProperties): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: DateProperties): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: DateProperties): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

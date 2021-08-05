@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlertType extends StObject
 object AlertType {
   
-  @scala.inline
-  def error: typings.reactElemental.reactElementalStrings.error = "error".asInstanceOf[typings.reactElemental.reactElementalStrings.error]
+  inline def error: typings.reactElemental.reactElementalStrings.error = "error".asInstanceOf[typings.reactElemental.reactElementalStrings.error]
   
-  @scala.inline
-  def info: typings.reactElemental.reactElementalStrings.info = "info".asInstanceOf[typings.reactElemental.reactElementalStrings.info]
+  inline def info: typings.reactElemental.reactElementalStrings.info = "info".asInstanceOf[typings.reactElemental.reactElementalStrings.info]
   
-  @scala.inline
-  def success: typings.reactElemental.reactElementalStrings.success = "success".asInstanceOf[typings.reactElemental.reactElementalStrings.success]
+  inline def success: typings.reactElemental.reactElementalStrings.success = "success".asInstanceOf[typings.reactElemental.reactElementalStrings.success]
   
-  @scala.inline
-  def warn: typings.reactElemental.reactElementalStrings.warn = "warn".asInstanceOf[typings.reactElemental.reactElementalStrings.warn]
+  inline def warn: typings.reactElemental.reactElementalStrings.warn = "warn".asInstanceOf[typings.reactElemental.reactElementalStrings.warn]
 }

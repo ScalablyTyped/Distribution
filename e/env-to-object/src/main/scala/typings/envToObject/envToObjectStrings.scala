@@ -8,11 +8,9 @@ object envToObjectStrings {
   
   @js.native
   sealed trait boolean extends StObject
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait integer extends StObject
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
+  inline def integer: integer = "integer".asInstanceOf[integer]
 }

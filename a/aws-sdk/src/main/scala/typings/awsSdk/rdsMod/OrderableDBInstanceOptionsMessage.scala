@@ -18,28 +18,21 @@ trait OrderableDBInstanceOptionsMessage extends StObject {
 }
 object OrderableDBInstanceOptionsMessage {
   
-  @scala.inline
-  def apply(): OrderableDBInstanceOptionsMessage = {
+  inline def apply(): OrderableDBInstanceOptionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderableDBInstanceOptionsMessage]
   }
   
-  @scala.inline
-  implicit class OrderableDBInstanceOptionsMessageMutableBuilder[Self <: OrderableDBInstanceOptionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: OrderableDBInstanceOptionsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setOrderableDBInstanceOptions(value: OrderableDBInstanceOptionsList): Self = StObject.set(x, "OrderableDBInstanceOptions", value.asInstanceOf[js.Any])
+    inline def setOrderableDBInstanceOptions(value: OrderableDBInstanceOptionsList): Self = StObject.set(x, "OrderableDBInstanceOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderableDBInstanceOptionsUndefined: Self = StObject.set(x, "OrderableDBInstanceOptions", js.undefined)
+    inline def setOrderableDBInstanceOptionsUndefined: Self = StObject.set(x, "OrderableDBInstanceOptions", js.undefined)
     
-    @scala.inline
-    def setOrderableDBInstanceOptionsVarargs(value: OrderableDBInstanceOption*): Self = StObject.set(x, "OrderableDBInstanceOptions", js.Array(value :_*))
+    inline def setOrderableDBInstanceOptionsVarargs(value: OrderableDBInstanceOption*): Self = StObject.set(x, "OrderableDBInstanceOptions", js.Array(value :_*))
   }
 }

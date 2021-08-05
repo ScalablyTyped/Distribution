@@ -14,19 +14,15 @@ trait OnActiveCellChangedEventArgs[T /* <: SlickData */]
 }
 object OnActiveCellChangedEventArgs {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](cell: Double, grid: Grid[T], row: Double): OnActiveCellChangedEventArgs[T] = {
+  inline def apply[T /* <: SlickData */](cell: Double, grid: Grid[T], row: Double): OnActiveCellChangedEventArgs[T] = {
     val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnActiveCellChangedEventArgs[T]]
   }
   
-  @scala.inline
-  implicit class OnActiveCellChangedEventArgsMutableBuilder[Self <: OnActiveCellChangedEventArgs[?], T /* <: SlickData */] (val x: Self & OnActiveCellChangedEventArgs[T]) extends AnyVal {
+  extension [Self <: OnActiveCellChangedEventArgs[?], T /* <: SlickData */](x: Self & OnActiveCellChangedEventArgs[T]) {
     
-    @scala.inline
-    def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }
 }

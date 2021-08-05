@@ -88,8 +88,7 @@ object ReferenceSetSelector {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def create(model: IModel): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -100,8 +99,7 @@ object ReferenceSetSelector {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInBuildingBlockUnderWidget(container: BuildingBlock): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -112,8 +110,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -124,8 +121,7 @@ object ReferenceSetSelector {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInDataViewUnderFooterWidget(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -136,8 +132,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidgets(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInDataViewUnderFooterWidgets(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -148,8 +143,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInDataViewUnderWidget(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -160,8 +154,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidgets(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInDataViewUnderWidgets(container: DataView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -172,8 +165,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInDivContainerUnderWidget(container: DivContainer): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -184,8 +176,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidgets(container: DivContainer): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInDivContainerUnderWidgets(container: DivContainer): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -196,8 +187,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -208,8 +198,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidgets(container: GroupBox): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInGroupBoxUnderWidgets(container: GroupBox): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -220,8 +209,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInHeaderUnderLeftWidget(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -232,8 +220,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidgets(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInHeaderUnderLeftWidgets(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -244,8 +231,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInHeaderUnderRightWidget(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -256,8 +242,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidgets(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInHeaderUnderRightWidgets(container: Header): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -268,8 +253,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -280,8 +264,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -292,8 +275,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -304,8 +286,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -316,8 +297,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInLayoutUnderWidget(container: Layout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -328,8 +308,7 @@ object ReferenceSetSelector {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidgets(container: Layout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInLayoutUnderWidgets(container: Layout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -340,8 +319,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -352,8 +330,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -364,8 +341,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInListViewUnderWidget(container: ListView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -376,8 +352,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidgets(container: ListView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInListViewUnderWidgets(container: ListView): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -388,8 +363,7 @@ object ReferenceSetSelector {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -400,8 +374,7 @@ object ReferenceSetSelector {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -412,8 +385,7 @@ object ReferenceSetSelector {
     *  8.5.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -424,8 +396,7 @@ object ReferenceSetSelector {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -436,8 +407,7 @@ object ReferenceSetSelector {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -448,8 +418,7 @@ object ReferenceSetSelector {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInNativeLayoutUnderWidgets(container: NativeLayout): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -460,8 +429,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -472,8 +440,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -484,8 +451,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -496,8 +462,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -508,8 +473,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -520,8 +484,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -532,8 +495,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInSnippetUnderWidget(container: Snippet): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -544,8 +506,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidgets(container: Snippet): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInSnippetUnderWidgets(container: Snippet): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -556,8 +517,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -568,8 +528,7 @@ object ReferenceSetSelector {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -580,8 +539,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -592,8 +550,7 @@ object ReferenceSetSelector {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -604,8 +561,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInTabPageUnderWidget(container: TabPage): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -616,8 +572,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidgets(container: TabPage): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInTabPageUnderWidgets(container: TabPage): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -628,8 +583,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInTableCellUnderWidget(container: TableCell): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -640,8 +594,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidgets(container: TableCell): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInTableCellUnderWidgets(container: TableCell): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -652,8 +605,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -664,8 +616,7 @@ object ReferenceSetSelector {
     *  7.15.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -676,8 +627,7 @@ object ReferenceSetSelector {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -688,8 +638,7 @@ object ReferenceSetSelector {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /**
     * Creates and returns a new ReferenceSetSelector instance in the SDK and on the server.
@@ -700,20 +649,17 @@ object ReferenceSetSelector {
     *  8.2.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderWidgets(container: WidgetValue): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
+  inline def createInWidgetValueUnderWidgets(container: WidgetValue): ReferenceSetSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[ReferenceSetSelector]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ReferenceSetSelector.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

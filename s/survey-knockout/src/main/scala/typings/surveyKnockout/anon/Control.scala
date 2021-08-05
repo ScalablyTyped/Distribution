@@ -16,25 +16,19 @@ trait Control extends StObject {
 }
 object Control {
   
-  @scala.inline
-  def apply(control: String, other: String, root: String, selectWrapper: String): Control = {
+  inline def apply(control: String, other: String, root: String, selectWrapper: String): Control = {
     val __obj = js.Dynamic.literal(control = control.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], selectWrapper = selectWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[Control]
   }
   
-  @scala.inline
-  implicit class ControlMutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
+  extension [Self <: Control](x: Self) {
     
-    @scala.inline
-    def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: String): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: String): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectWrapper(value: String): Self = StObject.set(x, "selectWrapper", value.asInstanceOf[js.Any])
+    inline def setSelectWrapper(value: String): Self = StObject.set(x, "selectWrapper", value.asInstanceOf[js.Any])
   }
 }

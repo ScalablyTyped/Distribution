@@ -74,9 +74,9 @@ object inputMod {
       */
     var clearOnEdit: js.UndefOr[Boolean] = js.native
     
-    var clearTextInput: js.Any = js.native
+    /* private */ var clearTextInput: js.Any = js.native
     
-    var clearTextOnEnter: js.Any = js.native
+    /* private */ var clearTextOnEnter: js.Any = js.native
     
     /**
       * The color to use from your application's color palette.
@@ -98,7 +98,7 @@ object inputMod {
     
     /* protected */ def debounceChanged(): Unit = js.native
     
-    var didBlurAfterEdit: js.Any = js.native
+    /* private */ var didBlurAfterEdit: js.Any = js.native
     
     /**
       * If `true`, the user cannot interact with the input.
@@ -112,7 +112,7 @@ object inputMod {
     
     var el: HTMLElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
     /**
       * A hint to the browser for which enter key to display.
@@ -131,22 +131,22 @@ object inputMod {
       */
     var fireFocusEvents: Boolean = js.native
     
-    var focusChanged: js.Any = js.native
+    /* private */ var focusChanged: js.Any = js.native
     
     /**
       * Returns the native `<input>` element used under the hood.
       */
     def getInputElement(): js.Promise[HTMLInputElement] = js.native
     
-    var getValue: js.Any = js.native
+    /* private */ var getValue: js.Any = js.native
     
     var hasFocus: Boolean = js.native
     
-    var hasValue: js.Any = js.native
+    /* private */ var hasValue: js.Any = js.native
     
-    var inheritedAttributes: js.Any = js.native
+    /* private */ var inheritedAttributes: js.Any = js.native
     
-    var inputId: js.Any = js.native
+    /* private */ var inputId: js.Any = js.native
     
     /**
       * A hint to the browser for which keyboard to display.
@@ -211,15 +211,15 @@ object inputMod {
       */
     var name: String = js.native
     
-    var nativeInput: js.Any = js.native
+    /* private */ var nativeInput: js.Any = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
-    var onInput: js.Any = js.native
+    /* private */ var onInput: js.Any = js.native
     
-    var onKeydown: js.Any = js.native
+    /* private */ var onKeydown: js.Any = js.native
     
     /**
       * A regular expression that the value is checked against. The pattern must match the entire value, not just some subset. Use the title attribute to describe the pattern to help the user. This attribute applies when the value of the type attribute is `"text"`, `"search"`, `"tel"`, `"url"`, `"email"`, `"date"`, or `"password"`, otherwise it is ignored. When the type attribute is `"date"`, `pattern` will only be used in browsers that do not support the `"date"` input type natively. See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date for more information.
@@ -257,7 +257,7 @@ object inputMod {
       */
     def setFocus(): js.Promise[Unit] = js.native
     
-    var shouldClearOnEdit: js.Any = js.native
+    /* private */ var shouldClearOnEdit: js.Any = js.native
     
     /**
       * The initial size of the control. This value is in pixels unless the value of the type attribute is `"text"` or `"password"`, in which case it is an integer number of characters. This attribute applies only when the `type` attribute is set to `"text"`, `"search"`, `"tel"`, `"url"`, `"email"`, or `"password"`, otherwise it is ignored.

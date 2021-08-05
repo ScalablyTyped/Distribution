@@ -26,62 +26,62 @@ object mod {
   trait PQueue[QueueType /* <: Queue[RunFunction, EnqueueOptionsType] */, EnqueueOptionsType /* <: QueueAddOptions */]
     extends ^[active | idle | add | next, js.Any] {
     
-    val _carryoverConcurrencyCount: js.Any = js.native
+    /* private */ val _carryoverConcurrencyCount: js.Any = js.native
     
-    var _concurrency: js.Any = js.native
+    /* private */ var _concurrency: js.Any = js.native
     
     /* private */ def _doesConcurrentAllowAnother: js.Any = js.native
     
     /* private */ def _doesIntervalAllowAnother: js.Any = js.native
     
-    var _initializeIntervalIfNeeded: js.Any = js.native
+    /* private */ var _initializeIntervalIfNeeded: js.Any = js.native
     
-    val _interval: js.Any = js.native
+    /* private */ val _interval: js.Any = js.native
     
-    val _intervalCap: js.Any = js.native
+    /* private */ val _intervalCap: js.Any = js.native
     
-    var _intervalCount: js.Any = js.native
+    /* private */ var _intervalCount: js.Any = js.native
     
-    var _intervalEnd: js.Any = js.native
+    /* private */ var _intervalEnd: js.Any = js.native
     
-    var _intervalId: js.Any = js.native
+    /* private */ var _intervalId: js.Any = js.native
     
-    val _isIntervalIgnored: js.Any = js.native
+    /* private */ val _isIntervalIgnored: js.Any = js.native
     
-    var _isIntervalPaused: js.Any = js.native
+    /* private */ var _isIntervalPaused: js.Any = js.native
     
-    var _isPaused: js.Any = js.native
+    /* private */ var _isPaused: js.Any = js.native
     
-    var _next: js.Any = js.native
+    /* private */ var _next: js.Any = js.native
     
-    var _onInterval: js.Any = js.native
+    /* private */ var _onInterval: js.Any = js.native
     
-    var _onResumeInterval: js.Any = js.native
+    /* private */ var _onResumeInterval: js.Any = js.native
     
-    var _pendingCount: js.Any = js.native
+    /* private */ var _pendingCount: js.Any = js.native
     
     /**
       Executes all queued functions until it reaches the limit.
       */
-    var _processQueue: js.Any = js.native
+    /* private */ var _processQueue: js.Any = js.native
     
-    var _queue: js.Any = js.native
+    /* private */ var _queue: js.Any = js.native
     
-    val _queueClass: js.Any = js.native
+    /* private */ val _queueClass: js.Any = js.native
     
-    var _resolveEmpty: js.Any = js.native
+    /* private */ var _resolveEmpty: js.Any = js.native
     
-    var _resolveIdle: js.Any = js.native
+    /* private */ var _resolveIdle: js.Any = js.native
     
-    var _resolvePromises: js.Any = js.native
+    /* private */ var _resolvePromises: js.Any = js.native
     
-    val _throwOnTimeout: js.Any = js.native
+    /* private */ val _throwOnTimeout: js.Any = js.native
     
-    var _timeout: js.Any = js.native
+    /* private */ var _timeout: js.Any = js.native
     
-    var _timeoutId: js.Any = js.native
+    /* private */ var _timeoutId: js.Any = js.native
     
-    var _tryToStartAnother: js.Any = js.native
+    /* private */ var _tryToStartAnother: js.Any = js.native
     
     /**
       Adds a sync or async task to the queue. Always returns a promise.

@@ -10,16 +10,13 @@ trait IPushNotificationTriggerFactory extends StObject {
 }
 object IPushNotificationTriggerFactory {
   
-  @scala.inline
-  def apply(create: String => PushNotificationTrigger): IPushNotificationTriggerFactory = {
+  inline def apply(create: String => PushNotificationTrigger): IPushNotificationTriggerFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[IPushNotificationTriggerFactory]
   }
   
-  @scala.inline
-  implicit class IPushNotificationTriggerFactoryMutableBuilder[Self <: IPushNotificationTriggerFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IPushNotificationTriggerFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => PushNotificationTrigger): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => PushNotificationTrigger): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

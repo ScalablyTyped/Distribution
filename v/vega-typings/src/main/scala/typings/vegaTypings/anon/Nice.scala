@@ -13,25 +13,19 @@ trait Nice extends StObject {
 }
 object Nice {
   
-  @scala.inline
-  def apply(): Nice = {
+  inline def apply(): Nice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Nice]
   }
   
-  @scala.inline
-  implicit class NiceMutableBuilder[Self <: Nice] (val x: Self) extends AnyVal {
+  extension [Self <: Nice](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double | SignalRef): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double | SignalRef): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setNice(value: Double | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+    inline def setNice(value: Double | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
+    inline def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
   }
 }

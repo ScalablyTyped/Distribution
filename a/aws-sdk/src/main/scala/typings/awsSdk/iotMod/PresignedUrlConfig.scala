@@ -18,25 +18,19 @@ trait PresignedUrlConfig extends StObject {
 }
 object PresignedUrlConfig {
   
-  @scala.inline
-  def apply(): PresignedUrlConfig = {
+  inline def apply(): PresignedUrlConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PresignedUrlConfig]
   }
   
-  @scala.inline
-  implicit class PresignedUrlConfigMutableBuilder[Self <: PresignedUrlConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PresignedUrlConfig](x: Self) {
     
-    @scala.inline
-    def setExpiresInSec(value: ExpiresInSec): Self = StObject.set(x, "expiresInSec", value.asInstanceOf[js.Any])
+    inline def setExpiresInSec(value: ExpiresInSec): Self = StObject.set(x, "expiresInSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresInSecUndefined: Self = StObject.set(x, "expiresInSec", js.undefined)
+    inline def setExpiresInSecUndefined: Self = StObject.set(x, "expiresInSec", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

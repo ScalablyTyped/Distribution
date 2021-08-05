@@ -16,34 +16,25 @@ trait ReposCreateWebhookParamsConfig extends StObject {
 }
 object ReposCreateWebhookParamsConfig {
   
-  @scala.inline
-  def apply(url: String): ReposCreateWebhookParamsConfig = {
+  inline def apply(url: String): ReposCreateWebhookParamsConfig = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateWebhookParamsConfig]
   }
   
-  @scala.inline
-  implicit class ReposCreateWebhookParamsConfigMutableBuilder[Self <: ReposCreateWebhookParamsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateWebhookParamsConfig](x: Self) {
     
-    @scala.inline
-    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+    inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
-    @scala.inline
-    def setInsecure_ssl(value: String): Self = StObject.set(x, "insecure_ssl", value.asInstanceOf[js.Any])
+    inline def setInsecure_ssl(value: String): Self = StObject.set(x, "insecure_ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsecure_sslUndefined: Self = StObject.set(x, "insecure_ssl", js.undefined)
+    inline def setInsecure_sslUndefined: Self = StObject.set(x, "insecure_ssl", js.undefined)
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

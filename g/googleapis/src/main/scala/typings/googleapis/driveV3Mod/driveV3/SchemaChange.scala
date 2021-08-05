@@ -56,61 +56,43 @@ trait SchemaChange extends StObject {
 }
 object SchemaChange {
   
-  @scala.inline
-  def apply(): SchemaChange = {
+  inline def apply(): SchemaChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChange]
   }
   
-  @scala.inline
-  implicit class SchemaChangeMutableBuilder[Self <: SchemaChange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChange](x: Self) {
     
-    @scala.inline
-    def setFile(value: SchemaFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: SchemaFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
     
-    @scala.inline
-    def setTeamDrive(value: SchemaTeamDrive): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
+    inline def setTeamDrive(value: SchemaTeamDrive): Self = StObject.set(x, "teamDrive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
+    inline def setTeamDriveId(value: String): Self = StObject.set(x, "teamDriveId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDriveIdUndefined: Self = StObject.set(x, "teamDriveId", js.undefined)
+    inline def setTeamDriveIdUndefined: Self = StObject.set(x, "teamDriveId", js.undefined)
     
-    @scala.inline
-    def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
+    inline def setTeamDriveUndefined: Self = StObject.set(x, "teamDrive", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

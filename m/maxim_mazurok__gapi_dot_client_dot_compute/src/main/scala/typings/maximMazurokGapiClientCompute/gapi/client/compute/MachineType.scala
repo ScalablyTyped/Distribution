@@ -58,115 +58,79 @@ trait MachineType extends StObject {
 }
 object MachineType {
   
-  @scala.inline
-  def apply(): MachineType = {
+  inline def apply(): MachineType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MachineType]
   }
   
-  @scala.inline
-  implicit class MachineTypeMutableBuilder[Self <: MachineType] (val x: Self) extends AnyVal {
+  extension [Self <: MachineType](x: Self) {
     
-    @scala.inline
-    def setAccelerators(value: js.Array[GuestAcceleratorCount]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
+    inline def setAccelerators(value: js.Array[GuestAcceleratorCount]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
+    inline def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
-    @scala.inline
-    def setAcceleratorsVarargs(value: GuestAcceleratorCount*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: GuestAcceleratorCount*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
     
-    @scala.inline
-    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
-    @scala.inline
-    def setDeprecated(value: DeprecationStatus): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: DeprecationStatus): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setGuestCpus(value: Double): Self = StObject.set(x, "guestCpus", value.asInstanceOf[js.Any])
+    inline def setGuestCpus(value: Double): Self = StObject.set(x, "guestCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestCpusUndefined: Self = StObject.set(x, "guestCpus", js.undefined)
+    inline def setGuestCpusUndefined: Self = StObject.set(x, "guestCpus", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImageSpaceGb(value: Double): Self = StObject.set(x, "imageSpaceGb", value.asInstanceOf[js.Any])
+    inline def setImageSpaceGb(value: Double): Self = StObject.set(x, "imageSpaceGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageSpaceGbUndefined: Self = StObject.set(x, "imageSpaceGb", js.undefined)
+    inline def setImageSpaceGbUndefined: Self = StObject.set(x, "imageSpaceGb", js.undefined)
     
-    @scala.inline
-    def setIsSharedCpu(value: Boolean): Self = StObject.set(x, "isSharedCpu", value.asInstanceOf[js.Any])
+    inline def setIsSharedCpu(value: Boolean): Self = StObject.set(x, "isSharedCpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSharedCpuUndefined: Self = StObject.set(x, "isSharedCpu", js.undefined)
+    inline def setIsSharedCpuUndefined: Self = StObject.set(x, "isSharedCpu", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMaximumPersistentDisks(value: Double): Self = StObject.set(x, "maximumPersistentDisks", value.asInstanceOf[js.Any])
+    inline def setMaximumPersistentDisks(value: Double): Self = StObject.set(x, "maximumPersistentDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPersistentDisksSizeGb(value: String): Self = StObject.set(x, "maximumPersistentDisksSizeGb", value.asInstanceOf[js.Any])
+    inline def setMaximumPersistentDisksSizeGb(value: String): Self = StObject.set(x, "maximumPersistentDisksSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPersistentDisksSizeGbUndefined: Self = StObject.set(x, "maximumPersistentDisksSizeGb", js.undefined)
+    inline def setMaximumPersistentDisksSizeGbUndefined: Self = StObject.set(x, "maximumPersistentDisksSizeGb", js.undefined)
     
-    @scala.inline
-    def setMaximumPersistentDisksUndefined: Self = StObject.set(x, "maximumPersistentDisks", js.undefined)
+    inline def setMaximumPersistentDisksUndefined: Self = StObject.set(x, "maximumPersistentDisks", js.undefined)
     
-    @scala.inline
-    def setMemoryMb(value: Double): Self = StObject.set(x, "memoryMb", value.asInstanceOf[js.Any])
+    inline def setMemoryMb(value: Double): Self = StObject.set(x, "memoryMb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryMbUndefined: Self = StObject.set(x, "memoryMb", js.undefined)
+    inline def setMemoryMbUndefined: Self = StObject.set(x, "memoryMb", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setScratchDisks(value: js.Array[DiskGb]): Self = StObject.set(x, "scratchDisks", value.asInstanceOf[js.Any])
+    inline def setScratchDisks(value: js.Array[DiskGb]): Self = StObject.set(x, "scratchDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScratchDisksUndefined: Self = StObject.set(x, "scratchDisks", js.undefined)
+    inline def setScratchDisksUndefined: Self = StObject.set(x, "scratchDisks", js.undefined)
     
-    @scala.inline
-    def setScratchDisksVarargs(value: DiskGb*): Self = StObject.set(x, "scratchDisks", js.Array(value :_*))
+    inline def setScratchDisksVarargs(value: DiskGb*): Self = StObject.set(x, "scratchDisks", js.Array(value :_*))
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

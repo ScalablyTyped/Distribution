@@ -12,22 +12,17 @@ trait ApplySnapshotPayload extends StObject {
 }
 object ApplySnapshotPayload {
   
-  @scala.inline
-  def apply(snapshot: Snapshot): ApplySnapshotPayload = {
+  inline def apply(snapshot: Snapshot): ApplySnapshotPayload = {
     val __obj = js.Dynamic.literal(snapshot = snapshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplySnapshotPayload]
   }
   
-  @scala.inline
-  implicit class ApplySnapshotPayloadMutableBuilder[Self <: ApplySnapshotPayload] (val x: Self) extends AnyVal {
+  extension [Self <: ApplySnapshotPayload](x: Self) {
     
-    @scala.inline
-    def setOptions(value: ApplySnapshotOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ApplySnapshotOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSnapshot(value: Snapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: Snapshot): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
   }
 }

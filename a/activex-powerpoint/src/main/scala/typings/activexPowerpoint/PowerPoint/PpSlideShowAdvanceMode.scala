@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpSlideShowAdvanceMode extends StObject
 object PpSlideShowAdvanceMode {
   
-  @scala.inline
-  def ppSlideShowManualAdvance: `1` = 1.asInstanceOf[`1`]
+  inline def ppSlideShowManualAdvance: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppSlideShowRehearseNewTimings: `3` = 3.asInstanceOf[`3`]
+  inline def ppSlideShowRehearseNewTimings: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppSlideShowUseSlideTimings: `2` = 2.asInstanceOf[`2`]
+  inline def ppSlideShowUseSlideTimings: `2` = 2.asInstanceOf[`2`]
 }

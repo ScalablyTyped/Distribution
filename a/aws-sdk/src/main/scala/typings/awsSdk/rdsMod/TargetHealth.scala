@@ -23,31 +23,23 @@ trait TargetHealth extends StObject {
 }
 object TargetHealth {
   
-  @scala.inline
-  def apply(): TargetHealth = {
+  inline def apply(): TargetHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetHealth]
   }
   
-  @scala.inline
-  implicit class TargetHealthMutableBuilder[Self <: TargetHealth] (val x: Self) extends AnyVal {
+  extension [Self <: TargetHealth](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setReason(value: TargetHealthReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: TargetHealthReason): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
-    @scala.inline
-    def setState(value: TargetState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: TargetState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

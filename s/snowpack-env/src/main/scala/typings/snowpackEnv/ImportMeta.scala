@@ -18,22 +18,17 @@ trait ImportMeta extends StObject {
 }
 object ImportMeta {
   
-  @scala.inline
-  def apply(env: Dictkey, hot: ImportMetaHot, url: String): ImportMeta = {
+  inline def apply(env: Dictkey, hot: ImportMetaHot, url: String): ImportMeta = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], hot = hot.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportMeta]
   }
   
-  @scala.inline
-  implicit class ImportMetaMutableBuilder[Self <: ImportMeta] (val x: Self) extends AnyVal {
+  extension [Self <: ImportMeta](x: Self) {
     
-    @scala.inline
-    def setEnv(value: Dictkey): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: Dictkey): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHot(value: ImportMetaHot): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
+    inline def setHot(value: ImportMetaHot): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

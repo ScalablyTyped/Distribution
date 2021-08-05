@@ -13,16 +13,13 @@ trait SetLifecycleEventsEnabledRequest extends StObject {
 }
 object SetLifecycleEventsEnabledRequest {
   
-  @scala.inline
-  def apply(enabled: Boolean): SetLifecycleEventsEnabledRequest = {
+  inline def apply(enabled: Boolean): SetLifecycleEventsEnabledRequest = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetLifecycleEventsEnabledRequest]
   }
   
-  @scala.inline
-  implicit class SetLifecycleEventsEnabledRequestMutableBuilder[Self <: SetLifecycleEventsEnabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetLifecycleEventsEnabledRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

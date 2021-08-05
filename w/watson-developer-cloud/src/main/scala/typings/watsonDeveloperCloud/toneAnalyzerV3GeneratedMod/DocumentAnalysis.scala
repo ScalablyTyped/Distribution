@@ -21,37 +21,27 @@ trait DocumentAnalysis extends StObject {
 }
 object DocumentAnalysis {
   
-  @scala.inline
-  def apply(): DocumentAnalysis = {
+  inline def apply(): DocumentAnalysis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentAnalysis]
   }
   
-  @scala.inline
-  implicit class DocumentAnalysisMutableBuilder[Self <: DocumentAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentAnalysis](x: Self) {
     
-    @scala.inline
-    def setTone_categories(value: js.Array[ToneCategory]): Self = StObject.set(x, "tone_categories", value.asInstanceOf[js.Any])
+    inline def setTone_categories(value: js.Array[ToneCategory]): Self = StObject.set(x, "tone_categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTone_categoriesUndefined: Self = StObject.set(x, "tone_categories", js.undefined)
+    inline def setTone_categoriesUndefined: Self = StObject.set(x, "tone_categories", js.undefined)
     
-    @scala.inline
-    def setTone_categoriesVarargs(value: ToneCategory*): Self = StObject.set(x, "tone_categories", js.Array(value :_*))
+    inline def setTone_categoriesVarargs(value: ToneCategory*): Self = StObject.set(x, "tone_categories", js.Array(value :_*))
     
-    @scala.inline
-    def setTones(value: js.Array[ToneScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
+    inline def setTones(value: js.Array[ToneScore]): Self = StObject.set(x, "tones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
+    inline def setTonesUndefined: Self = StObject.set(x, "tones", js.undefined)
     
-    @scala.inline
-    def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
+    inline def setTonesVarargs(value: ToneScore*): Self = StObject.set(x, "tones", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

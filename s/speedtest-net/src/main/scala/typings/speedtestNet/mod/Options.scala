@@ -51,75 +51,53 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAcceptGdpr(value: Boolean): Self = StObject.set(x, "acceptGdpr", value.asInstanceOf[js.Any])
+    inline def setAcceptGdpr(value: Boolean): Self = StObject.set(x, "acceptGdpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptGdprUndefined: Self = StObject.set(x, "acceptGdpr", js.undefined)
+    inline def setAcceptGdprUndefined: Self = StObject.set(x, "acceptGdpr", js.undefined)
     
-    @scala.inline
-    def setAcceptLicense(value: Boolean): Self = StObject.set(x, "acceptLicense", value.asInstanceOf[js.Any])
+    inline def setAcceptLicense(value: Boolean): Self = StObject.set(x, "acceptLicense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLicenseUndefined: Self = StObject.set(x, "acceptLicense", js.undefined)
+    inline def setAcceptLicenseUndefined: Self = StObject.set(x, "acceptLicense", js.undefined)
     
-    @scala.inline
-    def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
-    @scala.inline
-    def setBinaryVersion(value: String): Self = StObject.set(x, "binaryVersion", value.asInstanceOf[js.Any])
+    inline def setBinaryVersion(value: String): Self = StObject.set(x, "binaryVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryVersionUndefined: Self = StObject.set(x, "binaryVersion", js.undefined)
+    inline def setBinaryVersionUndefined: Self = StObject.set(x, "binaryVersion", js.undefined)
     
-    @scala.inline
-    def setCancel(
+    inline def setCancel(
       value: (/* setCancelHandler */ js.UndefOr[js.Symbol], /* newHandler */ js.UndefOr[js.Function0[Unit]]) => Boolean | Unit
     ): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setProgress(value: /* event */ js.UndefOr[SpeedTestEvent] => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+    inline def setProgress(value: /* event */ js.UndefOr[SpeedTestEvent] => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: String): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
+    inline def setServerIdUndefined: Self = StObject.set(x, "serverId", js.undefined)
     
-    @scala.inline
-    def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
+    inline def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIpUndefined: Self = StObject.set(x, "sourceIp", js.undefined)
+    inline def setSourceIpUndefined: Self = StObject.set(x, "sourceIp", js.undefined)
     
-    @scala.inline
-    def setVerbosity(value: Double): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
+    inline def setVerbosity(value: Double): Self = StObject.set(x, "verbosity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
+    inline def setVerbosityUndefined: Self = StObject.set(x, "verbosity", js.undefined)
   }
 }

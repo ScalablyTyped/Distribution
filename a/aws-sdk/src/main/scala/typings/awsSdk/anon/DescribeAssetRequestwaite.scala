@@ -19,22 +19,17 @@ trait DescribeAssetRequestwaite extends StObject {
 }
 object DescribeAssetRequestwaite {
   
-  @scala.inline
-  def apply(assetId: ID): DescribeAssetRequestwaite = {
+  inline def apply(assetId: ID): DescribeAssetRequestwaite = {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAssetRequestwaite]
   }
   
-  @scala.inline
-  implicit class DescribeAssetRequestwaiteMutableBuilder[Self <: DescribeAssetRequestwaite] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAssetRequestwaite](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
   }
 }

@@ -30,43 +30,31 @@ trait Invitation extends StObject {
 }
 object Invitation {
   
-  @scala.inline
-  def apply(): Invitation = {
+  inline def apply(): Invitation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invitation]
   }
   
-  @scala.inline
-  implicit class InvitationMutableBuilder[Self <: Invitation] (val x: Self) extends AnyVal {
+  extension [Self <: Invitation](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
-    @scala.inline
-    def setInvitationId(value: ResourceIdString): Self = StObject.set(x, "InvitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: ResourceIdString): Self = StObject.set(x, "InvitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationIdUndefined: Self = StObject.set(x, "InvitationId", js.undefined)
+    inline def setInvitationIdUndefined: Self = StObject.set(x, "InvitationId", js.undefined)
     
-    @scala.inline
-    def setNetworkSummary(value: NetworkSummary): Self = StObject.set(x, "NetworkSummary", value.asInstanceOf[js.Any])
+    inline def setNetworkSummary(value: NetworkSummary): Self = StObject.set(x, "NetworkSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkSummaryUndefined: Self = StObject.set(x, "NetworkSummary", js.undefined)
+    inline def setNetworkSummaryUndefined: Self = StObject.set(x, "NetworkSummary", js.undefined)
     
-    @scala.inline
-    def setStatus(value: InvitationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: InvitationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

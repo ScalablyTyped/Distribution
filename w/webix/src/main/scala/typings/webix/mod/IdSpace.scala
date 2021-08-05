@@ -19,6 +19,5 @@ trait IdSpace extends StObject {
 }
 object IdSpace {
   
-  @scala.inline
-  def apply: IdSpace = ^.asInstanceOf[js.Dynamic].selectDynamic("IdSpace").asInstanceOf[IdSpace]
+  inline def apply: IdSpace = ^.asInstanceOf[js.Dynamic].selectDynamic("IdSpace").asInstanceOf[IdSpace]
 }

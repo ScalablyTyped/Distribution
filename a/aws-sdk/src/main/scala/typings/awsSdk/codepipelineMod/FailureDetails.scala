@@ -23,26 +23,20 @@ trait FailureDetails extends StObject {
 }
 object FailureDetails {
   
-  @scala.inline
-  def apply(message: Message, `type`: FailureType): FailureDetails = {
+  inline def apply(message: Message, `type`: FailureType): FailureDetails = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FailureDetails]
   }
   
-  @scala.inline
-  implicit class FailureDetailsMutableBuilder[Self <: FailureDetails] (val x: Self) extends AnyVal {
+  extension [Self <: FailureDetails](x: Self) {
     
-    @scala.inline
-    def setExternalExecutionId(value: ExecutionId): Self = StObject.set(x, "externalExecutionId", value.asInstanceOf[js.Any])
+    inline def setExternalExecutionId(value: ExecutionId): Self = StObject.set(x, "externalExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalExecutionIdUndefined: Self = StObject.set(x, "externalExecutionId", js.undefined)
+    inline def setExternalExecutionIdUndefined: Self = StObject.set(x, "externalExecutionId", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: FailureType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FailureType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -17,7 +17,7 @@ object teachingBubbleContentBaseMod {
     extends Component[ITeachingBubbleProps, ITeachingBubbleState, js.Any] {
     def this(props: ITeachingBubbleProps) = this()
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MTeachingBubbleContentBase(): Unit = js.native

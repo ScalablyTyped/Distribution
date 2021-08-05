@@ -63,8 +63,7 @@ object monitorsMod {
   }
   object DragLayerMonitor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getClientOffset: () => XYCoord | Null,
       getDifferenceFromInitialOffset: () => XYCoord | Null,
       getInitialClientOffset: () => XYCoord | Null,
@@ -78,32 +77,23 @@ object monitorsMod {
       __obj.asInstanceOf[DragLayerMonitor]
     }
     
-    @scala.inline
-    implicit class DragLayerMonitorMutableBuilder[Self <: DragLayerMonitor] (val x: Self) extends AnyVal {
+    extension [Self <: DragLayerMonitor](x: Self) {
       
-      @scala.inline
-      def setGetClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getClientOffset", js.Any.fromFunction0(value))
+      inline def setGetClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getClientOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDifferenceFromInitialOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getDifferenceFromInitialOffset", js.Any.fromFunction0(value))
+      inline def setGetDifferenceFromInitialOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getDifferenceFromInitialOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInitialClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getInitialClientOffset", js.Any.fromFunction0(value))
+      inline def setGetInitialClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getInitialClientOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInitialSourceClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getInitialSourceClientOffset", js.Any.fromFunction0(value))
+      inline def setGetInitialSourceClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getInitialSourceClientOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItem(value: () => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
+      inline def setGetItem(value: () => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItemType(value: () => Identifier | Null): Self = StObject.set(x, "getItemType", js.Any.fromFunction0(value))
+      inline def setGetItemType(value: () => Identifier | Null): Self = StObject.set(x, "getItemType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSourceClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getSourceClientOffset", js.Any.fromFunction0(value))
+      inline def setGetSourceClientOffset(value: () => XYCoord | Null): Self = StObject.set(x, "getSourceClientOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDragging(value: () => Boolean): Self = StObject.set(x, "isDragging", js.Any.fromFunction0(value))
+      inline def setIsDragging(value: () => Boolean): Self = StObject.set(x, "isDragging", js.Any.fromFunction0(value))
     }
   }
   
@@ -279,20 +269,16 @@ object monitorsMod {
   }
   object XYCoord {
     
-    @scala.inline
-    def apply(x: Double, y: Double): XYCoord = {
+    inline def apply(x: Double, y: Double): XYCoord = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[XYCoord]
     }
     
-    @scala.inline
-    implicit class XYCoordMutableBuilder[Self <: XYCoord] (val x: Self) extends AnyVal {
+    extension [Self <: XYCoord](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

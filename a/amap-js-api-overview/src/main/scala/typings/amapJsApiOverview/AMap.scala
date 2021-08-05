@@ -66,8 +66,7 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         close: Event_[close, Unit],
         hide: Event_[hide, Unit],
         open: Event_[open, Unit],
@@ -77,20 +76,15 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setClose(value: Event_[close, Unit]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+        inline def setClose(value: Event_[close, Unit]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        inline def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpen(value: Event_[open, Unit]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+        inline def setOpen(value: Event_[open, Unit]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        inline def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       }
     }
     
@@ -113,32 +107,24 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply[L /* <: TileLayer */](): Options[L] = {
+      inline def apply[L /* <: TileLayer */](): Options[L] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options[L]]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options[?], L /* <: TileLayer */] (val x: Self & Options[L]) extends AnyVal {
+      extension [Self <: Options[?], L /* <: TileLayer */](x: Self & Options[L]) {
         
-        @scala.inline
-        def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+        inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+        inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
         
-        @scala.inline
-        def setTileLayer(value: L): Self = StObject.set(x, "tileLayer", value.asInstanceOf[js.Any])
+        inline def setTileLayer(value: L): Self = StObject.set(x, "tileLayer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTileLayerUndefined: Self = StObject.set(x, "tileLayer", js.undefined)
+        inline def setTileLayerUndefined: Self = StObject.set(x, "tileLayer", js.undefined)
         
-        @scala.inline
-        def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+        inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+        inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       }
     }
   }

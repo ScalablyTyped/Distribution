@@ -21,28 +21,21 @@ trait SchemaPolygon extends StObject {
 }
 object SchemaPolygon {
   
-  @scala.inline
-  def apply(): SchemaPolygon = {
+  inline def apply(): SchemaPolygon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPolygon]
   }
   
-  @scala.inline
-  implicit class SchemaPolygonMutableBuilder[Self <: SchemaPolygon] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPolygon](x: Self) {
     
-    @scala.inline
-    def setCoordinates(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[js.Array[js.Array[Double]]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    @scala.inline
-    def setCoordinatesVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: js.Array[js.Array[Double]]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

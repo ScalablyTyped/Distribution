@@ -17,31 +17,23 @@ trait Darwin extends StObject {
 }
 object Darwin {
   
-  @scala.inline
-  def apply(darwin: js.Array[String], linux: js.Array[String], win32: js.Array[String]): Darwin = {
+  inline def apply(darwin: js.Array[String], linux: js.Array[String], win32: js.Array[String]): Darwin = {
     val __obj = js.Dynamic.literal(darwin = darwin.asInstanceOf[js.Any], linux = linux.asInstanceOf[js.Any], win32 = win32.asInstanceOf[js.Any])
     __obj.asInstanceOf[Darwin]
   }
   
-  @scala.inline
-  implicit class DarwinMutableBuilder[Self <: Darwin] (val x: Self) extends AnyVal {
+  extension [Self <: Darwin](x: Self) {
     
-    @scala.inline
-    def setDarwin(value: js.Array[String]): Self = StObject.set(x, "darwin", value.asInstanceOf[js.Any])
+    inline def setDarwin(value: js.Array[String]): Self = StObject.set(x, "darwin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarwinVarargs(value: String*): Self = StObject.set(x, "darwin", js.Array(value :_*))
+    inline def setDarwinVarargs(value: String*): Self = StObject.set(x, "darwin", js.Array(value :_*))
     
-    @scala.inline
-    def setLinux(value: js.Array[String]): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
+    inline def setLinux(value: js.Array[String]): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinuxVarargs(value: String*): Self = StObject.set(x, "linux", js.Array(value :_*))
+    inline def setLinuxVarargs(value: String*): Self = StObject.set(x, "linux", js.Array(value :_*))
     
-    @scala.inline
-    def setWin32(value: js.Array[String]): Self = StObject.set(x, "win32", value.asInstanceOf[js.Any])
+    inline def setWin32(value: js.Array[String]): Self = StObject.set(x, "win32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWin32Varargs(value: String*): Self = StObject.set(x, "win32", js.Array(value :_*))
+    inline def setWin32Varargs(value: String*): Self = StObject.set(x, "win32", js.Array(value :_*))
   }
 }

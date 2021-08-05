@@ -46,43 +46,31 @@ trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends S
 }
 object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig = {
+  inline def apply(): SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfigMutableBuilder[Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig](x: Self) {
     
-    @scala.inline
-    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
+    inline def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
-    @scala.inline
-    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
+    inline def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
+    inline def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
-    @scala.inline
-    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
+    inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
-    @scala.inline
-    def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
+    inline def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
+    inline def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
     
-    @scala.inline
-    def setReserved(value: Boolean): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
+    inline def setReserved(value: Boolean): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
+    inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
   }
 }

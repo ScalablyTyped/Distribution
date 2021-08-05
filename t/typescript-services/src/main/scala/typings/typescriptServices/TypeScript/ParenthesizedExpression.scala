@@ -16,8 +16,7 @@ trait ParenthesizedExpression
 }
 object ParenthesizedExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,19 +44,14 @@ object ParenthesizedExpression {
     __obj.asInstanceOf[ParenthesizedExpression]
   }
   
-  @scala.inline
-  implicit class ParenthesizedExpressionMutableBuilder[Self <: ParenthesizedExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ParenthesizedExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenParenTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "openParenTrailingComments", value.asInstanceOf[js.Any])
+    inline def setOpenParenTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "openParenTrailingComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "openParenTrailingComments", js.Array(value :_*))
+    inline def setOpenParenTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "openParenTrailingComments", js.Array(value :_*))
     
-    @scala.inline
-    def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

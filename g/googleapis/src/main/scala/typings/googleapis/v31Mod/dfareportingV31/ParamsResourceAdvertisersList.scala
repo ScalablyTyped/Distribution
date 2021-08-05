@@ -91,106 +91,73 @@ trait ParamsResourceAdvertisersList
 }
 object ParamsResourceAdvertisersList {
   
-  @scala.inline
-  def apply(): ParamsResourceAdvertisersList = {
+  inline def apply(): ParamsResourceAdvertisersList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAdvertisersList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAdvertisersListMutableBuilder[Self <: ParamsResourceAdvertisersList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAdvertisersList](x: Self) {
     
-    @scala.inline
-    def setAdvertiserGroupIds(value: js.Array[String]): Self = StObject.set(x, "advertiserGroupIds", value.asInstanceOf[js.Any])
+    inline def setAdvertiserGroupIds(value: js.Array[String]): Self = StObject.set(x, "advertiserGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserGroupIdsUndefined: Self = StObject.set(x, "advertiserGroupIds", js.undefined)
+    inline def setAdvertiserGroupIdsUndefined: Self = StObject.set(x, "advertiserGroupIds", js.undefined)
     
-    @scala.inline
-    def setAdvertiserGroupIdsVarargs(value: String*): Self = StObject.set(x, "advertiserGroupIds", js.Array(value :_*))
+    inline def setAdvertiserGroupIdsVarargs(value: String*): Self = StObject.set(x, "advertiserGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFloodlightConfigurationIds(value: js.Array[String]): Self = StObject.set(x, "floodlightConfigurationIds", value.asInstanceOf[js.Any])
+    inline def setFloodlightConfigurationIds(value: js.Array[String]): Self = StObject.set(x, "floodlightConfigurationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightConfigurationIdsUndefined: Self = StObject.set(x, "floodlightConfigurationIds", js.undefined)
+    inline def setFloodlightConfigurationIdsUndefined: Self = StObject.set(x, "floodlightConfigurationIds", js.undefined)
     
-    @scala.inline
-    def setFloodlightConfigurationIdsVarargs(value: String*): Self = StObject.set(x, "floodlightConfigurationIds", js.Array(value :_*))
+    inline def setFloodlightConfigurationIdsVarargs(value: String*): Self = StObject.set(x, "floodlightConfigurationIds", js.Array(value :_*))
     
-    @scala.inline
-    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeAdvertisersWithoutGroupsOnly(value: Boolean): Self = StObject.set(x, "includeAdvertisersWithoutGroupsOnly", value.asInstanceOf[js.Any])
+    inline def setIncludeAdvertisersWithoutGroupsOnly(value: Boolean): Self = StObject.set(x, "includeAdvertisersWithoutGroupsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAdvertisersWithoutGroupsOnlyUndefined: Self = StObject.set(x, "includeAdvertisersWithoutGroupsOnly", js.undefined)
+    inline def setIncludeAdvertisersWithoutGroupsOnlyUndefined: Self = StObject.set(x, "includeAdvertisersWithoutGroupsOnly", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setOnlyParent(value: Boolean): Self = StObject.set(x, "onlyParent", value.asInstanceOf[js.Any])
+    inline def setOnlyParent(value: Boolean): Self = StObject.set(x, "onlyParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyParentUndefined: Self = StObject.set(x, "onlyParent", js.undefined)
+    inline def setOnlyParentUndefined: Self = StObject.set(x, "onlyParent", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
-    @scala.inline
-    def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
+    inline def setSearchString(value: String): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
+    inline def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
     
-    @scala.inline
-    def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
+    inline def setSortField(value: String): Self = StObject.set(x, "sortField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
+    inline def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
+    inline def setSubaccountId(value: String): Self = StObject.set(x, "subaccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
+    inline def setSubaccountIdUndefined: Self = StObject.set(x, "subaccountId", js.undefined)
   }
 }

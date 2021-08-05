@@ -47,6 +47,5 @@ object FieldUserValue {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromUser(userName: String): typings.sharepoint.SP.FieldUserValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUser")(userName.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.FieldUserValue]
+  inline def fromUser(userName: String): typings.sharepoint.SP.FieldUserValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUser")(userName.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.FieldUserValue]
 }

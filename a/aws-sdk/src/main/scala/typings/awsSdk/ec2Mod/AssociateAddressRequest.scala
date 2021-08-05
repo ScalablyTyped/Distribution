@@ -43,55 +43,39 @@ trait AssociateAddressRequest extends StObject {
 }
 object AssociateAddressRequest {
   
-  @scala.inline
-  def apply(): AssociateAddressRequest = {
+  inline def apply(): AssociateAddressRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateAddressRequest]
   }
   
-  @scala.inline
-  implicit class AssociateAddressRequestMutableBuilder[Self <: AssociateAddressRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateAddressRequest](x: Self) {
     
-    @scala.inline
-    def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
+    inline def setAllocationId(value: AllocationId): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
+    inline def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
     
-    @scala.inline
-    def setAllowReassociation(value: Boolean): Self = StObject.set(x, "AllowReassociation", value.asInstanceOf[js.Any])
+    inline def setAllowReassociation(value: Boolean): Self = StObject.set(x, "AllowReassociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowReassociationUndefined: Self = StObject.set(x, "AllowReassociation", js.undefined)
+    inline def setAllowReassociationUndefined: Self = StObject.set(x, "AllowReassociation", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
+    inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
     
-    @scala.inline
-    def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
+    inline def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
+    inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
     
-    @scala.inline
-    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
+    inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
   }
 }

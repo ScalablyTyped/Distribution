@@ -18,28 +18,21 @@ trait HeaderObject extends StObject {
 }
 object HeaderObject {
   
-  @scala.inline
-  def apply(): HeaderObject = {
+  inline def apply(): HeaderObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderObject]
   }
   
-  @scala.inline
-  implicit class HeaderObjectMutableBuilder[Self <: HeaderObject] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderObject](x: Self) {
     
-    @scala.inline
-    def setHeadersAllowList(value: HeaderForwardList): Self = StObject.set(x, "headersAllowList", value.asInstanceOf[js.Any])
+    inline def setHeadersAllowList(value: HeaderForwardList): Self = StObject.set(x, "headersAllowList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersAllowListUndefined: Self = StObject.set(x, "headersAllowList", js.undefined)
+    inline def setHeadersAllowListUndefined: Self = StObject.set(x, "headersAllowList", js.undefined)
     
-    @scala.inline
-    def setHeadersAllowListVarargs(value: HeaderEnum*): Self = StObject.set(x, "headersAllowList", js.Array(value :_*))
+    inline def setHeadersAllowListVarargs(value: HeaderEnum*): Self = StObject.set(x, "headersAllowList", js.Array(value :_*))
     
-    @scala.inline
-    def setOption(value: ForwardValues): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: ForwardValues): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
   }
 }

@@ -19,22 +19,17 @@ trait ElementStackItem extends StObject {
 }
 object ElementStackItem {
   
-  @scala.inline
-  def apply(elementName: String, isStartElementEvent: Boolean, xAttributes: XAttributeList): ElementStackItem = {
+  inline def apply(elementName: String, isStartElementEvent: Boolean, xAttributes: XAttributeList): ElementStackItem = {
     val __obj = js.Dynamic.literal(elementName = elementName.asInstanceOf[js.Any], isStartElementEvent = isStartElementEvent.asInstanceOf[js.Any], xAttributes = xAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementStackItem]
   }
   
-  @scala.inline
-  implicit class ElementStackItemMutableBuilder[Self <: ElementStackItem] (val x: Self) extends AnyVal {
+  extension [Self <: ElementStackItem](x: Self) {
     
-    @scala.inline
-    def setElementName(value: String): Self = StObject.set(x, "elementName", value.asInstanceOf[js.Any])
+    inline def setElementName(value: String): Self = StObject.set(x, "elementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStartElementEvent(value: Boolean): Self = StObject.set(x, "isStartElementEvent", value.asInstanceOf[js.Any])
+    inline def setIsStartElementEvent(value: Boolean): Self = StObject.set(x, "isStartElementEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAttributes(value: XAttributeList): Self = StObject.set(x, "xAttributes", value.asInstanceOf[js.Any])
+    inline def setXAttributes(value: XAttributeList): Self = StObject.set(x, "xAttributes", value.asInstanceOf[js.Any])
   }
 }

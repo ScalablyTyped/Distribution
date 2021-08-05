@@ -11,6 +11,5 @@ object resolveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(functions: js.Any, hasIsCancelledToStateFromStateErrorKey: ErrorKey, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(functions.asInstanceOf[js.Any], hasIsCancelledToStateFromStateErrorKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(functions: js.Any, hasIsCancelledToStateFromStateErrorKey: ErrorKey, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(functions.asInstanceOf[js.Any], hasIsCancelledToStateFromStateErrorKey.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -20,8 +20,7 @@ object autolinkerMod {
   @js.native
   val NO_CLAUSE_AUTOLINK: Set[String] = js.native
   
-  @scala.inline
-  def autolink(
+  inline def autolink(
     node: Node,
     replacer: RegExp,
     autolinkmap: AutoLinkMap,
@@ -29,8 +28,7 @@ object autolinkerMod {
     currentId: String,
     allowSameId: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autolink")(node.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], autolinkmap.asInstanceOf[js.Any], clause.asInstanceOf[js.Any], currentId.asInstanceOf[js.Any], allowSameId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def autolink(
+  inline def autolink(
     node: Node,
     replacer: RegExp,
     autolinkmap: AutoLinkMap,
@@ -38,8 +36,7 @@ object autolinkerMod {
     currentId: Null,
     allowSameId: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autolink")(node.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], autolinkmap.asInstanceOf[js.Any], clause.asInstanceOf[js.Any], currentId.asInstanceOf[js.Any], allowSameId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def autolink(
+  inline def autolink(
     node: Node,
     replacer: RegExp,
     autolinkmap: AutoLinkMap,
@@ -47,8 +44,7 @@ object autolinkerMod {
     currentId: String,
     allowSameId: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autolink")(node.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], autolinkmap.asInstanceOf[js.Any], clause.asInstanceOf[js.Any], currentId.asInstanceOf[js.Any], allowSameId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def autolink(
+  inline def autolink(
     node: Node,
     replacer: RegExp,
     autolinkmap: AutoLinkMap,
@@ -57,8 +53,7 @@ object autolinkerMod {
     allowSameId: Boolean
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autolink")(node.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], autolinkmap.asInstanceOf[js.Any], clause.asInstanceOf[js.Any], currentId.asInstanceOf[js.Any], allowSameId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def replacerForNamespace(
+  inline def replacerForNamespace(
     namespace: String,
     biblio: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Biblio */ js.Any
   ): js.Tuple2[RegExp, AutoLinkMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("replacerForNamespace")(namespace.asInstanceOf[js.Any], biblio.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[RegExp, AutoLinkMap]]

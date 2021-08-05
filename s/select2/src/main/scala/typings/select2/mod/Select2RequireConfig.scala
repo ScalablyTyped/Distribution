@@ -17,40 +17,29 @@ trait Select2RequireConfig extends StObject {
 }
 object Select2RequireConfig {
   
-  @scala.inline
-  def apply(): Select2RequireConfig = {
+  inline def apply(): Select2RequireConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Select2RequireConfig]
   }
   
-  @scala.inline
-  implicit class Select2RequireConfigMutableBuilder[Self <: Select2RequireConfig] (val x: Self) extends AnyVal {
+  extension [Self <: Select2RequireConfig](x: Self) {
     
-    @scala.inline
-    def setCallback(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setConfig(value: StringDictionary[js.Object]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: StringDictionary[js.Object]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+    inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    @scala.inline
-    def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setMap(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
   }
 }

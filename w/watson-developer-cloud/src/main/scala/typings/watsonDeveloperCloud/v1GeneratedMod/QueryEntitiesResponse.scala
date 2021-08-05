@@ -12,22 +12,17 @@ trait QueryEntitiesResponse extends StObject {
 }
 object QueryEntitiesResponse {
   
-  @scala.inline
-  def apply(): QueryEntitiesResponse = {
+  inline def apply(): QueryEntitiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryEntitiesResponse]
   }
   
-  @scala.inline
-  implicit class QueryEntitiesResponseMutableBuilder[Self <: QueryEntitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QueryEntitiesResponse](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[QueryEntitiesResponseItem]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[QueryEntitiesResponseItem]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: QueryEntitiesResponseItem*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: QueryEntitiesResponseItem*): Self = StObject.set(x, "entities", js.Array(value :_*))
   }
 }

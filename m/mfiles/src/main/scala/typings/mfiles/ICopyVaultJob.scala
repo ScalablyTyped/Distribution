@@ -52,8 +52,7 @@ trait ICopyVaultJob extends StObject {
 }
 object ICopyVaultJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => ICopyVaultJob,
     CopyflagAllData: Boolean,
     CopyflagAllExceptData: Boolean,
@@ -81,73 +80,50 @@ object ICopyVaultJob {
     __obj.asInstanceOf[ICopyVaultJob]
   }
   
-  @scala.inline
-  implicit class ICopyVaultJobMutableBuilder[Self <: ICopyVaultJob] (val x: Self) extends AnyVal {
+  extension [Self <: ICopyVaultJob](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => ICopyVaultJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ICopyVaultJob): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopyflagAllData(value: Boolean): Self = StObject.set(x, "CopyflagAllData", value.asInstanceOf[js.Any])
+    inline def setCopyflagAllData(value: Boolean): Self = StObject.set(x, "CopyflagAllData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagAllExceptData(value: Boolean): Self = StObject.set(x, "CopyflagAllExceptData", value.asInstanceOf[js.Any])
+    inline def setCopyflagAllExceptData(value: Boolean): Self = StObject.set(x, "CopyflagAllExceptData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagApplications(value: Boolean): Self = StObject.set(x, "CopyflagApplications", value.asInstanceOf[js.Any])
+    inline def setCopyflagApplications(value: Boolean): Self = StObject.set(x, "CopyflagApplications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagDataSets(value: Boolean): Self = StObject.set(x, "CopyflagDataSets", value.asInstanceOf[js.Any])
+    inline def setCopyflagDataSets(value: Boolean): Self = StObject.set(x, "CopyflagDataSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagDocumentProfiles(value: Boolean): Self = StObject.set(x, "CopyflagDocumentProfiles", value.asInstanceOf[js.Any])
+    inline def setCopyflagDocumentProfiles(value: Boolean): Self = StObject.set(x, "CopyflagDocumentProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagDocuments(value: Boolean): Self = StObject.set(x, "CopyflagDocuments", value.asInstanceOf[js.Any])
+    inline def setCopyflagDocuments(value: Boolean): Self = StObject.set(x, "CopyflagDocuments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagEventLog(value: Boolean): Self = StObject.set(x, "CopyflagEventLog", value.asInstanceOf[js.Any])
+    inline def setCopyflagEventLog(value: Boolean): Self = StObject.set(x, "CopyflagEventLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagExternalLocations(value: Boolean): Self = StObject.set(x, "CopyflagExternalLocations", value.asInstanceOf[js.Any])
+    inline def setCopyflagExternalLocations(value: Boolean): Self = StObject.set(x, "CopyflagExternalLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagFiles(value: Boolean): Self = StObject.set(x, "CopyflagFiles", value.asInstanceOf[js.Any])
+    inline def setCopyflagFiles(value: Boolean): Self = StObject.set(x, "CopyflagFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagInternalEventHandlers(value: Boolean): Self = StObject.set(x, "CopyflagInternalEventHandlers", value.asInstanceOf[js.Any])
+    inline def setCopyflagInternalEventHandlers(value: Boolean): Self = StObject.set(x, "CopyflagInternalEventHandlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagLanguagesAndTranslations(value: Boolean): Self = StObject.set(x, "CopyflagLanguagesAndTranslations", value.asInstanceOf[js.Any])
+    inline def setCopyflagLanguagesAndTranslations(value: Boolean): Self = StObject.set(x, "CopyflagLanguagesAndTranslations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagPropertyDefinitions(value: Boolean): Self = StObject.set(x, "CopyflagPropertyDefinitions", value.asInstanceOf[js.Any])
+    inline def setCopyflagPropertyDefinitions(value: Boolean): Self = StObject.set(x, "CopyflagPropertyDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagScheduledExportAndImportJobs(value: Boolean): Self = StObject.set(x, "CopyflagScheduledExportAndImportJobs", value.asInstanceOf[js.Any])
+    inline def setCopyflagScheduledExportAndImportJobs(value: Boolean): Self = StObject.set(x, "CopyflagScheduledExportAndImportJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagUseTargetGUID(value: Boolean): Self = StObject.set(x, "CopyflagUseTargetGUID", value.asInstanceOf[js.Any])
+    inline def setCopyflagUseTargetGUID(value: Boolean): Self = StObject.set(x, "CopyflagUseTargetGUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagUserAccounts(value: Boolean): Self = StObject.set(x, "CopyflagUserAccounts", value.asInstanceOf[js.Any])
+    inline def setCopyflagUserAccounts(value: Boolean): Self = StObject.set(x, "CopyflagUserAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagValueListContent(value: Boolean): Self = StObject.set(x, "CopyflagValueListContent", value.asInstanceOf[js.Any])
+    inline def setCopyflagValueListContent(value: Boolean): Self = StObject.set(x, "CopyflagValueListContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagValueLists(value: Boolean): Self = StObject.set(x, "CopyflagValueLists", value.asInstanceOf[js.Any])
+    inline def setCopyflagValueLists(value: Boolean): Self = StObject.set(x, "CopyflagValueLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagViews(value: Boolean): Self = StObject.set(x, "CopyflagViews", value.asInstanceOf[js.Any])
+    inline def setCopyflagViews(value: Boolean): Self = StObject.set(x, "CopyflagViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyflagWorkflows(value: Boolean): Self = StObject.set(x, "CopyflagWorkflows", value.asInstanceOf[js.Any])
+    inline def setCopyflagWorkflows(value: Boolean): Self = StObject.set(x, "CopyflagWorkflows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
+    inline def setVaultGUID(value: String): Self = StObject.set(x, "VaultGUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultProperties(value: IVaultProperties): Self = StObject.set(x, "VaultProperties", value.asInstanceOf[js.Any])
+    inline def setVaultProperties(value: IVaultProperties): Self = StObject.set(x, "VaultProperties", value.asInstanceOf[js.Any])
   }
 }

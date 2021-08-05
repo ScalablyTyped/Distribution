@@ -18,6 +18,5 @@ class RegExp protected ()
 }
 object RegExp {
   
-  @scala.inline
-  def apply: RegExpConstructor = js.Dynamic.global.selectDynamic("RegExp").asInstanceOf[RegExpConstructor]
+  inline def apply: RegExpConstructor = js.Dynamic.global.selectDynamic("RegExp").asInstanceOf[RegExpConstructor]
 }

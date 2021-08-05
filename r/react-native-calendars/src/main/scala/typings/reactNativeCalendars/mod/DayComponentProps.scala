@@ -25,8 +25,7 @@ trait DayComponentProps extends StObject {
 }
 object DayComponentProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: DateObject,
     marking: `false` | js.Array[Marking],
     onLongPress: DateObject => js.Any,
@@ -38,28 +37,20 @@ object DayComponentProps {
     __obj.asInstanceOf[DayComponentProps]
   }
   
-  @scala.inline
-  implicit class DayComponentPropsMutableBuilder[Self <: DayComponentProps] (val x: Self) extends AnyVal {
+  extension [Self <: DayComponentProps](x: Self) {
     
-    @scala.inline
-    def setDate(value: DateObject): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: DateObject): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarking(value: `false` | js.Array[Marking]): Self = StObject.set(x, "marking", value.asInstanceOf[js.Any])
+    inline def setMarking(value: `false` | js.Array[Marking]): Self = StObject.set(x, "marking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkingVarargs(value: Marking*): Self = StObject.set(x, "marking", js.Array(value :_*))
+    inline def setMarkingVarargs(value: Marking*): Self = StObject.set(x, "marking", js.Array(value :_*))
     
-    @scala.inline
-    def setOnLongPress(value: DateObject => js.Any): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
+    inline def setOnLongPress(value: DateObject => js.Any): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPress(value: DateObject => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: DateObject => js.Any): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setState(value: _empty | selected | disabled | today): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: _empty | selected | disabled | today): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: CalendarTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: CalendarTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

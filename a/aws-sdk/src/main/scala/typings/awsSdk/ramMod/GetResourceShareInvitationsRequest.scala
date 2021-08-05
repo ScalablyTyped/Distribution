@@ -28,43 +28,31 @@ trait GetResourceShareInvitationsRequest extends StObject {
 }
 object GetResourceShareInvitationsRequest {
   
-  @scala.inline
-  def apply(): GetResourceShareInvitationsRequest = {
+  inline def apply(): GetResourceShareInvitationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourceShareInvitationsRequest]
   }
   
-  @scala.inline
-  implicit class GetResourceShareInvitationsRequestMutableBuilder[Self <: GetResourceShareInvitationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceShareInvitationsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceShareArns(value: ResourceShareArnList): Self = StObject.set(x, "resourceShareArns", value.asInstanceOf[js.Any])
+    inline def setResourceShareArns(value: ResourceShareArnList): Self = StObject.set(x, "resourceShareArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareArnsUndefined: Self = StObject.set(x, "resourceShareArns", js.undefined)
+    inline def setResourceShareArnsUndefined: Self = StObject.set(x, "resourceShareArns", js.undefined)
     
-    @scala.inline
-    def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value :_*))
+    inline def setResourceShareArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareArns", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceShareInvitationArns(value: ResourceShareInvitationArnList): Self = StObject.set(x, "resourceShareInvitationArns", value.asInstanceOf[js.Any])
+    inline def setResourceShareInvitationArns(value: ResourceShareInvitationArnList): Self = StObject.set(x, "resourceShareInvitationArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareInvitationArnsUndefined: Self = StObject.set(x, "resourceShareInvitationArns", js.undefined)
+    inline def setResourceShareInvitationArnsUndefined: Self = StObject.set(x, "resourceShareInvitationArns", js.undefined)
     
-    @scala.inline
-    def setResourceShareInvitationArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareInvitationArns", js.Array(value :_*))
+    inline def setResourceShareInvitationArnsVarargs(value: String*): Self = StObject.set(x, "resourceShareInvitationArns", js.Array(value :_*))
   }
 }

@@ -24,10 +24,8 @@ object createIconSetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
-  @scala.inline
-  def default[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any, fontStyle: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any], fontStyle.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
+  inline def default[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
+  inline def default[G /* <: String */, FN /* <: String */](glyphMap: GlyphMap[G], fontName: FN, expoAssetId: js.Any, fontStyle: js.Any): Icon[G, FN] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(glyphMap.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], expoAssetId.asInstanceOf[js.Any], fontStyle.asInstanceOf[js.Any])).asInstanceOf[Icon[G, FN]]
   
   type GlyphMap[G /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in G ]: number}
@@ -166,122 +164,84 @@ object createIconSetMod {
   }
   object IconButtonProps {
     
-    @scala.inline
-    def apply[GLYPHS /* <: String */](name: GLYPHS): IconButtonProps[GLYPHS] = {
+    inline def apply[GLYPHS /* <: String */](name: GLYPHS): IconButtonProps[GLYPHS] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconButtonProps[GLYPHS]]
     }
     
-    @scala.inline
-    implicit class IconButtonPropsMutableBuilder[Self <: IconButtonProps[?], GLYPHS /* <: String */] (val x: Self & IconButtonProps[GLYPHS]) extends AnyVal {
+    extension [Self <: IconButtonProps[?], GLYPHS /* <: String */](x: Self & IconButtonProps[GLYPHS]) {
       
-      @scala.inline
-      def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+      inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+      inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
+      inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
+      inline def setDelayLongPressUndefined: Self = StObject.set(x, "delayLongPress", js.undefined)
       
-      @scala.inline
-      def setDelayPressIn(value: Double): Self = StObject.set(x, "delayPressIn", value.asInstanceOf[js.Any])
+      inline def setDelayPressIn(value: Double): Self = StObject.set(x, "delayPressIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayPressInUndefined: Self = StObject.set(x, "delayPressIn", js.undefined)
+      inline def setDelayPressInUndefined: Self = StObject.set(x, "delayPressIn", js.undefined)
       
-      @scala.inline
-      def setDelayPressOut(value: Double): Self = StObject.set(x, "delayPressOut", value.asInstanceOf[js.Any])
+      inline def setDelayPressOut(value: Double): Self = StObject.set(x, "delayPressOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
+      inline def setDelayPressOutUndefined: Self = StObject.set(x, "delayPressOut", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledNull: Self = StObject.set(x, "disabled", null)
+      inline def setDisabledNull: Self = StObject.set(x, "disabled", null)
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setName(value: GLYPHS): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: GLYPHS): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBlur(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* e */ NativeSyntheticEvent[TargetedEvent] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnHideUnderlay(value: () => Unit): Self = StObject.set(x, "onHideUnderlay", js.Any.fromFunction0(value))
+      inline def setOnHideUnderlay(value: () => Unit): Self = StObject.set(x, "onHideUnderlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
+      inline def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
       
-      @scala.inline
-      def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
+      inline def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+      inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
+      inline def setOnPressIn(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
+      inline def setOnPressInUndefined: Self = StObject.set(x, "onPressIn", js.undefined)
       
-      @scala.inline
-      def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
+      inline def setOnPressOut(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPressOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
+      inline def setOnPressOutUndefined: Self = StObject.set(x, "onPressOut", js.undefined)
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setOnShowUnderlay(value: () => Unit): Self = StObject.set(x, "onShowUnderlay", js.Any.fromFunction0(value))
+      inline def setOnShowUnderlay(value: () => Unit): Self = StObject.set(x, "onShowUnderlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
+      inline def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
       
-      @scala.inline
-      def setPressRetentionOffset(value: Insets): Self = StObject.set(x, "pressRetentionOffset", value.asInstanceOf[js.Any])
+      inline def setPressRetentionOffset(value: Insets): Self = StObject.set(x, "pressRetentionOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressRetentionOffsetUndefined: Self = StObject.set(x, "pressRetentionOffset", js.undefined)
+      inline def setPressRetentionOffsetUndefined: Self = StObject.set(x, "pressRetentionOffset", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setUnderlayColor(value: ColorValue): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
+      inline def setUnderlayColor(value: ColorValue): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
+      inline def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
     }
   }
   
@@ -312,29 +272,22 @@ object createIconSetMod {
   }
   object IconProps {
     
-    @scala.inline
-    def apply[GLYPHS /* <: String */](name: GLYPHS): IconProps[GLYPHS] = {
+    inline def apply[GLYPHS /* <: String */](name: GLYPHS): IconProps[GLYPHS] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconProps[GLYPHS]]
     }
     
-    @scala.inline
-    implicit class IconPropsMutableBuilder[Self <: IconProps[?], GLYPHS /* <: String */] (val x: Self & IconProps[GLYPHS]) extends AnyVal {
+    extension [Self <: IconProps[?], GLYPHS /* <: String */](x: Self & IconProps[GLYPHS]) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setName(value: GLYPHS): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: GLYPHS): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

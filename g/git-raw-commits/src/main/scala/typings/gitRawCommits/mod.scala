@@ -14,10 +14,8 @@ object mod {
     * @param gitOpts
     * @param execOpts Options to pass to `git` `childProcess`.
     */
-  @scala.inline
-  def apply(gitOptions: GitOptions): Readable = ^.asInstanceOf[js.Dynamic].apply(gitOptions.asInstanceOf[js.Any]).asInstanceOf[Readable]
-  @scala.inline
-  def apply(gitOptions: GitOptions, execOptions: ExecOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(gitOptions.asInstanceOf[js.Any], execOptions.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def apply(gitOptions: GitOptions): Readable = ^.asInstanceOf[js.Dynamic].apply(gitOptions.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def apply(gitOptions: GitOptions, execOptions: ExecOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(gitOptions.asInstanceOf[js.Any], execOptions.asInstanceOf[js.Any])).asInstanceOf[Readable]
   
   @JSImport("git-raw-commits", JSImport.Namespace)
   @js.native
@@ -35,20 +33,16 @@ object mod {
   }
   object ExecOptions {
     
-    @scala.inline
-    def apply(): ExecOptions = {
+    inline def apply(): ExecOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecOptions]
     }
     
-    @scala.inline
-    implicit class ExecOptionsMutableBuilder[Self <: ExecOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExecOptions](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     }
   }
   
@@ -107,44 +101,32 @@ object mod {
   }
   object GitOptions {
     
-    @scala.inline
-    def apply(): GitOptions = {
+    inline def apply(): GitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GitOptions]
     }
     
-    @scala.inline
-    implicit class GitOptionsMutableBuilder[Self <: GitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GitOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: /* message */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* message */ js.Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
 }

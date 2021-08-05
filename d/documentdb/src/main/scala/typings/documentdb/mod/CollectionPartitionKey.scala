@@ -22,22 +22,17 @@ trait CollectionPartitionKey extends StObject {
 }
 object CollectionPartitionKey {
   
-  @scala.inline
-  def apply(kind: PartitionKind, paths: js.Array[String]): CollectionPartitionKey = {
+  inline def apply(kind: PartitionKind, paths: js.Array[String]): CollectionPartitionKey = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionPartitionKey]
   }
   
-  @scala.inline
-  implicit class CollectionPartitionKeyMutableBuilder[Self <: CollectionPartitionKey] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionPartitionKey](x: Self) {
     
-    @scala.inline
-    def setKind(value: PartitionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: PartitionKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

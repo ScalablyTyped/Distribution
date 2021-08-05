@@ -23,28 +23,21 @@ trait SchemaPackage extends StObject {
 }
 object SchemaPackage {
   
-  @scala.inline
-  def apply(): SchemaPackage = {
+  inline def apply(): SchemaPackage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPackage]
   }
   
-  @scala.inline
-  implicit class SchemaPackageMutableBuilder[Self <: SchemaPackage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPackage](x: Self) {
     
-    @scala.inline
-    def setDistribution(value: js.Array[SchemaDistribution]): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: js.Array[SchemaDistribution]): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
-    @scala.inline
-    def setDistributionVarargs(value: SchemaDistribution*): Self = StObject.set(x, "distribution", js.Array(value :_*))
+    inline def setDistributionVarargs(value: SchemaDistribution*): Self = StObject.set(x, "distribution", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

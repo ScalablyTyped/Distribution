@@ -12,16 +12,13 @@ trait ResolvedStarterTemplate
 }
 object ResolvedStarterTemplate {
   
-  @scala.inline
-  def apply(archive: String, name: String, projectType: ProjectType): ResolvedStarterTemplate = {
+  inline def apply(archive: String, name: String, projectType: ProjectType): ResolvedStarterTemplate = {
     val __obj = js.Dynamic.literal(archive = archive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedStarterTemplate]
   }
   
-  @scala.inline
-  implicit class ResolvedStarterTemplateMutableBuilder[Self <: ResolvedStarterTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedStarterTemplate](x: Self) {
     
-    @scala.inline
-    def setArchive(value: String): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
+    inline def setArchive(value: String): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
   }
 }

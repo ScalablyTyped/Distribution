@@ -14,28 +14,21 @@ trait ListMessagesResponse extends StObject {
 }
 object ListMessagesResponse {
   
-  @scala.inline
-  def apply(): ListMessagesResponse = {
+  inline def apply(): ListMessagesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMessagesResponse]
   }
   
-  @scala.inline
-  implicit class ListMessagesResponseMutableBuilder[Self <: ListMessagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMessagesResponse](x: Self) {
     
-    @scala.inline
-    def setHl7V2Messages(value: js.Array[Message]): Self = StObject.set(x, "hl7V2Messages", value.asInstanceOf[js.Any])
+    inline def setHl7V2Messages(value: js.Array[Message]): Self = StObject.set(x, "hl7V2Messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHl7V2MessagesUndefined: Self = StObject.set(x, "hl7V2Messages", js.undefined)
+    inline def setHl7V2MessagesUndefined: Self = StObject.set(x, "hl7V2Messages", js.undefined)
     
-    @scala.inline
-    def setHl7V2MessagesVarargs(value: Message*): Self = StObject.set(x, "hl7V2Messages", js.Array(value :_*))
+    inline def setHl7V2MessagesVarargs(value: Message*): Self = StObject.set(x, "hl7V2Messages", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

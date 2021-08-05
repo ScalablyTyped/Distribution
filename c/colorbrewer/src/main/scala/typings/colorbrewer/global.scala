@@ -10,6 +10,5 @@ object global {
   @JSGlobal("colorbrewer")
   @js.native
   def colorbrewer: Base = js.native
-  @scala.inline
-  def colorbrewer_=(x: Base): Unit = js.Dynamic.global.updateDynamic("colorbrewer")(x.asInstanceOf[js.Any])
+  inline def colorbrewer_=(x: Base): Unit = js.Dynamic.global.updateDynamic("colorbrewer")(x.asInstanceOf[js.Any])
 }

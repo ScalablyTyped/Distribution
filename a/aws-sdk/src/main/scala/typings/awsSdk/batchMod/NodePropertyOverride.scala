@@ -18,22 +18,17 @@ trait NodePropertyOverride extends StObject {
 }
 object NodePropertyOverride {
   
-  @scala.inline
-  def apply(targetNodes: String): NodePropertyOverride = {
+  inline def apply(targetNodes: String): NodePropertyOverride = {
     val __obj = js.Dynamic.literal(targetNodes = targetNodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodePropertyOverride]
   }
   
-  @scala.inline
-  implicit class NodePropertyOverrideMutableBuilder[Self <: NodePropertyOverride] (val x: Self) extends AnyVal {
+  extension [Self <: NodePropertyOverride](x: Self) {
     
-    @scala.inline
-    def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
+    inline def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerOverridesUndefined: Self = StObject.set(x, "containerOverrides", js.undefined)
+    inline def setContainerOverridesUndefined: Self = StObject.set(x, "containerOverrides", js.undefined)
     
-    @scala.inline
-    def setTargetNodes(value: String): Self = StObject.set(x, "targetNodes", value.asInstanceOf[js.Any])
+    inline def setTargetNodes(value: String): Self = StObject.set(x, "targetNodes", value.asInstanceOf[js.Any])
   }
 }

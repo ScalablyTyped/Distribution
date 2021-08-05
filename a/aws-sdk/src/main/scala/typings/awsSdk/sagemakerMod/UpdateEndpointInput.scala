@@ -28,34 +28,25 @@ trait UpdateEndpointInput extends StObject {
 }
 object UpdateEndpointInput {
   
-  @scala.inline
-  def apply(EndpointConfigName: EndpointConfigName, EndpointName: EndpointName): UpdateEndpointInput = {
+  inline def apply(EndpointConfigName: EndpointConfigName, EndpointName: EndpointName): UpdateEndpointInput = {
     val __obj = js.Dynamic.literal(EndpointConfigName = EndpointConfigName.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointInput]
   }
   
-  @scala.inline
-  implicit class UpdateEndpointInputMutableBuilder[Self <: UpdateEndpointInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEndpointInput](x: Self) {
     
-    @scala.inline
-    def setEndpointConfigName(value: EndpointConfigName): Self = StObject.set(x, "EndpointConfigName", value.asInstanceOf[js.Any])
+    inline def setEndpointConfigName(value: EndpointConfigName): Self = StObject.set(x, "EndpointConfigName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: EndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeRetainedVariantProperties(value: VariantPropertyList): Self = StObject.set(x, "ExcludeRetainedVariantProperties", value.asInstanceOf[js.Any])
+    inline def setExcludeRetainedVariantProperties(value: VariantPropertyList): Self = StObject.set(x, "ExcludeRetainedVariantProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeRetainedVariantPropertiesUndefined: Self = StObject.set(x, "ExcludeRetainedVariantProperties", js.undefined)
+    inline def setExcludeRetainedVariantPropertiesUndefined: Self = StObject.set(x, "ExcludeRetainedVariantProperties", js.undefined)
     
-    @scala.inline
-    def setExcludeRetainedVariantPropertiesVarargs(value: VariantProperty*): Self = StObject.set(x, "ExcludeRetainedVariantProperties", js.Array(value :_*))
+    inline def setExcludeRetainedVariantPropertiesVarargs(value: VariantProperty*): Self = StObject.set(x, "ExcludeRetainedVariantProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setRetainAllVariantProperties(value: Boolean): Self = StObject.set(x, "RetainAllVariantProperties", value.asInstanceOf[js.Any])
+    inline def setRetainAllVariantProperties(value: Boolean): Self = StObject.set(x, "RetainAllVariantProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainAllVariantPropertiesUndefined: Self = StObject.set(x, "RetainAllVariantProperties", js.undefined)
+    inline def setRetainAllVariantPropertiesUndefined: Self = StObject.set(x, "RetainAllVariantProperties", js.undefined)
   }
 }

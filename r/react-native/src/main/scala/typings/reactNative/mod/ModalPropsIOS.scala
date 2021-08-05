@@ -43,44 +43,33 @@ trait ModalPropsIOS extends StObject {
 }
 object ModalPropsIOS {
   
-  @scala.inline
-  def apply(): ModalPropsIOS = {
+  inline def apply(): ModalPropsIOS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalPropsIOS]
   }
   
-  @scala.inline
-  implicit class ModalPropsIOSMutableBuilder[Self <: ModalPropsIOS] (val x: Self) extends AnyVal {
+  extension [Self <: ModalPropsIOS](x: Self) {
     
-    @scala.inline
-    def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
+    inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+    inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
     
-    @scala.inline
-    def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onOrientationChange", js.Any.fromFunction1(value))
+    inline def setOnOrientationChange(value: /* event */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onOrientationChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
+    inline def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
     
-    @scala.inline
-    def setPresentationStyle(value: fullScreen | pageSheet | formSheet | overFullScreen): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
+    inline def setPresentationStyle(value: fullScreen | pageSheet | formSheet | overFullScreen): Self = StObject.set(x, "presentationStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentationStyleUndefined: Self = StObject.set(x, "presentationStyle", js.undefined)
+    inline def setPresentationStyleUndefined: Self = StObject.set(x, "presentationStyle", js.undefined)
     
-    @scala.inline
-    def setSupportedOrientations(
+    inline def setSupportedOrientations(
       value: js.Array[
           portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`
         ]
     ): Self = StObject.set(x, "supportedOrientations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
+    inline def setSupportedOrientationsUndefined: Self = StObject.set(x, "supportedOrientations", js.undefined)
     
-    @scala.inline
-    def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
+    inline def setSupportedOrientationsVarargs(value: (portrait | `portrait-upside-down` | landscape | `landscape-left` | `landscape-right`)*): Self = StObject.set(x, "supportedOrientations", js.Array(value :_*))
   }
 }

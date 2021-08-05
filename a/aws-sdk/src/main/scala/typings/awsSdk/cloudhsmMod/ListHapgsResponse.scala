@@ -18,25 +18,19 @@ trait ListHapgsResponse extends StObject {
 }
 object ListHapgsResponse {
   
-  @scala.inline
-  def apply(HapgList: HapgList): ListHapgsResponse = {
+  inline def apply(HapgList: HapgList): ListHapgsResponse = {
     val __obj = js.Dynamic.literal(HapgList = HapgList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHapgsResponse]
   }
   
-  @scala.inline
-  implicit class ListHapgsResponseMutableBuilder[Self <: ListHapgsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListHapgsResponse](x: Self) {
     
-    @scala.inline
-    def setHapgList(value: HapgList): Self = StObject.set(x, "HapgList", value.asInstanceOf[js.Any])
+    inline def setHapgList(value: HapgList): Self = StObject.set(x, "HapgList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHapgListVarargs(value: HapgArn*): Self = StObject.set(x, "HapgList", js.Array(value :_*))
+    inline def setHapgListVarargs(value: HapgArn*): Self = StObject.set(x, "HapgList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

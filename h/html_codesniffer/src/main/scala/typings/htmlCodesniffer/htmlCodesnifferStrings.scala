@@ -11,48 +11,41 @@ object htmlCodesnifferStrings {
   sealed trait _empty
     extends StObject
        with DocumentType
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait html40
     extends StObject
        with DocumentType
-  @scala.inline
-  def html40: html40 = "html40".asInstanceOf[html40]
+  inline def html40: html40 = "html40".asInstanceOf[html40]
   
   @js.native
   sealed trait html401
     extends StObject
        with DocumentType
-  @scala.inline
-  def html401: html401 = "html401".asInstanceOf[html401]
+  inline def html401: html401 = "html401".asInstanceOf[html401]
   
   @js.native
   sealed trait html5
     extends StObject
        with DocumentType
-  @scala.inline
-  def html5: html5 = "html5".asInstanceOf[html5]
+  inline def html5: html5 = "html5".asInstanceOf[html5]
   
   @js.native
   sealed trait xhtml10
     extends StObject
        with DocumentType
-  @scala.inline
-  def xhtml10: xhtml10 = "xhtml10".asInstanceOf[xhtml10]
+  inline def xhtml10: xhtml10 = "xhtml10".asInstanceOf[xhtml10]
   
   @js.native
   sealed trait xhtml11
     extends StObject
        with DocumentType
-  @scala.inline
-  def xhtml11: xhtml11 = "xhtml11".asInstanceOf[xhtml11]
+  inline def xhtml11: xhtml11 = "xhtml11".asInstanceOf[xhtml11]
   
   @js.native
   sealed trait xhtml5
     extends StObject
        with DocumentType
-  @scala.inline
-  def xhtml5: xhtml5 = "xhtml5".asInstanceOf[xhtml5]
+  inline def xhtml5: xhtml5 = "xhtml5".asInstanceOf[xhtml5]
 }

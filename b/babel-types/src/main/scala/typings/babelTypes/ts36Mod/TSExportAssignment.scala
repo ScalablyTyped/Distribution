@@ -20,13 +20,10 @@ object TSExportAssignment {
   @js.native
   def apply(expression: Expression): TSExportAssignment = js.native
   
-  @scala.inline
-  implicit class TSExportAssignmentMutableBuilder[Self <: TSExportAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: TSExportAssignment](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSExportAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSExportAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -178,8 +178,7 @@ trait XNode
 }
 object XNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: XNamedNodeMap,
     ChildNodes: XNodeList,
     FirstChild: XNode,
@@ -227,124 +226,84 @@ object XNode {
     __obj.asInstanceOf[XNode]
   }
   
-  @scala.inline
-  implicit class XNodeMutableBuilder[Self <: XNode] (val x: Self) extends AnyVal {
+  extension [Self <: XNode](x: Self) {
     
-    @scala.inline
-    def setAppendChild(value: XNode => XNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: XNode => XNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAttributes(value: XNamedNodeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: XNamedNodeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNodes(value: XNodeList): Self = StObject.set(x, "ChildNodes", value.asInstanceOf[js.Any])
+    inline def setChildNodes(value: XNodeList): Self = StObject.set(x, "ChildNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloneNode(value: Boolean => XNode): Self = StObject.set(x, "cloneNode", js.Any.fromFunction1(value))
+    inline def setCloneNode(value: Boolean => XNode): Self = StObject.set(x, "cloneNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFirstChild(value: XNode): Self = StObject.set(x, "FirstChild", value.asInstanceOf[js.Any])
+    inline def setFirstChild(value: XNode): Self = StObject.set(x, "FirstChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAttributes(value: () => XNamedNodeMap): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
+    inline def setGetAttributes(value: () => XNamedNodeMap): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetChildNodes(value: () => XNodeList): Self = StObject.set(x, "getChildNodes", js.Any.fromFunction0(value))
+    inline def setGetChildNodes(value: () => XNodeList): Self = StObject.set(x, "getChildNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFirstChild(value: () => XNode): Self = StObject.set(x, "getFirstChild", js.Any.fromFunction0(value))
+    inline def setGetFirstChild(value: () => XNode): Self = StObject.set(x, "getFirstChild", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastChild(value: () => XNode): Self = StObject.set(x, "getLastChild", js.Any.fromFunction0(value))
+    inline def setGetLastChild(value: () => XNode): Self = StObject.set(x, "getLastChild", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocalName(value: () => String): Self = StObject.set(x, "getLocalName", js.Any.fromFunction0(value))
+    inline def setGetLocalName(value: () => String): Self = StObject.set(x, "getLocalName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNamespaceURI(value: () => String): Self = StObject.set(x, "getNamespaceURI", js.Any.fromFunction0(value))
+    inline def setGetNamespaceURI(value: () => String): Self = StObject.set(x, "getNamespaceURI", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNextSibling(value: () => XNode): Self = StObject.set(x, "getNextSibling", js.Any.fromFunction0(value))
+    inline def setGetNextSibling(value: () => XNode): Self = StObject.set(x, "getNextSibling", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodeName(value: () => String): Self = StObject.set(x, "getNodeName", js.Any.fromFunction0(value))
+    inline def setGetNodeName(value: () => String): Self = StObject.set(x, "getNodeName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodeType(value: () => NodeType): Self = StObject.set(x, "getNodeType", js.Any.fromFunction0(value))
+    inline def setGetNodeType(value: () => NodeType): Self = StObject.set(x, "getNodeType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodeValue(value: () => String): Self = StObject.set(x, "getNodeValue", js.Any.fromFunction0(value))
+    inline def setGetNodeValue(value: () => String): Self = StObject.set(x, "getNodeValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOwnerDocument(value: () => XDocument): Self = StObject.set(x, "getOwnerDocument", js.Any.fromFunction0(value))
+    inline def setGetOwnerDocument(value: () => XDocument): Self = StObject.set(x, "getOwnerDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentNode(value: () => XNode): Self = StObject.set(x, "getParentNode", js.Any.fromFunction0(value))
+    inline def setGetParentNode(value: () => XNode): Self = StObject.set(x, "getParentNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrefix(value: () => String): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
+    inline def setGetPrefix(value: () => String): Self = StObject.set(x, "getPrefix", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreviousSibling(value: () => XNode): Self = StObject.set(x, "getPreviousSibling", js.Any.fromFunction0(value))
+    inline def setGetPreviousSibling(value: () => XNode): Self = StObject.set(x, "getPreviousSibling", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasAttributes(value: () => Boolean): Self = StObject.set(x, "hasAttributes", js.Any.fromFunction0(value))
+    inline def setHasAttributes(value: () => Boolean): Self = StObject.set(x, "hasAttributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
+    inline def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertBefore(value: (XNode, XNode) => XNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
+    inline def setInsertBefore(value: (XNode, XNode) => XNode): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsSupported(value: (String, String) => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction2(value))
+    inline def setIsSupported(value: (String, String) => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLastChild(value: XNode): Self = StObject.set(x, "LastChild", value.asInstanceOf[js.Any])
+    inline def setLastChild(value: XNode): Self = StObject.set(x, "LastChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalName(value: String): Self = StObject.set(x, "LocalName", value.asInstanceOf[js.Any])
+    inline def setLocalName(value: String): Self = StObject.set(x, "LocalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
+    inline def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextSibling(value: XNode): Self = StObject.set(x, "NextSibling", value.asInstanceOf[js.Any])
+    inline def setNextSibling(value: XNode): Self = StObject.set(x, "NextSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeName(value: String): Self = StObject.set(x, "NodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: String): Self = StObject.set(x, "NodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeType(value: NodeType): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: NodeType): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeValue(value: String): Self = StObject.set(x, "NodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: String): Self = StObject.set(x, "NodeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+    inline def setNormalize(value: () => Unit): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOwnerDocument(value: XDocument): Self = StObject.set(x, "OwnerDocument", value.asInstanceOf[js.Any])
+    inline def setOwnerDocument(value: XDocument): Self = StObject.set(x, "OwnerDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNode(value: XNode): Self = StObject.set(x, "ParentNode", value.asInstanceOf[js.Any])
+    inline def setParentNode(value: XNode): Self = StObject.set(x, "ParentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSibling(value: XNode): Self = StObject.set(x, "PreviousSibling", value.asInstanceOf[js.Any])
+    inline def setPreviousSibling(value: XNode): Self = StObject.set(x, "PreviousSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveChild(value: XNode => XNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+    inline def setRemoveChild(value: XNode => XNode): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceChild(value: (XNode, XNode) => XNode): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
+    inline def setReplaceChild(value: (XNode, XNode) => XNode): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetNodeValue(value: String => Unit): Self = StObject.set(x, "setNodeValue", js.Any.fromFunction1(value))
+    inline def setSetNodeValue(value: String => Unit): Self = StObject.set(x, "setNodeValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPrefix(value: String => Unit): Self = StObject.set(x, "setPrefix", js.Any.fromFunction1(value))
+    inline def setSetPrefix(value: String => Unit): Self = StObject.set(x, "setPrefix", js.Any.fromFunction1(value))
   }
 }

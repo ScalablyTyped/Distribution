@@ -20,22 +20,17 @@ trait CreateCloudFormationTemplateRequest extends StObject {
 }
 object CreateCloudFormationTemplateRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): CreateCloudFormationTemplateRequest = {
+  inline def apply(ApplicationId: string): CreateCloudFormationTemplateRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCloudFormationTemplateRequest]
   }
   
-  @scala.inline
-  implicit class CreateCloudFormationTemplateRequestMutableBuilder[Self <: CreateCloudFormationTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCloudFormationTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
+    inline def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticVersionUndefined: Self = StObject.set(x, "SemanticVersion", js.undefined)
+    inline def setSemanticVersionUndefined: Self = StObject.set(x, "SemanticVersion", js.undefined)
   }
 }

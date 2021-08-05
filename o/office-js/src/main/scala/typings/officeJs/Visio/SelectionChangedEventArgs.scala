@@ -30,22 +30,17 @@ trait SelectionChangedEventArgs extends StObject {
 }
 object SelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(pageName: String, shapeNames: js.Array[String]): SelectionChangedEventArgs = {
+  inline def apply(pageName: String, shapeNames: js.Array[String]): SelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(pageName = pageName.asInstanceOf[js.Any], shapeNames = shapeNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class SelectionChangedEventArgsMutableBuilder[Self <: SelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
+    inline def setPageName(value: String): Self = StObject.set(x, "pageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeNames(value: js.Array[String]): Self = StObject.set(x, "shapeNames", value.asInstanceOf[js.Any])
+    inline def setShapeNames(value: js.Array[String]): Self = StObject.set(x, "shapeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeNamesVarargs(value: String*): Self = StObject.set(x, "shapeNames", js.Array(value :_*))
+    inline def setShapeNamesVarargs(value: String*): Self = StObject.set(x, "shapeNames", js.Array(value :_*))
   }
 }

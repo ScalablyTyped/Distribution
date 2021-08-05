@@ -16,31 +16,23 @@ trait MessagePayload extends StObject {
 }
 object MessagePayload {
   
-  @scala.inline
-  def apply(devices: js.Array[String], payload: js.Any, topic: String): MessagePayload = {
+  inline def apply(devices: js.Array[String], payload: js.Any, topic: String): MessagePayload = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePayload]
   }
   
-  @scala.inline
-  implicit class MessagePayloadMutableBuilder[Self <: MessagePayload] (val x: Self) extends AnyVal {
+  extension [Self <: MessagePayload](x: Self) {
     
-    @scala.inline
-    def setDevices(value: js.Array[String]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[String]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesVarargs(value: String*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: String*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
-    @scala.inline
-    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQos(value: Double): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
+    inline def setQos(value: Double): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
+    inline def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

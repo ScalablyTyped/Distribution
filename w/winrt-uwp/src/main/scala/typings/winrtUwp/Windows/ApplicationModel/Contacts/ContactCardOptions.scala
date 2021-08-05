@@ -19,8 +19,7 @@ trait ContactCardOptions extends StObject {
 }
 object ContactCardOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headerKind: ContactCardHeaderKind,
     initialTabKind: ContactCardTabKind,
     serverSearchContactListIds: IVector[String]
@@ -29,16 +28,12 @@ object ContactCardOptions {
     __obj.asInstanceOf[ContactCardOptions]
   }
   
-  @scala.inline
-  implicit class ContactCardOptionsMutableBuilder[Self <: ContactCardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContactCardOptions](x: Self) {
     
-    @scala.inline
-    def setHeaderKind(value: ContactCardHeaderKind): Self = StObject.set(x, "headerKind", value.asInstanceOf[js.Any])
+    inline def setHeaderKind(value: ContactCardHeaderKind): Self = StObject.set(x, "headerKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialTabKind(value: ContactCardTabKind): Self = StObject.set(x, "initialTabKind", value.asInstanceOf[js.Any])
+    inline def setInitialTabKind(value: ContactCardTabKind): Self = StObject.set(x, "initialTabKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerSearchContactListIds(value: IVector[String]): Self = StObject.set(x, "serverSearchContactListIds", value.asInstanceOf[js.Any])
+    inline def setServerSearchContactListIds(value: IVector[String]): Self = StObject.set(x, "serverSearchContactListIds", value.asInstanceOf[js.Any])
   }
 }

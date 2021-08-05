@@ -12,17 +12,14 @@ object anon {
   }
   object Visible {
     
-    @scala.inline
-    def apply(visible: js.Any): Visible = {
+    inline def apply(visible: js.Any): Visible = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[Visible]
     }
     
-    @scala.inline
-    implicit class VisibleMutableBuilder[Self <: Visible] (val x: Self) extends AnyVal {
+    extension [Self <: Visible](x: Self) {
       
-      @scala.inline
-      def setVisible(value: js.Any): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: js.Any): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

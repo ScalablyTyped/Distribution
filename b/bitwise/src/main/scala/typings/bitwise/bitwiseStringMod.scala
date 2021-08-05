@@ -17,10 +17,8 @@ object bitwiseStringMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def toBits(string: String): js.Array[Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toBits")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[Bit]]
+    inline def toBits(string: String): js.Array[Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toBits")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[Bit]]
   }
   
-  @scala.inline
-  def toBits(string: String): js.Array[Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toBits")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[Bit]]
+  inline def toBits(string: String): js.Array[Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toBits")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[Bit]]
 }

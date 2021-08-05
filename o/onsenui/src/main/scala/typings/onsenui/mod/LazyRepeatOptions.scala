@@ -34,43 +34,31 @@ trait LazyRepeatOptions extends StObject {
 }
 object LazyRepeatOptions {
   
-  @scala.inline
-  def apply(): LazyRepeatOptions = {
+  inline def apply(): LazyRepeatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LazyRepeatOptions]
   }
   
-  @scala.inline
-  implicit class LazyRepeatOptionsMutableBuilder[Self <: LazyRepeatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LazyRepeatOptions](x: Self) {
     
-    @scala.inline
-    def setCalculateItemHeight(value: Double): Self = StObject.set(x, "calculateItemHeight", value.asInstanceOf[js.Any])
+    inline def setCalculateItemHeight(value: Double): Self = StObject.set(x, "calculateItemHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculateItemHeightUndefined: Self = StObject.set(x, "calculateItemHeight", js.undefined)
+    inline def setCalculateItemHeightUndefined: Self = StObject.set(x, "calculateItemHeight", js.undefined)
     
-    @scala.inline
-    def setConfigureItemScope(value: Double): Self = StObject.set(x, "configureItemScope", value.asInstanceOf[js.Any])
+    inline def setConfigureItemScope(value: Double): Self = StObject.set(x, "configureItemScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigureItemScopeUndefined: Self = StObject.set(x, "configureItemScope", js.undefined)
+    inline def setConfigureItemScopeUndefined: Self = StObject.set(x, "configureItemScope", js.undefined)
     
-    @scala.inline
-    def setCountItems(value: Double): Self = StObject.set(x, "countItems", value.asInstanceOf[js.Any])
+    inline def setCountItems(value: Double): Self = StObject.set(x, "countItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountItemsUndefined: Self = StObject.set(x, "countItems", js.undefined)
+    inline def setCountItemsUndefined: Self = StObject.set(x, "countItems", js.undefined)
     
-    @scala.inline
-    def setCreateItemContent(value: HTMLElement): Self = StObject.set(x, "createItemContent", value.asInstanceOf[js.Any])
+    inline def setCreateItemContent(value: HTMLElement): Self = StObject.set(x, "createItemContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateItemContentUndefined: Self = StObject.set(x, "createItemContent", js.undefined)
+    inline def setCreateItemContentUndefined: Self = StObject.set(x, "createItemContent", js.undefined)
     
-    @scala.inline
-    def setDestroyItem(value: String): Self = StObject.set(x, "destroyItem", value.asInstanceOf[js.Any])
+    inline def setDestroyItem(value: String): Self = StObject.set(x, "destroyItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyItemUndefined: Self = StObject.set(x, "destroyItem", js.undefined)
+    inline def setDestroyItemUndefined: Self = StObject.set(x, "destroyItem", js.undefined)
   }
 }

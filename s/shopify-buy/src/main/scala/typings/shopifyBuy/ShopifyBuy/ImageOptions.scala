@@ -12,19 +12,15 @@ trait ImageOptions extends StObject {
 }
 object ImageOptions {
   
-  @scala.inline
-  def apply(maxHeight: Double, maxWidth: Double): ImageOptions = {
+  inline def apply(maxHeight: Double, maxWidth: Double): ImageOptions = {
     val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOptions]
   }
   
-  @scala.inline
-  implicit class ImageOptionsMutableBuilder[Self <: ImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageOptions](x: Self) {
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
   }
 }

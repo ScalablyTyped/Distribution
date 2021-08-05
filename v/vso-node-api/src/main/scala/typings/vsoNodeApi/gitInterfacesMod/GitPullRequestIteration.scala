@@ -80,8 +80,7 @@ trait GitPullRequestIteration extends StObject {
 }
 object GitPullRequestIteration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     author: IdentityRef,
     changeList: js.Array[GitPullRequestChange],
@@ -101,55 +100,38 @@ object GitPullRequestIteration {
     __obj.asInstanceOf[GitPullRequestIteration]
   }
   
-  @scala.inline
-  implicit class GitPullRequestIterationMutableBuilder[Self <: GitPullRequestIteration] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestIteration](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: IdentityRef): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: IdentityRef): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeList(value: js.Array[GitPullRequestChange]): Self = StObject.set(x, "changeList", value.asInstanceOf[js.Any])
+    inline def setChangeList(value: js.Array[GitPullRequestChange]): Self = StObject.set(x, "changeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeListVarargs(value: GitPullRequestChange*): Self = StObject.set(x, "changeList", js.Array(value :_*))
+    inline def setChangeListVarargs(value: GitPullRequestChange*): Self = StObject.set(x, "changeList", js.Array(value :_*))
     
-    @scala.inline
-    def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: js.Array[GitCommitRef]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: GitCommitRef*): Self = StObject.set(x, "commits", js.Array(value :_*))
     
-    @scala.inline
-    def setCommonRefCommit(value: GitCommitRef): Self = StObject.set(x, "commonRefCommit", value.asInstanceOf[js.Any])
+    inline def setCommonRefCommit(value: GitCommitRef): Self = StObject.set(x, "commonRefCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasMoreCommits(value: Boolean): Self = StObject.set(x, "hasMoreCommits", value.asInstanceOf[js.Any])
+    inline def setHasMoreCommits(value: Boolean): Self = StObject.set(x, "hasMoreCommits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: GitPushRef): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: GitPushRef): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: IterationReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: IterationReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRefCommit(value: GitCommitRef): Self = StObject.set(x, "sourceRefCommit", value.asInstanceOf[js.Any])
+    inline def setSourceRefCommit(value: GitCommitRef): Self = StObject.set(x, "sourceRefCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRefCommit(value: GitCommitRef): Self = StObject.set(x, "targetRefCommit", value.asInstanceOf[js.Any])
+    inline def setTargetRefCommit(value: GitCommitRef): Self = StObject.set(x, "targetRefCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: Date): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

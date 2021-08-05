@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.ICanvasRenderingContext2D")
 @js.native
-class ICanvasRenderingContext2D protected ()
+/* private */ class ICanvasRenderingContext2D ()
   extends StObject
      with typings.activexMshtml.MSHTML.ICanvasRenderingContext2D {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.ICanvasRenderingContext2D_typekey")
   var MSHTMLDotICanvasRenderingContext2D_typekey: typings.activexMshtml.MSHTML.ICanvasRenderingContext2D = js.native
   

@@ -129,8 +129,7 @@ trait JQueryEasingFunctions extends StObject {
 }
 object JQueryEasingFunctions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     easeInBack: /* percent */ Double => Double,
     easeInBounce: /* percent */ Double => Double,
     easeInCirc: /* percent */ Double => Double,
@@ -166,97 +165,66 @@ object JQueryEasingFunctions {
     __obj.asInstanceOf[JQueryEasingFunctions]
   }
   
-  @scala.inline
-  implicit class JQueryEasingFunctionsMutableBuilder[Self <: JQueryEasingFunctions] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryEasingFunctions](x: Self) {
     
-    @scala.inline
-    def setEaseInBack(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInBack", js.Any.fromFunction1(value))
+    inline def setEaseInBack(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInBack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInBounce", js.Any.fromFunction1(value))
+    inline def setEaseInBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInBounce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInCirc(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInCirc", js.Any.fromFunction1(value))
+    inline def setEaseInCirc(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInCirc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInCubic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInCubic", js.Any.fromFunction1(value))
+    inline def setEaseInCubic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInCubic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInElastic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInElastic", js.Any.fromFunction1(value))
+    inline def setEaseInElastic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInElastic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInExpo(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInExpo", js.Any.fromFunction1(value))
+    inline def setEaseInExpo(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInExpo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutBack(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutBack", js.Any.fromFunction1(value))
+    inline def setEaseInOutBack(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutBack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutBounce", js.Any.fromFunction1(value))
+    inline def setEaseInOutBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutBounce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutCirc(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutCirc", js.Any.fromFunction1(value))
+    inline def setEaseInOutCirc(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutCirc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutCubic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutCubic", js.Any.fromFunction1(value))
+    inline def setEaseInOutCubic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutCubic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutElastic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutElastic", js.Any.fromFunction1(value))
+    inline def setEaseInOutElastic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutElastic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutExpo(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutExpo", js.Any.fromFunction1(value))
+    inline def setEaseInOutExpo(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutExpo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutQuad(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutQuad", js.Any.fromFunction1(value))
+    inline def setEaseInOutQuad(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutQuad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutQuart(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutQuart", js.Any.fromFunction1(value))
+    inline def setEaseInOutQuart(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutQuart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutQuint(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutQuint", js.Any.fromFunction1(value))
+    inline def setEaseInOutQuint(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutQuint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInOutSine(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutSine", js.Any.fromFunction1(value))
+    inline def setEaseInOutSine(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInOutSine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInQuad(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInQuad", js.Any.fromFunction1(value))
+    inline def setEaseInQuad(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInQuad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInQuart(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInQuart", js.Any.fromFunction1(value))
+    inline def setEaseInQuart(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInQuart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInQuint(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInQuint", js.Any.fromFunction1(value))
+    inline def setEaseInQuint(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInQuint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseInSine(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInSine", js.Any.fromFunction1(value))
+    inline def setEaseInSine(value: /* percent */ Double => Double): Self = StObject.set(x, "easeInSine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutBack(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutBack", js.Any.fromFunction1(value))
+    inline def setEaseOutBack(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutBack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutBounce", js.Any.fromFunction1(value))
+    inline def setEaseOutBounce(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutBounce", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutCirc(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutCirc", js.Any.fromFunction1(value))
+    inline def setEaseOutCirc(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutCirc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutCubic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutCubic", js.Any.fromFunction1(value))
+    inline def setEaseOutCubic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutCubic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutElastic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutElastic", js.Any.fromFunction1(value))
+    inline def setEaseOutElastic(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutElastic", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutExpo(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutExpo", js.Any.fromFunction1(value))
+    inline def setEaseOutExpo(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutExpo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutQuad(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutQuad", js.Any.fromFunction1(value))
+    inline def setEaseOutQuad(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutQuad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutQuart(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutQuart", js.Any.fromFunction1(value))
+    inline def setEaseOutQuart(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutQuart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutQuint(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutQuint", js.Any.fromFunction1(value))
+    inline def setEaseOutQuint(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutQuint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEaseOutSine(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutSine", js.Any.fromFunction1(value))
+    inline def setEaseOutSine(value: /* percent */ Double => Double): Self = StObject.set(x, "easeOutSine", js.Any.fromFunction1(value))
   }
 }

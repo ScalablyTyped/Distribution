@@ -20,37 +20,27 @@ trait ExitEvent extends StObject {
 }
 object ExitEvent {
   
-  @scala.inline
-  def apply(): ExitEvent = {
+  inline def apply(): ExitEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExitEvent]
   }
   
-  @scala.inline
-  implicit class ExitEventMutableBuilder[Self <: ExitEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ExitEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReportingName(value: String): Self = StObject.set(x, "reportingName", value.asInstanceOf[js.Any])
+    inline def setReportingName(value: String): Self = StObject.set(x, "reportingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingNameUndefined: Self = StObject.set(x, "reportingName", js.undefined)
+    inline def setReportingNameUndefined: Self = StObject.set(x, "reportingName", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

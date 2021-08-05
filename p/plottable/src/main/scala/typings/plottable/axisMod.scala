@@ -29,27 +29,27 @@ object axisMod {
       */
     def this(scale: Scale[D, Double], orientation: AxisOrientation) = this()
     
-    var _annotatedTicks: js.Any = js.native
+    /* private */ var _annotatedTicks: js.Any = js.native
     
     /* private */ def _annotatedTicksToRender(): js.Any = js.native
     
-    var _annotationContainer: js.Any = js.native
+    /* private */ var _annotationContainer: js.Any = js.native
     
-    var _annotationFormatter: js.Any = js.native
+    /* private */ var _annotationFormatter: js.Any = js.native
     
-    var _annotationMeasurer: js.Any = js.native
+    /* private */ var _annotationMeasurer: js.Any = js.native
     
-    var _annotationTierCount: js.Any = js.native
+    /* private */ var _annotationTierCount: js.Any = js.native
     
     /* protected */ def _annotationTierHeight(): Double = js.native
     
     /* private */ def _annotationToTier(measurements: js.Any): js.Any = js.native
     
-    var _annotationWriter: js.Any = js.native
+    /* private */ var _annotationWriter: js.Any = js.native
     
-    var _annotationsEnabled: js.Any = js.native
+    /* private */ var _annotationsEnabled: js.Any = js.native
     
-    var _baseline: SimpleSelection[Unit] = js.native
+    /* protected */ var _baseline: SimpleSelection[Unit] = js.native
     
     /* protected */ def _computeHeight(): Double = js.native
     
@@ -64,9 +64,9 @@ object axisMod {
     
     /* protected */ def _drawAnnotations(): Unit = js.native
     
-    var _endTickLength: js.Any = js.native
+    /* private */ var _endTickLength: js.Any = js.native
     
-    var _formatter: js.Any = js.native
+    /* private */ var _formatter: js.Any = js.native
     
     /* protected */ def _generateBaselineAttrHash(): StringDictionary[Double] = js.native
     
@@ -86,9 +86,9 @@ object axisMod {
       */
     /* protected */ def _hideTickMarksWithoutLabel(): Unit = js.native
     
-    var _innerTickLength: js.Any = js.native
+    /* private */ var _innerTickLength: js.Any = js.native
     
-    var _margin: js.Any = js.native
+    /* private */ var _margin: js.Any = js.native
     
     /**
       * Gets the maximum pixel length over all ticks on this axis.
@@ -96,15 +96,15 @@ object axisMod {
       */
     /* protected */ def _maxLabelTickLength(): Double = js.native
     
-    var _orientation: js.Any = js.native
+    /* private */ var _orientation: js.Any = js.native
     
     /* protected */ def _removeAnnotations(): Unit = js.native
     
     /* protected */ def _rescale(): Unit = js.native
     
-    var _rescaleCallback: js.Any = js.native
+    /* private */ var _rescaleCallback: js.Any = js.native
     
-    var _scale: Scale[D, Double] = js.native
+    /* protected */ var _scale: Scale[D, Double] = js.native
     
     /* protected */ def _setDefaultAlignment(): Unit = js.native
     
@@ -112,13 +112,13 @@ object axisMod {
     
     /* protected */ def _showAllTickMarks(): Unit = js.native
     
-    var _showEndTickLabels: js.Any = js.native
+    /* private */ var _showEndTickLabels: js.Any = js.native
     
-    var _tickLabelContainer: SimpleSelection[Unit] = js.native
+    /* protected */ var _tickLabelContainer: SimpleSelection[Unit] = js.native
     
-    var _tickLabelPadding: js.Any = js.native
+    /* private */ var _tickLabelPadding: js.Any = js.native
     
-    var _tickMarkContainer: SimpleSelection[Unit] = js.native
+    /* protected */ var _tickMarkContainer: SimpleSelection[Unit] = js.native
     
     /**
       * Gets the annotated ticks.
@@ -288,8 +288,7 @@ object axisMod {
     @JSImport("plottable/build/src/axes/axis", "Axis.ANNOTATION_CIRCLE_CLASS")
     @js.native
     def ANNOTATION_CIRCLE_CLASS: String = js.native
-    @scala.inline
-    def ANNOTATION_CIRCLE_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_CIRCLE_CLASS")(x.asInstanceOf[js.Any])
+    inline def ANNOTATION_CIRCLE_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_CIRCLE_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each annotation label, which shows the formatted annotation text.
@@ -297,8 +296,7 @@ object axisMod {
     @JSImport("plottable/build/src/axes/axis", "Axis.ANNOTATION_LABEL_CLASS")
     @js.native
     def ANNOTATION_LABEL_CLASS: String = js.native
-    @scala.inline
-    def ANNOTATION_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_LABEL_CLASS")(x.asInstanceOf[js.Any])
+    inline def ANNOTATION_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_LABEL_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each annotation line, which extends from the axis to the rect.
@@ -306,8 +304,7 @@ object axisMod {
     @JSImport("plottable/build/src/axes/axis", "Axis.ANNOTATION_LINE_CLASS")
     @js.native
     def ANNOTATION_LINE_CLASS: String = js.native
-    @scala.inline
-    def ANNOTATION_LINE_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_LINE_CLASS")(x.asInstanceOf[js.Any])
+    inline def ANNOTATION_LINE_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_LINE_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each annotation rect, which surrounds the annotation label.
@@ -315,8 +312,7 @@ object axisMod {
     @JSImport("plottable/build/src/axes/axis", "Axis.ANNOTATION_RECT_CLASS")
     @js.native
     def ANNOTATION_RECT_CLASS: String = js.native
-    @scala.inline
-    def ANNOTATION_RECT_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_RECT_CLASS")(x.asInstanceOf[js.Any])
+    inline def ANNOTATION_RECT_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_RECT_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each end tick mark (the line on the end tick).
@@ -324,8 +320,7 @@ object axisMod {
     @JSImport("plottable/build/src/axes/axis", "Axis.END_TICK_MARK_CLASS")
     @js.native
     def END_TICK_MARK_CLASS: String = js.native
-    @scala.inline
-    def END_TICK_MARK_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END_TICK_MARK_CLASS")(x.asInstanceOf[js.Any])
+    inline def END_TICK_MARK_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END_TICK_MARK_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each tick label (the text associated with the tick).
@@ -333,8 +328,7 @@ object axisMod {
     @JSImport("plottable/build/src/axes/axis", "Axis.TICK_LABEL_CLASS")
     @js.native
     def TICK_LABEL_CLASS: String = js.native
-    @scala.inline
-    def TICK_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TICK_LABEL_CLASS")(x.asInstanceOf[js.Any])
+    inline def TICK_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TICK_LABEL_CLASS")(x.asInstanceOf[js.Any])
     
     /**
       * The css class applied to each tick mark (the line on the tick).
@@ -342,14 +336,12 @@ object axisMod {
     @JSImport("plottable/build/src/axes/axis", "Axis.TICK_MARK_CLASS")
     @js.native
     def TICK_MARK_CLASS: String = js.native
-    @scala.inline
-    def TICK_MARK_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TICK_MARK_CLASS")(x.asInstanceOf[js.Any])
+    inline def TICK_MARK_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TICK_MARK_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/axis", "Axis._ANNOTATION_LABEL_PADDING")
     @js.native
     def _ANNOTATION_LABEL_PADDING: js.Any = js.native
-    @scala.inline
-    def _ANNOTATION_LABEL_PADDING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANNOTATION_LABEL_PADDING")(x.asInstanceOf[js.Any])
+    inline def _ANNOTATION_LABEL_PADDING_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANNOTATION_LABEL_PADDING")(x.asInstanceOf[js.Any])
   }
   
   /* keyof plottable.anon.Bottom */ /* Rewritten from type alias, can be one of: 
@@ -368,25 +360,21 @@ object axisMod {
     @JSImport("plottable/build/src/axes/axis", "AxisOrientation.bottom")
     @js.native
     def bottom: typings.plottable.plottableStrings.bottom = js.native
-    @scala.inline
-    def bottom_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+    inline def bottom_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/axis", "AxisOrientation.left")
     @js.native
     def left: typings.plottable.plottableStrings.left = js.native
-    @scala.inline
-    def left_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
+    inline def left_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/axis", "AxisOrientation.right")
     @js.native
     def right: typings.plottable.plottableStrings.right = js.native
-    @scala.inline
-    def right_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+    inline def right_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/axes/axis", "AxisOrientation.top")
     @js.native
     def top: typings.plottable.plottableStrings.top = js.native
-    @scala.inline
-    def top_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+    inline def top_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   }
 }

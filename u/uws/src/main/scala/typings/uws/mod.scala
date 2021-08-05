@@ -50,29 +50,25 @@ object mod {
   @JSImport("uws", "CLOSED")
   @js.native
   def CLOSED: Double = js.native
-  @scala.inline
-  def CLOSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
+  inline def CLOSED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("uws", "CLOSING")
   @js.native
   def CLOSING: Double = js.native
-  @scala.inline
-  def CLOSING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
+  inline def CLOSING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("uws", "CONNECTING")
   @js.native
   def CONNECTING: Double = js.native
-  @scala.inline
-  def CONNECTING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
+  inline def CONNECTING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("uws", "OPEN")
   @js.native
   def OPEN: Double = js.native
-  @scala.inline
-  def OPEN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
+  inline def OPEN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
   
   @JSImport("uws", "Server")
   @js.native
@@ -113,24 +109,16 @@ object mod {
     var path: String = js.native
   }
   
-  @scala.inline
-  def connect(address: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(address.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def connect(address: String, openListener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(address.asInstanceOf[js.Any], openListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(address: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(address.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def connect(address: String, openListener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(address.asInstanceOf[js.Any], openListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createConnection(address: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(address.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def createConnection(address: String, openListener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(address.asInstanceOf[js.Any], openListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createConnection(address: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(address.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def createConnection(address: String, openListener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(address.asInstanceOf[js.Any], openListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
-  @scala.inline
-  def createServer(options: Unit, connectionListener: js.Function1[/* client */ WebSocket, Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Server]
-  @scala.inline
-  def createServer(options: IServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
-  @scala.inline
-  def createServer(options: IServerOptions, connectionListener: js.Function1[/* client */ WebSocket, Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Server]
+  inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+  inline def createServer(options: Unit, connectionListener: js.Function1[/* client */ WebSocket, Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Server]
+  inline def createServer(options: IServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  inline def createServer(options: IServerOptions, connectionListener: js.Function1[/* client */ WebSocket, Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Server]
   
   @JSImport("uws", "http")
   @js.native
@@ -166,95 +154,66 @@ object mod {
   }
   object IClientOptions {
     
-    @scala.inline
-    def apply(): IClientOptions = {
+    inline def apply(): IClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IClientOptions]
     }
     
-    @scala.inline
-    implicit class IClientOptionsMutableBuilder[Self <: IClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IClientOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setCa(value: js.Array[js.Any]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: js.Array[js.Any]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+      inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      @scala.inline
-      def setCaVarargs(value: js.Any*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: js.Any*): Self = StObject.set(x, "ca", js.Array(value :_*))
       
-      @scala.inline
-      def setCert(value: js.Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: js.Any): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
+      inline def setCiphers(value: String): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
+      inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+      inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+      inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
       
-      @scala.inline
-      def setPfx(value: js.Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: js.Any): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
+      inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setProtocolVersion(value: js.Any): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
+      inline def setProtocolVersion(value: js.Any): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
+      inline def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
       
-      @scala.inline
-      def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
     }
   }
   
@@ -272,44 +231,32 @@ object mod {
   }
   object IPerMessageDeflateOptions {
     
-    @scala.inline
-    def apply(): IPerMessageDeflateOptions = {
+    inline def apply(): IPerMessageDeflateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPerMessageDeflateOptions]
     }
     
-    @scala.inline
-    implicit class IPerMessageDeflateOptionsMutableBuilder[Self <: IPerMessageDeflateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IPerMessageDeflateOptions](x: Self) {
       
-      @scala.inline
-      def setClientMaxWindowBits(value: Double): Self = StObject.set(x, "clientMaxWindowBits", value.asInstanceOf[js.Any])
+      inline def setClientMaxWindowBits(value: Double): Self = StObject.set(x, "clientMaxWindowBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientMaxWindowBitsUndefined: Self = StObject.set(x, "clientMaxWindowBits", js.undefined)
+      inline def setClientMaxWindowBitsUndefined: Self = StObject.set(x, "clientMaxWindowBits", js.undefined)
       
-      @scala.inline
-      def setClientNoContextTakeover(value: Boolean): Self = StObject.set(x, "clientNoContextTakeover", value.asInstanceOf[js.Any])
+      inline def setClientNoContextTakeover(value: Boolean): Self = StObject.set(x, "clientNoContextTakeover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientNoContextTakeoverUndefined: Self = StObject.set(x, "clientNoContextTakeover", js.undefined)
+      inline def setClientNoContextTakeoverUndefined: Self = StObject.set(x, "clientNoContextTakeover", js.undefined)
       
-      @scala.inline
-      def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
+      inline def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemLevelUndefined: Self = StObject.set(x, "memLevel", js.undefined)
+      inline def setMemLevelUndefined: Self = StObject.set(x, "memLevel", js.undefined)
       
-      @scala.inline
-      def setServerMaxWindowBits(value: Double): Self = StObject.set(x, "serverMaxWindowBits", value.asInstanceOf[js.Any])
+      inline def setServerMaxWindowBits(value: Double): Self = StObject.set(x, "serverMaxWindowBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerMaxWindowBitsUndefined: Self = StObject.set(x, "serverMaxWindowBits", js.undefined)
+      inline def setServerMaxWindowBitsUndefined: Self = StObject.set(x, "serverMaxWindowBits", js.undefined)
       
-      @scala.inline
-      def setServerNoContextTakeover(value: Boolean): Self = StObject.set(x, "serverNoContextTakeover", value.asInstanceOf[js.Any])
+      inline def setServerNoContextTakeover(value: Boolean): Self = StObject.set(x, "serverNoContextTakeover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerNoContextTakeoverUndefined: Self = StObject.set(x, "serverNoContextTakeover", js.undefined)
+      inline def setServerNoContextTakeoverUndefined: Self = StObject.set(x, "serverNoContextTakeover", js.undefined)
     }
   }
   
@@ -337,80 +284,56 @@ object mod {
   }
   object IServerOptions {
     
-    @scala.inline
-    def apply(): IServerOptions = {
+    inline def apply(): IServerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IServerOptions]
     }
     
-    @scala.inline
-    implicit class IServerOptionsMutableBuilder[Self <: IServerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IServerOptions](x: Self) {
       
-      @scala.inline
-      def setClientTracking(value: Boolean): Self = StObject.set(x, "clientTracking", value.asInstanceOf[js.Any])
+      inline def setClientTracking(value: Boolean): Self = StObject.set(x, "clientTracking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientTrackingUndefined: Self = StObject.set(x, "clientTracking", js.undefined)
+      inline def setClientTrackingUndefined: Self = StObject.set(x, "clientTracking", js.undefined)
       
-      @scala.inline
-      def setDisableHixie(value: Boolean): Self = StObject.set(x, "disableHixie", value.asInstanceOf[js.Any])
+      inline def setDisableHixie(value: Boolean): Self = StObject.set(x, "disableHixie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHixieUndefined: Self = StObject.set(x, "disableHixie", js.undefined)
+      inline def setDisableHixieUndefined: Self = StObject.set(x, "disableHixie", js.undefined)
       
-      @scala.inline
-      def setHandleProtocols(value: js.Any): Self = StObject.set(x, "handleProtocols", value.asInstanceOf[js.Any])
+      inline def setHandleProtocols(value: js.Any): Self = StObject.set(x, "handleProtocols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleProtocolsUndefined: Self = StObject.set(x, "handleProtocols", js.undefined)
+      inline def setHandleProtocolsUndefined: Self = StObject.set(x, "handleProtocols", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setNoServer(value: Boolean): Self = StObject.set(x, "noServer", value.asInstanceOf[js.Any])
+      inline def setNoServer(value: Boolean): Self = StObject.set(x, "noServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoServerUndefined: Self = StObject.set(x, "noServer", js.undefined)
+      inline def setNoServerUndefined: Self = StObject.set(x, "noServer", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPerMessageDeflate(value: Boolean | IPerMessageDeflateOptions): Self = StObject.set(x, "perMessageDeflate", value.asInstanceOf[js.Any])
+      inline def setPerMessageDeflate(value: Boolean | IPerMessageDeflateOptions): Self = StObject.set(x, "perMessageDeflate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerMessageDeflateUndefined: Self = StObject.set(x, "perMessageDeflate", js.undefined)
+      inline def setPerMessageDeflateUndefined: Self = StObject.set(x, "perMessageDeflate", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setServer(value: typings.node.httpMod.Server | typings.node.httpsMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: typings.node.httpMod.Server | typings.node.httpsMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
       
-      @scala.inline
-      def setVerifyClient(value: VerifyClientCallbackAsync | VerifyClientCallbackSync): Self = StObject.set(x, "verifyClient", value.asInstanceOf[js.Any])
+      inline def setVerifyClient(value: VerifyClientCallbackAsync | VerifyClientCallbackSync): Self = StObject.set(x, "verifyClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifyClientFunction1(value: /* info */ Origin => Boolean): Self = StObject.set(x, "verifyClient", js.Any.fromFunction1(value))
+      inline def setVerifyClientFunction1(value: /* info */ Origin => Boolean): Self = StObject.set(x, "verifyClient", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVerifyClientFunction2(value: (/* info */ Origin, /* callback */ js.Function1[/* res */ Boolean, Unit]) => Unit): Self = StObject.set(x, "verifyClient", js.Any.fromFunction2(value))
+      inline def setVerifyClientFunction2(value: (/* info */ Origin, /* callback */ js.Function1[/* res */ Boolean, Unit]) => Unit): Self = StObject.set(x, "verifyClient", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVerifyClientUndefined: Self = StObject.set(x, "verifyClient", js.undefined)
+      inline def setVerifyClientUndefined: Self = StObject.set(x, "verifyClient", js.undefined)
     }
   }
   

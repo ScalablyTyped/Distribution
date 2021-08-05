@@ -18,25 +18,19 @@ trait UntagResourcesInput extends StObject {
 }
 object UntagResourcesInput {
   
-  @scala.inline
-  def apply(ResourceARNList: ResourceARNList, TagKeys: TagKeyListForUntag): UntagResourcesInput = {
+  inline def apply(ResourceARNList: ResourceARNList, TagKeys: TagKeyListForUntag): UntagResourcesInput = {
     val __obj = js.Dynamic.literal(ResourceARNList = ResourceARNList.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[UntagResourcesInput]
   }
   
-  @scala.inline
-  implicit class UntagResourcesInputMutableBuilder[Self <: UntagResourcesInput] (val x: Self) extends AnyVal {
+  extension [Self <: UntagResourcesInput](x: Self) {
     
-    @scala.inline
-    def setResourceARNList(value: ResourceARNList): Self = StObject.set(x, "ResourceARNList", value.asInstanceOf[js.Any])
+    inline def setResourceARNList(value: ResourceARNList): Self = StObject.set(x, "ResourceARNList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNListVarargs(value: ResourceARN*): Self = StObject.set(x, "ResourceARNList", js.Array(value :_*))
+    inline def setResourceARNListVarargs(value: ResourceARN*): Self = StObject.set(x, "ResourceARNList", js.Array(value :_*))
     
-    @scala.inline
-    def setTagKeys(value: TagKeyListForUntag): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: TagKeyListForUntag): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: TagKey*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
   }
 }

@@ -26,8 +26,7 @@ trait PDFAnnotations extends StObject {
 }
 object PDFAnnotations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getData: () => PDFAnnotationData,
     getEmptyContainer: (String, js.Array[Double]) => HTMLElement,
     getHtmlElement: js.Any => HTMLElement,
@@ -40,28 +39,20 @@ object PDFAnnotations {
     __obj.asInstanceOf[PDFAnnotations]
   }
   
-  @scala.inline
-  implicit class PDFAnnotationsMutableBuilder[Self <: PDFAnnotations] (val x: Self) extends AnyVal {
+  extension [Self <: PDFAnnotations](x: Self) {
     
-    @scala.inline
-    def setGetData(value: () => PDFAnnotationData): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => PDFAnnotationData): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEmptyContainer(value: (String, js.Array[Double]) => HTMLElement): Self = StObject.set(x, "getEmptyContainer", js.Any.fromFunction2(value))
+    inline def setGetEmptyContainer(value: (String, js.Array[Double]) => HTMLElement): Self = StObject.set(x, "getEmptyContainer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetHtmlElement(value: js.Any => HTMLElement): Self = StObject.set(x, "getHtmlElement", js.Any.fromFunction1(value))
+    inline def setGetHtmlElement(value: js.Any => HTMLElement): Self = StObject.set(x, "getHtmlElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOperatorList(value: js.Any => PDFPromise[js.Any]): Self = StObject.set(x, "getOperatorList", js.Any.fromFunction1(value))
+    inline def setGetOperatorList(value: js.Any => PDFPromise[js.Any]): Self = StObject.set(x, "getOperatorList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasHtml(value: () => Boolean): Self = StObject.set(x, "hasHtml", js.Any.fromFunction0(value))
+    inline def setHasHtml(value: () => Boolean): Self = StObject.set(x, "hasHtml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsViewable(value: () => Boolean): Self = StObject.set(x, "isViewable", js.Any.fromFunction0(value))
+    inline def setIsViewable(value: () => Boolean): Self = StObject.set(x, "isViewable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadResources(value: js.Any => PDFPromise[js.Any]): Self = StObject.set(x, "loadResources", js.Any.fromFunction1(value))
+    inline def setLoadResources(value: js.Any => PDFPromise[js.Any]): Self = StObject.set(x, "loadResources", js.Any.fromFunction1(value))
   }
 }

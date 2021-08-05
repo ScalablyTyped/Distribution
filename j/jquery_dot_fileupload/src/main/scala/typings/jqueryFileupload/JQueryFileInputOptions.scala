@@ -291,346 +291,233 @@ trait JQueryFileInputOptions extends StObject {
 }
 object JQueryFileInputOptions {
   
-  @scala.inline
-  def apply(): JQueryFileInputOptions = {
+  inline def apply(): JQueryFileInputOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryFileInputOptions]
   }
   
-  @scala.inline
-  implicit class JQueryFileInputOptionsMutableBuilder[Self <: JQueryFileInputOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryFileInputOptions](x: Self) {
     
-    @scala.inline
-    def setActive(value: js.Function): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: js.Function): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAdd(value: (/* e */ JQueryEventObject, /* data */ JqueryFileUploadAddObject) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (/* e */ JQueryEventObject, /* data */ JqueryFileUploadAddObject) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setAlways(value: (/* e */ JQueryEventObject, JQueryFileInputOptions) => Unit): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
+    inline def setAlways(value: (/* e */ JQueryEventObject, JQueryFileInputOptions) => Unit): Self = StObject.set(x, "always", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
+    inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
     
-    @scala.inline
-    def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
+    inline def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
+    inline def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
     
-    @scala.inline
-    def setBitrateInterval(value: Double): Self = StObject.set(x, "bitrateInterval", value.asInstanceOf[js.Any])
+    inline def setBitrateInterval(value: Double): Self = StObject.set(x, "bitrateInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateIntervalUndefined: Self = StObject.set(x, "bitrateInterval", js.undefined)
+    inline def setBitrateIntervalUndefined: Self = StObject.set(x, "bitrateInterval", js.undefined)
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setChange(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChangeObject) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
+    inline def setChange(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChangeObject) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setChunkalways(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => Unit): Self = StObject.set(x, "chunkalways", js.Any.fromFunction2(value))
+    inline def setChunkalways(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => Unit): Self = StObject.set(x, "chunkalways", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChunkalwaysUndefined: Self = StObject.set(x, "chunkalways", js.undefined)
+    inline def setChunkalwaysUndefined: Self = StObject.set(x, "chunkalways", js.undefined)
     
-    @scala.inline
-    def setChunkdone(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => Unit): Self = StObject.set(x, "chunkdone", js.Any.fromFunction2(value))
+    inline def setChunkdone(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => Unit): Self = StObject.set(x, "chunkdone", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChunkdoneUndefined: Self = StObject.set(x, "chunkdone", js.undefined)
+    inline def setChunkdoneUndefined: Self = StObject.set(x, "chunkdone", js.undefined)
     
-    @scala.inline
-    def setChunkfail(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => Unit): Self = StObject.set(x, "chunkfail", js.Any.fromFunction2(value))
+    inline def setChunkfail(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => Unit): Self = StObject.set(x, "chunkfail", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChunkfailUndefined: Self = StObject.set(x, "chunkfail", js.undefined)
+    inline def setChunkfailUndefined: Self = StObject.set(x, "chunkfail", js.undefined)
     
-    @scala.inline
-    def setChunksend(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => Unit): Self = StObject.set(x, "chunksend", js.Any.fromFunction2(value))
+    inline def setChunksend(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadChunkObject) => Unit): Self = StObject.set(x, "chunksend", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChunksendUndefined: Self = StObject.set(x, "chunksend", js.undefined)
+    inline def setChunksendUndefined: Self = StObject.set(x, "chunksend", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setDone(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadDone) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
+    inline def setDone(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadDone) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setDragover(value: /* e */ JQueryEventObject => Unit): Self = StObject.set(x, "dragover", js.Any.fromFunction1(value))
+    inline def setDragover(value: /* e */ JQueryEventObject => Unit): Self = StObject.set(x, "dragover", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragoverUndefined: Self = StObject.set(x, "dragover", js.undefined)
+    inline def setDragoverUndefined: Self = StObject.set(x, "dragover", js.undefined)
     
-    @scala.inline
-    def setDrop(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadFilesObject) => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
+    inline def setDrop(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadFilesObject) => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setDropZone(value: Element | js.Array[Element] | JQuery | String): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
+    inline def setDropZone(value: Element | js.Array[Element] | JQuery | String): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropZoneUndefined: Self = StObject.set(x, "dropZone", js.undefined)
+    inline def setDropZoneUndefined: Self = StObject.set(x, "dropZone", js.undefined)
     
-    @scala.inline
-    def setDropZoneVarargs(value: Element*): Self = StObject.set(x, "dropZone", js.Array(value :_*))
+    inline def setDropZoneVarargs(value: Element*): Self = StObject.set(x, "dropZone", js.Array(value :_*))
     
-    @scala.inline
-    def setFail(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadDone) => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction2(value))
+    inline def setFail(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadDone) => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setFileInput(value: Element | js.Array[Element] | JQuery | String): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
+    inline def setFileInput(value: Element | js.Array[Element] | JQuery | String): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileInputUndefined: Self = StObject.set(x, "fileInput", js.undefined)
+    inline def setFileInputUndefined: Self = StObject.set(x, "fileInput", js.undefined)
     
-    @scala.inline
-    def setFileInputVarargs(value: Element*): Self = StObject.set(x, "fileInput", js.Array(value :_*))
+    inline def setFileInputVarargs(value: Element*): Self = StObject.set(x, "fileInput", js.Array(value :_*))
     
-    @scala.inline
-    def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setForceIframeTransport(value: Boolean): Self = StObject.set(x, "forceIframeTransport", value.asInstanceOf[js.Any])
+    inline def setForceIframeTransport(value: Boolean): Self = StObject.set(x, "forceIframeTransport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceIframeTransportUndefined: Self = StObject.set(x, "forceIframeTransport", js.undefined)
+    inline def setForceIframeTransportUndefined: Self = StObject.set(x, "forceIframeTransport", js.undefined)
     
-    @scala.inline
-    def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: js.Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    @scala.inline
-    def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
+    inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
     
-    @scala.inline
-    def setLimitConcurrentUploads(value: Double): Self = StObject.set(x, "limitConcurrentUploads", value.asInstanceOf[js.Any])
+    inline def setLimitConcurrentUploads(value: Double): Self = StObject.set(x, "limitConcurrentUploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitConcurrentUploadsUndefined: Self = StObject.set(x, "limitConcurrentUploads", js.undefined)
+    inline def setLimitConcurrentUploadsUndefined: Self = StObject.set(x, "limitConcurrentUploads", js.undefined)
     
-    @scala.inline
-    def setLimitMultiFileUploadSize(value: Double): Self = StObject.set(x, "limitMultiFileUploadSize", value.asInstanceOf[js.Any])
+    inline def setLimitMultiFileUploadSize(value: Double): Self = StObject.set(x, "limitMultiFileUploadSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitMultiFileUploadSizeOverhead(value: Double): Self = StObject.set(x, "limitMultiFileUploadSizeOverhead", value.asInstanceOf[js.Any])
+    inline def setLimitMultiFileUploadSizeOverhead(value: Double): Self = StObject.set(x, "limitMultiFileUploadSizeOverhead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitMultiFileUploadSizeOverheadUndefined: Self = StObject.set(x, "limitMultiFileUploadSizeOverhead", js.undefined)
+    inline def setLimitMultiFileUploadSizeOverheadUndefined: Self = StObject.set(x, "limitMultiFileUploadSizeOverhead", js.undefined)
     
-    @scala.inline
-    def setLimitMultiFileUploadSizeUndefined: Self = StObject.set(x, "limitMultiFileUploadSize", js.undefined)
+    inline def setLimitMultiFileUploadSizeUndefined: Self = StObject.set(x, "limitMultiFileUploadSize", js.undefined)
     
-    @scala.inline
-    def setLimitMultiFileUploads(value: Double): Self = StObject.set(x, "limitMultiFileUploads", value.asInstanceOf[js.Any])
+    inline def setLimitMultiFileUploads(value: Double): Self = StObject.set(x, "limitMultiFileUploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitMultiFileUploadsUndefined: Self = StObject.set(x, "limitMultiFileUploads", js.undefined)
+    inline def setLimitMultiFileUploadsUndefined: Self = StObject.set(x, "limitMultiFileUploads", js.undefined)
     
-    @scala.inline
-    def setMaxChunkSize(value: Double): Self = StObject.set(x, "maxChunkSize", value.asInstanceOf[js.Any])
+    inline def setMaxChunkSize(value: Double): Self = StObject.set(x, "maxChunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxChunkSizeUndefined: Self = StObject.set(x, "maxChunkSize", js.undefined)
+    inline def setMaxChunkSizeUndefined: Self = StObject.set(x, "maxChunkSize", js.undefined)
     
-    @scala.inline
-    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+    inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+    inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
     
-    @scala.inline
-    def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Any): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMultipart(value: Boolean): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+    inline def setMultipart(value: Boolean): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
+    inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
     
-    @scala.inline
-    def setParamName(value: js.Any): Self = StObject.set(x, "paramName", value.asInstanceOf[js.Any])
+    inline def setParamName(value: js.Any): Self = StObject.set(x, "paramName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamNameUndefined: Self = StObject.set(x, "paramName", js.undefined)
+    inline def setParamNameUndefined: Self = StObject.set(x, "paramName", js.undefined)
     
-    @scala.inline
-    def setPaste(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadFilesObject) => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction2(value))
+    inline def setPaste(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadFilesObject) => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+    inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
     
-    @scala.inline
-    def setPasteZone(value: Element | js.Array[Element] | JQuery | String): Self = StObject.set(x, "pasteZone", value.asInstanceOf[js.Any])
+    inline def setPasteZone(value: Element | js.Array[Element] | JQuery | String): Self = StObject.set(x, "pasteZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasteZoneUndefined: Self = StObject.set(x, "pasteZone", js.undefined)
+    inline def setPasteZoneUndefined: Self = StObject.set(x, "pasteZone", js.undefined)
     
-    @scala.inline
-    def setPasteZoneVarargs(value: Element*): Self = StObject.set(x, "pasteZone", js.Array(value :_*))
+    inline def setPasteZoneVarargs(value: Element*): Self = StObject.set(x, "pasteZone", js.Array(value :_*))
     
-    @scala.inline
-    def setPostMessage(value: String): Self = StObject.set(x, "postMessage", value.asInstanceOf[js.Any])
+    inline def setPostMessage(value: String): Self = StObject.set(x, "postMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostMessageUndefined: Self = StObject.set(x, "postMessage", js.undefined)
+    inline def setPostMessageUndefined: Self = StObject.set(x, "postMessage", js.undefined)
     
-    @scala.inline
-    def setProcessData(value: Boolean): Self = StObject.set(x, "processData", value.asInstanceOf[js.Any])
+    inline def setProcessData(value: Boolean): Self = StObject.set(x, "processData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
+    inline def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
     
-    @scala.inline
-    def setProgress(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadProgressObject) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    inline def setProgress(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadProgressObject) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProgressInterval(value: Double): Self = StObject.set(x, "progressInterval", value.asInstanceOf[js.Any])
+    inline def setProgressInterval(value: Double): Self = StObject.set(x, "progressInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressIntervalUndefined: Self = StObject.set(x, "progressInterval", js.undefined)
+    inline def setProgressIntervalUndefined: Self = StObject.set(x, "progressInterval", js.undefined)
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setProgressall(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadProgressAllObject) => Unit): Self = StObject.set(x, "progressall", js.Any.fromFunction2(value))
+    inline def setProgressall(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadProgressAllObject) => Unit): Self = StObject.set(x, "progressall", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProgressallUndefined: Self = StObject.set(x, "progressall", js.undefined)
+    inline def setProgressallUndefined: Self = StObject.set(x, "progressall", js.undefined)
     
-    @scala.inline
-    def setRecalculateProgress(value: Boolean): Self = StObject.set(x, "recalculateProgress", value.asInstanceOf[js.Any])
+    inline def setRecalculateProgress(value: Boolean): Self = StObject.set(x, "recalculateProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecalculateProgressUndefined: Self = StObject.set(x, "recalculateProgress", js.undefined)
+    inline def setRecalculateProgressUndefined: Self = StObject.set(x, "recalculateProgress", js.undefined)
     
-    @scala.inline
-    def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectParamName(value: String): Self = StObject.set(x, "redirectParamName", value.asInstanceOf[js.Any])
+    inline def setRedirectParamName(value: String): Self = StObject.set(x, "redirectParamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectParamNameUndefined: Self = StObject.set(x, "redirectParamName", js.undefined)
+    inline def setRedirectParamNameUndefined: Self = StObject.set(x, "redirectParamName", js.undefined)
     
-    @scala.inline
-    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     
-    @scala.inline
-    def setReplaceFileInput(value: Boolean): Self = StObject.set(x, "replaceFileInput", value.asInstanceOf[js.Any])
+    inline def setReplaceFileInput(value: Boolean): Self = StObject.set(x, "replaceFileInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceFileInputUndefined: Self = StObject.set(x, "replaceFileInput", js.undefined)
+    inline def setReplaceFileInputUndefined: Self = StObject.set(x, "replaceFileInput", js.undefined)
     
-    @scala.inline
-    def setSend(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadProgressObject) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    inline def setSend(value: (/* e */ JQueryEventObject, /* data */ JQueryFileUploadProgressObject) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+    inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     
-    @scala.inline
-    def setSequentialUploads(value: Boolean): Self = StObject.set(x, "sequentialUploads", value.asInstanceOf[js.Any])
+    inline def setSequentialUploads(value: Boolean): Self = StObject.set(x, "sequentialUploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequentialUploadsUndefined: Self = StObject.set(x, "sequentialUploads", js.undefined)
+    inline def setSequentialUploadsUndefined: Self = StObject.set(x, "sequentialUploads", js.undefined)
     
-    @scala.inline
-    def setSingleFileUploads(value: Boolean): Self = StObject.set(x, "singleFileUploads", value.asInstanceOf[js.Any])
+    inline def setSingleFileUploads(value: Boolean): Self = StObject.set(x, "singleFileUploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleFileUploadsUndefined: Self = StObject.set(x, "singleFileUploads", js.undefined)
+    inline def setSingleFileUploadsUndefined: Self = StObject.set(x, "singleFileUploads", js.undefined)
     
-    @scala.inline
-    def setStart(value: /* e */ JQueryEventObject => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* e */ JQueryEventObject => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStop(value: /* e */ JQueryEventObject => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+    inline def setStop(value: /* e */ JQueryEventObject => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
     
-    @scala.inline
-    def setSubmit(value: js.Function): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+    inline def setSubmit(value: js.Function): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
+    inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUploadedBytes(value: Double): Self = StObject.set(x, "uploadedBytes", value.asInstanceOf[js.Any])
+    inline def setUploadedBytes(value: Double): Self = StObject.set(x, "uploadedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadedBytesUndefined: Self = StObject.set(x, "uploadedBytes", js.undefined)
+    inline def setUploadedBytesUndefined: Self = StObject.set(x, "uploadedBytes", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setXhrFields(value: js.Any): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
+    inline def setXhrFields(value: js.Any): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrFieldsUndefined: Self = StObject.set(x, "xhrFields", js.undefined)
+    inline def setXhrFieldsUndefined: Self = StObject.set(x, "xhrFields", js.undefined)
   }
 }

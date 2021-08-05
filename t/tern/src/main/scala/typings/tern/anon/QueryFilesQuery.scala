@@ -14,19 +14,15 @@ trait QueryFilesQuery extends StObject {
 }
 object QueryFilesQuery {
   
-  @scala.inline
-  def apply(query: FilesQuery, result: FilesQueryResult): QueryFilesQuery = {
+  inline def apply(query: FilesQuery, result: FilesQueryResult): QueryFilesQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryFilesQuery]
   }
   
-  @scala.inline
-  implicit class QueryFilesQueryMutableBuilder[Self <: QueryFilesQuery] (val x: Self) extends AnyVal {
+  extension [Self <: QueryFilesQuery](x: Self) {
     
-    @scala.inline
-    def setQuery(value: FilesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: FilesQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: FilesQueryResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: FilesQueryResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

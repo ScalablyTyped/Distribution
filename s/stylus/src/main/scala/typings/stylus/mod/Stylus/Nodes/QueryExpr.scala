@@ -15,8 +15,7 @@ trait QueryExpr
 }
 object QueryExpr {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -37,16 +36,12 @@ object QueryExpr {
     __obj.asInstanceOf[QueryExpr]
   }
   
-  @scala.inline
-  implicit class QueryExprMutableBuilder[Self <: QueryExpr] (val x: Self) extends AnyVal {
+  extension [Self <: QueryExpr](x: Self) {
     
-    @scala.inline
-    def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegments(value: js.Array[Node]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[Node]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value :_*))
   }
 }

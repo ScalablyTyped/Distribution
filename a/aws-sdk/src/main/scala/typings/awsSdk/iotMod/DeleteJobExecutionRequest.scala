@@ -33,34 +33,25 @@ trait DeleteJobExecutionRequest extends StObject {
 }
 object DeleteJobExecutionRequest {
   
-  @scala.inline
-  def apply(executionNumber: ExecutionNumber, jobId: JobId, thingName: ThingName): DeleteJobExecutionRequest = {
+  inline def apply(executionNumber: ExecutionNumber, jobId: JobId, thingName: ThingName): DeleteJobExecutionRequest = {
     val __obj = js.Dynamic.literal(executionNumber = executionNumber.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteJobExecutionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteJobExecutionRequestMutableBuilder[Self <: DeleteJobExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteJobExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setExecutionNumber(value: ExecutionNumber): Self = StObject.set(x, "executionNumber", value.asInstanceOf[js.Any])
+    inline def setExecutionNumber(value: ExecutionNumber): Self = StObject.set(x, "executionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: ForceFlag): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: ForceFlag): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceId(value: NamespaceId): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
+    inline def setNamespaceId(value: NamespaceId): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
+    inline def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

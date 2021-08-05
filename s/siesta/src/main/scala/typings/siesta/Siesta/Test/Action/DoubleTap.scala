@@ -15,8 +15,7 @@ trait DoubleTap
      with IHasTarget
 object DoubleTap {
   
-  @scala.inline
-  def apply(): DoubleTap = {
+  inline def apply(): DoubleTap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleTap]
   }

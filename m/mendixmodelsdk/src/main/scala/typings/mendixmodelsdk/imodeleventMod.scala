@@ -21,27 +21,21 @@ object imodeleventMod {
   }
   object IDeltaEvent {
     
-    @scala.inline
-    def apply(deltas: js.Array[Delta], id: Double): IDeltaEvent = {
+    inline def apply(deltas: js.Array[Delta], id: Double): IDeltaEvent = {
       val __obj = js.Dynamic.literal(deltas = deltas.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("deltas")
       __obj.asInstanceOf[IDeltaEvent]
     }
     
-    @scala.inline
-    implicit class IDeltaEventMutableBuilder[Self <: IDeltaEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IDeltaEvent](x: Self) {
       
-      @scala.inline
-      def setDeltas(value: js.Array[Delta]): Self = StObject.set(x, "deltas", value.asInstanceOf[js.Any])
+      inline def setDeltas(value: js.Array[Delta]): Self = StObject.set(x, "deltas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeltasVarargs(value: Delta*): Self = StObject.set(x, "deltas", js.Array(value :_*))
+      inline def setDeltasVarargs(value: Delta*): Self = StObject.set(x, "deltas", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: deltas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: deltas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,27 +51,21 @@ object imodeleventMod {
   }
   object IFileEvent {
     
-    @scala.inline
-    def apply(files: js.Array[String], id: Double): IFileEvent = {
+    inline def apply(files: js.Array[String], id: Double): IFileEvent = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("fileChanges")
       __obj.asInstanceOf[IFileEvent]
     }
     
-    @scala.inline
-    implicit class IFileEventMutableBuilder[Self <: IFileEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IFileEvent](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: fileChanges): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fileChanges): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,15 +76,13 @@ object imodeleventMod {
   trait IModelEvent extends StObject
   object IModelEvent {
     
-    @scala.inline
-    def IDeltaEvent(deltas: js.Array[Delta], id: Double): typings.mendixmodelsdk.imodeleventMod.IDeltaEvent = {
+    inline def IDeltaEvent(deltas: js.Array[Delta], id: Double): typings.mendixmodelsdk.imodeleventMod.IDeltaEvent = {
       val __obj = js.Dynamic.literal(deltas = deltas.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("deltas")
       __obj.asInstanceOf[typings.mendixmodelsdk.imodeleventMod.IDeltaEvent]
     }
     
-    @scala.inline
-    def IFileEvent(files: js.Array[String], id: Double): typings.mendixmodelsdk.imodeleventMod.IFileEvent = {
+    inline def IFileEvent(files: js.Array[String], id: Double): typings.mendixmodelsdk.imodeleventMod.IFileEvent = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("fileChanges")
       __obj.asInstanceOf[typings.mendixmodelsdk.imodeleventMod.IFileEvent]

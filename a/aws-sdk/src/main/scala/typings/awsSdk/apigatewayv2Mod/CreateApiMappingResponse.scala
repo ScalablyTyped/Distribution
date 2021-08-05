@@ -28,37 +28,27 @@ trait CreateApiMappingResponse extends StObject {
 }
 object CreateApiMappingResponse {
   
-  @scala.inline
-  def apply(): CreateApiMappingResponse = {
+  inline def apply(): CreateApiMappingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateApiMappingResponse]
   }
   
-  @scala.inline
-  implicit class CreateApiMappingResponseMutableBuilder[Self <: CreateApiMappingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateApiMappingResponse](x: Self) {
     
-    @scala.inline
-    def setApiId(value: Id): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: Id): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiIdUndefined: Self = StObject.set(x, "ApiId", js.undefined)
+    inline def setApiIdUndefined: Self = StObject.set(x, "ApiId", js.undefined)
     
-    @scala.inline
-    def setApiMappingId(value: Id): Self = StObject.set(x, "ApiMappingId", value.asInstanceOf[js.Any])
+    inline def setApiMappingId(value: Id): Self = StObject.set(x, "ApiMappingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiMappingIdUndefined: Self = StObject.set(x, "ApiMappingId", js.undefined)
+    inline def setApiMappingIdUndefined: Self = StObject.set(x, "ApiMappingId", js.undefined)
     
-    @scala.inline
-    def setApiMappingKey(value: SelectionKey): Self = StObject.set(x, "ApiMappingKey", value.asInstanceOf[js.Any])
+    inline def setApiMappingKey(value: SelectionKey): Self = StObject.set(x, "ApiMappingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiMappingKeyUndefined: Self = StObject.set(x, "ApiMappingKey", js.undefined)
+    inline def setApiMappingKeyUndefined: Self = StObject.set(x, "ApiMappingKey", js.undefined)
     
-    @scala.inline
-    def setStage(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "Stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "Stage", js.undefined)
   }
 }

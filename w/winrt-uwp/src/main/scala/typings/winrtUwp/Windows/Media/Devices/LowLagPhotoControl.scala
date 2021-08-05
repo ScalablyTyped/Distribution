@@ -37,8 +37,7 @@ trait LowLagPhotoControl extends StObject {
 }
 object LowLagPhotoControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     desiredThumbnailSize: Double,
     getCurrentFrameRate: () => MediaRatio,
     getHighestConcurrentFrameRate: IMediaEncodingProperties => MediaRatio,
@@ -50,25 +49,18 @@ object LowLagPhotoControl {
     __obj.asInstanceOf[LowLagPhotoControl]
   }
   
-  @scala.inline
-  implicit class LowLagPhotoControlMutableBuilder[Self <: LowLagPhotoControl] (val x: Self) extends AnyVal {
+  extension [Self <: LowLagPhotoControl](x: Self) {
     
-    @scala.inline
-    def setDesiredThumbnailSize(value: Double): Self = StObject.set(x, "desiredThumbnailSize", value.asInstanceOf[js.Any])
+    inline def setDesiredThumbnailSize(value: Double): Self = StObject.set(x, "desiredThumbnailSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentFrameRate(value: () => MediaRatio): Self = StObject.set(x, "getCurrentFrameRate", js.Any.fromFunction0(value))
+    inline def setGetCurrentFrameRate(value: () => MediaRatio): Self = StObject.set(x, "getCurrentFrameRate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = StObject.set(x, "getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
+    inline def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = StObject.set(x, "getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHardwareAcceleratedThumbnailSupported(value: Double): Self = StObject.set(x, "hardwareAcceleratedThumbnailSupported", value.asInstanceOf[js.Any])
+    inline def setHardwareAcceleratedThumbnailSupported(value: Double): Self = StObject.set(x, "hardwareAcceleratedThumbnailSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailEnabled(value: Boolean): Self = StObject.set(x, "thumbnailEnabled", value.asInstanceOf[js.Any])
+    inline def setThumbnailEnabled(value: Boolean): Self = StObject.set(x, "thumbnailEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailFormat(value: MediaThumbnailFormat): Self = StObject.set(x, "thumbnailFormat", value.asInstanceOf[js.Any])
+    inline def setThumbnailFormat(value: MediaThumbnailFormat): Self = StObject.set(x, "thumbnailFormat", value.asInstanceOf[js.Any])
   }
 }

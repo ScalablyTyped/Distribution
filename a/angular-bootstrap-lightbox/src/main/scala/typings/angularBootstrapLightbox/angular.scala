@@ -23,38 +23,28 @@ object angular {
       }
       object IImageDimensionLimits {
         
-        @scala.inline
-        def apply(): IImageDimensionLimits = {
+        inline def apply(): IImageDimensionLimits = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IImageDimensionLimits]
         }
         
-        @scala.inline
-        implicit class IImageDimensionLimitsMutableBuilder[Self <: IImageDimensionLimits] (val x: Self) extends AnyVal {
+        extension [Self <: IImageDimensionLimits](x: Self) {
           
-          @scala.inline
-          def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+          inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+          inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
           
-          @scala.inline
-          def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+          inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+          inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
           
-          @scala.inline
-          def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+          inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+          inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
           
-          @scala.inline
-          def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+          inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+          inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
         }
       }
       
@@ -70,26 +60,20 @@ object angular {
       }
       object IImageDimensionParameter {
         
-        @scala.inline
-        def apply(imageHeight: Double, imageWidth: Double, windowHeight: Double, windowWidth: Double): IImageDimensionParameter = {
+        inline def apply(imageHeight: Double, imageWidth: Double, windowHeight: Double, windowWidth: Double): IImageDimensionParameter = {
           val __obj = js.Dynamic.literal(imageHeight = imageHeight.asInstanceOf[js.Any], imageWidth = imageWidth.asInstanceOf[js.Any], windowHeight = windowHeight.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any])
           __obj.asInstanceOf[IImageDimensionParameter]
         }
         
-        @scala.inline
-        implicit class IImageDimensionParameterMutableBuilder[Self <: IImageDimensionParameter] (val x: Self) extends AnyVal {
+        extension [Self <: IImageDimensionParameter](x: Self) {
           
-          @scala.inline
-          def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
+          inline def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
+          inline def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
+          inline def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
+          inline def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
         }
       }
       
@@ -103,8 +87,7 @@ object angular {
       }
       object ILightBoxProvider {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           calculateImageDimensionLimits: IImageDimensionParameter => IImageDimensionLimits,
           calculateModalDimensions: IModalDimensionsParameter => IModalDimensions,
           templateUrl: String
@@ -113,17 +96,13 @@ object angular {
           __obj.asInstanceOf[ILightBoxProvider]
         }
         
-        @scala.inline
-        implicit class ILightBoxProviderMutableBuilder[Self <: ILightBoxProvider] (val x: Self) extends AnyVal {
+        extension [Self <: ILightBoxProvider](x: Self) {
           
-          @scala.inline
-          def setCalculateImageDimensionLimits(value: IImageDimensionParameter => IImageDimensionLimits): Self = StObject.set(x, "calculateImageDimensionLimits", js.Any.fromFunction1(value))
+          inline def setCalculateImageDimensionLimits(value: IImageDimensionParameter => IImageDimensionLimits): Self = StObject.set(x, "calculateImageDimensionLimits", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setCalculateModalDimensions(value: IModalDimensionsParameter => IModalDimensions): Self = StObject.set(x, "calculateModalDimensions", js.Any.fromFunction1(value))
+          inline def setCalculateModalDimensions(value: IModalDimensionsParameter => IModalDimensions): Self = StObject.set(x, "calculateModalDimensions", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+          inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
         }
       }
       
@@ -148,35 +127,26 @@ object angular {
       }
       object ILightboxImageInfo {
         
-        @scala.inline
-        def apply(height: Double, url: String, width: Double): ILightboxImageInfo = {
+        inline def apply(height: Double, url: String, width: Double): ILightboxImageInfo = {
           val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
           __obj.asInstanceOf[ILightboxImageInfo]
         }
         
-        @scala.inline
-        implicit class ILightboxImageInfoMutableBuilder[Self <: ILightboxImageInfo] (val x: Self) extends AnyVal {
+        extension [Self <: ILightboxImageInfo](x: Self) {
           
-          @scala.inline
-          def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+          inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+          inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
           
-          @scala.inline
-          def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+          inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setThumbUrl(value: String): Self = StObject.set(x, "thumbUrl", value.asInstanceOf[js.Any])
+          inline def setThumbUrl(value: String): Self = StObject.set(x, "thumbUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setThumbUrlUndefined: Self = StObject.set(x, "thumbUrl", js.undefined)
+          inline def setThumbUrlUndefined: Self = StObject.set(x, "thumbUrl", js.undefined)
           
-          @scala.inline
-          def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+          inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         }
       }
       
@@ -188,20 +158,16 @@ object angular {
       }
       object IModalDimensions {
         
-        @scala.inline
-        def apply(height: Double, width: Double): IModalDimensions = {
+        inline def apply(height: Double, width: Double): IModalDimensions = {
           val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
           __obj.asInstanceOf[IModalDimensions]
         }
         
-        @scala.inline
-        implicit class IModalDimensionsMutableBuilder[Self <: IModalDimensions] (val x: Self) extends AnyVal {
+        extension [Self <: IModalDimensions](x: Self) {
           
-          @scala.inline
-          def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+          inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+          inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         }
       }
       
@@ -217,26 +183,20 @@ object angular {
       }
       object IModalDimensionsParameter {
         
-        @scala.inline
-        def apply(imageDisplayHeight: Double, imageDisplayWidth: Double, windowHeight: Double, windowWidth: Double): IModalDimensionsParameter = {
+        inline def apply(imageDisplayHeight: Double, imageDisplayWidth: Double, windowHeight: Double, windowWidth: Double): IModalDimensionsParameter = {
           val __obj = js.Dynamic.literal(imageDisplayHeight = imageDisplayHeight.asInstanceOf[js.Any], imageDisplayWidth = imageDisplayWidth.asInstanceOf[js.Any], windowHeight = windowHeight.asInstanceOf[js.Any], windowWidth = windowWidth.asInstanceOf[js.Any])
           __obj.asInstanceOf[IModalDimensionsParameter]
         }
         
-        @scala.inline
-        implicit class IModalDimensionsParameterMutableBuilder[Self <: IModalDimensionsParameter] (val x: Self) extends AnyVal {
+        extension [Self <: IModalDimensionsParameter](x: Self) {
           
-          @scala.inline
-          def setImageDisplayHeight(value: Double): Self = StObject.set(x, "imageDisplayHeight", value.asInstanceOf[js.Any])
+          inline def setImageDisplayHeight(value: Double): Self = StObject.set(x, "imageDisplayHeight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImageDisplayWidth(value: Double): Self = StObject.set(x, "imageDisplayWidth", value.asInstanceOf[js.Any])
+          inline def setImageDisplayWidth(value: Double): Self = StObject.set(x, "imageDisplayWidth", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
+          inline def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
+          inline def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
         }
       }
     }

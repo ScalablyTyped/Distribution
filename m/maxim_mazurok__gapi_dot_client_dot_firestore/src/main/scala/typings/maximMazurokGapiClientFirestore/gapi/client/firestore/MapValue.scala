@@ -19,23 +19,19 @@ trait MapValue extends StObject {
 }
 object MapValue {
   
-  @scala.inline
-  def apply(): MapValue = {
+  inline def apply(): MapValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapValue]
   }
   
-  @scala.inline
-  implicit class MapValueMutableBuilder[Self <: MapValue] (val x: Self) extends AnyVal {
+  extension [Self <: MapValue](x: Self) {
     
-    @scala.inline
-    def setFields(
+    inline def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.firestore.gapi.client.firestore.Value}
       */ typings.maximMazurokGapiClientFirestore.maximMazurokGapiClientFirestoreStrings.MapValue & TopLevel[js.Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
   }
 }

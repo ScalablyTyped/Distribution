@@ -13,25 +13,19 @@ trait USBInTransferResult extends StObject {
 }
 object USBInTransferResult {
   
-  @scala.inline
-  def apply(): USBInTransferResult = {
+  inline def apply(): USBInTransferResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[USBInTransferResult]
   }
   
-  @scala.inline
-  implicit class USBInTransferResultMutableBuilder[Self <: USBInTransferResult] (val x: Self) extends AnyVal {
+  extension [Self <: USBInTransferResult](x: Self) {
     
-    @scala.inline
-    def setData(value: DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setStatus(value: USBTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: USBTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

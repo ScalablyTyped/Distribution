@@ -80,8 +80,7 @@ object mod {
     @JSImport("@netflix/nerror", "VError.VError")
     @js.native
     def VError: Instantiable = js.native
-    @scala.inline
-    def VError_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VError")(x.asInstanceOf[js.Any])
+    inline def VError_=(x: Instantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VError")(x.asInstanceOf[js.Any])
     
     /*
       * Like JavaScript's built-in Error class, but supports a "cause" argument which
@@ -97,26 +96,19 @@ object mod {
       def this(options: Error, message: String, params: js.Any*) = this()
     }
     
-    @scala.inline
-    def cause(err: Error): Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cause")(err.asInstanceOf[js.Any]).asInstanceOf[Error | Null]
+    inline def cause(err: Error): Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cause")(err.asInstanceOf[js.Any]).asInstanceOf[Error | Null]
     
-    @scala.inline
-    def errorForEach(err: Error, func: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorForEach")(err.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def errorForEach(err: Error, func: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorForEach")(err.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def errorFromList[T /* <: Error */](errors: js.Array[T]): Null | T | MultiError = ^.asInstanceOf[js.Dynamic].applyDynamic("errorFromList")(errors.asInstanceOf[js.Any]).asInstanceOf[Null | T | MultiError]
+    inline def errorFromList[T /* <: Error */](errors: js.Array[T]): Null | T | MultiError = ^.asInstanceOf[js.Dynamic].applyDynamic("errorFromList")(errors.asInstanceOf[js.Any]).asInstanceOf[Null | T | MultiError]
     
-    @scala.inline
-    def findCauseByName(err: Error, name: String): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findCauseByName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
+    inline def findCauseByName(err: Error, name: String): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findCauseByName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
     
-    @scala.inline
-    def fullStack(err: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullStack")(err.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def fullStack(err: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullStack")(err.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def hasCauseWithName(err: Error, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCauseWithName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hasCauseWithName(err: Error, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCauseWithName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def info(err: Error): Info = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(err.asInstanceOf[js.Any]).asInstanceOf[Info]
+    inline def info(err: Error): Info = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(err.asInstanceOf[js.Any]).asInstanceOf[Info]
     
     type Info = StringDictionary[js.Any]
     
@@ -134,47 +126,34 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setCause(value: Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+        inline def setCause(value: Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCauseNull: Self = StObject.set(x, "cause", null)
+        inline def setCauseNull: Self = StObject.set(x, "cause", null)
         
-        @scala.inline
-        def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+        inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
         
-        @scala.inline
-        def setConstructorOpt(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "constructorOpt", js.Any.fromFunction1(value))
+        inline def setConstructorOpt(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "constructorOpt", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setConstructorOptUndefined: Self = StObject.set(x, "constructorOpt", js.undefined)
+        inline def setConstructorOptUndefined: Self = StObject.set(x, "constructorOpt", js.undefined)
         
-        @scala.inline
-        def setInfo(value: Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: Info): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+        inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+        inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+        inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       }
     }
   }

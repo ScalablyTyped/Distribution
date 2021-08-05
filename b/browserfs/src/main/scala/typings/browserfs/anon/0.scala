@@ -56,8 +56,7 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `0`: String,
     `1`: String,
     `1024`: String,
@@ -111,79 +110,54 @@ object `0` {
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1024(value: String): Self = StObject.set(x, "1024", value.asInstanceOf[js.Any])
+    inline def set1024(value: String): Self = StObject.set(x, "1024", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1025(value: String): Self = StObject.set(x, "1025", value.asInstanceOf[js.Any])
+    inline def set1025(value: String): Self = StObject.set(x, "1025", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1026(value: String): Self = StObject.set(x, "1026", value.asInstanceOf[js.Any])
+    inline def set1026(value: String): Self = StObject.set(x, "1026", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1089(value: String): Self = StObject.set(x, "1089", value.asInstanceOf[js.Any])
+    inline def set1089(value: String): Self = StObject.set(x, "1089", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1090(value: String): Self = StObject.set(x, "1090", value.asInstanceOf[js.Any])
+    inline def set1090(value: String): Self = StObject.set(x, "1090", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1153(value: String): Self = StObject.set(x, "1153", value.asInstanceOf[js.Any])
+    inline def set1153(value: String): Self = StObject.set(x, "1153", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1154(value: String): Self = StObject.set(x, "1154", value.asInstanceOf[js.Any])
+    inline def set1154(value: String): Self = StObject.set(x, "1154", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1217(value: String): Self = StObject.set(x, "1217", value.asInstanceOf[js.Any])
+    inline def set1217(value: String): Self = StObject.set(x, "1217", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1218(value: String): Self = StObject.set(x, "1218", value.asInstanceOf[js.Any])
+    inline def set1218(value: String): Self = StObject.set(x, "1218", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set129(value: String): Self = StObject.set(x, "129", value.asInstanceOf[js.Any])
+    inline def set129(value: String): Self = StObject.set(x, "129", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set193(value: String): Self = StObject.set(x, "193", value.asInstanceOf[js.Any])
+    inline def set193(value: String): Self = StObject.set(x, "193", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set4096(value: String): Self = StObject.set(x, "4096", value.asInstanceOf[js.Any])
+    inline def set4096(value: String): Self = StObject.set(x, "4096", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set4098(value: String): Self = StObject.set(x, "4098", value.asInstanceOf[js.Any])
+    inline def set4098(value: String): Self = StObject.set(x, "4098", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set514(value: String): Self = StObject.set(x, "514", value.asInstanceOf[js.Any])
+    inline def set514(value: String): Self = StObject.set(x, "514", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set577(value: String): Self = StObject.set(x, "577", value.asInstanceOf[js.Any])
+    inline def set577(value: String): Self = StObject.set(x, "577", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set578(value: String): Self = StObject.set(x, "578", value.asInstanceOf[js.Any])
+    inline def set578(value: String): Self = StObject.set(x, "578", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set64(value: String): Self = StObject.set(x, "64", value.asInstanceOf[js.Any])
+    inline def set64(value: String): Self = StObject.set(x, "64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set65(value: String): Self = StObject.set(x, "65", value.asInstanceOf[js.Any])
+    inline def set65(value: String): Self = StObject.set(x, "65", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set66(value: String): Self = StObject.set(x, "66", value.asInstanceOf[js.Any])
+    inline def set66(value: String): Self = StObject.set(x, "66", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set705(value: String): Self = StObject.set(x, "705", value.asInstanceOf[js.Any])
+    inline def set705(value: String): Self = StObject.set(x, "705", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set706(value: String): Self = StObject.set(x, "706", value.asInstanceOf[js.Any])
+    inline def set706(value: String): Self = StObject.set(x, "706", value.asInstanceOf[js.Any])
   }
 }

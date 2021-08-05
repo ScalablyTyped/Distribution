@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.DataTable")
 @js.native
-class DataTable protected ()
+/* private */ class DataTable ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.DataTable {
   
@@ -43,7 +43,7 @@ class DataTable protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.DataTable_typekey")
   var PowerPointDotDataTable_typekey: typings.activexPowerpoint.PowerPoint.DataTable = js.native
   

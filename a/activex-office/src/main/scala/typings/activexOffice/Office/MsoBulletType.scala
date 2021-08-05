@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBulletType extends StObject
 object MsoBulletType {
   
-  @scala.inline
-  def msoBulletMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoBulletMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoBulletNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoBulletNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoBulletNumbered: `2` = 2.asInstanceOf[`2`]
+  inline def msoBulletNumbered: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoBulletPicture: `3` = 3.asInstanceOf[`3`]
+  inline def msoBulletPicture: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoBulletUnnumbered: `1` = 1.asInstanceOf[`1`]
+  inline def msoBulletUnnumbered: `1` = 1.asInstanceOf[`1`]
 }

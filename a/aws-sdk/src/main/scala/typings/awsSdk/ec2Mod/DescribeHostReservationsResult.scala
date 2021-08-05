@@ -18,28 +18,21 @@ trait DescribeHostReservationsResult extends StObject {
 }
 object DescribeHostReservationsResult {
   
-  @scala.inline
-  def apply(): DescribeHostReservationsResult = {
+  inline def apply(): DescribeHostReservationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeHostReservationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeHostReservationsResultMutableBuilder[Self <: DescribeHostReservationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHostReservationsResult](x: Self) {
     
-    @scala.inline
-    def setHostReservationSet(value: HostReservationSet): Self = StObject.set(x, "HostReservationSet", value.asInstanceOf[js.Any])
+    inline def setHostReservationSet(value: HostReservationSet): Self = StObject.set(x, "HostReservationSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostReservationSetUndefined: Self = StObject.set(x, "HostReservationSet", js.undefined)
+    inline def setHostReservationSetUndefined: Self = StObject.set(x, "HostReservationSet", js.undefined)
     
-    @scala.inline
-    def setHostReservationSetVarargs(value: HostReservation*): Self = StObject.set(x, "HostReservationSet", js.Array(value :_*))
+    inline def setHostReservationSetVarargs(value: HostReservation*): Self = StObject.set(x, "HostReservationSet", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

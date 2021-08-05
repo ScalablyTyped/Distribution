@@ -8,11 +8,9 @@ object rdfjsSerializerRdfjsStrings {
   
   @js.native
   sealed trait esm extends StObject
-  @scala.inline
-  def esm: esm = "esm".asInstanceOf[esm]
+  inline def esm: esm = "esm".asInstanceOf[esm]
   
   @js.native
   sealed trait ts extends StObject
-  @scala.inline
-  def ts: ts = "ts".asInstanceOf[ts]
+  inline def ts: ts = "ts".asInstanceOf[ts]
 }

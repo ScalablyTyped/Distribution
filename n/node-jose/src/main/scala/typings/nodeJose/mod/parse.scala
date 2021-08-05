@@ -12,30 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object parse {
   
-  @scala.inline
-  def apply(input: String): ParseReturn = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
-  @scala.inline
-  def apply(input: js.Object): ParseReturn = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
-  @scala.inline
-  def apply(input: Buffer): ParseReturn = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def apply(input: String): ParseReturn = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def apply(input: js.Object): ParseReturn = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def apply(input: Buffer): ParseReturn = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
   
   @JSImport("node-jose", "parse")
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compact(input: String): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
-  @scala.inline
-  def compact(input: js.Object): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
-  @scala.inline
-  def compact(input: Buffer): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def compact(input: String): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def compact(input: js.Object): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def compact(input: Buffer): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
   
-  @scala.inline
-  def json(input: String): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
-  @scala.inline
-  def json(input: js.Object): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
-  @scala.inline
-  def json(input: Buffer): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def json(input: String): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def json(input: js.Object): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  inline def json(input: Buffer): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(input.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
   
   trait ParseReturn extends StObject {
     
@@ -51,8 +42,7 @@ object parse {
   }
   object ParseReturn {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       format: compact | json,
       header: js.Object,
       input: Buffer | String | js.Object,
@@ -64,23 +54,17 @@ object parse {
       __obj.asInstanceOf[ParseReturn]
     }
     
-    @scala.inline
-    implicit class ParseReturnMutableBuilder[Self <: ParseReturn] (val x: Self) extends AnyVal {
+    extension [Self <: ParseReturn](x: Self) {
       
-      @scala.inline
-      def setFormat(value: compact | json): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: compact | json): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Object): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: Buffer | String | js.Object): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: Buffer | String | js.Object): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerform(value: KeyStore => js.Promise[DecryptResult | VerificationResult]): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
+      inline def setPerform(value: KeyStore => js.Promise[DecryptResult | VerificationResult]): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: typings.nodeJose.nodeJoseStrings.JWS | typings.nodeJose.nodeJoseStrings.JWE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: typings.nodeJose.nodeJoseStrings.JWS | typings.nodeJose.nodeJoseStrings.JWE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

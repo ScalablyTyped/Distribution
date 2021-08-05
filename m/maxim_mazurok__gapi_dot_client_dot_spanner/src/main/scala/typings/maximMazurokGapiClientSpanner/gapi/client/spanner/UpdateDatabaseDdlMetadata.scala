@@ -17,37 +17,27 @@ trait UpdateDatabaseDdlMetadata extends StObject {
 }
 object UpdateDatabaseDdlMetadata {
   
-  @scala.inline
-  def apply(): UpdateDatabaseDdlMetadata = {
+  inline def apply(): UpdateDatabaseDdlMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDatabaseDdlMetadata]
   }
   
-  @scala.inline
-  implicit class UpdateDatabaseDdlMetadataMutableBuilder[Self <: UpdateDatabaseDdlMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDatabaseDdlMetadata](x: Self) {
     
-    @scala.inline
-    def setCommitTimestamps(value: js.Array[String]): Self = StObject.set(x, "commitTimestamps", value.asInstanceOf[js.Any])
+    inline def setCommitTimestamps(value: js.Array[String]): Self = StObject.set(x, "commitTimestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitTimestampsUndefined: Self = StObject.set(x, "commitTimestamps", js.undefined)
+    inline def setCommitTimestampsUndefined: Self = StObject.set(x, "commitTimestamps", js.undefined)
     
-    @scala.inline
-    def setCommitTimestampsVarargs(value: String*): Self = StObject.set(x, "commitTimestamps", js.Array(value :_*))
+    inline def setCommitTimestampsVarargs(value: String*): Self = StObject.set(x, "commitTimestamps", js.Array(value :_*))
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setStatements(value: js.Array[String]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: js.Array[String]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+    inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
-    @scala.inline
-    def setStatementsVarargs(value: String*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: String*): Self = StObject.set(x, "statements", js.Array(value :_*))
   }
 }

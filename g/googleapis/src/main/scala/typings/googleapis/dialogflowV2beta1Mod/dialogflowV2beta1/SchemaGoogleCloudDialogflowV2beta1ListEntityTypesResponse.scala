@@ -23,28 +23,21 @@ trait SchemaGoogleCloudDialogflowV2beta1ListEntityTypesResponse extends StObject
 }
 object SchemaGoogleCloudDialogflowV2beta1ListEntityTypesResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1ListEntityTypesResponse = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1ListEntityTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1ListEntityTypesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1ListEntityTypesResponseMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1ListEntityTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1ListEntityTypesResponse](x: Self) {
     
-    @scala.inline
-    def setEntityTypes(value: js.Array[SchemaGoogleCloudDialogflowV2beta1EntityType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
+    inline def setEntityTypes(value: js.Array[SchemaGoogleCloudDialogflowV2beta1EntityType]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
+    inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    @scala.inline
-    def setEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2beta1EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: SchemaGoogleCloudDialogflowV2beta1EntityType*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

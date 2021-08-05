@@ -37,56 +37,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
+      inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
+      inline def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
       
-      @scala.inline
-      def setImportScripts(value: js.Array[String | ChunkName]): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
+      inline def setImportScripts(value: js.Array[String | ChunkName]): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
+      inline def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
       
-      @scala.inline
-      def setImportScriptsVarargs(value: (String | ChunkName)*): Self = StObject.set(x, "importScripts", js.Array(value :_*))
+      inline def setImportScriptsVarargs(value: (String | ChunkName)*): Self = StObject.set(x, "importScripts", js.Array(value :_*))
       
-      @scala.inline
-      def setMergeStaticsConfig(value: Boolean): Self = StObject.set(x, "mergeStaticsConfig", value.asInstanceOf[js.Any])
+      inline def setMergeStaticsConfig(value: Boolean): Self = StObject.set(x, "mergeStaticsConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeStaticsConfigUndefined: Self = StObject.set(x, "mergeStaticsConfig", js.undefined)
+      inline def setMergeStaticsConfigUndefined: Self = StObject.set(x, "mergeStaticsConfig", js.undefined)
       
-      @scala.inline
-      def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+      inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      @scala.inline
-      def setStaticFileGlobsIgnorePatterns(value: js.Array[RegExp]): Self = StObject.set(x, "staticFileGlobsIgnorePatterns", value.asInstanceOf[js.Any])
+      inline def setStaticFileGlobsIgnorePatterns(value: js.Array[RegExp]): Self = StObject.set(x, "staticFileGlobsIgnorePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticFileGlobsIgnorePatternsUndefined: Self = StObject.set(x, "staticFileGlobsIgnorePatterns", js.undefined)
+      inline def setStaticFileGlobsIgnorePatternsUndefined: Self = StObject.set(x, "staticFileGlobsIgnorePatterns", js.undefined)
       
-      @scala.inline
-      def setStaticFileGlobsIgnorePatternsVarargs(value: RegExp*): Self = StObject.set(x, "staticFileGlobsIgnorePatterns", js.Array(value :_*))
+      inline def setStaticFileGlobsIgnorePatternsVarargs(value: RegExp*): Self = StObject.set(x, "staticFileGlobsIgnorePatterns", js.Array(value :_*))
     }
   }
   
@@ -102,20 +86,16 @@ object mod {
   }
   object _Options {
     
-    @scala.inline
-    def apply(): _Options = {
+    inline def apply(): _Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[_Options]
     }
     
-    @scala.inline
-    implicit class _OptionsMutableBuilder[Self <: _Options] (val x: Self) extends AnyVal {
+    extension [Self <: _Options](x: Self) {
       
-      @scala.inline
-      def setImportScripts(value: js.Any): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
+      inline def setImportScripts(value: js.Any): Self = StObject.set(x, "importScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
+      inline def setImportScriptsUndefined: Self = StObject.set(x, "importScripts", js.undefined)
     }
   }
 }

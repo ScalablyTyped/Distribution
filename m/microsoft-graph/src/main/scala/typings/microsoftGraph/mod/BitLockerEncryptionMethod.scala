@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BitLockerEncryptionMethod extends StObject
 object BitLockerEncryptionMethod {
   
-  @scala.inline
-  def aesCbc128: typings.microsoftGraph.microsoftGraphStrings.aesCbc128 = "aesCbc128".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.aesCbc128]
+  inline def aesCbc128: typings.microsoftGraph.microsoftGraphStrings.aesCbc128 = "aesCbc128".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.aesCbc128]
   
-  @scala.inline
-  def aesCbc256: typings.microsoftGraph.microsoftGraphStrings.aesCbc256 = "aesCbc256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.aesCbc256]
+  inline def aesCbc256: typings.microsoftGraph.microsoftGraphStrings.aesCbc256 = "aesCbc256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.aesCbc256]
   
-  @scala.inline
-  def xtsAes128: typings.microsoftGraph.microsoftGraphStrings.xtsAes128 = "xtsAes128".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.xtsAes128]
+  inline def xtsAes128: typings.microsoftGraph.microsoftGraphStrings.xtsAes128 = "xtsAes128".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.xtsAes128]
   
-  @scala.inline
-  def xtsAes256: typings.microsoftGraph.microsoftGraphStrings.xtsAes256 = "xtsAes256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.xtsAes256]
+  inline def xtsAes256: typings.microsoftGraph.microsoftGraphStrings.xtsAes256 = "xtsAes256".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.xtsAes256]
 }

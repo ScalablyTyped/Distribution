@@ -24,8 +24,7 @@ trait ApiClient extends StObject {
 }
 object ApiClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apiKeys: ApiKeysApi,
     collections: CollectionsApi,
     documents: DocumentsApi,
@@ -39,31 +38,22 @@ object ApiClient {
     __obj.asInstanceOf[ApiClient]
   }
   
-  @scala.inline
-  implicit class ApiClientMutableBuilder[Self <: ApiClient] (val x: Self) extends AnyVal {
+  extension [Self <: ApiClient](x: Self) {
     
-    @scala.inline
-    def setApiKeys(value: ApiKeysApi): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
+    inline def setApiKeys(value: ApiKeysApi): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollections(value: CollectionsApi): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+    inline def setCollections(value: CollectionsApi): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocuments(value: DocumentsApi): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: DocumentsApi): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrations(value: IntegrationsApi): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
+    inline def setIntegrations(value: IntegrationsApi): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizations(value: OrganizationsApi): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+    inline def setOrganizations(value: OrganizationsApi): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueries(value: QueriesApi): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: QueriesApi): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: UsersApi): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: UsersApi): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaces(value: WorkspacesApi): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+    inline def setWorkspaces(value: WorkspacesApi): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
   }
 }

@@ -11,10 +11,8 @@ object getPolicyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPolicy(args: GetPolicyArgs): js.Promise[GetPolicyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolicy")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPolicyResult]]
-  @scala.inline
-  def getPolicy(args: GetPolicyArgs, opts: InvokeOptions): js.Promise[GetPolicyResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolicy")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPolicyResult]]
+  inline def getPolicy(args: GetPolicyArgs): js.Promise[GetPolicyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolicy")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPolicyResult]]
+  inline def getPolicy(args: GetPolicyArgs, opts: InvokeOptions): js.Promise[GetPolicyResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolicy")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPolicyResult]]
   
   trait GetPolicyArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getPolicyMod {
   }
   object GetPolicyArgs {
     
-    @scala.inline
-    def apply(arn: String): GetPolicyArgs = {
+    inline def apply(arn: String): GetPolicyArgs = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPolicyArgs]
     }
     
-    @scala.inline
-    implicit class GetPolicyArgsMutableBuilder[Self <: GetPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,32 +68,24 @@ object getPolicyMod {
   }
   object GetPolicyResult {
     
-    @scala.inline
-    def apply(arn: String, description: String, id: String, name: String, path: String, policy: String): GetPolicyResult = {
+    inline def apply(arn: String, description: String, id: String, name: String, path: String, policy: String): GetPolicyResult = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPolicyResult]
     }
     
-    @scala.inline
-    implicit class GetPolicyResultMutableBuilder[Self <: GetPolicyResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetPolicyResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     }
   }
 }

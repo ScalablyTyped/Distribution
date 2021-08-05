@@ -33,8 +33,7 @@ trait Bin
 }
 object Bin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     count: Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object Bin {
     __obj.asInstanceOf[Bin]
   }
   
-  @scala.inline
-  implicit class BinMutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
+  extension [Self <: Bin](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
   }
 }

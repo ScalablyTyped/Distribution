@@ -36,37 +36,27 @@ trait SchemaGeographicDivision extends StObject {
 }
 object SchemaGeographicDivision {
   
-  @scala.inline
-  def apply(): SchemaGeographicDivision = {
+  inline def apply(): SchemaGeographicDivision = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGeographicDivision]
   }
   
-  @scala.inline
-  implicit class SchemaGeographicDivisionMutableBuilder[Self <: SchemaGeographicDivision] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGeographicDivision](x: Self) {
     
-    @scala.inline
-    def setAlsoKnownAs(value: js.Array[String]): Self = StObject.set(x, "alsoKnownAs", value.asInstanceOf[js.Any])
+    inline def setAlsoKnownAs(value: js.Array[String]): Self = StObject.set(x, "alsoKnownAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlsoKnownAsUndefined: Self = StObject.set(x, "alsoKnownAs", js.undefined)
+    inline def setAlsoKnownAsUndefined: Self = StObject.set(x, "alsoKnownAs", js.undefined)
     
-    @scala.inline
-    def setAlsoKnownAsVarargs(value: String*): Self = StObject.set(x, "alsoKnownAs", js.Array(value :_*))
+    inline def setAlsoKnownAsVarargs(value: String*): Self = StObject.set(x, "alsoKnownAs", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOfficeIndices(value: js.Array[Double]): Self = StObject.set(x, "officeIndices", value.asInstanceOf[js.Any])
+    inline def setOfficeIndices(value: js.Array[Double]): Self = StObject.set(x, "officeIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeIndicesUndefined: Self = StObject.set(x, "officeIndices", js.undefined)
+    inline def setOfficeIndicesUndefined: Self = StObject.set(x, "officeIndices", js.undefined)
     
-    @scala.inline
-    def setOfficeIndicesVarargs(value: Double*): Self = StObject.set(x, "officeIndices", js.Array(value :_*))
+    inline def setOfficeIndicesVarargs(value: Double*): Self = StObject.set(x, "officeIndices", js.Array(value :_*))
   }
 }

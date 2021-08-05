@@ -23,31 +23,23 @@ trait DeviceStatusInfo
 }
 object DeviceStatusInfo {
   
-  @scala.inline
-  def apply(): DeviceStatusInfo = {
+  inline def apply(): DeviceStatusInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceStatusInfo]
   }
   
-  @scala.inline
-  implicit class DeviceStatusInfoMutableBuilder[Self <: DeviceStatusInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceStatusInfo](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: Id): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: Id): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setPoolId(value: Id): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: Id): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolIdUndefined: Self = StObject.set(x, "poolId", js.undefined)
+    inline def setPoolIdUndefined: Self = StObject.set(x, "poolId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: AVAILABLE | IN_USE | REBOOTING | BROKEN | OFFLINE | UNPLUGGED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AVAILABLE | IN_USE | REBOOTING | BROKEN | OFFLINE | UNPLUGGED): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

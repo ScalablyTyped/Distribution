@@ -32,49 +32,35 @@ trait BlockingResponse extends StObject {
 }
 object BlockingResponse {
   
-  @scala.inline
-  def apply(): BlockingResponse = {
+  inline def apply(): BlockingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlockingResponse]
   }
   
-  @scala.inline
-  implicit class BlockingResponseMutableBuilder[Self <: BlockingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BlockingResponse](x: Self) {
     
-    @scala.inline
-    def setAuthCredentials(value: AuthCredentials): Self = StObject.set(x, "authCredentials", value.asInstanceOf[js.Any])
+    inline def setAuthCredentials(value: AuthCredentials): Self = StObject.set(x, "authCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthCredentialsUndefined: Self = StObject.set(x, "authCredentials", js.undefined)
+    inline def setAuthCredentialsUndefined: Self = StObject.set(x, "authCredentials", js.undefined)
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+    inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
+    inline def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
     
-    @scala.inline
-    def setRequestHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+    inline def setRequestHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+    inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
-    @scala.inline
-    def setRequestHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
+    inline def setRequestHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    @scala.inline
-    def setResponseHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
   }
 }

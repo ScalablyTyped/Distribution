@@ -23,31 +23,23 @@ trait ReportedOs extends StObject {
 }
 object ReportedOs {
   
-  @scala.inline
-  def apply(): ReportedOs = {
+  inline def apply(): ReportedOs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportedOs]
   }
   
-  @scala.inline
-  implicit class ReportedOsMutableBuilder[Self <: ReportedOs] (val x: Self) extends AnyVal {
+  extension [Self <: ReportedOs](x: Self) {
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "Family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "Family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "Family", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

@@ -33,40 +33,29 @@ trait Peer extends StObject {
 }
 object Peer {
   
-  @scala.inline
-  def apply(peer_status: String): Peer = {
+  inline def apply(peer_status: String): Peer = {
     val __obj = js.Dynamic.literal(peer_status = peer_status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Peer]
   }
   
-  @scala.inline
-  implicit class PeerMutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
+  extension [Self <: Peer](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setPeer_status(value: String): Self = StObject.set(x, "peer_status", value.asInstanceOf[js.Any])
+    inline def setPeer_status(value: String): Self = StObject.set(x, "peer_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

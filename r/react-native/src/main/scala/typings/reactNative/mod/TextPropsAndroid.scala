@@ -38,40 +38,29 @@ trait TextPropsAndroid extends StObject {
 }
 object TextPropsAndroid {
   
-  @scala.inline
-  def apply(): TextPropsAndroid = {
+  inline def apply(): TextPropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextPropsAndroid]
   }
   
-  @scala.inline
-  implicit class TextPropsAndroidMutableBuilder[Self <: TextPropsAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: TextPropsAndroid](x: Self) {
     
-    @scala.inline
-    def setDataDetectorType(value: phoneNumber | link | email | none | all_): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
+    inline def setDataDetectorType(value: phoneNumber | link | email | none | all_): Self = StObject.set(x, "dataDetectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
+    inline def setDataDetectorTypeNull: Self = StObject.set(x, "dataDetectorType", null)
     
-    @scala.inline
-    def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
+    inline def setDataDetectorTypeUndefined: Self = StObject.set(x, "dataDetectorType", js.undefined)
     
-    @scala.inline
-    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
-    @scala.inline
-    def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
+    inline def setSelectionColor(value: ColorValue): Self = StObject.set(x, "selectionColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
+    inline def setSelectionColorUndefined: Self = StObject.set(x, "selectionColor", js.undefined)
     
-    @scala.inline
-    def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
+    inline def setTextBreakStrategy(value: simple | highQuality | balanced): Self = StObject.set(x, "textBreakStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
+    inline def setTextBreakStrategyUndefined: Self = StObject.set(x, "textBreakStrategy", js.undefined)
   }
 }

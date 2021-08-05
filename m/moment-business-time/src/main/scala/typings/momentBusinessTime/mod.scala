@@ -17,29 +17,22 @@ object mod {
   }
   object LocaleSpecification {
     
-    @scala.inline
-    def apply(): LocaleSpecification = {
+    inline def apply(): LocaleSpecification = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocaleSpecification]
     }
     
-    @scala.inline
-    implicit class LocaleSpecificationMutableBuilder[Self <: LocaleSpecification] (val x: Self) extends AnyVal {
+    extension [Self <: LocaleSpecification](x: Self) {
       
-      @scala.inline
-      def setHolidays(value: js.Array[String]): Self = StObject.set(x, "holidays", value.asInstanceOf[js.Any])
+      inline def setHolidays(value: js.Array[String]): Self = StObject.set(x, "holidays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHolidaysUndefined: Self = StObject.set(x, "holidays", js.undefined)
+      inline def setHolidaysUndefined: Self = StObject.set(x, "holidays", js.undefined)
       
-      @scala.inline
-      def setHolidaysVarargs(value: String*): Self = StObject.set(x, "holidays", js.Array(value :_*))
+      inline def setHolidaysVarargs(value: String*): Self = StObject.set(x, "holidays", js.Array(value :_*))
       
-      @scala.inline
-      def setWorkinghours(value: WorkingHoursMap): Self = StObject.set(x, "workinghours", value.asInstanceOf[js.Any])
+      inline def setWorkinghours(value: WorkingHoursMap): Self = StObject.set(x, "workinghours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkinghoursUndefined: Self = StObject.set(x, "workinghours", js.undefined)
+      inline def setWorkinghoursUndefined: Self = StObject.set(x, "workinghours", js.undefined)
     }
   }
   
@@ -84,8 +77,7 @@ object mod {
   }
   object WorkingHoursMap {
     
-    @scala.inline
-    def apply(): WorkingHoursMap = {
+    inline def apply(): WorkingHoursMap = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("0")(null)
       __obj.updateDynamic("1")(null)
@@ -97,71 +89,49 @@ object mod {
       __obj.asInstanceOf[WorkingHoursMap]
     }
     
-    @scala.inline
-    implicit class WorkingHoursMapMutableBuilder[Self <: WorkingHoursMap] (val x: Self) extends AnyVal {
+    extension [Self <: WorkingHoursMap](x: Self) {
       
-      @scala.inline
-      def set0(value: js.Array[String]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+      inline def set0(value: js.Array[String]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set0Null: Self = StObject.set(x, "0", null)
+      inline def set0Null: Self = StObject.set(x, "0", null)
       
-      @scala.inline
-      def set0Varargs(value: String*): Self = StObject.set(x, "0", js.Array(value :_*))
+      inline def set0Varargs(value: String*): Self = StObject.set(x, "0", js.Array(value :_*))
       
-      @scala.inline
-      def set1(value: js.Array[String]): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: js.Array[String]): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1Null: Self = StObject.set(x, "1", null)
+      inline def set1Null: Self = StObject.set(x, "1", null)
       
-      @scala.inline
-      def set1Varargs(value: String*): Self = StObject.set(x, "1", js.Array(value :_*))
+      inline def set1Varargs(value: String*): Self = StObject.set(x, "1", js.Array(value :_*))
       
-      @scala.inline
-      def set2(value: js.Array[String]): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      inline def set2(value: js.Array[String]): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2Null: Self = StObject.set(x, "2", null)
+      inline def set2Null: Self = StObject.set(x, "2", null)
       
-      @scala.inline
-      def set2Varargs(value: String*): Self = StObject.set(x, "2", js.Array(value :_*))
+      inline def set2Varargs(value: String*): Self = StObject.set(x, "2", js.Array(value :_*))
       
-      @scala.inline
-      def set3(value: js.Array[String]): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      inline def set3(value: js.Array[String]): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3Null: Self = StObject.set(x, "3", null)
+      inline def set3Null: Self = StObject.set(x, "3", null)
       
-      @scala.inline
-      def set3Varargs(value: String*): Self = StObject.set(x, "3", js.Array(value :_*))
+      inline def set3Varargs(value: String*): Self = StObject.set(x, "3", js.Array(value :_*))
       
-      @scala.inline
-      def set4(value: js.Array[String]): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(value: js.Array[String]): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4Null: Self = StObject.set(x, "4", null)
+      inline def set4Null: Self = StObject.set(x, "4", null)
       
-      @scala.inline
-      def set4Varargs(value: String*): Self = StObject.set(x, "4", js.Array(value :_*))
+      inline def set4Varargs(value: String*): Self = StObject.set(x, "4", js.Array(value :_*))
       
-      @scala.inline
-      def set5(value: js.Array[String]): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      inline def set5(value: js.Array[String]): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5Null: Self = StObject.set(x, "5", null)
+      inline def set5Null: Self = StObject.set(x, "5", null)
       
-      @scala.inline
-      def set5Varargs(value: String*): Self = StObject.set(x, "5", js.Array(value :_*))
+      inline def set5Varargs(value: String*): Self = StObject.set(x, "5", js.Array(value :_*))
       
-      @scala.inline
-      def set6(value: js.Array[String]): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+      inline def set6(value: js.Array[String]): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6Null: Self = StObject.set(x, "6", null)
+      inline def set6Null: Self = StObject.set(x, "6", null)
       
-      @scala.inline
-      def set6Varargs(value: String*): Self = StObject.set(x, "6", js.Array(value :_*))
+      inline def set6Varargs(value: String*): Self = StObject.set(x, "6", js.Array(value :_*))
     }
   }
 }

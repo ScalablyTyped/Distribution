@@ -18,10 +18,8 @@ object useEventEmitterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: Record[String, js.Any] */](): NavigationEventEmitter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[NavigationEventEmitter[T]]
-  @scala.inline
-  def default[T /* <: Record[String, js.Any] */](listen: js.Function1[/* e */ js.Any, Unit]): NavigationEventEmitter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(listen.asInstanceOf[js.Any]).asInstanceOf[NavigationEventEmitter[T]]
+  inline def default[T /* <: Record[String, js.Any] */](): NavigationEventEmitter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[NavigationEventEmitter[T]]
+  inline def default[T /* <: Record[String, js.Any] */](listen: js.Function1[/* e */ js.Any, Unit]): NavigationEventEmitter[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(listen.asInstanceOf[js.Any]).asInstanceOf[NavigationEventEmitter[T]]
   
   trait NavigationEventEmitter[T /* <: Record[String, js.Any] */]
     extends StObject
@@ -31,8 +29,7 @@ object useEventEmitterMod {
   }
   object NavigationEventEmitter {
     
-    @scala.inline
-    def apply[T /* <: Record[String, js.Any] */](
+    inline def apply[T /* <: Record[String, js.Any] */](
       create: String => EventConsumer[T],
       emit: (Type[js.Any, T]) & (js.Object | `2`) & ((`4`[T, js.Any]) | (`3`[T, js.Any])) => EventArg[
           js.Any, 
@@ -44,11 +41,9 @@ object useEventEmitterMod {
       __obj.asInstanceOf[NavigationEventEmitter[T]]
     }
     
-    @scala.inline
-    implicit class NavigationEventEmitterMutableBuilder[Self <: NavigationEventEmitter[?], T /* <: Record[String, js.Any] */] (val x: Self & NavigationEventEmitter[T]) extends AnyVal {
+    extension [Self <: NavigationEventEmitter[?], T /* <: Record[String, js.Any] */](x: Self & NavigationEventEmitter[T]) {
       
-      @scala.inline
-      def setCreate(value: String => EventConsumer[T]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: String => EventConsumer[T]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
 }

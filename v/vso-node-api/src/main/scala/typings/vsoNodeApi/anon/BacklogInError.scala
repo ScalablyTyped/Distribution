@@ -22,8 +22,7 @@ trait BacklogInError extends StObject {
 }
 object BacklogInError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backlogInError: scala.Double,
     doesntExistOrAccessDenied: scala.Double,
     maxTeamFieldsExceeded: scala.Double,
@@ -36,28 +35,20 @@ object BacklogInError {
     __obj.asInstanceOf[BacklogInError]
   }
   
-  @scala.inline
-  implicit class BacklogInErrorMutableBuilder[Self <: BacklogInError] (val x: Self) extends AnyVal {
+  extension [Self <: BacklogInError](x: Self) {
     
-    @scala.inline
-    def setBacklogInError(value: scala.Double): Self = StObject.set(x, "backlogInError", value.asInstanceOf[js.Any])
+    inline def setBacklogInError(value: scala.Double): Self = StObject.set(x, "backlogInError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoesntExistOrAccessDenied(value: scala.Double): Self = StObject.set(x, "doesntExistOrAccessDenied", value.asInstanceOf[js.Any])
+    inline def setDoesntExistOrAccessDenied(value: scala.Double): Self = StObject.set(x, "doesntExistOrAccessDenied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTeamFieldsExceeded(value: scala.Double): Self = StObject.set(x, "maxTeamFieldsExceeded", value.asInstanceOf[js.Any])
+    inline def setMaxTeamFieldsExceeded(value: scala.Double): Self = StObject.set(x, "maxTeamFieldsExceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTeamsExceeded(value: scala.Double): Self = StObject.set(x, "maxTeamsExceeded", value.asInstanceOf[js.Any])
+    inline def setMaxTeamsExceeded(value: scala.Double): Self = StObject.set(x, "maxTeamsExceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingTeamFieldValue(value: scala.Double): Self = StObject.set(x, "missingTeamFieldValue", value.asInstanceOf[js.Any])
+    inline def setMissingTeamFieldValue(value: scala.Double): Self = StObject.set(x, "missingTeamFieldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoIterationsExist(value: scala.Double): Self = StObject.set(x, "noIterationsExist", value.asInstanceOf[js.Any])
+    inline def setNoIterationsExist(value: scala.Double): Self = StObject.set(x, "noIterationsExist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
+    inline def setOK(value: scala.Double): Self = StObject.set(x, "oK", value.asInstanceOf[js.Any])
   }
 }

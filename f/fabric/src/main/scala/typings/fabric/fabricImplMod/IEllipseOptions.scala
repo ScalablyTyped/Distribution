@@ -20,25 +20,19 @@ trait IEllipseOptions
 }
 object IEllipseOptions {
   
-  @scala.inline
-  def apply(): IEllipseOptions = {
+  inline def apply(): IEllipseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEllipseOptions]
   }
   
-  @scala.inline
-  implicit class IEllipseOptionsMutableBuilder[Self <: IEllipseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEllipseOptions](x: Self) {
     
-    @scala.inline
-    def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+    inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+    inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
     
-    @scala.inline
-    def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
   }
 }

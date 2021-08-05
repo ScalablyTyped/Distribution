@@ -10,16 +10,13 @@ trait PrintCompleteEvent extends StObject {
 }
 object PrintCompleteEvent {
   
-  @scala.inline
-  def apply(results: PrintCompleteEventResults): PrintCompleteEvent = {
+  inline def apply(results: PrintCompleteEventResults): PrintCompleteEvent = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintCompleteEvent]
   }
   
-  @scala.inline
-  implicit class PrintCompleteEventMutableBuilder[Self <: PrintCompleteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PrintCompleteEvent](x: Self) {
     
-    @scala.inline
-    def setResults(value: PrintCompleteEventResults): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: PrintCompleteEventResults): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
   }
 }

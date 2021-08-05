@@ -13,6 +13,5 @@ class ObjectIdentifier ()
   extends typings.xadesjs.xmlMod.ObjectIdentifier
 object ObjectIdentifier {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.ObjectIdentifier] = ^.asInstanceOf[js.Dynamic].selectDynamic("ObjectIdentifier").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ObjectIdentifier]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.ObjectIdentifier] = ^.asInstanceOf[js.Dynamic].selectDynamic("ObjectIdentifier").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ObjectIdentifier]]
 }

@@ -11,19 +11,15 @@ trait Suggestion extends StObject {
 }
 object Suggestion {
   
-  @scala.inline
-  def apply(): Suggestion = {
+  inline def apply(): Suggestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Suggestion]
   }
   
-  @scala.inline
-  implicit class SuggestionMutableBuilder[Self <: Suggestion] (val x: Self) extends AnyVal {
+  extension [Self <: Suggestion](x: Self) {
     
-    @scala.inline
-    def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: String): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
   }
 }

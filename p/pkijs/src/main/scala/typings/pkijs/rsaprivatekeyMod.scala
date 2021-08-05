@@ -65,13 +65,10 @@ object rsaprivatekeyMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait RSAPrivateKey extends StObject {
@@ -110,8 +107,7 @@ object rsaprivatekeyMod {
   }
   object RSAPrivateKey {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       coefficient: Integer,
       exponent1: Integer,
       exponent2: Integer,
@@ -130,56 +126,39 @@ object rsaprivatekeyMod {
       __obj.asInstanceOf[RSAPrivateKey]
     }
     
-    @scala.inline
-    implicit class RSAPrivateKeyMutableBuilder[Self <: RSAPrivateKey] (val x: Self) extends AnyVal {
+    extension [Self <: RSAPrivateKey](x: Self) {
       
-      @scala.inline
-      def setCoefficient(value: Integer): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
+      inline def setCoefficient(value: Integer): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExponent1(value: Integer): Self = StObject.set(x, "exponent1", value.asInstanceOf[js.Any])
+      inline def setExponent1(value: Integer): Self = StObject.set(x, "exponent1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExponent2(value: Integer): Self = StObject.set(x, "exponent2", value.asInstanceOf[js.Any])
+      inline def setExponent2(value: Integer): Self = StObject.set(x, "exponent2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromJSON(value: JsonWebKey => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+      inline def setFromJSON(value: JsonWebKey => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setModulus(value: Integer): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
+      inline def setModulus(value: Integer): Self = StObject.set(x, "modulus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherPrimeInfos(value: js.Array[typings.pkijs.otherPrimeInfoMod.default]): Self = StObject.set(x, "otherPrimeInfos", value.asInstanceOf[js.Any])
+      inline def setOtherPrimeInfos(value: js.Array[typings.pkijs.otherPrimeInfoMod.default]): Self = StObject.set(x, "otherPrimeInfos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherPrimeInfosUndefined: Self = StObject.set(x, "otherPrimeInfos", js.undefined)
+      inline def setOtherPrimeInfosUndefined: Self = StObject.set(x, "otherPrimeInfos", js.undefined)
       
-      @scala.inline
-      def setOtherPrimeInfosVarargs(value: typings.pkijs.otherPrimeInfoMod.default*): Self = StObject.set(x, "otherPrimeInfos", js.Array(value :_*))
+      inline def setOtherPrimeInfosVarargs(value: typings.pkijs.otherPrimeInfoMod.default*): Self = StObject.set(x, "otherPrimeInfos", js.Array(value :_*))
       
-      @scala.inline
-      def setPrime1(value: Integer): Self = StObject.set(x, "prime1", value.asInstanceOf[js.Any])
+      inline def setPrime1(value: Integer): Self = StObject.set(x, "prime1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrime2(value: Integer): Self = StObject.set(x, "prime2", value.asInstanceOf[js.Any])
+      inline def setPrime2(value: Integer): Self = StObject.set(x, "prime2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateExponent(value: Integer): Self = StObject.set(x, "privateExponent", value.asInstanceOf[js.Any])
+      inline def setPrivateExponent(value: Integer): Self = StObject.set(x, "privateExponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicExponent(value: Integer): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
+      inline def setPublicExponent(value: Integer): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

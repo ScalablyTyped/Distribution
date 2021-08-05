@@ -37,8 +37,7 @@ trait FlashFill extends StObject {
 }
 object FlashFill {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitmapIsClipped: Boolean,
     bitmapPath: String,
     color: js.Any,
@@ -54,43 +53,30 @@ object FlashFill {
     __obj.asInstanceOf[FlashFill]
   }
   
-  @scala.inline
-  implicit class FlashFillMutableBuilder[Self <: FlashFill] (val x: Self) extends AnyVal {
+  extension [Self <: FlashFill](x: Self) {
     
-    @scala.inline
-    def setBitmapIsClipped(value: Boolean): Self = StObject.set(x, "bitmapIsClipped", value.asInstanceOf[js.Any])
+    inline def setBitmapIsClipped(value: Boolean): Self = StObject.set(x, "bitmapIsClipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmapPath(value: String): Self = StObject.set(x, "bitmapPath", value.asInstanceOf[js.Any])
+    inline def setBitmapPath(value: String): Self = StObject.set(x, "bitmapPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorArray(value: js.Array[js.Any]): Self = StObject.set(x, "colorArray", value.asInstanceOf[js.Any])
+    inline def setColorArray(value: js.Array[js.Any]): Self = StObject.set(x, "colorArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorArrayVarargs(value: js.Any*): Self = StObject.set(x, "colorArray", js.Array(value :_*))
+    inline def setColorArrayVarargs(value: js.Any*): Self = StObject.set(x, "colorArray", js.Array(value :_*))
     
-    @scala.inline
-    def setFocalPoint(value: Double): Self = StObject.set(x, "focalPoint", value.asInstanceOf[js.Any])
+    inline def setFocalPoint(value: Double): Self = StObject.set(x, "focalPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearRGB(value: Boolean): Self = StObject.set(x, "linearRGB", value.asInstanceOf[js.Any])
+    inline def setLinearRGB(value: Boolean): Self = StObject.set(x, "linearRGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatrix(value: FlashMatrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
+    inline def setMatrix(value: FlashMatrix): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosArray(value: js.Array[Double]): Self = StObject.set(x, "posArray", value.asInstanceOf[js.Any])
+    inline def setPosArray(value: js.Array[Double]): Self = StObject.set(x, "posArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosArrayVarargs(value: Double*): Self = StObject.set(x, "posArray", js.Array(value :_*))
+    inline def setPosArrayVarargs(value: Double*): Self = StObject.set(x, "posArray", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait Canonical extends StObject {
 }
 object Canonical {
   
-  @scala.inline
-  def apply(): Canonical = {
+  inline def apply(): Canonical = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Canonical]
   }
   
-  @scala.inline
-  implicit class CanonicalMutableBuilder[Self <: Canonical] (val x: Self) extends AnyVal {
+  extension [Self <: Canonical](x: Self) {
     
-    @scala.inline
-    def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
+    inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanonicalUndefined: Self = StObject.set(x, "canonical", js.undefined)
+    inline def setCanonicalUndefined: Self = StObject.set(x, "canonical", js.undefined)
     
-    @scala.inline
-    def setIndent(value: Boolean | Double | String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: Boolean | Double | String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
   }
 }

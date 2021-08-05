@@ -38,61 +38,43 @@ trait GetMatchedStylesForNodeResponse extends StObject {
 }
 object GetMatchedStylesForNodeResponse {
   
-  @scala.inline
-  def apply(): GetMatchedStylesForNodeResponse = {
+  inline def apply(): GetMatchedStylesForNodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMatchedStylesForNodeResponse]
   }
   
-  @scala.inline
-  implicit class GetMatchedStylesForNodeResponseMutableBuilder[Self <: GetMatchedStylesForNodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMatchedStylesForNodeResponse](x: Self) {
     
-    @scala.inline
-    def setAttributesStyle(value: CSSStyle): Self = StObject.set(x, "attributesStyle", value.asInstanceOf[js.Any])
+    inline def setAttributesStyle(value: CSSStyle): Self = StObject.set(x, "attributesStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesStyleUndefined: Self = StObject.set(x, "attributesStyle", js.undefined)
+    inline def setAttributesStyleUndefined: Self = StObject.set(x, "attributesStyle", js.undefined)
     
-    @scala.inline
-    def setCssKeyframesRules(value: js.Array[CSSKeyframesRule]): Self = StObject.set(x, "cssKeyframesRules", value.asInstanceOf[js.Any])
+    inline def setCssKeyframesRules(value: js.Array[CSSKeyframesRule]): Self = StObject.set(x, "cssKeyframesRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssKeyframesRulesUndefined: Self = StObject.set(x, "cssKeyframesRules", js.undefined)
+    inline def setCssKeyframesRulesUndefined: Self = StObject.set(x, "cssKeyframesRules", js.undefined)
     
-    @scala.inline
-    def setCssKeyframesRulesVarargs(value: CSSKeyframesRule*): Self = StObject.set(x, "cssKeyframesRules", js.Array(value :_*))
+    inline def setCssKeyframesRulesVarargs(value: CSSKeyframesRule*): Self = StObject.set(x, "cssKeyframesRules", js.Array(value :_*))
     
-    @scala.inline
-    def setInherited(value: js.Array[InheritedStyleEntry]): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
+    inline def setInherited(value: js.Array[InheritedStyleEntry]): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritedUndefined: Self = StObject.set(x, "inherited", js.undefined)
+    inline def setInheritedUndefined: Self = StObject.set(x, "inherited", js.undefined)
     
-    @scala.inline
-    def setInheritedVarargs(value: InheritedStyleEntry*): Self = StObject.set(x, "inherited", js.Array(value :_*))
+    inline def setInheritedVarargs(value: InheritedStyleEntry*): Self = StObject.set(x, "inherited", js.Array(value :_*))
     
-    @scala.inline
-    def setInlineStyle(value: CSSStyle): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
+    inline def setInlineStyle(value: CSSStyle): Self = StObject.set(x, "inlineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineStyleUndefined: Self = StObject.set(x, "inlineStyle", js.undefined)
+    inline def setInlineStyleUndefined: Self = StObject.set(x, "inlineStyle", js.undefined)
     
-    @scala.inline
-    def setMatchedCSSRules(value: js.Array[RuleMatch]): Self = StObject.set(x, "matchedCSSRules", value.asInstanceOf[js.Any])
+    inline def setMatchedCSSRules(value: js.Array[RuleMatch]): Self = StObject.set(x, "matchedCSSRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedCSSRulesUndefined: Self = StObject.set(x, "matchedCSSRules", js.undefined)
+    inline def setMatchedCSSRulesUndefined: Self = StObject.set(x, "matchedCSSRules", js.undefined)
     
-    @scala.inline
-    def setMatchedCSSRulesVarargs(value: RuleMatch*): Self = StObject.set(x, "matchedCSSRules", js.Array(value :_*))
+    inline def setMatchedCSSRulesVarargs(value: RuleMatch*): Self = StObject.set(x, "matchedCSSRules", js.Array(value :_*))
     
-    @scala.inline
-    def setPseudoElements(value: js.Array[PseudoElementMatches]): Self = StObject.set(x, "pseudoElements", value.asInstanceOf[js.Any])
+    inline def setPseudoElements(value: js.Array[PseudoElementMatches]): Self = StObject.set(x, "pseudoElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudoElementsUndefined: Self = StObject.set(x, "pseudoElements", js.undefined)
+    inline def setPseudoElementsUndefined: Self = StObject.set(x, "pseudoElements", js.undefined)
     
-    @scala.inline
-    def setPseudoElementsVarargs(value: PseudoElementMatches*): Self = StObject.set(x, "pseudoElements", js.Array(value :_*))
+    inline def setPseudoElementsVarargs(value: PseudoElementMatches*): Self = StObject.set(x, "pseudoElements", js.Array(value :_*))
   }
 }

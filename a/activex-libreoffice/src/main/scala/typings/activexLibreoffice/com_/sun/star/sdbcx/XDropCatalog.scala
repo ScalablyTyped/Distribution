@@ -26,8 +26,7 @@ trait XDropCatalog
 }
 object XDropCatalog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     dropCatalog: (String, SeqEquiv[PropertyValue]) => Unit,
     queryInterface: `type` => js.Any,
@@ -37,10 +36,8 @@ object XDropCatalog {
     __obj.asInstanceOf[XDropCatalog]
   }
   
-  @scala.inline
-  implicit class XDropCatalogMutableBuilder[Self <: XDropCatalog] (val x: Self) extends AnyVal {
+  extension [Self <: XDropCatalog](x: Self) {
     
-    @scala.inline
-    def setDropCatalog(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "dropCatalog", js.Any.fromFunction2(value))
+    inline def setDropCatalog(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "dropCatalog", js.Any.fromFunction2(value))
   }
 }

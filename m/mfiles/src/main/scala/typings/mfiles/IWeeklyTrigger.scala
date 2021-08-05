@@ -13,19 +13,15 @@ trait IWeeklyTrigger extends StObject {
 }
 object IWeeklyTrigger {
   
-  @scala.inline
-  def apply(DaysOfTheWeek: MFTriggerWeekDay, WeeksInterval: Double): IWeeklyTrigger = {
+  inline def apply(DaysOfTheWeek: MFTriggerWeekDay, WeeksInterval: Double): IWeeklyTrigger = {
     val __obj = js.Dynamic.literal(DaysOfTheWeek = DaysOfTheWeek.asInstanceOf[js.Any], WeeksInterval = WeeksInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWeeklyTrigger]
   }
   
-  @scala.inline
-  implicit class IWeeklyTriggerMutableBuilder[Self <: IWeeklyTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: IWeeklyTrigger](x: Self) {
     
-    @scala.inline
-    def setDaysOfTheWeek(value: MFTriggerWeekDay): Self = StObject.set(x, "DaysOfTheWeek", value.asInstanceOf[js.Any])
+    inline def setDaysOfTheWeek(value: MFTriggerWeekDay): Self = StObject.set(x, "DaysOfTheWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeksInterval(value: Double): Self = StObject.set(x, "WeeksInterval", value.asInstanceOf[js.Any])
+    inline def setWeeksInterval(value: Double): Self = StObject.set(x, "WeeksInterval", value.asInstanceOf[js.Any])
   }
 }

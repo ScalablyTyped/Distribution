@@ -19,10 +19,8 @@ object mod {
   	// false
   	```
   	*/
-  @scala.inline
-  def apply(): Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boolean]
-  @scala.inline
-  def apply(options: Options): Boolean = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(): Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boolean]
+  inline def apply(options: Options): Boolean = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("first-run", JSImport.Namespace)
   @js.native
@@ -31,10 +29,8 @@ object mod {
   /**
   	Clear the state.
   	*/
-  @scala.inline
-  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
-  @scala.inline
-  def clear(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Options extends StObject {
     
@@ -45,20 +41,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

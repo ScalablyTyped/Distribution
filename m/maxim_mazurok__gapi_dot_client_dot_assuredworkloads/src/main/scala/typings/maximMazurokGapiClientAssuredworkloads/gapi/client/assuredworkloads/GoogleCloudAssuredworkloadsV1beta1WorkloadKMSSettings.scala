@@ -17,25 +17,19 @@ trait GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings extends StObject {
 }
 object GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings {
   
-  @scala.inline
-  def apply(): GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings = {
+  inline def apply(): GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings]
   }
   
-  @scala.inline
-  implicit class GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettingsMutableBuilder[Self <: GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudAssuredworkloadsV1beta1WorkloadKMSSettings](x: Self) {
     
-    @scala.inline
-    def setNextRotationTime(value: String): Self = StObject.set(x, "nextRotationTime", value.asInstanceOf[js.Any])
+    inline def setNextRotationTime(value: String): Self = StObject.set(x, "nextRotationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextRotationTimeUndefined: Self = StObject.set(x, "nextRotationTime", js.undefined)
+    inline def setNextRotationTimeUndefined: Self = StObject.set(x, "nextRotationTime", js.undefined)
     
-    @scala.inline
-    def setRotationPeriod(value: String): Self = StObject.set(x, "rotationPeriod", value.asInstanceOf[js.Any])
+    inline def setRotationPeriod(value: String): Self = StObject.set(x, "rotationPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationPeriodUndefined: Self = StObject.set(x, "rotationPeriod", js.undefined)
+    inline def setRotationPeriodUndefined: Self = StObject.set(x, "rotationPeriod", js.undefined)
   }
 }

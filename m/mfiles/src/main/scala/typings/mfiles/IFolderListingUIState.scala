@@ -20,8 +20,7 @@ trait IFolderListingUIState extends StObject {
 }
 object IFolderListingUIState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnSortings: IFolderListingColumnSortings,
     Columns: IFolderListingColumns,
     GroupingMode: MFFolderListingItemGroupingMode,
@@ -32,22 +31,16 @@ object IFolderListingUIState {
     __obj.asInstanceOf[IFolderListingUIState]
   }
   
-  @scala.inline
-  implicit class IFolderListingUIStateMutableBuilder[Self <: IFolderListingUIState] (val x: Self) extends AnyVal {
+  extension [Self <: IFolderListingUIState](x: Self) {
     
-    @scala.inline
-    def setColumnSortings(value: IFolderListingColumnSortings): Self = StObject.set(x, "ColumnSortings", value.asInstanceOf[js.Any])
+    inline def setColumnSortings(value: IFolderListingColumnSortings): Self = StObject.set(x, "ColumnSortings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: IFolderListingColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: IFolderListingColumns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingMode(value: MFFolderListingItemGroupingMode): Self = StObject.set(x, "GroupingMode", value.asInstanceOf[js.Any])
+    inline def setGroupingMode(value: MFFolderListingItemGroupingMode): Self = StObject.set(x, "GroupingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconSize(value: Double): Self = StObject.set(x, "IconSize", value.asInstanceOf[js.Any])
+    inline def setIconSize(value: Double): Self = StObject.set(x, "IconSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: MFFolderListingViewMode): Self = StObject.set(x, "ViewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: MFFolderListingViewMode): Self = StObject.set(x, "ViewMode", value.asInstanceOf[js.Any])
   }
 }

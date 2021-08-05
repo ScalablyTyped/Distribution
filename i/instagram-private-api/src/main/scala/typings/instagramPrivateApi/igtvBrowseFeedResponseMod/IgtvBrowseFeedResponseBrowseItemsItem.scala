@@ -12,20 +12,16 @@ trait IgtvBrowseFeedResponseBrowseItemsItem extends StObject {
 }
 object IgtvBrowseFeedResponseBrowseItemsItem {
   
-  @scala.inline
-  def apply(item: IgtvBrowseFeedResponseItem, `type`: String): IgtvBrowseFeedResponseBrowseItemsItem = {
+  inline def apply(item: IgtvBrowseFeedResponseItem, `type`: String): IgtvBrowseFeedResponseBrowseItemsItem = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgtvBrowseFeedResponseBrowseItemsItem]
   }
   
-  @scala.inline
-  implicit class IgtvBrowseFeedResponseBrowseItemsItemMutableBuilder[Self <: IgtvBrowseFeedResponseBrowseItemsItem] (val x: Self) extends AnyVal {
+  extension [Self <: IgtvBrowseFeedResponseBrowseItemsItem](x: Self) {
     
-    @scala.inline
-    def setItem(value: IgtvBrowseFeedResponseItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: IgtvBrowseFeedResponseItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

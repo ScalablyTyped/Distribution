@@ -19,18 +19,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def transformPhrase(phrase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def transformPhrase(phrase: String, options: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def transformPhrase(phrase: String, options: Double, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def transformPhrase(phrase: String, options: Unit, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def transformPhrase(phrase: String, options: InterpolationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def transformPhrase(phrase: String, options: InterpolationOptions, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def transformPhrase(phrase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def transformPhrase(phrase: String, options: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def transformPhrase(phrase: String, options: Double, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def transformPhrase(phrase: String, options: Unit, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def transformPhrase(phrase: String, options: InterpolationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def transformPhrase(phrase: String, options: InterpolationOptions, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait InterpolationOptions
     extends StObject
@@ -43,26 +37,20 @@ object mod {
   }
   object InterpolationOptions {
     
-    @scala.inline
-    def apply(): InterpolationOptions = {
+    inline def apply(): InterpolationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InterpolationOptions]
     }
     
-    @scala.inline
-    implicit class InterpolationOptionsMutableBuilder[Self <: InterpolationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InterpolationOptions](x: Self) {
       
-      @scala.inline
-      def setSmart_count(value: Double | Length): Self = StObject.set(x, "smart_count", value.asInstanceOf[js.Any])
+      inline def setSmart_count(value: Double | Length): Self = StObject.set(x, "smart_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmart_countUndefined: Self = StObject.set(x, "smart_count", js.undefined)
+      inline def setSmart_countUndefined: Self = StObject.set(x, "smart_count", js.undefined)
       
-      @scala.inline
-      def set_underscore(value: String): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+      inline def set_underscore(value: String): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_underscoreUndefined: Self = StObject.set(x, "_", js.undefined)
+      inline def set_underscoreUndefined: Self = StObject.set(x, "_", js.undefined)
     }
   }
   
@@ -74,26 +62,20 @@ object mod {
   }
   object InterpolationTokenOptions {
     
-    @scala.inline
-    def apply(): InterpolationTokenOptions = {
+    inline def apply(): InterpolationTokenOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InterpolationTokenOptions]
     }
     
-    @scala.inline
-    implicit class InterpolationTokenOptionsMutableBuilder[Self <: InterpolationTokenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InterpolationTokenOptions](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     }
   }
   
@@ -105,8 +87,7 @@ object mod {
   }
   object PluralRules {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       pluralTypeToLanguages: StringDictionary[js.Array[String]],
       pluralTypes: StringDictionary[js.Function1[/* n */ Double, Double]]
     ): PluralRules = {
@@ -114,14 +95,11 @@ object mod {
       __obj.asInstanceOf[PluralRules]
     }
     
-    @scala.inline
-    implicit class PluralRulesMutableBuilder[Self <: PluralRules] (val x: Self) extends AnyVal {
+    extension [Self <: PluralRules](x: Self) {
       
-      @scala.inline
-      def setPluralTypeToLanguages(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "pluralTypeToLanguages", value.asInstanceOf[js.Any])
+      inline def setPluralTypeToLanguages(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "pluralTypeToLanguages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluralTypes(value: StringDictionary[js.Function1[/* n */ Double, Double]]): Self = StObject.set(x, "pluralTypes", value.asInstanceOf[js.Any])
+      inline def setPluralTypes(value: StringDictionary[js.Function1[/* n */ Double, Double]]): Self = StObject.set(x, "pluralTypes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,56 +146,40 @@ object mod {
   }
   object PolyglotOptions {
     
-    @scala.inline
-    def apply(): PolyglotOptions = {
+    inline def apply(): PolyglotOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolyglotOptions]
     }
     
-    @scala.inline
-    implicit class PolyglotOptionsMutableBuilder[Self <: PolyglotOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PolyglotOptions](x: Self) {
       
-      @scala.inline
-      def setAllowMissing(value: Boolean): Self = StObject.set(x, "allowMissing", value.asInstanceOf[js.Any])
+      inline def setAllowMissing(value: Boolean): Self = StObject.set(x, "allowMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMissingUndefined: Self = StObject.set(x, "allowMissing", js.undefined)
+      inline def setAllowMissingUndefined: Self = StObject.set(x, "allowMissing", js.undefined)
       
-      @scala.inline
-      def setInterpolation(value: InterpolationTokenOptions): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+      inline def setInterpolation(value: InterpolationTokenOptions): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+      inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setOnMissingKey(value: (/* key */ String, /* options */ InterpolationOptions, /* locale */ String) => String): Self = StObject.set(x, "onMissingKey", js.Any.fromFunction3(value))
+      inline def setOnMissingKey(value: (/* key */ String, /* options */ InterpolationOptions, /* locale */ String) => String): Self = StObject.set(x, "onMissingKey", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnMissingKeyUndefined: Self = StObject.set(x, "onMissingKey", js.undefined)
+      inline def setOnMissingKeyUndefined: Self = StObject.set(x, "onMissingKey", js.undefined)
       
-      @scala.inline
-      def setPhrases(value: js.Any): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
+      inline def setPhrases(value: js.Any): Self = StObject.set(x, "phrases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
+      inline def setPhrasesUndefined: Self = StObject.set(x, "phrases", js.undefined)
       
-      @scala.inline
-      def setPluralRules(value: PluralRules): Self = StObject.set(x, "pluralRules", value.asInstanceOf[js.Any])
+      inline def setPluralRules(value: PluralRules): Self = StObject.set(x, "pluralRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluralRulesUndefined: Self = StObject.set(x, "pluralRules", js.undefined)
+      inline def setPluralRulesUndefined: Self = StObject.set(x, "pluralRules", js.undefined)
       
-      @scala.inline
-      def setWarn(value: /* message */ String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* message */ String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
   }
 }

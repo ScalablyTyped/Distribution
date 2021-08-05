@@ -29,31 +29,23 @@ trait SchemaIntOrString extends StObject {
 }
 object SchemaIntOrString {
   
-  @scala.inline
-  def apply(): SchemaIntOrString = {
+  inline def apply(): SchemaIntOrString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIntOrString]
   }
   
-  @scala.inline
-  implicit class SchemaIntOrStringMutableBuilder[Self <: SchemaIntOrString] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIntOrString](x: Self) {
     
-    @scala.inline
-    def setIntVal(value: Double): Self = StObject.set(x, "intVal", value.asInstanceOf[js.Any])
+    inline def setIntVal(value: Double): Self = StObject.set(x, "intVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntValUndefined: Self = StObject.set(x, "intVal", js.undefined)
+    inline def setIntValUndefined: Self = StObject.set(x, "intVal", js.undefined)
     
-    @scala.inline
-    def setStrVal(value: String): Self = StObject.set(x, "strVal", value.asInstanceOf[js.Any])
+    inline def setStrVal(value: String): Self = StObject.set(x, "strVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrValUndefined: Self = StObject.set(x, "strVal", js.undefined)
+    inline def setStrValUndefined: Self = StObject.set(x, "strVal", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

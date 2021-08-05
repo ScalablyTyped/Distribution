@@ -14,31 +14,23 @@ trait GoogleCloudDialogflowV2IntentMessageSimpleResponse extends StObject {
 }
 object GoogleCloudDialogflowV2IntentMessageSimpleResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2IntentMessageSimpleResponse = {
+  inline def apply(): GoogleCloudDialogflowV2IntentMessageSimpleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentMessageSimpleResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2IntentMessageSimpleResponseMutableBuilder[Self <: GoogleCloudDialogflowV2IntentMessageSimpleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2IntentMessageSimpleResponse](x: Self) {
     
-    @scala.inline
-    def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
+    inline def setDisplayTextUndefined: Self = StObject.set(x, "displayText", js.undefined)
     
-    @scala.inline
-    def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
+    inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
+    inline def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
     
-    @scala.inline
-    def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
+    inline def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
+    inline def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
   }
 }

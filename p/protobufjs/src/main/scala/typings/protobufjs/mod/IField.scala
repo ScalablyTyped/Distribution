@@ -21,32 +21,24 @@ trait IField extends StObject {
 }
 object IField {
   
-  @scala.inline
-  def apply(id: Double, `type`: String): IField = {
+  inline def apply(id: Double, `type`: String): IField = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IField]
   }
   
-  @scala.inline
-  implicit class IFieldMutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
+  extension [Self <: IField](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

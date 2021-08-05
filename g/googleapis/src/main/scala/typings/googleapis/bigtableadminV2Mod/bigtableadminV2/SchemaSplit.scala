@@ -16,19 +16,15 @@ trait SchemaSplit extends StObject {
 }
 object SchemaSplit {
   
-  @scala.inline
-  def apply(): SchemaSplit = {
+  inline def apply(): SchemaSplit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSplit]
   }
   
-  @scala.inline
-  implicit class SchemaSplitMutableBuilder[Self <: SchemaSplit] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSplit](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

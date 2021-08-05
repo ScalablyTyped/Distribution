@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(cstr: String): Color = ^.asInstanceOf[js.Dynamic].apply(cstr.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def apply(cstr: String): Color = ^.asInstanceOf[js.Dynamic].apply(cstr.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   @JSImport("parse-color", JSImport.Namespace)
   @js.native
@@ -37,8 +36,7 @@ object mod {
   }
   object Color {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cmyk: js.Tuple4[Double, Double, Double, Double],
       cmyka: js.Tuple5[Double, Double, Double, Double, Double],
       hex: String,
@@ -54,38 +52,27 @@ object mod {
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setCmyk(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "cmyk", value.asInstanceOf[js.Any])
+      inline def setCmyk(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "cmyk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmyka(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "cmyka", value.asInstanceOf[js.Any])
+      inline def setCmyka(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "cmyka", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsl(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
+      inline def setHsl(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsla(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
+      inline def setHsla(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "hsla", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsv(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsv", value.asInstanceOf[js.Any])
+      inline def setHsv(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "hsv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsva(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "hsva", value.asInstanceOf[js.Any])
+      inline def setHsva(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "hsva", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRgb(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
+      inline def setRgb(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRgba(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
+      inline def setRgba(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "rgba", value.asInstanceOf[js.Any])
     }
   }
 }

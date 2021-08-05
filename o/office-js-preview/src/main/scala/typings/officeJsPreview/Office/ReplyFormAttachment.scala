@@ -37,38 +37,28 @@ trait ReplyFormAttachment extends StObject {
 }
 object ReplyFormAttachment {
   
-  @scala.inline
-  def apply(name: String, `type`: String): ReplyFormAttachment = {
+  inline def apply(name: String, `type`: String): ReplyFormAttachment = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplyFormAttachment]
   }
   
-  @scala.inline
-  implicit class ReplyFormAttachmentMutableBuilder[Self <: ReplyFormAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: ReplyFormAttachment](x: Self) {
     
-    @scala.inline
-    def setInLine(value: Boolean): Self = StObject.set(x, "inLine", value.asInstanceOf[js.Any])
+    inline def setInLine(value: Boolean): Self = StObject.set(x, "inLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInLineUndefined: Self = StObject.set(x, "inLine", js.undefined)
+    inline def setInLineUndefined: Self = StObject.set(x, "inLine", js.undefined)
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait LocationsResource extends StObject {
 }
 object LocationsResource {
   
-  @scala.inline
-  def apply(jobTemplates: JobTemplatesResource, jobs: JobsResource): LocationsResource = {
+  inline def apply(jobTemplates: JobTemplatesResource, jobs: JobsResource): LocationsResource = {
     val __obj = js.Dynamic.literal(jobTemplates = jobTemplates.asInstanceOf[js.Any], jobs = jobs.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationsResource]
   }
   
-  @scala.inline
-  implicit class LocationsResourceMutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: LocationsResource](x: Self) {
     
-    @scala.inline
-    def setJobTemplates(value: JobTemplatesResource): Self = StObject.set(x, "jobTemplates", value.asInstanceOf[js.Any])
+    inline def setJobTemplates(value: JobTemplatesResource): Self = StObject.set(x, "jobTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobs(value: JobsResource): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
+    inline def setJobs(value: JobsResource): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
   }
 }

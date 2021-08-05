@@ -10,6 +10,5 @@ object storeSetupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(_underscore: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(_underscore: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

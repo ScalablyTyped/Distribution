@@ -38,64 +38,45 @@ trait UserIpVpnTunnel extends StObject {
 }
 object UserIpVpnTunnel {
   
-  @scala.inline
-  def apply(project: String, region: String, vpnTunnel: String): UserIpVpnTunnel = {
+  inline def apply(project: String, region: String, vpnTunnel: String): UserIpVpnTunnel = {
     val __obj = js.Dynamic.literal(project = project.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], vpnTunnel = vpnTunnel.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserIpVpnTunnel]
   }
   
-  @scala.inline
-  implicit class UserIpVpnTunnelMutableBuilder[Self <: UserIpVpnTunnel] (val x: Self) extends AnyVal {
+  extension [Self <: UserIpVpnTunnel](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+    inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    @scala.inline
-    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+    inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+    inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+    inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
+    inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
+    inline def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
     
-    @scala.inline
-    def setVpnTunnel(value: String): Self = StObject.set(x, "vpnTunnel", value.asInstanceOf[js.Any])
+    inline def setVpnTunnel(value: String): Self = StObject.set(x, "vpnTunnel", value.asInstanceOf[js.Any])
   }
 }

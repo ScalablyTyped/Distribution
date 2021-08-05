@@ -16,20 +16,14 @@ object KeyUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEventKeyCode(evt: KeyboardEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventKeyCode")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getEventKeyCode(evt: KeyboardEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventKeyCode")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def getKeyModifiers(evt: KeyboardEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyModifiers")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getKeyModifiers(evt: MouseEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyModifiers")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getKeyModifiers(evt: KeyboardEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyModifiers")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getKeyModifiers(evt: MouseEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyModifiers")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def getShortcutCode(keyCode: Double, isCtrlKey: Boolean, isShiftKey: Boolean, isAltKey: Boolean, isMetaKey: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getShortcutCode")(keyCode.asInstanceOf[js.Any], isCtrlKey.asInstanceOf[js.Any], isShiftKey.asInstanceOf[js.Any], isAltKey.asInstanceOf[js.Any], isMetaKey.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getShortcutCode(keyCode: Double, isCtrlKey: Boolean, isShiftKey: Boolean, isAltKey: Boolean, isMetaKey: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getShortcutCode")(keyCode.asInstanceOf[js.Any], isCtrlKey.asInstanceOf[js.Any], isShiftKey.asInstanceOf[js.Any], isAltKey.asInstanceOf[js.Any], isMetaKey.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getShortcutCodeByEvent(evt: KeyboardEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getShortcutCodeByEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getShortcutCodeByEvent(evt: KeyboardEvent): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getShortcutCodeByEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def parseShortcutString(shortcutString: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseShortcutString")(shortcutString.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def parseShortcutString(shortcutString: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseShortcutString")(shortcutString.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -18,28 +18,21 @@ trait ListMigrationTasksResult extends StObject {
 }
 object ListMigrationTasksResult {
   
-  @scala.inline
-  def apply(): ListMigrationTasksResult = {
+  inline def apply(): ListMigrationTasksResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMigrationTasksResult]
   }
   
-  @scala.inline
-  implicit class ListMigrationTasksResultMutableBuilder[Self <: ListMigrationTasksResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListMigrationTasksResult](x: Self) {
     
-    @scala.inline
-    def setMigrationTaskSummaryList(value: MigrationTaskSummaryList): Self = StObject.set(x, "MigrationTaskSummaryList", value.asInstanceOf[js.Any])
+    inline def setMigrationTaskSummaryList(value: MigrationTaskSummaryList): Self = StObject.set(x, "MigrationTaskSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrationTaskSummaryListUndefined: Self = StObject.set(x, "MigrationTaskSummaryList", js.undefined)
+    inline def setMigrationTaskSummaryListUndefined: Self = StObject.set(x, "MigrationTaskSummaryList", js.undefined)
     
-    @scala.inline
-    def setMigrationTaskSummaryListVarargs(value: MigrationTaskSummary*): Self = StObject.set(x, "MigrationTaskSummaryList", js.Array(value :_*))
+    inline def setMigrationTaskSummaryListVarargs(value: MigrationTaskSummary*): Self = StObject.set(x, "MigrationTaskSummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

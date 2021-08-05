@@ -18,25 +18,19 @@ trait ConnectionState extends StObject {
 }
 object ConnectionState {
   
-  @scala.inline
-  def apply(): ConnectionState = {
+  inline def apply(): ConnectionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionState]
   }
   
-  @scala.inline
-  implicit class ConnectionStateMutableBuilder[Self <: ConnectionState] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionState](x: Self) {
     
-    @scala.inline
-    def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: DateType): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
+    inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ConnectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ConnectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -15,53 +15,41 @@ object rsa {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateKeyPair(): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(bits: Double): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(bits: Double, e: Double): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(
+  inline def generateKeyPair(): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  inline def generateKeyPair(bits: Double): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  inline def generateKeyPair(bits: Double, e: Double): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  inline def generateKeyPair(
     bits: Double,
     e: Double,
     callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(
+  inline def generateKeyPair(
     bits: Double,
     e: Unit,
     callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(bits: Unit, e: Double): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(
+  inline def generateKeyPair(bits: Unit, e: Double): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  inline def generateKeyPair(
     bits: Unit,
     e: Double,
     callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(
+  inline def generateKeyPair(
     bits: Unit,
     e: Unit,
     callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(bits.asInstanceOf[js.Any], e.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(
+  inline def generateKeyPair(
     options: Unit,
     callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(options: GenerateKeyPairOptions): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
-  @scala.inline
-  def generateKeyPair(
+  inline def generateKeyPair(options: GenerateKeyPairOptions): typings.nodeForge.mod.pki.rsa.KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
+  inline def generateKeyPair(
     options: GenerateKeyPairOptions,
     callback: js.Function2[/* err */ Error, /* keypair */ typings.nodeForge.mod.pki.rsa.KeyPair, Unit]
   ): typings.nodeForge.mod.pki.rsa.KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
   
-  @scala.inline
-  def setPublicKey(n: BigInteger, e: BigInteger): typings.nodeForge.mod.pki.rsa.PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("setPublicKey")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PublicKey]
+  inline def setPublicKey(n: BigInteger, e: BigInteger): typings.nodeForge.mod.pki.rsa.PublicKey = (^.asInstanceOf[js.Dynamic].applyDynamic("setPublicKey")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[typings.nodeForge.mod.pki.rsa.PublicKey]
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeForge.nodeForgeStrings.`RSAES-PKCS1-V1_5`
@@ -90,56 +78,40 @@ object rsa {
   }
   object GenerateKeyPairOptions {
     
-    @scala.inline
-    def apply(): GenerateKeyPairOptions = {
+    inline def apply(): GenerateKeyPairOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateKeyPairOptions]
     }
     
-    @scala.inline
-    implicit class GenerateKeyPairOptionsMutableBuilder[Self <: GenerateKeyPairOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateKeyPairOptions](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+      inline def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitsUndefined: Self = StObject.set(x, "bits", js.undefined)
+      inline def setBitsUndefined: Self = StObject.set(x, "bits", js.undefined)
       
-      @scala.inline
-      def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+      inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+      inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
       
-      @scala.inline
-      def setPrng(value: js.Any): Self = StObject.set(x, "prng", value.asInstanceOf[js.Any])
+      inline def setPrng(value: js.Any): Self = StObject.set(x, "prng", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrngUndefined: Self = StObject.set(x, "prng", js.undefined)
+      inline def setPrngUndefined: Self = StObject.set(x, "prng", js.undefined)
       
-      @scala.inline
-      def setWorkLoad(value: Double): Self = StObject.set(x, "workLoad", value.asInstanceOf[js.Any])
+      inline def setWorkLoad(value: Double): Self = StObject.set(x, "workLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkLoadUndefined: Self = StObject.set(x, "workLoad", js.undefined)
+      inline def setWorkLoadUndefined: Self = StObject.set(x, "workLoad", js.undefined)
       
-      @scala.inline
-      def setWorkerScript(value: String): Self = StObject.set(x, "workerScript", value.asInstanceOf[js.Any])
+      inline def setWorkerScript(value: String): Self = StObject.set(x, "workerScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkerScriptUndefined: Self = StObject.set(x, "workerScript", js.undefined)
+      inline def setWorkerScriptUndefined: Self = StObject.set(x, "workerScript", js.undefined)
       
-      @scala.inline
-      def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+      inline def setWorkers(value: Double): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
+      inline def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)
     }
   }
   
@@ -151,8 +123,7 @@ object rsa {
   }
   object KeyPair {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       privateKey: typings.nodeForge.mod.pki.rsa.PrivateKey,
       publicKey: typings.nodeForge.mod.pki.rsa.PublicKey
     ): typings.nodeForge.mod.pki.rsa.KeyPair = {
@@ -160,14 +131,11 @@ object rsa {
       __obj.asInstanceOf[typings.nodeForge.mod.pki.rsa.KeyPair]
     }
     
-    @scala.inline
-    implicit class KeyPairMutableBuilder[Self <: typings.nodeForge.mod.pki.rsa.KeyPair] (val x: Self) extends AnyVal {
+    extension [Self <: typings.nodeForge.mod.pki.rsa.KeyPair](x: Self) {
       
-      @scala.inline
-      def setPrivateKey(value: typings.nodeForge.mod.pki.rsa.PrivateKey): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: typings.nodeForge.mod.pki.rsa.PrivateKey): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKey(value: typings.nodeForge.mod.pki.rsa.PublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: typings.nodeForge.mod.pki.rsa.PublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     }
   }
   

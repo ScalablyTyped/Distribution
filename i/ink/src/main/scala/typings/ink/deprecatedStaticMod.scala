@@ -39,8 +39,7 @@ object deprecatedStaticMod {
     @JSImport("ink/build/components/DeprecatedStatic", "DeprecatedStatic.propTypes")
     @js.native
     def propTypes: ChildrenRequireable = js.native
-    @scala.inline
-    def propTypes_=(x: ChildrenRequireable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: ChildrenRequireable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait State extends StObject {
@@ -49,20 +48,16 @@ object deprecatedStaticMod {
   }
   object State {
     
-    @scala.inline
-    def apply(): State = {
+    inline def apply(): State = {
       val __obj = js.Dynamic.literal(lastIndex = null)
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
+      inline def setLastIndex(value: Double): Self = StObject.set(x, "lastIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastIndexNull: Self = StObject.set(x, "lastIndex", null)
+      inline def setLastIndexNull: Self = StObject.set(x, "lastIndex", null)
     }
   }
 }

@@ -26,8 +26,7 @@ trait IAccessControlEntryKey extends StObject {
 }
 object IAccessControlEntryKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IAccessControlEntryKey,
     GetResolvedPseudoUserOrGroupIDs: () => IUserOrUserGroupIDs,
     HasConcreteUserOrGroupID: Boolean,
@@ -42,34 +41,24 @@ object IAccessControlEntryKey {
     __obj.asInstanceOf[IAccessControlEntryKey]
   }
   
-  @scala.inline
-  implicit class IAccessControlEntryKeyMutableBuilder[Self <: IAccessControlEntryKey] (val x: Self) extends AnyVal {
+  extension [Self <: IAccessControlEntryKey](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IAccessControlEntryKey): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAccessControlEntryKey): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResolvedPseudoUserOrGroupIDs(value: () => IUserOrUserGroupIDs): Self = StObject.set(x, "GetResolvedPseudoUserOrGroupIDs", js.Any.fromFunction0(value))
+    inline def setGetResolvedPseudoUserOrGroupIDs(value: () => IUserOrUserGroupIDs): Self = StObject.set(x, "GetResolvedPseudoUserOrGroupIDs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasConcreteUserOrGroupID(value: Boolean): Self = StObject.set(x, "HasConcreteUserOrGroupID", value.asInstanceOf[js.Any])
+    inline def setHasConcreteUserOrGroupID(value: Boolean): Self = StObject.set(x, "HasConcreteUserOrGroupID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroup(value: Boolean): Self = StObject.set(x, "IsGroup", value.asInstanceOf[js.Any])
+    inline def setIsGroup(value: Boolean): Self = StObject.set(x, "IsGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPseudoUser(value: Boolean): Self = StObject.set(x, "IsPseudoUser", value.asInstanceOf[js.Any])
+    inline def setIsPseudoUser(value: Boolean): Self = StObject.set(x, "IsPseudoUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudoUserID(value: IIndirectPropertyID): Self = StObject.set(x, "PseudoUserID", value.asInstanceOf[js.Any])
+    inline def setPseudoUserID(value: IIndirectPropertyID): Self = StObject.set(x, "PseudoUserID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetResolvedPseudoUserOrGroupIDs(value: () => Unit): Self = StObject.set(x, "ResetResolvedPseudoUserOrGroupIDs", js.Any.fromFunction0(value))
+    inline def setResetResolvedPseudoUserOrGroupIDs(value: () => Unit): Self = StObject.set(x, "ResetResolvedPseudoUserOrGroupIDs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetUserOrGroupID(value: (Double, Boolean) => Unit): Self = StObject.set(x, "SetUserOrGroupID", js.Any.fromFunction2(value))
+    inline def setSetUserOrGroupID(value: (Double, Boolean) => Unit): Self = StObject.set(x, "SetUserOrGroupID", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUserOrGroupID(value: Double): Self = StObject.set(x, "UserOrGroupID", value.asInstanceOf[js.Any])
+    inline def setUserOrGroupID(value: Double): Self = StObject.set(x, "UserOrGroupID", value.asInstanceOf[js.Any])
   }
 }

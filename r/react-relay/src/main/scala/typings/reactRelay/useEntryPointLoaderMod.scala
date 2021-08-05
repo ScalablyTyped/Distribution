@@ -17,8 +17,7 @@ object useEntryPointLoaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useEntryPointLoader[TEntryPoint](
+  inline def useEntryPointLoader[TEntryPoint](
     environmentProvider: IEnvironmentProvider[EnvironmentProviderOptions[Record[String, js.Any]]],
     entryPoint: TEntryPoint
   ): UseEntryPointLoaderHookType[TEntryPoint] = (^.asInstanceOf[js.Dynamic].applyDynamic("useEntryPointLoader")(environmentProvider.asInstanceOf[js.Any], entryPoint.asInstanceOf[js.Any])).asInstanceOf[UseEntryPointLoaderHookType[TEntryPoint]]

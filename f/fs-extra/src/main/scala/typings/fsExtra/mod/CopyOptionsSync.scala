@@ -13,19 +13,15 @@ trait CopyOptionsSync
 }
 object CopyOptionsSync {
   
-  @scala.inline
-  def apply(): CopyOptionsSync = {
+  inline def apply(): CopyOptionsSync = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyOptionsSync]
   }
   
-  @scala.inline
-  implicit class CopyOptionsSyncMutableBuilder[Self <: CopyOptionsSync] (val x: Self) extends AnyVal {
+  extension [Self <: CopyOptionsSync](x: Self) {
     
-    @scala.inline
-    def setFilter(value: (/* src */ String, /* dest */ String) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+    inline def setFilter(value: (/* src */ String, /* dest */ String) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

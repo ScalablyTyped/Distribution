@@ -25,22 +25,17 @@ trait WebSocketFrame extends StObject {
 }
 object WebSocketFrame {
   
-  @scala.inline
-  def apply(mask: Boolean, opcode: Double, payloadData: String): WebSocketFrame = {
+  inline def apply(mask: Boolean, opcode: Double, payloadData: String): WebSocketFrame = {
     val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any], opcode = opcode.asInstanceOf[js.Any], payloadData = payloadData.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketFrame]
   }
   
-  @scala.inline
-  implicit class WebSocketFrameMutableBuilder[Self <: WebSocketFrame] (val x: Self) extends AnyVal {
+  extension [Self <: WebSocketFrame](x: Self) {
     
-    @scala.inline
-    def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpcode(value: Double): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
+    inline def setOpcode(value: Double): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadData(value: String): Self = StObject.set(x, "payloadData", value.asInstanceOf[js.Any])
+    inline def setPayloadData(value: String): Self = StObject.set(x, "payloadData", value.asInstanceOf[js.Any])
   }
 }

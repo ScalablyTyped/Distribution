@@ -31,8 +31,7 @@ trait DatabaseApi extends StObject {
 }
 object DatabaseApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disable: () => js.Promise[Unit],
     enable: () => js.Promise[Unit],
     executeSQL: ExecuteSQLRequest => js.Promise[ExecuteSQLResponse],
@@ -43,22 +42,16 @@ object DatabaseApi {
     __obj.asInstanceOf[DatabaseApi]
   }
   
-  @scala.inline
-  implicit class DatabaseApiMutableBuilder[Self <: DatabaseApi] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseApi](x: Self) {
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExecuteSQL(value: ExecuteSQLRequest => js.Promise[ExecuteSQLResponse]): Self = StObject.set(x, "executeSQL", js.Any.fromFunction1(value))
+    inline def setExecuteSQL(value: ExecuteSQLRequest => js.Promise[ExecuteSQLResponse]): Self = StObject.set(x, "executeSQL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDatabaseTableNames(value: GetDatabaseTableNamesRequest => js.Promise[GetDatabaseTableNamesResponse]): Self = StObject.set(x, "getDatabaseTableNames", js.Any.fromFunction1(value))
+    inline def setGetDatabaseTableNames(value: GetDatabaseTableNamesRequest => js.Promise[GetDatabaseTableNamesResponse]): Self = StObject.set(x, "getDatabaseTableNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOn(value: (addDatabase, js.Function1[/* params */ AddDatabaseEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (addDatabase, js.Function1[/* params */ AddDatabaseEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

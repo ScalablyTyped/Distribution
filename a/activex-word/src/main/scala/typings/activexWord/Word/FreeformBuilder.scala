@@ -159,6 +159,6 @@ trait FreeformBuilder extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.FreeformBuilder_typekey")
+  /* private */ @JSName("Word.FreeformBuilder_typekey")
   var WordDotFreeformBuilder_typekey: FreeformBuilder = js.native
 }

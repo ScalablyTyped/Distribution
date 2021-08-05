@@ -43,52 +43,37 @@ trait CompartmentDefinitionResource
 }
 object CompartmentDefinitionResource {
   
-  @scala.inline
-  def apply(code: code): CompartmentDefinitionResource = {
+  inline def apply(code: code): CompartmentDefinitionResource = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompartmentDefinitionResource]
   }
   
-  @scala.inline
-  implicit class CompartmentDefinitionResourceMutableBuilder[Self <: CompartmentDefinitionResource] (val x: Self) extends AnyVal {
+  extension [Self <: CompartmentDefinitionResource](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setParam(value: js.Array[String]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: js.Array[String]): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+    inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
-    @scala.inline
-    def setParamVarargs(value: String*): Self = StObject.set(x, "param", js.Array(value :_*))
+    inline def setParamVarargs(value: String*): Self = StObject.set(x, "param", js.Array(value :_*))
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
+    inline def set_documentation(value: Element): Self = StObject.set(x, "_documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
+    inline def set_documentationUndefined: Self = StObject.set(x, "_documentation", js.undefined)
     
-    @scala.inline
-    def set_param(value: js.Array[Element]): Self = StObject.set(x, "_param", value.asInstanceOf[js.Any])
+    inline def set_param(value: js.Array[Element]): Self = StObject.set(x, "_param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_paramUndefined: Self = StObject.set(x, "_param", js.undefined)
+    inline def set_paramUndefined: Self = StObject.set(x, "_param", js.undefined)
     
-    @scala.inline
-    def set_paramVarargs(value: Element*): Self = StObject.set(x, "_param", js.Array(value :_*))
+    inline def set_paramVarargs(value: Element*): Self = StObject.set(x, "_param", js.Array(value :_*))
   }
 }

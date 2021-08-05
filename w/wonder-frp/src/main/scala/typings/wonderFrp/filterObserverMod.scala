@@ -14,16 +14,16 @@ object filterObserverMod {
   class FilterObserver protected () extends Observer {
     def this(prevObserver: IObserver, predicate: js.Function1[/* value */ js.Any, Boolean], source: Stream) = this()
     
-    var i: Double = js.native
+    /* protected */ var i: Double = js.native
     
     /* protected */ def predicate(value: js.Any): Boolean = js.native
     /* protected */ def predicate(value: js.Any, index: Double): Boolean = js.native
     /* protected */ def predicate(value: js.Any, index: Double, source: Stream): Boolean = js.native
     /* protected */ def predicate(value: js.Any, index: Unit, source: Stream): Boolean = js.native
     
-    var prevObserver: IObserver = js.native
+    /* protected */ var prevObserver: IObserver = js.native
     
-    var source: Stream = js.native
+    /* protected */ var source: Stream = js.native
   }
   /* static members */
   object FilterObserver {
@@ -32,8 +32,7 @@ object filterObserverMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(
+    inline def create(
       prevObserver: IObserver,
       predicate: js.Function3[
           /* value */ js.Any, 

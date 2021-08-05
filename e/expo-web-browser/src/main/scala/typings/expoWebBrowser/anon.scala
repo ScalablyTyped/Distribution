@@ -16,21 +16,17 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply(message: String, `type`: success | failed): Message = {
+    inline def apply(message: String, `type`: success | failed): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: success | failed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: success | failed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,20 +36,16 @@ object anon {
   }
   object SkipRedirectCheck {
     
-    @scala.inline
-    def apply(): SkipRedirectCheck = {
+    inline def apply(): SkipRedirectCheck = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SkipRedirectCheck]
     }
     
-    @scala.inline
-    implicit class SkipRedirectCheckMutableBuilder[Self <: SkipRedirectCheck] (val x: Self) extends AnyVal {
+    extension [Self <: SkipRedirectCheck](x: Self) {
       
-      @scala.inline
-      def setSkipRedirectCheck(value: Boolean): Self = StObject.set(x, "skipRedirectCheck", value.asInstanceOf[js.Any])
+      inline def setSkipRedirectCheck(value: Boolean): Self = StObject.set(x, "skipRedirectCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipRedirectCheckUndefined: Self = StObject.set(x, "skipRedirectCheck", js.undefined)
+      inline def setSkipRedirectCheckUndefined: Self = StObject.set(x, "skipRedirectCheck", js.undefined)
     }
   }
 }

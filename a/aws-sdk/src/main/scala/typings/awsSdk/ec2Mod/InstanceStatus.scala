@@ -43,58 +43,41 @@ trait InstanceStatus extends StObject {
 }
 object InstanceStatus {
   
-  @scala.inline
-  def apply(): InstanceStatus = {
+  inline def apply(): InstanceStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceStatus]
   }
   
-  @scala.inline
-  implicit class InstanceStatusMutableBuilder[Self <: InstanceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceStatus](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setEvents(value: InstanceStatusEventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: InstanceStatusEventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: InstanceStatusEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: InstanceStatusEvent*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setInstanceState(value: InstanceState): Self = StObject.set(x, "InstanceState", value.asInstanceOf[js.Any])
+    inline def setInstanceState(value: InstanceState): Self = StObject.set(x, "InstanceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStateUndefined: Self = StObject.set(x, "InstanceState", js.undefined)
+    inline def setInstanceStateUndefined: Self = StObject.set(x, "InstanceState", js.undefined)
     
-    @scala.inline
-    def setInstanceStatus(value: InstanceStatusSummary): Self = StObject.set(x, "InstanceStatus", value.asInstanceOf[js.Any])
+    inline def setInstanceStatus(value: InstanceStatusSummary): Self = StObject.set(x, "InstanceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStatusUndefined: Self = StObject.set(x, "InstanceStatus", js.undefined)
+    inline def setInstanceStatusUndefined: Self = StObject.set(x, "InstanceStatus", js.undefined)
     
-    @scala.inline
-    def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
+    inline def setOutpostArn(value: String): Self = StObject.set(x, "OutpostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
+    inline def setOutpostArnUndefined: Self = StObject.set(x, "OutpostArn", js.undefined)
     
-    @scala.inline
-    def setSystemStatus(value: InstanceStatusSummary): Self = StObject.set(x, "SystemStatus", value.asInstanceOf[js.Any])
+    inline def setSystemStatus(value: InstanceStatusSummary): Self = StObject.set(x, "SystemStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemStatusUndefined: Self = StObject.set(x, "SystemStatus", js.undefined)
+    inline def setSystemStatusUndefined: Self = StObject.set(x, "SystemStatus", js.undefined)
   }
 }

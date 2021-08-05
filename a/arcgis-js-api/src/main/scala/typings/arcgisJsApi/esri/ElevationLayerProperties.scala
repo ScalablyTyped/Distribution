@@ -26,25 +26,19 @@ trait ElevationLayerProperties
 }
 object ElevationLayerProperties {
   
-  @scala.inline
-  def apply(): ElevationLayerProperties = {
+  inline def apply(): ElevationLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElevationLayerProperties]
   }
   
-  @scala.inline
-  implicit class ElevationLayerPropertiesMutableBuilder[Self <: ElevationLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ElevationLayerProperties](x: Self) {
     
-    @scala.inline
-    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
+    inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

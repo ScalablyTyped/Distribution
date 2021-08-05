@@ -10,16 +10,13 @@ trait FileWatcher extends StObject {
 }
 object FileWatcher {
   
-  @scala.inline
-  def apply(close: () => Unit): FileWatcher = {
+  inline def apply(close: () => Unit): FileWatcher = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[FileWatcher]
   }
   
-  @scala.inline
-  implicit class FileWatcherMutableBuilder[Self <: FileWatcher] (val x: Self) extends AnyVal {
+  extension [Self <: FileWatcher](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

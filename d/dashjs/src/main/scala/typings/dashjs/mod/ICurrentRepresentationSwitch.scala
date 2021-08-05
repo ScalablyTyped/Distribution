@@ -13,19 +13,15 @@ trait ICurrentRepresentationSwitch extends StObject {
 }
 object ICurrentRepresentationSwitch {
   
-  @scala.inline
-  def apply(mt: Double, t: Date): ICurrentRepresentationSwitch = {
+  inline def apply(mt: Double, t: Date): ICurrentRepresentationSwitch = {
     val __obj = js.Dynamic.literal(mt = mt.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICurrentRepresentationSwitch]
   }
   
-  @scala.inline
-  implicit class ICurrentRepresentationSwitchMutableBuilder[Self <: ICurrentRepresentationSwitch] (val x: Self) extends AnyVal {
+  extension [Self <: ICurrentRepresentationSwitch](x: Self) {
     
-    @scala.inline
-    def setMt(value: Double): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+    inline def setMt(value: Double): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: Date): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Date): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

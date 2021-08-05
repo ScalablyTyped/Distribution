@@ -23,25 +23,19 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(content: ContentString, contentType: ContentType): Message = {
+  inline def apply(content: ContentString, contentType: ContentType): Message = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setContent(value: ContentString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ContentString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumber(value: GroupNumber): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
+    inline def setGroupNumber(value: GroupNumber): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
+    inline def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
   }
 }

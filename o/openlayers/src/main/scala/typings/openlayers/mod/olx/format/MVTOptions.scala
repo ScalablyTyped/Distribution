@@ -27,17 +27,14 @@ trait MVTOptions extends StObject {
 }
 object MVTOptions {
   
-  @scala.inline
-  def apply(): MVTOptions = {
+  inline def apply(): MVTOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MVTOptions]
   }
   
-  @scala.inline
-  implicit class MVTOptionsMutableBuilder[Self <: MVTOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MVTOptions](x: Self) {
     
-    @scala.inline
-    def setFeatureClass(
+    inline def setFeatureClass(
       value: (js.Function1[/* geom */ Geometry | StringDictionary[js.Any], js.Any]) | (js.Function4[
           /* geom */ GeometryType, 
           /* arg2 */ js.Array[Double], 
@@ -47,36 +44,26 @@ object MVTOptions {
         ])
     ): Self = StObject.set(x, "featureClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureClassFunction1(value: /* geom */ Geometry | StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "featureClass", js.Any.fromFunction1(value))
+    inline def setFeatureClassFunction1(value: /* geom */ Geometry | StringDictionary[js.Any] => js.Any): Self = StObject.set(x, "featureClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFeatureClassFunction4(
+    inline def setFeatureClassFunction4(
       value: (/* geom */ GeometryType, /* arg2 */ js.Array[Double], /* arg3 */ js.Array[js.Array[Double] | Double], /* arg4 */ StringDictionary[js.Any]) => js.Any
     ): Self = StObject.set(x, "featureClass", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFeatureClassUndefined: Self = StObject.set(x, "featureClass", js.undefined)
+    inline def setFeatureClassUndefined: Self = StObject.set(x, "featureClass", js.undefined)
     
-    @scala.inline
-    def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+    inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
+    inline def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
     
-    @scala.inline
-    def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
+    inline def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
+    inline def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
     
-    @scala.inline
-    def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

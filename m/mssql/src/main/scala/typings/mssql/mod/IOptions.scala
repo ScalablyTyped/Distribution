@@ -17,31 +17,23 @@ trait IOptions
 }
 object IOptions {
   
-  @scala.inline
-  def apply(): IOptions = {
+  inline def apply(): IOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IOptions]
   }
   
-  @scala.inline
-  implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IOptions](x: Self) {
     
-    @scala.inline
-    def setBeforeConnect(value: Unit): Self = StObject.set(x, "beforeConnect", value.asInstanceOf[js.Any])
+    inline def setBeforeConnect(value: Unit): Self = StObject.set(x, "beforeConnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeConnectUndefined: Self = StObject.set(x, "beforeConnect", js.undefined)
+    inline def setBeforeConnectUndefined: Self = StObject.set(x, "beforeConnect", js.undefined)
     
-    @scala.inline
-    def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
+    inline def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
+    inline def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
     
-    @scala.inline
-    def setTrustedConnection(value: Boolean): Self = StObject.set(x, "trustedConnection", value.asInstanceOf[js.Any])
+    inline def setTrustedConnection(value: Boolean): Self = StObject.set(x, "trustedConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustedConnectionUndefined: Self = StObject.set(x, "trustedConnection", js.undefined)
+    inline def setTrustedConnectionUndefined: Self = StObject.set(x, "trustedConnection", js.undefined)
   }
 }

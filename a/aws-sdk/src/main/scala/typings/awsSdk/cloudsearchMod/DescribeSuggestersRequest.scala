@@ -23,31 +23,23 @@ trait DescribeSuggestersRequest extends StObject {
 }
 object DescribeSuggestersRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): DescribeSuggestersRequest = {
+  inline def apply(DomainName: DomainName): DescribeSuggestersRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSuggestersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSuggestersRequestMutableBuilder[Self <: DescribeSuggestersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSuggestersRequest](x: Self) {
     
-    @scala.inline
-    def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
+    inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
+    inline def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggesterNames(value: StandardNameList): Self = StObject.set(x, "SuggesterNames", value.asInstanceOf[js.Any])
+    inline def setSuggesterNames(value: StandardNameList): Self = StObject.set(x, "SuggesterNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggesterNamesUndefined: Self = StObject.set(x, "SuggesterNames", js.undefined)
+    inline def setSuggesterNamesUndefined: Self = StObject.set(x, "SuggesterNames", js.undefined)
     
-    @scala.inline
-    def setSuggesterNamesVarargs(value: StandardName*): Self = StObject.set(x, "SuggesterNames", js.Array(value :_*))
+    inline def setSuggesterNamesVarargs(value: StandardName*): Self = StObject.set(x, "SuggesterNames", js.Array(value :_*))
   }
 }

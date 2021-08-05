@@ -22,20 +22,16 @@ object playFilledSmallMod extends Shortcut {
   }
   object PlayFilledSmallProps {
     
-    @scala.inline
-    def apply(): PlayFilledSmallProps = {
+    inline def apply(): PlayFilledSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PlayFilledSmallProps]
     }
     
-    @scala.inline
-    implicit class PlayFilledSmallPropsMutableBuilder[Self <: PlayFilledSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: PlayFilledSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -11,8 +11,7 @@ trait FiberRoot
      with ProfilingOnlyFiberRootProperties
 object FiberRoot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containerInfo: js.Any,
     current: Fiber,
     didError: Boolean,

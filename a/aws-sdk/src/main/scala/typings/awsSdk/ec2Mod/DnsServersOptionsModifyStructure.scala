@@ -18,28 +18,21 @@ trait DnsServersOptionsModifyStructure extends StObject {
 }
 object DnsServersOptionsModifyStructure {
   
-  @scala.inline
-  def apply(): DnsServersOptionsModifyStructure = {
+  inline def apply(): DnsServersOptionsModifyStructure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DnsServersOptionsModifyStructure]
   }
   
-  @scala.inline
-  implicit class DnsServersOptionsModifyStructureMutableBuilder[Self <: DnsServersOptionsModifyStructure] (val x: Self) extends AnyVal {
+  extension [Self <: DnsServersOptionsModifyStructure](x: Self) {
     
-    @scala.inline
-    def setCustomDnsServers(value: ValueStringList): Self = StObject.set(x, "CustomDnsServers", value.asInstanceOf[js.Any])
+    inline def setCustomDnsServers(value: ValueStringList): Self = StObject.set(x, "CustomDnsServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDnsServersUndefined: Self = StObject.set(x, "CustomDnsServers", js.undefined)
+    inline def setCustomDnsServersUndefined: Self = StObject.set(x, "CustomDnsServers", js.undefined)
     
-    @scala.inline
-    def setCustomDnsServersVarargs(value: String*): Self = StObject.set(x, "CustomDnsServers", js.Array(value :_*))
+    inline def setCustomDnsServersVarargs(value: String*): Self = StObject.set(x, "CustomDnsServers", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

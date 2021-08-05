@@ -33,35 +33,26 @@ trait ToastMap extends StObject {
 }
 object ToastMap {
   
-  @scala.inline
-  def apply(iconClass: String, message: String, `type`: ToastrType): ToastMap = {
+  inline def apply(iconClass: String, message: String, `type`: ToastrType): ToastMap = {
     val __obj = js.Dynamic.literal(iconClass = iconClass.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastMap]
   }
   
-  @scala.inline
-  implicit class ToastMapMutableBuilder[Self <: ToastMap] (val x: Self) extends AnyVal {
+  extension [Self <: ToastMap](x: Self) {
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsOverride(value: ToastrOptions): Self = StObject.set(x, "optionsOverride", value.asInstanceOf[js.Any])
+    inline def setOptionsOverride(value: ToastrOptions): Self = StObject.set(x, "optionsOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsOverrideUndefined: Self = StObject.set(x, "optionsOverride", js.undefined)
+    inline def setOptionsOverrideUndefined: Self = StObject.set(x, "optionsOverride", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: ToastrType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ToastrType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

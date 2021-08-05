@@ -57,44 +57,32 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDeferSetup(value: Boolean): Self = StObject.set(x, "deferSetup", value.asInstanceOf[js.Any])
+      inline def setDeferSetup(value: Boolean): Self = StObject.set(x, "deferSetup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferSetupUndefined: Self = StObject.set(x, "deferSetup", js.undefined)
+      inline def setDeferSetupUndefined: Self = StObject.set(x, "deferSetup", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setMatch(value: () => Unit): Self = StObject.set(x, "match", js.Any.fromFunction0(value))
+      inline def setMatch(value: () => Unit): Self = StObject.set(x, "match", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setSetup(value: () => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
+      inline def setSetup(value: () => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+      inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
       
-      @scala.inline
-      def setUnmatch(value: () => Unit): Self = StObject.set(x, "unmatch", js.Any.fromFunction0(value))
+      inline def setUnmatch(value: () => Unit): Self = StObject.set(x, "unmatch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnmatchUndefined: Self = StObject.set(x, "unmatch", js.undefined)
+      inline def setUnmatchUndefined: Self = StObject.set(x, "unmatch", js.undefined)
     }
   }
   

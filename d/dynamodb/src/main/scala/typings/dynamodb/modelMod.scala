@@ -49,36 +49,27 @@ object modelMod {
     @js.native
     val after: js.Any = js.native
     
-    @scala.inline
-    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    @scala.inline
-    def batchGetItems(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    inline def batchGetItems(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    inline def batchGetItems(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("batchGetItems")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
     @JSImport("dynamodb/Model", "Model.before")
     @js.native
     val before: js.Any = js.native
     
-    @scala.inline
-    def config(config: Dynamodb): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def config(config: Dynamodb): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("dynamodb/Model", "Model.create")
     @js.native
     val create: CreateOperation = js.native
     
-    @scala.inline
-    def createTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    @scala.inline
-    def createTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    inline def createTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    inline def createTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
-    @scala.inline
-    def deleteTable(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")().asInstanceOf[js.Promise[js.Any]]
-    @scala.inline
-    def deleteTable(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def deleteTable(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")().asInstanceOf[js.Promise[js.Any]]
+    inline def deleteTable(callback: Callback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteTable")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def describeTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    @scala.inline
-    def describeTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    inline def describeTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    inline def describeTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
     @JSImport("dynamodb/Model", "Model.destroy")
     @js.native
@@ -100,28 +91,21 @@ object modelMod {
     @js.native
     val log: typings.bunyan.mod.^ = js.native
     
-    @scala.inline
-    def parallelScan(totalSegments: Double): ParallelScan = ^.asInstanceOf[js.Dynamic].applyDynamic("parallelScan")(totalSegments.asInstanceOf[js.Any]).asInstanceOf[ParallelScan]
+    inline def parallelScan(totalSegments: Double): ParallelScan = ^.asInstanceOf[js.Dynamic].applyDynamic("parallelScan")(totalSegments.asInstanceOf[js.Any]).asInstanceOf[ParallelScan]
     
-    @scala.inline
-    def query(hashKey: String): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(hashKey.asInstanceOf[js.Any]).asInstanceOf[Query]
+    inline def query(hashKey: String): Query = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(hashKey.asInstanceOf[js.Any]).asInstanceOf[Query]
     
-    @scala.inline
-    def scan(): Scan = ^.asInstanceOf[js.Dynamic].applyDynamic("scan")().asInstanceOf[Scan]
+    inline def scan(): Scan = ^.asInstanceOf[js.Dynamic].applyDynamic("scan")().asInstanceOf[Scan]
     
-    @scala.inline
-    def tableName(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
-    @scala.inline
-    def tableName(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def tableName(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def tableName(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tableName")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("dynamodb/Model", "Model.update")
     @js.native
     val update: UpdateOperation = js.native
     
-    @scala.inline
-    def updateTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
-    @scala.inline
-    def updateTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    inline def updateTable(hashKey: String, rangeKey: String, options: js.Any): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
+    inline def updateTable(hashKey: String, rangeKey: String, options: js.Any, callback: Callback): js.Promise[js.Any] | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateTable")(hashKey.asInstanceOf[js.Any], rangeKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any] | Unit]
     
     @js.native
     trait CreateOperation extends StObject {
@@ -190,56 +174,40 @@ object modelMod {
     }
     object OperationOptions {
       
-      @scala.inline
-      def apply(): OperationOptions = {
+      inline def apply(): OperationOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OperationOptions]
       }
       
-      @scala.inline
-      implicit class OperationOptionsMutableBuilder[Self <: OperationOptions] (val x: Self) extends AnyVal {
+      extension [Self <: OperationOptions](x: Self) {
         
-        @scala.inline
-        def setConditionExpression(value: js.Any): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+        inline def setConditionExpression(value: js.Any): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+        inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
         
-        @scala.inline
-        def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+        inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
+        inline def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
         
-        @scala.inline
-        def setExpressionAttributeNames(value: js.Any): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+        inline def setExpressionAttributeNames(value: js.Any): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+        inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
         
-        @scala.inline
-        def setExpressionAttributeValues(value: js.Any): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+        inline def setExpressionAttributeValues(value: js.Any): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+        inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
         
-        @scala.inline
-        def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+        inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+        inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
         
-        @scala.inline
-        def setReturnValues(value: String | Boolean): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
+        inline def setReturnValues(value: String | Boolean): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
+        inline def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
         
-        @scala.inline
-        def setUpdateExpression(value: js.Any): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
+        inline def setUpdateExpression(value: js.Any): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
+        inline def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
       }
     }
     
@@ -249,17 +217,14 @@ object modelMod {
     }
     object OperationResult {
       
-      @scala.inline
-      def apply(get: String => js.Any): OperationResult = {
+      inline def apply(get: String => js.Any): OperationResult = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
         __obj.asInstanceOf[OperationResult]
       }
       
-      @scala.inline
-      implicit class OperationResultMutableBuilder[Self <: OperationResult] (val x: Self) extends AnyVal {
+      extension [Self <: OperationResult](x: Self) {
         
-        @scala.inline
-        def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+        inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       }
     }
     

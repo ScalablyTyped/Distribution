@@ -47,8 +47,7 @@ trait FontMetrics extends StObject {
 }
 object FontMetrics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Ascent: Double,
     Descent: Double,
     ExternalLeading: Double,
@@ -61,28 +60,20 @@ object FontMetrics {
     __obj.asInstanceOf[FontMetrics]
   }
   
-  @scala.inline
-  implicit class FontMetricsMutableBuilder[Self <: FontMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: FontMetrics](x: Self) {
     
-    @scala.inline
-    def setAscent(value: Double): Self = StObject.set(x, "Ascent", value.asInstanceOf[js.Any])
+    inline def setAscent(value: Double): Self = StObject.set(x, "Ascent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescent(value: Double): Self = StObject.set(x, "Descent", value.asInstanceOf[js.Any])
+    inline def setDescent(value: Double): Self = StObject.set(x, "Descent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalLeading(value: Double): Self = StObject.set(x, "ExternalLeading", value.asInstanceOf[js.Any])
+    inline def setExternalLeading(value: Double): Self = StObject.set(x, "ExternalLeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalLeading(value: Double): Self = StObject.set(x, "InternalLeading", value.asInstanceOf[js.Any])
+    inline def setInternalLeading(value: Double): Self = StObject.set(x, "InternalLeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceCharSize(value: Double): Self = StObject.set(x, "ReferenceCharSize", value.asInstanceOf[js.Any])
+    inline def setReferenceCharSize(value: Double): Self = StObject.set(x, "ReferenceCharSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikeThroughOffset(value: Double): Self = StObject.set(x, "StrikeThroughOffset", value.asInstanceOf[js.Any])
+    inline def setStrikeThroughOffset(value: Double): Self = StObject.set(x, "StrikeThroughOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineOffset(value: Double): Self = StObject.set(x, "UnderlineOffset", value.asInstanceOf[js.Any])
+    inline def setUnderlineOffset(value: Double): Self = StObject.set(x, "UnderlineOffset", value.asInstanceOf[js.Any])
   }
 }

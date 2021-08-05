@@ -13,19 +13,15 @@ trait LazyOptions extends StObject {
 }
 object LazyOptions {
   
-  @scala.inline
-  def apply(): LazyOptions = {
+  inline def apply(): LazyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LazyOptions]
   }
   
-  @scala.inline
-  implicit class LazyOptionsMutableBuilder[Self <: LazyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LazyOptions](x: Self) {
     
-    @scala.inline
-    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
   }
 }

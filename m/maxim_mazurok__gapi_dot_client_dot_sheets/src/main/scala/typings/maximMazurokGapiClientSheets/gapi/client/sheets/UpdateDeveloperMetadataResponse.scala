@@ -11,22 +11,17 @@ trait UpdateDeveloperMetadataResponse extends StObject {
 }
 object UpdateDeveloperMetadataResponse {
   
-  @scala.inline
-  def apply(): UpdateDeveloperMetadataResponse = {
+  inline def apply(): UpdateDeveloperMetadataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDeveloperMetadataResponse]
   }
   
-  @scala.inline
-  implicit class UpdateDeveloperMetadataResponseMutableBuilder[Self <: UpdateDeveloperMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDeveloperMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
+    inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
-    @scala.inline
-    def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+    inline def setDeveloperMetadataVarargs(value: DeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
   }
 }

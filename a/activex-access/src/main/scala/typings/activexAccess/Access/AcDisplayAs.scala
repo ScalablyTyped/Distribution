@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcDisplayAs extends StObject
 object AcDisplayAs {
   
-  @scala.inline
-  def acDisplayAsIcon: `1` = 1.asInstanceOf[`1`]
+  inline def acDisplayAsIcon: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acDisplayAsImageIcon: `0` = 0.asInstanceOf[`0`]
+  inline def acDisplayAsImageIcon: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acDisplayAsPaperclip: `2` = 2.asInstanceOf[`2`]
+  inline def acDisplayAsPaperclip: `2` = 2.asInstanceOf[`2`]
 }

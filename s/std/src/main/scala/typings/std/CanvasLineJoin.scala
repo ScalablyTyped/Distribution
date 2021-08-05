@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CanvasLineJoin extends StObject
 object CanvasLineJoin {
   
-  @scala.inline
-  def bevel: typings.std.stdStrings.bevel = "bevel".asInstanceOf[typings.std.stdStrings.bevel]
+  inline def bevel: typings.std.stdStrings.bevel = "bevel".asInstanceOf[typings.std.stdStrings.bevel]
   
-  @scala.inline
-  def miter: typings.std.stdStrings.miter = "miter".asInstanceOf[typings.std.stdStrings.miter]
+  inline def miter: typings.std.stdStrings.miter = "miter".asInstanceOf[typings.std.stdStrings.miter]
   
-  @scala.inline
-  def round: typings.std.stdStrings.round = "round".asInstanceOf[typings.std.stdStrings.round]
+  inline def round: typings.std.stdStrings.round = "round".asInstanceOf[typings.std.stdStrings.round]
 }

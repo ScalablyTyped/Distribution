@@ -20,14 +20,11 @@ trait DrawViewMode extends StObject
 object DrawViewMode {
   
   /** The view shows the drawing pages. */
-  @scala.inline
-  def DRAW: `0` = 0.asInstanceOf[`0`]
+  inline def DRAW: `0` = 0.asInstanceOf[`0`]
   
   /** The view shows the handout pages, */
-  @scala.inline
-  def HANDOUT: `2` = 2.asInstanceOf[`2`]
+  inline def HANDOUT: `2` = 2.asInstanceOf[`2`]
   
   /** The view shows the notes pages. */
-  @scala.inline
-  def NOTES: `1` = 1.asInstanceOf[`1`]
+  inline def NOTES: `1` = 1.asInstanceOf[`1`]
 }

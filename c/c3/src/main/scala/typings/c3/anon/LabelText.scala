@@ -10,16 +10,13 @@ trait LabelText extends StObject {
 }
 object LabelText {
   
-  @scala.inline
-  def apply(label: Text): LabelText = {
+  inline def apply(label: Text): LabelText = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelText]
   }
   
-  @scala.inline
-  implicit class LabelTextMutableBuilder[Self <: LabelText] (val x: Self) extends AnyVal {
+  extension [Self <: LabelText](x: Self) {
     
-    @scala.inline
-    def setLabel(value: Text): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Text): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

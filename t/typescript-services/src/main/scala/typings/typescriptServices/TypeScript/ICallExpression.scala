@@ -14,8 +14,7 @@ trait ICallExpression
 }
 object ICallExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _end: Double,
     _start: Double,
     argumentList: ArgumentList,
@@ -27,13 +26,10 @@ object ICallExpression {
     __obj.asInstanceOf[ICallExpression]
   }
   
-  @scala.inline
-  implicit class ICallExpressionMutableBuilder[Self <: ICallExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ICallExpression](x: Self) {
     
-    @scala.inline
-    def setArgumentList(value: ArgumentList): Self = StObject.set(x, "argumentList", value.asInstanceOf[js.Any])
+    inline def setArgumentList(value: ArgumentList): Self = StObject.set(x, "argumentList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }
 }

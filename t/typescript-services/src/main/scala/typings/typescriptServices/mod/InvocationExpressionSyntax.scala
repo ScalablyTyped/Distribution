@@ -106,6 +106,5 @@ object InvocationExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(expression: IMemberExpressionSyntax): typings.typescriptServices.TypeScript.InvocationExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.InvocationExpressionSyntax]
+  inline def create1(expression: IMemberExpressionSyntax): typings.typescriptServices.TypeScript.InvocationExpressionSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.InvocationExpressionSyntax]
 }

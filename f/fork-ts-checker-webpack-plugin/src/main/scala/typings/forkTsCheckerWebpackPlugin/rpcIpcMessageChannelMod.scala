@@ -11,8 +11,6 @@ object rpcIpcMessageChannelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRpcIpcMessageChannel(servicePath: String): RpcMessageChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcMessageChannel")(servicePath.asInstanceOf[js.Any]).asInstanceOf[RpcMessageChannel]
-  @scala.inline
-  def createRpcIpcMessageChannel(servicePath: String, memoryLimit: Double): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcMessageChannel")(servicePath.asInstanceOf[js.Any], memoryLimit.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
+  inline def createRpcIpcMessageChannel(servicePath: String): RpcMessageChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcMessageChannel")(servicePath.asInstanceOf[js.Any]).asInstanceOf[RpcMessageChannel]
+  inline def createRpcIpcMessageChannel(servicePath: String, memoryLimit: Double): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcMessageChannel")(servicePath.asInstanceOf[js.Any], memoryLimit.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
 }

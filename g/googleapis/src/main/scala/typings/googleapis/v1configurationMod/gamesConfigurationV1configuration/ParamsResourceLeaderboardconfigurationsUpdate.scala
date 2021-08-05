@@ -29,31 +29,23 @@ trait ParamsResourceLeaderboardconfigurationsUpdate
 }
 object ParamsResourceLeaderboardconfigurationsUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourceLeaderboardconfigurationsUpdate = {
+  inline def apply(): ParamsResourceLeaderboardconfigurationsUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceLeaderboardconfigurationsUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceLeaderboardconfigurationsUpdateMutableBuilder[Self <: ParamsResourceLeaderboardconfigurationsUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceLeaderboardconfigurationsUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
+    inline def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
+    inline def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaLeaderboardConfiguration): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaLeaderboardConfiguration): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

@@ -13,8 +13,6 @@ object timeoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addTimeoutArg(func: GRPCCall, timeout: Double, otherArgs: GRPCCallOtherArgs): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("addTimeoutArg")(func.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
-  @scala.inline
-  def addTimeoutArg(func: GRPCCall, timeout: Double, otherArgs: GRPCCallOtherArgs, abTests: js.Object): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("addTimeoutArg")(func.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any], abTests.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
+  inline def addTimeoutArg(func: GRPCCall, timeout: Double, otherArgs: GRPCCallOtherArgs): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("addTimeoutArg")(func.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
+  inline def addTimeoutArg(func: GRPCCall, timeout: Double, otherArgs: GRPCCallOtherArgs, abTests: js.Object): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("addTimeoutArg")(func.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any], abTests.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
 }

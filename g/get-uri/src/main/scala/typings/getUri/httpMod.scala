@@ -17,8 +17,7 @@ object httpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(parsed: UrlWithStringQuery, opts: HttpOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parsed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  inline def default(parsed: UrlWithStringQuery, opts: HttpOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parsed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
   
   @js.native
   trait HttpIncomingMessage
@@ -47,41 +46,30 @@ object httpMod {
   }
   object HttpOptions {
     
-    @scala.inline
-    def apply(): HttpOptions = {
+    inline def apply(): HttpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpOptions]
     }
     
-    @scala.inline
-    implicit class HttpOptionsMutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpOptions](x: Self) {
       
-      @scala.inline
-      def setCache(value: HttpReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: HttpReadable): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setHttp(value: HttpOrHttpsModule): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: HttpOrHttpsModule): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+      inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
       
-      @scala.inline
-      def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
+      inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
+      inline def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
       
-      @scala.inline
-      def setRedirects(value: js.Array[HttpReadable]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
+      inline def setRedirects(value: js.Array[HttpReadable]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
+      inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
       
-      @scala.inline
-      def setRedirectsVarargs(value: HttpReadable*): Self = StObject.set(x, "redirects", js.Array(value :_*))
+      inline def setRedirectsVarargs(value: HttpReadable*): Self = StObject.set(x, "redirects", js.Array(value :_*))
     }
   }
   
@@ -112,35 +100,26 @@ object httpMod {
   }
   object HttpReadableProps {
     
-    @scala.inline
-    def apply(): HttpReadableProps = {
+    inline def apply(): HttpReadableProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpReadableProps]
     }
     
-    @scala.inline
-    implicit class HttpReadablePropsMutableBuilder[Self <: HttpReadableProps] (val x: Self) extends AnyVal {
+    extension [Self <: HttpReadableProps](x: Self) {
       
-      @scala.inline
-      def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setParsed(value: UrlWithStringQuery): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+      inline def setParsed(value: UrlWithStringQuery): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
+      inline def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
       
-      @scala.inline
-      def setRedirects(value: js.Array[HttpReadable]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
+      inline def setRedirects(value: js.Array[HttpReadable]): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
+      inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
       
-      @scala.inline
-      def setRedirectsVarargs(value: HttpReadable*): Self = StObject.set(x, "redirects", js.Array(value :_*))
+      inline def setRedirectsVarargs(value: HttpReadable*): Self = StObject.set(x, "redirects", js.Array(value :_*))
     }
   }
 }

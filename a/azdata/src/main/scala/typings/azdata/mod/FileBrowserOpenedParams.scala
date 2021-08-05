@@ -16,25 +16,19 @@ trait FileBrowserOpenedParams extends StObject {
 }
 object FileBrowserOpenedParams {
   
-  @scala.inline
-  def apply(fileTree: FileTree, message: String, ownerUri: String, succeeded: Boolean): FileBrowserOpenedParams = {
+  inline def apply(fileTree: FileTree, message: String, ownerUri: String, succeeded: Boolean): FileBrowserOpenedParams = {
     val __obj = js.Dynamic.literal(fileTree = fileTree.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], ownerUri = ownerUri.asInstanceOf[js.Any], succeeded = succeeded.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileBrowserOpenedParams]
   }
   
-  @scala.inline
-  implicit class FileBrowserOpenedParamsMutableBuilder[Self <: FileBrowserOpenedParams] (val x: Self) extends AnyVal {
+  extension [Self <: FileBrowserOpenedParams](x: Self) {
     
-    @scala.inline
-    def setFileTree(value: FileTree): Self = StObject.set(x, "fileTree", value.asInstanceOf[js.Any])
+    inline def setFileTree(value: FileTree): Self = StObject.set(x, "fileTree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
+    inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

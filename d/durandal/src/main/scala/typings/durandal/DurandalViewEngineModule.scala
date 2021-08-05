@@ -101,8 +101,7 @@ trait DurandalViewEngineModule extends StObject {
 }
 object DurandalViewEngineModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     convertViewIdToRequirePath: String => String,
     convertViewUrlToViewId: String => String,
     createFallbackView: (String, String, Error) => DurandalPromise[HTMLElement],
@@ -121,46 +120,32 @@ object DurandalViewEngineModule {
     __obj.asInstanceOf[DurandalViewEngineModule]
   }
   
-  @scala.inline
-  implicit class DurandalViewEngineModuleMutableBuilder[Self <: DurandalViewEngineModule] (val x: Self) extends AnyVal {
+  extension [Self <: DurandalViewEngineModule](x: Self) {
     
-    @scala.inline
-    def setConvertViewIdToRequirePath(value: String => String): Self = StObject.set(x, "convertViewIdToRequirePath", js.Any.fromFunction1(value))
+    inline def setConvertViewIdToRequirePath(value: String => String): Self = StObject.set(x, "convertViewIdToRequirePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertViewUrlToViewId(value: String => String): Self = StObject.set(x, "convertViewUrlToViewId", js.Any.fromFunction1(value))
+    inline def setConvertViewUrlToViewId(value: String => String): Self = StObject.set(x, "convertViewUrlToViewId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateFallbackView(value: (String, String, Error) => DurandalPromise[HTMLElement]): Self = StObject.set(x, "createFallbackView", js.Any.fromFunction3(value))
+    inline def setCreateFallbackView(value: (String, String, Error) => DurandalPromise[HTMLElement]): Self = StObject.set(x, "createFallbackView", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateView(value: String => DurandalPromise[HTMLElement]): Self = StObject.set(x, "createView", js.Any.fromFunction1(value))
+    inline def setCreateView(value: String => DurandalPromise[HTMLElement]): Self = StObject.set(x, "createView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnsureSingleElement(value: js.Array[Node] => HTMLElement): Self = StObject.set(x, "ensureSingleElement", js.Any.fromFunction1(value))
+    inline def setEnsureSingleElement(value: js.Array[Node] => HTMLElement): Self = StObject.set(x, "ensureSingleElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsViewUrl(value: String => Boolean): Self = StObject.set(x, "isViewUrl", js.Any.fromFunction1(value))
+    inline def setIsViewUrl(value: String => Boolean): Self = StObject.set(x, "isViewUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseMarkup(value: String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
+    inline def setParseMarkup(value: String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcessMarkup(value: String => HTMLElement): Self = StObject.set(x, "processMarkup", js.Any.fromFunction1(value))
+    inline def setProcessMarkup(value: String => HTMLElement): Self = StObject.set(x, "processMarkup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPutViewInCache(value: (String, HTMLElement) => Unit): Self = StObject.set(x, "putViewInCache", js.Any.fromFunction2(value))
+    inline def setPutViewInCache(value: (String, HTMLElement) => Unit): Self = StObject.set(x, "putViewInCache", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTryGetViewFromCache(value: String => HTMLElement): Self = StObject.set(x, "tryGetViewFromCache", js.Any.fromFunction1(value))
+    inline def setTryGetViewFromCache(value: String => HTMLElement): Self = StObject.set(x, "tryGetViewFromCache", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setViewExtension(value: String): Self = StObject.set(x, "viewExtension", value.asInstanceOf[js.Any])
+    inline def setViewExtension(value: String): Self = StObject.set(x, "viewExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewPlugin(value: String): Self = StObject.set(x, "viewPlugin", value.asInstanceOf[js.Any])
+    inline def setViewPlugin(value: String): Self = StObject.set(x, "viewPlugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewPluginParameters(value: String): Self = StObject.set(x, "viewPluginParameters", value.asInstanceOf[js.Any])
+    inline def setViewPluginParameters(value: String): Self = StObject.set(x, "viewPluginParameters", value.asInstanceOf[js.Any])
   }
 }

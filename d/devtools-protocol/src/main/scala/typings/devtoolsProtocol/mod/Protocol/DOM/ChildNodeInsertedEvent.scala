@@ -23,22 +23,17 @@ trait ChildNodeInsertedEvent extends StObject {
 }
 object ChildNodeInsertedEvent {
   
-  @scala.inline
-  def apply(node: Node, parentNodeId: NodeId, previousNodeId: NodeId): ChildNodeInsertedEvent = {
+  inline def apply(node: Node, parentNodeId: NodeId, previousNodeId: NodeId): ChildNodeInsertedEvent = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parentNodeId = parentNodeId.asInstanceOf[js.Any], previousNodeId = previousNodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildNodeInsertedEvent]
   }
   
-  @scala.inline
-  implicit class ChildNodeInsertedEventMutableBuilder[Self <: ChildNodeInsertedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ChildNodeInsertedEvent](x: Self) {
     
-    @scala.inline
-    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNodeId(value: NodeId): Self = StObject.set(x, "parentNodeId", value.asInstanceOf[js.Any])
+    inline def setParentNodeId(value: NodeId): Self = StObject.set(x, "parentNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousNodeId(value: NodeId): Self = StObject.set(x, "previousNodeId", value.asInstanceOf[js.Any])
+    inline def setPreviousNodeId(value: NodeId): Self = StObject.set(x, "previousNodeId", value.asInstanceOf[js.Any])
   }
 }

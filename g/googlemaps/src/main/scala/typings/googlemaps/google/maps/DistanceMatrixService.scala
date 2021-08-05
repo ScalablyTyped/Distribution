@@ -21,19 +21,16 @@ trait DistanceMatrixService extends StObject {
 }
 object DistanceMatrixService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDistanceMatrix: (DistanceMatrixRequest, js.Function2[/* response */ DistanceMatrixResponse, /* status */ DistanceMatrixStatus, Unit]) => Unit
   ): DistanceMatrixService = {
     val __obj = js.Dynamic.literal(getDistanceMatrix = js.Any.fromFunction2(getDistanceMatrix))
     __obj.asInstanceOf[DistanceMatrixService]
   }
   
-  @scala.inline
-  implicit class DistanceMatrixServiceMutableBuilder[Self <: DistanceMatrixService] (val x: Self) extends AnyVal {
+  extension [Self <: DistanceMatrixService](x: Self) {
     
-    @scala.inline
-    def setGetDistanceMatrix(
+    inline def setGetDistanceMatrix(
       value: (DistanceMatrixRequest, js.Function2[/* response */ DistanceMatrixResponse, /* status */ DistanceMatrixStatus, Unit]) => Unit
     ): Self = StObject.set(x, "getDistanceMatrix", js.Any.fromFunction2(value))
   }

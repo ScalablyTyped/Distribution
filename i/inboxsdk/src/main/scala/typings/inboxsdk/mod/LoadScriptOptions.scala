@@ -10,19 +10,15 @@ trait LoadScriptOptions extends StObject {
 }
 object LoadScriptOptions {
   
-  @scala.inline
-  def apply(): LoadScriptOptions = {
+  inline def apply(): LoadScriptOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadScriptOptions]
   }
   
-  @scala.inline
-  implicit class LoadScriptOptionsMutableBuilder[Self <: LoadScriptOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadScriptOptions](x: Self) {
     
-    @scala.inline
-    def setNowrap(value: Boolean): Self = StObject.set(x, "nowrap", value.asInstanceOf[js.Any])
+    inline def setNowrap(value: Boolean): Self = StObject.set(x, "nowrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNowrapUndefined: Self = StObject.set(x, "nowrap", js.undefined)
+    inline def setNowrapUndefined: Self = StObject.set(x, "nowrap", js.undefined)
   }
 }

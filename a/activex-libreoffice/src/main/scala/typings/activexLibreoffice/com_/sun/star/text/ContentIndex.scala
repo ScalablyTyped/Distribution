@@ -35,8 +35,7 @@ trait ContentIndex
 }
 object ContentIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     BackColor: Color,
     BackGraphicFilter: String,
@@ -85,19 +84,14 @@ object ContentIndex {
     __obj.asInstanceOf[ContentIndex]
   }
   
-  @scala.inline
-  implicit class ContentIndexMutableBuilder[Self <: ContentIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ContentIndex](x: Self) {
     
-    @scala.inline
-    def setCreateFromMarks(value: Boolean): Self = StObject.set(x, "CreateFromMarks", value.asInstanceOf[js.Any])
+    inline def setCreateFromMarks(value: Boolean): Self = StObject.set(x, "CreateFromMarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFromOutline(value: Boolean): Self = StObject.set(x, "CreateFromOutline", value.asInstanceOf[js.Any])
+    inline def setCreateFromOutline(value: Boolean): Self = StObject.set(x, "CreateFromOutline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelParagraphStyles(value: XIndexReplace): Self = StObject.set(x, "LevelParagraphStyles", value.asInstanceOf[js.Any])
+    inline def setLevelParagraphStyles(value: XIndexReplace): Self = StObject.set(x, "LevelParagraphStyles", value.asInstanceOf[js.Any])
   }
 }

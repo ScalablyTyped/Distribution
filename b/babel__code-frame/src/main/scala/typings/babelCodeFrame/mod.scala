@@ -11,15 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(rawLines: String, lineNumber: Double, colNumber: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawLines.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(rawLines: String, lineNumber: Double, colNumber: Double, options: BabelCodeFrameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawLines.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(rawLines: String, lineNumber: Double, colNumber: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawLines.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(rawLines: String, lineNumber: Double, colNumber: Double, options: BabelCodeFrameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawLines.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def codeFrameColumns(rawLines: String, location: SourceLocation): String = (^.asInstanceOf[js.Dynamic].applyDynamic("codeFrameColumns")(rawLines.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def codeFrameColumns(rawLines: String, location: SourceLocation, options: BabelCodeFrameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("codeFrameColumns")(rawLines.asInstanceOf[js.Any], location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def codeFrameColumns(rawLines: String, location: SourceLocation): String = (^.asInstanceOf[js.Dynamic].applyDynamic("codeFrameColumns")(rawLines.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def codeFrameColumns(rawLines: String, location: SourceLocation, options: BabelCodeFrameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("codeFrameColumns")(rawLines.asInstanceOf[js.Any], location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait BabelCodeFrameOptions extends StObject {
     
@@ -49,44 +45,32 @@ object mod {
   }
   object BabelCodeFrameOptions {
     
-    @scala.inline
-    def apply(): BabelCodeFrameOptions = {
+    inline def apply(): BabelCodeFrameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BabelCodeFrameOptions]
     }
     
-    @scala.inline
-    implicit class BabelCodeFrameOptionsMutableBuilder[Self <: BabelCodeFrameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BabelCodeFrameOptions](x: Self) {
       
-      @scala.inline
-      def setForceColor(value: Boolean): Self = StObject.set(x, "forceColor", value.asInstanceOf[js.Any])
+      inline def setForceColor(value: Boolean): Self = StObject.set(x, "forceColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceColorUndefined: Self = StObject.set(x, "forceColor", js.undefined)
+      inline def setForceColorUndefined: Self = StObject.set(x, "forceColor", js.undefined)
       
-      @scala.inline
-      def setHighlightCode(value: Boolean): Self = StObject.set(x, "highlightCode", value.asInstanceOf[js.Any])
+      inline def setHighlightCode(value: Boolean): Self = StObject.set(x, "highlightCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightCodeUndefined: Self = StObject.set(x, "highlightCode", js.undefined)
+      inline def setHighlightCodeUndefined: Self = StObject.set(x, "highlightCode", js.undefined)
       
-      @scala.inline
-      def setLinesAbove(value: Double): Self = StObject.set(x, "linesAbove", value.asInstanceOf[js.Any])
+      inline def setLinesAbove(value: Double): Self = StObject.set(x, "linesAbove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesAboveUndefined: Self = StObject.set(x, "linesAbove", js.undefined)
+      inline def setLinesAboveUndefined: Self = StObject.set(x, "linesAbove", js.undefined)
       
-      @scala.inline
-      def setLinesBelow(value: Double): Self = StObject.set(x, "linesBelow", value.asInstanceOf[js.Any])
+      inline def setLinesBelow(value: Double): Self = StObject.set(x, "linesBelow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesBelowUndefined: Self = StObject.set(x, "linesBelow", js.undefined)
+      inline def setLinesBelowUndefined: Self = StObject.set(x, "linesBelow", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -98,23 +82,18 @@ object mod {
   }
   object SourceLocation {
     
-    @scala.inline
-    def apply(start: Column): SourceLocation = {
+    inline def apply(start: Column): SourceLocation = {
       val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceLocation]
     }
     
-    @scala.inline
-    implicit class SourceLocationMutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
+    extension [Self <: SourceLocation](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setStart(value: Column): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Column): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

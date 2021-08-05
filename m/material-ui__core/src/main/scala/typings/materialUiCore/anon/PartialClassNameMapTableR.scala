@@ -19,43 +19,31 @@ trait PartialClassNameMapTableR extends StObject {
 }
 object PartialClassNameMapTableR {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTableR = {
+  inline def apply(): PartialClassNameMapTableR = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTableR]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTableRMutableBuilder[Self <: PartialClassNameMapTableR] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTableR](x: Self) {
     
-    @scala.inline
-    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
+    inline def setHeadUndefined: Self = StObject.set(x, "head", js.undefined)
     
-    @scala.inline
-    def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

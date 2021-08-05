@@ -63,8 +63,7 @@ object DataSetApi {
   }
   object Column {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alias: String,
       dataType: String,
       displayName: String,
@@ -76,44 +75,31 @@ object DataSetApi {
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+      inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSorting(value: Boolean): Self = StObject.set(x, "disableSorting", value.asInstanceOf[js.Any])
+      inline def setDisableSorting(value: Boolean): Self = StObject.set(x, "disableSorting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSortingUndefined: Self = StObject.set(x, "disableSorting", js.undefined)
+      inline def setDisableSortingUndefined: Self = StObject.set(x, "disableSorting", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
+      inline def setIsHiddenUndefined: Self = StObject.set(x, "isHidden", js.undefined)
       
-      @scala.inline
-      def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+      inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
+      inline def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisualSizeFactor(value: Double): Self = StObject.set(x, "visualSizeFactor", value.asInstanceOf[js.Any])
+      inline def setVisualSizeFactor(value: Double): Self = StObject.set(x, "visualSizeFactor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,32 +130,24 @@ object DataSetApi {
   }
   object ConditionExpression {
     
-    @scala.inline
-    def apply(attributeName: String, conditionOperator: ConditionOperator, value: String | js.Array[String]): ConditionExpression = {
+    inline def apply(attributeName: String, conditionOperator: ConditionOperator, value: String | js.Array[String]): ConditionExpression = {
       val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], conditionOperator = conditionOperator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConditionExpression]
     }
     
-    @scala.inline
-    implicit class ConditionExpressionMutableBuilder[Self <: ConditionExpression] (val x: Self) extends AnyVal {
+    extension [Self <: ConditionExpression](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionOperator(value: ConditionOperator): Self = StObject.set(x, "conditionOperator", value.asInstanceOf[js.Any])
+      inline def setConditionOperator(value: ConditionOperator): Self = StObject.set(x, "conditionOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityAliasName(value: String): Self = StObject.set(x, "entityAliasName", value.asInstanceOf[js.Any])
+      inline def setEntityAliasName(value: String): Self = StObject.set(x, "entityAliasName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityAliasNameUndefined: Self = StObject.set(x, "entityAliasName", js.undefined)
+      inline def setEntityAliasNameUndefined: Self = StObject.set(x, "entityAliasName", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -202,8 +180,7 @@ object DataSetApi {
   }
   object EntityRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getFormattedValue: String => String,
       getNamedReference: () => EntityReference,
       getRecordId: () => String,
@@ -213,20 +190,15 @@ object DataSetApi {
       __obj.asInstanceOf[EntityRecord]
     }
     
-    @scala.inline
-    implicit class EntityRecordMutableBuilder[Self <: EntityRecord] (val x: Self) extends AnyVal {
+    extension [Self <: EntityRecord](x: Self) {
       
-      @scala.inline
-      def setGetFormattedValue(value: String => String): Self = StObject.set(x, "getFormattedValue", js.Any.fromFunction1(value))
+      inline def setGetFormattedValue(value: String => String): Self = StObject.set(x, "getFormattedValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNamedReference(value: () => EntityReference): Self = StObject.set(x, "getNamedReference", js.Any.fromFunction0(value))
+      inline def setGetNamedReference(value: () => EntityReference): Self = StObject.set(x, "getNamedReference", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRecordId(value: () => String): Self = StObject.set(x, "getRecordId", js.Any.fromFunction0(value))
+      inline def setGetRecordId(value: () => String): Self = StObject.set(x, "getRecordId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(
+      inline def setGetValue(
         value: String => String | Date | Double | (js.Array[Double | EntityReference]) | Boolean | EntityReference
       ): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     }
@@ -254,32 +226,24 @@ object DataSetApi {
   }
   object FilterExpression {
     
-    @scala.inline
-    def apply(conditions: js.Array[ConditionExpression], filterOperator: FilterOperator): FilterExpression = {
+    inline def apply(conditions: js.Array[ConditionExpression], filterOperator: FilterOperator): FilterExpression = {
       val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any], filterOperator = filterOperator.asInstanceOf[js.Any])
       __obj.asInstanceOf[FilterExpression]
     }
     
-    @scala.inline
-    implicit class FilterExpressionMutableBuilder[Self <: FilterExpression] (val x: Self) extends AnyVal {
+    extension [Self <: FilterExpression](x: Self) {
       
-      @scala.inline
-      def setConditions(value: js.Array[ConditionExpression]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+      inline def setConditions(value: js.Array[ConditionExpression]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionsVarargs(value: ConditionExpression*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+      inline def setConditionsVarargs(value: ConditionExpression*): Self = StObject.set(x, "conditions", js.Array(value :_*))
       
-      @scala.inline
-      def setFilterOperator(value: FilterOperator): Self = StObject.set(x, "filterOperator", value.asInstanceOf[js.Any])
+      inline def setFilterOperator(value: FilterOperator): Self = StObject.set(x, "filterOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[FilterExpression]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[FilterExpression]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: FilterExpression*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: FilterExpression*): Self = StObject.set(x, "filters", js.Array(value :_*))
     }
   }
   
@@ -306,23 +270,18 @@ object DataSetApi {
   }
   object Filtering {
     
-    @scala.inline
-    def apply(clearFilter: () => Unit, getFilter: () => FilterExpression, setFilter: FilterExpression => Unit): Filtering = {
+    inline def apply(clearFilter: () => Unit, getFilter: () => FilterExpression, setFilter: FilterExpression => Unit): Filtering = {
       val __obj = js.Dynamic.literal(clearFilter = js.Any.fromFunction0(clearFilter), getFilter = js.Any.fromFunction0(getFilter), setFilter = js.Any.fromFunction1(setFilter))
       __obj.asInstanceOf[Filtering]
     }
     
-    @scala.inline
-    implicit class FilteringMutableBuilder[Self <: Filtering] (val x: Self) extends AnyVal {
+    extension [Self <: Filtering](x: Self) {
       
-      @scala.inline
-      def setClearFilter(value: () => Unit): Self = StObject.set(x, "clearFilter", js.Any.fromFunction0(value))
+      inline def setClearFilter(value: () => Unit): Self = StObject.set(x, "clearFilter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFilter(value: () => FilterExpression): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
+      inline def setGetFilter(value: () => FilterExpression): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetFilter(value: FilterExpression => Unit): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
+      inline def setSetFilter(value: FilterExpression => Unit): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
     }
   }
   
@@ -358,29 +317,22 @@ object DataSetApi {
   }
   object LinkEntityExposedExpression {
     
-    @scala.inline
-    def apply(alias: String, from: String, linkType: String, name: String, to: String): LinkEntityExposedExpression = {
+    inline def apply(alias: String, from: String, linkType: String, name: String, to: String): LinkEntityExposedExpression = {
       val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], linkType = linkType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkEntityExposedExpression]
     }
     
-    @scala.inline
-    implicit class LinkEntityExposedExpressionMutableBuilder[Self <: LinkEntityExposedExpression] (val x: Self) extends AnyVal {
+    extension [Self <: LinkEntityExposedExpression](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
+      inline def setLinkType(value: String): Self = StObject.set(x, "linkType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -401,8 +353,7 @@ object DataSetApi {
   }
   object Linking {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addLinkedEntity: LinkEntityExposedExpression => Unit,
       getLinkedEntities: () => js.Array[LinkEntityExposedExpression]
     ): Linking = {
@@ -410,14 +361,11 @@ object DataSetApi {
       __obj.asInstanceOf[Linking]
     }
     
-    @scala.inline
-    implicit class LinkingMutableBuilder[Self <: Linking] (val x: Self) extends AnyVal {
+    extension [Self <: Linking](x: Self) {
       
-      @scala.inline
-      def setAddLinkedEntity(value: LinkEntityExposedExpression => Unit): Self = StObject.set(x, "addLinkedEntity", js.Any.fromFunction1(value))
+      inline def setAddLinkedEntity(value: LinkEntityExposedExpression => Unit): Self = StObject.set(x, "addLinkedEntity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLinkedEntities(value: () => js.Array[LinkEntityExposedExpression]): Self = StObject.set(x, "getLinkedEntities", js.Any.fromFunction0(value))
+      inline def setGetLinkedEntities(value: () => js.Array[LinkEntityExposedExpression]): Self = StObject.set(x, "getLinkedEntities", js.Any.fromFunction0(value))
     }
   }
   
@@ -464,8 +412,7 @@ object DataSetApi {
   }
   object Paging {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasNextPage: Boolean,
       hasPreviousPage: Boolean,
       loadNextPage: () => Unit,
@@ -478,29 +425,21 @@ object DataSetApi {
       __obj.asInstanceOf[Paging]
     }
     
-    @scala.inline
-    implicit class PagingMutableBuilder[Self <: Paging] (val x: Self) extends AnyVal {
+    extension [Self <: Paging](x: Self) {
       
-      @scala.inline
-      def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
+      inline def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasPreviousPage(value: Boolean): Self = StObject.set(x, "hasPreviousPage", value.asInstanceOf[js.Any])
+      inline def setHasPreviousPage(value: Boolean): Self = StObject.set(x, "hasPreviousPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadNextPage(value: () => Unit): Self = StObject.set(x, "loadNextPage", js.Any.fromFunction0(value))
+      inline def setLoadNextPage(value: () => Unit): Self = StObject.set(x, "loadNextPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadPreviousPage(value: () => Unit): Self = StObject.set(x, "loadPreviousPage", js.Any.fromFunction0(value))
+      inline def setLoadPreviousPage(value: () => Unit): Self = StObject.set(x, "loadPreviousPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetPageSize(value: Double => Unit): Self = StObject.set(x, "setPageSize", js.Any.fromFunction1(value))
+      inline def setSetPageSize(value: Double => Unit): Self = StObject.set(x, "setPageSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTotalResultCount(value: Double): Self = StObject.set(x, "totalResultCount", value.asInstanceOf[js.Any])
+      inline def setTotalResultCount(value: Double): Self = StObject.set(x, "totalResultCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -521,20 +460,16 @@ object DataSetApi {
   }
   object SortStatus {
     
-    @scala.inline
-    def apply(name: String, sortDirection: SortDirection): SortStatus = {
+    inline def apply(name: String, sortDirection: SortDirection): SortStatus = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sortDirection = sortDirection.asInstanceOf[js.Any])
       __obj.asInstanceOf[SortStatus]
     }
     
-    @scala.inline
-    implicit class SortStatusMutableBuilder[Self <: SortStatus] (val x: Self) extends AnyVal {
+    extension [Self <: SortStatus](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortDirection(value: SortDirection): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+      inline def setSortDirection(value: SortDirection): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -585,113 +520,77 @@ object DataSetApi {
     trait ConditionOperator extends StObject
     object ConditionOperator {
       
-      @scala.inline
-      def `-1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1` = -1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`]
+      inline def `-1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1` = -1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`]
       
-      @scala.inline
-      def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
+      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
       
-      @scala.inline
-      def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
       
-      @scala.inline
-      def `12`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`12` = 12.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`12`]
+      inline def `12`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`12` = 12.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`12`]
       
-      @scala.inline
-      def `14`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`14` = 14.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`14`]
+      inline def `14`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`14` = 14.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`14`]
       
-      @scala.inline
-      def `15`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`15` = 15.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`15`]
+      inline def `15`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`15` = 15.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`15`]
       
-      @scala.inline
-      def `16`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`16` = 16.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`16`]
+      inline def `16`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`16` = 16.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`16`]
       
-      @scala.inline
-      def `17`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`17` = 17.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`17`]
+      inline def `17`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`17` = 17.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`17`]
       
-      @scala.inline
-      def `18`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`18` = 18.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`18`]
+      inline def `18`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`18` = 18.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`18`]
       
-      @scala.inline
-      def `19`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`19` = 19.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`19`]
+      inline def `19`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`19` = 19.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`19`]
       
-      @scala.inline
-      def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
+      inline def `2`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2` = 2.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`2`]
       
-      @scala.inline
-      def `20`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`20` = 20.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`20`]
+      inline def `20`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`20` = 20.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`20`]
       
-      @scala.inline
-      def `22`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`22` = 22.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`22`]
+      inline def `22`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`22` = 22.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`22`]
       
-      @scala.inline
-      def `23`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`23` = 23.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`23`]
+      inline def `23`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`23` = 23.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`23`]
       
-      @scala.inline
-      def `25`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`25` = 25.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`25`]
+      inline def `25`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`25` = 25.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`25`]
       
-      @scala.inline
-      def `26`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`26` = 26.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`26`]
+      inline def `26`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`26` = 26.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`26`]
       
-      @scala.inline
-      def `27`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`27` = 27.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`27`]
+      inline def `27`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`27` = 27.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`27`]
       
-      @scala.inline
-      def `28`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`28` = 28.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`28`]
+      inline def `28`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`28` = 28.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`28`]
       
-      @scala.inline
-      def `29`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`29` = 29.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`29`]
+      inline def `29`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`29` = 29.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`29`]
       
-      @scala.inline
-      def `3`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3` = 3.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3`]
+      inline def `3`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3` = 3.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`3`]
       
-      @scala.inline
-      def `33`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`33` = 33.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`33`]
+      inline def `33`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`33` = 33.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`33`]
       
-      @scala.inline
-      def `34`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`34` = 34.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`34`]
+      inline def `34`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`34` = 34.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`34`]
       
-      @scala.inline
-      def `37`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`37` = 37.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`37`]
+      inline def `37`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`37` = 37.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`37`]
       
-      @scala.inline
-      def `38`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`38` = 38.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`38`]
+      inline def `38`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`38` = 38.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`38`]
       
-      @scala.inline
-      def `4`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4` = 4.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4`]
+      inline def `4`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4` = 4.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`4`]
       
-      @scala.inline
-      def `49`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`49` = 49.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`49`]
+      inline def `49`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`49` = 49.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`49`]
       
-      @scala.inline
-      def `5`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5` = 5.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5`]
+      inline def `5`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5` = 5.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`5`]
       
-      @scala.inline
-      def `6`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6` = 6.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6`]
+      inline def `6`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6` = 6.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`6`]
       
-      @scala.inline
-      def `70`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`70` = 70.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`70`]
+      inline def `70`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`70` = 70.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`70`]
       
-      @scala.inline
-      def `75`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`75` = 75.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`75`]
+      inline def `75`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`75` = 75.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`75`]
       
-      @scala.inline
-      def `76`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`76` = 76.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`76`]
+      inline def `76`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`76` = 76.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`76`]
       
-      @scala.inline
-      def `77`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`77` = 77.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`77`]
+      inline def `77`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`77` = 77.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`77`]
       
-      @scala.inline
-      def `78`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`78` = 78.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`78`]
+      inline def `78`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`78` = 78.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`78`]
       
-      @scala.inline
-      def `79`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`79` = 79.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`79`]
+      inline def `79`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`79` = 79.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`79`]
       
-      @scala.inline
-      def `8`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`8` = 8.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`8`]
+      inline def `8`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`8` = 8.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`8`]
       
-      @scala.inline
-      def `87`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`87` = 87.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`87`]
+      inline def `87`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`87` = 87.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`87`]
     }
     
     /**
@@ -706,11 +605,9 @@ object DataSetApi {
     trait FilterOperator extends StObject
     object FilterOperator {
       
-      @scala.inline
-      def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
+      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
       
-      @scala.inline
-      def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
     }
     
     /**
@@ -727,14 +624,11 @@ object DataSetApi {
     trait SortDirection extends StObject
     object SortDirection {
       
-      @scala.inline
-      def `-1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1` = -1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`]
+      inline def `-1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1` = -1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`-1`]
       
-      @scala.inline
-      def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
+      inline def `0`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0` = 0.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`0`]
       
-      @scala.inline
-      def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
+      inline def `1`: typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1` = 1.asInstanceOf[typings.powerappsComponentFramework.powerappsComponentFrameworkNumbers.`1`]
     }
   }
 }

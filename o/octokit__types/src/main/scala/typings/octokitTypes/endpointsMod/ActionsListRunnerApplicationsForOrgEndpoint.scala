@@ -11,17 +11,14 @@ trait ActionsListRunnerApplicationsForOrgEndpoint extends StObject {
 }
 object ActionsListRunnerApplicationsForOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): ActionsListRunnerApplicationsForOrgEndpoint = {
+  inline def apply(org_ : String): ActionsListRunnerApplicationsForOrgEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsListRunnerApplicationsForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsListRunnerApplicationsForOrgEndpointMutableBuilder[Self <: ActionsListRunnerApplicationsForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsListRunnerApplicationsForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

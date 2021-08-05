@@ -10,16 +10,13 @@ trait AppsCreateFromManifestEndpoint extends StObject {
 }
 object AppsCreateFromManifestEndpoint {
   
-  @scala.inline
-  def apply(code: String): AppsCreateFromManifestEndpoint = {
+  inline def apply(code: String): AppsCreateFromManifestEndpoint = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppsCreateFromManifestEndpoint]
   }
   
-  @scala.inline
-  implicit class AppsCreateFromManifestEndpointMutableBuilder[Self <: AppsCreateFromManifestEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: AppsCreateFromManifestEndpoint](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

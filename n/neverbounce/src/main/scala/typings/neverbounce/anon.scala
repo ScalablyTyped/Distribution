@@ -52,8 +52,7 @@ object anon {
   }
   object Academichost {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       academic_host: String,
       accepts_all: String,
       bad_dns: String,
@@ -80,71 +79,49 @@ object anon {
       __obj.asInstanceOf[Academichost]
     }
     
-    @scala.inline
-    implicit class AcademichostMutableBuilder[Self <: Academichost] (val x: Self) extends AnyVal {
+    extension [Self <: Academichost](x: Self) {
       
-      @scala.inline
-      def setAcademic_host(value: String): Self = StObject.set(x, "academic_host", value.asInstanceOf[js.Any])
+      inline def setAcademic_host(value: String): Self = StObject.set(x, "academic_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccepts_all(value: String): Self = StObject.set(x, "accepts_all", value.asInstanceOf[js.Any])
+      inline def setAccepts_all(value: String): Self = StObject.set(x, "accepts_all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBad_dns(value: String): Self = StObject.set(x, "bad_dns", value.asInstanceOf[js.Any])
+      inline def setBad_dns(value: String): Self = StObject.set(x, "bad_dns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBad_syntax(value: String): Self = StObject.set(x, "bad_syntax", value.asInstanceOf[js.Any])
+      inline def setBad_syntax(value: String): Self = StObject.set(x, "bad_syntax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnect_fails(value: String): Self = StObject.set(x, "connect_fails", value.asInstanceOf[js.Any])
+      inline def setConnect_fails(value: String): Self = StObject.set(x, "connect_fails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContains_alias(value: String): Self = StObject.set(x, "contains_alias", value.asInstanceOf[js.Any])
+      inline def setContains_alias(value: String): Self = StObject.set(x, "contains_alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContains_subdomain(value: String): Self = StObject.set(x, "contains_subdomain", value.asInstanceOf[js.Any])
+      inline def setContains_subdomain(value: String): Self = StObject.set(x, "contains_subdomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisposable_email(value: String): Self = StObject.set(x, "disposable_email", value.asInstanceOf[js.Any])
+      inline def setDisposable_email(value: String): Self = StObject.set(x, "disposable_email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFree_email_host(value: String): Self = StObject.set(x, "free_email_host", value.asInstanceOf[js.Any])
+      inline def setFree_email_host(value: String): Self = StObject.set(x, "free_email_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGovernment_host(value: String): Self = StObject.set(x, "government_host", value.asInstanceOf[js.Any])
+      inline def setGovernment_host(value: String): Self = StObject.set(x, "government_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_dns(value: String): Self = StObject.set(x, "has_dns", value.asInstanceOf[js.Any])
+      inline def setHas_dns(value: String): Self = StObject.set(x, "has_dns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_dns_mx(value: String): Self = StObject.set(x, "has_dns_mx", value.asInstanceOf[js.Any])
+      inline def setHas_dns_mx(value: String): Self = StObject.set(x, "has_dns_mx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternational_host(value: String): Self = StObject.set(x, "international_host", value.asInstanceOf[js.Any])
+      inline def setInternational_host(value: String): Self = StObject.set(x, "international_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilitary_host(value: String): Self = StObject.set(x, "military_host", value.asInstanceOf[js.Any])
+      inline def setMilitary_host(value: String): Self = StObject.set(x, "military_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfanity(value: String): Self = StObject.set(x, "profanity", value.asInstanceOf[js.Any])
+      inline def setProfanity(value: String): Self = StObject.set(x, "profanity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole_account(value: String): Self = StObject.set(x, "role_account", value.asInstanceOf[js.Any])
+      inline def setRole_account(value: String): Self = StObject.set(x, "role_account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmtp_connectable(value: String): Self = StObject.set(x, "smtp_connectable", value.asInstanceOf[js.Any])
+      inline def setSmtp_connectable(value: String): Self = StObject.set(x, "smtp_connectable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpamtrap_network(value: String): Self = StObject.set(x, "spamtrap_network", value.asInstanceOf[js.Any])
+      inline def setSpamtrap_network(value: String): Self = StObject.set(x, "spamtrap_network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpelling_mistake(value: String): Self = StObject.set(x, "spelling_mistake", value.asInstanceOf[js.Any])
+      inline def setSpelling_mistake(value: String): Self = StObject.set(x, "spelling_mistake", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquatter_host(value: String): Self = StObject.set(x, "squatter_host", value.asInstanceOf[js.Any])
+      inline def setSquatter_host(value: String): Self = StObject.set(x, "squatter_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemporary_dns_error(value: String): Self = StObject.set(x, "temporary_dns_error", value.asInstanceOf[js.Any])
+      inline def setTemporary_dns_error(value: String): Self = StObject.set(x, "temporary_dns_error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,8 +147,7 @@ object anon {
   }
   object Complete {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       complete: String,
       failed: String,
       parsing: String,
@@ -186,35 +162,25 @@ object anon {
       __obj.asInstanceOf[Complete]
     }
     
-    @scala.inline
-    implicit class CompleteMutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
+    extension [Self <: Complete](x: Self) {
       
-      @scala.inline
-      def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: String): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailed(value: String): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+      inline def setFailed(value: String): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsing(value: String): Self = StObject.set(x, "parsing", value.asInstanceOf[js.Any])
+      inline def setParsing(value: String): Self = StObject.set(x, "parsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueued(value: String): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+      inline def setQueued(value: String): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunning(value: String): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+      inline def setRunning(value: String): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnder_review(value: String): Self = StObject.set(x, "under_review", value.asInstanceOf[js.Any])
+      inline def setUnder_review(value: String): Self = StObject.set(x, "under_review", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploading(value: String): Self = StObject.set(x, "uploading", value.asInstanceOf[js.Any])
+      inline def setUploading(value: String): Self = StObject.set(x, "uploading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaiting(value: String): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
+      inline def setWaiting(value: String): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaiting_analyzed(value: String): Self = StObject.set(x, "waiting_analyzed", value.asInstanceOf[js.Any])
+      inline def setWaiting_analyzed(value: String): Self = StObject.set(x, "waiting_analyzed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -226,26 +192,20 @@ object anon {
   }
   object ContentType {
     
-    @scala.inline
-    def apply(): ContentType = {
+    inline def apply(): ContentType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContentType]
     }
     
-    @scala.inline
-    implicit class ContentTypeMutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
+    extension [Self <: ContentType](x: Self) {
       
-      @scala.inline
-      def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
+      inline def `setContent-Type`(value: String): Self = StObject.set(x, "Content-Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setContent-TypeUndefined`: Self = StObject.set(x, "Content-Type", js.undefined)
+      inline def `setContent-TypeUndefined`: Self = StObject.set(x, "Content-Type", js.undefined)
       
-      @scala.inline
-      def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
+      inline def `setUser-Agent`(value: String): Self = StObject.set(x, "User-Agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUser-AgentUndefined`: Self = StObject.set(x, "User-Agent", js.undefined)
+      inline def `setUser-AgentUndefined`: Self = StObject.set(x, "User-Agent", js.undefined)
     }
   }
   
@@ -257,20 +217,16 @@ object anon {
   }
   object Remote {
     
-    @scala.inline
-    def apply(remote: String, supplied: String): Remote = {
+    inline def apply(remote: String, supplied: String): Remote = {
       val __obj = js.Dynamic.literal(remote = remote.asInstanceOf[js.Any], supplied = supplied.asInstanceOf[js.Any])
       __obj.asInstanceOf[Remote]
     }
     
-    @scala.inline
-    implicit class RemoteMutableBuilder[Self <: Remote] (val x: Self) extends AnyVal {
+    extension [Self <: Remote](x: Self) {
       
-      @scala.inline
-      def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupplied(value: String): Self = StObject.set(x, "supplied", value.asInstanceOf[js.Any])
+      inline def setSupplied(value: String): Self = StObject.set(x, "supplied", value.asInstanceOf[js.Any])
     }
   }
 }

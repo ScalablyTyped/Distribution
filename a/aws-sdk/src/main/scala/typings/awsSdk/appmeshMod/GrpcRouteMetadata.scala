@@ -23,28 +23,21 @@ trait GrpcRouteMetadata extends StObject {
 }
 object GrpcRouteMetadata {
   
-  @scala.inline
-  def apply(name: HeaderName): GrpcRouteMetadata = {
+  inline def apply(name: HeaderName): GrpcRouteMetadata = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrpcRouteMetadata]
   }
   
-  @scala.inline
-  implicit class GrpcRouteMetadataMutableBuilder[Self <: GrpcRouteMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GrpcRouteMetadata](x: Self) {
     
-    @scala.inline
-    def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
+    inline def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
     
-    @scala.inline
-    def setMatch(value: GrpcRouteMetadataMatchMethod): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: GrpcRouteMetadataMatchMethod): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
     
-    @scala.inline
-    def setName(value: HeaderName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: HeaderName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

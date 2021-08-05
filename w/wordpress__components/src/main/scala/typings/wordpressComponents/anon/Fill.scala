@@ -13,19 +13,15 @@ trait Fill extends StObject {
 }
 object Fill {
   
-  @scala.inline
-  def apply(Fill: FC[OmitPropsname], Slot: FC[OmitPropsnameBubblesVirtually]): Fill = {
+  inline def apply(Fill: FC[OmitPropsname], Slot: FC[OmitPropsnameBubblesVirtually]): Fill = {
     val __obj = js.Dynamic.literal(Fill = Fill.asInstanceOf[js.Any], Slot = Slot.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fill]
   }
   
-  @scala.inline
-  implicit class FillMutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
+  extension [Self <: Fill](x: Self) {
     
-    @scala.inline
-    def setFill(value: FC[OmitPropsname]): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: FC[OmitPropsname]): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlot(value: FC[OmitPropsnameBubblesVirtually]): Self = StObject.set(x, "Slot", value.asInstanceOf[js.Any])
+    inline def setSlot(value: FC[OmitPropsnameBubblesVirtually]): Self = StObject.set(x, "Slot", value.asInstanceOf[js.Any])
   }
 }

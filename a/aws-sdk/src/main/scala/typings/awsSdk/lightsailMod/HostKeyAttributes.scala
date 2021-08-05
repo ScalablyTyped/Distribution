@@ -43,55 +43,39 @@ trait HostKeyAttributes extends StObject {
 }
 object HostKeyAttributes {
   
-  @scala.inline
-  def apply(): HostKeyAttributes = {
+  inline def apply(): HostKeyAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostKeyAttributes]
   }
   
-  @scala.inline
-  implicit class HostKeyAttributesMutableBuilder[Self <: HostKeyAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: HostKeyAttributes](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
     
-    @scala.inline
-    def setFingerprintSHA1(value: String): Self = StObject.set(x, "fingerprintSHA1", value.asInstanceOf[js.Any])
+    inline def setFingerprintSHA1(value: String): Self = StObject.set(x, "fingerprintSHA1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintSHA1Undefined: Self = StObject.set(x, "fingerprintSHA1", js.undefined)
+    inline def setFingerprintSHA1Undefined: Self = StObject.set(x, "fingerprintSHA1", js.undefined)
     
-    @scala.inline
-    def setFingerprintSHA256(value: String): Self = StObject.set(x, "fingerprintSHA256", value.asInstanceOf[js.Any])
+    inline def setFingerprintSHA256(value: String): Self = StObject.set(x, "fingerprintSHA256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintSHA256Undefined: Self = StObject.set(x, "fingerprintSHA256", js.undefined)
+    inline def setFingerprintSHA256Undefined: Self = StObject.set(x, "fingerprintSHA256", js.undefined)
     
-    @scala.inline
-    def setNotValidAfter(value: IsoDate): Self = StObject.set(x, "notValidAfter", value.asInstanceOf[js.Any])
+    inline def setNotValidAfter(value: IsoDate): Self = StObject.set(x, "notValidAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotValidAfterUndefined: Self = StObject.set(x, "notValidAfter", js.undefined)
+    inline def setNotValidAfterUndefined: Self = StObject.set(x, "notValidAfter", js.undefined)
     
-    @scala.inline
-    def setNotValidBefore(value: IsoDate): Self = StObject.set(x, "notValidBefore", value.asInstanceOf[js.Any])
+    inline def setNotValidBefore(value: IsoDate): Self = StObject.set(x, "notValidBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotValidBeforeUndefined: Self = StObject.set(x, "notValidBefore", js.undefined)
+    inline def setNotValidBeforeUndefined: Self = StObject.set(x, "notValidBefore", js.undefined)
     
-    @scala.inline
-    def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
     
-    @scala.inline
-    def setWitnessedAt(value: IsoDate): Self = StObject.set(x, "witnessedAt", value.asInstanceOf[js.Any])
+    inline def setWitnessedAt(value: IsoDate): Self = StObject.set(x, "witnessedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWitnessedAtUndefined: Self = StObject.set(x, "witnessedAt", js.undefined)
+    inline def setWitnessedAtUndefined: Self = StObject.set(x, "witnessedAt", js.undefined)
   }
 }

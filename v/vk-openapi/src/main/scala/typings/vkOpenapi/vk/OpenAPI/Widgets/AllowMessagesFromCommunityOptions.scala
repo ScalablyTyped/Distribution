@@ -13,19 +13,15 @@ trait AllowMessagesFromCommunityOptions extends StObject {
 }
 object AllowMessagesFromCommunityOptions {
   
-  @scala.inline
-  def apply(): AllowMessagesFromCommunityOptions = {
+  inline def apply(): AllowMessagesFromCommunityOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowMessagesFromCommunityOptions]
   }
   
-  @scala.inline
-  implicit class AllowMessagesFromCommunityOptionsMutableBuilder[Self <: AllowMessagesFromCommunityOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AllowMessagesFromCommunityOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait GetHostnameSuggestionResult extends StObject {
 }
 object GetHostnameSuggestionResult {
   
-  @scala.inline
-  def apply(): GetHostnameSuggestionResult = {
+  inline def apply(): GetHostnameSuggestionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetHostnameSuggestionResult]
   }
   
-  @scala.inline
-  implicit class GetHostnameSuggestionResultMutableBuilder[Self <: GetHostnameSuggestionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetHostnameSuggestionResult](x: Self) {
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "Hostname", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "LayerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "LayerId", js.undefined)
   }
 }

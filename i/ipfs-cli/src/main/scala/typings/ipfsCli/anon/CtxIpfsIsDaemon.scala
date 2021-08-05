@@ -12,19 +12,15 @@ trait CtxIpfsIsDaemon extends StObject {
 }
 object CtxIpfsIsDaemon {
   
-  @scala.inline
-  def apply(ctx: IpfsIsDaemon, timeout: js.Any): CtxIpfsIsDaemon = {
+  inline def apply(ctx: IpfsIsDaemon, timeout: js.Any): CtxIpfsIsDaemon = {
     val __obj = js.Dynamic.literal(ctx = ctx.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CtxIpfsIsDaemon]
   }
   
-  @scala.inline
-  implicit class CtxIpfsIsDaemonMutableBuilder[Self <: CtxIpfsIsDaemon] (val x: Self) extends AnyVal {
+  extension [Self <: CtxIpfsIsDaemon](x: Self) {
     
-    @scala.inline
-    def setCtx(value: IpfsIsDaemon): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+    inline def setCtx(value: IpfsIsDaemon): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

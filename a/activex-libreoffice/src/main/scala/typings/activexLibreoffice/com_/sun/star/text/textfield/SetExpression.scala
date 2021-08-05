@@ -75,8 +75,7 @@ trait SetExpression
 }
 object SetExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -121,46 +120,32 @@ object SetExpression {
     __obj.asInstanceOf[SetExpression]
   }
   
-  @scala.inline
-  implicit class SetExpressionMutableBuilder[Self <: SetExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SetExpression](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+    inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
+    inline def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
+    inline def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInput(value: Boolean): Self = StObject.set(x, "IsInput", value.asInstanceOf[js.Any])
+    inline def setIsInput(value: Boolean): Self = StObject.set(x, "IsInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsShowFormula(value: Boolean): Self = StObject.set(x, "IsShowFormula", value.asInstanceOf[js.Any])
+    inline def setIsShowFormula(value: Boolean): Self = StObject.set(x, "IsShowFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceValue(value: Double): Self = StObject.set(x, "SequenceValue", value.asInstanceOf[js.Any])
+    inline def setSequenceValue(value: Double): Self = StObject.set(x, "SequenceValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubType(value: Double): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
+    inline def setSubType(value: Double): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableName(value: String): Self = StObject.set(x, "VariableName", value.asInstanceOf[js.Any])
+    inline def setVariableName(value: String): Self = StObject.set(x, "VariableName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProxySettingsType extends StObject
 object ProxySettingsType {
   
-  @scala.inline
-  def Direct: typings.chromeApps.chromeAppsStrings.Direct = "Direct".asInstanceOf[typings.chromeApps.chromeAppsStrings.Direct]
+  inline def Direct: typings.chromeApps.chromeAppsStrings.Direct = "Direct".asInstanceOf[typings.chromeApps.chromeAppsStrings.Direct]
   
-  @scala.inline
-  def Manual: Manual_ = "Manual".asInstanceOf[Manual_]
+  inline def Manual: Manual_ = "Manual".asInstanceOf[Manual_]
   
-  @scala.inline
-  def PAC: typings.chromeApps.chromeAppsStrings.PAC = "PAC".asInstanceOf[typings.chromeApps.chromeAppsStrings.PAC]
+  inline def PAC: typings.chromeApps.chromeAppsStrings.PAC = "PAC".asInstanceOf[typings.chromeApps.chromeAppsStrings.PAC]
   
-  @scala.inline
-  def WPAD: typings.chromeApps.chromeAppsStrings.WPAD = "WPAD".asInstanceOf[typings.chromeApps.chromeAppsStrings.WPAD]
+  inline def WPAD: typings.chromeApps.chromeAppsStrings.WPAD = "WPAD".asInstanceOf[typings.chromeApps.chromeAppsStrings.WPAD]
 }

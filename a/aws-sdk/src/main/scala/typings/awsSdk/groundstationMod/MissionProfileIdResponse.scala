@@ -13,19 +13,15 @@ trait MissionProfileIdResponse extends StObject {
 }
 object MissionProfileIdResponse {
   
-  @scala.inline
-  def apply(): MissionProfileIdResponse = {
+  inline def apply(): MissionProfileIdResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MissionProfileIdResponse]
   }
   
-  @scala.inline
-  implicit class MissionProfileIdResponseMutableBuilder[Self <: MissionProfileIdResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MissionProfileIdResponse](x: Self) {
     
-    @scala.inline
-    def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
+    inline def setMissionProfileId(value: String): Self = StObject.set(x, "missionProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissionProfileIdUndefined: Self = StObject.set(x, "missionProfileId", js.undefined)
+    inline def setMissionProfileIdUndefined: Self = StObject.set(x, "missionProfileId", js.undefined)
   }
 }

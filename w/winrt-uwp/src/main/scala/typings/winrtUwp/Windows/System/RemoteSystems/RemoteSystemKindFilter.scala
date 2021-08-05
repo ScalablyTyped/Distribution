@@ -14,16 +14,13 @@ trait RemoteSystemKindFilter
 }
 object RemoteSystemKindFilter {
   
-  @scala.inline
-  def apply(remoteSystemKinds: RemoteSystemKinds): RemoteSystemKindFilter = {
+  inline def apply(remoteSystemKinds: RemoteSystemKinds): RemoteSystemKindFilter = {
     val __obj = js.Dynamic.literal(remoteSystemKinds = remoteSystemKinds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteSystemKindFilter]
   }
   
-  @scala.inline
-  implicit class RemoteSystemKindFilterMutableBuilder[Self <: RemoteSystemKindFilter] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteSystemKindFilter](x: Self) {
     
-    @scala.inline
-    def setRemoteSystemKinds(value: RemoteSystemKinds): Self = StObject.set(x, "remoteSystemKinds", value.asInstanceOf[js.Any])
+    inline def setRemoteSystemKinds(value: RemoteSystemKinds): Self = StObject.set(x, "remoteSystemKinds", value.asInstanceOf[js.Any])
   }
 }

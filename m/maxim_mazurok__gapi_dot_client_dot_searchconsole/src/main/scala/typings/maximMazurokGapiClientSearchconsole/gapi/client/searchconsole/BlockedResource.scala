@@ -11,19 +11,15 @@ trait BlockedResource extends StObject {
 }
 object BlockedResource {
   
-  @scala.inline
-  def apply(): BlockedResource = {
+  inline def apply(): BlockedResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlockedResource]
   }
   
-  @scala.inline
-  implicit class BlockedResourceMutableBuilder[Self <: BlockedResource] (val x: Self) extends AnyVal {
+  extension [Self <: BlockedResource](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

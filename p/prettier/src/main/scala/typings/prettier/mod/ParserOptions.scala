@@ -33,8 +33,7 @@ trait ParserOptions[T]
 }
 object ParserOptions {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     arrowParens: avoid | always,
     bracketSpacing: Boolean,
     embeddedInHtml: Boolean,
@@ -67,16 +66,12 @@ object ParserOptions {
     __obj.asInstanceOf[ParserOptions[T]]
   }
   
-  @scala.inline
-  implicit class ParserOptionsMutableBuilder[Self <: ParserOptions[?], T] (val x: Self & ParserOptions[T]) extends AnyVal {
+  extension [Self <: ParserOptions[?], T](x: Self & ParserOptions[T]) {
     
-    @scala.inline
-    def setLocEnd(value: T => Double): Self = StObject.set(x, "locEnd", js.Any.fromFunction1(value))
+    inline def setLocEnd(value: T => Double): Self = StObject.set(x, "locEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocStart(value: T => Double): Self = StObject.set(x, "locStart", js.Any.fromFunction1(value))
+    inline def setLocStart(value: T => Double): Self = StObject.set(x, "locStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOriginalText(value: String): Self = StObject.set(x, "originalText", value.asInstanceOf[js.Any])
+    inline def setOriginalText(value: String): Self = StObject.set(x, "originalText", value.asInstanceOf[js.Any])
   }
 }

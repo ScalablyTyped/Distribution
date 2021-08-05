@@ -18,25 +18,19 @@ trait VpcSecurityGroupMembership extends StObject {
 }
 object VpcSecurityGroupMembership {
   
-  @scala.inline
-  def apply(): VpcSecurityGroupMembership = {
+  inline def apply(): VpcSecurityGroupMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpcSecurityGroupMembership]
   }
   
-  @scala.inline
-  implicit class VpcSecurityGroupMembershipMutableBuilder[Self <: VpcSecurityGroupMembership] (val x: Self) extends AnyVal {
+  extension [Self <: VpcSecurityGroupMembership](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVpcSecurityGroupId(value: String): Self = StObject.set(x, "VpcSecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setVpcSecurityGroupId(value: String): Self = StObject.set(x, "VpcSecurityGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcSecurityGroupIdUndefined: Self = StObject.set(x, "VpcSecurityGroupId", js.undefined)
+    inline def setVpcSecurityGroupIdUndefined: Self = StObject.set(x, "VpcSecurityGroupId", js.undefined)
   }
 }

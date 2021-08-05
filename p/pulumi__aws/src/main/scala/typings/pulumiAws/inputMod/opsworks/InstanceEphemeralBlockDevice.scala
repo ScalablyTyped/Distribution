@@ -13,19 +13,15 @@ trait InstanceEphemeralBlockDevice extends StObject {
 }
 object InstanceEphemeralBlockDevice {
   
-  @scala.inline
-  def apply(deviceName: Input[String], virtualName: Input[String]): InstanceEphemeralBlockDevice = {
+  inline def apply(deviceName: Input[String], virtualName: Input[String]): InstanceEphemeralBlockDevice = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], virtualName = virtualName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceEphemeralBlockDevice]
   }
   
-  @scala.inline
-  implicit class InstanceEphemeralBlockDeviceMutableBuilder[Self <: InstanceEphemeralBlockDevice] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceEphemeralBlockDevice](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualName(value: Input[String]): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
+    inline def setVirtualName(value: Input[String]): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
   }
 }

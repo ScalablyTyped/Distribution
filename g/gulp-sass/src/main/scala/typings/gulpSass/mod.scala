@@ -29,38 +29,28 @@ object mod extends Shortcut {
   }
   object GulpSassOptions {
     
-    @scala.inline
-    def apply(): GulpSassOptions = {
+    inline def apply(): GulpSassOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GulpSassOptions]
     }
     
-    @scala.inline
-    implicit class GulpSassOptionsMutableBuilder[Self <: GulpSassOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GulpSassOptions](x: Self) {
       
-      @scala.inline
-      def setErrLogToConsole(value: Boolean): Self = StObject.set(x, "errLogToConsole", value.asInstanceOf[js.Any])
+      inline def setErrLogToConsole(value: Boolean): Self = StObject.set(x, "errLogToConsole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrLogToConsoleUndefined: Self = StObject.set(x, "errLogToConsole", js.undefined)
+      inline def setErrLogToConsoleUndefined: Self = StObject.set(x, "errLogToConsole", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* err */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* err */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: /* css */ String => js.Any): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+      inline def setOnSuccess(value: /* css */ String => js.Any): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     }
   }
   
@@ -89,35 +79,26 @@ object mod extends Shortcut {
   }
   object SassOptions {
     
-    @scala.inline
-    def apply(): SassOptions = {
+    inline def apply(): SassOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SassOptions]
     }
     
-    @scala.inline
-    implicit class SassOptionsMutableBuilder[Self <: SassOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SassOptions](x: Self) {
       
-      @scala.inline
-      def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ Error => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setImagePaths(value: js.Array[String]): Self = StObject.set(x, "imagePaths", value.asInstanceOf[js.Any])
+      inline def setImagePaths(value: js.Array[String]): Self = StObject.set(x, "imagePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagePathsUndefined: Self = StObject.set(x, "imagePaths", js.undefined)
+      inline def setImagePathsUndefined: Self = StObject.set(x, "imagePaths", js.undefined)
       
-      @scala.inline
-      def setImagePathsVarargs(value: String*): Self = StObject.set(x, "imagePaths", js.Array(value :_*))
+      inline def setImagePathsVarargs(value: String*): Self = StObject.set(x, "imagePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setSuccess(value: /* results */ SassResults => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* results */ SassResults => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
@@ -131,23 +112,18 @@ object mod extends Shortcut {
   }
   object SassResults {
     
-    @scala.inline
-    def apply(css: String, map: String, stats: Duration): SassResults = {
+    inline def apply(css: String, map: String, stats: Duration): SassResults = {
       val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[SassResults]
     }
     
-    @scala.inline
-    implicit class SassResultsMutableBuilder[Self <: SassResults] (val x: Self) extends AnyVal {
+    extension [Self <: SassResults](x: Self) {
       
-      @scala.inline
-      def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: Duration): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Duration): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
   }
   

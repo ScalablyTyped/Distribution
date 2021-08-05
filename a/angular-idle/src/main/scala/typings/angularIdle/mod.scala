@@ -126,8 +126,7 @@ object mod {
     }
     object IIdleService {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getIdle: () => Double,
         getTimeout: () => Double,
         idling: () => Boolean,
@@ -143,38 +142,27 @@ object mod {
         __obj.asInstanceOf[IIdleService]
       }
       
-      @scala.inline
-      implicit class IIdleServiceMutableBuilder[Self <: IIdleService] (val x: Self) extends AnyVal {
+      extension [Self <: IIdleService](x: Self) {
         
-        @scala.inline
-        def setGetIdle(value: () => Double): Self = StObject.set(x, "getIdle", js.Any.fromFunction0(value))
+        inline def setGetIdle(value: () => Double): Self = StObject.set(x, "getIdle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
+        inline def setGetTimeout(value: () => Double): Self = StObject.set(x, "getTimeout", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIdling(value: () => Boolean): Self = StObject.set(x, "idling", js.Any.fromFunction0(value))
+        inline def setIdling(value: () => Boolean): Self = StObject.set(x, "idling", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInterrupt(value: () => js.Any): Self = StObject.set(x, "interrupt", js.Any.fromFunction0(value))
+        inline def setInterrupt(value: () => js.Any): Self = StObject.set(x, "interrupt", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsExpired(value: () => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction0(value))
+        inline def setIsExpired(value: () => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRunning(value: () => Boolean): Self = StObject.set(x, "running", js.Any.fromFunction0(value))
+        inline def setRunning(value: () => Boolean): Self = StObject.set(x, "running", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetIdle(value: Double => Unit): Self = StObject.set(x, "setIdle", js.Any.fromFunction1(value))
+        inline def setSetIdle(value: Double => Unit): Self = StObject.set(x, "setIdle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetTimeout(value: Double => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
+        inline def setSetTimeout(value: Double => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setUnwatch(value: () => Unit): Self = StObject.set(x, "unwatch", js.Any.fromFunction0(value))
+        inline def setUnwatch(value: () => Unit): Self = StObject.set(x, "unwatch", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setWatch(value: () => Unit): Self = StObject.set(x, "watch", js.Any.fromFunction0(value))
+        inline def setWatch(value: () => Unit): Self = StObject.set(x, "watch", js.Any.fromFunction0(value))
       }
     }
     
@@ -237,26 +225,20 @@ object mod {
     }
     object IKeepAliveService {
       
-      @scala.inline
-      def apply(ping: () => Unit, setInterval: Double => Unit, start: () => Unit, stop: () => Unit): IKeepAliveService = {
+      inline def apply(ping: () => Unit, setInterval: Double => Unit, start: () => Unit, stop: () => Unit): IKeepAliveService = {
         val __obj = js.Dynamic.literal(ping = js.Any.fromFunction0(ping), setInterval = js.Any.fromFunction1(setInterval), start = js.Any.fromFunction0(start), stop = js.Any.fromFunction0(stop))
         __obj.asInstanceOf[IKeepAliveService]
       }
       
-      @scala.inline
-      implicit class IKeepAliveServiceMutableBuilder[Self <: IKeepAliveService] (val x: Self) extends AnyVal {
+      extension [Self <: IKeepAliveService](x: Self) {
         
-        @scala.inline
-        def setPing(value: () => Unit): Self = StObject.set(x, "ping", js.Any.fromFunction0(value))
+        inline def setPing(value: () => Unit): Self = StObject.set(x, "ping", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetInterval(value: Double => Unit): Self = StObject.set(x, "setInterval", js.Any.fromFunction1(value))
+        inline def setSetInterval(value: Double => Unit): Self = StObject.set(x, "setInterval", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+        inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+        inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       }
     }
     
@@ -276,17 +258,14 @@ object mod {
     }
     object ITitleProvider {
       
-      @scala.inline
-      def apply($get: js.Any, enabled: Boolean => Unit): ITitleProvider = {
+      inline def apply($get: js.Any, enabled: Boolean => Unit): ITitleProvider = {
         val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], enabled = js.Any.fromFunction1(enabled))
         __obj.asInstanceOf[ITitleProvider]
       }
       
-      @scala.inline
-      implicit class ITitleProviderMutableBuilder[Self <: ITitleProvider] (val x: Self) extends AnyVal {
+      extension [Self <: ITitleProvider](x: Self) {
         
-        @scala.inline
-        def setEnabled(value: Boolean => Unit): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
+        inline def setEnabled(value: Boolean => Unit): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       }
     }
     

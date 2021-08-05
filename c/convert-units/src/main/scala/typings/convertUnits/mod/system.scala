@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait system extends StObject
 object system {
   
-  @scala.inline
-  def bits: typings.convertUnits.convertUnitsStrings.bits = "bits".asInstanceOf[typings.convertUnits.convertUnitsStrings.bits]
+  inline def bits: typings.convertUnits.convertUnitsStrings.bits = "bits".asInstanceOf[typings.convertUnits.convertUnitsStrings.bits]
   
-  @scala.inline
-  def bytes: typings.convertUnits.convertUnitsStrings.bytes = "bytes".asInstanceOf[typings.convertUnits.convertUnitsStrings.bytes]
+  inline def bytes: typings.convertUnits.convertUnitsStrings.bytes = "bytes".asInstanceOf[typings.convertUnits.convertUnitsStrings.bytes]
   
-  @scala.inline
-  def imperial: typings.convertUnits.convertUnitsStrings.imperial = "imperial".asInstanceOf[typings.convertUnits.convertUnitsStrings.imperial]
+  inline def imperial: typings.convertUnits.convertUnitsStrings.imperial = "imperial".asInstanceOf[typings.convertUnits.convertUnitsStrings.imperial]
   
-  @scala.inline
-  def metric: typings.convertUnits.convertUnitsStrings.metric = "metric".asInstanceOf[typings.convertUnits.convertUnitsStrings.metric]
+  inline def metric: typings.convertUnits.convertUnitsStrings.metric = "metric".asInstanceOf[typings.convertUnits.convertUnitsStrings.metric]
 }

@@ -12,25 +12,19 @@ trait TraceOptions extends StObject {
 }
 object TraceOptions {
   
-  @scala.inline
-  def apply(): TraceOptions = {
+  inline def apply(): TraceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TraceOptions]
   }
   
-  @scala.inline
-  implicit class TraceOptionsMutableBuilder[Self <: TraceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TraceOptions](x: Self) {
     
-    @scala.inline
-    def setSendNotification(value: Boolean): Self = StObject.set(x, "sendNotification", value.asInstanceOf[js.Any])
+    inline def setSendNotification(value: Boolean): Self = StObject.set(x, "sendNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendNotificationUndefined: Self = StObject.set(x, "sendNotification", js.undefined)
+    inline def setSendNotificationUndefined: Self = StObject.set(x, "sendNotification", js.undefined)
     
-    @scala.inline
-    def setTraceFormat(value: TraceFormat): Self = StObject.set(x, "traceFormat", value.asInstanceOf[js.Any])
+    inline def setTraceFormat(value: TraceFormat): Self = StObject.set(x, "traceFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceFormatUndefined: Self = StObject.set(x, "traceFormat", js.undefined)
+    inline def setTraceFormatUndefined: Self = StObject.set(x, "traceFormat", js.undefined)
   }
 }

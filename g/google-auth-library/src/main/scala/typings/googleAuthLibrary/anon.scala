@@ -17,26 +17,20 @@ object anon {
   }
   object Envelope {
     
-    @scala.inline
-    def apply(): Envelope = {
+    inline def apply(): Envelope = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Envelope]
     }
     
-    @scala.inline
-    implicit class EnvelopeMutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
+    extension [Self <: Envelope](x: Self) {
       
-      @scala.inline
-      def setEnvelope(value: String): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
+      inline def setEnvelope(value: String): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvelopeUndefined: Self = StObject.set(x, "envelope", js.undefined)
+      inline def setEnvelopeUndefined: Self = StObject.set(x, "envelope", js.undefined)
       
-      @scala.inline
-      def setPayload(value: TokenPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: TokenPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   
@@ -50,32 +44,24 @@ object anon {
   }
   object Headers {
     
-    @scala.inline
-    def apply(): Headers = {
+    inline def apply(): Headers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Headers]
     }
     
-    @scala.inline
-    implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+    extension [Self <: Headers](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: typings.googleAuthLibrary.oauth2clientMod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: typings.googleAuthLibrary.oauth2clientMod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -98,22 +84,18 @@ object anon {
   }
   object Xgoogiamauthorityselector {
     
-    @scala.inline
-    def apply(`x-goog-iam-authority-selector`: String, `x-goog-iam-authorization-token`: String): Xgoogiamauthorityselector = {
+    inline def apply(`x-goog-iam-authority-selector`: String, `x-goog-iam-authorization-token`: String): Xgoogiamauthorityselector = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("x-goog-iam-authority-selector")(`x-goog-iam-authority-selector`.asInstanceOf[js.Any])
       __obj.updateDynamic("x-goog-iam-authorization-token")(`x-goog-iam-authorization-token`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Xgoogiamauthorityselector]
     }
     
-    @scala.inline
-    implicit class XgoogiamauthorityselectorMutableBuilder[Self <: Xgoogiamauthorityselector] (val x: Self) extends AnyVal {
+    extension [Self <: Xgoogiamauthorityselector](x: Self) {
       
-      @scala.inline
-      def `setX-goog-iam-authority-selector`(value: String): Self = StObject.set(x, "x-goog-iam-authority-selector", value.asInstanceOf[js.Any])
+      inline def `setX-goog-iam-authority-selector`(value: String): Self = StObject.set(x, "x-goog-iam-authority-selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-goog-iam-authorization-token`(value: String): Self = StObject.set(x, "x-goog-iam-authorization-token", value.asInstanceOf[js.Any])
+      inline def `setX-goog-iam-authorization-token`(value: String): Self = StObject.set(x, "x-goog-iam-authorization-token", value.asInstanceOf[js.Any])
     }
   }
 }

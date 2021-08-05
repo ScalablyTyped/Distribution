@@ -25,5 +25,5 @@ class BasicReporter ()
   /* CompleteClass */
   override def log(logObj: ConsolaReporterLogObject, args: ConsolaReporterArgs): Unit = js.native
   
-  var options: BasicReporterOptions = js.native
+  /* protected */ var options: BasicReporterOptions = js.native
 }

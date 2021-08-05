@@ -26,8 +26,7 @@ object acmpca {
   }
   object CertificateAuthorityCertificateAuthorityConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       keyAlgorithm: Input[String],
       signingAlgorithm: Input[String],
       subject: Input[CertificateAuthorityCertificateAuthorityConfigurationSubject]
@@ -36,17 +35,13 @@ object acmpca {
       __obj.asInstanceOf[CertificateAuthorityCertificateAuthorityConfiguration]
     }
     
-    @scala.inline
-    implicit class CertificateAuthorityCertificateAuthorityConfigurationMutableBuilder[Self <: CertificateAuthorityCertificateAuthorityConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateAuthorityCertificateAuthorityConfiguration](x: Self) {
       
-      @scala.inline
-      def setKeyAlgorithm(value: Input[String]): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
+      inline def setKeyAlgorithm(value: Input[String]): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningAlgorithm(value: Input[String]): Self = StObject.set(x, "signingAlgorithm", value.asInstanceOf[js.Any])
+      inline def setSigningAlgorithm(value: Input[String]): Self = StObject.set(x, "signingAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: Input[CertificateAuthorityCertificateAuthorityConfigurationSubject]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: Input[CertificateAuthorityCertificateAuthorityConfigurationSubject]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,92 +114,64 @@ object acmpca {
   }
   object CertificateAuthorityCertificateAuthorityConfigurationSubject {
     
-    @scala.inline
-    def apply(): CertificateAuthorityCertificateAuthorityConfigurationSubject = {
+    inline def apply(): CertificateAuthorityCertificateAuthorityConfigurationSubject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateAuthorityCertificateAuthorityConfigurationSubject]
     }
     
-    @scala.inline
-    implicit class CertificateAuthorityCertificateAuthorityConfigurationSubjectMutableBuilder[Self <: CertificateAuthorityCertificateAuthorityConfigurationSubject] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateAuthorityCertificateAuthorityConfigurationSubject](x: Self) {
       
-      @scala.inline
-      def setCommonName(value: Input[String]): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+      inline def setCommonName(value: Input[String]): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
+      inline def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
       
-      @scala.inline
-      def setCountry(value: Input[String]): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: Input[String]): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setDistinguishedNameQualifier(value: Input[String]): Self = StObject.set(x, "distinguishedNameQualifier", value.asInstanceOf[js.Any])
+      inline def setDistinguishedNameQualifier(value: Input[String]): Self = StObject.set(x, "distinguishedNameQualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistinguishedNameQualifierUndefined: Self = StObject.set(x, "distinguishedNameQualifier", js.undefined)
+      inline def setDistinguishedNameQualifierUndefined: Self = StObject.set(x, "distinguishedNameQualifier", js.undefined)
       
-      @scala.inline
-      def setGenerationQualifier(value: Input[String]): Self = StObject.set(x, "generationQualifier", value.asInstanceOf[js.Any])
+      inline def setGenerationQualifier(value: Input[String]): Self = StObject.set(x, "generationQualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerationQualifierUndefined: Self = StObject.set(x, "generationQualifier", js.undefined)
+      inline def setGenerationQualifierUndefined: Self = StObject.set(x, "generationQualifier", js.undefined)
       
-      @scala.inline
-      def setGivenName(value: Input[String]): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+      inline def setGivenName(value: Input[String]): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
+      inline def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
       
-      @scala.inline
-      def setInitials(value: Input[String]): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
+      inline def setInitials(value: Input[String]): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialsUndefined: Self = StObject.set(x, "initials", js.undefined)
+      inline def setInitialsUndefined: Self = StObject.set(x, "initials", js.undefined)
       
-      @scala.inline
-      def setLocality(value: Input[String]): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+      inline def setLocality(value: Input[String]): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
+      inline def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
       
-      @scala.inline
-      def setOrganization(value: Input[String]): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: Input[String]): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+      inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
       
-      @scala.inline
-      def setOrganizationalUnit(value: Input[String]): Self = StObject.set(x, "organizationalUnit", value.asInstanceOf[js.Any])
+      inline def setOrganizationalUnit(value: Input[String]): Self = StObject.set(x, "organizationalUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationalUnitUndefined: Self = StObject.set(x, "organizationalUnit", js.undefined)
+      inline def setOrganizationalUnitUndefined: Self = StObject.set(x, "organizationalUnit", js.undefined)
       
-      @scala.inline
-      def setPseudonym(value: Input[String]): Self = StObject.set(x, "pseudonym", value.asInstanceOf[js.Any])
+      inline def setPseudonym(value: Input[String]): Self = StObject.set(x, "pseudonym", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPseudonymUndefined: Self = StObject.set(x, "pseudonym", js.undefined)
+      inline def setPseudonymUndefined: Self = StObject.set(x, "pseudonym", js.undefined)
       
-      @scala.inline
-      def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: Input[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setSurname(value: Input[String]): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
+      inline def setSurname(value: Input[String]): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurnameUndefined: Self = StObject.set(x, "surname", js.undefined)
+      inline def setSurnameUndefined: Self = StObject.set(x, "surname", js.undefined)
       
-      @scala.inline
-      def setTitle(value: Input[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: Input[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -217,20 +184,16 @@ object acmpca {
   }
   object CertificateAuthorityRevocationConfiguration {
     
-    @scala.inline
-    def apply(): CertificateAuthorityRevocationConfiguration = {
+    inline def apply(): CertificateAuthorityRevocationConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CertificateAuthorityRevocationConfiguration]
     }
     
-    @scala.inline
-    implicit class CertificateAuthorityRevocationConfigurationMutableBuilder[Self <: CertificateAuthorityRevocationConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateAuthorityRevocationConfiguration](x: Self) {
       
-      @scala.inline
-      def setCrlConfiguration(value: Input[CertificateAuthorityRevocationConfigurationCrlConfiguration]): Self = StObject.set(x, "crlConfiguration", value.asInstanceOf[js.Any])
+      inline def setCrlConfiguration(value: Input[CertificateAuthorityRevocationConfigurationCrlConfiguration]): Self = StObject.set(x, "crlConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrlConfigurationUndefined: Self = StObject.set(x, "crlConfiguration", js.undefined)
+      inline def setCrlConfigurationUndefined: Self = StObject.set(x, "crlConfiguration", js.undefined)
     }
   }
   
@@ -258,35 +221,26 @@ object acmpca {
   }
   object CertificateAuthorityRevocationConfigurationCrlConfiguration {
     
-    @scala.inline
-    def apply(expirationInDays: Input[Double]): CertificateAuthorityRevocationConfigurationCrlConfiguration = {
+    inline def apply(expirationInDays: Input[Double]): CertificateAuthorityRevocationConfigurationCrlConfiguration = {
       val __obj = js.Dynamic.literal(expirationInDays = expirationInDays.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateAuthorityRevocationConfigurationCrlConfiguration]
     }
     
-    @scala.inline
-    implicit class CertificateAuthorityRevocationConfigurationCrlConfigurationMutableBuilder[Self <: CertificateAuthorityRevocationConfigurationCrlConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateAuthorityRevocationConfigurationCrlConfiguration](x: Self) {
       
-      @scala.inline
-      def setCustomCname(value: Input[String]): Self = StObject.set(x, "customCname", value.asInstanceOf[js.Any])
+      inline def setCustomCname(value: Input[String]): Self = StObject.set(x, "customCname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCnameUndefined: Self = StObject.set(x, "customCname", js.undefined)
+      inline def setCustomCnameUndefined: Self = StObject.set(x, "customCname", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setExpirationInDays(value: Input[Double]): Self = StObject.set(x, "expirationInDays", value.asInstanceOf[js.Any])
+      inline def setExpirationInDays(value: Input[Double]): Self = StObject.set(x, "expirationInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+      inline def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
+      inline def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
     }
   }
   
@@ -296,23 +250,18 @@ object acmpca {
   }
   object GetCertificateAuthorityRevocationConfiguration {
     
-    @scala.inline
-    def apply(): GetCertificateAuthorityRevocationConfiguration = {
+    inline def apply(): GetCertificateAuthorityRevocationConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCertificateAuthorityRevocationConfiguration]
     }
     
-    @scala.inline
-    implicit class GetCertificateAuthorityRevocationConfigurationMutableBuilder[Self <: GetCertificateAuthorityRevocationConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: GetCertificateAuthorityRevocationConfiguration](x: Self) {
       
-      @scala.inline
-      def setCrlConfigurations(value: js.Array[GetCertificateAuthorityRevocationConfigurationCrlConfiguration]): Self = StObject.set(x, "crlConfigurations", value.asInstanceOf[js.Any])
+      inline def setCrlConfigurations(value: js.Array[GetCertificateAuthorityRevocationConfigurationCrlConfiguration]): Self = StObject.set(x, "crlConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrlConfigurationsUndefined: Self = StObject.set(x, "crlConfigurations", js.undefined)
+      inline def setCrlConfigurationsUndefined: Self = StObject.set(x, "crlConfigurations", js.undefined)
       
-      @scala.inline
-      def setCrlConfigurationsVarargs(value: GetCertificateAuthorityRevocationConfigurationCrlConfiguration*): Self = StObject.set(x, "crlConfigurations", js.Array(value :_*))
+      inline def setCrlConfigurationsVarargs(value: GetCertificateAuthorityRevocationConfigurationCrlConfiguration*): Self = StObject.set(x, "crlConfigurations", js.Array(value :_*))
     }
   }
   
@@ -328,38 +277,28 @@ object acmpca {
   }
   object GetCertificateAuthorityRevocationConfigurationCrlConfiguration {
     
-    @scala.inline
-    def apply(): GetCertificateAuthorityRevocationConfigurationCrlConfiguration = {
+    inline def apply(): GetCertificateAuthorityRevocationConfigurationCrlConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetCertificateAuthorityRevocationConfigurationCrlConfiguration]
     }
     
-    @scala.inline
-    implicit class GetCertificateAuthorityRevocationConfigurationCrlConfigurationMutableBuilder[Self <: GetCertificateAuthorityRevocationConfigurationCrlConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: GetCertificateAuthorityRevocationConfigurationCrlConfiguration](x: Self) {
       
-      @scala.inline
-      def setCustomCname(value: String): Self = StObject.set(x, "customCname", value.asInstanceOf[js.Any])
+      inline def setCustomCname(value: String): Self = StObject.set(x, "customCname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomCnameUndefined: Self = StObject.set(x, "customCname", js.undefined)
+      inline def setCustomCnameUndefined: Self = StObject.set(x, "customCname", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setExpirationInDays(value: Double): Self = StObject.set(x, "expirationInDays", value.asInstanceOf[js.Any])
+      inline def setExpirationInDays(value: Double): Self = StObject.set(x, "expirationInDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationInDaysUndefined: Self = StObject.set(x, "expirationInDays", js.undefined)
+      inline def setExpirationInDaysUndefined: Self = StObject.set(x, "expirationInDays", js.undefined)
       
-      @scala.inline
-      def setS3BucketName(value: String): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+      inline def setS3BucketName(value: String): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
+      inline def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
     }
   }
 }

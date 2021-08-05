@@ -28,37 +28,27 @@ trait Fontcolor extends StObject {
 }
 object Fontcolor {
   
-  @scala.inline
-  def apply(): Fontcolor = {
+  inline def apply(): Fontcolor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Fontcolor]
   }
   
-  @scala.inline
-  implicit class FontcolorMutableBuilder[Self <: Fontcolor] (val x: Self) extends AnyVal {
+  extension [Self <: Fontcolor](x: Self) {
     
-    @scala.inline
-    def `setFont-color`(value: js.Any): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
+    inline def `setFont-color`(value: js.Any): Self = StObject.set(x, "font-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFont-colorUndefined`: Self = StObject.set(x, "font-color", js.undefined)
+    inline def `setFont-colorUndefined`: Self = StObject.set(x, "font-color", js.undefined)
     
-    @scala.inline
-    def setImage(value: Boolean): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Boolean): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    inline def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+    inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
     
-    @scala.inline
-    def setShare(value: js.Any): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
+    inline def setShare(value: js.Any): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareUndefined: Self = StObject.set(x, "share", js.undefined)
+    inline def setShareUndefined: Self = StObject.set(x, "share", js.undefined)
   }
 }

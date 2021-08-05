@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Identity protected () extends Initializer {
   def this(args: IdentityArgs) = this()
   
-  var gain: js.Any = js.native
+  /* private */ var gain: js.Any = js.native
 }
 /* static members */
 object Identity {
@@ -22,6 +22,5 @@ object Identity {
   @JSImport("@tensorflow/tfjs-layers/dist/initializers", "Identity.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

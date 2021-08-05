@@ -37,8 +37,7 @@ trait GanttDateHelpers extends StObject {
 }
 object GanttDateHelpers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (Date, Double, String) => Date,
     convert_to_utc: Date => Date,
     copy: Date => Date,
@@ -58,49 +57,34 @@ object GanttDateHelpers {
     __obj.asInstanceOf[GanttDateHelpers]
   }
   
-  @scala.inline
-  implicit class GanttDateHelpersMutableBuilder[Self <: GanttDateHelpers] (val x: Self) extends AnyVal {
+  extension [Self <: GanttDateHelpers](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Date, Double, String) => Date): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
+    inline def setAdd(value: (Date, Double, String) => Date): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setConvert_to_utc(value: Date => Date): Self = StObject.set(x, "convert_to_utc", js.Any.fromFunction1(value))
+    inline def setConvert_to_utc(value: Date => Date): Self = StObject.set(x, "convert_to_utc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCopy(value: Date => Date): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
+    inline def setCopy(value: Date => Date): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDate_part(value: Date => Date): Self = StObject.set(x, "date_part", js.Any.fromFunction1(value))
+    inline def setDate_part(value: Date => Date): Self = StObject.set(x, "date_part", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDate_to_str(value: String => js.Any): Self = StObject.set(x, "date_to_str", js.Any.fromFunction1(value))
+    inline def setDate_to_str(value: String => js.Any): Self = StObject.set(x, "date_to_str", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDay_start(value: Date => Date): Self = StObject.set(x, "day_start", js.Any.fromFunction1(value))
+    inline def setDay_start(value: Date => Date): Self = StObject.set(x, "day_start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetISOWeek(value: Date => Double): Self = StObject.set(x, "getISOWeek", js.Any.fromFunction1(value))
+    inline def setGetISOWeek(value: Date => Double): Self = StObject.set(x, "getISOWeek", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUTCISOWeek(value: Date => Double): Self = StObject.set(x, "getUTCISOWeek", js.Any.fromFunction1(value))
+    inline def setGetUTCISOWeek(value: Date => Double): Self = StObject.set(x, "getUTCISOWeek", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMonth_start(value: Date => Date): Self = StObject.set(x, "month_start", js.Any.fromFunction1(value))
+    inline def setMonth_start(value: Date => Date): Self = StObject.set(x, "month_start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStr_to_date(value: String => js.Any): Self = StObject.set(x, "str_to_date", js.Any.fromFunction1(value))
+    inline def setStr_to_date(value: String => js.Any): Self = StObject.set(x, "str_to_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTime_part(value: Date => Date): Self = StObject.set(x, "time_part", js.Any.fromFunction1(value))
+    inline def setTime_part(value: Date => Date): Self = StObject.set(x, "time_part", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTo_fixed(value: Double => String): Self = StObject.set(x, "to_fixed", js.Any.fromFunction1(value))
+    inline def setTo_fixed(value: Double => String): Self = StObject.set(x, "to_fixed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWeek_start(value: Date => Date): Self = StObject.set(x, "week_start", js.Any.fromFunction1(value))
+    inline def setWeek_start(value: Date => Date): Self = StObject.set(x, "week_start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYear_start(value: Date => Date): Self = StObject.set(x, "year_start", js.Any.fromFunction1(value))
+    inline def setYear_start(value: Date => Date): Self = StObject.set(x, "year_start", js.Any.fromFunction1(value))
   }
 }

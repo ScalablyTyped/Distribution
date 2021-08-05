@@ -16,31 +16,23 @@ trait SharedStatefulPanelContainerProps extends StObject {
 }
 object SharedStatefulPanelContainerProps {
   
-  @scala.inline
-  def apply(): SharedStatefulPanelContainerProps = {
+  inline def apply(): SharedStatefulPanelContainerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharedStatefulPanelContainerProps]
   }
   
-  @scala.inline
-  implicit class SharedStatefulPanelContainerPropsMutableBuilder[Self <: SharedStatefulPanelContainerProps] (val x: Self) extends AnyVal {
+  extension [Self <: SharedStatefulPanelContainerProps](x: Self) {
     
-    @scala.inline
-    def setInitialState(value: PanelState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: PanelState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* args */ ExpandedBoolean => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* args */ ExpandedBoolean => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setStateReducer(value: (expand, PanelState, PanelState) => PanelState): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+    inline def setStateReducer(value: (expand, PanelState, PanelState) => PanelState): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+    inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
   }
 }

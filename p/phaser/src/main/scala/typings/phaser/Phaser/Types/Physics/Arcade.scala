@@ -40,26 +40,20 @@ object Arcade {
   }
   object ArcadeBodyBounds {
     
-    @scala.inline
-    def apply(bottom: Double, right: Double, x: Double, y: Double): ArcadeBodyBounds = {
+    inline def apply(bottom: Double, right: Double, x: Double, y: Double): ArcadeBodyBounds = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArcadeBodyBounds]
     }
     
-    @scala.inline
-    implicit class ArcadeBodyBoundsMutableBuilder[Self <: ArcadeBodyBounds] (val x: Self) extends AnyVal {
+    extension [Self <: ArcadeBodyBounds](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,29 +86,22 @@ object Arcade {
   }
   object ArcadeBodyCollision {
     
-    @scala.inline
-    def apply(down: Boolean, left: Boolean, none: Boolean, right: Boolean, up: Boolean): ArcadeBodyCollision = {
+    inline def apply(down: Boolean, left: Boolean, none: Boolean, right: Boolean, up: Boolean): ArcadeBodyCollision = {
       val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArcadeBodyCollision]
     }
     
-    @scala.inline
-    implicit class ArcadeBodyCollisionMutableBuilder[Self <: ArcadeBodyCollision] (val x: Self) extends AnyVal {
+    extension [Self <: ArcadeBodyCollision](x: Self) {
       
-      @scala.inline
-      def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+      inline def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNone(value: Boolean): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+      inline def setNone(value: Boolean): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+      inline def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     }
   }
   
@@ -246,140 +233,96 @@ object Arcade {
   }
   object ArcadeWorldConfig {
     
-    @scala.inline
-    def apply(): ArcadeWorldConfig = {
+    inline def apply(): ArcadeWorldConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArcadeWorldConfig]
     }
     
-    @scala.inline
-    implicit class ArcadeWorldConfigMutableBuilder[Self <: ArcadeWorldConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ArcadeWorldConfig](x: Self) {
       
-      @scala.inline
-      def setCheckCollision(value: CheckCollisionObject): Self = StObject.set(x, "checkCollision", value.asInstanceOf[js.Any])
+      inline def setCheckCollision(value: CheckCollisionObject): Self = StObject.set(x, "checkCollision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckCollisionUndefined: Self = StObject.set(x, "checkCollision", js.undefined)
+      inline def setCheckCollisionUndefined: Self = StObject.set(x, "checkCollision", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugBodyColor(value: Double): Self = StObject.set(x, "debugBodyColor", value.asInstanceOf[js.Any])
+      inline def setDebugBodyColor(value: Double): Self = StObject.set(x, "debugBodyColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugBodyColorUndefined: Self = StObject.set(x, "debugBodyColor", js.undefined)
+      inline def setDebugBodyColorUndefined: Self = StObject.set(x, "debugBodyColor", js.undefined)
       
-      @scala.inline
-      def setDebugShowBody(value: Boolean): Self = StObject.set(x, "debugShowBody", value.asInstanceOf[js.Any])
+      inline def setDebugShowBody(value: Boolean): Self = StObject.set(x, "debugShowBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugShowBodyUndefined: Self = StObject.set(x, "debugShowBody", js.undefined)
+      inline def setDebugShowBodyUndefined: Self = StObject.set(x, "debugShowBody", js.undefined)
       
-      @scala.inline
-      def setDebugShowStaticBody(value: Boolean): Self = StObject.set(x, "debugShowStaticBody", value.asInstanceOf[js.Any])
+      inline def setDebugShowStaticBody(value: Boolean): Self = StObject.set(x, "debugShowStaticBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugShowStaticBodyUndefined: Self = StObject.set(x, "debugShowStaticBody", js.undefined)
+      inline def setDebugShowStaticBodyUndefined: Self = StObject.set(x, "debugShowStaticBody", js.undefined)
       
-      @scala.inline
-      def setDebugShowVelocity(value: Boolean): Self = StObject.set(x, "debugShowVelocity", value.asInstanceOf[js.Any])
+      inline def setDebugShowVelocity(value: Boolean): Self = StObject.set(x, "debugShowVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugShowVelocityUndefined: Self = StObject.set(x, "debugShowVelocity", js.undefined)
+      inline def setDebugShowVelocityUndefined: Self = StObject.set(x, "debugShowVelocity", js.undefined)
       
-      @scala.inline
-      def setDebugStaticBodyColor(value: Double): Self = StObject.set(x, "debugStaticBodyColor", value.asInstanceOf[js.Any])
+      inline def setDebugStaticBodyColor(value: Double): Self = StObject.set(x, "debugStaticBodyColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugStaticBodyColorUndefined: Self = StObject.set(x, "debugStaticBodyColor", js.undefined)
+      inline def setDebugStaticBodyColorUndefined: Self = StObject.set(x, "debugStaticBodyColor", js.undefined)
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDebugVelocityColor(value: Double): Self = StObject.set(x, "debugVelocityColor", value.asInstanceOf[js.Any])
+      inline def setDebugVelocityColor(value: Double): Self = StObject.set(x, "debugVelocityColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugVelocityColorUndefined: Self = StObject.set(x, "debugVelocityColor", js.undefined)
+      inline def setDebugVelocityColorUndefined: Self = StObject.set(x, "debugVelocityColor", js.undefined)
       
-      @scala.inline
-      def setForceX(value: Boolean): Self = StObject.set(x, "forceX", value.asInstanceOf[js.Any])
+      inline def setForceX(value: Boolean): Self = StObject.set(x, "forceX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceXUndefined: Self = StObject.set(x, "forceX", js.undefined)
+      inline def setForceXUndefined: Self = StObject.set(x, "forceX", js.undefined)
       
-      @scala.inline
-      def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+      inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+      inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
       
-      @scala.inline
-      def setGravity(value: Vector2Like): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+      inline def setGravity(value: Vector2Like): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+      inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
+      inline def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPausedUndefined: Self = StObject.set(x, "isPaused", js.undefined)
+      inline def setIsPausedUndefined: Self = StObject.set(x, "isPaused", js.undefined)
       
-      @scala.inline
-      def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
+      inline def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxEntriesUndefined: Self = StObject.set(x, "maxEntries", js.undefined)
+      inline def setMaxEntriesUndefined: Self = StObject.set(x, "maxEntries", js.undefined)
       
-      @scala.inline
-      def setOverlapBias(value: Double): Self = StObject.set(x, "overlapBias", value.asInstanceOf[js.Any])
+      inline def setOverlapBias(value: Double): Self = StObject.set(x, "overlapBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlapBiasUndefined: Self = StObject.set(x, "overlapBias", js.undefined)
+      inline def setOverlapBiasUndefined: Self = StObject.set(x, "overlapBias", js.undefined)
       
-      @scala.inline
-      def setTileBias(value: Double): Self = StObject.set(x, "tileBias", value.asInstanceOf[js.Any])
+      inline def setTileBias(value: Double): Self = StObject.set(x, "tileBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileBiasUndefined: Self = StObject.set(x, "tileBias", js.undefined)
+      inline def setTileBiasUndefined: Self = StObject.set(x, "tileBias", js.undefined)
       
-      @scala.inline
-      def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
+      inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
+      inline def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
       
-      @scala.inline
-      def setUseTree(value: Boolean): Self = StObject.set(x, "useTree", value.asInstanceOf[js.Any])
+      inline def setUseTree(value: Boolean): Self = StObject.set(x, "useTree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTreeUndefined: Self = StObject.set(x, "useTree", js.undefined)
+      inline def setUseTreeUndefined: Self = StObject.set(x, "useTree", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -417,8 +360,7 @@ object Arcade {
   }
   object ArcadeWorldDefaults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bodyDebugColor: Double,
       debugShowBody: Boolean,
       debugShowStaticBody: Boolean,
@@ -430,26 +372,19 @@ object Arcade {
       __obj.asInstanceOf[ArcadeWorldDefaults]
     }
     
-    @scala.inline
-    implicit class ArcadeWorldDefaultsMutableBuilder[Self <: ArcadeWorldDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: ArcadeWorldDefaults](x: Self) {
       
-      @scala.inline
-      def setBodyDebugColor(value: Double): Self = StObject.set(x, "bodyDebugColor", value.asInstanceOf[js.Any])
+      inline def setBodyDebugColor(value: Double): Self = StObject.set(x, "bodyDebugColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugShowBody(value: Boolean): Self = StObject.set(x, "debugShowBody", value.asInstanceOf[js.Any])
+      inline def setDebugShowBody(value: Boolean): Self = StObject.set(x, "debugShowBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugShowStaticBody(value: Boolean): Self = StObject.set(x, "debugShowStaticBody", value.asInstanceOf[js.Any])
+      inline def setDebugShowStaticBody(value: Boolean): Self = StObject.set(x, "debugShowStaticBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugShowVelocity(value: Boolean): Self = StObject.set(x, "debugShowVelocity", value.asInstanceOf[js.Any])
+      inline def setDebugShowVelocity(value: Boolean): Self = StObject.set(x, "debugShowVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticBodyDebugColor(value: Double): Self = StObject.set(x, "staticBodyDebugColor", value.asInstanceOf[js.Any])
+      inline def setStaticBodyDebugColor(value: Double): Self = StObject.set(x, "staticBodyDebugColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityDebugColor(value: Double): Self = StObject.set(x, "velocityDebugColor", value.asInstanceOf[js.Any])
+      inline def setVelocityDebugColor(value: Double): Self = StObject.set(x, "velocityDebugColor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -477,26 +412,20 @@ object Arcade {
   }
   object ArcadeWorldTreeMinMax {
     
-    @scala.inline
-    def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): ArcadeWorldTreeMinMax = {
+    inline def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): ArcadeWorldTreeMinMax = {
       val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArcadeWorldTreeMinMax]
     }
     
-    @scala.inline
-    implicit class ArcadeWorldTreeMinMaxMutableBuilder[Self <: ArcadeWorldTreeMinMax] (val x: Self) extends AnyVal {
+    extension [Self <: ArcadeWorldTreeMinMax](x: Self) {
       
-      @scala.inline
-      def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+      inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+      inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+      inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+      inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -524,26 +453,20 @@ object Arcade {
   }
   object CheckCollisionObject {
     
-    @scala.inline
-    def apply(down: Boolean, left: Boolean, right: Boolean, up: Boolean): CheckCollisionObject = {
+    inline def apply(down: Boolean, left: Boolean, right: Boolean, up: Boolean): CheckCollisionObject = {
       val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckCollisionObject]
     }
     
-    @scala.inline
-    implicit class CheckCollisionObjectMutableBuilder[Self <: CheckCollisionObject] (val x: Self) extends AnyVal {
+    extension [Self <: CheckCollisionObject](x: Self) {
       
-      @scala.inline
-      def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+      inline def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+      inline def setUp(value: Boolean): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     }
   }
   
@@ -678,152 +601,104 @@ object Arcade {
   }
   object PhysicsGroupConfig {
     
-    @scala.inline
-    def apply(): PhysicsGroupConfig = {
+    inline def apply(): PhysicsGroupConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PhysicsGroupConfig]
     }
     
-    @scala.inline
-    implicit class PhysicsGroupConfigMutableBuilder[Self <: PhysicsGroupConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsGroupConfig](x: Self) {
       
-      @scala.inline
-      def setAccelerationX(value: Double): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
+      inline def setAccelerationX(value: Double): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccelerationXUndefined: Self = StObject.set(x, "accelerationX", js.undefined)
+      inline def setAccelerationXUndefined: Self = StObject.set(x, "accelerationX", js.undefined)
       
-      @scala.inline
-      def setAccelerationY(value: Double): Self = StObject.set(x, "accelerationY", value.asInstanceOf[js.Any])
+      inline def setAccelerationY(value: Double): Self = StObject.set(x, "accelerationY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccelerationYUndefined: Self = StObject.set(x, "accelerationY", js.undefined)
+      inline def setAccelerationYUndefined: Self = StObject.set(x, "accelerationY", js.undefined)
       
-      @scala.inline
-      def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
+      inline def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDragUndefined: Self = StObject.set(x, "allowDrag", js.undefined)
+      inline def setAllowDragUndefined: Self = StObject.set(x, "allowDrag", js.undefined)
       
-      @scala.inline
-      def setAllowGravity(value: Boolean): Self = StObject.set(x, "allowGravity", value.asInstanceOf[js.Any])
+      inline def setAllowGravity(value: Boolean): Self = StObject.set(x, "allowGravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowGravityUndefined: Self = StObject.set(x, "allowGravity", js.undefined)
+      inline def setAllowGravityUndefined: Self = StObject.set(x, "allowGravity", js.undefined)
       
-      @scala.inline
-      def setAllowRotation(value: Boolean): Self = StObject.set(x, "allowRotation", value.asInstanceOf[js.Any])
+      inline def setAllowRotation(value: Boolean): Self = StObject.set(x, "allowRotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowRotationUndefined: Self = StObject.set(x, "allowRotation", js.undefined)
+      inline def setAllowRotationUndefined: Self = StObject.set(x, "allowRotation", js.undefined)
       
-      @scala.inline
-      def setAngularAcceleration(value: Double): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
+      inline def setAngularAcceleration(value: Double): Self = StObject.set(x, "angularAcceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngularAccelerationUndefined: Self = StObject.set(x, "angularAcceleration", js.undefined)
+      inline def setAngularAccelerationUndefined: Self = StObject.set(x, "angularAcceleration", js.undefined)
       
-      @scala.inline
-      def setAngularDrag(value: Double): Self = StObject.set(x, "angularDrag", value.asInstanceOf[js.Any])
+      inline def setAngularDrag(value: Double): Self = StObject.set(x, "angularDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngularDragUndefined: Self = StObject.set(x, "angularDrag", js.undefined)
+      inline def setAngularDragUndefined: Self = StObject.set(x, "angularDrag", js.undefined)
       
-      @scala.inline
-      def setAngularVelocity(value: Double): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
+      inline def setAngularVelocity(value: Double): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngularVelocityUndefined: Self = StObject.set(x, "angularVelocity", js.undefined)
+      inline def setAngularVelocityUndefined: Self = StObject.set(x, "angularVelocity", js.undefined)
       
-      @scala.inline
-      def setBounceX(value: Double): Self = StObject.set(x, "bounceX", value.asInstanceOf[js.Any])
+      inline def setBounceX(value: Double): Self = StObject.set(x, "bounceX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceXUndefined: Self = StObject.set(x, "bounceX", js.undefined)
+      inline def setBounceXUndefined: Self = StObject.set(x, "bounceX", js.undefined)
       
-      @scala.inline
-      def setBounceY(value: Double): Self = StObject.set(x, "bounceY", value.asInstanceOf[js.Any])
+      inline def setBounceY(value: Double): Self = StObject.set(x, "bounceY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceYUndefined: Self = StObject.set(x, "bounceY", js.undefined)
+      inline def setBounceYUndefined: Self = StObject.set(x, "bounceY", js.undefined)
       
-      @scala.inline
-      def setCollideWorldBounds(value: Boolean): Self = StObject.set(x, "collideWorldBounds", value.asInstanceOf[js.Any])
+      inline def setCollideWorldBounds(value: Boolean): Self = StObject.set(x, "collideWorldBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollideWorldBoundsUndefined: Self = StObject.set(x, "collideWorldBounds", js.undefined)
+      inline def setCollideWorldBoundsUndefined: Self = StObject.set(x, "collideWorldBounds", js.undefined)
       
-      @scala.inline
-      def setCustomBoundsRectangle(value: Rectangle): Self = StObject.set(x, "customBoundsRectangle", value.asInstanceOf[js.Any])
+      inline def setCustomBoundsRectangle(value: Rectangle): Self = StObject.set(x, "customBoundsRectangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomBoundsRectangleUndefined: Self = StObject.set(x, "customBoundsRectangle", js.undefined)
+      inline def setCustomBoundsRectangleUndefined: Self = StObject.set(x, "customBoundsRectangle", js.undefined)
       
-      @scala.inline
-      def setDragX(value: Double): Self = StObject.set(x, "dragX", value.asInstanceOf[js.Any])
+      inline def setDragX(value: Double): Self = StObject.set(x, "dragX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragXUndefined: Self = StObject.set(x, "dragX", js.undefined)
+      inline def setDragXUndefined: Self = StObject.set(x, "dragX", js.undefined)
       
-      @scala.inline
-      def setDragY(value: Double): Self = StObject.set(x, "dragY", value.asInstanceOf[js.Any])
+      inline def setDragY(value: Double): Self = StObject.set(x, "dragY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragYUndefined: Self = StObject.set(x, "dragY", js.undefined)
+      inline def setDragYUndefined: Self = StObject.set(x, "dragY", js.undefined)
       
-      @scala.inline
-      def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+      inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+      inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      @scala.inline
-      def setFrictionX(value: Double): Self = StObject.set(x, "frictionX", value.asInstanceOf[js.Any])
+      inline def setFrictionX(value: Double): Self = StObject.set(x, "frictionX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrictionXUndefined: Self = StObject.set(x, "frictionX", js.undefined)
+      inline def setFrictionXUndefined: Self = StObject.set(x, "frictionX", js.undefined)
       
-      @scala.inline
-      def setFrictionY(value: Double): Self = StObject.set(x, "frictionY", value.asInstanceOf[js.Any])
+      inline def setFrictionY(value: Double): Self = StObject.set(x, "frictionY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrictionYUndefined: Self = StObject.set(x, "frictionY", js.undefined)
+      inline def setFrictionYUndefined: Self = StObject.set(x, "frictionY", js.undefined)
       
-      @scala.inline
-      def setGravityX(value: Double): Self = StObject.set(x, "gravityX", value.asInstanceOf[js.Any])
+      inline def setGravityX(value: Double): Self = StObject.set(x, "gravityX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravityXUndefined: Self = StObject.set(x, "gravityX", js.undefined)
+      inline def setGravityXUndefined: Self = StObject.set(x, "gravityX", js.undefined)
       
-      @scala.inline
-      def setGravityY(value: Double): Self = StObject.set(x, "gravityY", value.asInstanceOf[js.Any])
+      inline def setGravityY(value: Double): Self = StObject.set(x, "gravityY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGravityYUndefined: Self = StObject.set(x, "gravityY", js.undefined)
+      inline def setGravityYUndefined: Self = StObject.set(x, "gravityY", js.undefined)
       
-      @scala.inline
-      def setImmovable(value: Boolean): Self = StObject.set(x, "immovable", value.asInstanceOf[js.Any])
+      inline def setImmovable(value: Boolean): Self = StObject.set(x, "immovable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmovableUndefined: Self = StObject.set(x, "immovable", js.undefined)
+      inline def setImmovableUndefined: Self = StObject.set(x, "immovable", js.undefined)
       
-      @scala.inline
-      def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+      inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
+      inline def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
       
-      @scala.inline
-      def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
+      inline def setVelocityX(value: Double): Self = StObject.set(x, "velocityX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityXUndefined: Self = StObject.set(x, "velocityX", js.undefined)
+      inline def setVelocityXUndefined: Self = StObject.set(x, "velocityX", js.undefined)
       
-      @scala.inline
-      def setVelocityY(value: Double): Self = StObject.set(x, "velocityY", value.asInstanceOf[js.Any])
+      inline def setVelocityY(value: Double): Self = StObject.set(x, "velocityY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocityYUndefined: Self = StObject.set(x, "velocityY", js.undefined)
+      inline def setVelocityYUndefined: Self = StObject.set(x, "velocityY", js.undefined)
     }
   }
   
@@ -946,8 +821,7 @@ object Arcade {
   }
   object PhysicsGroupDefaults {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setAccelerationX: Double,
       setAccelerationY: Double,
       setAllowDrag: Boolean,
@@ -976,77 +850,53 @@ object Arcade {
       __obj.asInstanceOf[PhysicsGroupDefaults]
     }
     
-    @scala.inline
-    implicit class PhysicsGroupDefaultsMutableBuilder[Self <: PhysicsGroupDefaults] (val x: Self) extends AnyVal {
+    extension [Self <: PhysicsGroupDefaults](x: Self) {
       
-      @scala.inline
-      def setSetAccelerationX(value: Double): Self = StObject.set(x, "setAccelerationX", value.asInstanceOf[js.Any])
+      inline def setSetAccelerationX(value: Double): Self = StObject.set(x, "setAccelerationX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAccelerationY(value: Double): Self = StObject.set(x, "setAccelerationY", value.asInstanceOf[js.Any])
+      inline def setSetAccelerationY(value: Double): Self = StObject.set(x, "setAccelerationY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAllowDrag(value: Boolean): Self = StObject.set(x, "setAllowDrag", value.asInstanceOf[js.Any])
+      inline def setSetAllowDrag(value: Boolean): Self = StObject.set(x, "setAllowDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAllowGravity(value: Boolean): Self = StObject.set(x, "setAllowGravity", value.asInstanceOf[js.Any])
+      inline def setSetAllowGravity(value: Boolean): Self = StObject.set(x, "setAllowGravity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAllowRotation(value: Boolean): Self = StObject.set(x, "setAllowRotation", value.asInstanceOf[js.Any])
+      inline def setSetAllowRotation(value: Boolean): Self = StObject.set(x, "setAllowRotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAngularAcceleration(value: Double): Self = StObject.set(x, "setAngularAcceleration", value.asInstanceOf[js.Any])
+      inline def setSetAngularAcceleration(value: Double): Self = StObject.set(x, "setAngularAcceleration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAngularDrag(value: Double): Self = StObject.set(x, "setAngularDrag", value.asInstanceOf[js.Any])
+      inline def setSetAngularDrag(value: Double): Self = StObject.set(x, "setAngularDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetAngularVelocity(value: Double): Self = StObject.set(x, "setAngularVelocity", value.asInstanceOf[js.Any])
+      inline def setSetAngularVelocity(value: Double): Self = StObject.set(x, "setAngularVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetBounceX(value: Double): Self = StObject.set(x, "setBounceX", value.asInstanceOf[js.Any])
+      inline def setSetBounceX(value: Double): Self = StObject.set(x, "setBounceX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetBounceY(value: Double): Self = StObject.set(x, "setBounceY", value.asInstanceOf[js.Any])
+      inline def setSetBounceY(value: Double): Self = StObject.set(x, "setBounceY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetBoundsRectangle(value: Rectangle): Self = StObject.set(x, "setBoundsRectangle", value.asInstanceOf[js.Any])
+      inline def setSetBoundsRectangle(value: Rectangle): Self = StObject.set(x, "setBoundsRectangle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetCollideWorldBounds(value: Boolean): Self = StObject.set(x, "setCollideWorldBounds", value.asInstanceOf[js.Any])
+      inline def setSetCollideWorldBounds(value: Boolean): Self = StObject.set(x, "setCollideWorldBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDragX(value: Double): Self = StObject.set(x, "setDragX", value.asInstanceOf[js.Any])
+      inline def setSetDragX(value: Double): Self = StObject.set(x, "setDragX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetDragY(value: Double): Self = StObject.set(x, "setDragY", value.asInstanceOf[js.Any])
+      inline def setSetDragY(value: Double): Self = StObject.set(x, "setDragY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetEnable(value: Boolean): Self = StObject.set(x, "setEnable", value.asInstanceOf[js.Any])
+      inline def setSetEnable(value: Boolean): Self = StObject.set(x, "setEnable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetFrictionX(value: Double): Self = StObject.set(x, "setFrictionX", value.asInstanceOf[js.Any])
+      inline def setSetFrictionX(value: Double): Self = StObject.set(x, "setFrictionX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetFrictionY(value: Double): Self = StObject.set(x, "setFrictionY", value.asInstanceOf[js.Any])
+      inline def setSetFrictionY(value: Double): Self = StObject.set(x, "setFrictionY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetGravityX(value: Double): Self = StObject.set(x, "setGravityX", value.asInstanceOf[js.Any])
+      inline def setSetGravityX(value: Double): Self = StObject.set(x, "setGravityX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetGravityY(value: Double): Self = StObject.set(x, "setGravityY", value.asInstanceOf[js.Any])
+      inline def setSetGravityY(value: Double): Self = StObject.set(x, "setGravityY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetImmovable(value: Boolean): Self = StObject.set(x, "setImmovable", value.asInstanceOf[js.Any])
+      inline def setSetImmovable(value: Boolean): Self = StObject.set(x, "setImmovable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetMass(value: Double): Self = StObject.set(x, "setMass", value.asInstanceOf[js.Any])
+      inline def setSetMass(value: Double): Self = StObject.set(x, "setMass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetVelocityX(value: Double): Self = StObject.set(x, "setVelocityX", value.asInstanceOf[js.Any])
+      inline def setSetVelocityX(value: Double): Self = StObject.set(x, "setVelocityX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetVelocityY(value: Double): Self = StObject.set(x, "setVelocityY", value.asInstanceOf[js.Any])
+      inline def setSetVelocityY(value: Double): Self = StObject.set(x, "setVelocityY", value.asInstanceOf[js.Any])
     }
   }
   

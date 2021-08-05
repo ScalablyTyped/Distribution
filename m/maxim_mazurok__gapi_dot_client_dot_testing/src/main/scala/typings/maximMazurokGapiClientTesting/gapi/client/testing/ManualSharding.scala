@@ -14,22 +14,17 @@ trait ManualSharding extends StObject {
 }
 object ManualSharding {
   
-  @scala.inline
-  def apply(): ManualSharding = {
+  inline def apply(): ManualSharding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManualSharding]
   }
   
-  @scala.inline
-  implicit class ManualShardingMutableBuilder[Self <: ManualSharding] (val x: Self) extends AnyVal {
+  extension [Self <: ManualSharding](x: Self) {
     
-    @scala.inline
-    def setTestTargetsForShard(value: js.Array[TestTargetsForShard]): Self = StObject.set(x, "testTargetsForShard", value.asInstanceOf[js.Any])
+    inline def setTestTargetsForShard(value: js.Array[TestTargetsForShard]): Self = StObject.set(x, "testTargetsForShard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTargetsForShardUndefined: Self = StObject.set(x, "testTargetsForShard", js.undefined)
+    inline def setTestTargetsForShardUndefined: Self = StObject.set(x, "testTargetsForShard", js.undefined)
     
-    @scala.inline
-    def setTestTargetsForShardVarargs(value: TestTargetsForShard*): Self = StObject.set(x, "testTargetsForShard", js.Array(value :_*))
+    inline def setTestTargetsForShardVarargs(value: TestTargetsForShard*): Self = StObject.set(x, "testTargetsForShard", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait AwsElbLoadBalancerListenerDescription extends StObject {
 }
 object AwsElbLoadBalancerListenerDescription {
   
-  @scala.inline
-  def apply(): AwsElbLoadBalancerListenerDescription = {
+  inline def apply(): AwsElbLoadBalancerListenerDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElbLoadBalancerListenerDescription]
   }
   
-  @scala.inline
-  implicit class AwsElbLoadBalancerListenerDescriptionMutableBuilder[Self <: AwsElbLoadBalancerListenerDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElbLoadBalancerListenerDescription](x: Self) {
     
-    @scala.inline
-    def setListener(value: AwsElbLoadBalancerListener): Self = StObject.set(x, "Listener", value.asInstanceOf[js.Any])
+    inline def setListener(value: AwsElbLoadBalancerListener): Self = StObject.set(x, "Listener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerUndefined: Self = StObject.set(x, "Listener", js.undefined)
+    inline def setListenerUndefined: Self = StObject.set(x, "Listener", js.undefined)
     
-    @scala.inline
-    def setPolicyNames(value: StringList): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
+    inline def setPolicyNames(value: StringList): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
+    inline def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
     
-    @scala.inline
-    def setPolicyNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: NonEmptyString*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
   }
 }

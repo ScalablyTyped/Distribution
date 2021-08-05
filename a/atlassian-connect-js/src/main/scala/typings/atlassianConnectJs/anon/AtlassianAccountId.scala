@@ -10,16 +10,13 @@ trait AtlassianAccountId extends StObject {
 }
 object AtlassianAccountId {
   
-  @scala.inline
-  def apply(atlassianAccountId: String): AtlassianAccountId = {
+  inline def apply(atlassianAccountId: String): AtlassianAccountId = {
     val __obj = js.Dynamic.literal(atlassianAccountId = atlassianAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtlassianAccountId]
   }
   
-  @scala.inline
-  implicit class AtlassianAccountIdMutableBuilder[Self <: AtlassianAccountId] (val x: Self) extends AnyVal {
+  extension [Self <: AtlassianAccountId](x: Self) {
     
-    @scala.inline
-    def setAtlassianAccountId(value: String): Self = StObject.set(x, "atlassianAccountId", value.asInstanceOf[js.Any])
+    inline def setAtlassianAccountId(value: String): Self = StObject.set(x, "atlassianAccountId", value.asInstanceOf[js.Any])
   }
 }

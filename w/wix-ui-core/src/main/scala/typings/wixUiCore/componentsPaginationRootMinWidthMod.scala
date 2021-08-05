@@ -15,23 +15,15 @@ object componentsPaginationRootMinWidthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def measureAndSetRootMinWidth(compNode: HTMLElement, paginationMode: PaginationMode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def measureAndSetRootMinWidth(compNode: HTMLElement, paginationMode: PaginationMode, idPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def measureAndSetRootMinWidth(compNode: HTMLElement, paginationMode: PaginationMode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def measureAndSetRootMinWidth(compNode: HTMLElement, paginationMode: PaginationMode, idPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def measureAndSetRootMinWidth_compact(compNode: HTMLElement, paginationMode: compact): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def measureAndSetRootMinWidth_compact(compNode: HTMLElement, paginationMode: compact, idPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def measureAndSetRootMinWidth_compact(compNode: HTMLElement, paginationMode: compact): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def measureAndSetRootMinWidth_compact(compNode: HTMLElement, paginationMode: compact, idPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def measureAndSetRootMinWidth_input(compNode: HTMLElement, paginationMode: input): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def measureAndSetRootMinWidth_input(compNode: HTMLElement, paginationMode: input, idPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def measureAndSetRootMinWidth_input(compNode: HTMLElement, paginationMode: input): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def measureAndSetRootMinWidth_input(compNode: HTMLElement, paginationMode: input, idPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def measureAndSetRootMinWidth_pages(compNode: HTMLElement, paginationMode: pages): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def measureAndSetRootMinWidth_pages(compNode: HTMLElement, paginationMode: pages, idPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def measureAndSetRootMinWidth_pages(compNode: HTMLElement, paginationMode: pages): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def measureAndSetRootMinWidth_pages(compNode: HTMLElement, paginationMode: pages, idPrefix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("measureAndSetRootMinWidth")(compNode.asInstanceOf[js.Any], paginationMode.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

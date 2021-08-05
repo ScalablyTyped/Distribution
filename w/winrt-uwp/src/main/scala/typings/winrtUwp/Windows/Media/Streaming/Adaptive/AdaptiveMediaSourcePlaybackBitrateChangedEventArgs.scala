@@ -18,22 +18,17 @@ trait AdaptiveMediaSourcePlaybackBitrateChangedEventArgs extends StObject {
 }
 object AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
   
-  @scala.inline
-  def apply(audioOnly: Boolean, newValue: Double, oldValue: Double): AdaptiveMediaSourcePlaybackBitrateChangedEventArgs = {
+  inline def apply(audioOnly: Boolean, newValue: Double, oldValue: Double): AdaptiveMediaSourcePlaybackBitrateChangedEventArgs = {
     val __obj = js.Dynamic.literal(audioOnly = audioOnly.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdaptiveMediaSourcePlaybackBitrateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class AdaptiveMediaSourcePlaybackBitrateChangedEventArgsMutableBuilder[Self <: AdaptiveMediaSourcePlaybackBitrateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AdaptiveMediaSourcePlaybackBitrateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAudioOnly(value: Boolean): Self = StObject.set(x, "audioOnly", value.asInstanceOf[js.Any])
+    inline def setAudioOnly(value: Boolean): Self = StObject.set(x, "audioOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Double): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
   }
 }

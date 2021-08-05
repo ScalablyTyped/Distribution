@@ -18,19 +18,15 @@ trait PutVoiceConnectorTerminationRequest extends StObject {
 }
 object PutVoiceConnectorTerminationRequest {
   
-  @scala.inline
-  def apply(Termination: Termination, VoiceConnectorId: NonEmptyString): PutVoiceConnectorTerminationRequest = {
+  inline def apply(Termination: Termination, VoiceConnectorId: NonEmptyString): PutVoiceConnectorTerminationRequest = {
     val __obj = js.Dynamic.literal(Termination = Termination.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutVoiceConnectorTerminationRequest]
   }
   
-  @scala.inline
-  implicit class PutVoiceConnectorTerminationRequestMutableBuilder[Self <: PutVoiceConnectorTerminationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutVoiceConnectorTerminationRequest](x: Self) {
     
-    @scala.inline
-    def setTermination(value: Termination): Self = StObject.set(x, "Termination", value.asInstanceOf[js.Any])
+    inline def setTermination(value: Termination): Self = StObject.set(x, "Termination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

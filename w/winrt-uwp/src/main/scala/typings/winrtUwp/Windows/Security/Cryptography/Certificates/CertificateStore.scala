@@ -24,22 +24,17 @@ trait CertificateStore extends StObject {
 }
 object CertificateStore {
   
-  @scala.inline
-  def apply(add: Certificate => Unit, delete: Certificate => Unit, name: String): CertificateStore = {
+  inline def apply(add: Certificate => Unit, delete: Certificate => Unit, name: String): CertificateStore = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), delete = js.Any.fromFunction1(delete), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateStore]
   }
   
-  @scala.inline
-  implicit class CertificateStoreMutableBuilder[Self <: CertificateStore] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateStore](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Certificate => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: Certificate => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDelete(value: Certificate => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: Certificate => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -29,32 +29,24 @@ object linterMod {
   }
   object CallbackSolution {
     
-    @scala.inline
-    def apply(apply: () => js.Any, position: Range): CallbackSolution = {
+    inline def apply(apply: () => js.Any, position: Range): CallbackSolution = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction0(apply), position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallbackSolution]
     }
     
-    @scala.inline
-    implicit class CallbackSolutionMutableBuilder[Self <: CallbackSolution] (val x: Self) extends AnyVal {
+    extension [Self <: CallbackSolution](x: Self) {
       
-      @scala.inline
-      def setApply(value: () => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
+      inline def setApply(value: () => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPosition(value: Range): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Range): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -64,17 +56,14 @@ object linterMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(name: String): Config = {
+    inline def apply(name: String): Config = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,8 +87,7 @@ object linterMod {
   }
   object IndieDelegate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearMessages: () => Unit,
       dispose: () => Unit,
       getMessages: () => js.Array[Message],
@@ -113,32 +101,23 @@ object linterMod {
       __obj.asInstanceOf[IndieDelegate]
     }
     
-    @scala.inline
-    implicit class IndieDelegateMutableBuilder[Self <: IndieDelegate] (val x: Self) extends AnyVal {
+    extension [Self <: IndieDelegate](x: Self) {
       
-      @scala.inline
-      def setClearMessages(value: () => Unit): Self = StObject.set(x, "clearMessages", js.Any.fromFunction0(value))
+      inline def setClearMessages(value: () => Unit): Self = StObject.set(x, "clearMessages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMessages(value: () => js.Array[Message]): Self = StObject.set(x, "getMessages", js.Any.fromFunction0(value))
+      inline def setGetMessages(value: () => js.Array[Message]): Self = StObject.set(x, "getMessages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnDidDestroy(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDestroy", js.Any.fromFunction1(value))
+      inline def setOnDidDestroy(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDestroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDidUpdate(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidUpdate", js.Any.fromFunction1(value))
+      inline def setOnDidUpdate(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAllMessages(value: js.Array[Message] => Unit): Self = StObject.set(x, "setAllMessages", js.Any.fromFunction1(value))
+      inline def setSetAllMessages(value: js.Array[Message] => Unit): Self = StObject.set(x, "setAllMessages", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMessages(value: (String, js.Array[Message]) => Unit): Self = StObject.set(x, "setMessages", js.Any.fromFunction2(value))
+      inline def setSetMessages(value: (String, js.Array[Message]) => Unit): Self = StObject.set(x, "setMessages", js.Any.fromFunction2(value))
     }
   }
   
@@ -160,8 +139,7 @@ object linterMod {
   }
   object LinterProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       grammarScopes: js.Array[String],
       lint: TextEditor => LintResult | js.Promise[LintResult],
       lintsOnChange: Boolean,
@@ -172,26 +150,19 @@ object linterMod {
       __obj.asInstanceOf[LinterProvider]
     }
     
-    @scala.inline
-    implicit class LinterProviderMutableBuilder[Self <: LinterProvider] (val x: Self) extends AnyVal {
+    extension [Self <: LinterProvider](x: Self) {
       
-      @scala.inline
-      def setGrammarScopes(value: js.Array[String]): Self = StObject.set(x, "grammarScopes", value.asInstanceOf[js.Any])
+      inline def setGrammarScopes(value: js.Array[String]): Self = StObject.set(x, "grammarScopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrammarScopesVarargs(value: String*): Self = StObject.set(x, "grammarScopes", js.Array(value :_*))
+      inline def setGrammarScopesVarargs(value: String*): Self = StObject.set(x, "grammarScopes", js.Array(value :_*))
       
-      @scala.inline
-      def setLint(value: TextEditor => LintResult | js.Promise[LintResult]): Self = StObject.set(x, "lint", js.Any.fromFunction1(value))
+      inline def setLint(value: TextEditor => LintResult | js.Promise[LintResult]): Self = StObject.set(x, "lint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLintsOnChange(value: Boolean): Self = StObject.set(x, "lintsOnChange", value.asInstanceOf[js.Any])
+      inline def setLintsOnChange(value: Boolean): Self = StObject.set(x, "lintsOnChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: file | project): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: file | project): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,65 +200,46 @@ object linterMod {
   }
   object Message {
     
-    @scala.inline
-    def apply(excerpt: String, location: File, severity: error | warning | info): Message = {
+    inline def apply(excerpt: String, location: File, severity: error | warning | info): Message = {
       val __obj = js.Dynamic.literal(excerpt = excerpt.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String | (js.Function0[js.Promise[String] | String])): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String | (js.Function0[js.Promise[String] | String])): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionFunction0(value: () => js.Promise[String] | String): Self = StObject.set(x, "description", js.Any.fromFunction0(value))
+      inline def setDescriptionFunction0(value: () => js.Promise[String] | String): Self = StObject.set(x, "description", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExcerpt(value: String): Self = StObject.set(x, "excerpt", value.asInstanceOf[js.Any])
+      inline def setExcerpt(value: String): Self = StObject.set(x, "excerpt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setLinterName(value: String): Self = StObject.set(x, "linterName", value.asInstanceOf[js.Any])
+      inline def setLinterName(value: String): Self = StObject.set(x, "linterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinterNameUndefined: Self = StObject.set(x, "linterName", js.undefined)
+      inline def setLinterNameUndefined: Self = StObject.set(x, "linterName", js.undefined)
       
-      @scala.inline
-      def setLocation(value: File): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: File): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReference(value: Position): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+      inline def setReference(value: Position): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
+      inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
       
-      @scala.inline
-      def setSeverity(value: error | warning | info): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: error | warning | info): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutions(value: js.Array[ReplacementSolution | CallbackSolution]): Self = StObject.set(x, "solutions", value.asInstanceOf[js.Any])
+      inline def setSolutions(value: js.Array[ReplacementSolution | CallbackSolution]): Self = StObject.set(x, "solutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSolutionsUndefined: Self = StObject.set(x, "solutions", js.undefined)
+      inline def setSolutionsUndefined: Self = StObject.set(x, "solutions", js.undefined)
       
-      @scala.inline
-      def setSolutionsVarargs(value: (ReplacementSolution | CallbackSolution)*): Self = StObject.set(x, "solutions", js.Array(value :_*))
+      inline def setSolutionsVarargs(value: (ReplacementSolution | CallbackSolution)*): Self = StObject.set(x, "solutions", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -305,38 +257,28 @@ object linterMod {
   }
   object ReplacementSolution {
     
-    @scala.inline
-    def apply(position: Range, replaceWith: String): ReplacementSolution = {
+    inline def apply(position: Range, replaceWith: String): ReplacementSolution = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], replaceWith = replaceWith.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplacementSolution]
     }
     
-    @scala.inline
-    implicit class ReplacementSolutionMutableBuilder[Self <: ReplacementSolution] (val x: Self) extends AnyVal {
+    extension [Self <: ReplacementSolution](x: Self) {
       
-      @scala.inline
-      def setCurrentText(value: String): Self = StObject.set(x, "currentText", value.asInstanceOf[js.Any])
+      inline def setCurrentText(value: String): Self = StObject.set(x, "currentText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTextUndefined: Self = StObject.set(x, "currentText", js.undefined)
+      inline def setCurrentTextUndefined: Self = StObject.set(x, "currentText", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Range): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Range): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setReplaceWith(value: String): Self = StObject.set(x, "replaceWith", value.asInstanceOf[js.Any])
+      inline def setReplaceWith(value: String): Self = StObject.set(x, "replaceWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

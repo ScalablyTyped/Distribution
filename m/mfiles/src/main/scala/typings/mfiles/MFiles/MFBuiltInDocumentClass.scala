@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFBuiltInDocumentClass extends StObject
 object MFBuiltInDocumentClass {
   
-  @scala.inline
-  def OtherDocument: `1` = 1.asInstanceOf[`1`]
+  inline def OtherDocument: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def UnclassifiedDocument: `0` = 0.asInstanceOf[`0`]
+  inline def UnclassifiedDocument: `0` = 0.asInstanceOf[`0`]
 }

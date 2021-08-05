@@ -18,28 +18,21 @@ trait DescribeDirectoryConfigsResult extends StObject {
 }
 object DescribeDirectoryConfigsResult {
   
-  @scala.inline
-  def apply(): DescribeDirectoryConfigsResult = {
+  inline def apply(): DescribeDirectoryConfigsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDirectoryConfigsResult]
   }
   
-  @scala.inline
-  implicit class DescribeDirectoryConfigsResultMutableBuilder[Self <: DescribeDirectoryConfigsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDirectoryConfigsResult](x: Self) {
     
-    @scala.inline
-    def setDirectoryConfigs(value: DirectoryConfigList): Self = StObject.set(x, "DirectoryConfigs", value.asInstanceOf[js.Any])
+    inline def setDirectoryConfigs(value: DirectoryConfigList): Self = StObject.set(x, "DirectoryConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryConfigsUndefined: Self = StObject.set(x, "DirectoryConfigs", js.undefined)
+    inline def setDirectoryConfigsUndefined: Self = StObject.set(x, "DirectoryConfigs", js.undefined)
     
-    @scala.inline
-    def setDirectoryConfigsVarargs(value: DirectoryConfig*): Self = StObject.set(x, "DirectoryConfigs", js.Array(value :_*))
+    inline def setDirectoryConfigsVarargs(value: DirectoryConfig*): Self = StObject.set(x, "DirectoryConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -44,37 +44,27 @@ trait ChartAxesLoadOptions extends StObject {
 }
 object ChartAxesLoadOptions {
   
-  @scala.inline
-  def apply(): ChartAxesLoadOptions = {
+  inline def apply(): ChartAxesLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAxesLoadOptions]
   }
   
-  @scala.inline
-  implicit class ChartAxesLoadOptionsMutableBuilder[Self <: ChartAxesLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAxesLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCategoryAxis(value: ChartAxisLoadOptions): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
+    inline def setCategoryAxis(value: ChartAxisLoadOptions): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
+    inline def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
     
-    @scala.inline
-    def setSeriesAxis(value: ChartAxisLoadOptions): Self = StObject.set(x, "seriesAxis", value.asInstanceOf[js.Any])
+    inline def setSeriesAxis(value: ChartAxisLoadOptions): Self = StObject.set(x, "seriesAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesAxisUndefined: Self = StObject.set(x, "seriesAxis", js.undefined)
+    inline def setSeriesAxisUndefined: Self = StObject.set(x, "seriesAxis", js.undefined)
     
-    @scala.inline
-    def setValueAxis(value: ChartAxisLoadOptions): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
+    inline def setValueAxis(value: ChartAxisLoadOptions): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
+    inline def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
   }
 }

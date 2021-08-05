@@ -10,17 +10,14 @@ trait GetLaunchTemplateElasticGpuSpecification extends StObject {
 }
 object GetLaunchTemplateElasticGpuSpecification {
   
-  @scala.inline
-  def apply(`type`: String): GetLaunchTemplateElasticGpuSpecification = {
+  inline def apply(`type`: String): GetLaunchTemplateElasticGpuSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLaunchTemplateElasticGpuSpecification]
   }
   
-  @scala.inline
-  implicit class GetLaunchTemplateElasticGpuSpecificationMutableBuilder[Self <: GetLaunchTemplateElasticGpuSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchTemplateElasticGpuSpecification](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

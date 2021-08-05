@@ -13,16 +13,13 @@ trait DescribeCollectionRequest extends StObject {
 }
 object DescribeCollectionRequest {
   
-  @scala.inline
-  def apply(CollectionId: CollectionId): DescribeCollectionRequest = {
+  inline def apply(CollectionId: CollectionId): DescribeCollectionRequest = {
     val __obj = js.Dynamic.literal(CollectionId = CollectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCollectionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeCollectionRequestMutableBuilder[Self <: DescribeCollectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCollectionRequest](x: Self) {
     
-    @scala.inline
-    def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,27 +17,22 @@ trait PaymentGatewayAccountsInfo extends StObject {
 }
 object PaymentGatewayAccountsInfo {
   
-  @scala.inline
-  def apply(): PaymentGatewayAccountsInfo = {
+  inline def apply(): PaymentGatewayAccountsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentGatewayAccountsInfo]
   }
   
-  @scala.inline
-  implicit class PaymentGatewayAccountsInfoMutableBuilder[Self <: PaymentGatewayAccountsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentGatewayAccountsInfo](x: Self) {
     
-    @scala.inline
-    def setPaymentGatewayAccounts(
+    inline def setPaymentGatewayAccounts(
       value: js.Array[
           /* This object contains details about a payment gateway account. */ PaymentGatewayAccount
         ]
     ): Self = StObject.set(x, "paymentGatewayAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentGatewayAccountsUndefined: Self = StObject.set(x, "paymentGatewayAccounts", js.undefined)
+    inline def setPaymentGatewayAccountsUndefined: Self = StObject.set(x, "paymentGatewayAccounts", js.undefined)
     
-    @scala.inline
-    def setPaymentGatewayAccountsVarargs(
+    inline def setPaymentGatewayAccountsVarargs(
       value: (/* This object contains details about a payment gateway account. */ PaymentGatewayAccount)*
     ): Self = StObject.set(x, "paymentGatewayAccounts", js.Array(value :_*))
   }

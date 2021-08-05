@@ -64,8 +64,7 @@ trait SafariEvent extends StObject {
 }
 object SafariEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: SafariEventTarget,
@@ -82,37 +81,26 @@ object SafariEvent {
     __obj.asInstanceOf[SafariEvent]
   }
   
-  @scala.inline
-  implicit class SafariEventMutableBuilder[Self <: SafariEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SafariEvent](x: Self) {
     
-    @scala.inline
-    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTarget(value: SafariEventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: SafariEventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+    inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+    inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarget(value: SafariEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SafariEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -58,15 +58,13 @@ object mod {
     * Constructs a delaunay triangulation object given an array of points ([x, y] by default).
     */
   /* static member */
-  @scala.inline
-  def from(points: ArrayLike[ArrayLike[Double]]): Delaunator[ArrayLike[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[Delaunator[ArrayLike[Double]]]
+  inline def from(points: ArrayLike[ArrayLike[Double]]): Delaunator[ArrayLike[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[Delaunator[ArrayLike[Double]]]
   /**
     * Constructs a delaunay triangulation object given an array of custom points. Duplicate points are skipped.
     * getX and getY are optional functions for custom point formats. Duplicate points are skipped.
     */
   /* static member */
-  @scala.inline
-  def from[P](
+  inline def from[P](
     points: ArrayLike[P],
     getX: js.Function1[/* point */ P, Double],
     getY: js.Function1[/* point */ P, Double]
@@ -101,8 +99,7 @@ object mod {
   }
   object Delaunator {
     
-    @scala.inline
-    def apply[P](
+    inline def apply[P](
       coords: ArrayLike[Double] | Float64Array,
       halfedges: Int32Array,
       hull: Uint32Array,
@@ -112,20 +109,15 @@ object mod {
       __obj.asInstanceOf[Delaunator[P]]
     }
     
-    @scala.inline
-    implicit class DelaunatorMutableBuilder[Self <: Delaunator[?], P] (val x: Self & Delaunator[P]) extends AnyVal {
+    extension [Self <: Delaunator[?], P](x: Self & Delaunator[P]) {
       
-      @scala.inline
-      def setCoords(value: ArrayLike[Double] | Float64Array): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: ArrayLike[Double] | Float64Array): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHalfedges(value: Int32Array): Self = StObject.set(x, "halfedges", value.asInstanceOf[js.Any])
+      inline def setHalfedges(value: Int32Array): Self = StObject.set(x, "halfedges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHull(value: Uint32Array): Self = StObject.set(x, "hull", value.asInstanceOf[js.Any])
+      inline def setHull(value: Uint32Array): Self = StObject.set(x, "hull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriangles(value: Uint32Array): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
+      inline def setTriangles(value: Uint32Array): Self = StObject.set(x, "triangles", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,28 +23,21 @@ trait ListEndpointGroupsRequest extends StObject {
 }
 object ListEndpointGroupsRequest {
   
-  @scala.inline
-  def apply(ListenerArn: GenericString): ListEndpointGroupsRequest = {
+  inline def apply(ListenerArn: GenericString): ListEndpointGroupsRequest = {
     val __obj = js.Dynamic.literal(ListenerArn = ListenerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListEndpointGroupsRequest]
   }
   
-  @scala.inline
-  implicit class ListEndpointGroupsRequestMutableBuilder[Self <: ListEndpointGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListEndpointGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setListenerArn(value: GenericString): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
+    inline def setListenerArn(value: GenericString): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

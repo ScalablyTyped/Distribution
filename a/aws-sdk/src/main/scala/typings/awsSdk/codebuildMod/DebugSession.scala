@@ -18,25 +18,19 @@ trait DebugSession extends StObject {
 }
 object DebugSession {
   
-  @scala.inline
-  def apply(): DebugSession = {
+  inline def apply(): DebugSession = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugSession]
   }
   
-  @scala.inline
-  implicit class DebugSessionMutableBuilder[Self <: DebugSession] (val x: Self) extends AnyVal {
+  extension [Self <: DebugSession](x: Self) {
     
-    @scala.inline
-    def setSessionEnabled(value: WrapperBoolean): Self = StObject.set(x, "sessionEnabled", value.asInstanceOf[js.Any])
+    inline def setSessionEnabled(value: WrapperBoolean): Self = StObject.set(x, "sessionEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionEnabledUndefined: Self = StObject.set(x, "sessionEnabled", js.undefined)
+    inline def setSessionEnabledUndefined: Self = StObject.set(x, "sessionEnabled", js.undefined)
     
-    @scala.inline
-    def setSessionTarget(value: NonEmptyString): Self = StObject.set(x, "sessionTarget", value.asInstanceOf[js.Any])
+    inline def setSessionTarget(value: NonEmptyString): Self = StObject.set(x, "sessionTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTargetUndefined: Self = StObject.set(x, "sessionTarget", js.undefined)
+    inline def setSessionTargetUndefined: Self = StObject.set(x, "sessionTarget", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait SpreadsheetExcel extends StObject {
 }
 object SpreadsheetExcel {
   
-  @scala.inline
-  def apply(): SpreadsheetExcel = {
+  inline def apply(): SpreadsheetExcel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpreadsheetExcel]
   }
   
-  @scala.inline
-  implicit class SpreadsheetExcelMutableBuilder[Self <: SpreadsheetExcel] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetExcel](x: Self) {
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
+    inline def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
+    inline def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
     
-    @scala.inline
-    def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
+    inline def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
+    inline def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
   }
 }

@@ -32,8 +32,7 @@ trait XDataSeriesContainer
 }
 object XDataSeriesContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataSeries: SafeArray[XDataSeries],
     acquire: () => Unit,
     addDataSeries: XDataSeries => Unit,
@@ -47,22 +46,16 @@ object XDataSeriesContainer {
     __obj.asInstanceOf[XDataSeriesContainer]
   }
   
-  @scala.inline
-  implicit class XDataSeriesContainerMutableBuilder[Self <: XDataSeriesContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XDataSeriesContainer](x: Self) {
     
-    @scala.inline
-    def setAddDataSeries(value: XDataSeries => Unit): Self = StObject.set(x, "addDataSeries", js.Any.fromFunction1(value))
+    inline def setAddDataSeries(value: XDataSeries => Unit): Self = StObject.set(x, "addDataSeries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDataSeries(value: SafeArray[XDataSeries]): Self = StObject.set(x, "DataSeries", value.asInstanceOf[js.Any])
+    inline def setDataSeries(value: SafeArray[XDataSeries]): Self = StObject.set(x, "DataSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDataSeries(value: () => SafeArray[XDataSeries]): Self = StObject.set(x, "getDataSeries", js.Any.fromFunction0(value))
+    inline def setGetDataSeries(value: () => SafeArray[XDataSeries]): Self = StObject.set(x, "getDataSeries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveDataSeries(value: XDataSeries => Unit): Self = StObject.set(x, "removeDataSeries", js.Any.fromFunction1(value))
+    inline def setRemoveDataSeries(value: XDataSeries => Unit): Self = StObject.set(x, "removeDataSeries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDataSeries(value: SeqEquiv[XDataSeries] => Unit): Self = StObject.set(x, "setDataSeries", js.Any.fromFunction1(value))
+    inline def setSetDataSeries(value: SeqEquiv[XDataSeries] => Unit): Self = StObject.set(x, "setDataSeries", js.Any.fromFunction1(value))
   }
 }

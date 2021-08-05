@@ -35,30 +35,21 @@ object mod {
   @js.native
   val AuthMode: Record[String, AuthModeType] = js.native
   
-  @scala.inline
-  def addMethods[TBase /* <: js.Object */, TMethods /* <: Methods[TBase] */](base: TBase): AddedMethods[TBase, TMethods] = ^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(base.asInstanceOf[js.Any]).asInstanceOf[AddedMethods[TBase, TMethods]]
-  @scala.inline
-  def addMethods[TBase /* <: js.Object */, TMethods /* <: Methods[TBase] */](base: TBase, methods: TMethods): AddedMethods[TBase, TMethods] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(base.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[AddedMethods[TBase, TMethods]]
+  inline def addMethods[TBase /* <: js.Object */, TMethods /* <: Methods[TBase] */](base: TBase): AddedMethods[TBase, TMethods] = ^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(base.asInstanceOf[js.Any]).asInstanceOf[AddedMethods[TBase, TMethods]]
+  inline def addMethods[TBase /* <: js.Object */, TMethods /* <: Methods[TBase] */](base: TBase, methods: TMethods): AddedMethods[TBase, TMethods] = (^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(base.asInstanceOf[js.Any], methods.asInstanceOf[js.Any])).asInstanceOf[AddedMethods[TBase, TMethods]]
   
-  @scala.inline
-  def createAuth(authMode: AuthModeType, appId: String, apiKey: String): Auth = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuth")(authMode.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[Auth]
+  inline def createAuth(authMode: AuthModeType, appId: String, apiKey: String): Auth = (^.asInstanceOf[js.Dynamic].applyDynamic("createAuth")(authMode.asInstanceOf[js.Any], appId.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[Auth]
   
-  @scala.inline
-  def createRetryablePromise[TResponse](callback: js.Function1[/* retry */ js.Function0[js.Promise[TResponse]], js.Promise[TResponse]]): js.Promise[TResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRetryablePromise")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TResponse]]
+  inline def createRetryablePromise[TResponse](callback: js.Function1[/* retry */ js.Function0[js.Promise[TResponse]], js.Promise[TResponse]]): js.Promise[TResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRetryablePromise")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TResponse]]
   
-  @scala.inline
-  def createWaitablePromise[TResponse](promise: js.Promise[TResponse]): WaitablePromise[TResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWaitablePromise")(promise.asInstanceOf[js.Any]).asInstanceOf[WaitablePromise[TResponse]]
-  @scala.inline
-  def createWaitablePromise[TResponse](promise: js.Promise[TResponse], wait: Wait[TResponse]): WaitablePromise[TResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWaitablePromise")(promise.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[WaitablePromise[TResponse]]
+  inline def createWaitablePromise[TResponse](promise: js.Promise[TResponse]): WaitablePromise[TResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWaitablePromise")(promise.asInstanceOf[js.Any]).asInstanceOf[WaitablePromise[TResponse]]
+  inline def createWaitablePromise[TResponse](promise: js.Promise[TResponse], wait: Wait[TResponse]): WaitablePromise[TResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWaitablePromise")(promise.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[WaitablePromise[TResponse]]
   
-  @scala.inline
-  def destroy(base: Transporter): js.Function0[ReadonlyPromisevoid] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadonlyPromisevoid]]
+  inline def destroy(base: Transporter): js.Function0[ReadonlyPromisevoid] = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function0[ReadonlyPromisevoid]]
   
-  @scala.inline
-  def encode(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def shuffle[TData](array: js.Array[TData]): js.Array[TData] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[TData]]
+  inline def shuffle[TData](array: js.Array[TData]): js.Array[TData] = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[TData]]
   
   @JSImport("@algolia/client-common", "version")
   @js.native
@@ -82,20 +73,16 @@ object mod {
   }
   object Auth {
     
-    @scala.inline
-    def apply(headers: () => Record[String, String], queryParameters: () => Record[String, String]): Auth = {
+    inline def apply(headers: () => Record[String, String], queryParameters: () => Record[String, String]): Auth = {
       val __obj = js.Dynamic.literal(headers = js.Any.fromFunction0(headers), queryParameters = js.Any.fromFunction0(queryParameters))
       __obj.asInstanceOf[Auth]
     }
     
-    @scala.inline
-    implicit class AuthMutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
+    extension [Self <: Auth](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: () => Record[String, String]): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
+      inline def setHeaders(value: () => Record[String, String]): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setQueryParameters(value: () => Record[String, String]): Self = StObject.set(x, "queryParameters", js.Any.fromFunction0(value))
+      inline def setQueryParameters(value: () => Record[String, String]): Self = StObject.set(x, "queryParameters", js.Any.fromFunction0(value))
     }
   }
   
@@ -106,11 +93,9 @@ object mod {
   trait AuthModeType extends StObject
   object AuthModeType {
     
-    @scala.inline
-    def `0`: typings.algoliaClientCommon.algoliaClientCommonNumbers.`0` = 0.asInstanceOf[typings.algoliaClientCommon.algoliaClientCommonNumbers.`0`]
+    inline def `0`: typings.algoliaClientCommon.algoliaClientCommonNumbers.`0` = 0.asInstanceOf[typings.algoliaClientCommon.algoliaClientCommonNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.algoliaClientCommon.algoliaClientCommonNumbers.`1` = 1.asInstanceOf[typings.algoliaClientCommon.algoliaClientCommonNumbers.`1`]
+    inline def `1`: typings.algoliaClientCommon.algoliaClientCommonNumbers.`1` = 1.asInstanceOf[typings.algoliaClientCommon.algoliaClientCommonNumbers.`1`]
   }
   
   type ClientTransporterOptions = (Pick[

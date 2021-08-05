@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.LineNumbering")
 @js.native
-class LineNumbering protected ()
+/* private */ class LineNumbering ()
   extends StObject
      with typings.activexWord.Word.LineNumbering {
   
@@ -35,7 +35,7 @@ class LineNumbering protected ()
   /* CompleteClass */
   var StartingNumber: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.LineNumbering_typekey")
   var WordDotLineNumbering_typekey: typings.activexWord.Word.LineNumbering = js.native
 }

@@ -22,28 +22,21 @@ trait SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult extends 
 }
 object SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResultMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsGroupedResult](x: Self) {
     
-    @scala.inline
-    def setBoundingPoly(value: SchemaGoogleCloudVisionV1p2beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: SchemaGoogleCloudVisionV1p2beta1BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

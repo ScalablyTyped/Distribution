@@ -30,13 +30,12 @@ trait CaptionLabel extends StObject {
   
   var Separator: WdSeparatorType
   
-  @JSName("Word.CaptionLabel_typekey")
+  /* private */ @JSName("Word.CaptionLabel_typekey")
   var WordDotCaptionLabel_typekey: CaptionLabel
 }
 object CaptionLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BuiltIn: Boolean,
     ChapterStyleLevel: Double,
@@ -56,46 +55,32 @@ object CaptionLabel {
     __obj.asInstanceOf[CaptionLabel]
   }
   
-  @scala.inline
-  implicit class CaptionLabelMutableBuilder[Self <: CaptionLabel] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionLabel](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuiltIn(value: Boolean): Self = StObject.set(x, "BuiltIn", value.asInstanceOf[js.Any])
+    inline def setBuiltIn(value: Boolean): Self = StObject.set(x, "BuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChapterStyleLevel(value: Double): Self = StObject.set(x, "ChapterStyleLevel", value.asInstanceOf[js.Any])
+    inline def setChapterStyleLevel(value: Double): Self = StObject.set(x, "ChapterStyleLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setID(value: WdCaptionLabelID): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: WdCaptionLabelID): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeChapterNumber(value: Boolean): Self = StObject.set(x, "IncludeChapterNumber", value.asInstanceOf[js.Any])
+    inline def setIncludeChapterNumber(value: Boolean): Self = StObject.set(x, "IncludeChapterNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberStyle(value: WdCaptionNumberStyle): Self = StObject.set(x, "NumberStyle", value.asInstanceOf[js.Any])
+    inline def setNumberStyle(value: WdCaptionNumberStyle): Self = StObject.set(x, "NumberStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: WdCaptionPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: WdCaptionPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparator(value: WdSeparatorType): Self = StObject.set(x, "Separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: WdSeparatorType): Self = StObject.set(x, "Separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotCaptionLabel_typekey(value: CaptionLabel): Self = StObject.set(x, "Word.CaptionLabel_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotCaptionLabel_typekey(value: CaptionLabel): Self = StObject.set(x, "Word.CaptionLabel_typekey", value.asInstanceOf[js.Any])
   }
 }

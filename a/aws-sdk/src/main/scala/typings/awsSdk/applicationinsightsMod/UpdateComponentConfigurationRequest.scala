@@ -33,37 +33,27 @@ trait UpdateComponentConfigurationRequest extends StObject {
 }
 object UpdateComponentConfigurationRequest {
   
-  @scala.inline
-  def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName): UpdateComponentConfigurationRequest = {
+  inline def apply(ComponentName: ComponentName, ResourceGroupName: ResourceGroupName): UpdateComponentConfigurationRequest = {
     val __obj = js.Dynamic.literal(ComponentName = ComponentName.asInstanceOf[js.Any], ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateComponentConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateComponentConfigurationRequestMutableBuilder[Self <: UpdateComponentConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateComponentConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setComponentConfiguration(value: ComponentConfiguration): Self = StObject.set(x, "ComponentConfiguration", value.asInstanceOf[js.Any])
+    inline def setComponentConfiguration(value: ComponentConfiguration): Self = StObject.set(x, "ComponentConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentConfigurationUndefined: Self = StObject.set(x, "ComponentConfiguration", js.undefined)
+    inline def setComponentConfigurationUndefined: Self = StObject.set(x, "ComponentConfiguration", js.undefined)
     
-    @scala.inline
-    def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
+    inline def setComponentName(value: ComponentName): Self = StObject.set(x, "ComponentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitor(value: Monitor): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
+    inline def setMonitor(value: Monitor): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorUndefined: Self = StObject.set(x, "Monitor", js.undefined)
+    inline def setMonitorUndefined: Self = StObject.set(x, "Monitor", js.undefined)
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
   }
 }

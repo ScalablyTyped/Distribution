@@ -11,6 +11,5 @@ object mergerinoBooleans {
   sealed trait `false`
     extends StObject
        with _Falsy
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

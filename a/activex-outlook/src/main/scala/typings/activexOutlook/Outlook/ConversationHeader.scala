@@ -18,7 +18,7 @@ trait ConversationHeader extends StObject {
   
   def GetItems(): SimpleItems
   
-  @JSName("Outlook.ConversationHeader_typekey")
+  /* private */ @JSName("Outlook.ConversationHeader_typekey")
   var OutlookDotConversationHeader_typekey: ConversationHeader
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait ConversationHeader extends StObject {
 }
 object ConversationHeader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     ConversationID: String,
@@ -44,34 +43,24 @@ object ConversationHeader {
     __obj.asInstanceOf[ConversationHeader]
   }
   
-  @scala.inline
-  implicit class ConversationHeaderMutableBuilder[Self <: ConversationHeader] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationHeader](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationID(value: String): Self = StObject.set(x, "ConversationID", value.asInstanceOf[js.Any])
+    inline def setConversationID(value: String): Self = StObject.set(x, "ConversationID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationTopic(value: String): Self = StObject.set(x, "ConversationTopic", value.asInstanceOf[js.Any])
+    inline def setConversationTopic(value: String): Self = StObject.set(x, "ConversationTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConversation(value: () => Conversation): Self = StObject.set(x, "GetConversation", js.Any.fromFunction0(value))
+    inline def setGetConversation(value: () => Conversation): Self = StObject.set(x, "GetConversation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItems(value: () => SimpleItems): Self = StObject.set(x, "GetItems", js.Any.fromFunction0(value))
+    inline def setGetItems(value: () => SimpleItems): Self = StObject.set(x, "GetItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOutlookDotConversationHeader_typekey(value: ConversationHeader): Self = StObject.set(x, "Outlook.ConversationHeader_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotConversationHeader_typekey(value: ConversationHeader): Self = StObject.set(x, "Outlook.ConversationHeader_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

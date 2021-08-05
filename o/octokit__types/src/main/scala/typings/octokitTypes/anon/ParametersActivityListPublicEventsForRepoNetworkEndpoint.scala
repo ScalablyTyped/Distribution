@@ -17,8 +17,7 @@ trait ParametersActivityListPublicEventsForRepoNetworkEndpoint extends StObject 
 }
 object ParametersActivityListPublicEventsForRepoNetworkEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListPublicEventsForRepoNetworkEndpoint,
     request: ActivityListPublicEventsForRepoNetworkRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActivityListPublicEventsForRepoNetworkEndpoint {
     __obj.asInstanceOf[ParametersActivityListPublicEventsForRepoNetworkEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListPublicEventsForRepoNetworkEndpointMutableBuilder[Self <: ParametersActivityListPublicEventsForRepoNetworkEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListPublicEventsForRepoNetworkEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListPublicEventsForRepoNetworkEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListPublicEventsForRepoNetworkEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityListPublicEventsForRepoNetworkRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityListPublicEventsForRepoNetworkRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -24,31 +24,23 @@ trait HotKeysOverrideProps
 }
 object HotKeysOverrideProps {
   
-  @scala.inline
-  def apply(): HotKeysOverrideProps = {
+  inline def apply(): HotKeysOverrideProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HotKeysOverrideProps]
   }
   
-  @scala.inline
-  implicit class HotKeysOverridePropsMutableBuilder[Self <: HotKeysOverrideProps] (val x: Self) extends AnyVal {
+  extension [Self <: HotKeysOverrideProps](x: Self) {
     
-    @scala.inline
-    def setExcept(value: ListOfKeys): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+    inline def setExcept(value: ListOfKeys): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
+    inline def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
     
-    @scala.inline
-    def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
+    inline def setExceptVarargs(value: String*): Self = StObject.set(x, "except", js.Array(value :_*))
     
-    @scala.inline
-    def setOnly(value: ListOfKeys): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+    inline def setOnly(value: ListOfKeys): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+    inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
     
-    @scala.inline
-    def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
+    inline def setOnlyVarargs(value: String*): Self = StObject.set(x, "only", js.Array(value :_*))
   }
 }

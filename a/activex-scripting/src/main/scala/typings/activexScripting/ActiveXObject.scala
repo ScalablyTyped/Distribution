@@ -18,16 +18,13 @@ trait ActiveXObject extends StObject {
 }
 object ActiveXObject {
   
-  @scala.inline
-  def apply(set: (Dictionary[js.Any, js.Any], Item, js.Array[js.Any], js.Any) => Unit): ActiveXObject = {
+  inline def apply(set: (Dictionary[js.Any, js.Any], Item, js.Array[js.Any], js.Any) => Unit): ActiveXObject = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction4(set))
     __obj.asInstanceOf[ActiveXObject]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectMutableBuilder[Self <: ActiveXObject] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObject](x: Self) {
     
-    @scala.inline
-    def setSet(value: (Dictionary[js.Any, js.Any], Item, js.Array[js.Any], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+    inline def setSet(value: (Dictionary[js.Any, js.Any], Item, js.Array[js.Any], js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
   }
 }

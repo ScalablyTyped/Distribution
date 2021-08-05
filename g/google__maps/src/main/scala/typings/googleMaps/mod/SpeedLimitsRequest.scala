@@ -29,22 +29,17 @@ trait SpeedLimitsRequest extends StObject {
 }
 object SpeedLimitsRequest {
   
-  @scala.inline
-  def apply(placeId: String): SpeedLimitsRequest = {
+  inline def apply(placeId: String): SpeedLimitsRequest = {
     val __obj = js.Dynamic.literal(placeId = placeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeedLimitsRequest]
   }
   
-  @scala.inline
-  implicit class SpeedLimitsRequestMutableBuilder[Self <: SpeedLimitsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SpeedLimitsRequest](x: Self) {
     
-    @scala.inline
-    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+    inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnits(value: SpeedLimitUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: SpeedLimitUnit): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

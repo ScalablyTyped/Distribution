@@ -26,67 +26,47 @@ trait SortableOption extends StObject {
 }
 object SortableOption {
   
-  @scala.inline
-  def apply(): SortableOption = {
+  inline def apply(): SortableOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SortableOption]
   }
   
-  @scala.inline
-  implicit class SortableOptionMutableBuilder[Self <: SortableOption] (val x: Self) extends AnyVal {
+  extension [Self <: SortableOption](x: Self) {
     
-    @scala.inline
-    def setDragCssClass(value: String): Self = StObject.set(x, "dragCssClass", value.asInstanceOf[js.Any])
+    inline def setDragCssClass(value: String): Self = StObject.set(x, "dragCssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragCssClassUndefined: Self = StObject.set(x, "dragCssClass", js.undefined)
+    inline def setDragCssClassUndefined: Self = StObject.set(x, "dragCssClass", js.undefined)
     
-    @scala.inline
-    def setFinish(value: /* e */ js.UndefOr[SortEvent] => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
+    inline def setFinish(value: /* e */ js.UndefOr[SortEvent] => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
+    inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
     
-    @scala.inline
-    def setMouseButton(value: String): Self = StObject.set(x, "mouseButton", value.asInstanceOf[js.Any])
+    inline def setMouseButton(value: String): Self = StObject.set(x, "mouseButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseButtonUndefined: Self = StObject.set(x, "mouseButton", js.undefined)
+    inline def setMouseButtonUndefined: Self = StObject.set(x, "mouseButton", js.undefined)
     
-    @scala.inline
-    def setOrder(value: /* e */ js.UndefOr[SortEvent] => Unit): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
+    inline def setOrder(value: /* e */ js.UndefOr[SortEvent] => Unit): Self = StObject.set(x, "order", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSortingClass(value: String): Self = StObject.set(x, "sortingClass", value.asInstanceOf[js.Any])
+    inline def setSortingClass(value: String): Self = StObject.set(x, "sortingClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortingClassUndefined: Self = StObject.set(x, "sortingClass", js.undefined)
+    inline def setSortingClassUndefined: Self = StObject.set(x, "sortingClass", js.undefined)
     
-    @scala.inline
-    def setStart(value: /* e */ js.UndefOr[SortEvent] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* e */ js.UndefOr[SortEvent] => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

@@ -25,61 +25,43 @@ trait RoomOptions extends StObject {
 }
 object RoomOptions {
   
-  @scala.inline
-  def apply(): RoomOptions = {
+  inline def apply(): RoomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoomOptions]
   }
   
-  @scala.inline
-  implicit class RoomOptionsMutableBuilder[Self <: RoomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RoomOptions](x: Self) {
     
-    @scala.inline
-    def setAudioBandwidth(value: Double): Self = StObject.set(x, "audioBandwidth", value.asInstanceOf[js.Any])
+    inline def setAudioBandwidth(value: Double): Self = StObject.set(x, "audioBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioBandwidthUndefined: Self = StObject.set(x, "audioBandwidth", js.undefined)
+    inline def setAudioBandwidthUndefined: Self = StObject.set(x, "audioBandwidth", js.undefined)
     
-    @scala.inline
-    def setAudioCodec(value: String): Self = StObject.set(x, "audioCodec", value.asInstanceOf[js.Any])
+    inline def setAudioCodec(value: String): Self = StObject.set(x, "audioCodec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioCodecUndefined: Self = StObject.set(x, "audioCodec", js.undefined)
+    inline def setAudioCodecUndefined: Self = StObject.set(x, "audioCodec", js.undefined)
     
-    @scala.inline
-    def setAudioReceiveEnabled(value: Boolean): Self = StObject.set(x, "audioReceiveEnabled", value.asInstanceOf[js.Any])
+    inline def setAudioReceiveEnabled(value: Boolean): Self = StObject.set(x, "audioReceiveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioReceiveEnabledUndefined: Self = StObject.set(x, "audioReceiveEnabled", js.undefined)
+    inline def setAudioReceiveEnabledUndefined: Self = StObject.set(x, "audioReceiveEnabled", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setStream(value: MediaStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: MediaStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
-    @scala.inline
-    def setVideoBandwidth(value: Double): Self = StObject.set(x, "videoBandwidth", value.asInstanceOf[js.Any])
+    inline def setVideoBandwidth(value: Double): Self = StObject.set(x, "videoBandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoBandwidthUndefined: Self = StObject.set(x, "videoBandwidth", js.undefined)
+    inline def setVideoBandwidthUndefined: Self = StObject.set(x, "videoBandwidth", js.undefined)
     
-    @scala.inline
-    def setVideoCodec(value: String): Self = StObject.set(x, "videoCodec", value.asInstanceOf[js.Any])
+    inline def setVideoCodec(value: String): Self = StObject.set(x, "videoCodec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCodecUndefined: Self = StObject.set(x, "videoCodec", js.undefined)
+    inline def setVideoCodecUndefined: Self = StObject.set(x, "videoCodec", js.undefined)
     
-    @scala.inline
-    def setVideoReceiveEnabled(value: Boolean): Self = StObject.set(x, "videoReceiveEnabled", value.asInstanceOf[js.Any])
+    inline def setVideoReceiveEnabled(value: Boolean): Self = StObject.set(x, "videoReceiveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoReceiveEnabledUndefined: Self = StObject.set(x, "videoReceiveEnabled", js.undefined)
+    inline def setVideoReceiveEnabledUndefined: Self = StObject.set(x, "videoReceiveEnabled", js.undefined)
   }
 }

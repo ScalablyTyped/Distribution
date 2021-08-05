@@ -22,14 +22,12 @@ object AlarmApplicationManager {
     * @return Indicates whether the user has granted permission to set alarms.
     */
   /* static member */
-  @scala.inline
-  def getAccessStatus(): typings.winrtUwp.Windows.ApplicationModel.Background.AlarmAccessStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessStatus")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Background.AlarmAccessStatus]
+  inline def getAccessStatus(): typings.winrtUwp.Windows.ApplicationModel.Background.AlarmAccessStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessStatus")().asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Background.AlarmAccessStatus]
   
   /**
     * Requests permission from the user to set alarms.
     * @return This method returns an AlarmAccessStatus value when it completes.
     */
   /* static member */
-  @scala.inline
-  def requestAccessAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Background.AlarmAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Background.AlarmAccessStatus]]
+  inline def requestAccessAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Background.AlarmAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Background.AlarmAccessStatus]]
 }

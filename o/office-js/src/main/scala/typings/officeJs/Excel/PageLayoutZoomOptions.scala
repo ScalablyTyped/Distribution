@@ -38,31 +38,23 @@ trait PageLayoutZoomOptions extends StObject {
 }
 object PageLayoutZoomOptions {
   
-  @scala.inline
-  def apply(): PageLayoutZoomOptions = {
+  inline def apply(): PageLayoutZoomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageLayoutZoomOptions]
   }
   
-  @scala.inline
-  implicit class PageLayoutZoomOptionsMutableBuilder[Self <: PageLayoutZoomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageLayoutZoomOptions](x: Self) {
     
-    @scala.inline
-    def setHorizontalFitToPages(value: Double): Self = StObject.set(x, "horizontalFitToPages", value.asInstanceOf[js.Any])
+    inline def setHorizontalFitToPages(value: Double): Self = StObject.set(x, "horizontalFitToPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalFitToPagesUndefined: Self = StObject.set(x, "horizontalFitToPages", js.undefined)
+    inline def setHorizontalFitToPagesUndefined: Self = StObject.set(x, "horizontalFitToPages", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setVerticalFitToPages(value: Double): Self = StObject.set(x, "verticalFitToPages", value.asInstanceOf[js.Any])
+    inline def setVerticalFitToPages(value: Double): Self = StObject.set(x, "verticalFitToPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalFitToPagesUndefined: Self = StObject.set(x, "verticalFitToPages", js.undefined)
+    inline def setVerticalFitToPagesUndefined: Self = StObject.set(x, "verticalFitToPages", js.undefined)
   }
 }

@@ -19,19 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object OperationOutcome {
   
-  @scala.inline
-  def apply(issue: js.Array[OperationOutcomeIssue]): OperationOutcome = {
+  inline def apply(issue: js.Array[OperationOutcomeIssue]): OperationOutcome = {
     val __obj = js.Dynamic.literal(issue = issue.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationOutcome]
   }
   
-  @scala.inline
-  implicit class OperationOutcomeMutableBuilder[Self <: OperationOutcome] (val x: Self) extends AnyVal {
+  extension [Self <: OperationOutcome](x: Self) {
     
-    @scala.inline
-    def setIssue(value: js.Array[OperationOutcomeIssue]): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    inline def setIssue(value: js.Array[OperationOutcomeIssue]): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueVarargs(value: OperationOutcomeIssue*): Self = StObject.set(x, "issue", js.Array(value :_*))
+    inline def setIssueVarargs(value: OperationOutcomeIssue*): Self = StObject.set(x, "issue", js.Array(value :_*))
   }
 }

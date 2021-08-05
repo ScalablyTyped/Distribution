@@ -17,8 +17,7 @@ trait XActionListener
 }
 object XActionListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     actionPerformed: ActionEvent => Unit,
     disposing: EventObject => Unit,
@@ -29,10 +28,8 @@ object XActionListener {
     __obj.asInstanceOf[XActionListener]
   }
   
-  @scala.inline
-  implicit class XActionListenerMutableBuilder[Self <: XActionListener] (val x: Self) extends AnyVal {
+  extension [Self <: XActionListener](x: Self) {
     
-    @scala.inline
-    def setActionPerformed(value: ActionEvent => Unit): Self = StObject.set(x, "actionPerformed", js.Any.fromFunction1(value))
+    inline def setActionPerformed(value: ActionEvent => Unit): Self = StObject.set(x, "actionPerformed", js.Any.fromFunction1(value))
   }
 }

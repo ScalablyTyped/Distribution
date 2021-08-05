@@ -104,10 +104,10 @@ object stylableWebpackPluginMod {
     
     def overrideOptionsWithLocalConfig(context: String): Unit = js.native
     
-    var processStylableModuleAssets: js.Any = js.native
+    /* private */ var processStylableModuleAssets: js.Any = js.native
     
     var stylable: Stylable = js.native
     
-    var userOptions: js.Any = js.native
+    /* private */ var userOptions: js.Any = js.native
   }
 }

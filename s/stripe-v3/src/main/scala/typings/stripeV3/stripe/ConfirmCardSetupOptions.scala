@@ -15,19 +15,15 @@ trait ConfirmCardSetupOptions extends StObject {
 }
 object ConfirmCardSetupOptions {
   
-  @scala.inline
-  def apply(): ConfirmCardSetupOptions = {
+  inline def apply(): ConfirmCardSetupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmCardSetupOptions]
   }
   
-  @scala.inline
-  implicit class ConfirmCardSetupOptionsMutableBuilder[Self <: ConfirmCardSetupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmCardSetupOptions](x: Self) {
     
-    @scala.inline
-    def setHandleActions(value: Boolean): Self = StObject.set(x, "handleActions", value.asInstanceOf[js.Any])
+    inline def setHandleActions(value: Boolean): Self = StObject.set(x, "handleActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleActionsUndefined: Self = StObject.set(x, "handleActions", js.undefined)
+    inline def setHandleActionsUndefined: Self = StObject.set(x, "handleActions", js.undefined)
   }
 }

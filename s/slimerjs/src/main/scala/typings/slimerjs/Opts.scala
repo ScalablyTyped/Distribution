@@ -14,22 +14,17 @@ trait Opts extends StObject {
 }
 object Opts {
   
-  @scala.inline
-  def apply(charset: String, mode: String, nobuffer: Boolean): Opts = {
+  inline def apply(charset: String, mode: String, nobuffer: Boolean): Opts = {
     val __obj = js.Dynamic.literal(charset = charset.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], nobuffer = nobuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Opts]
   }
   
-  @scala.inline
-  implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+  extension [Self <: Opts](x: Self) {
     
-    @scala.inline
-    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNobuffer(value: Boolean): Self = StObject.set(x, "nobuffer", value.asInstanceOf[js.Any])
+    inline def setNobuffer(value: Boolean): Self = StObject.set(x, "nobuffer", value.asInstanceOf[js.Any])
   }
 }

@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OlkTimeControl")
 @js.native
-class OlkTimeControl protected ()
+/* private */ class OlkTimeControl ()
   extends StObject
      with typings.activexOutlook.Outlook.OlkTimeControl {
   
@@ -61,7 +61,7 @@ class OlkTimeControl protected ()
   /* CompleteClass */
   var MousePointer: OlMousePointer = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OlkTimeControl_typekey")
   var OutlookDotOlkTimeControl_typekey: typings.activexOutlook.Outlook.OlkTimeControl = js.native
   

@@ -17,28 +17,21 @@ trait ListMetricDescriptorsResponse extends StObject {
 }
 object ListMetricDescriptorsResponse {
   
-  @scala.inline
-  def apply(): ListMetricDescriptorsResponse = {
+  inline def apply(): ListMetricDescriptorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMetricDescriptorsResponse]
   }
   
-  @scala.inline
-  implicit class ListMetricDescriptorsResponseMutableBuilder[Self <: ListMetricDescriptorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMetricDescriptorsResponse](x: Self) {
     
-    @scala.inline
-    def setMetricDescriptors(value: js.Array[MetricDescriptor]): Self = StObject.set(x, "metricDescriptors", value.asInstanceOf[js.Any])
+    inline def setMetricDescriptors(value: js.Array[MetricDescriptor]): Self = StObject.set(x, "metricDescriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDescriptorsUndefined: Self = StObject.set(x, "metricDescriptors", js.undefined)
+    inline def setMetricDescriptorsUndefined: Self = StObject.set(x, "metricDescriptors", js.undefined)
     
-    @scala.inline
-    def setMetricDescriptorsVarargs(value: MetricDescriptor*): Self = StObject.set(x, "metricDescriptors", js.Array(value :_*))
+    inline def setMetricDescriptorsVarargs(value: MetricDescriptor*): Self = StObject.set(x, "metricDescriptors", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

@@ -20,17 +20,14 @@ object typesEnableKeyOutputMod {
   }
   object EnableKeyOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): EnableKeyOutput = {
+    inline def apply($metadata: ResponseMetadata): EnableKeyOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnableKeyOutput]
     }
     
-    @scala.inline
-    implicit class EnableKeyOutputMutableBuilder[Self <: EnableKeyOutput] (val x: Self) extends AnyVal {
+    extension [Self <: EnableKeyOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

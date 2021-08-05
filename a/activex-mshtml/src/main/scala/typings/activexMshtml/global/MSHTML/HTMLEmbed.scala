@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLEmbed")
 @js.native
-class HTMLEmbed protected ()
+/* private */ class HTMLEmbed ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLEmbed

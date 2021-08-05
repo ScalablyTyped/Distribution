@@ -30,31 +30,23 @@ trait JSONPDataSourceSettings
 }
 object JSONPDataSourceSettings {
   
-  @scala.inline
-  def apply(): JSONPDataSourceSettings = {
+  inline def apply(): JSONPDataSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSONPDataSourceSettings]
   }
   
-  @scala.inline
-  implicit class JSONPDataSourceSettingsMutableBuilder[Self <: JSONPDataSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: JSONPDataSourceSettings](x: Self) {
     
-    @scala.inline
-    def setJsonp(value: String | Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    inline def setJsonp(value: String | Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonpCallback(value: String | js.Function): Self = StObject.set(x, "jsonpCallback", value.asInstanceOf[js.Any])
+    inline def setJsonpCallback(value: String | js.Function): Self = StObject.set(x, "jsonpCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonpCallbackUndefined: Self = StObject.set(x, "jsonpCallback", js.undefined)
+    inline def setJsonpCallbackUndefined: Self = StObject.set(x, "jsonpCallback", js.undefined)
     
-    @scala.inline
-    def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+    inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

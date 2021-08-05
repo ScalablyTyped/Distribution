@@ -18,22 +18,17 @@ trait WebAclLoggingConfiguration extends StObject {
 }
 object WebAclLoggingConfiguration {
   
-  @scala.inline
-  def apply(logDestination: String): WebAclLoggingConfiguration = {
+  inline def apply(logDestination: String): WebAclLoggingConfiguration = {
     val __obj = js.Dynamic.literal(logDestination = logDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclLoggingConfiguration]
   }
   
-  @scala.inline
-  implicit class WebAclLoggingConfigurationMutableBuilder[Self <: WebAclLoggingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclLoggingConfiguration](x: Self) {
     
-    @scala.inline
-    def setLogDestination(value: String): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
+    inline def setLogDestination(value: String): Self = StObject.set(x, "logDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactedFields(value: WebAclLoggingConfigurationRedactedFields): Self = StObject.set(x, "redactedFields", value.asInstanceOf[js.Any])
+    inline def setRedactedFields(value: WebAclLoggingConfigurationRedactedFields): Self = StObject.set(x, "redactedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactedFieldsUndefined: Self = StObject.set(x, "redactedFields", js.undefined)
+    inline def setRedactedFieldsUndefined: Self = StObject.set(x, "redactedFields", js.undefined)
   }
 }

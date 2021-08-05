@@ -14,22 +14,17 @@ trait Process extends StObject {
 }
 object Process {
   
-  @scala.inline
-  def apply(State: js.Any, process: js.Any, ruler: After): Process = {
+  inline def apply(State: js.Any, process: js.Any, ruler: After): Process = {
     val __obj = js.Dynamic.literal(State = State.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any], ruler = ruler.asInstanceOf[js.Any])
     __obj.asInstanceOf[Process]
   }
   
-  @scala.inline
-  implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
+  extension [Self <: Process](x: Self) {
     
-    @scala.inline
-    def setProcess(value: js.Any): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: js.Any): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuler(value: After): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
+    inline def setRuler(value: After): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object personaCoinStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IPersonaCoinStyleProps): IPersonaCoinStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPersonaCoinStyles]
+  inline def getStyles(props: IPersonaCoinStyleProps): IPersonaCoinStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPersonaCoinStyles]
 }

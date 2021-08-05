@@ -18,8 +18,7 @@ trait IXmlLoadSettings extends StObject {
 }
 object IXmlLoadSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     elementContentWhiteSpace: Boolean,
     maxElementDepth: Double,
     prohibitDtd: Boolean,
@@ -30,22 +29,16 @@ object IXmlLoadSettings {
     __obj.asInstanceOf[IXmlLoadSettings]
   }
   
-  @scala.inline
-  implicit class IXmlLoadSettingsMutableBuilder[Self <: IXmlLoadSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IXmlLoadSettings](x: Self) {
     
-    @scala.inline
-    def setElementContentWhiteSpace(value: Boolean): Self = StObject.set(x, "elementContentWhiteSpace", value.asInstanceOf[js.Any])
+    inline def setElementContentWhiteSpace(value: Boolean): Self = StObject.set(x, "elementContentWhiteSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxElementDepth(value: Double): Self = StObject.set(x, "maxElementDepth", value.asInstanceOf[js.Any])
+    inline def setMaxElementDepth(value: Double): Self = StObject.set(x, "maxElementDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProhibitDtd(value: Boolean): Self = StObject.set(x, "prohibitDtd", value.asInstanceOf[js.Any])
+    inline def setProhibitDtd(value: Boolean): Self = StObject.set(x, "prohibitDtd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveExternals(value: Boolean): Self = StObject.set(x, "resolveExternals", value.asInstanceOf[js.Any])
+    inline def setResolveExternals(value: Boolean): Self = StObject.set(x, "resolveExternals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnParse(value: Boolean): Self = StObject.set(x, "validateOnParse", value.asInstanceOf[js.Any])
+    inline def setValidateOnParse(value: Boolean): Self = StObject.set(x, "validateOnParse", value.asInstanceOf[js.Any])
   }
 }

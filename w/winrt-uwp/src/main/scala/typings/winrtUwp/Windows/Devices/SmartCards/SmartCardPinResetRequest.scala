@@ -29,8 +29,7 @@ trait SmartCardPinResetRequest extends StObject {
 }
 object SmartCardPinResetRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     challenge: IBuffer,
     deadline: Date,
     getDeferral: () => SmartCardPinResetDeferral,
@@ -40,19 +39,14 @@ object SmartCardPinResetRequest {
     __obj.asInstanceOf[SmartCardPinResetRequest]
   }
   
-  @scala.inline
-  implicit class SmartCardPinResetRequestMutableBuilder[Self <: SmartCardPinResetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SmartCardPinResetRequest](x: Self) {
     
-    @scala.inline
-    def setChallenge(value: IBuffer): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
+    inline def setChallenge(value: IBuffer): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => SmartCardPinResetDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => SmartCardPinResetDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetResponse(value: IBuffer => Unit): Self = StObject.set(x, "setResponse", js.Any.fromFunction1(value))
+    inline def setSetResponse(value: IBuffer => Unit): Self = StObject.set(x, "setResponse", js.Any.fromFunction1(value))
   }
 }

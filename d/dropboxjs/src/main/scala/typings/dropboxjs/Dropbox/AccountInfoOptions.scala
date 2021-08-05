@@ -10,16 +10,13 @@ trait AccountInfoOptions extends StObject {
 }
 object AccountInfoOptions {
   
-  @scala.inline
-  def apply(httpCache: Boolean): AccountInfoOptions = {
+  inline def apply(httpCache: Boolean): AccountInfoOptions = {
     val __obj = js.Dynamic.literal(httpCache = httpCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountInfoOptions]
   }
   
-  @scala.inline
-  implicit class AccountInfoOptionsMutableBuilder[Self <: AccountInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccountInfoOptions](x: Self) {
     
-    @scala.inline
-    def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
+    inline def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
   }
 }

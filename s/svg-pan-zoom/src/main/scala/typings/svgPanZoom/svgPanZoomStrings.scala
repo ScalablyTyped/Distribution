@@ -8,6 +8,5 @@ object svgPanZoomStrings {
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
 }

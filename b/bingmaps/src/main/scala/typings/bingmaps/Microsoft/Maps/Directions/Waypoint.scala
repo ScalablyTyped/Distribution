@@ -36,8 +36,7 @@ trait Waypoint extends StObject {
 }
 object Waypoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: () => Unit,
     getAddress: () => String,
     getLocation: () => Location,
@@ -48,22 +47,16 @@ object Waypoint {
     __obj.asInstanceOf[Waypoint]
   }
   
-  @scala.inline
-  implicit class WaypointMutableBuilder[Self <: Waypoint] (val x: Self) extends AnyVal {
+  extension [Self <: Waypoint](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAddress(value: () => String): Self = StObject.set(x, "getAddress", js.Any.fromFunction0(value))
+    inline def setGetAddress(value: () => String): Self = StObject.set(x, "getAddress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocation(value: () => Location): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
+    inline def setGetLocation(value: () => Location): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsViapoint(value: () => Boolean): Self = StObject.set(x, "isViapoint", js.Any.fromFunction0(value))
+    inline def setIsViapoint(value: () => Boolean): Self = StObject.set(x, "isViapoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetOptions(value: IWaypointOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+    inline def setSetOptions(value: IWaypointOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
   }
 }

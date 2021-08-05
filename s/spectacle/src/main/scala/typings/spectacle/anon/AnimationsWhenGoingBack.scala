@@ -32,67 +32,47 @@ trait AnimationsWhenGoingBack extends StObject {
 }
 object AnimationsWhenGoingBack {
   
-  @scala.inline
-  def apply(): AnimationsWhenGoingBack = {
+  inline def apply(): AnimationsWhenGoingBack = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationsWhenGoingBack]
   }
   
-  @scala.inline
-  implicit class AnimationsWhenGoingBackMutableBuilder[Self <: AnimationsWhenGoingBack] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationsWhenGoingBack](x: Self) {
     
-    @scala.inline
-    def setAnimationsWhenGoingBack(value: Boolean): Self = StObject.set(x, "animationsWhenGoingBack", value.asInstanceOf[js.Any])
+    inline def setAnimationsWhenGoingBack(value: Boolean): Self = StObject.set(x, "animationsWhenGoingBack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsWhenGoingBackUndefined: Self = StObject.set(x, "animationsWhenGoingBack", js.undefined)
+    inline def setAnimationsWhenGoingBackUndefined: Self = StObject.set(x, "animationsWhenGoingBack", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setKeyboardControls(value: arrows | space): Self = StObject.set(x, "keyboardControls", value.asInstanceOf[js.Any])
+    inline def setKeyboardControls(value: arrows | space): Self = StObject.set(x, "keyboardControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardControlsUndefined: Self = StObject.set(x, "keyboardControls", js.undefined)
+    inline def setKeyboardControlsUndefined: Self = StObject.set(x, "keyboardControls", js.undefined)
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: /* options */ CurrentSlide => ReactNode): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplate(value: /* options */ CurrentSlide => ReactNode): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
-    @scala.inline
-    def setTheme(value: Record[String, js.Any]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: Record[String, js.Any]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setTransitionEffect(value: TransitionEffect): Self = StObject.set(x, "transitionEffect", value.asInstanceOf[js.Any])
+    inline def setTransitionEffect(value: TransitionEffect): Self = StObject.set(x, "transitionEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionEffectUndefined: Self = StObject.set(x, "transitionEffect", js.undefined)
+    inline def setTransitionEffectUndefined: Self = StObject.set(x, "transitionEffect", js.undefined)
   }
 }

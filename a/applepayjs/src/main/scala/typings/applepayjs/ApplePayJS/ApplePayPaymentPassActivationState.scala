@@ -17,18 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplePayPaymentPassActivationState extends StObject
 object ApplePayPaymentPassActivationState {
   
-  @scala.inline
-  def activated: typings.applepayjs.applepayjsStrings.activated = "activated".asInstanceOf[typings.applepayjs.applepayjsStrings.activated]
+  inline def activated: typings.applepayjs.applepayjsStrings.activated = "activated".asInstanceOf[typings.applepayjs.applepayjsStrings.activated]
   
-  @scala.inline
-  def activating: typings.applepayjs.applepayjsStrings.activating = "activating".asInstanceOf[typings.applepayjs.applepayjsStrings.activating]
+  inline def activating: typings.applepayjs.applepayjsStrings.activating = "activating".asInstanceOf[typings.applepayjs.applepayjsStrings.activating]
   
-  @scala.inline
-  def deactivated: typings.applepayjs.applepayjsStrings.deactivated = "deactivated".asInstanceOf[typings.applepayjs.applepayjsStrings.deactivated]
+  inline def deactivated: typings.applepayjs.applepayjsStrings.deactivated = "deactivated".asInstanceOf[typings.applepayjs.applepayjsStrings.deactivated]
   
-  @scala.inline
-  def requiresActivation: typings.applepayjs.applepayjsStrings.requiresActivation = "requiresActivation".asInstanceOf[typings.applepayjs.applepayjsStrings.requiresActivation]
+  inline def requiresActivation: typings.applepayjs.applepayjsStrings.requiresActivation = "requiresActivation".asInstanceOf[typings.applepayjs.applepayjsStrings.requiresActivation]
   
-  @scala.inline
-  def suspended: typings.applepayjs.applepayjsStrings.suspended = "suspended".asInstanceOf[typings.applepayjs.applepayjsStrings.suspended]
+  inline def suspended: typings.applepayjs.applepayjsStrings.suspended = "suspended".asInstanceOf[typings.applepayjs.applepayjsStrings.suspended]
 }

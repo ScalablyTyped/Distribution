@@ -24,14 +24,12 @@ object pickerIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/picker/index.native", "default.contextTypes")
     @js.native
     def contextTypes: AntLocale = js.native
-    @scala.inline
-    def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/picker/index.native", "default.defaultProps")
     @js.native
     def defaultProps: Cascade = js.native
-    @scala.inline
-    def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Cascade): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -47,20 +45,16 @@ object pickerIndexNativeMod {
   }
   object PickerNativeProps {
     
-    @scala.inline
-    def apply(data: js.Array[js.Array[PickerData] | PickerData]): PickerNativeProps = {
+    inline def apply(data: js.Array[js.Array[PickerData] | PickerData]): PickerNativeProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerNativeProps]
     }
     
-    @scala.inline
-    implicit class PickerNativePropsMutableBuilder[Self <: PickerNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: PickerNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: IPickerStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IPickerStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

@@ -31,6 +31,6 @@ object connectionConnectionMetadataBuilderMod {
       */
     def buildSubscribers(subscribers: js.Array[js.Function | String]): js.Array[EntitySubscriberInterface[js.Any]] = js.native
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
   }
 }

@@ -20,25 +20,19 @@ trait CommonOptions
 }
 object CommonOptions {
   
-  @scala.inline
-  def apply(): CommonOptions = {
+  inline def apply(): CommonOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonOptions]
   }
   
-  @scala.inline
-  implicit class CommonOptionsMutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CommonOptions](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setWindowsHide(value: Boolean): Self = StObject.set(x, "windowsHide", value.asInstanceOf[js.Any])
+    inline def setWindowsHide(value: Boolean): Self = StObject.set(x, "windowsHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsHideUndefined: Self = StObject.set(x, "windowsHide", js.undefined)
+    inline def setWindowsHideUndefined: Self = StObject.set(x, "windowsHide", js.undefined)
   }
 }

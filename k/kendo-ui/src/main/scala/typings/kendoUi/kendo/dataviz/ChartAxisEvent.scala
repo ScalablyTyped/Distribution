@@ -14,22 +14,17 @@ trait ChartAxisEvent extends StObject {
 }
 object ChartAxisEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ChartAxis): ChartAxisEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ChartAxis): ChartAxisEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisEvent]
   }
   
-  @scala.inline
-  implicit class ChartAxisEventMutableBuilder[Self <: ChartAxisEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAxisEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: ChartAxis): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: ChartAxis): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

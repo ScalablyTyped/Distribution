@@ -16,22 +16,17 @@ trait SchemaBatchGetAssetsHistoryResponse extends StObject {
 }
 object SchemaBatchGetAssetsHistoryResponse {
   
-  @scala.inline
-  def apply(): SchemaBatchGetAssetsHistoryResponse = {
+  inline def apply(): SchemaBatchGetAssetsHistoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchGetAssetsHistoryResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBatchGetAssetsHistoryResponseMutableBuilder[Self <: SchemaBatchGetAssetsHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchGetAssetsHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setAssets(value: js.Array[SchemaTemporalAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+    inline def setAssets(value: js.Array[SchemaTemporalAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
+    inline def setAssetsUndefined: Self = StObject.set(x, "assets", js.undefined)
     
-    @scala.inline
-    def setAssetsVarargs(value: SchemaTemporalAsset*): Self = StObject.set(x, "assets", js.Array(value :_*))
+    inline def setAssetsVarargs(value: SchemaTemporalAsset*): Self = StObject.set(x, "assets", js.Array(value :_*))
   }
 }

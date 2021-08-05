@@ -12,19 +12,15 @@ trait Page extends StObject {
 }
 object Page {
   
-  @scala.inline
-  def apply(number: String, size: String): Page = {
+  inline def apply(number: String, size: String): Page = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }
   
-  @scala.inline
-  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+  extension [Self <: Page](x: Self) {
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

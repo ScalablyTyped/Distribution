@@ -115,108 +115,75 @@ object mod {
   }
   object EdiTextProps {
     
-    @scala.inline
-    def apply(onSave: /* repeated */ String => js.Any, `type`: EdiTextType, value: String): EdiTextProps = {
+    inline def apply(onSave: /* repeated */ String => js.Any, `type`: EdiTextType, value: String): EdiTextProps = {
       val __obj = js.Dynamic.literal(onSave = js.Any.fromFunction1(onSave), value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdiTextProps]
     }
     
-    @scala.inline
-    implicit class EdiTextPropsMutableBuilder[Self <: EdiTextProps] (val x: Self) extends AnyVal {
+    extension [Self <: EdiTextProps](x: Self) {
       
-      @scala.inline
-      def setCancelButtonClassName(value: String): Self = StObject.set(x, "cancelButtonClassName", value.asInstanceOf[js.Any])
+      inline def setCancelButtonClassName(value: String): Self = StObject.set(x, "cancelButtonClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonClassNameUndefined: Self = StObject.set(x, "cancelButtonClassName", js.undefined)
+      inline def setCancelButtonClassNameUndefined: Self = StObject.set(x, "cancelButtonClassName", js.undefined)
       
-      @scala.inline
-      def setCancelButtonContent(value: js.Any): Self = StObject.set(x, "cancelButtonContent", value.asInstanceOf[js.Any])
+      inline def setCancelButtonContent(value: js.Any): Self = StObject.set(x, "cancelButtonContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelButtonContentUndefined: Self = StObject.set(x, "cancelButtonContent", js.undefined)
+      inline def setCancelButtonContentUndefined: Self = StObject.set(x, "cancelButtonContent", js.undefined)
       
-      @scala.inline
-      def setEditButtonClassName(value: String): Self = StObject.set(x, "editButtonClassName", value.asInstanceOf[js.Any])
+      inline def setEditButtonClassName(value: String): Self = StObject.set(x, "editButtonClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditButtonClassNameUndefined: Self = StObject.set(x, "editButtonClassName", js.undefined)
+      inline def setEditButtonClassNameUndefined: Self = StObject.set(x, "editButtonClassName", js.undefined)
       
-      @scala.inline
-      def setEditButtonContent(value: js.Any): Self = StObject.set(x, "editButtonContent", value.asInstanceOf[js.Any])
+      inline def setEditButtonContent(value: js.Any): Self = StObject.set(x, "editButtonContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditButtonContentUndefined: Self = StObject.set(x, "editButtonContent", js.undefined)
+      inline def setEditButtonContentUndefined: Self = StObject.set(x, "editButtonContent", js.undefined)
       
-      @scala.inline
-      def setHideIcons(value: Boolean): Self = StObject.set(x, "hideIcons", value.asInstanceOf[js.Any])
+      inline def setHideIcons(value: Boolean): Self = StObject.set(x, "hideIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideIconsUndefined: Self = StObject.set(x, "hideIcons", js.undefined)
+      inline def setHideIconsUndefined: Self = StObject.set(x, "hideIcons", js.undefined)
       
-      @scala.inline
-      def setHint(value: ReactNode): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      inline def setHint(value: ReactNode): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+      inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
       
-      @scala.inline
-      def setInputProps(value: js.Object): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: js.Object): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+      inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+      inline def setOnCancel(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnSave(value: /* repeated */ String => js.Any): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
+      inline def setOnSave(value: /* repeated */ String => js.Any): Self = StObject.set(x, "onSave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnValidationFail(value: /* repeated */ String => js.Any): Self = StObject.set(x, "onValidationFail", js.Any.fromFunction1(value))
+      inline def setOnValidationFail(value: /* repeated */ String => js.Any): Self = StObject.set(x, "onValidationFail", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnValidationFailUndefined: Self = StObject.set(x, "onValidationFail", js.undefined)
+      inline def setOnValidationFailUndefined: Self = StObject.set(x, "onValidationFail", js.undefined)
       
-      @scala.inline
-      def setSaveButtonClassName(value: String): Self = StObject.set(x, "saveButtonClassName", value.asInstanceOf[js.Any])
+      inline def setSaveButtonClassName(value: String): Self = StObject.set(x, "saveButtonClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveButtonClassNameUndefined: Self = StObject.set(x, "saveButtonClassName", js.undefined)
+      inline def setSaveButtonClassNameUndefined: Self = StObject.set(x, "saveButtonClassName", js.undefined)
       
-      @scala.inline
-      def setSaveButtonContent(value: js.Any): Self = StObject.set(x, "saveButtonContent", value.asInstanceOf[js.Any])
+      inline def setSaveButtonContent(value: js.Any): Self = StObject.set(x, "saveButtonContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveButtonContentUndefined: Self = StObject.set(x, "saveButtonContent", js.undefined)
+      inline def setSaveButtonContentUndefined: Self = StObject.set(x, "saveButtonContent", js.undefined)
       
-      @scala.inline
-      def setType(value: EdiTextType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: EdiTextType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidation(value: /* repeated */ String => Boolean): Self = StObject.set(x, "validation", js.Any.fromFunction1(value))
+      inline def setValidation(value: /* repeated */ String => Boolean): Self = StObject.set(x, "validation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidationMessage(value: String): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
+      inline def setValidationMessage(value: String): Self = StObject.set(x, "validationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
+      inline def setValidationMessageUndefined: Self = StObject.set(x, "validationMessage", js.undefined)
       
-      @scala.inline
-      def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+      inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewProps(value: js.Object): Self = StObject.set(x, "viewProps", value.asInstanceOf[js.Any])
+      inline def setViewProps(value: js.Object): Self = StObject.set(x, "viewProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewPropsUndefined: Self = StObject.set(x, "viewProps", js.undefined)
+      inline def setViewPropsUndefined: Self = StObject.set(x, "viewProps", js.undefined)
     }
   }
   
@@ -236,37 +203,26 @@ object mod {
   trait EdiTextType extends StObject
   object EdiTextType {
     
-    @scala.inline
-    def date: typings.reactEditext.reactEditextStrings.date = "date".asInstanceOf[typings.reactEditext.reactEditextStrings.date]
+    inline def date: typings.reactEditext.reactEditextStrings.date = "date".asInstanceOf[typings.reactEditext.reactEditextStrings.date]
     
-    @scala.inline
-    def `datetime-local`: typings.reactEditext.reactEditextStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.reactEditext.reactEditextStrings.`datetime-local`]
+    inline def `datetime-local`: typings.reactEditext.reactEditextStrings.`datetime-local` = "datetime-local".asInstanceOf[typings.reactEditext.reactEditextStrings.`datetime-local`]
     
-    @scala.inline
-    def email: typings.reactEditext.reactEditextStrings.email = "email".asInstanceOf[typings.reactEditext.reactEditextStrings.email]
+    inline def email: typings.reactEditext.reactEditextStrings.email = "email".asInstanceOf[typings.reactEditext.reactEditextStrings.email]
     
-    @scala.inline
-    def month: typings.reactEditext.reactEditextStrings.month = "month".asInstanceOf[typings.reactEditext.reactEditextStrings.month]
+    inline def month: typings.reactEditext.reactEditextStrings.month = "month".asInstanceOf[typings.reactEditext.reactEditextStrings.month]
     
-    @scala.inline
-    def number: typings.reactEditext.reactEditextStrings.number = "number".asInstanceOf[typings.reactEditext.reactEditextStrings.number]
+    inline def number: typings.reactEditext.reactEditextStrings.number = "number".asInstanceOf[typings.reactEditext.reactEditextStrings.number]
     
-    @scala.inline
-    def tel: typings.reactEditext.reactEditextStrings.tel = "tel".asInstanceOf[typings.reactEditext.reactEditextStrings.tel]
+    inline def tel: typings.reactEditext.reactEditextStrings.tel = "tel".asInstanceOf[typings.reactEditext.reactEditextStrings.tel]
     
-    @scala.inline
-    def text: typings.reactEditext.reactEditextStrings.text = "text".asInstanceOf[typings.reactEditext.reactEditextStrings.text]
+    inline def text: typings.reactEditext.reactEditextStrings.text = "text".asInstanceOf[typings.reactEditext.reactEditextStrings.text]
     
-    @scala.inline
-    def textarea: typings.reactEditext.reactEditextStrings.textarea = "textarea".asInstanceOf[typings.reactEditext.reactEditextStrings.textarea]
+    inline def textarea: typings.reactEditext.reactEditextStrings.textarea = "textarea".asInstanceOf[typings.reactEditext.reactEditextStrings.textarea]
     
-    @scala.inline
-    def time: typings.reactEditext.reactEditextStrings.time = "time".asInstanceOf[typings.reactEditext.reactEditextStrings.time]
+    inline def time: typings.reactEditext.reactEditextStrings.time = "time".asInstanceOf[typings.reactEditext.reactEditextStrings.time]
     
-    @scala.inline
-    def url: typings.reactEditext.reactEditextStrings.url = "url".asInstanceOf[typings.reactEditext.reactEditextStrings.url]
+    inline def url: typings.reactEditext.reactEditextStrings.url = "url".asInstanceOf[typings.reactEditext.reactEditextStrings.url]
     
-    @scala.inline
-    def week: typings.reactEditext.reactEditextStrings.week = "week".asInstanceOf[typings.reactEditext.reactEditextStrings.week]
+    inline def week: typings.reactEditext.reactEditextStrings.week = "week".asInstanceOf[typings.reactEditext.reactEditextStrings.week]
   }
 }

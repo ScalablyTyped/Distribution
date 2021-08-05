@@ -14,28 +14,21 @@ trait MUIDataTableColumn extends StObject {
 }
 object MUIDataTableColumn {
   
-  @scala.inline
-  def apply(name: String): MUIDataTableColumn = {
+  inline def apply(name: String): MUIDataTableColumn = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableColumn]
   }
   
-  @scala.inline
-  implicit class MUIDataTableColumnMutableBuilder[Self <: MUIDataTableColumn] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableColumn](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: MUIDataTableColumnOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MUIDataTableColumnOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

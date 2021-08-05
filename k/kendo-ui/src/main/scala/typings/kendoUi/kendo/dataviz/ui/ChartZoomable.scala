@@ -12,25 +12,19 @@ trait ChartZoomable extends StObject {
 }
 object ChartZoomable {
   
-  @scala.inline
-  def apply(): ChartZoomable = {
+  inline def apply(): ChartZoomable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartZoomable]
   }
   
-  @scala.inline
-  implicit class ChartZoomableMutableBuilder[Self <: ChartZoomable] (val x: Self) extends AnyVal {
+  extension [Self <: ChartZoomable](x: Self) {
     
-    @scala.inline
-    def setMousewheel(value: Boolean | ChartZoomableMousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
+    inline def setMousewheel(value: Boolean | ChartZoomableMousewheel): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
+    inline def setMousewheelUndefined: Self = StObject.set(x, "mousewheel", js.undefined)
     
-    @scala.inline
-    def setSelection(value: Boolean | ChartZoomableSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Boolean | ChartZoomableSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
   }
 }

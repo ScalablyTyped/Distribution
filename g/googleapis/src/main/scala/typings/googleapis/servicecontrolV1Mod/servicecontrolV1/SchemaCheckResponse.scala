@@ -39,46 +39,33 @@ trait SchemaCheckResponse extends StObject {
 }
 object SchemaCheckResponse {
   
-  @scala.inline
-  def apply(): SchemaCheckResponse = {
+  inline def apply(): SchemaCheckResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCheckResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCheckResponseMutableBuilder[Self <: SchemaCheckResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCheckResponse](x: Self) {
     
-    @scala.inline
-    def setCheckErrors(value: js.Array[SchemaCheckError]): Self = StObject.set(x, "checkErrors", value.asInstanceOf[js.Any])
+    inline def setCheckErrors(value: js.Array[SchemaCheckError]): Self = StObject.set(x, "checkErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckErrorsUndefined: Self = StObject.set(x, "checkErrors", js.undefined)
+    inline def setCheckErrorsUndefined: Self = StObject.set(x, "checkErrors", js.undefined)
     
-    @scala.inline
-    def setCheckErrorsVarargs(value: SchemaCheckError*): Self = StObject.set(x, "checkErrors", js.Array(value :_*))
+    inline def setCheckErrorsVarargs(value: SchemaCheckError*): Self = StObject.set(x, "checkErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setCheckInfo(value: SchemaCheckInfo): Self = StObject.set(x, "checkInfo", value.asInstanceOf[js.Any])
+    inline def setCheckInfo(value: SchemaCheckInfo): Self = StObject.set(x, "checkInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckInfoUndefined: Self = StObject.set(x, "checkInfo", js.undefined)
+    inline def setCheckInfoUndefined: Self = StObject.set(x, "checkInfo", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setQuotaInfo(value: SchemaQuotaInfo): Self = StObject.set(x, "quotaInfo", value.asInstanceOf[js.Any])
+    inline def setQuotaInfo(value: SchemaQuotaInfo): Self = StObject.set(x, "quotaInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaInfoUndefined: Self = StObject.set(x, "quotaInfo", js.undefined)
+    inline def setQuotaInfoUndefined: Self = StObject.set(x, "quotaInfo", js.undefined)
     
-    @scala.inline
-    def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
+    inline def setServiceConfigId(value: String): Self = StObject.set(x, "serviceConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
+    inline def setServiceConfigIdUndefined: Self = StObject.set(x, "serviceConfigId", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait AddHeapSnapshotChunkEventDataType extends StObject {
 }
 object AddHeapSnapshotChunkEventDataType {
   
-  @scala.inline
-  def apply(chunk: String): AddHeapSnapshotChunkEventDataType = {
+  inline def apply(chunk: String): AddHeapSnapshotChunkEventDataType = {
     val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddHeapSnapshotChunkEventDataType]
   }
   
-  @scala.inline
-  implicit class AddHeapSnapshotChunkEventDataTypeMutableBuilder[Self <: AddHeapSnapshotChunkEventDataType] (val x: Self) extends AnyVal {
+  extension [Self <: AddHeapSnapshotChunkEventDataType](x: Self) {
     
-    @scala.inline
-    def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+    inline def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
   }
 }

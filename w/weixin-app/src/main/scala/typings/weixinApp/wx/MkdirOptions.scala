@@ -15,22 +15,17 @@ trait MkdirOptions
 }
 object MkdirOptions {
   
-  @scala.inline
-  def apply(dirPath: String): MkdirOptions = {
+  inline def apply(dirPath: String): MkdirOptions = {
     val __obj = js.Dynamic.literal(dirPath = dirPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[MkdirOptions]
   }
   
-  @scala.inline
-  implicit class MkdirOptionsMutableBuilder[Self <: MkdirOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MkdirOptions](x: Self) {
     
-    @scala.inline
-    def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
+    inline def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

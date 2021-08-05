@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSignatureSubset extends StObject
 object MsoSignatureSubset {
   
-  @scala.inline
-  def msoSignatureSubsetAll: `5` = 5.asInstanceOf[`5`]
+  inline def msoSignatureSubsetAll: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoSignatureSubsetSignatureLines: `2` = 2.asInstanceOf[`2`]
+  inline def msoSignatureSubsetSignatureLines: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoSignatureSubsetSignatureLinesSigned: `3` = 3.asInstanceOf[`3`]
+  inline def msoSignatureSubsetSignatureLinesSigned: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoSignatureSubsetSignatureLinesUnsigned: `4` = 4.asInstanceOf[`4`]
+  inline def msoSignatureSubsetSignatureLinesUnsigned: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoSignatureSubsetSignaturesAllSigs: `0` = 0.asInstanceOf[`0`]
+  inline def msoSignatureSubsetSignaturesAllSigs: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoSignatureSubsetSignaturesNonVisible: `1` = 1.asInstanceOf[`1`]
+  inline def msoSignatureSubsetSignaturesNonVisible: `1` = 1.asInstanceOf[`1`]
 }

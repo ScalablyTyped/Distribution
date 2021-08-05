@@ -19,8 +19,7 @@ trait OpenTracking extends StObject {
 }
 object OpenTracking {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEnable: () => Boolean,
     getSubscriptionTag: () => String,
     setEnable: Boolean => Unit,
@@ -31,22 +30,16 @@ object OpenTracking {
     __obj.asInstanceOf[OpenTracking]
   }
   
-  @scala.inline
-  implicit class OpenTrackingMutableBuilder[Self <: OpenTracking] (val x: Self) extends AnyVal {
+  extension [Self <: OpenTracking](x: Self) {
     
-    @scala.inline
-    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
+    inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubscriptionTag(value: () => String): Self = StObject.set(x, "getSubscriptionTag", js.Any.fromFunction0(value))
+    inline def setGetSubscriptionTag(value: () => String): Self = StObject.set(x, "getSubscriptionTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
+    inline def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubscriptionTag(value: String => Unit): Self = StObject.set(x, "setSubscriptionTag", js.Any.fromFunction1(value))
+    inline def setSetSubscriptionTag(value: String => Unit): Self = StObject.set(x, "setSubscriptionTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => Substitutiontag): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Substitutiontag): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

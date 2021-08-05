@@ -13,20 +13,20 @@ object loggerDebugLoggerMod {
     extends StObject
        with Logger {
     
-    var debugInfo: js.Any = js.native
+    /* private */ var debugInfo: js.Any = js.native
     
-    var debugLog: js.Any = js.native
+    /* private */ var debugLog: js.Any = js.native
     
-    var debugMigration: js.Any = js.native
+    /* private */ var debugMigration: js.Any = js.native
     
-    var debugQueryError: js.Any = js.native
+    /* private */ var debugQueryError: js.Any = js.native
     
-    var debugQueryLog: js.Any = js.native
+    /* private */ var debugQueryLog: js.Any = js.native
     
-    var debugQuerySlow: js.Any = js.native
+    /* private */ var debugQuerySlow: js.Any = js.native
     
-    var debugSchemaBuild: js.Any = js.native
+    /* private */ var debugSchemaBuild: js.Any = js.native
     
-    var debugWarn: js.Any = js.native
+    /* private */ var debugWarn: js.Any = js.native
   }
 }

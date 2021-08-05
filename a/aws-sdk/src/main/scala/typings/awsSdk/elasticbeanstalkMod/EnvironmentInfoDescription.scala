@@ -28,37 +28,27 @@ trait EnvironmentInfoDescription extends StObject {
 }
 object EnvironmentInfoDescription {
   
-  @scala.inline
-  def apply(): EnvironmentInfoDescription = {
+  inline def apply(): EnvironmentInfoDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentInfoDescription]
   }
   
-  @scala.inline
-  implicit class EnvironmentInfoDescriptionMutableBuilder[Self <: EnvironmentInfoDescription] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentInfoDescription](x: Self) {
     
-    @scala.inline
-    def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
+    inline def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
+    inline def setEc2InstanceIdUndefined: Self = StObject.set(x, "Ec2InstanceId", js.undefined)
     
-    @scala.inline
-    def setInfoType(value: EnvironmentInfoType): Self = StObject.set(x, "InfoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: EnvironmentInfoType): Self = StObject.set(x, "InfoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeUndefined: Self = StObject.set(x, "InfoType", js.undefined)
+    inline def setInfoTypeUndefined: Self = StObject.set(x, "InfoType", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setSampleTimestamp(value: SampleTimestamp): Self = StObject.set(x, "SampleTimestamp", value.asInstanceOf[js.Any])
+    inline def setSampleTimestamp(value: SampleTimestamp): Self = StObject.set(x, "SampleTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleTimestampUndefined: Self = StObject.set(x, "SampleTimestamp", js.undefined)
+    inline def setSampleTimestampUndefined: Self = StObject.set(x, "SampleTimestamp", js.undefined)
   }
 }

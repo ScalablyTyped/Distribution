@@ -1123,7 +1123,7 @@ trait Range extends StObject {
   
   def WholeStory(): Unit = js.native
   
-  @JSName("Word.Range_typekey")
+  /* private */ @JSName("Word.Range_typekey")
   var WordDotRange_typekey: Range = js.native
   
   val WordOpenXML: String = js.native

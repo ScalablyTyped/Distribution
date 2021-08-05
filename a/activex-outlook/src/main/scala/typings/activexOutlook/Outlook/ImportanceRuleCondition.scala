@@ -16,7 +16,7 @@ trait ImportanceRuleCondition extends StObject {
   
   var Importance: OlImportance
   
-  @JSName("Outlook.ImportanceRuleCondition_typekey")
+  /* private */ @JSName("Outlook.ImportanceRuleCondition_typekey")
   var OutlookDotImportanceRuleCondition_typekey: ImportanceRuleCondition
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait ImportanceRuleCondition extends StObject {
 }
 object ImportanceRuleCondition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     ConditionType: OlRuleConditionType,
@@ -41,31 +40,22 @@ object ImportanceRuleCondition {
     __obj.asInstanceOf[ImportanceRuleCondition]
   }
   
-  @scala.inline
-  implicit class ImportanceRuleConditionMutableBuilder[Self <: ImportanceRuleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: ImportanceRuleCondition](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
+    inline def setConditionType(value: OlRuleConditionType): Self = StObject.set(x, "ConditionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportance(value: OlImportance): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
+    inline def setImportance(value: OlImportance): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotImportanceRuleCondition_typekey(value: ImportanceRuleCondition): Self = StObject.set(x, "Outlook.ImportanceRuleCondition_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotImportanceRuleCondition_typekey(value: ImportanceRuleCondition): Self = StObject.set(x, "Outlook.ImportanceRuleCondition_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

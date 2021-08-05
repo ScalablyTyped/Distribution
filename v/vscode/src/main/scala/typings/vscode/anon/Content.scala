@@ -12,25 +12,19 @@ trait Content extends StObject {
 }
 object Content {
   
-  @scala.inline
-  def apply(): Content = {
+  inline def apply(): Content = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Content]
   }
   
-  @scala.inline
-  implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+  extension [Self <: Content](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

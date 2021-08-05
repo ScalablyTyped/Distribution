@@ -14,22 +14,17 @@ trait HttpOperationResponse[T] extends StObject {
 }
 object HttpOperationResponse {
   
-  @scala.inline
-  def apply[T](body: T, request: WebResource, response: typings.node.httpMod.IncomingMessage): HttpOperationResponse[T] = {
+  inline def apply[T](body: T, request: WebResource, response: typings.node.httpMod.IncomingMessage): HttpOperationResponse[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpOperationResponse[T]]
   }
   
-  @scala.inline
-  implicit class HttpOperationResponseMutableBuilder[Self <: HttpOperationResponse[?], T] (val x: Self & HttpOperationResponse[T]) extends AnyVal {
+  extension [Self <: HttpOperationResponse[?], T](x: Self & HttpOperationResponse[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: WebResource): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: WebResource): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: typings.node.httpMod.IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: typings.node.httpMod.IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

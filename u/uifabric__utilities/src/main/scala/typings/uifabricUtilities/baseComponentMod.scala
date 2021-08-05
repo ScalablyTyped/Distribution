@@ -30,15 +30,15 @@ object baseComponentMod {
     def this(props: TProps) = this()
     def this(props: TProps, context: js.Any) = this()
     
-    var __async: js.Any = js.native
+    /* private */ var __async: js.Any = js.native
     
-    var __className: js.Any = js.native
+    /* private */ var __className: js.Any = js.native
     
-    var __disposables: js.Any = js.native
+    /* private */ var __disposables: js.Any = js.native
     
-    var __events: js.Any = js.native
+    /* private */ var __events: js.Any = js.native
     
-    var __resolves: js.Any = js.native
+    /* private */ var __resolves: js.Any = js.native
     
     /**
       * Gets the async instance associated with the component, created on demand. The async instance gives
@@ -46,12 +46,12 @@ object baseComponentMod {
       * will be cleared/ignored automatically after unmounting. The helpers within the async object also
       * preserve the this pointer so that you don't need to "bind" the callbacks.
       */
-    val _async: Async = js.native
+    /* protected */ val _async: Async = js.native
     
     /**
       * Allows subclasses to push things to this._disposables to be auto disposed.
       */
-    val _disposables: js.Array[IDisposable] = js.native
+    /* protected */ val _disposables: js.Array[IDisposable] = js.native
     
     /**
       * Gets the event group instance assocaited with the component, created on demand. The event instance
@@ -59,7 +59,7 @@ object baseComponentMod {
       * will be automatically disconnected after unmounting. The helpers within the events object also
       * preserve the this reference so that you don't need to "bind" the callbacks.
       */
-    val _events: EventGroup = js.native
+    /* protected */ val _events: EventGroup = js.native
     
     /**
       * Helper to return a memoized ref resolver function.
@@ -69,14 +69,14 @@ object baseComponentMod {
       */
     /* protected */ def _resolveRef(refName: String): js.Function1[/* ref */ ReactNode, ReactNode] = js.native
     
-    var _setComponentRef: js.Any = js.native
+    /* private */ var _setComponentRef: js.Any = js.native
     
     /**
       * Controls whether the componentRef prop will be resolved by this component instance. If you are
       * implementing a passthrough (higher-order component), you would set this to false and pass through
       * the props to the inner component, allowing it to resolve the componentRef.
       */
-    var _skipComponentRefResolution: Boolean = js.native
+    /* protected */ var _skipComponentRefResolution: Boolean = js.native
     
     /**
       * Updates the componentRef (by calling it with "this" when necessary.)
@@ -141,16 +141,11 @@ object baseComponentMod {
     /**
       * @deprecated Use React's error boundaries instead.
       */
-    @scala.inline
-    def onError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")().asInstanceOf[Unit]
-    @scala.inline
-    def onError(errorMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def onError(errorMessage: String, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def onError(errorMessage: Unit, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def onError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")().asInstanceOf[Unit]
+    inline def onError(errorMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onError(errorMessage: String, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def onError(errorMessage: Unit, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def nullRender(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullRender")().asInstanceOf[Element | Null]
+  inline def nullRender(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullRender")().asInstanceOf[Element | Null]
 }

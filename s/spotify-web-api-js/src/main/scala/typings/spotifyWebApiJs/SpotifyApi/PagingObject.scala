@@ -26,8 +26,7 @@ trait PagingObject[T] extends StObject {
 }
 object PagingObject {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     href: String,
     items: js.Array[T],
     limit: Double,
@@ -40,31 +39,22 @@ object PagingObject {
     __obj.asInstanceOf[PagingObject[T]]
   }
   
-  @scala.inline
-  implicit class PagingObjectMutableBuilder[Self <: PagingObject[?], T] (val x: Self & PagingObject[T]) extends AnyVal {
+  extension [Self <: PagingObject[?], T](x: Self & PagingObject[T]) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    inline def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

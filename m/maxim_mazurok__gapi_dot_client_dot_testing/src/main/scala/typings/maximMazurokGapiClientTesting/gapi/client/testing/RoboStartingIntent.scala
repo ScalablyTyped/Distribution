@@ -17,31 +17,23 @@ trait RoboStartingIntent extends StObject {
 }
 object RoboStartingIntent {
   
-  @scala.inline
-  def apply(): RoboStartingIntent = {
+  inline def apply(): RoboStartingIntent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoboStartingIntent]
   }
   
-  @scala.inline
-  implicit class RoboStartingIntentMutableBuilder[Self <: RoboStartingIntent] (val x: Self) extends AnyVal {
+  extension [Self <: RoboStartingIntent](x: Self) {
     
-    @scala.inline
-    def setLauncherActivity(value: js.Any): Self = StObject.set(x, "launcherActivity", value.asInstanceOf[js.Any])
+    inline def setLauncherActivity(value: js.Any): Self = StObject.set(x, "launcherActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLauncherActivityUndefined: Self = StObject.set(x, "launcherActivity", js.undefined)
+    inline def setLauncherActivityUndefined: Self = StObject.set(x, "launcherActivity", js.undefined)
     
-    @scala.inline
-    def setStartActivity(value: StartActivityIntent): Self = StObject.set(x, "startActivity", value.asInstanceOf[js.Any])
+    inline def setStartActivity(value: StartActivityIntent): Self = StObject.set(x, "startActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartActivityUndefined: Self = StObject.set(x, "startActivity", js.undefined)
+    inline def setStartActivityUndefined: Self = StObject.set(x, "startActivity", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

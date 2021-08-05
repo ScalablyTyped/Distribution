@@ -32,17 +32,13 @@ object mod {
   trait BitDepth extends StObject
   object BitDepth {
     
-    @scala.inline
-    def `16`: typings.pngJs.pngJsNumbers.`16` = 16.asInstanceOf[typings.pngJs.pngJsNumbers.`16`]
+    inline def `16`: typings.pngJs.pngJsNumbers.`16` = 16.asInstanceOf[typings.pngJs.pngJsNumbers.`16`]
     
-    @scala.inline
-    def `2`: typings.pngJs.pngJsNumbers.`2` = 2.asInstanceOf[typings.pngJs.pngJsNumbers.`2`]
+    inline def `2`: typings.pngJs.pngJsNumbers.`2` = 2.asInstanceOf[typings.pngJs.pngJsNumbers.`2`]
     
-    @scala.inline
-    def `4`: typings.pngJs.pngJsNumbers.`4` = 4.asInstanceOf[typings.pngJs.pngJsNumbers.`4`]
+    inline def `4`: typings.pngJs.pngJsNumbers.`4` = 4.asInstanceOf[typings.pngJs.pngJsNumbers.`4`]
     
-    @scala.inline
-    def `8`: typings.pngJs.pngJsNumbers.`8` = 8.asInstanceOf[typings.pngJs.pngJsNumbers.`8`]
+    inline def `8`: typings.pngJs.pngJsNumbers.`8` = 8.asInstanceOf[typings.pngJs.pngJsNumbers.`8`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -55,20 +51,15 @@ object mod {
   trait ColorType extends StObject
   object ColorType {
     
-    @scala.inline
-    def `0`: typings.pngJs.pngJsNumbers.`0` = 0.asInstanceOf[typings.pngJs.pngJsNumbers.`0`]
+    inline def `0`: typings.pngJs.pngJsNumbers.`0` = 0.asInstanceOf[typings.pngJs.pngJsNumbers.`0`]
     
-    @scala.inline
-    def `2`: typings.pngJs.pngJsNumbers.`2` = 2.asInstanceOf[typings.pngJs.pngJsNumbers.`2`]
+    inline def `2`: typings.pngJs.pngJsNumbers.`2` = 2.asInstanceOf[typings.pngJs.pngJsNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.pngJs.pngJsNumbers.`3` = 3.asInstanceOf[typings.pngJs.pngJsNumbers.`3`]
+    inline def `3`: typings.pngJs.pngJsNumbers.`3` = 3.asInstanceOf[typings.pngJs.pngJsNumbers.`3`]
     
-    @scala.inline
-    def `4`: typings.pngJs.pngJsNumbers.`4` = 4.asInstanceOf[typings.pngJs.pngJsNumbers.`4`]
+    inline def `4`: typings.pngJs.pngJsNumbers.`4` = 4.asInstanceOf[typings.pngJs.pngJsNumbers.`4`]
     
-    @scala.inline
-    def `6`: typings.pngJs.pngJsNumbers.`6` = 6.asInstanceOf[typings.pngJs.pngJsNumbers.`6`]
+    inline def `6`: typings.pngJs.pngJsNumbers.`6` = 6.asInstanceOf[typings.pngJs.pngJsNumbers.`6`]
   }
   
   @js.native
@@ -161,20 +152,16 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     }
   }
 }

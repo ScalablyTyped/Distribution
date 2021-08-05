@@ -22,8 +22,7 @@ trait IMediaDeviceStatics extends StObject {
 }
 object IMediaDeviceStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAudioCaptureSelector: () => String,
     getAudioRenderSelector: () => String,
     getDefaultAudioCaptureId: AudioDeviceRole => String,
@@ -36,28 +35,20 @@ object IMediaDeviceStatics {
     __obj.asInstanceOf[IMediaDeviceStatics]
   }
   
-  @scala.inline
-  implicit class IMediaDeviceStaticsMutableBuilder[Self <: IMediaDeviceStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaDeviceStatics](x: Self) {
     
-    @scala.inline
-    def setGetAudioCaptureSelector(value: () => String): Self = StObject.set(x, "getAudioCaptureSelector", js.Any.fromFunction0(value))
+    inline def setGetAudioCaptureSelector(value: () => String): Self = StObject.set(x, "getAudioCaptureSelector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAudioRenderSelector(value: () => String): Self = StObject.set(x, "getAudioRenderSelector", js.Any.fromFunction0(value))
+    inline def setGetAudioRenderSelector(value: () => String): Self = StObject.set(x, "getAudioRenderSelector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultAudioCaptureId(value: AudioDeviceRole => String): Self = StObject.set(x, "getDefaultAudioCaptureId", js.Any.fromFunction1(value))
+    inline def setGetDefaultAudioCaptureId(value: AudioDeviceRole => String): Self = StObject.set(x, "getDefaultAudioCaptureId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefaultAudioRenderId(value: AudioDeviceRole => String): Self = StObject.set(x, "getDefaultAudioRenderId", js.Any.fromFunction1(value))
+    inline def setGetDefaultAudioRenderId(value: AudioDeviceRole => String): Self = StObject.set(x, "getDefaultAudioRenderId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVideoCaptureSelector(value: () => String): Self = StObject.set(x, "getVideoCaptureSelector", js.Any.fromFunction0(value))
+    inline def setGetVideoCaptureSelector(value: () => String): Self = StObject.set(x, "getVideoCaptureSelector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOndefaultaudiocapturedevicechanged(value: js.Any): Self = StObject.set(x, "ondefaultaudiocapturedevicechanged", value.asInstanceOf[js.Any])
+    inline def setOndefaultaudiocapturedevicechanged(value: js.Any): Self = StObject.set(x, "ondefaultaudiocapturedevicechanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOndefaultaudiorenderdevicechanged(value: js.Any): Self = StObject.set(x, "ondefaultaudiorenderdevicechanged", value.asInstanceOf[js.Any])
+    inline def setOndefaultaudiorenderdevicechanged(value: js.Any): Self = StObject.set(x, "ondefaultaudiorenderdevicechanged", value.asInstanceOf[js.Any])
   }
 }

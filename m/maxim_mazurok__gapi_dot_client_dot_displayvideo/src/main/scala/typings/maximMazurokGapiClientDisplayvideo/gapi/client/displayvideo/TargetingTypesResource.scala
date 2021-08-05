@@ -12,8 +12,7 @@ trait TargetingTypesResource extends StObject {
 }
 object TargetingTypesResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assignedTargetingOptions: AssignedTargetingOptionsResource,
     targetingOptions: TargetingOptionsResource
   ): TargetingTypesResource = {
@@ -21,13 +20,10 @@ object TargetingTypesResource {
     __obj.asInstanceOf[TargetingTypesResource]
   }
   
-  @scala.inline
-  implicit class TargetingTypesResourceMutableBuilder[Self <: TargetingTypesResource] (val x: Self) extends AnyVal {
+  extension [Self <: TargetingTypesResource](x: Self) {
     
-    @scala.inline
-    def setAssignedTargetingOptions(value: AssignedTargetingOptionsResource): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
+    inline def setAssignedTargetingOptions(value: AssignedTargetingOptionsResource): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptions(value: TargetingOptionsResource): Self = StObject.set(x, "targetingOptions", value.asInstanceOf[js.Any])
+    inline def setTargetingOptions(value: TargetingOptionsResource): Self = StObject.set(x, "targetingOptions", value.asInstanceOf[js.Any])
   }
 }

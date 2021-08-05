@@ -24,118 +24,101 @@ object Diagnostics {
   @js.native
   def Argument0CannotBeSpecifiedMultipleTimes: Code = js.native
   
-  @scala.inline
-  def Argument0CannotBeSpecifiedMultipleTimes_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Argument_0_cannot_be_specified_multiple_times")(x.asInstanceOf[js.Any])
+  inline def Argument0CannotBeSpecifiedMultipleTimes_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Argument_0_cannot_be_specified_multiple_times")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Cannot_find_name_0_")
   @js.native
   def CannotFindName0: Code = js.native
   
-  @scala.inline
-  def CannotFindName0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cannot_find_name_0_")(x.asInstanceOf[js.Any])
+  inline def CannotFindName0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cannot_find_name_0_")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Constant_expected")
   @js.native
   def ConstantExpected: Code = js.native
   
-  @scala.inline
-  def ConstantExpected_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constant_expected")(x.asInstanceOf[js.Any])
+  inline def ConstantExpected_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Constant_expected")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Digit_expected")
   @js.native
   def DigitExpected: Code = js.native
   
-  @scala.inline
-  def DigitExpected_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Digit_expected")(x.asInstanceOf[js.Any])
+  inline def DigitExpected_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Digit_expected")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Duplicate_identifier_0_")
   @js.native
   def DuplicateIdentifier0: Code = js.native
   
-  @scala.inline
-  def DuplicateIdentifier0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Duplicate_identifier_0_")(x.asInstanceOf[js.Any])
+  inline def DuplicateIdentifier0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Duplicate_identifier_0_")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Duplicate_terminal_0_")
   @js.native
   def DuplicateTerminal0: Code = js.native
   
-  @scala.inline
-  def DuplicateTerminal0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Duplicate_terminal_0_")(x.asInstanceOf[js.Any])
+  inline def DuplicateTerminal0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Duplicate_terminal_0_")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Invalid_character")
   @js.native
   def InvalidCharacter: Code = js.native
   
-  @scala.inline
-  def InvalidCharacter_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Invalid_character")(x.asInstanceOf[js.Any])
+  inline def InvalidCharacter_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Invalid_character")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Invalid_escape_sequence")
   @js.native
   def InvalidEscapeSequence: Code = js.native
   
-  @scala.inline
-  def InvalidEscapeSequence_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Invalid_escape_sequence")(x.asInstanceOf[js.Any])
+  inline def InvalidEscapeSequence_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Invalid_escape_sequence")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Obsolete_0_")
   @js.native
   def Obsolete0: Message = js.native
   
-  @scala.inline
-  def Obsolete0_=(x: Message): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Obsolete_0_")(x.asInstanceOf[js.Any])
+  inline def Obsolete0_=(x: Message): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Obsolete_0_")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Parameter_0_is_unused")
   @js.native
   def Parameter0IsUnused: Code = js.native
   
-  @scala.inline
-  def Parameter0IsUnused_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parameter_0_is_unused")(x.asInstanceOf[js.Any])
+  inline def Parameter0IsUnused_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Parameter_0_is_unused")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Production_0_does_not_have_a_parameter_named_1_")
   @js.native
   def Production0DoesNotHaveAParameterNamed1: Code = js.native
   
-  @scala.inline
-  def Production0DoesNotHaveAParameterNamed1_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Production_0_does_not_have_a_parameter_named_1_")(x.asInstanceOf[js.Any])
+  inline def Production0DoesNotHaveAParameterNamed1_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Production_0_does_not_have_a_parameter_named_1_")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Production_0_is_missing_parameter_1_All_definitions_of_production_0_must_specify_the_same_formal_parameters")
   @js.native
   def Production0IsMissingParameter1AllDefinitionsOfProduction0MustSpecifyTheSameFormalParameters: Code = js.native
   
-  @scala.inline
-  def Production0IsMissingParameter1AllDefinitionsOfProduction0MustSpecifyTheSameFormalParameters_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Production_0_is_missing_parameter_1_All_definitions_of_production_0_must_specify_the_same_formal_parameters")(x.asInstanceOf[js.Any])
+  inline def Production0IsMissingParameter1AllDefinitionsOfProduction0MustSpecifyTheSameFormalParameters_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Production_0_is_missing_parameter_1_All_definitions_of_production_0_must_specify_the_same_formal_parameters")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Production_expected")
   @js.native
   def ProductionExpected: Code = js.native
   
-  @scala.inline
-  def ProductionExpected_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Production_expected")(x.asInstanceOf[js.Any])
+  inline def ProductionExpected_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Production_expected")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.There_is_no_argument_given_for_parameter_0_")
   @js.native
   def ThereIsNoArgumentGivenForParameter0: Code = js.native
   
-  @scala.inline
-  def ThereIsNoArgumentGivenForParameter0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("There_is_no_argument_given_for_parameter_0_")(x.asInstanceOf[js.Any])
+  inline def ThereIsNoArgumentGivenForParameter0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("There_is_no_argument_given_for_parameter_0_")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Unexpected_token_0_")
   @js.native
   def UnexpectedToken0: Code = js.native
   
-  @scala.inline
-  def UnexpectedToken0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unexpected_token_0_")(x.asInstanceOf[js.Any])
+  inline def UnexpectedToken0_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unexpected_token_0_")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Unterminated_identifier_literal")
   @js.native
   def UnterminatedIdentifierLiteral: Code = js.native
   
-  @scala.inline
-  def UnterminatedIdentifierLiteral_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unterminated_identifier_literal")(x.asInstanceOf[js.Any])
+  inline def UnterminatedIdentifierLiteral_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unterminated_identifier_literal")(x.asInstanceOf[js.Any])
   
   @JSImport("grammarkdown/dist/grammarkdown", "Diagnostics.Unterminated_string_literal")
   @js.native
   def UnterminatedStringLiteral: Code = js.native
   
-  @scala.inline
-  def UnterminatedStringLiteral_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unterminated_string_literal")(x.asInstanceOf[js.Any])
+  inline def UnterminatedStringLiteral_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unterminated_string_literal")(x.asInstanceOf[js.Any])
 }

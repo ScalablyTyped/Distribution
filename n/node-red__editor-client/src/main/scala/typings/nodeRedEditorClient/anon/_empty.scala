@@ -17,8 +17,7 @@ trait _empty extends StObject {
 }
 object _empty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _underscore: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String
   ): _empty = {
     val __obj = js.Dynamic.literal()
@@ -26,10 +25,8 @@ object _empty {
     __obj.asInstanceOf[_empty]
   }
   
-  @scala.inline
-  implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
+  extension [Self <: _empty](x: Self) {
     
-    @scala.inline
-    def set_underscore(value: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String): Self = StObject.set(x, "_", js.Any.fromFunction2(value))
+    inline def set_underscore(value: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String): Self = StObject.set(x, "_", js.Any.fromFunction2(value))
   }
 }

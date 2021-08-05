@@ -15,19 +15,15 @@ trait SpanContext extends StObject {
 }
 object SpanContext {
   
-  @scala.inline
-  def apply(): SpanContext = {
+  inline def apply(): SpanContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpanContext]
   }
   
-  @scala.inline
-  implicit class SpanContextMutableBuilder[Self <: SpanContext] (val x: Self) extends AnyVal {
+  extension [Self <: SpanContext](x: Self) {
     
-    @scala.inline
-    def setSpanName(value: String): Self = StObject.set(x, "spanName", value.asInstanceOf[js.Any])
+    inline def setSpanName(value: String): Self = StObject.set(x, "spanName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanNameUndefined: Self = StObject.set(x, "spanName", js.undefined)
+    inline def setSpanNameUndefined: Self = StObject.set(x, "spanName", js.undefined)
   }
 }

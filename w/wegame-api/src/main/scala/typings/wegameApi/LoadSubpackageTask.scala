@@ -17,16 +17,13 @@ trait LoadSubpackageTask extends StObject {
 }
 object LoadSubpackageTask {
   
-  @scala.inline
-  def apply(onProgressUpdate: js.Function1[/* res */ Progress, Unit] => Unit): LoadSubpackageTask = {
+  inline def apply(onProgressUpdate: js.Function1[/* res */ Progress, Unit] => Unit): LoadSubpackageTask = {
     val __obj = js.Dynamic.literal(onProgressUpdate = js.Any.fromFunction1(onProgressUpdate))
     __obj.asInstanceOf[LoadSubpackageTask]
   }
   
-  @scala.inline
-  implicit class LoadSubpackageTaskMutableBuilder[Self <: LoadSubpackageTask] (val x: Self) extends AnyVal {
+  extension [Self <: LoadSubpackageTask](x: Self) {
     
-    @scala.inline
-    def setOnProgressUpdate(value: js.Function1[/* res */ Progress, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
+    inline def setOnProgressUpdate(value: js.Function1[/* res */ Progress, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
   }
 }

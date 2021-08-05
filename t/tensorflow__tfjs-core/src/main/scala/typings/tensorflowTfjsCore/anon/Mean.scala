@@ -14,19 +14,15 @@ trait Mean extends StObject {
 }
 object Mean {
   
-  @scala.inline
-  def apply(mean: Tensor[Rank], variance: Tensor[Rank]): Mean = {
+  inline def apply(mean: Tensor[Rank], variance: Tensor[Rank]): Mean = {
     val __obj = js.Dynamic.literal(mean = mean.asInstanceOf[js.Any], variance = variance.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mean]
   }
   
-  @scala.inline
-  implicit class MeanMutableBuilder[Self <: Mean] (val x: Self) extends AnyVal {
+  extension [Self <: Mean](x: Self) {
     
-    @scala.inline
-    def setMean(value: Tensor[Rank]): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+    inline def setMean(value: Tensor[Rank]): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariance(value: Tensor[Rank]): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: Tensor[Rank]): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
   }
 }

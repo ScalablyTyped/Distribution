@@ -18,25 +18,19 @@ trait ClusterOpenMonitoringPrometheus extends StObject {
 }
 object ClusterOpenMonitoringPrometheus {
   
-  @scala.inline
-  def apply(): ClusterOpenMonitoringPrometheus = {
+  inline def apply(): ClusterOpenMonitoringPrometheus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterOpenMonitoringPrometheus]
   }
   
-  @scala.inline
-  implicit class ClusterOpenMonitoringPrometheusMutableBuilder[Self <: ClusterOpenMonitoringPrometheus] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterOpenMonitoringPrometheus](x: Self) {
     
-    @scala.inline
-    def setJmxExporter(value: ClusterOpenMonitoringPrometheusJmxExporter): Self = StObject.set(x, "jmxExporter", value.asInstanceOf[js.Any])
+    inline def setJmxExporter(value: ClusterOpenMonitoringPrometheusJmxExporter): Self = StObject.set(x, "jmxExporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJmxExporterUndefined: Self = StObject.set(x, "jmxExporter", js.undefined)
+    inline def setJmxExporterUndefined: Self = StObject.set(x, "jmxExporter", js.undefined)
     
-    @scala.inline
-    def setNodeExporter(value: ClusterOpenMonitoringPrometheusNodeExporter): Self = StObject.set(x, "nodeExporter", value.asInstanceOf[js.Any])
+    inline def setNodeExporter(value: ClusterOpenMonitoringPrometheusNodeExporter): Self = StObject.set(x, "nodeExporter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeExporterUndefined: Self = StObject.set(x, "nodeExporter", js.undefined)
+    inline def setNodeExporterUndefined: Self = StObject.set(x, "nodeExporter", js.undefined)
   }
 }

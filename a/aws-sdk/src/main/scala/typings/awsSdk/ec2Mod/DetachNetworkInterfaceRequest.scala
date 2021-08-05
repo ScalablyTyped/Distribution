@@ -23,28 +23,21 @@ trait DetachNetworkInterfaceRequest extends StObject {
 }
 object DetachNetworkInterfaceRequest {
   
-  @scala.inline
-  def apply(AttachmentId: NetworkInterfaceAttachmentId): DetachNetworkInterfaceRequest = {
+  inline def apply(AttachmentId: NetworkInterfaceAttachmentId): DetachNetworkInterfaceRequest = {
     val __obj = js.Dynamic.literal(AttachmentId = AttachmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachNetworkInterfaceRequest]
   }
   
-  @scala.inline
-  implicit class DetachNetworkInterfaceRequestMutableBuilder[Self <: DetachNetworkInterfaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetachNetworkInterfaceRequest](x: Self) {
     
-    @scala.inline
-    def setAttachmentId(value: NetworkInterfaceAttachmentId): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: NetworkInterfaceAttachmentId): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
   }
 }

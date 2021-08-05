@@ -18,37 +18,27 @@ trait TableOptions extends StObject {
 }
 object TableOptions {
   
-  @scala.inline
-  def apply(): TableOptions = {
+  inline def apply(): TableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableOptions]
   }
   
-  @scala.inline
-  implicit class TableOptionsMutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TableOptions](x: Self) {
     
-    @scala.inline
-    def setCache_size(value: Double): Self = StObject.set(x, "cache_size", value.asInstanceOf[js.Any])
+    inline def setCache_size(value: Double): Self = StObject.set(x, "cache_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCache_sizeUndefined: Self = StObject.set(x, "cache_size", js.undefined)
+    inline def setCache_sizeUndefined: Self = StObject.set(x, "cache_size", js.undefined)
     
-    @scala.inline
-    def setDatacenter(value: String): Self = StObject.set(x, "datacenter", value.asInstanceOf[js.Any])
+    inline def setDatacenter(value: String): Self = StObject.set(x, "datacenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatacenterUndefined: Self = StObject.set(x, "datacenter", js.undefined)
+    inline def setDatacenterUndefined: Self = StObject.set(x, "datacenter", js.undefined)
     
-    @scala.inline
-    def setDurability(value: String): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
+    inline def setDurability(value: String): Self = StObject.set(x, "durability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurabilityUndefined: Self = StObject.set(x, "durability", js.undefined)
+    inline def setDurabilityUndefined: Self = StObject.set(x, "durability", js.undefined)
     
-    @scala.inline
-    def setPrimary_key(value: String): Self = StObject.set(x, "primary_key", value.asInstanceOf[js.Any])
+    inline def setPrimary_key(value: String): Self = StObject.set(x, "primary_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary_keyUndefined: Self = StObject.set(x, "primary_key", js.undefined)
+    inline def setPrimary_keyUndefined: Self = StObject.set(x, "primary_key", js.undefined)
   }
 }

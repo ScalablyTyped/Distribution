@@ -53,8 +53,7 @@ object mod {
     @JSImport("ng-table", "NgTableController.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table", "NgTableDefaultGetDataProvider")
@@ -78,8 +77,7 @@ object mod {
     @JSImport("ng-table", "NgTableEventsChannel.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table", "NgTableFilterConfig")
@@ -101,8 +99,7 @@ object mod {
     @JSImport("ng-table", "NgTableFilterConfig.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table", "NgTableFilterConfigProvider")
@@ -121,8 +118,7 @@ object mod {
     @JSImport("ng-table", "NgTableFilterConfigProvider.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table", "NgTableParams")
@@ -145,17 +141,14 @@ object mod {
     @JSImport("ng-table", "NgTableParams.$log")
     @js.native
     def $log: js.Any = js.native
-    @scala.inline
-    def $log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
+    inline def $log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table", "NgTableParams.$q")
     @js.native
     def $q: js.Any = js.native
-    @scala.inline
-    def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
+    inline def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def init(
+    inline def init(
       $q: IQService,
       $log: ILogService,
       ngTableDefaults: IDefaults,
@@ -166,20 +159,17 @@ object mod {
     @JSImport("ng-table", "NgTableParams.ngTableDefaults")
     @js.native
     def ngTableDefaults: js.Any = js.native
-    @scala.inline
-    def ngTableDefaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
+    inline def ngTableDefaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table", "NgTableParams.ngTableEventsChannel")
     @js.native
     def ngTableEventsChannel: js.Any = js.native
-    @scala.inline
-    def ngTableEventsChannel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
+    inline def ngTableEventsChannel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table", "NgTableParams.ngTableSettings")
     @js.native
     def ngTableSettings: js.Any = js.native
-    @scala.inline
-    def ngTableSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
+    inline def ngTableSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table", "ngTableBrowserModule")

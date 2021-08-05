@@ -39,6 +39,6 @@ object commandMod {
     @JSName("project")
     val project_FCommand: js.UndefOr[IProject] = js.native
     
-    val taskChains: js.Array[TaskChain] = js.native
+    /* protected */ val taskChains: js.Array[TaskChain] = js.native
   }
 }

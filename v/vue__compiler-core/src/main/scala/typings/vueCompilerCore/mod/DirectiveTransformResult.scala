@@ -14,34 +14,25 @@ trait DirectiveTransformResult extends StObject {
 }
 object DirectiveTransformResult {
   
-  @scala.inline
-  def apply(props: js.Array[Property]): DirectiveTransformResult = {
+  inline def apply(props: js.Array[Property]): DirectiveTransformResult = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectiveTransformResult]
   }
   
-  @scala.inline
-  implicit class DirectiveTransformResultMutableBuilder[Self <: DirectiveTransformResult] (val x: Self) extends AnyVal {
+  extension [Self <: DirectiveTransformResult](x: Self) {
     
-    @scala.inline
-    def setNeedRuntime(value: Boolean | js.Symbol): Self = StObject.set(x, "needRuntime", value.asInstanceOf[js.Any])
+    inline def setNeedRuntime(value: Boolean | js.Symbol): Self = StObject.set(x, "needRuntime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedRuntimeUndefined: Self = StObject.set(x, "needRuntime", js.undefined)
+    inline def setNeedRuntimeUndefined: Self = StObject.set(x, "needRuntime", js.undefined)
     
-    @scala.inline
-    def setProps(value: js.Array[Property]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: js.Array[Property]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsVarargs(value: Property*): Self = StObject.set(x, "props", js.Array(value :_*))
+    inline def setPropsVarargs(value: Property*): Self = StObject.set(x, "props", js.Array(value :_*))
     
-    @scala.inline
-    def setSsrTagParts(value: js.Array[String | JSChildNode]): Self = StObject.set(x, "ssrTagParts", value.asInstanceOf[js.Any])
+    inline def setSsrTagParts(value: js.Array[String | JSChildNode]): Self = StObject.set(x, "ssrTagParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrTagPartsUndefined: Self = StObject.set(x, "ssrTagParts", js.undefined)
+    inline def setSsrTagPartsUndefined: Self = StObject.set(x, "ssrTagParts", js.undefined)
     
-    @scala.inline
-    def setSsrTagPartsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "ssrTagParts", js.Array(value :_*))
+    inline def setSsrTagPartsVarargs(value: (String | JSChildNode)*): Self = StObject.set(x, "ssrTagParts", js.Array(value :_*))
   }
 }

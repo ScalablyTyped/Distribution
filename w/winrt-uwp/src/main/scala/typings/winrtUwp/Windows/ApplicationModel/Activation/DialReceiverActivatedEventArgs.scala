@@ -34,8 +34,7 @@ trait DialReceiverActivatedEventArgs extends StObject {
 }
 object DialReceiverActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appName: String,
     arguments: String,
     currentlyShownApplicationViewId: Double,
@@ -49,31 +48,22 @@ object DialReceiverActivatedEventArgs {
     __obj.asInstanceOf[DialReceiverActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class DialReceiverActivatedEventArgsMutableBuilder[Self <: DialReceiverActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DialReceiverActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentlyShownApplicationViewId(value: Double): Self = StObject.set(x, "currentlyShownApplicationViewId", value.asInstanceOf[js.Any])
+    inline def setCurrentlyShownApplicationViewId(value: Double): Self = StObject.set(x, "currentlyShownApplicationViewId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileId(value: String): Self = StObject.set(x, "tileId", value.asInstanceOf[js.Any])
+    inline def setTileId(value: String): Self = StObject.set(x, "tileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewSwitcher(value: ActivationViewSwitcher): Self = StObject.set(x, "viewSwitcher", value.asInstanceOf[js.Any])
+    inline def setViewSwitcher(value: ActivationViewSwitcher): Self = StObject.set(x, "viewSwitcher", value.asInstanceOf[js.Any])
   }
 }

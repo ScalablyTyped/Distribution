@@ -144,130 +144,89 @@ trait SchemaAddress extends StObject {
 }
 object SchemaAddress {
   
-  @scala.inline
-  def apply(): SchemaAddress = {
+  inline def apply(): SchemaAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddress]
   }
   
-  @scala.inline
-  implicit class SchemaAddressMutableBuilder[Self <: SchemaAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddress](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressType(value: String): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
+    inline def setAddressType(value: String): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressTypeUndefined: Self = StObject.set(x, "addressType", js.undefined)
+    inline def setAddressTypeUndefined: Self = StObject.set(x, "addressType", js.undefined)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIpVersion(value: String): Self = StObject.set(x, "ipVersion", value.asInstanceOf[js.Any])
+    inline def setIpVersion(value: String): Self = StObject.set(x, "ipVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpVersionUndefined: Self = StObject.set(x, "ipVersion", js.undefined)
+    inline def setIpVersionUndefined: Self = StObject.set(x, "ipVersion", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
+    inline def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
+    inline def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTier(value: String): Self = StObject.set(x, "networkTier", value.asInstanceOf[js.Any])
+    inline def setNetworkTier(value: String): Self = StObject.set(x, "networkTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTierUndefined: Self = StObject.set(x, "networkTier", js.undefined)
+    inline def setNetworkTierUndefined: Self = StObject.set(x, "networkTier", js.undefined)
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setPrefixLength(value: Double): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
+    inline def setPrefixLength(value: Double): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixLengthUndefined: Self = StObject.set(x, "prefixLength", js.undefined)
+    inline def setPrefixLengthUndefined: Self = StObject.set(x, "prefixLength", js.undefined)
     
-    @scala.inline
-    def setPurpose(value: String): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
+    inline def setPurpose(value: String): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
+    inline def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
-    @scala.inline
-    def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

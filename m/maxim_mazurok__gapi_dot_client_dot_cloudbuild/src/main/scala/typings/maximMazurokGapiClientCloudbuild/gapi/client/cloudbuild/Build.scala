@@ -110,183 +110,127 @@ trait Build extends StObject {
 }
 object Build {
   
-  @scala.inline
-  def apply(): Build = {
+  inline def apply(): Build = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Build]
   }
   
-  @scala.inline
-  implicit class BuildMutableBuilder[Self <: Build] (val x: Self) extends AnyVal {
+  extension [Self <: Build](x: Self) {
     
-    @scala.inline
-    def setArtifacts(value: Artifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: Artifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
+    inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
-    @scala.inline
-    def setBuildTriggerId(value: String): Self = StObject.set(x, "buildTriggerId", value.asInstanceOf[js.Any])
+    inline def setBuildTriggerId(value: String): Self = StObject.set(x, "buildTriggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildTriggerIdUndefined: Self = StObject.set(x, "buildTriggerId", js.undefined)
+    inline def setBuildTriggerIdUndefined: Self = StObject.set(x, "buildTriggerId", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
+    inline def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: String*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setLogUrl(value: String): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
+    inline def setLogUrl(value: String): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUrlUndefined: Self = StObject.set(x, "logUrl", js.undefined)
+    inline def setLogUrlUndefined: Self = StObject.set(x, "logUrl", js.undefined)
     
-    @scala.inline
-    def setLogsBucket(value: String): Self = StObject.set(x, "logsBucket", value.asInstanceOf[js.Any])
+    inline def setLogsBucket(value: String): Self = StObject.set(x, "logsBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogsBucketUndefined: Self = StObject.set(x, "logsBucket", js.undefined)
+    inline def setLogsBucketUndefined: Self = StObject.set(x, "logsBucket", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: BuildOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: BuildOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setQueueTtl(value: String): Self = StObject.set(x, "queueTtl", value.asInstanceOf[js.Any])
+    inline def setQueueTtl(value: String): Self = StObject.set(x, "queueTtl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueTtlUndefined: Self = StObject.set(x, "queueTtl", js.undefined)
+    inline def setQueueTtlUndefined: Self = StObject.set(x, "queueTtl", js.undefined)
     
-    @scala.inline
-    def setResults(value: Results): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Results): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setSecrets(value: js.Array[Secret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    inline def setSecrets(value: js.Array[Secret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
+    inline def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
     
-    @scala.inline
-    def setSecretsVarargs(value: Secret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+    inline def setSecretsVarargs(value: Secret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceProvenance(value: SourceProvenance): Self = StObject.set(x, "sourceProvenance", value.asInstanceOf[js.Any])
+    inline def setSourceProvenance(value: SourceProvenance): Self = StObject.set(x, "sourceProvenance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceProvenanceUndefined: Self = StObject.set(x, "sourceProvenance", js.undefined)
+    inline def setSourceProvenanceUndefined: Self = StObject.set(x, "sourceProvenance", js.undefined)
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetail(value: String): Self = StObject.set(x, "statusDetail", value.asInstanceOf[js.Any])
+    inline def setStatusDetail(value: String): Self = StObject.set(x, "statusDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailUndefined: Self = StObject.set(x, "statusDetail", js.undefined)
+    inline def setStatusDetailUndefined: Self = StObject.set(x, "statusDetail", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSteps(value: js.Array[BuildStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[BuildStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: BuildStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: BuildStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
-    @scala.inline
-    def setSubstitutions(
+    inline def setSubstitutions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[js.Any]
     ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
+    inline def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setTiming(
+    inline def setTiming(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.cloudbuild.gapi.client.cloudbuild.TimeSpan}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.Build & TopLevel[js.Any]
     ): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
+    inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
   }
 }

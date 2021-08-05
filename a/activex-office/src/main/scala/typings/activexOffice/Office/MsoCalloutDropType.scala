@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoCalloutDropType extends StObject
 object MsoCalloutDropType {
   
-  @scala.inline
-  def msoCalloutDropBottom: `4` = 4.asInstanceOf[`4`]
+  inline def msoCalloutDropBottom: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoCalloutDropCenter: `3` = 3.asInstanceOf[`3`]
+  inline def msoCalloutDropCenter: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoCalloutDropCustom: `1` = 1.asInstanceOf[`1`]
+  inline def msoCalloutDropCustom: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoCalloutDropMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoCalloutDropMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoCalloutDropTop: `2` = 2.asInstanceOf[`2`]
+  inline def msoCalloutDropTop: `2` = 2.asInstanceOf[`2`]
 }

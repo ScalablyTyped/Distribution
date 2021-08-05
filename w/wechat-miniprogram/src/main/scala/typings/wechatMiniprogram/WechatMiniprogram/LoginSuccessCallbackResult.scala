@@ -13,19 +13,15 @@ trait LoginSuccessCallbackResult extends StObject {
 }
 object LoginSuccessCallbackResult {
   
-  @scala.inline
-  def apply(code: String, errMsg: String): LoginSuccessCallbackResult = {
+  inline def apply(code: String, errMsg: String): LoginSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class LoginSuccessCallbackResultMutableBuilder[Self <: LoginSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: LoginSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

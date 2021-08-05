@@ -18,19 +18,15 @@ trait DetachSecurityProfileRequest extends StObject {
 }
 object DetachSecurityProfileRequest {
   
-  @scala.inline
-  def apply(securityProfileName: SecurityProfileName, securityProfileTargetArn: SecurityProfileTargetArn): DetachSecurityProfileRequest = {
+  inline def apply(securityProfileName: SecurityProfileName, securityProfileTargetArn: SecurityProfileTargetArn): DetachSecurityProfileRequest = {
     val __obj = js.Dynamic.literal(securityProfileName = securityProfileName.asInstanceOf[js.Any], securityProfileTargetArn = securityProfileTargetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetachSecurityProfileRequest]
   }
   
-  @scala.inline
-  implicit class DetachSecurityProfileRequestMutableBuilder[Self <: DetachSecurityProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetachSecurityProfileRequest](x: Self) {
     
-    @scala.inline
-    def setSecurityProfileName(value: SecurityProfileName): Self = StObject.set(x, "securityProfileName", value.asInstanceOf[js.Any])
+    inline def setSecurityProfileName(value: SecurityProfileName): Self = StObject.set(x, "securityProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityProfileTargetArn(value: SecurityProfileTargetArn): Self = StObject.set(x, "securityProfileTargetArn", value.asInstanceOf[js.Any])
+    inline def setSecurityProfileTargetArn(value: SecurityProfileTargetArn): Self = StObject.set(x, "securityProfileTargetArn", value.asInstanceOf[js.Any])
   }
 }

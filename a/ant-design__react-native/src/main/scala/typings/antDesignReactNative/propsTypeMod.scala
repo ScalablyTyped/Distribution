@@ -23,38 +23,28 @@ object propsTypeMod {
   }
   object ButtonPropsType {
     
-    @scala.inline
-    def apply(): ButtonPropsType = {
+    inline def apply(): ButtonPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonPropsType]
     }
     
-    @scala.inline
-    implicit class ButtonPropsTypeMutableBuilder[Self <: ButtonPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonPropsType](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setType(value: primary | warning | ghost): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: primary | warning | ghost): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

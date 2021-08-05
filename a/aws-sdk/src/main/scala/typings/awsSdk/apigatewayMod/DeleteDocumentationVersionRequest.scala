@@ -18,19 +18,15 @@ trait DeleteDocumentationVersionRequest extends StObject {
 }
 object DeleteDocumentationVersionRequest {
   
-  @scala.inline
-  def apply(documentationVersion: String, restApiId: String): DeleteDocumentationVersionRequest = {
+  inline def apply(documentationVersion: String, restApiId: String): DeleteDocumentationVersionRequest = {
     val __obj = js.Dynamic.literal(documentationVersion = documentationVersion.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDocumentationVersionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDocumentationVersionRequestMutableBuilder[Self <: DeleteDocumentationVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDocumentationVersionRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentationVersion(value: String): Self = StObject.set(x, "documentationVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentationVersion(value: String): Self = StObject.set(x, "documentationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

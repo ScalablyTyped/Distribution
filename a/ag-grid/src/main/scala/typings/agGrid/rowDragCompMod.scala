@@ -17,16 +17,16 @@ object rowDragCompMod {
     
     /* private */ def addDragSource(): js.Any = js.native
     
-    val beans: js.Any = js.native
+    /* private */ val beans: js.Any = js.native
     
-    val cellValue: js.Any = js.native
+    /* private */ val cellValue: js.Any = js.native
     
     /* private */ def checkCompatibility(): js.Any = js.native
     
-    val column: js.Any = js.native
+    /* private */ val column: js.Any = js.native
     
     /* private */ def postConstruct(): js.Any = js.native
     
-    val rowNode: js.Any = js.native
+    /* private */ val rowNode: js.Any = js.native
   }
 }

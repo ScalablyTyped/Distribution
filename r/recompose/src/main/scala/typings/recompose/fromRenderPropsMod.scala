@@ -13,13 +13,11 @@ object fromRenderPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TInner, TOutter, TRenderProps](
+  inline def default[TInner, TOutter, TRenderProps](
     RenderPropsComponent: ComponentType[js.Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner]
   ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
-  @scala.inline
-  def default[TInner, TOutter, TRenderProps](
+  inline def default[TInner, TOutter, TRenderProps](
     RenderPropsComponent: ComponentType[js.Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner],
     renderPropName: String

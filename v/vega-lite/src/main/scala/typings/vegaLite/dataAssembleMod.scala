@@ -15,9 +15,7 @@ object dataAssembleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assembleFacetData(root: FacetNode): js.Array[VgData] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleFacetData")(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[VgData]]
+  inline def assembleFacetData(root: FacetNode): js.Array[VgData] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleFacetData")(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[VgData]]
   
-  @scala.inline
-  def assembleRootData(dataComponent: DataComponent, datasets: Dict[InlineDataset]): js.Array[VgData] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleRootData")(dataComponent.asInstanceOf[js.Any], datasets.asInstanceOf[js.Any])).asInstanceOf[js.Array[VgData]]
+  inline def assembleRootData(dataComponent: DataComponent, datasets: Dict[InlineDataset]): js.Array[VgData] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleRootData")(dataComponent.asInstanceOf[js.Any], datasets.asInstanceOf[js.Any])).asInstanceOf[js.Array[VgData]]
 }

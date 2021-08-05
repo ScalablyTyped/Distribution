@@ -60,19 +60,16 @@ object FormSelect {
     * Get Instance
     */
   /* static member */
-  @scala.inline
-  def getInstance(elem: Element): typings.materializeCss.M.FormSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.FormSelect]
+  inline def getInstance(elem: Element): typings.materializeCss.M.FormSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.FormSelect]
   
   /**
     * Init FormSelects
     */
   /* static member */
-  @scala.inline
-  def init(
+  inline def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
   ): js.Array[typings.materializeCss.M.FormSelect] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.FormSelect]]
-  @scala.inline
-  def init(
+  inline def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
     options: PartialFormSelectOptions
   ): js.Array[typings.materializeCss.M.FormSelect] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.FormSelect]]
@@ -80,8 +77,6 @@ object FormSelect {
     * Init FormSelect
     */
   /* static member */
-  @scala.inline
-  def init(els: Element): typings.materializeCss.M.FormSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.FormSelect]
-  @scala.inline
-  def init(els: Element, options: PartialFormSelectOptions): typings.materializeCss.M.FormSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.FormSelect]
+  inline def init(els: Element): typings.materializeCss.M.FormSelect = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.FormSelect]
+  inline def init(els: Element, options: PartialFormSelectOptions): typings.materializeCss.M.FormSelect = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.FormSelect]
 }

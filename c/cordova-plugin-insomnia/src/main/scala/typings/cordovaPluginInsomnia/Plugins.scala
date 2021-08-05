@@ -11,16 +11,13 @@ trait Plugins extends StObject {
 }
 object Plugins {
   
-  @scala.inline
-  def apply(insomnia: Insomnia): Plugins = {
+  inline def apply(insomnia: Insomnia): Plugins = {
     val __obj = js.Dynamic.literal(insomnia = insomnia.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugins]
   }
   
-  @scala.inline
-  implicit class PluginsMutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
+  extension [Self <: Plugins](x: Self) {
     
-    @scala.inline
-    def setInsomnia(value: Insomnia): Self = StObject.set(x, "insomnia", value.asInstanceOf[js.Any])
+    inline def setInsomnia(value: Insomnia): Self = StObject.set(x, "insomnia", value.asInstanceOf[js.Any])
   }
 }

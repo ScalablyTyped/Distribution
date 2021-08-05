@@ -108,145 +108,99 @@ trait FleetData extends StObject {
 }
 object FleetData {
   
-  @scala.inline
-  def apply(): FleetData = {
+  inline def apply(): FleetData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetData]
   }
   
-  @scala.inline
-  implicit class FleetDataMutableBuilder[Self <: FleetData] (val x: Self) extends AnyVal {
+  extension [Self <: FleetData](x: Self) {
     
-    @scala.inline
-    def setActivityStatus(value: FleetActivityStatus): Self = StObject.set(x, "ActivityStatus", value.asInstanceOf[js.Any])
+    inline def setActivityStatus(value: FleetActivityStatus): Self = StObject.set(x, "ActivityStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityStatusUndefined: Self = StObject.set(x, "ActivityStatus", js.undefined)
+    inline def setActivityStatusUndefined: Self = StObject.set(x, "ActivityStatus", js.undefined)
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    @scala.inline
-    def setErrors(value: DescribeFleetsErrorSet): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: DescribeFleetsErrorSet): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: DescribeFleetError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: DescribeFleetError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
-    @scala.inline
-    def setExcessCapacityTerminationPolicy(value: FleetExcessCapacityTerminationPolicy): Self = StObject.set(x, "ExcessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
+    inline def setExcessCapacityTerminationPolicy(value: FleetExcessCapacityTerminationPolicy): Self = StObject.set(x, "ExcessCapacityTerminationPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcessCapacityTerminationPolicyUndefined: Self = StObject.set(x, "ExcessCapacityTerminationPolicy", js.undefined)
+    inline def setExcessCapacityTerminationPolicyUndefined: Self = StObject.set(x, "ExcessCapacityTerminationPolicy", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setFleetState(value: FleetStateCode): Self = StObject.set(x, "FleetState", value.asInstanceOf[js.Any])
+    inline def setFleetState(value: FleetStateCode): Self = StObject.set(x, "FleetState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetStateUndefined: Self = StObject.set(x, "FleetState", js.undefined)
+    inline def setFleetStateUndefined: Self = StObject.set(x, "FleetState", js.undefined)
     
-    @scala.inline
-    def setFulfilledCapacity(value: Double): Self = StObject.set(x, "FulfilledCapacity", value.asInstanceOf[js.Any])
+    inline def setFulfilledCapacity(value: Double): Self = StObject.set(x, "FulfilledCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfilledCapacityUndefined: Self = StObject.set(x, "FulfilledCapacity", js.undefined)
+    inline def setFulfilledCapacityUndefined: Self = StObject.set(x, "FulfilledCapacity", js.undefined)
     
-    @scala.inline
-    def setFulfilledOnDemandCapacity(value: Double): Self = StObject.set(x, "FulfilledOnDemandCapacity", value.asInstanceOf[js.Any])
+    inline def setFulfilledOnDemandCapacity(value: Double): Self = StObject.set(x, "FulfilledOnDemandCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfilledOnDemandCapacityUndefined: Self = StObject.set(x, "FulfilledOnDemandCapacity", js.undefined)
+    inline def setFulfilledOnDemandCapacityUndefined: Self = StObject.set(x, "FulfilledOnDemandCapacity", js.undefined)
     
-    @scala.inline
-    def setInstances(value: DescribeFleetsInstancesSet): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: DescribeFleetsInstancesSet): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: DescribeFleetsInstances*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: DescribeFleetsInstances*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
-    @scala.inline
-    def setLaunchTemplateConfigs(value: FleetLaunchTemplateConfigList): Self = StObject.set(x, "LaunchTemplateConfigs", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateConfigs(value: FleetLaunchTemplateConfigList): Self = StObject.set(x, "LaunchTemplateConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateConfigsUndefined: Self = StObject.set(x, "LaunchTemplateConfigs", js.undefined)
+    inline def setLaunchTemplateConfigsUndefined: Self = StObject.set(x, "LaunchTemplateConfigs", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateConfigsVarargs(value: FleetLaunchTemplateConfig*): Self = StObject.set(x, "LaunchTemplateConfigs", js.Array(value :_*))
+    inline def setLaunchTemplateConfigsVarargs(value: FleetLaunchTemplateConfig*): Self = StObject.set(x, "LaunchTemplateConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setOnDemandOptions(value: OnDemandOptions): Self = StObject.set(x, "OnDemandOptions", value.asInstanceOf[js.Any])
+    inline def setOnDemandOptions(value: OnDemandOptions): Self = StObject.set(x, "OnDemandOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandOptionsUndefined: Self = StObject.set(x, "OnDemandOptions", js.undefined)
+    inline def setOnDemandOptionsUndefined: Self = StObject.set(x, "OnDemandOptions", js.undefined)
     
-    @scala.inline
-    def setReplaceUnhealthyInstances(value: Boolean): Self = StObject.set(x, "ReplaceUnhealthyInstances", value.asInstanceOf[js.Any])
+    inline def setReplaceUnhealthyInstances(value: Boolean): Self = StObject.set(x, "ReplaceUnhealthyInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUnhealthyInstancesUndefined: Self = StObject.set(x, "ReplaceUnhealthyInstances", js.undefined)
+    inline def setReplaceUnhealthyInstancesUndefined: Self = StObject.set(x, "ReplaceUnhealthyInstances", js.undefined)
     
-    @scala.inline
-    def setSpotOptions(value: SpotOptions): Self = StObject.set(x, "SpotOptions", value.asInstanceOf[js.Any])
+    inline def setSpotOptions(value: SpotOptions): Self = StObject.set(x, "SpotOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotOptionsUndefined: Self = StObject.set(x, "SpotOptions", js.undefined)
+    inline def setSpotOptionsUndefined: Self = StObject.set(x, "SpotOptions", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetCapacitySpecification(value: TargetCapacitySpecification): Self = StObject.set(x, "TargetCapacitySpecification", value.asInstanceOf[js.Any])
+    inline def setTargetCapacitySpecification(value: TargetCapacitySpecification): Self = StObject.set(x, "TargetCapacitySpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCapacitySpecificationUndefined: Self = StObject.set(x, "TargetCapacitySpecification", js.undefined)
+    inline def setTargetCapacitySpecificationUndefined: Self = StObject.set(x, "TargetCapacitySpecification", js.undefined)
     
-    @scala.inline
-    def setTerminateInstancesWithExpiration(value: Boolean): Self = StObject.set(x, "TerminateInstancesWithExpiration", value.asInstanceOf[js.Any])
+    inline def setTerminateInstancesWithExpiration(value: Boolean): Self = StObject.set(x, "TerminateInstancesWithExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateInstancesWithExpirationUndefined: Self = StObject.set(x, "TerminateInstancesWithExpiration", js.undefined)
+    inline def setTerminateInstancesWithExpirationUndefined: Self = StObject.set(x, "TerminateInstancesWithExpiration", js.undefined)
     
-    @scala.inline
-    def setType(value: FleetType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: FleetType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValidFrom(value: DateTime): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
+    inline def setValidFrom(value: DateTime): Self = StObject.set(x, "ValidFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
+    inline def setValidFromUndefined: Self = StObject.set(x, "ValidFrom", js.undefined)
     
-    @scala.inline
-    def setValidUntil(value: DateTime): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
+    inline def setValidUntil(value: DateTime): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
+    inline def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
   }
 }

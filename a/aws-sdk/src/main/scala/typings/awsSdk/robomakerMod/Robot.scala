@@ -53,67 +53,47 @@ trait Robot extends StObject {
 }
 object Robot {
   
-  @scala.inline
-  def apply(): Robot = {
+  inline def apply(): Robot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Robot]
   }
   
-  @scala.inline
-  implicit class RobotMutableBuilder[Self <: Robot] (val x: Self) extends AnyVal {
+  extension [Self <: Robot](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setFleetArn(value: Arn): Self = StObject.set(x, "fleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: Arn): Self = StObject.set(x, "fleetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetArnUndefined: Self = StObject.set(x, "fleetArn", js.undefined)
+    inline def setFleetArnUndefined: Self = StObject.set(x, "fleetArn", js.undefined)
     
-    @scala.inline
-    def setGreenGrassGroupId(value: Id): Self = StObject.set(x, "greenGrassGroupId", value.asInstanceOf[js.Any])
+    inline def setGreenGrassGroupId(value: Id): Self = StObject.set(x, "greenGrassGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreenGrassGroupIdUndefined: Self = StObject.set(x, "greenGrassGroupId", js.undefined)
+    inline def setGreenGrassGroupIdUndefined: Self = StObject.set(x, "greenGrassGroupId", js.undefined)
     
-    @scala.inline
-    def setLastDeploymentJob(value: Arn): Self = StObject.set(x, "lastDeploymentJob", value.asInstanceOf[js.Any])
+    inline def setLastDeploymentJob(value: Arn): Self = StObject.set(x, "lastDeploymentJob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDeploymentJobUndefined: Self = StObject.set(x, "lastDeploymentJob", js.undefined)
+    inline def setLastDeploymentJobUndefined: Self = StObject.set(x, "lastDeploymentJob", js.undefined)
     
-    @scala.inline
-    def setLastDeploymentTime(value: CreatedAt): Self = StObject.set(x, "lastDeploymentTime", value.asInstanceOf[js.Any])
+    inline def setLastDeploymentTime(value: CreatedAt): Self = StObject.set(x, "lastDeploymentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDeploymentTimeUndefined: Self = StObject.set(x, "lastDeploymentTime", js.undefined)
+    inline def setLastDeploymentTimeUndefined: Self = StObject.set(x, "lastDeploymentTime", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: RobotStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RobotStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

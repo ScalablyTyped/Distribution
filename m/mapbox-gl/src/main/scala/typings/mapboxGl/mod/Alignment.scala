@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Alignment extends StObject
 object Alignment {
   
-  @scala.inline
-  def auto: typings.mapboxGl.mapboxGlStrings.auto = "auto".asInstanceOf[typings.mapboxGl.mapboxGlStrings.auto]
+  inline def auto: typings.mapboxGl.mapboxGlStrings.auto = "auto".asInstanceOf[typings.mapboxGl.mapboxGlStrings.auto]
   
-  @scala.inline
-  def map: typings.mapboxGl.mapboxGlStrings.map = "map".asInstanceOf[typings.mapboxGl.mapboxGlStrings.map]
+  inline def map: typings.mapboxGl.mapboxGlStrings.map = "map".asInstanceOf[typings.mapboxGl.mapboxGlStrings.map]
   
-  @scala.inline
-  def viewport: typings.mapboxGl.mapboxGlStrings.viewport = "viewport".asInstanceOf[typings.mapboxGl.mapboxGlStrings.viewport]
+  inline def viewport: typings.mapboxGl.mapboxGlStrings.viewport = "viewport".asInstanceOf[typings.mapboxGl.mapboxGlStrings.viewport]
 }

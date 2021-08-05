@@ -29,55 +29,39 @@ trait ImagePropertiesSuggestionState extends StObject {
 }
 object ImagePropertiesSuggestionState {
   
-  @scala.inline
-  def apply(): ImagePropertiesSuggestionState = {
+  inline def apply(): ImagePropertiesSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagePropertiesSuggestionState]
   }
   
-  @scala.inline
-  implicit class ImagePropertiesSuggestionStateMutableBuilder[Self <: ImagePropertiesSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: ImagePropertiesSuggestionState](x: Self) {
     
-    @scala.inline
-    def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
+    inline def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
+    inline def setAngleSuggestedUndefined: Self = StObject.set(x, "angleSuggested", js.undefined)
     
-    @scala.inline
-    def setBrightnessSuggested(value: Boolean): Self = StObject.set(x, "brightnessSuggested", value.asInstanceOf[js.Any])
+    inline def setBrightnessSuggested(value: Boolean): Self = StObject.set(x, "brightnessSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrightnessSuggestedUndefined: Self = StObject.set(x, "brightnessSuggested", js.undefined)
+    inline def setBrightnessSuggestedUndefined: Self = StObject.set(x, "brightnessSuggested", js.undefined)
     
-    @scala.inline
-    def setContentUriSuggested(value: Boolean): Self = StObject.set(x, "contentUriSuggested", value.asInstanceOf[js.Any])
+    inline def setContentUriSuggested(value: Boolean): Self = StObject.set(x, "contentUriSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUriSuggestedUndefined: Self = StObject.set(x, "contentUriSuggested", js.undefined)
+    inline def setContentUriSuggestedUndefined: Self = StObject.set(x, "contentUriSuggested", js.undefined)
     
-    @scala.inline
-    def setContrastSuggested(value: Boolean): Self = StObject.set(x, "contrastSuggested", value.asInstanceOf[js.Any])
+    inline def setContrastSuggested(value: Boolean): Self = StObject.set(x, "contrastSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrastSuggestedUndefined: Self = StObject.set(x, "contrastSuggested", js.undefined)
+    inline def setContrastSuggestedUndefined: Self = StObject.set(x, "contrastSuggested", js.undefined)
     
-    @scala.inline
-    def setCropPropertiesSuggestionState(value: CropPropertiesSuggestionState): Self = StObject.set(x, "cropPropertiesSuggestionState", value.asInstanceOf[js.Any])
+    inline def setCropPropertiesSuggestionState(value: CropPropertiesSuggestionState): Self = StObject.set(x, "cropPropertiesSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropPropertiesSuggestionStateUndefined: Self = StObject.set(x, "cropPropertiesSuggestionState", js.undefined)
+    inline def setCropPropertiesSuggestionStateUndefined: Self = StObject.set(x, "cropPropertiesSuggestionState", js.undefined)
     
-    @scala.inline
-    def setSourceUriSuggested(value: Boolean): Self = StObject.set(x, "sourceUriSuggested", value.asInstanceOf[js.Any])
+    inline def setSourceUriSuggested(value: Boolean): Self = StObject.set(x, "sourceUriSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUriSuggestedUndefined: Self = StObject.set(x, "sourceUriSuggested", js.undefined)
+    inline def setSourceUriSuggestedUndefined: Self = StObject.set(x, "sourceUriSuggested", js.undefined)
     
-    @scala.inline
-    def setTransparencySuggested(value: Boolean): Self = StObject.set(x, "transparencySuggested", value.asInstanceOf[js.Any])
+    inline def setTransparencySuggested(value: Boolean): Self = StObject.set(x, "transparencySuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparencySuggestedUndefined: Self = StObject.set(x, "transparencySuggested", js.undefined)
+    inline def setTransparencySuggestedUndefined: Self = StObject.set(x, "transparencySuggested", js.undefined)
   }
 }

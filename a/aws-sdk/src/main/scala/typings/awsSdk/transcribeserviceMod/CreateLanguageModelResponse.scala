@@ -33,43 +33,31 @@ trait CreateLanguageModelResponse extends StObject {
 }
 object CreateLanguageModelResponse {
   
-  @scala.inline
-  def apply(): CreateLanguageModelResponse = {
+  inline def apply(): CreateLanguageModelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateLanguageModelResponse]
   }
   
-  @scala.inline
-  implicit class CreateLanguageModelResponseMutableBuilder[Self <: CreateLanguageModelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLanguageModelResponse](x: Self) {
     
-    @scala.inline
-    def setBaseModelName(value: BaseModelName): Self = StObject.set(x, "BaseModelName", value.asInstanceOf[js.Any])
+    inline def setBaseModelName(value: BaseModelName): Self = StObject.set(x, "BaseModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseModelNameUndefined: Self = StObject.set(x, "BaseModelName", js.undefined)
+    inline def setBaseModelNameUndefined: Self = StObject.set(x, "BaseModelName", js.undefined)
     
-    @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
+    inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
+    inline def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: CLMLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: CLMLanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelNameUndefined: Self = StObject.set(x, "ModelName", js.undefined)
+    inline def setModelNameUndefined: Self = StObject.set(x, "ModelName", js.undefined)
     
-    @scala.inline
-    def setModelStatus(value: ModelStatus): Self = StObject.set(x, "ModelStatus", value.asInstanceOf[js.Any])
+    inline def setModelStatus(value: ModelStatus): Self = StObject.set(x, "ModelStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelStatusUndefined: Self = StObject.set(x, "ModelStatus", js.undefined)
+    inline def setModelStatusUndefined: Self = StObject.set(x, "ModelStatus", js.undefined)
   }
 }

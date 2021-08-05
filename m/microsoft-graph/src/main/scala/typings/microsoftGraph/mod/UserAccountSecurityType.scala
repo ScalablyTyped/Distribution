@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UserAccountSecurityType extends StObject
 object UserAccountSecurityType {
   
-  @scala.inline
-  def administrator: typings.microsoftGraph.microsoftGraphStrings.administrator = "administrator".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.administrator]
+  inline def administrator: typings.microsoftGraph.microsoftGraphStrings.administrator = "administrator".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.administrator]
   
-  @scala.inline
-  def power: typings.microsoftGraph.microsoftGraphStrings.power = "power".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.power]
+  inline def power: typings.microsoftGraph.microsoftGraphStrings.power = "power".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.power]
   
-  @scala.inline
-  def standard: typings.microsoftGraph.microsoftGraphStrings.standard = "standard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.standard]
+  inline def standard: typings.microsoftGraph.microsoftGraphStrings.standard = "standard".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.standard]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

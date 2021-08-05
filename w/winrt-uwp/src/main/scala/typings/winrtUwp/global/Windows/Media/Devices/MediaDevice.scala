@@ -21,12 +21,10 @@ object MediaDevice {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def addEventListener_defaultaudiocapturedevicechanged(
+  inline def addEventListener_defaultaudiocapturedevicechanged(
     `type`: defaultaudiocapturedevicechanged,
     listener: TypedEventHandler[
       js.Any, 
@@ -35,8 +33,7 @@ object MediaDevice {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def addEventListener_defaultaudiorenderdevicechanged(
+  inline def addEventListener_defaultaudiorenderdevicechanged(
     `type`: defaultaudiorenderdevicechanged,
     listener: TypedEventHandler[
       js.Any, 
@@ -49,16 +46,14 @@ object MediaDevice {
     * @return The identifier string of the audio capture device.
     */
   /* static member */
-  @scala.inline
-  def getAudioCaptureSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAudioCaptureSelector")().asInstanceOf[String]
+  inline def getAudioCaptureSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAudioCaptureSelector")().asInstanceOf[String]
   
   /**
     * Returns the identifier string of a device for rendering audio.
     * @return The identifier string of the audio rendering device.
     */
   /* static member */
-  @scala.inline
-  def getAudioRenderSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAudioRenderSelector")().asInstanceOf[String]
+  inline def getAudioRenderSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAudioRenderSelector")().asInstanceOf[String]
   
   /**
     * Returns the identifier string of the default device for capturing audio in the specified role.
@@ -66,8 +61,7 @@ object MediaDevice {
     * @return The identifier string of the default device.
     */
   /* static member */
-  @scala.inline
-  def getDefaultAudioCaptureId(role: typings.winrtUwp.Windows.Media.Devices.AudioDeviceRole): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudioCaptureId")(role.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDefaultAudioCaptureId(role: typings.winrtUwp.Windows.Media.Devices.AudioDeviceRole): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudioCaptureId")(role.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Returns the identifier string of the default device for rendering audio in the specified role.
@@ -75,16 +69,14 @@ object MediaDevice {
     * @return The identifier string of the default device.
     */
   /* static member */
-  @scala.inline
-  def getDefaultAudioRenderId(role: typings.winrtUwp.Windows.Media.Devices.AudioDeviceRole): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudioRenderId")(role.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDefaultAudioRenderId(role: typings.winrtUwp.Windows.Media.Devices.AudioDeviceRole): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAudioRenderId")(role.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Returns the identifier string of a device for capturing video.
     * @return The identifier string of the video capture device.
     */
   /* static member */
-  @scala.inline
-  def getVideoCaptureSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVideoCaptureSelector")().asInstanceOf[String]
+  inline def getVideoCaptureSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVideoCaptureSelector")().asInstanceOf[String]
   
   /** Raised when the default audio capture device is changed. */
   /* static member */
@@ -94,8 +86,7 @@ object MediaDevice {
     js.Any, 
     typings.winrtUwp.Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs
   ] = js.native
-  @scala.inline
-  def ondefaultaudiocapturedevicechanged_=(
+  inline def ondefaultaudiocapturedevicechanged_=(
     x: TypedEventHandler[
       js.Any, 
       typings.winrtUwp.Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs
@@ -110,8 +101,7 @@ object MediaDevice {
     js.Any, 
     typings.winrtUwp.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs
   ] = js.native
-  @scala.inline
-  def ondefaultaudiorenderdevicechanged_=(
+  inline def ondefaultaudiorenderdevicechanged_=(
     x: TypedEventHandler[
       js.Any, 
       typings.winrtUwp.Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs
@@ -119,12 +109,10 @@ object MediaDevice {
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondefaultaudiorenderdevicechanged")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def removeEventListener_defaultaudiocapturedevicechanged(
+  inline def removeEventListener_defaultaudiocapturedevicechanged(
     `type`: defaultaudiocapturedevicechanged,
     listener: TypedEventHandler[
       js.Any, 
@@ -133,8 +121,7 @@ object MediaDevice {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def removeEventListener_defaultaudiorenderdevicechanged(
+  inline def removeEventListener_defaultaudiorenderdevicechanged(
     `type`: defaultaudiorenderdevicechanged,
     listener: TypedEventHandler[
       js.Any, 

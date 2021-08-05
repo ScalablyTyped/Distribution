@@ -13,19 +13,15 @@ trait ItemsTimedMetadataTrack extends StObject {
 }
 object ItemsTimedMetadataTrack {
   
-  @scala.inline
-  def apply(items: TimedMetadataTrack, returnValue: Double): ItemsTimedMetadataTrack = {
+  inline def apply(items: TimedMetadataTrack, returnValue: Double): ItemsTimedMetadataTrack = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsTimedMetadataTrack]
   }
   
-  @scala.inline
-  implicit class ItemsTimedMetadataTrackMutableBuilder[Self <: ItemsTimedMetadataTrack] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsTimedMetadataTrack](x: Self) {
     
-    @scala.inline
-    def setItems(value: TimedMetadataTrack): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: TimedMetadataTrack): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

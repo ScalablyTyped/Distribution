@@ -10,16 +10,13 @@ trait SignalResponse extends StObject {
 }
 object SignalResponse {
   
-  @scala.inline
-  def apply(timetoken: Double): SignalResponse = {
+  inline def apply(timetoken: Double): SignalResponse = {
     val __obj = js.Dynamic.literal(timetoken = timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalResponse]
   }
   
-  @scala.inline
-  implicit class SignalResponseMutableBuilder[Self <: SignalResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SignalResponse](x: Self) {
     
-    @scala.inline
-    def setTimetoken(value: Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
+    inline def setTimetoken(value: Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }
 }

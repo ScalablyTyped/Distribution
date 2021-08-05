@@ -13,8 +13,7 @@ trait SyntheticEvent extends StObject {
 }
 object SyntheticEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     syntheticEvent: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event],
     value: String
   ): SyntheticEvent = {
@@ -22,13 +21,10 @@ object SyntheticEvent {
     __obj.asInstanceOf[SyntheticEvent]
   }
   
-  @scala.inline
-  implicit class SyntheticEventMutableBuilder[Self <: SyntheticEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SyntheticEvent](x: Self) {
     
-    @scala.inline
-    def setSyntheticEvent(value: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event]): Self = StObject.set(x, "syntheticEvent", value.asInstanceOf[js.Any])
+    inline def setSyntheticEvent(value: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event]): Self = StObject.set(x, "syntheticEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

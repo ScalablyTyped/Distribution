@@ -23,19 +23,15 @@ trait ConfigMapEnvSource extends StObject {
 }
 object ConfigMapEnvSource {
   
-  @scala.inline
-  def apply(name: String, optional: Boolean): ConfigMapEnvSource = {
+  inline def apply(name: String, optional: Boolean): ConfigMapEnvSource = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigMapEnvSource]
   }
   
-  @scala.inline
-  implicit class ConfigMapEnvSourceMutableBuilder[Self <: ConfigMapEnvSource] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigMapEnvSource](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
   }
 }

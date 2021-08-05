@@ -22,8 +22,7 @@ trait GridSize extends StObject {
 }
 object GridSize {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gridSize: Double,
     id: String,
     links: js.Array[Labels],
@@ -36,34 +35,24 @@ object GridSize {
     __obj.asInstanceOf[GridSize]
   }
   
-  @scala.inline
-  implicit class GridSizeMutableBuilder[Self <: GridSize] (val x: Self) extends AnyVal {
+  extension [Self <: GridSize](x: Self) {
     
-    @scala.inline
-    def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
+    inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: js.Array[Labels]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[Labels]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksVarargs(value: Labels*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: Labels*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[Ports]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Ports]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Ports*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Ports*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait ServerReplicationConfiguration extends StObject {
 }
 object ServerReplicationConfiguration {
   
-  @scala.inline
-  def apply(): ServerReplicationConfiguration = {
+  inline def apply(): ServerReplicationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerReplicationConfiguration]
   }
   
-  @scala.inline
-  implicit class ServerReplicationConfigurationMutableBuilder[Self <: ServerReplicationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ServerReplicationConfiguration](x: Self) {
     
-    @scala.inline
-    def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerReplicationParameters(value: ServerReplicationParameters): Self = StObject.set(x, "serverReplicationParameters", value.asInstanceOf[js.Any])
+    inline def setServerReplicationParameters(value: ServerReplicationParameters): Self = StObject.set(x, "serverReplicationParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerReplicationParametersUndefined: Self = StObject.set(x, "serverReplicationParameters", js.undefined)
+    inline def setServerReplicationParametersUndefined: Self = StObject.set(x, "serverReplicationParameters", js.undefined)
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

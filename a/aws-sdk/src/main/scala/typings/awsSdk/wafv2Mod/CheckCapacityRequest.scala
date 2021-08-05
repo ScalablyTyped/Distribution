@@ -18,22 +18,17 @@ trait CheckCapacityRequest extends StObject {
 }
 object CheckCapacityRequest {
   
-  @scala.inline
-  def apply(Rules: Rules, Scope: Scope): CheckCapacityRequest = {
+  inline def apply(Rules: Rules, Scope: Scope): CheckCapacityRequest = {
     val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckCapacityRequest]
   }
   
-  @scala.inline
-  implicit class CheckCapacityRequestMutableBuilder[Self <: CheckCapacityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CheckCapacityRequest](x: Self) {
     
-    @scala.inline
-    def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
   }
 }

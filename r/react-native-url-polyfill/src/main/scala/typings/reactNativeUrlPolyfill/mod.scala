@@ -32,6 +32,5 @@ object mod {
     def this(init: Iterable[js.Tuple2[String, String]]) = this()
   }
   
-  @scala.inline
-  def setupURLPolyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupURLPolyfill")().asInstanceOf[Unit]
+  inline def setupURLPolyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupURLPolyfill")().asInstanceOf[Unit]
 }

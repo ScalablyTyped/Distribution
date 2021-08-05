@@ -10,19 +10,15 @@ trait AnyOf extends StObject {
 }
 object AnyOf {
   
-  @scala.inline
-  def apply(anyOf: js.Array[ItemsType | TypeString]): AnyOf = {
+  inline def apply(anyOf: js.Array[ItemsType | TypeString]): AnyOf = {
     val __obj = js.Dynamic.literal(anyOf = anyOf.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyOf]
   }
   
-  @scala.inline
-  implicit class AnyOfMutableBuilder[Self <: AnyOf] (val x: Self) extends AnyVal {
+  extension [Self <: AnyOf](x: Self) {
     
-    @scala.inline
-    def setAnyOf(value: js.Array[ItemsType | TypeString]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
+    inline def setAnyOf(value: js.Array[ItemsType | TypeString]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyOfVarargs(value: (ItemsType | TypeString)*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
+    inline def setAnyOfVarargs(value: (ItemsType | TypeString)*): Self = StObject.set(x, "anyOf", js.Array(value :_*))
   }
 }

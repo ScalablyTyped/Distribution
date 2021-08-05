@@ -23,31 +23,23 @@ trait FileMetadata extends StObject {
 }
 object FileMetadata {
   
-  @scala.inline
-  def apply(): FileMetadata = {
+  inline def apply(): FileMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileMetadata]
   }
   
-  @scala.inline
-  implicit class FileMetadataMutableBuilder[Self <: FileMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: FileMetadata](x: Self) {
     
-    @scala.inline
-    def setAbsolutePath(value: Path): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
+    inline def setAbsolutePath(value: Path): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
+    inline def setAbsolutePathUndefined: Self = StObject.set(x, "absolutePath", js.undefined)
     
-    @scala.inline
-    def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
+    inline def setBlobId(value: ObjectId): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobIdUndefined: Self = StObject.set(x, "blobId", js.undefined)
+    inline def setBlobIdUndefined: Self = StObject.set(x, "blobId", js.undefined)
     
-    @scala.inline
-    def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+    inline def setFileMode(value: FileModeTypeEnum): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
+    inline def setFileModeUndefined: Self = StObject.set(x, "fileMode", js.undefined)
   }
 }

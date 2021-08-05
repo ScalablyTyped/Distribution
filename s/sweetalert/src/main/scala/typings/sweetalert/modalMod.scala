@@ -12,12 +12,9 @@ object modalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
   
-  @scala.inline
-  def initModalContent(opts: SwalOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initModalContent")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initModalContent(opts: SwalOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initModalContent")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def injectElIntoModal(markup: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("injectElIntoModal")(markup.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def injectElIntoModal(markup: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("injectElIntoModal")(markup.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 }

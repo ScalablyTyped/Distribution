@@ -16,37 +16,27 @@ trait CreatedBefore extends StObject {
 }
 object CreatedBefore {
   
-  @scala.inline
-  def apply(): CreatedBefore = {
+  inline def apply(): CreatedBefore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatedBefore]
   }
   
-  @scala.inline
-  implicit class CreatedBeforeMutableBuilder[Self <: CreatedBefore] (val x: Self) extends AnyVal {
+  extension [Self <: CreatedBefore](x: Self) {
     
-    @scala.inline
-    def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+    inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
+    inline def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
     
-    @scala.inline
-    def setCreatedBefore(value: String): Self = StObject.set(x, "createdBefore", value.asInstanceOf[js.Any])
+    inline def setCreatedBefore(value: String): Self = StObject.set(x, "createdBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedBeforeUndefined: Self = StObject.set(x, "createdBefore", js.undefined)
+    inline def setCreatedBeforeUndefined: Self = StObject.set(x, "createdBefore", js.undefined)
     
-    @scala.inline
-    def setIsLive(value: Boolean): Self = StObject.set(x, "isLive", value.asInstanceOf[js.Any])
+    inline def setIsLive(value: Boolean): Self = StObject.set(x, "isLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLiveUndefined: Self = StObject.set(x, "isLive", js.undefined)
+    inline def setIsLiveUndefined: Self = StObject.set(x, "isLive", js.undefined)
     
-    @scala.inline
-    def setNumNewerVersions(value: Double): Self = StObject.set(x, "numNewerVersions", value.asInstanceOf[js.Any])
+    inline def setNumNewerVersions(value: Double): Self = StObject.set(x, "numNewerVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumNewerVersionsUndefined: Self = StObject.set(x, "numNewerVersions", js.undefined)
+    inline def setNumNewerVersionsUndefined: Self = StObject.set(x, "numNewerVersions", js.undefined)
   }
 }

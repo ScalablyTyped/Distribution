@@ -125,184 +125,125 @@ trait Experiment extends StObject {
 }
 object Experiment {
   
-  @scala.inline
-  def apply(): Experiment = {
+  inline def apply(): Experiment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Experiment]
   }
   
-  @scala.inline
-  implicit class ExperimentMutableBuilder[Self <: Experiment] (val x: Self) extends AnyVal {
+  extension [Self <: Experiment](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEditableInGaUi(value: Boolean): Self = StObject.set(x, "editableInGaUi", value.asInstanceOf[js.Any])
+    inline def setEditableInGaUi(value: Boolean): Self = StObject.set(x, "editableInGaUi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditableInGaUiUndefined: Self = StObject.set(x, "editableInGaUi", js.undefined)
+    inline def setEditableInGaUiUndefined: Self = StObject.set(x, "editableInGaUi", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setEqualWeighting(value: Boolean): Self = StObject.set(x, "equalWeighting", value.asInstanceOf[js.Any])
+    inline def setEqualWeighting(value: Boolean): Self = StObject.set(x, "equalWeighting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEqualWeightingUndefined: Self = StObject.set(x, "equalWeighting", js.undefined)
+    inline def setEqualWeightingUndefined: Self = StObject.set(x, "equalWeighting", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
+    inline def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
+    inline def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMinimumExperimentLengthInDays(value: Double): Self = StObject.set(x, "minimumExperimentLengthInDays", value.asInstanceOf[js.Any])
+    inline def setMinimumExperimentLengthInDays(value: Double): Self = StObject.set(x, "minimumExperimentLengthInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumExperimentLengthInDaysUndefined: Self = StObject.set(x, "minimumExperimentLengthInDays", js.undefined)
+    inline def setMinimumExperimentLengthInDaysUndefined: Self = StObject.set(x, "minimumExperimentLengthInDays", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setObjectiveMetric(value: String): Self = StObject.set(x, "objectiveMetric", value.asInstanceOf[js.Any])
+    inline def setObjectiveMetric(value: String): Self = StObject.set(x, "objectiveMetric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectiveMetricUndefined: Self = StObject.set(x, "objectiveMetric", js.undefined)
+    inline def setObjectiveMetricUndefined: Self = StObject.set(x, "objectiveMetric", js.undefined)
     
-    @scala.inline
-    def setOptimizationType(value: String): Self = StObject.set(x, "optimizationType", value.asInstanceOf[js.Any])
+    inline def setOptimizationType(value: String): Self = StObject.set(x, "optimizationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizationTypeUndefined: Self = StObject.set(x, "optimizationType", js.undefined)
+    inline def setOptimizationTypeUndefined: Self = StObject.set(x, "optimizationType", js.undefined)
     
-    @scala.inline
-    def setParentLink(value: Href): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
+    inline def setParentLink(value: Href): Self = StObject.set(x, "parentLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
+    inline def setParentLinkUndefined: Self = StObject.set(x, "parentLink", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
-    @scala.inline
-    def setReasonExperimentEnded(value: String): Self = StObject.set(x, "reasonExperimentEnded", value.asInstanceOf[js.Any])
+    inline def setReasonExperimentEnded(value: String): Self = StObject.set(x, "reasonExperimentEnded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonExperimentEndedUndefined: Self = StObject.set(x, "reasonExperimentEnded", js.undefined)
+    inline def setReasonExperimentEndedUndefined: Self = StObject.set(x, "reasonExperimentEnded", js.undefined)
     
-    @scala.inline
-    def setRewriteVariationUrlsAsOriginal(value: Boolean): Self = StObject.set(x, "rewriteVariationUrlsAsOriginal", value.asInstanceOf[js.Any])
+    inline def setRewriteVariationUrlsAsOriginal(value: Boolean): Self = StObject.set(x, "rewriteVariationUrlsAsOriginal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRewriteVariationUrlsAsOriginalUndefined: Self = StObject.set(x, "rewriteVariationUrlsAsOriginal", js.undefined)
+    inline def setRewriteVariationUrlsAsOriginalUndefined: Self = StObject.set(x, "rewriteVariationUrlsAsOriginal", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setServingFramework(value: String): Self = StObject.set(x, "servingFramework", value.asInstanceOf[js.Any])
+    inline def setServingFramework(value: String): Self = StObject.set(x, "servingFramework", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServingFrameworkUndefined: Self = StObject.set(x, "servingFramework", js.undefined)
+    inline def setServingFrameworkUndefined: Self = StObject.set(x, "servingFramework", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTrafficCoverage(value: Double): Self = StObject.set(x, "trafficCoverage", value.asInstanceOf[js.Any])
+    inline def setTrafficCoverage(value: Double): Self = StObject.set(x, "trafficCoverage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficCoverageUndefined: Self = StObject.set(x, "trafficCoverage", js.undefined)
+    inline def setTrafficCoverageUndefined: Self = StObject.set(x, "trafficCoverage", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setVariations(value: js.Array[Name]): Self = StObject.set(x, "variations", value.asInstanceOf[js.Any])
+    inline def setVariations(value: js.Array[Name]): Self = StObject.set(x, "variations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariationsUndefined: Self = StObject.set(x, "variations", js.undefined)
+    inline def setVariationsUndefined: Self = StObject.set(x, "variations", js.undefined)
     
-    @scala.inline
-    def setVariationsVarargs(value: Name*): Self = StObject.set(x, "variations", js.Array(value :_*))
+    inline def setVariationsVarargs(value: Name*): Self = StObject.set(x, "variations", js.Array(value :_*))
     
-    @scala.inline
-    def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
+    inline def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
+    inline def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
     
-    @scala.inline
-    def setWinnerConfidenceLevel(value: Double): Self = StObject.set(x, "winnerConfidenceLevel", value.asInstanceOf[js.Any])
+    inline def setWinnerConfidenceLevel(value: Double): Self = StObject.set(x, "winnerConfidenceLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWinnerConfidenceLevelUndefined: Self = StObject.set(x, "winnerConfidenceLevel", js.undefined)
+    inline def setWinnerConfidenceLevelUndefined: Self = StObject.set(x, "winnerConfidenceLevel", js.undefined)
     
-    @scala.inline
-    def setWinnerFound(value: Boolean): Self = StObject.set(x, "winnerFound", value.asInstanceOf[js.Any])
+    inline def setWinnerFound(value: Boolean): Self = StObject.set(x, "winnerFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWinnerFoundUndefined: Self = StObject.set(x, "winnerFound", js.undefined)
+    inline def setWinnerFoundUndefined: Self = StObject.set(x, "winnerFound", js.undefined)
   }
 }

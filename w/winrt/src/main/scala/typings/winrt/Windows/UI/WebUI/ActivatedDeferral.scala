@@ -9,8 +9,7 @@ trait ActivatedDeferral
      with IActivatedDeferral
 object ActivatedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): ActivatedDeferral = {
+  inline def apply(complete: () => Unit): ActivatedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[ActivatedDeferral]
   }

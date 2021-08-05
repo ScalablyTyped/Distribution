@@ -16,31 +16,23 @@ trait GearConstraintOptions
 }
 object GearConstraintOptions {
   
-  @scala.inline
-  def apply(): GearConstraintOptions = {
+  inline def apply(): GearConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GearConstraintOptions]
   }
   
-  @scala.inline
-  implicit class GearConstraintOptionsMutableBuilder[Self <: GearConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GearConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setMaxTorque(value: Double): Self = StObject.set(x, "maxTorque", value.asInstanceOf[js.Any])
+    inline def setMaxTorque(value: Double): Self = StObject.set(x, "maxTorque", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTorqueUndefined: Self = StObject.set(x, "maxTorque", js.undefined)
+    inline def setMaxTorqueUndefined: Self = StObject.set(x, "maxTorque", js.undefined)
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
   }
 }

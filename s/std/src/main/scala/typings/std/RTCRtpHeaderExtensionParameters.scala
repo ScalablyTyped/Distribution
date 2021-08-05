@@ -14,25 +14,19 @@ trait RTCRtpHeaderExtensionParameters extends StObject {
 }
 object RTCRtpHeaderExtensionParameters {
   
-  @scala.inline
-  def apply(id: Double, uri: java.lang.String): RTCRtpHeaderExtensionParameters = {
+  inline def apply(id: Double, uri: java.lang.String): RTCRtpHeaderExtensionParameters = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpHeaderExtensionParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtpHeaderExtensionParametersMutableBuilder[Self <: RTCRtpHeaderExtensionParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpHeaderExtensionParameters](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: scala.Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: scala.Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: java.lang.String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: java.lang.String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

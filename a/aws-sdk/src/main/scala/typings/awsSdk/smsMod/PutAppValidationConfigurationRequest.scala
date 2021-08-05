@@ -23,34 +23,25 @@ trait PutAppValidationConfigurationRequest extends StObject {
 }
 object PutAppValidationConfigurationRequest {
   
-  @scala.inline
-  def apply(appId: AppIdWithValidation): PutAppValidationConfigurationRequest = {
+  inline def apply(appId: AppIdWithValidation): PutAppValidationConfigurationRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAppValidationConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class PutAppValidationConfigurationRequestMutableBuilder[Self <: PutAppValidationConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAppValidationConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppValidationConfigurations(value: AppValidationConfigurations): Self = StObject.set(x, "appValidationConfigurations", value.asInstanceOf[js.Any])
+    inline def setAppValidationConfigurations(value: AppValidationConfigurations): Self = StObject.set(x, "appValidationConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppValidationConfigurationsUndefined: Self = StObject.set(x, "appValidationConfigurations", js.undefined)
+    inline def setAppValidationConfigurationsUndefined: Self = StObject.set(x, "appValidationConfigurations", js.undefined)
     
-    @scala.inline
-    def setAppValidationConfigurationsVarargs(value: AppValidationConfiguration*): Self = StObject.set(x, "appValidationConfigurations", js.Array(value :_*))
+    inline def setAppValidationConfigurationsVarargs(value: AppValidationConfiguration*): Self = StObject.set(x, "appValidationConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setServerGroupValidationConfigurations(value: ServerGroupValidationConfigurations): Self = StObject.set(x, "serverGroupValidationConfigurations", value.asInstanceOf[js.Any])
+    inline def setServerGroupValidationConfigurations(value: ServerGroupValidationConfigurations): Self = StObject.set(x, "serverGroupValidationConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerGroupValidationConfigurationsUndefined: Self = StObject.set(x, "serverGroupValidationConfigurations", js.undefined)
+    inline def setServerGroupValidationConfigurationsUndefined: Self = StObject.set(x, "serverGroupValidationConfigurations", js.undefined)
     
-    @scala.inline
-    def setServerGroupValidationConfigurationsVarargs(value: ServerGroupValidationConfiguration*): Self = StObject.set(x, "serverGroupValidationConfigurations", js.Array(value :_*))
+    inline def setServerGroupValidationConfigurationsVarargs(value: ServerGroupValidationConfiguration*): Self = StObject.set(x, "serverGroupValidationConfigurations", js.Array(value :_*))
   }
 }

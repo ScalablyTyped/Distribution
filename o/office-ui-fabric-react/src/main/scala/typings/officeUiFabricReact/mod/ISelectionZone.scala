@@ -9,8 +9,7 @@ trait ISelectionZone
      with typings.officeUiFabricReact.selectionZoneMod.ISelectionZone
 object ISelectionZone {
   
-  @scala.inline
-  def apply(ignoreNextFocus: () => Unit): ISelectionZone = {
+  inline def apply(ignoreNextFocus: () => Unit): ISelectionZone = {
     val __obj = js.Dynamic.literal(ignoreNextFocus = js.Any.fromFunction0(ignoreNextFocus))
     __obj.asInstanceOf[ISelectionZone]
   }

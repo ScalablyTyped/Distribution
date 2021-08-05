@@ -109,11 +109,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addValidationRule(name: String, callback: js.Function1[/* value */ js.Any, Boolean | js.Promise[Boolean]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addValidationRule")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addValidationRule(name: String, callback: js.Function1[/* value */ js.Any, Boolean | js.Promise[Boolean]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addValidationRule")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def removeValidationRule(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeValidationRule")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeValidationRule(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeValidationRule")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait ValidatorComponentProps
@@ -134,50 +132,36 @@ object mod {
   }
   object ValidatorComponentProps {
     
-    @scala.inline
-    def apply(name: String, value: js.Any): ValidatorComponentProps = {
+    inline def apply(name: String, value: js.Any): ValidatorComponentProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidatorComponentProps]
     }
     
-    @scala.inline
-    implicit class ValidatorComponentPropsMutableBuilder[Self <: ValidatorComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ValidatorComponentProps](x: Self) {
       
-      @scala.inline
-      def setErrorMessages(value: js.Array[js.Any] | String): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
+      inline def setErrorMessages(value: js.Array[js.Any] | String): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
+      inline def setErrorMessagesUndefined: Self = StObject.set(x, "errorMessages", js.undefined)
       
-      @scala.inline
-      def setErrorMessagesVarargs(value: js.Any*): Self = StObject.set(x, "errorMessages", js.Array(value :_*))
+      inline def setErrorMessagesVarargs(value: js.Any*): Self = StObject.set(x, "errorMessages", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatorListener(value: /* isValid */ Boolean => Unit): Self = StObject.set(x, "validatorListener", js.Any.fromFunction1(value))
+      inline def setValidatorListener(value: /* isValid */ Boolean => Unit): Self = StObject.set(x, "validatorListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidatorListenerUndefined: Self = StObject.set(x, "validatorListener", js.undefined)
+      inline def setValidatorListenerUndefined: Self = StObject.set(x, "validatorListener", js.undefined)
       
-      @scala.inline
-      def setValidators(value: js.Array[js.Any]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+      inline def setValidators(value: js.Array[js.Any]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
+      inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
       
-      @scala.inline
-      def setValidatorsVarargs(value: js.Any*): Self = StObject.set(x, "validators", js.Array(value :_*))
+      inline def setValidatorsVarargs(value: js.Any*): Self = StObject.set(x, "validators", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithRequiredValidator(value: Boolean): Self = StObject.set(x, "withRequiredValidator", value.asInstanceOf[js.Any])
+      inline def setWithRequiredValidator(value: Boolean): Self = StObject.set(x, "withRequiredValidator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithRequiredValidatorUndefined: Self = StObject.set(x, "withRequiredValidator", js.undefined)
+      inline def setWithRequiredValidatorUndefined: Self = StObject.set(x, "withRequiredValidator", js.undefined)
     }
   }
   
@@ -197,41 +181,30 @@ object mod {
   }
   object ValidatorFormProps {
     
-    @scala.inline
-    def apply(onSubmit: FormEvent[Element] => Unit): ValidatorFormProps = {
+    inline def apply(onSubmit: FormEvent[Element] => Unit): ValidatorFormProps = {
       val __obj = js.Dynamic.literal(onSubmit = js.Any.fromFunction1(onSubmit))
       __obj.asInstanceOf[ValidatorFormProps]
     }
     
-    @scala.inline
-    implicit class ValidatorFormPropsMutableBuilder[Self <: ValidatorFormProps] (val x: Self) extends AnyVal {
+    extension [Self <: ValidatorFormProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDebounceTime(value: Double): Self = StObject.set(x, "debounceTime", value.asInstanceOf[js.Any])
+      inline def setDebounceTime(value: Double): Self = StObject.set(x, "debounceTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceTimeUndefined: Self = StObject.set(x, "debounceTime", js.undefined)
+      inline def setDebounceTimeUndefined: Self = StObject.set(x, "debounceTime", js.undefined)
       
-      @scala.inline
-      def setInstantValidate(value: Boolean): Self = StObject.set(x, "instantValidate", value.asInstanceOf[js.Any])
+      inline def setInstantValidate(value: Boolean): Self = StObject.set(x, "instantValidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstantValidateUndefined: Self = StObject.set(x, "instantValidate", js.undefined)
+      inline def setInstantValidateUndefined: Self = StObject.set(x, "instantValidate", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* errors */ js.Array[js.Any] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* errors */ js.Array[js.Any] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnSubmit(value: FormEvent[Element] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: FormEvent[Element] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     }
   }
 }

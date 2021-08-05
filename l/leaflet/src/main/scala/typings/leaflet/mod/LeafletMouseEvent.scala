@@ -20,8 +20,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object LeafletMouseEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containerPoint: Point_,
     latlng: LatLng_,
     layer: js.Any,
@@ -37,19 +36,14 @@ object LeafletMouseEvent {
     __obj.asInstanceOf[LeafletMouseEvent]
   }
   
-  @scala.inline
-  implicit class LeafletMouseEventMutableBuilder[Self <: LeafletMouseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LeafletMouseEvent](x: Self) {
     
-    @scala.inline
-    def setContainerPoint(value: Point_): Self = StObject.set(x, "containerPoint", value.asInstanceOf[js.Any])
+    inline def setContainerPoint(value: Point_): Self = StObject.set(x, "containerPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatlng(value: LatLng_): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
+    inline def setLatlng(value: LatLng_): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerPoint(value: Point_): Self = StObject.set(x, "layerPoint", value.asInstanceOf[js.Any])
+    inline def setLayerPoint(value: Point_): Self = StObject.set(x, "layerPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    inline def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
   }
 }

@@ -14,28 +14,21 @@ trait LineItemToAdd extends StObject {
 }
 object LineItemToAdd {
   
-  @scala.inline
-  def apply(quantity: Double, variantId: String | Double): LineItemToAdd = {
+  inline def apply(quantity: Double, variantId: String | Double): LineItemToAdd = {
     val __obj = js.Dynamic.literal(quantity = quantity.asInstanceOf[js.Any], variantId = variantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineItemToAdd]
   }
   
-  @scala.inline
-  implicit class LineItemToAddMutableBuilder[Self <: LineItemToAdd] (val x: Self) extends AnyVal {
+  extension [Self <: LineItemToAdd](x: Self) {
     
-    @scala.inline
-    def setCustomAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
+    inline def setCustomAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
+    inline def setCustomAttributesUndefined: Self = StObject.set(x, "customAttributes", js.undefined)
     
-    @scala.inline
-    def setCustomAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value :_*))
+    inline def setCustomAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "customAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantId(value: String | Double): Self = StObject.set(x, "variantId", value.asInstanceOf[js.Any])
+    inline def setVariantId(value: String | Double): Self = StObject.set(x, "variantId", value.asInstanceOf[js.Any])
   }
 }

@@ -33,34 +33,25 @@ trait BounceAction extends StObject {
 }
 object BounceAction {
   
-  @scala.inline
-  def apply(Message: BounceMessage, Sender: Address, SmtpReplyCode: BounceSmtpReplyCode): BounceAction = {
+  inline def apply(Message: BounceMessage, Sender: Address, SmtpReplyCode: BounceSmtpReplyCode): BounceAction = {
     val __obj = js.Dynamic.literal(Message = Message.asInstanceOf[js.Any], Sender = Sender.asInstanceOf[js.Any], SmtpReplyCode = SmtpReplyCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[BounceAction]
   }
   
-  @scala.inline
-  implicit class BounceActionMutableBuilder[Self <: BounceAction] (val x: Self) extends AnyVal {
+  extension [Self <: BounceAction](x: Self) {
     
-    @scala.inline
-    def setMessage(value: BounceMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: BounceMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: Address): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Address): Self = StObject.set(x, "Sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmtpReplyCode(value: BounceSmtpReplyCode): Self = StObject.set(x, "SmtpReplyCode", value.asInstanceOf[js.Any])
+    inline def setSmtpReplyCode(value: BounceSmtpReplyCode): Self = StObject.set(x, "SmtpReplyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: BounceStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: BounceStatusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
     
-    @scala.inline
-    def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: AmazonResourceName): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
+    inline def setTopicArnUndefined: Self = StObject.set(x, "TopicArn", js.undefined)
   }
 }

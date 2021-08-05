@@ -17,13 +17,10 @@ object DataBarAxis {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AXIS_AUTOMATIC: `2` = 2.asInstanceOf[`2`]
+    inline def AXIS_AUTOMATIC: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def AXIS_MIDDLE: `1` = 1.asInstanceOf[`1`]
+    inline def AXIS_MIDDLE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def AXIS_NONE: `0` = 0.asInstanceOf[`0`]
+    inline def AXIS_NONE: `0` = 0.asInstanceOf[`0`]
   }
 }

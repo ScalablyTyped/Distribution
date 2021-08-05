@@ -115,8 +115,7 @@ trait ConnectorDescription[TProvided, TExposed] extends StObject {
 }
 object ConnectorDescription {
   
-  @scala.inline
-  def apply[TProvided, TExposed](
+  inline def apply[TProvided, TExposed](
     displayName: String,
     getProvidedProps: (TExposed, SearchState, ConnectorSearchResults[js.Any], js.Any, js.Any) => TProvided
   ): ConnectorDescription[TProvided, TExposed] = {
@@ -124,11 +123,9 @@ object ConnectorDescription {
     __obj.asInstanceOf[ConnectorDescription[TProvided, TExposed]]
   }
   
-  @scala.inline
-  implicit class ConnectorDescriptionMutableBuilder[Self <: ConnectorDescription[?, ?], TProvided, TExposed] (val x: Self & (ConnectorDescription[TProvided, TExposed])) extends AnyVal {
+  extension [Self <: ConnectorDescription[?, ?], TProvided, TExposed](x: Self & (ConnectorDescription[TProvided, TExposed])) {
     
-    @scala.inline
-    def setCleanUp(
+    inline def setCleanUp(
       value: js.ThisFunction2[
           /* this */ Component[TExposed, js.Object, js.Any], 
           /* props */ TExposed, 
@@ -137,20 +134,15 @@ object ConnectorDescription {
         ]
     ): Self = StObject.set(x, "cleanUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCleanUpUndefined: Self = StObject.set(x, "cleanUp", js.undefined)
+    inline def setCleanUpUndefined: Self = StObject.set(x, "cleanUp", js.undefined)
     
-    @scala.inline
-    def setDefaultProps(value: js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
+    inline def setDefaultPropsUndefined: Self = StObject.set(x, "defaultProps", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMetadata(
+    inline def setGetMetadata(
       value: js.ThisFunction3[
           /* this */ Component[TExposed, js.Object, js.Any], 
           /* props */ TExposed, 
@@ -160,14 +152,11 @@ object ConnectorDescription {
         ]
     ): Self = StObject.set(x, "getMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
+    inline def setGetMetadataUndefined: Self = StObject.set(x, "getMetadata", js.undefined)
     
-    @scala.inline
-    def setGetProvidedProps(value: (TExposed, SearchState, ConnectorSearchResults[js.Any], js.Any, js.Any) => TProvided): Self = StObject.set(x, "getProvidedProps", js.Any.fromFunction5(value))
+    inline def setGetProvidedProps(value: (TExposed, SearchState, ConnectorSearchResults[js.Any], js.Any, js.Any) => TProvided): Self = StObject.set(x, "getProvidedProps", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetSearchParameters(
+    inline def setGetSearchParameters(
       value: js.ThisFunction3[
           /* this */ Component[TExposed, js.Object, js.Any], 
           /* searchParameters */ SearchParameters, 
@@ -177,17 +166,13 @@ object ConnectorDescription {
         ]
     ): Self = StObject.set(x, "getSearchParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetSearchParametersUndefined: Self = StObject.set(x, "getSearchParameters", js.undefined)
+    inline def setGetSearchParametersUndefined: Self = StObject.set(x, "getSearchParameters", js.undefined)
     
-    @scala.inline
-    def setPropTypes(value: js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+    inline def setPropTypes(value: js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
+    inline def setPropTypesUndefined: Self = StObject.set(x, "propTypes", js.undefined)
     
-    @scala.inline
-    def setRefine(
+    inline def setRefine(
       value: js.ThisFunction3[
           /* this */ Component[TExposed, js.Object, js.Any], 
           /* props */ TExposed, 
@@ -197,11 +182,9 @@ object ConnectorDescription {
         ]
     ): Self = StObject.set(x, "refine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)
+    inline def setRefineUndefined: Self = StObject.set(x, "refine", js.undefined)
     
-    @scala.inline
-    def setSearchForFacetValues(
+    inline def setSearchForFacetValues(
       value: js.ThisFunction2[
           /* this */ Component[TExposed, js.Object, js.Any], 
           /* searchState */ SearchState, 
@@ -210,7 +193,6 @@ object ConnectorDescription {
         ]
     ): Self = StObject.set(x, "searchForFacetValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchForFacetValuesUndefined: Self = StObject.set(x, "searchForFacetValues", js.undefined)
+    inline def setSearchForFacetValuesUndefined: Self = StObject.set(x, "searchForFacetValues", js.undefined)
   }
 }

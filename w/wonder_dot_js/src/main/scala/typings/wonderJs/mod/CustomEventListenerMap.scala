@@ -15,6 +15,5 @@ object CustomEventListenerMap {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.customEventListenerMapMod.CustomEventListenerMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.customEventListenerMapMod.CustomEventListenerMap]
+  inline def create(): typings.wonderJs.customEventListenerMapMod.CustomEventListenerMap = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.customEventListenerMapMod.CustomEventListenerMap]
 }

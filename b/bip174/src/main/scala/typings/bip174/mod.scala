@@ -66,13 +66,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromBase64[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any], txFromBuffer.asInstanceOf[js.Any])).asInstanceOf[InstanceType[T]]
+    inline def fromBase64[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64")(data.asInstanceOf[js.Any], txFromBuffer.asInstanceOf[js.Any])).asInstanceOf[InstanceType[T]]
     
-    @scala.inline
-    def fromBuffer[T /* <: TypeofPsbt */](buffer: Buffer, txFromBuffer: TransactionFromBuffer): InstanceType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], txFromBuffer.asInstanceOf[js.Any])).asInstanceOf[InstanceType[T]]
+    inline def fromBuffer[T /* <: TypeofPsbt */](buffer: Buffer, txFromBuffer: TransactionFromBuffer): InstanceType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], txFromBuffer.asInstanceOf[js.Any])).asInstanceOf[InstanceType[T]]
     
-    @scala.inline
-    def fromHex[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any], txFromBuffer.asInstanceOf[js.Any])).asInstanceOf[InstanceType[T]]
+    inline def fromHex[T /* <: TypeofPsbt */](data: String, txFromBuffer: TransactionFromBuffer): InstanceType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(data.asInstanceOf[js.Any], txFromBuffer.asInstanceOf[js.Any])).asInstanceOf[InstanceType[T]]
   }
 }

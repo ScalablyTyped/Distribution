@@ -266,23 +266,18 @@ object geometryMod {
   }
   object MorphColor {
     
-    @scala.inline
-    def apply(colors: js.Array[Color], name: String): MorphColor = {
+    inline def apply(colors: js.Array[Color], name: String): MorphColor = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[MorphColor]
     }
     
-    @scala.inline
-    implicit class MorphColorMutableBuilder[Self <: MorphColor] (val x: Self) extends AnyVal {
+    extension [Self <: MorphColor](x: Self) {
       
-      @scala.inline
-      def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -294,23 +289,18 @@ object geometryMod {
   }
   object MorphNormals {
     
-    @scala.inline
-    def apply(name: String, normals: js.Array[Vector3]): MorphNormals = {
+    inline def apply(name: String, normals: js.Array[Vector3]): MorphNormals = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], normals = normals.asInstanceOf[js.Any])
       __obj.asInstanceOf[MorphNormals]
     }
     
-    @scala.inline
-    implicit class MorphNormalsMutableBuilder[Self <: MorphNormals] (val x: Self) extends AnyVal {
+    extension [Self <: MorphNormals](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormals(value: js.Array[Vector3]): Self = StObject.set(x, "normals", value.asInstanceOf[js.Any])
+      inline def setNormals(value: js.Array[Vector3]): Self = StObject.set(x, "normals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalsVarargs(value: Vector3*): Self = StObject.set(x, "normals", js.Array(value :_*))
+      inline def setNormalsVarargs(value: Vector3*): Self = StObject.set(x, "normals", js.Array(value :_*))
     }
   }
   
@@ -322,23 +312,18 @@ object geometryMod {
   }
   object MorphTarget {
     
-    @scala.inline
-    def apply(name: String, vertices: js.Array[Vector3]): MorphTarget = {
+    inline def apply(name: String, vertices: js.Array[Vector3]): MorphTarget = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
       __obj.asInstanceOf[MorphTarget]
     }
     
-    @scala.inline
-    implicit class MorphTargetMutableBuilder[Self <: MorphTarget] (val x: Self) extends AnyVal {
+    extension [Self <: MorphTarget](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertices(value: js.Array[Vector3]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+      inline def setVertices(value: js.Array[Vector3]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticesVarargs(value: Vector3*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+      inline def setVerticesVarargs(value: Vector3*): Self = StObject.set(x, "vertices", js.Array(value :_*))
     }
   }
 }

@@ -21,20 +21,16 @@ object tooltipWrapperMod {
   }
   object TooltipWrapperProps {
     
-    @scala.inline
-    def apply(anchor: TooltipAnchor, position: js.Tuple2[Double, Double]): TooltipWrapperProps = {
+    inline def apply(anchor: TooltipAnchor, position: js.Tuple2[Double, Double]): TooltipWrapperProps = {
       val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipWrapperProps]
     }
     
-    @scala.inline
-    implicit class TooltipWrapperPropsMutableBuilder[Self <: TooltipWrapperProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipWrapperProps](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: TooltipAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: TooltipAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
 }

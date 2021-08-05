@@ -10,16 +10,13 @@ trait Theme extends StObject {
 }
 object Theme {
   
-  @scala.inline
-  def apply(theme: typings.storybookTheming.typesMod.Theme): Theme = {
+  inline def apply(theme: typings.storybookTheming.typesMod.Theme): Theme = {
     val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[Theme]
   }
   
-  @scala.inline
-  implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
+  extension [Self <: Theme](x: Self) {
     
-    @scala.inline
-    def setTheme(value: typings.storybookTheming.typesMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: typings.storybookTheming.typesMod.Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }
 }

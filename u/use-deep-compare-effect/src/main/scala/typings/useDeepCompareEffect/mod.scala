@@ -22,14 +22,10 @@ object mod {
     * @see https://reactjs.org/docs/hooks-reference.html#useeffect
     */
   /* was `typeof useEffect` */
-  @scala.inline
-  def default(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /* was `typeof useEffect` */
-  @scala.inline
-  def default(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def useDeepCompareEffectNoCheck(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffectNoCheck")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def useDeepCompareEffectNoCheck(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffectNoCheck")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useDeepCompareEffectNoCheck(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffectNoCheck")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useDeepCompareEffectNoCheck(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDeepCompareEffectNoCheck")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

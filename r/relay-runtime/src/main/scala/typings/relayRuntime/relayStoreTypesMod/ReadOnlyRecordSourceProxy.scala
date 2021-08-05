@@ -13,19 +13,15 @@ trait ReadOnlyRecordSourceProxy extends StObject {
 }
 object ReadOnlyRecordSourceProxy {
   
-  @scala.inline
-  def apply(get: DataID => js.UndefOr[ReadOnlyRecordProxy | Null], getRoot: () => ReadOnlyRecordProxy): ReadOnlyRecordSourceProxy = {
+  inline def apply(get: DataID => js.UndefOr[ReadOnlyRecordProxy | Null], getRoot: () => ReadOnlyRecordProxy): ReadOnlyRecordSourceProxy = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getRoot = js.Any.fromFunction0(getRoot))
     __obj.asInstanceOf[ReadOnlyRecordSourceProxy]
   }
   
-  @scala.inline
-  implicit class ReadOnlyRecordSourceProxyMutableBuilder[Self <: ReadOnlyRecordSourceProxy] (val x: Self) extends AnyVal {
+  extension [Self <: ReadOnlyRecordSourceProxy](x: Self) {
     
-    @scala.inline
-    def setGet(value: DataID => js.UndefOr[ReadOnlyRecordProxy | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: DataID => js.UndefOr[ReadOnlyRecordProxy | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRoot(value: () => ReadOnlyRecordProxy): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+    inline def setGetRoot(value: () => ReadOnlyRecordProxy): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
   }
 }

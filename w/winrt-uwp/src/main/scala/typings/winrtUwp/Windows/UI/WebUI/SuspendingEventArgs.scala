@@ -12,16 +12,13 @@ trait SuspendingEventArgs extends StObject {
 }
 object SuspendingEventArgs {
   
-  @scala.inline
-  def apply(suspendingOperation: typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation): SuspendingEventArgs = {
+  inline def apply(suspendingOperation: typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation): SuspendingEventArgs = {
     val __obj = js.Dynamic.literal(suspendingOperation = suspendingOperation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspendingEventArgs]
   }
   
-  @scala.inline
-  implicit class SuspendingEventArgsMutableBuilder[Self <: SuspendingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SuspendingEventArgs](x: Self) {
     
-    @scala.inline
-    def setSuspendingOperation(value: typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation): Self = StObject.set(x, "suspendingOperation", value.asInstanceOf[js.Any])
+    inline def setSuspendingOperation(value: typings.winrtUwp.Windows.ApplicationModel.SuspendingOperation): Self = StObject.set(x, "suspendingOperation", value.asInstanceOf[js.Any])
   }
 }

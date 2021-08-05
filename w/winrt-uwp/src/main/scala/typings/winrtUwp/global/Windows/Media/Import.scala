@@ -341,24 +341,21 @@ object Import {
       * @return An asynchronous operation that returns a list of available sources on successful completion.
       */
     /* static member */
-    @scala.inline
-    def findAllSourcesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllSourcesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllSourcesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllSourcesAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * Gets the list of all pending photo import operations.
       * @return The list of all pending photo operations.
       */
     /* static member */
-    @scala.inline
-    def getPendingOperations(): IVectorView[typings.winrtUwp.Windows.Media.Import.PhotoImportOperation] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPendingOperations")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Media.Import.PhotoImportOperation]]
+    inline def getPendingOperations(): IVectorView[typings.winrtUwp.Windows.Media.Import.PhotoImportOperation] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPendingOperations")().asInstanceOf[IVectorView[typings.winrtUwp.Windows.Media.Import.PhotoImportOperation]]
     
     /**
       * Gets a value indicating if photo import is supported on the current device.
       * @return An asynchronous operation that returns true if photo import is supported. Otherwise, returns false.
       */
     /* static member */
-    @scala.inline
-    def isSupportedAsync(): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def isSupportedAsync(): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   }
   
   /** Represents an in-progress photo import operation. */
@@ -577,8 +574,7 @@ object Import {
       * @return An asynchronous operation that returns a PhotoImportSource upon successful completion.
       */
     /* static member */
-    @scala.inline
-    def fromFolderAsync(sourceRootFolder: IStorageFolder): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Import.PhotoImportSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFolderAsync")(sourceRootFolder.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Import.PhotoImportSource]]
+    inline def fromFolderAsync(sourceRootFolder: IStorageFolder): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Import.PhotoImportSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFolderAsync")(sourceRootFolder.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Import.PhotoImportSource]]
     
     /**
       * Creates a new instance of PhotoImportSource from the specified device ID.
@@ -586,8 +582,7 @@ object Import {
       * @return An asynchronous operation that returns a PhotoImportSource upon successful completion.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(sourceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Import.PhotoImportSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(sourceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Import.PhotoImportSource]]
+    inline def fromIdAsync(sourceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Import.PhotoImportSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(sourceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Import.PhotoImportSource]]
   }
   
   /** Specifies the type of device that is being used as a photo import source. */

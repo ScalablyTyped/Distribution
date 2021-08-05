@@ -54,139 +54,95 @@ trait OnlineMeeting
 }
 object OnlineMeeting {
   
-  @scala.inline
-  def apply(): OnlineMeeting = {
+  inline def apply(): OnlineMeeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnlineMeeting]
   }
   
-  @scala.inline
-  implicit class OnlineMeetingMutableBuilder[Self <: OnlineMeeting] (val x: Self) extends AnyVal {
+  extension [Self <: OnlineMeeting](x: Self) {
     
-    @scala.inline
-    def setAllowedPresenters(value: NullableOption[OnlineMeetingPresenters]): Self = StObject.set(x, "allowedPresenters", value.asInstanceOf[js.Any])
+    inline def setAllowedPresenters(value: NullableOption[OnlineMeetingPresenters]): Self = StObject.set(x, "allowedPresenters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedPresentersNull: Self = StObject.set(x, "allowedPresenters", null)
+    inline def setAllowedPresentersNull: Self = StObject.set(x, "allowedPresenters", null)
     
-    @scala.inline
-    def setAllowedPresentersUndefined: Self = StObject.set(x, "allowedPresenters", js.undefined)
+    inline def setAllowedPresentersUndefined: Self = StObject.set(x, "allowedPresenters", js.undefined)
     
-    @scala.inline
-    def setAudioConferencing(value: NullableOption[AudioConferencing]): Self = StObject.set(x, "audioConferencing", value.asInstanceOf[js.Any])
+    inline def setAudioConferencing(value: NullableOption[AudioConferencing]): Self = StObject.set(x, "audioConferencing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioConferencingNull: Self = StObject.set(x, "audioConferencing", null)
+    inline def setAudioConferencingNull: Self = StObject.set(x, "audioConferencing", null)
     
-    @scala.inline
-    def setAudioConferencingUndefined: Self = StObject.set(x, "audioConferencing", js.undefined)
+    inline def setAudioConferencingUndefined: Self = StObject.set(x, "audioConferencing", js.undefined)
     
-    @scala.inline
-    def setChatInfo(value: NullableOption[ChatInfo]): Self = StObject.set(x, "chatInfo", value.asInstanceOf[js.Any])
+    inline def setChatInfo(value: NullableOption[ChatInfo]): Self = StObject.set(x, "chatInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChatInfoNull: Self = StObject.set(x, "chatInfo", null)
+    inline def setChatInfoNull: Self = StObject.set(x, "chatInfo", null)
     
-    @scala.inline
-    def setChatInfoUndefined: Self = StObject.set(x, "chatInfo", js.undefined)
+    inline def setChatInfoUndefined: Self = StObject.set(x, "chatInfo", js.undefined)
     
-    @scala.inline
-    def setCreationDateTime(value: NullableOption[String]): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
+    inline def setCreationDateTime(value: NullableOption[String]): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateTimeNull: Self = StObject.set(x, "creationDateTime", null)
+    inline def setCreationDateTimeNull: Self = StObject.set(x, "creationDateTime", null)
     
-    @scala.inline
-    def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
+    inline def setCreationDateTimeUndefined: Self = StObject.set(x, "creationDateTime", js.undefined)
     
-    @scala.inline
-    def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
+    inline def setEndDateTime(value: NullableOption[String]): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
+    inline def setEndDateTimeNull: Self = StObject.set(x, "endDateTime", null)
     
-    @scala.inline
-    def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
+    inline def setEndDateTimeUndefined: Self = StObject.set(x, "endDateTime", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdNull: Self = StObject.set(x, "externalId", null)
+    inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
-    @scala.inline
-    def setIsEntryExitAnnounced(value: NullableOption[Boolean]): Self = StObject.set(x, "isEntryExitAnnounced", value.asInstanceOf[js.Any])
+    inline def setIsEntryExitAnnounced(value: NullableOption[Boolean]): Self = StObject.set(x, "isEntryExitAnnounced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEntryExitAnnouncedNull: Self = StObject.set(x, "isEntryExitAnnounced", null)
+    inline def setIsEntryExitAnnouncedNull: Self = StObject.set(x, "isEntryExitAnnounced", null)
     
-    @scala.inline
-    def setIsEntryExitAnnouncedUndefined: Self = StObject.set(x, "isEntryExitAnnounced", js.undefined)
+    inline def setIsEntryExitAnnouncedUndefined: Self = StObject.set(x, "isEntryExitAnnounced", js.undefined)
     
-    @scala.inline
-    def setJoinInformation(value: NullableOption[ItemBody]): Self = StObject.set(x, "joinInformation", value.asInstanceOf[js.Any])
+    inline def setJoinInformation(value: NullableOption[ItemBody]): Self = StObject.set(x, "joinInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinInformationNull: Self = StObject.set(x, "joinInformation", null)
+    inline def setJoinInformationNull: Self = StObject.set(x, "joinInformation", null)
     
-    @scala.inline
-    def setJoinInformationUndefined: Self = StObject.set(x, "joinInformation", js.undefined)
+    inline def setJoinInformationUndefined: Self = StObject.set(x, "joinInformation", js.undefined)
     
-    @scala.inline
-    def setJoinWebUrl(value: NullableOption[String]): Self = StObject.set(x, "joinWebUrl", value.asInstanceOf[js.Any])
+    inline def setJoinWebUrl(value: NullableOption[String]): Self = StObject.set(x, "joinWebUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinWebUrlNull: Self = StObject.set(x, "joinWebUrl", null)
+    inline def setJoinWebUrlNull: Self = StObject.set(x, "joinWebUrl", null)
     
-    @scala.inline
-    def setJoinWebUrlUndefined: Self = StObject.set(x, "joinWebUrl", js.undefined)
+    inline def setJoinWebUrlUndefined: Self = StObject.set(x, "joinWebUrl", js.undefined)
     
-    @scala.inline
-    def setLobbyBypassSettings(value: NullableOption[LobbyBypassSettings]): Self = StObject.set(x, "lobbyBypassSettings", value.asInstanceOf[js.Any])
+    inline def setLobbyBypassSettings(value: NullableOption[LobbyBypassSettings]): Self = StObject.set(x, "lobbyBypassSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLobbyBypassSettingsNull: Self = StObject.set(x, "lobbyBypassSettings", null)
+    inline def setLobbyBypassSettingsNull: Self = StObject.set(x, "lobbyBypassSettings", null)
     
-    @scala.inline
-    def setLobbyBypassSettingsUndefined: Self = StObject.set(x, "lobbyBypassSettings", js.undefined)
+    inline def setLobbyBypassSettingsUndefined: Self = StObject.set(x, "lobbyBypassSettings", js.undefined)
     
-    @scala.inline
-    def setParticipants(value: NullableOption[MeetingParticipants]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
+    inline def setParticipants(value: NullableOption[MeetingParticipants]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantsNull: Self = StObject.set(x, "participants", null)
+    inline def setParticipantsNull: Self = StObject.set(x, "participants", null)
     
-    @scala.inline
-    def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
+    inline def setParticipantsUndefined: Self = StObject.set(x, "participants", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: NullableOption[String]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
+    inline def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
     
-    @scala.inline
-    def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: NullableOption[String]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectNull: Self = StObject.set(x, "subject", null)
+    inline def setSubjectNull: Self = StObject.set(x, "subject", null)
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setVideoTeleconferenceId(value: NullableOption[String]): Self = StObject.set(x, "videoTeleconferenceId", value.asInstanceOf[js.Any])
+    inline def setVideoTeleconferenceId(value: NullableOption[String]): Self = StObject.set(x, "videoTeleconferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoTeleconferenceIdNull: Self = StObject.set(x, "videoTeleconferenceId", null)
+    inline def setVideoTeleconferenceIdNull: Self = StObject.set(x, "videoTeleconferenceId", null)
     
-    @scala.inline
-    def setVideoTeleconferenceIdUndefined: Self = StObject.set(x, "videoTeleconferenceId", js.undefined)
+    inline def setVideoTeleconferenceIdUndefined: Self = StObject.set(x, "videoTeleconferenceId", js.undefined)
   }
 }

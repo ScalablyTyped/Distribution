@@ -31,58 +31,41 @@ trait CardProperties
 }
 object CardProperties {
   
-  @scala.inline
-  def apply(label: String): CardProperties = {
+  inline def apply(label: String): CardProperties = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardProperties]
   }
   
-  @scala.inline
-  implicit class CardPropertiesMutableBuilder[Self <: CardProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CardProperties](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[ActionDescriptor]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ActionDescriptor]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: ActionDescriptor*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ActionDescriptor*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setCardType(value: CardType): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+    inline def setCardType(value: CardType): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardTypeUndefined: Self = StObject.set(x, "cardType", js.undefined)
+    inline def setCardTypeUndefined: Self = StObject.set(x, "cardType", js.undefined)
     
-    @scala.inline
-    def setDescriptions(value: js.Array[CardDescriptionItem]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
+    inline def setDescriptions(value: js.Array[CardDescriptionItem]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
+    inline def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
     
-    @scala.inline
-    def setDescriptionsVarargs(value: CardDescriptionItem*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
+    inline def setDescriptionsVarargs(value: CardDescriptionItem*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusIndicator): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusIndicator): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait MoveOptions extends StObject {
 }
 object MoveOptions {
   
-  @scala.inline
-  def apply(action: NavigateAction, date: Date, today: Date): MoveOptions = {
+  inline def apply(action: NavigateAction, date: Date, today: Date): MoveOptions = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any])
     __obj.asInstanceOf[MoveOptions]
   }
   
-  @scala.inline
-  implicit class MoveOptionsMutableBuilder[Self <: MoveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MoveOptions](x: Self) {
     
-    @scala.inline
-    def setAction(value: NavigateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: NavigateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToday(value: Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
+    inline def setToday(value: Date): Self = StObject.set(x, "today", value.asInstanceOf[js.Any])
   }
 }

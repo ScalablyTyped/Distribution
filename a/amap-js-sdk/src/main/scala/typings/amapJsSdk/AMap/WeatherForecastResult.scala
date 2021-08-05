@@ -20,8 +20,7 @@ trait WeatherForecastResult extends StObject {
 }
 object WeatherForecastResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adcode: String,
     city: String,
     forecasts: js.Array[Forecast],
@@ -33,28 +32,20 @@ object WeatherForecastResult {
     __obj.asInstanceOf[WeatherForecastResult]
   }
   
-  @scala.inline
-  implicit class WeatherForecastResultMutableBuilder[Self <: WeatherForecastResult] (val x: Self) extends AnyVal {
+  extension [Self <: WeatherForecastResult](x: Self) {
     
-    @scala.inline
-    def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+    inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecasts(value: js.Array[Forecast]): Self = StObject.set(x, "forecasts", value.asInstanceOf[js.Any])
+    inline def setForecasts(value: js.Array[Forecast]): Self = StObject.set(x, "forecasts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastsVarargs(value: Forecast*): Self = StObject.set(x, "forecasts", js.Array(value :_*))
+    inline def setForecastsVarargs(value: Forecast*): Self = StObject.set(x, "forecasts", js.Array(value :_*))
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
+    inline def setReportTime(value: String): Self = StObject.set(x, "reportTime", value.asInstanceOf[js.Any])
   }
 }

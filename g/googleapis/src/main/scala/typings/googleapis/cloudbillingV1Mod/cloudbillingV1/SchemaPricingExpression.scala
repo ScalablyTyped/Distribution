@@ -66,58 +66,41 @@ trait SchemaPricingExpression extends StObject {
 }
 object SchemaPricingExpression {
   
-  @scala.inline
-  def apply(): SchemaPricingExpression = {
+  inline def apply(): SchemaPricingExpression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPricingExpression]
   }
   
-  @scala.inline
-  implicit class SchemaPricingExpressionMutableBuilder[Self <: SchemaPricingExpression] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPricingExpression](x: Self) {
     
-    @scala.inline
-    def setBaseUnit(value: String): Self = StObject.set(x, "baseUnit", value.asInstanceOf[js.Any])
+    inline def setBaseUnit(value: String): Self = StObject.set(x, "baseUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUnitConversionFactor(value: Double): Self = StObject.set(x, "baseUnitConversionFactor", value.asInstanceOf[js.Any])
+    inline def setBaseUnitConversionFactor(value: Double): Self = StObject.set(x, "baseUnitConversionFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUnitConversionFactorUndefined: Self = StObject.set(x, "baseUnitConversionFactor", js.undefined)
+    inline def setBaseUnitConversionFactorUndefined: Self = StObject.set(x, "baseUnitConversionFactor", js.undefined)
     
-    @scala.inline
-    def setBaseUnitDescription(value: String): Self = StObject.set(x, "baseUnitDescription", value.asInstanceOf[js.Any])
+    inline def setBaseUnitDescription(value: String): Self = StObject.set(x, "baseUnitDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUnitDescriptionUndefined: Self = StObject.set(x, "baseUnitDescription", js.undefined)
+    inline def setBaseUnitDescriptionUndefined: Self = StObject.set(x, "baseUnitDescription", js.undefined)
     
-    @scala.inline
-    def setBaseUnitUndefined: Self = StObject.set(x, "baseUnit", js.undefined)
+    inline def setBaseUnitUndefined: Self = StObject.set(x, "baseUnit", js.undefined)
     
-    @scala.inline
-    def setDisplayQuantity(value: Double): Self = StObject.set(x, "displayQuantity", value.asInstanceOf[js.Any])
+    inline def setDisplayQuantity(value: Double): Self = StObject.set(x, "displayQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayQuantityUndefined: Self = StObject.set(x, "displayQuantity", js.undefined)
+    inline def setDisplayQuantityUndefined: Self = StObject.set(x, "displayQuantity", js.undefined)
     
-    @scala.inline
-    def setTieredRates(value: js.Array[SchemaTierRate]): Self = StObject.set(x, "tieredRates", value.asInstanceOf[js.Any])
+    inline def setTieredRates(value: js.Array[SchemaTierRate]): Self = StObject.set(x, "tieredRates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTieredRatesUndefined: Self = StObject.set(x, "tieredRates", js.undefined)
+    inline def setTieredRatesUndefined: Self = StObject.set(x, "tieredRates", js.undefined)
     
-    @scala.inline
-    def setTieredRatesVarargs(value: SchemaTierRate*): Self = StObject.set(x, "tieredRates", js.Array(value :_*))
+    inline def setTieredRatesVarargs(value: SchemaTierRate*): Self = StObject.set(x, "tieredRates", js.Array(value :_*))
     
-    @scala.inline
-    def setUsageUnit(value: String): Self = StObject.set(x, "usageUnit", value.asInstanceOf[js.Any])
+    inline def setUsageUnit(value: String): Self = StObject.set(x, "usageUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUnitDescription(value: String): Self = StObject.set(x, "usageUnitDescription", value.asInstanceOf[js.Any])
+    inline def setUsageUnitDescription(value: String): Self = StObject.set(x, "usageUnitDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageUnitDescriptionUndefined: Self = StObject.set(x, "usageUnitDescription", js.undefined)
+    inline def setUsageUnitDescriptionUndefined: Self = StObject.set(x, "usageUnitDescription", js.undefined)
     
-    @scala.inline
-    def setUsageUnitUndefined: Self = StObject.set(x, "usageUnit", js.undefined)
+    inline def setUsageUnitUndefined: Self = StObject.set(x, "usageUnit", js.undefined)
   }
 }

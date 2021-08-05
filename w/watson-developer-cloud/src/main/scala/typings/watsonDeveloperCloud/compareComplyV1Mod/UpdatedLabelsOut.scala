@@ -18,37 +18,27 @@ trait UpdatedLabelsOut extends StObject {
 }
 object UpdatedLabelsOut {
   
-  @scala.inline
-  def apply(): UpdatedLabelsOut = {
+  inline def apply(): UpdatedLabelsOut = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdatedLabelsOut]
   }
   
-  @scala.inline
-  implicit class UpdatedLabelsOutMutableBuilder[Self <: UpdatedLabelsOut] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatedLabelsOut](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: Category*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setModification(value: String): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
+    inline def setModification(value: String): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModificationUndefined: Self = StObject.set(x, "modification", js.undefined)
+    inline def setModificationUndefined: Self = StObject.set(x, "modification", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Array[TypeLabel]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[TypeLabel]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: TypeLabel*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: TypeLabel*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

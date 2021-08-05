@@ -10,19 +10,15 @@ trait EventType extends StObject {
 }
 object EventType {
   
-  @scala.inline
-  def apply(names: js.Array[String]): EventType = {
+  inline def apply(names: js.Array[String]): EventType = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventType]
   }
   
-  @scala.inline
-  implicit class EventTypeMutableBuilder[Self <: EventType] (val x: Self) extends AnyVal {
+  extension [Self <: EventType](x: Self) {
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

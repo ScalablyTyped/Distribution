@@ -13,16 +13,13 @@ trait DescribeGatewayRequest extends StObject {
 }
 object DescribeGatewayRequest {
   
-  @scala.inline
-  def apply(gatewayId: ID): DescribeGatewayRequest = {
+  inline def apply(gatewayId: ID): DescribeGatewayRequest = {
     val __obj = js.Dynamic.literal(gatewayId = gatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DescribeGatewayRequestMutableBuilder[Self <: DescribeGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: ID): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
   }
 }

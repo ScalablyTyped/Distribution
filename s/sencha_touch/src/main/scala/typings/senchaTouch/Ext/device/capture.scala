@@ -23,26 +23,20 @@ object capture {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setCaptureAudio(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "captureAudio", js.Any.fromFunction1(value))
+      inline def setCaptureAudio(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "captureAudio", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaptureAudioUndefined: Self = StObject.set(x, "captureAudio", js.undefined)
+      inline def setCaptureAudioUndefined: Self = StObject.set(x, "captureAudio", js.undefined)
       
-      @scala.inline
-      def setCaptureVideo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "captureVideo", js.Any.fromFunction1(value))
+      inline def setCaptureVideo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "captureVideo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaptureVideoUndefined: Self = StObject.set(x, "captureVideo", js.undefined)
+      inline def setCaptureVideoUndefined: Self = StObject.set(x, "captureVideo", js.undefined)
     }
   }
   
@@ -64,26 +58,20 @@ object capture {
   }
   object ISimulator {
     
-    @scala.inline
-    def apply(): ISimulator = {
+    inline def apply(): ISimulator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISimulator]
     }
     
-    @scala.inline
-    implicit class ISimulatorMutableBuilder[Self <: ISimulator] (val x: Self) extends AnyVal {
+    extension [Self <: ISimulator](x: Self) {
       
-      @scala.inline
-      def setCaptureAudio(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "captureAudio", js.Any.fromFunction1(value))
+      inline def setCaptureAudio(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "captureAudio", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaptureAudioUndefined: Self = StObject.set(x, "captureAudio", js.undefined)
+      inline def setCaptureAudioUndefined: Self = StObject.set(x, "captureAudio", js.undefined)
       
-      @scala.inline
-      def setCaptureVideo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "captureVideo", js.Any.fromFunction1(value))
+      inline def setCaptureVideo(value: /* config */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "captureVideo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaptureVideoUndefined: Self = StObject.set(x, "captureVideo", js.undefined)
+      inline def setCaptureVideoUndefined: Self = StObject.set(x, "captureVideo", js.undefined)
     }
   }
 }

@@ -12,19 +12,15 @@ trait DirectionChangedArgs extends StObject {
 }
 object DirectionChangedArgs {
   
-  @scala.inline
-  def apply(dir: String, isRTL: Double): DirectionChangedArgs = {
+  inline def apply(dir: String, isRTL: Double): DirectionChangedArgs = {
     val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionChangedArgs]
   }
   
-  @scala.inline
-  implicit class DirectionChangedArgsMutableBuilder[Self <: DirectionChangedArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionChangedArgs](x: Self) {
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRTL(value: Double): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
+    inline def setIsRTL(value: Double): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
   }
 }

@@ -58,73 +58,51 @@ trait DefaultRouteTableRoute extends StObject {
 }
 object DefaultRouteTableRoute {
   
-  @scala.inline
-  def apply(): DefaultRouteTableRoute = {
+  inline def apply(): DefaultRouteTableRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultRouteTableRoute]
   }
   
-  @scala.inline
-  implicit class DefaultRouteTableRouteMutableBuilder[Self <: DefaultRouteTableRoute] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultRouteTableRoute](x: Self) {
     
-    @scala.inline
-    def setCidrBlock(value: String): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
+    inline def setCidrBlock(value: String): Self = StObject.set(x, "cidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
+    inline def setCidrBlockUndefined: Self = StObject.set(x, "cidrBlock", js.undefined)
     
-    @scala.inline
-    def setEgressOnlyGatewayId(value: String): Self = StObject.set(x, "egressOnlyGatewayId", value.asInstanceOf[js.Any])
+    inline def setEgressOnlyGatewayId(value: String): Self = StObject.set(x, "egressOnlyGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEgressOnlyGatewayIdUndefined: Self = StObject.set(x, "egressOnlyGatewayId", js.undefined)
+    inline def setEgressOnlyGatewayIdUndefined: Self = StObject.set(x, "egressOnlyGatewayId", js.undefined)
     
-    @scala.inline
-    def setGatewayId(value: String): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: String): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
+    inline def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
-    @scala.inline
-    def setIpv6CidrBlock(value: String): Self = StObject.set(x, "ipv6CidrBlock", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrBlock(value: String): Self = StObject.set(x, "ipv6CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6CidrBlockUndefined: Self = StObject.set(x, "ipv6CidrBlock", js.undefined)
+    inline def setIpv6CidrBlockUndefined: Self = StObject.set(x, "ipv6CidrBlock", js.undefined)
     
-    @scala.inline
-    def setNatGatewayId(value: String): Self = StObject.set(x, "natGatewayId", value.asInstanceOf[js.Any])
+    inline def setNatGatewayId(value: String): Self = StObject.set(x, "natGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatGatewayIdUndefined: Self = StObject.set(x, "natGatewayId", js.undefined)
+    inline def setNatGatewayIdUndefined: Self = StObject.set(x, "natGatewayId", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfaceId(value: String): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "networkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
+    inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "networkInterfaceId", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
+    inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
     
-    @scala.inline
-    def setVpcEndpointId(value: String): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
+    inline def setVpcEndpointId(value: String): Self = StObject.set(x, "vpcEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
+    inline def setVpcEndpointIdUndefined: Self = StObject.set(x, "vpcEndpointId", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringConnectionId(value: String): Self = StObject.set(x, "vpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringConnectionId(value: String): Self = StObject.set(x, "vpcPeeringConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "vpcPeeringConnectionId", js.undefined)
+    inline def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "vpcPeeringConnectionId", js.undefined)
   }
 }

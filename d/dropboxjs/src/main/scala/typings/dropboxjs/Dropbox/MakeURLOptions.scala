@@ -16,37 +16,27 @@ trait MakeURLOptions extends StObject {
 }
 object MakeURLOptions {
   
-  @scala.inline
-  def apply(): MakeURLOptions = {
+  inline def apply(): MakeURLOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MakeURLOptions]
   }
   
-  @scala.inline
-  implicit class MakeURLOptionsMutableBuilder[Self <: MakeURLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MakeURLOptions](x: Self) {
     
-    @scala.inline
-    def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadHack(value: Boolean): Self = StObject.set(x, "downloadHack", value.asInstanceOf[js.Any])
+    inline def setDownloadHack(value: Boolean): Self = StObject.set(x, "downloadHack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadHackUndefined: Self = StObject.set(x, "downloadHack", js.undefined)
+    inline def setDownloadHackUndefined: Self = StObject.set(x, "downloadHack", js.undefined)
     
-    @scala.inline
-    def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+    inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
     
-    @scala.inline
-    def setLong(value: Boolean): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: Boolean): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
+    inline def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
     
-    @scala.inline
-    def setLongUrl(value: Boolean): Self = StObject.set(x, "longUrl", value.asInstanceOf[js.Any])
+    inline def setLongUrl(value: Boolean): Self = StObject.set(x, "longUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongUrlUndefined: Self = StObject.set(x, "longUrl", js.undefined)
+    inline def setLongUrlUndefined: Self = StObject.set(x, "longUrl", js.undefined)
   }
 }

@@ -53,63 +53,45 @@ trait IShadow
 }
 object IShadow {
   
-  @scala.inline
-  def apply(): IShadow = {
+  inline def apply(): IShadow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IShadow]
   }
   
-  @scala.inline
-  implicit class IShadowMutableBuilder[Self <: IShadow] (val x: Self) extends AnyVal {
+  extension [Self <: IShadow](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setIsVisible(value: () => Unit): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Unit): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
+    inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
-    @scala.inline
-    def setMode(value: java.lang.String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: java.lang.String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setRealign(
+    inline def setRealign(
       value: (/* left */ js.UndefOr[Double], /* top */ js.UndefOr[Double], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "realign", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRealignUndefined: Self = StObject.set(x, "realign", js.undefined)
+    inline def setRealignUndefined: Self = StObject.set(x, "realign", js.undefined)
     
-    @scala.inline
-    def setSetOpacity(value: /* opacity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
+    inline def setSetOpacity(value: /* opacity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setOpacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpacityUndefined: Self = StObject.set(x, "setOpacity", js.undefined)
+    inline def setSetOpacityUndefined: Self = StObject.set(x, "setOpacity", js.undefined)
     
-    @scala.inline
-    def setSetZIndex(value: /* zindex */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setZIndex", js.Any.fromFunction1(value))
+    inline def setSetZIndex(value: /* zindex */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setZIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetZIndexUndefined: Self = StObject.set(x, "setZIndex", js.undefined)
+    inline def setSetZIndexUndefined: Self = StObject.set(x, "setZIndex", js.undefined)
     
-    @scala.inline
-    def setShow(value: /* targetEl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: /* targetEl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

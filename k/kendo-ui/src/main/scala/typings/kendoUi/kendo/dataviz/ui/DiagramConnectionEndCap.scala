@@ -14,31 +14,23 @@ trait DiagramConnectionEndCap extends StObject {
 }
 object DiagramConnectionEndCap {
   
-  @scala.inline
-  def apply(): DiagramConnectionEndCap = {
+  inline def apply(): DiagramConnectionEndCap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramConnectionEndCap]
   }
   
-  @scala.inline
-  implicit class DiagramConnectionEndCapMutableBuilder[Self <: DiagramConnectionEndCap] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramConnectionEndCap](x: Self) {
     
-    @scala.inline
-    def setFill(value: String | DiagramConnectionEndCapFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String | DiagramConnectionEndCapFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setStroke(value: String | DiagramConnectionEndCapStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: String | DiagramConnectionEndCapStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

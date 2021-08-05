@@ -35,14 +35,12 @@ object mod {
     @JSImport("react-recaptcha-v3", "ReCaptcha.defaultProps")
     @js.native
     def defaultProps: ReCaptchaProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ReCaptchaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ReCaptchaProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-recaptcha-v3", "ReCaptcha.propTypes")
     @js.native
     def propTypes: js.Any = js.native
-    @scala.inline
-    def propTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
     trait ReCaptchaProps extends StObject {
       
@@ -58,42 +56,31 @@ object mod {
     }
     object ReCaptchaProps {
       
-      @scala.inline
-      def apply(action: String, sitekey: String): ReCaptchaProps = {
+      inline def apply(action: String, sitekey: String): ReCaptchaProps = {
         val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], sitekey = sitekey.asInstanceOf[js.Any])
         __obj.asInstanceOf[ReCaptchaProps]
       }
       
-      @scala.inline
-      implicit class ReCaptchaPropsMutableBuilder[Self <: ReCaptchaProps] (val x: Self) extends AnyVal {
+      extension [Self <: ReCaptchaProps](x: Self) {
         
-        @scala.inline
-        def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementID(value: String): Self = StObject.set(x, "elementID", value.asInstanceOf[js.Any])
+        inline def setElementID(value: String): Self = StObject.set(x, "elementID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementIDUndefined: Self = StObject.set(x, "elementID", js.undefined)
+        inline def setElementIDUndefined: Self = StObject.set(x, "elementID", js.undefined)
         
-        @scala.inline
-        def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
+        inline def setSitekey(value: String): Self = StObject.set(x, "sitekey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerifyCallback(value: /* response */ String => Unit): Self = StObject.set(x, "verifyCallback", js.Any.fromFunction1(value))
+        inline def setVerifyCallback(value: /* response */ String => Unit): Self = StObject.set(x, "verifyCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setVerifyCallbackName(value: String): Self = StObject.set(x, "verifyCallbackName", value.asInstanceOf[js.Any])
+        inline def setVerifyCallbackName(value: String): Self = StObject.set(x, "verifyCallbackName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerifyCallbackNameUndefined: Self = StObject.set(x, "verifyCallbackName", js.undefined)
+        inline def setVerifyCallbackNameUndefined: Self = StObject.set(x, "verifyCallbackName", js.undefined)
         
-        @scala.inline
-        def setVerifyCallbackUndefined: Self = StObject.set(x, "verifyCallback", js.undefined)
+        inline def setVerifyCallbackUndefined: Self = StObject.set(x, "verifyCallback", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  def loadReCaptcha(siteKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadReCaptcha")(siteKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def loadReCaptcha(siteKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadReCaptcha")(siteKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

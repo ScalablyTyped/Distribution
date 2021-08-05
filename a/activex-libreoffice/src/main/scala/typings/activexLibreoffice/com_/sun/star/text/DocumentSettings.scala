@@ -120,8 +120,7 @@ trait DocumentSettings
 }
 object DocumentSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddExternalLeading: Boolean,
     AddParaSpacingToTableCells: Boolean,
     AddParaTableSpacing: Boolean,
@@ -192,40 +191,28 @@ object DocumentSettings {
     __obj.asInstanceOf[DocumentSettings]
   }
   
-  @scala.inline
-  implicit class DocumentSettingsMutableBuilder[Self <: DocumentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSettings](x: Self) {
     
-    @scala.inline
-    def setAddParaSpacingToTableCells(value: Boolean): Self = StObject.set(x, "AddParaSpacingToTableCells", value.asInstanceOf[js.Any])
+    inline def setAddParaSpacingToTableCells(value: Boolean): Self = StObject.set(x, "AddParaSpacingToTableCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddParaTableSpacing(value: Boolean): Self = StObject.set(x, "AddParaTableSpacing", value.asInstanceOf[js.Any])
+    inline def setAddParaTableSpacing(value: Boolean): Self = StObject.set(x, "AddParaTableSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddParaTableSpacingAtStart(value: Boolean): Self = StObject.set(x, "AddParaTableSpacingAtStart", value.asInstanceOf[js.Any])
+    inline def setAddParaTableSpacingAtStart(value: Boolean): Self = StObject.set(x, "AddParaTableSpacingAtStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignTabStopPosition(value: Boolean): Self = StObject.set(x, "AlignTabStopPosition", value.asInstanceOf[js.Any])
+    inline def setAlignTabStopPosition(value: Boolean): Self = StObject.set(x, "AlignTabStopPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartAutoUpdate(value: Boolean): Self = StObject.set(x, "ChartAutoUpdate", value.asInstanceOf[js.Any])
+    inline def setChartAutoUpdate(value: Boolean): Self = StObject.set(x, "ChartAutoUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsiderTextWrapOnObjPos(value: Boolean): Self = StObject.set(x, "ConsiderTextWrapOnObjPos", value.asInstanceOf[js.Any])
+    inline def setConsiderTextWrapOnObjPos(value: Boolean): Self = StObject.set(x, "ConsiderTextWrapOnObjPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLabelDocument(value: Boolean): Self = StObject.set(x, "IsLabelDocument", value.asInstanceOf[js.Any])
+    inline def setIsLabelDocument(value: Boolean): Self = StObject.set(x, "IsLabelDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMathBaselineAlignment(value: Boolean): Self = StObject.set(x, "MathBaselineAlignment", value.asInstanceOf[js.Any])
+    inline def setMathBaselineAlignment(value: Boolean): Self = StObject.set(x, "MathBaselineAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveGlobalDocumentLinks(value: Boolean): Self = StObject.set(x, "SaveGlobalDocumentLinks", value.asInstanceOf[js.Any])
+    inline def setSaveGlobalDocumentLinks(value: Boolean): Self = StObject.set(x, "SaveGlobalDocumentLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFormerLineSpacing(value: Boolean): Self = StObject.set(x, "UseFormerLineSpacing", value.asInstanceOf[js.Any])
+    inline def setUseFormerLineSpacing(value: Boolean): Self = StObject.set(x, "UseFormerLineSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFormerObjectPositioning(value: Boolean): Self = StObject.set(x, "UseFormerObjectPositioning", value.asInstanceOf[js.Any])
+    inline def setUseFormerObjectPositioning(value: Boolean): Self = StObject.set(x, "UseFormerObjectPositioning", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ object mod {
   /**
     * Extract code excerpts
     */
-  @scala.inline
-  def apply(
+  inline def apply(
     /**
   	 * Source code
   	 */
@@ -20,8 +19,7 @@ object mod {
   	 */
   line: Double
   ): js.UndefOr[js.Array[ExcerptLine]] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], line.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[ExcerptLine]]]
-  @scala.inline
-  def apply(
+  inline def apply(
     /**
   	 * Source code
   	 */
@@ -54,20 +52,16 @@ object mod {
   }
   object ExcerptLine {
     
-    @scala.inline
-    def apply(line: Double, value: String): ExcerptLine = {
+    inline def apply(line: Double, value: String): ExcerptLine = {
       val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExcerptLine]
     }
     
-    @scala.inline
-    implicit class ExcerptLineMutableBuilder[Self <: ExcerptLine] (val x: Self) extends AnyVal {
+    extension [Self <: ExcerptLine](x: Self) {
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,20 +76,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAround(value: Double): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
+      inline def setAround(value: Double): Self = StObject.set(x, "around", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAroundUndefined: Self = StObject.set(x, "around", js.undefined)
+      inline def setAroundUndefined: Self = StObject.set(x, "around", js.undefined)
     }
   }
 }

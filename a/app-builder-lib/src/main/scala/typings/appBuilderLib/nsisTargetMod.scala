@@ -24,25 +24,25 @@ object nsisTargetMod {
     /** @private */
     def buildAppPackage(appOutDir: String, arch: Arch): js.Promise[PackageFileInfo] = js.native
     
-    var buildInstaller: js.Any = js.native
+    /* private */ var buildInstaller: js.Any = js.native
     
-    var computeCommonInstallerScriptHeader: js.Any = js.native
+    /* private */ var computeCommonInstallerScriptHeader: js.Any = js.native
     
-    var computeFinalScript: js.Any = js.native
+    /* private */ var computeFinalScript: js.Any = js.native
     
-    var computeScriptAndSignUninstaller: js.Any = js.native
+    /* private */ var computeScriptAndSignUninstaller: js.Any = js.native
     
-    var computeVersionKey: js.Any = js.native
+    /* private */ var computeVersionKey: js.Any = js.native
     
     /* protected */ def configureDefines(oneClick: Boolean, defines: js.Any): js.Promise[js.Any] = js.native
     
-    var configureDefinesForAllTypeOfInstaller: js.Any = js.native
+    /* private */ var configureDefinesForAllTypeOfInstaller: js.Any = js.native
     
-    var executeMakensis: js.Any = js.native
+    /* private */ var executeMakensis: js.Any = js.native
     
     /* protected */ def generateGitHubInstallerName(): String = js.native
     
-    var getPreCompressedFileExtensions: js.Any = js.native
+    /* private */ var getPreCompressedFileExtensions: js.Any = js.native
     
     /* protected */ def installerFilenamePattern: String = js.native
     
@@ -57,7 +57,7 @@ object nsisTargetMod {
     @JSName("options")
     val options_NsisTarget: NsisOptions = js.native
     
-    val packageHelper: AppPackageHelper = js.native
+    /* protected */ val packageHelper: AppPackageHelper = js.native
     
     val packager: WinPackager = js.native
   }

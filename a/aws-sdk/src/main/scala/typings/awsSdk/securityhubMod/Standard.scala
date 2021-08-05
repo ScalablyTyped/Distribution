@@ -28,37 +28,27 @@ trait Standard extends StObject {
 }
 object Standard {
   
-  @scala.inline
-  def apply(): Standard = {
+  inline def apply(): Standard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Standard]
   }
   
-  @scala.inline
-  implicit class StandardMutableBuilder[Self <: Standard] (val x: Self) extends AnyVal {
+  extension [Self <: Standard](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEnabledByDefault(value: Boolean): Self = StObject.set(x, "EnabledByDefault", value.asInstanceOf[js.Any])
+    inline def setEnabledByDefault(value: Boolean): Self = StObject.set(x, "EnabledByDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledByDefaultUndefined: Self = StObject.set(x, "EnabledByDefault", js.undefined)
+    inline def setEnabledByDefaultUndefined: Self = StObject.set(x, "EnabledByDefault", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setStandardsArn(value: NonEmptyString): Self = StObject.set(x, "StandardsArn", value.asInstanceOf[js.Any])
+    inline def setStandardsArn(value: NonEmptyString): Self = StObject.set(x, "StandardsArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsArnUndefined: Self = StObject.set(x, "StandardsArn", js.undefined)
+    inline def setStandardsArnUndefined: Self = StObject.set(x, "StandardsArn", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait AssignedLocation extends StObject {
 }
 object AssignedLocation {
   
-  @scala.inline
-  def apply(): AssignedLocation = {
+  inline def apply(): AssignedLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssignedLocation]
   }
   
-  @scala.inline
-  implicit class AssignedLocationMutableBuilder[Self <: AssignedLocation] (val x: Self) extends AnyVal {
+  extension [Self <: AssignedLocation](x: Self) {
     
-    @scala.inline
-    def setAssignedLocationId(value: String): Self = StObject.set(x, "assignedLocationId", value.asInstanceOf[js.Any])
+    inline def setAssignedLocationId(value: String): Self = StObject.set(x, "assignedLocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedLocationIdUndefined: Self = StObject.set(x, "assignedLocationId", js.undefined)
+    inline def setAssignedLocationIdUndefined: Self = StObject.set(x, "assignedLocationId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

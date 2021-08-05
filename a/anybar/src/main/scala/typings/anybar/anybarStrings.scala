@@ -11,83 +11,71 @@ object anybarStrings {
   sealed trait black
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
+  inline def black: black = "black".asInstanceOf[black]
   
   @js.native
   sealed trait blue
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
+  inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
   sealed trait cyan
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def cyan: cyan = "cyan".asInstanceOf[cyan]
+  inline def cyan: cyan = "cyan".asInstanceOf[cyan]
   
   @js.native
   sealed trait exclamation
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def exclamation: exclamation = "exclamation".asInstanceOf[exclamation]
+  inline def exclamation: exclamation = "exclamation".asInstanceOf[exclamation]
   
   @js.native
   sealed trait green
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
   sealed trait orange
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def orange: orange = "orange".asInstanceOf[orange]
+  inline def orange: orange = "orange".asInstanceOf[orange]
   
   @js.native
   sealed trait purple
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def purple: purple = "purple".asInstanceOf[purple]
+  inline def purple: purple = "purple".asInstanceOf[purple]
   
   @js.native
   sealed trait question
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def question: question = "question".asInstanceOf[question]
+  inline def question: question = "question".asInstanceOf[question]
   
   @js.native
   sealed trait quit
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def quit: quit = "quit".asInstanceOf[quit]
+  inline def quit: quit = "quit".asInstanceOf[quit]
   
   @js.native
   sealed trait red
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
+  inline def red: red = "red".asInstanceOf[red]
   
   @js.native
   sealed trait white
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
+  inline def white: white = "white".asInstanceOf[white]
   
   @js.native
   sealed trait yellow
     extends StObject
        with AnybarStatus
-  @scala.inline
-  def yellow: yellow = "yellow".asInstanceOf[yellow]
+  inline def yellow: yellow = "yellow".asInstanceOf[yellow]
 }

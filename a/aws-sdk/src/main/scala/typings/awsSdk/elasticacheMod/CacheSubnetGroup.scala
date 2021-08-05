@@ -33,46 +33,33 @@ trait CacheSubnetGroup extends StObject {
 }
 object CacheSubnetGroup {
   
-  @scala.inline
-  def apply(): CacheSubnetGroup = {
+  inline def apply(): CacheSubnetGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheSubnetGroup]
   }
   
-  @scala.inline
-  implicit class CacheSubnetGroupMutableBuilder[Self <: CacheSubnetGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CacheSubnetGroup](x: Self) {
     
-    @scala.inline
-    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setCacheSubnetGroupDescription(value: String): Self = StObject.set(x, "CacheSubnetGroupDescription", value.asInstanceOf[js.Any])
+    inline def setCacheSubnetGroupDescription(value: String): Self = StObject.set(x, "CacheSubnetGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSubnetGroupDescriptionUndefined: Self = StObject.set(x, "CacheSubnetGroupDescription", js.undefined)
+    inline def setCacheSubnetGroupDescriptionUndefined: Self = StObject.set(x, "CacheSubnetGroupDescription", js.undefined)
     
-    @scala.inline
-    def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheSubnetGroupNameUndefined: Self = StObject.set(x, "CacheSubnetGroupName", js.undefined)
+    inline def setCacheSubnetGroupNameUndefined: Self = StObject.set(x, "CacheSubnetGroupName", js.undefined)
     
-    @scala.inline
-    def setSubnets(value: SubnetList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: SubnetList): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
+    inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    @scala.inline
-    def setSubnetsVarargs(value: Subnet*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: Subnet*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

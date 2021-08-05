@@ -17,17 +17,14 @@ object Core {
   }
   object IApplicationDataManagerStatics {
     
-    @scala.inline
-    def apply(createForPackageFamily: String => ApplicationData): IApplicationDataManagerStatics = {
+    inline def apply(createForPackageFamily: String => ApplicationData): IApplicationDataManagerStatics = {
       val __obj = js.Dynamic.literal(createForPackageFamily = js.Any.fromFunction1(createForPackageFamily))
       __obj.asInstanceOf[IApplicationDataManagerStatics]
     }
     
-    @scala.inline
-    implicit class IApplicationDataManagerStaticsMutableBuilder[Self <: IApplicationDataManagerStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IApplicationDataManagerStatics](x: Self) {
       
-      @scala.inline
-      def setCreateForPackageFamily(value: String => ApplicationData): Self = StObject.set(x, "createForPackageFamily", js.Any.fromFunction1(value))
+      inline def setCreateForPackageFamily(value: String => ApplicationData): Self = StObject.set(x, "createForPackageFamily", js.Any.fromFunction1(value))
     }
   }
 }

@@ -18,28 +18,21 @@ trait LabelParameterVersionResult extends StObject {
 }
 object LabelParameterVersionResult {
   
-  @scala.inline
-  def apply(): LabelParameterVersionResult = {
+  inline def apply(): LabelParameterVersionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelParameterVersionResult]
   }
   
-  @scala.inline
-  implicit class LabelParameterVersionResultMutableBuilder[Self <: LabelParameterVersionResult] (val x: Self) extends AnyVal {
+  extension [Self <: LabelParameterVersionResult](x: Self) {
     
-    @scala.inline
-    def setInvalidLabels(value: ParameterLabelList): Self = StObject.set(x, "InvalidLabels", value.asInstanceOf[js.Any])
+    inline def setInvalidLabels(value: ParameterLabelList): Self = StObject.set(x, "InvalidLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidLabelsUndefined: Self = StObject.set(x, "InvalidLabels", js.undefined)
+    inline def setInvalidLabelsUndefined: Self = StObject.set(x, "InvalidLabels", js.undefined)
     
-    @scala.inline
-    def setInvalidLabelsVarargs(value: ParameterLabel*): Self = StObject.set(x, "InvalidLabels", js.Array(value :_*))
+    inline def setInvalidLabelsVarargs(value: ParameterLabel*): Self = StObject.set(x, "InvalidLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setParameterVersion(value: PSParameterVersion): Self = StObject.set(x, "ParameterVersion", value.asInstanceOf[js.Any])
+    inline def setParameterVersion(value: PSParameterVersion): Self = StObject.set(x, "ParameterVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterVersionUndefined: Self = StObject.set(x, "ParameterVersion", js.undefined)
+    inline def setParameterVersionUndefined: Self = StObject.set(x, "ParameterVersion", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ trait OmitEllipseanykeyofPolygo extends StObject {
 }
 object OmitEllipseanykeyofPolygo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCenter: () => js.UndefOr[LngLat],
     getRadius: () => js.Tuple2[Double, Double],
     setCenter: (/* center */ LocationValue, /* preventEvent */ js.UndefOr[Boolean]) => Unit,
@@ -40,19 +39,14 @@ object OmitEllipseanykeyofPolygo {
     __obj.asInstanceOf[OmitEllipseanykeyofPolygo]
   }
   
-  @scala.inline
-  implicit class OmitEllipseanykeyofPolygoMutableBuilder[Self <: OmitEllipseanykeyofPolygo] (val x: Self) extends AnyVal {
+  extension [Self <: OmitEllipseanykeyofPolygo](x: Self) {
     
-    @scala.inline
-    def setGetCenter(value: () => js.UndefOr[LngLat]): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
+    inline def setGetCenter(value: () => js.UndefOr[LngLat]): Self = StObject.set(x, "getCenter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRadius(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
+    inline def setGetRadius(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "getRadius", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCenter(value: (/* center */ LocationValue, /* preventEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction2(value))
+    inline def setSetCenter(value: (/* center */ LocationValue, /* preventEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setCenter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetRadius(value: (/* radius */ js.Tuple2[Double, Double], /* preventEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setRadius", js.Any.fromFunction2(value))
+    inline def setSetRadius(value: (/* radius */ js.Tuple2[Double, Double], /* preventEvent */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "setRadius", js.Any.fromFunction2(value))
   }
 }

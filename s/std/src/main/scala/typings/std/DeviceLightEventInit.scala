@@ -12,19 +12,15 @@ trait DeviceLightEventInit
 }
 object DeviceLightEventInit {
   
-  @scala.inline
-  def apply(): DeviceLightEventInit = {
+  inline def apply(): DeviceLightEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceLightEventInit]
   }
   
-  @scala.inline
-  implicit class DeviceLightEventInitMutableBuilder[Self <: DeviceLightEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceLightEventInit](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

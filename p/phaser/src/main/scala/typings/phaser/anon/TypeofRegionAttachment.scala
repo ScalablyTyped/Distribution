@@ -128,8 +128,7 @@ trait TypeofRegionAttachment extends StObject {
 }
 object TypeofRegionAttachment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     C1A: Double,
     C1B: Double,
     C1G: Double,
@@ -175,127 +174,86 @@ object TypeofRegionAttachment {
     __obj.asInstanceOf[TypeofRegionAttachment]
   }
   
-  @scala.inline
-  implicit class TypeofRegionAttachmentMutableBuilder[Self <: TypeofRegionAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofRegionAttachment](x: Self) {
     
-    @scala.inline
-    def setC1A(value: Double): Self = StObject.set(x, "C1A", value.asInstanceOf[js.Any])
+    inline def setC1A(value: Double): Self = StObject.set(x, "C1A", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC1B(value: Double): Self = StObject.set(x, "C1B", value.asInstanceOf[js.Any])
+    inline def setC1B(value: Double): Self = StObject.set(x, "C1B", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC1G(value: Double): Self = StObject.set(x, "C1G", value.asInstanceOf[js.Any])
+    inline def setC1G(value: Double): Self = StObject.set(x, "C1G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC1R(value: Double): Self = StObject.set(x, "C1R", value.asInstanceOf[js.Any])
+    inline def setC1R(value: Double): Self = StObject.set(x, "C1R", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC2A(value: Double): Self = StObject.set(x, "C2A", value.asInstanceOf[js.Any])
+    inline def setC2A(value: Double): Self = StObject.set(x, "C2A", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC2B(value: Double): Self = StObject.set(x, "C2B", value.asInstanceOf[js.Any])
+    inline def setC2B(value: Double): Self = StObject.set(x, "C2B", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC2G(value: Double): Self = StObject.set(x, "C2G", value.asInstanceOf[js.Any])
+    inline def setC2G(value: Double): Self = StObject.set(x, "C2G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC2R(value: Double): Self = StObject.set(x, "C2R", value.asInstanceOf[js.Any])
+    inline def setC2R(value: Double): Self = StObject.set(x, "C2R", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC3A(value: Double): Self = StObject.set(x, "C3A", value.asInstanceOf[js.Any])
+    inline def setC3A(value: Double): Self = StObject.set(x, "C3A", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC3B(value: Double): Self = StObject.set(x, "C3B", value.asInstanceOf[js.Any])
+    inline def setC3B(value: Double): Self = StObject.set(x, "C3B", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC3G(value: Double): Self = StObject.set(x, "C3G", value.asInstanceOf[js.Any])
+    inline def setC3G(value: Double): Self = StObject.set(x, "C3G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC3R(value: Double): Self = StObject.set(x, "C3R", value.asInstanceOf[js.Any])
+    inline def setC3R(value: Double): Self = StObject.set(x, "C3R", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC4A(value: Double): Self = StObject.set(x, "C4A", value.asInstanceOf[js.Any])
+    inline def setC4A(value: Double): Self = StObject.set(x, "C4A", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC4B(value: Double): Self = StObject.set(x, "C4B", value.asInstanceOf[js.Any])
+    inline def setC4B(value: Double): Self = StObject.set(x, "C4B", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC4G(value: Double): Self = StObject.set(x, "C4G", value.asInstanceOf[js.Any])
+    inline def setC4G(value: Double): Self = StObject.set(x, "C4G", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setC4R(value: Double): Self = StObject.set(x, "C4R", value.asInstanceOf[js.Any])
+    inline def setC4R(value: Double): Self = StObject.set(x, "C4R", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOX1(value: Double): Self = StObject.set(x, "OX1", value.asInstanceOf[js.Any])
+    inline def setOX1(value: Double): Self = StObject.set(x, "OX1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOX2(value: Double): Self = StObject.set(x, "OX2", value.asInstanceOf[js.Any])
+    inline def setOX2(value: Double): Self = StObject.set(x, "OX2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOX3(value: Double): Self = StObject.set(x, "OX3", value.asInstanceOf[js.Any])
+    inline def setOX3(value: Double): Self = StObject.set(x, "OX3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOX4(value: Double): Self = StObject.set(x, "OX4", value.asInstanceOf[js.Any])
+    inline def setOX4(value: Double): Self = StObject.set(x, "OX4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOY1(value: Double): Self = StObject.set(x, "OY1", value.asInstanceOf[js.Any])
+    inline def setOY1(value: Double): Self = StObject.set(x, "OY1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOY2(value: Double): Self = StObject.set(x, "OY2", value.asInstanceOf[js.Any])
+    inline def setOY2(value: Double): Self = StObject.set(x, "OY2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOY3(value: Double): Self = StObject.set(x, "OY3", value.asInstanceOf[js.Any])
+    inline def setOY3(value: Double): Self = StObject.set(x, "OY3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOY4(value: Double): Self = StObject.set(x, "OY4", value.asInstanceOf[js.Any])
+    inline def setOY4(value: Double): Self = StObject.set(x, "OY4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU1(value: Double): Self = StObject.set(x, "U1", value.asInstanceOf[js.Any])
+    inline def setU1(value: Double): Self = StObject.set(x, "U1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU2(value: Double): Self = StObject.set(x, "U2", value.asInstanceOf[js.Any])
+    inline def setU2(value: Double): Self = StObject.set(x, "U2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU3(value: Double): Self = StObject.set(x, "U3", value.asInstanceOf[js.Any])
+    inline def setU3(value: Double): Self = StObject.set(x, "U3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setU4(value: Double): Self = StObject.set(x, "U4", value.asInstanceOf[js.Any])
+    inline def setU4(value: Double): Self = StObject.set(x, "U4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV1(value: Double): Self = StObject.set(x, "V1", value.asInstanceOf[js.Any])
+    inline def setV1(value: Double): Self = StObject.set(x, "V1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV2(value: Double): Self = StObject.set(x, "V2", value.asInstanceOf[js.Any])
+    inline def setV2(value: Double): Self = StObject.set(x, "V2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV3(value: Double): Self = StObject.set(x, "V3", value.asInstanceOf[js.Any])
+    inline def setV3(value: Double): Self = StObject.set(x, "V3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV4(value: Double): Self = StObject.set(x, "V4", value.asInstanceOf[js.Any])
+    inline def setV4(value: Double): Self = StObject.set(x, "V4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX1(value: Double): Self = StObject.set(x, "X1", value.asInstanceOf[js.Any])
+    inline def setX1(value: Double): Self = StObject.set(x, "X1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX2(value: Double): Self = StObject.set(x, "X2", value.asInstanceOf[js.Any])
+    inline def setX2(value: Double): Self = StObject.set(x, "X2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX3(value: Double): Self = StObject.set(x, "X3", value.asInstanceOf[js.Any])
+    inline def setX3(value: Double): Self = StObject.set(x, "X3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX4(value: Double): Self = StObject.set(x, "X4", value.asInstanceOf[js.Any])
+    inline def setX4(value: Double): Self = StObject.set(x, "X4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY1(value: Double): Self = StObject.set(x, "Y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: Double): Self = StObject.set(x, "Y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: Double): Self = StObject.set(x, "Y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: Double): Self = StObject.set(x, "Y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY3(value: Double): Self = StObject.set(x, "Y3", value.asInstanceOf[js.Any])
+    inline def setY3(value: Double): Self = StObject.set(x, "Y3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY4(value: Double): Self = StObject.set(x, "Y4", value.asInstanceOf[js.Any])
+    inline def setY4(value: Double): Self = StObject.set(x, "Y4", value.asInstanceOf[js.Any])
   }
 }

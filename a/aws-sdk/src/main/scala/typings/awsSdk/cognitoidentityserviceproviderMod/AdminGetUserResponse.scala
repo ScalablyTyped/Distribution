@@ -53,73 +53,51 @@ trait AdminGetUserResponse extends StObject {
 }
 object AdminGetUserResponse {
   
-  @scala.inline
-  def apply(Username: UsernameType): AdminGetUserResponse = {
+  inline def apply(Username: UsernameType): AdminGetUserResponse = {
     val __obj = js.Dynamic.literal(Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminGetUserResponse]
   }
   
-  @scala.inline
-  implicit class AdminGetUserResponseMutableBuilder[Self <: AdminGetUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AdminGetUserResponse](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setMFAOptions(value: MFAOptionListType): Self = StObject.set(x, "MFAOptions", value.asInstanceOf[js.Any])
+    inline def setMFAOptions(value: MFAOptionListType): Self = StObject.set(x, "MFAOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMFAOptionsUndefined: Self = StObject.set(x, "MFAOptions", js.undefined)
+    inline def setMFAOptionsUndefined: Self = StObject.set(x, "MFAOptions", js.undefined)
     
-    @scala.inline
-    def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
+    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setPreferredMfaSetting(value: StringType): Self = StObject.set(x, "PreferredMfaSetting", value.asInstanceOf[js.Any])
+    inline def setPreferredMfaSetting(value: StringType): Self = StObject.set(x, "PreferredMfaSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredMfaSettingUndefined: Self = StObject.set(x, "PreferredMfaSetting", js.undefined)
+    inline def setPreferredMfaSettingUndefined: Self = StObject.set(x, "PreferredMfaSetting", js.undefined)
     
-    @scala.inline
-    def setUserAttributes(value: AttributeListType): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: AttributeListType): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
+    inline def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
     
-    @scala.inline
-    def setUserAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "UserAttributes", js.Array(value :_*))
+    inline def setUserAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "UserAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setUserCreateDate(value: DateType): Self = StObject.set(x, "UserCreateDate", value.asInstanceOf[js.Any])
+    inline def setUserCreateDate(value: DateType): Self = StObject.set(x, "UserCreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCreateDateUndefined: Self = StObject.set(x, "UserCreateDate", js.undefined)
+    inline def setUserCreateDateUndefined: Self = StObject.set(x, "UserCreateDate", js.undefined)
     
-    @scala.inline
-    def setUserLastModifiedDate(value: DateType): Self = StObject.set(x, "UserLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setUserLastModifiedDate(value: DateType): Self = StObject.set(x, "UserLastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLastModifiedDateUndefined: Self = StObject.set(x, "UserLastModifiedDate", js.undefined)
+    inline def setUserLastModifiedDateUndefined: Self = StObject.set(x, "UserLastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setUserMFASettingList(value: UserMFASettingListType): Self = StObject.set(x, "UserMFASettingList", value.asInstanceOf[js.Any])
+    inline def setUserMFASettingList(value: UserMFASettingListType): Self = StObject.set(x, "UserMFASettingList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserMFASettingListUndefined: Self = StObject.set(x, "UserMFASettingList", js.undefined)
+    inline def setUserMFASettingListUndefined: Self = StObject.set(x, "UserMFASettingList", js.undefined)
     
-    @scala.inline
-    def setUserMFASettingListVarargs(value: StringType*): Self = StObject.set(x, "UserMFASettingList", js.Array(value :_*))
+    inline def setUserMFASettingListVarargs(value: StringType*): Self = StObject.set(x, "UserMFASettingList", js.Array(value :_*))
     
-    @scala.inline
-    def setUserStatus(value: UserStatusType): Self = StObject.set(x, "UserStatus", value.asInstanceOf[js.Any])
+    inline def setUserStatus(value: UserStatusType): Self = StObject.set(x, "UserStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStatusUndefined: Self = StObject.set(x, "UserStatus", js.undefined)
+    inline def setUserStatusUndefined: Self = StObject.set(x, "UserStatus", js.undefined)
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

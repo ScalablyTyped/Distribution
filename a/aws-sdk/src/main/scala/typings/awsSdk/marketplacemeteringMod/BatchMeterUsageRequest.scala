@@ -18,22 +18,17 @@ trait BatchMeterUsageRequest extends StObject {
 }
 object BatchMeterUsageRequest {
   
-  @scala.inline
-  def apply(ProductCode: ProductCode, UsageRecords: UsageRecordList): BatchMeterUsageRequest = {
+  inline def apply(ProductCode: ProductCode, UsageRecords: UsageRecordList): BatchMeterUsageRequest = {
     val __obj = js.Dynamic.literal(ProductCode = ProductCode.asInstanceOf[js.Any], UsageRecords = UsageRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchMeterUsageRequest]
   }
   
-  @scala.inline
-  implicit class BatchMeterUsageRequestMutableBuilder[Self <: BatchMeterUsageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchMeterUsageRequest](x: Self) {
     
-    @scala.inline
-    def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
+    inline def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageRecords(value: UsageRecordList): Self = StObject.set(x, "UsageRecords", value.asInstanceOf[js.Any])
+    inline def setUsageRecords(value: UsageRecordList): Self = StObject.set(x, "UsageRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UsageRecords", js.Array(value :_*))
+    inline def setUsageRecordsVarargs(value: UsageRecord*): Self = StObject.set(x, "UsageRecords", js.Array(value :_*))
   }
 }

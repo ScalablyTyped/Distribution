@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object repoStatMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[NumObjects]] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[NumObjects]]]
+  inline def apply(clientOptions: ClientOptions): js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[NumObjects]] = ^.asInstanceOf[js.Dynamic].apply(clientOptions.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[js.Object], js.Promise[NumObjects]]]
   
   @JSImport("ipfs-http-client/dist/src/repo/stat", JSImport.Namespace)
   @js.native

@@ -66,16 +66,13 @@ object ApplicationPages {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def firstInstance(): ICalendarController = ^.asInstanceOf[js.Dynamic].applyDynamic("firstInstance")().asInstanceOf[ICalendarController]
+    inline def firstInstance(): ICalendarController = ^.asInstanceOf[js.Dynamic].applyDynamic("firstInstance")().asInstanceOf[ICalendarController]
     
     /* static member */
-    @scala.inline
-    def lookupInstance(instanceId: String): ICalendarController = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupInstance")(instanceId.asInstanceOf[js.Any]).asInstanceOf[ICalendarController]
+    inline def lookupInstance(instanceId: String): ICalendarController = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupInstance")(instanceId.asInstanceOf[js.Any]).asInstanceOf[ICalendarController]
     
     /* static member */
-    @scala.inline
-    def registerInstance(instanceId: String, contoller: ICalendarController): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInstance")(instanceId.asInstanceOf[js.Any], contoller.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerInstance(instanceId: String, contoller: ICalendarController): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerInstance")(instanceId.asInstanceOf[js.Any], contoller.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("SP.UI.ApplicationPages.CalendarScope")
@@ -247,8 +244,7 @@ object ApplicationPages {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def instance(): typings.sharepoint.SP.UI.ApplicationPages.CalendarSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[typings.sharepoint.SP.UI.ApplicationPages.CalendarSelector]
+    inline def instance(): typings.sharepoint.SP.UI.ApplicationPages.CalendarSelector = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[typings.sharepoint.SP.UI.ApplicationPages.CalendarSelector]
   }
   
   @JSGlobal("SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters")
@@ -375,15 +371,13 @@ object ApplicationPages {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def clientPeoplePickerResolveUser(
+    inline def clientPeoplePickerResolveUser(
       context: ClientRuntimeContext,
       queryParams: typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters
     ): StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("clientPeoplePickerResolveUser")(context.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[StringResult]
     
     /* static member */
-    @scala.inline
-    def clientPeoplePickerSearchUser(
+    inline def clientPeoplePickerSearchUser(
       context: ClientRuntimeContext,
       queryParams: typings.sharepoint.SP.UI.ApplicationPages.ClientPeoplePickerQueryParameters
     ): StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("clientPeoplePickerSearchUser")(context.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[StringResult]
@@ -401,8 +395,7 @@ object ApplicationPages {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def getSearchResults(
+    inline def getSearchResults(
       context: ClientRuntimeContext,
       searchPattern: String,
       providerID: String,
@@ -411,8 +404,7 @@ object ApplicationPages {
     ): StringResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchResults")(context.asInstanceOf[js.Any], searchPattern.asInstanceOf[js.Any], providerID.asInstanceOf[js.Any], hierarchyNodeID.asInstanceOf[js.Any], entityTypes.asInstanceOf[js.Any])).asInstanceOf[StringResult]
     
     /* static member */
-    @scala.inline
-    def getSearchResultsByHierarchy(
+    inline def getSearchResultsByHierarchy(
       context: ClientRuntimeContext,
       providerID: String,
       hierarchyNodeID: String,

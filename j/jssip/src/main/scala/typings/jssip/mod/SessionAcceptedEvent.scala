@@ -12,22 +12,17 @@ trait SessionAcceptedEvent extends StObject {
 }
 object SessionAcceptedEvent {
   
-  @scala.inline
-  def apply(originator: String): SessionAcceptedEvent = {
+  inline def apply(originator: String): SessionAcceptedEvent = {
     val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionAcceptedEvent]
   }
   
-  @scala.inline
-  implicit class SessionAcceptedEventMutableBuilder[Self <: SessionAcceptedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionAcceptedEvent](x: Self) {
     
-    @scala.inline
-    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+    inline def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: IncomingResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

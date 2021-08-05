@@ -21,10 +21,8 @@ object documentCardLocationStylesMod {
     @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardLocation.styles", "DocumentCardLocationGlobalClassNames.root")
     @js.native
     def root: String = js.native
-    @scala.inline
-    def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
+    inline def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def getStyles(props: IDocumentCardLocationStyleProps): IDocumentCardLocationStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDocumentCardLocationStyles]
+  inline def getStyles(props: IDocumentCardLocationStyleProps): IDocumentCardLocationStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDocumentCardLocationStyles]
 }

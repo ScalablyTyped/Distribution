@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(structureMinimization: Boolean): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(structureMinimization.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(structureMinimization: Boolean): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(structureMinimization.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-csso", JSImport.Namespace)
   @js.native

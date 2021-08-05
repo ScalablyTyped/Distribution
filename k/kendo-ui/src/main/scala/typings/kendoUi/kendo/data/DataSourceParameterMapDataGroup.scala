@@ -14,34 +14,25 @@ trait DataSourceParameterMapDataGroup extends StObject {
 }
 object DataSourceParameterMapDataGroup {
   
-  @scala.inline
-  def apply(): DataSourceParameterMapDataGroup = {
+  inline def apply(): DataSourceParameterMapDataGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceParameterMapDataGroup]
   }
   
-  @scala.inline
-  implicit class DataSourceParameterMapDataGroupMutableBuilder[Self <: DataSourceParameterMapDataGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceParameterMapDataGroup](x: Self) {
     
-    @scala.inline
-    def setAggregate(value: js.Array[DataSourceParameterMapDataAggregate]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: js.Array[DataSourceParameterMapDataAggregate]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    @scala.inline
-    def setAggregateVarargs(value: DataSourceParameterMapDataAggregate*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
+    inline def setAggregateVarargs(value: DataSourceParameterMapDataAggregate*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

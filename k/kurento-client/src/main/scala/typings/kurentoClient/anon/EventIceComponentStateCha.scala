@@ -28,8 +28,7 @@ trait EventIceComponentStateCha extends StObject {
 }
 object EventIceComponentStateCha {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     componentId: Double,
     source: String,
     state: IceComponentState,
@@ -43,34 +42,24 @@ object EventIceComponentStateCha {
     __obj.asInstanceOf[EventIceComponentStateCha]
   }
   
-  @scala.inline
-  implicit class EventIceComponentStateChaMutableBuilder[Self <: EventIceComponentStateCha] (val x: Self) extends AnyVal {
+  extension [Self <: EventIceComponentStateCha](x: Self) {
     
-    @scala.inline
-    def setComponentId(value: Double): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
+    inline def setComponentId(value: Double): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: IceComponentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: IceComponentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamId(value: Double): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: Double): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
+    inline def setTimestampMillis(value: String): Self = StObject.set(x, "timestampMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: IceComponentStateChange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IceComponentStateChange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

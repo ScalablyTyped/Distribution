@@ -18,31 +18,23 @@ trait DeleteParametersResult extends StObject {
 }
 object DeleteParametersResult {
   
-  @scala.inline
-  def apply(): DeleteParametersResult = {
+  inline def apply(): DeleteParametersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteParametersResult]
   }
   
-  @scala.inline
-  implicit class DeleteParametersResultMutableBuilder[Self <: DeleteParametersResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteParametersResult](x: Self) {
     
-    @scala.inline
-    def setDeletedParameters(value: ParameterNameList): Self = StObject.set(x, "DeletedParameters", value.asInstanceOf[js.Any])
+    inline def setDeletedParameters(value: ParameterNameList): Self = StObject.set(x, "DeletedParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedParametersUndefined: Self = StObject.set(x, "DeletedParameters", js.undefined)
+    inline def setDeletedParametersUndefined: Self = StObject.set(x, "DeletedParameters", js.undefined)
     
-    @scala.inline
-    def setDeletedParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "DeletedParameters", js.Array(value :_*))
+    inline def setDeletedParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "DeletedParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setInvalidParameters(value: ParameterNameList): Self = StObject.set(x, "InvalidParameters", value.asInstanceOf[js.Any])
+    inline def setInvalidParameters(value: ParameterNameList): Self = StObject.set(x, "InvalidParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidParametersUndefined: Self = StObject.set(x, "InvalidParameters", js.undefined)
+    inline def setInvalidParametersUndefined: Self = StObject.set(x, "InvalidParameters", js.undefined)
     
-    @scala.inline
-    def setInvalidParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "InvalidParameters", js.Array(value :_*))
+    inline def setInvalidParametersVarargs(value: PSParameterName*): Self = StObject.set(x, "InvalidParameters", js.Array(value :_*))
   }
 }

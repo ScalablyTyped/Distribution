@@ -18,19 +18,15 @@ trait TimeWindow extends StObject {
 }
 object TimeWindow {
   
-  @scala.inline
-  def apply(EndTime: Timestamp, StartTime: Timestamp): TimeWindow = {
+  inline def apply(EndTime: Timestamp, StartTime: Timestamp): TimeWindow = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeWindow]
   }
   
-  @scala.inline
-  implicit class TimeWindowMutableBuilder[Self <: TimeWindow] (val x: Self) extends AnyVal {
+  extension [Self <: TimeWindow](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

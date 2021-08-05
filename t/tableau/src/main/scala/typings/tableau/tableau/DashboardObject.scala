@@ -26,8 +26,7 @@ trait DashboardObject extends StObject {
 }
 object DashboardObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDashboard: () => Dashboard,
     getObjectType: () => DashboardObjectType,
     getPosition: () => Point,
@@ -38,22 +37,16 @@ object DashboardObject {
     __obj.asInstanceOf[DashboardObject]
   }
   
-  @scala.inline
-  implicit class DashboardObjectMutableBuilder[Self <: DashboardObject] (val x: Self) extends AnyVal {
+  extension [Self <: DashboardObject](x: Self) {
     
-    @scala.inline
-    def setGetDashboard(value: () => Dashboard): Self = StObject.set(x, "getDashboard", js.Any.fromFunction0(value))
+    inline def setGetDashboard(value: () => Dashboard): Self = StObject.set(x, "getDashboard", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetObjectType(value: () => DashboardObjectType): Self = StObject.set(x, "getObjectType", js.Any.fromFunction0(value))
+    inline def setGetObjectType(value: () => DashboardObjectType): Self = StObject.set(x, "getObjectType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+    inline def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorksheet(value: () => Worksheet): Self = StObject.set(x, "getWorksheet", js.Any.fromFunction0(value))
+    inline def setGetWorksheet(value: () => Worksheet): Self = StObject.set(x, "getWorksheet", js.Any.fromFunction0(value))
   }
 }

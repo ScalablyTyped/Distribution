@@ -20,23 +20,23 @@ object stylableGeneratorMod {
       options: PartialStylableGeneratorO
     ) = this()
     
-    var afterTransform: js.Any = js.native
+    /* private */ var afterTransform: js.Any = js.native
     
-    var compilation: js.Any = js.native
+    /* private */ var compilation: js.Any = js.native
     
-    var createModuleSource: js.Any = js.native
+    /* private */ var createModuleSource: js.Any = js.native
     
     def generate(module: StylableModule, _dependencyTemplates: js.Any, runtimeTemplate: js.Any): js.Any = js.native
     
-    var normalModuleFactory: js.Any = js.native
+    /* private */ var normalModuleFactory: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var reportDiagnostics: js.Any = js.native
+    /* private */ var reportDiagnostics: js.Any = js.native
     
-    var stringifyCSS: js.Any = js.native
+    /* private */ var stringifyCSS: js.Any = js.native
     
-    var stylable: js.Any = js.native
+    /* private */ var stylable: js.Any = js.native
     
     def toCSS(module: StylableModule, onAsset: js.Function1[/* module */ WebpackAssetModule, String]): String = js.native
   }

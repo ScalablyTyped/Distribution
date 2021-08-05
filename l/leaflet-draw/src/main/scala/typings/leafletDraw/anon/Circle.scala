@@ -20,8 +20,7 @@ trait Circle extends StObject {
 }
 object Circle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     circle: String,
     circlemarker: String,
     marker: String,
@@ -33,25 +32,18 @@ object Circle {
     __obj.asInstanceOf[Circle]
   }
   
-  @scala.inline
-  implicit class CircleMutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
+  extension [Self <: Circle](x: Self) {
     
-    @scala.inline
-    def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCirclemarker(value: String): Self = StObject.set(x, "circlemarker", value.asInstanceOf[js.Any])
+    inline def setCirclemarker(value: String): Self = StObject.set(x, "circlemarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygon(value: String): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+    inline def setPolygon(value: String): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolyline(value: String): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+    inline def setPolyline(value: String): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectangle(value: String): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+    inline def setRectangle(value: String): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait ASPxClientSideParametersModel extends StObject {
 }
 object ASPxClientSideParametersModel {
   
-  @scala.inline
-  def apply(serializeParameters: () => Unit, submit: () => Unit, tabInfo: ASPxClientDocumentPreviewTab): ASPxClientSideParametersModel = {
+  inline def apply(serializeParameters: () => Unit, submit: () => Unit, tabInfo: ASPxClientDocumentPreviewTab): ASPxClientSideParametersModel = {
     val __obj = js.Dynamic.literal(serializeParameters = js.Any.fromFunction0(serializeParameters), submit = js.Any.fromFunction0(submit), tabInfo = tabInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSideParametersModel]
   }
   
-  @scala.inline
-  implicit class ASPxClientSideParametersModelMutableBuilder[Self <: ASPxClientSideParametersModel] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSideParametersModel](x: Self) {
     
-    @scala.inline
-    def setSerializeParameters(value: () => Unit): Self = StObject.set(x, "serializeParameters", js.Any.fromFunction0(value))
+    inline def setSerializeParameters(value: () => Unit): Self = StObject.set(x, "serializeParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTabInfo(value: ASPxClientDocumentPreviewTab): Self = StObject.set(x, "tabInfo", value.asInstanceOf[js.Any])
+    inline def setTabInfo(value: ASPxClientDocumentPreviewTab): Self = StObject.set(x, "tabInfo", value.asInstanceOf[js.Any])
   }
 }

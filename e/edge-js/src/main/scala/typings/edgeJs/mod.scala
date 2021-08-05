@@ -12,26 +12,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def func[TInput, TOutput](language: String, params: String): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
-  @scala.inline
-  def func[TInput, TOutput](language: String, params: js.Function): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
-  @scala.inline
-  def func[TInput, TOutput](language: String, params: Params): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
-  @scala.inline
-  def func[TInput, TOutput](language: String, params: Source): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
-  @scala.inline
-  def func[TInput, TOutput](language: String, params: TSQL): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
-  @scala.inline
-  def func[TInput, TOutput](params: String): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
-  @scala.inline
-  def func[TInput, TOutput](params: js.Function): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
-  @scala.inline
-  def func[TInput, TOutput](params: Params): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
-  @scala.inline
-  def func[TInput, TOutput](params: Source): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
-  @scala.inline
-  def func[TInput, TOutput](params: TSQL): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](language: String, params: String): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](language: String, params: js.Function): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](language: String, params: Params): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](language: String, params: Source): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](language: String, params: TSQL): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](params: String): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](params: js.Function): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](params: Params): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](params: Source): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
+  inline def func[TInput, TOutput](params: TSQL): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
   
   @js.native
   trait Func_[TInput, TOutput] extends StObject {
@@ -50,29 +40,22 @@ object mod {
   }
   object Params {
     
-    @scala.inline
-    def apply(assemblyFile: String): Params = {
+    inline def apply(assemblyFile: String): Params = {
       val __obj = js.Dynamic.literal(assemblyFile = assemblyFile.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setAssemblyFile(value: String): Self = StObject.set(x, "assemblyFile", value.asInstanceOf[js.Any])
+      inline def setAssemblyFile(value: String): Self = StObject.set(x, "assemblyFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+      inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
       
-      @scala.inline
-      def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+      inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNameUndefined: Self = StObject.set(x, "typeName", js.undefined)
+      inline def setTypeNameUndefined: Self = StObject.set(x, "typeName", js.undefined)
     }
   }
   
@@ -84,26 +67,20 @@ object mod {
   }
   object Source {
     
-    @scala.inline
-    def apply(source: String | js.Function): Source = {
+    inline def apply(source: String | js.Function): Source = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Source]
     }
     
-    @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+    extension [Self <: Source](x: Self) {
       
-      @scala.inline
-      def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      inline def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+      inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
       
-      @scala.inline
-      def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
+      inline def setReferencesVarargs(value: String*): Self = StObject.set(x, "references", js.Array(value :_*))
       
-      @scala.inline
-      def setSource(value: String | js.Function): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | js.Function): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,29 +94,22 @@ object mod {
   }
   object TSQL {
     
-    @scala.inline
-    def apply(source: String): TSQL = {
+    inline def apply(source: String): TSQL = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[TSQL]
     }
     
-    @scala.inline
-    implicit class TSQLMutableBuilder[Self <: TSQL] (val x: Self) extends AnyVal {
+    extension [Self <: TSQL](x: Self) {
       
-      @scala.inline
-      def setCommandTimeout(value: Double): Self = StObject.set(x, "commandTimeout", value.asInstanceOf[js.Any])
+      inline def setCommandTimeout(value: Double): Self = StObject.set(x, "commandTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandTimeoutUndefined: Self = StObject.set(x, "commandTimeout", js.undefined)
+      inline def setCommandTimeoutUndefined: Self = StObject.set(x, "commandTimeout", js.undefined)
       
-      @scala.inline
-      def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
+      inline def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
+      inline def setConnectionStringUndefined: Self = StObject.set(x, "connectionString", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
 }

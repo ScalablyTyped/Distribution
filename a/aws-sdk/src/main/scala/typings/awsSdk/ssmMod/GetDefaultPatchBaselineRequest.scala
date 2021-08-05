@@ -13,19 +13,15 @@ trait GetDefaultPatchBaselineRequest extends StObject {
 }
 object GetDefaultPatchBaselineRequest {
   
-  @scala.inline
-  def apply(): GetDefaultPatchBaselineRequest = {
+  inline def apply(): GetDefaultPatchBaselineRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDefaultPatchBaselineRequest]
   }
   
-  @scala.inline
-  implicit class GetDefaultPatchBaselineRequestMutableBuilder[Self <: GetDefaultPatchBaselineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDefaultPatchBaselineRequest](x: Self) {
     
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
   }
 }

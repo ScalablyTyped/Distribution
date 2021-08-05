@@ -20,13 +20,12 @@ trait FormRegionStartup extends StObject {
     FormRegionSize: OlFormRegionSize
   ): js.Any
   
-  @JSName("Outlook.FormRegionStartup_typekey")
+  /* private */ @JSName("Outlook.FormRegionStartup_typekey")
   var OutlookDotFormRegionStartup_typekey: FormRegionStartup
 }
 object FormRegionStartup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeforeFormRegionShow: FormRegion => Unit,
     GetFormRegionIcon: (String, Double, OlFormRegionIcon) => js.Any,
     GetFormRegionManifest: (String, Double) => js.Any,
@@ -38,22 +37,16 @@ object FormRegionStartup {
     __obj.asInstanceOf[FormRegionStartup]
   }
   
-  @scala.inline
-  implicit class FormRegionStartupMutableBuilder[Self <: FormRegionStartup] (val x: Self) extends AnyVal {
+  extension [Self <: FormRegionStartup](x: Self) {
     
-    @scala.inline
-    def setBeforeFormRegionShow(value: FormRegion => Unit): Self = StObject.set(x, "BeforeFormRegionShow", js.Any.fromFunction1(value))
+    inline def setBeforeFormRegionShow(value: FormRegion => Unit): Self = StObject.set(x, "BeforeFormRegionShow", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFormRegionIcon(value: (String, Double, OlFormRegionIcon) => js.Any): Self = StObject.set(x, "GetFormRegionIcon", js.Any.fromFunction3(value))
+    inline def setGetFormRegionIcon(value: (String, Double, OlFormRegionIcon) => js.Any): Self = StObject.set(x, "GetFormRegionIcon", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetFormRegionManifest(value: (String, Double) => js.Any): Self = StObject.set(x, "GetFormRegionManifest", js.Any.fromFunction2(value))
+    inline def setGetFormRegionManifest(value: (String, Double) => js.Any): Self = StObject.set(x, "GetFormRegionManifest", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetFormRegionStorage(value: (String, js.Any, Double, OlFormRegionMode, OlFormRegionSize) => js.Any): Self = StObject.set(x, "GetFormRegionStorage", js.Any.fromFunction5(value))
+    inline def setGetFormRegionStorage(value: (String, js.Any, Double, OlFormRegionMode, OlFormRegionSize) => js.Any): Self = StObject.set(x, "GetFormRegionStorage", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setOutlookDotFormRegionStartup_typekey(value: FormRegionStartup): Self = StObject.set(x, "Outlook.FormRegionStartup_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotFormRegionStartup_typekey(value: FormRegionStartup): Self = StObject.set(x, "Outlook.FormRegionStartup_typekey", value.asInstanceOf[js.Any])
   }
 }

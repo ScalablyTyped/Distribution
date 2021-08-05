@@ -47,8 +47,7 @@ trait XSearchable
 }
 object XSearchable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createSearchDescriptor: () => XSearchDescriptor,
     findAll: XSearchDescriptor => XIndexAccess,
@@ -61,19 +60,14 @@ object XSearchable {
     __obj.asInstanceOf[XSearchable]
   }
   
-  @scala.inline
-  implicit class XSearchableMutableBuilder[Self <: XSearchable] (val x: Self) extends AnyVal {
+  extension [Self <: XSearchable](x: Self) {
     
-    @scala.inline
-    def setCreateSearchDescriptor(value: () => XSearchDescriptor): Self = StObject.set(x, "createSearchDescriptor", js.Any.fromFunction0(value))
+    inline def setCreateSearchDescriptor(value: () => XSearchDescriptor): Self = StObject.set(x, "createSearchDescriptor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindAll(value: XSearchDescriptor => XIndexAccess): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
+    inline def setFindAll(value: XSearchDescriptor => XIndexAccess): Self = StObject.set(x, "findAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindFirst(value: XSearchDescriptor => XInterface): Self = StObject.set(x, "findFirst", js.Any.fromFunction1(value))
+    inline def setFindFirst(value: XSearchDescriptor => XInterface): Self = StObject.set(x, "findFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindNext(value: (XInterface, XSearchDescriptor) => XInterface): Self = StObject.set(x, "findNext", js.Any.fromFunction2(value))
+    inline def setFindNext(value: (XInterface, XSearchDescriptor) => XInterface): Self = StObject.set(x, "findNext", js.Any.fromFunction2(value))
   }
 }

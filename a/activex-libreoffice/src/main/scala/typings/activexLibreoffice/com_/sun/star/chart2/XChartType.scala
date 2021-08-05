@@ -79,8 +79,7 @@ trait XChartType
 }
 object XChartType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ChartType: String,
     RoleOfSequenceForSeriesLabel: String,
     SupportedMandatoryRoles: SafeArray[String],
@@ -100,40 +99,28 @@ object XChartType {
     __obj.asInstanceOf[XChartType]
   }
   
-  @scala.inline
-  implicit class XChartTypeMutableBuilder[Self <: XChartType] (val x: Self) extends AnyVal {
+  extension [Self <: XChartType](x: Self) {
     
-    @scala.inline
-    def setChartType(value: String): Self = StObject.set(x, "ChartType", value.asInstanceOf[js.Any])
+    inline def setChartType(value: String): Self = StObject.set(x, "ChartType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCoordinateSystem(value: Double => XCoordinateSystem): Self = StObject.set(x, "createCoordinateSystem", js.Any.fromFunction1(value))
+    inline def setCreateCoordinateSystem(value: Double => XCoordinateSystem): Self = StObject.set(x, "createCoordinateSystem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetChartType(value: () => String): Self = StObject.set(x, "getChartType", js.Any.fromFunction0(value))
+    inline def setGetChartType(value: () => String): Self = StObject.set(x, "getChartType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRoleOfSequenceForSeriesLabel(value: () => String): Self = StObject.set(x, "getRoleOfSequenceForSeriesLabel", js.Any.fromFunction0(value))
+    inline def setGetRoleOfSequenceForSeriesLabel(value: () => String): Self = StObject.set(x, "getRoleOfSequenceForSeriesLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSupportedMandatoryRoles(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMandatoryRoles", js.Any.fromFunction0(value))
+    inline def setGetSupportedMandatoryRoles(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMandatoryRoles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSupportedOptionalRoles(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedOptionalRoles", js.Any.fromFunction0(value))
+    inline def setGetSupportedOptionalRoles(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedOptionalRoles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSupportedPropertyRoles(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedPropertyRoles", js.Any.fromFunction0(value))
+    inline def setGetSupportedPropertyRoles(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedPropertyRoles", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRoleOfSequenceForSeriesLabel(value: String): Self = StObject.set(x, "RoleOfSequenceForSeriesLabel", value.asInstanceOf[js.Any])
+    inline def setRoleOfSequenceForSeriesLabel(value: String): Self = StObject.set(x, "RoleOfSequenceForSeriesLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedMandatoryRoles(value: SafeArray[String]): Self = StObject.set(x, "SupportedMandatoryRoles", value.asInstanceOf[js.Any])
+    inline def setSupportedMandatoryRoles(value: SafeArray[String]): Self = StObject.set(x, "SupportedMandatoryRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedOptionalRoles(value: SafeArray[String]): Self = StObject.set(x, "SupportedOptionalRoles", value.asInstanceOf[js.Any])
+    inline def setSupportedOptionalRoles(value: SafeArray[String]): Self = StObject.set(x, "SupportedOptionalRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedPropertyRoles(value: SafeArray[String]): Self = StObject.set(x, "SupportedPropertyRoles", value.asInstanceOf[js.Any])
+    inline def setSupportedPropertyRoles(value: SafeArray[String]): Self = StObject.set(x, "SupportedPropertyRoles", value.asInstanceOf[js.Any])
   }
 }

@@ -34,6 +34,5 @@ object LngLat {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convert(input: LngLatLike): LngLat = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(input.asInstanceOf[js.Any]).asInstanceOf[LngLat]
+  inline def convert(input: LngLatLike): LngLat = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(input.asInstanceOf[js.Any]).asInstanceOf[LngLat]
 }

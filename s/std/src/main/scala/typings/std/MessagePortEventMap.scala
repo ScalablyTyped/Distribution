@@ -12,19 +12,15 @@ trait MessagePortEventMap extends StObject {
 }
 object MessagePortEventMap {
   
-  @scala.inline
-  def apply(message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): MessagePortEventMap = {
+  inline def apply(message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): MessagePortEventMap = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagePortEventMap]
   }
   
-  @scala.inline
-  implicit class MessagePortEventMapMutableBuilder[Self <: MessagePortEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: MessagePortEventMap](x: Self) {
     
-    @scala.inline
-    def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
+    inline def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
   }
 }

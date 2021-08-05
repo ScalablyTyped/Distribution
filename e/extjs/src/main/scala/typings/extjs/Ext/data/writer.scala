@@ -30,44 +30,32 @@ object writer {
   }
   object IJson {
     
-    @scala.inline
-    def apply(): IJson = {
+    inline def apply(): IJson = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IJson]
     }
     
-    @scala.inline
-    implicit class IJsonMutableBuilder[Self <: IJson] (val x: Self) extends AnyVal {
+    extension [Self <: IJson](x: Self) {
       
-      @scala.inline
-      def setAllowSingle(value: Boolean): Self = StObject.set(x, "allowSingle", value.asInstanceOf[js.Any])
+      inline def setAllowSingle(value: Boolean): Self = StObject.set(x, "allowSingle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowSingleUndefined: Self = StObject.set(x, "allowSingle", js.undefined)
+      inline def setAllowSingleUndefined: Self = StObject.set(x, "allowSingle", js.undefined)
       
-      @scala.inline
-      def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      inline def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      @scala.inline
-      def setExpandData(value: Boolean): Self = StObject.set(x, "expandData", value.asInstanceOf[js.Any])
+      inline def setExpandData(value: Boolean): Self = StObject.set(x, "expandData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandDataUndefined: Self = StObject.set(x, "expandData", js.undefined)
+      inline def setExpandDataUndefined: Self = StObject.set(x, "expandData", js.undefined)
       
-      @scala.inline
-      def setGetExpandedData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getExpandedData", js.Any.fromFunction1(value))
+      inline def setGetExpandedData(value: /* data */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "getExpandedData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetExpandedDataUndefined: Self = StObject.set(x, "getExpandedData", js.undefined)
+      inline def setGetExpandedDataUndefined: Self = StObject.set(x, "getExpandedData", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -104,50 +92,36 @@ object writer {
   }
   object IWriter {
     
-    @scala.inline
-    def apply(): typings.extjs.Ext.data.writer.IWriter = {
+    inline def apply(): typings.extjs.Ext.data.writer.IWriter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.extjs.Ext.data.writer.IWriter]
     }
     
-    @scala.inline
-    implicit class IWriterMutableBuilder[Self <: typings.extjs.Ext.data.writer.IWriter] (val x: Self) extends AnyVal {
+    extension [Self <: typings.extjs.Ext.data.writer.IWriter](x: Self) {
       
-      @scala.inline
-      def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+      inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+      inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      @scala.inline
-      def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
+      inline def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
+      inline def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)
       
-      @scala.inline
-      def setNameProperty(value: String): Self = StObject.set(x, "nameProperty", value.asInstanceOf[js.Any])
+      inline def setNameProperty(value: String): Self = StObject.set(x, "nameProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePropertyUndefined: Self = StObject.set(x, "nameProperty", js.undefined)
+      inline def setNamePropertyUndefined: Self = StObject.set(x, "nameProperty", js.undefined)
       
-      @scala.inline
-      def setWrite(value: /* request */ js.UndefOr[IRequest] => IRequest): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: /* request */ js.UndefOr[IRequest] => IRequest): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteAllFields(value: Boolean): Self = StObject.set(x, "writeAllFields", value.asInstanceOf[js.Any])
+      inline def setWriteAllFields(value: Boolean): Self = StObject.set(x, "writeAllFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteAllFieldsUndefined: Self = StObject.set(x, "writeAllFields", js.undefined)
+      inline def setWriteAllFieldsUndefined: Self = StObject.set(x, "writeAllFields", js.undefined)
       
-      @scala.inline
-      def setWriteRecordId(value: Boolean): Self = StObject.set(x, "writeRecordId", value.asInstanceOf[js.Any])
+      inline def setWriteRecordId(value: Boolean): Self = StObject.set(x, "writeRecordId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteRecordIdUndefined: Self = StObject.set(x, "writeRecordId", js.undefined)
+      inline def setWriteRecordIdUndefined: Self = StObject.set(x, "writeRecordId", js.undefined)
       
-      @scala.inline
-      def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     }
   }
   
@@ -169,38 +143,28 @@ object writer {
   }
   object IXml {
     
-    @scala.inline
-    def apply(): IXml = {
+    inline def apply(): IXml = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IXml]
     }
     
-    @scala.inline
-    implicit class IXmlMutableBuilder[Self <: IXml] (val x: Self) extends AnyVal {
+    extension [Self <: IXml](x: Self) {
       
-      @scala.inline
-      def setDefaultDocumentRoot(value: String): Self = StObject.set(x, "defaultDocumentRoot", value.asInstanceOf[js.Any])
+      inline def setDefaultDocumentRoot(value: String): Self = StObject.set(x, "defaultDocumentRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDocumentRootUndefined: Self = StObject.set(x, "defaultDocumentRoot", js.undefined)
+      inline def setDefaultDocumentRootUndefined: Self = StObject.set(x, "defaultDocumentRoot", js.undefined)
       
-      @scala.inline
-      def setDocumentRoot(value: String): Self = StObject.set(x, "documentRoot", value.asInstanceOf[js.Any])
+      inline def setDocumentRoot(value: String): Self = StObject.set(x, "documentRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentRootUndefined: Self = StObject.set(x, "documentRoot", js.undefined)
+      inline def setDocumentRootUndefined: Self = StObject.set(x, "documentRoot", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setRecord(value: String): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+      inline def setRecord(value: String): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
+      inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
     }
   }
 }

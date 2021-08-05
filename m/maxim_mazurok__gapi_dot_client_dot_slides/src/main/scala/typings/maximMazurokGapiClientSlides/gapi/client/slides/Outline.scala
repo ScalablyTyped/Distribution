@@ -23,37 +23,27 @@ trait Outline extends StObject {
 }
 object Outline {
   
-  @scala.inline
-  def apply(): Outline = {
+  inline def apply(): Outline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Outline]
   }
   
-  @scala.inline
-  implicit class OutlineMutableBuilder[Self <: Outline] (val x: Self) extends AnyVal {
+  extension [Self <: Outline](x: Self) {
     
-    @scala.inline
-    def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    @scala.inline
-    def setOutlineFill(value: OutlineFill): Self = StObject.set(x, "outlineFill", value.asInstanceOf[js.Any])
+    inline def setOutlineFill(value: OutlineFill): Self = StObject.set(x, "outlineFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineFillUndefined: Self = StObject.set(x, "outlineFill", js.undefined)
+    inline def setOutlineFillUndefined: Self = StObject.set(x, "outlineFill", js.undefined)
     
-    @scala.inline
-    def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
+    inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
+    inline def setPropertyStateUndefined: Self = StObject.set(x, "propertyState", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Dimension): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

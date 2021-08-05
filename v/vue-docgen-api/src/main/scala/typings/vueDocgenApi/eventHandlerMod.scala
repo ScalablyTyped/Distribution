@@ -17,21 +17,17 @@ object eventHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     documentation: typings.vueDocgenApi.documentationMod.default,
     path: NodePath[js.Any, js.Any],
     astPath: File_
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any], astPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def eventHandlerEmits(documentation: default, path: NodePath[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventHandlerEmits")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def eventHandlerEmits(documentation: default, path: NodePath[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventHandlerEmits")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def eventHandlerMethods(documentation: default, path: NodePath[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventHandlerMethods")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def eventHandlerMethods(documentation: default, path: NodePath[js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventHandlerMethods")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setEventDescriptor(eventDescriptor: EventDescriptor, jsDoc: DocBlockTags): EventDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("setEventDescriptor")(eventDescriptor.asInstanceOf[js.Any], jsDoc.asInstanceOf[js.Any])).asInstanceOf[EventDescriptor]
+  inline def setEventDescriptor(eventDescriptor: EventDescriptor, jsDoc: DocBlockTags): EventDescriptor = (^.asInstanceOf[js.Dynamic].applyDynamic("setEventDescriptor")(eventDescriptor.asInstanceOf[js.Any], jsDoc.asInstanceOf[js.Any])).asInstanceOf[EventDescriptor]
   
   trait TypedParamTag
     extends StObject
@@ -42,18 +38,15 @@ object eventHandlerMod {
   }
   object TypedParamTag {
     
-    @scala.inline
-    def apply(title: String, `type`: ParamType): TypedParamTag = {
+    inline def apply(title: String, `type`: ParamType): TypedParamTag = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypedParamTag]
     }
     
-    @scala.inline
-    implicit class TypedParamTagMutableBuilder[Self <: TypedParamTag] (val x: Self) extends AnyVal {
+    extension [Self <: TypedParamTag](x: Self) {
       
-      @scala.inline
-      def setType(value: ParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ParamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

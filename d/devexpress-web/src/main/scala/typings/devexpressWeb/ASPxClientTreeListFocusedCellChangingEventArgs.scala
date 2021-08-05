@@ -18,16 +18,13 @@ trait ASPxClientTreeListFocusedCellChangingEventArgs
 }
 object ASPxClientTreeListFocusedCellChangingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, cellInfo: ASPxClientTreeListCellInfo): ASPxClientTreeListFocusedCellChangingEventArgs = {
+  inline def apply(cancel: Boolean, cellInfo: ASPxClientTreeListCellInfo): ASPxClientTreeListFocusedCellChangingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cellInfo = cellInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListFocusedCellChangingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListFocusedCellChangingEventArgsMutableBuilder[Self <: ASPxClientTreeListFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListFocusedCellChangingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCellInfo(value: ASPxClientTreeListCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
+    inline def setCellInfo(value: ASPxClientTreeListCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }
 }

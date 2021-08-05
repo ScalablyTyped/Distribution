@@ -27,19 +27,15 @@ trait System extends StObject {
 }
 object System {
   
-  @scala.inline
-  def apply(destroy: () => Unit, renderer: Renderer): System = {
+  inline def apply(destroy: () => Unit, renderer: Renderer): System = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), renderer = renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[System]
   }
   
-  @scala.inline
-  implicit class SystemMutableBuilder[Self <: System] (val x: Self) extends AnyVal {
+  extension [Self <: System](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: Renderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
   }
 }

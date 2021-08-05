@@ -34,8 +34,7 @@ trait LocationLink extends StObject {
 }
 object LocationLink {
   
-  @scala.inline
-  def apply(targetRange: Range, targetSelectionRange: Range, targetUri: DocumentUri): LocationLink = {
+  inline def apply(targetRange: Range, targetSelectionRange: Range, targetUri: DocumentUri): LocationLink = {
     val __obj = js.Dynamic.literal(targetRange = targetRange.asInstanceOf[js.Any], targetSelectionRange = targetSelectionRange.asInstanceOf[js.Any], targetUri = targetUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationLink]
   }
@@ -51,10 +50,8 @@ object LocationLink {
     * @param targetSelectionRange The span of the symbol definition at the target.
     * @param originSelectionRange The span of the symbol being defined in the originating source file.
     */
-  @scala.inline
-  def create(targetUri: DocumentUri, targetRange: Range, targetSelectionRange: Range): LocationLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(targetUri.asInstanceOf[js.Any], targetRange.asInstanceOf[js.Any], targetSelectionRange.asInstanceOf[js.Any])).asInstanceOf[LocationLink]
-  @scala.inline
-  def create(
+  inline def create(targetUri: DocumentUri, targetRange: Range, targetSelectionRange: Range): LocationLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(targetUri.asInstanceOf[js.Any], targetRange.asInstanceOf[js.Any], targetSelectionRange.asInstanceOf[js.Any])).asInstanceOf[LocationLink]
+  inline def create(
     targetUri: DocumentUri,
     targetRange: Range,
     targetSelectionRange: Range,
@@ -64,25 +61,18 @@ object LocationLink {
   /**
     * Checks whether the given literal conforms to the [LocationLink](#LocationLink) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean]
   
-  @scala.inline
-  implicit class LocationLinkMutableBuilder[Self <: LocationLink] (val x: Self) extends AnyVal {
+  extension [Self <: LocationLink](x: Self) {
     
-    @scala.inline
-    def setOriginSelectionRange(value: Range): Self = StObject.set(x, "originSelectionRange", value.asInstanceOf[js.Any])
+    inline def setOriginSelectionRange(value: Range): Self = StObject.set(x, "originSelectionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginSelectionRangeUndefined: Self = StObject.set(x, "originSelectionRange", js.undefined)
+    inline def setOriginSelectionRangeUndefined: Self = StObject.set(x, "originSelectionRange", js.undefined)
     
-    @scala.inline
-    def setTargetRange(value: Range): Self = StObject.set(x, "targetRange", value.asInstanceOf[js.Any])
+    inline def setTargetRange(value: Range): Self = StObject.set(x, "targetRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSelectionRange(value: Range): Self = StObject.set(x, "targetSelectionRange", value.asInstanceOf[js.Any])
+    inline def setTargetSelectionRange(value: Range): Self = StObject.set(x, "targetSelectionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUri(value: DocumentUri): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
+    inline def setTargetUri(value: DocumentUri): Self = StObject.set(x, "targetUri", value.asInstanceOf[js.Any])
   }
 }

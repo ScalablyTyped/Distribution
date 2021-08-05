@@ -84,73 +84,51 @@ trait SchemaReportApiColumnSpec extends StObject {
 }
 object SchemaReportApiColumnSpec {
   
-  @scala.inline
-  def apply(): SchemaReportApiColumnSpec = {
+  inline def apply(): SchemaReportApiColumnSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReportApiColumnSpec]
   }
   
-  @scala.inline
-  implicit class SchemaReportApiColumnSpecMutableBuilder[Self <: SchemaReportApiColumnSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReportApiColumnSpec](x: Self) {
     
-    @scala.inline
-    def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
+    inline def setColumnNameUndefined: Self = StObject.set(x, "columnName", js.undefined)
     
-    @scala.inline
-    def setCustomDimensionName(value: String): Self = StObject.set(x, "customDimensionName", value.asInstanceOf[js.Any])
+    inline def setCustomDimensionName(value: String): Self = StObject.set(x, "customDimensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDimensionNameUndefined: Self = StObject.set(x, "customDimensionName", js.undefined)
+    inline def setCustomDimensionNameUndefined: Self = StObject.set(x, "customDimensionName", js.undefined)
     
-    @scala.inline
-    def setCustomMetricName(value: String): Self = StObject.set(x, "customMetricName", value.asInstanceOf[js.Any])
+    inline def setCustomMetricName(value: String): Self = StObject.set(x, "customMetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMetricNameUndefined: Self = StObject.set(x, "customMetricName", js.undefined)
+    inline def setCustomMetricNameUndefined: Self = StObject.set(x, "customMetricName", js.undefined)
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setGroupByColumn(value: Boolean): Self = StObject.set(x, "groupByColumn", value.asInstanceOf[js.Any])
+    inline def setGroupByColumn(value: Boolean): Self = StObject.set(x, "groupByColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByColumnUndefined: Self = StObject.set(x, "groupByColumn", js.undefined)
+    inline def setGroupByColumnUndefined: Self = StObject.set(x, "groupByColumn", js.undefined)
     
-    @scala.inline
-    def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
+    inline def setHeaderText(value: String): Self = StObject.set(x, "headerText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
+    inline def setHeaderTextUndefined: Self = StObject.set(x, "headerText", js.undefined)
     
-    @scala.inline
-    def setPlatformSource(value: String): Self = StObject.set(x, "platformSource", value.asInstanceOf[js.Any])
+    inline def setPlatformSource(value: String): Self = StObject.set(x, "platformSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformSourceUndefined: Self = StObject.set(x, "platformSource", js.undefined)
+    inline def setPlatformSourceUndefined: Self = StObject.set(x, "platformSource", js.undefined)
     
-    @scala.inline
-    def setProductReportPerspective(value: String): Self = StObject.set(x, "productReportPerspective", value.asInstanceOf[js.Any])
+    inline def setProductReportPerspective(value: String): Self = StObject.set(x, "productReportPerspective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductReportPerspectiveUndefined: Self = StObject.set(x, "productReportPerspective", js.undefined)
+    inline def setProductReportPerspectiveUndefined: Self = StObject.set(x, "productReportPerspective", js.undefined)
     
-    @scala.inline
-    def setSavedColumnName(value: String): Self = StObject.set(x, "savedColumnName", value.asInstanceOf[js.Any])
+    inline def setSavedColumnName(value: String): Self = StObject.set(x, "savedColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedColumnNameUndefined: Self = StObject.set(x, "savedColumnName", js.undefined)
+    inline def setSavedColumnNameUndefined: Self = StObject.set(x, "savedColumnName", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

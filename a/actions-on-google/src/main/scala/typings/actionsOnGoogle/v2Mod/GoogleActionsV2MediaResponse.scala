@@ -18,28 +18,21 @@ trait GoogleActionsV2MediaResponse extends StObject {
 }
 object GoogleActionsV2MediaResponse {
   
-  @scala.inline
-  def apply(): GoogleActionsV2MediaResponse = {
+  inline def apply(): GoogleActionsV2MediaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2MediaResponse]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2MediaResponseMutableBuilder[Self <: GoogleActionsV2MediaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2MediaResponse](x: Self) {
     
-    @scala.inline
-    def setMediaObjects(value: js.Array[GoogleActionsV2MediaObject]): Self = StObject.set(x, "mediaObjects", value.asInstanceOf[js.Any])
+    inline def setMediaObjects(value: js.Array[GoogleActionsV2MediaObject]): Self = StObject.set(x, "mediaObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
+    inline def setMediaObjectsUndefined: Self = StObject.set(x, "mediaObjects", js.undefined)
     
-    @scala.inline
-    def setMediaObjectsVarargs(value: GoogleActionsV2MediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
+    inline def setMediaObjectsVarargs(value: GoogleActionsV2MediaObject*): Self = StObject.set(x, "mediaObjects", js.Array(value :_*))
     
-    @scala.inline
-    def setMediaType(value: GoogleActionsV2MediaResponseMediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: GoogleActionsV2MediaResponseMediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
   }
 }

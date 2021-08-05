@@ -45,8 +45,7 @@ trait LaunchOptions extends StObject {
 }
 object LaunchOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     path: String,
     query: js.Object,
     referrerInfo: js.Object,
@@ -61,28 +60,20 @@ object LaunchOptions {
     __obj.asInstanceOf[LaunchOptions]
   }
   
-  @scala.inline
-  implicit class LaunchOptionsMutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchOptions](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerInfo(value: js.Object): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
+    inline def setReferrerInfo(value: js.Object): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerInfoDotappId(value: String): Self = StObject.set(x, "referrerInfo.appId", value.asInstanceOf[js.Any])
+    inline def setReferrerInfoDotappId(value: String): Self = StObject.set(x, "referrerInfo.appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerInfoDotextraData(value: js.Object): Self = StObject.set(x, "referrerInfo.extraData", value.asInstanceOf[js.Any])
+    inline def setReferrerInfoDotextraData(value: js.Object): Self = StObject.set(x, "referrerInfo.extraData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: Double): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
+    inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
   }
 }

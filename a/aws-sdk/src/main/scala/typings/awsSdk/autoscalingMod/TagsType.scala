@@ -18,28 +18,21 @@ trait TagsType extends StObject {
 }
 object TagsType {
   
-  @scala.inline
-  def apply(): TagsType = {
+  inline def apply(): TagsType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagsType]
   }
   
-  @scala.inline
-  implicit class TagsTypeMutableBuilder[Self <: TagsType] (val x: Self) extends AnyVal {
+  extension [Self <: TagsType](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagDescriptionList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagDescriptionList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: TagDescription*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagDescription*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

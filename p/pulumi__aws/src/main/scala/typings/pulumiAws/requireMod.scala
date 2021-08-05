@@ -11,6 +11,5 @@ object requireMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def requireRegion(): Region = ^.asInstanceOf[js.Dynamic].applyDynamic("requireRegion")().asInstanceOf[Region]
+  inline def requireRegion(): Region = ^.asInstanceOf[js.Dynamic].applyDynamic("requireRegion")().asInstanceOf[Region]
 }

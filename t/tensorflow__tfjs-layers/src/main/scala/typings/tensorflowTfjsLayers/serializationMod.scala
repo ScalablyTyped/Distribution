@@ -12,12 +12,8 @@ object serializationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserialize(config: ConfigDict): Serializable = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(config.asInstanceOf[js.Any]).asInstanceOf[Serializable]
-  @scala.inline
-  def deserialize(config: ConfigDict, customObjects: Unit, fastWeightInit: Boolean): Serializable = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[Serializable]
-  @scala.inline
-  def deserialize(config: ConfigDict, customObjects: ConfigDict): Serializable = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[Serializable]
-  @scala.inline
-  def deserialize(config: ConfigDict, customObjects: ConfigDict, fastWeightInit: Boolean): Serializable = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[Serializable]
+  inline def deserialize(config: ConfigDict): Serializable = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(config.asInstanceOf[js.Any]).asInstanceOf[Serializable]
+  inline def deserialize(config: ConfigDict, customObjects: Unit, fastWeightInit: Boolean): Serializable = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[Serializable]
+  inline def deserialize(config: ConfigDict, customObjects: ConfigDict): Serializable = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[Serializable]
+  inline def deserialize(config: ConfigDict, customObjects: ConfigDict, fastWeightInit: Boolean): Serializable = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[Serializable]
 }

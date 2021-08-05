@@ -18,25 +18,19 @@ trait AwsIamConfig extends StObject {
 }
 object AwsIamConfig {
   
-  @scala.inline
-  def apply(): AwsIamConfig = {
+  inline def apply(): AwsIamConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsIamConfig]
   }
   
-  @scala.inline
-  implicit class AwsIamConfigMutableBuilder[Self <: AwsIamConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIamConfig](x: Self) {
     
-    @scala.inline
-    def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
+    inline def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
+    inline def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
     
-    @scala.inline
-    def setSigningServiceName(value: String): Self = StObject.set(x, "signingServiceName", value.asInstanceOf[js.Any])
+    inline def setSigningServiceName(value: String): Self = StObject.set(x, "signingServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningServiceNameUndefined: Self = StObject.set(x, "signingServiceName", js.undefined)
+    inline def setSigningServiceNameUndefined: Self = StObject.set(x, "signingServiceName", js.undefined)
   }
 }

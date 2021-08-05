@@ -48,62 +48,44 @@ object gapi {
       }
       object AchievementConfiguration {
         
-        @scala.inline
-        def apply(): AchievementConfiguration = {
+        inline def apply(): AchievementConfiguration = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[AchievementConfiguration]
         }
         
-        @scala.inline
-        implicit class AchievementConfigurationMutableBuilder[Self <: AchievementConfiguration] (val x: Self) extends AnyVal {
+        extension [Self <: AchievementConfiguration](x: Self) {
           
-          @scala.inline
-          def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
+          inline def setAchievementType(value: String): Self = StObject.set(x, "achievementType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAchievementTypeUndefined: Self = StObject.set(x, "achievementType", js.undefined)
+          inline def setAchievementTypeUndefined: Self = StObject.set(x, "achievementType", js.undefined)
           
-          @scala.inline
-          def setDraft(value: AchievementConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+          inline def setDraft(value: AchievementConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+          inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+          inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
           
-          @scala.inline
-          def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+          inline def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+          inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setPublished(value: AchievementConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+          inline def setPublished(value: AchievementConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
+          inline def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
           
-          @scala.inline
-          def setStepsToUnlock(value: Double): Self = StObject.set(x, "stepsToUnlock", value.asInstanceOf[js.Any])
+          inline def setStepsToUnlock(value: Double): Self = StObject.set(x, "stepsToUnlock", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStepsToUnlockUndefined: Self = StObject.set(x, "stepsToUnlock", js.undefined)
+          inline def setStepsToUnlockUndefined: Self = StObject.set(x, "stepsToUnlock", js.undefined)
           
-          @scala.inline
-          def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+          inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+          inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
         }
       }
       
@@ -129,50 +111,36 @@ object gapi {
       }
       object AchievementConfigurationDetail {
         
-        @scala.inline
-        def apply(): AchievementConfigurationDetail = {
+        inline def apply(): AchievementConfigurationDetail = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[AchievementConfigurationDetail]
         }
         
-        @scala.inline
-        implicit class AchievementConfigurationDetailMutableBuilder[Self <: AchievementConfigurationDetail] (val x: Self) extends AnyVal {
+        extension [Self <: AchievementConfigurationDetail](x: Self) {
           
-          @scala.inline
-          def setDescription(value: LocalizedStringBundle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+          inline def setDescription(value: LocalizedStringBundle): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+          inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
           
-          @scala.inline
-          def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+          inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+          inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setName(value: LocalizedStringBundle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: LocalizedStringBundle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setPointValue(value: Double): Self = StObject.set(x, "pointValue", value.asInstanceOf[js.Any])
+          inline def setPointValue(value: Double): Self = StObject.set(x, "pointValue", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPointValueUndefined: Self = StObject.set(x, "pointValue", js.undefined)
+          inline def setPointValueUndefined: Self = StObject.set(x, "pointValue", js.undefined)
           
-          @scala.inline
-          def setSortRank(value: Double): Self = StObject.set(x, "sortRank", value.asInstanceOf[js.Any])
+          inline def setSortRank(value: Double): Self = StObject.set(x, "sortRank", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSortRankUndefined: Self = StObject.set(x, "sortRank", js.undefined)
+          inline def setSortRankUndefined: Self = StObject.set(x, "sortRank", js.undefined)
         }
       }
       
@@ -189,35 +157,26 @@ object gapi {
       }
       object AchievementConfigurationListResponse {
         
-        @scala.inline
-        def apply(): AchievementConfigurationListResponse = {
+        inline def apply(): AchievementConfigurationListResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[AchievementConfigurationListResponse]
         }
         
-        @scala.inline
-        implicit class AchievementConfigurationListResponseMutableBuilder[Self <: AchievementConfigurationListResponse] (val x: Self) extends AnyVal {
+        extension [Self <: AchievementConfigurationListResponse](x: Self) {
           
-          @scala.inline
-          def setItems(value: js.Array[AchievementConfiguration]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+          inline def setItems(value: js.Array[AchievementConfiguration]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+          inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          @scala.inline
-          def setItemsVarargs(value: AchievementConfiguration*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: AchievementConfiguration*): Self = StObject.set(x, "items", js.Array(value :_*))
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -270,50 +229,36 @@ object gapi {
       }
       object GamesNumberAffixConfiguration {
         
-        @scala.inline
-        def apply(): GamesNumberAffixConfiguration = {
+        inline def apply(): GamesNumberAffixConfiguration = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GamesNumberAffixConfiguration]
         }
         
-        @scala.inline
-        implicit class GamesNumberAffixConfigurationMutableBuilder[Self <: GamesNumberAffixConfiguration] (val x: Self) extends AnyVal {
+        extension [Self <: GamesNumberAffixConfiguration](x: Self) {
           
-          @scala.inline
-          def setFew(value: LocalizedStringBundle): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
+          inline def setFew(value: LocalizedStringBundle): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
+          inline def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
           
-          @scala.inline
-          def setMany(value: LocalizedStringBundle): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
+          inline def setMany(value: LocalizedStringBundle): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
+          inline def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
           
-          @scala.inline
-          def setOne(value: LocalizedStringBundle): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+          inline def setOne(value: LocalizedStringBundle): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
+          inline def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
           
-          @scala.inline
-          def setOther(value: LocalizedStringBundle): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+          inline def setOther(value: LocalizedStringBundle): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+          inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
           
-          @scala.inline
-          def setTwo(value: LocalizedStringBundle): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
+          inline def setTwo(value: LocalizedStringBundle): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
+          inline def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
           
-          @scala.inline
-          def setZero(value: LocalizedStringBundle): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+          inline def setZero(value: LocalizedStringBundle): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+          inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
         }
       }
       
@@ -333,38 +278,28 @@ object gapi {
       }
       object GamesNumberFormatConfiguration {
         
-        @scala.inline
-        def apply(): GamesNumberFormatConfiguration = {
+        inline def apply(): GamesNumberFormatConfiguration = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GamesNumberFormatConfiguration]
         }
         
-        @scala.inline
-        implicit class GamesNumberFormatConfigurationMutableBuilder[Self <: GamesNumberFormatConfiguration] (val x: Self) extends AnyVal {
+        extension [Self <: GamesNumberFormatConfiguration](x: Self) {
           
-          @scala.inline
-          def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+          inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+          inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
           
-          @scala.inline
-          def setNumDecimalPlaces(value: Double): Self = StObject.set(x, "numDecimalPlaces", value.asInstanceOf[js.Any])
+          inline def setNumDecimalPlaces(value: Double): Self = StObject.set(x, "numDecimalPlaces", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNumDecimalPlacesUndefined: Self = StObject.set(x, "numDecimalPlaces", js.undefined)
+          inline def setNumDecimalPlacesUndefined: Self = StObject.set(x, "numDecimalPlaces", js.undefined)
           
-          @scala.inline
-          def setNumberFormatType(value: String): Self = StObject.set(x, "numberFormatType", value.asInstanceOf[js.Any])
+          inline def setNumberFormatType(value: String): Self = StObject.set(x, "numberFormatType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNumberFormatTypeUndefined: Self = StObject.set(x, "numberFormatType", js.undefined)
+          inline def setNumberFormatTypeUndefined: Self = StObject.set(x, "numberFormatType", js.undefined)
           
-          @scala.inline
-          def setSuffix(value: GamesNumberAffixConfiguration): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+          inline def setSuffix(value: GamesNumberAffixConfiguration): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+          inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
         }
       }
       
@@ -384,38 +319,28 @@ object gapi {
       }
       object ImageConfiguration {
         
-        @scala.inline
-        def apply(): ImageConfiguration = {
+        inline def apply(): ImageConfiguration = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ImageConfiguration]
         }
         
-        @scala.inline
-        implicit class ImageConfigurationMutableBuilder[Self <: ImageConfiguration] (val x: Self) extends AnyVal {
+        extension [Self <: ImageConfiguration](x: Self) {
           
-          @scala.inline
-          def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+          inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
+          inline def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+          inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+          inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
           
-          @scala.inline
-          def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+          inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+          inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
         }
       }
       
@@ -454,62 +379,44 @@ object gapi {
       }
       object LeaderboardConfiguration {
         
-        @scala.inline
-        def apply(): LeaderboardConfiguration = {
+        inline def apply(): LeaderboardConfiguration = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[LeaderboardConfiguration]
         }
         
-        @scala.inline
-        implicit class LeaderboardConfigurationMutableBuilder[Self <: LeaderboardConfiguration] (val x: Self) extends AnyVal {
+        extension [Self <: LeaderboardConfiguration](x: Self) {
           
-          @scala.inline
-          def setDraft(value: LeaderboardConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+          inline def setDraft(value: LeaderboardConfigurationDetail): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
+          inline def setDraftUndefined: Self = StObject.set(x, "draft", js.undefined)
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+          inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setPublished(value: LeaderboardConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+          inline def setPublished(value: LeaderboardConfigurationDetail): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
+          inline def setPublishedUndefined: Self = StObject.set(x, "published", js.undefined)
           
-          @scala.inline
-          def setScoreMax(value: String): Self = StObject.set(x, "scoreMax", value.asInstanceOf[js.Any])
+          inline def setScoreMax(value: String): Self = StObject.set(x, "scoreMax", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScoreMaxUndefined: Self = StObject.set(x, "scoreMax", js.undefined)
+          inline def setScoreMaxUndefined: Self = StObject.set(x, "scoreMax", js.undefined)
           
-          @scala.inline
-          def setScoreMin(value: String): Self = StObject.set(x, "scoreMin", value.asInstanceOf[js.Any])
+          inline def setScoreMin(value: String): Self = StObject.set(x, "scoreMin", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScoreMinUndefined: Self = StObject.set(x, "scoreMin", js.undefined)
+          inline def setScoreMinUndefined: Self = StObject.set(x, "scoreMin", js.undefined)
           
-          @scala.inline
-          def setScoreOrder(value: String): Self = StObject.set(x, "scoreOrder", value.asInstanceOf[js.Any])
+          inline def setScoreOrder(value: String): Self = StObject.set(x, "scoreOrder", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScoreOrderUndefined: Self = StObject.set(x, "scoreOrder", js.undefined)
+          inline def setScoreOrderUndefined: Self = StObject.set(x, "scoreOrder", js.undefined)
           
-          @scala.inline
-          def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+          inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+          inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
         }
       }
       
@@ -532,44 +439,32 @@ object gapi {
       }
       object LeaderboardConfigurationDetail {
         
-        @scala.inline
-        def apply(): LeaderboardConfigurationDetail = {
+        inline def apply(): LeaderboardConfigurationDetail = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[LeaderboardConfigurationDetail]
         }
         
-        @scala.inline
-        implicit class LeaderboardConfigurationDetailMutableBuilder[Self <: LeaderboardConfigurationDetail] (val x: Self) extends AnyVal {
+        extension [Self <: LeaderboardConfigurationDetail](x: Self) {
           
-          @scala.inline
-          def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+          inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+          inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setName(value: LocalizedStringBundle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: LocalizedStringBundle): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setScoreFormat(value: GamesNumberFormatConfiguration): Self = StObject.set(x, "scoreFormat", value.asInstanceOf[js.Any])
+          inline def setScoreFormat(value: GamesNumberFormatConfiguration): Self = StObject.set(x, "scoreFormat", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScoreFormatUndefined: Self = StObject.set(x, "scoreFormat", js.undefined)
+          inline def setScoreFormatUndefined: Self = StObject.set(x, "scoreFormat", js.undefined)
           
-          @scala.inline
-          def setSortRank(value: Double): Self = StObject.set(x, "sortRank", value.asInstanceOf[js.Any])
+          inline def setSortRank(value: Double): Self = StObject.set(x, "sortRank", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSortRankUndefined: Self = StObject.set(x, "sortRank", js.undefined)
+          inline def setSortRankUndefined: Self = StObject.set(x, "sortRank", js.undefined)
         }
       }
       
@@ -586,35 +481,26 @@ object gapi {
       }
       object LeaderboardConfigurationListResponse {
         
-        @scala.inline
-        def apply(): LeaderboardConfigurationListResponse = {
+        inline def apply(): LeaderboardConfigurationListResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[LeaderboardConfigurationListResponse]
         }
         
-        @scala.inline
-        implicit class LeaderboardConfigurationListResponseMutableBuilder[Self <: LeaderboardConfigurationListResponse] (val x: Self) extends AnyVal {
+        extension [Self <: LeaderboardConfigurationListResponse](x: Self) {
           
-          @scala.inline
-          def setItems(value: js.Array[LeaderboardConfiguration]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+          inline def setItems(value: js.Array[LeaderboardConfiguration]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+          inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
           
-          @scala.inline
-          def setItemsVarargs(value: LeaderboardConfiguration*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: LeaderboardConfiguration*): Self = StObject.set(x, "items", js.Array(value :_*))
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -655,32 +541,24 @@ object gapi {
       }
       object LocalizedString {
         
-        @scala.inline
-        def apply(): LocalizedString = {
+        inline def apply(): LocalizedString = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[LocalizedString]
         }
         
-        @scala.inline
-        implicit class LocalizedStringMutableBuilder[Self <: LocalizedString] (val x: Self) extends AnyVal {
+        extension [Self <: LocalizedString](x: Self) {
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+          inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+          inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
           
-          @scala.inline
-          def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+          inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+          inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         }
       }
       
@@ -694,29 +572,22 @@ object gapi {
       }
       object LocalizedStringBundle {
         
-        @scala.inline
-        def apply(): LocalizedStringBundle = {
+        inline def apply(): LocalizedStringBundle = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[LocalizedStringBundle]
         }
         
-        @scala.inline
-        implicit class LocalizedStringBundleMutableBuilder[Self <: LocalizedStringBundle] (val x: Self) extends AnyVal {
+        extension [Self <: LocalizedStringBundle](x: Self) {
           
-          @scala.inline
-          def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+          inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+          inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
           
-          @scala.inline
-          def setTranslations(value: js.Array[LocalizedString]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+          inline def setTranslations(value: js.Array[LocalizedString]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+          inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
           
-          @scala.inline
-          def setTranslationsVarargs(value: LocalizedString*): Self = StObject.set(x, "translations", js.Array(value :_*))
+          inline def setTranslationsVarargs(value: LocalizedString*): Self = StObject.set(x, "translations", js.Array(value :_*))
         }
       }
     }

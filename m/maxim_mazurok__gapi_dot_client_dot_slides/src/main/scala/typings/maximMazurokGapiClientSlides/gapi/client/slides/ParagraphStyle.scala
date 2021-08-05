@@ -38,67 +38,47 @@ trait ParagraphStyle extends StObject {
 }
 object ParagraphStyle {
   
-  @scala.inline
-  def apply(): ParagraphStyle = {
+  inline def apply(): ParagraphStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParagraphStyle]
   }
   
-  @scala.inline
-  implicit class ParagraphStyleMutableBuilder[Self <: ParagraphStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphStyle](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setIndentEnd(value: Dimension): Self = StObject.set(x, "indentEnd", value.asInstanceOf[js.Any])
+    inline def setIndentEnd(value: Dimension): Self = StObject.set(x, "indentEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentEndUndefined: Self = StObject.set(x, "indentEnd", js.undefined)
+    inline def setIndentEndUndefined: Self = StObject.set(x, "indentEnd", js.undefined)
     
-    @scala.inline
-    def setIndentFirstLine(value: Dimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
+    inline def setIndentFirstLine(value: Dimension): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
+    inline def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
     
-    @scala.inline
-    def setIndentStart(value: Dimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
+    inline def setIndentStart(value: Dimension): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
+    inline def setIndentStartUndefined: Self = StObject.set(x, "indentStart", js.undefined)
     
-    @scala.inline
-    def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+    inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
+    inline def setLineSpacingUndefined: Self = StObject.set(x, "lineSpacing", js.undefined)
     
-    @scala.inline
-    def setSpaceAbove(value: Dimension): Self = StObject.set(x, "spaceAbove", value.asInstanceOf[js.Any])
+    inline def setSpaceAbove(value: Dimension): Self = StObject.set(x, "spaceAbove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceAboveUndefined: Self = StObject.set(x, "spaceAbove", js.undefined)
+    inline def setSpaceAboveUndefined: Self = StObject.set(x, "spaceAbove", js.undefined)
     
-    @scala.inline
-    def setSpaceBelow(value: Dimension): Self = StObject.set(x, "spaceBelow", value.asInstanceOf[js.Any])
+    inline def setSpaceBelow(value: Dimension): Self = StObject.set(x, "spaceBelow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceBelowUndefined: Self = StObject.set(x, "spaceBelow", js.undefined)
+    inline def setSpaceBelowUndefined: Self = StObject.set(x, "spaceBelow", js.undefined)
     
-    @scala.inline
-    def setSpacingMode(value: String): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
+    inline def setSpacingMode(value: String): Self = StObject.set(x, "spacingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingModeUndefined: Self = StObject.set(x, "spacingMode", js.undefined)
+    inline def setSpacingModeUndefined: Self = StObject.set(x, "spacingMode", js.undefined)
   }
 }

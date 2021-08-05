@@ -26,8 +26,7 @@ trait Templates_
 }
 object Templates_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     primaryTemplate: Template,
@@ -38,16 +37,12 @@ object Templates_ {
     __obj.asInstanceOf[Templates_]
   }
   
-  @scala.inline
-  implicit class Templates_MutableBuilder[Self <: Templates_] (val x: Self) extends AnyVal {
+  extension [Self <: Templates_](x: Self) {
     
-    @scala.inline
-    def setPrimaryTemplate(value: Template): Self = StObject.set(x, "primaryTemplate", value.asInstanceOf[js.Any])
+    inline def setPrimaryTemplate(value: Template): Self = StObject.set(x, "primaryTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryTemplates(value: js.Array[Template]): Self = StObject.set(x, "secondaryTemplates", value.asInstanceOf[js.Any])
+    inline def setSecondaryTemplates(value: js.Array[Template]): Self = StObject.set(x, "secondaryTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryTemplatesVarargs(value: Template*): Self = StObject.set(x, "secondaryTemplates", js.Array(value :_*))
+    inline def setSecondaryTemplatesVarargs(value: Template*): Self = StObject.set(x, "secondaryTemplates", js.Array(value :_*))
   }
 }

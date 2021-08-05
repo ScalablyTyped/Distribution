@@ -17,8 +17,7 @@ object checkToggleUniDriverMod {
   }
   object CheckToggleUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object checkToggleUniDriverMod {
       __obj.asInstanceOf[CheckToggleUniDriver]
     }
     
-    @scala.inline
-    implicit class CheckToggleUniDriverMutableBuilder[Self <: CheckToggleUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CheckToggleUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetTooltipContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipContent", js.Any.fromFunction0(value))
+      inline def setGetTooltipContent(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+      inline def setIsChecked(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
     }
   }
 }

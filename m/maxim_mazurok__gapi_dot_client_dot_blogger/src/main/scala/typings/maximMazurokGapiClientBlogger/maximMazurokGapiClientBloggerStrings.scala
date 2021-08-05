@@ -8,11 +8,9 @@ object maximMazurokGapiClientBloggerStrings {
   
   @js.native
   sealed trait blogger extends StObject
-  @scala.inline
-  def blogger: blogger = "blogger".asInstanceOf[blogger]
+  inline def blogger: blogger = "blogger".asInstanceOf[blogger]
   
   @js.native
   sealed trait v3 extends StObject
-  @scala.inline
-  def v3: v3 = "v3".asInstanceOf[v3]
+  inline def v3: v3 = "v3".asInstanceOf[v3]
 }

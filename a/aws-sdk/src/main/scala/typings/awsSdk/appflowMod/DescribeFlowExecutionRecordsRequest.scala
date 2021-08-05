@@ -23,28 +23,21 @@ trait DescribeFlowExecutionRecordsRequest extends StObject {
 }
 object DescribeFlowExecutionRecordsRequest {
   
-  @scala.inline
-  def apply(flowName: FlowName): DescribeFlowExecutionRecordsRequest = {
+  inline def apply(flowName: FlowName): DescribeFlowExecutionRecordsRequest = {
     val __obj = js.Dynamic.literal(flowName = flowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFlowExecutionRecordsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeFlowExecutionRecordsRequestMutableBuilder[Self <: DescribeFlowExecutionRecordsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFlowExecutionRecordsRequest](x: Self) {
     
-    @scala.inline
-    def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
+    inline def setFlowName(value: FlowName): Self = StObject.set(x, "flowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

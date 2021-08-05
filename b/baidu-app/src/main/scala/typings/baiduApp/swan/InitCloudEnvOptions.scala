@@ -29,31 +29,23 @@ trait InitCloudEnvOptions extends StObject {
 }
 object InitCloudEnvOptions {
   
-  @scala.inline
-  def apply(): InitCloudEnvOptions = {
+  inline def apply(): InitCloudEnvOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitCloudEnvOptions]
   }
   
-  @scala.inline
-  implicit class InitCloudEnvOptionsMutableBuilder[Self <: InitCloudEnvOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitCloudEnvOptions](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setFunctions(value: String): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: String): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+    inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
-    @scala.inline
-    def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
   }
 }

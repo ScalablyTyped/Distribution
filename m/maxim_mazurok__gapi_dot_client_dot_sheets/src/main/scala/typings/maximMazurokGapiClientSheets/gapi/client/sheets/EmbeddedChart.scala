@@ -17,31 +17,23 @@ trait EmbeddedChart extends StObject {
 }
 object EmbeddedChart {
   
-  @scala.inline
-  def apply(): EmbeddedChart = {
+  inline def apply(): EmbeddedChart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmbeddedChart]
   }
   
-  @scala.inline
-  implicit class EmbeddedChartMutableBuilder[Self <: EmbeddedChart] (val x: Self) extends AnyVal {
+  extension [Self <: EmbeddedChart](x: Self) {
     
-    @scala.inline
-    def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+    inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
+    inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     
-    @scala.inline
-    def setPosition(value: EmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: EmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setSpec(value: ChartSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: ChartSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

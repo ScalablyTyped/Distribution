@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcOpenDataMode extends StObject
 object AcOpenDataMode {
   
-  @scala.inline
-  def acAdd: `0` = 0.asInstanceOf[`0`]
+  inline def acAdd: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acEdit: `1` = 1.asInstanceOf[`1`]
+  inline def acEdit: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acReadOnly: `2` = 2.asInstanceOf[`2`]
+  inline def acReadOnly: `2` = 2.asInstanceOf[`2`]
 }

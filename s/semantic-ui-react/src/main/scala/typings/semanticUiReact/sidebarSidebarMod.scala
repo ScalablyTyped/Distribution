@@ -64,8 +64,7 @@ object sidebarSidebarMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object SidebarProps {
     
-    @scala.inline
-    def apply(): SidebarProps = {
+    inline def apply(): SidebarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarProps]
     }
@@ -142,92 +141,64 @@ object sidebarSidebarMod extends Shortcut {
   }
   object StrictSidebarProps {
     
-    @scala.inline
-    def apply(): StrictSidebarProps = {
+    inline def apply(): StrictSidebarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictSidebarProps]
     }
     
-    @scala.inline
-    implicit class StrictSidebarPropsMutableBuilder[Self <: StrictSidebarProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictSidebarProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: overlay | push | (`scale down`) | uncover | (`slide out`) | (`slide along`)): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: overlay | push | (`scale down`) | uncover | (`slide out`) | (`slide along`)): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDirection(value: top | right | bottom | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: top | right | bottom | left): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setOnHidden(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps) => Unit): Self = StObject.set(x, "onHidden", js.Any.fromFunction2(value))
+      inline def setOnHidden(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps) => Unit): Self = StObject.set(x, "onHidden", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHiddenUndefined: Self = StObject.set(x, "onHidden", js.undefined)
+      inline def setOnHiddenUndefined: Self = StObject.set(x, "onHidden", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps) => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
+      inline def setOnHide(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps) => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps) => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction2(value))
+      inline def setOnShow(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps) => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setOnVisible(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps) => Unit): Self = StObject.set(x, "onVisible", js.Any.fromFunction2(value))
+      inline def setOnVisible(value: (/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ SidebarProps) => Unit): Self = StObject.set(x, "onVisible", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnVisibleUndefined: Self = StObject.set(x, "onVisible", js.undefined)
+      inline def setOnVisibleUndefined: Self = StObject.set(x, "onVisible", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Document | Window | HTMLElement | RefObject[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Document | Window | HTMLElement | RefObject[HTMLElement]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      @scala.inline
-      def setWidth(value: (`very thin`) | thin | wide | (`very wide`)): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: (`very thin`) | thin | wide | (`very wide`)): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

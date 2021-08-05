@@ -14,8 +14,7 @@ trait AdminServicesOptions extends StObject {
 }
 object AdminServicesOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     databaseFileInfoOptions: js.Array[ServiceOption],
     databaseInfoOptions: js.Array[ServiceOption],
     fileGroupInfoOptions: js.Array[ServiceOption]
@@ -24,25 +23,18 @@ object AdminServicesOptions {
     __obj.asInstanceOf[AdminServicesOptions]
   }
   
-  @scala.inline
-  implicit class AdminServicesOptionsMutableBuilder[Self <: AdminServicesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AdminServicesOptions](x: Self) {
     
-    @scala.inline
-    def setDatabaseFileInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "databaseFileInfoOptions", value.asInstanceOf[js.Any])
+    inline def setDatabaseFileInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "databaseFileInfoOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseFileInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseFileInfoOptions", js.Array(value :_*))
+    inline def setDatabaseFileInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseFileInfoOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setDatabaseInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "databaseInfoOptions", value.asInstanceOf[js.Any])
+    inline def setDatabaseInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "databaseInfoOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseInfoOptions", js.Array(value :_*))
+    inline def setDatabaseInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "databaseInfoOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setFileGroupInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "fileGroupInfoOptions", value.asInstanceOf[js.Any])
+    inline def setFileGroupInfoOptions(value: js.Array[ServiceOption]): Self = StObject.set(x, "fileGroupInfoOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileGroupInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "fileGroupInfoOptions", js.Array(value :_*))
+    inline def setFileGroupInfoOptionsVarargs(value: ServiceOption*): Self = StObject.set(x, "fileGroupInfoOptions", js.Array(value :_*))
   }
 }

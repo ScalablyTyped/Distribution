@@ -18,45 +18,39 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def rotated(
+    inline def rotated(
       imgSrc: String,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression
     ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any])).asInstanceOf[Rotated]
-    @scala.inline
-    def rotated(
+    inline def rotated(
       imgSrc: String,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression,
       options: ImageOverlayOptions
     ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rotated]
-    @scala.inline
-    def rotated(
+    inline def rotated(
       imgSrc: HTMLCanvasElement,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression
     ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any])).asInstanceOf[Rotated]
-    @scala.inline
-    def rotated(
+    inline def rotated(
       imgSrc: HTMLCanvasElement,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression,
       options: ImageOverlayOptions
     ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rotated]
-    @scala.inline
-    def rotated(
+    inline def rotated(
       imgSrc: HTMLImageElement,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression
     ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any])).asInstanceOf[Rotated]
-    @scala.inline
-    def rotated(
+    inline def rotated(
       imgSrc: HTMLImageElement,
       topleft: LatLngExpression,
       topright: LatLngExpression,

@@ -10,16 +10,13 @@ trait VideoCodecSettings extends StObject {
 }
 object VideoCodecSettings {
   
-  @scala.inline
-  def apply(codec: VideoCodec): VideoCodecSettings = {
+  inline def apply(codec: VideoCodec): VideoCodecSettings = {
     val __obj = js.Dynamic.literal(codec = codec.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoCodecSettings]
   }
   
-  @scala.inline
-  implicit class VideoCodecSettingsMutableBuilder[Self <: VideoCodecSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VideoCodecSettings](x: Self) {
     
-    @scala.inline
-    def setCodec(value: VideoCodec): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: VideoCodec): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
   }
 }

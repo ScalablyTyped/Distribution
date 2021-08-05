@@ -12,19 +12,15 @@ trait LocationsResource extends StObject {
 }
 object LocationsResource {
   
-  @scala.inline
-  def apply(autoscalingPolicies: AutoscalingPoliciesResource, workflowTemplates: WorkflowTemplatesResource): LocationsResource = {
+  inline def apply(autoscalingPolicies: AutoscalingPoliciesResource, workflowTemplates: WorkflowTemplatesResource): LocationsResource = {
     val __obj = js.Dynamic.literal(autoscalingPolicies = autoscalingPolicies.asInstanceOf[js.Any], workflowTemplates = workflowTemplates.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationsResource]
   }
   
-  @scala.inline
-  implicit class LocationsResourceMutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: LocationsResource](x: Self) {
     
-    @scala.inline
-    def setAutoscalingPolicies(value: AutoscalingPoliciesResource): Self = StObject.set(x, "autoscalingPolicies", value.asInstanceOf[js.Any])
+    inline def setAutoscalingPolicies(value: AutoscalingPoliciesResource): Self = StObject.set(x, "autoscalingPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowTemplates(value: WorkflowTemplatesResource): Self = StObject.set(x, "workflowTemplates", value.asInstanceOf[js.Any])
+    inline def setWorkflowTemplates(value: WorkflowTemplatesResource): Self = StObject.set(x, "workflowTemplates", value.asInstanceOf[js.Any])
   }
 }

@@ -23,49 +23,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ComposedChartProps {
   
-  @scala.inline
-  def apply(): ComposedChartProps = {
+  inline def apply(): ComposedChartProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComposedChartProps]
   }
   
-  @scala.inline
-  implicit class ComposedChartPropsMutableBuilder[Self <: ComposedChartProps] (val x: Self) extends AnyVal {
+  extension [Self <: ComposedChartProps](x: Self) {
     
-    @scala.inline
-    def setOnMouseOut(value: RechartsFunction): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
+    inline def setOnMouseOut(value: RechartsFunction): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
+    inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
-    @scala.inline
-    def setOnMouseOver(value: RechartsFunction): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
+    inline def setOnMouseOver(value: RechartsFunction): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
+    inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
-    @scala.inline
-    def setOnTouchCancel(value: RechartsFunction): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
+    inline def setOnTouchCancel(value: RechartsFunction): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
+    inline def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
-    @scala.inline
-    def setOnTouchEnd(value: RechartsFunction): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
+    inline def setOnTouchEnd(value: RechartsFunction): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+    inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
-    @scala.inline
-    def setOnTouchMove(value: RechartsFunction): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
+    inline def setOnTouchMove(value: RechartsFunction): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+    inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
-    @scala.inline
-    def setOnTouchStart(value: RechartsFunction): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
+    inline def setOnTouchStart(value: RechartsFunction): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
   }
 }

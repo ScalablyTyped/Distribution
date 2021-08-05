@@ -14,22 +14,17 @@ trait Data extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply(accountId: String, data: ActionConfiguration, id: String): Data = {
+  inline def apply(accountId: String, data: ActionConfiguration, id: String): Data = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: ActionConfiguration): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: ActionConfiguration): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

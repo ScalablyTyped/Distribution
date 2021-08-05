@@ -24,50 +24,36 @@ trait IconSetRuleType
 }
 object IconSetRuleType {
   
-  @scala.inline
-  def apply(priority: Double): IconSetRuleType = {
+  inline def apply(priority: Double): IconSetRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("iconSet")
     __obj.asInstanceOf[IconSetRuleType]
   }
   
-  @scala.inline
-  implicit class IconSetRuleTypeMutableBuilder[Self <: IconSetRuleType] (val x: Self) extends AnyVal {
+  extension [Self <: IconSetRuleType](x: Self) {
     
-    @scala.inline
-    def setCfvo(value: js.Array[Cvfo]): Self = StObject.set(x, "cfvo", value.asInstanceOf[js.Any])
+    inline def setCfvo(value: js.Array[Cvfo]): Self = StObject.set(x, "cfvo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCfvoUndefined: Self = StObject.set(x, "cfvo", js.undefined)
+    inline def setCfvoUndefined: Self = StObject.set(x, "cfvo", js.undefined)
     
-    @scala.inline
-    def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value :_*))
+    inline def setCfvoVarargs(value: Cvfo*): Self = StObject.set(x, "cfvo", js.Array(value :_*))
     
-    @scala.inline
-    def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setIconSet(value: IconSetTypes): Self = StObject.set(x, "iconSet", value.asInstanceOf[js.Any])
+    inline def setIconSet(value: IconSetTypes): Self = StObject.set(x, "iconSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconSetUndefined: Self = StObject.set(x, "iconSet", js.undefined)
+    inline def setIconSetUndefined: Self = StObject.set(x, "iconSet", js.undefined)
     
-    @scala.inline
-    def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     
-    @scala.inline
-    def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
+    inline def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
+    inline def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
     
-    @scala.inline
-    def setType(value: iconSet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: iconSet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

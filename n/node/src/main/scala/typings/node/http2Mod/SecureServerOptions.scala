@@ -14,28 +14,21 @@ trait SecureServerOptions
 }
 object SecureServerOptions {
   
-  @scala.inline
-  def apply(): SecureServerOptions = {
+  inline def apply(): SecureServerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecureServerOptions]
   }
   
-  @scala.inline
-  implicit class SecureServerOptionsMutableBuilder[Self <: SecureServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SecureServerOptions](x: Self) {
     
-    @scala.inline
-    def setAllowHTTP1(value: Boolean): Self = StObject.set(x, "allowHTTP1", value.asInstanceOf[js.Any])
+    inline def setAllowHTTP1(value: Boolean): Self = StObject.set(x, "allowHTTP1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowHTTP1Undefined: Self = StObject.set(x, "allowHTTP1", js.undefined)
+    inline def setAllowHTTP1Undefined: Self = StObject.set(x, "allowHTTP1", js.undefined)
     
-    @scala.inline
-    def setOrigins(value: js.Array[String]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+    inline def setOrigins(value: js.Array[String]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
+    inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
     
-    @scala.inline
-    def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value :_*))
+    inline def setOriginsVarargs(value: String*): Self = StObject.set(x, "origins", js.Array(value :_*))
   }
 }

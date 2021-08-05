@@ -17,37 +17,27 @@ trait IsStopIncluded extends StObject {
 }
 object IsStopIncluded {
   
-  @scala.inline
-  def apply(): IsStopIncluded = {
+  inline def apply(): IsStopIncluded = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsStopIncluded]
   }
   
-  @scala.inline
-  implicit class IsStopIncludedMutableBuilder[Self <: IsStopIncluded] (val x: Self) extends AnyVal {
+  extension [Self <: IsStopIncluded](x: Self) {
     
-    @scala.inline
-    def setIsStartIncluded(value: Boolean): Self = StObject.set(x, "isStartIncluded", value.asInstanceOf[js.Any])
+    inline def setIsStartIncluded(value: Boolean): Self = StObject.set(x, "isStartIncluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStartIncludedUndefined: Self = StObject.set(x, "isStartIncluded", js.undefined)
+    inline def setIsStartIncludedUndefined: Self = StObject.set(x, "isStartIncluded", js.undefined)
     
-    @scala.inline
-    def setIsStopIncluded(value: Boolean): Self = StObject.set(x, "isStopIncluded", value.asInstanceOf[js.Any])
+    inline def setIsStopIncluded(value: Boolean): Self = StObject.set(x, "isStopIncluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStopIncludedUndefined: Self = StObject.set(x, "isStopIncluded", js.undefined)
+    inline def setIsStopIncludedUndefined: Self = StObject.set(x, "isStopIncluded", js.undefined)
     
-    @scala.inline
-    def setStart(value: JulianDate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: JulianDate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStop(value: JulianDate): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: JulianDate): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

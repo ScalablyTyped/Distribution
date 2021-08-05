@@ -26,8 +26,7 @@ trait AdGroupDisplay
 }
 object AdGroupDisplay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audiences: () => AdWordsSelector[Audience],
     excludedAudiences: () => AdWordsSelector[ExcludedAudience],
     excludedKeywords: () => AdWordsSelector[ExcludedDisplayKeyword],
@@ -45,31 +44,22 @@ object AdGroupDisplay {
     __obj.asInstanceOf[AdGroupDisplay]
   }
   
-  @scala.inline
-  implicit class AdGroupDisplayMutableBuilder[Self <: AdGroupDisplay] (val x: Self) extends AnyVal {
+  extension [Self <: AdGroupDisplay](x: Self) {
     
-    @scala.inline
-    def setExcludedAudiences(value: () => AdWordsSelector[ExcludedAudience]): Self = StObject.set(x, "excludedAudiences", js.Any.fromFunction0(value))
+    inline def setExcludedAudiences(value: () => AdWordsSelector[ExcludedAudience]): Self = StObject.set(x, "excludedAudiences", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcludedKeywords(value: () => AdWordsSelector[ExcludedDisplayKeyword]): Self = StObject.set(x, "excludedKeywords", js.Any.fromFunction0(value))
+    inline def setExcludedKeywords(value: () => AdWordsSelector[ExcludedDisplayKeyword]): Self = StObject.set(x, "excludedKeywords", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcludedPlacements(value: () => AdWordsSelector[ExcludedPlacement]): Self = StObject.set(x, "excludedPlacements", js.Any.fromFunction0(value))
+    inline def setExcludedPlacements(value: () => AdWordsSelector[ExcludedPlacement]): Self = StObject.set(x, "excludedPlacements", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcludedTopics(value: () => AdWordsSelector[Topic]): Self = StObject.set(x, "excludedTopics", js.Any.fromFunction0(value))
+    inline def setExcludedTopics(value: () => AdWordsSelector[Topic]): Self = StObject.set(x, "excludedTopics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewAudienceBuilder(value: () => AudienceBuilder[Audience]): Self = StObject.set(x, "newAudienceBuilder", js.Any.fromFunction0(value))
+    inline def setNewAudienceBuilder(value: () => AudienceBuilder[Audience]): Self = StObject.set(x, "newAudienceBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewKeywordBuilder(value: () => DisplayKeywordBuilder[DisplayKeyword]): Self = StObject.set(x, "newKeywordBuilder", js.Any.fromFunction0(value))
+    inline def setNewKeywordBuilder(value: () => DisplayKeywordBuilder[DisplayKeyword]): Self = StObject.set(x, "newKeywordBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewPlacementBuilder(value: () => PlacementBuilder[Placement]): Self = StObject.set(x, "newPlacementBuilder", js.Any.fromFunction0(value))
+    inline def setNewPlacementBuilder(value: () => PlacementBuilder[Placement]): Self = StObject.set(x, "newPlacementBuilder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTopicBuilder(value: () => TopicBuilder[Topic]): Self = StObject.set(x, "newTopicBuilder", js.Any.fromFunction0(value))
+    inline def setNewTopicBuilder(value: () => TopicBuilder[Topic]): Self = StObject.set(x, "newTopicBuilder", js.Any.fromFunction0(value))
   }
 }

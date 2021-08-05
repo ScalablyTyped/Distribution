@@ -97,10 +97,8 @@ object BreakStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(breakKeyword: ISyntaxToken, semicolonToken: ISyntaxToken): typings.typescriptServices.TypeScript.BreakStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(breakKeyword.asInstanceOf[js.Any], semicolonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.BreakStatementSyntax]
+  inline def create(breakKeyword: ISyntaxToken, semicolonToken: ISyntaxToken): typings.typescriptServices.TypeScript.BreakStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(breakKeyword.asInstanceOf[js.Any], semicolonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.BreakStatementSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.BreakStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.BreakStatementSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.BreakStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.BreakStatementSyntax]
 }

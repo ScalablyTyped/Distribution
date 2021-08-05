@@ -23,28 +23,21 @@ trait ListDistributionsByKeyGroupRequest extends StObject {
 }
 object ListDistributionsByKeyGroupRequest {
   
-  @scala.inline
-  def apply(KeyGroupId: String): ListDistributionsByKeyGroupRequest = {
+  inline def apply(KeyGroupId: String): ListDistributionsByKeyGroupRequest = {
     val __obj = js.Dynamic.literal(KeyGroupId = KeyGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDistributionsByKeyGroupRequest]
   }
   
-  @scala.inline
-  implicit class ListDistributionsByKeyGroupRequestMutableBuilder[Self <: ListDistributionsByKeyGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDistributionsByKeyGroupRequest](x: Self) {
     
-    @scala.inline
-    def setKeyGroupId(value: String): Self = StObject.set(x, "KeyGroupId", value.asInstanceOf[js.Any])
+    inline def setKeyGroupId(value: String): Self = StObject.set(x, "KeyGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: String): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: String): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

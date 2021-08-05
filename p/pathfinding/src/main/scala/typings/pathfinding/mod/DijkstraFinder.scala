@@ -11,6 +11,5 @@ trait DijkstraFinder
      with AStarFinder
 object DijkstraFinder {
   
-  @scala.inline
-  def apply: DijkstraFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("DijkstraFinder").asInstanceOf[DijkstraFinder]
+  inline def apply: DijkstraFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("DijkstraFinder").asInstanceOf[DijkstraFinder]
 }

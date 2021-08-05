@@ -30,5 +30,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * element.<b>Note:</b> This function can only be used <i>within</i> control development. An
   * application cannot add style class support on existing elements by calling this function.
   */
-@scala.inline
-def CustomStyleClassSupport(): scala.Unit = typings.openui5.global.sap.ui.core.^.asInstanceOf[js.Dynamic].applyDynamic("CustomStyleClassSupport")().asInstanceOf[scala.Unit]
+inline def CustomStyleClassSupport(): scala.Unit = typings.openui5.global.sap.ui.core.^.asInstanceOf[js.Dynamic].applyDynamic("CustomStyleClassSupport")().asInstanceOf[scala.Unit]

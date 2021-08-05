@@ -10,19 +10,15 @@ trait EndpointsConfig extends StObject {
 }
 object EndpointsConfig {
   
-  @scala.inline
-  def apply(): EndpointsConfig = {
+  inline def apply(): EndpointsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EndpointsConfig]
   }
   
-  @scala.inline
-  implicit class EndpointsConfigMutableBuilder[Self <: EndpointsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EndpointsConfig](x: Self) {
     
-    @scala.inline
-    def setEndpointsConfig(value: typings.dockerode.mod.EndpointsConfig): Self = StObject.set(x, "EndpointsConfig", value.asInstanceOf[js.Any])
+    inline def setEndpointsConfig(value: typings.dockerode.mod.EndpointsConfig): Self = StObject.set(x, "EndpointsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsConfigUndefined: Self = StObject.set(x, "EndpointsConfig", js.undefined)
+    inline def setEndpointsConfigUndefined: Self = StObject.set(x, "EndpointsConfig", js.undefined)
   }
 }

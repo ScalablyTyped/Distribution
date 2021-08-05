@@ -31,40 +31,29 @@ trait SchemaDimensionProperties extends StObject {
 }
 object SchemaDimensionProperties {
   
-  @scala.inline
-  def apply(): SchemaDimensionProperties = {
+  inline def apply(): SchemaDimensionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDimensionProperties]
   }
   
-  @scala.inline
-  implicit class SchemaDimensionPropertiesMutableBuilder[Self <: SchemaDimensionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDimensionProperties](x: Self) {
     
-    @scala.inline
-    def setDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
+    inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
-    @scala.inline
-    def setDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+    inline def setDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
+    inline def setHiddenByFilter(value: Boolean): Self = StObject.set(x, "hiddenByFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenByFilterUndefined: Self = StObject.set(x, "hiddenByFilter", js.undefined)
+    inline def setHiddenByFilterUndefined: Self = StObject.set(x, "hiddenByFilter", js.undefined)
     
-    @scala.inline
-    def setHiddenByUser(value: Boolean): Self = StObject.set(x, "hiddenByUser", value.asInstanceOf[js.Any])
+    inline def setHiddenByUser(value: Boolean): Self = StObject.set(x, "hiddenByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenByUserUndefined: Self = StObject.set(x, "hiddenByUser", js.undefined)
+    inline def setHiddenByUserUndefined: Self = StObject.set(x, "hiddenByUser", js.undefined)
     
-    @scala.inline
-    def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+    inline def setPixelSize(value: Double): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
+    inline def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
   }
 }

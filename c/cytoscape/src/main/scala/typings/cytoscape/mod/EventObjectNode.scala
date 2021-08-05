@@ -14,8 +14,7 @@ trait EventObjectNode
 }
 object EventObjectNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cy: Core,
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
@@ -37,10 +36,8 @@ object EventObjectNode {
     __obj.asInstanceOf[EventObjectNode]
   }
   
-  @scala.inline
-  implicit class EventObjectNodeMutableBuilder[Self <: EventObjectNode] (val x: Self) extends AnyVal {
+  extension [Self <: EventObjectNode](x: Self) {
     
-    @scala.inline
-    def setTarget(value: NodeSingular): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: NodeSingular): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

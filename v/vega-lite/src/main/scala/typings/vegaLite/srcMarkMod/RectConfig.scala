@@ -29,25 +29,19 @@ trait RectConfig[ES /* <: ExprRef | SignalRef */]
 }
 object RectConfig {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): RectConfig[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): RectConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RectConfig[ES]]
   }
   
-  @scala.inline
-  implicit class RectConfigMutableBuilder[Self <: RectConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & RectConfig[ES]) extends AnyVal {
+  extension [Self <: RectConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & RectConfig[ES]) {
     
-    @scala.inline
-    def setContinuousBandSize(value: Double): Self = StObject.set(x, "continuousBandSize", value.asInstanceOf[js.Any])
+    inline def setContinuousBandSize(value: Double): Self = StObject.set(x, "continuousBandSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousBandSizeUndefined: Self = StObject.set(x, "continuousBandSize", js.undefined)
+    inline def setContinuousBandSizeUndefined: Self = StObject.set(x, "continuousBandSize", js.undefined)
     
-    @scala.inline
-    def setDiscreteBandSize(value: Double): Self = StObject.set(x, "discreteBandSize", value.asInstanceOf[js.Any])
+    inline def setDiscreteBandSize(value: Double): Self = StObject.set(x, "discreteBandSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscreteBandSizeUndefined: Self = StObject.set(x, "discreteBandSize", js.undefined)
+    inline def setDiscreteBandSizeUndefined: Self = StObject.set(x, "discreteBandSize", js.undefined)
   }
 }

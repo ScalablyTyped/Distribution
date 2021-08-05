@@ -12,8 +12,7 @@ object objectexplorer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findNodes(
+  inline def findNodes(
     connectionId: String,
     `type`: String,
     schema: String,
@@ -22,16 +21,12 @@ object objectexplorer {
     parentObjectNames: js.Array[String]
   ): Thenable[js.Array[ObjectExplorerNode]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodes")(connectionId.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], name.asInstanceOf[js.Any], database.asInstanceOf[js.Any], parentObjectNames.asInstanceOf[js.Any])).asInstanceOf[Thenable[js.Array[ObjectExplorerNode]]]
   
-  @scala.inline
-  def getActiveConnectionNodes(): Thenable[js.Array[ObjectExplorerNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveConnectionNodes")().asInstanceOf[Thenable[js.Array[ObjectExplorerNode]]]
+  inline def getActiveConnectionNodes(): Thenable[js.Array[ObjectExplorerNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveConnectionNodes")().asInstanceOf[Thenable[js.Array[ObjectExplorerNode]]]
   
-  @scala.inline
-  def getNode(connectionId: String): Thenable[ObjectExplorerNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[ObjectExplorerNode]]
-  @scala.inline
-  def getNode(connectionId: String, nodePath: String): Thenable[ObjectExplorerNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(connectionId.asInstanceOf[js.Any], nodePath.asInstanceOf[js.Any])).asInstanceOf[Thenable[ObjectExplorerNode]]
+  inline def getNode(connectionId: String): Thenable[ObjectExplorerNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(connectionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[ObjectExplorerNode]]
+  inline def getNode(connectionId: String, nodePath: String): Thenable[ObjectExplorerNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNode")(connectionId.asInstanceOf[js.Any], nodePath.asInstanceOf[js.Any])).asInstanceOf[Thenable[ObjectExplorerNode]]
   
-  @scala.inline
-  def getSessionConnectionProfile(sessionId: String): Thenable[IConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionConnectionProfile")(sessionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[IConnectionProfile]]
+  inline def getSessionConnectionProfile(sessionId: String): Thenable[IConnectionProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionConnectionProfile")(sessionId.asInstanceOf[js.Any]).asInstanceOf[Thenable[IConnectionProfile]]
   
   @js.native
   trait ObjectExplorerNode

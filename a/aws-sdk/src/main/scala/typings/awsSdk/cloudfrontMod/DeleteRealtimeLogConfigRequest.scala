@@ -18,25 +18,19 @@ trait DeleteRealtimeLogConfigRequest extends StObject {
 }
 object DeleteRealtimeLogConfigRequest {
   
-  @scala.inline
-  def apply(): DeleteRealtimeLogConfigRequest = {
+  inline def apply(): DeleteRealtimeLogConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteRealtimeLogConfigRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRealtimeLogConfigRequestMutableBuilder[Self <: DeleteRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRealtimeLogConfigRequest](x: Self) {
     
-    @scala.inline
-    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

@@ -53,8 +53,7 @@ object WiFi {
       * @return An asynchronous enumeration operation. On successful completion, returns a list of available Wi-Fi adapters.
       */
     /* static member */
-    @scala.inline
-    def findAllAdaptersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAdaptersAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+    inline def findAllAdaptersAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllAdaptersAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
     
     /**
       * A static method that initiates an asynchronous operation to get a WiFiAdapter object.
@@ -62,24 +61,21 @@ object WiFi {
       * @return An asynchronous get operation. On successful completion, returns a WiFiAdapter object specific to the requested Device ID.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFi.WiFiAdapter] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFi.WiFiAdapter]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFi.WiFiAdapter] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.WiFi.WiFiAdapter]]
     
     /**
       * A static method that returns an Advanced Query Syntax (AQS) string to be used to enumerate Wi-Fi adapters using Windows.Devices.Enumeration.DeviceInformation.FindAllAsync and related methods.
       * @return An identifier to be used to enumerate Wi-Fi devices.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
     
     /**
       * A static method for determining whether the current user can access any of the Wi-Fi adapters on this device.
       * @return An asynchronous access operation. On successful completion, returns a status enumeration value describing whether the current user can access any Wi-Fi adapter.
       */
     /* static member */
-    @scala.inline
-    def requestAccessAsync(): IPromiseWithIAsyncOperation[WiFiAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IPromiseWithIAsyncOperation[WiFiAccessStatus]]
+    inline def requestAccessAsync(): IPromiseWithIAsyncOperation[WiFiAccessStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAccessAsync")().asInstanceOf[IPromiseWithIAsyncOperation[WiFiAccessStatus]]
   }
   
   /** Describes an available Wi-Fi network. */
@@ -243,6 +239,5 @@ object WiFi {
   @JSGlobal("Windows.Devices.WiFi.irect")
   @js.native
   def irect: js.Any = js.native
-  @scala.inline
-  def irect_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("irect")(x.asInstanceOf[js.Any])
+  inline def irect_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("irect")(x.asInstanceOf[js.Any])
 }

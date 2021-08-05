@@ -89,67 +89,47 @@ trait SlicerUpdateData extends StObject {
 }
 object SlicerUpdateData {
   
-  @scala.inline
-  def apply(): SlicerUpdateData = {
+  inline def apply(): SlicerUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlicerUpdateData]
   }
   
-  @scala.inline
-  implicit class SlicerUpdateDataMutableBuilder[Self <: SlicerUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: SlicerUpdateData](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: SlicerSortType | DataSourceOrder | Ascending | Descending): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: SlicerSortType | DataSourceOrder | Ascending | Descending): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWorksheet(value: WorksheetUpdateData): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+    inline def setWorksheet(value: WorksheetUpdateData): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
+    inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
   }
 }

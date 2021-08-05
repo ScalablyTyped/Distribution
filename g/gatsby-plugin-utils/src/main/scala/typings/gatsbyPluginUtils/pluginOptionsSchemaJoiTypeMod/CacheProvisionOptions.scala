@@ -15,16 +15,13 @@ trait CacheProvisionOptions extends StObject {
 }
 object CacheProvisionOptions {
   
-  @scala.inline
-  def apply(max: Double): CacheProvisionOptions = {
+  inline def apply(max: Double): CacheProvisionOptions = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheProvisionOptions]
   }
   
-  @scala.inline
-  implicit class CacheProvisionOptionsMutableBuilder[Self <: CacheProvisionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CacheProvisionOptions](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }
 }

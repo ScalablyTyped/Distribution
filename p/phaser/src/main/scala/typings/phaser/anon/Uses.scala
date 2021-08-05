@@ -14,22 +14,17 @@ trait Uses
 }
 object Uses {
   
-  @scala.inline
-  def apply(): Uses = {
+  inline def apply(): Uses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Uses]
   }
   
-  @scala.inline
-  implicit class UsesMutableBuilder[Self <: Uses] (val x: Self) extends AnyVal {
+  extension [Self <: Uses](x: Self) {
     
-    @scala.inline
-    def setUses(value: js.Array[Plugin | String]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
+    inline def setUses(value: js.Array[Plugin | String]): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsesUndefined: Self = StObject.set(x, "uses", js.undefined)
+    inline def setUsesUndefined: Self = StObject.set(x, "uses", js.undefined)
     
-    @scala.inline
-    def setUsesVarargs(value: (Plugin | String)*): Self = StObject.set(x, "uses", js.Array(value :_*))
+    inline def setUsesVarargs(value: (Plugin | String)*): Self = StObject.set(x, "uses", js.Array(value :_*))
   }
 }

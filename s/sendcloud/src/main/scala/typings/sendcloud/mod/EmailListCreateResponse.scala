@@ -14,19 +14,15 @@ trait EmailListCreateResponse extends StObject {
 }
 object EmailListCreateResponse {
   
-  @scala.inline
-  def apply(list: Createdat): EmailListCreateResponse = {
+  inline def apply(list: Createdat): EmailListCreateResponse = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any], message = "success")
     __obj.asInstanceOf[EmailListCreateResponse]
   }
   
-  @scala.inline
-  implicit class EmailListCreateResponseMutableBuilder[Self <: EmailListCreateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EmailListCreateResponse](x: Self) {
     
-    @scala.inline
-    def setList(value: Createdat): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: Createdat): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

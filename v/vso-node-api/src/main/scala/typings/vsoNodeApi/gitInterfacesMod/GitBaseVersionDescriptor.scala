@@ -25,8 +25,7 @@ trait GitBaseVersionDescriptor
 }
 object GitBaseVersionDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseVersion: String,
     baseVersionOptions: GitVersionOptions,
     baseVersionType: GitVersionType,
@@ -38,16 +37,12 @@ object GitBaseVersionDescriptor {
     __obj.asInstanceOf[GitBaseVersionDescriptor]
   }
   
-  @scala.inline
-  implicit class GitBaseVersionDescriptorMutableBuilder[Self <: GitBaseVersionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: GitBaseVersionDescriptor](x: Self) {
     
-    @scala.inline
-    def setBaseVersion(value: String): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
+    inline def setBaseVersion(value: String): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVersionOptions(value: GitVersionOptions): Self = StObject.set(x, "baseVersionOptions", value.asInstanceOf[js.Any])
+    inline def setBaseVersionOptions(value: GitVersionOptions): Self = StObject.set(x, "baseVersionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVersionType(value: GitVersionType): Self = StObject.set(x, "baseVersionType", value.asInstanceOf[js.Any])
+    inline def setBaseVersionType(value: GitVersionType): Self = StObject.set(x, "baseVersionType", value.asInstanceOf[js.Any])
   }
 }

@@ -19,23 +19,18 @@ trait LabeledStatement_
 }
 object LabeledStatement_ {
   
-  @scala.inline
-  def apply(body: Statement, end: Double, label: Identifier_, loc: SourceLocation, start: Double): LabeledStatement_ = {
+  inline def apply(body: Statement, end: Double, label: Identifier_, loc: SourceLocation, start: Double): LabeledStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("LabeledStatement")
     __obj.asInstanceOf[LabeledStatement_]
   }
   
-  @scala.inline
-  implicit class LabeledStatement_MutableBuilder[Self <: LabeledStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: LabeledStatement_](x: Self) {
     
-    @scala.inline
-    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Identifier_): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LabeledStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LabeledStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

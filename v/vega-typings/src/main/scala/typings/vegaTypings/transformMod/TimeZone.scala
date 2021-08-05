@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeZone extends StObject
 object TimeZone {
   
-  @scala.inline
-  def local: typings.vegaTypings.vegaTypingsStrings.local = "local".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.local]
+  inline def local: typings.vegaTypings.vegaTypingsStrings.local = "local".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.local]
   
-  @scala.inline
-  def utc: typings.vegaTypings.vegaTypingsStrings.utc = "utc".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.utc]
+  inline def utc: typings.vegaTypings.vegaTypingsStrings.utc = "utc".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.utc]
 }

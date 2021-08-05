@@ -27,8 +27,7 @@ trait Queue
 }
 object Queue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AuthorizationRules: String,
     AutoDeleteOnIdle: String,
     CreatedAt: DateString,
@@ -58,28 +57,20 @@ object Queue {
     __obj.asInstanceOf[Queue]
   }
   
-  @scala.inline
-  implicit class QueueMutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
+  extension [Self <: Queue](x: Self) {
     
-    @scala.inline
-    def setDeadLetteringOnMessageExpiration(value: String): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
+    inline def setDeadLetteringOnMessageExpiration(value: String): Self = StObject.set(x, "DeadLetteringOnMessageExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockDuration(value: Duration): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
+    inline def setLockDuration(value: Duration): Self = StObject.set(x, "LockDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDeliveryCount(value: String): Self = StObject.set(x, "MaxDeliveryCount", value.asInstanceOf[js.Any])
+    inline def setMaxDeliveryCount(value: String): Self = StObject.set(x, "MaxDeliveryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageCount(value: String): Self = StObject.set(x, "MessageCount", value.asInstanceOf[js.Any])
+    inline def setMessageCount(value: String): Self = StObject.set(x, "MessageCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
+    inline def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresSession(value: String): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
+    inline def setRequiresSession(value: String): Self = StObject.set(x, "RequiresSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportOrdering(value: String): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
+    inline def setSupportOrdering(value: String): Self = StObject.set(x, "SupportOrdering", value.asInstanceOf[js.Any])
   }
 }

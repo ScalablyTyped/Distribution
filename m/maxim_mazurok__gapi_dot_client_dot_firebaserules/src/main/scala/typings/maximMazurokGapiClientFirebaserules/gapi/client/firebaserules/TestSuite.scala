@@ -11,22 +11,17 @@ trait TestSuite extends StObject {
 }
 object TestSuite {
   
-  @scala.inline
-  def apply(): TestSuite = {
+  inline def apply(): TestSuite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestSuite]
   }
   
-  @scala.inline
-  implicit class TestSuiteMutableBuilder[Self <: TestSuite] (val x: Self) extends AnyVal {
+  extension [Self <: TestSuite](x: Self) {
     
-    @scala.inline
-    def setTestCases(value: js.Array[TestCase]): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
+    inline def setTestCases(value: js.Array[TestCase]): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
+    inline def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
     
-    @scala.inline
-    def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
+    inline def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
   }
 }

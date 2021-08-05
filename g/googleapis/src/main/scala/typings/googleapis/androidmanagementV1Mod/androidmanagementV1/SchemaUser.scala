@@ -20,19 +20,15 @@ trait SchemaUser extends StObject {
 }
 object SchemaUser {
   
-  @scala.inline
-  def apply(): SchemaUser = {
+  inline def apply(): SchemaUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUser]
   }
   
-  @scala.inline
-  implicit class SchemaUserMutableBuilder[Self <: SchemaUser] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUser](x: Self) {
     
-    @scala.inline
-    def setAccountIdentifier(value: String): Self = StObject.set(x, "accountIdentifier", value.asInstanceOf[js.Any])
+    inline def setAccountIdentifier(value: String): Self = StObject.set(x, "accountIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdentifierUndefined: Self = StObject.set(x, "accountIdentifier", js.undefined)
+    inline def setAccountIdentifierUndefined: Self = StObject.set(x, "accountIdentifier", js.undefined)
   }
 }

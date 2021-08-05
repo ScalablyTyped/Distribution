@@ -38,8 +38,7 @@ trait VerifyRequest extends StObject {
 }
 object VerifyRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     KeyId: KeyIdType,
     Message: PlaintextType,
     Signature: CiphertextType,
@@ -49,34 +48,24 @@ object VerifyRequest {
     __obj.asInstanceOf[VerifyRequest]
   }
   
-  @scala.inline
-  implicit class VerifyRequestMutableBuilder[Self <: VerifyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VerifyRequest](x: Self) {
     
-    @scala.inline
-    def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
+    inline def setGrantTokens(value: GrantTokenList): Self = StObject.set(x, "GrantTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
+    inline def setGrantTokensUndefined: Self = StObject.set(x, "GrantTokens", js.undefined)
     
-    @scala.inline
-    def setGrantTokensVarargs(value: GrantTokenType*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
+    inline def setGrantTokensVarargs(value: GrantTokenType*): Self = StObject.set(x, "GrantTokens", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: PlaintextType): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: PlaintextType): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: MessageType): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
     
-    @scala.inline
-    def setSignature(value: CiphertextType): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: CiphertextType): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningAlgorithm(value: SigningAlgorithmSpec): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSigningAlgorithm(value: SigningAlgorithmSpec): Self = StObject.set(x, "SigningAlgorithm", value.asInstanceOf[js.Any])
   }
 }

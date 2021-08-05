@@ -15,23 +15,18 @@ trait BaseSecurity extends StObject {
 }
 object BaseSecurity {
   
-  @scala.inline
-  def apply(`type`: basic | apiKey | oauth2): BaseSecurity = {
+  inline def apply(`type`: basic | apiKey | oauth2): BaseSecurity = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseSecurity]
   }
   
-  @scala.inline
-  implicit class BaseSecurityMutableBuilder[Self <: BaseSecurity] (val x: Self) extends AnyVal {
+  extension [Self <: BaseSecurity](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setType(value: basic | apiKey | oauth2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: basic | apiKey | oauth2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

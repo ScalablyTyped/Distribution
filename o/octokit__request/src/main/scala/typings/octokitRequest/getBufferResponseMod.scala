@@ -12,6 +12,5 @@ object getBufferResponseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(response: Response): js.Promise[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(response.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer]]
+  inline def default(response: Response): js.Promise[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(response.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArrayBuffer]]
 }

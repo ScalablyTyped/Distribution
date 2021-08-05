@@ -26,25 +26,19 @@ trait ICustomLoadingPanel extends StObject {
 }
 object ICustomLoadingPanel {
   
-  @scala.inline
-  def apply(hide: () => Unit, show: () => Unit): ICustomLoadingPanel = {
+  inline def apply(hide: () => Unit, show: () => Unit): ICustomLoadingPanel = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[ICustomLoadingPanel]
   }
   
-  @scala.inline
-  implicit class ICustomLoadingPanelMutableBuilder[Self <: ICustomLoadingPanel] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomLoadingPanel](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

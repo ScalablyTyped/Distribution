@@ -10,16 +10,13 @@ trait IWebUIBackgroundTaskInstanceStatics extends StObject {
 }
 object IWebUIBackgroundTaskInstanceStatics {
   
-  @scala.inline
-  def apply(current: IWebUIBackgroundTaskInstance): IWebUIBackgroundTaskInstanceStatics = {
+  inline def apply(current: IWebUIBackgroundTaskInstance): IWebUIBackgroundTaskInstanceStatics = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebUIBackgroundTaskInstanceStatics]
   }
   
-  @scala.inline
-  implicit class IWebUIBackgroundTaskInstanceStaticsMutableBuilder[Self <: IWebUIBackgroundTaskInstanceStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IWebUIBackgroundTaskInstanceStatics](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: IWebUIBackgroundTaskInstance): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: IWebUIBackgroundTaskInstance): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }
 }

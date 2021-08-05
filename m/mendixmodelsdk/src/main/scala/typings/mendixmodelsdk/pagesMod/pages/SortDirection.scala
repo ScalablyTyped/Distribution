@@ -21,13 +21,11 @@ object SortDirection {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SortDirection.Ascending")
   @js.native
   def Ascending: SortDirection = js.native
-  @scala.inline
-  def Ascending_=(x: SortDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ascending")(x.asInstanceOf[js.Any])
+  inline def Ascending_=(x: SortDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ascending")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SortDirection.Descending")
   @js.native
   def Descending: SortDirection = js.native
-  @scala.inline
-  def Descending_=(x: SortDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
+  inline def Descending_=(x: SortDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
 }

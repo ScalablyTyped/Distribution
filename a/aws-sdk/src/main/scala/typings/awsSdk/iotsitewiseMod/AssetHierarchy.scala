@@ -18,22 +18,17 @@ trait AssetHierarchy extends StObject {
 }
 object AssetHierarchy {
   
-  @scala.inline
-  def apply(name: Name): AssetHierarchy = {
+  inline def apply(name: Name): AssetHierarchy = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetHierarchy]
   }
   
-  @scala.inline
-  implicit class AssetHierarchyMutableBuilder[Self <: AssetHierarchy] (val x: Self) extends AnyVal {
+  extension [Self <: AssetHierarchy](x: Self) {
     
-    @scala.inline
-    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

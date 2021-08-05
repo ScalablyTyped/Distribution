@@ -10,19 +10,15 @@ trait UseModelGeometry extends StObject {
 }
 object UseModelGeometry {
   
-  @scala.inline
-  def apply(): UseModelGeometry = {
+  inline def apply(): UseModelGeometry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseModelGeometry]
   }
   
-  @scala.inline
-  implicit class UseModelGeometryMutableBuilder[Self <: UseModelGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: UseModelGeometry](x: Self) {
     
-    @scala.inline
-    def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
+    inline def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseModelGeometryUndefined: Self = StObject.set(x, "useModelGeometry", js.undefined)
+    inline def setUseModelGeometryUndefined: Self = StObject.set(x, "useModelGeometry", js.undefined)
   }
 }

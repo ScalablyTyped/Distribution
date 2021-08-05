@@ -88,8 +88,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object CompiledLanguage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginRe: RegExp,
     contains: js.Array[CompiledMode],
     data: Record[String, js.Any],
@@ -106,187 +105,126 @@ object CompiledLanguage {
     __obj.asInstanceOf[CompiledLanguage]
   }
   
-  @scala.inline
-  implicit class CompiledLanguageMutableBuilder[Self <: CompiledLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: CompiledLanguage](x: Self) {
     
-    @scala.inline
-    def setBegin(value: RegExp | String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: RegExp | String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginKeywords(value: String): Self = StObject.set(x, "beginKeywords", value.asInstanceOf[js.Any])
+    inline def setBeginKeywords(value: String): Self = StObject.set(x, "beginKeywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginKeywordsUndefined: Self = StObject.set(x, "beginKeywords", js.undefined)
+    inline def setBeginKeywordsUndefined: Self = StObject.set(x, "beginKeywords", js.undefined)
     
-    @scala.inline
-    def setBeginRe(value: RegExp): Self = StObject.set(x, "beginRe", value.asInstanceOf[js.Any])
+    inline def setBeginRe(value: RegExp): Self = StObject.set(x, "beginRe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+    inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
     
-    @scala.inline
-    def setCached_variants(value: js.Array[Mode]): Self = StObject.set(x, "cached_variants", value.asInstanceOf[js.Any])
+    inline def setCached_variants(value: js.Array[Mode]): Self = StObject.set(x, "cached_variants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCached_variantsUndefined: Self = StObject.set(x, "cached_variants", js.undefined)
+    inline def setCached_variantsUndefined: Self = StObject.set(x, "cached_variants", js.undefined)
     
-    @scala.inline
-    def setCached_variantsVarargs(value: Mode*): Self = StObject.set(x, "cached_variants", js.Array(value :_*))
+    inline def setCached_variantsVarargs(value: Mode*): Self = StObject.set(x, "cached_variants", js.Array(value :_*))
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCompiled(value: `true`): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
+    inline def setCompiled(value: `true`): Self = StObject.set(x, "compiled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContains(value: js.Array[CompiledMode]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: js.Array[CompiledMode]): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsVarargs(value: CompiledMode*): Self = StObject.set(x, "contains", js.Array(value :_*))
+    inline def setContainsVarargs(value: CompiledMode*): Self = StObject.set(x, "contains", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: RegExp | String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: RegExp | String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndRe(value: RegExp): Self = StObject.set(x, "endRe", value.asInstanceOf[js.Any])
+    inline def setEndRe(value: RegExp): Self = StObject.set(x, "endRe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSameAsBegin(value: Boolean): Self = StObject.set(x, "endSameAsBegin", value.asInstanceOf[js.Any])
+    inline def setEndSameAsBegin(value: Boolean): Self = StObject.set(x, "endSameAsBegin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndSameAsBeginUndefined: Self = StObject.set(x, "endSameAsBegin", js.undefined)
+    inline def setEndSameAsBeginUndefined: Self = StObject.set(x, "endSameAsBegin", js.undefined)
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setEndsParent(value: Boolean): Self = StObject.set(x, "endsParent", value.asInstanceOf[js.Any])
+    inline def setEndsParent(value: Boolean): Self = StObject.set(x, "endsParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndsParentUndefined: Self = StObject.set(x, "endsParent", js.undefined)
+    inline def setEndsParentUndefined: Self = StObject.set(x, "endsParent", js.undefined)
     
-    @scala.inline
-    def setEndsWithParent(value: Boolean): Self = StObject.set(x, "endsWithParent", value.asInstanceOf[js.Any])
+    inline def setEndsWithParent(value: Boolean): Self = StObject.set(x, "endsWithParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndsWithParentUndefined: Self = StObject.set(x, "endsWithParent", js.undefined)
+    inline def setEndsWithParentUndefined: Self = StObject.set(x, "endsWithParent", js.undefined)
     
-    @scala.inline
-    def setExcludeBegin(value: Boolean): Self = StObject.set(x, "excludeBegin", value.asInstanceOf[js.Any])
+    inline def setExcludeBegin(value: Boolean): Self = StObject.set(x, "excludeBegin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeBeginUndefined: Self = StObject.set(x, "excludeBegin", js.undefined)
+    inline def setExcludeBeginUndefined: Self = StObject.set(x, "excludeBegin", js.undefined)
     
-    @scala.inline
-    def setExcludeEnd(value: Boolean): Self = StObject.set(x, "excludeEnd", value.asInstanceOf[js.Any])
+    inline def setExcludeEnd(value: Boolean): Self = StObject.set(x, "excludeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeEndUndefined: Self = StObject.set(x, "excludeEnd", js.undefined)
+    inline def setExcludeEndUndefined: Self = StObject.set(x, "excludeEnd", js.undefined)
     
-    @scala.inline
-    def setIllegal(value: String | RegExp): Self = StObject.set(x, "illegal", value.asInstanceOf[js.Any])
+    inline def setIllegal(value: String | RegExp): Self = StObject.set(x, "illegal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIllegalRe(value: RegExp): Self = StObject.set(x, "illegalRe", value.asInstanceOf[js.Any])
+    inline def setIllegalRe(value: RegExp): Self = StObject.set(x, "illegalRe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIllegalUndefined: Self = StObject.set(x, "illegal", js.undefined)
+    inline def setIllegalUndefined: Self = StObject.set(x, "illegal", js.undefined)
     
-    @scala.inline
-    def setKeywordPatternRe(value: RegExp): Self = StObject.set(x, "keywordPatternRe", value.asInstanceOf[js.Any])
+    inline def setKeywordPatternRe(value: RegExp): Self = StObject.set(x, "keywordPatternRe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywords(value: Record[String, js.Any]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: Record[String, js.Any]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLexemes(value: String | RegExp): Self = StObject.set(x, "lexemes", value.asInstanceOf[js.Any])
+    inline def setLexemes(value: String | RegExp): Self = StObject.set(x, "lexemes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexemesUndefined: Self = StObject.set(x, "lexemes", js.undefined)
+    inline def setLexemesUndefined: Self = StObject.set(x, "lexemes", js.undefined)
     
-    @scala.inline
-    def setMatcher(value: js.Any): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
+    inline def setMatcher(value: js.Any): Self = StObject.set(x, "matcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnColonbegin(value: (/* match */ RegExpMatchArray, /* response */ CallbackResponse) => Unit): Self = StObject.set(x, "on:begin", js.Any.fromFunction2(value))
+    inline def setOnColonbegin(value: (/* match */ RegExpMatchArray, /* response */ CallbackResponse) => Unit): Self = StObject.set(x, "on:begin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnColonbeginUndefined: Self = StObject.set(x, "on:begin", js.undefined)
+    inline def setOnColonbeginUndefined: Self = StObject.set(x, "on:begin", js.undefined)
     
-    @scala.inline
-    def setOnColonend(value: js.Function): Self = StObject.set(x, "on:end", value.asInstanceOf[js.Any])
+    inline def setOnColonend(value: js.Function): Self = StObject.set(x, "on:end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnColonendUndefined: Self = StObject.set(x, "on:end", js.undefined)
+    inline def setOnColonendUndefined: Self = StObject.set(x, "on:end", js.undefined)
     
-    @scala.inline
-    def setParent(value: js.UndefOr[Mode] & js.UndefOr[CompiledMode]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.UndefOr[Mode] & js.UndefOr[CompiledMode]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
+    inline def setRelevance(value: Double): Self = StObject.set(x, "relevance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
+    inline def setRelevanceUndefined: Self = StObject.set(x, "relevance", js.undefined)
     
-    @scala.inline
-    def setReturnBegin(value: Boolean): Self = StObject.set(x, "returnBegin", value.asInstanceOf[js.Any])
+    inline def setReturnBegin(value: Boolean): Self = StObject.set(x, "returnBegin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnBeginUndefined: Self = StObject.set(x, "returnBegin", js.undefined)
+    inline def setReturnBeginUndefined: Self = StObject.set(x, "returnBegin", js.undefined)
     
-    @scala.inline
-    def setReturnEnd(value: Boolean): Self = StObject.set(x, "returnEnd", value.asInstanceOf[js.Any])
+    inline def setReturnEnd(value: Boolean): Self = StObject.set(x, "returnEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnEndUndefined: Self = StObject.set(x, "returnEnd", js.undefined)
+    inline def setReturnEndUndefined: Self = StObject.set(x, "returnEnd", js.undefined)
     
-    @scala.inline
-    def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setStarts(value: js.UndefOr[Mode] & js.UndefOr[CompiledMode]): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
+    inline def setStarts(value: js.UndefOr[Mode] & js.UndefOr[CompiledMode]): Self = StObject.set(x, "starts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubLanguage(value: String | js.Array[String]): Self = StObject.set(x, "subLanguage", value.asInstanceOf[js.Any])
+    inline def setSubLanguage(value: String | js.Array[String]): Self = StObject.set(x, "subLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubLanguageUndefined: Self = StObject.set(x, "subLanguage", js.undefined)
+    inline def setSubLanguageUndefined: Self = StObject.set(x, "subLanguage", js.undefined)
     
-    @scala.inline
-    def setSubLanguageVarargs(value: String*): Self = StObject.set(x, "subLanguage", js.Array(value :_*))
+    inline def setSubLanguageVarargs(value: String*): Self = StObject.set(x, "subLanguage", js.Array(value :_*))
     
-    @scala.inline
-    def setTerminator_end(value: String): Self = StObject.set(x, "terminator_end", value.asInstanceOf[js.Any])
+    inline def setTerminator_end(value: String): Self = StObject.set(x, "terminator_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariants(value: js.Array[Mode]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+    inline def setVariants(value: js.Array[Mode]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
+    inline def setVariantsUndefined: Self = StObject.set(x, "variants", js.undefined)
     
-    @scala.inline
-    def setVariantsVarargs(value: Mode*): Self = StObject.set(x, "variants", js.Array(value :_*))
+    inline def setVariantsVarargs(value: Mode*): Self = StObject.set(x, "variants", js.Array(value :_*))
     
-    @scala.inline
-    def set__beforeBegin(value: js.Function): Self = StObject.set(x, "__beforeBegin", value.asInstanceOf[js.Any])
+    inline def set__beforeBegin(value: js.Function): Self = StObject.set(x, "__beforeBegin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__beforeBeginUndefined: Self = StObject.set(x, "__beforeBegin", js.undefined)
+    inline def set__beforeBeginUndefined: Self = StObject.set(x, "__beforeBegin", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait DataSourceSpec extends StObject {
 }
 object DataSourceSpec {
   
-  @scala.inline
-  def apply(): DataSourceSpec = {
+  inline def apply(): DataSourceSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSpec]
   }
   
-  @scala.inline
-  implicit class DataSourceSpecMutableBuilder[Self <: DataSourceSpec] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSpec](x: Self) {
     
-    @scala.inline
-    def setBigQuery(value: BigQueryDataSourceSpec): Self = StObject.set(x, "bigQuery", value.asInstanceOf[js.Any])
+    inline def setBigQuery(value: BigQueryDataSourceSpec): Self = StObject.set(x, "bigQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigQueryUndefined: Self = StObject.set(x, "bigQuery", js.undefined)
+    inline def setBigQueryUndefined: Self = StObject.set(x, "bigQuery", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[DataSourceParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[DataSourceParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: DataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: DataSourceParameter*): Self = StObject.set(x, "parameters", js.Array(value :_*))
   }
 }

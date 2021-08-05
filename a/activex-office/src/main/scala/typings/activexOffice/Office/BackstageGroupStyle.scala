@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BackstageGroupStyle extends StObject
 object BackstageGroupStyle {
   
-  @scala.inline
-  def BackstageGroupStyleError: `2` = 2.asInstanceOf[`2`]
+  inline def BackstageGroupStyleError: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def BackstageGroupStyleNormal: `0` = 0.asInstanceOf[`0`]
+  inline def BackstageGroupStyleNormal: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def BackstageGroupStyleWarning: `1` = 1.asInstanceOf[`1`]
+  inline def BackstageGroupStyleWarning: `1` = 1.asInstanceOf[`1`]
 }

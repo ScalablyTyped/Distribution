@@ -12,19 +12,15 @@ trait LoginUrl extends StObject {
 }
 object LoginUrl {
   
-  @scala.inline
-  def apply(id: String, loginUrl: String): LoginUrl = {
+  inline def apply(id: String, loginUrl: String): LoginUrl = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], loginUrl = loginUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginUrl]
   }
   
-  @scala.inline
-  implicit class LoginUrlMutableBuilder[Self <: LoginUrl] (val x: Self) extends AnyVal {
+  extension [Self <: LoginUrl](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
+    inline def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
   }
 }

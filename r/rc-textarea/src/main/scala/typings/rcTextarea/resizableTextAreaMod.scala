@@ -48,26 +48,20 @@ object resizableTextAreaMod {
   }
   object AutoSizeType {
     
-    @scala.inline
-    def apply(): AutoSizeType = {
+    inline def apply(): AutoSizeType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoSizeType]
     }
     
-    @scala.inline
-    implicit class AutoSizeTypeMutableBuilder[Self <: AutoSizeType] (val x: Self) extends AnyVal {
+    extension [Self <: AutoSizeType](x: Self) {
       
-      @scala.inline
-      def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
+      inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
+      inline def setMaxRowsUndefined: Self = StObject.set(x, "maxRows", js.undefined)
       
-      @scala.inline
-      def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
+      inline def setMinRows(value: Double): Self = StObject.set(x, "minRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
+      inline def setMinRowsUndefined: Self = StObject.set(x, "minRows", js.undefined)
     }
   }
   
@@ -112,26 +106,20 @@ object resizableTextAreaMod {
   }
   object TextAreaState {
     
-    @scala.inline
-    def apply(): TextAreaState = {
+    inline def apply(): TextAreaState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextAreaState]
     }
     
-    @scala.inline
-    implicit class TextAreaStateMutableBuilder[Self <: TextAreaState] (val x: Self) extends AnyVal {
+    extension [Self <: TextAreaState](x: Self) {
       
-      @scala.inline
-      def setResizeStatus(value: RESIZE_STATUS): Self = StObject.set(x, "resizeStatus", value.asInstanceOf[js.Any])
+      inline def setResizeStatus(value: RESIZE_STATUS): Self = StObject.set(x, "resizeStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeStatusUndefined: Self = StObject.set(x, "resizeStatus", js.undefined)
+      inline def setResizeStatusUndefined: Self = StObject.set(x, "resizeStatus", js.undefined)
       
-      @scala.inline
-      def setTextareaStyles(value: CSSProperties): Self = StObject.set(x, "textareaStyles", value.asInstanceOf[js.Any])
+      inline def setTextareaStyles(value: CSSProperties): Self = StObject.set(x, "textareaStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextareaStylesUndefined: Self = StObject.set(x, "textareaStyles", js.undefined)
+      inline def setTextareaStylesUndefined: Self = StObject.set(x, "textareaStyles", js.undefined)
     }
   }
 }

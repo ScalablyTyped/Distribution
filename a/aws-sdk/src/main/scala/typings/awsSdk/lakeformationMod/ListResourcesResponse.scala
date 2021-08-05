@@ -18,28 +18,21 @@ trait ListResourcesResponse extends StObject {
 }
 object ListResourcesResponse {
   
-  @scala.inline
-  def apply(): ListResourcesResponse = {
+  inline def apply(): ListResourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResourcesResponse]
   }
   
-  @scala.inline
-  implicit class ListResourcesResponseMutableBuilder[Self <: ListResourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourcesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceInfoList(value: ResourceInfoList): Self = StObject.set(x, "ResourceInfoList", value.asInstanceOf[js.Any])
+    inline def setResourceInfoList(value: ResourceInfoList): Self = StObject.set(x, "ResourceInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceInfoListUndefined: Self = StObject.set(x, "ResourceInfoList", js.undefined)
+    inline def setResourceInfoListUndefined: Self = StObject.set(x, "ResourceInfoList", js.undefined)
     
-    @scala.inline
-    def setResourceInfoListVarargs(value: ResourceInfo*): Self = StObject.set(x, "ResourceInfoList", js.Array(value :_*))
+    inline def setResourceInfoListVarargs(value: ResourceInfo*): Self = StObject.set(x, "ResourceInfoList", js.Array(value :_*))
   }
 }

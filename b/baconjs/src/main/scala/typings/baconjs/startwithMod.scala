@@ -12,9 +12,7 @@ object startwithMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def startWithE[V](src: EventStream[V], seed: V): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("startWithE")(src.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
+  inline def startWithE[V](src: EventStream[V], seed: V): EventStream[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("startWithE")(src.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[EventStream[V]]
   
-  @scala.inline
-  def startWithP[V](src: Property[V], seed: V): Property[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("startWithP")(src.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Property[V]]
+  inline def startWithP[V](src: Property[V], seed: V): Property[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("startWithP")(src.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Property[V]]
 }

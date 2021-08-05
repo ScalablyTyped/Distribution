@@ -10,8 +10,7 @@ trait CodeLensRegistrationOptions
      with CodeLensOptions
 object CodeLensRegistrationOptions {
   
-  @scala.inline
-  def apply(): CodeLensRegistrationOptions = {
+  inline def apply(): CodeLensRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[CodeLensRegistrationOptions]
   }

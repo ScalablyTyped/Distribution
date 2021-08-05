@@ -22,25 +22,19 @@ trait HasManyCountAssociationsMixinOptions extends StObject {
 }
 object HasManyCountAssociationsMixinOptions {
   
-  @scala.inline
-  def apply(): HasManyCountAssociationsMixinOptions = {
+  inline def apply(): HasManyCountAssociationsMixinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HasManyCountAssociationsMixinOptions]
   }
   
-  @scala.inline
-  implicit class HasManyCountAssociationsMixinOptionsMutableBuilder[Self <: HasManyCountAssociationsMixinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HasManyCountAssociationsMixinOptions](x: Self) {
     
-    @scala.inline
-    def setScope(value: String | Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String | Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

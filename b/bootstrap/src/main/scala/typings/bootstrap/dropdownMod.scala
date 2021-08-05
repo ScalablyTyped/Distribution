@@ -79,10 +79,8 @@ object dropdownMod {
       * with a DOM element.
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): Dropdown = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Dropdown]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptionsBoundary): Dropdown = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dropdown]
+    inline def getInstance(element: Element): Dropdown = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Dropdown]
+    inline def getInstance(element: Element, options: PartialOptionsBoundary): Dropdown = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Dropdown]
   }
   
   trait Dropdown extends StObject {
@@ -114,8 +112,7 @@ object dropdownMod {
   }
   object Dropdown {
     
-    @scala.inline
-    def apply(dispose: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit, update: () => Unit): Dropdown = {
+    inline def apply(dispose: () => Unit, hide: () => Unit, show: () => Unit, toggle: () => Unit, update: () => Unit): Dropdown = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), toggle = js.Any.fromFunction0(toggle), update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[Dropdown]
     }
@@ -161,23 +158,17 @@ object dropdownMod {
            with Events
     }
     
-    @scala.inline
-    implicit class DropdownMutableBuilder[Self <: Dropdown] (val x: Self) extends AnyVal {
+    extension [Self <: Dropdown](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
     
     trait Options extends StObject {
@@ -246,8 +237,7 @@ object dropdownMod {
     }
     object Options {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         boundary: Boundary | Element,
         display: dynamic | static,
         flip: Boolean,
@@ -258,29 +248,21 @@ object dropdownMod {
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setBoundary(value: Boundary | Element): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+        inline def setBoundary(value: Boundary | Element): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplay(value: dynamic | static): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+        inline def setDisplay(value: dynamic | static): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+        inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPopperConfig(value: PopperOptions): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
+        inline def setPopperConfig(value: PopperOptions): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPopperConfigNull: Self = StObject.set(x, "popperConfig", null)
+        inline def setPopperConfigNull: Self = StObject.set(x, "popperConfig", null)
         
-        @scala.inline
-        def setReference(value: toggle | parent | Element): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+        inline def setReference(value: toggle | parent | Element): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
       }
     }
   }

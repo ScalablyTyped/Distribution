@@ -24,31 +24,31 @@ object columnHeaderMod {
       */
     def this(props: IColumnHeaderProps, context: js.Any) = this()
     
-    var convertPointToColumn: js.Any = js.native
+    /* private */ var convertPointToColumn: js.Any = js.native
     
-    var getCellExtremaClasses: js.Any = js.native
+    /* private */ var getCellExtremaClasses: js.Any = js.native
     
-    var getColumnWidth: js.Any = js.native
+    /* private */ var getColumnWidth: js.Any = js.native
     
-    var getDragCoordinate: js.Any = js.native
+    /* private */ var getDragCoordinate: js.Any = js.native
     
-    var getMouseCoordinate: js.Any = js.native
+    /* private */ var getMouseCoordinate: js.Any = js.native
     
-    var handleResizeDoubleClick: js.Any = js.native
+    /* private */ var handleResizeDoubleClick: js.Any = js.native
     
-    var handleResizeEnd: js.Any = js.native
+    /* private */ var handleResizeEnd: js.Any = js.native
     
-    var handleSizeChanged: js.Any = js.native
+    /* private */ var handleSizeChanged: js.Any = js.native
     
-    var isCellSelected: js.Any = js.native
+    /* private */ var isCellSelected: js.Any = js.native
     
-    var isGhostIndex: js.Any = js.native
+    /* private */ var isGhostIndex: js.Any = js.native
     
-    var renderGhostCell: js.Any = js.native
+    /* private */ var renderGhostCell: js.Any = js.native
     
-    var toRegion: js.Any = js.native
+    /* private */ var toRegion: js.Any = js.native
     
-    var wrapCells: js.Any = js.native
+    /* private */ var wrapCells: js.Any = js.native
   }
   /* static members */
   object ColumnHeader {
@@ -60,8 +60,7 @@ object columnHeaderMod {
     @JSImport("@blueprintjs/table/lib/esm/headers/columnHeader", "ColumnHeader.defaultProps")
     @js.native
     def defaultProps: IsReorderable = js.native
-    @scala.inline
-    def defaultProps_=(x: IsReorderable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IsReorderable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -103,32 +102,24 @@ object columnHeaderMod {
   }
   object IColumnWidths {
     
-    @scala.inline
-    def apply(): IColumnWidths = {
+    inline def apply(): IColumnWidths = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IColumnWidths]
     }
     
-    @scala.inline
-    implicit class IColumnWidthsMutableBuilder[Self <: IColumnWidths] (val x: Self) extends AnyVal {
+    extension [Self <: IColumnWidths](x: Self) {
       
-      @scala.inline
-      def setDefaultColumnWidth(value: Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
+      inline def setDefaultColumnWidth(value: Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultColumnWidthUndefined: Self = StObject.set(x, "defaultColumnWidth", js.undefined)
+      inline def setDefaultColumnWidthUndefined: Self = StObject.set(x, "defaultColumnWidth", js.undefined)
       
-      @scala.inline
-      def setMaxColumnWidth(value: Double): Self = StObject.set(x, "maxColumnWidth", value.asInstanceOf[js.Any])
+      inline def setMaxColumnWidth(value: Double): Self = StObject.set(x, "maxColumnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxColumnWidthUndefined: Self = StObject.set(x, "maxColumnWidth", js.undefined)
+      inline def setMaxColumnWidthUndefined: Self = StObject.set(x, "maxColumnWidth", js.undefined)
       
-      @scala.inline
-      def setMinColumnWidth(value: Double): Self = StObject.set(x, "minColumnWidth", value.asInstanceOf[js.Any])
+      inline def setMinColumnWidth(value: Double): Self = StObject.set(x, "minColumnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinColumnWidthUndefined: Self = StObject.set(x, "minColumnWidth", js.undefined)
+      inline def setMinColumnWidthUndefined: Self = StObject.set(x, "minColumnWidth", js.undefined)
     }
   }
 }

@@ -14,6 +14,6 @@ object documentCardLocationBaseMod {
     extends Component[IDocumentCardLocationProps, js.Any, js.Any] {
     def this(props: IDocumentCardLocationProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
   }
 }

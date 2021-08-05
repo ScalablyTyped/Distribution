@@ -12,19 +12,15 @@ trait GetArtistAlbumsOptions
 }
 object GetArtistAlbumsOptions {
   
-  @scala.inline
-  def apply(): GetArtistAlbumsOptions = {
+  inline def apply(): GetArtistAlbumsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetArtistAlbumsOptions]
   }
   
-  @scala.inline
-  implicit class GetArtistAlbumsOptionsMutableBuilder[Self <: GetArtistAlbumsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetArtistAlbumsOptions](x: Self) {
     
-    @scala.inline
-    def setInclude_groups(value: String): Self = StObject.set(x, "include_groups", value.asInstanceOf[js.Any])
+    inline def setInclude_groups(value: String): Self = StObject.set(x, "include_groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_groupsUndefined: Self = StObject.set(x, "include_groups", js.undefined)
+    inline def setInclude_groupsUndefined: Self = StObject.set(x, "include_groups", js.undefined)
   }
 }

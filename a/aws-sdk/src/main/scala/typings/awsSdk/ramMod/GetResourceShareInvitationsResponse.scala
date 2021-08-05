@@ -18,28 +18,21 @@ trait GetResourceShareInvitationsResponse extends StObject {
 }
 object GetResourceShareInvitationsResponse {
   
-  @scala.inline
-  def apply(): GetResourceShareInvitationsResponse = {
+  inline def apply(): GetResourceShareInvitationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourceShareInvitationsResponse]
   }
   
-  @scala.inline
-  implicit class GetResourceShareInvitationsResponseMutableBuilder[Self <: GetResourceShareInvitationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceShareInvitationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceShareInvitations(value: ResourceShareInvitationList): Self = StObject.set(x, "resourceShareInvitations", value.asInstanceOf[js.Any])
+    inline def setResourceShareInvitations(value: ResourceShareInvitationList): Self = StObject.set(x, "resourceShareInvitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareInvitationsUndefined: Self = StObject.set(x, "resourceShareInvitations", js.undefined)
+    inline def setResourceShareInvitationsUndefined: Self = StObject.set(x, "resourceShareInvitations", js.undefined)
     
-    @scala.inline
-    def setResourceShareInvitationsVarargs(value: ResourceShareInvitation*): Self = StObject.set(x, "resourceShareInvitations", js.Array(value :_*))
+    inline def setResourceShareInvitationsVarargs(value: ResourceShareInvitation*): Self = StObject.set(x, "resourceShareInvitations", js.Array(value :_*))
   }
 }

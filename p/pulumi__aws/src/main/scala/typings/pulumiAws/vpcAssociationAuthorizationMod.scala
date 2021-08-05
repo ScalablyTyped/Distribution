@@ -55,21 +55,16 @@ object vpcAssociationAuthorizationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState, opts: CustomResourceOptions): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
+    inline def get(name: String, id: Input[ID]): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
+    inline def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
+    inline def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState, opts: CustomResourceOptions): VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcAssociationAuthorization]
     
     /**
       * Returns true if the given object is an instance of VpcAssociationAuthorization.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean]
   }
   
   trait VpcAssociationAuthorizationArgs extends StObject {
@@ -91,26 +86,20 @@ object vpcAssociationAuthorizationMod {
   }
   object VpcAssociationAuthorizationArgs {
     
-    @scala.inline
-    def apply(vpcId: Input[String], zoneId: Input[String]): VpcAssociationAuthorizationArgs = {
+    inline def apply(vpcId: Input[String], zoneId: Input[String]): VpcAssociationAuthorizationArgs = {
       val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any], zoneId = zoneId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpcAssociationAuthorizationArgs]
     }
     
-    @scala.inline
-    implicit class VpcAssociationAuthorizationArgsMutableBuilder[Self <: VpcAssociationAuthorizationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpcAssociationAuthorizationArgs](x: Self) {
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcRegion(value: Input[String]): Self = StObject.set(x, "vpcRegion", value.asInstanceOf[js.Any])
+      inline def setVpcRegion(value: Input[String]): Self = StObject.set(x, "vpcRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcRegionUndefined: Self = StObject.set(x, "vpcRegion", js.undefined)
+      inline def setVpcRegionUndefined: Self = StObject.set(x, "vpcRegion", js.undefined)
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,32 +122,24 @@ object vpcAssociationAuthorizationMod {
   }
   object VpcAssociationAuthorizationState {
     
-    @scala.inline
-    def apply(): VpcAssociationAuthorizationState = {
+    inline def apply(): VpcAssociationAuthorizationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpcAssociationAuthorizationState]
     }
     
-    @scala.inline
-    implicit class VpcAssociationAuthorizationStateMutableBuilder[Self <: VpcAssociationAuthorizationState] (val x: Self) extends AnyVal {
+    extension [Self <: VpcAssociationAuthorizationState](x: Self) {
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
       
-      @scala.inline
-      def setVpcRegion(value: Input[String]): Self = StObject.set(x, "vpcRegion", value.asInstanceOf[js.Any])
+      inline def setVpcRegion(value: Input[String]): Self = StObject.set(x, "vpcRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcRegionUndefined: Self = StObject.set(x, "vpcRegion", js.undefined)
+      inline def setVpcRegionUndefined: Self = StObject.set(x, "vpcRegion", js.undefined)
       
-      @scala.inline
-      def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
+      inline def setZoneId(value: Input[String]): Self = StObject.set(x, "zoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
+      inline def setZoneIdUndefined: Self = StObject.set(x, "zoneId", js.undefined)
     }
   }
 }

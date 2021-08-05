@@ -85,21 +85,16 @@ object acceleratorMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AcceleratorState): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AcceleratorState, opts: CustomResourceOptions): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
+    inline def get(name: String, id: Input[ID]): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
+    inline def get(name: String, id: Input[ID], state: AcceleratorState): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
+    inline def get(name: String, id: Input[ID], state: AcceleratorState, opts: CustomResourceOptions): Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Accelerator]
     
     /**
       * Returns true if the given object is an instance of Accelerator.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean]
   }
   
   trait AcceleratorArgs extends StObject {
@@ -131,44 +126,32 @@ object acceleratorMod {
   }
   object AcceleratorArgs {
     
-    @scala.inline
-    def apply(): AcceleratorArgs = {
+    inline def apply(): AcceleratorArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AcceleratorArgs]
     }
     
-    @scala.inline
-    implicit class AcceleratorArgsMutableBuilder[Self <: AcceleratorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AcceleratorArgs](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorAttributes]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorAttributes]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setIpAddressType(value: Input[String]): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
+      inline def setIpAddressType(value: Input[String]): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
+      inline def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -218,65 +201,46 @@ object acceleratorMod {
   }
   object AcceleratorState {
     
-    @scala.inline
-    def apply(): AcceleratorState = {
+    inline def apply(): AcceleratorState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AcceleratorState]
     }
     
-    @scala.inline
-    implicit class AcceleratorStateMutableBuilder[Self <: AcceleratorState] (val x: Self) extends AnyVal {
+    extension [Self <: AcceleratorState](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorAttributes]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorAttributes]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+      inline def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
+      inline def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setHostedZoneId(value: Input[String]): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
+      inline def setHostedZoneId(value: Input[String]): Self = StObject.set(x, "hostedZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostedZoneIdUndefined: Self = StObject.set(x, "hostedZoneId", js.undefined)
+      inline def setHostedZoneIdUndefined: Self = StObject.set(x, "hostedZoneId", js.undefined)
       
-      @scala.inline
-      def setIpAddressType(value: Input[String]): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
+      inline def setIpAddressType(value: Input[String]): Self = StObject.set(x, "ipAddressType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
+      inline def setIpAddressTypeUndefined: Self = StObject.set(x, "ipAddressType", js.undefined)
       
-      @scala.inline
-      def setIpSets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorIpSet]]]): Self = StObject.set(x, "ipSets", value.asInstanceOf[js.Any])
+      inline def setIpSets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorIpSet]]]): Self = StObject.set(x, "ipSets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpSetsUndefined: Self = StObject.set(x, "ipSets", js.undefined)
+      inline def setIpSetsUndefined: Self = StObject.set(x, "ipSets", js.undefined)
       
-      @scala.inline
-      def setIpSetsVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorIpSet]*): Self = StObject.set(x, "ipSets", js.Array(value :_*))
+      inline def setIpSetsVarargs(value: Input[typings.pulumiAws.inputMod.globalaccelerator.AcceleratorIpSet]*): Self = StObject.set(x, "ipSets", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

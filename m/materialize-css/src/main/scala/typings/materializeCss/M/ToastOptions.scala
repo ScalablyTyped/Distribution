@@ -47,8 +47,7 @@ trait ToastOptions extends StObject {
 }
 object ToastOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activationPercent: Double,
     classes: String,
     completeCallback: () => Unit,
@@ -61,28 +60,20 @@ object ToastOptions {
     __obj.asInstanceOf[ToastOptions]
   }
   
-  @scala.inline
-  implicit class ToastOptionsMutableBuilder[Self <: ToastOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ToastOptions](x: Self) {
     
-    @scala.inline
-    def setActivationPercent(value: Double): Self = StObject.set(x, "activationPercent", value.asInstanceOf[js.Any])
+    inline def setActivationPercent(value: Double): Self = StObject.set(x, "activationPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteCallback(value: () => Unit): Self = StObject.set(x, "completeCallback", js.Any.fromFunction0(value))
+    inline def setCompleteCallback(value: () => Unit): Self = StObject.set(x, "completeCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisplayLength(value: Double): Self = StObject.set(x, "displayLength", value.asInstanceOf[js.Any])
+    inline def setDisplayLength(value: Double): Self = StObject.set(x, "displayLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
+    inline def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
+    inline def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
   }
 }

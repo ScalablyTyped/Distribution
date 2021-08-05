@@ -15,25 +15,19 @@ trait EventPublicChatDataAvailable extends StObject {
 }
 object EventPublicChatDataAvailable {
   
-  @scala.inline
-  def apply(processed: js.Any, raw: js.Any, result: js.Array[ChatLine]): EventPublicChatDataAvailable = {
+  inline def apply(processed: js.Any, raw: js.Any, result: js.Array[ChatLine]): EventPublicChatDataAvailable = {
     val __obj = js.Dynamic.literal(processed = processed.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventPublicChatDataAvailable]
   }
   
-  @scala.inline
-  implicit class EventPublicChatDataAvailableMutableBuilder[Self <: EventPublicChatDataAvailable] (val x: Self) extends AnyVal {
+  extension [Self <: EventPublicChatDataAvailable](x: Self) {
     
-    @scala.inline
-    def setProcessed(value: js.Any): Self = StObject.set(x, "processed", value.asInstanceOf[js.Any])
+    inline def setProcessed(value: js.Any): Self = StObject.set(x, "processed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: js.Any): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Array[ChatLine]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[ChatLine]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: ChatLine*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: ChatLine*): Self = StObject.set(x, "result", js.Array(value :_*))
   }
 }

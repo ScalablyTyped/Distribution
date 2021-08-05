@@ -78,20 +78,16 @@ object iconTypesMod {
   }
   object IFontIconProps {
     
-    @scala.inline
-    def apply(): IFontIconProps = {
+    inline def apply(): IFontIconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFontIconProps]
     }
     
-    @scala.inline
-    implicit class IFontIconPropsMutableBuilder[Self <: IFontIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: IFontIconProps](x: Self) {
       
-      @scala.inline
-      def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
+      inline def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
+      inline def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
     }
   }
   
@@ -137,59 +133,42 @@ object iconTypesMod {
   }
   object IIconProps {
     
-    @scala.inline
-    def apply(): IIconProps = {
+    inline def apply(): IIconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IIconProps]
     }
     
-    @scala.inline
-    implicit class IIconPropsMutableBuilder[Self <: IIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: IIconProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
+      inline def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
+      inline def setIconNameUndefined: Self = StObject.set(x, "iconName", js.undefined)
       
-      @scala.inline
-      def setIconType(value: IconType): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
+      inline def setIconType(value: IconType): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
+      inline def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
       
-      @scala.inline
-      def setImageErrorAs(value: ComponentType[IImageProps]): Self = StObject.set(x, "imageErrorAs", value.asInstanceOf[js.Any])
+      inline def setImageErrorAs(value: ComponentType[IImageProps]): Self = StObject.set(x, "imageErrorAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageErrorAsUndefined: Self = StObject.set(x, "imageErrorAs", js.undefined)
+      inline def setImageErrorAsUndefined: Self = StObject.set(x, "imageErrorAs", js.undefined)
       
-      @scala.inline
-      def setImageProps(value: IImageProps): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
+      inline def setImageProps(value: IImageProps): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
+      inline def setImagePropsUndefined: Self = StObject.set(x, "imageProps", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IIconStyleProps, IIconStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IIconStyleProps, IIconStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IIconStyleProps => DeepPartial[IIconStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IIconStyleProps => DeepPartial[IIconStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -209,44 +188,32 @@ object iconTypesMod {
   }
   object IIconStyleProps {
     
-    @scala.inline
-    def apply(isImage: Boolean, isPlaceholder: Boolean): IIconStyleProps = {
+    inline def apply(isImage: Boolean, isPlaceholder: Boolean): IIconStyleProps = {
       val __obj = js.Dynamic.literal(isImage = isImage.asInstanceOf[js.Any], isPlaceholder = isPlaceholder.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIconStyleProps]
     }
     
-    @scala.inline
-    implicit class IIconStylePropsMutableBuilder[Self <: IIconStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IIconStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
+      inline def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
+      inline def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
       
-      @scala.inline
-      def setIsImage(value: Boolean): Self = StObject.set(x, "isImage", value.asInstanceOf[js.Any])
+      inline def setIsImage(value: Boolean): Self = StObject.set(x, "isImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPlaceholder(value: Boolean): Self = StObject.set(x, "isPlaceholder", value.asInstanceOf[js.Any])
+      inline def setIsPlaceholder(value: Boolean): Self = StObject.set(x, "isPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyles(value: PartialIIconStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: PartialIIconStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -262,32 +229,24 @@ object iconTypesMod {
   }
   object IIconStyles {
     
-    @scala.inline
-    def apply(): IIconStyles = {
+    inline def apply(): IIconStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IIconStyles]
     }
     
-    @scala.inline
-    implicit class IIconStylesMutableBuilder[Self <: IIconStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IIconStyles](x: Self) {
       
-      @scala.inline
-      def setImageContainer(value: IStyle): Self = StObject.set(x, "imageContainer", value.asInstanceOf[js.Any])
+      inline def setImageContainer(value: IStyle): Self = StObject.set(x, "imageContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageContainerNull: Self = StObject.set(x, "imageContainer", null)
+      inline def setImageContainerNull: Self = StObject.set(x, "imageContainer", null)
       
-      @scala.inline
-      def setImageContainerUndefined: Self = StObject.set(x, "imageContainer", js.undefined)
+      inline def setImageContainerUndefined: Self = StObject.set(x, "imageContainer", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -302,17 +261,14 @@ object iconTypesMod {
   }
   object IImageIconProps {
     
-    @scala.inline
-    def apply(imageProps: IImageProps): IImageIconProps = {
+    inline def apply(imageProps: IImageProps): IImageIconProps = {
       val __obj = js.Dynamic.literal(imageProps = imageProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[IImageIconProps]
     }
     
-    @scala.inline
-    implicit class IImageIconPropsMutableBuilder[Self <: IImageIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: IImageIconProps](x: Self) {
       
-      @scala.inline
-      def setImageProps(value: IImageProps): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
+      inline def setImageProps(value: IImageProps): Self = StObject.set(x, "imageProps", value.asInstanceOf[js.Any])
     }
   }
 }

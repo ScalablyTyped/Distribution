@@ -18,35 +18,26 @@ object anon {
   }
   object Iterations {
     
-    @scala.inline
-    def apply(query: String): Iterations = {
+    inline def apply(query: String): Iterations = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[Iterations]
     }
     
-    @scala.inline
-    implicit class IterationsMutableBuilder[Self <: Iterations] (val x: Self) extends AnyVal {
+    extension [Self <: Iterations](x: Self) {
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+      inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
       
-      @scala.inline
-      def setModerate(value: Boolean): Self = StObject.set(x, "moderate", value.asInstanceOf[js.Any])
+      inline def setModerate(value: Boolean): Self = StObject.set(x, "moderate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModerateUndefined: Self = StObject.set(x, "moderate", js.undefined)
+      inline def setModerateUndefined: Self = StObject.set(x, "moderate", js.undefined)
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+      inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+      inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     }
   }
 }

@@ -17,10 +17,8 @@ object mod {
   //=> ['8.22.0']
   ```
   */
-  @scala.inline
-  def apply(stringWithVersions: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(stringWithVersions.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def apply(stringWithVersions: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(stringWithVersions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(stringWithVersions: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(stringWithVersions.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def apply(stringWithVersions: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(stringWithVersions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("find-versions", JSImport.Namespace)
   @js.native
@@ -36,20 +34,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
+      inline def setLoose(value: Boolean): Self = StObject.set(x, "loose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLooseUndefined: Self = StObject.set(x, "loose", js.undefined)
+      inline def setLooseUndefined: Self = StObject.set(x, "loose", js.undefined)
     }
   }
 }

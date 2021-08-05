@@ -43,55 +43,39 @@ trait RobotDeployment extends StObject {
 }
 object RobotDeployment {
   
-  @scala.inline
-  def apply(): RobotDeployment = {
+  inline def apply(): RobotDeployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RobotDeployment]
   }
   
-  @scala.inline
-  implicit class RobotDeploymentMutableBuilder[Self <: RobotDeployment] (val x: Self) extends AnyVal {
+  extension [Self <: RobotDeployment](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setDeploymentFinishTime(value: CreatedAt): Self = StObject.set(x, "deploymentFinishTime", value.asInstanceOf[js.Any])
+    inline def setDeploymentFinishTime(value: CreatedAt): Self = StObject.set(x, "deploymentFinishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentFinishTimeUndefined: Self = StObject.set(x, "deploymentFinishTime", js.undefined)
+    inline def setDeploymentFinishTimeUndefined: Self = StObject.set(x, "deploymentFinishTime", js.undefined)
     
-    @scala.inline
-    def setDeploymentStartTime(value: CreatedAt): Self = StObject.set(x, "deploymentStartTime", value.asInstanceOf[js.Any])
+    inline def setDeploymentStartTime(value: CreatedAt): Self = StObject.set(x, "deploymentStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentStartTimeUndefined: Self = StObject.set(x, "deploymentStartTime", js.undefined)
+    inline def setDeploymentStartTimeUndefined: Self = StObject.set(x, "deploymentStartTime", js.undefined)
     
-    @scala.inline
-    def setFailureCode(value: DeploymentJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: DeploymentJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
+    inline def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: GenericString): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: GenericString): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setProgressDetail(value: ProgressDetail): Self = StObject.set(x, "progressDetail", value.asInstanceOf[js.Any])
+    inline def setProgressDetail(value: ProgressDetail): Self = StObject.set(x, "progressDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressDetailUndefined: Self = StObject.set(x, "progressDetail", js.undefined)
+    inline def setProgressDetailUndefined: Self = StObject.set(x, "progressDetail", js.undefined)
     
-    @scala.inline
-    def setStatus(value: RobotStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RobotStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

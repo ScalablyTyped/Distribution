@@ -20,49 +20,35 @@ trait PartialComment extends StObject {
 }
 object PartialComment {
   
-  @scala.inline
-  def apply(): PartialComment = {
+  inline def apply(): PartialComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialComment]
   }
   
-  @scala.inline
-  implicit class PartialCommentMutableBuilder[Self <: PartialComment] (val x: Self) extends AnyVal {
+  extension [Self <: PartialComment](x: Self) {
     
-    @scala.inline
-    def setReturns(value: ModelToObject[js.UndefOr[String]] | String): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
+    inline def setReturns(value: ModelToObject[js.UndefOr[String]] | String): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
+    inline def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
     
-    @scala.inline
-    def setReturnsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "returns", js.Array(value :_*))
+    inline def setReturnsVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "returns", js.Array(value :_*))
     
-    @scala.inline
-    def setShortText(value: ModelToObject[String] | String): Self = StObject.set(x, "shortText", value.asInstanceOf[js.Any])
+    inline def setShortText(value: ModelToObject[String] | String): Self = StObject.set(x, "shortText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortTextUndefined: Self = StObject.set(x, "shortText", js.undefined)
+    inline def setShortTextUndefined: Self = StObject.set(x, "shortText", js.undefined)
     
-    @scala.inline
-    def setShortTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "shortText", js.Array(value :_*))
+    inline def setShortTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "shortText", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: ModelToObject[js.UndefOr[js.Array[CommentTag]]] | js.Array[CommentTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: ModelToObject[js.UndefOr[js.Array[CommentTag]]] | js.Array[CommentTag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: (CommentTag | _ModelToObject[js.Any])*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: (CommentTag | _ModelToObject[js.Any])*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: ModelToObject[String] | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: ModelToObject[String] | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

@@ -11,19 +11,15 @@ trait V1GenerateServiceAccountResponse extends StObject {
 }
 object V1GenerateServiceAccountResponse {
   
-  @scala.inline
-  def apply(): V1GenerateServiceAccountResponse = {
+  inline def apply(): V1GenerateServiceAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[V1GenerateServiceAccountResponse]
   }
   
-  @scala.inline
-  implicit class V1GenerateServiceAccountResponseMutableBuilder[Self <: V1GenerateServiceAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: V1GenerateServiceAccountResponse](x: Self) {
     
-    @scala.inline
-    def setAccount(value: V1ServiceAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: V1ServiceAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
   }
 }

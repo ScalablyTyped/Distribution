@@ -21,11 +21,11 @@ object linkedlistMod {
        with IIterable[T]
        with IRetroable[T] {
     
-    var _first: js.Any = js.native
+    /* private */ var _first: js.Any = js.native
     
-    var _last: js.Any = js.native
+    /* private */ var _last: js.Any = js.native
     
-    var _size: js.Any = js.native
+    /* private */ var _size: js.Any = js.native
     
     /**
       * Add a value to the beginning of the list.
@@ -327,7 +327,7 @@ object linkedlistMod {
          with IIterator[INode[T]] {
       def this(node: INode[T]) = this()
       
-      var _node: js.Any = js.native
+      /* private */ var _node: js.Any = js.native
       
       /**
         * Get an iterator over the object's values.
@@ -377,7 +377,7 @@ object linkedlistMod {
          with IIterator[T] {
       def this(node: INode[T]) = this()
       
-      var _node: js.Any = js.native
+      /* private */ var _node: js.Any = js.native
       
       /**
         * Get an iterator over the object's values.
@@ -427,7 +427,7 @@ object linkedlistMod {
          with IIterator[INode[T]] {
       def this(node: INode[T]) = this()
       
-      var _node: js.Any = js.native
+      /* private */ var _node: js.Any = js.native
       
       /**
         * Get an iterator over the object's values.
@@ -477,7 +477,7 @@ object linkedlistMod {
          with IIterator[T] {
       def this(node: INode[T]) = this()
       
-      var _node: js.Any = js.native
+      /* private */ var _node: js.Any = js.native
       
       /**
         * Get an iterator over the object's values.
@@ -522,8 +522,7 @@ object linkedlistMod {
       * #### Complexity
       * Linear.
       */
-    @scala.inline
-    def from[T](values: IterableOrArrayLike[T]): LinkedList[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(values.asInstanceOf[js.Any]).asInstanceOf[LinkedList[T]]
+    inline def from[T](values: IterableOrArrayLike[T]): LinkedList[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(values.asInstanceOf[js.Any]).asInstanceOf[LinkedList[T]]
     
     /**
       * An object which represents a node in a linked list.
@@ -564,35 +563,26 @@ object linkedlistMod {
     }
     object INode {
       
-      @scala.inline
-      def apply[T](value: T): INode[T] = {
+      inline def apply[T](value: T): INode[T] = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], list = null, next = null, prev = null)
         __obj.asInstanceOf[INode[T]]
       }
       
-      @scala.inline
-      implicit class INodeMutableBuilder[Self <: INode[?], T] (val x: Self & INode[T]) extends AnyVal {
+      extension [Self <: INode[?], T](x: Self & INode[T]) {
         
-        @scala.inline
-        def setList(value: LinkedList[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+        inline def setList(value: LinkedList[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setListNull: Self = StObject.set(x, "list", null)
+        inline def setListNull: Self = StObject.set(x, "list", null)
         
-        @scala.inline
-        def setNext(value: INode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+        inline def setNext(value: INode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextNull: Self = StObject.set(x, "next", null)
+        inline def setNextNull: Self = StObject.set(x, "next", null)
         
-        @scala.inline
-        def setPrev(value: INode[T]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+        inline def setPrev(value: INode[T]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrevNull: Self = StObject.set(x, "prev", null)
+        inline def setPrevNull: Self = StObject.set(x, "prev", null)
         
-        @scala.inline
-        def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
   }

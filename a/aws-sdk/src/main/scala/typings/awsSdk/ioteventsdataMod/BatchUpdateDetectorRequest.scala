@@ -13,19 +13,15 @@ trait BatchUpdateDetectorRequest extends StObject {
 }
 object BatchUpdateDetectorRequest {
   
-  @scala.inline
-  def apply(detectors: UpdateDetectorRequests): BatchUpdateDetectorRequest = {
+  inline def apply(detectors: UpdateDetectorRequests): BatchUpdateDetectorRequest = {
     val __obj = js.Dynamic.literal(detectors = detectors.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchUpdateDetectorRequest]
   }
   
-  @scala.inline
-  implicit class BatchUpdateDetectorRequestMutableBuilder[Self <: BatchUpdateDetectorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateDetectorRequest](x: Self) {
     
-    @scala.inline
-    def setDetectors(value: UpdateDetectorRequests): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
+    inline def setDetectors(value: UpdateDetectorRequests): Self = StObject.set(x, "detectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectorsVarargs(value: UpdateDetectorRequest*): Self = StObject.set(x, "detectors", js.Array(value :_*))
+    inline def setDetectorsVarargs(value: UpdateDetectorRequest*): Self = StObject.set(x, "detectors", js.Array(value :_*))
   }
 }

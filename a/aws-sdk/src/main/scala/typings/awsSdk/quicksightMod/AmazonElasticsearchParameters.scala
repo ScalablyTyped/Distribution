@@ -13,16 +13,13 @@ trait AmazonElasticsearchParameters extends StObject {
 }
 object AmazonElasticsearchParameters {
   
-  @scala.inline
-  def apply(Domain: Domain): AmazonElasticsearchParameters = {
+  inline def apply(Domain: Domain): AmazonElasticsearchParameters = {
     val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmazonElasticsearchParameters]
   }
   
-  @scala.inline
-  implicit class AmazonElasticsearchParametersMutableBuilder[Self <: AmazonElasticsearchParameters] (val x: Self) extends AnyVal {
+  extension [Self <: AmazonElasticsearchParameters](x: Self) {
     
-    @scala.inline
-    def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: Domain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
   }
 }

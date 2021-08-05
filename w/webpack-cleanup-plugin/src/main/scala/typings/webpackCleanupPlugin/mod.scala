@@ -34,35 +34,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+      inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
-      @scala.inline
-      def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+      inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
+      inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     }
   }
   

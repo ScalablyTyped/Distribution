@@ -10,9 +10,7 @@ object textMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initText(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initText")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initText(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initText")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def initTitle(title: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initTitle")(title.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initTitle(title: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initTitle")(title.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

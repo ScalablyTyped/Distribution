@@ -210,8 +210,7 @@ object gaugeArrowMod {
   }
   object GaugeArrow {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alpha: Double,
       axis: typings.amcharts.gaugeAxisMod.default,
       borderAlpha: Double,
@@ -232,53 +231,37 @@ object gaugeArrowMod {
       __obj.asInstanceOf[GaugeArrow]
     }
     
-    @scala.inline
-    implicit class GaugeArrowMutableBuilder[Self <: GaugeArrow] (val x: Self) extends AnyVal {
+    extension [Self <: GaugeArrow](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxis(value: typings.amcharts.gaugeAxisMod.default): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: typings.amcharts.gaugeAxisMod.default): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderAlpha(value: Double): Self = StObject.set(x, "borderAlpha", value.asInstanceOf[js.Any])
+      inline def setBorderAlpha(value: Double): Self = StObject.set(x, "borderAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockWiseOnly(value: Boolean): Self = StObject.set(x, "clockWiseOnly", value.asInstanceOf[js.Any])
+      inline def setClockWiseOnly(value: Boolean): Self = StObject.set(x, "clockWiseOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRadius(value: js.Any): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+      inline def setInnerRadius(value: js.Any): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNailAlpha(value: Double): Self = StObject.set(x, "nailAlpha", value.asInstanceOf[js.Any])
+      inline def setNailAlpha(value: Double): Self = StObject.set(x, "nailAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNailBorderAlpha(value: Double): Self = StObject.set(x, "nailBorderAlpha", value.asInstanceOf[js.Any])
+      inline def setNailBorderAlpha(value: Double): Self = StObject.set(x, "nailBorderAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNailBorderThickness(value: Double): Self = StObject.set(x, "nailBorderThickness", value.asInstanceOf[js.Any])
+      inline def setNailBorderThickness(value: Double): Self = StObject.set(x, "nailBorderThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNailRadius(value: Double): Self = StObject.set(x, "nailRadius", value.asInstanceOf[js.Any])
+      inline def setNailRadius(value: Double): Self = StObject.set(x, "nailRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius(value: js.Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: js.Any): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartWidth(value: Double): Self = StObject.set(x, "startWidth", value.asInstanceOf[js.Any])
+      inline def setStartWidth(value: Double): Self = StObject.set(x, "startWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

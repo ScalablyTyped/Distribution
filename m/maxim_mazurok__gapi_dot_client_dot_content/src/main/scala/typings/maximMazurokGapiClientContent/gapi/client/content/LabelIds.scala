@@ -11,22 +11,17 @@ trait LabelIds extends StObject {
 }
 object LabelIds {
   
-  @scala.inline
-  def apply(): LabelIds = {
+  inline def apply(): LabelIds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelIds]
   }
   
-  @scala.inline
-  implicit class LabelIdsMutableBuilder[Self <: LabelIds] (val x: Self) extends AnyVal {
+  extension [Self <: LabelIds](x: Self) {
     
-    @scala.inline
-    def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
+    inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
+    inline def setLabelIdsUndefined: Self = StObject.set(x, "labelIds", js.undefined)
     
-    @scala.inline
-    def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
+    inline def setLabelIdsVarargs(value: String*): Self = StObject.set(x, "labelIds", js.Array(value :_*))
   }
 }

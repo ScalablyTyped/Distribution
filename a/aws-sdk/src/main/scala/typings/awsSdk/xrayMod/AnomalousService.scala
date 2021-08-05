@@ -10,19 +10,15 @@ trait AnomalousService extends StObject {
 }
 object AnomalousService {
   
-  @scala.inline
-  def apply(): AnomalousService = {
+  inline def apply(): AnomalousService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnomalousService]
   }
   
-  @scala.inline
-  implicit class AnomalousServiceMutableBuilder[Self <: AnomalousService] (val x: Self) extends AnyVal {
+  extension [Self <: AnomalousService](x: Self) {
     
-    @scala.inline
-    def setServiceId(value: ServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: ServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdUndefined: Self = StObject.set(x, "ServiceId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "ServiceId", js.undefined)
   }
 }

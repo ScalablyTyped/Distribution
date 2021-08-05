@@ -42,43 +42,31 @@ trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends StObject
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating {
   
-  @scala.inline
-  def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating = {
+  inline def apply(): SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRatingMutableBuilder[Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating](x: Self) {
     
-    @scala.inline
-    def setBestRating(value: Double): Self = StObject.set(x, "bestRating", value.asInstanceOf[js.Any])
+    inline def setBestRating(value: Double): Self = StObject.set(x, "bestRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBestRatingUndefined: Self = StObject.set(x, "bestRating", js.undefined)
+    inline def setBestRatingUndefined: Self = StObject.set(x, "bestRating", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setRatingValue(value: Double): Self = StObject.set(x, "ratingValue", value.asInstanceOf[js.Any])
+    inline def setRatingValue(value: Double): Self = StObject.set(x, "ratingValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatingValueUndefined: Self = StObject.set(x, "ratingValue", js.undefined)
+    inline def setRatingValueUndefined: Self = StObject.set(x, "ratingValue", js.undefined)
     
-    @scala.inline
-    def setTextualRating(value: String): Self = StObject.set(x, "textualRating", value.asInstanceOf[js.Any])
+    inline def setTextualRating(value: String): Self = StObject.set(x, "textualRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextualRatingUndefined: Self = StObject.set(x, "textualRating", js.undefined)
+    inline def setTextualRatingUndefined: Self = StObject.set(x, "textualRating", js.undefined)
     
-    @scala.inline
-    def setWorstRating(value: Double): Self = StObject.set(x, "worstRating", value.asInstanceOf[js.Any])
+    inline def setWorstRating(value: Double): Self = StObject.set(x, "worstRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorstRatingUndefined: Self = StObject.set(x, "worstRating", js.undefined)
+    inline def setWorstRatingUndefined: Self = StObject.set(x, "worstRating", js.undefined)
   }
 }

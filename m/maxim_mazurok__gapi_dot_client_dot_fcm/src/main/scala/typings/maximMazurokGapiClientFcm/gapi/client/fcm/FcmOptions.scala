@@ -11,19 +11,15 @@ trait FcmOptions extends StObject {
 }
 object FcmOptions {
   
-  @scala.inline
-  def apply(): FcmOptions = {
+  inline def apply(): FcmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FcmOptions]
   }
   
-  @scala.inline
-  implicit class FcmOptionsMutableBuilder[Self <: FcmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FcmOptions](x: Self) {
     
-    @scala.inline
-    def setAnalyticsLabel(value: String): Self = StObject.set(x, "analyticsLabel", value.asInstanceOf[js.Any])
+    inline def setAnalyticsLabel(value: String): Self = StObject.set(x, "analyticsLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsLabelUndefined: Self = StObject.set(x, "analyticsLabel", js.undefined)
+    inline def setAnalyticsLabelUndefined: Self = StObject.set(x, "analyticsLabel", js.undefined)
   }
 }

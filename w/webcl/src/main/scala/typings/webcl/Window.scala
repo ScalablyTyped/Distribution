@@ -11,16 +11,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(webcl: WebCL): Window = {
+  inline def apply(webcl: WebCL): Window = {
     val __obj = js.Dynamic.literal(webcl = webcl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setWebcl(value: WebCL): Self = StObject.set(x, "webcl", value.asInstanceOf[js.Any])
+    inline def setWebcl(value: WebCL): Self = StObject.set(x, "webcl", value.asInstanceOf[js.Any])
   }
 }

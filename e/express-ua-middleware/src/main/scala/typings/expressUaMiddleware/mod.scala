@@ -14,8 +14,7 @@ object mod {
   /**
     * Express middleware to parse user-agent header
     */
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
   
   @JSImport("express-ua-middleware", JSImport.Namespace)
   @js.native
@@ -33,26 +32,20 @@ object mod {
   }
   object UserAgent {
     
-    @scala.inline
-    def apply(browser: Name, device: Model, os: Name, raw: String): UserAgent = {
+    inline def apply(browser: Name, device: Model, os: Name, raw: String): UserAgent = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAgent]
     }
     
-    @scala.inline
-    implicit class UserAgentMutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgent](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: Name): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevice(value: Model): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: Model): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOs(value: Name): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: Name): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,17 +57,14 @@ object mod {
   }
   object UserAgentRaw {
     
-    @scala.inline
-    def apply(raw: String): UserAgentRaw = {
+    inline def apply(raw: String): UserAgentRaw = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAgentRaw]
     }
     
-    @scala.inline
-    implicit class UserAgentRawMutableBuilder[Self <: UserAgentRaw] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgentRaw](x: Self) {
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,20 +80,16 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(userAgent: UserAgent & UserAgentRaw, userAgentFromString: String => UserAgent): Request = {
+        inline def apply(userAgent: UserAgent & UserAgentRaw, userAgentFromString: String => UserAgent): Request = {
           val __obj = js.Dynamic.literal(userAgent = userAgent.asInstanceOf[js.Any], userAgentFromString = js.Any.fromFunction1(userAgentFromString))
           __obj.asInstanceOf[Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+        extension [Self <: Request](x: Self) {
           
-          @scala.inline
-          def setUserAgent(value: UserAgent & UserAgentRaw): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+          inline def setUserAgent(value: UserAgent & UserAgentRaw): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setUserAgentFromString(value: String => UserAgent): Self = StObject.set(x, "userAgentFromString", js.Any.fromFunction1(value))
+          inline def setUserAgentFromString(value: String => UserAgent): Self = StObject.set(x, "userAgentFromString", js.Any.fromFunction1(value))
         }
       }
     }

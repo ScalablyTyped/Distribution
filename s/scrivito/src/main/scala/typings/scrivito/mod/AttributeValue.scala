@@ -15,19 +15,15 @@ trait AttributeValue extends StObject {
 }
 object AttributeValue {
   
-  @scala.inline
-  def apply(title: String, value: String): AttributeValue = {
+  inline def apply(title: String, value: String): AttributeValue = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeValue]
   }
   
-  @scala.inline
-  implicit class AttributeValueMutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeValue](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

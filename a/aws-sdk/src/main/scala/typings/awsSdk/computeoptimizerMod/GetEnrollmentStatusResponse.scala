@@ -23,31 +23,23 @@ trait GetEnrollmentStatusResponse extends StObject {
 }
 object GetEnrollmentStatusResponse {
   
-  @scala.inline
-  def apply(): GetEnrollmentStatusResponse = {
+  inline def apply(): GetEnrollmentStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEnrollmentStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetEnrollmentStatusResponseMutableBuilder[Self <: GetEnrollmentStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEnrollmentStatusResponse](x: Self) {
     
-    @scala.inline
-    def setMemberAccountsEnrolled(value: MemberAccountsEnrolled): Self = StObject.set(x, "memberAccountsEnrolled", value.asInstanceOf[js.Any])
+    inline def setMemberAccountsEnrolled(value: MemberAccountsEnrolled): Self = StObject.set(x, "memberAccountsEnrolled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberAccountsEnrolledUndefined: Self = StObject.set(x, "memberAccountsEnrolled", js.undefined)
+    inline def setMemberAccountsEnrolledUndefined: Self = StObject.set(x, "memberAccountsEnrolled", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

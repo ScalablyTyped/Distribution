@@ -35,20 +35,16 @@ object kinesisvideosignalingchannelsMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -83,35 +79,26 @@ object kinesisvideosignalingchannelsMod {
   }
   object GetIceServerConfigRequest {
     
-    @scala.inline
-    def apply(ChannelARN: ResourceARN): GetIceServerConfigRequest = {
+    inline def apply(ChannelARN: ResourceARN): GetIceServerConfigRequest = {
       val __obj = js.Dynamic.literal(ChannelARN = ChannelARN.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetIceServerConfigRequest]
     }
     
-    @scala.inline
-    implicit class GetIceServerConfigRequestMutableBuilder[Self <: GetIceServerConfigRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetIceServerConfigRequest](x: Self) {
       
-      @scala.inline
-      def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
+      inline def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "ClientId", js.undefined)
       
-      @scala.inline
-      def setService(value: Service): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
+      inline def setService(value: Service): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "Service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "Service", js.undefined)
       
-      @scala.inline
-      def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
     }
   }
   
@@ -124,23 +111,18 @@ object kinesisvideosignalingchannelsMod {
   }
   object GetIceServerConfigResponse {
     
-    @scala.inline
-    def apply(): GetIceServerConfigResponse = {
+    inline def apply(): GetIceServerConfigResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetIceServerConfigResponse]
     }
     
-    @scala.inline
-    implicit class GetIceServerConfigResponseMutableBuilder[Self <: GetIceServerConfigResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetIceServerConfigResponse](x: Self) {
       
-      @scala.inline
-      def setIceServerList(value: IceServerList): Self = StObject.set(x, "IceServerList", value.asInstanceOf[js.Any])
+      inline def setIceServerList(value: IceServerList): Self = StObject.set(x, "IceServerList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIceServerListUndefined: Self = StObject.set(x, "IceServerList", js.undefined)
+      inline def setIceServerListUndefined: Self = StObject.set(x, "IceServerList", js.undefined)
       
-      @scala.inline
-      def setIceServerListVarargs(value: IceServer*): Self = StObject.set(x, "IceServerList", js.Array(value :_*))
+      inline def setIceServerListVarargs(value: IceServer*): Self = StObject.set(x, "IceServerList", js.Array(value :_*))
     }
   }
   
@@ -168,41 +150,30 @@ object kinesisvideosignalingchannelsMod {
   }
   object IceServer {
     
-    @scala.inline
-    def apply(): IceServer = {
+    inline def apply(): IceServer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IceServer]
     }
     
-    @scala.inline
-    implicit class IceServerMutableBuilder[Self <: IceServer] (val x: Self) extends AnyVal {
+    extension [Self <: IceServer](x: Self) {
       
-      @scala.inline
-      def setPassword(value: Password): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Password): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Ttl): Self = StObject.set(x, "Ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Ttl): Self = StObject.set(x, "Ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "Ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "Ttl", js.undefined)
       
-      @scala.inline
-      def setUris(value: Uris): Self = StObject.set(x, "Uris", value.asInstanceOf[js.Any])
+      inline def setUris(value: Uris): Self = StObject.set(x, "Uris", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrisUndefined: Self = StObject.set(x, "Uris", js.undefined)
+      inline def setUrisUndefined: Self = StObject.set(x, "Uris", js.undefined)
       
-      @scala.inline
-      def setUrisVarargs(value: Uri*): Self = StObject.set(x, "Uris", js.Array(value :_*))
+      inline def setUrisVarargs(value: Uri*): Self = StObject.set(x, "Uris", js.Array(value :_*))
       
-      @scala.inline
-      def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
     }
   }
   
@@ -268,23 +239,18 @@ object kinesisvideosignalingchannelsMod {
   }
   object SendAlexaOfferToMasterRequest {
     
-    @scala.inline
-    def apply(ChannelARN: ResourceARN, MessagePayload: MessagePayload, SenderClientId: ClientId): SendAlexaOfferToMasterRequest = {
+    inline def apply(ChannelARN: ResourceARN, MessagePayload: MessagePayload, SenderClientId: ClientId): SendAlexaOfferToMasterRequest = {
       val __obj = js.Dynamic.literal(ChannelARN = ChannelARN.asInstanceOf[js.Any], MessagePayload = MessagePayload.asInstanceOf[js.Any], SenderClientId = SenderClientId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendAlexaOfferToMasterRequest]
     }
     
-    @scala.inline
-    implicit class SendAlexaOfferToMasterRequestMutableBuilder[Self <: SendAlexaOfferToMasterRequest] (val x: Self) extends AnyVal {
+    extension [Self <: SendAlexaOfferToMasterRequest](x: Self) {
       
-      @scala.inline
-      def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
+      inline def setChannelARN(value: ResourceARN): Self = StObject.set(x, "ChannelARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagePayload(value: MessagePayload): Self = StObject.set(x, "MessagePayload", value.asInstanceOf[js.Any])
+      inline def setMessagePayload(value: MessagePayload): Self = StObject.set(x, "MessagePayload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderClientId(value: ClientId): Self = StObject.set(x, "SenderClientId", value.asInstanceOf[js.Any])
+      inline def setSenderClientId(value: ClientId): Self = StObject.set(x, "SenderClientId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -297,20 +263,16 @@ object kinesisvideosignalingchannelsMod {
   }
   object SendAlexaOfferToMasterResponse {
     
-    @scala.inline
-    def apply(): SendAlexaOfferToMasterResponse = {
+    inline def apply(): SendAlexaOfferToMasterResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SendAlexaOfferToMasterResponse]
     }
     
-    @scala.inline
-    implicit class SendAlexaOfferToMasterResponseMutableBuilder[Self <: SendAlexaOfferToMasterResponse] (val x: Self) extends AnyVal {
+    extension [Self <: SendAlexaOfferToMasterResponse](x: Self) {
       
-      @scala.inline
-      def setAnswer(value: Answer): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
+      inline def setAnswer(value: Answer): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnswerUndefined: Self = StObject.set(x, "Answer", js.undefined)
+      inline def setAnswerUndefined: Self = StObject.set(x, "Answer", js.undefined)
     }
   }
   

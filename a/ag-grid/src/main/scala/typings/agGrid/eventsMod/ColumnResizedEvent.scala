@@ -15,8 +15,7 @@ trait ColumnResizedEvent
 }
 object ColumnResizedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: GridApi,
     column: Column,
     columnApi: ColumnApi,
@@ -30,10 +29,8 @@ object ColumnResizedEvent {
     __obj.asInstanceOf[ColumnResizedEvent]
   }
   
-  @scala.inline
-  implicit class ColumnResizedEventMutableBuilder[Self <: ColumnResizedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnResizedEvent](x: Self) {
     
-    @scala.inline
-    def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+    inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
   }
 }

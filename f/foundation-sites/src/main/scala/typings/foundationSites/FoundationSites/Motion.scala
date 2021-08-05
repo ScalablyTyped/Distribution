@@ -12,8 +12,7 @@ trait Motion extends StObject {
 }
 object Motion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animateIn: (js.Object, js.Any, js.Function) => Unit,
     animateOut: (js.Object, js.Any, js.Function) => Unit
   ): Motion = {
@@ -21,13 +20,10 @@ object Motion {
     __obj.asInstanceOf[Motion]
   }
   
-  @scala.inline
-  implicit class MotionMutableBuilder[Self <: Motion] (val x: Self) extends AnyVal {
+  extension [Self <: Motion](x: Self) {
     
-    @scala.inline
-    def setAnimateIn(value: (js.Object, js.Any, js.Function) => Unit): Self = StObject.set(x, "animateIn", js.Any.fromFunction3(value))
+    inline def setAnimateIn(value: (js.Object, js.Any, js.Function) => Unit): Self = StObject.set(x, "animateIn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAnimateOut(value: (js.Object, js.Any, js.Function) => Unit): Self = StObject.set(x, "animateOut", js.Any.fromFunction3(value))
+    inline def setAnimateOut(value: (js.Object, js.Any, js.Function) => Unit): Self = StObject.set(x, "animateOut", js.Any.fromFunction3(value))
   }
 }

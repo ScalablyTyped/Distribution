@@ -14,16 +14,13 @@ trait FirewallSubnetMapping extends StObject {
 }
 object FirewallSubnetMapping {
   
-  @scala.inline
-  def apply(subnetId: Input[String]): FirewallSubnetMapping = {
+  inline def apply(subnetId: Input[String]): FirewallSubnetMapping = {
     val __obj = js.Dynamic.literal(subnetId = subnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallSubnetMapping]
   }
   
-  @scala.inline
-  implicit class FirewallSubnetMappingMutableBuilder[Self <: FirewallSubnetMapping] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallSubnetMapping](x: Self) {
     
-    @scala.inline
-    def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
   }
 }

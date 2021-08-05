@@ -23,43 +23,31 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(): Resource = {
+  inline def apply(): Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentDisplayName(value: String): Self = StObject.set(x, "parentDisplayName", value.asInstanceOf[js.Any])
+    inline def setParentDisplayName(value: String): Self = StObject.set(x, "parentDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentDisplayNameUndefined: Self = StObject.set(x, "parentDisplayName", js.undefined)
+    inline def setParentDisplayNameUndefined: Self = StObject.set(x, "parentDisplayName", js.undefined)
     
-    @scala.inline
-    def setParentName(value: String): Self = StObject.set(x, "parentName", value.asInstanceOf[js.Any])
+    inline def setParentName(value: String): Self = StObject.set(x, "parentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNameUndefined: Self = StObject.set(x, "parentName", js.undefined)
+    inline def setParentNameUndefined: Self = StObject.set(x, "parentName", js.undefined)
     
-    @scala.inline
-    def setProjectDisplayName(value: String): Self = StObject.set(x, "projectDisplayName", value.asInstanceOf[js.Any])
+    inline def setProjectDisplayName(value: String): Self = StObject.set(x, "projectDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectDisplayNameUndefined: Self = StObject.set(x, "projectDisplayName", js.undefined)
+    inline def setProjectDisplayNameUndefined: Self = StObject.set(x, "projectDisplayName", js.undefined)
     
-    @scala.inline
-    def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
+    inline def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
   }
 }

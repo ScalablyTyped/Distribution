@@ -93,118 +93,81 @@ trait TargetGroup extends StObject {
 }
 object TargetGroup {
   
-  @scala.inline
-  def apply(): TargetGroup = {
+  inline def apply(): TargetGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetGroup]
   }
   
-  @scala.inline
-  implicit class TargetGroupMutableBuilder[Self <: TargetGroup] (val x: Self) extends AnyVal {
+  extension [Self <: TargetGroup](x: Self) {
     
-    @scala.inline
-    def setHealthCheckEnabled(value: HealthCheckEnabled): Self = StObject.set(x, "HealthCheckEnabled", value.asInstanceOf[js.Any])
+    inline def setHealthCheckEnabled(value: HealthCheckEnabled): Self = StObject.set(x, "HealthCheckEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckEnabledUndefined: Self = StObject.set(x, "HealthCheckEnabled", js.undefined)
+    inline def setHealthCheckEnabledUndefined: Self = StObject.set(x, "HealthCheckEnabled", js.undefined)
     
-    @scala.inline
-    def setHealthCheckIntervalSeconds(value: HealthCheckIntervalSeconds): Self = StObject.set(x, "HealthCheckIntervalSeconds", value.asInstanceOf[js.Any])
+    inline def setHealthCheckIntervalSeconds(value: HealthCheckIntervalSeconds): Self = StObject.set(x, "HealthCheckIntervalSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "HealthCheckIntervalSeconds", js.undefined)
+    inline def setHealthCheckIntervalSecondsUndefined: Self = StObject.set(x, "HealthCheckIntervalSeconds", js.undefined)
     
-    @scala.inline
-    def setHealthCheckPath(value: Path): Self = StObject.set(x, "HealthCheckPath", value.asInstanceOf[js.Any])
+    inline def setHealthCheckPath(value: Path): Self = StObject.set(x, "HealthCheckPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckPathUndefined: Self = StObject.set(x, "HealthCheckPath", js.undefined)
+    inline def setHealthCheckPathUndefined: Self = StObject.set(x, "HealthCheckPath", js.undefined)
     
-    @scala.inline
-    def setHealthCheckPort(value: HealthCheckPort): Self = StObject.set(x, "HealthCheckPort", value.asInstanceOf[js.Any])
+    inline def setHealthCheckPort(value: HealthCheckPort): Self = StObject.set(x, "HealthCheckPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckPortUndefined: Self = StObject.set(x, "HealthCheckPort", js.undefined)
+    inline def setHealthCheckPortUndefined: Self = StObject.set(x, "HealthCheckPort", js.undefined)
     
-    @scala.inline
-    def setHealthCheckProtocol(value: ProtocolEnum): Self = StObject.set(x, "HealthCheckProtocol", value.asInstanceOf[js.Any])
+    inline def setHealthCheckProtocol(value: ProtocolEnum): Self = StObject.set(x, "HealthCheckProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckProtocolUndefined: Self = StObject.set(x, "HealthCheckProtocol", js.undefined)
+    inline def setHealthCheckProtocolUndefined: Self = StObject.set(x, "HealthCheckProtocol", js.undefined)
     
-    @scala.inline
-    def setHealthCheckTimeoutSeconds(value: HealthCheckTimeoutSeconds): Self = StObject.set(x, "HealthCheckTimeoutSeconds", value.asInstanceOf[js.Any])
+    inline def setHealthCheckTimeoutSeconds(value: HealthCheckTimeoutSeconds): Self = StObject.set(x, "HealthCheckTimeoutSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckTimeoutSecondsUndefined: Self = StObject.set(x, "HealthCheckTimeoutSeconds", js.undefined)
+    inline def setHealthCheckTimeoutSecondsUndefined: Self = StObject.set(x, "HealthCheckTimeoutSeconds", js.undefined)
     
-    @scala.inline
-    def setHealthyThresholdCount(value: HealthCheckThresholdCount): Self = StObject.set(x, "HealthyThresholdCount", value.asInstanceOf[js.Any])
+    inline def setHealthyThresholdCount(value: HealthCheckThresholdCount): Self = StObject.set(x, "HealthyThresholdCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthyThresholdCountUndefined: Self = StObject.set(x, "HealthyThresholdCount", js.undefined)
+    inline def setHealthyThresholdCountUndefined: Self = StObject.set(x, "HealthyThresholdCount", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerArns(value: LoadBalancerArns): Self = StObject.set(x, "LoadBalancerArns", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerArns(value: LoadBalancerArns): Self = StObject.set(x, "LoadBalancerArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerArnsUndefined: Self = StObject.set(x, "LoadBalancerArns", js.undefined)
+    inline def setLoadBalancerArnsUndefined: Self = StObject.set(x, "LoadBalancerArns", js.undefined)
     
-    @scala.inline
-    def setLoadBalancerArnsVarargs(value: LoadBalancerArn*): Self = StObject.set(x, "LoadBalancerArns", js.Array(value :_*))
+    inline def setLoadBalancerArnsVarargs(value: LoadBalancerArn*): Self = StObject.set(x, "LoadBalancerArns", js.Array(value :_*))
     
-    @scala.inline
-    def setMatcher(value: Matcher): Self = StObject.set(x, "Matcher", value.asInstanceOf[js.Any])
+    inline def setMatcher(value: Matcher): Self = StObject.set(x, "Matcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatcherUndefined: Self = StObject.set(x, "Matcher", js.undefined)
+    inline def setMatcherUndefined: Self = StObject.set(x, "Matcher", js.undefined)
     
-    @scala.inline
-    def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Port): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: ProtocolEnum): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: ProtocolEnum): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
     
-    @scala.inline
-    def setProtocolVersion(value: ProtocolVersion): Self = StObject.set(x, "ProtocolVersion", value.asInstanceOf[js.Any])
+    inline def setProtocolVersion(value: ProtocolVersion): Self = StObject.set(x, "ProtocolVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolVersionUndefined: Self = StObject.set(x, "ProtocolVersion", js.undefined)
+    inline def setProtocolVersionUndefined: Self = StObject.set(x, "ProtocolVersion", js.undefined)
     
-    @scala.inline
-    def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: TargetGroupArn): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupArnUndefined: Self = StObject.set(x, "TargetGroupArn", js.undefined)
+    inline def setTargetGroupArnUndefined: Self = StObject.set(x, "TargetGroupArn", js.undefined)
     
-    @scala.inline
-    def setTargetGroupName(value: TargetGroupName): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
+    inline def setTargetGroupName(value: TargetGroupName): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupNameUndefined: Self = StObject.set(x, "TargetGroupName", js.undefined)
+    inline def setTargetGroupNameUndefined: Self = StObject.set(x, "TargetGroupName", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: TargetTypeEnum): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: TargetTypeEnum): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
     
-    @scala.inline
-    def setUnhealthyThresholdCount(value: HealthCheckThresholdCount): Self = StObject.set(x, "UnhealthyThresholdCount", value.asInstanceOf[js.Any])
+    inline def setUnhealthyThresholdCount(value: HealthCheckThresholdCount): Self = StObject.set(x, "UnhealthyThresholdCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhealthyThresholdCountUndefined: Self = StObject.set(x, "UnhealthyThresholdCount", js.undefined)
+    inline def setUnhealthyThresholdCountUndefined: Self = StObject.set(x, "UnhealthyThresholdCount", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

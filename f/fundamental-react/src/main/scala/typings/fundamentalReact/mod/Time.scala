@@ -18,6 +18,5 @@ object Time {
   @JSImport("fundamental-react", "Time.displayName")
   @js.native
   def displayName: typings.fundamentalReact.fundamentalReactStrings.Time = js.native
-  @scala.inline
-  def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Time): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Time): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

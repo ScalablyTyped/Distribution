@@ -18,19 +18,15 @@ trait AddHeaderAction extends StObject {
 }
 object AddHeaderAction {
   
-  @scala.inline
-  def apply(HeaderName: HeaderName, HeaderValue: HeaderValue): AddHeaderAction = {
+  inline def apply(HeaderName: HeaderName, HeaderValue: HeaderValue): AddHeaderAction = {
     val __obj = js.Dynamic.literal(HeaderName = HeaderName.asInstanceOf[js.Any], HeaderValue = HeaderValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddHeaderAction]
   }
   
-  @scala.inline
-  implicit class AddHeaderActionMutableBuilder[Self <: AddHeaderAction] (val x: Self) extends AnyVal {
+  extension [Self <: AddHeaderAction](x: Self) {
     
-    @scala.inline
-    def setHeaderName(value: HeaderName): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: HeaderName): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderValue(value: HeaderValue): Self = StObject.set(x, "HeaderValue", value.asInstanceOf[js.Any])
+    inline def setHeaderValue(value: HeaderValue): Self = StObject.set(x, "HeaderValue", value.asInstanceOf[js.Any])
   }
 }

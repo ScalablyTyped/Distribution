@@ -14,28 +14,21 @@ trait ProfileMetadata extends StObject {
 }
 object ProfileMetadata {
   
-  @scala.inline
-  def apply(): ProfileMetadata = {
+  inline def apply(): ProfileMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProfileMetadata]
   }
   
-  @scala.inline
-  implicit class ProfileMetadataMutableBuilder[Self <: ProfileMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ProfileMetadata](x: Self) {
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
-    @scala.inline
-    def setUserTypes(value: js.Array[String]): Self = StObject.set(x, "userTypes", value.asInstanceOf[js.Any])
+    inline def setUserTypes(value: js.Array[String]): Self = StObject.set(x, "userTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTypesUndefined: Self = StObject.set(x, "userTypes", js.undefined)
+    inline def setUserTypesUndefined: Self = StObject.set(x, "userTypes", js.undefined)
     
-    @scala.inline
-    def setUserTypesVarargs(value: String*): Self = StObject.set(x, "userTypes", js.Array(value :_*))
+    inline def setUserTypesVarargs(value: String*): Self = StObject.set(x, "userTypes", js.Array(value :_*))
   }
 }

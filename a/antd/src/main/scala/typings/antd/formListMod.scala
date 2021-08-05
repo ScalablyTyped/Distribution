@@ -26,23 +26,18 @@ object formListMod extends Shortcut {
   }
   object FormListFieldData {
     
-    @scala.inline
-    def apply(fieldKey: Double, key: Double, name: Double): FormListFieldData = {
+    inline def apply(fieldKey: Double, key: Double, name: Double): FormListFieldData = {
       val __obj = js.Dynamic.literal(fieldKey = fieldKey.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormListFieldData]
     }
     
-    @scala.inline
-    implicit class FormListFieldDataMutableBuilder[Self <: FormListFieldData] (val x: Self) extends AnyVal {
+    extension [Self <: FormListFieldData](x: Self) {
       
-      @scala.inline
-      def setFieldKey(value: Double): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
+      inline def setFieldKey(value: Double): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,8 +67,7 @@ object formListMod extends Shortcut {
   }
   object FormListProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: (js.Array[FormListFieldData], FormListOperation, Errors) => ReactNode,
       name: String | Double | (js.Array[String | Double])
     ): FormListProps = {
@@ -81,32 +75,23 @@ object formListMod extends Shortcut {
       __obj.asInstanceOf[FormListProps]
     }
     
-    @scala.inline
-    implicit class FormListPropsMutableBuilder[Self <: FormListProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormListProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: (js.Array[FormListFieldData], FormListOperation, Errors) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
+      inline def setChildren(value: (js.Array[FormListFieldData], FormListOperation, Errors) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setName(value: String | Double | (js.Array[String | Double])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | Double | (js.Array[String | Double])): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: (String | Double)*): Self = StObject.set(x, "name", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setRules(value: js.Array[ValidatorRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[ValidatorRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: ValidatorRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: ValidatorRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
     }
   }
   

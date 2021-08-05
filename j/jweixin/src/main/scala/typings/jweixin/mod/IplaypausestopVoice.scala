@@ -12,16 +12,13 @@ trait IplaypausestopVoice
 }
 object IplaypausestopVoice {
   
-  @scala.inline
-  def apply(localId: String): IplaypausestopVoice = {
+  inline def apply(localId: String): IplaypausestopVoice = {
     val __obj = js.Dynamic.literal(localId = localId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IplaypausestopVoice]
   }
   
-  @scala.inline
-  implicit class IplaypausestopVoiceMutableBuilder[Self <: IplaypausestopVoice] (val x: Self) extends AnyVal {
+  extension [Self <: IplaypausestopVoice](x: Self) {
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
   }
 }

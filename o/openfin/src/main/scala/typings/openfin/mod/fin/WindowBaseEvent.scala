@@ -29,26 +29,20 @@ trait WindowBaseEvent extends StObject {
 }
 object WindowBaseEvent {
   
-  @scala.inline
-  def apply(name: String, `type`: OpenFinWindowEventType, uuid: String): WindowBaseEvent = {
+  inline def apply(name: String, `type`: OpenFinWindowEventType, uuid: String): WindowBaseEvent = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], topic = "window", uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowBaseEvent]
   }
   
-  @scala.inline
-  implicit class WindowBaseEventMutableBuilder[Self <: WindowBaseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowBaseEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: window): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: window): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: OpenFinWindowEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OpenFinWindowEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

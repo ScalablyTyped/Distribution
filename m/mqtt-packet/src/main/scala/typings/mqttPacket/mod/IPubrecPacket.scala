@@ -18,22 +18,17 @@ trait IPubrecPacket
 }
 object IPubrecPacket {
   
-  @scala.inline
-  def apply(): IPubrecPacket = {
+  inline def apply(): IPubrecPacket = {
     val __obj = js.Dynamic.literal(cmd = "pubrec")
     __obj.asInstanceOf[IPubrecPacket]
   }
   
-  @scala.inline
-  implicit class IPubrecPacketMutableBuilder[Self <: IPubrecPacket] (val x: Self) extends AnyVal {
+  extension [Self <: IPubrecPacket](x: Self) {
     
-    @scala.inline
-    def setCmd(value: pubrec): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: pubrec): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

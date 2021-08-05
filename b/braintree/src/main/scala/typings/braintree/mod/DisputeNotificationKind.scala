@@ -14,12 +14,9 @@ trait DisputeNotificationKind
      with _WebhookNotificationKind
 object DisputeNotificationKind {
   
-  @scala.inline
-  def dispute_lost: typings.braintree.braintreeStrings.dispute_lost = "dispute_lost".asInstanceOf[typings.braintree.braintreeStrings.dispute_lost]
+  inline def dispute_lost: typings.braintree.braintreeStrings.dispute_lost = "dispute_lost".asInstanceOf[typings.braintree.braintreeStrings.dispute_lost]
   
-  @scala.inline
-  def dispute_opened: typings.braintree.braintreeStrings.dispute_opened = "dispute_opened".asInstanceOf[typings.braintree.braintreeStrings.dispute_opened]
+  inline def dispute_opened: typings.braintree.braintreeStrings.dispute_opened = "dispute_opened".asInstanceOf[typings.braintree.braintreeStrings.dispute_opened]
   
-  @scala.inline
-  def dispute_won: typings.braintree.braintreeStrings.dispute_won = "dispute_won".asInstanceOf[typings.braintree.braintreeStrings.dispute_won]
+  inline def dispute_won: typings.braintree.braintreeStrings.dispute_won = "dispute_won".asInstanceOf[typings.braintree.braintreeStrings.dispute_won]
 }

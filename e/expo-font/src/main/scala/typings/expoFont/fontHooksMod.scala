@@ -13,8 +13,6 @@ object fontHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useFonts(map: String): js.Tuple2[Boolean, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Error | Null]]
-  @scala.inline
-  def useFonts(map: StringDictionary[FontSource]): js.Tuple2[Boolean, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Error | Null]]
+  inline def useFonts(map: String): js.Tuple2[Boolean, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Error | Null]]
+  inline def useFonts(map: StringDictionary[FontSource]): js.Tuple2[Boolean, Error | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFonts")(map.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, Error | Null]]
 }

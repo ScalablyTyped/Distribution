@@ -19,22 +19,17 @@ trait ListenerRuleConditionQueryString extends StObject {
 }
 object ListenerRuleConditionQueryString {
   
-  @scala.inline
-  def apply(value: Input[String]): ListenerRuleConditionQueryString = {
+  inline def apply(value: Input[String]): ListenerRuleConditionQueryString = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleConditionQueryString]
   }
   
-  @scala.inline
-  implicit class ListenerRuleConditionQueryStringMutableBuilder[Self <: ListenerRuleConditionQueryString] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleConditionQueryString](x: Self) {
     
-    @scala.inline
-    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

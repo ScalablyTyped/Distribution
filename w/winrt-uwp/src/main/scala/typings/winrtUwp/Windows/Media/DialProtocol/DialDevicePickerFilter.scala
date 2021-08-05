@@ -13,16 +13,13 @@ trait DialDevicePickerFilter extends StObject {
 }
 object DialDevicePickerFilter {
   
-  @scala.inline
-  def apply(supportedAppNames: IVector[String]): DialDevicePickerFilter = {
+  inline def apply(supportedAppNames: IVector[String]): DialDevicePickerFilter = {
     val __obj = js.Dynamic.literal(supportedAppNames = supportedAppNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialDevicePickerFilter]
   }
   
-  @scala.inline
-  implicit class DialDevicePickerFilterMutableBuilder[Self <: DialDevicePickerFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DialDevicePickerFilter](x: Self) {
     
-    @scala.inline
-    def setSupportedAppNames(value: IVector[String]): Self = StObject.set(x, "supportedAppNames", value.asInstanceOf[js.Any])
+    inline def setSupportedAppNames(value: IVector[String]): Self = StObject.set(x, "supportedAppNames", value.asInstanceOf[js.Any])
   }
 }

@@ -16,20 +16,16 @@ object anon {
   }
   object Mechanism {
     
-    @scala.inline
-    def apply(mechanism: String, response: () => Buffer): Mechanism = {
+    inline def apply(mechanism: String, response: () => Buffer): Mechanism = {
       val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any], response = js.Any.fromFunction0(response))
       __obj.asInstanceOf[Mechanism]
     }
     
-    @scala.inline
-    implicit class MechanismMutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
+    extension [Self <: Mechanism](x: Self) {
       
-      @scala.inline
-      def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+      inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: () => Buffer): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
+      inline def setResponse(value: () => Buffer): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
     }
   }
   
@@ -45,26 +41,20 @@ object anon {
   }
   object Password {
     
-    @scala.inline
-    def apply(mechanism: String, password: String, response: () => Buffer, username: String): Password = {
+    inline def apply(mechanism: String, password: String, response: () => Buffer, username: String): Password = {
       val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], response = js.Any.fromFunction0(response), username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Password]
     }
     
-    @scala.inline
-    implicit class PasswordMutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
+    extension [Self <: Password](x: Self) {
       
-      @scala.inline
-      def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+      inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: () => Buffer): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
+      inline def setResponse(value: () => Buffer): Self = StObject.set(x, "response", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,21 +67,17 @@ object anon {
   }
   object _empty {
     
-    @scala.inline
-    def apply(value: Double): _empty = {
+    inline def apply(value: Double): _empty = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("!")("timestamp")
       __obj.asInstanceOf[_empty]
     }
     
-    @scala.inline
-    implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
+    extension [Self <: _empty](x: Self) {
       
-      @scala.inline
-      def setExclamationmark(value: timestamp): Self = StObject.set(x, "!", value.asInstanceOf[js.Any])
+      inline def setExclamationmark(value: timestamp): Self = StObject.set(x, "!", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

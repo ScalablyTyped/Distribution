@@ -27,8 +27,7 @@ trait XParameter
 }
 object XParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     Position: Double,
     Type: XTypeDescription,
@@ -46,10 +45,8 @@ object XParameter {
     __obj.asInstanceOf[XParameter]
   }
   
-  @scala.inline
-  implicit class XParameterMutableBuilder[Self <: XParameter] (val x: Self) extends AnyVal {
+  extension [Self <: XParameter](x: Self) {
     
-    @scala.inline
-    def setIsRestParameter(value: () => Boolean): Self = StObject.set(x, "isRestParameter", js.Any.fromFunction0(value))
+    inline def setIsRestParameter(value: () => Boolean): Self = StObject.set(x, "isRestParameter", js.Any.fromFunction0(value))
   }
 }

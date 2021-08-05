@@ -9,8 +9,7 @@ trait SensorRotationMatrix
      with ISensorRotationMatrix
 object SensorRotationMatrix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     m11: Double,
     m12: Double,
     m13: Double,

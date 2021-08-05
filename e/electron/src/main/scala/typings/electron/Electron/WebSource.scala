@@ -18,28 +18,21 @@ trait WebSource extends StObject {
 }
 object WebSource {
   
-  @scala.inline
-  def apply(code: String): WebSource = {
+  inline def apply(code: String): WebSource = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSource]
   }
   
-  @scala.inline
-  implicit class WebSourceMutableBuilder[Self <: WebSource] (val x: Self) extends AnyVal {
+  extension [Self <: WebSource](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+    inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
+    inline def setStartLineUndefined: Self = StObject.set(x, "startLine", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

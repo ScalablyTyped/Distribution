@@ -37,8 +37,7 @@ object mod {
   }
   object InfiniteLoaderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       children: typings.reactWindowInfiniteLoader.anon.OnItemsRendered => ReactNode,
       isItemLoaded: Double => Boolean,
       itemCount: Double,
@@ -48,32 +47,23 @@ object mod {
       __obj.asInstanceOf[InfiniteLoaderProps]
     }
     
-    @scala.inline
-    implicit class InfiniteLoaderPropsMutableBuilder[Self <: InfiniteLoaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: InfiniteLoaderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: typings.reactWindowInfiniteLoader.anon.OnItemsRendered => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: typings.reactWindowInfiniteLoader.anon.OnItemsRendered => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsItemLoaded(value: Double => Boolean): Self = StObject.set(x, "isItemLoaded", js.Any.fromFunction1(value))
+      inline def setIsItemLoaded(value: Double => Boolean): Self = StObject.set(x, "isItemLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+      inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadMoreItems(value: (Double, Double) => js.Promise[js.Any] | Null): Self = StObject.set(x, "loadMoreItems", js.Any.fromFunction2(value))
+      inline def setLoadMoreItems(value: (Double, Double) => js.Promise[js.Any] | Null): Self = StObject.set(x, "loadMoreItems", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMinimumBatchSize(value: Double): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])
+      inline def setMinimumBatchSize(value: Double): Self = StObject.set(x, "minimumBatchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumBatchSizeUndefined: Self = StObject.set(x, "minimumBatchSize", js.undefined)
+      inline def setMinimumBatchSizeUndefined: Self = StObject.set(x, "minimumBatchSize", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
   

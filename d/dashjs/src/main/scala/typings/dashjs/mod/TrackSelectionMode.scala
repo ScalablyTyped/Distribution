@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrackSelectionMode extends StObject
 object TrackSelectionMode {
   
-  @scala.inline
-  def highestBitrate: typings.dashjs.dashjsStrings.highestBitrate = "highestBitrate".asInstanceOf[typings.dashjs.dashjsStrings.highestBitrate]
+  inline def highestBitrate: typings.dashjs.dashjsStrings.highestBitrate = "highestBitrate".asInstanceOf[typings.dashjs.dashjsStrings.highestBitrate]
   
-  @scala.inline
-  def widestRange: typings.dashjs.dashjsStrings.widestRange = "widestRange".asInstanceOf[typings.dashjs.dashjsStrings.widestRange]
+  inline def widestRange: typings.dashjs.dashjsStrings.widestRange = "widestRange".asInstanceOf[typings.dashjs.dashjsStrings.widestRange]
 }

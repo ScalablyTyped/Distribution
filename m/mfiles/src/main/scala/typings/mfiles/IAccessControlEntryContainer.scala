@@ -26,8 +26,7 @@ trait IAccessControlEntryContainer extends StObject {
 }
 object IAccessControlEntryContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (IAccessControlEntryKey, IAccessControlEntryData) => Unit,
     At: IAccessControlEntryKey => IAccessControlEntryData,
     Clear: () => Unit,
@@ -42,34 +41,24 @@ object IAccessControlEntryContainer {
     __obj.asInstanceOf[IAccessControlEntryContainer]
   }
   
-  @scala.inline
-  implicit class IAccessControlEntryContainerMutableBuilder[Self <: IAccessControlEntryContainer] (val x: Self) extends AnyVal {
+  extension [Self <: IAccessControlEntryContainer](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (IAccessControlEntryKey, IAccessControlEntryData) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (IAccessControlEntryKey, IAccessControlEntryData) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAt(value: IAccessControlEntryKey => IAccessControlEntryData): Self = StObject.set(x, "At", js.Any.fromFunction1(value))
+    inline def setAt(value: IAccessControlEntryKey => IAccessControlEntryData): Self = StObject.set(x, "At", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone(value: () => IAccessControlEntryContainer): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAccessControlEntryContainer): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetKeys(value: () => IAccessControlEntryKeys): Self = StObject.set(x, "GetKeys", js.Any.fromFunction0(value))
+    inline def setGetKeys(value: () => IAccessControlEntryKeys): Self = StObject.set(x, "GetKeys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetKeysWithPseudoUserDefinitions(value: () => IAccessControlEntryKeys): Self = StObject.set(x, "GetKeysWithPseudoUserDefinitions", js.Any.fromFunction0(value))
+    inline def setGetKeysWithPseudoUserDefinitions(value: () => IAccessControlEntryKeys): Self = StObject.set(x, "GetKeysWithPseudoUserDefinitions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasKey(value: IAccessControlEntryKey => Boolean): Self = StObject.set(x, "HasKey", js.Any.fromFunction1(value))
+    inline def setHasKey(value: IAccessControlEntryKey => Boolean): Self = StObject.set(x, "HasKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmpty(value: Boolean): Self = StObject.set(x, "IsEmpty", value.asInstanceOf[js.Any])
+    inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "IsEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: IAccessControlEntryKey => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: IAccessControlEntryKey => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ViaChannel extends StObject
 object ViaChannel {
   
-  @scala.inline
-  def api: typings.nodeZendesk.nodeZendeskStrings.api = "api".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.api]
+  inline def api: typings.nodeZendesk.nodeZendeskStrings.api = "api".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.api]
   
-  @scala.inline
-  def mobile: typings.nodeZendesk.nodeZendeskStrings.mobile = "mobile".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.mobile]
+  inline def mobile: typings.nodeZendesk.nodeZendeskStrings.mobile = "mobile".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.mobile]
   
-  @scala.inline
-  def rule: typings.nodeZendesk.nodeZendeskStrings.rule = "rule".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.rule]
+  inline def rule: typings.nodeZendesk.nodeZendeskStrings.rule = "rule".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.rule]
   
-  @scala.inline
-  def system: typings.nodeZendesk.nodeZendeskStrings.system = "system".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.system]
+  inline def system: typings.nodeZendesk.nodeZendeskStrings.system = "system".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.system]
   
-  @scala.inline
-  def web: typings.nodeZendesk.nodeZendeskStrings.web = "web".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.web]
+  inline def web: typings.nodeZendesk.nodeZendeskStrings.web = "web".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.web]
 }

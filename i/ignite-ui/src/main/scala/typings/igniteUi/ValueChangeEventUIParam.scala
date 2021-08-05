@@ -18,25 +18,19 @@ trait ValueChangeEventUIParam extends StObject {
 }
 object ValueChangeEventUIParam {
   
-  @scala.inline
-  def apply(): ValueChangeEventUIParam = {
+  inline def apply(): ValueChangeEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueChangeEventUIParam]
   }
   
-  @scala.inline
-  implicit class ValueChangeEventUIParamMutableBuilder[Self <: ValueChangeEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ValueChangeEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

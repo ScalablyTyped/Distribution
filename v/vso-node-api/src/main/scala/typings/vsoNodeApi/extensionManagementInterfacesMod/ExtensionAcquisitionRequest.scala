@@ -38,8 +38,7 @@ trait ExtensionAcquisitionRequest extends StObject {
 }
 object ExtensionAcquisitionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assignmentType: AcquisitionAssignmentType,
     billingId: String,
     itemId: String,
@@ -51,25 +50,18 @@ object ExtensionAcquisitionRequest {
     __obj.asInstanceOf[ExtensionAcquisitionRequest]
   }
   
-  @scala.inline
-  implicit class ExtensionAcquisitionRequestMutableBuilder[Self <: ExtensionAcquisitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionAcquisitionRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentType(value: AcquisitionAssignmentType): Self = StObject.set(x, "assignmentType", value.asInstanceOf[js.Any])
+    inline def setAssignmentType(value: AcquisitionAssignmentType): Self = StObject.set(x, "assignmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingId(value: String): Self = StObject.set(x, "billingId", value.asInstanceOf[js.Any])
+    inline def setBillingId(value: String): Self = StObject.set(x, "billingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationType(value: AcquisitionOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: AcquisitionOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
   }
 }

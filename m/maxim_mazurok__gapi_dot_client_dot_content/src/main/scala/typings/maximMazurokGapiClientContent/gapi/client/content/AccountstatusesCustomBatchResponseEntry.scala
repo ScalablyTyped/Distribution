@@ -17,31 +17,23 @@ trait AccountstatusesCustomBatchResponseEntry extends StObject {
 }
 object AccountstatusesCustomBatchResponseEntry {
   
-  @scala.inline
-  def apply(): AccountstatusesCustomBatchResponseEntry = {
+  inline def apply(): AccountstatusesCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountstatusesCustomBatchResponseEntry]
   }
   
-  @scala.inline
-  implicit class AccountstatusesCustomBatchResponseEntryMutableBuilder[Self <: AccountstatusesCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  extension [Self <: AccountstatusesCustomBatchResponseEntry](x: Self) {
     
-    @scala.inline
-    def setAccountStatus(value: AccountStatus): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
+    inline def setAccountStatus(value: AccountStatus): Self = StObject.set(x, "accountStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountStatusUndefined: Self = StObject.set(x, "accountStatus", js.undefined)
+    inline def setAccountStatusUndefined: Self = StObject.set(x, "accountStatus", js.undefined)
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
   }
 }

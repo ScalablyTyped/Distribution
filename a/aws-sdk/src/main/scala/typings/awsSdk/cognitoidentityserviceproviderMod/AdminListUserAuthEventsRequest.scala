@@ -28,31 +28,23 @@ trait AdminListUserAuthEventsRequest extends StObject {
 }
 object AdminListUserAuthEventsRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminListUserAuthEventsRequest = {
+  inline def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminListUserAuthEventsRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminListUserAuthEventsRequest]
   }
   
-  @scala.inline
-  implicit class AdminListUserAuthEventsRequestMutableBuilder[Self <: AdminListUserAuthEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminListUserAuthEventsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: QueryLimitType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: QueryLimitType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

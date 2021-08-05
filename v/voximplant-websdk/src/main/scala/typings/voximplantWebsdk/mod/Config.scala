@@ -66,79 +66,55 @@ trait Config extends StObject {
 }
 object Config {
   
-  @scala.inline
-  def apply(): Config = {
+  inline def apply(): Config = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setImXSSprotection(value: Boolean): Self = StObject.set(x, "imXSSprotection", value.asInstanceOf[js.Any])
+    inline def setImXSSprotection(value: Boolean): Self = StObject.set(x, "imXSSprotection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImXSSprotectionUndefined: Self = StObject.set(x, "imXSSprotection", js.undefined)
+    inline def setImXSSprotectionUndefined: Self = StObject.set(x, "imXSSprotection", js.undefined)
     
-    @scala.inline
-    def setMicRequired(value: Boolean): Self = StObject.set(x, "micRequired", value.asInstanceOf[js.Any])
+    inline def setMicRequired(value: Boolean): Self = StObject.set(x, "micRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicRequiredUndefined: Self = StObject.set(x, "micRequired", js.undefined)
+    inline def setMicRequiredUndefined: Self = StObject.set(x, "micRequired", js.undefined)
     
-    @scala.inline
-    def setProgressTone(value: Boolean): Self = StObject.set(x, "progressTone", value.asInstanceOf[js.Any])
+    inline def setProgressTone(value: Boolean): Self = StObject.set(x, "progressTone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressToneCountry(value: String): Self = StObject.set(x, "progressToneCountry", value.asInstanceOf[js.Any])
+    inline def setProgressToneCountry(value: String): Self = StObject.set(x, "progressToneCountry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressToneCountryUndefined: Self = StObject.set(x, "progressToneCountry", js.undefined)
+    inline def setProgressToneCountryUndefined: Self = StObject.set(x, "progressToneCountry", js.undefined)
     
-    @scala.inline
-    def setProgressToneUndefined: Self = StObject.set(x, "progressTone", js.undefined)
+    inline def setProgressToneUndefined: Self = StObject.set(x, "progressTone", js.undefined)
     
-    @scala.inline
-    def setShowDebugInfo(value: Boolean): Self = StObject.set(x, "showDebugInfo", value.asInstanceOf[js.Any])
+    inline def setShowDebugInfo(value: Boolean): Self = StObject.set(x, "showDebugInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDebugInfoUndefined: Self = StObject.set(x, "showDebugInfo", js.undefined)
+    inline def setShowDebugInfoUndefined: Self = StObject.set(x, "showDebugInfo", js.undefined)
     
-    @scala.inline
-    def setShowFlashSettings(value: Boolean): Self = StObject.set(x, "showFlashSettings", value.asInstanceOf[js.Any])
+    inline def setShowFlashSettings(value: Boolean): Self = StObject.set(x, "showFlashSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFlashSettingsUndefined: Self = StObject.set(x, "showFlashSettings", js.undefined)
+    inline def setShowFlashSettingsUndefined: Self = StObject.set(x, "showFlashSettings", js.undefined)
     
-    @scala.inline
-    def setSwfContainer(value: String): Self = StObject.set(x, "swfContainer", value.asInstanceOf[js.Any])
+    inline def setSwfContainer(value: String): Self = StObject.set(x, "swfContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwfContainerUndefined: Self = StObject.set(x, "swfContainer", js.undefined)
+    inline def setSwfContainerUndefined: Self = StObject.set(x, "swfContainer", js.undefined)
     
-    @scala.inline
-    def setUseFlashOnly(value: Boolean): Self = StObject.set(x, "useFlashOnly", value.asInstanceOf[js.Any])
+    inline def setUseFlashOnly(value: Boolean): Self = StObject.set(x, "useFlashOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFlashOnlyUndefined: Self = StObject.set(x, "useFlashOnly", js.undefined)
+    inline def setUseFlashOnlyUndefined: Self = StObject.set(x, "useFlashOnly", js.undefined)
     
-    @scala.inline
-    def setUseRTCOnly(value: Boolean): Self = StObject.set(x, "useRTCOnly", value.asInstanceOf[js.Any])
+    inline def setUseRTCOnly(value: Boolean): Self = StObject.set(x, "useRTCOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseRTCOnlyUndefined: Self = StObject.set(x, "useRTCOnly", js.undefined)
+    inline def setUseRTCOnlyUndefined: Self = StObject.set(x, "useRTCOnly", js.undefined)
     
-    @scala.inline
-    def setVideoConstraints(value: VideoSettings | Boolean): Self = StObject.set(x, "videoConstraints", value.asInstanceOf[js.Any])
+    inline def setVideoConstraints(value: VideoSettings | Boolean): Self = StObject.set(x, "videoConstraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoConstraintsUndefined: Self = StObject.set(x, "videoConstraints", js.undefined)
+    inline def setVideoConstraintsUndefined: Self = StObject.set(x, "videoConstraints", js.undefined)
     
-    @scala.inline
-    def setVideoSupport(value: Boolean): Self = StObject.set(x, "videoSupport", value.asInstanceOf[js.Any])
+    inline def setVideoSupport(value: Boolean): Self = StObject.set(x, "videoSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSupportUndefined: Self = StObject.set(x, "videoSupport", js.undefined)
+    inline def setVideoSupportUndefined: Self = StObject.set(x, "videoSupport", js.undefined)
   }
 }

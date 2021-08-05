@@ -18,22 +18,17 @@ trait CreateStreamKeyRequest extends StObject {
 }
 object CreateStreamKeyRequest {
   
-  @scala.inline
-  def apply(channelArn: ChannelArn): CreateStreamKeyRequest = {
+  inline def apply(channelArn: ChannelArn): CreateStreamKeyRequest = {
     val __obj = js.Dynamic.literal(channelArn = channelArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamKeyRequest]
   }
   
-  @scala.inline
-  implicit class CreateStreamKeyRequestMutableBuilder[Self <: CreateStreamKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStreamKeyRequest](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

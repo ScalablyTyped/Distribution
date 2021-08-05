@@ -13,19 +13,15 @@ trait DeleteCertificateResponse extends StObject {
 }
 object DeleteCertificateResponse {
   
-  @scala.inline
-  def apply(): DeleteCertificateResponse = {
+  inline def apply(): DeleteCertificateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteCertificateResponse]
   }
   
-  @scala.inline
-  implicit class DeleteCertificateResponseMutableBuilder[Self <: DeleteCertificateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCertificateResponse](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
   }
 }

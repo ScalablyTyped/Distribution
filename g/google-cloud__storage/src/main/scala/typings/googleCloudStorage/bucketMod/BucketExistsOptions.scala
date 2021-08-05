@@ -13,19 +13,15 @@ trait BucketExistsOptions
 }
 object BucketExistsOptions {
   
-  @scala.inline
-  def apply(): BucketExistsOptions = {
+  inline def apply(): BucketExistsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketExistsOptions]
   }
   
-  @scala.inline
-  implicit class BucketExistsOptionsMutableBuilder[Self <: BucketExistsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BucketExistsOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

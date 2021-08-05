@@ -47,8 +47,7 @@ trait BreakpointsOwnerBreakpoints
 }
 object BreakpointsOwnerBreakpoints {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -57,37 +56,26 @@ object BreakpointsOwnerBreakpoints {
     __obj.asInstanceOf[BreakpointsOwnerBreakpoints]
   }
   
-  @scala.inline
-  implicit class BreakpointsOwnerBreakpointsMutableBuilder[Self <: BreakpointsOwnerBreakpoints] (val x: Self) extends AnyVal {
+  extension [Self <: BreakpointsOwnerBreakpoints](x: Self) {
     
-    @scala.inline
-    def setLarge(value: Double): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    inline def setLarge(value: Double): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+    inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
     
-    @scala.inline
-    def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: Double): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+    inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
     
-    @scala.inline
-    def setSmall(value: Double): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: Double): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+    inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     
-    @scala.inline
-    def setXlarge(value: Double): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
+    inline def setXlarge(value: Double): Self = StObject.set(x, "xlarge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
+    inline def setXlargeUndefined: Self = StObject.set(x, "xlarge", js.undefined)
     
-    @scala.inline
-    def setXsmall(value: Double): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
+    inline def setXsmall(value: Double): Self = StObject.set(x, "xsmall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
+    inline def setXsmallUndefined: Self = StObject.set(x, "xsmall", js.undefined)
   }
 }

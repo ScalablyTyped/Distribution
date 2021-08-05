@@ -20,8 +20,7 @@ trait AddressTypes extends StObject {
 }
 object AddressTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addressTypes: String,
     destAddress: String,
     filterMode: excl | incl,
@@ -32,22 +31,16 @@ object AddressTypes {
     __obj.asInstanceOf[AddressTypes]
   }
   
-  @scala.inline
-  implicit class AddressTypesMutableBuilder[Self <: AddressTypes] (val x: Self) extends AnyVal {
+  extension [Self <: AddressTypes](x: Self) {
     
-    @scala.inline
-    def setAddressTypes(value: String): Self = StObject.set(x, "addressTypes", value.asInstanceOf[js.Any])
+    inline def setAddressTypes(value: String): Self = StObject.set(x, "addressTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestAddress(value: String): Self = StObject.set(x, "destAddress", value.asInstanceOf[js.Any])
+    inline def setDestAddress(value: String): Self = StObject.set(x, "destAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterMode(value: excl | incl): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
+    inline def setFilterMode(value: excl | incl): Self = StObject.set(x, "filterMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
+    inline def setNetType(value: String): Self = StObject.set(x, "netType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcList(value: String): Self = StObject.set(x, "srcList", value.asInstanceOf[js.Any])
+    inline def setSrcList(value: String): Self = StObject.set(x, "srcList", value.asInstanceOf[js.Any])
   }
 }

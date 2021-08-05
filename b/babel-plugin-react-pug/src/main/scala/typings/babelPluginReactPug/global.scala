@@ -9,6 +9,5 @@ object global {
   @JSGlobal("pug")
   @js.native
   def pug: js.Any = js.native
-  @scala.inline
-  def pug_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("pug")(x.asInstanceOf[js.Any])
+  inline def pug_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("pug")(x.asInstanceOf[js.Any])
 }

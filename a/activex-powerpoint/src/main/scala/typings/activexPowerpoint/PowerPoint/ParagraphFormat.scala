@@ -27,7 +27,7 @@ trait ParagraphFormat extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.ParagraphFormat_typekey")
+  /* private */ @JSName("PowerPoint.ParagraphFormat_typekey")
   var PowerPointDotParagraphFormat_typekey: ParagraphFormat
   
   var SpaceAfter: Double
@@ -42,8 +42,7 @@ trait ParagraphFormat extends StObject {
 }
 object ParagraphFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alignment: PpParagraphAlignment,
     Application: Application,
     BaseLineAlignment: PpBaselineAlignment,
@@ -66,55 +65,38 @@ object ParagraphFormat {
     __obj.asInstanceOf[ParagraphFormat]
   }
   
-  @scala.inline
-  implicit class ParagraphFormatMutableBuilder[Self <: ParagraphFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphFormat](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: PpParagraphAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: PpParagraphAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseLineAlignment(value: PpBaselineAlignment): Self = StObject.set(x, "BaseLineAlignment", value.asInstanceOf[js.Any])
+    inline def setBaseLineAlignment(value: PpBaselineAlignment): Self = StObject.set(x, "BaseLineAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBullet(value: BulletFormat): Self = StObject.set(x, "Bullet", value.asInstanceOf[js.Any])
+    inline def setBullet(value: BulletFormat): Self = StObject.set(x, "Bullet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFarEastLineBreakControl(value: MsoTriState): Self = StObject.set(x, "FarEastLineBreakControl", value.asInstanceOf[js.Any])
+    inline def setFarEastLineBreakControl(value: MsoTriState): Self = StObject.set(x, "FarEastLineBreakControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHangingPunctuation(value: MsoTriState): Self = StObject.set(x, "HangingPunctuation", value.asInstanceOf[js.Any])
+    inline def setHangingPunctuation(value: MsoTriState): Self = StObject.set(x, "HangingPunctuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineRuleAfter(value: MsoTriState): Self = StObject.set(x, "LineRuleAfter", value.asInstanceOf[js.Any])
+    inline def setLineRuleAfter(value: MsoTriState): Self = StObject.set(x, "LineRuleAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineRuleBefore(value: MsoTriState): Self = StObject.set(x, "LineRuleBefore", value.asInstanceOf[js.Any])
+    inline def setLineRuleBefore(value: MsoTriState): Self = StObject.set(x, "LineRuleBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineRuleWithin(value: MsoTriState): Self = StObject.set(x, "LineRuleWithin", value.asInstanceOf[js.Any])
+    inline def setLineRuleWithin(value: MsoTriState): Self = StObject.set(x, "LineRuleWithin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotParagraphFormat_typekey(value: ParagraphFormat): Self = StObject.set(x, "PowerPoint.ParagraphFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotParagraphFormat_typekey(value: ParagraphFormat): Self = StObject.set(x, "PowerPoint.ParagraphFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceAfter(value: Double): Self = StObject.set(x, "SpaceAfter", value.asInstanceOf[js.Any])
+    inline def setSpaceAfter(value: Double): Self = StObject.set(x, "SpaceAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceBefore(value: Double): Self = StObject.set(x, "SpaceBefore", value.asInstanceOf[js.Any])
+    inline def setSpaceBefore(value: Double): Self = StObject.set(x, "SpaceBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceWithin(value: Double): Self = StObject.set(x, "SpaceWithin", value.asInstanceOf[js.Any])
+    inline def setSpaceWithin(value: Double): Self = StObject.set(x, "SpaceWithin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDirection(value: PpDirection): Self = StObject.set(x, "TextDirection", value.asInstanceOf[js.Any])
+    inline def setTextDirection(value: PpDirection): Self = StObject.set(x, "TextDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordWrap(value: MsoTriState): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: MsoTriState): Self = StObject.set(x, "WordWrap", value.asInstanceOf[js.Any])
   }
 }

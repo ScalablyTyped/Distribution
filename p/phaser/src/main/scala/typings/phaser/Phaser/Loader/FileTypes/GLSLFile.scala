@@ -45,8 +45,7 @@ trait GLSLFile
 }
 object GLSLFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,
@@ -85,16 +84,12 @@ object GLSLFile {
     __obj.asInstanceOf[GLSLFile]
   }
   
-  @scala.inline
-  implicit class GLSLFileMutableBuilder[Self <: GLSLFile] (val x: Self) extends AnyVal {
+  extension [Self <: GLSLFile](x: Self) {
     
-    @scala.inline
-    def setGetShaderName(value: js.Array[String] => String): Self = StObject.set(x, "getShaderName", js.Any.fromFunction1(value))
+    inline def setGetShaderName(value: js.Array[String] => String): Self = StObject.set(x, "getShaderName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetShaderType(value: js.Array[String] => String): Self = StObject.set(x, "getShaderType", js.Any.fromFunction1(value))
+    inline def setGetShaderType(value: js.Array[String] => String): Self = StObject.set(x, "getShaderType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetShaderUniforms(value: js.Array[String] => js.Any): Self = StObject.set(x, "getShaderUniforms", js.Any.fromFunction1(value))
+    inline def setGetShaderUniforms(value: js.Array[String] => js.Any): Self = StObject.set(x, "getShaderUniforms", js.Any.fromFunction1(value))
   }
 }

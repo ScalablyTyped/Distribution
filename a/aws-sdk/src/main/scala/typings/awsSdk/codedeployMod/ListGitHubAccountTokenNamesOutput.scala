@@ -18,28 +18,21 @@ trait ListGitHubAccountTokenNamesOutput extends StObject {
 }
 object ListGitHubAccountTokenNamesOutput {
   
-  @scala.inline
-  def apply(): ListGitHubAccountTokenNamesOutput = {
+  inline def apply(): ListGitHubAccountTokenNamesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGitHubAccountTokenNamesOutput]
   }
   
-  @scala.inline
-  implicit class ListGitHubAccountTokenNamesOutputMutableBuilder[Self <: ListGitHubAccountTokenNamesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListGitHubAccountTokenNamesOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTokenNameList(value: GitHubAccountTokenNameList): Self = StObject.set(x, "tokenNameList", value.asInstanceOf[js.Any])
+    inline def setTokenNameList(value: GitHubAccountTokenNameList): Self = StObject.set(x, "tokenNameList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenNameListUndefined: Self = StObject.set(x, "tokenNameList", js.undefined)
+    inline def setTokenNameListUndefined: Self = StObject.set(x, "tokenNameList", js.undefined)
     
-    @scala.inline
-    def setTokenNameListVarargs(value: GitHubAccountTokenName*): Self = StObject.set(x, "tokenNameList", js.Array(value :_*))
+    inline def setTokenNameListVarargs(value: GitHubAccountTokenName*): Self = StObject.set(x, "tokenNameList", js.Array(value :_*))
   }
 }

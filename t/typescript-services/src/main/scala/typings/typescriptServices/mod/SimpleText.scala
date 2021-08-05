@@ -12,9 +12,7 @@ object SimpleText {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromScriptSnapshot(scriptSnapshot: IScriptSnapshot): ISimpleText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScriptSnapshot")(scriptSnapshot.asInstanceOf[js.Any]).asInstanceOf[ISimpleText]
+  inline def fromScriptSnapshot(scriptSnapshot: IScriptSnapshot): ISimpleText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScriptSnapshot")(scriptSnapshot.asInstanceOf[js.Any]).asInstanceOf[ISimpleText]
   
-  @scala.inline
-  def fromString(value: String): ISimpleText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleText]
+  inline def fromString(value: String): ISimpleText = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[ISimpleText]
 }

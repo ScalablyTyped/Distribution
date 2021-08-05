@@ -44,8 +44,7 @@ trait b2FixtureDef extends StObject {
 }
 object b2FixtureDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     density: Double,
     filter: b2FilterData,
     friction: Double,
@@ -58,28 +57,20 @@ object b2FixtureDef {
     __obj.asInstanceOf[b2FixtureDef]
   }
   
-  @scala.inline
-  implicit class b2FixtureDefMutableBuilder[Self <: b2FixtureDef] (val x: Self) extends AnyVal {
+  extension [Self <: b2FixtureDef](x: Self) {
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: b2FilterData): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: b2FilterData): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSensor(value: Boolean): Self = StObject.set(x, "isSensor", value.asInstanceOf[js.Any])
+    inline def setIsSensor(value: Boolean): Self = StObject.set(x, "isSensor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
+    inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: b2Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: b2Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
   }
 }

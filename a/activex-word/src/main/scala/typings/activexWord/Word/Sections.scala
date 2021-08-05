@@ -28,6 +28,6 @@ trait Sections extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.Sections_typekey")
+  /* private */ @JSName("Word.Sections_typekey")
   var WordDotSections_typekey: Sections = js.native
 }

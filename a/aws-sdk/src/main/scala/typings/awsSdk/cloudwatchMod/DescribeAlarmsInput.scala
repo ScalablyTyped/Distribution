@@ -53,73 +53,51 @@ trait DescribeAlarmsInput extends StObject {
 }
 object DescribeAlarmsInput {
   
-  @scala.inline
-  def apply(): DescribeAlarmsInput = {
+  inline def apply(): DescribeAlarmsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAlarmsInput]
   }
   
-  @scala.inline
-  implicit class DescribeAlarmsInputMutableBuilder[Self <: DescribeAlarmsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAlarmsInput](x: Self) {
     
-    @scala.inline
-    def setActionPrefix(value: ActionPrefix): Self = StObject.set(x, "ActionPrefix", value.asInstanceOf[js.Any])
+    inline def setActionPrefix(value: ActionPrefix): Self = StObject.set(x, "ActionPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionPrefixUndefined: Self = StObject.set(x, "ActionPrefix", js.undefined)
+    inline def setActionPrefixUndefined: Self = StObject.set(x, "ActionPrefix", js.undefined)
     
-    @scala.inline
-    def setAlarmNamePrefix(value: AlarmNamePrefix): Self = StObject.set(x, "AlarmNamePrefix", value.asInstanceOf[js.Any])
+    inline def setAlarmNamePrefix(value: AlarmNamePrefix): Self = StObject.set(x, "AlarmNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmNamePrefixUndefined: Self = StObject.set(x, "AlarmNamePrefix", js.undefined)
+    inline def setAlarmNamePrefixUndefined: Self = StObject.set(x, "AlarmNamePrefix", js.undefined)
     
-    @scala.inline
-    def setAlarmNames(value: AlarmNames): Self = StObject.set(x, "AlarmNames", value.asInstanceOf[js.Any])
+    inline def setAlarmNames(value: AlarmNames): Self = StObject.set(x, "AlarmNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmNamesUndefined: Self = StObject.set(x, "AlarmNames", js.undefined)
+    inline def setAlarmNamesUndefined: Self = StObject.set(x, "AlarmNames", js.undefined)
     
-    @scala.inline
-    def setAlarmNamesVarargs(value: AlarmName*): Self = StObject.set(x, "AlarmNames", js.Array(value :_*))
+    inline def setAlarmNamesVarargs(value: AlarmName*): Self = StObject.set(x, "AlarmNames", js.Array(value :_*))
     
-    @scala.inline
-    def setAlarmTypes(value: AlarmTypes): Self = StObject.set(x, "AlarmTypes", value.asInstanceOf[js.Any])
+    inline def setAlarmTypes(value: AlarmTypes): Self = StObject.set(x, "AlarmTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmTypesUndefined: Self = StObject.set(x, "AlarmTypes", js.undefined)
+    inline def setAlarmTypesUndefined: Self = StObject.set(x, "AlarmTypes", js.undefined)
     
-    @scala.inline
-    def setAlarmTypesVarargs(value: AlarmType*): Self = StObject.set(x, "AlarmTypes", js.Array(value :_*))
+    inline def setAlarmTypesVarargs(value: AlarmType*): Self = StObject.set(x, "AlarmTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setChildrenOfAlarmName(value: AlarmName): Self = StObject.set(x, "ChildrenOfAlarmName", value.asInstanceOf[js.Any])
+    inline def setChildrenOfAlarmName(value: AlarmName): Self = StObject.set(x, "ChildrenOfAlarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenOfAlarmNameUndefined: Self = StObject.set(x, "ChildrenOfAlarmName", js.undefined)
+    inline def setChildrenOfAlarmNameUndefined: Self = StObject.set(x, "ChildrenOfAlarmName", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setParentsOfAlarmName(value: AlarmName): Self = StObject.set(x, "ParentsOfAlarmName", value.asInstanceOf[js.Any])
+    inline def setParentsOfAlarmName(value: AlarmName): Self = StObject.set(x, "ParentsOfAlarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentsOfAlarmNameUndefined: Self = StObject.set(x, "ParentsOfAlarmName", js.undefined)
+    inline def setParentsOfAlarmNameUndefined: Self = StObject.set(x, "ParentsOfAlarmName", js.undefined)
     
-    @scala.inline
-    def setStateValue(value: StateValue): Self = StObject.set(x, "StateValue", value.asInstanceOf[js.Any])
+    inline def setStateValue(value: StateValue): Self = StObject.set(x, "StateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateValueUndefined: Self = StObject.set(x, "StateValue", js.undefined)
+    inline def setStateValueUndefined: Self = StObject.set(x, "StateValue", js.undefined)
   }
 }

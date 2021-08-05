@@ -11,6 +11,5 @@ trait BiDijkstraFinder
      with BiAStarFinder
 object BiDijkstraFinder {
   
-  @scala.inline
-  def apply: BiDijkstraFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BiDijkstraFinder").asInstanceOf[BiDijkstraFinder]
+  inline def apply: BiDijkstraFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BiDijkstraFinder").asInstanceOf[BiDijkstraFinder]
 }

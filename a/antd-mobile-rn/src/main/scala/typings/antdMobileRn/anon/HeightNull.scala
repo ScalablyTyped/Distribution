@@ -10,16 +10,13 @@ trait HeightNull extends StObject {
 }
 object HeightNull {
   
-  @scala.inline
-  def apply(height: Null): HeightNull = {
+  inline def apply(height: Null): HeightNull = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeightNull]
   }
   
-  @scala.inline
-  implicit class HeightNullMutableBuilder[Self <: HeightNull] (val x: Self) extends AnyVal {
+  extension [Self <: HeightNull](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Null): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Null): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

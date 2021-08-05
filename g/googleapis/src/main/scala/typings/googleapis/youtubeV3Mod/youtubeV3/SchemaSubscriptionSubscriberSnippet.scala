@@ -32,37 +32,27 @@ trait SchemaSubscriptionSubscriberSnippet extends StObject {
 }
 object SchemaSubscriptionSubscriberSnippet {
   
-  @scala.inline
-  def apply(): SchemaSubscriptionSubscriberSnippet = {
+  inline def apply(): SchemaSubscriptionSubscriberSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubscriptionSubscriberSnippet]
   }
   
-  @scala.inline
-  implicit class SchemaSubscriptionSubscriberSnippetMutableBuilder[Self <: SchemaSubscriptionSubscriberSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubscriptionSubscriberSnippet](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setThumbnails(value: SchemaThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+    inline def setThumbnails(value: SchemaThumbnailDetails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
+    inline def setThumbnailsUndefined: Self = StObject.set(x, "thumbnails", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

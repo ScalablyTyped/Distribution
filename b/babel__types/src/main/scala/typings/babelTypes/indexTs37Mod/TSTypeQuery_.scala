@@ -18,20 +18,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSTypeQuery_ {
   
-  @scala.inline
-  def apply(exprName: TSEntityName | TSImportType_): TSTypeQuery_ = {
+  inline def apply(exprName: TSEntityName | TSImportType_): TSTypeQuery_ = {
     val __obj = js.Dynamic.literal(exprName = exprName.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSTypeQuery")
     __obj.asInstanceOf[TSTypeQuery_]
   }
   
-  @scala.inline
-  implicit class TSTypeQuery_MutableBuilder[Self <: TSTypeQuery_] (val x: Self) extends AnyVal {
+  extension [Self <: TSTypeQuery_](x: Self) {
     
-    @scala.inline
-    def setExprName(value: TSEntityName | TSImportType_): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
+    inline def setExprName(value: TSEntityName | TSImportType_): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TSTypeQuery): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSTypeQuery): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -19,22 +19,17 @@ trait HttpMediaTypeHeaderValue extends StObject {
 }
 object HttpMediaTypeHeaderValue {
   
-  @scala.inline
-  def apply(charSet: String, mediaType: String, parameters: IVector[HttpNameValueHeaderValue]): HttpMediaTypeHeaderValue = {
+  inline def apply(charSet: String, mediaType: String, parameters: IVector[HttpNameValueHeaderValue]): HttpMediaTypeHeaderValue = {
     val __obj = js.Dynamic.literal(charSet = charSet.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpMediaTypeHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpMediaTypeHeaderValueMutableBuilder[Self <: HttpMediaTypeHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpMediaTypeHeaderValue](x: Self) {
     
-    @scala.inline
-    def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
+    inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: IVector[HttpNameValueHeaderValue]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
   }
 }

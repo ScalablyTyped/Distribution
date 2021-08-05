@@ -20,6 +20,6 @@ trait Panes extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.Panes_typekey")
+  /* private */ @JSName("Word.Panes_typekey")
   var WordDotPanes_typekey: Panes = js.native
 }

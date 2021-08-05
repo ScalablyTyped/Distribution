@@ -45,8 +45,7 @@ object nodeFsStatsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromBuffer(buffer: Buffer): Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Stats]
+    inline def fromBuffer(buffer: Buffer): Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Stats]
   }
   
   @js.native

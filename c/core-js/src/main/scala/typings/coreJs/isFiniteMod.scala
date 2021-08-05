@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object isFiniteMod {
   
   /* was `typeof core.Number.isFinite` */
-  @scala.inline
-  def apply(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("core-js/fn/number/is-finite", JSImport.Namespace)
   @js.native

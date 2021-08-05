@@ -12,25 +12,19 @@ trait AscendingCount extends StObject {
 }
 object AscendingCount {
   
-  @scala.inline
-  def apply(): AscendingCount = {
+  inline def apply(): AscendingCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AscendingCount]
   }
   
-  @scala.inline
-  implicit class AscendingCountMutableBuilder[Self <: AscendingCount] (val x: Self) extends AnyVal {
+  extension [Self <: AscendingCount](x: Self) {
     
-    @scala.inline
-    def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
+    inline def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
   }
 }

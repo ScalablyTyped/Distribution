@@ -18,22 +18,17 @@ trait CreateIntentVersionRequest extends StObject {
 }
 object CreateIntentVersionRequest {
   
-  @scala.inline
-  def apply(name: IntentName): CreateIntentVersionRequest = {
+  inline def apply(name: IntentName): CreateIntentVersionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIntentVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateIntentVersionRequestMutableBuilder[Self <: CreateIntentVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIntentVersionRequest](x: Self) {
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: IntentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

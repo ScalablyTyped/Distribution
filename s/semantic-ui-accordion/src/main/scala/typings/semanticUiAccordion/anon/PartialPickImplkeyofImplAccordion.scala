@@ -17,37 +17,27 @@ trait PartialPickImplkeyofImplAccordion extends StObject {
 }
 object PartialPickImplkeyofImplAccordion {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplAccordion = {
+  inline def apply(): PartialPickImplkeyofImplAccordion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplAccordion]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplAccordionMutableBuilder[Self <: PartialPickImplkeyofImplAccordion] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplAccordion](x: Self) {
     
-    @scala.inline
-    def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
+    inline def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
+    inline def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

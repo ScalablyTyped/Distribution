@@ -14,22 +14,17 @@ trait PanoramaLink extends StObject {
 }
 object PanoramaLink {
   
-  @scala.inline
-  def apply(description: String, heading: String, id: String): PanoramaLink = {
+  inline def apply(description: String, heading: String, id: String): PanoramaLink = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanoramaLink]
   }
   
-  @scala.inline
-  implicit class PanoramaLinkMutableBuilder[Self <: PanoramaLink] (val x: Self) extends AnyVal {
+  extension [Self <: PanoramaLink](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: String): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

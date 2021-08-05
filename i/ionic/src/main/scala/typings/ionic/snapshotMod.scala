@@ -24,15 +24,15 @@ object snapshotMod {
        with ResourceClientPaginate[Snapshot] {
     def this(hasClientAppToken: SnapshotClientDeps) = this()
     
-    var app: IdString = js.native
+    /* protected */ var app: IdString = js.native
     
-    var client: IClient = js.native
+    /* protected */ var client: IClient = js.native
     
     def load(id: String): js.Promise[Snapshot] = js.native
     
     def paginate(args: PartialPaginateArgsResponGuard): IPaginator[Response[js.Array[Snapshot]], PaginatorState] = js.native
     
-    var token: String = js.native
+    /* protected */ var token: String = js.native
   }
   
   trait SnapshotClientDeps extends StObject {
@@ -45,23 +45,18 @@ object snapshotMod {
   }
   object SnapshotClientDeps {
     
-    @scala.inline
-    def apply(app: IdString, client: IClient, token: String): SnapshotClientDeps = {
+    inline def apply(app: IdString, client: IClient, token: String): SnapshotClientDeps = {
       val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnapshotClientDeps]
     }
     
-    @scala.inline
-    implicit class SnapshotClientDepsMutableBuilder[Self <: SnapshotClientDeps] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotClientDeps](x: Self) {
       
-      @scala.inline
-      def setApp(value: IdString): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: IdString): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

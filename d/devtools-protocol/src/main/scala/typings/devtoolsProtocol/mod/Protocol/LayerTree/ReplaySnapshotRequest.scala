@@ -29,34 +29,25 @@ trait ReplaySnapshotRequest extends StObject {
 }
 object ReplaySnapshotRequest {
   
-  @scala.inline
-  def apply(snapshotId: SnapshotId): ReplaySnapshotRequest = {
+  inline def apply(snapshotId: SnapshotId): ReplaySnapshotRequest = {
     val __obj = js.Dynamic.literal(snapshotId = snapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaySnapshotRequest]
   }
   
-  @scala.inline
-  implicit class ReplaySnapshotRequestMutableBuilder[Self <: ReplaySnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaySnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setFromStep(value: integer): Self = StObject.set(x, "fromStep", value.asInstanceOf[js.Any])
+    inline def setFromStep(value: integer): Self = StObject.set(x, "fromStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromStepUndefined: Self = StObject.set(x, "fromStep", js.undefined)
+    inline def setFromStepUndefined: Self = StObject.set(x, "fromStep", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToStep(value: integer): Self = StObject.set(x, "toStep", value.asInstanceOf[js.Any])
+    inline def setToStep(value: integer): Self = StObject.set(x, "toStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToStepUndefined: Self = StObject.set(x, "toStep", js.undefined)
+    inline def setToStepUndefined: Self = StObject.set(x, "toStep", js.undefined)
   }
 }

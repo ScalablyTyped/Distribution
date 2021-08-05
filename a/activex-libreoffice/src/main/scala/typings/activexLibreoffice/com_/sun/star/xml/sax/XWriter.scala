@@ -17,8 +17,7 @@ trait XWriter
      with XExtendedDocumentHandler
 object XWriter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OutputStream: XOutputStream,
     acquire: () => Unit,
     allowLineBreak: () => Unit,

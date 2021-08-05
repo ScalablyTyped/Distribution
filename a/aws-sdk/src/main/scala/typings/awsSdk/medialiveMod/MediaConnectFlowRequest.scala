@@ -13,19 +13,15 @@ trait MediaConnectFlowRequest extends StObject {
 }
 object MediaConnectFlowRequest {
   
-  @scala.inline
-  def apply(): MediaConnectFlowRequest = {
+  inline def apply(): MediaConnectFlowRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaConnectFlowRequest]
   }
   
-  @scala.inline
-  implicit class MediaConnectFlowRequestMutableBuilder[Self <: MediaConnectFlowRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MediaConnectFlowRequest](x: Self) {
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
   }
 }

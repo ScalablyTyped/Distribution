@@ -48,42 +48,31 @@ trait HistogramRangeSliderViewModelProperties
 }
 object HistogramRangeSliderViewModelProperties {
   
-  @scala.inline
-  def apply(): HistogramRangeSliderViewModelProperties = {
+  inline def apply(): HistogramRangeSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistogramRangeSliderViewModelProperties]
   }
   
-  @scala.inline
-  implicit class HistogramRangeSliderViewModelPropertiesMutableBuilder[Self <: HistogramRangeSliderViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramRangeSliderViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+    inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
+    inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
     
-    @scala.inline
-    def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+    inline def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
+    inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
     
-    @scala.inline
-    def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
+    inline def setBinsVarargs(value: Bin*): Self = StObject.set(x, "bins", js.Array(value :_*))
     
-    @scala.inline
-    def setRangeType(
+    inline def setRangeType(
       value: equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
     ): Self = StObject.set(x, "rangeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeTypeUndefined: Self = StObject.set(x, "rangeType", js.undefined)
+    inline def setRangeTypeUndefined: Self = StObject.set(x, "rangeType", js.undefined)
     
-    @scala.inline
-    def setStandardDeviation(value: Double): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
+    inline def setStandardDeviation(value: Double): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
+    inline def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
   }
 }

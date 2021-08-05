@@ -120,14 +120,10 @@ object tsEmitterMod {
     ): Context = js.native
   }
   
-  @scala.inline
-  def debugOutputAstAsTypeScript(ast: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugOutputAstAsTypeScript")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def debugOutputAstAsTypeScript(ast: Expression): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugOutputAstAsTypeScript")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def debugOutputAstAsTypeScript(ast: Statement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugOutputAstAsTypeScript")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def debugOutputAstAsTypeScript(ast: Type): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugOutputAstAsTypeScript")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def debugOutputAstAsTypeScript(ast: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugOutputAstAsTypeScript")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def debugOutputAstAsTypeScript(ast: Expression): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugOutputAstAsTypeScript")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def debugOutputAstAsTypeScript(ast: Statement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugOutputAstAsTypeScript")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def debugOutputAstAsTypeScript(ast: Type): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugOutputAstAsTypeScript")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type ReferenceFilter = js.Function1[/* reference */ ExternalReference, Boolean]
 }

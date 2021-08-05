@@ -13,8 +13,7 @@ trait TextDocumentsConfiguration[T] extends StObject {
 }
 object TextDocumentsConfiguration {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     create: (String, String, Double, String) => T,
     update: (T, js.Array[TextDocumentContentChangeEvent], Double) => T
   ): TextDocumentsConfiguration[T] = {
@@ -22,13 +21,10 @@ object TextDocumentsConfiguration {
     __obj.asInstanceOf[TextDocumentsConfiguration[T]]
   }
   
-  @scala.inline
-  implicit class TextDocumentsConfigurationMutableBuilder[Self <: TextDocumentsConfiguration[?], T] (val x: Self & TextDocumentsConfiguration[T]) extends AnyVal {
+  extension [Self <: TextDocumentsConfiguration[?], T](x: Self & TextDocumentsConfiguration[T]) {
     
-    @scala.inline
-    def setCreate(value: (String, String, Double, String) => T): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
+    inline def setCreate(value: (String, String, Double, String) => T): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setUpdate(value: (T, js.Array[TextDocumentContentChangeEvent], Double) => T): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (T, js.Array[TextDocumentContentChangeEvent], Double) => T): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

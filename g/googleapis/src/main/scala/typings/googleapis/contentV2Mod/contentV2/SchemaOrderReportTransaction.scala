@@ -58,73 +58,51 @@ trait SchemaOrderReportTransaction extends StObject {
 }
 object SchemaOrderReportTransaction {
   
-  @scala.inline
-  def apply(): SchemaOrderReportTransaction = {
+  inline def apply(): SchemaOrderReportTransaction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderReportTransaction]
   }
   
-  @scala.inline
-  implicit class SchemaOrderReportTransactionMutableBuilder[Self <: SchemaOrderReportTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderReportTransaction](x: Self) {
     
-    @scala.inline
-    def setDisbursementAmount(value: SchemaPrice): Self = StObject.set(x, "disbursementAmount", value.asInstanceOf[js.Any])
+    inline def setDisbursementAmount(value: SchemaPrice): Self = StObject.set(x, "disbursementAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisbursementAmountUndefined: Self = StObject.set(x, "disbursementAmount", js.undefined)
+    inline def setDisbursementAmountUndefined: Self = StObject.set(x, "disbursementAmount", js.undefined)
     
-    @scala.inline
-    def setDisbursementCreationDate(value: String): Self = StObject.set(x, "disbursementCreationDate", value.asInstanceOf[js.Any])
+    inline def setDisbursementCreationDate(value: String): Self = StObject.set(x, "disbursementCreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisbursementCreationDateUndefined: Self = StObject.set(x, "disbursementCreationDate", js.undefined)
+    inline def setDisbursementCreationDateUndefined: Self = StObject.set(x, "disbursementCreationDate", js.undefined)
     
-    @scala.inline
-    def setDisbursementDate(value: String): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
+    inline def setDisbursementDate(value: String): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisbursementDateUndefined: Self = StObject.set(x, "disbursementDate", js.undefined)
+    inline def setDisbursementDateUndefined: Self = StObject.set(x, "disbursementDate", js.undefined)
     
-    @scala.inline
-    def setDisbursementId(value: String): Self = StObject.set(x, "disbursementId", value.asInstanceOf[js.Any])
+    inline def setDisbursementId(value: String): Self = StObject.set(x, "disbursementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisbursementIdUndefined: Self = StObject.set(x, "disbursementId", js.undefined)
+    inline def setDisbursementIdUndefined: Self = StObject.set(x, "disbursementId", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
+    inline def setMerchantOrderId(value: String): Self = StObject.set(x, "merchantOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
+    inline def setMerchantOrderIdUndefined: Self = StObject.set(x, "merchantOrderId", js.undefined)
     
-    @scala.inline
-    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    @scala.inline
-    def setProductAmount(value: SchemaAmount): Self = StObject.set(x, "productAmount", value.asInstanceOf[js.Any])
+    inline def setProductAmount(value: SchemaAmount): Self = StObject.set(x, "productAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductAmountUndefined: Self = StObject.set(x, "productAmount", js.undefined)
+    inline def setProductAmountUndefined: Self = StObject.set(x, "productAmount", js.undefined)
     
-    @scala.inline
-    def setProductAmountWithRemittedTax(value: SchemaProductAmount): Self = StObject.set(x, "productAmountWithRemittedTax", value.asInstanceOf[js.Any])
+    inline def setProductAmountWithRemittedTax(value: SchemaProductAmount): Self = StObject.set(x, "productAmountWithRemittedTax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductAmountWithRemittedTaxUndefined: Self = StObject.set(x, "productAmountWithRemittedTax", js.undefined)
+    inline def setProductAmountWithRemittedTaxUndefined: Self = StObject.set(x, "productAmountWithRemittedTax", js.undefined)
     
-    @scala.inline
-    def setTransactionDate(value: String): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
+    inline def setTransactionDate(value: String): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionDateUndefined: Self = StObject.set(x, "transactionDate", js.undefined)
+    inline def setTransactionDateUndefined: Self = StObject.set(x, "transactionDate", js.undefined)
   }
 }

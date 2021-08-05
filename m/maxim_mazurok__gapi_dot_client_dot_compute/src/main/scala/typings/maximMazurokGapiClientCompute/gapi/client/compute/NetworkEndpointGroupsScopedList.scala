@@ -15,28 +15,21 @@ trait NetworkEndpointGroupsScopedList extends StObject {
 }
 object NetworkEndpointGroupsScopedList {
   
-  @scala.inline
-  def apply(): NetworkEndpointGroupsScopedList = {
+  inline def apply(): NetworkEndpointGroupsScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkEndpointGroupsScopedList]
   }
   
-  @scala.inline
-  implicit class NetworkEndpointGroupsScopedListMutableBuilder[Self <: NetworkEndpointGroupsScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkEndpointGroupsScopedList](x: Self) {
     
-    @scala.inline
-    def setNetworkEndpointGroups(value: js.Array[NetworkEndpointGroup]): Self = StObject.set(x, "networkEndpointGroups", value.asInstanceOf[js.Any])
+    inline def setNetworkEndpointGroups(value: js.Array[NetworkEndpointGroup]): Self = StObject.set(x, "networkEndpointGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkEndpointGroupsUndefined: Self = StObject.set(x, "networkEndpointGroups", js.undefined)
+    inline def setNetworkEndpointGroupsUndefined: Self = StObject.set(x, "networkEndpointGroups", js.undefined)
     
-    @scala.inline
-    def setNetworkEndpointGroupsVarargs(value: NetworkEndpointGroup*): Self = StObject.set(x, "networkEndpointGroups", js.Array(value :_*))
+    inline def setNetworkEndpointGroupsVarargs(value: NetworkEndpointGroup*): Self = StObject.set(x, "networkEndpointGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

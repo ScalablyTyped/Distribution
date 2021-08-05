@@ -30,26 +30,20 @@ trait Earliest extends StObject {
 }
 object Earliest {
   
-  @scala.inline
-  def apply(date: String, earliest: String, latest: String, `type`: range | exact): Earliest = {
+  inline def apply(date: String, earliest: String, latest: String, `type`: range | exact): Earliest = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], earliest = earliest.asInstanceOf[js.Any], latest = latest.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Earliest]
   }
   
-  @scala.inline
-  implicit class EarliestMutableBuilder[Self <: Earliest] (val x: Self) extends AnyVal {
+  extension [Self <: Earliest](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEarliest(value: String): Self = StObject.set(x, "earliest", value.asInstanceOf[js.Any])
+    inline def setEarliest(value: String): Self = StObject.set(x, "earliest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+    inline def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: range | exact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: range | exact): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

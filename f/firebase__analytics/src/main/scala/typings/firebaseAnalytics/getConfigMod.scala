@@ -30,17 +30,12 @@ object getConfigMod {
   @js.native
   val LONG_RETRY_FACTOR: /* 30 */ Double = js.native
   
-  @scala.inline
-  def fetchDynamicConfig(appFields: AppFields): js.Promise[DynamicConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfig")(appFields.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DynamicConfig]]
+  inline def fetchDynamicConfig(appFields: AppFields): js.Promise[DynamicConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfig")(appFields.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DynamicConfig]]
   
-  @scala.inline
-  def fetchDynamicConfigWithRetry(app: FirebaseApp): js.Promise[DynamicConfig | MinimalDynamicConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
-  @scala.inline
-  def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: Unit, timeoutMillis: Double): js.Promise[DynamicConfig | MinimalDynamicConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any], retryData.asInstanceOf[js.Any], timeoutMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
-  @scala.inline
-  def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: RetryData): js.Promise[DynamicConfig | MinimalDynamicConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any], retryData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
-  @scala.inline
-  def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: RetryData, timeoutMillis: Double): js.Promise[DynamicConfig | MinimalDynamicConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any], retryData.asInstanceOf[js.Any], timeoutMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
+  inline def fetchDynamicConfigWithRetry(app: FirebaseApp): js.Promise[DynamicConfig | MinimalDynamicConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
+  inline def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: Unit, timeoutMillis: Double): js.Promise[DynamicConfig | MinimalDynamicConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any], retryData.asInstanceOf[js.Any], timeoutMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
+  inline def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: RetryData): js.Promise[DynamicConfig | MinimalDynamicConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any], retryData.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
+  inline def fetchDynamicConfigWithRetry(app: FirebaseApp, retryData: RetryData, timeoutMillis: Double): js.Promise[DynamicConfig | MinimalDynamicConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDynamicConfigWithRetry")(app.asInstanceOf[js.Any], retryData.asInstanceOf[js.Any], timeoutMillis.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DynamicConfig | MinimalDynamicConfig]]
   
   trait AppFields extends StObject {
     
@@ -52,26 +47,20 @@ object getConfigMod {
   }
   object AppFields {
     
-    @scala.inline
-    def apply(apiKey: String, appId: String): AppFields = {
+    inline def apply(apiKey: String, appId: String): AppFields = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppFields]
     }
     
-    @scala.inline
-    implicit class AppFieldsMutableBuilder[Self <: AppFields] (val x: Self) extends AnyVal {
+    extension [Self <: AppFields](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeasurementId(value: String): Self = StObject.set(x, "measurementId", value.asInstanceOf[js.Any])
+      inline def setMeasurementId(value: String): Self = StObject.set(x, "measurementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeasurementIdUndefined: Self = StObject.set(x, "measurementId", js.undefined)
+      inline def setMeasurementIdUndefined: Self = StObject.set(x, "measurementId", js.undefined)
     }
   }
   
@@ -92,8 +81,7 @@ object getConfigMod {
   }
   object RetryData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deleteThrottleMetadata: String => Unit,
       getThrottleMetadata: String => ThrottleMetadata,
       intervalMillis: Double,
@@ -104,23 +92,17 @@ object getConfigMod {
       __obj.asInstanceOf[RetryData]
     }
     
-    @scala.inline
-    implicit class RetryDataMutableBuilder[Self <: RetryData] (val x: Self) extends AnyVal {
+    extension [Self <: RetryData](x: Self) {
       
-      @scala.inline
-      def setDeleteThrottleMetadata(value: String => Unit): Self = StObject.set(x, "deleteThrottleMetadata", js.Any.fromFunction1(value))
+      inline def setDeleteThrottleMetadata(value: String => Unit): Self = StObject.set(x, "deleteThrottleMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetThrottleMetadata(value: String => ThrottleMetadata): Self = StObject.set(x, "getThrottleMetadata", js.Any.fromFunction1(value))
+      inline def setGetThrottleMetadata(value: String => ThrottleMetadata): Self = StObject.set(x, "getThrottleMetadata", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntervalMillis(value: Double): Self = StObject.set(x, "intervalMillis", value.asInstanceOf[js.Any])
+      inline def setIntervalMillis(value: Double): Self = StObject.set(x, "intervalMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetThrottleMetadata(value: (String, ThrottleMetadata) => Unit): Self = StObject.set(x, "setThrottleMetadata", js.Any.fromFunction2(value))
+      inline def setSetThrottleMetadata(value: (String, ThrottleMetadata) => Unit): Self = StObject.set(x, "setThrottleMetadata", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setThrottleMetadata(value: StringDictionary[ThrottleMetadata]): Self = StObject.set(x, "throttleMetadata", value.asInstanceOf[js.Any])
+      inline def setThrottleMetadata(value: StringDictionary[ThrottleMetadata]): Self = StObject.set(x, "throttleMetadata", value.asInstanceOf[js.Any])
     }
   }
 }

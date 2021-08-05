@@ -26,28 +26,21 @@ trait SchemaNumericBucketingOption extends StObject {
 }
 object SchemaNumericBucketingOption {
   
-  @scala.inline
-  def apply(): SchemaNumericBucketingOption = {
+  inline def apply(): SchemaNumericBucketingOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNumericBucketingOption]
   }
   
-  @scala.inline
-  implicit class SchemaNumericBucketingOptionMutableBuilder[Self <: SchemaNumericBucketingOption] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNumericBucketingOption](x: Self) {
     
-    @scala.inline
-    def setBucketBounds(value: js.Array[Double]): Self = StObject.set(x, "bucketBounds", value.asInstanceOf[js.Any])
+    inline def setBucketBounds(value: js.Array[Double]): Self = StObject.set(x, "bucketBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketBoundsUndefined: Self = StObject.set(x, "bucketBounds", js.undefined)
+    inline def setBucketBoundsUndefined: Self = StObject.set(x, "bucketBounds", js.undefined)
     
-    @scala.inline
-    def setBucketBoundsVarargs(value: Double*): Self = StObject.set(x, "bucketBounds", js.Array(value :_*))
+    inline def setBucketBoundsVarargs(value: Double*): Self = StObject.set(x, "bucketBounds", js.Array(value :_*))
     
-    @scala.inline
-    def setRequiresMinMax(value: Boolean): Self = StObject.set(x, "requiresMinMax", value.asInstanceOf[js.Any])
+    inline def setRequiresMinMax(value: Boolean): Self = StObject.set(x, "requiresMinMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresMinMaxUndefined: Self = StObject.set(x, "requiresMinMax", js.undefined)
+    inline def setRequiresMinMaxUndefined: Self = StObject.set(x, "requiresMinMax", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait OnCharacteristicSubscribedCallbackResult extends StObject {
 }
 object OnCharacteristicSubscribedCallbackResult {
   
-  @scala.inline
-  def apply(characteristicId: String, serviceId: String): OnCharacteristicSubscribedCallbackResult = {
+  inline def apply(characteristicId: String, serviceId: String): OnCharacteristicSubscribedCallbackResult = {
     val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCharacteristicSubscribedCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnCharacteristicSubscribedCallbackResultMutableBuilder[Self <: OnCharacteristicSubscribedCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnCharacteristicSubscribedCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
   }
 }

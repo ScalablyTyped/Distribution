@@ -42,8 +42,7 @@ trait FeatureStateEvent
 }
 object FeatureStateEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FeatureDescriptor: String,
     FeatureURL: URL,
     IsEnabled: Boolean,
@@ -55,22 +54,16 @@ object FeatureStateEvent {
     __obj.asInstanceOf[FeatureStateEvent]
   }
   
-  @scala.inline
-  implicit class FeatureStateEventMutableBuilder[Self <: FeatureStateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureStateEvent](x: Self) {
     
-    @scala.inline
-    def setFeatureDescriptor(value: String): Self = StObject.set(x, "FeatureDescriptor", value.asInstanceOf[js.Any])
+    inline def setFeatureDescriptor(value: String): Self = StObject.set(x, "FeatureDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureURL(value: URL): Self = StObject.set(x, "FeatureURL", value.asInstanceOf[js.Any])
+    inline def setFeatureURL(value: URL): Self = StObject.set(x, "FeatureURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "IsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequery(value: Boolean): Self = StObject.set(x, "Requery", value.asInstanceOf[js.Any])
+    inline def setRequery(value: Boolean): Self = StObject.set(x, "Requery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }
 }

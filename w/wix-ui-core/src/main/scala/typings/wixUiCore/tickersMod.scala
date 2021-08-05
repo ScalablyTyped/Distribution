@@ -49,50 +49,36 @@ object tickersMod {
   }
   object TickersProps {
     
-    @scala.inline
-    def apply(): TickersProps = {
+    inline def apply(): TickersProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TickersProps]
     }
     
-    @scala.inline
-    implicit class TickersPropsMutableBuilder[Self <: TickersProps] (val x: Self) extends AnyVal {
+    extension [Self <: TickersProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnDecrement(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDecrement", js.Any.fromFunction1(value))
+      inline def setOnDecrement(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDecrement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDecrementUndefined: Self = StObject.set(x, "onDecrement", js.undefined)
+      inline def setOnDecrementUndefined: Self = StObject.set(x, "onDecrement", js.undefined)
       
-      @scala.inline
-      def setOnIncrement(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onIncrement", js.Any.fromFunction1(value))
+      inline def setOnIncrement(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onIncrement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnIncrementUndefined: Self = StObject.set(x, "onIncrement", js.undefined)
+      inline def setOnIncrementUndefined: Self = StObject.set(x, "onIncrement", js.undefined)
       
-      @scala.inline
-      def setTickerDownIcon(value: ReactNode): Self = StObject.set(x, "tickerDownIcon", value.asInstanceOf[js.Any])
+      inline def setTickerDownIcon(value: ReactNode): Self = StObject.set(x, "tickerDownIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickerDownIconUndefined: Self = StObject.set(x, "tickerDownIcon", js.undefined)
+      inline def setTickerDownIconUndefined: Self = StObject.set(x, "tickerDownIcon", js.undefined)
       
-      @scala.inline
-      def setTickerUpIcon(value: ReactNode): Self = StObject.set(x, "tickerUpIcon", value.asInstanceOf[js.Any])
+      inline def setTickerUpIcon(value: ReactNode): Self = StObject.set(x, "tickerUpIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickerUpIconUndefined: Self = StObject.set(x, "tickerUpIcon", js.undefined)
+      inline def setTickerUpIconUndefined: Self = StObject.set(x, "tickerUpIcon", js.undefined)
     }
   }
 }

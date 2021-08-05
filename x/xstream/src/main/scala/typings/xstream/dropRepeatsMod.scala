@@ -13,10 +13,8 @@ object dropRepeatsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](): js.Function1[/* ins */ Stream[T], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[T]]]
-  @scala.inline
-  def default[T](isEqual: js.Function2[/* x */ T, /* y */ T, Boolean]): js.Function1[/* ins */ Stream[T], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(isEqual.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[T]]]
+  inline def default[T](): js.Function1[/* ins */ Stream[T], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[T]]]
+  inline def default[T](isEqual: js.Function2[/* x */ T, /* y */ T, Boolean]): js.Function1[/* ins */ Stream[T], Stream[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(isEqual.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ins */ Stream[T], Stream[T]]]
   
   @JSImport("xstream/extra/dropRepeats", "DropRepeatsOperator")
   @js.native
@@ -54,6 +52,6 @@ object dropRepeatsMod {
     /* CompleteClass */
     var `type`: String = js.native
     
-    var v: js.Any = js.native
+    /* private */ var v: js.Any = js.native
   }
 }

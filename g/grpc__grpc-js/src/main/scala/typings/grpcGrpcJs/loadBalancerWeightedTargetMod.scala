@@ -22,9 +22,9 @@ object loadBalancerWeightedTargetMod {
        with LoadBalancer {
     def this(channelControlHelper: ChannelControlHelper) = this()
     
-    var WeightedChildImpl: js.Any = js.native
+    /* private */ var WeightedChildImpl: js.Any = js.native
     
-    var channelControlHelper: js.Any = js.native
+    /* private */ var channelControlHelper: js.Any = js.native
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
@@ -58,13 +58,13 @@ object loadBalancerWeightedTargetMod {
     /**
       * List of current target names.
       */
-    var targetList: js.Any = js.native
+    /* private */ var targetList: js.Any = js.native
     
     /**
       * Map of target names to target children. Includes current targets and
       * previous targets with deactivation timers that have not yet triggered.
       */
-    var targets: js.Any = js.native
+    /* private */ var targets: js.Any = js.native
     
     /**
       * Gives the load balancer a new list of addresses to start connecting to.
@@ -82,9 +82,8 @@ object loadBalancerWeightedTargetMod {
       attributes: StringDictionary[js.Any]
     ): Unit = js.native
     
-    var updateState: js.Any = js.native
+    /* private */ var updateState: js.Any = js.native
   }
   
-  @scala.inline
-  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
 }

@@ -141,97 +141,67 @@ trait PivotLayoutLoadOptions extends StObject {
 }
 object PivotLayoutLoadOptions {
   
-  @scala.inline
-  def apply(): PivotLayoutLoadOptions = {
+  inline def apply(): PivotLayoutLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotLayoutLoadOptions]
   }
   
-  @scala.inline
-  implicit class PivotLayoutLoadOptionsMutableBuilder[Self <: PivotLayoutLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PivotLayoutLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAltTextDescription(value: Boolean): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
+    inline def setAltTextDescription(value: Boolean): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltTextDescriptionUndefined: Self = StObject.set(x, "altTextDescription", js.undefined)
+    inline def setAltTextDescriptionUndefined: Self = StObject.set(x, "altTextDescription", js.undefined)
     
-    @scala.inline
-    def setAltTextTitle(value: Boolean): Self = StObject.set(x, "altTextTitle", value.asInstanceOf[js.Any])
+    inline def setAltTextTitle(value: Boolean): Self = StObject.set(x, "altTextTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltTextTitleUndefined: Self = StObject.set(x, "altTextTitle", js.undefined)
+    inline def setAltTextTitleUndefined: Self = StObject.set(x, "altTextTitle", js.undefined)
     
-    @scala.inline
-    def setAutoFormat(value: Boolean): Self = StObject.set(x, "autoFormat", value.asInstanceOf[js.Any])
+    inline def setAutoFormat(value: Boolean): Self = StObject.set(x, "autoFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFormatUndefined: Self = StObject.set(x, "autoFormat", js.undefined)
+    inline def setAutoFormatUndefined: Self = StObject.set(x, "autoFormat", js.undefined)
     
-    @scala.inline
-    def setEmptyCellText(value: Boolean): Self = StObject.set(x, "emptyCellText", value.asInstanceOf[js.Any])
+    inline def setEmptyCellText(value: Boolean): Self = StObject.set(x, "emptyCellText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyCellTextUndefined: Self = StObject.set(x, "emptyCellText", js.undefined)
+    inline def setEmptyCellTextUndefined: Self = StObject.set(x, "emptyCellText", js.undefined)
     
-    @scala.inline
-    def setEnableFieldList(value: Boolean): Self = StObject.set(x, "enableFieldList", value.asInstanceOf[js.Any])
+    inline def setEnableFieldList(value: Boolean): Self = StObject.set(x, "enableFieldList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFieldListUndefined: Self = StObject.set(x, "enableFieldList", js.undefined)
+    inline def setEnableFieldListUndefined: Self = StObject.set(x, "enableFieldList", js.undefined)
     
-    @scala.inline
-    def setFillEmptyCells(value: Boolean): Self = StObject.set(x, "fillEmptyCells", value.asInstanceOf[js.Any])
+    inline def setFillEmptyCells(value: Boolean): Self = StObject.set(x, "fillEmptyCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillEmptyCellsUndefined: Self = StObject.set(x, "fillEmptyCells", js.undefined)
+    inline def setFillEmptyCellsUndefined: Self = StObject.set(x, "fillEmptyCells", js.undefined)
     
-    @scala.inline
-    def setLayoutType(value: Boolean): Self = StObject.set(x, "layoutType", value.asInstanceOf[js.Any])
+    inline def setLayoutType(value: Boolean): Self = StObject.set(x, "layoutType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutTypeUndefined: Self = StObject.set(x, "layoutType", js.undefined)
+    inline def setLayoutTypeUndefined: Self = StObject.set(x, "layoutType", js.undefined)
     
-    @scala.inline
-    def setPivotStyle(value: PivotTableStyleLoadOptions): Self = StObject.set(x, "pivotStyle", value.asInstanceOf[js.Any])
+    inline def setPivotStyle(value: PivotTableStyleLoadOptions): Self = StObject.set(x, "pivotStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotStyleUndefined: Self = StObject.set(x, "pivotStyle", js.undefined)
+    inline def setPivotStyleUndefined: Self = StObject.set(x, "pivotStyle", js.undefined)
     
-    @scala.inline
-    def setPreserveFormatting(value: Boolean): Self = StObject.set(x, "preserveFormatting", value.asInstanceOf[js.Any])
+    inline def setPreserveFormatting(value: Boolean): Self = StObject.set(x, "preserveFormatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveFormattingUndefined: Self = StObject.set(x, "preserveFormatting", js.undefined)
+    inline def setPreserveFormattingUndefined: Self = StObject.set(x, "preserveFormatting", js.undefined)
     
-    @scala.inline
-    def setShowColumnGrandTotals(value: Boolean): Self = StObject.set(x, "showColumnGrandTotals", value.asInstanceOf[js.Any])
+    inline def setShowColumnGrandTotals(value: Boolean): Self = StObject.set(x, "showColumnGrandTotals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowColumnGrandTotalsUndefined: Self = StObject.set(x, "showColumnGrandTotals", js.undefined)
+    inline def setShowColumnGrandTotalsUndefined: Self = StObject.set(x, "showColumnGrandTotals", js.undefined)
     
-    @scala.inline
-    def setShowFieldHeaders(value: Boolean): Self = StObject.set(x, "showFieldHeaders", value.asInstanceOf[js.Any])
+    inline def setShowFieldHeaders(value: Boolean): Self = StObject.set(x, "showFieldHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFieldHeadersUndefined: Self = StObject.set(x, "showFieldHeaders", js.undefined)
+    inline def setShowFieldHeadersUndefined: Self = StObject.set(x, "showFieldHeaders", js.undefined)
     
-    @scala.inline
-    def setShowRowGrandTotals(value: Boolean): Self = StObject.set(x, "showRowGrandTotals", value.asInstanceOf[js.Any])
+    inline def setShowRowGrandTotals(value: Boolean): Self = StObject.set(x, "showRowGrandTotals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRowGrandTotalsUndefined: Self = StObject.set(x, "showRowGrandTotals", js.undefined)
+    inline def setShowRowGrandTotalsUndefined: Self = StObject.set(x, "showRowGrandTotals", js.undefined)
     
-    @scala.inline
-    def setSubtotalLocation(value: Boolean): Self = StObject.set(x, "subtotalLocation", value.asInstanceOf[js.Any])
+    inline def setSubtotalLocation(value: Boolean): Self = StObject.set(x, "subtotalLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotalLocationUndefined: Self = StObject.set(x, "subtotalLocation", js.undefined)
+    inline def setSubtotalLocationUndefined: Self = StObject.set(x, "subtotalLocation", js.undefined)
   }
 }

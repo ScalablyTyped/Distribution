@@ -17,25 +17,19 @@ trait BstrCallerId extends StObject {
 }
 object BstrCallerId {
   
-  @scala.inline
-  def apply(bstrCallerId: String, lCallId: Double, lDeviceId: Double, pFaxServer: FaxServer): BstrCallerId = {
+  inline def apply(bstrCallerId: String, lCallId: Double, lDeviceId: Double, pFaxServer: FaxServer): BstrCallerId = {
     val __obj = js.Dynamic.literal(bstrCallerId = bstrCallerId.asInstanceOf[js.Any], lCallId = lCallId.asInstanceOf[js.Any], lDeviceId = lDeviceId.asInstanceOf[js.Any], pFaxServer = pFaxServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[BstrCallerId]
   }
   
-  @scala.inline
-  implicit class BstrCallerIdMutableBuilder[Self <: BstrCallerId] (val x: Self) extends AnyVal {
+  extension [Self <: BstrCallerId](x: Self) {
     
-    @scala.inline
-    def setBstrCallerId(value: String): Self = StObject.set(x, "bstrCallerId", value.asInstanceOf[js.Any])
+    inline def setBstrCallerId(value: String): Self = StObject.set(x, "bstrCallerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLCallId(value: Double): Self = StObject.set(x, "lCallId", value.asInstanceOf[js.Any])
+    inline def setLCallId(value: Double): Self = StObject.set(x, "lCallId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLDeviceId(value: Double): Self = StObject.set(x, "lDeviceId", value.asInstanceOf[js.Any])
+    inline def setLDeviceId(value: Double): Self = StObject.set(x, "lDeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
+    inline def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
   }
 }

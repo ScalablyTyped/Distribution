@@ -12,6 +12,5 @@ object algorithmLineStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(report: Reporter, node: Element, algorithmSource: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(report.asInstanceOf[js.Any], node.asInstanceOf[js.Any], algorithmSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(report: Reporter, node: Element, algorithmSource: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(report.asInstanceOf[js.Any], node.asInstanceOf[js.Any], algorithmSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

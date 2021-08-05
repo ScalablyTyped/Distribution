@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ArchiveExtraDataRecord protected () extends StObject {
   def this(data: Buffer) = this()
   
-  var data: js.Any = js.native
+  /* private */ var data: js.Any = js.native
   
   def extraFieldData(): Buffer = js.native
   

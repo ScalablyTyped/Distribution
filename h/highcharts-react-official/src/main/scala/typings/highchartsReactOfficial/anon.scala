@@ -63,20 +63,16 @@ object anon {
   }
   object Chart {
     
-    @scala.inline
-    def apply(chart: Chart_, container: RefObject[HTMLDivElement]): Chart = {
+    inline def apply(chart: Chart_, container: RefObject[HTMLDivElement]): Chart = {
       val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[Chart]
     }
     
-    @scala.inline
-    implicit class ChartMutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
+    extension [Self <: Chart](x: Self) {
       
-      @scala.inline
-      def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+      inline def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: RefObject[HTMLDivElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: RefObject[HTMLDivElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     }
   }
   

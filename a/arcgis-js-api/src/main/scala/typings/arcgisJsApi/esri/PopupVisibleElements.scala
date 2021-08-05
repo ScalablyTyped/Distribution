@@ -26,8 +26,7 @@ trait PopupVisibleElements
 }
 object PopupVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object PopupVisibleElements {
     __obj.asInstanceOf[PopupVisibleElements]
   }
   
-  @scala.inline
-  implicit class PopupVisibleElementsMutableBuilder[Self <: PopupVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: PopupVisibleElements](x: Self) {
     
-    @scala.inline
-    def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
-    @scala.inline
-    def setFeatureNavigation(value: Boolean): Self = StObject.set(x, "featureNavigation", value.asInstanceOf[js.Any])
+    inline def setFeatureNavigation(value: Boolean): Self = StObject.set(x, "featureNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureNavigationUndefined: Self = StObject.set(x, "featureNavigation", js.undefined)
+    inline def setFeatureNavigationUndefined: Self = StObject.set(x, "featureNavigation", js.undefined)
   }
 }

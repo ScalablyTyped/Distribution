@@ -38,8 +38,7 @@ trait Settings extends StObject {
 }
 object Settings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date_format: String,
     default_category: Double,
     default_comment_status: OpenOrClosed,
@@ -60,52 +59,36 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  @scala.inline
-  implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Settings](x: Self) {
     
-    @scala.inline
-    def setDate_format(value: String): Self = StObject.set(x, "date_format", value.asInstanceOf[js.Any])
+    inline def setDate_format(value: String): Self = StObject.set(x, "date_format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_category(value: Double): Self = StObject.set(x, "default_category", value.asInstanceOf[js.Any])
+    inline def setDefault_category(value: Double): Self = StObject.set(x, "default_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_comment_status(value: OpenOrClosed): Self = StObject.set(x, "default_comment_status", value.asInstanceOf[js.Any])
+    inline def setDefault_comment_status(value: OpenOrClosed): Self = StObject.set(x, "default_comment_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_ping_status(value: OpenOrClosed): Self = StObject.set(x, "default_ping_status", value.asInstanceOf[js.Any])
+    inline def setDefault_ping_status(value: OpenOrClosed): Self = StObject.set(x, "default_ping_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_post_format(value: String): Self = StObject.set(x, "default_post_format", value.asInstanceOf[js.Any])
+    inline def setDefault_post_format(value: String): Self = StObject.set(x, "default_post_format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosts_per_page(value: Double): Self = StObject.set(x, "posts_per_page", value.asInstanceOf[js.Any])
+    inline def setPosts_per_page(value: Double): Self = StObject.set(x, "posts_per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_of_week(value: Double): Self = StObject.set(x, "start_of_week", value.asInstanceOf[js.Any])
+    inline def setStart_of_week(value: Double): Self = StObject.set(x, "start_of_week", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_format(value: String): Self = StObject.set(x, "time_format", value.asInstanceOf[js.Any])
+    inline def setTime_format(value: String): Self = StObject.set(x, "time_format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_smilies(value: Boolean): Self = StObject.set(x, "use_smilies", value.asInstanceOf[js.Any])
+    inline def setUse_smilies(value: Boolean): Self = StObject.set(x, "use_smilies", value.asInstanceOf[js.Any])
   }
 }

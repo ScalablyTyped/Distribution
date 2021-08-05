@@ -13,19 +13,15 @@ trait DocumentsMetadataConfiguration extends StObject {
 }
 object DocumentsMetadataConfiguration {
   
-  @scala.inline
-  def apply(): DocumentsMetadataConfiguration = {
+  inline def apply(): DocumentsMetadataConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentsMetadataConfiguration]
   }
   
-  @scala.inline
-  implicit class DocumentsMetadataConfigurationMutableBuilder[Self <: DocumentsMetadataConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentsMetadataConfiguration](x: Self) {
     
-    @scala.inline
-    def setS3Prefix(value: S3ObjectKey): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
+    inline def setS3Prefix(value: S3ObjectKey): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
+    inline def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
   }
 }

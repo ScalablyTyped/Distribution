@@ -19,16 +19,12 @@ object TextDirection {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def STRONG_LEFT_TO_RIGHT: `2` = 2.asInstanceOf[`2`]
+    inline def STRONG_LEFT_TO_RIGHT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def STRONG_RIGHT_TO_LEFT: `3` = 3.asInstanceOf[`3`]
+    inline def STRONG_RIGHT_TO_LEFT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def WEAK_LEFT_TO_RIGHT: `0` = 0.asInstanceOf[`0`]
+    inline def WEAK_LEFT_TO_RIGHT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def WEAK_RIGHT_TO_LEFT: `1` = 1.asInstanceOf[`1`]
+    inline def WEAK_RIGHT_TO_LEFT: `1` = 1.asInstanceOf[`1`]
   }
 }

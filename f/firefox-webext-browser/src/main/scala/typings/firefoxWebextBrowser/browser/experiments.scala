@@ -16,14 +16,11 @@ object experiments {
   trait APIChildScope extends StObject
   object APIChildScope {
     
-    @scala.inline
-    def addon_child: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.addon_child = "addon_child".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.addon_child]
+    inline def addon_child: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.addon_child = "addon_child".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.addon_child]
     
-    @scala.inline
-    def content_child: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content_child = "content_child".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content_child]
+    inline def content_child: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content_child = "content_child".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content_child]
     
-    @scala.inline
-    def devtools_child: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_child = "devtools_child".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_child]
+    inline def devtools_child: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_child = "devtools_child".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_child]
   }
   
   type APIEvent = startup
@@ -38,14 +35,11 @@ object experiments {
   trait APIParentScope extends StObject
   object APIParentScope {
     
-    @scala.inline
-    def addon_parent: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.addon_parent = "addon_parent".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.addon_parent]
+    inline def addon_parent: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.addon_parent = "addon_parent".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.addon_parent]
     
-    @scala.inline
-    def content_parent: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content_parent = "content_parent".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content_parent]
+    inline def content_parent: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content_parent = "content_parent".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.content_parent]
     
-    @scala.inline
-    def devtools_parent: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_parent = "devtools_parent".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_parent]
+    inline def devtools_parent: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_parent = "devtools_parent".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.devtools_parent]
   }
   
   type APIPath = js.Array[String]
@@ -63,29 +57,22 @@ object experiments {
   }
   object ExperimentAPI {
     
-    @scala.inline
-    def apply(schema: ExperimentURL): ExperimentAPI = {
+    inline def apply(schema: ExperimentURL): ExperimentAPI = {
       val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExperimentAPI]
     }
     
-    @scala.inline
-    implicit class ExperimentAPIMutableBuilder[Self <: ExperimentAPI] (val x: Self) extends AnyVal {
+    extension [Self <: ExperimentAPI](x: Self) {
       
-      @scala.inline
-      def setChild(value: ExperimentAPIChild): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
+      inline def setChild(value: ExperimentAPIChild): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
+      inline def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
       
-      @scala.inline
-      def setParent(value: ExperimentAPIParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ExperimentAPIParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setSchema(value: ExperimentURL): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: ExperimentURL): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,29 +86,22 @@ object experiments {
   }
   object ExperimentAPIChild {
     
-    @scala.inline
-    def apply(paths: APIPaths, scopes: js.Array[APIChildScope], script: ExperimentURL): ExperimentAPIChild = {
+    inline def apply(paths: APIPaths, scopes: js.Array[APIChildScope], script: ExperimentURL): ExperimentAPIChild = {
       val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExperimentAPIChild]
     }
     
-    @scala.inline
-    implicit class ExperimentAPIChildMutableBuilder[Self <: ExperimentAPIChild] (val x: Self) extends AnyVal {
+    extension [Self <: ExperimentAPIChild](x: Self) {
       
-      @scala.inline
-      def setPaths(value: APIPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: APIPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: APIPath*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: APIPath*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setScopes(value: js.Array[APIChildScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[APIChildScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesVarargs(value: APIChildScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: APIChildScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setScript(value: ExperimentURL): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: ExperimentURL): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     }
   }
   
@@ -137,44 +117,32 @@ object experiments {
   }
   object ExperimentAPIParent {
     
-    @scala.inline
-    def apply(script: ExperimentURL): ExperimentAPIParent = {
+    inline def apply(script: ExperimentURL): ExperimentAPIParent = {
       val __obj = js.Dynamic.literal(script = script.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExperimentAPIParent]
     }
     
-    @scala.inline
-    implicit class ExperimentAPIParentMutableBuilder[Self <: ExperimentAPIParent] (val x: Self) extends AnyVal {
+    extension [Self <: ExperimentAPIParent](x: Self) {
       
-      @scala.inline
-      def setEvents(value: APIEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: APIEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(value: APIEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: APIEvent*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setPaths(value: APIPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: APIPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: APIPath*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: APIPath*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setScopes(value: js.Array[APIParentScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[APIParentScope]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: APIParentScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: APIParentScope*): Self = StObject.set(x, "scopes", js.Array(value :_*))
       
-      @scala.inline
-      def setScript(value: ExperimentURL): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: ExperimentURL): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     }
   }
   

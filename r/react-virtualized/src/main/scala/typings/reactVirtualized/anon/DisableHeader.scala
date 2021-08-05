@@ -41,8 +41,7 @@ trait DisableHeader extends StObject {
 }
 object DisableHeader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headerRowRenderer: /* props */ TableHeaderRowProps => ReactNode,
     noRowsRenderer: () => Null,
     onRowsRendered: () => Null,
@@ -53,40 +52,28 @@ object DisableHeader {
     __obj.asInstanceOf[DisableHeader]
   }
   
-  @scala.inline
-  implicit class DisableHeaderMutableBuilder[Self <: DisableHeader] (val x: Self) extends AnyVal {
+  extension [Self <: DisableHeader](x: Self) {
     
-    @scala.inline
-    def setDisableHeader(value: `false`): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
+    inline def setDisableHeader(value: `false`): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedRowSize(value: `30`): Self = StObject.set(x, "estimatedRowSize", value.asInstanceOf[js.Any])
+    inline def setEstimatedRowSize(value: `30`): Self = StObject.set(x, "estimatedRowSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderHeight(value: `0`): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+    inline def setHeaderHeight(value: `0`): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderRowRenderer(value: /* props */ TableHeaderRowProps => ReactNode): Self = StObject.set(x, "headerRowRenderer", js.Any.fromFunction1(value))
+    inline def setHeaderRowRenderer(value: /* props */ TableHeaderRowProps => ReactNode): Self = StObject.set(x, "headerRowRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNoRowsRenderer(value: () => Null): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
+    inline def setNoRowsRenderer(value: () => Null): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnRowsRendered(value: () => Null): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction0(value))
+    inline def setOnRowsRendered(value: () => Null): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnScroll(value: () => Null): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
+    inline def setOnScroll(value: () => Null): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOverscanRowCount(value: `10`): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
+    inline def setOverscanRowCount(value: `10`): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowRenderer(value: /* props */ TableRowProps => ReactNode): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
+    inline def setRowRenderer(value: /* props */ TableRowProps => ReactNode): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollToAlignment(value: auto): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
+    inline def setScrollToAlignment(value: auto): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToIndex(value: `-1`): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
+    inline def setScrollToIndex(value: `-1`): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
   }
 }

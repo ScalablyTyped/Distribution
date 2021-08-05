@@ -20,31 +20,23 @@ trait ServiceChange extends StObject {
 }
 object ServiceChange {
   
-  @scala.inline
-  def apply(): ServiceChange = {
+  inline def apply(): ServiceChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceChange]
   }
   
-  @scala.inline
-  implicit class ServiceChangeMutableBuilder[Self <: ServiceChange] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceChange](x: Self) {
     
-    @scala.inline
-    def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDnsConfig(value: DnsConfigChange): Self = StObject.set(x, "DnsConfig", value.asInstanceOf[js.Any])
+    inline def setDnsConfig(value: DnsConfigChange): Self = StObject.set(x, "DnsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsConfigUndefined: Self = StObject.set(x, "DnsConfig", js.undefined)
+    inline def setDnsConfigUndefined: Self = StObject.set(x, "DnsConfig", js.undefined)
     
-    @scala.inline
-    def setHealthCheckConfig(value: HealthCheckConfig): Self = StObject.set(x, "HealthCheckConfig", value.asInstanceOf[js.Any])
+    inline def setHealthCheckConfig(value: HealthCheckConfig): Self = StObject.set(x, "HealthCheckConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckConfigUndefined: Self = StObject.set(x, "HealthCheckConfig", js.undefined)
+    inline def setHealthCheckConfigUndefined: Self = StObject.set(x, "HealthCheckConfig", js.undefined)
   }
 }

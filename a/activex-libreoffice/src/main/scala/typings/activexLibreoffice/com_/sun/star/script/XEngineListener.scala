@@ -31,8 +31,7 @@ trait XEngineListener
 }
 object XEngineListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     finished: FinishEngineEvent => Unit,
@@ -45,16 +44,12 @@ object XEngineListener {
     __obj.asInstanceOf[XEngineListener]
   }
   
-  @scala.inline
-  implicit class XEngineListenerMutableBuilder[Self <: XEngineListener] (val x: Self) extends AnyVal {
+  extension [Self <: XEngineListener](x: Self) {
     
-    @scala.inline
-    def setFinished(value: FinishEngineEvent => Unit): Self = StObject.set(x, "finished", js.Any.fromFunction1(value))
+    inline def setFinished(value: FinishEngineEvent => Unit): Self = StObject.set(x, "finished", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInterrupt(value: InterruptEngineEvent => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
+    inline def setInterrupt(value: InterruptEngineEvent => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRunning(value: EventObject => Unit): Self = StObject.set(x, "running", js.Any.fromFunction1(value))
+    inline def setRunning(value: EventObject => Unit): Self = StObject.set(x, "running", js.Any.fromFunction1(value))
   }
 }

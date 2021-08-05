@@ -26,8 +26,7 @@ trait StopsByInterval
 }
 object StopsByInterval {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     interval: TimeInterval,
@@ -37,16 +36,12 @@ object StopsByInterval {
     __obj.asInstanceOf[StopsByInterval]
   }
   
-  @scala.inline
-  implicit class StopsByIntervalMutableBuilder[Self <: StopsByInterval] (val x: Self) extends AnyVal {
+  extension [Self <: StopsByInterval](x: Self) {
     
-    @scala.inline
-    def setInterval(value: TimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: TimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExtent(value: TimeExtent): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: TimeExtent): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
   }
 }

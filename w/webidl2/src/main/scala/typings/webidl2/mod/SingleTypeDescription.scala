@@ -23,8 +23,7 @@ trait SingleTypeDescription
 }
 object SingleTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: String,
     nullable: Boolean,
@@ -35,13 +34,10 @@ object SingleTypeDescription {
     __obj.asInstanceOf[SingleTypeDescription]
   }
   
-  @scala.inline
-  implicit class SingleTypeDescriptionMutableBuilder[Self <: SingleTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: SingleTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGeneric(value: _empty): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: _empty): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdlType(value: String): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: String): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
   }
 }

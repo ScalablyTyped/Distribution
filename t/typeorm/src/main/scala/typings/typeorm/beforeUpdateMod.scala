@@ -11,6 +11,5 @@ object beforeUpdateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def BeforeUpdate(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BeforeUpdate")().asInstanceOf[PropertyDecorator]
+  inline def BeforeUpdate(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BeforeUpdate")().asInstanceOf[PropertyDecorator]
 }

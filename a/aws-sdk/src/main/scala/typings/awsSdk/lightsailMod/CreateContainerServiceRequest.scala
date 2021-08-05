@@ -38,43 +38,31 @@ trait CreateContainerServiceRequest extends StObject {
 }
 object CreateContainerServiceRequest {
   
-  @scala.inline
-  def apply(power: ContainerServicePowerName, scale: ContainerServiceScale, serviceName: ContainerServiceName): CreateContainerServiceRequest = {
+  inline def apply(power: ContainerServicePowerName, scale: ContainerServiceScale, serviceName: ContainerServiceName): CreateContainerServiceRequest = {
     val __obj = js.Dynamic.literal(power = power.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateContainerServiceRequest]
   }
   
-  @scala.inline
-  implicit class CreateContainerServiceRequestMutableBuilder[Self <: CreateContainerServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateContainerServiceRequest](x: Self) {
     
-    @scala.inline
-    def setDeployment(value: ContainerServiceDeploymentRequest): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: ContainerServiceDeploymentRequest): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
+    inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
     
-    @scala.inline
-    def setPower(value: ContainerServicePowerName): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+    inline def setPower(value: ContainerServicePowerName): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicDomainNames(value: ContainerServicePublicDomains): Self = StObject.set(x, "publicDomainNames", value.asInstanceOf[js.Any])
+    inline def setPublicDomainNames(value: ContainerServicePublicDomains): Self = StObject.set(x, "publicDomainNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicDomainNamesUndefined: Self = StObject.set(x, "publicDomainNames", js.undefined)
+    inline def setPublicDomainNamesUndefined: Self = StObject.set(x, "publicDomainNames", js.undefined)
     
-    @scala.inline
-    def setScale(value: ContainerServiceScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: ContainerServiceScale): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ContainerServiceName): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

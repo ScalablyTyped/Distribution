@@ -26,8 +26,7 @@ trait ReleaseDefinitionEnvironmentTemplate extends StObject {
 }
 object ReleaseDefinitionEnvironmentTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canDelete: Boolean,
     category: String,
     description: String,
@@ -42,34 +41,24 @@ object ReleaseDefinitionEnvironmentTemplate {
     __obj.asInstanceOf[ReleaseDefinitionEnvironmentTemplate]
   }
   
-  @scala.inline
-  implicit class ReleaseDefinitionEnvironmentTemplateMutableBuilder[Self <: ReleaseDefinitionEnvironmentTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseDefinitionEnvironmentTemplate](x: Self) {
     
-    @scala.inline
-    def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
+    inline def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment(value: ReleaseDefinitionEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: ReleaseDefinitionEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconTaskId(value: String): Self = StObject.set(x, "iconTaskId", value.asInstanceOf[js.Any])
+    inline def setIconTaskId(value: String): Self = StObject.set(x, "iconTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUri(value: String): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
+    inline def setIconUri(value: String): Self = StObject.set(x, "iconUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+    inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

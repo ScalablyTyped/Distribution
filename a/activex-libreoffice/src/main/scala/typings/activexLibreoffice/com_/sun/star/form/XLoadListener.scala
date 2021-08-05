@@ -54,8 +54,7 @@ trait XLoadListener
 }
 object XLoadListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     loaded: EventObject => Unit,
@@ -70,22 +69,16 @@ object XLoadListener {
     __obj.asInstanceOf[XLoadListener]
   }
   
-  @scala.inline
-  implicit class XLoadListenerMutableBuilder[Self <: XLoadListener] (val x: Self) extends AnyVal {
+  extension [Self <: XLoadListener](x: Self) {
     
-    @scala.inline
-    def setLoaded(value: EventObject => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
+    inline def setLoaded(value: EventObject => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReloaded(value: EventObject => Unit): Self = StObject.set(x, "reloaded", js.Any.fromFunction1(value))
+    inline def setReloaded(value: EventObject => Unit): Self = StObject.set(x, "reloaded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReloading(value: EventObject => Unit): Self = StObject.set(x, "reloading", js.Any.fromFunction1(value))
+    inline def setReloading(value: EventObject => Unit): Self = StObject.set(x, "reloading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnloaded(value: EventObject => Unit): Self = StObject.set(x, "unloaded", js.Any.fromFunction1(value))
+    inline def setUnloaded(value: EventObject => Unit): Self = StObject.set(x, "unloaded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnloading(value: EventObject => Unit): Self = StObject.set(x, "unloading", js.Any.fromFunction1(value))
+    inline def setUnloading(value: EventObject => Unit): Self = StObject.set(x, "unloading", js.Any.fromFunction1(value))
   }
 }

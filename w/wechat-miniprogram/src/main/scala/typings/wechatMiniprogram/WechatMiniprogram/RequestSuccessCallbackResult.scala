@@ -32,8 +32,7 @@ trait RequestSuccessCallbackResult extends StObject {
 }
 object RequestSuccessCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cookies: js.Array[String],
     data: String | IAnyObject | ArrayBuffer,
     errMsg: String,
@@ -45,28 +44,20 @@ object RequestSuccessCallbackResult {
     __obj.asInstanceOf[RequestSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class RequestSuccessCallbackResultMutableBuilder[Self <: RequestSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: js.Array[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+    inline def setCookiesVarargs(value: String*): Self = StObject.set(x, "cookies", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: String | IAnyObject | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | IAnyObject | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: IAnyObject): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: IAnyObject): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: RequestProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: RequestProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

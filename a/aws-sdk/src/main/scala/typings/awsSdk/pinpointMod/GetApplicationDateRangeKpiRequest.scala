@@ -38,43 +38,31 @@ trait GetApplicationDateRangeKpiRequest extends StObject {
 }
 object GetApplicationDateRangeKpiRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, KpiName: string): GetApplicationDateRangeKpiRequest = {
+  inline def apply(ApplicationId: string, KpiName: string): GetApplicationDateRangeKpiRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], KpiName = KpiName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApplicationDateRangeKpiRequest]
   }
   
-  @scala.inline
-  implicit class GetApplicationDateRangeKpiRequestMutableBuilder[Self <: GetApplicationDateRangeKpiRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetApplicationDateRangeKpiRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: timestampIso8601): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setKpiName(value: string): Self = StObject.set(x, "KpiName", value.asInstanceOf[js.Any])
+    inline def setKpiName(value: string): Self = StObject.set(x, "KpiName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: timestampIso8601): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

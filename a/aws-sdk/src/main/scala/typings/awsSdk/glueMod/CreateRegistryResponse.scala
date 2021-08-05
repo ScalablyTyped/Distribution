@@ -28,37 +28,27 @@ trait CreateRegistryResponse extends StObject {
 }
 object CreateRegistryResponse {
   
-  @scala.inline
-  def apply(): CreateRegistryResponse = {
+  inline def apply(): CreateRegistryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRegistryResponse]
   }
   
-  @scala.inline
-  implicit class CreateRegistryResponseMutableBuilder[Self <: CreateRegistryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRegistryResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setRegistryArn(value: GlueResourceArn): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
+    inline def setRegistryArn(value: GlueResourceArn): Self = StObject.set(x, "RegistryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryArnUndefined: Self = StObject.set(x, "RegistryArn", js.undefined)
+    inline def setRegistryArnUndefined: Self = StObject.set(x, "RegistryArn", js.undefined)
     
-    @scala.inline
-    def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
+    inline def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

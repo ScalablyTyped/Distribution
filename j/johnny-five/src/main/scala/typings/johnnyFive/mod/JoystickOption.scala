@@ -16,37 +16,27 @@ trait JoystickOption extends StObject {
 }
 object JoystickOption {
   
-  @scala.inline
-  def apply(pins: js.Array[String]): JoystickOption = {
+  inline def apply(pins: js.Array[String]): JoystickOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
     __obj.asInstanceOf[JoystickOption]
   }
   
-  @scala.inline
-  implicit class JoystickOptionMutableBuilder[Self <: JoystickOption] (val x: Self) extends AnyVal {
+  extension [Self <: JoystickOption](x: Self) {
     
-    @scala.inline
-    def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
+    inline def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
     
-    @scala.inline
-    def setInvertX(value: Boolean): Self = StObject.set(x, "invertX", value.asInstanceOf[js.Any])
+    inline def setInvertX(value: Boolean): Self = StObject.set(x, "invertX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertXUndefined: Self = StObject.set(x, "invertX", js.undefined)
+    inline def setInvertXUndefined: Self = StObject.set(x, "invertX", js.undefined)
     
-    @scala.inline
-    def setInvertY(value: Boolean): Self = StObject.set(x, "invertY", value.asInstanceOf[js.Any])
+    inline def setInvertY(value: Boolean): Self = StObject.set(x, "invertY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertYUndefined: Self = StObject.set(x, "invertY", js.undefined)
+    inline def setInvertYUndefined: Self = StObject.set(x, "invertY", js.undefined)
     
-    @scala.inline
-    def setPins(value: js.Array[String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    inline def setPins(value: js.Array[String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value :_*))
+    inline def setPinsVarargs(value: String*): Self = StObject.set(x, "pins", js.Array(value :_*))
   }
 }

@@ -48,58 +48,41 @@ trait SchemaRule extends StObject {
 }
 object SchemaRule {
   
-  @scala.inline
-  def apply(): SchemaRule = {
+  inline def apply(): SchemaRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRule]
   }
   
-  @scala.inline
-  implicit class SchemaRuleMutableBuilder[Self <: SchemaRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRule](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setCondition(value: js.Array[SchemaCondition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: js.Array[SchemaCondition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setConditionVarargs(value: SchemaCondition*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: SchemaCondition*): Self = StObject.set(x, "condition", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: String): Self = StObject.set(x, "ruleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
+    inline def setRuleIdUndefined: Self = StObject.set(x, "ruleId", js.undefined)
   }
 }

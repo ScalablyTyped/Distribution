@@ -14,19 +14,15 @@ trait StartSamplingRequest extends StObject {
 }
 object StartSamplingRequest {
   
-  @scala.inline
-  def apply(): StartSamplingRequest = {
+  inline def apply(): StartSamplingRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartSamplingRequest]
   }
   
-  @scala.inline
-  implicit class StartSamplingRequestMutableBuilder[Self <: StartSamplingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartSamplingRequest](x: Self) {
     
-    @scala.inline
-    def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
+    inline def setSamplingInterval(value: Double): Self = StObject.set(x, "samplingInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
+    inline def setSamplingIntervalUndefined: Self = StObject.set(x, "samplingInterval", js.undefined)
   }
 }

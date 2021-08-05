@@ -24,31 +24,23 @@ trait GoogleActionsV2CustomPushMessage extends StObject {
 }
 object GoogleActionsV2CustomPushMessage {
   
-  @scala.inline
-  def apply(): GoogleActionsV2CustomPushMessage = {
+  inline def apply(): GoogleActionsV2CustomPushMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2CustomPushMessage]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2CustomPushMessageMutableBuilder[Self <: GoogleActionsV2CustomPushMessage] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2CustomPushMessage](x: Self) {
     
-    @scala.inline
-    def setOrderUpdate(value: GoogleActionsV2OrdersOrderUpdate): Self = StObject.set(x, "orderUpdate", value.asInstanceOf[js.Any])
+    inline def setOrderUpdate(value: GoogleActionsV2OrdersOrderUpdate): Self = StObject.set(x, "orderUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUpdateUndefined: Self = StObject.set(x, "orderUpdate", js.undefined)
+    inline def setOrderUpdateUndefined: Self = StObject.set(x, "orderUpdate", js.undefined)
     
-    @scala.inline
-    def setTarget(value: GoogleActionsV2CustomPushMessageTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: GoogleActionsV2CustomPushMessageTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUserNotification(value: GoogleActionsV2UserNotification): Self = StObject.set(x, "userNotification", value.asInstanceOf[js.Any])
+    inline def setUserNotification(value: GoogleActionsV2UserNotification): Self = StObject.set(x, "userNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNotificationUndefined: Self = StObject.set(x, "userNotification", js.undefined)
+    inline def setUserNotificationUndefined: Self = StObject.set(x, "userNotification", js.undefined)
   }
 }

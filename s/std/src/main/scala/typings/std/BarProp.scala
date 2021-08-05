@@ -10,16 +10,13 @@ trait BarProp extends StObject {
 }
 object BarProp {
   
-  @scala.inline
-  def apply(visible: scala.Boolean): BarProp = {
+  inline def apply(visible: scala.Boolean): BarProp = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarProp]
   }
   
-  @scala.inline
-  implicit class BarPropMutableBuilder[Self <: BarProp] (val x: Self) extends AnyVal {
+  extension [Self <: BarProp](x: Self) {
     
-    @scala.inline
-    def setVisible(value: scala.Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: scala.Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

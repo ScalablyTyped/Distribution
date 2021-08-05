@@ -24,19 +24,16 @@ object interfaceNameRuleMod {
     @JSImport("tslint/lib/rules/interfaceNameRule", "Rule.FAILURE_STRING")
     @js.native
     def FAILURE_STRING: String = js.native
-    @scala.inline
-    def FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/interfaceNameRule", "Rule.FAILURE_STRING_NO_PREFIX")
     @js.native
     def FAILURE_STRING_NO_PREFIX: String = js.native
-    @scala.inline
-    def FAILURE_STRING_NO_PREFIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_NO_PREFIX")(x.asInstanceOf[js.Any])
+    inline def FAILURE_STRING_NO_PREFIX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING_NO_PREFIX")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/interfaceNameRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

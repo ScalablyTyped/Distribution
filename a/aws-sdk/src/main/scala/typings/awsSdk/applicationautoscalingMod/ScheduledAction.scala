@@ -58,8 +58,7 @@ trait ScheduledAction extends StObject {
 }
 object ScheduledAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationTime: TimestampType,
     ResourceId: ResourceIdMaxLen1600,
     Schedule: ResourceIdMaxLen1600,
@@ -71,49 +70,34 @@ object ScheduledAction {
     __obj.asInstanceOf[ScheduledAction]
   }
   
-  @scala.inline
-  implicit class ScheduledActionMutableBuilder[Self <: ScheduledAction] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledAction](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: TimestampType): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: TimestampType): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: TimestampType): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
+    inline def setScalableDimension(value: ScalableDimension): Self = StObject.set(x, "ScalableDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableDimensionUndefined: Self = StObject.set(x, "ScalableDimension", js.undefined)
+    inline def setScalableDimensionUndefined: Self = StObject.set(x, "ScalableDimension", js.undefined)
     
-    @scala.inline
-    def setScalableTargetAction(value: ScalableTargetAction): Self = StObject.set(x, "ScalableTargetAction", value.asInstanceOf[js.Any])
+    inline def setScalableTargetAction(value: ScalableTargetAction): Self = StObject.set(x, "ScalableTargetAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalableTargetActionUndefined: Self = StObject.set(x, "ScalableTargetAction", js.undefined)
+    inline def setScalableTargetActionUndefined: Self = StObject.set(x, "ScalableTargetAction", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: ResourceIdMaxLen1600): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: ResourceIdMaxLen1600): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledActionARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ScheduledActionARN", value.asInstanceOf[js.Any])
+    inline def setScheduledActionARN(value: ResourceIdMaxLen1600): Self = StObject.set(x, "ScheduledActionARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledActionName(value: ScheduledActionName): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
+    inline def setScheduledActionName(value: ScheduledActionName): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
+    inline def setServiceNamespace(value: ServiceNamespace): Self = StObject.set(x, "ServiceNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TimestampType): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

@@ -42,14 +42,12 @@ object When {
   trait Descriptor[T] extends StObject
   object Descriptor {
     
-    @scala.inline
-    def FulfilledDescriptor[T](value: T): typings.when.When.FulfilledDescriptor[T] = {
+    inline def FulfilledDescriptor[T](value: T): typings.when.When.FulfilledDescriptor[T] = {
       val __obj = js.Dynamic.literal(state = "fulfilled", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.when.When.FulfilledDescriptor[T]]
     }
     
-    @scala.inline
-    def RejectedDescriptor(reason: js.Any): typings.when.When.RejectedDescriptor = {
+    inline def RejectedDescriptor(reason: js.Any): typings.when.When.RejectedDescriptor = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = "rejected")
       __obj.asInstanceOf[typings.when.When.RejectedDescriptor]
     }
@@ -66,20 +64,16 @@ object When {
   }
   object FulfilledDescriptor {
     
-    @scala.inline
-    def apply[T](value: T): FulfilledDescriptor[T] = {
+    inline def apply[T](value: T): FulfilledDescriptor[T] = {
       val __obj = js.Dynamic.literal(state = "fulfilled", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FulfilledDescriptor[T]]
     }
     
-    @scala.inline
-    implicit class FulfilledDescriptorMutableBuilder[Self <: FulfilledDescriptor[?], T] (val x: Self & FulfilledDescriptor[T]) extends AnyVal {
+    extension [Self <: FulfilledDescriptor[?], T](x: Self & FulfilledDescriptor[T]) {
       
-      @scala.inline
-      def setState(value: fulfilled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: fulfilled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,17 +85,14 @@ object When {
   }
   object PendingDescriptor {
     
-    @scala.inline
-    def apply(): PendingDescriptor = {
+    inline def apply(): PendingDescriptor = {
       val __obj = js.Dynamic.literal(state = "pending")
       __obj.asInstanceOf[PendingDescriptor]
     }
     
-    @scala.inline
-    implicit class PendingDescriptorMutableBuilder[Self <: PendingDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: PendingDescriptor](x: Self) {
       
-      @scala.inline
-      def setState(value: pending): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: pending): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,20 +265,16 @@ object When {
   }
   object RejectedDescriptor {
     
-    @scala.inline
-    def apply(reason: js.Any): RejectedDescriptor = {
+    inline def apply(reason: js.Any): RejectedDescriptor = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = "rejected")
       __obj.asInstanceOf[RejectedDescriptor]
     }
     
-    @scala.inline
-    implicit class RejectedDescriptorMutableBuilder[Self <: RejectedDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: RejectedDescriptor](x: Self) {
       
-      @scala.inline
-      def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: js.Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: rejected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: rejected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -306,20 +293,17 @@ object When {
   trait Snapshot[T] extends StObject
   object Snapshot {
     
-    @scala.inline
-    def FulfilledDescriptor[T](value: T): typings.when.When.FulfilledDescriptor[T] = {
+    inline def FulfilledDescriptor[T](value: T): typings.when.When.FulfilledDescriptor[T] = {
       val __obj = js.Dynamic.literal(state = "fulfilled", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.when.When.FulfilledDescriptor[T]]
     }
     
-    @scala.inline
-    def PendingDescriptor(): typings.when.When.PendingDescriptor = {
+    inline def PendingDescriptor(): typings.when.When.PendingDescriptor = {
       val __obj = js.Dynamic.literal(state = "pending")
       __obj.asInstanceOf[typings.when.When.PendingDescriptor]
     }
     
-    @scala.inline
-    def RejectedDescriptor(reason: js.Any): typings.when.When.RejectedDescriptor = {
+    inline def RejectedDescriptor(reason: js.Any): typings.when.When.RejectedDescriptor = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], state = "rejected")
       __obj.asInstanceOf[typings.when.When.RejectedDescriptor]
     }

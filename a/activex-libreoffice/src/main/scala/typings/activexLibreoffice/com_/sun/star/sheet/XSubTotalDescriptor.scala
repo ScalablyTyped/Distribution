@@ -27,8 +27,7 @@ trait XSubTotalDescriptor
 }
 object XSubTotalDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addNew: (SeqEquiv[SubTotalColumn], Double) => Unit,
     clear: () => Unit,
@@ -39,13 +38,10 @@ object XSubTotalDescriptor {
     __obj.asInstanceOf[XSubTotalDescriptor]
   }
   
-  @scala.inline
-  implicit class XSubTotalDescriptorMutableBuilder[Self <: XSubTotalDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: XSubTotalDescriptor](x: Self) {
     
-    @scala.inline
-    def setAddNew(value: (SeqEquiv[SubTotalColumn], Double) => Unit): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
+    inline def setAddNew(value: (SeqEquiv[SubTotalColumn], Double) => Unit): Self = StObject.set(x, "addNew", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
   }
 }

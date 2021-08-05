@@ -12,16 +12,13 @@ trait LoggingChannelOptions extends StObject {
 }
 object LoggingChannelOptions {
   
-  @scala.inline
-  def apply(group: String): LoggingChannelOptions = {
+  inline def apply(group: String): LoggingChannelOptions = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingChannelOptions]
   }
   
-  @scala.inline
-  implicit class LoggingChannelOptionsMutableBuilder[Self <: LoggingChannelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingChannelOptions](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }
 }

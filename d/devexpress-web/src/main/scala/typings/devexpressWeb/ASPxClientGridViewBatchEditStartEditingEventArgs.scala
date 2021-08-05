@@ -33,8 +33,7 @@ trait ASPxClientGridViewBatchEditStartEditingEventArgs
 }
 object ASPxClientGridViewBatchEditStartEditingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     focusedColumn: ASPxClientGridViewColumn,
     key: js.Any,
@@ -45,19 +44,14 @@ object ASPxClientGridViewBatchEditStartEditingEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewBatchEditStartEditingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridViewBatchEditStartEditingEventArgsMutableBuilder[Self <: ASPxClientGridViewBatchEditStartEditingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridViewBatchEditStartEditingEventArgs](x: Self) {
     
-    @scala.inline
-    def setFocusedColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
+    inline def setFocusedColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowValues(value: js.Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
+    inline def setRowValues(value: js.Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait JestGlobals
 }
 object JestGlobals {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     afterAll: (/* fn */ typings.jestTypes.globalMod.HookFn, /* timeout */ js.UndefOr[Double]) => Unit,
     afterEach: (/* fn */ typings.jestTypes.globalMod.HookFn, /* timeout */ js.UndefOr[Double]) => Unit,
     beforeAll: (/* fn */ typings.jestTypes.globalMod.HookFn, /* timeout */ js.UndefOr[Double]) => Unit,
@@ -38,10 +37,8 @@ object JestGlobals {
     __obj.asInstanceOf[JestGlobals]
   }
   
-  @scala.inline
-  implicit class JestGlobalsMutableBuilder[Self <: JestGlobals] (val x: Self) extends AnyVal {
+  extension [Self <: JestGlobals](x: Self) {
     
-    @scala.inline
-    def setExpect(value: js.Any): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
+    inline def setExpect(value: js.Any): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
   }
 }

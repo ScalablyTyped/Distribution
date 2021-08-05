@@ -10,19 +10,15 @@ trait Slottable extends StObject {
 }
 object Slottable {
   
-  @scala.inline
-  def apply(): Slottable = {
+  inline def apply(): Slottable = {
     val __obj = js.Dynamic.literal(assignedSlot = null)
     __obj.asInstanceOf[Slottable]
   }
   
-  @scala.inline
-  implicit class SlottableMutableBuilder[Self <: Slottable] (val x: Self) extends AnyVal {
+  extension [Self <: Slottable](x: Self) {
     
-    @scala.inline
-    def setAssignedSlot(value: HTMLSlotElement): Self = StObject.set(x, "assignedSlot", value.asInstanceOf[js.Any])
+    inline def setAssignedSlot(value: HTMLSlotElement): Self = StObject.set(x, "assignedSlot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedSlotNull: Self = StObject.set(x, "assignedSlot", null)
+    inline def setAssignedSlotNull: Self = StObject.set(x, "assignedSlot", null)
   }
 }

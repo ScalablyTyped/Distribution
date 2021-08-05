@@ -18,28 +18,21 @@ trait ListDeploymentJobsResponse extends StObject {
 }
 object ListDeploymentJobsResponse {
   
-  @scala.inline
-  def apply(): ListDeploymentJobsResponse = {
+  inline def apply(): ListDeploymentJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDeploymentJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListDeploymentJobsResponseMutableBuilder[Self <: ListDeploymentJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeploymentJobsResponse](x: Self) {
     
-    @scala.inline
-    def setDeploymentJobs(value: DeploymentJobs): Self = StObject.set(x, "deploymentJobs", value.asInstanceOf[js.Any])
+    inline def setDeploymentJobs(value: DeploymentJobs): Self = StObject.set(x, "deploymentJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentJobsUndefined: Self = StObject.set(x, "deploymentJobs", js.undefined)
+    inline def setDeploymentJobsUndefined: Self = StObject.set(x, "deploymentJobs", js.undefined)
     
-    @scala.inline
-    def setDeploymentJobsVarargs(value: DeploymentJob*): Self = StObject.set(x, "deploymentJobs", js.Array(value :_*))
+    inline def setDeploymentJobsVarargs(value: DeploymentJob*): Self = StObject.set(x, "deploymentJobs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

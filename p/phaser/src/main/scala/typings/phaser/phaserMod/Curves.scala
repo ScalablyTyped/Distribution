@@ -40,8 +40,7 @@ object Curves {
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @scala.inline
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.CubicBezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.CubicBezier]
+    inline def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.CubicBezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.CubicBezier]
   }
   
   /**
@@ -104,8 +103,7 @@ object Curves {
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @scala.inline
-    def fromJSON(data: JSONEllipseCurve): typings.phaser.Phaser.Curves.Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.Ellipse]
+    inline def fromJSON(data: JSONEllipseCurve): typings.phaser.Phaser.Curves.Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.Ellipse]
   }
   
   /**
@@ -137,8 +135,7 @@ object Curves {
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @scala.inline
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.Line]
+    inline def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.Line]
   }
   
   /**
@@ -209,8 +206,7 @@ object Curves {
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @scala.inline
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.QuadraticBezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.QuadraticBezier]
+    inline def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.QuadraticBezier = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.QuadraticBezier]
   }
   
   /**
@@ -238,7 +234,6 @@ object Curves {
       * @param data The JSON object containing this curve data.
       */
     /* static member */
-    @scala.inline
-    def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Spline = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.Spline]
+    inline def fromJSON(data: JSONCurve): typings.phaser.Phaser.Curves.Spline = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.Phaser.Curves.Spline]
   }
 }

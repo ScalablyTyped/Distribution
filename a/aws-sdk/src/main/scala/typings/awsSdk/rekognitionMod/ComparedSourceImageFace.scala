@@ -18,25 +18,19 @@ trait ComparedSourceImageFace extends StObject {
 }
 object ComparedSourceImageFace {
   
-  @scala.inline
-  def apply(): ComparedSourceImageFace = {
+  inline def apply(): ComparedSourceImageFace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComparedSourceImageFace]
   }
   
-  @scala.inline
-  implicit class ComparedSourceImageFaceMutableBuilder[Self <: ComparedSourceImageFace] (val x: Self) extends AnyVal {
+  extension [Self <: ComparedSourceImageFace](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
   }
 }

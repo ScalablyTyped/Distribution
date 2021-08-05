@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccessObject extends StObject {
   
-  @JSName("Access.AccessObject_typekey")
+  /* private */ @JSName("Access.AccessObject_typekey")
   var AccessDotAccessObject_typekey: AccessObject
   
   val Attributes: Double
@@ -45,8 +45,7 @@ trait AccessObject extends StObject {
 }
 object AccessObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotAccessObject_typekey: AccessObject,
     Attributes: Double,
     CurrentView: AcCurrentView,
@@ -69,55 +68,38 @@ object AccessObject {
     __obj.asInstanceOf[AccessObject]
   }
   
-  @scala.inline
-  implicit class AccessObjectMutableBuilder[Self <: AccessObject] (val x: Self) extends AnyVal {
+  extension [Self <: AccessObject](x: Self) {
     
-    @scala.inline
-    def setAccessDotAccessObject_typekey(value: AccessObject): Self = StObject.set(x, "Access.AccessObject_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotAccessObject_typekey(value: AccessObject): Self = StObject.set(x, "Access.AccessObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributes(value: Double): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Double): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentView(value: AcCurrentView): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
+    inline def setCurrentView(value: AcCurrentView): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreated(value: VarDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: VarDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateModified(value: VarDate): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
+    inline def setDateModified(value: VarDate): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDependencyInfo(value: () => DependencyInfo): Self = StObject.set(x, "GetDependencyInfo", js.Any.fromFunction0(value))
+    inline def setGetDependencyInfo(value: () => DependencyInfo): Self = StObject.set(x, "GetDependencyInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDependentUpon(value: (AcObjectType, String) => Boolean): Self = StObject.set(x, "IsDependentUpon", js.Any.fromFunction2(value))
+    inline def setIsDependentUpon(value: (AcObjectType, String) => Boolean): Self = StObject.set(x, "IsDependentUpon", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsLoaded(value: Boolean): Self = StObject.set(x, "IsLoaded", value.asInstanceOf[js.Any])
+    inline def setIsLoaded(value: Boolean): Self = StObject.set(x, "IsLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsWeb(value: Boolean): Self = StObject.set(x, "IsWeb", value.asInstanceOf[js.Any])
+    inline def setIsWeb(value: Boolean): Self = StObject.set(x, "IsWeb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: AccessObjectProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: AccessObjectProperties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AcObjectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: AcObjectType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Name(value: String): Self = StObject.set(x, "_Name", value.asInstanceOf[js.Any])
+    inline def set_Name(value: String): Self = StObject.set(x, "_Name", value.asInstanceOf[js.Any])
   }
 }

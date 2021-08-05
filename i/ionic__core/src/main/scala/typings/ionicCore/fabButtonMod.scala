@@ -60,9 +60,9 @@ object fabButtonMod {
       */
     var ionFocus: EventEmitter[Unit] = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
     @JSName("render")
     def render_MFabButton(): js.Any = js.native

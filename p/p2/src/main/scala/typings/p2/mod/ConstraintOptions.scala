@@ -12,25 +12,19 @@ trait ConstraintOptions extends StObject {
 }
 object ConstraintOptions {
   
-  @scala.inline
-  def apply(): ConstraintOptions = {
+  inline def apply(): ConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstraintOptions]
   }
   
-  @scala.inline
-  implicit class ConstraintOptionsMutableBuilder[Self <: ConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setCollideConnected(value: Boolean): Self = StObject.set(x, "collideConnected", value.asInstanceOf[js.Any])
+    inline def setCollideConnected(value: Boolean): Self = StObject.set(x, "collideConnected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollideConnectedUndefined: Self = StObject.set(x, "collideConnected", js.undefined)
+    inline def setCollideConnectedUndefined: Self = StObject.set(x, "collideConnected", js.undefined)
     
-    @scala.inline
-    def setWakeUpBodies(value: Boolean): Self = StObject.set(x, "wakeUpBodies", value.asInstanceOf[js.Any])
+    inline def setWakeUpBodies(value: Boolean): Self = StObject.set(x, "wakeUpBodies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWakeUpBodiesUndefined: Self = StObject.set(x, "wakeUpBodies", js.undefined)
+    inline def setWakeUpBodiesUndefined: Self = StObject.set(x, "wakeUpBodies", js.undefined)
   }
 }

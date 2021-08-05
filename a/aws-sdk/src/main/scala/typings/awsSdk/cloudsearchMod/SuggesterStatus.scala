@@ -12,19 +12,15 @@ trait SuggesterStatus extends StObject {
 }
 object SuggesterStatus {
   
-  @scala.inline
-  def apply(Options: Suggester, Status: OptionStatus): SuggesterStatus = {
+  inline def apply(Options: Suggester, Status: OptionStatus): SuggesterStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuggesterStatus]
   }
   
-  @scala.inline
-  implicit class SuggesterStatusMutableBuilder[Self <: SuggesterStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SuggesterStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Suggester): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Suggester): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

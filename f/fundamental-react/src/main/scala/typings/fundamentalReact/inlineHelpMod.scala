@@ -23,20 +23,15 @@ object inlineHelpMod extends Shortcut {
   trait InlineHelpPlacement extends StObject
   object InlineHelpPlacement {
     
-    @scala.inline
-    def `bottom-center`: typings.fundamentalReact.fundamentalReactStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`bottom-center`]
+    inline def `bottom-center`: typings.fundamentalReact.fundamentalReactStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`bottom-center`]
     
-    @scala.inline
-    def `bottom-left`: typings.fundamentalReact.fundamentalReactStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`bottom-left`]
+    inline def `bottom-left`: typings.fundamentalReact.fundamentalReactStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`bottom-left`]
     
-    @scala.inline
-    def `bottom-right`: typings.fundamentalReact.fundamentalReactStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`bottom-right`]
+    inline def `bottom-right`: typings.fundamentalReact.fundamentalReactStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.`bottom-right`]
     
-    @scala.inline
-    def left: typings.fundamentalReact.fundamentalReactStrings.left = "left".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.left]
+    inline def left: typings.fundamentalReact.fundamentalReactStrings.left = "left".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.left]
     
-    @scala.inline
-    def right: typings.fundamentalReact.fundamentalReactStrings.right = "right".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.right]
+    inline def right: typings.fundamentalReact.fundamentalReactStrings.right = "right".asInstanceOf[typings.fundamentalReact.fundamentalReactStrings.right]
   }
   
   trait InlineHelpProps
@@ -53,35 +48,26 @@ object inlineHelpMod extends Shortcut {
   }
   object InlineHelpProps {
     
-    @scala.inline
-    def apply(placement: InlineHelpPlacement): InlineHelpProps = {
+    inline def apply(placement: InlineHelpPlacement): InlineHelpProps = {
       val __obj = js.Dynamic.literal(placement = placement.asInstanceOf[js.Any])
       __obj.asInstanceOf[InlineHelpProps]
     }
     
-    @scala.inline
-    implicit class InlineHelpPropsMutableBuilder[Self <: InlineHelpProps] (val x: Self) extends AnyVal {
+    extension [Self <: InlineHelpProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: InlineHelpPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: InlineHelpPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     }
   }
   

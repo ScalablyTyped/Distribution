@@ -55,8 +55,7 @@ object cookies {
   }
   object Cookie {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domain: String,
       hostOnly: Boolean,
       httpOnly: Boolean,
@@ -72,44 +71,31 @@ object cookies {
       __obj.asInstanceOf[Cookie]
     }
     
-    @scala.inline
-    implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
+    extension [Self <: Cookie](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDate(value: Double): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: Double): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+      inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
       
-      @scala.inline
-      def setHostOnly(value: Boolean): Self = StObject.set(x, "hostOnly", value.asInstanceOf[js.Any])
+      inline def setHostOnly(value: Boolean): Self = StObject.set(x, "hostOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSameSite(value: typings.chrome.chrome.cookies.SameSiteStatus): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+      inline def setSameSite(value: typings.chrome.chrome.cookies.SameSiteStatus): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
+      inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,23 +115,18 @@ object cookies {
   }
   object CookieChangeInfo {
     
-    @scala.inline
-    def apply(cause: String, cookie: typings.chrome.chrome.cookies.Cookie, removed: Boolean): CookieChangeInfo = {
+    inline def apply(cause: String, cookie: typings.chrome.chrome.cookies.Cookie, removed: Boolean): CookieChangeInfo = {
       val __obj = js.Dynamic.literal(cause = cause.asInstanceOf[js.Any], cookie = cookie.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
       __obj.asInstanceOf[CookieChangeInfo]
     }
     
-    @scala.inline
-    implicit class CookieChangeInfoMutableBuilder[Self <: CookieChangeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CookieChangeInfo](x: Self) {
       
-      @scala.inline
-      def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookie(value: typings.chrome.chrome.cookies.Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: typings.chrome.chrome.cookies.Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,23 +144,18 @@ object cookies {
   }
   object CookieStore {
     
-    @scala.inline
-    def apply(id: String, tabIds: js.Array[Double]): CookieStore = {
+    inline def apply(id: String, tabIds: js.Array[Double]): CookieStore = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], tabIds = tabIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[CookieStore]
     }
     
-    @scala.inline
-    implicit class CookieStoreMutableBuilder[Self <: CookieStore] (val x: Self) extends AnyVal {
+    extension [Self <: CookieStore](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIds(value: js.Array[Double]): Self = StObject.set(x, "tabIds", value.asInstanceOf[js.Any])
+      inline def setTabIds(value: js.Array[Double]): Self = StObject.set(x, "tabIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIdsVarargs(value: Double*): Self = StObject.set(x, "tabIds", js.Array(value :_*))
+      inline def setTabIdsVarargs(value: Double*): Self = StObject.set(x, "tabIds", js.Array(value :_*))
     }
   }
   
@@ -193,26 +169,20 @@ object cookies {
   }
   object Details {
     
-    @scala.inline
-    def apply(name: String, url: String): Details = {
+    inline def apply(name: String, url: String): Details = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Details]
     }
     
-    @scala.inline
-    implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+    extension [Self <: Details](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
+      inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
+      inline def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,56 +211,40 @@ object cookies {
   }
   object GetAllDetails {
     
-    @scala.inline
-    def apply(): GetAllDetails = {
+    inline def apply(): GetAllDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetAllDetails]
     }
     
-    @scala.inline
-    implicit class GetAllDetailsMutableBuilder[Self <: GetAllDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetAllDetails](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: Boolean): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
       
-      @scala.inline
-      def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
+      inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
+      inline def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -303,17 +257,13 @@ object cookies {
   trait SameSiteStatus extends StObject
   object SameSiteStatus {
     
-    @scala.inline
-    def lax: typings.naverWhale.naverWhaleStrings.lax = "lax".asInstanceOf[typings.naverWhale.naverWhaleStrings.lax]
+    inline def lax: typings.naverWhale.naverWhaleStrings.lax = "lax".asInstanceOf[typings.naverWhale.naverWhaleStrings.lax]
     
-    @scala.inline
-    def no_restriction: typings.naverWhale.naverWhaleStrings.no_restriction = "no_restriction".asInstanceOf[typings.naverWhale.naverWhaleStrings.no_restriction]
+    inline def no_restriction: typings.naverWhale.naverWhaleStrings.no_restriction = "no_restriction".asInstanceOf[typings.naverWhale.naverWhaleStrings.no_restriction]
     
-    @scala.inline
-    def strict: typings.naverWhale.naverWhaleStrings.strict = "strict".asInstanceOf[typings.naverWhale.naverWhaleStrings.strict]
+    inline def strict: typings.naverWhale.naverWhaleStrings.strict = "strict".asInstanceOf[typings.naverWhale.naverWhaleStrings.strict]
     
-    @scala.inline
-    def unspecified: typings.naverWhale.naverWhaleStrings.unspecified = "unspecified".asInstanceOf[typings.naverWhale.naverWhaleStrings.unspecified]
+    inline def unspecified: typings.naverWhale.naverWhaleStrings.unspecified = "unspecified".asInstanceOf[typings.naverWhale.naverWhaleStrings.unspecified]
   }
   
   trait SetDetails extends StObject {
@@ -353,71 +303,50 @@ object cookies {
   }
   object SetDetails {
     
-    @scala.inline
-    def apply(url: String): SetDetails = {
+    inline def apply(url: String): SetDetails = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetDetails]
     }
     
-    @scala.inline
-    implicit class SetDetailsMutableBuilder[Self <: SetDetails] (val x: Self) extends AnyVal {
+    extension [Self <: SetDetails](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setExpirationDate(value: Double): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: Double): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+      inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
       
-      @scala.inline
-      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+      inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSameSite(value: typings.chrome.chrome.cookies.SameSiteStatus): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+      inline def setSameSite(value: typings.chrome.chrome.cookies.SameSiteStatus): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
+      inline def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
+      inline def setStoreId(value: String): Self = StObject.set(x, "storeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
+      inline def setStoreIdUndefined: Self = StObject.set(x, "storeId", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

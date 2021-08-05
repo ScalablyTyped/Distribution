@@ -27,14 +27,10 @@ object mod {
     * @param options
     */
   // tslint:disable-next-line no-unnecessary-generics
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Unit, options: Options[TCommit, TContext]): Transform = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Partial[TContext]): Transform = ^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Partial[TContext], options: Options[TCommit, TContext]): Transform = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Unit, options: Options[TCommit, TContext]): Transform = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Partial[TContext]): Transform = ^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Partial[TContext], options: Options[TCommit, TContext]): Transform = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
   @JSImport("conventional-changelog-writer", JSImport.Namespace)
   @js.native
@@ -48,23 +44,18 @@ object mod {
   }
   object CommitGroup {
     
-    @scala.inline
-    def apply[T /* <: Commit[String | Double | js.Symbol] */](commits: js.Array[TransformedCommit[T]], title: String | `false`): CommitGroup[T] = {
+    inline def apply[T /* <: Commit[String | Double | js.Symbol] */](commits: js.Array[TransformedCommit[T]], title: String | `false`): CommitGroup[T] = {
       val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommitGroup[T]]
     }
     
-    @scala.inline
-    implicit class CommitGroupMutableBuilder[Self <: CommitGroup[?], T /* <: Commit[String | Double | js.Symbol] */] (val x: Self & CommitGroup[T]) extends AnyVal {
+    extension [Self <: CommitGroup[?], T /* <: Commit[String | Double | js.Symbol] */](x: Self & CommitGroup[T]) {
       
-      @scala.inline
-      def setCommits(value: js.Array[TransformedCommit[T]]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+      inline def setCommits(value: js.Array[TransformedCommit[T]]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitsVarargs(value: TransformedCommit[T]*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: TransformedCommit[T]*): Self = StObject.set(x, "commits", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,71 +135,50 @@ object mod {
   }
   object Context {
     
-    @scala.inline
-    def apply(commit: String, date: String, issue: String): Context = {
+    inline def apply(commit: String, date: String, issue: String): Context = {
       val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+      inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setIsPatch(value: Boolean): Self = StObject.set(x, "isPatch", value.asInstanceOf[js.Any])
+      inline def setIsPatch(value: Boolean): Self = StObject.set(x, "isPatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPatchUndefined: Self = StObject.set(x, "isPatch", js.undefined)
+      inline def setIsPatchUndefined: Self = StObject.set(x, "isPatch", js.undefined)
       
-      @scala.inline
-      def setIssue(value: String): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+      inline def setIssue(value: String): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkReferences(value: Boolean): Self = StObject.set(x, "linkReferences", value.asInstanceOf[js.Any])
+      inline def setLinkReferences(value: Boolean): Self = StObject.set(x, "linkReferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkReferencesUndefined: Self = StObject.set(x, "linkReferences", js.undefined)
+      inline def setLinkReferencesUndefined: Self = StObject.set(x, "linkReferences", js.undefined)
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
       
-      @scala.inline
-      def setRepoUrl(value: String): Self = StObject.set(x, "repoUrl", value.asInstanceOf[js.Any])
+      inline def setRepoUrl(value: String): Self = StObject.set(x, "repoUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepoUrlUndefined: Self = StObject.set(x, "repoUrl", js.undefined)
+      inline def setRepoUrlUndefined: Self = StObject.set(x, "repoUrl", js.undefined)
       
-      @scala.inline
-      def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+      inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+      inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -230,26 +200,20 @@ object mod {
     }
     object ExtraContext {
       
-      @scala.inline
-      def apply[T /* <: Commit[String | Double | js.Symbol] */](commitGroups: js.Array[CommitGroup[T]], noteGroups: js.Array[NoteGroup]): ExtraContext[T] = {
+      inline def apply[T /* <: Commit[String | Double | js.Symbol] */](commitGroups: js.Array[CommitGroup[T]], noteGroups: js.Array[NoteGroup]): ExtraContext[T] = {
         val __obj = js.Dynamic.literal(commitGroups = commitGroups.asInstanceOf[js.Any], noteGroups = noteGroups.asInstanceOf[js.Any])
         __obj.asInstanceOf[ExtraContext[T]]
       }
       
-      @scala.inline
-      implicit class ExtraContextMutableBuilder[Self <: ExtraContext[?], T /* <: Commit[String | Double | js.Symbol] */] (val x: Self & ExtraContext[T]) extends AnyVal {
+      extension [Self <: ExtraContext[?], T /* <: Commit[String | Double | js.Symbol] */](x: Self & ExtraContext[T]) {
         
-        @scala.inline
-        def setCommitGroups(value: js.Array[CommitGroup[T]]): Self = StObject.set(x, "commitGroups", value.asInstanceOf[js.Any])
+        inline def setCommitGroups(value: js.Array[CommitGroup[T]]): Self = StObject.set(x, "commitGroups", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommitGroupsVarargs(value: CommitGroup[T]*): Self = StObject.set(x, "commitGroups", js.Array(value :_*))
+        inline def setCommitGroupsVarargs(value: CommitGroup[T]*): Self = StObject.set(x, "commitGroups", js.Array(value :_*))
         
-        @scala.inline
-        def setNoteGroups(value: js.Array[NoteGroup]): Self = StObject.set(x, "noteGroups", value.asInstanceOf[js.Any])
+        inline def setNoteGroups(value: js.Array[NoteGroup]): Self = StObject.set(x, "noteGroups", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoteGroupsVarargs(value: NoteGroup*): Self = StObject.set(x, "noteGroups", js.Array(value :_*))
+        inline def setNoteGroupsVarargs(value: NoteGroup*): Self = StObject.set(x, "noteGroups", js.Array(value :_*))
       }
     }
   }
@@ -263,23 +227,18 @@ object mod {
   }
   object NoteGroup {
     
-    @scala.inline
-    def apply(commits: js.Array[Note], title: String | `false`): NoteGroup = {
+    inline def apply(commits: js.Array[Note], title: String | `false`): NoteGroup = {
       val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[NoteGroup]
     }
     
-    @scala.inline
-    implicit class NoteGroupMutableBuilder[Self <: NoteGroup] (val x: Self) extends AnyVal {
+    extension [Self <: NoteGroup](x: Self) {
       
-      @scala.inline
-      def setCommits(value: js.Array[Note]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+      inline def setCommits(value: js.Array[Note]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitsVarargs(value: Note*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: Note*): Self = StObject.set(x, "commits", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | `false`): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -473,8 +432,7 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Options[TCommit, TContext] = {
+    inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Options[TCommit, TContext] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[TCommit, TContext]]
     }
@@ -499,130 +457,89 @@ object mod {
     }
     type GenerateOn[TContext /* <: Context */, TCommit /* <: Commit[String | Double | js.Symbol] */] = js.Function | String | js.Object
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] (val x: Self & (Options[TCommit, TContext])) extends AnyVal {
+    extension [Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](x: Self & (Options[TCommit, TContext])) {
       
-      @scala.inline
-      def setCommitGroupsSort(value: Sort[CommitGroup[TCommit]]): Self = StObject.set(x, "commitGroupsSort", value.asInstanceOf[js.Any])
+      inline def setCommitGroupsSort(value: Sort[CommitGroup[TCommit]]): Self = StObject.set(x, "commitGroupsSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitGroupsSortUndefined: Self = StObject.set(x, "commitGroupsSort", js.undefined)
+      inline def setCommitGroupsSortUndefined: Self = StObject.set(x, "commitGroupsSort", js.undefined)
       
-      @scala.inline
-      def setCommitGroupsSortVarargs(value: String*): Self = StObject.set(x, "commitGroupsSort", js.Array(value :_*))
+      inline def setCommitGroupsSortVarargs(value: String*): Self = StObject.set(x, "commitGroupsSort", js.Array(value :_*))
       
-      @scala.inline
-      def setCommitPartial(value: String): Self = StObject.set(x, "commitPartial", value.asInstanceOf[js.Any])
+      inline def setCommitPartial(value: String): Self = StObject.set(x, "commitPartial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitPartialUndefined: Self = StObject.set(x, "commitPartial", js.undefined)
+      inline def setCommitPartialUndefined: Self = StObject.set(x, "commitPartial", js.undefined)
       
-      @scala.inline
-      def setCommitsSort(value: Sort[TransformedCommit[TCommit]]): Self = StObject.set(x, "commitsSort", value.asInstanceOf[js.Any])
+      inline def setCommitsSort(value: Sort[TransformedCommit[TCommit]]): Self = StObject.set(x, "commitsSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitsSortUndefined: Self = StObject.set(x, "commitsSort", js.undefined)
+      inline def setCommitsSortUndefined: Self = StObject.set(x, "commitsSort", js.undefined)
       
-      @scala.inline
-      def setCommitsSortVarargs(value: String*): Self = StObject.set(x, "commitsSort", js.Array(value :_*))
+      inline def setCommitsSortVarargs(value: String*): Self = StObject.set(x, "commitsSort", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* message */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDoFlush(value: Boolean): Self = StObject.set(x, "doFlush", value.asInstanceOf[js.Any])
+      inline def setDoFlush(value: Boolean): Self = StObject.set(x, "doFlush", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoFlushUndefined: Self = StObject.set(x, "doFlush", js.undefined)
+      inline def setDoFlushUndefined: Self = StObject.set(x, "doFlush", js.undefined)
       
-      @scala.inline
-      def setFinalizeContext(
+      inline def setFinalizeContext(
         value: (/* context */ GeneratedContext[TCommit, TContext], /* options */ Options[TCommit, TContext], /* commits */ js.Array[TransformedCommit[TCommit]], /* keyCommit */ TransformedCommit[TCommit]) => GeneratedContext[TCommit, TContext]
       ): Self = StObject.set(x, "finalizeContext", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFinalizeContextUndefined: Self = StObject.set(x, "finalizeContext", js.undefined)
+      inline def setFinalizeContextUndefined: Self = StObject.set(x, "finalizeContext", js.undefined)
       
-      @scala.inline
-      def setFooterPartial(value: String): Self = StObject.set(x, "footerPartial", value.asInstanceOf[js.Any])
+      inline def setFooterPartial(value: String): Self = StObject.set(x, "footerPartial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterPartialUndefined: Self = StObject.set(x, "footerPartial", js.undefined)
+      inline def setFooterPartialUndefined: Self = StObject.set(x, "footerPartial", js.undefined)
       
-      @scala.inline
-      def setGenerateOn(value: GenerateOn[TContext, TCommit]): Self = StObject.set(x, "generateOn", value.asInstanceOf[js.Any])
+      inline def setGenerateOn(value: GenerateOn[TContext, TCommit]): Self = StObject.set(x, "generateOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateOnUndefined: Self = StObject.set(x, "generateOn", js.undefined)
+      inline def setGenerateOnUndefined: Self = StObject.set(x, "generateOn", js.undefined)
       
-      @scala.inline
-      def setGroupBy(value: String | `false`): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+      inline def setGroupBy(value: String | `false`): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
+      inline def setGroupByUndefined: Self = StObject.set(x, "groupBy", js.undefined)
       
-      @scala.inline
-      def setHeaderPartial(value: String): Self = StObject.set(x, "headerPartial", value.asInstanceOf[js.Any])
+      inline def setHeaderPartial(value: String): Self = StObject.set(x, "headerPartial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderPartialUndefined: Self = StObject.set(x, "headerPartial", js.undefined)
+      inline def setHeaderPartialUndefined: Self = StObject.set(x, "headerPartial", js.undefined)
       
-      @scala.inline
-      def setIgnoreReverted(value: Boolean): Self = StObject.set(x, "ignoreReverted", value.asInstanceOf[js.Any])
+      inline def setIgnoreReverted(value: Boolean): Self = StObject.set(x, "ignoreReverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreRevertedUndefined: Self = StObject.set(x, "ignoreReverted", js.undefined)
+      inline def setIgnoreRevertedUndefined: Self = StObject.set(x, "ignoreReverted", js.undefined)
       
-      @scala.inline
-      def setIncludeDetails(value: Boolean): Self = StObject.set(x, "includeDetails", value.asInstanceOf[js.Any])
+      inline def setIncludeDetails(value: Boolean): Self = StObject.set(x, "includeDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeDetailsUndefined: Self = StObject.set(x, "includeDetails", js.undefined)
+      inline def setIncludeDetailsUndefined: Self = StObject.set(x, "includeDetails", js.undefined)
       
-      @scala.inline
-      def setMainTemplate(value: String): Self = StObject.set(x, "mainTemplate", value.asInstanceOf[js.Any])
+      inline def setMainTemplate(value: String): Self = StObject.set(x, "mainTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainTemplateUndefined: Self = StObject.set(x, "mainTemplate", js.undefined)
+      inline def setMainTemplateUndefined: Self = StObject.set(x, "mainTemplate", js.undefined)
       
-      @scala.inline
-      def setNoteGroupsSort(value: Sort[NoteGroup]): Self = StObject.set(x, "noteGroupsSort", value.asInstanceOf[js.Any])
+      inline def setNoteGroupsSort(value: Sort[NoteGroup]): Self = StObject.set(x, "noteGroupsSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoteGroupsSortUndefined: Self = StObject.set(x, "noteGroupsSort", js.undefined)
+      inline def setNoteGroupsSortUndefined: Self = StObject.set(x, "noteGroupsSort", js.undefined)
       
-      @scala.inline
-      def setNoteGroupsSortVarargs(value: String*): Self = StObject.set(x, "noteGroupsSort", js.Array(value :_*))
+      inline def setNoteGroupsSortVarargs(value: String*): Self = StObject.set(x, "noteGroupsSort", js.Array(value :_*))
       
-      @scala.inline
-      def setNotesSort(value: Sort[Note]): Self = StObject.set(x, "notesSort", value.asInstanceOf[js.Any])
+      inline def setNotesSort(value: Sort[Note]): Self = StObject.set(x, "notesSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotesSortUndefined: Self = StObject.set(x, "notesSort", js.undefined)
+      inline def setNotesSortUndefined: Self = StObject.set(x, "notesSort", js.undefined)
       
-      @scala.inline
-      def setNotesSortVarargs(value: String*): Self = StObject.set(x, "notesSort", js.Array(value :_*))
+      inline def setNotesSortVarargs(value: String*): Self = StObject.set(x, "notesSort", js.Array(value :_*))
       
-      @scala.inline
-      def setPartials(value: Record[String, String]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
+      inline def setPartials(value: Record[String, String]): Self = StObject.set(x, "partials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
+      inline def setPartialsUndefined: Self = StObject.set(x, "partials", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setTransform(value: typings.conventionalChangelogWriter.mod.Options.Transform[TCommit, TContext]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: typings.conventionalChangelogWriter.mod.Options.Transform[TCommit, TContext]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
     
     object Sort {

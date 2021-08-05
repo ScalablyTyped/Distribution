@@ -11,8 +11,7 @@ object parseErrorStackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(error: ExtendedError): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
+  inline def default(error: ExtendedError): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(error.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
   
   trait ExtendedError
     extends StObject
@@ -22,20 +21,16 @@ object parseErrorStackMod {
   }
   object ExtendedError {
     
-    @scala.inline
-    def apply(message: String, name: String): ExtendedError = {
+    inline def apply(message: String, name: String): ExtendedError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExtendedError]
     }
     
-    @scala.inline
-    implicit class ExtendedErrorMutableBuilder[Self <: ExtendedError] (val x: Self) extends AnyVal {
+    extension [Self <: ExtendedError](x: Self) {
       
-      @scala.inline
-      def setFramesToPop(value: Double): Self = StObject.set(x, "framesToPop", value.asInstanceOf[js.Any])
+      inline def setFramesToPop(value: Double): Self = StObject.set(x, "framesToPop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesToPopUndefined: Self = StObject.set(x, "framesToPop", js.undefined)
+      inline def setFramesToPopUndefined: Self = StObject.set(x, "framesToPop", js.undefined)
     }
   }
   
@@ -51,29 +46,22 @@ object parseErrorStackMod {
   }
   object StackFrame {
     
-    @scala.inline
-    def apply(file: String, lineNumber: Double, methodName: String): StackFrame = {
+    inline def apply(file: String, lineNumber: Double, methodName: String): StackFrame = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], column = null)
       __obj.asInstanceOf[StackFrame]
     }
     
-    @scala.inline
-    implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
+    extension [Self <: StackFrame](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNull: Self = StObject.set(x, "column", null)
+      inline def setColumnNull: Self = StObject.set(x, "column", null)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+      inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     }
   }
 }

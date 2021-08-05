@@ -28,37 +28,27 @@ trait CoipAddressUsage extends StObject {
 }
 object CoipAddressUsage {
   
-  @scala.inline
-  def apply(): CoipAddressUsage = {
+  inline def apply(): CoipAddressUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoipAddressUsage]
   }
   
-  @scala.inline
-  implicit class CoipAddressUsageMutableBuilder[Self <: CoipAddressUsage] (val x: Self) extends AnyVal {
+  extension [Self <: CoipAddressUsage](x: Self) {
     
-    @scala.inline
-    def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
+    inline def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
+    inline def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
     
-    @scala.inline
-    def setAwsAccountId(value: String): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: String): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountIdUndefined: Self = StObject.set(x, "AwsAccountId", js.undefined)
+    inline def setAwsAccountIdUndefined: Self = StObject.set(x, "AwsAccountId", js.undefined)
     
-    @scala.inline
-    def setAwsService(value: String): Self = StObject.set(x, "AwsService", value.asInstanceOf[js.Any])
+    inline def setAwsService(value: String): Self = StObject.set(x, "AwsService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsServiceUndefined: Self = StObject.set(x, "AwsService", js.undefined)
+    inline def setAwsServiceUndefined: Self = StObject.set(x, "AwsService", js.undefined)
     
-    @scala.inline
-    def setCoIp(value: String): Self = StObject.set(x, "CoIp", value.asInstanceOf[js.Any])
+    inline def setCoIp(value: String): Self = StObject.set(x, "CoIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoIpUndefined: Self = StObject.set(x, "CoIp", js.undefined)
+    inline def setCoIpUndefined: Self = StObject.set(x, "CoIp", js.undefined)
   }
 }

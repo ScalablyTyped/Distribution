@@ -52,43 +52,31 @@ trait FontProperties extends StObject {
 }
 object FontProperties {
   
-  @scala.inline
-  def apply(): FontProperties = {
+  inline def apply(): FontProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontProperties]
   }
   
-  @scala.inline
-  implicit class FontPropertiesMutableBuilder[Self <: FontProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FontProperties](x: Self) {
     
-    @scala.inline
-    def setDecoration(value: underline | `line-through` | none): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
+    inline def setDecoration(value: underline | `line-through` | none): Self = StObject.set(x, "decoration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
+    inline def setDecorationUndefined: Self = StObject.set(x, "decoration", js.undefined)
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStyle(value: normal | italic | oblique): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: normal | italic | oblique): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setWeight(value: normal | bold | bolder | lighter): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: normal | bold | bolder | lighter): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

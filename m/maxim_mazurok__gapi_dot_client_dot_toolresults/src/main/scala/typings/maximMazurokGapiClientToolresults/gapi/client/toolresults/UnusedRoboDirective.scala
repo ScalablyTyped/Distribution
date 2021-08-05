@@ -11,19 +11,15 @@ trait UnusedRoboDirective extends StObject {
 }
 object UnusedRoboDirective {
   
-  @scala.inline
-  def apply(): UnusedRoboDirective = {
+  inline def apply(): UnusedRoboDirective = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnusedRoboDirective]
   }
   
-  @scala.inline
-  implicit class UnusedRoboDirectiveMutableBuilder[Self <: UnusedRoboDirective] (val x: Self) extends AnyVal {
+  extension [Self <: UnusedRoboDirective](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

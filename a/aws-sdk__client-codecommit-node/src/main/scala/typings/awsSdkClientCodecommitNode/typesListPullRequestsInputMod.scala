@@ -63,61 +63,44 @@ object typesListPullRequestsInputMod {
   }
   object ListPullRequestsInput {
     
-    @scala.inline
-    def apply(repositoryName: String): ListPullRequestsInput = {
+    inline def apply(repositoryName: String): ListPullRequestsInput = {
       val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListPullRequestsInput]
     }
     
-    @scala.inline
-    implicit class ListPullRequestsInputMutableBuilder[Self <: ListPullRequestsInput] (val x: Self) extends AnyVal {
+    extension [Self <: ListPullRequestsInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setAuthorArn(value: String): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
+      inline def setAuthorArn(value: String): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorArnUndefined: Self = StObject.set(x, "authorArn", js.undefined)
+      inline def setAuthorArnUndefined: Self = StObject.set(x, "authorArn", js.undefined)
       
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setPullRequestStatus(value: OPEN | CLOSED | String): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
+      inline def setPullRequestStatus(value: OPEN | CLOSED | String): Self = StObject.set(x, "pullRequestStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
+      inline def setPullRequestStatusUndefined: Self = StObject.set(x, "pullRequestStatus", js.undefined)
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     }
   }
 }

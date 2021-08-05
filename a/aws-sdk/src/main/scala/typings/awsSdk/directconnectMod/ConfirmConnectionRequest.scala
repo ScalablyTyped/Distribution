@@ -13,16 +13,13 @@ trait ConfirmConnectionRequest extends StObject {
 }
 object ConfirmConnectionRequest {
   
-  @scala.inline
-  def apply(connectionId: ConnectionId): ConfirmConnectionRequest = {
+  inline def apply(connectionId: ConnectionId): ConfirmConnectionRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmConnectionRequest]
   }
   
-  @scala.inline
-  implicit class ConfirmConnectionRequestMutableBuilder[Self <: ConfirmConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
   }
 }

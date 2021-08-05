@@ -16,34 +16,25 @@ trait SensorOption extends StObject {
 }
 object SensorOption {
   
-  @scala.inline
-  def apply(pin: Double | String): SensorOption = {
+  inline def apply(pin: Double | String): SensorOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[SensorOption]
   }
   
-  @scala.inline
-  implicit class SensorOptionMutableBuilder[Self <: SensorOption] (val x: Self) extends AnyVal {
+  extension [Self <: SensorOption](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFreq(value: Boolean): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+    inline def setFreq(value: Boolean): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
+    inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
     
-    @scala.inline
-    def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

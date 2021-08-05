@@ -33,22 +33,16 @@ object hotkeyParserMod {
   @js.native
   val ShiftKeys: IKeyMap = js.native
   
-  @scala.inline
-  def comboMatches(a: IKeyCombo, b: IKeyCombo): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("comboMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def comboMatches(a: IKeyCombo, b: IKeyCombo): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("comboMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def getKeyCombo(e: KeyboardEvent): IKeyCombo = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyCombo")(e.asInstanceOf[js.Any]).asInstanceOf[IKeyCombo]
+  inline def getKeyCombo(e: KeyboardEvent): IKeyCombo = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyCombo")(e.asInstanceOf[js.Any]).asInstanceOf[IKeyCombo]
   
-  @scala.inline
-  def getKeyComboString(e: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyComboString")(e.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getKeyComboString(e: KeyboardEvent): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyComboString")(e.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def normalizeKeyCombo(combo: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeyCombo")(combo.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def normalizeKeyCombo(combo: String, platformOverride: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeyCombo")(combo.asInstanceOf[js.Any], platformOverride.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def normalizeKeyCombo(combo: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeyCombo")(combo.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def normalizeKeyCombo(combo: String, platformOverride: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeKeyCombo")(combo.asInstanceOf[js.Any], platformOverride.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def parseKeyCombo(combo: String): IKeyCombo = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeyCombo")(combo.asInstanceOf[js.Any]).asInstanceOf[IKeyCombo]
+  inline def parseKeyCombo(combo: String): IKeyCombo = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKeyCombo")(combo.asInstanceOf[js.Any]).asInstanceOf[IKeyCombo]
   
   type IKeyCodeReverseTable = StringDictionary[Double]
   
@@ -62,23 +56,18 @@ object hotkeyParserMod {
   }
   object IKeyCombo {
     
-    @scala.inline
-    def apply(modifiers: Double): IKeyCombo = {
+    inline def apply(modifiers: Double): IKeyCombo = {
       val __obj = js.Dynamic.literal(modifiers = modifiers.asInstanceOf[js.Any])
       __obj.asInstanceOf[IKeyCombo]
     }
     
-    @scala.inline
-    implicit class IKeyComboMutableBuilder[Self <: IKeyCombo] (val x: Self) extends AnyVal {
+    extension [Self <: IKeyCombo](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setModifiers(value: Double): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: Double): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     }
   }
   

@@ -11,8 +11,7 @@ trait DeviceInformation
      with IDeviceInformation
 object DeviceInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     enclosureLocation: EnclosureLocation,
     getGlyphThumbnailAsync: () => IAsyncOperation[DeviceThumbnail],
     getThumbnailAsync: () => IAsyncOperation[DeviceThumbnail],

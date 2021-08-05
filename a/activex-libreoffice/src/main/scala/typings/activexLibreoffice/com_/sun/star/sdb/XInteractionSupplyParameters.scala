@@ -25,8 +25,7 @@ trait XInteractionSupplyParameters
 }
 object XInteractionSupplyParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -37,10 +36,8 @@ object XInteractionSupplyParameters {
     __obj.asInstanceOf[XInteractionSupplyParameters]
   }
   
-  @scala.inline
-  implicit class XInteractionSupplyParametersMutableBuilder[Self <: XInteractionSupplyParameters] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionSupplyParameters](x: Self) {
     
-    @scala.inline
-    def setSetParameters(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setParameters", js.Any.fromFunction1(value))
+    inline def setSetParameters(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "setParameters", js.Any.fromFunction1(value))
   }
 }

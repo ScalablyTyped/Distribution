@@ -20,34 +20,25 @@ trait getUnderlyingDataOptions extends StObject {
 }
 object getUnderlyingDataOptions {
   
-  @scala.inline
-  def apply(maxRows: Double): getUnderlyingDataOptions = {
+  inline def apply(maxRows: Double): getUnderlyingDataOptions = {
     val __obj = js.Dynamic.literal(maxRows = maxRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[getUnderlyingDataOptions]
   }
   
-  @scala.inline
-  implicit class getUnderlyingDataOptionsMutableBuilder[Self <: getUnderlyingDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: getUnderlyingDataOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreAliases(value: Boolean): Self = StObject.set(x, "ignoreAliases", value.asInstanceOf[js.Any])
+    inline def setIgnoreAliases(value: Boolean): Self = StObject.set(x, "ignoreAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreAliasesUndefined: Self = StObject.set(x, "ignoreAliases", js.undefined)
+    inline def setIgnoreAliasesUndefined: Self = StObject.set(x, "ignoreAliases", js.undefined)
     
-    @scala.inline
-    def setIgnoreAllColumns(value: Boolean): Self = StObject.set(x, "ignoreAllColumns", value.asInstanceOf[js.Any])
+    inline def setIgnoreAllColumns(value: Boolean): Self = StObject.set(x, "ignoreAllColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreAllColumnsUndefined: Self = StObject.set(x, "ignoreAllColumns", js.undefined)
+    inline def setIgnoreAllColumnsUndefined: Self = StObject.set(x, "ignoreAllColumns", js.undefined)
     
-    @scala.inline
-    def setIgnoreSelection(value: Boolean): Self = StObject.set(x, "ignoreSelection", value.asInstanceOf[js.Any])
+    inline def setIgnoreSelection(value: Boolean): Self = StObject.set(x, "ignoreSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreSelectionUndefined: Self = StObject.set(x, "ignoreSelection", js.undefined)
+    inline def setIgnoreSelectionUndefined: Self = StObject.set(x, "ignoreSelection", js.undefined)
     
-    @scala.inline
-    def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
+    inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
   }
 }

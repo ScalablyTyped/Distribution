@@ -10,8 +10,7 @@ object mittMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): MittEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[MittEmitter]
+  inline def default(): MittEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[MittEmitter]
   
   @js.native
   trait Handler extends StObject {
@@ -29,8 +28,7 @@ object mittMod {
   }
   object MittEmitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       emit: (String, /* repeated */ js.Any) => Unit,
       off: (String, Handler) => Unit,
       on: (String, Handler) => Unit
@@ -39,17 +37,13 @@ object mittMod {
       __obj.asInstanceOf[MittEmitter]
     }
     
-    @scala.inline
-    implicit class MittEmitterMutableBuilder[Self <: MittEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: MittEmitter](x: Self) {
       
-      @scala.inline
-      def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOff(value: (String, Handler) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (String, Handler) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (String, Handler) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, Handler) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
   }
 }

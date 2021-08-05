@@ -36,20 +36,16 @@ object languageMod {
   }
   object Vocabulary {
     
-    @scala.inline
-    def apply(_steps: js.Array[String]): Vocabulary = {
+    inline def apply(_steps: js.Array[String]): Vocabulary = {
       val __obj = js.Dynamic.literal(_steps = _steps.asInstanceOf[js.Any])
       __obj.asInstanceOf[Vocabulary]
     }
     
-    @scala.inline
-    implicit class VocabularyMutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    extension [Self <: Vocabulary](x: Self) {
       
-      @scala.inline
-      def set_steps(value: js.Array[String]): Self = StObject.set(x, "_steps", value.asInstanceOf[js.Any])
+      inline def set_steps(value: js.Array[String]): Self = StObject.set(x, "_steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stepsVarargs(value: String*): Self = StObject.set(x, "_steps", js.Array(value :_*))
+      inline def set_stepsVarargs(value: String*): Self = StObject.set(x, "_steps", js.Array(value :_*))
     }
   }
 }

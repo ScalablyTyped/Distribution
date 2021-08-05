@@ -28,32 +28,24 @@ object descriptionMod {
   }
   object DescriptionProps {
     
-    @scala.inline
-    def apply(): DescriptionProps = {
+    inline def apply(): DescriptionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescriptionProps]
     }
     
-    @scala.inline
-    implicit class DescriptionPropsMutableBuilder[Self <: DescriptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: DescriptionProps](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setTerm(value: ReactNode): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+      inline def setTerm(value: ReactNode): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+      inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
     }
   }
 }

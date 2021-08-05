@@ -18,28 +18,21 @@ trait ListOfferingsResult extends StObject {
 }
 object ListOfferingsResult {
   
-  @scala.inline
-  def apply(): ListOfferingsResult = {
+  inline def apply(): ListOfferingsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOfferingsResult]
   }
   
-  @scala.inline
-  implicit class ListOfferingsResultMutableBuilder[Self <: ListOfferingsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListOfferingsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setOfferings(value: Offerings): Self = StObject.set(x, "offerings", value.asInstanceOf[js.Any])
+    inline def setOfferings(value: Offerings): Self = StObject.set(x, "offerings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingsUndefined: Self = StObject.set(x, "offerings", js.undefined)
+    inline def setOfferingsUndefined: Self = StObject.set(x, "offerings", js.undefined)
     
-    @scala.inline
-    def setOfferingsVarargs(value: Offering*): Self = StObject.set(x, "offerings", js.Array(value :_*))
+    inline def setOfferingsVarargs(value: Offering*): Self = StObject.set(x, "offerings", js.Array(value :_*))
   }
 }

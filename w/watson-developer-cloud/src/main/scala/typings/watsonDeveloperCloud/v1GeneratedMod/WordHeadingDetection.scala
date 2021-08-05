@@ -13,31 +13,23 @@ trait WordHeadingDetection extends StObject {
 }
 object WordHeadingDetection {
   
-  @scala.inline
-  def apply(): WordHeadingDetection = {
+  inline def apply(): WordHeadingDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WordHeadingDetection]
   }
   
-  @scala.inline
-  implicit class WordHeadingDetectionMutableBuilder[Self <: WordHeadingDetection] (val x: Self) extends AnyVal {
+  extension [Self <: WordHeadingDetection](x: Self) {
     
-    @scala.inline
-    def setFonts(value: js.Array[FontSetting]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
+    inline def setFonts(value: js.Array[FontSetting]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+    inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
     
-    @scala.inline
-    def setFontsVarargs(value: FontSetting*): Self = StObject.set(x, "fonts", js.Array(value :_*))
+    inline def setFontsVarargs(value: FontSetting*): Self = StObject.set(x, "fonts", js.Array(value :_*))
     
-    @scala.inline
-    def setStyles(value: js.Array[WordStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[WordStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setStylesVarargs(value: WordStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: WordStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

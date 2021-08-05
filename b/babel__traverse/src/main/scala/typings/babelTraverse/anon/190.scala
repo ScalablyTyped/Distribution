@@ -11,17 +11,14 @@ trait `190` extends StObject {
 }
 object `190` {
   
-  @scala.inline
-  def apply(): `190` = {
+  inline def apply(): `190` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("JSXText")
     __obj.asInstanceOf[`190`]
   }
   
-  @scala.inline
-  implicit class `190MutableBuilder`[Self <: `190`] (val x: Self) extends AnyVal {
+  extension [Self <: `190`](x: Self) {
     
-    @scala.inline
-    def setType(value: JSXText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

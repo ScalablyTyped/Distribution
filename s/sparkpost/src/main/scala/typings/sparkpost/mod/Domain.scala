@@ -10,16 +10,13 @@ trait Domain extends StObject {
 }
 object Domain {
   
-  @scala.inline
-  def apply(domain: String): Domain = {
+  inline def apply(domain: String): Domain = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Domain]
   }
   
-  @scala.inline
-  implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+  extension [Self <: Domain](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DescribeForecastExportJobRequest extends StObject {
 }
 object DescribeForecastExportJobRequest {
   
-  @scala.inline
-  def apply(ForecastExportJobArn: Arn): DescribeForecastExportJobRequest = {
+  inline def apply(ForecastExportJobArn: Arn): DescribeForecastExportJobRequest = {
     val __obj = js.Dynamic.literal(ForecastExportJobArn = ForecastExportJobArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeForecastExportJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribeForecastExportJobRequestMutableBuilder[Self <: DescribeForecastExportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeForecastExportJobRequest](x: Self) {
     
-    @scala.inline
-    def setForecastExportJobArn(value: Arn): Self = StObject.set(x, "ForecastExportJobArn", value.asInstanceOf[js.Any])
+    inline def setForecastExportJobArn(value: Arn): Self = StObject.set(x, "ForecastExportJobArn", value.asInstanceOf[js.Any])
   }
 }

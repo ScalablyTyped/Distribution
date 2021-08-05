@@ -18,17 +18,14 @@ object typesReferenceDoesNotExistExceptionMod {
   }
   object ReferenceDoesNotExistException {
     
-    @scala.inline
-    def apply(): ReferenceDoesNotExistException = {
+    inline def apply(): ReferenceDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "ReferenceDoesNotExistException")
       __obj.asInstanceOf[ReferenceDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class ReferenceDoesNotExistExceptionMutableBuilder[Self <: ReferenceDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: ReferenceDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ReferenceDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

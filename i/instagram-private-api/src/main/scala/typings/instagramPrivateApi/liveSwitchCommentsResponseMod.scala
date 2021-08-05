@@ -14,20 +14,16 @@ object liveSwitchCommentsResponseMod {
   }
   object LiveSwitchCommentsResponseRootObject {
     
-    @scala.inline
-    def apply(comment_muted: Double, status: String): LiveSwitchCommentsResponseRootObject = {
+    inline def apply(comment_muted: Double, status: String): LiveSwitchCommentsResponseRootObject = {
       val __obj = js.Dynamic.literal(comment_muted = comment_muted.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[LiveSwitchCommentsResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LiveSwitchCommentsResponseRootObjectMutableBuilder[Self <: LiveSwitchCommentsResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LiveSwitchCommentsResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setComment_muted(value: Double): Self = StObject.set(x, "comment_muted", value.asInstanceOf[js.Any])
+      inline def setComment_muted(value: Double): Self = StObject.set(x, "comment_muted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

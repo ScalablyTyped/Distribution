@@ -20,26 +20,20 @@ object typesRepositoryTriggerExecutionFailureMod {
   }
   object RepositoryTriggerExecutionFailure {
     
-    @scala.inline
-    def apply(): RepositoryTriggerExecutionFailure = {
+    inline def apply(): RepositoryTriggerExecutionFailure = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RepositoryTriggerExecutionFailure]
     }
     
-    @scala.inline
-    implicit class RepositoryTriggerExecutionFailureMutableBuilder[Self <: RepositoryTriggerExecutionFailure] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryTriggerExecutionFailure](x: Self) {
       
-      @scala.inline
-      def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
+      inline def setFailureMessage(value: String): Self = StObject.set(x, "failureMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureMessageUndefined: Self = StObject.set(x, "failureMessage", js.undefined)
+      inline def setFailureMessageUndefined: Self = StObject.set(x, "failureMessage", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+      inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     }
   }
   

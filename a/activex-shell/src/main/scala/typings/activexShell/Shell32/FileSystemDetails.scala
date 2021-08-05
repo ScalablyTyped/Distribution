@@ -22,21 +22,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileSystemDetails extends StObject
 object FileSystemDetails {
   
-  @scala.inline
-  def Attributes: `4` = 4.asInstanceOf[`4`]
+  inline def Attributes: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def InfoTip: `-1` = -1.asInstanceOf[`-1`]
+  inline def InfoTip: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def LastModified: `3` = 3.asInstanceOf[`3`]
+  inline def LastModified: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Name: `0` = 0.asInstanceOf[`0`]
+  inline def Name: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Size: `1` = 1.asInstanceOf[`1`]
+  inline def Size: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Type: `2` = 2.asInstanceOf[`2`]
+  inline def Type: `2` = 2.asInstanceOf[`2`]
 }

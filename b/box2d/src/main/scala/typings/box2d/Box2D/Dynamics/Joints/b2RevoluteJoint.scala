@@ -91,8 +91,7 @@ trait b2RevoluteJoint
 }
 object b2RevoluteJoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EnableLimit: Boolean => Unit,
     EnableMotor: Boolean => Unit,
     GetAnchorA: () => b2Vec2,
@@ -122,46 +121,32 @@ object b2RevoluteJoint {
     __obj.asInstanceOf[b2RevoluteJoint]
   }
   
-  @scala.inline
-  implicit class b2RevoluteJointMutableBuilder[Self <: b2RevoluteJoint] (val x: Self) extends AnyVal {
+  extension [Self <: b2RevoluteJoint](x: Self) {
     
-    @scala.inline
-    def setEnableLimit(value: Boolean => Unit): Self = StObject.set(x, "EnableLimit", js.Any.fromFunction1(value))
+    inline def setEnableLimit(value: Boolean => Unit): Self = StObject.set(x, "EnableLimit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnableMotor(value: Boolean => Unit): Self = StObject.set(x, "EnableMotor", js.Any.fromFunction1(value))
+    inline def setEnableMotor(value: Boolean => Unit): Self = StObject.set(x, "EnableMotor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetJointAngle(value: () => Double): Self = StObject.set(x, "GetJointAngle", js.Any.fromFunction0(value))
+    inline def setGetJointAngle(value: () => Double): Self = StObject.set(x, "GetJointAngle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetJointSpeed(value: () => Double): Self = StObject.set(x, "GetJointSpeed", js.Any.fromFunction0(value))
+    inline def setGetJointSpeed(value: () => Double): Self = StObject.set(x, "GetJointSpeed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLowerLimit(value: () => Double): Self = StObject.set(x, "GetLowerLimit", js.Any.fromFunction0(value))
+    inline def setGetLowerLimit(value: () => Double): Self = StObject.set(x, "GetLowerLimit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMotorSpeed(value: () => Double): Self = StObject.set(x, "GetMotorSpeed", js.Any.fromFunction0(value))
+    inline def setGetMotorSpeed(value: () => Double): Self = StObject.set(x, "GetMotorSpeed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMotorTorque(value: () => Double): Self = StObject.set(x, "GetMotorTorque", js.Any.fromFunction0(value))
+    inline def setGetMotorTorque(value: () => Double): Self = StObject.set(x, "GetMotorTorque", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpperLimit(value: () => Double): Self = StObject.set(x, "GetUpperLimit", js.Any.fromFunction0(value))
+    inline def setGetUpperLimit(value: () => Double): Self = StObject.set(x, "GetUpperLimit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLimitEnabled(value: () => Boolean): Self = StObject.set(x, "IsLimitEnabled", js.Any.fromFunction0(value))
+    inline def setIsLimitEnabled(value: () => Boolean): Self = StObject.set(x, "IsLimitEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMotorEnabled(value: () => Boolean): Self = StObject.set(x, "IsMotorEnabled", js.Any.fromFunction0(value))
+    inline def setIsMotorEnabled(value: () => Boolean): Self = StObject.set(x, "IsMotorEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLimits(value: (Double, Double) => Unit): Self = StObject.set(x, "SetLimits", js.Any.fromFunction2(value))
+    inline def setSetLimits(value: (Double, Double) => Unit): Self = StObject.set(x, "SetLimits", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetMaxMotorTorque(value: Double => Unit): Self = StObject.set(x, "SetMaxMotorTorque", js.Any.fromFunction1(value))
+    inline def setSetMaxMotorTorque(value: Double => Unit): Self = StObject.set(x, "SetMaxMotorTorque", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMotorSpeed(value: Double => Unit): Self = StObject.set(x, "SetMotorSpeed", js.Any.fromFunction1(value))
+    inline def setSetMotorSpeed(value: Double => Unit): Self = StObject.set(x, "SetMotorSpeed", js.Any.fromFunction1(value))
   }
 }

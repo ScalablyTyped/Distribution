@@ -14,40 +14,29 @@ trait SSLConfig extends StObject {
 }
 object SSLConfig {
   
-  @scala.inline
-  def apply(): SSLConfig = {
+  inline def apply(): SSLConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SSLConfig]
   }
   
-  @scala.inline
-  implicit class SSLConfigMutableBuilder[Self <: SSLConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SSLConfig](x: Self) {
     
-    @scala.inline
-    def setCafile(value: String | js.Array[String]): Self = StObject.set(x, "cafile", value.asInstanceOf[js.Any])
+    inline def setCafile(value: String | js.Array[String]): Self = StObject.set(x, "cafile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCafileUndefined: Self = StObject.set(x, "cafile", js.undefined)
+    inline def setCafileUndefined: Self = StObject.set(x, "cafile", js.undefined)
     
-    @scala.inline
-    def setCafileVarargs(value: String*): Self = StObject.set(x, "cafile", js.Array(value :_*))
+    inline def setCafileVarargs(value: String*): Self = StObject.set(x, "cafile", js.Array(value :_*))
     
-    @scala.inline
-    def setCertfile(value: String | js.Array[String]): Self = StObject.set(x, "certfile", value.asInstanceOf[js.Any])
+    inline def setCertfile(value: String | js.Array[String]): Self = StObject.set(x, "certfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertfileUndefined: Self = StObject.set(x, "certfile", js.undefined)
+    inline def setCertfileUndefined: Self = StObject.set(x, "certfile", js.undefined)
     
-    @scala.inline
-    def setCertfileVarargs(value: String*): Self = StObject.set(x, "certfile", js.Array(value :_*))
+    inline def setCertfileVarargs(value: String*): Self = StObject.set(x, "certfile", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyfile(value: String | js.Array[String]): Self = StObject.set(x, "keyfile", value.asInstanceOf[js.Any])
+    inline def setKeyfile(value: String | js.Array[String]): Self = StObject.set(x, "keyfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyfileUndefined: Self = StObject.set(x, "keyfile", js.undefined)
+    inline def setKeyfileUndefined: Self = StObject.set(x, "keyfile", js.undefined)
     
-    @scala.inline
-    def setKeyfileVarargs(value: String*): Self = StObject.set(x, "keyfile", js.Array(value :_*))
+    inline def setKeyfileVarargs(value: String*): Self = StObject.set(x, "keyfile", js.Array(value :_*))
   }
 }

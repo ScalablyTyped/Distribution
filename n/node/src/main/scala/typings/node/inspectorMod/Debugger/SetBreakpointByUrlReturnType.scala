@@ -18,22 +18,17 @@ trait SetBreakpointByUrlReturnType extends StObject {
 }
 object SetBreakpointByUrlReturnType {
   
-  @scala.inline
-  def apply(breakpointId: BreakpointId, locations: js.Array[Location]): SetBreakpointByUrlReturnType = {
+  inline def apply(breakpointId: BreakpointId, locations: js.Array[Location]): SetBreakpointByUrlReturnType = {
     val __obj = js.Dynamic.literal(breakpointId = breakpointId.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBreakpointByUrlReturnType]
   }
   
-  @scala.inline
-  implicit class SetBreakpointByUrlReturnTypeMutableBuilder[Self <: SetBreakpointByUrlReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: SetBreakpointByUrlReturnType](x: Self) {
     
-    @scala.inline
-    def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
+    inline def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

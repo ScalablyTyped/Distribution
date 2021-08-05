@@ -20,43 +20,31 @@ trait PartialPickAccountFollowe extends StObject {
 }
 object PartialPickAccountFollowe {
   
-  @scala.inline
-  def apply(): PartialPickAccountFollowe = {
+  inline def apply(): PartialPickAccountFollowe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickAccountFollowe]
   }
   
-  @scala.inline
-  implicit class PartialPickAccountFolloweMutableBuilder[Self <: PartialPickAccountFollowe] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickAccountFollowe](x: Self) {
     
-    @scala.inline
-    def setEnableGroups(value: Boolean): Self = StObject.set(x, "enableGroups", value.asInstanceOf[js.Any])
+    inline def setEnableGroups(value: Boolean): Self = StObject.set(x, "enableGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableGroupsUndefined: Self = StObject.set(x, "enableGroups", js.undefined)
+    inline def setEnableGroupsUndefined: Self = StObject.set(x, "enableGroups", js.undefined)
     
-    @scala.inline
-    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOrder(value: default): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: default): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setSearchSurface(value: String): Self = StObject.set(x, "searchSurface", value.asInstanceOf[js.Any])
+    inline def setSearchSurface(value: String): Self = StObject.set(x, "searchSurface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchSurfaceUndefined: Self = StObject.set(x, "searchSurface", js.undefined)
+    inline def setSearchSurfaceUndefined: Self = StObject.set(x, "searchSurface", js.undefined)
   }
 }

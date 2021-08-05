@@ -33,8 +33,7 @@ trait TokenIterator extends StObject {
 }
 object TokenIterator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentToken: () => TokenInfo,
     getCurrentTokenColumn: () => Double,
     getCurrentTokenRow: () => Double,
@@ -45,22 +44,16 @@ object TokenIterator {
     __obj.asInstanceOf[TokenIterator]
   }
   
-  @scala.inline
-  implicit class TokenIteratorMutableBuilder[Self <: TokenIterator] (val x: Self) extends AnyVal {
+  extension [Self <: TokenIterator](x: Self) {
     
-    @scala.inline
-    def setGetCurrentToken(value: () => TokenInfo): Self = StObject.set(x, "getCurrentToken", js.Any.fromFunction0(value))
+    inline def setGetCurrentToken(value: () => TokenInfo): Self = StObject.set(x, "getCurrentToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentTokenColumn(value: () => Double): Self = StObject.set(x, "getCurrentTokenColumn", js.Any.fromFunction0(value))
+    inline def setGetCurrentTokenColumn(value: () => Double): Self = StObject.set(x, "getCurrentTokenColumn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentTokenRow(value: () => Double): Self = StObject.set(x, "getCurrentTokenRow", js.Any.fromFunction0(value))
+    inline def setGetCurrentTokenRow(value: () => Double): Self = StObject.set(x, "getCurrentTokenRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStepBackward(value: () => js.Array[String]): Self = StObject.set(x, "stepBackward", js.Any.fromFunction0(value))
+    inline def setStepBackward(value: () => js.Array[String]): Self = StObject.set(x, "stepBackward", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStepForward(value: () => String): Self = StObject.set(x, "stepForward", js.Any.fromFunction0(value))
+    inline def setStepForward(value: () => String): Self = StObject.set(x, "stepForward", js.Any.fromFunction0(value))
   }
 }

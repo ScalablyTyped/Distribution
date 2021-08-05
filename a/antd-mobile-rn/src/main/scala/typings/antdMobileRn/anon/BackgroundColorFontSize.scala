@@ -18,8 +18,7 @@ trait BackgroundColorFontSize extends StObject {
 }
 object BackgroundColorFontSize {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: String,
     fontSize: Double,
     lineHeight: Double,
@@ -30,22 +29,16 @@ object BackgroundColorFontSize {
     __obj.asInstanceOf[BackgroundColorFontSize]
   }
   
-  @scala.inline
-  implicit class BackgroundColorFontSizeMutableBuilder[Self <: BackgroundColorFontSize] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColorFontSize](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingHorizontal(value: Double): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
+    inline def setPaddingHorizontal(value: Double): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignVertical(value: String): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
+    inline def setTextAlignVertical(value: String): Self = StObject.set(x, "textAlignVertical", value.asInstanceOf[js.Any])
   }
 }

@@ -37,34 +37,25 @@ trait CreateConfigurationRequest extends StObject {
 }
 object CreateConfigurationRequest {
   
-  @scala.inline
-  def apply(Name: string, ServerProperties: _Blob): CreateConfigurationRequest = {
+  inline def apply(Name: string, ServerProperties: _Blob): CreateConfigurationRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ServerProperties = ServerProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class CreateConfigurationRequestMutableBuilder[Self <: CreateConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setKafkaVersions(value: listOfString): Self = StObject.set(x, "KafkaVersions", value.asInstanceOf[js.Any])
+    inline def setKafkaVersions(value: listOfString): Self = StObject.set(x, "KafkaVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKafkaVersionsUndefined: Self = StObject.set(x, "KafkaVersions", js.undefined)
+    inline def setKafkaVersionsUndefined: Self = StObject.set(x, "KafkaVersions", js.undefined)
     
-    @scala.inline
-    def setKafkaVersionsVarargs(value: string*): Self = StObject.set(x, "KafkaVersions", js.Array(value :_*))
+    inline def setKafkaVersionsVarargs(value: string*): Self = StObject.set(x, "KafkaVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerProperties(value: _Blob): Self = StObject.set(x, "ServerProperties", value.asInstanceOf[js.Any])
+    inline def setServerProperties(value: _Blob): Self = StObject.set(x, "ServerProperties", value.asInstanceOf[js.Any])
   }
 }

@@ -22,26 +22,20 @@ object optionsSpatialColumnOptionsMod {
   }
   object SpatialColumnOptions {
     
-    @scala.inline
-    def apply(): SpatialColumnOptions = {
+    inline def apply(): SpatialColumnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpatialColumnOptions]
     }
     
-    @scala.inline
-    implicit class SpatialColumnOptionsMutableBuilder[Self <: SpatialColumnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpatialColumnOptions](x: Self) {
       
-      @scala.inline
-      def setSpatialFeatureType(value: String): Self = StObject.set(x, "spatialFeatureType", value.asInstanceOf[js.Any])
+      inline def setSpatialFeatureType(value: String): Self = StObject.set(x, "spatialFeatureType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpatialFeatureTypeUndefined: Self = StObject.set(x, "spatialFeatureType", js.undefined)
+      inline def setSpatialFeatureTypeUndefined: Self = StObject.set(x, "spatialFeatureType", js.undefined)
       
-      @scala.inline
-      def setSrid(value: Double): Self = StObject.set(x, "srid", value.asInstanceOf[js.Any])
+      inline def setSrid(value: Double): Self = StObject.set(x, "srid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSridUndefined: Self = StObject.set(x, "srid", js.undefined)
+      inline def setSridUndefined: Self = StObject.set(x, "srid", js.undefined)
     }
   }
 }

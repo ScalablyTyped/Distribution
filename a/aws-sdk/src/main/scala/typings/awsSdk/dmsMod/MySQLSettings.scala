@@ -63,79 +63,55 @@ trait MySQLSettings extends StObject {
 }
 object MySQLSettings {
   
-  @scala.inline
-  def apply(): MySQLSettings = {
+  inline def apply(): MySQLSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MySQLSettings]
   }
   
-  @scala.inline
-  implicit class MySQLSettingsMutableBuilder[Self <: MySQLSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MySQLSettings](x: Self) {
     
-    @scala.inline
-    def setAfterConnectScript(value: String): Self = StObject.set(x, "AfterConnectScript", value.asInstanceOf[js.Any])
+    inline def setAfterConnectScript(value: String): Self = StObject.set(x, "AfterConnectScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterConnectScriptUndefined: Self = StObject.set(x, "AfterConnectScript", js.undefined)
+    inline def setAfterConnectScriptUndefined: Self = StObject.set(x, "AfterConnectScript", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    @scala.inline
-    def setEventsPollInterval(value: IntegerOptional): Self = StObject.set(x, "EventsPollInterval", value.asInstanceOf[js.Any])
+    inline def setEventsPollInterval(value: IntegerOptional): Self = StObject.set(x, "EventsPollInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsPollIntervalUndefined: Self = StObject.set(x, "EventsPollInterval", js.undefined)
+    inline def setEventsPollIntervalUndefined: Self = StObject.set(x, "EventsPollInterval", js.undefined)
     
-    @scala.inline
-    def setMaxFileSize(value: IntegerOptional): Self = StObject.set(x, "MaxFileSize", value.asInstanceOf[js.Any])
+    inline def setMaxFileSize(value: IntegerOptional): Self = StObject.set(x, "MaxFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileSizeUndefined: Self = StObject.set(x, "MaxFileSize", js.undefined)
+    inline def setMaxFileSizeUndefined: Self = StObject.set(x, "MaxFileSize", js.undefined)
     
-    @scala.inline
-    def setParallelLoadThreads(value: IntegerOptional): Self = StObject.set(x, "ParallelLoadThreads", value.asInstanceOf[js.Any])
+    inline def setParallelLoadThreads(value: IntegerOptional): Self = StObject.set(x, "ParallelLoadThreads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelLoadThreadsUndefined: Self = StObject.set(x, "ParallelLoadThreads", js.undefined)
+    inline def setParallelLoadThreadsUndefined: Self = StObject.set(x, "ParallelLoadThreads", js.undefined)
     
-    @scala.inline
-    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
+    inline def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
-    @scala.inline
-    def setServerTimezone(value: String): Self = StObject.set(x, "ServerTimezone", value.asInstanceOf[js.Any])
+    inline def setServerTimezone(value: String): Self = StObject.set(x, "ServerTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTimezoneUndefined: Self = StObject.set(x, "ServerTimezone", js.undefined)
+    inline def setServerTimezoneUndefined: Self = StObject.set(x, "ServerTimezone", js.undefined)
     
-    @scala.inline
-    def setTargetDbType(value: TargetDbType): Self = StObject.set(x, "TargetDbType", value.asInstanceOf[js.Any])
+    inline def setTargetDbType(value: TargetDbType): Self = StObject.set(x, "TargetDbType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDbTypeUndefined: Self = StObject.set(x, "TargetDbType", js.undefined)
+    inline def setTargetDbTypeUndefined: Self = StObject.set(x, "TargetDbType", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

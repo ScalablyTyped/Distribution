@@ -17,8 +17,7 @@ trait XFlushListener
 }
 object XFlushListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     flushed: EventObject => Unit,
@@ -29,10 +28,8 @@ object XFlushListener {
     __obj.asInstanceOf[XFlushListener]
   }
   
-  @scala.inline
-  implicit class XFlushListenerMutableBuilder[Self <: XFlushListener] (val x: Self) extends AnyVal {
+  extension [Self <: XFlushListener](x: Self) {
     
-    @scala.inline
-    def setFlushed(value: EventObject => Unit): Self = StObject.set(x, "flushed", js.Any.fromFunction1(value))
+    inline def setFlushed(value: EventObject => Unit): Self = StObject.set(x, "flushed", js.Any.fromFunction1(value))
   }
 }

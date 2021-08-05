@@ -17,8 +17,7 @@ trait ParametersActivityMarkRepoNotificationsAsReadEndpoint extends StObject {
 }
 object ParametersActivityMarkRepoNotificationsAsReadEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityMarkRepoNotificationsAsReadEndpoint,
     request: ActivityMarkRepoNotificationsAsReadRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActivityMarkRepoNotificationsAsReadEndpoint {
     __obj.asInstanceOf[ParametersActivityMarkRepoNotificationsAsReadEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityMarkRepoNotificationsAsReadEndpointMutableBuilder[Self <: ParametersActivityMarkRepoNotificationsAsReadEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityMarkRepoNotificationsAsReadEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityMarkRepoNotificationsAsReadEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityMarkRepoNotificationsAsReadEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityMarkRepoNotificationsAsReadRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityMarkRepoNotificationsAsReadRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

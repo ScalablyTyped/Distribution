@@ -61,21 +61,16 @@ object databaseMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Database]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Database]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DatabaseState): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Database]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DatabaseState, opts: CustomResourceOptions): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Database]
+    inline def get(name: String, id: Input[ID]): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Database]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Database]
+    inline def get(name: String, id: Input[ID], state: DatabaseState): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Database]
+    inline def get(name: String, id: Input[ID], state: DatabaseState, opts: CustomResourceOptions): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Database]
     
     /**
       * Returns true if the given object is an instance of Database.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/athena/database.Database */ Boolean]
   }
   
   trait DatabaseArgs extends StObject {
@@ -102,35 +97,26 @@ object databaseMod {
   }
   object DatabaseArgs {
     
-    @scala.inline
-    def apply(bucket: Input[String]): DatabaseArgs = {
+    inline def apply(bucket: Input[String]): DatabaseArgs = {
       val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatabaseArgs]
     }
     
-    @scala.inline
-    implicit class DatabaseArgsMutableBuilder[Self <: DatabaseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DatabaseArgs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.athena.DatabaseEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.athena.DatabaseEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurationUndefined: Self = StObject.set(x, "encryptionConfiguration", js.undefined)
+      inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "encryptionConfiguration", js.undefined)
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -158,38 +144,28 @@ object databaseMod {
   }
   object DatabaseState {
     
-    @scala.inline
-    def apply(): DatabaseState = {
+    inline def apply(): DatabaseState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DatabaseState]
     }
     
-    @scala.inline
-    implicit class DatabaseStateMutableBuilder[Self <: DatabaseState] (val x: Self) extends AnyVal {
+    extension [Self <: DatabaseState](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.athena.DatabaseEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setEncryptionConfiguration(value: Input[typings.pulumiAws.inputMod.athena.DatabaseEncryptionConfiguration]): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurationUndefined: Self = StObject.set(x, "encryptionConfiguration", js.undefined)
+      inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "encryptionConfiguration", js.undefined)
       
-      @scala.inline
-      def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
+      inline def setForceDestroy(value: Input[Boolean]): Self = StObject.set(x, "forceDestroy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
+      inline def setForceDestroyUndefined: Self = StObject.set(x, "forceDestroy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

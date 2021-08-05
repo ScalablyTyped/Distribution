@@ -12,10 +12,8 @@ object mod {
     * Hasher constructor
     * @param options hasher options
     */
-  @scala.inline
-  def apply(): Hasher = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Hasher]
-  @scala.inline
-  def apply(options: HasherOptions): Hasher = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Hasher]
+  inline def apply(): Hasher = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Hasher]
+  inline def apply(options: HasherOptions): Hasher = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Hasher]
   
   @JSImport("node-object-hash", JSImport.Namespace)
   @js.native
@@ -69,26 +67,20 @@ object mod {
   }
   object HasherOptions {
     
-    @scala.inline
-    def apply(): HasherOptions = {
+    inline def apply(): HasherOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HasherOptions]
     }
     
-    @scala.inline
-    implicit class HasherOptionsMutableBuilder[Self <: HasherOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HasherOptions](x: Self) {
       
-      @scala.inline
-      def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+      inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+      inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
       
-      @scala.inline
-      def setEnc(value: HexBase64Latin1Encoding): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
+      inline def setEnc(value: HexBase64Latin1Encoding): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
+      inline def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
     }
   }
 }

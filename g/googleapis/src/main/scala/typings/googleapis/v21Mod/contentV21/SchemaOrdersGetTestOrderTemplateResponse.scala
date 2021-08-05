@@ -19,25 +19,19 @@ trait SchemaOrdersGetTestOrderTemplateResponse extends StObject {
 }
 object SchemaOrdersGetTestOrderTemplateResponse {
   
-  @scala.inline
-  def apply(): SchemaOrdersGetTestOrderTemplateResponse = {
+  inline def apply(): SchemaOrdersGetTestOrderTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrdersGetTestOrderTemplateResponse]
   }
   
-  @scala.inline
-  implicit class SchemaOrdersGetTestOrderTemplateResponseMutableBuilder[Self <: SchemaOrdersGetTestOrderTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrdersGetTestOrderTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: SchemaTestOrder): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: SchemaTestOrder): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

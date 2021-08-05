@@ -10,8 +10,7 @@ trait IColumnLayout
      with IHBox
 object IColumnLayout {
   
-  @scala.inline
-  def apply(): IColumnLayout = {
+  inline def apply(): IColumnLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IColumnLayout]
   }

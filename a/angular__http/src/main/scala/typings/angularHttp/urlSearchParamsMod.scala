@@ -37,7 +37,7 @@ object urlSearchParamsMod {
     
     var paramsMap: Map[String, js.Array[String]] = js.native
     
-    var queryEncoder: js.Any = js.native
+    /* private */ var queryEncoder: js.Any = js.native
     
     var rawParams: String = js.native
     

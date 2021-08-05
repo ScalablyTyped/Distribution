@@ -101,122 +101,84 @@ object plugin {
   }
   object IBuffered {
     
-    @scala.inline
-    def apply(): IBuffered = {
+    inline def apply(): IBuffered = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBuffered]
     }
     
-    @scala.inline
-    implicit class IBufferedMutableBuilder[Self <: IBuffered] (val x: Self) extends AnyVal {
+    extension [Self <: IBuffered](x: Self) {
       
-      @scala.inline
-      def setGetBufferedCollection(value: () => js.Any): Self = StObject.set(x, "getBufferedCollection", js.Any.fromFunction0(value))
+      inline def setGetBufferedCollection(value: () => js.Any): Self = StObject.set(x, "getBufferedCollection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBufferedCollectionUndefined: Self = StObject.set(x, "getBufferedCollection", js.undefined)
+      inline def setGetBufferedCollectionUndefined: Self = StObject.set(x, "getBufferedCollection", js.undefined)
       
-      @scala.inline
-      def setGetLeadingBufferZone(value: () => Double): Self = StObject.set(x, "getLeadingBufferZone", js.Any.fromFunction0(value))
+      inline def setGetLeadingBufferZone(value: () => Double): Self = StObject.set(x, "getLeadingBufferZone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLeadingBufferZoneUndefined: Self = StObject.set(x, "getLeadingBufferZone", js.undefined)
+      inline def setGetLeadingBufferZoneUndefined: Self = StObject.set(x, "getLeadingBufferZone", js.undefined)
       
-      @scala.inline
-      def setGetPageFromRecordIndex(value: /* index */ js.UndefOr[Double] => Double): Self = StObject.set(x, "getPageFromRecordIndex", js.Any.fromFunction1(value))
+      inline def setGetPageFromRecordIndex(value: /* index */ js.UndefOr[Double] => Double): Self = StObject.set(x, "getPageFromRecordIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageFromRecordIndexUndefined: Self = StObject.set(x, "getPageFromRecordIndex", js.undefined)
+      inline def setGetPageFromRecordIndexUndefined: Self = StObject.set(x, "getPageFromRecordIndex", js.undefined)
       
-      @scala.inline
-      def setGetPurgePageCount(value: () => Double): Self = StObject.set(x, "getPurgePageCount", js.Any.fromFunction0(value))
+      inline def setGetPurgePageCount(value: () => Double): Self = StObject.set(x, "getPurgePageCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPurgePageCountUndefined: Self = StObject.set(x, "getPurgePageCount", js.undefined)
+      inline def setGetPurgePageCountUndefined: Self = StObject.set(x, "getPurgePageCount", js.undefined)
       
-      @scala.inline
-      def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
+      inline def setGetStore(value: () => js.Any): Self = StObject.set(x, "getStore", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
+      inline def setGetStoreUndefined: Self = StObject.set(x, "getStore", js.undefined)
       
-      @scala.inline
-      def setGetTrailingBufferZone(value: () => Double): Self = StObject.set(x, "getTrailingBufferZone", js.Any.fromFunction0(value))
+      inline def setGetTrailingBufferZone(value: () => Double): Self = StObject.set(x, "getTrailingBufferZone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTrailingBufferZoneUndefined: Self = StObject.set(x, "getTrailingBufferZone", js.undefined)
+      inline def setGetTrailingBufferZoneUndefined: Self = StObject.set(x, "getTrailingBufferZone", js.undefined)
       
-      @scala.inline
-      def setGetViewSize(value: () => Double): Self = StObject.set(x, "getViewSize", js.Any.fromFunction0(value))
+      inline def setGetViewSize(value: () => Double): Self = StObject.set(x, "getViewSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetViewSizeUndefined: Self = StObject.set(x, "getViewSize", js.undefined)
+      inline def setGetViewSizeUndefined: Self = StObject.set(x, "getViewSize", js.undefined)
       
-      @scala.inline
-      def setLeadingBufferZone(value: Double): Self = StObject.set(x, "leadingBufferZone", value.asInstanceOf[js.Any])
+      inline def setLeadingBufferZone(value: Double): Self = StObject.set(x, "leadingBufferZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingBufferZoneUndefined: Self = StObject.set(x, "leadingBufferZone", js.undefined)
+      inline def setLeadingBufferZoneUndefined: Self = StObject.set(x, "leadingBufferZone", js.undefined)
       
-      @scala.inline
-      def setPrefetch(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
+      inline def setPrefetch(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "prefetch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrefetchPage(value: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "prefetchPage", js.Any.fromFunction2(value))
+      inline def setPrefetchPage(value: (/* page */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "prefetchPage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrefetchPageUndefined: Self = StObject.set(x, "prefetchPage", js.undefined)
+      inline def setPrefetchPageUndefined: Self = StObject.set(x, "prefetchPage", js.undefined)
       
-      @scala.inline
-      def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
+      inline def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
       
-      @scala.inline
-      def setPurgePageCount(value: Double): Self = StObject.set(x, "purgePageCount", value.asInstanceOf[js.Any])
+      inline def setPurgePageCount(value: Double): Self = StObject.set(x, "purgePageCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurgePageCountUndefined: Self = StObject.set(x, "purgePageCount", js.undefined)
+      inline def setPurgePageCountUndefined: Self = StObject.set(x, "purgePageCount", js.undefined)
       
-      @scala.inline
-      def setSetBufferedCollection(value: /* bufferedCollection */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBufferedCollection", js.Any.fromFunction1(value))
+      inline def setSetBufferedCollection(value: /* bufferedCollection */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBufferedCollection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetBufferedCollectionUndefined: Self = StObject.set(x, "setBufferedCollection", js.undefined)
+      inline def setSetBufferedCollectionUndefined: Self = StObject.set(x, "setBufferedCollection", js.undefined)
       
-      @scala.inline
-      def setSetLeadingBufferZone(value: /* leadingBufferZone */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setLeadingBufferZone", js.Any.fromFunction1(value))
+      inline def setSetLeadingBufferZone(value: /* leadingBufferZone */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setLeadingBufferZone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLeadingBufferZoneUndefined: Self = StObject.set(x, "setLeadingBufferZone", js.undefined)
+      inline def setSetLeadingBufferZoneUndefined: Self = StObject.set(x, "setLeadingBufferZone", js.undefined)
       
-      @scala.inline
-      def setSetPurgePageCount(value: /* purgePageCount */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setPurgePageCount", js.Any.fromFunction1(value))
+      inline def setSetPurgePageCount(value: /* purgePageCount */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setPurgePageCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPurgePageCountUndefined: Self = StObject.set(x, "setPurgePageCount", js.undefined)
+      inline def setSetPurgePageCountUndefined: Self = StObject.set(x, "setPurgePageCount", js.undefined)
       
-      @scala.inline
-      def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
+      inline def setSetStore(value: /* store */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setStore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
+      inline def setSetStoreUndefined: Self = StObject.set(x, "setStore", js.undefined)
       
-      @scala.inline
-      def setSetTrailingBufferZone(value: /* trailingBufferZone */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTrailingBufferZone", js.Any.fromFunction1(value))
+      inline def setSetTrailingBufferZone(value: /* trailingBufferZone */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setTrailingBufferZone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetTrailingBufferZoneUndefined: Self = StObject.set(x, "setTrailingBufferZone", js.undefined)
+      inline def setSetTrailingBufferZoneUndefined: Self = StObject.set(x, "setTrailingBufferZone", js.undefined)
       
-      @scala.inline
-      def setSetViewSize(value: /* viewSize */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setViewSize", js.Any.fromFunction1(value))
+      inline def setSetViewSize(value: /* viewSize */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setViewSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetViewSizeUndefined: Self = StObject.set(x, "setViewSize", js.undefined)
+      inline def setSetViewSizeUndefined: Self = StObject.set(x, "setViewSize", js.undefined)
       
-      @scala.inline
-      def setTrailingBufferZone(value: Double): Self = StObject.set(x, "trailingBufferZone", value.asInstanceOf[js.Any])
+      inline def setTrailingBufferZone(value: Double): Self = StObject.set(x, "trailingBufferZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingBufferZoneUndefined: Self = StObject.set(x, "trailingBufferZone", js.undefined)
+      inline def setTrailingBufferZoneUndefined: Self = StObject.set(x, "trailingBufferZone", js.undefined)
     }
   }
 }

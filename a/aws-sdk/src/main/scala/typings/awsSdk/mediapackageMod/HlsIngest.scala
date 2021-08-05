@@ -13,22 +13,17 @@ trait HlsIngest extends StObject {
 }
 object HlsIngest {
   
-  @scala.inline
-  def apply(): HlsIngest = {
+  inline def apply(): HlsIngest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsIngest]
   }
   
-  @scala.inline
-  implicit class HlsIngestMutableBuilder[Self <: HlsIngest] (val x: Self) extends AnyVal {
+  extension [Self <: HlsIngest](x: Self) {
     
-    @scala.inline
-    def setIngestEndpoints(value: listOfIngestEndpoint): Self = StObject.set(x, "IngestEndpoints", value.asInstanceOf[js.Any])
+    inline def setIngestEndpoints(value: listOfIngestEndpoint): Self = StObject.set(x, "IngestEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestEndpointsUndefined: Self = StObject.set(x, "IngestEndpoints", js.undefined)
+    inline def setIngestEndpointsUndefined: Self = StObject.set(x, "IngestEndpoints", js.undefined)
     
-    @scala.inline
-    def setIngestEndpointsVarargs(value: IngestEndpoint*): Self = StObject.set(x, "IngestEndpoints", js.Array(value :_*))
+    inline def setIngestEndpointsVarargs(value: IngestEndpoint*): Self = StObject.set(x, "IngestEndpoints", js.Array(value :_*))
   }
 }

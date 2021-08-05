@@ -32,8 +32,7 @@ trait Place extends StObject {
 }
 object Place {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: PlaceAttribute,
     bounding_box: Polygon,
     contained_within: js.Array[Place],
@@ -50,43 +49,30 @@ object Place {
     __obj.asInstanceOf[Place]
   }
   
-  @scala.inline
-  implicit class PlaceMutableBuilder[Self <: Place] (val x: Self) extends AnyVal {
+  extension [Self <: Place](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: PlaceAttribute): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: PlaceAttribute): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBounding_box(value: Polygon): Self = StObject.set(x, "bounding_box", value.asInstanceOf[js.Any])
+    inline def setBounding_box(value: Polygon): Self = StObject.set(x, "bounding_box", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContained_within(value: js.Array[Place]): Self = StObject.set(x, "contained_within", value.asInstanceOf[js.Any])
+    inline def setContained_within(value: js.Array[Place]): Self = StObject.set(x, "contained_within", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContained_withinVarargs(value: Place*): Self = StObject.set(x, "contained_within", js.Array(value :_*))
+    inline def setContained_withinVarargs(value: Place*): Self = StObject.set(x, "contained_within", js.Array(value :_*))
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
+    inline def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+    inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: Point): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Point): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlace_type(value: String): Self = StObject.set(x, "place_type", value.asInstanceOf[js.Any])
+    inline def setPlace_type(value: String): Self = StObject.set(x, "place_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

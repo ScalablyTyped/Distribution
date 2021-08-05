@@ -45,49 +45,35 @@ trait IBindablePropertyConfig
 }
 object IBindablePropertyConfig {
   
-  @scala.inline
-  def apply(): IBindablePropertyConfig = {
+  inline def apply(): IBindablePropertyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBindablePropertyConfig]
   }
   
-  @scala.inline
-  implicit class IBindablePropertyConfigMutableBuilder[Self <: IBindablePropertyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IBindablePropertyConfig](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
     
-    @scala.inline
-    def setChangeHandler(value: String): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
+    inline def setChangeHandler(value: String): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeHandlerUndefined: Self = StObject.set(x, "changeHandler", js.undefined)
+    inline def setChangeHandlerUndefined: Self = StObject.set(x, "changeHandler", js.undefined)
     
-    @scala.inline
-    def setDefaultBindingMode(value: bindingMode | oneTime | oneWay | twoWay | fromView | toView): Self = StObject.set(x, "defaultBindingMode", value.asInstanceOf[js.Any])
+    inline def setDefaultBindingMode(value: bindingMode | oneTime | oneWay | twoWay | fromView | toView): Self = StObject.set(x, "defaultBindingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultBindingModeUndefined: Self = StObject.set(x, "defaultBindingMode", js.undefined)
+    inline def setDefaultBindingModeUndefined: Self = StObject.set(x, "defaultBindingMode", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrimaryProperty(value: Boolean): Self = StObject.set(x, "primaryProperty", value.asInstanceOf[js.Any])
+    inline def setPrimaryProperty(value: Boolean): Self = StObject.set(x, "primaryProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryPropertyUndefined: Self = StObject.set(x, "primaryProperty", js.undefined)
+    inline def setPrimaryPropertyUndefined: Self = StObject.set(x, "primaryProperty", js.undefined)
   }
 }

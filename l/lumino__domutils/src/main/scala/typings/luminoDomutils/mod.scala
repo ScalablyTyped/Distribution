@@ -22,8 +22,7 @@ object mod {
       *
       * @param text - The text to copy to the clipboard.
       */
-    @scala.inline
-    def copyText(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copyText")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def copyText(text: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copyText")(text.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object ElementExt {
@@ -39,8 +38,7 @@ object mod {
       *
       * @returns The box sizing data for the specified element.
       */
-    @scala.inline
-    def boxSizing(element: Element): IBoxSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("boxSizing")(element.asInstanceOf[js.Any]).asInstanceOf[IBoxSizing]
+    inline def boxSizing(element: Element): IBoxSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("boxSizing")(element.asInstanceOf[js.Any]).asInstanceOf[IBoxSizing]
     
     /**
       * Test whether a client position lies within an element.
@@ -53,8 +51,7 @@ object mod {
       *
       * @returns Whether the point is within the given element.
       */
-    @scala.inline
-    def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hitTest")(element.asInstanceOf[js.Any], clientX.asInstanceOf[js.Any], clientY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hitTest")(element.asInstanceOf[js.Any], clientX.asInstanceOf[js.Any], clientY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Vertically scroll an element into view if needed.
@@ -72,8 +69,7 @@ object mod {
       * within the visible area, no scrolling will take place. Otherwise,
       * the nearest edges of the area and element are aligned.
       */
-    @scala.inline
-    def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoViewIfNeeded")(area.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoViewIfNeeded")(area.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Compute the size limits for an element.
@@ -82,8 +78,7 @@ object mod {
       *
       * @returns The size limit data for the specified element.
       */
-    @scala.inline
-    def sizeLimits(element: Element): ISizeLimits = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeLimits")(element.asInstanceOf[js.Any]).asInstanceOf[ISizeLimits]
+    inline def sizeLimits(element: Element): ISizeLimits = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeLimits")(element.asInstanceOf[js.Any]).asInstanceOf[ISizeLimits]
   }
   
   object Platform {
@@ -131,10 +126,8 @@ object mod {
       * On Mac the `accel` key is the command key. On all other
       * platforms the `accel` key is the control key.
       */
-    @scala.inline
-    def accelKey(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("accelKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-    @scala.inline
-    def accelKey(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("accelKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def accelKey(event: KeyboardEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("accelKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def accelKey(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("accelKey")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object Selector {
@@ -168,8 +161,7 @@ object mod {
       * The computed result is cached, so subsequent calculations for the
       * same selector are extremely fast.
       */
-    @scala.inline
-    def calculateSpecificity(selector: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateSpecificity")(selector.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def calculateSpecificity(selector: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateSpecificity")(selector.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Test whether a selector is a valid CSS selector.
@@ -182,8 +174,7 @@ object mod {
       * The computed result is cached, so subsequent tests for the same
       * selector are extremely fast.
       */
-    @scala.inline
-    def isValid(selector: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(selector.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(selector: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(selector.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Test whether an element matches a CSS selector.
@@ -198,7 +189,6 @@ object mod {
       * This function uses the builtin browser capabilities when possible,
       * falling back onto a document query otherwise.
       */
-    @scala.inline
-    def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def matches(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

@@ -29,8 +29,7 @@ trait IELangEditDelegates extends StObject {
 }
 object IELangEditDelegates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     btnAddClickHandler: js.Function,
     btnAddHandler: js.Function,
     insertCallback: js.Function,
@@ -46,37 +45,26 @@ object IELangEditDelegates {
     __obj.asInstanceOf[IELangEditDelegates]
   }
   
-  @scala.inline
-  implicit class IELangEditDelegatesMutableBuilder[Self <: IELangEditDelegates] (val x: Self) extends AnyVal {
+  extension [Self <: IELangEditDelegates](x: Self) {
     
-    @scala.inline
-    def setBtnAddClickHandler(value: js.Function): Self = StObject.set(x, "btnAddClickHandler", value.asInstanceOf[js.Any])
+    inline def setBtnAddClickHandler(value: js.Function): Self = StObject.set(x, "btnAddClickHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBtnAddHandler(value: js.Function): Self = StObject.set(x, "btnAddHandler", value.asInstanceOf[js.Any])
+    inline def setBtnAddHandler(value: js.Function): Self = StObject.set(x, "btnAddHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertCallback(value: js.Function): Self = StObject.set(x, "insertCallback", value.asInstanceOf[js.Any])
+    inline def setInsertCallback(value: js.Function): Self = StObject.set(x, "insertCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertHandler(value: js.Function): Self = StObject.set(x, "insertHandler", value.asInstanceOf[js.Any])
+    inline def setInsertHandler(value: js.Function): Self = StObject.set(x, "insertHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyCallback(value: js.Function): Self = StObject.set(x, "modifyCallback", value.asInstanceOf[js.Any])
+    inline def setModifyCallback(value: js.Function): Self = StObject.set(x, "modifyCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyHandler(value: js.Function): Self = StObject.set(x, "modifyHandler", value.asInstanceOf[js.Any])
+    inline def setModifyHandler(value: js.Function): Self = StObject.set(x, "modifyHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveCallback(value: js.Function): Self = StObject.set(x, "removeCallback", value.asInstanceOf[js.Any])
+    inline def setRemoveCallback(value: js.Function): Self = StObject.set(x, "removeCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveHandler(value: js.Function): Self = StObject.set(x, "removeHandler", value.asInstanceOf[js.Any])
+    inline def setRemoveHandler(value: js.Function): Self = StObject.set(x, "removeHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectCallback(value: js.Function): Self = StObject.set(x, "selectCallback", value.asInstanceOf[js.Any])
+    inline def setSelectCallback(value: js.Function): Self = StObject.set(x, "selectCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectHandler(value: js.Function): Self = StObject.set(x, "selectHandler", value.asInstanceOf[js.Any])
+    inline def setSelectHandler(value: js.Function): Self = StObject.set(x, "selectHandler", value.asInstanceOf[js.Any])
   }
 }

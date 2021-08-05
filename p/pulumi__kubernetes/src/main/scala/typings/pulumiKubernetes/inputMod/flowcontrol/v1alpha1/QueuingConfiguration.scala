@@ -27,31 +27,23 @@ trait QueuingConfiguration extends StObject {
 }
 object QueuingConfiguration {
   
-  @scala.inline
-  def apply(): QueuingConfiguration = {
+  inline def apply(): QueuingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueuingConfiguration]
   }
   
-  @scala.inline
-  implicit class QueuingConfigurationMutableBuilder[Self <: QueuingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: QueuingConfiguration](x: Self) {
     
-    @scala.inline
-    def setHandSize(value: Input[Double]): Self = StObject.set(x, "handSize", value.asInstanceOf[js.Any])
+    inline def setHandSize(value: Input[Double]): Self = StObject.set(x, "handSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandSizeUndefined: Self = StObject.set(x, "handSize", js.undefined)
+    inline def setHandSizeUndefined: Self = StObject.set(x, "handSize", js.undefined)
     
-    @scala.inline
-    def setQueueLengthLimit(value: Input[Double]): Self = StObject.set(x, "queueLengthLimit", value.asInstanceOf[js.Any])
+    inline def setQueueLengthLimit(value: Input[Double]): Self = StObject.set(x, "queueLengthLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueLengthLimitUndefined: Self = StObject.set(x, "queueLengthLimit", js.undefined)
+    inline def setQueueLengthLimitUndefined: Self = StObject.set(x, "queueLengthLimit", js.undefined)
     
-    @scala.inline
-    def setQueues(value: Input[Double]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
+    inline def setQueues(value: Input[Double]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
+    inline def setQueuesUndefined: Self = StObject.set(x, "queues", js.undefined)
   }
 }

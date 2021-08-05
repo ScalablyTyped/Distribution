@@ -14,25 +14,19 @@ trait accessLevelAccessLevelund extends StObject {
 }
 object accessLevelAccessLevelund {
   
-  @scala.inline
-  def apply(): accessLevelAccessLevelund = {
+  inline def apply(): accessLevelAccessLevelund = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[accessLevelAccessLevelund]
   }
   
-  @scala.inline
-  implicit class accessLevelAccessLevelundMutableBuilder[Self <: accessLevelAccessLevelund] (val x: Self) extends AnyVal {
+  extension [Self <: accessLevelAccessLevelund](x: Self) {
     
-    @scala.inline
-    def setAccessLevel(value: AccessLevel): Self = StObject.set(x, "accessLevel", value.asInstanceOf[js.Any])
+    inline def setAccessLevel(value: AccessLevel): Self = StObject.set(x, "accessLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLevelUndefined: Self = StObject.set(x, "accessLevel", js.undefined)
+    inline def setAccessLevelUndefined: Self = StObject.set(x, "accessLevel", js.undefined)
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

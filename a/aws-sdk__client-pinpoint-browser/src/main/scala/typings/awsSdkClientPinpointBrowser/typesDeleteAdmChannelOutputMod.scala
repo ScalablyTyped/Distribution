@@ -26,20 +26,16 @@ object typesDeleteAdmChannelOutputMod {
   }
   object DeleteAdmChannelOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, ADMChannelResponse: UnmarshalledADMChannelResponse): DeleteAdmChannelOutput = {
+    inline def apply($metadata: ResponseMetadata, ADMChannelResponse: UnmarshalledADMChannelResponse): DeleteAdmChannelOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ADMChannelResponse = ADMChannelResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteAdmChannelOutput]
     }
     
-    @scala.inline
-    implicit class DeleteAdmChannelOutputMutableBuilder[Self <: DeleteAdmChannelOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteAdmChannelOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADMChannelResponse(value: UnmarshalledADMChannelResponse): Self = StObject.set(x, "ADMChannelResponse", value.asInstanceOf[js.Any])
+      inline def setADMChannelResponse(value: UnmarshalledADMChannelResponse): Self = StObject.set(x, "ADMChannelResponse", value.asInstanceOf[js.Any])
     }
   }
 }

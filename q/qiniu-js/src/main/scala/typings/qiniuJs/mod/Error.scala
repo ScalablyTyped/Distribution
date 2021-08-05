@@ -20,28 +20,21 @@ trait Error extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply(code: Double, message: String, reqId: String): Error = {
+  inline def apply(code: Double, message: String, reqId: String): Error = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], reqId = reqId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Error]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+  extension [Self <: Error](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequestError(value: `true`): Self = StObject.set(x, "isRequestError", value.asInstanceOf[js.Any])
+    inline def setIsRequestError(value: `true`): Self = StObject.set(x, "isRequestError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequestErrorUndefined: Self = StObject.set(x, "isRequestError", js.undefined)
+    inline def setIsRequestErrorUndefined: Self = StObject.set(x, "isRequestError", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqId(value: String): Self = StObject.set(x, "reqId", value.asInstanceOf[js.Any])
+    inline def setReqId(value: String): Self = StObject.set(x, "reqId", value.asInstanceOf[js.Any])
   }
 }

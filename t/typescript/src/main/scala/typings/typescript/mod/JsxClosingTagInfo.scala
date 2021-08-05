@@ -10,16 +10,13 @@ trait JsxClosingTagInfo extends StObject {
 }
 object JsxClosingTagInfo {
   
-  @scala.inline
-  def apply(newText: java.lang.String): JsxClosingTagInfo = {
+  inline def apply(newText: java.lang.String): JsxClosingTagInfo = {
     val __obj = js.Dynamic.literal(newText = newText.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsxClosingTagInfo]
   }
   
-  @scala.inline
-  implicit class JsxClosingTagInfoMutableBuilder[Self <: JsxClosingTagInfo] (val x: Self) extends AnyVal {
+  extension [Self <: JsxClosingTagInfo](x: Self) {
     
-    @scala.inline
-    def setNewText(value: java.lang.String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
+    inline def setNewText(value: java.lang.String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
   }
 }

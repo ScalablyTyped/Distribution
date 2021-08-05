@@ -57,8 +57,7 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply[I, C, T](
+    inline def apply[I, C, T](
       itemKey: String | (js.Function1[/* item */ I, String]),
       list: js.Array[I],
       template: Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], T]
@@ -67,79 +66,55 @@ object mod {
       __obj.asInstanceOf[Props[I, C, T]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?, ?, ?], I, C, T] (val x: Self & (Props[I, C, T])) extends AnyVal {
+    extension [Self <: Props[?, ?, ?], I, C, T](x: Self & (Props[I, C, T])) {
       
-      @scala.inline
-      def setAutoScrollMaxSpeed(value: Double): Self = StObject.set(x, "autoScrollMaxSpeed", value.asInstanceOf[js.Any])
+      inline def setAutoScrollMaxSpeed(value: Double): Self = StObject.set(x, "autoScrollMaxSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoScrollMaxSpeedUndefined: Self = StObject.set(x, "autoScrollMaxSpeed", js.undefined)
+      inline def setAutoScrollMaxSpeedUndefined: Self = StObject.set(x, "autoScrollMaxSpeed", js.undefined)
       
-      @scala.inline
-      def setAutoScrollRegionSize(value: Double): Self = StObject.set(x, "autoScrollRegionSize", value.asInstanceOf[js.Any])
+      inline def setAutoScrollRegionSize(value: Double): Self = StObject.set(x, "autoScrollRegionSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoScrollRegionSizeUndefined: Self = StObject.set(x, "autoScrollRegionSize", js.undefined)
+      inline def setAutoScrollRegionSizeUndefined: Self = StObject.set(x, "autoScrollRegionSize", js.undefined)
       
-      @scala.inline
-      def setCommonProps(value: C): Self = StObject.set(x, "commonProps", value.asInstanceOf[js.Any])
+      inline def setCommonProps(value: C): Self = StObject.set(x, "commonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonPropsUndefined: Self = StObject.set(x, "commonProps", js.undefined)
+      inline def setCommonPropsUndefined: Self = StObject.set(x, "commonProps", js.undefined)
       
-      @scala.inline
-      def setConstrainDrag(value: Boolean): Self = StObject.set(x, "constrainDrag", value.asInstanceOf[js.Any])
+      inline def setConstrainDrag(value: Boolean): Self = StObject.set(x, "constrainDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstrainDragUndefined: Self = StObject.set(x, "constrainDrag", js.undefined)
+      inline def setConstrainDragUndefined: Self = StObject.set(x, "constrainDrag", js.undefined)
       
-      @scala.inline
-      def setContainer(value: () => js.UndefOr[HTMLElement | Null]): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
+      inline def setContainer(value: () => js.UndefOr[HTMLElement | Null]): Self = StObject.set(x, "container", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setItemKey(value: String | (js.Function1[/* item */ I, String])): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
+      inline def setItemKey(value: String | (js.Function1[/* item */ I, String])): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemKeyFunction1(value: /* item */ I => String): Self = StObject.set(x, "itemKey", js.Any.fromFunction1(value))
+      inline def setItemKeyFunction1(value: /* item */ I => String): Self = StObject.set(x, "itemKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setList(value: js.Array[I]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: js.Array[I]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListVarargs(value: I*): Self = StObject.set(x, "list", js.Array(value :_*))
+      inline def setListVarargs(value: I*): Self = StObject.set(x, "list", js.Array(value :_*))
       
-      @scala.inline
-      def setOnMoveEnd(
+      inline def setOnMoveEnd(
         value: (/* newList */ js.Array[I], /* movedItem */ I, /* oldIndex */ Double, /* newIndex */ Double) => Unit
       ): Self = StObject.set(x, "onMoveEnd", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnMoveEndUndefined: Self = StObject.set(x, "onMoveEnd", js.undefined)
+      inline def setOnMoveEndUndefined: Self = StObject.set(x, "onMoveEnd", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setSpringConfig(value: js.Object): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
+      inline def setSpringConfig(value: js.Object): Self = StObject.set(x, "springConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpringConfigUndefined: Self = StObject.set(x, "springConfig", js.undefined)
+      inline def setSpringConfigUndefined: Self = StObject.set(x, "springConfig", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], T]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], T]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsetZIndex(value: Boolean): Self = StObject.set(x, "unsetZIndex", value.asInstanceOf[js.Any])
+      inline def setUnsetZIndex(value: Boolean): Self = StObject.set(x, "unsetZIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsetZIndexUndefined: Self = StObject.set(x, "unsetZIndex", js.undefined)
+      inline def setUnsetZIndexUndefined: Self = StObject.set(x, "unsetZIndex", js.undefined)
     }
   }
   
@@ -157,29 +132,22 @@ object mod {
   }
   object TemplateProps {
     
-    @scala.inline
-    def apply[I, C](anySelected: Double, commonProps: C, dragHandleProps: js.Object, item: I, itemSelected: Double): TemplateProps[I, C] = {
+    inline def apply[I, C](anySelected: Double, commonProps: C, dragHandleProps: js.Object, item: I, itemSelected: Double): TemplateProps[I, C] = {
       val __obj = js.Dynamic.literal(anySelected = anySelected.asInstanceOf[js.Any], commonProps = commonProps.asInstanceOf[js.Any], dragHandleProps = dragHandleProps.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemSelected = itemSelected.asInstanceOf[js.Any])
       __obj.asInstanceOf[TemplateProps[I, C]]
     }
     
-    @scala.inline
-    implicit class TemplatePropsMutableBuilder[Self <: TemplateProps[?, ?], I, C] (val x: Self & (TemplateProps[I, C])) extends AnyVal {
+    extension [Self <: TemplateProps[?, ?], I, C](x: Self & (TemplateProps[I, C])) {
       
-      @scala.inline
-      def setAnySelected(value: Double): Self = StObject.set(x, "anySelected", value.asInstanceOf[js.Any])
+      inline def setAnySelected(value: Double): Self = StObject.set(x, "anySelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonProps(value: C): Self = StObject.set(x, "commonProps", value.asInstanceOf[js.Any])
+      inline def setCommonProps(value: C): Self = StObject.set(x, "commonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragHandleProps(value: js.Object): Self = StObject.set(x, "dragHandleProps", value.asInstanceOf[js.Any])
+      inline def setDragHandleProps(value: js.Object): Self = StObject.set(x, "dragHandleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: I): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: I): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemSelected(value: Double): Self = StObject.set(x, "itemSelected", value.asInstanceOf[js.Any])
+      inline def setItemSelected(value: Double): Self = StObject.set(x, "itemSelected", value.asInstanceOf[js.Any])
     }
   }
 }

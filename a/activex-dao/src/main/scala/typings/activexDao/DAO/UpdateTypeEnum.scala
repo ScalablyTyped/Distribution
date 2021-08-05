@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateTypeEnum extends StObject
 object UpdateTypeEnum {
   
-  @scala.inline
-  def dbUpdateBatch: `4` = 4.asInstanceOf[`4`]
+  inline def dbUpdateBatch: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def dbUpdateCurrentRecord: `2` = 2.asInstanceOf[`2`]
+  inline def dbUpdateCurrentRecord: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def dbUpdateRegular: `1` = 1.asInstanceOf[`1`]
+  inline def dbUpdateRegular: `1` = 1.asInstanceOf[`1`]
 }

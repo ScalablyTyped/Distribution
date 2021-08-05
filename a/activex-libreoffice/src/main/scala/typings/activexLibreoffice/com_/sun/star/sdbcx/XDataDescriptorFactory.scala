@@ -20,8 +20,7 @@ trait XDataDescriptorFactory
 }
 object XDataDescriptorFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDataDescriptor: () => XPropertySet,
     queryInterface: `type` => js.Any,
@@ -31,10 +30,8 @@ object XDataDescriptorFactory {
     __obj.asInstanceOf[XDataDescriptorFactory]
   }
   
-  @scala.inline
-  implicit class XDataDescriptorFactoryMutableBuilder[Self <: XDataDescriptorFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XDataDescriptorFactory](x: Self) {
     
-    @scala.inline
-    def setCreateDataDescriptor(value: () => XPropertySet): Self = StObject.set(x, "createDataDescriptor", js.Any.fromFunction0(value))
+    inline def setCreateDataDescriptor(value: () => XPropertySet): Self = StObject.set(x, "createDataDescriptor", js.Any.fromFunction0(value))
   }
 }

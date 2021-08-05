@@ -28,31 +28,23 @@ trait PutAttributesRequest extends StObject {
 }
 object PutAttributesRequest {
   
-  @scala.inline
-  def apply(Attributes: ReplaceableAttributeList, DomainName: String, ItemName: String): PutAttributesRequest = {
+  inline def apply(Attributes: ReplaceableAttributeList, DomainName: String, ItemName: String): PutAttributesRequest = {
     val __obj = js.Dynamic.literal(Attributes = Attributes.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutAttributesRequestMutableBuilder[Self <: PutAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: ReplaceableAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: ReplaceableAttributeList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: ReplaceableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: ReplaceableAttribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpected(value: UpdateCondition): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: UpdateCondition): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
+    inline def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

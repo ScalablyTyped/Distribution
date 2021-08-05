@@ -13,20 +13,16 @@ object typesMod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setLifetime(value: Lifetime): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+      inline def setLifetime(value: Lifetime): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
+      inline def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
     }
   }
 }

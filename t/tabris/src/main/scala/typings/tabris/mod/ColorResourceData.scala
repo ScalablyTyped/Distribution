@@ -16,35 +16,27 @@ trait ColorResourceData[Resources /* <: /* import warning: importer.ImportType#a
 }
 object ColorResourceData {
   
-  @scala.inline
-  def apply[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def apply[Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: tabris.tabris.Color}
     */ typings.tabris.tabrisStrings.ColorResourceData & TopLevel[js.Any] */](): ColorResourceData[Resources] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorResourceData[Resources]]
   }
   
-  @scala.inline
-  implicit class ColorResourceDataMutableBuilder[Self <: ColorResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  extension [Self <: ColorResourceData[?], Resources /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof Resources ]: tabris.tabris.Color}
-    */ typings.tabris.tabrisStrings.ColorResourceData & TopLevel[js.Any] */] (val x: Self & ColorResourceData[Resources]) extends AnyVal {
+    */ typings.tabris.tabrisStrings.ColorResourceData & TopLevel[js.Any] */](x: Self & ColorResourceData[Resources]) {
     
-    @scala.inline
-    def setBuild(value: Selectable[ColorValue]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Selectable[ColorValue]): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildNull: Self = StObject.set(x, "build", null)
+    inline def setBuildNull: Self = StObject.set(x, "build", null)
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
-    @scala.inline
-    def setConstructor(value: Selectable[ColorValue]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    inline def setConstructor(value: Selectable[ColorValue]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstructorNull: Self = StObject.set(x, "constructor", null)
+    inline def setConstructorNull: Self = StObject.set(x, "constructor", null)
     
-    @scala.inline
-    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
   }
 }

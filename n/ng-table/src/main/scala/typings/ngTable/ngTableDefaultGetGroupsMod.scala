@@ -14,6 +14,5 @@ object ngTableDefaultGetGroupsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ngTableDefaultGetGroups[T]($q: IQService, ngTableDefaultGetData: IDefaultGetData[IDataRowGroup[T]]): IGetGroupFunc[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ngTableDefaultGetGroups")($q.asInstanceOf[js.Any], ngTableDefaultGetData.asInstanceOf[js.Any])).asInstanceOf[IGetGroupFunc[T]]
+  inline def ngTableDefaultGetGroups[T]($q: IQService, ngTableDefaultGetData: IDefaultGetData[IDataRowGroup[T]]): IGetGroupFunc[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ngTableDefaultGetGroups")($q.asInstanceOf[js.Any], ngTableDefaultGetData.asInstanceOf[js.Any])).asInstanceOf[IGetGroupFunc[T]]
 }

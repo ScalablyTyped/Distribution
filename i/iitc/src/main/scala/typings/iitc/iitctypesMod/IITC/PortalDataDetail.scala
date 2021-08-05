@@ -18,8 +18,7 @@ trait PortalDataDetail
 }
 object PortalDataDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifactDetail: ArtifactDetail,
     health: Double,
     image: String,
@@ -41,22 +40,16 @@ object PortalDataDetail {
     __obj.asInstanceOf[PortalDataDetail]
   }
   
-  @scala.inline
-  implicit class PortalDataDetailMutableBuilder[Self <: PortalDataDetail] (val x: Self) extends AnyVal {
+  extension [Self <: PortalDataDetail](x: Self) {
     
-    @scala.inline
-    def setArtifactDetail(value: ArtifactDetail): Self = StObject.set(x, "artifactDetail", value.asInstanceOf[js.Any])
+    inline def setArtifactDetail(value: ArtifactDetail): Self = StObject.set(x, "artifactDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMods(value: js.Tuple4[Mod | Null, Mod | Null, Mod | Null, Mod | Null]): Self = StObject.set(x, "mods", value.asInstanceOf[js.Any])
+    inline def setMods(value: js.Tuple4[Mod | Null, Mod | Null, Mod | Null, Mod | Null]): Self = StObject.set(x, "mods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResonators(value: js.Array[Resonator]): Self = StObject.set(x, "resonators", value.asInstanceOf[js.Any])
+    inline def setResonators(value: js.Array[Resonator]): Self = StObject.set(x, "resonators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResonatorsVarargs(value: Resonator*): Self = StObject.set(x, "resonators", js.Array(value :_*))
+    inline def setResonatorsVarargs(value: Resonator*): Self = StObject.set(x, "resonators", js.Array(value :_*))
   }
 }

@@ -17,13 +17,10 @@ object CommandType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def COMMAND: `2` = 2.asInstanceOf[`2`]
+    inline def COMMAND: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def QUERY: `1` = 1.asInstanceOf[`1`]
+    inline def QUERY: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def TABLE: `0` = 0.asInstanceOf[`0`]
+    inline def TABLE: `0` = 0.asInstanceOf[`0`]
   }
 }

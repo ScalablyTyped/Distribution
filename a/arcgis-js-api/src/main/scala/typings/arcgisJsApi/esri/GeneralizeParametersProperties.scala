@@ -35,34 +35,25 @@ trait GeneralizeParametersProperties extends StObject {
 }
 object GeneralizeParametersProperties {
   
-  @scala.inline
-  def apply(): GeneralizeParametersProperties = {
+  inline def apply(): GeneralizeParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeneralizeParametersProperties]
   }
   
-  @scala.inline
-  implicit class GeneralizeParametersPropertiesMutableBuilder[Self <: GeneralizeParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GeneralizeParametersProperties](x: Self) {
     
-    @scala.inline
-    def setDeviationUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "deviationUnit", value.asInstanceOf[js.Any])
+    inline def setDeviationUnit(value: feet_ | kilometers_ | meters_ | miles_ | `nautical-miles` | yards): Self = StObject.set(x, "deviationUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviationUnitUndefined: Self = StObject.set(x, "deviationUnit", js.undefined)
+    inline def setDeviationUnitUndefined: Self = StObject.set(x, "deviationUnit", js.undefined)
     
-    @scala.inline
-    def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
+    inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    @scala.inline
-    def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
+    inline def setGeometriesVarargs(value: GeometryProperties*): Self = StObject.set(x, "geometries", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxDeviation(value: Double): Self = StObject.set(x, "maxDeviation", value.asInstanceOf[js.Any])
+    inline def setMaxDeviation(value: Double): Self = StObject.set(x, "maxDeviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDeviationUndefined: Self = StObject.set(x, "maxDeviation", js.undefined)
+    inline def setMaxDeviationUndefined: Self = StObject.set(x, "maxDeviation", js.undefined)
   }
 }

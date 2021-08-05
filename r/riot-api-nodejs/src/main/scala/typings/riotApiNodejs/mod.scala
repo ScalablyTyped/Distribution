@@ -42,9 +42,9 @@ object mod {
   class API protected () extends StObject {
     def this(ApiKeys: js.Array[String]) = this()
     
-    var ApiKey: js.Any = js.native
+    /* private */ var ApiKey: js.Any = js.native
     
-    var ApiKeys: js.Any = js.native
+    /* private */ var ApiKeys: js.Any = js.native
     
     /**
       * get the API Key that is used for the requests
@@ -339,7 +339,7 @@ object mod {
       */
     def parseURL(unparsedURL: String): String = js.native
     
-    var region: js.Any = js.native
+    /* private */ var region: js.Any = js.native
     
     /**
       * set the region where you want to send requests

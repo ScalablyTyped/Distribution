@@ -45,7 +45,7 @@ trait OlkListBox extends StObject {
   
   var MultiSelect: OlMultiSelect = js.native
   
-  @JSName("Outlook.OlkListBox_typekey")
+  /* private */ @JSName("Outlook.OlkListBox_typekey")
   var OutlookDotOlkListBox_typekey: OlkListBox = js.native
   
   def RemoveItem(Index: Double): Unit = js.native

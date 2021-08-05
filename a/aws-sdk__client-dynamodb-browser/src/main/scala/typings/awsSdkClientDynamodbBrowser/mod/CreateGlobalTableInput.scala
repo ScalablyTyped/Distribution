@@ -11,8 +11,7 @@ trait CreateGlobalTableInput
      with typings.awsSdkClientDynamodbBrowser.typesCreateGlobalTableInputMod.CreateGlobalTableInput
 object CreateGlobalTableInput {
   
-  @scala.inline
-  def apply(GlobalTableName: String, ReplicationGroup: js.Array[Replica] | Iterable[Replica]): CreateGlobalTableInput = {
+  inline def apply(GlobalTableName: String, ReplicationGroup: js.Array[Replica] | Iterable[Replica]): CreateGlobalTableInput = {
     val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicationGroup = ReplicationGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGlobalTableInput]
   }

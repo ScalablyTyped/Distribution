@@ -21,8 +21,7 @@ trait XSecondAxisTitleSupplier
 }
 object XSecondAxisTitleSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SecondXAxisTitle: XShape,
     SecondYAxisTitle: XShape,
     acquire: () => Unit,
@@ -35,19 +34,14 @@ object XSecondAxisTitleSupplier {
     __obj.asInstanceOf[XSecondAxisTitleSupplier]
   }
   
-  @scala.inline
-  implicit class XSecondAxisTitleSupplierMutableBuilder[Self <: XSecondAxisTitleSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XSecondAxisTitleSupplier](x: Self) {
     
-    @scala.inline
-    def setGetSecondXAxisTitle(value: () => XShape): Self = StObject.set(x, "getSecondXAxisTitle", js.Any.fromFunction0(value))
+    inline def setGetSecondXAxisTitle(value: () => XShape): Self = StObject.set(x, "getSecondXAxisTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSecondYAxisTitle(value: () => XShape): Self = StObject.set(x, "getSecondYAxisTitle", js.Any.fromFunction0(value))
+    inline def setGetSecondYAxisTitle(value: () => XShape): Self = StObject.set(x, "getSecondYAxisTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSecondXAxisTitle(value: XShape): Self = StObject.set(x, "SecondXAxisTitle", value.asInstanceOf[js.Any])
+    inline def setSecondXAxisTitle(value: XShape): Self = StObject.set(x, "SecondXAxisTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondYAxisTitle(value: XShape): Self = StObject.set(x, "SecondYAxisTitle", value.asInstanceOf[js.Any])
+    inline def setSecondYAxisTitle(value: XShape): Self = StObject.set(x, "SecondYAxisTitle", value.asInstanceOf[js.Any])
   }
 }

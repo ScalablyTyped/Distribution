@@ -28,37 +28,27 @@ trait ChannelModerator extends StObject {
 }
 object ChannelModerator {
   
-  @scala.inline
-  def apply(): ChannelModerator = {
+  inline def apply(): ChannelModerator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelModerator]
   }
   
-  @scala.inline
-  implicit class ChannelModeratorMutableBuilder[Self <: ChannelModerator] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelModerator](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
-    @scala.inline
-    def setCreatedBy(value: Identity): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: Identity): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setModerator(value: Identity): Self = StObject.set(x, "Moderator", value.asInstanceOf[js.Any])
+    inline def setModerator(value: Identity): Self = StObject.set(x, "Moderator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeratorUndefined: Self = StObject.set(x, "Moderator", js.undefined)
+    inline def setModeratorUndefined: Self = StObject.set(x, "Moderator", js.undefined)
   }
 }

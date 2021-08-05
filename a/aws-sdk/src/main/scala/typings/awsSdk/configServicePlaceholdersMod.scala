@@ -965,1436 +965,960 @@ object configServicePlaceholdersMod {
   }
   object ConfigurationServiceApiVersions {
     
-    @scala.inline
-    def apply(): ConfigurationServiceApiVersions = {
+    inline def apply(): ConfigurationServiceApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationServiceApiVersions]
     }
     
-    @scala.inline
-    implicit class ConfigurationServiceApiVersionsMutableBuilder[Self <: ConfigurationServiceApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationServiceApiVersions](x: Self) {
       
-      @scala.inline
-      def setAccessanalyzer(value: apiVersion): Self = StObject.set(x, "accessanalyzer", value.asInstanceOf[js.Any])
+      inline def setAccessanalyzer(value: apiVersion): Self = StObject.set(x, "accessanalyzer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessanalyzerUndefined: Self = StObject.set(x, "accessanalyzer", js.undefined)
+      inline def setAccessanalyzerUndefined: Self = StObject.set(x, "accessanalyzer", js.undefined)
       
-      @scala.inline
-      def setAcm(value: typings.awsSdk.acmMod.apiVersion): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
+      inline def setAcm(value: typings.awsSdk.acmMod.apiVersion): Self = StObject.set(x, "acm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
+      inline def setAcmUndefined: Self = StObject.set(x, "acm", js.undefined)
       
-      @scala.inline
-      def setAcmpca(value: typings.awsSdk.acmpcaMod.apiVersion): Self = StObject.set(x, "acmpca", value.asInstanceOf[js.Any])
+      inline def setAcmpca(value: typings.awsSdk.acmpcaMod.apiVersion): Self = StObject.set(x, "acmpca", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcmpcaUndefined: Self = StObject.set(x, "acmpca", js.undefined)
+      inline def setAcmpcaUndefined: Self = StObject.set(x, "acmpca", js.undefined)
       
-      @scala.inline
-      def setAlexaforbusiness(value: typings.awsSdk.alexaforbusinessMod.apiVersion): Self = StObject.set(x, "alexaforbusiness", value.asInstanceOf[js.Any])
+      inline def setAlexaforbusiness(value: typings.awsSdk.alexaforbusinessMod.apiVersion): Self = StObject.set(x, "alexaforbusiness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlexaforbusinessUndefined: Self = StObject.set(x, "alexaforbusiness", js.undefined)
+      inline def setAlexaforbusinessUndefined: Self = StObject.set(x, "alexaforbusiness", js.undefined)
       
-      @scala.inline
-      def setAmplify(value: typings.awsSdk.amplifyMod.apiVersion): Self = StObject.set(x, "amplify", value.asInstanceOf[js.Any])
+      inline def setAmplify(value: typings.awsSdk.amplifyMod.apiVersion): Self = StObject.set(x, "amplify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmplifyUndefined: Self = StObject.set(x, "amplify", js.undefined)
+      inline def setAmplifyUndefined: Self = StObject.set(x, "amplify", js.undefined)
       
-      @scala.inline
-      def setApigateway(value: typings.awsSdk.apigatewayMod.apiVersion): Self = StObject.set(x, "apigateway", value.asInstanceOf[js.Any])
+      inline def setApigateway(value: typings.awsSdk.apigatewayMod.apiVersion): Self = StObject.set(x, "apigateway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApigatewayUndefined: Self = StObject.set(x, "apigateway", js.undefined)
+      inline def setApigatewayUndefined: Self = StObject.set(x, "apigateway", js.undefined)
       
-      @scala.inline
-      def setApigatewaymanagementapi(value: typings.awsSdk.apigatewaymanagementapiMod.apiVersion): Self = StObject.set(x, "apigatewaymanagementapi", value.asInstanceOf[js.Any])
+      inline def setApigatewaymanagementapi(value: typings.awsSdk.apigatewaymanagementapiMod.apiVersion): Self = StObject.set(x, "apigatewaymanagementapi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApigatewaymanagementapiUndefined: Self = StObject.set(x, "apigatewaymanagementapi", js.undefined)
+      inline def setApigatewaymanagementapiUndefined: Self = StObject.set(x, "apigatewaymanagementapi", js.undefined)
       
-      @scala.inline
-      def setApigatewayv2(value: typings.awsSdk.apigatewayv2Mod.apiVersion): Self = StObject.set(x, "apigatewayv2", value.asInstanceOf[js.Any])
+      inline def setApigatewayv2(value: typings.awsSdk.apigatewayv2Mod.apiVersion): Self = StObject.set(x, "apigatewayv2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApigatewayv2Undefined: Self = StObject.set(x, "apigatewayv2", js.undefined)
+      inline def setApigatewayv2Undefined: Self = StObject.set(x, "apigatewayv2", js.undefined)
       
-      @scala.inline
-      def setAppconfig(value: typings.awsSdk.appconfigMod.apiVersion): Self = StObject.set(x, "appconfig", value.asInstanceOf[js.Any])
+      inline def setAppconfig(value: typings.awsSdk.appconfigMod.apiVersion): Self = StObject.set(x, "appconfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppconfigUndefined: Self = StObject.set(x, "appconfig", js.undefined)
+      inline def setAppconfigUndefined: Self = StObject.set(x, "appconfig", js.undefined)
       
-      @scala.inline
-      def setAppflow(value: typings.awsSdk.appflowMod.apiVersion): Self = StObject.set(x, "appflow", value.asInstanceOf[js.Any])
+      inline def setAppflow(value: typings.awsSdk.appflowMod.apiVersion): Self = StObject.set(x, "appflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppflowUndefined: Self = StObject.set(x, "appflow", js.undefined)
+      inline def setAppflowUndefined: Self = StObject.set(x, "appflow", js.undefined)
       
-      @scala.inline
-      def setApplicationautoscaling(value: typings.awsSdk.applicationautoscalingMod.apiVersion): Self = StObject.set(x, "applicationautoscaling", value.asInstanceOf[js.Any])
+      inline def setApplicationautoscaling(value: typings.awsSdk.applicationautoscalingMod.apiVersion): Self = StObject.set(x, "applicationautoscaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationautoscalingUndefined: Self = StObject.set(x, "applicationautoscaling", js.undefined)
+      inline def setApplicationautoscalingUndefined: Self = StObject.set(x, "applicationautoscaling", js.undefined)
       
-      @scala.inline
-      def setApplicationinsights(value: typings.awsSdk.applicationinsightsMod.apiVersion): Self = StObject.set(x, "applicationinsights", value.asInstanceOf[js.Any])
+      inline def setApplicationinsights(value: typings.awsSdk.applicationinsightsMod.apiVersion): Self = StObject.set(x, "applicationinsights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationinsightsUndefined: Self = StObject.set(x, "applicationinsights", js.undefined)
+      inline def setApplicationinsightsUndefined: Self = StObject.set(x, "applicationinsights", js.undefined)
       
-      @scala.inline
-      def setAppmesh(value: typings.awsSdk.appmeshMod.apiVersion): Self = StObject.set(x, "appmesh", value.asInstanceOf[js.Any])
+      inline def setAppmesh(value: typings.awsSdk.appmeshMod.apiVersion): Self = StObject.set(x, "appmesh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppmeshUndefined: Self = StObject.set(x, "appmesh", js.undefined)
+      inline def setAppmeshUndefined: Self = StObject.set(x, "appmesh", js.undefined)
       
-      @scala.inline
-      def setAppstream(value: typings.awsSdk.appstreamMod.apiVersion): Self = StObject.set(x, "appstream", value.asInstanceOf[js.Any])
+      inline def setAppstream(value: typings.awsSdk.appstreamMod.apiVersion): Self = StObject.set(x, "appstream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppstreamUndefined: Self = StObject.set(x, "appstream", js.undefined)
+      inline def setAppstreamUndefined: Self = StObject.set(x, "appstream", js.undefined)
       
-      @scala.inline
-      def setAppsync(value: typings.awsSdk.appsyncMod.apiVersion): Self = StObject.set(x, "appsync", value.asInstanceOf[js.Any])
+      inline def setAppsync(value: typings.awsSdk.appsyncMod.apiVersion): Self = StObject.set(x, "appsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppsyncUndefined: Self = StObject.set(x, "appsync", js.undefined)
+      inline def setAppsyncUndefined: Self = StObject.set(x, "appsync", js.undefined)
       
-      @scala.inline
-      def setAthena(value: typings.awsSdk.athenaMod.apiVersion): Self = StObject.set(x, "athena", value.asInstanceOf[js.Any])
+      inline def setAthena(value: typings.awsSdk.athenaMod.apiVersion): Self = StObject.set(x, "athena", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAthenaUndefined: Self = StObject.set(x, "athena", js.undefined)
+      inline def setAthenaUndefined: Self = StObject.set(x, "athena", js.undefined)
       
-      @scala.inline
-      def setAugmentedairuntime(value: typings.awsSdk.augmentedairuntimeMod.apiVersion): Self = StObject.set(x, "augmentedairuntime", value.asInstanceOf[js.Any])
+      inline def setAugmentedairuntime(value: typings.awsSdk.augmentedairuntimeMod.apiVersion): Self = StObject.set(x, "augmentedairuntime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAugmentedairuntimeUndefined: Self = StObject.set(x, "augmentedairuntime", js.undefined)
+      inline def setAugmentedairuntimeUndefined: Self = StObject.set(x, "augmentedairuntime", js.undefined)
       
-      @scala.inline
-      def setAutoscaling(value: typings.awsSdk.autoscalingMod.apiVersion): Self = StObject.set(x, "autoscaling", value.asInstanceOf[js.Any])
+      inline def setAutoscaling(value: typings.awsSdk.autoscalingMod.apiVersion): Self = StObject.set(x, "autoscaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoscalingUndefined: Self = StObject.set(x, "autoscaling", js.undefined)
+      inline def setAutoscalingUndefined: Self = StObject.set(x, "autoscaling", js.undefined)
       
-      @scala.inline
-      def setAutoscalingplans(value: typings.awsSdk.autoscalingplansMod.apiVersion): Self = StObject.set(x, "autoscalingplans", value.asInstanceOf[js.Any])
+      inline def setAutoscalingplans(value: typings.awsSdk.autoscalingplansMod.apiVersion): Self = StObject.set(x, "autoscalingplans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoscalingplansUndefined: Self = StObject.set(x, "autoscalingplans", js.undefined)
+      inline def setAutoscalingplansUndefined: Self = StObject.set(x, "autoscalingplans", js.undefined)
       
-      @scala.inline
-      def setBackup(value: typings.awsSdk.backupMod.apiVersion): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
+      inline def setBackup(value: typings.awsSdk.backupMod.apiVersion): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
+      inline def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
       
-      @scala.inline
-      def setBatch(value: typings.awsSdk.batchMod.apiVersion): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+      inline def setBatch(value: typings.awsSdk.batchMod.apiVersion): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
+      inline def setBatchUndefined: Self = StObject.set(x, "batch", js.undefined)
       
-      @scala.inline
-      def setBraket(value: typings.awsSdk.braketMod.apiVersion): Self = StObject.set(x, "braket", value.asInstanceOf[js.Any])
+      inline def setBraket(value: typings.awsSdk.braketMod.apiVersion): Self = StObject.set(x, "braket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBraketUndefined: Self = StObject.set(x, "braket", js.undefined)
+      inline def setBraketUndefined: Self = StObject.set(x, "braket", js.undefined)
       
-      @scala.inline
-      def setBudgets(value: typings.awsSdk.budgetsMod.apiVersion): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
+      inline def setBudgets(value: typings.awsSdk.budgetsMod.apiVersion): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBudgetsUndefined: Self = StObject.set(x, "budgets", js.undefined)
+      inline def setBudgetsUndefined: Self = StObject.set(x, "budgets", js.undefined)
       
-      @scala.inline
-      def setChime(value: typings.awsSdk.chimeMod.apiVersion): Self = StObject.set(x, "chime", value.asInstanceOf[js.Any])
+      inline def setChime(value: typings.awsSdk.chimeMod.apiVersion): Self = StObject.set(x, "chime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChimeUndefined: Self = StObject.set(x, "chime", js.undefined)
+      inline def setChimeUndefined: Self = StObject.set(x, "chime", js.undefined)
       
-      @scala.inline
-      def setCloud9(value: typings.awsSdk.cloud9Mod.apiVersion): Self = StObject.set(x, "cloud9", value.asInstanceOf[js.Any])
+      inline def setCloud9(value: typings.awsSdk.cloud9Mod.apiVersion): Self = StObject.set(x, "cloud9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloud9Undefined: Self = StObject.set(x, "cloud9", js.undefined)
+      inline def setCloud9Undefined: Self = StObject.set(x, "cloud9", js.undefined)
       
-      @scala.inline
-      def setClouddirectory(value: typings.awsSdk.clouddirectoryMod.apiVersion): Self = StObject.set(x, "clouddirectory", value.asInstanceOf[js.Any])
+      inline def setClouddirectory(value: typings.awsSdk.clouddirectoryMod.apiVersion): Self = StObject.set(x, "clouddirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClouddirectoryUndefined: Self = StObject.set(x, "clouddirectory", js.undefined)
+      inline def setClouddirectoryUndefined: Self = StObject.set(x, "clouddirectory", js.undefined)
       
-      @scala.inline
-      def setCloudformation(value: typings.awsSdk.cloudformationMod.apiVersion): Self = StObject.set(x, "cloudformation", value.asInstanceOf[js.Any])
+      inline def setCloudformation(value: typings.awsSdk.cloudformationMod.apiVersion): Self = StObject.set(x, "cloudformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudformationUndefined: Self = StObject.set(x, "cloudformation", js.undefined)
+      inline def setCloudformationUndefined: Self = StObject.set(x, "cloudformation", js.undefined)
       
-      @scala.inline
-      def setCloudfront(value: typings.awsSdk.cloudfrontMod.apiVersion): Self = StObject.set(x, "cloudfront", value.asInstanceOf[js.Any])
+      inline def setCloudfront(value: typings.awsSdk.cloudfrontMod.apiVersion): Self = StObject.set(x, "cloudfront", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudfrontUndefined: Self = StObject.set(x, "cloudfront", js.undefined)
+      inline def setCloudfrontUndefined: Self = StObject.set(x, "cloudfront", js.undefined)
       
-      @scala.inline
-      def setCloudhsm(value: typings.awsSdk.cloudhsmMod.apiVersion): Self = StObject.set(x, "cloudhsm", value.asInstanceOf[js.Any])
+      inline def setCloudhsm(value: typings.awsSdk.cloudhsmMod.apiVersion): Self = StObject.set(x, "cloudhsm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudhsmUndefined: Self = StObject.set(x, "cloudhsm", js.undefined)
+      inline def setCloudhsmUndefined: Self = StObject.set(x, "cloudhsm", js.undefined)
       
-      @scala.inline
-      def setCloudhsmv2(value: typings.awsSdk.cloudhsmv2Mod.apiVersion): Self = StObject.set(x, "cloudhsmv2", value.asInstanceOf[js.Any])
+      inline def setCloudhsmv2(value: typings.awsSdk.cloudhsmv2Mod.apiVersion): Self = StObject.set(x, "cloudhsmv2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudhsmv2Undefined: Self = StObject.set(x, "cloudhsmv2", js.undefined)
+      inline def setCloudhsmv2Undefined: Self = StObject.set(x, "cloudhsmv2", js.undefined)
       
-      @scala.inline
-      def setCloudsearch(value: typings.awsSdk.cloudsearchMod.apiVersion): Self = StObject.set(x, "cloudsearch", value.asInstanceOf[js.Any])
+      inline def setCloudsearch(value: typings.awsSdk.cloudsearchMod.apiVersion): Self = StObject.set(x, "cloudsearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudsearchUndefined: Self = StObject.set(x, "cloudsearch", js.undefined)
+      inline def setCloudsearchUndefined: Self = StObject.set(x, "cloudsearch", js.undefined)
       
-      @scala.inline
-      def setCloudsearchdomain(value: typings.awsSdk.cloudsearchdomainMod.apiVersion): Self = StObject.set(x, "cloudsearchdomain", value.asInstanceOf[js.Any])
+      inline def setCloudsearchdomain(value: typings.awsSdk.cloudsearchdomainMod.apiVersion): Self = StObject.set(x, "cloudsearchdomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudsearchdomainUndefined: Self = StObject.set(x, "cloudsearchdomain", js.undefined)
+      inline def setCloudsearchdomainUndefined: Self = StObject.set(x, "cloudsearchdomain", js.undefined)
       
-      @scala.inline
-      def setCloudtrail(value: typings.awsSdk.cloudtrailMod.apiVersion): Self = StObject.set(x, "cloudtrail", value.asInstanceOf[js.Any])
+      inline def setCloudtrail(value: typings.awsSdk.cloudtrailMod.apiVersion): Self = StObject.set(x, "cloudtrail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudtrailUndefined: Self = StObject.set(x, "cloudtrail", js.undefined)
+      inline def setCloudtrailUndefined: Self = StObject.set(x, "cloudtrail", js.undefined)
       
-      @scala.inline
-      def setCloudwatch(value: typings.awsSdk.cloudwatchMod.apiVersion): Self = StObject.set(x, "cloudwatch", value.asInstanceOf[js.Any])
+      inline def setCloudwatch(value: typings.awsSdk.cloudwatchMod.apiVersion): Self = StObject.set(x, "cloudwatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchUndefined: Self = StObject.set(x, "cloudwatch", js.undefined)
+      inline def setCloudwatchUndefined: Self = StObject.set(x, "cloudwatch", js.undefined)
       
-      @scala.inline
-      def setCloudwatchevents(value: typings.awsSdk.cloudwatcheventsMod.apiVersion): Self = StObject.set(x, "cloudwatchevents", value.asInstanceOf[js.Any])
+      inline def setCloudwatchevents(value: typings.awsSdk.cloudwatcheventsMod.apiVersion): Self = StObject.set(x, "cloudwatchevents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatcheventsUndefined: Self = StObject.set(x, "cloudwatchevents", js.undefined)
+      inline def setCloudwatcheventsUndefined: Self = StObject.set(x, "cloudwatchevents", js.undefined)
       
-      @scala.inline
-      def setCloudwatchlogs(value: typings.awsSdk.cloudwatchlogsMod.apiVersion): Self = StObject.set(x, "cloudwatchlogs", value.asInstanceOf[js.Any])
+      inline def setCloudwatchlogs(value: typings.awsSdk.cloudwatchlogsMod.apiVersion): Self = StObject.set(x, "cloudwatchlogs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchlogsUndefined: Self = StObject.set(x, "cloudwatchlogs", js.undefined)
+      inline def setCloudwatchlogsUndefined: Self = StObject.set(x, "cloudwatchlogs", js.undefined)
       
-      @scala.inline
-      def setCodeartifact(value: typings.awsSdk.codeartifactMod.apiVersion): Self = StObject.set(x, "codeartifact", value.asInstanceOf[js.Any])
+      inline def setCodeartifact(value: typings.awsSdk.codeartifactMod.apiVersion): Self = StObject.set(x, "codeartifact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeartifactUndefined: Self = StObject.set(x, "codeartifact", js.undefined)
+      inline def setCodeartifactUndefined: Self = StObject.set(x, "codeartifact", js.undefined)
       
-      @scala.inline
-      def setCodebuild(value: typings.awsSdk.codebuildMod.apiVersion): Self = StObject.set(x, "codebuild", value.asInstanceOf[js.Any])
+      inline def setCodebuild(value: typings.awsSdk.codebuildMod.apiVersion): Self = StObject.set(x, "codebuild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodebuildUndefined: Self = StObject.set(x, "codebuild", js.undefined)
+      inline def setCodebuildUndefined: Self = StObject.set(x, "codebuild", js.undefined)
       
-      @scala.inline
-      def setCodecommit(value: typings.awsSdk.codecommitMod.apiVersion): Self = StObject.set(x, "codecommit", value.asInstanceOf[js.Any])
+      inline def setCodecommit(value: typings.awsSdk.codecommitMod.apiVersion): Self = StObject.set(x, "codecommit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodecommitUndefined: Self = StObject.set(x, "codecommit", js.undefined)
+      inline def setCodecommitUndefined: Self = StObject.set(x, "codecommit", js.undefined)
       
-      @scala.inline
-      def setCodedeploy(value: typings.awsSdk.codedeployMod.apiVersion): Self = StObject.set(x, "codedeploy", value.asInstanceOf[js.Any])
+      inline def setCodedeploy(value: typings.awsSdk.codedeployMod.apiVersion): Self = StObject.set(x, "codedeploy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodedeployUndefined: Self = StObject.set(x, "codedeploy", js.undefined)
+      inline def setCodedeployUndefined: Self = StObject.set(x, "codedeploy", js.undefined)
       
-      @scala.inline
-      def setCodeguruprofiler(value: typings.awsSdk.codeguruprofilerMod.apiVersion): Self = StObject.set(x, "codeguruprofiler", value.asInstanceOf[js.Any])
+      inline def setCodeguruprofiler(value: typings.awsSdk.codeguruprofilerMod.apiVersion): Self = StObject.set(x, "codeguruprofiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeguruprofilerUndefined: Self = StObject.set(x, "codeguruprofiler", js.undefined)
+      inline def setCodeguruprofilerUndefined: Self = StObject.set(x, "codeguruprofiler", js.undefined)
       
-      @scala.inline
-      def setCodegurureviewer(value: typings.awsSdk.codegurureviewerMod.apiVersion): Self = StObject.set(x, "codegurureviewer", value.asInstanceOf[js.Any])
+      inline def setCodegurureviewer(value: typings.awsSdk.codegurureviewerMod.apiVersion): Self = StObject.set(x, "codegurureviewer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodegurureviewerUndefined: Self = StObject.set(x, "codegurureviewer", js.undefined)
+      inline def setCodegurureviewerUndefined: Self = StObject.set(x, "codegurureviewer", js.undefined)
       
-      @scala.inline
-      def setCodepipeline(value: typings.awsSdk.codepipelineMod.apiVersion): Self = StObject.set(x, "codepipeline", value.asInstanceOf[js.Any])
+      inline def setCodepipeline(value: typings.awsSdk.codepipelineMod.apiVersion): Self = StObject.set(x, "codepipeline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodepipelineUndefined: Self = StObject.set(x, "codepipeline", js.undefined)
+      inline def setCodepipelineUndefined: Self = StObject.set(x, "codepipeline", js.undefined)
       
-      @scala.inline
-      def setCodestar(value: typings.awsSdk.codestarMod.apiVersion): Self = StObject.set(x, "codestar", value.asInstanceOf[js.Any])
+      inline def setCodestar(value: typings.awsSdk.codestarMod.apiVersion): Self = StObject.set(x, "codestar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodestarUndefined: Self = StObject.set(x, "codestar", js.undefined)
+      inline def setCodestarUndefined: Self = StObject.set(x, "codestar", js.undefined)
       
-      @scala.inline
-      def setCodestarconnections(value: typings.awsSdk.codestarconnectionsMod.apiVersion): Self = StObject.set(x, "codestarconnections", value.asInstanceOf[js.Any])
+      inline def setCodestarconnections(value: typings.awsSdk.codestarconnectionsMod.apiVersion): Self = StObject.set(x, "codestarconnections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodestarconnectionsUndefined: Self = StObject.set(x, "codestarconnections", js.undefined)
+      inline def setCodestarconnectionsUndefined: Self = StObject.set(x, "codestarconnections", js.undefined)
       
-      @scala.inline
-      def setCodestarnotifications(value: typings.awsSdk.codestarnotificationsMod.apiVersion): Self = StObject.set(x, "codestarnotifications", value.asInstanceOf[js.Any])
+      inline def setCodestarnotifications(value: typings.awsSdk.codestarnotificationsMod.apiVersion): Self = StObject.set(x, "codestarnotifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodestarnotificationsUndefined: Self = StObject.set(x, "codestarnotifications", js.undefined)
+      inline def setCodestarnotificationsUndefined: Self = StObject.set(x, "codestarnotifications", js.undefined)
       
-      @scala.inline
-      def setCognitoidentity(value: typings.awsSdk.cognitoidentityMod.apiVersion): Self = StObject.set(x, "cognitoidentity", value.asInstanceOf[js.Any])
+      inline def setCognitoidentity(value: typings.awsSdk.cognitoidentityMod.apiVersion): Self = StObject.set(x, "cognitoidentity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoidentityUndefined: Self = StObject.set(x, "cognitoidentity", js.undefined)
+      inline def setCognitoidentityUndefined: Self = StObject.set(x, "cognitoidentity", js.undefined)
       
-      @scala.inline
-      def setCognitoidentityserviceprovider(value: typings.awsSdk.cognitoidentityserviceproviderMod.apiVersion): Self = StObject.set(x, "cognitoidentityserviceprovider", value.asInstanceOf[js.Any])
+      inline def setCognitoidentityserviceprovider(value: typings.awsSdk.cognitoidentityserviceproviderMod.apiVersion): Self = StObject.set(x, "cognitoidentityserviceprovider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoidentityserviceproviderUndefined: Self = StObject.set(x, "cognitoidentityserviceprovider", js.undefined)
+      inline def setCognitoidentityserviceproviderUndefined: Self = StObject.set(x, "cognitoidentityserviceprovider", js.undefined)
       
-      @scala.inline
-      def setCognitosync(value: typings.awsSdk.cognitosyncMod.apiVersion): Self = StObject.set(x, "cognitosync", value.asInstanceOf[js.Any])
+      inline def setCognitosync(value: typings.awsSdk.cognitosyncMod.apiVersion): Self = StObject.set(x, "cognitosync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitosyncUndefined: Self = StObject.set(x, "cognitosync", js.undefined)
+      inline def setCognitosyncUndefined: Self = StObject.set(x, "cognitosync", js.undefined)
       
-      @scala.inline
-      def setComprehend(value: typings.awsSdk.comprehendMod.apiVersion): Self = StObject.set(x, "comprehend", value.asInstanceOf[js.Any])
+      inline def setComprehend(value: typings.awsSdk.comprehendMod.apiVersion): Self = StObject.set(x, "comprehend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComprehendUndefined: Self = StObject.set(x, "comprehend", js.undefined)
+      inline def setComprehendUndefined: Self = StObject.set(x, "comprehend", js.undefined)
       
-      @scala.inline
-      def setComprehendmedical(value: typings.awsSdk.comprehendmedicalMod.apiVersion): Self = StObject.set(x, "comprehendmedical", value.asInstanceOf[js.Any])
+      inline def setComprehendmedical(value: typings.awsSdk.comprehendmedicalMod.apiVersion): Self = StObject.set(x, "comprehendmedical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComprehendmedicalUndefined: Self = StObject.set(x, "comprehendmedical", js.undefined)
+      inline def setComprehendmedicalUndefined: Self = StObject.set(x, "comprehendmedical", js.undefined)
       
-      @scala.inline
-      def setComputeoptimizer(value: typings.awsSdk.computeoptimizerMod.apiVersion): Self = StObject.set(x, "computeoptimizer", value.asInstanceOf[js.Any])
+      inline def setComputeoptimizer(value: typings.awsSdk.computeoptimizerMod.apiVersion): Self = StObject.set(x, "computeoptimizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeoptimizerUndefined: Self = StObject.set(x, "computeoptimizer", js.undefined)
+      inline def setComputeoptimizerUndefined: Self = StObject.set(x, "computeoptimizer", js.undefined)
       
-      @scala.inline
-      def setConfigservice(value: typings.awsSdk.configserviceMod.apiVersion): Self = StObject.set(x, "configservice", value.asInstanceOf[js.Any])
+      inline def setConfigservice(value: typings.awsSdk.configserviceMod.apiVersion): Self = StObject.set(x, "configservice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigserviceUndefined: Self = StObject.set(x, "configservice", js.undefined)
+      inline def setConfigserviceUndefined: Self = StObject.set(x, "configservice", js.undefined)
       
-      @scala.inline
-      def setConnect(value: typings.awsSdk.connectMod.apiVersion): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
+      inline def setConnect(value: typings.awsSdk.connectMod.apiVersion): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
+      inline def setConnectUndefined: Self = StObject.set(x, "connect", js.undefined)
       
-      @scala.inline
-      def setConnectparticipant(value: typings.awsSdk.connectparticipantMod.apiVersion): Self = StObject.set(x, "connectparticipant", value.asInstanceOf[js.Any])
+      inline def setConnectparticipant(value: typings.awsSdk.connectparticipantMod.apiVersion): Self = StObject.set(x, "connectparticipant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectparticipantUndefined: Self = StObject.set(x, "connectparticipant", js.undefined)
+      inline def setConnectparticipantUndefined: Self = StObject.set(x, "connectparticipant", js.undefined)
       
-      @scala.inline
-      def setCostexplorer(value: typings.awsSdk.costexplorerMod.apiVersion): Self = StObject.set(x, "costexplorer", value.asInstanceOf[js.Any])
+      inline def setCostexplorer(value: typings.awsSdk.costexplorerMod.apiVersion): Self = StObject.set(x, "costexplorer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCostexplorerUndefined: Self = StObject.set(x, "costexplorer", js.undefined)
+      inline def setCostexplorerUndefined: Self = StObject.set(x, "costexplorer", js.undefined)
       
-      @scala.inline
-      def setCur(value: typings.awsSdk.curMod.apiVersion): Self = StObject.set(x, "cur", value.asInstanceOf[js.Any])
+      inline def setCur(value: typings.awsSdk.curMod.apiVersion): Self = StObject.set(x, "cur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurUndefined: Self = StObject.set(x, "cur", js.undefined)
+      inline def setCurUndefined: Self = StObject.set(x, "cur", js.undefined)
       
-      @scala.inline
-      def setDatabrew(value: typings.awsSdk.databrewMod.apiVersion): Self = StObject.set(x, "databrew", value.asInstanceOf[js.Any])
+      inline def setDatabrew(value: typings.awsSdk.databrewMod.apiVersion): Self = StObject.set(x, "databrew", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabrewUndefined: Self = StObject.set(x, "databrew", js.undefined)
+      inline def setDatabrewUndefined: Self = StObject.set(x, "databrew", js.undefined)
       
-      @scala.inline
-      def setDataexchange(value: typings.awsSdk.dataexchangeMod.apiVersion): Self = StObject.set(x, "dataexchange", value.asInstanceOf[js.Any])
+      inline def setDataexchange(value: typings.awsSdk.dataexchangeMod.apiVersion): Self = StObject.set(x, "dataexchange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataexchangeUndefined: Self = StObject.set(x, "dataexchange", js.undefined)
+      inline def setDataexchangeUndefined: Self = StObject.set(x, "dataexchange", js.undefined)
       
-      @scala.inline
-      def setDatapipeline(value: typings.awsSdk.datapipelineMod.apiVersion): Self = StObject.set(x, "datapipeline", value.asInstanceOf[js.Any])
+      inline def setDatapipeline(value: typings.awsSdk.datapipelineMod.apiVersion): Self = StObject.set(x, "datapipeline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatapipelineUndefined: Self = StObject.set(x, "datapipeline", js.undefined)
+      inline def setDatapipelineUndefined: Self = StObject.set(x, "datapipeline", js.undefined)
       
-      @scala.inline
-      def setDatasync(value: typings.awsSdk.datasyncMod.apiVersion): Self = StObject.set(x, "datasync", value.asInstanceOf[js.Any])
+      inline def setDatasync(value: typings.awsSdk.datasyncMod.apiVersion): Self = StObject.set(x, "datasync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatasyncUndefined: Self = StObject.set(x, "datasync", js.undefined)
+      inline def setDatasyncUndefined: Self = StObject.set(x, "datasync", js.undefined)
       
-      @scala.inline
-      def setDax(value: typings.awsSdk.daxMod.apiVersion): Self = StObject.set(x, "dax", value.asInstanceOf[js.Any])
+      inline def setDax(value: typings.awsSdk.daxMod.apiVersion): Self = StObject.set(x, "dax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaxUndefined: Self = StObject.set(x, "dax", js.undefined)
+      inline def setDaxUndefined: Self = StObject.set(x, "dax", js.undefined)
       
-      @scala.inline
-      def setDetective(value: typings.awsSdk.detectiveMod.apiVersion): Self = StObject.set(x, "detective", value.asInstanceOf[js.Any])
+      inline def setDetective(value: typings.awsSdk.detectiveMod.apiVersion): Self = StObject.set(x, "detective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectiveUndefined: Self = StObject.set(x, "detective", js.undefined)
+      inline def setDetectiveUndefined: Self = StObject.set(x, "detective", js.undefined)
       
-      @scala.inline
-      def setDevicefarm(value: typings.awsSdk.devicefarmMod.apiVersion): Self = StObject.set(x, "devicefarm", value.asInstanceOf[js.Any])
+      inline def setDevicefarm(value: typings.awsSdk.devicefarmMod.apiVersion): Self = StObject.set(x, "devicefarm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevicefarmUndefined: Self = StObject.set(x, "devicefarm", js.undefined)
+      inline def setDevicefarmUndefined: Self = StObject.set(x, "devicefarm", js.undefined)
       
-      @scala.inline
-      def setDirectconnect(value: typings.awsSdk.directconnectMod.apiVersion): Self = StObject.set(x, "directconnect", value.asInstanceOf[js.Any])
+      inline def setDirectconnect(value: typings.awsSdk.directconnectMod.apiVersion): Self = StObject.set(x, "directconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectconnectUndefined: Self = StObject.set(x, "directconnect", js.undefined)
+      inline def setDirectconnectUndefined: Self = StObject.set(x, "directconnect", js.undefined)
       
-      @scala.inline
-      def setDirectoryservice(value: typings.awsSdk.directoryserviceMod.apiVersion): Self = StObject.set(x, "directoryservice", value.asInstanceOf[js.Any])
+      inline def setDirectoryservice(value: typings.awsSdk.directoryserviceMod.apiVersion): Self = StObject.set(x, "directoryservice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryserviceUndefined: Self = StObject.set(x, "directoryservice", js.undefined)
+      inline def setDirectoryserviceUndefined: Self = StObject.set(x, "directoryservice", js.undefined)
       
-      @scala.inline
-      def setDiscovery(value: typings.awsSdk.discoveryMod.apiVersion): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
+      inline def setDiscovery(value: typings.awsSdk.discoveryMod.apiVersion): Self = StObject.set(x, "discovery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiscoveryUndefined: Self = StObject.set(x, "discovery", js.undefined)
+      inline def setDiscoveryUndefined: Self = StObject.set(x, "discovery", js.undefined)
       
-      @scala.inline
-      def setDlm(value: typings.awsSdk.dlmMod.apiVersion): Self = StObject.set(x, "dlm", value.asInstanceOf[js.Any])
+      inline def setDlm(value: typings.awsSdk.dlmMod.apiVersion): Self = StObject.set(x, "dlm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDlmUndefined: Self = StObject.set(x, "dlm", js.undefined)
+      inline def setDlmUndefined: Self = StObject.set(x, "dlm", js.undefined)
       
-      @scala.inline
-      def setDms(value: typings.awsSdk.dmsMod.apiVersion): Self = StObject.set(x, "dms", value.asInstanceOf[js.Any])
+      inline def setDms(value: typings.awsSdk.dmsMod.apiVersion): Self = StObject.set(x, "dms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDmsUndefined: Self = StObject.set(x, "dms", js.undefined)
+      inline def setDmsUndefined: Self = StObject.set(x, "dms", js.undefined)
       
-      @scala.inline
-      def setDocdb(value: typings.awsSdk.docdbMod.apiVersion): Self = StObject.set(x, "docdb", value.asInstanceOf[js.Any])
+      inline def setDocdb(value: typings.awsSdk.docdbMod.apiVersion): Self = StObject.set(x, "docdb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocdbUndefined: Self = StObject.set(x, "docdb", js.undefined)
+      inline def setDocdbUndefined: Self = StObject.set(x, "docdb", js.undefined)
       
-      @scala.inline
-      def setDynamodb(value: typings.awsSdk.dynamodbMod.apiVersion): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+      inline def setDynamodb(value: typings.awsSdk.dynamodbMod.apiVersion): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
+      inline def setDynamodbUndefined: Self = StObject.set(x, "dynamodb", js.undefined)
       
-      @scala.inline
-      def setDynamodbstreams(value: typings.awsSdk.dynamodbstreamsMod.apiVersion): Self = StObject.set(x, "dynamodbstreams", value.asInstanceOf[js.Any])
+      inline def setDynamodbstreams(value: typings.awsSdk.dynamodbstreamsMod.apiVersion): Self = StObject.set(x, "dynamodbstreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamodbstreamsUndefined: Self = StObject.set(x, "dynamodbstreams", js.undefined)
+      inline def setDynamodbstreamsUndefined: Self = StObject.set(x, "dynamodbstreams", js.undefined)
       
-      @scala.inline
-      def setEbs(value: typings.awsSdk.ebsMod.apiVersion): Self = StObject.set(x, "ebs", value.asInstanceOf[js.Any])
+      inline def setEbs(value: typings.awsSdk.ebsMod.apiVersion): Self = StObject.set(x, "ebs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsUndefined: Self = StObject.set(x, "ebs", js.undefined)
+      inline def setEbsUndefined: Self = StObject.set(x, "ebs", js.undefined)
       
-      @scala.inline
-      def setEc2(value: typings.awsSdk.ec2Mod.apiVersion): Self = StObject.set(x, "ec2", value.asInstanceOf[js.Any])
+      inline def setEc2(value: typings.awsSdk.ec2Mod.apiVersion): Self = StObject.set(x, "ec2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2Undefined: Self = StObject.set(x, "ec2", js.undefined)
+      inline def setEc2Undefined: Self = StObject.set(x, "ec2", js.undefined)
       
-      @scala.inline
-      def setEc2instanceconnect(value: typings.awsSdk.ec2instanceconnectMod.apiVersion): Self = StObject.set(x, "ec2instanceconnect", value.asInstanceOf[js.Any])
+      inline def setEc2instanceconnect(value: typings.awsSdk.ec2instanceconnectMod.apiVersion): Self = StObject.set(x, "ec2instanceconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2instanceconnectUndefined: Self = StObject.set(x, "ec2instanceconnect", js.undefined)
+      inline def setEc2instanceconnectUndefined: Self = StObject.set(x, "ec2instanceconnect", js.undefined)
       
-      @scala.inline
-      def setEcr(value: typings.awsSdk.ecrMod.apiVersion): Self = StObject.set(x, "ecr", value.asInstanceOf[js.Any])
+      inline def setEcr(value: typings.awsSdk.ecrMod.apiVersion): Self = StObject.set(x, "ecr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcrUndefined: Self = StObject.set(x, "ecr", js.undefined)
+      inline def setEcrUndefined: Self = StObject.set(x, "ecr", js.undefined)
       
-      @scala.inline
-      def setEcs(value: typings.awsSdk.ecsMod.apiVersion): Self = StObject.set(x, "ecs", value.asInstanceOf[js.Any])
+      inline def setEcs(value: typings.awsSdk.ecsMod.apiVersion): Self = StObject.set(x, "ecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcsUndefined: Self = StObject.set(x, "ecs", js.undefined)
+      inline def setEcsUndefined: Self = StObject.set(x, "ecs", js.undefined)
       
-      @scala.inline
-      def setEfs(value: typings.awsSdk.efsMod.apiVersion): Self = StObject.set(x, "efs", value.asInstanceOf[js.Any])
+      inline def setEfs(value: typings.awsSdk.efsMod.apiVersion): Self = StObject.set(x, "efs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEfsUndefined: Self = StObject.set(x, "efs", js.undefined)
+      inline def setEfsUndefined: Self = StObject.set(x, "efs", js.undefined)
       
-      @scala.inline
-      def setEks(value: typings.awsSdk.eksMod.apiVersion): Self = StObject.set(x, "eks", value.asInstanceOf[js.Any])
+      inline def setEks(value: typings.awsSdk.eksMod.apiVersion): Self = StObject.set(x, "eks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEksUndefined: Self = StObject.set(x, "eks", js.undefined)
+      inline def setEksUndefined: Self = StObject.set(x, "eks", js.undefined)
       
-      @scala.inline
-      def setElasticache(value: typings.awsSdk.elasticacheMod.apiVersion): Self = StObject.set(x, "elasticache", value.asInstanceOf[js.Any])
+      inline def setElasticache(value: typings.awsSdk.elasticacheMod.apiVersion): Self = StObject.set(x, "elasticache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticacheUndefined: Self = StObject.set(x, "elasticache", js.undefined)
+      inline def setElasticacheUndefined: Self = StObject.set(x, "elasticache", js.undefined)
       
-      @scala.inline
-      def setElasticbeanstalk(value: typings.awsSdk.elasticbeanstalkMod.apiVersion): Self = StObject.set(x, "elasticbeanstalk", value.asInstanceOf[js.Any])
+      inline def setElasticbeanstalk(value: typings.awsSdk.elasticbeanstalkMod.apiVersion): Self = StObject.set(x, "elasticbeanstalk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticbeanstalkUndefined: Self = StObject.set(x, "elasticbeanstalk", js.undefined)
+      inline def setElasticbeanstalkUndefined: Self = StObject.set(x, "elasticbeanstalk", js.undefined)
       
-      @scala.inline
-      def setElasticinference(value: typings.awsSdk.elasticinferenceMod.apiVersion): Self = StObject.set(x, "elasticinference", value.asInstanceOf[js.Any])
+      inline def setElasticinference(value: typings.awsSdk.elasticinferenceMod.apiVersion): Self = StObject.set(x, "elasticinference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticinferenceUndefined: Self = StObject.set(x, "elasticinference", js.undefined)
+      inline def setElasticinferenceUndefined: Self = StObject.set(x, "elasticinference", js.undefined)
       
-      @scala.inline
-      def setElastictranscoder(value: typings.awsSdk.elastictranscoderMod.apiVersion): Self = StObject.set(x, "elastictranscoder", value.asInstanceOf[js.Any])
+      inline def setElastictranscoder(value: typings.awsSdk.elastictranscoderMod.apiVersion): Self = StObject.set(x, "elastictranscoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElastictranscoderUndefined: Self = StObject.set(x, "elastictranscoder", js.undefined)
+      inline def setElastictranscoderUndefined: Self = StObject.set(x, "elastictranscoder", js.undefined)
       
-      @scala.inline
-      def setElb(value: typings.awsSdk.elbMod.apiVersion): Self = StObject.set(x, "elb", value.asInstanceOf[js.Any])
+      inline def setElb(value: typings.awsSdk.elbMod.apiVersion): Self = StObject.set(x, "elb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElbUndefined: Self = StObject.set(x, "elb", js.undefined)
+      inline def setElbUndefined: Self = StObject.set(x, "elb", js.undefined)
       
-      @scala.inline
-      def setElbv2(value: typings.awsSdk.elbv2Mod.apiVersion): Self = StObject.set(x, "elbv2", value.asInstanceOf[js.Any])
+      inline def setElbv2(value: typings.awsSdk.elbv2Mod.apiVersion): Self = StObject.set(x, "elbv2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElbv2Undefined: Self = StObject.set(x, "elbv2", js.undefined)
+      inline def setElbv2Undefined: Self = StObject.set(x, "elbv2", js.undefined)
       
-      @scala.inline
-      def setEmr(value: typings.awsSdk.emrMod.apiVersion): Self = StObject.set(x, "emr", value.asInstanceOf[js.Any])
+      inline def setEmr(value: typings.awsSdk.emrMod.apiVersion): Self = StObject.set(x, "emr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmrUndefined: Self = StObject.set(x, "emr", js.undefined)
+      inline def setEmrUndefined: Self = StObject.set(x, "emr", js.undefined)
       
-      @scala.inline
-      def setEs(value: typings.awsSdk.esMod.apiVersion): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
+      inline def setEs(value: typings.awsSdk.esMod.apiVersion): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
+      inline def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
       
-      @scala.inline
-      def setEventbridge(value: typings.awsSdk.eventbridgeMod.apiVersion): Self = StObject.set(x, "eventbridge", value.asInstanceOf[js.Any])
+      inline def setEventbridge(value: typings.awsSdk.eventbridgeMod.apiVersion): Self = StObject.set(x, "eventbridge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventbridgeUndefined: Self = StObject.set(x, "eventbridge", js.undefined)
+      inline def setEventbridgeUndefined: Self = StObject.set(x, "eventbridge", js.undefined)
       
-      @scala.inline
-      def setFirehose(value: typings.awsSdk.firehoseMod.apiVersion): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
+      inline def setFirehose(value: typings.awsSdk.firehoseMod.apiVersion): Self = StObject.set(x, "firehose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
+      inline def setFirehoseUndefined: Self = StObject.set(x, "firehose", js.undefined)
       
-      @scala.inline
-      def setFms(value: typings.awsSdk.fmsMod.apiVersion): Self = StObject.set(x, "fms", value.asInstanceOf[js.Any])
+      inline def setFms(value: typings.awsSdk.fmsMod.apiVersion): Self = StObject.set(x, "fms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFmsUndefined: Self = StObject.set(x, "fms", js.undefined)
+      inline def setFmsUndefined: Self = StObject.set(x, "fms", js.undefined)
       
-      @scala.inline
-      def setForecastqueryservice(value: typings.awsSdk.forecastqueryserviceMod.apiVersion): Self = StObject.set(x, "forecastqueryservice", value.asInstanceOf[js.Any])
+      inline def setForecastqueryservice(value: typings.awsSdk.forecastqueryserviceMod.apiVersion): Self = StObject.set(x, "forecastqueryservice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForecastqueryserviceUndefined: Self = StObject.set(x, "forecastqueryservice", js.undefined)
+      inline def setForecastqueryserviceUndefined: Self = StObject.set(x, "forecastqueryservice", js.undefined)
       
-      @scala.inline
-      def setForecastservice(value: typings.awsSdk.forecastserviceMod.apiVersion): Self = StObject.set(x, "forecastservice", value.asInstanceOf[js.Any])
+      inline def setForecastservice(value: typings.awsSdk.forecastserviceMod.apiVersion): Self = StObject.set(x, "forecastservice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForecastserviceUndefined: Self = StObject.set(x, "forecastservice", js.undefined)
+      inline def setForecastserviceUndefined: Self = StObject.set(x, "forecastservice", js.undefined)
       
-      @scala.inline
-      def setFrauddetector(value: typings.awsSdk.frauddetectorMod.apiVersion): Self = StObject.set(x, "frauddetector", value.asInstanceOf[js.Any])
+      inline def setFrauddetector(value: typings.awsSdk.frauddetectorMod.apiVersion): Self = StObject.set(x, "frauddetector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrauddetectorUndefined: Self = StObject.set(x, "frauddetector", js.undefined)
+      inline def setFrauddetectorUndefined: Self = StObject.set(x, "frauddetector", js.undefined)
       
-      @scala.inline
-      def setFsx(value: typings.awsSdk.fsxMod.apiVersion): Self = StObject.set(x, "fsx", value.asInstanceOf[js.Any])
+      inline def setFsx(value: typings.awsSdk.fsxMod.apiVersion): Self = StObject.set(x, "fsx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsxUndefined: Self = StObject.set(x, "fsx", js.undefined)
+      inline def setFsxUndefined: Self = StObject.set(x, "fsx", js.undefined)
       
-      @scala.inline
-      def setGamelift(value: typings.awsSdk.gameliftMod.apiVersion): Self = StObject.set(x, "gamelift", value.asInstanceOf[js.Any])
+      inline def setGamelift(value: typings.awsSdk.gameliftMod.apiVersion): Self = StObject.set(x, "gamelift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameliftUndefined: Self = StObject.set(x, "gamelift", js.undefined)
+      inline def setGameliftUndefined: Self = StObject.set(x, "gamelift", js.undefined)
       
-      @scala.inline
-      def setGlacier(value: typings.awsSdk.glacierMod.apiVersion): Self = StObject.set(x, "glacier", value.asInstanceOf[js.Any])
+      inline def setGlacier(value: typings.awsSdk.glacierMod.apiVersion): Self = StObject.set(x, "glacier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlacierUndefined: Self = StObject.set(x, "glacier", js.undefined)
+      inline def setGlacierUndefined: Self = StObject.set(x, "glacier", js.undefined)
       
-      @scala.inline
-      def setGlobalaccelerator(value: typings.awsSdk.globalacceleratorMod.apiVersion): Self = StObject.set(x, "globalaccelerator", value.asInstanceOf[js.Any])
+      inline def setGlobalaccelerator(value: typings.awsSdk.globalacceleratorMod.apiVersion): Self = StObject.set(x, "globalaccelerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalacceleratorUndefined: Self = StObject.set(x, "globalaccelerator", js.undefined)
+      inline def setGlobalacceleratorUndefined: Self = StObject.set(x, "globalaccelerator", js.undefined)
       
-      @scala.inline
-      def setGlue(value: typings.awsSdk.glueMod.apiVersion): Self = StObject.set(x, "glue", value.asInstanceOf[js.Any])
+      inline def setGlue(value: typings.awsSdk.glueMod.apiVersion): Self = StObject.set(x, "glue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlueUndefined: Self = StObject.set(x, "glue", js.undefined)
+      inline def setGlueUndefined: Self = StObject.set(x, "glue", js.undefined)
       
-      @scala.inline
-      def setGreengrass(value: typings.awsSdk.greengrassMod.apiVersion): Self = StObject.set(x, "greengrass", value.asInstanceOf[js.Any])
+      inline def setGreengrass(value: typings.awsSdk.greengrassMod.apiVersion): Self = StObject.set(x, "greengrass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreengrassUndefined: Self = StObject.set(x, "greengrass", js.undefined)
+      inline def setGreengrassUndefined: Self = StObject.set(x, "greengrass", js.undefined)
       
-      @scala.inline
-      def setGroundstation(value: typings.awsSdk.groundstationMod.apiVersion): Self = StObject.set(x, "groundstation", value.asInstanceOf[js.Any])
+      inline def setGroundstation(value: typings.awsSdk.groundstationMod.apiVersion): Self = StObject.set(x, "groundstation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroundstationUndefined: Self = StObject.set(x, "groundstation", js.undefined)
+      inline def setGroundstationUndefined: Self = StObject.set(x, "groundstation", js.undefined)
       
-      @scala.inline
-      def setGuardduty(value: typings.awsSdk.guarddutyMod.apiVersion): Self = StObject.set(x, "guardduty", value.asInstanceOf[js.Any])
+      inline def setGuardduty(value: typings.awsSdk.guarddutyMod.apiVersion): Self = StObject.set(x, "guardduty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuarddutyUndefined: Self = StObject.set(x, "guardduty", js.undefined)
+      inline def setGuarddutyUndefined: Self = StObject.set(x, "guardduty", js.undefined)
       
-      @scala.inline
-      def setHealth(value: typings.awsSdk.healthMod.apiVersion): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
+      inline def setHealth(value: typings.awsSdk.healthMod.apiVersion): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
+      inline def setHealthUndefined: Self = StObject.set(x, "health", js.undefined)
       
-      @scala.inline
-      def setHoneycode(value: typings.awsSdk.honeycodeMod.apiVersion): Self = StObject.set(x, "honeycode", value.asInstanceOf[js.Any])
+      inline def setHoneycode(value: typings.awsSdk.honeycodeMod.apiVersion): Self = StObject.set(x, "honeycode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoneycodeUndefined: Self = StObject.set(x, "honeycode", js.undefined)
+      inline def setHoneycodeUndefined: Self = StObject.set(x, "honeycode", js.undefined)
       
-      @scala.inline
-      def setIam(value: typings.awsSdk.iamMod.apiVersion): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
+      inline def setIam(value: typings.awsSdk.iamMod.apiVersion): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
+      inline def setIamUndefined: Self = StObject.set(x, "iam", js.undefined)
       
-      @scala.inline
-      def setIdentitystore(value: typings.awsSdk.identitystoreMod.apiVersion): Self = StObject.set(x, "identitystore", value.asInstanceOf[js.Any])
+      inline def setIdentitystore(value: typings.awsSdk.identitystoreMod.apiVersion): Self = StObject.set(x, "identitystore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentitystoreUndefined: Self = StObject.set(x, "identitystore", js.undefined)
+      inline def setIdentitystoreUndefined: Self = StObject.set(x, "identitystore", js.undefined)
       
-      @scala.inline
-      def setImagebuilder(value: typings.awsSdk.imagebuilderMod.apiVersion): Self = StObject.set(x, "imagebuilder", value.asInstanceOf[js.Any])
+      inline def setImagebuilder(value: typings.awsSdk.imagebuilderMod.apiVersion): Self = StObject.set(x, "imagebuilder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagebuilderUndefined: Self = StObject.set(x, "imagebuilder", js.undefined)
+      inline def setImagebuilderUndefined: Self = StObject.set(x, "imagebuilder", js.undefined)
       
-      @scala.inline
-      def setImportexport(value: typings.awsSdk.importexportMod.apiVersion): Self = StObject.set(x, "importexport", value.asInstanceOf[js.Any])
+      inline def setImportexport(value: typings.awsSdk.importexportMod.apiVersion): Self = StObject.set(x, "importexport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportexportUndefined: Self = StObject.set(x, "importexport", js.undefined)
+      inline def setImportexportUndefined: Self = StObject.set(x, "importexport", js.undefined)
       
-      @scala.inline
-      def setInspector(value: typings.awsSdk.inspectorMod.apiVersion): Self = StObject.set(x, "inspector", value.asInstanceOf[js.Any])
+      inline def setInspector(value: typings.awsSdk.inspectorMod.apiVersion): Self = StObject.set(x, "inspector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInspectorUndefined: Self = StObject.set(x, "inspector", js.undefined)
+      inline def setInspectorUndefined: Self = StObject.set(x, "inspector", js.undefined)
       
-      @scala.inline
-      def setIot(value: typings.awsSdk.iotMod.apiVersion): Self = StObject.set(x, "iot", value.asInstanceOf[js.Any])
+      inline def setIot(value: typings.awsSdk.iotMod.apiVersion): Self = StObject.set(x, "iot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIot1clickdevicesservice(value: typings.awsSdk.iot1clickdevicesserviceMod.apiVersion): Self = StObject.set(x, "iot1clickdevicesservice", value.asInstanceOf[js.Any])
+      inline def setIot1clickdevicesservice(value: typings.awsSdk.iot1clickdevicesserviceMod.apiVersion): Self = StObject.set(x, "iot1clickdevicesservice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIot1clickdevicesserviceUndefined: Self = StObject.set(x, "iot1clickdevicesservice", js.undefined)
+      inline def setIot1clickdevicesserviceUndefined: Self = StObject.set(x, "iot1clickdevicesservice", js.undefined)
       
-      @scala.inline
-      def setIot1clickprojects(value: typings.awsSdk.iot1clickprojectsMod.apiVersion): Self = StObject.set(x, "iot1clickprojects", value.asInstanceOf[js.Any])
+      inline def setIot1clickprojects(value: typings.awsSdk.iot1clickprojectsMod.apiVersion): Self = StObject.set(x, "iot1clickprojects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIot1clickprojectsUndefined: Self = StObject.set(x, "iot1clickprojects", js.undefined)
+      inline def setIot1clickprojectsUndefined: Self = StObject.set(x, "iot1clickprojects", js.undefined)
       
-      @scala.inline
-      def setIotUndefined: Self = StObject.set(x, "iot", js.undefined)
+      inline def setIotUndefined: Self = StObject.set(x, "iot", js.undefined)
       
-      @scala.inline
-      def setIotanalytics(value: typings.awsSdk.iotanalyticsMod.apiVersion): Self = StObject.set(x, "iotanalytics", value.asInstanceOf[js.Any])
+      inline def setIotanalytics(value: typings.awsSdk.iotanalyticsMod.apiVersion): Self = StObject.set(x, "iotanalytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotanalyticsUndefined: Self = StObject.set(x, "iotanalytics", js.undefined)
+      inline def setIotanalyticsUndefined: Self = StObject.set(x, "iotanalytics", js.undefined)
       
-      @scala.inline
-      def setIotdata(value: typings.awsSdk.iotdataMod.apiVersion): Self = StObject.set(x, "iotdata", value.asInstanceOf[js.Any])
+      inline def setIotdata(value: typings.awsSdk.iotdataMod.apiVersion): Self = StObject.set(x, "iotdata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotdataUndefined: Self = StObject.set(x, "iotdata", js.undefined)
+      inline def setIotdataUndefined: Self = StObject.set(x, "iotdata", js.undefined)
       
-      @scala.inline
-      def setIotevents(value: typings.awsSdk.ioteventsMod.apiVersion): Self = StObject.set(x, "iotevents", value.asInstanceOf[js.Any])
+      inline def setIotevents(value: typings.awsSdk.ioteventsMod.apiVersion): Self = StObject.set(x, "iotevents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIoteventsUndefined: Self = StObject.set(x, "iotevents", js.undefined)
+      inline def setIoteventsUndefined: Self = StObject.set(x, "iotevents", js.undefined)
       
-      @scala.inline
-      def setIoteventsdata(value: typings.awsSdk.ioteventsdataMod.apiVersion): Self = StObject.set(x, "ioteventsdata", value.asInstanceOf[js.Any])
+      inline def setIoteventsdata(value: typings.awsSdk.ioteventsdataMod.apiVersion): Self = StObject.set(x, "ioteventsdata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIoteventsdataUndefined: Self = StObject.set(x, "ioteventsdata", js.undefined)
+      inline def setIoteventsdataUndefined: Self = StObject.set(x, "ioteventsdata", js.undefined)
       
-      @scala.inline
-      def setIotjobsdataplane(value: typings.awsSdk.iotjobsdataplaneMod.apiVersion): Self = StObject.set(x, "iotjobsdataplane", value.asInstanceOf[js.Any])
+      inline def setIotjobsdataplane(value: typings.awsSdk.iotjobsdataplaneMod.apiVersion): Self = StObject.set(x, "iotjobsdataplane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotjobsdataplaneUndefined: Self = StObject.set(x, "iotjobsdataplane", js.undefined)
+      inline def setIotjobsdataplaneUndefined: Self = StObject.set(x, "iotjobsdataplane", js.undefined)
       
-      @scala.inline
-      def setIotsecuretunneling(value: typings.awsSdk.iotsecuretunnelingMod.apiVersion): Self = StObject.set(x, "iotsecuretunneling", value.asInstanceOf[js.Any])
+      inline def setIotsecuretunneling(value: typings.awsSdk.iotsecuretunnelingMod.apiVersion): Self = StObject.set(x, "iotsecuretunneling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotsecuretunnelingUndefined: Self = StObject.set(x, "iotsecuretunneling", js.undefined)
+      inline def setIotsecuretunnelingUndefined: Self = StObject.set(x, "iotsecuretunneling", js.undefined)
       
-      @scala.inline
-      def setIotsitewise(value: typings.awsSdk.iotsitewiseMod.apiVersion): Self = StObject.set(x, "iotsitewise", value.asInstanceOf[js.Any])
+      inline def setIotsitewise(value: typings.awsSdk.iotsitewiseMod.apiVersion): Self = StObject.set(x, "iotsitewise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotsitewiseUndefined: Self = StObject.set(x, "iotsitewise", js.undefined)
+      inline def setIotsitewiseUndefined: Self = StObject.set(x, "iotsitewise", js.undefined)
       
-      @scala.inline
-      def setIotthingsgraph(value: typings.awsSdk.iotthingsgraphMod.apiVersion): Self = StObject.set(x, "iotthingsgraph", value.asInstanceOf[js.Any])
+      inline def setIotthingsgraph(value: typings.awsSdk.iotthingsgraphMod.apiVersion): Self = StObject.set(x, "iotthingsgraph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIotthingsgraphUndefined: Self = StObject.set(x, "iotthingsgraph", js.undefined)
+      inline def setIotthingsgraphUndefined: Self = StObject.set(x, "iotthingsgraph", js.undefined)
       
-      @scala.inline
-      def setIvs(value: typings.awsSdk.ivsMod.apiVersion): Self = StObject.set(x, "ivs", value.asInstanceOf[js.Any])
+      inline def setIvs(value: typings.awsSdk.ivsMod.apiVersion): Self = StObject.set(x, "ivs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvsUndefined: Self = StObject.set(x, "ivs", js.undefined)
+      inline def setIvsUndefined: Self = StObject.set(x, "ivs", js.undefined)
       
-      @scala.inline
-      def setKafka(value: typings.awsSdk.kafkaMod.apiVersion): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
+      inline def setKafka(value: typings.awsSdk.kafkaMod.apiVersion): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKafkaUndefined: Self = StObject.set(x, "kafka", js.undefined)
+      inline def setKafkaUndefined: Self = StObject.set(x, "kafka", js.undefined)
       
-      @scala.inline
-      def setKendra(value: typings.awsSdk.kendraMod.apiVersion): Self = StObject.set(x, "kendra", value.asInstanceOf[js.Any])
+      inline def setKendra(value: typings.awsSdk.kendraMod.apiVersion): Self = StObject.set(x, "kendra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKendraUndefined: Self = StObject.set(x, "kendra", js.undefined)
+      inline def setKendraUndefined: Self = StObject.set(x, "kendra", js.undefined)
       
-      @scala.inline
-      def setKinesis(value: typings.awsSdk.kinesisMod.apiVersion): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
+      inline def setKinesis(value: typings.awsSdk.kinesisMod.apiVersion): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
+      inline def setKinesisUndefined: Self = StObject.set(x, "kinesis", js.undefined)
       
-      @scala.inline
-      def setKinesisanalytics(value: typings.awsSdk.kinesisanalyticsMod.apiVersion): Self = StObject.set(x, "kinesisanalytics", value.asInstanceOf[js.Any])
+      inline def setKinesisanalytics(value: typings.awsSdk.kinesisanalyticsMod.apiVersion): Self = StObject.set(x, "kinesisanalytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisanalyticsUndefined: Self = StObject.set(x, "kinesisanalytics", js.undefined)
+      inline def setKinesisanalyticsUndefined: Self = StObject.set(x, "kinesisanalytics", js.undefined)
       
-      @scala.inline
-      def setKinesisanalyticsv2(value: typings.awsSdk.kinesisanalyticsv2Mod.apiVersion): Self = StObject.set(x, "kinesisanalyticsv2", value.asInstanceOf[js.Any])
+      inline def setKinesisanalyticsv2(value: typings.awsSdk.kinesisanalyticsv2Mod.apiVersion): Self = StObject.set(x, "kinesisanalyticsv2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisanalyticsv2Undefined: Self = StObject.set(x, "kinesisanalyticsv2", js.undefined)
+      inline def setKinesisanalyticsv2Undefined: Self = StObject.set(x, "kinesisanalyticsv2", js.undefined)
       
-      @scala.inline
-      def setKinesisvideo(value: typings.awsSdk.kinesisvideoMod.apiVersion): Self = StObject.set(x, "kinesisvideo", value.asInstanceOf[js.Any])
+      inline def setKinesisvideo(value: typings.awsSdk.kinesisvideoMod.apiVersion): Self = StObject.set(x, "kinesisvideo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisvideoUndefined: Self = StObject.set(x, "kinesisvideo", js.undefined)
+      inline def setKinesisvideoUndefined: Self = StObject.set(x, "kinesisvideo", js.undefined)
       
-      @scala.inline
-      def setKinesisvideoarchivedmedia(value: typings.awsSdk.kinesisvideoarchivedmediaMod.apiVersion): Self = StObject.set(x, "kinesisvideoarchivedmedia", value.asInstanceOf[js.Any])
+      inline def setKinesisvideoarchivedmedia(value: typings.awsSdk.kinesisvideoarchivedmediaMod.apiVersion): Self = StObject.set(x, "kinesisvideoarchivedmedia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisvideoarchivedmediaUndefined: Self = StObject.set(x, "kinesisvideoarchivedmedia", js.undefined)
+      inline def setKinesisvideoarchivedmediaUndefined: Self = StObject.set(x, "kinesisvideoarchivedmedia", js.undefined)
       
-      @scala.inline
-      def setKinesisvideomedia(value: typings.awsSdk.kinesisvideomediaMod.apiVersion): Self = StObject.set(x, "kinesisvideomedia", value.asInstanceOf[js.Any])
+      inline def setKinesisvideomedia(value: typings.awsSdk.kinesisvideomediaMod.apiVersion): Self = StObject.set(x, "kinesisvideomedia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisvideomediaUndefined: Self = StObject.set(x, "kinesisvideomedia", js.undefined)
+      inline def setKinesisvideomediaUndefined: Self = StObject.set(x, "kinesisvideomedia", js.undefined)
       
-      @scala.inline
-      def setKinesisvideosignalingchannels(value: typings.awsSdk.kinesisvideosignalingchannelsMod.apiVersion): Self = StObject.set(x, "kinesisvideosignalingchannels", value.asInstanceOf[js.Any])
+      inline def setKinesisvideosignalingchannels(value: typings.awsSdk.kinesisvideosignalingchannelsMod.apiVersion): Self = StObject.set(x, "kinesisvideosignalingchannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisvideosignalingchannelsUndefined: Self = StObject.set(x, "kinesisvideosignalingchannels", js.undefined)
+      inline def setKinesisvideosignalingchannelsUndefined: Self = StObject.set(x, "kinesisvideosignalingchannels", js.undefined)
       
-      @scala.inline
-      def setKms(value: typings.awsSdk.kmsMod.apiVersion): Self = StObject.set(x, "kms", value.asInstanceOf[js.Any])
+      inline def setKms(value: typings.awsSdk.kmsMod.apiVersion): Self = StObject.set(x, "kms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsUndefined: Self = StObject.set(x, "kms", js.undefined)
+      inline def setKmsUndefined: Self = StObject.set(x, "kms", js.undefined)
       
-      @scala.inline
-      def setLakeformation(value: typings.awsSdk.lakeformationMod.apiVersion): Self = StObject.set(x, "lakeformation", value.asInstanceOf[js.Any])
+      inline def setLakeformation(value: typings.awsSdk.lakeformationMod.apiVersion): Self = StObject.set(x, "lakeformation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLakeformationUndefined: Self = StObject.set(x, "lakeformation", js.undefined)
+      inline def setLakeformationUndefined: Self = StObject.set(x, "lakeformation", js.undefined)
       
-      @scala.inline
-      def setLambda(value: typings.awsSdk.lambdaMod.apiVersion): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+      inline def setLambda(value: typings.awsSdk.lambdaMod.apiVersion): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+      inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
       
-      @scala.inline
-      def setLexmodelbuildingservice(value: typings.awsSdk.lexmodelbuildingserviceMod.apiVersion): Self = StObject.set(x, "lexmodelbuildingservice", value.asInstanceOf[js.Any])
+      inline def setLexmodelbuildingservice(value: typings.awsSdk.lexmodelbuildingserviceMod.apiVersion): Self = StObject.set(x, "lexmodelbuildingservice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLexmodelbuildingserviceUndefined: Self = StObject.set(x, "lexmodelbuildingservice", js.undefined)
+      inline def setLexmodelbuildingserviceUndefined: Self = StObject.set(x, "lexmodelbuildingservice", js.undefined)
       
-      @scala.inline
-      def setLexruntime(value: typings.awsSdk.lexruntimeMod.apiVersion): Self = StObject.set(x, "lexruntime", value.asInstanceOf[js.Any])
+      inline def setLexruntime(value: typings.awsSdk.lexruntimeMod.apiVersion): Self = StObject.set(x, "lexruntime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLexruntimeUndefined: Self = StObject.set(x, "lexruntime", js.undefined)
+      inline def setLexruntimeUndefined: Self = StObject.set(x, "lexruntime", js.undefined)
       
-      @scala.inline
-      def setLicensemanager(value: typings.awsSdk.licensemanagerMod.apiVersion): Self = StObject.set(x, "licensemanager", value.asInstanceOf[js.Any])
+      inline def setLicensemanager(value: typings.awsSdk.licensemanagerMod.apiVersion): Self = StObject.set(x, "licensemanager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicensemanagerUndefined: Self = StObject.set(x, "licensemanager", js.undefined)
+      inline def setLicensemanagerUndefined: Self = StObject.set(x, "licensemanager", js.undefined)
       
-      @scala.inline
-      def setLightsail(value: typings.awsSdk.lightsailMod.apiVersion): Self = StObject.set(x, "lightsail", value.asInstanceOf[js.Any])
+      inline def setLightsail(value: typings.awsSdk.lightsailMod.apiVersion): Self = StObject.set(x, "lightsail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightsailUndefined: Self = StObject.set(x, "lightsail", js.undefined)
+      inline def setLightsailUndefined: Self = StObject.set(x, "lightsail", js.undefined)
       
-      @scala.inline
-      def setMachinelearning(value: typings.awsSdk.machinelearningMod.apiVersion): Self = StObject.set(x, "machinelearning", value.asInstanceOf[js.Any])
+      inline def setMachinelearning(value: typings.awsSdk.machinelearningMod.apiVersion): Self = StObject.set(x, "machinelearning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMachinelearningUndefined: Self = StObject.set(x, "machinelearning", js.undefined)
+      inline def setMachinelearningUndefined: Self = StObject.set(x, "machinelearning", js.undefined)
       
-      @scala.inline
-      def setMacie(value: typings.awsSdk.macieMod.apiVersion): Self = StObject.set(x, "macie", value.asInstanceOf[js.Any])
+      inline def setMacie(value: typings.awsSdk.macieMod.apiVersion): Self = StObject.set(x, "macie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacie2(value: typings.awsSdk.macie2Mod.apiVersion): Self = StObject.set(x, "macie2", value.asInstanceOf[js.Any])
+      inline def setMacie2(value: typings.awsSdk.macie2Mod.apiVersion): Self = StObject.set(x, "macie2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMacie2Undefined: Self = StObject.set(x, "macie2", js.undefined)
+      inline def setMacie2Undefined: Self = StObject.set(x, "macie2", js.undefined)
       
-      @scala.inline
-      def setMacieUndefined: Self = StObject.set(x, "macie", js.undefined)
+      inline def setMacieUndefined: Self = StObject.set(x, "macie", js.undefined)
       
-      @scala.inline
-      def setManagedblockchain(value: typings.awsSdk.managedblockchainMod.apiVersion): Self = StObject.set(x, "managedblockchain", value.asInstanceOf[js.Any])
+      inline def setManagedblockchain(value: typings.awsSdk.managedblockchainMod.apiVersion): Self = StObject.set(x, "managedblockchain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagedblockchainUndefined: Self = StObject.set(x, "managedblockchain", js.undefined)
+      inline def setManagedblockchainUndefined: Self = StObject.set(x, "managedblockchain", js.undefined)
       
-      @scala.inline
-      def setMarketplacecatalog(value: typings.awsSdk.marketplacecatalogMod.apiVersion): Self = StObject.set(x, "marketplacecatalog", value.asInstanceOf[js.Any])
+      inline def setMarketplacecatalog(value: typings.awsSdk.marketplacecatalogMod.apiVersion): Self = StObject.set(x, "marketplacecatalog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarketplacecatalogUndefined: Self = StObject.set(x, "marketplacecatalog", js.undefined)
+      inline def setMarketplacecatalogUndefined: Self = StObject.set(x, "marketplacecatalog", js.undefined)
       
-      @scala.inline
-      def setMarketplacecommerceanalytics(value: typings.awsSdk.marketplacecommerceanalyticsMod.apiVersion): Self = StObject.set(x, "marketplacecommerceanalytics", value.asInstanceOf[js.Any])
+      inline def setMarketplacecommerceanalytics(value: typings.awsSdk.marketplacecommerceanalyticsMod.apiVersion): Self = StObject.set(x, "marketplacecommerceanalytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarketplacecommerceanalyticsUndefined: Self = StObject.set(x, "marketplacecommerceanalytics", js.undefined)
+      inline def setMarketplacecommerceanalyticsUndefined: Self = StObject.set(x, "marketplacecommerceanalytics", js.undefined)
       
-      @scala.inline
-      def setMarketplaceentitlementservice(value: typings.awsSdk.marketplaceentitlementserviceMod.apiVersion): Self = StObject.set(x, "marketplaceentitlementservice", value.asInstanceOf[js.Any])
+      inline def setMarketplaceentitlementservice(value: typings.awsSdk.marketplaceentitlementserviceMod.apiVersion): Self = StObject.set(x, "marketplaceentitlementservice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarketplaceentitlementserviceUndefined: Self = StObject.set(x, "marketplaceentitlementservice", js.undefined)
+      inline def setMarketplaceentitlementserviceUndefined: Self = StObject.set(x, "marketplaceentitlementservice", js.undefined)
       
-      @scala.inline
-      def setMarketplacemetering(value: typings.awsSdk.marketplacemeteringMod.apiVersion): Self = StObject.set(x, "marketplacemetering", value.asInstanceOf[js.Any])
+      inline def setMarketplacemetering(value: typings.awsSdk.marketplacemeteringMod.apiVersion): Self = StObject.set(x, "marketplacemetering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarketplacemeteringUndefined: Self = StObject.set(x, "marketplacemetering", js.undefined)
+      inline def setMarketplacemeteringUndefined: Self = StObject.set(x, "marketplacemetering", js.undefined)
       
-      @scala.inline
-      def setMediaconnect(value: typings.awsSdk.mediaconnectMod.apiVersion): Self = StObject.set(x, "mediaconnect", value.asInstanceOf[js.Any])
+      inline def setMediaconnect(value: typings.awsSdk.mediaconnectMod.apiVersion): Self = StObject.set(x, "mediaconnect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaconnectUndefined: Self = StObject.set(x, "mediaconnect", js.undefined)
+      inline def setMediaconnectUndefined: Self = StObject.set(x, "mediaconnect", js.undefined)
       
-      @scala.inline
-      def setMediaconvert(value: typings.awsSdk.mediaconvertMod.apiVersion): Self = StObject.set(x, "mediaconvert", value.asInstanceOf[js.Any])
+      inline def setMediaconvert(value: typings.awsSdk.mediaconvertMod.apiVersion): Self = StObject.set(x, "mediaconvert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaconvertUndefined: Self = StObject.set(x, "mediaconvert", js.undefined)
+      inline def setMediaconvertUndefined: Self = StObject.set(x, "mediaconvert", js.undefined)
       
-      @scala.inline
-      def setMedialive(value: typings.awsSdk.medialiveMod.apiVersion): Self = StObject.set(x, "medialive", value.asInstanceOf[js.Any])
+      inline def setMedialive(value: typings.awsSdk.medialiveMod.apiVersion): Self = StObject.set(x, "medialive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedialiveUndefined: Self = StObject.set(x, "medialive", js.undefined)
+      inline def setMedialiveUndefined: Self = StObject.set(x, "medialive", js.undefined)
       
-      @scala.inline
-      def setMediapackage(value: typings.awsSdk.mediapackageMod.apiVersion): Self = StObject.set(x, "mediapackage", value.asInstanceOf[js.Any])
+      inline def setMediapackage(value: typings.awsSdk.mediapackageMod.apiVersion): Self = StObject.set(x, "mediapackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediapackageUndefined: Self = StObject.set(x, "mediapackage", js.undefined)
+      inline def setMediapackageUndefined: Self = StObject.set(x, "mediapackage", js.undefined)
       
-      @scala.inline
-      def setMediapackagevod(value: typings.awsSdk.mediapackagevodMod.apiVersion): Self = StObject.set(x, "mediapackagevod", value.asInstanceOf[js.Any])
+      inline def setMediapackagevod(value: typings.awsSdk.mediapackagevodMod.apiVersion): Self = StObject.set(x, "mediapackagevod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediapackagevodUndefined: Self = StObject.set(x, "mediapackagevod", js.undefined)
+      inline def setMediapackagevodUndefined: Self = StObject.set(x, "mediapackagevod", js.undefined)
       
-      @scala.inline
-      def setMediastore(value: typings.awsSdk.mediastoreMod.apiVersion): Self = StObject.set(x, "mediastore", value.asInstanceOf[js.Any])
+      inline def setMediastore(value: typings.awsSdk.mediastoreMod.apiVersion): Self = StObject.set(x, "mediastore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediastoreUndefined: Self = StObject.set(x, "mediastore", js.undefined)
+      inline def setMediastoreUndefined: Self = StObject.set(x, "mediastore", js.undefined)
       
-      @scala.inline
-      def setMediastoredata(value: typings.awsSdk.mediastoredataMod.apiVersion): Self = StObject.set(x, "mediastoredata", value.asInstanceOf[js.Any])
+      inline def setMediastoredata(value: typings.awsSdk.mediastoredataMod.apiVersion): Self = StObject.set(x, "mediastoredata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediastoredataUndefined: Self = StObject.set(x, "mediastoredata", js.undefined)
+      inline def setMediastoredataUndefined: Self = StObject.set(x, "mediastoredata", js.undefined)
       
-      @scala.inline
-      def setMediatailor(value: typings.awsSdk.mediatailorMod.apiVersion): Self = StObject.set(x, "mediatailor", value.asInstanceOf[js.Any])
+      inline def setMediatailor(value: typings.awsSdk.mediatailorMod.apiVersion): Self = StObject.set(x, "mediatailor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediatailorUndefined: Self = StObject.set(x, "mediatailor", js.undefined)
+      inline def setMediatailorUndefined: Self = StObject.set(x, "mediatailor", js.undefined)
       
-      @scala.inline
-      def setMigrationhub(value: typings.awsSdk.migrationhubMod.apiVersion): Self = StObject.set(x, "migrationhub", value.asInstanceOf[js.Any])
+      inline def setMigrationhub(value: typings.awsSdk.migrationhubMod.apiVersion): Self = StObject.set(x, "migrationhub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationhubUndefined: Self = StObject.set(x, "migrationhub", js.undefined)
+      inline def setMigrationhubUndefined: Self = StObject.set(x, "migrationhub", js.undefined)
       
-      @scala.inline
-      def setMigrationhubconfig(value: typings.awsSdk.migrationhubconfigMod.apiVersion): Self = StObject.set(x, "migrationhubconfig", value.asInstanceOf[js.Any])
+      inline def setMigrationhubconfig(value: typings.awsSdk.migrationhubconfigMod.apiVersion): Self = StObject.set(x, "migrationhubconfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationhubconfigUndefined: Self = StObject.set(x, "migrationhubconfig", js.undefined)
+      inline def setMigrationhubconfigUndefined: Self = StObject.set(x, "migrationhubconfig", js.undefined)
       
-      @scala.inline
-      def setMobile(value: typings.awsSdk.mobileMod.apiVersion): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: typings.awsSdk.mobileMod.apiVersion): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+      inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
       
-      @scala.inline
-      def setMobileanalytics(value: typings.awsSdk.mobileanalyticsMod.apiVersion): Self = StObject.set(x, "mobileanalytics", value.asInstanceOf[js.Any])
+      inline def setMobileanalytics(value: typings.awsSdk.mobileanalyticsMod.apiVersion): Self = StObject.set(x, "mobileanalytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileanalyticsUndefined: Self = StObject.set(x, "mobileanalytics", js.undefined)
+      inline def setMobileanalyticsUndefined: Self = StObject.set(x, "mobileanalytics", js.undefined)
       
-      @scala.inline
-      def setMq(value: typings.awsSdk.mqMod.apiVersion): Self = StObject.set(x, "mq", value.asInstanceOf[js.Any])
+      inline def setMq(value: typings.awsSdk.mqMod.apiVersion): Self = StObject.set(x, "mq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMqUndefined: Self = StObject.set(x, "mq", js.undefined)
+      inline def setMqUndefined: Self = StObject.set(x, "mq", js.undefined)
       
-      @scala.inline
-      def setMturk(value: typings.awsSdk.mturkMod.apiVersion): Self = StObject.set(x, "mturk", value.asInstanceOf[js.Any])
+      inline def setMturk(value: typings.awsSdk.mturkMod.apiVersion): Self = StObject.set(x, "mturk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMturkUndefined: Self = StObject.set(x, "mturk", js.undefined)
+      inline def setMturkUndefined: Self = StObject.set(x, "mturk", js.undefined)
       
-      @scala.inline
-      def setNeptune(value: typings.awsSdk.neptuneMod.apiVersion): Self = StObject.set(x, "neptune", value.asInstanceOf[js.Any])
+      inline def setNeptune(value: typings.awsSdk.neptuneMod.apiVersion): Self = StObject.set(x, "neptune", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeptuneUndefined: Self = StObject.set(x, "neptune", js.undefined)
+      inline def setNeptuneUndefined: Self = StObject.set(x, "neptune", js.undefined)
       
-      @scala.inline
-      def setNetworkfirewall(value: typings.awsSdk.networkfirewallMod.apiVersion): Self = StObject.set(x, "networkfirewall", value.asInstanceOf[js.Any])
+      inline def setNetworkfirewall(value: typings.awsSdk.networkfirewallMod.apiVersion): Self = StObject.set(x, "networkfirewall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkfirewallUndefined: Self = StObject.set(x, "networkfirewall", js.undefined)
+      inline def setNetworkfirewallUndefined: Self = StObject.set(x, "networkfirewall", js.undefined)
       
-      @scala.inline
-      def setNetworkmanager(value: typings.awsSdk.networkmanagerMod.apiVersion): Self = StObject.set(x, "networkmanager", value.asInstanceOf[js.Any])
+      inline def setNetworkmanager(value: typings.awsSdk.networkmanagerMod.apiVersion): Self = StObject.set(x, "networkmanager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkmanagerUndefined: Self = StObject.set(x, "networkmanager", js.undefined)
+      inline def setNetworkmanagerUndefined: Self = StObject.set(x, "networkmanager", js.undefined)
       
-      @scala.inline
-      def setOpsworks(value: typings.awsSdk.opsworksMod.apiVersion): Self = StObject.set(x, "opsworks", value.asInstanceOf[js.Any])
+      inline def setOpsworks(value: typings.awsSdk.opsworksMod.apiVersion): Self = StObject.set(x, "opsworks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpsworksUndefined: Self = StObject.set(x, "opsworks", js.undefined)
+      inline def setOpsworksUndefined: Self = StObject.set(x, "opsworks", js.undefined)
       
-      @scala.inline
-      def setOpsworkscm(value: typings.awsSdk.opsworkscmMod.apiVersion): Self = StObject.set(x, "opsworkscm", value.asInstanceOf[js.Any])
+      inline def setOpsworkscm(value: typings.awsSdk.opsworkscmMod.apiVersion): Self = StObject.set(x, "opsworkscm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpsworkscmUndefined: Self = StObject.set(x, "opsworkscm", js.undefined)
+      inline def setOpsworkscmUndefined: Self = StObject.set(x, "opsworkscm", js.undefined)
       
-      @scala.inline
-      def setOrganizations(value: typings.awsSdk.organizationsMod.apiVersion): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
+      inline def setOrganizations(value: typings.awsSdk.organizationsMod.apiVersion): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
+      inline def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
       
-      @scala.inline
-      def setOutposts(value: typings.awsSdk.outpostsMod.apiVersion): Self = StObject.set(x, "outposts", value.asInstanceOf[js.Any])
+      inline def setOutposts(value: typings.awsSdk.outpostsMod.apiVersion): Self = StObject.set(x, "outposts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostsUndefined: Self = StObject.set(x, "outposts", js.undefined)
+      inline def setOutpostsUndefined: Self = StObject.set(x, "outposts", js.undefined)
       
-      @scala.inline
-      def setPersonalize(value: typings.awsSdk.personalizeMod.apiVersion): Self = StObject.set(x, "personalize", value.asInstanceOf[js.Any])
+      inline def setPersonalize(value: typings.awsSdk.personalizeMod.apiVersion): Self = StObject.set(x, "personalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonalizeUndefined: Self = StObject.set(x, "personalize", js.undefined)
+      inline def setPersonalizeUndefined: Self = StObject.set(x, "personalize", js.undefined)
       
-      @scala.inline
-      def setPersonalizeevents(value: typings.awsSdk.personalizeeventsMod.apiVersion): Self = StObject.set(x, "personalizeevents", value.asInstanceOf[js.Any])
+      inline def setPersonalizeevents(value: typings.awsSdk.personalizeeventsMod.apiVersion): Self = StObject.set(x, "personalizeevents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonalizeeventsUndefined: Self = StObject.set(x, "personalizeevents", js.undefined)
+      inline def setPersonalizeeventsUndefined: Self = StObject.set(x, "personalizeevents", js.undefined)
       
-      @scala.inline
-      def setPersonalizeruntime(value: typings.awsSdk.personalizeruntimeMod.apiVersion): Self = StObject.set(x, "personalizeruntime", value.asInstanceOf[js.Any])
+      inline def setPersonalizeruntime(value: typings.awsSdk.personalizeruntimeMod.apiVersion): Self = StObject.set(x, "personalizeruntime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonalizeruntimeUndefined: Self = StObject.set(x, "personalizeruntime", js.undefined)
+      inline def setPersonalizeruntimeUndefined: Self = StObject.set(x, "personalizeruntime", js.undefined)
       
-      @scala.inline
-      def setPi(value: typings.awsSdk.piMod.apiVersion): Self = StObject.set(x, "pi", value.asInstanceOf[js.Any])
+      inline def setPi(value: typings.awsSdk.piMod.apiVersion): Self = StObject.set(x, "pi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPiUndefined: Self = StObject.set(x, "pi", js.undefined)
+      inline def setPiUndefined: Self = StObject.set(x, "pi", js.undefined)
       
-      @scala.inline
-      def setPinpoint(value: typings.awsSdk.pinpointMod.apiVersion): Self = StObject.set(x, "pinpoint", value.asInstanceOf[js.Any])
+      inline def setPinpoint(value: typings.awsSdk.pinpointMod.apiVersion): Self = StObject.set(x, "pinpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinpointUndefined: Self = StObject.set(x, "pinpoint", js.undefined)
+      inline def setPinpointUndefined: Self = StObject.set(x, "pinpoint", js.undefined)
       
-      @scala.inline
-      def setPinpointemail(value: typings.awsSdk.pinpointemailMod.apiVersion): Self = StObject.set(x, "pinpointemail", value.asInstanceOf[js.Any])
+      inline def setPinpointemail(value: typings.awsSdk.pinpointemailMod.apiVersion): Self = StObject.set(x, "pinpointemail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinpointemailUndefined: Self = StObject.set(x, "pinpointemail", js.undefined)
+      inline def setPinpointemailUndefined: Self = StObject.set(x, "pinpointemail", js.undefined)
       
-      @scala.inline
-      def setPinpointsmsvoice(value: typings.awsSdk.pinpointsmsvoiceMod.apiVersion): Self = StObject.set(x, "pinpointsmsvoice", value.asInstanceOf[js.Any])
+      inline def setPinpointsmsvoice(value: typings.awsSdk.pinpointsmsvoiceMod.apiVersion): Self = StObject.set(x, "pinpointsmsvoice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinpointsmsvoiceUndefined: Self = StObject.set(x, "pinpointsmsvoice", js.undefined)
+      inline def setPinpointsmsvoiceUndefined: Self = StObject.set(x, "pinpointsmsvoice", js.undefined)
       
-      @scala.inline
-      def setPolly(value: typings.awsSdk.pollyMod.apiVersion): Self = StObject.set(x, "polly", value.asInstanceOf[js.Any])
+      inline def setPolly(value: typings.awsSdk.pollyMod.apiVersion): Self = StObject.set(x, "polly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollyUndefined: Self = StObject.set(x, "polly", js.undefined)
+      inline def setPollyUndefined: Self = StObject.set(x, "polly", js.undefined)
       
-      @scala.inline
-      def setPricing(value: typings.awsSdk.pricingMod.apiVersion): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
+      inline def setPricing(value: typings.awsSdk.pricingMod.apiVersion): Self = StObject.set(x, "pricing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPricingUndefined: Self = StObject.set(x, "pricing", js.undefined)
+      inline def setPricingUndefined: Self = StObject.set(x, "pricing", js.undefined)
       
-      @scala.inline
-      def setQldb(value: typings.awsSdk.qldbMod.apiVersion): Self = StObject.set(x, "qldb", value.asInstanceOf[js.Any])
+      inline def setQldb(value: typings.awsSdk.qldbMod.apiVersion): Self = StObject.set(x, "qldb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQldbUndefined: Self = StObject.set(x, "qldb", js.undefined)
+      inline def setQldbUndefined: Self = StObject.set(x, "qldb", js.undefined)
       
-      @scala.inline
-      def setQldbsession(value: typings.awsSdk.qldbsessionMod.apiVersion): Self = StObject.set(x, "qldbsession", value.asInstanceOf[js.Any])
+      inline def setQldbsession(value: typings.awsSdk.qldbsessionMod.apiVersion): Self = StObject.set(x, "qldbsession", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQldbsessionUndefined: Self = StObject.set(x, "qldbsession", js.undefined)
+      inline def setQldbsessionUndefined: Self = StObject.set(x, "qldbsession", js.undefined)
       
-      @scala.inline
-      def setQuicksight(value: typings.awsSdk.quicksightMod.apiVersion): Self = StObject.set(x, "quicksight", value.asInstanceOf[js.Any])
+      inline def setQuicksight(value: typings.awsSdk.quicksightMod.apiVersion): Self = StObject.set(x, "quicksight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuicksightUndefined: Self = StObject.set(x, "quicksight", js.undefined)
+      inline def setQuicksightUndefined: Self = StObject.set(x, "quicksight", js.undefined)
       
-      @scala.inline
-      def setRam(value: typings.awsSdk.ramMod.apiVersion): Self = StObject.set(x, "ram", value.asInstanceOf[js.Any])
+      inline def setRam(value: typings.awsSdk.ramMod.apiVersion): Self = StObject.set(x, "ram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRamUndefined: Self = StObject.set(x, "ram", js.undefined)
+      inline def setRamUndefined: Self = StObject.set(x, "ram", js.undefined)
       
-      @scala.inline
-      def setRds(value: typings.awsSdk.rdsMod.apiVersion): Self = StObject.set(x, "rds", value.asInstanceOf[js.Any])
+      inline def setRds(value: typings.awsSdk.rdsMod.apiVersion): Self = StObject.set(x, "rds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdsUndefined: Self = StObject.set(x, "rds", js.undefined)
+      inline def setRdsUndefined: Self = StObject.set(x, "rds", js.undefined)
       
-      @scala.inline
-      def setRdsdataservice(value: typings.awsSdk.rdsdataserviceMod.apiVersion): Self = StObject.set(x, "rdsdataservice", value.asInstanceOf[js.Any])
+      inline def setRdsdataservice(value: typings.awsSdk.rdsdataserviceMod.apiVersion): Self = StObject.set(x, "rdsdataservice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRdsdataserviceUndefined: Self = StObject.set(x, "rdsdataservice", js.undefined)
+      inline def setRdsdataserviceUndefined: Self = StObject.set(x, "rdsdataservice", js.undefined)
       
-      @scala.inline
-      def setRedshift(value: typings.awsSdk.redshiftMod.apiVersion): Self = StObject.set(x, "redshift", value.asInstanceOf[js.Any])
+      inline def setRedshift(value: typings.awsSdk.redshiftMod.apiVersion): Self = StObject.set(x, "redshift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedshiftUndefined: Self = StObject.set(x, "redshift", js.undefined)
+      inline def setRedshiftUndefined: Self = StObject.set(x, "redshift", js.undefined)
       
-      @scala.inline
-      def setRedshiftdata(value: typings.awsSdk.redshiftdataMod.apiVersion): Self = StObject.set(x, "redshiftdata", value.asInstanceOf[js.Any])
+      inline def setRedshiftdata(value: typings.awsSdk.redshiftdataMod.apiVersion): Self = StObject.set(x, "redshiftdata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedshiftdataUndefined: Self = StObject.set(x, "redshiftdata", js.undefined)
+      inline def setRedshiftdataUndefined: Self = StObject.set(x, "redshiftdata", js.undefined)
       
-      @scala.inline
-      def setRekognition(value: typings.awsSdk.rekognitionMod.apiVersion): Self = StObject.set(x, "rekognition", value.asInstanceOf[js.Any])
+      inline def setRekognition(value: typings.awsSdk.rekognitionMod.apiVersion): Self = StObject.set(x, "rekognition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRekognitionUndefined: Self = StObject.set(x, "rekognition", js.undefined)
+      inline def setRekognitionUndefined: Self = StObject.set(x, "rekognition", js.undefined)
       
-      @scala.inline
-      def setResourcegroups(value: typings.awsSdk.resourcegroupsMod.apiVersion): Self = StObject.set(x, "resourcegroups", value.asInstanceOf[js.Any])
+      inline def setResourcegroups(value: typings.awsSdk.resourcegroupsMod.apiVersion): Self = StObject.set(x, "resourcegroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcegroupsUndefined: Self = StObject.set(x, "resourcegroups", js.undefined)
+      inline def setResourcegroupsUndefined: Self = StObject.set(x, "resourcegroups", js.undefined)
       
-      @scala.inline
-      def setResourcegroupstaggingapi(value: typings.awsSdk.resourcegroupstaggingapiMod.apiVersion): Self = StObject.set(x, "resourcegroupstaggingapi", value.asInstanceOf[js.Any])
+      inline def setResourcegroupstaggingapi(value: typings.awsSdk.resourcegroupstaggingapiMod.apiVersion): Self = StObject.set(x, "resourcegroupstaggingapi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcegroupstaggingapiUndefined: Self = StObject.set(x, "resourcegroupstaggingapi", js.undefined)
+      inline def setResourcegroupstaggingapiUndefined: Self = StObject.set(x, "resourcegroupstaggingapi", js.undefined)
       
-      @scala.inline
-      def setRobomaker(value: typings.awsSdk.robomakerMod.apiVersion): Self = StObject.set(x, "robomaker", value.asInstanceOf[js.Any])
+      inline def setRobomaker(value: typings.awsSdk.robomakerMod.apiVersion): Self = StObject.set(x, "robomaker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRobomakerUndefined: Self = StObject.set(x, "robomaker", js.undefined)
+      inline def setRobomakerUndefined: Self = StObject.set(x, "robomaker", js.undefined)
       
-      @scala.inline
-      def setRoute53(value: typings.awsSdk.route53Mod.apiVersion): Self = StObject.set(x, "route53", value.asInstanceOf[js.Any])
+      inline def setRoute53(value: typings.awsSdk.route53Mod.apiVersion): Self = StObject.set(x, "route53", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute53Undefined: Self = StObject.set(x, "route53", js.undefined)
+      inline def setRoute53Undefined: Self = StObject.set(x, "route53", js.undefined)
       
-      @scala.inline
-      def setRoute53domains(value: typings.awsSdk.route53domainsMod.apiVersion): Self = StObject.set(x, "route53domains", value.asInstanceOf[js.Any])
+      inline def setRoute53domains(value: typings.awsSdk.route53domainsMod.apiVersion): Self = StObject.set(x, "route53domains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute53domainsUndefined: Self = StObject.set(x, "route53domains", js.undefined)
+      inline def setRoute53domainsUndefined: Self = StObject.set(x, "route53domains", js.undefined)
       
-      @scala.inline
-      def setRoute53resolver(value: typings.awsSdk.route53resolverMod.apiVersion): Self = StObject.set(x, "route53resolver", value.asInstanceOf[js.Any])
+      inline def setRoute53resolver(value: typings.awsSdk.route53resolverMod.apiVersion): Self = StObject.set(x, "route53resolver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute53resolverUndefined: Self = StObject.set(x, "route53resolver", js.undefined)
+      inline def setRoute53resolverUndefined: Self = StObject.set(x, "route53resolver", js.undefined)
       
-      @scala.inline
-      def setS3(value: typings.awsSdk.s3Mod.apiVersion): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+      inline def setS3(value: typings.awsSdk.s3Mod.apiVersion): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+      inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
       
-      @scala.inline
-      def setS3control(value: typings.awsSdk.s3controlMod.apiVersion): Self = StObject.set(x, "s3control", value.asInstanceOf[js.Any])
+      inline def setS3control(value: typings.awsSdk.s3controlMod.apiVersion): Self = StObject.set(x, "s3control", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3controlUndefined: Self = StObject.set(x, "s3control", js.undefined)
+      inline def setS3controlUndefined: Self = StObject.set(x, "s3control", js.undefined)
       
-      @scala.inline
-      def setS3outposts(value: typings.awsSdk.s3outpostsMod.apiVersion): Self = StObject.set(x, "s3outposts", value.asInstanceOf[js.Any])
+      inline def setS3outposts(value: typings.awsSdk.s3outpostsMod.apiVersion): Self = StObject.set(x, "s3outposts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3outpostsUndefined: Self = StObject.set(x, "s3outposts", js.undefined)
+      inline def setS3outpostsUndefined: Self = StObject.set(x, "s3outposts", js.undefined)
       
-      @scala.inline
-      def setSagemaker(value: typings.awsSdk.sagemakerMod.apiVersion): Self = StObject.set(x, "sagemaker", value.asInstanceOf[js.Any])
+      inline def setSagemaker(value: typings.awsSdk.sagemakerMod.apiVersion): Self = StObject.set(x, "sagemaker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSagemakerUndefined: Self = StObject.set(x, "sagemaker", js.undefined)
+      inline def setSagemakerUndefined: Self = StObject.set(x, "sagemaker", js.undefined)
       
-      @scala.inline
-      def setSagemakerruntime(value: typings.awsSdk.sagemakerruntimeMod.apiVersion): Self = StObject.set(x, "sagemakerruntime", value.asInstanceOf[js.Any])
+      inline def setSagemakerruntime(value: typings.awsSdk.sagemakerruntimeMod.apiVersion): Self = StObject.set(x, "sagemakerruntime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSagemakerruntimeUndefined: Self = StObject.set(x, "sagemakerruntime", js.undefined)
+      inline def setSagemakerruntimeUndefined: Self = StObject.set(x, "sagemakerruntime", js.undefined)
       
-      @scala.inline
-      def setSavingsplans(value: typings.awsSdk.savingsplansMod.apiVersion): Self = StObject.set(x, "savingsplans", value.asInstanceOf[js.Any])
+      inline def setSavingsplans(value: typings.awsSdk.savingsplansMod.apiVersion): Self = StObject.set(x, "savingsplans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavingsplansUndefined: Self = StObject.set(x, "savingsplans", js.undefined)
+      inline def setSavingsplansUndefined: Self = StObject.set(x, "savingsplans", js.undefined)
       
-      @scala.inline
-      def setSchemas(value: typings.awsSdk.schemasMod.apiVersion): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      inline def setSchemas(value: typings.awsSdk.schemasMod.apiVersion): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+      inline def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
       
-      @scala.inline
-      def setSecretsmanager(value: typings.awsSdk.secretsmanagerMod.apiVersion): Self = StObject.set(x, "secretsmanager", value.asInstanceOf[js.Any])
+      inline def setSecretsmanager(value: typings.awsSdk.secretsmanagerMod.apiVersion): Self = StObject.set(x, "secretsmanager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretsmanagerUndefined: Self = StObject.set(x, "secretsmanager", js.undefined)
+      inline def setSecretsmanagerUndefined: Self = StObject.set(x, "secretsmanager", js.undefined)
       
-      @scala.inline
-      def setSecurityhub(value: typings.awsSdk.securityhubMod.apiVersion): Self = StObject.set(x, "securityhub", value.asInstanceOf[js.Any])
+      inline def setSecurityhub(value: typings.awsSdk.securityhubMod.apiVersion): Self = StObject.set(x, "securityhub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityhubUndefined: Self = StObject.set(x, "securityhub", js.undefined)
+      inline def setSecurityhubUndefined: Self = StObject.set(x, "securityhub", js.undefined)
       
-      @scala.inline
-      def setServerlessapplicationrepository(value: typings.awsSdk.serverlessapplicationrepositoryMod.apiVersion): Self = StObject.set(x, "serverlessapplicationrepository", value.asInstanceOf[js.Any])
+      inline def setServerlessapplicationrepository(value: typings.awsSdk.serverlessapplicationrepositoryMod.apiVersion): Self = StObject.set(x, "serverlessapplicationrepository", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerlessapplicationrepositoryUndefined: Self = StObject.set(x, "serverlessapplicationrepository", js.undefined)
+      inline def setServerlessapplicationrepositoryUndefined: Self = StObject.set(x, "serverlessapplicationrepository", js.undefined)
       
-      @scala.inline
-      def setServicecatalog(value: typings.awsSdk.servicecatalogMod.apiVersion): Self = StObject.set(x, "servicecatalog", value.asInstanceOf[js.Any])
+      inline def setServicecatalog(value: typings.awsSdk.servicecatalogMod.apiVersion): Self = StObject.set(x, "servicecatalog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicecatalogUndefined: Self = StObject.set(x, "servicecatalog", js.undefined)
+      inline def setServicecatalogUndefined: Self = StObject.set(x, "servicecatalog", js.undefined)
       
-      @scala.inline
-      def setServicecatalogappregistry(value: typings.awsSdk.servicecatalogappregistryMod.apiVersion): Self = StObject.set(x, "servicecatalogappregistry", value.asInstanceOf[js.Any])
+      inline def setServicecatalogappregistry(value: typings.awsSdk.servicecatalogappregistryMod.apiVersion): Self = StObject.set(x, "servicecatalogappregistry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicecatalogappregistryUndefined: Self = StObject.set(x, "servicecatalogappregistry", js.undefined)
+      inline def setServicecatalogappregistryUndefined: Self = StObject.set(x, "servicecatalogappregistry", js.undefined)
       
-      @scala.inline
-      def setServicediscovery(value: typings.awsSdk.servicediscoveryMod.apiVersion): Self = StObject.set(x, "servicediscovery", value.asInstanceOf[js.Any])
+      inline def setServicediscovery(value: typings.awsSdk.servicediscoveryMod.apiVersion): Self = StObject.set(x, "servicediscovery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicediscoveryUndefined: Self = StObject.set(x, "servicediscovery", js.undefined)
+      inline def setServicediscoveryUndefined: Self = StObject.set(x, "servicediscovery", js.undefined)
       
-      @scala.inline
-      def setServicequotas(value: typings.awsSdk.servicequotasMod.apiVersion): Self = StObject.set(x, "servicequotas", value.asInstanceOf[js.Any])
+      inline def setServicequotas(value: typings.awsSdk.servicequotasMod.apiVersion): Self = StObject.set(x, "servicequotas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicequotasUndefined: Self = StObject.set(x, "servicequotas", js.undefined)
+      inline def setServicequotasUndefined: Self = StObject.set(x, "servicequotas", js.undefined)
       
-      @scala.inline
-      def setSes(value: typings.awsSdk.sesMod.apiVersion): Self = StObject.set(x, "ses", value.asInstanceOf[js.Any])
+      inline def setSes(value: typings.awsSdk.sesMod.apiVersion): Self = StObject.set(x, "ses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSesUndefined: Self = StObject.set(x, "ses", js.undefined)
+      inline def setSesUndefined: Self = StObject.set(x, "ses", js.undefined)
       
-      @scala.inline
-      def setSesv2(value: typings.awsSdk.sesv2Mod.apiVersion): Self = StObject.set(x, "sesv2", value.asInstanceOf[js.Any])
+      inline def setSesv2(value: typings.awsSdk.sesv2Mod.apiVersion): Self = StObject.set(x, "sesv2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSesv2Undefined: Self = StObject.set(x, "sesv2", js.undefined)
+      inline def setSesv2Undefined: Self = StObject.set(x, "sesv2", js.undefined)
       
-      @scala.inline
-      def setShield(value: typings.awsSdk.shieldMod.apiVersion): Self = StObject.set(x, "shield", value.asInstanceOf[js.Any])
+      inline def setShield(value: typings.awsSdk.shieldMod.apiVersion): Self = StObject.set(x, "shield", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShieldUndefined: Self = StObject.set(x, "shield", js.undefined)
+      inline def setShieldUndefined: Self = StObject.set(x, "shield", js.undefined)
       
-      @scala.inline
-      def setSigner(value: typings.awsSdk.signerMod.apiVersion): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(value: typings.awsSdk.signerMod.apiVersion): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
+      inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
-      @scala.inline
-      def setSimpledb(value: typings.awsSdk.simpledbMod.apiVersion): Self = StObject.set(x, "simpledb", value.asInstanceOf[js.Any])
+      inline def setSimpledb(value: typings.awsSdk.simpledbMod.apiVersion): Self = StObject.set(x, "simpledb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimpledbUndefined: Self = StObject.set(x, "simpledb", js.undefined)
+      inline def setSimpledbUndefined: Self = StObject.set(x, "simpledb", js.undefined)
       
-      @scala.inline
-      def setSms(value: typings.awsSdk.smsMod.apiVersion): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
+      inline def setSms(value: typings.awsSdk.smsMod.apiVersion): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmsUndefined: Self = StObject.set(x, "sms", js.undefined)
+      inline def setSmsUndefined: Self = StObject.set(x, "sms", js.undefined)
       
-      @scala.inline
-      def setSnowball(value: typings.awsSdk.snowballMod.apiVersion): Self = StObject.set(x, "snowball", value.asInstanceOf[js.Any])
+      inline def setSnowball(value: typings.awsSdk.snowballMod.apiVersion): Self = StObject.set(x, "snowball", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnowballUndefined: Self = StObject.set(x, "snowball", js.undefined)
+      inline def setSnowballUndefined: Self = StObject.set(x, "snowball", js.undefined)
       
-      @scala.inline
-      def setSns(value: typings.awsSdk.snsMod.apiVersion): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
+      inline def setSns(value: typings.awsSdk.snsMod.apiVersion): Self = StObject.set(x, "sns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
+      inline def setSnsUndefined: Self = StObject.set(x, "sns", js.undefined)
       
-      @scala.inline
-      def setSqs(value: typings.awsSdk.sqsMod.apiVersion): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
+      inline def setSqs(value: typings.awsSdk.sqsMod.apiVersion): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
+      inline def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
       
-      @scala.inline
-      def setSsm(value: typings.awsSdk.ssmMod.apiVersion): Self = StObject.set(x, "ssm", value.asInstanceOf[js.Any])
+      inline def setSsm(value: typings.awsSdk.ssmMod.apiVersion): Self = StObject.set(x, "ssm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsmUndefined: Self = StObject.set(x, "ssm", js.undefined)
+      inline def setSsmUndefined: Self = StObject.set(x, "ssm", js.undefined)
       
-      @scala.inline
-      def setSso(value: typings.awsSdk.ssoMod.apiVersion): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
+      inline def setSso(value: typings.awsSdk.ssoMod.apiVersion): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsoUndefined: Self = StObject.set(x, "sso", js.undefined)
+      inline def setSsoUndefined: Self = StObject.set(x, "sso", js.undefined)
       
-      @scala.inline
-      def setSsoadmin(value: typings.awsSdk.ssoadminMod.apiVersion): Self = StObject.set(x, "ssoadmin", value.asInstanceOf[js.Any])
+      inline def setSsoadmin(value: typings.awsSdk.ssoadminMod.apiVersion): Self = StObject.set(x, "ssoadmin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsoadminUndefined: Self = StObject.set(x, "ssoadmin", js.undefined)
+      inline def setSsoadminUndefined: Self = StObject.set(x, "ssoadmin", js.undefined)
       
-      @scala.inline
-      def setSsooidc(value: typings.awsSdk.ssooidcMod.apiVersion): Self = StObject.set(x, "ssooidc", value.asInstanceOf[js.Any])
+      inline def setSsooidc(value: typings.awsSdk.ssooidcMod.apiVersion): Self = StObject.set(x, "ssooidc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsooidcUndefined: Self = StObject.set(x, "ssooidc", js.undefined)
+      inline def setSsooidcUndefined: Self = StObject.set(x, "ssooidc", js.undefined)
       
-      @scala.inline
-      def setStepfunctions(value: typings.awsSdk.stepfunctionsMod.apiVersion): Self = StObject.set(x, "stepfunctions", value.asInstanceOf[js.Any])
+      inline def setStepfunctions(value: typings.awsSdk.stepfunctionsMod.apiVersion): Self = StObject.set(x, "stepfunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepfunctionsUndefined: Self = StObject.set(x, "stepfunctions", js.undefined)
+      inline def setStepfunctionsUndefined: Self = StObject.set(x, "stepfunctions", js.undefined)
       
-      @scala.inline
-      def setStoragegateway(value: typings.awsSdk.storagegatewayMod.apiVersion): Self = StObject.set(x, "storagegateway", value.asInstanceOf[js.Any])
+      inline def setStoragegateway(value: typings.awsSdk.storagegatewayMod.apiVersion): Self = StObject.set(x, "storagegateway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoragegatewayUndefined: Self = StObject.set(x, "storagegateway", js.undefined)
+      inline def setStoragegatewayUndefined: Self = StObject.set(x, "storagegateway", js.undefined)
       
-      @scala.inline
-      def setSts(value: typings.awsSdk.stsMod.apiVersion): Self = StObject.set(x, "sts", value.asInstanceOf[js.Any])
+      inline def setSts(value: typings.awsSdk.stsMod.apiVersion): Self = StObject.set(x, "sts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStsUndefined: Self = StObject.set(x, "sts", js.undefined)
+      inline def setStsUndefined: Self = StObject.set(x, "sts", js.undefined)
       
-      @scala.inline
-      def setSupport(value: typings.awsSdk.supportMod.apiVersion): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
+      inline def setSupport(value: typings.awsSdk.supportMod.apiVersion): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
+      inline def setSupportUndefined: Self = StObject.set(x, "support", js.undefined)
       
-      @scala.inline
-      def setSwf(value: typings.awsSdk.swfMod.apiVersion): Self = StObject.set(x, "swf", value.asInstanceOf[js.Any])
+      inline def setSwf(value: typings.awsSdk.swfMod.apiVersion): Self = StObject.set(x, "swf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwfUndefined: Self = StObject.set(x, "swf", js.undefined)
+      inline def setSwfUndefined: Self = StObject.set(x, "swf", js.undefined)
       
-      @scala.inline
-      def setSynthetics(value: typings.awsSdk.syntheticsMod.apiVersion): Self = StObject.set(x, "synthetics", value.asInstanceOf[js.Any])
+      inline def setSynthetics(value: typings.awsSdk.syntheticsMod.apiVersion): Self = StObject.set(x, "synthetics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyntheticsUndefined: Self = StObject.set(x, "synthetics", js.undefined)
+      inline def setSyntheticsUndefined: Self = StObject.set(x, "synthetics", js.undefined)
       
-      @scala.inline
-      def setTextract(value: typings.awsSdk.textractMod.apiVersion): Self = StObject.set(x, "textract", value.asInstanceOf[js.Any])
+      inline def setTextract(value: typings.awsSdk.textractMod.apiVersion): Self = StObject.set(x, "textract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextractUndefined: Self = StObject.set(x, "textract", js.undefined)
+      inline def setTextractUndefined: Self = StObject.set(x, "textract", js.undefined)
       
-      @scala.inline
-      def setTimestreamquery(value: typings.awsSdk.timestreamqueryMod.apiVersion): Self = StObject.set(x, "timestreamquery", value.asInstanceOf[js.Any])
+      inline def setTimestreamquery(value: typings.awsSdk.timestreamqueryMod.apiVersion): Self = StObject.set(x, "timestreamquery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestreamqueryUndefined: Self = StObject.set(x, "timestreamquery", js.undefined)
+      inline def setTimestreamqueryUndefined: Self = StObject.set(x, "timestreamquery", js.undefined)
       
-      @scala.inline
-      def setTimestreamwrite(value: typings.awsSdk.timestreamwriteMod.apiVersion): Self = StObject.set(x, "timestreamwrite", value.asInstanceOf[js.Any])
+      inline def setTimestreamwrite(value: typings.awsSdk.timestreamwriteMod.apiVersion): Self = StObject.set(x, "timestreamwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestreamwriteUndefined: Self = StObject.set(x, "timestreamwrite", js.undefined)
+      inline def setTimestreamwriteUndefined: Self = StObject.set(x, "timestreamwrite", js.undefined)
       
-      @scala.inline
-      def setTranscribeservice(value: typings.awsSdk.transcribeserviceMod.apiVersion): Self = StObject.set(x, "transcribeservice", value.asInstanceOf[js.Any])
+      inline def setTranscribeservice(value: typings.awsSdk.transcribeserviceMod.apiVersion): Self = StObject.set(x, "transcribeservice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscribeserviceUndefined: Self = StObject.set(x, "transcribeservice", js.undefined)
+      inline def setTranscribeserviceUndefined: Self = StObject.set(x, "transcribeservice", js.undefined)
       
-      @scala.inline
-      def setTransfer(value: typings.awsSdk.transferMod.apiVersion): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
+      inline def setTransfer(value: typings.awsSdk.transferMod.apiVersion): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferUndefined: Self = StObject.set(x, "transfer", js.undefined)
+      inline def setTransferUndefined: Self = StObject.set(x, "transfer", js.undefined)
       
-      @scala.inline
-      def setTranslate(value: typings.awsSdk.translateMod.apiVersion): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+      inline def setTranslate(value: typings.awsSdk.translateMod.apiVersion): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+      inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      @scala.inline
-      def setWaf(value: typings.awsSdk.wafMod.apiVersion): Self = StObject.set(x, "waf", value.asInstanceOf[js.Any])
+      inline def setWaf(value: typings.awsSdk.wafMod.apiVersion): Self = StObject.set(x, "waf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWafUndefined: Self = StObject.set(x, "waf", js.undefined)
+      inline def setWafUndefined: Self = StObject.set(x, "waf", js.undefined)
       
-      @scala.inline
-      def setWafregional(value: typings.awsSdk.wafregionalMod.apiVersion): Self = StObject.set(x, "wafregional", value.asInstanceOf[js.Any])
+      inline def setWafregional(value: typings.awsSdk.wafregionalMod.apiVersion): Self = StObject.set(x, "wafregional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWafregionalUndefined: Self = StObject.set(x, "wafregional", js.undefined)
+      inline def setWafregionalUndefined: Self = StObject.set(x, "wafregional", js.undefined)
       
-      @scala.inline
-      def setWafv2(value: typings.awsSdk.wafv2Mod.apiVersion): Self = StObject.set(x, "wafv2", value.asInstanceOf[js.Any])
+      inline def setWafv2(value: typings.awsSdk.wafv2Mod.apiVersion): Self = StObject.set(x, "wafv2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWafv2Undefined: Self = StObject.set(x, "wafv2", js.undefined)
+      inline def setWafv2Undefined: Self = StObject.set(x, "wafv2", js.undefined)
       
-      @scala.inline
-      def setWorkdocs(value: typings.awsSdk.workdocsMod.apiVersion): Self = StObject.set(x, "workdocs", value.asInstanceOf[js.Any])
+      inline def setWorkdocs(value: typings.awsSdk.workdocsMod.apiVersion): Self = StObject.set(x, "workdocs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkdocsUndefined: Self = StObject.set(x, "workdocs", js.undefined)
+      inline def setWorkdocsUndefined: Self = StObject.set(x, "workdocs", js.undefined)
       
-      @scala.inline
-      def setWorklink(value: typings.awsSdk.worklinkMod.apiVersion): Self = StObject.set(x, "worklink", value.asInstanceOf[js.Any])
+      inline def setWorklink(value: typings.awsSdk.worklinkMod.apiVersion): Self = StObject.set(x, "worklink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorklinkUndefined: Self = StObject.set(x, "worklink", js.undefined)
+      inline def setWorklinkUndefined: Self = StObject.set(x, "worklink", js.undefined)
       
-      @scala.inline
-      def setWorkmail(value: typings.awsSdk.workmailMod.apiVersion): Self = StObject.set(x, "workmail", value.asInstanceOf[js.Any])
+      inline def setWorkmail(value: typings.awsSdk.workmailMod.apiVersion): Self = StObject.set(x, "workmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkmailUndefined: Self = StObject.set(x, "workmail", js.undefined)
+      inline def setWorkmailUndefined: Self = StObject.set(x, "workmail", js.undefined)
       
-      @scala.inline
-      def setWorkmailmessageflow(value: typings.awsSdk.workmailmessageflowMod.apiVersion): Self = StObject.set(x, "workmailmessageflow", value.asInstanceOf[js.Any])
+      inline def setWorkmailmessageflow(value: typings.awsSdk.workmailmessageflowMod.apiVersion): Self = StObject.set(x, "workmailmessageflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkmailmessageflowUndefined: Self = StObject.set(x, "workmailmessageflow", js.undefined)
+      inline def setWorkmailmessageflowUndefined: Self = StObject.set(x, "workmailmessageflow", js.undefined)
       
-      @scala.inline
-      def setWorkspaces(value: typings.awsSdk.workspacesMod.apiVersion): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+      inline def setWorkspaces(value: typings.awsSdk.workspacesMod.apiVersion): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
+      inline def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
       
-      @scala.inline
-      def setXray(value: typings.awsSdk.xrayMod.apiVersion): Self = StObject.set(x, "xray", value.asInstanceOf[js.Any])
+      inline def setXray(value: typings.awsSdk.xrayMod.apiVersion): Self = StObject.set(x, "xray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXrayUndefined: Self = StObject.set(x, "xray", js.undefined)
+      inline def setXrayUndefined: Self = StObject.set(x, "xray", js.undefined)
     }
   }
 }

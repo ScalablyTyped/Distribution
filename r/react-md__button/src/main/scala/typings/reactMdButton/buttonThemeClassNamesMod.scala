@@ -10,8 +10,7 @@ object buttonThemeClassNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buttonThemeClassNames(hasPropThemeThemeTypeButtonTypePropDisabledClassName: ButtonThemeProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonThemeClassNames")(hasPropThemeThemeTypeButtonTypePropDisabledClassName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def buttonThemeClassNames(hasPropThemeThemeTypeButtonTypePropDisabledClassName: ButtonThemeProps): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonThemeClassNames")(hasPropThemeThemeTypeButtonTypePropDisabledClassName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdButton.reactMdButtonStrings.clear
@@ -24,23 +23,17 @@ object buttonThemeClassNamesMod {
   trait ButtonTheme extends StObject
   object ButtonTheme {
     
-    @scala.inline
-    def clear: typings.reactMdButton.reactMdButtonStrings.clear = "clear".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.clear]
+    inline def clear: typings.reactMdButton.reactMdButtonStrings.clear = "clear".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.clear]
     
-    @scala.inline
-    def disabled: typings.reactMdButton.reactMdButtonStrings.disabled = "disabled".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.disabled]
+    inline def disabled: typings.reactMdButton.reactMdButtonStrings.disabled = "disabled".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.disabled]
     
-    @scala.inline
-    def error: typings.reactMdButton.reactMdButtonStrings.error = "error".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.error]
+    inline def error: typings.reactMdButton.reactMdButtonStrings.error = "error".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.error]
     
-    @scala.inline
-    def primary: typings.reactMdButton.reactMdButtonStrings.primary = "primary".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.primary]
+    inline def primary: typings.reactMdButton.reactMdButtonStrings.primary = "primary".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.primary]
     
-    @scala.inline
-    def secondary: typings.reactMdButton.reactMdButtonStrings.secondary = "secondary".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.secondary]
+    inline def secondary: typings.reactMdButton.reactMdButtonStrings.secondary = "secondary".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.secondary]
     
-    @scala.inline
-    def warning: typings.reactMdButton.reactMdButtonStrings.warning = "warning".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.warning]
+    inline def warning: typings.reactMdButton.reactMdButtonStrings.warning = "warning".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.warning]
   }
   
   trait ButtonThemeProps extends StObject {
@@ -82,44 +75,32 @@ object buttonThemeClassNamesMod {
   }
   object ButtonThemeProps {
     
-    @scala.inline
-    def apply(): ButtonThemeProps = {
+    inline def apply(): ButtonThemeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonThemeProps]
     }
     
-    @scala.inline
-    implicit class ButtonThemePropsMutableBuilder[Self <: ButtonThemeProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonThemeProps](x: Self) {
       
-      @scala.inline
-      def setButtonType(value: ButtonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+      inline def setButtonType(value: ButtonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
+      inline def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ButtonTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ButtonTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeType(value: ButtonThemeType): Self = StObject.set(x, "themeType", value.asInstanceOf[js.Any])
+      inline def setThemeType(value: ButtonThemeType): Self = StObject.set(x, "themeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeTypeUndefined: Self = StObject.set(x, "themeType", js.undefined)
+      inline def setThemeTypeUndefined: Self = StObject.set(x, "themeType", js.undefined)
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -131,14 +112,11 @@ object buttonThemeClassNamesMod {
   trait ButtonThemeType extends StObject
   object ButtonThemeType {
     
-    @scala.inline
-    def contained: typings.reactMdButton.reactMdButtonStrings.contained = "contained".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.contained]
+    inline def contained: typings.reactMdButton.reactMdButtonStrings.contained = "contained".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.contained]
     
-    @scala.inline
-    def flat: typings.reactMdButton.reactMdButtonStrings.flat = "flat".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.flat]
+    inline def flat: typings.reactMdButton.reactMdButtonStrings.flat = "flat".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.flat]
     
-    @scala.inline
-    def outline: typings.reactMdButton.reactMdButtonStrings.outline = "outline".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.outline]
+    inline def outline: typings.reactMdButton.reactMdButtonStrings.outline = "outline".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.outline]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -148,10 +126,8 @@ object buttonThemeClassNamesMod {
   trait ButtonType extends StObject
   object ButtonType {
     
-    @scala.inline
-    def icon: typings.reactMdButton.reactMdButtonStrings.icon = "icon".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.icon]
+    inline def icon: typings.reactMdButton.reactMdButtonStrings.icon = "icon".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.icon]
     
-    @scala.inline
-    def text: typings.reactMdButton.reactMdButtonStrings.text = "text".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.text]
+    inline def text: typings.reactMdButton.reactMdButtonStrings.text = "text".asInstanceOf[typings.reactMdButton.reactMdButtonStrings.text]
   }
 }

@@ -14,8 +14,7 @@ object runCodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(opts: RunCodeOpts): js.Promise[ExecResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExecResult]]
+  inline def default(opts: RunCodeOpts): js.Promise[ExecResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ExecResult]]
   
   trait RunCodeOpts extends StObject {
     
@@ -80,110 +79,76 @@ object runCodeMod {
   }
   object RunCodeOpts {
     
-    @scala.inline
-    def apply(): RunCodeOpts = {
+    inline def apply(): RunCodeOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RunCodeOpts]
     }
     
-    @scala.inline
-    implicit class RunCodeOptsMutableBuilder[Self <: RunCodeOpts] (val x: Self) extends AnyVal {
+    extension [Self <: RunCodeOpts](x: Self) {
       
-      @scala.inline
-      def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
       
-      @scala.inline
-      def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      @scala.inline
-      def setCaller(value: Buffer): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
+      inline def setCaller(value: Buffer): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
+      inline def setCallerUndefined: Self = StObject.set(x, "caller", js.undefined)
       
-      @scala.inline
-      def setCode(value: Buffer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Buffer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setEvm(value: default): Self = StObject.set(x, "evm", value.asInstanceOf[js.Any])
+      inline def setEvm(value: default): Self = StObject.set(x, "evm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvmUndefined: Self = StObject.set(x, "evm", js.undefined)
+      inline def setEvmUndefined: Self = StObject.set(x, "evm", js.undefined)
       
-      @scala.inline
-      def setGasLimit(value: Buffer): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
+      inline def setGasLimit(value: Buffer): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasLimitUndefined: Self = StObject.set(x, "gasLimit", js.undefined)
+      inline def setGasLimitUndefined: Self = StObject.set(x, "gasLimit", js.undefined)
       
-      @scala.inline
-      def setGasPrice(value: Buffer): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      inline def setGasPrice(value: Buffer): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
+      inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
-      @scala.inline
-      def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+      inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
+      inline def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
       
-      @scala.inline
-      def setMessage(value: typings.ethereumjsVm.messageMod.default): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: typings.ethereumjsVm.messageMod.default): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: Buffer): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: Buffer): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+      inline def setPc(value: Double): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+      inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
       
-      @scala.inline
-      def setSelfdestruct(value: StringDictionary[Boolean]): Self = StObject.set(x, "selfdestruct", value.asInstanceOf[js.Any])
+      inline def setSelfdestruct(value: StringDictionary[Boolean]): Self = StObject.set(x, "selfdestruct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfdestructUndefined: Self = StObject.set(x, "selfdestruct", js.undefined)
+      inline def setSelfdestructUndefined: Self = StObject.set(x, "selfdestruct", js.undefined)
       
-      @scala.inline
-      def setTxContext(value: typings.ethereumjsVm.txContextMod.default): Self = StObject.set(x, "txContext", value.asInstanceOf[js.Any])
+      inline def setTxContext(value: typings.ethereumjsVm.txContextMod.default): Self = StObject.set(x, "txContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxContextUndefined: Self = StObject.set(x, "txContext", js.undefined)
+      inline def setTxContextUndefined: Self = StObject.set(x, "txContext", js.undefined)
       
-      @scala.inline
-      def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

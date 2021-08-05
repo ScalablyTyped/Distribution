@@ -48,61 +48,43 @@ trait CacheNode extends StObject {
 }
 object CacheNode {
   
-  @scala.inline
-  def apply(): CacheNode = {
+  inline def apply(): CacheNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheNode]
   }
   
-  @scala.inline
-  implicit class CacheNodeMutableBuilder[Self <: CacheNode] (val x: Self) extends AnyVal {
+  extension [Self <: CacheNode](x: Self) {
     
-    @scala.inline
-    def setCacheNodeCreateTime(value: TStamp): Self = StObject.set(x, "CacheNodeCreateTime", value.asInstanceOf[js.Any])
+    inline def setCacheNodeCreateTime(value: TStamp): Self = StObject.set(x, "CacheNodeCreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNodeCreateTimeUndefined: Self = StObject.set(x, "CacheNodeCreateTime", js.undefined)
+    inline def setCacheNodeCreateTimeUndefined: Self = StObject.set(x, "CacheNodeCreateTime", js.undefined)
     
-    @scala.inline
-    def setCacheNodeId(value: String): Self = StObject.set(x, "CacheNodeId", value.asInstanceOf[js.Any])
+    inline def setCacheNodeId(value: String): Self = StObject.set(x, "CacheNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNodeIdUndefined: Self = StObject.set(x, "CacheNodeId", js.undefined)
+    inline def setCacheNodeIdUndefined: Self = StObject.set(x, "CacheNodeId", js.undefined)
     
-    @scala.inline
-    def setCacheNodeStatus(value: String): Self = StObject.set(x, "CacheNodeStatus", value.asInstanceOf[js.Any])
+    inline def setCacheNodeStatus(value: String): Self = StObject.set(x, "CacheNodeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNodeStatusUndefined: Self = StObject.set(x, "CacheNodeStatus", js.undefined)
+    inline def setCacheNodeStatusUndefined: Self = StObject.set(x, "CacheNodeStatus", js.undefined)
     
-    @scala.inline
-    def setCustomerAvailabilityZone(value: String): Self = StObject.set(x, "CustomerAvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setCustomerAvailabilityZone(value: String): Self = StObject.set(x, "CustomerAvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerAvailabilityZoneUndefined: Self = StObject.set(x, "CustomerAvailabilityZone", js.undefined)
+    inline def setCustomerAvailabilityZoneUndefined: Self = StObject.set(x, "CustomerAvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setCustomerOutpostArn(value: String): Self = StObject.set(x, "CustomerOutpostArn", value.asInstanceOf[js.Any])
+    inline def setCustomerOutpostArn(value: String): Self = StObject.set(x, "CustomerOutpostArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerOutpostArnUndefined: Self = StObject.set(x, "CustomerOutpostArn", js.undefined)
+    inline def setCustomerOutpostArnUndefined: Self = StObject.set(x, "CustomerOutpostArn", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    @scala.inline
-    def setParameterGroupStatus(value: String): Self = StObject.set(x, "ParameterGroupStatus", value.asInstanceOf[js.Any])
+    inline def setParameterGroupStatus(value: String): Self = StObject.set(x, "ParameterGroupStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterGroupStatusUndefined: Self = StObject.set(x, "ParameterGroupStatus", js.undefined)
+    inline def setParameterGroupStatusUndefined: Self = StObject.set(x, "ParameterGroupStatus", js.undefined)
     
-    @scala.inline
-    def setSourceCacheNodeId(value: String): Self = StObject.set(x, "SourceCacheNodeId", value.asInstanceOf[js.Any])
+    inline def setSourceCacheNodeId(value: String): Self = StObject.set(x, "SourceCacheNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCacheNodeIdUndefined: Self = StObject.set(x, "SourceCacheNodeId", js.undefined)
+    inline def setSourceCacheNodeIdUndefined: Self = StObject.set(x, "SourceCacheNodeId", js.undefined)
   }
 }

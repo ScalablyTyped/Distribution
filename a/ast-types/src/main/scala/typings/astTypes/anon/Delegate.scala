@@ -19,46 +19,33 @@ trait Delegate extends StObject {
 }
 object Delegate {
   
-  @scala.inline
-  def apply(): Delegate = {
+  inline def apply(): Delegate = {
     val __obj = js.Dynamic.literal(argument = null)
     __obj.asInstanceOf[Delegate]
   }
   
-  @scala.inline
-  implicit class DelegateMutableBuilder[Self <: Delegate] (val x: Self) extends AnyVal {
+  extension [Self <: Delegate](x: Self) {
     
-    @scala.inline
-    def setArgument(value: ExpressionKind): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: ExpressionKind): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentNull: Self = StObject.set(x, "argument", null)
+    inline def setArgumentNull: Self = StObject.set(x, "argument", null)
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+    inline def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
+    inline def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
   }
 }

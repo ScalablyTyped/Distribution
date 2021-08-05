@@ -16,20 +16,16 @@ trait IAchCreditTransferPaymentMethodDetails
 }
 object IAchCreditTransferPaymentMethodDetails {
   
-  @scala.inline
-  def apply(ach_credit_transfer: Accountnumber): IAchCreditTransferPaymentMethodDetails = {
+  inline def apply(ach_credit_transfer: Accountnumber): IAchCreditTransferPaymentMethodDetails = {
     val __obj = js.Dynamic.literal(ach_credit_transfer = ach_credit_transfer.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ach_credit_transfer")
     __obj.asInstanceOf[IAchCreditTransferPaymentMethodDetails]
   }
   
-  @scala.inline
-  implicit class IAchCreditTransferPaymentMethodDetailsMutableBuilder[Self <: IAchCreditTransferPaymentMethodDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IAchCreditTransferPaymentMethodDetails](x: Self) {
     
-    @scala.inline
-    def setAch_credit_transfer(value: Accountnumber): Self = StObject.set(x, "ach_credit_transfer", value.asInstanceOf[js.Any])
+    inline def setAch_credit_transfer(value: Accountnumber): Self = StObject.set(x, "ach_credit_transfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ach_credit_transfer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ach_credit_transfer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

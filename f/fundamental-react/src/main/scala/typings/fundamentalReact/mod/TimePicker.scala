@@ -18,6 +18,5 @@ object TimePicker {
   @JSImport("fundamental-react", "TimePicker.displayName")
   @js.native
   def displayName: typings.fundamentalReact.fundamentalReactStrings.TimePicker = js.native
-  @scala.inline
-  def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.TimePicker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.TimePicker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

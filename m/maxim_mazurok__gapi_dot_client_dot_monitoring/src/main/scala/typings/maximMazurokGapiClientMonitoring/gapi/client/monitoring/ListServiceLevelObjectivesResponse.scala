@@ -17,28 +17,21 @@ trait ListServiceLevelObjectivesResponse extends StObject {
 }
 object ListServiceLevelObjectivesResponse {
   
-  @scala.inline
-  def apply(): ListServiceLevelObjectivesResponse = {
+  inline def apply(): ListServiceLevelObjectivesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListServiceLevelObjectivesResponse]
   }
   
-  @scala.inline
-  implicit class ListServiceLevelObjectivesResponseMutableBuilder[Self <: ListServiceLevelObjectivesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListServiceLevelObjectivesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setServiceLevelObjectives(value: js.Array[ServiceLevelObjective]): Self = StObject.set(x, "serviceLevelObjectives", value.asInstanceOf[js.Any])
+    inline def setServiceLevelObjectives(value: js.Array[ServiceLevelObjective]): Self = StObject.set(x, "serviceLevelObjectives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceLevelObjectivesUndefined: Self = StObject.set(x, "serviceLevelObjectives", js.undefined)
+    inline def setServiceLevelObjectivesUndefined: Self = StObject.set(x, "serviceLevelObjectives", js.undefined)
     
-    @scala.inline
-    def setServiceLevelObjectivesVarargs(value: ServiceLevelObjective*): Self = StObject.set(x, "serviceLevelObjectives", js.Array(value :_*))
+    inline def setServiceLevelObjectivesVarargs(value: ServiceLevelObjective*): Self = StObject.set(x, "serviceLevelObjectives", js.Array(value :_*))
   }
 }

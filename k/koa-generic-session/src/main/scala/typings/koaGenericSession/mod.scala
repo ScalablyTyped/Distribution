@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: SessionOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(options: SessionOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-generic-session", JSImport.Namespace)
   @js.native
@@ -33,17 +32,14 @@ object mod {
   }
   object Session {
     
-    @scala.inline
-    def apply(cookie: js.Any): Session = {
+    inline def apply(cookie: js.Any): Session = {
       val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any])
       __obj.asInstanceOf[Session]
     }
     
-    @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+    extension [Self <: Session](x: Self) {
       
-      @scala.inline
-      def setCookie(value: js.Any): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: js.Any): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,23 +53,18 @@ object mod {
   }
   object SessionIdStore {
     
-    @scala.inline
-    def apply(get: () => js.Any, reset: () => Unit, set: (String, Session) => Unit): SessionIdStore = {
+    inline def apply(get: () => js.Any, reset: () => Unit, set: (String, Session) => Unit): SessionIdStore = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), reset = js.Any.fromFunction0(reset), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[SessionIdStore]
     }
     
-    @scala.inline
-    implicit class SessionIdStoreMutableBuilder[Self <: SessionIdStore] (val x: Self) extends AnyVal {
+    extension [Self <: SessionIdStore](x: Self) {
       
-      @scala.inline
-      def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      inline def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (String, Session) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, Session) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -109,98 +100,68 @@ object mod {
   }
   object SessionOptions {
     
-    @scala.inline
-    def apply(): SessionOptions = {
+    inline def apply(): SessionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionOptions]
     }
     
-    @scala.inline
-    implicit class SessionOptionsMutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SessionOptions](x: Self) {
       
-      @scala.inline
-      def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
+      inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+      inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
       
-      @scala.inline
-      def setBeforeSave(value: (/* ctx */ Context, /* session */ Session) => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction2(value))
+      inline def setBeforeSave(value: (/* ctx */ Context, /* session */ Session) => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
+      inline def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
       
-      @scala.inline
-      def setCookie(value: HttpOnly): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: HttpOnly): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+      inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+      inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
       
-      @scala.inline
-      def setErrorHandler(value: (/* error */ Error, /* type */ String, /* ctx */ Context) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction3(value))
+      inline def setErrorHandler(value: (/* error */ Error, /* type */ String, /* ctx */ Context) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setGenSid(value: /* length */ Double => String): Self = StObject.set(x, "genSid", js.Any.fromFunction1(value))
+      inline def setGenSid(value: /* length */ Double => String): Self = StObject.set(x, "genSid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGenSidUndefined: Self = StObject.set(x, "genSid", js.undefined)
+      inline def setGenSidUndefined: Self = StObject.set(x, "genSid", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setReconnectTimeout(value: Double): Self = StObject.set(x, "reconnectTimeout", value.asInstanceOf[js.Any])
+      inline def setReconnectTimeout(value: Double): Self = StObject.set(x, "reconnectTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectTimeoutUndefined: Self = StObject.set(x, "reconnectTimeout", js.undefined)
+      inline def setReconnectTimeoutUndefined: Self = StObject.set(x, "reconnectTimeout", js.undefined)
       
-      @scala.inline
-      def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
+      inline def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollingUndefined: Self = StObject.set(x, "rolling", js.undefined)
+      inline def setRollingUndefined: Self = StObject.set(x, "rolling", js.undefined)
       
-      @scala.inline
-      def setSessionIdStore(value: SessionIdStore): Self = StObject.set(x, "sessionIdStore", value.asInstanceOf[js.Any])
+      inline def setSessionIdStore(value: SessionIdStore): Self = StObject.set(x, "sessionIdStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionIdStoreUndefined: Self = StObject.set(x, "sessionIdStore", js.undefined)
+      inline def setSessionIdStoreUndefined: Self = StObject.set(x, "sessionIdStore", js.undefined)
       
-      @scala.inline
-      def setStore(value: SessionStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: SessionStore): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setValid(value: (/* ctx */ Context, /* session */ Session) => Boolean): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
+      inline def setValid(value: (/* ctx */ Context, /* session */ Session) => Boolean): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
     }
   }
   
@@ -229,29 +190,22 @@ object mod {
     }
     object Context {
       
-      @scala.inline
-      def apply(regenerateSession: () => Generator[js.Any, js.Any, js.Any]): typings.koaGenericSession.mod.koaAugmentingMod.Context = {
+      inline def apply(regenerateSession: () => Generator[js.Any, js.Any, js.Any]): typings.koaGenericSession.mod.koaAugmentingMod.Context = {
         val __obj = js.Dynamic.literal(regenerateSession = js.Any.fromFunction0(regenerateSession), session = null, sessionSave = null)
         __obj.asInstanceOf[typings.koaGenericSession.mod.koaAugmentingMod.Context]
       }
       
-      @scala.inline
-      implicit class ContextMutableBuilder[Self <: typings.koaGenericSession.mod.koaAugmentingMod.Context] (val x: Self) extends AnyVal {
+      extension [Self <: typings.koaGenericSession.mod.koaAugmentingMod.Context](x: Self) {
         
-        @scala.inline
-        def setRegenerateSession(value: () => Generator[js.Any, js.Any, js.Any]): Self = StObject.set(x, "regenerateSession", js.Any.fromFunction0(value))
+        inline def setRegenerateSession(value: () => Generator[js.Any, js.Any, js.Any]): Self = StObject.set(x, "regenerateSession", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+        inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionNull: Self = StObject.set(x, "session", null)
+        inline def setSessionNull: Self = StObject.set(x, "session", null)
         
-        @scala.inline
-        def setSessionSave(value: Boolean): Self = StObject.set(x, "sessionSave", value.asInstanceOf[js.Any])
+        inline def setSessionSave(value: Boolean): Self = StObject.set(x, "sessionSave", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSessionSaveNull: Self = StObject.set(x, "sessionSave", null)
+        inline def setSessionSaveNull: Self = StObject.set(x, "sessionSave", null)
       }
     }
   }

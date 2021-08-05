@@ -18,25 +18,19 @@ trait SigningPlatformOverrides extends StObject {
 }
 object SigningPlatformOverrides {
   
-  @scala.inline
-  def apply(): SigningPlatformOverrides = {
+  inline def apply(): SigningPlatformOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SigningPlatformOverrides]
   }
   
-  @scala.inline
-  implicit class SigningPlatformOverridesMutableBuilder[Self <: SigningPlatformOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: SigningPlatformOverrides](x: Self) {
     
-    @scala.inline
-    def setSigningConfiguration(value: SigningConfigurationOverrides): Self = StObject.set(x, "signingConfiguration", value.asInstanceOf[js.Any])
+    inline def setSigningConfiguration(value: SigningConfigurationOverrides): Self = StObject.set(x, "signingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningConfigurationUndefined: Self = StObject.set(x, "signingConfiguration", js.undefined)
+    inline def setSigningConfigurationUndefined: Self = StObject.set(x, "signingConfiguration", js.undefined)
     
-    @scala.inline
-    def setSigningImageFormat(value: ImageFormat): Self = StObject.set(x, "signingImageFormat", value.asInstanceOf[js.Any])
+    inline def setSigningImageFormat(value: ImageFormat): Self = StObject.set(x, "signingImageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningImageFormatUndefined: Self = StObject.set(x, "signingImageFormat", js.undefined)
+    inline def setSigningImageFormatUndefined: Self = StObject.set(x, "signingImageFormat", js.undefined)
   }
 }

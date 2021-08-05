@@ -18,8 +18,7 @@ trait SearchViewModelSearchCompleteEventResults
 }
 object SearchViewModelSearchCompleteEventResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -31,22 +30,16 @@ object SearchViewModelSearchCompleteEventResults {
     __obj.asInstanceOf[SearchViewModelSearchCompleteEventResults]
   }
   
-  @scala.inline
-  implicit class SearchViewModelSearchCompleteEventResultsMutableBuilder[Self <: SearchViewModelSearchCompleteEventResults] (val x: Self) extends AnyVal {
+  extension [Self <: SearchViewModelSearchCompleteEventResults](x: Self) {
     
-    @scala.inline
-    def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Array[js.Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+    inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: js.Any*): Self = StObject.set(x, "source", js.Array(value :_*))
   }
 }

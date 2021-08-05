@@ -49,55 +49,40 @@ object mod {
     }
     object Props {
       
-      @scala.inline
-      def apply(autocompletionRequest: AutocompletionRequest, googleMaps: Typeofmaps): Props = {
+      inline def apply(autocompletionRequest: AutocompletionRequest, googleMaps: Typeofmaps): Props = {
         val __obj = js.Dynamic.literal(autocompletionRequest = autocompletionRequest.asInstanceOf[js.Any], googleMaps = googleMaps.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setAutocompletionRequest(value: AutocompletionRequest): Self = StObject.set(x, "autocompletionRequest", value.asInstanceOf[js.Any])
+        inline def setAutocompletionRequest(value: AutocompletionRequest): Self = StObject.set(x, "autocompletionRequest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setCustomContainerRender(value: /* predictions */ js.Array[Prediction] => Element | String): Self = StObject.set(x, "customContainerRender", js.Any.fromFunction1(value))
+        inline def setCustomContainerRender(value: /* predictions */ js.Array[Prediction] => Element | String): Self = StObject.set(x, "customContainerRender", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCustomContainerRenderUndefined: Self = StObject.set(x, "customContainerRender", js.undefined)
+        inline def setCustomContainerRenderUndefined: Self = StObject.set(x, "customContainerRender", js.undefined)
         
-        @scala.inline
-        def setCustomRender(value: /* prediction */ js.UndefOr[Prediction] => Element | String): Self = StObject.set(x, "customRender", js.Any.fromFunction1(value))
+        inline def setCustomRender(value: /* prediction */ js.UndefOr[Prediction] => Element | String): Self = StObject.set(x, "customRender", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCustomRenderUndefined: Self = StObject.set(x, "customRender", js.undefined)
+        inline def setCustomRenderUndefined: Self = StObject.set(x, "customRender", js.undefined)
         
-        @scala.inline
-        def setGoogleMaps(value: Typeofmaps): Self = StObject.set(x, "googleMaps", value.asInstanceOf[js.Any])
+        inline def setGoogleMaps(value: Typeofmaps): Self = StObject.set(x, "googleMaps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnSelectSuggest(
+        inline def setOnSelectSuggest(
           value: (/* geocodedPrediction */ GeocodedPrediction, /* originalPrediction */ Prediction) => js.Any
         ): Self = StObject.set(x, "onSelectSuggest", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnSelectSuggestUndefined: Self = StObject.set(x, "onSelectSuggest", js.undefined)
+        inline def setOnSelectSuggestUndefined: Self = StObject.set(x, "onSelectSuggest", js.undefined)
         
-        @scala.inline
-        def setTextNoResults(value: String): Self = StObject.set(x, "textNoResults", value.asInstanceOf[js.Any])
+        inline def setTextNoResults(value: String): Self = StObject.set(x, "textNoResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTextNoResultsNull: Self = StObject.set(x, "textNoResults", null)
+        inline def setTextNoResultsNull: Self = StObject.set(x, "textNoResults", null)
         
-        @scala.inline
-        def setTextNoResultsUndefined: Self = StObject.set(x, "textNoResults", js.undefined)
+        inline def setTextNoResultsUndefined: Self = StObject.set(x, "textNoResults", js.undefined)
       }
     }
   }

@@ -12,30 +12,26 @@ object meteorSjobsStrings {
   sealed trait Asterisk
     extends StObject
        with State
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait failure
     extends StObject
        with JobState
        with State
-  @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
+  inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
   sealed trait pending
     extends StObject
        with JobState
        with State
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait success
     extends StObject
        with JobState
        with State
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
 }

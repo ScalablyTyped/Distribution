@@ -17,34 +17,25 @@ trait GetPackageVersionHistoryResponse extends StObject {
 }
 object GetPackageVersionHistoryResponse {
   
-  @scala.inline
-  def apply(): GetPackageVersionHistoryResponse = {
+  inline def apply(): GetPackageVersionHistoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPackageVersionHistoryResponse]
   }
   
-  @scala.inline
-  implicit class GetPackageVersionHistoryResponseMutableBuilder[Self <: GetPackageVersionHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetPackageVersionHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
+    inline def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageIDUndefined: Self = StObject.set(x, "PackageID", js.undefined)
+    inline def setPackageIDUndefined: Self = StObject.set(x, "PackageID", js.undefined)
     
-    @scala.inline
-    def setPackageVersionHistoryList(value: PackageVersionHistoryList): Self = StObject.set(x, "PackageVersionHistoryList", value.asInstanceOf[js.Any])
+    inline def setPackageVersionHistoryList(value: PackageVersionHistoryList): Self = StObject.set(x, "PackageVersionHistoryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageVersionHistoryListUndefined: Self = StObject.set(x, "PackageVersionHistoryList", js.undefined)
+    inline def setPackageVersionHistoryListUndefined: Self = StObject.set(x, "PackageVersionHistoryList", js.undefined)
     
-    @scala.inline
-    def setPackageVersionHistoryListVarargs(value: PackageVersionHistory*): Self = StObject.set(x, "PackageVersionHistoryList", js.Array(value :_*))
+    inline def setPackageVersionHistoryListVarargs(value: PackageVersionHistory*): Self = StObject.set(x, "PackageVersionHistoryList", js.Array(value :_*))
   }
 }

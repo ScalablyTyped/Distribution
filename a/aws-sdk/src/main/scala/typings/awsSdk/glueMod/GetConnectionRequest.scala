@@ -23,28 +23,21 @@ trait GetConnectionRequest extends StObject {
 }
 object GetConnectionRequest {
   
-  @scala.inline
-  def apply(Name: NameString): GetConnectionRequest = {
+  inline def apply(Name: NameString): GetConnectionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectionRequest]
   }
   
-  @scala.inline
-  implicit class GetConnectionRequestMutableBuilder[Self <: GetConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setHidePassword(value: Boolean): Self = StObject.set(x, "HidePassword", value.asInstanceOf[js.Any])
+    inline def setHidePassword(value: Boolean): Self = StObject.set(x, "HidePassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidePasswordUndefined: Self = StObject.set(x, "HidePassword", js.undefined)
+    inline def setHidePasswordUndefined: Self = StObject.set(x, "HidePassword", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

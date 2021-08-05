@@ -21,19 +21,15 @@ trait LocationError extends StObject {
 }
 object LocationError {
   
-  @scala.inline
-  def apply(code: LocationErrorCode, message: String): LocationError = {
+  inline def apply(code: LocationErrorCode, message: String): LocationError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationError]
   }
   
-  @scala.inline
-  implicit class LocationErrorMutableBuilder[Self <: LocationError] (val x: Self) extends AnyVal {
+  extension [Self <: LocationError](x: Self) {
     
-    @scala.inline
-    def setCode(value: LocationErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: LocationErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

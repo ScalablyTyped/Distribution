@@ -18,19 +18,15 @@ trait InlineArchiveRule extends StObject {
 }
 object InlineArchiveRule {
   
-  @scala.inline
-  def apply(filter: FilterCriteriaMap, ruleName: Name): InlineArchiveRule = {
+  inline def apply(filter: FilterCriteriaMap, ruleName: Name): InlineArchiveRule = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InlineArchiveRule]
   }
   
-  @scala.inline
-  implicit class InlineArchiveRuleMutableBuilder[Self <: InlineArchiveRule] (val x: Self) extends AnyVal {
+  extension [Self <: InlineArchiveRule](x: Self) {
     
-    @scala.inline
-    def setFilter(value: FilterCriteriaMap): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FilterCriteriaMap): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleName(value: Name): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: Name): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
   }
 }

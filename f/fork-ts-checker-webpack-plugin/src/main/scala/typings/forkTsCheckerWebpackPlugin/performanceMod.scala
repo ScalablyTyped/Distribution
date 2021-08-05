@@ -10,8 +10,7 @@ object performanceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPerformance(): Performance = ^.asInstanceOf[js.Dynamic].applyDynamic("createPerformance")().asInstanceOf[Performance]
+  inline def createPerformance(): Performance = ^.asInstanceOf[js.Dynamic].applyDynamic("createPerformance")().asInstanceOf[Performance]
   
   @js.native
   trait Performance extends StObject {

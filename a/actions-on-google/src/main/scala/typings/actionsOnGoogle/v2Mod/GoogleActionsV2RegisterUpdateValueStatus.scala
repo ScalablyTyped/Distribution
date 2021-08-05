@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2RegisterUpdateValueStatus extends StObject
 object GoogleActionsV2RegisterUpdateValueStatus {
   
-  @scala.inline
-  def CANCELLED: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED = "CANCELLED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED]
+  inline def CANCELLED: typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED = "CANCELLED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANCELLED]
   
-  @scala.inline
-  def OK: typings.actionsOnGoogle.actionsOnGoogleStrings.OK = "OK".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OK]
+  inline def OK: typings.actionsOnGoogle.actionsOnGoogleStrings.OK = "OK".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.OK]
   
-  @scala.inline
-  def REGISTER_UPDATE_STATUS_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.REGISTER_UPDATE_STATUS_UNSPECIFIED = "REGISTER_UPDATE_STATUS_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REGISTER_UPDATE_STATUS_UNSPECIFIED]
+  inline def REGISTER_UPDATE_STATUS_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.REGISTER_UPDATE_STATUS_UNSPECIFIED = "REGISTER_UPDATE_STATUS_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REGISTER_UPDATE_STATUS_UNSPECIFIED]
 }

@@ -39,7 +39,7 @@ object indefiniteObservableMod {
       */
     def this(connect: Connect[T]) = this()
     
-    var _connect: js.Any = js.native
+    /* private */ var _connect: js.Any = js.native
     
     /* CompleteClass */
     override def subscribe(observerOrNext: ObserverOrNext[T]): Subscription = js.native

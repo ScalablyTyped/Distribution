@@ -15,31 +15,23 @@ trait ITestCasePreparedStep extends StObject {
 }
 object ITestCasePreparedStep {
   
-  @scala.inline
-  def apply(): ITestCasePreparedStep = {
+  inline def apply(): ITestCasePreparedStep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITestCasePreparedStep]
   }
   
-  @scala.inline
-  implicit class ITestCasePreparedStepMutableBuilder[Self <: ITestCasePreparedStep] (val x: Self) extends AnyVal {
+  extension [Self <: ITestCasePreparedStep](x: Self) {
     
-    @scala.inline
-    def setActionLocation(value: ISourceReference): Self = StObject.set(x, "actionLocation", value.asInstanceOf[js.Any])
+    inline def setActionLocation(value: ISourceReference): Self = StObject.set(x, "actionLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionLocationNull: Self = StObject.set(x, "actionLocation", null)
+    inline def setActionLocationNull: Self = StObject.set(x, "actionLocation", null)
     
-    @scala.inline
-    def setActionLocationUndefined: Self = StObject.set(x, "actionLocation", js.undefined)
+    inline def setActionLocationUndefined: Self = StObject.set(x, "actionLocation", js.undefined)
     
-    @scala.inline
-    def setSourceLocation(value: ISourceReference): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
+    inline def setSourceLocation(value: ISourceReference): Self = StObject.set(x, "sourceLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLocationNull: Self = StObject.set(x, "sourceLocation", null)
+    inline def setSourceLocationNull: Self = StObject.set(x, "sourceLocation", null)
     
-    @scala.inline
-    def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
+    inline def setSourceLocationUndefined: Self = StObject.set(x, "sourceLocation", js.undefined)
   }
 }

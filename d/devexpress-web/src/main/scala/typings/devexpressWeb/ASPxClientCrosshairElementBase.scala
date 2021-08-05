@@ -36,8 +36,7 @@ trait ASPxClientCrosshairElementBase extends StObject {
 }
 object ASPxClientCrosshairElementBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AxisLabelElement: ASPxClientCrosshairAxisLabelElement,
     LabelElement: ASPxClientCrosshairSeriesLabelElement,
     LineElement: ASPxClientCrosshairLineElement,
@@ -48,22 +47,16 @@ object ASPxClientCrosshairElementBase {
     __obj.asInstanceOf[ASPxClientCrosshairElementBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientCrosshairElementBaseMutableBuilder[Self <: ASPxClientCrosshairElementBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCrosshairElementBase](x: Self) {
     
-    @scala.inline
-    def setAxisLabelElement(value: ASPxClientCrosshairAxisLabelElement): Self = StObject.set(x, "AxisLabelElement", value.asInstanceOf[js.Any])
+    inline def setAxisLabelElement(value: ASPxClientCrosshairAxisLabelElement): Self = StObject.set(x, "AxisLabelElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelElement(value: ASPxClientCrosshairSeriesLabelElement): Self = StObject.set(x, "LabelElement", value.asInstanceOf[js.Any])
+    inline def setLabelElement(value: ASPxClientCrosshairSeriesLabelElement): Self = StObject.set(x, "LabelElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineElement(value: ASPxClientCrosshairLineElement): Self = StObject.set(x, "LineElement", value.asInstanceOf[js.Any])
+    inline def setLineElement(value: ASPxClientCrosshairLineElement): Self = StObject.set(x, "LineElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: ASPxClientSeriesPoint): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: ASPxClientSeriesPoint): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

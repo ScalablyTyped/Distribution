@@ -15,8 +15,7 @@ trait Functor[F] extends StObject {
 }
 object Functor {
   
-  @scala.inline
-  def apply[F](
+  inline def apply[F](
     URI: F,
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
   ): Functor[F] = {
@@ -24,15 +23,12 @@ object Functor {
     __obj.asInstanceOf[Functor[F]]
   }
   
-  @scala.inline
-  implicit class FunctorMutableBuilder[Self <: Functor[?], F] (val x: Self & Functor[F]) extends AnyVal {
+  extension [Self <: Functor[?], F](x: Self & Functor[F]) {
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
   }
 }

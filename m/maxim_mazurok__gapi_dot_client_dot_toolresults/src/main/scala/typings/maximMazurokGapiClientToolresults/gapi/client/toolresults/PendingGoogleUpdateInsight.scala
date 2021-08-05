@@ -11,19 +11,15 @@ trait PendingGoogleUpdateInsight extends StObject {
 }
 object PendingGoogleUpdateInsight {
   
-  @scala.inline
-  def apply(): PendingGoogleUpdateInsight = {
+  inline def apply(): PendingGoogleUpdateInsight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PendingGoogleUpdateInsight]
   }
   
-  @scala.inline
-  implicit class PendingGoogleUpdateInsightMutableBuilder[Self <: PendingGoogleUpdateInsight] (val x: Self) extends AnyVal {
+  extension [Self <: PendingGoogleUpdateInsight](x: Self) {
     
-    @scala.inline
-    def setNameOfGoogleLibrary(value: String): Self = StObject.set(x, "nameOfGoogleLibrary", value.asInstanceOf[js.Any])
+    inline def setNameOfGoogleLibrary(value: String): Self = StObject.set(x, "nameOfGoogleLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameOfGoogleLibraryUndefined: Self = StObject.set(x, "nameOfGoogleLibrary", js.undefined)
+    inline def setNameOfGoogleLibraryUndefined: Self = StObject.set(x, "nameOfGoogleLibrary", js.undefined)
   }
 }

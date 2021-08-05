@@ -10,16 +10,13 @@ trait Uuid extends StObject {
 }
 object Uuid {
   
-  @scala.inline
-  def apply(uuid: String): Uuid = {
+  inline def apply(uuid: String): Uuid = {
     val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uuid]
   }
   
-  @scala.inline
-  implicit class UuidMutableBuilder[Self <: Uuid] (val x: Self) extends AnyVal {
+  extension [Self <: Uuid](x: Self) {
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

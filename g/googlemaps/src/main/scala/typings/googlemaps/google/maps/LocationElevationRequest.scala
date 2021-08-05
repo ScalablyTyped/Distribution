@@ -10,19 +10,15 @@ trait LocationElevationRequest extends StObject {
 }
 object LocationElevationRequest {
   
-  @scala.inline
-  def apply(locations: js.Array[LatLngLiteral | LatLng]): LocationElevationRequest = {
+  inline def apply(locations: js.Array[LatLngLiteral | LatLng]): LocationElevationRequest = {
     val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationElevationRequest]
   }
   
-  @scala.inline
-  implicit class LocationElevationRequestMutableBuilder[Self <: LocationElevationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: LocationElevationRequest](x: Self) {
     
-    @scala.inline
-    def setLocations(value: js.Array[LatLngLiteral | LatLng]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[LatLngLiteral | LatLng]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsVarargs(value: (LatLngLiteral | LatLng)*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: (LatLngLiteral | LatLng)*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

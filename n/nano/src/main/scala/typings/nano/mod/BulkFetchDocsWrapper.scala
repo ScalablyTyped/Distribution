@@ -10,19 +10,15 @@ trait BulkFetchDocsWrapper extends StObject {
 }
 object BulkFetchDocsWrapper {
   
-  @scala.inline
-  def apply(keys: js.Array[String]): BulkFetchDocsWrapper = {
+  inline def apply(keys: js.Array[String]): BulkFetchDocsWrapper = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkFetchDocsWrapper]
   }
   
-  @scala.inline
-  implicit class BulkFetchDocsWrapperMutableBuilder[Self <: BulkFetchDocsWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: BulkFetchDocsWrapper](x: Self) {
     
-    @scala.inline
-    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

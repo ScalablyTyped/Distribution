@@ -17,31 +17,23 @@ trait Subscription extends StObject {
 }
 object Subscription {
   
-  @scala.inline
-  def apply(): Subscription = {
+  inline def apply(): Subscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Subscription]
   }
   
-  @scala.inline
-  implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+  extension [Self <: Subscription](x: Self) {
     
-    @scala.inline
-    def setDeliveryConfig(value: DeliveryConfig): Self = StObject.set(x, "deliveryConfig", value.asInstanceOf[js.Any])
+    inline def setDeliveryConfig(value: DeliveryConfig): Self = StObject.set(x, "deliveryConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryConfigUndefined: Self = StObject.set(x, "deliveryConfig", js.undefined)
+    inline def setDeliveryConfigUndefined: Self = StObject.set(x, "deliveryConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

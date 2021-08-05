@@ -10,8 +10,7 @@ trait WriteVResult
      with typings.node.fsMod.WriteVResult
 object WriteVResult {
   
-  @scala.inline
-  def apply(buffers: js.Array[ArrayBufferView], bytesWritten: Double): WriteVResult = {
+  inline def apply(buffers: js.Array[ArrayBufferView], bytesWritten: Double): WriteVResult = {
     val __obj = js.Dynamic.literal(buffers = buffers.asInstanceOf[js.Any], bytesWritten = bytesWritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteVResult]
   }

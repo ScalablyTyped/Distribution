@@ -45,8 +45,6 @@ object MercatorCoordinate {
   val ^ : js.Any = js.native
   
   /** Project a LngLat to a MercatorCoordinate. */
-  @scala.inline
-  def fromLngLat(lngLatLike: LngLatLike): MercatorCoordinate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLngLat")(lngLatLike.asInstanceOf[js.Any]).asInstanceOf[MercatorCoordinate]
-  @scala.inline
-  def fromLngLat(lngLatLike: LngLatLike, altitude: Double): MercatorCoordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLngLat")(lngLatLike.asInstanceOf[js.Any], altitude.asInstanceOf[js.Any])).asInstanceOf[MercatorCoordinate]
+  inline def fromLngLat(lngLatLike: LngLatLike): MercatorCoordinate = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLngLat")(lngLatLike.asInstanceOf[js.Any]).asInstanceOf[MercatorCoordinate]
+  inline def fromLngLat(lngLatLike: LngLatLike, altitude: Double): MercatorCoordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLngLat")(lngLatLike.asInstanceOf[js.Any], altitude.asInstanceOf[js.Any])).asInstanceOf[MercatorCoordinate]
 }

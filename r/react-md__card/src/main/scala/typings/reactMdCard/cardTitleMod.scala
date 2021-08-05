@@ -33,26 +33,20 @@ object cardTitleMod {
   }
   object CardTitleProps {
     
-    @scala.inline
-    def apply(): CardTitleProps = {
+    inline def apply(): CardTitleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardTitleProps]
     }
     
-    @scala.inline
-    implicit class CardTitlePropsMutableBuilder[Self <: CardTitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardTitleProps](x: Self) {
       
-      @scala.inline
-      def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+      inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
+      inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
       
-      @scala.inline
-      def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     }
   }
 }

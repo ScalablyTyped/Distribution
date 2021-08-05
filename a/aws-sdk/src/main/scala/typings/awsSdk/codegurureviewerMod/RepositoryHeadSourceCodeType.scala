@@ -13,16 +13,13 @@ trait RepositoryHeadSourceCodeType extends StObject {
 }
 object RepositoryHeadSourceCodeType {
   
-  @scala.inline
-  def apply(BranchName: BranchName): RepositoryHeadSourceCodeType = {
+  inline def apply(BranchName: BranchName): RepositoryHeadSourceCodeType = {
     val __obj = js.Dynamic.literal(BranchName = BranchName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryHeadSourceCodeType]
   }
   
-  @scala.inline
-  implicit class RepositoryHeadSourceCodeTypeMutableBuilder[Self <: RepositoryHeadSourceCodeType] (val x: Self) extends AnyVal {
+  extension [Self <: RepositoryHeadSourceCodeType](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "BranchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "BranchName", value.asInstanceOf[js.Any])
   }
 }

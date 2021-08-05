@@ -22,43 +22,31 @@ trait FormValidateFieldEvent
 }
 object FormValidateFieldEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Form): FormValidateFieldEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Form): FormValidateFieldEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormValidateFieldEvent]
   }
   
-  @scala.inline
-  implicit class FormValidateFieldEventMutableBuilder[Self <: FormValidateFieldEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FormValidateFieldEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setInput(value: Element): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Element): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+    inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
   }
 }

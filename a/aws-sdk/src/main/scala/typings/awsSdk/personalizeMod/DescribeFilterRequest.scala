@@ -13,16 +13,13 @@ trait DescribeFilterRequest extends StObject {
 }
 object DescribeFilterRequest {
   
-  @scala.inline
-  def apply(filterArn: Arn): DescribeFilterRequest = {
+  inline def apply(filterArn: Arn): DescribeFilterRequest = {
     val __obj = js.Dynamic.literal(filterArn = filterArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFilterRequest]
   }
   
-  @scala.inline
-  implicit class DescribeFilterRequestMutableBuilder[Self <: DescribeFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFilterRequest](x: Self) {
     
-    @scala.inline
-    def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
+    inline def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
   }
 }

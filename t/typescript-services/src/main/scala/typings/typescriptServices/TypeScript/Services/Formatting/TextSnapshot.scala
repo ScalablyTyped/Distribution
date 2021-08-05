@@ -11,14 +11,13 @@ trait TextSnapshot
   
   /* private */ def getLineFromLineNumberWorker(lineNumber: js.Any): js.Any
   
-  var lines: js.Any
+  /* private */ var lines: js.Any
   
-  var snapshot: js.Any
+  /* private */ var snapshot: js.Any
 }
 object TextSnapshot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getLineFromLineNumber: Double => ITextSnapshotLine,
     getLineFromLineNumberWorker: js.Any => js.Any,
     getLineFromPosition: Double => ITextSnapshotLine,
@@ -31,16 +30,12 @@ object TextSnapshot {
     __obj.asInstanceOf[TextSnapshot]
   }
   
-  @scala.inline
-  implicit class TextSnapshotMutableBuilder[Self <: TextSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: TextSnapshot](x: Self) {
     
-    @scala.inline
-    def setGetLineFromLineNumberWorker(value: js.Any => js.Any): Self = StObject.set(x, "getLineFromLineNumberWorker", js.Any.fromFunction1(value))
+    inline def setGetLineFromLineNumberWorker(value: js.Any => js.Any): Self = StObject.set(x, "getLineFromLineNumberWorker", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Any): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: js.Any): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
   }
 }

@@ -27,34 +27,25 @@ trait ExecuteBatchDmlRequest extends StObject {
 }
 object ExecuteBatchDmlRequest {
   
-  @scala.inline
-  def apply(): ExecuteBatchDmlRequest = {
+  inline def apply(): ExecuteBatchDmlRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecuteBatchDmlRequest]
   }
   
-  @scala.inline
-  implicit class ExecuteBatchDmlRequestMutableBuilder[Self <: ExecuteBatchDmlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteBatchDmlRequest](x: Self) {
     
-    @scala.inline
-    def setSeqno(value: String): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
+    inline def setSeqno(value: String): Self = StObject.set(x, "seqno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeqnoUndefined: Self = StObject.set(x, "seqno", js.undefined)
+    inline def setSeqnoUndefined: Self = StObject.set(x, "seqno", js.undefined)
     
-    @scala.inline
-    def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
+    inline def setStatementsUndefined: Self = StObject.set(x, "statements", js.undefined)
     
-    @scala.inline
-    def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
     
-    @scala.inline
-    def setTransaction(value: TransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: TransactionSelector): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

@@ -38,8 +38,7 @@ trait WebhookDefinition extends StObject {
 }
 object WebhookDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authentication: WebhookAuthenticationType,
     authenticationConfiguration: WebhookAuthConfiguration,
     filters: WebhookFilters,
@@ -51,28 +50,20 @@ object WebhookDefinition {
     __obj.asInstanceOf[WebhookDefinition]
   }
   
-  @scala.inline
-  implicit class WebhookDefinitionMutableBuilder[Self <: WebhookDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: WebhookDefinition](x: Self) {
     
-    @scala.inline
-    def setAuthentication(value: WebhookAuthenticationType): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
+    inline def setAuthentication(value: WebhookAuthenticationType): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationConfiguration(value: WebhookAuthConfiguration): Self = StObject.set(x, "authenticationConfiguration", value.asInstanceOf[js.Any])
+    inline def setAuthenticationConfiguration(value: WebhookAuthConfiguration): Self = StObject.set(x, "authenticationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: WebhookFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: WebhookFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: WebhookFilterRule*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: WebhookFilterRule*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: WebhookName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: WebhookName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetAction(value: ActionName): Self = StObject.set(x, "targetAction", value.asInstanceOf[js.Any])
+    inline def setTargetAction(value: ActionName): Self = StObject.set(x, "targetAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPipeline(value: PipelineName): Self = StObject.set(x, "targetPipeline", value.asInstanceOf[js.Any])
+    inline def setTargetPipeline(value: PipelineName): Self = StObject.set(x, "targetPipeline", value.asInstanceOf[js.Any])
   }
 }

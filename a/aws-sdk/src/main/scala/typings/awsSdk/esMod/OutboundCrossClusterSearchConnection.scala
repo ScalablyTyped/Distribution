@@ -33,43 +33,31 @@ trait OutboundCrossClusterSearchConnection extends StObject {
 }
 object OutboundCrossClusterSearchConnection {
   
-  @scala.inline
-  def apply(): OutboundCrossClusterSearchConnection = {
+  inline def apply(): OutboundCrossClusterSearchConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutboundCrossClusterSearchConnection]
   }
   
-  @scala.inline
-  implicit class OutboundCrossClusterSearchConnectionMutableBuilder[Self <: OutboundCrossClusterSearchConnection] (val x: Self) extends AnyVal {
+  extension [Self <: OutboundCrossClusterSearchConnection](x: Self) {
     
-    @scala.inline
-    def setConnectionAlias(value: ConnectionAlias): Self = StObject.set(x, "ConnectionAlias", value.asInstanceOf[js.Any])
+    inline def setConnectionAlias(value: ConnectionAlias): Self = StObject.set(x, "ConnectionAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionAliasUndefined: Self = StObject.set(x, "ConnectionAlias", js.undefined)
+    inline def setConnectionAliasUndefined: Self = StObject.set(x, "ConnectionAlias", js.undefined)
     
-    @scala.inline
-    def setConnectionStatus(value: OutboundCrossClusterSearchConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
+    inline def setConnectionStatus(value: OutboundCrossClusterSearchConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
+    inline def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
     
-    @scala.inline
-    def setCrossClusterSearchConnectionId(value: CrossClusterSearchConnectionId): Self = StObject.set(x, "CrossClusterSearchConnectionId", value.asInstanceOf[js.Any])
+    inline def setCrossClusterSearchConnectionId(value: CrossClusterSearchConnectionId): Self = StObject.set(x, "CrossClusterSearchConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossClusterSearchConnectionIdUndefined: Self = StObject.set(x, "CrossClusterSearchConnectionId", js.undefined)
+    inline def setCrossClusterSearchConnectionIdUndefined: Self = StObject.set(x, "CrossClusterSearchConnectionId", js.undefined)
     
-    @scala.inline
-    def setDestinationDomainInfo(value: DomainInformation): Self = StObject.set(x, "DestinationDomainInfo", value.asInstanceOf[js.Any])
+    inline def setDestinationDomainInfo(value: DomainInformation): Self = StObject.set(x, "DestinationDomainInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationDomainInfoUndefined: Self = StObject.set(x, "DestinationDomainInfo", js.undefined)
+    inline def setDestinationDomainInfoUndefined: Self = StObject.set(x, "DestinationDomainInfo", js.undefined)
     
-    @scala.inline
-    def setSourceDomainInfo(value: DomainInformation): Self = StObject.set(x, "SourceDomainInfo", value.asInstanceOf[js.Any])
+    inline def setSourceDomainInfo(value: DomainInformation): Self = StObject.set(x, "SourceDomainInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDomainInfoUndefined: Self = StObject.set(x, "SourceDomainInfo", js.undefined)
+    inline def setSourceDomainInfoUndefined: Self = StObject.set(x, "SourceDomainInfo", js.undefined)
   }
 }

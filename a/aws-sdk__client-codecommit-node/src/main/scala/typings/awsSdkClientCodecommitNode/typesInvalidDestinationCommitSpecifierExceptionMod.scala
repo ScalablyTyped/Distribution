@@ -16,17 +16,14 @@ object typesInvalidDestinationCommitSpecifierExceptionMod {
   }
   object InvalidDestinationCommitSpecifierException {
     
-    @scala.inline
-    def apply(): InvalidDestinationCommitSpecifierException = {
+    inline def apply(): InvalidDestinationCommitSpecifierException = {
       val __obj = js.Dynamic.literal(name = "InvalidDestinationCommitSpecifierException")
       __obj.asInstanceOf[InvalidDestinationCommitSpecifierException]
     }
     
-    @scala.inline
-    implicit class InvalidDestinationCommitSpecifierExceptionMutableBuilder[Self <: InvalidDestinationCommitSpecifierException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidDestinationCommitSpecifierException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidDestinationCommitSpecifierException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -13,19 +13,15 @@ trait MemoryInfo extends StObject {
 }
 object MemoryInfo {
   
-  @scala.inline
-  def apply(): MemoryInfo = {
+  inline def apply(): MemoryInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemoryInfo]
   }
   
-  @scala.inline
-  implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryInfo](x: Self) {
     
-    @scala.inline
-    def setSizeInMiB(value: Integer): Self = StObject.set(x, "sizeInMiB", value.asInstanceOf[js.Any])
+    inline def setSizeInMiB(value: Integer): Self = StObject.set(x, "sizeInMiB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInMiBUndefined: Self = StObject.set(x, "sizeInMiB", js.undefined)
+    inline def setSizeInMiBUndefined: Self = StObject.set(x, "sizeInMiB", js.undefined)
   }
 }

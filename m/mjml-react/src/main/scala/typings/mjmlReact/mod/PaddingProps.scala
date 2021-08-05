@@ -18,43 +18,31 @@ trait PaddingProps extends StObject {
 }
 object PaddingProps {
   
-  @scala.inline
-  def apply(): PaddingProps = {
+  inline def apply(): PaddingProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaddingProps]
   }
   
-  @scala.inline
-  implicit class PaddingPropsMutableBuilder[Self <: PaddingProps] (val x: Self) extends AnyVal {
+  extension [Self <: PaddingProps](x: Self) {
     
-    @scala.inline
-    def setPadding(value: String | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: String | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBottom(value: String | Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+    inline def setPaddingBottom(value: String | Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+    inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
-    @scala.inline
-    def setPaddingLeft(value: String | Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    inline def setPaddingLeft(value: String | Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+    inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
-    @scala.inline
-    def setPaddingRight(value: String | Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    inline def setPaddingRight(value: String | Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+    inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    @scala.inline
-    def setPaddingTop(value: String | Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+    inline def setPaddingTop(value: String | Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+    inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

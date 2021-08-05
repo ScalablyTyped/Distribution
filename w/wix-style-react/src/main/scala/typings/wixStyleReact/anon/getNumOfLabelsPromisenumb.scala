@@ -26,8 +26,7 @@ trait getNumOfLabelsPromisenumb extends StObject {
 }
 object getNumOfLabelsPromisenumb {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: () => js.Promise[Unit],
     driver: Focus,
     element: () => js.Promise[js.Any],
@@ -40,28 +39,20 @@ object getNumOfLabelsPromisenumb {
     __obj.asInstanceOf[getNumOfLabelsPromisenumb]
   }
   
-  @scala.inline
-  implicit class getNumOfLabelsPromisenumbMutableBuilder[Self <: getNumOfLabelsPromisenumb] (val x: Self) extends AnyVal {
+  extension [Self <: getNumOfLabelsPromisenumb](x: Self) {
     
-    @scala.inline
-    def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDriver(value: Focus): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: Focus): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+    inline def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getLabelAt", js.Any.fromFunction1(value))
+    inline def setGetLabelAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getLabelAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLabels(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getLabels", js.Any.fromFunction0(value))
+    inline def setGetLabels(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getLabels", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumOfLabels(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumOfLabels", js.Any.fromFunction0(value))
+    inline def setGetNumOfLabels(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumOfLabels", js.Any.fromFunction0(value))
   }
 }

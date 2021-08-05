@@ -37,8 +37,7 @@ trait XRowSet
 }
 object XRowSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Row: Double,
     Statement: XInterface,
     absolute: Double => Boolean,
@@ -70,16 +69,12 @@ object XRowSet {
     __obj.asInstanceOf[XRowSet]
   }
   
-  @scala.inline
-  implicit class XRowSetMutableBuilder[Self <: XRowSet] (val x: Self) extends AnyVal {
+  extension [Self <: XRowSet](x: Self) {
     
-    @scala.inline
-    def setAddRowSetListener(value: XRowSetListener => Unit): Self = StObject.set(x, "addRowSetListener", js.Any.fromFunction1(value))
+    inline def setAddRowSetListener(value: XRowSetListener => Unit): Self = StObject.set(x, "addRowSetListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveRowSetListener(value: XRowSetListener => Unit): Self = StObject.set(x, "removeRowSetListener", js.Any.fromFunction1(value))
+    inline def setRemoveRowSetListener(value: XRowSetListener => Unit): Self = StObject.set(x, "removeRowSetListener", js.Any.fromFunction1(value))
   }
 }

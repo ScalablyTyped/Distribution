@@ -25,22 +25,17 @@ trait VertOrientationFormat extends StObject {
 }
 object VertOrientationFormat {
   
-  @scala.inline
-  def apply(VerticalOrientation: Double, VerticalRelation: Double, YPos: Double): VertOrientationFormat = {
+  inline def apply(VerticalOrientation: Double, VerticalRelation: Double, YPos: Double): VertOrientationFormat = {
     val __obj = js.Dynamic.literal(VerticalOrientation = VerticalOrientation.asInstanceOf[js.Any], VerticalRelation = VerticalRelation.asInstanceOf[js.Any], YPos = YPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[VertOrientationFormat]
   }
   
-  @scala.inline
-  implicit class VertOrientationFormatMutableBuilder[Self <: VertOrientationFormat] (val x: Self) extends AnyVal {
+  extension [Self <: VertOrientationFormat](x: Self) {
     
-    @scala.inline
-    def setVerticalOrientation(value: Double): Self = StObject.set(x, "VerticalOrientation", value.asInstanceOf[js.Any])
+    inline def setVerticalOrientation(value: Double): Self = StObject.set(x, "VerticalOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalRelation(value: Double): Self = StObject.set(x, "VerticalRelation", value.asInstanceOf[js.Any])
+    inline def setVerticalRelation(value: Double): Self = StObject.set(x, "VerticalRelation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYPos(value: Double): Self = StObject.set(x, "YPos", value.asInstanceOf[js.Any])
+    inline def setYPos(value: Double): Self = StObject.set(x, "YPos", value.asInstanceOf[js.Any])
   }
 }

@@ -20,28 +20,21 @@ trait AddTargetedAppsRequest extends StObject {
 }
 object AddTargetedAppsRequest {
   
-  @scala.inline
-  def apply(): AddTargetedAppsRequest = {
+  inline def apply(): AddTargetedAppsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddTargetedAppsRequest]
   }
   
-  @scala.inline
-  implicit class AddTargetedAppsRequestMutableBuilder[Self <: AddTargetedAppsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddTargetedAppsRequest](x: Self) {
     
-    @scala.inline
-    def setAppIds(value: js.Array[String]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
+    inline def setAppIds(value: js.Array[String]): Self = StObject.set(x, "appIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdsUndefined: Self = StObject.set(x, "appIds", js.undefined)
+    inline def setAppIdsUndefined: Self = StObject.set(x, "appIds", js.undefined)
     
-    @scala.inline
-    def setAppIdsVarargs(value: String*): Self = StObject.set(x, "appIds", js.Array(value :_*))
+    inline def setAppIdsVarargs(value: String*): Self = StObject.set(x, "appIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
+    inline def setTargetingMode(value: String): Self = StObject.set(x, "targetingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
+    inline def setTargetingModeUndefined: Self = StObject.set(x, "targetingMode", js.undefined)
   }
 }

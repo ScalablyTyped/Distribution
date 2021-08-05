@@ -18,43 +18,31 @@ trait LangAccessibilityAnnounceNewDataOptions extends StObject {
 }
 object LangAccessibilityAnnounceNewDataOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilityAnnounceNewDataOptions = {
+  inline def apply(): LangAccessibilityAnnounceNewDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilityAnnounceNewDataOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilityAnnounceNewDataOptionsMutableBuilder[Self <: LangAccessibilityAnnounceNewDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilityAnnounceNewDataOptions](x: Self) {
     
-    @scala.inline
-    def setNewDataAnnounce(value: String): Self = StObject.set(x, "newDataAnnounce", value.asInstanceOf[js.Any])
+    inline def setNewDataAnnounce(value: String): Self = StObject.set(x, "newDataAnnounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewDataAnnounceUndefined: Self = StObject.set(x, "newDataAnnounce", js.undefined)
+    inline def setNewDataAnnounceUndefined: Self = StObject.set(x, "newDataAnnounce", js.undefined)
     
-    @scala.inline
-    def setNewPointAnnounceMultiple(value: String): Self = StObject.set(x, "newPointAnnounceMultiple", value.asInstanceOf[js.Any])
+    inline def setNewPointAnnounceMultiple(value: String): Self = StObject.set(x, "newPointAnnounceMultiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPointAnnounceMultipleUndefined: Self = StObject.set(x, "newPointAnnounceMultiple", js.undefined)
+    inline def setNewPointAnnounceMultipleUndefined: Self = StObject.set(x, "newPointAnnounceMultiple", js.undefined)
     
-    @scala.inline
-    def setNewPointAnnounceSingle(value: String): Self = StObject.set(x, "newPointAnnounceSingle", value.asInstanceOf[js.Any])
+    inline def setNewPointAnnounceSingle(value: String): Self = StObject.set(x, "newPointAnnounceSingle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPointAnnounceSingleUndefined: Self = StObject.set(x, "newPointAnnounceSingle", js.undefined)
+    inline def setNewPointAnnounceSingleUndefined: Self = StObject.set(x, "newPointAnnounceSingle", js.undefined)
     
-    @scala.inline
-    def setNewSeriesAnnounceMultiple(value: String): Self = StObject.set(x, "newSeriesAnnounceMultiple", value.asInstanceOf[js.Any])
+    inline def setNewSeriesAnnounceMultiple(value: String): Self = StObject.set(x, "newSeriesAnnounceMultiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewSeriesAnnounceMultipleUndefined: Self = StObject.set(x, "newSeriesAnnounceMultiple", js.undefined)
+    inline def setNewSeriesAnnounceMultipleUndefined: Self = StObject.set(x, "newSeriesAnnounceMultiple", js.undefined)
     
-    @scala.inline
-    def setNewSeriesAnnounceSingle(value: String): Self = StObject.set(x, "newSeriesAnnounceSingle", value.asInstanceOf[js.Any])
+    inline def setNewSeriesAnnounceSingle(value: String): Self = StObject.set(x, "newSeriesAnnounceSingle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewSeriesAnnounceSingleUndefined: Self = StObject.set(x, "newSeriesAnnounceSingle", js.undefined)
+    inline def setNewSeriesAnnounceSingleUndefined: Self = StObject.set(x, "newSeriesAnnounceSingle", js.undefined)
   }
 }

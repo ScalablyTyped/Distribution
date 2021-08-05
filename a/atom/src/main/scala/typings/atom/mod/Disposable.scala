@@ -26,6 +26,5 @@ object Disposable {
   val ^ : js.Any = js.native
   
   /** Ensure that Object correctly implements the Disposable contract. */
-  @scala.inline
-  def isDisposable(`object`: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDisposable(`object`: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

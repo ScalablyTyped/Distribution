@@ -24,8 +24,7 @@ trait UsbInterfaceDescriptor extends StObject {
 }
 object UsbInterfaceDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternateSettingNumber: Double,
     classCode: Double,
     interfaceNumber: Double,
@@ -36,22 +35,16 @@ object UsbInterfaceDescriptor {
     __obj.asInstanceOf[UsbInterfaceDescriptor]
   }
   
-  @scala.inline
-  implicit class UsbInterfaceDescriptorMutableBuilder[Self <: UsbInterfaceDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: UsbInterfaceDescriptor](x: Self) {
     
-    @scala.inline
-    def setAlternateSettingNumber(value: Double): Self = StObject.set(x, "alternateSettingNumber", value.asInstanceOf[js.Any])
+    inline def setAlternateSettingNumber(value: Double): Self = StObject.set(x, "alternateSettingNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassCode(value: Double): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
+    inline def setClassCode(value: Double): Self = StObject.set(x, "classCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceNumber(value: Double): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
+    inline def setInterfaceNumber(value: Double): Self = StObject.set(x, "interfaceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolCode(value: Double): Self = StObject.set(x, "protocolCode", value.asInstanceOf[js.Any])
+    inline def setProtocolCode(value: Double): Self = StObject.set(x, "protocolCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubclassCode(value: Double): Self = StObject.set(x, "subclassCode", value.asInstanceOf[js.Any])
+    inline def setSubclassCode(value: Double): Self = StObject.set(x, "subclassCode", value.asInstanceOf[js.Any])
   }
 }

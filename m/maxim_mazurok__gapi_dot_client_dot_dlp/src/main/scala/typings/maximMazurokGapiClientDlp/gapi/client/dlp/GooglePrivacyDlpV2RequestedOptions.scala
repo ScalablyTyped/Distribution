@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2RequestedOptions extends StObject {
 }
 object GooglePrivacyDlpV2RequestedOptions {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2RequestedOptions = {
+  inline def apply(): GooglePrivacyDlpV2RequestedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2RequestedOptions]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2RequestedOptionsMutableBuilder[Self <: GooglePrivacyDlpV2RequestedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2RequestedOptions](x: Self) {
     
-    @scala.inline
-    def setJobConfig(value: GooglePrivacyDlpV2InspectJobConfig): Self = StObject.set(x, "jobConfig", value.asInstanceOf[js.Any])
+    inline def setJobConfig(value: GooglePrivacyDlpV2InspectJobConfig): Self = StObject.set(x, "jobConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobConfigUndefined: Self = StObject.set(x, "jobConfig", js.undefined)
+    inline def setJobConfigUndefined: Self = StObject.set(x, "jobConfig", js.undefined)
     
-    @scala.inline
-    def setSnapshotInspectTemplate(value: GooglePrivacyDlpV2InspectTemplate): Self = StObject.set(x, "snapshotInspectTemplate", value.asInstanceOf[js.Any])
+    inline def setSnapshotInspectTemplate(value: GooglePrivacyDlpV2InspectTemplate): Self = StObject.set(x, "snapshotInspectTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotInspectTemplateUndefined: Self = StObject.set(x, "snapshotInspectTemplate", js.undefined)
+    inline def setSnapshotInspectTemplateUndefined: Self = StObject.set(x, "snapshotInspectTemplate", js.undefined)
   }
 }

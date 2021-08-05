@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.VersionUpgradeEventObject")
 @js.native
-class VersionUpgradeEventObject protected ()
+/* private */ class VersionUpgradeEventObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.VersionUpgradeEventObject {
   
   /* CompleteClass */
   override val DocumentVersion: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.VersionUpgradeEventObject_typekey")
   var InfoPathDotVersionUpgradeEventObject_typekey: typings.activexInfopath.InfoPath.VersionUpgradeEventObject = js.native
   

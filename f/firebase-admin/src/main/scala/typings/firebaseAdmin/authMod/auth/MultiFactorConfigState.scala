@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MultiFactorConfigState extends StObject
 object MultiFactorConfigState {
   
-  @scala.inline
-  def DISABLED: typings.firebaseAdmin.firebaseAdminStrings.DISABLED = "DISABLED".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.DISABLED]
+  inline def DISABLED: typings.firebaseAdmin.firebaseAdminStrings.DISABLED = "DISABLED".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.DISABLED]
   
-  @scala.inline
-  def ENABLED: typings.firebaseAdmin.firebaseAdminStrings.ENABLED = "ENABLED".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.ENABLED]
+  inline def ENABLED: typings.firebaseAdmin.firebaseAdminStrings.ENABLED = "ENABLED".asInstanceOf[typings.firebaseAdmin.firebaseAdminStrings.ENABLED]
 }

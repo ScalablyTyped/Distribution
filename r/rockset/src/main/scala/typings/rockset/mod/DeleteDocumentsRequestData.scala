@@ -11,16 +11,13 @@ trait DeleteDocumentsRequestData extends StObject {
 }
 object DeleteDocumentsRequestData {
   
-  @scala.inline
-  def apply(_id: String): DeleteDocumentsRequestData = {
+  inline def apply(_id: String): DeleteDocumentsRequestData = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDocumentsRequestData]
   }
   
-  @scala.inline
-  implicit class DeleteDocumentsRequestDataMutableBuilder[Self <: DeleteDocumentsRequestData] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDocumentsRequestData](x: Self) {
     
-    @scala.inline
-    def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+    inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
   }
 }

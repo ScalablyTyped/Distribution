@@ -28,31 +28,23 @@ trait TestScriptSetupActionAssertRuleset
 }
 object TestScriptSetupActionAssertRuleset {
   
-  @scala.inline
-  def apply(rulesetId: id): TestScriptSetupActionAssertRuleset = {
+  inline def apply(rulesetId: id): TestScriptSetupActionAssertRuleset = {
     val __obj = js.Dynamic.literal(rulesetId = rulesetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestScriptSetupActionAssertRuleset]
   }
   
-  @scala.inline
-  implicit class TestScriptSetupActionAssertRulesetMutableBuilder[Self <: TestScriptSetupActionAssertRuleset] (val x: Self) extends AnyVal {
+  extension [Self <: TestScriptSetupActionAssertRuleset](x: Self) {
     
-    @scala.inline
-    def setRule(value: js.Array[TestScriptSetupActionAssertRulesetRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: js.Array[TestScriptSetupActionAssertRulesetRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
     
-    @scala.inline
-    def setRuleVarargs(value: TestScriptSetupActionAssertRulesetRule*): Self = StObject.set(x, "rule", js.Array(value :_*))
+    inline def setRuleVarargs(value: TestScriptSetupActionAssertRulesetRule*): Self = StObject.set(x, "rule", js.Array(value :_*))
     
-    @scala.inline
-    def setRulesetId(value: id): Self = StObject.set(x, "rulesetId", value.asInstanceOf[js.Any])
+    inline def setRulesetId(value: id): Self = StObject.set(x, "rulesetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rulesetId(value: Element): Self = StObject.set(x, "_rulesetId", value.asInstanceOf[js.Any])
+    inline def set_rulesetId(value: Element): Self = StObject.set(x, "_rulesetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rulesetIdUndefined: Self = StObject.set(x, "_rulesetId", js.undefined)
+    inline def set_rulesetIdUndefined: Self = StObject.set(x, "_rulesetId", js.undefined)
   }
 }

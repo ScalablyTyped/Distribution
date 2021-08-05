@@ -11,6 +11,5 @@ object typeUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def typeIsOrHasBaseType(`type`: Type, parentType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("typeIsOrHasBaseType")(`type`.asInstanceOf[js.Any], parentType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def typeIsOrHasBaseType(`type`: Type, parentType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("typeIsOrHasBaseType")(`type`.asInstanceOf[js.Any], parentType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

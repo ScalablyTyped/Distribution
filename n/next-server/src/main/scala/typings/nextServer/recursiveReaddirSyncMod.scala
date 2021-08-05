@@ -10,12 +10,8 @@ object recursiveReaddirSyncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def recursiveReadDirSync(dir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("recursiveReadDirSync")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def recursiveReadDirSync(dir: String, arr: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursiveReadDirSync")(dir.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def recursiveReadDirSync(dir: String, arr: js.Array[String], rootDir: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursiveReadDirSync")(dir.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], rootDir.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def recursiveReadDirSync(dir: String, arr: Unit, rootDir: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursiveReadDirSync")(dir.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], rootDir.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def recursiveReadDirSync(dir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("recursiveReadDirSync")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def recursiveReadDirSync(dir: String, arr: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursiveReadDirSync")(dir.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def recursiveReadDirSync(dir: String, arr: js.Array[String], rootDir: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursiveReadDirSync")(dir.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], rootDir.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def recursiveReadDirSync(dir: String, arr: Unit, rootDir: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursiveReadDirSync")(dir.asInstanceOf[js.Any], arr.asInstanceOf[js.Any], rootDir.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

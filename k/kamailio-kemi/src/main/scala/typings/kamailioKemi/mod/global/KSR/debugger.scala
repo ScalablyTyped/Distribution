@@ -11,9 +11,7 @@ object debugger {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dbgPvDump(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dbg_pv_dump")().asInstanceOf[Double]
+  inline def dbgPvDump(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dbg_pv_dump")().asInstanceOf[Double]
   
-  @scala.inline
-  def dbgPvDumpEx(mask: Double, level: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dbg_pv_dump_ex")(mask.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def dbgPvDumpEx(mask: Double, level: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dbg_pv_dump_ex")(mask.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

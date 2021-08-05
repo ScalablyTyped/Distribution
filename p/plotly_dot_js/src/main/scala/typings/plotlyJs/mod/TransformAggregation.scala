@@ -29,34 +29,25 @@ trait TransformAggregation extends StObject {
 }
 object TransformAggregation {
   
-  @scala.inline
-  def apply(target: String): TransformAggregation = {
+  inline def apply(target: String): TransformAggregation = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformAggregation]
   }
   
-  @scala.inline
-  implicit class TransformAggregationMutableBuilder[Self <: TransformAggregation] (val x: Self) extends AnyVal {
+  extension [Self <: TransformAggregation](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFunc(value: count | sum | avg | median | mode | rms | stddev | min | max | first | last): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: count | sum | avg | median | mode | rms | stddev | min | max | first | last): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
+    inline def setFuncUndefined: Self = StObject.set(x, "func", js.undefined)
     
-    @scala.inline
-    def setFuncmode(value: sample | population): Self = StObject.set(x, "funcmode", value.asInstanceOf[js.Any])
+    inline def setFuncmode(value: sample | population): Self = StObject.set(x, "funcmode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuncmodeUndefined: Self = StObject.set(x, "funcmode", js.undefined)
+    inline def setFuncmodeUndefined: Self = StObject.set(x, "funcmode", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

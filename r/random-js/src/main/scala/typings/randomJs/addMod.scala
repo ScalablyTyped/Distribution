@@ -11,6 +11,5 @@ object addMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def add(distribution: Distribution[Double], addend: Double): Distribution[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(distribution.asInstanceOf[js.Any], addend.asInstanceOf[js.Any])).asInstanceOf[Distribution[Double]]
+  inline def add(distribution: Distribution[Double], addend: Double): Distribution[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(distribution.asInstanceOf[js.Any], addend.asInstanceOf[js.Any])).asInstanceOf[Distribution[Double]]
 }

@@ -27,26 +27,20 @@ object nextPageLinkMod {
   }
   object NextPageLinkProps {
     
-    @scala.inline
-    def apply(): NextPageLinkProps = {
+    inline def apply(): NextPageLinkProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NextPageLinkProps]
     }
     
-    @scala.inline
-    implicit class NextPageLinkPropsMutableBuilder[Self <: NextPageLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: NextPageLinkProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
   }
 }

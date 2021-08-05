@@ -16,8 +16,7 @@ trait StorePackageUpdateResult extends StObject {
 }
 object StorePackageUpdateResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     overallState: StorePackageUpdateState,
     storePackageUpdateStatuses: IVectorView[StorePackageUpdateStatus]
   ): StorePackageUpdateResult = {
@@ -25,13 +24,10 @@ object StorePackageUpdateResult {
     __obj.asInstanceOf[StorePackageUpdateResult]
   }
   
-  @scala.inline
-  implicit class StorePackageUpdateResultMutableBuilder[Self <: StorePackageUpdateResult] (val x: Self) extends AnyVal {
+  extension [Self <: StorePackageUpdateResult](x: Self) {
     
-    @scala.inline
-    def setOverallState(value: StorePackageUpdateState): Self = StObject.set(x, "overallState", value.asInstanceOf[js.Any])
+    inline def setOverallState(value: StorePackageUpdateState): Self = StObject.set(x, "overallState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorePackageUpdateStatuses(value: IVectorView[StorePackageUpdateStatus]): Self = StObject.set(x, "storePackageUpdateStatuses", value.asInstanceOf[js.Any])
+    inline def setStorePackageUpdateStatuses(value: IVectorView[StorePackageUpdateStatus]): Self = StObject.set(x, "storePackageUpdateStatuses", value.asInstanceOf[js.Any])
   }
 }

@@ -77,21 +77,16 @@ object wafRateBasedRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RateBasedRuleState): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RateBasedRuleState, opts: CustomResourceOptions): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
+    inline def get(name: String, id: Input[ID]): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
+    inline def get(name: String, id: Input[ID], state: RateBasedRuleState): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
+    inline def get(name: String, id: Input[ID], state: RateBasedRuleState, opts: CustomResourceOptions): RateBasedRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RateBasedRule]
     
     /**
       * Returns true if the given object is an instance of RateBasedRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rateBasedRule.RateBasedRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/rateBasedRule.RateBasedRule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rateBasedRule.RateBasedRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/rateBasedRule.RateBasedRule */ Boolean]
   }
   
   trait RateBasedRuleArgs extends StObject {
@@ -128,44 +123,32 @@ object wafRateBasedRuleMod {
   }
   object RateBasedRuleArgs {
     
-    @scala.inline
-    def apply(metricName: Input[String], rateKey: Input[String], rateLimit: Input[Double]): RateBasedRuleArgs = {
+    inline def apply(metricName: Input[String], rateKey: Input[String], rateLimit: Input[Double]): RateBasedRuleArgs = {
       val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], rateKey = rateKey.asInstanceOf[js.Any], rateLimit = rateLimit.asInstanceOf[js.Any])
       __obj.asInstanceOf[RateBasedRuleArgs]
     }
     
-    @scala.inline
-    implicit class RateBasedRuleArgsMutableBuilder[Self <: RateBasedRuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RateBasedRuleArgs](x: Self) {
       
-      @scala.inline
-      def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+      inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPredicates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RateBasedRulePredicate]]]): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
+      inline def setPredicates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RateBasedRulePredicate]]]): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicatesUndefined: Self = StObject.set(x, "predicates", js.undefined)
+      inline def setPredicatesUndefined: Self = StObject.set(x, "predicates", js.undefined)
       
-      @scala.inline
-      def setPredicatesVarargs(value: Input[typings.pulumiAws.inputMod.waf.RateBasedRulePredicate]*): Self = StObject.set(x, "predicates", js.Array(value :_*))
+      inline def setPredicatesVarargs(value: Input[typings.pulumiAws.inputMod.waf.RateBasedRulePredicate]*): Self = StObject.set(x, "predicates", js.Array(value :_*))
       
-      @scala.inline
-      def setRateKey(value: Input[String]): Self = StObject.set(x, "rateKey", value.asInstanceOf[js.Any])
+      inline def setRateKey(value: Input[String]): Self = StObject.set(x, "rateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimit(value: Input[Double]): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Input[Double]): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -208,59 +191,42 @@ object wafRateBasedRuleMod {
   }
   object RateBasedRuleState {
     
-    @scala.inline
-    def apply(): RateBasedRuleState = {
+    inline def apply(): RateBasedRuleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RateBasedRuleState]
     }
     
-    @scala.inline
-    implicit class RateBasedRuleStateMutableBuilder[Self <: RateBasedRuleState] (val x: Self) extends AnyVal {
+    extension [Self <: RateBasedRuleState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+      inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+      inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPredicates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RateBasedRulePredicate]]]): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
+      inline def setPredicates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RateBasedRulePredicate]]]): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicatesUndefined: Self = StObject.set(x, "predicates", js.undefined)
+      inline def setPredicatesUndefined: Self = StObject.set(x, "predicates", js.undefined)
       
-      @scala.inline
-      def setPredicatesVarargs(value: Input[typings.pulumiAws.inputMod.waf.RateBasedRulePredicate]*): Self = StObject.set(x, "predicates", js.Array(value :_*))
+      inline def setPredicatesVarargs(value: Input[typings.pulumiAws.inputMod.waf.RateBasedRulePredicate]*): Self = StObject.set(x, "predicates", js.Array(value :_*))
       
-      @scala.inline
-      def setRateKey(value: Input[String]): Self = StObject.set(x, "rateKey", value.asInstanceOf[js.Any])
+      inline def setRateKey(value: Input[String]): Self = StObject.set(x, "rateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateKeyUndefined: Self = StObject.set(x, "rateKey", js.undefined)
+      inline def setRateKeyUndefined: Self = StObject.set(x, "rateKey", js.undefined)
       
-      @scala.inline
-      def setRateLimit(value: Input[Double]): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Input[Double]): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

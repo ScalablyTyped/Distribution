@@ -40,44 +40,32 @@ object pathMod extends Shortcut {
   }
   object FormatInputPathObject {
     
-    @scala.inline
-    def apply(): FormatInputPathObject = {
+    inline def apply(): FormatInputPathObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatInputPathObject]
     }
     
-    @scala.inline
-    implicit class FormatInputPathObjectMutableBuilder[Self <: FormatInputPathObject] (val x: Self) extends AnyVal {
+    extension [Self <: FormatInputPathObject](x: Self) {
       
-      @scala.inline
-      def setBase(value: java.lang.String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: java.lang.String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setDir(value: java.lang.String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: java.lang.String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setExt(value: java.lang.String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: java.lang.String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      @scala.inline
-      def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRoot(value: java.lang.String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: java.lang.String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -113,8 +101,7 @@ object pathMod extends Shortcut {
   }
   object ParsedPath {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       base: java.lang.String,
       dir: java.lang.String,
       ext: java.lang.String,
@@ -125,23 +112,17 @@ object pathMod extends Shortcut {
       __obj.asInstanceOf[ParsedPath]
     }
     
-    @scala.inline
-    implicit class ParsedPathMutableBuilder[Self <: ParsedPath] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedPath](x: Self) {
       
-      @scala.inline
-      def setBase(value: java.lang.String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: java.lang.String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir(value: java.lang.String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: java.lang.String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExt(value: java.lang.String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: java.lang.String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: java.lang.String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: java.lang.String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   

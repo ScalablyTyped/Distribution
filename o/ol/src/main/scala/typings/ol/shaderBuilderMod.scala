@@ -131,8 +131,7 @@ object shaderBuilderMod {
     def setTextureCoordinateExpression(expression: String): ShaderBuilder = js.native
   }
   
-  @scala.inline
-  def parseLiteralStyle(style: LiteralStyle): StyleParseResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLiteralStyle")(style.asInstanceOf[js.Any]).asInstanceOf[StyleParseResult]
+  inline def parseLiteralStyle(style: LiteralStyle): StyleParseResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLiteralStyle")(style.asInstanceOf[js.Any]).asInstanceOf[StyleParseResult]
   
   trait StyleParseResult extends StObject {
     
@@ -144,8 +143,7 @@ object shaderBuilderMod {
   }
   object StyleParseResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Array[CustomAttribute],
       builder: ShaderBuilder,
       uniforms: StringDictionary[UniformValue]
@@ -154,20 +152,15 @@ object shaderBuilderMod {
       __obj.asInstanceOf[StyleParseResult]
     }
     
-    @scala.inline
-    implicit class StyleParseResultMutableBuilder[Self <: StyleParseResult] (val x: Self) extends AnyVal {
+    extension [Self <: StyleParseResult](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: CustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setBuilder(value: ShaderBuilder): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
+      inline def setBuilder(value: ShaderBuilder): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+      inline def setUniforms(value: StringDictionary[UniformValue]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,24 +174,19 @@ object shaderBuilderMod {
   }
   object VaryingDescription {
     
-    @scala.inline
-    def apply(expression: String, name: String, `type`: String): VaryingDescription = {
+    inline def apply(expression: String, name: String, `type`: String): VaryingDescription = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VaryingDescription]
     }
     
-    @scala.inline
-    implicit class VaryingDescriptionMutableBuilder[Self <: VaryingDescription] (val x: Self) extends AnyVal {
+    extension [Self <: VaryingDescription](x: Self) {
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

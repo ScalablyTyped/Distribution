@@ -13,16 +13,13 @@ trait DeleteResourcePolicyInput extends StObject {
 }
 object DeleteResourcePolicyInput {
   
-  @scala.inline
-  def apply(resourceArn: NonEmptyString): DeleteResourcePolicyInput = {
+  inline def apply(resourceArn: NonEmptyString): DeleteResourcePolicyInput = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResourcePolicyInput]
   }
   
-  @scala.inline
-  implicit class DeleteResourcePolicyInputMutableBuilder[Self <: DeleteResourcePolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResourcePolicyInput](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: NonEmptyString): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: NonEmptyString): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }
 }

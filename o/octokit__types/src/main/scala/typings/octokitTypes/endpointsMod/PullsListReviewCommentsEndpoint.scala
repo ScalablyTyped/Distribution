@@ -43,52 +43,37 @@ trait PullsListReviewCommentsEndpoint extends StObject {
 }
 object PullsListReviewCommentsEndpoint {
   
-  @scala.inline
-  def apply(owner: String, pull_number: Double, repo: String): PullsListReviewCommentsEndpoint = {
+  inline def apply(owner: String, pull_number: Double, repo: String): PullsListReviewCommentsEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], pull_number = pull_number.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullsListReviewCommentsEndpoint]
   }
   
-  @scala.inline
-  implicit class PullsListReviewCommentsEndpointMutableBuilder[Self <: PullsListReviewCommentsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: PullsListReviewCommentsEndpoint](x: Self) {
     
-    @scala.inline
-    def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    @scala.inline
-    def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
+    inline def setPull_number(value: Double): Self = StObject.set(x, "pull_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
-    @scala.inline
-    def setSort(value: created | updated): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: created | updated): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }
 }

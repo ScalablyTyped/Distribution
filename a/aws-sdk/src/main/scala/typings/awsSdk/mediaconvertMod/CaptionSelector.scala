@@ -23,31 +23,23 @@ trait CaptionSelector extends StObject {
 }
 object CaptionSelector {
   
-  @scala.inline
-  def apply(): CaptionSelector = {
+  inline def apply(): CaptionSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionSelector]
   }
   
-  @scala.inline
-  implicit class CaptionSelectorMutableBuilder[Self <: CaptionSelector] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionSelector](x: Self) {
     
-    @scala.inline
-    def setCustomLanguageCode(value: stringMin3Max3PatternAZaZ3): Self = StObject.set(x, "CustomLanguageCode", value.asInstanceOf[js.Any])
+    inline def setCustomLanguageCode(value: stringMin3Max3PatternAZaZ3): Self = StObject.set(x, "CustomLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomLanguageCodeUndefined: Self = StObject.set(x, "CustomLanguageCode", js.undefined)
+    inline def setCustomLanguageCodeUndefined: Self = StObject.set(x, "CustomLanguageCode", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setSourceSettings(value: CaptionSourceSettings): Self = StObject.set(x, "SourceSettings", value.asInstanceOf[js.Any])
+    inline def setSourceSettings(value: CaptionSourceSettings): Self = StObject.set(x, "SourceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSettingsUndefined: Self = StObject.set(x, "SourceSettings", js.undefined)
+    inline def setSourceSettingsUndefined: Self = StObject.set(x, "SourceSettings", js.undefined)
   }
 }

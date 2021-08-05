@@ -14,25 +14,19 @@ trait ApplicationEvent extends StObject {
 }
 object ApplicationEvent {
   
-  @scala.inline
-  def apply(): ApplicationEvent = {
+  inline def apply(): ApplicationEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationEvent]
   }
   
-  @scala.inline
-  implicit class ApplicationEventMutableBuilder[Self <: ApplicationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationEvent](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
   }
 }

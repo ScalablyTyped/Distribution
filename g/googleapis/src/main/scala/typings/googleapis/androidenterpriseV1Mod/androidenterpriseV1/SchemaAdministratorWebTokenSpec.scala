@@ -55,64 +55,45 @@ trait SchemaAdministratorWebTokenSpec extends StObject {
 }
 object SchemaAdministratorWebTokenSpec {
   
-  @scala.inline
-  def apply(): SchemaAdministratorWebTokenSpec = {
+  inline def apply(): SchemaAdministratorWebTokenSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAdministratorWebTokenSpec]
   }
   
-  @scala.inline
-  implicit class SchemaAdministratorWebTokenSpecMutableBuilder[Self <: SchemaAdministratorWebTokenSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAdministratorWebTokenSpec](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setManagedConfigurations(value: SchemaAdministratorWebTokenSpecManagedConfigurations): Self = StObject.set(x, "managedConfigurations", value.asInstanceOf[js.Any])
+    inline def setManagedConfigurations(value: SchemaAdministratorWebTokenSpecManagedConfigurations): Self = StObject.set(x, "managedConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedConfigurationsUndefined: Self = StObject.set(x, "managedConfigurations", js.undefined)
+    inline def setManagedConfigurationsUndefined: Self = StObject.set(x, "managedConfigurations", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setPermission(value: js.Array[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: js.Array[String]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value :_*))
+    inline def setPermissionVarargs(value: String*): Self = StObject.set(x, "permission", js.Array(value :_*))
     
-    @scala.inline
-    def setPlaySearch(value: SchemaAdministratorWebTokenSpecPlaySearch): Self = StObject.set(x, "playSearch", value.asInstanceOf[js.Any])
+    inline def setPlaySearch(value: SchemaAdministratorWebTokenSpecPlaySearch): Self = StObject.set(x, "playSearch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaySearchUndefined: Self = StObject.set(x, "playSearch", js.undefined)
+    inline def setPlaySearchUndefined: Self = StObject.set(x, "playSearch", js.undefined)
     
-    @scala.inline
-    def setPrivateApps(value: SchemaAdministratorWebTokenSpecPrivateApps): Self = StObject.set(x, "privateApps", value.asInstanceOf[js.Any])
+    inline def setPrivateApps(value: SchemaAdministratorWebTokenSpecPrivateApps): Self = StObject.set(x, "privateApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateAppsUndefined: Self = StObject.set(x, "privateApps", js.undefined)
+    inline def setPrivateAppsUndefined: Self = StObject.set(x, "privateApps", js.undefined)
     
-    @scala.inline
-    def setStoreBuilder(value: SchemaAdministratorWebTokenSpecStoreBuilder): Self = StObject.set(x, "storeBuilder", value.asInstanceOf[js.Any])
+    inline def setStoreBuilder(value: SchemaAdministratorWebTokenSpecStoreBuilder): Self = StObject.set(x, "storeBuilder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreBuilderUndefined: Self = StObject.set(x, "storeBuilder", js.undefined)
+    inline def setStoreBuilderUndefined: Self = StObject.set(x, "storeBuilder", js.undefined)
     
-    @scala.inline
-    def setWebApps(value: SchemaAdministratorWebTokenSpecWebApps): Self = StObject.set(x, "webApps", value.asInstanceOf[js.Any])
+    inline def setWebApps(value: SchemaAdministratorWebTokenSpecWebApps): Self = StObject.set(x, "webApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAppsUndefined: Self = StObject.set(x, "webApps", js.undefined)
+    inline def setWebAppsUndefined: Self = StObject.set(x, "webApps", js.undefined)
   }
 }

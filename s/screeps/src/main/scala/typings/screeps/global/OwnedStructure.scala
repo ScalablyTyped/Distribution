@@ -88,6 +88,5 @@ class OwnedStructure protected ()
 }
 object OwnedStructure {
   
-  @scala.inline
-  def apply: OwnedStructureConstructor = js.Dynamic.global.selectDynamic("OwnedStructure").asInstanceOf[OwnedStructureConstructor]
+  inline def apply: OwnedStructureConstructor = js.Dynamic.global.selectDynamic("OwnedStructure").asInstanceOf[OwnedStructureConstructor]
 }

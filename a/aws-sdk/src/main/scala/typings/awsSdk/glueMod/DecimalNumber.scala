@@ -18,19 +18,15 @@ trait DecimalNumber extends StObject {
 }
 object DecimalNumber {
   
-  @scala.inline
-  def apply(Scale: Integer, UnscaledValue: _Blob): DecimalNumber = {
+  inline def apply(Scale: Integer, UnscaledValue: _Blob): DecimalNumber = {
     val __obj = js.Dynamic.literal(Scale = Scale.asInstanceOf[js.Any], UnscaledValue = UnscaledValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecimalNumber]
   }
   
-  @scala.inline
-  implicit class DecimalNumberMutableBuilder[Self <: DecimalNumber] (val x: Self) extends AnyVal {
+  extension [Self <: DecimalNumber](x: Self) {
     
-    @scala.inline
-    def setScale(value: Integer): Self = StObject.set(x, "Scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Integer): Self = StObject.set(x, "Scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnscaledValue(value: _Blob): Self = StObject.set(x, "UnscaledValue", value.asInstanceOf[js.Any])
+    inline def setUnscaledValue(value: _Blob): Self = StObject.set(x, "UnscaledValue", value.asInstanceOf[js.Any])
   }
 }

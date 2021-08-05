@@ -31,28 +31,19 @@ object mod {
     def update(opts: CryptexOpts): Unit = js.native
   }
   
-  @scala.inline
-  def decrypt(data: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def decrypt(data: String, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def decrypt(data: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def decrypt(data: String, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def encrypt(data: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def encrypt(data: String, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def encrypt(data: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def encrypt(data: String, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getSecret(secret: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(secret.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getSecret(secret: String, optional: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(secret.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getSecret(secret: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(secret.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getSecret(secret: String, optional: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(secret.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getSecrets(secrets: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(secrets.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def getSecrets(secrets: js.Array[String], optional: Boolean): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(secrets.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def getSecrets(secrets: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(secrets.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def getSecrets(secrets: js.Array[String], optional: Boolean): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(secrets.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @scala.inline
-  def update(opts: CryptexOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def update(opts: CryptexOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait CryptexConfig extends StObject {
     
@@ -68,38 +59,28 @@ object mod {
   }
   object CryptexConfig {
     
-    @scala.inline
-    def apply(keySource: String, secrets: js.Object): CryptexConfig = {
+    inline def apply(keySource: String, secrets: js.Object): CryptexConfig = {
       val __obj = js.Dynamic.literal(keySource = keySource.asInstanceOf[js.Any], secrets = secrets.asInstanceOf[js.Any])
       __obj.asInstanceOf[CryptexConfig]
     }
     
-    @scala.inline
-    implicit class CryptexConfigMutableBuilder[Self <: CryptexConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CryptexConfig](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+      inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
-      @scala.inline
-      def setKeySource(value: String): Self = StObject.set(x, "keySource", value.asInstanceOf[js.Any])
+      inline def setKeySource(value: String): Self = StObject.set(x, "keySource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySourceOpts(value: DataKey): Self = StObject.set(x, "keySourceOpts", value.asInstanceOf[js.Any])
+      inline def setKeySourceOpts(value: DataKey): Self = StObject.set(x, "keySourceOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySourceOptsUndefined: Self = StObject.set(x, "keySourceOpts", js.undefined)
+      inline def setKeySourceOptsUndefined: Self = StObject.set(x, "keySourceOpts", js.undefined)
       
-      @scala.inline
-      def setSecretEncoding(value: String): Self = StObject.set(x, "secretEncoding", value.asInstanceOf[js.Any])
+      inline def setSecretEncoding(value: String): Self = StObject.set(x, "secretEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretEncodingUndefined: Self = StObject.set(x, "secretEncoding", js.undefined)
+      inline def setSecretEncodingUndefined: Self = StObject.set(x, "secretEncoding", js.undefined)
       
-      @scala.inline
-      def setSecrets(value: js.Object): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+      inline def setSecrets(value: js.Object): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,44 +98,32 @@ object mod {
   }
   object CryptexOpts {
     
-    @scala.inline
-    def apply(): CryptexOpts = {
+    inline def apply(): CryptexOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CryptexOpts]
     }
     
-    @scala.inline
-    implicit class CryptexOptsMutableBuilder[Self <: CryptexOpts] (val x: Self) extends AnyVal {
+    extension [Self <: CryptexOpts](x: Self) {
       
-      @scala.inline
-      def setCacheKey(value: Boolean): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+      inline def setCacheKey(value: Boolean): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheKeyTimeout(value: Double): Self = StObject.set(x, "cacheKeyTimeout", value.asInstanceOf[js.Any])
+      inline def setCacheKeyTimeout(value: Double): Self = StObject.set(x, "cacheKeyTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheKeyTimeoutUndefined: Self = StObject.set(x, "cacheKeyTimeout", js.undefined)
+      inline def setCacheKeyTimeoutUndefined: Self = StObject.set(x, "cacheKeyTimeout", js.undefined)
       
-      @scala.inline
-      def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
+      inline def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
       
-      @scala.inline
-      def setConfig(value: CryptexConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: CryptexConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     }
   }
 }

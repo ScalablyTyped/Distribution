@@ -31,58 +31,41 @@ trait Customitems extends StObject {
 }
 object Customitems {
   
-  @scala.inline
-  def apply(): Customitems = {
+  inline def apply(): Customitems = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Customitems]
   }
   
-  @scala.inline
-  implicit class CustomitemsMutableBuilder[Self <: Customitems] (val x: Self) extends AnyVal {
+  extension [Self <: Customitems](x: Self) {
     
-    @scala.inline
-    def setButton(value: Maxchars): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Maxchars): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def `setCustom-items`(value: js.Array[Function]): Self = StObject.set(x, "custom-items", value.asInstanceOf[js.Any])
+    inline def `setCustom-items`(value: js.Array[Function]): Self = StObject.set(x, "custom-items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCustom-itemsUndefined`: Self = StObject.set(x, "custom-items", js.undefined)
+    inline def `setCustom-itemsUndefined`: Self = StObject.set(x, "custom-items", js.undefined)
     
-    @scala.inline
-    def `setCustom-itemsVarargs`(value: Function*): Self = StObject.set(x, "custom-items", js.Array(value :_*))
+    inline def `setCustom-itemsVarargs`(value: Function*): Self = StObject.set(x, "custom-items", js.Array(value :_*))
     
-    @scala.inline
-    def setDocked(value: Boolean): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
+    inline def setDocked(value: Boolean): Self = StObject.set(x, "docked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockedUndefined: Self = StObject.set(x, "docked", js.undefined)
+    inline def setDockedUndefined: Self = StObject.set(x, "docked", js.undefined)
     
-    @scala.inline
-    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+    inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
-    @scala.inline
-    def setGear(value: Offsety): Self = StObject.set(x, "gear", value.asInstanceOf[js.Any])
+    inline def setGear(value: Offsety): Self = StObject.set(x, "gear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGearUndefined: Self = StObject.set(x, "gear", js.undefined)
+    inline def setGearUndefined: Self = StObject.set(x, "gear", js.undefined)
     
-    @scala.inline
-    def setItem(value: FontcolorHoverstate): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: FontcolorHoverstate): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

@@ -7,18 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(redisOptions: String): SocketIOEmitter = ^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any]).asInstanceOf[SocketIOEmitter]
-  @scala.inline
-  def apply(redisOptions: String, options: SocketIOEmitterOptions): SocketIOEmitter = (^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIOEmitter]
-  @scala.inline
-  def apply(redisOptions: RedisClient): SocketIOEmitter = ^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any]).asInstanceOf[SocketIOEmitter]
-  @scala.inline
-  def apply(redisOptions: RedisClient, options: SocketIOEmitterOptions): SocketIOEmitter = (^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIOEmitter]
-  @scala.inline
-  def apply(redisOptions: SocketIORedisOptions): SocketIOEmitter = ^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any]).asInstanceOf[SocketIOEmitter]
-  @scala.inline
-  def apply(redisOptions: SocketIORedisOptions, options: SocketIOEmitterOptions): SocketIOEmitter = (^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIOEmitter]
+  inline def apply(redisOptions: String): SocketIOEmitter = ^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any]).asInstanceOf[SocketIOEmitter]
+  inline def apply(redisOptions: String, options: SocketIOEmitterOptions): SocketIOEmitter = (^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIOEmitter]
+  inline def apply(redisOptions: RedisClient): SocketIOEmitter = ^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any]).asInstanceOf[SocketIOEmitter]
+  inline def apply(redisOptions: RedisClient, options: SocketIOEmitterOptions): SocketIOEmitter = (^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIOEmitter]
+  inline def apply(redisOptions: SocketIORedisOptions): SocketIOEmitter = ^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any]).asInstanceOf[SocketIOEmitter]
+  inline def apply(redisOptions: SocketIORedisOptions, options: SocketIOEmitterOptions): SocketIOEmitter = (^.asInstanceOf[js.Dynamic].apply(redisOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIOEmitter]
   
   @JSImport("socket.io-emitter", JSImport.Namespace)
   @js.native
@@ -28,9 +22,9 @@ object mod {
   @js.native
   class SocketIOEmitter () extends StObject {
     
-    var _flags: Recordbroadcastjsonvolati = js.native
+    /* private */ var _flags: Recordbroadcastjsonvolati = js.native
     
-    var _rooms: js.Array[String] = js.native
+    /* private */ var _rooms: js.Array[String] = js.native
     
     // TypeScript Version: 3.6
     def broadcast: this.type = js.native
@@ -68,17 +62,14 @@ object mod {
   }
   object RedisClient {
     
-    @scala.inline
-    def apply(publish: (String, String) => js.Promise[js.Any]): RedisClient = {
+    inline def apply(publish: (String, String) => js.Promise[js.Any]): RedisClient = {
       val __obj = js.Dynamic.literal(publish = js.Any.fromFunction2(publish))
       __obj.asInstanceOf[RedisClient]
     }
     
-    @scala.inline
-    implicit class RedisClientMutableBuilder[Self <: RedisClient] (val x: Self) extends AnyVal {
+    extension [Self <: RedisClient](x: Self) {
       
-      @scala.inline
-      def setPublish(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
+      inline def setPublish(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "publish", js.Any.fromFunction2(value))
     }
   }
   
@@ -88,20 +79,16 @@ object mod {
   }
   object SocketIOEmitterOptions {
     
-    @scala.inline
-    def apply(): SocketIOEmitterOptions = {
+    inline def apply(): SocketIOEmitterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocketIOEmitterOptions]
     }
     
-    @scala.inline
-    implicit class SocketIOEmitterOptionsMutableBuilder[Self <: SocketIOEmitterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SocketIOEmitterOptions](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -112,14 +99,12 @@ object mod {
   trait SocketIORedisOptions extends StObject
   object SocketIORedisOptions {
     
-    @scala.inline
-    def Host(host: String, port: Double): typings.socketIoEmitter.anon.Host = {
+    inline def Host(host: String, port: Double): typings.socketIoEmitter.anon.Host = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.socketIoEmitter.anon.Host]
     }
     
-    @scala.inline
-    def Socket(socket: String): typings.socketIoEmitter.anon.Socket = {
+    inline def Socket(socket: String): typings.socketIoEmitter.anon.Socket = {
       val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.socketIoEmitter.anon.Socket]
     }

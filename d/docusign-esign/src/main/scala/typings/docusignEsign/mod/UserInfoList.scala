@@ -13,22 +13,17 @@ trait UserInfoList extends StObject {
 }
 object UserInfoList {
   
-  @scala.inline
-  def apply(): UserInfoList = {
+  inline def apply(): UserInfoList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserInfoList]
   }
   
-  @scala.inline
-  implicit class UserInfoListMutableBuilder[Self <: UserInfoList] (val x: Self) extends AnyVal {
+  extension [Self <: UserInfoList](x: Self) {
     
-    @scala.inline
-    def setUsers(value: js.Array[UserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[UserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: UserInfo*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserInfo*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

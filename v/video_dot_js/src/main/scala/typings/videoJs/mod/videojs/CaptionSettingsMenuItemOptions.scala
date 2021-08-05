@@ -13,16 +13,13 @@ trait CaptionSettingsMenuItemOptions
 }
 object CaptionSettingsMenuItemOptions {
   
-  @scala.inline
-  def apply(kind: Kind, track: TextTrack): CaptionSettingsMenuItemOptions = {
+  inline def apply(kind: Kind, track: TextTrack): CaptionSettingsMenuItemOptions = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptionSettingsMenuItemOptions]
   }
   
-  @scala.inline
-  implicit class CaptionSettingsMenuItemOptionsMutableBuilder[Self <: CaptionSettingsMenuItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionSettingsMenuItemOptions](x: Self) {
     
-    @scala.inline
-    def setKind(value: Kind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Kind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

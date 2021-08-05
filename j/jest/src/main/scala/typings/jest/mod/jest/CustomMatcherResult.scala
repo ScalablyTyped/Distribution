@@ -12,19 +12,15 @@ trait CustomMatcherResult extends StObject {
 }
 object CustomMatcherResult {
   
-  @scala.inline
-  def apply(message: () => String, pass: Boolean): CustomMatcherResult = {
+  inline def apply(message: () => String, pass: Boolean): CustomMatcherResult = {
     val __obj = js.Dynamic.literal(message = js.Any.fromFunction0(message), pass = pass.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomMatcherResult]
   }
   
-  @scala.inline
-  implicit class CustomMatcherResultMutableBuilder[Self <: CustomMatcherResult] (val x: Self) extends AnyVal {
+  extension [Self <: CustomMatcherResult](x: Self) {
     
-    @scala.inline
-    def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
+    inline def setMessage(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+    inline def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
   }
 }

@@ -49,61 +49,44 @@ object statisticsWidgetMod {
   }
   object StatisticsWidgetItem {
     
-    @scala.inline
-    def apply(value: String): StatisticsWidgetItem = {
+    inline def apply(value: String): StatisticsWidgetItem = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatisticsWidgetItem]
     }
     
-    @scala.inline
-    implicit class StatisticsWidgetItemMutableBuilder[Self <: StatisticsWidgetItem] (val x: Self) extends AnyVal {
+    extension [Self <: StatisticsWidgetItem](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionInfo(value: String): Self = StObject.set(x, "descriptionInfo", value.asInstanceOf[js.Any])
+      inline def setDescriptionInfo(value: String): Self = StObject.set(x, "descriptionInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionInfoUndefined: Self = StObject.set(x, "descriptionInfo", js.undefined)
+      inline def setDescriptionInfoUndefined: Self = StObject.set(x, "descriptionInfo", js.undefined)
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setInvertedPercentage(value: Boolean): Self = StObject.set(x, "invertedPercentage", value.asInstanceOf[js.Any])
+      inline def setInvertedPercentage(value: Boolean): Self = StObject.set(x, "invertedPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertedPercentageUndefined: Self = StObject.set(x, "invertedPercentage", js.undefined)
+      inline def setInvertedPercentageUndefined: Self = StObject.set(x, "invertedPercentage", js.undefined)
       
-      @scala.inline
-      def setOnClick(
+      inline def setOnClick(
         value: /* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement] => Unit
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+      inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueInShort(value: String): Self = StObject.set(x, "valueInShort", value.asInstanceOf[js.Any])
+      inline def setValueInShort(value: String): Self = StObject.set(x, "valueInShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueInShortUndefined: Self = StObject.set(x, "valueInShort", js.undefined)
+      inline def setValueInShortUndefined: Self = StObject.set(x, "valueInShort", js.undefined)
     }
   }
   
@@ -119,41 +102,30 @@ object statisticsWidgetMod {
   }
   object StatisticsWidgetProps {
     
-    @scala.inline
-    def apply(): StatisticsWidgetProps = {
+    inline def apply(): StatisticsWidgetProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatisticsWidgetProps]
     }
     
-    @scala.inline
-    implicit class StatisticsWidgetPropsMutableBuilder[Self <: StatisticsWidgetProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatisticsWidgetProps](x: Self) {
       
-      @scala.inline
-      def setAlignItems(value: center | start | end): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+      inline def setAlignItems(value: center | start | end): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+      inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[StatisticsWidgetItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[StatisticsWidgetItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: StatisticsWidgetItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: StatisticsWidgetItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: large | tiny): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | tiny): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

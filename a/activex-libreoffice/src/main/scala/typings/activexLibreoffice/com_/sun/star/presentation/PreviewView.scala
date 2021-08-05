@@ -49,8 +49,7 @@ trait PreviewView
 }
 object PreviewView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentPage: XDrawPage,
     Frame: XFrame,
     Model: XModel,
@@ -118,10 +117,8 @@ object PreviewView {
     __obj.asInstanceOf[PreviewView]
   }
   
-  @scala.inline
-  implicit class PreviewViewMutableBuilder[Self <: PreviewView] (val x: Self) extends AnyVal {
+  extension [Self <: PreviewView](x: Self) {
     
-    @scala.inline
-    def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
+    inline def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
   }
 }

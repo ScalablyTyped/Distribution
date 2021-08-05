@@ -26,8 +26,7 @@ trait ProjectParametersTransformation
 }
 object ProjectParametersTransformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object ProjectParametersTransformation {
     __obj.asInstanceOf[ProjectParametersTransformation]
   }
   
-  @scala.inline
-  implicit class ProjectParametersTransformationMutableBuilder[Self <: ProjectParametersTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectParametersTransformation](x: Self) {
     
-    @scala.inline
-    def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
+    inline def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWkidUndefined: Self = StObject.set(x, "wkid", js.undefined)
+    inline def setWkidUndefined: Self = StObject.set(x, "wkid", js.undefined)
     
-    @scala.inline
-    def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
+    inline def setWkt(value: String): Self = StObject.set(x, "wkt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWktUndefined: Self = StObject.set(x, "wkt", js.undefined)
+    inline def setWktUndefined: Self = StObject.set(x, "wkt", js.undefined)
   }
 }

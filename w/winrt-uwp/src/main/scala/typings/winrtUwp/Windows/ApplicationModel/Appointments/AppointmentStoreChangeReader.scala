@@ -26,8 +26,7 @@ trait AppointmentStoreChangeReader extends StObject {
 }
 object AppointmentStoreChangeReader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptChanges: () => Unit,
     acceptChangesThrough: AppointmentStoreChange => Unit,
     readBatchAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]
@@ -36,16 +35,12 @@ object AppointmentStoreChangeReader {
     __obj.asInstanceOf[AppointmentStoreChangeReader]
   }
   
-  @scala.inline
-  implicit class AppointmentStoreChangeReaderMutableBuilder[Self <: AppointmentStoreChangeReader] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentStoreChangeReader](x: Self) {
     
-    @scala.inline
-    def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
+    inline def setAcceptChanges(value: () => Unit): Self = StObject.set(x, "acceptChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAcceptChangesThrough(value: AppointmentStoreChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
+    inline def setAcceptChangesThrough(value: AppointmentStoreChange => Unit): Self = StObject.set(x, "acceptChangesThrough", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
+    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

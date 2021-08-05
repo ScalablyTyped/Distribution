@@ -13,19 +13,15 @@ trait ICommandsEvents
 }
 object ICommandsEvents {
   
-  @scala.inline
-  def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): ICommandsEvents = {
+  inline def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): ICommandsEvents = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
     __obj.asInstanceOf[ICommandsEvents]
   }
   
-  @scala.inline
-  implicit class ICommandsEventsMutableBuilder[Self <: ICommandsEvents] (val x: Self) extends AnyVal {
+  extension [Self <: ICommandsEvents](x: Self) {
     
-    @scala.inline
-    def setOnCustomCommand(value: /* commandID */ Double => Unit): Self = StObject.set(x, "OnCustomCommand", js.Any.fromFunction1(value))
+    inline def setOnCustomCommand(value: /* commandID */ Double => Unit): Self = StObject.set(x, "OnCustomCommand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCustomCommandUndefined: Self = StObject.set(x, "OnCustomCommand", js.undefined)
+    inline def setOnCustomCommandUndefined: Self = StObject.set(x, "OnCustomCommand", js.undefined)
   }
 }

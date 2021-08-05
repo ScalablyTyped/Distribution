@@ -10,16 +10,13 @@ trait ShowLeafIcon extends StObject {
 }
 object ShowLeafIcon {
   
-  @scala.inline
-  def apply(showLeafIcon: Boolean): ShowLeafIcon = {
+  inline def apply(showLeafIcon: Boolean): ShowLeafIcon = {
     val __obj = js.Dynamic.literal(showLeafIcon = showLeafIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowLeafIcon]
   }
   
-  @scala.inline
-  implicit class ShowLeafIconMutableBuilder[Self <: ShowLeafIcon] (val x: Self) extends AnyVal {
+  extension [Self <: ShowLeafIcon](x: Self) {
     
-    @scala.inline
-    def setShowLeafIcon(value: Boolean): Self = StObject.set(x, "showLeafIcon", value.asInstanceOf[js.Any])
+    inline def setShowLeafIcon(value: Boolean): Self = StObject.set(x, "showLeafIcon", value.asInstanceOf[js.Any])
   }
 }

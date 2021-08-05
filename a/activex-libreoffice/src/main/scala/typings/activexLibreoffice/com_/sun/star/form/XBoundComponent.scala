@@ -27,8 +27,7 @@ trait XBoundComponent
 }
 object XBoundComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addUpdateListener: XUpdateListener => Unit,
     commit: () => Boolean,
@@ -40,10 +39,8 @@ object XBoundComponent {
     __obj.asInstanceOf[XBoundComponent]
   }
   
-  @scala.inline
-  implicit class XBoundComponentMutableBuilder[Self <: XBoundComponent] (val x: Self) extends AnyVal {
+  extension [Self <: XBoundComponent](x: Self) {
     
-    @scala.inline
-    def setCommit(value: () => Boolean): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
+    inline def setCommit(value: () => Boolean): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
   }
 }

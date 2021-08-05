@@ -17,22 +17,17 @@ trait OnCharacteristicReadRequestCallbackResult extends StObject {
 }
 object OnCharacteristicReadRequestCallbackResult {
   
-  @scala.inline
-  def apply(callbackId: Double, characteristicId: String, serviceId: String): OnCharacteristicReadRequestCallbackResult = {
+  inline def apply(callbackId: Double, characteristicId: String, serviceId: String): OnCharacteristicReadRequestCallbackResult = {
     val __obj = js.Dynamic.literal(callbackId = callbackId.asInstanceOf[js.Any], characteristicId = characteristicId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCharacteristicReadRequestCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnCharacteristicReadRequestCallbackResultMutableBuilder[Self <: OnCharacteristicReadRequestCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnCharacteristicReadRequestCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
+    inline def setCallbackId(value: Double): Self = StObject.set(x, "callbackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
   }
 }

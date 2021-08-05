@@ -15,19 +15,15 @@ trait CalendarTriggerBuilder extends StObject {
 }
 object CalendarTriggerBuilder {
   
-  @scala.inline
-  def apply(create: () => Trigger, onEventUpdated: () => CalendarTriggerBuilder): CalendarTriggerBuilder = {
+  inline def apply(create: () => Trigger, onEventUpdated: () => CalendarTriggerBuilder): CalendarTriggerBuilder = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), onEventUpdated = js.Any.fromFunction0(onEventUpdated))
     __obj.asInstanceOf[CalendarTriggerBuilder]
   }
   
-  @scala.inline
-  implicit class CalendarTriggerBuilderMutableBuilder[Self <: CalendarTriggerBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarTriggerBuilder](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnEventUpdated(value: () => CalendarTriggerBuilder): Self = StObject.set(x, "onEventUpdated", js.Any.fromFunction0(value))
+    inline def setOnEventUpdated(value: () => CalendarTriggerBuilder): Self = StObject.set(x, "onEventUpdated", js.Any.fromFunction0(value))
   }
 }

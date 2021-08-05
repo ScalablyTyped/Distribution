@@ -11,21 +11,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(string: String): WIFReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[WIFReturn]
-  @scala.inline
-  def decode(string: String, version: Double): WIFReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[WIFReturn]
+  inline def decode(string: String): WIFReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[WIFReturn]
+  inline def decode(string: String, version: Double): WIFReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[WIFReturn]
   
-  @scala.inline
-  def decodeRaw(buffer: Buffer): WIFReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeRaw")(buffer.asInstanceOf[js.Any]).asInstanceOf[WIFReturn]
-  @scala.inline
-  def decodeRaw(buffer: Buffer, version: Double): WIFReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeRaw")(buffer.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[WIFReturn]
+  inline def decodeRaw(buffer: Buffer): WIFReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeRaw")(buffer.asInstanceOf[js.Any]).asInstanceOf[WIFReturn]
+  inline def decodeRaw(buffer: Buffer, version: Double): WIFReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeRaw")(buffer.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[WIFReturn]
   
-  @scala.inline
-  def encode(version: Double, privateKey: Buffer, compressed: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(version.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(version: Double, privateKey: Buffer, compressed: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(version.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def encodeRaw(version: Double, privateKey: Buffer, compressed: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeRaw")(version.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def encodeRaw(version: Double, privateKey: Buffer, compressed: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeRaw")(version.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   trait WIFReturn extends StObject {
     
@@ -37,23 +31,18 @@ object mod {
   }
   object WIFReturn {
     
-    @scala.inline
-    def apply(compressed: Boolean, privateKey: Buffer, version: Double): WIFReturn = {
+    inline def apply(compressed: Boolean, privateKey: Buffer, version: Double): WIFReturn = {
       val __obj = js.Dynamic.literal(compressed = compressed.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[WIFReturn]
     }
     
-    @scala.inline
-    implicit class WIFReturnMutableBuilder[Self <: WIFReturn] (val x: Self) extends AnyVal {
+    extension [Self <: WIFReturn](x: Self) {
       
-      @scala.inline
-      def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
+      inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKey(value: Buffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Buffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLDataTransfer")
 @js.native
-class IHTMLDataTransfer protected ()
+/* private */ class IHTMLDataTransfer ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLDataTransfer {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLDataTransfer_typekey")
   var MSHTMLDotIHTMLDataTransfer_typekey: typings.activexMshtml.MSHTML.IHTMLDataTransfer = js.native
   

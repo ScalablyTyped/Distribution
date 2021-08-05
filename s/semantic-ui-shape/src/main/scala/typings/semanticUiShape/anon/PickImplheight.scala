@@ -13,16 +13,13 @@ trait PickImplheight extends StObject {
 }
 object PickImplheight {
   
-  @scala.inline
-  def apply(height: next | initial | Double): PickImplheight = {
+  inline def apply(height: next | initial | Double): PickImplheight = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplheight]
   }
   
-  @scala.inline
-  implicit class PickImplheightMutableBuilder[Self <: PickImplheight] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplheight](x: Self) {
     
-    @scala.inline
-    def setHeight(value: next | initial | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: next | initial | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

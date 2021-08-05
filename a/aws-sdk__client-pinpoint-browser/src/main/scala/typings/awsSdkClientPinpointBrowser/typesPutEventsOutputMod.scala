@@ -26,20 +26,16 @@ object typesPutEventsOutputMod {
   }
   object PutEventsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, EventsResponse: UnmarshalledEventsResponse): PutEventsOutput = {
+    inline def apply($metadata: ResponseMetadata, EventsResponse: UnmarshalledEventsResponse): PutEventsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EventsResponse = EventsResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutEventsOutput]
     }
     
-    @scala.inline
-    implicit class PutEventsOutputMutableBuilder[Self <: PutEventsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutEventsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsResponse(value: UnmarshalledEventsResponse): Self = StObject.set(x, "EventsResponse", value.asInstanceOf[js.Any])
+      inline def setEventsResponse(value: UnmarshalledEventsResponse): Self = StObject.set(x, "EventsResponse", value.asInstanceOf[js.Any])
     }
   }
 }

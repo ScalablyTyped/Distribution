@@ -21,31 +21,23 @@ trait DocumentationRule extends StObject {
 }
 object DocumentationRule {
   
-  @scala.inline
-  def apply(): DocumentationRule = {
+  inline def apply(): DocumentationRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentationRule]
   }
   
-  @scala.inline
-  implicit class DocumentationRuleMutableBuilder[Self <: DocumentationRule] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentationRule](x: Self) {
     
-    @scala.inline
-    def setDeprecationDescription(value: String): Self = StObject.set(x, "deprecationDescription", value.asInstanceOf[js.Any])
+    inline def setDeprecationDescription(value: String): Self = StObject.set(x, "deprecationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecationDescriptionUndefined: Self = StObject.set(x, "deprecationDescription", js.undefined)
+    inline def setDeprecationDescriptionUndefined: Self = StObject.set(x, "deprecationDescription", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

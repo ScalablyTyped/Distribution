@@ -14,7 +14,7 @@ class SyntaxNodeInvariantsChecker ()
   extends StObject
      with typings.typescriptServices.TypeScript.SyntaxNodeInvariantsChecker {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var tokenTable: js.Any = js.native
   
   /* CompleteClass */
@@ -203,8 +203,8 @@ class SyntaxNodeInvariantsChecker ()
   /* CompleteClass */
   override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
   
-  /* CompleteClass */
-  /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def visitOptionalToken(token: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def visitParameter(node: typings.typescriptServices.TypeScript.ParameterSyntax): js.Any = js.native
@@ -303,6 +303,5 @@ object SyntaxNodeInvariantsChecker {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def checkInvariants(node: typings.typescriptServices.TypeScript.SyntaxNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkInvariants")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkInvariants(node: typings.typescriptServices.TypeScript.SyntaxNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkInvariants")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

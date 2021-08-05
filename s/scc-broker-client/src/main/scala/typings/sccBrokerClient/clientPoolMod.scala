@@ -32,29 +32,22 @@ object clientPoolMod {
   }
   object BrokenDownURI {
     
-    @scala.inline
-    def apply(hostname: String): BrokenDownURI = {
+    inline def apply(hostname: String): BrokenDownURI = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrokenDownURI]
     }
     
-    @scala.inline
-    implicit class BrokenDownURIMutableBuilder[Self <: BrokenDownURI] (val x: Self) extends AnyVal {
+    extension [Self <: BrokenDownURI](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSecure(value: `true`): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: `true`): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     }
   }
   
@@ -126,29 +119,22 @@ object clientPoolMod {
   }
   object ClientPoolOptions {
     
-    @scala.inline
-    def apply(targetURI: String): ClientPoolOptions = {
+    inline def apply(targetURI: String): ClientPoolOptions = {
       val __obj = js.Dynamic.literal(targetURI = targetURI.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientPoolOptions]
     }
     
-    @scala.inline
-    implicit class ClientPoolOptionsMutableBuilder[Self <: ClientPoolOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientPoolOptions](x: Self) {
       
-      @scala.inline
-      def setAuthKey(value: Secret): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
+      inline def setAuthKey(value: Secret): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
+      inline def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
       
-      @scala.inline
-      def setClientCount(value: Double): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
+      inline def setClientCount(value: Double): Self = StObject.set(x, "clientCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientCountUndefined: Self = StObject.set(x, "clientCount", js.undefined)
+      inline def setClientCountUndefined: Self = StObject.set(x, "clientCount", js.undefined)
       
-      @scala.inline
-      def setTargetURI(value: String): Self = StObject.set(x, "targetURI", value.asInstanceOf[js.Any])
+      inline def setTargetURI(value: String): Self = StObject.set(x, "targetURI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,26 +150,20 @@ object clientPoolMod {
   }
   object PublishData {
     
-    @scala.inline
-    def apply(channel: String, data: js.Any, poolIndex: Double, targetURI: String): PublishData = {
+    inline def apply(channel: String, data: js.Any, poolIndex: Double, targetURI: String): PublishData = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], poolIndex = poolIndex.asInstanceOf[js.Any], targetURI = targetURI.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishData]
     }
     
-    @scala.inline
-    implicit class PublishDataMutableBuilder[Self <: PublishData] (val x: Self) extends AnyVal {
+    extension [Self <: PublishData](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolIndex(value: Double): Self = StObject.set(x, "poolIndex", value.asInstanceOf[js.Any])
+      inline def setPoolIndex(value: Double): Self = StObject.set(x, "poolIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetURI(value: String): Self = StObject.set(x, "targetURI", value.asInstanceOf[js.Any])
+      inline def setTargetURI(value: String): Self = StObject.set(x, "targetURI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,26 +179,20 @@ object clientPoolMod {
   }
   object PublishFailData {
     
-    @scala.inline
-    def apply(channel: String, error: typings.std.Error, poolIndex: Double, targetURI: String): PublishFailData = {
+    inline def apply(channel: String, error: typings.std.Error, poolIndex: Double, targetURI: String): PublishFailData = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], poolIndex = poolIndex.asInstanceOf[js.Any], targetURI = targetURI.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishFailData]
     }
     
-    @scala.inline
-    implicit class PublishFailDataMutableBuilder[Self <: PublishFailData] (val x: Self) extends AnyVal {
+    extension [Self <: PublishFailData](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolIndex(value: Double): Self = StObject.set(x, "poolIndex", value.asInstanceOf[js.Any])
+      inline def setPoolIndex(value: Double): Self = StObject.set(x, "poolIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetURI(value: String): Self = StObject.set(x, "targetURI", value.asInstanceOf[js.Any])
+      inline def setTargetURI(value: String): Self = StObject.set(x, "targetURI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,23 +206,18 @@ object clientPoolMod {
   }
   object SubscribeData {
     
-    @scala.inline
-    def apply(channel: String, poolIndex: Double, targetURI: String): SubscribeData = {
+    inline def apply(channel: String, poolIndex: Double, targetURI: String): SubscribeData = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], poolIndex = poolIndex.asInstanceOf[js.Any], targetURI = targetURI.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscribeData]
     }
     
-    @scala.inline
-    implicit class SubscribeDataMutableBuilder[Self <: SubscribeData] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeData](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolIndex(value: Double): Self = StObject.set(x, "poolIndex", value.asInstanceOf[js.Any])
+      inline def setPoolIndex(value: Double): Self = StObject.set(x, "poolIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetURI(value: String): Self = StObject.set(x, "targetURI", value.asInstanceOf[js.Any])
+      inline def setTargetURI(value: String): Self = StObject.set(x, "targetURI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,17 +229,14 @@ object clientPoolMod {
   }
   object SubscribeFailData {
     
-    @scala.inline
-    def apply(channel: String, error: typings.std.Error, poolIndex: Double, targetURI: String): SubscribeFailData = {
+    inline def apply(channel: String, error: typings.std.Error, poolIndex: Double, targetURI: String): SubscribeFailData = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], poolIndex = poolIndex.asInstanceOf[js.Any], targetURI = targetURI.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscribeFailData]
     }
     
-    @scala.inline
-    implicit class SubscribeFailDataMutableBuilder[Self <: SubscribeFailData] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeFailData](x: Self) {
       
-      @scala.inline
-      def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
 }

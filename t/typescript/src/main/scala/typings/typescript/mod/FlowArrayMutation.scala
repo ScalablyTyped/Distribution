@@ -15,19 +15,15 @@ trait FlowArrayMutation
 }
 object FlowArrayMutation {
   
-  @scala.inline
-  def apply(antecedent: FlowNode, flags: FlowFlags, node: CallExpression | BinaryExpression): FlowArrayMutation = {
+  inline def apply(antecedent: FlowNode, flags: FlowFlags, node: CallExpression | BinaryExpression): FlowArrayMutation = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowArrayMutation]
   }
   
-  @scala.inline
-  implicit class FlowArrayMutationMutableBuilder[Self <: FlowArrayMutation] (val x: Self) extends AnyVal {
+  extension [Self <: FlowArrayMutation](x: Self) {
     
-    @scala.inline
-    def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
+    inline def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: CallExpression | BinaryExpression): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: CallExpression | BinaryExpression): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

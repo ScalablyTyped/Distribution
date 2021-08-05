@@ -15,7 +15,7 @@ object blockScopeAwareRuleWalkerMod {
   abstract class BlockScopeAwareRuleWalker[T, U] protected () extends ScopeAwareRuleWalker[T] {
     def this(sourceFile: SourceFile, options: IOptions) = this()
     
-    val blockScopeStack: js.Any = js.native
+    /* private */ val blockScopeStack: js.Any = js.native
     
     def createBlockScope(node: Node): U = js.native
     
@@ -27,7 +27,7 @@ object blockScopeAwareRuleWalkerMod {
     
     def getCurrentBlockScope(): U = js.native
     
-    var isBlockScopeBoundary: js.Any = js.native
+    /* private */ var isBlockScopeBoundary: js.Any = js.native
     
     def onBlockScopeEnd(): Unit = js.native
     

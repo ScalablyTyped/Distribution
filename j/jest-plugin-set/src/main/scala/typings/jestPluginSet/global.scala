@@ -6,6 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def set(name: String, block: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("set")(name.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(name: String, block: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("set")(name.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

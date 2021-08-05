@@ -26,8 +26,7 @@ object typesUpdateApnsVoipSandboxChannelOutputMod {
   }
   object UpdateApnsVoipSandboxChannelOutput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $metadata: ResponseMetadata,
       APNSVoipSandboxChannelResponse: UnmarshalledAPNSVoipSandboxChannelResponse
     ): UpdateApnsVoipSandboxChannelOutput = {
@@ -35,14 +34,11 @@ object typesUpdateApnsVoipSandboxChannelOutputMod {
       __obj.asInstanceOf[UpdateApnsVoipSandboxChannelOutput]
     }
     
-    @scala.inline
-    implicit class UpdateApnsVoipSandboxChannelOutputMutableBuilder[Self <: UpdateApnsVoipSandboxChannelOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateApnsVoipSandboxChannelOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPNSVoipSandboxChannelResponse(value: UnmarshalledAPNSVoipSandboxChannelResponse): Self = StObject.set(x, "APNSVoipSandboxChannelResponse", value.asInstanceOf[js.Any])
+      inline def setAPNSVoipSandboxChannelResponse(value: UnmarshalledAPNSVoipSandboxChannelResponse): Self = StObject.set(x, "APNSVoipSandboxChannelResponse", value.asInstanceOf[js.Any])
     }
   }
 }

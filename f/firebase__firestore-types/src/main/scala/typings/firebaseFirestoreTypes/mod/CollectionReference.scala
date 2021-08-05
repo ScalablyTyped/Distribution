@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/firestore-types", "CollectionReference")
 @js.native
-class CollectionReference[T] protected () extends Query[T] {
+/* private */ class CollectionReference[T] () extends Query[T] {
   
   def add(data: T): js.Promise[DocumentReference[T]] = js.native
   

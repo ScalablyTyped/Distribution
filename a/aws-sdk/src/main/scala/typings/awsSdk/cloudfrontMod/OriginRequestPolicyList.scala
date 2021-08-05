@@ -28,34 +28,25 @@ trait OriginRequestPolicyList extends StObject {
 }
 object OriginRequestPolicyList {
   
-  @scala.inline
-  def apply(MaxItems: integer, Quantity: integer): OriginRequestPolicyList = {
+  inline def apply(MaxItems: integer, Quantity: integer): OriginRequestPolicyList = {
     val __obj = js.Dynamic.literal(MaxItems = MaxItems.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginRequestPolicyList]
   }
   
-  @scala.inline
-  implicit class OriginRequestPolicyListMutableBuilder[Self <: OriginRequestPolicyList] (val x: Self) extends AnyVal {
+  extension [Self <: OriginRequestPolicyList](x: Self) {
     
-    @scala.inline
-    def setItems(value: OriginRequestPolicySummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: OriginRequestPolicySummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "Items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: OriginRequestPolicySummary*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: OriginRequestPolicySummary*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxItems(value: integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio extends StObje
 }
 object GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudioMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio](x: Self) {
     
-    @scala.inline
-    def setAudioUri(value: String): Self = StObject.set(x, "audioUri", value.asInstanceOf[js.Any])
+    inline def setAudioUri(value: String): Self = StObject.set(x, "audioUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUriUndefined: Self = StObject.set(x, "audioUri", js.undefined)
+    inline def setAudioUriUndefined: Self = StObject.set(x, "audioUri", js.undefined)
   }
 }

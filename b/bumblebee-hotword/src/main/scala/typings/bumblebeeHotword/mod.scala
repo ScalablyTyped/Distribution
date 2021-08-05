@@ -75,17 +75,14 @@ object mod {
   }
   object VoiceEngine {
     
-    @scala.inline
-    def apply(processFrame: js.Any => Unit): VoiceEngine = {
+    inline def apply(processFrame: js.Any => Unit): VoiceEngine = {
       val __obj = js.Dynamic.literal(processFrame = js.Any.fromFunction1(processFrame))
       __obj.asInstanceOf[VoiceEngine]
     }
     
-    @scala.inline
-    implicit class VoiceEngineMutableBuilder[Self <: VoiceEngine] (val x: Self) extends AnyVal {
+    extension [Self <: VoiceEngine](x: Self) {
       
-      @scala.inline
-      def setProcessFrame(value: js.Any => Unit): Self = StObject.set(x, "processFrame", js.Any.fromFunction1(value))
+      inline def setProcessFrame(value: js.Any => Unit): Self = StObject.set(x, "processFrame", js.Any.fromFunction1(value))
     }
   }
   
@@ -104,8 +101,7 @@ object mod {
   }
   object VoiceProcessor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       start: (js.Array[VoiceEngine], Double, String, js.Function1[/* e */ Error, Unit], js.Function1[/* data */ js.Any, Unit], js.Function2[/* analyzer */ AnalyserNode, /* gainNode */ GainNode, Unit]) => Unit,
       stop: () => Unit
     ): VoiceProcessor = {
@@ -113,16 +109,13 @@ object mod {
       __obj.asInstanceOf[VoiceProcessor]
     }
     
-    @scala.inline
-    implicit class VoiceProcessorMutableBuilder[Self <: VoiceProcessor] (val x: Self) extends AnyVal {
+    extension [Self <: VoiceProcessor](x: Self) {
       
-      @scala.inline
-      def setStart(
+      inline def setStart(
         value: (js.Array[VoiceEngine], Double, String, js.Function1[/* e */ Error, Unit], js.Function1[/* data */ js.Any, Unit], js.Function2[/* analyzer */ AnalyserNode, /* gainNode */ GainNode, Unit]) => Unit
       ): Self = StObject.set(x, "start", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
 }

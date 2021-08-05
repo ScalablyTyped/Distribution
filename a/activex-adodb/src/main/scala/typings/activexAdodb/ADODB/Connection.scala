@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Connection extends StObject {
   
-  @JSName("ADODB.Connection_typekey")
+  /* private */ @JSName("ADODB.Connection_typekey")
   var ADODBDotConnection_typekey: Connection = js.native
   
   /** Sum of one or more of the values in the **XactAttributeEnum** enum */

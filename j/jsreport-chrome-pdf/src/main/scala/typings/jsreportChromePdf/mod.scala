@@ -28,10 +28,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
-  @scala.inline
-  def apply(options: PartialOptions): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
+  inline def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  inline def apply(options: PartialOptions): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
   @JSImport("jsreport-chrome-pdf", JSImport.Namespace)
   @js.native
@@ -94,8 +92,7 @@ object mod {
   }
   object Chrome {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       displayHeaderFooter: Boolean,
       footerTemplate: String,
       format: String,
@@ -125,80 +122,55 @@ object mod {
       __obj.asInstanceOf[Chrome]
     }
     
-    @scala.inline
-    implicit class ChromeMutableBuilder[Self <: Chrome] (val x: Self) extends AnyVal {
+    extension [Self <: Chrome](x: Self) {
       
-      @scala.inline
-      def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
+      inline def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterTemplate(value: String): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
+      inline def setFooterTemplate(value: String): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+      inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottom(value: String | Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: String | Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginLeft(value: String | Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: String | Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginRight(value: String | Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: String | Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTop(value: String | Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: String | Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaType(value: screen | print): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: screen | print): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+      inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageRanges(value: String): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
+      inline def setPageRanges(value: String): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferCSSPageSize(value: Boolean): Self = StObject.set(x, "preferCSSPageSize", value.asInstanceOf[js.Any])
+      inline def setPreferCSSPageSize(value: Boolean): Self = StObject.set(x, "preferCSSPageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
+      inline def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForJS(value: Boolean): Self = StObject.set(x, "waitForJS", value.asInstanceOf[js.Any])
+      inline def setWaitForJS(value: Boolean): Self = StObject.set(x, "waitForJS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForNetworkIddle(value: Boolean): Self = StObject.set(x, "waitForNetworkIddle", value.asInstanceOf[js.Any])
+      inline def setWaitForNetworkIddle(value: Boolean): Self = StObject.set(x, "waitForNetworkIddle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,8 +195,7 @@ object mod {
   }
   object ChromeImage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clip: Height,
       encoding: base64 | binary,
       fullPage: Boolean,
@@ -238,29 +209,21 @@ object mod {
       __obj.asInstanceOf[ChromeImage]
     }
     
-    @scala.inline
-    implicit class ChromeImageMutableBuilder[Self <: ChromeImage] (val x: Self) extends AnyVal {
+    extension [Self <: ChromeImage](x: Self) {
       
-      @scala.inline
-      def setClip(value: Height): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      inline def setClip(value: Height): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: base64 | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: base64 | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullPage(value: Boolean): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
+      inline def setFullPage(value: Boolean): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitBackground(value: Boolean): Self = StObject.set(x, "omitBackground", value.asInstanceOf[js.Any])
+      inline def setOmitBackground(value: Boolean): Self = StObject.set(x, "omitBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: jpeg | png): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: jpeg | png): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -305,8 +268,7 @@ object mod {
   }
   object LaunchOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: js.Array[String],
       defaultViewport: Partialwidthstringheights,
       devtools: Boolean,
@@ -330,68 +292,47 @@ object mod {
       __obj.asInstanceOf[LaunchOptions]
     }
     
-    @scala.inline
-    implicit class LaunchOptionsMutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LaunchOptions](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultViewport(value: Partialwidthstringheights): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
+      inline def setDefaultViewport(value: Partialwidthstringheights): Self = StObject.set(x, "defaultViewport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
+      inline def setDevtools(value: Boolean): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDumpio(value: Boolean): Self = StObject.set(x, "dumpio", value.asInstanceOf[js.Any])
+      inline def setDumpio(value: Boolean): Self = StObject.set(x, "dumpio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
+      inline def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraPrefsFirefox(value: StringDictionary[js.Any]): Self = StObject.set(x, "extraPrefsFirefox", value.asInstanceOf[js.Any])
+      inline def setExtraPrefsFirefox(value: StringDictionary[js.Any]): Self = StObject.set(x, "extraPrefsFirefox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleSIGHUP(value: Boolean): Self = StObject.set(x, "handleSIGHUP", value.asInstanceOf[js.Any])
+      inline def setHandleSIGHUP(value: Boolean): Self = StObject.set(x, "handleSIGHUP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleSIGINT(value: Boolean): Self = StObject.set(x, "handleSIGINT", value.asInstanceOf[js.Any])
+      inline def setHandleSIGINT(value: Boolean): Self = StObject.set(x, "handleSIGINT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleSIGTERM(value: Boolean): Self = StObject.set(x, "handleSIGTERM", value.asInstanceOf[js.Any])
+      inline def setHandleSIGTERM(value: Boolean): Self = StObject.set(x, "handleSIGTERM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
+      inline def setHeadless(value: Boolean): Self = StObject.set(x, "headless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDefaultArgs(value: Boolean | js.Array[String]): Self = StObject.set(x, "ignoreDefaultArgs", value.asInstanceOf[js.Any])
+      inline def setIgnoreDefaultArgs(value: Boolean | js.Array[String]): Self = StObject.set(x, "ignoreDefaultArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value :_*))
+      inline def setIgnoreDefaultArgsVarargs(value: String*): Self = StObject.set(x, "ignoreDefaultArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
+      inline def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipe(value: Boolean): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
+      inline def setPipe(value: Boolean): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduct(value: chrome | firefox): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: chrome | firefox): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlowMo(value: Double): Self = StObject.set(x, "slowMo", value.asInstanceOf[js.Any])
+      inline def setSlowMo(value: Double): Self = StObject.set(x, "slowMo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDataDir(value: String): Self = StObject.set(x, "userDataDir", value.asInstanceOf[js.Any])
+      inline def setUserDataDir(value: String): Self = StObject.set(x, "userDataDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -418,8 +359,7 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowLocalFilesAccess: Boolean,
       allowedModules: js.Array[String],
       host: String,
@@ -434,38 +374,27 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowLocalFilesAccess(value: Boolean): Self = StObject.set(x, "allowLocalFilesAccess", value.asInstanceOf[js.Any])
+      inline def setAllowLocalFilesAccess(value: Boolean): Self = StObject.set(x, "allowLocalFilesAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedModules(value: js.Array[String]): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
+      inline def setAllowedModules(value: js.Array[String]): Self = StObject.set(x, "allowedModules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
+      inline def setAllowedModulesVarargs(value: String*): Self = StObject.set(x, "allowedModules", js.Array(value :_*))
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchOptions(value: PartialLaunchOptions): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
+      inline def setLaunchOptions(value: PartialLaunchOptions): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfWorkers(value: Double): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
+      inline def setNumberOfWorkers(value: Double): Self = StObject.set(x, "numberOfWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortLeftBoundary(value: Double): Self = StObject.set(x, "portLeftBoundary", value.asInstanceOf[js.Any])
+      inline def setPortLeftBoundary(value: Double): Self = StObject.set(x, "portLeftBoundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortRightBoundary(value: Double): Self = StObject.set(x, "portRightBoundary", value.asInstanceOf[js.Any])
+      inline def setPortRightBoundary(value: Double): Self = StObject.set(x, "portRightBoundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategy(value: `dedicated-process` | `http-server` | `in-process`): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: `dedicated-process` | `http-server` | `in-process`): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -482,29 +411,22 @@ object mod {
     }
     object Template {
       
-      @scala.inline
-      def apply(recipe: `chrome-pdf` | `chrome-image` | String): Template = {
+      inline def apply(recipe: `chrome-pdf` | `chrome-image` | String): Template = {
         val __obj = js.Dynamic.literal(recipe = recipe.asInstanceOf[js.Any])
         __obj.asInstanceOf[Template]
       }
       
-      @scala.inline
-      implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+      extension [Self <: Template](x: Self) {
         
-        @scala.inline
-        def setChrome(value: PartialChrome): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+        inline def setChrome(value: PartialChrome): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChromeImage(value: PartialChromeImage): Self = StObject.set(x, "chromeImage", value.asInstanceOf[js.Any])
+        inline def setChromeImage(value: PartialChromeImage): Self = StObject.set(x, "chromeImage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChromeImageUndefined: Self = StObject.set(x, "chromeImage", js.undefined)
+        inline def setChromeImageUndefined: Self = StObject.set(x, "chromeImage", js.undefined)
         
-        @scala.inline
-        def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
+        inline def setChromeUndefined: Self = StObject.set(x, "chrome", js.undefined)
         
-        @scala.inline
-        def setRecipe(value: `chrome-pdf` | `chrome-image` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
+        inline def setRecipe(value: `chrome-pdf` | `chrome-image` | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
       }
     }
   }

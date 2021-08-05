@@ -38,8 +38,7 @@ trait PutSubscriptionFilterRequest extends StObject {
 }
 object PutSubscriptionFilterRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destinationArn: DestinationArn,
     filterName: FilterName,
     filterPattern: FilterPattern,
@@ -49,31 +48,22 @@ object PutSubscriptionFilterRequest {
     __obj.asInstanceOf[PutSubscriptionFilterRequest]
   }
   
-  @scala.inline
-  implicit class PutSubscriptionFilterRequestMutableBuilder[Self <: PutSubscriptionFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutSubscriptionFilterRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationArn(value: DestinationArn): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+    inline def setDestinationArn(value: DestinationArn): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
+    inline def setDistribution(value: Distribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
+    inline def setDistributionUndefined: Self = StObject.set(x, "distribution", js.undefined)
     
-    @scala.inline
-    def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: FilterName): Self = StObject.set(x, "filterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
+    inline def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

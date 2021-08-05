@@ -28,37 +28,27 @@ trait TimecodeConfig extends StObject {
 }
 object TimecodeConfig {
   
-  @scala.inline
-  def apply(): TimecodeConfig = {
+  inline def apply(): TimecodeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimecodeConfig]
   }
   
-  @scala.inline
-  implicit class TimecodeConfigMutableBuilder[Self <: TimecodeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TimecodeConfig](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: stringPattern010920405090509092): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: stringPattern010920405090509092): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "Anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "Anchor", js.undefined)
     
-    @scala.inline
-    def setSource(value: TimecodeSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: TimecodeSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    @scala.inline
-    def setStart(value: stringPattern010920405090509092): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: stringPattern010920405090509092): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
     
-    @scala.inline
-    def setTimestampOffset(value: stringPattern0940191020191209301): Self = StObject.set(x, "TimestampOffset", value.asInstanceOf[js.Any])
+    inline def setTimestampOffset(value: stringPattern0940191020191209301): Self = StObject.set(x, "TimestampOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampOffsetUndefined: Self = StObject.set(x, "TimestampOffset", js.undefined)
+    inline def setTimestampOffsetUndefined: Self = StObject.set(x, "TimestampOffset", js.undefined)
   }
 }

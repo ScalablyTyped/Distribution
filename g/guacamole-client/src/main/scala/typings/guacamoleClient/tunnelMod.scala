@@ -127,26 +127,20 @@ object tunnelMod {
     }
     object TunnelState {
       
-      @scala.inline
-      def apply(): TunnelState = {
+      inline def apply(): TunnelState = {
         val __obj = js.Dynamic.literal(CLOSED = 2, CONNECTING = 0, OPEN = 1, UNSTABLE = 3)
         __obj.asInstanceOf[TunnelState]
       }
       
-      @scala.inline
-      implicit class TunnelStateMutableBuilder[Self <: TunnelState] (val x: Self) extends AnyVal {
+      extension [Self <: TunnelState](x: Self) {
         
-        @scala.inline
-        def setCLOSED(value: `2`): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
+        inline def setCLOSED(value: `2`): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCONNECTING(value: `0`): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
+        inline def setCONNECTING(value: `0`): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOPEN(value: `1`): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
+        inline def setOPEN(value: `1`): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUNSTABLE(value: `3`): Self = StObject.set(x, "UNSTABLE", value.asInstanceOf[js.Any])
+        inline def setUNSTABLE(value: `3`): Self = StObject.set(x, "UNSTABLE", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -11,125 +11,107 @@ object imageTypeStrings {
   sealed trait bmp
     extends StObject
        with ImageType
-  @scala.inline
-  def bmp: bmp = "bmp".asInstanceOf[bmp]
+  inline def bmp: bmp = "bmp".asInstanceOf[bmp]
   
   @js.native
   sealed trait bpg
     extends StObject
        with ImageType
-  @scala.inline
-  def bpg: bpg = "bpg".asInstanceOf[bpg]
+  inline def bpg: bpg = "bpg".asInstanceOf[bpg]
   
   @js.native
   sealed trait cr2
     extends StObject
        with ImageType
-  @scala.inline
-  def cr2: cr2 = "cr2".asInstanceOf[cr2]
+  inline def cr2: cr2 = "cr2".asInstanceOf[cr2]
   
   @js.native
   sealed trait cur
     extends StObject
        with ImageType
-  @scala.inline
-  def cur: cur = "cur".asInstanceOf[cur]
+  inline def cur: cur = "cur".asInstanceOf[cur]
   
   @js.native
   sealed trait dcm
     extends StObject
        with ImageType
-  @scala.inline
-  def dcm: dcm = "dcm".asInstanceOf[dcm]
+  inline def dcm: dcm = "dcm".asInstanceOf[dcm]
   
   @js.native
   sealed trait flif
     extends StObject
        with ImageType
-  @scala.inline
-  def flif: flif = "flif".asInstanceOf[flif]
+  inline def flif: flif = "flif".asInstanceOf[flif]
   
   @js.native
   sealed trait gif
     extends StObject
        with ImageType
-  @scala.inline
-  def gif: gif = "gif".asInstanceOf[gif]
+  inline def gif: gif = "gif".asInstanceOf[gif]
   
   @js.native
   sealed trait heic
     extends StObject
        with ImageType
-  @scala.inline
-  def heic: heic = "heic".asInstanceOf[heic]
+  inline def heic: heic = "heic".asInstanceOf[heic]
   
   @js.native
   sealed trait ico
     extends StObject
        with ImageType
-  @scala.inline
-  def ico: ico = "ico".asInstanceOf[ico]
+  inline def ico: ico = "ico".asInstanceOf[ico]
   
   @js.native
   sealed trait jp2
     extends StObject
        with ImageType
-  @scala.inline
-  def jp2: jp2 = "jp2".asInstanceOf[jp2]
+  inline def jp2: jp2 = "jp2".asInstanceOf[jp2]
   
   @js.native
   sealed trait jpg
     extends StObject
        with ImageType
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  inline def jpg: jpg = "jpg".asInstanceOf[jpg]
   
   @js.native
   sealed trait jpm
     extends StObject
        with ImageType
-  @scala.inline
-  def jpm: jpm = "jpm".asInstanceOf[jpm]
+  inline def jpm: jpm = "jpm".asInstanceOf[jpm]
   
   @js.native
   sealed trait jpx
     extends StObject
        with ImageType
-  @scala.inline
-  def jpx: jpx = "jpx".asInstanceOf[jpx]
+  inline def jpx: jpx = "jpx".asInstanceOf[jpx]
   
   @js.native
   sealed trait jxr
     extends StObject
        with ImageType
-  @scala.inline
-  def jxr: jxr = "jxr".asInstanceOf[jxr]
+  inline def jxr: jxr = "jxr".asInstanceOf[jxr]
   
   @js.native
   sealed trait png
     extends StObject
        with ImageType
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
+  inline def png: png = "png".asInstanceOf[png]
   
   @js.native
   sealed trait psd
     extends StObject
        with ImageType
-  @scala.inline
-  def psd: psd = "psd".asInstanceOf[psd]
+  inline def psd: psd = "psd".asInstanceOf[psd]
   
   @js.native
   sealed trait tif
     extends StObject
        with ImageType
-  @scala.inline
-  def tif: tif = "tif".asInstanceOf[tif]
+  inline def tif: tif = "tif".asInstanceOf[tif]
   
   @js.native
   sealed trait webp
     extends StObject
        with ImageType
-  @scala.inline
-  def webp: webp = "webp".asInstanceOf[webp]
+  inline def webp: webp = "webp".asInstanceOf[webp]
 }

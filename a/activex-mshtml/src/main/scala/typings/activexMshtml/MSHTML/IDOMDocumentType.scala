@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IDOMDocumentType extends StObject {
   
-  @JSName("MSHTML.IDOMDocumentType_typekey")
+  /* private */ @JSName("MSHTML.IDOMDocumentType_typekey")
   var MSHTMLDotIDOMDocumentType_typekey: IDOMDocumentType
   
   val entities: js.Any
@@ -23,8 +23,7 @@ trait IDOMDocumentType extends StObject {
 }
 object IDOMDocumentType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIDOMDocumentType_typekey: IDOMDocumentType,
     entities: js.Any,
     internalSubset: js.Any,
@@ -38,28 +37,20 @@ object IDOMDocumentType {
     __obj.asInstanceOf[IDOMDocumentType]
   }
   
-  @scala.inline
-  implicit class IDOMDocumentTypeMutableBuilder[Self <: IDOMDocumentType] (val x: Self) extends AnyVal {
+  extension [Self <: IDOMDocumentType](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalSubset(value: js.Any): Self = StObject.set(x, "internalSubset", value.asInstanceOf[js.Any])
+    inline def setInternalSubset(value: js.Any): Self = StObject.set(x, "internalSubset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotIDOMDocumentType_typekey(value: IDOMDocumentType): Self = StObject.set(x, "MSHTML.IDOMDocumentType_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIDOMDocumentType_typekey(value: IDOMDocumentType): Self = StObject.set(x, "MSHTML.IDOMDocumentType_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotations(value: js.Any): Self = StObject.set(x, "notations", value.asInstanceOf[js.Any])
+    inline def setNotations(value: js.Any): Self = StObject.set(x, "notations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicId(value: js.Any): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: js.Any): Self = StObject.set(x, "publicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemId(value: js.Any): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: js.Any): Self = StObject.set(x, "systemId", value.asInstanceOf[js.Any])
   }
 }

@@ -38,8 +38,7 @@ trait ASPxClientHtmlEditorInsertImageCommandArguments
 }
 object ASPxClientHtmlEditorInsertImageCommandArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     align: String,
     alt: String,
     selectedElement: js.Any,
@@ -51,22 +50,16 @@ object ASPxClientHtmlEditorInsertImageCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertImageCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorInsertImageCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorInsertImageCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorInsertImageCommandArguments](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
+    inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseFloat(value: Boolean): Self = StObject.set(x, "useFloat", value.asInstanceOf[js.Any])
+    inline def setUseFloat(value: Boolean): Self = StObject.set(x, "useFloat", value.asInstanceOf[js.Any])
   }
 }

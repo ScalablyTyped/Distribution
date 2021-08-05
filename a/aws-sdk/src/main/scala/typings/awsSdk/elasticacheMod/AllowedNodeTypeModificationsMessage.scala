@@ -18,31 +18,23 @@ trait AllowedNodeTypeModificationsMessage extends StObject {
 }
 object AllowedNodeTypeModificationsMessage {
   
-  @scala.inline
-  def apply(): AllowedNodeTypeModificationsMessage = {
+  inline def apply(): AllowedNodeTypeModificationsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowedNodeTypeModificationsMessage]
   }
   
-  @scala.inline
-  implicit class AllowedNodeTypeModificationsMessageMutableBuilder[Self <: AllowedNodeTypeModificationsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedNodeTypeModificationsMessage](x: Self) {
     
-    @scala.inline
-    def setScaleDownModifications(value: NodeTypeList): Self = StObject.set(x, "ScaleDownModifications", value.asInstanceOf[js.Any])
+    inline def setScaleDownModifications(value: NodeTypeList): Self = StObject.set(x, "ScaleDownModifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDownModificationsUndefined: Self = StObject.set(x, "ScaleDownModifications", js.undefined)
+    inline def setScaleDownModificationsUndefined: Self = StObject.set(x, "ScaleDownModifications", js.undefined)
     
-    @scala.inline
-    def setScaleDownModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleDownModifications", js.Array(value :_*))
+    inline def setScaleDownModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleDownModifications", js.Array(value :_*))
     
-    @scala.inline
-    def setScaleUpModifications(value: NodeTypeList): Self = StObject.set(x, "ScaleUpModifications", value.asInstanceOf[js.Any])
+    inline def setScaleUpModifications(value: NodeTypeList): Self = StObject.set(x, "ScaleUpModifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUpModificationsUndefined: Self = StObject.set(x, "ScaleUpModifications", js.undefined)
+    inline def setScaleUpModificationsUndefined: Self = StObject.set(x, "ScaleUpModifications", js.undefined)
     
-    @scala.inline
-    def setScaleUpModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleUpModifications", js.Array(value :_*))
+    inline def setScaleUpModificationsVarargs(value: String*): Self = StObject.set(x, "ScaleUpModifications", js.Array(value :_*))
   }
 }

@@ -90,8 +90,7 @@ object environmentMod {
   }
   object EnvironmentDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client: IClient,
       config: IConfig,
       ctx: IonicContext,
@@ -106,35 +105,25 @@ object environmentMod {
       __obj.asInstanceOf[EnvironmentDeps]
     }
     
-    @scala.inline
-    implicit class EnvironmentDepsMutableBuilder[Self <: EnvironmentDeps] (val x: Self) extends AnyVal {
+    extension [Self <: EnvironmentDeps](x: Self) {
       
-      @scala.inline
-      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtx(value: IonicContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: IonicContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: IonicEnvironmentFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: IonicEnvironmentFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetInfo(value: () => js.Promise[js.Array[InfoItem]]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+      inline def setGetInfo(value: () => js.Promise[js.Array[InfoItem]]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     }
   }
 }

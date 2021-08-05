@@ -18,6 +18,5 @@ object MapObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(currentObserver: IObserver, selector: js.Function): typings.wonderFrp.mapObserverMod.MapObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.mapObserverMod.MapObserver]
+  inline def create(currentObserver: IObserver, selector: js.Function): typings.wonderFrp.mapObserverMod.MapObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.mapObserverMod.MapObserver]
 }

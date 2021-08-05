@@ -10,16 +10,13 @@ trait IApplicationDataStatics extends StObject {
 }
 object IApplicationDataStatics {
   
-  @scala.inline
-  def apply(current: ApplicationData): IApplicationDataStatics = {
+  inline def apply(current: ApplicationData): IApplicationDataStatics = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
     __obj.asInstanceOf[IApplicationDataStatics]
   }
   
-  @scala.inline
-  implicit class IApplicationDataStaticsMutableBuilder[Self <: IApplicationDataStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IApplicationDataStatics](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: ApplicationData): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: ApplicationData): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }
 }

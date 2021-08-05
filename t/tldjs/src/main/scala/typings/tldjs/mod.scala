@@ -13,30 +13,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extractHostname(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHostname")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def extractHostname(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHostname")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def fromUserSettings(options: ExtractHostname): GetDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUserSettings")(options.asInstanceOf[js.Any]).asInstanceOf[GetDomain]
+  inline def fromUserSettings(options: ExtractHostname): GetDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUserSettings")(options.asInstanceOf[js.Any]).asInstanceOf[GetDomain]
   
-  @scala.inline
-  def getDomain(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getDomain(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def getPublicSuffix(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicSuffix")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getPublicSuffix(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicSuffix")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def getSubdomain(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubdomain")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getSubdomain(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubdomain")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @scala.inline
-  def isValid(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValidHostname(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHostname")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidHostname(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHostname")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parse(host: String): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(host.asInstanceOf[js.Any]).asInstanceOf[Domain]
+  inline def parse(host: String): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(host.asInstanceOf[js.Any]).asInstanceOf[Domain]
   
-  @scala.inline
-  def tldExists(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tldExists")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def tldExists(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tldExists")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

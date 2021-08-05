@@ -48,61 +48,43 @@ trait Thumbnails extends StObject {
 }
 object Thumbnails {
   
-  @scala.inline
-  def apply(): Thumbnails = {
+  inline def apply(): Thumbnails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Thumbnails]
   }
   
-  @scala.inline
-  implicit class ThumbnailsMutableBuilder[Self <: Thumbnails] (val x: Self) extends AnyVal {
+  extension [Self <: Thumbnails](x: Self) {
     
-    @scala.inline
-    def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "AspectRatio", value.asInstanceOf[js.Any])
+    inline def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "AspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatioUndefined: Self = StObject.set(x, "AspectRatio", js.undefined)
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "AspectRatio", js.undefined)
     
-    @scala.inline
-    def setFormat(value: JpgOrPng): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: JpgOrPng): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Digits): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Digits): Self = StObject.set(x, "Interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "Interval", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: DigitsOrAuto): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: DigitsOrAuto): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: DigitsOrAuto): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: DigitsOrAuto): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
     
-    @scala.inline
-    def setPaddingPolicy(value: PaddingPolicy): Self = StObject.set(x, "PaddingPolicy", value.asInstanceOf[js.Any])
+    inline def setPaddingPolicy(value: PaddingPolicy): Self = StObject.set(x, "PaddingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingPolicyUndefined: Self = StObject.set(x, "PaddingPolicy", js.undefined)
+    inline def setPaddingPolicyUndefined: Self = StObject.set(x, "PaddingPolicy", js.undefined)
     
-    @scala.inline
-    def setResolution(value: ThumbnailResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: ThumbnailResolution): Self = StObject.set(x, "Resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
+    inline def setResolutionUndefined: Self = StObject.set(x, "Resolution", js.undefined)
     
-    @scala.inline
-    def setSizingPolicy(value: SizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
+    inline def setSizingPolicy(value: SizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
+    inline def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
   }
 }

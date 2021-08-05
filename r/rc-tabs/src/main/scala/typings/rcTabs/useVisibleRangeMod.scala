@@ -14,8 +14,7 @@ object useVisibleRangeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     tabOffsets: TabOffsetMap,
     containerSize: Height,
     tabContentNodeSize: Width,

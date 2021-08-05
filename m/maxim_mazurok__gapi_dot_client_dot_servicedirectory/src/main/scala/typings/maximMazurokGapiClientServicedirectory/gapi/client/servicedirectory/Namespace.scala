@@ -22,29 +22,23 @@ trait Namespace extends StObject {
 }
 object Namespace {
   
-  @scala.inline
-  def apply(): Namespace = {
+  inline def apply(): Namespace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Namespace]
   }
   
-  @scala.inline
-  implicit class NamespaceMutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
+  extension [Self <: Namespace](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServicedirectory.maximMazurokGapiClientServicedirectoryStrings.Namespace & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

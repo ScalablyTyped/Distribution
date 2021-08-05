@@ -8,11 +8,9 @@ object reactPlayerStrings {
   
   @js.native
   sealed trait fraction extends StObject
-  @scala.inline
-  def fraction: fraction = "fraction".asInstanceOf[fraction]
+  inline def fraction: fraction = "fraction".asInstanceOf[fraction]
   
   @js.native
   sealed trait seconds extends StObject
-  @scala.inline
-  def seconds: seconds = "seconds".asInstanceOf[seconds]
+  inline def seconds: seconds = "seconds".asInstanceOf[seconds]
 }

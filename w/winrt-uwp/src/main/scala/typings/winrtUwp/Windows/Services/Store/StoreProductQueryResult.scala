@@ -17,19 +17,15 @@ trait StoreProductQueryResult extends StObject {
 }
 object StoreProductQueryResult {
   
-  @scala.inline
-  def apply(extendedError: WinRTError, products: IMapView[String, StoreProduct]): StoreProductQueryResult = {
+  inline def apply(extendedError: WinRTError, products: IMapView[String, StoreProduct]): StoreProductQueryResult = {
     val __obj = js.Dynamic.literal(extendedError = extendedError.asInstanceOf[js.Any], products = products.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreProductQueryResult]
   }
   
-  @scala.inline
-  implicit class StoreProductQueryResultMutableBuilder[Self <: StoreProductQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: StoreProductQueryResult](x: Self) {
     
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
+    inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducts(value: IMapView[String, StoreProduct]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: IMapView[String, StoreProduct]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
   }
 }

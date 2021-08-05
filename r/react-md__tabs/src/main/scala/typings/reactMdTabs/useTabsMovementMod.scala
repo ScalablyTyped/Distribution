@@ -20,8 +20,7 @@ object useTabsMovementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useTabsMovement(hasOnClickOnKeyDownChildrenAutomaticHorizontalActiveIndexOnActiveIndexChange: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabsMovement")(hasOnClickOnKeyDownChildrenAutomaticHorizontalActiveIndexOnActiveIndexChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def useTabsMovement(hasOnClickOnKeyDownChildrenAutomaticHorizontalActiveIndexOnActiveIndexChange: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabsMovement")(hasOnClickOnKeyDownChildrenAutomaticHorizontalActiveIndexOnActiveIndexChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   trait Options extends StObject {
     
@@ -41,44 +40,32 @@ object useTabsMovementMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(activeIndex: Double, automatic: Boolean, horizontal: Boolean, onActiveIndexChange: Double => Unit): Options = {
+    inline def apply(activeIndex: Double, automatic: Boolean, horizontal: Boolean, onActiveIndexChange: Double => Unit): Options = {
       val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], automatic = automatic.asInstanceOf[js.Any], horizontal = horizontal.asInstanceOf[js.Any], onActiveIndexChange = js.Any.fromFunction1(onActiveIndexChange))
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+      inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+      inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnActiveIndexChange(value: Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
+      inline def setOnActiveIndexChange(value: Double => Unit): Self = StObject.set(x, "onActiveIndexChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     }
   }
   
@@ -94,8 +81,7 @@ object useTabsMovementMod {
   }
   object ReturnValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handleClick: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit,
       handleKeyDown: KeyboardEvent[HTMLDivElement] => Unit,
       itemRefs: ItemRefList[HTMLElement],
@@ -105,26 +91,19 @@ object useTabsMovementMod {
       __obj.asInstanceOf[ReturnValue]
     }
     
-    @scala.inline
-    implicit class ReturnValueMutableBuilder[Self <: ReturnValue] (val x: Self) extends AnyVal {
+    extension [Self <: ReturnValue](x: Self) {
       
-      @scala.inline
-      def setHandleClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction1(value))
+      inline def setHandleClick(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "handleKeyDown", js.Any.fromFunction1(value))
+      inline def setHandleKeyDown(value: KeyboardEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "handleKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItemRefs(value: ItemRefList[HTMLElement]): Self = StObject.set(x, "itemRefs", value.asInstanceOf[js.Any])
+      inline def setItemRefs(value: ItemRefList[HTMLElement]): Self = StObject.set(x, "itemRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemRefsVarargs(value: ItemRef[HTMLElement]*): Self = StObject.set(x, "itemRefs", js.Array(value :_*))
+      inline def setItemRefsVarargs(value: ItemRef[HTMLElement]*): Self = StObject.set(x, "itemRefs", js.Array(value :_*))
       
-      @scala.inline
-      def setTabs(value: js.Array[ReactNode]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[ReactNode]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsVarargs(value: ReactNode*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: ReactNode*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     }
   }
 }

@@ -15,22 +15,17 @@ trait SVGOverlayProps
 }
 object SVGOverlayProps {
   
-  @scala.inline
-  def apply(redraw: SVGRedrawOptions => Unit): SVGOverlayProps = {
+  inline def apply(redraw: SVGRedrawOptions => Unit): SVGOverlayProps = {
     val __obj = js.Dynamic.literal(redraw = js.Any.fromFunction1(redraw))
     __obj.asInstanceOf[SVGOverlayProps]
   }
   
-  @scala.inline
-  implicit class SVGOverlayPropsMutableBuilder[Self <: SVGOverlayProps] (val x: Self) extends AnyVal {
+  extension [Self <: SVGOverlayProps](x: Self) {
     
-    @scala.inline
-    def setRedraw(value: SVGRedrawOptions => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
+    inline def setRedraw(value: SVGRedrawOptions => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

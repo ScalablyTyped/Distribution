@@ -102,47 +102,34 @@ object AMap {
     }
     object District {
       
-      @scala.inline
-      def apply(adcode: String, center: LngLat, citycode: String, level: Level, name: String): District = {
+      inline def apply(adcode: String, center: LngLat, citycode: String, level: Level, name: String): District = {
         val __obj = js.Dynamic.literal(adcode = adcode.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], citycode = citycode.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[District]
       }
       
-      @scala.inline
-      implicit class DistrictMutableBuilder[Self <: District] (val x: Self) extends AnyVal {
+      extension [Self <: District](x: Self) {
         
-        @scala.inline
-        def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+        inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundaries(value: js.Array[js.Array[LngLat]]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
+        inline def setBoundaries(value: js.Array[js.Array[LngLat]]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundariesUndefined: Self = StObject.set(x, "boundaries", js.undefined)
+        inline def setBoundariesUndefined: Self = StObject.set(x, "boundaries", js.undefined)
         
-        @scala.inline
-        def setBoundariesVarargs(value: js.Array[LngLat]*): Self = StObject.set(x, "boundaries", js.Array(value :_*))
+        inline def setBoundariesVarargs(value: js.Array[LngLat]*): Self = StObject.set(x, "boundaries", js.Array(value :_*))
         
-        @scala.inline
-        def setCenter(value: LngLat): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+        inline def setCenter(value: LngLat): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
+        inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
+        inline def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDistrictListUndefined: Self = StObject.set(x, "districtList", js.undefined)
+        inline def setDistrictListUndefined: Self = StObject.set(x, "districtList", js.undefined)
         
-        @scala.inline
-        def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
+        inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
         
-        @scala.inline
-        def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -157,20 +144,16 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(complete: Event_[complete, SearchResult], error: Event_[error, Info]): EventMap = {
+      inline def apply(complete: Event_[complete, SearchResult], error: Event_[error, Info]): EventMap = {
         val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+        inline def setComplete(value: Event_[complete, SearchResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Event_[error, Info]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       }
     }
     
@@ -184,20 +167,15 @@ object AMap {
     trait Level extends StObject
     object Level {
       
-      @scala.inline
-      def biz_area: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.biz_area = "biz_area".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.biz_area]
+      inline def biz_area: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.biz_area = "biz_area".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.biz_area]
       
-      @scala.inline
-      def city: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.city = "city".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.city]
+      inline def city: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.city = "city".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.city]
       
-      @scala.inline
-      def country: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.country = "country".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.country]
+      inline def country: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.country = "country".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.country]
       
-      @scala.inline
-      def district: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.district = "district".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.district]
+      inline def district: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.district = "district".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.district]
       
-      @scala.inline
-      def province: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.province = "province".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.province]
+      inline def province: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.province = "province".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.province]
     }
     
     trait Options extends StObject {
@@ -228,38 +206,28 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setExtensions(value: base | all): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+        inline def setExtensions(value: base | all): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+        inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
         
-        @scala.inline
-        def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+        inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+        inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
         
-        @scala.inline
-        def setShowbiz(value: Boolean): Self = StObject.set(x, "showbiz", value.asInstanceOf[js.Any])
+        inline def setShowbiz(value: Boolean): Self = StObject.set(x, "showbiz", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowbizUndefined: Self = StObject.set(x, "showbiz", js.undefined)
+        inline def setShowbizUndefined: Self = StObject.set(x, "showbiz", js.undefined)
         
-        @scala.inline
-        def setSubdistrict(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "subdistrict", value.asInstanceOf[js.Any])
+        inline def setSubdistrict(value: `0` | `1` | `2` | `3`): Self = StObject.set(x, "subdistrict", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubdistrictUndefined: Self = StObject.set(x, "subdistrict", js.undefined)
+        inline def setSubdistrictUndefined: Self = StObject.set(x, "subdistrict", js.undefined)
       }
     }
     
@@ -277,23 +245,18 @@ object AMap {
     }
     object SearchResult {
       
-      @scala.inline
-      def apply(districtList: js.Array[District], info: String): SearchResult = {
+      inline def apply(districtList: js.Array[District], info: String): SearchResult = {
         val __obj = js.Dynamic.literal(districtList = districtList.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
         __obj.asInstanceOf[SearchResult]
       }
       
-      @scala.inline
-      implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResult](x: Self) {
         
-        @scala.inline
-        def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
+        inline def setDistrictList(value: js.Array[District]): Self = StObject.set(x, "districtList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
+        inline def setDistrictListVarargs(value: District*): Self = StObject.set(x, "districtList", js.Array(value :_*))
         
-        @scala.inline
-        def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       }
     }
     
@@ -305,14 +268,11 @@ object AMap {
     trait SearchStatus extends StObject
     object SearchStatus {
       
-      @scala.inline
-      def complete: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.complete = "complete".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.complete]
+      inline def complete: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.complete = "complete".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.complete]
       
-      @scala.inline
-      def error: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.error = "error".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.error]
+      inline def error: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.error = "error".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.error]
       
-      @scala.inline
-      def no_data: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.no_data]
+      inline def no_data: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.no_data = "no_data".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.no_data]
     }
   }
 }

@@ -40,8 +40,7 @@ object mod {
     * Very useful for transferring indices between threads or storing them in a file.
     */
   /* static member */
-  @scala.inline
-  def from(data: ArrayBuffer): FlatbushClass = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[FlatbushClass]
+  inline def from(data: ArrayBuffer): FlatbushClass = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[FlatbushClass]
   
   type Flatbush = FlatbushClass
   

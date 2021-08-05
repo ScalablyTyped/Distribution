@@ -23,8 +23,7 @@ trait WalletBarcode extends StObject {
 }
 object WalletBarcode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getImageAsync: () => IPromiseWithIAsyncOperation[IRandomAccessStreamReference],
     symbology: WalletBarcodeSymbology,
     value: String
@@ -33,16 +32,12 @@ object WalletBarcode {
     __obj.asInstanceOf[WalletBarcode]
   }
   
-  @scala.inline
-  implicit class WalletBarcodeMutableBuilder[Self <: WalletBarcode] (val x: Self) extends AnyVal {
+  extension [Self <: WalletBarcode](x: Self) {
     
-    @scala.inline
-    def setGetImageAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamReference]): Self = StObject.set(x, "getImageAsync", js.Any.fromFunction0(value))
+    inline def setGetImageAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamReference]): Self = StObject.set(x, "getImageAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSymbology(value: WalletBarcodeSymbology): Self = StObject.set(x, "symbology", value.asInstanceOf[js.Any])
+    inline def setSymbology(value: WalletBarcodeSymbology): Self = StObject.set(x, "symbology", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait EnrichExecutePolicy
 }
 object EnrichExecutePolicy {
   
-  @scala.inline
-  def apply(name: String): EnrichExecutePolicy = {
+  inline def apply(name: String): EnrichExecutePolicy = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnrichExecutePolicy]
   }
   
-  @scala.inline
-  implicit class EnrichExecutePolicyMutableBuilder[Self <: EnrichExecutePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: EnrichExecutePolicy](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
+    inline def setWait_for_completion(value: Boolean): Self = StObject.set(x, "wait_for_completion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
+    inline def setWait_for_completionUndefined: Self = StObject.set(x, "wait_for_completion", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait InsightsServicePostResponseShareCount extends StObject {
 }
 object InsightsServicePostResponseShareCount {
   
-  @scala.inline
-  def apply(post: InsightsServicePostResponsePost, tray: InsightsServicePostResponseTray): InsightsServicePostResponseShareCount = {
+  inline def apply(post: InsightsServicePostResponsePost, tray: InsightsServicePostResponseTray): InsightsServicePostResponseShareCount = {
     val __obj = js.Dynamic.literal(post = post.asInstanceOf[js.Any], tray = tray.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsightsServicePostResponseShareCount]
   }
   
-  @scala.inline
-  implicit class InsightsServicePostResponseShareCountMutableBuilder[Self <: InsightsServicePostResponseShareCount] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServicePostResponseShareCount](x: Self) {
     
-    @scala.inline
-    def setPost(value: InsightsServicePostResponsePost): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: InsightsServicePostResponsePost): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTray(value: InsightsServicePostResponseTray): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
+    inline def setTray(value: InsightsServicePostResponseTray): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
   }
 }

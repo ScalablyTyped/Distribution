@@ -14,8 +14,7 @@ trait CanvasRect extends StObject {
 }
 object CanvasRect {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearRect: (Double, Double, Double, Double) => Unit,
     fillRect: (Double, Double, Double, Double) => Unit,
     strokeRect: (Double, Double, Double, Double) => Unit
@@ -24,16 +23,12 @@ object CanvasRect {
     __obj.asInstanceOf[CanvasRect]
   }
   
-  @scala.inline
-  implicit class CanvasRectMutableBuilder[Self <: CanvasRect] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasRect](x: Self) {
     
-    @scala.inline
-    def setClearRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "clearRect", js.Any.fromFunction4(value))
+    inline def setClearRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "clearRect", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFillRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "fillRect", js.Any.fromFunction4(value))
+    inline def setFillRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "fillRect", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStrokeRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "strokeRect", js.Any.fromFunction4(value))
+    inline def setStrokeRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "strokeRect", js.Any.fromFunction4(value))
   }
 }

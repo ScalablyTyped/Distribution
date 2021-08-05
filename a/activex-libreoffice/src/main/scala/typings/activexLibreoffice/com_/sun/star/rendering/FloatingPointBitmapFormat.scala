@@ -17,13 +17,10 @@ object FloatingPointBitmapFormat {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DOUBLE: `2` = 2.asInstanceOf[`2`]
+    inline def DOUBLE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def FLOAT: `1` = 1.asInstanceOf[`1`]
+    inline def FLOAT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def HALFFLOAT: `0` = 0.asInstanceOf[`0`]
+    inline def HALFFLOAT: `0` = 0.asInstanceOf[`0`]
   }
 }

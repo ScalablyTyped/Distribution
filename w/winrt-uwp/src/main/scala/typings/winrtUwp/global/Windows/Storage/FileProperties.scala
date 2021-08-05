@@ -51,8 +51,7 @@ object FileProperties {
       * @return An asynchronous operation that returns a Geopoint on successful completion.
       */
     /* static member */
-    @scala.inline
-    def getGeotagAsync(file: IStorageFile): IPromiseWithIAsyncOperation[Geopoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeotagAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Geopoint]]
+    inline def getGeotagAsync(file: IStorageFile): IPromiseWithIAsyncOperation[Geopoint] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGeotagAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Geopoint]]
     
     /**
       * Asynchronously sets the geographic metadata of a file from the provided Geopoint .
@@ -61,8 +60,7 @@ object FileProperties {
       * @return An asynchronous action.
       */
     /* static member */
-    @scala.inline
-    def setGeotagAsync(file: IStorageFile, geopoint: Geopoint): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setGeotagAsync")(file.asInstanceOf[js.Any], geopoint.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def setGeotagAsync(file: IStorageFile, geopoint: Geopoint): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setGeotagAsync")(file.asInstanceOf[js.Any], geopoint.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Asynchronously sets the geographic metadata of a file to the device's current location using the provided Geolocator object.
@@ -71,8 +69,7 @@ object FileProperties {
       * @return An asychronous action.
       */
     /* static member */
-    @scala.inline
-    def setGeotagFromGeolocatorAsync(file: IStorageFile, geolocator: Geolocator): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setGeotagFromGeolocatorAsync")(file.asInstanceOf[js.Any], geolocator.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def setGeotagFromGeolocatorAsync(file: IStorageFile, geolocator: Geolocator): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("setGeotagFromGeolocatorAsync")(file.asInstanceOf[js.Any], geolocator.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   }
   
   /** Provides access to the image-related properties of an item (like a file or folder). */

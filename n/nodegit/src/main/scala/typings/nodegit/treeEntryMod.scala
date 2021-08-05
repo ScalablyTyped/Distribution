@@ -77,23 +77,17 @@ object treeEntryMod {
     trait FILEMODE extends StObject
     object FILEMODE {
       
-      @scala.inline
-      def BLOB: `33188` = 33188.asInstanceOf[`33188`]
+      inline def BLOB: `33188` = 33188.asInstanceOf[`33188`]
       
-      @scala.inline
-      def COMMIT: `57344` = 57344.asInstanceOf[`57344`]
+      inline def COMMIT: `57344` = 57344.asInstanceOf[`57344`]
       
-      @scala.inline
-      def EXECUTABLE: `33261` = 33261.asInstanceOf[`33261`]
+      inline def EXECUTABLE: `33261` = 33261.asInstanceOf[`33261`]
       
-      @scala.inline
-      def LINK: `40960` = 40960.asInstanceOf[`40960`]
+      inline def LINK: `40960` = 40960.asInstanceOf[`40960`]
       
-      @scala.inline
-      def TREE: `16384` = 16384.asInstanceOf[`16384`]
+      inline def TREE: `16384` = 16384.asInstanceOf[`16384`]
       
-      @scala.inline
-      def UNREADABLE: `0` = 0.asInstanceOf[`0`]
+      inline def UNREADABLE: `0` = 0.asInstanceOf[`0`]
     }
   }
 }

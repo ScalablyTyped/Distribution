@@ -12,19 +12,15 @@ trait CollectionDiskUsage extends StObject {
 }
 object CollectionDiskUsage {
   
-  @scala.inline
-  def apply(): CollectionDiskUsage = {
+  inline def apply(): CollectionDiskUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionDiskUsage]
   }
   
-  @scala.inline
-  implicit class CollectionDiskUsageMutableBuilder[Self <: CollectionDiskUsage] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionDiskUsage](x: Self) {
     
-    @scala.inline
-    def setUsed_bytes(value: Double): Self = StObject.set(x, "used_bytes", value.asInstanceOf[js.Any])
+    inline def setUsed_bytes(value: Double): Self = StObject.set(x, "used_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsed_bytesUndefined: Self = StObject.set(x, "used_bytes", js.undefined)
+    inline def setUsed_bytesUndefined: Self = StObject.set(x, "used_bytes", js.undefined)
   }
 }

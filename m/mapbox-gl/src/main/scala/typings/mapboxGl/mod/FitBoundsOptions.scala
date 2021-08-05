@@ -16,31 +16,23 @@ trait FitBoundsOptions
 }
 object FitBoundsOptions {
   
-  @scala.inline
-  def apply(): FitBoundsOptions = {
+  inline def apply(): FitBoundsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FitBoundsOptions]
   }
   
-  @scala.inline
-  implicit class FitBoundsOptionsMutableBuilder[Self <: FitBoundsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FitBoundsOptions](x: Self) {
     
-    @scala.inline
-    def setLinear(value: Boolean): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
+    inline def setLinear(value: Boolean): Self = StObject.set(x, "linear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearUndefined: Self = StObject.set(x, "linear", js.undefined)
+    inline def setLinearUndefined: Self = StObject.set(x, "linear", js.undefined)
     
-    @scala.inline
-    def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double | PaddingOptions): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double | PaddingOptions): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

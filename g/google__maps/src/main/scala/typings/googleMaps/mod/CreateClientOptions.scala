@@ -32,58 +32,41 @@ trait CreateClientOptions extends StObject {
 }
 object CreateClientOptions {
   
-  @scala.inline
-  def apply(key: String): CreateClientOptions = {
+  inline def apply(key: String): CreateClientOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClientOptions]
   }
   
-  @scala.inline
-  implicit class CreateClientOptionsMutableBuilder[Self <: CreateClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClientOptions](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+    inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setRate(value: RateOptions): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: RateOptions): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
+    inline def setRateUndefined: Self = StObject.set(x, "rate", js.undefined)
     
-    @scala.inline
-    def setRetryOptions(value: RetryOptions): Self = StObject.set(x, "retryOptions", value.asInstanceOf[js.Any])
+    inline def setRetryOptions(value: RetryOptions): Self = StObject.set(x, "retryOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryOptionsUndefined: Self = StObject.set(x, "retryOptions", js.undefined)
+    inline def setRetryOptionsUndefined: Self = StObject.set(x, "retryOptions", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

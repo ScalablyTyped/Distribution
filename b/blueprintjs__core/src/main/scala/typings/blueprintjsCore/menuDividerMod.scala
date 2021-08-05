@@ -30,8 +30,7 @@ object menuDividerMod {
     @JSImport("@blueprintjs/core/lib/esm/components/menu/menuDivider", "MenuDivider.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IMenuDividerProps
@@ -46,20 +45,16 @@ object menuDividerMod {
   }
   object IMenuDividerProps {
     
-    @scala.inline
-    def apply(): IMenuDividerProps = {
+    inline def apply(): IMenuDividerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMenuDividerProps]
     }
     
-    @scala.inline
-    implicit class IMenuDividerPropsMutableBuilder[Self <: IMenuDividerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMenuDividerProps](x: Self) {
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

@@ -35,88 +35,53 @@ object mod {
   @JSImport("jsonld", "JsonLdProcessor")
   @js.native
   def JsonLdProcessor: typings.jsonld.jsonldSpecMod.JsonLdProcessor = js.native
-  @scala.inline
-  def JsonLdProcessor_=(x: JsonLdProcessor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JsonLdProcessor")(x.asInstanceOf[js.Any])
+  inline def JsonLdProcessor_=(x: JsonLdProcessor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JsonLdProcessor")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def compact(input: Document): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def compact(input: Document, ctx: Unit, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def compact(input: Document, ctx: Context): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def compact(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def compact(input: Document, ctx: Context, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def compact(input: Document, ctx: Context, options: Compact, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compact(input: Document): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def compact(input: Document, ctx: Unit, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def compact(input: Document, ctx: Context): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def compact(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def compact(input: Document, ctx: Context, options: Compact): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def compact(input: Document, ctx: Context, options: Compact, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compact")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def expand(input: Document): js.Promise[JsonLdArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdArray]]
-  @scala.inline
-  def expand(input: Document, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def expand(input: Document, options: Expand): js.Promise[JsonLdArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdArray]]
-  @scala.inline
-  def expand(input: Document, options: Expand, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expand(input: Document): js.Promise[JsonLdArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdArray]]
+  inline def expand(input: Document, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def expand(input: Document, options: Expand): js.Promise[JsonLdArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdArray]]
+  inline def expand(input: Document, options: Expand, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def flatten(input: Document): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def flatten(input: Document, ctx: Null, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def flatten(input: Document, ctx: Null, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def flatten(input: Document, ctx: Unit, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def flatten(input: Document, ctx: Context): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def flatten(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def flatten(input: Document, ctx: Context, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def flatten(input: Document, ctx: Context, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flatten(input: Document): js.Promise[JsonLdObj] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def flatten(input: Document, ctx: Null, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flatten(input: Document, ctx: Null, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flatten(input: Document, ctx: Unit, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def flatten(input: Document, ctx: Context): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def flatten(input: Document, ctx: Context, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def flatten(input: Document, ctx: Context, options: Flatten): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def flatten(input: Document, ctx: Context, options: Flatten, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def frame(input: Document, frame: Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def frame(input: Document, frame: Frame, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def frame(input: Document, frame: Frame, options: typings.jsonld.mod.Options.Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
-  @scala.inline
-  def frame(
+  inline def frame(input: Document, frame: Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def frame(input: Document, frame: Frame, callback: Callback[JsonLdObj]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def frame(input: Document, frame: Frame, options: typings.jsonld.mod.Options.Frame): js.Promise[JsonLdObj] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdObj]]
+  inline def frame(
     input: Document,
     frame: Frame,
     options: typings.jsonld.mod.Options.Frame,
     callback: Callback[JsonLdObj]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(input.asInstanceOf[js.Any], frame.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fromRDF(dataset: RdfDataSet): js.Promise[JsonLdArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdArray]]
-  @scala.inline
-  def fromRDF(dataset: RdfDataSet, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def fromRDF(dataset: RdfDataSet, options: FromRdf): js.Promise[JsonLdArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdArray]]
-  @scala.inline
-  def fromRDF(dataset: RdfDataSet, options: FromRdf, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromRDF(dataset: RdfDataSet): js.Promise[JsonLdArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JsonLdArray]]
+  inline def fromRDF(dataset: RdfDataSet, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fromRDF(dataset: RdfDataSet, options: FromRdf): js.Promise[JsonLdArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[JsonLdArray]]
+  inline def fromRDF(dataset: RdfDataSet, options: FromRdf, callback: Callback[JsonLdArray]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRDF")(dataset.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def normalize(input: Document): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def normalize(input: Document, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def normalize(input: Document, options: Normalize): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def normalize(input: Document, options: Normalize, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalize(input: Document): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def normalize(input: Document, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def normalize(input: Document, options: Normalize): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def normalize(input: Document, options: Normalize, callback: Callback[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toRDF(input: Document): js.Promise[RdfDataSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RdfDataSet]]
-  @scala.inline
-  def toRDF(input: Document, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def toRDF(input: Document, options: ToRdf): js.Promise[RdfDataSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RdfDataSet]]
-  @scala.inline
-  def toRDF(input: Document, options: ToRdf, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toRDF(input: Document): js.Promise[RdfDataSet] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RdfDataSet]]
+  inline def toRDF(input: Document, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toRDF(input: Document, options: ToRdf): js.Promise[RdfDataSet] = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RdfDataSet]]
+  inline def toRDF(input: Document, options: ToRdf, callback: Callback[RdfDataSet]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toRDF")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // Placeholder
   type Callback[T] = js.Function2[/* err */ Error, /* res */ T, Unit]
@@ -136,29 +101,22 @@ object mod {
     }
     object Common {
       
-      @scala.inline
-      def apply(): Common = {
+      inline def apply(): Common = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Common]
       }
       
-      @scala.inline
-      implicit class CommonMutableBuilder[Self <: Common] (val x: Self) extends AnyVal {
+      extension [Self <: Common](x: Self) {
         
-        @scala.inline
-        def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+        inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+        inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
         
-        @scala.inline
-        def setExpandContext(value: Context): Self = StObject.set(x, "expandContext", value.asInstanceOf[js.Any])
+        inline def setExpandContext(value: Context): Self = StObject.set(x, "expandContext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpandContextUndefined: Self = StObject.set(x, "expandContext", js.undefined)
+        inline def setExpandContextUndefined: Self = StObject.set(x, "expandContext", js.undefined)
         
-        @scala.inline
-        def setExpandContextVarargs(value: JsonLdObj*): Self = StObject.set(x, "expandContext", js.Array(value :_*))
+        inline def setExpandContextVarargs(value: JsonLdObj*): Self = StObject.set(x, "expandContext", js.Array(value :_*))
       }
     }
     
@@ -186,62 +144,44 @@ object mod {
     }
     object Compact {
       
-      @scala.inline
-      def apply(): Compact = {
+      inline def apply(): Compact = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Compact]
       }
       
-      @scala.inline
-      implicit class CompactMutableBuilder[Self <: Compact] (val x: Self) extends AnyVal {
+      extension [Self <: Compact](x: Self) {
         
-        @scala.inline
-        def setAppropriate(value: Boolean): Self = StObject.set(x, "appropriate", value.asInstanceOf[js.Any])
+        inline def setAppropriate(value: Boolean): Self = StObject.set(x, "appropriate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppropriateUndefined: Self = StObject.set(x, "appropriate", js.undefined)
+        inline def setAppropriateUndefined: Self = StObject.set(x, "appropriate", js.undefined)
         
-        @scala.inline
-        def setCompactArrays(value: Boolean): Self = StObject.set(x, "compactArrays", value.asInstanceOf[js.Any])
+        inline def setCompactArrays(value: Boolean): Self = StObject.set(x, "compactArrays", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompactArraysUndefined: Self = StObject.set(x, "compactArrays", js.undefined)
+        inline def setCompactArraysUndefined: Self = StObject.set(x, "compactArrays", js.undefined)
         
-        @scala.inline
-        def setCompactToRelative(value: Boolean): Self = StObject.set(x, "compactToRelative", value.asInstanceOf[js.Any])
+        inline def setCompactToRelative(value: Boolean): Self = StObject.set(x, "compactToRelative", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompactToRelativeUndefined: Self = StObject.set(x, "compactToRelative", js.undefined)
+        inline def setCompactToRelativeUndefined: Self = StObject.set(x, "compactToRelative", js.undefined)
         
-        @scala.inline
-        def setCompactionMap(value: /* info */ js.Any => Unit): Self = StObject.set(x, "compactionMap", js.Any.fromFunction1(value))
+        inline def setCompactionMap(value: /* info */ js.Any => Unit): Self = StObject.set(x, "compactionMap", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCompactionMapUndefined: Self = StObject.set(x, "compactionMap", js.undefined)
+        inline def setCompactionMapUndefined: Self = StObject.set(x, "compactionMap", js.undefined)
         
-        @scala.inline
-        def setExpansion(value: Boolean): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
+        inline def setExpansion(value: Boolean): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpansionUndefined: Self = StObject.set(x, "expansion", js.undefined)
+        inline def setExpansionUndefined: Self = StObject.set(x, "expansion", js.undefined)
         
-        @scala.inline
-        def setFraming(value: Boolean): Self = StObject.set(x, "framing", value.asInstanceOf[js.Any])
+        inline def setFraming(value: Boolean): Self = StObject.set(x, "framing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFramingUndefined: Self = StObject.set(x, "framing", js.undefined)
+        inline def setFramingUndefined: Self = StObject.set(x, "framing", js.undefined)
         
-        @scala.inline
-        def setGraph(value: Boolean): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+        inline def setGraph(value: Boolean): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+        inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
         
-        @scala.inline
-        def setSkipExpansion(value: Boolean): Self = StObject.set(x, "skipExpansion", value.asInstanceOf[js.Any])
+        inline def setSkipExpansion(value: Boolean): Self = StObject.set(x, "skipExpansion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkipExpansionUndefined: Self = StObject.set(x, "skipExpansion", js.undefined)
+        inline def setSkipExpansionUndefined: Self = StObject.set(x, "skipExpansion", js.undefined)
       }
     }
     
@@ -257,22 +197,18 @@ object mod {
     }
     object DocLoader {
       
-      @scala.inline
-      def apply(): DocLoader = {
+      inline def apply(): DocLoader = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DocLoader]
       }
       
-      @scala.inline
-      implicit class DocLoaderMutableBuilder[Self <: DocLoader] (val x: Self) extends AnyVal {
+      extension [Self <: DocLoader](x: Self) {
         
-        @scala.inline
-        def setDocumentLoader(
+        inline def setDocumentLoader(
           value: (/* url */ Url, /* callback */ js.Function2[/* err */ Error, /* remoteDoc */ RemoteDocument, Unit]) => js.Promise[RemoteDocument]
         ): Self = StObject.set(x, "documentLoader", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setDocumentLoaderUndefined: Self = StObject.set(x, "documentLoader", js.undefined)
+        inline def setDocumentLoaderUndefined: Self = StObject.set(x, "documentLoader", js.undefined)
       }
     }
     
@@ -283,20 +219,16 @@ object mod {
     }
     object ExpMap {
       
-      @scala.inline
-      def apply(): ExpMap = {
+      inline def apply(): ExpMap = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ExpMap]
       }
       
-      @scala.inline
-      implicit class ExpMapMutableBuilder[Self <: ExpMap] (val x: Self) extends AnyVal {
+      extension [Self <: ExpMap](x: Self) {
         
-        @scala.inline
-        def setExpansionMap(value: /* info */ js.Any => js.Any): Self = StObject.set(x, "expansionMap", js.Any.fromFunction1(value))
+        inline def setExpansionMap(value: /* info */ js.Any => js.Any): Self = StObject.set(x, "expansionMap", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setExpansionMapUndefined: Self = StObject.set(x, "expansionMap", js.undefined)
+        inline def setExpansionMapUndefined: Self = StObject.set(x, "expansionMap", js.undefined)
       }
     }
     
@@ -309,20 +241,16 @@ object mod {
     }
     object Expand {
       
-      @scala.inline
-      def apply(): Expand = {
+      inline def apply(): Expand = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Expand]
       }
       
-      @scala.inline
-      implicit class ExpandMutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
+      extension [Self <: Expand](x: Self) {
         
-        @scala.inline
-        def setKeepFreeFloatingNodes(value: Boolean): Self = StObject.set(x, "keepFreeFloatingNodes", value.asInstanceOf[js.Any])
+        inline def setKeepFreeFloatingNodes(value: Boolean): Self = StObject.set(x, "keepFreeFloatingNodes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeepFreeFloatingNodesUndefined: Self = StObject.set(x, "keepFreeFloatingNodes", js.undefined)
+        inline def setKeepFreeFloatingNodesUndefined: Self = StObject.set(x, "keepFreeFloatingNodes", js.undefined)
       }
     }
     
@@ -340,38 +268,28 @@ object mod {
     }
     object Frame {
       
-      @scala.inline
-      def apply(): typings.jsonld.mod.Options.Frame = {
+      inline def apply(): typings.jsonld.mod.Options.Frame = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jsonld.mod.Options.Frame]
       }
       
-      @scala.inline
-      implicit class FrameMutableBuilder[Self <: typings.jsonld.mod.Options.Frame] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jsonld.mod.Options.Frame](x: Self) {
         
-        @scala.inline
-        def setEmbed(value: `@last` | `@always` | `@never` | `@link`): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
+        inline def setEmbed(value: `@last` | `@always` | `@never` | `@link`): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
+        inline def setEmbedUndefined: Self = StObject.set(x, "embed", js.undefined)
         
-        @scala.inline
-        def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
+        inline def setExplicit(value: Boolean): Self = StObject.set(x, "explicit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExplicitUndefined: Self = StObject.set(x, "explicit", js.undefined)
+        inline def setExplicitUndefined: Self = StObject.set(x, "explicit", js.undefined)
         
-        @scala.inline
-        def setOmitDefault(value: Boolean): Self = StObject.set(x, "omitDefault", value.asInstanceOf[js.Any])
+        inline def setOmitDefault(value: Boolean): Self = StObject.set(x, "omitDefault", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOmitDefaultUndefined: Self = StObject.set(x, "omitDefault", js.undefined)
+        inline def setOmitDefaultUndefined: Self = StObject.set(x, "omitDefault", js.undefined)
         
-        @scala.inline
-        def setRequireAll(value: Boolean): Self = StObject.set(x, "requireAll", value.asInstanceOf[js.Any])
+        inline def setRequireAll(value: Boolean): Self = StObject.set(x, "requireAll", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequireAllUndefined: Self = StObject.set(x, "requireAll", js.undefined)
+        inline def setRequireAllUndefined: Self = StObject.set(x, "requireAll", js.undefined)
       }
     }
     
@@ -387,38 +305,28 @@ object mod {
     }
     object FromRdf {
       
-      @scala.inline
-      def apply(): FromRdf = {
+      inline def apply(): FromRdf = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FromRdf]
       }
       
-      @scala.inline
-      implicit class FromRdfMutableBuilder[Self <: FromRdf] (val x: Self) extends AnyVal {
+      extension [Self <: FromRdf](x: Self) {
         
-        @scala.inline
-        def setFormat(value: MimeNQuad): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: MimeNQuad): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+        inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
-        @scala.inline
-        def setRdfParser(value: js.Any): Self = StObject.set(x, "rdfParser", value.asInstanceOf[js.Any])
+        inline def setRdfParser(value: js.Any): Self = StObject.set(x, "rdfParser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRdfParserUndefined: Self = StObject.set(x, "rdfParser", js.undefined)
+        inline def setRdfParserUndefined: Self = StObject.set(x, "rdfParser", js.undefined)
         
-        @scala.inline
-        def setUseNativeTypes(value: Boolean): Self = StObject.set(x, "useNativeTypes", value.asInstanceOf[js.Any])
+        inline def setUseNativeTypes(value: Boolean): Self = StObject.set(x, "useNativeTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseNativeTypesUndefined: Self = StObject.set(x, "useNativeTypes", js.undefined)
+        inline def setUseNativeTypesUndefined: Self = StObject.set(x, "useNativeTypes", js.undefined)
         
-        @scala.inline
-        def setUseRdfType(value: Boolean): Self = StObject.set(x, "useRdfType", value.asInstanceOf[js.Any])
+        inline def setUseRdfType(value: Boolean): Self = StObject.set(x, "useRdfType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseRdfTypeUndefined: Self = StObject.set(x, "useRdfType", js.undefined)
+        inline def setUseRdfTypeUndefined: Self = StObject.set(x, "useRdfType", js.undefined)
       }
     }
     
@@ -440,50 +348,36 @@ object mod {
     }
     object Normalize {
       
-      @scala.inline
-      def apply(): Normalize = {
+      inline def apply(): Normalize = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Normalize]
       }
       
-      @scala.inline
-      implicit class NormalizeMutableBuilder[Self <: Normalize] (val x: Self) extends AnyVal {
+      extension [Self <: Normalize](x: Self) {
         
-        @scala.inline
-        def setAlgorithm(value: URDNA2015 | URGNA2012): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+        inline def setAlgorithm(value: URDNA2015 | URGNA2012): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+        inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
         
-        @scala.inline
-        def setExpansion(value: Boolean): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
+        inline def setExpansion(value: Boolean): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpansionUndefined: Self = StObject.set(x, "expansion", js.undefined)
+        inline def setExpansionUndefined: Self = StObject.set(x, "expansion", js.undefined)
         
-        @scala.inline
-        def setFormat(value: MimeNQuad): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: MimeNQuad): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+        inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
-        @scala.inline
-        def setInputFormat(value: MimeNQuad): Self = StObject.set(x, "inputFormat", value.asInstanceOf[js.Any])
+        inline def setInputFormat(value: MimeNQuad): Self = StObject.set(x, "inputFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputFormatUndefined: Self = StObject.set(x, "inputFormat", js.undefined)
+        inline def setInputFormatUndefined: Self = StObject.set(x, "inputFormat", js.undefined)
         
-        @scala.inline
-        def setSkipExpansion(value: Boolean): Self = StObject.set(x, "skipExpansion", value.asInstanceOf[js.Any])
+        inline def setSkipExpansion(value: Boolean): Self = StObject.set(x, "skipExpansion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkipExpansionUndefined: Self = StObject.set(x, "skipExpansion", js.undefined)
+        inline def setSkipExpansionUndefined: Self = StObject.set(x, "skipExpansion", js.undefined)
         
-        @scala.inline
-        def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
+        inline def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
+        inline def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
       }
     }
     
@@ -499,32 +393,24 @@ object mod {
     }
     object ToRdf {
       
-      @scala.inline
-      def apply(): ToRdf = {
+      inline def apply(): ToRdf = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ToRdf]
       }
       
-      @scala.inline
-      implicit class ToRdfMutableBuilder[Self <: ToRdf] (val x: Self) extends AnyVal {
+      extension [Self <: ToRdf](x: Self) {
         
-        @scala.inline
-        def setFormat(value: MimeNQuad): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: MimeNQuad): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+        inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
-        @scala.inline
-        def setProduceGeneralizedRdf(value: Boolean): Self = StObject.set(x, "produceGeneralizedRdf", value.asInstanceOf[js.Any])
+        inline def setProduceGeneralizedRdf(value: Boolean): Self = StObject.set(x, "produceGeneralizedRdf", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProduceGeneralizedRdfUndefined: Self = StObject.set(x, "produceGeneralizedRdf", js.undefined)
+        inline def setProduceGeneralizedRdfUndefined: Self = StObject.set(x, "produceGeneralizedRdf", js.undefined)
         
-        @scala.inline
-        def setSkipExpansion(value: Boolean): Self = StObject.set(x, "skipExpansion", value.asInstanceOf[js.Any])
+        inline def setSkipExpansion(value: Boolean): Self = StObject.set(x, "skipExpansion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSkipExpansionUndefined: Self = StObject.set(x, "skipExpansion", js.undefined)
+        inline def setSkipExpansionUndefined: Self = StObject.set(x, "skipExpansion", js.undefined)
       }
     }
   }

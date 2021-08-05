@@ -30,10 +30,8 @@ object mod {
   //=> '🦄'
   ```
   */
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType): FunctionType = (^.asInstanceOf[js.Dynamic].apply(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[FunctionType]
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType, options: Options): FunctionType = (^.asInstanceOf[js.Dynamic].apply(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionType]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType): FunctionType = (^.asInstanceOf[js.Dynamic].apply(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[FunctionType]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType, FunctionType /* <: js.Function1[/* arguments */ ArgumentsType, ReturnType] */](to: js.Function1[/* arguments */ ArgumentsType, ReturnType], from: FunctionType, options: Options): FunctionType = (^.asInstanceOf[js.Dynamic].apply(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionType]
   
   @JSImport("mimic-fn", JSImport.Namespace)
   @js.native
@@ -49,20 +47,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIgnoreNonConfigurable(value: Boolean): Self = StObject.set(x, "ignoreNonConfigurable", value.asInstanceOf[js.Any])
+      inline def setIgnoreNonConfigurable(value: Boolean): Self = StObject.set(x, "ignoreNonConfigurable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNonConfigurableUndefined: Self = StObject.set(x, "ignoreNonConfigurable", js.undefined)
+      inline def setIgnoreNonConfigurableUndefined: Self = StObject.set(x, "ignoreNonConfigurable", js.undefined)
     }
   }
 }

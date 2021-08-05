@@ -13,6 +13,6 @@ object platformBrowserMod {
     extends StObject
        with Platform {
     
-    var textEncoder: js.Any = js.native
+    /* private */ var textEncoder: js.Any = js.native
   }
 }

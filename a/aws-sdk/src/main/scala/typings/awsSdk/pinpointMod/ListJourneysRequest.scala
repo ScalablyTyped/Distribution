@@ -23,28 +23,21 @@ trait ListJourneysRequest extends StObject {
 }
 object ListJourneysRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): ListJourneysRequest = {
+  inline def apply(ApplicationId: string): ListJourneysRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListJourneysRequest]
   }
   
-  @scala.inline
-  implicit class ListJourneysRequestMutableBuilder[Self <: ListJourneysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListJourneysRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

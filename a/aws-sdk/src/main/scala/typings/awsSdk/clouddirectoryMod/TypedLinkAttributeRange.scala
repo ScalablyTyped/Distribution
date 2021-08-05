@@ -18,22 +18,17 @@ trait TypedLinkAttributeRange extends StObject {
 }
 object TypedLinkAttributeRange {
   
-  @scala.inline
-  def apply(Range: TypedAttributeValueRange): TypedLinkAttributeRange = {
+  inline def apply(Range: TypedAttributeValueRange): TypedLinkAttributeRange = {
     val __obj = js.Dynamic.literal(Range = Range.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedLinkAttributeRange]
   }
   
-  @scala.inline
-  implicit class TypedLinkAttributeRangeMutableBuilder[Self <: TypedLinkAttributeRange] (val x: Self) extends AnyVal {
+  extension [Self <: TypedLinkAttributeRange](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setRange(value: TypedAttributeValueRange): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: TypedAttributeValueRange): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
   }
 }

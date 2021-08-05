@@ -28,8 +28,7 @@ trait ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelis
 }
 object ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoScalingEnabled: Boolean,
     configurationType: String,
     parallelism: Double,
@@ -39,19 +38,14 @@ object ApplicationApplicationConfigurationFlinkApplicationConfigurationParalleli
     __obj.asInstanceOf[ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutoScalingEnabled(value: Boolean): Self = StObject.set(x, "autoScalingEnabled", value.asInstanceOf[js.Any])
+    inline def setAutoScalingEnabled(value: Boolean): Self = StObject.set(x, "autoScalingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
+    inline def setConfigurationType(value: String): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelism(value: Double): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
+    inline def setParallelism(value: Double): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelismPerKpu(value: Double): Self = StObject.set(x, "parallelismPerKpu", value.asInstanceOf[js.Any])
+    inline def setParallelismPerKpu(value: Double): Self = StObject.set(x, "parallelismPerKpu", value.asInstanceOf[js.Any])
   }
 }

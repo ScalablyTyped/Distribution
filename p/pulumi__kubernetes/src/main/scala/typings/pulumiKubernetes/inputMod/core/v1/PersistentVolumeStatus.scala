@@ -27,31 +27,23 @@ trait PersistentVolumeStatus extends StObject {
 }
 object PersistentVolumeStatus {
   
-  @scala.inline
-  def apply(): PersistentVolumeStatus = {
+  inline def apply(): PersistentVolumeStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistentVolumeStatus]
   }
   
-  @scala.inline
-  implicit class PersistentVolumeStatusMutableBuilder[Self <: PersistentVolumeStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PersistentVolumeStatus](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
+    inline def setPhase(value: Input[String]): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
+    inline def setPhaseUndefined: Self = StObject.set(x, "phase", js.undefined)
     
-    @scala.inline
-    def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: Input[String]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

@@ -56,58 +56,42 @@ object anon {
   }
   object Alnum {
     
-    @scala.inline
-    def apply(): Alnum = {
+    inline def apply(): Alnum = {
       val __obj = js.Dynamic.literal(alnum = "a-zA-Z0-9", alpha = "a-zA-Z", ascii = "\\x00-\\x7F", blank = " \\t", cntrl = "\\x00-\\x1F\\x7F", digit = "0-9", graph = "\\x21-\\x7E", lower = "a-z", print = "\\x20-\\x7E ", punct = "\\-!\"#$%&'()\\*+,./:;<=>?@[\\]^_`{|}~", space = " \\t\\r\\n\\v\\f", upper = "A-Z", word = "A-Za-z0-9_", xdigit = "A-Fa-f0-9")
       __obj.asInstanceOf[Alnum]
     }
     
-    @scala.inline
-    implicit class AlnumMutableBuilder[Self <: Alnum] (val x: Self) extends AnyVal {
+    extension [Self <: Alnum](x: Self) {
       
-      @scala.inline
-      def setAlnum(value: `a-zA-Z0-9`): Self = StObject.set(x, "alnum", value.asInstanceOf[js.Any])
+      inline def setAlnum(value: `a-zA-Z0-9`): Self = StObject.set(x, "alnum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlpha(value: `a-zA-Z`): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: `a-zA-Z`): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAscii(value: `Backslashx00-Backslashx7F`): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
+      inline def setAscii(value: `Backslashx00-Backslashx7F`): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlank(value: SpaceBackslasht): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
+      inline def setBlank(value: SpaceBackslasht): Self = StObject.set(x, "blank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCntrl(value: `Backslashx00-Backslashx1FBackslashx7F`): Self = StObject.set(x, "cntrl", value.asInstanceOf[js.Any])
+      inline def setCntrl(value: `Backslashx00-Backslashx1FBackslashx7F`): Self = StObject.set(x, "cntrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigit(value: `0-9`): Self = StObject.set(x, "digit", value.asInstanceOf[js.Any])
+      inline def setDigit(value: `0-9`): Self = StObject.set(x, "digit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGraph(value: `Backslashx21-Backslashx7E`): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+      inline def setGraph(value: `Backslashx21-Backslashx7E`): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLower(value: `a-z_`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
+      inline def setLower(value: `a-z_`): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrint(value: `Backslashx20-Backslashx7E `): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+      inline def setPrint(value: `Backslashx20-Backslashx7E `): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPunct(
+      inline def setPunct(
         value: `Backslash-ExclamationmarkQuotationmarkNumbersign$PercentsignAmpersandApostropheLeftparenthesisRightparenthesisBackslashAsteriskPlussignCommaDotSlashColonSemicolonLessthansignEqualssignGreaterthansignQuestionmark@[Backslash]^_GraveaccentLeftcurlybracketVerticallineRightcurlybracketTilde`
       ): Self = StObject.set(x, "punct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpace(value: SpaceBackslashtBackslashrBackslashnBackslashvBackslashf): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: SpaceBackslashtBackslashrBackslashnBackslashvBackslashf): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpper(value: `A-Z`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
+      inline def setUpper(value: `A-Z`): Self = StObject.set(x, "upper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWord(value: `A-Za-z0-9_`): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+      inline def setWord(value: `A-Za-z0-9_`): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXdigit(value: `A-Fa-f0-9`): Self = StObject.set(x, "xdigit", value.asInstanceOf[js.Any])
+      inline def setXdigit(value: `A-Fa-f0-9`): Self = StObject.set(x, "xdigit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,8 +211,7 @@ object anon {
   }
   object CHAR0 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CHAR_0: Double,
       CHAR_9: Double,
       CHAR_AMPERSAND: Double,
@@ -288,172 +271,117 @@ object anon {
       __obj.asInstanceOf[CHAR0]
     }
     
-    @scala.inline
-    implicit class CHAR0MutableBuilder[Self <: CHAR0] (val x: Self) extends AnyVal {
+    extension [Self <: CHAR0](x: Self) {
       
-      @scala.inline
-      def setCHAR_0(value: Double): Self = StObject.set(x, "CHAR_0", value.asInstanceOf[js.Any])
+      inline def setCHAR_0(value: Double): Self = StObject.set(x, "CHAR_0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_9(value: Double): Self = StObject.set(x, "CHAR_9", value.asInstanceOf[js.Any])
+      inline def setCHAR_9(value: Double): Self = StObject.set(x, "CHAR_9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_AMPERSAND(value: Double): Self = StObject.set(x, "CHAR_AMPERSAND", value.asInstanceOf[js.Any])
+      inline def setCHAR_AMPERSAND(value: Double): Self = StObject.set(x, "CHAR_AMPERSAND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_ASTERISK(value: Double): Self = StObject.set(x, "CHAR_ASTERISK", value.asInstanceOf[js.Any])
+      inline def setCHAR_ASTERISK(value: Double): Self = StObject.set(x, "CHAR_ASTERISK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_AT(value: Double): Self = StObject.set(x, "CHAR_AT", value.asInstanceOf[js.Any])
+      inline def setCHAR_AT(value: Double): Self = StObject.set(x, "CHAR_AT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_BACKWARD_SLASH(value: Double): Self = StObject.set(x, "CHAR_BACKWARD_SLASH", value.asInstanceOf[js.Any])
+      inline def setCHAR_BACKWARD_SLASH(value: Double): Self = StObject.set(x, "CHAR_BACKWARD_SLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_CARRIAGE_RETURN(value: Double): Self = StObject.set(x, "CHAR_CARRIAGE_RETURN", value.asInstanceOf[js.Any])
+      inline def setCHAR_CARRIAGE_RETURN(value: Double): Self = StObject.set(x, "CHAR_CARRIAGE_RETURN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_CIRCUMFLEX_ACCENT(value: Double): Self = StObject.set(x, "CHAR_CIRCUMFLEX_ACCENT", value.asInstanceOf[js.Any])
+      inline def setCHAR_CIRCUMFLEX_ACCENT(value: Double): Self = StObject.set(x, "CHAR_CIRCUMFLEX_ACCENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_COLON(value: Double): Self = StObject.set(x, "CHAR_COLON", value.asInstanceOf[js.Any])
+      inline def setCHAR_COLON(value: Double): Self = StObject.set(x, "CHAR_COLON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_COMMA(value: Double): Self = StObject.set(x, "CHAR_COMMA", value.asInstanceOf[js.Any])
+      inline def setCHAR_COMMA(value: Double): Self = StObject.set(x, "CHAR_COMMA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_DOT(value: Double): Self = StObject.set(x, "CHAR_DOT", value.asInstanceOf[js.Any])
+      inline def setCHAR_DOT(value: Double): Self = StObject.set(x, "CHAR_DOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_DOUBLE_QUOTE(value: Double): Self = StObject.set(x, "CHAR_DOUBLE_QUOTE", value.asInstanceOf[js.Any])
+      inline def setCHAR_DOUBLE_QUOTE(value: Double): Self = StObject.set(x, "CHAR_DOUBLE_QUOTE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_EQUAL(value: Double): Self = StObject.set(x, "CHAR_EQUAL", value.asInstanceOf[js.Any])
+      inline def setCHAR_EQUAL(value: Double): Self = StObject.set(x, "CHAR_EQUAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_EXCLAMATION_MARK(value: Double): Self = StObject.set(x, "CHAR_EXCLAMATION_MARK", value.asInstanceOf[js.Any])
+      inline def setCHAR_EXCLAMATION_MARK(value: Double): Self = StObject.set(x, "CHAR_EXCLAMATION_MARK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_FORM_FEED(value: Double): Self = StObject.set(x, "CHAR_FORM_FEED", value.asInstanceOf[js.Any])
+      inline def setCHAR_FORM_FEED(value: Double): Self = StObject.set(x, "CHAR_FORM_FEED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_FORWARD_SLASH(value: Double): Self = StObject.set(x, "CHAR_FORWARD_SLASH", value.asInstanceOf[js.Any])
+      inline def setCHAR_FORWARD_SLASH(value: Double): Self = StObject.set(x, "CHAR_FORWARD_SLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_GRAVE_ACCENT(value: Double): Self = StObject.set(x, "CHAR_GRAVE_ACCENT", value.asInstanceOf[js.Any])
+      inline def setCHAR_GRAVE_ACCENT(value: Double): Self = StObject.set(x, "CHAR_GRAVE_ACCENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_HASH(value: Double): Self = StObject.set(x, "CHAR_HASH", value.asInstanceOf[js.Any])
+      inline def setCHAR_HASH(value: Double): Self = StObject.set(x, "CHAR_HASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_HYPHEN_MINUS(value: Double): Self = StObject.set(x, "CHAR_HYPHEN_MINUS", value.asInstanceOf[js.Any])
+      inline def setCHAR_HYPHEN_MINUS(value: Double): Self = StObject.set(x, "CHAR_HYPHEN_MINUS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_LEFT_ANGLE_BRACKET(value: Double): Self = StObject.set(x, "CHAR_LEFT_ANGLE_BRACKET", value.asInstanceOf[js.Any])
+      inline def setCHAR_LEFT_ANGLE_BRACKET(value: Double): Self = StObject.set(x, "CHAR_LEFT_ANGLE_BRACKET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_LEFT_CURLY_BRACE(value: Double): Self = StObject.set(x, "CHAR_LEFT_CURLY_BRACE", value.asInstanceOf[js.Any])
+      inline def setCHAR_LEFT_CURLY_BRACE(value: Double): Self = StObject.set(x, "CHAR_LEFT_CURLY_BRACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_LEFT_PARENTHESES(value: Double): Self = StObject.set(x, "CHAR_LEFT_PARENTHESES", value.asInstanceOf[js.Any])
+      inline def setCHAR_LEFT_PARENTHESES(value: Double): Self = StObject.set(x, "CHAR_LEFT_PARENTHESES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_LEFT_SQUARE_BRACKET(value: Double): Self = StObject.set(x, "CHAR_LEFT_SQUARE_BRACKET", value.asInstanceOf[js.Any])
+      inline def setCHAR_LEFT_SQUARE_BRACKET(value: Double): Self = StObject.set(x, "CHAR_LEFT_SQUARE_BRACKET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_LINE_FEED(value: Double): Self = StObject.set(x, "CHAR_LINE_FEED", value.asInstanceOf[js.Any])
+      inline def setCHAR_LINE_FEED(value: Double): Self = StObject.set(x, "CHAR_LINE_FEED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_LOWERCASE_A(value: Double): Self = StObject.set(x, "CHAR_LOWERCASE_A", value.asInstanceOf[js.Any])
+      inline def setCHAR_LOWERCASE_A(value: Double): Self = StObject.set(x, "CHAR_LOWERCASE_A", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_LOWERCASE_Z(value: Double): Self = StObject.set(x, "CHAR_LOWERCASE_Z", value.asInstanceOf[js.Any])
+      inline def setCHAR_LOWERCASE_Z(value: Double): Self = StObject.set(x, "CHAR_LOWERCASE_Z", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_NO_BREAK_SPACE(value: Double): Self = StObject.set(x, "CHAR_NO_BREAK_SPACE", value.asInstanceOf[js.Any])
+      inline def setCHAR_NO_BREAK_SPACE(value: Double): Self = StObject.set(x, "CHAR_NO_BREAK_SPACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_PERCENT(value: Double): Self = StObject.set(x, "CHAR_PERCENT", value.asInstanceOf[js.Any])
+      inline def setCHAR_PERCENT(value: Double): Self = StObject.set(x, "CHAR_PERCENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_PLUS(value: Double): Self = StObject.set(x, "CHAR_PLUS", value.asInstanceOf[js.Any])
+      inline def setCHAR_PLUS(value: Double): Self = StObject.set(x, "CHAR_PLUS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_QUESTION_MARK(value: Double): Self = StObject.set(x, "CHAR_QUESTION_MARK", value.asInstanceOf[js.Any])
+      inline def setCHAR_QUESTION_MARK(value: Double): Self = StObject.set(x, "CHAR_QUESTION_MARK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_RIGHT_ANGLE_BRACKET(value: Double): Self = StObject.set(x, "CHAR_RIGHT_ANGLE_BRACKET", value.asInstanceOf[js.Any])
+      inline def setCHAR_RIGHT_ANGLE_BRACKET(value: Double): Self = StObject.set(x, "CHAR_RIGHT_ANGLE_BRACKET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_RIGHT_CURLY_BRACE(value: Double): Self = StObject.set(x, "CHAR_RIGHT_CURLY_BRACE", value.asInstanceOf[js.Any])
+      inline def setCHAR_RIGHT_CURLY_BRACE(value: Double): Self = StObject.set(x, "CHAR_RIGHT_CURLY_BRACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_RIGHT_PARENTHESES(value: Double): Self = StObject.set(x, "CHAR_RIGHT_PARENTHESES", value.asInstanceOf[js.Any])
+      inline def setCHAR_RIGHT_PARENTHESES(value: Double): Self = StObject.set(x, "CHAR_RIGHT_PARENTHESES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_RIGHT_SQUARE_BRACKET(value: Double): Self = StObject.set(x, "CHAR_RIGHT_SQUARE_BRACKET", value.asInstanceOf[js.Any])
+      inline def setCHAR_RIGHT_SQUARE_BRACKET(value: Double): Self = StObject.set(x, "CHAR_RIGHT_SQUARE_BRACKET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_SEMICOLON(value: Double): Self = StObject.set(x, "CHAR_SEMICOLON", value.asInstanceOf[js.Any])
+      inline def setCHAR_SEMICOLON(value: Double): Self = StObject.set(x, "CHAR_SEMICOLON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_SINGLE_QUOTE(value: Double): Self = StObject.set(x, "CHAR_SINGLE_QUOTE", value.asInstanceOf[js.Any])
+      inline def setCHAR_SINGLE_QUOTE(value: Double): Self = StObject.set(x, "CHAR_SINGLE_QUOTE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_SPACE(value: Double): Self = StObject.set(x, "CHAR_SPACE", value.asInstanceOf[js.Any])
+      inline def setCHAR_SPACE(value: Double): Self = StObject.set(x, "CHAR_SPACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_TAB(value: Double): Self = StObject.set(x, "CHAR_TAB", value.asInstanceOf[js.Any])
+      inline def setCHAR_TAB(value: Double): Self = StObject.set(x, "CHAR_TAB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_UNDERSCORE(value: Double): Self = StObject.set(x, "CHAR_UNDERSCORE", value.asInstanceOf[js.Any])
+      inline def setCHAR_UNDERSCORE(value: Double): Self = StObject.set(x, "CHAR_UNDERSCORE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_UPPERCASE_A(value: Double): Self = StObject.set(x, "CHAR_UPPERCASE_A", value.asInstanceOf[js.Any])
+      inline def setCHAR_UPPERCASE_A(value: Double): Self = StObject.set(x, "CHAR_UPPERCASE_A", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_UPPERCASE_Z(value: Double): Self = StObject.set(x, "CHAR_UPPERCASE_Z", value.asInstanceOf[js.Any])
+      inline def setCHAR_UPPERCASE_Z(value: Double): Self = StObject.set(x, "CHAR_UPPERCASE_Z", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_VERTICAL_LINE(value: Double): Self = StObject.set(x, "CHAR_VERTICAL_LINE", value.asInstanceOf[js.Any])
+      inline def setCHAR_VERTICAL_LINE(value: Double): Self = StObject.set(x, "CHAR_VERTICAL_LINE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHAR_ZERO_WIDTH_NOBREAK_SPACE(value: Double): Self = StObject.set(x, "CHAR_ZERO_WIDTH_NOBREAK_SPACE", value.asInstanceOf[js.Any])
+      inline def setCHAR_ZERO_WIDTH_NOBREAK_SPACE(value: Double): Self = StObject.set(x, "CHAR_ZERO_WIDTH_NOBREAK_SPACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtGlobChars(value: STAR => Record[String, Close]): Self = StObject.set(x, "extGlobChars", js.Any.fromFunction1(value))
+      inline def setExtGlobChars(value: STAR => Record[String, Close]): Self = StObject.set(x, "extGlobChars", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGlobChars(
+      inline def setGlobChars(
         value: js.Any => /* import warning: importer.ImportType#apply Failed type conversion: typeof POSIX_CHARS */ js.Any
       ): Self = StObject.set(x, "globChars", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMAX_LENGTH(value: Double): Self = StObject.set(x, "MAX_LENGTH", value.asInstanceOf[js.Any])
+      inline def setMAX_LENGTH(value: Double): Self = StObject.set(x, "MAX_LENGTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREGEX_BACKSLASH(value: RegExp): Self = StObject.set(x, "REGEX_BACKSLASH", value.asInstanceOf[js.Any])
+      inline def setREGEX_BACKSLASH(value: RegExp): Self = StObject.set(x, "REGEX_BACKSLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREGEX_NON_SPECIAL_CHARS(value: RegExp): Self = StObject.set(x, "REGEX_NON_SPECIAL_CHARS", value.asInstanceOf[js.Any])
+      inline def setREGEX_NON_SPECIAL_CHARS(value: RegExp): Self = StObject.set(x, "REGEX_NON_SPECIAL_CHARS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREGEX_REMOVE_BACKSLASH(value: RegExp): Self = StObject.set(x, "REGEX_REMOVE_BACKSLASH", value.asInstanceOf[js.Any])
+      inline def setREGEX_REMOVE_BACKSLASH(value: RegExp): Self = StObject.set(x, "REGEX_REMOVE_BACKSLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREGEX_SPECIAL_CHARS(value: RegExp): Self = StObject.set(x, "REGEX_SPECIAL_CHARS", value.asInstanceOf[js.Any])
+      inline def setREGEX_SPECIAL_CHARS(value: RegExp): Self = StObject.set(x, "REGEX_SPECIAL_CHARS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREGEX_SPECIAL_CHARS_BACKREF(value: RegExp): Self = StObject.set(x, "REGEX_SPECIAL_CHARS_BACKREF", value.asInstanceOf[js.Any])
+      inline def setREGEX_SPECIAL_CHARS_BACKREF(value: RegExp): Self = StObject.set(x, "REGEX_SPECIAL_CHARS_BACKREF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREGEX_SPECIAL_CHARS_GLOBAL(value: RegExp): Self = StObject.set(x, "REGEX_SPECIAL_CHARS_GLOBAL", value.asInstanceOf[js.Any])
+      inline def setREGEX_SPECIAL_CHARS_GLOBAL(value: RegExp): Self = StObject.set(x, "REGEX_SPECIAL_CHARS_GLOBAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREPLACEMENTS(value: _empty): Self = StObject.set(x, "REPLACEMENTS", value.asInstanceOf[js.Any])
+      inline def setREPLACEMENTS(value: _empty): Self = StObject.set(x, "REPLACEMENTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEP(value: String): Self = StObject.set(x, "SEP", value.asInstanceOf[js.Any])
+      inline def setSEP(value: String): Self = StObject.set(x, "SEP", value.asInstanceOf[js.Any])
     }
   }
   
@@ -467,24 +395,19 @@ object anon {
   }
   object Close {
     
-    @scala.inline
-    def apply(close: String, open: String, `type`: String): Close = {
+    inline def apply(close: String, open: String, `type`: String): Close = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Close]
     }
     
-    @scala.inline
-    implicit class CloseMutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
+    extension [Self <: Close](x: Self) {
       
-      @scala.inline
-      def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -522,8 +445,7 @@ object anon {
   }
   object DOTLITERAL {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DOTS_SLASH: String,
       DOT_LITERAL: String,
       END_ANCHOR: String,
@@ -544,53 +466,37 @@ object anon {
       __obj.asInstanceOf[DOTLITERAL]
     }
     
-    @scala.inline
-    implicit class DOTLITERALMutableBuilder[Self <: DOTLITERAL] (val x: Self) extends AnyVal {
+    extension [Self <: DOTLITERAL](x: Self) {
       
-      @scala.inline
-      def setDOTS_SLASH(value: String): Self = StObject.set(x, "DOTS_SLASH", value.asInstanceOf[js.Any])
+      inline def setDOTS_SLASH(value: String): Self = StObject.set(x, "DOTS_SLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOT_LITERAL(value: String): Self = StObject.set(x, "DOT_LITERAL", value.asInstanceOf[js.Any])
+      inline def setDOT_LITERAL(value: String): Self = StObject.set(x, "DOT_LITERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEND_ANCHOR(value: String): Self = StObject.set(x, "END_ANCHOR", value.asInstanceOf[js.Any])
+      inline def setEND_ANCHOR(value: String): Self = StObject.set(x, "END_ANCHOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_DOT(value: String): Self = StObject.set(x, "NO_DOT", value.asInstanceOf[js.Any])
+      inline def setNO_DOT(value: String): Self = StObject.set(x, "NO_DOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_DOTS(value: String): Self = StObject.set(x, "NO_DOTS", value.asInstanceOf[js.Any])
+      inline def setNO_DOTS(value: String): Self = StObject.set(x, "NO_DOTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_DOTS_SLASH(value: String): Self = StObject.set(x, "NO_DOTS_SLASH", value.asInstanceOf[js.Any])
+      inline def setNO_DOTS_SLASH(value: String): Self = StObject.set(x, "NO_DOTS_SLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_DOT_SLASH(value: String): Self = StObject.set(x, "NO_DOT_SLASH", value.asInstanceOf[js.Any])
+      inline def setNO_DOT_SLASH(value: String): Self = StObject.set(x, "NO_DOT_SLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setONE_CHAR(value: String): Self = StObject.set(x, "ONE_CHAR", value.asInstanceOf[js.Any])
+      inline def setONE_CHAR(value: String): Self = StObject.set(x, "ONE_CHAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPLUS_LITERAL(value: String): Self = StObject.set(x, "PLUS_LITERAL", value.asInstanceOf[js.Any])
+      inline def setPLUS_LITERAL(value: String): Self = StObject.set(x, "PLUS_LITERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQMARK(value: String): Self = StObject.set(x, "QMARK", value.asInstanceOf[js.Any])
+      inline def setQMARK(value: String): Self = StObject.set(x, "QMARK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQMARK_LITERAL(value: String): Self = StObject.set(x, "QMARK_LITERAL", value.asInstanceOf[js.Any])
+      inline def setQMARK_LITERAL(value: String): Self = StObject.set(x, "QMARK_LITERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQMARK_NO_DOT(value: String): Self = StObject.set(x, "QMARK_NO_DOT", value.asInstanceOf[js.Any])
+      inline def setQMARK_NO_DOT(value: String): Self = StObject.set(x, "QMARK_NO_DOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSLASH_LITERAL(value: String): Self = StObject.set(x, "SLASH_LITERAL", value.asInstanceOf[js.Any])
+      inline def setSLASH_LITERAL(value: String): Self = StObject.set(x, "SLASH_LITERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTAR(value: String): Self = StObject.set(x, "STAR", value.asInstanceOf[js.Any])
+      inline def setSTAR(value: String): Self = StObject.set(x, "STAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTART_ANCHOR(value: String): Self = StObject.set(x, "START_ANCHOR", value.asInstanceOf[js.Any])
+      inline def setSTART_ANCHOR(value: String): Self = StObject.set(x, "START_ANCHOR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -628,8 +534,7 @@ object anon {
   }
   object DOTSSLASH {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DOTS_SLASH: String,
       DOT_LITERAL: String,
       END_ANCHOR: String,
@@ -650,53 +555,37 @@ object anon {
       __obj.asInstanceOf[DOTSSLASH]
     }
     
-    @scala.inline
-    implicit class DOTSSLASHMutableBuilder[Self <: DOTSSLASH] (val x: Self) extends AnyVal {
+    extension [Self <: DOTSSLASH](x: Self) {
       
-      @scala.inline
-      def setDOTS_SLASH(value: String): Self = StObject.set(x, "DOTS_SLASH", value.asInstanceOf[js.Any])
+      inline def setDOTS_SLASH(value: String): Self = StObject.set(x, "DOTS_SLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOT_LITERAL(value: String): Self = StObject.set(x, "DOT_LITERAL", value.asInstanceOf[js.Any])
+      inline def setDOT_LITERAL(value: String): Self = StObject.set(x, "DOT_LITERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEND_ANCHOR(value: String): Self = StObject.set(x, "END_ANCHOR", value.asInstanceOf[js.Any])
+      inline def setEND_ANCHOR(value: String): Self = StObject.set(x, "END_ANCHOR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_DOT(value: String): Self = StObject.set(x, "NO_DOT", value.asInstanceOf[js.Any])
+      inline def setNO_DOT(value: String): Self = StObject.set(x, "NO_DOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_DOTS(value: String): Self = StObject.set(x, "NO_DOTS", value.asInstanceOf[js.Any])
+      inline def setNO_DOTS(value: String): Self = StObject.set(x, "NO_DOTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_DOTS_SLASH(value: String): Self = StObject.set(x, "NO_DOTS_SLASH", value.asInstanceOf[js.Any])
+      inline def setNO_DOTS_SLASH(value: String): Self = StObject.set(x, "NO_DOTS_SLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNO_DOT_SLASH(value: String): Self = StObject.set(x, "NO_DOT_SLASH", value.asInstanceOf[js.Any])
+      inline def setNO_DOT_SLASH(value: String): Self = StObject.set(x, "NO_DOT_SLASH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setONE_CHAR(value: String): Self = StObject.set(x, "ONE_CHAR", value.asInstanceOf[js.Any])
+      inline def setONE_CHAR(value: String): Self = StObject.set(x, "ONE_CHAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPLUS_LITERAL(value: String): Self = StObject.set(x, "PLUS_LITERAL", value.asInstanceOf[js.Any])
+      inline def setPLUS_LITERAL(value: String): Self = StObject.set(x, "PLUS_LITERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQMARK(value: String): Self = StObject.set(x, "QMARK", value.asInstanceOf[js.Any])
+      inline def setQMARK(value: String): Self = StObject.set(x, "QMARK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQMARK_LITERAL(value: String): Self = StObject.set(x, "QMARK_LITERAL", value.asInstanceOf[js.Any])
+      inline def setQMARK_LITERAL(value: String): Self = StObject.set(x, "QMARK_LITERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQMARK_NO_DOT(value: String): Self = StObject.set(x, "QMARK_NO_DOT", value.asInstanceOf[js.Any])
+      inline def setQMARK_NO_DOT(value: String): Self = StObject.set(x, "QMARK_NO_DOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSLASH_LITERAL(value: String): Self = StObject.set(x, "SLASH_LITERAL", value.asInstanceOf[js.Any])
+      inline def setSLASH_LITERAL(value: String): Self = StObject.set(x, "SLASH_LITERAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTAR(value: String): Self = StObject.set(x, "STAR", value.asInstanceOf[js.Any])
+      inline def setSTAR(value: String): Self = StObject.set(x, "STAR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTART_ANCHOR(value: String): Self = StObject.set(x, "START_ANCHOR", value.asInstanceOf[js.Any])
+      inline def setSTART_ANCHOR(value: String): Self = StObject.set(x, "START_ANCHOR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -710,32 +599,24 @@ object anon {
   }
   object Debug {
     
-    @scala.inline
-    def apply(): Debug = {
+    inline def apply(): Debug = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Debug]
     }
     
-    @scala.inline
-    implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+    extension [Self <: Debug](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setNocase(value: Boolean): Self = StObject.set(x, "nocase", value.asInstanceOf[js.Any])
+      inline def setNocase(value: Boolean): Self = StObject.set(x, "nocase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNocaseUndefined: Self = StObject.set(x, "nocase", js.undefined)
+      inline def setNocaseUndefined: Self = StObject.set(x, "nocase", js.undefined)
     }
   }
   
@@ -749,24 +630,19 @@ object anon {
   }
   object IsMatch {
     
-    @scala.inline
-    def apply(isMatch: Boolean, `match`: Boolean, output: js.Any): IsMatch = {
+    inline def apply(isMatch: Boolean, `match`: Boolean, output: js.Any): IsMatch = {
       val __obj = js.Dynamic.literal(isMatch = isMatch.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsMatch]
     }
     
-    @scala.inline
-    implicit class IsMatchMutableBuilder[Self <: IsMatch] (val x: Self) extends AnyVal {
+    extension [Self <: IsMatch](x: Self) {
       
-      @scala.inline
-      def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
+      inline def setIsMatch(value: Boolean): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: Boolean): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Boolean): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -776,17 +652,14 @@ object anon {
   }
   object MaxLength {
     
-    @scala.inline
-    def apply(maxLength: Double): MaxLength = {
+    inline def apply(maxLength: Double): MaxLength = {
       val __obj = js.Dynamic.literal(maxLength = maxLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxLength]
     }
     
-    @scala.inline
-    implicit class MaxLengthMutableBuilder[Self <: MaxLength] (val x: Self) extends AnyVal {
+    extension [Self <: MaxLength](x: Self) {
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     }
   }
   
@@ -796,17 +669,14 @@ object anon {
   }
   object STAR {
     
-    @scala.inline
-    def apply(STAR: String): STAR = {
+    inline def apply(STAR: String): STAR = {
       val __obj = js.Dynamic.literal(STAR = STAR.asInstanceOf[js.Any])
       __obj.asInstanceOf[STAR]
     }
     
-    @scala.inline
-    implicit class STARMutableBuilder[Self <: STAR] (val x: Self) extends AnyVal {
+    extension [Self <: STAR](x: Self) {
       
-      @scala.inline
-      def setSTAR(value: String): Self = StObject.set(x, "STAR", value.asInstanceOf[js.Any])
+      inline def setSTAR(value: String): Self = StObject.set(x, "STAR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -823,8 +693,7 @@ object anon {
   }
   object _empty {
     
-    @scala.inline
-    def apply(): _empty = {
+    inline def apply(): _empty = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("***")("*")
       __obj.updateDynamic("**/**")("**")
@@ -832,17 +701,13 @@ object anon {
       __obj.asInstanceOf[_empty]
     }
     
-    @scala.inline
-    implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
+    extension [Self <: _empty](x: Self) {
       
-      @scala.inline
-      def setAsteriskAsteriskAsterisk(value: Asterisk): Self = StObject.set(x, "***", value.asInstanceOf[js.Any])
+      inline def setAsteriskAsteriskAsterisk(value: Asterisk): Self = StObject.set(x, "***", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsteriskAsteriskSlashAsteriskAsterisk(value: AsteriskAsterisk): Self = StObject.set(x, "**/**", value.asInstanceOf[js.Any])
+      inline def setAsteriskAsteriskSlashAsteriskAsterisk(value: AsteriskAsterisk): Self = StObject.set(x, "**/**", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsteriskAsteriskSlashAsteriskAsteriskSlashAsteriskAsterisk(value: AsteriskAsterisk): Self = StObject.set(x, "**/**/**", value.asInstanceOf[js.Any])
+      inline def setAsteriskAsteriskSlashAsteriskAsteriskSlashAsteriskAsterisk(value: AsteriskAsterisk): Self = StObject.set(x, "**/**/**", value.asInstanceOf[js.Any])
     }
   }
 }

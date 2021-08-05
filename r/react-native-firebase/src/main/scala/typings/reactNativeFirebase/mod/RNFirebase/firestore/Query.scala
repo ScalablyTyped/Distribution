@@ -64,23 +64,18 @@ object Query {
   }
   object FieldFilter {
     
-    @scala.inline
-    def apply(fieldPath: NativeFieldPath, operator: String, value: js.Any): FieldFilter = {
+    inline def apply(fieldPath: NativeFieldPath, operator: String, value: js.Any): FieldFilter = {
       val __obj = js.Dynamic.literal(fieldPath = fieldPath.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldFilter]
     }
     
-    @scala.inline
-    implicit class FieldFilterMutableBuilder[Self <: FieldFilter] (val x: Self) extends AnyVal {
+    extension [Self <: FieldFilter](x: Self) {
       
-      @scala.inline
-      def setFieldPath(value: NativeFieldPath): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+      inline def setFieldPath(value: NativeFieldPath): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,20 +87,16 @@ object Query {
   }
   object FieldOrder {
     
-    @scala.inline
-    def apply(direction: String, fieldPath: NativeFieldPath): FieldOrder = {
+    inline def apply(direction: String, fieldPath: NativeFieldPath): FieldOrder = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], fieldPath = fieldPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldOrder]
     }
     
-    @scala.inline
-    implicit class FieldOrderMutableBuilder[Self <: FieldOrder] (val x: Self) extends AnyVal {
+    extension [Self <: FieldOrder](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldPath(value: NativeFieldPath): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+      inline def setFieldPath(value: NativeFieldPath): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,29 +112,22 @@ object Query {
   }
   object NativeError {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String): NativeError = {
+    inline def apply(code: String, message: String, name: String): NativeError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[NativeError]
     }
     
-    @scala.inline
-    implicit class NativeErrorMutableBuilder[Self <: NativeError] (val x: Self) extends AnyVal {
+    extension [Self <: NativeError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeErrorCode(value: String): Self = StObject.set(x, "nativeErrorCode", value.asInstanceOf[js.Any])
+      inline def setNativeErrorCode(value: String): Self = StObject.set(x, "nativeErrorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeErrorCodeUndefined: Self = StObject.set(x, "nativeErrorCode", js.undefined)
+      inline def setNativeErrorCodeUndefined: Self = StObject.set(x, "nativeErrorCode", js.undefined)
       
-      @scala.inline
-      def setNativeErrorMessage(value: String): Self = StObject.set(x, "nativeErrorMessage", value.asInstanceOf[js.Any])
+      inline def setNativeErrorMessage(value: String): Self = StObject.set(x, "nativeErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeErrorMessageUndefined: Self = StObject.set(x, "nativeErrorMessage", js.undefined)
+      inline def setNativeErrorMessageUndefined: Self = StObject.set(x, "nativeErrorMessage", js.undefined)
     }
   }
   
@@ -157,33 +141,25 @@ object Query {
   }
   object NativeFieldPath {
     
-    @scala.inline
-    def apply(`type`: fieldpath | string): NativeFieldPath = {
+    inline def apply(`type`: fieldpath | string): NativeFieldPath = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NativeFieldPath]
     }
     
-    @scala.inline
-    implicit class NativeFieldPathMutableBuilder[Self <: NativeFieldPath] (val x: Self) extends AnyVal {
+    extension [Self <: NativeFieldPath](x: Self) {
       
-      @scala.inline
-      def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+      inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      @scala.inline
-      def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: String*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      @scala.inline
-      def setType(value: fieldpath | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: fieldpath | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,23 +171,18 @@ object Query {
   }
   object Observer {
     
-    @scala.inline
-    def apply(next: /* querySnapshot */ QuerySnapshot => Unit): Observer = {
+    inline def apply(next: /* querySnapshot */ QuerySnapshot => Unit): Observer = {
       val __obj = js.Dynamic.literal(next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Observer]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
+    extension [Self <: Observer](x: Self) {
       
-      @scala.inline
-      def setError(value: /* err */ SnapshotError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* err */ SnapshotError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setNext(value: /* querySnapshot */ QuerySnapshot => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* querySnapshot */ QuerySnapshot => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -237,71 +208,50 @@ object Query {
   }
   object QueryOptions {
     
-    @scala.inline
-    def apply(): QueryOptions = {
+    inline def apply(): QueryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryOptions]
     }
     
-    @scala.inline
-    implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueryOptions](x: Self) {
       
-      @scala.inline
-      def setEndAt(value: js.Array[js.Any]): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
+      inline def setEndAt(value: js.Array[js.Any]): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndAtUndefined: Self = StObject.set(x, "endAt", js.undefined)
+      inline def setEndAtUndefined: Self = StObject.set(x, "endAt", js.undefined)
       
-      @scala.inline
-      def setEndAtVarargs(value: js.Any*): Self = StObject.set(x, "endAt", js.Array(value :_*))
+      inline def setEndAtVarargs(value: js.Any*): Self = StObject.set(x, "endAt", js.Array(value :_*))
       
-      @scala.inline
-      def setEndBefore(value: js.Array[js.Any]): Self = StObject.set(x, "endBefore", value.asInstanceOf[js.Any])
+      inline def setEndBefore(value: js.Array[js.Any]): Self = StObject.set(x, "endBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndBeforeUndefined: Self = StObject.set(x, "endBefore", js.undefined)
+      inline def setEndBeforeUndefined: Self = StObject.set(x, "endBefore", js.undefined)
       
-      @scala.inline
-      def setEndBeforeVarargs(value: js.Any*): Self = StObject.set(x, "endBefore", js.Array(value :_*))
+      inline def setEndBeforeVarargs(value: js.Any*): Self = StObject.set(x, "endBefore", js.Array(value :_*))
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setSelectFields(value: js.Array[String]): Self = StObject.set(x, "selectFields", value.asInstanceOf[js.Any])
+      inline def setSelectFields(value: js.Array[String]): Self = StObject.set(x, "selectFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectFieldsUndefined: Self = StObject.set(x, "selectFields", js.undefined)
+      inline def setSelectFieldsUndefined: Self = StObject.set(x, "selectFields", js.undefined)
       
-      @scala.inline
-      def setSelectFieldsVarargs(value: String*): Self = StObject.set(x, "selectFields", js.Array(value :_*))
+      inline def setSelectFieldsVarargs(value: String*): Self = StObject.set(x, "selectFields", js.Array(value :_*))
       
-      @scala.inline
-      def setStartAfter(value: js.Array[js.Any]): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
+      inline def setStartAfter(value: js.Array[js.Any]): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
+      inline def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
       
-      @scala.inline
-      def setStartAfterVarargs(value: js.Any*): Self = StObject.set(x, "startAfter", js.Array(value :_*))
+      inline def setStartAfterVarargs(value: js.Any*): Self = StObject.set(x, "startAfter", js.Array(value :_*))
       
-      @scala.inline
-      def setStartAt(value: js.Array[js.Any]): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      inline def setStartAt(value: js.Array[js.Any]): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+      inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
       
-      @scala.inline
-      def setStartAtVarargs(value: js.Any*): Self = StObject.set(x, "startAt", js.Array(value :_*))
+      inline def setStartAtVarargs(value: js.Any*): Self = StObject.set(x, "startAt", js.Array(value :_*))
     }
   }
   
@@ -315,20 +265,16 @@ object Query {
   }
   object SnapshotError {
     
-    @scala.inline
-    def apply(appName: String, code: String, message: String, name: String, path: String): SnapshotError = {
+    inline def apply(appName: String, code: String, message: String, name: String, path: String): SnapshotError = {
       val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnapshotError]
     }
     
-    @scala.inline
-    implicit class SnapshotErrorMutableBuilder[Self <: SnapshotError] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotError](x: Self) {
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -117,8 +117,7 @@ trait SystemInfoCellularNetwork
 }
 object SystemInfoCellularNetwork {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apn: String,
     cellId: Double,
     dns: String,
@@ -139,52 +138,36 @@ object SystemInfoCellularNetwork {
     __obj.asInstanceOf[SystemInfoCellularNetwork]
   }
   
-  @scala.inline
-  implicit class SystemInfoCellularNetworkMutableBuilder[Self <: SystemInfoCellularNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoCellularNetwork](x: Self) {
     
-    @scala.inline
-    def setApn(value: String): Self = StObject.set(x, "apn", value.asInstanceOf[js.Any])
+    inline def setApn(value: String): Self = StObject.set(x, "apn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellId(value: Double): Self = StObject.set(x, "cellId", value.asInstanceOf[js.Any])
+    inline def setCellId(value: Double): Self = StObject.set(x, "cellId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
+    inline def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImei(value: String): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
+    inline def setImei(value: String): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpMode(value: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED): Self = StObject.set(x, "ipMode", value.asInstanceOf[js.Any])
+    inline def setIpMode(value: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED): Self = StObject.set(x, "ipMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
+    inline def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFlightMode(value: Boolean): Self = StObject.set(x, "isFlightMode", value.asInstanceOf[js.Any])
+    inline def setIsFlightMode(value: Boolean): Self = StObject.set(x, "isFlightMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRoaming(value: Boolean): Self = StObject.set(x, "isRoaming", value.asInstanceOf[js.Any])
+    inline def setIsRoaming(value: Boolean): Self = StObject.set(x, "isRoaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLac(value: Double): Self = StObject.set(x, "lac", value.asInstanceOf[js.Any])
+    inline def setLac(value: Double): Self = StObject.set(x, "lac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMcc(value: Double): Self = StObject.set(x, "mcc", value.asInstanceOf[js.Any])
+    inline def setMcc(value: Double): Self = StObject.set(x, "mcc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMnc(value: Double): Self = StObject.set(x, "mnc", value.asInstanceOf[js.Any])
+    inline def setMnc(value: Double): Self = StObject.set(x, "mnc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetMask(value: String): Self = StObject.set(x, "subnetMask", value.asInstanceOf[js.Any])
+    inline def setSubnetMask(value: String): Self = StObject.set(x, "subnetMask", value.asInstanceOf[js.Any])
   }
 }

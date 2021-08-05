@@ -28,34 +28,25 @@ trait Template extends StObject {
 }
 object Template {
   
-  @scala.inline
-  def apply(TemplateName: TemplateName): Template = {
+  inline def apply(TemplateName: TemplateName): Template = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Template]
   }
   
-  @scala.inline
-  implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+  extension [Self <: Template](x: Self) {
     
-    @scala.inline
-    def setHtmlPart(value: HtmlPart): Self = StObject.set(x, "HtmlPart", value.asInstanceOf[js.Any])
+    inline def setHtmlPart(value: HtmlPart): Self = StObject.set(x, "HtmlPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlPartUndefined: Self = StObject.set(x, "HtmlPart", js.undefined)
+    inline def setHtmlPartUndefined: Self = StObject.set(x, "HtmlPart", js.undefined)
     
-    @scala.inline
-    def setSubjectPart(value: SubjectPart): Self = StObject.set(x, "SubjectPart", value.asInstanceOf[js.Any])
+    inline def setSubjectPart(value: SubjectPart): Self = StObject.set(x, "SubjectPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectPartUndefined: Self = StObject.set(x, "SubjectPart", js.undefined)
+    inline def setSubjectPartUndefined: Self = StObject.set(x, "SubjectPart", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPart(value: TextPart): Self = StObject.set(x, "TextPart", value.asInstanceOf[js.Any])
+    inline def setTextPart(value: TextPart): Self = StObject.set(x, "TextPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPartUndefined: Self = StObject.set(x, "TextPart", js.undefined)
+    inline def setTextPartUndefined: Self = StObject.set(x, "TextPart", js.undefined)
   }
 }

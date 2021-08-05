@@ -41,8 +41,7 @@ object mod extends Shortcut {
   }
   object Hbs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       SafeString: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString],
       Utils: TypeofUtils,
       middleware: Middleware => js.Any,
@@ -52,20 +51,15 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Hbs]
     }
     
-    @scala.inline
-    implicit class HbsMutableBuilder[Self <: Hbs] (val x: Self) extends AnyVal {
+    extension [Self <: Hbs](x: Self) {
       
-      @scala.inline
-      def setMiddleware(value: Middleware => js.Any): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
+      inline def setMiddleware(value: Middleware => js.Any): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterHelper(value: FnCall): Self = StObject.set(x, "registerHelper", value.asInstanceOf[js.Any])
+      inline def setRegisterHelper(value: FnCall): Self = StObject.set(x, "registerHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeString(value: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString]): Self = StObject.set(x, "SafeString", value.asInstanceOf[js.Any])
+      inline def setSafeString(value: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString]): Self = StObject.set(x, "SafeString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtils(value: TypeofUtils): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
+      inline def setUtils(value: TypeofUtils): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
     }
     
     trait Middleware extends StObject {
@@ -92,77 +86,54 @@ object mod extends Shortcut {
     }
     object Middleware {
       
-      @scala.inline
-      def apply(viewPath: js.Array[String] | String): Middleware = {
+      inline def apply(viewPath: js.Array[String] | String): Middleware = {
         val __obj = js.Dynamic.literal(viewPath = viewPath.asInstanceOf[js.Any])
         __obj.asInstanceOf[Middleware]
       }
       
-      @scala.inline
-      implicit class MiddlewareMutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
+      extension [Self <: Middleware](x: Self) {
         
-        @scala.inline
-        def setBlockHelperName(value: String): Self = StObject.set(x, "blockHelperName", value.asInstanceOf[js.Any])
+        inline def setBlockHelperName(value: String): Self = StObject.set(x, "blockHelperName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlockHelperNameUndefined: Self = StObject.set(x, "blockHelperName", js.undefined)
+        inline def setBlockHelperNameUndefined: Self = StObject.set(x, "blockHelperName", js.undefined)
         
-        @scala.inline
-        def setContentHelperName(value: String): Self = StObject.set(x, "contentHelperName", value.asInstanceOf[js.Any])
+        inline def setContentHelperName(value: String): Self = StObject.set(x, "contentHelperName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentHelperNameUndefined: Self = StObject.set(x, "contentHelperName", js.undefined)
+        inline def setContentHelperNameUndefined: Self = StObject.set(x, "contentHelperName", js.undefined)
         
-        @scala.inline
-        def setDefaultLayout(value: String): Self = StObject.set(x, "defaultLayout", value.asInstanceOf[js.Any])
+        inline def setDefaultLayout(value: String): Self = StObject.set(x, "defaultLayout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultLayoutUndefined: Self = StObject.set(x, "defaultLayout", js.undefined)
+        inline def setDefaultLayoutUndefined: Self = StObject.set(x, "defaultLayout", js.undefined)
         
-        @scala.inline
-        def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
+        inline def setDisableCache(value: Boolean): Self = StObject.set(x, "disableCache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableCacheUndefined: Self = StObject.set(x, "disableCache", js.undefined)
+        inline def setDisableCacheUndefined: Self = StObject.set(x, "disableCache", js.undefined)
         
-        @scala.inline
-        def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
+        inline def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtnameUndefined: Self = StObject.set(x, "extname", js.undefined)
+        inline def setExtnameUndefined: Self = StObject.set(x, "extname", js.undefined)
         
-        @scala.inline
-        def setHandlebars(value: js.Function): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
+        inline def setHandlebars(value: js.Function): Self = StObject.set(x, "handlebars", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHandlebarsUndefined: Self = StObject.set(x, "handlebars", js.undefined)
+        inline def setHandlebarsUndefined: Self = StObject.set(x, "handlebars", js.undefined)
         
-        @scala.inline
-        def setLayoutsPath(value: String): Self = StObject.set(x, "layoutsPath", value.asInstanceOf[js.Any])
+        inline def setLayoutsPath(value: String): Self = StObject.set(x, "layoutsPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayoutsPathUndefined: Self = StObject.set(x, "layoutsPath", js.undefined)
+        inline def setLayoutsPathUndefined: Self = StObject.set(x, "layoutsPath", js.undefined)
         
-        @scala.inline
-        def setPartialsPath(value: js.Array[String] | String): Self = StObject.set(x, "partialsPath", value.asInstanceOf[js.Any])
+        inline def setPartialsPath(value: js.Array[String] | String): Self = StObject.set(x, "partialsPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPartialsPathUndefined: Self = StObject.set(x, "partialsPath", js.undefined)
+        inline def setPartialsPathUndefined: Self = StObject.set(x, "partialsPath", js.undefined)
         
-        @scala.inline
-        def setPartialsPathVarargs(value: String*): Self = StObject.set(x, "partialsPath", js.Array(value :_*))
+        inline def setPartialsPathVarargs(value: String*): Self = StObject.set(x, "partialsPath", js.Array(value :_*))
         
-        @scala.inline
-        def setTemplateOptions(value: js.Object): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
+        inline def setTemplateOptions(value: js.Object): Self = StObject.set(x, "templateOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateOptionsUndefined: Self = StObject.set(x, "templateOptions", js.undefined)
+        inline def setTemplateOptionsUndefined: Self = StObject.set(x, "templateOptions", js.undefined)
         
-        @scala.inline
-        def setViewPath(value: js.Array[String] | String): Self = StObject.set(x, "viewPath", value.asInstanceOf[js.Any])
+        inline def setViewPath(value: js.Array[String] | String): Self = StObject.set(x, "viewPath", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewPathVarargs(value: String*): Self = StObject.set(x, "viewPath", js.Array(value :_*))
+        inline def setViewPathVarargs(value: String*): Self = StObject.set(x, "viewPath", js.Array(value :_*))
       }
     }
   }

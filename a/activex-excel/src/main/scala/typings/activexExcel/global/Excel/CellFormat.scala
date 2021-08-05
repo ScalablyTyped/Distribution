@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.CellFormat")
 @js.native
-class CellFormat protected ()
+/* private */ class CellFormat ()
   extends StObject
      with typings.activexExcel.Excel.CellFormat {
   
@@ -50,7 +50,7 @@ class CellFormat protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.CellFormat_typekey")
   var ExcelDotCellFormat_typekey: typings.activexExcel.Excel.CellFormat = js.native
   

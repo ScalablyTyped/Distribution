@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * During the deprecation period this constructor is private, to avoid consumers from creating
   * a `Unary` with the fallback properties for `Binary`.
   */
-class Unary protected () extends Binary {
+/* private */ class Unary () extends Binary {
   
   var expr: AST = js.native
   
@@ -26,12 +26,10 @@ object Unary {
   /**
     * Creates a unary minus expression "-x", represented as `Binary` using "0 - x".
     */
-  @scala.inline
-  def createMinus(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expr: AST): Unary = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinus")(span.asInstanceOf[js.Any], sourceSpan.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[Unary]
+  inline def createMinus(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expr: AST): Unary = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinus")(span.asInstanceOf[js.Any], sourceSpan.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[Unary]
   
   /**
     * Creates a unary plus expression "+x", represented as `Binary` using "x - 0".
     */
-  @scala.inline
-  def createPlus(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expr: AST): Unary = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlus")(span.asInstanceOf[js.Any], sourceSpan.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[Unary]
+  inline def createPlus(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expr: AST): Unary = (^.asInstanceOf[js.Dynamic].applyDynamic("createPlus")(span.asInstanceOf[js.Any], sourceSpan.asInstanceOf[js.Any], expr.asInstanceOf[js.Any])).asInstanceOf[Unary]
 }

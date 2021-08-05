@@ -13,22 +13,17 @@ trait `4` extends StObject {
 }
 object `4` {
   
-  @scala.inline
-  def apply(items: js.Array[PnpObject], returnValue: Double): `4` = {
+  inline def apply(items: js.Array[PnpObject], returnValue: Double): `4` = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[`4`]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
+  extension [Self <: `4`](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[PnpObject]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PnpObject]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: PnpObject*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PnpObject*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

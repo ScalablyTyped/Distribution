@@ -75,8 +75,7 @@ trait SourceControl extends StObject {
 }
 object SourceControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createResourceGroup: (String, String) => SourceControlResourceGroup,
     dispose: () => Unit,
     id: String,
@@ -87,61 +86,42 @@ object SourceControl {
     __obj.asInstanceOf[SourceControl]
   }
   
-  @scala.inline
-  implicit class SourceControlMutableBuilder[Self <: SourceControl] (val x: Self) extends AnyVal {
+  extension [Self <: SourceControl](x: Self) {
     
-    @scala.inline
-    def setAcceptInputCommand(value: Command): Self = StObject.set(x, "acceptInputCommand", value.asInstanceOf[js.Any])
+    inline def setAcceptInputCommand(value: Command): Self = StObject.set(x, "acceptInputCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptInputCommandUndefined: Self = StObject.set(x, "acceptInputCommand", js.undefined)
+    inline def setAcceptInputCommandUndefined: Self = StObject.set(x, "acceptInputCommand", js.undefined)
     
-    @scala.inline
-    def setCommitTemplate(value: String): Self = StObject.set(x, "commitTemplate", value.asInstanceOf[js.Any])
+    inline def setCommitTemplate(value: String): Self = StObject.set(x, "commitTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitTemplateUndefined: Self = StObject.set(x, "commitTemplate", js.undefined)
+    inline def setCommitTemplateUndefined: Self = StObject.set(x, "commitTemplate", js.undefined)
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setCreateResourceGroup(value: (String, String) => SourceControlResourceGroup): Self = StObject.set(x, "createResourceGroup", js.Any.fromFunction2(value))
+    inline def setCreateResourceGroup(value: (String, String) => SourceControlResourceGroup): Self = StObject.set(x, "createResourceGroup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputBox(value: SourceControlInputBox): Self = StObject.set(x, "inputBox", value.asInstanceOf[js.Any])
+    inline def setInputBox(value: SourceControlInputBox): Self = StObject.set(x, "inputBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuickDiffProvider(value: QuickDiffProvider): Self = StObject.set(x, "quickDiffProvider", value.asInstanceOf[js.Any])
+    inline def setQuickDiffProvider(value: QuickDiffProvider): Self = StObject.set(x, "quickDiffProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuickDiffProviderUndefined: Self = StObject.set(x, "quickDiffProvider", js.undefined)
+    inline def setQuickDiffProviderUndefined: Self = StObject.set(x, "quickDiffProvider", js.undefined)
     
-    @scala.inline
-    def setRootUri(value: Uri): Self = StObject.set(x, "rootUri", value.asInstanceOf[js.Any])
+    inline def setRootUri(value: Uri): Self = StObject.set(x, "rootUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUriUndefined: Self = StObject.set(x, "rootUri", js.undefined)
+    inline def setRootUriUndefined: Self = StObject.set(x, "rootUri", js.undefined)
     
-    @scala.inline
-    def setStatusBarCommands(value: js.Array[Command]): Self = StObject.set(x, "statusBarCommands", value.asInstanceOf[js.Any])
+    inline def setStatusBarCommands(value: js.Array[Command]): Self = StObject.set(x, "statusBarCommands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarCommandsUndefined: Self = StObject.set(x, "statusBarCommands", js.undefined)
+    inline def setStatusBarCommandsUndefined: Self = StObject.set(x, "statusBarCommands", js.undefined)
     
-    @scala.inline
-    def setStatusBarCommandsVarargs(value: Command*): Self = StObject.set(x, "statusBarCommands", js.Array(value :_*))
+    inline def setStatusBarCommandsVarargs(value: Command*): Self = StObject.set(x, "statusBarCommands", js.Array(value :_*))
   }
 }

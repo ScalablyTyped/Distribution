@@ -20,8 +20,7 @@ trait `9` extends StObject {
 }
 object `9` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     init: HTMLElement => BindingHandlerControlsDescendant,
     update: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit
   ): `9` = {
@@ -29,13 +28,10 @@ object `9` {
     __obj.asInstanceOf[`9`]
   }
   
-  @scala.inline
-  implicit class `9MutableBuilder`[Self <: `9`] (val x: Self) extends AnyVal {
+  extension [Self <: `9`](x: Self) {
     
-    @scala.inline
-    def setInit(value: HTMLElement => BindingHandlerControlsDescendant): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: HTMLElement => BindingHandlerControlsDescendant): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (HTMLElement, js.Function0[MaybeSubscribable[js.Any]], AllBindings) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

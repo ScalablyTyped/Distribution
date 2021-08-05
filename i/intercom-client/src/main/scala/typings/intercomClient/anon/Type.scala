@@ -17,23 +17,18 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(identifier: VisitorIdentifier, user: UserIdentifier): Type = {
+  inline def apply(identifier: VisitorIdentifier, user: UserIdentifier): Type = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: VisitorIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: VisitorIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: user): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: user): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: UserIdentifier): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: UserIdentifier): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

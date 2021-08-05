@@ -13,19 +13,15 @@ trait DescribeTunnelResponse extends StObject {
 }
 object DescribeTunnelResponse {
   
-  @scala.inline
-  def apply(): DescribeTunnelResponse = {
+  inline def apply(): DescribeTunnelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTunnelResponse]
   }
   
-  @scala.inline
-  implicit class DescribeTunnelResponseMutableBuilder[Self <: DescribeTunnelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTunnelResponse](x: Self) {
     
-    @scala.inline
-    def setTunnel(value: Tunnel): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
+    inline def setTunnel(value: Tunnel): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
+    inline def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
   }
 }

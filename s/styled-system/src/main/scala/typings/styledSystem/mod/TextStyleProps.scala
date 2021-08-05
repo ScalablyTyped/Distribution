@@ -10,25 +10,19 @@ trait TextStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StOb
 }
 object TextStyleProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): TextStyleProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): TextStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextStyleProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class TextStylePropsMutableBuilder[Self <: TextStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & TextStyleProps[ThemeType]) extends AnyVal {
+  extension [Self <: TextStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & TextStyleProps[ThemeType]) {
     
-    @scala.inline
-    def setTextStyle(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
+    inline def setTextStyleNull: Self = StObject.set(x, "textStyle", null)
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
     
-    @scala.inline
-    def setTextStyleVarargs(value: (String | Null)*): Self = StObject.set(x, "textStyle", js.Array(value :_*))
+    inline def setTextStyleVarargs(value: (String | Null)*): Self = StObject.set(x, "textStyle", js.Array(value :_*))
   }
 }

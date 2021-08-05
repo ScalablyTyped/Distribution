@@ -17,22 +17,17 @@ trait AttrsBackend extends StObject {
 }
 object AttrsBackend {
   
-  @scala.inline
-  def apply(attrs: BatchMatMulAttrs, backend: MathBackendCPU, inputs: BatchMatMulInputs): AttrsBackend = {
+  inline def apply(attrs: BatchMatMulAttrs, backend: MathBackendCPU, inputs: BatchMatMulInputs): AttrsBackend = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsBackend]
   }
   
-  @scala.inline
-  implicit class AttrsBackendMutableBuilder[Self <: AttrsBackend] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsBackend](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: BatchMatMulAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: BatchMatMulAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: BatchMatMulInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: BatchMatMulInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

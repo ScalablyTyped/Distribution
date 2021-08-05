@@ -12,8 +12,6 @@ object storyboardMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(iosProject: IosProject): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iosProject.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def default(iosProject: IosProject, config: ImageImageResizeMode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iosProject.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(iosProject: IosProject): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(iosProject.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def default(iosProject: IosProject, config: ImageImageResizeMode): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(iosProject.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

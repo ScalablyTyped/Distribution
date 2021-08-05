@@ -14,22 +14,17 @@ trait TMC extends StObject {
 }
 object TMC {
   
-  @scala.inline
-  def apply(distance: Double, lcode: String, status: String): TMC = {
+  inline def apply(distance: Double, lcode: String, status: String): TMC = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], lcode = lcode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TMC]
   }
   
-  @scala.inline
-  implicit class TMCMutableBuilder[Self <: TMC] (val x: Self) extends AnyVal {
+  extension [Self <: TMC](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLcode(value: String): Self = StObject.set(x, "lcode", value.asInstanceOf[js.Any])
+    inline def setLcode(value: String): Self = StObject.set(x, "lcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

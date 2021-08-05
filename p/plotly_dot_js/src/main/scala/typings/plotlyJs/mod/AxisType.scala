@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AxisType extends StObject
 object AxisType {
   
-  @scala.inline
-  def _dash: `-_` = "-".asInstanceOf[`-_`]
+  inline def _dash: `-_` = "-".asInstanceOf[`-_`]
   
-  @scala.inline
-  def category: typings.plotlyJs.plotlyJsStrings.category = "category".asInstanceOf[typings.plotlyJs.plotlyJsStrings.category]
+  inline def category: typings.plotlyJs.plotlyJsStrings.category = "category".asInstanceOf[typings.plotlyJs.plotlyJsStrings.category]
   
-  @scala.inline
-  def date: typings.plotlyJs.plotlyJsStrings.date = "date".asInstanceOf[typings.plotlyJs.plotlyJsStrings.date]
+  inline def date: typings.plotlyJs.plotlyJsStrings.date = "date".asInstanceOf[typings.plotlyJs.plotlyJsStrings.date]
   
-  @scala.inline
-  def linear: typings.plotlyJs.plotlyJsStrings.linear = "linear".asInstanceOf[typings.plotlyJs.plotlyJsStrings.linear]
+  inline def linear: typings.plotlyJs.plotlyJsStrings.linear = "linear".asInstanceOf[typings.plotlyJs.plotlyJsStrings.linear]
   
-  @scala.inline
-  def log: typings.plotlyJs.plotlyJsStrings.log = "log".asInstanceOf[typings.plotlyJs.plotlyJsStrings.log]
+  inline def log: typings.plotlyJs.plotlyJsStrings.log = "log".asInstanceOf[typings.plotlyJs.plotlyJsStrings.log]
   
-  @scala.inline
-  def multicategory: typings.plotlyJs.plotlyJsStrings.multicategory = "multicategory".asInstanceOf[typings.plotlyJs.plotlyJsStrings.multicategory]
+  inline def multicategory: typings.plotlyJs.plotlyJsStrings.multicategory = "multicategory".asInstanceOf[typings.plotlyJs.plotlyJsStrings.multicategory]
 }

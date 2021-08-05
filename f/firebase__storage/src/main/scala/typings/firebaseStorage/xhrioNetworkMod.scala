@@ -13,12 +13,12 @@ object xhrioNetworkMod {
     extends StObject
        with XhrIo {
     
-    var errorCode_ : js.Any = js.native
+    /* private */ var errorCode_ : js.Any = js.native
     
-    var sendPromise_ : js.Any = js.native
+    /* private */ var sendPromise_ : js.Any = js.native
     
-    var sent_ : js.Any = js.native
+    /* private */ var sent_ : js.Any = js.native
     
-    var xhr_ : js.Any = js.native
+    /* private */ var xhr_ : js.Any = js.native
   }
 }

@@ -20,28 +20,21 @@ trait DistributionTrustedSigner extends StObject {
 }
 object DistributionTrustedSigner {
   
-  @scala.inline
-  def apply(): DistributionTrustedSigner = {
+  inline def apply(): DistributionTrustedSigner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DistributionTrustedSigner]
   }
   
-  @scala.inline
-  implicit class DistributionTrustedSignerMutableBuilder[Self <: DistributionTrustedSigner] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionTrustedSigner](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setItems(value: Input[js.Array[Input[DistributionTrustedSignerItem]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: Input[js.Array[Input[DistributionTrustedSignerItem]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: Input[DistributionTrustedSignerItem]*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: Input[DistributionTrustedSignerItem]*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

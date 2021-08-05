@@ -26,22 +26,17 @@ trait FileChooserOpenedEvent extends StObject {
 }
 object FileChooserOpenedEvent {
   
-  @scala.inline
-  def apply(backendNodeId: BackendNodeId, frameId: FrameId, mode: selectSingle | selectMultiple): FileChooserOpenedEvent = {
+  inline def apply(backendNodeId: BackendNodeId, frameId: FrameId, mode: selectSingle | selectMultiple): FileChooserOpenedEvent = {
     val __obj = js.Dynamic.literal(backendNodeId = backendNodeId.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileChooserOpenedEvent]
   }
   
-  @scala.inline
-  implicit class FileChooserOpenedEventMutableBuilder[Self <: FileChooserOpenedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FileChooserOpenedEvent](x: Self) {
     
-    @scala.inline
-    def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+    inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: selectSingle | selectMultiple): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: selectSingle | selectMultiple): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

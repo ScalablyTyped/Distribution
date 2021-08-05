@@ -13,19 +13,15 @@ trait AbortConfig extends StObject {
 }
 object AbortConfig {
   
-  @scala.inline
-  def apply(criteriaList: AbortCriteriaList): AbortConfig = {
+  inline def apply(criteriaList: AbortCriteriaList): AbortConfig = {
     val __obj = js.Dynamic.literal(criteriaList = criteriaList.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortConfig]
   }
   
-  @scala.inline
-  implicit class AbortConfigMutableBuilder[Self <: AbortConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AbortConfig](x: Self) {
     
-    @scala.inline
-    def setCriteriaList(value: AbortCriteriaList): Self = StObject.set(x, "criteriaList", value.asInstanceOf[js.Any])
+    inline def setCriteriaList(value: AbortCriteriaList): Self = StObject.set(x, "criteriaList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaListVarargs(value: AbortCriteria*): Self = StObject.set(x, "criteriaList", js.Array(value :_*))
+    inline def setCriteriaListVarargs(value: AbortCriteria*): Self = StObject.set(x, "criteriaList", js.Array(value :_*))
   }
 }

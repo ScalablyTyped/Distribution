@@ -13,16 +13,13 @@ trait Dictk
 }
 object Dictk {
   
-  @scala.inline
-  def apply(localeMatcher: String): Dictk = {
+  inline def apply(localeMatcher: String): Dictk = {
     val __obj = js.Dynamic.literal(localeMatcher = localeMatcher.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictk]
   }
   
-  @scala.inline
-  implicit class DictkMutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
+  extension [Self <: Dictk](x: Self) {
     
-    @scala.inline
-    def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+    inline def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
   }
 }

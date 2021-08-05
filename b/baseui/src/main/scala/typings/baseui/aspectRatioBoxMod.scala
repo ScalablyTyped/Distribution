@@ -34,20 +34,16 @@ object aspectRatioBoxMod {
   }
   object AspectRatioBoxProps {
     
-    @scala.inline
-    def apply(): AspectRatioBoxProps = {
+    inline def apply(): AspectRatioBoxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AspectRatioBoxProps]
     }
     
-    @scala.inline
-    implicit class AspectRatioBoxPropsMutableBuilder[Self <: AspectRatioBoxProps] (val x: Self) extends AnyVal {
+    extension [Self <: AspectRatioBoxProps](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+      inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
     }
   }
 }

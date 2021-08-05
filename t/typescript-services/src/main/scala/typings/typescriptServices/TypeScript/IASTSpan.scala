@@ -16,25 +16,19 @@ trait IASTSpan extends StObject {
 }
 object IASTSpan {
   
-  @scala.inline
-  def apply(_end: Double, _start: Double, end: () => Double, start: () => Double): IASTSpan = {
+  inline def apply(_end: Double, _start: Double, end: () => Double, start: () => Double): IASTSpan = {
     val __obj = js.Dynamic.literal(_end = _end.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), start = js.Any.fromFunction0(start))
     __obj.asInstanceOf[IASTSpan]
   }
   
-  @scala.inline
-  implicit class IASTSpanMutableBuilder[Self <: IASTSpan] (val x: Self) extends AnyVal {
+  extension [Self <: IASTSpan](x: Self) {
     
-    @scala.inline
-    def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => Double): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Double): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_end(value: Double): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
+    inline def set_end(value: Double): Self = StObject.set(x, "_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_start(value: Double): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: Double): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
   }
 }

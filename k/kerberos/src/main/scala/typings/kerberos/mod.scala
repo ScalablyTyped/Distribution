@@ -161,14 +161,10 @@ object mod {
     var username: String = js.native
   }
   
-  @scala.inline
-  def checkPassword(name: String, password: String, service: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def checkPassword(name: String, password: String, service: String, callback: js.Function1[/* err */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def checkPassword(name: String, password: String, service: String, defaultRealm: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any], defaultRealm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def checkPassword(
+  inline def checkPassword(name: String, password: String, service: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def checkPassword(name: String, password: String, service: String, callback: js.Function1[/* err */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkPassword(name: String, password: String, service: String, defaultRealm: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any], defaultRealm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def checkPassword(
     name: String,
     password: String,
     service: String,
@@ -176,28 +172,20 @@ object mod {
     callback: js.Function1[/* err */ String, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPassword")(name.asInstanceOf[js.Any], password.asInstanceOf[js.Any], service.asInstanceOf[js.Any], defaultRealm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def initializeClient(service: String): js.Promise[KerberosClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KerberosClient]]
-  @scala.inline
-  def initializeClient(service: String, callback: js.Function2[/* err */ String, /* client */ KerberosClient, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initializeClient(service: String, options: InitializeClientOptions): js.Promise[KerberosClient] = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KerberosClient]]
-  @scala.inline
-  def initializeClient(
+  inline def initializeClient(service: String): js.Promise[KerberosClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KerberosClient]]
+  inline def initializeClient(service: String, callback: js.Function2[/* err */ String, /* client */ KerberosClient, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeClient(service: String, options: InitializeClientOptions): js.Promise[KerberosClient] = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KerberosClient]]
+  inline def initializeClient(
     service: String,
     options: InitializeClientOptions,
     callback: js.Function2[/* err */ String, /* client */ KerberosClient, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeClient")(service.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def initializeServer(service: String): js.Promise[KerberosServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeServer")(service.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KerberosServer]]
-  @scala.inline
-  def initializeServer(service: String, callback: js.Function2[/* err */ String, /* server */ KerberosServer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeServer")(service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeServer(service: String): js.Promise[KerberosServer] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeServer")(service.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KerberosServer]]
+  inline def initializeServer(service: String, callback: js.Function2[/* err */ String, /* server */ KerberosServer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeServer")(service.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def principalDetails(service: String, hostname: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("principalDetails")(service.asInstanceOf[js.Any], hostname.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def principalDetails(
+  inline def principalDetails(service: String, hostname: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("principalDetails")(service.asInstanceOf[js.Any], hostname.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def principalDetails(
     service: String,
     hostname: String,
     callback: js.Function2[/* err */ String, /* details */ String, js.Any]
@@ -222,32 +210,24 @@ object mod {
   }
   object InitializeClientOptions {
     
-    @scala.inline
-    def apply(): InitializeClientOptions = {
+    inline def apply(): InitializeClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitializeClientOptions]
     }
     
-    @scala.inline
-    implicit class InitializeClientOptionsMutableBuilder[Self <: InitializeClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InitializeClientOptions](x: Self) {
       
-      @scala.inline
-      def setGssFlag(value: Double): Self = StObject.set(x, "gssFlag", value.asInstanceOf[js.Any])
+      inline def setGssFlag(value: Double): Self = StObject.set(x, "gssFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGssFlagUndefined: Self = StObject.set(x, "gssFlag", js.undefined)
+      inline def setGssFlagUndefined: Self = StObject.set(x, "gssFlag", js.undefined)
       
-      @scala.inline
-      def setMechOID(value: Double): Self = StObject.set(x, "mechOID", value.asInstanceOf[js.Any])
+      inline def setMechOID(value: Double): Self = StObject.set(x, "mechOID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMechOIDUndefined: Self = StObject.set(x, "mechOID", js.undefined)
+      inline def setMechOIDUndefined: Self = StObject.set(x, "mechOID", js.undefined)
       
-      @scala.inline
-      def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: String): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+      inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
     }
   }
   
@@ -260,20 +240,16 @@ object mod {
   }
   object WrapOptions {
     
-    @scala.inline
-    def apply(): WrapOptions = {
+    inline def apply(): WrapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrapOptions]
     }
     
-    @scala.inline
-    implicit class WrapOptionsMutableBuilder[Self <: WrapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WrapOptions](x: Self) {
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
 }

@@ -10,8 +10,7 @@ trait DisableKeyOutput
      with typings.awsSdkClientKmsBrowser.typesDisableKeyOutputMod.DisableKeyOutput
 object DisableKeyOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): DisableKeyOutput = {
+  inline def apply($metadata: ResponseMetadata): DisableKeyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableKeyOutput]
   }

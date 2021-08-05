@@ -16,22 +16,22 @@ object interactionIndicatorViewMod {
   trait InteractionIndicatorView
     extends typings.playable.viewMod.default[IInteractionIndicatorViewStyles] {
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _decreaseVolumeIcon: js.Any = js.native
+    /* private */ var _decreaseVolumeIcon: js.Any = js.native
     
-    var _forwardIcon: js.Any = js.native
+    /* private */ var _forwardIcon: js.Any = js.native
     
-    var _increaseVolumeIcon: js.Any = js.native
+    /* private */ var _increaseVolumeIcon: js.Any = js.native
     
-    var _muteIcon: js.Any = js.native
+    /* private */ var _muteIcon: js.Any = js.native
     
-    var _pauseIcon: js.Any = js.native
+    /* private */ var _pauseIcon: js.Any = js.native
     
-    var _playIcon: js.Any = js.native
+    /* private */ var _playIcon: js.Any = js.native
     
-    var _rewindIcon: js.Any = js.native
+    /* private */ var _rewindIcon: js.Any = js.native
     
     def activateDecreaseVolumeIcon(): Unit = js.native
     

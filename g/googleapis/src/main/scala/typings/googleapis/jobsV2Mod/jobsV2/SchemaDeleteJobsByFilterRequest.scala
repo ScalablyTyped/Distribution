@@ -25,25 +25,19 @@ trait SchemaDeleteJobsByFilterRequest extends StObject {
 }
 object SchemaDeleteJobsByFilterRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteJobsByFilterRequest = {
+  inline def apply(): SchemaDeleteJobsByFilterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteJobsByFilterRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteJobsByFilterRequestMutableBuilder[Self <: SchemaDeleteJobsByFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteJobsByFilterRequest](x: Self) {
     
-    @scala.inline
-    def setDisableFastProcess(value: Boolean): Self = StObject.set(x, "disableFastProcess", value.asInstanceOf[js.Any])
+    inline def setDisableFastProcess(value: Boolean): Self = StObject.set(x, "disableFastProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableFastProcessUndefined: Self = StObject.set(x, "disableFastProcess", js.undefined)
+    inline def setDisableFastProcessUndefined: Self = StObject.set(x, "disableFastProcess", js.undefined)
     
-    @scala.inline
-    def setFilter(value: SchemaFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SchemaFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

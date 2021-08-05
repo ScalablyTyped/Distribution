@@ -125,7 +125,7 @@ object mod {
     def this(strict: Boolean, opt: SAXOptions) = this()
     def this(strict: Unit, opt: SAXOptions) = this()
     
-    var _parser: SAXParser = js.native
+    /* private */ var _parser: SAXParser = js.native
     
     def on(event: String, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
     def on(event: js.Symbol, listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, Unit]): this.type = js.native
@@ -183,23 +183,15 @@ object mod {
     def on_unpipe(event: unpipe, listener: js.ThisFunction1[/* this */ this.type, /* src */ Readable, Unit]): this.type = js.native
   }
   
-  @scala.inline
-  def createStream(): SAXStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[SAXStream]
-  @scala.inline
-  def createStream(strict: Boolean): SAXStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(strict.asInstanceOf[js.Any]).asInstanceOf[SAXStream]
-  @scala.inline
-  def createStream(strict: Boolean, opt: SAXOptions): SAXStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXStream]
-  @scala.inline
-  def createStream(strict: Unit, opt: SAXOptions): SAXStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXStream]
+  inline def createStream(): SAXStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[SAXStream]
+  inline def createStream(strict: Boolean): SAXStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(strict.asInstanceOf[js.Any]).asInstanceOf[SAXStream]
+  inline def createStream(strict: Boolean, opt: SAXOptions): SAXStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXStream]
+  inline def createStream(strict: Unit, opt: SAXOptions): SAXStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXStream]
   
-  @scala.inline
-  def parser(): SAXParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")().asInstanceOf[SAXParser]
-  @scala.inline
-  def parser(strict: Boolean): SAXParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")(strict.asInstanceOf[js.Any]).asInstanceOf[SAXParser]
-  @scala.inline
-  def parser(strict: Boolean, opt: SAXOptions): SAXParser = (^.asInstanceOf[js.Dynamic].applyDynamic("parser")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXParser]
-  @scala.inline
-  def parser(strict: Unit, opt: SAXOptions): SAXParser = (^.asInstanceOf[js.Dynamic].applyDynamic("parser")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXParser]
+  inline def parser(): SAXParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")().asInstanceOf[SAXParser]
+  inline def parser(strict: Boolean): SAXParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")(strict.asInstanceOf[js.Any]).asInstanceOf[SAXParser]
+  inline def parser(strict: Boolean, opt: SAXOptions): SAXParser = (^.asInstanceOf[js.Dynamic].applyDynamic("parser")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXParser]
+  inline def parser(strict: Unit, opt: SAXOptions): SAXParser = (^.asInstanceOf[js.Dynamic].applyDynamic("parser")(strict.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[SAXParser]
   
   trait BaseTag extends StObject {
     
@@ -209,20 +201,16 @@ object mod {
   }
   object BaseTag {
     
-    @scala.inline
-    def apply(isSelfClosing: Boolean, name: String): BaseTag = {
+    inline def apply(isSelfClosing: Boolean, name: String): BaseTag = {
       val __obj = js.Dynamic.literal(isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseTag]
     }
     
-    @scala.inline
-    implicit class BaseTagMutableBuilder[Self <: BaseTag] (val x: Self) extends AnyVal {
+    extension [Self <: BaseTag](x: Self) {
       
-      @scala.inline
-      def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
+      inline def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,17 +222,14 @@ object mod {
   }
   object QualifiedAttribute {
     
-    @scala.inline
-    def apply(local: String, name: String, prefix: String, uri: String, value: String): QualifiedAttribute = {
+    inline def apply(local: String, name: String, prefix: String, uri: String, value: String): QualifiedAttribute = {
       val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[QualifiedAttribute]
     }
     
-    @scala.inline
-    implicit class QualifiedAttributeMutableBuilder[Self <: QualifiedAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: QualifiedAttribute](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,26 +245,20 @@ object mod {
   }
   object QualifiedName {
     
-    @scala.inline
-    def apply(local: String, name: String, prefix: String, uri: String): QualifiedName = {
+    inline def apply(local: String, name: String, prefix: String, uri: String): QualifiedName = {
       val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[QualifiedName]
     }
     
-    @scala.inline
-    implicit class QualifiedNameMutableBuilder[Self <: QualifiedName] (val x: Self) extends AnyVal {
+    extension [Self <: QualifiedName](x: Self) {
       
-      @scala.inline
-      def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -296,8 +275,7 @@ object mod {
   }
   object QualifiedTag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: StringDictionary[QualifiedAttribute],
       isSelfClosing: Boolean,
       local: String,
@@ -310,17 +288,13 @@ object mod {
       __obj.asInstanceOf[QualifiedTag]
     }
     
-    @scala.inline
-    implicit class QualifiedTagMutableBuilder[Self <: QualifiedTag] (val x: Self) extends AnyVal {
+    extension [Self <: QualifiedTag](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[QualifiedAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[QualifiedAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
+      inline def setIsSelfClosing(value: Boolean): Self = StObject.set(x, "isSelfClosing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNs(value: StringDictionary[String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
+      inline def setNs(value: StringDictionary[String]): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     }
   }
   
@@ -340,50 +314,36 @@ object mod {
   }
   object SAXOptions {
     
-    @scala.inline
-    def apply(): SAXOptions = {
+    inline def apply(): SAXOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SAXOptions]
     }
     
-    @scala.inline
-    implicit class SAXOptionsMutableBuilder[Self <: SAXOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SAXOptions](x: Self) {
       
-      @scala.inline
-      def setLowercase(value: Boolean): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
+      inline def setLowercase(value: Boolean): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowercaseUndefined: Self = StObject.set(x, "lowercase", js.undefined)
+      inline def setLowercaseUndefined: Self = StObject.set(x, "lowercase", js.undefined)
       
-      @scala.inline
-      def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+      inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
-      @scala.inline
-      def setNoscript(value: Boolean): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      inline def setNoscript(value: Boolean): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
+      inline def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       
-      @scala.inline
-      def setXmlns(value: Boolean): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
+      inline def setXmlns(value: Boolean): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
+      inline def setXmlnsUndefined: Self = StObject.set(x, "xmlns", js.undefined)
     }
   }
   
@@ -395,17 +355,14 @@ object mod {
   }
   object Tag {
     
-    @scala.inline
-    def apply(attributes: StringDictionary[String], isSelfClosing: Boolean, name: String): Tag = {
+    inline def apply(attributes: StringDictionary[String], isSelfClosing: Boolean, name: String): Tag = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,22 +13,17 @@ trait PlacementGroupInfo extends StObject {
 }
 object PlacementGroupInfo {
   
-  @scala.inline
-  def apply(): PlacementGroupInfo = {
+  inline def apply(): PlacementGroupInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementGroupInfo]
   }
   
-  @scala.inline
-  implicit class PlacementGroupInfoMutableBuilder[Self <: PlacementGroupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementGroupInfo](x: Self) {
     
-    @scala.inline
-    def setSupportedStrategies(value: PlacementGroupStrategyList): Self = StObject.set(x, "SupportedStrategies", value.asInstanceOf[js.Any])
+    inline def setSupportedStrategies(value: PlacementGroupStrategyList): Self = StObject.set(x, "SupportedStrategies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedStrategiesUndefined: Self = StObject.set(x, "SupportedStrategies", js.undefined)
+    inline def setSupportedStrategiesUndefined: Self = StObject.set(x, "SupportedStrategies", js.undefined)
     
-    @scala.inline
-    def setSupportedStrategiesVarargs(value: PlacementGroupStrategy*): Self = StObject.set(x, "SupportedStrategies", js.Array(value :_*))
+    inline def setSupportedStrategiesVarargs(value: PlacementGroupStrategy*): Self = StObject.set(x, "SupportedStrategies", js.Array(value :_*))
   }
 }

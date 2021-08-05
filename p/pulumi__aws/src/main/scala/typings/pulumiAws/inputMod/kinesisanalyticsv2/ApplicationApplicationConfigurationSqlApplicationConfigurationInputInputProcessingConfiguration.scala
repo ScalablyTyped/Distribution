@@ -16,8 +16,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPr
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inputLambdaProcessor: Input[
       ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor
     ]
@@ -26,11 +25,9 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputP
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration](x: Self) {
     
-    @scala.inline
-    def setInputLambdaProcessor(
+    inline def setInputLambdaProcessor(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor
         ]

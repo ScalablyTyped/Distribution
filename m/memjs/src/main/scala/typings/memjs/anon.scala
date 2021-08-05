@@ -13,20 +13,16 @@ object anon {
   }
   object Expires {
     
-    @scala.inline
-    def apply(): Expires = {
+    inline def apply(): Expires = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Expires]
     }
     
-    @scala.inline
-    implicit class ExpiresMutableBuilder[Self <: Expires] (val x: Self) extends AnyVal {
+    extension [Self <: Expires](x: Self) {
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
     }
   }
   
@@ -38,20 +34,16 @@ object anon {
   }
   object Flags {
     
-    @scala.inline
-    def apply(flags: Buffer, value: Buffer): Flags = {
+    inline def apply(flags: Buffer, value: Buffer): Flags = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Flags]
     }
     
-    @scala.inline
-    implicit class FlagsMutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
+    extension [Self <: Flags](x: Self) {
       
-      @scala.inline
-      def setFlags(value: Buffer): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Buffer): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,26 +55,20 @@ object anon {
   }
   object Initial {
     
-    @scala.inline
-    def apply(): Initial = {
+    inline def apply(): Initial = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Initial]
     }
     
-    @scala.inline
-    implicit class InitialMutableBuilder[Self <: Initial] (val x: Self) extends AnyVal {
+    extension [Self <: Initial](x: Self) {
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+      inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     }
   }
   
@@ -92,17 +78,14 @@ object anon {
   }
   object Log {
     
-    @scala.inline
-    def apply(log: /* repeated */ js.Any => Unit): Log = {
+    inline def apply(log: /* repeated */ js.Any => Unit): Log = {
       val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
       __obj.asInstanceOf[Log]
     }
     
-    @scala.inline
-    implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+    extension [Self <: Log](x: Self) {
       
-      @scala.inline
-      def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     }
   }
   
@@ -114,26 +97,20 @@ object anon {
   }
   object Success {
     
-    @scala.inline
-    def apply(success: Boolean): Success = {
+    inline def apply(success: Boolean): Success = {
       val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
       __obj.asInstanceOf[Success]
     }
     
-    @scala.inline
-    implicit class SuccessMutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
+    extension [Self <: Success](x: Self) {
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

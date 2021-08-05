@@ -22,43 +22,31 @@ trait Faicon extends StObject {
 }
 object Faicon {
   
-  @scala.inline
-  def apply(): Faicon = {
+  inline def apply(): Faicon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Faicon]
   }
   
-  @scala.inline
-  implicit class FaiconMutableBuilder[Self <: Faicon] (val x: Self) extends AnyVal {
+  extension [Self <: Faicon](x: Self) {
     
-    @scala.inline
-    def `setFa-icon`(value: String): Self = StObject.set(x, "fa-icon", value.asInstanceOf[js.Any])
+    inline def `setFa-icon`(value: String): Self = StObject.set(x, "fa-icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFa-iconUndefined`: Self = StObject.set(x, "fa-icon", js.undefined)
+    inline def `setFa-iconUndefined`: Self = StObject.set(x, "fa-icon", js.undefined)
     
-    @scala.inline
-    def setIgnoreConfigUpdate(value: Boolean): Self = StObject.set(x, "ignoreConfigUpdate", value.asInstanceOf[js.Any])
+    inline def setIgnoreConfigUpdate(value: Boolean): Self = StObject.set(x, "ignoreConfigUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreConfigUpdateUndefined: Self = StObject.set(x, "ignoreConfigUpdate", js.undefined)
+    inline def setIgnoreConfigUpdateUndefined: Self = StObject.set(x, "ignoreConfigUpdate", js.undefined)
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSingleton(value: Boolean): Self = StObject.set(x, "singleton", value.asInstanceOf[js.Any])
+    inline def setSingleton(value: Boolean): Self = StObject.set(x, "singleton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingletonUndefined: Self = StObject.set(x, "singleton", js.undefined)
+    inline def setSingletonUndefined: Self = StObject.set(x, "singleton", js.undefined)
   }
 }

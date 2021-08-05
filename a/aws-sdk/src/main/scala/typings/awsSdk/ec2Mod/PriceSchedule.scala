@@ -28,37 +28,27 @@ trait PriceSchedule extends StObject {
 }
 object PriceSchedule {
   
-  @scala.inline
-  def apply(): PriceSchedule = {
+  inline def apply(): PriceSchedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PriceSchedule]
   }
   
-  @scala.inline
-  implicit class PriceScheduleMutableBuilder[Self <: PriceSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: PriceSchedule](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: CurrencyCodeValues): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "Price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "Price", js.undefined)
     
-    @scala.inline
-    def setTerm(value: Long): Self = StObject.set(x, "Term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: Long): Self = StObject.set(x, "Term", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermUndefined: Self = StObject.set(x, "Term", js.undefined)
+    inline def setTermUndefined: Self = StObject.set(x, "Term", js.undefined)
   }
 }

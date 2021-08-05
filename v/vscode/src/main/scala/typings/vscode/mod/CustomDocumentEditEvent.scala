@@ -44,28 +44,21 @@ trait CustomDocumentEditEvent[T /* <: CustomDocument */] extends StObject {
 }
 object CustomDocumentEditEvent {
   
-  @scala.inline
-  def apply[T /* <: CustomDocument */](document: T, redo: () => Thenable[Unit] | Unit, undo: () => Thenable[Unit] | Unit): CustomDocumentEditEvent[T] = {
+  inline def apply[T /* <: CustomDocument */](document: T, redo: () => Thenable[Unit] | Unit, undo: () => Thenable[Unit] | Unit): CustomDocumentEditEvent[T] = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any], redo = js.Any.fromFunction0(redo), undo = js.Any.fromFunction0(undo))
     __obj.asInstanceOf[CustomDocumentEditEvent[T]]
   }
   
-  @scala.inline
-  implicit class CustomDocumentEditEventMutableBuilder[Self <: CustomDocumentEditEvent[?], T /* <: CustomDocument */] (val x: Self & CustomDocumentEditEvent[T]) extends AnyVal {
+  extension [Self <: CustomDocumentEditEvent[?], T /* <: CustomDocument */](x: Self & CustomDocumentEditEvent[T]) {
     
-    @scala.inline
-    def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setRedo(value: () => Thenable[Unit] | Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
+    inline def setRedo(value: () => Thenable[Unit] | Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUndo(value: () => Thenable[Unit] | Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
+    inline def setUndo(value: () => Thenable[Unit] | Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
   }
 }

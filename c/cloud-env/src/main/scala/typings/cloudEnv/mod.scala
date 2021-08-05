@@ -86,10 +86,8 @@ object mod {
   @js.native
   val POSTGRESQL_DB_USERNAME: MaybeStr = js.native
   
-  @scala.inline
-  def get(key: String): MaybeStr = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[MaybeStr]
-  @scala.inline
-  def get(key: String, default_key: String): MaybeStr = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], default_key.asInstanceOf[js.Any])).asInstanceOf[MaybeStr]
+  inline def get(key: String): MaybeStr = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[MaybeStr]
+  inline def get(key: String, default_key: String): MaybeStr = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any], default_key.asInstanceOf[js.Any])).asInstanceOf[MaybeStr]
   
   trait DefaultSettings extends StObject {
     
@@ -133,128 +131,88 @@ object mod {
   }
   object DefaultSettings {
     
-    @scala.inline
-    def apply(): DefaultSettings = {
+    inline def apply(): DefaultSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DefaultSettings]
     }
     
-    @scala.inline
-    implicit class DefaultSettingsMutableBuilder[Self <: DefaultSettings] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultSettings](x: Self) {
       
-      @scala.inline
-      def setAPP_NAME(value: String): Self = StObject.set(x, "APP_NAME", value.asInstanceOf[js.Any])
+      inline def setAPP_NAME(value: String): Self = StObject.set(x, "APP_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPP_NAMEUndefined: Self = StObject.set(x, "APP_NAME", js.undefined)
+      inline def setAPP_NAMEUndefined: Self = StObject.set(x, "APP_NAME", js.undefined)
       
-      @scala.inline
-      def setHOSTNAME(value: String): Self = StObject.set(x, "HOSTNAME", value.asInstanceOf[js.Any])
+      inline def setHOSTNAME(value: String): Self = StObject.set(x, "HOSTNAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHOSTNAMEUndefined: Self = StObject.set(x, "HOSTNAME", js.undefined)
+      inline def setHOSTNAMEUndefined: Self = StObject.set(x, "HOSTNAME", js.undefined)
       
-      @scala.inline
-      def setIP(value: String): Self = StObject.set(x, "IP", value.asInstanceOf[js.Any])
+      inline def setIP(value: String): Self = StObject.set(x, "IP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIPUndefined: Self = StObject.set(x, "IP", js.undefined)
+      inline def setIPUndefined: Self = StObject.set(x, "IP", js.undefined)
       
-      @scala.inline
-      def setMONGODB_DB_HOST(value: String): Self = StObject.set(x, "MONGODB_DB_HOST", value.asInstanceOf[js.Any])
+      inline def setMONGODB_DB_HOST(value: String): Self = StObject.set(x, "MONGODB_DB_HOST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMONGODB_DB_HOSTUndefined: Self = StObject.set(x, "MONGODB_DB_HOST", js.undefined)
+      inline def setMONGODB_DB_HOSTUndefined: Self = StObject.set(x, "MONGODB_DB_HOST", js.undefined)
       
-      @scala.inline
-      def setMONGODB_DB_PASSWORD(value: String): Self = StObject.set(x, "MONGODB_DB_PASSWORD", value.asInstanceOf[js.Any])
+      inline def setMONGODB_DB_PASSWORD(value: String): Self = StObject.set(x, "MONGODB_DB_PASSWORD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMONGODB_DB_PASSWORDUndefined: Self = StObject.set(x, "MONGODB_DB_PASSWORD", js.undefined)
+      inline def setMONGODB_DB_PASSWORDUndefined: Self = StObject.set(x, "MONGODB_DB_PASSWORD", js.undefined)
       
-      @scala.inline
-      def setMONGODB_DB_PORT(value: Double): Self = StObject.set(x, "MONGODB_DB_PORT", value.asInstanceOf[js.Any])
+      inline def setMONGODB_DB_PORT(value: Double): Self = StObject.set(x, "MONGODB_DB_PORT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMONGODB_DB_PORTUndefined: Self = StObject.set(x, "MONGODB_DB_PORT", js.undefined)
+      inline def setMONGODB_DB_PORTUndefined: Self = StObject.set(x, "MONGODB_DB_PORT", js.undefined)
       
-      @scala.inline
-      def setMONGODB_DB_URL(value: String): Self = StObject.set(x, "MONGODB_DB_URL", value.asInstanceOf[js.Any])
+      inline def setMONGODB_DB_URL(value: String): Self = StObject.set(x, "MONGODB_DB_URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMONGODB_DB_URLUndefined: Self = StObject.set(x, "MONGODB_DB_URL", js.undefined)
+      inline def setMONGODB_DB_URLUndefined: Self = StObject.set(x, "MONGODB_DB_URL", js.undefined)
       
-      @scala.inline
-      def setMONGODB_DB_USERNAME(value: String): Self = StObject.set(x, "MONGODB_DB_USERNAME", value.asInstanceOf[js.Any])
+      inline def setMONGODB_DB_USERNAME(value: String): Self = StObject.set(x, "MONGODB_DB_USERNAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMONGODB_DB_USERNAMEUndefined: Self = StObject.set(x, "MONGODB_DB_USERNAME", js.undefined)
+      inline def setMONGODB_DB_USERNAMEUndefined: Self = StObject.set(x, "MONGODB_DB_USERNAME", js.undefined)
       
-      @scala.inline
-      def setMYSQL_DB_HOST(value: String): Self = StObject.set(x, "MYSQL_DB_HOST", value.asInstanceOf[js.Any])
+      inline def setMYSQL_DB_HOST(value: String): Self = StObject.set(x, "MYSQL_DB_HOST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMYSQL_DB_HOSTUndefined: Self = StObject.set(x, "MYSQL_DB_HOST", js.undefined)
+      inline def setMYSQL_DB_HOSTUndefined: Self = StObject.set(x, "MYSQL_DB_HOST", js.undefined)
       
-      @scala.inline
-      def setMYSQL_DB_PASSWORD(value: String): Self = StObject.set(x, "MYSQL_DB_PASSWORD", value.asInstanceOf[js.Any])
+      inline def setMYSQL_DB_PASSWORD(value: String): Self = StObject.set(x, "MYSQL_DB_PASSWORD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMYSQL_DB_PASSWORDUndefined: Self = StObject.set(x, "MYSQL_DB_PASSWORD", js.undefined)
+      inline def setMYSQL_DB_PASSWORDUndefined: Self = StObject.set(x, "MYSQL_DB_PASSWORD", js.undefined)
       
-      @scala.inline
-      def setMYSQL_DB_PORT(value: Double): Self = StObject.set(x, "MYSQL_DB_PORT", value.asInstanceOf[js.Any])
+      inline def setMYSQL_DB_PORT(value: Double): Self = StObject.set(x, "MYSQL_DB_PORT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMYSQL_DB_PORTUndefined: Self = StObject.set(x, "MYSQL_DB_PORT", js.undefined)
+      inline def setMYSQL_DB_PORTUndefined: Self = StObject.set(x, "MYSQL_DB_PORT", js.undefined)
       
-      @scala.inline
-      def setMYSQL_DB_URL(value: String): Self = StObject.set(x, "MYSQL_DB_URL", value.asInstanceOf[js.Any])
+      inline def setMYSQL_DB_URL(value: String): Self = StObject.set(x, "MYSQL_DB_URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMYSQL_DB_URLUndefined: Self = StObject.set(x, "MYSQL_DB_URL", js.undefined)
+      inline def setMYSQL_DB_URLUndefined: Self = StObject.set(x, "MYSQL_DB_URL", js.undefined)
       
-      @scala.inline
-      def setMYSQL_DB_USERNAME(value: String): Self = StObject.set(x, "MYSQL_DB_USERNAME", value.asInstanceOf[js.Any])
+      inline def setMYSQL_DB_USERNAME(value: String): Self = StObject.set(x, "MYSQL_DB_USERNAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMYSQL_DB_USERNAMEUndefined: Self = StObject.set(x, "MYSQL_DB_USERNAME", js.undefined)
+      inline def setMYSQL_DB_USERNAMEUndefined: Self = StObject.set(x, "MYSQL_DB_USERNAME", js.undefined)
       
-      @scala.inline
-      def setPORT(value: Double): Self = StObject.set(x, "PORT", value.asInstanceOf[js.Any])
+      inline def setPORT(value: Double): Self = StObject.set(x, "PORT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPORTUndefined: Self = StObject.set(x, "PORT", js.undefined)
+      inline def setPORTUndefined: Self = StObject.set(x, "PORT", js.undefined)
       
-      @scala.inline
-      def setPOSTGRESQL_DB_HOST(value: String): Self = StObject.set(x, "POSTGRESQL_DB_HOST", value.asInstanceOf[js.Any])
+      inline def setPOSTGRESQL_DB_HOST(value: String): Self = StObject.set(x, "POSTGRESQL_DB_HOST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOSTGRESQL_DB_HOSTUndefined: Self = StObject.set(x, "POSTGRESQL_DB_HOST", js.undefined)
+      inline def setPOSTGRESQL_DB_HOSTUndefined: Self = StObject.set(x, "POSTGRESQL_DB_HOST", js.undefined)
       
-      @scala.inline
-      def setPOSTGRESQL_DB_PASSWORD(value: String): Self = StObject.set(x, "POSTGRESQL_DB_PASSWORD", value.asInstanceOf[js.Any])
+      inline def setPOSTGRESQL_DB_PASSWORD(value: String): Self = StObject.set(x, "POSTGRESQL_DB_PASSWORD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOSTGRESQL_DB_PASSWORDUndefined: Self = StObject.set(x, "POSTGRESQL_DB_PASSWORD", js.undefined)
+      inline def setPOSTGRESQL_DB_PASSWORDUndefined: Self = StObject.set(x, "POSTGRESQL_DB_PASSWORD", js.undefined)
       
-      @scala.inline
-      def setPOSTGRESQL_DB_PORT(value: Double): Self = StObject.set(x, "POSTGRESQL_DB_PORT", value.asInstanceOf[js.Any])
+      inline def setPOSTGRESQL_DB_PORT(value: Double): Self = StObject.set(x, "POSTGRESQL_DB_PORT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOSTGRESQL_DB_PORTUndefined: Self = StObject.set(x, "POSTGRESQL_DB_PORT", js.undefined)
+      inline def setPOSTGRESQL_DB_PORTUndefined: Self = StObject.set(x, "POSTGRESQL_DB_PORT", js.undefined)
       
-      @scala.inline
-      def setPOSTGRESQL_DB_URL(value: String): Self = StObject.set(x, "POSTGRESQL_DB_URL", value.asInstanceOf[js.Any])
+      inline def setPOSTGRESQL_DB_URL(value: String): Self = StObject.set(x, "POSTGRESQL_DB_URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOSTGRESQL_DB_URLUndefined: Self = StObject.set(x, "POSTGRESQL_DB_URL", js.undefined)
+      inline def setPOSTGRESQL_DB_URLUndefined: Self = StObject.set(x, "POSTGRESQL_DB_URL", js.undefined)
       
-      @scala.inline
-      def setPOSTGRESQL_DB_USERNAME(value: String): Self = StObject.set(x, "POSTGRESQL_DB_USERNAME", value.asInstanceOf[js.Any])
+      inline def setPOSTGRESQL_DB_USERNAME(value: String): Self = StObject.set(x, "POSTGRESQL_DB_USERNAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPOSTGRESQL_DB_USERNAMEUndefined: Self = StObject.set(x, "POSTGRESQL_DB_USERNAME", js.undefined)
+      inline def setPOSTGRESQL_DB_USERNAMEUndefined: Self = StObject.set(x, "POSTGRESQL_DB_USERNAME", js.undefined)
     }
   }
   

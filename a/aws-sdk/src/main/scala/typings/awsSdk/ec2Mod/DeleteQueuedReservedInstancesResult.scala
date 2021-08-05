@@ -18,31 +18,23 @@ trait DeleteQueuedReservedInstancesResult extends StObject {
 }
 object DeleteQueuedReservedInstancesResult {
   
-  @scala.inline
-  def apply(): DeleteQueuedReservedInstancesResult = {
+  inline def apply(): DeleteQueuedReservedInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteQueuedReservedInstancesResult]
   }
   
-  @scala.inline
-  implicit class DeleteQueuedReservedInstancesResultMutableBuilder[Self <: DeleteQueuedReservedInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteQueuedReservedInstancesResult](x: Self) {
     
-    @scala.inline
-    def setFailedQueuedPurchaseDeletions(value: FailedQueuedPurchaseDeletionSet): Self = StObject.set(x, "FailedQueuedPurchaseDeletions", value.asInstanceOf[js.Any])
+    inline def setFailedQueuedPurchaseDeletions(value: FailedQueuedPurchaseDeletionSet): Self = StObject.set(x, "FailedQueuedPurchaseDeletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedQueuedPurchaseDeletionsUndefined: Self = StObject.set(x, "FailedQueuedPurchaseDeletions", js.undefined)
+    inline def setFailedQueuedPurchaseDeletionsUndefined: Self = StObject.set(x, "FailedQueuedPurchaseDeletions", js.undefined)
     
-    @scala.inline
-    def setFailedQueuedPurchaseDeletionsVarargs(value: FailedQueuedPurchaseDeletion*): Self = StObject.set(x, "FailedQueuedPurchaseDeletions", js.Array(value :_*))
+    inline def setFailedQueuedPurchaseDeletionsVarargs(value: FailedQueuedPurchaseDeletion*): Self = StObject.set(x, "FailedQueuedPurchaseDeletions", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessfulQueuedPurchaseDeletions(value: SuccessfulQueuedPurchaseDeletionSet): Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", value.asInstanceOf[js.Any])
+    inline def setSuccessfulQueuedPurchaseDeletions(value: SuccessfulQueuedPurchaseDeletionSet): Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulQueuedPurchaseDeletionsUndefined: Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", js.undefined)
+    inline def setSuccessfulQueuedPurchaseDeletionsUndefined: Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", js.undefined)
     
-    @scala.inline
-    def setSuccessfulQueuedPurchaseDeletionsVarargs(value: SuccessfulQueuedPurchaseDeletion*): Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", js.Array(value :_*))
+    inline def setSuccessfulQueuedPurchaseDeletionsVarargs(value: SuccessfulQueuedPurchaseDeletion*): Self = StObject.set(x, "SuccessfulQueuedPurchaseDeletions", js.Array(value :_*))
   }
 }

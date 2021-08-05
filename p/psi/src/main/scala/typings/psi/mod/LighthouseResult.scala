@@ -37,8 +37,7 @@ trait LighthouseResult extends StObject {
 }
 object LighthouseResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audits: StringDictionary[Audit],
     categories: StringDictionary[Category],
     categoryGroups: StringDictionary[CategoryGroup],
@@ -58,52 +57,36 @@ object LighthouseResult {
     __obj.asInstanceOf[LighthouseResult]
   }
   
-  @scala.inline
-  implicit class LighthouseResultMutableBuilder[Self <: LighthouseResult] (val x: Self) extends AnyVal {
+  extension [Self <: LighthouseResult](x: Self) {
     
-    @scala.inline
-    def setAudits(value: StringDictionary[Audit]): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
+    inline def setAudits(value: StringDictionary[Audit]): Self = StObject.set(x, "audits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategories(value: StringDictionary[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: StringDictionary[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryGroups(value: StringDictionary[CategoryGroup]): Self = StObject.set(x, "categoryGroups", value.asInstanceOf[js.Any])
+    inline def setCategoryGroups(value: StringDictionary[CategoryGroup]): Self = StObject.set(x, "categoryGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigSettings(value: ConfigSettings): Self = StObject.set(x, "configSettings", value.asInstanceOf[js.Any])
+    inline def setConfigSettings(value: ConfigSettings): Self = StObject.set(x, "configSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchTime(value: String): Self = StObject.set(x, "fetchTime", value.asInstanceOf[js.Any])
+    inline def setFetchTime(value: String): Self = StObject.set(x, "fetchTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
+    inline def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI18n(value: I18N): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    inline def setI18n(value: I18N): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLighthouseVersion(value: String): Self = StObject.set(x, "lighthouseVersion", value.asInstanceOf[js.Any])
+    inline def setLighthouseVersion(value: String): Self = StObject.set(x, "lighthouseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedUrl(value: String): Self = StObject.set(x, "requestedUrl", value.asInstanceOf[js.Any])
+    inline def setRequestedUrl(value: String): Self = StObject.set(x, "requestedUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunWarnings(value: js.Array[String]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
+    inline def setRunWarnings(value: js.Array[String]): Self = StObject.set(x, "runWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunWarningsVarargs(value: String*): Self = StObject.set(x, "runWarnings", js.Array(value :_*))
+    inline def setRunWarningsVarargs(value: String*): Self = StObject.set(x, "runWarnings", js.Array(value :_*))
     
-    @scala.inline
-    def setRuntimeError(value: RuntimeError): Self = StObject.set(x, "runtimeError", value.asInstanceOf[js.Any])
+    inline def setRuntimeError(value: RuntimeError): Self = StObject.set(x, "runtimeError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiming(value: Timing): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    inline def setTiming(value: Timing): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
   }
 }

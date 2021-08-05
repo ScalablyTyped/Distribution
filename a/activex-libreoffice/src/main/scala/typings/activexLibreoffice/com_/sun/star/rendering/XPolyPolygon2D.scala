@@ -57,8 +57,7 @@ trait XPolyPolygon2D
 }
 object XPolyPolygon2D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FillRule: FillRule,
     NumberOfPolygons: Double,
     acquire: () => Unit,
@@ -76,34 +75,24 @@ object XPolyPolygon2D {
     __obj.asInstanceOf[XPolyPolygon2D]
   }
   
-  @scala.inline
-  implicit class XPolyPolygon2DMutableBuilder[Self <: XPolyPolygon2D] (val x: Self) extends AnyVal {
+  extension [Self <: XPolyPolygon2D](x: Self) {
     
-    @scala.inline
-    def setAddPolyPolygon(value: (RealPoint2D, XPolyPolygon2D) => Unit): Self = StObject.set(x, "addPolyPolygon", js.Any.fromFunction2(value))
+    inline def setAddPolyPolygon(value: (RealPoint2D, XPolyPolygon2D) => Unit): Self = StObject.set(x, "addPolyPolygon", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFillRule(value: FillRule): Self = StObject.set(x, "FillRule", value.asInstanceOf[js.Any])
+    inline def setFillRule(value: FillRule): Self = StObject.set(x, "FillRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFillRule(value: () => FillRule): Self = StObject.set(x, "getFillRule", js.Any.fromFunction0(value))
+    inline def setGetFillRule(value: () => FillRule): Self = StObject.set(x, "getFillRule", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumberOfPolygonPoints(value: Double => Double): Self = StObject.set(x, "getNumberOfPolygonPoints", js.Any.fromFunction1(value))
+    inline def setGetNumberOfPolygonPoints(value: Double => Double): Self = StObject.set(x, "getNumberOfPolygonPoints", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNumberOfPolygons(value: () => Double): Self = StObject.set(x, "getNumberOfPolygons", js.Any.fromFunction0(value))
+    inline def setGetNumberOfPolygons(value: () => Double): Self = StObject.set(x, "getNumberOfPolygons", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsClosed(value: Double => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction1(value))
+    inline def setIsClosed(value: Double => Boolean): Self = StObject.set(x, "isClosed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNumberOfPolygons(value: Double): Self = StObject.set(x, "NumberOfPolygons", value.asInstanceOf[js.Any])
+    inline def setNumberOfPolygons(value: Double): Self = StObject.set(x, "NumberOfPolygons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetClosed(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setClosed", js.Any.fromFunction2(value))
+    inline def setSetClosed(value: (Double, Boolean) => Unit): Self = StObject.set(x, "setClosed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetFillRule(value: FillRule => Unit): Self = StObject.set(x, "setFillRule", js.Any.fromFunction1(value))
+    inline def setSetFillRule(value: FillRule => Unit): Self = StObject.set(x, "setFillRule", js.Any.fromFunction1(value))
   }
 }

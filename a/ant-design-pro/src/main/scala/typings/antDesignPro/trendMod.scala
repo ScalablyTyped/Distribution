@@ -29,41 +29,30 @@ object trendMod {
   }
   object ITrendProps {
     
-    @scala.inline
-    def apply(flag: up | down): ITrendProps = {
+    inline def apply(flag: up | down): ITrendProps = {
       val __obj = js.Dynamic.literal(flag = flag.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITrendProps]
     }
     
-    @scala.inline
-    implicit class ITrendPropsMutableBuilder[Self <: ITrendProps] (val x: Self) extends AnyVal {
+    extension [Self <: ITrendProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColorful(value: Boolean): Self = StObject.set(x, "colorful", value.asInstanceOf[js.Any])
+      inline def setColorful(value: Boolean): Self = StObject.set(x, "colorful", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorfulUndefined: Self = StObject.set(x, "colorful", js.undefined)
+      inline def setColorfulUndefined: Self = StObject.set(x, "colorful", js.undefined)
       
-      @scala.inline
-      def setFlag(value: up | down): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+      inline def setFlag(value: up | down): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseColor(value: Boolean): Self = StObject.set(x, "reverseColor", value.asInstanceOf[js.Any])
+      inline def setReverseColor(value: Boolean): Self = StObject.set(x, "reverseColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseColorUndefined: Self = StObject.set(x, "reverseColor", js.undefined)
+      inline def setReverseColorUndefined: Self = StObject.set(x, "reverseColor", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

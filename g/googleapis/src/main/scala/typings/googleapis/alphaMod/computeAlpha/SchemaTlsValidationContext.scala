@@ -29,31 +29,23 @@ trait SchemaTlsValidationContext extends StObject {
 }
 object SchemaTlsValidationContext {
   
-  @scala.inline
-  def apply(): SchemaTlsValidationContext = {
+  inline def apply(): SchemaTlsValidationContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTlsValidationContext]
   }
   
-  @scala.inline
-  implicit class SchemaTlsValidationContextMutableBuilder[Self <: SchemaTlsValidationContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTlsValidationContext](x: Self) {
     
-    @scala.inline
-    def setCertificatePath(value: String): Self = StObject.set(x, "certificatePath", value.asInstanceOf[js.Any])
+    inline def setCertificatePath(value: String): Self = StObject.set(x, "certificatePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificatePathUndefined: Self = StObject.set(x, "certificatePath", js.undefined)
+    inline def setCertificatePathUndefined: Self = StObject.set(x, "certificatePath", js.undefined)
     
-    @scala.inline
-    def setSdsConfig(value: SchemaSdsConfig): Self = StObject.set(x, "sdsConfig", value.asInstanceOf[js.Any])
+    inline def setSdsConfig(value: SchemaSdsConfig): Self = StObject.set(x, "sdsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdsConfigUndefined: Self = StObject.set(x, "sdsConfig", js.undefined)
+    inline def setSdsConfigUndefined: Self = StObject.set(x, "sdsConfig", js.undefined)
     
-    @scala.inline
-    def setValidationSource(value: String): Self = StObject.set(x, "validationSource", value.asInstanceOf[js.Any])
+    inline def setValidationSource(value: String): Self = StObject.set(x, "validationSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationSourceUndefined: Self = StObject.set(x, "validationSource", js.undefined)
+    inline def setValidationSourceUndefined: Self = StObject.set(x, "validationSource", js.undefined)
   }
 }

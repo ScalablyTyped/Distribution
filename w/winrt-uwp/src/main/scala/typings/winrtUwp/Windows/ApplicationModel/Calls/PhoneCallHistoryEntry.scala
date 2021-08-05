@@ -64,8 +64,7 @@ trait PhoneCallHistoryEntry extends StObject {
 }
 object PhoneCallHistoryEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: PhoneCallHistoryEntryAddress,
     duration: Double,
     id: String,
@@ -89,61 +88,42 @@ object PhoneCallHistoryEntry {
     __obj.asInstanceOf[PhoneCallHistoryEntry]
   }
   
-  @scala.inline
-  implicit class PhoneCallHistoryEntryMutableBuilder[Self <: PhoneCallHistoryEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneCallHistoryEntry](x: Self) {
     
-    @scala.inline
-    def setAddress(value: PhoneCallHistoryEntryAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: PhoneCallHistoryEntryAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCallerIdBlocked(value: Boolean): Self = StObject.set(x, "isCallerIdBlocked", value.asInstanceOf[js.Any])
+    inline def setIsCallerIdBlocked(value: Boolean): Self = StObject.set(x, "isCallerIdBlocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEmergency(value: Boolean): Self = StObject.set(x, "isEmergency", value.asInstanceOf[js.Any])
+    inline def setIsEmergency(value: Boolean): Self = StObject.set(x, "isEmergency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIncoming(value: Boolean): Self = StObject.set(x, "isIncoming", value.asInstanceOf[js.Any])
+    inline def setIsIncoming(value: Boolean): Self = StObject.set(x, "isIncoming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMissed(value: Boolean): Self = StObject.set(x, "isMissed", value.asInstanceOf[js.Any])
+    inline def setIsMissed(value: Boolean): Self = StObject.set(x, "isMissed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRinging(value: Boolean): Self = StObject.set(x, "isRinging", value.asInstanceOf[js.Any])
+    inline def setIsRinging(value: Boolean): Self = StObject.set(x, "isRinging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSeen(value: Boolean): Self = StObject.set(x, "isSeen", value.asInstanceOf[js.Any])
+    inline def setIsSeen(value: Boolean): Self = StObject.set(x, "isSeen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuppressed(value: Boolean): Self = StObject.set(x, "isSuppressed", value.asInstanceOf[js.Any])
+    inline def setIsSuppressed(value: Boolean): Self = StObject.set(x, "isSuppressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVoicemail(value: Boolean): Self = StObject.set(x, "isVoicemail", value.asInstanceOf[js.Any])
+    inline def setIsVoicemail(value: Boolean): Self = StObject.set(x, "isVoicemail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: PhoneCallHistoryEntryMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: PhoneCallHistoryEntryMedia): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherAppReadAccess(value: PhoneCallHistoryEntryOtherAppReadAccess): Self = StObject.set(x, "otherAppReadAccess", value.asInstanceOf[js.Any])
+    inline def setOtherAppReadAccess(value: PhoneCallHistoryEntryOtherAppReadAccess): Self = StObject.set(x, "otherAppReadAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
+    inline def setRemoteId(value: String): Self = StObject.set(x, "remoteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDisplayName(value: String): Self = StObject.set(x, "sourceDisplayName", value.asInstanceOf[js.Any])
+    inline def setSourceDisplayName(value: String): Self = StObject.set(x, "sourceDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdKind(value: PhoneCallHistorySourceIdKind): Self = StObject.set(x, "sourceIdKind", value.asInstanceOf[js.Any])
+    inline def setSourceIdKind(value: PhoneCallHistorySourceIdKind): Self = StObject.set(x, "sourceIdKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

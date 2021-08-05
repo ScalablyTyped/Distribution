@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceManagementExchangeConnectorStatus extends StObject
 object DeviceManagementExchangeConnectorStatus {
   
-  @scala.inline
-  def connected: typings.microsoftGraph.microsoftGraphStrings.connected = "connected".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.connected]
+  inline def connected: typings.microsoftGraph.microsoftGraphStrings.connected = "connected".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.connected]
   
-  @scala.inline
-  def connectionPending: typings.microsoftGraph.microsoftGraphStrings.connectionPending = "connectionPending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.connectionPending]
+  inline def connectionPending: typings.microsoftGraph.microsoftGraphStrings.connectionPending = "connectionPending".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.connectionPending]
   
-  @scala.inline
-  def disconnected: typings.microsoftGraph.microsoftGraphStrings.disconnected = "disconnected".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disconnected]
+  inline def disconnected: typings.microsoftGraph.microsoftGraphStrings.disconnected = "disconnected".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disconnected]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
 }

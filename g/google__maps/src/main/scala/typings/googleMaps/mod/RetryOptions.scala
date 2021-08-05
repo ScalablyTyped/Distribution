@@ -11,19 +11,15 @@ trait RetryOptions extends StObject {
 }
 object RetryOptions {
   
-  @scala.inline
-  def apply(): RetryOptions = {
+  inline def apply(): RetryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryOptions]
   }
   
-  @scala.inline
-  implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RetryOptions](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
   }
 }

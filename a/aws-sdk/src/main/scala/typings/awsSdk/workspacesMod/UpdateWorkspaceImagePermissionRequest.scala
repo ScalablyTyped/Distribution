@@ -23,22 +23,17 @@ trait UpdateWorkspaceImagePermissionRequest extends StObject {
 }
 object UpdateWorkspaceImagePermissionRequest {
   
-  @scala.inline
-  def apply(AllowCopyImage: BooleanObject, ImageId: WorkspaceImageId, SharedAccountId: AwsAccount): UpdateWorkspaceImagePermissionRequest = {
+  inline def apply(AllowCopyImage: BooleanObject, ImageId: WorkspaceImageId, SharedAccountId: AwsAccount): UpdateWorkspaceImagePermissionRequest = {
     val __obj = js.Dynamic.literal(AllowCopyImage = AllowCopyImage.asInstanceOf[js.Any], ImageId = ImageId.asInstanceOf[js.Any], SharedAccountId = SharedAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWorkspaceImagePermissionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateWorkspaceImagePermissionRequestMutableBuilder[Self <: UpdateWorkspaceImagePermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWorkspaceImagePermissionRequest](x: Self) {
     
-    @scala.inline
-    def setAllowCopyImage(value: BooleanObject): Self = StObject.set(x, "AllowCopyImage", value.asInstanceOf[js.Any])
+    inline def setAllowCopyImage(value: BooleanObject): Self = StObject.set(x, "AllowCopyImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAccountId(value: AwsAccount): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
+    inline def setSharedAccountId(value: AwsAccount): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
   }
 }

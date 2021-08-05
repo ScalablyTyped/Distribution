@@ -53,8 +53,7 @@ trait ApplicationView extends StObject {
 }
 object ApplicationView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adjacentToLeftDisplayEdge: Double,
     adjacentToRightDisplayEdge: Boolean,
     id: Double,
@@ -69,35 +68,25 @@ object ApplicationView {
     __obj.asInstanceOf[ApplicationView]
   }
   
-  @scala.inline
-  implicit class ApplicationViewMutableBuilder[Self <: ApplicationView] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationView](x: Self) {
     
-    @scala.inline
-    def setAdjacentToLeftDisplayEdge(value: Double): Self = StObject.set(x, "adjacentToLeftDisplayEdge", value.asInstanceOf[js.Any])
+    inline def setAdjacentToLeftDisplayEdge(value: Double): Self = StObject.set(x, "adjacentToLeftDisplayEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjacentToRightDisplayEdge(value: Boolean): Self = StObject.set(x, "adjacentToRightDisplayEdge", value.asInstanceOf[js.Any])
+    inline def setAdjacentToRightDisplayEdge(value: Boolean): Self = StObject.set(x, "adjacentToRightDisplayEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFullScreen(value: Boolean): Self = StObject.set(x, "isFullScreen", value.asInstanceOf[js.Any])
+    inline def setIsFullScreen(value: Boolean): Self = StObject.set(x, "isFullScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOnLockScreen(value: Boolean): Self = StObject.set(x, "isOnLockScreen", value.asInstanceOf[js.Any])
+    inline def setIsOnLockScreen(value: Boolean): Self = StObject.set(x, "isOnLockScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsScreenCaptureEnabled(value: Boolean): Self = StObject.set(x, "isScreenCaptureEnabled", value.asInstanceOf[js.Any])
+    inline def setIsScreenCaptureEnabled(value: Boolean): Self = StObject.set(x, "isScreenCaptureEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: ApplicationViewOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: ApplicationViewOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleBar(
+    inline def setTitleBar(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ApplicationViewTitleBar */ js.Any
     ): Self = StObject.set(x, "titleBar", value.asInstanceOf[js.Any])
   }

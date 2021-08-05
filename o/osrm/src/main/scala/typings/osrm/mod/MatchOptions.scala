@@ -50,58 +50,41 @@ trait MatchOptions
 }
 object MatchOptions {
   
-  @scala.inline
-  def apply(): MatchOptions = {
+  inline def apply(): MatchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchOptions]
   }
   
-  @scala.inline
-  implicit class MatchOptionsMutableBuilder[Self <: MatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MatchOptions](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: Boolean | js.Array[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: Boolean | js.Array[String]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setAnnotationsVarargs(value: String*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: String*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
-    @scala.inline
-    def setGeometries(value: String): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
+    inline def setGeometries(value: String): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
+    inline def setGeometriesUndefined: Self = StObject.set(x, "geometries", js.undefined)
     
-    @scala.inline
-    def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
+    inline def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
+    inline def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
     
-    @scala.inline
-    def setRadiuses(value: js.Array[Double]): Self = StObject.set(x, "radiuses", value.asInstanceOf[js.Any])
+    inline def setRadiuses(value: js.Array[Double]): Self = StObject.set(x, "radiuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusesUndefined: Self = StObject.set(x, "radiuses", js.undefined)
+    inline def setRadiusesUndefined: Self = StObject.set(x, "radiuses", js.undefined)
     
-    @scala.inline
-    def setRadiusesVarargs(value: Double*): Self = StObject.set(x, "radiuses", js.Array(value :_*))
+    inline def setRadiusesVarargs(value: Double*): Self = StObject.set(x, "radiuses", js.Array(value :_*))
     
-    @scala.inline
-    def setSteps(value: Boolean): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: Boolean): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    @scala.inline
-    def setTimestamps(value: js.Array[Double]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
+    inline def setTimestamps(value: js.Array[Double]): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
+    inline def setTimestampsUndefined: Self = StObject.set(x, "timestamps", js.undefined)
     
-    @scala.inline
-    def setTimestampsVarargs(value: Double*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
+    inline def setTimestampsVarargs(value: Double*): Self = StObject.set(x, "timestamps", js.Array(value :_*))
   }
 }

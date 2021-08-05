@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StitchingMethod extends StObject
 object StitchingMethod {
   
-  @scala.inline
-  def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
+  inline def auto: typings.ipp.ippStrings.auto = "auto".asInstanceOf[typings.ipp.ippStrings.auto]
   
-  @scala.inline
-  def crimp: typings.ipp.ippStrings.crimp = "crimp".asInstanceOf[typings.ipp.ippStrings.crimp]
+  inline def crimp: typings.ipp.ippStrings.crimp = "crimp".asInstanceOf[typings.ipp.ippStrings.crimp]
   
-  @scala.inline
-  def wire: typings.ipp.ippStrings.wire = "wire".asInstanceOf[typings.ipp.ippStrings.wire]
+  inline def wire: typings.ipp.ippStrings.wire = "wire".asInstanceOf[typings.ipp.ippStrings.wire]
 }

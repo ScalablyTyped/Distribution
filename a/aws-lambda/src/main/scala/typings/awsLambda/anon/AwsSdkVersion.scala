@@ -12,19 +12,15 @@ trait AwsSdkVersion extends StObject {
 }
 object AwsSdkVersion {
   
-  @scala.inline
-  def apply(awsSdkVersion: String, clientId: String): AwsSdkVersion = {
+  inline def apply(awsSdkVersion: String, clientId: String): AwsSdkVersion = {
     val __obj = js.Dynamic.literal(awsSdkVersion = awsSdkVersion.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AwsSdkVersion]
   }
   
-  @scala.inline
-  implicit class AwsSdkVersionMutableBuilder[Self <: AwsSdkVersion] (val x: Self) extends AnyVal {
+  extension [Self <: AwsSdkVersion](x: Self) {
     
-    @scala.inline
-    def setAwsSdkVersion(value: String): Self = StObject.set(x, "awsSdkVersion", value.asInstanceOf[js.Any])
+    inline def setAwsSdkVersion(value: String): Self = StObject.set(x, "awsSdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
   }
 }

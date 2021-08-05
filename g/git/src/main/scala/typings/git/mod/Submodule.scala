@@ -26,9 +26,7 @@ object Submodule {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def config(repo: js.Any, ref: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(repo.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def config(repo: js.Any, ref: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("config")(repo.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def create(repo: js.Any, attributes: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(repo: js.Any, attributes: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

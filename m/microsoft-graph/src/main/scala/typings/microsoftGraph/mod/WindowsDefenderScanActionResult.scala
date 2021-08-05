@@ -13,22 +13,17 @@ trait WindowsDefenderScanActionResult
 }
 object WindowsDefenderScanActionResult {
   
-  @scala.inline
-  def apply(): WindowsDefenderScanActionResult = {
+  inline def apply(): WindowsDefenderScanActionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsDefenderScanActionResult]
   }
   
-  @scala.inline
-  implicit class WindowsDefenderScanActionResultMutableBuilder[Self <: WindowsDefenderScanActionResult] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsDefenderScanActionResult](x: Self) {
     
-    @scala.inline
-    def setScanType(value: NullableOption[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    inline def setScanType(value: NullableOption[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanTypeNull: Self = StObject.set(x, "scanType", null)
+    inline def setScanTypeNull: Self = StObject.set(x, "scanType", null)
     
-    @scala.inline
-    def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
+    inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
   }
 }

@@ -22,17 +22,17 @@ object numberFilterMod {
     
     /* private */ def asNumber(value: js.Any): js.Any = js.native
     
-    var eFilterTextConditionField: js.Any = js.native
+    /* private */ var eFilterTextConditionField: js.Any = js.native
     
-    var eFilterTextField: js.Any = js.native
+    /* private */ var eFilterTextField: js.Any = js.native
     
-    var eFilterToConditionText: js.Any = js.native
+    /* private */ var eFilterToConditionText: js.Any = js.native
     
-    var eFilterToTextField: js.Any = js.native
+    /* private */ var eFilterToTextField: js.Any = js.native
     
-    var eNumberToConditionPanel: js.Any = js.native
+    /* private */ var eNumberToConditionPanel: js.Any = js.native
     
-    var eNumberToPanel: js.Any = js.native
+    /* private */ var eNumberToPanel: js.Any = js.native
     
     var filterNumber: js.Any = js.native
     
@@ -64,8 +64,7 @@ object numberFilterMod {
     @JSImport("ag-grid/dist/lib/filter/numberFilter", "NumberFilter.LESS_THAN")
     @js.native
     def LESS_THAN: String = js.native
-    @scala.inline
-    def LESS_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN")(x.asInstanceOf[js.Any])
+    inline def LESS_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN")(x.asInstanceOf[js.Any])
   }
   
   trait SerializedNumberFilter
@@ -80,24 +79,19 @@ object numberFilterMod {
   }
   object SerializedNumberFilter {
     
-    @scala.inline
-    def apply(filter: Double, filterTo: Double, filterType: String, `type`: String): SerializedNumberFilter = {
+    inline def apply(filter: Double, filterTo: Double, filterType: String, `type`: String): SerializedNumberFilter = {
       val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], filterTo = filterTo.asInstanceOf[js.Any], filterType = filterType.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedNumberFilter]
     }
     
-    @scala.inline
-    implicit class SerializedNumberFilterMutableBuilder[Self <: SerializedNumberFilter] (val x: Self) extends AnyVal {
+    extension [Self <: SerializedNumberFilter](x: Self) {
       
-      @scala.inline
-      def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterTo(value: Double): Self = StObject.set(x, "filterTo", value.asInstanceOf[js.Any])
+      inline def setFilterTo(value: Double): Self = StObject.set(x, "filterTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

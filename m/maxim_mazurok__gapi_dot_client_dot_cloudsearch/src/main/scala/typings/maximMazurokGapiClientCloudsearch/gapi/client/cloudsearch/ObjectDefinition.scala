@@ -21,34 +21,25 @@ trait ObjectDefinition extends StObject {
 }
 object ObjectDefinition {
   
-  @scala.inline
-  def apply(): ObjectDefinition = {
+  inline def apply(): ObjectDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectDefinition]
   }
   
-  @scala.inline
-  implicit class ObjectDefinitionMutableBuilder[Self <: ObjectDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectDefinition](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: ObjectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ObjectOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPropertyDefinitions(value: js.Array[PropertyDefinition]): Self = StObject.set(x, "propertyDefinitions", value.asInstanceOf[js.Any])
+    inline def setPropertyDefinitions(value: js.Array[PropertyDefinition]): Self = StObject.set(x, "propertyDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDefinitionsUndefined: Self = StObject.set(x, "propertyDefinitions", js.undefined)
+    inline def setPropertyDefinitionsUndefined: Self = StObject.set(x, "propertyDefinitions", js.undefined)
     
-    @scala.inline
-    def setPropertyDefinitionsVarargs(value: PropertyDefinition*): Self = StObject.set(x, "propertyDefinitions", js.Array(value :_*))
+    inline def setPropertyDefinitionsVarargs(value: PropertyDefinition*): Self = StObject.set(x, "propertyDefinitions", js.Array(value :_*))
   }
 }

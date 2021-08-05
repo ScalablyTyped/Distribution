@@ -28,34 +28,25 @@ trait ListExecutionsInput extends StObject {
 }
 object ListExecutionsInput {
   
-  @scala.inline
-  def apply(stateMachineArn: Arn): ListExecutionsInput = {
+  inline def apply(stateMachineArn: Arn): ListExecutionsInput = {
     val __obj = js.Dynamic.literal(stateMachineArn = stateMachineArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListExecutionsInput]
   }
   
-  @scala.inline
-  implicit class ListExecutionsInputMutableBuilder[Self <: ListExecutionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListExecutionsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: ListExecutionsPageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: ListExecutionsPageToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
+    inline def setStateMachineArn(value: Arn): Self = StObject.set(x, "stateMachineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusFilter(value: ExecutionStatus): Self = StObject.set(x, "statusFilter", value.asInstanceOf[js.Any])
+    inline def setStatusFilter(value: ExecutionStatus): Self = StObject.set(x, "statusFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusFilterUndefined: Self = StObject.set(x, "statusFilter", js.undefined)
+    inline def setStatusFilterUndefined: Self = StObject.set(x, "statusFilter", js.undefined)
   }
 }

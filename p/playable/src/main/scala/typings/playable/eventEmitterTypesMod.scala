@@ -55,30 +55,24 @@ object eventEmitterTypesMod {
   }
   object IEventEmitterAPI {
     
-    @scala.inline
-    def apply(): IEventEmitterAPI = {
+    inline def apply(): IEventEmitterAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEventEmitterAPI]
     }
     
-    @scala.inline
-    implicit class IEventEmitterAPIMutableBuilder[Self <: IEventEmitterAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IEventEmitterAPI](x: Self) {
       
-      @scala.inline
-      def setOff(
+      inline def setOff(
         value: (/* event */ String, /* fn */ js.UndefOr[ListenerFn[js.Array[js.Any]]], /* context */ js.UndefOr[js.Any], /* once */ js.UndefOr[Boolean]) => IEventEmitterAPI
       ): Self = StObject.set(x, "off", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
+      inline def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
       
-      @scala.inline
-      def setOn(
+      inline def setOn(
         value: (/* event */ String, /* fn */ ListenerFn[js.Array[js.Any]], /* context */ js.UndefOr[js.Any]) => IEventEmitterAPI
       ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     }
   }
   

@@ -16,11 +16,9 @@ object configurationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getGlacierPlugin(config: PreviouslyResolved): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlacierPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getGlacierPlugin(config: PreviouslyResolved): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlacierPlugin")(config.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
   
-  @scala.inline
-  def resolveGlacierMiddlewareConfig[T](input: T & PreviouslyResolved & GlacierMiddlewareInputConfig): T & ResolvedGlacierMiddlewareConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveGlacierMiddlewareConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & ResolvedGlacierMiddlewareConfig]
+  inline def resolveGlacierMiddlewareConfig[T](input: T & PreviouslyResolved & GlacierMiddlewareInputConfig): T & ResolvedGlacierMiddlewareConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveGlacierMiddlewareConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & ResolvedGlacierMiddlewareConfig]
   
   trait GlacierMiddlewareInputConfig extends StObject
   
@@ -38,8 +36,7 @@ object configurationsMod {
   }
   object PreviouslyResolved {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiVersion: String,
       bodyChecksumGenerator: (HttpRequest, Sha256) => js.Promise[js.Tuple2[String, String]],
       sha256: HashConstructor,
@@ -49,20 +46,15 @@ object configurationsMod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    @scala.inline
-    implicit class PreviouslyResolvedMutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
+    extension [Self <: PreviouslyResolved](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyChecksumGenerator(value: (HttpRequest, Sha256) => js.Promise[js.Tuple2[String, String]]): Self = StObject.set(x, "bodyChecksumGenerator", js.Any.fromFunction2(value))
+      inline def setBodyChecksumGenerator(value: (HttpRequest, Sha256) => js.Promise[js.Tuple2[String, String]]): Self = StObject.set(x, "bodyChecksumGenerator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
     }
   }
   
@@ -80,8 +72,7 @@ object configurationsMod {
   }
   object ResolvedGlacierMiddlewareConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apiVersion: String,
       bodyChecksumGenerator: (HttpRequest, Sha256) => js.Promise[js.Tuple2[String, String]],
       sha256: HashConstructor,
@@ -91,20 +82,15 @@ object configurationsMod {
       __obj.asInstanceOf[ResolvedGlacierMiddlewareConfig]
     }
     
-    @scala.inline
-    implicit class ResolvedGlacierMiddlewareConfigMutableBuilder[Self <: ResolvedGlacierMiddlewareConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ResolvedGlacierMiddlewareConfig](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyChecksumGenerator(value: (HttpRequest, Sha256) => js.Promise[js.Tuple2[String, String]]): Self = StObject.set(x, "bodyChecksumGenerator", js.Any.fromFunction2(value))
+      inline def setBodyChecksumGenerator(value: (HttpRequest, Sha256) => js.Promise[js.Tuple2[String, String]]): Self = StObject.set(x, "bodyChecksumGenerator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+      inline def setUtf8Decoder(value: /* input */ String => Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
     }
   }
 }

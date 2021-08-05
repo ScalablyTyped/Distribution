@@ -16,17 +16,14 @@ object sidebarAction {
   }
   object BadgeBackgroundColorDetails {
     
-    @scala.inline
-    def apply(color: String | ColorArray): BadgeBackgroundColorDetails = {
+    inline def apply(color: String | ColorArray): BadgeBackgroundColorDetails = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
       __obj.asInstanceOf[BadgeBackgroundColorDetails]
     }
     
-    @scala.inline
-    implicit class BadgeBackgroundColorDetailsMutableBuilder[Self <: BadgeBackgroundColorDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeBackgroundColorDetails](x: Self) {
       
-      @scala.inline
-      def setColor(value: String | ColorArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String | ColorArray): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,17 +38,14 @@ object sidebarAction {
   }
   object SidebarBadgeDetail {
     
-    @scala.inline
-    def apply(text: String): SidebarBadgeDetail = {
+    inline def apply(text: String): SidebarBadgeDetail = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[SidebarBadgeDetail]
     }
     
-    @scala.inline
-    implicit class SidebarBadgeDetailMutableBuilder[Self <: SidebarBadgeDetail] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarBadgeDetail](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,20 +56,16 @@ object sidebarAction {
   }
   object SidebarDockDetail {
     
-    @scala.inline
-    def apply(): SidebarDockDetail = {
+    inline def apply(): SidebarDockDetail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarDockDetail]
     }
     
-    @scala.inline
-    implicit class SidebarDockDetailMutableBuilder[Self <: SidebarDockDetail] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarDockDetail](x: Self) {
       
-      @scala.inline
-      def setTargetWindowId(value: Double): Self = StObject.set(x, "targetWindowId", value.asInstanceOf[js.Any])
+      inline def setTargetWindowId(value: Double): Self = StObject.set(x, "targetWindowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetWindowIdUndefined: Self = StObject.set(x, "targetWindowId", js.undefined)
+      inline def setTargetWindowIdUndefined: Self = StObject.set(x, "targetWindowId", js.undefined)
     }
   }
   
@@ -88,17 +78,14 @@ object sidebarAction {
   }
   object SidebarIconDetail {
     
-    @scala.inline
-    def apply(icon: ImageData): SidebarIconDetail = {
+    inline def apply(icon: ImageData): SidebarIconDetail = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[SidebarIconDetail]
     }
     
-    @scala.inline
-    implicit class SidebarIconDetailMutableBuilder[Self <: SidebarIconDetail] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarIconDetail](x: Self) {
       
-      @scala.inline
-      def setIcon(value: ImageData): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ImageData): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,17 +96,14 @@ object sidebarAction {
   }
   object SidebarPageDetail {
     
-    @scala.inline
-    def apply(page: String): SidebarPageDetail = {
+    inline def apply(page: String): SidebarPageDetail = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
       __obj.asInstanceOf[SidebarPageDetail]
     }
     
-    @scala.inline
-    implicit class SidebarPageDetailMutableBuilder[Self <: SidebarPageDetail] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarPageDetail](x: Self) {
       
-      @scala.inline
-      def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,26 +120,20 @@ object sidebarAction {
   }
   object SidebarShowDetail {
     
-    @scala.inline
-    def apply(): SidebarShowDetail = {
+    inline def apply(): SidebarShowDetail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SidebarShowDetail]
     }
     
-    @scala.inline
-    implicit class SidebarShowDetailMutableBuilder[Self <: SidebarShowDetail] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarShowDetail](x: Self) {
       
-      @scala.inline
-      def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+      inline def setReload(value: Boolean): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
+      inline def setReloadUndefined: Self = StObject.set(x, "reload", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -165,17 +143,14 @@ object sidebarAction {
   }
   object SidebarTitleDetail {
     
-    @scala.inline
-    def apply(title: String): SidebarTitleDetail = {
+    inline def apply(title: String): SidebarTitleDetail = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[SidebarTitleDetail]
     }
     
-    @scala.inline
-    implicit class SidebarTitleDetailMutableBuilder[Self <: SidebarTitleDetail] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarTitleDetail](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

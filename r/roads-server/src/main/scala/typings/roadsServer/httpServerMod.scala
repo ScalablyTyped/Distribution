@@ -39,7 +39,7 @@ object httpServerMod {
       *
       * @type null|function
       */
-    var custom_error_handler: js.UndefOr[js.Function] = js.native
+    /* protected */ var custom_error_handler: js.UndefOr[js.Function] = js.native
     
     /**
       * Standard logic to handle any errors thrown in the roads request.
@@ -77,7 +77,7 @@ object httpServerMod {
       * This is the road object that will handle all requests
       * @type Road
       */
-    var road: Road = js.native
+    /* protected */ var road: Road = js.native
     
     /**
       * Helper function to write a roads Response object to an HTTPResponse object
@@ -92,6 +92,6 @@ object httpServerMod {
       * @todo  support HTTPS
       * @type HTTPServer
       */
-    var server: typings.node.httpMod.Server = js.native
+    /* protected */ var server: typings.node.httpMod.Server = js.native
   }
 }

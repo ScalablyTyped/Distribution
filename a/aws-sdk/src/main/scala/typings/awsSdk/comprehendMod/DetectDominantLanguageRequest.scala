@@ -13,16 +13,13 @@ trait DetectDominantLanguageRequest extends StObject {
 }
 object DetectDominantLanguageRequest {
   
-  @scala.inline
-  def apply(Text: CustomerInputString): DetectDominantLanguageRequest = {
+  inline def apply(Text: CustomerInputString): DetectDominantLanguageRequest = {
     val __obj = js.Dynamic.literal(Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectDominantLanguageRequest]
   }
   
-  @scala.inline
-  implicit class DetectDominantLanguageRequestMutableBuilder[Self <: DetectDominantLanguageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectDominantLanguageRequest](x: Self) {
     
-    @scala.inline
-    def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: CustomerInputString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

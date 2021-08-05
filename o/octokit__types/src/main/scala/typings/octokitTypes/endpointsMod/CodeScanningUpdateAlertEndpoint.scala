@@ -29,37 +29,27 @@ trait CodeScanningUpdateAlertEndpoint extends StObject {
 }
 object CodeScanningUpdateAlertEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, state: open | dismissed): CodeScanningUpdateAlertEndpoint = {
+  inline def apply(owner: String, repo: String, state: open | dismissed): CodeScanningUpdateAlertEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeScanningUpdateAlertEndpoint]
   }
   
-  @scala.inline
-  implicit class CodeScanningUpdateAlertEndpointMutableBuilder[Self <: CodeScanningUpdateAlertEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: CodeScanningUpdateAlertEndpoint](x: Self) {
     
-    @scala.inline
-    def setAlert_number(value: Double): Self = StObject.set(x, "alert_number", value.asInstanceOf[js.Any])
+    inline def setAlert_number(value: Double): Self = StObject.set(x, "alert_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlert_numberUndefined: Self = StObject.set(x, "alert_number", js.undefined)
+    inline def setAlert_numberUndefined: Self = StObject.set(x, "alert_number", js.undefined)
     
-    @scala.inline
-    def setDismissed_reason(value: String): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
+    inline def setDismissed_reason(value: String): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDismissed_reasonNull: Self = StObject.set(x, "dismissed_reason", null)
+    inline def setDismissed_reasonNull: Self = StObject.set(x, "dismissed_reason", null)
     
-    @scala.inline
-    def setDismissed_reasonUndefined: Self = StObject.set(x, "dismissed_reason", js.undefined)
+    inline def setDismissed_reasonUndefined: Self = StObject.set(x, "dismissed_reason", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: open | dismissed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: open | dismissed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

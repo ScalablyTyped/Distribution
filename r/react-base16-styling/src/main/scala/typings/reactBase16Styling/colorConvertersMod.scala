@@ -10,11 +10,9 @@ object colorConvertersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rgb2yuv(rgb: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2yuv")(rgb.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def rgb2yuv(rgb: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2yuv")(rgb.asInstanceOf[js.Any]).asInstanceOf[Color]
   
-  @scala.inline
-  def yuv2rgb(yuv: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("yuv2rgb")(yuv.asInstanceOf[js.Any]).asInstanceOf[Color]
+  inline def yuv2rgb(yuv: Color): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("yuv2rgb")(yuv.asInstanceOf[js.Any]).asInstanceOf[Color]
   
   type Color = js.Tuple3[Double, Double, Double]
 }

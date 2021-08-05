@@ -25,46 +25,33 @@ trait WindowsMobileMSI
 }
 object WindowsMobileMSI {
   
-  @scala.inline
-  def apply(): WindowsMobileMSI = {
+  inline def apply(): WindowsMobileMSI = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsMobileMSI]
   }
   
-  @scala.inline
-  implicit class WindowsMobileMSIMutableBuilder[Self <: WindowsMobileMSI] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsMobileMSI](x: Self) {
     
-    @scala.inline
-    def setCommandLine(value: NullableOption[String]): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
+    inline def setCommandLine(value: NullableOption[String]): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandLineNull: Self = StObject.set(x, "commandLine", null)
+    inline def setCommandLineNull: Self = StObject.set(x, "commandLine", null)
     
-    @scala.inline
-    def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
+    inline def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
     
-    @scala.inline
-    def setIgnoreVersionDetection(value: Boolean): Self = StObject.set(x, "ignoreVersionDetection", value.asInstanceOf[js.Any])
+    inline def setIgnoreVersionDetection(value: Boolean): Self = StObject.set(x, "ignoreVersionDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreVersionDetectionUndefined: Self = StObject.set(x, "ignoreVersionDetection", js.undefined)
+    inline def setIgnoreVersionDetectionUndefined: Self = StObject.set(x, "ignoreVersionDetection", js.undefined)
     
-    @scala.inline
-    def setProductCode(value: NullableOption[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
+    inline def setProductCode(value: NullableOption[String]): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCodeNull: Self = StObject.set(x, "productCode", null)
+    inline def setProductCodeNull: Self = StObject.set(x, "productCode", null)
     
-    @scala.inline
-    def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
+    inline def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
     
-    @scala.inline
-    def setProductVersion(value: NullableOption[String]): Self = StObject.set(x, "productVersion", value.asInstanceOf[js.Any])
+    inline def setProductVersion(value: NullableOption[String]): Self = StObject.set(x, "productVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductVersionNull: Self = StObject.set(x, "productVersion", null)
+    inline def setProductVersionNull: Self = StObject.set(x, "productVersion", null)
     
-    @scala.inline
-    def setProductVersionUndefined: Self = StObject.set(x, "productVersion", js.undefined)
+    inline def setProductVersionUndefined: Self = StObject.set(x, "productVersion", js.undefined)
   }
 }

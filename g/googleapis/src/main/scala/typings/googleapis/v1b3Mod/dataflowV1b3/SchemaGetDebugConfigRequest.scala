@@ -28,31 +28,23 @@ trait SchemaGetDebugConfigRequest extends StObject {
 }
 object SchemaGetDebugConfigRequest {
   
-  @scala.inline
-  def apply(): SchemaGetDebugConfigRequest = {
+  inline def apply(): SchemaGetDebugConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetDebugConfigRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGetDebugConfigRequestMutableBuilder[Self <: SchemaGetDebugConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetDebugConfigRequest](x: Self) {
     
-    @scala.inline
-    def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
+    inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentIdUndefined: Self = StObject.set(x, "componentId", js.undefined)
+    inline def setComponentIdUndefined: Self = StObject.set(x, "componentId", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait StopQueryResponse extends StObject {
 }
 object StopQueryResponse {
   
-  @scala.inline
-  def apply(): StopQueryResponse = {
+  inline def apply(): StopQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopQueryResponse]
   }
   
-  @scala.inline
-  implicit class StopQueryResponseMutableBuilder[Self <: StopQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StopQueryResponse](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Success): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Success): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

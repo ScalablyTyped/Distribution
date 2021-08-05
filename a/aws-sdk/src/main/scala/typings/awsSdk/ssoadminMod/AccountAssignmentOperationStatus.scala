@@ -53,67 +53,47 @@ trait AccountAssignmentOperationStatus extends StObject {
 }
 object AccountAssignmentOperationStatus {
   
-  @scala.inline
-  def apply(): AccountAssignmentOperationStatus = {
+  inline def apply(): AccountAssignmentOperationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountAssignmentOperationStatus]
   }
   
-  @scala.inline
-  implicit class AccountAssignmentOperationStatusMutableBuilder[Self <: AccountAssignmentOperationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AccountAssignmentOperationStatus](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: Reason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: Reason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
+    inline def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetArnUndefined: Self = StObject.set(x, "PermissionSetArn", js.undefined)
+    inline def setPermissionSetArnUndefined: Self = StObject.set(x, "PermissionSetArn", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: PrincipalId): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: PrincipalId): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
     
-    @scala.inline
-    def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
+    inline def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
+    inline def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: UUId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: UUId): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusValues): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusValues): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: TargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: TargetType): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
   }
 }

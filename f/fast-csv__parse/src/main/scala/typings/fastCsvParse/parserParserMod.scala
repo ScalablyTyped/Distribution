@@ -14,15 +14,15 @@ object parserParserMod {
     
     def parse(line: String, hasMoreData: Boolean): ParseResult = js.native
     
-    var parseRow: js.Any = js.native
+    /* private */ var parseRow: js.Any = js.native
     
-    var parseWithComments: js.Any = js.native
+    /* private */ var parseWithComments: js.Any = js.native
     
-    var parseWithoutComments: js.Any = js.native
+    /* private */ var parseWithoutComments: js.Any = js.native
     
-    val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: js.Any = js.native
     
-    val rowParser: js.Any = js.native
+    /* private */ val rowParser: js.Any = js.native
   }
   /* static members */
   object Parser {
@@ -34,8 +34,7 @@ object parserParserMod {
     @JSImport("@fast-csv/parse/build/src/parser/Parser", "Parser.removeBOM")
     @js.native
     def removeBOM: js.Any = js.native
-    @scala.inline
-    def removeBOM_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeBOM")(x.asInstanceOf[js.Any])
+    inline def removeBOM_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeBOM")(x.asInstanceOf[js.Any])
   }
   
   trait ParseResult extends StObject {
@@ -46,23 +45,18 @@ object parserParserMod {
   }
   object ParseResult {
     
-    @scala.inline
-    def apply(line: String, rows: js.Array[js.Array[String]]): ParseResult = {
+    inline def apply(line: String, rows: js.Array[js.Array[String]]): ParseResult = {
       val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseResult]
     }
     
-    @scala.inline
-    implicit class ParseResultMutableBuilder[Self <: ParseResult] (val x: Self) extends AnyVal {
+    extension [Self <: ParseResult](x: Self) {
       
-      @scala.inline
-      def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[js.Array[String]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: js.Array[String]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
 }

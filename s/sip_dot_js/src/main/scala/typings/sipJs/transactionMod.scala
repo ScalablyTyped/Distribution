@@ -15,7 +15,7 @@ object transactionMod {
   @JSImport("sip.js/lib/core/transactions/transaction", "Transaction")
   @js.native
   abstract class Transaction protected () extends StObject {
-    protected def this(
+    /* protected */ def this(
       _transport: Transport,
       _user: TransactionUser,
       _id: String,
@@ -23,13 +23,13 @@ object transactionMod {
       loggerCategory: String
     ) = this()
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
-    var _transport: js.Any = js.native
+    /* private */ var _transport: js.Any = js.native
     
-    var _user: js.Any = js.native
+    /* private */ var _user: js.Any = js.native
     
     /**
       * Sets up a function that will be called whenever the transaction state changes.
@@ -59,11 +59,11 @@ object transactionMod {
     /** Transaction kind. Deprecated. */
     def kind: String = js.native
     
-    var listeners: js.Any = js.native
+    /* private */ var listeners: js.Any = js.native
     
     /* protected */ def logTransportError(error: TransportError, message: String): Unit = js.native
     
-    var logger: Logger = js.native
+    /* protected */ var logger: Logger = js.native
     
     /**
       * This is currently public so tests may spy on it.

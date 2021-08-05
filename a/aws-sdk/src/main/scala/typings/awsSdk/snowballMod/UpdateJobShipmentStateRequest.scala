@@ -18,19 +18,15 @@ trait UpdateJobShipmentStateRequest extends StObject {
 }
 object UpdateJobShipmentStateRequest {
   
-  @scala.inline
-  def apply(JobId: JobId, ShipmentState: ShipmentState): UpdateJobShipmentStateRequest = {
+  inline def apply(JobId: JobId, ShipmentState: ShipmentState): UpdateJobShipmentStateRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any], ShipmentState = ShipmentState.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateJobShipmentStateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateJobShipmentStateRequestMutableBuilder[Self <: UpdateJobShipmentStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJobShipmentStateRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentState(value: ShipmentState): Self = StObject.set(x, "ShipmentState", value.asInstanceOf[js.Any])
+    inline def setShipmentState(value: ShipmentState): Self = StObject.set(x, "ShipmentState", value.asInstanceOf[js.Any])
   }
 }

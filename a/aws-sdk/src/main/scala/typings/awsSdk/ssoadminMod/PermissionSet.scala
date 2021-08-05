@@ -38,49 +38,35 @@ trait PermissionSet extends StObject {
 }
 object PermissionSet {
   
-  @scala.inline
-  def apply(): PermissionSet = {
+  inline def apply(): PermissionSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PermissionSet]
   }
   
-  @scala.inline
-  implicit class PermissionSetMutableBuilder[Self <: PermissionSet] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionSet](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: PermissionSetDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: PermissionSetDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: PermissionSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: PermissionSetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
+    inline def setPermissionSetArn(value: PermissionSetArn): Self = StObject.set(x, "PermissionSetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetArnUndefined: Self = StObject.set(x, "PermissionSetArn", js.undefined)
+    inline def setPermissionSetArnUndefined: Self = StObject.set(x, "PermissionSetArn", js.undefined)
     
-    @scala.inline
-    def setRelayState(value: RelayState): Self = StObject.set(x, "RelayState", value.asInstanceOf[js.Any])
+    inline def setRelayState(value: RelayState): Self = StObject.set(x, "RelayState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelayStateUndefined: Self = StObject.set(x, "RelayState", js.undefined)
+    inline def setRelayStateUndefined: Self = StObject.set(x, "RelayState", js.undefined)
     
-    @scala.inline
-    def setSessionDuration(value: Duration): Self = StObject.set(x, "SessionDuration", value.asInstanceOf[js.Any])
+    inline def setSessionDuration(value: Duration): Self = StObject.set(x, "SessionDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionDurationUndefined: Self = StObject.set(x, "SessionDuration", js.undefined)
+    inline def setSessionDurationUndefined: Self = StObject.set(x, "SessionDuration", js.undefined)
   }
 }

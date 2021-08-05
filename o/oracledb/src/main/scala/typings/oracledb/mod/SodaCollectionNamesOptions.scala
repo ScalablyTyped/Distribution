@@ -21,25 +21,19 @@ trait SodaCollectionNamesOptions extends StObject {
 }
 object SodaCollectionNamesOptions {
   
-  @scala.inline
-  def apply(): SodaCollectionNamesOptions = {
+  inline def apply(): SodaCollectionNamesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SodaCollectionNamesOptions]
   }
   
-  @scala.inline
-  implicit class SodaCollectionNamesOptionsMutableBuilder[Self <: SodaCollectionNamesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SodaCollectionNamesOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setStartsWith(value: String): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
+    inline def setStartsWith(value: String): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
+    inline def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
   }
 }

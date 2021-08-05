@@ -13,22 +13,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compile(formattersAndParsers: js.Array[FormatterOrParserFunction]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def compile(formattersAndParsers: js.Array[FormatterOrParserFunction], options: CompileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def compile(formattersAndParsers: StringDictionary[FormatterOrParserFunction]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def compile(formattersAndParsers: StringDictionary[FormatterOrParserFunction], options: CompileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def compile(formattersAndParsers: js.Array[FormatterOrParserFunction]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def compile(formattersAndParsers: js.Array[FormatterOrParserFunction], options: CompileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def compile(formattersAndParsers: StringDictionary[FormatterOrParserFunction]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def compile(formattersAndParsers: StringDictionary[FormatterOrParserFunction], options: CompileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formattersAndParsers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def compileExtracts(attributes: CompileExtractsAttributes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compileExtracts")(attributes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def compileExtracts(attributes: CompileExtractsAttributes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compileExtracts")(attributes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def extract(input: String): ExtractFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(input.asInstanceOf[js.Any]).asInstanceOf[ExtractFunction]
-  @scala.inline
-  def extract(input: Program): ExtractFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(input.asInstanceOf[js.Any]).asInstanceOf[ExtractFunction]
+  inline def extract(input: String): ExtractFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(input.asInstanceOf[js.Any]).asInstanceOf[ExtractFunction]
+  inline def extract(input: Program): ExtractFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(input.asInstanceOf[js.Any]).asInstanceOf[ExtractFunction]
   
   trait CompileExtractsAttributes
     extends StObject
@@ -59,44 +52,32 @@ object mod {
   }
   object CompileExtractsAttributes {
     
-    @scala.inline
-    def apply(defaultLocale: String, extracts: ExtractFunction | js.Array[ExtractFunction]): CompileExtractsAttributes = {
+    inline def apply(defaultLocale: String, extracts: ExtractFunction | js.Array[ExtractFunction]): CompileExtractsAttributes = {
       val __obj = js.Dynamic.literal(defaultLocale = defaultLocale.asInstanceOf[js.Any], extracts = extracts.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompileExtractsAttributes]
     }
     
-    @scala.inline
-    implicit class CompileExtractsAttributesMutableBuilder[Self <: CompileExtractsAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: CompileExtractsAttributes](x: Self) {
       
-      @scala.inline
-      def setCldr(value: js.Object | (js.Function1[/* locale */ String, js.Object])): Self = StObject.set(x, "cldr", value.asInstanceOf[js.Any])
+      inline def setCldr(value: js.Object | (js.Function1[/* locale */ String, js.Object])): Self = StObject.set(x, "cldr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCldrFunction1(value: /* locale */ String => js.Object): Self = StObject.set(x, "cldr", js.Any.fromFunction1(value))
+      inline def setCldrFunction1(value: /* locale */ String => js.Object): Self = StObject.set(x, "cldr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCldrUndefined: Self = StObject.set(x, "cldr", js.undefined)
+      inline def setCldrUndefined: Self = StObject.set(x, "cldr", js.undefined)
       
-      @scala.inline
-      def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+      inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtracts(value: ExtractFunction | js.Array[ExtractFunction]): Self = StObject.set(x, "extracts", value.asInstanceOf[js.Any])
+      inline def setExtracts(value: ExtractFunction | js.Array[ExtractFunction]): Self = StObject.set(x, "extracts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractsFunction1(value: /* globalize */ Static => js.Array[FormatterOrParserFunction]): Self = StObject.set(x, "extracts", js.Any.fromFunction1(value))
+      inline def setExtractsFunction1(value: /* globalize */ Static => js.Array[FormatterOrParserFunction]): Self = StObject.set(x, "extracts", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExtractsVarargs(value: ExtractFunction*): Self = StObject.set(x, "extracts", js.Array(value :_*))
+      inline def setExtractsVarargs(value: ExtractFunction*): Self = StObject.set(x, "extracts", js.Array(value :_*))
       
-      @scala.inline
-      def setMessages(value: js.Object | (js.Function1[/* locale */ String, js.Object])): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: js.Object | (js.Function1[/* locale */ String, js.Object])): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesFunction1(value: /* locale */ String => js.Object): Self = StObject.set(x, "messages", js.Any.fromFunction1(value))
+      inline def setMessagesFunction1(value: /* locale */ String => js.Object): Self = StObject.set(x, "messages", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     }
   }
   
@@ -109,20 +90,16 @@ object mod {
   }
   object CompileOptions {
     
-    @scala.inline
-    def apply(): CompileOptions = {
+    inline def apply(): CompileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompileOptions]
     }
     
-    @scala.inline
-    implicit class CompileOptionsMutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompileOptions](x: Self) {
       
-      @scala.inline
-      def setTemplate(value: /* options */ CompileTemplateOptions => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+      inline def setTemplate(value: /* options */ CompileTemplateOptions => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -140,23 +117,18 @@ object mod {
   }
   object CompileTemplateOptions {
     
-    @scala.inline
-    def apply(code: String, dependencies: js.Array[String]): CompileTemplateOptions = {
+    inline def apply(code: String, dependencies: js.Array[String]): CompileTemplateOptions = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompileTemplateOptions]
     }
     
-    @scala.inline
-    implicit class CompileTemplateOptionsMutableBuilder[Self <: CompileTemplateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompileTemplateOptions](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+      inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     }
   }
   

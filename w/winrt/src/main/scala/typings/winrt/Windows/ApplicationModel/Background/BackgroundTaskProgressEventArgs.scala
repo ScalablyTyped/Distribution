@@ -9,8 +9,7 @@ trait BackgroundTaskProgressEventArgs
      with IBackgroundTaskProgressEventArgs
 object BackgroundTaskProgressEventArgs {
   
-  @scala.inline
-  def apply(instanceId: String, progress: Double): BackgroundTaskProgressEventArgs = {
+  inline def apply(instanceId: String, progress: Double): BackgroundTaskProgressEventArgs = {
     val __obj = js.Dynamic.literal(instanceId = instanceId.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundTaskProgressEventArgs]
   }

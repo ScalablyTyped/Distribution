@@ -30,7 +30,7 @@ object lookupDeveloperIdentityCommandMod {
         ] {
     def this(input: LookupDeveloperIdentityCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -42,7 +42,7 @@ object lookupDeveloperIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[LookupDeveloperIdentityCommandInput, LookupDeveloperIdentityCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type LookupDeveloperIdentityCommandInput = LookupDeveloperIdentityInput
@@ -54,8 +54,7 @@ object lookupDeveloperIdentityCommandMod {
        with _ServiceOutputTypes
   object LookupDeveloperIdentityCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): LookupDeveloperIdentityCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): LookupDeveloperIdentityCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[LookupDeveloperIdentityCommandOutput]
     }

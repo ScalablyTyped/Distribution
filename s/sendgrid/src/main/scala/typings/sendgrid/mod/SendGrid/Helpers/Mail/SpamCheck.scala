@@ -23,8 +23,7 @@ trait SpamCheck extends StObject {
 }
 object SpamCheck {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEnable: () => Boolean,
     getPosttoUrl: () => String,
     getThreshold: () => Double,
@@ -37,28 +36,20 @@ object SpamCheck {
     __obj.asInstanceOf[SpamCheck]
   }
   
-  @scala.inline
-  implicit class SpamCheckMutableBuilder[Self <: SpamCheck] (val x: Self) extends AnyVal {
+  extension [Self <: SpamCheck](x: Self) {
     
-    @scala.inline
-    def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
+    inline def setGetEnable(value: () => Boolean): Self = StObject.set(x, "getEnable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosttoUrl(value: () => String): Self = StObject.set(x, "getPosttoUrl", js.Any.fromFunction0(value))
+    inline def setGetPosttoUrl(value: () => String): Self = StObject.set(x, "getPosttoUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetThreshold(value: () => Double): Self = StObject.set(x, "getThreshold", js.Any.fromFunction0(value))
+    inline def setGetThreshold(value: () => Double): Self = StObject.set(x, "getThreshold", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
+    inline def setSetEnable(value: Boolean => Unit): Self = StObject.set(x, "setEnable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPosttoUrl(value: String => Unit): Self = StObject.set(x, "setPosttoUrl", js.Any.fromFunction1(value))
+    inline def setSetPosttoUrl(value: String => Unit): Self = StObject.set(x, "setPosttoUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetThreshold(value: Double => Unit): Self = StObject.set(x, "setThreshold", js.Any.fromFunction1(value))
+    inline def setSetThreshold(value: Double => Unit): Self = StObject.set(x, "setThreshold", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => Posttourl): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Posttourl): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

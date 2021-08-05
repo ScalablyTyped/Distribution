@@ -19,7 +19,6 @@ object mainMod {
     @JSImport("wonder-frp/dist/commonjs/core/Main", "Main.isTest")
     @js.native
     def isTest: Boolean = js.native
-    @scala.inline
-    def isTest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isTest")(x.asInstanceOf[js.Any])
+    inline def isTest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isTest")(x.asInstanceOf[js.Any])
   }
 }

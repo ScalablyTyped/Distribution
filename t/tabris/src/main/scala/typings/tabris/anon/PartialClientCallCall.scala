@@ -19,37 +19,27 @@ trait PartialClientCallCall extends StObject {
 }
 object PartialClientCallCall {
   
-  @scala.inline
-  def apply(): PartialClientCallCall = {
+  inline def apply(): PartialClientCallCall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClientCallCall]
   }
   
-  @scala.inline
-  implicit class PartialClientCallCallMutableBuilder[Self <: PartialClientCallCall] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClientCallCall](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setOp(value: call): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: call): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
-    @scala.inline
-    def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

@@ -51,9 +51,7 @@ object SimpleTextOperation {
     * `SimpleTextOperation`s.
     * @param operation The op
     */
-  @scala.inline
-  def fromTextOperation(operation: TextOperation): js.Array[SimpleTextOperation] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTextOperation")(operation.asInstanceOf[js.Any]).asInstanceOf[js.Array[SimpleTextOperation]]
+  inline def fromTextOperation(operation: TextOperation): js.Array[SimpleTextOperation] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTextOperation")(operation.asInstanceOf[js.Any]).asInstanceOf[js.Array[SimpleTextOperation]]
   
-  @scala.inline
-  def transform(a: SimpleTextOperation, b: SimpleTextOperation): js.Tuple2[SimpleTextOperation, SimpleTextOperation] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[SimpleTextOperation, SimpleTextOperation]]
+  inline def transform(a: SimpleTextOperation, b: SimpleTextOperation): js.Tuple2[SimpleTextOperation, SimpleTextOperation] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[SimpleTextOperation, SimpleTextOperation]]
 }

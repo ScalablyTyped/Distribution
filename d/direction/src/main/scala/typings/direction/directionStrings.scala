@@ -11,20 +11,17 @@ object directionStrings {
   sealed trait ltr
     extends StObject
        with Direction
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait neutral
     extends StObject
        with Direction
-  @scala.inline
-  def neutral: neutral = "neutral".asInstanceOf[neutral]
+  inline def neutral: neutral = "neutral".asInstanceOf[neutral]
   
   @js.native
   sealed trait rtl
     extends StObject
        with Direction
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
 }

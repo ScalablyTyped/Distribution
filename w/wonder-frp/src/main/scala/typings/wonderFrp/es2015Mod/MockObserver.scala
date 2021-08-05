@@ -17,6 +17,5 @@ object MockObserver {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(scheduler: typings.wonderFrp.testingTestSchedulerMod.TestScheduler): typings.wonderFrp.testingMockObserverMod.MockObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.testingMockObserverMod.MockObserver]
+  inline def create(scheduler: typings.wonderFrp.testingTestSchedulerMod.TestScheduler): typings.wonderFrp.testingMockObserverMod.MockObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[typings.wonderFrp.testingMockObserverMod.MockObserver]
 }

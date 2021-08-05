@@ -32,20 +32,20 @@ object mod {
     
     /* protected */ def _send(): Unit = js.native
     
-    var _size: Double = js.native
+    /* protected */ var _size: Double = js.native
     
-    var _stopped: Boolean = js.native
+    /* protected */ var _stopped: Boolean = js.native
     
-    var buffer: Buffer = js.native
+    /* protected */ var buffer: Buffer = js.native
     
-    var chunkSize: Double = js.native
+    /* protected */ var chunkSize: Double = js.native
     
     def feed(data: String): Unit = js.native
     def feed(data: String, encoding: String): Unit = js.native
     def feed(data: Buffer): Unit = js.native
     def feed(data: Buffer, encoding: String): Unit = js.native
     
-    var growSize: Double = js.native
+    /* protected */ var growSize: Double = js.native
     
     def size: Double = js.native
     
@@ -59,22 +59,21 @@ object mod {
   class WritableStreamBuffer () extends Writable {
     def this(opts: WritableStreamBufferOptions) = this()
     
-    var _size: Double = js.native
+    /* protected */ var _size: Double = js.native
     
     def _write(chunk: js.Any, encoding: String, callback: js.Function0[Unit]): Unit = js.native
     
-    var buffer: Buffer = js.native
+    /* protected */ var buffer: Buffer = js.native
     
     def consume(): Buffer = js.native
     def consume(bytes: Double): Buffer = js.native
     
-    var growSize: Double = js.native
+    /* protected */ var growSize: Double = js.native
     
     def size: Double = js.native
   }
   
-  @scala.inline
-  def growBufferForAppendedData(buf: Buffer, actualsize: Double, appendsize: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("growBufferForAppendedData")(buf.asInstanceOf[js.Any], actualsize.asInstanceOf[js.Any], appendsize.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def growBufferForAppendedData(buf: Buffer, actualsize: Double, appendsize: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("growBufferForAppendedData")(buf.asInstanceOf[js.Any], actualsize.asInstanceOf[js.Any], appendsize.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   trait ReadableStreamBufferOptions
     extends StObject
@@ -88,32 +87,24 @@ object mod {
   }
   object ReadableStreamBufferOptions {
     
-    @scala.inline
-    def apply(): ReadableStreamBufferOptions = {
+    inline def apply(): ReadableStreamBufferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadableStreamBufferOptions]
     }
     
-    @scala.inline
-    implicit class ReadableStreamBufferOptionsMutableBuilder[Self <: ReadableStreamBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadableStreamBufferOptions](x: Self) {
       
-      @scala.inline
-      def setAllocSize(value: Double): Self = StObject.set(x, "allocSize", value.asInstanceOf[js.Any])
+      inline def setAllocSize(value: Double): Self = StObject.set(x, "allocSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllocSizeUndefined: Self = StObject.set(x, "allocSize", js.undefined)
+      inline def setAllocSizeUndefined: Self = StObject.set(x, "allocSize", js.undefined)
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setGrowSize(value: Double): Self = StObject.set(x, "growSize", value.asInstanceOf[js.Any])
+      inline def setGrowSize(value: Double): Self = StObject.set(x, "growSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrowSizeUndefined: Self = StObject.set(x, "growSize", js.undefined)
+      inline def setGrowSizeUndefined: Self = StObject.set(x, "growSize", js.undefined)
     }
   }
   
@@ -127,26 +118,20 @@ object mod {
   }
   object WritableStreamBufferOptions {
     
-    @scala.inline
-    def apply(): WritableStreamBufferOptions = {
+    inline def apply(): WritableStreamBufferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WritableStreamBufferOptions]
     }
     
-    @scala.inline
-    implicit class WritableStreamBufferOptionsMutableBuilder[Self <: WritableStreamBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WritableStreamBufferOptions](x: Self) {
       
-      @scala.inline
-      def setAllocSize(value: Double): Self = StObject.set(x, "allocSize", value.asInstanceOf[js.Any])
+      inline def setAllocSize(value: Double): Self = StObject.set(x, "allocSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllocSizeUndefined: Self = StObject.set(x, "allocSize", js.undefined)
+      inline def setAllocSizeUndefined: Self = StObject.set(x, "allocSize", js.undefined)
       
-      @scala.inline
-      def setGrowSize(value: Double): Self = StObject.set(x, "growSize", value.asInstanceOf[js.Any])
+      inline def setGrowSize(value: Double): Self = StObject.set(x, "growSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrowSizeUndefined: Self = StObject.set(x, "growSize", js.undefined)
+      inline def setGrowSizeUndefined: Self = StObject.set(x, "growSize", js.undefined)
     }
   }
 }

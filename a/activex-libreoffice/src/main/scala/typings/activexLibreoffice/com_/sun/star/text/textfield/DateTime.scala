@@ -62,8 +62,7 @@ trait DateTime
 }
 object DateTime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Adjust: Double,
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
@@ -99,28 +98,20 @@ object DateTime {
     __obj.asInstanceOf[DateTime]
   }
   
-  @scala.inline
-  implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
+  extension [Self <: DateTime](x: Self) {
     
-    @scala.inline
-    def setAdjust(value: Double): Self = StObject.set(x, "Adjust", value.asInstanceOf[js.Any])
+    inline def setAdjust(value: Double): Self = StObject.set(x, "Adjust", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeFormat(value: Double): Self = StObject.set(x, "DateTimeFormat", value.asInstanceOf[js.Any])
+    inline def setDateTimeFormat(value: Double): Self = StObject.set(x, "DateTimeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeValue(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
+    inline def setDateTimeValue(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDate(value: Boolean): Self = StObject.set(x, "IsDate", value.asInstanceOf[js.Any])
+    inline def setIsDate(value: Boolean): Self = StObject.set(x, "IsDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "IsFixed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
+    inline def setIsFixedLanguage(value: Boolean): Self = StObject.set(x, "IsFixedLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
   }
 }

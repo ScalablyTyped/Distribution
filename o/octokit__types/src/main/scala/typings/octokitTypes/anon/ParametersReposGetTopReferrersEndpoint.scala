@@ -18,8 +18,7 @@ trait ParametersReposGetTopReferrersEndpoint extends StObject {
 }
 object ParametersReposGetTopReferrersEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetTopReferrersEndpoint,
     request: ReposGetTopReferrersRequestOptions,
     response: OctokitResponse[ReposGetTopReferrersResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetTopReferrersEndpoint {
     __obj.asInstanceOf[ParametersReposGetTopReferrersEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetTopReferrersEndpointMutableBuilder[Self <: ParametersReposGetTopReferrersEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetTopReferrersEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetTopReferrersEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetTopReferrersEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetTopReferrersRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetTopReferrersRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetTopReferrersResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetTopReferrersResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

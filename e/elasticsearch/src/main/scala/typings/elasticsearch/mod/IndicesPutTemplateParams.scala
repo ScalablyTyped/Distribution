@@ -22,46 +22,33 @@ trait IndicesPutTemplateParams
 }
 object IndicesPutTemplateParams {
   
-  @scala.inline
-  def apply(name: String): IndicesPutTemplateParams = {
+  inline def apply(name: String): IndicesPutTemplateParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesPutTemplateParams]
   }
   
-  @scala.inline
-  implicit class IndicesPutTemplateParamsMutableBuilder[Self <: IndicesPutTemplateParams] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesPutTemplateParams](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
+    inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
+    inline def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
     
-    @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

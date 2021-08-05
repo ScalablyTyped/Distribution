@@ -35,67 +35,47 @@ trait Partner extends StObject {
 }
 object Partner {
   
-  @scala.inline
-  def apply(): Partner = {
+  inline def apply(): Partner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partner]
   }
   
-  @scala.inline
-  implicit class PartnerMutableBuilder[Self <: Partner] (val x: Self) extends AnyVal {
+  extension [Self <: Partner](x: Self) {
     
-    @scala.inline
-    def setAdServerConfig(value: PartnerAdServerConfig): Self = StObject.set(x, "adServerConfig", value.asInstanceOf[js.Any])
+    inline def setAdServerConfig(value: PartnerAdServerConfig): Self = StObject.set(x, "adServerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdServerConfigUndefined: Self = StObject.set(x, "adServerConfig", js.undefined)
+    inline def setAdServerConfigUndefined: Self = StObject.set(x, "adServerConfig", js.undefined)
     
-    @scala.inline
-    def setDataAccessConfig(value: PartnerDataAccessConfig): Self = StObject.set(x, "dataAccessConfig", value.asInstanceOf[js.Any])
+    inline def setDataAccessConfig(value: PartnerDataAccessConfig): Self = StObject.set(x, "dataAccessConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAccessConfigUndefined: Self = StObject.set(x, "dataAccessConfig", js.undefined)
+    inline def setDataAccessConfigUndefined: Self = StObject.set(x, "dataAccessConfig", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
+    inline def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
+    inline def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
     
-    @scala.inline
-    def setExchangeConfig(value: ExchangeConfig): Self = StObject.set(x, "exchangeConfig", value.asInstanceOf[js.Any])
+    inline def setExchangeConfig(value: ExchangeConfig): Self = StObject.set(x, "exchangeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeConfigUndefined: Self = StObject.set(x, "exchangeConfig", js.undefined)
+    inline def setExchangeConfigUndefined: Self = StObject.set(x, "exchangeConfig", js.undefined)
     
-    @scala.inline
-    def setGeneralConfig(value: PartnerGeneralConfig): Self = StObject.set(x, "generalConfig", value.asInstanceOf[js.Any])
+    inline def setGeneralConfig(value: PartnerGeneralConfig): Self = StObject.set(x, "generalConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneralConfigUndefined: Self = StObject.set(x, "generalConfig", js.undefined)
+    inline def setGeneralConfigUndefined: Self = StObject.set(x, "generalConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

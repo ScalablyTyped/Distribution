@@ -25,16 +25,13 @@ trait XMultiTextMarkup extends StObject {
 }
 object XMultiTextMarkup {
   
-  @scala.inline
-  def apply(commitMultiTextMarkup: SeqEquiv[TextMarkupDescriptor] => Unit): XMultiTextMarkup = {
+  inline def apply(commitMultiTextMarkup: SeqEquiv[TextMarkupDescriptor] => Unit): XMultiTextMarkup = {
     val __obj = js.Dynamic.literal(commitMultiTextMarkup = js.Any.fromFunction1(commitMultiTextMarkup))
     __obj.asInstanceOf[XMultiTextMarkup]
   }
   
-  @scala.inline
-  implicit class XMultiTextMarkupMutableBuilder[Self <: XMultiTextMarkup] (val x: Self) extends AnyVal {
+  extension [Self <: XMultiTextMarkup](x: Self) {
     
-    @scala.inline
-    def setCommitMultiTextMarkup(value: SeqEquiv[TextMarkupDescriptor] => Unit): Self = StObject.set(x, "commitMultiTextMarkup", js.Any.fromFunction1(value))
+    inline def setCommitMultiTextMarkup(value: SeqEquiv[TextMarkupDescriptor] => Unit): Self = StObject.set(x, "commitMultiTextMarkup", js.Any.fromFunction1(value))
   }
 }

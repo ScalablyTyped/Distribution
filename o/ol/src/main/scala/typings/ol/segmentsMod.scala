@@ -11,8 +11,7 @@ object segmentsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def forEach[T](
+  inline def forEach[T](
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,

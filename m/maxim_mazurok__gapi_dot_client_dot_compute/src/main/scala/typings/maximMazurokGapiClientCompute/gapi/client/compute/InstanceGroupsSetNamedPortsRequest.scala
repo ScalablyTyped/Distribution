@@ -18,28 +18,21 @@ trait InstanceGroupsSetNamedPortsRequest extends StObject {
 }
 object InstanceGroupsSetNamedPortsRequest {
   
-  @scala.inline
-  def apply(): InstanceGroupsSetNamedPortsRequest = {
+  inline def apply(): InstanceGroupsSetNamedPortsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupsSetNamedPortsRequest]
   }
   
-  @scala.inline
-  implicit class InstanceGroupsSetNamedPortsRequestMutableBuilder[Self <: InstanceGroupsSetNamedPortsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupsSetNamedPortsRequest](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setNamedPorts(value: js.Array[NamedPort]): Self = StObject.set(x, "namedPorts", value.asInstanceOf[js.Any])
+    inline def setNamedPorts(value: js.Array[NamedPort]): Self = StObject.set(x, "namedPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
+    inline def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
     
-    @scala.inline
-    def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
+    inline def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
   }
 }

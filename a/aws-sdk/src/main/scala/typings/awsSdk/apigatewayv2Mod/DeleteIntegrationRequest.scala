@@ -18,19 +18,15 @@ trait DeleteIntegrationRequest extends StObject {
 }
 object DeleteIntegrationRequest {
   
-  @scala.inline
-  def apply(ApiId: string, IntegrationId: string): DeleteIntegrationRequest = {
+  inline def apply(ApiId: string, IntegrationId: string): DeleteIntegrationRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], IntegrationId = IntegrationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIntegrationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteIntegrationRequestMutableBuilder[Self <: DeleteIntegrationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIntegrationRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationId(value: string): Self = StObject.set(x, "IntegrationId", value.asInstanceOf[js.Any])
+    inline def setIntegrationId(value: string): Self = StObject.set(x, "IntegrationId", value.asInstanceOf[js.Any])
   }
 }

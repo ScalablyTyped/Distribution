@@ -29,61 +29,43 @@ trait PartialTooltipOptions extends StObject {
 }
 object PartialTooltipOptions {
   
-  @scala.inline
-  def apply(): PartialTooltipOptions = {
+  inline def apply(): PartialTooltipOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTooltipOptions]
   }
   
-  @scala.inline
-  implicit class PartialTooltipOptionsMutableBuilder[Self <: PartialTooltipOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTooltipOptions](x: Self) {
     
-    @scala.inline
-    def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
+    inline def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
+    inline def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
     
-    @scala.inline
-    def setExitDelay(value: Double): Self = StObject.set(x, "exitDelay", value.asInstanceOf[js.Any])
+    inline def setExitDelay(value: Double): Self = StObject.set(x, "exitDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitDelayUndefined: Self = StObject.set(x, "exitDelay", js.undefined)
+    inline def setExitDelayUndefined: Self = StObject.set(x, "exitDelay", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
+    inline def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInDurationUndefined: Self = StObject.set(x, "inDuration", js.undefined)
+    inline def setInDurationUndefined: Self = StObject.set(x, "inDuration", js.undefined)
     
-    @scala.inline
-    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
+    inline def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutDurationUndefined: Self = StObject.set(x, "outDuration", js.undefined)
+    inline def setOutDurationUndefined: Self = StObject.set(x, "outDuration", js.undefined)
     
-    @scala.inline
-    def setPosition(value: top | right | bottom | left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: top | right | bottom | left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTransitionMovement(value: Double): Self = StObject.set(x, "transitionMovement", value.asInstanceOf[js.Any])
+    inline def setTransitionMovement(value: Double): Self = StObject.set(x, "transitionMovement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionMovementUndefined: Self = StObject.set(x, "transitionMovement", js.undefined)
+    inline def setTransitionMovementUndefined: Self = StObject.set(x, "transitionMovement", js.undefined)
   }
 }

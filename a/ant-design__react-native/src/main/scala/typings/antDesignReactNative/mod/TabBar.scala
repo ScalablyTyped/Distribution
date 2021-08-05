@@ -26,8 +26,7 @@ object TabBar {
     @JSImport("@ant-design/react-native", "TabBar.Item.defaultProps")
     @js.native
     def defaultProps: `0` = js.native
-    @scala.inline
-    def defaultProps_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   /* static member */
@@ -40,19 +39,16 @@ object TabBar {
     @JSImport("@ant-design/react-native", "TabBar.defaultProps.barTintColor")
     @js.native
     def barTintColor: String = js.native
-    @scala.inline
-    def barTintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barTintColor")(x.asInstanceOf[js.Any])
+    inline def barTintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("barTintColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native", "TabBar.defaultProps.tintColor")
     @js.native
     def tintColor: String = js.native
-    @scala.inline
-    def tintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tintColor")(x.asInstanceOf[js.Any])
+    inline def tintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tintColor")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native", "TabBar.defaultProps.unselectedTintColor")
     @js.native
     def unselectedTintColor: String = js.native
-    @scala.inline
-    def unselectedTintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unselectedTintColor")(x.asInstanceOf[js.Any])
+    inline def unselectedTintColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unselectedTintColor")(x.asInstanceOf[js.Any])
   }
 }

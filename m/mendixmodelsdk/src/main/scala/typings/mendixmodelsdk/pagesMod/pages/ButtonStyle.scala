@@ -21,48 +21,41 @@ object ButtonStyle {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ButtonStyle.Danger")
   @js.native
   def Danger: ButtonStyle = js.native
-  @scala.inline
-  def Danger_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Danger")(x.asInstanceOf[js.Any])
+  inline def Danger_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Danger")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ButtonStyle.Default")
   @js.native
   def Default: ButtonStyle = js.native
-  @scala.inline
-  def Default_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+  inline def Default_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ButtonStyle.Info")
   @js.native
   def Info: ButtonStyle = js.native
-  @scala.inline
-  def Info_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Info")(x.asInstanceOf[js.Any])
+  inline def Info_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Info")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ButtonStyle.Inverse")
   @js.native
   def Inverse: ButtonStyle = js.native
-  @scala.inline
-  def Inverse_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Inverse")(x.asInstanceOf[js.Any])
+  inline def Inverse_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Inverse")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ButtonStyle.Primary")
   @js.native
   def Primary: ButtonStyle = js.native
-  @scala.inline
-  def Primary_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Primary")(x.asInstanceOf[js.Any])
+  inline def Primary_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Primary")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ButtonStyle.Success")
   @js.native
   def Success: ButtonStyle = js.native
-  @scala.inline
-  def Success_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Success")(x.asInstanceOf[js.Any])
+  inline def Success_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Success")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ButtonStyle.Warning")
   @js.native
   def Warning: ButtonStyle = js.native
-  @scala.inline
-  def Warning_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Warning")(x.asInstanceOf[js.Any])
+  inline def Warning_=(x: ButtonStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Warning")(x.asInstanceOf[js.Any])
 }

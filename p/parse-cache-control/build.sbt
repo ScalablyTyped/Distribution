@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-cache-control"
-version := "1.0-dt-20200922Z-615547"
+version := "1.0-dt-20200922Z-cf98dc"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

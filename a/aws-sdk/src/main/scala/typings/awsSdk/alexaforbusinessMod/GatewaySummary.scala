@@ -33,43 +33,31 @@ trait GatewaySummary extends StObject {
 }
 object GatewaySummary {
   
-  @scala.inline
-  def apply(): GatewaySummary = {
+  inline def apply(): GatewaySummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GatewaySummary]
   }
   
-  @scala.inline
-  implicit class GatewaySummaryMutableBuilder[Self <: GatewaySummary] (val x: Self) extends AnyVal {
+  extension [Self <: GatewaySummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setDescription(value: GatewayDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: GatewayDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setGatewayGroupArn(value: Arn): Self = StObject.set(x, "GatewayGroupArn", value.asInstanceOf[js.Any])
+    inline def setGatewayGroupArn(value: Arn): Self = StObject.set(x, "GatewayGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayGroupArnUndefined: Self = StObject.set(x, "GatewayGroupArn", js.undefined)
+    inline def setGatewayGroupArnUndefined: Self = StObject.set(x, "GatewayGroupArn", js.undefined)
     
-    @scala.inline
-    def setName(value: GatewayName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: GatewayName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSoftwareVersion(value: GatewayVersion): Self = StObject.set(x, "SoftwareVersion", value.asInstanceOf[js.Any])
+    inline def setSoftwareVersion(value: GatewayVersion): Self = StObject.set(x, "SoftwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareVersionUndefined: Self = StObject.set(x, "SoftwareVersion", js.undefined)
+    inline def setSoftwareVersionUndefined: Self = StObject.set(x, "SoftwareVersion", js.undefined)
   }
 }

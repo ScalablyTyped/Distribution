@@ -43,55 +43,39 @@ trait DomainDetails extends StObject {
 }
 object DomainDetails {
   
-  @scala.inline
-  def apply(): DomainDetails = {
+  inline def apply(): DomainDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainDetails]
   }
   
-  @scala.inline
-  implicit class DomainDetailsMutableBuilder[Self <: DomainDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DomainDetails](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDomainArn(value: DomainArn): Self = StObject.set(x, "DomainArn", value.asInstanceOf[js.Any])
+    inline def setDomainArn(value: DomainArn): Self = StObject.set(x, "DomainArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainArnUndefined: Self = StObject.set(x, "DomainArn", js.undefined)
+    inline def setDomainArnUndefined: Self = StObject.set(x, "DomainArn", js.undefined)
     
-    @scala.inline
-    def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
+    inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
+    inline def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DomainStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DomainStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String1024): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String1024): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

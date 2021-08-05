@@ -14,23 +14,18 @@ object igtvSearchResponseMod {
   }
   object IgtvSearchResponseBiographyWithEntities {
     
-    @scala.inline
-    def apply(entities: js.Array[IgtvSearchResponseEntitiesItem], raw_text: String): IgtvSearchResponseBiographyWithEntities = {
+    inline def apply(entities: js.Array[IgtvSearchResponseEntitiesItem], raw_text: String): IgtvSearchResponseBiographyWithEntities = {
       val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], raw_text = raw_text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IgtvSearchResponseBiographyWithEntities]
     }
     
-    @scala.inline
-    implicit class IgtvSearchResponseBiographyWithEntitiesMutableBuilder[Self <: IgtvSearchResponseBiographyWithEntities] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvSearchResponseBiographyWithEntities](x: Self) {
       
-      @scala.inline
-      def setEntities(value: js.Array[IgtvSearchResponseEntitiesItem]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+      inline def setEntities(value: js.Array[IgtvSearchResponseEntitiesItem]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntitiesVarargs(value: IgtvSearchResponseEntitiesItem*): Self = StObject.set(x, "entities", js.Array(value :_*))
+      inline def setEntitiesVarargs(value: IgtvSearchResponseEntitiesItem*): Self = StObject.set(x, "entities", js.Array(value :_*))
       
-      @scala.inline
-      def setRaw_text(value: String): Self = StObject.set(x, "raw_text", value.asInstanceOf[js.Any])
+      inline def setRaw_text(value: String): Self = StObject.set(x, "raw_text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,8 +55,7 @@ object igtvSearchResponseMod {
   }
   object IgtvSearchResponseChannel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       approx_total_videos: Null,
       cover_photo_url: Null,
       description: Null,
@@ -79,44 +73,31 @@ object igtvSearchResponseMod {
       __obj.asInstanceOf[IgtvSearchResponseChannel]
     }
     
-    @scala.inline
-    implicit class IgtvSearchResponseChannelMutableBuilder[Self <: IgtvSearchResponseChannel] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvSearchResponseChannel](x: Self) {
       
-      @scala.inline
-      def setApprox_total_videos(value: Null): Self = StObject.set(x, "approx_total_videos", value.asInstanceOf[js.Any])
+      inline def setApprox_total_videos(value: Null): Self = StObject.set(x, "approx_total_videos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCover_photo_url(value: Null): Self = StObject.set(x, "cover_photo_url", value.asInstanceOf[js.Any])
+      inline def setCover_photo_url(value: Null): Self = StObject.set(x, "cover_photo_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: Null): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Null): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
+      inline def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+      inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeen_state(value: IgtvSearchResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
+      inline def setSeen_state(value: IgtvSearchResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_dict(value: IgtvSearchResponseUserDict): Self = StObject.set(x, "user_dict", value.asInstanceOf[js.Any])
+      inline def setUser_dict(value: IgtvSearchResponseUserDict): Self = StObject.set(x, "user_dict", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,26 +109,20 @@ object igtvSearchResponseMod {
   }
   object IgtvSearchResponseEntitiesItem {
     
-    @scala.inline
-    def apply(): IgtvSearchResponseEntitiesItem = {
+    inline def apply(): IgtvSearchResponseEntitiesItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IgtvSearchResponseEntitiesItem]
     }
     
-    @scala.inline
-    implicit class IgtvSearchResponseEntitiesItemMutableBuilder[Self <: IgtvSearchResponseEntitiesItem] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvSearchResponseEntitiesItem](x: Self) {
       
-      @scala.inline
-      def setHashtag(value: IgtvSearchResponseHashtag): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+      inline def setHashtag(value: IgtvSearchResponseHashtag): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
+      inline def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
       
-      @scala.inline
-      def setUser(value: IgtvSearchResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: IgtvSearchResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -173,8 +148,7 @@ object igtvSearchResponseMod {
   }
   object IgtvSearchResponseFriendshipStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       following: Boolean,
       incoming_request: Boolean,
       is_bestie: Boolean,
@@ -186,44 +160,31 @@ object igtvSearchResponseMod {
       __obj.asInstanceOf[IgtvSearchResponseFriendshipStatus]
     }
     
-    @scala.inline
-    implicit class IgtvSearchResponseFriendshipStatusMutableBuilder[Self <: IgtvSearchResponseFriendshipStatus] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvSearchResponseFriendshipStatus](x: Self) {
       
-      @scala.inline
-      def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
+      inline def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockingUndefined: Self = StObject.set(x, "blocking", js.undefined)
+      inline def setBlockingUndefined: Self = StObject.set(x, "blocking", js.undefined)
       
-      @scala.inline
-      def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
+      inline def setFollowed_by(value: Boolean): Self = StObject.set(x, "followed_by", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowed_byUndefined: Self = StObject.set(x, "followed_by", js.undefined)
+      inline def setFollowed_byUndefined: Self = StObject.set(x, "followed_by", js.undefined)
       
-      @scala.inline
-      def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
+      inline def setIncoming_request(value: Boolean): Self = StObject.set(x, "incoming_request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+      inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
+      inline def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuting(value: Boolean): Self = StObject.set(x, "muting", value.asInstanceOf[js.Any])
+      inline def setMuting(value: Boolean): Self = StObject.set(x, "muting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutingUndefined: Self = StObject.set(x, "muting", js.undefined)
+      inline def setMutingUndefined: Self = StObject.set(x, "muting", js.undefined)
       
-      @scala.inline
-      def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+      inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,20 +196,16 @@ object igtvSearchResponseMod {
   }
   object IgtvSearchResponseHashtag {
     
-    @scala.inline
-    def apply(id: String, name: String): IgtvSearchResponseHashtag = {
+    inline def apply(id: String, name: String): IgtvSearchResponseHashtag = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IgtvSearchResponseHashtag]
     }
     
-    @scala.inline
-    implicit class IgtvSearchResponseHashtagMutableBuilder[Self <: IgtvSearchResponseHashtag] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvSearchResponseHashtag](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,24 +219,19 @@ object igtvSearchResponseMod {
   }
   object IgtvSearchResponseResultsItem {
     
-    @scala.inline
-    def apply(channel: IgtvSearchResponseChannel, `type`: String, user: IgtvSearchResponseUser): IgtvSearchResponseResultsItem = {
+    inline def apply(channel: IgtvSearchResponseChannel, `type`: String, user: IgtvSearchResponseUser): IgtvSearchResponseResultsItem = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IgtvSearchResponseResultsItem]
     }
     
-    @scala.inline
-    implicit class IgtvSearchResponseResultsItemMutableBuilder[Self <: IgtvSearchResponseResultsItem] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvSearchResponseResultsItem](x: Self) {
       
-      @scala.inline
-      def setChannel(value: IgtvSearchResponseChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: IgtvSearchResponseChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: IgtvSearchResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: IgtvSearchResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -297,8 +249,7 @@ object igtvSearchResponseMod {
   }
   object IgtvSearchResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       has_more: Boolean,
       num_results: Double,
       rank_token: String,
@@ -309,26 +260,19 @@ object igtvSearchResponseMod {
       __obj.asInstanceOf[IgtvSearchResponseRootObject]
     }
     
-    @scala.inline
-    implicit class IgtvSearchResponseRootObjectMutableBuilder[Self <: IgtvSearchResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvSearchResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
+      inline def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
+      inline def setNum_results(value: Double): Self = StObject.set(x, "num_results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
+      inline def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResults(value: js.Array[IgtvSearchResponseResultsItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[IgtvSearchResponseResultsItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: IgtvSearchResponseResultsItem*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: IgtvSearchResponseResultsItem*): Self = StObject.set(x, "results", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -372,113 +316,78 @@ object igtvSearchResponseMod {
   }
   object IgtvSearchResponseUser {
     
-    @scala.inline
-    def apply(username: String): IgtvSearchResponseUser = {
+    inline def apply(username: String): IgtvSearchResponseUser = {
       val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[IgtvSearchResponseUser]
     }
     
-    @scala.inline
-    implicit class IgtvSearchResponseUserMutableBuilder[Self <: IgtvSearchResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvSearchResponseUser](x: Self) {
       
-      @scala.inline
-      def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
+      inline def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiographyUndefined: Self = StObject.set(x, "biography", js.undefined)
+      inline def setBiographyUndefined: Self = StObject.set(x, "biography", js.undefined)
       
-      @scala.inline
-      def setBiography_with_entities(value: IgtvSearchResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
+      inline def setBiography_with_entities(value: IgtvSearchResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiography_with_entitiesUndefined: Self = StObject.set(x, "biography_with_entities", js.undefined)
+      inline def setBiography_with_entitiesUndefined: Self = StObject.set(x, "biography_with_entities", js.undefined)
       
-      @scala.inline
-      def setExternal_lynx_url(value: String): Self = StObject.set(x, "external_lynx_url", value.asInstanceOf[js.Any])
+      inline def setExternal_lynx_url(value: String): Self = StObject.set(x, "external_lynx_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_lynx_urlUndefined: Self = StObject.set(x, "external_lynx_url", js.undefined)
+      inline def setExternal_lynx_urlUndefined: Self = StObject.set(x, "external_lynx_url", js.undefined)
       
-      @scala.inline
-      def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
+      inline def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_urlUndefined: Self = StObject.set(x, "external_url", js.undefined)
+      inline def setExternal_urlUndefined: Self = StObject.set(x, "external_url", js.undefined)
       
-      @scala.inline
-      def setFriendship_status(value: IgtvSearchResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+      inline def setFriendship_status(value: IgtvSearchResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFriendship_statusUndefined: Self = StObject.set(x, "friendship_status", js.undefined)
+      inline def setFriendship_statusUndefined: Self = StObject.set(x, "friendship_status", js.undefined)
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_nameUndefined: Self = StObject.set(x, "full_name", js.undefined)
+      inline def setFull_nameUndefined: Self = StObject.set(x, "full_name", js.undefined)
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_pictureUndefined: Self = StObject.set(x, "has_anonymous_profile_picture", js.undefined)
+      inline def setHas_anonymous_profile_pictureUndefined: Self = StObject.set(x, "has_anonymous_profile_picture", js.undefined)
       
-      @scala.inline
-      def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
+      inline def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_biography_translationUndefined: Self = StObject.set(x, "has_biography_translation", js.undefined)
+      inline def setHas_biography_translationUndefined: Self = StObject.set(x, "has_biography_translation", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_privateUndefined: Self = StObject.set(x, "is_private", js.undefined)
+      inline def setIs_privateUndefined: Self = StObject.set(x, "is_private", js.undefined)
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verifiedUndefined: Self = StObject.set(x, "is_verified", js.undefined)
+      inline def setIs_verifiedUndefined: Self = StObject.set(x, "is_verified", js.undefined)
       
-      @scala.inline
-      def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
+      inline def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
+      inline def setLatest_reel_mediaUndefined: Self = StObject.set(x, "latest_reel_media", js.undefined)
       
-      @scala.inline
-      def setMutual_followers_count(value: Double): Self = StObject.set(x, "mutual_followers_count", value.asInstanceOf[js.Any])
+      inline def setMutual_followers_count(value: Double): Self = StObject.set(x, "mutual_followers_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutual_followers_countUndefined: Self = StObject.set(x, "mutual_followers_count", js.undefined)
+      inline def setMutual_followers_countUndefined: Self = StObject.set(x, "mutual_followers_count", js.undefined)
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkUndefined: Self = StObject.set(x, "pk", js.undefined)
+      inline def setPkUndefined: Self = StObject.set(x, "pk", js.undefined)
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
+      inline def setProfile_pic_idUndefined: Self = StObject.set(x, "profile_pic_id", js.undefined)
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_urlUndefined: Self = StObject.set(x, "profile_pic_url", js.undefined)
+      inline def setProfile_pic_urlUndefined: Self = StObject.set(x, "profile_pic_url", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -528,8 +437,7 @@ object igtvSearchResponseMod {
   }
   object IgtvSearchResponseUserDict {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       biography: String,
       biography_with_entities: IgtvSearchResponseBiographyWithEntities,
       external_url: String,
@@ -553,80 +461,55 @@ object igtvSearchResponseMod {
       __obj.asInstanceOf[IgtvSearchResponseUserDict]
     }
     
-    @scala.inline
-    implicit class IgtvSearchResponseUserDictMutableBuilder[Self <: IgtvSearchResponseUserDict] (val x: Self) extends AnyVal {
+    extension [Self <: IgtvSearchResponseUserDict](x: Self) {
       
-      @scala.inline
-      def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
+      inline def setBiography(value: String): Self = StObject.set(x, "biography", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBiography_with_entities(value: IgtvSearchResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
+      inline def setBiography_with_entities(value: IgtvSearchResponseBiographyWithEntities): Self = StObject.set(x, "biography_with_entities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_lynx_url(value: String): Self = StObject.set(x, "external_lynx_url", value.asInstanceOf[js.Any])
+      inline def setExternal_lynx_url(value: String): Self = StObject.set(x, "external_lynx_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal_lynx_urlUndefined: Self = StObject.set(x, "external_lynx_url", js.undefined)
+      inline def setExternal_lynx_urlUndefined: Self = StObject.set(x, "external_lynx_url", js.undefined)
       
-      @scala.inline
-      def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
+      inline def setExternal_url(value: String): Self = StObject.set(x, "external_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
+      inline def setFollower_count(value: Double): Self = StObject.set(x, "follower_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing_count(value: Double): Self = StObject.set(x, "following_count", value.asInstanceOf[js.Any])
+      inline def setFollowing_count(value: Double): Self = StObject.set(x, "following_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing_tag_count(value: Double): Self = StObject.set(x, "following_tag_count", value.asInstanceOf[js.Any])
+      inline def setFollowing_tag_count(value: Double): Self = StObject.set(x, "following_tag_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFriendship_status(value: IgtvSearchResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+      inline def setFriendship_status(value: IgtvSearchResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeo_media_count(value: Double): Self = StObject.set(x, "geo_media_count", value.asInstanceOf[js.Any])
+      inline def setGeo_media_count(value: Double): Self = StObject.set(x, "geo_media_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeo_media_countUndefined: Self = StObject.set(x, "geo_media_count", js.undefined)
+      inline def setGeo_media_countUndefined: Self = StObject.set(x, "geo_media_count", js.undefined)
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
+      inline def setHas_biography_translation(value: Boolean): Self = StObject.set(x, "has_biography_translation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_biography_translationUndefined: Self = StObject.set(x, "has_biography_translation", js.undefined)
+      inline def setHas_biography_translationUndefined: Self = StObject.set(x, "has_biography_translation", js.undefined)
       
-      @scala.inline
-      def setHas_igtv_series(value: Boolean): Self = StObject.set(x, "has_igtv_series", value.asInstanceOf[js.Any])
+      inline def setHas_igtv_series(value: Boolean): Self = StObject.set(x, "has_igtv_series", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
+      inline def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_igtv_videos(value: Double): Self = StObject.set(x, "total_igtv_videos", value.asInstanceOf[js.Any])
+      inline def setTotal_igtv_videos(value: Double): Self = StObject.set(x, "total_igtv_videos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

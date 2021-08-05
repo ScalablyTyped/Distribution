@@ -13,19 +13,15 @@ trait ConferencePreference extends StObject {
 }
 object ConferencePreference {
   
-  @scala.inline
-  def apply(): ConferencePreference = {
+  inline def apply(): ConferencePreference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConferencePreference]
   }
   
-  @scala.inline
-  implicit class ConferencePreferenceMutableBuilder[Self <: ConferencePreference] (val x: Self) extends AnyVal {
+  extension [Self <: ConferencePreference](x: Self) {
     
-    @scala.inline
-    def setDefaultConferenceProviderArn(value: Arn): Self = StObject.set(x, "DefaultConferenceProviderArn", value.asInstanceOf[js.Any])
+    inline def setDefaultConferenceProviderArn(value: Arn): Self = StObject.set(x, "DefaultConferenceProviderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultConferenceProviderArnUndefined: Self = StObject.set(x, "DefaultConferenceProviderArn", js.undefined)
+    inline def setDefaultConferenceProviderArnUndefined: Self = StObject.set(x, "DefaultConferenceProviderArn", js.undefined)
   }
 }

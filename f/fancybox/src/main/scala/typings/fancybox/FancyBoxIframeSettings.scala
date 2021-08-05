@@ -31,37 +31,27 @@ trait FancyBoxIframeSettings extends StObject {
 }
 object FancyBoxIframeSettings {
   
-  @scala.inline
-  def apply(): FancyBoxIframeSettings = {
+  inline def apply(): FancyBoxIframeSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FancyBoxIframeSettings]
   }
   
-  @scala.inline
-  implicit class FancyBoxIframeSettingsMutableBuilder[Self <: FancyBoxIframeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxIframeSettings](x: Self) {
     
-    @scala.inline
-    def setAttr(value: FancyBoxPlainObject): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: FancyBoxPlainObject): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
+    inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
     
-    @scala.inline
-    def setCss(value: FancyBoxPlainObject): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: FancyBoxPlainObject): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    @scala.inline
-    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+    inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
-    @scala.inline
-    def setTpl(value: String): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: String): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+    inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
   }
 }

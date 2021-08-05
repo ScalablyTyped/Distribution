@@ -23,40 +23,29 @@ trait CommentHistoryResult extends StObject {
 }
 object CommentHistoryResult {
   
-  @scala.inline
-  def apply(): CommentHistoryResult = {
+  inline def apply(): CommentHistoryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentHistoryResult]
   }
   
-  @scala.inline
-  implicit class CommentHistoryResultMutableBuilder[Self <: CommentHistoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: CommentHistoryResult](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setEndTimetoken(value: String): Self = StObject.set(x, "endTimetoken", value.asInstanceOf[js.Any])
+    inline def setEndTimetoken(value: String): Self = StObject.set(x, "endTimetoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimetokenUndefined: Self = StObject.set(x, "endTimetoken", js.undefined)
+    inline def setEndTimetokenUndefined: Self = StObject.set(x, "endTimetoken", js.undefined)
     
-    @scala.inline
-    def setStartTimetoken(value: String): Self = StObject.set(x, "startTimetoken", value.asInstanceOf[js.Any])
+    inline def setStartTimetoken(value: String): Self = StObject.set(x, "startTimetoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimetokenUndefined: Self = StObject.set(x, "startTimetoken", js.undefined)
+    inline def setStartTimetokenUndefined: Self = StObject.set(x, "startTimetoken", js.undefined)
   }
 }

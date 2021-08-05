@@ -17,10 +17,8 @@ object crc16Mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def checksum(data: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("checksum")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def checksum(data: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("checksum")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def validate(data: Buffer, expected: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(data.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def validate(data: Buffer, expected: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(data.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

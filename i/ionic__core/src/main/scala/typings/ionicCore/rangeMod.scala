@@ -19,7 +19,7 @@ object rangeMod {
     extends StObject
        with ComponentInterface {
     
-    var clampBounds: js.Any = js.native
+    /* private */ var clampBounds: js.Any = js.native
     
     /**
       * The color to use from your application's color palette.
@@ -43,7 +43,7 @@ object rangeMod {
     
     /* protected */ def debounceChanged(): Unit = js.native
     
-    var didLoad: js.Any = js.native
+    /* private */ var didLoad: js.Any = js.native
     
     /**
       * If `true`, the user cannot interact with the range.
@@ -62,17 +62,17 @@ object rangeMod {
     
     var el: HTMLIonRangeElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
-    var ensureValueInBounds: js.Any = js.native
+    /* private */ var ensureValueInBounds: js.Any = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
-    var getValue: js.Any = js.native
+    /* private */ var getValue: js.Any = js.native
     
-    var handleKeyboard: js.Any = js.native
+    /* private */ var handleKeyboard: js.Any = js.native
     
-    var hasFocus: js.Any = js.native
+    /* private */ var hasFocus: js.Any = js.native
     
     /**
       * Emitted when the range loses focus.
@@ -114,17 +114,17 @@ object rangeMod {
       */
     var name: String = js.native
     
-    var noUpdate: js.Any = js.native
+    /* private */ var noUpdate: js.Any = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onEnd: js.Any = js.native
+    /* private */ var onEnd: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
-    var onMove: js.Any = js.native
+    /* private */ var onMove: js.Any = js.native
     
-    var onStart: js.Any = js.native
+    /* private */ var onStart: js.Any = js.native
     
     /**
       * If `true`, a pin with integer value is shown when the knob
@@ -132,26 +132,26 @@ object rangeMod {
       */
     var pin: Boolean = js.native
     
-    var pressedKnob: js.Any = js.native
+    /* private */ var pressedKnob: js.Any = js.native
     
-    var rangeSlider: js.Any = js.native
+    /* private */ var rangeSlider: js.Any = js.native
     
-    var ratioA: js.Any = js.native
+    /* private */ var ratioA: js.Any = js.native
     
-    var ratioB: js.Any = js.native
+    /* private */ var ratioB: js.Any = js.native
     
     /* private */ def ratioLower: js.Any = js.native
     
     /* private */ def ratioUpper: js.Any = js.native
     
-    var rect: js.Any = js.native
+    /* private */ var rect: js.Any = js.native
     
     @JSName("render")
     def render_MRange(): js.Any = js.native
     
-    var setFocus: js.Any = js.native
+    /* private */ var setFocus: js.Any = js.native
     
-    var setupGesture: js.Any = js.native
+    /* private */ var setupGesture: js.Any = js.native
     
     /**
       * If `true`, the knob snaps to tick marks evenly spaced based
@@ -170,11 +170,11 @@ object rangeMod {
       */
     var ticks: Boolean = js.native
     
-    var update: js.Any = js.native
+    /* private */ var update: js.Any = js.native
     
-    var updateRatio: js.Any = js.native
+    /* private */ var updateRatio: js.Any = js.native
     
-    var updateValue: js.Any = js.native
+    /* private */ var updateValue: js.Any = js.native
     
     /* private */ def valA: js.Any = js.native
     

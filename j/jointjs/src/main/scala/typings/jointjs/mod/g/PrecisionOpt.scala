@@ -10,19 +10,15 @@ trait PrecisionOpt extends StObject {
 }
 object PrecisionOpt {
   
-  @scala.inline
-  def apply(): PrecisionOpt = {
+  inline def apply(): PrecisionOpt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrecisionOpt]
   }
   
-  @scala.inline
-  implicit class PrecisionOptMutableBuilder[Self <: PrecisionOpt] (val x: Self) extends AnyVal {
+  extension [Self <: PrecisionOpt](x: Self) {
     
-    @scala.inline
-    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
   }
 }

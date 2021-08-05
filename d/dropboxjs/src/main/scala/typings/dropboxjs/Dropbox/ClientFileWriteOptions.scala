@@ -14,31 +14,23 @@ trait ClientFileWriteOptions extends StObject {
 }
 object ClientFileWriteOptions {
   
-  @scala.inline
-  def apply(): ClientFileWriteOptions = {
+  inline def apply(): ClientFileWriteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientFileWriteOptions]
   }
   
-  @scala.inline
-  implicit class ClientFileWriteOptionsMutableBuilder[Self <: ClientFileWriteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientFileWriteOptions](x: Self) {
     
-    @scala.inline
-    def setLastVersionTag(value: String): Self = StObject.set(x, "lastVersionTag", value.asInstanceOf[js.Any])
+    inline def setLastVersionTag(value: String): Self = StObject.set(x, "lastVersionTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastVersionTagUndefined: Self = StObject.set(x, "lastVersionTag", js.undefined)
+    inline def setLastVersionTagUndefined: Self = StObject.set(x, "lastVersionTag", js.undefined)
     
-    @scala.inline
-    def setNoOverwrite(value: Boolean): Self = StObject.set(x, "noOverwrite", value.asInstanceOf[js.Any])
+    inline def setNoOverwrite(value: Boolean): Self = StObject.set(x, "noOverwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoOverwriteUndefined: Self = StObject.set(x, "noOverwrite", js.undefined)
+    inline def setNoOverwriteUndefined: Self = StObject.set(x, "noOverwrite", js.undefined)
     
-    @scala.inline
-    def setParentRev(value: String): Self = StObject.set(x, "parentRev", value.asInstanceOf[js.Any])
+    inline def setParentRev(value: String): Self = StObject.set(x, "parentRev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentRevUndefined: Self = StObject.set(x, "parentRev", js.undefined)
+    inline def setParentRevUndefined: Self = StObject.set(x, "parentRev", js.undefined)
   }
 }

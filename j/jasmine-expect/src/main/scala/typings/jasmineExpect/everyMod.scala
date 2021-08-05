@@ -10,6 +10,5 @@ object everyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def every(array: js.Any, truthTest: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], truthTest.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def every(array: js.Any, truthTest: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(array.asInstanceOf[js.Any], truthTest.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

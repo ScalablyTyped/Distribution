@@ -28,37 +28,27 @@ trait DeploymentConfig extends StObject {
 }
 object DeploymentConfig {
   
-  @scala.inline
-  def apply(): DeploymentConfig = {
+  inline def apply(): DeploymentConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentConfig]
   }
   
-  @scala.inline
-  implicit class DeploymentConfigMutableBuilder[Self <: DeploymentConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentConfig](x: Self) {
     
-    @scala.inline
-    def setConcurrentDeploymentPercentage(value: Percentage): Self = StObject.set(x, "concurrentDeploymentPercentage", value.asInstanceOf[js.Any])
+    inline def setConcurrentDeploymentPercentage(value: Percentage): Self = StObject.set(x, "concurrentDeploymentPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrentDeploymentPercentageUndefined: Self = StObject.set(x, "concurrentDeploymentPercentage", js.undefined)
+    inline def setConcurrentDeploymentPercentageUndefined: Self = StObject.set(x, "concurrentDeploymentPercentage", js.undefined)
     
-    @scala.inline
-    def setDownloadConditionFile(value: S3Object): Self = StObject.set(x, "downloadConditionFile", value.asInstanceOf[js.Any])
+    inline def setDownloadConditionFile(value: S3Object): Self = StObject.set(x, "downloadConditionFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadConditionFileUndefined: Self = StObject.set(x, "downloadConditionFile", js.undefined)
+    inline def setDownloadConditionFileUndefined: Self = StObject.set(x, "downloadConditionFile", js.undefined)
     
-    @scala.inline
-    def setFailureThresholdPercentage(value: Percentage): Self = StObject.set(x, "failureThresholdPercentage", value.asInstanceOf[js.Any])
+    inline def setFailureThresholdPercentage(value: Percentage): Self = StObject.set(x, "failureThresholdPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureThresholdPercentageUndefined: Self = StObject.set(x, "failureThresholdPercentage", js.undefined)
+    inline def setFailureThresholdPercentageUndefined: Self = StObject.set(x, "failureThresholdPercentage", js.undefined)
     
-    @scala.inline
-    def setRobotDeploymentTimeoutInSeconds(value: DeploymentTimeout): Self = StObject.set(x, "robotDeploymentTimeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setRobotDeploymentTimeoutInSeconds(value: DeploymentTimeout): Self = StObject.set(x, "robotDeploymentTimeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRobotDeploymentTimeoutInSecondsUndefined: Self = StObject.set(x, "robotDeploymentTimeoutInSeconds", js.undefined)
+    inline def setRobotDeploymentTimeoutInSecondsUndefined: Self = StObject.set(x, "robotDeploymentTimeoutInSeconds", js.undefined)
   }
 }

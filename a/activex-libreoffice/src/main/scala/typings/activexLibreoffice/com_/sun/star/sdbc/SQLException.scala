@@ -31,22 +31,17 @@ trait SQLException
 }
 object SQLException {
   
-  @scala.inline
-  def apply(Context: XInterface, ErrorCode: Double, Message: String, NextException: js.Any, SQLState: String): SQLException = {
+  inline def apply(Context: XInterface, ErrorCode: Double, Message: String, NextException: js.Any, SQLState: String): SQLException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], ErrorCode = ErrorCode.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], NextException = NextException.asInstanceOf[js.Any], SQLState = SQLState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SQLException]
   }
   
-  @scala.inline
-  implicit class SQLExceptionMutableBuilder[Self <: SQLException] (val x: Self) extends AnyVal {
+  extension [Self <: SQLException](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextException(value: js.Any): Self = StObject.set(x, "NextException", value.asInstanceOf[js.Any])
+    inline def setNextException(value: js.Any): Self = StObject.set(x, "NextException", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSQLState(value: String): Self = StObject.set(x, "SQLState", value.asInstanceOf[js.Any])
+    inline def setSQLState(value: String): Self = StObject.set(x, "SQLState", value.asInstanceOf[js.Any])
   }
 }

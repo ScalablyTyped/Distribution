@@ -11,14 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def disableValidation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableValidation")().asInstanceOf[Unit]
+  inline def disableValidation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableValidation")().asInstanceOf[Unit]
   
-  @scala.inline
-  def enableValidation(flag: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableValidation")(flag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def enableValidation(flag: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableValidation")(flag.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def parse(`object`: js.Any): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(`object`.asInstanceOf[js.Any]).asInstanceOf[Resource]
+  inline def parse(`object`: js.Any): Resource = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(`object`.asInstanceOf[js.Any]).asInstanceOf[Resource]
   
   /**
     * A Link Object represents a hyperlink from the containing resource to a URI.
@@ -121,59 +118,42 @@ object mod {
   }
   object Link {
     
-    @scala.inline
-    def apply(href: String): Link = {
+    inline def apply(href: String): Link = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
       __obj.asInstanceOf[Link]
     }
     
-    @scala.inline
-    implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+    extension [Self <: Link](x: Self) {
       
-      @scala.inline
-      def setDeprecation(value: String): Self = StObject.set(x, "deprecation", value.asInstanceOf[js.Any])
+      inline def setDeprecation(value: String): Self = StObject.set(x, "deprecation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecationUndefined: Self = StObject.set(x, "deprecation", js.undefined)
+      inline def setDeprecationUndefined: Self = StObject.set(x, "deprecation", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHreflang(value: String): Self = StObject.set(x, "hreflang", value.asInstanceOf[js.Any])
+      inline def setHreflang(value: String): Self = StObject.set(x, "hreflang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHreflangUndefined: Self = StObject.set(x, "hreflang", js.undefined)
+      inline def setHreflangUndefined: Self = StObject.set(x, "hreflang", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setTemplated(value: Boolean): Self = StObject.set(x, "templated", value.asInstanceOf[js.Any])
+      inline def setTemplated(value: Boolean): Self = StObject.set(x, "templated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplatedUndefined: Self = StObject.set(x, "templated", js.undefined)
+      inline def setTemplatedUndefined: Self = StObject.set(x, "templated", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -279,8 +259,7 @@ object mod {
   }
   object Resource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allEmbeddedArrays: () => ResourceCollection,
       allEmbeddedResourceArrays: () => ResourceCollection,
       allEmbeddedResources: () => ResourceCollection,
@@ -304,62 +283,43 @@ object mod {
       __obj.asInstanceOf[Resource]
     }
     
-    @scala.inline
-    implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+    extension [Self <: Resource](x: Self) {
       
-      @scala.inline
-      def setAllEmbeddedArrays(value: () => ResourceCollection): Self = StObject.set(x, "allEmbeddedArrays", js.Any.fromFunction0(value))
+      inline def setAllEmbeddedArrays(value: () => ResourceCollection): Self = StObject.set(x, "allEmbeddedArrays", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAllEmbeddedResourceArrays(value: () => ResourceCollection): Self = StObject.set(x, "allEmbeddedResourceArrays", js.Any.fromFunction0(value))
+      inline def setAllEmbeddedResourceArrays(value: () => ResourceCollection): Self = StObject.set(x, "allEmbeddedResourceArrays", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAllEmbeddedResources(value: () => ResourceCollection): Self = StObject.set(x, "allEmbeddedResources", js.Any.fromFunction0(value))
+      inline def setAllEmbeddedResources(value: () => ResourceCollection): Self = StObject.set(x, "allEmbeddedResources", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAllLinkArrays(value: () => LinkCollection): Self = StObject.set(x, "allLinkArrays", js.Any.fromFunction0(value))
+      inline def setAllLinkArrays(value: () => LinkCollection): Self = StObject.set(x, "allLinkArrays", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAllLinks(value: () => LinkCollection): Self = StObject.set(x, "allLinks", js.Any.fromFunction0(value))
+      inline def setAllLinks(value: () => LinkCollection): Self = StObject.set(x, "allLinks", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCurie(value: String => Link): Self = StObject.set(x, "curie", js.Any.fromFunction1(value))
+      inline def setCurie(value: String => Link): Self = StObject.set(x, "curie", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCurieArray(value: () => js.Array[Link]): Self = StObject.set(x, "curieArray", js.Any.fromFunction0(value))
+      inline def setCurieArray(value: () => js.Array[Link]): Self = StObject.set(x, "curieArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmbedded(value: String => Resource): Self = StObject.set(x, "embedded", js.Any.fromFunction1(value))
+      inline def setEmbedded(value: String => Resource): Self = StObject.set(x, "embedded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmbeddedArray(value: String => js.Array[Resource]): Self = StObject.set(x, "embeddedArray", js.Any.fromFunction1(value))
+      inline def setEmbeddedArray(value: String => js.Array[Resource]): Self = StObject.set(x, "embeddedArray", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmbeddedResource(value: String => Resource): Self = StObject.set(x, "embeddedResource", js.Any.fromFunction1(value))
+      inline def setEmbeddedResource(value: String => Resource): Self = StObject.set(x, "embeddedResource", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmbeddedResourceArray(value: String => js.Array[Resource]): Self = StObject.set(x, "embeddedResourceArray", js.Any.fromFunction1(value))
+      inline def setEmbeddedResourceArray(value: String => js.Array[Resource]): Self = StObject.set(x, "embeddedResourceArray", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasCuries(value: () => Boolean): Self = StObject.set(x, "hasCuries", js.Any.fromFunction0(value))
+      inline def setHasCuries(value: () => Boolean): Self = StObject.set(x, "hasCuries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLink(value: String => Link): Self = StObject.set(x, "link", js.Any.fromFunction1(value))
+      inline def setLink(value: String => Link): Self = StObject.set(x, "link", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLinkArray(value: String => js.Array[Link]): Self = StObject.set(x, "linkArray", js.Any.fromFunction1(value))
+      inline def setLinkArray(value: String => js.Array[Link]): Self = StObject.set(x, "linkArray", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOriginal(value: () => js.Any): Self = StObject.set(x, "original", js.Any.fromFunction0(value))
+      inline def setOriginal(value: () => js.Any): Self = StObject.set(x, "original", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReverseResolveCurie(value: String => String): Self = StObject.set(x, "reverseResolveCurie", js.Any.fromFunction1(value))
+      inline def setReverseResolveCurie(value: String => String): Self = StObject.set(x, "reverseResolveCurie", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidation(value: () => js.Any): Self = StObject.set(x, "validation", js.Any.fromFunction0(value))
+      inline def setValidation(value: () => js.Any): Self = StObject.set(x, "validation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValidationIssues(value: () => js.Any): Self = StObject.set(x, "validationIssues", js.Any.fromFunction0(value))
+      inline def setValidationIssues(value: () => js.Any): Self = StObject.set(x, "validationIssues", js.Any.fromFunction0(value))
     }
   }
   

@@ -11,10 +11,8 @@ object useTempValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useTempValue[T](defaultValue: T): ReturnValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[T]]
-  @scala.inline
-  def useTempValue[T](defaultValue: T, resetTime: Double): ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any], resetTime.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[T]]
+  inline def useTempValue[T](defaultValue: T): ReturnValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[T]]
+  inline def useTempValue[T](defaultValue: T, resetTime: Double): ReturnValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("useTempValue")(defaultValue.asInstanceOf[js.Any], resetTime.asInstanceOf[js.Any])).asInstanceOf[ReturnValue[T]]
   
   type CurrentValueRef[T] = MutableRefObject[T]
   

@@ -20,37 +20,27 @@ trait ReturnPolicySeasonalOverride extends StObject {
 }
 object ReturnPolicySeasonalOverride {
   
-  @scala.inline
-  def apply(): ReturnPolicySeasonalOverride = {
+  inline def apply(): ReturnPolicySeasonalOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReturnPolicySeasonalOverride]
   }
   
-  @scala.inline
-  implicit class ReturnPolicySeasonalOverrideMutableBuilder[Self <: ReturnPolicySeasonalOverride] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnPolicySeasonalOverride](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: ReturnPolicyPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ReturnPolicyPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

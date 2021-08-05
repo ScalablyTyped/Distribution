@@ -50,72 +50,52 @@ object linkTools {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setAnchor(
+        inline def setAnchor(
           value: (/* coords */ typings.jointjs.mod.g.Point, /* view */ CellView, /* magnet */ SVGElement, /* type */ String, /* linkView */ LinkView, /* toolView */ ToolView) => AnchorJSON
         ): Self = StObject.set(x, "anchor", js.Any.fromFunction6(value))
         
-        @scala.inline
-        def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+        inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
         
-        @scala.inline
-        def setAreaPadding(value: Double): Self = StObject.set(x, "areaPadding", value.asInstanceOf[js.Any])
+        inline def setAreaPadding(value: Double): Self = StObject.set(x, "areaPadding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAreaPaddingUndefined: Self = StObject.set(x, "areaPadding", js.undefined)
+        inline def setAreaPaddingUndefined: Self = StObject.set(x, "areaPadding", js.undefined)
         
-        @scala.inline
-        def setCustomAnchorAttributes(value: NativeSVGAttributes): Self = StObject.set(x, "customAnchorAttributes", value.asInstanceOf[js.Any])
+        inline def setCustomAnchorAttributes(value: NativeSVGAttributes): Self = StObject.set(x, "customAnchorAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomAnchorAttributesUndefined: Self = StObject.set(x, "customAnchorAttributes", js.undefined)
+        inline def setCustomAnchorAttributesUndefined: Self = StObject.set(x, "customAnchorAttributes", js.undefined)
         
-        @scala.inline
-        def setDefaultAnchorAttributes(value: NativeSVGAttributes): Self = StObject.set(x, "defaultAnchorAttributes", value.asInstanceOf[js.Any])
+        inline def setDefaultAnchorAttributes(value: NativeSVGAttributes): Self = StObject.set(x, "defaultAnchorAttributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultAnchorAttributesUndefined: Self = StObject.set(x, "defaultAnchorAttributes", js.undefined)
+        inline def setDefaultAnchorAttributesUndefined: Self = StObject.set(x, "defaultAnchorAttributes", js.undefined)
         
-        @scala.inline
-        def setRedundancyRemoval(value: Boolean): Self = StObject.set(x, "redundancyRemoval", value.asInstanceOf[js.Any])
+        inline def setRedundancyRemoval(value: Boolean): Self = StObject.set(x, "redundancyRemoval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRedundancyRemovalUndefined: Self = StObject.set(x, "redundancyRemoval", js.undefined)
+        inline def setRedundancyRemovalUndefined: Self = StObject.set(x, "redundancyRemoval", js.undefined)
         
-        @scala.inline
-        def setResetAnchor(value: Boolean | AnchorJSON): Self = StObject.set(x, "resetAnchor", value.asInstanceOf[js.Any])
+        inline def setResetAnchor(value: Boolean | AnchorJSON): Self = StObject.set(x, "resetAnchor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResetAnchorUndefined: Self = StObject.set(x, "resetAnchor", js.undefined)
+        inline def setResetAnchorUndefined: Self = StObject.set(x, "resetAnchor", js.undefined)
         
-        @scala.inline
-        def setRestrictArea(value: Boolean): Self = StObject.set(x, "restrictArea", value.asInstanceOf[js.Any])
+        inline def setRestrictArea(value: Boolean): Self = StObject.set(x, "restrictArea", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRestrictAreaUndefined: Self = StObject.set(x, "restrictArea", js.undefined)
+        inline def setRestrictAreaUndefined: Self = StObject.set(x, "restrictArea", js.undefined)
         
-        @scala.inline
-        def setSnap(
+        inline def setSnap(
           value: (/* coords */ typings.jointjs.mod.g.Point, /* view */ CellView, /* magnet */ SVGElement, /* type */ String, /* linkView */ LinkView, /* toolView */ ToolView) => Point
         ): Self = StObject.set(x, "snap", js.Any.fromFunction6(value))
         
-        @scala.inline
-        def setSnapRadius(value: Double): Self = StObject.set(x, "snapRadius", value.asInstanceOf[js.Any])
+        inline def setSnapRadius(value: Double): Self = StObject.set(x, "snapRadius", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnapRadiusUndefined: Self = StObject.set(x, "snapRadius", js.undefined)
+        inline def setSnapRadiusUndefined: Self = StObject.set(x, "snapRadius", js.undefined)
         
-        @scala.inline
-        def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+        inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
       }
     }
   }
@@ -153,26 +133,20 @@ object linkTools {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.jointjs.mod.linkTools.Boundary.Options = {
+      inline def apply(): typings.jointjs.mod.linkTools.Boundary.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jointjs.mod.linkTools.Boundary.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.jointjs.mod.linkTools.Boundary.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jointjs.mod.linkTools.Boundary.Options](x: Self) {
         
-        @scala.inline
-        def setPadding(value: Double | Sides): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+        inline def setPadding(value: Double | Sides): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+        inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
         
-        @scala.inline
-        def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
+        inline def setUseModelGeometry(value: Boolean): Self = StObject.set(x, "useModelGeometry", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseModelGeometryUndefined: Self = StObject.set(x, "useModelGeometry", js.undefined)
+        inline def setUseModelGeometryUndefined: Self = StObject.set(x, "useModelGeometry", js.undefined)
       }
     }
   }
@@ -204,44 +178,32 @@ object linkTools {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.jointjs.mod.linkTools.Button.Options = {
+      inline def apply(): typings.jointjs.mod.linkTools.Button.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jointjs.mod.linkTools.Button.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.jointjs.mod.linkTools.Button.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jointjs.mod.linkTools.Button.Options](x: Self) {
         
-        @scala.inline
-        def setAction(value: (/* evt */ Event, /* view */ LinkView) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
+        inline def setAction(value: (/* evt */ Event, /* view */ LinkView) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+        inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
         
-        @scala.inline
-        def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+        inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+        inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
         
-        @scala.inline
-        def setMarkup(value: MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+        inline def setMarkup(value: MarkupJSON): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
+        inline def setMarkupUndefined: Self = StObject.set(x, "markup", js.undefined)
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
         
-        @scala.inline
-        def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+        inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+        inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       }
     }
   }
@@ -279,58 +241,42 @@ object linkTools {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.jointjs.mod.linkTools.Segments.Options = {
+      inline def apply(): typings.jointjs.mod.linkTools.Segments.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jointjs.mod.linkTools.Segments.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.jointjs.mod.linkTools.Segments.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jointjs.mod.linkTools.Segments.Options](x: Self) {
         
-        @scala.inline
-        def setAnchor(
+        inline def setAnchor(
           value: (/* coords */ typings.jointjs.mod.g.Point, /* view */ CellView, /* magnet */ SVGElement, /* type */ String, /* linkView */ LinkView, /* toolView */ ToolView) => AnchorJSON
         ): Self = StObject.set(x, "anchor", js.Any.fromFunction6(value))
         
-        @scala.inline
-        def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+        inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
         
-        @scala.inline
-        def setHandleClass(value: js.Any): Self = StObject.set(x, "handleClass", value.asInstanceOf[js.Any])
+        inline def setHandleClass(value: js.Any): Self = StObject.set(x, "handleClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHandleClassUndefined: Self = StObject.set(x, "handleClass", js.undefined)
+        inline def setHandleClassUndefined: Self = StObject.set(x, "handleClass", js.undefined)
         
-        @scala.inline
-        def setRedundancyRemoval(value: Boolean): Self = StObject.set(x, "redundancyRemoval", value.asInstanceOf[js.Any])
+        inline def setRedundancyRemoval(value: Boolean): Self = StObject.set(x, "redundancyRemoval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRedundancyRemovalUndefined: Self = StObject.set(x, "redundancyRemoval", js.undefined)
+        inline def setRedundancyRemovalUndefined: Self = StObject.set(x, "redundancyRemoval", js.undefined)
         
-        @scala.inline
-        def setSegmentLengthThreshold(value: Double): Self = StObject.set(x, "segmentLengthThreshold", value.asInstanceOf[js.Any])
+        inline def setSegmentLengthThreshold(value: Double): Self = StObject.set(x, "segmentLengthThreshold", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSegmentLengthThresholdUndefined: Self = StObject.set(x, "segmentLengthThreshold", js.undefined)
+        inline def setSegmentLengthThresholdUndefined: Self = StObject.set(x, "segmentLengthThreshold", js.undefined)
         
-        @scala.inline
-        def setSnapHandle(value: Boolean): Self = StObject.set(x, "snapHandle", value.asInstanceOf[js.Any])
+        inline def setSnapHandle(value: Boolean): Self = StObject.set(x, "snapHandle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnapHandleUndefined: Self = StObject.set(x, "snapHandle", js.undefined)
+        inline def setSnapHandleUndefined: Self = StObject.set(x, "snapHandle", js.undefined)
         
-        @scala.inline
-        def setSnapRadius(value: Double): Self = StObject.set(x, "snapRadius", value.asInstanceOf[js.Any])
+        inline def setSnapRadius(value: Double): Self = StObject.set(x, "snapRadius", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnapRadiusUndefined: Self = StObject.set(x, "snapRadius", js.undefined)
+        inline def setSnapRadiusUndefined: Self = StObject.set(x, "snapRadius", js.undefined)
         
-        @scala.inline
-        def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+        inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+        inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
       }
     }
   }
@@ -382,44 +328,32 @@ object linkTools {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.jointjs.mod.linkTools.Vertices.Options = {
+      inline def apply(): typings.jointjs.mod.linkTools.Vertices.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.jointjs.mod.linkTools.Vertices.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.jointjs.mod.linkTools.Vertices.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.jointjs.mod.linkTools.Vertices.Options](x: Self) {
         
-        @scala.inline
-        def setHandleClass(value: js.Any): Self = StObject.set(x, "handleClass", value.asInstanceOf[js.Any])
+        inline def setHandleClass(value: js.Any): Self = StObject.set(x, "handleClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHandleClassUndefined: Self = StObject.set(x, "handleClass", js.undefined)
+        inline def setHandleClassUndefined: Self = StObject.set(x, "handleClass", js.undefined)
         
-        @scala.inline
-        def setRedundancyRemoval(value: Boolean): Self = StObject.set(x, "redundancyRemoval", value.asInstanceOf[js.Any])
+        inline def setRedundancyRemoval(value: Boolean): Self = StObject.set(x, "redundancyRemoval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRedundancyRemovalUndefined: Self = StObject.set(x, "redundancyRemoval", js.undefined)
+        inline def setRedundancyRemovalUndefined: Self = StObject.set(x, "redundancyRemoval", js.undefined)
         
-        @scala.inline
-        def setSnapRadius(value: Double): Self = StObject.set(x, "snapRadius", value.asInstanceOf[js.Any])
+        inline def setSnapRadius(value: Double): Self = StObject.set(x, "snapRadius", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnapRadiusUndefined: Self = StObject.set(x, "snapRadius", js.undefined)
+        inline def setSnapRadiusUndefined: Self = StObject.set(x, "snapRadius", js.undefined)
         
-        @scala.inline
-        def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+        inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+        inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
         
-        @scala.inline
-        def setVertexAdding(value: Boolean): Self = StObject.set(x, "vertexAdding", value.asInstanceOf[js.Any])
+        inline def setVertexAdding(value: Boolean): Self = StObject.set(x, "vertexAdding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVertexAddingUndefined: Self = StObject.set(x, "vertexAdding", js.undefined)
+        inline def setVertexAddingUndefined: Self = StObject.set(x, "vertexAdding", js.undefined)
       }
     }
   }

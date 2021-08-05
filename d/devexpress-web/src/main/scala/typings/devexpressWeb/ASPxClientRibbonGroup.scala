@@ -36,8 +36,7 @@ trait ASPxClientRibbonGroup extends StObject {
 }
 object ASPxClientRibbonGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetVisible: () => Boolean,
     index: Double,
     name: String,
@@ -48,22 +47,16 @@ object ASPxClientRibbonGroup {
     __obj.asInstanceOf[ASPxClientRibbonGroup]
   }
   
-  @scala.inline
-  implicit class ASPxClientRibbonGroupMutableBuilder[Self <: ASPxClientRibbonGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRibbonGroup](x: Self) {
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRibbon(value: ASPxClientRibbon): Self = StObject.set(x, "ribbon", value.asInstanceOf[js.Any])
+    inline def setRibbon(value: ASPxClientRibbon): Self = StObject.set(x, "ribbon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTab(value: ASPxClientRibbonTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+    inline def setTab(value: ASPxClientRibbonTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
   }
 }

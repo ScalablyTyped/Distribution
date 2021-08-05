@@ -61,8 +61,7 @@ trait Records extends StObject {
 }
 object Records {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     count: () => Double,
     getFromTable: () => js.Array[js.Object],
     init: () => Unit,
@@ -77,34 +76,24 @@ object Records {
     __obj.asInstanceOf[Records]
   }
   
-  @scala.inline
-  implicit class RecordsMutableBuilder[Self <: Records] (val x: Self) extends AnyVal {
+  extension [Self <: Records](x: Self) {
     
-    @scala.inline
-    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+    inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFromTable(value: () => js.Array[js.Object]): Self = StObject.set(x, "getFromTable", js.Any.fromFunction0(value))
+    inline def setGetFromTable(value: () => js.Array[js.Object]): Self = StObject.set(x, "getFromTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
+    inline def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPageBounds(value: () => js.Array[Double]): Self = StObject.set(x, "pageBounds", js.Any.fromFunction0(value))
+    inline def setPageBounds(value: () => js.Array[Double]): Self = StObject.set(x, "pageBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPaginate(value: () => Unit): Self = StObject.set(x, "paginate", js.Any.fromFunction0(value))
+    inline def setPaginate(value: () => Unit): Self = StObject.set(x, "paginate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResetOriginal(value: () => Unit): Self = StObject.set(x, "resetOriginal", js.Any.fromFunction0(value))
+    inline def setResetOriginal(value: () => Unit): Self = StObject.set(x, "resetOriginal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSort(value: () => Double): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
+    inline def setSort(value: () => Double): Self = StObject.set(x, "sort", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateFromJson(value: js.Any => Unit): Self = StObject.set(x, "updateFromJson", js.Any.fromFunction1(value))
+    inline def setUpdateFromJson(value: js.Any => Unit): Self = StObject.set(x, "updateFromJson", js.Any.fromFunction1(value))
   }
 }

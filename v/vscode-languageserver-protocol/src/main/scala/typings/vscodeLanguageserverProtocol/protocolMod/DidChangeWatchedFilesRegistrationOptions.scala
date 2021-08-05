@@ -13,19 +13,15 @@ trait DidChangeWatchedFilesRegistrationOptions extends StObject {
 }
 object DidChangeWatchedFilesRegistrationOptions {
   
-  @scala.inline
-  def apply(watchers: js.Array[FileSystemWatcher]): DidChangeWatchedFilesRegistrationOptions = {
+  inline def apply(watchers: js.Array[FileSystemWatcher]): DidChangeWatchedFilesRegistrationOptions = {
     val __obj = js.Dynamic.literal(watchers = watchers.asInstanceOf[js.Any])
     __obj.asInstanceOf[DidChangeWatchedFilesRegistrationOptions]
   }
   
-  @scala.inline
-  implicit class DidChangeWatchedFilesRegistrationOptionsMutableBuilder[Self <: DidChangeWatchedFilesRegistrationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DidChangeWatchedFilesRegistrationOptions](x: Self) {
     
-    @scala.inline
-    def setWatchers(value: js.Array[FileSystemWatcher]): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
+    inline def setWatchers(value: js.Array[FileSystemWatcher]): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchersVarargs(value: FileSystemWatcher*): Self = StObject.set(x, "watchers", js.Array(value :_*))
+    inline def setWatchersVarargs(value: FileSystemWatcher*): Self = StObject.set(x, "watchers", js.Array(value :_*))
   }
 }

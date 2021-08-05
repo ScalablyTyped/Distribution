@@ -8,11 +8,9 @@ object toughCookieStrings {
   
   @js.native
   sealed trait `-Infinity` extends StObject
-  @scala.inline
-  def `-Infinity`: `-Infinity` = "-Infinity".asInstanceOf[`-Infinity`]
+  inline def `-Infinity`: `-Infinity` = "-Infinity".asInstanceOf[`-Infinity`]
   
   @js.native
   sealed trait Infinity extends StObject
-  @scala.inline
-  def Infinity: Infinity = "Infinity".asInstanceOf[Infinity]
+  inline def Infinity: Infinity = "Infinity".asInstanceOf[Infinity]
 }

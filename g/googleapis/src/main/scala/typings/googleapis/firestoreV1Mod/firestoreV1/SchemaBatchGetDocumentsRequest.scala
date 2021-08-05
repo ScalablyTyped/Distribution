@@ -44,46 +44,33 @@ trait SchemaBatchGetDocumentsRequest extends StObject {
 }
 object SchemaBatchGetDocumentsRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchGetDocumentsRequest = {
+  inline def apply(): SchemaBatchGetDocumentsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchGetDocumentsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchGetDocumentsRequestMutableBuilder[Self <: SchemaBatchGetDocumentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchGetDocumentsRequest](x: Self) {
     
-    @scala.inline
-    def setDocuments(value: js.Array[String]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: js.Array[String]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
+    inline def setDocumentsUndefined: Self = StObject.set(x, "documents", js.undefined)
     
-    @scala.inline
-    def setDocumentsVarargs(value: String*): Self = StObject.set(x, "documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: String*): Self = StObject.set(x, "documents", js.Array(value :_*))
     
-    @scala.inline
-    def setMask(value: SchemaDocumentMask): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: SchemaDocumentMask): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
-    @scala.inline
-    def setNewTransaction(value: SchemaTransactionOptions): Self = StObject.set(x, "newTransaction", value.asInstanceOf[js.Any])
+    inline def setNewTransaction(value: SchemaTransactionOptions): Self = StObject.set(x, "newTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTransactionUndefined: Self = StObject.set(x, "newTransaction", js.undefined)
+    inline def setNewTransactionUndefined: Self = StObject.set(x, "newTransaction", js.undefined)
     
-    @scala.inline
-    def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: String): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
     
-    @scala.inline
-    def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: String): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

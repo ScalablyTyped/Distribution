@@ -13,19 +13,15 @@ trait ModifyVolumeResult extends StObject {
 }
 object ModifyVolumeResult {
   
-  @scala.inline
-  def apply(): ModifyVolumeResult = {
+  inline def apply(): ModifyVolumeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyVolumeResult]
   }
   
-  @scala.inline
-  implicit class ModifyVolumeResultMutableBuilder[Self <: ModifyVolumeResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVolumeResult](x: Self) {
     
-    @scala.inline
-    def setVolumeModification(value: VolumeModification): Self = StObject.set(x, "VolumeModification", value.asInstanceOf[js.Any])
+    inline def setVolumeModification(value: VolumeModification): Self = StObject.set(x, "VolumeModification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeModificationUndefined: Self = StObject.set(x, "VolumeModification", js.undefined)
+    inline def setVolumeModificationUndefined: Self = StObject.set(x, "VolumeModification", js.undefined)
   }
 }

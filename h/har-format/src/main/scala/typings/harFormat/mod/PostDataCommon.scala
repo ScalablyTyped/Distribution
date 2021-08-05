@@ -14,22 +14,17 @@ trait PostDataCommon extends StObject {
 }
 object PostDataCommon {
   
-  @scala.inline
-  def apply(mimeType: String): PostDataCommon = {
+  inline def apply(mimeType: String): PostDataCommon = {
     val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostDataCommon]
   }
   
-  @scala.inline
-  implicit class PostDataCommonMutableBuilder[Self <: PostDataCommon] (val x: Self) extends AnyVal {
+  extension [Self <: PostDataCommon](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
   }
 }

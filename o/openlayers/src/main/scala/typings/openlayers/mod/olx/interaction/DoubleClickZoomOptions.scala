@@ -12,25 +12,19 @@ trait DoubleClickZoomOptions extends StObject {
 }
 object DoubleClickZoomOptions {
   
-  @scala.inline
-  def apply(): DoubleClickZoomOptions = {
+  inline def apply(): DoubleClickZoomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DoubleClickZoomOptions]
   }
   
-  @scala.inline
-  implicit class DoubleClickZoomOptionsMutableBuilder[Self <: DoubleClickZoomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DoubleClickZoomOptions](x: Self) {
     
-    @scala.inline
-    def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

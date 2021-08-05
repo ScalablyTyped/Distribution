@@ -10,16 +10,13 @@ trait MediaSources extends StObject {
 }
 object MediaSources {
   
-  @scala.inline
-  def apply(sourceId: String): MediaSources = {
+  inline def apply(sourceId: String): MediaSources = {
     val __obj = js.Dynamic.literal(sourceId = sourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaSources]
   }
   
-  @scala.inline
-  implicit class MediaSourcesMutableBuilder[Self <: MediaSources] (val x: Self) extends AnyVal {
+  extension [Self <: MediaSources](x: Self) {
     
-    @scala.inline
-    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
   }
 }

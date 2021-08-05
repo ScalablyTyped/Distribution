@@ -33,32 +33,24 @@ object carouselIndicatorsMod {
   }
   object CarouselIndicatorsProps {
     
-    @scala.inline
-    def apply(activeIndex: Double, items: js.Array[js.Object], onClickHandler: Double => Unit): CarouselIndicatorsProps = {
+    inline def apply(activeIndex: Double, items: js.Array[js.Object], onClickHandler: Double => Unit): CarouselIndicatorsProps = {
       val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], onClickHandler = js.Any.fromFunction1(onClickHandler))
       __obj.asInstanceOf[CarouselIndicatorsProps]
     }
     
-    @scala.inline
-    implicit class CarouselIndicatorsPropsMutableBuilder[Self <: CarouselIndicatorsProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselIndicatorsProps](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Object]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Object*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOnClickHandler(value: Double => Unit): Self = StObject.set(x, "onClickHandler", js.Any.fromFunction1(value))
+      inline def setOnClickHandler(value: Double => Unit): Self = StObject.set(x, "onClickHandler", js.Any.fromFunction1(value))
     }
   }
 }

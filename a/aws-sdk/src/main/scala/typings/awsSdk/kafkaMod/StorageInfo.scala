@@ -15,19 +15,15 @@ trait StorageInfo extends StObject {
 }
 object StorageInfo {
   
-  @scala.inline
-  def apply(): StorageInfo = {
+  inline def apply(): StorageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StorageInfo]
   }
   
-  @scala.inline
-  implicit class StorageInfoMutableBuilder[Self <: StorageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: StorageInfo](x: Self) {
     
-    @scala.inline
-    def setEbsStorageInfo(value: EBSStorageInfo): Self = StObject.set(x, "EbsStorageInfo", value.asInstanceOf[js.Any])
+    inline def setEbsStorageInfo(value: EBSStorageInfo): Self = StObject.set(x, "EbsStorageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsStorageInfoUndefined: Self = StObject.set(x, "EbsStorageInfo", js.undefined)
+    inline def setEbsStorageInfoUndefined: Self = StObject.set(x, "EbsStorageInfo", js.undefined)
   }
 }

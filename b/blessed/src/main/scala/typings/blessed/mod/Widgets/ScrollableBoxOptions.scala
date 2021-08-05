@@ -28,31 +28,23 @@ trait ScrollableBoxOptions
 }
 object ScrollableBoxOptions {
   
-  @scala.inline
-  def apply(): ScrollableBoxOptions = {
+  inline def apply(): ScrollableBoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollableBoxOptions]
   }
   
-  @scala.inline
-  implicit class ScrollableBoxOptionsMutableBuilder[Self <: ScrollableBoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollableBoxOptions](x: Self) {
     
-    @scala.inline
-    def setAlwaysScroll(value: Boolean): Self = StObject.set(x, "alwaysScroll", value.asInstanceOf[js.Any])
+    inline def setAlwaysScroll(value: Boolean): Self = StObject.set(x, "alwaysScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysScrollUndefined: Self = StObject.set(x, "alwaysScroll", js.undefined)
+    inline def setAlwaysScrollUndefined: Self = StObject.set(x, "alwaysScroll", js.undefined)
     
-    @scala.inline
-    def setBaseLimit(value: Double): Self = StObject.set(x, "baseLimit", value.asInstanceOf[js.Any])
+    inline def setBaseLimit(value: Double): Self = StObject.set(x, "baseLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseLimitUndefined: Self = StObject.set(x, "baseLimit", js.undefined)
+    inline def setBaseLimitUndefined: Self = StObject.set(x, "baseLimit", js.undefined)
     
-    @scala.inline
-    def setScrollbar(value: Ch): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
+    inline def setScrollbar(value: Ch): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbarUndefined: Self = StObject.set(x, "scrollbar", js.undefined)
+    inline def setScrollbarUndefined: Self = StObject.set(x, "scrollbar", js.undefined)
   }
 }

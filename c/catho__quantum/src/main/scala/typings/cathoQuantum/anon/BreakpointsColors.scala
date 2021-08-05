@@ -16,37 +16,27 @@ trait BreakpointsColors extends StObject {
 }
 object BreakpointsColors {
   
-  @scala.inline
-  def apply(): BreakpointsColors = {
+  inline def apply(): BreakpointsColors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BreakpointsColors]
   }
   
-  @scala.inline
-  implicit class BreakpointsColorsMutableBuilder[Self <: BreakpointsColors] (val x: Self) extends AnyVal {
+  extension [Self <: BreakpointsColors](x: Self) {
     
-    @scala.inline
-    def setBreakpoints(value: js.Object): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+    inline def setBreakpoints(value: js.Object): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+    inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
     
-    @scala.inline
-    def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setComponents(value: Button): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: Button): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

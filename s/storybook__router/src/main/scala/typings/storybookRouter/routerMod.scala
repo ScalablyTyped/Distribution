@@ -17,8 +17,7 @@ object routerMod {
   
   object Link {
     
-    @scala.inline
-    def apply(hasToChildrenRest: QueryLinkProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasToChildrenRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(hasToChildrenRest: QueryLinkProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasToChildrenRest.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@storybook/router/dist/router", "Link")
     @js.native
@@ -27,14 +26,12 @@ object routerMod {
     @JSImport("@storybook/router/dist/router", "Link.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   object Location {
     
-    @scala.inline
-    def apply(hasChildren: QueryLocationProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(hasChildren: QueryLocationProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@storybook/router/dist/router", "Location")
     @js.native
@@ -43,8 +40,7 @@ object routerMod {
     @JSImport("@storybook/router/dist/router", "Location.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/router/dist/router", "LocationProvider")
@@ -62,8 +58,7 @@ object routerMod {
   
   object Match {
     
-    @scala.inline
-    def apply(hasChildrenTargetPathStartsWith: QueryMatchProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenTargetPathStartsWith.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(hasChildrenTargetPathStartsWith: QueryMatchProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenTargetPathStartsWith.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@storybook/router/dist/router", "Match")
     @js.native
@@ -72,14 +67,12 @@ object routerMod {
     @JSImport("@storybook/router/dist/router", "Match.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   object Route {
     
-    @scala.inline
-    def apply(hasPathChildrenStartsWithHideOnly: RouteProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasPathChildrenStartsWithHideOnly.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(hasPathChildrenStartsWithHideOnly: RouteProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasPathChildrenStartsWithHideOnly.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@storybook/router/dist/router", "Route")
     @js.native
@@ -88,8 +81,7 @@ object routerMod {
     @JSImport("@storybook/router/dist/router", "Route.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@storybook/router/dist/router", "navigate")
@@ -102,21 +94,17 @@ object routerMod {
   }
   object MatchingData {
     
-    @scala.inline
-    def apply(): MatchingData = {
+    inline def apply(): MatchingData = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("match")(null)
       __obj.asInstanceOf[MatchingData]
     }
     
-    @scala.inline
-    implicit class MatchingDataMutableBuilder[Self <: MatchingData] (val x: Self) extends AnyVal {
+    extension [Self <: MatchingData](x: Self) {
       
-      @scala.inline
-      def setMatch(value: Path): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: Path): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchNull: Self = StObject.set(x, "match", null)
+      inline def setMatchNull: Self = StObject.set(x, "match", null)
     }
   }
   
@@ -128,17 +116,14 @@ object routerMod {
   }
   object Other {
     
-    @scala.inline
-    def apply(path: String): Other = {
+    inline def apply(path: String): Other = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Other]
     }
     
-    @scala.inline
-    implicit class OtherMutableBuilder[Self <: Other] (val x: Self) extends AnyVal {
+    extension [Self <: Other](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,23 +135,18 @@ object routerMod {
   }
   object QueryLinkProps {
     
-    @scala.inline
-    def apply(to: String): QueryLinkProps = {
+    inline def apply(to: String): QueryLinkProps = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryLinkProps]
     }
     
-    @scala.inline
-    implicit class QueryLinkPropsMutableBuilder[Self <: QueryLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: QueryLinkProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,17 +156,14 @@ object routerMod {
   }
   object QueryLocationProps {
     
-    @scala.inline
-    def apply(children: RenderData => ReactNode): QueryLocationProps = {
+    inline def apply(children: RenderData => ReactNode): QueryLocationProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[QueryLocationProps]
     }
     
-    @scala.inline
-    implicit class QueryLocationPropsMutableBuilder[Self <: QueryLocationProps] (val x: Self) extends AnyVal {
+    extension [Self <: QueryLocationProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: RenderData => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: RenderData => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -200,23 +177,18 @@ object routerMod {
   }
   object QueryMatchProps {
     
-    @scala.inline
-    def apply(children: MatchingData => ReactNode, path: String, startsWith: Boolean): QueryMatchProps = {
+    inline def apply(children: MatchingData => ReactNode, path: String, startsWith: Boolean): QueryMatchProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), path = path.asInstanceOf[js.Any], startsWith = startsWith.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryMatchProps]
     }
     
-    @scala.inline
-    implicit class QueryMatchPropsMutableBuilder[Self <: QueryMatchProps] (val x: Self) extends AnyVal {
+    extension [Self <: QueryMatchProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: MatchingData => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: MatchingData => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsWith(value: Boolean): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
+      inline def setStartsWith(value: Boolean): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,44 +209,32 @@ object routerMod {
   }
   object RenderData {
     
-    @scala.inline
-    def apply(location: WindowLocation[LocationState], path: String): RenderData = {
+    inline def apply(location: WindowLocation[LocationState], path: String): RenderData = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderData]
     }
     
-    @scala.inline
-    implicit class RenderDataMutableBuilder[Self <: RenderData] (val x: Self) extends AnyVal {
+    extension [Self <: RenderData](x: Self) {
       
-      @scala.inline
-      def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
+      inline def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+      inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
+      inline def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
       
-      @scala.inline
-      def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+      inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryIdUndefined: Self = StObject.set(x, "storyId", js.undefined)
+      inline def setStoryIdUndefined: Self = StObject.set(x, "storyId", js.undefined)
       
-      @scala.inline
-      def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: String): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+      inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
     }
   }
   
@@ -290,35 +250,26 @@ object routerMod {
   }
   object RouteProps {
     
-    @scala.inline
-    def apply(path: String): RouteProps = {
+    inline def apply(path: String): RouteProps = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteProps]
     }
     
-    @scala.inline
-    implicit class RoutePropsMutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
+    extension [Self <: RouteProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setHideOnly(value: Boolean): Self = StObject.set(x, "hideOnly", value.asInstanceOf[js.Any])
+      inline def setHideOnly(value: Boolean): Self = StObject.set(x, "hideOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideOnlyUndefined: Self = StObject.set(x, "hideOnly", js.undefined)
+      inline def setHideOnlyUndefined: Self = StObject.set(x, "hideOnly", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsWith(value: Boolean): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
+      inline def setStartsWith(value: Boolean): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
+      inline def setStartsWithUndefined: Self = StObject.set(x, "startsWith", js.undefined)
     }
   }
 }

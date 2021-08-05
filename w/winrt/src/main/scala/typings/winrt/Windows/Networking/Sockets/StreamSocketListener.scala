@@ -14,8 +14,7 @@ trait StreamSocketListener
 }
 object StreamSocketListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindEndpointAsync: (HostName, String) => IAsyncAction,
     bindServiceNameAsync: String => IAsyncAction,
     close: () => Unit,
@@ -28,10 +27,8 @@ object StreamSocketListener {
     __obj.asInstanceOf[StreamSocketListener]
   }
   
-  @scala.inline
-  implicit class StreamSocketListenerMutableBuilder[Self <: StreamSocketListener] (val x: Self) extends AnyVal {
+  extension [Self <: StreamSocketListener](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

@@ -31,61 +31,61 @@ class ImmutableCompilationSettings protected ()
     createFileLog: Boolean
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _allowAutomaticSemicolonInsertion: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _codeGenTarget: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _codepage: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _createFileLog: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _gatherDiagnostics: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _generateDeclarationFiles: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _mapRoot: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _mapSourceFiles: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _moduleGenTarget: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _noImplicitAny: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _noLib: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _noResolve: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _outDirOption: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _outFileOption: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _propagateEnumConstants: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _removeComments: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _sourceRoot: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _useCaseSensitiveFileResolution: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _watch: js.Any = js.native
   
   /* CompleteClass */
@@ -158,14 +158,11 @@ object ImmutableCompilationSettings {
   @JSGlobal("TypeScript.ImmutableCompilationSettings._defaultSettings")
   @js.native
   def _defaultSettings: js.Any = js.native
-  @scala.inline
-  def _defaultSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultSettings")(x.asInstanceOf[js.Any])
+  inline def _defaultSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultSettings")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def defaultSettings(): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSettings")().asInstanceOf[typings.typescriptServices.TypeScript.ImmutableCompilationSettings]
+  inline def defaultSettings(): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSettings")().asInstanceOf[typings.typescriptServices.TypeScript.ImmutableCompilationSettings]
   
   /* static member */
-  @scala.inline
-  def fromCompilationSettings(settings: typings.typescriptServices.TypeScript.CompilationSettings): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompilationSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ImmutableCompilationSettings]
+  inline def fromCompilationSettings(settings: typings.typescriptServices.TypeScript.CompilationSettings): typings.typescriptServices.TypeScript.ImmutableCompilationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompilationSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ImmutableCompilationSettings]
 }

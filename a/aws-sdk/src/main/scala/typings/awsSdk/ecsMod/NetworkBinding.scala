@@ -28,37 +28,27 @@ trait NetworkBinding extends StObject {
 }
 object NetworkBinding {
   
-  @scala.inline
-  def apply(): NetworkBinding = {
+  inline def apply(): NetworkBinding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkBinding]
   }
   
-  @scala.inline
-  implicit class NetworkBindingMutableBuilder[Self <: NetworkBinding] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkBinding](x: Self) {
     
-    @scala.inline
-    def setBindIP(value: String): Self = StObject.set(x, "bindIP", value.asInstanceOf[js.Any])
+    inline def setBindIP(value: String): Self = StObject.set(x, "bindIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindIPUndefined: Self = StObject.set(x, "bindIP", js.undefined)
+    inline def setBindIPUndefined: Self = StObject.set(x, "bindIP", js.undefined)
     
-    @scala.inline
-    def setContainerPort(value: BoxedInteger): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
+    inline def setContainerPort(value: BoxedInteger): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
+    inline def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
     
-    @scala.inline
-    def setHostPort(value: BoxedInteger): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
+    inline def setHostPort(value: BoxedInteger): Self = StObject.set(x, "hostPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
+    inline def setHostPortUndefined: Self = StObject.set(x, "hostPort", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: TransportProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: TransportProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }
 }

@@ -55,8 +55,7 @@ object map {
   @js.native
   val URI: /* "Map" */ String = js.native
   
-  @scala.inline
-  def collect[K](O: Ord_[K]): js.Function1[
+  inline def collect[K](O: Ord_[K]): js.Function1[
     /* f */ js.Function2[/* k */ K, /* a */ js.Any, js.Any], 
     js.Function1[/* m */ Map[K, js.Any], js.Array[js.Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("collect")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -64,54 +63,44 @@ object map {
     js.Function1[/* m */ Map[K, js.Any], js.Array[js.Any]]
   ]]
   
-  @scala.inline
-  def compact[K, A](fa: Map[K, Option_[A]]): Map[K, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(fa.asInstanceOf[js.Any]).asInstanceOf[Map[K, A]]
+  inline def compact[K, A](fa: Map[K, Option_[A]]): Map[K, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("compact")(fa.asInstanceOf[js.Any]).asInstanceOf[Map[K, A]]
   
-  @scala.inline
-  def deleteAt[K](E: Eq[K]): js.Function1[/* k */ K, js.Function1[/* m */ Map[K, js.Any], Map[K, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAt")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* k */ K, js.Function1[/* m */ Map[K, js.Any], Map[K, js.Any]]]]
+  inline def deleteAt[K](E: Eq[K]): js.Function1[/* k */ K, js.Function1[/* m */ Map[K, js.Any], Map[K, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAt")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* k */ K, js.Function1[/* m */ Map[K, js.Any], Map[K, js.Any]]]]
   
-  @scala.inline
-  def elem[A](E: Eq[A]): FnCallAM[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallAM[A]]
+  inline def elem[A](E: Eq[A]): FnCallAM[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("elem")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallAM[A]]
   
   @JSImport("fp-ts", "map.empty")
   @js.native
   val empty: Map[scala.Nothing, scala.Nothing] = js.native
   
-  @scala.inline
-  def filter[A](predicate: Predicate[A]): js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, A]]]
+  inline def filter[A](predicate: Predicate[A]): js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, A]]]
   
-  @scala.inline
-  def filterMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]]]
+  inline def filterMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]]]
   
-  @scala.inline
-  def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]]]
+  inline def filter_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]]]
   
-  @scala.inline
-  def fromFoldable[F, K, A](E: Eq[K], M: Magma[A], F: Foldable[F]): js.Function1[
+  inline def fromFoldable[F, K, A](E: Eq[K], M: Magma[A], F: Foldable[F]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [K, A]> */ /* fka */ js.Any, 
     Map[K, A]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldable")(E.asInstanceOf[js.Any], M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [K, A]> */ /* fka */ js.Any, 
     Map[K, A]
   ]]
-  @scala.inline
-  def fromFoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, K, A](E: Eq[K], M: Magma[A], F: Foldable1[F]): js.Function1[
+  inline def fromFoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, K, A](E: Eq[K], M: Magma[A], F: Foldable1[F]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [K, A]> */ /* fka */ js.Any, 
     Map[K, A]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldable")(E.asInstanceOf[js.Any], M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [K, A]> */ /* fka */ js.Any, 
     Map[K, A]
   ]]
-  @scala.inline
-  def fromFoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, K, A](E: Eq[K], M: Magma[A], F: Foldable2[F]): js.Function1[
+  inline def fromFoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, K, A](E: Eq[K], M: Magma[A], F: Foldable2[F]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, [K, A]> */ /* fka */ js.Any, 
     Map[K, A]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldable")(E.asInstanceOf[js.Any], M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, [K, A]> */ /* fka */ js.Any, 
     Map[K, A]
   ]]
-  @scala.inline
-  def fromFoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, K, A](E: Eq[K], M: Magma[A], F: Foldable3[F]): js.Function1[
+  inline def fromFoldable[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, K, A](E: Eq[K], M: Magma[A], F: Foldable3[F]): js.Function1[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, [K, A]> */ /* fka */ js.Any, 
     Map[K, A]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromFoldable")(E.asInstanceOf[js.Any], M.asInstanceOf[js.Any], F.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -119,54 +108,39 @@ object map {
     Map[K, A]
   ]]
   
-  @scala.inline
-  def getEq[K, A](SK: Eq[K], SA: Eq[A]): Eq[Map[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Eq[Map[K, A]]]
+  inline def getEq[K, A](SK: Eq[K], SA: Eq[A]): Eq[Map[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEq")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Eq[Map[K, A]]]
   
-  @scala.inline
-  def getFilterableWithIndex[K](): FilterableWithIndex2C[typings.fpTs.mapMod.URI, K, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterableWithIndex")().asInstanceOf[FilterableWithIndex2C[typings.fpTs.mapMod.URI, K, K]]
+  inline def getFilterableWithIndex[K](): FilterableWithIndex2C[typings.fpTs.mapMod.URI, K, K] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFilterableWithIndex")().asInstanceOf[FilterableWithIndex2C[typings.fpTs.mapMod.URI, K, K]]
   
-  @scala.inline
-  def getMonoid[K, A](SK: Eq[K], SA: Semigroup[A]): Monoid[Map[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Monoid[Map[K, A]]]
+  inline def getMonoid[K, A](SK: Eq[K], SA: Semigroup[A]): Monoid[Map[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Monoid[Map[K, A]]]
   
-  @scala.inline
-  def getShow[K, A](SK: Show[K], SA: Show[A]): Show[Map[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getShow")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Show[Map[K, A]]]
+  inline def getShow[K, A](SK: Show[K], SA: Show[A]): Show[Map[K, A]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getShow")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[Show[Map[K, A]]]
   
-  @scala.inline
-  def getWitherable[K](O: Ord_[K]): (Witherable2C[typings.fpTs.mapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.mapMod.URI, K, K]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getWitherable")(O.asInstanceOf[js.Any]).asInstanceOf[(Witherable2C[typings.fpTs.mapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.mapMod.URI, K, K])]
+  inline def getWitherable[K](O: Ord_[K]): (Witherable2C[typings.fpTs.mapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.mapMod.URI, K, K]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getWitherable")(O.asInstanceOf[js.Any]).asInstanceOf[(Witherable2C[typings.fpTs.mapMod.URI, K]) & (TraversableWithIndex2C[typings.fpTs.mapMod.URI, K, K])]
   
-  @scala.inline
-  def insertAt[K](E: Eq[K]): js.Function2[/* k */ K, /* a */ js.Any, js.Function1[/* m */ Map[K, js.Any], Map[K, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAt")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* k */ K, /* a */ js.Any, js.Function1[/* m */ Map[K, js.Any], Map[K, js.Any]]]]
+  inline def insertAt[K](E: Eq[K]): js.Function2[/* k */ K, /* a */ js.Any, js.Function1[/* m */ Map[K, js.Any], Map[K, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("insertAt")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* k */ K, /* a */ js.Any, js.Function1[/* m */ Map[K, js.Any], Map[K, js.Any]]]]
   
-  @scala.inline
-  def isEmpty[K, A](d: Map[K, A]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEmpty[K, A](d: Map[K, A]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSubmap[K, A](SK: Eq[K], SA: Eq[A]): FnCallMeThat[K, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("isSubmap")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[FnCallMeThat[K, A]]
+  inline def isSubmap[K, A](SK: Eq[K], SA: Eq[A]): FnCallMeThat[K, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("isSubmap")(SK.asInstanceOf[js.Any], SA.asInstanceOf[js.Any])).asInstanceOf[FnCallMeThat[K, A]]
   
-  @scala.inline
-  def keys[K](O: Ord_[K]): js.Function1[/* m */ Map[K, js.Any], js.Array[K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ Map[K, js.Any], js.Array[K]]]
+  inline def keys[K](O: Ord_[K]): js.Function1[/* m */ Map[K, js.Any], js.Array[K]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ Map[K, js.Any], js.Array[K]]]
   
-  @scala.inline
-  def lookup[K](E: Eq[K]): Fn1[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[Fn1[K]]
+  inline def lookup[K](E: Eq[K]): Fn1[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(E.asInstanceOf[js.Any]).asInstanceOf[Fn1[K]]
   
-  @scala.inline
-  def lookupWithKey[K](E: Eq[K]): Fn0[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupWithKey")(E.asInstanceOf[js.Any]).asInstanceOf[Fn0[K]]
+  inline def lookupWithKey[K](E: Eq[K]): Fn0[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("lookupWithKey")(E.asInstanceOf[js.Any]).asInstanceOf[Fn0[K]]
   
-  @scala.inline
-  def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]]]
+  inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Map[js.Any, B]]]
   
-  @scala.inline
-  def mapWithIndex[K, A, B](f: js.Function2[/* k */ K, /* a */ A, B]): js.Function1[/* fa */ Map[K, A], Map[K, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[K, A], Map[K, B]]]
+  inline def mapWithIndex[K, A, B](f: js.Function2[/* k */ K, /* a */ A, B]): js.Function1[/* fa */ Map[K, A], Map[K, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[K, A], Map[K, B]]]
   
   @JSImport("fp-ts", "map.map_")
   @js.native
   val map_ : Filterable2[typings.fpTs.mapMod.URI] = js.native
   
-  @scala.inline
-  def member[K](E: Eq[K]): FnCallKM[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallKM[K]]
+  inline def member[K](E: Eq[K]): FnCallKM[K] = ^.asInstanceOf[js.Dynamic].applyDynamic("member")(E.asInstanceOf[js.Any]).asInstanceOf[FnCallKM[K]]
   
-  @scala.inline
-  def modifyAt[K](E: Eq[K]): js.Function2[
+  inline def modifyAt[K](E: Eq[K]): js.Function2[
     /* k */ K, 
     /* f */ js.Function1[/* a */ js.Any, js.Any], 
     js.Function1[/* m */ Map[K, js.Any], Option_[Map[K, js.Any]]]
@@ -176,17 +150,13 @@ object map {
     js.Function1[/* m */ Map[K, js.Any], Option_[Map[K, js.Any]]]
   ]]
   
-  @scala.inline
-  def partition[A](predicate: Predicate[A]): js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, A], Map[js.Any, A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, A], Map[js.Any, A]]]]
+  inline def partition[A](predicate: Predicate[A]): js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, A], Map[js.Any, A]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, A], Map[js.Any, A]]]]
   
-  @scala.inline
-  def partitionMap[A, B, C](f: js.Function1[/* a */ A, Either_[B, C]]): js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, B], Map[js.Any, C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, B], Map[js.Any, C]]]]
+  inline def partitionMap[A, B, C](f: js.Function1[/* a */ A, Either_[B, C]]): js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, B], Map[js.Any, C]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partitionMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, B], Map[js.Any, C]]]]
   
-  @scala.inline
-  def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, A], Map[js.Any, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, A], Map[js.Any, B]]]]
+  inline def partition_AB_A[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, A], Map[js.Any, B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Map[js.Any, A], Separated[Map[js.Any, A], Map[js.Any, B]]]]
   
-  @scala.inline
-  def pop[K](E: Eq[K]): js.Function1[
+  inline def pop[K](E: Eq[K]): js.Function1[
     /* k */ K, 
     js.Function1[/* m */ Map[K, js.Any], Option_[js.Tuple2[js.Any, Map[K, js.Any]]]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(E.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -194,28 +164,22 @@ object map {
     js.Function1[/* m */ Map[K, js.Any], Option_[js.Tuple2[js.Any, Map[K, js.Any]]]]
   ]]
   
-  @scala.inline
-  def separate[K, A, B](fa: Map[K, Either_[A, B]]): Separated[Map[K, A], Map[K, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separate")(fa.asInstanceOf[js.Any]).asInstanceOf[Separated[Map[K, A], Map[K, B]]]
+  inline def separate[K, A, B](fa: Map[K, Either_[A, B]]): Separated[Map[K, A], Map[K, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separate")(fa.asInstanceOf[js.Any]).asInstanceOf[Separated[Map[K, A], Map[K, B]]]
   
-  @scala.inline
-  def singleton[K, A](k: K, a: A): Map[K, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(k.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Map[K, A]]
+  inline def singleton[K, A](k: K, a: A): Map[K, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("singleton")(k.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Map[K, A]]
   
-  @scala.inline
-  def size[K, A](d: Map[K, A]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("size")(d.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def size[K, A](d: Map[K, A]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("size")(d.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def toArray[K](O: Ord_[K]): js.Function1[/* m */ Map[K, js.Any], js.Array[js.Tuple2[K, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ Map[K, js.Any], js.Array[js.Tuple2[K, js.Any]]]]
+  inline def toArray[K](O: Ord_[K]): js.Function1[/* m */ Map[K, js.Any], js.Array[js.Tuple2[K, js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ Map[K, js.Any], js.Array[js.Tuple2[K, js.Any]]]]
   
-  @scala.inline
-  def toUnfoldable[K, F](O: Ord_[K], U: Unfoldable[F]): js.Function1[
+  inline def toUnfoldable[K, F](O: Ord_[K], U: Unfoldable[F]): js.Function1[
     /* d */ Map[K, js.Any], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [K, A]> */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("toUnfoldable")(O.asInstanceOf[js.Any], U.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
     /* d */ Map[K, js.Any], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, [K, A]> */ js.Any
   ]]
-  @scala.inline
-  def toUnfoldable[K, F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](O: Ord_[K], U: Unfoldable1[F]): js.Function1[
+  inline def toUnfoldable[K, F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](O: Ord_[K], U: Unfoldable1[F]): js.Function1[
     /* d */ Map[K, js.Any], 
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [K, A]> */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("toUnfoldable")(O.asInstanceOf[js.Any], U.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -223,8 +187,7 @@ object map {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, [K, A]> */ js.Any
   ]]
   
-  @scala.inline
-  def updateAt[K](E: Eq[K]): js.Function2[
+  inline def updateAt[K](E: Eq[K]): js.Function2[
     /* k */ K, 
     /* a */ js.Any, 
     js.Function1[/* m */ Map[K, js.Any], Option_[Map[K, js.Any]]]
@@ -234,8 +197,7 @@ object map {
     js.Function1[/* m */ Map[K, js.Any], Option_[Map[K, js.Any]]]
   ]]
   
-  @scala.inline
-  def values[A](O: Ord_[A]): js.Function1[/* m */ Map[js.Any, A], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ Map[js.Any, A], js.Array[A]]]
+  inline def values[A](O: Ord_[A]): js.Function1[/* m */ Map[js.Any, A], js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(O.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* m */ Map[js.Any, A], js.Array[A]]]
   
   /* augmented module */
   object HKTAugmentingMod {

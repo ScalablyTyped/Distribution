@@ -14,19 +14,15 @@ trait INxAttributeDimValues extends StObject {
 }
 object INxAttributeDimValues {
   
-  @scala.inline
-  def apply(qValues: js.Array[INxSimpleDimValue]): INxAttributeDimValues = {
+  inline def apply(qValues: js.Array[INxSimpleDimValue]): INxAttributeDimValues = {
     val __obj = js.Dynamic.literal(qValues = qValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxAttributeDimValues]
   }
   
-  @scala.inline
-  implicit class INxAttributeDimValuesMutableBuilder[Self <: INxAttributeDimValues] (val x: Self) extends AnyVal {
+  extension [Self <: INxAttributeDimValues](x: Self) {
     
-    @scala.inline
-    def setQValues(value: js.Array[INxSimpleDimValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
+    inline def setQValues(value: js.Array[INxSimpleDimValue]): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValuesVarargs(value: INxSimpleDimValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
+    inline def setQValuesVarargs(value: INxSimpleDimValue*): Self = StObject.set(x, "qValues", js.Array(value :_*))
   }
 }

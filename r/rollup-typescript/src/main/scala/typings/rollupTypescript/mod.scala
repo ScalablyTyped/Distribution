@@ -12,10 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): RollupPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[RollupPlugin]
-  @scala.inline
-  def default(options: Options): RollupPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[RollupPlugin]
+  inline def default(): RollupPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[RollupPlugin]
+  inline def default(options: Options): RollupPlugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[RollupPlugin]
   
   trait Options extends StObject {
     
@@ -31,50 +29,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String | js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      @scala.inline
-      def setTsconfig(value: Boolean): Self = StObject.set(x, "tsconfig", value.asInstanceOf[js.Any])
+      inline def setTsconfig(value: Boolean): Self = StObject.set(x, "tsconfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsconfigUndefined: Self = StObject.set(x, "tsconfig", js.undefined)
+      inline def setTsconfigUndefined: Self = StObject.set(x, "tsconfig", js.undefined)
       
-      @scala.inline
-      def setTypescript(value: Typeofts): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
+      inline def setTypescript(value: Typeofts): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypescriptUndefined: Self = StObject.set(x, "typescript", js.undefined)
+      inline def setTypescriptUndefined: Self = StObject.set(x, "typescript", js.undefined)
     }
   }
   
@@ -88,23 +72,18 @@ object mod {
   }
   object RollupPlugin {
     
-    @scala.inline
-    def apply(load: String => String, resolveId: (String, String) => js.Any, transform: (String, String) => Code): RollupPlugin = {
+    inline def apply(load: String => String, resolveId: (String, String) => js.Any, transform: (String, String) => Code): RollupPlugin = {
       val __obj = js.Dynamic.literal(load = js.Any.fromFunction1(load), resolveId = js.Any.fromFunction2(resolveId), transform = js.Any.fromFunction2(transform))
       __obj.asInstanceOf[RollupPlugin]
     }
     
-    @scala.inline
-    implicit class RollupPluginMutableBuilder[Self <: RollupPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: RollupPlugin](x: Self) {
       
-      @scala.inline
-      def setLoad(value: String => String): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+      inline def setLoad(value: String => String): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveId(value: (String, String) => js.Any): Self = StObject.set(x, "resolveId", js.Any.fromFunction2(value))
+      inline def setResolveId(value: (String, String) => js.Any): Self = StObject.set(x, "resolveId", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransform(value: (String, String) => Code): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransform(value: (String, String) => Code): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     }
   }
 }

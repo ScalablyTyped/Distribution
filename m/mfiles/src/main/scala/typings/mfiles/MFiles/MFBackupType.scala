@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFBackupType extends StObject
 object MFBackupType {
   
-  @scala.inline
-  def Differential: `1` = 1.asInstanceOf[`1`]
+  inline def Differential: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Full: `0` = 0.asInstanceOf[`0`]
+  inline def Full: `0` = 0.asInstanceOf[`0`]
 }

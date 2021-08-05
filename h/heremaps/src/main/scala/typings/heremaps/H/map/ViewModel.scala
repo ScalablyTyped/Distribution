@@ -80,50 +80,36 @@ object ViewModel {
   }
   object ILookAtData {
     
-    @scala.inline
-    def apply(): ILookAtData = {
+    inline def apply(): ILookAtData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILookAtData]
     }
     
-    @scala.inline
-    implicit class ILookAtDataMutableBuilder[Self <: ILookAtData] (val x: Self) extends AnyVal {
+    extension [Self <: ILookAtData](x: Self) {
       
-      @scala.inline
-      def setBounds(value: AbstractGeometry): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: AbstractGeometry): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+      inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       
-      @scala.inline
-      def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+      inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+      inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
       
-      @scala.inline
-      def setIncline(value: Double): Self = StObject.set(x, "incline", value.asInstanceOf[js.Any])
+      inline def setIncline(value: Double): Self = StObject.set(x, "incline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclineUndefined: Self = StObject.set(x, "incline", js.undefined)
+      inline def setInclineUndefined: Self = StObject.set(x, "incline", js.undefined)
       
-      @scala.inline
-      def setPosition(value: IPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: IPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
+      inline def setTilt(value: Double): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
+      inline def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
   
@@ -140,8 +126,7 @@ object ViewModel {
        with Event
   object UpdateEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: js.Any,
       defaultPrevented: Boolean,
       preventDefault: () => Unit,

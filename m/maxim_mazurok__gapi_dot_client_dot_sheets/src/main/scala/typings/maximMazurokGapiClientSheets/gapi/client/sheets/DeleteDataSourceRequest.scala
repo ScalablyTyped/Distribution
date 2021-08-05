@@ -11,19 +11,15 @@ trait DeleteDataSourceRequest extends StObject {
 }
 object DeleteDataSourceRequest {
   
-  @scala.inline
-  def apply(): DeleteDataSourceRequest = {
+  inline def apply(): DeleteDataSourceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDataSourceRequestMutableBuilder[Self <: DeleteDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "dataSourceId", js.undefined)
   }
 }

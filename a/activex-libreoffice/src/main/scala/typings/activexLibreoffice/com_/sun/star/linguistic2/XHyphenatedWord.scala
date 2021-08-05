@@ -63,8 +63,7 @@ trait XHyphenatedWord
 }
 object XHyphenatedWord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HyphenPos: Double,
     HyphenatedWord: String,
     HyphenationPos: Double,
@@ -84,40 +83,28 @@ object XHyphenatedWord {
     __obj.asInstanceOf[XHyphenatedWord]
   }
   
-  @scala.inline
-  implicit class XHyphenatedWordMutableBuilder[Self <: XHyphenatedWord] (val x: Self) extends AnyVal {
+  extension [Self <: XHyphenatedWord](x: Self) {
     
-    @scala.inline
-    def setGetHyphenPos(value: () => Double): Self = StObject.set(x, "getHyphenPos", js.Any.fromFunction0(value))
+    inline def setGetHyphenPos(value: () => Double): Self = StObject.set(x, "getHyphenPos", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHyphenatedWord(value: () => String): Self = StObject.set(x, "getHyphenatedWord", js.Any.fromFunction0(value))
+    inline def setGetHyphenatedWord(value: () => String): Self = StObject.set(x, "getHyphenatedWord", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHyphenationPos(value: () => Double): Self = StObject.set(x, "getHyphenationPos", js.Any.fromFunction0(value))
+    inline def setGetHyphenationPos(value: () => Double): Self = StObject.set(x, "getHyphenationPos", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
+    inline def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWord(value: () => String): Self = StObject.set(x, "getWord", js.Any.fromFunction0(value))
+    inline def setGetWord(value: () => String): Self = StObject.set(x, "getWord", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHyphenPos(value: Double): Self = StObject.set(x, "HyphenPos", value.asInstanceOf[js.Any])
+    inline def setHyphenPos(value: Double): Self = StObject.set(x, "HyphenPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyphenatedWord(value: String): Self = StObject.set(x, "HyphenatedWord", value.asInstanceOf[js.Any])
+    inline def setHyphenatedWord(value: String): Self = StObject.set(x, "HyphenatedWord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyphenationPos(value: Double): Self = StObject.set(x, "HyphenationPos", value.asInstanceOf[js.Any])
+    inline def setHyphenationPos(value: Double): Self = StObject.set(x, "HyphenationPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAlternativeSpelling(value: () => Boolean): Self = StObject.set(x, "isAlternativeSpelling", js.Any.fromFunction0(value))
+    inline def setIsAlternativeSpelling(value: () => Boolean): Self = StObject.set(x, "isAlternativeSpelling", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "Word", value.asInstanceOf[js.Any])
   }
 }

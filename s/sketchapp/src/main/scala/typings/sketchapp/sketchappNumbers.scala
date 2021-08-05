@@ -10,8 +10,7 @@ object sketchappNumbers {
   sealed trait `-1`
     extends StObject
        with SketchMSLayerBooleanOperation
-  @scala.inline
-  def `-1`: `-1` = -1.asInstanceOf[`-1`]
+  inline def `-1`: `-1` = -1.asInstanceOf[`-1`]
   
   @js.native
   sealed trait `0`
@@ -26,8 +25,7 @@ object sketchappNumbers {
        with SketchMSLayerClippingMaskMode
        with SketchMSLayerResizingType
        with SketchMSPatternFillTypeEnum
-  @scala.inline
-  def `0`: `0` = 0.asInstanceOf[`0`]
+  inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
   sealed trait `1`
@@ -42,50 +40,43 @@ object sketchappNumbers {
        with SketchMSLayerClippingMaskMode
        with SketchMSLayerResizingType
        with SketchMSPatternFillTypeEnum
-  @scala.inline
-  def `1`: `1` = 1.asInstanceOf[`1`]
+  inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
   sealed trait `10`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `10`: `10` = 10.asInstanceOf[`10`]
+  inline def `10`: `10` = 10.asInstanceOf[`10`]
   
   @js.native
   sealed trait `11`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `11`: `11` = 11.asInstanceOf[`11`]
+  inline def `11`: `11` = 11.asInstanceOf[`11`]
   
   @js.native
   sealed trait `12`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `12`: `12` = 12.asInstanceOf[`12`]
+  inline def `12`: `12` = 12.asInstanceOf[`12`]
   
   @js.native
   sealed trait `13`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `13`: `13` = 13.asInstanceOf[`13`]
+  inline def `13`: `13` = 13.asInstanceOf[`13`]
   
   @js.native
   sealed trait `14`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `14`: `14` = 14.asInstanceOf[`14`]
+  inline def `14`: `14` = 14.asInstanceOf[`14`]
   
   @js.native
   sealed trait `15`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `15`: `15` = 15.asInstanceOf[`15`]
+  inline def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
   sealed trait `2`
@@ -98,8 +89,7 @@ object sketchappNumbers {
        with SketchMSLayerBooleanOperation
        with SketchMSLayerResizingType
        with SketchMSPatternFillTypeEnum
-  @scala.inline
-  def `2`: `2` = 2.asInstanceOf[`2`]
+  inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native
   sealed trait `3`
@@ -110,8 +100,7 @@ object sketchappNumbers {
        with SketchMSLayerBooleanOperation
        with SketchMSLayerResizingType
        with SketchMSPatternFillTypeEnum
-  @scala.inline
-  def `3`: `3` = 3.asInstanceOf[`3`]
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
   
   @js.native
   sealed trait `4`
@@ -119,42 +108,36 @@ object sketchappNumbers {
        with SketchMSCurveMode
        with SketchMSFillTypeEnum
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `4`: `4` = 4.asInstanceOf[`4`]
+  inline def `4`: `4` = 4.asInstanceOf[`4`]
   
   @js.native
   sealed trait `5`
     extends StObject
        with SketchMSFillTypeEnum
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
   sealed trait `6`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
+  inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
   sealed trait `7`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `7`: `7` = 7.asInstanceOf[`7`]
+  inline def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
   sealed trait `8`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `8`: `8` = 8.asInstanceOf[`8`]
+  inline def `8`: `8` = 8.asInstanceOf[`8`]
   
   @js.native
   sealed trait `9`
     extends StObject
        with SketchMSGraphicsContextSettingsBlendMode
-  @scala.inline
-  def `9`: `9` = 9.asInstanceOf[`9`]
+  inline def `9`: `9` = 9.asInstanceOf[`9`]
 }

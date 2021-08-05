@@ -10,16 +10,13 @@ trait GistsGetEndpoint extends StObject {
 }
 object GistsGetEndpoint {
   
-  @scala.inline
-  def apply(gist_id: String): GistsGetEndpoint = {
+  inline def apply(gist_id: String): GistsGetEndpoint = {
     val __obj = js.Dynamic.literal(gist_id = gist_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsGetEndpoint]
   }
   
-  @scala.inline
-  implicit class GistsGetEndpointMutableBuilder[Self <: GistsGetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GistsGetEndpoint](x: Self) {
     
-    @scala.inline
-    def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
+    inline def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
   }
 }

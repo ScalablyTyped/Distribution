@@ -163,8 +163,7 @@ object global {
     * App() 函数用来注册一个小程序。
     * 接受一个 object 参数，其指定小程序的生命周期函数等。
     */
-  @scala.inline
-  def App[T /* <: AppOptions */](app: T & (ThisType[T & typings.weixinApp.wx.App])): Unit = js.Dynamic.global.applyDynamic("App")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def App[T /* <: AppOptions */](app: T & (ThisType[T & typings.weixinApp.wx.App])): Unit = js.Dynamic.global.applyDynamic("App")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * behaviors 是用于组件间代码共享的特性
@@ -174,17 +173,13 @@ object global {
     * 每个组件可以引用多个 behavior
     * behavior 也可以引用其他 behavior
     */
-  @scala.inline
-  def Behavior[D, M, P, B /* <: js.Array[(typings.weixinApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */](): typings.weixinApp.wx.Behavior[D & UnboxBehaviorsData[B], P & UnboxBehaviorsProps[B], M & UnboxBehaviorsMethods[B]] = js.Dynamic.global.applyDynamic("Behavior")().asInstanceOf[typings.weixinApp.wx.Behavior[D & UnboxBehaviorsData[B], P & UnboxBehaviorsProps[B], M & UnboxBehaviorsMethods[B]]]
-  @scala.inline
-  def Behavior[D, M, P, B /* <: js.Array[(typings.weixinApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */](options: ThisTypedComponentOptionsWithRecordProps[Component[D, P, B], D, M, P, B]): typings.weixinApp.wx.Behavior[D & UnboxBehaviorsData[B], P & UnboxBehaviorsProps[B], M & UnboxBehaviorsMethods[B]] = js.Dynamic.global.applyDynamic("Behavior")(options.asInstanceOf[js.Any]).asInstanceOf[typings.weixinApp.wx.Behavior[D & UnboxBehaviorsData[B], P & UnboxBehaviorsProps[B], M & UnboxBehaviorsMethods[B]]]
+  inline def Behavior[D, M, P, B /* <: js.Array[(typings.weixinApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */](): typings.weixinApp.wx.Behavior[D & UnboxBehaviorsData[B], P & UnboxBehaviorsProps[B], M & UnboxBehaviorsMethods[B]] = js.Dynamic.global.applyDynamic("Behavior")().asInstanceOf[typings.weixinApp.wx.Behavior[D & UnboxBehaviorsData[B], P & UnboxBehaviorsProps[B], M & UnboxBehaviorsMethods[B]]]
+  inline def Behavior[D, M, P, B /* <: js.Array[(typings.weixinApp.wx.Behavior[js.Object, js.Object, js.Object]) | String] */](options: ThisTypedComponentOptionsWithRecordProps[Component[D, P, B], D, M, P, B]): typings.weixinApp.wx.Behavior[D & UnboxBehaviorsData[B], P & UnboxBehaviorsProps[B], M & UnboxBehaviorsMethods[B]] = js.Dynamic.global.applyDynamic("Behavior")(options.asInstanceOf[js.Any]).asInstanceOf[typings.weixinApp.wx.Behavior[D & UnboxBehaviorsData[B], P & UnboxBehaviorsProps[B], M & UnboxBehaviorsMethods[B]]]
   
   // #endregion
   // #region Compontent组件
-  @scala.inline
-  def Component[D, M, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */](): String = js.Dynamic.global.applyDynamic("Component")().asInstanceOf[String]
-  @scala.inline
-  def Component[D, M, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */](
+  inline def Component[D, M, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */](): String = js.Dynamic.global.applyDynamic("Component")().asInstanceOf[String]
+  inline def Component[D, M, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | String] */](
     options: ThisTypedComponentOptionsWithRecordProps[typings.weixinApp.wx.Component[D, P, B], D, M, P, B]
   ): String = js.Dynamic.global.applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -194,21 +189,18 @@ object global {
     * Page() 函数用来注册一个页面。
     * 接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。
     */
-  @scala.inline
-  def Page[T /* <: PageOptions & js.Object */](page: T & (ThisType[T & (typings.weixinApp.wx.Page[js.Object, js.Object])])): Unit = js.Dynamic.global.applyDynamic("Page")(page.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Page[T /* <: PageOptions & js.Object */](page: T & (ThisType[T & (typings.weixinApp.wx.Page[js.Object, js.Object])])): Unit = js.Dynamic.global.applyDynamic("Page")(page.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 获取小程序实例
     */
-  @scala.inline
-  def getApp(): App = js.Dynamic.global.applyDynamic("getApp")().asInstanceOf[App]
+  inline def getApp(): App = js.Dynamic.global.applyDynamic("getApp")().asInstanceOf[App]
   
   /**
     * getCurrentPages() 函数用于获取当前页面栈的实例，
     * 以数组形式按栈的顺序给出，第一个元素为首页，最后一个元素为当前页面。
     */
-  @scala.inline
-  def getCurrentPages(): js.Array[Page[js.Object, js.Object]] = js.Dynamic.global.applyDynamic("getCurrentPages")().asInstanceOf[js.Array[Page[js.Object, js.Object]]]
+  inline def getCurrentPages(): js.Array[Page[js.Object, js.Object]] = js.Dynamic.global.applyDynamic("getCurrentPages")().asInstanceOf[js.Array[Page[js.Object, js.Object]]]
   
   object wx {
     
@@ -219,8 +211,7 @@ object global {
     /**
       * 批量添加卡券。
       */
-    @scala.inline
-    def addCard(options: CardOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCard")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addCard(options: CardOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCard")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 增加 手机联系人
@@ -229,8 +220,7 @@ object global {
       * 完成手机通讯录联系人和联系方式的增加。
       * @version 1.2.0
       */
-    @scala.inline
-    def addPhoneContact(options: PhoneContact): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPhoneContact")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addPhoneContact(options: PhoneContact): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addPhoneContact")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // #endregion
     // #region 拓展接口
@@ -238,23 +228,20 @@ object global {
       * 将 ArrayBuffer 数据转成 Base64 字符串
       *
       */
-    @scala.inline
-    def arrayBufferToBase64(arrayBuffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBase64")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def arrayBufferToBase64(arrayBuffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayBufferToBase64")(arrayBuffer.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * 提前向用户发起授权请求。
       * 调用后会立刻弹窗询问用户是否同意授权小程序使用某项功能或获取用户的某些数据，
       * 但不会实际调用对应接口。如果用户之前已经同意授权，则不会出现弹窗，直接返回成功。
       */
-    @scala.inline
-    def authorize(options: AuthorizeOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def authorize(options: AuthorizeOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 将 Base64 字符串转成 ArrayBuffer 数据
       *
       */
-    @scala.inline
-    def base64ToArrayBuffer(base64: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToArrayBuffer")(base64.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+    inline def base64ToArrayBuffer(base64: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToArrayBuffer")(base64.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
     
     /**
       * 判断小程序的API，回调，参数，组件等是否在当前版本可用。
@@ -270,40 +257,34 @@ object global {
       * ${attribute} 代表组件属性
       * ${option} 代表组件属性的可选值
       */
-    @scala.inline
-    def canIUse(api: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canIUse")(api.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def canIUse(api: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canIUse")(api.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * 返回一个数组，用来描述 canvas 区域隐含的像素数据
       * @version 1.9.0
       */
-    @scala.inline
-    def canvasGetImageData(options: CanvasImageDataOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("canvasGetImageData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def canvasGetImageData(options: CanvasImageDataOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("canvasGetImageData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 将像素数据绘制到画布的方法
       * @version 1.9.0
       */
-    @scala.inline
-    def canvasPutImageData(options: CanvasImageDataOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("canvasPutImageData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def canvasPutImageData(options: CanvasImageDataOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("canvasPutImageData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 把当前画布的内容导出生成图片，并返回文件路径
       */
-    @scala.inline
-    def canvasToTempFilePath(options: CanvasToTempFilePathOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("canvasToTempFilePath")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def canvasToTempFilePath(options: CanvasToTempFilePathOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("canvasToTempFilePath")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取设备内是否录入如指纹等生物信息的接口
       */
-    @scala.inline
-    def checkIsSoterEnrolledInDevice(options: CheckIsSoterEnrolledInDeviceOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsSoterEnrolledInDevice")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def checkIsSoterEnrolledInDevice(options: CheckIsSoterEnrolledInDeviceOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsSoterEnrolledInDevice")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取本机支持的 SOTER 生物认证方式
       */
-    @scala.inline
-    def checkIsSupportSoterAuthentication(options: CheckIsSupportSoterAuthenticationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsSupportSoterAuthentication")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def checkIsSupportSoterAuthentication(options: CheckIsSupportSoterAuthenticationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkIsSupportSoterAuthentication")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 检测当前用户登录态是否有效。
@@ -312,74 +293,62 @@ object global {
       * 开发者只需要调用wx.checkSession接口检测当前用户登录态是否有效。
       * 登录态过期后开发者可以再调用wx.login获取新的用户登录态。
       */
-    @scala.inline
-    def checkSession(options: CheckSessionOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSession")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def checkSession(options: CheckSessionOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSession")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def chooseAddress(options: ChooseAddressOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseAddress")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def chooseAddress(options: ChooseAddressOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseAddress")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 从本地相册选择图片或使用相机拍照。
       */
-    @scala.inline
-    def chooseImage(options: ChooseImageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseImage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def chooseImage(options: ChooseImageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseImage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 选择用户的发票抬头。
       */
-    @scala.inline
-    def chooseInvoiceTitle(options: ChooseInvoiceTitleOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseInvoiceTitle")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def chooseInvoiceTitle(options: ChooseInvoiceTitleOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseInvoiceTitle")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 打开地图选择位置
       */
-    @scala.inline
-    def chooseLocation(options: ChooseLocationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseLocation")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def chooseLocation(options: ChooseLocationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseLocation")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 拍摄视频或从手机相册中选视频，返回视频的临时文件路径。
       */
-    @scala.inline
-    def chooseVideo(options: ChooseVideoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseVideo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def chooseVideo(options: ChooseVideoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseVideo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 清理本地数据缓存。
       */
-    @scala.inline
-    def clearStorage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStorage")().asInstanceOf[Unit]
+    inline def clearStorage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStorage")().asInstanceOf[Unit]
     
     /**
       * 同步清理本地数据缓存
       */
-    @scala.inline
-    def clearStorageSync(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStorageSync")().asInstanceOf[Unit]
+    inline def clearStorageSync(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearStorageSync")().asInstanceOf[Unit]
     
     /**
       * 断开与低功耗蓝牙设备的连接
       * @version 1.1.0
       */
-    @scala.inline
-    def closeBLEConnection(options: CloseBLEConnectionOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeBLEConnection")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def closeBLEConnection(options: CloseBLEConnectionOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeBLEConnection")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 关闭蓝牙模块。调用该方法将断开所有已建立的链接并释放系统资源
       * @version 1.1.0
       */
-    @scala.inline
-    def closeBluetoothAdapter(options: CloseBluetoothAdapterOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeBluetoothAdapter")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def closeBluetoothAdapter(options: CloseBluetoothAdapterOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeBluetoothAdapter")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 关闭WebSocket连接。
       */
-    @scala.inline
-    def closeSocket(options: CloseSocketOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeSocket")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def closeSocket(options: CloseSocketOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeSocket")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 压缩图片接口，可选压缩质量
       * @version 2.4.0
       */
-    @scala.inline
-    def compressImage(options: compressImageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compressImage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def compressImage(options: compressImageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("compressImage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 创建一个 WebSocket 连接；
@@ -387,8 +356,7 @@ object global {
       * 如果当前已存在一个 WebSocket 连接，
       * 会自动关闭该连接，并重新创建一个 WebSocket 连接。
       */
-    @scala.inline
-    def connectSocket(options: ConnectSocketOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectSocket")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def connectSocket(options: ConnectSocketOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectSocket")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 连接 Wi-Fi。
@@ -396,10 +364,8 @@ object global {
       * 仅 Android 与 iOS 11 以上版本支持。
       * @version 1.6.0
       */
-    @scala.inline
-    def connectWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectWifi")().asInstanceOf[Unit]
-    @scala.inline
-    def connectWifi(options: ConnectWiFiOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def connectWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectWifi")().asInstanceOf[Unit]
+    inline def connectWifi(options: ConnectWiFiOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connectWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 创建一个动画实例animation。调用实例的方法来描述动画。
@@ -407,10 +373,8 @@ object global {
       *
       * 注意: export 方法每次调用后会清掉之前的动画操作
       */
-    @scala.inline
-    def createAnimation(): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")().asInstanceOf[Animation]
-    @scala.inline
-    def createAnimation(options: CreateAnimationOptions): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(options.asInstanceOf[js.Any]).asInstanceOf[Animation]
+    inline def createAnimation(): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")().asInstanceOf[Animation]
+    inline def createAnimation(options: CreateAnimationOptions): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(options.asInstanceOf[js.Any]).asInstanceOf[Animation]
     
     /**
       * 创建并返回 audio 上下文 audioContext 对象
@@ -451,15 +415,13 @@ object global {
       * })
       * @deprecated 1.6.0
       */
-    @scala.inline
-    def createAudioContext(audioId: String, instance: js.Any): AudioContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createAudioContext")(audioId.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[AudioContext]
+    inline def createAudioContext(audioId: String, instance: js.Any): AudioContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createAudioContext")(audioId.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[AudioContext]
     
     /**
       * 低功耗蓝牙接口
       * @version 1.1.0
       */
-    @scala.inline
-    def createBLEConnection(options: CreateBLEConnectionOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createBLEConnection")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def createBLEConnection(options: CreateBLEConnectionOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createBLEConnection")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 创建并返回 camera 上下文 cameraContext 对象
@@ -468,10 +430,8 @@ object global {
       * 在自定义组件下，第一个参数传入组件实例this，以操作组件内 <camera/> 组件
       * @version 1.6.0
       */
-    @scala.inline
-    def createCameraContext(): CameraContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createCameraContext")().asInstanceOf[CameraContext]
-    @scala.inline
-    def createCameraContext(instance: js.Any): CameraContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createCameraContext")(instance.asInstanceOf[js.Any]).asInstanceOf[CameraContext]
+    inline def createCameraContext(): CameraContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createCameraContext")().asInstanceOf[CameraContext]
+    inline def createCameraContext(instance: js.Any): CameraContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createCameraContext")(instance.asInstanceOf[js.Any]).asInstanceOf[CameraContext]
     
     /**
       * 创建并返回绘图上下文context对象。
@@ -480,21 +440,17 @@ object global {
       * ontext跟<canvas/>不存在对应关系，
       * 一个context生成画布的绘制动作数组可以应用于多个<canvas/>。
       */
-    @scala.inline
-    def createContext(): CanvasContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[CanvasContext]
+    inline def createContext(): CanvasContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")().asInstanceOf[CanvasContext]
     
     /**
       * 创建并返回内部 audio 上下文 innerAudioContext 对象。
       * 本接口是 wx.createAudioContext 升级版。
       * @version 1.6.0
       */
-    @scala.inline
-    def createInnerAudioContext(): InnerAudioContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createInnerAudioContext")().asInstanceOf[InnerAudioContext]
+    inline def createInnerAudioContext(): InnerAudioContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createInnerAudioContext")().asInstanceOf[InnerAudioContext]
     
-    @scala.inline
-    def createIntersectionObserver(context: Component[js.Any, js.Any, js.Array[js.Any]]): IntersectionObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("createIntersectionObserver")(context.asInstanceOf[js.Any]).asInstanceOf[IntersectionObserver]
-    @scala.inline
-    def createIntersectionObserver(context: Component[js.Any, js.Any, js.Array[js.Any]], options: CreateIntersectionObserverOption): IntersectionObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("createIntersectionObserver")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IntersectionObserver]
+    inline def createIntersectionObserver(context: Component[js.Any, js.Any, js.Array[js.Any]]): IntersectionObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("createIntersectionObserver")(context.asInstanceOf[js.Any]).asInstanceOf[IntersectionObserver]
+    inline def createIntersectionObserver(context: Component[js.Any, js.Any, js.Array[js.Any]], options: CreateIntersectionObserverOption): IntersectionObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("createIntersectionObserver")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IntersectionObserver]
     
     /**
       * 操作对应的 <live-player/> 组件。
@@ -502,157 +458,132 @@ object global {
       * 在自定义组件下，第二个参数传入组件实例this，以操作组件内 <live-player/> 组件
       * @version 1.7.0
       */
-    @scala.inline
-    def createLivePlayerContext(id: String, instance: js.Any): LivePlayerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createLivePlayerContext")(id.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[LivePlayerContext]
+    inline def createLivePlayerContext(id: String, instance: js.Any): LivePlayerContext = (^.asInstanceOf[js.Dynamic].applyDynamic("createLivePlayerContext")(id.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[LivePlayerContext]
     
     /**
       * 创建并返回 map 上下文 mapContext 对象
       */
-    @scala.inline
-    def createMapContext(mapId: String): MapContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createMapContext")(mapId.asInstanceOf[js.Any]).asInstanceOf[MapContext]
+    inline def createMapContext(mapId: String): MapContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createMapContext")(mapId.asInstanceOf[js.Any]).asInstanceOf[MapContext]
     
     /**
       * 返回一个SelectorQuery对象实例。
       * 可以在这个实例上使用select等方法选择节点，并使用boundingClientRect等方法选择需要查询的信息。
       * @version 1.4.0
       */
-    @scala.inline
-    def createSelectorQuery(): SelectorQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("createSelectorQuery")().asInstanceOf[SelectorQuery]
+    inline def createSelectorQuery(): SelectorQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("createSelectorQuery")().asInstanceOf[SelectorQuery]
     
     /**
       * 创建并返回 video 上下文 videoContext 对象
       * @param videoId video标签id <video  src="{{src}}" id="myVideo" ></video>
       */
-    @scala.inline
-    def createVideoContext(videoId: String): VideoContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createVideoContext")(videoId.asInstanceOf[js.Any]).asInstanceOf[VideoContext]
+    inline def createVideoContext(videoId: String): VideoContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createVideoContext")(videoId.asInstanceOf[js.Any]).asInstanceOf[VideoContext]
     
     /**
       * 下载文件资源到本地。客户端直接发起一个 HTTP GET 请求，
       * 把下载到的资源根据 type 进行处理，并返回文件的本地临时路径。
       */
-    @scala.inline
-    def downloadFile(options: DownloadFileOptions): DownloadTask = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(options.asInstanceOf[js.Any]).asInstanceOf[DownloadTask]
+    inline def downloadFile(options: DownloadFileOptions): DownloadTask = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadFile")(options.asInstanceOf[js.Any]).asInstanceOf[DownloadTask]
     
     /**
       * 绘制画布
       */
-    @scala.inline
-    def drawCanvas(options: DrawCanvasOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("drawCanvas")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def drawCanvas(options: DrawCanvasOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("drawCanvas")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取当前账号信息
       * @version >= 2.2.2
       */
-    @scala.inline
-    def getAccountInfoSync(): AccountInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountInfoSync")().asInstanceOf[AccountInfo]
+    inline def getAccountInfoSync(): AccountInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountInfoSync")().asInstanceOf[AccountInfo]
     
     /**
       * 获取蓝牙设备所有 characteristic（特征值）
       */
-    @scala.inline
-    def getBLEDeviceCharacteristics(options: GetBLEDeviceCharacteristicsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBLEDeviceCharacteristics")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getBLEDeviceCharacteristics(options: GetBLEDeviceCharacteristicsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBLEDeviceCharacteristics")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取蓝牙设备所有 service（服务）
       */
-    @scala.inline
-    def getBLEDeviceServices(options: GetBLEDeviceServicesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBLEDeviceServices")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getBLEDeviceServices(options: GetBLEDeviceServicesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBLEDeviceServices")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取全局唯一的背景音频管理器 backgroundAudioManager。
       * @version 1.2.0
       */
-    @scala.inline
-    def getBackgroundAudioManager(): BackgroundAudioManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundAudioManager")().asInstanceOf[BackgroundAudioManager]
+    inline def getBackgroundAudioManager(): BackgroundAudioManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundAudioManager")().asInstanceOf[BackgroundAudioManager]
     
     /**
       * 获取音乐播放状态。
       * @deprecated 1.2.0
       */
-    @scala.inline
-    def getBackgroundAudioPlayerState(options: GetBackgroundAudioPlayerStateOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundAudioPlayerState")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getBackgroundAudioPlayerState(options: GetBackgroundAudioPlayerStateOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundAudioPlayerState")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取所有已搜索到的iBeacon设备
       * @version 1.2.0
       */
-    @scala.inline
-    def getBeacons(options: GetBeaconsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBeacons")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getBeacons(options: GetBeaconsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBeacons")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取本机蓝牙适配器状态
       * @version 1.1.0
       */
-    @scala.inline
-    def getBluetoothAdapterState(options: GetBluetoothAdapterStateOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBluetoothAdapterState")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getBluetoothAdapterState(options: GetBluetoothAdapterStateOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBluetoothAdapterState")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取所有已发现的蓝牙设备，包括已经和本机处于连接状态的设备
       */
-    @scala.inline
-    def getBluetoothDevices(options: GetBluetoothDevicesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBluetoothDevices")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getBluetoothDevices(options: GetBluetoothDevicesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBluetoothDevices")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取系统剪贴板内容
       * 微信客户端 6.5.6 版本开始支持
       * @version 1.1.0
       */
-    @scala.inline
-    def getClipboardData(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getClipboardData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getClipboardData(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getClipboardData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 根据 uuid 获取处于已连接状态的设备
       * @version 1.1.0
       */
-    @scala.inline
-    def getConnectedBluetoothDevices(options: GetConnectedBluetoothDevicesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectedBluetoothDevices")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getConnectedBluetoothDevices(options: GetConnectedBluetoothDevicesOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectedBluetoothDevices")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取已连接中的 Wi-Fi 信息
       * @version 1.6.0
       */
-    @scala.inline
-    def getConnectedWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectedWifi")().asInstanceOf[Unit]
-    @scala.inline
-    def getConnectedWifi(options: GetConnectedWifiOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectedWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getConnectedWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectedWifi")().asInstanceOf[Unit]
+    inline def getConnectedWifi(options: GetConnectedWifiOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnectedWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取第三方平台自定义的数据字段。
       * @version 1.1.0
       */
-    @scala.inline
-    def getExtConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtConfig")().asInstanceOf[Unit]
-    @scala.inline
-    def getExtConfig(options: GetExtConfigOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getExtConfig(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtConfig")().asInstanceOf[Unit]
+    inline def getExtConfig(options: GetExtConfigOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtConfig")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取第三方平台自定义的数据字段的同步接口。
       * @version 1.1.0
       */
-    @scala.inline
-    def getExtConfigSync(): ExtConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtConfigSync")().asInstanceOf[ExtConfig]
+    inline def getExtConfigSync(): ExtConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtConfigSync")().asInstanceOf[ExtConfig]
     
     /**
       *  获取文件信息
       * @version 1.4.0
       */
-    @scala.inline
-    def getFileInfo(options: GetFileInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getFileInfo(options: GetFileInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getFileSystemManager(): FileSystemManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystemManager")().asInstanceOf[FileSystemManager]
+    inline def getFileSystemManager(): FileSystemManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystemManager")().asInstanceOf[FileSystemManager]
     
     /**
       * 获取图片信息
       */
-    @scala.inline
-    def getImageInfo(options: GetImageInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getImageInfo(options: GetImageInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取当前的地理位置、速度。
       */
-    @scala.inline
-    def getLocation(options: GetLocationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getLocation(options: GetLocationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocation")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // #region LogManager
     /**
@@ -662,112 +593,92 @@ object global {
       * 用户可以通过设置Button组件的open-type为feedback来上传打印的日志。
       * 用户上传的日志可以通过登录小程序管理后台后进入左侧菜单“客服反馈”页面获取到。
       */
-    @scala.inline
-    def getLogManager(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogManager")().asInstanceOf[Logger]
+    inline def getLogManager(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogManager")().asInstanceOf[Logger]
     
     /**
       * 获取网络类型。
       */
-    @scala.inline
-    def getNetworkType(options: GetNetworkTypeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkType")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getNetworkType(options: GetNetworkTypeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkType")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取全局唯一的录音管理器 recorderManager
       * @version 1.6.0
       */
-    @scala.inline
-    def getRecorderManager(): RecorderManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecorderManager")().asInstanceOf[RecorderManager]
+    inline def getRecorderManager(): RecorderManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecorderManager")().asInstanceOf[RecorderManager]
     
     /**
       * 获取本地文件的文件信息
       */
-    @scala.inline
-    def getSavedFileInfo(options: GetSavedFileInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSavedFileInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getSavedFileInfo(options: GetSavedFileInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSavedFileInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取本地已保存的文件列表
       */
-    @scala.inline
-    def getSavedFileList(options: GetSavedFileListOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSavedFileList")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getSavedFileList(options: GetSavedFileListOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSavedFileList")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取屏幕亮度
       * @version 1.2.0
       */
-    @scala.inline
-    def getScreenBrightness(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenBrightness")().asInstanceOf[Unit]
-    @scala.inline
-    def getScreenBrightness(options: GetScreenBrightnessOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenBrightness")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getScreenBrightness(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenBrightness")().asInstanceOf[Unit]
+    inline def getScreenBrightness(options: GetScreenBrightnessOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getScreenBrightness")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取用户的当前设置。
       * 注：返回值中只会出现小程序已经向用户请求过的权限。
       * @version 1.2.0
       */
-    @scala.inline
-    def getSetting(options: OpenSettingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSetting")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getSetting(options: OpenSettingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSetting")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取转发详细信息
       * @version 1.1.0
       */
-    @scala.inline
-    def getShareInfo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getShareInfo")().asInstanceOf[Unit]
-    @scala.inline
-    def getShareInfo(options: GetShareInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getShareInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getShareInfo(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getShareInfo")().asInstanceOf[Unit]
+    inline def getShareInfo(options: GetShareInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getShareInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 从本地缓存中异步获取指定 key 对应的内容。
       */
-    @scala.inline
-    def getStorage(options: GetStorageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getStorage(options: GetStorageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 异步获取当前storage的相关信息
       */
-    @scala.inline
-    def getStorageInfo(options: GetStorageInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getStorageInfo(options: GetStorageInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getStorageInfoSync(): StorageInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageInfoSync")().asInstanceOf[StorageInfo]
+    inline def getStorageInfoSync(): StorageInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageInfoSync")().asInstanceOf[StorageInfo]
     
     /**
       * 从本地缓存中同步获取指定 key 对应的内容。
       *
       */
-    @scala.inline
-    def getStorageSync(key: String): js.Any | String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageSync")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any | String]
+    inline def getStorageSync(key: String): js.Any | String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorageSync")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any | String]
     
     /**
       * 获取系统信息。
       */
-    @scala.inline
-    def getSystemInfo(options: GetSystemInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getSystemInfo(options: GetSystemInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def getSystemInfoSync(): SystemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemInfoSync")().asInstanceOf[SystemInfo]
+    inline def getSystemInfoSync(): SystemInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemInfoSync")().asInstanceOf[SystemInfo]
     
     /**
       * 获取全局唯一的版本更新管理器，用于管理小程序更新。关于小程序的更新机制，可以查看运行机制文档。
       */
-    @scala.inline
-    def getUpdateManager(): UpdateManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdateManager")().asInstanceOf[UpdateManager]
+    inline def getUpdateManager(): UpdateManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getUpdateManager")().asInstanceOf[UpdateManager]
     
     /**
       * 获取用户信息，需要先调用 wx.login 接口。
       */
-    @scala.inline
-    def getUserInfo(options: GetUserInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getUserInfo(options: GetUserInfoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserInfo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 获取用户过去三十天微信运动步数
       * 需要先调用 wx.login 接口。
       * 需要用户授权 scope.werun
       */
-    @scala.inline
-    def getWeRunData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeRunData")().asInstanceOf[Unit]
-    @scala.inline
-    def getWeRunData(options: WeRunDataOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeRunData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getWeRunData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeRunData")().asInstanceOf[Unit]
+    inline def getWeRunData(options: WeRunDataOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWeRunData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 请求获取 Wi-Fi 列表
@@ -776,83 +687,68 @@ object global {
       * iOS 11.0 及 iOS 11.1 两个版本因系统问题，该方法失效。但在 iOS 11.2 中已修复。
       * @version 1.6.0
       */
-    @scala.inline
-    def getWifiList(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWifiList")().asInstanceOf[Unit]
-    @scala.inline
-    def getWifiList(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWifiList")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def getWifiList(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWifiList")().asInstanceOf[Unit]
+    inline def getWifiList(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getWifiList")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 收起键盘。
       */
-    @scala.inline
-    def hideKeyboard(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideKeyboard")().asInstanceOf[Unit]
+    inline def hideKeyboard(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideKeyboard")().asInstanceOf[Unit]
     
     /**
       * 隐藏消息提示框
       */
-    @scala.inline
-    def hideLoading(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideLoading")().asInstanceOf[Unit]
+    inline def hideLoading(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideLoading")().asInstanceOf[Unit]
     
     /**
       * 隐藏导航条加载动画。
       * @version 1.4.3
       */
-    @scala.inline
-    def hideNavigationBarLoading(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideNavigationBarLoading")().asInstanceOf[Unit]
+    inline def hideNavigationBarLoading(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideNavigationBarLoading")().asInstanceOf[Unit]
     
     /**
       * 隐藏分享按钮
       * @version 1.1.0
       */
-    @scala.inline
-    def hideShareMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideShareMenu")().asInstanceOf[Unit]
-    @scala.inline
-    def hideShareMenu(options: ShareMenuOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideShareMenu")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def hideShareMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideShareMenu")().asInstanceOf[Unit]
+    inline def hideShareMenu(options: ShareMenuOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideShareMenu")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 隐藏 tabBar
       * @version 1.9.0
       */
-    @scala.inline
-    def hideTabBar(options: ShowTabBarOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideTabBar")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def hideTabBar(options: ShowTabBarOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideTabBar")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 隐藏 tabBar 某一项的右上角的红点
       * @version 1.9.0
       */
-    @scala.inline
-    def hideTabBarRedDot(option: TabBarBadgeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideTabBarRedDot")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def hideTabBarRedDot(option: TabBarBadgeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideTabBarRedDot")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def hideToast(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideToast")().asInstanceOf[Unit]
+    inline def hideToast(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideToast")().asInstanceOf[Unit]
     
     /**
       * 调用接口获取登录凭证（code）进而换取用户登录态信息，
       * 包括用户的唯一标识（openid） 及本次登录的 会话密钥（session_key）。
       * 用户数据的加解密通讯需要依赖会话密钥完成。
       */
-    @scala.inline
-    def login(option: LoginOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("login")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def login(option: LoginOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("login")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 拨打电话
       */
-    @scala.inline
-    def makePhoneCall(options: MakePhoneCallOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makePhoneCall")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def makePhoneCall(options: MakePhoneCallOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("makePhoneCall")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 关闭当前页面，回退前一页面。
       */
-    @scala.inline
-    def navigateBack(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBack")().asInstanceOf[Unit]
-    @scala.inline
-    def navigateBack(options: NavigateBackOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBack")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def navigateBack(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBack")().asInstanceOf[Unit]
+    inline def navigateBack(options: NavigateBackOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBack")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 返回到上一个小程序，只有在当前小程序是被其他小程序打开时可以调用成功
       */
-    @scala.inline
-    def navigateBackMiniProgram(options: NavigateBackMiniProgramOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBackMiniProgram")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def navigateBackMiniProgram(options: NavigateBackMiniProgramOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateBackMiniProgram")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 保留当前页面，跳转到应用内的某个页面，使用wx.navigateBack可以返回到原页面。
@@ -860,206 +756,170 @@ object global {
       * 注意：为了不让用户在使用小程序时造成困扰，
       * 我们规定页面路径只能是五层，请尽量避免多层级的交互方式。
       */
-    @scala.inline
-    def navigateTo(options: NavigateToOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def navigateTo(options: NavigateToOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 打开同一公众号下关联的另一个小程序。
       */
-    @scala.inline
-    def navigateToMiniProgram(options: NavigateToMiniProgramOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateToMiniProgram")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def navigateToMiniProgram(options: NavigateToMiniProgramOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateToMiniProgram")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 用于延迟一部分操作到下一个时间片再执行（类似于 setTimeout）。
       * @param func
       * @version 2.2.3
       */
-    @scala.inline
-    def nextTick(func: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def nextTick(func: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 启用低功耗蓝牙设备特征值变化时的 notify 功能。
       * 注意：必须设备的特征值支持notify才可以成功调用，具体参照 characteristic 的 properties 属性
       * 另外，必须先启用notify才能监听到设备 characteristicValueChange 事件
       */
-    @scala.inline
-    def notifyBLECharacteristicValueChanged(options: NotifyBLECharacteristicValueChanged): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyBLECharacteristicValueChanged")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def notifyBLECharacteristicValueChanged(options: NotifyBLECharacteristicValueChanged): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyBLECharacteristicValueChanged")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听重力感应数据，频率：5次/秒
       */
-    @scala.inline
-    def onAccelerometerChange(callback: AccelerometerChangeCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAccelerometerChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onAccelerometerChange(callback: AccelerometerChangeCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onAccelerometerChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听低功耗蓝牙设备的特征值变化。必须先启用notify接口才能接收到设备推送的notification。
       */
-    @scala.inline
-    def onBLECharacteristicValueChange(callback: js.Function1[/* res */ DeviceId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBLECharacteristicValueChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onBLECharacteristicValueChange(callback: js.Function1[/* res */ DeviceId, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBLECharacteristicValueChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听低功耗蓝牙连接的错误事件，包括设备丢失，连接异常断开等等。
       */
-    @scala.inline
-    def onBLEConnectionStateChanged(callback: js.Function1[/* res */ Connected, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBLEConnectionStateChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onBLEConnectionStateChanged(callback: js.Function1[/* res */ Connected, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBLEConnectionStateChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听音乐暂停。
       * @deprecated 1.2.0
       */
-    @scala.inline
-    def onBackgroundAudioPause(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBackgroundAudioPause")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onBackgroundAudioPause(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBackgroundAudioPause")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听音乐播放。
       * @deprecated 1.2.0
       */
-    @scala.inline
-    def onBackgroundAudioPlay(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBackgroundAudioPlay")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onBackgroundAudioPlay(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBackgroundAudioPlay")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听音乐停止。
       * @deprecated 1.2.0
       */
-    @scala.inline
-    def onBackgroundAudioStop(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBackgroundAudioStop")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onBackgroundAudioStop(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBackgroundAudioStop")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听 iBeacon 服务的状态变化
       * @version 1.2.0
       */
-    @scala.inline
-    def onBeaconServiceChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconServiceChange")().asInstanceOf[Unit]
-    @scala.inline
-    def onBeaconServiceChange(callback: js.Function2[/* available */ Boolean, /* discovering */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconServiceChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onBeaconServiceChange(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconServiceChange")().asInstanceOf[Unit]
+    inline def onBeaconServiceChange(callback: js.Function2[/* available */ Boolean, /* discovering */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconServiceChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听 iBeacon 设备的更新事件
       * @version 1.2.0
       */
-    @scala.inline
-    def onBeaconUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconUpdate")().asInstanceOf[Unit]
-    @scala.inline
-    def onBeaconUpdate(callback: js.Function1[/* beacons */ js.Array[Beacon], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconUpdate")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onBeaconUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconUpdate")().asInstanceOf[Unit]
+    inline def onBeaconUpdate(callback: js.Function1[/* beacons */ js.Array[Beacon], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBeaconUpdate")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听蓝牙适配器状态变化事件
       * @version 1.1.0
       */
-    @scala.inline
-    def onBluetoothAdapterStateChange(callback: js.Function1[/* res */ BluetoothAdapterState, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBluetoothAdapterStateChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onBluetoothAdapterStateChange(callback: js.Function1[/* res */ BluetoothAdapterState, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBluetoothAdapterStateChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听寻找到新设备的事件
       * @version 1.1.0
       */
-    @scala.inline
-    def onBluetoothDeviceFound(callback: js.Function1[/* res */ Devices, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBluetoothDeviceFound")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onBluetoothDeviceFound(callback: js.Function1[/* res */ Devices, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onBluetoothDeviceFound")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听罗盘数据，频率：5次/秒，接口调用后会自动开始监听，可使用wx.stopCompass停止监听。
       */
-    @scala.inline
-    def onCompassChange(callback: CompassChangeCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCompassChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onCompassChange(callback: CompassChangeCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCompassChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听在获取到 Wi-Fi 列表数据时的事件，在回调中将返回 wifiList。
       * @version 1.6.0
       */
-    @scala.inline
-    def onGetWifiList(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onGetWifiList")().asInstanceOf[Unit]
-    @scala.inline
-    def onGetWifiList(callback: js.Function1[/* res */ GetWifiListOptions, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onGetWifiList")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onGetWifiList(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onGetWifiList")().asInstanceOf[Unit]
+    inline def onGetWifiList(callback: js.Function1[/* res */ GetWifiListOptions, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onGetWifiList")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听网络状态变化。
       * 微信客户端 6.5.6 版本开始支持
       * @version 1.1.0
       */
-    @scala.inline
-    def onNetworkStatusChange(callback: js.Function1[/* res */ IsConnected, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNetworkStatusChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onNetworkStatusChange(callback: js.Function1[/* res */ IsConnected, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNetworkStatusChange")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** 监听WebSocket关闭。 */
-    @scala.inline
-    def onSocketClose(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketClose")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSocketClose(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketClose")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** 监听WebSocket错误。 */
-    @scala.inline
-    def onSocketError(callback: js.Function1[/* error */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSocketError(callback: js.Function1[/* error */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听WebSocket接受到服务器的消息事件。
       */
-    @scala.inline
-    def onSocketMessage(callback: js.Function1[/* res */ DataResponse, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketMessage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSocketMessage(callback: js.Function1[/* res */ DataResponse, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketMessage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** 监听WebSocket连接打开事件。 */
-    @scala.inline
-    def onSocketOpen(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketOpen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onSocketOpen(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSocketOpen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听用户主动截屏事件，用户使用系统截屏按键截屏时触发此事件
       * @version 1.4.0
       */
-    @scala.inline
-    def onUserCaptureScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")().asInstanceOf[Unit]
-    @scala.inline
-    def onUserCaptureScreen(callback: js.Function1[/* res */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onUserCaptureScreen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")().asInstanceOf[Unit]
+    inline def onUserCaptureScreen(callback: js.Function1[/* res */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUserCaptureScreen")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 监听连接上 Wi-Fi 的事件。
       * @version 1.6.0
       */
-    @scala.inline
-    def onWifiConnected(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onWifiConnected")().asInstanceOf[Unit]
-    @scala.inline
-    def onWifiConnected(callback: js.Function1[/* wifi */ WiFi, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onWifiConnected")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onWifiConnected(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onWifiConnected")().asInstanceOf[Unit]
+    inline def onWifiConnected(callback: js.Function1[/* wifi */ WiFi, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onWifiConnected")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 初始化蓝牙适配器
       * @version 1.1.0
       */
-    @scala.inline
-    def openBluetoothAdapter(options: OpenBluetoothAdapterOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openBluetoothAdapter")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openBluetoothAdapter(options: OpenBluetoothAdapterOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openBluetoothAdapter")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 查看微信卡包中的卡券。
       *
       */
-    @scala.inline
-    def openCard(options: OpenCardOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openCard")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openCard(options: OpenCardOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openCard")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 新开页面打开文档，支持格式：doc, xls, ppt, pdf, docx, xlsx, pptx
       */
-    @scala.inline
-    def openDocument(options: OpenDocumentOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDocument")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openDocument(options: OpenDocumentOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openDocument")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 使用微信内置地图查看位置
       */
-    @scala.inline
-    def openLocation(options: OpenLocationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openLocation")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openLocation(options: OpenLocationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openLocation")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 调起客户端小程序设置界面，返回用户设置的操作结果。
       * 注：设置界面只会出现小程序已经向用户请求过的权限。
       * @version 1.1.0
       */
-    @scala.inline
-    def openSetting(options: OpenSettingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openSetting")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def openSetting(options: OpenSettingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openSetting")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def pageScrollTo(options: PageScrollToOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pageScrollTo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def pageScrollTo(options: PageScrollToOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pageScrollTo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 暂停播放音乐。
       * @deprecated 1.2.0
       */
-    @scala.inline
-    def pauseBackgroundAudio(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pauseBackgroundAudio")().asInstanceOf[Unit]
-    @scala.inline
-    def pauseBackgroundAudio(options: PlayBackgroundAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pauseBackgroundAudio")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def pauseBackgroundAudio(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pauseBackgroundAudio")().asInstanceOf[Unit]
+    inline def pauseBackgroundAudio(options: PlayBackgroundAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pauseBackgroundAudio")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 暂停正在播放的语音。
@@ -1067,70 +927,58 @@ object global {
       * 如果想从头开始播放，需要先调用 wx.stopVoice。
       * @deprecated 1.6.0
       */
-    @scala.inline
-    def pauseVoice(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pauseVoice")().asInstanceOf[Unit]
+    inline def pauseVoice(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pauseVoice")().asInstanceOf[Unit]
     
     /**
       * 播放音乐，同时只能有一首音乐正在播放。
       * @deprecated 1.2.0
       */
-    @scala.inline
-    def playBackgroundAudio(options: PlayBackgroundAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playBackgroundAudio")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def playBackgroundAudio(options: PlayBackgroundAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playBackgroundAudio")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开始播放语音，同时只允许一个语音文件正在播放，
       * 如果前一个语音文件还没播放完，将中断前一个语音播放。
       * @deprecated 1.6.0
       */
-    @scala.inline
-    def playVoice(options: PlayVoiceOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playVoice")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def playVoice(options: PlayVoiceOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("playVoice")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 预览图片。
       */
-    @scala.inline
-    def previewImage(options: PreviewImageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("previewImage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def previewImage(options: PreviewImageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("previewImage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 关闭所有页面，打开到应用内的某个页面。
       * @version 1.1.0
       */
-    @scala.inline
-    def reLaunch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reLaunch")().asInstanceOf[Unit]
-    @scala.inline
-    def reLaunch(options: ReLaunchOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reLaunch")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def reLaunch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reLaunch")().asInstanceOf[Unit]
+    inline def reLaunch(options: ReLaunchOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reLaunch")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 读取低功耗蓝牙设备的特征值的二进制数据值。
       * 注意：必须设备的特征值支持read才可以成功调用，具体参照 characteristic 的 properties 属性
       */
-    @scala.inline
-    def readBLECharacteristicValue(options: ReadBLECharacteristicValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("readBLECharacteristicValue")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def readBLECharacteristicValue(options: ReadBLECharacteristicValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("readBLECharacteristicValue")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 关闭当前页面，跳转到应用内的某个页面。
       */
-    @scala.inline
-    def redirectTo(options: RedirectToOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("redirectTo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def redirectTo(options: RedirectToOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("redirectTo")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 删除本地存储的文件
       */
-    @scala.inline
-    def removeSavedFile(options: RemoveSavedFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSavedFile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeSavedFile(options: RemoveSavedFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSavedFile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def removeStorage(options: RemoveStorageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStorage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeStorage(options: RemoveStorageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStorage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def removeStorageSync(key: String): DataResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStorageSync")(key.asInstanceOf[js.Any]).asInstanceOf[DataResponse]
+    inline def removeStorageSync(key: String): DataResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStorageSync")(key.asInstanceOf[js.Any]).asInstanceOf[DataResponse]
     
     /**
       * 移除 tabBar 某一项右上角的文本
       * @version 1.9.0
       */
-    @scala.inline
-    def removeTabBarBadge(options: TabBarBadgeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTabBarBadge")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeTabBarBadge(options: TabBarBadgeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTabBarBadge")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 自定义分析数据上报接口。使用前，需要在小程序管理后台自定义分析中新建事件，配置好事件名与字段。
@@ -1138,8 +986,7 @@ object global {
       * @param eventName 事件名
       * @param data 上报的自定义数据
       */
-    @scala.inline
-    def reportAnalytics(eventName: String, data: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportAnalytics")(eventName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def reportAnalytics(eventName: String, data: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportAnalytics")(eventName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * 自定义业务数据监控上报接口。使用前，需要在小程序管理后台-运维中心-性能监控-业务数据监控中新建监控事件，
@@ -1147,111 +994,93 @@ object global {
       * @param name 监控ID，在小程序管理后台新建数据指标后获得
       * @param value 上报数值，经处理后会在小程序管理后台上展示每分钟的上报总量
       */
-    @scala.inline
-    def reportMonitor(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportMonitor")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def reportMonitor(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reportMonitor")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * wx.request发起的是https请求。一个微信小程序，同时只能有5个网络请求连接。
       */
-    @scala.inline
-    def request(options: RequestOptions): RequestTask = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RequestTask]
+    inline def request(options: RequestOptions): RequestTask = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[RequestTask]
     
     /**
       * 发起微信支付。
       */
-    @scala.inline
-    def requestPayment(options: RequestPaymentOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPayment")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def requestPayment(options: RequestPaymentOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestPayment")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 保存文件到本地。
       * 本地文件存储的大小限制为 10M
       */
-    @scala.inline
-    def saveFile(options: SaveFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveFile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def saveFile(options: SaveFileOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveFile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 保存图片到系统相册。
       * 需要用户授权 scope.writePhotosAlbum
       * @version 1.2.0
       */
-    @scala.inline
-    def saveImageToPhotosAlbum(options: SaveImageToPhotosAlbumOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveImageToPhotosAlbum")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def saveImageToPhotosAlbum(options: SaveImageToPhotosAlbumOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveImageToPhotosAlbum")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** 保存视频到系统相册。需要用户授权 scope.writePhotosAlbum */
-    @scala.inline
-    def saveVideoToPhotosAlbum(options: SaveVideoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveVideoToPhotosAlbum")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def saveVideoToPhotosAlbum(options: SaveVideoOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveVideoToPhotosAlbum")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 调起客户端扫码界面，扫码成功后返回对应的结果
       */
-    @scala.inline
-    def scanCode(options: ScanCodeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scanCode")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def scanCode(options: ScanCodeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("scanCode")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 控制音乐播放进度。
       * @deprecated 1.2.0
       */
-    @scala.inline
-    def seekBackgroundAudio(options: SeekBackgroundAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seekBackgroundAudio")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def seekBackgroundAudio(options: SeekBackgroundAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seekBackgroundAudio")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 通过 WebSocket 连接发送数据，需要先 wx.connectSocket，
       * 并在 wx.onSocketOpen 回调之后才能发送。
       */
-    @scala.inline
-    def sendSocketMessage(options: SendSocketMessageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendSocketMessage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def sendSocketMessage(options: SendSocketMessageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendSocketMessage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置系统剪贴板的内容
       * 微信客户端 6.5.6 版本开始支持
       * @version 1.1.0
       */
-    @scala.inline
-    def setClipboardData(options: SetClipboardDataOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClipboardData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setClipboardData(options: SetClipboardDataOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setClipboardData")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setEnableDebug(options: EnableDebugOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnableDebug")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setEnableDebug(options: EnableDebugOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnableDebug")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置是否保持常亮状态。
       * 仅在当前小程序生效，离开小程序后设置失效。
       * @version 1.4.0
       */
-    @scala.inline
-    def setKeepScreenOn(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeepScreenOn")().asInstanceOf[Unit]
-    @scala.inline
-    def setKeepScreenOn(options: SetKeepScreenOnOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeepScreenOn")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setKeepScreenOn(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeepScreenOn")().asInstanceOf[Unit]
+    inline def setKeepScreenOn(options: SetKeepScreenOnOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setKeepScreenOn")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置导航颜色
       * @version 1.4.3
       */
-    @scala.inline
-    def setNavigationBarColor(options: SetNavigationBarColorOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNavigationBarColor")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setNavigationBarColor(options: SetNavigationBarColorOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNavigationBarColor")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 动态设置当前页面的标题。
       * @version 1.4.3
       */
-    @scala.inline
-    def setNavigationBarTitle(options: SetNavigationBarTitleOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNavigationBarTitle")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setNavigationBarTitle(options: SetNavigationBarTitleOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNavigationBarTitle")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 设置屏幕亮度
       * @version 1.2.0
       */
-    @scala.inline
-    def setScreenBrightness(options: SetScreenBrightnessOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setScreenBrightness")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setScreenBrightness(options: SetScreenBrightnessOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setScreenBrightness")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 将数据存储在本地缓存中指定的 key 中，
       * 会覆盖掉原来该 key 对应的内容，这是一个异步接口。
       */
-    @scala.inline
-    def setStorage(options: SetStorageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStorage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setStorage(options: SetStorageOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStorage")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setStorageSync(key: String, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStorageSync")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setStorageSync(key: String, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStorageSync")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       * 将 data 存储在本地缓存中指定的 key 中，
       * 会覆盖掉原来该 key 对应的内容，这是一个同步接口。
@@ -1259,30 +1088,26 @@ object global {
       * @param key 本地缓存中的指定的 key
       * @param data 需要存储的内容
       */
-    @scala.inline
-    def setStorageSync(key: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStorageSync")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setStorageSync(key: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStorageSync")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     // 界面-----设置tabBar
     /**
       * 为 tabBar 某一项的右上角添加文本
       * @version 1.9.0
       */
-    @scala.inline
-    def setTabBarBadge(options: SetTabBarBadgeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTabBarBadge")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setTabBarBadge(options: SetTabBarBadgeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTabBarBadge")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 动态设置 tabBar 某一项的内容
       * @version 1.9.0
       */
-    @scala.inline
-    def setTabBarItem(options: SetTabBarItemOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTabBarItem")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setTabBarItem(options: SetTabBarItemOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTabBarItem")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 动态设置 tabBar 的整体样式
       * @version 1.9.0
       */
-    @scala.inline
-    def setTabBarStyle(options: SetTabBarStyleOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTabBarStyle")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setTabBarStyle(options: SetTabBarStyleOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTabBarStyle")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 动态设置置顶栏文字内容
@@ -1292,10 +1117,8 @@ object global {
       * fail，errMsg："setTopBarText: fail invoke too frequently"
       * @version 1.4.3
       */
-    @scala.inline
-    def setTopBarText(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTopBarText")().asInstanceOf[Unit]
-    @scala.inline
-    def setTopBarText(options: SetTopBarTextOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTopBarText")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setTopBarText(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTopBarText")().asInstanceOf[Unit]
+    inline def setTopBarText(options: SetTopBarTextOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTopBarText")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * iOS特有接口 在 onGetWifiList 回调后，利用接口设置 wifiList 中 AP 的相关信息。
@@ -1305,77 +1128,65 @@ object global {
       * + 有可能随着周边 Wi-Fi 列表的刷新，单个流程内收到多次带有存在重复的 Wi-Fi 列表的回调。
       * @version 1.6.0
       */
-    @scala.inline
-    def setWifiList(options: SetWifiListOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWifiList")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setWifiList(options: SetWifiListOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWifiList")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 显示操作菜单
       */
-    @scala.inline
-    def showActionSheet(options: ActionSheetOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showActionSheet")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def showActionSheet(options: ActionSheetOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showActionSheet")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 显示 loading 提示框, 需主动调用 wx.hideLoading 才能关闭提示框
       */
-    @scala.inline
-    def showLoading(options: LoadingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showLoading")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def showLoading(options: LoadingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showLoading")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 显示模态弹窗
       */
-    @scala.inline
-    def showModal(options: ModalOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def showModal(options: ModalOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showModal")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 在当前页面显示导航条加载动画。
       * @version 1.4.3
       */
-    @scala.inline
-    def showNavigationBarLoading(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showNavigationBarLoading")().asInstanceOf[Unit]
+    inline def showNavigationBarLoading(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showNavigationBarLoading")().asInstanceOf[Unit]
     
     /**
       * 显示分享按钮
       *
       */
-    @scala.inline
-    def showShareMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareMenu")().asInstanceOf[Unit]
-    @scala.inline
-    def showShareMenu(options: ShareMenuOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareMenu")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def showShareMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareMenu")().asInstanceOf[Unit]
+    inline def showShareMenu(options: ShareMenuOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showShareMenu")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 显示 tabBar
       * @version 1.9.0
       */
-    @scala.inline
-    def showTabBar(options: ShowTabBarOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showTabBar")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def showTabBar(options: ShowTabBarOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showTabBar")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 显示 tabBar 某一项的右上角的红点
       * @version 1.9.0
       */
-    @scala.inline
-    def showTabBarRedDot(option: TabBarBadgeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showTabBarRedDot")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def showTabBarRedDot(option: TabBarBadgeOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showTabBarRedDot")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 显示消息提示框
       */
-    @scala.inline
-    def showToast(options: ToastOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showToast")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def showToast(options: ToastOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showToast")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开始监听加速度数据。
       * 微信客户端 6.5.6 版本开始支持
       * @version 1.1.0
       */
-    @scala.inline
-    def startAccelerometer(options: AccelerometerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startAccelerometer")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startAccelerometer(options: AccelerometerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startAccelerometer")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开始搜索附近的iBeacon设备
       * @version 1.2.0
       */
-    @scala.inline
-    def startBeaconDiscovery(options: StartBeaconDiscoveryOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startBeaconDiscovery")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startBeaconDiscovery(options: StartBeaconDiscoveryOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startBeaconDiscovery")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开始搜寻附近的蓝牙外围设备。
@@ -1389,26 +1200,22 @@ object global {
       *   }
       * });
       */
-    @scala.inline
-    def startBluetoothDevicesDiscovery(options: StartBluetoothDevicesDiscoveryOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startBluetoothDevicesDiscovery")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startBluetoothDevicesDiscovery(options: StartBluetoothDevicesDiscoveryOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startBluetoothDevicesDiscovery")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开始监听罗盘数据。
       * 微信客户端 6.5.6 版本开始支持
       * @version 1.1.0
       */
-    @scala.inline
-    def startCompass(options: CompassOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startCompass")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startCompass(options: CompassOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startCompass")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // 页面-----下拉刷新
     /**
       * 开始下拉刷新，调用后触发下拉刷新动画，效果与用户手动下拉刷新一致
       * @version 1.5.0
       */
-    @scala.inline
-    def startPullDownRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startPullDownRefresh")().asInstanceOf[Unit]
-    @scala.inline
-    def startPullDownRefresh(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startPullDownRefresh")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startPullDownRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startPullDownRefresh")().asInstanceOf[Unit]
+    inline def startPullDownRefresh(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startPullDownRefresh")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开始录音。当主动调用wx.stopRecord，
@@ -1417,106 +1224,86 @@ object global {
       * 如需持久保存，需在主动调用wx.saveFile，在小程序下次启动时才能访问得到。
       * @deprecated 1.6.0
       */
-    @scala.inline
-    def startRecord(options: StartRecordAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startRecord")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startRecord(options: StartRecordAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startRecord")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 开始 SOTER 生物认证
       */
-    @scala.inline
-    def startSoterAuthentication(options: StartSoterAuthenticationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startSoterAuthentication")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startSoterAuthentication(options: StartSoterAuthenticationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startSoterAuthentication")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     // 设备-----Wi-Fi
     /**
       * 初始化 Wi-Fi 模块。
       * @version 1.6.0
       */
-    @scala.inline
-    def startWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWifi")().asInstanceOf[Unit]
-    @scala.inline
-    def startWifi(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def startWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWifi")().asInstanceOf[Unit]
+    inline def startWifi(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止监听加速度数据。
       * 微信客户端 6.5.6 版本开始支持
       * @version 1.1.0
       */
-    @scala.inline
-    def stopAccelerometer(options: AccelerometerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopAccelerometer")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopAccelerometer(options: AccelerometerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopAccelerometer")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止播放音乐。
       * @deprecated 1.2.0
       */
-    @scala.inline
-    def stopBackgroundAudio(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBackgroundAudio")().asInstanceOf[Unit]
-    @scala.inline
-    def stopBackgroundAudio(options: PlayBackgroundAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBackgroundAudio")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopBackgroundAudio(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBackgroundAudio")().asInstanceOf[Unit]
+    inline def stopBackgroundAudio(options: PlayBackgroundAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBackgroundAudio")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止搜索附近的iBeacon设备
       * @version 1.2.0
       */
-    @scala.inline
-    def stopBeaconDiscovery(options: StopBeaconDiscoveryOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBeaconDiscovery")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopBeaconDiscovery(options: StopBeaconDiscoveryOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBeaconDiscovery")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止搜寻附近的蓝牙外围设备。请在确保找到需要连接的设备后调用该方法停止搜索。
       * @version 1.1.0
       */
-    @scala.inline
-    def stopBluetoothDevicesDiscovery(options: StopBluetoothDevicesDiscoveryOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBluetoothDevicesDiscovery")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopBluetoothDevicesDiscovery(options: StopBluetoothDevicesDiscoveryOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopBluetoothDevicesDiscovery")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def stopCompass(options: CompassOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopCompass")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopCompass(options: CompassOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopCompass")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 停止当前页面下拉刷新
       * @version 1.5.0
       */
-    @scala.inline
-    def stopPullDownRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPullDownRefresh")().asInstanceOf[Unit]
-    @scala.inline
-    def stopPullDownRefresh(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPullDownRefresh")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopPullDownRefresh(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPullDownRefresh")().asInstanceOf[Unit]
+    inline def stopPullDownRefresh(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPullDownRefresh")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 主动调用停止录音。
       */
-    @scala.inline
-    def stopRecord(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopRecord")().asInstanceOf[Unit]
-    @scala.inline
-    def stopRecord(options: StopRecordAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopRecord")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopRecord(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopRecord")().asInstanceOf[Unit]
+    inline def stopRecord(options: StopRecordAudioOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopRecord")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 结束播放语音。
       * @deprecated 1.6.0
       */
-    @scala.inline
-    def stopVoice(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopVoice")().asInstanceOf[Unit]
+    inline def stopVoice(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopVoice")().asInstanceOf[Unit]
     
     /**
       * 关闭 Wi-Fi 模块。
       * @version 1.6.0
       */
-    @scala.inline
-    def stopWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWifi")().asInstanceOf[Unit]
-    @scala.inline
-    def stopWifi(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopWifi(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWifi")().asInstanceOf[Unit]
+    inline def stopWifi(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWifi")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
       */
-    @scala.inline
-    def switchTab(options: SwitchTabOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchTab")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def switchTab(options: SwitchTabOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("switchTab")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 更新转发属性
       * @version 1.2.0
       */
-    @scala.inline
-    def updateShareMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateShareMenu")().asInstanceOf[Unit]
-    @scala.inline
-    def updateShareMenu(options: UpdateShareMenuOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateShareMenu")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def updateShareMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateShareMenu")().asInstanceOf[Unit]
+    inline def updateShareMenu(options: UpdateShareMenuOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateShareMenu")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 将本地资源上传到开发者服务器。
@@ -1525,34 +1312,28 @@ object global {
       * 客户端发起一个 HTTPS POST 请求，
       * 其中 Content-Type 为 multipart/form-data 。
       */
-    @scala.inline
-    def uploadFile(options: UploadFileOptions): UploadTask = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadFile")(options.asInstanceOf[js.Any]).asInstanceOf[UploadTask]
+    inline def uploadFile(options: UploadFileOptions): UploadTask = ^.asInstanceOf[js.Dynamic].applyDynamic("uploadFile")(options.asInstanceOf[js.Any]).asInstanceOf[UploadTask]
     
     // 设备-----震动
     /**
       * 使手机发生较长时间的振动（400ms）
       * @version 1.2.0
       */
-    @scala.inline
-    def vibrateLong(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")().asInstanceOf[Unit]
-    @scala.inline
-    def vibrateLong(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def vibrateLong(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")().asInstanceOf[Unit]
+    inline def vibrateLong(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateLong")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 使手机发生较短时间的振动（15ms）
       * @version 1.2.0
       */
-    @scala.inline
-    def vibrateShort(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")().asInstanceOf[Unit]
-    @scala.inline
-    def vibrateShort(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def vibrateShort(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")().asInstanceOf[Unit]
+    inline def vibrateShort(options: BaseOptions[js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("vibrateShort")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * 向低功耗蓝牙设备特征值中写入二进制数据。
       * 注意：必须设备的特征值支持write才可以成功调用，具体参照 characteristic 的 properties 属性
       * tips: 并行调用多次读写接口存在读写失败的可能性
       */
-    @scala.inline
-    def writeBLECharacteristicValue(options: WriteBLECharacteristicValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBLECharacteristicValue")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def writeBLECharacteristicValue(options: WriteBLECharacteristicValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBLECharacteristicValue")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

@@ -12,22 +12,17 @@ trait ICommandRunBeforeTestRunHooks extends StObject {
 }
 object ICommandRunBeforeTestRunHooks {
   
-  @scala.inline
-  def apply(): ICommandRunBeforeTestRunHooks = {
+  inline def apply(): ICommandRunBeforeTestRunHooks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICommandRunBeforeTestRunHooks]
   }
   
-  @scala.inline
-  implicit class ICommandRunBeforeTestRunHooksMutableBuilder[Self <: ICommandRunBeforeTestRunHooks] (val x: Self) extends AnyVal {
+  extension [Self <: ICommandRunBeforeTestRunHooks](x: Self) {
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdNull: Self = StObject.set(x, "actionId", null)
+    inline def setActionIdNull: Self = StObject.set(x, "actionId", null)
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
   }
 }

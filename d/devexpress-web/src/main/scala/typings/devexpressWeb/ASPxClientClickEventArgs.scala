@@ -68,8 +68,7 @@ trait ASPxClientClickEventArgs
 }
 object ASPxClientClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnFieldName: String,
     ColumnIndex: Double,
     ColumnValue: js.Any,
@@ -86,40 +85,28 @@ object ASPxClientClickEventArgs {
     __obj.asInstanceOf[ASPxClientClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientClickEventArgsMutableBuilder[Self <: ASPxClientClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumnFieldName(value: String): Self = StObject.set(x, "ColumnFieldName", value.asInstanceOf[js.Any])
+    inline def setColumnFieldName(value: String): Self = StObject.set(x, "ColumnFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "ColumnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "ColumnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnValue(value: js.Any): Self = StObject.set(x, "ColumnValue", value.asInstanceOf[js.Any])
+    inline def setColumnValue(value: js.Any): Self = StObject.set(x, "ColumnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnValueType(value: String): Self = StObject.set(x, "ColumnValueType", value.asInstanceOf[js.Any])
+    inline def setColumnValueType(value: String): Self = StObject.set(x, "ColumnValueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataIndex(value: Double): Self = StObject.set(x, "DataIndex", value.asInstanceOf[js.Any])
+    inline def setDataIndex(value: Double): Self = StObject.set(x, "DataIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "HtmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "HtmlEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowFieldName(value: String): Self = StObject.set(x, "RowFieldName", value.asInstanceOf[js.Any])
+    inline def setRowFieldName(value: String): Self = StObject.set(x, "RowFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "RowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "RowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowValue(value: js.Any): Self = StObject.set(x, "RowValue", value.asInstanceOf[js.Any])
+    inline def setRowValue(value: js.Any): Self = StObject.set(x, "RowValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowValueType(value: String): Self = StObject.set(x, "RowValueType", value.asInstanceOf[js.Any])
+    inline def setRowValueType(value: String): Self = StObject.set(x, "RowValueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

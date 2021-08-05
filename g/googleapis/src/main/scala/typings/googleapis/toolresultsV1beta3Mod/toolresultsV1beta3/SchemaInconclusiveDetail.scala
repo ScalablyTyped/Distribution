@@ -23,25 +23,19 @@ trait SchemaInconclusiveDetail extends StObject {
 }
 object SchemaInconclusiveDetail {
   
-  @scala.inline
-  def apply(): SchemaInconclusiveDetail = {
+  inline def apply(): SchemaInconclusiveDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInconclusiveDetail]
   }
   
-  @scala.inline
-  implicit class SchemaInconclusiveDetailMutableBuilder[Self <: SchemaInconclusiveDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInconclusiveDetail](x: Self) {
     
-    @scala.inline
-    def setAbortedByUser(value: Boolean): Self = StObject.set(x, "abortedByUser", value.asInstanceOf[js.Any])
+    inline def setAbortedByUser(value: Boolean): Self = StObject.set(x, "abortedByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortedByUserUndefined: Self = StObject.set(x, "abortedByUser", js.undefined)
+    inline def setAbortedByUserUndefined: Self = StObject.set(x, "abortedByUser", js.undefined)
     
-    @scala.inline
-    def setInfrastructureFailure(value: Boolean): Self = StObject.set(x, "infrastructureFailure", value.asInstanceOf[js.Any])
+    inline def setInfrastructureFailure(value: Boolean): Self = StObject.set(x, "infrastructureFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfrastructureFailureUndefined: Self = StObject.set(x, "infrastructureFailure", js.undefined)
+    inline def setInfrastructureFailureUndefined: Self = StObject.set(x, "infrastructureFailure", js.undefined)
   }
 }

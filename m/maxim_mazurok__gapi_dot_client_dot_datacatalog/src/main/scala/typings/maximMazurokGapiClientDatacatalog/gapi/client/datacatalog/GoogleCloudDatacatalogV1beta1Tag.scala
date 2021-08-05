@@ -40,47 +40,35 @@ trait GoogleCloudDatacatalogV1beta1Tag extends StObject {
 }
 object GoogleCloudDatacatalogV1beta1Tag {
   
-  @scala.inline
-  def apply(): GoogleCloudDatacatalogV1beta1Tag = {
+  inline def apply(): GoogleCloudDatacatalogV1beta1Tag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatacatalogV1beta1Tag]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatacatalogV1beta1TagMutableBuilder[Self <: GoogleCloudDatacatalogV1beta1Tag] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatacatalogV1beta1Tag](x: Self) {
     
-    @scala.inline
-    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setFields(
+    inline def setFields(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datacatalog.gapi.client.datacatalog.GoogleCloudDatacatalogV1beta1TagField}
       */ typings.maximMazurokGapiClientDatacatalog.maximMazurokGapiClientDatacatalogStrings.GoogleCloudDatacatalogV1beta1Tag & TopLevel[js.Any]
     ): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateDisplayName(value: String): Self = StObject.set(x, "templateDisplayName", value.asInstanceOf[js.Any])
+    inline def setTemplateDisplayName(value: String): Self = StObject.set(x, "templateDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateDisplayNameUndefined: Self = StObject.set(x, "templateDisplayName", js.undefined)
+    inline def setTemplateDisplayNameUndefined: Self = StObject.set(x, "templateDisplayName", js.undefined)
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

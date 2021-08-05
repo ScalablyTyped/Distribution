@@ -88,112 +88,77 @@ trait M3u8Settings extends StObject {
 }
 object M3u8Settings {
   
-  @scala.inline
-  def apply(): M3u8Settings = {
+  inline def apply(): M3u8Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[M3u8Settings]
   }
   
-  @scala.inline
-  implicit class M3u8SettingsMutableBuilder[Self <: M3u8Settings] (val x: Self) extends AnyVal {
+  extension [Self <: M3u8Settings](x: Self) {
     
-    @scala.inline
-    def setAudioFramesPerPes(value: integerMin0Max2147483647): Self = StObject.set(x, "AudioFramesPerPes", value.asInstanceOf[js.Any])
+    inline def setAudioFramesPerPes(value: integerMin0Max2147483647): Self = StObject.set(x, "AudioFramesPerPes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioFramesPerPesUndefined: Self = StObject.set(x, "AudioFramesPerPes", js.undefined)
+    inline def setAudioFramesPerPesUndefined: Self = StObject.set(x, "AudioFramesPerPes", js.undefined)
     
-    @scala.inline
-    def setAudioPids(value: listOfIntegerMin32Max8182): Self = StObject.set(x, "AudioPids", value.asInstanceOf[js.Any])
+    inline def setAudioPids(value: listOfIntegerMin32Max8182): Self = StObject.set(x, "AudioPids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioPidsUndefined: Self = StObject.set(x, "AudioPids", js.undefined)
+    inline def setAudioPidsUndefined: Self = StObject.set(x, "AudioPids", js.undefined)
     
-    @scala.inline
-    def setAudioPidsVarargs(value: integerMin32Max8182*): Self = StObject.set(x, "AudioPids", js.Array(value :_*))
+    inline def setAudioPidsVarargs(value: integerMin32Max8182*): Self = StObject.set(x, "AudioPids", js.Array(value :_*))
     
-    @scala.inline
-    def setNielsenId3(value: M3u8NielsenId3): Self = StObject.set(x, "NielsenId3", value.asInstanceOf[js.Any])
+    inline def setNielsenId3(value: M3u8NielsenId3): Self = StObject.set(x, "NielsenId3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNielsenId3Undefined: Self = StObject.set(x, "NielsenId3", js.undefined)
+    inline def setNielsenId3Undefined: Self = StObject.set(x, "NielsenId3", js.undefined)
     
-    @scala.inline
-    def setPatInterval(value: integerMin0Max1000): Self = StObject.set(x, "PatInterval", value.asInstanceOf[js.Any])
+    inline def setPatInterval(value: integerMin0Max1000): Self = StObject.set(x, "PatInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatIntervalUndefined: Self = StObject.set(x, "PatInterval", js.undefined)
+    inline def setPatIntervalUndefined: Self = StObject.set(x, "PatInterval", js.undefined)
     
-    @scala.inline
-    def setPcrControl(value: M3u8PcrControl): Self = StObject.set(x, "PcrControl", value.asInstanceOf[js.Any])
+    inline def setPcrControl(value: M3u8PcrControl): Self = StObject.set(x, "PcrControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPcrControlUndefined: Self = StObject.set(x, "PcrControl", js.undefined)
+    inline def setPcrControlUndefined: Self = StObject.set(x, "PcrControl", js.undefined)
     
-    @scala.inline
-    def setPcrPid(value: integerMin32Max8182): Self = StObject.set(x, "PcrPid", value.asInstanceOf[js.Any])
+    inline def setPcrPid(value: integerMin32Max8182): Self = StObject.set(x, "PcrPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPcrPidUndefined: Self = StObject.set(x, "PcrPid", js.undefined)
+    inline def setPcrPidUndefined: Self = StObject.set(x, "PcrPid", js.undefined)
     
-    @scala.inline
-    def setPmtInterval(value: integerMin0Max1000): Self = StObject.set(x, "PmtInterval", value.asInstanceOf[js.Any])
+    inline def setPmtInterval(value: integerMin0Max1000): Self = StObject.set(x, "PmtInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPmtIntervalUndefined: Self = StObject.set(x, "PmtInterval", js.undefined)
+    inline def setPmtIntervalUndefined: Self = StObject.set(x, "PmtInterval", js.undefined)
     
-    @scala.inline
-    def setPmtPid(value: integerMin32Max8182): Self = StObject.set(x, "PmtPid", value.asInstanceOf[js.Any])
+    inline def setPmtPid(value: integerMin32Max8182): Self = StObject.set(x, "PmtPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPmtPidUndefined: Self = StObject.set(x, "PmtPid", js.undefined)
+    inline def setPmtPidUndefined: Self = StObject.set(x, "PmtPid", js.undefined)
     
-    @scala.inline
-    def setPrivateMetadataPid(value: integerMin32Max8182): Self = StObject.set(x, "PrivateMetadataPid", value.asInstanceOf[js.Any])
+    inline def setPrivateMetadataPid(value: integerMin32Max8182): Self = StObject.set(x, "PrivateMetadataPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateMetadataPidUndefined: Self = StObject.set(x, "PrivateMetadataPid", js.undefined)
+    inline def setPrivateMetadataPidUndefined: Self = StObject.set(x, "PrivateMetadataPid", js.undefined)
     
-    @scala.inline
-    def setProgramNumber(value: integerMin0Max65535): Self = StObject.set(x, "ProgramNumber", value.asInstanceOf[js.Any])
+    inline def setProgramNumber(value: integerMin0Max65535): Self = StObject.set(x, "ProgramNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramNumberUndefined: Self = StObject.set(x, "ProgramNumber", js.undefined)
+    inline def setProgramNumberUndefined: Self = StObject.set(x, "ProgramNumber", js.undefined)
     
-    @scala.inline
-    def setScte35Pid(value: integerMin32Max8182): Self = StObject.set(x, "Scte35Pid", value.asInstanceOf[js.Any])
+    inline def setScte35Pid(value: integerMin32Max8182): Self = StObject.set(x, "Scte35Pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35PidUndefined: Self = StObject.set(x, "Scte35Pid", js.undefined)
+    inline def setScte35PidUndefined: Self = StObject.set(x, "Scte35Pid", js.undefined)
     
-    @scala.inline
-    def setScte35Source(value: M3u8Scte35Source): Self = StObject.set(x, "Scte35Source", value.asInstanceOf[js.Any])
+    inline def setScte35Source(value: M3u8Scte35Source): Self = StObject.set(x, "Scte35Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScte35SourceUndefined: Self = StObject.set(x, "Scte35Source", js.undefined)
+    inline def setScte35SourceUndefined: Self = StObject.set(x, "Scte35Source", js.undefined)
     
-    @scala.inline
-    def setTimedMetadata(value: TimedMetadata): Self = StObject.set(x, "TimedMetadata", value.asInstanceOf[js.Any])
+    inline def setTimedMetadata(value: TimedMetadata): Self = StObject.set(x, "TimedMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedMetadataPid(value: integerMin32Max8182): Self = StObject.set(x, "TimedMetadataPid", value.asInstanceOf[js.Any])
+    inline def setTimedMetadataPid(value: integerMin32Max8182): Self = StObject.set(x, "TimedMetadataPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedMetadataPidUndefined: Self = StObject.set(x, "TimedMetadataPid", js.undefined)
+    inline def setTimedMetadataPidUndefined: Self = StObject.set(x, "TimedMetadataPid", js.undefined)
     
-    @scala.inline
-    def setTimedMetadataUndefined: Self = StObject.set(x, "TimedMetadata", js.undefined)
+    inline def setTimedMetadataUndefined: Self = StObject.set(x, "TimedMetadata", js.undefined)
     
-    @scala.inline
-    def setTransportStreamId(value: integerMin0Max65535): Self = StObject.set(x, "TransportStreamId", value.asInstanceOf[js.Any])
+    inline def setTransportStreamId(value: integerMin0Max65535): Self = StObject.set(x, "TransportStreamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportStreamIdUndefined: Self = StObject.set(x, "TransportStreamId", js.undefined)
+    inline def setTransportStreamIdUndefined: Self = StObject.set(x, "TransportStreamId", js.undefined)
     
-    @scala.inline
-    def setVideoPid(value: integerMin32Max8182): Self = StObject.set(x, "VideoPid", value.asInstanceOf[js.Any])
+    inline def setVideoPid(value: integerMin32Max8182): Self = StObject.set(x, "VideoPid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoPidUndefined: Self = StObject.set(x, "VideoPid", js.undefined)
+    inline def setVideoPidUndefined: Self = StObject.set(x, "VideoPid", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait CreateCompanyRequest extends StObject {
 }
 object CreateCompanyRequest {
   
-  @scala.inline
-  def apply(): CreateCompanyRequest = {
+  inline def apply(): CreateCompanyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCompanyRequest]
   }
   
-  @scala.inline
-  implicit class CreateCompanyRequestMutableBuilder[Self <: CreateCompanyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCompanyRequest](x: Self) {
     
-    @scala.inline
-    def setCompany(value: Company): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: Company): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
   }
 }

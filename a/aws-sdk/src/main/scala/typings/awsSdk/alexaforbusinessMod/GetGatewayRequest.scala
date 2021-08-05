@@ -13,16 +13,13 @@ trait GetGatewayRequest extends StObject {
 }
 object GetGatewayRequest {
   
-  @scala.inline
-  def apply(GatewayArn: Arn): GetGatewayRequest = {
+  inline def apply(GatewayArn: Arn): GetGatewayRequest = {
     val __obj = js.Dynamic.literal(GatewayArn = GatewayArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGatewayRequest]
   }
   
-  @scala.inline
-  implicit class GetGatewayRequestMutableBuilder[Self <: GetGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setGatewayArn(value: Arn): Self = StObject.set(x, "GatewayArn", value.asInstanceOf[js.Any])
+    inline def setGatewayArn(value: Arn): Self = StObject.set(x, "GatewayArn", value.asInstanceOf[js.Any])
   }
 }

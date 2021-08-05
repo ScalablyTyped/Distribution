@@ -20,40 +20,29 @@ trait MonitoringBulk[T]
 }
 object MonitoringBulk {
   
-  @scala.inline
-  def apply[T](body: T): MonitoringBulk[T] = {
+  inline def apply[T](body: T): MonitoringBulk[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringBulk[T]]
   }
   
-  @scala.inline
-  implicit class MonitoringBulkMutableBuilder[Self <: MonitoringBulk[?], T] (val x: Self & MonitoringBulk[T]) extends AnyVal {
+  extension [Self <: MonitoringBulk[?], T](x: Self & MonitoringBulk[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setSystem_api_version(value: String): Self = StObject.set(x, "system_api_version", value.asInstanceOf[js.Any])
+    inline def setSystem_api_version(value: String): Self = StObject.set(x, "system_api_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem_api_versionUndefined: Self = StObject.set(x, "system_api_version", js.undefined)
+    inline def setSystem_api_versionUndefined: Self = StObject.set(x, "system_api_version", js.undefined)
     
-    @scala.inline
-    def setSystem_id(value: String): Self = StObject.set(x, "system_id", value.asInstanceOf[js.Any])
+    inline def setSystem_id(value: String): Self = StObject.set(x, "system_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem_idUndefined: Self = StObject.set(x, "system_id", js.undefined)
+    inline def setSystem_idUndefined: Self = StObject.set(x, "system_id", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

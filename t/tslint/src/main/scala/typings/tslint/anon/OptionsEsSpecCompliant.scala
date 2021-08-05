@@ -10,16 +10,13 @@ trait OptionsEsSpecCompliant extends StObject {
 }
 object OptionsEsSpecCompliant {
   
-  @scala.inline
-  def apply(options: EsSpecCompliant): OptionsEsSpecCompliant = {
+  inline def apply(options: EsSpecCompliant): OptionsEsSpecCompliant = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsEsSpecCompliant]
   }
   
-  @scala.inline
-  implicit class OptionsEsSpecCompliantMutableBuilder[Self <: OptionsEsSpecCompliant] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsEsSpecCompliant](x: Self) {
     
-    @scala.inline
-    def setOptions(value: EsSpecCompliant): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: EsSpecCompliant): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait TextField_
 }
 object TextField_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -67,13 +66,10 @@ object TextField_ {
     __obj.asInstanceOf[TextField_]
   }
   
-  @scala.inline
-  implicit class TextField_MutableBuilder[Self <: TextField_] (val x: Self) extends AnyVal {
+  extension [Self <: TextField_](x: Self) {
     
-    @scala.inline
-    def setIsFieldDisplayed(value: Boolean): Self = StObject.set(x, "IsFieldDisplayed", value.asInstanceOf[js.Any])
+    inline def setIsFieldDisplayed(value: Boolean): Self = StObject.set(x, "IsFieldDisplayed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFieldUsed(value: Boolean): Self = StObject.set(x, "IsFieldUsed", value.asInstanceOf[js.Any])
+    inline def setIsFieldUsed(value: Boolean): Self = StObject.set(x, "IsFieldUsed", value.asInstanceOf[js.Any])
   }
 }

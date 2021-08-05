@@ -28,25 +28,19 @@ trait DownloadWillBeginEvent extends StObject {
 }
 object DownloadWillBeginEvent {
   
-  @scala.inline
-  def apply(frameId: FrameId, guid: String, suggestedFilename: String, url: String): DownloadWillBeginEvent = {
+  inline def apply(frameId: FrameId, guid: String, suggestedFilename: String, url: String): DownloadWillBeginEvent = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], suggestedFilename = suggestedFilename.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadWillBeginEvent]
   }
   
-  @scala.inline
-  implicit class DownloadWillBeginEventMutableBuilder[Self <: DownloadWillBeginEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadWillBeginEvent](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedFilename(value: String): Self = StObject.set(x, "suggestedFilename", value.asInstanceOf[js.Any])
+    inline def setSuggestedFilename(value: String): Self = StObject.set(x, "suggestedFilename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

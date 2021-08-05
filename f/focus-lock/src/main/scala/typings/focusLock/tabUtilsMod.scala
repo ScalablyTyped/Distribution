@@ -12,11 +12,8 @@ object tabUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFocusables(parents: js.Array[HTMLElement]): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusables")(parents.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
-  @scala.inline
-  def getFocusables(parents: js.Array[HTMLElement], withGuards: Boolean): js.Array[HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusables")(parents.asInstanceOf[js.Any], withGuards.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLInputElement]]
+  inline def getFocusables(parents: js.Array[HTMLElement]): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusables")(parents.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
+  inline def getFocusables(parents: js.Array[HTMLElement], withGuards: Boolean): js.Array[HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusables")(parents.asInstanceOf[js.Any], withGuards.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLInputElement]]
   
-  @scala.inline
-  def getParentAutofocusables(parent: HTMLElement): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParentAutofocusables")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
+  inline def getParentAutofocusables(parent: HTMLElement): js.Array[HTMLInputElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParentAutofocusables")(parent.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLInputElement]]
 }

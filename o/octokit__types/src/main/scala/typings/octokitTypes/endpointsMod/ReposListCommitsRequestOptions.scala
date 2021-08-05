@@ -20,25 +20,19 @@ trait ReposListCommitsRequestOptions extends StObject {
 }
 object ReposListCommitsRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposListCommitsRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposListCommitsRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/commits")
     __obj.asInstanceOf[ReposListCommitsRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReposListCommitsRequestOptionsMutableBuilder[Self <: ReposListCommitsRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReposListCommitsRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashcommits): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashcommits): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

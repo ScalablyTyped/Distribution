@@ -46,31 +46,23 @@ trait SchemaRoomLeaveRequest extends StObject {
 }
 object SchemaRoomLeaveRequest {
   
-  @scala.inline
-  def apply(): SchemaRoomLeaveRequest = {
+  inline def apply(): SchemaRoomLeaveRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRoomLeaveRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRoomLeaveRequestMutableBuilder[Self <: SchemaRoomLeaveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRoomLeaveRequest](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLeaveDiagnostics(value: SchemaRoomLeaveDiagnostics): Self = StObject.set(x, "leaveDiagnostics", value.asInstanceOf[js.Any])
+    inline def setLeaveDiagnostics(value: SchemaRoomLeaveDiagnostics): Self = StObject.set(x, "leaveDiagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaveDiagnosticsUndefined: Self = StObject.set(x, "leaveDiagnostics", js.undefined)
+    inline def setLeaveDiagnosticsUndefined: Self = StObject.set(x, "leaveDiagnostics", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

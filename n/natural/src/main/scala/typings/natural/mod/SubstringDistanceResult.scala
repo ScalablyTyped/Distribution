@@ -12,19 +12,15 @@ trait SubstringDistanceResult extends StObject {
 }
 object SubstringDistanceResult {
   
-  @scala.inline
-  def apply(distance: Double, substring: String): SubstringDistanceResult = {
+  inline def apply(distance: Double, substring: String): SubstringDistanceResult = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], substring = substring.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubstringDistanceResult]
   }
   
-  @scala.inline
-  implicit class SubstringDistanceResultMutableBuilder[Self <: SubstringDistanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: SubstringDistanceResult](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstring(value: String): Self = StObject.set(x, "substring", value.asInstanceOf[js.Any])
+    inline def setSubstring(value: String): Self = StObject.set(x, "substring", value.asInstanceOf[js.Any])
   }
 }

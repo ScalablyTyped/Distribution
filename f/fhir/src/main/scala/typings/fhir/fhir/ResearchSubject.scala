@@ -69,70 +69,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ResearchSubject {
   
-  @scala.inline
-  def apply(individual: Reference, status: code, study: Reference): ResearchSubject = {
+  inline def apply(individual: Reference, status: code, study: Reference): ResearchSubject = {
     val __obj = js.Dynamic.literal(individual = individual.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], study = study.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResearchSubject]
   }
   
-  @scala.inline
-  implicit class ResearchSubjectMutableBuilder[Self <: ResearchSubject] (val x: Self) extends AnyVal {
+  extension [Self <: ResearchSubject](x: Self) {
     
-    @scala.inline
-    def setActualArm(value: String): Self = StObject.set(x, "actualArm", value.asInstanceOf[js.Any])
+    inline def setActualArm(value: String): Self = StObject.set(x, "actualArm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualArmUndefined: Self = StObject.set(x, "actualArm", js.undefined)
+    inline def setActualArmUndefined: Self = StObject.set(x, "actualArm", js.undefined)
     
-    @scala.inline
-    def setAssignedArm(value: String): Self = StObject.set(x, "assignedArm", value.asInstanceOf[js.Any])
+    inline def setAssignedArm(value: String): Self = StObject.set(x, "assignedArm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignedArmUndefined: Self = StObject.set(x, "assignedArm", js.undefined)
+    inline def setAssignedArmUndefined: Self = StObject.set(x, "assignedArm", js.undefined)
     
-    @scala.inline
-    def setConsent(value: Reference): Self = StObject.set(x, "consent", value.asInstanceOf[js.Any])
+    inline def setConsent(value: Reference): Self = StObject.set(x, "consent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsentUndefined: Self = StObject.set(x, "consent", js.undefined)
+    inline def setConsentUndefined: Self = StObject.set(x, "consent", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIndividual(value: Reference): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
+    inline def setIndividual(value: Reference): Self = StObject.set(x, "individual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudy(value: Reference): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
+    inline def setStudy(value: Reference): Self = StObject.set(x, "study", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_actualArm(value: Element): Self = StObject.set(x, "_actualArm", value.asInstanceOf[js.Any])
+    inline def set_actualArm(value: Element): Self = StObject.set(x, "_actualArm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_actualArmUndefined: Self = StObject.set(x, "_actualArm", js.undefined)
+    inline def set_actualArmUndefined: Self = StObject.set(x, "_actualArm", js.undefined)
     
-    @scala.inline
-    def set_assignedArm(value: Element): Self = StObject.set(x, "_assignedArm", value.asInstanceOf[js.Any])
+    inline def set_assignedArm(value: Element): Self = StObject.set(x, "_assignedArm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_assignedArmUndefined: Self = StObject.set(x, "_assignedArm", js.undefined)
+    inline def set_assignedArmUndefined: Self = StObject.set(x, "_assignedArm", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

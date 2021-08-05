@@ -35,61 +35,43 @@ trait GoogleAnalyticsAdminV1alphaGoogleAdsLink extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaGoogleAdsLink {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaGoogleAdsLink = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaGoogleAdsLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaGoogleAdsLink]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaGoogleAdsLinkMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaGoogleAdsLink] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaGoogleAdsLink](x: Self) {
     
-    @scala.inline
-    def setAdsPersonalizationEnabled(value: Boolean): Self = StObject.set(x, "adsPersonalizationEnabled", value.asInstanceOf[js.Any])
+    inline def setAdsPersonalizationEnabled(value: Boolean): Self = StObject.set(x, "adsPersonalizationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdsPersonalizationEnabledUndefined: Self = StObject.set(x, "adsPersonalizationEnabled", js.undefined)
+    inline def setAdsPersonalizationEnabledUndefined: Self = StObject.set(x, "adsPersonalizationEnabled", js.undefined)
     
-    @scala.inline
-    def setCanManageClients(value: Boolean): Self = StObject.set(x, "canManageClients", value.asInstanceOf[js.Any])
+    inline def setCanManageClients(value: Boolean): Self = StObject.set(x, "canManageClients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanManageClientsUndefined: Self = StObject.set(x, "canManageClients", js.undefined)
+    inline def setCanManageClientsUndefined: Self = StObject.set(x, "canManageClients", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

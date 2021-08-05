@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Spacing extends StObject
 object Spacing {
   
-  @scala.inline
-  def auto: typings.reactSketchapp.reactSketchappStrings.auto = "auto".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.auto]
+  inline def auto: typings.reactSketchapp.reactSketchappStrings.auto = "auto".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.auto]
   
-  @scala.inline
-  def exact: typings.reactSketchapp.reactSketchappStrings.exact = "exact".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.exact]
+  inline def exact: typings.reactSketchapp.reactSketchappStrings.exact = "exact".asInstanceOf[typings.reactSketchapp.reactSketchappStrings.exact]
 }

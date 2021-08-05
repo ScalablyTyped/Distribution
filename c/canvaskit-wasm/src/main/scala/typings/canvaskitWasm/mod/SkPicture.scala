@@ -16,8 +16,7 @@ trait SkPicture
 }
 object SkPicture {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: () => Unit,
     deleteAfter: () => Unit,
     isAliasOf: js.Any => Boolean,
@@ -28,10 +27,8 @@ object SkPicture {
     __obj.asInstanceOf[SkPicture]
   }
   
-  @scala.inline
-  implicit class SkPictureMutableBuilder[Self <: SkPicture] (val x: Self) extends AnyVal {
+  extension [Self <: SkPicture](x: Self) {
     
-    @scala.inline
-    def setSerialize(value: () => SkData): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+    inline def setSerialize(value: () => SkData): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
   }
 }

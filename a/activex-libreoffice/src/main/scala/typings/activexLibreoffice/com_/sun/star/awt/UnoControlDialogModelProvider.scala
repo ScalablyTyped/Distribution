@@ -20,8 +20,7 @@ trait UnoControlDialogModelProvider
 }
 object UnoControlDialogModelProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -41,10 +40,8 @@ object UnoControlDialogModelProvider {
     __obj.asInstanceOf[UnoControlDialogModelProvider]
   }
   
-  @scala.inline
-  implicit class UnoControlDialogModelProviderMutableBuilder[Self <: UnoControlDialogModelProvider] (val x: Self) extends AnyVal {
+  extension [Self <: UnoControlDialogModelProvider](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

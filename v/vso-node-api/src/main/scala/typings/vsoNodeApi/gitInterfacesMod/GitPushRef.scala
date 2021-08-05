@@ -22,8 +22,7 @@ trait GitPushRef extends StObject {
 }
 object GitPushRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     date: Date,
     pushCorrelationId: String,
@@ -35,25 +34,18 @@ object GitPushRef {
     __obj.asInstanceOf[GitPushRef]
   }
   
-  @scala.inline
-  implicit class GitPushRefMutableBuilder[Self <: GitPushRef] (val x: Self) extends AnyVal {
+  extension [Self <: GitPushRef](x: Self) {
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushCorrelationId(value: String): Self = StObject.set(x, "pushCorrelationId", value.asInstanceOf[js.Any])
+    inline def setPushCorrelationId(value: String): Self = StObject.set(x, "pushCorrelationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushId(value: Double): Self = StObject.set(x, "pushId", value.asInstanceOf[js.Any])
+    inline def setPushId(value: Double): Self = StObject.set(x, "pushId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushedBy(value: IdentityRef): Self = StObject.set(x, "pushedBy", value.asInstanceOf[js.Any])
+    inline def setPushedBy(value: IdentityRef): Self = StObject.set(x, "pushedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

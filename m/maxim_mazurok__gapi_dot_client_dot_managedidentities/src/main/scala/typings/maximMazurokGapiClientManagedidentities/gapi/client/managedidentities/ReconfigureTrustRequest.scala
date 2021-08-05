@@ -14,28 +14,21 @@ trait ReconfigureTrustRequest extends StObject {
 }
 object ReconfigureTrustRequest {
   
-  @scala.inline
-  def apply(): ReconfigureTrustRequest = {
+  inline def apply(): ReconfigureTrustRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReconfigureTrustRequest]
   }
   
-  @scala.inline
-  implicit class ReconfigureTrustRequestMutableBuilder[Self <: ReconfigureTrustRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReconfigureTrustRequest](x: Self) {
     
-    @scala.inline
-    def setTargetDnsIpAddresses(value: js.Array[String]): Self = StObject.set(x, "targetDnsIpAddresses", value.asInstanceOf[js.Any])
+    inline def setTargetDnsIpAddresses(value: js.Array[String]): Self = StObject.set(x, "targetDnsIpAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDnsIpAddressesUndefined: Self = StObject.set(x, "targetDnsIpAddresses", js.undefined)
+    inline def setTargetDnsIpAddressesUndefined: Self = StObject.set(x, "targetDnsIpAddresses", js.undefined)
     
-    @scala.inline
-    def setTargetDnsIpAddressesVarargs(value: String*): Self = StObject.set(x, "targetDnsIpAddresses", js.Array(value :_*))
+    inline def setTargetDnsIpAddressesVarargs(value: String*): Self = StObject.set(x, "targetDnsIpAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetDomainName(value: String): Self = StObject.set(x, "targetDomainName", value.asInstanceOf[js.Any])
+    inline def setTargetDomainName(value: String): Self = StObject.set(x, "targetDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDomainNameUndefined: Self = StObject.set(x, "targetDomainName", js.undefined)
+    inline def setTargetDomainNameUndefined: Self = StObject.set(x, "targetDomainName", js.undefined)
   }
 }

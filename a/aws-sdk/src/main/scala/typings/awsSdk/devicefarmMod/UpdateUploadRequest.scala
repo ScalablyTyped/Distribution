@@ -28,34 +28,25 @@ trait UpdateUploadRequest extends StObject {
 }
 object UpdateUploadRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): UpdateUploadRequest = {
+  inline def apply(arn: AmazonResourceName): UpdateUploadRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUploadRequest]
   }
   
-  @scala.inline
-  implicit class UpdateUploadRequestMutableBuilder[Self <: UpdateUploadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUploadRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setEditContent(value: Boolean): Self = StObject.set(x, "editContent", value.asInstanceOf[js.Any])
+    inline def setEditContent(value: Boolean): Self = StObject.set(x, "editContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditContentUndefined: Self = StObject.set(x, "editContent", js.undefined)
+    inline def setEditContentUndefined: Self = StObject.set(x, "editContent", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

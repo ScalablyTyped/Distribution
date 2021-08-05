@@ -14,25 +14,19 @@ trait Desktop extends StObject {
 }
 object Desktop {
   
-  @scala.inline
-  def apply(): Desktop = {
+  inline def apply(): Desktop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Desktop]
   }
   
-  @scala.inline
-  implicit class DesktopMutableBuilder[Self <: Desktop] (val x: Self) extends AnyVal {
+  extension [Self <: Desktop](x: Self) {
     
-    @scala.inline
-    def setDesktop(value: horizontal | vertical): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+    inline def setDesktop(value: horizontal | vertical): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
+    inline def setDesktopUndefined: Self = StObject.set(x, "desktop", js.undefined)
     
-    @scala.inline
-    def setMobile(value: horizontal | vertical): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: horizontal | vertical): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+    inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
   }
 }

@@ -10,22 +10,17 @@ trait PageHyphenFallback[TLength] extends StObject {
 }
 object PageHyphenFallback {
   
-  @scala.inline
-  def apply[TLength](): PageHyphenFallback[TLength] = {
+  inline def apply[TLength](): PageHyphenFallback[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageHyphenFallback[TLength]]
   }
   
-  @scala.inline
-  implicit class PageHyphenFallbackMutableBuilder[Self <: PageHyphenFallback[?], TLength] (val x: Self & PageHyphenFallback[TLength]) extends AnyVal {
+  extension [Self <: PageHyphenFallback[?], TLength](x: Self & PageHyphenFallback[TLength]) {
     
-    @scala.inline
-    def setSize(value: PageSizeProperty[TLength] | js.Array[PageSizeProperty[TLength]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: PageSizeProperty[TLength] | js.Array[PageSizeProperty[TLength]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSizeVarargs(value: PageSizeProperty[TLength]*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: PageSizeProperty[TLength]*): Self = StObject.set(x, "size", js.Array(value :_*))
   }
 }

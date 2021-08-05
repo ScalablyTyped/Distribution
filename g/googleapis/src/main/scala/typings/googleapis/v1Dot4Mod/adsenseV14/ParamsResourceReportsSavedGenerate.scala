@@ -40,43 +40,31 @@ trait ParamsResourceReportsSavedGenerate
 }
 object ParamsResourceReportsSavedGenerate {
   
-  @scala.inline
-  def apply(): ParamsResourceReportsSavedGenerate = {
+  inline def apply(): ParamsResourceReportsSavedGenerate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceReportsSavedGenerate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceReportsSavedGenerateMutableBuilder[Self <: ParamsResourceReportsSavedGenerate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceReportsSavedGenerate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setSavedReportId(value: String): Self = StObject.set(x, "savedReportId", value.asInstanceOf[js.Any])
+    inline def setSavedReportId(value: String): Self = StObject.set(x, "savedReportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSavedReportIdUndefined: Self = StObject.set(x, "savedReportId", js.undefined)
+    inline def setSavedReportIdUndefined: Self = StObject.set(x, "savedReportId", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait InventorySchedule extends StObject {
 }
 object InventorySchedule {
   
-  @scala.inline
-  def apply(frequency: String): InventorySchedule = {
+  inline def apply(frequency: String): InventorySchedule = {
     val __obj = js.Dynamic.literal(frequency = frequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[InventorySchedule]
   }
   
-  @scala.inline
-  implicit class InventoryScheduleMutableBuilder[Self <: InventorySchedule] (val x: Self) extends AnyVal {
+  extension [Self <: InventorySchedule](x: Self) {
     
-    @scala.inline
-    def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
   }
 }

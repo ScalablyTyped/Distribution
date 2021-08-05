@@ -20,41 +20,30 @@ object anon {
   }
   object R {
     
-    @scala.inline
-    def apply(r: String): R = {
+    inline def apply(r: String): R = {
       val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[R]
     }
     
-    @scala.inline
-    implicit class RMutableBuilder[Self <: R] (val x: Self) extends AnyVal {
+    extension [Self <: R](x: Self) {
       
-      @scala.inline
-      def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecoveryParam(value: Double): Self = StObject.set(x, "recoveryParam", value.asInstanceOf[js.Any])
+      inline def setRecoveryParam(value: Double): Self = StObject.set(x, "recoveryParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecoveryParamUndefined: Self = StObject.set(x, "recoveryParam", js.undefined)
+      inline def setRecoveryParamUndefined: Self = StObject.set(x, "recoveryParam", js.undefined)
       
-      @scala.inline
-      def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
       
-      @scala.inline
-      def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+      inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
       
-      @scala.inline
-      def set_vs(value: String): Self = StObject.set(x, "_vs", value.asInstanceOf[js.Any])
+      inline def set_vs(value: String): Self = StObject.set(x, "_vs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_vsUndefined: Self = StObject.set(x, "_vs", js.undefined)
+      inline def set_vsUndefined: Self = StObject.set(x, "_vs", js.undefined)
     }
   }
 }

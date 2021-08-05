@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartArea")
 @js.native
-class ChartArea protected ()
+/* private */ class ChartArea ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartArea {
   
@@ -58,7 +58,7 @@ class ChartArea protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ChartArea_typekey")
   var PowerPointDotChartArea_typekey: typings.activexPowerpoint.PowerPoint.ChartArea = js.native
   

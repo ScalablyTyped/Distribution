@@ -14,16 +14,13 @@ trait SpawnSyncOptionsWithStringEncoding
 }
 object SpawnSyncOptionsWithStringEncoding {
   
-  @scala.inline
-  def apply(encoding: BufferEncoding): SpawnSyncOptionsWithStringEncoding = {
+  inline def apply(encoding: BufferEncoding): SpawnSyncOptionsWithStringEncoding = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpawnSyncOptionsWithStringEncoding]
   }
   
-  @scala.inline
-  implicit class SpawnSyncOptionsWithStringEncodingMutableBuilder[Self <: SpawnSyncOptionsWithStringEncoding] (val x: Self) extends AnyVal {
+  extension [Self <: SpawnSyncOptionsWithStringEncoding](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
   }
 }

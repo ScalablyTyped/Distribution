@@ -25,8 +25,7 @@ trait TestResultTrendFilter extends StObject {
 }
 object TestResultTrendFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     branchNames: js.Array[String],
     buildCount: Double,
     definitionIds: js.Array[Double],
@@ -40,43 +39,30 @@ object TestResultTrendFilter {
     __obj.asInstanceOf[TestResultTrendFilter]
   }
   
-  @scala.inline
-  implicit class TestResultTrendFilterMutableBuilder[Self <: TestResultTrendFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TestResultTrendFilter](x: Self) {
     
-    @scala.inline
-    def setBranchNames(value: js.Array[String]): Self = StObject.set(x, "branchNames", value.asInstanceOf[js.Any])
+    inline def setBranchNames(value: js.Array[String]): Self = StObject.set(x, "branchNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchNamesVarargs(value: String*): Self = StObject.set(x, "branchNames", js.Array(value :_*))
+    inline def setBranchNamesVarargs(value: String*): Self = StObject.set(x, "branchNames", js.Array(value :_*))
     
-    @scala.inline
-    def setBuildCount(value: Double): Self = StObject.set(x, "buildCount", value.asInstanceOf[js.Any])
+    inline def setBuildCount(value: Double): Self = StObject.set(x, "buildCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionIds(value: js.Array[Double]): Self = StObject.set(x, "definitionIds", value.asInstanceOf[js.Any])
+    inline def setDefinitionIds(value: js.Array[Double]): Self = StObject.set(x, "definitionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "definitionIds", js.Array(value :_*))
+    inline def setDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "definitionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvDefinitionIds(value: js.Array[Double]): Self = StObject.set(x, "envDefinitionIds", value.asInstanceOf[js.Any])
+    inline def setEnvDefinitionIds(value: js.Array[Double]): Self = StObject.set(x, "envDefinitionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "envDefinitionIds", js.Array(value :_*))
+    inline def setEnvDefinitionIdsVarargs(value: Double*): Self = StObject.set(x, "envDefinitionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxCompleteDate(value: Date): Self = StObject.set(x, "maxCompleteDate", value.asInstanceOf[js.Any])
+    inline def setMaxCompleteDate(value: Date): Self = StObject.set(x, "maxCompleteDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishContext(value: String): Self = StObject.set(x, "publishContext", value.asInstanceOf[js.Any])
+    inline def setPublishContext(value: String): Self = StObject.set(x, "publishContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRunTitles(value: js.Array[String]): Self = StObject.set(x, "testRunTitles", value.asInstanceOf[js.Any])
+    inline def setTestRunTitles(value: js.Array[String]): Self = StObject.set(x, "testRunTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRunTitlesVarargs(value: String*): Self = StObject.set(x, "testRunTitles", js.Array(value :_*))
+    inline def setTestRunTitlesVarargs(value: String*): Self = StObject.set(x, "testRunTitles", js.Array(value :_*))
     
-    @scala.inline
-    def setTrendDays(value: Double): Self = StObject.set(x, "trendDays", value.asInstanceOf[js.Any])
+    inline def setTrendDays(value: Double): Self = StObject.set(x, "trendDays", value.asInstanceOf[js.Any])
   }
 }

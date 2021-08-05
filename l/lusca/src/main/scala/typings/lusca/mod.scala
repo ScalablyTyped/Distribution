@@ -13,49 +13,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: LuscaOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: LuscaOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("lusca", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def csp(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def csp(options: cspOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def csp(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def csp(options: cspOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csp")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def csrf(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def csrf(options: csrfOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def csrf(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def csrf(options: csrfOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("csrf")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def hsts(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def hsts(options: hstsOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def hsts(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def hsts(options: hstsOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("hsts")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def nosniff(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("nosniff")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def nosniff(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("nosniff")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def p3p(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("p3p")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def p3p(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("p3p")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def referrerPolicy(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("referrerPolicy")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def referrerPolicy(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("referrerPolicy")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def xframe(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xframe")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def xframe(value: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xframe")(value.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def xssProtection(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def xssProtection(options: xssProtectionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def xssProtection(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def xssProtection(options: xssProtectionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @scala.inline
-  def xssProtection_true(options: `true`): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def xssProtection_true(options: `true`): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("xssProtection")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   /*~ Documentation declares that:
     *~ Setting any value to false will disable it.
@@ -80,62 +65,44 @@ object mod {
   }
   object LuscaOptions {
     
-    @scala.inline
-    def apply(): LuscaOptions = {
+    inline def apply(): LuscaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LuscaOptions]
     }
     
-    @scala.inline
-    implicit class LuscaOptionsMutableBuilder[Self <: LuscaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LuscaOptions](x: Self) {
       
-      @scala.inline
-      def setCsp(value: cspOptions | `false`): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
+      inline def setCsp(value: cspOptions | `false`): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCspUndefined: Self = StObject.set(x, "csp", js.undefined)
+      inline def setCspUndefined: Self = StObject.set(x, "csp", js.undefined)
       
-      @scala.inline
-      def setCsrf(value: csrfOptions | Boolean): Self = StObject.set(x, "csrf", value.asInstanceOf[js.Any])
+      inline def setCsrf(value: csrfOptions | Boolean): Self = StObject.set(x, "csrf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCsrfUndefined: Self = StObject.set(x, "csrf", js.undefined)
+      inline def setCsrfUndefined: Self = StObject.set(x, "csrf", js.undefined)
       
-      @scala.inline
-      def setHsts(value: hstsOptions | `false`): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
+      inline def setHsts(value: hstsOptions | `false`): Self = StObject.set(x, "hsts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
+      inline def setHstsUndefined: Self = StObject.set(x, "hsts", js.undefined)
       
-      @scala.inline
-      def setNosniff(value: Boolean): Self = StObject.set(x, "nosniff", value.asInstanceOf[js.Any])
+      inline def setNosniff(value: Boolean): Self = StObject.set(x, "nosniff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNosniffUndefined: Self = StObject.set(x, "nosniff", js.undefined)
+      inline def setNosniffUndefined: Self = StObject.set(x, "nosniff", js.undefined)
       
-      @scala.inline
-      def setP3p(value: String | `false`): Self = StObject.set(x, "p3p", value.asInstanceOf[js.Any])
+      inline def setP3p(value: String | `false`): Self = StObject.set(x, "p3p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP3pUndefined: Self = StObject.set(x, "p3p", js.undefined)
+      inline def setP3pUndefined: Self = StObject.set(x, "p3p", js.undefined)
       
-      @scala.inline
-      def setReferrerPolicy(value: String | `false`): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      inline def setReferrerPolicy(value: String | `false`): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+      inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
       
-      @scala.inline
-      def setXframe(value: String | `false`): Self = StObject.set(x, "xframe", value.asInstanceOf[js.Any])
+      inline def setXframe(value: String | `false`): Self = StObject.set(x, "xframe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXframeUndefined: Self = StObject.set(x, "xframe", js.undefined)
+      inline def setXframeUndefined: Self = StObject.set(x, "xframe", js.undefined)
       
-      @scala.inline
-      def setXssProtection(value: xssProtectionOptions | Boolean): Self = StObject.set(x, "xssProtection", value.asInstanceOf[js.Any])
+      inline def setXssProtection(value: xssProtectionOptions | Boolean): Self = StObject.set(x, "xssProtection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXssProtectionUndefined: Self = StObject.set(x, "xssProtection", js.undefined)
+      inline def setXssProtectionUndefined: Self = StObject.set(x, "xssProtection", js.undefined)
     }
   }
   
@@ -153,47 +120,34 @@ object mod {
   }
   object cspOptions {
     
-    @scala.inline
-    def apply(): cspOptions = {
+    inline def apply(): cspOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[cspOptions]
     }
     
-    @scala.inline
-    implicit class cspOptionsMutableBuilder[Self <: cspOptions] (val x: Self) extends AnyVal {
+    extension [Self <: cspOptions](x: Self) {
       
-      @scala.inline
-      def setPolicy(value: String | js.Object | (js.Array[js.Object | String])): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String | js.Object | (js.Array[js.Object | String])): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setPolicyVarargs(value: (js.Object | String)*): Self = StObject.set(x, "policy", js.Array(value :_*))
+      inline def setPolicyVarargs(value: (js.Object | String)*): Self = StObject.set(x, "policy", js.Array(value :_*))
       
-      @scala.inline
-      def setReportOnly(value: Boolean): Self = StObject.set(x, "reportOnly", value.asInstanceOf[js.Any])
+      inline def setReportOnly(value: Boolean): Self = StObject.set(x, "reportOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportOnlyUndefined: Self = StObject.set(x, "reportOnly", js.undefined)
+      inline def setReportOnlyUndefined: Self = StObject.set(x, "reportOnly", js.undefined)
       
-      @scala.inline
-      def setReportUri(value: String): Self = StObject.set(x, "reportUri", value.asInstanceOf[js.Any])
+      inline def setReportUri(value: String): Self = StObject.set(x, "reportUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportUriUndefined: Self = StObject.set(x, "reportUri", js.undefined)
+      inline def setReportUriUndefined: Self = StObject.set(x, "reportUri", js.undefined)
       
-      @scala.inline
-      def setScriptNonce(value: Boolean): Self = StObject.set(x, "scriptNonce", value.asInstanceOf[js.Any])
+      inline def setScriptNonce(value: Boolean): Self = StObject.set(x, "scriptNonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptNonceUndefined: Self = StObject.set(x, "scriptNonce", js.undefined)
+      inline def setScriptNonceUndefined: Self = StObject.set(x, "scriptNonce", js.undefined)
       
-      @scala.inline
-      def setStyleNonce(value: Boolean): Self = StObject.set(x, "styleNonce", value.asInstanceOf[js.Any])
+      inline def setStyleNonce(value: Boolean): Self = StObject.set(x, "styleNonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNonceUndefined: Self = StObject.set(x, "styleNonce", js.undefined)
+      inline def setStyleNonceUndefined: Self = StObject.set(x, "styleNonce", js.undefined)
     }
   }
   
@@ -209,23 +163,18 @@ object mod {
   }
   object csrfOptionsAngular {
     
-    @scala.inline
-    def apply(): csrfOptionsAngular = {
+    inline def apply(): csrfOptionsAngular = {
       val __obj = js.Dynamic.literal(angular = true)
       __obj.asInstanceOf[csrfOptionsAngular]
     }
     
-    @scala.inline
-    implicit class csrfOptionsAngularMutableBuilder[Self <: csrfOptionsAngular] (val x: Self) extends AnyVal {
+    extension [Self <: csrfOptionsAngular](x: Self) {
       
-      @scala.inline
-      def setAngular(value: `true`): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
+      inline def setAngular(value: `true`): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookie(value: String | Options): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: String | Options): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
     }
   }
   
@@ -236,14 +185,12 @@ object mod {
   trait csrfOptionsAngularOrNonAngular extends StObject
   object csrfOptionsAngularOrNonAngular {
     
-    @scala.inline
-    def csrfOptionsAngular(): typings.lusca.mod.csrfOptionsAngular = {
+    inline def csrfOptionsAngular(): typings.lusca.mod.csrfOptionsAngular = {
       val __obj = js.Dynamic.literal(angular = true)
       __obj.asInstanceOf[typings.lusca.mod.csrfOptionsAngular]
     }
     
-    @scala.inline
-    def csrfOptionsNonAngular(): typings.lusca.mod.csrfOptionsNonAngular = {
+    inline def csrfOptionsNonAngular(): typings.lusca.mod.csrfOptionsNonAngular = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.lusca.mod.csrfOptionsNonAngular]
     }
@@ -275,38 +222,28 @@ object mod {
   }
   object csrfOptionsBase {
     
-    @scala.inline
-    def apply(): csrfOptionsBase = {
+    inline def apply(): csrfOptionsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[csrfOptionsBase]
     }
     
-    @scala.inline
-    implicit class csrfOptionsBaseMutableBuilder[Self <: csrfOptionsBase] (val x: Self) extends AnyVal {
+    extension [Self <: csrfOptionsBase](x: Self) {
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setImpl(value: () => js.Any): Self = StObject.set(x, "impl", js.Any.fromFunction0(value))
+      inline def setImpl(value: () => js.Any): Self = StObject.set(x, "impl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setImplUndefined: Self = StObject.set(x, "impl", js.undefined)
+      inline def setImplUndefined: Self = StObject.set(x, "impl", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+      inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     }
   }
   
@@ -320,23 +257,18 @@ object mod {
   }
   object csrfOptionsBlacklist {
     
-    @scala.inline
-    def apply(): csrfOptionsBlacklist = {
+    inline def apply(): csrfOptionsBlacklist = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[csrfOptionsBlacklist]
     }
     
-    @scala.inline
-    implicit class csrfOptionsBlacklistMutableBuilder[Self <: csrfOptionsBlacklist] (val x: Self) extends AnyVal {
+    extension [Self <: csrfOptionsBlacklist](x: Self) {
       
-      @scala.inline
-      def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+      inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+      inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
       
-      @scala.inline
-      def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
+      inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value :_*))
     }
   }
   
@@ -347,14 +279,12 @@ object mod {
   trait csrfOptionsBlacklistOrWhitelist extends StObject
   object csrfOptionsBlacklistOrWhitelist {
     
-    @scala.inline
-    def csrfOptionsBlacklist(): typings.lusca.mod.csrfOptionsBlacklist = {
+    inline def csrfOptionsBlacklist(): typings.lusca.mod.csrfOptionsBlacklist = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.lusca.mod.csrfOptionsBlacklist]
     }
     
-    @scala.inline
-    def csrfOptionsWhitelist(): typings.lusca.mod.csrfOptionsWhitelist = {
+    inline def csrfOptionsWhitelist(): typings.lusca.mod.csrfOptionsWhitelist = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.lusca.mod.csrfOptionsWhitelist]
     }
@@ -370,26 +300,20 @@ object mod {
   }
   object csrfOptionsNonAngular {
     
-    @scala.inline
-    def apply(): csrfOptionsNonAngular = {
+    inline def apply(): csrfOptionsNonAngular = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[csrfOptionsNonAngular]
     }
     
-    @scala.inline
-    implicit class csrfOptionsNonAngularMutableBuilder[Self <: csrfOptionsNonAngular] (val x: Self) extends AnyVal {
+    extension [Self <: csrfOptionsNonAngular](x: Self) {
       
-      @scala.inline
-      def setAngular(value: `false`): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
+      inline def setAngular(value: `false`): Self = StObject.set(x, "angular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAngularUndefined: Self = StObject.set(x, "angular", js.undefined)
+      inline def setAngularUndefined: Self = StObject.set(x, "angular", js.undefined)
       
-      @scala.inline
-      def setCookie(value: String | Name): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: String | Name): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
     }
   }
   
@@ -403,23 +327,18 @@ object mod {
   }
   object csrfOptionsWhitelist {
     
-    @scala.inline
-    def apply(): csrfOptionsWhitelist = {
+    inline def apply(): csrfOptionsWhitelist = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[csrfOptionsWhitelist]
     }
     
-    @scala.inline
-    implicit class csrfOptionsWhitelistMutableBuilder[Self <: csrfOptionsWhitelist] (val x: Self) extends AnyVal {
+    extension [Self <: csrfOptionsWhitelist](x: Self) {
       
-      @scala.inline
-      def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
     }
   }
   
@@ -433,32 +352,24 @@ object mod {
   }
   object hstsOptions {
     
-    @scala.inline
-    def apply(): hstsOptions = {
+    inline def apply(): hstsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[hstsOptions]
     }
     
-    @scala.inline
-    implicit class hstsOptionsMutableBuilder[Self <: hstsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: hstsOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
+      inline def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSubDomainsUndefined: Self = StObject.set(x, "includeSubDomains", js.undefined)
+      inline def setIncludeSubDomainsUndefined: Self = StObject.set(x, "includeSubDomains", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+      inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+      inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     }
   }
   
@@ -470,26 +381,20 @@ object mod {
   }
   object xssProtectionOptions {
     
-    @scala.inline
-    def apply(): xssProtectionOptions = {
+    inline def apply(): xssProtectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[xssProtectionOptions]
     }
     
-    @scala.inline
-    implicit class xssProtectionOptionsMutableBuilder[Self <: xssProtectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: xssProtectionOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
 }

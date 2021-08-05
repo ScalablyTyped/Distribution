@@ -13,16 +13,13 @@ trait VolumeDetail extends StObject {
 }
 object VolumeDetail {
   
-  @scala.inline
-  def apply(Size: Long): VolumeDetail = {
+  inline def apply(Size: Long): VolumeDetail = {
     val __obj = js.Dynamic.literal(Size = Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeDetail]
   }
   
-  @scala.inline
-  implicit class VolumeDetailMutableBuilder[Self <: VolumeDetail] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeDetail](x: Self) {
     
-    @scala.inline
-    def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Long): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

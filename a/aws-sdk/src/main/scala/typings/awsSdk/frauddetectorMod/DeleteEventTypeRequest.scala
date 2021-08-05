@@ -13,16 +13,13 @@ trait DeleteEventTypeRequest extends StObject {
 }
 object DeleteEventTypeRequest {
   
-  @scala.inline
-  def apply(name: identifier): DeleteEventTypeRequest = {
+  inline def apply(name: identifier): DeleteEventTypeRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventTypeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEventTypeRequestMutableBuilder[Self <: DeleteEventTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEventTypeRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

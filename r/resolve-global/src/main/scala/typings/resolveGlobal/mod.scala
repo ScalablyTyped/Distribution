@@ -18,8 +18,7 @@ object mod {
   	//=> '/usr/local/lib/node_modules/cat-names'
   	```
   	*/
-  @scala.inline
-  def apply(moduleId: String): String = ^.asInstanceOf[js.Dynamic].apply(moduleId.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(moduleId: String): String = ^.asInstanceOf[js.Dynamic].apply(moduleId.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("resolve-global", JSImport.Namespace)
   @js.native
@@ -30,6 +29,5 @@ object mod {
   	@param moduleId - What you would use in `require()`.
   	@returns The resolved path. Returns `undefined` instead of throwing if the module can't be found.
   	*/
-  @scala.inline
-  def silent(moduleId: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("silent")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def silent(moduleId: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("silent")(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

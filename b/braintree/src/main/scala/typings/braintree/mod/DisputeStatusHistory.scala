@@ -17,25 +17,19 @@ trait DisputeStatusHistory extends StObject {
 }
 object DisputeStatusHistory {
   
-  @scala.inline
-  def apply(disbursementDate: Date, effectiveDate: Date, status: DisputeStatus, timestamp: Date): DisputeStatusHistory = {
+  inline def apply(disbursementDate: Date, effectiveDate: Date, status: DisputeStatus, timestamp: Date): DisputeStatusHistory = {
     val __obj = js.Dynamic.literal(disbursementDate = disbursementDate.asInstanceOf[js.Any], effectiveDate = effectiveDate.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisputeStatusHistory]
   }
   
-  @scala.inline
-  implicit class DisputeStatusHistoryMutableBuilder[Self <: DisputeStatusHistory] (val x: Self) extends AnyVal {
+  extension [Self <: DisputeStatusHistory](x: Self) {
     
-    @scala.inline
-    def setDisbursementDate(value: Date): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
+    inline def setDisbursementDate(value: Date): Self = StObject.set(x, "disbursementDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveDate(value: Date): Self = StObject.set(x, "effectiveDate", value.asInstanceOf[js.Any])
+    inline def setEffectiveDate(value: Date): Self = StObject.set(x, "effectiveDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: DisputeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DisputeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

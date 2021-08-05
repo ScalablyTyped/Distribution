@@ -18,25 +18,19 @@ trait MaintenanceWindowIdentityForTarget extends StObject {
 }
 object MaintenanceWindowIdentityForTarget {
   
-  @scala.inline
-  def apply(): MaintenanceWindowIdentityForTarget = {
+  inline def apply(): MaintenanceWindowIdentityForTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindowIdentityForTarget]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowIdentityForTargetMutableBuilder[Self <: MaintenanceWindowIdentityForTarget] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowIdentityForTarget](x: Self) {
     
-    @scala.inline
-    def setName(value: MaintenanceWindowName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: MaintenanceWindowName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: MaintenanceWindowId): Self = StObject.set(x, "WindowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowIdUndefined: Self = StObject.set(x, "WindowId", js.undefined)
+    inline def setWindowIdUndefined: Self = StObject.set(x, "WindowId", js.undefined)
   }
 }

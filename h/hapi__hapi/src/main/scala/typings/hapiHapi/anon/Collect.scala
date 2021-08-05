@@ -10,16 +10,13 @@ trait Collect extends StObject {
 }
 object Collect {
   
-  @scala.inline
-  def apply(collect: Boolean): Collect = {
+  inline def apply(collect: Boolean): Collect = {
     val __obj = js.Dynamic.literal(collect = collect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collect]
   }
   
-  @scala.inline
-  implicit class CollectMutableBuilder[Self <: Collect] (val x: Self) extends AnyVal {
+  extension [Self <: Collect](x: Self) {
     
-    @scala.inline
-    def setCollect(value: Boolean): Self = StObject.set(x, "collect", value.asInstanceOf[js.Any])
+    inline def setCollect(value: Boolean): Self = StObject.set(x, "collect", value.asInstanceOf[js.Any])
   }
 }

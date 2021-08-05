@@ -12,15 +12,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseDir(dirpath: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDir")(dirpath.asInstanceOf[js.Any]).asInstanceOf[Graph]
-  @scala.inline
-  def parseDir(dirpath: String, options: Options): Graph = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDir")(dirpath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graph]
+  inline def parseDir(dirpath: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDir")(dirpath.asInstanceOf[js.Any]).asInstanceOf[Graph]
+  inline def parseDir(dirpath: String, options: Options): Graph = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDir")(dirpath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graph]
   
-  @scala.inline
-  def parseFile(filepath: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filepath.asInstanceOf[js.Any]).asInstanceOf[Graph]
-  @scala.inline
-  def parseFile(filepath: String, options: Options): Graph = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filepath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graph]
+  inline def parseFile(filepath: String): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filepath.asInstanceOf[js.Any]).asInstanceOf[Graph]
+  inline def parseFile(filepath: String, options: Options): Graph = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(filepath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Graph]
   
   @js.native
   trait Graph extends StObject {
@@ -86,32 +82,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setLoadPath(value: js.Array[String]): Self = StObject.set(x, "loadPath", value.asInstanceOf[js.Any])
+      inline def setLoadPath(value: js.Array[String]): Self = StObject.set(x, "loadPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadPathUndefined: Self = StObject.set(x, "loadPath", js.undefined)
+      inline def setLoadPathUndefined: Self = StObject.set(x, "loadPath", js.undefined)
       
-      @scala.inline
-      def setLoadPathVarargs(value: String*): Self = StObject.set(x, "loadPath", js.Array(value :_*))
+      inline def setLoadPathVarargs(value: String*): Self = StObject.set(x, "loadPath", js.Array(value :_*))
     }
   }
 }

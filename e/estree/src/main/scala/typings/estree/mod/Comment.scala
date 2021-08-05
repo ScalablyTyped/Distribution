@@ -17,20 +17,16 @@ trait Comment
 }
 object Comment {
   
-  @scala.inline
-  def apply(`type`: Line | Block, value: String): Comment = {
+  inline def apply(`type`: Line | Block, value: String): Comment = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setType(value: Line | Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Line | Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

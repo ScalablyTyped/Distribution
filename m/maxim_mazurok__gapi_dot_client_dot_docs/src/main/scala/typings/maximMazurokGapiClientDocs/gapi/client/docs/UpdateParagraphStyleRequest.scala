@@ -23,31 +23,23 @@ trait UpdateParagraphStyleRequest extends StObject {
 }
 object UpdateParagraphStyleRequest {
   
-  @scala.inline
-  def apply(): UpdateParagraphStyleRequest = {
+  inline def apply(): UpdateParagraphStyleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateParagraphStyleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateParagraphStyleRequestMutableBuilder[Self <: UpdateParagraphStyleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateParagraphStyleRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+    inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+    inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

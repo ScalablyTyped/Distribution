@@ -27,34 +27,25 @@ trait AuthCredentials
 }
 object AuthCredentials {
   
-  @scala.inline
-  def apply(): AuthCredentials = {
+  inline def apply(): AuthCredentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthCredentials]
   }
   
-  @scala.inline
-  implicit class AuthCredentialsMutableBuilder[Self <: AuthCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: AuthCredentials](x: Self) {
     
-    @scala.inline
-    def setApp(value: AppCredentials): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: AppCredentials): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
-    @scala.inline
-    def setUser(value: UserCredentials): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: UserCredentials): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

@@ -40,8 +40,7 @@ object typesRepositoryTriggerMod {
   }
   object RepositoryTrigger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destinationArn: String,
       events: (js.Array[all | updateReference | createReference | deleteReference | String]) | (Iterable[all | updateReference | createReference | deleteReference | String]),
       name: String
@@ -50,37 +49,27 @@ object typesRepositoryTriggerMod {
       __obj.asInstanceOf[RepositoryTrigger]
     }
     
-    @scala.inline
-    implicit class RepositoryTriggerMutableBuilder[Self <: RepositoryTrigger] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryTrigger](x: Self) {
       
-      @scala.inline
-      def setBranches(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
       
-      @scala.inline
-      def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
+      inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomData(value: String): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: String): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+      inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
-      @scala.inline
-      def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationArn(value: String): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(
+      inline def setEvents(
         value: (js.Array[all | updateReference | createReference | deleteReference | String]) | (Iterable[all | updateReference | createReference | deleteReference | String])
       ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: (all | updateReference | createReference | deleteReference | String)*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: (all | updateReference | createReference | deleteReference | String)*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,8 +91,7 @@ object typesRepositoryTriggerMod {
   }
   object UnmarshalledRepositoryTrigger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destinationArn: String,
       events: js.Array[all | updateReference | createReference | deleteReference | String],
       name: String
@@ -112,23 +100,17 @@ object typesRepositoryTriggerMod {
       __obj.asInstanceOf[UnmarshalledRepositoryTrigger]
     }
     
-    @scala.inline
-    implicit class UnmarshalledRepositoryTriggerMutableBuilder[Self <: UnmarshalledRepositoryTrigger] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledRepositoryTrigger](x: Self) {
       
-      @scala.inline
-      def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
+      inline def setBranchesUndefined: Self = StObject.set(x, "branches", js.undefined)
       
-      @scala.inline
-      def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
+      inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
       
-      @scala.inline
-      def setEvents(value: js.Array[all | updateReference | createReference | deleteReference | String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[all | updateReference | createReference | deleteReference | String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: (all | updateReference | createReference | deleteReference | String)*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: (all | updateReference | createReference | deleteReference | String)*): Self = StObject.set(x, "events", js.Array(value :_*))
     }
   }
 }

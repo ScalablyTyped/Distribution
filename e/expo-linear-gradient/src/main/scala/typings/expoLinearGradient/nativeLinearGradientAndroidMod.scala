@@ -12,6 +12,5 @@ object nativeLinearGradientAndroidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasColorsLocationsStartPointEndPointChildrenStyleProps: NativeLinearGradientProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColorsLocationsStartPointEndPointChildrenStyleProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default(hasColorsLocationsStartPointEndPointChildrenStyleProps: NativeLinearGradientProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasColorsLocationsStartPointEndPointChildrenStyleProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

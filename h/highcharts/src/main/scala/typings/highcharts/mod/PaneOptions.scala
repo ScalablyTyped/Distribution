@@ -47,55 +47,39 @@ trait PaneOptions extends StObject {
 }
 object PaneOptions {
   
-  @scala.inline
-  def apply(): PaneOptions = {
+  inline def apply(): PaneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaneOptions]
   }
   
-  @scala.inline
-  implicit class PaneOptionsMutableBuilder[Self <: PaneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PaneOptions](x: Self) {
     
-    @scala.inline
-    def setBackground(value: js.Array[PaneBackgroundOptions]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: js.Array[PaneBackgroundOptions]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBackgroundVarargs(value: PaneBackgroundOptions*): Self = StObject.set(x, "background", js.Array(value :_*))
+    inline def setBackgroundVarargs(value: PaneBackgroundOptions*): Self = StObject.set(x, "background", js.Array(value :_*))
     
-    @scala.inline
-    def setCenter(value: js.Array[String | Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: js.Array[String | Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setCenterVarargs(value: (String | Double)*): Self = StObject.set(x, "center", js.Array(value :_*))
+    inline def setCenterVarargs(value: (String | Double)*): Self = StObject.set(x, "center", js.Array(value :_*))
     
-    @scala.inline
-    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+    inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
-    @scala.inline
-    def setInnerSize(value: Double | String): Self = StObject.set(x, "innerSize", value.asInstanceOf[js.Any])
+    inline def setInnerSize(value: Double | String): Self = StObject.set(x, "innerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerSizeUndefined: Self = StObject.set(x, "innerSize", js.undefined)
+    inline def setInnerSizeUndefined: Self = StObject.set(x, "innerSize", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
   }
 }

@@ -61,81 +61,59 @@ trait GoogleCloudRecommenderV1Operation extends StObject {
 }
 object GoogleCloudRecommenderV1Operation {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommenderV1Operation = {
+  inline def apply(): GoogleCloudRecommenderV1Operation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommenderV1Operation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommenderV1OperationMutableBuilder[Self <: GoogleCloudRecommenderV1Operation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommenderV1Operation](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathFilters(
+    inline def setPathFilters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
     ): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
+    inline def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPathValueMatchers(
+    inline def setPathValueMatchers(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.recommender.gapi.client.recommender.GoogleCloudRecommenderV1ValueMatcher}
       */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1Operation & TopLevel[js.Any]
     ): Self = StObject.set(x, "pathValueMatchers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathValueMatchersUndefined: Self = StObject.set(x, "pathValueMatchers", js.undefined)
+    inline def setPathValueMatchersUndefined: Self = StObject.set(x, "pathValueMatchers", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
+    inline def setSourcePath(value: String): Self = StObject.set(x, "sourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePathUndefined: Self = StObject.set(x, "sourcePath", js.undefined)
+    inline def setSourcePathUndefined: Self = StObject.set(x, "sourcePath", js.undefined)
     
-    @scala.inline
-    def setSourceResource(value: String): Self = StObject.set(x, "sourceResource", value.asInstanceOf[js.Any])
+    inline def setSourceResource(value: String): Self = StObject.set(x, "sourceResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceResourceUndefined: Self = StObject.set(x, "sourceResource", js.undefined)
+    inline def setSourceResourceUndefined: Self = StObject.set(x, "sourceResource", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueMatcher(value: GoogleCloudRecommenderV1ValueMatcher): Self = StObject.set(x, "valueMatcher", value.asInstanceOf[js.Any])
+    inline def setValueMatcher(value: GoogleCloudRecommenderV1ValueMatcher): Self = StObject.set(x, "valueMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueMatcherUndefined: Self = StObject.set(x, "valueMatcher", js.undefined)
+    inline def setValueMatcherUndefined: Self = StObject.set(x, "valueMatcher", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

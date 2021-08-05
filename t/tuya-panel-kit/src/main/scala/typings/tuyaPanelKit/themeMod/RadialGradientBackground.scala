@@ -24,58 +24,41 @@ trait RadialGradientBackground
 }
 object RadialGradientBackground {
   
-  @scala.inline
-  def apply(): RadialGradientBackground = {
+  inline def apply(): RadialGradientBackground = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RadialGradientBackground]
   }
   
-  @scala.inline
-  implicit class RadialGradientBackgroundMutableBuilder[Self <: RadialGradientBackground] (val x: Self) extends AnyVal {
+  extension [Self <: RadialGradientBackground](x: Self) {
     
-    @scala.inline
-    def setCx(value: String): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: String): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
-    @scala.inline
-    def setCy(value: String): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: String): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    @scala.inline
-    def setFx(value: String): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
+    inline def setFx(value: String): Self = StObject.set(x, "fx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
+    inline def setFxUndefined: Self = StObject.set(x, "fx", js.undefined)
     
-    @scala.inline
-    def setFy(value: String): Self = StObject.set(x, "fy", value.asInstanceOf[js.Any])
+    inline def setFy(value: String): Self = StObject.set(x, "fy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFyUndefined: Self = StObject.set(x, "fy", js.undefined)
+    inline def setFyUndefined: Self = StObject.set(x, "fy", js.undefined)
     
-    @scala.inline
-    def setRx(value: String): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+    inline def setRx(value: String): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+    inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
     
-    @scala.inline
-    def setRy(value: String): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    inline def setRy(value: String): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
     
-    @scala.inline
-    def setStops(value: js.Array[StopsProps]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[StopsProps]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: StopsProps*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: StopsProps*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

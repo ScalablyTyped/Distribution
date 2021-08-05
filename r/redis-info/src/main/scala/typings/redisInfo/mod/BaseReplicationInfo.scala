@@ -26,8 +26,7 @@ trait BaseReplicationInfo extends StObject {
 }
 object BaseReplicationInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connected_slaves: String,
     master_repl_offset: String,
     master_replid: String,
@@ -42,34 +41,24 @@ object BaseReplicationInfo {
     __obj.asInstanceOf[BaseReplicationInfo]
   }
   
-  @scala.inline
-  implicit class BaseReplicationInfoMutableBuilder[Self <: BaseReplicationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BaseReplicationInfo](x: Self) {
     
-    @scala.inline
-    def setConnected_slaves(value: String): Self = StObject.set(x, "connected_slaves", value.asInstanceOf[js.Any])
+    inline def setConnected_slaves(value: String): Self = StObject.set(x, "connected_slaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_repl_offset(value: String): Self = StObject.set(x, "master_repl_offset", value.asInstanceOf[js.Any])
+    inline def setMaster_repl_offset(value: String): Self = StObject.set(x, "master_repl_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_replid(value: String): Self = StObject.set(x, "master_replid", value.asInstanceOf[js.Any])
+    inline def setMaster_replid(value: String): Self = StObject.set(x, "master_replid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_replid2(value: String): Self = StObject.set(x, "master_replid2", value.asInstanceOf[js.Any])
+    inline def setMaster_replid2(value: String): Self = StObject.set(x, "master_replid2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepl_backlog_active(value: Flag): Self = StObject.set(x, "repl_backlog_active", value.asInstanceOf[js.Any])
+    inline def setRepl_backlog_active(value: Flag): Self = StObject.set(x, "repl_backlog_active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepl_backlog_first_byte_offset(value: String): Self = StObject.set(x, "repl_backlog_first_byte_offset", value.asInstanceOf[js.Any])
+    inline def setRepl_backlog_first_byte_offset(value: String): Self = StObject.set(x, "repl_backlog_first_byte_offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepl_backlog_histlen(value: String): Self = StObject.set(x, "repl_backlog_histlen", value.asInstanceOf[js.Any])
+    inline def setRepl_backlog_histlen(value: String): Self = StObject.set(x, "repl_backlog_histlen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepl_backlog_size(value: String): Self = StObject.set(x, "repl_backlog_size", value.asInstanceOf[js.Any])
+    inline def setRepl_backlog_size(value: String): Self = StObject.set(x, "repl_backlog_size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond_repl_offset(value: String): Self = StObject.set(x, "second_repl_offset", value.asInstanceOf[js.Any])
+    inline def setSecond_repl_offset(value: String): Self = StObject.set(x, "second_repl_offset", value.asInstanceOf[js.Any])
   }
 }

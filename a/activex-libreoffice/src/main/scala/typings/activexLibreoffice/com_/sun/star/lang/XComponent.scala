@@ -66,8 +66,7 @@ trait XComponent
 }
 object XComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
@@ -79,16 +78,12 @@ object XComponent {
     __obj.asInstanceOf[XComponent]
   }
   
-  @scala.inline
-  implicit class XComponentMutableBuilder[Self <: XComponent] (val x: Self) extends AnyVal {
+  extension [Self <: XComponent](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: XEventListener => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction1(value))
+    inline def setAddEventListener(value: XEventListener => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveEventListener(value: XEventListener => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveEventListener(value: XEventListener => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction1(value))
   }
 }

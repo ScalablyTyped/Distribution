@@ -37,85 +37,59 @@ trait DeviceManagementExchangeConnector
 }
 object DeviceManagementExchangeConnector {
   
-  @scala.inline
-  def apply(): DeviceManagementExchangeConnector = {
+  inline def apply(): DeviceManagementExchangeConnector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceManagementExchangeConnector]
   }
   
-  @scala.inline
-  implicit class DeviceManagementExchangeConnectorMutableBuilder[Self <: DeviceManagementExchangeConnector] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceManagementExchangeConnector](x: Self) {
     
-    @scala.inline
-    def setConnectorServerName(value: NullableOption[String]): Self = StObject.set(x, "connectorServerName", value.asInstanceOf[js.Any])
+    inline def setConnectorServerName(value: NullableOption[String]): Self = StObject.set(x, "connectorServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorServerNameNull: Self = StObject.set(x, "connectorServerName", null)
+    inline def setConnectorServerNameNull: Self = StObject.set(x, "connectorServerName", null)
     
-    @scala.inline
-    def setConnectorServerNameUndefined: Self = StObject.set(x, "connectorServerName", js.undefined)
+    inline def setConnectorServerNameUndefined: Self = StObject.set(x, "connectorServerName", js.undefined)
     
-    @scala.inline
-    def setExchangeAlias(value: NullableOption[String]): Self = StObject.set(x, "exchangeAlias", value.asInstanceOf[js.Any])
+    inline def setExchangeAlias(value: NullableOption[String]): Self = StObject.set(x, "exchangeAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeAliasNull: Self = StObject.set(x, "exchangeAlias", null)
+    inline def setExchangeAliasNull: Self = StObject.set(x, "exchangeAlias", null)
     
-    @scala.inline
-    def setExchangeAliasUndefined: Self = StObject.set(x, "exchangeAlias", js.undefined)
+    inline def setExchangeAliasUndefined: Self = StObject.set(x, "exchangeAlias", js.undefined)
     
-    @scala.inline
-    def setExchangeConnectorType(value: DeviceManagementExchangeConnectorType): Self = StObject.set(x, "exchangeConnectorType", value.asInstanceOf[js.Any])
+    inline def setExchangeConnectorType(value: DeviceManagementExchangeConnectorType): Self = StObject.set(x, "exchangeConnectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeConnectorTypeUndefined: Self = StObject.set(x, "exchangeConnectorType", js.undefined)
+    inline def setExchangeConnectorTypeUndefined: Self = StObject.set(x, "exchangeConnectorType", js.undefined)
     
-    @scala.inline
-    def setExchangeOrganization(value: NullableOption[String]): Self = StObject.set(x, "exchangeOrganization", value.asInstanceOf[js.Any])
+    inline def setExchangeOrganization(value: NullableOption[String]): Self = StObject.set(x, "exchangeOrganization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExchangeOrganizationNull: Self = StObject.set(x, "exchangeOrganization", null)
+    inline def setExchangeOrganizationNull: Self = StObject.set(x, "exchangeOrganization", null)
     
-    @scala.inline
-    def setExchangeOrganizationUndefined: Self = StObject.set(x, "exchangeOrganization", js.undefined)
+    inline def setExchangeOrganizationUndefined: Self = StObject.set(x, "exchangeOrganization", js.undefined)
     
-    @scala.inline
-    def setLastSyncDateTime(value: String): Self = StObject.set(x, "lastSyncDateTime", value.asInstanceOf[js.Any])
+    inline def setLastSyncDateTime(value: String): Self = StObject.set(x, "lastSyncDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSyncDateTimeUndefined: Self = StObject.set(x, "lastSyncDateTime", js.undefined)
+    inline def setLastSyncDateTimeUndefined: Self = StObject.set(x, "lastSyncDateTime", js.undefined)
     
-    @scala.inline
-    def setPrimarySmtpAddress(value: NullableOption[String]): Self = StObject.set(x, "primarySmtpAddress", value.asInstanceOf[js.Any])
+    inline def setPrimarySmtpAddress(value: NullableOption[String]): Self = StObject.set(x, "primarySmtpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimarySmtpAddressNull: Self = StObject.set(x, "primarySmtpAddress", null)
+    inline def setPrimarySmtpAddressNull: Self = StObject.set(x, "primarySmtpAddress", null)
     
-    @scala.inline
-    def setPrimarySmtpAddressUndefined: Self = StObject.set(x, "primarySmtpAddress", js.undefined)
+    inline def setPrimarySmtpAddressUndefined: Self = StObject.set(x, "primarySmtpAddress", js.undefined)
     
-    @scala.inline
-    def setServerName(value: NullableOption[String]): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: NullableOption[String]): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameNull: Self = StObject.set(x, "serverName", null)
+    inline def setServerNameNull: Self = StObject.set(x, "serverName", null)
     
-    @scala.inline
-    def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
+    inline def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DeviceManagementExchangeConnectorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DeviceManagementExchangeConnectorStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNull: Self = StObject.set(x, "version", null)
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -24,31 +24,23 @@ trait RequestPattern extends StObject {
 }
 object RequestPattern {
   
-  @scala.inline
-  def apply(): RequestPattern = {
+  inline def apply(): RequestPattern = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestPattern]
   }
   
-  @scala.inline
-  implicit class RequestPatternMutableBuilder[Self <: RequestPattern] (val x: Self) extends AnyVal {
+  extension [Self <: RequestPattern](x: Self) {
     
-    @scala.inline
-    def setInterceptionStage(value: InterceptionStage): Self = StObject.set(x, "interceptionStage", value.asInstanceOf[js.Any])
+    inline def setInterceptionStage(value: InterceptionStage): Self = StObject.set(x, "interceptionStage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptionStageUndefined: Self = StObject.set(x, "interceptionStage", js.undefined)
+    inline def setInterceptionStageUndefined: Self = StObject.set(x, "interceptionStage", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setUrlPattern(value: String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
+    inline def setUrlPattern(value: String): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlPatternUndefined: Self = StObject.set(x, "urlPattern", js.undefined)
+    inline def setUrlPatternUndefined: Self = StObject.set(x, "urlPattern", js.undefined)
   }
 }

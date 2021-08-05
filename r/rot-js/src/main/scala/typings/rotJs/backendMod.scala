@@ -65,8 +65,7 @@ object backendMod {
   }
   object Backend {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _options: DisplayOptions,
       clear: () => Unit,
       computeFontSize: (Double, Double) => Double,
@@ -81,35 +80,25 @@ object backendMod {
       __obj.asInstanceOf[Backend]
     }
     
-    @scala.inline
-    implicit class BackendMutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
+    extension [Self <: Backend](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComputeFontSize(value: (Double, Double) => Double): Self = StObject.set(x, "computeFontSize", js.Any.fromFunction2(value))
+      inline def setComputeFontSize(value: (Double, Double) => Double): Self = StObject.set(x, "computeFontSize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComputeSize(value: (Double, Double) => js.Tuple2[Double, Double]): Self = StObject.set(x, "computeSize", js.Any.fromFunction2(value))
+      inline def setComputeSize(value: (Double, Double) => js.Tuple2[Double, Double]): Self = StObject.set(x, "computeSize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDraw(value: (DisplayData, Boolean) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
+      inline def setDraw(value: (DisplayData, Boolean) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEventToPosition(value: (Double, Double) => js.Tuple2[Double, Double]): Self = StObject.set(x, "eventToPosition", js.Any.fromFunction2(value))
+      inline def setEventToPosition(value: (Double, Double) => js.Tuple2[Double, Double]): Self = StObject.set(x, "eventToPosition", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetContainer(value: () => HTMLElement | Null): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainer(value: () => HTMLElement | Null): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSchedule(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
+      inline def setSchedule(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "schedule", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetOptions(value: DisplayOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+      inline def setSetOptions(value: DisplayOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_options(value: DisplayOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: DisplayOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     }
   }
 }

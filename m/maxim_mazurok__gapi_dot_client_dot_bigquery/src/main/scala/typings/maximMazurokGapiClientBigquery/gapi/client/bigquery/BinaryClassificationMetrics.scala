@@ -20,40 +20,29 @@ trait BinaryClassificationMetrics extends StObject {
 }
 object BinaryClassificationMetrics {
   
-  @scala.inline
-  def apply(): BinaryClassificationMetrics = {
+  inline def apply(): BinaryClassificationMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BinaryClassificationMetrics]
   }
   
-  @scala.inline
-  implicit class BinaryClassificationMetricsMutableBuilder[Self <: BinaryClassificationMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryClassificationMetrics](x: Self) {
     
-    @scala.inline
-    def setAggregateClassificationMetrics(value: AggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
+    inline def setAggregateClassificationMetrics(value: AggregateClassificationMetrics): Self = StObject.set(x, "aggregateClassificationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
+    inline def setAggregateClassificationMetricsUndefined: Self = StObject.set(x, "aggregateClassificationMetrics", js.undefined)
     
-    @scala.inline
-    def setBinaryConfusionMatrixList(value: js.Array[BinaryConfusionMatrix]): Self = StObject.set(x, "binaryConfusionMatrixList", value.asInstanceOf[js.Any])
+    inline def setBinaryConfusionMatrixList(value: js.Array[BinaryConfusionMatrix]): Self = StObject.set(x, "binaryConfusionMatrixList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryConfusionMatrixListUndefined: Self = StObject.set(x, "binaryConfusionMatrixList", js.undefined)
+    inline def setBinaryConfusionMatrixListUndefined: Self = StObject.set(x, "binaryConfusionMatrixList", js.undefined)
     
-    @scala.inline
-    def setBinaryConfusionMatrixListVarargs(value: BinaryConfusionMatrix*): Self = StObject.set(x, "binaryConfusionMatrixList", js.Array(value :_*))
+    inline def setBinaryConfusionMatrixListVarargs(value: BinaryConfusionMatrix*): Self = StObject.set(x, "binaryConfusionMatrixList", js.Array(value :_*))
     
-    @scala.inline
-    def setNegativeLabel(value: String): Self = StObject.set(x, "negativeLabel", value.asInstanceOf[js.Any])
+    inline def setNegativeLabel(value: String): Self = StObject.set(x, "negativeLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeLabelUndefined: Self = StObject.set(x, "negativeLabel", js.undefined)
+    inline def setNegativeLabelUndefined: Self = StObject.set(x, "negativeLabel", js.undefined)
     
-    @scala.inline
-    def setPositiveLabel(value: String): Self = StObject.set(x, "positiveLabel", value.asInstanceOf[js.Any])
+    inline def setPositiveLabel(value: String): Self = StObject.set(x, "positiveLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveLabelUndefined: Self = StObject.set(x, "positiveLabel", js.undefined)
+    inline def setPositiveLabelUndefined: Self = StObject.set(x, "positiveLabel", js.undefined)
   }
 }

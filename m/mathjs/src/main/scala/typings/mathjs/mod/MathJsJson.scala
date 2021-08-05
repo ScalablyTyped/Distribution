@@ -13,16 +13,13 @@ trait MathJsJson extends StObject {
 }
 object MathJsJson {
   
-  @scala.inline
-  def apply(reviver: () => js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]): MathJsJson = {
+  inline def apply(reviver: () => js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]): MathJsJson = {
     val __obj = js.Dynamic.literal(reviver = js.Any.fromFunction0(reviver))
     __obj.asInstanceOf[MathJsJson]
   }
   
-  @scala.inline
-  implicit class MathJsJsonMutableBuilder[Self <: MathJsJson] (val x: Self) extends AnyVal {
+  extension [Self <: MathJsJson](x: Self) {
     
-    @scala.inline
-    def setReviver(value: () => js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]): Self = StObject.set(x, "reviver", js.Any.fromFunction0(value))
+    inline def setReviver(value: () => js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]): Self = StObject.set(x, "reviver", js.Any.fromFunction0(value))
   }
 }

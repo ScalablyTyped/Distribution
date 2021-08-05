@@ -70,61 +70,43 @@ trait SeriesConnectorsOptionsObject extends StObject {
 }
 object SeriesConnectorsOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesConnectorsOptionsObject = {
+  inline def apply(): SeriesConnectorsOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesConnectorsOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesConnectorsOptionsObjectMutableBuilder[Self <: SeriesConnectorsOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesConnectorsOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: ConnectorsAnimationOptionsObject): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: ConnectorsAnimationOptionsObject): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    @scala.inline
-    def setEndMarker(value: ConnectorsEndMarkerOptions): Self = StObject.set(x, "endMarker", value.asInstanceOf[js.Any])
+    inline def setEndMarker(value: ConnectorsEndMarkerOptions): Self = StObject.set(x, "endMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndMarkerUndefined: Self = StObject.set(x, "endMarker", js.undefined)
+    inline def setEndMarkerUndefined: Self = StObject.set(x, "endMarker", js.undefined)
     
-    @scala.inline
-    def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
-    @scala.inline
-    def setMarker(value: ConnectorsMarkerOptions): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: ConnectorsMarkerOptions): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setStartMarker(value: ConnectorsStartMarkerOptions): Self = StObject.set(x, "startMarker", value.asInstanceOf[js.Any])
+    inline def setStartMarker(value: ConnectorsStartMarkerOptions): Self = StObject.set(x, "startMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartMarkerUndefined: Self = StObject.set(x, "startMarker", js.undefined)
+    inline def setStartMarkerUndefined: Self = StObject.set(x, "startMarker", js.undefined)
     
-    @scala.inline
-    def setType(value: String | PathfinderTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String | PathfinderTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

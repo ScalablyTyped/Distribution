@@ -16,23 +16,18 @@ object anon {
   }
   object Architecture {
     
-    @scala.inline
-    def apply(architecture: String, name: String, version: String): Architecture = {
+    inline def apply(architecture: String, name: String, version: String): Architecture = {
       val __obj = js.Dynamic.literal(architecture = architecture.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Architecture]
     }
     
-    @scala.inline
-    implicit class ArchitectureMutableBuilder[Self <: Architecture] (val x: Self) extends AnyVal {
+    extension [Self <: Architecture](x: Self) {
       
-      @scala.inline
-      def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+      inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,23 +39,18 @@ object anon {
   }
   object Charset {
     
-    @scala.inline
-    def apply(mode: String): Charset = {
+    inline def apply(mode: String): Charset = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Charset]
     }
     
-    @scala.inline
-    implicit class CharsetMutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
+    extension [Self <: Charset](x: Self) {
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,23 +64,18 @@ object anon {
   }
   object Major {
     
-    @scala.inline
-    def apply(major: Double, minor: Double, patch: Double): Major = {
+    inline def apply(major: Double, minor: Double, patch: Double): Major = {
       val __obj = js.Dynamic.literal(major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
       __obj.asInstanceOf[Major]
     }
     
-    @scala.inline
-    implicit class MajorMutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
+    extension [Self <: Major](x: Self) {
       
-      @scala.inline
-      def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: Double): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: Double): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait DeleteWebACLResponse extends StObject {
 }
 object DeleteWebACLResponse {
   
-  @scala.inline
-  def apply(): DeleteWebACLResponse = {
+  inline def apply(): DeleteWebACLResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteWebACLResponse]
   }
   
-  @scala.inline
-  implicit class DeleteWebACLResponseMutableBuilder[Self <: DeleteWebACLResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWebACLResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

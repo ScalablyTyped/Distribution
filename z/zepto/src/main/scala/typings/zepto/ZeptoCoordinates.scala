@@ -14,19 +14,15 @@ trait ZeptoCoordinates
 }
 object ZeptoCoordinates {
   
-  @scala.inline
-  def apply(height: Double, left: Double, top: Double, width: Double): ZeptoCoordinates = {
+  inline def apply(height: Double, left: Double, top: Double, width: Double): ZeptoCoordinates = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeptoCoordinates]
   }
   
-  @scala.inline
-  implicit class ZeptoCoordinatesMutableBuilder[Self <: ZeptoCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: ZeptoCoordinates](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

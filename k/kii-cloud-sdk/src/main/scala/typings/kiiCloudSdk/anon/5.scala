@@ -14,19 +14,15 @@ trait `5`[T] extends StObject {
 }
 object `5` {
   
-  @scala.inline
-  def apply[T](failure: (KiiBucket, String) => js.Any, success: (KiiQuery, js.Array[T], KiiQuery) => js.Any): `5`[T] = {
+  inline def apply[T](failure: (KiiBucket, String) => js.Any, success: (KiiQuery, js.Array[T], KiiQuery) => js.Any): `5`[T] = {
     val __obj = js.Dynamic.literal(failure = js.Any.fromFunction2(failure), success = js.Any.fromFunction3(success))
     __obj.asInstanceOf[`5`[T]]
   }
   
-  @scala.inline
-  implicit class `5MutableBuilder`[Self <: `5`[?], T] (val x: Self & `5`[T]) extends AnyVal {
+  extension [Self <: `5`[?], T](x: Self & `5`[T]) {
     
-    @scala.inline
-    def setFailure(value: (KiiBucket, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
+    inline def setFailure(value: (KiiBucket, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSuccess(value: (KiiQuery, js.Array[T], KiiQuery) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+    inline def setSuccess(value: (KiiQuery, js.Array[T], KiiQuery) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
   }
 }

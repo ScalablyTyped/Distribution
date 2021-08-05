@@ -18,19 +18,15 @@ trait DeleteGeoMatchSetRequest extends StObject {
 }
 object DeleteGeoMatchSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, GeoMatchSetId: ResourceId): DeleteGeoMatchSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, GeoMatchSetId: ResourceId): DeleteGeoMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], GeoMatchSetId = GeoMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGeoMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteGeoMatchSetRequestMutableBuilder[Self <: DeleteGeoMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGeoMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
+    inline def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
   }
 }

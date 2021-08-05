@@ -16,25 +16,19 @@ trait OnRef[T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInje
 }
 object OnRef {
   
-  @scala.inline
-  def apply[T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInjectedProps[NavigationParams] */](): OnRef[T, P] = {
+  inline def apply[T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInjectedProps[NavigationParams] */](): OnRef[T, P] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnRef[T, P]]
   }
   
-  @scala.inline
-  implicit class OnRefMutableBuilder[Self <: OnRef[?, ?], T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInjectedProps[NavigationParams] */] (val x: Self & (OnRef[T, P])) extends AnyVal {
+  extension [Self <: OnRef[?, ?], T /* <: ComponentClass[P, ComponentState] */, P /* <: NavigationInjectedProps[NavigationParams] */](x: Self & (OnRef[T, P])) {
     
-    @scala.inline
-    def setOnRef(value: Ref[InstanceType[T]]): Self = StObject.set(x, "onRef", value.asInstanceOf[js.Any])
+    inline def setOnRef(value: Ref[InstanceType[T]]): Self = StObject.set(x, "onRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRefFunction1(value: /* instance */ InstanceType[T] | Null => Unit): Self = StObject.set(x, "onRef", js.Any.fromFunction1(value))
+    inline def setOnRefFunction1(value: /* instance */ InstanceType[T] | Null => Unit): Self = StObject.set(x, "onRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRefNull: Self = StObject.set(x, "onRef", null)
+    inline def setOnRefNull: Self = StObject.set(x, "onRef", null)
     
-    @scala.inline
-    def setOnRefUndefined: Self = StObject.set(x, "onRef", js.undefined)
+    inline def setOnRefUndefined: Self = StObject.set(x, "onRef", js.undefined)
   }
 }

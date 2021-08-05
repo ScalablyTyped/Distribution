@@ -14,8 +14,7 @@ object mod {
     * @param {Object} sourcemap source map for the generated file
     * @return {StackMapper} stack mapper for the particular source map
     */
-  @scala.inline
-  def apply(sourcemap: js.Any): StackMapper = ^.asInstanceOf[js.Dynamic].apply(sourcemap.asInstanceOf[js.Any]).asInstanceOf[StackMapper]
+  inline def apply(sourcemap: js.Any): StackMapper = ^.asInstanceOf[js.Dynamic].apply(sourcemap.asInstanceOf[js.Any]).asInstanceOf[StackMapper]
   
   @JSImport("stack-mapper", JSImport.Namespace)
   @js.native
@@ -50,23 +49,18 @@ object mod {
   }
   object Callsite {
     
-    @scala.inline
-    def apply(column: Double, filename: String, line: Double): Callsite = {
+    inline def apply(column: Double, filename: String, line: Double): Callsite = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callsite]
     }
     
-    @scala.inline
-    implicit class CallsiteMutableBuilder[Self <: Callsite] (val x: Self) extends AnyVal {
+    extension [Self <: Callsite](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
 }

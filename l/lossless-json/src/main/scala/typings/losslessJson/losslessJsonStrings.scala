@@ -8,6 +8,5 @@ object losslessJsonStrings {
   
   @js.native
   sealed trait LosslessNumber extends StObject
-  @scala.inline
-  def LosslessNumber: LosslessNumber = "LosslessNumber".asInstanceOf[LosslessNumber]
+  inline def LosslessNumber: LosslessNumber = "LosslessNumber".asInstanceOf[LosslessNumber]
 }

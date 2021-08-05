@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsApproximationValue extends StObject
 object OptionsApproximationValue {
   
-  @scala.inline
-  def `barnes-hut`: typings.highcharts.highchartsStrings.`barnes-hut` = "barnes-hut".asInstanceOf[typings.highcharts.highchartsStrings.`barnes-hut`]
+  inline def `barnes-hut`: typings.highcharts.highchartsStrings.`barnes-hut` = "barnes-hut".asInstanceOf[typings.highcharts.highchartsStrings.`barnes-hut`]
   
-  @scala.inline
-  def none: typings.highcharts.highchartsStrings.none = "none".asInstanceOf[typings.highcharts.highchartsStrings.none]
+  inline def none: typings.highcharts.highchartsStrings.none = "none".asInstanceOf[typings.highcharts.highchartsStrings.none]
 }

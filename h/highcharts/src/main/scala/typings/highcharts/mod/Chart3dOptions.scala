@@ -54,64 +54,45 @@ trait Chart3dOptions extends StObject {
 }
 object Chart3dOptions {
   
-  @scala.inline
-  def apply(): Chart3dOptions = {
+  inline def apply(): Chart3dOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Chart3dOptions]
   }
   
-  @scala.inline
-  implicit class Chart3dOptionsMutableBuilder[Self <: Chart3dOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Chart3dOptions](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setAxisLabelPosition(value: auto): Self = StObject.set(x, "axisLabelPosition", value.asInstanceOf[js.Any])
+    inline def setAxisLabelPosition(value: auto): Self = StObject.set(x, "axisLabelPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisLabelPositionNull: Self = StObject.set(x, "axisLabelPosition", null)
+    inline def setAxisLabelPositionNull: Self = StObject.set(x, "axisLabelPosition", null)
     
-    @scala.inline
-    def setAxisLabelPositionUndefined: Self = StObject.set(x, "axisLabelPosition", js.undefined)
+    inline def setAxisLabelPositionUndefined: Self = StObject.set(x, "axisLabelPosition", js.undefined)
     
-    @scala.inline
-    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+    inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
+    inline def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFitToPlot(value: Boolean): Self = StObject.set(x, "fitToPlot", value.asInstanceOf[js.Any])
+    inline def setFitToPlot(value: Boolean): Self = StObject.set(x, "fitToPlot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFitToPlotUndefined: Self = StObject.set(x, "fitToPlot", js.undefined)
+    inline def setFitToPlotUndefined: Self = StObject.set(x, "fitToPlot", js.undefined)
     
-    @scala.inline
-    def setFrame(value: Chart3dFrameOptions): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: Chart3dFrameOptions): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
+    inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     
-    @scala.inline
-    def setViewDistance(value: Double): Self = StObject.set(x, "viewDistance", value.asInstanceOf[js.Any])
+    inline def setViewDistance(value: Double): Self = StObject.set(x, "viewDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewDistanceUndefined: Self = StObject.set(x, "viewDistance", js.undefined)
+    inline def setViewDistanceUndefined: Self = StObject.set(x, "viewDistance", js.undefined)
   }
 }

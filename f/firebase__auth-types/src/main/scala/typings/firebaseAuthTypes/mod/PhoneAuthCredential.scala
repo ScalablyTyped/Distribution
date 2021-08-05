@@ -6,4 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@firebase/auth-types", "PhoneAuthCredential")
 @js.native
-class PhoneAuthCredential protected () extends AuthCredential
+/* private */ class PhoneAuthCredential () extends AuthCredential

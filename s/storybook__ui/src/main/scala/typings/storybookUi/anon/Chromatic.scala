@@ -10,16 +10,13 @@ trait Chromatic extends StObject {
 }
 object Chromatic {
   
-  @scala.inline
-  def apply(chromatic: Disable): Chromatic = {
+  inline def apply(chromatic: Disable): Chromatic = {
     val __obj = js.Dynamic.literal(chromatic = chromatic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chromatic]
   }
   
-  @scala.inline
-  implicit class ChromaticMutableBuilder[Self <: Chromatic] (val x: Self) extends AnyVal {
+  extension [Self <: Chromatic](x: Self) {
     
-    @scala.inline
-    def setChromatic(value: Disable): Self = StObject.set(x, "chromatic", value.asInstanceOf[js.Any])
+    inline def setChromatic(value: Disable): Self = StObject.set(x, "chromatic", value.asInstanceOf[js.Any])
   }
 }

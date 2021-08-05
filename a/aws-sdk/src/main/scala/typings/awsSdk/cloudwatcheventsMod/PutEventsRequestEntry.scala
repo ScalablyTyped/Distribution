@@ -38,52 +38,37 @@ trait PutEventsRequestEntry extends StObject {
 }
 object PutEventsRequestEntry {
   
-  @scala.inline
-  def apply(): PutEventsRequestEntry = {
+  inline def apply(): PutEventsRequestEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutEventsRequestEntry]
   }
   
-  @scala.inline
-  implicit class PutEventsRequestEntryMutableBuilder[Self <: PutEventsRequestEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PutEventsRequestEntry](x: Self) {
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailType(value: String): Self = StObject.set(x, "DetailType", value.asInstanceOf[js.Any])
+    inline def setDetailType(value: String): Self = StObject.set(x, "DetailType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailTypeUndefined: Self = StObject.set(x, "DetailType", js.undefined)
+    inline def setDetailTypeUndefined: Self = StObject.set(x, "DetailType", js.undefined)
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "Detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "Detail", js.undefined)
     
-    @scala.inline
-    def setEventBusName(value: NonPartnerEventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
+    inline def setEventBusName(value: NonPartnerEventBusNameOrArn): Self = StObject.set(x, "EventBusName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
+    inline def setEventBusNameUndefined: Self = StObject.set(x, "EventBusName", js.undefined)
     
-    @scala.inline
-    def setResources(value: EventResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: EventResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: EventResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: EventResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    @scala.inline
-    def setTime(value: EventTime): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: EventTime): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "Time", js.undefined)
   }
 }

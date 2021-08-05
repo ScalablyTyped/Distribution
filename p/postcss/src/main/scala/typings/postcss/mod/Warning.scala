@@ -37,28 +37,21 @@ trait Warning extends StObject {
 }
 object Warning {
   
-  @scala.inline
-  def apply(column: Double, line: Double, node: Node, plugin: String, text: String): Warning = {
+  inline def apply(column: Double, line: Double, node: Node, plugin: String, text: String): Warning = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Warning]
   }
   
-  @scala.inline
-  implicit class WarningMutableBuilder[Self <: Warning] (val x: Self) extends AnyVal {
+  extension [Self <: Warning](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

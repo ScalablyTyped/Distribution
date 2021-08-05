@@ -13,19 +13,15 @@ trait DialogProps
 }
 object DialogProps {
   
-  @scala.inline
-  def apply(): DialogProps = {
+  inline def apply(): DialogProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogProps]
   }
   
-  @scala.inline
-  implicit class DialogPropsMutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
+  extension [Self <: DialogProps](x: Self) {
     
-    @scala.inline
-    def setOnCancel(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
+    inline def setOnCancel(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+    inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
   }
 }

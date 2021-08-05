@@ -11,10 +11,8 @@ object objectSorterMod {
     * @param options object transformation options
     * @returns function that transforms object to strings
     */
-  @scala.inline
-  def apply(): js.Function1[/* obj */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* obj */ js.Any, String]]
-  @scala.inline
-  def apply(options: SorterOptions): js.Function1[/* obj */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Any, String]]
+  inline def apply(): js.Function1[/* obj */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function1[/* obj */ js.Any, String]]
+  inline def apply(options: SorterOptions): js.Function1[/* obj */ js.Any, String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Any, String]]
   
   @JSImport("node-object-hash/dist/objectSorter", JSImport.Namespace)
   @js.native
@@ -131,68 +129,48 @@ object objectSorterMod {
   }
   object CoerceOptions {
     
-    @scala.inline
-    def apply(): CoerceOptions = {
+    inline def apply(): CoerceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CoerceOptions]
     }
     
-    @scala.inline
-    implicit class CoerceOptionsMutableBuilder[Self <: CoerceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CoerceOptions](x: Self) {
       
-      @scala.inline
-      def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      inline def setBoolean(value: Boolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+      inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      @scala.inline
-      def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setFunction(value: Boolean): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: Boolean): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      @scala.inline
-      def setNull(value: Boolean): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
+      inline def setNull(value: Boolean): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullUndefined: Self = StObject.set(x, "null", js.undefined)
+      inline def setNullUndefined: Self = StObject.set(x, "null", js.undefined)
       
-      @scala.inline
-      def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
       
-      @scala.inline
-      def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+      inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
       
-      @scala.inline
-      def setString(value: Boolean): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: Boolean): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      @scala.inline
-      def setSymbol(value: Boolean): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: Boolean): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+      inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
       
-      @scala.inline
-      def setUndefined(value: Boolean): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+      inline def setUndefined(value: Boolean): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndefinedUndefined: Self = StObject.set(x, "undefined", js.undefined)
+      inline def setUndefinedUndefined: Self = StObject.set(x, "undefined", js.undefined)
     }
   }
   
@@ -223,38 +201,28 @@ object objectSorterMod {
   }
   object SortOptions {
     
-    @scala.inline
-    def apply(): SortOptions = {
+    inline def apply(): SortOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SortOptions]
     }
     
-    @scala.inline
-    implicit class SortOptionsMutableBuilder[Self <: SortOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SortOptions](x: Self) {
       
-      @scala.inline
-      def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+      inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
       
-      @scala.inline
-      def setMap(value: Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setObject(value: Boolean): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: Boolean): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      @scala.inline
-      def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: Boolean): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+      inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
     }
   }
   
@@ -286,32 +254,24 @@ object objectSorterMod {
   }
   object SorterOptions {
     
-    @scala.inline
-    def apply(): SorterOptions = {
+    inline def apply(): SorterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SorterOptions]
     }
     
-    @scala.inline
-    implicit class SorterOptionsMutableBuilder[Self <: SorterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SorterOptions](x: Self) {
       
-      @scala.inline
-      def setCoerce(value: Boolean | CoerceOptions): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      inline def setCoerce(value: Boolean | CoerceOptions): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
       
-      @scala.inline
-      def setSort(value: Boolean | SortOptions): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: Boolean | SortOptions): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean | TrimOptions): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean | TrimOptions): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
   
@@ -332,26 +292,20 @@ object objectSorterMod {
   }
   object TrimOptions {
     
-    @scala.inline
-    def apply(): TrimOptions = {
+    inline def apply(): TrimOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TrimOptions]
     }
     
-    @scala.inline
-    implicit class TrimOptionsMutableBuilder[Self <: TrimOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TrimOptions](x: Self) {
       
-      @scala.inline
-      def setFunction(value: Boolean): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: Boolean): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
       
-      @scala.inline
-      def setString(value: Boolean): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: Boolean): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
     }
   }
 }

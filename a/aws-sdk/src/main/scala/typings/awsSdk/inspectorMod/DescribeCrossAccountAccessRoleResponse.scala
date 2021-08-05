@@ -23,22 +23,17 @@ trait DescribeCrossAccountAccessRoleResponse extends StObject {
 }
 object DescribeCrossAccountAccessRoleResponse {
   
-  @scala.inline
-  def apply(registeredAt: Timestamp, roleArn: Arn, valid: Bool): DescribeCrossAccountAccessRoleResponse = {
+  inline def apply(registeredAt: Timestamp, roleArn: Arn, valid: Bool): DescribeCrossAccountAccessRoleResponse = {
     val __obj = js.Dynamic.literal(registeredAt = registeredAt.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCrossAccountAccessRoleResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCrossAccountAccessRoleResponseMutableBuilder[Self <: DescribeCrossAccountAccessRoleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCrossAccountAccessRoleResponse](x: Self) {
     
-    @scala.inline
-    def setRegisteredAt(value: Timestamp): Self = StObject.set(x, "registeredAt", value.asInstanceOf[js.Any])
+    inline def setRegisteredAt(value: Timestamp): Self = StObject.set(x, "registeredAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValid(value: Bool): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Bool): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait SetStyleTextsRequest extends StObject {
 }
 object SetStyleTextsRequest {
   
-  @scala.inline
-  def apply(edits: js.Array[StyleDeclarationEdit]): SetStyleTextsRequest = {
+  inline def apply(edits: js.Array[StyleDeclarationEdit]): SetStyleTextsRequest = {
     val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetStyleTextsRequest]
   }
   
-  @scala.inline
-  implicit class SetStyleTextsRequestMutableBuilder[Self <: SetStyleTextsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetStyleTextsRequest](x: Self) {
     
-    @scala.inline
-    def setEdits(value: js.Array[StyleDeclarationEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
+    inline def setEdits(value: js.Array[StyleDeclarationEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditsVarargs(value: StyleDeclarationEdit*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: StyleDeclarationEdit*): Self = StObject.set(x, "edits", js.Array(value :_*))
   }
 }

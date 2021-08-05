@@ -11,19 +11,15 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest extends
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest = {
+  inline def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequestMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaGetWorkerPoolRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

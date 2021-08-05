@@ -41,51 +41,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcColorIndex extends StObject
 object AcColorIndex {
   
-  @scala.inline
-  def acColorIndexAqua: `14` = 14.asInstanceOf[`14`]
+  inline def acColorIndexAqua: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def acColorIndexBlack: `0` = 0.asInstanceOf[`0`]
+  inline def acColorIndexBlack: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acColorIndexBlue: `12` = 12.asInstanceOf[`12`]
+  inline def acColorIndexBlue: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def acColorIndexBrightGreen: `10` = 10.asInstanceOf[`10`]
+  inline def acColorIndexBrightGreen: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def acColorIndexDarkBlue: `4` = 4.asInstanceOf[`4`]
+  inline def acColorIndexDarkBlue: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def acColorIndexFuschia: `13` = 13.asInstanceOf[`13`]
+  inline def acColorIndexFuschia: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def acColorIndexGray: `7` = 7.asInstanceOf[`7`]
+  inline def acColorIndexGray: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def acColorIndexGreen: `2` = 2.asInstanceOf[`2`]
+  inline def acColorIndexGreen: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acColorIndexMaroon: `1` = 1.asInstanceOf[`1`]
+  inline def acColorIndexMaroon: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acColorIndexOlive: `3` = 3.asInstanceOf[`3`]
+  inline def acColorIndexOlive: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acColorIndexRed: `9` = 9.asInstanceOf[`9`]
+  inline def acColorIndexRed: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def acColorIndexSilver: `8` = 8.asInstanceOf[`8`]
+  inline def acColorIndexSilver: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def acColorIndexTeal: `6` = 6.asInstanceOf[`6`]
+  inline def acColorIndexTeal: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def acColorIndexViolet: `5` = 5.asInstanceOf[`5`]
+  inline def acColorIndexViolet: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def acColorIndexWhite: `15` = 15.asInstanceOf[`15`]
+  inline def acColorIndexWhite: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def acColorIndexYellow: `11` = 11.asInstanceOf[`11`]
+  inline def acColorIndexYellow: `11` = 11.asInstanceOf[`11`]
 }

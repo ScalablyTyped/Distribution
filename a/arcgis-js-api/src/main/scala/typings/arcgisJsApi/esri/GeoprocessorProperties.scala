@@ -45,43 +45,31 @@ trait GeoprocessorProperties
 }
 object GeoprocessorProperties {
   
-  @scala.inline
-  def apply(): GeoprocessorProperties = {
+  inline def apply(): GeoprocessorProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoprocessorProperties]
   }
   
-  @scala.inline
-  implicit class GeoprocessorPropertiesMutableBuilder[Self <: GeoprocessorProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GeoprocessorProperties](x: Self) {
     
-    @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
-    @scala.inline
-    def setProcessExtent(value: ExtentProperties): Self = StObject.set(x, "processExtent", value.asInstanceOf[js.Any])
+    inline def setProcessExtent(value: ExtentProperties): Self = StObject.set(x, "processExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessExtentUndefined: Self = StObject.set(x, "processExtent", js.undefined)
+    inline def setProcessExtentUndefined: Self = StObject.set(x, "processExtent", js.undefined)
     
-    @scala.inline
-    def setProcessSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "processSpatialReference", value.asInstanceOf[js.Any])
+    inline def setProcessSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "processSpatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessSpatialReferenceUndefined: Self = StObject.set(x, "processSpatialReference", js.undefined)
+    inline def setProcessSpatialReferenceUndefined: Self = StObject.set(x, "processSpatialReference", js.undefined)
     
-    @scala.inline
-    def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
+    inline def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
+    inline def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
     
-    @scala.inline
-    def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
+    inline def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
+    inline def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
   }
 }

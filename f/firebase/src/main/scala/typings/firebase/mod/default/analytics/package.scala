@@ -22,10 +22,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param app The app to create an analytics service for.
   * If not passed, uses the default app.
   */
-@scala.inline
-def apply(): typings.firebase.mod.firebase.analytics.Analytics = typings.firebase.mod.default.analytics.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.firebase.mod.firebase.analytics.Analytics]
-@scala.inline
-def apply(app: typings.firebase.mod.firebase.app.App): typings.firebase.mod.firebase.analytics.Analytics = typings.firebase.mod.default.analytics.^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.analytics.Analytics]
+inline def apply(): typings.firebase.mod.firebase.analytics.Analytics = typings.firebase.mod.default.analytics.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.firebase.mod.firebase.analytics.Analytics]
+inline def apply(app: typings.firebase.mod.firebase.app.App): typings.firebase.mod.firebase.analytics.Analytics = typings.firebase.mod.default.analytics.^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.analytics.Analytics]
 
 /**
   * An async function that returns true if current browser context supports initialization of analytics module
@@ -35,11 +33,9 @@ def apply(app: typings.firebase.mod.firebase.app.App): typings.firebase.mod.fire
   *
   *
   */
-@scala.inline
-def isSupported(): js.Promise[scala.Boolean] = typings.firebase.mod.default.analytics.^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[js.Promise[scala.Boolean]]
+inline def isSupported(): js.Promise[scala.Boolean] = typings.firebase.mod.default.analytics.^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[js.Promise[scala.Boolean]]
 
-@scala.inline
-def settings(settings: typings.firebase.mod.firebase.analytics.SettingsOptions): scala.Unit = typings.firebase.mod.default.analytics.^.asInstanceOf[js.Dynamic].applyDynamic("settings")(settings.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def settings(settings: typings.firebase.mod.firebase.analytics.SettingsOptions): scala.Unit = typings.firebase.mod.default.analytics.^.asInstanceOf[js.Dynamic].applyDynamic("settings")(settings.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 type Currency = java.lang.String | scala.Double
 

@@ -19,19 +19,15 @@ trait SchemaDiscovery extends StObject {
 }
 object SchemaDiscovery {
   
-  @scala.inline
-  def apply(): SchemaDiscovery = {
+  inline def apply(): SchemaDiscovery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiscovery]
   }
   
-  @scala.inline
-  implicit class SchemaDiscoveryMutableBuilder[Self <: SchemaDiscovery] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiscovery](x: Self) {
     
-    @scala.inline
-    def setAnalysisKind(value: String): Self = StObject.set(x, "analysisKind", value.asInstanceOf[js.Any])
+    inline def setAnalysisKind(value: String): Self = StObject.set(x, "analysisKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisKindUndefined: Self = StObject.set(x, "analysisKind", js.undefined)
+    inline def setAnalysisKindUndefined: Self = StObject.set(x, "analysisKind", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait UpdateMitigationActionResponse extends StObject {
 }
 object UpdateMitigationActionResponse {
   
-  @scala.inline
-  def apply(): UpdateMitigationActionResponse = {
+  inline def apply(): UpdateMitigationActionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateMitigationActionResponse]
   }
   
-  @scala.inline
-  implicit class UpdateMitigationActionResponseMutableBuilder[Self <: UpdateMitigationActionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMitigationActionResponse](x: Self) {
     
-    @scala.inline
-    def setActionArn(value: MitigationActionArn): Self = StObject.set(x, "actionArn", value.asInstanceOf[js.Any])
+    inline def setActionArn(value: MitigationActionArn): Self = StObject.set(x, "actionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionArnUndefined: Self = StObject.set(x, "actionArn", js.undefined)
+    inline def setActionArnUndefined: Self = StObject.set(x, "actionArn", js.undefined)
     
-    @scala.inline
-    def setActionId(value: MitigationActionId): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: MitigationActionId): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
   }
 }

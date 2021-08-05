@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSaveAction extends StObject
 object XlSaveAction {
   
-  @scala.inline
-  def xlDoNotSaveChanges: `2` = 2.asInstanceOf[`2`]
+  inline def xlDoNotSaveChanges: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlSaveChanges: `1` = 1.asInstanceOf[`1`]
+  inline def xlSaveChanges: `1` = 1.asInstanceOf[`1`]
 }

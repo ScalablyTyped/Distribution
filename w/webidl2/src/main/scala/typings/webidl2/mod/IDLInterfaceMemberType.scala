@@ -14,8 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDLInterfaceMemberType extends StObject
 object IDLInterfaceMemberType {
   
-  @scala.inline
-  def AttributeMemberType(
+  inline def AttributeMemberType(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     inherit: Boolean,
@@ -28,8 +27,7 @@ object IDLInterfaceMemberType {
     __obj.asInstanceOf[typings.webidl2.mod.AttributeMemberType]
   }
   
-  @scala.inline
-  def ConstantMemberType(
+  inline def ConstantMemberType(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
@@ -42,15 +40,13 @@ object IDLInterfaceMemberType {
     __obj.asInstanceOf[typings.webidl2.mod.ConstantMemberType]
   }
   
-  @scala.inline
-  def ConstructorMemberType(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], parent: InterfaceType): typings.webidl2.mod.ConstructorMemberType = {
+  inline def ConstructorMemberType(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], parent: InterfaceType): typings.webidl2.mod.ConstructorMemberType = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("constructor")
     __obj.asInstanceOf[typings.webidl2.mod.ConstructorMemberType]
   }
   
-  @scala.inline
-  def IterableDeclarationMemberType(
+  inline def IterableDeclarationMemberType(
     arguments: js.Array[Argument],
     async: Boolean,
     extAttrs: js.Array[ExtendedAttribute],
@@ -62,8 +58,7 @@ object IDLInterfaceMemberType {
     __obj.asInstanceOf[typings.webidl2.mod.IterableDeclarationMemberType]
   }
   
-  @scala.inline
-  def MaplikeDeclarationMemberType(
+  inline def MaplikeDeclarationMemberType(
     arguments: js.Array[js.Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
@@ -75,8 +70,7 @@ object IDLInterfaceMemberType {
     __obj.asInstanceOf[typings.webidl2.mod.MaplikeDeclarationMemberType]
   }
   
-  @scala.inline
-  def OperationMemberType(
+  inline def OperationMemberType(
     arguments: js.Array[Argument],
     extAttrs: js.Array[ExtendedAttribute],
     parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType
@@ -86,8 +80,7 @@ object IDLInterfaceMemberType {
     __obj.asInstanceOf[typings.webidl2.mod.OperationMemberType]
   }
   
-  @scala.inline
-  def SetlikeDeclarationMemberType(
+  inline def SetlikeDeclarationMemberType(
     arguments: js.Array[js.Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],

@@ -10,22 +10,17 @@ trait VolumeInfo extends StObject {
 }
 object VolumeInfo {
   
-  @scala.inline
-  def apply(): VolumeInfo = {
+  inline def apply(): VolumeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeInfo]
   }
   
-  @scala.inline
-  implicit class VolumeInfoMutableBuilder[Self <: VolumeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeInfo](x: Self) {
     
-    @scala.inline
-    def setVolumeInfo(value: js.Array[StorageFree]): Self = StObject.set(x, "volumeInfo", value.asInstanceOf[js.Any])
+    inline def setVolumeInfo(value: js.Array[StorageFree]): Self = StObject.set(x, "volumeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeInfoUndefined: Self = StObject.set(x, "volumeInfo", js.undefined)
+    inline def setVolumeInfoUndefined: Self = StObject.set(x, "volumeInfo", js.undefined)
     
-    @scala.inline
-    def setVolumeInfoVarargs(value: StorageFree*): Self = StObject.set(x, "volumeInfo", js.Array(value :_*))
+    inline def setVolumeInfoVarargs(value: StorageFree*): Self = StObject.set(x, "volumeInfo", js.Array(value :_*))
   }
 }

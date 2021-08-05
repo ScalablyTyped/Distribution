@@ -13,19 +13,15 @@ trait GetBucketStatisticsRequest extends StObject {
 }
 object GetBucketStatisticsRequest {
   
-  @scala.inline
-  def apply(): GetBucketStatisticsRequest = {
+  inline def apply(): GetBucketStatisticsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketStatisticsRequest]
   }
   
-  @scala.inline
-  implicit class GetBucketStatisticsRequestMutableBuilder[Self <: GetBucketStatisticsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketStatisticsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
   }
 }

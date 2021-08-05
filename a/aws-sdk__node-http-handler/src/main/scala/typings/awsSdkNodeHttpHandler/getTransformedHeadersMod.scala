@@ -12,6 +12,5 @@ object getTransformedHeadersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTransformedHeaders(headers: IncomingHttpHeaders): HeaderBag = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformedHeaders")(headers.asInstanceOf[js.Any]).asInstanceOf[HeaderBag]
+  inline def getTransformedHeaders(headers: IncomingHttpHeaders): HeaderBag = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransformedHeaders")(headers.asInstanceOf[js.Any]).asInstanceOf[HeaderBag]
 }

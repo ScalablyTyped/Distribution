@@ -18,31 +18,23 @@ trait ValidateOptions extends StObject {
 }
 object ValidateOptions {
   
-  @scala.inline
-  def apply(): ValidateOptions = {
+  inline def apply(): ValidateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidateOptions]
   }
   
-  @scala.inline
-  implicit class ValidateOptionsMutableBuilder[Self <: ValidateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateOptions](x: Self) {
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     
-    @scala.inline
-    def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
+    inline def setTriggerName(value: String): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerNameUndefined: Self = StObject.set(x, "triggerName", js.undefined)
+    inline def setTriggerNameUndefined: Self = StObject.set(x, "triggerName", js.undefined)
     
-    @scala.inline
-    def setValidateMessages(value: ValidateMessages): Self = StObject.set(x, "validateMessages", value.asInstanceOf[js.Any])
+    inline def setValidateMessages(value: ValidateMessages): Self = StObject.set(x, "validateMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateMessagesUndefined: Self = StObject.set(x, "validateMessages", js.undefined)
+    inline def setValidateMessagesUndefined: Self = StObject.set(x, "validateMessages", js.undefined)
   }
 }

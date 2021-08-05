@@ -22,20 +22,16 @@ object backwardSmallMod extends Shortcut {
   }
   object BackwardSmallProps {
     
-    @scala.inline
-    def apply(): BackwardSmallProps = {
+    inline def apply(): BackwardSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BackwardSmallProps]
     }
     
-    @scala.inline
-    implicit class BackwardSmallPropsMutableBuilder[Self <: BackwardSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: BackwardSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

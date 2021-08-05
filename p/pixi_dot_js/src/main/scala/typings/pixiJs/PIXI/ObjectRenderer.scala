@@ -46,8 +46,7 @@ trait ObjectRenderer
 }
 object ObjectRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     flush: () => Unit,
     render: DisplayObject => Unit,
@@ -59,19 +58,14 @@ object ObjectRenderer {
     __obj.asInstanceOf[ObjectRenderer]
   }
   
-  @scala.inline
-  implicit class ObjectRendererMutableBuilder[Self <: ObjectRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectRenderer](x: Self) {
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: DisplayObject => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: DisplayObject => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

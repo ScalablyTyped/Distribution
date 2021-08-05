@@ -22,8 +22,7 @@ trait ActionRequired extends StObject {
 }
 object ActionRequired {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionRequired: scala.Double,
     actionResolved: scala.Double,
     disabled: scala.Double,
@@ -36,28 +35,20 @@ object ActionRequired {
     __obj.asInstanceOf[ActionRequired]
   }
   
-  @scala.inline
-  implicit class ActionRequiredMutableBuilder[Self <: ActionRequired] (val x: Self) extends AnyVal {
+  extension [Self <: ActionRequired](x: Self) {
     
-    @scala.inline
-    def setActionRequired(value: scala.Double): Self = StObject.set(x, "actionRequired", value.asInstanceOf[js.Any])
+    inline def setActionRequired(value: scala.Double): Self = StObject.set(x, "actionRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionResolved(value: scala.Double): Self = StObject.set(x, "actionResolved", value.asInstanceOf[js.Any])
+    inline def setActionResolved(value: scala.Double): Self = StObject.set(x, "actionResolved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: scala.Double): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: scala.Double): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalled(value: scala.Double): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
+    inline def setInstalled(value: scala.Double): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUninstalled(value: scala.Double): Self = StObject.set(x, "uninstalled", value.asInstanceOf[js.Any])
+    inline def setUninstalled(value: scala.Double): Self = StObject.set(x, "uninstalled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUpdated(value: scala.Double): Self = StObject.set(x, "versionUpdated", value.asInstanceOf[js.Any])
+    inline def setVersionUpdated(value: scala.Double): Self = StObject.set(x, "versionUpdated", value.asInstanceOf[js.Any])
   }
 }

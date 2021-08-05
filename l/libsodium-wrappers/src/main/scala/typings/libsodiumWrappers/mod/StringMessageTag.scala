@@ -12,19 +12,15 @@ trait StringMessageTag extends StObject {
 }
 object StringMessageTag {
   
-  @scala.inline
-  def apply(message: String, tag: Double): StringMessageTag = {
+  inline def apply(message: String, tag: Double): StringMessageTag = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringMessageTag]
   }
   
-  @scala.inline
-  implicit class StringMessageTagMutableBuilder[Self <: StringMessageTag] (val x: Self) extends AnyVal {
+  extension [Self <: StringMessageTag](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

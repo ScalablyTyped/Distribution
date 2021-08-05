@@ -292,26 +292,20 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(checked: String, disabled: String, radio: String, readOnly: String): Impl = {
+        inline def apply(checked: String, disabled: String, radio: String, readOnly: String): Impl = {
           val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], radio = radio.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+          inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+          inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRadio(value: String): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+          inline def setRadio(value: String): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReadOnly(value: String): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+          inline def setReadOnly(value: String): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
         }
       }
       
@@ -326,17 +320,14 @@ object SemanticUI {
     }
     object ErrorSettings {
       
-      @scala.inline
-      def apply(method: String & js.UndefOr[String]): ErrorSettings = {
+      inline def apply(method: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
       
-      @scala.inline
-      implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
+      extension [Self <: ErrorSettings](x: Self) {
         
-        @scala.inline
-        def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
       trait Impl extends StObject {
@@ -348,17 +339,14 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(method: String): Impl = {
+        inline def apply(method: String): Impl = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
       
@@ -369,17 +357,14 @@ object SemanticUI {
       }
       object Param {
         
-        @scala.inline
-        def apply(method: String & js.UndefOr[String]): typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param = {
+        inline def apply(method: String & js.UndefOr[String]): typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param]
         }
         
-        @scala.inline
-        implicit class ParamMutableBuilder[Self <: typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param] (val x: Self) extends AnyVal {
+        extension [Self <: typings.semanticUiCheckbox.SemanticUI.Checkbox.ErrorSettings.Param](x: Self) {
           
-          @scala.inline
-          def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          inline def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
@@ -400,20 +385,16 @@ object SemanticUI {
       }
       object Impl {
         
-        @scala.inline
-        def apply(input: String, label: String): Impl = {
+        inline def apply(input: String, label: String): Impl = {
           val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
           __obj.asInstanceOf[Impl]
         }
         
-        @scala.inline
-        implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+        extension [Self <: Impl](x: Self) {
           
-          @scala.inline
-          def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+          inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+          inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         }
       }
       
@@ -565,8 +546,7 @@ object SemanticUI {
     }
     object Impl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         beforeChecked: () => Unit | `false`,
         beforeDeterminate: () => Unit | `false`,
         beforeIndeterminate: () => Unit | `false`,
@@ -596,80 +576,55 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setBeforeChecked(value: () => Unit | `false`): Self = StObject.set(x, "beforeChecked", js.Any.fromFunction0(value))
+        inline def setBeforeChecked(value: () => Unit | `false`): Self = StObject.set(x, "beforeChecked", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setBeforeDeterminate(value: () => Unit | `false`): Self = StObject.set(x, "beforeDeterminate", js.Any.fromFunction0(value))
+        inline def setBeforeDeterminate(value: () => Unit | `false`): Self = StObject.set(x, "beforeDeterminate", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setBeforeIndeterminate(value: () => Unit | `false`): Self = StObject.set(x, "beforeIndeterminate", js.Any.fromFunction0(value))
+        inline def setBeforeIndeterminate(value: () => Unit | `false`): Self = StObject.set(x, "beforeIndeterminate", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setBeforeUnchecked(value: () => Unit | `false`): Self = StObject.set(x, "beforeUnchecked", js.Any.fromFunction0(value))
+        inline def setBeforeUnchecked(value: () => Unit | `false`): Self = StObject.set(x, "beforeUnchecked", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+        inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: ErrorSettings): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFireOnInit(value: Boolean): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
+        inline def setFireOnInit(value: Boolean): Self = StObject.set(x, "fireOnInit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+        inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
+        inline def setOnChange(value: () => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnChecked(value: () => Unit): Self = StObject.set(x, "onChecked", js.Any.fromFunction0(value))
+        inline def setOnChecked(value: () => Unit): Self = StObject.set(x, "onChecked", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnDeterminate(value: () => Unit): Self = StObject.set(x, "onDeterminate", js.Any.fromFunction0(value))
+        inline def setOnDeterminate(value: () => Unit): Self = StObject.set(x, "onDeterminate", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnDisable(value: () => Unit): Self = StObject.set(x, "onDisable", js.Any.fromFunction0(value))
+        inline def setOnDisable(value: () => Unit): Self = StObject.set(x, "onDisable", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnDisabled(value: () => Unit): Self = StObject.set(x, "onDisabled", js.Any.fromFunction0(value))
+        inline def setOnDisabled(value: () => Unit): Self = StObject.set(x, "onDisabled", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnEnable(value: () => Unit): Self = StObject.set(x, "onEnable", js.Any.fromFunction0(value))
+        inline def setOnEnable(value: () => Unit): Self = StObject.set(x, "onEnable", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnEnabled(value: () => Unit): Self = StObject.set(x, "onEnabled", js.Any.fromFunction0(value))
+        inline def setOnEnabled(value: () => Unit): Self = StObject.set(x, "onEnabled", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnIndeterminate(value: () => Unit): Self = StObject.set(x, "onIndeterminate", js.Any.fromFunction0(value))
+        inline def setOnIndeterminate(value: () => Unit): Self = StObject.set(x, "onIndeterminate", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnUnchecked(value: () => Unit): Self = StObject.set(x, "onUnchecked", js.Any.fromFunction0(value))
+        inline def setOnUnchecked(value: () => Unit): Self = StObject.set(x, "onUnchecked", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+        inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+        inline def setSelector(value: SelectorSettings): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+        inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUncheckable(value: auto | Boolean): Self = StObject.set(x, "uncheckable", value.asInstanceOf[js.Any])
+        inline def setUncheckable(value: auto | Boolean): Self = StObject.set(x, "uncheckable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+        inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       }
     }
     

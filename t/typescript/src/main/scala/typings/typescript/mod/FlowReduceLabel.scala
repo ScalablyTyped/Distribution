@@ -17,25 +17,19 @@ trait FlowReduceLabel
 }
 object FlowReduceLabel {
   
-  @scala.inline
-  def apply(antecedent: FlowNode, antecedents: js.Array[FlowNode], flags: FlowFlags, target: FlowLabel): FlowReduceLabel = {
+  inline def apply(antecedent: FlowNode, antecedents: js.Array[FlowNode], flags: FlowFlags, target: FlowLabel): FlowReduceLabel = {
     val __obj = js.Dynamic.literal(antecedent = antecedent.asInstanceOf[js.Any], antecedents = antecedents.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowReduceLabel]
   }
   
-  @scala.inline
-  implicit class FlowReduceLabelMutableBuilder[Self <: FlowReduceLabel] (val x: Self) extends AnyVal {
+  extension [Self <: FlowReduceLabel](x: Self) {
     
-    @scala.inline
-    def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
+    inline def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntecedents(value: js.Array[FlowNode]): Self = StObject.set(x, "antecedents", value.asInstanceOf[js.Any])
+    inline def setAntecedents(value: js.Array[FlowNode]): Self = StObject.set(x, "antecedents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntecedentsVarargs(value: FlowNode*): Self = StObject.set(x, "antecedents", js.Array(value :_*))
+    inline def setAntecedentsVarargs(value: FlowNode*): Self = StObject.set(x, "antecedents", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: FlowLabel): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: FlowLabel): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

@@ -21,20 +21,17 @@ object DeletingBehavior {
   @JSImport("mendixmodelsdk", "domainmodels.DeletingBehavior.DeleteMeAndReferences")
   @js.native
   def DeleteMeAndReferences: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior = js.native
-  @scala.inline
-  def DeleteMeAndReferences_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeAndReferences")(x.asInstanceOf[js.Any])
+  inline def DeleteMeAndReferences_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeAndReferences")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.DeletingBehavior.DeleteMeButKeepReferences")
   @js.native
   def DeleteMeButKeepReferences: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior = js.native
-  @scala.inline
-  def DeleteMeButKeepReferences_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeButKeepReferences")(x.asInstanceOf[js.Any])
+  inline def DeleteMeButKeepReferences_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeButKeepReferences")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.DeletingBehavior.DeleteMeIfNoReferences")
   @js.native
   def DeleteMeIfNoReferences: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior = js.native
-  @scala.inline
-  def DeleteMeIfNoReferences_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeIfNoReferences")(x.asInstanceOf[js.Any])
+  inline def DeleteMeIfNoReferences_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DeletingBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DeleteMeIfNoReferences")(x.asInstanceOf[js.Any])
 }

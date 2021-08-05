@@ -17,23 +17,18 @@ trait PathSupportOption
 }
 object PathSupportOption {
   
-  @scala.inline
-  def apply(category: String, default: String, since: String): PathSupportOption = {
+  inline def apply(category: String, default: String, since: String): PathSupportOption = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("path")
     __obj.asInstanceOf[PathSupportOption]
   }
   
-  @scala.inline
-  implicit class PathSupportOptionMutableBuilder[Self <: PathSupportOption] (val x: Self) extends AnyVal {
+  extension [Self <: PathSupportOption](x: Self) {
     
-    @scala.inline
-    def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: `false`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+    inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }
 }

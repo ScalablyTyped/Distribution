@@ -28,43 +28,31 @@ trait QueryResult extends StObject {
 }
 object QueryResult {
   
-  @scala.inline
-  def apply(): QueryResult = {
+  inline def apply(): QueryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryResult]
   }
   
-  @scala.inline
-  implicit class QueryResultMutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResult](x: Self) {
     
-    @scala.inline
-    def setFacetResults(value: FacetResultList): Self = StObject.set(x, "FacetResults", value.asInstanceOf[js.Any])
+    inline def setFacetResults(value: FacetResultList): Self = StObject.set(x, "FacetResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetResultsUndefined: Self = StObject.set(x, "FacetResults", js.undefined)
+    inline def setFacetResultsUndefined: Self = StObject.set(x, "FacetResults", js.undefined)
     
-    @scala.inline
-    def setFacetResultsVarargs(value: FacetResult*): Self = StObject.set(x, "FacetResults", js.Array(value :_*))
+    inline def setFacetResultsVarargs(value: FacetResult*): Self = StObject.set(x, "FacetResults", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
+    inline def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryIdUndefined: Self = StObject.set(x, "QueryId", js.undefined)
+    inline def setQueryIdUndefined: Self = StObject.set(x, "QueryId", js.undefined)
     
-    @scala.inline
-    def setResultItems(value: QueryResultItemList): Self = StObject.set(x, "ResultItems", value.asInstanceOf[js.Any])
+    inline def setResultItems(value: QueryResultItemList): Self = StObject.set(x, "ResultItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultItemsUndefined: Self = StObject.set(x, "ResultItems", js.undefined)
+    inline def setResultItemsUndefined: Self = StObject.set(x, "ResultItems", js.undefined)
     
-    @scala.inline
-    def setResultItemsVarargs(value: QueryResultItem*): Self = StObject.set(x, "ResultItems", js.Array(value :_*))
+    inline def setResultItemsVarargs(value: QueryResultItem*): Self = StObject.set(x, "ResultItems", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalNumberOfResults(value: Integer): Self = StObject.set(x, "TotalNumberOfResults", value.asInstanceOf[js.Any])
+    inline def setTotalNumberOfResults(value: Integer): Self = StObject.set(x, "TotalNumberOfResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalNumberOfResultsUndefined: Self = StObject.set(x, "TotalNumberOfResults", js.undefined)
+    inline def setTotalNumberOfResultsUndefined: Self = StObject.set(x, "TotalNumberOfResults", js.undefined)
   }
 }

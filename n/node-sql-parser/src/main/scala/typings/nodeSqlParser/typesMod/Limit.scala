@@ -12,22 +12,17 @@ trait Limit extends StObject {
 }
 object Limit {
   
-  @scala.inline
-  def apply(seperator: String, value: js.Array[LimitValue]): Limit = {
+  inline def apply(seperator: String, value: js.Array[LimitValue]): Limit = {
     val __obj = js.Dynamic.literal(seperator = seperator.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Limit]
   }
   
-  @scala.inline
-  implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
+  extension [Self <: Limit](x: Self) {
     
-    @scala.inline
-    def setSeperator(value: String): Self = StObject.set(x, "seperator", value.asInstanceOf[js.Any])
+    inline def setSeperator(value: String): Self = StObject.set(x, "seperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[LimitValue]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[LimitValue]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: LimitValue*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: LimitValue*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

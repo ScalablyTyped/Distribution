@@ -14,28 +14,21 @@ trait ListCombinedAudiencesResponse extends StObject {
 }
 object ListCombinedAudiencesResponse {
   
-  @scala.inline
-  def apply(): ListCombinedAudiencesResponse = {
+  inline def apply(): ListCombinedAudiencesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCombinedAudiencesResponse]
   }
   
-  @scala.inline
-  implicit class ListCombinedAudiencesResponseMutableBuilder[Self <: ListCombinedAudiencesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCombinedAudiencesResponse](x: Self) {
     
-    @scala.inline
-    def setCombinedAudiences(value: js.Array[CombinedAudience]): Self = StObject.set(x, "combinedAudiences", value.asInstanceOf[js.Any])
+    inline def setCombinedAudiences(value: js.Array[CombinedAudience]): Self = StObject.set(x, "combinedAudiences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCombinedAudiencesUndefined: Self = StObject.set(x, "combinedAudiences", js.undefined)
+    inline def setCombinedAudiencesUndefined: Self = StObject.set(x, "combinedAudiences", js.undefined)
     
-    @scala.inline
-    def setCombinedAudiencesVarargs(value: CombinedAudience*): Self = StObject.set(x, "combinedAudiences", js.Array(value :_*))
+    inline def setCombinedAudiencesVarargs(value: CombinedAudience*): Self = StObject.set(x, "combinedAudiences", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

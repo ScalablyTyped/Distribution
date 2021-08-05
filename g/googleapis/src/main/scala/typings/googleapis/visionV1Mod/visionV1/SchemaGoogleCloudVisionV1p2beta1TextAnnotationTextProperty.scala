@@ -21,28 +21,21 @@ trait SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextProperty extends StObjec
 }
 object SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextProperty {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextProperty = {
+  inline def apply(): SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextProperty]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextPropertyMutableBuilder[Self <: SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextProperty] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p2beta1TextAnnotationTextProperty](x: Self) {
     
-    @scala.inline
-    def setDetectedBreak(value: SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak): Self = StObject.set(x, "detectedBreak", value.asInstanceOf[js.Any])
+    inline def setDetectedBreak(value: SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak): Self = StObject.set(x, "detectedBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedBreakUndefined: Self = StObject.set(x, "detectedBreak", js.undefined)
+    inline def setDetectedBreakUndefined: Self = StObject.set(x, "detectedBreak", js.undefined)
     
-    @scala.inline
-    def setDetectedLanguages(value: js.Array[SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
+    inline def setDetectedLanguages(value: js.Array[SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage]): Self = StObject.set(x, "detectedLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
+    inline def setDetectedLanguagesUndefined: Self = StObject.set(x, "detectedLanguages", js.undefined)
     
-    @scala.inline
-    def setDetectedLanguagesVarargs(value: SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
+    inline def setDetectedLanguagesVarargs(value: SchemaGoogleCloudVisionV1p2beta1TextAnnotationDetectedLanguage*): Self = StObject.set(x, "detectedLanguages", js.Array(value :_*))
   }
 }

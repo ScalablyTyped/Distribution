@@ -28,37 +28,27 @@ trait CreateChannelRequest extends StObject {
 }
 object CreateChannelRequest {
   
-  @scala.inline
-  def apply(channelName: ChannelName): CreateChannelRequest = {
+  inline def apply(channelName: ChannelName): CreateChannelRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateChannelRequest]
   }
   
-  @scala.inline
-  implicit class CreateChannelRequestMutableBuilder[Self <: CreateChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChannelRequest](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelStorage(value: ChannelStorage): Self = StObject.set(x, "channelStorage", value.asInstanceOf[js.Any])
+    inline def setChannelStorage(value: ChannelStorage): Self = StObject.set(x, "channelStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelStorageUndefined: Self = StObject.set(x, "channelStorage", js.undefined)
+    inline def setChannelStorageUndefined: Self = StObject.set(x, "channelStorage", js.undefined)
     
-    @scala.inline
-    def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
+    inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

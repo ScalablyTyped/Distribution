@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartFormat")
 @js.native
-class ChartFormat protected ()
+/* private */ class ChartFormat ()
   extends StObject
      with typings.activexWord.Word.ChartFormat {
   
@@ -43,7 +43,7 @@ class ChartFormat protected ()
   /* CompleteClass */
   override val ThreeD: typings.activexWord.Word.ThreeDFormat = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ChartFormat_typekey")
   var WordDotChartFormat_typekey: typings.activexWord.Word.ChartFormat = js.native
 }

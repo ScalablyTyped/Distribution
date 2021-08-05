@@ -60,8 +60,6 @@ object DOMRectReadOnly {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromRect(): typings.std.DOMRectReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")().asInstanceOf[typings.std.DOMRectReadOnly]
-  @scala.inline
-  def fromRect(other: DOMRectInit): typings.std.DOMRectReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMRectReadOnly]
+  inline def fromRect(): typings.std.DOMRectReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")().asInstanceOf[typings.std.DOMRectReadOnly]
+  inline def fromRect(other: DOMRectInit): typings.std.DOMRectReadOnly = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(other.asInstanceOf[js.Any]).asInstanceOf[typings.std.DOMRectReadOnly]
 }

@@ -19,32 +19,24 @@ object anon {
   }
   object Active {
     
-    @scala.inline
-    def apply(attributes: js.Any, name: String): Active = {
+    inline def apply(attributes: js.Any, name: String): Active = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Active]
     }
     
-    @scala.inline
-    implicit class ActiveMutableBuilder[Self <: Active] (val x: Self) extends AnyVal {
+    extension [Self <: Active](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,17 +103,14 @@ object anon {
   }
   object Authenticate {
     
-    @scala.inline
-    def apply(authenticate: (String, String) => js.Promise[^]): Authenticate = {
+    inline def apply(authenticate: (String, String) => js.Promise[^]): Authenticate = {
       val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction2(authenticate))
       __obj.asInstanceOf[Authenticate]
     }
     
-    @scala.inline
-    implicit class AuthenticateMutableBuilder[Self <: Authenticate] (val x: Self) extends AnyVal {
+    extension [Self <: Authenticate](x: Self) {
       
-      @scala.inline
-      def setAuthenticate(value: (String, String) => js.Promise[^]): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
+      inline def setAuthenticate(value: (String, String) => js.Promise[^]): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     }
   }
   
@@ -154,17 +143,14 @@ object anon {
   }
   object Cookie {
     
-    @scala.inline
-    def apply(cookie: () => js.Promise[js.Any]): Cookie = {
+    inline def apply(cookie: () => js.Promise[js.Any]): Cookie = {
       val __obj = js.Dynamic.literal(cookie = js.Any.fromFunction0(cookie))
       __obj.asInstanceOf[Cookie]
     }
     
-    @scala.inline
-    implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
+    extension [Self <: Cookie](x: Self) {
       
-      @scala.inline
-      def setCookie(value: () => js.Promise[js.Any]): Self = StObject.set(x, "cookie", js.Any.fromFunction0(value))
+      inline def setCookie(value: () => js.Promise[js.Any]): Self = StObject.set(x, "cookie", js.Any.fromFunction0(value))
     }
   }
   
@@ -269,8 +255,7 @@ object anon {
   }
   object List {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       list: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^],
       password: Reset,
       remove: (String, String) => js.Promise[Unit],
@@ -281,25 +266,19 @@ object anon {
       __obj.asInstanceOf[List]
     }
     
-    @scala.inline
-    implicit class ListMutableBuilder[Self <: List] (val x: Self) extends AnyVal {
+    extension [Self <: List](x: Self) {
       
-      @scala.inline
-      def setList(value: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+      inline def setList(value: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPassword(value: Reset): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: Reset): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSet(
+      inline def setSet(
         value: (String, typings.atlassianCrowdClient.attributesMod.^) => js.Promise[typings.atlassianCrowdClient.attributesMod.^]
       ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUsername(value: Request): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Request): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -309,17 +288,14 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String): Name = {
+    inline def apply(name: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -331,20 +307,16 @@ object anon {
   }
   object Password {
     
-    @scala.inline
-    def apply(name: String, password: String): Password = {
+    inline def apply(name: String, password: String): Password = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[Password]
     }
     
-    @scala.inline
-    implicit class PasswordMutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
+    extension [Self <: Password](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
   }
   
@@ -358,8 +330,7 @@ object anon {
   }
   object Remove {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       list: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^],
       remove: (String, String) => js.Promise[Unit],
       set: (String, typings.atlassianCrowdClient.attributesMod.^) => js.Promise[typings.atlassianCrowdClient.attributesMod.^]
@@ -368,17 +339,13 @@ object anon {
       __obj.asInstanceOf[Remove]
     }
     
-    @scala.inline
-    implicit class RemoveMutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
+    extension [Self <: Remove](x: Self) {
       
-      @scala.inline
-      def setList(value: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+      inline def setList(value: String => js.Promise[typings.atlassianCrowdClient.attributesMod.^]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSet(
+      inline def setSet(
         value: (String, typings.atlassianCrowdClient.attributesMod.^) => js.Promise[typings.atlassianCrowdClient.attributesMod.^]
       ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
@@ -390,17 +357,14 @@ object anon {
   }
   object Request {
     
-    @scala.inline
-    def apply(request: String => js.Promise[Unit]): Request = {
+    inline def apply(request: String => js.Promise[Unit]): Request = {
       val __obj = js.Dynamic.literal(request = js.Any.fromFunction1(request))
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setRequest(value: String => js.Promise[Unit]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+      inline def setRequest(value: String => js.Promise[Unit]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }
   }
   
@@ -412,20 +376,16 @@ object anon {
   }
   object Reset {
     
-    @scala.inline
-    def apply(reset: String => js.Promise[Unit], set: (String, String) => js.Promise[Unit]): Reset = {
+    inline def apply(reset: String => js.Promise[Unit], set: (String, String) => js.Promise[Unit]): Reset = {
       val __obj = js.Dynamic.literal(reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Reset]
     }
     
-    @scala.inline
-    implicit class ResetMutableBuilder[Self <: Reset] (val x: Self) extends AnyVal {
+    extension [Self <: Reset](x: Self) {
       
-      @scala.inline
-      def setReset(value: String => js.Promise[Unit]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+      inline def setReset(value: String => js.Promise[Unit]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, String) => js.Promise[Unit]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -435,17 +395,14 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(value: String): Value = {
+    inline def apply(value: String): Value = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

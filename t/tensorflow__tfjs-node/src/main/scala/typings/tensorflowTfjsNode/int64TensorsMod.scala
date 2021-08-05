@@ -28,7 +28,7 @@ object int64TensorsMod {
     /** Get the Int32Array that represents the int64 value. */
     val valueArray: Int32Array = js.native
     
-    var valueArray_ : js.Any = js.native
+    /* private */ var valueArray_ : js.Any = js.native
   }
   /* static members */
   object Int64Scalar {
@@ -40,10 +40,8 @@ object int64TensorsMod {
     @JSImport("@tensorflow/tfjs-node/dist/int64_tensors", "Int64Scalar.endiannessOkay_")
     @js.native
     def endiannessOkay_ : js.Any = js.native
-    @scala.inline
-    def endiannessOkay__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("endiannessOkay_")(x.asInstanceOf[js.Any])
+    inline def endiannessOkay__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("endiannessOkay_")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def encodeInt32ArrayAsInt64(value: Int32Array): Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeInt32ArrayAsInt64")(value.asInstanceOf[js.Any]).asInstanceOf[Int32Array]
+  inline def encodeInt32ArrayAsInt64(value: Int32Array): Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeInt32ArrayAsInt64")(value.asInstanceOf[js.Any]).asInstanceOf[Int32Array]
 }

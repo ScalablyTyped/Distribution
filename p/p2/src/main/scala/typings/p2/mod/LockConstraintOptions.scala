@@ -16,31 +16,23 @@ trait LockConstraintOptions
 }
 object LockConstraintOptions {
   
-  @scala.inline
-  def apply(): LockConstraintOptions = {
+  inline def apply(): LockConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LockConstraintOptions]
   }
   
-  @scala.inline
-  implicit class LockConstraintOptionsMutableBuilder[Self <: LockConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LockConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setLocalAngleB(value: Double): Self = StObject.set(x, "localAngleB", value.asInstanceOf[js.Any])
+    inline def setLocalAngleB(value: Double): Self = StObject.set(x, "localAngleB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAngleBUndefined: Self = StObject.set(x, "localAngleB", js.undefined)
+    inline def setLocalAngleBUndefined: Self = StObject.set(x, "localAngleB", js.undefined)
     
-    @scala.inline
-    def setLocalOffsetB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localOffsetB", value.asInstanceOf[js.Any])
+    inline def setLocalOffsetB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localOffsetB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalOffsetBUndefined: Self = StObject.set(x, "localOffsetB", js.undefined)
+    inline def setLocalOffsetBUndefined: Self = StObject.set(x, "localOffsetB", js.undefined)
     
-    @scala.inline
-    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
+    inline def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
   }
 }

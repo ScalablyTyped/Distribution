@@ -18,19 +18,15 @@ trait ModifyInstanceFleetInput extends StObject {
 }
 object ModifyInstanceFleetInput {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId, InstanceFleet: InstanceFleetModifyConfig): ModifyInstanceFleetInput = {
+  inline def apply(ClusterId: ClusterId, InstanceFleet: InstanceFleetModifyConfig): ModifyInstanceFleetInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], InstanceFleet = InstanceFleet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyInstanceFleetInput]
   }
   
-  @scala.inline
-  implicit class ModifyInstanceFleetInputMutableBuilder[Self <: ModifyInstanceFleetInput] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyInstanceFleetInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFleet(value: InstanceFleetModifyConfig): Self = StObject.set(x, "InstanceFleet", value.asInstanceOf[js.Any])
+    inline def setInstanceFleet(value: InstanceFleetModifyConfig): Self = StObject.set(x, "InstanceFleet", value.asInstanceOf[js.Any])
   }
 }

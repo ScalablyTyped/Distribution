@@ -63,8 +63,7 @@ trait ActivityTaskScheduledEventAttributes extends StObject {
 }
 object ActivityTaskScheduledEventAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activityId: ActivityId,
     activityType: ActivityType,
     decisionTaskCompletedEventId: EventId,
@@ -74,61 +73,42 @@ object ActivityTaskScheduledEventAttributes {
     __obj.asInstanceOf[ActivityTaskScheduledEventAttributes]
   }
   
-  @scala.inline
-  implicit class ActivityTaskScheduledEventAttributesMutableBuilder[Self <: ActivityTaskScheduledEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityTaskScheduledEventAttributes](x: Self) {
     
-    @scala.inline
-    def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
+    inline def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityType(value: ActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: ActivityType): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+    inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartbeatTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
+    inline def setHeartbeatTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "heartbeatTimeout", js.undefined)
+    inline def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "heartbeatTimeout", js.undefined)
     
-    @scala.inline
-    def setInput(value: Data): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: Data): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setScheduleToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "scheduleToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setScheduleToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "scheduleToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleToCloseTimeoutUndefined: Self = StObject.set(x, "scheduleToCloseTimeout", js.undefined)
+    inline def setScheduleToCloseTimeoutUndefined: Self = StObject.set(x, "scheduleToCloseTimeout", js.undefined)
     
-    @scala.inline
-    def setScheduleToStartTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "scheduleToStartTimeout", value.asInstanceOf[js.Any])
+    inline def setScheduleToStartTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "scheduleToStartTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleToStartTimeoutUndefined: Self = StObject.set(x, "scheduleToStartTimeout", js.undefined)
+    inline def setScheduleToStartTimeoutUndefined: Self = StObject.set(x, "scheduleToStartTimeout", js.undefined)
     
-    @scala.inline
-    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "startToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "startToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartToCloseTimeoutUndefined: Self = StObject.set(x, "startToCloseTimeout", js.undefined)
+    inline def setStartToCloseTimeoutUndefined: Self = StObject.set(x, "startToCloseTimeout", js.undefined)
     
-    @scala.inline
-    def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
+    inline def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskPriority(value: TaskPriority): Self = StObject.set(x, "taskPriority", value.asInstanceOf[js.Any])
+    inline def setTaskPriority(value: TaskPriority): Self = StObject.set(x, "taskPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskPriorityUndefined: Self = StObject.set(x, "taskPriority", js.undefined)
+    inline def setTaskPriorityUndefined: Self = StObject.set(x, "taskPriority", js.undefined)
   }
 }

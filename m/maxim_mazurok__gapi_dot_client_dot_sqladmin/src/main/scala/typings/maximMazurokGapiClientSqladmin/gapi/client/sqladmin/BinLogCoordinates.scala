@@ -17,31 +17,23 @@ trait BinLogCoordinates extends StObject {
 }
 object BinLogCoordinates {
   
-  @scala.inline
-  def apply(): BinLogCoordinates = {
+  inline def apply(): BinLogCoordinates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BinLogCoordinates]
   }
   
-  @scala.inline
-  implicit class BinLogCoordinatesMutableBuilder[Self <: BinLogCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: BinLogCoordinates](x: Self) {
     
-    @scala.inline
-    def setBinLogFileName(value: String): Self = StObject.set(x, "binLogFileName", value.asInstanceOf[js.Any])
+    inline def setBinLogFileName(value: String): Self = StObject.set(x, "binLogFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinLogFileNameUndefined: Self = StObject.set(x, "binLogFileName", js.undefined)
+    inline def setBinLogFileNameUndefined: Self = StObject.set(x, "binLogFileName", js.undefined)
     
-    @scala.inline
-    def setBinLogPosition(value: String): Self = StObject.set(x, "binLogPosition", value.asInstanceOf[js.Any])
+    inline def setBinLogPosition(value: String): Self = StObject.set(x, "binLogPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinLogPositionUndefined: Self = StObject.set(x, "binLogPosition", js.undefined)
+    inline def setBinLogPositionUndefined: Self = StObject.set(x, "binLogPosition", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

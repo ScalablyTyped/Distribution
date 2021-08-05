@@ -183,167 +183,114 @@ object dialogTypesMod {
   }
   object IDialogProps {
     
-    @scala.inline
-    def apply(): IDialogProps = {
+    inline def apply(): IDialogProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDialogProps]
     }
     
-    @scala.inline
-    implicit class IDialogPropsMutableBuilder[Self <: IDialogProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDialogProps](x: Self) {
       
-      @scala.inline
-      def setAriaDescribedById(value: String): Self = StObject.set(x, "ariaDescribedById", value.asInstanceOf[js.Any])
+      inline def setAriaDescribedById(value: String): Self = StObject.set(x, "ariaDescribedById", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaDescribedByIdUndefined: Self = StObject.set(x, "ariaDescribedById", js.undefined)
+      inline def setAriaDescribedByIdUndefined: Self = StObject.set(x, "ariaDescribedById", js.undefined)
       
-      @scala.inline
-      def setAriaLabelledById(value: String): Self = StObject.set(x, "ariaLabelledById", value.asInstanceOf[js.Any])
+      inline def setAriaLabelledById(value: String): Self = StObject.set(x, "ariaLabelledById", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelledByIdUndefined: Self = StObject.set(x, "ariaLabelledById", js.undefined)
+      inline def setAriaLabelledByIdUndefined: Self = StObject.set(x, "ariaLabelledById", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IDialog]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IDialog]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IDialog | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IDialog | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setDialogContentProps(value: IDialogContentProps): Self = StObject.set(x, "dialogContentProps", value.asInstanceOf[js.Any])
+      inline def setDialogContentProps(value: IDialogContentProps): Self = StObject.set(x, "dialogContentProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogContentPropsUndefined: Self = StObject.set(x, "dialogContentProps", js.undefined)
+      inline def setDialogContentPropsUndefined: Self = StObject.set(x, "dialogContentProps", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setIsBlocking(value: Boolean): Self = StObject.set(x, "isBlocking", value.asInstanceOf[js.Any])
+      inline def setIsBlocking(value: Boolean): Self = StObject.set(x, "isBlocking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBlockingUndefined: Self = StObject.set(x, "isBlocking", js.undefined)
+      inline def setIsBlockingUndefined: Self = StObject.set(x, "isBlocking", js.undefined)
       
-      @scala.inline
-      def setIsDarkOverlay(value: Boolean): Self = StObject.set(x, "isDarkOverlay", value.asInstanceOf[js.Any])
+      inline def setIsDarkOverlay(value: Boolean): Self = StObject.set(x, "isDarkOverlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDarkOverlayUndefined: Self = StObject.set(x, "isDarkOverlay", js.undefined)
+      inline def setIsDarkOverlayUndefined: Self = StObject.set(x, "isDarkOverlay", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setModalProps(value: IModalProps): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
+      inline def setModalProps(value: IModalProps): Self = StObject.set(x, "modalProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
+      inline def setModalPropsUndefined: Self = StObject.set(x, "modalProps", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* ev */ js.UndefOr[MouseEvent[HTMLButtonElement, NativeMouseEvent]] => js.Any): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setOnDismissed(value: () => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
+      inline def setOnDismissed(value: () => js.Any): Self = StObject.set(x, "onDismissed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
+      inline def setOnDismissedUndefined: Self = StObject.set(x, "onDismissed", js.undefined)
       
-      @scala.inline
-      def setOnLayerDidMount(value: () => Unit): Self = StObject.set(x, "onLayerDidMount", js.Any.fromFunction0(value))
+      inline def setOnLayerDidMount(value: () => Unit): Self = StObject.set(x, "onLayerDidMount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLayerDidMountUndefined: Self = StObject.set(x, "onLayerDidMount", js.undefined)
+      inline def setOnLayerDidMountUndefined: Self = StObject.set(x, "onLayerDidMount", js.undefined)
       
-      @scala.inline
-      def setOnLayerMounted(value: () => Unit): Self = StObject.set(x, "onLayerMounted", js.Any.fromFunction0(value))
+      inline def setOnLayerMounted(value: () => Unit): Self = StObject.set(x, "onLayerMounted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLayerMountedUndefined: Self = StObject.set(x, "onLayerMounted", js.undefined)
+      inline def setOnLayerMountedUndefined: Self = StObject.set(x, "onLayerMounted", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IDialogStyleProps, IDialogStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IDialogStyleProps, IDialogStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IDialogStyleProps => DeepPartial[IDialogStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IDialogStyleProps => DeepPartial[IDialogStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setSubText(value: String): Self = StObject.set(x, "subText", value.asInstanceOf[js.Any])
+      inline def setSubText(value: String): Self = StObject.set(x, "subText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubTextUndefined: Self = StObject.set(x, "subText", js.undefined)
+      inline def setSubTextUndefined: Self = StObject.set(x, "subText", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String | Element): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | Element): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTopButtonsProps(value: js.Array[IButtonProps]): Self = StObject.set(x, "topButtonsProps", value.asInstanceOf[js.Any])
+      inline def setTopButtonsProps(value: js.Array[IButtonProps]): Self = StObject.set(x, "topButtonsProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopButtonsPropsUndefined: Self = StObject.set(x, "topButtonsProps", js.undefined)
+      inline def setTopButtonsPropsUndefined: Self = StObject.set(x, "topButtonsProps", js.undefined)
       
-      @scala.inline
-      def setTopButtonsPropsVarargs(value: IButtonProps*): Self = StObject.set(x, "topButtonsProps", js.Array(value :_*))
+      inline def setTopButtonsPropsVarargs(value: IButtonProps*): Self = StObject.set(x, "topButtonsProps", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: DialogType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DialogType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -391,53 +338,38 @@ object dialogTypesMod {
   }
   object IDialogStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IDialogStyleProps = {
+    inline def apply(theme: ITheme): IDialogStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDialogStyleProps]
     }
     
-    @scala.inline
-    implicit class IDialogStylePropsMutableBuilder[Self <: IDialogStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDialogStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
+      inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
+      inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setDialogDefaultMaxWidth(value: String | ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "dialogDefaultMaxWidth", value.asInstanceOf[js.Any])
+      inline def setDialogDefaultMaxWidth(value: String | ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "dialogDefaultMaxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogDefaultMaxWidthUndefined: Self = StObject.set(x, "dialogDefaultMaxWidth", js.undefined)
+      inline def setDialogDefaultMaxWidthUndefined: Self = StObject.set(x, "dialogDefaultMaxWidth", js.undefined)
       
-      @scala.inline
-      def setDialogDefaultMinWidth(value: String | ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "dialogDefaultMinWidth", value.asInstanceOf[js.Any])
+      inline def setDialogDefaultMinWidth(value: String | ICSSRule | ICSSPixelUnitRule): Self = StObject.set(x, "dialogDefaultMinWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogDefaultMinWidthUndefined: Self = StObject.set(x, "dialogDefaultMinWidth", js.undefined)
+      inline def setDialogDefaultMinWidthUndefined: Self = StObject.set(x, "dialogDefaultMinWidth", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -452,32 +384,24 @@ object dialogTypesMod {
   }
   object IDialogStyles {
     
-    @scala.inline
-    def apply(): IDialogStyles = {
+    inline def apply(): IDialogStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDialogStyles]
     }
     
-    @scala.inline
-    implicit class IDialogStylesMutableBuilder[Self <: IDialogStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDialogStyles](x: Self) {
       
-      @scala.inline
-      def setMain(value: IStyle): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: IStyle): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainNull: Self = StObject.set(x, "main", null)
+      inline def setMainNull: Self = StObject.set(x, "main", null)
       
-      @scala.inline
-      def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+      inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

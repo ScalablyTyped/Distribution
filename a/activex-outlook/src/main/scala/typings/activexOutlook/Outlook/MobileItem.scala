@@ -69,7 +69,7 @@ trait MobileItem extends StObject {
   
   var NoAging: Boolean = js.native
   
-  @JSName("Outlook.MobileItem_typekey")
+  /* private */ @JSName("Outlook.MobileItem_typekey")
   var OutlookDotMobileItem_typekey: MobileItem = js.native
   
   val OutlookInternalVersion: Double = js.native

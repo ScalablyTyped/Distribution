@@ -26,20 +26,16 @@ object imageRollNativeMod {
   }
   object ImageRollProps {
     
-    @scala.inline
-    def apply(onCancel: () => Unit, onSelected: js.Object => Unit): ImageRollProps = {
+    inline def apply(onCancel: () => Unit, onSelected: js.Object => Unit): ImageRollProps = {
       val __obj = js.Dynamic.literal(onCancel = js.Any.fromFunction0(onCancel), onSelected = js.Any.fromFunction1(onSelected))
       __obj.asInstanceOf[ImageRollProps]
     }
     
-    @scala.inline
-    implicit class ImageRollPropsMutableBuilder[Self <: ImageRollProps] (val x: Self) extends AnyVal {
+    extension [Self <: ImageRollProps](x: Self) {
       
-      @scala.inline
-      def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSelected(value: js.Object => Unit): Self = StObject.set(x, "onSelected", js.Any.fromFunction1(value))
+      inline def setOnSelected(value: js.Object => Unit): Self = StObject.set(x, "onSelected", js.Any.fromFunction1(value))
     }
   }
 }

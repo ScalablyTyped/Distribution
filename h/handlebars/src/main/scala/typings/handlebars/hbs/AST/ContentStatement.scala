@@ -17,23 +17,18 @@ trait ContentStatement
 }
 object ContentStatement {
   
-  @scala.inline
-  def apply(loc: SourceLocation, original: StripFlags, value: String): ContentStatement = {
+  inline def apply(loc: SourceLocation, original: StripFlags, value: String): ContentStatement = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ContentStatement")
     __obj.asInstanceOf[ContentStatement]
   }
   
-  @scala.inline
-  implicit class ContentStatementMutableBuilder[Self <: ContentStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ContentStatement](x: Self) {
     
-    @scala.inline
-    def setOriginal(value: StripFlags): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: StripFlags): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.ContentStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.handlebars.handlebarsStrings.ContentStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

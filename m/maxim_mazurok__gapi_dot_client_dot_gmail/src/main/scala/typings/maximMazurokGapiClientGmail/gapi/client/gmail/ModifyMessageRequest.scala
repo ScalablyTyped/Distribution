@@ -14,31 +14,23 @@ trait ModifyMessageRequest extends StObject {
 }
 object ModifyMessageRequest {
   
-  @scala.inline
-  def apply(): ModifyMessageRequest = {
+  inline def apply(): ModifyMessageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyMessageRequest]
   }
   
-  @scala.inline
-  implicit class ModifyMessageRequestMutableBuilder[Self <: ModifyMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyMessageRequest](x: Self) {
     
-    @scala.inline
-    def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
+    inline def setAddLabelIds(value: js.Array[String]): Self = StObject.set(x, "addLabelIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
+    inline def setAddLabelIdsUndefined: Self = StObject.set(x, "addLabelIds", js.undefined)
     
-    @scala.inline
-    def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
+    inline def setAddLabelIdsVarargs(value: String*): Self = StObject.set(x, "addLabelIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
+    inline def setRemoveLabelIds(value: js.Array[String]): Self = StObject.set(x, "removeLabelIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
+    inline def setRemoveLabelIdsUndefined: Self = StObject.set(x, "removeLabelIds", js.undefined)
     
-    @scala.inline
-    def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
+    inline def setRemoveLabelIdsVarargs(value: String*): Self = StObject.set(x, "removeLabelIds", js.Array(value :_*))
   }
 }

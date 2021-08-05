@@ -16,22 +16,17 @@ trait SchemaUrlCrawlErrorsSamplesListResponse extends StObject {
 }
 object SchemaUrlCrawlErrorsSamplesListResponse {
   
-  @scala.inline
-  def apply(): SchemaUrlCrawlErrorsSamplesListResponse = {
+  inline def apply(): SchemaUrlCrawlErrorsSamplesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlCrawlErrorsSamplesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUrlCrawlErrorsSamplesListResponseMutableBuilder[Self <: SchemaUrlCrawlErrorsSamplesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlCrawlErrorsSamplesListResponse](x: Self) {
     
-    @scala.inline
-    def setUrlCrawlErrorSample(value: js.Array[SchemaUrlCrawlErrorsSample]): Self = StObject.set(x, "urlCrawlErrorSample", value.asInstanceOf[js.Any])
+    inline def setUrlCrawlErrorSample(value: js.Array[SchemaUrlCrawlErrorsSample]): Self = StObject.set(x, "urlCrawlErrorSample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlCrawlErrorSampleUndefined: Self = StObject.set(x, "urlCrawlErrorSample", js.undefined)
+    inline def setUrlCrawlErrorSampleUndefined: Self = StObject.set(x, "urlCrawlErrorSample", js.undefined)
     
-    @scala.inline
-    def setUrlCrawlErrorSampleVarargs(value: SchemaUrlCrawlErrorsSample*): Self = StObject.set(x, "urlCrawlErrorSample", js.Array(value :_*))
+    inline def setUrlCrawlErrorSampleVarargs(value: SchemaUrlCrawlErrorsSample*): Self = StObject.set(x, "urlCrawlErrorSample", js.Array(value :_*))
   }
 }

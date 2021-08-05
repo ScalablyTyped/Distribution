@@ -13,6 +13,5 @@ object recordMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def atRecord[A](): At_[Record[String, A], String, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atRecord")().asInstanceOf[At_[Record[String, A], String, Option_[A]]]
+  inline def atRecord[A](): At_[Record[String, A], String, Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atRecord")().asInstanceOf[At_[Record[String, A], String, Option_[A]]]
 }

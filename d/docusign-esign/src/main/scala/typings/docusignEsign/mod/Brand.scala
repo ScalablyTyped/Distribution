@@ -200,132 +200,95 @@ trait Brand extends StObject {
 }
 object Brand {
   
-  @scala.inline
-  def apply(): Brand = {
+  inline def apply(): Brand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Brand]
   }
   
-  @scala.inline
-  implicit class BrandMutableBuilder[Self <: Brand] (val x: Self) extends AnyVal {
+  extension [Self <: Brand](x: Self) {
     
-    @scala.inline
-    def setBrandCompany(value: String): Self = StObject.set(x, "brandCompany", value.asInstanceOf[js.Any])
+    inline def setBrandCompany(value: String): Self = StObject.set(x, "brandCompany", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandCompanyUndefined: Self = StObject.set(x, "brandCompany", js.undefined)
+    inline def setBrandCompanyUndefined: Self = StObject.set(x, "brandCompany", js.undefined)
     
-    @scala.inline
-    def setBrandId(value: String): Self = StObject.set(x, "brandId", value.asInstanceOf[js.Any])
+    inline def setBrandId(value: String): Self = StObject.set(x, "brandId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandIdUndefined: Self = StObject.set(x, "brandId", js.undefined)
+    inline def setBrandIdUndefined: Self = StObject.set(x, "brandId", js.undefined)
     
-    @scala.inline
-    def setBrandLanguages(value: js.Array[String]): Self = StObject.set(x, "brandLanguages", value.asInstanceOf[js.Any])
+    inline def setBrandLanguages(value: js.Array[String]): Self = StObject.set(x, "brandLanguages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandLanguagesUndefined: Self = StObject.set(x, "brandLanguages", js.undefined)
+    inline def setBrandLanguagesUndefined: Self = StObject.set(x, "brandLanguages", js.undefined)
     
-    @scala.inline
-    def setBrandLanguagesVarargs(value: String*): Self = StObject.set(x, "brandLanguages", js.Array(value :_*))
+    inline def setBrandLanguagesVarargs(value: String*): Self = StObject.set(x, "brandLanguages", js.Array(value :_*))
     
-    @scala.inline
-    def setBrandName(value: String): Self = StObject.set(x, "brandName", value.asInstanceOf[js.Any])
+    inline def setBrandName(value: String): Self = StObject.set(x, "brandName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandNameUndefined: Self = StObject.set(x, "brandName", js.undefined)
+    inline def setBrandNameUndefined: Self = StObject.set(x, "brandName", js.undefined)
     
-    @scala.inline
-    def setColors(
+    inline def setColors(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
     ): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColorsVarargs(
+    inline def setColorsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
     ): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultBrandLanguage(value: String): Self = StObject.set(x, "defaultBrandLanguage", value.asInstanceOf[js.Any])
+    inline def setDefaultBrandLanguage(value: String): Self = StObject.set(x, "defaultBrandLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultBrandLanguageUndefined: Self = StObject.set(x, "defaultBrandLanguage", js.undefined)
+    inline def setDefaultBrandLanguageUndefined: Self = StObject.set(x, "defaultBrandLanguage", js.undefined)
     
-    @scala.inline
-    def setEmailContent(value: js.Array[/* Deprecated. */ BrandEmailContent]): Self = StObject.set(x, "emailContent", value.asInstanceOf[js.Any])
+    inline def setEmailContent(value: js.Array[/* Deprecated. */ BrandEmailContent]): Self = StObject.set(x, "emailContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailContentUndefined: Self = StObject.set(x, "emailContent", js.undefined)
+    inline def setEmailContentUndefined: Self = StObject.set(x, "emailContent", js.undefined)
     
-    @scala.inline
-    def setEmailContentVarargs(value: (/* Deprecated. */ BrandEmailContent)*): Self = StObject.set(x, "emailContent", js.Array(value :_*))
+    inline def setEmailContentVarargs(value: (/* Deprecated. */ BrandEmailContent)*): Self = StObject.set(x, "emailContent", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setIsOverridingCompanyName(value: Boolean): Self = StObject.set(x, "isOverridingCompanyName", value.asInstanceOf[js.Any])
+    inline def setIsOverridingCompanyName(value: Boolean): Self = StObject.set(x, "isOverridingCompanyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOverridingCompanyNameUndefined: Self = StObject.set(x, "isOverridingCompanyName", js.undefined)
+    inline def setIsOverridingCompanyNameUndefined: Self = StObject.set(x, "isOverridingCompanyName", js.undefined)
     
-    @scala.inline
-    def setIsSendingDefault(value: Boolean): Self = StObject.set(x, "isSendingDefault", value.asInstanceOf[js.Any])
+    inline def setIsSendingDefault(value: Boolean): Self = StObject.set(x, "isSendingDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSendingDefaultUndefined: Self = StObject.set(x, "isSendingDefault", js.undefined)
+    inline def setIsSendingDefaultUndefined: Self = StObject.set(x, "isSendingDefault", js.undefined)
     
-    @scala.inline
-    def setIsSigningDefault(value: Boolean): Self = StObject.set(x, "isSigningDefault", value.asInstanceOf[js.Any])
+    inline def setIsSigningDefault(value: Boolean): Self = StObject.set(x, "isSigningDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSigningDefaultUndefined: Self = StObject.set(x, "isSigningDefault", js.undefined)
+    inline def setIsSigningDefaultUndefined: Self = StObject.set(x, "isSigningDefault", js.undefined)
     
-    @scala.inline
-    def setLandingPages(
+    inline def setLandingPages(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
     ): Self = StObject.set(x, "landingPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandingPagesUndefined: Self = StObject.set(x, "landingPages", js.undefined)
+    inline def setLandingPagesUndefined: Self = StObject.set(x, "landingPages", js.undefined)
     
-    @scala.inline
-    def setLandingPagesVarargs(
+    inline def setLandingPagesVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
     ): Self = StObject.set(x, "landingPages", js.Array(value :_*))
     
-    @scala.inline
-    def setLinks(value: js.Array[/* Information about a link that a brand uses. */ BrandLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: js.Array[/* Information about a link that a brand uses. */ BrandLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setLinksVarargs(value: (/* Information about a link that a brand uses. */ BrandLink)*): Self = StObject.set(x, "links", js.Array(value :_*))
+    inline def setLinksVarargs(value: (/* Information about a link that a brand uses. */ BrandLink)*): Self = StObject.set(x, "links", js.Array(value :_*))
     
-    @scala.inline
-    def setLogos(value: /* Information about the logos associated with the brand. */ BrandLogos): Self = StObject.set(x, "logos", value.asInstanceOf[js.Any])
+    inline def setLogos(value: /* Information about the logos associated with the brand. */ BrandLogos): Self = StObject.set(x, "logos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogosUndefined: Self = StObject.set(x, "logos", js.undefined)
+    inline def setLogosUndefined: Self = StObject.set(x, "logos", js.undefined)
     
-    @scala.inline
-    def setResources(value: BrandResourceUrls): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: BrandResourceUrls): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
   }
 }

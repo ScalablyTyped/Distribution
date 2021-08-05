@@ -12,19 +12,15 @@ trait TraceBufferUsageReturnValue extends StObject {
 }
 object TraceBufferUsageReturnValue {
   
-  @scala.inline
-  def apply(percentage: Double, value: Double): TraceBufferUsageReturnValue = {
+  inline def apply(percentage: Double, value: Double): TraceBufferUsageReturnValue = {
     val __obj = js.Dynamic.literal(percentage = percentage.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceBufferUsageReturnValue]
   }
   
-  @scala.inline
-  implicit class TraceBufferUsageReturnValueMutableBuilder[Self <: TraceBufferUsageReturnValue] (val x: Self) extends AnyVal {
+  extension [Self <: TraceBufferUsageReturnValue](x: Self) {
     
-    @scala.inline
-    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

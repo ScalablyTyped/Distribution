@@ -22,55 +22,39 @@ trait UIkitLightboxOptions extends StObject {
 }
 object UIkitLightboxOptions {
   
-  @scala.inline
-  def apply(): UIkitLightboxOptions = {
+  inline def apply(): UIkitLightboxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitLightboxOptions]
   }
   
-  @scala.inline
-  implicit class UIkitLightboxOptionsMutableBuilder[Self <: UIkitLightboxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitLightboxOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setAutoplay(value: Double): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    inline def setAutoplay(value: Double): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAutoplay-interval`(value: Double): Self = StObject.set(x, "autoplay-interval", value.asInstanceOf[js.Any])
+    inline def `setAutoplay-interval`(value: Double): Self = StObject.set(x, "autoplay-interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAutoplay-intervalUndefined`: Self = StObject.set(x, "autoplay-interval", js.undefined)
+    inline def `setAutoplay-intervalUndefined`: Self = StObject.set(x, "autoplay-interval", js.undefined)
     
-    @scala.inline
-    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def `setPause-on-hover`(value: Boolean): Self = StObject.set(x, "pause-on-hover", value.asInstanceOf[js.Any])
+    inline def `setPause-on-hover`(value: Boolean): Self = StObject.set(x, "pause-on-hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPause-on-hoverUndefined`: Self = StObject.set(x, "pause-on-hover", js.undefined)
+    inline def `setPause-on-hoverUndefined`: Self = StObject.set(x, "pause-on-hover", js.undefined)
     
-    @scala.inline
-    def setToggle(value: String): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    inline def setToggle(value: String): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
     
-    @scala.inline
-    def `setVideo-autoplay`(value: Boolean): Self = StObject.set(x, "video-autoplay", value.asInstanceOf[js.Any])
+    inline def `setVideo-autoplay`(value: Boolean): Self = StObject.set(x, "video-autoplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setVideo-autoplayUndefined`: Self = StObject.set(x, "video-autoplay", js.undefined)
+    inline def `setVideo-autoplayUndefined`: Self = StObject.set(x, "video-autoplay", js.undefined)
   }
 }

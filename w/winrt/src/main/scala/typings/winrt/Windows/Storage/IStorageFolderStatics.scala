@@ -11,16 +11,13 @@ trait IStorageFolderStatics extends StObject {
 }
 object IStorageFolderStatics {
   
-  @scala.inline
-  def apply(getFolderFromPathAsync: String => IAsyncOperation[StorageFolder]): IStorageFolderStatics = {
+  inline def apply(getFolderFromPathAsync: String => IAsyncOperation[StorageFolder]): IStorageFolderStatics = {
     val __obj = js.Dynamic.literal(getFolderFromPathAsync = js.Any.fromFunction1(getFolderFromPathAsync))
     __obj.asInstanceOf[IStorageFolderStatics]
   }
   
-  @scala.inline
-  implicit class IStorageFolderStaticsMutableBuilder[Self <: IStorageFolderStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IStorageFolderStatics](x: Self) {
     
-    @scala.inline
-    def setGetFolderFromPathAsync(value: String => IAsyncOperation[StorageFolder]): Self = StObject.set(x, "getFolderFromPathAsync", js.Any.fromFunction1(value))
+    inline def setGetFolderFromPathAsync(value: String => IAsyncOperation[StorageFolder]): Self = StObject.set(x, "getFolderFromPathAsync", js.Any.fromFunction1(value))
   }
 }

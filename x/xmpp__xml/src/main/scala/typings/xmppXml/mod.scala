@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(name: String, attrs: String, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(name: String, attrs: StringDictionary[js.Any], children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def apply(name: String, attrs: Unit, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(name: String, attrs: String, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(name: String, attrs: StringDictionary[js.Any], children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(name: String, attrs: Unit, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   @JSImport("@xmpp/xml", JSImport.Namespace)
   @js.native
@@ -78,12 +75,9 @@ object mod {
   @js.native
   val unescapeXMLText: js.Function1[/* s */ String, String] = js.native
   
-  @scala.inline
-  def x(name: String, attrs: String, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def x(name: String, attrs: StringDictionary[js.Any], children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
-  @scala.inline
-  def x(name: String, attrs: Unit, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def x(name: String, attrs: String, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def x(name: String, attrs: StringDictionary[js.Any], children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def x(name: String, attrs: Unit, children: ElementChild*): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("x")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Element]
   
   type ElementChild = Element | js.Array[Element] | String | Double | Boolean
   
@@ -96,17 +90,14 @@ object mod {
   }
   object XMLError {
     
-    @scala.inline
-    def apply(message: String): XMLError = {
+    inline def apply(message: String): XMLError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "XMLError")
       __obj.asInstanceOf[XMLError]
     }
     
-    @scala.inline
-    implicit class XMLErrorMutableBuilder[Self <: XMLError] (val x: Self) extends AnyVal {
+    extension [Self <: XMLError](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.xmppXml.xmppXmlStrings.XMLError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.xmppXml.xmppXmlStrings.XMLError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

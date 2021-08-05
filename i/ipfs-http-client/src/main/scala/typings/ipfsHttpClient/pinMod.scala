@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pinMod {
   
-  @scala.inline
-  def apply(config: js.Any): AddAll = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[AddAll]
+  inline def apply(config: js.Any): AddAll = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[AddAll]
   
   @JSImport("ipfs-http-client/dist/src/pin", JSImport.Namespace)
   @js.native

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccuracyUnits extends StObject
 object AccuracyUnits {
   
-  @scala.inline
-  def mm: typings.ipp.ippStrings.mm = "mm".asInstanceOf[typings.ipp.ippStrings.mm]
+  inline def mm: typings.ipp.ippStrings.mm = "mm".asInstanceOf[typings.ipp.ippStrings.mm]
   
-  @scala.inline
-  def nm: typings.ipp.ippStrings.nm = "nm".asInstanceOf[typings.ipp.ippStrings.nm]
+  inline def nm: typings.ipp.ippStrings.nm = "nm".asInstanceOf[typings.ipp.ippStrings.nm]
   
-  @scala.inline
-  def um: typings.ipp.ippStrings.um = "um".asInstanceOf[typings.ipp.ippStrings.um]
+  inline def um: typings.ipp.ippStrings.um = "um".asInstanceOf[typings.ipp.ippStrings.um]
 }

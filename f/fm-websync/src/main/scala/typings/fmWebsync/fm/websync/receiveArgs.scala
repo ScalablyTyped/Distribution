@@ -26,8 +26,7 @@ trait receiveArgs
 }
 object receiveArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: String,
     client: client,
     clientId: String,
@@ -40,16 +39,12 @@ object receiveArgs {
     __obj.asInstanceOf[receiveArgs]
   }
   
-  @scala.inline
-  implicit class receiveArgsMutableBuilder[Self <: receiveArgs] (val x: Self) extends AnyVal {
+  extension [Self <: receiveArgs](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishingClient(value: publishingClient): Self = StObject.set(x, "publishingClient", value.asInstanceOf[js.Any])
+    inline def setPublishingClient(value: publishingClient): Self = StObject.set(x, "publishingClient", value.asInstanceOf[js.Any])
   }
 }

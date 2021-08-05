@@ -12,19 +12,15 @@ trait AddAccount extends StObject {
 }
 object AddAccount {
   
-  @scala.inline
-  def apply(address: String, privateKey: String): AddAccount = {
+  inline def apply(address: String, privateKey: String): AddAccount = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAccount]
   }
   
-  @scala.inline
-  implicit class AddAccountMutableBuilder[Self <: AddAccount] (val x: Self) extends AnyVal {
+  extension [Self <: AddAccount](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
   }
 }

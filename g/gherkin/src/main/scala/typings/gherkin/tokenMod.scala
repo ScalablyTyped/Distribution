@@ -72,8 +72,7 @@ object tokenMod {
   }
   object Token {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       detach: () => Unit,
       getTokenValue: () => String,
       isEof: Boolean,
@@ -89,47 +88,33 @@ object tokenMod {
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
+      inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTokenValue(value: () => String): Self = StObject.set(x, "getTokenValue", js.Any.fromFunction0(value))
+      inline def setGetTokenValue(value: () => String): Self = StObject.set(x, "getTokenValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEof(value: Boolean): Self = StObject.set(x, "isEof", value.asInstanceOf[js.Any])
+      inline def setIsEof(value: Boolean): Self = StObject.set(x, "isEof", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: typings.gherkin.gherkinLineMod.default): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: typings.gherkin.gherkinLineMod.default): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchedGherkinDialect(value: String): Self = StObject.set(x, "matchedGherkinDialect", value.asInstanceOf[js.Any])
+      inline def setMatchedGherkinDialect(value: String): Self = StObject.set(x, "matchedGherkinDialect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchedIndent(value: Double): Self = StObject.set(x, "matchedIndent", value.asInstanceOf[js.Any])
+      inline def setMatchedIndent(value: Double): Self = StObject.set(x, "matchedIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchedItems(value: js.Array[typings.gherkin.gherkinLineMod.default]): Self = StObject.set(x, "matchedItems", value.asInstanceOf[js.Any])
+      inline def setMatchedItems(value: js.Array[typings.gherkin.gherkinLineMod.default]): Self = StObject.set(x, "matchedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchedItemsVarargs(value: typings.gherkin.gherkinLineMod.default*): Self = StObject.set(x, "matchedItems", js.Array(value :_*))
+      inline def setMatchedItemsVarargs(value: typings.gherkin.gherkinLineMod.default*): Self = StObject.set(x, "matchedItems", js.Array(value :_*))
       
-      @scala.inline
-      def setMatchedKeyword(value: String): Self = StObject.set(x, "matchedKeyword", value.asInstanceOf[js.Any])
+      inline def setMatchedKeyword(value: String): Self = StObject.set(x, "matchedKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchedText(value: String): Self = StObject.set(x, "matchedText", value.asInstanceOf[js.Any])
+      inline def setMatchedText(value: String): Self = StObject.set(x, "matchedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchedTextUndefined: Self = StObject.set(x, "matchedText", js.undefined)
+      inline def setMatchedTextUndefined: Self = StObject.set(x, "matchedText", js.undefined)
       
-      @scala.inline
-      def setMatchedType(value: TokenType): Self = StObject.set(x, "matchedType", value.asInstanceOf[js.Any])
+      inline def setMatchedType(value: TokenType): Self = StObject.set(x, "matchedType", value.asInstanceOf[js.Any])
     }
   }
 }

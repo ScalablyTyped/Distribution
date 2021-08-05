@@ -35,25 +35,19 @@ trait PlusWebviewWebviewDragOtherViewOptions extends StObject {
 }
 object PlusWebviewWebviewDragOtherViewOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewDragOtherViewOptions = {
+  inline def apply(): PlusWebviewWebviewDragOtherViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewDragOtherViewOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewDragOtherViewOptionsMutableBuilder[Self <: PlusWebviewWebviewDragOtherViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewDragOtherViewOptions](x: Self) {
     
-    @scala.inline
-    def setMoveMode(value: follow | silent): Self = StObject.set(x, "moveMode", value.asInstanceOf[js.Any])
+    inline def setMoveMode(value: follow | silent): Self = StObject.set(x, "moveMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveModeUndefined: Self = StObject.set(x, "moveMode", js.undefined)
+    inline def setMoveModeUndefined: Self = StObject.set(x, "moveMode", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

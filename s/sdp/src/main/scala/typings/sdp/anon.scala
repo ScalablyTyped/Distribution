@@ -14,20 +14,16 @@ object anon {
   }
   object Mechanism {
     
-    @scala.inline
-    def apply(mechanism: String, ssrc: Double): Mechanism = {
+    inline def apply(mechanism: String, ssrc: Double): Mechanism = {
       val __obj = js.Dynamic.literal(mechanism = mechanism.asInstanceOf[js.Any], ssrc = ssrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mechanism]
     }
     
-    @scala.inline
-    implicit class MechanismMutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
+    extension [Self <: Mechanism](x: Self) {
       
-      @scala.inline
-      def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
+      inline def setMechanism(value: String): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
+      inline def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object Ssrc {
     
-    @scala.inline
-    def apply(ssrc: Double): Ssrc = {
+    inline def apply(ssrc: Double): Ssrc = {
       val __obj = js.Dynamic.literal(ssrc = ssrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ssrc]
     }
     
-    @scala.inline
-    implicit class SsrcMutableBuilder[Self <: Ssrc] (val x: Self) extends AnyVal {
+    extension [Self <: Ssrc](x: Self) {
       
-      @scala.inline
-      def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
+      inline def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
     }
   }
 }

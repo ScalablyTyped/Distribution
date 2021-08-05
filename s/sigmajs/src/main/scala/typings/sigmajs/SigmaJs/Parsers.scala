@@ -16,8 +16,7 @@ trait Parsers extends StObject {
 }
 object Parsers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gexf: (/* target */ String, /* sigma */ Sigma, /* callback */ js.Function1[/* graph */ Sigma, Unit]) => Unit,
     json: (/* target */ String, /* sigma */ Sigma, /* callback */ js.Function1[/* graph */ Sigma, Unit]) => Unit
   ): Parsers = {
@@ -25,16 +24,13 @@ object Parsers {
     __obj.asInstanceOf[Parsers]
   }
   
-  @scala.inline
-  implicit class ParsersMutableBuilder[Self <: Parsers] (val x: Self) extends AnyVal {
+  extension [Self <: Parsers](x: Self) {
     
-    @scala.inline
-    def setGexf(
+    inline def setGexf(
       value: (/* target */ String, /* sigma */ Sigma, /* callback */ js.Function1[/* graph */ Sigma, Unit]) => Unit
     ): Self = StObject.set(x, "gexf", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setJson(
+    inline def setJson(
       value: (/* target */ String, /* sigma */ Sigma, /* callback */ js.Function1[/* graph */ Sigma, Unit]) => Unit
     ): Self = StObject.set(x, "json", js.Any.fromFunction3(value))
   }

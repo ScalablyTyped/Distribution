@@ -15,16 +15,13 @@ trait IGenericHyperCubeProperties
 }
 object IGenericHyperCubeProperties {
   
-  @scala.inline
-  def apply(qHyperCubeDef: IVisualizationHyperCubeDef, qInfo: INxInfo): IGenericHyperCubeProperties = {
+  inline def apply(qHyperCubeDef: IVisualizationHyperCubeDef, qInfo: INxInfo): IGenericHyperCubeProperties = {
     val __obj = js.Dynamic.literal(qHyperCubeDef = qHyperCubeDef.asInstanceOf[js.Any], qInfo = qInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericHyperCubeProperties]
   }
   
-  @scala.inline
-  implicit class IGenericHyperCubePropertiesMutableBuilder[Self <: IGenericHyperCubeProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericHyperCubeProperties](x: Self) {
     
-    @scala.inline
-    def setQHyperCubeDef(value: IVisualizationHyperCubeDef): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
+    inline def setQHyperCubeDef(value: IVisualizationHyperCubeDef): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
   }
 }

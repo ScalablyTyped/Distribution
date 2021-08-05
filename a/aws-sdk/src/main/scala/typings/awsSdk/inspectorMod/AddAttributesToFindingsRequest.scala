@@ -18,25 +18,19 @@ trait AddAttributesToFindingsRequest extends StObject {
 }
 object AddAttributesToFindingsRequest {
   
-  @scala.inline
-  def apply(attributes: UserAttributeList, findingArns: AddRemoveAttributesFindingArnList): AddAttributesToFindingsRequest = {
+  inline def apply(attributes: UserAttributeList, findingArns: AddRemoveAttributesFindingArnList): AddAttributesToFindingsRequest = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], findingArns = findingArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAttributesToFindingsRequest]
   }
   
-  @scala.inline
-  implicit class AddAttributesToFindingsRequestMutableBuilder[Self <: AddAttributesToFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddAttributesToFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: UserAttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: UserAttributeList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setFindingArns(value: AddRemoveAttributesFindingArnList): Self = StObject.set(x, "findingArns", value.asInstanceOf[js.Any])
+    inline def setFindingArns(value: AddRemoveAttributesFindingArnList): Self = StObject.set(x, "findingArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value :_*))
+    inline def setFindingArnsVarargs(value: Arn*): Self = StObject.set(x, "findingArns", js.Array(value :_*))
   }
 }

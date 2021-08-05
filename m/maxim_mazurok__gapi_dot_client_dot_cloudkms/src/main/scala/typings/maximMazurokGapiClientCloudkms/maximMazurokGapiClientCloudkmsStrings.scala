@@ -8,21 +8,17 @@ object maximMazurokGapiClientCloudkmsStrings {
   
   @js.native
   sealed trait CryptoKey extends StObject
-  @scala.inline
-  def CryptoKey: CryptoKey = "CryptoKey".asInstanceOf[CryptoKey]
+  inline def CryptoKey: CryptoKey = "CryptoKey".asInstanceOf[CryptoKey]
   
   @js.native
   sealed trait Location extends StObject
-  @scala.inline
-  def Location: Location = "Location".asInstanceOf[Location]
+  inline def Location: Location = "Location".asInstanceOf[Location]
   
   @js.native
   sealed trait cloudkms extends StObject
-  @scala.inline
-  def cloudkms: cloudkms = "cloudkms".asInstanceOf[cloudkms]
+  inline def cloudkms: cloudkms = "cloudkms".asInstanceOf[cloudkms]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

@@ -14,22 +14,17 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(setEnabled: String => Unit, setImagePath: String => Unit, setTitle: String => Unit): Item = {
+  inline def apply(setEnabled: String => Unit, setImagePath: String => Unit, setTitle: String => Unit): Item = {
     val __obj = js.Dynamic.literal(setEnabled = js.Any.fromFunction1(setEnabled), setImagePath = js.Any.fromFunction1(setImagePath), setTitle = js.Any.fromFunction1(setTitle))
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setSetEnabled(value: String => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
+    inline def setSetEnabled(value: String => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImagePath(value: String => Unit): Self = StObject.set(x, "setImagePath", js.Any.fromFunction1(value))
+    inline def setSetImagePath(value: String => Unit): Self = StObject.set(x, "setImagePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
   }
 }

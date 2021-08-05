@@ -90,41 +90,32 @@ object mod {
     var spec: MenuItemSpec[S] = js.native
   }
   
-  @scala.inline
-  def blockTypeItem[S /* <: Schema[js.Any, js.Any] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("blockTypeItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
+  inline def blockTypeItem[S /* <: Schema[js.Any, js.Any] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("blockTypeItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
   
   @JSImport("prosemirror-menu", "joinUpItem")
   @js.native
   def joinUpItem: MenuItem[js.Any] = js.native
-  @scala.inline
-  def joinUpItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("joinUpItem")(x.asInstanceOf[js.Any])
+  inline def joinUpItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("joinUpItem")(x.asInstanceOf[js.Any])
   
   @JSImport("prosemirror-menu", "liftItem")
   @js.native
   def liftItem: MenuItem[js.Any] = js.native
-  @scala.inline
-  def liftItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("liftItem")(x.asInstanceOf[js.Any])
+  inline def liftItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("liftItem")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def menuBar[S /* <: Schema[js.Any, js.Any] */](options: Content[S]): Plugin[S, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("menuBar")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[S, js.Any]]
+  inline def menuBar[S /* <: Schema[js.Any, js.Any] */](options: Content[S]): Plugin[S, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("menuBar")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[S, js.Any]]
   
-  @scala.inline
-  def redoItem(p: StringDictionary[js.Any]): MenuItem[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("redoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[js.Any]]
+  inline def redoItem(p: StringDictionary[js.Any]): MenuItem[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("redoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[js.Any]]
   
-  @scala.inline
-  def renderGrouped[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], content: js.Array[MenuElement[S] | js.Array[MenuElement[S]]]): DomUpdate[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGrouped")(view.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[DomUpdate[S]]
+  inline def renderGrouped[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], content: js.Array[MenuElement[S] | js.Array[MenuElement[S]]]): DomUpdate[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGrouped")(view.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[DomUpdate[S]]
   
   @JSImport("prosemirror-menu", "selectParentNodeItem")
   @js.native
   def selectParentNodeItem: MenuItem[js.Any] = js.native
-  @scala.inline
-  def selectParentNodeItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectParentNodeItem")(x.asInstanceOf[js.Any])
+  inline def selectParentNodeItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectParentNodeItem")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def undoItem(p: StringDictionary[js.Any]): MenuItem[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("undoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[js.Any]]
+  inline def undoItem(p: StringDictionary[js.Any]): MenuItem[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("undoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[js.Any]]
   
-  @scala.inline
-  def wrapItem[S /* <: Schema[js.Any, js.Any] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
+  inline def wrapItem[S /* <: Schema[js.Any, js.Any] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
   
   trait MenuElement[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
@@ -138,17 +129,14 @@ object mod {
   }
   object MenuElement {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](render: EditorView[S] => Dom[S]): MenuElement[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](render: EditorView[S] => Dom[S]): MenuElement[S] = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[MenuElement[S]]
     }
     
-    @scala.inline
-    implicit class MenuElementMutableBuilder[Self <: MenuElement[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & MenuElement[S]) extends AnyVal {
+    extension [Self <: MenuElement[?], S /* <: Schema[js.Any, js.Any] */](x: Self & MenuElement[S]) {
       
-      @scala.inline
-      def setRender(value: EditorView[S] => Dom[S]): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: EditorView[S] => Dom[S]): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
   }
   
@@ -223,95 +211,66 @@ object mod {
   }
   object MenuItemSpec {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](run: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit): MenuItemSpec[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](run: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit): MenuItemSpec[S] = {
       val __obj = js.Dynamic.literal(run = js.Any.fromFunction4(run))
       __obj.asInstanceOf[MenuItemSpec[S]]
     }
     
-    @scala.inline
-    implicit class MenuItemSpecMutableBuilder[Self <: MenuItemSpec[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & MenuItemSpec[S]) extends AnyVal {
+    extension [Self <: MenuItemSpec[?], S /* <: Schema[js.Any, js.Any] */](x: Self & MenuItemSpec[S]) {
       
-      @scala.inline
-      def setActive(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction1(value))
+      inline def setActive(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActiveNull: Self = StObject.set(x, "active", null)
+      inline def setActiveNull: Self = StObject.set(x, "active", null)
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+      inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      @scala.inline
-      def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setEnable(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
+      inline def setEnable(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnableNull: Self = StObject.set(x, "enable", null)
+      inline def setEnableNull: Self = StObject.set(x, "enable", null)
       
-      @scala.inline
-      def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+      inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
       
-      @scala.inline
-      def setIcon(value: StringDictionary[js.Any]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: StringDictionary[js.Any]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelNull: Self = StObject.set(x, "label", null)
+      inline def setLabelNull: Self = StObject.set(x, "label", null)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* p */ EditorView[S] => Node): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* p */ EditorView[S] => Node): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderNull: Self = StObject.set(x, "render", null)
+      inline def setRenderNull: Self = StObject.set(x, "render", null)
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setRun(value: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction4(value))
+      inline def setRun(value: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSelect(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+      inline def setSelect(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectNull: Self = StObject.set(x, "select", null)
+      inline def setSelectNull: Self = StObject.set(x, "select", null)
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String | (js.Function1[/* p */ EditorState[S], String])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | (js.Function1[/* p */ EditorState[S], String])): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFunction1(value: /* p */ EditorState[S] => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
+      inline def setTitleFunction1(value: /* p */ EditorState[S] => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitleNull: Self = StObject.set(x, "title", null)
+      inline def setTitleNull: Self = StObject.set(x, "title", null)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

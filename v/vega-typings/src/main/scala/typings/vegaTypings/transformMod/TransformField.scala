@@ -13,20 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransformField extends StObject
 object TransformField {
   
-  @scala.inline
-  def ExprRef(expr: Expr): typings.vegaTypings.exprMod.ExprRef = {
+  inline def ExprRef(expr: Expr): typings.vegaTypings.exprMod.ExprRef = {
     val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaTypings.exprMod.ExprRef]
   }
   
-  @scala.inline
-  def FieldParam(field: String): typings.vegaTypings.transformMod.FieldParam = {
+  inline def FieldParam(field: String): typings.vegaTypings.transformMod.FieldParam = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaTypings.transformMod.FieldParam]
   }
   
-  @scala.inline
-  def SignalRef(signal: String): typings.vegaTypings.signalMod.SignalRef = {
+  inline def SignalRef(signal: String): typings.vegaTypings.signalMod.SignalRef = {
     val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.vegaTypings.signalMod.SignalRef]
   }

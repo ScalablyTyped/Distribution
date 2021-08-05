@@ -12,20 +12,20 @@ object interactionModeMod {
   class InteractionModeEngine protected () extends StObject {
     def this(container: Element, className: String) = this()
     
-    var className: js.Any = js.native
+    /* private */ var className: js.Any = js.native
     
-    var container: js.Any = js.native
+    /* private */ var container: js.Any = js.native
     
-    var handleKeyDown: js.Any = js.native
+    /* private */ var handleKeyDown: js.Any = js.native
     
-    var handleMouseDown: js.Any = js.native
+    /* private */ var handleMouseDown: js.Any = js.native
     
     /** Returns whether the engine is currently running. */
     def isActive(): Boolean = js.native
     
-    var isRunning: js.Any = js.native
+    /* private */ var isRunning: js.Any = js.native
     
-    var reset: js.Any = js.native
+    /* private */ var reset: js.Any = js.native
     
     /** Enable behavior which applies the given className when in mouse mode. */
     def start(): Unit = js.native

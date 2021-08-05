@@ -75,85 +75,59 @@ trait MetricDescriptor extends StObject {
 }
 object MetricDescriptor {
   
-  @scala.inline
-  def apply(): MetricDescriptor = {
+  inline def apply(): MetricDescriptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricDescriptor]
   }
   
-  @scala.inline
-  implicit class MetricDescriptorMutableBuilder[Self <: MetricDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: MetricDescriptor](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Array[LabelDescriptor]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[LabelDescriptor]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setLaunchStage(value: String): Self = StObject.set(x, "launchStage", value.asInstanceOf[js.Any])
+    inline def setLaunchStage(value: String): Self = StObject.set(x, "launchStage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchStageUndefined: Self = StObject.set(x, "launchStage", js.undefined)
+    inline def setLaunchStageUndefined: Self = StObject.set(x, "launchStage", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: MetricDescriptorMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: MetricDescriptorMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setMetricKind(value: String): Self = StObject.set(x, "metricKind", value.asInstanceOf[js.Any])
+    inline def setMetricKind(value: String): Self = StObject.set(x, "metricKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricKindUndefined: Self = StObject.set(x, "metricKind", js.undefined)
+    inline def setMetricKindUndefined: Self = StObject.set(x, "metricKind", js.undefined)
     
-    @scala.inline
-    def setMonitoredResourceTypes(value: js.Array[String]): Self = StObject.set(x, "monitoredResourceTypes", value.asInstanceOf[js.Any])
+    inline def setMonitoredResourceTypes(value: js.Array[String]): Self = StObject.set(x, "monitoredResourceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoredResourceTypesUndefined: Self = StObject.set(x, "monitoredResourceTypes", js.undefined)
+    inline def setMonitoredResourceTypesUndefined: Self = StObject.set(x, "monitoredResourceTypes", js.undefined)
     
-    @scala.inline
-    def setMonitoredResourceTypesVarargs(value: String*): Self = StObject.set(x, "monitoredResourceTypes", js.Array(value :_*))
+    inline def setMonitoredResourceTypesVarargs(value: String*): Self = StObject.set(x, "monitoredResourceTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
+    inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

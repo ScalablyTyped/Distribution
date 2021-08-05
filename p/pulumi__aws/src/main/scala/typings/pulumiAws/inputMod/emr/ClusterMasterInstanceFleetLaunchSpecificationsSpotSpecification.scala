@@ -29,8 +29,7 @@ trait ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification extends St
 }
 object ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allocationStrategy: Input[String],
     timeoutAction: Input[String],
     timeoutDurationMinutes: Input[Double]
@@ -39,22 +38,16 @@ object ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification {
     __obj.asInstanceOf[ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification]
   }
   
-  @scala.inline
-  implicit class ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecificationMutableBuilder[Self <: ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterMasterInstanceFleetLaunchSpecificationsSpotSpecification](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: Input[String]): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: Input[String]): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDurationMinutes(value: Input[Double]): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
+    inline def setBlockDurationMinutes(value: Input[Double]): Self = StObject.set(x, "blockDurationMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDurationMinutesUndefined: Self = StObject.set(x, "blockDurationMinutes", js.undefined)
+    inline def setBlockDurationMinutesUndefined: Self = StObject.set(x, "blockDurationMinutes", js.undefined)
     
-    @scala.inline
-    def setTimeoutAction(value: Input[String]): Self = StObject.set(x, "timeoutAction", value.asInstanceOf[js.Any])
+    inline def setTimeoutAction(value: Input[String]): Self = StObject.set(x, "timeoutAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutDurationMinutes(value: Input[Double]): Self = StObject.set(x, "timeoutDurationMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutDurationMinutes(value: Input[Double]): Self = StObject.set(x, "timeoutDurationMinutes", value.asInstanceOf[js.Any])
   }
 }

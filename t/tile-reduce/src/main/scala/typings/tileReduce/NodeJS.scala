@@ -12,17 +12,14 @@ object NodeJS {
   }
   object Global {
     
-    @scala.inline
-    def apply(mapOptions: js.Any): Global = {
+    inline def apply(mapOptions: js.Any): Global = {
       val __obj = js.Dynamic.literal(mapOptions = mapOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[Global]
     }
     
-    @scala.inline
-    implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+    extension [Self <: Global](x: Self) {
       
-      @scala.inline
-      def setMapOptions(value: js.Any): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
+      inline def setMapOptions(value: js.Any): Self = StObject.set(x, "mapOptions", value.asInstanceOf[js.Any])
     }
   }
 }

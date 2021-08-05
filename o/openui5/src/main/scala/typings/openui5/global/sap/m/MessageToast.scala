@@ -17,8 +17,6 @@ object MessageToast {
     * @param mOptions Object which can contain all other options. Not all entries in this object are
     * required. This property is optional.
     */
-  @scala.inline
-  def show(sMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(sMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def show(sMessage: String, mOptions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(sMessage.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def show(sMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(sMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def show(sMessage: String, mOptions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(sMessage.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -18,16 +18,13 @@ trait Add[TTarget, TData]
 }
 object Add {
   
-  @scala.inline
-  def apply[TTarget, TData](add: HandleObject[TTarget, TData] => Unit): Add[TTarget, TData] = {
+  inline def apply[TTarget, TData](add: HandleObject[TTarget, TData] => Unit): Add[TTarget, TData] = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
     __obj.asInstanceOf[Add[TTarget, TData]]
   }
   
-  @scala.inline
-  implicit class AddMutableBuilder[Self <: Add[?, ?], TTarget, TData] (val x: Self & (Add[TTarget, TData])) extends AnyVal {
+  extension [Self <: Add[?, ?], TTarget, TData](x: Self & (Add[TTarget, TData])) {
     
-    @scala.inline
-    def setAdd(value: HandleObject[TTarget, TData] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: HandleObject[TTarget, TData] => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
   }
 }

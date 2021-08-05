@@ -39,61 +39,43 @@ trait GoogleCloudRecommendationengineV1beta1ProductDetail extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1ProductDetail {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ProductDetail = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ProductDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ProductDetail]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ProductDetailMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ProductDetail] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ProductDetail](x: Self) {
     
-    @scala.inline
-    def setAvailableQuantity(value: Double): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
+    inline def setAvailableQuantity(value: Double): Self = StObject.set(x, "availableQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableQuantityUndefined: Self = StObject.set(x, "availableQuantity", js.undefined)
+    inline def setAvailableQuantityUndefined: Self = StObject.set(x, "availableQuantity", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setDisplayPrice(value: Double): Self = StObject.set(x, "displayPrice", value.asInstanceOf[js.Any])
+    inline def setDisplayPrice(value: Double): Self = StObject.set(x, "displayPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayPriceUndefined: Self = StObject.set(x, "displayPrice", js.undefined)
+    inline def setDisplayPriceUndefined: Self = StObject.set(x, "displayPrice", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setItemAttributes(value: GoogleCloudRecommendationengineV1beta1FeatureMap): Self = StObject.set(x, "itemAttributes", value.asInstanceOf[js.Any])
+    inline def setItemAttributes(value: GoogleCloudRecommendationengineV1beta1FeatureMap): Self = StObject.set(x, "itemAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemAttributesUndefined: Self = StObject.set(x, "itemAttributes", js.undefined)
+    inline def setItemAttributesUndefined: Self = StObject.set(x, "itemAttributes", js.undefined)
     
-    @scala.inline
-    def setOriginalPrice(value: Double): Self = StObject.set(x, "originalPrice", value.asInstanceOf[js.Any])
+    inline def setOriginalPrice(value: Double): Self = StObject.set(x, "originalPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPriceUndefined: Self = StObject.set(x, "originalPrice", js.undefined)
+    inline def setOriginalPriceUndefined: Self = StObject.set(x, "originalPrice", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setStockState(value: String): Self = StObject.set(x, "stockState", value.asInstanceOf[js.Any])
+    inline def setStockState(value: String): Self = StObject.set(x, "stockState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStockStateUndefined: Self = StObject.set(x, "stockState", js.undefined)
+    inline def setStockStateUndefined: Self = StObject.set(x, "stockState", js.undefined)
   }
 }

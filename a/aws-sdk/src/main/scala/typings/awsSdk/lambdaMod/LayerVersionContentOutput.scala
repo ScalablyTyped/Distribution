@@ -23,31 +23,23 @@ trait LayerVersionContentOutput extends StObject {
 }
 object LayerVersionContentOutput {
   
-  @scala.inline
-  def apply(): LayerVersionContentOutput = {
+  inline def apply(): LayerVersionContentOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayerVersionContentOutput]
   }
   
-  @scala.inline
-  implicit class LayerVersionContentOutputMutableBuilder[Self <: LayerVersionContentOutput] (val x: Self) extends AnyVal {
+  extension [Self <: LayerVersionContentOutput](x: Self) {
     
-    @scala.inline
-    def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
+    inline def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
+    inline def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
     
-    @scala.inline
-    def setCodeSize(value: Long): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
+    inline def setCodeSize(value: Long): Self = StObject.set(x, "CodeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
+    inline def setCodeSizeUndefined: Self = StObject.set(x, "CodeSize", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

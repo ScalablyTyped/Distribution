@@ -8,11 +8,9 @@ object npmListAuthorPackagesStrings {
   
   @js.native
   sealed trait http extends StObject
-  @scala.inline
-  def http: http = "http".asInstanceOf[http]
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
   sealed trait https extends StObject
-  @scala.inline
-  def https: https = "https".asInstanceOf[https]
+  inline def https: https = "https".asInstanceOf[https]
 }

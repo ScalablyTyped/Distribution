@@ -5,23 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def EOL: js.Array[java.lang.String] = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EOL").asInstanceOf[js.Array[java.lang.String]]
+inline def EOL: js.Array[java.lang.String] = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].selectDynamic("EOL").asInstanceOf[js.Array[java.lang.String]]
 
-@scala.inline
-def combineClientFeatures[O, T](
+inline def combineClientFeatures[O, T](
   one: typings.vscodeLanguageserver.mod.ClientFeature[O],
   two: typings.vscodeLanguageserver.mod.ClientFeature[T]
 ): typings.vscodeLanguageserver.mod.ClientFeature[O & T] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("combineClientFeatures")(one.asInstanceOf[js.Any], two.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.ClientFeature[O & T]]
 
-@scala.inline
-def combineConsoleFeatures[O, T](
+inline def combineConsoleFeatures[O, T](
   one: typings.vscodeLanguageserver.mod.ConsoleFeature[O],
   two: typings.vscodeLanguageserver.mod.ConsoleFeature[T]
 ): typings.vscodeLanguageserver.mod.ConsoleFeature[O & T] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("combineConsoleFeatures")(one.asInstanceOf[js.Any], two.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.ConsoleFeature[O & T]]
 
-@scala.inline
-def combineFeatures[OConsole, OTracer, OTelemetry, OClient, OWindow, OWorkspace, TConsole, TTracer, TTelemetry, TClient, TWindow, TWorkspace](
+inline def combineFeatures[OConsole, OTracer, OTelemetry, OClient, OWindow, OWorkspace, TConsole, TTracer, TTelemetry, TClient, TWindow, TWorkspace](
   one: typings.vscodeLanguageserver.mod.Features[
   OConsole, 
   OTracer, 
@@ -56,147 +52,119 @@ OWindow & TWindow,
 OWorkspace & TWorkspace, 
 typings.vscodeLanguageserver.mod._underscore]]
 
-@scala.inline
-def combineLanguagesFeatures[O, T](
+inline def combineLanguagesFeatures[O, T](
   one: typings.vscodeLanguageserver.mod.LanguagesFeature[O],
   two: typings.vscodeLanguageserver.mod.LanguagesFeature[T]
 ): typings.vscodeLanguageserver.mod.LanguagesFeature[O & T] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("combineLanguagesFeatures")(one.asInstanceOf[js.Any], two.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.LanguagesFeature[O & T]]
 
-@scala.inline
-def combineTelemetryFeatures[O, T](
+inline def combineTelemetryFeatures[O, T](
   one: typings.vscodeLanguageserver.mod.TelemetryFeature[O],
   two: typings.vscodeLanguageserver.mod.TelemetryFeature[T]
 ): typings.vscodeLanguageserver.mod.TelemetryFeature[O & T] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("combineTelemetryFeatures")(one.asInstanceOf[js.Any], two.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.TelemetryFeature[O & T]]
 
-@scala.inline
-def combineTracerFeatures[O, T](
+inline def combineTracerFeatures[O, T](
   one: typings.vscodeLanguageserver.mod.TracerFeature[O],
   two: typings.vscodeLanguageserver.mod.TracerFeature[T]
 ): typings.vscodeLanguageserver.mod.TracerFeature[O & T] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("combineTracerFeatures")(one.asInstanceOf[js.Any], two.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.TracerFeature[O & T]]
 
-@scala.inline
-def combineWindowFeatures[O, T](
+inline def combineWindowFeatures[O, T](
   one: typings.vscodeLanguageserver.mod.WindowFeature[O],
   two: typings.vscodeLanguageserver.mod.WindowFeature[T]
 ): typings.vscodeLanguageserver.mod.WindowFeature[O & T] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("combineWindowFeatures")(one.asInstanceOf[js.Any], two.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.WindowFeature[O & T]]
 
-@scala.inline
-def combineWorkspaceFeatures[O, T](
+inline def combineWorkspaceFeatures[O, T](
   one: typings.vscodeLanguageserver.mod.WorkspaceFeature[O],
   two: typings.vscodeLanguageserver.mod.WorkspaceFeature[T]
 ): typings.vscodeLanguageserver.mod.WorkspaceFeature[O & T] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("combineWorkspaceFeatures")(one.asInstanceOf[js.Any], two.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.WorkspaceFeature[O & T]]
 
-@scala.inline
-def createClientPipeTransport(pipeName: java.lang.String): js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport] = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport]]
-@scala.inline
-def createClientPipeTransport(pipeName: java.lang.String, encoding: typings.node.BufferEncoding): js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport]]
+inline def createClientPipeTransport(pipeName: java.lang.String): js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport] = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport]]
+inline def createClientPipeTransport(pipeName: java.lang.String, encoding: typings.node.BufferEncoding): js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport]]
 
-@scala.inline
-def createClientSocketTransport(port: scala.Double): js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport] = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport]]
-@scala.inline
-def createClientSocketTransport(port: scala.Double, encoding: typings.node.BufferEncoding): js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport]]
+inline def createClientSocketTransport(port: scala.Double): js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport] = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport]]
+inline def createClientSocketTransport(port: scala.Double, encoding: typings.node.BufferEncoding): js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport]]
 
-@scala.inline
-def createConnection(): typings.vscodeLanguageserver.mod.IConnection = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")().asInstanceOf[typings.vscodeLanguageserver.mod.IConnection]
-@scala.inline
-def createConnection(inputStream: typings.node.NodeJS.ReadableStream, outputStream: typings.node.NodeJS.WritableStream): typings.vscodeLanguageserver.mod.IConnection = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.IConnection]
-@scala.inline
-def createConnection(
+inline def createConnection(): typings.vscodeLanguageserver.mod.IConnection = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")().asInstanceOf[typings.vscodeLanguageserver.mod.IConnection]
+inline def createConnection(inputStream: typings.node.NodeJS.ReadableStream, outputStream: typings.node.NodeJS.WritableStream): typings.vscodeLanguageserver.mod.IConnection = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.IConnection]
+inline def createConnection(
   inputStream: typings.node.NodeJS.ReadableStream,
   outputStream: typings.node.NodeJS.WritableStream,
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeLanguageserver.mod.IConnection = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.IConnection]
-@scala.inline
-def createConnection(
+inline def createConnection(
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
 ): typings.vscodeLanguageserver.mod.IConnection = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.IConnection]
-@scala.inline
-def createConnection(
+inline def createConnection(
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeLanguageserver.mod.IConnection = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.IConnection]
-@scala.inline
-def createConnection(strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy): typings.vscodeLanguageserver.mod.IConnection = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(strategy.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserver.mod.IConnection]
-@scala.inline
-def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+inline def createConnection(strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy): typings.vscodeLanguageserver.mod.IConnection = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(strategy.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserver.mod.IConnection]
+inline def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
   factories: typings.vscodeLanguageserver.mod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages]
 ): typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(factories.asInstanceOf[js.Any]).asInstanceOf[typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages]]
-@scala.inline
-def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+inline def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
   factories: typings.vscodeLanguageserver.mod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
   inputStream: typings.node.NodeJS.ReadableStream,
   outputStream: typings.node.NodeJS.WritableStream
 ): typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(factories.asInstanceOf[js.Any], inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages]]
-@scala.inline
-def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+inline def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
   factories: typings.vscodeLanguageserver.mod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
   inputStream: typings.node.NodeJS.ReadableStream,
   outputStream: typings.node.NodeJS.WritableStream,
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(factories.asInstanceOf[js.Any], inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages]]
-@scala.inline
-def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+inline def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
   factories: typings.vscodeLanguageserver.mod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
 ): typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(factories.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages]]
-@scala.inline
-def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+inline def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
   factories: typings.vscodeLanguageserver.mod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(factories.asInstanceOf[js.Any], reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages]]
-@scala.inline
-def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
+inline def createConnection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages](
   factories: typings.vscodeLanguageserver.mod.Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages],
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(factories.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserver.mod.Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PLanguages]]
 
-@scala.inline
-def createProtocolConnection(
+inline def createProtocolConnection(
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
   logger: typings.vscodeJsonrpc.mod.Logger
 ): typings.vscodeLanguageserverProtocol.mod.ProtocolConnection = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createProtocolConnection")(reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverProtocol.mod.ProtocolConnection]
-@scala.inline
-def createProtocolConnection(
+inline def createProtocolConnection(
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
   logger: typings.vscodeJsonrpc.mod.Logger,
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeLanguageserverProtocol.mod.ProtocolConnection = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createProtocolConnection")(reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverProtocol.mod.ProtocolConnection]
 
-@scala.inline
-def createServerPipeTransport(pipeName: java.lang.String): js.Tuple2[
+inline def createServerPipeTransport(pipeName: java.lang.String): js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter] = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServerPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter]]
-@scala.inline
-def createServerPipeTransport(pipeName: java.lang.String, encoding: typings.node.BufferEncoding): js.Tuple2[
+inline def createServerPipeTransport(pipeName: java.lang.String, encoding: typings.node.BufferEncoding): js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServerPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter]]
 
-@scala.inline
-def createServerSocketTransport(port: scala.Double): js.Tuple2[
+inline def createServerSocketTransport(port: scala.Double): js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter] = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServerSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter]]
-@scala.inline
-def createServerSocketTransport(port: scala.Double, encoding: typings.node.BufferEncoding): js.Tuple2[
+inline def createServerSocketTransport(port: scala.Double, encoding: typings.node.BufferEncoding): js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter] = (typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServerSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter]]
 
-@scala.inline
-def generateRandomPipeName(): java.lang.String = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomPipeName")().asInstanceOf[java.lang.String]
+inline def generateRandomPipeName(): java.lang.String = typings.vscodeLanguageserver.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomPipeName")().asInstanceOf[java.lang.String]
 
 type ClientFeature[P] = typings.vscodeLanguageserver.mod.Feature[typings.vscodeLanguageserver.mod.RemoteClient, P]
 

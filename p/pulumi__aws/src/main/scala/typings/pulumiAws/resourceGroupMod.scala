@@ -51,21 +51,16 @@ object resourceGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResourceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceGroupState): ResourceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceGroupState, opts: CustomResourceOptions): ResourceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceGroup]
+    inline def get(name: String, id: Input[ID]): ResourceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceGroup]
+    inline def get(name: String, id: Input[ID], state: ResourceGroupState): ResourceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceGroup]
+    inline def get(name: String, id: Input[ID], state: ResourceGroupState, opts: CustomResourceOptions): ResourceGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceGroup]
     
     /**
       * Returns true if the given object is an instance of ResourceGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/resourceGroup.ResourceGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/inspector/resourceGroup.ResourceGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/resourceGroup.ResourceGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/inspector/resourceGroup.ResourceGroup */ Boolean]
   }
   
   trait ResourceGroupArgs extends StObject {
@@ -77,17 +72,14 @@ object resourceGroupMod {
   }
   object ResourceGroupArgs {
     
-    @scala.inline
-    def apply(tags: Input[StringDictionary[Input[String]]]): ResourceGroupArgs = {
+    inline def apply(tags: Input[StringDictionary[Input[String]]]): ResourceGroupArgs = {
       val __obj = js.Dynamic.literal(tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceGroupArgs]
     }
     
-    @scala.inline
-    implicit class ResourceGroupArgsMutableBuilder[Self <: ResourceGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceGroupArgs](x: Self) {
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,26 +97,20 @@ object resourceGroupMod {
   }
   object ResourceGroupState {
     
-    @scala.inline
-    def apply(): ResourceGroupState = {
+    inline def apply(): ResourceGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceGroupState]
     }
     
-    @scala.inline
-    implicit class ResourceGroupStateMutableBuilder[Self <: ResourceGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceGroupState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

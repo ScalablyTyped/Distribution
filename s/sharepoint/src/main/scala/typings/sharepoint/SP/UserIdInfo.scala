@@ -14,8 +14,7 @@ trait UserIdInfo
 }
 object UserIdInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -28,13 +27,10 @@ object UserIdInfo {
     __obj.asInstanceOf[UserIdInfo]
   }
   
-  @scala.inline
-  implicit class UserIdInfoMutableBuilder[Self <: UserIdInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UserIdInfo](x: Self) {
     
-    @scala.inline
-    def setGet_nameId(value: () => String): Self = StObject.set(x, "get_nameId", js.Any.fromFunction0(value))
+    inline def setGet_nameId(value: () => String): Self = StObject.set(x, "get_nameId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_nameIdIssuer(value: () => String): Self = StObject.set(x, "get_nameIdIssuer", js.Any.fromFunction0(value))
+    inline def setGet_nameIdIssuer(value: () => String): Self = StObject.set(x, "get_nameIdIssuer", js.Any.fromFunction0(value))
   }
 }

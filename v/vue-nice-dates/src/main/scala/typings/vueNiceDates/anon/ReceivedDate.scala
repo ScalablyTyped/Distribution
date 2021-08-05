@@ -10,19 +10,15 @@ trait ReceivedDate extends StObject {
 }
 object ReceivedDate {
   
-  @scala.inline
-  def apply(): ReceivedDate = {
+  inline def apply(): ReceivedDate = {
     val __obj = js.Dynamic.literal(receivedDate = null)
     __obj.asInstanceOf[ReceivedDate]
   }
   
-  @scala.inline
-  implicit class ReceivedDateMutableBuilder[Self <: ReceivedDate] (val x: Self) extends AnyVal {
+  extension [Self <: ReceivedDate](x: Self) {
     
-    @scala.inline
-    def setReceivedDate(value: String | typings.std.Date): Self = StObject.set(x, "receivedDate", value.asInstanceOf[js.Any])
+    inline def setReceivedDate(value: String | typings.std.Date): Self = StObject.set(x, "receivedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedDateNull: Self = StObject.set(x, "receivedDate", null)
+    inline def setReceivedDateNull: Self = StObject.set(x, "receivedDate", null)
   }
 }

@@ -21,25 +21,19 @@ trait SchemaCandlestickDomain extends StObject {
 }
 object SchemaCandlestickDomain {
   
-  @scala.inline
-  def apply(): SchemaCandlestickDomain = {
+  inline def apply(): SchemaCandlestickDomain = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCandlestickDomain]
   }
   
-  @scala.inline
-  implicit class SchemaCandlestickDomainMutableBuilder[Self <: SchemaCandlestickDomain] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCandlestickDomain](x: Self) {
     
-    @scala.inline
-    def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: SchemaChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
   }
 }

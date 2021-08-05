@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileSystemPermissionMode extends StObject
 object FileSystemPermissionMode {
   
-  @scala.inline
-  def read: typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.read = "read".asInstanceOf[typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.read]
+  inline def read: typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.read = "read".asInstanceOf[typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.read]
   
-  @scala.inline
-  def readwrite: typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.readwrite = "readwrite".asInstanceOf[typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.readwrite]
+  inline def readwrite: typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.readwrite = "readwrite".asInstanceOf[typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.readwrite]
 }

@@ -32,17 +32,14 @@ object typesCommitDoesNotExistExceptionMod {
   }
   object CommitDoesNotExistException {
     
-    @scala.inline
-    def apply(): CommitDoesNotExistException = {
+    inline def apply(): CommitDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "CommitDoesNotExistException")
       __obj.asInstanceOf[CommitDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class CommitDoesNotExistExceptionMutableBuilder[Self <: CommitDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: CommitDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

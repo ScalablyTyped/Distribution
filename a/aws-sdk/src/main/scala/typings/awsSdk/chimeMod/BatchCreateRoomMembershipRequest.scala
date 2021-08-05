@@ -23,25 +23,19 @@ trait BatchCreateRoomMembershipRequest extends StObject {
 }
 object BatchCreateRoomMembershipRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString, MembershipItemList: MembershipItemList, RoomId: NonEmptyString): BatchCreateRoomMembershipRequest = {
+  inline def apply(AccountId: NonEmptyString, MembershipItemList: MembershipItemList, RoomId: NonEmptyString): BatchCreateRoomMembershipRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], MembershipItemList = MembershipItemList.asInstanceOf[js.Any], RoomId = RoomId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchCreateRoomMembershipRequest]
   }
   
-  @scala.inline
-  implicit class BatchCreateRoomMembershipRequestMutableBuilder[Self <: BatchCreateRoomMembershipRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchCreateRoomMembershipRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipItemList(value: MembershipItemList): Self = StObject.set(x, "MembershipItemList", value.asInstanceOf[js.Any])
+    inline def setMembershipItemList(value: MembershipItemList): Self = StObject.set(x, "MembershipItemList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipItemListVarargs(value: MembershipItem*): Self = StObject.set(x, "MembershipItemList", js.Array(value :_*))
+    inline def setMembershipItemListVarargs(value: MembershipItem*): Self = StObject.set(x, "MembershipItemList", js.Array(value :_*))
     
-    @scala.inline
-    def setRoomId(value: NonEmptyString): Self = StObject.set(x, "RoomId", value.asInstanceOf[js.Any])
+    inline def setRoomId(value: NonEmptyString): Self = StObject.set(x, "RoomId", value.asInstanceOf[js.Any])
   }
 }

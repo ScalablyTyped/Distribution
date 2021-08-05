@@ -26,49 +26,35 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(): User = {
+  inline def apply(): User = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMe(value: Boolean): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
+    inline def setMe(value: Boolean): Self = StObject.set(x, "me", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeUndefined: Self = StObject.set(x, "me", js.undefined)
+    inline def setMeUndefined: Self = StObject.set(x, "me", js.undefined)
     
-    @scala.inline
-    def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+    inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
+    inline def setPermissionIdUndefined: Self = StObject.set(x, "permissionId", js.undefined)
     
-    @scala.inline
-    def setPhotoLink(value: String): Self = StObject.set(x, "photoLink", value.asInstanceOf[js.Any])
+    inline def setPhotoLink(value: String): Self = StObject.set(x, "photoLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoLinkUndefined: Self = StObject.set(x, "photoLink", js.undefined)
+    inline def setPhotoLinkUndefined: Self = StObject.set(x, "photoLink", js.undefined)
   }
 }

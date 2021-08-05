@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TNodeWithLocalRefs extends StObject
 object TNodeWithLocalRefs {
   
-  @scala.inline
-  def TContainerNode(
+  inline def TContainerNode(
     child: Null,
     classBindings: TStylingRange,
     directiveEnd: Double,
@@ -36,8 +35,7 @@ object TNodeWithLocalRefs {
     __obj.asInstanceOf[typings.angularCore.mod.TContainerNode]
   }
   
-  @scala.inline
-  def TElementContainerNode(
+  inline def TElementContainerNode(
     classBindings: TStylingRange,
     directiveEnd: Double,
     directiveStart: Double,
@@ -57,8 +55,7 @@ object TNodeWithLocalRefs {
     __obj.asInstanceOf[typings.angularCore.mod.TElementContainerNode]
   }
   
-  @scala.inline
-  def ɵangularPackagesCoreCoreBh(
+  inline def ɵangularPackagesCoreCoreBh(
     classBindings: TStylingRange,
     directiveEnd: Double,
     directiveStart: Double,

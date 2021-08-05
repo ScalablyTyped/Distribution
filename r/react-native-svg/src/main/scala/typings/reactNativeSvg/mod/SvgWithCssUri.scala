@@ -17,6 +17,5 @@ class SvgWithCssUri protected ()
 }
 object SvgWithCssUri {
   
-  @scala.inline
-  def apply: ComponentClass[UriProps, UriState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SvgWithCssUri").asInstanceOf[ComponentClass[UriProps, UriState]]
+  inline def apply: ComponentClass[UriProps, UriState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SvgWithCssUri").asInstanceOf[ComponentClass[UriProps, UriState]]
 }

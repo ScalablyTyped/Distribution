@@ -19,37 +19,27 @@ trait EducationOrganization
 }
 object EducationOrganization {
   
-  @scala.inline
-  def apply(): EducationOrganization = {
+  inline def apply(): EducationOrganization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EducationOrganization]
   }
   
-  @scala.inline
-  implicit class EducationOrganizationMutableBuilder[Self <: EducationOrganization] (val x: Self) extends AnyVal {
+  extension [Self <: EducationOrganization](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setExternalSource(value: NullableOption[EducationExternalSource]): Self = StObject.set(x, "externalSource", value.asInstanceOf[js.Any])
+    inline def setExternalSource(value: NullableOption[EducationExternalSource]): Self = StObject.set(x, "externalSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalSourceNull: Self = StObject.set(x, "externalSource", null)
+    inline def setExternalSourceNull: Self = StObject.set(x, "externalSource", null)
     
-    @scala.inline
-    def setExternalSourceUndefined: Self = StObject.set(x, "externalSource", js.undefined)
+    inline def setExternalSourceUndefined: Self = StObject.set(x, "externalSource", js.undefined)
   }
 }

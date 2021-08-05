@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SafeAreaViewForceInsetValue extends StObject
 object SafeAreaViewForceInsetValue {
   
-  @scala.inline
-  def always: typings.reactNavigation.reactNavigationStrings.always = "always".asInstanceOf[typings.reactNavigation.reactNavigationStrings.always]
+  inline def always: typings.reactNavigation.reactNavigationStrings.always = "always".asInstanceOf[typings.reactNavigation.reactNavigationStrings.always]
   
-  @scala.inline
-  def never: typings.reactNavigation.reactNavigationStrings.never = "never".asInstanceOf[typings.reactNavigation.reactNavigationStrings.never]
+  inline def never: typings.reactNavigation.reactNavigationStrings.never = "never".asInstanceOf[typings.reactNavigation.reactNavigationStrings.never]
 }

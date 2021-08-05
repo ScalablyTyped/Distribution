@@ -21,44 +21,32 @@ object igherkinoptionsMod {
   }
   object IGherkinOptions {
     
-    @scala.inline
-    def apply(): IGherkinOptions = {
+    inline def apply(): IGherkinOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGherkinOptions]
     }
     
-    @scala.inline
-    implicit class IGherkinOptionsMutableBuilder[Self <: IGherkinOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IGherkinOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultDialect(value: String): Self = StObject.set(x, "defaultDialect", value.asInstanceOf[js.Any])
+      inline def setDefaultDialect(value: String): Self = StObject.set(x, "defaultDialect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDialectUndefined: Self = StObject.set(x, "defaultDialect", js.undefined)
+      inline def setDefaultDialectUndefined: Self = StObject.set(x, "defaultDialect", js.undefined)
       
-      @scala.inline
-      def setIncludeGherkinDocument(value: Boolean): Self = StObject.set(x, "includeGherkinDocument", value.asInstanceOf[js.Any])
+      inline def setIncludeGherkinDocument(value: Boolean): Self = StObject.set(x, "includeGherkinDocument", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeGherkinDocumentUndefined: Self = StObject.set(x, "includeGherkinDocument", js.undefined)
+      inline def setIncludeGherkinDocumentUndefined: Self = StObject.set(x, "includeGherkinDocument", js.undefined)
       
-      @scala.inline
-      def setIncludePickles(value: Boolean): Self = StObject.set(x, "includePickles", value.asInstanceOf[js.Any])
+      inline def setIncludePickles(value: Boolean): Self = StObject.set(x, "includePickles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePicklesUndefined: Self = StObject.set(x, "includePickles", js.undefined)
+      inline def setIncludePicklesUndefined: Self = StObject.set(x, "includePickles", js.undefined)
       
-      @scala.inline
-      def setIncludeSource(value: Boolean): Self = StObject.set(x, "includeSource", value.asInstanceOf[js.Any])
+      inline def setIncludeSource(value: Boolean): Self = StObject.set(x, "includeSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSourceUndefined: Self = StObject.set(x, "includeSource", js.undefined)
+      inline def setIncludeSourceUndefined: Self = StObject.set(x, "includeSource", js.undefined)
       
-      @scala.inline
-      def setNewId(value: () => String): Self = StObject.set(x, "newId", js.Any.fromFunction0(value))
+      inline def setNewId(value: () => String): Self = StObject.set(x, "newId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNewIdUndefined: Self = StObject.set(x, "newId", js.undefined)
+      inline def setNewIdUndefined: Self = StObject.set(x, "newId", js.undefined)
     }
   }
 }

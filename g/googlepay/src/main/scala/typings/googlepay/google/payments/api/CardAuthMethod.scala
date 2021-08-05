@@ -48,9 +48,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CardAuthMethod extends StObject
 object CardAuthMethod {
   
-  @scala.inline
-  def CRYPTOGRAM_3DS: typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS = "CRYPTOGRAM_3DS".asInstanceOf[typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS]
+  inline def CRYPTOGRAM_3DS: typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS = "CRYPTOGRAM_3DS".asInstanceOf[typings.googlepay.googlepayStrings.CRYPTOGRAM_3DS]
   
-  @scala.inline
-  def PAN_ONLY: typings.googlepay.googlepayStrings.PAN_ONLY = "PAN_ONLY".asInstanceOf[typings.googlepay.googlepayStrings.PAN_ONLY]
+  inline def PAN_ONLY: typings.googlepay.googlepayStrings.PAN_ONLY = "PAN_ONLY".asInstanceOf[typings.googlepay.googlepayStrings.PAN_ONLY]
 }

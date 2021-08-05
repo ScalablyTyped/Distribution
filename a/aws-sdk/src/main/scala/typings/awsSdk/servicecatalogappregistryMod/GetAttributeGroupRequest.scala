@@ -13,16 +13,13 @@ trait GetAttributeGroupRequest extends StObject {
 }
 object GetAttributeGroupRequest {
   
-  @scala.inline
-  def apply(attributeGroup: AttributeGroupSpecifier): GetAttributeGroupRequest = {
+  inline def apply(attributeGroup: AttributeGroupSpecifier): GetAttributeGroupRequest = {
     val __obj = js.Dynamic.literal(attributeGroup = attributeGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAttributeGroupRequest]
   }
   
-  @scala.inline
-  implicit class GetAttributeGroupRequestMutableBuilder[Self <: GetAttributeGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAttributeGroupRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeGroup(value: AttributeGroupSpecifier): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
+    inline def setAttributeGroup(value: AttributeGroupSpecifier): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
   }
 }

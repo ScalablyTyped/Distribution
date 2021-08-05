@@ -19,19 +19,15 @@ trait CatalogTableStorageDescriptorSortColumn extends StObject {
 }
 object CatalogTableStorageDescriptorSortColumn {
   
-  @scala.inline
-  def apply(column: Input[String], sortOrder: Input[Double]): CatalogTableStorageDescriptorSortColumn = {
+  inline def apply(column: Input[String], sortOrder: Input[Double]): CatalogTableStorageDescriptorSortColumn = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], sortOrder = sortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatalogTableStorageDescriptorSortColumn]
   }
   
-  @scala.inline
-  implicit class CatalogTableStorageDescriptorSortColumnMutableBuilder[Self <: CatalogTableStorageDescriptorSortColumn] (val x: Self) extends AnyVal {
+  extension [Self <: CatalogTableStorageDescriptorSortColumn](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Input[String]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Input[String]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrder(value: Input[Double]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: Input[Double]): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
   }
 }

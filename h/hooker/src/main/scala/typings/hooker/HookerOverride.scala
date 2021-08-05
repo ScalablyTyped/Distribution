@@ -13,16 +13,13 @@ trait HookerOverride
 }
 object HookerOverride {
   
-  @scala.inline
-  def apply(value: js.Any): HookerOverride = {
+  inline def apply(value: js.Any): HookerOverride = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookerOverride]
   }
   
-  @scala.inline
-  implicit class HookerOverrideMutableBuilder[Self <: HookerOverride] (val x: Self) extends AnyVal {
+  extension [Self <: HookerOverride](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

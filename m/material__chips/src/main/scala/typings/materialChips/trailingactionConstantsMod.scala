@@ -61,25 +61,21 @@ object trailingactionConstantsMod {
     @JSImport("@material/chips/trailingaction/constants", "strings.ARIA_HIDDEN")
     @js.native
     def ARIA_HIDDEN: String = js.native
-    @scala.inline
-    def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
+    inline def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/chips/trailingaction/constants", "strings.INTERACTION_EVENT")
     @js.native
     def INTERACTION_EVENT: String = js.native
-    @scala.inline
-    def INTERACTION_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERACTION_EVENT")(x.asInstanceOf[js.Any])
+    inline def INTERACTION_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INTERACTION_EVENT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/chips/trailingaction/constants", "strings.NAVIGATION_EVENT")
     @js.native
     def NAVIGATION_EVENT: String = js.native
-    @scala.inline
-    def NAVIGATION_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATION_EVENT")(x.asInstanceOf[js.Any])
+    inline def NAVIGATION_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATION_EVENT")(x.asInstanceOf[js.Any])
     
     @JSImport("@material/chips/trailingaction/constants", "strings.TAB_INDEX")
     @js.native
     def TAB_INDEX: String = js.native
-    @scala.inline
-    def TAB_INDEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_INDEX")(x.asInstanceOf[js.Any])
+    inline def TAB_INDEX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAB_INDEX")(x.asInstanceOf[js.Any])
   }
 }

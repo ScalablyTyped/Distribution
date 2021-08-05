@@ -19,22 +19,17 @@ trait DescribeInputRequestwaite extends StObject {
 }
 object DescribeInputRequestwaite {
   
-  @scala.inline
-  def apply(InputId: string): DescribeInputRequestwaite = {
+  inline def apply(InputId: string): DescribeInputRequestwaite = {
     val __obj = js.Dynamic.literal(InputId = InputId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeInputRequestwaite]
   }
   
-  @scala.inline
-  implicit class DescribeInputRequestwaiteMutableBuilder[Self <: DescribeInputRequestwaite] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInputRequestwaite](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setInputId(value: string): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: string): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
   }
 }

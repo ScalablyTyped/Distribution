@@ -14,25 +14,19 @@ trait TestOrderPickupDetailsPickupPerson extends StObject {
 }
 object TestOrderPickupDetailsPickupPerson {
   
-  @scala.inline
-  def apply(): TestOrderPickupDetailsPickupPerson = {
+  inline def apply(): TestOrderPickupDetailsPickupPerson = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestOrderPickupDetailsPickupPerson]
   }
   
-  @scala.inline
-  implicit class TestOrderPickupDetailsPickupPersonMutableBuilder[Self <: TestOrderPickupDetailsPickupPerson] (val x: Self) extends AnyVal {
+  extension [Self <: TestOrderPickupDetailsPickupPerson](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
   }
 }

@@ -34,43 +34,31 @@ trait SchemaResources extends StObject {
 }
 object SchemaResources {
   
-  @scala.inline
-  def apply(): SchemaResources = {
+  inline def apply(): SchemaResources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResources]
   }
   
-  @scala.inline
-  implicit class SchemaResourcesMutableBuilder[Self <: SchemaResources] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResources](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
     
-    @scala.inline
-    def setVirtualMachine(value: SchemaVirtualMachine): Self = StObject.set(x, "virtualMachine", value.asInstanceOf[js.Any])
+    inline def setVirtualMachine(value: SchemaVirtualMachine): Self = StObject.set(x, "virtualMachine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualMachineUndefined: Self = StObject.set(x, "virtualMachine", js.undefined)
+    inline def setVirtualMachineUndefined: Self = StObject.set(x, "virtualMachine", js.undefined)
     
-    @scala.inline
-    def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    @scala.inline
-    def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

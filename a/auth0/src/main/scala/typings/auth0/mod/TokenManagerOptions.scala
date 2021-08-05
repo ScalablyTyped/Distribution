@@ -12,19 +12,15 @@ trait TokenManagerOptions
 }
 object TokenManagerOptions {
   
-  @scala.inline
-  def apply(baseUrl: String): TokenManagerOptions = {
+  inline def apply(baseUrl: String): TokenManagerOptions = {
     val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenManagerOptions]
   }
   
-  @scala.inline
-  implicit class TokenManagerOptionsMutableBuilder[Self <: TokenManagerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TokenManagerOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }
 }

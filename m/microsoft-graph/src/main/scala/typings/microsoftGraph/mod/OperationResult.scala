@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OperationResult extends StObject
 object OperationResult {
   
-  @scala.inline
-  def failure: typings.microsoftGraph.microsoftGraphStrings.failure = "failure".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.failure]
+  inline def failure: typings.microsoftGraph.microsoftGraphStrings.failure = "failure".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.failure]
   
-  @scala.inline
-  def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
+  inline def success: typings.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.success]
   
-  @scala.inline
-  def timeout: typings.microsoftGraph.microsoftGraphStrings.timeout = "timeout".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.timeout]
+  inline def timeout: typings.microsoftGraph.microsoftGraphStrings.timeout = "timeout".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.timeout]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

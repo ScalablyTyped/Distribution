@@ -12,16 +12,13 @@ trait FileBrowserTreeProperties
 }
 object FileBrowserTreeProperties {
   
-  @scala.inline
-  def apply(ownerUri: String): FileBrowserTreeProperties = {
+  inline def apply(ownerUri: String): FileBrowserTreeProperties = {
     val __obj = js.Dynamic.literal(ownerUri = ownerUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileBrowserTreeProperties]
   }
   
-  @scala.inline
-  implicit class FileBrowserTreePropertiesMutableBuilder[Self <: FileBrowserTreeProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FileBrowserTreeProperties](x: Self) {
     
-    @scala.inline
-    def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
+    inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
   }
 }

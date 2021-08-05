@@ -11,19 +11,15 @@ trait CommonCriteriaModeInfo extends StObject {
 }
 object CommonCriteriaModeInfo {
   
-  @scala.inline
-  def apply(): CommonCriteriaModeInfo = {
+  inline def apply(): CommonCriteriaModeInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonCriteriaModeInfo]
   }
   
-  @scala.inline
-  implicit class CommonCriteriaModeInfoMutableBuilder[Self <: CommonCriteriaModeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CommonCriteriaModeInfo](x: Self) {
     
-    @scala.inline
-    def setCommonCriteriaModeStatus(value: String): Self = StObject.set(x, "commonCriteriaModeStatus", value.asInstanceOf[js.Any])
+    inline def setCommonCriteriaModeStatus(value: String): Self = StObject.set(x, "commonCriteriaModeStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonCriteriaModeStatusUndefined: Self = StObject.set(x, "commonCriteriaModeStatus", js.undefined)
+    inline def setCommonCriteriaModeStatusUndefined: Self = StObject.set(x, "commonCriteriaModeStatus", js.undefined)
   }
 }

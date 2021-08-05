@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BootstrapGridViewCellInfo protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapGridViewCellInfo {
-  protected def this(instance: js.Any) = this()
+  /* protected */ def this(instance: js.Any) = this()
   
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   override val instance: js.Any = js.native
   
   /* CompleteClass */

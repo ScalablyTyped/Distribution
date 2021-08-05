@@ -19,32 +19,24 @@ object dragdropmanager {
   }
   object IElementWrapper {
     
-    @scala.inline
-    def apply(): IElementWrapper = {
+    inline def apply(): IElementWrapper = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IElementWrapper]
     }
     
-    @scala.inline
-    implicit class IElementWrapperMutableBuilder[Self <: IElementWrapper] (val x: Self) extends AnyVal {
+    extension [Self <: IElementWrapper](x: Self) {
       
-      @scala.inline
-      def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+      inline def setCss(value: js.Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+      inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
       
-      @scala.inline
-      def setEl(value: js.Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: js.Any): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+      inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
 }

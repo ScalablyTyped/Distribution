@@ -14,22 +14,17 @@ trait DatePickerEvent extends StObject {
 }
 object DatePickerEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: DatePicker): DatePickerEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: DatePicker): DatePickerEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerEvent]
   }
   
-  @scala.inline
-  implicit class DatePickerEventMutableBuilder[Self <: DatePickerEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DatePickerEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: DatePicker): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: DatePicker): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

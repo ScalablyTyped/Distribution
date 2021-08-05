@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.DropCap")
 @js.native
-class DropCap protected ()
+/* private */ class DropCap ()
   extends StObject
      with typings.activexWord.Word.DropCap {
   
@@ -38,7 +38,7 @@ class DropCap protected ()
   /* CompleteClass */
   var Position: WdDropPosition = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.DropCap_typekey")
   var WordDotDropCap_typekey: typings.activexWord.Word.DropCap = js.native
 }

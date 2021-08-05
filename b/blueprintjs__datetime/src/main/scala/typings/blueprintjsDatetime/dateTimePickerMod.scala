@@ -36,14 +36,12 @@ object dateTimePickerMod {
     @JSImport("@blueprintjs/datetime/lib/esm/dateTimePicker", "DateTimePicker.defaultProps")
     @js.native
     def defaultProps: IDateTimePickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IDateTimePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IDateTimePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateTimePicker", "DateTimePicker.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IDateTimePickerProps
@@ -87,53 +85,38 @@ object dateTimePickerMod {
   }
   object IDateTimePickerProps {
     
-    @scala.inline
-    def apply(): IDateTimePickerProps = {
+    inline def apply(): IDateTimePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDateTimePickerProps]
     }
     
-    @scala.inline
-    implicit class IDateTimePickerPropsMutableBuilder[Self <: IDateTimePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDateTimePickerProps](x: Self) {
       
-      @scala.inline
-      def setCanClearSelection(value: Boolean): Self = StObject.set(x, "canClearSelection", value.asInstanceOf[js.Any])
+      inline def setCanClearSelection(value: Boolean): Self = StObject.set(x, "canClearSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanClearSelectionUndefined: Self = StObject.set(x, "canClearSelection", js.undefined)
+      inline def setCanClearSelectionUndefined: Self = StObject.set(x, "canClearSelection", js.undefined)
       
-      @scala.inline
-      def setDatePickerProps(value: IDatePickerProps): Self = StObject.set(x, "datePickerProps", value.asInstanceOf[js.Any])
+      inline def setDatePickerProps(value: IDatePickerProps): Self = StObject.set(x, "datePickerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatePickerPropsUndefined: Self = StObject.set(x, "datePickerProps", js.undefined)
+      inline def setDatePickerPropsUndefined: Self = StObject.set(x, "datePickerProps", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* selectedDate */ Date, /* isUserChange */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* selectedDate */ Date, /* isUserChange */ Boolean) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setTimePickerProps(value: ITimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
+      inline def setTimePickerProps(value: ITimePickerProps): Self = StObject.set(x, "timePickerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimePickerPropsUndefined: Self = StObject.set(x, "timePickerProps", js.undefined)
+      inline def setTimePickerPropsUndefined: Self = StObject.set(x, "timePickerProps", js.undefined)
       
-      @scala.inline
-      def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -145,26 +128,20 @@ object dateTimePickerMod {
   }
   object IDateTimePickerState {
     
-    @scala.inline
-    def apply(): IDateTimePickerState = {
+    inline def apply(): IDateTimePickerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDateTimePickerState]
     }
     
-    @scala.inline
-    implicit class IDateTimePickerStateMutableBuilder[Self <: IDateTimePickerState] (val x: Self) extends AnyVal {
+    extension [Self <: IDateTimePickerState](x: Self) {
       
-      @scala.inline
-      def setDateValue(value: Date): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
+      inline def setDateValue(value: Date): Self = StObject.set(x, "dateValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateValueUndefined: Self = StObject.set(x, "dateValue", js.undefined)
+      inline def setDateValueUndefined: Self = StObject.set(x, "dateValue", js.undefined)
       
-      @scala.inline
-      def setTimeValue(value: Date): Self = StObject.set(x, "timeValue", value.asInstanceOf[js.Any])
+      inline def setTimeValue(value: Date): Self = StObject.set(x, "timeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeValueUndefined: Self = StObject.set(x, "timeValue", js.undefined)
+      inline def setTimeValueUndefined: Self = StObject.set(x, "timeValue", js.undefined)
     }
   }
 }

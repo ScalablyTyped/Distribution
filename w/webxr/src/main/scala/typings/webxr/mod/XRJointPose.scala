@@ -12,19 +12,15 @@ trait XRJointPose
 }
 object XRJointPose {
   
-  @scala.inline
-  def apply(emulatedPosition: Boolean, transform: XRRigidTransform): XRJointPose = {
+  inline def apply(emulatedPosition: Boolean, transform: XRRigidTransform): XRJointPose = {
     val __obj = js.Dynamic.literal(emulatedPosition = emulatedPosition.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRJointPose]
   }
   
-  @scala.inline
-  implicit class XRJointPoseMutableBuilder[Self <: XRJointPose] (val x: Self) extends AnyVal {
+  extension [Self <: XRJointPose](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
   }
 }

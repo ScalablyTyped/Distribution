@@ -132,74 +132,52 @@ object createjs {
   }
   object TimelineProps {
     
-    @scala.inline
-    def apply(): TimelineProps = {
+    inline def apply(): TimelineProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimelineProps]
     }
     
-    @scala.inline
-    implicit class TimelinePropsMutableBuilder[Self <: TimelineProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimelineProps](x: Self) {
       
-      @scala.inline
-      def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+      inline def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
+      inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
       
-      @scala.inline
-      def setIgnoreGlobalPause(value: Boolean): Self = StObject.set(x, "ignoreGlobalPause", value.asInstanceOf[js.Any])
+      inline def setIgnoreGlobalPause(value: Boolean): Self = StObject.set(x, "ignoreGlobalPause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreGlobalPauseUndefined: Self = StObject.set(x, "ignoreGlobalPause", js.undefined)
+      inline def setIgnoreGlobalPauseUndefined: Self = StObject.set(x, "ignoreGlobalPause", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ Event => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ Event => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: /* e */ Event => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* e */ Event => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
       
-      @scala.inline
-      def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
+      inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
+      inline def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
       
-      @scala.inline
-      def setUseTicks(value: Boolean): Self = StObject.set(x, "useTicks", value.asInstanceOf[js.Any])
+      inline def setUseTicks(value: Boolean): Self = StObject.set(x, "useTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTicksUndefined: Self = StObject.set(x, "useTicks", js.undefined)
+      inline def setUseTicksUndefined: Self = StObject.set(x, "useTicks", js.undefined)
     }
   }
   
@@ -258,8 +236,7 @@ object createjs {
   }
   object TweenAction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       d: Double,
       funct: js.Function,
       next: TweenAction,
@@ -272,32 +249,23 @@ object createjs {
       __obj.asInstanceOf[TweenAction]
     }
     
-    @scala.inline
-    implicit class TweenActionMutableBuilder[Self <: TweenAction] (val x: Self) extends AnyVal {
+    extension [Self <: TweenAction](x: Self) {
       
-      @scala.inline
-      def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunct(value: js.Function): Self = StObject.set(x, "funct", value.asInstanceOf[js.Any])
+      inline def setFunct(value: js.Function): Self = StObject.set(x, "funct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: TweenAction): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: TweenAction): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
       
-      @scala.inline
-      def setPrev(value: TweenAction): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: TweenAction): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
   
@@ -331,86 +299,60 @@ object createjs {
   }
   object TweenProps {
     
-    @scala.inline
-    def apply(): TweenProps = {
+    inline def apply(): TweenProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TweenProps]
     }
     
-    @scala.inline
-    implicit class TweenPropsMutableBuilder[Self <: TweenProps] (val x: Self) extends AnyVal {
+    extension [Self <: TweenProps](x: Self) {
       
-      @scala.inline
-      def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+      inline def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
+      inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
       
-      @scala.inline
-      def setIgnoreGlobalPause(value: Boolean): Self = StObject.set(x, "ignoreGlobalPause", value.asInstanceOf[js.Any])
+      inline def setIgnoreGlobalPause(value: Boolean): Self = StObject.set(x, "ignoreGlobalPause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreGlobalPauseUndefined: Self = StObject.set(x, "ignoreGlobalPause", js.undefined)
+      inline def setIgnoreGlobalPauseUndefined: Self = StObject.set(x, "ignoreGlobalPause", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ Event => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ Event => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: /* e */ Event => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* e */ Event => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+      inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
       
-      @scala.inline
-      def setPluginData(value: js.Any): Self = StObject.set(x, "pluginData", value.asInstanceOf[js.Any])
+      inline def setPluginData(value: js.Any): Self = StObject.set(x, "pluginData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginDataUndefined: Self = StObject.set(x, "pluginData", js.undefined)
+      inline def setPluginDataUndefined: Self = StObject.set(x, "pluginData", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
       
-      @scala.inline
-      def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
+      inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
+      inline def setTimeScaleUndefined: Self = StObject.set(x, "timeScale", js.undefined)
       
-      @scala.inline
-      def setUseTicks(value: Boolean): Self = StObject.set(x, "useTicks", value.asInstanceOf[js.Any])
+      inline def setUseTicks(value: Boolean): Self = StObject.set(x, "useTicks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTicksUndefined: Self = StObject.set(x, "useTicks", js.undefined)
+      inline def setUseTicksUndefined: Self = StObject.set(x, "useTicks", js.undefined)
     }
   }
   
@@ -434,8 +376,7 @@ object createjs {
   }
   object TweenStep {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       d: Double,
       ease: js.Function,
       index: Double,
@@ -449,32 +390,23 @@ object createjs {
       __obj.asInstanceOf[TweenStep]
     }
     
-    @scala.inline
-    implicit class TweenStepMutableBuilder[Self <: TweenStep] (val x: Self) extends AnyVal {
+    extension [Self <: TweenStep](x: Self) {
       
-      @scala.inline
-      def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEase(value: js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
+      inline def setEase(value: js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: TweenStep): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: TweenStep): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrev(value: TweenStep): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: TweenStep): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: TweenProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: TweenProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     }
   }
 }

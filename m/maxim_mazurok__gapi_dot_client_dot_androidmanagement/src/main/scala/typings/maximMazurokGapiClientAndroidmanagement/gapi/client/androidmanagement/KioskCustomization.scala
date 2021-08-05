@@ -26,43 +26,31 @@ trait KioskCustomization extends StObject {
 }
 object KioskCustomization {
   
-  @scala.inline
-  def apply(): KioskCustomization = {
+  inline def apply(): KioskCustomization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KioskCustomization]
   }
   
-  @scala.inline
-  implicit class KioskCustomizationMutableBuilder[Self <: KioskCustomization] (val x: Self) extends AnyVal {
+  extension [Self <: KioskCustomization](x: Self) {
     
-    @scala.inline
-    def setDeviceSettings(value: String): Self = StObject.set(x, "deviceSettings", value.asInstanceOf[js.Any])
+    inline def setDeviceSettings(value: String): Self = StObject.set(x, "deviceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceSettingsUndefined: Self = StObject.set(x, "deviceSettings", js.undefined)
+    inline def setDeviceSettingsUndefined: Self = StObject.set(x, "deviceSettings", js.undefined)
     
-    @scala.inline
-    def setPowerButtonActions(value: String): Self = StObject.set(x, "powerButtonActions", value.asInstanceOf[js.Any])
+    inline def setPowerButtonActions(value: String): Self = StObject.set(x, "powerButtonActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerButtonActionsUndefined: Self = StObject.set(x, "powerButtonActions", js.undefined)
+    inline def setPowerButtonActionsUndefined: Self = StObject.set(x, "powerButtonActions", js.undefined)
     
-    @scala.inline
-    def setStatusBar(value: String): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+    inline def setStatusBar(value: String): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+    inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
     
-    @scala.inline
-    def setSystemErrorWarnings(value: String): Self = StObject.set(x, "systemErrorWarnings", value.asInstanceOf[js.Any])
+    inline def setSystemErrorWarnings(value: String): Self = StObject.set(x, "systemErrorWarnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemErrorWarningsUndefined: Self = StObject.set(x, "systemErrorWarnings", js.undefined)
+    inline def setSystemErrorWarningsUndefined: Self = StObject.set(x, "systemErrorWarnings", js.undefined)
     
-    @scala.inline
-    def setSystemNavigation(value: String): Self = StObject.set(x, "systemNavigation", value.asInstanceOf[js.Any])
+    inline def setSystemNavigation(value: String): Self = StObject.set(x, "systemNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemNavigationUndefined: Self = StObject.set(x, "systemNavigation", js.undefined)
+    inline def setSystemNavigationUndefined: Self = StObject.set(x, "systemNavigation", js.undefined)
   }
 }

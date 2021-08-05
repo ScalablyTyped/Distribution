@@ -37,40 +37,29 @@ trait VerticalAxis
 }
 object VerticalAxis {
   
-  @scala.inline
-  def apply(): VerticalAxis = {
+  inline def apply(): VerticalAxis = {
     val __obj = js.Dynamic.literal(crossAxisEnd = "right", crossAxisLine = "x", crossAxisSize = "width", crossAxisStart = "left", direction = "vertical", end = "bottom", line = "y", size = "height", start = "top")
     __obj.asInstanceOf[VerticalAxis]
   }
   
-  @scala.inline
-  implicit class VerticalAxisMutableBuilder[Self <: VerticalAxis] (val x: Self) extends AnyVal {
+  extension [Self <: VerticalAxis](x: Self) {
     
-    @scala.inline
-    def setCrossAxisEnd(value: right): Self = StObject.set(x, "crossAxisEnd", value.asInstanceOf[js.Any])
+    inline def setCrossAxisEnd(value: right): Self = StObject.set(x, "crossAxisEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossAxisLine(value: typings.reactBeautifulDnd.reactBeautifulDndStrings.x): Self = StObject.set(x, "crossAxisLine", value.asInstanceOf[js.Any])
+    inline def setCrossAxisLine(value: typings.reactBeautifulDnd.reactBeautifulDndStrings.x): Self = StObject.set(x, "crossAxisLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossAxisSize(value: width): Self = StObject.set(x, "crossAxisSize", value.asInstanceOf[js.Any])
+    inline def setCrossAxisSize(value: width): Self = StObject.set(x, "crossAxisSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossAxisStart(value: left): Self = StObject.set(x, "crossAxisStart", value.asInstanceOf[js.Any])
+    inline def setCrossAxisStart(value: left): Self = StObject.set(x, "crossAxisStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: bottom): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: bottom): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: y): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: y): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: top): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: top): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

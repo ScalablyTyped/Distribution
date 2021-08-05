@@ -11,16 +11,13 @@ trait MarkerId extends StObject {
 }
 object MarkerId {
   
-  @scala.inline
-  def apply(markerId: Double): MarkerId = {
+  inline def apply(markerId: Double): MarkerId = {
     val __obj = js.Dynamic.literal(markerId = markerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerId]
   }
   
-  @scala.inline
-  implicit class MarkerIdMutableBuilder[Self <: MarkerId] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerId](x: Self) {
     
-    @scala.inline
-    def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
+    inline def setMarkerId(value: Double): Self = StObject.set(x, "markerId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait NamedStyles extends StObject {
 }
 object NamedStyles {
   
-  @scala.inline
-  def apply(): NamedStyles = {
+  inline def apply(): NamedStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedStyles]
   }
   
-  @scala.inline
-  implicit class NamedStylesMutableBuilder[Self <: NamedStyles] (val x: Self) extends AnyVal {
+  extension [Self <: NamedStyles](x: Self) {
     
-    @scala.inline
-    def setStyles(value: js.Array[NamedStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[NamedStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setStylesVarargs(value: NamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: NamedStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

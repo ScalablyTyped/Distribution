@@ -13,29 +13,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CIMSymbolType extends StObject
 object CIMSymbolType {
   
-  @scala.inline
-  def CIMLineSymbol(): typings.arcgisJsApi.esri.CIM.CIMLineSymbol = {
+  inline def CIMLineSymbol(): typings.arcgisJsApi.esri.CIM.CIMLineSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMLineSymbol")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMLineSymbol]
   }
   
-  @scala.inline
-  def CIMPointSymbol(): typings.arcgisJsApi.esri.CIM.CIMPointSymbol = {
+  inline def CIMPointSymbol(): typings.arcgisJsApi.esri.CIM.CIMPointSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMPointSymbol")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMPointSymbol]
   }
   
-  @scala.inline
-  def CIMPolygonSymbol(): typings.arcgisJsApi.esri.CIM.CIMPolygonSymbol = {
+  inline def CIMPolygonSymbol(): typings.arcgisJsApi.esri.CIM.CIMPolygonSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMPolygonSymbol")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMPolygonSymbol]
   }
   
-  @scala.inline
-  def CIMTextSymbol(): typings.arcgisJsApi.esri.CIM.CIMTextSymbol = {
+  inline def CIMTextSymbol(): typings.arcgisJsApi.esri.CIM.CIMTextSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMTextSymbol")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.CIM.CIMTextSymbol]

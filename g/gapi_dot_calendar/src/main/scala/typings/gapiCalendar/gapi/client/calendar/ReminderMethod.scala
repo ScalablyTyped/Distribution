@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReminderMethod extends StObject
 object ReminderMethod {
   
-  @scala.inline
-  def email: typings.gapiCalendar.gapiCalendarStrings.email = "email".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.email]
+  inline def email: typings.gapiCalendar.gapiCalendarStrings.email = "email".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.email]
   
-  @scala.inline
-  def popup: typings.gapiCalendar.gapiCalendarStrings.popup = "popup".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.popup]
+  inline def popup: typings.gapiCalendar.gapiCalendarStrings.popup = "popup".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.popup]
   
-  @scala.inline
-  def sms: typings.gapiCalendar.gapiCalendarStrings.sms = "sms".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.sms]
+  inline def sms: typings.gapiCalendar.gapiCalendarStrings.sms = "sms".asInstanceOf[typings.gapiCalendar.gapiCalendarStrings.sms]
 }

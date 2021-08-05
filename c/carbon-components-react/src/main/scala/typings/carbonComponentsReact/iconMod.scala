@@ -20,24 +20,18 @@ object iconMod {
   @js.native
   val default: FC[IconProps] = js.native
   
-  @scala.inline
-  def findIcon[T /* <: Name */](name: String): `false` | T = ^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any]).asInstanceOf[`false` | T]
-  @scala.inline
-  def findIcon[T /* <: Name */](name: String, iconsObj: js.Array[T]): `false` | T = (^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any], iconsObj.asInstanceOf[js.Any])).asInstanceOf[`false` | T]
+  inline def findIcon[T /* <: Name */](name: String): `false` | T = ^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any]).asInstanceOf[`false` | T]
+  inline def findIcon[T /* <: Name */](name: String, iconsObj: js.Array[T]): `false` | T = (^.asInstanceOf[js.Dynamic].applyDynamic("findIcon")(name.asInstanceOf[js.Any], iconsObj.asInstanceOf[js.Any])).asInstanceOf[`false` | T]
   
-  @scala.inline
-  def getSvgData[R](iconName: String): R = ^.asInstanceOf[js.Dynamic].applyDynamic("getSvgData")(iconName.asInstanceOf[js.Any]).asInstanceOf[R]
+  inline def getSvgData[R](iconName: String): R = ^.asInstanceOf[js.Dynamic].applyDynamic("getSvgData")(iconName.asInstanceOf[js.Any]).asInstanceOf[R]
   
   @JSImport("carbon-components-react/lib/components/Icon", "icons")
   @js.native
   val icons: js.Any = js.native
   
-  @scala.inline
-  def isPrefixed(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrefixed")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPrefixed(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrefixed")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def setIconsList[T /* <: Name */](list: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIconsList")(list.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setIconsList[T /* <: Name */](list: js.Array[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIconsList")(list.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def svgShapes[D](svgData: D): js.Array[ReactNode | ReactNodeArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("svgShapes")(svgData.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactNode | ReactNodeArray]]
+  inline def svgShapes[D](svgData: D): js.Array[ReactNode | ReactNodeArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("svgShapes")(svgData.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactNode | ReactNodeArray]]
 }

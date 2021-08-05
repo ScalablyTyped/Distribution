@@ -13,16 +13,13 @@ trait SubscriptionUserSettings extends StObject {
 }
 object SubscriptionUserSettings {
   
-  @scala.inline
-  def apply(optedOut: Boolean): SubscriptionUserSettings = {
+  inline def apply(optedOut: Boolean): SubscriptionUserSettings = {
     val __obj = js.Dynamic.literal(optedOut = optedOut.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscriptionUserSettings]
   }
   
-  @scala.inline
-  implicit class SubscriptionUserSettingsMutableBuilder[Self <: SubscriptionUserSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionUserSettings](x: Self) {
     
-    @scala.inline
-    def setOptedOut(value: Boolean): Self = StObject.set(x, "optedOut", value.asInstanceOf[js.Any])
+    inline def setOptedOut(value: Boolean): Self = StObject.set(x, "optedOut", value.asInstanceOf[js.Any])
   }
 }

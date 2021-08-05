@@ -13,19 +13,15 @@ trait ColumnDescription extends StObject {
 }
 object ColumnDescription {
   
-  @scala.inline
-  def apply(): ColumnDescription = {
+  inline def apply(): ColumnDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnDescription]
   }
   
-  @scala.inline
-  implicit class ColumnDescriptionMutableBuilder[Self <: ColumnDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnDescription](x: Self) {
     
-    @scala.inline
-    def setText(value: ColumnDescriptiveText): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: ColumnDescriptiveText): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "Text", js.undefined)
   }
 }

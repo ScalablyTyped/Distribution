@@ -18,25 +18,19 @@ trait SchemaWeight extends StObject {
 }
 object SchemaWeight {
   
-  @scala.inline
-  def apply(): SchemaWeight = {
+  inline def apply(): SchemaWeight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWeight]
   }
   
-  @scala.inline
-  implicit class SchemaWeightMutableBuilder[Self <: SchemaWeight] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWeight](x: Self) {
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

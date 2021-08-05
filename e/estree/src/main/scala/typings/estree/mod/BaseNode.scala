@@ -14,32 +14,24 @@ trait BaseNode
 }
 object BaseNode {
   
-  @scala.inline
-  def apply(`type`: String): BaseNode = {
+  inline def apply(`type`: String): BaseNode = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseNode]
   }
   
-  @scala.inline
-  implicit class BaseNodeMutableBuilder[Self <: BaseNode] (val x: Self) extends AnyVal {
+  extension [Self <: BaseNode](x: Self) {
     
-    @scala.inline
-    def setLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "leadingComments", value.asInstanceOf[js.Any])
+    inline def setLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "leadingComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingCommentsUndefined: Self = StObject.set(x, "leadingComments", js.undefined)
+    inline def setLeadingCommentsUndefined: Self = StObject.set(x, "leadingComments", js.undefined)
     
-    @scala.inline
-    def setLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "leadingComments", js.Array(value :_*))
+    inline def setLeadingCommentsVarargs(value: Comment*): Self = StObject.set(x, "leadingComments", js.Array(value :_*))
     
-    @scala.inline
-    def setTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "trailingComments", value.asInstanceOf[js.Any])
+    inline def setTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "trailingComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingCommentsUndefined: Self = StObject.set(x, "trailingComments", js.undefined)
+    inline def setTrailingCommentsUndefined: Self = StObject.set(x, "trailingComments", js.undefined)
     
-    @scala.inline
-    def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value :_*))
+    inline def setTrailingCommentsVarargs(value: Comment*): Self = StObject.set(x, "trailingComments", js.Array(value :_*))
   }
 }

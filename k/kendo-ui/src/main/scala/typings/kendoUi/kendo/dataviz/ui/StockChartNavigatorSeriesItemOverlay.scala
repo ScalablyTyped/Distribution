@@ -10,19 +10,15 @@ trait StockChartNavigatorSeriesItemOverlay extends StObject {
 }
 object StockChartNavigatorSeriesItemOverlay {
   
-  @scala.inline
-  def apply(): StockChartNavigatorSeriesItemOverlay = {
+  inline def apply(): StockChartNavigatorSeriesItemOverlay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockChartNavigatorSeriesItemOverlay]
   }
   
-  @scala.inline
-  implicit class StockChartNavigatorSeriesItemOverlayMutableBuilder[Self <: StockChartNavigatorSeriesItemOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartNavigatorSeriesItemOverlay](x: Self) {
     
-    @scala.inline
-    def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
   }
 }

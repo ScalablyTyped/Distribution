@@ -162,8 +162,7 @@ trait XColorSpace extends StObject {
 }
 object XColorSpace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComponentTags: SafeArray[Double],
     Properties: SafeArray[PropertyValue],
     RenderingIntent: Double,
@@ -184,52 +183,36 @@ object XColorSpace {
     __obj.asInstanceOf[XColorSpace]
   }
   
-  @scala.inline
-  implicit class XColorSpaceMutableBuilder[Self <: XColorSpace] (val x: Self) extends AnyVal {
+  extension [Self <: XColorSpace](x: Self) {
     
-    @scala.inline
-    def setComponentTags(value: SafeArray[Double]): Self = StObject.set(x, "ComponentTags", value.asInstanceOf[js.Any])
+    inline def setComponentTags(value: SafeArray[Double]): Self = StObject.set(x, "ComponentTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertColorSpace(value: (SeqEquiv[ColorComponent], XColorSpace) => SafeArray[ColorComponent]): Self = StObject.set(x, "convertColorSpace", js.Any.fromFunction2(value))
+    inline def setConvertColorSpace(value: (SeqEquiv[ColorComponent], XColorSpace) => SafeArray[ColorComponent]): Self = StObject.set(x, "convertColorSpace", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConvertFromARGB(value: SeqEquiv[ARGBColor] => SafeArray[ColorComponent]): Self = StObject.set(x, "convertFromARGB", js.Any.fromFunction1(value))
+    inline def setConvertFromARGB(value: SeqEquiv[ARGBColor] => SafeArray[ColorComponent]): Self = StObject.set(x, "convertFromARGB", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertFromPARGB(value: SeqEquiv[ARGBColor] => SafeArray[ColorComponent]): Self = StObject.set(x, "convertFromPARGB", js.Any.fromFunction1(value))
+    inline def setConvertFromPARGB(value: SeqEquiv[ARGBColor] => SafeArray[ColorComponent]): Self = StObject.set(x, "convertFromPARGB", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertFromRGB(value: SeqEquiv[RGBColor] => SafeArray[ColorComponent]): Self = StObject.set(x, "convertFromRGB", js.Any.fromFunction1(value))
+    inline def setConvertFromRGB(value: SeqEquiv[RGBColor] => SafeArray[ColorComponent]): Self = StObject.set(x, "convertFromRGB", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertToARGB(value: SeqEquiv[ColorComponent] => SafeArray[ARGBColor]): Self = StObject.set(x, "convertToARGB", js.Any.fromFunction1(value))
+    inline def setConvertToARGB(value: SeqEquiv[ColorComponent] => SafeArray[ARGBColor]): Self = StObject.set(x, "convertToARGB", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertToPARGB(value: SeqEquiv[ColorComponent] => SafeArray[ARGBColor]): Self = StObject.set(x, "convertToPARGB", js.Any.fromFunction1(value))
+    inline def setConvertToPARGB(value: SeqEquiv[ColorComponent] => SafeArray[ARGBColor]): Self = StObject.set(x, "convertToPARGB", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertToRGB(value: SeqEquiv[ColorComponent] => SafeArray[RGBColor]): Self = StObject.set(x, "convertToRGB", js.Any.fromFunction1(value))
+    inline def setConvertToRGB(value: SeqEquiv[ColorComponent] => SafeArray[RGBColor]): Self = StObject.set(x, "convertToRGB", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetComponentTags(value: () => SafeArray[Double]): Self = StObject.set(x, "getComponentTags", js.Any.fromFunction0(value))
+    inline def setGetComponentTags(value: () => SafeArray[Double]): Self = StObject.set(x, "getComponentTags", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProperties(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+    inline def setGetProperties(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRenderingIntent(value: () => Double): Self = StObject.set(x, "getRenderingIntent", js.Any.fromFunction0(value))
+    inline def setGetRenderingIntent(value: () => Double): Self = StObject.set(x, "getRenderingIntent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderingIntent(value: Double): Self = StObject.set(x, "RenderingIntent", value.asInstanceOf[js.Any])
+    inline def setRenderingIntent(value: Double): Self = StObject.set(x, "RenderingIntent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

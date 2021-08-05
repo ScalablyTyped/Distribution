@@ -18,28 +18,21 @@ trait DescribeUsersResult extends StObject {
 }
 object DescribeUsersResult {
   
-  @scala.inline
-  def apply(): DescribeUsersResult = {
+  inline def apply(): DescribeUsersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeUsersResult]
   }
   
-  @scala.inline
-  implicit class DescribeUsersResultMutableBuilder[Self <: DescribeUsersResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUsersResult](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setUsers(value: UserList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: UserList): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

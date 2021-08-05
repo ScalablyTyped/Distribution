@@ -12,25 +12,19 @@ trait RunResult extends StObject {
 }
 object RunResult {
   
-  @scala.inline
-  def apply(testResults: TestResults, unhandledErrors: js.Array[FormattedError]): RunResult = {
+  inline def apply(testResults: TestResults, unhandledErrors: js.Array[FormattedError]): RunResult = {
     val __obj = js.Dynamic.literal(testResults = testResults.asInstanceOf[js.Any], unhandledErrors = unhandledErrors.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunResult]
   }
   
-  @scala.inline
-  implicit class RunResultMutableBuilder[Self <: RunResult] (val x: Self) extends AnyVal {
+  extension [Self <: RunResult](x: Self) {
     
-    @scala.inline
-    def setTestResults(value: TestResults): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
+    inline def setTestResults(value: TestResults): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResultsVarargs(value: TestResult*): Self = StObject.set(x, "testResults", js.Array(value :_*))
+    inline def setTestResultsVarargs(value: TestResult*): Self = StObject.set(x, "testResults", js.Array(value :_*))
     
-    @scala.inline
-    def setUnhandledErrors(value: js.Array[FormattedError]): Self = StObject.set(x, "unhandledErrors", value.asInstanceOf[js.Any])
+    inline def setUnhandledErrors(value: js.Array[FormattedError]): Self = StObject.set(x, "unhandledErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhandledErrorsVarargs(value: FormattedError*): Self = StObject.set(x, "unhandledErrors", js.Array(value :_*))
+    inline def setUnhandledErrorsVarargs(value: FormattedError*): Self = StObject.set(x, "unhandledErrors", js.Array(value :_*))
   }
 }

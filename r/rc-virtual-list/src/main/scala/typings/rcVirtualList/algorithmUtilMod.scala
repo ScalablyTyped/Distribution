@@ -12,9 +12,7 @@ object algorithmUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findListDiffIndex[T](originList: js.Array[T], targetList: js.Array[T], getKey: js.Function1[/* item */ T, Key]): Index | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findListDiffIndex")(originList.asInstanceOf[js.Any], targetList.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any])).asInstanceOf[Index | Null]
+  inline def findListDiffIndex[T](originList: js.Array[T], targetList: js.Array[T], getKey: js.Function1[/* item */ T, Key]): Index | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findListDiffIndex")(originList.asInstanceOf[js.Any], targetList.asInstanceOf[js.Any], getKey.asInstanceOf[js.Any])).asInstanceOf[Index | Null]
   
-  @scala.inline
-  def getIndexByStartLoc(min: Double, max: Double, start: Double, index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getIndexByStartLoc")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], start.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getIndexByStartLoc(min: Double, max: Double, start: Double, index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getIndexByStartLoc")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], start.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -38,55 +38,39 @@ trait GooglePrivacyDlpV2Container extends StObject {
 }
 object GooglePrivacyDlpV2Container {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2Container = {
+  inline def apply(): GooglePrivacyDlpV2Container = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2Container]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ContainerMutableBuilder[Self <: GooglePrivacyDlpV2Container] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2Container](x: Self) {
     
-    @scala.inline
-    def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
+    inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullPathUndefined: Self = StObject.set(x, "fullPath", js.undefined)
+    inline def setFullPathUndefined: Self = StObject.set(x, "fullPath", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+    inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
+    inline def setRelativePathUndefined: Self = StObject.set(x, "relativePath", js.undefined)
     
-    @scala.inline
-    def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
+    inline def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootPathUndefined: Self = StObject.set(x, "rootPath", js.undefined)
+    inline def setRootPathUndefined: Self = StObject.set(x, "rootPath", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

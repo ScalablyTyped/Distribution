@@ -17,40 +17,29 @@ trait KMLOptions extends StObject {
 }
 object KMLOptions {
   
-  @scala.inline
-  def apply(): KMLOptions = {
+  inline def apply(): KMLOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KMLOptions]
   }
   
-  @scala.inline
-  implicit class KMLOptionsMutableBuilder[Self <: KMLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KMLOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultStyle(value: js.Array[Style]): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
+    inline def setDefaultStyle(value: js.Array[Style]): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
+    inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
     
-    @scala.inline
-    def setDefaultStyleVarargs(value: Style*): Self = StObject.set(x, "defaultStyle", js.Array(value :_*))
+    inline def setDefaultStyleVarargs(value: Style*): Self = StObject.set(x, "defaultStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setExtractStyles(value: Boolean): Self = StObject.set(x, "extractStyles", value.asInstanceOf[js.Any])
+    inline def setExtractStyles(value: Boolean): Self = StObject.set(x, "extractStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractStylesUndefined: Self = StObject.set(x, "extractStyles", js.undefined)
+    inline def setExtractStylesUndefined: Self = StObject.set(x, "extractStyles", js.undefined)
     
-    @scala.inline
-    def setShowPointNames(value: Boolean): Self = StObject.set(x, "showPointNames", value.asInstanceOf[js.Any])
+    inline def setShowPointNames(value: Boolean): Self = StObject.set(x, "showPointNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPointNamesUndefined: Self = StObject.set(x, "showPointNames", js.undefined)
+    inline def setShowPointNamesUndefined: Self = StObject.set(x, "showPointNames", js.undefined)
     
-    @scala.inline
-    def setWriteStyles(value: Boolean): Self = StObject.set(x, "writeStyles", value.asInstanceOf[js.Any])
+    inline def setWriteStyles(value: Boolean): Self = StObject.set(x, "writeStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteStylesUndefined: Self = StObject.set(x, "writeStyles", js.undefined)
+    inline def setWriteStylesUndefined: Self = StObject.set(x, "writeStyles", js.undefined)
   }
 }

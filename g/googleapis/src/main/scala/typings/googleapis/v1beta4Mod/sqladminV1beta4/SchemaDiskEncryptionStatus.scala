@@ -21,25 +21,19 @@ trait SchemaDiskEncryptionStatus extends StObject {
 }
 object SchemaDiskEncryptionStatus {
   
-  @scala.inline
-  def apply(): SchemaDiskEncryptionStatus = {
+  inline def apply(): SchemaDiskEncryptionStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiskEncryptionStatus]
   }
   
-  @scala.inline
-  implicit class SchemaDiskEncryptionStatusMutableBuilder[Self <: SchemaDiskEncryptionStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiskEncryptionStatus](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setKmsKeyVersionName(value: String): Self = StObject.set(x, "kmsKeyVersionName", value.asInstanceOf[js.Any])
+    inline def setKmsKeyVersionName(value: String): Self = StObject.set(x, "kmsKeyVersionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyVersionNameUndefined: Self = StObject.set(x, "kmsKeyVersionName", js.undefined)
+    inline def setKmsKeyVersionNameUndefined: Self = StObject.set(x, "kmsKeyVersionName", js.undefined)
   }
 }

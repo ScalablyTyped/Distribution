@@ -11,19 +11,15 @@ trait RuntimeMetadata extends StObject {
 }
 object RuntimeMetadata {
   
-  @scala.inline
-  def apply(): RuntimeMetadata = {
+  inline def apply(): RuntimeMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuntimeMetadata]
   }
   
-  @scala.inline
-  implicit class RuntimeMetadataMutableBuilder[Self <: RuntimeMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: RuntimeMetadata](x: Self) {
     
-    @scala.inline
-    def setComputeEngine(value: ComputeEngine): Self = StObject.set(x, "computeEngine", value.asInstanceOf[js.Any])
+    inline def setComputeEngine(value: ComputeEngine): Self = StObject.set(x, "computeEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeEngineUndefined: Self = StObject.set(x, "computeEngine", js.undefined)
+    inline def setComputeEngineUndefined: Self = StObject.set(x, "computeEngine", js.undefined)
   }
 }

@@ -16,19 +16,15 @@ trait SchemaPhotoId extends StObject {
 }
 object SchemaPhotoId {
   
-  @scala.inline
-  def apply(): SchemaPhotoId = {
+  inline def apply(): SchemaPhotoId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPhotoId]
   }
   
-  @scala.inline
-  implicit class SchemaPhotoIdMutableBuilder[Self <: SchemaPhotoId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPhotoId](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

@@ -17,26 +17,21 @@ object Vector3 {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.vector3Mod.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.vector3Mod.Vector3]
-  @scala.inline
-  def create(x: Double, y: Double, z: Double): typings.wonderJs.vector3Mod.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.vector3Mod.Vector3]
+  inline def create(): typings.wonderJs.vector3Mod.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.vector3Mod.Vector3]
+  inline def create(x: Double, y: Double, z: Double): typings.wonderJs.vector3Mod.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.vector3Mod.Vector3]
   
   @JSImport("wonder.js/dist/es2015", "Vector3.forward")
   @js.native
   def forward: js.Any = js.native
-  @scala.inline
-  def forward_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forward")(x.asInstanceOf[js.Any])
+  inline def forward_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forward")(x.asInstanceOf[js.Any])
   
   @JSImport("wonder.js/dist/es2015", "Vector3.right")
   @js.native
   def right: js.Any = js.native
-  @scala.inline
-  def right_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+  inline def right_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
   
   @JSImport("wonder.js/dist/es2015", "Vector3.up")
   @js.native
   def up: js.Any = js.native
-  @scala.inline
-  def up_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("up")(x.asInstanceOf[js.Any])
+  inline def up_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("up")(x.asInstanceOf[js.Any])
 }

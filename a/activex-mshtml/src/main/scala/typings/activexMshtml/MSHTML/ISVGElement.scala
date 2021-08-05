@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISVGElement extends StObject {
   
-  @JSName("MSHTML.ISVGElement_typekey")
+  /* private */ @JSName("MSHTML.ISVGElement_typekey")
   var MSHTMLDotISVGElement_typekey: ISVGElement
   
   var focusable: SVGAnimatedEnumeration
@@ -19,8 +19,7 @@ trait ISVGElement extends StObject {
 }
 object ISVGElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotISVGElement_typekey: ISVGElement,
     focusable: SVGAnimatedEnumeration,
     ownerSVGElement: ISVGSVGElement,
@@ -32,22 +31,16 @@ object ISVGElement {
     __obj.asInstanceOf[ISVGElement]
   }
   
-  @scala.inline
-  implicit class ISVGElementMutableBuilder[Self <: ISVGElement] (val x: Self) extends AnyVal {
+  extension [Self <: ISVGElement](x: Self) {
     
-    @scala.inline
-    def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    inline def setFocusable(value: SVGAnimatedEnumeration): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotISVGElement_typekey(value: ISVGElement): Self = StObject.set(x, "MSHTML.ISVGElement_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotISVGElement_typekey(value: ISVGElement): Self = StObject.set(x, "MSHTML.ISVGElement_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
+    inline def setOwnerSVGElement(value: ISVGSVGElement): Self = StObject.set(x, "ownerSVGElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
+    inline def setViewportElement(value: ISVGElement): Self = StObject.set(x, "viewportElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
+    inline def setXmlbase(value: String): Self = StObject.set(x, "xmlbase", value.asInstanceOf[js.Any])
   }
 }

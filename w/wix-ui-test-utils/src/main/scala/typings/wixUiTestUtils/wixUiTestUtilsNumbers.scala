@@ -8,6 +8,5 @@ object wixUiTestUtilsNumbers {
   
   @js.native
   sealed trait `6006` extends StObject
-  @scala.inline
-  def `6006`: `6006` = 6006.asInstanceOf[`6006`]
+  inline def `6006`: `6006` = 6006.asInstanceOf[`6006`]
 }

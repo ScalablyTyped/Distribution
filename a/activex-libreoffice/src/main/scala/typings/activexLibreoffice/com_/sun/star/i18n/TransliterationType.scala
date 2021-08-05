@@ -23,22 +23,16 @@ object TransliterationType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CASCADE: `8` = 8.asInstanceOf[`8`]
+    inline def CASCADE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def IGNORE: `4` = 4.asInstanceOf[`4`]
+    inline def IGNORE: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def NUMERIC: `2` = 2.asInstanceOf[`2`]
+    inline def NUMERIC: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def ONE_TO_ONE: `1` = 1.asInstanceOf[`1`]
+    inline def ONE_TO_ONE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def ONE_TO_ONE_NUMERIC: `3` = 3.asInstanceOf[`3`]
+    inline def ONE_TO_ONE_NUMERIC: `3` = 3.asInstanceOf[`3`]
   }
 }

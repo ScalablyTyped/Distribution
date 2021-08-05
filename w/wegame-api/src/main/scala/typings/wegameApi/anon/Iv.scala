@@ -18,19 +18,15 @@ trait Iv extends StObject {
 }
 object Iv {
   
-  @scala.inline
-  def apply(encryptedData: String, iv: String): Iv = {
+  inline def apply(encryptedData: String, iv: String): Iv = {
     val __obj = js.Dynamic.literal(encryptedData = encryptedData.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any])
     __obj.asInstanceOf[Iv]
   }
   
-  @scala.inline
-  implicit class IvMutableBuilder[Self <: Iv] (val x: Self) extends AnyVal {
+  extension [Self <: Iv](x: Self) {
     
-    @scala.inline
-    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
   }
 }

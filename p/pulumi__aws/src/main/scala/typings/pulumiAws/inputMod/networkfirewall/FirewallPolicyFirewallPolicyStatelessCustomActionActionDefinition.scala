@@ -16,8 +16,7 @@ trait FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition extends 
 }
 object FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     publishMetricAction: Input[
       FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction
     ]
@@ -26,11 +25,9 @@ object FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition {
     __obj.asInstanceOf[FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition]
   }
   
-  @scala.inline
-  implicit class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionMutableBuilder[Self <: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition](x: Self) {
     
-    @scala.inline
-    def setPublishMetricAction(
+    inline def setPublishMetricAction(
       value: Input[
           FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction
         ]

@@ -112,115 +112,79 @@ trait ParamsResourceFilesPatch
 }
 object ParamsResourceFilesPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceFilesPatch = {
+  inline def apply(): ParamsResourceFilesPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceFilesPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceFilesPatchMutableBuilder[Self <: ParamsResourceFilesPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceFilesPatch](x: Self) {
     
-    @scala.inline
-    def setAddParents(value: String): Self = StObject.set(x, "addParents", value.asInstanceOf[js.Any])
+    inline def setAddParents(value: String): Self = StObject.set(x, "addParents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddParentsUndefined: Self = StObject.set(x, "addParents", js.undefined)
+    inline def setAddParentsUndefined: Self = StObject.set(x, "addParents", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+    inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
+    inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setModifiedDateBehavior(value: String): Self = StObject.set(x, "modifiedDateBehavior", value.asInstanceOf[js.Any])
+    inline def setModifiedDateBehavior(value: String): Self = StObject.set(x, "modifiedDateBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDateBehaviorUndefined: Self = StObject.set(x, "modifiedDateBehavior", js.undefined)
+    inline def setModifiedDateBehaviorUndefined: Self = StObject.set(x, "modifiedDateBehavior", js.undefined)
     
-    @scala.inline
-    def setNewRevision(value: Boolean): Self = StObject.set(x, "newRevision", value.asInstanceOf[js.Any])
+    inline def setNewRevision(value: Boolean): Self = StObject.set(x, "newRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewRevisionUndefined: Self = StObject.set(x, "newRevision", js.undefined)
+    inline def setNewRevisionUndefined: Self = StObject.set(x, "newRevision", js.undefined)
     
-    @scala.inline
-    def setOcr(value: Boolean): Self = StObject.set(x, "ocr", value.asInstanceOf[js.Any])
+    inline def setOcr(value: Boolean): Self = StObject.set(x, "ocr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcrLanguage(value: String): Self = StObject.set(x, "ocrLanguage", value.asInstanceOf[js.Any])
+    inline def setOcrLanguage(value: String): Self = StObject.set(x, "ocrLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcrLanguageUndefined: Self = StObject.set(x, "ocrLanguage", js.undefined)
+    inline def setOcrLanguageUndefined: Self = StObject.set(x, "ocrLanguage", js.undefined)
     
-    @scala.inline
-    def setOcrUndefined: Self = StObject.set(x, "ocr", js.undefined)
+    inline def setOcrUndefined: Self = StObject.set(x, "ocr", js.undefined)
     
-    @scala.inline
-    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
+    inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
     
-    @scala.inline
-    def setRemoveParents(value: String): Self = StObject.set(x, "removeParents", value.asInstanceOf[js.Any])
+    inline def setRemoveParents(value: String): Self = StObject.set(x, "removeParents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveParentsUndefined: Self = StObject.set(x, "removeParents", js.undefined)
+    inline def setRemoveParentsUndefined: Self = StObject.set(x, "removeParents", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaFile): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaFile): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSetModifiedDate(value: Boolean): Self = StObject.set(x, "setModifiedDate", value.asInstanceOf[js.Any])
+    inline def setSetModifiedDate(value: Boolean): Self = StObject.set(x, "setModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetModifiedDateUndefined: Self = StObject.set(x, "setModifiedDate", js.undefined)
+    inline def setSetModifiedDateUndefined: Self = StObject.set(x, "setModifiedDate", js.undefined)
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
     
-    @scala.inline
-    def setTimedTextLanguage(value: String): Self = StObject.set(x, "timedTextLanguage", value.asInstanceOf[js.Any])
+    inline def setTimedTextLanguage(value: String): Self = StObject.set(x, "timedTextLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedTextLanguageUndefined: Self = StObject.set(x, "timedTextLanguage", js.undefined)
+    inline def setTimedTextLanguageUndefined: Self = StObject.set(x, "timedTextLanguage", js.undefined)
     
-    @scala.inline
-    def setTimedTextTrackName(value: String): Self = StObject.set(x, "timedTextTrackName", value.asInstanceOf[js.Any])
+    inline def setTimedTextTrackName(value: String): Self = StObject.set(x, "timedTextTrackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedTextTrackNameUndefined: Self = StObject.set(x, "timedTextTrackName", js.undefined)
+    inline def setTimedTextTrackNameUndefined: Self = StObject.set(x, "timedTextTrackName", js.undefined)
     
-    @scala.inline
-    def setUpdateViewedDate(value: Boolean): Self = StObject.set(x, "updateViewedDate", value.asInstanceOf[js.Any])
+    inline def setUpdateViewedDate(value: Boolean): Self = StObject.set(x, "updateViewedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateViewedDateUndefined: Self = StObject.set(x, "updateViewedDate", js.undefined)
+    inline def setUpdateViewedDateUndefined: Self = StObject.set(x, "updateViewedDate", js.undefined)
     
-    @scala.inline
-    def setUseContentAsIndexableText(value: Boolean): Self = StObject.set(x, "useContentAsIndexableText", value.asInstanceOf[js.Any])
+    inline def setUseContentAsIndexableText(value: Boolean): Self = StObject.set(x, "useContentAsIndexableText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseContentAsIndexableTextUndefined: Self = StObject.set(x, "useContentAsIndexableText", js.undefined)
+    inline def setUseContentAsIndexableTextUndefined: Self = StObject.set(x, "useContentAsIndexableText", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait MLTransformParameters extends StObject {
 }
 object MLTransformParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     findMatchesParameters: Input[MLTransformParametersFindMatchesParameters],
     transformType: Input[String]
   ): MLTransformParameters = {
@@ -28,13 +27,10 @@ object MLTransformParameters {
     __obj.asInstanceOf[MLTransformParameters]
   }
   
-  @scala.inline
-  implicit class MLTransformParametersMutableBuilder[Self <: MLTransformParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MLTransformParameters](x: Self) {
     
-    @scala.inline
-    def setFindMatchesParameters(value: Input[MLTransformParametersFindMatchesParameters]): Self = StObject.set(x, "findMatchesParameters", value.asInstanceOf[js.Any])
+    inline def setFindMatchesParameters(value: Input[MLTransformParametersFindMatchesParameters]): Self = StObject.set(x, "findMatchesParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformType(value: Input[String]): Self = StObject.set(x, "transformType", value.asInstanceOf[js.Any])
+    inline def setTransformType(value: Input[String]): Self = StObject.set(x, "transformType", value.asInstanceOf[js.Any])
   }
 }

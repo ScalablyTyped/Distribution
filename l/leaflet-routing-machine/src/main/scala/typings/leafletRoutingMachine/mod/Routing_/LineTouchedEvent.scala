@@ -12,19 +12,15 @@ trait LineTouchedEvent extends StObject {
 }
 object LineTouchedEvent {
   
-  @scala.inline
-  def apply(afterIndex: Double, latlng: Double): LineTouchedEvent = {
+  inline def apply(afterIndex: Double, latlng: Double): LineTouchedEvent = {
     val __obj = js.Dynamic.literal(afterIndex = afterIndex.asInstanceOf[js.Any], latlng = latlng.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineTouchedEvent]
   }
   
-  @scala.inline
-  implicit class LineTouchedEventMutableBuilder[Self <: LineTouchedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LineTouchedEvent](x: Self) {
     
-    @scala.inline
-    def setAfterIndex(value: Double): Self = StObject.set(x, "afterIndex", value.asInstanceOf[js.Any])
+    inline def setAfterIndex(value: Double): Self = StObject.set(x, "afterIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatlng(value: Double): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
+    inline def setLatlng(value: Double): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
   }
 }

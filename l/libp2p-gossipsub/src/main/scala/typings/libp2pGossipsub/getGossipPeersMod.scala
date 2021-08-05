@@ -11,10 +11,8 @@ object getGossipPeersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getGossipPeers(router: typings.libp2pGossipsub.mod.^, topic: String, count: Double): Set[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGossipPeers")(router.asInstanceOf[js.Any], topic.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Set[String]]
-  @scala.inline
-  def getGossipPeers(
+  inline def getGossipPeers(router: typings.libp2pGossipsub.mod.^, topic: String, count: Double): Set[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGossipPeers")(router.asInstanceOf[js.Any], topic.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Set[String]]
+  inline def getGossipPeers(
     router: typings.libp2pGossipsub.mod.^,
     topic: String,
     count: Double,

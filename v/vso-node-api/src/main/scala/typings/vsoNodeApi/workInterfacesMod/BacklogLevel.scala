@@ -28,8 +28,7 @@ trait BacklogLevel extends StObject {
 }
 object BacklogLevel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     categoryReferenceName: String,
     pluralName: String,
     workItemStates: js.Array[String],
@@ -39,25 +38,18 @@ object BacklogLevel {
     __obj.asInstanceOf[BacklogLevel]
   }
   
-  @scala.inline
-  implicit class BacklogLevelMutableBuilder[Self <: BacklogLevel] (val x: Self) extends AnyVal {
+  extension [Self <: BacklogLevel](x: Self) {
     
-    @scala.inline
-    def setCategoryReferenceName(value: String): Self = StObject.set(x, "categoryReferenceName", value.asInstanceOf[js.Any])
+    inline def setCategoryReferenceName(value: String): Self = StObject.set(x, "categoryReferenceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluralName(value: String): Self = StObject.set(x, "pluralName", value.asInstanceOf[js.Any])
+    inline def setPluralName(value: String): Self = StObject.set(x, "pluralName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemStates(value: js.Array[String]): Self = StObject.set(x, "workItemStates", value.asInstanceOf[js.Any])
+    inline def setWorkItemStates(value: js.Array[String]): Self = StObject.set(x, "workItemStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemStatesVarargs(value: String*): Self = StObject.set(x, "workItemStates", js.Array(value :_*))
+    inline def setWorkItemStatesVarargs(value: String*): Self = StObject.set(x, "workItemStates", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkItemTypes(value: js.Array[String]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
+    inline def setWorkItemTypes(value: js.Array[String]): Self = StObject.set(x, "workItemTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypesVarargs(value: String*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
+    inline def setWorkItemTypesVarargs(value: String*): Self = StObject.set(x, "workItemTypes", js.Array(value :_*))
   }
 }

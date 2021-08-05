@@ -13,17 +13,14 @@ trait NullLiteral
 }
 object NullLiteral {
   
-  @scala.inline
-  def apply(): NullLiteral = {
+  inline def apply(): NullLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[NullLiteral]
   }
   
-  @scala.inline
-  implicit class NullLiteralMutableBuilder[Self <: NullLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: NullLiteral](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.doctrine.doctrineStrings.NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.doctrine.doctrineStrings.NullLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

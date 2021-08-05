@@ -52,6 +52,5 @@ object xmlTagsMod {
     var requiredParents: StringDictionary[Boolean] = js.native
   }
   
-  @scala.inline
-  def getXmlTagDefinition(tagName: String): XmlTagDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("getXmlTagDefinition")(tagName.asInstanceOf[js.Any]).asInstanceOf[XmlTagDefinition]
+  inline def getXmlTagDefinition(tagName: String): XmlTagDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("getXmlTagDefinition")(tagName.asInstanceOf[js.Any]).asInstanceOf[XmlTagDefinition]
 }

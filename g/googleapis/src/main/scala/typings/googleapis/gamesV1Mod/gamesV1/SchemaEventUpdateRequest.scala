@@ -27,31 +27,23 @@ trait SchemaEventUpdateRequest extends StObject {
 }
 object SchemaEventUpdateRequest {
   
-  @scala.inline
-  def apply(): SchemaEventUpdateRequest = {
+  inline def apply(): SchemaEventUpdateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEventUpdateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaEventUpdateRequestMutableBuilder[Self <: SchemaEventUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEventUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    inline def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
+    inline def setDefinitionIdUndefined: Self = StObject.set(x, "definitionId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUpdateCount(value: String): Self = StObject.set(x, "updateCount", value.asInstanceOf[js.Any])
+    inline def setUpdateCount(value: String): Self = StObject.set(x, "updateCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCountUndefined: Self = StObject.set(x, "updateCount", js.undefined)
+    inline def setUpdateCountUndefined: Self = StObject.set(x, "updateCount", js.undefined)
   }
 }

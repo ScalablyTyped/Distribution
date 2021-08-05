@@ -14,23 +14,18 @@ object anon {
   }
   object Column {
     
-    @scala.inline
-    def apply(line: Double): Column = {
+    inline def apply(line: Double): Column = {
       val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -22,20 +22,16 @@ object userLeaveMod extends Shortcut {
   }
   object UserLeaveProps {
     
-    @scala.inline
-    def apply(): UserLeaveProps = {
+    inline def apply(): UserLeaveProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserLeaveProps]
     }
     
-    @scala.inline
-    implicit class UserLeavePropsMutableBuilder[Self <: UserLeaveProps] (val x: Self) extends AnyVal {
+    extension [Self <: UserLeaveProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

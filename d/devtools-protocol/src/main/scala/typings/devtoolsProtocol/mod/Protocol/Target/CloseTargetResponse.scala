@@ -13,16 +13,13 @@ trait CloseTargetResponse extends StObject {
 }
 object CloseTargetResponse {
   
-  @scala.inline
-  def apply(success: Boolean): CloseTargetResponse = {
+  inline def apply(success: Boolean): CloseTargetResponse = {
     val __obj = js.Dynamic.literal(success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseTargetResponse]
   }
   
-  @scala.inline
-  implicit class CloseTargetResponseMutableBuilder[Self <: CloseTargetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CloseTargetResponse](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

@@ -61,8 +61,7 @@ object suggestionsItemTypesMod {
   }
   object ISuggestionItemProps {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       RenderSuggestion: (T, ISuggestionItemProps[T]) => Element,
       onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit,
       onRemoveItem: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit,
@@ -72,74 +71,51 @@ object suggestionsItemTypesMod {
       __obj.asInstanceOf[ISuggestionItemProps[T]]
     }
     
-    @scala.inline
-    implicit class ISuggestionItemPropsMutableBuilder[Self <: ISuggestionItemProps[?], T] (val x: Self & ISuggestionItemProps[T]) extends AnyVal {
+    extension [Self <: ISuggestionItemProps[?], T](x: Self & ISuggestionItemProps[T]) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[ISuggestionsItem]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[ISuggestionsItem]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ ISuggestionsItem | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ ISuggestionsItem | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsSelectedOverride(value: Boolean): Self = StObject.set(x, "isSelectedOverride", value.asInstanceOf[js.Any])
+      inline def setIsSelectedOverride(value: Boolean): Self = StObject.set(x, "isSelectedOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedOverrideUndefined: Self = StObject.set(x, "isSelectedOverride", js.undefined)
+      inline def setIsSelectedOverrideUndefined: Self = StObject.set(x, "isSelectedOverride", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRemoveItem(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onRemoveItem", js.Any.fromFunction1(value))
+      inline def setOnRemoveItem(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onRemoveItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveButtonAriaLabel(value: String): Self = StObject.set(x, "removeButtonAriaLabel", value.asInstanceOf[js.Any])
+      inline def setRemoveButtonAriaLabel(value: String): Self = StObject.set(x, "removeButtonAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveButtonAriaLabelUndefined: Self = StObject.set(x, "removeButtonAriaLabel", js.undefined)
+      inline def setRemoveButtonAriaLabelUndefined: Self = StObject.set(x, "removeButtonAriaLabel", js.undefined)
       
-      @scala.inline
-      def setRenderSuggestion(value: (T, ISuggestionItemProps[T]) => Element): Self = StObject.set(x, "RenderSuggestion", js.Any.fromFunction2(value))
+      inline def setRenderSuggestion(value: (T, ISuggestionItemProps[T]) => Element): Self = StObject.set(x, "RenderSuggestion", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShowRemoveButton(value: Boolean): Self = StObject.set(x, "showRemoveButton", value.asInstanceOf[js.Any])
+      inline def setShowRemoveButton(value: Boolean): Self = StObject.set(x, "showRemoveButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRemoveButtonUndefined: Self = StObject.set(x, "showRemoveButton", js.undefined)
+      inline def setShowRemoveButtonUndefined: Self = StObject.set(x, "showRemoveButton", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[ISuggestionsItemStyleProps, ISuggestionsItemStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[ISuggestionsItemStyleProps, ISuggestionsItemStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: ISuggestionsItemStyleProps => DeepPartial[ISuggestionsItemStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: ISuggestionsItemStyleProps => DeepPartial[ISuggestionsItemStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setSuggestionModel(value: ISuggestionModel[T]): Self = StObject.set(x, "suggestionModel", value.asInstanceOf[js.Any])
+      inline def setSuggestionModel(value: ISuggestionModel[T]): Self = StObject.set(x, "suggestionModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -157,29 +133,22 @@ object suggestionsItemTypesMod {
   }
   object ISuggestionsItemStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): ISuggestionsItemStyleProps = {
+    inline def apply(theme: ITheme): ISuggestionsItemStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISuggestionsItemStyleProps]
     }
     
-    @scala.inline
-    implicit class ISuggestionsItemStylePropsMutableBuilder[Self <: ISuggestionsItemStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISuggestionsItemStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setSuggested(value: Boolean): Self = StObject.set(x, "suggested", value.asInstanceOf[js.Any])
+      inline def setSuggested(value: Boolean): Self = StObject.set(x, "suggested", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestedUndefined: Self = StObject.set(x, "suggested", js.undefined)
+      inline def setSuggestedUndefined: Self = StObject.set(x, "suggested", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -196,41 +165,30 @@ object suggestionsItemTypesMod {
   }
   object ISuggestionsItemStyles {
     
-    @scala.inline
-    def apply(): ISuggestionsItemStyles = {
+    inline def apply(): ISuggestionsItemStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISuggestionsItemStyles]
     }
     
-    @scala.inline
-    implicit class ISuggestionsItemStylesMutableBuilder[Self <: ISuggestionsItemStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ISuggestionsItemStyles](x: Self) {
       
-      @scala.inline
-      def setCloseButton(value: IStyle): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      inline def setCloseButton(value: IStyle): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseButtonNull: Self = StObject.set(x, "closeButton", null)
+      inline def setCloseButtonNull: Self = StObject.set(x, "closeButton", null)
       
-      @scala.inline
-      def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+      inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
       
-      @scala.inline
-      def setItemButton(value: IStyle): Self = StObject.set(x, "itemButton", value.asInstanceOf[js.Any])
+      inline def setItemButton(value: IStyle): Self = StObject.set(x, "itemButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemButtonNull: Self = StObject.set(x, "itemButton", null)
+      inline def setItemButtonNull: Self = StObject.set(x, "itemButton", null)
       
-      @scala.inline
-      def setItemButtonUndefined: Self = StObject.set(x, "itemButton", js.undefined)
+      inline def setItemButtonUndefined: Self = StObject.set(x, "itemButton", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

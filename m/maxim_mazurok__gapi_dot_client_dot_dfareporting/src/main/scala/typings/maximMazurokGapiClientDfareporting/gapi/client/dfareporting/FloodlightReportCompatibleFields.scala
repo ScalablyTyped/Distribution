@@ -20,46 +20,33 @@ trait FloodlightReportCompatibleFields extends StObject {
 }
 object FloodlightReportCompatibleFields {
   
-  @scala.inline
-  def apply(): FloodlightReportCompatibleFields = {
+  inline def apply(): FloodlightReportCompatibleFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloodlightReportCompatibleFields]
   }
   
-  @scala.inline
-  implicit class FloodlightReportCompatibleFieldsMutableBuilder[Self <: FloodlightReportCompatibleFields] (val x: Self) extends AnyVal {
+  extension [Self <: FloodlightReportCompatibleFields](x: Self) {
     
-    @scala.inline
-    def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
+    inline def setDimensionFilters(value: js.Array[Dimension]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
+    inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    @scala.inline
-    def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: Dimension*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
   }
 }

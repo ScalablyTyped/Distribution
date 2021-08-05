@@ -48,8 +48,7 @@ trait AutoMLJobSummary extends StObject {
 }
 object AutoMLJobSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoMLJobArn: AutoMLJobArn,
     AutoMLJobName: AutoMLJobName,
     AutoMLJobSecondaryStatus: AutoMLJobSecondaryStatus,
@@ -61,37 +60,26 @@ object AutoMLJobSummary {
     __obj.asInstanceOf[AutoMLJobSummary]
   }
   
-  @scala.inline
-  implicit class AutoMLJobSummaryMutableBuilder[Self <: AutoMLJobSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLJobSummary](x: Self) {
     
-    @scala.inline
-    def setAutoMLJobArn(value: AutoMLJobArn): Self = StObject.set(x, "AutoMLJobArn", value.asInstanceOf[js.Any])
+    inline def setAutoMLJobArn(value: AutoMLJobArn): Self = StObject.set(x, "AutoMLJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
+    inline def setAutoMLJobName(value: AutoMLJobName): Self = StObject.set(x, "AutoMLJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMLJobSecondaryStatus(value: AutoMLJobSecondaryStatus): Self = StObject.set(x, "AutoMLJobSecondaryStatus", value.asInstanceOf[js.Any])
+    inline def setAutoMLJobSecondaryStatus(value: AutoMLJobSecondaryStatus): Self = StObject.set(x, "AutoMLJobSecondaryStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMLJobStatus(value: AutoMLJobStatus): Self = StObject.set(x, "AutoMLJobStatus", value.asInstanceOf[js.Any])
+    inline def setAutoMLJobStatus(value: AutoMLJobStatus): Self = StObject.set(x, "AutoMLJobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: AutoMLFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: AutoMLFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

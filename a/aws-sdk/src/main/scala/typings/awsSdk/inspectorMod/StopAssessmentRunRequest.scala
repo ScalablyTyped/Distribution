@@ -18,22 +18,17 @@ trait StopAssessmentRunRequest extends StObject {
 }
 object StopAssessmentRunRequest {
   
-  @scala.inline
-  def apply(assessmentRunArn: Arn): StopAssessmentRunRequest = {
+  inline def apply(assessmentRunArn: Arn): StopAssessmentRunRequest = {
     val __obj = js.Dynamic.literal(assessmentRunArn = assessmentRunArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopAssessmentRunRequest]
   }
   
-  @scala.inline
-  implicit class StopAssessmentRunRequestMutableBuilder[Self <: StopAssessmentRunRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopAssessmentRunRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopAction(value: StopAction): Self = StObject.set(x, "stopAction", value.asInstanceOf[js.Any])
+    inline def setStopAction(value: StopAction): Self = StObject.set(x, "stopAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopActionUndefined: Self = StObject.set(x, "stopAction", js.undefined)
+    inline def setStopActionUndefined: Self = StObject.set(x, "stopAction", js.undefined)
   }
 }

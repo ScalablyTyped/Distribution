@@ -18,25 +18,19 @@ trait DeploymentReadyOption extends StObject {
 }
 object DeploymentReadyOption {
   
-  @scala.inline
-  def apply(): DeploymentReadyOption = {
+  inline def apply(): DeploymentReadyOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentReadyOption]
   }
   
-  @scala.inline
-  implicit class DeploymentReadyOptionMutableBuilder[Self <: DeploymentReadyOption] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentReadyOption](x: Self) {
     
-    @scala.inline
-    def setActionOnTimeout(value: DeploymentReadyAction): Self = StObject.set(x, "actionOnTimeout", value.asInstanceOf[js.Any])
+    inline def setActionOnTimeout(value: DeploymentReadyAction): Self = StObject.set(x, "actionOnTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionOnTimeoutUndefined: Self = StObject.set(x, "actionOnTimeout", js.undefined)
+    inline def setActionOnTimeoutUndefined: Self = StObject.set(x, "actionOnTimeout", js.undefined)
     
-    @scala.inline
-    def setWaitTimeInMinutes(value: Duration): Self = StObject.set(x, "waitTimeInMinutes", value.asInstanceOf[js.Any])
+    inline def setWaitTimeInMinutes(value: Duration): Self = StObject.set(x, "waitTimeInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitTimeInMinutesUndefined: Self = StObject.set(x, "waitTimeInMinutes", js.undefined)
+    inline def setWaitTimeInMinutesUndefined: Self = StObject.set(x, "waitTimeInMinutes", js.undefined)
   }
 }

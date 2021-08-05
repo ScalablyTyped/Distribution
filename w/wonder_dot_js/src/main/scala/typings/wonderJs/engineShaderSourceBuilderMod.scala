@@ -54,7 +54,6 @@ object engineShaderSourceBuilderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): EngineShaderSourceBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EngineShaderSourceBuilder]
+    inline def create(): EngineShaderSourceBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EngineShaderSourceBuilder]
   }
 }

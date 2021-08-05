@@ -24,31 +24,23 @@ trait Cesium3DTilesetGraphicsOptions extends StObject {
 }
 object Cesium3DTilesetGraphicsOptions {
   
-  @scala.inline
-  def apply(): Cesium3DTilesetGraphicsOptions = {
+  inline def apply(): Cesium3DTilesetGraphicsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cesium3DTilesetGraphicsOptions]
   }
   
-  @scala.inline
-  implicit class Cesium3DTilesetGraphicsOptionsMutableBuilder[Self <: Cesium3DTilesetGraphicsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Cesium3DTilesetGraphicsOptions](x: Self) {
     
-    @scala.inline
-    def setMaximumScreenSpaceError(value: Double | Property): Self = StObject.set(x, "maximumScreenSpaceError", value.asInstanceOf[js.Any])
+    inline def setMaximumScreenSpaceError(value: Double | Property): Self = StObject.set(x, "maximumScreenSpaceError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumScreenSpaceErrorUndefined: Self = StObject.set(x, "maximumScreenSpaceError", js.undefined)
+    inline def setMaximumScreenSpaceErrorUndefined: Self = StObject.set(x, "maximumScreenSpaceError", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean | Property): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean | Property): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setUri(value: String | Property): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String | Property): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

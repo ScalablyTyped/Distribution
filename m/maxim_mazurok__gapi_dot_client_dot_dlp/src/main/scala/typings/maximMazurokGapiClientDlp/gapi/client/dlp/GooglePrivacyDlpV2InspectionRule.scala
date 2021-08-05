@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2InspectionRule extends StObject {
 }
 object GooglePrivacyDlpV2InspectionRule {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2InspectionRule = {
+  inline def apply(): GooglePrivacyDlpV2InspectionRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2InspectionRule]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2InspectionRuleMutableBuilder[Self <: GooglePrivacyDlpV2InspectionRule] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2InspectionRule](x: Self) {
     
-    @scala.inline
-    def setExclusionRule(value: GooglePrivacyDlpV2ExclusionRule): Self = StObject.set(x, "exclusionRule", value.asInstanceOf[js.Any])
+    inline def setExclusionRule(value: GooglePrivacyDlpV2ExclusionRule): Self = StObject.set(x, "exclusionRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionRuleUndefined: Self = StObject.set(x, "exclusionRule", js.undefined)
+    inline def setExclusionRuleUndefined: Self = StObject.set(x, "exclusionRule", js.undefined)
     
-    @scala.inline
-    def setHotwordRule(value: GooglePrivacyDlpV2HotwordRule): Self = StObject.set(x, "hotwordRule", value.asInstanceOf[js.Any])
+    inline def setHotwordRule(value: GooglePrivacyDlpV2HotwordRule): Self = StObject.set(x, "hotwordRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHotwordRuleUndefined: Self = StObject.set(x, "hotwordRule", js.undefined)
+    inline def setHotwordRuleUndefined: Self = StObject.set(x, "hotwordRule", js.undefined)
   }
 }

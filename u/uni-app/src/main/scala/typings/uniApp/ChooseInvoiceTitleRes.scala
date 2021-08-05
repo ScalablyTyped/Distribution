@@ -48,61 +48,43 @@ trait ChooseInvoiceTitleRes extends StObject {
 }
 object ChooseInvoiceTitleRes {
   
-  @scala.inline
-  def apply(): ChooseInvoiceTitleRes = {
+  inline def apply(): ChooseInvoiceTitleRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChooseInvoiceTitleRes]
   }
   
-  @scala.inline
-  implicit class ChooseInvoiceTitleResMutableBuilder[Self <: ChooseInvoiceTitleRes] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseInvoiceTitleRes](x: Self) {
     
-    @scala.inline
-    def setBankAccount(value: String): Self = StObject.set(x, "bankAccount", value.asInstanceOf[js.Any])
+    inline def setBankAccount(value: String): Self = StObject.set(x, "bankAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBankAccountUndefined: Self = StObject.set(x, "bankAccount", js.undefined)
+    inline def setBankAccountUndefined: Self = StObject.set(x, "bankAccount", js.undefined)
     
-    @scala.inline
-    def setBankName(value: String): Self = StObject.set(x, "bankName", value.asInstanceOf[js.Any])
+    inline def setBankName(value: String): Self = StObject.set(x, "bankName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBankNameUndefined: Self = StObject.set(x, "bankName", js.undefined)
+    inline def setBankNameUndefined: Self = StObject.set(x, "bankName", js.undefined)
     
-    @scala.inline
-    def setCompanyAddress(value: String): Self = StObject.set(x, "companyAddress", value.asInstanceOf[js.Any])
+    inline def setCompanyAddress(value: String): Self = StObject.set(x, "companyAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyAddressUndefined: Self = StObject.set(x, "companyAddress", js.undefined)
+    inline def setCompanyAddressUndefined: Self = StObject.set(x, "companyAddress", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    @scala.inline
-    def setTaxNumber(value: String): Self = StObject.set(x, "taxNumber", value.asInstanceOf[js.Any])
+    inline def setTaxNumber(value: String): Self = StObject.set(x, "taxNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxNumberUndefined: Self = StObject.set(x, "taxNumber", js.undefined)
+    inline def setTaxNumberUndefined: Self = StObject.set(x, "taxNumber", js.undefined)
     
-    @scala.inline
-    def setTelephone(value: String): Self = StObject.set(x, "telephone", value.asInstanceOf[js.Any])
+    inline def setTelephone(value: String): Self = StObject.set(x, "telephone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelephoneUndefined: Self = StObject.set(x, "telephone", js.undefined)
+    inline def setTelephoneUndefined: Self = StObject.set(x, "telephone", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

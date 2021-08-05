@@ -13,22 +13,17 @@ trait DetectDominantLanguageResponse extends StObject {
 }
 object DetectDominantLanguageResponse {
   
-  @scala.inline
-  def apply(): DetectDominantLanguageResponse = {
+  inline def apply(): DetectDominantLanguageResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectDominantLanguageResponse]
   }
   
-  @scala.inline
-  implicit class DetectDominantLanguageResponseMutableBuilder[Self <: DetectDominantLanguageResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectDominantLanguageResponse](x: Self) {
     
-    @scala.inline
-    def setLanguages(value: ListOfDominantLanguages): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: ListOfDominantLanguages): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "Languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "Languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: DominantLanguage*): Self = StObject.set(x, "Languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: DominantLanguage*): Self = StObject.set(x, "Languages", js.Array(value :_*))
   }
 }

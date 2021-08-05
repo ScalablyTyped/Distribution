@@ -23,17 +23,14 @@ trait PasswordQuestion[T /* <: Answers */]
 }
 object PasswordQuestion {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): PasswordQuestion[T] = {
+  inline def apply[T /* <: Answers */](): PasswordQuestion[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("password")
     __obj.asInstanceOf[PasswordQuestion[T]]
   }
   
-  @scala.inline
-  implicit class PasswordQuestionMutableBuilder[Self <: PasswordQuestion[?], T /* <: Answers */] (val x: Self & PasswordQuestion[T]) extends AnyVal {
+  extension [Self <: PasswordQuestion[?], T /* <: Answers */](x: Self & PasswordQuestion[T]) {
     
-    @scala.inline
-    def setType(value: password): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: password): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

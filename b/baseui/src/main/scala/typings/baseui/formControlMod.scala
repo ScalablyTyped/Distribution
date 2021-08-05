@@ -49,38 +49,30 @@ object formControlMod {
   }
   object FormControlOverrides {
     
-    @scala.inline
-    def apply(): FormControlOverrides = {
+    inline def apply(): FormControlOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormControlOverrides]
     }
     
-    @scala.inline
-    implicit class FormControlOverridesMutableBuilder[Self <: FormControlOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: FormControlOverrides](x: Self) {
       
-      @scala.inline
-      def setCaption(
+      inline def setCaption(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "Caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "Caption", js.undefined)
       
-      @scala.inline
-      def setControlContainer(
+      inline def setControlContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "ControlContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlContainerUndefined: Self = StObject.set(x, "ControlContainer", js.undefined)
+      inline def setControlContainerUndefined: Self = StObject.set(x, "ControlContainer", js.undefined)
       
-      @scala.inline
-      def setLabel(
+      inline def setLabel(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     }
   }
   
@@ -104,62 +96,44 @@ object formControlMod {
   }
   object FormControlProps {
     
-    @scala.inline
-    def apply(): FormControlProps = {
+    inline def apply(): FormControlProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormControlProps]
     }
     
-    @scala.inline
-    implicit class FormControlPropsMutableBuilder[Self <: FormControlProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormControlProps](x: Self) {
       
-      @scala.inline
-      def setCaption(value: ReactNode): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: ReactNode): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean | ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean | ReactNode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setHtmlFor(value: String): Self = StObject.set(x, "htmlFor", value.asInstanceOf[js.Any])
+      inline def setHtmlFor(value: String): Self = StObject.set(x, "htmlFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlForUndefined: Self = StObject.set(x, "htmlFor", js.undefined)
+      inline def setHtmlForUndefined: Self = StObject.set(x, "htmlFor", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: FormControlOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: FormControlOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setPositive(value: ReactNode): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
+      inline def setPositive(value: ReactNode): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
+      inline def setPositiveUndefined: Self = StObject.set(x, "positive", js.undefined)
     }
   }
   
@@ -169,17 +143,14 @@ object formControlMod {
   }
   object FormControlState {
     
-    @scala.inline
-    def apply(captionId: String): FormControlState = {
+    inline def apply(captionId: String): FormControlState = {
       val __obj = js.Dynamic.literal(captionId = captionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormControlState]
     }
     
-    @scala.inline
-    implicit class FormControlStateMutableBuilder[Self <: FormControlState] (val x: Self) extends AnyVal {
+    extension [Self <: FormControlState](x: Self) {
       
-      @scala.inline
-      def setCaptionId(value: String): Self = StObject.set(x, "captionId", value.asInstanceOf[js.Any])
+      inline def setCaptionId(value: String): Self = StObject.set(x, "captionId", value.asInstanceOf[js.Any])
     }
   }
 }

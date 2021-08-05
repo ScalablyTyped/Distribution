@@ -15,18 +15,15 @@ object tryPathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def exhaustiveTypeException(check: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaustiveTypeException")(check.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+  inline def exhaustiveTypeException(check: scala.Nothing): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("exhaustiveTypeException")(check.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   
-  @scala.inline
-  def getPathsToTry(
+  inline def getPathsToTry(
     extensions: js.Array[String],
     absolutePathMappings: js.Array[MappingEntry],
     requestedModule: String
   ): js.UndefOr[js.Array[TryPath]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathsToTry")(extensions.asInstanceOf[js.Any], absolutePathMappings.asInstanceOf[js.Any], requestedModule.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[TryPath]]]
   
-  @scala.inline
-  def getStrippedPath(tryPath: TryPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrippedPath")(tryPath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getStrippedPath(tryPath: TryPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrippedPath")(tryPath.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait TryPath extends StObject {
     
@@ -36,21 +33,17 @@ object tryPathMod {
   }
   object TryPath {
     
-    @scala.inline
-    def apply(path: String, `type`: file | `extension` | index | _package): TryPath = {
+    inline def apply(path: String, `type`: file | `extension` | index | _package): TryPath = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TryPath]
     }
     
-    @scala.inline
-    implicit class TryPathMutableBuilder[Self <: TryPath] (val x: Self) extends AnyVal {
+    extension [Self <: TryPath](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: file | `extension` | index | _package): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: file | `extension` | index | _package): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -45,53 +45,38 @@ object breadcrumbItemMod extends Shortcut {
   }
   object BreadcrumbItemProps {
     
-    @scala.inline
-    def apply(): BreadcrumbItemProps = {
+    inline def apply(): BreadcrumbItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbItemProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbItemPropsMutableBuilder[Self <: BreadcrumbItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbItemProps](x: Self) {
       
-      @scala.inline
-      def setDropdownProps(value: DropDownProps): Self = StObject.set(x, "dropdownProps", value.asInstanceOf[js.Any])
+      inline def setDropdownProps(value: DropDownProps): Self = StObject.set(x, "dropdownProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownPropsUndefined: Self = StObject.set(x, "dropdownProps", js.undefined)
+      inline def setDropdownPropsUndefined: Self = StObject.set(x, "dropdownProps", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLAnchorElement | HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLAnchorElement | HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: ReactElement | OverlayFunc): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: ReactElement | OverlayFunc): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayFunction0(value: () => ReactElement): Self = StObject.set(x, "overlay", js.Any.fromFunction0(value))
+      inline def setOverlayFunction0(value: () => ReactElement): Self = StObject.set(x, "overlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: ReactNode): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: ReactNode): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
   

@@ -22,8 +22,7 @@ trait UniqueCellFormatRanges
      with XEnumerationAccess
 object UniqueCellFormatRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,

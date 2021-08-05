@@ -16,25 +16,19 @@ trait RenderSuggestionsContainerParams extends StObject {
 }
 object RenderSuggestionsContainerParams {
   
-  @scala.inline
-  def apply(containerProps: ClassName, query: String): RenderSuggestionsContainerParams = {
+  inline def apply(containerProps: ClassName, query: String): RenderSuggestionsContainerParams = {
     val __obj = js.Dynamic.literal(containerProps = containerProps.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderSuggestionsContainerParams]
   }
   
-  @scala.inline
-  implicit class RenderSuggestionsContainerParamsMutableBuilder[Self <: RenderSuggestionsContainerParams] (val x: Self) extends AnyVal {
+  extension [Self <: RenderSuggestionsContainerParams](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setContainerProps(value: ClassName): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
+    inline def setContainerProps(value: ClassName): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

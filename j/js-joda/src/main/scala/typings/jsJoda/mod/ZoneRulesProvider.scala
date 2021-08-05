@@ -14,10 +14,8 @@ object ZoneRulesProvider {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getAvailableZoneIds(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableZoneIds")().asInstanceOf[js.Array[String]]
+  inline def getAvailableZoneIds(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableZoneIds")().asInstanceOf[js.Array[String]]
   
   /* static member */
-  @scala.inline
-  def getRules(zoneId: String): ZoneRules = ^.asInstanceOf[js.Dynamic].applyDynamic("getRules")(zoneId.asInstanceOf[js.Any]).asInstanceOf[ZoneRules]
+  inline def getRules(zoneId: String): ZoneRules = ^.asInstanceOf[js.Dynamic].applyDynamic("getRules")(zoneId.asInstanceOf[js.Any]).asInstanceOf[ZoneRules]
 }

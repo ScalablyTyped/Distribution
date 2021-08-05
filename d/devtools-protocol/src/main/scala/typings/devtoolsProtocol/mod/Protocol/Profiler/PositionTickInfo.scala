@@ -19,19 +19,15 @@ trait PositionTickInfo extends StObject {
 }
 object PositionTickInfo {
   
-  @scala.inline
-  def apply(line: integer, ticks: integer): PositionTickInfo = {
+  inline def apply(line: integer, ticks: integer): PositionTickInfo = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any])
     __obj.asInstanceOf[PositionTickInfo]
   }
   
-  @scala.inline
-  implicit class PositionTickInfoMutableBuilder[Self <: PositionTickInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PositionTickInfo](x: Self) {
     
-    @scala.inline
-    def setLine(value: integer): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: integer): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicks(value: integer): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    inline def setTicks(value: integer): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
   }
 }

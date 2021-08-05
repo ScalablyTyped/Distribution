@@ -31,8 +31,7 @@ object esmDropdownMenuMod {
       * @displayName DropdownMenu
       * @memberOf Dropdown
       */
-    @scala.inline
-    def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(hasChildrenOptions: DropdownMenuProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenOptions.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("react-overlays/esm/DropdownMenu", JSImport.Default)
     @js.native
@@ -47,15 +46,13 @@ object esmDropdownMenuMod {
       @JSImport("react-overlays/esm/DropdownMenu", "default.defaultProps.usePopper")
       @js.native
       def usePopper: Boolean = js.native
-      @scala.inline
-      def usePopper_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
+      inline def usePopper_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
     }
     
     @JSImport("react-overlays/esm/DropdownMenu", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     object propTypes {
       
@@ -71,8 +68,7 @@ object esmDropdownMenuMod {
       @JSImport("react-overlays/esm/DropdownMenu", "default.propTypes.alignEnd")
       @js.native
       def alignEnd: Requireable[Boolean] = js.native
-      @scala.inline
-      def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
+      inline def alignEnd_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alignEnd")(x.asInstanceOf[js.Any])
       
       /**
         * A render prop that returns a Menu element. The `props`
@@ -99,8 +95,7 @@ object esmDropdownMenuMod {
       @JSImport("react-overlays/esm/DropdownMenu", "default.propTypes.children")
       @js.native
       def children: Validator[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
-      @scala.inline
-      def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       /**
         * Enables the Popper.js `flip` modifier, allowing the Dropdown to
@@ -110,8 +105,7 @@ object esmDropdownMenuMod {
       @JSImport("react-overlays/esm/DropdownMenu", "default.propTypes.flip")
       @js.native
       def flip: Requireable[Boolean] = js.native
-      @scala.inline
-      def flip_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flip")(x.asInstanceOf[js.Any])
+      inline def flip_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flip")(x.asInstanceOf[js.Any])
       
       /**
         * A set of popper options and props passed directly to react-popper's Popper component.
@@ -119,8 +113,7 @@ object esmDropdownMenuMod {
       @JSImport("react-overlays/esm/DropdownMenu", "default.propTypes.popperConfig")
       @js.native
       def popperConfig: Requireable[js.Object] = js.native
-      @scala.inline
-      def popperConfig_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popperConfig")(x.asInstanceOf[js.Any])
+      inline def popperConfig_=(x: Requireable[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popperConfig")(x.asInstanceOf[js.Any])
       
       /**
         * Override the default event used by RootCloseWrapper.
@@ -128,8 +121,7 @@ object esmDropdownMenuMod {
       @JSImport("react-overlays/esm/DropdownMenu", "default.propTypes.rootCloseEvent")
       @js.native
       def rootCloseEvent: Requireable[String] = js.native
-      @scala.inline
-      def rootCloseEvent_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootCloseEvent")(x.asInstanceOf[js.Any])
+      inline def rootCloseEvent_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rootCloseEvent")(x.asInstanceOf[js.Any])
       
       /**
         * Controls the visible state of the menu, generally this is
@@ -139,21 +131,17 @@ object esmDropdownMenuMod {
       @JSImport("react-overlays/esm/DropdownMenu", "default.propTypes.show")
       @js.native
       def show: Requireable[Boolean] = js.native
-      @scala.inline
-      def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
+      inline def show_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("show")(x.asInstanceOf[js.Any])
       
       @JSImport("react-overlays/esm/DropdownMenu", "default.propTypes.usePopper")
       @js.native
       def usePopper: Requireable[Boolean] = js.native
-      @scala.inline
-      def usePopper_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
+      inline def usePopper_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("usePopper")(x.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def useDropdownMenu(): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[UseDropdownMenuValue]
-  @scala.inline
-  def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[UseDropdownMenuValue]
+  inline def useDropdownMenu(): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")().asInstanceOf[UseDropdownMenuValue]
+  inline def useDropdownMenu(options: UseDropdownMenuOptions): UseDropdownMenuValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useDropdownMenu")(options.asInstanceOf[js.Any]).asInstanceOf[UseDropdownMenuValue]
   
   trait DropdownMenuProps
     extends StObject
@@ -163,17 +151,14 @@ object esmDropdownMenuMod {
   }
   object DropdownMenuProps {
     
-    @scala.inline
-    def apply(children: UseDropdownMenuValue => ReactNode): DropdownMenuProps = {
+    inline def apply(children: UseDropdownMenuValue => ReactNode): DropdownMenuProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[DropdownMenuProps]
     }
     
-    @scala.inline
-    implicit class DropdownMenuPropsMutableBuilder[Self <: DropdownMenuProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownMenuProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: UseDropdownMenuValue => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: UseDropdownMenuValue => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   
@@ -195,59 +180,42 @@ object esmDropdownMenuMod {
   }
   object UseDropdownMenuOptions {
     
-    @scala.inline
-    def apply(): UseDropdownMenuOptions = {
+    inline def apply(): UseDropdownMenuOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UseDropdownMenuOptions]
     }
     
-    @scala.inline
-    implicit class UseDropdownMenuOptionsMutableBuilder[Self <: UseDropdownMenuOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UseDropdownMenuOptions](x: Self) {
       
-      @scala.inline
-      def setAlignEnd(value: Boolean): Self = StObject.set(x, "alignEnd", value.asInstanceOf[js.Any])
+      inline def setAlignEnd(value: Boolean): Self = StObject.set(x, "alignEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignEndUndefined: Self = StObject.set(x, "alignEnd", js.undefined)
+      inline def setAlignEndUndefined: Self = StObject.set(x, "alignEnd", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetFunction1(value: /* details */ Popper => OffsetValue): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
+      inline def setOffsetFunction1(value: /* details */ Popper => OffsetValue): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPopperConfig(value: OmitUsePopperOptionsenabl): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
+      inline def setPopperConfig(value: OmitUsePopperOptionsenabl): Self = StObject.set(x, "popperConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopperConfigUndefined: Self = StObject.set(x, "popperConfig", js.undefined)
+      inline def setPopperConfigUndefined: Self = StObject.set(x, "popperConfig", js.undefined)
       
-      @scala.inline
-      def setRootCloseEvent(value: MouseEvents): Self = StObject.set(x, "rootCloseEvent", value.asInstanceOf[js.Any])
+      inline def setRootCloseEvent(value: MouseEvents): Self = StObject.set(x, "rootCloseEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootCloseEventUndefined: Self = StObject.set(x, "rootCloseEvent", js.undefined)
+      inline def setRootCloseEventUndefined: Self = StObject.set(x, "rootCloseEvent", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+      inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       
-      @scala.inline
-      def setUsePopper(value: Boolean): Self = StObject.set(x, "usePopper", value.asInstanceOf[js.Any])
+      inline def setUsePopper(value: Boolean): Self = StObject.set(x, "usePopper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePopperUndefined: Self = StObject.set(x, "usePopper", js.undefined)
+      inline def setUsePopperUndefined: Self = StObject.set(x, "usePopper", js.undefined)
     }
   }
   
@@ -271,8 +239,7 @@ object esmDropdownMenuMod {
   }
   object UseDropdownMenuValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arrowProps: (Record[String, js.Any]) & Ref,
       close: Event => Unit,
       forceUpdate: () => Unit,
@@ -285,35 +252,25 @@ object esmDropdownMenuMod {
       __obj.asInstanceOf[UseDropdownMenuValue]
     }
     
-    @scala.inline
-    implicit class UseDropdownMenuValueMutableBuilder[Self <: UseDropdownMenuValue] (val x: Self) extends AnyVal {
+    extension [Self <: UseDropdownMenuValue](x: Self) {
       
-      @scala.inline
-      def setAlignEnd(value: Boolean): Self = StObject.set(x, "alignEnd", value.asInstanceOf[js.Any])
+      inline def setAlignEnd(value: Boolean): Self = StObject.set(x, "alignEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignEndUndefined: Self = StObject.set(x, "alignEnd", js.undefined)
+      inline def setAlignEndUndefined: Self = StObject.set(x, "alignEnd", js.undefined)
       
-      @scala.inline
-      def setArrowProps(value: (Record[String, js.Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
+      inline def setArrowProps(value: (Record[String, js.Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: Event => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+      inline def setClose(value: Event => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
+      inline def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasShown(value: Boolean): Self = StObject.set(x, "hasShown", value.asInstanceOf[js.Any])
+      inline def setHasShown(value: Boolean): Self = StObject.set(x, "hasShown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: (Record[String, js.Any]) & Arialabelledby): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: (Record[String, js.Any]) & Arialabelledby): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
 }

@@ -54,8 +54,7 @@ trait HeatmapStatisticsResult
 }
 object HeatmapStatisticsResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     avg: Double,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -68,31 +67,22 @@ object HeatmapStatisticsResult {
     __obj.asInstanceOf[HeatmapStatisticsResult]
   }
   
-  @scala.inline
-  implicit class HeatmapStatisticsResultMutableBuilder[Self <: HeatmapStatisticsResult] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapStatisticsResult](x: Self) {
     
-    @scala.inline
-    def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+    inline def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+    inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "summaryStatistics", value.asInstanceOf[js.Any])
+    inline def setSummaryStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "summaryStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryStatisticsUndefined: Self = StObject.set(x, "summaryStatistics", js.undefined)
+    inline def setSummaryStatisticsUndefined: Self = StObject.set(x, "summaryStatistics", js.undefined)
   }
 }

@@ -17,43 +17,31 @@ trait PropOptions[T] extends StObject {
 }
 object PropOptions {
   
-  @scala.inline
-  def apply[T](): PropOptions[T] = {
+  inline def apply[T](): PropOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropOptions[T]]
   }
   
-  @scala.inline
-  implicit class PropOptionsMutableBuilder[Self <: PropOptions[?], T] (val x: Self & PropOptions[T]) extends AnyVal {
+  extension [Self <: PropOptions[?], T](x: Self & PropOptions[T]) {
     
-    @scala.inline
-    def setObserver(value: (/* value */ T, /* old */ T, /* changedPath */ String) => Unit): Self = StObject.set(x, "observer", js.Any.fromFunction3(value))
+    inline def setObserver(value: (/* value */ T, /* old */ T, /* changedPath */ String) => Unit): Self = StObject.set(x, "observer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
+    inline def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
     
-    @scala.inline
-    def setType(value: Prop[T] | js.Array[Prop[T]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Prop[T] | js.Array[Prop[T]]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeFunction0(value: () => T): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+    inline def setTypeFunction0(value: () => T): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setTypeVarargs(value: Prop[T]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: Prop[T]*): Self = StObject.set(x, "type", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: T | js.Function0[js.Object]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T | js.Function0[js.Object]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFunction0(value: () => js.Object): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
+    inline def setValueFunction0(value: () => js.Object): Self = StObject.set(x, "value", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

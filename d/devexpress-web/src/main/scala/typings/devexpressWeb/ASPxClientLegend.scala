@@ -28,8 +28,7 @@ trait ASPxClientLegend
 }
 object ASPxClientLegend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chart: ASPxClientWebChart,
     customItems: js.Array[ASPxClientCustomLegendItem],
     name: String,
@@ -39,19 +38,14 @@ object ASPxClientLegend {
     __obj.asInstanceOf[ASPxClientLegend]
   }
   
-  @scala.inline
-  implicit class ASPxClientLegendMutableBuilder[Self <: ASPxClientLegend] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientLegend](x: Self) {
     
-    @scala.inline
-    def setCustomItems(value: js.Array[ASPxClientCustomLegendItem]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
+    inline def setCustomItems(value: js.Array[ASPxClientCustomLegendItem]): Self = StObject.set(x, "customItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomItemsVarargs(value: ASPxClientCustomLegendItem*): Self = StObject.set(x, "customItems", js.Array(value :_*))
+    inline def setCustomItemsVarargs(value: ASPxClientCustomLegendItem*): Self = StObject.set(x, "customItems", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCheckBoxes(value: Boolean): Self = StObject.set(x, "useCheckBoxes", value.asInstanceOf[js.Any])
+    inline def setUseCheckBoxes(value: Boolean): Self = StObject.set(x, "useCheckBoxes", value.asInstanceOf[js.Any])
   }
 }

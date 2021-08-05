@@ -5,10 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def createServer(): typings.oauth2orize.mod.OAuth2Server = typings.oauth2orize.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.oauth2orize.mod.OAuth2Server]
-@scala.inline
-def createServer(options: typings.oauth2orize.mod.ServerOptions): typings.oauth2orize.mod.OAuth2Server = typings.oauth2orize.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.oauth2orize.mod.OAuth2Server]
+inline def createServer(): typings.oauth2orize.mod.OAuth2Server = typings.oauth2orize.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typings.oauth2orize.mod.OAuth2Server]
+inline def createServer(options: typings.oauth2orize.mod.ServerOptions): typings.oauth2orize.mod.OAuth2Server = typings.oauth2orize.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.oauth2orize.mod.OAuth2Server]
 
 type DecisionParseFunction = js.Function2[
 /* req */ typings.oauth2orize.mod.MiddlewareRequest, 

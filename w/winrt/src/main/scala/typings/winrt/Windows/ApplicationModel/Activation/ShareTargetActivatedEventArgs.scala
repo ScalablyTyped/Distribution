@@ -10,8 +10,7 @@ trait ShareTargetActivatedEventArgs
      with IShareTargetActivatedEventArgs
 object ShareTargetActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     shareOperation: ShareOperation,

@@ -17,23 +17,18 @@ object anon {
   }
   object Download {
     
-    @scala.inline
-    def apply(download: Boolean, format: String, path: String): Download = {
+    inline def apply(download: Boolean, format: String, path: String): Download = {
       val __obj = js.Dynamic.literal(download = download.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Download]
     }
     
-    @scala.inline
-    implicit class DownloadMutableBuilder[Self <: Download] (val x: Self) extends AnyVal {
+    extension [Self <: Download](x: Self) {
       
-      @scala.inline
-      def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +40,16 @@ object anon {
   }
   object Raw {
     
-    @scala.inline
-    def apply(raw: String, rule: RegExp): Raw = {
+    inline def apply(raw: String, rule: RegExp): Raw = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any])
       __obj.asInstanceOf[Raw]
     }
     
-    @scala.inline
-    implicit class RawMutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
+    extension [Self <: Raw](x: Self) {
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRule(value: RegExp): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: RegExp): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     }
   }
 }

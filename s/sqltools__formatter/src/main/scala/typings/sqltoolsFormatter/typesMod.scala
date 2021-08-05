@@ -133,44 +133,32 @@ object typesMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: sql | db2 | n1ql | plSlashsql): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: sql | db2 | n1ql | plSlashsql): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLinesBetweenQueries(value: Double | preserve): Self = StObject.set(x, "linesBetweenQueries", value.asInstanceOf[js.Any])
+      inline def setLinesBetweenQueries(value: Double | preserve): Self = StObject.set(x, "linesBetweenQueries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesBetweenQueriesUndefined: Self = StObject.set(x, "linesBetweenQueries", js.undefined)
+      inline def setLinesBetweenQueriesUndefined: Self = StObject.set(x, "linesBetweenQueries", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setReservedWordCase(value: upper | lower): Self = StObject.set(x, "reservedWordCase", value.asInstanceOf[js.Any])
+      inline def setReservedWordCase(value: upper | lower): Self = StObject.set(x, "reservedWordCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedWordCaseUndefined: Self = StObject.set(x, "reservedWordCase", js.undefined)
+      inline def setReservedWordCaseUndefined: Self = StObject.set(x, "reservedWordCase", js.undefined)
     }
   }
   
@@ -184,27 +172,21 @@ object typesMod {
   }
   object Token {
     
-    @scala.inline
-    def apply(`type`: TokenTypes, value: String): Token = {
+    inline def apply(`type`: TokenTypes, value: String): Token = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setType(value: TokenTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TokenTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,8 +216,7 @@ object typesMod {
   }
   object TokenizerConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closeParens: js.Array[String],
       lineCommentTypes: js.Array[String],
       namedPlaceholderTypes: js.Array[String],
@@ -251,77 +232,53 @@ object typesMod {
       __obj.asInstanceOf[TokenizerConfig]
     }
     
-    @scala.inline
-    implicit class TokenizerConfigMutableBuilder[Self <: TokenizerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TokenizerConfig](x: Self) {
       
-      @scala.inline
-      def setCloseParens(value: js.Array[String]): Self = StObject.set(x, "closeParens", value.asInstanceOf[js.Any])
+      inline def setCloseParens(value: js.Array[String]): Self = StObject.set(x, "closeParens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseParensVarargs(value: String*): Self = StObject.set(x, "closeParens", js.Array(value :_*))
+      inline def setCloseParensVarargs(value: String*): Self = StObject.set(x, "closeParens", js.Array(value :_*))
       
-      @scala.inline
-      def setIndexedPlaceholderTypes(value: js.Array[String]): Self = StObject.set(x, "indexedPlaceholderTypes", value.asInstanceOf[js.Any])
+      inline def setIndexedPlaceholderTypes(value: js.Array[String]): Self = StObject.set(x, "indexedPlaceholderTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexedPlaceholderTypesUndefined: Self = StObject.set(x, "indexedPlaceholderTypes", js.undefined)
+      inline def setIndexedPlaceholderTypesUndefined: Self = StObject.set(x, "indexedPlaceholderTypes", js.undefined)
       
-      @scala.inline
-      def setIndexedPlaceholderTypesVarargs(value: String*): Self = StObject.set(x, "indexedPlaceholderTypes", js.Array(value :_*))
+      inline def setIndexedPlaceholderTypesVarargs(value: String*): Self = StObject.set(x, "indexedPlaceholderTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setLineCommentTypes(value: js.Array[String]): Self = StObject.set(x, "lineCommentTypes", value.asInstanceOf[js.Any])
+      inline def setLineCommentTypes(value: js.Array[String]): Self = StObject.set(x, "lineCommentTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineCommentTypesVarargs(value: String*): Self = StObject.set(x, "lineCommentTypes", js.Array(value :_*))
+      inline def setLineCommentTypesVarargs(value: String*): Self = StObject.set(x, "lineCommentTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setNamedPlaceholderTypes(value: js.Array[String]): Self = StObject.set(x, "namedPlaceholderTypes", value.asInstanceOf[js.Any])
+      inline def setNamedPlaceholderTypes(value: js.Array[String]): Self = StObject.set(x, "namedPlaceholderTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedPlaceholderTypesVarargs(value: String*): Self = StObject.set(x, "namedPlaceholderTypes", js.Array(value :_*))
+      inline def setNamedPlaceholderTypesVarargs(value: String*): Self = StObject.set(x, "namedPlaceholderTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setOpenParens(value: js.Array[String]): Self = StObject.set(x, "openParens", value.asInstanceOf[js.Any])
+      inline def setOpenParens(value: js.Array[String]): Self = StObject.set(x, "openParens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenParensVarargs(value: String*): Self = StObject.set(x, "openParens", js.Array(value :_*))
+      inline def setOpenParensVarargs(value: String*): Self = StObject.set(x, "openParens", js.Array(value :_*))
       
-      @scala.inline
-      def setReservedNewlineWords(value: js.Array[String]): Self = StObject.set(x, "reservedNewlineWords", value.asInstanceOf[js.Any])
+      inline def setReservedNewlineWords(value: js.Array[String]): Self = StObject.set(x, "reservedNewlineWords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedNewlineWordsVarargs(value: String*): Self = StObject.set(x, "reservedNewlineWords", js.Array(value :_*))
+      inline def setReservedNewlineWordsVarargs(value: String*): Self = StObject.set(x, "reservedNewlineWords", js.Array(value :_*))
       
-      @scala.inline
-      def setReservedTopLevelWords(value: js.Array[String]): Self = StObject.set(x, "reservedTopLevelWords", value.asInstanceOf[js.Any])
+      inline def setReservedTopLevelWords(value: js.Array[String]): Self = StObject.set(x, "reservedTopLevelWords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedTopLevelWordsNoIndent(value: js.Array[String]): Self = StObject.set(x, "reservedTopLevelWordsNoIndent", value.asInstanceOf[js.Any])
+      inline def setReservedTopLevelWordsNoIndent(value: js.Array[String]): Self = StObject.set(x, "reservedTopLevelWordsNoIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedTopLevelWordsNoIndentVarargs(value: String*): Self = StObject.set(x, "reservedTopLevelWordsNoIndent", js.Array(value :_*))
+      inline def setReservedTopLevelWordsNoIndentVarargs(value: String*): Self = StObject.set(x, "reservedTopLevelWordsNoIndent", js.Array(value :_*))
       
-      @scala.inline
-      def setReservedTopLevelWordsVarargs(value: String*): Self = StObject.set(x, "reservedTopLevelWords", js.Array(value :_*))
+      inline def setReservedTopLevelWordsVarargs(value: String*): Self = StObject.set(x, "reservedTopLevelWords", js.Array(value :_*))
       
-      @scala.inline
-      def setReservedWords(value: js.Array[String]): Self = StObject.set(x, "reservedWords", value.asInstanceOf[js.Any])
+      inline def setReservedWords(value: js.Array[String]): Self = StObject.set(x, "reservedWords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedWordsVarargs(value: String*): Self = StObject.set(x, "reservedWords", js.Array(value :_*))
+      inline def setReservedWordsVarargs(value: String*): Self = StObject.set(x, "reservedWords", js.Array(value :_*))
       
-      @scala.inline
-      def setSpecialWordChars(value: js.Array[String]): Self = StObject.set(x, "specialWordChars", value.asInstanceOf[js.Any])
+      inline def setSpecialWordChars(value: js.Array[String]): Self = StObject.set(x, "specialWordChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecialWordCharsVarargs(value: String*): Self = StObject.set(x, "specialWordChars", js.Array(value :_*))
+      inline def setSpecialWordCharsVarargs(value: String*): Self = StObject.set(x, "specialWordChars", js.Array(value :_*))
       
-      @scala.inline
-      def setStringTypes(value: js.Array[String]): Self = StObject.set(x, "stringTypes", value.asInstanceOf[js.Any])
+      inline def setStringTypes(value: js.Array[String]): Self = StObject.set(x, "stringTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringTypesVarargs(value: String*): Self = StObject.set(x, "stringTypes", js.Array(value :_*))
+      inline def setStringTypesVarargs(value: String*): Self = StObject.set(x, "stringTypes", js.Array(value :_*))
     }
   }
 }

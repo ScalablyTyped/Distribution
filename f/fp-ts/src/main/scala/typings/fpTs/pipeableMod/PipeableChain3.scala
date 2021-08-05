@@ -34,8 +34,7 @@ trait PipeableChain3[F /* <: /* import warning: transforms.QualifyReferences#res
 }
 object PipeableChain3 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
     ap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, (a : A): B> */ /* fab */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
@@ -72,11 +71,9 @@ object PipeableChain3 {
     __obj.asInstanceOf[PipeableChain3[F]]
   }
   
-  @scala.inline
-  implicit class PipeableChain3MutableBuilder[Self <: PipeableChain3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & PipeableChain3[F]) extends AnyVal {
+  extension [Self <: PipeableChain3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & PipeableChain3[F]) {
     
-    @scala.inline
-    def setChain(
+    inline def setChain(
       value: js.Function1[
           js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
@@ -86,8 +83,7 @@ object PipeableChain3 {
         ]
     ): Self = StObject.set(x, "chain", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChainFirst(
+    inline def setChainFirst(
       value: js.Function1[
           js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, B> */ js.Any
@@ -97,8 +93,7 @@ object PipeableChain3 {
         ]
     ): Self = StObject.set(x, "chainFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlatten(
+    inline def setFlatten(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, Kind3<F, R, E, A>> */ js.Any => js.Any
     ): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
   }

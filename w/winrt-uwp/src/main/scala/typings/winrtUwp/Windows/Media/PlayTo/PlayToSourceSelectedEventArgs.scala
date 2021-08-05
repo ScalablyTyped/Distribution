@@ -25,8 +25,7 @@ trait PlayToSourceSelectedEventArgs extends StObject {
 }
 object PlayToSourceSelectedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friendlyName: String,
     icon: IRandomAccessStreamWithContentType,
     supportsAudio: Boolean,
@@ -37,22 +36,16 @@ object PlayToSourceSelectedEventArgs {
     __obj.asInstanceOf[PlayToSourceSelectedEventArgs]
   }
   
-  @scala.inline
-  implicit class PlayToSourceSelectedEventArgsMutableBuilder[Self <: PlayToSourceSelectedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PlayToSourceSelectedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsAudio(value: Boolean): Self = StObject.set(x, "supportsAudio", value.asInstanceOf[js.Any])
+    inline def setSupportsAudio(value: Boolean): Self = StObject.set(x, "supportsAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsImage(value: Boolean): Self = StObject.set(x, "supportsImage", value.asInstanceOf[js.Any])
+    inline def setSupportsImage(value: Boolean): Self = StObject.set(x, "supportsImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsVideo(value: Boolean): Self = StObject.set(x, "supportsVideo", value.asInstanceOf[js.Any])
+    inline def setSupportsVideo(value: Boolean): Self = StObject.set(x, "supportsVideo", value.asInstanceOf[js.Any])
   }
 }

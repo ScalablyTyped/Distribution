@@ -18,28 +18,21 @@ trait SearchGameSessionsOutput extends StObject {
 }
 object SearchGameSessionsOutput {
   
-  @scala.inline
-  def apply(): SearchGameSessionsOutput = {
+  inline def apply(): SearchGameSessionsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchGameSessionsOutput]
   }
   
-  @scala.inline
-  implicit class SearchGameSessionsOutputMutableBuilder[Self <: SearchGameSessionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SearchGameSessionsOutput](x: Self) {
     
-    @scala.inline
-    def setGameSessions(value: GameSessionList): Self = StObject.set(x, "GameSessions", value.asInstanceOf[js.Any])
+    inline def setGameSessions(value: GameSessionList): Self = StObject.set(x, "GameSessions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionsUndefined: Self = StObject.set(x, "GameSessions", js.undefined)
+    inline def setGameSessionsUndefined: Self = StObject.set(x, "GameSessions", js.undefined)
     
-    @scala.inline
-    def setGameSessionsVarargs(value: GameSession*): Self = StObject.set(x, "GameSessions", js.Array(value :_*))
+    inline def setGameSessionsVarargs(value: GameSession*): Self = StObject.set(x, "GameSessions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -29,73 +29,51 @@ trait EnableAllDimensionCombinations extends StObject {
 }
 object EnableAllDimensionCombinations {
   
-  @scala.inline
-  def apply(): EnableAllDimensionCombinations = {
+  inline def apply(): EnableAllDimensionCombinations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableAllDimensionCombinations]
   }
   
-  @scala.inline
-  implicit class EnableAllDimensionCombinationsMutableBuilder[Self <: EnableAllDimensionCombinations] (val x: Self) extends AnyVal {
+  extension [Self <: EnableAllDimensionCombinations](x: Self) {
     
-    @scala.inline
-    def setActivities(value: SchemaActivities): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: SchemaActivities): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
+    inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
-    @scala.inline
-    def setCustomRichMediaEvents(value: SchemaCustomRichMediaEvents): Self = StObject.set(x, "customRichMediaEvents", value.asInstanceOf[js.Any])
+    inline def setCustomRichMediaEvents(value: SchemaCustomRichMediaEvents): Self = StObject.set(x, "customRichMediaEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomRichMediaEventsUndefined: Self = StObject.set(x, "customRichMediaEvents", js.undefined)
+    inline def setCustomRichMediaEventsUndefined: Self = StObject.set(x, "customRichMediaEvents", js.undefined)
     
-    @scala.inline
-    def setDateRange(value: SchemaDateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: SchemaDateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+    inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
-    @scala.inline
-    def setDimensionFilters(value: js.Array[SchemaDimensionValue]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
+    inline def setDimensionFilters(value: js.Array[SchemaDimensionValue]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
+    inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    @scala.inline
-    def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: SchemaDimensionValue*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensions(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[SchemaSortedDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: SchemaSortedDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setEnableAllDimensionCombinations(value: Boolean): Self = StObject.set(x, "enableAllDimensionCombinations", value.asInstanceOf[js.Any])
+    inline def setEnableAllDimensionCombinations(value: Boolean): Self = StObject.set(x, "enableAllDimensionCombinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAllDimensionCombinationsUndefined: Self = StObject.set(x, "enableAllDimensionCombinations", js.undefined)
+    inline def setEnableAllDimensionCombinationsUndefined: Self = StObject.set(x, "enableAllDimensionCombinations", js.undefined)
     
-    @scala.inline
-    def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
+    inline def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
+    inline def setMetricNamesUndefined: Self = StObject.set(x, "metricNames", js.undefined)
     
-    @scala.inline
-    def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
     
-    @scala.inline
-    def setReachByFrequencyMetricNames(value: js.Array[String]): Self = StObject.set(x, "reachByFrequencyMetricNames", value.asInstanceOf[js.Any])
+    inline def setReachByFrequencyMetricNames(value: js.Array[String]): Self = StObject.set(x, "reachByFrequencyMetricNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReachByFrequencyMetricNamesUndefined: Self = StObject.set(x, "reachByFrequencyMetricNames", js.undefined)
+    inline def setReachByFrequencyMetricNamesUndefined: Self = StObject.set(x, "reachByFrequencyMetricNames", js.undefined)
     
-    @scala.inline
-    def setReachByFrequencyMetricNamesVarargs(value: String*): Self = StObject.set(x, "reachByFrequencyMetricNames", js.Array(value :_*))
+    inline def setReachByFrequencyMetricNamesVarargs(value: String*): Self = StObject.set(x, "reachByFrequencyMetricNames", js.Array(value :_*))
   }
 }

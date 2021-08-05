@@ -16,31 +16,23 @@ trait PartialStyleRulesStepButt extends StObject {
 }
 object PartialStyleRulesStepButt {
   
-  @scala.inline
-  def apply(): PartialStyleRulesStepButt = {
+  inline def apply(): PartialStyleRulesStepButt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesStepButt]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesStepButtMutableBuilder[Self <: PartialStyleRulesStepButt] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesStepButt](x: Self) {
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setTouchRipple(value: CSSProperties): Self = StObject.set(x, "touchRipple", value.asInstanceOf[js.Any])
+    inline def setTouchRipple(value: CSSProperties): Self = StObject.set(x, "touchRipple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchRippleUndefined: Self = StObject.set(x, "touchRipple", js.undefined)
+    inline def setTouchRippleUndefined: Self = StObject.set(x, "touchRipple", js.undefined)
     
-    @scala.inline
-    def setVertical(value: CSSProperties): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: CSSProperties): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

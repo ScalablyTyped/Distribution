@@ -23,19 +23,15 @@ trait ASPxClientRibbonCommandExecutedEventArgs
 }
 object ASPxClientRibbonCommandExecutedEventArgs {
   
-  @scala.inline
-  def apply(item: ASPxClientRibbonItem, parameter: String, processOnServer: Boolean): ASPxClientRibbonCommandExecutedEventArgs = {
+  inline def apply(item: ASPxClientRibbonItem, parameter: String, processOnServer: Boolean): ASPxClientRibbonCommandExecutedEventArgs = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRibbonCommandExecutedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRibbonCommandExecutedEventArgsMutableBuilder[Self <: ASPxClientRibbonCommandExecutedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRibbonCommandExecutedEventArgs](x: Self) {
     
-    @scala.inline
-    def setItem(value: ASPxClientRibbonItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ASPxClientRibbonItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

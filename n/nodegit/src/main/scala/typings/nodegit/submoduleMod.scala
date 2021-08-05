@@ -86,40 +86,28 @@ object submoduleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addSetup(repo: Repository, url: String, path: String, useGitLink: Double): js.Promise[Submodule] = (^.asInstanceOf[js.Dynamic].applyDynamic("addSetup")(repo.asInstanceOf[js.Any], url.asInstanceOf[js.Any], path.asInstanceOf[js.Any], useGitLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Submodule]]
+    inline def addSetup(repo: Repository, url: String, path: String, useGitLink: Double): js.Promise[Submodule] = (^.asInstanceOf[js.Dynamic].applyDynamic("addSetup")(repo.asInstanceOf[js.Any], url.asInstanceOf[js.Any], path.asInstanceOf[js.Any], useGitLink.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Submodule]]
     
-    @scala.inline
-    def foreach(repo: Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
-    @scala.inline
-    def foreach(repo: Repository, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def foreach(repo: Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    inline def foreach(repo: Repository, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def lookup(repo: Repository, name: String): js.Promise[Submodule] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Submodule]]
+    inline def lookup(repo: Repository, name: String): js.Promise[Submodule] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Submodule]]
     
-    @scala.inline
-    def resolveUrl(repo: Repository, url: String): js.Promise[Buf] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveUrl")(repo.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buf]]
+    inline def resolveUrl(repo: Repository, url: String): js.Promise[Buf] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveUrl")(repo.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buf]]
     
-    @scala.inline
-    def setBranch(repo: Repository, name: String, branch: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setBranch")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], branch.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def setBranch(repo: Repository, name: String, branch: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setBranch")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], branch.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def setFetchRecurseSubmodules(repo: Repository, name: String, fetchRecurseSubmodules: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setFetchRecurseSubmodules")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fetchRecurseSubmodules.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def setFetchRecurseSubmodules(repo: Repository, name: String, fetchRecurseSubmodules: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setFetchRecurseSubmodules")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], fetchRecurseSubmodules.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def setIgnore(repo: Repository, name: String, ignore: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIgnore")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def setIgnore(repo: Repository, name: String, ignore: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIgnore")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def setUpdate(repo: Repository, name: String, update: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUpdate")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def setUpdate(repo: Repository, name: String, update: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUpdate")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], update.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def setUrl(repo: Repository, name: String, url: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUrl")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def setUrl(repo: Repository, name: String, url: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUrl")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def status(repo: Repository, name: String, ignore: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("status")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    inline def status(repo: Repository, name: String, ignore: Double): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("status")(repo.asInstanceOf[js.Any], name.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @scala.inline
-    def updateInitOptions(opts: SubmoduleUpdateOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInitOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def updateInitOptions(opts: SubmoduleUpdateOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("updateInitOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`-1`
@@ -131,20 +119,15 @@ object submoduleMod {
     trait IGNORE extends StObject
     object IGNORE {
       
-      @scala.inline
-      def ALL: `4` = 4.asInstanceOf[`4`]
+      inline def ALL: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def DIRTY: `3` = 3.asInstanceOf[`3`]
+      inline def DIRTY: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def NONE: `1` = 1.asInstanceOf[`1`]
+      inline def NONE: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def UNSPECIFIED: `-1` = -1.asInstanceOf[`-1`]
+      inline def UNSPECIFIED: `-1` = -1.asInstanceOf[`-1`]
       
-      @scala.inline
-      def UNTRACKED: `2` = 2.asInstanceOf[`2`]
+      inline def UNTRACKED: `2` = 2.asInstanceOf[`2`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -155,14 +138,11 @@ object submoduleMod {
     trait RECURSE extends StObject
     object RECURSE {
       
-      @scala.inline
-      def NO: `0` = 0.asInstanceOf[`0`]
+      inline def NO: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def ONDEMAND: `2` = 2.asInstanceOf[`2`]
+      inline def ONDEMAND: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def YES: `1` = 1.asInstanceOf[`1`]
+      inline def YES: `1` = 1.asInstanceOf[`1`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -184,47 +164,33 @@ object submoduleMod {
     trait STATUS extends StObject
     object STATUS {
       
-      @scala.inline
-      def INDEX_ADDED: `16` = 16.asInstanceOf[`16`]
+      inline def INDEX_ADDED: `16` = 16.asInstanceOf[`16`]
       
-      @scala.inline
-      def INDEX_DELETED: `32` = 32.asInstanceOf[`32`]
+      inline def INDEX_DELETED: `32` = 32.asInstanceOf[`32`]
       
-      @scala.inline
-      def INDEX_MODIFIED: `64` = 64.asInstanceOf[`64`]
+      inline def INDEX_MODIFIED: `64` = 64.asInstanceOf[`64`]
       
-      @scala.inline
-      def IN_CONFIG: `4` = 4.asInstanceOf[`4`]
+      inline def IN_CONFIG: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def IN_HEAD: `1` = 1.asInstanceOf[`1`]
+      inline def IN_HEAD: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def IN_INDEX: `2` = 2.asInstanceOf[`2`]
+      inline def IN_INDEX: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def IN_WD: `8` = 8.asInstanceOf[`8`]
+      inline def IN_WD: `8` = 8.asInstanceOf[`8`]
       
-      @scala.inline
-      def WD_ADDED: `256` = 256.asInstanceOf[`256`]
+      inline def WD_ADDED: `256` = 256.asInstanceOf[`256`]
       
-      @scala.inline
-      def WD_DELETED: `512` = 512.asInstanceOf[`512`]
+      inline def WD_DELETED: `512` = 512.asInstanceOf[`512`]
       
-      @scala.inline
-      def WD_INDEX_MODIFIED: `2048` = 2048.asInstanceOf[`2048`]
+      inline def WD_INDEX_MODIFIED: `2048` = 2048.asInstanceOf[`2048`]
       
-      @scala.inline
-      def WD_MODIFIED: `1024` = 1024.asInstanceOf[`1024`]
+      inline def WD_MODIFIED: `1024` = 1024.asInstanceOf[`1024`]
       
-      @scala.inline
-      def WD_UNINITIALIZED: `128` = 128.asInstanceOf[`128`]
+      inline def WD_UNINITIALIZED: `128` = 128.asInstanceOf[`128`]
       
-      @scala.inline
-      def WD_UNTRACKED: `8192` = 8192.asInstanceOf[`8192`]
+      inline def WD_UNTRACKED: `8192` = 8192.asInstanceOf[`8192`]
       
-      @scala.inline
-      def WD_WD_MODIFIED: `4096` = 4096.asInstanceOf[`4096`]
+      inline def WD_WD_MODIFIED: `4096` = 4096.asInstanceOf[`4096`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -237,20 +203,15 @@ object submoduleMod {
     trait UPDATE extends StObject
     object UPDATE {
       
-      @scala.inline
-      def CHECKOUT: `1` = 1.asInstanceOf[`1`]
+      inline def CHECKOUT: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def DEFAULT: `0` = 0.asInstanceOf[`0`]
+      inline def DEFAULT: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def MERGE: `3` = 3.asInstanceOf[`3`]
+      inline def MERGE: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def NONE: `4` = 4.asInstanceOf[`4`]
+      inline def NONE: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def REBASE: `2` = 2.asInstanceOf[`2`]
+      inline def REBASE: `2` = 2.asInstanceOf[`2`]
     }
   }
 }

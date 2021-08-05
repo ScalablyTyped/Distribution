@@ -19,29 +19,22 @@ trait IfNode
 }
 object IfNode {
   
-  @scala.inline
-  def apply(branches: js.Array[IfBranchNode], loc: SourceLocation): IfNode = {
+  inline def apply(branches: js.Array[IfBranchNode], loc: SourceLocation): IfNode = {
     val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(9)
     __obj.asInstanceOf[IfNode]
   }
   
-  @scala.inline
-  implicit class IfNodeMutableBuilder[Self <: IfNode] (val x: Self) extends AnyVal {
+  extension [Self <: IfNode](x: Self) {
     
-    @scala.inline
-    def setBranches(value: js.Array[IfBranchNode]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+    inline def setBranches(value: js.Array[IfBranchNode]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchesVarargs(value: IfBranchNode*): Self = StObject.set(x, "branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: IfBranchNode*): Self = StObject.set(x, "branches", js.Array(value :_*))
     
-    @scala.inline
-    def setCodegenNode(value: IfConditionalExpression | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
+    inline def setCodegenNode(value: IfConditionalExpression | CacheExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
+    inline def setCodegenNodeUndefined: Self = StObject.set(x, "codegenNode", js.undefined)
     
-    @scala.inline
-    def setType(value: `9`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `9`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

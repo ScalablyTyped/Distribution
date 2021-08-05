@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GlobalTargetName extends StObject
 object GlobalTargetName {
   
-  @scala.inline
-  def body: typings.angularCore.angularCoreStrings.body = "body".asInstanceOf[typings.angularCore.angularCoreStrings.body]
+  inline def body: typings.angularCore.angularCoreStrings.body = "body".asInstanceOf[typings.angularCore.angularCoreStrings.body]
   
-  @scala.inline
-  def document: typings.angularCore.angularCoreStrings.document = "document".asInstanceOf[typings.angularCore.angularCoreStrings.document]
+  inline def document: typings.angularCore.angularCoreStrings.document = "document".asInstanceOf[typings.angularCore.angularCoreStrings.document]
   
-  @scala.inline
-  def window: typings.angularCore.angularCoreStrings.window = "window".asInstanceOf[typings.angularCore.angularCoreStrings.window]
+  inline def window: typings.angularCore.angularCoreStrings.window = "window".asInstanceOf[typings.angularCore.angularCoreStrings.window]
 }

@@ -88,8 +88,7 @@ trait GeocodingResult extends StObject {
 }
 object GeocodingResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address_components: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]],
     formatted_address: String,
     geometry: AddressGeometry,
@@ -103,40 +102,28 @@ object GeocodingResult {
     __obj.asInstanceOf[GeocodingResult]
   }
   
-  @scala.inline
-  implicit class GeocodingResultMutableBuilder[Self <: GeocodingResult] (val x: Self) extends AnyVal {
+  extension [Self <: GeocodingResult](x: Self) {
     
-    @scala.inline
-    def setAddress_components(value: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
+    inline def setAddress_components(value: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_componentsVarargs(value: (AddressComponent[AddressType | GeocodingAddressComponentType])*): Self = StObject.set(x, "address_components", js.Array(value :_*))
+    inline def setAddress_componentsVarargs(value: (AddressComponent[AddressType | GeocodingAddressComponentType])*): Self = StObject.set(x, "address_components", js.Array(value :_*))
     
-    @scala.inline
-    def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
+    inline def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: AddressGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: AddressGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartial_match(value: Boolean): Self = StObject.set(x, "partial_match", value.asInstanceOf[js.Any])
+    inline def setPartial_match(value: Boolean): Self = StObject.set(x, "partial_match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlus_code(value: PlusCode): Self = StObject.set(x, "plus_code", value.asInstanceOf[js.Any])
+    inline def setPlus_code(value: PlusCode): Self = StObject.set(x, "plus_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostcode_localities(value: js.Array[String]): Self = StObject.set(x, "postcode_localities", value.asInstanceOf[js.Any])
+    inline def setPostcode_localities(value: js.Array[String]): Self = StObject.set(x, "postcode_localities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostcode_localitiesVarargs(value: String*): Self = StObject.set(x, "postcode_localities", js.Array(value :_*))
+    inline def setPostcode_localitiesVarargs(value: String*): Self = StObject.set(x, "postcode_localities", js.Array(value :_*))
     
-    @scala.inline
-    def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

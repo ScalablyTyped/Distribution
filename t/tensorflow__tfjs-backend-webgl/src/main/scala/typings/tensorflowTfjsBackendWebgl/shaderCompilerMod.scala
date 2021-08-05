@@ -10,11 +10,9 @@ object shaderCompilerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCoordsDataType(rank: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoordsDataType")(rank.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getCoordsDataType(rank: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoordsDataType")(rank.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def makeShader(
+  inline def makeShader(
     inputsInfo: js.Array[InputInfo],
     outputShape: ShapeInfo,
     userCode: String,
@@ -29,20 +27,16 @@ object shaderCompilerMod {
   }
   object InputInfo {
     
-    @scala.inline
-    def apply(name: String, shapeInfo: ShapeInfo): InputInfo = {
+    inline def apply(name: String, shapeInfo: ShapeInfo): InputInfo = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], shapeInfo = shapeInfo.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputInfo]
     }
     
-    @scala.inline
-    implicit class InputInfoMutableBuilder[Self <: InputInfo] (val x: Self) extends AnyVal {
+    extension [Self <: InputInfo](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeInfo(value: ShapeInfo): Self = StObject.set(x, "shapeInfo", value.asInstanceOf[js.Any])
+      inline def setShapeInfo(value: ShapeInfo): Self = StObject.set(x, "shapeInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,8 +54,7 @@ object shaderCompilerMod {
   }
   object ShapeInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       flatOffset: Double,
       isPacked: Boolean,
       isUniform: Boolean,
@@ -72,26 +65,19 @@ object shaderCompilerMod {
       __obj.asInstanceOf[ShapeInfo]
     }
     
-    @scala.inline
-    implicit class ShapeInfoMutableBuilder[Self <: ShapeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ShapeInfo](x: Self) {
       
-      @scala.inline
-      def setFlatOffset(value: Double): Self = StObject.set(x, "flatOffset", value.asInstanceOf[js.Any])
+      inline def setFlatOffset(value: Double): Self = StObject.set(x, "flatOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPacked(value: Boolean): Self = StObject.set(x, "isPacked", value.asInstanceOf[js.Any])
+      inline def setIsPacked(value: Boolean): Self = StObject.set(x, "isPacked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUniform(value: Boolean): Self = StObject.set(x, "isUniform", value.asInstanceOf[js.Any])
+      inline def setIsUniform(value: Boolean): Self = StObject.set(x, "isUniform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogicalShape(value: js.Array[Double]): Self = StObject.set(x, "logicalShape", value.asInstanceOf[js.Any])
+      inline def setLogicalShape(value: js.Array[Double]): Self = StObject.set(x, "logicalShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogicalShapeVarargs(value: Double*): Self = StObject.set(x, "logicalShape", js.Array(value :_*))
+      inline def setLogicalShapeVarargs(value: Double*): Self = StObject.set(x, "logicalShape", js.Array(value :_*))
       
-      @scala.inline
-      def setTexShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "texShape", value.asInstanceOf[js.Any])
+      inline def setTexShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "texShape", value.asInstanceOf[js.Any])
     }
   }
 }

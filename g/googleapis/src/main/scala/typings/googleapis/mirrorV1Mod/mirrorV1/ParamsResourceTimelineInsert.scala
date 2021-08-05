@@ -30,31 +30,23 @@ trait ParamsResourceTimelineInsert
 }
 object ParamsResourceTimelineInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceTimelineInsert = {
+  inline def apply(): ParamsResourceTimelineInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTimelineInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTimelineInsertMutableBuilder[Self <: ParamsResourceTimelineInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTimelineInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaTimelineItem): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaTimelineItem): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

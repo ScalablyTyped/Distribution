@@ -24,19 +24,15 @@ trait ChangeSectionEqualColumnCountCommand
 }
 object ChangeSectionEqualColumnCountCommand {
   
-  @scala.inline
-  def apply(execute: Double => Boolean, getState: () => CommandState[Double]): ChangeSectionEqualColumnCountCommand = {
+  inline def apply(execute: Double => Boolean, getState: () => CommandState[Double]): ChangeSectionEqualColumnCountCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeSectionEqualColumnCountCommand]
   }
   
-  @scala.inline
-  implicit class ChangeSectionEqualColumnCountCommandMutableBuilder[Self <: ChangeSectionEqualColumnCountCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeSectionEqualColumnCountCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[Double]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[Double]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

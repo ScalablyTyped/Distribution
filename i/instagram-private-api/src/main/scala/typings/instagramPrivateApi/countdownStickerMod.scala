@@ -12,7 +12,7 @@ object countdownStickerMod {
   @js.native
   class CountdownSticker () extends InstaSticker {
     
-    var _endTs: js.Any = js.native
+    /* private */ var _endTs: js.Any = js.native
     
     var digitCardColor: js.UndefOr[String] = js.native
     

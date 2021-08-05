@@ -58,8 +58,7 @@ trait XNamedNodeMap
 }
 object XNamedNodeMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Length: Double,
     acquire: () => Unit,
     getLength: () => Double,
@@ -77,34 +76,24 @@ object XNamedNodeMap {
     __obj.asInstanceOf[XNamedNodeMap]
   }
   
-  @scala.inline
-  implicit class XNamedNodeMapMutableBuilder[Self <: XNamedNodeMap] (val x: Self) extends AnyVal {
+  extension [Self <: XNamedNodeMap](x: Self) {
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNamedItem(value: String => XNode): Self = StObject.set(x, "getNamedItem", js.Any.fromFunction1(value))
+    inline def setGetNamedItem(value: String => XNode): Self = StObject.set(x, "getNamedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedItemNS(value: (String, String) => XNode): Self = StObject.set(x, "getNamedItemNS", js.Any.fromFunction2(value))
+    inline def setGetNamedItemNS(value: (String, String) => XNode): Self = StObject.set(x, "getNamedItemNS", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setItem(value: Double => XNode): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => XNode): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveNamedItem(value: String => XNode): Self = StObject.set(x, "removeNamedItem", js.Any.fromFunction1(value))
+    inline def setRemoveNamedItem(value: String => XNode): Self = StObject.set(x, "removeNamedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveNamedItemNS(value: (String, String) => XNode): Self = StObject.set(x, "removeNamedItemNS", js.Any.fromFunction2(value))
+    inline def setRemoveNamedItemNS(value: (String, String) => XNode): Self = StObject.set(x, "removeNamedItemNS", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetNamedItem(value: XNode => XNode): Self = StObject.set(x, "setNamedItem", js.Any.fromFunction1(value))
+    inline def setSetNamedItem(value: XNode => XNode): Self = StObject.set(x, "setNamedItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNamedItemNS(value: XNode => XNode): Self = StObject.set(x, "setNamedItemNS", js.Any.fromFunction1(value))
+    inline def setSetNamedItemNS(value: XNode => XNode): Self = StObject.set(x, "setNamedItemNS", js.Any.fromFunction1(value))
   }
 }

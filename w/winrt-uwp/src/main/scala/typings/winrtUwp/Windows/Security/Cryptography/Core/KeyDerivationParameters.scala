@@ -19,8 +19,7 @@ trait KeyDerivationParameters extends StObject {
 }
 object KeyDerivationParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capi1KdfTargetAlgorithm: Capi1KdfTargetAlgorithm,
     iterationCount: Double,
     kdfGenericBinary: IBuffer
@@ -29,16 +28,12 @@ object KeyDerivationParameters {
     __obj.asInstanceOf[KeyDerivationParameters]
   }
   
-  @scala.inline
-  implicit class KeyDerivationParametersMutableBuilder[Self <: KeyDerivationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: KeyDerivationParameters](x: Self) {
     
-    @scala.inline
-    def setCapi1KdfTargetAlgorithm(value: Capi1KdfTargetAlgorithm): Self = StObject.set(x, "capi1KdfTargetAlgorithm", value.asInstanceOf[js.Any])
+    inline def setCapi1KdfTargetAlgorithm(value: Capi1KdfTargetAlgorithm): Self = StObject.set(x, "capi1KdfTargetAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
+    inline def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKdfGenericBinary(value: IBuffer): Self = StObject.set(x, "kdfGenericBinary", value.asInstanceOf[js.Any])
+    inline def setKdfGenericBinary(value: IBuffer): Self = StObject.set(x, "kdfGenericBinary", value.asInstanceOf[js.Any])
   }
 }

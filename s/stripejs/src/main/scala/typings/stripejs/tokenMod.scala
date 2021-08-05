@@ -39,8 +39,7 @@ object tokenMod {
   }
   object BankTokenData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       account_holder_name: String,
       account_holder_type: individual | company,
       account_number: String,
@@ -51,20 +50,15 @@ object tokenMod {
       __obj.asInstanceOf[BankTokenData]
     }
     
-    @scala.inline
-    implicit class BankTokenDataMutableBuilder[Self <: BankTokenData] (val x: Self) extends AnyVal {
+    extension [Self <: BankTokenData](x: Self) {
       
-      @scala.inline
-      def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
+      inline def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
+      inline def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouting_numberUndefined: Self = StObject.set(x, "routing_number", js.undefined)
+      inline def setRouting_numberUndefined: Self = StObject.set(x, "routing_number", js.undefined)
     }
   }
   
@@ -88,23 +82,18 @@ object tokenMod {
   }
   object IBANTokenData {
     
-    @scala.inline
-    def apply(account_holder_name: String, account_holder_type: individual | company, currency: String): IBANTokenData = {
+    inline def apply(account_holder_name: String, account_holder_type: individual | company, currency: String): IBANTokenData = {
       val __obj = js.Dynamic.literal(account_holder_name = account_holder_name.asInstanceOf[js.Any], account_holder_type = account_holder_type.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBANTokenData]
     }
     
-    @scala.inline
-    implicit class IBANTokenDataMutableBuilder[Self <: IBANTokenData] (val x: Self) extends AnyVal {
+    extension [Self <: IBANTokenData](x: Self) {
       
-      @scala.inline
-      def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
+      inline def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
+      inline def setAccount_holder_type(value: individual | company): Self = StObject.set(x, "account_holder_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,17 +106,14 @@ object tokenMod {
   }
   object PiiTokenData {
     
-    @scala.inline
-    def apply(personal_id_number: String): PiiTokenData = {
+    inline def apply(personal_id_number: String): PiiTokenData = {
       val __obj = js.Dynamic.literal(personal_id_number = personal_id_number.asInstanceOf[js.Any])
       __obj.asInstanceOf[PiiTokenData]
     }
     
-    @scala.inline
-    implicit class PiiTokenDataMutableBuilder[Self <: PiiTokenData] (val x: Self) extends AnyVal {
+    extension [Self <: PiiTokenData](x: Self) {
       
-      @scala.inline
-      def setPersonal_id_number(value: String): Self = StObject.set(x, "personal_id_number", value.asInstanceOf[js.Any])
+      inline def setPersonal_id_number(value: String): Self = StObject.set(x, "personal_id_number", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,8 +164,7 @@ object tokenMod {
   }
   object Token {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client_ip: String,
       created: String,
       id: String,
@@ -193,41 +178,29 @@ object tokenMod {
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setBank_account(value: BankAccount): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
+      inline def setBank_account(value: BankAccount): Self = StObject.set(x, "bank_account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
+      inline def setBank_accountUndefined: Self = StObject.set(x, "bank_account", js.undefined)
       
-      @scala.inline
-      def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+      inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
       
-      @scala.inline
-      def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
+      inline def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: token): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: token): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: account | bank_account | card | pii): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: account | bank_account | card | pii): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
+      inline def setUsed(value: Boolean): Self = StObject.set(x, "used", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,8 +243,7 @@ object tokenMod {
   }
   object TokenData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address_city: String,
       address_line1: String,
       address_state: String,
@@ -282,47 +254,33 @@ object tokenMod {
       __obj.asInstanceOf[TokenData]
     }
     
-    @scala.inline
-    implicit class TokenDataMutableBuilder[Self <: TokenData] (val x: Self) extends AnyVal {
+    extension [Self <: TokenData](x: Self) {
       
-      @scala.inline
-      def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
+      inline def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
+      inline def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
+      inline def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
       
-      @scala.inline
-      def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
+      inline def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
+      inline def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
+      inline def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
       
-      @scala.inline
-      def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
+      inline def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
+      inline def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -340,26 +298,20 @@ object tokenMod {
   }
   object TokenResult {
     
-    @scala.inline
-    def apply(): TokenResult = {
+    inline def apply(): TokenResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokenResult]
     }
     
-    @scala.inline
-    implicit class TokenResultMutableBuilder[Self <: TokenResult] (val x: Self) extends AnyVal {
+    extension [Self <: TokenResult](x: Self) {
       
-      @scala.inline
-      def setError(value: StripeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: StripeError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     }
   }
 }

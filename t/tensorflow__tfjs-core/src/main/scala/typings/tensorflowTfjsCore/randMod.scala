@@ -13,13 +13,11 @@ object randMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def rand[R /* <: Rank */](
+  inline def rand[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     randFunction: js.Function0[Double]
   ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("rand")(shape.asInstanceOf[js.Any], randFunction.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
-  @scala.inline
-  def rand[R /* <: Rank */](
+  inline def rand[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     randFunction: js.Function0[Double],
     dtype: DataType

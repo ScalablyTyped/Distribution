@@ -28,28 +28,22 @@ trait Boost[T /* <: BodyPartConstant */] extends StObject {
 }
 object Boost {
   
-  @scala.inline
-  def apply[T /* <: BodyPartConstant */](hits: Double, `type`: T): Boost[T] = {
+  inline def apply[T /* <: BodyPartConstant */](hits: Double, `type`: T): Boost[T] = {
     val __obj = js.Dynamic.literal(hits = hits.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Boost[T]]
   }
   
-  @scala.inline
-  implicit class BoostMutableBuilder[Self <: Boost[?], T /* <: BodyPartConstant */] (val x: Self & Boost[T]) extends AnyVal {
+  extension [Self <: Boost[?], T /* <: BodyPartConstant */](x: Self & Boost[T]) {
     
-    @scala.inline
-    def setBoost(
+    inline def setBoost(
       value: /* import warning: importer.ImportType#apply Failed type conversion: keyof screeps.anon.Dictpart[T] */ js.Any
     ): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoostUndefined: Self = StObject.set(x, "boost", js.undefined)
+    inline def setBoostUndefined: Self = StObject.set(x, "boost", js.undefined)
     
-    @scala.inline
-    def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: Double): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

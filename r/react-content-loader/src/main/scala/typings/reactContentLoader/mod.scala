@@ -65,86 +65,60 @@ object mod extends Shortcut {
   }
   object IContentLoaderProps {
     
-    @scala.inline
-    def apply(): IContentLoaderProps = {
+    inline def apply(): IContentLoaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IContentLoaderProps]
     }
     
-    @scala.inline
-    implicit class IContentLoaderPropsMutableBuilder[Self <: IContentLoaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IContentLoaderProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
+      inline def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundOpacityUndefined: Self = StObject.set(x, "backgroundOpacity", js.undefined)
+      inline def setBackgroundOpacityUndefined: Self = StObject.set(x, "backgroundOpacity", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+      inline def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
+      inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
       
-      @scala.inline
-      def setForegroundOpacity(value: Double): Self = StObject.set(x, "foregroundOpacity", value.asInstanceOf[js.Any])
+      inline def setForegroundOpacity(value: Double): Self = StObject.set(x, "foregroundOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForegroundOpacityUndefined: Self = StObject.set(x, "foregroundOpacity", js.undefined)
+      inline def setForegroundOpacityUndefined: Self = StObject.set(x, "foregroundOpacity", js.undefined)
       
-      @scala.inline
-      def setGradientRatio(value: Double): Self = StObject.set(x, "gradientRatio", value.asInstanceOf[js.Any])
+      inline def setGradientRatio(value: Double): Self = StObject.set(x, "gradientRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradientRatioUndefined: Self = StObject.set(x, "gradientRatio", js.undefined)
+      inline def setGradientRatioUndefined: Self = StObject.set(x, "gradientRatio", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUniqueKey(value: String): Self = StObject.set(x, "uniqueKey", value.asInstanceOf[js.Any])
+      inline def setUniqueKey(value: String): Self = StObject.set(x, "uniqueKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueKeyUndefined: Self = StObject.set(x, "uniqueKey", js.undefined)
+      inline def setUniqueKeyUndefined: Self = StObject.set(x, "uniqueKey", js.undefined)
     }
   }
   

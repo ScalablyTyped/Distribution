@@ -13,19 +13,15 @@ trait CacheParameterGroupNameMessage extends StObject {
 }
 object CacheParameterGroupNameMessage {
   
-  @scala.inline
-  def apply(): CacheParameterGroupNameMessage = {
+  inline def apply(): CacheParameterGroupNameMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CacheParameterGroupNameMessage]
   }
   
-  @scala.inline
-  implicit class CacheParameterGroupNameMessageMutableBuilder[Self <: CacheParameterGroupNameMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CacheParameterGroupNameMessage](x: Self) {
     
-    @scala.inline
-    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheParameterGroupNameUndefined: Self = StObject.set(x, "CacheParameterGroupName", js.undefined)
+    inline def setCacheParameterGroupNameUndefined: Self = StObject.set(x, "CacheParameterGroupName", js.undefined)
   }
 }

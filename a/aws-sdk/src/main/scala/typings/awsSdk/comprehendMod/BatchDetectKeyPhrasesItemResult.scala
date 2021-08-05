@@ -18,28 +18,21 @@ trait BatchDetectKeyPhrasesItemResult extends StObject {
 }
 object BatchDetectKeyPhrasesItemResult {
   
-  @scala.inline
-  def apply(): BatchDetectKeyPhrasesItemResult = {
+  inline def apply(): BatchDetectKeyPhrasesItemResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDetectKeyPhrasesItemResult]
   }
   
-  @scala.inline
-  implicit class BatchDetectKeyPhrasesItemResultMutableBuilder[Self <: BatchDetectKeyPhrasesItemResult] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetectKeyPhrasesItemResult](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
     
-    @scala.inline
-    def setKeyPhrases(value: ListOfKeyPhrases): Self = StObject.set(x, "KeyPhrases", value.asInstanceOf[js.Any])
+    inline def setKeyPhrases(value: ListOfKeyPhrases): Self = StObject.set(x, "KeyPhrases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPhrasesUndefined: Self = StObject.set(x, "KeyPhrases", js.undefined)
+    inline def setKeyPhrasesUndefined: Self = StObject.set(x, "KeyPhrases", js.undefined)
     
-    @scala.inline
-    def setKeyPhrasesVarargs(value: KeyPhrase*): Self = StObject.set(x, "KeyPhrases", js.Array(value :_*))
+    inline def setKeyPhrasesVarargs(value: KeyPhrase*): Self = StObject.set(x, "KeyPhrases", js.Array(value :_*))
   }
 }

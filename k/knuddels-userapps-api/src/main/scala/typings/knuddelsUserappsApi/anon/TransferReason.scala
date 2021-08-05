@@ -14,31 +14,23 @@ trait TransferReason extends StObject {
 }
 object TransferReason {
   
-  @scala.inline
-  def apply(): TransferReason = {
+  inline def apply(): TransferReason = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferReason]
   }
   
-  @scala.inline
-  implicit class TransferReasonMutableBuilder[Self <: TransferReason] (val x: Self) extends AnyVal {
+  extension [Self <: TransferReason](x: Self) {
     
-    @scala.inline
-    def setOnError(value: /* message */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: /* message */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
+    inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
     
-    @scala.inline
-    def setTransferReason(value: String): Self = StObject.set(x, "transferReason", value.asInstanceOf[js.Any])
+    inline def setTransferReason(value: String): Self = StObject.set(x, "transferReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferReasonUndefined: Self = StObject.set(x, "transferReason", js.undefined)
+    inline def setTransferReasonUndefined: Self = StObject.set(x, "transferReason", js.undefined)
   }
 }

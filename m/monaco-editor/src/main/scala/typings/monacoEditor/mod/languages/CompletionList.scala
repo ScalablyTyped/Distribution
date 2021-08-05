@@ -14,31 +14,23 @@ trait CompletionList extends StObject {
 }
 object CompletionList {
   
-  @scala.inline
-  def apply(suggestions: js.Array[CompletionItem]): CompletionList = {
+  inline def apply(suggestions: js.Array[CompletionItem]): CompletionList = {
     val __obj = js.Dynamic.literal(suggestions = suggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionList]
   }
   
-  @scala.inline
-  implicit class CompletionListMutableBuilder[Self <: CompletionList] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionList](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
+    inline def setDisposeUndefined: Self = StObject.set(x, "dispose", js.undefined)
     
-    @scala.inline
-    def setIncomplete(value: Boolean): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
+    inline def setIncomplete(value: Boolean): Self = StObject.set(x, "incomplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompleteUndefined: Self = StObject.set(x, "incomplete", js.undefined)
+    inline def setIncompleteUndefined: Self = StObject.set(x, "incomplete", js.undefined)
     
-    @scala.inline
-    def setSuggestions(value: js.Array[CompletionItem]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+    inline def setSuggestions(value: js.Array[CompletionItem]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsVarargs(value: CompletionItem*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+    inline def setSuggestionsVarargs(value: CompletionItem*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
   }
 }

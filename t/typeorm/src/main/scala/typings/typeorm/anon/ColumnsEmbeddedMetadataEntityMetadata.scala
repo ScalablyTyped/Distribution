@@ -18,37 +18,27 @@ trait ColumnsEmbeddedMetadataEntityMetadata extends StObject {
 }
 object ColumnsEmbeddedMetadataEntityMetadata {
   
-  @scala.inline
-  def apply(entityMetadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): ColumnsEmbeddedMetadataEntityMetadata = {
+  inline def apply(entityMetadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): ColumnsEmbeddedMetadataEntityMetadata = {
     val __obj = js.Dynamic.literal(entityMetadata = entityMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnsEmbeddedMetadataEntityMetadata]
   }
   
-  @scala.inline
-  implicit class ColumnsEmbeddedMetadataEntityMetadataMutableBuilder[Self <: ColumnsEmbeddedMetadataEntityMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnsEmbeddedMetadataEntityMetadata](x: Self) {
     
-    @scala.inline
-    def setArgs(value: UniqueMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: UniqueMetadataArgs): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setColumns(value: js.Array[ColumnMetadata]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[ColumnMetadata]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: ColumnMetadata*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: ColumnMetadata*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setEmbeddedMetadata(value: typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata): Self = StObject.set(x, "embeddedMetadata", value.asInstanceOf[js.Any])
+    inline def setEmbeddedMetadata(value: typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata): Self = StObject.set(x, "embeddedMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedMetadataUndefined: Self = StObject.set(x, "embeddedMetadata", js.undefined)
+    inline def setEmbeddedMetadataUndefined: Self = StObject.set(x, "embeddedMetadata", js.undefined)
     
-    @scala.inline
-    def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
+    inline def setEntityMetadata(value: typings.typeorm.metadataEntityMetadataMod.EntityMetadata): Self = StObject.set(x, "entityMetadata", value.asInstanceOf[js.Any])
   }
 }

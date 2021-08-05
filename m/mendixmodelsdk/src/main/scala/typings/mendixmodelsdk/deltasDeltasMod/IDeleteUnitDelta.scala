@@ -14,16 +14,13 @@ trait IDeleteUnitDelta
 }
 object IDeleteUnitDelta {
   
-  @scala.inline
-  def apply(unitId: String): IDeleteUnitDelta = {
+  inline def apply(unitId: String): IDeleteUnitDelta = {
     val __obj = js.Dynamic.literal(deltaType = "DELETE_UNIT", unitId = unitId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeleteUnitDelta]
   }
   
-  @scala.inline
-  implicit class IDeleteUnitDeltaMutableBuilder[Self <: IDeleteUnitDelta] (val x: Self) extends AnyVal {
+  extension [Self <: IDeleteUnitDelta](x: Self) {
     
-    @scala.inline
-    def setDeltaType(value: DELETE_UNIT): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
+    inline def setDeltaType(value: DELETE_UNIT): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
   }
 }

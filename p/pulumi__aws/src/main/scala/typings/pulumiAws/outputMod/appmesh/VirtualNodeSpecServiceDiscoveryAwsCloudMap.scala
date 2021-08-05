@@ -25,25 +25,19 @@ trait VirtualNodeSpecServiceDiscoveryAwsCloudMap extends StObject {
 }
 object VirtualNodeSpecServiceDiscoveryAwsCloudMap {
   
-  @scala.inline
-  def apply(namespaceName: String, serviceName: String): VirtualNodeSpecServiceDiscoveryAwsCloudMap = {
+  inline def apply(namespaceName: String, serviceName: String): VirtualNodeSpecServiceDiscoveryAwsCloudMap = {
     val __obj = js.Dynamic.literal(namespaceName = namespaceName.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeSpecServiceDiscoveryAwsCloudMap]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecServiceDiscoveryAwsCloudMapMutableBuilder[Self <: VirtualNodeSpecServiceDiscoveryAwsCloudMap] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecServiceDiscoveryAwsCloudMap](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setNamespaceName(value: String): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
+    inline def setNamespaceName(value: String): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
   }
 }

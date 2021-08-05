@@ -16,25 +16,19 @@ trait GotBodyOptions[E /* <: String | Null */]
 }
 object GotBodyOptions {
   
-  @scala.inline
-  def apply[E /* <: String | Null */](): GotBodyOptions[E] = {
+  inline def apply[E /* <: String | Null */](): GotBodyOptions[E] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GotBodyOptions[E]]
   }
   
-  @scala.inline
-  implicit class GotBodyOptionsMutableBuilder[Self <: GotBodyOptions[?], E /* <: String | Null */] (val x: Self & GotBodyOptions[E]) extends AnyVal {
+  extension [Self <: GotBodyOptions[?], E /* <: String | Null */](x: Self & GotBodyOptions[E]) {
     
-    @scala.inline
-    def setBody(value: String | Buffer | Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String | Buffer | Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHooks(value: Hooks[GotBodyOptions[E], String | Buffer | Readable]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: Hooks[GotBodyOptions[E], String | Buffer | Readable]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
   }
 }

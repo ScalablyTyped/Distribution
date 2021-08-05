@@ -14,8 +14,7 @@ trait HTMLMediaElementEventMap
 }
 object HTMLMediaElementEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     animationcancel: AnimationEvent,
     animationend: AnimationEvent,
@@ -115,13 +114,10 @@ object HTMLMediaElementEventMap {
     __obj.asInstanceOf[HTMLMediaElementEventMap]
   }
   
-  @scala.inline
-  implicit class HTMLMediaElementEventMapMutableBuilder[Self <: HTMLMediaElementEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLMediaElementEventMap](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: MediaEncryptedEvent): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: MediaEncryptedEvent): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitingforkey(value: Event): Self = StObject.set(x, "waitingforkey", value.asInstanceOf[js.Any])
+    inline def setWaitingforkey(value: Event): Self = StObject.set(x, "waitingforkey", value.asInstanceOf[js.Any])
   }
 }

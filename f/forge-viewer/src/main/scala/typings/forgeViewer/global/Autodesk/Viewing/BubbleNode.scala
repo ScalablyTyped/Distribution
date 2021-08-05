@@ -23,34 +23,29 @@ object BubbleNode {
   @JSGlobal("Autodesk.Viewing.BubbleNode.GEOMETRY_F2D_NODE")
   @js.native
   def GEOMETRY_F2D_NODE: BubbleNodeSearchProps = js.native
-  @scala.inline
-  def GEOMETRY_F2D_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEOMETRY_F2D_NODE")(x.asInstanceOf[js.Any])
+  inline def GEOMETRY_F2D_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEOMETRY_F2D_NODE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("Autodesk.Viewing.BubbleNode.GEOMETRY_SVF_NODE")
   @js.native
   def GEOMETRY_SVF_NODE: BubbleNodeSearchProps = js.native
-  @scala.inline
-  def GEOMETRY_SVF_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEOMETRY_SVF_NODE")(x.asInstanceOf[js.Any])
+  inline def GEOMETRY_SVF_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GEOMETRY_SVF_NODE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("Autodesk.Viewing.BubbleNode.MODEL_NODE")
   @js.native
   def MODEL_NODE: BubbleNodeSearchProps = js.native
-  @scala.inline
-  def MODEL_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_NODE")(x.asInstanceOf[js.Any])
+  inline def MODEL_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODEL_NODE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("Autodesk.Viewing.BubbleNode.SHEET_NODE")
   @js.native
   def SHEET_NODE: BubbleNodeSearchProps = js.native
-  @scala.inline
-  def SHEET_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHEET_NODE")(x.asInstanceOf[js.Any])
+  inline def SHEET_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHEET_NODE")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("Autodesk.Viewing.BubbleNode.VIEWABLE_NODE")
   @js.native
   def VIEWABLE_NODE: BubbleNodeSearchProps = js.native
-  @scala.inline
-  def VIEWABLE_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEWABLE_NODE")(x.asInstanceOf[js.Any])
+  inline def VIEWABLE_NODE_=(x: BubbleNodeSearchProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIEWABLE_NODE")(x.asInstanceOf[js.Any])
 }

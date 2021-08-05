@@ -11,16 +11,13 @@ trait ThemeProviderProps extends StObject {
 }
 object ThemeProviderProps {
   
-  @scala.inline
-  def apply(children: ReactElement): ThemeProviderProps = {
+  inline def apply(children: ReactElement): ThemeProviderProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThemeProviderProps]
   }
   
-  @scala.inline
-  implicit class ThemeProviderPropsMutableBuilder[Self <: ThemeProviderProps] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeProviderProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

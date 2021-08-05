@@ -26,22 +26,17 @@ trait ASPxClientUploadControlInvalidFileInfo extends StObject {
 }
 object ASPxClientUploadControlInvalidFileInfo {
   
-  @scala.inline
-  def apply(errorType: ASPxClientUploadControlValidationErrorTypeConsts, fileName: String, fileSize: Double): ASPxClientUploadControlInvalidFileInfo = {
+  inline def apply(errorType: ASPxClientUploadControlValidationErrorTypeConsts, fileName: String, fileSize: Double): ASPxClientUploadControlInvalidFileInfo = {
     val __obj = js.Dynamic.literal(errorType = errorType.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientUploadControlInvalidFileInfo]
   }
   
-  @scala.inline
-  implicit class ASPxClientUploadControlInvalidFileInfoMutableBuilder[Self <: ASPxClientUploadControlInvalidFileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientUploadControlInvalidFileInfo](x: Self) {
     
-    @scala.inline
-    def setErrorType(value: ASPxClientUploadControlValidationErrorTypeConsts): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: ASPxClientUploadControlValidationErrorTypeConsts): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
   }
 }

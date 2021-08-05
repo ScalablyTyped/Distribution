@@ -13,16 +13,13 @@ trait InsertTextRequest extends StObject {
 }
 object InsertTextRequest {
   
-  @scala.inline
-  def apply(text: String): InsertTextRequest = {
+  inline def apply(text: String): InsertTextRequest = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[InsertTextRequest]
   }
   
-  @scala.inline
-  implicit class InsertTextRequestMutableBuilder[Self <: InsertTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InsertTextRequest](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

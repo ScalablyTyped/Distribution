@@ -15,8 +15,7 @@ trait StartEvent
 }
 object StartEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -40,10 +39,8 @@ object StartEvent {
     __obj.asInstanceOf[StartEvent]
   }
   
-  @scala.inline
-  implicit class StartEventMutableBuilder[Self <: StartEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StartEvent](x: Self) {
     
-    @scala.inline
-    def setIsInterrupting(value: Boolean): Self = StObject.set(x, "isInterrupting", value.asInstanceOf[js.Any])
+    inline def setIsInterrupting(value: Boolean): Self = StObject.set(x, "isInterrupting", value.asInstanceOf[js.Any])
   }
 }

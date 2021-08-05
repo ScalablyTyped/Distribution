@@ -15,22 +15,17 @@ trait ActivitySetThreadSubscriptionEndpoint extends StObject {
 }
 object ActivitySetThreadSubscriptionEndpoint {
   
-  @scala.inline
-  def apply(thread_id: Double): ActivitySetThreadSubscriptionEndpoint = {
+  inline def apply(thread_id: Double): ActivitySetThreadSubscriptionEndpoint = {
     val __obj = js.Dynamic.literal(thread_id = thread_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitySetThreadSubscriptionEndpoint]
   }
   
-  @scala.inline
-  implicit class ActivitySetThreadSubscriptionEndpointMutableBuilder[Self <: ActivitySetThreadSubscriptionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActivitySetThreadSubscriptionEndpoint](x: Self) {
     
-    @scala.inline
-    def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+    inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
+    inline def setIgnoredUndefined: Self = StObject.set(x, "ignored", js.undefined)
     
-    @scala.inline
-    def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
+    inline def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }
 }

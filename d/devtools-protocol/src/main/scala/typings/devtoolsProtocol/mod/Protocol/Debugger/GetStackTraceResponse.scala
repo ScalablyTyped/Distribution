@@ -11,16 +11,13 @@ trait GetStackTraceResponse extends StObject {
 }
 object GetStackTraceResponse {
   
-  @scala.inline
-  def apply(stackTrace: StackTrace): GetStackTraceResponse = {
+  inline def apply(stackTrace: StackTrace): GetStackTraceResponse = {
     val __obj = js.Dynamic.literal(stackTrace = stackTrace.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStackTraceResponse]
   }
   
-  @scala.inline
-  implicit class GetStackTraceResponseMutableBuilder[Self <: GetStackTraceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetStackTraceResponse](x: Self) {
     
-    @scala.inline
-    def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
   }
 }

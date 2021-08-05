@@ -14,19 +14,15 @@ trait PageCloseOptions extends StObject {
 }
 object PageCloseOptions {
   
-  @scala.inline
-  def apply(): PageCloseOptions = {
+  inline def apply(): PageCloseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageCloseOptions]
   }
   
-  @scala.inline
-  implicit class PageCloseOptionsMutableBuilder[Self <: PageCloseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageCloseOptions](x: Self) {
     
-    @scala.inline
-    def setRunBeforeUnload(value: Boolean): Self = StObject.set(x, "runBeforeUnload", value.asInstanceOf[js.Any])
+    inline def setRunBeforeUnload(value: Boolean): Self = StObject.set(x, "runBeforeUnload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunBeforeUnloadUndefined: Self = StObject.set(x, "runBeforeUnload", js.undefined)
+    inline def setRunBeforeUnloadUndefined: Self = StObject.set(x, "runBeforeUnload", js.undefined)
   }
 }

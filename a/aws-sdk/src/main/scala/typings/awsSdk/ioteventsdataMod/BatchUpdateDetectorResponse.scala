@@ -13,22 +13,17 @@ trait BatchUpdateDetectorResponse extends StObject {
 }
 object BatchUpdateDetectorResponse {
   
-  @scala.inline
-  def apply(): BatchUpdateDetectorResponse = {
+  inline def apply(): BatchUpdateDetectorResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchUpdateDetectorResponse]
   }
   
-  @scala.inline
-  implicit class BatchUpdateDetectorResponseMutableBuilder[Self <: BatchUpdateDetectorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdateDetectorResponse](x: Self) {
     
-    @scala.inline
-    def setBatchUpdateDetectorErrorEntries(value: BatchUpdateDetectorErrorEntries): Self = StObject.set(x, "batchUpdateDetectorErrorEntries", value.asInstanceOf[js.Any])
+    inline def setBatchUpdateDetectorErrorEntries(value: BatchUpdateDetectorErrorEntries): Self = StObject.set(x, "batchUpdateDetectorErrorEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchUpdateDetectorErrorEntriesUndefined: Self = StObject.set(x, "batchUpdateDetectorErrorEntries", js.undefined)
+    inline def setBatchUpdateDetectorErrorEntriesUndefined: Self = StObject.set(x, "batchUpdateDetectorErrorEntries", js.undefined)
     
-    @scala.inline
-    def setBatchUpdateDetectorErrorEntriesVarargs(value: BatchUpdateDetectorErrorEntry*): Self = StObject.set(x, "batchUpdateDetectorErrorEntries", js.Array(value :_*))
+    inline def setBatchUpdateDetectorErrorEntriesVarargs(value: BatchUpdateDetectorErrorEntry*): Self = StObject.set(x, "batchUpdateDetectorErrorEntries", js.Array(value :_*))
   }
 }

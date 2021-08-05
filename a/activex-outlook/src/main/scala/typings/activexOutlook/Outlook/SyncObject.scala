@@ -12,7 +12,7 @@ trait SyncObject extends StObject {
   
   val Name: String
   
-  @JSName("Outlook.SyncObject_typekey")
+  /* private */ @JSName("Outlook.SyncObject_typekey")
   var OutlookDotSyncObject_typekey: SyncObject
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait SyncObject extends StObject {
 }
 object SyncObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Class: OlObjectClass,
     Name: String,
@@ -41,31 +40,22 @@ object SyncObject {
     __obj.asInstanceOf[SyncObject]
   }
   
-  @scala.inline
-  implicit class SyncObjectMutableBuilder[Self <: SyncObject] (val x: Self) extends AnyVal {
+  extension [Self <: SyncObject](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotSyncObject_typekey(value: SyncObject): Self = StObject.set(x, "Outlook.SyncObject_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotSyncObject_typekey(value: SyncObject): Self = StObject.set(x, "Outlook.SyncObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "Start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "Start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "Stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "Stop", js.Any.fromFunction0(value))
   }
 }

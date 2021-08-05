@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxDevice Class */
 @JSGlobal("FAXCOMEXLib.FaxDevice")
 @js.native
-class FaxDevice protected ()
+/* private */ class FaxDevice ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxDevice {
   
@@ -29,7 +29,7 @@ class FaxDevice protected ()
   /* CompleteClass */
   override val DeviceName: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxDevice_typekey")
   var FAXCOMEXLibDotFaxDevice_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxDevice = js.native
   

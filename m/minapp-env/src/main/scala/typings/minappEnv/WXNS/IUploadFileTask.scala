@@ -15,19 +15,15 @@ trait IUploadFileTask extends StObject {
 }
 object IUploadFileTask {
   
-  @scala.inline
-  def apply(abort: AnyFunction, onProgressUpdate: js.Function1[/* event */ IProgressUpdateEvent, Unit] => Unit): IUploadFileTask = {
+  inline def apply(abort: AnyFunction, onProgressUpdate: js.Function1[/* event */ IProgressUpdateEvent, Unit] => Unit): IUploadFileTask = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], onProgressUpdate = js.Any.fromFunction1(onProgressUpdate))
     __obj.asInstanceOf[IUploadFileTask]
   }
   
-  @scala.inline
-  implicit class IUploadFileTaskMutableBuilder[Self <: IUploadFileTask] (val x: Self) extends AnyVal {
+  extension [Self <: IUploadFileTask](x: Self) {
     
-    @scala.inline
-    def setAbort(value: AnyFunction): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+    inline def setAbort(value: AnyFunction): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnProgressUpdate(value: js.Function1[/* event */ IProgressUpdateEvent, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
+    inline def setOnProgressUpdate(value: js.Function1[/* event */ IProgressUpdateEvent, Unit] => Unit): Self = StObject.set(x, "onProgressUpdate", js.Any.fromFunction1(value))
   }
 }

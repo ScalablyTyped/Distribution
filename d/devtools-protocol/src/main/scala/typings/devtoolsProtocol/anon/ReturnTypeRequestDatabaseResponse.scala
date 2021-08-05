@@ -14,22 +14,17 @@ trait ReturnTypeRequestDatabaseResponse extends StObject {
 }
 object ReturnTypeRequestDatabaseResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[RequestDatabaseRequest], returnType: RequestDatabaseResponse): ReturnTypeRequestDatabaseResponse = {
+  inline def apply(paramsType: js.Array[RequestDatabaseRequest], returnType: RequestDatabaseResponse): ReturnTypeRequestDatabaseResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeRequestDatabaseResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeRequestDatabaseResponseMutableBuilder[Self <: ReturnTypeRequestDatabaseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeRequestDatabaseResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[RequestDatabaseRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[RequestDatabaseRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: RequestDatabaseRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: RequestDatabaseRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: RequestDatabaseResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: RequestDatabaseResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

@@ -29,31 +29,23 @@ trait ParamsResourceProjectsTestmatricesCancel
 }
 object ParamsResourceProjectsTestmatricesCancel {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsTestmatricesCancel = {
+  inline def apply(): ParamsResourceProjectsTestmatricesCancel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsTestmatricesCancel]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsTestmatricesCancelMutableBuilder[Self <: ParamsResourceProjectsTestmatricesCancel] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsTestmatricesCancel](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setTestMatrixId(value: String): Self = StObject.set(x, "testMatrixId", value.asInstanceOf[js.Any])
+    inline def setTestMatrixId(value: String): Self = StObject.set(x, "testMatrixId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestMatrixIdUndefined: Self = StObject.set(x, "testMatrixId", js.undefined)
+    inline def setTestMatrixIdUndefined: Self = StObject.set(x, "testMatrixId", js.undefined)
   }
 }

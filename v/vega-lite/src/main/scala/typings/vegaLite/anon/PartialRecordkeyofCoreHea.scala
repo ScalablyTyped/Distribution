@@ -158,261 +158,197 @@ trait PartialRecordkeyofCoreHea extends StObject {
 }
 object PartialRecordkeyofCoreHea {
   
-  @scala.inline
-  def apply(): PartialRecordkeyofCoreHea = {
+  inline def apply(): PartialRecordkeyofCoreHea = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialRecordkeyofCoreHea]
   }
   
-  @scala.inline
-  implicit class PartialRecordkeyofCoreHeaMutableBuilder[Self <: PartialRecordkeyofCoreHea] (val x: Self) extends AnyVal {
+  extension [Self <: PartialRecordkeyofCoreHea](x: Self) {
     
-    @scala.inline
-    def setFormat(
+    inline def setFormat(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatType(
+    inline def setFormatType(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
+    inline def setFormatTypeUndefined: Self = StObject.set(x, "formatType", js.undefined)
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setLabelAlign(
+    inline def setLabelAlign(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
+    inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
     
-    @scala.inline
-    def setLabelAnchor(
+    inline def setLabelAnchor(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
+    inline def setLabelAnchorUndefined: Self = StObject.set(x, "labelAnchor", js.undefined)
     
-    @scala.inline
-    def setLabelAngle(
+    inline def setLabelAngle(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelAngleUndefined: Self = StObject.set(x, "labelAngle", js.undefined)
+    inline def setLabelAngleUndefined: Self = StObject.set(x, "labelAngle", js.undefined)
     
-    @scala.inline
-    def setLabelBaseline(
+    inline def setLabelBaseline(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelBaseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
+    inline def setLabelBaselineUndefined: Self = StObject.set(x, "labelBaseline", js.undefined)
     
-    @scala.inline
-    def setLabelColor(
+    inline def setLabelColor(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
+    inline def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
-    @scala.inline
-    def setLabelExpr(
+    inline def setLabelExpr(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelExprUndefined: Self = StObject.set(x, "labelExpr", js.undefined)
+    inline def setLabelExprUndefined: Self = StObject.set(x, "labelExpr", js.undefined)
     
-    @scala.inline
-    def setLabelFont(
+    inline def setLabelFont(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFontSize(
+    inline def setLabelFontSize(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
+    inline def setLabelFontSizeUndefined: Self = StObject.set(x, "labelFontSize", js.undefined)
     
-    @scala.inline
-    def setLabelFontStyle(
+    inline def setLabelFontStyle(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelFontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
+    inline def setLabelFontStyleUndefined: Self = StObject.set(x, "labelFontStyle", js.undefined)
     
-    @scala.inline
-    def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
+    inline def setLabelFontUndefined: Self = StObject.set(x, "labelFont", js.undefined)
     
-    @scala.inline
-    def setLabelFontWeight(
+    inline def setLabelFontWeight(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelFontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
+    inline def setLabelFontWeightUndefined: Self = StObject.set(x, "labelFontWeight", js.undefined)
     
-    @scala.inline
-    def setLabelLimit(
+    inline def setLabelLimit(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
+    inline def setLabelLimitUndefined: Self = StObject.set(x, "labelLimit", js.undefined)
     
-    @scala.inline
-    def setLabelLineHeight(
+    inline def setLabelLineHeight(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelLineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
+    inline def setLabelLineHeightUndefined: Self = StObject.set(x, "labelLineHeight", js.undefined)
     
-    @scala.inline
-    def setLabelOrient(
+    inline def setLabelOrient(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelOrient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelOrientUndefined: Self = StObject.set(x, "labelOrient", js.undefined)
+    inline def setLabelOrientUndefined: Self = StObject.set(x, "labelOrient", js.undefined)
     
-    @scala.inline
-    def setLabelPadding(
+    inline def setLabelPadding(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labelPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
+    inline def setLabelPaddingUndefined: Self = StObject.set(x, "labelPadding", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setOrient(
+    inline def setOrient(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "orient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
+    inline def setOrientUndefined: Self = StObject.set(x, "orient", js.undefined)
     
-    @scala.inline
-    def setTitleAlign(
+    inline def setTitleAlign(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
+    inline def setTitleAlignUndefined: Self = StObject.set(x, "titleAlign", js.undefined)
     
-    @scala.inline
-    def setTitleAnchor(
+    inline def setTitleAnchor(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleAnchorUndefined: Self = StObject.set(x, "titleAnchor", js.undefined)
+    inline def setTitleAnchorUndefined: Self = StObject.set(x, "titleAnchor", js.undefined)
     
-    @scala.inline
-    def setTitleAngle(
+    inline def setTitleAngle(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleAngleUndefined: Self = StObject.set(x, "titleAngle", js.undefined)
+    inline def setTitleAngleUndefined: Self = StObject.set(x, "titleAngle", js.undefined)
     
-    @scala.inline
-    def setTitleBaseline(
+    inline def setTitleBaseline(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleBaseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
+    inline def setTitleBaselineUndefined: Self = StObject.set(x, "titleBaseline", js.undefined)
     
-    @scala.inline
-    def setTitleColor(
+    inline def setTitleColor(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
+    inline def setTitleColorUndefined: Self = StObject.set(x, "titleColor", js.undefined)
     
-    @scala.inline
-    def setTitleFont(
+    inline def setTitleFont(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFontSize(
+    inline def setTitleFontSize(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
+    inline def setTitleFontSizeUndefined: Self = StObject.set(x, "titleFontSize", js.undefined)
     
-    @scala.inline
-    def setTitleFontStyle(
+    inline def setTitleFontStyle(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleFontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
+    inline def setTitleFontStyleUndefined: Self = StObject.set(x, "titleFontStyle", js.undefined)
     
-    @scala.inline
-    def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
+    inline def setTitleFontUndefined: Self = StObject.set(x, "titleFont", js.undefined)
     
-    @scala.inline
-    def setTitleFontWeight(
+    inline def setTitleFontWeight(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleFontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
+    inline def setTitleFontWeightUndefined: Self = StObject.set(x, "titleFontWeight", js.undefined)
     
-    @scala.inline
-    def setTitleLimit(
+    inline def setTitleLimit(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
+    inline def setTitleLimitUndefined: Self = StObject.set(x, "titleLimit", js.undefined)
     
-    @scala.inline
-    def setTitleLineHeight(
+    inline def setTitleLineHeight(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleLineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
+    inline def setTitleLineHeightUndefined: Self = StObject.set(x, "titleLineHeight", js.undefined)
     
-    @scala.inline
-    def setTitleOrient(
+    inline def setTitleOrient(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titleOrient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleOrientUndefined: Self = StObject.set(x, "titleOrient", js.undefined)
+    inline def setTitleOrientUndefined: Self = StObject.set(x, "titleOrient", js.undefined)
     
-    @scala.inline
-    def setTitlePadding(
+    inline def setTitlePadding(
       value: subtitleFont | fontWeight | lineHeight | color | dx | anchor | aria | offset | subtitlePadding | fontStyle | limit | orient | font | subtitleFontStyle | fontSize | baseline | angle | subtitleFontWeight | subtitleColor | zindex | frame | dy | subtitleFontSize | subtitleLineHeight | align
     ): Self = StObject.set(x, "titlePadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
+    inline def setTitlePaddingUndefined: Self = StObject.set(x, "titlePadding", js.undefined)
   }
 }

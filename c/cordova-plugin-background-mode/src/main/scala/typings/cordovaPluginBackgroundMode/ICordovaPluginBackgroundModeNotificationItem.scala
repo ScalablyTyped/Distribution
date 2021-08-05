@@ -33,43 +33,31 @@ trait ICordovaPluginBackgroundModeNotificationItem extends StObject {
 }
 object ICordovaPluginBackgroundModeNotificationItem {
   
-  @scala.inline
-  def apply(): ICordovaPluginBackgroundModeNotificationItem = {
+  inline def apply(): ICordovaPluginBackgroundModeNotificationItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICordovaPluginBackgroundModeNotificationItem]
   }
   
-  @scala.inline
-  implicit class ICordovaPluginBackgroundModeNotificationItemMutableBuilder[Self <: ICordovaPluginBackgroundModeNotificationItem] (val x: Self) extends AnyVal {
+  extension [Self <: ICordovaPluginBackgroundModeNotificationItem](x: Self) {
     
-    @scala.inline
-    def setResume(value: Boolean): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
+    inline def setResume(value: Boolean): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeUndefined: Self = StObject.set(x, "resume", js.undefined)
+    inline def setResumeUndefined: Self = StObject.set(x, "resume", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTicker(value: String): Self = StObject.set(x, "ticker", value.asInstanceOf[js.Any])
+    inline def setTicker(value: String): Self = StObject.set(x, "ticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickerUndefined: Self = StObject.set(x, "ticker", js.undefined)
+    inline def setTickerUndefined: Self = StObject.set(x, "ticker", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

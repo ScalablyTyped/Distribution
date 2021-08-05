@@ -117,8 +117,7 @@ trait XConversionDictionary
 }
 object XConversionDictionary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConversionType: Double,
     Locale: Locale,
     Name: String,
@@ -141,49 +140,34 @@ object XConversionDictionary {
     __obj.asInstanceOf[XConversionDictionary]
   }
   
-  @scala.inline
-  implicit class XConversionDictionaryMutableBuilder[Self <: XConversionDictionary] (val x: Self) extends AnyVal {
+  extension [Self <: XConversionDictionary](x: Self) {
     
-    @scala.inline
-    def setAddEntry(value: (String, String) => Unit): Self = StObject.set(x, "addEntry", js.Any.fromFunction2(value))
+    inline def setAddEntry(value: (String, String) => Unit): Self = StObject.set(x, "addEntry", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConversionType(value: Double): Self = StObject.set(x, "ConversionType", value.asInstanceOf[js.Any])
+    inline def setConversionType(value: Double): Self = StObject.set(x, "ConversionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConversionEntries(value: ConversionDirection => SafeArray[String]): Self = StObject.set(x, "getConversionEntries", js.Any.fromFunction1(value))
+    inline def setGetConversionEntries(value: ConversionDirection => SafeArray[String]): Self = StObject.set(x, "getConversionEntries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetConversionType(value: () => Double): Self = StObject.set(x, "getConversionType", js.Any.fromFunction0(value))
+    inline def setGetConversionType(value: () => Double): Self = StObject.set(x, "getConversionType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetConversions(value: (String, Double, Double, ConversionDirection, Double) => SafeArray[String]): Self = StObject.set(x, "getConversions", js.Any.fromFunction5(value))
+    inline def setGetConversions(value: (String, Double, Double, ConversionDirection, Double) => SafeArray[String]): Self = StObject.set(x, "getConversions", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
+    inline def setGetLocale(value: () => Locale): Self = StObject.set(x, "getLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaxCharCount(value: ConversionDirection => Double): Self = StObject.set(x, "getMaxCharCount", js.Any.fromFunction1(value))
+    inline def setGetMaxCharCount(value: ConversionDirection => Double): Self = StObject.set(x, "getMaxCharCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEntry(value: (String, String) => Unit): Self = StObject.set(x, "removeEntry", js.Any.fromFunction2(value))
+    inline def setRemoveEntry(value: (String, String) => Unit): Self = StObject.set(x, "removeEntry", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
+    inline def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
   }
 }

@@ -45,8 +45,7 @@ trait Btreecheckpointgeneration extends StObject {
 }
 object Btreecheckpointgeneration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `btree checkpoint generation`: Double,
     `column-store fixed-size leaf pages`: Double,
     `column-store internal pages`: Double,
@@ -88,61 +87,42 @@ object Btreecheckpointgeneration {
     __obj.asInstanceOf[Btreecheckpointgeneration]
   }
   
-  @scala.inline
-  implicit class BtreecheckpointgenerationMutableBuilder[Self <: Btreecheckpointgeneration] (val x: Self) extends AnyVal {
+  extension [Self <: Btreecheckpointgeneration](x: Self) {
     
-    @scala.inline
-    def `setBtree checkpoint generation`(value: Double): Self = StObject.set(x, "btree checkpoint generation", value.asInstanceOf[js.Any])
+    inline def `setBtree checkpoint generation`(value: Double): Self = StObject.set(x, "btree checkpoint generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setColumn-store fixed-size leaf pages`(value: Double): Self = StObject.set(x, "column-store fixed-size leaf pages", value.asInstanceOf[js.Any])
+    inline def `setColumn-store fixed-size leaf pages`(value: Double): Self = StObject.set(x, "column-store fixed-size leaf pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setColumn-store internal pages`(value: Double): Self = StObject.set(x, "column-store internal pages", value.asInstanceOf[js.Any])
+    inline def `setColumn-store internal pages`(value: Double): Self = StObject.set(x, "column-store internal pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setColumn-store variable-size RLE encoded values`(value: Double): Self = StObject.set(x, "column-store variable-size RLE encoded values", value.asInstanceOf[js.Any])
+    inline def `setColumn-store variable-size RLE encoded values`(value: Double): Self = StObject.set(x, "column-store variable-size RLE encoded values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setColumn-store variable-size deleted values`(value: Double): Self = StObject.set(x, "column-store variable-size deleted values", value.asInstanceOf[js.Any])
+    inline def `setColumn-store variable-size deleted values`(value: Double): Self = StObject.set(x, "column-store variable-size deleted values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setColumn-store variable-size leaf pages`(value: Double): Self = StObject.set(x, "column-store variable-size leaf pages", value.asInstanceOf[js.Any])
+    inline def `setColumn-store variable-size leaf pages`(value: Double): Self = StObject.set(x, "column-store variable-size leaf pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setFixed-record size`(value: Double): Self = StObject.set(x, "fixed-record size", value.asInstanceOf[js.Any])
+    inline def `setFixed-record size`(value: Double): Self = StObject.set(x, "fixed-record size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMaximum internal page key size`(value: Double): Self = StObject.set(x, "maximum internal page key size", value.asInstanceOf[js.Any])
+    inline def `setMaximum internal page key size`(value: Double): Self = StObject.set(x, "maximum internal page key size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMaximum internal page size`(value: Double): Self = StObject.set(x, "maximum internal page size", value.asInstanceOf[js.Any])
+    inline def `setMaximum internal page size`(value: Double): Self = StObject.set(x, "maximum internal page size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMaximum leaf page key size`(value: Double): Self = StObject.set(x, "maximum leaf page key size", value.asInstanceOf[js.Any])
+    inline def `setMaximum leaf page key size`(value: Double): Self = StObject.set(x, "maximum leaf page key size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMaximum leaf page size`(value: Double): Self = StObject.set(x, "maximum leaf page size", value.asInstanceOf[js.Any])
+    inline def `setMaximum leaf page size`(value: Double): Self = StObject.set(x, "maximum leaf page size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMaximum leaf page value size`(value: Double): Self = StObject.set(x, "maximum leaf page value size", value.asInstanceOf[js.Any])
+    inline def `setMaximum leaf page value size`(value: Double): Self = StObject.set(x, "maximum leaf page value size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMaximum tree depth`(value: Double): Self = StObject.set(x, "maximum tree depth", value.asInstanceOf[js.Any])
+    inline def `setMaximum tree depth`(value: Double): Self = StObject.set(x, "maximum tree depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setNumber of keySlashvalue pairs`(value: Double): Self = StObject.set(x, "number of key/value pairs", value.asInstanceOf[js.Any])
+    inline def `setNumber of keySlashvalue pairs`(value: Double): Self = StObject.set(x, "number of key/value pairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOverflow pages`(value: Double): Self = StObject.set(x, "overflow pages", value.asInstanceOf[js.Any])
+    inline def `setOverflow pages`(value: Double): Self = StObject.set(x, "overflow pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPages rewritten by compaction`(value: Double): Self = StObject.set(x, "pages rewritten by compaction", value.asInstanceOf[js.Any])
+    inline def `setPages rewritten by compaction`(value: Double): Self = StObject.set(x, "pages rewritten by compaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRow-store internal pages`(value: Double): Self = StObject.set(x, "row-store internal pages", value.asInstanceOf[js.Any])
+    inline def `setRow-store internal pages`(value: Double): Self = StObject.set(x, "row-store internal pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRow-store leaf pages`(value: Double): Self = StObject.set(x, "row-store leaf pages", value.asInstanceOf[js.Any])
+    inline def `setRow-store leaf pages`(value: Double): Self = StObject.set(x, "row-store leaf pages", value.asInstanceOf[js.Any])
   }
 }

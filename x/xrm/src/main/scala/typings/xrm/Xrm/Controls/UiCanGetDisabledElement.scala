@@ -17,16 +17,13 @@ trait UiCanGetDisabledElement extends StObject {
 }
 object UiCanGetDisabledElement {
   
-  @scala.inline
-  def apply(getDisabled: () => Boolean): UiCanGetDisabledElement = {
+  inline def apply(getDisabled: () => Boolean): UiCanGetDisabledElement = {
     val __obj = js.Dynamic.literal(getDisabled = js.Any.fromFunction0(getDisabled))
     __obj.asInstanceOf[UiCanGetDisabledElement]
   }
   
-  @scala.inline
-  implicit class UiCanGetDisabledElementMutableBuilder[Self <: UiCanGetDisabledElement] (val x: Self) extends AnyVal {
+  extension [Self <: UiCanGetDisabledElement](x: Self) {
     
-    @scala.inline
-    def setGetDisabled(value: () => Boolean): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
+    inline def setGetDisabled(value: () => Boolean): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
   }
 }

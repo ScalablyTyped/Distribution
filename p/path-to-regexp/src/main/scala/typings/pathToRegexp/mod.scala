@@ -11,48 +11,30 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compile[P /* <: js.Object */](str: String): PathFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(str.asInstanceOf[js.Any]).asInstanceOf[PathFunction[P]]
-  @scala.inline
-  def compile[P /* <: js.Object */](str: String, options: ParseOptions & TokensToFunctionOptions): PathFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PathFunction[P]]
+  inline def compile[P /* <: js.Object */](str: String): PathFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(str.asInstanceOf[js.Any]).asInstanceOf[PathFunction[P]]
+  inline def compile[P /* <: js.Object */](str: String, options: ParseOptions & TokensToFunctionOptions): PathFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PathFunction[P]]
   
-  @scala.inline
-  def `match`[P /* <: js.Object */](str: Path): MatchFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any]).asInstanceOf[MatchFunction[P]]
-  @scala.inline
-  def `match`[P /* <: js.Object */](str: Path, options: ParseOptions & TokensToRegexpOptions & RegexpToFunctionOptions): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
+  inline def `match`[P /* <: js.Object */](str: Path): MatchFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any]).asInstanceOf[MatchFunction[P]]
+  inline def `match`[P /* <: js.Object */](str: Path, options: ParseOptions & TokensToRegexpOptions & RegexpToFunctionOptions): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
   
-  @scala.inline
-  def parse(str: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
-  @scala.inline
-  def parse(str: String, options: ParseOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
+  inline def parse(str: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  inline def parse(str: String, options: ParseOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
-  @scala.inline
-  def pathToRegexp(path: Path): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  @scala.inline
-  def pathToRegexp(path: Path, keys: js.Array[Key]): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[RegExp]
-  @scala.inline
-  def pathToRegexp(path: Path, keys: js.Array[Key], options: TokensToRegexpOptions & ParseOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
-  @scala.inline
-  def pathToRegexp(path: Path, keys: Unit, options: TokensToRegexpOptions & ParseOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def pathToRegexp(path: Path): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def pathToRegexp(path: Path, keys: js.Array[Key]): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def pathToRegexp(path: Path, keys: js.Array[Key], options: TokensToRegexpOptions & ParseOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def pathToRegexp(path: Path, keys: Unit, options: TokensToRegexpOptions & ParseOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToRegexp")(path.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
   
-  @scala.inline
-  def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key]): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
-  @scala.inline
-  def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key], options: RegexpToFunctionOptions): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
+  inline def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key]): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
+  inline def regexpToFunction[P /* <: js.Object */](re: RegExp, keys: js.Array[Key], options: RegexpToFunctionOptions): MatchFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("regexpToFunction")(re.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MatchFunction[P]]
   
-  @scala.inline
-  def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token]): PathFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokensToFunction")(tokens.asInstanceOf[js.Any]).asInstanceOf[PathFunction[P]]
-  @scala.inline
-  def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token], options: TokensToFunctionOptions): PathFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToFunction")(tokens.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PathFunction[P]]
+  inline def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token]): PathFunction[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokensToFunction")(tokens.asInstanceOf[js.Any]).asInstanceOf[PathFunction[P]]
+  inline def tokensToFunction[P /* <: js.Object */](tokens: js.Array[Token], options: TokensToFunctionOptions): PathFunction[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToFunction")(tokens.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PathFunction[P]]
   
-  @scala.inline
-  def tokensToRegexp(tokens: js.Array[Token]): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any]).asInstanceOf[RegExp]
-  @scala.inline
-  def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key]): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[RegExp]
-  @scala.inline
-  def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key], options: TokensToRegexpOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
-  @scala.inline
-  def tokensToRegexp(tokens: js.Array[Token], keys: Unit, options: TokensToRegexpOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def tokensToRegexp(tokens: js.Array[Token]): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  inline def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key]): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def tokensToRegexp(tokens: js.Array[Token], keys: js.Array[Key], options: TokensToRegexpOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
+  inline def tokensToRegexp(tokens: js.Array[Token], keys: Unit, options: TokensToRegexpOptions): RegExp = (^.asInstanceOf[js.Dynamic].applyDynamic("tokensToRegexp")(tokens.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExp]
   
   trait Key extends StObject {
     
@@ -68,29 +50,22 @@ object mod {
   }
   object Key {
     
-    @scala.inline
-    def apply(modifier: String, name: String | Double, pattern: String, prefix: String, suffix: String): Key = {
+    inline def apply(modifier: String, name: String | Double, pattern: String, prefix: String, suffix: String): Key = {
       val __obj = js.Dynamic.literal(modifier = modifier.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], suffix = suffix.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+      inline def setModifier(value: String): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,23 +83,18 @@ object mod {
   }
   object MatchResult {
     
-    @scala.inline
-    def apply[P /* <: js.Object */](index: Double, params: P, path: String): MatchResult[P] = {
+    inline def apply[P /* <: js.Object */](index: Double, params: P, path: String): MatchResult[P] = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchResult[P]]
     }
     
-    @scala.inline
-    implicit class MatchResultMutableBuilder[Self <: MatchResult[?], P /* <: js.Object */] (val x: Self & MatchResult[P]) extends AnyVal {
+    extension [Self <: MatchResult[?], P /* <: js.Object */](x: Self & MatchResult[P]) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: P): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,26 +118,20 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setPrefixes(value: String): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+      inline def setPrefixes(value: String): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
+      inline def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
     }
   }
   
@@ -184,20 +148,16 @@ object mod {
   }
   object RegexpToFunctionOptions {
     
-    @scala.inline
-    def apply(): RegexpToFunctionOptions = {
+    inline def apply(): RegexpToFunctionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegexpToFunctionOptions]
     }
     
-    @scala.inline
-    implicit class RegexpToFunctionOptionsMutableBuilder[Self <: RegexpToFunctionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RegexpToFunctionOptions](x: Self) {
       
-      @scala.inline
-      def setDecode(value: (/* value */ String, /* token */ Key) => String): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
+      inline def setDecode(value: (/* value */ String, /* token */ Key) => String): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
+      inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
     }
   }
   
@@ -222,32 +182,24 @@ object mod {
   }
   object TokensToFunctionOptions {
     
-    @scala.inline
-    def apply(): TokensToFunctionOptions = {
+    inline def apply(): TokensToFunctionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokensToFunctionOptions]
     }
     
-    @scala.inline
-    implicit class TokensToFunctionOptionsMutableBuilder[Self <: TokensToFunctionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TokensToFunctionOptions](x: Self) {
       
-      @scala.inline
-      def setEncode(value: (/* value */ String, /* token */ Key) => String): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
+      inline def setEncode(value: (/* value */ String, /* token */ Key) => String): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      @scala.inline
-      def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
+      inline def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
+      inline def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
       
-      @scala.inline
-      def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
   
@@ -290,56 +242,40 @@ object mod {
   }
   object TokensToRegexpOptions {
     
-    @scala.inline
-    def apply(): TokensToRegexpOptions = {
+    inline def apply(): TokensToRegexpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokensToRegexpOptions]
     }
     
-    @scala.inline
-    implicit class TokensToRegexpOptionsMutableBuilder[Self <: TokensToRegexpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TokensToRegexpOptions](x: Self) {
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setEncode(value: /* value */ String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: /* value */ String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setEndsWith(value: String): Self = StObject.set(x, "endsWith", value.asInstanceOf[js.Any])
+      inline def setEndsWith(value: String): Self = StObject.set(x, "endsWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndsWithUndefined: Self = StObject.set(x, "endsWith", js.undefined)
+      inline def setEndsWithUndefined: Self = StObject.set(x, "endsWith", js.undefined)
       
-      @scala.inline
-      def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
+      inline def setSensitive(value: Boolean): Self = StObject.set(x, "sensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
+      inline def setSensitiveUndefined: Self = StObject.set(x, "sensitive", js.undefined)
       
-      @scala.inline
-      def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Boolean): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
 }

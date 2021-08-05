@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SearchScope")
 @js.native
-class SearchScope protected ()
+/* private */ class SearchScope ()
   extends StObject
      with typings.activexOffice.Office.SearchScope {
   
@@ -17,7 +17,7 @@ class SearchScope protected ()
   /* CompleteClass */
   override val Creator: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.SearchScope_typekey")
   var OfficeDotSearchScope_typekey: typings.activexOffice.Office.SearchScope = js.native
   

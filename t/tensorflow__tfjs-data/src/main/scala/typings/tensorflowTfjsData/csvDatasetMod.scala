@@ -51,7 +51,7 @@ object csvDatasetMod {
     
     var base: TextLineDataset = js.native
     
-    var columnConfigs: js.Any = js.native
+    /* private */ var columnConfigs: js.Any = js.native
     
     /**
       * Returns column names of the csv dataset. If `configuredColumnsOnly` is
@@ -65,28 +65,28 @@ object csvDatasetMod {
       */
     def columnNames(): js.Promise[js.Array[String]] = js.native
     
-    var columnNamesValidated: js.Any = js.native
+    /* private */ var columnNamesValidated: js.Any = js.native
     
-    var configuredColumnsOnly: js.Any = js.native
+    /* private */ var configuredColumnsOnly: js.Any = js.native
     
-    var delimWhitespace: js.Any = js.native
+    /* private */ var delimWhitespace: js.Any = js.native
     
-    var delimiter: js.Any = js.native
+    /* private */ var delimiter: js.Any = js.native
     
-    var fullColumnNames: js.Any = js.native
+    /* private */ var fullColumnNames: js.Any = js.native
     
-    var getBoolean: js.Any = js.native
+    /* private */ var getBoolean: js.Any = js.native
     
-    var hasHeader: js.Any = js.native
+    /* private */ var hasHeader: js.Any = js.native
     
-    val input: DataSource = js.native
+    /* protected */ val input: DataSource = js.native
     
     def makeDataElement(line: String): TensorContainer = js.native
     
-    var maybeReadHeaderLine: js.Any = js.native
+    /* private */ var maybeReadHeaderLine: js.Any = js.native
     
-    var parseRow: js.Any = js.native
+    /* private */ var parseRow: js.Any = js.native
     
-    var setColumnNames: js.Any = js.native
+    /* private */ var setColumnNames: js.Any = js.native
   }
 }

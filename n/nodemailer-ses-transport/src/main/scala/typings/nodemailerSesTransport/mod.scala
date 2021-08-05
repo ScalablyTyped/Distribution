@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: SesOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  inline def apply(options: SesOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
   
   @JSImport("nodemailer-ses-transport", JSImport.Namespace)
   @js.native
@@ -27,35 +26,26 @@ object mod {
   }
   object SesOptions {
     
-    @scala.inline
-    def apply(SES: SES): SesOptions = {
+    inline def apply(SES: SES): SesOptions = {
       val __obj = js.Dynamic.literal(SES = SES.asInstanceOf[js.Any])
       __obj.asInstanceOf[SesOptions]
     }
     
-    @scala.inline
-    implicit class SesOptionsMutableBuilder[Self <: SesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SesOptions](x: Self) {
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+      inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
+      inline def setMaxConnectionsUndefined: Self = StObject.set(x, "maxConnections", js.undefined)
       
-      @scala.inline
-      def setSES(value: SES): Self = StObject.set(x, "SES", value.asInstanceOf[js.Any])
+      inline def setSES(value: SES): Self = StObject.set(x, "SES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendingRate(value: Double): Self = StObject.set(x, "sendingRate", value.asInstanceOf[js.Any])
+      inline def setSendingRate(value: Double): Self = StObject.set(x, "sendingRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendingRateUndefined: Self = StObject.set(x, "sendingRate", js.undefined)
+      inline def setSendingRateUndefined: Self = StObject.set(x, "sendingRate", js.undefined)
     }
   }
 }

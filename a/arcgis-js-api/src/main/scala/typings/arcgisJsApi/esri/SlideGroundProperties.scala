@@ -19,8 +19,7 @@ trait SlideGroundProperties
 }
 object SlideGroundProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object SlideGroundProperties {
     __obj.asInstanceOf[SlideGroundProperties]
   }
   
-  @scala.inline
-  implicit class SlideGroundPropertiesMutableBuilder[Self <: SlideGroundProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SlideGroundProperties](x: Self) {
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

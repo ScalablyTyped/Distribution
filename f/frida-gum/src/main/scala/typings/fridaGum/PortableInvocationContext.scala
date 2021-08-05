@@ -35,25 +35,19 @@ trait PortableInvocationContext
 }
 object PortableInvocationContext {
   
-  @scala.inline
-  def apply(context: CpuContext, depth: Double, returnAddress: NativePointer, threadId: ThreadId): PortableInvocationContext = {
+  inline def apply(context: CpuContext, depth: Double, returnAddress: NativePointer, threadId: ThreadId): PortableInvocationContext = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], returnAddress = returnAddress.asInstanceOf[js.Any], threadId = threadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortableInvocationContext]
   }
   
-  @scala.inline
-  implicit class PortableInvocationContextMutableBuilder[Self <: PortableInvocationContext] (val x: Self) extends AnyVal {
+  extension [Self <: PortableInvocationContext](x: Self) {
     
-    @scala.inline
-    def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnAddress(value: NativePointer): Self = StObject.set(x, "returnAddress", value.asInstanceOf[js.Any])
+    inline def setReturnAddress(value: NativePointer): Self = StObject.set(x, "returnAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadId(value: ThreadId): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+    inline def setThreadId(value: ThreadId): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
   }
 }

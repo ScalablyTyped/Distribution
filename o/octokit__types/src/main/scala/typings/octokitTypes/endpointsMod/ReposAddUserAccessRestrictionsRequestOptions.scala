@@ -20,26 +20,20 @@ trait ReposAddUserAccessRestrictionsRequestOptions extends StObject {
 }
 object ReposAddUserAccessRestrictionsRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposAddUserAccessRestrictionsRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ReposAddUserAccessRestrictionsRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/branches/:branch/protection/restrictions/users")
     __obj.asInstanceOf[ReposAddUserAccessRestrictionsRequestOptions]
   }
   
-  @scala.inline
-  implicit class ReposAddUserAccessRestrictionsRequestOptionsMutableBuilder[Self <: ReposAddUserAccessRestrictionsRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReposAddUserAccessRestrictionsRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(
+    inline def setUrl(
       value: SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashusers
     ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

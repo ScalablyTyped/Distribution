@@ -23,31 +23,23 @@ trait GetPasswordDataResult extends StObject {
 }
 object GetPasswordDataResult {
   
-  @scala.inline
-  def apply(): GetPasswordDataResult = {
+  inline def apply(): GetPasswordDataResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetPasswordDataResult]
   }
   
-  @scala.inline
-  implicit class GetPasswordDataResultMutableBuilder[Self <: GetPasswordDataResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetPasswordDataResult](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setPasswordData(value: String): Self = StObject.set(x, "PasswordData", value.asInstanceOf[js.Any])
+    inline def setPasswordData(value: String): Self = StObject.set(x, "PasswordData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordDataUndefined: Self = StObject.set(x, "PasswordData", js.undefined)
+    inline def setPasswordDataUndefined: Self = StObject.set(x, "PasswordData", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: DateTime): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

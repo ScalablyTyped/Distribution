@@ -18,25 +18,19 @@ trait AwsIamPermissionsBoundary extends StObject {
 }
 object AwsIamPermissionsBoundary {
   
-  @scala.inline
-  def apply(): AwsIamPermissionsBoundary = {
+  inline def apply(): AwsIamPermissionsBoundary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsIamPermissionsBoundary]
   }
   
-  @scala.inline
-  implicit class AwsIamPermissionsBoundaryMutableBuilder[Self <: AwsIamPermissionsBoundary] (val x: Self) extends AnyVal {
+  extension [Self <: AwsIamPermissionsBoundary](x: Self) {
     
-    @scala.inline
-    def setPermissionsBoundaryArn(value: NonEmptyString): Self = StObject.set(x, "PermissionsBoundaryArn", value.asInstanceOf[js.Any])
+    inline def setPermissionsBoundaryArn(value: NonEmptyString): Self = StObject.set(x, "PermissionsBoundaryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsBoundaryArnUndefined: Self = StObject.set(x, "PermissionsBoundaryArn", js.undefined)
+    inline def setPermissionsBoundaryArnUndefined: Self = StObject.set(x, "PermissionsBoundaryArn", js.undefined)
     
-    @scala.inline
-    def setPermissionsBoundaryType(value: NonEmptyString): Self = StObject.set(x, "PermissionsBoundaryType", value.asInstanceOf[js.Any])
+    inline def setPermissionsBoundaryType(value: NonEmptyString): Self = StObject.set(x, "PermissionsBoundaryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsBoundaryTypeUndefined: Self = StObject.set(x, "PermissionsBoundaryType", js.undefined)
+    inline def setPermissionsBoundaryTypeUndefined: Self = StObject.set(x, "PermissionsBoundaryType", js.undefined)
   }
 }

@@ -109,62 +109,44 @@ object mod {
   }
   object ShellOptions {
     
-    @scala.inline
-    def apply(): ShellOptions = {
+    inline def apply(): ShellOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShellOptions]
     }
     
-    @scala.inline
-    implicit class ShellOptionsMutableBuilder[Self <: ShellOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShellOptions](x: Self) {
       
-      @scala.inline
-      def setDebugMsg(value: Boolean): Self = StObject.set(x, "debugMsg", value.asInstanceOf[js.Any])
+      inline def setDebugMsg(value: Boolean): Self = StObject.set(x, "debugMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugMsgUndefined: Self = StObject.set(x, "debugMsg", js.undefined)
+      inline def setDebugMsgUndefined: Self = StObject.set(x, "debugMsg", js.undefined)
       
-      @scala.inline
-      def setExecutionPolicy(value: String): Self = StObject.set(x, "executionPolicy", value.asInstanceOf[js.Any])
+      inline def setExecutionPolicy(value: String): Self = StObject.set(x, "executionPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionPolicyUndefined: Self = StObject.set(x, "executionPolicy", js.undefined)
+      inline def setExecutionPolicyUndefined: Self = StObject.set(x, "executionPolicy", js.undefined)
       
-      @scala.inline
-      def setInputEncoding(value: String): Self = StObject.set(x, "inputEncoding", value.asInstanceOf[js.Any])
+      inline def setInputEncoding(value: String): Self = StObject.set(x, "inputEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputEncodingUndefined: Self = StObject.set(x, "inputEncoding", js.undefined)
+      inline def setInputEncodingUndefined: Self = StObject.set(x, "inputEncoding", js.undefined)
       
-      @scala.inline
-      def setNoProfile(value: Boolean): Self = StObject.set(x, "noProfile", value.asInstanceOf[js.Any])
+      inline def setNoProfile(value: Boolean): Self = StObject.set(x, "noProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoProfileUndefined: Self = StObject.set(x, "noProfile", js.undefined)
+      inline def setNoProfileUndefined: Self = StObject.set(x, "noProfile", js.undefined)
       
-      @scala.inline
-      def setOutputEncoding(value: String): Self = StObject.set(x, "outputEncoding", value.asInstanceOf[js.Any])
+      inline def setOutputEncoding(value: String): Self = StObject.set(x, "outputEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputEncodingUndefined: Self = StObject.set(x, "outputEncoding", js.undefined)
+      inline def setOutputEncodingUndefined: Self = StObject.set(x, "outputEncoding", js.undefined)
       
-      @scala.inline
-      def setPwsh(value: Boolean): Self = StObject.set(x, "pwsh", value.asInstanceOf[js.Any])
+      inline def setPwsh(value: Boolean): Self = StObject.set(x, "pwsh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPwshPrev(value: Boolean): Self = StObject.set(x, "pwshPrev", value.asInstanceOf[js.Any])
+      inline def setPwshPrev(value: Boolean): Self = StObject.set(x, "pwshPrev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPwshPrevUndefined: Self = StObject.set(x, "pwshPrev", js.undefined)
+      inline def setPwshPrevUndefined: Self = StObject.set(x, "pwshPrev", js.undefined)
       
-      @scala.inline
-      def setPwshUndefined: Self = StObject.set(x, "pwsh", js.undefined)
+      inline def setPwshUndefined: Self = StObject.set(x, "pwsh", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -178,23 +160,18 @@ object mod {
   }
   object ShellStream {
     
-    @scala.inline
-    def apply(err: ReadableStream, stdin: WritableStream, stdout: ReadableStream): ShellStream = {
+    inline def apply(err: ReadableStream, stdin: WritableStream, stdout: ReadableStream): ShellStream = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], stdin = stdin.asInstanceOf[js.Any], stdout = stdout.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShellStream]
     }
     
-    @scala.inline
-    implicit class ShellStreamMutableBuilder[Self <: ShellStream] (val x: Self) extends AnyVal {
+    extension [Self <: ShellStream](x: Self) {
       
-      @scala.inline
-      def setErr(value: ReadableStream): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: ReadableStream): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdin(value: WritableStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: WritableStream): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdout(value: ReadableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: ReadableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
     }
   }
 }

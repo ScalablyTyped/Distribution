@@ -14,25 +14,19 @@ trait TextFormatRun extends StObject {
 }
 object TextFormatRun {
   
-  @scala.inline
-  def apply(): TextFormatRun = {
+  inline def apply(): TextFormatRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextFormatRun]
   }
   
-  @scala.inline
-  implicit class TextFormatRunMutableBuilder[Self <: TextFormatRun] (val x: Self) extends AnyVal {
+  extension [Self <: TextFormatRun](x: Self) {
     
-    @scala.inline
-    def setFormat(value: TextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: TextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

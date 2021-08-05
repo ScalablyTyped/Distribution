@@ -21,19 +21,15 @@ trait IntentDialogCodeHook extends StObject {
 }
 object IntentDialogCodeHook {
   
-  @scala.inline
-  def apply(messageVersion: Input[String], uri: Input[String]): IntentDialogCodeHook = {
+  inline def apply(messageVersion: Input[String], uri: Input[String]): IntentDialogCodeHook = {
     val __obj = js.Dynamic.literal(messageVersion = messageVersion.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentDialogCodeHook]
   }
   
-  @scala.inline
-  implicit class IntentDialogCodeHookMutableBuilder[Self <: IntentDialogCodeHook] (val x: Self) extends AnyVal {
+  extension [Self <: IntentDialogCodeHook](x: Self) {
     
-    @scala.inline
-    def setMessageVersion(value: Input[String]): Self = StObject.set(x, "messageVersion", value.asInstanceOf[js.Any])
+    inline def setMessageVersion(value: Input[String]): Self = StObject.set(x, "messageVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait RegisterEcsClusterResult extends StObject {
 }
 object RegisterEcsClusterResult {
   
-  @scala.inline
-  def apply(): RegisterEcsClusterResult = {
+  inline def apply(): RegisterEcsClusterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterEcsClusterResult]
   }
   
-  @scala.inline
-  implicit class RegisterEcsClusterResultMutableBuilder[Self <: RegisterEcsClusterResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterEcsClusterResult](x: Self) {
     
-    @scala.inline
-    def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
+    inline def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEcsClusterArnUndefined: Self = StObject.set(x, "EcsClusterArn", js.undefined)
+    inline def setEcsClusterArnUndefined: Self = StObject.set(x, "EcsClusterArn", js.undefined)
   }
 }

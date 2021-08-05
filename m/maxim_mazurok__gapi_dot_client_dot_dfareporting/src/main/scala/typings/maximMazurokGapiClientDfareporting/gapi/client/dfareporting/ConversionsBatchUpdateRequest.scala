@@ -17,34 +17,25 @@ trait ConversionsBatchUpdateRequest extends StObject {
 }
 object ConversionsBatchUpdateRequest {
   
-  @scala.inline
-  def apply(): ConversionsBatchUpdateRequest = {
+  inline def apply(): ConversionsBatchUpdateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConversionsBatchUpdateRequest]
   }
   
-  @scala.inline
-  implicit class ConversionsBatchUpdateRequestMutableBuilder[Self <: ConversionsBatchUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConversionsBatchUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setConversions(value: js.Array[Conversion]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
+    inline def setConversions(value: js.Array[Conversion]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
+    inline def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
     
-    @scala.inline
-    def setConversionsVarargs(value: Conversion*): Self = StObject.set(x, "conversions", js.Array(value :_*))
+    inline def setConversionsVarargs(value: Conversion*): Self = StObject.set(x, "conversions", js.Array(value :_*))
     
-    @scala.inline
-    def setEncryptionInfo(value: EncryptionInfo): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
+    inline def setEncryptionInfo(value: EncryptionInfo): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionInfoUndefined: Self = StObject.set(x, "encryptionInfo", js.undefined)
+    inline def setEncryptionInfoUndefined: Self = StObject.set(x, "encryptionInfo", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

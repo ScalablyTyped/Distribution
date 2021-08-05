@@ -15,25 +15,19 @@ trait WaypointOptionsJQuery
 }
 object WaypointOptionsJQuery {
   
-  @scala.inline
-  def apply(): WaypointOptionsJQuery = {
+  inline def apply(): WaypointOptionsJQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WaypointOptionsJQuery]
   }
   
-  @scala.inline
-  implicit class WaypointOptionsJQueryMutableBuilder[Self <: WaypointOptionsJQuery] (val x: Self) extends AnyVal {
+  extension [Self <: WaypointOptionsJQuery](x: Self) {
     
-    @scala.inline
-    def setContext(value: HTMLElement | String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: HTMLElement | String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setHandler(value: js.ThisFunction1[/* this */ Waypoint, /* direction */ js.UndefOr[String], Unit]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: js.ThisFunction1[/* this */ Waypoint, /* direction */ js.UndefOr[String], Unit]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
   }
 }

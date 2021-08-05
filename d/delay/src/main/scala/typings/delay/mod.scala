@@ -17,12 +17,9 @@ object mod {
   	@param milliseconds - Milliseconds to delay the promise.
   	@returns A promise which resolves after the specified `milliseconds`.
   	*/
-  @scala.inline
-  def apply(milliseconds: Double): ClearablePromise[Unit] = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[ClearablePromise[Unit]]
-  @scala.inline
-  def apply(milliseconds: Double, options: Options): ClearablePromise[Unit] = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[Unit]]
-  @scala.inline
-  def apply[T](milliseconds: Double, options: Options & Value[T]): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
+  inline def apply(milliseconds: Double): ClearablePromise[Unit] = ^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any]).asInstanceOf[ClearablePromise[Unit]]
+  inline def apply(milliseconds: Double, options: Options): ClearablePromise[Unit] = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[Unit]]
+  inline def apply[T](milliseconds: Double, options: Options & Value[T]): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].apply(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
   
   @JSImport("delay", JSImport.Namespace)
   @js.native
@@ -33,11 +30,9 @@ object mod {
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ js.Any = js.native
   
-  @scala.inline
-  def createWithTimers(timers: ClearTimeout): Delay = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithTimers")(timers.asInstanceOf[js.Any]).asInstanceOf[Delay]
+  inline def createWithTimers(timers: ClearTimeout): Delay = ^.asInstanceOf[js.Dynamic].applyDynamic("createWithTimers")(timers.asInstanceOf[js.Any]).asInstanceOf[Delay]
   
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof delay */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Create a promise which resolves after a random amount of milliseconds between `minimum` and `maximum` has passed.
@@ -46,10 +41,8 @@ object mod {
   	@param maximum - Maximum amount of milliseconds to delay the promise.
   	@returns A promise which resolves after a random amount of milliseconds between `maximum` and `maximum` has passed.
   	*/
-  @scala.inline
-  def range[T](minimum: Double, maximum: Double): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
-  @scala.inline
-  def range[T](minimum: Double, maximum: Double, options: Options & Value[T]): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
+  inline def range[T](minimum: Double, maximum: Double): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
+  inline def range[T](minimum: Double, maximum: Double, options: Options & Value[T]): ClearablePromise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(minimum.asInstanceOf[js.Any], maximum.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[T]]
   
   // TODO: Allow providing value type after https://github.com/Microsoft/TypeScript/issues/5413 is resolved.
   /**
@@ -57,10 +50,8 @@ object mod {
   	@param milliseconds - Milliseconds to delay the promise.
   	@returns A promise which rejects after the specified `milliseconds`.
   	*/
-  @scala.inline
-  def reject(milliseconds: Double): ClearablePromise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[ClearablePromise[scala.Nothing]]
-  @scala.inline
-  def reject(milliseconds: Double, options: Optionsvalueunknownundefi): ClearablePromise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[scala.Nothing]]
+  inline def reject(milliseconds: Double): ClearablePromise[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[ClearablePromise[scala.Nothing]]
+  inline def reject(milliseconds: Double, options: Optionsvalueunknownundefi): ClearablePromise[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("reject")(milliseconds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClearablePromise[scala.Nothing]]
   
   /**
   	Minimal subset of `AbortSignal` that delay will use if passed.
@@ -133,20 +124,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     }
   }
 }

@@ -18,19 +18,15 @@ trait CancelQuantumTaskRequest extends StObject {
 }
 object CancelQuantumTaskRequest {
   
-  @scala.inline
-  def apply(clientToken: String64, quantumTaskArn: QuantumTaskArn): CancelQuantumTaskRequest = {
+  inline def apply(clientToken: String64, quantumTaskArn: QuantumTaskArn): CancelQuantumTaskRequest = {
     val __obj = js.Dynamic.literal(clientToken = clientToken.asInstanceOf[js.Any], quantumTaskArn = quantumTaskArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelQuantumTaskRequest]
   }
   
-  @scala.inline
-  implicit class CancelQuantumTaskRequestMutableBuilder[Self <: CancelQuantumTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelQuantumTaskRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String64): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String64): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantumTaskArn(value: QuantumTaskArn): Self = StObject.set(x, "quantumTaskArn", value.asInstanceOf[js.Any])
+    inline def setQuantumTaskArn(value: QuantumTaskArn): Self = StObject.set(x, "quantumTaskArn", value.asInstanceOf[js.Any])
   }
 }

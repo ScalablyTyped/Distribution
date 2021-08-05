@@ -20,8 +20,7 @@ trait MinigameObject[T /* <: Minigame */]
 }
 object MinigameObject {
   
-  @scala.inline
-  def apply[T /* <: Minigame */](
+  inline def apply[T /* <: Minigame */](
     actionName: String,
     amount: Double,
     art: Art,
@@ -95,10 +94,8 @@ object MinigameObject {
     __obj.asInstanceOf[MinigameObject[T]]
   }
   
-  @scala.inline
-  implicit class MinigameObjectMutableBuilder[Self <: MinigameObject[?], T /* <: Minigame */] (val x: Self & MinigameObject[T]) extends AnyVal {
+  extension [Self <: MinigameObject[?], T /* <: Minigame */](x: Self & MinigameObject[T]) {
     
-    @scala.inline
-    def setMinigame(value: T): Self = StObject.set(x, "minigame", value.asInstanceOf[js.Any])
+    inline def setMinigame(value: T): Self = StObject.set(x, "minigame", value.asInstanceOf[js.Any])
   }
 }

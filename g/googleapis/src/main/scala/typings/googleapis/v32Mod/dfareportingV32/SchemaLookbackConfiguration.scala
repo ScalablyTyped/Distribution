@@ -29,25 +29,19 @@ trait SchemaLookbackConfiguration extends StObject {
 }
 object SchemaLookbackConfiguration {
   
-  @scala.inline
-  def apply(): SchemaLookbackConfiguration = {
+  inline def apply(): SchemaLookbackConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLookbackConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaLookbackConfigurationMutableBuilder[Self <: SchemaLookbackConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLookbackConfiguration](x: Self) {
     
-    @scala.inline
-    def setClickDuration(value: Double): Self = StObject.set(x, "clickDuration", value.asInstanceOf[js.Any])
+    inline def setClickDuration(value: Double): Self = StObject.set(x, "clickDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickDurationUndefined: Self = StObject.set(x, "clickDuration", js.undefined)
+    inline def setClickDurationUndefined: Self = StObject.set(x, "clickDuration", js.undefined)
     
-    @scala.inline
-    def setPostImpressionActivitiesDuration(value: Double): Self = StObject.set(x, "postImpressionActivitiesDuration", value.asInstanceOf[js.Any])
+    inline def setPostImpressionActivitiesDuration(value: Double): Self = StObject.set(x, "postImpressionActivitiesDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostImpressionActivitiesDurationUndefined: Self = StObject.set(x, "postImpressionActivitiesDuration", js.undefined)
+    inline def setPostImpressionActivitiesDurationUndefined: Self = StObject.set(x, "postImpressionActivitiesDuration", js.undefined)
   }
 }

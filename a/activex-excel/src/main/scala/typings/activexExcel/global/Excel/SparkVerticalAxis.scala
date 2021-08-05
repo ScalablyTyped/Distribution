@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SparkVerticalAxis")
 @js.native
-class SparkVerticalAxis protected ()
+/* private */ class SparkVerticalAxis ()
   extends StObject
      with typings.activexExcel.Excel.SparkVerticalAxis {
   
@@ -24,7 +24,7 @@ class SparkVerticalAxis protected ()
   /* CompleteClass */
   var CustomMinScaleValue: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SparkVerticalAxis_typekey")
   var ExcelDotSparkVerticalAxis_typekey: typings.activexExcel.Excel.SparkVerticalAxis = js.native
   

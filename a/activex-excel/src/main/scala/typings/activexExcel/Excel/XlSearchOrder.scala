@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSearchOrder extends StObject
 object XlSearchOrder {
   
-  @scala.inline
-  def xlByColumns: `2` = 2.asInstanceOf[`2`]
+  inline def xlByColumns: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlByRows: `1` = 1.asInstanceOf[`1`]
+  inline def xlByRows: `1` = 1.asInstanceOf[`1`]
 }

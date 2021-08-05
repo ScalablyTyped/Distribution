@@ -19,22 +19,17 @@ trait Ratio extends StObject {
 }
 object Ratio {
   
-  @scala.inline
-  def apply(ratio: Double): Ratio = {
+  inline def apply(ratio: Double): Ratio = {
     val __obj = js.Dynamic.literal(ratio = ratio.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ratio]
   }
   
-  @scala.inline
-  implicit class RatioMutableBuilder[Self <: Ratio] (val x: Self) extends AnyVal {
+  extension [Self <: Ratio](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
   }
 }

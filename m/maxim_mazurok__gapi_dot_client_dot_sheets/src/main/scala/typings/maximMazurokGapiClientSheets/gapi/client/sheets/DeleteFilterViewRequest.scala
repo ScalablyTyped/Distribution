@@ -11,19 +11,15 @@ trait DeleteFilterViewRequest extends StObject {
 }
 object DeleteFilterViewRequest {
   
-  @scala.inline
-  def apply(): DeleteFilterViewRequest = {
+  inline def apply(): DeleteFilterViewRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFilterViewRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFilterViewRequestMutableBuilder[Self <: DeleteFilterViewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFilterViewRequest](x: Self) {
     
-    @scala.inline
-    def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
+    inline def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
+    inline def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
   }
 }

@@ -16,18 +16,13 @@ object viewsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def alterView(mOptions: MigrationOptions): AlterView = ^.asInstanceOf[js.Dynamic].applyDynamic("alterView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterView]
+  inline def alterView(mOptions: MigrationOptions): AlterView = ^.asInstanceOf[js.Dynamic].applyDynamic("alterView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterView]
   
-  @scala.inline
-  def alterViewColumn(mOptions: MigrationOptions): AlterViewColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("alterViewColumn")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterViewColumn]
+  inline def alterViewColumn(mOptions: MigrationOptions): AlterViewColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("alterViewColumn")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterViewColumn]
   
-  @scala.inline
-  def createView(mOptions: MigrationOptions): CreateView = ^.asInstanceOf[js.Dynamic].applyDynamic("createView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateView]
+  inline def createView(mOptions: MigrationOptions): CreateView = ^.asInstanceOf[js.Dynamic].applyDynamic("createView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateView]
   
-  @scala.inline
-  def dropView(mOptions: MigrationOptions): DropView = ^.asInstanceOf[js.Dynamic].applyDynamic("dropView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropView]
+  inline def dropView(mOptions: MigrationOptions): DropView = ^.asInstanceOf[js.Dynamic].applyDynamic("dropView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropView]
   
-  @scala.inline
-  def renameView(mOptions: MigrationOptions): RenameView = ^.asInstanceOf[js.Dynamic].applyDynamic("renameView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameView]
+  inline def renameView(mOptions: MigrationOptions): RenameView = ^.asInstanceOf[js.Dynamic].applyDynamic("renameView")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameView]
 }

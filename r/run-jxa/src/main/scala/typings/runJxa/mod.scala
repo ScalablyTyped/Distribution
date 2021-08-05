@@ -34,14 +34,10 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ReturnType /* <: JsonValue */](input: String): js.Promise[ReturnType] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType]]
-  @scala.inline
-  def apply[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): js.Promise[ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType]]
-  @scala.inline
-  def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): js.Promise[ReturnType] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType]]
-  @scala.inline
-  def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): js.Promise[ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType]]
+  inline def apply[ReturnType /* <: JsonValue */](input: String): js.Promise[ReturnType] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType]]
+  inline def apply[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): js.Promise[ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType]]
+  inline def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): js.Promise[ReturnType] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType]]
+  inline def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): js.Promise[ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType]]
   
   @JSImport("run-jxa", JSImport.Namespace)
   @js.native
@@ -56,12 +52,8 @@ object mod {
   	@param arguments - Arguments to pass to the JXA context. Items should be serializable (`JSON.stringify`'able).
   	@returns The value returned from `input`.
   	*/
-  @scala.inline
-  def sync[ReturnType /* <: JsonValue */](input: String): ReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any]).asInstanceOf[ReturnType]
-  @scala.inline
-  def sync[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): ReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ReturnType]
-  @scala.inline
-  def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): ReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any]).asInstanceOf[ReturnType]
-  @scala.inline
-  def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): ReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ReturnType]
+  inline def sync[ReturnType /* <: JsonValue */](input: String): ReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any]).asInstanceOf[ReturnType]
+  inline def sync[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): ReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ReturnType]
+  inline def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): ReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any]).asInstanceOf[ReturnType]
+  inline def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): ReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ReturnType]
 }

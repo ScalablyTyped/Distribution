@@ -12,17 +12,14 @@ object Express {
   }
   object Request {
     
-    @scala.inline
-    def apply(log: js.Any): Request = {
+    inline def apply(log: js.Any): Request = {
       val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }
   }
 }

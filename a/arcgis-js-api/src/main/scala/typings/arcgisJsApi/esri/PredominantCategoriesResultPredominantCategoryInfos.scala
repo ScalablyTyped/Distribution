@@ -33,8 +33,7 @@ trait PredominantCategoriesResultPredominantCategoryInfos
 }
 object PredominantCategoriesResultPredominantCategoryInfos {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     count: Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -45,19 +44,14 @@ object PredominantCategoriesResultPredominantCategoryInfos {
     __obj.asInstanceOf[PredominantCategoriesResultPredominantCategoryInfos]
   }
   
-  @scala.inline
-  implicit class PredominantCategoriesResultPredominantCategoryInfosMutableBuilder[Self <: PredominantCategoriesResultPredominantCategoryInfos] (val x: Self) extends AnyVal {
+  extension [Self <: PredominantCategoriesResultPredominantCategoryInfos](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -288,258 +288,175 @@ trait QueryProperties extends StObject {
 }
 object QueryProperties {
   
-  @scala.inline
-  def apply(): QueryProperties = {
+  inline def apply(): QueryProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryProperties]
   }
   
-  @scala.inline
-  implicit class QueryPropertiesMutableBuilder[Self <: QueryProperties] (val x: Self) extends AnyVal {
+  extension [Self <: QueryProperties](x: Self) {
     
-    @scala.inline
-    def setCacheHint(value: Boolean): Self = StObject.set(x, "cacheHint", value.asInstanceOf[js.Any])
+    inline def setCacheHint(value: Boolean): Self = StObject.set(x, "cacheHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheHintUndefined: Self = StObject.set(x, "cacheHint", js.undefined)
+    inline def setCacheHintUndefined: Self = StObject.set(x, "cacheHint", js.undefined)
     
-    @scala.inline
-    def setDatumTransformation(value: Double): Self = StObject.set(x, "datumTransformation", value.asInstanceOf[js.Any])
+    inline def setDatumTransformation(value: Double): Self = StObject.set(x, "datumTransformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumTransformationUndefined: Self = StObject.set(x, "datumTransformation", js.undefined)
+    inline def setDatumTransformationUndefined: Self = StObject.set(x, "datumTransformation", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
+    inline def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
     
-    @scala.inline
-    def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryPrecision(value: Double): Self = StObject.set(x, "geometryPrecision", value.asInstanceOf[js.Any])
+    inline def setGeometryPrecision(value: Double): Self = StObject.set(x, "geometryPrecision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryPrecisionUndefined: Self = StObject.set(x, "geometryPrecision", js.undefined)
+    inline def setGeometryPrecisionUndefined: Self = StObject.set(x, "geometryPrecision", js.undefined)
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
-    @scala.inline
-    def setGroupByFieldsForStatistics(value: js.Array[String]): Self = StObject.set(x, "groupByFieldsForStatistics", value.asInstanceOf[js.Any])
+    inline def setGroupByFieldsForStatistics(value: js.Array[String]): Self = StObject.set(x, "groupByFieldsForStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByFieldsForStatisticsUndefined: Self = StObject.set(x, "groupByFieldsForStatistics", js.undefined)
+    inline def setGroupByFieldsForStatisticsUndefined: Self = StObject.set(x, "groupByFieldsForStatistics", js.undefined)
     
-    @scala.inline
-    def setGroupByFieldsForStatisticsVarargs(value: String*): Self = StObject.set(x, "groupByFieldsForStatistics", js.Array(value :_*))
+    inline def setGroupByFieldsForStatisticsVarargs(value: String*): Self = StObject.set(x, "groupByFieldsForStatistics", js.Array(value :_*))
     
-    @scala.inline
-    def setHaving(value: String): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
+    inline def setHaving(value: String): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHavingUndefined: Self = StObject.set(x, "having", js.undefined)
+    inline def setHavingUndefined: Self = StObject.set(x, "having", js.undefined)
     
-    @scala.inline
-    def setHistoricMoment(value: DateProperties): Self = StObject.set(x, "historicMoment", value.asInstanceOf[js.Any])
+    inline def setHistoricMoment(value: DateProperties): Self = StObject.set(x, "historicMoment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoricMomentUndefined: Self = StObject.set(x, "historicMoment", js.undefined)
+    inline def setHistoricMomentUndefined: Self = StObject.set(x, "historicMoment", js.undefined)
     
-    @scala.inline
-    def setMaxAllowableOffset(value: Double): Self = StObject.set(x, "maxAllowableOffset", value.asInstanceOf[js.Any])
+    inline def setMaxAllowableOffset(value: Double): Self = StObject.set(x, "maxAllowableOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAllowableOffsetUndefined: Self = StObject.set(x, "maxAllowableOffset", js.undefined)
+    inline def setMaxAllowableOffsetUndefined: Self = StObject.set(x, "maxAllowableOffset", js.undefined)
     
-    @scala.inline
-    def setMaxRecordCountFactor(value: Double): Self = StObject.set(x, "maxRecordCountFactor", value.asInstanceOf[js.Any])
+    inline def setMaxRecordCountFactor(value: Double): Self = StObject.set(x, "maxRecordCountFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordCountFactorUndefined: Self = StObject.set(x, "maxRecordCountFactor", js.undefined)
+    inline def setMaxRecordCountFactorUndefined: Self = StObject.set(x, "maxRecordCountFactor", js.undefined)
     
-    @scala.inline
-    def setMultipatchOption(value: String): Self = StObject.set(x, "multipatchOption", value.asInstanceOf[js.Any])
+    inline def setMultipatchOption(value: String): Self = StObject.set(x, "multipatchOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipatchOptionUndefined: Self = StObject.set(x, "multipatchOption", js.undefined)
+    inline def setMultipatchOptionUndefined: Self = StObject.set(x, "multipatchOption", js.undefined)
     
-    @scala.inline
-    def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
+    inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
+    inline def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
     
-    @scala.inline
-    def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+    inline def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+    inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    @scala.inline
-    def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderByFields(value: js.Array[String]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
+    inline def setOrderByFields(value: js.Array[String]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
+    inline def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
     
-    @scala.inline
-    def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
+    inline def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value :_*))
     
-    @scala.inline
-    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
+    inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
+    inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
     
-    @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
     
-    @scala.inline
-    def setOutStatistics(value: js.Array[StatisticDefinitionProperties]): Self = StObject.set(x, "outStatistics", value.asInstanceOf[js.Any])
+    inline def setOutStatistics(value: js.Array[StatisticDefinitionProperties]): Self = StObject.set(x, "outStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutStatisticsUndefined: Self = StObject.set(x, "outStatistics", js.undefined)
+    inline def setOutStatisticsUndefined: Self = StObject.set(x, "outStatistics", js.undefined)
     
-    @scala.inline
-    def setOutStatisticsVarargs(value: StatisticDefinitionProperties*): Self = StObject.set(x, "outStatistics", js.Array(value :_*))
+    inline def setOutStatisticsVarargs(value: StatisticDefinitionProperties*): Self = StObject.set(x, "outStatistics", js.Array(value :_*))
     
-    @scala.inline
-    def setParameterValues(value: js.Array[QueryParameterValues]): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
+    inline def setParameterValues(value: js.Array[QueryParameterValues]): Self = StObject.set(x, "parameterValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
+    inline def setParameterValuesUndefined: Self = StObject.set(x, "parameterValues", js.undefined)
     
-    @scala.inline
-    def setParameterValuesVarargs(value: QueryParameterValues*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
+    inline def setParameterValuesVarargs(value: QueryParameterValues*): Self = StObject.set(x, "parameterValues", js.Array(value :_*))
     
-    @scala.inline
-    def setPixelSize(value: SymbolProperties): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
+    inline def setPixelSize(value: SymbolProperties): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
+    inline def setPixelSizeUndefined: Self = StObject.set(x, "pixelSize", js.undefined)
     
-    @scala.inline
-    def setQuantizationParameters(value: QueryQuantizationParameters): Self = StObject.set(x, "quantizationParameters", value.asInstanceOf[js.Any])
+    inline def setQuantizationParameters(value: QueryQuantizationParameters): Self = StObject.set(x, "quantizationParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantizationParametersUndefined: Self = StObject.set(x, "quantizationParameters", js.undefined)
+    inline def setQuantizationParametersUndefined: Self = StObject.set(x, "quantizationParameters", js.undefined)
     
-    @scala.inline
-    def setRangeValues(value: js.Array[QueryRangeValues]): Self = StObject.set(x, "rangeValues", value.asInstanceOf[js.Any])
+    inline def setRangeValues(value: js.Array[QueryRangeValues]): Self = StObject.set(x, "rangeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeValuesUndefined: Self = StObject.set(x, "rangeValues", js.undefined)
+    inline def setRangeValuesUndefined: Self = StObject.set(x, "rangeValues", js.undefined)
     
-    @scala.inline
-    def setRangeValuesVarargs(value: QueryRangeValues*): Self = StObject.set(x, "rangeValues", js.Array(value :_*))
+    inline def setRangeValuesVarargs(value: QueryRangeValues*): Self = StObject.set(x, "rangeValues", js.Array(value :_*))
     
-    @scala.inline
-    def setRelationParameter(value: String): Self = StObject.set(x, "relationParameter", value.asInstanceOf[js.Any])
+    inline def setRelationParameter(value: String): Self = StObject.set(x, "relationParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationParameterUndefined: Self = StObject.set(x, "relationParameter", js.undefined)
+    inline def setRelationParameterUndefined: Self = StObject.set(x, "relationParameter", js.undefined)
     
-    @scala.inline
-    def setReturnCentroid(value: Boolean): Self = StObject.set(x, "returnCentroid", value.asInstanceOf[js.Any])
+    inline def setReturnCentroid(value: Boolean): Self = StObject.set(x, "returnCentroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnCentroidUndefined: Self = StObject.set(x, "returnCentroid", js.undefined)
+    inline def setReturnCentroidUndefined: Self = StObject.set(x, "returnCentroid", js.undefined)
     
-    @scala.inline
-    def setReturnDistinctValues(value: Boolean): Self = StObject.set(x, "returnDistinctValues", value.asInstanceOf[js.Any])
+    inline def setReturnDistinctValues(value: Boolean): Self = StObject.set(x, "returnDistinctValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnDistinctValuesUndefined: Self = StObject.set(x, "returnDistinctValues", js.undefined)
+    inline def setReturnDistinctValuesUndefined: Self = StObject.set(x, "returnDistinctValues", js.undefined)
     
-    @scala.inline
-    def setReturnExceededLimitFeatures(value: Boolean): Self = StObject.set(x, "returnExceededLimitFeatures", value.asInstanceOf[js.Any])
+    inline def setReturnExceededLimitFeatures(value: Boolean): Self = StObject.set(x, "returnExceededLimitFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnExceededLimitFeaturesUndefined: Self = StObject.set(x, "returnExceededLimitFeatures", js.undefined)
+    inline def setReturnExceededLimitFeaturesUndefined: Self = StObject.set(x, "returnExceededLimitFeatures", js.undefined)
     
-    @scala.inline
-    def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
+    inline def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnGeometryUndefined: Self = StObject.set(x, "returnGeometry", js.undefined)
+    inline def setReturnGeometryUndefined: Self = StObject.set(x, "returnGeometry", js.undefined)
     
-    @scala.inline
-    def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
+    inline def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
+    inline def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
     
-    @scala.inline
-    def setReturnQueryGeometry(value: Boolean): Self = StObject.set(x, "returnQueryGeometry", value.asInstanceOf[js.Any])
+    inline def setReturnQueryGeometry(value: Boolean): Self = StObject.set(x, "returnQueryGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnQueryGeometryUndefined: Self = StObject.set(x, "returnQueryGeometry", js.undefined)
+    inline def setReturnQueryGeometryUndefined: Self = StObject.set(x, "returnQueryGeometry", js.undefined)
     
-    @scala.inline
-    def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
+    inline def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
+    inline def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
     
-    @scala.inline
-    def setSpatialRelationship(
+    inline def setSpatialRelationship(
       value: intersects | contains | crosses | disjoint | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation
     ): Self = StObject.set(x, "spatialRelationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialRelationshipUndefined: Self = StObject.set(x, "spatialRelationship", js.undefined)
+    inline def setSpatialRelationshipUndefined: Self = StObject.set(x, "spatialRelationship", js.undefined)
     
-    @scala.inline
-    def setSqlFormat(value: none | standard | native): Self = StObject.set(x, "sqlFormat", value.asInstanceOf[js.Any])
+    inline def setSqlFormat(value: none | standard | native): Self = StObject.set(x, "sqlFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlFormatUndefined: Self = StObject.set(x, "sqlFormat", js.undefined)
+    inline def setSqlFormatUndefined: Self = StObject.set(x, "sqlFormat", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
     
-    @scala.inline
-    def setUnits(value: feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: feet_ | miles_ | `nautical-miles` | `us-nautical-miles` | meters_ | kilometers_): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     
-    @scala.inline
-    def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

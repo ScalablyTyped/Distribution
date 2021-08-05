@@ -23,31 +23,23 @@ trait CreateSnapshotFromVolumeRecoveryPointOutput extends StObject {
 }
 object CreateSnapshotFromVolumeRecoveryPointOutput {
   
-  @scala.inline
-  def apply(): CreateSnapshotFromVolumeRecoveryPointOutput = {
+  inline def apply(): CreateSnapshotFromVolumeRecoveryPointOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSnapshotFromVolumeRecoveryPointOutput]
   }
   
-  @scala.inline
-  implicit class CreateSnapshotFromVolumeRecoveryPointOutputMutableBuilder[Self <: CreateSnapshotFromVolumeRecoveryPointOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSnapshotFromVolumeRecoveryPointOutput](x: Self) {
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
+    inline def setVolumeARNUndefined: Self = StObject.set(x, "VolumeARN", js.undefined)
     
-    @scala.inline
-    def setVolumeRecoveryPointTime(value: String): Self = StObject.set(x, "VolumeRecoveryPointTime", value.asInstanceOf[js.Any])
+    inline def setVolumeRecoveryPointTime(value: String): Self = StObject.set(x, "VolumeRecoveryPointTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeRecoveryPointTimeUndefined: Self = StObject.set(x, "VolumeRecoveryPointTime", js.undefined)
+    inline def setVolumeRecoveryPointTimeUndefined: Self = StObject.set(x, "VolumeRecoveryPointTime", js.undefined)
   }
 }

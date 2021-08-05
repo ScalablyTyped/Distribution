@@ -23,31 +23,23 @@ trait ITitle
 }
 object ITitle {
   
-  @scala.inline
-  def apply(): ITitle = {
+  inline def apply(): ITitle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITitle]
   }
   
-  @scala.inline
-  implicit class ITitleMutableBuilder[Self <: ITitle] (val x: Self) extends AnyVal {
+  extension [Self <: ITitle](x: Self) {
     
-    @scala.inline
-    def setGetTitle(value: () => java.lang.String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+    inline def setGetTitle(value: () => java.lang.String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
+    inline def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
     
-    @scala.inline
-    def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: /* title */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
+    inline def setSetTitleUndefined: Self = StObject.set(x, "setTitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

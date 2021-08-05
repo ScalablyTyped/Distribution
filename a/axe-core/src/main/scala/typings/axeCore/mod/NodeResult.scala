@@ -29,8 +29,7 @@ trait NodeResult extends StObject {
 }
 object NodeResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: js.Array[CheckResult],
     any: js.Array[CheckResult],
     html: String,
@@ -41,73 +40,50 @@ object NodeResult {
     __obj.asInstanceOf[NodeResult]
   }
   
-  @scala.inline
-  implicit class NodeResultMutableBuilder[Self <: NodeResult] (val x: Self) extends AnyVal {
+  extension [Self <: NodeResult](x: Self) {
     
-    @scala.inline
-    def setAll(value: js.Array[CheckResult]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: js.Array[CheckResult]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllVarargs(value: CheckResult*): Self = StObject.set(x, "all", js.Array(value :_*))
+    inline def setAllVarargs(value: CheckResult*): Self = StObject.set(x, "all", js.Array(value :_*))
     
-    @scala.inline
-    def setAncestry(value: js.Array[String]): Self = StObject.set(x, "ancestry", value.asInstanceOf[js.Any])
+    inline def setAncestry(value: js.Array[String]): Self = StObject.set(x, "ancestry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncestryUndefined: Self = StObject.set(x, "ancestry", js.undefined)
+    inline def setAncestryUndefined: Self = StObject.set(x, "ancestry", js.undefined)
     
-    @scala.inline
-    def setAncestryVarargs(value: String*): Self = StObject.set(x, "ancestry", js.Array(value :_*))
+    inline def setAncestryVarargs(value: String*): Self = StObject.set(x, "ancestry", js.Array(value :_*))
     
-    @scala.inline
-    def setAny(value: js.Array[CheckResult]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+    inline def setAny(value: js.Array[CheckResult]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyVarargs(value: CheckResult*): Self = StObject.set(x, "any", js.Array(value :_*))
+    inline def setAnyVarargs(value: CheckResult*): Self = StObject.set(x, "any", js.Array(value :_*))
     
-    @scala.inline
-    def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setFailureSummary(value: String): Self = StObject.set(x, "failureSummary", value.asInstanceOf[js.Any])
+    inline def setFailureSummary(value: String): Self = StObject.set(x, "failureSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureSummaryUndefined: Self = StObject.set(x, "failureSummary", js.undefined)
+    inline def setFailureSummaryUndefined: Self = StObject.set(x, "failureSummary", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpact(value: ImpactValue): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
+    inline def setImpact(value: ImpactValue): Self = StObject.set(x, "impact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpactNull: Self = StObject.set(x, "impact", null)
+    inline def setImpactNull: Self = StObject.set(x, "impact", null)
     
-    @scala.inline
-    def setImpactUndefined: Self = StObject.set(x, "impact", js.undefined)
+    inline def setImpactUndefined: Self = StObject.set(x, "impact", js.undefined)
     
-    @scala.inline
-    def setNone(value: js.Array[CheckResult]): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: js.Array[CheckResult]): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoneVarargs(value: CheckResult*): Self = StObject.set(x, "none", js.Array(value :_*))
+    inline def setNoneVarargs(value: CheckResult*): Self = StObject.set(x, "none", js.Array(value :_*))
     
-    @scala.inline
-    def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
     
-    @scala.inline
-    def setXpath(value: js.Array[String]): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
+    inline def setXpath(value: js.Array[String]): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
+    inline def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
     
-    @scala.inline
-    def setXpathVarargs(value: String*): Self = StObject.set(x, "xpath", js.Array(value :_*))
+    inline def setXpathVarargs(value: String*): Self = StObject.set(x, "xpath", js.Array(value :_*))
   }
 }

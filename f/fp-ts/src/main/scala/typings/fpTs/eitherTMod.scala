@@ -18,12 +18,9 @@ object eitherTMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEitherM[M](M: Monad[M]): EitherM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM[M]]
-  @scala.inline
-  def getEitherM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): EitherM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM1[M]]
-  @scala.inline
-  def getEitherM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): EitherM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM2[M]]
+  inline def getEitherM[M](M: Monad[M]): EitherM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM[M]]
+  inline def getEitherM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): EitherM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM1[M]]
+  inline def getEitherM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): EitherM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM2[M]]
   
   trait EitherM[M]
     extends StObject
@@ -73,8 +70,7 @@ object eitherTMod {
   }
   object EitherM {
     
-    @scala.inline
-    def apply[M](
+    inline def apply[M](
       alt: (EitherT[M, js.Any, js.Any], Lazy[EitherT[M, js.Any, js.Any]]) => EitherT[M, js.Any, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ js.Any) => js.Any,
       bimap: (EitherT[M, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT[M, js.Any, js.Any],
@@ -103,26 +99,21 @@ object eitherTMod {
       __obj.asInstanceOf[EitherM[M]]
     }
     
-    @scala.inline
-    implicit class EitherMMutableBuilder[Self <: EitherM[?], M] (val x: Self & EitherM[M]) extends AnyVal {
+    extension [Self <: EitherM[?], M](x: Self & EitherM[M]) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (EitherT[M, js.Any, js.Any], Lazy[EitherT[M, js.Any, js.Any]]) => EitherT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBimap(
+      inline def setBimap(
         value: (EitherT[M, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "bimap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (EitherT[M, js.Any, js.Any], js.Function1[js.Any, EitherT[M, js.Any, js.Any]]) => EitherT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (EitherT[M, js.Any, js.Any], js.Function1[
               js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, R> */ js.Any
@@ -132,37 +123,30 @@ object eitherTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetOrElse(
+      inline def setGetOrElse(
         value: (EitherT[M, js.Any, js.Any], js.Function1[
               js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLeft(value: js.Any => EitherT[M, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: js.Any => EitherT[M, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeftM(
+      inline def setLeftM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, E> */ js.Any => EitherT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "leftM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapLeft(value: (EitherT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT[M, js.Any, js.Any]): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
+      inline def setMapLeft(value: (EitherT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT[M, js.Any, js.Any]): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOrElse(
+      inline def setOrElse(
         value: (EitherT[M, js.Any, js.Any], js.Function1[js.Any, EitherT[M, js.Any, js.Any]]) => EitherT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "orElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRightM(
+      inline def setRightM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<M, A> */ js.Any => EitherT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "rightM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwap(value: EitherT[M, js.Any, js.Any] => EitherT[M, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
+      inline def setSwap(value: EitherT[M, js.Any, js.Any] => EitherT[M, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
     }
   }
   
@@ -214,8 +198,7 @@ object eitherTMod {
   }
   object EitherM1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       alt: (EitherT1[M, js.Any, js.Any], Lazy[EitherT1[M, js.Any, js.Any]]) => EitherT1[M, js.Any, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ js.Any) => js.Any,
       bimap: (EitherT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT1[M, js.Any, js.Any],
@@ -244,26 +227,21 @@ object eitherTMod {
       __obj.asInstanceOf[EitherM1[M]]
     }
     
-    @scala.inline
-    implicit class EitherM1MutableBuilder[Self <: EitherM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & EitherM1[M]) extends AnyVal {
+    extension [Self <: EitherM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & EitherM1[M]) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (EitherT1[M, js.Any, js.Any], Lazy[EitherT1[M, js.Any, js.Any]]) => EitherT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBimap(
+      inline def setBimap(
         value: (EitherT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "bimap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (EitherT1[M, js.Any, js.Any], js.Function1[js.Any, EitherT1[M, js.Any, js.Any]]) => EitherT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (EitherT1[M, js.Any, js.Any], js.Function1[
               js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, R> */ js.Any
@@ -273,37 +251,30 @@ object eitherTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetOrElse(
+      inline def setGetOrElse(
         value: (EitherT1[M, js.Any, js.Any], js.Function1[
               js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLeft(value: js.Any => EitherT1[M, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: js.Any => EitherT1[M, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeftM(
+      inline def setLeftM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, E> */ js.Any => EitherT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "leftM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapLeft(value: (EitherT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT1[M, js.Any, js.Any]): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
+      inline def setMapLeft(value: (EitherT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT1[M, js.Any, js.Any]): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOrElse(
+      inline def setOrElse(
         value: (EitherT1[M, js.Any, js.Any], js.Function1[js.Any, EitherT1[M, js.Any, js.Any]]) => EitherT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "orElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRightM(
+      inline def setRightM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<M, A> */ js.Any => EitherT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "rightM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwap(value: EitherT1[M, js.Any, js.Any] => EitherT1[M, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
+      inline def setSwap(value: EitherT1[M, js.Any, js.Any] => EitherT1[M, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
     }
   }
   
@@ -355,8 +326,7 @@ object eitherTMod {
   }
   object EitherM2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       alt: (EitherT2[M, js.Any, js.Any, js.Any], Lazy[EitherT2[M, js.Any, js.Any, js.Any]]) => EitherT2[M, js.Any, js.Any, js.Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, (a : A): B>> */ js.Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, GE, A>> */ js.Any) => js.Any,
       bimap: (EitherT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT2[M, js.Any, js.Any, js.Any],
@@ -385,26 +355,21 @@ object eitherTMod {
       __obj.asInstanceOf[EitherM2[M]]
     }
     
-    @scala.inline
-    implicit class EitherM2MutableBuilder[Self <: EitherM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & EitherM2[M]) extends AnyVal {
+    extension [Self <: EitherM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & EitherM2[M]) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (EitherT2[M, js.Any, js.Any, js.Any], Lazy[EitherT2[M, js.Any, js.Any, js.Any]]) => EitherT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBimap(
+      inline def setBimap(
         value: (EitherT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "bimap", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setChain(
+      inline def setChain(
         value: (EitherT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, EitherT2[M, js.Any, js.Any, js.Any]]) => EitherT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFold(
+      inline def setFold(
         value: (EitherT2[M, js.Any, js.Any, js.Any], js.Function1[
               js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, R, B> */ js.Any
@@ -414,39 +379,32 @@ object eitherTMod {
             ]) => js.Any
       ): Self = StObject.set(x, "fold", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetOrElse(
+      inline def setGetOrElse(
         value: (EitherT2[M, js.Any, js.Any, js.Any], js.Function1[
               js.Any, 
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, R, A> */ js.Any
             ]) => js.Any
       ): Self = StObject.set(x, "getOrElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLeft(value: js.Any => EitherT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+      inline def setLeft(value: js.Any => EitherT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeftM(
+      inline def setLeftM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, R, E> */ js.Any => EitherT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "leftM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapLeft(
+      inline def setMapLeft(
         value: (EitherT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => EitherT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "mapLeft", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOrElse(
+      inline def setOrElse(
         value: (EitherT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, EitherT2[M, js.Any, js.Any, js.Any]]) => EitherT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "orElse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRightM(
+      inline def setRightM(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<M, R, A> */ js.Any => EitherT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "rightM", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSwap(value: EitherT2[M, js.Any, js.Any, js.Any] => EitherT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
+      inline def setSwap(value: EitherT2[M, js.Any, js.Any, js.Any] => EitherT2[M, js.Any, js.Any, js.Any]): Self = StObject.set(x, "swap", js.Any.fromFunction1(value))
     }
   }
   

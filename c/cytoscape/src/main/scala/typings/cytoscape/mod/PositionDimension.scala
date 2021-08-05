@@ -15,9 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PositionDimension extends StObject
 object PositionDimension {
   
-  @scala.inline
-  def x: typings.cytoscape.cytoscapeStrings.x = "x".asInstanceOf[typings.cytoscape.cytoscapeStrings.x]
+  inline def x: typings.cytoscape.cytoscapeStrings.x = "x".asInstanceOf[typings.cytoscape.cytoscapeStrings.x]
   
-  @scala.inline
-  def y: typings.cytoscape.cytoscapeStrings.y = "y".asInstanceOf[typings.cytoscape.cytoscapeStrings.y]
+  inline def y: typings.cytoscape.cytoscapeStrings.y = "y".asInstanceOf[typings.cytoscape.cytoscapeStrings.y]
 }

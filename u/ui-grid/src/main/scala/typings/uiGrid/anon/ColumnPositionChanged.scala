@@ -19,19 +19,15 @@ trait ColumnPositionChanged extends StObject {
 }
 object ColumnPositionChanged {
   
-  @scala.inline
-  def apply(): ColumnPositionChanged = {
+  inline def apply(): ColumnPositionChanged = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnPositionChanged]
   }
   
-  @scala.inline
-  implicit class ColumnPositionChangedMutableBuilder[Self <: ColumnPositionChanged] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnPositionChanged](x: Self) {
     
-    @scala.inline
-    def setColumnPositionChanged(value: (/* scope */ IScope, /* handler */ columnPositionChangedHandler) => Unit): Self = StObject.set(x, "columnPositionChanged", js.Any.fromFunction2(value))
+    inline def setColumnPositionChanged(value: (/* scope */ IScope, /* handler */ columnPositionChangedHandler) => Unit): Self = StObject.set(x, "columnPositionChanged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setColumnPositionChangedUndefined: Self = StObject.set(x, "columnPositionChanged", js.undefined)
+    inline def setColumnPositionChangedUndefined: Self = StObject.set(x, "columnPositionChanged", js.undefined)
   }
 }

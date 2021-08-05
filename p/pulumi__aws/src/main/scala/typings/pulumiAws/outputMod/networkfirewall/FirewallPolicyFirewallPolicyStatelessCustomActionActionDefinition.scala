@@ -13,18 +13,15 @@ trait FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition extends 
 }
 object FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     publishMetricAction: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction
   ): FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition = {
     val __obj = js.Dynamic.literal(publishMetricAction = publishMetricAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition]
   }
   
-  @scala.inline
-  implicit class FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionMutableBuilder[Self <: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition](x: Self) {
     
-    @scala.inline
-    def setPublishMetricAction(value: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction): Self = StObject.set(x, "publishMetricAction", value.asInstanceOf[js.Any])
+    inline def setPublishMetricAction(value: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinitionPublishMetricAction): Self = StObject.set(x, "publishMetricAction", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait ConfirmSepaDebitPaymentData extends StObject {
 }
 object ConfirmSepaDebitPaymentData {
   
-  @scala.inline
-  def apply(): ConfirmSepaDebitPaymentData = {
+  inline def apply(): ConfirmSepaDebitPaymentData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfirmSepaDebitPaymentData]
   }
   
-  @scala.inline
-  implicit class ConfirmSepaDebitPaymentDataMutableBuilder[Self <: ConfirmSepaDebitPaymentData] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmSepaDebitPaymentData](x: Self) {
     
-    @scala.inline
-    def setPayment_method(value: String | Sepadebit): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+    inline def setPayment_method(value: String | Sepadebit): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+    inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
   }
 }

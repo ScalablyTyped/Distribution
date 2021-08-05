@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait User extends StObject
 object User {
   
-  @scala.inline
-  def AnonymousPermissions(permissions: Permission | js.Array[Permission]): typings.nodeRedRuntime.mod.AnonymousPermissions = {
+  inline def AnonymousPermissions(permissions: Permission | js.Array[Permission]): typings.nodeRedRuntime.mod.AnonymousPermissions = {
     val __obj = js.Dynamic.literal(anonymous = true, permissions = permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.nodeRedRuntime.mod.AnonymousPermissions]
   }
   
-  @scala.inline
-  def UsernamePermissions(permissions: Permission | js.Array[Permission], username: String): typings.nodeRedRuntime.mod.UsernamePermissions = {
+  inline def UsernamePermissions(permissions: Permission | js.Array[Permission], username: String): typings.nodeRedRuntime.mod.UsernamePermissions = {
     val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.nodeRedRuntime.mod.UsernamePermissions]
   }

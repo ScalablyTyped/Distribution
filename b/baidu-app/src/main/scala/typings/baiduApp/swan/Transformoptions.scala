@@ -25,8 +25,7 @@ trait Transformoptions extends StObject {
 }
 object Transformoptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     scaleX: Double,
     scaleY: Double,
     skewX: Double,
@@ -38,25 +37,18 @@ object Transformoptions {
     __obj.asInstanceOf[Transformoptions]
   }
   
-  @scala.inline
-  implicit class TransformoptionsMutableBuilder[Self <: Transformoptions] (val x: Self) extends AnyVal {
+  extension [Self <: Transformoptions](x: Self) {
     
-    @scala.inline
-    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewX(value: Double): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
+    inline def setSkewX(value: Double): Self = StObject.set(x, "skewX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkewY(value: Double): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
+    inline def setSkewY(value: Double): Self = StObject.set(x, "skewY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
+    inline def setTranslateX(value: Double): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+    inline def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
   }
 }

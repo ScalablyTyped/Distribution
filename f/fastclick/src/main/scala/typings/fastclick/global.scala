@@ -68,6 +68,5 @@ object global {
   @JSGlobal("FastClick")
   @js.native
   def FastClick: FastClickStatic = js.native
-  @scala.inline
-  def FastClick_=(x: FastClickStatic): Unit = js.Dynamic.global.updateDynamic("FastClick")(x.asInstanceOf[js.Any])
+  inline def FastClick_=(x: FastClickStatic): Unit = js.Dynamic.global.updateDynamic("FastClick")(x.asInstanceOf[js.Any])
 }

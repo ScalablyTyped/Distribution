@@ -10,16 +10,13 @@ trait Parenthesized extends StObject {
 }
 object Parenthesized {
   
-  @scala.inline
-  def apply(parenthesized: Boolean): Parenthesized = {
+  inline def apply(parenthesized: Boolean): Parenthesized = {
     val __obj = js.Dynamic.literal(parenthesized = parenthesized.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parenthesized]
   }
   
-  @scala.inline
-  implicit class ParenthesizedMutableBuilder[Self <: Parenthesized] (val x: Self) extends AnyVal {
+  extension [Self <: Parenthesized](x: Self) {
     
-    @scala.inline
-    def setParenthesized(value: Boolean): Self = StObject.set(x, "parenthesized", value.asInstanceOf[js.Any])
+    inline def setParenthesized(value: Boolean): Self = StObject.set(x, "parenthesized", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait HTTPDelivery extends StObject {
 }
 object HTTPDelivery {
   
-  @scala.inline
-  def apply(): HTTPDelivery = {
+  inline def apply(): HTTPDelivery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HTTPDelivery]
   }
   
-  @scala.inline
-  implicit class HTTPDeliveryMutableBuilder[Self <: HTTPDelivery] (val x: Self) extends AnyVal {
+  extension [Self <: HTTPDelivery](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

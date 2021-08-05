@@ -23,35 +23,35 @@ object exceptions {
   
   @JSImport("sawtooth-sdk", "exceptions.InternalError")
   @js.native
-  class InternalError protected ()
+  /* protected */ class InternalError ()
     extends typings.sawtoothSdk.exceptionsMod.InternalError {
-    protected def this(message: String) = this()
-    protected def this(message: String, extendedData: Buffer) = this()
-    protected def this(message: String, extendedData: Uint8Array) = this()
-    protected def this(message: Unit, extendedData: Buffer) = this()
-    protected def this(message: Unit, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: String) = this()
+    /* protected */ def this(message: String, extendedData: Buffer) = this()
+    /* protected */ def this(message: String, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: Unit, extendedData: Buffer) = this()
+    /* protected */ def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions.InvalidTransaction")
   @js.native
-  class InvalidTransaction protected ()
+  /* protected */ class InvalidTransaction ()
     extends typings.sawtoothSdk.exceptionsMod.InvalidTransaction {
-    protected def this(message: String) = this()
-    protected def this(message: String, extendedData: Buffer) = this()
-    protected def this(message: String, extendedData: Uint8Array) = this()
-    protected def this(message: Unit, extendedData: Buffer) = this()
-    protected def this(message: Unit, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: String) = this()
+    /* protected */ def this(message: String, extendedData: Buffer) = this()
+    /* protected */ def this(message: String, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: Unit, extendedData: Buffer) = this()
+    /* protected */ def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions._TransactionProcessorError")
   @js.native
-  class TransactionProcessorError protected ()
+  /* protected */ class TransactionProcessorError ()
     extends typings.sawtoothSdk.exceptionsMod.TransactionProcessorError {
-    protected def this(message: String) = this()
-    protected def this(message: String, extendedData: Buffer) = this()
-    protected def this(message: String, extendedData: Uint8Array) = this()
-    protected def this(message: Unit, extendedData: Buffer) = this()
-    protected def this(message: Unit, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: String) = this()
+    /* protected */ def this(message: String, extendedData: Buffer) = this()
+    /* protected */ def this(message: String, extendedData: Uint8Array) = this()
+    /* protected */ def this(message: Unit, extendedData: Buffer) = this()
+    /* protected */ def this(message: Unit, extendedData: Uint8Array) = this()
   }
   
   @JSImport("sawtooth-sdk", "exceptions.ValidatorConnectionError")

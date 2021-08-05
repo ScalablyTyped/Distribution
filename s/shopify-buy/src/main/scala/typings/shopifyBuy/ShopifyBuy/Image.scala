@@ -24,8 +24,7 @@ trait Image
 }
 object Image {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created_at: String,
     id: String | Double,
     position: Double,
@@ -38,31 +37,22 @@ object Image {
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
+    inline def setProduct_id(value: String): Self = StObject.set(x, "product_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariant_ids(value: js.Array[String]): Self = StObject.set(x, "variant_ids", value.asInstanceOf[js.Any])
+    inline def setVariant_ids(value: js.Array[String]): Self = StObject.set(x, "variant_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariant_idsVarargs(value: String*): Self = StObject.set(x, "variant_ids", js.Array(value :_*))
+    inline def setVariant_idsVarargs(value: String*): Self = StObject.set(x, "variant_ids", js.Array(value :_*))
   }
 }

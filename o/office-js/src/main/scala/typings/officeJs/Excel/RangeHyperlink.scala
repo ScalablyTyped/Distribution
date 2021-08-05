@@ -46,37 +46,27 @@ trait RangeHyperlink extends StObject {
 }
 object RangeHyperlink {
   
-  @scala.inline
-  def apply(): RangeHyperlink = {
+  inline def apply(): RangeHyperlink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeHyperlink]
   }
   
-  @scala.inline
-  implicit class RangeHyperlinkMutableBuilder[Self <: RangeHyperlink] (val x: Self) extends AnyVal {
+  extension [Self <: RangeHyperlink](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setDocumentReference(value: String): Self = StObject.set(x, "documentReference", value.asInstanceOf[js.Any])
+    inline def setDocumentReference(value: String): Self = StObject.set(x, "documentReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentReferenceUndefined: Self = StObject.set(x, "documentReference", js.undefined)
+    inline def setDocumentReferenceUndefined: Self = StObject.set(x, "documentReference", js.undefined)
     
-    @scala.inline
-    def setScreenTip(value: String): Self = StObject.set(x, "screenTip", value.asInstanceOf[js.Any])
+    inline def setScreenTip(value: String): Self = StObject.set(x, "screenTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenTipUndefined: Self = StObject.set(x, "screenTip", js.undefined)
+    inline def setScreenTipUndefined: Self = StObject.set(x, "screenTip", js.undefined)
     
-    @scala.inline
-    def setTextToDisplay(value: String): Self = StObject.set(x, "textToDisplay", value.asInstanceOf[js.Any])
+    inline def setTextToDisplay(value: String): Self = StObject.set(x, "textToDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextToDisplayUndefined: Self = StObject.set(x, "textToDisplay", js.undefined)
+    inline def setTextToDisplayUndefined: Self = StObject.set(x, "textToDisplay", js.undefined)
   }
 }

@@ -24,37 +24,27 @@ trait ReadonlyToasterProps extends StObject {
 }
 object ReadonlyToasterProps {
   
-  @scala.inline
-  def apply(): ReadonlyToasterProps = {
+  inline def apply(): ReadonlyToasterProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadonlyToasterProps]
   }
   
-  @scala.inline
-  implicit class ReadonlyToasterPropsMutableBuilder[Self <: ReadonlyToasterProps] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyToasterProps](x: Self) {
     
-    @scala.inline
-    def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
+    inline def setAutoHideDuration(value: Double): Self = StObject.set(x, "autoHideDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
+    inline def setAutoHideDurationUndefined: Self = StObject.set(x, "autoHideDuration", js.undefined)
     
-    @scala.inline
-    def setOverrides(value: ToasterOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: ToasterOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setPlacement(value: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
-    @scala.inline
-    def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
+    inline def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
+    inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
   }
 }

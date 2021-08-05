@@ -10,16 +10,13 @@ trait RestrictionsObject extends StObject {
 }
 object RestrictionsObject {
   
-  @scala.inline
-  def apply(reason: String): RestrictionsObject = {
+  inline def apply(reason: String): RestrictionsObject = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestrictionsObject]
   }
   
-  @scala.inline
-  implicit class RestrictionsObjectMutableBuilder[Self <: RestrictionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: RestrictionsObject](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

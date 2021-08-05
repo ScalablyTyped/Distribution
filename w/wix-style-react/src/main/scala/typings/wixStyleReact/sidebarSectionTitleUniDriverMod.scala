@@ -15,8 +15,7 @@ object sidebarSectionTitleUniDriverMod {
   }
   object SidebarSectionTitleUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -26,11 +25,9 @@ object sidebarSectionTitleUniDriverMod {
       __obj.asInstanceOf[SidebarSectionTitleUniDriver]
     }
     
-    @scala.inline
-    implicit class SidebarSectionTitleUniDriverMutableBuilder[Self <: SidebarSectionTitleUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SidebarSectionTitleUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     }
   }
 }

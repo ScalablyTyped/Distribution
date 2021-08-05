@@ -8,6 +8,5 @@ object vuelidateStrings {
   
   @js.native
   sealed trait ValidationProperties extends StObject
-  @scala.inline
-  def ValidationProperties: ValidationProperties = "ValidationProperties".asInstanceOf[ValidationProperties]
+  inline def ValidationProperties: ValidationProperties = "ValidationProperties".asInstanceOf[ValidationProperties]
 }

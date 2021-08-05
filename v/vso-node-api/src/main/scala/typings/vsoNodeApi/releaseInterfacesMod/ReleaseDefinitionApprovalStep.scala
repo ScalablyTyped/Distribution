@@ -19,25 +19,19 @@ trait ReleaseDefinitionApprovalStep
 }
 object ReleaseDefinitionApprovalStep {
   
-  @scala.inline
-  def apply(approver: IdentityRef, id: Double, isAutomated: Boolean, isNotificationOn: Boolean, rank: Double): ReleaseDefinitionApprovalStep = {
+  inline def apply(approver: IdentityRef, id: Double, isAutomated: Boolean, isNotificationOn: Boolean, rank: Double): ReleaseDefinitionApprovalStep = {
     val __obj = js.Dynamic.literal(approver = approver.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isAutomated = isAutomated.asInstanceOf[js.Any], isNotificationOn = isNotificationOn.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseDefinitionApprovalStep]
   }
   
-  @scala.inline
-  implicit class ReleaseDefinitionApprovalStepMutableBuilder[Self <: ReleaseDefinitionApprovalStep] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseDefinitionApprovalStep](x: Self) {
     
-    @scala.inline
-    def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
+    inline def setApprover(value: IdentityRef): Self = StObject.set(x, "approver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutomated(value: Boolean): Self = StObject.set(x, "isAutomated", value.asInstanceOf[js.Any])
+    inline def setIsAutomated(value: Boolean): Self = StObject.set(x, "isAutomated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNotificationOn(value: Boolean): Self = StObject.set(x, "isNotificationOn", value.asInstanceOf[js.Any])
+    inline def setIsNotificationOn(value: Boolean): Self = StObject.set(x, "isNotificationOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
   }
 }

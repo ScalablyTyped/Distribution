@@ -16,31 +16,23 @@ trait HeaderDefinition
 }
 object HeaderDefinition {
   
-  @scala.inline
-  def apply(): HeaderDefinition = {
+  inline def apply(): HeaderDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderDefinition]
   }
   
-  @scala.inline
-  implicit class HeaderDefinitionMutableBuilder[Self <: HeaderDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderDefinition](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setSystem(value: Boolean): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: Boolean): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.CalculatedMember")
 @js.native
-class CalculatedMember protected ()
+/* private */ class CalculatedMember ()
   extends StObject
      with typings.activexExcel.Excel.CalculatedMember {
   
@@ -27,7 +27,7 @@ class CalculatedMember protected ()
   /* CompleteClass */
   override val Dynamic: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.CalculatedMember_typekey")
   var ExcelDotCalculatedMember_typekey: typings.activexExcel.Excel.CalculatedMember = js.native
   

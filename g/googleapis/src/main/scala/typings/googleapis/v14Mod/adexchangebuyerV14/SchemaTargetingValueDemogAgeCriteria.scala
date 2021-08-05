@@ -10,22 +10,17 @@ trait SchemaTargetingValueDemogAgeCriteria extends StObject {
 }
 object SchemaTargetingValueDemogAgeCriteria {
   
-  @scala.inline
-  def apply(): SchemaTargetingValueDemogAgeCriteria = {
+  inline def apply(): SchemaTargetingValueDemogAgeCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetingValueDemogAgeCriteria]
   }
   
-  @scala.inline
-  implicit class SchemaTargetingValueDemogAgeCriteriaMutableBuilder[Self <: SchemaTargetingValueDemogAgeCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetingValueDemogAgeCriteria](x: Self) {
     
-    @scala.inline
-    def setDemogAgeCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "demogAgeCriteriaIds", value.asInstanceOf[js.Any])
+    inline def setDemogAgeCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "demogAgeCriteriaIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemogAgeCriteriaIdsUndefined: Self = StObject.set(x, "demogAgeCriteriaIds", js.undefined)
+    inline def setDemogAgeCriteriaIdsUndefined: Self = StObject.set(x, "demogAgeCriteriaIds", js.undefined)
     
-    @scala.inline
-    def setDemogAgeCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "demogAgeCriteriaIds", js.Array(value :_*))
+    inline def setDemogAgeCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "demogAgeCriteriaIds", js.Array(value :_*))
   }
 }

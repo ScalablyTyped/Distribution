@@ -23,8 +23,7 @@ trait XSortedDynamicResultSetFactory
 }
 object XSortedDynamicResultSetFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createSortedDynamicResultSet: (XDynamicResultSet, SeqEquiv[NumberedSortingInfo], XAnyCompareFactory) => XDynamicResultSet,
     queryInterface: `type` => js.Any,
@@ -34,10 +33,8 @@ object XSortedDynamicResultSetFactory {
     __obj.asInstanceOf[XSortedDynamicResultSetFactory]
   }
   
-  @scala.inline
-  implicit class XSortedDynamicResultSetFactoryMutableBuilder[Self <: XSortedDynamicResultSetFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XSortedDynamicResultSetFactory](x: Self) {
     
-    @scala.inline
-    def setCreateSortedDynamicResultSet(value: (XDynamicResultSet, SeqEquiv[NumberedSortingInfo], XAnyCompareFactory) => XDynamicResultSet): Self = StObject.set(x, "createSortedDynamicResultSet", js.Any.fromFunction3(value))
+    inline def setCreateSortedDynamicResultSet(value: (XDynamicResultSet, SeqEquiv[NumberedSortingInfo], XAnyCompareFactory) => XDynamicResultSet): Self = StObject.set(x, "createSortedDynamicResultSet", js.Any.fromFunction3(value))
   }
 }

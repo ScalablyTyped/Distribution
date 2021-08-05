@@ -8,31 +8,25 @@ object sindresorhusFnv1aNumbers {
   
   @js.native
   sealed trait `1024` extends StObject
-  @scala.inline
-  def `1024`: `1024` = 1024.asInstanceOf[`1024`]
+  inline def `1024`: `1024` = 1024.asInstanceOf[`1024`]
   
   @js.native
   sealed trait `128` extends StObject
-  @scala.inline
-  def `128`: `128` = 128.asInstanceOf[`128`]
+  inline def `128`: `128` = 128.asInstanceOf[`128`]
   
   @js.native
   sealed trait `256` extends StObject
-  @scala.inline
-  def `256`: `256` = 256.asInstanceOf[`256`]
+  inline def `256`: `256` = 256.asInstanceOf[`256`]
   
   @js.native
   sealed trait `32` extends StObject
-  @scala.inline
-  def `32`: `32` = 32.asInstanceOf[`32`]
+  inline def `32`: `32` = 32.asInstanceOf[`32`]
   
   @js.native
   sealed trait `512` extends StObject
-  @scala.inline
-  def `512`: `512` = 512.asInstanceOf[`512`]
+  inline def `512`: `512` = 512.asInstanceOf[`512`]
   
   @js.native
   sealed trait `64` extends StObject
-  @scala.inline
-  def `64`: `64` = 64.asInstanceOf[`64`]
+  inline def `64`: `64` = 64.asInstanceOf[`64`]
 }

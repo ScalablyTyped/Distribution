@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TargetingStatus extends StObject
 object TargetingStatus {
   
-  @scala.inline
-  def ACTIVE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ACTIVE = "ACTIVE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ACTIVE]
+  inline def ACTIVE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ACTIVE = "ACTIVE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ACTIVE]
   
-  @scala.inline
-  def OBSOLETE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.OBSOLETE = "OBSOLETE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.OBSOLETE]
+  inline def OBSOLETE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.OBSOLETE = "OBSOLETE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.OBSOLETE]
   
-  @scala.inline
-  def PHASING_OUT: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHASING_OUT = "PHASING_OUT".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHASING_OUT]
+  inline def PHASING_OUT: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHASING_OUT = "PHASING_OUT".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.PHASING_OUT]
 }

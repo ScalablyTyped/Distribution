@@ -25,31 +25,23 @@ trait MonitoringQueryLanguageCondition extends StObject {
 }
 object MonitoringQueryLanguageCondition {
   
-  @scala.inline
-  def apply(): MonitoringQueryLanguageCondition = {
+  inline def apply(): MonitoringQueryLanguageCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonitoringQueryLanguageCondition]
   }
   
-  @scala.inline
-  implicit class MonitoringQueryLanguageConditionMutableBuilder[Self <: MonitoringQueryLanguageCondition] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringQueryLanguageCondition](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: Trigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetPullRequestInput extends StObject {
 }
 object GetPullRequestInput {
   
-  @scala.inline
-  def apply(pullRequestId: PullRequestId): GetPullRequestInput = {
+  inline def apply(pullRequestId: PullRequestId): GetPullRequestInput = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPullRequestInput]
   }
   
-  @scala.inline
-  implicit class GetPullRequestInputMutableBuilder[Self <: GetPullRequestInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetPullRequestInput](x: Self) {
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }
 }

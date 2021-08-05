@@ -23,16 +23,13 @@ trait XPropertyControlFactory extends StObject {
 }
 object XPropertyControlFactory {
   
-  @scala.inline
-  def apply(createPropertyControl: (Double, Boolean) => XPropertyControl): XPropertyControlFactory = {
+  inline def apply(createPropertyControl: (Double, Boolean) => XPropertyControl): XPropertyControlFactory = {
     val __obj = js.Dynamic.literal(createPropertyControl = js.Any.fromFunction2(createPropertyControl))
     __obj.asInstanceOf[XPropertyControlFactory]
   }
   
-  @scala.inline
-  implicit class XPropertyControlFactoryMutableBuilder[Self <: XPropertyControlFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyControlFactory](x: Self) {
     
-    @scala.inline
-    def setCreatePropertyControl(value: (Double, Boolean) => XPropertyControl): Self = StObject.set(x, "createPropertyControl", js.Any.fromFunction2(value))
+    inline def setCreatePropertyControl(value: (Double, Boolean) => XPropertyControl): Self = StObject.set(x, "createPropertyControl", js.Any.fromFunction2(value))
   }
 }

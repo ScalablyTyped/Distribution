@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _KeySequence extends StObject
 object _KeySequence {
   
-  @scala.inline
-  def ExtendedKeyMapOptions(
+  inline def ExtendedKeyMapOptions(
     action: KeyEventName,
     sequence: MouseTrapKeySequence,
     sequences: js.Array[KeyMapOptions | MouseTrapKeySequence]
@@ -17,8 +16,7 @@ object _KeySequence {
     __obj.asInstanceOf[typings.reactHotkeys.mod.ExtendedKeyMapOptions]
   }
   
-  @scala.inline
-  def KeyMapOptions(action: KeyEventName, sequence: MouseTrapKeySequence): typings.reactHotkeys.mod.KeyMapOptions = {
+  inline def KeyMapOptions(action: KeyEventName, sequence: MouseTrapKeySequence): typings.reactHotkeys.mod.KeyMapOptions = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactHotkeys.mod.KeyMapOptions]
   }

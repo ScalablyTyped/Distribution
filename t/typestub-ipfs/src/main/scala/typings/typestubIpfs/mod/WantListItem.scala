@@ -11,17 +11,14 @@ trait WantListItem extends StObject {
 }
 object WantListItem {
   
-  @scala.inline
-  def apply(Slash: String): WantListItem = {
+  inline def apply(Slash: String): WantListItem = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("/")(Slash.asInstanceOf[js.Any])
     __obj.asInstanceOf[WantListItem]
   }
   
-  @scala.inline
-  implicit class WantListItemMutableBuilder[Self <: WantListItem] (val x: Self) extends AnyVal {
+  extension [Self <: WantListItem](x: Self) {
     
-    @scala.inline
-    def setSlash(value: String): Self = StObject.set(x, "/", value.asInstanceOf[js.Any])
+    inline def setSlash(value: String): Self = StObject.set(x, "/", value.asInstanceOf[js.Any])
   }
 }

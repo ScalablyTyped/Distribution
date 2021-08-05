@@ -35,34 +35,25 @@ trait SchemaGoogleCloudVisionV1p4beta1ReferenceImage extends StObject {
 }
 object SchemaGoogleCloudVisionV1p4beta1ReferenceImage {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p4beta1ReferenceImage = {
+  inline def apply(): SchemaGoogleCloudVisionV1p4beta1ReferenceImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p4beta1ReferenceImage]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p4beta1ReferenceImageMutableBuilder[Self <: SchemaGoogleCloudVisionV1p4beta1ReferenceImage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p4beta1ReferenceImage](x: Self) {
     
-    @scala.inline
-    def setBoundingPolys(value: js.Array[SchemaGoogleCloudVisionV1p4beta1BoundingPoly]): Self = StObject.set(x, "boundingPolys", value.asInstanceOf[js.Any])
+    inline def setBoundingPolys(value: js.Array[SchemaGoogleCloudVisionV1p4beta1BoundingPoly]): Self = StObject.set(x, "boundingPolys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolysUndefined: Self = StObject.set(x, "boundingPolys", js.undefined)
+    inline def setBoundingPolysUndefined: Self = StObject.set(x, "boundingPolys", js.undefined)
     
-    @scala.inline
-    def setBoundingPolysVarargs(value: SchemaGoogleCloudVisionV1p4beta1BoundingPoly*): Self = StObject.set(x, "boundingPolys", js.Array(value :_*))
+    inline def setBoundingPolysVarargs(value: SchemaGoogleCloudVisionV1p4beta1BoundingPoly*): Self = StObject.set(x, "boundingPolys", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

@@ -13,10 +13,8 @@ object parserTypeMod {
   trait ParserType extends StObject
   object ParserType {
     
-    @scala.inline
-    def numeric: typings.tablesorter.tablesorterStrings.numeric = "numeric".asInstanceOf[typings.tablesorter.tablesorterStrings.numeric]
+    inline def numeric: typings.tablesorter.tablesorterStrings.numeric = "numeric".asInstanceOf[typings.tablesorter.tablesorterStrings.numeric]
     
-    @scala.inline
-    def text: typings.tablesorter.tablesorterStrings.text = "text".asInstanceOf[typings.tablesorter.tablesorterStrings.text]
+    inline def text: typings.tablesorter.tablesorterStrings.text = "text".asInstanceOf[typings.tablesorter.tablesorterStrings.text]
   }
 }

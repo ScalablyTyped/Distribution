@@ -145,34 +145,24 @@ object texUtilMod {
     /* 1 */ val UPLOAD: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.UPLOAD & Double = js.native
   }
   
-  @scala.inline
-  def decodeMatrixFromUnpackedColorRGBAArray(unpackedArray: Float32Array, matrix: Float32Array, channels: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeMatrixFromUnpackedColorRGBAArray")(unpackedArray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeMatrixFromUnpackedColorRGBAArray(unpackedArray: Float32Array, matrix: Float32Array, channels: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeMatrixFromUnpackedColorRGBAArray")(unpackedArray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getColorMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def getColorMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @scala.inline
-  def getDenseTexShape(shape: js.Array[Double]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDenseTexShape")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def getDenseTexShape(shape: js.Array[Double]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDenseTexShape")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @scala.inline
-  def getMatrixSizeFromUnpackedArraySize(unpackedSize: Double, channelsPerTexture: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatrixSizeFromUnpackedArraySize")(unpackedSize.asInstanceOf[js.Any], channelsPerTexture.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getMatrixSizeFromUnpackedArraySize(unpackedSize: Double, channelsPerTexture: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatrixSizeFromUnpackedArraySize")(unpackedSize.asInstanceOf[js.Any], channelsPerTexture.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getPackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackedMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def getPackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackedMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @scala.inline
-  def getPackedRGBAArraySizeFromMatrixShape(rows: Double, columns: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackedRGBAArraySizeFromMatrixShape")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPackedRGBAArraySizeFromMatrixShape(rows: Double, columns: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackedRGBAArraySizeFromMatrixShape")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getTextureConfig(gl: WebGLRenderingContext): TextureConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextureConfig")(gl.asInstanceOf[js.Any]).asInstanceOf[TextureConfig]
-  @scala.inline
-  def getTextureConfig(gl: WebGLRenderingContext, textureHalfFloatExtension: js.Any): TextureConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextureConfig")(gl.asInstanceOf[js.Any], textureHalfFloatExtension.asInstanceOf[js.Any])).asInstanceOf[TextureConfig]
+  inline def getTextureConfig(gl: WebGLRenderingContext): TextureConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextureConfig")(gl.asInstanceOf[js.Any]).asInstanceOf[TextureConfig]
+  inline def getTextureConfig(gl: WebGLRenderingContext, textureHalfFloatExtension: js.Any): TextureConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextureConfig")(gl.asInstanceOf[js.Any], textureHalfFloatExtension.asInstanceOf[js.Any])).asInstanceOf[TextureConfig]
   
-  @scala.inline
-  def getUnpackedArraySizeFromMatrixSize(matrixSize: Double, channelsPerTexture: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedArraySizeFromMatrixSize")(matrixSize.asInstanceOf[js.Any], channelsPerTexture.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getUnpackedArraySizeFromMatrixSize(matrixSize: Double, channelsPerTexture: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedArraySizeFromMatrixSize")(matrixSize.asInstanceOf[js.Any], channelsPerTexture.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getUnpackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
+  inline def getUnpackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
   trait TextureConfig extends StObject {
     
@@ -198,8 +188,7 @@ object texUtilMod {
   }
   object TextureConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultNumChannels: Double,
       downloadTextureFormat: Double,
       downloadUnpackNumChannels: Double,
@@ -215,38 +204,27 @@ object texUtilMod {
       __obj.asInstanceOf[TextureConfig]
     }
     
-    @scala.inline
-    implicit class TextureConfigMutableBuilder[Self <: TextureConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TextureConfig](x: Self) {
       
-      @scala.inline
-      def setDefaultNumChannels(value: Double): Self = StObject.set(x, "defaultNumChannels", value.asInstanceOf[js.Any])
+      inline def setDefaultNumChannels(value: Double): Self = StObject.set(x, "defaultNumChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadTextureFormat(value: Double): Self = StObject.set(x, "downloadTextureFormat", value.asInstanceOf[js.Any])
+      inline def setDownloadTextureFormat(value: Double): Self = StObject.set(x, "downloadTextureFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadUnpackNumChannels(value: Double): Self = StObject.set(x, "downloadUnpackNumChannels", value.asInstanceOf[js.Any])
+      inline def setDownloadUnpackNumChannels(value: Double): Self = StObject.set(x, "downloadUnpackNumChannels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalFormatFloat(value: Double): Self = StObject.set(x, "internalFormatFloat", value.asInstanceOf[js.Any])
+      inline def setInternalFormatFloat(value: Double): Self = StObject.set(x, "internalFormatFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalFormatHalfFloat(value: Double): Self = StObject.set(x, "internalFormatHalfFloat", value.asInstanceOf[js.Any])
+      inline def setInternalFormatHalfFloat(value: Double): Self = StObject.set(x, "internalFormatHalfFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalFormatPackedFloat(value: Double): Self = StObject.set(x, "internalFormatPackedFloat", value.asInstanceOf[js.Any])
+      inline def setInternalFormatPackedFloat(value: Double): Self = StObject.set(x, "internalFormatPackedFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalFormatPackedHalfFloat(value: Double): Self = StObject.set(x, "internalFormatPackedHalfFloat", value.asInstanceOf[js.Any])
+      inline def setInternalFormatPackedHalfFloat(value: Double): Self = StObject.set(x, "internalFormatPackedHalfFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextureFormatFloat(value: Double): Self = StObject.set(x, "textureFormatFloat", value.asInstanceOf[js.Any])
+      inline def setTextureFormatFloat(value: Double): Self = StObject.set(x, "textureFormatFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextureTypeFloat(value: Double): Self = StObject.set(x, "textureTypeFloat", value.asInstanceOf[js.Any])
+      inline def setTextureTypeFloat(value: Double): Self = StObject.set(x, "textureTypeFloat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextureTypeHalfFloat(value: Double): Self = StObject.set(x, "textureTypeHalfFloat", value.asInstanceOf[js.Any])
+      inline def setTextureTypeHalfFloat(value: Double): Self = StObject.set(x, "textureTypeHalfFloat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,74 +255,52 @@ object texUtilMod {
   }
   object TextureData {
     
-    @scala.inline
-    def apply(complexParentRefCount: Double, dtype: DataType, refCount: Double, shape: js.Array[Double]): TextureData = {
+    inline def apply(complexParentRefCount: Double, dtype: DataType, refCount: Double, shape: js.Array[Double]): TextureData = {
       val __obj = js.Dynamic.literal(complexParentRefCount = complexParentRefCount.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], refCount = refCount.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextureData]
     }
     
-    @scala.inline
-    implicit class TextureDataMutableBuilder[Self <: TextureData] (val x: Self) extends AnyVal {
+    extension [Self <: TextureData](x: Self) {
       
-      @scala.inline
-      def setComplexParentRefCount(value: Double): Self = StObject.set(x, "complexParentRefCount", value.asInstanceOf[js.Any])
+      inline def setComplexParentRefCount(value: Double): Self = StObject.set(x, "complexParentRefCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplexTensorInfos(value: Imag): Self = StObject.set(x, "complexTensorInfos", value.asInstanceOf[js.Any])
+      inline def setComplexTensorInfos(value: Imag): Self = StObject.set(x, "complexTensorInfos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplexTensorInfosUndefined: Self = StObject.set(x, "complexTensorInfos", js.undefined)
+      inline def setComplexTensorInfosUndefined: Self = StObject.set(x, "complexTensorInfos", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPacked(value: Boolean): Self = StObject.set(x, "isPacked", value.asInstanceOf[js.Any])
+      inline def setIsPacked(value: Boolean): Self = StObject.set(x, "isPacked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPackedUndefined: Self = StObject.set(x, "isPacked", js.undefined)
+      inline def setIsPackedUndefined: Self = StObject.set(x, "isPacked", js.undefined)
       
-      @scala.inline
-      def setRefCount(value: Double): Self = StObject.set(x, "refCount", value.asInstanceOf[js.Any])
+      inline def setRefCount(value: Double): Self = StObject.set(x, "refCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
       
-      @scala.inline
-      def setSlice(value: FlatOffset): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+      inline def setSlice(value: FlatOffset): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+      inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
       
-      @scala.inline
-      def setTexShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "texShape", value.asInstanceOf[js.Any])
+      inline def setTexShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "texShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTexShapeUndefined: Self = StObject.set(x, "texShape", js.undefined)
+      inline def setTexShapeUndefined: Self = StObject.set(x, "texShape", js.undefined)
       
-      @scala.inline
-      def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+      inline def setTexture(value: WebGLTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextureUndefined: Self = StObject.set(x, "texture", js.undefined)
+      inline def setTextureUndefined: Self = StObject.set(x, "texture", js.undefined)
       
-      @scala.inline
-      def setUsage(value: TextureUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: TextureUsage): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+      inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
       
-      @scala.inline
-      def setValues(value: BackendValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: BackendValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: Uint8Array*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Uint8Array*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

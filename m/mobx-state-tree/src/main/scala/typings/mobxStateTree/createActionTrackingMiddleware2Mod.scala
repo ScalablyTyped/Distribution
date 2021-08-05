@@ -13,8 +13,7 @@ object createActionTrackingMiddleware2Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createActionTrackingMiddleware2[TEnv](middlewareHooks: IActionTrackingMiddleware2Hooks[TEnv]): IMiddlewareHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createActionTrackingMiddleware2")(middlewareHooks.asInstanceOf[js.Any]).asInstanceOf[IMiddlewareHandler]
+  inline def createActionTrackingMiddleware2[TEnv](middlewareHooks: IActionTrackingMiddleware2Hooks[TEnv]): IMiddlewareHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createActionTrackingMiddleware2")(middlewareHooks.asInstanceOf[js.Any]).asInstanceOf[IMiddlewareHandler]
   
   /* Inlined parent std.Readonly<mobx-state-tree.mobx-state-tree/dist/internal.IActionContext> */
   trait IActionTrackingMiddleware2Call[TEnv] extends StObject {
@@ -37,8 +36,7 @@ object createActionTrackingMiddleware2Mod {
   }
   object IActionTrackingMiddleware2Call {
     
-    @scala.inline
-    def apply[TEnv](
+    inline def apply[TEnv](
       args: js.Array[js.Any],
       context: IAnyStateTreeNode,
       id: Double,
@@ -49,44 +47,31 @@ object createActionTrackingMiddleware2Mod {
       __obj.asInstanceOf[IActionTrackingMiddleware2Call[TEnv]]
     }
     
-    @scala.inline
-    implicit class IActionTrackingMiddleware2CallMutableBuilder[Self <: IActionTrackingMiddleware2Call[?], TEnv] (val x: Self & IActionTrackingMiddleware2Call[TEnv]) extends AnyVal {
+    extension [Self <: IActionTrackingMiddleware2Call[?], TEnv](x: Self & IActionTrackingMiddleware2Call[TEnv]) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setContext(value: IAnyStateTreeNode): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: IAnyStateTreeNode): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnv(value: TEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: TEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentActionEvent(value: IMiddlewareEvent): Self = StObject.set(x, "parentActionEvent", value.asInstanceOf[js.Any])
+      inline def setParentActionEvent(value: IMiddlewareEvent): Self = StObject.set(x, "parentActionEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentActionEventUndefined: Self = StObject.set(x, "parentActionEvent", js.undefined)
+      inline def setParentActionEventUndefined: Self = StObject.set(x, "parentActionEvent", js.undefined)
       
-      @scala.inline
-      def setParentCall(value: IActionTrackingMiddleware2Call[TEnv]): Self = StObject.set(x, "parentCall", value.asInstanceOf[js.Any])
+      inline def setParentCall(value: IActionTrackingMiddleware2Call[TEnv]): Self = StObject.set(x, "parentCall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentCallUndefined: Self = StObject.set(x, "parentCall", js.undefined)
+      inline def setParentCallUndefined: Self = StObject.set(x, "parentCall", js.undefined)
       
-      @scala.inline
-      def setTree(value: IAnyStateTreeNode): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+      inline def setTree(value: IAnyStateTreeNode): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     }
   }
   

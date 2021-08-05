@@ -10,16 +10,13 @@ trait ResolveProjectReferencePathHost extends StObject {
 }
 object ResolveProjectReferencePathHost {
   
-  @scala.inline
-  def apply(fileExists: java.lang.String => Boolean): ResolveProjectReferencePathHost = {
+  inline def apply(fileExists: java.lang.String => Boolean): ResolveProjectReferencePathHost = {
     val __obj = js.Dynamic.literal(fileExists = js.Any.fromFunction1(fileExists))
     __obj.asInstanceOf[ResolveProjectReferencePathHost]
   }
   
-  @scala.inline
-  implicit class ResolveProjectReferencePathHostMutableBuilder[Self <: ResolveProjectReferencePathHost] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveProjectReferencePathHost](x: Self) {
     
-    @scala.inline
-    def setFileExists(value: java.lang.String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
+    inline def setFileExists(value: java.lang.String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
   }
 }

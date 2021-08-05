@@ -38,8 +38,7 @@ trait FragmentSpecResolver extends StObject {
 }
 object FragmentSpecResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dispose: () => Unit,
     resolve: () => FragmentSpecResults,
     setCallback: js.Function0[Unit] => Unit,
@@ -50,22 +49,16 @@ object FragmentSpecResolver {
     __obj.asInstanceOf[FragmentSpecResolver]
   }
   
-  @scala.inline
-  implicit class FragmentSpecResolverMutableBuilder[Self <: FragmentSpecResolver] (val x: Self) extends AnyVal {
+  extension [Self <: FragmentSpecResolver](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResolve(value: () => FragmentSpecResults): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
+    inline def setResolve(value: () => FragmentSpecResults): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCallback(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
+    inline def setSetCallback(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetProps(value: Props => Unit): Self = StObject.set(x, "setProps", js.Any.fromFunction1(value))
+    inline def setSetProps(value: Props => Unit): Self = StObject.set(x, "setProps", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVariables(value: (Variables, ConcreteRequest) => Unit): Self = StObject.set(x, "setVariables", js.Any.fromFunction2(value))
+    inline def setSetVariables(value: (Variables, ConcreteRequest) => Unit): Self = StObject.set(x, "setVariables", js.Any.fromFunction2(value))
   }
 }

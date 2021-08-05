@@ -14,23 +14,18 @@ trait Accept extends StObject {
 }
 object Accept {
   
-  @scala.inline
-  def apply(accept: String, children: String, `data-hook`: String): Accept = {
+  inline def apply(accept: String, children: String, `data-hook`: String): Accept = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("data-hook")(`data-hook`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Accept]
   }
   
-  @scala.inline
-  implicit class AcceptMutableBuilder[Self <: Accept] (val x: Self) extends AnyVal {
+  extension [Self <: Accept](x: Self) {
     
-    @scala.inline
-    def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+    inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
   }
 }

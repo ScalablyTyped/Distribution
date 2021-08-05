@@ -13,19 +13,15 @@ trait CreateCustomDataIdentifierResponse extends StObject {
 }
 object CreateCustomDataIdentifierResponse {
   
-  @scala.inline
-  def apply(): CreateCustomDataIdentifierResponse = {
+  inline def apply(): CreateCustomDataIdentifierResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCustomDataIdentifierResponse]
   }
   
-  @scala.inline
-  implicit class CreateCustomDataIdentifierResponseMutableBuilder[Self <: CreateCustomDataIdentifierResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCustomDataIdentifierResponse](x: Self) {
     
-    @scala.inline
-    def setCustomDataIdentifierId(value: string): Self = StObject.set(x, "customDataIdentifierId", value.asInstanceOf[js.Any])
+    inline def setCustomDataIdentifierId(value: string): Self = StObject.set(x, "customDataIdentifierId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDataIdentifierIdUndefined: Self = StObject.set(x, "customDataIdentifierId", js.undefined)
+    inline def setCustomDataIdentifierIdUndefined: Self = StObject.set(x, "customDataIdentifierId", js.undefined)
   }
 }

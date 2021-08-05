@@ -18,31 +18,23 @@ trait ClassifyDocumentResponse extends StObject {
 }
 object ClassifyDocumentResponse {
   
-  @scala.inline
-  def apply(): ClassifyDocumentResponse = {
+  inline def apply(): ClassifyDocumentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassifyDocumentResponse]
   }
   
-  @scala.inline
-  implicit class ClassifyDocumentResponseMutableBuilder[Self <: ClassifyDocumentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifyDocumentResponse](x: Self) {
     
-    @scala.inline
-    def setClasses(value: ListOfClasses): Self = StObject.set(x, "Classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: ListOfClasses): Self = StObject.set(x, "Classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "Classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "Classes", js.undefined)
     
-    @scala.inline
-    def setClassesVarargs(value: DocumentClass*): Self = StObject.set(x, "Classes", js.Array(value :_*))
+    inline def setClassesVarargs(value: DocumentClass*): Self = StObject.set(x, "Classes", js.Array(value :_*))
     
-    @scala.inline
-    def setLabels(value: ListOfLabels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: ListOfLabels): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: DocumentLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: DocumentLabel*): Self = StObject.set(x, "Labels", js.Array(value :_*))
   }
 }

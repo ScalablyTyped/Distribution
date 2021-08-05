@@ -53,53 +53,38 @@ object anon {
   }
   object Optionsmessagestring {
     
-    @scala.inline
-    def apply(message: js.UndefOr[js.Any] & String): Optionsmessagestring = {
+    inline def apply(message: js.UndefOr[js.Any] & String): Optionsmessagestring = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsmessagestring]
     }
     
-    @scala.inline
-    implicit class OptionsmessagestringMutableBuilder[Self <: Optionsmessagestring] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsmessagestring](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      @scala.inline
-      def setMessage(value: js.UndefOr[js.Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.UndefOr[js.Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setShowProperties(value: Boolean): Self = StObject.set(x, "showProperties", value.asInstanceOf[js.Any])
+      inline def setShowProperties(value: Boolean): Self = StObject.set(x, "showProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPropertiesUndefined: Self = StObject.set(x, "showProperties", js.undefined)
+      inline def setShowPropertiesUndefined: Self = StObject.set(x, "showProperties", js.undefined)
       
-      @scala.inline
-      def setShowStack(value: Boolean): Self = StObject.set(x, "showStack", value.asInstanceOf[js.Any])
+      inline def setShowStack(value: Boolean): Self = StObject.set(x, "showStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowStackUndefined: Self = StObject.set(x, "showStack", js.undefined)
+      inline def setShowStackUndefined: Self = StObject.set(x, "showStack", js.undefined)
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -152,56 +137,40 @@ object anon {
   }
   object Optionspluginstringmessag {
     
-    @scala.inline
-    def apply(message: js.UndefOr[js.Any] & String, plugin: String): Optionspluginstringmessag = {
+    inline def apply(message: js.UndefOr[js.Any] & String, plugin: String): Optionspluginstringmessag = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionspluginstringmessag]
     }
     
-    @scala.inline
-    implicit class OptionspluginstringmessagMutableBuilder[Self <: Optionspluginstringmessag] (val x: Self) extends AnyVal {
+    extension [Self <: Optionspluginstringmessag](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      @scala.inline
-      def setMessage(value: js.UndefOr[js.Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.UndefOr[js.Any] & String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowProperties(value: Boolean): Self = StObject.set(x, "showProperties", value.asInstanceOf[js.Any])
+      inline def setShowProperties(value: Boolean): Self = StObject.set(x, "showProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowPropertiesUndefined: Self = StObject.set(x, "showProperties", js.undefined)
+      inline def setShowPropertiesUndefined: Self = StObject.set(x, "showProperties", js.undefined)
       
-      @scala.inline
-      def setShowStack(value: Boolean): Self = StObject.set(x, "showStack", value.asInstanceOf[js.Any])
+      inline def setShowStack(value: Boolean): Self = StObject.set(x, "showStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowStackUndefined: Self = StObject.set(x, "showStack", js.undefined)
+      inline def setShowStackUndefined: Self = StObject.set(x, "showStack", js.undefined)
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -241,47 +210,34 @@ object anon {
   }
   object PluginError {
     
-    @scala.inline
-    def apply(message: String, name: String, plugin: String, showProperties: Boolean, showStack: Boolean): PluginError = {
+    inline def apply(message: String, name: String, plugin: String, showProperties: Boolean, showStack: Boolean): PluginError = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], showProperties = showProperties.asInstanceOf[js.Any], showStack = showStack.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginError]
     }
     
-    @scala.inline
-    implicit class PluginErrorMutableBuilder[Self <: PluginError] (val x: Self) extends AnyVal {
+    extension [Self <: PluginError](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowProperties(value: Boolean): Self = StObject.set(x, "showProperties", value.asInstanceOf[js.Any])
+      inline def setShowProperties(value: Boolean): Self = StObject.set(x, "showProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowStack(value: Boolean): Self = StObject.set(x, "showStack", value.asInstanceOf[js.Any])
+      inline def setShowStack(value: Boolean): Self = StObject.set(x, "showStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
 }

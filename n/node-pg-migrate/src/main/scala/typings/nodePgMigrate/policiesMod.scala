@@ -15,15 +15,11 @@ object policiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def alterPolicy(mOptions: MigrationOptions): AlterPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("alterPolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterPolicy]
+  inline def alterPolicy(mOptions: MigrationOptions): AlterPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("alterPolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterPolicy]
   
-  @scala.inline
-  def createPolicy(mOptions: MigrationOptions): CreatePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreatePolicy]
+  inline def createPolicy(mOptions: MigrationOptions): CreatePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("createPolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreatePolicy]
   
-  @scala.inline
-  def dropPolicy(mOptions: MigrationOptions): DropPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("dropPolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropPolicy]
+  inline def dropPolicy(mOptions: MigrationOptions): DropPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("dropPolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropPolicy]
   
-  @scala.inline
-  def renamePolicy(mOptions: MigrationOptions): RenamePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("renamePolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenamePolicy]
+  inline def renamePolicy(mOptions: MigrationOptions): RenamePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("renamePolicy")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenamePolicy]
 }

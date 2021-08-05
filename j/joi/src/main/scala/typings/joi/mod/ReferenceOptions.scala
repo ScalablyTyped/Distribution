@@ -55,58 +55,41 @@ trait ReferenceOptions
 }
 object ReferenceOptions {
   
-  @scala.inline
-  def apply(): ReferenceOptions = {
+  inline def apply(): ReferenceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReferenceOptions]
   }
   
-  @scala.inline
-  implicit class ReferenceOptionsMutableBuilder[Self <: ReferenceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceOptions](x: Self) {
     
-    @scala.inline
-    def setAdjust(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "adjust", js.Any.fromFunction1(value))
+    inline def setAdjust(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "adjust", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAdjustUndefined: Self = StObject.set(x, "adjust", js.undefined)
+    inline def setAdjustUndefined: Self = StObject.set(x, "adjust", js.undefined)
     
-    @scala.inline
-    def setAncestor(value: Double): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
+    inline def setAncestor(value: Double): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
+    inline def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
     
-    @scala.inline
-    def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+    inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
     
-    @scala.inline
-    def setIterables(value: Boolean): Self = StObject.set(x, "iterables", value.asInstanceOf[js.Any])
+    inline def setIterables(value: Boolean): Self = StObject.set(x, "iterables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterablesUndefined: Self = StObject.set(x, "iterables", js.undefined)
+    inline def setIterablesUndefined: Self = StObject.set(x, "iterables", js.undefined)
     
-    @scala.inline
-    def setMap(value: js.Array[js.Tuple2[js.Any, js.Any]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: js.Array[js.Tuple2[js.Any, js.Any]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setMapVarargs(value: (js.Tuple2[js.Any, js.Any])*): Self = StObject.set(x, "map", js.Array(value :_*))
+    inline def setMapVarargs(value: (js.Tuple2[js.Any, js.Any])*): Self = StObject.set(x, "map", js.Array(value :_*))
     
-    @scala.inline
-    def setPrefix(value: Global): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Global): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setRender(value: Boolean): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: Boolean): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

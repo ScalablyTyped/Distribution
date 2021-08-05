@@ -14,22 +14,17 @@ trait DragAndZoomTool extends StObject {
 }
 object DragAndZoomTool {
   
-  @scala.inline
-  def apply(close: () => Unit, ondrawend: typings.bmapgl.anon.Bounds => Unit, open: () => Boolean): DragAndZoomTool = {
+  inline def apply(close: () => Unit, ondrawend: typings.bmapgl.anon.Bounds => Unit, open: () => Boolean): DragAndZoomTool = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), ondrawend = js.Any.fromFunction1(ondrawend), open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[DragAndZoomTool]
   }
   
-  @scala.inline
-  implicit class DragAndZoomToolMutableBuilder[Self <: DragAndZoomTool] (val x: Self) extends AnyVal {
+  extension [Self <: DragAndZoomTool](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOndrawend(value: typings.bmapgl.anon.Bounds => Unit): Self = StObject.set(x, "ondrawend", js.Any.fromFunction1(value))
+    inline def setOndrawend(value: typings.bmapgl.anon.Bounds => Unit): Self = StObject.set(x, "ondrawend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpen(value: () => Boolean): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Boolean): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

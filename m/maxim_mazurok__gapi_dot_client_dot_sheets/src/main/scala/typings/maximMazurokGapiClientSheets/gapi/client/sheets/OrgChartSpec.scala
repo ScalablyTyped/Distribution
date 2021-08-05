@@ -32,61 +32,43 @@ trait OrgChartSpec extends StObject {
 }
 object OrgChartSpec {
   
-  @scala.inline
-  def apply(): OrgChartSpec = {
+  inline def apply(): OrgChartSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrgChartSpec]
   }
   
-  @scala.inline
-  implicit class OrgChartSpecMutableBuilder[Self <: OrgChartSpec] (val x: Self) extends AnyVal {
+  extension [Self <: OrgChartSpec](x: Self) {
     
-    @scala.inline
-    def setLabels(value: ChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: ChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setNodeColor(value: Color): Self = StObject.set(x, "nodeColor", value.asInstanceOf[js.Any])
+    inline def setNodeColor(value: Color): Self = StObject.set(x, "nodeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeColorStyle(value: ColorStyle): Self = StObject.set(x, "nodeColorStyle", value.asInstanceOf[js.Any])
+    inline def setNodeColorStyle(value: ColorStyle): Self = StObject.set(x, "nodeColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeColorStyleUndefined: Self = StObject.set(x, "nodeColorStyle", js.undefined)
+    inline def setNodeColorStyleUndefined: Self = StObject.set(x, "nodeColorStyle", js.undefined)
     
-    @scala.inline
-    def setNodeColorUndefined: Self = StObject.set(x, "nodeColor", js.undefined)
+    inline def setNodeColorUndefined: Self = StObject.set(x, "nodeColor", js.undefined)
     
-    @scala.inline
-    def setNodeSize(value: String): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
+    inline def setNodeSize(value: String): Self = StObject.set(x, "nodeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeSizeUndefined: Self = StObject.set(x, "nodeSize", js.undefined)
+    inline def setNodeSizeUndefined: Self = StObject.set(x, "nodeSize", js.undefined)
     
-    @scala.inline
-    def setParentLabels(value: ChartData): Self = StObject.set(x, "parentLabels", value.asInstanceOf[js.Any])
+    inline def setParentLabels(value: ChartData): Self = StObject.set(x, "parentLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentLabelsUndefined: Self = StObject.set(x, "parentLabels", js.undefined)
+    inline def setParentLabelsUndefined: Self = StObject.set(x, "parentLabels", js.undefined)
     
-    @scala.inline
-    def setSelectedNodeColor(value: Color): Self = StObject.set(x, "selectedNodeColor", value.asInstanceOf[js.Any])
+    inline def setSelectedNodeColor(value: Color): Self = StObject.set(x, "selectedNodeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedNodeColorStyle(value: ColorStyle): Self = StObject.set(x, "selectedNodeColorStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedNodeColorStyle(value: ColorStyle): Self = StObject.set(x, "selectedNodeColorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedNodeColorStyleUndefined: Self = StObject.set(x, "selectedNodeColorStyle", js.undefined)
+    inline def setSelectedNodeColorStyleUndefined: Self = StObject.set(x, "selectedNodeColorStyle", js.undefined)
     
-    @scala.inline
-    def setSelectedNodeColorUndefined: Self = StObject.set(x, "selectedNodeColor", js.undefined)
+    inline def setSelectedNodeColorUndefined: Self = StObject.set(x, "selectedNodeColor", js.undefined)
     
-    @scala.inline
-    def setTooltips(value: ChartData): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
+    inline def setTooltips(value: ChartData): Self = StObject.set(x, "tooltips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
+    inline def setTooltipsUndefined: Self = StObject.set(x, "tooltips", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait Headers extends StObject {
 }
 object Headers {
   
-  @scala.inline
-  def apply(headers: StringDictionary[String]): Headers = {
+  inline def apply(headers: StringDictionary[String]): Headers = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
   
-  @scala.inline
-  implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+  extension [Self <: Headers](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

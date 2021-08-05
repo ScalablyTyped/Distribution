@@ -57,58 +57,41 @@ trait SAMLUpdateAuthProviderRequest
 }
 object SAMLUpdateAuthProviderRequest {
   
-  @scala.inline
-  def apply(): SAMLUpdateAuthProviderRequest = {
+  inline def apply(): SAMLUpdateAuthProviderRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SAMLUpdateAuthProviderRequest]
   }
   
-  @scala.inline
-  implicit class SAMLUpdateAuthProviderRequestMutableBuilder[Self <: SAMLUpdateAuthProviderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SAMLUpdateAuthProviderRequest](x: Self) {
     
-    @scala.inline
-    def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
+    inline def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
+    inline def setCallbackURLUndefined: Self = StObject.set(x, "callbackURL", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIdpEntityId(value: String): Self = StObject.set(x, "idpEntityId", value.asInstanceOf[js.Any])
+    inline def setIdpEntityId(value: String): Self = StObject.set(x, "idpEntityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdpEntityIdUndefined: Self = StObject.set(x, "idpEntityId", js.undefined)
+    inline def setIdpEntityIdUndefined: Self = StObject.set(x, "idpEntityId", js.undefined)
     
-    @scala.inline
-    def setRpEntityId(value: String): Self = StObject.set(x, "rpEntityId", value.asInstanceOf[js.Any])
+    inline def setRpEntityId(value: String): Self = StObject.set(x, "rpEntityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRpEntityIdUndefined: Self = StObject.set(x, "rpEntityId", js.undefined)
+    inline def setRpEntityIdUndefined: Self = StObject.set(x, "rpEntityId", js.undefined)
     
-    @scala.inline
-    def setSsoURL(value: String): Self = StObject.set(x, "ssoURL", value.asInstanceOf[js.Any])
+    inline def setSsoURL(value: String): Self = StObject.set(x, "ssoURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsoURLUndefined: Self = StObject.set(x, "ssoURL", js.undefined)
+    inline def setSsoURLUndefined: Self = StObject.set(x, "ssoURL", js.undefined)
     
-    @scala.inline
-    def setX509Certificates(value: js.Array[String]): Self = StObject.set(x, "x509Certificates", value.asInstanceOf[js.Any])
+    inline def setX509Certificates(value: js.Array[String]): Self = StObject.set(x, "x509Certificates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX509CertificatesUndefined: Self = StObject.set(x, "x509Certificates", js.undefined)
+    inline def setX509CertificatesUndefined: Self = StObject.set(x, "x509Certificates", js.undefined)
     
-    @scala.inline
-    def setX509CertificatesVarargs(value: String*): Self = StObject.set(x, "x509Certificates", js.Array(value :_*))
+    inline def setX509CertificatesVarargs(value: String*): Self = StObject.set(x, "x509Certificates", js.Array(value :_*))
   }
 }

@@ -25,19 +25,15 @@ trait Optional[T] extends StObject {
 }
 object Optional {
   
-  @scala.inline
-  def apply[T](IsPresent: Boolean, Value: T): Optional[T] = {
+  inline def apply[T](IsPresent: Boolean, Value: T): Optional[T] = {
     val __obj = js.Dynamic.literal(IsPresent = IsPresent.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Optional[T]]
   }
   
-  @scala.inline
-  implicit class OptionalMutableBuilder[Self <: Optional[?], T] (val x: Self & Optional[T]) extends AnyVal {
+  extension [Self <: Optional[?], T](x: Self & Optional[T]) {
     
-    @scala.inline
-    def setIsPresent(value: Boolean): Self = StObject.set(x, "IsPresent", value.asInstanceOf[js.Any])
+    inline def setIsPresent(value: Boolean): Self = StObject.set(x, "IsPresent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

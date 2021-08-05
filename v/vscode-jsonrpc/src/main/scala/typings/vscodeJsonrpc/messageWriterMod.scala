@@ -19,13 +19,13 @@ object messageWriterMod {
   @js.native
   abstract class AbstractMessageWriter () extends StObject {
     
-    var asError: js.Any = js.native
+    /* private */ var asError: js.Any = js.native
     
-    var closeEmitter: js.Any = js.native
+    /* private */ var closeEmitter: js.Any = js.native
     
     def dispose(): Unit = js.native
     
-    var errorEmitter: js.Any = js.native
+    /* private */ var errorEmitter: js.Any = js.native
     
     /* protected */ def fireClose(): Unit = js.native
     
@@ -52,13 +52,13 @@ object messageWriterMod {
     
     def doWriteMessage(msg: Message): Unit = js.native
     
-    var errorCount: js.Any = js.native
+    /* private */ var errorCount: js.Any = js.native
     
-    var process: js.Any = js.native
+    /* private */ var process: js.Any = js.native
     
-    var queue: js.Any = js.native
+    /* private */ var queue: js.Any = js.native
     
-    var sending: js.Any = js.native
+    /* private */ var sending: js.Any = js.native
   }
   
   @js.native
@@ -95,8 +95,7 @@ object messageWriterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean]
+    inline def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean]
   }
   
   @JSImport("vscode-jsonrpc/lib/messageWriter", "SocketMessageWriter")
@@ -112,17 +111,17 @@ object messageWriterMod {
     
     def doWriteMessage(msg: Message): Unit = js.native
     
-    var encoding: js.Any = js.native
+    /* private */ var encoding: js.Any = js.native
     
-    var errorCount: js.Any = js.native
+    /* private */ var errorCount: js.Any = js.native
     
-    var handleError: js.Any = js.native
+    /* private */ var handleError: js.Any = js.native
     
-    var queue: js.Any = js.native
+    /* private */ var queue: js.Any = js.native
     
-    var sending: js.Any = js.native
+    /* private */ var sending: js.Any = js.native
     
-    var socket: js.Any = js.native
+    /* private */ var socket: js.Any = js.native
   }
   
   @JSImport("vscode-jsonrpc/lib/messageWriter", "StreamMessageWriter")
@@ -136,10 +135,10 @@ object messageWriterMod {
     /* InferMemberOverrides */
     override def dispose(): Unit = js.native
     
-    var encoding: js.Any = js.native
+    /* private */ var encoding: js.Any = js.native
     
-    var errorCount: js.Any = js.native
+    /* private */ var errorCount: js.Any = js.native
     
-    var writable: js.Any = js.native
+    /* private */ var writable: js.Any = js.native
   }
 }

@@ -14,10 +14,8 @@ object legacyParseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(argument: js.Any): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
-  @scala.inline
-  def default(argument: js.Any, options: LegacyParseOptions): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(argument.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def default(argument: js.Any): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(argument.asInstanceOf[js.Any]).asInstanceOf[Date]
+  inline def default(argument: js.Any, options: LegacyParseOptions): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(argument.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Date]
   
   trait LegacyParseOptions extends StObject {
     
@@ -25,20 +23,16 @@ object legacyParseMod {
   }
   object LegacyParseOptions {
     
-    @scala.inline
-    def apply(): LegacyParseOptions = {
+    inline def apply(): LegacyParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LegacyParseOptions]
     }
     
-    @scala.inline
-    implicit class LegacyParseOptionsMutableBuilder[Self <: LegacyParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LegacyParseOptions](x: Self) {
       
-      @scala.inline
-      def setAdditionalDigits(value: `0` | `1` | `2`): Self = StObject.set(x, "additionalDigits", value.asInstanceOf[js.Any])
+      inline def setAdditionalDigits(value: `0` | `1` | `2`): Self = StObject.set(x, "additionalDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalDigitsUndefined: Self = StObject.set(x, "additionalDigits", js.undefined)
+      inline def setAdditionalDigitsUndefined: Self = StObject.set(x, "additionalDigits", js.undefined)
     }
   }
 }

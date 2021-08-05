@@ -113,20 +113,15 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def abortedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("abortedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
+    inline def abortedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("abortedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
     
-    @scala.inline
-    def dbDeleteFailedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("dbDeleteFailedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
+    inline def dbDeleteFailedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("dbDeleteFailedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
     
-    @scala.inline
-    def dbOpenFailedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("dbOpenFailedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
+    inline def dbOpenFailedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("dbOpenFailedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
     
-    @scala.inline
-    def dbWriteFailedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("dbWriteFailedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
+    inline def dbWriteFailedError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("dbWriteFailedError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
     
-    @scala.inline
-    def notFoundError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("notFoundError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
+    inline def notFoundError(error: Error): ErrCode = ^.asInstanceOf[js.Dynamic].applyDynamic("notFoundError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrCode]
   }
   
   @JSImport("interface-datastore", "Key")
@@ -298,8 +293,7 @@ object mod {
     /**
       * Returns whether the input is a valid Key.
       */
-    @scala.inline
-    def isKey(key: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isKey(key: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns a randomly (uuid) generated key.
@@ -309,8 +303,7 @@ object mod {
       * // => Key('/f98719ea086343f7b71f32ea9d9d521d')
       *
       */
-    @scala.inline
-    def random(): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Key]
+    inline def random(): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Key]
     
     /**
       * Constructs a key out of a namespace array.
@@ -321,8 +314,7 @@ object mod {
       * Key.withNamespaces(['one', 'two'])
       * // => Key('/one/two')
       */
-    @scala.inline
-    def withNamespaces(list: js.Array[String]): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("withNamespaces")(list.asInstanceOf[js.Any]).asInstanceOf[Key]
+    inline def withNamespaces(list: js.Array[String]): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("withNamespaces")(list.asInstanceOf[js.Any]).asInstanceOf[Key]
   }
   
   @JSImport("interface-datastore", "MemoryDatastore")
@@ -338,23 +330,17 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def filter[T](iterable: AsyncIterable[T], filterer: js.Function1[/* item */ T, Boolean]): AsyncGenerator[T, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(iterable.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, js.Any, js.Any]]
+    inline def filter[T](iterable: AsyncIterable[T], filterer: js.Function1[/* item */ T, Boolean]): AsyncGenerator[T, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(iterable.asInstanceOf[js.Any], filterer.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, js.Any, js.Any]]
     
-    @scala.inline
-    def map[T, O](iterable: AsyncIterable[T], mapper: js.Function1[/* item */ T, O]): AsyncGenerator[O, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(iterable.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[O, js.Any, js.Any]]
+    inline def map[T, O](iterable: AsyncIterable[T], mapper: js.Function1[/* item */ T, O]): AsyncGenerator[O, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(iterable.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[O, js.Any, js.Any]]
     
-    @scala.inline
-    def replaceStartWith(s: String, r: RegExp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStartWith")(s.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def replaceStartWith(s: String, r: RegExp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceStartWith")(s.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def sortAll[T](iterable: AsyncIterable[T], sorter: js.Function1[/* items */ js.Array[T], js.Array[T]]): AsyncGenerator[T, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortAll")(iterable.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, js.Any, js.Any]]
+    inline def sortAll[T](iterable: AsyncIterable[T], sorter: js.Function1[/* items */ js.Array[T], js.Array[T]]): AsyncGenerator[T, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortAll")(iterable.asInstanceOf[js.Any], sorter.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, js.Any, js.Any]]
     
-    @scala.inline
-    def take[T](iterable: AsyncIterable[T], n: Double): AsyncGenerator[T, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(iterable.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, js.Any, js.Any]]
+    inline def take[T](iterable: AsyncIterable[T], n: Double): AsyncGenerator[T, js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(iterable.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, js.Any, js.Any]]
     
-    @scala.inline
-    def tmpdir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpdir")().asInstanceOf[String]
+    inline def tmpdir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tmpdir")().asInstanceOf[String]
   }
   
   @js.native
@@ -378,17 +364,14 @@ object mod {
   }
   object ErrCode {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String): ErrCode = {
+    inline def apply(code: String, message: String, name: String): ErrCode = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrCode]
     }
     
-    @scala.inline
-    implicit class ErrCodeMutableBuilder[Self <: ErrCode] (val x: Self) extends AnyVal {
+    extension [Self <: ErrCode](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -398,17 +381,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(signal: AbortSignal): Options = {
+    inline def apply(signal: AbortSignal): Options = {
       val __obj = js.Dynamic.literal(signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -420,20 +400,16 @@ object mod {
   }
   object Pair {
     
-    @scala.inline
-    def apply[Value](key: Key, value: Value): Pair[Value] = {
+    inline def apply[Value](key: Key, value: Value): Pair[Value] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pair[Value]]
     }
     
-    @scala.inline
-    implicit class PairMutableBuilder[Self <: Pair[?], Value] (val x: Self & Pair[Value]) extends AnyVal {
+    extension [Self <: Pair[?], Value](x: Self & Pair[Value]) {
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -453,8 +429,7 @@ object mod {
   }
   object Query {
     
-    @scala.inline
-    def apply[Value](): Query[Value] = {
+    inline def apply[Value](): Query[Value] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Query[Value]]
     }
@@ -463,50 +438,35 @@ object mod {
     
     type Order[Value] = js.Function1[/* items */ js.Array[Pair[Value]], js.Array[Pair[Value]]]
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query[?], Value] (val x: Self & Query[Value]) extends AnyVal {
+    extension [Self <: Query[?], Value](x: Self & Query[Value]) {
       
-      @scala.inline
-      def setFilters(value: js.Array[Filter[Value]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[Filter[Value]]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: Filter[Value]*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Filter[Value]*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setKeysOnly(value: Boolean): Self = StObject.set(x, "keysOnly", value.asInstanceOf[js.Any])
+      inline def setKeysOnly(value: Boolean): Self = StObject.set(x, "keysOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysOnlyUndefined: Self = StObject.set(x, "keysOnly", js.undefined)
+      inline def setKeysOnlyUndefined: Self = StObject.set(x, "keysOnly", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrders(value: js.Array[Order[Value]]): Self = StObject.set(x, "orders", value.asInstanceOf[js.Any])
+      inline def setOrders(value: js.Array[Order[Value]]): Self = StObject.set(x, "orders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrdersUndefined: Self = StObject.set(x, "orders", js.undefined)
+      inline def setOrdersUndefined: Self = StObject.set(x, "orders", js.undefined)
       
-      @scala.inline
-      def setOrdersVarargs(value: Order[Value]*): Self = StObject.set(x, "orders", js.Array(value :_*))
+      inline def setOrdersVarargs(value: Order[Value]*): Self = StObject.set(x, "orders", js.Array(value :_*))
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

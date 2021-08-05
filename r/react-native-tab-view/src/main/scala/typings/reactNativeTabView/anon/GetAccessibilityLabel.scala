@@ -21,8 +21,7 @@ trait GetAccessibilityLabel extends StObject {
 }
 object GetAccessibilityLabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAccessibilityLabel: Scene[typings.reactNativeTabView.typesMod.Route] => js.UndefOr[String],
     getAccessible: Scene[typings.reactNativeTabView.typesMod.Route] => Boolean,
     getLabelText: Scene[typings.reactNativeTabView.typesMod.Route] => js.UndefOr[String],
@@ -33,22 +32,16 @@ object GetAccessibilityLabel {
     __obj.asInstanceOf[GetAccessibilityLabel]
   }
   
-  @scala.inline
-  implicit class GetAccessibilityLabelMutableBuilder[Self <: GetAccessibilityLabel] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessibilityLabel](x: Self) {
     
-    @scala.inline
-    def setGetAccessibilityLabel(value: Scene[typings.reactNativeTabView.typesMod.Route] => js.UndefOr[String]): Self = StObject.set(x, "getAccessibilityLabel", js.Any.fromFunction1(value))
+    inline def setGetAccessibilityLabel(value: Scene[typings.reactNativeTabView.typesMod.Route] => js.UndefOr[String]): Self = StObject.set(x, "getAccessibilityLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAccessible(value: Scene[typings.reactNativeTabView.typesMod.Route] => Boolean): Self = StObject.set(x, "getAccessible", js.Any.fromFunction1(value))
+    inline def setGetAccessible(value: Scene[typings.reactNativeTabView.typesMod.Route] => Boolean): Self = StObject.set(x, "getAccessible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLabelText(value: Scene[typings.reactNativeTabView.typesMod.Route] => js.UndefOr[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction1(value))
+    inline def setGetLabelText(value: Scene[typings.reactNativeTabView.typesMod.Route] => js.UndefOr[String]): Self = StObject.set(x, "getLabelText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTestID(value: Scene[typings.reactNativeTabView.typesMod.Route] => js.UndefOr[String]): Self = StObject.set(x, "getTestID", js.Any.fromFunction1(value))
+    inline def setGetTestID(value: Scene[typings.reactNativeTabView.typesMod.Route] => js.UndefOr[String]): Self = StObject.set(x, "getTestID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderIndicator(value: Props[typings.reactNativeTabView.typesMod.Route] => Element): Self = StObject.set(x, "renderIndicator", js.Any.fromFunction1(value))
+    inline def setRenderIndicator(value: Props[typings.reactNativeTabView.typesMod.Route] => Element): Self = StObject.set(x, "renderIndicator", js.Any.fromFunction1(value))
   }
 }

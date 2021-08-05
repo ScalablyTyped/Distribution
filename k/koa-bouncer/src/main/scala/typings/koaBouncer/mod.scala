@@ -167,17 +167,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addMethod(name: String, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMethod")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addMethod(name: String, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMethod")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def isSafeInteger(n: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeInteger")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSafeInteger(n: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeInteger")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def middleware(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def middleware(opts: MiddlewareOption): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def middleware(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def middleware(opts: MiddlewareOption): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   trait MiddlewareOption extends StObject {
     
@@ -189,32 +185,24 @@ object mod {
   }
   object MiddlewareOption {
     
-    @scala.inline
-    def apply(): MiddlewareOption = {
+    inline def apply(): MiddlewareOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MiddlewareOption]
     }
     
-    @scala.inline
-    implicit class MiddlewareOptionMutableBuilder[Self <: MiddlewareOption] (val x: Self) extends AnyVal {
+    extension [Self <: MiddlewareOption](x: Self) {
       
-      @scala.inline
-      def setGetBody(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getBody", js.Any.fromFunction1(value))
+      inline def setGetBody(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getBody", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetBodyUndefined: Self = StObject.set(x, "getBody", js.undefined)
+      inline def setGetBodyUndefined: Self = StObject.set(x, "getBody", js.undefined)
       
-      @scala.inline
-      def setGetParams(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction1(value))
+      inline def setGetParams(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getParams", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
+      inline def setGetParamsUndefined: Self = StObject.set(x, "getParams", js.undefined)
       
-      @scala.inline
-      def setGetQuery(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getQuery", js.Any.fromFunction1(value))
+      inline def setGetQuery(value: /* ctx */ Context => js.Any): Self = StObject.set(x, "getQuery", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetQueryUndefined: Self = StObject.set(x, "getQuery", js.undefined)
+      inline def setGetQueryUndefined: Self = StObject.set(x, "getQuery", js.undefined)
     }
   }
   

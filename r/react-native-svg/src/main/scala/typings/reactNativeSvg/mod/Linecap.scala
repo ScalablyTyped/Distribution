@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Linecap extends StObject
 object Linecap {
   
-  @scala.inline
-  def butt: typings.reactNativeSvg.reactNativeSvgStrings.butt = "butt".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.butt]
+  inline def butt: typings.reactNativeSvg.reactNativeSvgStrings.butt = "butt".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.butt]
   
-  @scala.inline
-  def round: typings.reactNativeSvg.reactNativeSvgStrings.round = "round".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.round]
+  inline def round: typings.reactNativeSvg.reactNativeSvgStrings.round = "round".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.round]
   
-  @scala.inline
-  def square: typings.reactNativeSvg.reactNativeSvgStrings.square = "square".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.square]
+  inline def square: typings.reactNativeSvg.reactNativeSvgStrings.square = "square".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.square]
 }

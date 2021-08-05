@@ -98,127 +98,87 @@ trait ConfigurationItem extends StObject {
 }
 object ConfigurationItem {
   
-  @scala.inline
-  def apply(): ConfigurationItem = {
+  inline def apply(): ConfigurationItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationItem]
   }
   
-  @scala.inline
-  implicit class ConfigurationItemMutableBuilder[Self <: ConfigurationItem] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationItem](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: AvailabilityZone): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
-    @scala.inline
-    def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+    inline def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
+    inline def setAwsRegionUndefined: Self = StObject.set(x, "awsRegion", js.undefined)
     
-    @scala.inline
-    def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: Configuration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationItemCaptureTime(value: ConfigurationItemCaptureTime): Self = StObject.set(x, "configurationItemCaptureTime", value.asInstanceOf[js.Any])
+    inline def setConfigurationItemCaptureTime(value: ConfigurationItemCaptureTime): Self = StObject.set(x, "configurationItemCaptureTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationItemCaptureTimeUndefined: Self = StObject.set(x, "configurationItemCaptureTime", js.undefined)
+    inline def setConfigurationItemCaptureTimeUndefined: Self = StObject.set(x, "configurationItemCaptureTime", js.undefined)
     
-    @scala.inline
-    def setConfigurationItemMD5Hash(value: ConfigurationItemMD5Hash): Self = StObject.set(x, "configurationItemMD5Hash", value.asInstanceOf[js.Any])
+    inline def setConfigurationItemMD5Hash(value: ConfigurationItemMD5Hash): Self = StObject.set(x, "configurationItemMD5Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationItemMD5HashUndefined: Self = StObject.set(x, "configurationItemMD5Hash", js.undefined)
+    inline def setConfigurationItemMD5HashUndefined: Self = StObject.set(x, "configurationItemMD5Hash", js.undefined)
     
-    @scala.inline
-    def setConfigurationItemStatus(value: ConfigurationItemStatus): Self = StObject.set(x, "configurationItemStatus", value.asInstanceOf[js.Any])
+    inline def setConfigurationItemStatus(value: ConfigurationItemStatus): Self = StObject.set(x, "configurationItemStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationItemStatusUndefined: Self = StObject.set(x, "configurationItemStatus", js.undefined)
+    inline def setConfigurationItemStatusUndefined: Self = StObject.set(x, "configurationItemStatus", js.undefined)
     
-    @scala.inline
-    def setConfigurationStateId(value: ConfigurationStateId): Self = StObject.set(x, "configurationStateId", value.asInstanceOf[js.Any])
+    inline def setConfigurationStateId(value: ConfigurationStateId): Self = StObject.set(x, "configurationStateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationStateIdUndefined: Self = StObject.set(x, "configurationStateId", js.undefined)
+    inline def setConfigurationStateIdUndefined: Self = StObject.set(x, "configurationStateId", js.undefined)
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setRelatedEvents(value: RelatedEventList): Self = StObject.set(x, "relatedEvents", value.asInstanceOf[js.Any])
+    inline def setRelatedEvents(value: RelatedEventList): Self = StObject.set(x, "relatedEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedEventsUndefined: Self = StObject.set(x, "relatedEvents", js.undefined)
+    inline def setRelatedEventsUndefined: Self = StObject.set(x, "relatedEvents", js.undefined)
     
-    @scala.inline
-    def setRelatedEventsVarargs(value: RelatedEvent*): Self = StObject.set(x, "relatedEvents", js.Array(value :_*))
+    inline def setRelatedEventsVarargs(value: RelatedEvent*): Self = StObject.set(x, "relatedEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setRelationships(value: RelationshipList): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+    inline def setRelationships(value: RelationshipList): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
+    inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
-    @scala.inline
-    def setRelationshipsVarargs(value: Relationship*): Self = StObject.set(x, "relationships", js.Array(value :_*))
+    inline def setRelationshipsVarargs(value: Relationship*): Self = StObject.set(x, "relationships", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceCreationTime(value: ResourceCreationTime): Self = StObject.set(x, "resourceCreationTime", value.asInstanceOf[js.Any])
+    inline def setResourceCreationTime(value: ResourceCreationTime): Self = StObject.set(x, "resourceCreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceCreationTimeUndefined: Self = StObject.set(x, "resourceCreationTime", js.undefined)
+    inline def setResourceCreationTimeUndefined: Self = StObject.set(x, "resourceCreationTime", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setSupplementaryConfiguration(value: SupplementaryConfiguration): Self = StObject.set(x, "supplementaryConfiguration", value.asInstanceOf[js.Any])
+    inline def setSupplementaryConfiguration(value: SupplementaryConfiguration): Self = StObject.set(x, "supplementaryConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupplementaryConfigurationUndefined: Self = StObject.set(x, "supplementaryConfiguration", js.undefined)
+    inline def setSupplementaryConfigurationUndefined: Self = StObject.set(x, "supplementaryConfiguration", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

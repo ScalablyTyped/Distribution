@@ -12,16 +12,13 @@ trait HeroPlaytime
 }
 object HeroPlaytime {
   
-  @scala.inline
-  def apply(hero: String, img: String, played: String): HeroPlaytime = {
+  inline def apply(hero: String, img: String, played: String): HeroPlaytime = {
     val __obj = js.Dynamic.literal(hero = hero.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], played = played.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeroPlaytime]
   }
   
-  @scala.inline
-  implicit class HeroPlaytimeMutableBuilder[Self <: HeroPlaytime] (val x: Self) extends AnyVal {
+  extension [Self <: HeroPlaytime](x: Self) {
     
-    @scala.inline
-    def setPlayed(value: String): Self = StObject.set(x, "played", value.asInstanceOf[js.Any])
+    inline def setPlayed(value: String): Self = StObject.set(x, "played", value.asInstanceOf[js.Any])
   }
 }

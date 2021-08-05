@@ -102,14 +102,11 @@ object MediaProperties {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createJpeg(): typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createJpeg")().asInstanceOf[typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties]
+    inline def createJpeg(): typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createJpeg")().asInstanceOf[typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties]
     
-    @scala.inline
-    def createJpegXR(): typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createJpegXR")().asInstanceOf[typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties]
+    inline def createJpegXR(): typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createJpegXR")().asInstanceOf[typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties]
     
-    @scala.inline
-    def createPng(): typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createPng")().asInstanceOf[typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties]
+    inline def createPng(): typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("createPng")().asInstanceOf[typings.winrt.Windows.Media.MediaProperties.ImageEncodingProperties]
   }
   
   @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile")
@@ -134,26 +131,19 @@ object MediaProperties {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createFromFileAsync(file: IStorageFile): IAsyncOperation[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]]
+    inline def createFromFileAsync(file: IStorageFile): IAsyncOperation[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromFileAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]]
     
-    @scala.inline
-    def createFromStreamAsync(stream: IRandomAccessStream): IAsyncOperation[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromStreamAsync")(stream.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]]
+    inline def createFromStreamAsync(stream: IRandomAccessStream): IAsyncOperation[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromStreamAsync")(stream.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]]
     
-    @scala.inline
-    def createM4a(quality: AudioEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createM4a")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
+    inline def createM4a(quality: AudioEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createM4a")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
     
-    @scala.inline
-    def createMp3(quality: AudioEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createMp3")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
+    inline def createMp3(quality: AudioEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createMp3")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
     
-    @scala.inline
-    def createMp4(quality: VideoEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createMp4")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
+    inline def createMp4(quality: VideoEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createMp4")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
     
-    @scala.inline
-    def createWma(quality: AudioEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createWma")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
+    inline def createWma(quality: AudioEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createWma")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
     
-    @scala.inline
-    def createWmv(quality: VideoEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createWmv")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
+    inline def createWmv(quality: VideoEncodingQuality): typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile = ^.asInstanceOf[js.Dynamic].applyDynamic("createWmv")(quality.asInstanceOf[js.Any]).asInstanceOf[typings.winrt.Windows.Media.MediaProperties.MediaEncodingProfile]
   }
   
   @JSGlobal("Windows.Media.MediaProperties.MediaPropertySet")

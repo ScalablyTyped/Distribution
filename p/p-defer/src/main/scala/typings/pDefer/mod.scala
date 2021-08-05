@@ -22,8 +22,7 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply[ValueType](): DeferredPromise[ValueType] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[DeferredPromise[ValueType]]
+  inline def apply[ValueType](): DeferredPromise[ValueType] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[DeferredPromise[ValueType]]
   
   @JSImport("p-defer", JSImport.Namespace)
   @js.native

@@ -51,31 +51,23 @@ trait SchemaIntegerOperatorOptions extends StObject {
 }
 object SchemaIntegerOperatorOptions {
   
-  @scala.inline
-  def apply(): SchemaIntegerOperatorOptions = {
+  inline def apply(): SchemaIntegerOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIntegerOperatorOptions]
   }
   
-  @scala.inline
-  implicit class SchemaIntegerOperatorOptionsMutableBuilder[Self <: SchemaIntegerOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIntegerOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setGreaterThanOperatorName(value: String): Self = StObject.set(x, "greaterThanOperatorName", value.asInstanceOf[js.Any])
+    inline def setGreaterThanOperatorName(value: String): Self = StObject.set(x, "greaterThanOperatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreaterThanOperatorNameUndefined: Self = StObject.set(x, "greaterThanOperatorName", js.undefined)
+    inline def setGreaterThanOperatorNameUndefined: Self = StObject.set(x, "greaterThanOperatorName", js.undefined)
     
-    @scala.inline
-    def setLessThanOperatorName(value: String): Self = StObject.set(x, "lessThanOperatorName", value.asInstanceOf[js.Any])
+    inline def setLessThanOperatorName(value: String): Self = StObject.set(x, "lessThanOperatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLessThanOperatorNameUndefined: Self = StObject.set(x, "lessThanOperatorName", js.undefined)
+    inline def setLessThanOperatorNameUndefined: Self = StObject.set(x, "lessThanOperatorName", js.undefined)
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

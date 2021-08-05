@@ -25,8 +25,7 @@ trait History extends StObject {
 }
 object History {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     index: Double,
     key: String,
     routeNames: js.Array[String],
@@ -38,40 +37,28 @@ object History {
     __obj.asInstanceOf[History]
   }
   
-  @scala.inline
-  implicit class HistoryMutableBuilder[Self <: History] (val x: Self) extends AnyVal {
+  extension [Self <: History](x: Self) {
     
-    @scala.inline
-    def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: js.Any*): Self = StObject.set(x, "history", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
+    inline def setRouteNames(value: js.Array[String]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+    inline def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setRoutes(value: js.Array[KeyName & `0` & `1`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[KeyName & `0` & `1`]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(value: (KeyName & `0` & `1`)*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: (KeyName & `0` & `1`)*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
-    @scala.inline
-    def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+    inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

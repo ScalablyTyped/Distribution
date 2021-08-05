@@ -20,22 +20,17 @@ trait Amountpercent extends StObject {
 }
 object Amountpercent {
   
-  @scala.inline
-  def apply(destination: String): Amountpercent = {
+  inline def apply(destination: String): Amountpercent = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[Amountpercent]
   }
   
-  @scala.inline
-  implicit class AmountpercentMutableBuilder[Self <: Amountpercent] (val x: Self) extends AnyVal {
+  extension [Self <: Amountpercent](x: Self) {
     
-    @scala.inline
-    def setAmount_percent(value: Double): Self = StObject.set(x, "amount_percent", value.asInstanceOf[js.Any])
+    inline def setAmount_percent(value: Double): Self = StObject.set(x, "amount_percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmount_percentUndefined: Self = StObject.set(x, "amount_percent", js.undefined)
+    inline def setAmount_percentUndefined: Self = StObject.set(x, "amount_percent", js.undefined)
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InputFilmScanMode extends StObject
 object InputFilmScanMode {
   
-  @scala.inline
-  def `black-and-white-negative-film`: typings.ipp.ippStrings.`black-and-white-negative-film` = "black-and-white-negative-film".asInstanceOf[typings.ipp.ippStrings.`black-and-white-negative-film`]
+  inline def `black-and-white-negative-film`: typings.ipp.ippStrings.`black-and-white-negative-film` = "black-and-white-negative-film".asInstanceOf[typings.ipp.ippStrings.`black-and-white-negative-film`]
   
-  @scala.inline
-  def `color-negative-film`: typings.ipp.ippStrings.`color-negative-film` = "color-negative-film".asInstanceOf[typings.ipp.ippStrings.`color-negative-film`]
+  inline def `color-negative-film`: typings.ipp.ippStrings.`color-negative-film` = "color-negative-film".asInstanceOf[typings.ipp.ippStrings.`color-negative-film`]
   
-  @scala.inline
-  def `color-slide-film`: typings.ipp.ippStrings.`color-slide-film` = "color-slide-film".asInstanceOf[typings.ipp.ippStrings.`color-slide-film`]
+  inline def `color-slide-film`: typings.ipp.ippStrings.`color-slide-film` = "color-slide-film".asInstanceOf[typings.ipp.ippStrings.`color-slide-film`]
   
-  @scala.inline
-  def `not-applicable`: typings.ipp.ippStrings.`not-applicable` = "not-applicable".asInstanceOf[typings.ipp.ippStrings.`not-applicable`]
+  inline def `not-applicable`: typings.ipp.ippStrings.`not-applicable` = "not-applicable".asInstanceOf[typings.ipp.ippStrings.`not-applicable`]
 }

@@ -118,17 +118,14 @@ object mod {
     }
     object Context {
       
-      @scala.inline
-      def apply($auth: Auth[js.Any]): Context = {
+      inline def apply($auth: Auth[js.Any]): Context = {
         val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
         __obj.asInstanceOf[Context]
       }
       
-      @scala.inline
-      implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+      extension [Self <: Context](x: Self) {
         
-        @scala.inline
-        def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+        inline def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -142,17 +139,14 @@ object mod {
     }
     object Context {
       
-      @scala.inline
-      def apply($auth: Auth[js.Any]): Context = {
+      inline def apply($auth: Auth[js.Any]): Context = {
         val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
         __obj.asInstanceOf[Context]
       }
       
-      @scala.inline
-      implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+      extension [Self <: Context](x: Self) {
         
-        @scala.inline
-        def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+        inline def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -165,20 +159,16 @@ object mod {
     }
     object ComponentOptions {
       
-      @scala.inline
-      def apply[V /* <: Vue */](): ComponentOptions[V] = {
+      inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ComponentOptions[V]]
       }
       
-      @scala.inline
-      implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
+      extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
         
-        @scala.inline
-        def setAuth(value: Boolean | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: Boolean | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       }
     }
   }
@@ -192,17 +182,14 @@ object mod {
     }
     object Vue {
       
-      @scala.inline
-      def apply($auth: Auth[js.Any]): typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue = {
+      inline def apply($auth: Auth[js.Any]): typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue = {
         val __obj = js.Dynamic.literal($auth = $auth.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue]
       }
       
-      @scala.inline
-      implicit class VueMutableBuilder[Self <: typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue] (val x: Self) extends AnyVal {
+      extension [Self <: typings.nuxtjsAuth.mod.vueTypesVueAugmentingMod.Vue](x: Self) {
         
-        @scala.inline
-        def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
+        inline def set$auth(value: Auth[js.Any]): Self = StObject.set(x, "$auth", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -120,8 +120,7 @@ object matchersByNameMod {
   @js.native
   val toBeBoolean: ToBeBoolean_ = js.native
   
-  @scala.inline
-  def toBeCalculable(actual: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBeCalculable")(actual.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def toBeCalculable(actual: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBeCalculable")(actual.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("jasmine-expect/dist/matchersByName", "toBeDate")
   @js.native

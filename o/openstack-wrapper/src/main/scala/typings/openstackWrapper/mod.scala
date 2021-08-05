@@ -557,8 +557,7 @@ object mod {
     var user_name: String = js.native
   }
   
-  @scala.inline
-  def getSimpleProject(
+  inline def getSimpleProject(
     username: String,
     password: String,
     project_id: String,
@@ -582,8 +581,7 @@ object mod {
   }
   object Project {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       general_token: String,
       glance: Glance,
       neutron: Neutron,
@@ -595,26 +593,19 @@ object mod {
       __obj.asInstanceOf[Project]
     }
     
-    @scala.inline
-    implicit class ProjectMutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
+    extension [Self <: Project](x: Self) {
       
-      @scala.inline
-      def setGeneral_token(value: String): Self = StObject.set(x, "general_token", value.asInstanceOf[js.Any])
+      inline def setGeneral_token(value: String): Self = StObject.set(x, "general_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlance(value: Glance): Self = StObject.set(x, "glance", value.asInstanceOf[js.Any])
+      inline def setGlance(value: Glance): Self = StObject.set(x, "glance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutron(value: Neutron): Self = StObject.set(x, "neutron", value.asInstanceOf[js.Any])
+      inline def setNeutron(value: Neutron): Self = StObject.set(x, "neutron", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNova(value: Nova): Self = StObject.set(x, "nova", value.asInstanceOf[js.Any])
+      inline def setNova(value: Nova): Self = StObject.set(x, "nova", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOctavia(value: Octavia): Self = StObject.set(x, "octavia", value.asInstanceOf[js.Any])
+      inline def setOctavia(value: Octavia): Self = StObject.set(x, "octavia", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject_token(value: String): Self = StObject.set(x, "project_token", value.asInstanceOf[js.Any])
+      inline def setProject_token(value: String): Self = StObject.set(x, "project_token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -636,56 +627,40 @@ object mod {
   }
   object RequestOption {
     
-    @scala.inline
-    def apply(): RequestOption = {
+    inline def apply(): RequestOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestOption]
     }
     
-    @scala.inline
-    implicit class RequestOptionMutableBuilder[Self <: RequestOption] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOption](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setMetricLogger(value: js.Any): Self = StObject.set(x, "metricLogger", value.asInstanceOf[js.Any])
+      inline def setMetricLogger(value: js.Any): Self = StObject.set(x, "metricLogger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricLoggerUndefined: Self = StObject.set(x, "metricLogger", js.undefined)
+      inline def setMetricLoggerUndefined: Self = StObject.set(x, "metricLogger", js.undefined)
       
-      @scala.inline
-      def setMetricRequestID(value: String): Self = StObject.set(x, "metricRequestID", value.asInstanceOf[js.Any])
+      inline def setMetricRequestID(value: String): Self = StObject.set(x, "metricRequestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricRequestIDUndefined: Self = StObject.set(x, "metricRequestID", js.undefined)
+      inline def setMetricRequestIDUndefined: Self = StObject.set(x, "metricRequestID", js.undefined)
       
-      @scala.inline
-      def setMetricUserName(value: String): Self = StObject.set(x, "metricUserName", value.asInstanceOf[js.Any])
+      inline def setMetricUserName(value: String): Self = StObject.set(x, "metricUserName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricUserNameUndefined: Self = StObject.set(x, "metricUserName", js.undefined)
+      inline def setMetricUserNameUndefined: Self = StObject.set(x, "metricUserName", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: js.Any): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
 }

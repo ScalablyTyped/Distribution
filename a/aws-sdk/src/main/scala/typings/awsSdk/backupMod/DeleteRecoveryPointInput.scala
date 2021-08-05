@@ -18,19 +18,15 @@ trait DeleteRecoveryPointInput extends StObject {
 }
 object DeleteRecoveryPointInput {
   
-  @scala.inline
-  def apply(BackupVaultName: BackupVaultName, RecoveryPointArn: ARN): DeleteRecoveryPointInput = {
+  inline def apply(BackupVaultName: BackupVaultName, RecoveryPointArn: ARN): DeleteRecoveryPointInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any], RecoveryPointArn = RecoveryPointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRecoveryPointInput]
   }
   
-  @scala.inline
-  implicit class DeleteRecoveryPointInputMutableBuilder[Self <: DeleteRecoveryPointInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRecoveryPointInput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
+    inline def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
   }
 }

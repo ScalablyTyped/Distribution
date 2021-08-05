@@ -34,29 +34,22 @@ object mod extends Shortcut {
   }
   object FlagProps {
     
-    @scala.inline
-    def apply(): FlagProps = {
+    inline def apply(): FlagProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FlagProps]
     }
     
-    @scala.inline
-    implicit class FlagPropsMutableBuilder[Self <: FlagProps] (val x: Self) extends AnyVal {
+    extension [Self <: FlagProps](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackNull: Self = StObject.set(x, "fallback", null)
+      inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     }
   }
   

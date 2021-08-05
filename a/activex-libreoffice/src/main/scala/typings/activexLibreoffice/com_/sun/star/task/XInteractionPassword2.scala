@@ -33,8 +33,7 @@ trait XInteractionPassword2
 }
 object XInteractionPassword2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Password: String,
     PasswordToModify: String,
     RecommendReadOnly: Boolean,
@@ -53,25 +52,18 @@ object XInteractionPassword2 {
     __obj.asInstanceOf[XInteractionPassword2]
   }
   
-  @scala.inline
-  implicit class XInteractionPassword2MutableBuilder[Self <: XInteractionPassword2] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionPassword2](x: Self) {
     
-    @scala.inline
-    def setGetPasswordToModify(value: () => String): Self = StObject.set(x, "getPasswordToModify", js.Any.fromFunction0(value))
+    inline def setGetPasswordToModify(value: () => String): Self = StObject.set(x, "getPasswordToModify", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecommendReadOnly(value: () => Boolean): Self = StObject.set(x, "getRecommendReadOnly", js.Any.fromFunction0(value))
+    inline def setGetRecommendReadOnly(value: () => Boolean): Self = StObject.set(x, "getRecommendReadOnly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPasswordToModify(value: String): Self = StObject.set(x, "PasswordToModify", value.asInstanceOf[js.Any])
+    inline def setPasswordToModify(value: String): Self = StObject.set(x, "PasswordToModify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendReadOnly(value: Boolean): Self = StObject.set(x, "RecommendReadOnly", value.asInstanceOf[js.Any])
+    inline def setRecommendReadOnly(value: Boolean): Self = StObject.set(x, "RecommendReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPasswordToModify(value: String => Unit): Self = StObject.set(x, "setPasswordToModify", js.Any.fromFunction1(value))
+    inline def setSetPasswordToModify(value: String => Unit): Self = StObject.set(x, "setPasswordToModify", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRecommendReadOnly(value: Boolean => Unit): Self = StObject.set(x, "setRecommendReadOnly", js.Any.fromFunction1(value))
+    inline def setSetRecommendReadOnly(value: Boolean => Unit): Self = StObject.set(x, "setRecommendReadOnly", js.Any.fromFunction1(value))
   }
 }

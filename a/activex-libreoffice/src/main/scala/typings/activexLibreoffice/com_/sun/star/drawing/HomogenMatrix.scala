@@ -17,8 +17,7 @@ trait HomogenMatrix extends StObject {
 }
 object HomogenMatrix {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Line1: HomogenMatrixLine,
     Line2: HomogenMatrixLine,
     Line3: HomogenMatrixLine,
@@ -28,19 +27,14 @@ object HomogenMatrix {
     __obj.asInstanceOf[HomogenMatrix]
   }
   
-  @scala.inline
-  implicit class HomogenMatrixMutableBuilder[Self <: HomogenMatrix] (val x: Self) extends AnyVal {
+  extension [Self <: HomogenMatrix](x: Self) {
     
-    @scala.inline
-    def setLine1(value: HomogenMatrixLine): Self = StObject.set(x, "Line1", value.asInstanceOf[js.Any])
+    inline def setLine1(value: HomogenMatrixLine): Self = StObject.set(x, "Line1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine2(value: HomogenMatrixLine): Self = StObject.set(x, "Line2", value.asInstanceOf[js.Any])
+    inline def setLine2(value: HomogenMatrixLine): Self = StObject.set(x, "Line2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine3(value: HomogenMatrixLine): Self = StObject.set(x, "Line3", value.asInstanceOf[js.Any])
+    inline def setLine3(value: HomogenMatrixLine): Self = StObject.set(x, "Line3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine4(value: HomogenMatrixLine): Self = StObject.set(x, "Line4", value.asInstanceOf[js.Any])
+    inline def setLine4(value: HomogenMatrixLine): Self = StObject.set(x, "Line4", value.asInstanceOf[js.Any])
   }
 }

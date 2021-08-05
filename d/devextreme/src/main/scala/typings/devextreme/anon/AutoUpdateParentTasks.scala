@@ -12,25 +12,19 @@ trait AutoUpdateParentTasks extends StObject {
 }
 object AutoUpdateParentTasks {
   
-  @scala.inline
-  def apply(): AutoUpdateParentTasks = {
+  inline def apply(): AutoUpdateParentTasks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoUpdateParentTasks]
   }
   
-  @scala.inline
-  implicit class AutoUpdateParentTasksMutableBuilder[Self <: AutoUpdateParentTasks] (val x: Self) extends AnyVal {
+  extension [Self <: AutoUpdateParentTasks](x: Self) {
     
-    @scala.inline
-    def setAutoUpdateParentTasks(value: Boolean): Self = StObject.set(x, "autoUpdateParentTasks", value.asInstanceOf[js.Any])
+    inline def setAutoUpdateParentTasks(value: Boolean): Self = StObject.set(x, "autoUpdateParentTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdateParentTasksUndefined: Self = StObject.set(x, "autoUpdateParentTasks", js.undefined)
+    inline def setAutoUpdateParentTasksUndefined: Self = StObject.set(x, "autoUpdateParentTasks", js.undefined)
     
-    @scala.inline
-    def setValidateDependencies(value: Boolean): Self = StObject.set(x, "validateDependencies", value.asInstanceOf[js.Any])
+    inline def setValidateDependencies(value: Boolean): Self = StObject.set(x, "validateDependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateDependenciesUndefined: Self = StObject.set(x, "validateDependencies", js.undefined)
+    inline def setValidateDependenciesUndefined: Self = StObject.set(x, "validateDependencies", js.undefined)
   }
 }

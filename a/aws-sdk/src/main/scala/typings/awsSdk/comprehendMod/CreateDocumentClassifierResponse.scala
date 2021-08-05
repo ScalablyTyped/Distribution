@@ -13,19 +13,15 @@ trait CreateDocumentClassifierResponse extends StObject {
 }
 object CreateDocumentClassifierResponse {
   
-  @scala.inline
-  def apply(): CreateDocumentClassifierResponse = {
+  inline def apply(): CreateDocumentClassifierResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDocumentClassifierResponse]
   }
   
-  @scala.inline
-  implicit class CreateDocumentClassifierResponseMutableBuilder[Self <: CreateDocumentClassifierResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDocumentClassifierResponse](x: Self) {
     
-    @scala.inline
-    def setDocumentClassifierArn(value: DocumentClassifierArn): Self = StObject.set(x, "DocumentClassifierArn", value.asInstanceOf[js.Any])
+    inline def setDocumentClassifierArn(value: DocumentClassifierArn): Self = StObject.set(x, "DocumentClassifierArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentClassifierArnUndefined: Self = StObject.set(x, "DocumentClassifierArn", js.undefined)
+    inline def setDocumentClassifierArnUndefined: Self = StObject.set(x, "DocumentClassifierArn", js.undefined)
   }
 }

@@ -41,8 +41,7 @@ trait IFont extends StObject {
 }
 object IFont {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ascender: Double,
     boundingBox: XMax_,
     cssFontStyle: String,
@@ -59,49 +58,34 @@ object IFont {
     __obj.asInstanceOf[IFont]
   }
   
-  @scala.inline
-  implicit class IFontMutableBuilder[Self <: IFont] (val x: Self) extends AnyVal {
+  extension [Self <: IFont](x: Self) {
     
-    @scala.inline
-    def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
+    inline def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBox(value: XMax_): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: XMax_): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssFontStyle(value: String): Self = StObject.set(x, "cssFontStyle", value.asInstanceOf[js.Any])
+    inline def setCssFontStyle(value: String): Self = StObject.set(x, "cssFontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssFontWeight(value: String): Self = StObject.set(x, "cssFontWeight", value.asInstanceOf[js.Any])
+    inline def setCssFontWeight(value: String): Self = StObject.set(x, "cssFontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescender(value: Double): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
+    inline def setDescender(value: Double): Self = StObject.set(x, "descender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphs(value: js.Array[Ha]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
+    inline def setGlyphs(value: js.Array[Ha]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphsVarargs(value: Ha*): Self = StObject.set(x, "glyphs", js.Array(value :_*))
+    inline def setGlyphsVarargs(value: Ha*): Self = StObject.set(x, "glyphs", js.Array(value :_*))
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal_font_information(value: Copyright): Self = StObject.set(x, "original_font_information", value.asInstanceOf[js.Any])
+    inline def setOriginal_font_information(value: Copyright): Self = StObject.set(x, "original_font_information", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal_font_informationUndefined: Self = StObject.set(x, "original_font_information", js.undefined)
+    inline def setOriginal_font_informationUndefined: Self = StObject.set(x, "original_font_information", js.undefined)
     
-    @scala.inline
-    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlinePosition(value: Double): Self = StObject.set(x, "underlinePosition", value.asInstanceOf[js.Any])
+    inline def setUnderlinePosition(value: Double): Self = StObject.set(x, "underlinePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineThickness(value: Double): Self = StObject.set(x, "underlineThickness", value.asInstanceOf[js.Any])
+    inline def setUnderlineThickness(value: Double): Self = StObject.set(x, "underlineThickness", value.asInstanceOf[js.Any])
   }
 }

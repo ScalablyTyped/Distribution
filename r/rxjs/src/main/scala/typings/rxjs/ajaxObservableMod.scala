@@ -42,23 +42,17 @@ object ajaxObservableMod {
     @js.native
     val ^ : AjaxErrorCtor = js.native
     
-    @scala.inline
-    implicit class AjaxErrorMutableBuilder[Self <: AjaxError] (val x: Self) extends AnyVal {
+    extension [Self <: AjaxError](x: Self) {
       
-      @scala.inline
-      def setRequest(value: AjaxRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: AjaxRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,7 +97,7 @@ object ajaxObservableMod {
     def this(urlOrRequest: String) = this()
     def this(urlOrRequest: AjaxRequest) = this()
     
-    var request: js.Any = js.native
+    /* private */ var request: js.Any = js.native
   }
   /* static members */
   object AjaxObservable {
@@ -177,12 +171,9 @@ object ajaxObservableMod {
       * @owner Observable
       * @nocollapse
       */
-    @scala.inline
-    def create(urlOrRequest: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(urlOrRequest.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
-    @scala.inline
-    def create(urlOrRequest: AjaxRequest): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(urlOrRequest.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
-    @scala.inline
-    def create_=(x: AjaxCreationMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
+    inline def create(urlOrRequest: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(urlOrRequest.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+    inline def create(urlOrRequest: AjaxRequest): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(urlOrRequest.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+    inline def create_=(x: AjaxCreationMethod): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rxjs/internal/observable/dom/AjaxObservable", "AjaxResponse")
@@ -214,21 +205,21 @@ object ajaxObservableMod {
   class AjaxSubscriber[T] protected () extends Subscriber[Event] {
     def this(destination: Subscriber[T], request: AjaxRequest) = this()
     
-    var done: js.Any = js.native
+    /* private */ var done: js.Any = js.native
     
-    var getHeader: js.Any = js.native
+    /* private */ var getHeader: js.Any = js.native
     
     var request: AjaxRequest = js.native
     
-    var send: js.Any = js.native
+    /* private */ var send: js.Any = js.native
     
-    var serializeBody: js.Any = js.native
+    /* private */ var serializeBody: js.Any = js.native
     
-    var setHeaders: js.Any = js.native
+    /* private */ var setHeaders: js.Any = js.native
     
-    var setupEvents: js.Any = js.native
+    /* private */ var setupEvents: js.Any = js.native
     
-    var xhr: js.Any = js.native
+    /* private */ var xhr: js.Any = js.native
   }
   
   @JSImport("rxjs/internal/observable/dom/AjaxObservable", "AjaxTimeoutError")
@@ -271,47 +262,29 @@ object ajaxObservableMod {
     var xhr: XMLHttpRequest = js.native
   }
   
-  @scala.inline
-  def ajaxDelete(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxDelete")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxDelete(url: String, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxDelete")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxDelete(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxDelete")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxDelete(url: String, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxDelete")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
   
-  @scala.inline
-  def ajaxGet(url: String): AjaxObservable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGet")(url.asInstanceOf[js.Any]).asInstanceOf[AjaxObservable[AjaxResponse]]
-  @scala.inline
-  def ajaxGet(url: String, headers: js.Object): AjaxObservable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGet")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[AjaxObservable[AjaxResponse]]
+  inline def ajaxGet(url: String): AjaxObservable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGet")(url.asInstanceOf[js.Any]).asInstanceOf[AjaxObservable[AjaxResponse]]
+  inline def ajaxGet(url: String, headers: js.Object): AjaxObservable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGet")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[AjaxObservable[AjaxResponse]]
   
-  @scala.inline
-  def ajaxGetJSON[T](url: String): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGetJSON")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
-  @scala.inline
-  def ajaxGetJSON[T](url: String, headers: js.Object): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGetJSON")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def ajaxGetJSON[T](url: String): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGetJSON")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  inline def ajaxGetJSON[T](url: String, headers: js.Object): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxGetJSON")(url.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
-  @scala.inline
-  def ajaxPatch(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxPatch(url: String, body: js.Any): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxPatch(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxPatch(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPatch(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPatch(url: String, body: js.Any): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPatch(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPatch(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPatch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
   
-  @scala.inline
-  def ajaxPost(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxPost(url: String, body: js.Any): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxPost(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxPost(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPost(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPost(url: String, body: js.Any): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPost(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPost(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPost")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
   
-  @scala.inline
-  def ajaxPut(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxPut(url: String, body: js.Any): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxPut(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
-  @scala.inline
-  def ajaxPut(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPut(url: String): Observable[AjaxResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any]).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPut(url: String, body: js.Any): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPut(url: String, body: js.Any, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
+  inline def ajaxPut(url: String, body: Unit, headers: js.Object): Observable[AjaxResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("ajaxPut")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Observable[AjaxResponse]]
   
   @js.native
   trait AjaxCreationMethod extends StObject {
@@ -356,11 +329,9 @@ object ajaxObservableMod {
   trait AjaxErrorNames extends StObject
   object AjaxErrorNames {
     
-    @scala.inline
-    def AjaxError: typings.rxjs.rxjsStrings.AjaxError = "AjaxError".asInstanceOf[typings.rxjs.rxjsStrings.AjaxError]
+    inline def AjaxError: typings.rxjs.rxjsStrings.AjaxError = "AjaxError".asInstanceOf[typings.rxjs.rxjsStrings.AjaxError]
     
-    @scala.inline
-    def AjaxTimeoutError: typings.rxjs.rxjsStrings.AjaxTimeoutError = "AjaxTimeoutError".asInstanceOf[typings.rxjs.rxjsStrings.AjaxTimeoutError]
+    inline def AjaxTimeoutError: typings.rxjs.rxjsStrings.AjaxTimeoutError = "AjaxTimeoutError".asInstanceOf[typings.rxjs.rxjsStrings.AjaxTimeoutError]
   }
   
   trait AjaxRequest extends StObject {
@@ -395,98 +366,68 @@ object ajaxObservableMod {
   }
   object AjaxRequest {
     
-    @scala.inline
-    def apply(): AjaxRequest = {
+    inline def apply(): AjaxRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AjaxRequest]
     }
     
-    @scala.inline
-    implicit class AjaxRequestMutableBuilder[Self <: AjaxRequest] (val x: Self) extends AnyVal {
+    extension [Self <: AjaxRequest](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCreateXHR(value: () => XMLHttpRequest): Self = StObject.set(x, "createXHR", js.Any.fromFunction0(value))
+      inline def setCreateXHR(value: () => XMLHttpRequest): Self = StObject.set(x, "createXHR", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateXHRUndefined: Self = StObject.set(x, "createXHR", js.undefined)
+      inline def setCreateXHRUndefined: Self = StObject.set(x, "createXHR", js.undefined)
       
-      @scala.inline
-      def setCrossDomain(value: Boolean): Self = StObject.set(x, "crossDomain", value.asInstanceOf[js.Any])
+      inline def setCrossDomain(value: Boolean): Self = StObject.set(x, "crossDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossDomainUndefined: Self = StObject.set(x, "crossDomain", js.undefined)
+      inline def setCrossDomainUndefined: Self = StObject.set(x, "crossDomain", js.undefined)
       
-      @scala.inline
-      def setHasContent(value: Boolean): Self = StObject.set(x, "hasContent", value.asInstanceOf[js.Any])
+      inline def setHasContent(value: Boolean): Self = StObject.set(x, "hasContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasContentUndefined: Self = StObject.set(x, "hasContent", js.undefined)
+      inline def setHasContentUndefined: Self = StObject.set(x, "hasContent", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setProgressSubscriber(value: Subscriber[js.Any]): Self = StObject.set(x, "progressSubscriber", value.asInstanceOf[js.Any])
+      inline def setProgressSubscriber(value: Subscriber[js.Any]): Self = StObject.set(x, "progressSubscriber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressSubscriberUndefined: Self = StObject.set(x, "progressSubscriber", js.undefined)
+      inline def setProgressSubscriberUndefined: Self = StObject.set(x, "progressSubscriber", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   

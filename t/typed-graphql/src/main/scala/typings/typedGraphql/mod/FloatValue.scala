@@ -17,25 +17,19 @@ trait FloatValue
 }
 object FloatValue {
   
-  @scala.inline
-  def apply(kind: String, value: String): FloatValue = {
+  inline def apply(kind: String, value: String): FloatValue = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FloatValue]
   }
   
-  @scala.inline
-  implicit class FloatValueMutableBuilder[Self <: FloatValue] (val x: Self) extends AnyVal {
+  extension [Self <: FloatValue](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: Location): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

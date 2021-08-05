@@ -13,19 +13,15 @@ trait CreateTrustResult extends StObject {
 }
 object CreateTrustResult {
   
-  @scala.inline
-  def apply(): CreateTrustResult = {
+  inline def apply(): CreateTrustResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTrustResult]
   }
   
-  @scala.inline
-  implicit class CreateTrustResultMutableBuilder[Self <: CreateTrustResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTrustResult](x: Self) {
     
-    @scala.inline
-    def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
+    inline def setTrustId(value: TrustId): Self = StObject.set(x, "TrustId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustIdUndefined: Self = StObject.set(x, "TrustId", js.undefined)
+    inline def setTrustIdUndefined: Self = StObject.set(x, "TrustId", js.undefined)
   }
 }

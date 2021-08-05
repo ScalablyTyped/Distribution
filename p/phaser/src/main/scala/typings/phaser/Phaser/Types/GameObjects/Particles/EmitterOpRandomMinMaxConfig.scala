@@ -23,19 +23,15 @@ trait EmitterOpRandomMinMaxConfig
 }
 object EmitterOpRandomMinMaxConfig {
   
-  @scala.inline
-  def apply(max: Double, min: Double): EmitterOpRandomMinMaxConfig = {
+  inline def apply(max: Double, min: Double): EmitterOpRandomMinMaxConfig = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmitterOpRandomMinMaxConfig]
   }
   
-  @scala.inline
-  implicit class EmitterOpRandomMinMaxConfigMutableBuilder[Self <: EmitterOpRandomMinMaxConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EmitterOpRandomMinMaxConfig](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

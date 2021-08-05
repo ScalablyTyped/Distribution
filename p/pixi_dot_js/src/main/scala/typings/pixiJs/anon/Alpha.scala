@@ -19,43 +19,31 @@ trait Alpha extends StObject {
 }
 object Alpha {
   
-  @scala.inline
-  def apply(): Alpha = {
+  inline def apply(): Alpha = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Alpha]
   }
   
-  @scala.inline
-  implicit class AlphaMutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
+  extension [Self <: Alpha](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
+    inline def setPluginName(value: String): Self = StObject.set(x, "pluginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginNameUndefined: Self = StObject.set(x, "pluginName", js.undefined)
+    inline def setPluginNameUndefined: Self = StObject.set(x, "pluginName", js.undefined)
     
-    @scala.inline
-    def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+    inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
     
-    @scala.inline
-    def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+    inline def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
+    inline def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
     
-    @scala.inline
-    def setUniforms(value: js.Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
+    inline def setUniforms(value: js.Any): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
+    inline def setUniformsUndefined: Self = StObject.set(x, "uniforms", js.undefined)
   }
 }

@@ -21,34 +21,25 @@ trait SchemaAccounttaxListResponse extends StObject {
 }
 object SchemaAccounttaxListResponse {
   
-  @scala.inline
-  def apply(): SchemaAccounttaxListResponse = {
+  inline def apply(): SchemaAccounttaxListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccounttaxListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAccounttaxListResponseMutableBuilder[Self <: SchemaAccounttaxListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccounttaxListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setResources(value: js.Array[SchemaAccountTax]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: js.Array[SchemaAccountTax]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: SchemaAccountTax*): Self = StObject.set(x, "resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: SchemaAccountTax*): Self = StObject.set(x, "resources", js.Array(value :_*))
   }
 }

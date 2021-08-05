@@ -12,17 +12,14 @@ object navigationComponentPropsMod {
   }
   object NavigationComponentProps {
     
-    @scala.inline
-    def apply(componentId: String): NavigationComponentProps = {
+    inline def apply(componentId: String): NavigationComponentProps = {
       val __obj = js.Dynamic.literal(componentId = componentId.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationComponentProps]
     }
     
-    @scala.inline
-    implicit class NavigationComponentPropsMutableBuilder[Self <: NavigationComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationComponentProps](x: Self) {
       
-      @scala.inline
-      def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
+      inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     }
   }
 }

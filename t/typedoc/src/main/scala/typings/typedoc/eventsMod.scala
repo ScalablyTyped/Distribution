@@ -31,8 +31,7 @@ object eventsMod {
     @JSImport("typedoc/dist/lib/output/events", "MarkdownEvent.PARSE")
     @js.native
     def PARSE: String = js.native
-    @scala.inline
-    def PARSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PARSE")(x.asInstanceOf[js.Any])
+    inline def PARSE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PARSE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/output/events", "PageEvent")
@@ -72,14 +71,12 @@ object eventsMod {
     @JSImport("typedoc/dist/lib/output/events", "PageEvent.BEGIN")
     @js.native
     def BEGIN: String = js.native
-    @scala.inline
-    def BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BEGIN")(x.asInstanceOf[js.Any])
+    inline def BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BEGIN")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/output/events", "PageEvent.END")
     @js.native
     def END: String = js.native
-    @scala.inline
-    def END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
+    inline def END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/output/events", "RendererEvent")
@@ -107,13 +104,11 @@ object eventsMod {
     @JSImport("typedoc/dist/lib/output/events", "RendererEvent.BEGIN")
     @js.native
     def BEGIN: String = js.native
-    @scala.inline
-    def BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BEGIN")(x.asInstanceOf[js.Any])
+    inline def BEGIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BEGIN")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/output/events", "RendererEvent.END")
     @js.native
     def END: String = js.native
-    @scala.inline
-    def END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
+    inline def END_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
   }
 }

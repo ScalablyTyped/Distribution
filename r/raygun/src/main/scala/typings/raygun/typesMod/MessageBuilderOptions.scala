@@ -16,40 +16,29 @@ trait MessageBuilderOptions extends StObject {
 }
 object MessageBuilderOptions {
   
-  @scala.inline
-  def apply(): MessageBuilderOptions = {
+  inline def apply(): MessageBuilderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageBuilderOptions]
   }
   
-  @scala.inline
-  implicit class MessageBuilderOptionsMutableBuilder[Self <: MessageBuilderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessageBuilderOptions](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setInnerErrorFieldName(value: String): Self = StObject.set(x, "innerErrorFieldName", value.asInstanceOf[js.Any])
+    inline def setInnerErrorFieldName(value: String): Self = StObject.set(x, "innerErrorFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerErrorFieldNameUndefined: Self = StObject.set(x, "innerErrorFieldName", js.undefined)
+    inline def setInnerErrorFieldNameUndefined: Self = StObject.set(x, "innerErrorFieldName", js.undefined)
     
-    @scala.inline
-    def setReportColumnNumbers(value: Boolean): Self = StObject.set(x, "reportColumnNumbers", value.asInstanceOf[js.Any])
+    inline def setReportColumnNumbers(value: Boolean): Self = StObject.set(x, "reportColumnNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportColumnNumbersUndefined: Self = StObject.set(x, "reportColumnNumbers", js.undefined)
+    inline def setReportColumnNumbersUndefined: Self = StObject.set(x, "reportColumnNumbers", js.undefined)
     
-    @scala.inline
-    def setUseHumanStringForObject(value: Boolean): Self = StObject.set(x, "useHumanStringForObject", value.asInstanceOf[js.Any])
+    inline def setUseHumanStringForObject(value: Boolean): Self = StObject.set(x, "useHumanStringForObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHumanStringForObjectUndefined: Self = StObject.set(x, "useHumanStringForObject", js.undefined)
+    inline def setUseHumanStringForObjectUndefined: Self = StObject.set(x, "useHumanStringForObject", js.undefined)
   }
 }

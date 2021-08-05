@@ -11,22 +11,17 @@ trait ChartLegendEntryCollectionData extends StObject {
 }
 object ChartLegendEntryCollectionData {
   
-  @scala.inline
-  def apply(): ChartLegendEntryCollectionData = {
+  inline def apply(): ChartLegendEntryCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartLegendEntryCollectionData]
   }
   
-  @scala.inline
-  implicit class ChartLegendEntryCollectionDataMutableBuilder[Self <: ChartLegendEntryCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartLegendEntryCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ChartLegendEntryData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ChartLegendEntryData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ChartLegendEntryData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ChartLegendEntryData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

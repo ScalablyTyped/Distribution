@@ -133,12 +133,9 @@ object Credentials {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def pickAsync(options: typings.winrt.Windows.Security.Credentials.UI.CredentialPickerOptions): IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(options.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults]]
-      @scala.inline
-      def pickAsync(targetName: String, message: String): IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(targetName.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults]]
-      @scala.inline
-      def pickAsync(targetName: String, message: String, caption: String): IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(targetName.asInstanceOf[js.Any], message.asInstanceOf[js.Any], caption.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults]]
+      inline def pickAsync(options: typings.winrt.Windows.Security.Credentials.UI.CredentialPickerOptions): IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults] = ^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(options.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults]]
+      inline def pickAsync(targetName: String, message: String): IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(targetName.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults]]
+      inline def pickAsync(targetName: String, message: String, caption: String): IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults] = (^.asInstanceOf[js.Dynamic].applyDynamic("pickAsync")(targetName.asInstanceOf[js.Any], message.asInstanceOf[js.Any], caption.asInstanceOf[js.Any])).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Security.Credentials.UI.CredentialPickerResults]]
     }
     
     @JSGlobal("Windows.Security.Credentials.UI.CredentialPickerOptions")

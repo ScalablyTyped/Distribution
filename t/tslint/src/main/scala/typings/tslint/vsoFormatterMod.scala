@@ -21,7 +21,6 @@ object vsoFormatterMod {
     @JSImport("tslint/lib/formatters/vsoFormatter", "Formatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,9 @@ object unsupportedPlatformMethodsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def checkLocationAccuracy(): js.Promise[LocationAccuracy] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLocationAccuracy")().asInstanceOf[js.Promise[LocationAccuracy]]
+  inline def checkLocationAccuracy(): js.Promise[LocationAccuracy] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLocationAccuracy")().asInstanceOf[js.Promise[LocationAccuracy]]
   
-  @scala.inline
-  def openLimitedPhotoLibraryPicker(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openLimitedPhotoLibraryPicker")().asInstanceOf[js.Promise[Unit]]
+  inline def openLimitedPhotoLibraryPicker(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openLimitedPhotoLibraryPicker")().asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def requestLocationAccuracy(_options: LocationAccuracyOptions): js.Promise[LocationAccuracy] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLocationAccuracy")(_options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocationAccuracy]]
+  inline def requestLocationAccuracy(_options: LocationAccuracyOptions): js.Promise[LocationAccuracy] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestLocationAccuracy")(_options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocationAccuracy]]
 }

@@ -14,31 +14,23 @@ trait ServoSweepOpts extends StObject {
 }
 object ServoSweepOpts {
   
-  @scala.inline
-  def apply(range: js.Array[Double]): ServoSweepOpts = {
+  inline def apply(range: js.Array[Double]): ServoSweepOpts = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServoSweepOpts]
   }
   
-  @scala.inline
-  implicit class ServoSweepOptsMutableBuilder[Self <: ServoSweepOpts] (val x: Self) extends AnyVal {
+  extension [Self <: ServoSweepOpts](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: js.Array[Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
+    inline def setRangeVarargs(value: Double*): Self = StObject.set(x, "range", js.Array(value :_*))
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

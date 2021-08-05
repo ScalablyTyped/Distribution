@@ -11,8 +11,6 @@ object onesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ones(height: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(height.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-  @scala.inline
-  def ones(height: Double, width: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def ones(height: Double): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(height.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def ones(height: Double, width: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

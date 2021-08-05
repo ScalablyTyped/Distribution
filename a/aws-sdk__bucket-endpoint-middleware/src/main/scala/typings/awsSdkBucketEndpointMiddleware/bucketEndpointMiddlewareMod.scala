@@ -11,10 +11,8 @@ object bucketEndpointMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bucketEndpointMiddleware(): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")().asInstanceOf[BuildMiddleware[js.Any, js.Any]]
-  @scala.inline
-  def bucketEndpointMiddleware(
+  inline def bucketEndpointMiddleware(): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")().asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  inline def bucketEndpointMiddleware(
     hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint: bucketEndpointMiddlewareConfiguration
   ): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")(hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
   
@@ -36,41 +34,30 @@ object bucketEndpointMiddlewareMod {
   }
   object BucketEndpointAwareInput {
     
-    @scala.inline
-    def apply(Bucket: String): BucketEndpointAwareInput = {
+    inline def apply(Bucket: String): BucketEndpointAwareInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
       __obj.asInstanceOf[BucketEndpointAwareInput]
     }
     
-    @scala.inline
-    implicit class BucketEndpointAwareInputMutableBuilder[Self <: BucketEndpointAwareInput] (val x: Self) extends AnyVal {
+    extension [Self <: BucketEndpointAwareInput](x: Self) {
       
-      @scala.inline
-      def set$bucketEndpoint(value: Boolean): Self = StObject.set(x, "$bucketEndpoint", value.asInstanceOf[js.Any])
+      inline def set$bucketEndpoint(value: Boolean): Self = StObject.set(x, "$bucketEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$bucketEndpointUndefined: Self = StObject.set(x, "$bucketEndpoint", js.undefined)
+      inline def set$bucketEndpointUndefined: Self = StObject.set(x, "$bucketEndpoint", js.undefined)
       
-      @scala.inline
-      def set$forcePathStyle(value: Boolean): Self = StObject.set(x, "$forcePathStyle", value.asInstanceOf[js.Any])
+      inline def set$forcePathStyle(value: Boolean): Self = StObject.set(x, "$forcePathStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
+      inline def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
       
-      @scala.inline
-      def set$useAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "$useAccelerateEndpoint", value.asInstanceOf[js.Any])
+      inline def set$useAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "$useAccelerateEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$useAccelerateEndpointUndefined: Self = StObject.set(x, "$useAccelerateEndpoint", js.undefined)
+      inline def set$useAccelerateEndpointUndefined: Self = StObject.set(x, "$useAccelerateEndpoint", js.undefined)
       
-      @scala.inline
-      def set$useDualstackEndpoint(value: Boolean): Self = StObject.set(x, "$useDualstackEndpoint", value.asInstanceOf[js.Any])
+      inline def set$useDualstackEndpoint(value: Boolean): Self = StObject.set(x, "$useDualstackEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$useDualstackEndpointUndefined: Self = StObject.set(x, "$useDualstackEndpoint", js.undefined)
+      inline def set$useDualstackEndpointUndefined: Self = StObject.set(x, "$useDualstackEndpoint", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -86,38 +73,28 @@ object bucketEndpointMiddlewareMod {
   }
   object bucketEndpointMiddlewareConfiguration {
     
-    @scala.inline
-    def apply(): bucketEndpointMiddlewareConfiguration = {
+    inline def apply(): bucketEndpointMiddlewareConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[bucketEndpointMiddlewareConfiguration]
     }
     
-    @scala.inline
-    implicit class bucketEndpointMiddlewareConfigurationMutableBuilder[Self <: bucketEndpointMiddlewareConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: bucketEndpointMiddlewareConfiguration](x: Self) {
       
-      @scala.inline
-      def setForcePathStyle(value: Boolean): Self = StObject.set(x, "forcePathStyle", value.asInstanceOf[js.Any])
+      inline def setForcePathStyle(value: Boolean): Self = StObject.set(x, "forcePathStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForcePathStyleUndefined: Self = StObject.set(x, "forcePathStyle", js.undefined)
+      inline def setForcePathStyleUndefined: Self = StObject.set(x, "forcePathStyle", js.undefined)
       
-      @scala.inline
-      def setPreformedBucketEndpoint(value: Boolean): Self = StObject.set(x, "preformedBucketEndpoint", value.asInstanceOf[js.Any])
+      inline def setPreformedBucketEndpoint(value: Boolean): Self = StObject.set(x, "preformedBucketEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreformedBucketEndpointUndefined: Self = StObject.set(x, "preformedBucketEndpoint", js.undefined)
+      inline def setPreformedBucketEndpointUndefined: Self = StObject.set(x, "preformedBucketEndpoint", js.undefined)
       
-      @scala.inline
-      def setUseAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "useAccelerateEndpoint", value.asInstanceOf[js.Any])
+      inline def setUseAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "useAccelerateEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseAccelerateEndpointUndefined: Self = StObject.set(x, "useAccelerateEndpoint", js.undefined)
+      inline def setUseAccelerateEndpointUndefined: Self = StObject.set(x, "useAccelerateEndpoint", js.undefined)
       
-      @scala.inline
-      def setUseDualstackEndpoint(value: Boolean): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
+      inline def setUseDualstackEndpoint(value: Boolean): Self = StObject.set(x, "useDualstackEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseDualstackEndpointUndefined: Self = StObject.set(x, "useDualstackEndpoint", js.undefined)
+      inline def setUseDualstackEndpointUndefined: Self = StObject.set(x, "useDualstackEndpoint", js.undefined)
     }
   }
 }

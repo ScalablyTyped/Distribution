@@ -19,23 +19,19 @@ trait TrafficPercentStrategy extends StObject {
 }
 object TrafficPercentStrategy {
   
-  @scala.inline
-  def apply(): TrafficPercentStrategy = {
+  inline def apply(): TrafficPercentStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficPercentStrategy]
   }
   
-  @scala.inline
-  implicit class TrafficPercentStrategyMutableBuilder[Self <: TrafficPercentStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficPercentStrategy](x: Self) {
     
-    @scala.inline
-    def setPercentages(
+    inline def setPercentages(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientServicemanagement.maximMazurokGapiClientServicemanagementStrings.TrafficPercentStrategy & TopLevel[js.Any]
     ): Self = StObject.set(x, "percentages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentagesUndefined: Self = StObject.set(x, "percentages", js.undefined)
+    inline def setPercentagesUndefined: Self = StObject.set(x, "percentages", js.undefined)
   }
 }

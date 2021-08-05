@@ -13,16 +13,13 @@ trait ReleaseObjectGroupRequest extends StObject {
 }
 object ReleaseObjectGroupRequest {
   
-  @scala.inline
-  def apply(objectGroup: String): ReleaseObjectGroupRequest = {
+  inline def apply(objectGroup: String): ReleaseObjectGroupRequest = {
     val __obj = js.Dynamic.literal(objectGroup = objectGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseObjectGroupRequest]
   }
   
-  @scala.inline
-  implicit class ReleaseObjectGroupRequestMutableBuilder[Self <: ReleaseObjectGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseObjectGroupRequest](x: Self) {
     
-    @scala.inline
-    def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
+    inline def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
   }
 }

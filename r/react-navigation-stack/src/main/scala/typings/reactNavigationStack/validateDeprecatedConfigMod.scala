@@ -12,6 +12,5 @@ object validateDeprecatedConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: StackNavigationConfig, options: StackNavigationOptions): StackNavigationOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StackNavigationOptions]
+  inline def default(config: StackNavigationConfig, options: StackNavigationOptions): StackNavigationOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StackNavigationOptions]
 }

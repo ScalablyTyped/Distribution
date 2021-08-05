@@ -18,8 +18,7 @@ trait ParametersReactionsCreateForIssueCommentEndpoint extends StObject {
 }
 object ParametersReactionsCreateForIssueCommentEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReactionsCreateForIssueCommentEndpoint,
     request: ReactionsCreateForIssueCommentRequestOptions,
     response: OctokitResponse[ReactionsCreateForIssueCommentResponseData]
@@ -28,16 +27,12 @@ object ParametersReactionsCreateForIssueCommentEndpoint {
     __obj.asInstanceOf[ParametersReactionsCreateForIssueCommentEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReactionsCreateForIssueCommentEndpointMutableBuilder[Self <: ParametersReactionsCreateForIssueCommentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReactionsCreateForIssueCommentEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReactionsCreateForIssueCommentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReactionsCreateForIssueCommentEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReactionsCreateForIssueCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReactionsCreateForIssueCommentRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReactionsCreateForIssueCommentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReactionsCreateForIssueCommentResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

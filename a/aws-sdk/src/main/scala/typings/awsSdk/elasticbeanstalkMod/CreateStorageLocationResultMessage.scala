@@ -13,19 +13,15 @@ trait CreateStorageLocationResultMessage extends StObject {
 }
 object CreateStorageLocationResultMessage {
   
-  @scala.inline
-  def apply(): CreateStorageLocationResultMessage = {
+  inline def apply(): CreateStorageLocationResultMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStorageLocationResultMessage]
   }
   
-  @scala.inline
-  implicit class CreateStorageLocationResultMessageMutableBuilder[Self <: CreateStorageLocationResultMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStorageLocationResultMessage](x: Self) {
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
   }
 }

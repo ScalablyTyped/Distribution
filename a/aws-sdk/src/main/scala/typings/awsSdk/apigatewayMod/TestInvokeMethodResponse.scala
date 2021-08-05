@@ -38,49 +38,35 @@ trait TestInvokeMethodResponse extends StObject {
 }
 object TestInvokeMethodResponse {
   
-  @scala.inline
-  def apply(): TestInvokeMethodResponse = {
+  inline def apply(): TestInvokeMethodResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestInvokeMethodResponse]
   }
   
-  @scala.inline
-  implicit class TestInvokeMethodResponseMutableBuilder[Self <: TestInvokeMethodResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestInvokeMethodResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: MapOfStringToString): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: MapOfStringToString): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setLatency(value: Long): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    inline def setLatency(value: Long): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
+    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
     
-    @scala.inline
-    def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setMultiValueHeaders(value: MapOfStringToList): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
+    inline def setMultiValueHeaders(value: MapOfStringToList): Self = StObject.set(x, "multiValueHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
+    inline def setMultiValueHeadersUndefined: Self = StObject.set(x, "multiValueHeaders", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Integer): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Integer): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

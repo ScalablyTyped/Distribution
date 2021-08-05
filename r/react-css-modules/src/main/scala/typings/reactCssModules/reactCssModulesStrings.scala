@@ -8,16 +8,13 @@ object reactCssModulesStrings {
   
   @js.native
   sealed trait ignore extends StObject
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
   sealed trait log extends StObject
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait `throw` extends StObject
-  @scala.inline
-  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
+  inline def `throw`: `throw` = "throw".asInstanceOf[`throw`]
 }

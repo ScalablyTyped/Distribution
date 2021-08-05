@@ -95,26 +95,20 @@ object mod extends Shortcut {
   }
   object KoaHelmetContentSecurityPolicyConfiguration {
     
-    @scala.inline
-    def apply(): KoaHelmetContentSecurityPolicyConfiguration = {
+    inline def apply(): KoaHelmetContentSecurityPolicyConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KoaHelmetContentSecurityPolicyConfiguration]
     }
     
-    @scala.inline
-    implicit class KoaHelmetContentSecurityPolicyConfigurationMutableBuilder[Self <: KoaHelmetContentSecurityPolicyConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: KoaHelmetContentSecurityPolicyConfiguration](x: Self) {
       
-      @scala.inline
-      def setDirectives(value: KoaHelmetContentSecurityPolicyDirectives): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+      inline def setDirectives(value: KoaHelmetContentSecurityPolicyDirectives): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+      inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
       
-      @scala.inline
-      def setReportOnly(value: Boolean): Self = StObject.set(x, "reportOnly", value.asInstanceOf[js.Any])
+      inline def setReportOnly(value: Boolean): Self = StObject.set(x, "reportOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportOnlyUndefined: Self = StObject.set(x, "reportOnly", js.undefined)
+      inline def setReportOnlyUndefined: Self = StObject.set(x, "reportOnly", js.undefined)
     }
   }
   
@@ -156,155 +150,106 @@ object mod extends Shortcut {
   }
   object KoaHelmetContentSecurityPolicyDirectives {
     
-    @scala.inline
-    def apply(): KoaHelmetContentSecurityPolicyDirectives = {
+    inline def apply(): KoaHelmetContentSecurityPolicyDirectives = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KoaHelmetContentSecurityPolicyDirectives]
     }
     
-    @scala.inline
-    implicit class KoaHelmetContentSecurityPolicyDirectivesMutableBuilder[Self <: KoaHelmetContentSecurityPolicyDirectives] (val x: Self) extends AnyVal {
+    extension [Self <: KoaHelmetContentSecurityPolicyDirectives](x: Self) {
       
-      @scala.inline
-      def setBaseUri(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
+      inline def setBaseUri(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUriUndefined: Self = StObject.set(x, "baseUri", js.undefined)
+      inline def setBaseUriUndefined: Self = StObject.set(x, "baseUri", js.undefined)
       
-      @scala.inline
-      def setBaseUriVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "baseUri", js.Array(value :_*))
+      inline def setBaseUriVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "baseUri", js.Array(value :_*))
       
-      @scala.inline
-      def setChildSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "childSrc", value.asInstanceOf[js.Any])
+      inline def setChildSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "childSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildSrcUndefined: Self = StObject.set(x, "childSrc", js.undefined)
+      inline def setChildSrcUndefined: Self = StObject.set(x, "childSrc", js.undefined)
       
-      @scala.inline
-      def setChildSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "childSrc", js.Array(value :_*))
+      inline def setChildSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "childSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setConnectSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "connectSrc", value.asInstanceOf[js.Any])
+      inline def setConnectSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "connectSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectSrcUndefined: Self = StObject.set(x, "connectSrc", js.undefined)
+      inline def setConnectSrcUndefined: Self = StObject.set(x, "connectSrc", js.undefined)
       
-      @scala.inline
-      def setConnectSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "connectSrc", js.Array(value :_*))
+      inline def setConnectSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "connectSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "defaultSrc", value.asInstanceOf[js.Any])
+      inline def setDefaultSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "defaultSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSrcUndefined: Self = StObject.set(x, "defaultSrc", js.undefined)
+      inline def setDefaultSrcUndefined: Self = StObject.set(x, "defaultSrc", js.undefined)
       
-      @scala.inline
-      def setDefaultSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "defaultSrc", js.Array(value :_*))
+      inline def setDefaultSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "defaultSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setFontSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "fontSrc", value.asInstanceOf[js.Any])
+      inline def setFontSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "fontSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSrcUndefined: Self = StObject.set(x, "fontSrc", js.undefined)
+      inline def setFontSrcUndefined: Self = StObject.set(x, "fontSrc", js.undefined)
       
-      @scala.inline
-      def setFontSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "fontSrc", js.Array(value :_*))
+      inline def setFontSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "fontSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setFormAction(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
+      inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
-      @scala.inline
-      def setFormActionVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "formAction", js.Array(value :_*))
+      inline def setFormActionVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "formAction", js.Array(value :_*))
       
-      @scala.inline
-      def setFrameAncestors(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "frameAncestors", value.asInstanceOf[js.Any])
+      inline def setFrameAncestors(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "frameAncestors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameAncestorsUndefined: Self = StObject.set(x, "frameAncestors", js.undefined)
+      inline def setFrameAncestorsUndefined: Self = StObject.set(x, "frameAncestors", js.undefined)
       
-      @scala.inline
-      def setFrameAncestorsVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "frameAncestors", js.Array(value :_*))
+      inline def setFrameAncestorsVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "frameAncestors", js.Array(value :_*))
       
-      @scala.inline
-      def setFrameSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "frameSrc", value.asInstanceOf[js.Any])
+      inline def setFrameSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "frameSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameSrcUndefined: Self = StObject.set(x, "frameSrc", js.undefined)
+      inline def setFrameSrcUndefined: Self = StObject.set(x, "frameSrc", js.undefined)
       
-      @scala.inline
-      def setFrameSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "frameSrc", js.Array(value :_*))
+      inline def setFrameSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "frameSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setImgSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
+      inline def setImgSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgSrcUndefined: Self = StObject.set(x, "imgSrc", js.undefined)
+      inline def setImgSrcUndefined: Self = StObject.set(x, "imgSrc", js.undefined)
       
-      @scala.inline
-      def setImgSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "imgSrc", js.Array(value :_*))
+      inline def setImgSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "imgSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setMediaSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "mediaSrc", value.asInstanceOf[js.Any])
+      inline def setMediaSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "mediaSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaSrcUndefined: Self = StObject.set(x, "mediaSrc", js.undefined)
+      inline def setMediaSrcUndefined: Self = StObject.set(x, "mediaSrc", js.undefined)
       
-      @scala.inline
-      def setMediaSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "mediaSrc", js.Array(value :_*))
+      inline def setMediaSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "mediaSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setObjectSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "objectSrc", value.asInstanceOf[js.Any])
+      inline def setObjectSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "objectSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectSrcUndefined: Self = StObject.set(x, "objectSrc", js.undefined)
+      inline def setObjectSrcUndefined: Self = StObject.set(x, "objectSrc", js.undefined)
       
-      @scala.inline
-      def setObjectSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "objectSrc", js.Array(value :_*))
+      inline def setObjectSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "objectSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setPluginTypes(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "pluginTypes", value.asInstanceOf[js.Any])
+      inline def setPluginTypes(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "pluginTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginTypesUndefined: Self = StObject.set(x, "pluginTypes", js.undefined)
+      inline def setPluginTypesUndefined: Self = StObject.set(x, "pluginTypes", js.undefined)
       
-      @scala.inline
-      def setPluginTypesVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "pluginTypes", js.Array(value :_*))
+      inline def setPluginTypesVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "pluginTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setReportUri(value: String): Self = StObject.set(x, "reportUri", value.asInstanceOf[js.Any])
+      inline def setReportUri(value: String): Self = StObject.set(x, "reportUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportUriUndefined: Self = StObject.set(x, "reportUri", js.undefined)
+      inline def setReportUriUndefined: Self = StObject.set(x, "reportUri", js.undefined)
       
-      @scala.inline
-      def setSandbox(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+      inline def setSandbox(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+      inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
       
-      @scala.inline
-      def setSandboxVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "sandbox", js.Array(value :_*))
+      inline def setSandboxVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "sandbox", js.Array(value :_*))
       
-      @scala.inline
-      def setScriptSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "scriptSrc", value.asInstanceOf[js.Any])
+      inline def setScriptSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "scriptSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptSrcUndefined: Self = StObject.set(x, "scriptSrc", js.undefined)
+      inline def setScriptSrcUndefined: Self = StObject.set(x, "scriptSrc", js.undefined)
       
-      @scala.inline
-      def setScriptSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "scriptSrc", js.Array(value :_*))
+      inline def setScriptSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "scriptSrc", js.Array(value :_*))
       
-      @scala.inline
-      def setStyleSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "styleSrc", value.asInstanceOf[js.Any])
+      inline def setStyleSrc(value: js.Array[KoaHelmetCspDirectiveValue]): Self = StObject.set(x, "styleSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleSrcUndefined: Self = StObject.set(x, "styleSrc", js.undefined)
+      inline def setStyleSrcUndefined: Self = StObject.set(x, "styleSrc", js.undefined)
       
-      @scala.inline
-      def setStyleSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "styleSrc", js.Array(value :_*))
+      inline def setStyleSrcVarargs(value: KoaHelmetCspDirectiveValue*): Self = StObject.set(x, "styleSrc", js.Array(value :_*))
     }
   }
   

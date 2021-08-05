@@ -12,19 +12,15 @@ trait RTCIdentityAssertion extends StObject {
 }
 object RTCIdentityAssertion {
   
-  @scala.inline
-  def apply(idp: java.lang.String, name: java.lang.String): RTCIdentityAssertion = {
+  inline def apply(idp: java.lang.String, name: java.lang.String): RTCIdentityAssertion = {
     val __obj = js.Dynamic.literal(idp = idp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIdentityAssertion]
   }
   
-  @scala.inline
-  implicit class RTCIdentityAssertionMutableBuilder[Self <: RTCIdentityAssertion] (val x: Self) extends AnyVal {
+  extension [Self <: RTCIdentityAssertion](x: Self) {
     
-    @scala.inline
-    def setIdp(value: java.lang.String): Self = StObject.set(x, "idp", value.asInstanceOf[js.Any])
+    inline def setIdp(value: java.lang.String): Self = StObject.set(x, "idp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

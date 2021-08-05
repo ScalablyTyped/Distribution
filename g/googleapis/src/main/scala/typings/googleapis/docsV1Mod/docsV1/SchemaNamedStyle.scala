@@ -28,31 +28,23 @@ trait SchemaNamedStyle extends StObject {
 }
 object SchemaNamedStyle {
   
-  @scala.inline
-  def apply(): SchemaNamedStyle = {
+  inline def apply(): SchemaNamedStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNamedStyle]
   }
   
-  @scala.inline
-  implicit class SchemaNamedStyleMutableBuilder[Self <: SchemaNamedStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNamedStyle](x: Self) {
     
-    @scala.inline
-    def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
+    inline def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
+    inline def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
     
-    @scala.inline
-    def setParagraphStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+    inline def setParagraphStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+    inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
     
-    @scala.inline
-    def setTextStyle(value: SchemaTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: SchemaTextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

@@ -11,12 +11,11 @@ trait LanguageServiceShimHostAdapter
   extends StObject
      with ILanguageServiceHost {
   
-  var shimHost: js.Any
+  /* private */ var shimHost: js.Any
 }
 object LanguageServiceShimHostAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug: () => Boolean,
     directoryExists: String => Boolean,
     error: () => Boolean,
@@ -41,10 +40,8 @@ object LanguageServiceShimHostAdapter {
     __obj.asInstanceOf[LanguageServiceShimHostAdapter]
   }
   
-  @scala.inline
-  implicit class LanguageServiceShimHostAdapterMutableBuilder[Self <: LanguageServiceShimHostAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageServiceShimHostAdapter](x: Self) {
     
-    @scala.inline
-    def setShimHost(value: js.Any): Self = StObject.set(x, "shimHost", value.asInstanceOf[js.Any])
+    inline def setShimHost(value: js.Any): Self = StObject.set(x, "shimHost", value.asInstanceOf[js.Any])
   }
 }

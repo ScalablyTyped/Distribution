@@ -18,25 +18,19 @@ trait `10` extends StObject {
 }
 object `10` {
   
-  @scala.inline
-  def apply(): `10` = {
+  inline def apply(): `10` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`10`]
   }
   
-  @scala.inline
-  implicit class `10MutableBuilder`[Self <: `10`] (val x: Self) extends AnyVal {
+  extension [Self <: `10`](x: Self) {
     
-    @scala.inline
-    def setLabel(value: FontSize): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: FontSize): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

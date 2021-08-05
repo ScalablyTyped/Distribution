@@ -23,28 +23,21 @@ trait ListVaultsInput extends StObject {
 }
 object ListVaultsInput {
   
-  @scala.inline
-  def apply(accountId: String): ListVaultsInput = {
+  inline def apply(accountId: String): ListVaultsInput = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVaultsInput]
   }
   
-  @scala.inline
-  implicit class ListVaultsInputMutableBuilder[Self <: ListVaultsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVaultsInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
   }
 }

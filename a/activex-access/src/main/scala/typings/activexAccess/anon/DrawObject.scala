@@ -10,16 +10,13 @@ trait DrawObject extends StObject {
 }
 object DrawObject {
   
-  @scala.inline
-  def apply(drawObject: js.Any): DrawObject = {
+  inline def apply(drawObject: js.Any): DrawObject = {
     val __obj = js.Dynamic.literal(drawObject = drawObject.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawObject]
   }
   
-  @scala.inline
-  implicit class DrawObjectMutableBuilder[Self <: DrawObject] (val x: Self) extends AnyVal {
+  extension [Self <: DrawObject](x: Self) {
     
-    @scala.inline
-    def setDrawObject(value: js.Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
+    inline def setDrawObject(value: js.Any): Self = StObject.set(x, "drawObject", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait RowInfo extends StObject {
 }
 object RowInfo {
   
-  @scala.inline
-  def apply(): RowInfo = {
+  inline def apply(): RowInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowInfo]
   }
   
-  @scala.inline
-  implicit class RowInfoMutableBuilder[Self <: RowInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RowInfo](x: Self) {
     
-    @scala.inline
-    def setRowsDropped(value: long): Self = StObject.set(x, "RowsDropped", value.asInstanceOf[js.Any])
+    inline def setRowsDropped(value: long): Self = StObject.set(x, "RowsDropped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsDroppedUndefined: Self = StObject.set(x, "RowsDropped", js.undefined)
+    inline def setRowsDroppedUndefined: Self = StObject.set(x, "RowsDropped", js.undefined)
     
-    @scala.inline
-    def setRowsIngested(value: long): Self = StObject.set(x, "RowsIngested", value.asInstanceOf[js.Any])
+    inline def setRowsIngested(value: long): Self = StObject.set(x, "RowsIngested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsIngestedUndefined: Self = StObject.set(x, "RowsIngested", js.undefined)
+    inline def setRowsIngestedUndefined: Self = StObject.set(x, "RowsIngested", js.undefined)
   }
 }

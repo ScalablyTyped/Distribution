@@ -12,19 +12,15 @@ trait IReadOptions extends StObject {
 }
 object IReadOptions {
   
-  @scala.inline
-  def apply(): IReadOptions = {
+  inline def apply(): IReadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IReadOptions]
   }
   
-  @scala.inline
-  implicit class IReadOptionsMutableBuilder[Self <: IReadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IReadOptions](x: Self) {
     
-    @scala.inline
-    def setIfNoneMatch(value: String): Self = StObject.set(x, "ifNoneMatch", value.asInstanceOf[js.Any])
+    inline def setIfNoneMatch(value: String): Self = StObject.set(x, "ifNoneMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfNoneMatchUndefined: Self = StObject.set(x, "ifNoneMatch", js.undefined)
+    inline def setIfNoneMatchUndefined: Self = StObject.set(x, "ifNoneMatch", js.undefined)
   }
 }

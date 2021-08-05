@@ -32,8 +32,7 @@ object mod {
       /* "W" */ val West: typings.latlonGeohash.mod.Geohash.Direction.West & String = js.native
     }
     
-    @scala.inline
-    def adjacent(geohash: String, direction: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjacent")(geohash.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def adjacent(geohash: String, direction: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjacent")(geohash.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * Determines adjacent cell in given direction.
       *
@@ -42,8 +41,7 @@ object mod {
       * @returns Geocode of adjacent cell.
       * @throws  Invalid geohash.
       */
-    @scala.inline
-    def adjacent(geohash: String, direction: Direction): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjacent")(geohash.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def adjacent(geohash: String, direction: Direction): String = (^.asInstanceOf[js.Dynamic].applyDynamic("adjacent")(geohash.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Returns SW/NE latitude/longitude bounds of specified geohash.
@@ -52,8 +50,7 @@ object mod {
       * @returns The Bounds
       * @throws  Invalid geohash.
       */
-    @scala.inline
-    def bounds(geohash: String): Bounds = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(geohash.asInstanceOf[js.Any]).asInstanceOf[Bounds]
+    inline def bounds(geohash: String): Bounds = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(geohash.asInstanceOf[js.Any]).asInstanceOf[Bounds]
     
     /**
       * Decode geohash to latitude/longitude (location is approximate centre of geohash cell,
@@ -66,8 +63,7 @@ object mod {
       * @example
       *     var latlon = Geohash.decode('u120fxw'); // latlon: { lat: 52.205, lon: 0.1188 }
       */
-    @scala.inline
-    def decode(geohash: String): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(geohash.asInstanceOf[js.Any]).asInstanceOf[Point]
+    inline def decode(geohash: String): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(geohash.asInstanceOf[js.Any]).asInstanceOf[Point]
     
     /**
       * Encodes latitude/longitude to geohash, either to specified precision or to automatically
@@ -82,10 +78,8 @@ object mod {
       * @example
       *     var geohash = Geohash.encode(52.205, 0.119, 7); // geohash: 'u120fxw'
       */
-    @scala.inline
-    def encode(latitude: Double, longitude: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def encode(latitude: Double, longitude: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def encode(latitude: Double, longitude: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def encode(latitude: Double, longitude: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Returns all 8 adjacent cells to specified geohash.
@@ -94,8 +88,7 @@ object mod {
       * @returns The neighbours
       * @throws  Invalid geohash.
       */
-    @scala.inline
-    def neighbours(geohash: String): Neighbours = ^.asInstanceOf[js.Dynamic].applyDynamic("neighbours")(geohash.asInstanceOf[js.Any]).asInstanceOf[Neighbours]
+    inline def neighbours(geohash: String): Neighbours = ^.asInstanceOf[js.Dynamic].applyDynamic("neighbours")(geohash.asInstanceOf[js.Any]).asInstanceOf[Neighbours]
   }
   
   object Geohash {
@@ -136,21 +129,17 @@ object mod {
     }
     object Bounds {
       
-      @scala.inline
-      def apply(ne_ : Point, sw: Point): Bounds = {
+      inline def apply(ne_ : Point, sw: Point): Bounds = {
         val __obj = js.Dynamic.literal(sw = sw.asInstanceOf[js.Any])
         __obj.updateDynamic("ne")(ne_.asInstanceOf[js.Any])
         __obj.asInstanceOf[Bounds]
       }
       
-      @scala.inline
-      implicit class BoundsMutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
+      extension [Self <: Bounds](x: Self) {
         
-        @scala.inline
-        def setNe_(value: Point): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
+        inline def setNe_(value: Point): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSw(value: Point): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
+        inline def setSw(value: Point): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
       }
     }
     
@@ -175,39 +164,29 @@ object mod {
     }
     object Neighbours {
       
-      @scala.inline
-      def apply(e: String, n: String, ne_ : String, nw: String, s: String, se: String, sw: String, w: String): Neighbours = {
+      inline def apply(e: String, n: String, ne_ : String, nw: String, s: String, se: String, sw: String, w: String): Neighbours = {
         val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], nw = nw.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], se = se.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
         __obj.updateDynamic("ne")(ne_.asInstanceOf[js.Any])
         __obj.asInstanceOf[Neighbours]
       }
       
-      @scala.inline
-      implicit class NeighboursMutableBuilder[Self <: Neighbours] (val x: Self) extends AnyVal {
+      extension [Self <: Neighbours](x: Self) {
         
-        @scala.inline
-        def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+        inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+        inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNe_(value: String): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
+        inline def setNe_(value: String): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNw(value: String): Self = StObject.set(x, "nw", value.asInstanceOf[js.Any])
+        inline def setNw(value: String): Self = StObject.set(x, "nw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+        inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSe(value: String): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
+        inline def setSe(value: String): Self = StObject.set(x, "se", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSw(value: String): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
+        inline def setSw(value: String): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+        inline def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       }
     }
     
@@ -219,20 +198,16 @@ object mod {
     }
     object Point {
       
-      @scala.inline
-      def apply(lat: Double, lon: Double): Point = {
+      inline def apply(lat: Double, lon: Double): Point = {
         val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any])
         __obj.asInstanceOf[Point]
       }
       
-      @scala.inline
-      implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+      extension [Self <: Point](x: Self) {
         
-        @scala.inline
-        def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+        inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLon(value: Double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
+        inline def setLon(value: Double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
       }
     }
   }

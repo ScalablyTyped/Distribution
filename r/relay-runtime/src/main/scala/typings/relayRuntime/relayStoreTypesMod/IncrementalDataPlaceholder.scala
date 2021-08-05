@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IncrementalDataPlaceholder extends StObject
 object IncrementalDataPlaceholder {
   
-  @scala.inline
-  def DeferPlaceholder(
+  inline def DeferPlaceholder(
     data: PayloadData,
     label: String,
     path: js.Array[String],
@@ -27,8 +26,7 @@ object IncrementalDataPlaceholder {
     __obj.asInstanceOf[typings.relayRuntime.relayStoreTypesMod.DeferPlaceholder]
   }
   
-  @scala.inline
-  def StreamPlaceholder(
+  inline def StreamPlaceholder(
     label: String,
     node: NormalizationSelectableNode,
     parentID: DataID,

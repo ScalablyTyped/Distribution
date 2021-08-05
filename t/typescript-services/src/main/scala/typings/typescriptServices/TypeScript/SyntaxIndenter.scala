@@ -18,18 +18,17 @@ trait SyntaxIndenter
   
   /* private */ def indentWhitespace(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any
   
-  var indentationAmount: js.Any
+  /* private */ var indentationAmount: js.Any
   
-  var indentationTrivia: js.Any
+  /* private */ var indentationTrivia: js.Any
   
-  var lastTriviaWasNewLine: js.Any
+  /* private */ var lastTriviaWasNewLine: js.Any
   
-  var options: js.Any
+  /* private */ var options: js.Any
 }
 object SyntaxIndenter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     indentMultiLineComment: (js.Any, js.Any, js.Any) => js.Any,
     indentSegment: js.Any => js.Any,
     indentSingleLineOrSkippedText: (js.Any, js.Any, js.Any) => js.Any,
@@ -134,34 +133,24 @@ object SyntaxIndenter {
     __obj.asInstanceOf[SyntaxIndenter]
   }
   
-  @scala.inline
-  implicit class SyntaxIndenterMutableBuilder[Self <: SyntaxIndenter] (val x: Self) extends AnyVal {
+  extension [Self <: SyntaxIndenter](x: Self) {
     
-    @scala.inline
-    def setIndentMultiLineComment(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "indentMultiLineComment", js.Any.fromFunction3(value))
+    inline def setIndentMultiLineComment(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "indentMultiLineComment", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIndentSegment(value: js.Any => js.Any): Self = StObject.set(x, "indentSegment", js.Any.fromFunction1(value))
+    inline def setIndentSegment(value: js.Any => js.Any): Self = StObject.set(x, "indentSegment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndentSingleLineOrSkippedText(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "indentSingleLineOrSkippedText", js.Any.fromFunction3(value))
+    inline def setIndentSingleLineOrSkippedText(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "indentSingleLineOrSkippedText", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIndentTriviaList(value: ISyntaxTriviaList => ISyntaxTriviaList): Self = StObject.set(x, "indentTriviaList", js.Any.fromFunction1(value))
+    inline def setIndentTriviaList(value: ISyntaxTriviaList => ISyntaxTriviaList): Self = StObject.set(x, "indentTriviaList", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIndentWhitespace(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "indentWhitespace", js.Any.fromFunction3(value))
+    inline def setIndentWhitespace(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "indentWhitespace", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIndentationAmount(value: js.Any): Self = StObject.set(x, "indentationAmount", value.asInstanceOf[js.Any])
+    inline def setIndentationAmount(value: js.Any): Self = StObject.set(x, "indentationAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentationTrivia(value: js.Any): Self = StObject.set(x, "indentationTrivia", value.asInstanceOf[js.Any])
+    inline def setIndentationTrivia(value: js.Any): Self = StObject.set(x, "indentationTrivia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTriviaWasNewLine(value: js.Any): Self = StObject.set(x, "lastTriviaWasNewLine", value.asInstanceOf[js.Any])
+    inline def setLastTriviaWasNewLine(value: js.Any): Self = StObject.set(x, "lastTriviaWasNewLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

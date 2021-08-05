@@ -20,25 +20,19 @@ trait TeamsUpdateLegacyRequestOptions extends StObject {
 }
 object TeamsUpdateLegacyRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): TeamsUpdateLegacyRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): TeamsUpdateLegacyRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/teams/:team_id")
     __obj.asInstanceOf[TeamsUpdateLegacyRequestOptions]
   }
   
-  @scala.inline
-  implicit class TeamsUpdateLegacyRequestOptionsMutableBuilder[Self <: TeamsUpdateLegacyRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsUpdateLegacyRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashteamsSlashColonteam_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashteamsSlashColonteam_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

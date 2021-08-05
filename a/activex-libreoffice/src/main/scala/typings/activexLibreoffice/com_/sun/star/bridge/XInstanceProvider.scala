@@ -24,8 +24,7 @@ trait XInstanceProvider
 }
 object XInstanceProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getInstance: String => XInterface,
     queryInterface: `type` => js.Any,
@@ -35,10 +34,8 @@ object XInstanceProvider {
     __obj.asInstanceOf[XInstanceProvider]
   }
   
-  @scala.inline
-  implicit class XInstanceProviderMutableBuilder[Self <: XInstanceProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XInstanceProvider](x: Self) {
     
-    @scala.inline
-    def setGetInstance(value: String => XInterface): Self = StObject.set(x, "getInstance", js.Any.fromFunction1(value))
+    inline def setGetInstance(value: String => XInterface): Self = StObject.set(x, "getInstance", js.Any.fromFunction1(value))
   }
 }

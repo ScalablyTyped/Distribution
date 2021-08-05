@@ -28,37 +28,27 @@ trait ClusterListEntry extends StObject {
 }
 object ClusterListEntry {
   
-  @scala.inline
-  def apply(): ClusterListEntry = {
+  inline def apply(): ClusterListEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterListEntry]
   }
   
-  @scala.inline
-  implicit class ClusterListEntryMutableBuilder[Self <: ClusterListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterListEntry](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: String): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: String): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
-    @scala.inline
-    def setClusterState(value: ClusterState): Self = StObject.set(x, "ClusterState", value.asInstanceOf[js.Any])
+    inline def setClusterState(value: ClusterState): Self = StObject.set(x, "ClusterState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterStateUndefined: Self = StObject.set(x, "ClusterState", js.undefined)
+    inline def setClusterStateUndefined: Self = StObject.set(x, "ClusterState", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

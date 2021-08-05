@@ -38,46 +38,33 @@ trait UpdateBusinessReportScheduleRequest extends StObject {
 }
 object UpdateBusinessReportScheduleRequest {
   
-  @scala.inline
-  def apply(ScheduleArn: Arn): UpdateBusinessReportScheduleRequest = {
+  inline def apply(ScheduleArn: Arn): UpdateBusinessReportScheduleRequest = {
     val __obj = js.Dynamic.literal(ScheduleArn = ScheduleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBusinessReportScheduleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateBusinessReportScheduleRequestMutableBuilder[Self <: UpdateBusinessReportScheduleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBusinessReportScheduleRequest](x: Self) {
     
-    @scala.inline
-    def setFormat(value: BusinessReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: BusinessReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setRecurrence(value: BusinessReportRecurrence): Self = StObject.set(x, "Recurrence", value.asInstanceOf[js.Any])
+    inline def setRecurrence(value: BusinessReportRecurrence): Self = StObject.set(x, "Recurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrenceUndefined: Self = StObject.set(x, "Recurrence", js.undefined)
+    inline def setRecurrenceUndefined: Self = StObject.set(x, "Recurrence", js.undefined)
     
-    @scala.inline
-    def setS3BucketName(value: CustomerS3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: CustomerS3BucketName): Self = StObject.set(x, "S3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
+    inline def setS3BucketNameUndefined: Self = StObject.set(x, "S3BucketName", js.undefined)
     
-    @scala.inline
-    def setS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
+    inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
     
-    @scala.inline
-    def setScheduleArn(value: Arn): Self = StObject.set(x, "ScheduleArn", value.asInstanceOf[js.Any])
+    inline def setScheduleArn(value: Arn): Self = StObject.set(x, "ScheduleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleName(value: BusinessReportScheduleName): Self = StObject.set(x, "ScheduleName", value.asInstanceOf[js.Any])
+    inline def setScheduleName(value: BusinessReportScheduleName): Self = StObject.set(x, "ScheduleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleNameUndefined: Self = StObject.set(x, "ScheduleName", js.undefined)
+    inline def setScheduleNameUndefined: Self = StObject.set(x, "ScheduleName", js.undefined)
   }
 }

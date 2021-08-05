@@ -38,67 +38,47 @@ trait VendorExtensions
 }
 object VendorExtensions {
   
-  @scala.inline
-  def apply(): VendorExtensions = {
+  inline def apply(): VendorExtensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VendorExtensions]
   }
   
-  @scala.inline
-  implicit class VendorExtensionsMutableBuilder[Self <: VendorExtensions] (val x: Self) extends AnyVal {
+  extension [Self <: VendorExtensions](x: Self) {
     
-    @scala.inline
-    def setBstackColonoptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "bstack:options", value.asInstanceOf[js.Any])
+    inline def setBstackColonoptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "bstack:options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBstackColonoptionsUndefined: Self = StObject.set(x, "bstack:options", js.undefined)
+    inline def setBstackColonoptionsUndefined: Self = StObject.set(x, "bstack:options", js.undefined)
     
-    @scala.inline
-    def setGoogColonchromeOptions(value: ChromeOptions): Self = StObject.set(x, "goog:chromeOptions", value.asInstanceOf[js.Any])
+    inline def setGoogColonchromeOptions(value: ChromeOptions): Self = StObject.set(x, "goog:chromeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogColonchromeOptionsUndefined: Self = StObject.set(x, "goog:chromeOptions", js.undefined)
+    inline def setGoogColonchromeOptionsUndefined: Self = StObject.set(x, "goog:chromeOptions", js.undefined)
     
-    @scala.inline
-    def setMozColonfirefoxOptions(value: FirefoxOptions): Self = StObject.set(x, "moz:firefoxOptions", value.asInstanceOf[js.Any])
+    inline def setMozColonfirefoxOptions(value: FirefoxOptions): Self = StObject.set(x, "moz:firefoxOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozColonfirefoxOptionsUndefined: Self = StObject.set(x, "moz:firefoxOptions", js.undefined)
+    inline def setMozColonfirefoxOptionsUndefined: Self = StObject.set(x, "moz:firefoxOptions", js.undefined)
     
-    @scala.inline
-    def setMsColonedgeChromium(value: MicrosoftEdgeOptions): Self = StObject.set(x, "ms:edgeChromium", value.asInstanceOf[js.Any])
+    inline def setMsColonedgeChromium(value: MicrosoftEdgeOptions): Self = StObject.set(x, "ms:edgeChromium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsColonedgeChromiumUndefined: Self = StObject.set(x, "ms:edgeChromium", js.undefined)
+    inline def setMsColonedgeChromiumUndefined: Self = StObject.set(x, "ms:edgeChromium", js.undefined)
     
-    @scala.inline
-    def setMsColonedgeOptions(value: MicrosoftEdgeOptions): Self = StObject.set(x, "ms:edgeOptions", value.asInstanceOf[js.Any])
+    inline def setMsColonedgeOptions(value: MicrosoftEdgeOptions): Self = StObject.set(x, "ms:edgeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsColonedgeOptionsUndefined: Self = StObject.set(x, "ms:edgeOptions", js.undefined)
+    inline def setMsColonedgeOptionsUndefined: Self = StObject.set(x, "ms:edgeOptions", js.undefined)
     
-    @scala.inline
-    def setSafariDotoptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "safari.options", value.asInstanceOf[js.Any])
+    inline def setSafariDotoptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "safari.options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafariDotoptionsUndefined: Self = StObject.set(x, "safari.options", js.undefined)
+    inline def setSafariDotoptionsUndefined: Self = StObject.set(x, "safari.options", js.undefined)
     
-    @scala.inline
-    def setSauceColonoptions(value: SauceLabsCapabilities): Self = StObject.set(x, "sauce:options", value.asInstanceOf[js.Any])
+    inline def setSauceColonoptions(value: SauceLabsCapabilities): Self = StObject.set(x, "sauce:options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSauceColonoptionsUndefined: Self = StObject.set(x, "sauce:options", js.undefined)
+    inline def setSauceColonoptionsUndefined: Self = StObject.set(x, "sauce:options", js.undefined)
     
-    @scala.inline
-    def setSelenoidColonoptions(value: SelenoidOptions): Self = StObject.set(x, "selenoid:options", value.asInstanceOf[js.Any])
+    inline def setSelenoidColonoptions(value: SelenoidOptions): Self = StObject.set(x, "selenoid:options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelenoidColonoptionsUndefined: Self = StObject.set(x, "selenoid:options", js.undefined)
+    inline def setSelenoidColonoptionsUndefined: Self = StObject.set(x, "selenoid:options", js.undefined)
     
-    @scala.inline
-    def setTbColonoptions(value: TestingbotCapabilities): Self = StObject.set(x, "tb:options", value.asInstanceOf[js.Any])
+    inline def setTbColonoptions(value: TestingbotCapabilities): Self = StObject.set(x, "tb:options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTbColonoptionsUndefined: Self = StObject.set(x, "tb:options", js.undefined)
+    inline def setTbColonoptionsUndefined: Self = StObject.set(x, "tb:options", js.undefined)
   }
 }

@@ -15,10 +15,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp]): js.Promise[DepreciatedJimp] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DepreciatedJimp]]
-  @scala.inline
-  def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp], options: Options): js.Promise[DepreciatedJimp] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DepreciatedJimp]]
+  inline def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp]): js.Promise[DepreciatedJimp] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DepreciatedJimp]]
+  inline def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp], options: Options): js.Promise[DepreciatedJimp] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DepreciatedJimp]]
   
   trait ImageDescriptor extends StObject {
     
@@ -41,29 +39,22 @@ object mod {
   }
   object ImageDescriptor {
     
-    @scala.inline
-    def apply(src: String | Buffer): ImageDescriptor = {
+    inline def apply(src: String | Buffer): ImageDescriptor = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageDescriptor]
     }
     
-    @scala.inline
-    implicit class ImageDescriptorMutableBuilder[Self <: ImageDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: ImageDescriptor](x: Self) {
       
-      @scala.inline
-      def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+      inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
       
-      @scala.inline
-      def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+      inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String | Buffer): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String | Buffer): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,38 +86,28 @@ object mod {
   }
   object MarginOptions {
     
-    @scala.inline
-    def apply(): MarginOptions = {
+    inline def apply(): MarginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarginOptions]
     }
     
-    @scala.inline
-    implicit class MarginOptionsMutableBuilder[Self <: MarginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MarginOptions](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -166,44 +147,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlign(value: start | center | end): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: start | center | end): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDirection(value: Boolean): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Boolean): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double | String | MarginOptions): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double | String | MarginOptions): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
 }

@@ -16,19 +16,15 @@ trait ProjectsGetPermissionForUserEndpoint
 }
 object ProjectsGetPermissionForUserEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[inertia], project_id: Double, username: String): ProjectsGetPermissionForUserEndpoint = {
+  inline def apply(mediaType: `0`[inertia], project_id: Double, username: String): ProjectsGetPermissionForUserEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsGetPermissionForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ProjectsGetPermissionForUserEndpointMutableBuilder[Self <: ProjectsGetPermissionForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsGetPermissionForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

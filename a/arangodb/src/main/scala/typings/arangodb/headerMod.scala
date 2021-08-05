@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object headerMod {
   
-  @scala.inline
-  def apply(): SessionTransport = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SessionTransport]
-  @scala.inline
-  def apply(name: String): SessionTransport = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[SessionTransport]
-  @scala.inline
-  def apply(options: HeaderTransportOptions): SessionTransport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SessionTransport]
+  inline def apply(): SessionTransport = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SessionTransport]
+  inline def apply(name: String): SessionTransport = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[SessionTransport]
+  inline def apply(options: HeaderTransportOptions): SessionTransport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SessionTransport]
   
   @JSImport("@arangodb/foxx/sessions/transports/header", JSImport.Namespace)
   @js.native
@@ -24,20 +21,16 @@ object headerMod {
   }
   object HeaderTransportOptions {
     
-    @scala.inline
-    def apply(): HeaderTransportOptions = {
+    inline def apply(): HeaderTransportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderTransportOptions]
     }
     
-    @scala.inline
-    implicit class HeaderTransportOptionsMutableBuilder[Self <: HeaderTransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderTransportOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

@@ -58,37 +58,27 @@ trait PlusNativeObjRichTextStyles extends StObject {
 }
 object PlusNativeObjRichTextStyles {
   
-  @scala.inline
-  def apply(): PlusNativeObjRichTextStyles = {
+  inline def apply(): PlusNativeObjRichTextStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjRichTextStyles]
   }
   
-  @scala.inline
-  implicit class PlusNativeObjRichTextStylesMutableBuilder[Self <: PlusNativeObjRichTextStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeObjRichTextStyles](x: Self) {
     
-    @scala.inline
-    def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    @scala.inline
-    def setFontSrc(value: String): Self = StObject.set(x, "fontSrc", value.asInstanceOf[js.Any])
+    inline def setFontSrc(value: String): Self = StObject.set(x, "fontSrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSrcUndefined: Self = StObject.set(x, "fontSrc", js.undefined)
+    inline def setFontSrcUndefined: Self = StObject.set(x, "fontSrc", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

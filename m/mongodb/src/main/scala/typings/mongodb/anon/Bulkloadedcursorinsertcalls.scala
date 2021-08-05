@@ -38,8 +38,7 @@ trait Bulkloadedcursorinsertcalls extends StObject {
 }
 object Bulkloadedcursorinsertcalls {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `bulk-loaded cursor-insert calls`: Double,
     `create calls`: Double,
     `cursor-insert key and value bytes inserted`: Double,
@@ -75,52 +74,36 @@ object Bulkloadedcursorinsertcalls {
     __obj.asInstanceOf[Bulkloadedcursorinsertcalls]
   }
   
-  @scala.inline
-  implicit class BulkloadedcursorinsertcallsMutableBuilder[Self <: Bulkloadedcursorinsertcalls] (val x: Self) extends AnyVal {
+  extension [Self <: Bulkloadedcursorinsertcalls](x: Self) {
     
-    @scala.inline
-    def `setBulk-loaded cursor-insert calls`(value: Double): Self = StObject.set(x, "bulk-loaded cursor-insert calls", value.asInstanceOf[js.Any])
+    inline def `setBulk-loaded cursor-insert calls`(value: Double): Self = StObject.set(x, "bulk-loaded cursor-insert calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCreate calls`(value: Double): Self = StObject.set(x, "create calls", value.asInstanceOf[js.Any])
+    inline def `setCreate calls`(value: Double): Self = StObject.set(x, "create calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCursor-insert key and value bytes inserted`(value: Double): Self = StObject.set(x, "cursor-insert key and value bytes inserted", value.asInstanceOf[js.Any])
+    inline def `setCursor-insert key and value bytes inserted`(value: Double): Self = StObject.set(x, "cursor-insert key and value bytes inserted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCursor-remove key bytes removed`(value: Double): Self = StObject.set(x, "cursor-remove key bytes removed", value.asInstanceOf[js.Any])
+    inline def `setCursor-remove key bytes removed`(value: Double): Self = StObject.set(x, "cursor-remove key bytes removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCursor-update value bytes updated`(value: Double): Self = StObject.set(x, "cursor-update value bytes updated", value.asInstanceOf[js.Any])
+    inline def `setCursor-update value bytes updated`(value: Double): Self = StObject.set(x, "cursor-update value bytes updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setInsert calls`(value: Double): Self = StObject.set(x, "insert calls", value.asInstanceOf[js.Any])
+    inline def `setInsert calls`(value: Double): Self = StObject.set(x, "insert calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setNext calls`(value: Double): Self = StObject.set(x, "next calls", value.asInstanceOf[js.Any])
+    inline def `setNext calls`(value: Double): Self = StObject.set(x, "next calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPrev calls`(value: Double): Self = StObject.set(x, "prev calls", value.asInstanceOf[js.Any])
+    inline def `setPrev calls`(value: Double): Self = StObject.set(x, "prev calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRemove calls`(value: Double): Self = StObject.set(x, "remove calls", value.asInstanceOf[js.Any])
+    inline def `setRemove calls`(value: Double): Self = StObject.set(x, "remove calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setReset calls`(value: Double): Self = StObject.set(x, "reset calls", value.asInstanceOf[js.Any])
+    inline def `setReset calls`(value: Double): Self = StObject.set(x, "reset calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRestarted searches`(value: Double): Self = StObject.set(x, "restarted searches", value.asInstanceOf[js.Any])
+    inline def `setRestarted searches`(value: Double): Self = StObject.set(x, "restarted searches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSearch calls`(value: Double): Self = StObject.set(x, "search calls", value.asInstanceOf[js.Any])
+    inline def `setSearch calls`(value: Double): Self = StObject.set(x, "search calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSearch near calls`(value: Double): Self = StObject.set(x, "search near calls", value.asInstanceOf[js.Any])
+    inline def `setSearch near calls`(value: Double): Self = StObject.set(x, "search near calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTruncate calls`(value: Double): Self = StObject.set(x, "truncate calls", value.asInstanceOf[js.Any])
+    inline def `setTruncate calls`(value: Double): Self = StObject.set(x, "truncate calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUpdate calls`(value: Double): Self = StObject.set(x, "update calls", value.asInstanceOf[js.Any])
+    inline def `setUpdate calls`(value: Double): Self = StObject.set(x, "update calls", value.asInstanceOf[js.Any])
   }
 }

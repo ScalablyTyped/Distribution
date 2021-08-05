@@ -28,8 +28,7 @@ trait Hostname extends StObject {
 }
 object Hostname {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hostname: String,
     management: Options,
     options: ChannelMax,
@@ -45,37 +44,26 @@ object Hostname {
     __obj.asInstanceOf[Hostname]
   }
   
-  @scala.inline
-  implicit class HostnameMutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
+  extension [Self <: Hostname](x: Self) {
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagement(value: Options): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
+    inline def setManagement(value: Options): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: ChannelMax): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ChannelMax): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetry(value: Factor): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: Factor): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlashes(value: Boolean): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
+    inline def setSlashes(value: Boolean): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketOptions(value: TimeoutNumber): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
+    inline def setSocketOptions(value: TimeoutNumber): Self = StObject.set(x, "socketOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

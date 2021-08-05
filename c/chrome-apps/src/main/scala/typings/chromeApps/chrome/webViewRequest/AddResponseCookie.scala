@@ -14,23 +14,19 @@ trait AddResponseCookie
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseCookie
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.AddResponseCookie
 }
 object AddResponseCookie {
   
-  @scala.inline
-  def apply(instanceType: String): AddResponseCookie = {
+  inline def apply(instanceType: String): AddResponseCookie = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "AddResponseCookie")
     __obj.asInstanceOf[AddResponseCookie]
   }
   
-  @scala.inline
-  implicit class AddResponseCookieMutableBuilder[Self <: AddResponseCookie] (val x: Self) extends AnyVal {
+  extension [Self <: AddResponseCookie](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.AddResponseCookie): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.AddResponseCookie): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

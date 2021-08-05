@@ -30,25 +30,19 @@ trait Dueby extends StObject {
 }
 object Dueby {
   
-  @scala.inline
-  def apply(due_by: Double, has_evidence: Boolean, past_due: Boolean, submission_count: Double): Dueby = {
+  inline def apply(due_by: Double, has_evidence: Boolean, past_due: Boolean, submission_count: Double): Dueby = {
     val __obj = js.Dynamic.literal(due_by = due_by.asInstanceOf[js.Any], has_evidence = has_evidence.asInstanceOf[js.Any], past_due = past_due.asInstanceOf[js.Any], submission_count = submission_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dueby]
   }
   
-  @scala.inline
-  implicit class DuebyMutableBuilder[Self <: Dueby] (val x: Self) extends AnyVal {
+  extension [Self <: Dueby](x: Self) {
     
-    @scala.inline
-    def setDue_by(value: Double): Self = StObject.set(x, "due_by", value.asInstanceOf[js.Any])
+    inline def setDue_by(value: Double): Self = StObject.set(x, "due_by", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_evidence(value: Boolean): Self = StObject.set(x, "has_evidence", value.asInstanceOf[js.Any])
+    inline def setHas_evidence(value: Boolean): Self = StObject.set(x, "has_evidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPast_due(value: Boolean): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
+    inline def setPast_due(value: Boolean): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmission_count(value: Double): Self = StObject.set(x, "submission_count", value.asInstanceOf[js.Any])
+    inline def setSubmission_count(value: Double): Self = StObject.set(x, "submission_count", value.asInstanceOf[js.Any])
   }
 }

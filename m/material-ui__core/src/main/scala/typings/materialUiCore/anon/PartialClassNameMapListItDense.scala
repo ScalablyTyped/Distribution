@@ -21,49 +21,35 @@ trait PartialClassNameMapListItDense extends StObject {
 }
 object PartialClassNameMapListItDense {
   
-  @scala.inline
-  def apply(): PartialClassNameMapListItDense = {
+  inline def apply(): PartialClassNameMapListItDense = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapListItDense]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapListItDenseMutableBuilder[Self <: PartialClassNameMapListItDense] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapListItDense](x: Self) {
     
-    @scala.inline
-    def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+    inline def setDense(value: String): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+    inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
-    @scala.inline
-    def setInset(value: String): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: String): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
-    @scala.inline
-    def setTextDense(value: String): Self = StObject.set(x, "textDense", value.asInstanceOf[js.Any])
+    inline def setTextDense(value: String): Self = StObject.set(x, "textDense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDenseUndefined: Self = StObject.set(x, "textDense", js.undefined)
+    inline def setTextDenseUndefined: Self = StObject.set(x, "textDense", js.undefined)
   }
 }

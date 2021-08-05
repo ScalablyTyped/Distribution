@@ -26,28 +26,21 @@ trait Coords extends StObject {
 }
 object Coords {
   
-  @scala.inline
-  def apply(): Coords = {
+  inline def apply(): Coords = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Coords]
   }
   
-  @scala.inline
-  implicit class CoordsMutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
+  extension [Self <: Coords](x: Self) {
     
-    @scala.inline
-    def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    inline def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
+    inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    @scala.inline
-    def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
+    inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

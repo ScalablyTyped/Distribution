@@ -18,28 +18,21 @@ trait DescribeNetworkInterfacePermissionsResult extends StObject {
 }
 object DescribeNetworkInterfacePermissionsResult {
   
-  @scala.inline
-  def apply(): DescribeNetworkInterfacePermissionsResult = {
+  inline def apply(): DescribeNetworkInterfacePermissionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNetworkInterfacePermissionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeNetworkInterfacePermissionsResultMutableBuilder[Self <: DescribeNetworkInterfacePermissionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNetworkInterfacePermissionsResult](x: Self) {
     
-    @scala.inline
-    def setNetworkInterfacePermissions(value: NetworkInterfacePermissionList): Self = StObject.set(x, "NetworkInterfacePermissions", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfacePermissions(value: NetworkInterfacePermissionList): Self = StObject.set(x, "NetworkInterfacePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfacePermissionsUndefined: Self = StObject.set(x, "NetworkInterfacePermissions", js.undefined)
+    inline def setNetworkInterfacePermissionsUndefined: Self = StObject.set(x, "NetworkInterfacePermissions", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfacePermissionsVarargs(value: NetworkInterfacePermission*): Self = StObject.set(x, "NetworkInterfacePermissions", js.Array(value :_*))
+    inline def setNetworkInterfacePermissionsVarargs(value: NetworkInterfacePermission*): Self = StObject.set(x, "NetworkInterfacePermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

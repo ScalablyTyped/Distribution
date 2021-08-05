@@ -36,31 +36,23 @@ trait TextRangeLoadOptions extends StObject {
 }
 object TextRangeLoadOptions {
   
-  @scala.inline
-  def apply(): TextRangeLoadOptions = {
+  inline def apply(): TextRangeLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextRangeLoadOptions]
   }
   
-  @scala.inline
-  implicit class TextRangeLoadOptionsMutableBuilder[Self <: TextRangeLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextRangeLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setFont(value: ShapeFontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: ShapeFontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

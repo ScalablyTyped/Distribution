@@ -62,13 +62,10 @@ object srcErrorMod {
   trait ErrorCode extends StObject
   object ErrorCode {
     
-    @scala.inline
-    def INVALID_VALUE: typings.intlMessageformat.intlMessageformatStrings.INVALID_VALUE = "INVALID_VALUE".asInstanceOf[typings.intlMessageformat.intlMessageformatStrings.INVALID_VALUE]
+    inline def INVALID_VALUE: typings.intlMessageformat.intlMessageformatStrings.INVALID_VALUE = "INVALID_VALUE".asInstanceOf[typings.intlMessageformat.intlMessageformatStrings.INVALID_VALUE]
     
-    @scala.inline
-    def MISSING_INTL_API: typings.intlMessageformat.intlMessageformatStrings.MISSING_INTL_API = "MISSING_INTL_API".asInstanceOf[typings.intlMessageformat.intlMessageformatStrings.MISSING_INTL_API]
+    inline def MISSING_INTL_API: typings.intlMessageformat.intlMessageformatStrings.MISSING_INTL_API = "MISSING_INTL_API".asInstanceOf[typings.intlMessageformat.intlMessageformatStrings.MISSING_INTL_API]
     
-    @scala.inline
-    def MISSING_VALUE: typings.intlMessageformat.intlMessageformatStrings.MISSING_VALUE = "MISSING_VALUE".asInstanceOf[typings.intlMessageformat.intlMessageformatStrings.MISSING_VALUE]
+    inline def MISSING_VALUE: typings.intlMessageformat.intlMessageformatStrings.MISSING_VALUE = "MISSING_VALUE".asInstanceOf[typings.intlMessageformat.intlMessageformatStrings.MISSING_VALUE]
   }
 }

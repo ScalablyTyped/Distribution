@@ -56,139 +56,97 @@ trait InputFieldOptions extends StObject {
 }
 object InputFieldOptions {
   
-  @scala.inline
-  def apply(): InputFieldOptions = {
+  inline def apply(): InputFieldOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputFieldOptions]
   }
   
-  @scala.inline
-  implicit class InputFieldOptionsMutableBuilder[Self <: InputFieldOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InputFieldOptions](x: Self) {
     
-    @scala.inline
-    def setAutoComplete(value: js.Array[String] | Autocompletion): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(value: js.Array[String] | Autocompletion): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCompleteFunction1(value: /* inputString */ String => js.Promise[String | AutocompletionArray[String]]): Self = StObject.set(x, "autoComplete", js.Any.fromFunction1(value))
+    inline def setAutoCompleteFunction1(value: /* inputString */ String => js.Promise[String | AutocompletionArray[String]]): Self = StObject.set(x, "autoComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAutoCompleteFunction2(
+    inline def setAutoCompleteFunction2(
       value: (/* inputString */ String, /* callback */ Callback[String | AutocompletionArray[String]]) => Unit
     ): Self = StObject.set(x, "autoComplete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAutoCompleteHint(value: Boolean): Self = StObject.set(x, "autoCompleteHint", value.asInstanceOf[js.Any])
+    inline def setAutoCompleteHint(value: Boolean): Self = StObject.set(x, "autoCompleteHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCompleteHintUndefined: Self = StObject.set(x, "autoCompleteHint", js.undefined)
+    inline def setAutoCompleteHintUndefined: Self = StObject.set(x, "autoCompleteHint", js.undefined)
     
-    @scala.inline
-    def setAutoCompleteMenu(value: Boolean | Autocompletion): Self = StObject.set(x, "autoCompleteMenu", value.asInstanceOf[js.Any])
+    inline def setAutoCompleteMenu(value: Boolean | Autocompletion): Self = StObject.set(x, "autoCompleteMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCompleteMenuFunction1(value: /* inputString */ String => js.Promise[String | AutocompletionArray[String]]): Self = StObject.set(x, "autoCompleteMenu", js.Any.fromFunction1(value))
+    inline def setAutoCompleteMenuFunction1(value: /* inputString */ String => js.Promise[String | AutocompletionArray[String]]): Self = StObject.set(x, "autoCompleteMenu", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAutoCompleteMenuFunction2(
+    inline def setAutoCompleteMenuFunction2(
       value: (/* inputString */ String, /* callback */ Callback[String | AutocompletionArray[String]]) => Unit
     ): Self = StObject.set(x, "autoCompleteMenu", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAutoCompleteMenuUndefined: Self = StObject.set(x, "autoCompleteMenu", js.undefined)
+    inline def setAutoCompleteMenuUndefined: Self = StObject.set(x, "autoCompleteMenu", js.undefined)
     
-    @scala.inline
-    def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
-    @scala.inline
-    def setAutoCompleteVarargs(value: String*): Self = StObject.set(x, "autoComplete", js.Array(value :_*))
+    inline def setAutoCompleteVarargs(value: String*): Self = StObject.set(x, "autoComplete", js.Array(value :_*))
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
     
-    @scala.inline
-    def setCursorPosition(value: Double): Self = StObject.set(x, "cursorPosition", value.asInstanceOf[js.Any])
+    inline def setCursorPosition(value: Double): Self = StObject.set(x, "cursorPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorPositionUndefined: Self = StObject.set(x, "cursorPosition", js.undefined)
+    inline def setCursorPositionUndefined: Self = StObject.set(x, "cursorPosition", js.undefined)
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
+    inline def setEcho(value: Boolean): Self = StObject.set(x, "echo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEchoChar(value: String | `true`): Self = StObject.set(x, "echoChar", value.asInstanceOf[js.Any])
+    inline def setEchoChar(value: String | `true`): Self = StObject.set(x, "echoChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEchoCharUndefined: Self = StObject.set(x, "echoChar", js.undefined)
+    inline def setEchoCharUndefined: Self = StObject.set(x, "echoChar", js.undefined)
     
-    @scala.inline
-    def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
+    inline def setEchoUndefined: Self = StObject.set(x, "echo", js.undefined)
     
-    @scala.inline
-    def setHintStyle(value: CTerminal): Self = StObject.set(x, "hintStyle", value.asInstanceOf[js.Any])
+    inline def setHintStyle(value: CTerminal): Self = StObject.set(x, "hintStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintStyleUndefined: Self = StObject.set(x, "hintStyle", js.undefined)
+    inline def setHintStyleUndefined: Self = StObject.set(x, "hintStyle", js.undefined)
     
-    @scala.inline
-    def setHistory(value: js.Array[String]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: js.Array[String]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
+    inline def setHistoryVarargs(value: String*): Self = StObject.set(x, "history", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
+    inline def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyBindingsUndefined: Self = StObject.set(x, "keyBindings", js.undefined)
+    inline def setKeyBindingsUndefined: Self = StObject.set(x, "keyBindings", js.undefined)
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTokenHook(
+    inline def setTokenHook(
       value: (/* token */ String, /* isEndOfInput */ Boolean, /* previousTokens */ js.Array[String], /* term */ Terminal, /* config */ HookConfig) => String | CTerminal | Null | Unit
     ): Self = StObject.set(x, "tokenHook", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTokenHookUndefined: Self = StObject.set(x, "tokenHook", js.undefined)
+    inline def setTokenHookUndefined: Self = StObject.set(x, "tokenHook", js.undefined)
     
-    @scala.inline
-    def setTokenRegExp(value: RegExp): Self = StObject.set(x, "tokenRegExp", value.asInstanceOf[js.Any])
+    inline def setTokenRegExp(value: RegExp): Self = StObject.set(x, "tokenRegExp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenRegExpUndefined: Self = StObject.set(x, "tokenRegExp", js.undefined)
+    inline def setTokenRegExpUndefined: Self = StObject.set(x, "tokenRegExp", js.undefined)
     
-    @scala.inline
-    def setTokenResetHook(value: (/* term */ Terminal, /* config */ js.UndefOr[HookConfig]) => String | CTerminal): Self = StObject.set(x, "tokenResetHook", js.Any.fromFunction2(value))
+    inline def setTokenResetHook(value: (/* term */ Terminal, /* config */ js.UndefOr[HookConfig]) => String | CTerminal): Self = StObject.set(x, "tokenResetHook", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTokenResetHookUndefined: Self = StObject.set(x, "tokenResetHook", js.undefined)
+    inline def setTokenResetHookUndefined: Self = StObject.set(x, "tokenResetHook", js.undefined)
   }
 }

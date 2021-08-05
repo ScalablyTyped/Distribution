@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IHTMLTableSection extends StObject {
   
-  @JSName("MSHTML.IHTMLTableSection_typekey")
+  /* private */ @JSName("MSHTML.IHTMLTableSection_typekey")
   var MSHTMLDotIHTMLTableSection_typekey: IHTMLTableSection = js.native
   
   var align: String = js.native

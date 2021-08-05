@@ -14,19 +14,13 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def adb(sdkPath: String, port: Double, command: String, timeout: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("adb")(sdkPath.asInstanceOf[js.Any], port.asInstanceOf[js.Any], command.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def adb(sdkPath: String, port: Double, command: String, timeout: Double, args: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("adb")(sdkPath.asInstanceOf[js.Any], port.asInstanceOf[js.Any], command.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def adb(sdkPath: String, port: Double, command: String, timeout: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("adb")(sdkPath.asInstanceOf[js.Any], port.asInstanceOf[js.Any], command.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def adb(sdkPath: String, port: Double, command: String, timeout: Double, args: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("adb")(sdkPath.asInstanceOf[js.Any], port.asInstanceOf[js.Any], command.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def request(method: String, port: String, path: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def request(method: String, port: String, path: String, timeout: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def request(method: String, port: String, path: String, timeout: Double, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def request(method: String, port: String, path: String, timeout: Unit, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def request(method: String, port: String, path: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def request(method: String, port: String, path: String, timeout: Double): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def request(method: String, port: String, path: String, timeout: Double, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def request(method: String, port: String, path: String, timeout: Unit, data: js.Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], port.asInstanceOf[js.Any], path.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("webdriver-manager/built/lib/utils", "spawn")
   @js.native
@@ -47,8 +41,7 @@ object utilsMod {
     /* opts */ js.UndefOr[SpawnSyncOptions], 
     SpawnSyncReturns[js.Any]
   ] = js.native
-  @scala.inline
-  def spawnSync_=(
+  inline def spawnSync_=(
     x: js.Function4[
       /* cmd */ String, 
       /* args */ js.Array[String], 
@@ -58,8 +51,7 @@ object utilsMod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spawnSync")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def spawn_=(
+  inline def spawn_=(
     x: js.Function4[
       /* cmd */ String, 
       /* args */ js.Array[String], 

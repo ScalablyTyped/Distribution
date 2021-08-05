@@ -18,22 +18,17 @@ trait ListChangeSetsInput extends StObject {
 }
 object ListChangeSetsInput {
   
-  @scala.inline
-  def apply(StackName: StackNameOrId): ListChangeSetsInput = {
+  inline def apply(StackName: StackNameOrId): ListChangeSetsInput = {
     val __obj = js.Dynamic.literal(StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListChangeSetsInput]
   }
   
-  @scala.inline
-  implicit class ListChangeSetsInputMutableBuilder[Self <: ListChangeSetsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListChangeSetsInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

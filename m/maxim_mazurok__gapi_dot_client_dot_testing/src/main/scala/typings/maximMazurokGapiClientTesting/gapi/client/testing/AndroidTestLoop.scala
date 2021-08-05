@@ -27,49 +27,35 @@ trait AndroidTestLoop extends StObject {
 }
 object AndroidTestLoop {
   
-  @scala.inline
-  def apply(): AndroidTestLoop = {
+  inline def apply(): AndroidTestLoop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidTestLoop]
   }
   
-  @scala.inline
-  implicit class AndroidTestLoopMutableBuilder[Self <: AndroidTestLoop] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidTestLoop](x: Self) {
     
-    @scala.inline
-    def setAppApk(value: FileReference): Self = StObject.set(x, "appApk", value.asInstanceOf[js.Any])
+    inline def setAppApk(value: FileReference): Self = StObject.set(x, "appApk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppApkUndefined: Self = StObject.set(x, "appApk", js.undefined)
+    inline def setAppApkUndefined: Self = StObject.set(x, "appApk", js.undefined)
     
-    @scala.inline
-    def setAppBundle(value: AppBundle): Self = StObject.set(x, "appBundle", value.asInstanceOf[js.Any])
+    inline def setAppBundle(value: AppBundle): Self = StObject.set(x, "appBundle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppBundleUndefined: Self = StObject.set(x, "appBundle", js.undefined)
+    inline def setAppBundleUndefined: Self = StObject.set(x, "appBundle", js.undefined)
     
-    @scala.inline
-    def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
+    inline def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
+    inline def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
     
-    @scala.inline
-    def setScenarioLabels(value: js.Array[String]): Self = StObject.set(x, "scenarioLabels", value.asInstanceOf[js.Any])
+    inline def setScenarioLabels(value: js.Array[String]): Self = StObject.set(x, "scenarioLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScenarioLabelsUndefined: Self = StObject.set(x, "scenarioLabels", js.undefined)
+    inline def setScenarioLabelsUndefined: Self = StObject.set(x, "scenarioLabels", js.undefined)
     
-    @scala.inline
-    def setScenarioLabelsVarargs(value: String*): Self = StObject.set(x, "scenarioLabels", js.Array(value :_*))
+    inline def setScenarioLabelsVarargs(value: String*): Self = StObject.set(x, "scenarioLabels", js.Array(value :_*))
     
-    @scala.inline
-    def setScenarios(value: js.Array[Double]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
+    inline def setScenarios(value: js.Array[Double]): Self = StObject.set(x, "scenarios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScenariosUndefined: Self = StObject.set(x, "scenarios", js.undefined)
+    inline def setScenariosUndefined: Self = StObject.set(x, "scenarios", js.undefined)
     
-    @scala.inline
-    def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
+    inline def setScenariosVarargs(value: Double*): Self = StObject.set(x, "scenarios", js.Array(value :_*))
   }
 }

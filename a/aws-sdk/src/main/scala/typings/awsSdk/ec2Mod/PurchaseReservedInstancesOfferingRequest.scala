@@ -33,37 +33,27 @@ trait PurchaseReservedInstancesOfferingRequest extends StObject {
 }
 object PurchaseReservedInstancesOfferingRequest {
   
-  @scala.inline
-  def apply(InstanceCount: Integer, ReservedInstancesOfferingId: ReservedInstancesOfferingId): PurchaseReservedInstancesOfferingRequest = {
+  inline def apply(InstanceCount: Integer, ReservedInstancesOfferingId: ReservedInstancesOfferingId): PurchaseReservedInstancesOfferingRequest = {
     val __obj = js.Dynamic.literal(InstanceCount = InstanceCount.asInstanceOf[js.Any], ReservedInstancesOfferingId = ReservedInstancesOfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedInstancesOfferingRequest]
   }
   
-  @scala.inline
-  implicit class PurchaseReservedInstancesOfferingRequestMutableBuilder[Self <: PurchaseReservedInstancesOfferingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseReservedInstancesOfferingRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitPrice(value: ReservedInstanceLimitPrice): Self = StObject.set(x, "LimitPrice", value.asInstanceOf[js.Any])
+    inline def setLimitPrice(value: ReservedInstanceLimitPrice): Self = StObject.set(x, "LimitPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitPriceUndefined: Self = StObject.set(x, "LimitPrice", js.undefined)
+    inline def setLimitPriceUndefined: Self = StObject.set(x, "LimitPrice", js.undefined)
     
-    @scala.inline
-    def setPurchaseTime(value: DateTime): Self = StObject.set(x, "PurchaseTime", value.asInstanceOf[js.Any])
+    inline def setPurchaseTime(value: DateTime): Self = StObject.set(x, "PurchaseTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseTimeUndefined: Self = StObject.set(x, "PurchaseTime", js.undefined)
+    inline def setPurchaseTimeUndefined: Self = StObject.set(x, "PurchaseTime", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesOfferingId(value: ReservedInstancesOfferingId): Self = StObject.set(x, "ReservedInstancesOfferingId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesOfferingId(value: ReservedInstancesOfferingId): Self = StObject.set(x, "ReservedInstancesOfferingId", value.asInstanceOf[js.Any])
   }
 }

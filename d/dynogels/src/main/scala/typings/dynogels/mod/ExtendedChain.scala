@@ -18,8 +18,7 @@ trait ExtendedChain[T]
 }
 object ExtendedChain {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     beginsWith: js.Any => T,
     between: (js.Any, js.Any) => T,
     contains: js.Any => T,
@@ -43,19 +42,14 @@ object ExtendedChain {
     __obj.asInstanceOf[ExtendedChain[T]]
   }
   
-  @scala.inline
-  implicit class ExtendedChainMutableBuilder[Self <: ExtendedChain[?], T] (val x: Self & ExtendedChain[T]) extends AnyVal {
+  extension [Self <: ExtendedChain[?], T](x: Self & ExtendedChain[T]) {
     
-    @scala.inline
-    def setContains(value: js.Any => T): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    inline def setContains(value: js.Any => T): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn(value: js.Array[js.Any] => T): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: js.Array[js.Any] => T): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNe_(value: js.Any => T): Self = StObject.set(x, "ne", js.Any.fromFunction1(value))
+    inline def setNe_(value: js.Any => T): Self = StObject.set(x, "ne", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotContains(value: js.Any => T): Self = StObject.set(x, "notContains", js.Any.fromFunction1(value))
+    inline def setNotContains(value: js.Any => T): Self = StObject.set(x, "notContains", js.Any.fromFunction1(value))
   }
 }

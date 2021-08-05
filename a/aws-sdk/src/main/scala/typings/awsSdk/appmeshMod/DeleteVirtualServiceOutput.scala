@@ -13,16 +13,13 @@ trait DeleteVirtualServiceOutput extends StObject {
 }
 object DeleteVirtualServiceOutput {
   
-  @scala.inline
-  def apply(virtualService: VirtualServiceData): DeleteVirtualServiceOutput = {
+  inline def apply(virtualService: VirtualServiceData): DeleteVirtualServiceOutput = {
     val __obj = js.Dynamic.literal(virtualService = virtualService.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVirtualServiceOutput]
   }
   
-  @scala.inline
-  implicit class DeleteVirtualServiceOutputMutableBuilder[Self <: DeleteVirtualServiceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVirtualServiceOutput](x: Self) {
     
-    @scala.inline
-    def setVirtualService(value: VirtualServiceData): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
+    inline def setVirtualService(value: VirtualServiceData): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
   }
 }

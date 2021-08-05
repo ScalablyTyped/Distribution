@@ -12,19 +12,15 @@ trait StatsParams extends StObject {
 }
 object StatsParams {
   
-  @scala.inline
-  def apply(from: String, to: String): StatsParams = {
+  inline def apply(from: String, to: String): StatsParams = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatsParams]
   }
   
-  @scala.inline
-  implicit class StatsParamsMutableBuilder[Self <: StatsParams] (val x: Self) extends AnyVal {
+  extension [Self <: StatsParams](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

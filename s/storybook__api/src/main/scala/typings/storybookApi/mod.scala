@@ -51,24 +51,20 @@ object mod {
     @JSImport("@storybook/api", "ActiveTabs.ADDONS")
     @js.native
     def ADDONS: addons = js.native
-    @scala.inline
-    def ADDONS_=(x: addons): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDONS")(x.asInstanceOf[js.Any])
+    inline def ADDONS_=(x: addons): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDONS")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/api", "ActiveTabs.CANVAS")
     @js.native
     def CANVAS: canvas = js.native
-    @scala.inline
-    def CANVAS_=(x: canvas): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANVAS")(x.asInstanceOf[js.Any])
+    inline def CANVAS_=(x: canvas): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANVAS")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/api", "ActiveTabs.SIDEBAR")
     @js.native
     def SIDEBAR: sidebar = js.native
-    @scala.inline
-    def SIDEBAR_=(x: sidebar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIDEBAR")(x.asInstanceOf[js.Any])
+    inline def SIDEBAR_=(x: sidebar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIDEBAR")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def Consumer[P](hasFilterChildren: ManagerConsumerProps[P]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Consumer")(hasFilterChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def Consumer[P](hasFilterChildren: ManagerConsumerProps[P]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("Consumer")(hasFilterChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@storybook/api", "Provider")
   @js.native
@@ -85,39 +81,31 @@ object mod {
     @JSImport("@storybook/api", "Provider.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("@storybook/api", "Provider.getDerivedStateFromProps")
     @js.native
     def getDerivedStateFromProps: js.Function2[/* props */ ManagerProviderProps, /* state */ State, CustomQueryParams] = js.native
-    @scala.inline
-    def getDerivedStateFromProps_=(x: js.Function2[/* props */ ManagerProviderProps, /* state */ State, CustomQueryParams]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
+    inline def getDerivedStateFromProps_=(x: js.Function2[/* props */ ManagerProviderProps, /* state */ State, CustomQueryParams]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def combineParameters(parameterSets: Parameters*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineParameters")(parameterSets.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def combineParameters(parameterSets: Parameters*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineParameters")(parameterSets.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isGroup(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroup")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean]
+  inline def isGroup(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroup")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Group */ Boolean]
   
-  @scala.inline
-  def isRoot(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRoot")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean]
+  inline def isRoot(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRoot")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Root */ Boolean]
   
-  @scala.inline
-  def isStory(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStory")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean]
+  inline def isStory(item: Item): /* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStory")(item.asInstanceOf[js.Any]).asInstanceOf[/* is @storybook/api.@storybook/api/dist/lib/stories.Story */ Boolean]
   
-  @scala.inline
-  def useAddonState[S](addonId: String): js.Tuple2[
+  inline def useAddonState[S](addonId: String): js.Tuple2[
     S, 
     js.Function2[/* newStateOrMerger */ S | StateMerger[S], /* options */ js.UndefOr[Options], Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAddonState")(addonId.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
     S, 
     js.Function2[/* newStateOrMerger */ S | StateMerger[S], /* options */ js.UndefOr[Options], Unit]
   ]]
-  @scala.inline
-  def useAddonState[S](addonId: String, defaultState: S): js.Tuple2[
+  inline def useAddonState[S](addonId: String, defaultState: S): js.Tuple2[
     S, 
     js.Function2[/* newStateOrMerger */ S | StateMerger[S], /* options */ js.UndefOr[Options], Unit]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useAddonState")(addonId.asInstanceOf[js.Any], defaultState.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
@@ -125,11 +113,9 @@ object mod {
     js.Function2[/* newStateOrMerger */ S | StateMerger[S], /* options */ js.UndefOr[Options], Unit]
   ]]
   
-  @scala.inline
-  def useArgTypes(): ArgTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("useArgTypes")().asInstanceOf[ArgTypes]
+  inline def useArgTypes(): ArgTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("useArgTypes")().asInstanceOf[ArgTypes]
   
-  @scala.inline
-  def useArgs(): js.Tuple3[
+  inline def useArgs(): js.Tuple3[
     Args, 
     js.Function1[/* newArgs */ Args, Unit], 
     js.Function1[/* argNames */ js.UndefOr[js.Array[String]], Unit]
@@ -139,32 +125,24 @@ object mod {
     js.Function1[/* argNames */ js.UndefOr[js.Array[String]], Unit]
   ]]
   
-  @scala.inline
-  def useChannel(eventMap: EventMap): js.Function2[/* type */ String, /* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChannel")(eventMap.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* type */ String, /* repeated */ js.Any, Unit]]
-  @scala.inline
-  def useChannel(eventMap: EventMap, deps: js.Array[js.Any]): js.Function2[/* type */ String, /* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChannel")(eventMap.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* type */ String, /* repeated */ js.Any, Unit]]
+  inline def useChannel(eventMap: EventMap): js.Function2[/* type */ String, /* repeated */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("useChannel")(eventMap.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* type */ String, /* repeated */ js.Any, Unit]]
+  inline def useChannel(eventMap: EventMap, deps: js.Array[js.Any]): js.Function2[/* type */ String, /* repeated */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("useChannel")(eventMap.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* type */ String, /* repeated */ js.Any, Unit]]
   
-  @scala.inline
-  def useGlobalTypes(): ArgTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalTypes")().asInstanceOf[ArgTypes]
+  inline def useGlobalTypes(): ArgTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("useGlobalTypes")().asInstanceOf[ArgTypes]
   
-  @scala.inline
-  def useGlobals(): js.Tuple2[Args, js.Function1[/* newGlobals */ Args, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGlobals")().asInstanceOf[js.Tuple2[Args, js.Function1[/* newGlobals */ Args, Unit]]]
+  inline def useGlobals(): js.Tuple2[Args, js.Function1[/* newGlobals */ Args, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGlobals")().asInstanceOf[js.Tuple2[Args, js.Function1[/* newGlobals */ Args, Unit]]]
   
-  @scala.inline
-  def useParameter[S](parameterKey: String): S = ^.asInstanceOf[js.Dynamic].applyDynamic("useParameter")(parameterKey.asInstanceOf[js.Any]).asInstanceOf[S]
-  @scala.inline
-  def useParameter[S](parameterKey: String, defaultValue: S): S = (^.asInstanceOf[js.Dynamic].applyDynamic("useParameter")(parameterKey.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[S]
+  inline def useParameter[S](parameterKey: String): S = ^.asInstanceOf[js.Dynamic].applyDynamic("useParameter")(parameterKey.asInstanceOf[js.Any]).asInstanceOf[S]
+  inline def useParameter[S](parameterKey: String, defaultValue: S): S = (^.asInstanceOf[js.Dynamic].applyDynamic("useParameter")(parameterKey.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[S]
   
-  @scala.inline
-  def useSharedState[S](stateId: String): js.Tuple2[
+  inline def useSharedState[S](stateId: String): js.Tuple2[
     S, 
     js.Function2[/* newStateOrMerger */ S | StateMerger[S], /* options */ js.UndefOr[Options], Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSharedState")(stateId.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
     S, 
     js.Function2[/* newStateOrMerger */ S | StateMerger[S], /* options */ js.UndefOr[Options], Unit]
   ]]
-  @scala.inline
-  def useSharedState[S](stateId: String, defaultState: S): js.Tuple2[
+  inline def useSharedState[S](stateId: String, defaultState: S): js.Tuple2[
     S, 
     js.Function2[/* newStateOrMerger */ S | StateMerger[S], /* options */ js.UndefOr[Options], Unit]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("useSharedState")(stateId.asInstanceOf[js.Any], defaultState.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
@@ -172,11 +150,9 @@ object mod {
     js.Function2[/* newStateOrMerger */ S | StateMerger[S], /* options */ js.UndefOr[Options], Unit]
   ]]
   
-  @scala.inline
-  def useStorybookApi(): API = ^.asInstanceOf[js.Dynamic].applyDynamic("useStorybookApi")().asInstanceOf[API]
+  inline def useStorybookApi(): API = ^.asInstanceOf[js.Dynamic].applyDynamic("useStorybookApi")().asInstanceOf[API]
   
-  @scala.inline
-  def useStorybookState(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("useStorybookState")().asInstanceOf[State]
+  inline def useStorybookState(): State = ^.asInstanceOf[js.Dynamic].applyDynamic("useStorybookState")().asInstanceOf[State]
   
   @js.native
   trait API
@@ -208,32 +184,24 @@ object mod {
   }
   object ArgType {
     
-    @scala.inline
-    def apply(): ArgType = {
+    inline def apply(): ArgType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArgType]
     }
     
-    @scala.inline
-    implicit class ArgTypeMutableBuilder[Self <: ArgType] (val x: Self) extends AnyVal {
+    extension [Self <: ArgType](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -249,20 +217,16 @@ object mod {
   }
   object Combo {
     
-    @scala.inline
-    def apply(api: API, state: State): Combo = {
+    inline def apply(api: API, state: State): Combo = {
       val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[Combo]
     }
     
-    @scala.inline
-    implicit class ComboMutableBuilder[Self <: Combo] (val x: Self) extends AnyVal {
+    extension [Self <: Combo](x: Self) {
       
-      @scala.inline
-      def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: API): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -276,26 +240,20 @@ object mod {
   }
   object ManagerConsumerProps {
     
-    @scala.inline
-    def apply[P](): ManagerConsumerProps[P] = {
+    inline def apply[P](): ManagerConsumerProps[P] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagerConsumerProps[P]]
     }
     
-    @scala.inline
-    implicit class ManagerConsumerPropsMutableBuilder[Self <: ManagerConsumerProps[?], P] (val x: Self & ManagerConsumerProps[P]) extends AnyVal {
+    extension [Self <: ManagerConsumerProps[?], P](x: Self & ManagerConsumerProps[P]) {
       
-      @scala.inline
-      def setChildren(value: FunctionComponent[P] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: FunctionComponent[P] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* combo */ Combo => P): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* combo */ Combo => P): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     }
   }
   
@@ -324,8 +282,7 @@ object mod {
   }
   object ManagerProviderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       docsMode: Boolean,
       location: WindowLocation[LocationState],
       path: String,
@@ -335,20 +292,15 @@ object mod {
       __obj.asInstanceOf[ManagerProviderProps]
     }
     
-    @scala.inline
-    implicit class ManagerProviderPropsMutableBuilder[Self <: ManagerProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ManagerProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode | (js.Function1[/* props */ Combo, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode | (js.Function1[/* props */ Combo, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* props */ Combo => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* props */ Combo => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDocsMode(value: Boolean): Self = StObject.set(x, "docsMode", value.asInstanceOf[js.Any])
+      inline def setDocsMode(value: Boolean): Self = StObject.set(x, "docsMode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -362,32 +314,24 @@ object mod {
   }
   object Module {
     
-    @scala.inline
-    def apply(): Module = {
+    inline def apply(): Module = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Module]
     }
     
-    @scala.inline
-    implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+    extension [Self <: Module](x: Self) {
       
-      @scala.inline
-      def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: js.Any): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+      inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
       
-      @scala.inline
-      def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -406,8 +350,7 @@ object mod {
   }
   object ModuleArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fullAPI: API,
       location: WindowLocation[LocationState],
       path: String,
@@ -419,23 +362,17 @@ object mod {
       __obj.asInstanceOf[ModuleArgs]
     }
     
-    @scala.inline
-    implicit class ModuleArgsMutableBuilder[Self <: ModuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ModuleArgs](x: Self) {
       
-      @scala.inline
-      def setFullAPI(value: API): Self = StObject.set(x, "fullAPI", value.asInstanceOf[js.Any])
+      inline def setFullAPI(value: API): Self = StObject.set(x, "fullAPI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: production | development): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: production | development): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore(value: default): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: default): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
   
@@ -451,17 +388,14 @@ object mod {
   }
   object ProviderData {
     
-    @scala.inline
-    def apply(provider: typings.storybookApi.providerMod.Provider): ProviderData = {
+    inline def apply(provider: typings.storybookApi.providerMod.Provider): ProviderData = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderData]
     }
     
-    @scala.inline
-    implicit class ProviderDataMutableBuilder[Self <: ProviderData] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderData](x: Self) {
       
-      @scala.inline
-      def setProvider(value: typings.storybookApi.providerMod.Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: typings.storybookApi.providerMod.Provider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
   }
   
@@ -490,8 +424,7 @@ object mod {
   }
   object State {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customQueryParams: QueryParams,
       globals: Args,
       lastVersionCheck: Double,
@@ -514,26 +447,19 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
+      inline def setNavigate(value: NavigateFn): Self = StObject.set(x, "navigate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+      inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
+      inline def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
+      inline def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
     }
   }
   

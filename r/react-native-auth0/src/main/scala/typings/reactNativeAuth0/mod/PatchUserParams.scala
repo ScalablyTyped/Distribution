@@ -12,19 +12,15 @@ trait PatchUserParams[T] extends StObject {
 }
 object PatchUserParams {
   
-  @scala.inline
-  def apply[T](id: String, metadata: T): PatchUserParams[T] = {
+  inline def apply[T](id: String, metadata: T): PatchUserParams[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchUserParams[T]]
   }
   
-  @scala.inline
-  implicit class PatchUserParamsMutableBuilder[Self <: PatchUserParams[?], T] (val x: Self & PatchUserParams[T]) extends AnyVal {
+  extension [Self <: PatchUserParams[?], T](x: Self & PatchUserParams[T]) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: T): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: T): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

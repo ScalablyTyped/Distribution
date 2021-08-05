@@ -17,22 +17,17 @@ trait SchemaFlattenInstruction extends StObject {
 }
 object SchemaFlattenInstruction {
   
-  @scala.inline
-  def apply(): SchemaFlattenInstruction = {
+  inline def apply(): SchemaFlattenInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFlattenInstruction]
   }
   
-  @scala.inline
-  implicit class SchemaFlattenInstructionMutableBuilder[Self <: SchemaFlattenInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFlattenInstruction](x: Self) {
     
-    @scala.inline
-    def setInputs(value: js.Array[SchemaInstructionInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[SchemaInstructionInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: SchemaInstructionInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: SchemaInstructionInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
   }
 }

@@ -57,43 +57,31 @@ trait ConfigurationPropertyDefinitionRuntimeAttributes extends StObject {
 }
 object ConfigurationPropertyDefinitionRuntimeAttributes {
   
-  @scala.inline
-  def apply(required: Boolean): ConfigurationPropertyDefinitionRuntimeAttributes = {
+  inline def apply(required: Boolean): ConfigurationPropertyDefinitionRuntimeAttributes = {
     val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationPropertyDefinitionRuntimeAttributes]
   }
   
-  @scala.inline
-  implicit class ConfigurationPropertyDefinitionRuntimeAttributesMutableBuilder[Self <: ConfigurationPropertyDefinitionRuntimeAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationPropertyDefinitionRuntimeAttributes](x: Self) {
     
-    @scala.inline
-    def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+    inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+    inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
     
-    @scala.inline
-    def setDefault(value: DefaultValue | DefaultProvider): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: DefaultValue | DefaultProvider): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    @scala.inline
-    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
-    @scala.inline
-    def setNormalize(value: String): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+    inline def setNormalize(value: String): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
   }
 }

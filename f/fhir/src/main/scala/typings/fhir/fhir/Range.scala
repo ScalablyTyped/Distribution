@@ -23,25 +23,19 @@ trait Range
 }
 object Range {
   
-  @scala.inline
-  def apply(): Range = {
+  inline def apply(): Range = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Range]
   }
   
-  @scala.inline
-  implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+  extension [Self <: Range](x: Self) {
     
-    @scala.inline
-    def setHigh(value: Quantity): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
+    inline def setHigh(value: Quantity): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
+    inline def setHighUndefined: Self = StObject.set(x, "high", js.undefined)
     
-    @scala.inline
-    def setLow(value: Quantity): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
+    inline def setLow(value: Quantity): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
+    inline def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
   }
 }

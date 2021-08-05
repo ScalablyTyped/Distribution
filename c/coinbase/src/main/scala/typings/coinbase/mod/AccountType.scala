@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccountType extends StObject
 object AccountType {
   
-  @scala.inline
-  def fiat: typings.coinbase.coinbaseStrings.fiat = "fiat".asInstanceOf[typings.coinbase.coinbaseStrings.fiat]
+  inline def fiat: typings.coinbase.coinbaseStrings.fiat = "fiat".asInstanceOf[typings.coinbase.coinbaseStrings.fiat]
   
-  @scala.inline
-  def multisig: typings.coinbase.coinbaseStrings.multisig = "multisig".asInstanceOf[typings.coinbase.coinbaseStrings.multisig]
+  inline def multisig: typings.coinbase.coinbaseStrings.multisig = "multisig".asInstanceOf[typings.coinbase.coinbaseStrings.multisig]
   
-  @scala.inline
-  def multisig_vault: typings.coinbase.coinbaseStrings.multisig_vault = "multisig_vault".asInstanceOf[typings.coinbase.coinbaseStrings.multisig_vault]
+  inline def multisig_vault: typings.coinbase.coinbaseStrings.multisig_vault = "multisig_vault".asInstanceOf[typings.coinbase.coinbaseStrings.multisig_vault]
   
-  @scala.inline
-  def vault: typings.coinbase.coinbaseStrings.vault = "vault".asInstanceOf[typings.coinbase.coinbaseStrings.vault]
+  inline def vault: typings.coinbase.coinbaseStrings.vault = "vault".asInstanceOf[typings.coinbase.coinbaseStrings.vault]
   
-  @scala.inline
-  def wallet: typings.coinbase.coinbaseStrings.wallet = "wallet".asInstanceOf[typings.coinbase.coinbaseStrings.wallet]
+  inline def wallet: typings.coinbase.coinbaseStrings.wallet = "wallet".asInstanceOf[typings.coinbase.coinbaseStrings.wallet]
 }

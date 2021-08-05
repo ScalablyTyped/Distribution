@@ -36,52 +36,37 @@ trait AddAudioParams extends StObject {
 }
 object AddAudioParams {
   
-  @scala.inline
-  def apply(audio_name: String, audio_resource: ReadableStream | FileObject | Buffer, customization_id: String): AddAudioParams = {
+  inline def apply(audio_name: String, audio_resource: ReadableStream | FileObject | Buffer, customization_id: String): AddAudioParams = {
     val __obj = js.Dynamic.literal(audio_name = audio_name.asInstanceOf[js.Any], audio_resource = audio_resource.asInstanceOf[js.Any], customization_id = customization_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddAudioParams]
   }
   
-  @scala.inline
-  implicit class AddAudioParamsMutableBuilder[Self <: AddAudioParams] (val x: Self) extends AnyVal {
+  extension [Self <: AddAudioParams](x: Self) {
     
-    @scala.inline
-    def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
+    inline def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_overwriteUndefined: Self = StObject.set(x, "allow_overwrite", js.undefined)
+    inline def setAllow_overwriteUndefined: Self = StObject.set(x, "allow_overwrite", js.undefined)
     
-    @scala.inline
-    def setAudio_name(value: String): Self = StObject.set(x, "audio_name", value.asInstanceOf[js.Any])
+    inline def setAudio_name(value: String): Self = StObject.set(x, "audio_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudio_resource(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "audio_resource", value.asInstanceOf[js.Any])
+    inline def setAudio_resource(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "audio_resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContained_content_type(value: ContainedContentType | String): Self = StObject.set(x, "contained_content_type", value.asInstanceOf[js.Any])
+    inline def setContained_content_type(value: ContainedContentType | String): Self = StObject.set(x, "contained_content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContained_content_typeUndefined: Self = StObject.set(x, "contained_content_type", js.undefined)
+    inline def setContained_content_typeUndefined: Self = StObject.set(x, "contained_content_type", js.undefined)
     
-    @scala.inline
-    def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+    inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

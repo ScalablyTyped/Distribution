@@ -24,26 +24,20 @@ object anon {
   }
   object AuthorizationMethod {
     
-    @scala.inline
-    def apply(): AuthorizationMethod = {
+    inline def apply(): AuthorizationMethod = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthorizationMethod]
     }
     
-    @scala.inline
-    implicit class AuthorizationMethodMutableBuilder[Self <: AuthorizationMethod] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationMethod](x: Self) {
       
-      @scala.inline
-      def setAuthorizationMethod(value: header | body): Self = StObject.set(x, "authorizationMethod", value.asInstanceOf[js.Any])
+      inline def setAuthorizationMethod(value: header | body): Self = StObject.set(x, "authorizationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizationMethodUndefined: Self = StObject.set(x, "authorizationMethod", js.undefined)
+      inline def setAuthorizationMethodUndefined: Self = StObject.set(x, "authorizationMethod", js.undefined)
       
-      @scala.inline
-      def setBodyFormat(value: json | form): Self = StObject.set(x, "bodyFormat", value.asInstanceOf[js.Any])
+      inline def setBodyFormat(value: json | form): Self = StObject.set(x, "bodyFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyFormatUndefined: Self = StObject.set(x, "bodyFormat", js.undefined)
+      inline def setBodyFormatUndefined: Self = StObject.set(x, "bodyFormat", js.undefined)
     }
   }
   
@@ -66,41 +60,30 @@ object anon {
   }
   object AuthorizeHost {
     
-    @scala.inline
-    def apply(tokenHost: String): AuthorizeHost = {
+    inline def apply(tokenHost: String): AuthorizeHost = {
       val __obj = js.Dynamic.literal(tokenHost = tokenHost.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizeHost]
     }
     
-    @scala.inline
-    implicit class AuthorizeHostMutableBuilder[Self <: AuthorizeHost] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizeHost](x: Self) {
       
-      @scala.inline
-      def setAuthorizeHost(value: String): Self = StObject.set(x, "authorizeHost", value.asInstanceOf[js.Any])
+      inline def setAuthorizeHost(value: String): Self = StObject.set(x, "authorizeHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizeHostUndefined: Self = StObject.set(x, "authorizeHost", js.undefined)
+      inline def setAuthorizeHostUndefined: Self = StObject.set(x, "authorizeHost", js.undefined)
       
-      @scala.inline
-      def setAuthorizePath(value: String): Self = StObject.set(x, "authorizePath", value.asInstanceOf[js.Any])
+      inline def setAuthorizePath(value: String): Self = StObject.set(x, "authorizePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizePathUndefined: Self = StObject.set(x, "authorizePath", js.undefined)
+      inline def setAuthorizePathUndefined: Self = StObject.set(x, "authorizePath", js.undefined)
       
-      @scala.inline
-      def setRevokePath(value: String): Self = StObject.set(x, "revokePath", value.asInstanceOf[js.Any])
+      inline def setRevokePath(value: String): Self = StObject.set(x, "revokePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevokePathUndefined: Self = StObject.set(x, "revokePath", js.undefined)
+      inline def setRevokePathUndefined: Self = StObject.set(x, "revokePath", js.undefined)
       
-      @scala.inline
-      def setTokenHost(value: String): Self = StObject.set(x, "tokenHost", value.asInstanceOf[js.Any])
+      inline def setTokenHost(value: String): Self = StObject.set(x, "tokenHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenPath(value: String): Self = StObject.set(x, "tokenPath", value.asInstanceOf[js.Any])
+      inline def setTokenPath(value: String): Self = StObject.set(x, "tokenPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenPathUndefined: Self = StObject.set(x, "tokenPath", js.undefined)
+      inline def setTokenPathUndefined: Self = StObject.set(x, "tokenPath", js.undefined)
     }
   }
   
@@ -120,32 +103,24 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply[ClientIdName /* <: String */](id: String, secret: String): Id[ClientIdName] = {
+    inline def apply[ClientIdName /* <: String */](id: String, secret: String): Id[ClientIdName] = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id[ClientIdName]]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id[?], ClientIdName /* <: String */] (val x: Self & Id[ClientIdName]) extends AnyVal {
+    extension [Self <: Id[?], ClientIdName /* <: String */](x: Self & Id[ClientIdName]) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdParamName(value: ClientIdName): Self = StObject.set(x, "idParamName", value.asInstanceOf[js.Any])
+      inline def setIdParamName(value: ClientIdName): Self = StObject.set(x, "idParamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdParamNameUndefined: Self = StObject.set(x, "idParamName", js.undefined)
+      inline def setIdParamNameUndefined: Self = StObject.set(x, "idParamName", js.undefined)
       
-      @scala.inline
-      def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretParamName(value: String): Self = StObject.set(x, "secretParamName", value.asInstanceOf[js.Any])
+      inline def setSecretParamName(value: String): Self = StObject.set(x, "secretParamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretParamNameUndefined: Self = StObject.set(x, "secretParamName", js.undefined)
+      inline def setSecretParamNameUndefined: Self = StObject.set(x, "secretParamName", js.undefined)
     }
   }
   
@@ -159,35 +134,26 @@ object anon {
   }
   object Redirecturi {
     
-    @scala.inline
-    def apply(): Redirecturi = {
+    inline def apply(): Redirecturi = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Redirecturi]
     }
     
-    @scala.inline
-    implicit class RedirecturiMutableBuilder[Self <: Redirecturi] (val x: Self) extends AnyVal {
+    extension [Self <: Redirecturi](x: Self) {
       
-      @scala.inline
-      def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+      inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+      inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
       
-      @scala.inline
-      def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+      inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
 }

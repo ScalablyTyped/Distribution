@@ -10,16 +10,13 @@ trait IsEquivalent[T /* <: /* import warning: importer.ImportType#apply Failed t
 }
 object IsEquivalent {
   
-  @scala.inline
-  def apply[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {isEquivalent (other : T): boolean} */ js.Any */](isEquivalent: T => Boolean): IsEquivalent[T] = {
+  inline def apply[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {isEquivalent (other : T): boolean} */ js.Any */](isEquivalent: T => Boolean): IsEquivalent[T] = {
     val __obj = js.Dynamic.literal(isEquivalent = js.Any.fromFunction1(isEquivalent))
     __obj.asInstanceOf[IsEquivalent[T]]
   }
   
-  @scala.inline
-  implicit class IsEquivalentMutableBuilder[Self <: IsEquivalent[?], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {isEquivalent (other : T): boolean} */ js.Any */] (val x: Self & IsEquivalent[T]) extends AnyVal {
+  extension [Self <: IsEquivalent[?], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {isEquivalent (other : T): boolean} */ js.Any */](x: Self & IsEquivalent[T]) {
     
-    @scala.inline
-    def setIsEquivalent(value: T => Boolean): Self = StObject.set(x, "isEquivalent", js.Any.fromFunction1(value))
+    inline def setIsEquivalent(value: T => Boolean): Self = StObject.set(x, "isEquivalent", js.Any.fromFunction1(value))
   }
 }

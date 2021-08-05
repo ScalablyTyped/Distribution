@@ -12,6 +12,5 @@ object ratingStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IRatingStyleProps): IRatingStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IRatingStyles]
+  inline def getStyles(props: IRatingStyleProps): IRatingStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IRatingStyles]
 }

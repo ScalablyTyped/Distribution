@@ -12,19 +12,15 @@ trait FullScreen extends StObject {
 }
 object FullScreen {
   
-  @scala.inline
-  def apply(cancel: FullScreenType => Unit, request: FullScreenType => Unit): FullScreen = {
+  inline def apply(cancel: FullScreenType => Unit, request: FullScreenType => Unit): FullScreen = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), request = js.Any.fromFunction1(request))
     __obj.asInstanceOf[FullScreen]
   }
   
-  @scala.inline
-  implicit class FullScreenMutableBuilder[Self <: FullScreen] (val x: Self) extends AnyVal {
+  extension [Self <: FullScreen](x: Self) {
     
-    @scala.inline
-    def setCancel(value: FullScreenType => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: FullScreenType => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequest(value: FullScreenType => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: FullScreenType => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
   }
 }

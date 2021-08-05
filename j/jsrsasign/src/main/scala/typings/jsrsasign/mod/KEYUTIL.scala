@@ -299,13 +299,10 @@ object KEYUTIL {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateKeypair_EC(alg: EC, keylenOrCurve: String): PrvKeyObj_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj_]
-  @scala.inline
-  def generateKeypair_EC(alg: EC, keylenOrCurve: Double): PrvKeyObj_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj_]
+  inline def generateKeypair_EC(alg: EC, keylenOrCurve: String): PrvKeyObj_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj_]
+  inline def generateKeypair_EC(alg: EC, keylenOrCurve: Double): PrvKeyObj_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj_]
   
-  @scala.inline
-  def generateKeypair_RSA(alg: RSA, keylenOrCurve: String): PrvKeyObj_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj_]
+  inline def generateKeypair_RSA(alg: RSA, keylenOrCurve: String): PrvKeyObj_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj_]
   /**
     * @param alg 'RSA' or 'EC'
     * @param keylenOrCurve key length for RSA or curve name for EC
@@ -329,13 +326,10 @@ object KEYUTIL {
     *
     */
   /* static member */
-  @scala.inline
-  def generateKeypair_RSA(alg: RSA, keylenOrCurve: Double): PrvKeyObj_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj_]
+  inline def generateKeypair_RSA(alg: RSA, keylenOrCurve: Double): PrvKeyObj_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeypair")(alg.asInstanceOf[js.Any], keylenOrCurve.asInstanceOf[js.Any])).asInstanceOf[PrvKeyObj_]
   
-  @scala.inline
-  def getJWKFromKey(keyObj: DSA): JsonWebKey = ^.asInstanceOf[js.Dynamic].applyDynamic("getJWKFromKey")(keyObj.asInstanceOf[js.Any]).asInstanceOf[JsonWebKey]
-  @scala.inline
-  def getJWKFromKey(keyObj: ECDSA): JsonWebKey = ^.asInstanceOf[js.Dynamic].applyDynamic("getJWKFromKey")(keyObj.asInstanceOf[js.Any]).asInstanceOf[JsonWebKey]
+  inline def getJWKFromKey(keyObj: DSA): JsonWebKey = ^.asInstanceOf[js.Dynamic].applyDynamic("getJWKFromKey")(keyObj.asInstanceOf[js.Any]).asInstanceOf[JsonWebKey]
+  inline def getJWKFromKey(keyObj: ECDSA): JsonWebKey = ^.asInstanceOf[js.Dynamic].applyDynamic("getJWKFromKey")(keyObj.asInstanceOf[js.Any]).asInstanceOf[JsonWebKey]
   /**
     * convert from RSAKey/KJUR.crypto.ECDSA public/private key object to RFC 7517 JSON Web Key(JWK)
     * @param keyObj RSAKey/KJUR.crypto.ECDSA public/private key object
@@ -356,69 +350,38 @@ object KEYUTIL {
     * jwkPub2.kid = KJUR.jws.JWS.getJWKthumbprint(jwkPub2);
     */
   /* static member */
-  @scala.inline
-  def getJWKFromKey(keyObj: typings.jsrsasign.jsrsasign.RSAKey): JsonWebKey = ^.asInstanceOf[js.Dynamic].applyDynamic("getJWKFromKey")(keyObj.asInstanceOf[js.Any]).asInstanceOf[JsonWebKey]
+  inline def getJWKFromKey(keyObj: typings.jsrsasign.jsrsasign.RSAKey): JsonWebKey = ^.asInstanceOf[js.Dynamic].applyDynamic("getJWKFromKey")(keyObj.asInstanceOf[js.Any]).asInstanceOf[JsonWebKey]
   
-  @scala.inline
-  def getKey(param: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: String, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: String, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: String, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: String, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: E): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: E, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: E, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: E, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: E, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECCPrivateKey): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECCPrivateKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECCPrivateKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECCPrivateKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECCPrivateKey, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: DSA): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: DSA, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: DSA, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: DSA, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: DSA, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECDSA): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECDSA, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECDSA, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECDSA, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: ECDSA, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: JsonWebKey): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: JsonWebKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: JsonWebKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: JsonWebKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: JsonWebKey, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: String, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: String, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: String, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: String, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: E): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: E, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: E, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: E, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: E, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECCPrivateKey): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECCPrivateKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECCPrivateKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECCPrivateKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECCPrivateKey, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: DSA): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: DSA, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: DSA, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: DSA, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: DSA, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECDSA): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECDSA, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECDSA, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECDSA, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: ECDSA, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: JsonWebKey): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: JsonWebKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: JsonWebKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: JsonWebKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: JsonWebKey, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
   /**
     * get private or public key object from any arguments
     * @param param parameter to get key object. see description in detail.
@@ -485,16 +448,11 @@ object KEYUTIL {
     * keyObj = KEYUTIL.getKey({n: "75ab..", e: "010001"});
     */
   /* static member */
-  @scala.inline
-  def getKey(param: typings.jsrsasign.jsrsasign.RSAKey): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
-  @scala.inline
-  def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: typings.jsrsasign.jsrsasign.RSAKey): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: String, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: Null, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKey(param: typings.jsrsasign.jsrsasign.RSAKey, passcode: Unit, hextype: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(param.asInstanceOf[js.Any], passcode.asInstanceOf[js.Any], hextype.asInstanceOf[js.Any])).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
   
   /**
     * get RSAKey/DSA/ECDSA public key object from hexadecimal string of PKCS#10 CSR
@@ -502,8 +460,7 @@ object KEYUTIL {
     * @return RSAKey/DSA/ECDSA public key object
     */
   /* static member */
-  @scala.inline
-  def getKeyFromCSRHex(csrHex: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyFromCSRHex")(csrHex.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKeyFromCSRHex(csrHex: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyFromCSRHex")(csrHex.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
   
   /**
     * get RSAKey/DSA/ECDSA public key object from PEM formatted PKCS#10 CSR string
@@ -511,8 +468,7 @@ object KEYUTIL {
     * @return RSAKey/DSA/ECDSA public key object
     */
   /* static member */
-  @scala.inline
-  def getKeyFromCSRPEM(csrPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyFromCSRPEM")(csrPEM.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
+  inline def getKeyFromCSRPEM(csrPEM: String): typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyFromCSRPEM")(csrPEM.asInstanceOf[js.Any]).asInstanceOf[typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA]
   
   /**
     * get PEM formatted private or public key file from a RSA/ECDSA/DSA key object
@@ -540,8 +496,7 @@ object KEYUTIL {
     *                                                      with PBKDF2_HmacSHA1_3DES
     */
   /* static member */
-  @scala.inline
-  def getPEM(
+  inline def getPEM(
     keyObjOrHex: typings.jsrsasign.jsrsasign.RSAKey | DSA | ECDSA,
     formatType: js.UndefOr[PrivateKeyOutputFormatType],
     passwd: js.UndefOr[String],
@@ -561,8 +516,7 @@ object KEYUTIL {
     *
     */
   /* static member */
-  @scala.inline
-  def parseCSRHex(csrHex: String): CSRHexResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCSRHex")(csrHex.asInstanceOf[js.Any]).asInstanceOf[CSRHexResult]
+  inline def parseCSRHex(csrHex: String): CSRHexResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCSRHex")(csrHex.asInstanceOf[js.Any]).asInstanceOf[CSRHexResult]
   
   /* static member */
   @JSImport("jsrsasign", "KEYUTIL.version")

@@ -12,6 +12,5 @@ object forkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(defs: js.Array[Def]): AstNodesAreEquivalent = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(defs.asInstanceOf[js.Any]).asInstanceOf[AstNodesAreEquivalent]
+  inline def default(defs: js.Array[Def]): AstNodesAreEquivalent = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(defs.asInstanceOf[js.Any]).asInstanceOf[AstNodesAreEquivalent]
 }

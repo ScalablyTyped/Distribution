@@ -28,40 +28,29 @@ trait Dependency extends StObject {
 }
 object Dependency {
   
-  @scala.inline
-  def apply(): Dependency = {
+  inline def apply(): Dependency = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dependency]
   }
   
-  @scala.inline
-  implicit class DependencyMutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
+  extension [Self <: Dependency](x: Self) {
     
-    @scala.inline
-    def setDependsOn(value: js.Array[BasicDependency]): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
+    inline def setDependsOn(value: js.Array[BasicDependency]): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
+    inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
     
-    @scala.inline
-    def setDependsOnVarargs(value: BasicDependency*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+    inline def setDependsOnVarargs(value: BasicDependency*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

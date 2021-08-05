@@ -28,22 +28,18 @@ object typesCreateBucketConfigurationMod {
   }
   object CreateBucketConfiguration {
     
-    @scala.inline
-    def apply(): CreateBucketConfiguration = {
+    inline def apply(): CreateBucketConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateBucketConfiguration]
     }
     
-    @scala.inline
-    implicit class CreateBucketConfigurationMutableBuilder[Self <: CreateBucketConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: CreateBucketConfiguration](x: Self) {
       
-      @scala.inline
-      def setLocationConstraint(
+      inline def setLocationConstraint(
         value: EU | `eu-west-1` | `us-west-1` | `us-west-2` | `ap-south-1` | `ap-southeast-1` | `ap-southeast-2` | `ap-northeast-1` | `sa-east-1` | `cn-north-1` | `eu-central-1` | String
       ): Self = StObject.set(x, "LocationConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationConstraintUndefined: Self = StObject.set(x, "LocationConstraint", js.undefined)
+      inline def setLocationConstraintUndefined: Self = StObject.set(x, "LocationConstraint", js.undefined)
     }
   }
   

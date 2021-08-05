@@ -15,20 +15,16 @@ object anon {
   }
   object Callback {
     
-    @scala.inline
-    def apply(callback: () => Unit, node: Node): Callback = {
+    inline def apply(callback: () => Unit, node: Node): Callback = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback]
     }
     
-    @scala.inline
-    implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
+    extension [Self <: Callback](x: Self) {
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
 }

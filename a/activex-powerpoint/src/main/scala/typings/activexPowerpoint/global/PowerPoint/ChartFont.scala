@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ChartFont")
 @js.native
-class ChartFont protected ()
+/* private */ class ChartFont ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ChartFont {
   
@@ -43,7 +43,7 @@ class ChartFont protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ChartFont_typekey")
   var PowerPointDotChartFont_typekey: typings.activexPowerpoint.PowerPoint.ChartFont = js.native
   

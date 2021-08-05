@@ -34,8 +34,7 @@ trait XParameterizedContentProvider
 }
 object XParameterizedContentProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     deregisterInstance: (String, String) => XContentProvider,
     queryInterface: `type` => js.Any,
@@ -46,13 +45,10 @@ object XParameterizedContentProvider {
     __obj.asInstanceOf[XParameterizedContentProvider]
   }
   
-  @scala.inline
-  implicit class XParameterizedContentProviderMutableBuilder[Self <: XParameterizedContentProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XParameterizedContentProvider](x: Self) {
     
-    @scala.inline
-    def setDeregisterInstance(value: (String, String) => XContentProvider): Self = StObject.set(x, "deregisterInstance", js.Any.fromFunction2(value))
+    inline def setDeregisterInstance(value: (String, String) => XContentProvider): Self = StObject.set(x, "deregisterInstance", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterInstance(value: (String, String, Boolean) => XContentProvider): Self = StObject.set(x, "registerInstance", js.Any.fromFunction3(value))
+    inline def setRegisterInstance(value: (String, String, Boolean) => XContentProvider): Self = StObject.set(x, "registerInstance", js.Any.fromFunction3(value))
   }
 }

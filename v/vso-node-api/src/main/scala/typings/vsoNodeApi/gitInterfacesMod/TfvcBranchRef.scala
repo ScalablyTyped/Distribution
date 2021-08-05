@@ -42,8 +42,7 @@ trait TfvcBranchRef
 }
 object TfvcBranchRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     createdDate: Date,
     description: String,
@@ -56,25 +55,18 @@ object TfvcBranchRef {
     __obj.asInstanceOf[TfvcBranchRef]
   }
   
-  @scala.inline
-  implicit class TfvcBranchRefMutableBuilder[Self <: TfvcBranchRef] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcBranchRef](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+    inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: IdentityRef): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: IdentityRef): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

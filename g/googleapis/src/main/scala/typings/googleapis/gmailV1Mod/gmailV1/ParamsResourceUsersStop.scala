@@ -25,25 +25,19 @@ trait ParamsResourceUsersStop
 }
 object ParamsResourceUsersStop {
   
-  @scala.inline
-  def apply(): ParamsResourceUsersStop = {
+  inline def apply(): ParamsResourceUsersStop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUsersStop]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUsersStopMutableBuilder[Self <: ParamsResourceUsersStop] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUsersStop](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

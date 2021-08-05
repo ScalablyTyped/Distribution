@@ -25,8 +25,7 @@ trait WriteResult extends StObject {
 }
 object WriteResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleted: Double,
     errors: Double,
     first_error: Error,
@@ -40,34 +39,24 @@ object WriteResult {
     __obj.asInstanceOf[WriteResult]
   }
   
-  @scala.inline
-  implicit class WriteResultMutableBuilder[Self <: WriteResult] (val x: Self) extends AnyVal {
+  extension [Self <: WriteResult](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_error(value: Error): Self = StObject.set(x, "first_error", value.asInstanceOf[js.Any])
+    inline def setFirst_error(value: Error): Self = StObject.set(x, "first_error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerated_keys(value: js.Array[String]): Self = StObject.set(x, "generated_keys", value.asInstanceOf[js.Any])
+    inline def setGenerated_keys(value: js.Array[String]): Self = StObject.set(x, "generated_keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerated_keysVarargs(value: String*): Self = StObject.set(x, "generated_keys", js.Array(value :_*))
+    inline def setGenerated_keysVarargs(value: String*): Self = StObject.set(x, "generated_keys", js.Array(value :_*))
     
-    @scala.inline
-    def setInserted(value: Double): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
+    inline def setInserted(value: Double): Self = StObject.set(x, "inserted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaced(value: Double): Self = StObject.set(x, "replaced", value.asInstanceOf[js.Any])
+    inline def setReplaced(value: Double): Self = StObject.set(x, "replaced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipped(value: Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
+    inline def setSkipped(value: Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnchanged(value: Double): Self = StObject.set(x, "unchanged", value.asInstanceOf[js.Any])
+    inline def setUnchanged(value: Double): Self = StObject.set(x, "unchanged", value.asInstanceOf[js.Any])
   }
 }

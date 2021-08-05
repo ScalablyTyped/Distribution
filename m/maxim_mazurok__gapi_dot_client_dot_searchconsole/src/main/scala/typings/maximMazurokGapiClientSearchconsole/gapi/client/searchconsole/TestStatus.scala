@@ -14,25 +14,19 @@ trait TestStatus extends StObject {
 }
 object TestStatus {
   
-  @scala.inline
-  def apply(): TestStatus = {
+  inline def apply(): TestStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestStatus]
   }
   
-  @scala.inline
-  implicit class TestStatusMutableBuilder[Self <: TestStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TestStatus](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

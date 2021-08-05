@@ -55,8 +55,7 @@ trait XStructTypeDescription
 }
 object XStructTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BaseType: XTypeDescription,
     MemberNames: SafeArray[String],
     MemberTypes: SafeArray[XTypeDescription],
@@ -79,19 +78,14 @@ object XStructTypeDescription {
     __obj.asInstanceOf[XStructTypeDescription]
   }
   
-  @scala.inline
-  implicit class XStructTypeDescriptionMutableBuilder[Self <: XStructTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XStructTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGetTypeArguments(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getTypeArguments", js.Any.fromFunction0(value))
+    inline def setGetTypeArguments(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getTypeArguments", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTypeParameters(value: () => SafeArray[String]): Self = StObject.set(x, "getTypeParameters", js.Any.fromFunction0(value))
+    inline def setGetTypeParameters(value: () => SafeArray[String]): Self = StObject.set(x, "getTypeParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTypeArguments(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "TypeArguments", value.asInstanceOf[js.Any])
+    inline def setTypeArguments(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "TypeArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: SafeArray[String]): Self = StObject.set(x, "TypeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: SafeArray[String]): Self = StObject.set(x, "TypeParameters", value.asInstanceOf[js.Any])
   }
 }

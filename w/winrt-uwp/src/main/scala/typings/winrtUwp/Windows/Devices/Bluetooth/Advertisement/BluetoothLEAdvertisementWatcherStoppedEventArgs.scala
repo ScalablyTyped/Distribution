@@ -13,16 +13,13 @@ trait BluetoothLEAdvertisementWatcherStoppedEventArgs extends StObject {
 }
 object BluetoothLEAdvertisementWatcherStoppedEventArgs {
   
-  @scala.inline
-  def apply(error: BluetoothError): BluetoothLEAdvertisementWatcherStoppedEventArgs = {
+  inline def apply(error: BluetoothError): BluetoothLEAdvertisementWatcherStoppedEventArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothLEAdvertisementWatcherStoppedEventArgs]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAdvertisementWatcherStoppedEventArgsMutableBuilder[Self <: BluetoothLEAdvertisementWatcherStoppedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAdvertisementWatcherStoppedEventArgs](x: Self) {
     
-    @scala.inline
-    def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: BluetoothError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

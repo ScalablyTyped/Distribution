@@ -53,64 +53,45 @@ trait UpdateUserRequest extends StObject {
 }
 object UpdateUserRequest {
   
-  @scala.inline
-  def apply(UserId: IdType): UpdateUserRequest = {
+  inline def apply(UserId: IdType): UpdateUserRequest = {
     val __obj = js.Dynamic.literal(UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserRequest]
   }
   
-  @scala.inline
-  implicit class UpdateUserRequestMutableBuilder[Self <: UpdateUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setGivenName(value: UserAttributeValueType): Self = StObject.set(x, "GivenName", value.asInstanceOf[js.Any])
+    inline def setGivenName(value: UserAttributeValueType): Self = StObject.set(x, "GivenName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGivenNameUndefined: Self = StObject.set(x, "GivenName", js.undefined)
+    inline def setGivenNameUndefined: Self = StObject.set(x, "GivenName", js.undefined)
     
-    @scala.inline
-    def setGrantPoweruserPrivileges(value: BooleanEnumType): Self = StObject.set(x, "GrantPoweruserPrivileges", value.asInstanceOf[js.Any])
+    inline def setGrantPoweruserPrivileges(value: BooleanEnumType): Self = StObject.set(x, "GrantPoweruserPrivileges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantPoweruserPrivilegesUndefined: Self = StObject.set(x, "GrantPoweruserPrivileges", js.undefined)
+    inline def setGrantPoweruserPrivilegesUndefined: Self = StObject.set(x, "GrantPoweruserPrivileges", js.undefined)
     
-    @scala.inline
-    def setLocale(value: LocaleType): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: LocaleType): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "Locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "Locale", js.undefined)
     
-    @scala.inline
-    def setStorageRule(value: StorageRuleType): Self = StObject.set(x, "StorageRule", value.asInstanceOf[js.Any])
+    inline def setStorageRule(value: StorageRuleType): Self = StObject.set(x, "StorageRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageRuleUndefined: Self = StObject.set(x, "StorageRule", js.undefined)
+    inline def setStorageRuleUndefined: Self = StObject.set(x, "StorageRule", js.undefined)
     
-    @scala.inline
-    def setSurname(value: UserAttributeValueType): Self = StObject.set(x, "Surname", value.asInstanceOf[js.Any])
+    inline def setSurname(value: UserAttributeValueType): Self = StObject.set(x, "Surname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurnameUndefined: Self = StObject.set(x, "Surname", js.undefined)
+    inline def setSurnameUndefined: Self = StObject.set(x, "Surname", js.undefined)
     
-    @scala.inline
-    def setTimeZoneId(value: TimeZoneIdType): Self = StObject.set(x, "TimeZoneId", value.asInstanceOf[js.Any])
+    inline def setTimeZoneId(value: TimeZoneIdType): Self = StObject.set(x, "TimeZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneIdUndefined: Self = StObject.set(x, "TimeZoneId", js.undefined)
+    inline def setTimeZoneIdUndefined: Self = StObject.set(x, "TimeZoneId", js.undefined)
     
-    @scala.inline
-    def setType(value: UserType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: UserType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setUserId(value: IdType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: IdType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

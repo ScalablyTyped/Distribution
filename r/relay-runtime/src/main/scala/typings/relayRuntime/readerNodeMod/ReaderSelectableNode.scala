@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReaderSelectableNode extends StObject
 object ReaderSelectableNode {
   
-  @scala.inline
-  def ReaderFragment(
+  inline def ReaderFragment(
     argumentDefinitions: js.Array[ReaderArgumentDefinition],
     kind: String,
     name: String,
@@ -24,8 +23,7 @@ object ReaderSelectableNode {
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderFragment]
   }
   
-  @scala.inline
-  def ReaderSplitOperation(kind: String, name: String, selections: js.Array[ReaderSelection]): typings.relayRuntime.readerNodeMod.ReaderSplitOperation = {
+  inline def ReaderSplitOperation(kind: String, name: String, selections: js.Array[ReaderSelection]): typings.relayRuntime.readerNodeMod.ReaderSplitOperation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderSplitOperation]
   }

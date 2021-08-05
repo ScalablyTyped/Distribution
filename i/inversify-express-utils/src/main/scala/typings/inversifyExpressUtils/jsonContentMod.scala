@@ -13,8 +13,8 @@ object jsonContentMod {
     def this(content: js.Any) = this()
     def this(content: js.Any, mediaType: String) = this()
     
-    var content: js.Any = js.native
+    /* private */ var content: js.Any = js.native
     
-    var mediaType: js.Any = js.native
+    /* private */ var mediaType: js.Any = js.native
   }
 }

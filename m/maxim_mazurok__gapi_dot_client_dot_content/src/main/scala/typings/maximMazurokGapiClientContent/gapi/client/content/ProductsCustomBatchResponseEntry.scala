@@ -20,37 +20,27 @@ trait ProductsCustomBatchResponseEntry extends StObject {
 }
 object ProductsCustomBatchResponseEntry {
   
-  @scala.inline
-  def apply(): ProductsCustomBatchResponseEntry = {
+  inline def apply(): ProductsCustomBatchResponseEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductsCustomBatchResponseEntry]
   }
   
-  @scala.inline
-  implicit class ProductsCustomBatchResponseEntryMutableBuilder[Self <: ProductsCustomBatchResponseEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ProductsCustomBatchResponseEntry](x: Self) {
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Errors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: Product): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
   }
 }

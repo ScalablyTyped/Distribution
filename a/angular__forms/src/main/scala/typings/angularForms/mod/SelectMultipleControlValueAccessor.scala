@@ -13,11 +13,11 @@ class SelectMultipleControlValueAccessor protected ()
      with ControlValueAccessor {
   def this(_renderer: Renderer2, _elementRef: ElementRef[js.Any]) = this()
   
-  var _compareWith: js.Any = js.native
+  /* private */ var _compareWith: js.Any = js.native
   
-  var _elementRef: js.Any = js.native
+  /* private */ var _elementRef: js.Any = js.native
   
-  var _renderer: js.Any = js.native
+  /* private */ var _renderer: js.Any = js.native
   
   /**
     * @description

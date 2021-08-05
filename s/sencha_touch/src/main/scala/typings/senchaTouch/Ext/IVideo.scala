@@ -34,43 +34,31 @@ trait IVideo
 }
 object IVideo {
   
-  @scala.inline
-  def apply(): IVideo = {
+  inline def apply(): IVideo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IVideo]
   }
   
-  @scala.inline
-  implicit class IVideoMutableBuilder[Self <: IVideo] (val x: Self) extends AnyVal {
+  extension [Self <: IVideo](x: Self) {
     
-    @scala.inline
-    def setGetPosterUrl(value: () => java.lang.String): Self = StObject.set(x, "getPosterUrl", js.Any.fromFunction0(value))
+    inline def setGetPosterUrl(value: () => java.lang.String): Self = StObject.set(x, "getPosterUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPosterUrlUndefined: Self = StObject.set(x, "getPosterUrl", js.undefined)
+    inline def setGetPosterUrlUndefined: Self = StObject.set(x, "getPosterUrl", js.undefined)
     
-    @scala.inline
-    def setPosterUrl(value: java.lang.String): Self = StObject.set(x, "posterUrl", value.asInstanceOf[js.Any])
+    inline def setPosterUrl(value: java.lang.String): Self = StObject.set(x, "posterUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosterUrlUndefined: Self = StObject.set(x, "posterUrl", js.undefined)
+    inline def setPosterUrlUndefined: Self = StObject.set(x, "posterUrl", js.undefined)
     
-    @scala.inline
-    def setSetPosterUrl(value: /* posterUrl */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setPosterUrl", js.Any.fromFunction1(value))
+    inline def setSetPosterUrl(value: /* posterUrl */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setPosterUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPosterUrlUndefined: Self = StObject.set(x, "setPosterUrl", js.undefined)
+    inline def setSetPosterUrlUndefined: Self = StObject.set(x, "setPosterUrl", js.undefined)
     
-    @scala.inline
-    def setSetUrl(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: /* url */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
+    inline def setSetUrlUndefined: Self = StObject.set(x, "setUrl", js.undefined)
     
-    @scala.inline
-    def setUpdatePosterUrl(value: /* newUrl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updatePosterUrl", js.Any.fromFunction1(value))
+    inline def setUpdatePosterUrl(value: /* newUrl */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "updatePosterUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdatePosterUrlUndefined: Self = StObject.set(x, "updatePosterUrl", js.undefined)
+    inline def setUpdatePosterUrlUndefined: Self = StObject.set(x, "updatePosterUrl", js.undefined)
   }
 }

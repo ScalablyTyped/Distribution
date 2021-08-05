@@ -120,8 +120,7 @@ object nativepagesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): BottomBarItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BottomBarItem]
+      inline def create(model: IModel): BottomBarItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BottomBarItem]
       
       /**
         * Creates and returns a new BottomBarItem instance in the SDK and on the server.
@@ -132,22 +131,19 @@ object nativepagesMod {
         *  8.0.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createIn(container: NativeNavigationProfile): BottomBarItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BottomBarItem]
+      inline def createIn(container: NativeNavigationProfile): BottomBarItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BottomBarItem]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -201,22 +197,19 @@ object nativepagesMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IFolderBase): NativeLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NativeLayout]
+      inline def createIn(container: IFolderBase): NativeLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NativeLayout]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayout.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayout.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -261,8 +254,7 @@ object nativepagesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): NativeLayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NativeLayoutCallArgument]
+      inline def create(model: IModel): NativeLayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NativeLayoutCallArgument]
       
       /**
         * Creates and returns a new NativeLayoutCallArgument instance in the SDK and on the server.
@@ -273,22 +265,19 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createIn(container: NativePage): NativeLayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NativeLayoutCallArgument]
+      inline def createIn(container: NativePage): NativeLayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NativeLayoutCallArgument]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -354,22 +343,19 @@ object nativepagesMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IFolderBase): NativePage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NativePage]
+      inline def createIn(container: IFolderBase): NativePage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NativePage]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePage.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePage.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -415,8 +401,7 @@ object nativepagesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def create(model: IModel): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -427,8 +412,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInActionButtonUnderAction(container: ActionButton): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInActionButtonUnderAction(container: ActionButton): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -439,8 +423,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInActionItemUnderAction(container: ActionItem): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInActionItemUnderAction(container: ActionItem): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -451,8 +434,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -463,8 +445,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -475,8 +456,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -487,8 +467,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -499,8 +478,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -511,8 +489,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInGridActionButtonUnderAction(container: GridActionButton): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInGridActionButtonUnderAction(container: GridActionButton): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -523,8 +500,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInListViewUnderClickAction(container: ListView): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInListViewUnderClickAction(container: ListView): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -535,8 +511,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInMenuItemUnderAction(container: MenuItem): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInMenuItemUnderAction(container: MenuItem): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -547,8 +522,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -559,8 +533,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -571,22 +544,19 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInWidgetValueUnderAction(container: WidgetValue): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
+      inline def createInWidgetValueUnderAction(container: WidgetValue): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -621,8 +591,7 @@ object nativepagesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def create(model: IModel): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -633,8 +602,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInBuildingBlockUnderWidgets(container: BuildingBlock): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -645,8 +613,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInDataViewUnderFooterWidgets(container: DataView): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInDataViewUnderFooterWidgets(container: DataView): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -657,8 +624,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInDataViewUnderWidgets(container: DataView): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInDataViewUnderWidgets(container: DataView): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -669,8 +635,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInDivContainerUnderWidgets(container: DivContainer): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInDivContainerUnderWidgets(container: DivContainer): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -681,8 +646,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInGroupBoxUnderWidgets(container: GroupBox): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInGroupBoxUnderWidgets(container: GroupBox): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -693,8 +657,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInHeaderUnderLeftWidgets(container: Header): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInHeaderUnderLeftWidgets(container: Header): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -705,8 +668,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInHeaderUnderRightWidgets(container: Header): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInHeaderUnderRightWidgets(container: Header): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -717,8 +679,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -729,8 +690,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -741,8 +701,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInLayoutUnderWidgets(container: Layout): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInLayoutUnderWidgets(container: Layout): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -753,8 +712,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInListViewTemplateUnderWidgets(container: ListViewTemplate): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -765,8 +723,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInListViewUnderWidgets(container: ListView): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInListViewUnderWidgets(container: ListView): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -777,8 +734,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -789,8 +745,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -801,8 +756,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInNativeLayoutUnderWidgets(container: NativeLayout): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInNativeLayoutUnderWidgets(container: NativeLayout): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -813,8 +767,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInNavigationListItemUnderWidgets(container: NavigationListItem): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -825,8 +778,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -837,8 +789,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInSnippetUnderWidgets(container: Snippet): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInSnippetUnderWidgets(container: Snippet): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -849,8 +800,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInSplitPaneUnderFirstWidgets(container: SplitPane): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -861,8 +811,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInSplitPaneUnderSecondWidgets(container: SplitPane): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -873,8 +822,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInTabPageUnderWidgets(container: TabPage): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInTabPageUnderWidgets(container: TabPage): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -885,8 +833,7 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInTableCellUnderWidgets(container: TableCell): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInTableCellUnderWidgets(container: TableCell): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -897,22 +844,19 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @scala.inline
-      def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
+      inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**

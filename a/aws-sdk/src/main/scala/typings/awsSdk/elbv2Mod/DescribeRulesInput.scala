@@ -28,40 +28,29 @@ trait DescribeRulesInput extends StObject {
 }
 object DescribeRulesInput {
   
-  @scala.inline
-  def apply(): DescribeRulesInput = {
+  inline def apply(): DescribeRulesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRulesInput]
   }
   
-  @scala.inline
-  implicit class DescribeRulesInputMutableBuilder[Self <: DescribeRulesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRulesInput](x: Self) {
     
-    @scala.inline
-    def setListenerArn(value: ListenerArn): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
+    inline def setListenerArn(value: ListenerArn): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerArnUndefined: Self = StObject.set(x, "ListenerArn", js.undefined)
+    inline def setListenerArnUndefined: Self = StObject.set(x, "ListenerArn", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setRuleArns(value: RuleArns): Self = StObject.set(x, "RuleArns", value.asInstanceOf[js.Any])
+    inline def setRuleArns(value: RuleArns): Self = StObject.set(x, "RuleArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleArnsUndefined: Self = StObject.set(x, "RuleArns", js.undefined)
+    inline def setRuleArnsUndefined: Self = StObject.set(x, "RuleArns", js.undefined)
     
-    @scala.inline
-    def setRuleArnsVarargs(value: RuleArn*): Self = StObject.set(x, "RuleArns", js.Array(value :_*))
+    inline def setRuleArnsVarargs(value: RuleArn*): Self = StObject.set(x, "RuleArns", js.Array(value :_*))
   }
 }

@@ -13,25 +13,19 @@ trait CommonArgs extends StObject {
 }
 object CommonArgs {
   
-  @scala.inline
-  def apply(): CommonArgs = {
+  inline def apply(): CommonArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonArgs]
   }
   
-  @scala.inline
-  implicit class CommonArgsMutableBuilder[Self <: CommonArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CommonArgs](x: Self) {
     
-    @scala.inline
-    def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
+    inline def setAxios(value: Record[String, js.Any]): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
+    inline def setAxiosOverride(value: Record[String, js.Any]): Self = StObject.set(x, "axiosOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
+    inline def setAxiosOverrideUndefined: Self = StObject.set(x, "axiosOverride", js.undefined)
     
-    @scala.inline
-    def setAxiosUndefined: Self = StObject.set(x, "axios", js.undefined)
+    inline def setAxiosUndefined: Self = StObject.set(x, "axios", js.undefined)
   }
 }

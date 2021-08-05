@@ -17,13 +17,13 @@ object utilsPaletteMod {
   @js.native
   class Palette () extends StObject {
     
-    var _i32idx: js.Any = js.native
+    /* private */ var _i32idx: js.Any = js.native
     
     /* private */ def _nearestPointFromCache(key: js.Any): js.Any = js.native
     
-    val _pointArray: js.Any = js.native
+    /* private */ val _pointArray: js.Any = js.native
     
-    val _pointContainer: js.Any = js.native
+    /* private */ val _pointContainer: js.Any = js.native
     
     def add(color: Point): Unit = js.native
     
@@ -38,6 +38,5 @@ object utilsPaletteMod {
     def sort(): Unit = js.native
   }
   
-  @scala.inline
-  def hueGroup(hue: Double, segmentsNumber: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hueGroup")(hue.asInstanceOf[js.Any], segmentsNumber.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def hueGroup(hue: Double, segmentsNumber: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hueGroup")(hue.asInstanceOf[js.Any], segmentsNumber.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

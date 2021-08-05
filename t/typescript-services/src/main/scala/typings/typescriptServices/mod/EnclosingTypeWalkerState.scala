@@ -23,14 +23,11 @@ object EnclosingTypeWalkerState {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getDefaultEnclosingTypeWalkerState(): typings.typescriptServices.TypeScript.EnclosingTypeWalkerState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEnclosingTypeWalkerState")().asInstanceOf[typings.typescriptServices.TypeScript.EnclosingTypeWalkerState]
+  inline def getDefaultEnclosingTypeWalkerState(): typings.typescriptServices.TypeScript.EnclosingTypeWalkerState = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEnclosingTypeWalkerState")().asInstanceOf[typings.typescriptServices.TypeScript.EnclosingTypeWalkerState]
   
   /* static member */
-  @scala.inline
-  def getGenericEnclosingTypeWalkerState(genericEnclosingType: typings.typescriptServices.TypeScript.PullTypeSymbol): typings.typescriptServices.TypeScript.EnclosingTypeWalkerState = ^.asInstanceOf[js.Dynamic].applyDynamic("getGenericEnclosingTypeWalkerState")(genericEnclosingType.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.EnclosingTypeWalkerState]
+  inline def getGenericEnclosingTypeWalkerState(genericEnclosingType: typings.typescriptServices.TypeScript.PullTypeSymbol): typings.typescriptServices.TypeScript.EnclosingTypeWalkerState = ^.asInstanceOf[js.Dynamic].applyDynamic("getGenericEnclosingTypeWalkerState")(genericEnclosingType.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.EnclosingTypeWalkerState]
   
   /* static member */
-  @scala.inline
-  def getNonGenericEnclosingTypeWalkerState(): typings.typescriptServices.TypeScript.EnclosingTypeWalkerState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNonGenericEnclosingTypeWalkerState")().asInstanceOf[typings.typescriptServices.TypeScript.EnclosingTypeWalkerState]
+  inline def getNonGenericEnclosingTypeWalkerState(): typings.typescriptServices.TypeScript.EnclosingTypeWalkerState = ^.asInstanceOf[js.Dynamic].applyDynamic("getNonGenericEnclosingTypeWalkerState")().asInstanceOf[typings.typescriptServices.TypeScript.EnclosingTypeWalkerState]
 }

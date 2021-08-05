@@ -25,9 +25,7 @@ object webgmeMod {
     def stop(): Unit = js.native
   }
   
-  @scala.inline
-  def addToRequireJsPaths(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addToRequireJsPaths")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addToRequireJsPaths(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addToRequireJsPaths")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def standaloneServer(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("standaloneServer")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def standaloneServer(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("standaloneServer")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -130,34 +130,25 @@ object rruleMod {
     @js.native
     val YEARLY: String | Double = js.native
     
-    @scala.inline
-    def fromString(str: String): RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[RRule]
+    inline def fromString(str: String): RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[RRule]
     
-    @scala.inline
-    def fromText(text: String): RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[RRule]
-    @scala.inline
-    def fromText(text: String, language: Language): RRule = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[RRule]
+    inline def fromText(text: String): RRule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any]).asInstanceOf[RRule]
+    inline def fromText(text: String, language: Language): RRule = (^.asInstanceOf[js.Dynamic].applyDynamic("fromText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[RRule]
     
     @JSImport("rrule/dist/esm/src/rrule", "default.optionsToString")
     @js.native
     def optionsToString: js.Function1[/* options */ PartialOptions, String] = js.native
-    @scala.inline
-    def optionsToString(options: PartialOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsToString")(options.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def optionsToString_=(x: js.Function1[/* options */ PartialOptions, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsToString")(x.asInstanceOf[js.Any])
+    inline def optionsToString(options: PartialOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsToString")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def optionsToString_=(x: js.Function1[/* options */ PartialOptions, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optionsToString")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule/dist/esm/src/rrule", "default.parseString")
     @js.native
     def parseString: js.Function1[/* rfcString */ String, PartialOptions] = js.native
-    @scala.inline
-    def parseString(rfcString: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(rfcString.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
-    @scala.inline
-    def parseString_=(x: js.Function1[/* rfcString */ String, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseString")(x.asInstanceOf[js.Any])
+    inline def parseString(rfcString: String): PartialOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(rfcString.asInstanceOf[js.Any]).asInstanceOf[PartialOptions]
+    inline def parseString_=(x: js.Function1[/* rfcString */ String, PartialOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseString")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def parseText(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
-    @scala.inline
-    def parseText(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
+    inline def parseText(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
+    inline def parseText(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseText")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
   }
   
   @JSImport("rrule/dist/esm/src/rrule", "DEFAULT_OPTIONS")
@@ -173,44 +164,37 @@ object rruleMod {
     @JSImport("rrule/dist/esm/src/rrule", "Days.FR")
     @js.native
     def FR: Weekday = js.native
-    @scala.inline
-    def FR_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FR")(x.asInstanceOf[js.Any])
+    inline def FR_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FR")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule/dist/esm/src/rrule", "Days.MO")
     @js.native
     def MO: Weekday = js.native
-    @scala.inline
-    def MO_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MO")(x.asInstanceOf[js.Any])
+    inline def MO_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MO")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule/dist/esm/src/rrule", "Days.SA")
     @js.native
     def SA: Weekday = js.native
-    @scala.inline
-    def SA_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SA")(x.asInstanceOf[js.Any])
+    inline def SA_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SA")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule/dist/esm/src/rrule", "Days.SU")
     @js.native
     def SU: Weekday = js.native
-    @scala.inline
-    def SU_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SU")(x.asInstanceOf[js.Any])
+    inline def SU_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SU")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule/dist/esm/src/rrule", "Days.TH")
     @js.native
     def TH: Weekday = js.native
-    @scala.inline
-    def TH_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TH")(x.asInstanceOf[js.Any])
+    inline def TH_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TH")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule/dist/esm/src/rrule", "Days.TU")
     @js.native
     def TU: Weekday = js.native
-    @scala.inline
-    def TU_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TU")(x.asInstanceOf[js.Any])
+    inline def TU_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TU")(x.asInstanceOf[js.Any])
     
     @JSImport("rrule/dist/esm/src/rrule", "Days.WE")
     @js.native
     def WE: Weekday = js.native
-    @scala.inline
-    def WE_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WE")(x.asInstanceOf[js.Any])
+    inline def WE_=(x: Weekday): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WE")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rrule/dist/esm/src/rrule", "defaultKeys")
@@ -245,7 +229,7 @@ object rruleMod {
     @JSName("_cacheAdd")
     def _cacheAdd_all(what: all, value: Date, args: PartialIterArgs): Unit = js.native
     
-    var _cacheGet: js.Any = js.native
+    /* private */ var _cacheGet: js.Any = js.native
     
     /* protected */ def _iter[M /* <: QueryMethodTypes */](iterResult: typings.rrule.iterresultMod.default[M]): IterResultType[M] = js.native
     

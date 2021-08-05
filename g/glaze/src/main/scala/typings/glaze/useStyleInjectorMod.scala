@@ -10,8 +10,7 @@ object useStyleInjectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useStyleInjector(): js.Function4[
+  inline def useStyleInjector(): js.Function4[
     /* identName */ String, 
     /* property */ String, 
     /* value */ String | Double, 

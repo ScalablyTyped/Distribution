@@ -31,17 +31,14 @@ object anon {
   }
   object FileType {
     
-    @scala.inline
-    def apply(fileType: Format): FileType = {
+    inline def apply(fileType: Format): FileType = {
       val __obj = js.Dynamic.literal(fileType = fileType.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileType]
     }
     
-    @scala.inline
-    implicit class FileTypeMutableBuilder[Self <: FileType] (val x: Self) extends AnyVal {
+    extension [Self <: FileType](x: Self) {
       
-      @scala.inline
-      def setFileType(value: Format): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+      inline def setFileType(value: Format): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     }
   }
   

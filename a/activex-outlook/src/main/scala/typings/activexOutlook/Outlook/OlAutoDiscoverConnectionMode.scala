@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlAutoDiscoverConnectionMode extends StObject
 object OlAutoDiscoverConnectionMode {
   
-  @scala.inline
-  def olAutoDiscoverConnectionExternal: `1` = 1.asInstanceOf[`1`]
+  inline def olAutoDiscoverConnectionExternal: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olAutoDiscoverConnectionInternal: `2` = 2.asInstanceOf[`2`]
+  inline def olAutoDiscoverConnectionInternal: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olAutoDiscoverConnectionInternalDomain: `3` = 3.asInstanceOf[`3`]
+  inline def olAutoDiscoverConnectionInternalDomain: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olAutoDiscoverConnectionUnknown: `0` = 0.asInstanceOf[`0`]
+  inline def olAutoDiscoverConnectionUnknown: `0` = 0.asInstanceOf[`0`]
 }

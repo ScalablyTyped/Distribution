@@ -13,19 +13,15 @@ trait AccessToken extends StObject {
 }
 object AccessToken {
   
-  @scala.inline
-  def apply(accessToken: String, server: String | Resource): AccessToken = {
+  inline def apply(accessToken: String, server: String | Resource): AccessToken = {
     val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessToken]
   }
   
-  @scala.inline
-  implicit class AccessTokenMutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
+  extension [Self <: AccessToken](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServer(value: String | Resource): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String | Resource): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
   }
 }

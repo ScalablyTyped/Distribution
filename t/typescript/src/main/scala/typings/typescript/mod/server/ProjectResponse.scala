@@ -12,8 +12,7 @@ trait ProjectResponse
 }
 object ProjectResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActionSet | ActionInvalidate | EventTypesRegistry | ActionPackageInstalled | EventBeginInstallTypes | EventEndInstallTypes | EventInitializationFailed,
     projectName: String
   ): ProjectResponse = {
@@ -21,10 +20,8 @@ object ProjectResponse {
     __obj.asInstanceOf[ProjectResponse]
   }
   
-  @scala.inline
-  implicit class ProjectResponseMutableBuilder[Self <: ProjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectResponse](x: Self) {
     
-    @scala.inline
-    def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait XIdlMember
 }
 object XIdlMember {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DeclaringClass: XIdlClass[js.Any],
     Name: String,
     acquire: () => Unit,
@@ -51,19 +50,14 @@ object XIdlMember {
     __obj.asInstanceOf[XIdlMember]
   }
   
-  @scala.inline
-  implicit class XIdlMemberMutableBuilder[Self <: XIdlMember] (val x: Self) extends AnyVal {
+  extension [Self <: XIdlMember](x: Self) {
     
-    @scala.inline
-    def setDeclaringClass(value: XIdlClass[js.Any]): Self = StObject.set(x, "DeclaringClass", value.asInstanceOf[js.Any])
+    inline def setDeclaringClass(value: XIdlClass[js.Any]): Self = StObject.set(x, "DeclaringClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeclaringClass(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getDeclaringClass", js.Any.fromFunction0(value))
+    inline def setGetDeclaringClass(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getDeclaringClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

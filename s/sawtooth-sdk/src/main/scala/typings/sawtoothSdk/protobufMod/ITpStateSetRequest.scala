@@ -14,34 +14,25 @@ trait ITpStateSetRequest extends StObject {
 }
 object ITpStateSetRequest {
   
-  @scala.inline
-  def apply(): ITpStateSetRequest = {
+  inline def apply(): ITpStateSetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITpStateSetRequest]
   }
   
-  @scala.inline
-  implicit class ITpStateSetRequestMutableBuilder[Self <: ITpStateSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ITpStateSetRequest](x: Self) {
     
-    @scala.inline
-    def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
+    inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextIdNull: Self = StObject.set(x, "contextId", null)
+    inline def setContextIdNull: Self = StObject.set(x, "contextId", null)
     
-    @scala.inline
-    def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
+    inline def setContextIdUndefined: Self = StObject.set(x, "contextId", js.undefined)
     
-    @scala.inline
-    def setEntries(value: js.Array[ITpStateEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[ITpStateEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesNull: Self = StObject.set(x, "entries", null)
+    inline def setEntriesNull: Self = StObject.set(x, "entries", null)
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: ITpStateEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: ITpStateEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

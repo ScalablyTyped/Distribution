@@ -48,61 +48,43 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(): User = {
+  inline def apply(): User = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "Active", js.undefined)
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCustomPermissionsName(value: RoleName): Self = StObject.set(x, "CustomPermissionsName", value.asInstanceOf[js.Any])
+    inline def setCustomPermissionsName(value: RoleName): Self = StObject.set(x, "CustomPermissionsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomPermissionsNameUndefined: Self = StObject.set(x, "CustomPermissionsName", js.undefined)
+    inline def setCustomPermissionsNameUndefined: Self = StObject.set(x, "CustomPermissionsName", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    @scala.inline
-    def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
+    inline def setIdentityType(value: IdentityType): Self = StObject.set(x, "IdentityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
+    inline def setIdentityTypeUndefined: Self = StObject.set(x, "IdentityType", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: String): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: String): Self = StObject.set(x, "PrincipalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "PrincipalId", js.undefined)
     
-    @scala.inline
-    def setRole(value: UserRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: UserRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
-    @scala.inline
-    def setUserName(value: UserName_): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: UserName_): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

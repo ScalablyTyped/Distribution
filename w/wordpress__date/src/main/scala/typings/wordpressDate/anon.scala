@@ -18,20 +18,16 @@ object anon {
   }
   object AM {
     
-    @scala.inline
-    def apply(AM: String, PM: String, am: String, pm: String): AM = {
+    inline def apply(AM: String, PM: String, am: String, pm: String): AM = {
       val __obj = js.Dynamic.literal(AM = AM.asInstanceOf[js.Any], PM = PM.asInstanceOf[js.Any], am = am.asInstanceOf[js.Any], pm = pm.asInstanceOf[js.Any])
       __obj.asInstanceOf[AM]
     }
     
-    @scala.inline
-    implicit class AMMutableBuilder[Self <: AM] (val x: Self) extends AnyVal {
+    extension [Self <: AM](x: Self) {
       
-      @scala.inline
-      def setAM(value: String): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
+      inline def setAM(value: String): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPM(value: String): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
+      inline def setPM(value: String): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,26 +43,20 @@ object anon {
   }
   object Date {
     
-    @scala.inline
-    def apply(date: String, datetime: String, datetimeAbbreviated: String, time: String): Date = {
+    inline def apply(date: String, datetime: String, datetimeAbbreviated: String, time: String): Date = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], datetime = datetime.asInstanceOf[js.Any], datetimeAbbreviated = datetimeAbbreviated.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[Date]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+    extension [Self <: Date](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatetime(value: String): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+      inline def setDatetime(value: String): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatetimeAbbreviated(value: String): Self = StObject.set(x, "datetimeAbbreviated", value.asInstanceOf[js.Any])
+      inline def setDatetimeAbbreviated(value: String): Self = StObject.set(x, "datetimeAbbreviated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,20 +68,16 @@ object anon {
   }
   object Future {
     
-    @scala.inline
-    def apply(future: String, past: String): Future = {
+    inline def apply(future: String, past: String): Future = {
       val __obj = js.Dynamic.literal(future = future.asInstanceOf[js.Any], past = past.asInstanceOf[js.Any])
       __obj.asInstanceOf[Future]
     }
     
-    @scala.inline
-    implicit class FutureMutableBuilder[Self <: Future] (val x: Self) extends AnyVal {
+    extension [Self <: Future](x: Self) {
       
-      @scala.inline
-      def setFuture(value: String): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      inline def setFuture(value: String): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPast(value: String): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
+      inline def setPast(value: String): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +99,7 @@ object anon {
   }
   object Locale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       locale: String,
       meridiem: AM,
       months: js.Array[String],
@@ -127,41 +112,29 @@ object anon {
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeridiem(value: AM): Self = StObject.set(x, "meridiem", value.asInstanceOf[js.Any])
+      inline def setMeridiem(value: AM): Self = StObject.set(x, "meridiem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
+      inline def setMonthsShort(value: js.Array[String]): Self = StObject.set(x, "monthsShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
+      inline def setMonthsShortVarargs(value: String*): Self = StObject.set(x, "monthsShort", js.Array(value :_*))
       
-      @scala.inline
-      def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
       
-      @scala.inline
-      def setRelative(value: Future): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+      inline def setRelative(value: Future): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdays(value: js.Array[String]): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+      inline def setWeekdays(value: js.Array[String]): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
+      inline def setWeekdaysShort(value: js.Array[String]): Self = StObject.set(x, "weekdaysShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
+      inline def setWeekdaysShortVarargs(value: String*): Self = StObject.set(x, "weekdaysShort", js.Array(value :_*))
       
-      @scala.inline
-      def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
+      inline def setWeekdaysVarargs(value: String*): Self = StObject.set(x, "weekdays", js.Array(value :_*))
     }
   }
   
@@ -173,20 +146,16 @@ object anon {
   }
   object Offset {
     
-    @scala.inline
-    def apply(offset: String, string: String): Offset = {
+    inline def apply(offset: String, string: String): Offset = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], string = string.asInstanceOf[js.Any])
       __obj.asInstanceOf[Offset]
     }
     
-    @scala.inline
-    implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+    extension [Self <: Offset](x: Self) {
       
-      @scala.inline
-      def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
   }
 }

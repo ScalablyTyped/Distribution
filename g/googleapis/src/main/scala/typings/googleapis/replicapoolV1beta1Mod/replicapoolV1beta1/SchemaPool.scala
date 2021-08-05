@@ -101,115 +101,79 @@ trait SchemaPool extends StObject {
 }
 object SchemaPool {
   
-  @scala.inline
-  def apply(): SchemaPool = {
+  inline def apply(): SchemaPool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPool]
   }
   
-  @scala.inline
-  implicit class SchemaPoolMutableBuilder[Self <: SchemaPool] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPool](x: Self) {
     
-    @scala.inline
-    def setAutoRestart(value: Boolean): Self = StObject.set(x, "autoRestart", value.asInstanceOf[js.Any])
+    inline def setAutoRestart(value: Boolean): Self = StObject.set(x, "autoRestart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRestartUndefined: Self = StObject.set(x, "autoRestart", js.undefined)
+    inline def setAutoRestartUndefined: Self = StObject.set(x, "autoRestart", js.undefined)
     
-    @scala.inline
-    def setBaseInstanceName(value: String): Self = StObject.set(x, "baseInstanceName", value.asInstanceOf[js.Any])
+    inline def setBaseInstanceName(value: String): Self = StObject.set(x, "baseInstanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseInstanceNameUndefined: Self = StObject.set(x, "baseInstanceName", js.undefined)
+    inline def setBaseInstanceNameUndefined: Self = StObject.set(x, "baseInstanceName", js.undefined)
     
-    @scala.inline
-    def setCurrentNumReplicas(value: Double): Self = StObject.set(x, "currentNumReplicas", value.asInstanceOf[js.Any])
+    inline def setCurrentNumReplicas(value: Double): Self = StObject.set(x, "currentNumReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentNumReplicasUndefined: Self = StObject.set(x, "currentNumReplicas", js.undefined)
+    inline def setCurrentNumReplicasUndefined: Self = StObject.set(x, "currentNumReplicas", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
+    inline def setHealthChecks(value: js.Array[SchemaHealthCheck]): Self = StObject.set(x, "healthChecks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
+    inline def setHealthChecksUndefined: Self = StObject.set(x, "healthChecks", js.undefined)
     
-    @scala.inline
-    def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
+    inline def setHealthChecksVarargs(value: SchemaHealthCheck*): Self = StObject.set(x, "healthChecks", js.Array(value :_*))
     
-    @scala.inline
-    def setInitialNumReplicas(value: Double): Self = StObject.set(x, "initialNumReplicas", value.asInstanceOf[js.Any])
+    inline def setInitialNumReplicas(value: Double): Self = StObject.set(x, "initialNumReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialNumReplicasUndefined: Self = StObject.set(x, "initialNumReplicas", js.undefined)
+    inline def setInitialNumReplicasUndefined: Self = StObject.set(x, "initialNumReplicas", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Array[SchemaLabel]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[SchemaLabel]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: SchemaLabel*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: SchemaLabel*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumReplicas(value: Double): Self = StObject.set(x, "numReplicas", value.asInstanceOf[js.Any])
+    inline def setNumReplicas(value: Double): Self = StObject.set(x, "numReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumReplicasUndefined: Self = StObject.set(x, "numReplicas", js.undefined)
+    inline def setNumReplicasUndefined: Self = StObject.set(x, "numReplicas", js.undefined)
     
-    @scala.inline
-    def setResourceViews(value: js.Array[String]): Self = StObject.set(x, "resourceViews", value.asInstanceOf[js.Any])
+    inline def setResourceViews(value: js.Array[String]): Self = StObject.set(x, "resourceViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceViewsUndefined: Self = StObject.set(x, "resourceViews", js.undefined)
+    inline def setResourceViewsUndefined: Self = StObject.set(x, "resourceViews", js.undefined)
     
-    @scala.inline
-    def setResourceViewsVarargs(value: String*): Self = StObject.set(x, "resourceViews", js.Array(value :_*))
+    inline def setResourceViewsVarargs(value: String*): Self = StObject.set(x, "resourceViews", js.Array(value :_*))
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setTargetPool(value: String): Self = StObject.set(x, "targetPool", value.asInstanceOf[js.Any])
+    inline def setTargetPool(value: String): Self = StObject.set(x, "targetPool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPoolUndefined: Self = StObject.set(x, "targetPool", js.undefined)
+    inline def setTargetPoolUndefined: Self = StObject.set(x, "targetPool", js.undefined)
     
-    @scala.inline
-    def setTargetPools(value: js.Array[String]): Self = StObject.set(x, "targetPools", value.asInstanceOf[js.Any])
+    inline def setTargetPools(value: js.Array[String]): Self = StObject.set(x, "targetPools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
+    inline def setTargetPoolsUndefined: Self = StObject.set(x, "targetPools", js.undefined)
     
-    @scala.inline
-    def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
+    inline def setTargetPoolsVarargs(value: String*): Self = StObject.set(x, "targetPools", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplate(value: SchemaTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: SchemaTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -38,49 +38,35 @@ trait LexiconAttributes extends StObject {
 }
 object LexiconAttributes {
   
-  @scala.inline
-  def apply(): LexiconAttributes = {
+  inline def apply(): LexiconAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LexiconAttributes]
   }
   
-  @scala.inline
-  implicit class LexiconAttributesMutableBuilder[Self <: LexiconAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: LexiconAttributes](x: Self) {
     
-    @scala.inline
-    def setAlphabet(value: Alphabet): Self = StObject.set(x, "Alphabet", value.asInstanceOf[js.Any])
+    inline def setAlphabet(value: Alphabet): Self = StObject.set(x, "Alphabet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphabetUndefined: Self = StObject.set(x, "Alphabet", js.undefined)
+    inline def setAlphabetUndefined: Self = StObject.set(x, "Alphabet", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "LanguageCode", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: LastModified): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
-    @scala.inline
-    def setLexemesCount(value: LexemesCount): Self = StObject.set(x, "LexemesCount", value.asInstanceOf[js.Any])
+    inline def setLexemesCount(value: LexemesCount): Self = StObject.set(x, "LexemesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexemesCountUndefined: Self = StObject.set(x, "LexemesCount", js.undefined)
+    inline def setLexemesCountUndefined: Self = StObject.set(x, "LexemesCount", js.undefined)
     
-    @scala.inline
-    def setLexiconArn(value: LexiconArn): Self = StObject.set(x, "LexiconArn", value.asInstanceOf[js.Any])
+    inline def setLexiconArn(value: LexiconArn): Self = StObject.set(x, "LexiconArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexiconArnUndefined: Self = StObject.set(x, "LexiconArn", js.undefined)
+    inline def setLexiconArnUndefined: Self = StObject.set(x, "LexiconArn", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
   }
 }

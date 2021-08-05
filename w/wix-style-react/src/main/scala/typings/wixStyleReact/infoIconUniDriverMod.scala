@@ -19,8 +19,7 @@ object infoIconUniDriverMod {
   }
   object InfoIconUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -32,17 +31,13 @@ object infoIconUniDriverMod {
       __obj.asInstanceOf[InfoIconUniDriver]
     }
     
-    @scala.inline
-    implicit class InfoIconUniDriverMutableBuilder[Self <: InfoIconUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: InfoIconUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetContent(value: () => js.Promise[String]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => js.Promise[String]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSize(value: () => js.Promise[String]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => js.Promise[String]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHover(value: () => js.Promise[Unit]): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
+      inline def setHover(value: () => js.Promise[Unit]): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
     }
   }
 }

@@ -11,7 +11,7 @@ class SurveyError () extends StObject {
   def this(text: String, errorOwner: ISurveyErrorOwner) = this()
   def this(text: Unit, errorOwner: ISurveyErrorOwner) = this()
   
-  var errorOwner: ISurveyErrorOwner = js.native
+  /* protected */ var errorOwner: ISurveyErrorOwner = js.native
   
   /* protected */ def getDefaultText(): String = js.native
   

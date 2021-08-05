@@ -10,19 +10,15 @@ trait DraggableEvent extends StObject {
 }
 object DraggableEvent {
   
-  @scala.inline
-  def apply(): DraggableEvent = {
+  inline def apply(): DraggableEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DraggableEvent]
   }
   
-  @scala.inline
-  implicit class DraggableEventMutableBuilder[Self <: DraggableEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableEvent](x: Self) {
     
-    @scala.inline
-    def setSender(value: Draggable): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Draggable): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
   }
 }

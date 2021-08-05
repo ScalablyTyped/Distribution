@@ -14,13 +14,10 @@ object routeActionMod {
   trait RouteAction extends StObject
   object RouteAction {
     
-    @scala.inline
-    def pop: typings.ionicReact.ionicReactStrings.pop = "pop".asInstanceOf[typings.ionicReact.ionicReactStrings.pop]
+    inline def pop: typings.ionicReact.ionicReactStrings.pop = "pop".asInstanceOf[typings.ionicReact.ionicReactStrings.pop]
     
-    @scala.inline
-    def push: typings.ionicReact.ionicReactStrings.push = "push".asInstanceOf[typings.ionicReact.ionicReactStrings.push]
+    inline def push: typings.ionicReact.ionicReactStrings.push = "push".asInstanceOf[typings.ionicReact.ionicReactStrings.push]
     
-    @scala.inline
-    def replace: typings.ionicReact.ionicReactStrings.replace = "replace".asInstanceOf[typings.ionicReact.ionicReactStrings.replace]
+    inline def replace: typings.ionicReact.ionicReactStrings.replace = "replace".asInstanceOf[typings.ionicReact.ionicReactStrings.replace]
   }
 }

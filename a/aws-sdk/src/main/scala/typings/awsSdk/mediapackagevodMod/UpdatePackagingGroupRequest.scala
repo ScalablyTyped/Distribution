@@ -15,22 +15,17 @@ trait UpdatePackagingGroupRequest extends StObject {
 }
 object UpdatePackagingGroupRequest {
   
-  @scala.inline
-  def apply(Id: string): UpdatePackagingGroupRequest = {
+  inline def apply(Id: string): UpdatePackagingGroupRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePackagingGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdatePackagingGroupRequestMutableBuilder[Self <: UpdatePackagingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePackagingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setAuthorization(value: Authorization): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: Authorization): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
+    inline def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

@@ -16,111 +16,95 @@ object creditkeyJsStrings {
   sealed trait approved
     extends StObject
        with Status
-  @scala.inline
-  def approved: approved = "approved".asInstanceOf[approved]
+  inline def approved: approved = "approved".asInstanceOf[approved]
   
   @js.native
   sealed trait button
     extends StObject
        with Display
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
   sealed trait button_text
     extends StObject
        with Display
-  @scala.inline
-  def button_text: button_text = "button_text".asInstanceOf[button_text]
+  inline def button_text: button_text = "button_text".asInstanceOf[button_text]
   
   @js.native
   sealed trait checkout
     extends StObject
        with Copy
-  @scala.inline
-  def checkout: checkout = "checkout".asInstanceOf[checkout]
+  inline def checkout: checkout = "checkout".asInstanceOf[checkout]
   
   @js.native
   sealed trait declined
     extends StObject
        with Status
-  @scala.inline
-  def declined: declined = "declined".asInstanceOf[declined]
+  inline def declined: declined = "declined".asInstanceOf[declined]
   
   @js.native
   sealed trait development
     extends StObject
        with Platform
-  @scala.inline
-  def development: development = "development".asInstanceOf[development]
+  inline def development: development = "development".asInstanceOf[development]
   
   @js.native
   sealed trait large
     extends StObject
        with Size
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
   sealed trait medium
     extends StObject
        with Size
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
   sealed trait modal
     extends StObject
        with Mode
-  @scala.inline
-  def modal: modal = "modal".asInstanceOf[modal]
+  inline def modal: modal = "modal".asInstanceOf[modal]
   
   @js.native
   sealed trait pdp
     extends StObject
        with Copy
-  @scala.inline
-  def pdp: pdp = "pdp".asInstanceOf[pdp]
+  inline def pdp: pdp = "pdp".asInstanceOf[pdp]
   
   @js.native
   sealed trait pending
     extends StObject
        with Status
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait production
     extends StObject
        with Platform
-  @scala.inline
-  def production: production = "production".asInstanceOf[production]
+  inline def production: production = "production".asInstanceOf[production]
   
   @js.native
   sealed trait redirect
     extends StObject
        with Mode
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
   sealed trait small
     extends StObject
        with Size
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait staging
     extends StObject
        with Platform
-  @scala.inline
-  def staging: staging = "staging".asInstanceOf[staging]
+  inline def staging: staging = "staging".asInstanceOf[staging]
   
   @js.native
   sealed trait text
     extends StObject
        with Display
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
 }

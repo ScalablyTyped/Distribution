@@ -17,8 +17,7 @@ trait InteractiveNetworkWriteException
 }
 object InteractiveNetworkWriteException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Context: XInterface,
     Diagnostic: String,
@@ -28,10 +27,8 @@ object InteractiveNetworkWriteException {
     __obj.asInstanceOf[InteractiveNetworkWriteException]
   }
   
-  @scala.inline
-  implicit class InteractiveNetworkWriteExceptionMutableBuilder[Self <: InteractiveNetworkWriteException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveNetworkWriteException](x: Self) {
     
-    @scala.inline
-    def setDiagnostic(value: String): Self = StObject.set(x, "Diagnostic", value.asInstanceOf[js.Any])
+    inline def setDiagnostic(value: String): Self = StObject.set(x, "Diagnostic", value.asInstanceOf[js.Any])
   }
 }

@@ -24,7 +24,6 @@ object RemoteDesktop {
     @JSGlobal("Windows.System.RemoteDesktop.InteractiveSession.isRemote")
     @js.native
     def isRemote: Boolean = js.native
-    @scala.inline
-    def isRemote_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isRemote")(x.asInstanceOf[js.Any])
+    inline def isRemote_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isRemote")(x.asInstanceOf[js.Any])
   }
 }

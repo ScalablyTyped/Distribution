@@ -169,8 +169,7 @@ object scopeMod {
   }
   object ScopeContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       contexts: Contexts,
       extra: Extras,
       fingerprint: js.Array[String],
@@ -182,29 +181,21 @@ object scopeMod {
       __obj.asInstanceOf[ScopeContext]
     }
     
-    @scala.inline
-    implicit class ScopeContextMutableBuilder[Self <: ScopeContext] (val x: Self) extends AnyVal {
+    extension [Self <: ScopeContext](x: Self) {
       
-      @scala.inline
-      def setContexts(value: Contexts): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+      inline def setContexts(value: Contexts): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtra(value: Extras): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: Extras): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFingerprint(value: js.Array[String]): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: js.Array[String]): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value :_*))
+      inline def setFingerprintVarargs(value: String*): Self = StObject.set(x, "fingerprint", js.Array(value :_*))
       
-      @scala.inline
-      def setLevel(value: Severity): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Severity): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   

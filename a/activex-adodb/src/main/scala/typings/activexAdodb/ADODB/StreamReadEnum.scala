@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamReadEnum extends StObject
 object StreamReadEnum {
   
-  @scala.inline
-  def adReadAll: `-1` = -1.asInstanceOf[`-1`]
+  inline def adReadAll: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def adReadLine: `-2` = -2.asInstanceOf[`-2`]
+  inline def adReadLine: `-2` = -2.asInstanceOf[`-2`]
 }

@@ -16,7 +16,7 @@ object navStepperProtractorDotDriverMod {
        with BaseDriver {
     def this(component: ElementFinder) = this()
     
-    val component: js.Any = js.native
+    /* private */ val component: js.Any = js.native
     
     /** Get root element of the component */
     /* CompleteClass */

@@ -13,8 +13,7 @@ object imagePickerStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): ImagePickerStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ImagePickerStyle]
+  inline def default(): ImagePickerStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ImagePickerStyle]
   
   trait ImagePickerStyle extends StObject {
     
@@ -40,8 +39,7 @@ object imagePickerStyleMod {
   }
   object ImagePickerStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       closeText: TextStyle,
       closeWrap: ViewStyle,
       container: ViewStyle,
@@ -57,38 +55,27 @@ object imagePickerStyleMod {
       __obj.asInstanceOf[ImagePickerStyle]
     }
     
-    @scala.inline
-    implicit class ImagePickerStyleMutableBuilder[Self <: ImagePickerStyle] (val x: Self) extends AnyVal {
+    extension [Self <: ImagePickerStyle](x: Self) {
       
-      @scala.inline
-      def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
+      inline def setCloseText(value: TextStyle): Self = StObject.set(x, "closeText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseWrap(value: ViewStyle): Self = StObject.set(x, "closeWrap", value.asInstanceOf[js.Any])
+      inline def setCloseWrap(value: ViewStyle): Self = StObject.set(x, "closeWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: ImageStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: ImageStyle): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: ViewStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: ViewStyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlusText(value: TextStyle): Self = StObject.set(x, "plusText", value.asInstanceOf[js.Any])
+      inline def setPlusText(value: TextStyle): Self = StObject.set(x, "plusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlusWrap(value: ViewStyle): Self = StObject.set(x, "plusWrap", value.asInstanceOf[js.Any])
+      inline def setPlusWrap(value: ViewStyle): Self = StObject.set(x, "plusWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlusWrapHighlight(value: ViewStyle): Self = StObject.set(x, "plusWrapHighlight", value.asInstanceOf[js.Any])
+      inline def setPlusWrapHighlight(value: ViewStyle): Self = StObject.set(x, "plusWrapHighlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlusWrapNormal(value: ViewStyle): Self = StObject.set(x, "plusWrapNormal", value.asInstanceOf[js.Any])
+      inline def setPlusWrapNormal(value: ViewStyle): Self = StObject.set(x, "plusWrapNormal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: ImageStyle): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ImageStyle): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
 }

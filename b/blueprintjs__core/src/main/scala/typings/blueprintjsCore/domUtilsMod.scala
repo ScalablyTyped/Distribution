@@ -15,19 +15,14 @@ object domUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def throttle[T /* <: js.Function */](method: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def throttle[T /* <: js.Function */](method: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], newEventName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, Unit]]
+  inline def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], newEventName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, Unit]]
   
-  @scala.inline
-  def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any]): js.Function1[/* event2 */ E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
-  @scala.inline
-  def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](
+  inline def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any]): js.Function1[/* event2 */ E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
+  inline def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](
     callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any],
     options: IThrottledReactEventOptions
   ): js.Function1[/* event2 */ E, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
@@ -38,20 +33,16 @@ object domUtilsMod {
   }
   object IThrottledReactEventOptions {
     
-    @scala.inline
-    def apply(): IThrottledReactEventOptions = {
+    inline def apply(): IThrottledReactEventOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IThrottledReactEventOptions]
     }
     
-    @scala.inline
-    implicit class IThrottledReactEventOptionsMutableBuilder[Self <: IThrottledReactEventOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IThrottledReactEventOptions](x: Self) {
       
-      @scala.inline
-      def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+      inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+      inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
     }
   }
 }

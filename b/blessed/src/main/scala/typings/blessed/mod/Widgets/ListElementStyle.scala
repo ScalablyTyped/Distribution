@@ -12,25 +12,19 @@ trait ListElementStyle extends StObject {
 }
 object ListElementStyle {
   
-  @scala.inline
-  def apply(): ListElementStyle = {
+  inline def apply(): ListElementStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListElementStyle]
   }
   
-  @scala.inline
-  implicit class ListElementStyleMutableBuilder[Self <: ListElementStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ListElementStyle](x: Self) {
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

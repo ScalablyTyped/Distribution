@@ -14,19 +14,15 @@ trait DataValue extends StObject {
 }
 object DataValue {
   
-  @scala.inline
-  def apply(formattedValue: String, value: js.Any): DataValue = {
+  inline def apply(formattedValue: String, value: js.Any): DataValue = {
     val __obj = js.Dynamic.literal(formattedValue = formattedValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataValue]
   }
   
-  @scala.inline
-  implicit class DataValueMutableBuilder[Self <: DataValue] (val x: Self) extends AnyVal {
+  extension [Self <: DataValue](x: Self) {
     
-    @scala.inline
-    def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+    inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

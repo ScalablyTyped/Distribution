@@ -26,8 +26,7 @@ trait ChatMessageTransportConfiguration extends StObject {
 }
 object ChatMessageTransportConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extendedProperties: IMapView[String, js.Any],
     maxAttachmentCount: Double,
     maxMessageSizeInKilobytes: Double,
@@ -38,22 +37,16 @@ object ChatMessageTransportConfiguration {
     __obj.asInstanceOf[ChatMessageTransportConfiguration]
   }
   
-  @scala.inline
-  implicit class ChatMessageTransportConfigurationMutableBuilder[Self <: ChatMessageTransportConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageTransportConfiguration](x: Self) {
     
-    @scala.inline
-    def setExtendedProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
+    inline def setExtendedProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAttachmentCount(value: Double): Self = StObject.set(x, "maxAttachmentCount", value.asInstanceOf[js.Any])
+    inline def setMaxAttachmentCount(value: Double): Self = StObject.set(x, "maxAttachmentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMessageSizeInKilobytes(value: Double): Self = StObject.set(x, "maxMessageSizeInKilobytes", value.asInstanceOf[js.Any])
+    inline def setMaxMessageSizeInKilobytes(value: Double): Self = StObject.set(x, "maxMessageSizeInKilobytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecipientCount(value: Double): Self = StObject.set(x, "maxRecipientCount", value.asInstanceOf[js.Any])
+    inline def setMaxRecipientCount(value: Double): Self = StObject.set(x, "maxRecipientCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedVideoFormat(value: MediaEncodingProfile): Self = StObject.set(x, "supportedVideoFormat", value.asInstanceOf[js.Any])
+    inline def setSupportedVideoFormat(value: MediaEncodingProfile): Self = StObject.set(x, "supportedVideoFormat", value.asInstanceOf[js.Any])
   }
 }

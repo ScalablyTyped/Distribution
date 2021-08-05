@@ -21,44 +21,32 @@ object anon {
   }
   object PartialCacheNameDetails {
     
-    @scala.inline
-    def apply(): PartialCacheNameDetails = {
+    inline def apply(): PartialCacheNameDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialCacheNameDetails]
     }
     
-    @scala.inline
-    implicit class PartialCacheNameDetailsMutableBuilder[Self <: PartialCacheNameDetails] (val x: Self) extends AnyVal {
+    extension [Self <: PartialCacheNameDetails](x: Self) {
       
-      @scala.inline
-      def setGoogleAnalytics(value: String): Self = StObject.set(x, "googleAnalytics", value.asInstanceOf[js.Any])
+      inline def setGoogleAnalytics(value: String): Self = StObject.set(x, "googleAnalytics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoogleAnalyticsUndefined: Self = StObject.set(x, "googleAnalytics", js.undefined)
+      inline def setGoogleAnalyticsUndefined: Self = StObject.set(x, "googleAnalytics", js.undefined)
       
-      @scala.inline
-      def setPrecache(value: String): Self = StObject.set(x, "precache", value.asInstanceOf[js.Any])
+      inline def setPrecache(value: String): Self = StObject.set(x, "precache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecacheUndefined: Self = StObject.set(x, "precache", js.undefined)
+      inline def setPrecacheUndefined: Self = StObject.set(x, "precache", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+      inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     }
   }
 }

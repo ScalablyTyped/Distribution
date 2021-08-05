@@ -22,19 +22,15 @@ trait RangeFormatConfiguration extends StObject {
 }
 object RangeFormatConfiguration {
   
-  @scala.inline
-  def apply(cells: Table | RangeCoordinates, format: js.Object): RangeFormatConfiguration = {
+  inline def apply(cells: Table | RangeCoordinates, format: js.Object): RangeFormatConfiguration = {
     val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeFormatConfiguration]
   }
   
-  @scala.inline
-  implicit class RangeFormatConfigurationMutableBuilder[Self <: RangeFormatConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RangeFormatConfiguration](x: Self) {
     
-    @scala.inline
-    def setCells(value: Table | RangeCoordinates): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: Table | RangeCoordinates): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: js.Object): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: js.Object): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

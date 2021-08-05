@@ -16,17 +16,14 @@ object typesBlobIdDoesNotExistExceptionMod {
   }
   object BlobIdDoesNotExistException {
     
-    @scala.inline
-    def apply(): BlobIdDoesNotExistException = {
+    inline def apply(): BlobIdDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "BlobIdDoesNotExistException")
       __obj.asInstanceOf[BlobIdDoesNotExistException]
     }
     
-    @scala.inline
-    implicit class BlobIdDoesNotExistExceptionMutableBuilder[Self <: BlobIdDoesNotExistException] (val x: Self) extends AnyVal {
+    extension [Self <: BlobIdDoesNotExistException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BlobIdDoesNotExistException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

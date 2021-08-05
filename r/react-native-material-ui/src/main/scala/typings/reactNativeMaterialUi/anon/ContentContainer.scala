@@ -11,22 +11,17 @@ trait ContentContainer extends StObject {
 }
 object ContentContainer {
   
-  @scala.inline
-  def apply(): ContentContainer = {
+  inline def apply(): ContentContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentContainer]
   }
   
-  @scala.inline
-  implicit class ContentContainerMutableBuilder[Self <: ContentContainer] (val x: Self) extends AnyVal {
+  extension [Self <: ContentContainer](x: Self) {
     
-    @scala.inline
-    def setContentContainer(value: ViewStyle): Self = StObject.set(x, "contentContainer", value.asInstanceOf[js.Any])
+    inline def setContentContainer(value: ViewStyle): Self = StObject.set(x, "contentContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentContainerNull: Self = StObject.set(x, "contentContainer", null)
+    inline def setContentContainerNull: Self = StObject.set(x, "contentContainer", null)
     
-    @scala.inline
-    def setContentContainerUndefined: Self = StObject.set(x, "contentContainer", js.undefined)
+    inline def setContentContainerUndefined: Self = StObject.set(x, "contentContainer", js.undefined)
   }
 }

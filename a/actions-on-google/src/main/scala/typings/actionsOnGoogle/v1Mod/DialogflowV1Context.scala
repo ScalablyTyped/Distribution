@@ -14,31 +14,23 @@ trait DialogflowV1Context extends StObject {
 }
 object DialogflowV1Context {
   
-  @scala.inline
-  def apply(): DialogflowV1Context = {
+  inline def apply(): DialogflowV1Context = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1Context]
   }
   
-  @scala.inline
-  implicit class DialogflowV1ContextMutableBuilder[Self <: DialogflowV1Context] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1Context](x: Self) {
     
-    @scala.inline
-    def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
+    inline def setLifespan(value: Double): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifespanUndefined: Self = StObject.set(x, "lifespan", js.undefined)
+    inline def setLifespanUndefined: Self = StObject.set(x, "lifespan", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParameters(value: DialogflowV1Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: DialogflowV1Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

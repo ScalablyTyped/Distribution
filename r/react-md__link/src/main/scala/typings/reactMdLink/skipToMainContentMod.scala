@@ -38,23 +38,18 @@ object skipToMainContentMod {
   }
   object SkipToMainContentProps {
     
-    @scala.inline
-    def apply(mainId: String): SkipToMainContentProps = {
+    inline def apply(mainId: String): SkipToMainContentProps = {
       val __obj = js.Dynamic.literal(mainId = mainId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SkipToMainContentProps]
     }
     
-    @scala.inline
-    implicit class SkipToMainContentPropsMutableBuilder[Self <: SkipToMainContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: SkipToMainContentProps](x: Self) {
       
-      @scala.inline
-      def setMainId(value: String): Self = StObject.set(x, "mainId", value.asInstanceOf[js.Any])
+      inline def setMainId(value: String): Self = StObject.set(x, "mainId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstyled(value: Boolean): Self = StObject.set(x, "unstyled", value.asInstanceOf[js.Any])
+      inline def setUnstyled(value: Boolean): Self = StObject.set(x, "unstyled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstyledUndefined: Self = StObject.set(x, "unstyled", js.undefined)
+      inline def setUnstyledUndefined: Self = StObject.set(x, "unstyled", js.undefined)
     }
   }
 }

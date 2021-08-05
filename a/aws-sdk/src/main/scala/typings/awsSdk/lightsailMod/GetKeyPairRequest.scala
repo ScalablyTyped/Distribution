@@ -13,16 +13,13 @@ trait GetKeyPairRequest extends StObject {
 }
 object GetKeyPairRequest {
   
-  @scala.inline
-  def apply(keyPairName: ResourceName): GetKeyPairRequest = {
+  inline def apply(keyPairName: ResourceName): GetKeyPairRequest = {
     val __obj = js.Dynamic.literal(keyPairName = keyPairName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetKeyPairRequest]
   }
   
-  @scala.inline
-  implicit class GetKeyPairRequestMutableBuilder[Self <: GetKeyPairRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetKeyPairRequest](x: Self) {
     
-    @scala.inline
-    def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
+    inline def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
   }
 }

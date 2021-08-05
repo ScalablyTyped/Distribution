@@ -22,8 +22,7 @@ trait ParameterRuleDateTime
 }
 object ParameterRuleDateTime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `type`: date | dateQuestionmark | dateTime | dateTimeQuestionmark | datetime_ | datetimeQuestionmark
   ): ParameterRuleDateTime = {
     val __obj = js.Dynamic.literal()
@@ -31,17 +30,13 @@ object ParameterRuleDateTime {
     __obj.asInstanceOf[ParameterRuleDateTime]
   }
   
-  @scala.inline
-  implicit class ParameterRuleDateTimeMutableBuilder[Self <: ParameterRuleDateTime] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterRuleDateTime](x: Self) {
     
-    @scala.inline
-    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
+    inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+    inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: date | dateQuestionmark | dateTime | dateTimeQuestionmark | datetime_ | datetimeQuestionmark
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

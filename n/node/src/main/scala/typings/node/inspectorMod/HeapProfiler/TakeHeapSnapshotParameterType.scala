@@ -13,19 +13,15 @@ trait TakeHeapSnapshotParameterType extends StObject {
 }
 object TakeHeapSnapshotParameterType {
   
-  @scala.inline
-  def apply(): TakeHeapSnapshotParameterType = {
+  inline def apply(): TakeHeapSnapshotParameterType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TakeHeapSnapshotParameterType]
   }
   
-  @scala.inline
-  implicit class TakeHeapSnapshotParameterTypeMutableBuilder[Self <: TakeHeapSnapshotParameterType] (val x: Self) extends AnyVal {
+  extension [Self <: TakeHeapSnapshotParameterType](x: Self) {
     
-    @scala.inline
-    def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
+    inline def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
+    inline def setReportProgressUndefined: Self = StObject.set(x, "reportProgress", js.undefined)
   }
 }

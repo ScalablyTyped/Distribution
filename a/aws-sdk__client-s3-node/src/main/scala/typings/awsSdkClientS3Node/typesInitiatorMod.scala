@@ -20,26 +20,20 @@ object typesInitiatorMod {
   }
   object Initiator {
     
-    @scala.inline
-    def apply(): Initiator = {
+    inline def apply(): Initiator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Initiator]
     }
     
-    @scala.inline
-    implicit class InitiatorMutableBuilder[Self <: Initiator] (val x: Self) extends AnyVal {
+    extension [Self <: Initiator](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
       
-      @scala.inline
-      def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+      inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
     }
   }
   

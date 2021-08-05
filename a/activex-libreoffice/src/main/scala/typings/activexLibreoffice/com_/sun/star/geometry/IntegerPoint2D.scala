@@ -18,19 +18,15 @@ trait IntegerPoint2D extends StObject {
 }
 object IntegerPoint2D {
   
-  @scala.inline
-  def apply(X: Double, Y: Double): IntegerPoint2D = {
+  inline def apply(X: Double, Y: Double): IntegerPoint2D = {
     val __obj = js.Dynamic.literal(X = X.asInstanceOf[js.Any], Y = Y.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegerPoint2D]
   }
   
-  @scala.inline
-  implicit class IntegerPoint2DMutableBuilder[Self <: IntegerPoint2D] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerPoint2D](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

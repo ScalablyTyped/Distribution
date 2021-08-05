@@ -69,8 +69,7 @@ object paginatorMod {
   }
   object Paginator {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       hasNextPage: Boolean,
       hasPrevPage: Boolean,
       items: js.Array[T],
@@ -81,26 +80,19 @@ object paginatorMod {
       __obj.asInstanceOf[Paginator[T]]
     }
     
-    @scala.inline
-    implicit class PaginatorMutableBuilder[Self <: Paginator[?], T] (val x: Self & Paginator[T]) extends AnyVal {
+    extension [Self <: Paginator[?], T](x: Self & Paginator[T]) {
       
-      @scala.inline
-      def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
+      inline def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasPrevPage(value: Boolean): Self = StObject.set(x, "hasPrevPage", value.asInstanceOf[js.Any])
+      inline def setHasPrevPage(value: Boolean): Self = StObject.set(x, "hasPrevPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setNextPage(value: () => js.Promise[Paginator[T]]): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
+      inline def setNextPage(value: () => js.Promise[Paginator[T]]): Self = StObject.set(x, "nextPage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrevPage(value: () => js.Promise[Paginator[T]]): Self = StObject.set(x, "prevPage", js.Any.fromFunction0(value))
+      inline def setPrevPage(value: () => js.Promise[Paginator[T]]): Self = StObject.set(x, "prevPage", js.Any.fromFunction0(value))
     }
   }
 }

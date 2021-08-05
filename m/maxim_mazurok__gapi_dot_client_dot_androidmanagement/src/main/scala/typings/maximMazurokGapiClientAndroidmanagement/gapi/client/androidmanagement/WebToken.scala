@@ -27,49 +27,35 @@ trait WebToken extends StObject {
 }
 object WebToken {
   
-  @scala.inline
-  def apply(): WebToken = {
+  inline def apply(): WebToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebToken]
   }
   
-  @scala.inline
-  implicit class WebTokenMutableBuilder[Self <: WebToken] (val x: Self) extends AnyVal {
+  extension [Self <: WebToken](x: Self) {
     
-    @scala.inline
-    def setEnabledFeatures(value: js.Array[String]): Self = StObject.set(x, "enabledFeatures", value.asInstanceOf[js.Any])
+    inline def setEnabledFeatures(value: js.Array[String]): Self = StObject.set(x, "enabledFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledFeaturesUndefined: Self = StObject.set(x, "enabledFeatures", js.undefined)
+    inline def setEnabledFeaturesUndefined: Self = StObject.set(x, "enabledFeatures", js.undefined)
     
-    @scala.inline
-    def setEnabledFeaturesVarargs(value: String*): Self = StObject.set(x, "enabledFeatures", js.Array(value :_*))
+    inline def setEnabledFeaturesVarargs(value: String*): Self = StObject.set(x, "enabledFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentFrameUrl(value: String): Self = StObject.set(x, "parentFrameUrl", value.asInstanceOf[js.Any])
+    inline def setParentFrameUrl(value: String): Self = StObject.set(x, "parentFrameUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFrameUrlUndefined: Self = StObject.set(x, "parentFrameUrl", js.undefined)
+    inline def setParentFrameUrlUndefined: Self = StObject.set(x, "parentFrameUrl", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

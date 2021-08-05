@@ -33,43 +33,31 @@ trait RevisionLocation extends StObject {
 }
 object RevisionLocation {
   
-  @scala.inline
-  def apply(): RevisionLocation = {
+  inline def apply(): RevisionLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevisionLocation]
   }
   
-  @scala.inline
-  implicit class RevisionLocationMutableBuilder[Self <: RevisionLocation] (val x: Self) extends AnyVal {
+  extension [Self <: RevisionLocation](x: Self) {
     
-    @scala.inline
-    def setAppSpecContent(value: AppSpecContent): Self = StObject.set(x, "appSpecContent", value.asInstanceOf[js.Any])
+    inline def setAppSpecContent(value: AppSpecContent): Self = StObject.set(x, "appSpecContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppSpecContentUndefined: Self = StObject.set(x, "appSpecContent", js.undefined)
+    inline def setAppSpecContentUndefined: Self = StObject.set(x, "appSpecContent", js.undefined)
     
-    @scala.inline
-    def setGitHubLocation(value: GitHubLocation): Self = StObject.set(x, "gitHubLocation", value.asInstanceOf[js.Any])
+    inline def setGitHubLocation(value: GitHubLocation): Self = StObject.set(x, "gitHubLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitHubLocationUndefined: Self = StObject.set(x, "gitHubLocation", js.undefined)
+    inline def setGitHubLocationUndefined: Self = StObject.set(x, "gitHubLocation", js.undefined)
     
-    @scala.inline
-    def setRevisionType(value: RevisionLocationType): Self = StObject.set(x, "revisionType", value.asInstanceOf[js.Any])
+    inline def setRevisionType(value: RevisionLocationType): Self = StObject.set(x, "revisionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionTypeUndefined: Self = StObject.set(x, "revisionType", js.undefined)
+    inline def setRevisionTypeUndefined: Self = StObject.set(x, "revisionType", js.undefined)
     
-    @scala.inline
-    def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
+    inline def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
+    inline def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
     
-    @scala.inline
-    def setString(value: RawString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: RawString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
   }
 }

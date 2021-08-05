@@ -33,8 +33,7 @@ trait AllocateConnectionOnInterconnectRequest extends StObject {
 }
 object AllocateConnectionOnInterconnectRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bandwidth: Bandwidth,
     connectionName: ConnectionName,
     interconnectId: InterconnectId,
@@ -45,22 +44,16 @@ object AllocateConnectionOnInterconnectRequest {
     __obj.asInstanceOf[AllocateConnectionOnInterconnectRequest]
   }
   
-  @scala.inline
-  implicit class AllocateConnectionOnInterconnectRequestMutableBuilder[Self <: AllocateConnectionOnInterconnectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AllocateConnectionOnInterconnectRequest](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: Bandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Bandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionName(value: ConnectionName): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
+    inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
+    inline def setInterconnectId(value: InterconnectId): Self = StObject.set(x, "interconnectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "ownerAccount", value.asInstanceOf[js.Any])
+    inline def setOwnerAccount(value: OwnerAccount): Self = StObject.set(x, "ownerAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVlan(value: VLAN): Self = StObject.set(x, "vlan", value.asInstanceOf[js.Any])
+    inline def setVlan(value: VLAN): Self = StObject.set(x, "vlan", value.asInstanceOf[js.Any])
   }
 }

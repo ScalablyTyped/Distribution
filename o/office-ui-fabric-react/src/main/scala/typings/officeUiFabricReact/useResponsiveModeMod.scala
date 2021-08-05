@@ -13,6 +13,5 @@ object useResponsiveModeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useResponsiveMode(elementRef: RefObject[HTMLElement | Null]): ResponsiveMode = ^.asInstanceOf[js.Dynamic].applyDynamic("useResponsiveMode")(elementRef.asInstanceOf[js.Any]).asInstanceOf[ResponsiveMode]
+  inline def useResponsiveMode(elementRef: RefObject[HTMLElement | Null]): ResponsiveMode = ^.asInstanceOf[js.Dynamic].applyDynamic("useResponsiveMode")(elementRef.asInstanceOf[js.Any]).asInstanceOf[ResponsiveMode]
 }

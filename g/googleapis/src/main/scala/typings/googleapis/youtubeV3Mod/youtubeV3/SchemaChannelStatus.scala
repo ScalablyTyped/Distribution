@@ -27,31 +27,23 @@ trait SchemaChannelStatus extends StObject {
 }
 object SchemaChannelStatus {
   
-  @scala.inline
-  def apply(): SchemaChannelStatus = {
+  inline def apply(): SchemaChannelStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChannelStatus]
   }
   
-  @scala.inline
-  implicit class SchemaChannelStatusMutableBuilder[Self <: SchemaChannelStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChannelStatus](x: Self) {
     
-    @scala.inline
-    def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
+    inline def setIsLinked(value: Boolean): Self = StObject.set(x, "isLinked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLinkedUndefined: Self = StObject.set(x, "isLinked", js.undefined)
+    inline def setIsLinkedUndefined: Self = StObject.set(x, "isLinked", js.undefined)
     
-    @scala.inline
-    def setLongUploadsStatus(value: String): Self = StObject.set(x, "longUploadsStatus", value.asInstanceOf[js.Any])
+    inline def setLongUploadsStatus(value: String): Self = StObject.set(x, "longUploadsStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongUploadsStatusUndefined: Self = StObject.set(x, "longUploadsStatus", js.undefined)
+    inline def setLongUploadsStatusUndefined: Self = StObject.set(x, "longUploadsStatus", js.undefined)
     
-    @scala.inline
-    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
+    inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
+    inline def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
   }
 }

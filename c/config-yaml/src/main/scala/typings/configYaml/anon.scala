@@ -13,20 +13,16 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
 }

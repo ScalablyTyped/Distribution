@@ -18,8 +18,7 @@ trait CommonPathProps
      with CommonMaskProps
 object CommonPathProps {
   
-  @scala.inline
-  def apply(): CommonPathProps = {
+  inline def apply(): CommonPathProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonPathProps]
   }

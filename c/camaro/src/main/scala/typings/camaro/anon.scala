@@ -12,17 +12,14 @@ object anon {
   }
   object IndentSize {
     
-    @scala.inline
-    def apply(indentSize: Double): IndentSize = {
+    inline def apply(indentSize: Double): IndentSize = {
       val __obj = js.Dynamic.literal(indentSize = indentSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndentSize]
     }
     
-    @scala.inline
-    implicit class IndentSizeMutableBuilder[Self <: IndentSize] (val x: Self) extends AnyVal {
+    extension [Self <: IndentSize](x: Self) {
       
-      @scala.inline
-      def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
+      inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     }
   }
 }

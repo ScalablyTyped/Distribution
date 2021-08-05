@@ -31,31 +31,23 @@ trait SchemaClickTag extends StObject {
 }
 object SchemaClickTag {
   
-  @scala.inline
-  def apply(): SchemaClickTag = {
+  inline def apply(): SchemaClickTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClickTag]
   }
   
-  @scala.inline
-  implicit class SchemaClickTagMutableBuilder[Self <: SchemaClickTag] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClickTag](x: Self) {
     
-    @scala.inline
-    def setClickThroughUrl(value: SchemaCreativeClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setClickThroughUrl(value: SchemaCreativeClickThroughUrl): Self = StObject.set(x, "clickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
+    inline def setClickThroughUrlUndefined: Self = StObject.set(x, "clickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
+    inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

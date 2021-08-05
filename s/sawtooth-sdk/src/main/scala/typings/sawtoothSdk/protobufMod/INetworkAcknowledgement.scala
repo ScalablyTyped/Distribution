@@ -12,22 +12,17 @@ trait INetworkAcknowledgement extends StObject {
 }
 object INetworkAcknowledgement {
   
-  @scala.inline
-  def apply(): INetworkAcknowledgement = {
+  inline def apply(): INetworkAcknowledgement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INetworkAcknowledgement]
   }
   
-  @scala.inline
-  implicit class INetworkAcknowledgementMutableBuilder[Self <: INetworkAcknowledgement] (val x: Self) extends AnyVal {
+  extension [Self <: INetworkAcknowledgement](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

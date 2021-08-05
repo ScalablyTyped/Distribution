@@ -17,31 +17,23 @@ trait CreateRowRequest extends StObject {
 }
 object CreateRowRequest {
   
-  @scala.inline
-  def apply(): CreateRowRequest = {
+  inline def apply(): CreateRowRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRowRequest]
   }
   
-  @scala.inline
-  implicit class CreateRowRequestMutableBuilder[Self <: CreateRowRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRowRequest](x: Self) {
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRow(value: Row): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Row): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

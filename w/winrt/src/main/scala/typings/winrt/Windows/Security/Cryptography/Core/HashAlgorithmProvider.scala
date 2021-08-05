@@ -10,8 +10,7 @@ trait HashAlgorithmProvider
      with IHashAlgorithmProvider
 object HashAlgorithmProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     algorithmName: String,
     createHash: () => CryptographicHash,
     hashData: IBuffer => IBuffer,

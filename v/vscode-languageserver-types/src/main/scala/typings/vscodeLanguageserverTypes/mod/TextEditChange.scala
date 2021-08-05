@@ -49,8 +49,7 @@ trait TextEditChange extends StObject {
 }
 object TextEditChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: TextEdit => Unit,
     all: () => js.Array[TextEdit],
     clear: () => Unit,
@@ -62,25 +61,18 @@ object TextEditChange {
     __obj.asInstanceOf[TextEditChange]
   }
   
-  @scala.inline
-  implicit class TextEditChangeMutableBuilder[Self <: TextEditChange] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditChange](x: Self) {
     
-    @scala.inline
-    def setAdd(value: TextEdit => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: TextEdit => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAll(value: () => js.Array[TextEdit]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
+    inline def setAll(value: () => js.Array[TextEdit]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: Range => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: Range => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsert(value: (Position, String) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+    inline def setInsert(value: (Position, String) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReplace(value: (Range, String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+    inline def setReplace(value: (Range, String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
   }
 }

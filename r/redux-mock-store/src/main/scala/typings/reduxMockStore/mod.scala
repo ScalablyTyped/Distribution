@@ -23,10 +23,8 @@ object mod {
     * @template S The type of state to be held by the store.
     * @template DispatchExts The additional Dispatch signatures for the middlewares applied.
     */
-  @scala.inline
-  def default[S, DispatchExts](): MockStoreCreator[S, DispatchExts] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[MockStoreCreator[S, DispatchExts]]
-  @scala.inline
-  def default[S, DispatchExts](middlewares: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]): MockStoreCreator[S, DispatchExts] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(middlewares.asInstanceOf[js.Any]).asInstanceOf[MockStoreCreator[S, DispatchExts]]
+  inline def default[S, DispatchExts](): MockStoreCreator[S, DispatchExts] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[MockStoreCreator[S, DispatchExts]]
+  inline def default[S, DispatchExts](middlewares: js.Array[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]): MockStoreCreator[S, DispatchExts] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(middlewares.asInstanceOf[js.Any]).asInstanceOf[MockStoreCreator[S, DispatchExts]]
   
   type MockGetState[S] = js.Function1[/* actions */ js.Array[AnyAction], S]
   

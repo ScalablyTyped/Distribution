@@ -54,8 +54,7 @@ object mod {
     }
   }
   
-  @scala.inline
-  def layout(graph: Graph): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def layout(graph: Graph): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("layout")(graph.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Edge extends StObject {
     
@@ -67,26 +66,20 @@ object mod {
   }
   object Edge {
     
-    @scala.inline
-    def apply(v: String, w: String): Edge = {
+    inline def apply(v: String, w: String): Edge = {
       val __obj = js.Dynamic.literal(v = v.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[Edge]
     }
     
-    @scala.inline
-    implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+    extension [Self <: Edge](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,86 +111,60 @@ object mod {
   }
   object GraphLabel {
     
-    @scala.inline
-    def apply(): GraphLabel = {
+    inline def apply(): GraphLabel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GraphLabel]
     }
     
-    @scala.inline
-    implicit class GraphLabelMutableBuilder[Self <: GraphLabel] (val x: Self) extends AnyVal {
+    extension [Self <: GraphLabel](x: Self) {
       
-      @scala.inline
-      def setAcyclicer(value: String): Self = StObject.set(x, "acyclicer", value.asInstanceOf[js.Any])
+      inline def setAcyclicer(value: String): Self = StObject.set(x, "acyclicer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcyclicerUndefined: Self = StObject.set(x, "acyclicer", js.undefined)
+      inline def setAcyclicerUndefined: Self = StObject.set(x, "acyclicer", js.undefined)
       
-      @scala.inline
-      def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setCompound(value: Boolean): Self = StObject.set(x, "compound", value.asInstanceOf[js.Any])
+      inline def setCompound(value: Boolean): Self = StObject.set(x, "compound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompoundUndefined: Self = StObject.set(x, "compound", js.undefined)
+      inline def setCompoundUndefined: Self = StObject.set(x, "compound", js.undefined)
       
-      @scala.inline
-      def setEdgesep(value: Double): Self = StObject.set(x, "edgesep", value.asInstanceOf[js.Any])
+      inline def setEdgesep(value: Double): Self = StObject.set(x, "edgesep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesepUndefined: Self = StObject.set(x, "edgesep", js.undefined)
+      inline def setEdgesepUndefined: Self = StObject.set(x, "edgesep", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMarginx(value: Double): Self = StObject.set(x, "marginx", value.asInstanceOf[js.Any])
+      inline def setMarginx(value: Double): Self = StObject.set(x, "marginx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginxUndefined: Self = StObject.set(x, "marginx", js.undefined)
+      inline def setMarginxUndefined: Self = StObject.set(x, "marginx", js.undefined)
       
-      @scala.inline
-      def setMarginy(value: Double): Self = StObject.set(x, "marginy", value.asInstanceOf[js.Any])
+      inline def setMarginy(value: Double): Self = StObject.set(x, "marginy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginyUndefined: Self = StObject.set(x, "marginy", js.undefined)
+      inline def setMarginyUndefined: Self = StObject.set(x, "marginy", js.undefined)
       
-      @scala.inline
-      def setNodesep(value: Double): Self = StObject.set(x, "nodesep", value.asInstanceOf[js.Any])
+      inline def setNodesep(value: Double): Self = StObject.set(x, "nodesep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesepUndefined: Self = StObject.set(x, "nodesep", js.undefined)
+      inline def setNodesepUndefined: Self = StObject.set(x, "nodesep", js.undefined)
       
-      @scala.inline
-      def setRankdir(value: String): Self = StObject.set(x, "rankdir", value.asInstanceOf[js.Any])
+      inline def setRankdir(value: String): Self = StObject.set(x, "rankdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankdirUndefined: Self = StObject.set(x, "rankdir", js.undefined)
+      inline def setRankdirUndefined: Self = StObject.set(x, "rankdir", js.undefined)
       
-      @scala.inline
-      def setRanker(value: String): Self = StObject.set(x, "ranker", value.asInstanceOf[js.Any])
+      inline def setRanker(value: String): Self = StObject.set(x, "ranker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRankerUndefined: Self = StObject.set(x, "ranker", js.undefined)
+      inline def setRankerUndefined: Self = StObject.set(x, "ranker", js.undefined)
       
-      @scala.inline
-      def setRanksep(value: Double): Self = StObject.set(x, "ranksep", value.asInstanceOf[js.Any])
+      inline def setRanksep(value: Double): Self = StObject.set(x, "ranksep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRanksepUndefined: Self = StObject.set(x, "ranksep", js.undefined)
+      inline def setRanksepUndefined: Self = StObject.set(x, "ranksep", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

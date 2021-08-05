@@ -12,19 +12,15 @@ trait GithubRepo extends StObject {
 }
 object GithubRepo {
   
-  @scala.inline
-  def apply(full_name: String, id: Double): GithubRepo = {
+  inline def apply(full_name: String, id: Double): GithubRepo = {
     val __obj = js.Dynamic.literal(full_name = full_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GithubRepo]
   }
   
-  @scala.inline
-  implicit class GithubRepoMutableBuilder[Self <: GithubRepo] (val x: Self) extends AnyVal {
+  extension [Self <: GithubRepo](x: Self) {
     
-    @scala.inline
-    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+    inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

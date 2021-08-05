@@ -89,21 +89,16 @@ object videoStreamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VideoStreamState): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VideoStreamState, opts: CustomResourceOptions): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
+    inline def get(name: String, id: Input[ID]): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
+    inline def get(name: String, id: Input[ID], state: VideoStreamState): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
+    inline def get(name: String, id: Input[ID], state: VideoStreamState, opts: CustomResourceOptions): VideoStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VideoStream]
     
     /**
       * Returns true if the given object is an instance of VideoStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/videoStream.VideoStream */ Boolean]
   }
   
   trait VideoStreamArgs extends StObject {
@@ -141,50 +136,36 @@ object videoStreamMod {
   }
   object VideoStreamArgs {
     
-    @scala.inline
-    def apply(): VideoStreamArgs = {
+    inline def apply(): VideoStreamArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VideoStreamArgs]
     }
     
-    @scala.inline
-    implicit class VideoStreamArgsMutableBuilder[Self <: VideoStreamArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VideoStreamArgs](x: Self) {
       
-      @scala.inline
-      def setDataRetentionInHours(value: Input[Double]): Self = StObject.set(x, "dataRetentionInHours", value.asInstanceOf[js.Any])
+      inline def setDataRetentionInHours(value: Input[Double]): Self = StObject.set(x, "dataRetentionInHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataRetentionInHoursUndefined: Self = StObject.set(x, "dataRetentionInHours", js.undefined)
+      inline def setDataRetentionInHoursUndefined: Self = StObject.set(x, "dataRetentionInHours", js.undefined)
       
-      @scala.inline
-      def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+      inline def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+      inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setMediaType(value: Input[String]): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: Input[String]): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+      inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -238,68 +219,48 @@ object videoStreamMod {
   }
   object VideoStreamState {
     
-    @scala.inline
-    def apply(): VideoStreamState = {
+    inline def apply(): VideoStreamState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VideoStreamState]
     }
     
-    @scala.inline
-    implicit class VideoStreamStateMutableBuilder[Self <: VideoStreamState] (val x: Self) extends AnyVal {
+    extension [Self <: VideoStreamState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCreationTime(value: Input[String]): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+      inline def setCreationTime(value: Input[String]): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+      inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
       
-      @scala.inline
-      def setDataRetentionInHours(value: Input[Double]): Self = StObject.set(x, "dataRetentionInHours", value.asInstanceOf[js.Any])
+      inline def setDataRetentionInHours(value: Input[Double]): Self = StObject.set(x, "dataRetentionInHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataRetentionInHoursUndefined: Self = StObject.set(x, "dataRetentionInHours", js.undefined)
+      inline def setDataRetentionInHoursUndefined: Self = StObject.set(x, "dataRetentionInHours", js.undefined)
       
-      @scala.inline
-      def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+      inline def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+      inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setMediaType(value: Input[String]): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      inline def setMediaType(value: Input[String]): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+      inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

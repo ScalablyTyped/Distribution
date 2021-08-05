@@ -12,16 +12,13 @@ trait PluginConvertShapeToPath
 }
 object PluginConvertShapeToPath {
   
-  @scala.inline
-  def apply(convertShapeToPath: Boolean | js.Object): PluginConvertShapeToPath = {
+  inline def apply(convertShapeToPath: Boolean | js.Object): PluginConvertShapeToPath = {
     val __obj = js.Dynamic.literal(convertShapeToPath = convertShapeToPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginConvertShapeToPath]
   }
   
-  @scala.inline
-  implicit class PluginConvertShapeToPathMutableBuilder[Self <: PluginConvertShapeToPath] (val x: Self) extends AnyVal {
+  extension [Self <: PluginConvertShapeToPath](x: Self) {
     
-    @scala.inline
-    def setConvertShapeToPath(value: Boolean | js.Object): Self = StObject.set(x, "convertShapeToPath", value.asInstanceOf[js.Any])
+    inline def setConvertShapeToPath(value: Boolean | js.Object): Self = StObject.set(x, "convertShapeToPath", value.asInstanceOf[js.Any])
   }
 }

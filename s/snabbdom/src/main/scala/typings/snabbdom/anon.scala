@@ -22,26 +22,20 @@ object anon {
   }
   object Delayed {
     
-    @scala.inline
-    def apply(): Delayed = {
+    inline def apply(): Delayed = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Delayed]
     }
     
-    @scala.inline
-    implicit class DelayedMutableBuilder[Self <: Delayed] (val x: Self) extends AnyVal {
+    extension [Self <: Delayed](x: Self) {
       
-      @scala.inline
-      def setDelayed(value: Record[String, String]): Self = StObject.set(x, "delayed", value.asInstanceOf[js.Any])
+      inline def setDelayed(value: Record[String, String]): Self = StObject.set(x, "delayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayedUndefined: Self = StObject.set(x, "delayed", js.undefined)
+      inline def setDelayedUndefined: Self = StObject.set(x, "delayed", js.undefined)
       
-      @scala.inline
-      def setRemove(value: Record[String, String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Record[String, String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     }
   }
   
@@ -62,50 +56,36 @@ object anon {
   }
   object PartialModule {
     
-    @scala.inline
-    def apply(): PartialModule = {
+    inline def apply(): PartialModule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialModule]
     }
     
-    @scala.inline
-    implicit class PartialModuleMutableBuilder[Self <: PartialModule] (val x: Self) extends AnyVal {
+    extension [Self <: PartialModule](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: /* vNode */ VNode_ => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      inline def setDestroy(value: /* vNode */ VNode_ => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setPost(value: () => js.Any): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
+      inline def setPost(value: () => js.Any): Self = StObject.set(x, "post", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+      inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      @scala.inline
-      def setPre(value: () => js.Any): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
+      inline def setPre(value: () => js.Any): Self = StObject.set(x, "pre", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+      inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
-      @scala.inline
-      def setRemove(value: (/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
+      inline def setRemove(value: (/* vNode */ VNode_, /* removeCallback */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (/* oldVNode */ VNode_, /* vNode */ VNode_) => js.Any): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
 }

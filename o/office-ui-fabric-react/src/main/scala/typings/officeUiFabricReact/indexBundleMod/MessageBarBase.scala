@@ -21,6 +21,5 @@ object MessageBarBase {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "MessageBarBase.defaultProps")
   @js.native
   def defaultProps: IMessageBarProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IMessageBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IMessageBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

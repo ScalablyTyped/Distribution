@@ -114,80 +114,56 @@ object v1beta1 {
   }
   object MutatingWebhook {
     
-    @scala.inline
-    def apply(clientConfig: Input[WebhookClientConfig], name: Input[String]): MutatingWebhook = {
+    inline def apply(clientConfig: Input[WebhookClientConfig], name: Input[String]): MutatingWebhook = {
       val __obj = js.Dynamic.literal(clientConfig = clientConfig.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[MutatingWebhook]
     }
     
-    @scala.inline
-    implicit class MutatingWebhookMutableBuilder[Self <: MutatingWebhook] (val x: Self) extends AnyVal {
+    extension [Self <: MutatingWebhook](x: Self) {
       
-      @scala.inline
-      def setAdmissionReviewVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "admissionReviewVersions", value.asInstanceOf[js.Any])
+      inline def setAdmissionReviewVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "admissionReviewVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdmissionReviewVersionsUndefined: Self = StObject.set(x, "admissionReviewVersions", js.undefined)
+      inline def setAdmissionReviewVersionsUndefined: Self = StObject.set(x, "admissionReviewVersions", js.undefined)
       
-      @scala.inline
-      def setAdmissionReviewVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "admissionReviewVersions", js.Array(value :_*))
+      inline def setAdmissionReviewVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "admissionReviewVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
+      inline def setClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailurePolicy(value: Input[String]): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
+      inline def setFailurePolicy(value: Input[String]): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailurePolicyUndefined: Self = StObject.set(x, "failurePolicy", js.undefined)
+      inline def setFailurePolicyUndefined: Self = StObject.set(x, "failurePolicy", js.undefined)
       
-      @scala.inline
-      def setMatchPolicy(value: Input[String]): Self = StObject.set(x, "matchPolicy", value.asInstanceOf[js.Any])
+      inline def setMatchPolicy(value: Input[String]): Self = StObject.set(x, "matchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchPolicyUndefined: Self = StObject.set(x, "matchPolicy", js.undefined)
+      inline def setMatchPolicyUndefined: Self = StObject.set(x, "matchPolicy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceSelector(value: Input[LabelSelector]): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
+      inline def setNamespaceSelector(value: Input[LabelSelector]): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceSelectorUndefined: Self = StObject.set(x, "namespaceSelector", js.undefined)
+      inline def setNamespaceSelectorUndefined: Self = StObject.set(x, "namespaceSelector", js.undefined)
       
-      @scala.inline
-      def setObjectSelector(value: Input[LabelSelector]): Self = StObject.set(x, "objectSelector", value.asInstanceOf[js.Any])
+      inline def setObjectSelector(value: Input[LabelSelector]): Self = StObject.set(x, "objectSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectSelectorUndefined: Self = StObject.set(x, "objectSelector", js.undefined)
+      inline def setObjectSelectorUndefined: Self = StObject.set(x, "objectSelector", js.undefined)
       
-      @scala.inline
-      def setReinvocationPolicy(value: Input[String]): Self = StObject.set(x, "reinvocationPolicy", value.asInstanceOf[js.Any])
+      inline def setReinvocationPolicy(value: Input[String]): Self = StObject.set(x, "reinvocationPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReinvocationPolicyUndefined: Self = StObject.set(x, "reinvocationPolicy", js.undefined)
+      inline def setReinvocationPolicyUndefined: Self = StObject.set(x, "reinvocationPolicy", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[RuleWithOperations]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[RuleWithOperations]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Input[RuleWithOperations]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[RuleWithOperations]*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setSideEffects(value: Input[String]): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
+      inline def setSideEffects(value: Input[String]): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideEffectsUndefined: Self = StObject.set(x, "sideEffects", js.undefined)
+      inline def setSideEffectsUndefined: Self = StObject.set(x, "sideEffects", js.undefined)
       
-      @scala.inline
-      def setTimeoutSeconds(value: Input[Double]): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setTimeoutSeconds(value: Input[Double]): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
+      inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
     }
   }
   
@@ -220,41 +196,30 @@ object v1beta1 {
   }
   object MutatingWebhookConfiguration {
     
-    @scala.inline
-    def apply(): MutatingWebhookConfiguration = {
+    inline def apply(): MutatingWebhookConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MutatingWebhookConfiguration]
     }
     
-    @scala.inline
-    implicit class MutatingWebhookConfigurationMutableBuilder[Self <: MutatingWebhookConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: MutatingWebhookConfiguration](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[admissionregistrationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[admissionregistrationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.MutatingWebhookConfiguration]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.MutatingWebhookConfiguration]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setWebhooks(value: Input[js.Array[Input[MutatingWebhook]]]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
+      inline def setWebhooks(value: Input[js.Array[Input[MutatingWebhook]]]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
+      inline def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
       
-      @scala.inline
-      def setWebhooksVarargs(value: Input[MutatingWebhook]*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
+      inline def setWebhooksVarargs(value: Input[MutatingWebhook]*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
     }
   }
   
@@ -296,56 +261,40 @@ object v1beta1 {
   }
   object RuleWithOperations {
     
-    @scala.inline
-    def apply(): RuleWithOperations = {
+    inline def apply(): RuleWithOperations = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RuleWithOperations]
     }
     
-    @scala.inline
-    implicit class RuleWithOperationsMutableBuilder[Self <: RuleWithOperations] (val x: Self) extends AnyVal {
+    extension [Self <: RuleWithOperations](x: Self) {
       
-      @scala.inline
-      def setApiGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiGroups", value.asInstanceOf[js.Any])
+      inline def setApiGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiGroupsUndefined: Self = StObject.set(x, "apiGroups", js.undefined)
+      inline def setApiGroupsUndefined: Self = StObject.set(x, "apiGroups", js.undefined)
       
-      @scala.inline
-      def setApiGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "apiGroups", js.Array(value :_*))
+      inline def setApiGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "apiGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setApiVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
+      inline def setApiVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "apiVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionsUndefined: Self = StObject.set(x, "apiVersions", js.undefined)
+      inline def setApiVersionsUndefined: Self = StObject.set(x, "apiVersions", js.undefined)
       
-      @scala.inline
-      def setApiVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
+      inline def setApiVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "apiVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setOperations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      inline def setOperations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+      inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
       
-      @scala.inline
-      def setOperationsVarargs(value: Input[String]*): Self = StObject.set(x, "operations", js.Array(value :_*))
+      inline def setOperationsVarargs(value: Input[String]*): Self = StObject.set(x, "operations", js.Array(value :_*))
       
-      @scala.inline
-      def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+      inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
       
-      @scala.inline
-      def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: Input[String]*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -376,32 +325,24 @@ object v1beta1 {
   }
   object ServiceReference {
     
-    @scala.inline
-    def apply(name: Input[String], namespace: Input[String]): ServiceReference = {
+    inline def apply(name: Input[String], namespace: Input[String]): ServiceReference = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceReference]
     }
     
-    @scala.inline
-    implicit class ServiceReferenceMutableBuilder[Self <: ServiceReference] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceReference](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -498,74 +439,52 @@ object v1beta1 {
   }
   object ValidatingWebhook {
     
-    @scala.inline
-    def apply(clientConfig: Input[WebhookClientConfig], name: Input[String]): ValidatingWebhook = {
+    inline def apply(clientConfig: Input[WebhookClientConfig], name: Input[String]): ValidatingWebhook = {
       val __obj = js.Dynamic.literal(clientConfig = clientConfig.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidatingWebhook]
     }
     
-    @scala.inline
-    implicit class ValidatingWebhookMutableBuilder[Self <: ValidatingWebhook] (val x: Self) extends AnyVal {
+    extension [Self <: ValidatingWebhook](x: Self) {
       
-      @scala.inline
-      def setAdmissionReviewVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "admissionReviewVersions", value.asInstanceOf[js.Any])
+      inline def setAdmissionReviewVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "admissionReviewVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdmissionReviewVersionsUndefined: Self = StObject.set(x, "admissionReviewVersions", js.undefined)
+      inline def setAdmissionReviewVersionsUndefined: Self = StObject.set(x, "admissionReviewVersions", js.undefined)
       
-      @scala.inline
-      def setAdmissionReviewVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "admissionReviewVersions", js.Array(value :_*))
+      inline def setAdmissionReviewVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "admissionReviewVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
+      inline def setClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailurePolicy(value: Input[String]): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
+      inline def setFailurePolicy(value: Input[String]): Self = StObject.set(x, "failurePolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailurePolicyUndefined: Self = StObject.set(x, "failurePolicy", js.undefined)
+      inline def setFailurePolicyUndefined: Self = StObject.set(x, "failurePolicy", js.undefined)
       
-      @scala.inline
-      def setMatchPolicy(value: Input[String]): Self = StObject.set(x, "matchPolicy", value.asInstanceOf[js.Any])
+      inline def setMatchPolicy(value: Input[String]): Self = StObject.set(x, "matchPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchPolicyUndefined: Self = StObject.set(x, "matchPolicy", js.undefined)
+      inline def setMatchPolicyUndefined: Self = StObject.set(x, "matchPolicy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceSelector(value: Input[LabelSelector]): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
+      inline def setNamespaceSelector(value: Input[LabelSelector]): Self = StObject.set(x, "namespaceSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceSelectorUndefined: Self = StObject.set(x, "namespaceSelector", js.undefined)
+      inline def setNamespaceSelectorUndefined: Self = StObject.set(x, "namespaceSelector", js.undefined)
       
-      @scala.inline
-      def setObjectSelector(value: Input[LabelSelector]): Self = StObject.set(x, "objectSelector", value.asInstanceOf[js.Any])
+      inline def setObjectSelector(value: Input[LabelSelector]): Self = StObject.set(x, "objectSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectSelectorUndefined: Self = StObject.set(x, "objectSelector", js.undefined)
+      inline def setObjectSelectorUndefined: Self = StObject.set(x, "objectSelector", js.undefined)
       
-      @scala.inline
-      def setRules(value: Input[js.Array[Input[RuleWithOperations]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: Input[js.Array[Input[RuleWithOperations]]]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Input[RuleWithOperations]*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Input[RuleWithOperations]*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setSideEffects(value: Input[String]): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
+      inline def setSideEffects(value: Input[String]): Self = StObject.set(x, "sideEffects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSideEffectsUndefined: Self = StObject.set(x, "sideEffects", js.undefined)
+      inline def setSideEffectsUndefined: Self = StObject.set(x, "sideEffects", js.undefined)
       
-      @scala.inline
-      def setTimeoutSeconds(value: Input[Double]): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setTimeoutSeconds(value: Input[Double]): Self = StObject.set(x, "timeoutSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
+      inline def setTimeoutSecondsUndefined: Self = StObject.set(x, "timeoutSeconds", js.undefined)
     }
   }
   
@@ -598,41 +517,30 @@ object v1beta1 {
   }
   object ValidatingWebhookConfiguration {
     
-    @scala.inline
-    def apply(): ValidatingWebhookConfiguration = {
+    inline def apply(): ValidatingWebhookConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidatingWebhookConfiguration]
     }
     
-    @scala.inline
-    implicit class ValidatingWebhookConfigurationMutableBuilder[Self <: ValidatingWebhookConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ValidatingWebhookConfiguration](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[admissionregistrationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[admissionregistrationDotk8sDotioSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ValidatingWebhookConfiguration]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ValidatingWebhookConfiguration]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setWebhooks(value: Input[js.Array[Input[ValidatingWebhook]]]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
+      inline def setWebhooks(value: Input[js.Array[Input[ValidatingWebhook]]]): Self = StObject.set(x, "webhooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
+      inline def setWebhooksUndefined: Self = StObject.set(x, "webhooks", js.undefined)
       
-      @scala.inline
-      def setWebhooksVarargs(value: Input[ValidatingWebhook]*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
+      inline def setWebhooksVarargs(value: Input[ValidatingWebhook]*): Self = StObject.set(x, "webhooks", js.Array(value :_*))
     }
   }
   
@@ -670,32 +578,24 @@ object v1beta1 {
   }
   object WebhookClientConfig {
     
-    @scala.inline
-    def apply(): WebhookClientConfig = {
+    inline def apply(): WebhookClientConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebhookClientConfig]
     }
     
-    @scala.inline
-    implicit class WebhookClientConfigMutableBuilder[Self <: WebhookClientConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookClientConfig](x: Self) {
       
-      @scala.inline
-      def setCaBundle(value: Input[String]): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
+      inline def setCaBundle(value: Input[String]): Self = StObject.set(x, "caBundle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaBundleUndefined: Self = StObject.set(x, "caBundle", js.undefined)
+      inline def setCaBundleUndefined: Self = StObject.set(x, "caBundle", js.undefined)
       
-      @scala.inline
-      def setService(value: Input[ServiceReference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+      inline def setService(value: Input[ServiceReference]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+      inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
       
-      @scala.inline
-      def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

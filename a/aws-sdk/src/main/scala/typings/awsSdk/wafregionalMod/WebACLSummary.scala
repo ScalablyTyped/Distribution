@@ -18,19 +18,15 @@ trait WebACLSummary extends StObject {
 }
 object WebACLSummary {
   
-  @scala.inline
-  def apply(Name: ResourceName, WebACLId: ResourceId): WebACLSummary = {
+  inline def apply(Name: ResourceName, WebACLId: ResourceId): WebACLSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], WebACLId = WebACLId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebACLSummary]
   }
   
-  @scala.inline
-  implicit class WebACLSummaryMutableBuilder[Self <: WebACLSummary] (val x: Self) extends AnyVal {
+  extension [Self <: WebACLSummary](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
+    inline def setWebACLId(value: ResourceId): Self = StObject.set(x, "WebACLId", value.asInstanceOf[js.Any])
   }
 }

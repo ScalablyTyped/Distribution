@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Endnote")
 @js.native
-class Endnote protected ()
+/* private */ class Endnote ()
   extends StObject
      with typings.activexWord.Word.Endnote {
   
@@ -31,7 +31,7 @@ class Endnote protected ()
   /* CompleteClass */
   override val Reference: typings.activexWord.Word.Range = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Endnote_typekey")
   var WordDotEndnote_typekey: typings.activexWord.Word.Endnote = js.native
 }

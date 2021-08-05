@@ -18,22 +18,17 @@ trait Ec2Config extends StObject {
 }
 object Ec2Config {
   
-  @scala.inline
-  def apply(SecurityGroupArns: Ec2SecurityGroupArnList, SubnetArn: Ec2SubnetArn): Ec2Config = {
+  inline def apply(SecurityGroupArns: Ec2SecurityGroupArnList, SubnetArn: Ec2SubnetArn): Ec2Config = {
     val __obj = js.Dynamic.literal(SecurityGroupArns = SecurityGroupArns.asInstanceOf[js.Any], SubnetArn = SubnetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ec2Config]
   }
   
-  @scala.inline
-  implicit class Ec2ConfigMutableBuilder[Self <: Ec2Config] (val x: Self) extends AnyVal {
+  extension [Self <: Ec2Config](x: Self) {
     
-    @scala.inline
-    def setSecurityGroupArns(value: Ec2SecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupArns(value: Ec2SecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
+    inline def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetArn(value: Ec2SubnetArn): Self = StObject.set(x, "SubnetArn", value.asInstanceOf[js.Any])
+    inline def setSubnetArn(value: Ec2SubnetArn): Self = StObject.set(x, "SubnetArn", value.asInstanceOf[js.Any])
   }
 }

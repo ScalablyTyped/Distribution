@@ -24,25 +24,19 @@ trait OGCFeatureLayerViewProperties
 }
 object OGCFeatureLayerViewProperties {
   
-  @scala.inline
-  def apply(): OGCFeatureLayerViewProperties = {
+  inline def apply(): OGCFeatureLayerViewProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OGCFeatureLayerViewProperties]
   }
   
-  @scala.inline
-  implicit class OGCFeatureLayerViewPropertiesMutableBuilder[Self <: OGCFeatureLayerViewProperties] (val x: Self) extends AnyVal {
+  extension [Self <: OGCFeatureLayerViewProperties](x: Self) {
     
-    @scala.inline
-    def setEffect(value: FeatureEffectProperties): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: FeatureEffectProperties): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+    inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
-    @scala.inline
-    def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

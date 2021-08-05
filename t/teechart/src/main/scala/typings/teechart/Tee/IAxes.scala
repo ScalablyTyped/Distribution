@@ -24,8 +24,7 @@ trait IAxes extends StObject {
 }
 object IAxes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (Boolean, Boolean) => IAxis,
     bottom: IAxis,
     chart: IChart,
@@ -39,34 +38,24 @@ object IAxes {
     __obj.asInstanceOf[IAxes]
   }
   
-  @scala.inline
-  implicit class IAxesMutableBuilder[Self <: IAxes] (val x: Self) extends AnyVal {
+  extension [Self <: IAxes](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Boolean, Boolean) => IAxis): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Boolean, Boolean) => IAxis): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBottom(value: IAxis): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: IAxis): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[IAxis]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[IAxis]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: IAxis*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IAxis*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLeft(value: IAxis): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: IAxis): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: IAxis): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: IAxis): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: IAxis): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: IAxis): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

@@ -27,8 +27,7 @@ object altMod {
   }
   object Alt {
     
-    @scala.inline
-    def apply[F](
+    inline def apply[F](
       URI: F,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any
@@ -39,11 +38,9 @@ object altMod {
       __obj.asInstanceOf[Alt[F]]
     }
     
-    @scala.inline
-    implicit class AltMutableBuilder[Self <: Alt[?], F] (val x: Self & Alt[F]) extends AnyVal {
+    extension [Self <: Alt[?], F](x: Self & Alt[F]) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any, Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ js.Any
             ]) => js.Any
@@ -64,8 +61,7 @@ object altMod {
   }
   object Alt1 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: F,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any
@@ -76,11 +72,9 @@ object altMod {
       __obj.asInstanceOf[Alt1[F]]
     }
     
-    @scala.inline
-    implicit class Alt1MutableBuilder[Self <: Alt1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & Alt1[F]) extends AnyVal {
+    extension [Self <: Alt1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & Alt1[F]) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any
             ]) => js.Any
@@ -101,8 +95,7 @@ object altMod {
   }
   object Alt2 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: F,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
@@ -113,11 +106,9 @@ object altMod {
       __obj.asInstanceOf[Alt2[F]]
     }
     
-    @scala.inline
-    implicit class Alt2MutableBuilder[Self <: Alt2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & Alt2[F]) extends AnyVal {
+    extension [Self <: Alt2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & Alt2[F]) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
             ]) => js.Any
@@ -138,8 +129,7 @@ object altMod {
   }
   object Alt2C {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: F,
       _E: E,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, Lazy[
@@ -151,11 +141,9 @@ object altMod {
       __obj.asInstanceOf[Alt2C[F, E]]
     }
     
-    @scala.inline
-    implicit class Alt2CMutableBuilder[Self <: Alt2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (Alt2C[F, E])) extends AnyVal {
+    extension [Self <: Alt2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (Alt2C[F, E])) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any
             ]) => js.Any
@@ -176,8 +164,7 @@ object altMod {
   }
   object Alt3 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: F,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any
@@ -188,11 +175,9 @@ object altMod {
       __obj.asInstanceOf[Alt3[F]]
     }
     
-    @scala.inline
-    implicit class Alt3MutableBuilder[Self <: Alt3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & Alt3[F]) extends AnyVal {
+    extension [Self <: Alt3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & Alt3[F]) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any
             ]) => js.Any
@@ -213,8 +198,7 @@ object altMod {
   }
   object Alt3C {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
       URI: F,
       _E: E,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, Lazy[
@@ -226,11 +210,9 @@ object altMod {
       __obj.asInstanceOf[Alt3C[F, E]]
     }
     
-    @scala.inline
-    implicit class Alt3CMutableBuilder[Self <: Alt3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (Alt3C[F, E])) extends AnyVal {
+    extension [Self <: Alt3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (Alt3C[F, E])) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any
             ]) => js.Any
@@ -251,8 +233,7 @@ object altMod {
   }
   object Alt4 {
     
-    @scala.inline
-    def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: F,
       alt: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, Lazy[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any
@@ -263,11 +244,9 @@ object altMod {
       __obj.asInstanceOf[Alt4[F]]
     }
     
-    @scala.inline
-    implicit class Alt4MutableBuilder[Self <: Alt4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & Alt4[F]) extends AnyVal {
+    extension [Self <: Alt4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & Alt4[F]) {
       
-      @scala.inline
-      def setAlt(
+      inline def setAlt(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, Lazy[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any
             ]) => js.Any

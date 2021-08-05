@@ -33,8 +33,7 @@ trait Voice extends StObject {
 }
 object Voice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customizable: Boolean,
     description: String,
     gender: String,
@@ -47,34 +46,24 @@ object Voice {
     __obj.asInstanceOf[Voice]
   }
   
-  @scala.inline
-  implicit class VoiceMutableBuilder[Self <: Voice] (val x: Self) extends AnyVal {
+  extension [Self <: Voice](x: Self) {
     
-    @scala.inline
-    def setCustomizable(value: Boolean): Self = StObject.set(x, "customizable", value.asInstanceOf[js.Any])
+    inline def setCustomizable(value: Boolean): Self = StObject.set(x, "customizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomization(value: VoiceModel): Self = StObject.set(x, "customization", value.asInstanceOf[js.Any])
+    inline def setCustomization(value: VoiceModel): Self = StObject.set(x, "customization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomizationUndefined: Self = StObject.set(x, "customization", js.undefined)
+    inline def setCustomizationUndefined: Self = StObject.set(x, "customization", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported_features(value: SupportedFeatures): Self = StObject.set(x, "supported_features", value.asInstanceOf[js.Any])
+    inline def setSupported_features(value: SupportedFeatures): Self = StObject.set(x, "supported_features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

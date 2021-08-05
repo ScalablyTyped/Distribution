@@ -43,8 +43,7 @@ trait AssetModelSummary extends StObject {
 }
 object AssetModelSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arn: ARN,
     creationDate: Timestamp,
     description: Description,
@@ -57,28 +56,20 @@ object AssetModelSummary {
     __obj.asInstanceOf[AssetModelSummary]
   }
   
-  @scala.inline
-  implicit class AssetModelSummaryMutableBuilder[Self <: AssetModelSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AssetModelSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: AssetModelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AssetModelStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

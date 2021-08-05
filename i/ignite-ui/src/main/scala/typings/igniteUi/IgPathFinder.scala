@@ -16,19 +16,15 @@ trait IgPathFinder
 }
 object IgPathFinder {
   
-  @scala.inline
-  def apply(): IgPathFinder = {
+  inline def apply(): IgPathFinder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPathFinder]
   }
   
-  @scala.inline
-  implicit class IgPathFinderMutableBuilder[Self <: IgPathFinder] (val x: Self) extends AnyVal {
+  extension [Self <: IgPathFinder](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
   }
 }

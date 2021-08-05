@@ -29,8 +29,7 @@ object dropdownSearchInputMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object DropdownSearchInputProps {
     
-    @scala.inline
-    def apply(): DropdownSearchInputProps = {
+    inline def apply(): DropdownSearchInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropdownSearchInputProps]
     }
@@ -58,50 +57,36 @@ object dropdownSearchInputMod extends Shortcut {
   }
   object StrictDropdownSearchInputProps {
     
-    @scala.inline
-    def apply(): StrictDropdownSearchInputProps = {
+    inline def apply(): StrictDropdownSearchInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictDropdownSearchInputProps]
     }
     
-    @scala.inline
-    implicit class StrictDropdownSearchInputPropsMutableBuilder[Self <: StrictDropdownSearchInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictDropdownSearchInputProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+      inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+      inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double | String): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double | String): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

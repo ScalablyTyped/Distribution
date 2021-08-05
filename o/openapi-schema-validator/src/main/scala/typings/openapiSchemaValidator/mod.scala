@@ -23,7 +23,7 @@ object mod {
     /* CompleteClass */
     override def validate(doc: Document): OpenAPISchemaValidatorResult = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var validator: js.Any = js.native
   }
   
@@ -37,17 +37,14 @@ object mod {
   }
   object IOpenAPISchemaValidator {
     
-    @scala.inline
-    def apply(validate: Document => OpenAPISchemaValidatorResult): IOpenAPISchemaValidator = {
+    inline def apply(validate: Document => OpenAPISchemaValidatorResult): IOpenAPISchemaValidator = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate))
       __obj.asInstanceOf[IOpenAPISchemaValidator]
     }
     
-    @scala.inline
-    implicit class IOpenAPISchemaValidatorMutableBuilder[Self <: IOpenAPISchemaValidator] (val x: Self) extends AnyVal {
+    extension [Self <: IOpenAPISchemaValidator](x: Self) {
       
-      @scala.inline
-      def setValidate(value: Document => OpenAPISchemaValidatorResult): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: Document => OpenAPISchemaValidatorResult): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }
   }
   
@@ -55,21 +52,18 @@ object mod {
     extends StObject
        with IOpenAPISchemaValidator {
     
-    var validator: js.Any
+    /* private */ var validator: js.Any
   }
   object OpenAPISchemaValidator {
     
-    @scala.inline
-    def apply(validate: Document => OpenAPISchemaValidatorResult, validator: js.Any): OpenAPISchemaValidator = {
+    inline def apply(validate: Document => OpenAPISchemaValidatorResult, validator: js.Any): OpenAPISchemaValidator = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate), validator = validator.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPISchemaValidator]
     }
     
-    @scala.inline
-    implicit class OpenAPISchemaValidatorMutableBuilder[Self <: OpenAPISchemaValidator] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPISchemaValidator](x: Self) {
       
-      @scala.inline
-      def setValidator(value: js.Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: js.Any): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,23 +75,18 @@ object mod {
   }
   object OpenAPISchemaValidatorArgs {
     
-    @scala.inline
-    def apply(version: Double | String): OpenAPISchemaValidatorArgs = {
+    inline def apply(version: Double | String): OpenAPISchemaValidatorArgs = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPISchemaValidatorArgs]
     }
     
-    @scala.inline
-    implicit class OpenAPISchemaValidatorArgsMutableBuilder[Self <: OpenAPISchemaValidatorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPISchemaValidatorArgs](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: IJsonSchema): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: IJsonSchema): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double | String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double | String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,20 +96,16 @@ object mod {
   }
   object OpenAPISchemaValidatorResult {
     
-    @scala.inline
-    def apply(errors: js.Array[ErrorObject]): OpenAPISchemaValidatorResult = {
+    inline def apply(errors: js.Array[ErrorObject]): OpenAPISchemaValidatorResult = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpenAPISchemaValidatorResult]
     }
     
-    @scala.inline
-    implicit class OpenAPISchemaValidatorResultMutableBuilder[Self <: OpenAPISchemaValidatorResult] (val x: Self) extends AnyVal {
+    extension [Self <: OpenAPISchemaValidatorResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[ErrorObject]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[ErrorObject]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: ErrorObject*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ErrorObject*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
 }

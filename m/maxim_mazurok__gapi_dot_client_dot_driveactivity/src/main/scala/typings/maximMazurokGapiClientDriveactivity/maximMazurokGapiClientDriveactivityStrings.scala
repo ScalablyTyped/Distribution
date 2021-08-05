@@ -8,11 +8,9 @@ object maximMazurokGapiClientDriveactivityStrings {
   
   @js.native
   sealed trait driveactivity extends StObject
-  @scala.inline
-  def driveactivity: driveactivity = "driveactivity".asInstanceOf[driveactivity]
+  inline def driveactivity: driveactivity = "driveactivity".asInstanceOf[driveactivity]
   
   @js.native
   sealed trait v2 extends StObject
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
+  inline def v2: v2 = "v2".asInstanceOf[v2]
 }

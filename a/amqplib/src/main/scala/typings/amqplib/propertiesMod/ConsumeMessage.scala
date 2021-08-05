@@ -14,16 +14,13 @@ trait ConsumeMessage
 }
 object ConsumeMessage {
   
-  @scala.inline
-  def apply(content: Buffer, fields: ConsumeMessageFields, properties: MessageProperties): ConsumeMessage = {
+  inline def apply(content: Buffer, fields: ConsumeMessageFields, properties: MessageProperties): ConsumeMessage = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsumeMessage]
   }
   
-  @scala.inline
-  implicit class ConsumeMessageMutableBuilder[Self <: ConsumeMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ConsumeMessage](x: Self) {
     
-    @scala.inline
-    def setFields(value: ConsumeMessageFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: ConsumeMessageFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }
 }

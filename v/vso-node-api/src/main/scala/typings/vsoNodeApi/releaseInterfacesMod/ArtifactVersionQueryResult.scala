@@ -10,19 +10,15 @@ trait ArtifactVersionQueryResult extends StObject {
 }
 object ArtifactVersionQueryResult {
   
-  @scala.inline
-  def apply(artifactVersions: js.Array[ArtifactVersion]): ArtifactVersionQueryResult = {
+  inline def apply(artifactVersions: js.Array[ArtifactVersion]): ArtifactVersionQueryResult = {
     val __obj = js.Dynamic.literal(artifactVersions = artifactVersions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactVersionQueryResult]
   }
   
-  @scala.inline
-  implicit class ArtifactVersionQueryResultMutableBuilder[Self <: ArtifactVersionQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactVersionQueryResult](x: Self) {
     
-    @scala.inline
-    def setArtifactVersions(value: js.Array[ArtifactVersion]): Self = StObject.set(x, "artifactVersions", value.asInstanceOf[js.Any])
+    inline def setArtifactVersions(value: js.Array[ArtifactVersion]): Self = StObject.set(x, "artifactVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactVersionsVarargs(value: ArtifactVersion*): Self = StObject.set(x, "artifactVersions", js.Array(value :_*))
+    inline def setArtifactVersionsVarargs(value: ArtifactVersion*): Self = StObject.set(x, "artifactVersions", js.Array(value :_*))
   }
 }

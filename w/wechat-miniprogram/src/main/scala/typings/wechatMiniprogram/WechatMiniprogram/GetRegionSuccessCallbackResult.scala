@@ -16,22 +16,17 @@ trait GetRegionSuccessCallbackResult extends StObject {
 }
 object GetRegionSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, northeast: MapPostion, southwest: MapPostion): GetRegionSuccessCallbackResult = {
+  inline def apply(errMsg: String, northeast: MapPostion, southwest: MapPostion): GetRegionSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], northeast = northeast.asInstanceOf[js.Any], southwest = southwest.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRegionSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetRegionSuccessCallbackResultMutableBuilder[Self <: GetRegionSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRegionSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNortheast(value: MapPostion): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
+    inline def setNortheast(value: MapPostion): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSouthwest(value: MapPostion): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
+    inline def setSouthwest(value: MapPostion): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
   }
 }

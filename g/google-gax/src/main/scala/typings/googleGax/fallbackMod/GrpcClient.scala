@@ -68,7 +68,7 @@ class GrpcClient () extends StObject {
   
   var fallback: Boolean = js.native
   
-  var getServiceMethods: js.Any = js.native
+  /* private */ var getServiceMethods: js.Any = js.native
   
   var grpcVersion: String = js.native
   

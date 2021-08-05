@@ -32,37 +32,27 @@ trait VolumeProjection extends StObject {
 }
 object VolumeProjection {
   
-  @scala.inline
-  def apply(): VolumeProjection = {
+  inline def apply(): VolumeProjection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeProjection]
   }
   
-  @scala.inline
-  implicit class VolumeProjectionMutableBuilder[Self <: VolumeProjection] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeProjection](x: Self) {
     
-    @scala.inline
-    def setConfigMap(value: Input[ConfigMapProjection]): Self = StObject.set(x, "configMap", value.asInstanceOf[js.Any])
+    inline def setConfigMap(value: Input[ConfigMapProjection]): Self = StObject.set(x, "configMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigMapUndefined: Self = StObject.set(x, "configMap", js.undefined)
+    inline def setConfigMapUndefined: Self = StObject.set(x, "configMap", js.undefined)
     
-    @scala.inline
-    def setDownwardAPI(value: Input[DownwardAPIProjection]): Self = StObject.set(x, "downwardAPI", value.asInstanceOf[js.Any])
+    inline def setDownwardAPI(value: Input[DownwardAPIProjection]): Self = StObject.set(x, "downwardAPI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownwardAPIUndefined: Self = StObject.set(x, "downwardAPI", js.undefined)
+    inline def setDownwardAPIUndefined: Self = StObject.set(x, "downwardAPI", js.undefined)
     
-    @scala.inline
-    def setSecret(value: Input[SecretProjection]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: Input[SecretProjection]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    @scala.inline
-    def setServiceAccountToken(value: Input[ServiceAccountTokenProjection]): Self = StObject.set(x, "serviceAccountToken", value.asInstanceOf[js.Any])
+    inline def setServiceAccountToken(value: Input[ServiceAccountTokenProjection]): Self = StObject.set(x, "serviceAccountToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountTokenUndefined: Self = StObject.set(x, "serviceAccountToken", js.undefined)
+    inline def setServiceAccountTokenUndefined: Self = StObject.set(x, "serviceAccountToken", js.undefined)
   }
 }

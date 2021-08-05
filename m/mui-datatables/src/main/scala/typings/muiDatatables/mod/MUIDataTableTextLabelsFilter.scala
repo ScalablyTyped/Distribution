@@ -14,22 +14,17 @@ trait MUIDataTableTextLabelsFilter extends StObject {
 }
 object MUIDataTableTextLabelsFilter {
   
-  @scala.inline
-  def apply(all: String, reset: String, title: String): MUIDataTableTextLabelsFilter = {
+  inline def apply(all: String, reset: String, title: String): MUIDataTableTextLabelsFilter = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableTextLabelsFilter]
   }
   
-  @scala.inline
-  implicit class MUIDataTableTextLabelsFilterMutableBuilder[Self <: MUIDataTableTextLabelsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableTextLabelsFilter](x: Self) {
     
-    @scala.inline
-    def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

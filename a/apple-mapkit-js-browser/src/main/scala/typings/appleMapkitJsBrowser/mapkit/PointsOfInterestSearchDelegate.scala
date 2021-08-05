@@ -22,25 +22,19 @@ trait PointsOfInterestSearchDelegate extends StObject {
 }
 object PointsOfInterestSearchDelegate {
   
-  @scala.inline
-  def apply(): PointsOfInterestSearchDelegate = {
+  inline def apply(): PointsOfInterestSearchDelegate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointsOfInterestSearchDelegate]
   }
   
-  @scala.inline
-  implicit class PointsOfInterestSearchDelegateMutableBuilder[Self <: PointsOfInterestSearchDelegate] (val x: Self) extends AnyVal {
+  extension [Self <: PointsOfInterestSearchDelegate](x: Self) {
     
-    @scala.inline
-    def setSearchDidComplete(value: /* data */ PointsOfInterestSearchResponse => Unit): Self = StObject.set(x, "searchDidComplete", js.Any.fromFunction1(value))
+    inline def setSearchDidComplete(value: /* data */ PointsOfInterestSearchResponse => Unit): Self = StObject.set(x, "searchDidComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchDidCompleteUndefined: Self = StObject.set(x, "searchDidComplete", js.undefined)
+    inline def setSearchDidCompleteUndefined: Self = StObject.set(x, "searchDidComplete", js.undefined)
     
-    @scala.inline
-    def setSearchDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
+    inline def setSearchDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchDidErrorUndefined: Self = StObject.set(x, "searchDidError", js.undefined)
+    inline def setSearchDidErrorUndefined: Self = StObject.set(x, "searchDidError", js.undefined)
   }
 }

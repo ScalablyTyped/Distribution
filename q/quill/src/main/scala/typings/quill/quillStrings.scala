@@ -11,35 +11,29 @@ object quillStrings {
   sealed trait api
     extends StObject
        with Sources
-  @scala.inline
-  def api: api = "api".asInstanceOf[api]
+  inline def api: api = "api".asInstanceOf[api]
   
   @js.native
   sealed trait `editor-change` extends StObject
-  @scala.inline
-  def `editor-change`: `editor-change` = "editor-change".asInstanceOf[`editor-change`]
+  inline def `editor-change`: `editor-change` = "editor-change".asInstanceOf[`editor-change`]
   
   @js.native
   sealed trait `selection-change` extends StObject
-  @scala.inline
-  def `selection-change`: `selection-change` = "selection-change".asInstanceOf[`selection-change`]
+  inline def `selection-change`: `selection-change` = "selection-change".asInstanceOf[`selection-change`]
   
   @js.native
   sealed trait silent
     extends StObject
        with Sources
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
   sealed trait `text-change` extends StObject
-  @scala.inline
-  def `text-change`: `text-change` = "text-change".asInstanceOf[`text-change`]
+  inline def `text-change`: `text-change` = "text-change".asInstanceOf[`text-change`]
   
   @js.native
   sealed trait user
     extends StObject
        with Sources
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  inline def user: user = "user".asInstanceOf[user]
 }

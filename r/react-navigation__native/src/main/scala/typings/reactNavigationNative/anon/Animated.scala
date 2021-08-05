@@ -12,25 +12,19 @@ trait Animated extends StObject {
 }
 object Animated {
   
-  @scala.inline
-  def apply(): Animated = {
+  inline def apply(): Animated = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Animated]
   }
   
-  @scala.inline
-  implicit class AnimatedMutableBuilder[Self <: Animated] (val x: Self) extends AnyVal {
+  extension [Self <: Animated](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

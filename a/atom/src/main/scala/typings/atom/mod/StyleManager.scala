@@ -30,8 +30,7 @@ trait StyleManager extends StObject {
 }
 object StyleManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getStyleElements: () => js.Array[HTMLStyleElement],
     getUserStyleSheetPath: () => String,
     observeStyleElements: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable,
@@ -43,25 +42,18 @@ object StyleManager {
     __obj.asInstanceOf[StyleManager]
   }
   
-  @scala.inline
-  implicit class StyleManagerMutableBuilder[Self <: StyleManager] (val x: Self) extends AnyVal {
+  extension [Self <: StyleManager](x: Self) {
     
-    @scala.inline
-    def setGetStyleElements(value: () => js.Array[HTMLStyleElement]): Self = StObject.set(x, "getStyleElements", js.Any.fromFunction0(value))
+    inline def setGetStyleElements(value: () => js.Array[HTMLStyleElement]): Self = StObject.set(x, "getStyleElements", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUserStyleSheetPath(value: () => String): Self = StObject.set(x, "getUserStyleSheetPath", js.Any.fromFunction0(value))
+    inline def setGetUserStyleSheetPath(value: () => String): Self = StObject.set(x, "getUserStyleSheetPath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setObserveStyleElements(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = StObject.set(x, "observeStyleElements", js.Any.fromFunction1(value))
+    inline def setObserveStyleElements(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = StObject.set(x, "observeStyleElements", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidAddStyleElement(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidAddStyleElement", js.Any.fromFunction1(value))
+    inline def setOnDidAddStyleElement(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidAddStyleElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidRemoveStyleElement(value: js.Function1[/* styleElement */ HTMLStyleElement, Unit] => Disposable): Self = StObject.set(x, "onDidRemoveStyleElement", js.Any.fromFunction1(value))
+    inline def setOnDidRemoveStyleElement(value: js.Function1[/* styleElement */ HTMLStyleElement, Unit] => Disposable): Self = StObject.set(x, "onDidRemoveStyleElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDidUpdateStyleElement(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidUpdateStyleElement", js.Any.fromFunction1(value))
+    inline def setOnDidUpdateStyleElement(value: js.Function1[/* styleElement */ StyleElementObservedEvent, Unit] => Disposable): Self = StObject.set(x, "onDidUpdateStyleElement", js.Any.fromFunction1(value))
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TileLayout extends StObject
 object TileLayout {
   
-  @scala.inline
-  def dz: typings.sharp.sharpStrings.dz = "dz".asInstanceOf[typings.sharp.sharpStrings.dz]
+  inline def dz: typings.sharp.sharpStrings.dz = "dz".asInstanceOf[typings.sharp.sharpStrings.dz]
   
-  @scala.inline
-  def google: typings.sharp.sharpStrings.google = "google".asInstanceOf[typings.sharp.sharpStrings.google]
+  inline def google: typings.sharp.sharpStrings.google = "google".asInstanceOf[typings.sharp.sharpStrings.google]
   
-  @scala.inline
-  def iiif: typings.sharp.sharpStrings.iiif = "iiif".asInstanceOf[typings.sharp.sharpStrings.iiif]
+  inline def iiif: typings.sharp.sharpStrings.iiif = "iiif".asInstanceOf[typings.sharp.sharpStrings.iiif]
   
-  @scala.inline
-  def zoomify: typings.sharp.sharpStrings.zoomify = "zoomify".asInstanceOf[typings.sharp.sharpStrings.zoomify]
+  inline def zoomify: typings.sharp.sharpStrings.zoomify = "zoomify".asInstanceOf[typings.sharp.sharpStrings.zoomify]
 }

@@ -12,15 +12,13 @@ object showMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStructShow[O /* <: ReadonlyRecord_[String, js.Any] */](
+  inline def getStructShow[O /* <: ReadonlyRecord_[String, js.Any] */](
     shows: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof O ]: fp-ts.fp-ts/lib/Show.Show<O[K]>}
     */ typings.fpTs.fpTsStrings.getStructShow & TopLevel[O]
   ): Show[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStructShow")(shows.asInstanceOf[js.Any]).asInstanceOf[Show[O]]
   
-  @scala.inline
-  def getTupleShow[T /* <: js.Array[Show[js.Any]] */](
+  inline def getTupleShow[T /* <: js.Array[Show[js.Any]] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param shows because its type T is not an array type */ shows: T
   ): Show[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -50,17 +48,14 @@ object showMod {
   }
   object Show {
     
-    @scala.inline
-    def apply[A](show: A => String): Show[A] = {
+    inline def apply[A](show: A => String): Show[A] = {
       val __obj = js.Dynamic.literal(show = js.Any.fromFunction1(show))
       __obj.asInstanceOf[Show[A]]
     }
     
-    @scala.inline
-    implicit class ShowMutableBuilder[Self <: Show[?], A] (val x: Self & Show[A]) extends AnyVal {
+    extension [Self <: Show[?], A](x: Self & Show[A]) {
       
-      @scala.inline
-      def setShow(value: A => String): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      inline def setShow(value: A => String): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     }
   }
 }

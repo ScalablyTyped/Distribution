@@ -18,25 +18,19 @@ trait HandshakeFilter extends StObject {
 }
 object HandshakeFilter {
   
-  @scala.inline
-  def apply(): HandshakeFilter = {
+  inline def apply(): HandshakeFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HandshakeFilter]
   }
   
-  @scala.inline
-  implicit class HandshakeFilterMutableBuilder[Self <: HandshakeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: HandshakeFilter](x: Self) {
     
-    @scala.inline
-    def setActionType(value: ActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: ActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
     
-    @scala.inline
-    def setParentHandshakeId(value: HandshakeId): Self = StObject.set(x, "ParentHandshakeId", value.asInstanceOf[js.Any])
+    inline def setParentHandshakeId(value: HandshakeId): Self = StObject.set(x, "ParentHandshakeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentHandshakeIdUndefined: Self = StObject.set(x, "ParentHandshakeId", js.undefined)
+    inline def setParentHandshakeIdUndefined: Self = StObject.set(x, "ParentHandshakeId", js.undefined)
   }
 }

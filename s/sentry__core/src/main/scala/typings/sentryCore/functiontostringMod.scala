@@ -48,7 +48,6 @@ object functiontostringMod {
     @JSImport("@sentry/core/dist/integrations/functiontostring", "FunctionToString.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
 }

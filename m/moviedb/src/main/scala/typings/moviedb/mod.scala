@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(key: String): IMovieDB = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[IMovieDB]
+  inline def apply(key: String): IMovieDB = ^.asInstanceOf[js.Dynamic].apply(key.asInstanceOf[js.Any]).asInstanceOf[IMovieDB]
   
   @JSImport("moviedb", JSImport.Namespace)
   @js.native
@@ -25,20 +24,16 @@ object mod {
     }
     object Genre {
       
-      @scala.inline
-      def apply(id: Double, name: String): Genre = {
+      inline def apply(id: Double, name: String): Genre = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[Genre]
       }
       
-      @scala.inline
-      implicit class GenreMutableBuilder[Self <: Genre] (val x: Self) extends AnyVal {
+      extension [Self <: Genre](x: Self) {
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -52,8 +47,7 @@ object mod {
     }
     object IMovieDB {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         movieImages: (InfoOptions, js.Function2[/* err */ js.Any, /* images */ MovieImages, Unit]) => Unit,
         movieInfo: (InfoOptions, js.Function2[/* err */ js.Any, /* curMovie */ Movie, Unit]) => Unit,
         searchMovie: (SearchOptions, js.Function2[/* err */ js.Any, /* movies */ SearchResults, Unit]) => Unit
@@ -62,17 +56,13 @@ object mod {
         __obj.asInstanceOf[IMovieDB]
       }
       
-      @scala.inline
-      implicit class IMovieDBMutableBuilder[Self <: IMovieDB] (val x: Self) extends AnyVal {
+      extension [Self <: IMovieDB](x: Self) {
         
-        @scala.inline
-        def setMovieImages(value: (InfoOptions, js.Function2[/* err */ js.Any, /* images */ MovieImages, Unit]) => Unit): Self = StObject.set(x, "movieImages", js.Any.fromFunction2(value))
+        inline def setMovieImages(value: (InfoOptions, js.Function2[/* err */ js.Any, /* images */ MovieImages, Unit]) => Unit): Self = StObject.set(x, "movieImages", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setMovieInfo(value: (InfoOptions, js.Function2[/* err */ js.Any, /* curMovie */ Movie, Unit]) => Unit): Self = StObject.set(x, "movieInfo", js.Any.fromFunction2(value))
+        inline def setMovieInfo(value: (InfoOptions, js.Function2[/* err */ js.Any, /* curMovie */ Movie, Unit]) => Unit): Self = StObject.set(x, "movieInfo", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSearchMovie(value: (SearchOptions, js.Function2[/* err */ js.Any, /* movies */ SearchResults, Unit]) => Unit): Self = StObject.set(x, "searchMovie", js.Any.fromFunction2(value))
+        inline def setSearchMovie(value: (SearchOptions, js.Function2[/* err */ js.Any, /* movies */ SearchResults, Unit]) => Unit): Self = StObject.set(x, "searchMovie", js.Any.fromFunction2(value))
       }
     }
     
@@ -84,23 +74,18 @@ object mod {
     }
     object InfoOptions {
       
-      @scala.inline
-      def apply(id: Double): InfoOptions = {
+      inline def apply(id: Double): InfoOptions = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
         __obj.asInstanceOf[InfoOptions]
       }
       
-      @scala.inline
-      implicit class InfoOptionsMutableBuilder[Self <: InfoOptions] (val x: Self) extends AnyVal {
+      extension [Self <: InfoOptions](x: Self) {
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+        inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       }
     }
     
@@ -154,8 +139,7 @@ object mod {
     }
     object Movie {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         adult: Boolean,
         backdrop_path: String,
         belongs_to_collection: js.Any,
@@ -184,89 +168,61 @@ object mod {
         __obj.asInstanceOf[Movie]
       }
       
-      @scala.inline
-      implicit class MovieMutableBuilder[Self <: Movie] (val x: Self) extends AnyVal {
+      extension [Self <: Movie](x: Self) {
         
-        @scala.inline
-        def setAdult(value: Boolean): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
+        inline def setAdult(value: Boolean): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackdrop_path(value: String): Self = StObject.set(x, "backdrop_path", value.asInstanceOf[js.Any])
+        inline def setBackdrop_path(value: String): Self = StObject.set(x, "backdrop_path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBelongs_to_collection(value: js.Any): Self = StObject.set(x, "belongs_to_collection", value.asInstanceOf[js.Any])
+        inline def setBelongs_to_collection(value: js.Any): Self = StObject.set(x, "belongs_to_collection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBudget(value: Double): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
+        inline def setBudget(value: Double): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGenres(value: js.Array[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
+        inline def setGenres(value: js.Array[Genre]): Self = StObject.set(x, "genres", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGenresVarargs(value: Genre*): Self = StObject.set(x, "genres", js.Array(value :_*))
+        inline def setGenresVarargs(value: Genre*): Self = StObject.set(x, "genres", js.Array(value :_*))
         
-        @scala.inline
-        def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
+        inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImdb_id(value: Double): Self = StObject.set(x, "imdb_id", value.asInstanceOf[js.Any])
+        inline def setImdb_id(value: Double): Self = StObject.set(x, "imdb_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOriginal_title(value: String): Self = StObject.set(x, "original_title", value.asInstanceOf[js.Any])
+        inline def setOriginal_title(value: String): Self = StObject.set(x, "original_title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
+        inline def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
+        inline def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPoster_path(value: String): Self = StObject.set(x, "poster_path", value.asInstanceOf[js.Any])
+        inline def setPoster_path(value: String): Self = StObject.set(x, "poster_path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProduction_companies(value: js.Array[ProductionCompany]): Self = StObject.set(x, "production_companies", value.asInstanceOf[js.Any])
+        inline def setProduction_companies(value: js.Array[ProductionCompany]): Self = StObject.set(x, "production_companies", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProduction_companiesVarargs(value: ProductionCompany*): Self = StObject.set(x, "production_companies", js.Array(value :_*))
+        inline def setProduction_companiesVarargs(value: ProductionCompany*): Self = StObject.set(x, "production_companies", js.Array(value :_*))
         
-        @scala.inline
-        def setProduction_countries(value: js.Array[ProductionCountry]): Self = StObject.set(x, "production_countries", value.asInstanceOf[js.Any])
+        inline def setProduction_countries(value: js.Array[ProductionCountry]): Self = StObject.set(x, "production_countries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProduction_countriesVarargs(value: ProductionCountry*): Self = StObject.set(x, "production_countries", js.Array(value :_*))
+        inline def setProduction_countriesVarargs(value: ProductionCountry*): Self = StObject.set(x, "production_countries", js.Array(value :_*))
         
-        @scala.inline
-        def setRelease_date(value: Date): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
+        inline def setRelease_date(value: Date): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRevenue(value: Double): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
+        inline def setRevenue(value: Double): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+        inline def setRuntime(value: Double): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpoken_languages(value: js.Array[SpokenLanguage]): Self = StObject.set(x, "spoken_languages", value.asInstanceOf[js.Any])
+        inline def setSpoken_languages(value: js.Array[SpokenLanguage]): Self = StObject.set(x, "spoken_languages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpoken_languagesVarargs(value: SpokenLanguage*): Self = StObject.set(x, "spoken_languages", js.Array(value :_*))
+        inline def setSpoken_languagesVarargs(value: SpokenLanguage*): Self = StObject.set(x, "spoken_languages", js.Array(value :_*))
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagline(value: String): Self = StObject.set(x, "tagline", value.asInstanceOf[js.Any])
+        inline def setTagline(value: String): Self = StObject.set(x, "tagline", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVote_average(value: Double): Self = StObject.set(x, "vote_average", value.asInstanceOf[js.Any])
+        inline def setVote_average(value: Double): Self = StObject.set(x, "vote_average", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVote_count(value: Double): Self = StObject.set(x, "vote_count", value.asInstanceOf[js.Any])
+        inline def setVote_count(value: Double): Self = StObject.set(x, "vote_count", value.asInstanceOf[js.Any])
       }
     }
     
@@ -288,8 +244,7 @@ object mod {
     }
     object MovieImage {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         aspect_ratio: Double,
         file_path: String,
         height: Double,
@@ -302,29 +257,21 @@ object mod {
         __obj.asInstanceOf[MovieImage]
       }
       
-      @scala.inline
-      implicit class MovieImageMutableBuilder[Self <: MovieImage] (val x: Self) extends AnyVal {
+      extension [Self <: MovieImage](x: Self) {
         
-        @scala.inline
-        def setAspect_ratio(value: Double): Self = StObject.set(x, "aspect_ratio", value.asInstanceOf[js.Any])
+        inline def setAspect_ratio(value: Double): Self = StObject.set(x, "aspect_ratio", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFile_path(value: String): Self = StObject.set(x, "file_path", value.asInstanceOf[js.Any])
+        inline def setFile_path(value: String): Self = StObject.set(x, "file_path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIso_639_1(value: String): Self = StObject.set(x, "iso_639_1", value.asInstanceOf[js.Any])
+        inline def setIso_639_1(value: String): Self = StObject.set(x, "iso_639_1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVote_average(value: Double): Self = StObject.set(x, "vote_average", value.asInstanceOf[js.Any])
+        inline def setVote_average(value: Double): Self = StObject.set(x, "vote_average", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVote_count(value: Double): Self = StObject.set(x, "vote_count", value.asInstanceOf[js.Any])
+        inline def setVote_count(value: Double): Self = StObject.set(x, "vote_count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
     }
     
@@ -338,29 +285,22 @@ object mod {
     }
     object MovieImages {
       
-      @scala.inline
-      def apply(backdrops: js.Array[MovieImage], id: Double, posters: js.Array[MovieImage]): MovieImages = {
+      inline def apply(backdrops: js.Array[MovieImage], id: Double, posters: js.Array[MovieImage]): MovieImages = {
         val __obj = js.Dynamic.literal(backdrops = backdrops.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], posters = posters.asInstanceOf[js.Any])
         __obj.asInstanceOf[MovieImages]
       }
       
-      @scala.inline
-      implicit class MovieImagesMutableBuilder[Self <: MovieImages] (val x: Self) extends AnyVal {
+      extension [Self <: MovieImages](x: Self) {
         
-        @scala.inline
-        def setBackdrops(value: js.Array[MovieImage]): Self = StObject.set(x, "backdrops", value.asInstanceOf[js.Any])
+        inline def setBackdrops(value: js.Array[MovieImage]): Self = StObject.set(x, "backdrops", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackdropsVarargs(value: MovieImage*): Self = StObject.set(x, "backdrops", js.Array(value :_*))
+        inline def setBackdropsVarargs(value: MovieImage*): Self = StObject.set(x, "backdrops", js.Array(value :_*))
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPosters(value: js.Array[MovieImage]): Self = StObject.set(x, "posters", value.asInstanceOf[js.Any])
+        inline def setPosters(value: js.Array[MovieImage]): Self = StObject.set(x, "posters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPostersVarargs(value: MovieImage*): Self = StObject.set(x, "posters", js.Array(value :_*))
+        inline def setPostersVarargs(value: MovieImage*): Self = StObject.set(x, "posters", js.Array(value :_*))
       }
     }
     
@@ -372,20 +312,16 @@ object mod {
     }
     object ProductionCompany {
       
-      @scala.inline
-      def apply(id: Double, name: String): ProductionCompany = {
+      inline def apply(id: Double, name: String): ProductionCompany = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProductionCompany]
       }
       
-      @scala.inline
-      implicit class ProductionCompanyMutableBuilder[Self <: ProductionCompany] (val x: Self) extends AnyVal {
+      extension [Self <: ProductionCompany](x: Self) {
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -397,20 +333,16 @@ object mod {
     }
     object ProductionCountry {
       
-      @scala.inline
-      def apply(iso_3166_1: Double, name: String): ProductionCountry = {
+      inline def apply(iso_3166_1: Double, name: String): ProductionCountry = {
         val __obj = js.Dynamic.literal(iso_3166_1 = iso_3166_1.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProductionCountry]
       }
       
-      @scala.inline
-      implicit class ProductionCountryMutableBuilder[Self <: ProductionCountry] (val x: Self) extends AnyVal {
+      extension [Self <: ProductionCountry](x: Self) {
         
-        @scala.inline
-        def setIso_3166_1(value: Double): Self = StObject.set(x, "iso_3166_1", value.asInstanceOf[js.Any])
+        inline def setIso_3166_1(value: Double): Self = StObject.set(x, "iso_3166_1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -422,23 +354,18 @@ object mod {
     }
     object SearchOptions {
       
-      @scala.inline
-      def apply(query: String): SearchOptions = {
+      inline def apply(query: String): SearchOptions = {
         val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
         __obj.asInstanceOf[SearchOptions]
       }
       
-      @scala.inline
-      implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+      extension [Self <: SearchOptions](x: Self) {
         
-        @scala.inline
-        def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+        inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+        inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
         
-        @scala.inline
-        def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+        inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       }
     }
     
@@ -466,8 +393,7 @@ object mod {
     }
     object SearchResult {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         adult: Boolean,
         backdrop_path: String,
         id: Double,
@@ -483,38 +409,27 @@ object mod {
         __obj.asInstanceOf[SearchResult]
       }
       
-      @scala.inline
-      implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResult](x: Self) {
         
-        @scala.inline
-        def setAdult(value: Boolean): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
+        inline def setAdult(value: Boolean): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackdrop_path(value: String): Self = StObject.set(x, "backdrop_path", value.asInstanceOf[js.Any])
+        inline def setBackdrop_path(value: String): Self = StObject.set(x, "backdrop_path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOriginal_title(value: String): Self = StObject.set(x, "original_title", value.asInstanceOf[js.Any])
+        inline def setOriginal_title(value: String): Self = StObject.set(x, "original_title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
+        inline def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPoster_path(value: String): Self = StObject.set(x, "poster_path", value.asInstanceOf[js.Any])
+        inline def setPoster_path(value: String): Self = StObject.set(x, "poster_path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRelease_date(value: Date): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
+        inline def setRelease_date(value: Date): Self = StObject.set(x, "release_date", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVote_average(value: Double): Self = StObject.set(x, "vote_average", value.asInstanceOf[js.Any])
+        inline def setVote_average(value: Double): Self = StObject.set(x, "vote_average", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVote_count(value: Double): Self = StObject.set(x, "vote_count", value.asInstanceOf[js.Any])
+        inline def setVote_count(value: Double): Self = StObject.set(x, "vote_count", value.asInstanceOf[js.Any])
       }
     }
     
@@ -530,29 +445,22 @@ object mod {
     }
     object SearchResults {
       
-      @scala.inline
-      def apply(page: Double, results: js.Array[SearchResult], total_Pages: Double, total_results: Double): SearchResults = {
+      inline def apply(page: Double, results: js.Array[SearchResult], total_Pages: Double, total_results: Double): SearchResults = {
         val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], total_Pages = total_Pages.asInstanceOf[js.Any], total_results = total_results.asInstanceOf[js.Any])
         __obj.asInstanceOf[SearchResults]
       }
       
-      @scala.inline
-      implicit class SearchResultsMutableBuilder[Self <: SearchResults] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResults](x: Self) {
         
-        @scala.inline
-        def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+        inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+        inline def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+        inline def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
         
-        @scala.inline
-        def setTotal_Pages(value: Double): Self = StObject.set(x, "total_Pages", value.asInstanceOf[js.Any])
+        inline def setTotal_Pages(value: Double): Self = StObject.set(x, "total_Pages", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotal_results(value: Double): Self = StObject.set(x, "total_results", value.asInstanceOf[js.Any])
+        inline def setTotal_results(value: Double): Self = StObject.set(x, "total_results", value.asInstanceOf[js.Any])
       }
     }
     
@@ -564,20 +472,16 @@ object mod {
     }
     object SpokenLanguage {
       
-      @scala.inline
-      def apply(iso_639_1: Double, name: String): SpokenLanguage = {
+      inline def apply(iso_639_1: Double, name: String): SpokenLanguage = {
         val __obj = js.Dynamic.literal(iso_639_1 = iso_639_1.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[SpokenLanguage]
       }
       
-      @scala.inline
-      implicit class SpokenLanguageMutableBuilder[Self <: SpokenLanguage] (val x: Self) extends AnyVal {
+      extension [Self <: SpokenLanguage](x: Self) {
         
-        @scala.inline
-        def setIso_639_1(value: Double): Self = StObject.set(x, "iso_639_1", value.asInstanceOf[js.Any])
+        inline def setIso_639_1(value: Double): Self = StObject.set(x, "iso_639_1", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -28,46 +28,33 @@ trait VPCDerivedInfo extends StObject {
 }
 object VPCDerivedInfo {
   
-  @scala.inline
-  def apply(): VPCDerivedInfo = {
+  inline def apply(): VPCDerivedInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VPCDerivedInfo]
   }
   
-  @scala.inline
-  implicit class VPCDerivedInfoMutableBuilder[Self <: VPCDerivedInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VPCDerivedInfo](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZones(value: StringList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZones(value: StringList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
+    inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "AvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
+    inline def setAvailabilityZonesVarargs(value: String*): Self = StObject.set(x, "AvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setSecurityGroupIds(value: StringList): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: StringList): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
+    inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetIds(value: StringList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: StringList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
+    inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: String*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setVPCId(value: String): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
+    inline def setVPCId(value: String): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCIdUndefined: Self = StObject.set(x, "VPCId", js.undefined)
+    inline def setVPCIdUndefined: Self = StObject.set(x, "VPCId", js.undefined)
   }
 }

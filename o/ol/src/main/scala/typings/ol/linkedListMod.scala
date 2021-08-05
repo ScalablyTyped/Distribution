@@ -98,29 +98,22 @@ object linkedListMod {
   }
   object Item {
     
-    @scala.inline
-    def apply(data: js.Any): Item = {
+    inline def apply(data: js.Any): Item = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: Item): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Item): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPrev(value: Item): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: Item): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     }
   }
   
@@ -190,8 +183,7 @@ object linkedListMod {
   }
   object LinkedList {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       concat: LinkedList => Unit,
       firstItem: () => js.Any,
       getCurrItem: () => js.Any,
@@ -209,44 +201,31 @@ object linkedListMod {
       __obj.asInstanceOf[LinkedList]
     }
     
-    @scala.inline
-    implicit class LinkedListMutableBuilder[Self <: LinkedList] (val x: Self) extends AnyVal {
+    extension [Self <: LinkedList](x: Self) {
       
-      @scala.inline
-      def setConcat(value: LinkedList => Unit): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
+      inline def setConcat(value: LinkedList => Unit): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirstItem(value: () => js.Any): Self = StObject.set(x, "firstItem", js.Any.fromFunction0(value))
+      inline def setFirstItem(value: () => js.Any): Self = StObject.set(x, "firstItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrItem(value: () => js.Any): Self = StObject.set(x, "getCurrItem", js.Any.fromFunction0(value))
+      inline def setGetCurrItem(value: () => js.Any): Self = StObject.set(x, "getCurrItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+      inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNextItem(value: () => js.Any): Self = StObject.set(x, "getNextItem", js.Any.fromFunction0(value))
+      inline def setGetNextItem(value: () => js.Any): Self = StObject.set(x, "getNextItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrevItem(value: () => js.Any): Self = StObject.set(x, "getPrevItem", js.Any.fromFunction0(value))
+      inline def setGetPrevItem(value: () => js.Any): Self = StObject.set(x, "getPrevItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInsertItem(value: js.Any => Unit): Self = StObject.set(x, "insertItem", js.Any.fromFunction1(value))
+      inline def setInsertItem(value: js.Any => Unit): Self = StObject.set(x, "insertItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLastItem(value: () => js.Any): Self = StObject.set(x, "lastItem", js.Any.fromFunction0(value))
+      inline def setLastItem(value: () => js.Any): Self = StObject.set(x, "lastItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextItem(value: () => js.Any): Self = StObject.set(x, "nextItem", js.Any.fromFunction0(value))
+      inline def setNextItem(value: () => js.Any): Self = StObject.set(x, "nextItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrevItem(value: () => js.Any): Self = StObject.set(x, "prevItem", js.Any.fromFunction0(value))
+      inline def setPrevItem(value: () => js.Any): Self = StObject.set(x, "prevItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveItem(value: () => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction0(value))
+      inline def setRemoveItem(value: () => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetFirstItem(value: () => Unit): Self = StObject.set(x, "setFirstItem", js.Any.fromFunction0(value))
+      inline def setSetFirstItem(value: () => Unit): Self = StObject.set(x, "setFirstItem", js.Any.fromFunction0(value))
     }
   }
 }

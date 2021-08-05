@@ -16,20 +16,16 @@ trait ForOfStatement
 }
 object ForOfStatement {
   
-  @scala.inline
-  def apply(await: Boolean, body: Statement, left: VariableDeclaration | Pattern, right: Expression): ForOfStatement = {
+  inline def apply(await: Boolean, body: Statement, left: VariableDeclaration | Pattern, right: Expression): ForOfStatement = {
     val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ForOfStatement")
     __obj.asInstanceOf[ForOfStatement]
   }
   
-  @scala.inline
-  implicit class ForOfStatementMutableBuilder[Self <: ForOfStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ForOfStatement](x: Self) {
     
-    @scala.inline
-    def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
+    inline def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ForOfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ForOfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

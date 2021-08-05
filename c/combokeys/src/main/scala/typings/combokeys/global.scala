@@ -19,6 +19,5 @@ object global {
   @JSGlobal("combokeys")
   @js.native
   def combokeys: CombokeysStatic = js.native
-  @scala.inline
-  def combokeys_=(x: CombokeysStatic): Unit = js.Dynamic.global.updateDynamic("combokeys")(x.asInstanceOf[js.Any])
+  inline def combokeys_=(x: CombokeysStatic): Unit = js.Dynamic.global.updateDynamic("combokeys")(x.asInstanceOf[js.Any])
 }

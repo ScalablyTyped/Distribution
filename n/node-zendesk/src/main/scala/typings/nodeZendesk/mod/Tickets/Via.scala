@@ -12,19 +12,15 @@ trait Via extends StObject {
 }
 object Via {
   
-  @scala.inline
-  def apply(channel: ViaChannel, source: ViaSource): Via = {
+  inline def apply(channel: ViaChannel, source: ViaSource): Via = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[Via]
   }
   
-  @scala.inline
-  implicit class ViaMutableBuilder[Self <: Via] (val x: Self) extends AnyVal {
+  extension [Self <: Via](x: Self) {
     
-    @scala.inline
-    def setChannel(value: ViaChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: ViaChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: ViaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ViaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

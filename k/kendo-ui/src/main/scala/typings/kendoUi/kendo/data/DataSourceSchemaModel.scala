@@ -15,25 +15,19 @@ trait DataSourceSchemaModel
 }
 object DataSourceSchemaModel {
   
-  @scala.inline
-  def apply(): DataSourceSchemaModel = {
+  inline def apply(): DataSourceSchemaModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSchemaModel]
   }
   
-  @scala.inline
-  implicit class DataSourceSchemaModelMutableBuilder[Self <: DataSourceSchemaModel] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSchemaModel](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

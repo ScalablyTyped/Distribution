@@ -16,28 +16,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Plugin {
   
-  @scala.inline
-  def apply(position: String): Plugin = {
+  inline def apply(position: String): Plugin = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugin]
   }
   
-  @scala.inline
-  implicit class PluginMutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
+  extension [Self <: Plugin](x: Self) {
     
-    @scala.inline
-    def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: js.Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: js.Any): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
+    inline def setStore(value: js.Any): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUndefined: Self = StObject.set(x, "Store", js.undefined)
+    inline def setStoreUndefined: Self = StObject.set(x, "Store", js.undefined)
   }
 }

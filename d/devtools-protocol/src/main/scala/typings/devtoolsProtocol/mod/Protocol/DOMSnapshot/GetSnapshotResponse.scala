@@ -23,8 +23,7 @@ trait GetSnapshotResponse extends StObject {
 }
 object GetSnapshotResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     computedStyles: js.Array[ComputedStyle],
     domNodes: js.Array[DOMNode],
     layoutTreeNodes: js.Array[LayoutTreeNode]
@@ -33,25 +32,18 @@ object GetSnapshotResponse {
     __obj.asInstanceOf[GetSnapshotResponse]
   }
   
-  @scala.inline
-  implicit class GetSnapshotResponseMutableBuilder[Self <: GetSnapshotResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSnapshotResponse](x: Self) {
     
-    @scala.inline
-    def setComputedStyles(value: js.Array[ComputedStyle]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
+    inline def setComputedStyles(value: js.Array[ComputedStyle]): Self = StObject.set(x, "computedStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedStylesVarargs(value: ComputedStyle*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
+    inline def setComputedStylesVarargs(value: ComputedStyle*): Self = StObject.set(x, "computedStyles", js.Array(value :_*))
     
-    @scala.inline
-    def setDomNodes(value: js.Array[DOMNode]): Self = StObject.set(x, "domNodes", value.asInstanceOf[js.Any])
+    inline def setDomNodes(value: js.Array[DOMNode]): Self = StObject.set(x, "domNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomNodesVarargs(value: DOMNode*): Self = StObject.set(x, "domNodes", js.Array(value :_*))
+    inline def setDomNodesVarargs(value: DOMNode*): Self = StObject.set(x, "domNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setLayoutTreeNodes(value: js.Array[LayoutTreeNode]): Self = StObject.set(x, "layoutTreeNodes", value.asInstanceOf[js.Any])
+    inline def setLayoutTreeNodes(value: js.Array[LayoutTreeNode]): Self = StObject.set(x, "layoutTreeNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutTreeNodesVarargs(value: LayoutTreeNode*): Self = StObject.set(x, "layoutTreeNodes", js.Array(value :_*))
+    inline def setLayoutTreeNodesVarargs(value: LayoutTreeNode*): Self = StObject.set(x, "layoutTreeNodes", js.Array(value :_*))
   }
 }

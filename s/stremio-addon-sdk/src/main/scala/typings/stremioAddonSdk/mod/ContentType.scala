@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContentType extends StObject
 object ContentType {
   
-  @scala.inline
-  def channel: typings.stremioAddonSdk.stremioAddonSdkStrings.channel = "channel".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.channel]
+  inline def channel: typings.stremioAddonSdk.stremioAddonSdkStrings.channel = "channel".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.channel]
   
-  @scala.inline
-  def movie: typings.stremioAddonSdk.stremioAddonSdkStrings.movie = "movie".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.movie]
+  inline def movie: typings.stremioAddonSdk.stremioAddonSdkStrings.movie = "movie".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.movie]
   
-  @scala.inline
-  def series: typings.stremioAddonSdk.stremioAddonSdkStrings.series = "series".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.series]
+  inline def series: typings.stremioAddonSdk.stremioAddonSdkStrings.series = "series".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.series]
   
-  @scala.inline
-  def tv: typings.stremioAddonSdk.stremioAddonSdkStrings.tv = "tv".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.tv]
+  inline def tv: typings.stremioAddonSdk.stremioAddonSdkStrings.tv = "tv".asInstanceOf[typings.stremioAddonSdk.stremioAddonSdkStrings.tv]
 }

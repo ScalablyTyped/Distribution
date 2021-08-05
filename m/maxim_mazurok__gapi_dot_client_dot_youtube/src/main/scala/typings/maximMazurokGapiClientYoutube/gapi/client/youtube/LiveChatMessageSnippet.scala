@@ -50,91 +50,63 @@ trait LiveChatMessageSnippet extends StObject {
 }
 object LiveChatMessageSnippet {
   
-  @scala.inline
-  def apply(): LiveChatMessageSnippet = {
+  inline def apply(): LiveChatMessageSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiveChatMessageSnippet]
   }
   
-  @scala.inline
-  implicit class LiveChatMessageSnippetMutableBuilder[Self <: LiveChatMessageSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: LiveChatMessageSnippet](x: Self) {
     
-    @scala.inline
-    def setAuthorChannelId(value: String): Self = StObject.set(x, "authorChannelId", value.asInstanceOf[js.Any])
+    inline def setAuthorChannelId(value: String): Self = StObject.set(x, "authorChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorChannelIdUndefined: Self = StObject.set(x, "authorChannelId", js.undefined)
+    inline def setAuthorChannelIdUndefined: Self = StObject.set(x, "authorChannelId", js.undefined)
     
-    @scala.inline
-    def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
+    inline def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayMessageUndefined: Self = StObject.set(x, "displayMessage", js.undefined)
+    inline def setDisplayMessageUndefined: Self = StObject.set(x, "displayMessage", js.undefined)
     
-    @scala.inline
-    def setFanFundingEventDetails(value: LiveChatFanFundingEventDetails): Self = StObject.set(x, "fanFundingEventDetails", value.asInstanceOf[js.Any])
+    inline def setFanFundingEventDetails(value: LiveChatFanFundingEventDetails): Self = StObject.set(x, "fanFundingEventDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFanFundingEventDetailsUndefined: Self = StObject.set(x, "fanFundingEventDetails", js.undefined)
+    inline def setFanFundingEventDetailsUndefined: Self = StObject.set(x, "fanFundingEventDetails", js.undefined)
     
-    @scala.inline
-    def setHasDisplayContent(value: Boolean): Self = StObject.set(x, "hasDisplayContent", value.asInstanceOf[js.Any])
+    inline def setHasDisplayContent(value: Boolean): Self = StObject.set(x, "hasDisplayContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDisplayContentUndefined: Self = StObject.set(x, "hasDisplayContent", js.undefined)
+    inline def setHasDisplayContentUndefined: Self = StObject.set(x, "hasDisplayContent", js.undefined)
     
-    @scala.inline
-    def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
+    inline def setLiveChatId(value: String): Self = StObject.set(x, "liveChatId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
+    inline def setLiveChatIdUndefined: Self = StObject.set(x, "liveChatId", js.undefined)
     
-    @scala.inline
-    def setMessageDeletedDetails(value: LiveChatMessageDeletedDetails): Self = StObject.set(x, "messageDeletedDetails", value.asInstanceOf[js.Any])
+    inline def setMessageDeletedDetails(value: LiveChatMessageDeletedDetails): Self = StObject.set(x, "messageDeletedDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageDeletedDetailsUndefined: Self = StObject.set(x, "messageDeletedDetails", js.undefined)
+    inline def setMessageDeletedDetailsUndefined: Self = StObject.set(x, "messageDeletedDetails", js.undefined)
     
-    @scala.inline
-    def setMessageRetractedDetails(value: LiveChatMessageRetractedDetails): Self = StObject.set(x, "messageRetractedDetails", value.asInstanceOf[js.Any])
+    inline def setMessageRetractedDetails(value: LiveChatMessageRetractedDetails): Self = StObject.set(x, "messageRetractedDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageRetractedDetailsUndefined: Self = StObject.set(x, "messageRetractedDetails", js.undefined)
+    inline def setMessageRetractedDetailsUndefined: Self = StObject.set(x, "messageRetractedDetails", js.undefined)
     
-    @scala.inline
-    def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
+    inline def setPublishedAt(value: String): Self = StObject.set(x, "publishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
+    inline def setPublishedAtUndefined: Self = StObject.set(x, "publishedAt", js.undefined)
     
-    @scala.inline
-    def setSuperChatDetails(value: LiveChatSuperChatDetails): Self = StObject.set(x, "superChatDetails", value.asInstanceOf[js.Any])
+    inline def setSuperChatDetails(value: LiveChatSuperChatDetails): Self = StObject.set(x, "superChatDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperChatDetailsUndefined: Self = StObject.set(x, "superChatDetails", js.undefined)
+    inline def setSuperChatDetailsUndefined: Self = StObject.set(x, "superChatDetails", js.undefined)
     
-    @scala.inline
-    def setSuperStickerDetails(value: LiveChatSuperStickerDetails): Self = StObject.set(x, "superStickerDetails", value.asInstanceOf[js.Any])
+    inline def setSuperStickerDetails(value: LiveChatSuperStickerDetails): Self = StObject.set(x, "superStickerDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperStickerDetailsUndefined: Self = StObject.set(x, "superStickerDetails", js.undefined)
+    inline def setSuperStickerDetailsUndefined: Self = StObject.set(x, "superStickerDetails", js.undefined)
     
-    @scala.inline
-    def setTextMessageDetails(value: LiveChatTextMessageDetails): Self = StObject.set(x, "textMessageDetails", value.asInstanceOf[js.Any])
+    inline def setTextMessageDetails(value: LiveChatTextMessageDetails): Self = StObject.set(x, "textMessageDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMessageDetailsUndefined: Self = StObject.set(x, "textMessageDetails", js.undefined)
+    inline def setTextMessageDetailsUndefined: Self = StObject.set(x, "textMessageDetails", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUserBannedDetails(value: LiveChatUserBannedMessageDetails): Self = StObject.set(x, "userBannedDetails", value.asInstanceOf[js.Any])
+    inline def setUserBannedDetails(value: LiveChatUserBannedMessageDetails): Self = StObject.set(x, "userBannedDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserBannedDetailsUndefined: Self = StObject.set(x, "userBannedDetails", js.undefined)
+    inline def setUserBannedDetailsUndefined: Self = StObject.set(x, "userBannedDetails", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait ListReceiptRuleSetsRequest extends StObject {
 }
 object ListReceiptRuleSetsRequest {
   
-  @scala.inline
-  def apply(): ListReceiptRuleSetsRequest = {
+  inline def apply(): ListReceiptRuleSetsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReceiptRuleSetsRequest]
   }
   
-  @scala.inline
-  implicit class ListReceiptRuleSetsRequestMutableBuilder[Self <: ListReceiptRuleSetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListReceiptRuleSetsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

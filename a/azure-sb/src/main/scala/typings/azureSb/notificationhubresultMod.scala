@@ -21,8 +21,7 @@ object notificationhubresultMod {
         }
         object NotificationHubResult {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             parse: js.Object => js.Object | js.Array[js.Object],
             serialize: CreateNotificationHubOptions => String
           ): NotificationHubResult = {
@@ -30,14 +29,11 @@ object notificationhubresultMod {
             __obj.asInstanceOf[NotificationHubResult]
           }
           
-          @scala.inline
-          implicit class NotificationHubResultMutableBuilder[Self <: NotificationHubResult] (val x: Self) extends AnyVal {
+          extension [Self <: NotificationHubResult](x: Self) {
             
-            @scala.inline
-            def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+            inline def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setSerialize(value: CreateNotificationHubOptions => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+            inline def setSerialize(value: CreateNotificationHubOptions => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
           }
         }
       }

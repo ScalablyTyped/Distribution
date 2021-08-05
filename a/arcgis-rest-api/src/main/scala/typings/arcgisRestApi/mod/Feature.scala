@@ -12,19 +12,15 @@ trait Feature extends StObject {
 }
 object Feature {
   
-  @scala.inline
-  def apply(attributes: js.Any, geometry: Geometry): Feature = {
+  inline def apply(attributes: js.Any, geometry: Geometry): Feature = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feature]
   }
   
-  @scala.inline
-  implicit class FeatureMutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
+  extension [Self <: Feature](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
   }
 }

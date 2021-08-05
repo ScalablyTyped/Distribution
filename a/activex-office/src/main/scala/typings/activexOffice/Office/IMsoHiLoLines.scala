@@ -18,7 +18,7 @@ trait IMsoHiLoLines extends StObject {
   
   val Name: String
   
-  @JSName("Office.IMsoHiLoLines_typekey")
+  /* private */ @JSName("Office.IMsoHiLoLines_typekey")
   var OfficeDotIMsoHiLoLines_typekey: IMsoHiLoLines
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait IMsoHiLoLines extends StObject {
 }
 object IMsoHiLoLines {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Border: IMsoBorder,
     Creator: Double,
@@ -44,34 +43,24 @@ object IMsoHiLoLines {
     __obj.asInstanceOf[IMsoHiLoLines]
   }
   
-  @scala.inline
-  implicit class IMsoHiLoLinesMutableBuilder[Self <: IMsoHiLoLines] (val x: Self) extends AnyVal {
+  extension [Self <: IMsoHiLoLines](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: IMsoBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: IMsoBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFormat(value: IMsoChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: IMsoChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotIMsoHiLoLines_typekey(value: IMsoHiLoLines): Self = StObject.set(x, "Office.IMsoHiLoLines_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotIMsoHiLoLines_typekey(value: IMsoHiLoLines): Self = StObject.set(x, "Office.IMsoHiLoLines_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => Unit): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
   }
 }

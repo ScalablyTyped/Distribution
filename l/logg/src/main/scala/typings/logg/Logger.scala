@@ -32,8 +32,7 @@ trait Logger extends StObject {
 }
 object Logger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error: /* repeated */ js.Any => Unit,
     fine: /* repeated */ js.Any => Unit,
     getLogLevel: () => Double,
@@ -51,43 +50,30 @@ object Logger {
     __obj.asInstanceOf[Logger]
   }
   
-  @scala.inline
-  implicit class LoggerMutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
+  extension [Self <: Logger](x: Self) {
     
-    @scala.inline
-    def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFine(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fine", js.Any.fromFunction1(value))
+    inline def setFine(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "fine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLogLevel(value: () => Double): Self = StObject.set(x, "getLogLevel", js.Any.fromFunction0(value))
+    inline def setGetLogLevel(value: () => Double): Self = StObject.set(x, "getLogLevel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParent(value: () => Logger): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    inline def setGetParent(value: () => Logger): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWatchers(value: () => js.Array[js.Function]): Self = StObject.set(x, "getWatchers", js.Any.fromFunction0(value))
+    inline def setGetWatchers(value: () => js.Array[js.Function]): Self = StObject.set(x, "getWatchers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLoggable(value: Double => Boolean): Self = StObject.set(x, "isLoggable", js.Any.fromFunction1(value))
+    inline def setIsLoggable(value: Double => Boolean): Self = StObject.set(x, "isLoggable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLog(value: (Double, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+    inline def setLog(value: (Double, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterWatcher(value: js.Function1[/* logRecord */ String, Unit] => Unit): Self = StObject.set(x, "registerWatcher", js.Any.fromFunction1(value))
+    inline def setRegisterWatcher(value: js.Function1[/* logRecord */ String, Unit] => Unit): Self = StObject.set(x, "registerWatcher", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLogLevel(value: Double => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
+    inline def setSetLogLevel(value: Double => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParent(value: Logger => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
+    inline def setSetParent(value: Logger => Unit): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

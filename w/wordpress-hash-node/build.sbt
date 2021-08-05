@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress-hash-node"
-version := "1.0-dt-20200306Z-03fd73"
+version := "1.0-dt-20200306Z-c4368f"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -55,8 +55,7 @@ trait color extends StObject {
 }
 object color {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createAgeRenderer: colorCreateAgeRendererParams => js.Promise[AgeRendererResult],
     createClassBreaksRenderer: colorCreateClassBreaksRendererParams => js.Promise[ClassBreaksRendererResult],
     createContinuousRenderer: colorCreateContinuousRendererParams => js.Promise[ContinuousRendererResult],
@@ -68,25 +67,18 @@ object color {
     __obj.asInstanceOf[color]
   }
   
-  @scala.inline
-  implicit class colorMutableBuilder[Self <: color] (val x: Self) extends AnyVal {
+  extension [Self <: color](x: Self) {
     
-    @scala.inline
-    def setCreateAgeRenderer(value: colorCreateAgeRendererParams => js.Promise[AgeRendererResult]): Self = StObject.set(x, "createAgeRenderer", js.Any.fromFunction1(value))
+    inline def setCreateAgeRenderer(value: colorCreateAgeRendererParams => js.Promise[AgeRendererResult]): Self = StObject.set(x, "createAgeRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateClassBreaksRenderer(value: colorCreateClassBreaksRendererParams => js.Promise[ClassBreaksRendererResult]): Self = StObject.set(x, "createClassBreaksRenderer", js.Any.fromFunction1(value))
+    inline def setCreateClassBreaksRenderer(value: colorCreateClassBreaksRendererParams => js.Promise[ClassBreaksRendererResult]): Self = StObject.set(x, "createClassBreaksRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateContinuousRenderer(value: colorCreateContinuousRendererParams => js.Promise[ContinuousRendererResult]): Self = StObject.set(x, "createContinuousRenderer", js.Any.fromFunction1(value))
+    inline def setCreateContinuousRenderer(value: colorCreateContinuousRendererParams => js.Promise[ContinuousRendererResult]): Self = StObject.set(x, "createContinuousRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePCContinuousRenderer(value: colorCreatePCContinuousRendererParams => js.Promise[PCContinuousRendererResult]): Self = StObject.set(x, "createPCContinuousRenderer", js.Any.fromFunction1(value))
+    inline def setCreatePCContinuousRenderer(value: colorCreatePCContinuousRendererParams => js.Promise[PCContinuousRendererResult]): Self = StObject.set(x, "createPCContinuousRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreatePCTrueColorRenderer(value: colorCreatePCTrueColorRendererParams => js.Promise[PCTrueColorRendererResult]): Self = StObject.set(x, "createPCTrueColorRenderer", js.Any.fromFunction1(value))
+    inline def setCreatePCTrueColorRenderer(value: colorCreatePCTrueColorRendererParams => js.Promise[PCTrueColorRendererResult]): Self = StObject.set(x, "createPCTrueColorRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateVisualVariable(value: colorCreateVisualVariableParams => js.Promise[VisualVariableResult]): Self = StObject.set(x, "createVisualVariable", js.Any.fromFunction1(value))
+    inline def setCreateVisualVariable(value: colorCreateVisualVariableParams => js.Promise[VisualVariableResult]): Self = StObject.set(x, "createVisualVariable", js.Any.fromFunction1(value))
   }
 }

@@ -16,19 +16,15 @@ trait BufferProtectUnprotectResult extends StObject {
 }
 object BufferProtectUnprotectResult {
   
-  @scala.inline
-  def apply(buffer: IBuffer, protectionInfo: DataProtectionInfo): BufferProtectUnprotectResult = {
+  inline def apply(buffer: IBuffer, protectionInfo: DataProtectionInfo): BufferProtectUnprotectResult = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], protectionInfo = protectionInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferProtectUnprotectResult]
   }
   
-  @scala.inline
-  implicit class BufferProtectUnprotectResultMutableBuilder[Self <: BufferProtectUnprotectResult] (val x: Self) extends AnyVal {
+  extension [Self <: BufferProtectUnprotectResult](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: IBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: IBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionInfo(value: DataProtectionInfo): Self = StObject.set(x, "protectionInfo", value.asInstanceOf[js.Any])
+    inline def setProtectionInfo(value: DataProtectionInfo): Self = StObject.set(x, "protectionInfo", value.asInstanceOf[js.Any])
   }
 }

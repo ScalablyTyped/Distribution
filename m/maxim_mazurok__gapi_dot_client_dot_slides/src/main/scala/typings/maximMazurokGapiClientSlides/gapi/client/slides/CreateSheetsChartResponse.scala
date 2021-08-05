@@ -11,19 +11,15 @@ trait CreateSheetsChartResponse extends StObject {
 }
 object CreateSheetsChartResponse {
   
-  @scala.inline
-  def apply(): CreateSheetsChartResponse = {
+  inline def apply(): CreateSheetsChartResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSheetsChartResponse]
   }
   
-  @scala.inline
-  implicit class CreateSheetsChartResponseMutableBuilder[Self <: CreateSheetsChartResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSheetsChartResponse](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

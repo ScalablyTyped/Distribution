@@ -10,19 +10,15 @@ trait AutomaticParams extends StObject {
 }
 object AutomaticParams {
   
-  @scala.inline
-  def apply(): AutomaticParams = {
+  inline def apply(): AutomaticParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutomaticParams]
   }
   
-  @scala.inline
-  implicit class AutomaticParamsMutableBuilder[Self <: AutomaticParams] (val x: Self) extends AnyVal {
+  extension [Self <: AutomaticParams](x: Self) {
     
-    @scala.inline
-    def setAuto(value: ImgixParamType): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: ImgixParamType): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+    inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
   }
 }

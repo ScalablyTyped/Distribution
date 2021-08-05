@@ -15,25 +15,19 @@ trait IncomingWebhookCall[T] extends StObject {
 }
 object IncomingWebhookCall {
   
-  @scala.inline
-  def apply[T](headers: IncomingWebhookHttpHeaders, params: T, url: IncomingWebhookUrl): IncomingWebhookCall[T] = {
+  inline def apply[T](headers: IncomingWebhookHttpHeaders, params: T, url: IncomingWebhookUrl): IncomingWebhookCall[T] = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingWebhookCall[T]]
   }
   
-  @scala.inline
-  implicit class IncomingWebhookCallMutableBuilder[Self <: IncomingWebhookCall[?], T] (val x: Self & IncomingWebhookCall[T]) extends AnyVal {
+  extension [Self <: IncomingWebhookCall[?], T](x: Self & IncomingWebhookCall[T]) {
     
-    @scala.inline
-    def setHeaders(value: IncomingWebhookHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: IncomingWebhookHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: IncomingWebhookUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: IncomingWebhookUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -39,14 +39,10 @@ object NetworkInterfaceSecurityGroupAttachment {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @scala.inline
-  def get(name: String, id: Input[ID]): typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment]
-  @scala.inline
-  def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment]
-  @scala.inline
-  def get(name: String, id: Input[ID], state: NetworkInterfaceSecurityGroupAttachmentState): typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment]
-  @scala.inline
-  def get(
+  inline def get(name: String, id: Input[ID]): typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment]
+  inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment]
+  inline def get(name: String, id: Input[ID], state: NetworkInterfaceSecurityGroupAttachmentState): typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.networkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment]
+  inline def get(
     name: String,
     id: Input[ID],
     state: NetworkInterfaceSecurityGroupAttachmentState,
@@ -57,6 +53,5 @@ object NetworkInterfaceSecurityGroupAttachment {
     * Returns true if the given object is an instance of NetworkInterfaceSecurityGroupAttachment.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @scala.inline
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ Boolean]
+  inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment.NetworkInterfaceSecurityGroupAttachment */ Boolean]
 }

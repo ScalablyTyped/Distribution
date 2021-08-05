@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalAccessGrantControl extends StObject
 object ConditionalAccessGrantControl {
   
-  @scala.inline
-  def approvedApplication: typings.microsoftGraph.microsoftGraphStrings.approvedApplication = "approvedApplication".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.approvedApplication]
+  inline def approvedApplication: typings.microsoftGraph.microsoftGraphStrings.approvedApplication = "approvedApplication".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.approvedApplication]
   
-  @scala.inline
-  def block: typings.microsoftGraph.microsoftGraphStrings.block = "block".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.block]
+  inline def block: typings.microsoftGraph.microsoftGraphStrings.block = "block".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.block]
   
-  @scala.inline
-  def compliantApplication: typings.microsoftGraph.microsoftGraphStrings.compliantApplication = "compliantApplication".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.compliantApplication]
+  inline def compliantApplication: typings.microsoftGraph.microsoftGraphStrings.compliantApplication = "compliantApplication".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.compliantApplication]
   
-  @scala.inline
-  def compliantDevice: typings.microsoftGraph.microsoftGraphStrings.compliantDevice = "compliantDevice".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.compliantDevice]
+  inline def compliantDevice: typings.microsoftGraph.microsoftGraphStrings.compliantDevice = "compliantDevice".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.compliantDevice]
   
-  @scala.inline
-  def domainJoinedDevice: typings.microsoftGraph.microsoftGraphStrings.domainJoinedDevice = "domainJoinedDevice".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.domainJoinedDevice]
+  inline def domainJoinedDevice: typings.microsoftGraph.microsoftGraphStrings.domainJoinedDevice = "domainJoinedDevice".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.domainJoinedDevice]
   
-  @scala.inline
-  def mfa: typings.microsoftGraph.microsoftGraphStrings.mfa = "mfa".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mfa]
+  inline def mfa: typings.microsoftGraph.microsoftGraphStrings.mfa = "mfa".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mfa]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

@@ -12,19 +12,15 @@ trait IsFocus extends StObject {
 }
 object IsFocus {
   
-  @scala.inline
-  def apply(date: typings.std.Date => Unit, isFocus: Boolean => Unit): IsFocus = {
+  inline def apply(date: typings.std.Date => Unit, isFocus: Boolean => Unit): IsFocus = {
     val __obj = js.Dynamic.literal(date = js.Any.fromFunction1(date), isFocus = js.Any.fromFunction1(isFocus))
     __obj.asInstanceOf[IsFocus]
   }
   
-  @scala.inline
-  implicit class IsFocusMutableBuilder[Self <: IsFocus] (val x: Self) extends AnyVal {
+  extension [Self <: IsFocus](x: Self) {
     
-    @scala.inline
-    def setDate(value: typings.std.Date => Unit): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
+    inline def setDate(value: typings.std.Date => Unit): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFocus(value: Boolean => Unit): Self = StObject.set(x, "isFocus", js.Any.fromFunction1(value))
+    inline def setIsFocus(value: Boolean => Unit): Self = StObject.set(x, "isFocus", js.Any.fromFunction1(value))
   }
 }

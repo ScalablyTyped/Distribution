@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class QuestionSelectBase protected () extends Question {
   def this(name: String) = this()
   
-  val activeChoices: js.Array[ItemValue] = js.native
+  /* protected */ val activeChoices: js.Array[ItemValue] = js.native
   
   /* protected */ def addToVisibleChoices(items: js.Array[ItemValue]): Unit = js.native
   

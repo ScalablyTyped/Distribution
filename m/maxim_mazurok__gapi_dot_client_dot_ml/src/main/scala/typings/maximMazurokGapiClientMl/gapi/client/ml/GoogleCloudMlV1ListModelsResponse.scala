@@ -14,28 +14,21 @@ trait GoogleCloudMlV1ListModelsResponse extends StObject {
 }
 object GoogleCloudMlV1ListModelsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1ListModelsResponse = {
+  inline def apply(): GoogleCloudMlV1ListModelsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1ListModelsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ListModelsResponseMutableBuilder[Self <: GoogleCloudMlV1ListModelsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1ListModelsResponse](x: Self) {
     
-    @scala.inline
-    def setModels(value: js.Array[GoogleCloudMlV1Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: js.Array[GoogleCloudMlV1Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
+    inline def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
     
-    @scala.inline
-    def setModelsVarargs(value: GoogleCloudMlV1Model*): Self = StObject.set(x, "models", js.Array(value :_*))
+    inline def setModelsVarargs(value: GoogleCloudMlV1Model*): Self = StObject.set(x, "models", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

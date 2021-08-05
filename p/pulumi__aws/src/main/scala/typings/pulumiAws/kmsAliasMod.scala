@@ -66,21 +66,16 @@ object kmsAliasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Alias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Alias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AliasState): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Alias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    inline def get(name: String, id: Input[ID]): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    inline def get(name: String, id: Input[ID], state: AliasState): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Alias]
+    inline def get(name: String, id: Input[ID], state: AliasState, opts: CustomResourceOptions): Alias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Alias]
     
     /**
       * Returns true if the given object is an instance of Alias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/alias.Alias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/alias.Alias */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/alias.Alias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/alias.Alias */ Boolean]
   }
   
   trait AliasArgs extends StObject {
@@ -103,29 +98,22 @@ object kmsAliasMod {
   }
   object AliasArgs {
     
-    @scala.inline
-    def apply(targetKeyId: Input[String]): AliasArgs = {
+    inline def apply(targetKeyId: Input[String]): AliasArgs = {
       val __obj = js.Dynamic.literal(targetKeyId = targetKeyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AliasArgs]
     }
     
-    @scala.inline
-    implicit class AliasArgsMutableBuilder[Self <: AliasArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AliasArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTargetKeyId(value: Input[String]): Self = StObject.set(x, "targetKeyId", value.asInstanceOf[js.Any])
+      inline def setTargetKeyId(value: Input[String]): Self = StObject.set(x, "targetKeyId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,44 +147,32 @@ object kmsAliasMod {
   }
   object AliasState {
     
-    @scala.inline
-    def apply(): AliasState = {
+    inline def apply(): AliasState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AliasState]
     }
     
-    @scala.inline
-    implicit class AliasStateMutableBuilder[Self <: AliasState] (val x: Self) extends AnyVal {
+    extension [Self <: AliasState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTargetKeyArn(value: Input[String]): Self = StObject.set(x, "targetKeyArn", value.asInstanceOf[js.Any])
+      inline def setTargetKeyArn(value: Input[String]): Self = StObject.set(x, "targetKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetKeyArnUndefined: Self = StObject.set(x, "targetKeyArn", js.undefined)
+      inline def setTargetKeyArnUndefined: Self = StObject.set(x, "targetKeyArn", js.undefined)
       
-      @scala.inline
-      def setTargetKeyId(value: Input[String]): Self = StObject.set(x, "targetKeyId", value.asInstanceOf[js.Any])
+      inline def setTargetKeyId(value: Input[String]): Self = StObject.set(x, "targetKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetKeyIdUndefined: Self = StObject.set(x, "targetKeyId", js.undefined)
+      inline def setTargetKeyIdUndefined: Self = StObject.set(x, "targetKeyId", js.undefined)
     }
   }
 }

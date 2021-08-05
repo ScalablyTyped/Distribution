@@ -21,44 +21,32 @@ object anon {
   }
   object PartialTestConfig {
     
-    @scala.inline
-    def apply(): PartialTestConfig = {
+    inline def apply(): PartialTestConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialTestConfig]
     }
     
-    @scala.inline
-    implicit class PartialTestConfigMutableBuilder[Self <: PartialTestConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PartialTestConfig](x: Self) {
       
-      @scala.inline
-      def setAllowPassphrases(value: Boolean): Self = StObject.set(x, "allowPassphrases", value.asInstanceOf[js.Any])
+      inline def setAllowPassphrases(value: Boolean): Self = StObject.set(x, "allowPassphrases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowPassphrasesUndefined: Self = StObject.set(x, "allowPassphrases", js.undefined)
+      inline def setAllowPassphrasesUndefined: Self = StObject.set(x, "allowPassphrases", js.undefined)
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+      inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+      inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       
-      @scala.inline
-      def setMinOptionalTestsToPass(value: Double): Self = StObject.set(x, "minOptionalTestsToPass", value.asInstanceOf[js.Any])
+      inline def setMinOptionalTestsToPass(value: Double): Self = StObject.set(x, "minOptionalTestsToPass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinOptionalTestsToPassUndefined: Self = StObject.set(x, "minOptionalTestsToPass", js.undefined)
+      inline def setMinOptionalTestsToPassUndefined: Self = StObject.set(x, "minOptionalTestsToPass", js.undefined)
       
-      @scala.inline
-      def setMinPhraseLength(value: Double): Self = StObject.set(x, "minPhraseLength", value.asInstanceOf[js.Any])
+      inline def setMinPhraseLength(value: Double): Self = StObject.set(x, "minPhraseLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPhraseLengthUndefined: Self = StObject.set(x, "minPhraseLength", js.undefined)
+      inline def setMinPhraseLengthUndefined: Self = StObject.set(x, "minPhraseLength", js.undefined)
     }
   }
 }

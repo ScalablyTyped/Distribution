@@ -22,32 +22,24 @@ object illustrationMod {
   }
   object IllustrationProps {
     
-    @scala.inline
-    def apply(): IllustrationProps = {
+    inline def apply(): IllustrationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IllustrationProps]
     }
     
-    @scala.inline
-    implicit class IllustrationPropsMutableBuilder[Self <: IllustrationProps] (val x: Self) extends AnyVal {
+    extension [Self <: IllustrationProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setIllustration(value: String | ReactNode): Self = StObject.set(x, "illustration", value.asInstanceOf[js.Any])
+      inline def setIllustration(value: String | ReactNode): Self = StObject.set(x, "illustration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIllustrationUndefined: Self = StObject.set(x, "illustration", js.undefined)
+      inline def setIllustrationUndefined: Self = StObject.set(x, "illustration", js.undefined)
     }
   }
 }

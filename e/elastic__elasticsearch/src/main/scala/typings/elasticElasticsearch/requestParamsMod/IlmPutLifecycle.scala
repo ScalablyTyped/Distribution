@@ -14,22 +14,17 @@ trait IlmPutLifecycle[T]
 }
 object IlmPutLifecycle {
   
-  @scala.inline
-  def apply[T](policy: String): IlmPutLifecycle[T] = {
+  inline def apply[T](policy: String): IlmPutLifecycle[T] = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IlmPutLifecycle[T]]
   }
   
-  @scala.inline
-  implicit class IlmPutLifecycleMutableBuilder[Self <: IlmPutLifecycle[?], T] (val x: Self & IlmPutLifecycle[T]) extends AnyVal {
+  extension [Self <: IlmPutLifecycle[?], T](x: Self & IlmPutLifecycle[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
   }
 }

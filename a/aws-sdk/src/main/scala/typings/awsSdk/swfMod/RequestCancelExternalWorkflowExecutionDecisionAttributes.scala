@@ -23,28 +23,21 @@ trait RequestCancelExternalWorkflowExecutionDecisionAttributes extends StObject 
 }
 object RequestCancelExternalWorkflowExecutionDecisionAttributes {
   
-  @scala.inline
-  def apply(workflowId: WorkflowId): RequestCancelExternalWorkflowExecutionDecisionAttributes = {
+  inline def apply(workflowId: WorkflowId): RequestCancelExternalWorkflowExecutionDecisionAttributes = {
     val __obj = js.Dynamic.literal(workflowId = workflowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestCancelExternalWorkflowExecutionDecisionAttributes]
   }
   
-  @scala.inline
-  implicit class RequestCancelExternalWorkflowExecutionDecisionAttributesMutableBuilder[Self <: RequestCancelExternalWorkflowExecutionDecisionAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: RequestCancelExternalWorkflowExecutionDecisionAttributes](x: Self) {
     
-    @scala.inline
-    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+    inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
-    @scala.inline
-    def setRunId(value: WorkflowRunIdOptional): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
+    inline def setRunId(value: WorkflowRunIdOptional): Self = StObject.set(x, "runId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunIdUndefined: Self = StObject.set(x, "runId", js.undefined)
+    inline def setRunIdUndefined: Self = StObject.set(x, "runId", js.undefined)
     
-    @scala.inline
-    def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
+    inline def setWorkflowId(value: WorkflowId): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
   }
 }

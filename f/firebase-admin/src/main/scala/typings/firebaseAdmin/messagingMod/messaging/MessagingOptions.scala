@@ -98,55 +98,39 @@ trait MessagingOptions
 }
 object MessagingOptions {
   
-  @scala.inline
-  def apply(): MessagingOptions = {
+  inline def apply(): MessagingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessagingOptions]
   }
   
-  @scala.inline
-  implicit class MessagingOptionsMutableBuilder[Self <: MessagingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessagingOptions](x: Self) {
     
-    @scala.inline
-    def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
+    inline def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapseKeyUndefined: Self = StObject.set(x, "collapseKey", js.undefined)
+    inline def setCollapseKeyUndefined: Self = StObject.set(x, "collapseKey", js.undefined)
     
-    @scala.inline
-    def setContentAvailable(value: Boolean): Self = StObject.set(x, "contentAvailable", value.asInstanceOf[js.Any])
+    inline def setContentAvailable(value: Boolean): Self = StObject.set(x, "contentAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentAvailableUndefined: Self = StObject.set(x, "contentAvailable", js.undefined)
+    inline def setContentAvailableUndefined: Self = StObject.set(x, "contentAvailable", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setMutableContent(value: Boolean): Self = StObject.set(x, "mutableContent", value.asInstanceOf[js.Any])
+    inline def setMutableContent(value: Boolean): Self = StObject.set(x, "mutableContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutableContentUndefined: Self = StObject.set(x, "mutableContent", js.undefined)
+    inline def setMutableContentUndefined: Self = StObject.set(x, "mutableContent", js.undefined)
     
-    @scala.inline
-    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setRestrictedPackageName(value: String): Self = StObject.set(x, "restrictedPackageName", value.asInstanceOf[js.Any])
+    inline def setRestrictedPackageName(value: String): Self = StObject.set(x, "restrictedPackageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictedPackageNameUndefined: Self = StObject.set(x, "restrictedPackageName", js.undefined)
+    inline def setRestrictedPackageNameUndefined: Self = StObject.set(x, "restrictedPackageName", js.undefined)
     
-    @scala.inline
-    def setTimeToLive(value: Double): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
+    inline def setTimeToLive(value: Double): Self = StObject.set(x, "timeToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
+    inline def setTimeToLiveUndefined: Self = StObject.set(x, "timeToLive", js.undefined)
   }
 }

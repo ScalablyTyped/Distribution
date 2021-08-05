@@ -26,8 +26,7 @@ object tooltipUniDriverMod {
   }
   object TooltipUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickOutside: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -42,26 +41,19 @@ object tooltipUniDriverMod {
       __obj.asInstanceOf[TooltipUniDriver]
     }
     
-    @scala.inline
-    implicit class TooltipUniDriverMutableBuilder[Self <: TooltipUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickOutside(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOutside", js.Any.fromFunction0(value))
+      inline def setClickOutside(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOutside", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipText(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipText", js.Any.fromFunction0(value))
+      inline def setGetTooltipText(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasSize(value: TooltipSize => js.Promise[Boolean]): Self = StObject.set(x, "hasSize", js.Any.fromFunction1(value))
+      inline def setHasSize(value: TooltipSize => js.Promise[Boolean]): Self = StObject.set(x, "hasSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+      inline def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+      inline def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTooltipExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "tooltipExists", js.Any.fromFunction0(value))
+      inline def setTooltipExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "tooltipExists", js.Any.fromFunction0(value))
     }
   }
 }

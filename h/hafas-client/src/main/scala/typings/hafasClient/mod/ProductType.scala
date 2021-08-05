@@ -34,8 +34,7 @@ trait ProductType extends StObject {
 }
 object ProductType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitmasks: js.Array[Double],
     default: Boolean,
     id: String,
@@ -47,28 +46,20 @@ object ProductType {
     __obj.asInstanceOf[ProductType]
   }
   
-  @scala.inline
-  implicit class ProductTypeMutableBuilder[Self <: ProductType] (val x: Self) extends AnyVal {
+  extension [Self <: ProductType](x: Self) {
     
-    @scala.inline
-    def setBitmasks(value: js.Array[Double]): Self = StObject.set(x, "bitmasks", value.asInstanceOf[js.Any])
+    inline def setBitmasks(value: js.Array[Double]): Self = StObject.set(x, "bitmasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmasksVarargs(value: Double*): Self = StObject.set(x, "bitmasks", js.Array(value :_*))
+    inline def setBitmasksVarargs(value: Double*): Self = StObject.set(x, "bitmasks", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

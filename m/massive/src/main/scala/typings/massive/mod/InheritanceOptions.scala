@@ -10,19 +10,15 @@ trait InheritanceOptions extends StObject {
 }
 object InheritanceOptions {
   
-  @scala.inline
-  def apply(): InheritanceOptions = {
+  inline def apply(): InheritanceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InheritanceOptions]
   }
   
-  @scala.inline
-  implicit class InheritanceOptionsMutableBuilder[Self <: InheritanceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InheritanceOptions](x: Self) {
     
-    @scala.inline
-    def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+    inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+    inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
   }
 }

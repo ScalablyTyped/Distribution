@@ -14,31 +14,23 @@ trait AZN extends StObject {
 }
 object AZN {
   
-  @scala.inline
-  def apply(AZN: js.Array[String], JPY: js.Array[String], USD: js.Array[String]): AZN = {
+  inline def apply(AZN: js.Array[String], JPY: js.Array[String], USD: js.Array[String]): AZN = {
     val __obj = js.Dynamic.literal(AZN = AZN.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
     __obj.asInstanceOf[AZN]
   }
   
-  @scala.inline
-  implicit class AZNMutableBuilder[Self <: AZN] (val x: Self) extends AnyVal {
+  extension [Self <: AZN](x: Self) {
     
-    @scala.inline
-    def setAZN(value: js.Array[String]): Self = StObject.set(x, "AZN", value.asInstanceOf[js.Any])
+    inline def setAZN(value: js.Array[String]): Self = StObject.set(x, "AZN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAZNVarargs(value: String*): Self = StObject.set(x, "AZN", js.Array(value :_*))
+    inline def setAZNVarargs(value: String*): Self = StObject.set(x, "AZN", js.Array(value :_*))
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
   }
 }

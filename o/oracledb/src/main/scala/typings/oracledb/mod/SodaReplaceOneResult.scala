@@ -14,16 +14,13 @@ trait SodaReplaceOneResult extends StObject {
 }
 object SodaReplaceOneResult {
   
-  @scala.inline
-  def apply(replaced: Boolean): SodaReplaceOneResult = {
+  inline def apply(replaced: Boolean): SodaReplaceOneResult = {
     val __obj = js.Dynamic.literal(replaced = replaced.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaReplaceOneResult]
   }
   
-  @scala.inline
-  implicit class SodaReplaceOneResultMutableBuilder[Self <: SodaReplaceOneResult] (val x: Self) extends AnyVal {
+  extension [Self <: SodaReplaceOneResult](x: Self) {
     
-    @scala.inline
-    def setReplaced(value: Boolean): Self = StObject.set(x, "replaced", value.asInstanceOf[js.Any])
+    inline def setReplaced(value: Boolean): Self = StObject.set(x, "replaced", value.asInstanceOf[js.Any])
   }
 }

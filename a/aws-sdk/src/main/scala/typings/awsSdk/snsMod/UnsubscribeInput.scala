@@ -13,16 +13,13 @@ trait UnsubscribeInput extends StObject {
 }
 object UnsubscribeInput {
   
-  @scala.inline
-  def apply(SubscriptionArn: subscriptionARN): UnsubscribeInput = {
+  inline def apply(SubscriptionArn: subscriptionARN): UnsubscribeInput = {
     val __obj = js.Dynamic.literal(SubscriptionArn = SubscriptionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnsubscribeInput]
   }
   
-  @scala.inline
-  implicit class UnsubscribeInputMutableBuilder[Self <: UnsubscribeInput] (val x: Self) extends AnyVal {
+  extension [Self <: UnsubscribeInput](x: Self) {
     
-    @scala.inline
-    def setSubscriptionArn(value: subscriptionARN): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setSubscriptionArn(value: subscriptionARN): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
   }
 }

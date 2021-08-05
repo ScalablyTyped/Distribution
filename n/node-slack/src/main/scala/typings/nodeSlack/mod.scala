@@ -34,56 +34,40 @@ object mod {
   }
   object Message {
     
-    @scala.inline
-    def apply(text: String): Message = {
+    inline def apply(text: String): Message = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+      inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      @scala.inline
-      def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setIcon_emoji(value: String): Self = StObject.set(x, "icon_emoji", value.asInstanceOf[js.Any])
+      inline def setIcon_emoji(value: String): Self = StObject.set(x, "icon_emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon_emojiUndefined: Self = StObject.set(x, "icon_emoji", js.undefined)
+      inline def setIcon_emojiUndefined: Self = StObject.set(x, "icon_emoji", js.undefined)
       
-      @scala.inline
-      def setLink_names(value: Double): Self = StObject.set(x, "link_names", value.asInstanceOf[js.Any])
+      inline def setLink_names(value: Double): Self = StObject.set(x, "link_names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink_namesUndefined: Self = StObject.set(x, "link_names", js.undefined)
+      inline def setLink_namesUndefined: Self = StObject.set(x, "link_names", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnfurl_links(value: Boolean): Self = StObject.set(x, "unfurl_links", value.asInstanceOf[js.Any])
+      inline def setUnfurl_links(value: Boolean): Self = StObject.set(x, "unfurl_links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnfurl_linksUndefined: Self = StObject.set(x, "unfurl_links", js.undefined)
+      inline def setUnfurl_linksUndefined: Self = StObject.set(x, "unfurl_links", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -93,17 +77,14 @@ object mod {
   }
   object Option {
     
-    @scala.inline
-    def apply(proxy: String): Option = {
+    inline def apply(proxy: String): Option = {
       val __obj = js.Dynamic.literal(proxy = proxy.asInstanceOf[js.Any])
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,59 +108,42 @@ object mod {
   }
   object Query {
     
-    @scala.inline
-    def apply(text: String): Query = {
+    inline def apply(text: String): Query = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Query]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+    extension [Self <: Query](x: Self) {
       
-      @scala.inline
-      def setChannel_id(value: String): Self = StObject.set(x, "channel_id", value.asInstanceOf[js.Any])
+      inline def setChannel_id(value: String): Self = StObject.set(x, "channel_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel_idUndefined: Self = StObject.set(x, "channel_id", js.undefined)
+      inline def setChannel_idUndefined: Self = StObject.set(x, "channel_id", js.undefined)
       
-      @scala.inline
-      def setChannel_name(value: String): Self = StObject.set(x, "channel_name", value.asInstanceOf[js.Any])
+      inline def setChannel_name(value: String): Self = StObject.set(x, "channel_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel_nameUndefined: Self = StObject.set(x, "channel_name", js.undefined)
+      inline def setChannel_nameUndefined: Self = StObject.set(x, "channel_name", js.undefined)
       
-      @scala.inline
-      def setTeam_id(value: String): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+      inline def setTeam_id(value: String): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeam_idUndefined: Self = StObject.set(x, "team_id", js.undefined)
+      inline def setTeam_idUndefined: Self = StObject.set(x, "team_id", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+      inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+      inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
       
-      @scala.inline
-      def setUser_name(value: String): Self = StObject.set(x, "user_name", value.asInstanceOf[js.Any])
+      inline def setUser_name(value: String): Self = StObject.set(x, "user_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser_nameUndefined: Self = StObject.set(x, "user_name", js.undefined)
+      inline def setUser_nameUndefined: Self = StObject.set(x, "user_name", js.undefined)
     }
   }
   
@@ -204,17 +168,14 @@ object mod {
   }
   object TextResponse {
     
-    @scala.inline
-    def apply(text: String): TextResponse = {
+    inline def apply(text: String): TextResponse = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextResponse]
     }
     
-    @scala.inline
-    implicit class TextResponseMutableBuilder[Self <: TextResponse] (val x: Self) extends AnyVal {
+    extension [Self <: TextResponse](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

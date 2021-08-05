@@ -18,43 +18,31 @@ trait MtlsEndpointAliases extends StObject {
 }
 object MtlsEndpointAliases {
   
-  @scala.inline
-  def apply(): MtlsEndpointAliases = {
+  inline def apply(): MtlsEndpointAliases = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MtlsEndpointAliases]
   }
   
-  @scala.inline
-  implicit class MtlsEndpointAliasesMutableBuilder[Self <: MtlsEndpointAliases] (val x: Self) extends AnyVal {
+  extension [Self <: MtlsEndpointAliases](x: Self) {
     
-    @scala.inline
-    def setDevice_authorization_endpoint(value: String): Self = StObject.set(x, "device_authorization_endpoint", value.asInstanceOf[js.Any])
+    inline def setDevice_authorization_endpoint(value: String): Self = StObject.set(x, "device_authorization_endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice_authorization_endpointUndefined: Self = StObject.set(x, "device_authorization_endpoint", js.undefined)
+    inline def setDevice_authorization_endpointUndefined: Self = StObject.set(x, "device_authorization_endpoint", js.undefined)
     
-    @scala.inline
-    def setIntrospection_endpoint(value: String): Self = StObject.set(x, "introspection_endpoint", value.asInstanceOf[js.Any])
+    inline def setIntrospection_endpoint(value: String): Self = StObject.set(x, "introspection_endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntrospection_endpointUndefined: Self = StObject.set(x, "introspection_endpoint", js.undefined)
+    inline def setIntrospection_endpointUndefined: Self = StObject.set(x, "introspection_endpoint", js.undefined)
     
-    @scala.inline
-    def setRevocation_endpoint(value: String): Self = StObject.set(x, "revocation_endpoint", value.asInstanceOf[js.Any])
+    inline def setRevocation_endpoint(value: String): Self = StObject.set(x, "revocation_endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevocation_endpointUndefined: Self = StObject.set(x, "revocation_endpoint", js.undefined)
+    inline def setRevocation_endpointUndefined: Self = StObject.set(x, "revocation_endpoint", js.undefined)
     
-    @scala.inline
-    def setToken_endpoint(value: String): Self = StObject.set(x, "token_endpoint", value.asInstanceOf[js.Any])
+    inline def setToken_endpoint(value: String): Self = StObject.set(x, "token_endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken_endpointUndefined: Self = StObject.set(x, "token_endpoint", js.undefined)
+    inline def setToken_endpointUndefined: Self = StObject.set(x, "token_endpoint", js.undefined)
     
-    @scala.inline
-    def setUserinfo_endpoint(value: String): Self = StObject.set(x, "userinfo_endpoint", value.asInstanceOf[js.Any])
+    inline def setUserinfo_endpoint(value: String): Self = StObject.set(x, "userinfo_endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserinfo_endpointUndefined: Self = StObject.set(x, "userinfo_endpoint", js.undefined)
+    inline def setUserinfo_endpointUndefined: Self = StObject.set(x, "userinfo_endpoint", js.undefined)
   }
 }

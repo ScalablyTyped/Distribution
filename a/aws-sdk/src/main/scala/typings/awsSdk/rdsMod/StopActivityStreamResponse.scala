@@ -23,31 +23,23 @@ trait StopActivityStreamResponse extends StObject {
 }
 object StopActivityStreamResponse {
   
-  @scala.inline
-  def apply(): StopActivityStreamResponse = {
+  inline def apply(): StopActivityStreamResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopActivityStreamResponse]
   }
   
-  @scala.inline
-  implicit class StopActivityStreamResponseMutableBuilder[Self <: StopActivityStreamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StopActivityStreamResponse](x: Self) {
     
-    @scala.inline
-    def setKinesisStreamName(value: String): Self = StObject.set(x, "KinesisStreamName", value.asInstanceOf[js.Any])
+    inline def setKinesisStreamName(value: String): Self = StObject.set(x, "KinesisStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamNameUndefined: Self = StObject.set(x, "KinesisStreamName", js.undefined)
+    inline def setKinesisStreamNameUndefined: Self = StObject.set(x, "KinesisStreamName", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ActivityStreamStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ActivityStreamStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

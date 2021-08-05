@@ -16,16 +16,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(soap: /* options */ js.UndefOr[Options] => JQueryXHR): JQueryStatic = {
+  inline def apply(soap: /* options */ js.UndefOr[Options] => JQueryXHR): JQueryStatic = {
     val __obj = js.Dynamic.literal(soap = js.Any.fromFunction1(soap))
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setSoap(value: /* options */ js.UndefOr[Options] => JQueryXHR): Self = StObject.set(x, "soap", js.Any.fromFunction1(value))
+    inline def setSoap(value: /* options */ js.UndefOr[Options] => JQueryXHR): Self = StObject.set(x, "soap", js.Any.fromFunction1(value))
   }
 }

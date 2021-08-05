@@ -18,46 +18,33 @@ trait Href extends StObject {
 }
 object Href {
   
-  @scala.inline
-  def apply(): Href = {
+  inline def apply(): Href = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Href]
   }
   
-  @scala.inline
-  implicit class HrefMutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
+  extension [Self <: Href](x: Self) {
     
-    @scala.inline
-    def setChildren(value: String | js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: String | js.Array[String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setFont(value: FontValue): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: FontValue): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontNull: Self = StObject.set(x, "font", null)
+    inline def setFontNull: Self = StObject.set(x, "font", null)
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setTextColor(value: ColorValue): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: ColorValue): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorNull: Self = StObject.set(x, "textColor", null)
+    inline def setTextColorNull: Self = StObject.set(x, "textColor", null)
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
   }
 }

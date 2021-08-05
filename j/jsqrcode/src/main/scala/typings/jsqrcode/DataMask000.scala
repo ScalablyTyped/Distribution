@@ -9,8 +9,7 @@ trait DataMask000
      with DataMask
 object DataMask000 {
   
-  @scala.inline
-  def apply(isMasked: (Double, Double) => Boolean, unmaskBitMatrix: (js.Array[Double], Double) => Unit): DataMask000 = {
+  inline def apply(isMasked: (Double, Double) => Boolean, unmaskBitMatrix: (js.Array[Double], Double) => Unit): DataMask000 = {
     val __obj = js.Dynamic.literal(isMasked = js.Any.fromFunction2(isMasked), unmaskBitMatrix = js.Any.fromFunction2(unmaskBitMatrix))
     __obj.asInstanceOf[DataMask000]
   }

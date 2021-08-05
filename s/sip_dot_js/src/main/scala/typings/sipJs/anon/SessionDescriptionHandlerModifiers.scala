@@ -14,28 +14,21 @@ trait SessionDescriptionHandlerModifiers extends StObject {
 }
 object SessionDescriptionHandlerModifiers {
   
-  @scala.inline
-  def apply(): SessionDescriptionHandlerModifiers = {
+  inline def apply(): SessionDescriptionHandlerModifiers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionDescriptionHandlerModifiers]
   }
   
-  @scala.inline
-  implicit class SessionDescriptionHandlerModifiersMutableBuilder[Self <: SessionDescriptionHandlerModifiers] (val x: Self) extends AnyVal {
+  extension [Self <: SessionDescriptionHandlerModifiers](x: Self) {
     
-    @scala.inline
-    def setSessionDescriptionHandlerModifiers(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", value.asInstanceOf[js.Any])
+    inline def setSessionDescriptionHandlerModifiers(value: js.Array[SessionDescriptionHandlerModifier]): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionDescriptionHandlerModifiersUndefined: Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.undefined)
+    inline def setSessionDescriptionHandlerModifiersUndefined: Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.undefined)
     
-    @scala.inline
-    def setSessionDescriptionHandlerModifiersVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.Array(value :_*))
+    inline def setSessionDescriptionHandlerModifiersVarargs(value: SessionDescriptionHandlerModifier*): Self = StObject.set(x, "sessionDescriptionHandlerModifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setSessionDescriptionHandlerOptions(value: SessionDescriptionHandlerOptions): Self = StObject.set(x, "sessionDescriptionHandlerOptions", value.asInstanceOf[js.Any])
+    inline def setSessionDescriptionHandlerOptions(value: SessionDescriptionHandlerOptions): Self = StObject.set(x, "sessionDescriptionHandlerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionDescriptionHandlerOptionsUndefined: Self = StObject.set(x, "sessionDescriptionHandlerOptions", js.undefined)
+    inline def setSessionDescriptionHandlerOptionsUndefined: Self = StObject.set(x, "sessionDescriptionHandlerOptions", js.undefined)
   }
 }

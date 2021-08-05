@@ -633,8 +633,7 @@ object Core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getForCurrentThread(): typings.winrt.Windows.UI.Core.CoreWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentThread")().asInstanceOf[typings.winrt.Windows.UI.Core.CoreWindow]
+    inline def getForCurrentThread(): typings.winrt.Windows.UI.Core.CoreWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentThread")().asInstanceOf[typings.winrt.Windows.UI.Core.CoreWindow]
   }
   
   @JSGlobal("Windows.UI.Core.CoreWindowActivationState")
@@ -779,8 +778,7 @@ object Core {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.UI.Core.CoreWindowResizeManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.Core.CoreWindowResizeManager]
+    inline def getForCurrentView(): typings.winrt.Windows.UI.Core.CoreWindowResizeManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.Core.CoreWindowResizeManager]
   }
   
   @JSGlobal("Windows.UI.Core.IdleDispatchedHandlerArgs")

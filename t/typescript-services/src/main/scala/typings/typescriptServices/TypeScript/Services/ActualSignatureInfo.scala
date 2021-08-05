@@ -16,8 +16,7 @@ trait ActualSignatureInfo extends StObject {
 }
 object ActualSignatureInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentParameter: Double,
     currentParameterIsTypeParameter: Boolean,
     parameterLimChar: Double,
@@ -27,19 +26,14 @@ object ActualSignatureInfo {
     __obj.asInstanceOf[ActualSignatureInfo]
   }
   
-  @scala.inline
-  implicit class ActualSignatureInfoMutableBuilder[Self <: ActualSignatureInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ActualSignatureInfo](x: Self) {
     
-    @scala.inline
-    def setCurrentParameter(value: Double): Self = StObject.set(x, "currentParameter", value.asInstanceOf[js.Any])
+    inline def setCurrentParameter(value: Double): Self = StObject.set(x, "currentParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentParameterIsTypeParameter(value: Boolean): Self = StObject.set(x, "currentParameterIsTypeParameter", value.asInstanceOf[js.Any])
+    inline def setCurrentParameterIsTypeParameter(value: Boolean): Self = StObject.set(x, "currentParameterIsTypeParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterLimChar(value: Double): Self = StObject.set(x, "parameterLimChar", value.asInstanceOf[js.Any])
+    inline def setParameterLimChar(value: Double): Self = StObject.set(x, "parameterLimChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterMinChar(value: Double): Self = StObject.set(x, "parameterMinChar", value.asInstanceOf[js.Any])
+    inline def setParameterMinChar(value: Double): Self = StObject.set(x, "parameterMinChar", value.asInstanceOf[js.Any])
   }
 }

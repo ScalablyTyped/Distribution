@@ -10,16 +10,13 @@ trait DeleteGroupParameters extends StObject {
 }
 object DeleteGroupParameters {
   
-  @scala.inline
-  def apply(channelGroup: String): DeleteGroupParameters = {
+  inline def apply(channelGroup: String): DeleteGroupParameters = {
     val __obj = js.Dynamic.literal(channelGroup = channelGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteGroupParameters]
   }
   
-  @scala.inline
-  implicit class DeleteGroupParametersMutableBuilder[Self <: DeleteGroupParameters] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteGroupParameters](x: Self) {
     
-    @scala.inline
-    def setChannelGroup(value: String): Self = StObject.set(x, "channelGroup", value.asInstanceOf[js.Any])
+    inline def setChannelGroup(value: String): Self = StObject.set(x, "channelGroup", value.asInstanceOf[js.Any])
   }
 }

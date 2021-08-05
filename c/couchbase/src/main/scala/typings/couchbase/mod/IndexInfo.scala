@@ -56,8 +56,7 @@ trait IndexInfo extends StObject {
 }
 object IndexInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     index_key: js.Array[String],
     is_primary: Boolean,
@@ -72,37 +71,26 @@ object IndexInfo {
     __obj.asInstanceOf[IndexInfo]
   }
   
-  @scala.inline
-  implicit class IndexInfoMutableBuilder[Self <: IndexInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IndexInfo](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex_key(value: js.Array[String]): Self = StObject.set(x, "index_key", value.asInstanceOf[js.Any])
+    inline def setIndex_key(value: js.Array[String]): Self = StObject.set(x, "index_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex_keyVarargs(value: String*): Self = StObject.set(x, "index_key", js.Array(value :_*))
+    inline def setIndex_keyVarargs(value: String*): Self = StObject.set(x, "index_key", js.Array(value :_*))
     
-    @scala.inline
-    def setIs_primary(value: Boolean): Self = StObject.set(x, "is_primary", value.asInstanceOf[js.Any])
+    inline def setIs_primary(value: Boolean): Self = StObject.set(x, "is_primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyspace_id(value: String): Self = StObject.set(x, "keyspace_id", value.asInstanceOf[js.Any])
+    inline def setKeyspace_id(value: String): Self = StObject.set(x, "keyspace_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace_id(value: String): Self = StObject.set(x, "namespace_id", value.asInstanceOf[js.Any])
+    inline def setNamespace_id(value: String): Self = StObject.set(x, "namespace_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore_id(value: String): Self = StObject.set(x, "store_id", value.asInstanceOf[js.Any])
+    inline def setStore_id(value: String): Self = StObject.set(x, "store_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsing(value: gsi): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
+    inline def setUsing(value: gsi): Self = StObject.set(x, "using", value.asInstanceOf[js.Any])
   }
 }

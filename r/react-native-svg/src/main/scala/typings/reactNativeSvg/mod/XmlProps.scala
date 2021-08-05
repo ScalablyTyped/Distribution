@@ -14,25 +14,19 @@ trait XmlProps
 }
 object XmlProps {
   
-  @scala.inline
-  def apply(): XmlProps = {
+  inline def apply(): XmlProps = {
     val __obj = js.Dynamic.literal(xml = null)
     __obj.asInstanceOf[XmlProps]
   }
   
-  @scala.inline
-  implicit class XmlPropsMutableBuilder[Self <: XmlProps] (val x: Self) extends AnyVal {
+  extension [Self <: XmlProps](x: Self) {
     
-    @scala.inline
-    def setOverride(value: SvgProps): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: SvgProps): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
     
-    @scala.inline
-    def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    inline def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlNull: Self = StObject.set(x, "xml", null)
+    inline def setXmlNull: Self = StObject.set(x, "xml", null)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.OrderField")
 @js.native
-class OrderField protected ()
+/* private */ class OrderField ()
   extends StObject
      with typings.activexOutlook.Outlook.OrderField {
   
@@ -20,7 +20,7 @@ class OrderField protected ()
   /* CompleteClass */
   var IsDescending: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.OrderField_typekey")
   var OutlookDotOrderField_typekey: typings.activexOutlook.Outlook.OrderField = js.native
   

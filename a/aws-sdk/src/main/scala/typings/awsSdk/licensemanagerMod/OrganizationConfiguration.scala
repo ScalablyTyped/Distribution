@@ -13,16 +13,13 @@ trait OrganizationConfiguration extends StObject {
 }
 object OrganizationConfiguration {
   
-  @scala.inline
-  def apply(EnableIntegration: Boolean): OrganizationConfiguration = {
+  inline def apply(EnableIntegration: Boolean): OrganizationConfiguration = {
     val __obj = js.Dynamic.literal(EnableIntegration = EnableIntegration.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrganizationConfiguration]
   }
   
-  @scala.inline
-  implicit class OrganizationConfigurationMutableBuilder[Self <: OrganizationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnableIntegration(value: Boolean): Self = StObject.set(x, "EnableIntegration", value.asInstanceOf[js.Any])
+    inline def setEnableIntegration(value: Boolean): Self = StObject.set(x, "EnableIntegration", value.asInstanceOf[js.Any])
   }
 }

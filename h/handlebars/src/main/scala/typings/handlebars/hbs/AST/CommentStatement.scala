@@ -17,23 +17,18 @@ trait CommentStatement
 }
 object CommentStatement {
   
-  @scala.inline
-  def apply(loc: SourceLocation, strip: StripFlags, value: String): CommentStatement = {
+  inline def apply(loc: SourceLocation, strip: StripFlags, value: String): CommentStatement = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], strip = strip.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CommentStatement")
     __obj.asInstanceOf[CommentStatement]
   }
   
-  @scala.inline
-  implicit class CommentStatementMutableBuilder[Self <: CommentStatement] (val x: Self) extends AnyVal {
+  extension [Self <: CommentStatement](x: Self) {
     
-    @scala.inline
-    def setStrip(value: StripFlags): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+    inline def setStrip(value: StripFlags): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.CommentStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.handlebars.handlebarsStrings.CommentStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

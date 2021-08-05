@@ -13,19 +13,15 @@ trait EventSyntheticEventValueString extends StObject {
 }
 object EventSyntheticEventValueString {
   
-  @scala.inline
-  def apply(event: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event], value: String): EventSyntheticEventValueString = {
+  inline def apply(event: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event], value: String): EventSyntheticEventValueString = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSyntheticEventValueString]
   }
   
-  @scala.inline
-  implicit class EventSyntheticEventValueStringMutableBuilder[Self <: EventSyntheticEventValueString] (val x: Self) extends AnyVal {
+  extension [Self <: EventSyntheticEventValueString](x: Self) {
     
-    @scala.inline
-    def setEvent(value: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

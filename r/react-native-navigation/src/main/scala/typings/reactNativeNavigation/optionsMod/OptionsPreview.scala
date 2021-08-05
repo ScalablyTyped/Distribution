@@ -37,46 +37,33 @@ trait OptionsPreview extends StObject {
 }
 object OptionsPreview {
   
-  @scala.inline
-  def apply(): OptionsPreview = {
+  inline def apply(): OptionsPreview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionsPreview]
   }
   
-  @scala.inline
-  implicit class OptionsPreviewMutableBuilder[Self <: OptionsPreview] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsPreview](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[OptionsPreviewAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[OptionsPreviewAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: OptionsPreviewAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: OptionsPreviewAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+    inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setReactTag(value: Double): Self = StObject.set(x, "reactTag", value.asInstanceOf[js.Any])
+    inline def setReactTag(value: Double): Self = StObject.set(x, "reactTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactTagUndefined: Self = StObject.set(x, "reactTag", js.undefined)
+    inline def setReactTagUndefined: Self = StObject.set(x, "reactTag", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

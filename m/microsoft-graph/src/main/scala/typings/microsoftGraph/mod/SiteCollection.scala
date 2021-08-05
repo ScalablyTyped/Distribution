@@ -17,40 +17,29 @@ trait SiteCollection extends StObject {
 }
 object SiteCollection {
   
-  @scala.inline
-  def apply(): SiteCollection = {
+  inline def apply(): SiteCollection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SiteCollection]
   }
   
-  @scala.inline
-  implicit class SiteCollectionMutableBuilder[Self <: SiteCollection] (val x: Self) extends AnyVal {
+  extension [Self <: SiteCollection](x: Self) {
     
-    @scala.inline
-    def setDataLocationCode(value: NullableOption[String]): Self = StObject.set(x, "dataLocationCode", value.asInstanceOf[js.Any])
+    inline def setDataLocationCode(value: NullableOption[String]): Self = StObject.set(x, "dataLocationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLocationCodeNull: Self = StObject.set(x, "dataLocationCode", null)
+    inline def setDataLocationCodeNull: Self = StObject.set(x, "dataLocationCode", null)
     
-    @scala.inline
-    def setDataLocationCodeUndefined: Self = StObject.set(x, "dataLocationCode", js.undefined)
+    inline def setDataLocationCodeUndefined: Self = StObject.set(x, "dataLocationCode", js.undefined)
     
-    @scala.inline
-    def setHostname(value: NullableOption[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: NullableOption[String]): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnameNull: Self = StObject.set(x, "hostname", null)
+    inline def setHostnameNull: Self = StObject.set(x, "hostname", null)
     
-    @scala.inline
-    def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+    inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
     
-    @scala.inline
-    def setRoot(value: NullableOption[Root]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: NullableOption[Root]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootNull: Self = StObject.set(x, "root", null)
+    inline def setRootNull: Self = StObject.set(x, "root", null)
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

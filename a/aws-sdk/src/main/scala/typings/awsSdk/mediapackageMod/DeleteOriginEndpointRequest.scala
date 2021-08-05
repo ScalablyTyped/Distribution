@@ -13,16 +13,13 @@ trait DeleteOriginEndpointRequest extends StObject {
 }
 object DeleteOriginEndpointRequest {
   
-  @scala.inline
-  def apply(Id: string): DeleteOriginEndpointRequest = {
+  inline def apply(Id: string): DeleteOriginEndpointRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOriginEndpointRequest]
   }
   
-  @scala.inline
-  implicit class DeleteOriginEndpointRequestMutableBuilder[Self <: DeleteOriginEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOriginEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

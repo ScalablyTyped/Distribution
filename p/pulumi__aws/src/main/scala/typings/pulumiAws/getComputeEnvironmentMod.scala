@@ -12,10 +12,8 @@ object getComputeEnvironmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getComputeEnvironment(args: GetComputeEnvironmentArgs): js.Promise[GetComputeEnvironmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComputeEnvironment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetComputeEnvironmentResult]]
-  @scala.inline
-  def getComputeEnvironment(args: GetComputeEnvironmentArgs, opts: InvokeOptions): js.Promise[GetComputeEnvironmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComputeEnvironment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetComputeEnvironmentResult]]
+  inline def getComputeEnvironment(args: GetComputeEnvironmentArgs): js.Promise[GetComputeEnvironmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getComputeEnvironment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetComputeEnvironmentResult]]
+  inline def getComputeEnvironment(args: GetComputeEnvironmentArgs, opts: InvokeOptions): js.Promise[GetComputeEnvironmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getComputeEnvironment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetComputeEnvironmentResult]]
   
   trait GetComputeEnvironmentArgs extends StObject {
     
@@ -31,23 +29,18 @@ object getComputeEnvironmentMod {
   }
   object GetComputeEnvironmentArgs {
     
-    @scala.inline
-    def apply(computeEnvironmentName: String): GetComputeEnvironmentArgs = {
+    inline def apply(computeEnvironmentName: String): GetComputeEnvironmentArgs = {
       val __obj = js.Dynamic.literal(computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetComputeEnvironmentArgs]
     }
     
-    @scala.inline
-    implicit class GetComputeEnvironmentArgsMutableBuilder[Self <: GetComputeEnvironmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetComputeEnvironmentArgs](x: Self) {
       
-      @scala.inline
-      def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
+      inline def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -102,8 +95,7 @@ object getComputeEnvironmentMod {
   }
   object GetComputeEnvironmentResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       computeEnvironmentName: String,
       ecsClusterArn: String,
@@ -120,38 +112,27 @@ object getComputeEnvironmentMod {
       __obj.asInstanceOf[GetComputeEnvironmentResult]
     }
     
-    @scala.inline
-    implicit class GetComputeEnvironmentResultMutableBuilder[Self <: GetComputeEnvironmentResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetComputeEnvironmentResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
+      inline def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcsClusterArn(value: String): Self = StObject.set(x, "ecsClusterArn", value.asInstanceOf[js.Any])
+      inline def setEcsClusterArn(value: String): Self = StObject.set(x, "ecsClusterArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+      inline def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+      inline def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

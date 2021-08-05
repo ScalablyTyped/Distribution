@@ -54,8 +54,7 @@ trait RealWorldSize
 }
 object RealWorldSize {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -67,37 +66,26 @@ object RealWorldSize {
     __obj.asInstanceOf[RealWorldSize]
   }
   
-  @scala.inline
-  implicit class RealWorldSizeMutableBuilder[Self <: RealWorldSize] (val x: Self) extends AnyVal {
+  extension [Self <: RealWorldSize](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
+    inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
+    inline def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
     
-    @scala.inline
-    def setValueRepresentation(value: String): Self = StObject.set(x, "valueRepresentation", value.asInstanceOf[js.Any])
+    inline def setValueRepresentation(value: String): Self = StObject.set(x, "valueRepresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRepresentationUndefined: Self = StObject.set(x, "valueRepresentation", js.undefined)
+    inline def setValueRepresentationUndefined: Self = StObject.set(x, "valueRepresentation", js.undefined)
     
-    @scala.inline
-    def setValueUnit(value: String): Self = StObject.set(x, "valueUnit", value.asInstanceOf[js.Any])
+    inline def setValueUnit(value: String): Self = StObject.set(x, "valueUnit", value.asInstanceOf[js.Any])
   }
 }

@@ -20,31 +20,23 @@ trait AxisLabelsFormatterContextObject[T] extends StObject {
 }
 object AxisLabelsFormatterContextObject {
   
-  @scala.inline
-  def apply[T](axis: Axis, chart: Chart_, isFirst: Boolean, isLast: Boolean, pos: Double, value: T): AxisLabelsFormatterContextObject[T] = {
+  inline def apply[T](axis: Axis, chart: Chart_, isFirst: Boolean, isLast: Boolean, pos: Double, value: T): AxisLabelsFormatterContextObject[T] = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any], isFirst = isFirst.asInstanceOf[js.Any], isLast = isLast.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisLabelsFormatterContextObject[T]]
   }
   
-  @scala.inline
-  implicit class AxisLabelsFormatterContextObjectMutableBuilder[Self <: AxisLabelsFormatterContextObject[?], T] (val x: Self & AxisLabelsFormatterContextObject[T]) extends AnyVal {
+  extension [Self <: AxisLabelsFormatterContextObject[?], T](x: Self & AxisLabelsFormatterContextObject[T]) {
     
-    @scala.inline
-    def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: Chart_): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
+    inline def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
+    inline def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

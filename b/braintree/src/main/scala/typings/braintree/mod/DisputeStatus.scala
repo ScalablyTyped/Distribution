@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisputeStatus extends StObject
 object DisputeStatus {
   
-  @scala.inline
-  def Accepted: typings.braintree.braintreeStrings.Accepted = "Accepted".asInstanceOf[typings.braintree.braintreeStrings.Accepted]
+  inline def Accepted: typings.braintree.braintreeStrings.Accepted = "Accepted".asInstanceOf[typings.braintree.braintreeStrings.Accepted]
   
-  @scala.inline
-  def Disputed: typings.braintree.braintreeStrings.Disputed = "Disputed".asInstanceOf[typings.braintree.braintreeStrings.Disputed]
+  inline def Disputed: typings.braintree.braintreeStrings.Disputed = "Disputed".asInstanceOf[typings.braintree.braintreeStrings.Disputed]
   
-  @scala.inline
-  def Expired: typings.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typings.braintree.braintreeStrings.Expired]
+  inline def Expired: typings.braintree.braintreeStrings.Expired = "Expired".asInstanceOf[typings.braintree.braintreeStrings.Expired]
   
-  @scala.inline
-  def Lost: typings.braintree.braintreeStrings.Lost = "Lost".asInstanceOf[typings.braintree.braintreeStrings.Lost]
+  inline def Lost: typings.braintree.braintreeStrings.Lost = "Lost".asInstanceOf[typings.braintree.braintreeStrings.Lost]
   
-  @scala.inline
-  def Open: typings.braintree.braintreeStrings.Open = "Open".asInstanceOf[typings.braintree.braintreeStrings.Open]
+  inline def Open: typings.braintree.braintreeStrings.Open = "Open".asInstanceOf[typings.braintree.braintreeStrings.Open]
   
-  @scala.inline
-  def Won: typings.braintree.braintreeStrings.Won = "Won".asInstanceOf[typings.braintree.braintreeStrings.Won]
+  inline def Won: typings.braintree.braintreeStrings.Won = "Won".asInstanceOf[typings.braintree.braintreeStrings.Won]
 }

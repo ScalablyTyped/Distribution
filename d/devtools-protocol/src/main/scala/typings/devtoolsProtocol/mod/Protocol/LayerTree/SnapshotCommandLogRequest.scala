@@ -13,16 +13,13 @@ trait SnapshotCommandLogRequest extends StObject {
 }
 object SnapshotCommandLogRequest {
   
-  @scala.inline
-  def apply(snapshotId: SnapshotId): SnapshotCommandLogRequest = {
+  inline def apply(snapshotId: SnapshotId): SnapshotCommandLogRequest = {
     val __obj = js.Dynamic.literal(snapshotId = snapshotId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotCommandLogRequest]
   }
   
-  @scala.inline
-  implicit class SnapshotCommandLogRequestMutableBuilder[Self <: SnapshotCommandLogRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotCommandLogRequest](x: Self) {
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
   }
 }

@@ -38,8 +38,7 @@ trait CreateResolverEndpointRequest extends StObject {
 }
 object CreateResolverEndpointRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreatorRequestId: CreatorRequestId,
     Direction: ResolverEndpointDirection,
     IpAddresses: IpAddressesRequest,
@@ -49,40 +48,28 @@ object CreateResolverEndpointRequest {
     __obj.asInstanceOf[CreateResolverEndpointRequest]
   }
   
-  @scala.inline
-  implicit class CreateResolverEndpointRequestMutableBuilder[Self <: CreateResolverEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateResolverEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setCreatorRequestId(value: CreatorRequestId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
+    inline def setCreatorRequestId(value: CreatorRequestId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: ResolverEndpointDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: ResolverEndpointDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddresses(value: IpAddressesRequest): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
+    inline def setIpAddresses(value: IpAddressesRequest): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressesVarargs(value: IpAddressRequest*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: IpAddressRequest*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: ResourceId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: ResourceId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

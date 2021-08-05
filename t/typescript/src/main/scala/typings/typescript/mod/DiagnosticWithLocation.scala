@@ -19,8 +19,7 @@ trait DiagnosticWithLocation
 }
 object DiagnosticWithLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: DiagnosticCategory,
     code: Double,
     file: SourceFile,
@@ -32,16 +31,12 @@ object DiagnosticWithLocation {
     __obj.asInstanceOf[DiagnosticWithLocation]
   }
   
-  @scala.inline
-  implicit class DiagnosticWithLocationMutableBuilder[Self <: DiagnosticWithLocation] (val x: Self) extends AnyVal {
+  extension [Self <: DiagnosticWithLocation](x: Self) {
     
-    @scala.inline
-    def setFile(value: SourceFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: SourceFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

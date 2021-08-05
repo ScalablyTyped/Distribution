@@ -28,34 +28,25 @@ trait ModifyTransitGatewayRequest extends StObject {
 }
 object ModifyTransitGatewayRequest {
   
-  @scala.inline
-  def apply(TransitGatewayId: TransitGatewayId): ModifyTransitGatewayRequest = {
+  inline def apply(TransitGatewayId: TransitGatewayId): ModifyTransitGatewayRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayId = TransitGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTransitGatewayRequest]
   }
   
-  @scala.inline
-  implicit class ModifyTransitGatewayRequestMutableBuilder[Self <: ModifyTransitGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyTransitGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setOptions(value: ModifyTransitGatewayOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ModifyTransitGatewayOptions): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
   }
 }

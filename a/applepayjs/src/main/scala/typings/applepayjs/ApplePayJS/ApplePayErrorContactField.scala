@@ -25,42 +25,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplePayErrorContactField extends StObject
 object ApplePayErrorContactField {
   
-  @scala.inline
-  def addressLines: typings.applepayjs.applepayjsStrings.addressLines = "addressLines".asInstanceOf[typings.applepayjs.applepayjsStrings.addressLines]
+  inline def addressLines: typings.applepayjs.applepayjsStrings.addressLines = "addressLines".asInstanceOf[typings.applepayjs.applepayjsStrings.addressLines]
   
-  @scala.inline
-  def administrativeArea: typings.applepayjs.applepayjsStrings.administrativeArea = "administrativeArea".asInstanceOf[typings.applepayjs.applepayjsStrings.administrativeArea]
+  inline def administrativeArea: typings.applepayjs.applepayjsStrings.administrativeArea = "administrativeArea".asInstanceOf[typings.applepayjs.applepayjsStrings.administrativeArea]
   
-  @scala.inline
-  def country: typings.applepayjs.applepayjsStrings.country = "country".asInstanceOf[typings.applepayjs.applepayjsStrings.country]
+  inline def country: typings.applepayjs.applepayjsStrings.country = "country".asInstanceOf[typings.applepayjs.applepayjsStrings.country]
   
-  @scala.inline
-  def countryCode: typings.applepayjs.applepayjsStrings.countryCode = "countryCode".asInstanceOf[typings.applepayjs.applepayjsStrings.countryCode]
+  inline def countryCode: typings.applepayjs.applepayjsStrings.countryCode = "countryCode".asInstanceOf[typings.applepayjs.applepayjsStrings.countryCode]
   
-  @scala.inline
-  def emailAddress: typings.applepayjs.applepayjsStrings.emailAddress = "emailAddress".asInstanceOf[typings.applepayjs.applepayjsStrings.emailAddress]
+  inline def emailAddress: typings.applepayjs.applepayjsStrings.emailAddress = "emailAddress".asInstanceOf[typings.applepayjs.applepayjsStrings.emailAddress]
   
-  @scala.inline
-  def locality: typings.applepayjs.applepayjsStrings.locality = "locality".asInstanceOf[typings.applepayjs.applepayjsStrings.locality]
+  inline def locality: typings.applepayjs.applepayjsStrings.locality = "locality".asInstanceOf[typings.applepayjs.applepayjsStrings.locality]
   
-  @scala.inline
-  def name: typings.applepayjs.applepayjsStrings.name = "name".asInstanceOf[typings.applepayjs.applepayjsStrings.name]
+  inline def name: typings.applepayjs.applepayjsStrings.name = "name".asInstanceOf[typings.applepayjs.applepayjsStrings.name]
   
-  @scala.inline
-  def phoneNumber: typings.applepayjs.applepayjsStrings.phoneNumber = "phoneNumber".asInstanceOf[typings.applepayjs.applepayjsStrings.phoneNumber]
+  inline def phoneNumber: typings.applepayjs.applepayjsStrings.phoneNumber = "phoneNumber".asInstanceOf[typings.applepayjs.applepayjsStrings.phoneNumber]
   
-  @scala.inline
-  def phoneticName: typings.applepayjs.applepayjsStrings.phoneticName = "phoneticName".asInstanceOf[typings.applepayjs.applepayjsStrings.phoneticName]
+  inline def phoneticName: typings.applepayjs.applepayjsStrings.phoneticName = "phoneticName".asInstanceOf[typings.applepayjs.applepayjsStrings.phoneticName]
   
-  @scala.inline
-  def postalAddress: typings.applepayjs.applepayjsStrings.postalAddress = "postalAddress".asInstanceOf[typings.applepayjs.applepayjsStrings.postalAddress]
+  inline def postalAddress: typings.applepayjs.applepayjsStrings.postalAddress = "postalAddress".asInstanceOf[typings.applepayjs.applepayjsStrings.postalAddress]
   
-  @scala.inline
-  def postalCode: typings.applepayjs.applepayjsStrings.postalCode = "postalCode".asInstanceOf[typings.applepayjs.applepayjsStrings.postalCode]
+  inline def postalCode: typings.applepayjs.applepayjsStrings.postalCode = "postalCode".asInstanceOf[typings.applepayjs.applepayjsStrings.postalCode]
   
-  @scala.inline
-  def subAdministrativeArea: typings.applepayjs.applepayjsStrings.subAdministrativeArea = "subAdministrativeArea".asInstanceOf[typings.applepayjs.applepayjsStrings.subAdministrativeArea]
+  inline def subAdministrativeArea: typings.applepayjs.applepayjsStrings.subAdministrativeArea = "subAdministrativeArea".asInstanceOf[typings.applepayjs.applepayjsStrings.subAdministrativeArea]
   
-  @scala.inline
-  def subLocality: typings.applepayjs.applepayjsStrings.subLocality = "subLocality".asInstanceOf[typings.applepayjs.applepayjsStrings.subLocality]
+  inline def subLocality: typings.applepayjs.applepayjsStrings.subLocality = "subLocality".asInstanceOf[typings.applepayjs.applepayjsStrings.subLocality]
 }

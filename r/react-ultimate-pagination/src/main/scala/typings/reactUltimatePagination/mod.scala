@@ -57,8 +57,7 @@ object mod {
     /* "PREVIOUS_PAGE_LINK" */ val PREVIOUS_PAGE_LINK: typings.reactUltimatePagination.mod.ITEM_TYPES.PREVIOUS_PAGE_LINK & String = js.native
   }
   
-  @scala.inline
-  def createUltimatePagination(options: CreateUltimatePaginationOptions): ComponentType[UltimatePaginationProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUltimatePagination")(options.asInstanceOf[js.Any]).asInstanceOf[ComponentType[UltimatePaginationProps]]
+  inline def createUltimatePagination(options: CreateUltimatePaginationOptions): ComponentType[UltimatePaginationProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUltimatePagination")(options.asInstanceOf[js.Any]).asInstanceOf[ComponentType[UltimatePaginationProps]]
   
   trait CreateUltimatePaginationOptions extends StObject {
     
@@ -74,23 +73,18 @@ object mod {
   }
   object CreateUltimatePaginationOptions {
     
-    @scala.inline
-    def apply(itemTypeToComponent: ItemTypeToComponent): CreateUltimatePaginationOptions = {
+    inline def apply(itemTypeToComponent: ItemTypeToComponent): CreateUltimatePaginationOptions = {
       val __obj = js.Dynamic.literal(itemTypeToComponent = itemTypeToComponent.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateUltimatePaginationOptions]
     }
     
-    @scala.inline
-    implicit class CreateUltimatePaginationOptionsMutableBuilder[Self <: CreateUltimatePaginationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateUltimatePaginationOptions](x: Self) {
       
-      @scala.inline
-      def setItemTypeToComponent(value: ItemTypeToComponent): Self = StObject.set(x, "itemTypeToComponent", value.asInstanceOf[js.Any])
+      inline def setItemTypeToComponent(value: ItemTypeToComponent): Self = StObject.set(x, "itemTypeToComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperComponent(value: String | ComponentType[js.Any]): Self = StObject.set(x, "WrapperComponent", value.asInstanceOf[js.Any])
+      inline def setWrapperComponent(value: String | ComponentType[js.Any]): Self = StObject.set(x, "WrapperComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperComponentUndefined: Self = StObject.set(x, "WrapperComponent", js.undefined)
+      inline def setWrapperComponentUndefined: Self = StObject.set(x, "WrapperComponent", js.undefined)
     }
   }
   
@@ -128,8 +122,7 @@ object mod {
   }
   object ItemTypeToComponent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ELLIPSIS: ComponentType[PaginationComponentProps],
       FIRST_PAGE_LINK: ComponentType[PaginationComponentProps],
       LAST_PAGE_LINK: ComponentType[PaginationComponentProps],
@@ -141,26 +134,19 @@ object mod {
       __obj.asInstanceOf[ItemTypeToComponent]
     }
     
-    @scala.inline
-    implicit class ItemTypeToComponentMutableBuilder[Self <: ItemTypeToComponent] (val x: Self) extends AnyVal {
+    extension [Self <: ItemTypeToComponent](x: Self) {
       
-      @scala.inline
-      def setELLIPSIS(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "ELLIPSIS", value.asInstanceOf[js.Any])
+      inline def setELLIPSIS(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "ELLIPSIS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIRST_PAGE_LINK(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "FIRST_PAGE_LINK", value.asInstanceOf[js.Any])
+      inline def setFIRST_PAGE_LINK(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "FIRST_PAGE_LINK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLAST_PAGE_LINK(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "LAST_PAGE_LINK", value.asInstanceOf[js.Any])
+      inline def setLAST_PAGE_LINK(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "LAST_PAGE_LINK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNEXT_PAGE_LINK(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "NEXT_PAGE_LINK", value.asInstanceOf[js.Any])
+      inline def setNEXT_PAGE_LINK(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "NEXT_PAGE_LINK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPAGE(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "PAGE", value.asInstanceOf[js.Any])
+      inline def setPAGE(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "PAGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPREVIOUS_PAGE_LINK(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "PREVIOUS_PAGE_LINK", value.asInstanceOf[js.Any])
+      inline def setPREVIOUS_PAGE_LINK(value: ComponentType[PaginationComponentProps]): Self = StObject.set(x, "PREVIOUS_PAGE_LINK", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,26 +174,20 @@ object mod {
   }
   object PaginationComponentProps {
     
-    @scala.inline
-    def apply(isActive: Boolean, isDisabled: Boolean, onClick: () => Unit, value: Double): PaginationComponentProps = {
+    inline def apply(isActive: Boolean, isDisabled: Boolean, onClick: () => Unit, value: Double): PaginationComponentProps = {
       val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationComponentProps]
     }
     
-    @scala.inline
-    implicit class PaginationComponentPropsMutableBuilder[Self <: PaginationComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationComponentProps](x: Self) {
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -260,62 +240,44 @@ object mod {
   }
   object UltimatePaginationProps {
     
-    @scala.inline
-    def apply(currentPage: Double, totalPages: Double): UltimatePaginationProps = {
+    inline def apply(currentPage: Double, totalPages: Double): UltimatePaginationProps = {
       val __obj = js.Dynamic.literal(currentPage = currentPage.asInstanceOf[js.Any], totalPages = totalPages.asInstanceOf[js.Any])
       __obj.asInstanceOf[UltimatePaginationProps]
     }
     
-    @scala.inline
-    implicit class UltimatePaginationPropsMutableBuilder[Self <: UltimatePaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: UltimatePaginationProps](x: Self) {
       
-      @scala.inline
-      def setBoundaryPagesRange(value: Double): Self = StObject.set(x, "boundaryPagesRange", value.asInstanceOf[js.Any])
+      inline def setBoundaryPagesRange(value: Double): Self = StObject.set(x, "boundaryPagesRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundaryPagesRangeUndefined: Self = StObject.set(x, "boundaryPagesRange", js.undefined)
+      inline def setBoundaryPagesRangeUndefined: Self = StObject.set(x, "boundaryPagesRange", js.undefined)
       
-      @scala.inline
-      def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+      inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHideEllipsis(value: Boolean): Self = StObject.set(x, "hideEllipsis", value.asInstanceOf[js.Any])
+      inline def setHideEllipsis(value: Boolean): Self = StObject.set(x, "hideEllipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideEllipsisUndefined: Self = StObject.set(x, "hideEllipsis", js.undefined)
+      inline def setHideEllipsisUndefined: Self = StObject.set(x, "hideEllipsis", js.undefined)
       
-      @scala.inline
-      def setHideFirstAndLastPageLinks(value: Boolean): Self = StObject.set(x, "hideFirstAndLastPageLinks", value.asInstanceOf[js.Any])
+      inline def setHideFirstAndLastPageLinks(value: Boolean): Self = StObject.set(x, "hideFirstAndLastPageLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideFirstAndLastPageLinksUndefined: Self = StObject.set(x, "hideFirstAndLastPageLinks", js.undefined)
+      inline def setHideFirstAndLastPageLinksUndefined: Self = StObject.set(x, "hideFirstAndLastPageLinks", js.undefined)
       
-      @scala.inline
-      def setHidePreviousAndNextPageLinks(value: Boolean): Self = StObject.set(x, "hidePreviousAndNextPageLinks", value.asInstanceOf[js.Any])
+      inline def setHidePreviousAndNextPageLinks(value: Boolean): Self = StObject.set(x, "hidePreviousAndNextPageLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidePreviousAndNextPageLinksUndefined: Self = StObject.set(x, "hidePreviousAndNextPageLinks", js.undefined)
+      inline def setHidePreviousAndNextPageLinksUndefined: Self = StObject.set(x, "hidePreviousAndNextPageLinks", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* newPage */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* newPage */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setSiblingPagesRange(value: Double): Self = StObject.set(x, "siblingPagesRange", value.asInstanceOf[js.Any])
+      inline def setSiblingPagesRange(value: Double): Self = StObject.set(x, "siblingPagesRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiblingPagesRangeUndefined: Self = StObject.set(x, "siblingPagesRange", js.undefined)
+      inline def setSiblingPagesRangeUndefined: Self = StObject.set(x, "siblingPagesRange", js.undefined)
       
-      @scala.inline
-      def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+      inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     }
   }
 }

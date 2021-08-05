@@ -15,8 +15,7 @@ object columnMod {
     * This is a syntactic sugar for `columns` prop.
     * So HOC will not work on this.
     */
-  @scala.inline
-  def default[RecordType](_underscore: ColumnProps[RecordType]): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def default[RecordType](_underscore: ColumnProps[RecordType]): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Null]
   
   trait ColumnProps[RecordType]
     extends StObject
@@ -26,8 +25,7 @@ object columnMod {
   }
   object ColumnProps {
     
-    @scala.inline
-    def apply[RecordType](): ColumnProps[RecordType] = {
+    inline def apply[RecordType](): ColumnProps[RecordType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnProps[RecordType]]
     }

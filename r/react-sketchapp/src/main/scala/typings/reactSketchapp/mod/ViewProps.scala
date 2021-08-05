@@ -21,49 +21,35 @@ trait ViewProps extends StObject {
 }
 object ViewProps {
   
-  @scala.inline
-  def apply(): ViewProps = {
+  inline def apply(): ViewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewProps]
   }
   
-  @scala.inline
-  implicit class ViewPropsMutableBuilder[Self <: ViewProps] (val x: Self) extends AnyVal {
+  extension [Self <: ViewProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResizingConstraint(value: ResizeConstraints): Self = StObject.set(x, "resizingConstraint", value.asInstanceOf[js.Any])
+    inline def setResizingConstraint(value: ResizeConstraints): Self = StObject.set(x, "resizingConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizingConstraintUndefined: Self = StObject.set(x, "resizingConstraint", js.undefined)
+    inline def setResizingConstraintUndefined: Self = StObject.set(x, "resizingConstraint", js.undefined)
     
-    @scala.inline
-    def setShadows(value: js.Array[SketchShadow]): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
+    inline def setShadows(value: js.Array[SketchShadow]): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
+    inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
     
-    @scala.inline
-    def setShadowsVarargs(value: SketchShadow*): Self = StObject.set(x, "shadows", js.Array(value :_*))
+    inline def setShadowsVarargs(value: SketchShadow*): Self = StObject.set(x, "shadows", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: Style | StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Style | StyleReference): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

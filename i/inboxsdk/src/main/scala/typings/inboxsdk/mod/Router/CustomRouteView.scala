@@ -16,8 +16,7 @@ trait CustomRouteView
 }
 object CustomRouteView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroyed: Boolean,
     getElement: () => HTMLElement,
     getParams: () => RouteParams,
@@ -30,13 +29,10 @@ object CustomRouteView {
     __obj.asInstanceOf[CustomRouteView]
   }
   
-  @scala.inline
-  implicit class CustomRouteViewMutableBuilder[Self <: CustomRouteView] (val x: Self) extends AnyVal {
+  extension [Self <: CustomRouteView](x: Self) {
     
-    @scala.inline
-    def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetFullWidth(value: Boolean => Unit): Self = StObject.set(x, "setFullWidth", js.Any.fromFunction1(value))
+    inline def setSetFullWidth(value: Boolean => Unit): Self = StObject.set(x, "setFullWidth", js.Any.fromFunction1(value))
   }
 }

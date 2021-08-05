@@ -13,19 +13,15 @@ trait CopyBackupToRegionResponse extends StObject {
 }
 object CopyBackupToRegionResponse {
   
-  @scala.inline
-  def apply(): CopyBackupToRegionResponse = {
+  inline def apply(): CopyBackupToRegionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyBackupToRegionResponse]
   }
   
-  @scala.inline
-  implicit class CopyBackupToRegionResponseMutableBuilder[Self <: CopyBackupToRegionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CopyBackupToRegionResponse](x: Self) {
     
-    @scala.inline
-    def setDestinationBackup(value: DestinationBackup): Self = StObject.set(x, "DestinationBackup", value.asInstanceOf[js.Any])
+    inline def setDestinationBackup(value: DestinationBackup): Self = StObject.set(x, "DestinationBackup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationBackupUndefined: Self = StObject.set(x, "DestinationBackup", js.undefined)
+    inline def setDestinationBackupUndefined: Self = StObject.set(x, "DestinationBackup", js.undefined)
   }
 }

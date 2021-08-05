@@ -29,31 +29,23 @@ trait ParamsResourceProjectsTriggersGet
 }
 object ParamsResourceProjectsTriggersGet {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsTriggersGet = {
+  inline def apply(): ParamsResourceProjectsTriggersGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsTriggersGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsTriggersGetMutableBuilder[Self <: ParamsResourceProjectsTriggersGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsTriggersGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+    inline def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
+    inline def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
   }
 }

@@ -29,55 +29,39 @@ trait Response extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply(): Response = {
+  inline def apply(): Response = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Response]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+  extension [Self <: Response](x: Self) {
     
-    @scala.inline
-    def setCreateFooter(value: CreateFooterResponse): Self = StObject.set(x, "createFooter", value.asInstanceOf[js.Any])
+    inline def setCreateFooter(value: CreateFooterResponse): Self = StObject.set(x, "createFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFooterUndefined: Self = StObject.set(x, "createFooter", js.undefined)
+    inline def setCreateFooterUndefined: Self = StObject.set(x, "createFooter", js.undefined)
     
-    @scala.inline
-    def setCreateFootnote(value: CreateFootnoteResponse): Self = StObject.set(x, "createFootnote", value.asInstanceOf[js.Any])
+    inline def setCreateFootnote(value: CreateFootnoteResponse): Self = StObject.set(x, "createFootnote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateFootnoteUndefined: Self = StObject.set(x, "createFootnote", js.undefined)
+    inline def setCreateFootnoteUndefined: Self = StObject.set(x, "createFootnote", js.undefined)
     
-    @scala.inline
-    def setCreateHeader(value: CreateHeaderResponse): Self = StObject.set(x, "createHeader", value.asInstanceOf[js.Any])
+    inline def setCreateHeader(value: CreateHeaderResponse): Self = StObject.set(x, "createHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateHeaderUndefined: Self = StObject.set(x, "createHeader", js.undefined)
+    inline def setCreateHeaderUndefined: Self = StObject.set(x, "createHeader", js.undefined)
     
-    @scala.inline
-    def setCreateNamedRange(value: CreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
+    inline def setCreateNamedRange(value: CreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
+    inline def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
     
-    @scala.inline
-    def setInsertInlineImage(value: InsertInlineImageResponse): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
+    inline def setInsertInlineImage(value: InsertInlineImageResponse): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
+    inline def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
     
-    @scala.inline
-    def setInsertInlineSheetsChart(value: InsertInlineSheetsChartResponse): Self = StObject.set(x, "insertInlineSheetsChart", value.asInstanceOf[js.Any])
+    inline def setInsertInlineSheetsChart(value: InsertInlineSheetsChartResponse): Self = StObject.set(x, "insertInlineSheetsChart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertInlineSheetsChartUndefined: Self = StObject.set(x, "insertInlineSheetsChart", js.undefined)
+    inline def setInsertInlineSheetsChartUndefined: Self = StObject.set(x, "insertInlineSheetsChart", js.undefined)
     
-    @scala.inline
-    def setReplaceAllText(value: ReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
+    inline def setReplaceAllText(value: ReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
+    inline def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
   }
 }

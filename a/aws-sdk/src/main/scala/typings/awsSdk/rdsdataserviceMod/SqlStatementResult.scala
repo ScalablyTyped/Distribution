@@ -18,25 +18,19 @@ trait SqlStatementResult extends StObject {
 }
 object SqlStatementResult {
   
-  @scala.inline
-  def apply(): SqlStatementResult = {
+  inline def apply(): SqlStatementResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlStatementResult]
   }
   
-  @scala.inline
-  implicit class SqlStatementResultMutableBuilder[Self <: SqlStatementResult] (val x: Self) extends AnyVal {
+  extension [Self <: SqlStatementResult](x: Self) {
     
-    @scala.inline
-    def setNumberOfRecordsUpdated(value: RecordsUpdated): Self = StObject.set(x, "numberOfRecordsUpdated", value.asInstanceOf[js.Any])
+    inline def setNumberOfRecordsUpdated(value: RecordsUpdated): Self = StObject.set(x, "numberOfRecordsUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfRecordsUpdatedUndefined: Self = StObject.set(x, "numberOfRecordsUpdated", js.undefined)
+    inline def setNumberOfRecordsUpdatedUndefined: Self = StObject.set(x, "numberOfRecordsUpdated", js.undefined)
     
-    @scala.inline
-    def setResultFrame(value: ResultFrame): Self = StObject.set(x, "resultFrame", value.asInstanceOf[js.Any])
+    inline def setResultFrame(value: ResultFrame): Self = StObject.set(x, "resultFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultFrameUndefined: Self = StObject.set(x, "resultFrame", js.undefined)
+    inline def setResultFrameUndefined: Self = StObject.set(x, "resultFrame", js.undefined)
   }
 }

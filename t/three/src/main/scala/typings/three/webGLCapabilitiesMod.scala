@@ -53,26 +53,20 @@ object webGLCapabilitiesMod {
   }
   object WebGLCapabilitiesParameters {
     
-    @scala.inline
-    def apply(): WebGLCapabilitiesParameters = {
+    inline def apply(): WebGLCapabilitiesParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebGLCapabilitiesParameters]
     }
     
-    @scala.inline
-    implicit class WebGLCapabilitiesParametersMutableBuilder[Self <: WebGLCapabilitiesParameters] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLCapabilitiesParameters](x: Self) {
       
-      @scala.inline
-      def setLogarithmicDepthBuffer(value: Boolean): Self = StObject.set(x, "logarithmicDepthBuffer", value.asInstanceOf[js.Any])
+      inline def setLogarithmicDepthBuffer(value: Boolean): Self = StObject.set(x, "logarithmicDepthBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogarithmicDepthBufferUndefined: Self = StObject.set(x, "logarithmicDepthBuffer", js.undefined)
+      inline def setLogarithmicDepthBufferUndefined: Self = StObject.set(x, "logarithmicDepthBuffer", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: String): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     }
   }
 }

@@ -14,28 +14,21 @@ trait MatchedDeveloperMetadata extends StObject {
 }
 object MatchedDeveloperMetadata {
   
-  @scala.inline
-  def apply(): MatchedDeveloperMetadata = {
+  inline def apply(): MatchedDeveloperMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchedDeveloperMetadata]
   }
   
-  @scala.inline
-  implicit class MatchedDeveloperMetadataMutableBuilder[Self <: MatchedDeveloperMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: MatchedDeveloperMetadata](x: Self) {
     
-    @scala.inline
-    def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
+    inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
+    inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    @scala.inline
-    def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
+    inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
   }
 }

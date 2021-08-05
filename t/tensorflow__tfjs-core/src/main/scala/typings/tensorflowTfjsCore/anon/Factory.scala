@@ -13,19 +13,15 @@ trait Factory extends StObject {
 }
 object Factory {
   
-  @scala.inline
-  def apply(factory: () => KernelBackend | js.Promise[KernelBackend], priority: Double): Factory = {
+  inline def apply(factory: () => KernelBackend | js.Promise[KernelBackend], priority: Double): Factory = {
     val __obj = js.Dynamic.literal(factory = js.Any.fromFunction0(factory), priority = priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[Factory]
   }
   
-  @scala.inline
-  implicit class FactoryMutableBuilder[Self <: Factory] (val x: Self) extends AnyVal {
+  extension [Self <: Factory](x: Self) {
     
-    @scala.inline
-    def setFactory(value: () => KernelBackend | js.Promise[KernelBackend]): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
+    inline def setFactory(value: () => KernelBackend | js.Promise[KernelBackend]): Self = StObject.set(x, "factory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
   }
 }

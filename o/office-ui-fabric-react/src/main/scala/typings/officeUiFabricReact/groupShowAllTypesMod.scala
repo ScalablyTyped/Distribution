@@ -22,23 +22,18 @@ object groupShowAllTypesMod {
   }
   object IGroupShowAllProps {
     
-    @scala.inline
-    def apply(): IGroupShowAllProps = {
+    inline def apply(): IGroupShowAllProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupShowAllProps]
     }
     
-    @scala.inline
-    implicit class IGroupShowAllPropsMutableBuilder[Self <: IGroupShowAllProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupShowAllProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IGroupShowAllStyleProps, IGroupShowAllStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IGroupShowAllStyleProps, IGroupShowAllStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IGroupShowAllStyleProps => DeepPartial[IGroupShowAllStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IGroupShowAllStyleProps => DeepPartial[IGroupShowAllStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -49,17 +44,14 @@ object groupShowAllTypesMod {
   }
   object IGroupShowAllStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IGroupShowAllStyleProps = {
+    inline def apply(theme: ITheme): IGroupShowAllStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGroupShowAllStyleProps]
     }
     
-    @scala.inline
-    implicit class IGroupShowAllStylePropsMutableBuilder[Self <: IGroupShowAllStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupShowAllStyleProps](x: Self) {
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,23 +61,18 @@ object groupShowAllTypesMod {
   }
   object IGroupShowAllStyles {
     
-    @scala.inline
-    def apply(): IGroupShowAllStyles = {
+    inline def apply(): IGroupShowAllStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupShowAllStyles]
     }
     
-    @scala.inline
-    implicit class IGroupShowAllStylesMutableBuilder[Self <: IGroupShowAllStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupShowAllStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

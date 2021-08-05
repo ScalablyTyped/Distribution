@@ -108,136 +108,93 @@ trait BucketMetadata extends StObject {
 }
 object BucketMetadata {
   
-  @scala.inline
-  def apply(): BucketMetadata = {
+  inline def apply(): BucketMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketMetadata]
   }
   
-  @scala.inline
-  implicit class BucketMetadataMutableBuilder[Self <: BucketMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BucketMetadata](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setBucketArn(value: string): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
+    inline def setBucketArn(value: string): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketArnUndefined: Self = StObject.set(x, "bucketArn", js.undefined)
+    inline def setBucketArnUndefined: Self = StObject.set(x, "bucketArn", js.undefined)
     
-    @scala.inline
-    def setBucketCreatedAt(value: timestampIso8601): Self = StObject.set(x, "bucketCreatedAt", value.asInstanceOf[js.Any])
+    inline def setBucketCreatedAt(value: timestampIso8601): Self = StObject.set(x, "bucketCreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketCreatedAtUndefined: Self = StObject.set(x, "bucketCreatedAt", js.undefined)
+    inline def setBucketCreatedAtUndefined: Self = StObject.set(x, "bucketCreatedAt", js.undefined)
     
-    @scala.inline
-    def setBucketName(value: string): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: string): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
     
-    @scala.inline
-    def setClassifiableObjectCount(value: long): Self = StObject.set(x, "classifiableObjectCount", value.asInstanceOf[js.Any])
+    inline def setClassifiableObjectCount(value: long): Self = StObject.set(x, "classifiableObjectCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassifiableObjectCountUndefined: Self = StObject.set(x, "classifiableObjectCount", js.undefined)
+    inline def setClassifiableObjectCountUndefined: Self = StObject.set(x, "classifiableObjectCount", js.undefined)
     
-    @scala.inline
-    def setClassifiableSizeInBytes(value: long): Self = StObject.set(x, "classifiableSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setClassifiableSizeInBytes(value: long): Self = StObject.set(x, "classifiableSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassifiableSizeInBytesUndefined: Self = StObject.set(x, "classifiableSizeInBytes", js.undefined)
+    inline def setClassifiableSizeInBytesUndefined: Self = StObject.set(x, "classifiableSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setJobDetails(value: JobDetails): Self = StObject.set(x, "jobDetails", value.asInstanceOf[js.Any])
+    inline def setJobDetails(value: JobDetails): Self = StObject.set(x, "jobDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobDetailsUndefined: Self = StObject.set(x, "jobDetails", js.undefined)
+    inline def setJobDetailsUndefined: Self = StObject.set(x, "jobDetails", js.undefined)
     
-    @scala.inline
-    def setLastUpdated(value: timestampIso8601): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: timestampIso8601): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
-    @scala.inline
-    def setObjectCount(value: long): Self = StObject.set(x, "objectCount", value.asInstanceOf[js.Any])
+    inline def setObjectCount(value: long): Self = StObject.set(x, "objectCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectCountByEncryptionType(value: ObjectCountByEncryptionType): Self = StObject.set(x, "objectCountByEncryptionType", value.asInstanceOf[js.Any])
+    inline def setObjectCountByEncryptionType(value: ObjectCountByEncryptionType): Self = StObject.set(x, "objectCountByEncryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectCountByEncryptionTypeUndefined: Self = StObject.set(x, "objectCountByEncryptionType", js.undefined)
+    inline def setObjectCountByEncryptionTypeUndefined: Self = StObject.set(x, "objectCountByEncryptionType", js.undefined)
     
-    @scala.inline
-    def setObjectCountUndefined: Self = StObject.set(x, "objectCount", js.undefined)
+    inline def setObjectCountUndefined: Self = StObject.set(x, "objectCount", js.undefined)
     
-    @scala.inline
-    def setPublicAccess(value: BucketPublicAccess): Self = StObject.set(x, "publicAccess", value.asInstanceOf[js.Any])
+    inline def setPublicAccess(value: BucketPublicAccess): Self = StObject.set(x, "publicAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicAccessUndefined: Self = StObject.set(x, "publicAccess", js.undefined)
+    inline def setPublicAccessUndefined: Self = StObject.set(x, "publicAccess", js.undefined)
     
-    @scala.inline
-    def setRegion(value: string): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: string): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setReplicationDetails(value: ReplicationDetails): Self = StObject.set(x, "replicationDetails", value.asInstanceOf[js.Any])
+    inline def setReplicationDetails(value: ReplicationDetails): Self = StObject.set(x, "replicationDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationDetailsUndefined: Self = StObject.set(x, "replicationDetails", js.undefined)
+    inline def setReplicationDetailsUndefined: Self = StObject.set(x, "replicationDetails", js.undefined)
     
-    @scala.inline
-    def setSharedAccess(value: SharedAccess): Self = StObject.set(x, "sharedAccess", value.asInstanceOf[js.Any])
+    inline def setSharedAccess(value: SharedAccess): Self = StObject.set(x, "sharedAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAccessUndefined: Self = StObject.set(x, "sharedAccess", js.undefined)
+    inline def setSharedAccessUndefined: Self = StObject.set(x, "sharedAccess", js.undefined)
     
-    @scala.inline
-    def setSizeInBytes(value: long): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: long): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytesCompressed(value: long): Self = StObject.set(x, "sizeInBytesCompressed", value.asInstanceOf[js.Any])
+    inline def setSizeInBytesCompressed(value: long): Self = StObject.set(x, "sizeInBytesCompressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytesCompressedUndefined: Self = StObject.set(x, "sizeInBytesCompressed", js.undefined)
+    inline def setSizeInBytesCompressedUndefined: Self = StObject.set(x, "sizeInBytesCompressed", js.undefined)
     
-    @scala.inline
-    def setSizeInBytesUndefined: Self = StObject.set(x, "sizeInBytes", js.undefined)
+    inline def setSizeInBytesUndefined: Self = StObject.set(x, "sizeInBytes", js.undefined)
     
-    @scala.inline
-    def setTags(value: listOfKeyValuePair): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: listOfKeyValuePair): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: KeyValuePair*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: KeyValuePair*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUnclassifiableObjectCount(value: ObjectLevelStatistics): Self = StObject.set(x, "unclassifiableObjectCount", value.asInstanceOf[js.Any])
+    inline def setUnclassifiableObjectCount(value: ObjectLevelStatistics): Self = StObject.set(x, "unclassifiableObjectCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnclassifiableObjectCountUndefined: Self = StObject.set(x, "unclassifiableObjectCount", js.undefined)
+    inline def setUnclassifiableObjectCountUndefined: Self = StObject.set(x, "unclassifiableObjectCount", js.undefined)
     
-    @scala.inline
-    def setUnclassifiableObjectSizeInBytes(value: ObjectLevelStatistics): Self = StObject.set(x, "unclassifiableObjectSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setUnclassifiableObjectSizeInBytes(value: ObjectLevelStatistics): Self = StObject.set(x, "unclassifiableObjectSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnclassifiableObjectSizeInBytesUndefined: Self = StObject.set(x, "unclassifiableObjectSizeInBytes", js.undefined)
+    inline def setUnclassifiableObjectSizeInBytesUndefined: Self = StObject.set(x, "unclassifiableObjectSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setVersioning(value: boolean): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
+    inline def setVersioning(value: boolean): Self = StObject.set(x, "versioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
+    inline def setVersioningUndefined: Self = StObject.set(x, "versioning", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait LambdaFunctionStartedEventAttributes extends StObject {
 }
 object LambdaFunctionStartedEventAttributes {
   
-  @scala.inline
-  def apply(scheduledEventId: EventId): LambdaFunctionStartedEventAttributes = {
+  inline def apply(scheduledEventId: EventId): LambdaFunctionStartedEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaFunctionStartedEventAttributes]
   }
   
-  @scala.inline
-  implicit class LambdaFunctionStartedEventAttributesMutableBuilder[Self <: LambdaFunctionStartedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaFunctionStartedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
+    inline def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
   }
 }

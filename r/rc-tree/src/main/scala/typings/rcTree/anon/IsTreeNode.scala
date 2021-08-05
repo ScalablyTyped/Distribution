@@ -10,16 +10,13 @@ trait IsTreeNode extends StObject {
 }
 object IsTreeNode {
   
-  @scala.inline
-  def apply(isTreeNode: Boolean): IsTreeNode = {
+  inline def apply(isTreeNode: Boolean): IsTreeNode = {
     val __obj = js.Dynamic.literal(isTreeNode = isTreeNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsTreeNode]
   }
   
-  @scala.inline
-  implicit class IsTreeNodeMutableBuilder[Self <: IsTreeNode] (val x: Self) extends AnyVal {
+  extension [Self <: IsTreeNode](x: Self) {
     
-    @scala.inline
-    def setIsTreeNode(value: Boolean): Self = StObject.set(x, "isTreeNode", value.asInstanceOf[js.Any])
+    inline def setIsTreeNode(value: Boolean): Self = StObject.set(x, "isTreeNode", value.asInstanceOf[js.Any])
   }
 }

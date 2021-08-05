@@ -10,8 +10,6 @@ object makeArrayOfLengthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def default(length: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def default(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[Double]]
+  inline def default(length: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 }

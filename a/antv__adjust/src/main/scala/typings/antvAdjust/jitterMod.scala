@@ -14,8 +14,8 @@ object jitterMod {
   trait Jitter
     extends typings.antvAdjust.adjustMod.default {
     
-    var adjustGroup: js.Any = js.native
+    /* private */ var adjustGroup: js.Any = js.native
     
-    var getAdjustOffset: js.Any = js.native
+    /* private */ var getAdjustOffset: js.Any = js.native
   }
 }

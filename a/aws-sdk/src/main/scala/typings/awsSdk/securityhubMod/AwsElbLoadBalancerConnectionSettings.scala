@@ -13,19 +13,15 @@ trait AwsElbLoadBalancerConnectionSettings extends StObject {
 }
 object AwsElbLoadBalancerConnectionSettings {
   
-  @scala.inline
-  def apply(): AwsElbLoadBalancerConnectionSettings = {
+  inline def apply(): AwsElbLoadBalancerConnectionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElbLoadBalancerConnectionSettings]
   }
   
-  @scala.inline
-  implicit class AwsElbLoadBalancerConnectionSettingsMutableBuilder[Self <: AwsElbLoadBalancerConnectionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElbLoadBalancerConnectionSettings](x: Self) {
     
-    @scala.inline
-    def setIdleTimeout(value: Integer): Self = StObject.set(x, "IdleTimeout", value.asInstanceOf[js.Any])
+    inline def setIdleTimeout(value: Integer): Self = StObject.set(x, "IdleTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleTimeoutUndefined: Self = StObject.set(x, "IdleTimeout", js.undefined)
+    inline def setIdleTimeoutUndefined: Self = StObject.set(x, "IdleTimeout", js.undefined)
   }
 }

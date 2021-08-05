@@ -17,19 +17,15 @@ trait TableCellUpdateData extends StObject {
 }
 object TableCellUpdateData {
   
-  @scala.inline
-  def apply(): TableCellUpdateData = {
+  inline def apply(): TableCellUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableCellUpdateData]
   }
   
-  @scala.inline
-  implicit class TableCellUpdateDataMutableBuilder[Self <: TableCellUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: TableCellUpdateData](x: Self) {
     
-    @scala.inline
-    def setShadingColor(value: String): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
+    inline def setShadingColor(value: String): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
+    inline def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
   }
 }

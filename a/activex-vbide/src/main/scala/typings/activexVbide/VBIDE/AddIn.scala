@@ -22,13 +22,12 @@ trait AddIn extends StObject {
   
   val VBE: typings.activexVbide.VBIDE.VBE
   
-  @JSName("VBIDE.AddIn_typekey")
+  /* private */ @JSName("VBIDE.AddIn_typekey")
   var VBIDEDotAddIn_typekey: AddIn
 }
 object AddIn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Collection: Addins,
     Connect: Boolean,
     Description: String,
@@ -43,31 +42,22 @@ object AddIn {
     __obj.asInstanceOf[AddIn]
   }
   
-  @scala.inline
-  implicit class AddInMutableBuilder[Self <: AddIn] (val x: Self) extends AnyVal {
+  extension [Self <: AddIn](x: Self) {
     
-    @scala.inline
-    def setCollection(value: Addins): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: Addins): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnect(value: Boolean): Self = StObject.set(x, "Connect", value.asInstanceOf[js.Any])
+    inline def setConnect(value: Boolean): Self = StObject.set(x, "Connect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+    inline def setObject(value: js.Any): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgId(value: String): Self = StObject.set(x, "ProgId", value.asInstanceOf[js.Any])
+    inline def setProgId(value: String): Self = StObject.set(x, "ProgId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
+    inline def setVBE(value: VBE): Self = StObject.set(x, "VBE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVBIDEDotAddIn_typekey(value: AddIn): Self = StObject.set(x, "VBIDE.AddIn_typekey", value.asInstanceOf[js.Any])
+    inline def setVBIDEDotAddIn_typekey(value: AddIn): Self = StObject.set(x, "VBIDE.AddIn_typekey", value.asInstanceOf[js.Any])
   }
 }

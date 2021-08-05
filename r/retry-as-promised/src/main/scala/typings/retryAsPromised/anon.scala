@@ -12,20 +12,16 @@ object anon {
   }
   object Current {
     
-    @scala.inline
-    def apply(): Current = {
+    inline def apply(): Current = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Current]
     }
     
-    @scala.inline
-    implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+    extension [Self <: Current](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     }
   }
 }

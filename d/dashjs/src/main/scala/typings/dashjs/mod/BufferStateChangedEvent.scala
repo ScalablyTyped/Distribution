@@ -27,8 +27,7 @@ trait BufferStateChangedEvent
 }
 object BufferStateChangedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mediaType: video | audio | fragmentedText,
     sender: js.Object,
     state: bufferStalled | bufferLoaded,
@@ -39,22 +38,16 @@ object BufferStateChangedEvent {
     __obj.asInstanceOf[BufferStateChangedEvent]
   }
   
-  @scala.inline
-  implicit class BufferStateChangedEventMutableBuilder[Self <: BufferStateChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BufferStateChangedEvent](x: Self) {
     
-    @scala.inline
-    def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: js.Object): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: js.Object): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: bufferStalled | bufferLoaded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: bufferStalled | bufferLoaded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamInfo(value: StreamInfo): Self = StObject.set(x, "streamInfo", value.asInstanceOf[js.Any])
+    inline def setStreamInfo(value: StreamInfo): Self = StObject.set(x, "streamInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: bufferStateChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bufferStateChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

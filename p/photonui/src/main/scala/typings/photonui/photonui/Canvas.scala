@@ -39,8 +39,7 @@ trait Canvas
 }
 object Canvas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     canvas: HTMLElement,
@@ -78,43 +77,30 @@ object Canvas {
     __obj.asInstanceOf[Canvas]
   }
   
-  @scala.inline
-  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
+  extension [Self <: Canvas](x: Self) {
     
-    @scala.inline
-    def setCanvas(value: HTMLElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: HTMLElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContext(value: String => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+    inline def setGetContext(value: String => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractiveMode(value: HTMLElement): Self = StObject.set(x, "interactiveMode", value.asInstanceOf[js.Any])
+    inline def setInteractiveMode(value: HTMLElement): Self = StObject.set(x, "interactiveMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetContext(value: String => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: String => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportsContext(value: String => Boolean): Self = StObject.set(x, "supportsContext", js.Any.fromFunction1(value))
+    inline def setSupportsContext(value: String => Boolean): Self = StObject.set(x, "supportsContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToBlod(value: String => js.Any): Self = StObject.set(x, "toBlod", js.Any.fromFunction1(value))
+    inline def setToBlod(value: String => js.Any): Self = StObject.set(x, "toBlod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToBlodHD(value: String => js.Any): Self = StObject.set(x, "toBlodHD", js.Any.fromFunction1(value))
+    inline def setToBlodHD(value: String => js.Any): Self = StObject.set(x, "toBlodHD", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToDataUrl(value: String => String): Self = StObject.set(x, "toDataUrl", js.Any.fromFunction1(value))
+    inline def setToDataUrl(value: String => String): Self = StObject.set(x, "toDataUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToDataUrlHD(value: String => String): Self = StObject.set(x, "toDataUrlHD", js.Any.fromFunction1(value))
+    inline def setToDataUrlHD(value: String => String): Self = StObject.set(x, "toDataUrlHD", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransferControlToProxy(value: () => Unit): Self = StObject.set(x, "transferControlToProxy", js.Any.fromFunction0(value))
+    inline def setTransferControlToProxy(value: () => Unit): Self = StObject.set(x, "transferControlToProxy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

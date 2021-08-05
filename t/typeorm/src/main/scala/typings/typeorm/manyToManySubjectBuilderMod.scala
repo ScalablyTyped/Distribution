@@ -37,6 +37,6 @@ object manyToManySubjectBuilderMod {
       */
     /* protected */ def buildJunctionIdentifier(subject: Subject, relation: RelationMetadata, relationId: ObjectLiteral): ObjectLiteral = js.native
     
-    var subjects: js.Array[Subject] = js.native
+    /* protected */ var subjects: js.Array[Subject] = js.native
   }
 }

@@ -16,16 +16,13 @@ trait MalformedNumberFormatException
 }
 object MalformedNumberFormatException {
   
-  @scala.inline
-  def apply(CheckPos: Double, Context: XInterface, Message: String): MalformedNumberFormatException = {
+  inline def apply(CheckPos: Double, Context: XInterface, Message: String): MalformedNumberFormatException = {
     val __obj = js.Dynamic.literal(CheckPos = CheckPos.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MalformedNumberFormatException]
   }
   
-  @scala.inline
-  implicit class MalformedNumberFormatExceptionMutableBuilder[Self <: MalformedNumberFormatException] (val x: Self) extends AnyVal {
+  extension [Self <: MalformedNumberFormatException](x: Self) {
     
-    @scala.inline
-    def setCheckPos(value: Double): Self = StObject.set(x, "CheckPos", value.asInstanceOf[js.Any])
+    inline def setCheckPos(value: Double): Self = StObject.set(x, "CheckPos", value.asInstanceOf[js.Any])
   }
 }

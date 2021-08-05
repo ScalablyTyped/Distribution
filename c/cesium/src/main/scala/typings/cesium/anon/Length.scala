@@ -18,34 +18,25 @@ trait Length extends StObject {
 }
 object Length {
   
-  @scala.inline
-  def apply(bottomRadius: Double, length: Double, topRadius: Double): Length = {
+  inline def apply(bottomRadius: Double, length: Double, topRadius: Double): Length = {
     val __obj = js.Dynamic.literal(bottomRadius = bottomRadius.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], topRadius = topRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[Length]
   }
   
-  @scala.inline
-  implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
+  extension [Self <: Length](x: Self) {
     
-    @scala.inline
-    def setBottomRadius(value: Double): Self = StObject.set(x, "bottomRadius", value.asInstanceOf[js.Any])
+    inline def setBottomRadius(value: Double): Self = StObject.set(x, "bottomRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfVerticalLines(value: Double): Self = StObject.set(x, "numberOfVerticalLines", value.asInstanceOf[js.Any])
+    inline def setNumberOfVerticalLines(value: Double): Self = StObject.set(x, "numberOfVerticalLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfVerticalLinesUndefined: Self = StObject.set(x, "numberOfVerticalLines", js.undefined)
+    inline def setNumberOfVerticalLinesUndefined: Self = StObject.set(x, "numberOfVerticalLines", js.undefined)
     
-    @scala.inline
-    def setSlices(value: Double): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
+    inline def setSlices(value: Double): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
+    inline def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
     
-    @scala.inline
-    def setTopRadius(value: Double): Self = StObject.set(x, "topRadius", value.asInstanceOf[js.Any])
+    inline def setTopRadius(value: Double): Self = StObject.set(x, "topRadius", value.asInstanceOf[js.Any])
   }
 }

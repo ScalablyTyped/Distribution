@@ -14,28 +14,21 @@ trait ListGcpUserAccessBindingsResponse extends StObject {
 }
 object ListGcpUserAccessBindingsResponse {
   
-  @scala.inline
-  def apply(): ListGcpUserAccessBindingsResponse = {
+  inline def apply(): ListGcpUserAccessBindingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGcpUserAccessBindingsResponse]
   }
   
-  @scala.inline
-  implicit class ListGcpUserAccessBindingsResponseMutableBuilder[Self <: ListGcpUserAccessBindingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListGcpUserAccessBindingsResponse](x: Self) {
     
-    @scala.inline
-    def setGcpUserAccessBindings(value: js.Array[GcpUserAccessBinding]): Self = StObject.set(x, "gcpUserAccessBindings", value.asInstanceOf[js.Any])
+    inline def setGcpUserAccessBindings(value: js.Array[GcpUserAccessBinding]): Self = StObject.set(x, "gcpUserAccessBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcpUserAccessBindingsUndefined: Self = StObject.set(x, "gcpUserAccessBindings", js.undefined)
+    inline def setGcpUserAccessBindingsUndefined: Self = StObject.set(x, "gcpUserAccessBindings", js.undefined)
     
-    @scala.inline
-    def setGcpUserAccessBindingsVarargs(value: GcpUserAccessBinding*): Self = StObject.set(x, "gcpUserAccessBindings", js.Array(value :_*))
+    inline def setGcpUserAccessBindingsVarargs(value: GcpUserAccessBinding*): Self = StObject.set(x, "gcpUserAccessBindings", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

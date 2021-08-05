@@ -11,19 +11,15 @@ trait LiasettingsRequestInventoryVerificationResponse extends StObject {
 }
 object LiasettingsRequestInventoryVerificationResponse {
   
-  @scala.inline
-  def apply(): LiasettingsRequestInventoryVerificationResponse = {
+  inline def apply(): LiasettingsRequestInventoryVerificationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiasettingsRequestInventoryVerificationResponse]
   }
   
-  @scala.inline
-  implicit class LiasettingsRequestInventoryVerificationResponseMutableBuilder[Self <: LiasettingsRequestInventoryVerificationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LiasettingsRequestInventoryVerificationResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

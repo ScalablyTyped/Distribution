@@ -112,23 +112,18 @@ object eventMod {
   }
   object Event {
     
-    @scala.inline
-    def apply(getEventRunner: () => js.Function0[Unit], getEventType: () => String, getPath: () => Path): Event = {
+    inline def apply(getEventRunner: () => js.Function0[Unit], getEventType: () => String, getPath: () => Path): Event = {
       val __obj = js.Dynamic.literal(getEventRunner = js.Any.fromFunction0(getEventRunner), getEventType = js.Any.fromFunction0(getEventType), getPath = js.Any.fromFunction0(getPath))
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setGetEventRunner(value: () => js.Function0[Unit]): Self = StObject.set(x, "getEventRunner", js.Any.fromFunction0(value))
+      inline def setGetEventRunner(value: () => js.Function0[Unit]): Self = StObject.set(x, "getEventRunner", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEventType(value: () => String): Self = StObject.set(x, "getEventType", js.Any.fromFunction0(value))
+      inline def setGetEventType(value: () => String): Self = StObject.set(x, "getEventType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPath(value: () => Path): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
+      inline def setGetPath(value: () => Path): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
     }
   }
   
@@ -142,19 +137,14 @@ object eventMod {
   trait EventType extends StObject
   object EventType {
     
-    @scala.inline
-    def Spacechild_added: typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_added = (" child_added").asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_added]
+    inline def Spacechild_added: typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_added = (" child_added").asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_added]
     
-    @scala.inline
-    def Spacechild_changed: typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_changed = (" child_changed").asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_changed]
+    inline def Spacechild_changed: typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_changed = (" child_changed").asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_changed]
     
-    @scala.inline
-    def Spacechild_moved: typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_moved = (" child_moved").asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_moved]
+    inline def Spacechild_moved: typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_moved = (" child_moved").asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_moved]
     
-    @scala.inline
-    def Spacechild_removed: typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_removed = (" child_removed").asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_removed]
+    inline def Spacechild_removed: typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_removed = (" child_removed").asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.Spacechild_removed]
     
-    @scala.inline
-    def value: typings.firebaseDatabase.firebaseDatabaseStrings.value = "value".asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.value]
+    inline def value: typings.firebaseDatabase.firebaseDatabaseStrings.value = "value".asInstanceOf[typings.firebaseDatabase.firebaseDatabaseStrings.value]
   }
 }

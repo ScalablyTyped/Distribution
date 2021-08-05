@@ -18,13 +18,12 @@ trait SpellingSuggestions extends StObject {
   
   val SpellingErrorType: WdSpellingErrorType
   
-  @JSName("Word.SpellingSuggestions_typekey")
+  /* private */ @JSName("Word.SpellingSuggestions_typekey")
   var WordDotSpellingSuggestions_typekey: SpellingSuggestions
 }
 object SpellingSuggestions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -38,28 +37,20 @@ object SpellingSuggestions {
     __obj.asInstanceOf[SpellingSuggestions]
   }
   
-  @scala.inline
-  implicit class SpellingSuggestionsMutableBuilder[Self <: SpellingSuggestions] (val x: Self) extends AnyVal {
+  extension [Self <: SpellingSuggestions](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => SpellingSuggestion): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => SpellingSuggestion): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpellingErrorType(value: WdSpellingErrorType): Self = StObject.set(x, "SpellingErrorType", value.asInstanceOf[js.Any])
+    inline def setSpellingErrorType(value: WdSpellingErrorType): Self = StObject.set(x, "SpellingErrorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotSpellingSuggestions_typekey(value: SpellingSuggestions): Self = StObject.set(x, "Word.SpellingSuggestions_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotSpellingSuggestions_typekey(value: SpellingSuggestions): Self = StObject.set(x, "Word.SpellingSuggestions_typekey", value.asInstanceOf[js.Any])
   }
 }

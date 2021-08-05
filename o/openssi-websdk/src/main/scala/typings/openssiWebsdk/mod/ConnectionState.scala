@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConnectionState extends StObject
 object ConnectionState {
   
-  @scala.inline
-  def connected: typings.openssiWebsdk.openssiWebsdkStrings.connected = "connected".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.connected]
+  inline def connected: typings.openssiWebsdk.openssiWebsdkStrings.connected = "connected".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.connected]
   
-  @scala.inline
-  def inbound_offer: typings.openssiWebsdk.openssiWebsdkStrings.inbound_offer = "inbound_offer".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.inbound_offer]
+  inline def inbound_offer: typings.openssiWebsdk.openssiWebsdkStrings.inbound_offer = "inbound_offer".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.inbound_offer]
   
-  @scala.inline
-  def outbound_offer: typings.openssiWebsdk.openssiWebsdkStrings.outbound_offer = "outbound_offer".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.outbound_offer]
+  inline def outbound_offer: typings.openssiWebsdk.openssiWebsdkStrings.outbound_offer = "outbound_offer".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.outbound_offer]
   
-  @scala.inline
-  def rejected: typings.openssiWebsdk.openssiWebsdkStrings.rejected = "rejected".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.rejected]
+  inline def rejected: typings.openssiWebsdk.openssiWebsdkStrings.rejected = "rejected".asInstanceOf[typings.openssiWebsdk.openssiWebsdkStrings.rejected]
 }

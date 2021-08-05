@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object OrderedListCloseToken {
   
-  @scala.inline
-  def apply(level: Double): OrderedListCloseToken = {
+  inline def apply(level: Double): OrderedListCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ordered_list_close")
     __obj.asInstanceOf[OrderedListCloseToken]
   }
   
-  @scala.inline
-  implicit class OrderedListCloseTokenMutableBuilder[Self <: OrderedListCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: OrderedListCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: ordered_list_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ordered_list_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

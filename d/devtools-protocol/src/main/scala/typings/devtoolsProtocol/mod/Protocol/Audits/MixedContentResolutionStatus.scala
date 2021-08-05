@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MixedContentResolutionStatus extends StObject
 object MixedContentResolutionStatus {
   
-  @scala.inline
-  def MixedContentAutomaticallyUpgraded: typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentAutomaticallyUpgraded = "MixedContentAutomaticallyUpgraded".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentAutomaticallyUpgraded]
+  inline def MixedContentAutomaticallyUpgraded: typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentAutomaticallyUpgraded = "MixedContentAutomaticallyUpgraded".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentAutomaticallyUpgraded]
   
-  @scala.inline
-  def MixedContentBlocked: typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentBlocked = "MixedContentBlocked".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentBlocked]
+  inline def MixedContentBlocked: typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentBlocked = "MixedContentBlocked".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentBlocked]
   
-  @scala.inline
-  def MixedContentWarning: typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentWarning = "MixedContentWarning".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentWarning]
+  inline def MixedContentWarning: typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentWarning = "MixedContentWarning".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.MixedContentWarning]
 }

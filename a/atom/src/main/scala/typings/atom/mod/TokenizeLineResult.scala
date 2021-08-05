@@ -33,8 +33,7 @@ trait TokenizeLineResult extends StObject {
 }
 object TokenizeLineResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     line: String,
     ruleStack: js.Array[GrammarRule],
     tags: js.Array[Double | String],
@@ -44,28 +43,20 @@ object TokenizeLineResult {
     __obj.asInstanceOf[TokenizeLineResult]
   }
   
-  @scala.inline
-  implicit class TokenizeLineResultMutableBuilder[Self <: TokenizeLineResult] (val x: Self) extends AnyVal {
+  extension [Self <: TokenizeLineResult](x: Self) {
     
-    @scala.inline
-    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleStack(value: js.Array[GrammarRule]): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
+    inline def setRuleStack(value: js.Array[GrammarRule]): Self = StObject.set(x, "ruleStack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleStackVarargs(value: GrammarRule*): Self = StObject.set(x, "ruleStack", js.Array(value :_*))
+    inline def setRuleStackVarargs(value: GrammarRule*): Self = StObject.set(x, "ruleStack", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: js.Array[Double | String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[Double | String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: (Double | String)*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: (Double | String)*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTokens(value: js.Array[GrammarToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[GrammarToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensVarargs(value: GrammarToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: GrammarToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

@@ -11,8 +11,7 @@ trait HtmlImageProps
      with /* key */ StringDictionary[js.Any]
 object HtmlImageProps {
   
-  @scala.inline
-  def apply(): HtmlImageProps = {
+  inline def apply(): HtmlImageProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlImageProps]
   }

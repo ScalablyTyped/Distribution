@@ -14,11 +14,9 @@ object notificationButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @scala.inline
-  def NotificationButton(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotificationButton")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def NotificationButton(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NotificationButton")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -32,29 +30,22 @@ object notificationButtonMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(button: NotificationButton, notification: Notification, position: Double): Props = {
+    inline def apply(button: NotificationButton, notification: Notification, position: Double): Props = {
       val __obj = js.Dynamic.literal(button = button.asInstanceOf[js.Any], notification = notification.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setButton(value: NotificationButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: NotificationButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

@@ -18,28 +18,21 @@ trait TrainingMetrics extends StObject {
 }
 object TrainingMetrics {
   
-  @scala.inline
-  def apply(): TrainingMetrics = {
+  inline def apply(): TrainingMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrainingMetrics]
   }
   
-  @scala.inline
-  implicit class TrainingMetricsMutableBuilder[Self <: TrainingMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingMetrics](x: Self) {
     
-    @scala.inline
-    def setAuc(value: float): Self = StObject.set(x, "auc", value.asInstanceOf[js.Any])
+    inline def setAuc(value: float): Self = StObject.set(x, "auc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAucUndefined: Self = StObject.set(x, "auc", js.undefined)
+    inline def setAucUndefined: Self = StObject.set(x, "auc", js.undefined)
     
-    @scala.inline
-    def setMetricDataPoints(value: metricDataPointsList): Self = StObject.set(x, "metricDataPoints", value.asInstanceOf[js.Any])
+    inline def setMetricDataPoints(value: metricDataPointsList): Self = StObject.set(x, "metricDataPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDataPointsUndefined: Self = StObject.set(x, "metricDataPoints", js.undefined)
+    inline def setMetricDataPointsUndefined: Self = StObject.set(x, "metricDataPoints", js.undefined)
     
-    @scala.inline
-    def setMetricDataPointsVarargs(value: MetricDataPoint*): Self = StObject.set(x, "metricDataPoints", js.Array(value :_*))
+    inline def setMetricDataPointsVarargs(value: MetricDataPoint*): Self = StObject.set(x, "metricDataPoints", js.Array(value :_*))
   }
 }

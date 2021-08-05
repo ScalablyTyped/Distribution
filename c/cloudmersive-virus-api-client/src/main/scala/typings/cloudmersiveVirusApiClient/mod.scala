@@ -268,14 +268,11 @@ object mod {
     @js.native
     val ^ : VirusFound = js.native
     
-    @scala.inline
-    implicit class VirusFoundMutableBuilder[Self <: VirusFound] (val x: Self) extends AnyVal {
+    extension [Self <: VirusFound](x: Self) {
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirusName(value: String): Self = StObject.set(x, "VirusName", value.asInstanceOf[js.Any])
+      inline def setVirusName(value: String): Self = StObject.set(x, "VirusName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -326,23 +323,17 @@ object mod {
     @js.native
     val ^ : VirusScanAdvancedResult = js.native
     
-    @scala.inline
-    implicit class VirusScanAdvancedResultMutableBuilder[Self <: VirusScanAdvancedResult] (val x: Self) extends AnyVal {
+    extension [Self <: VirusScanAdvancedResult](x: Self) {
       
-      @scala.inline
-      def setContainsExecutable(value: Boolean): Self = StObject.set(x, "ContainsExecutable", value.asInstanceOf[js.Any])
+      inline def setContainsExecutable(value: Boolean): Self = StObject.set(x, "ContainsExecutable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsInvalidFile(value: Boolean): Self = StObject.set(x, "ContainsInvalidFile", value.asInstanceOf[js.Any])
+      inline def setContainsInvalidFile(value: Boolean): Self = StObject.set(x, "ContainsInvalidFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsRestrictedFileFormat(value: Boolean): Self = StObject.set(x, "ContainsRestrictedFileFormat", value.asInstanceOf[js.Any])
+      inline def setContainsRestrictedFileFormat(value: Boolean): Self = StObject.set(x, "ContainsRestrictedFileFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsScript(value: Boolean): Self = StObject.set(x, "ContainsScript", value.asInstanceOf[js.Any])
+      inline def setContainsScript(value: Boolean): Self = StObject.set(x, "ContainsScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerifiedFileFormat(value: String): Self = StObject.set(x, "VerifiedFileFormat", value.asInstanceOf[js.Any])
+      inline def setVerifiedFileFormat(value: String): Self = StObject.set(x, "VerifiedFileFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -366,20 +357,15 @@ object mod {
     @js.native
     val ^ : VirusScanResult = js.native
     
-    @scala.inline
-    implicit class VirusScanResultMutableBuilder[Self <: VirusScanResult] (val x: Self) extends AnyVal {
+    extension [Self <: VirusScanResult](x: Self) {
       
-      @scala.inline
-      def setCleanResult(value: Boolean): Self = StObject.set(x, "CleanResult", value.asInstanceOf[js.Any])
+      inline def setCleanResult(value: Boolean): Self = StObject.set(x, "CleanResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoundViruses(value: js.Array[VirusFound]): Self = StObject.set(x, "FoundViruses", value.asInstanceOf[js.Any])
+      inline def setFoundViruses(value: js.Array[VirusFound]): Self = StObject.set(x, "FoundViruses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoundVirusesNull: Self = StObject.set(x, "FoundViruses", null)
+      inline def setFoundVirusesNull: Self = StObject.set(x, "FoundViruses", null)
       
-      @scala.inline
-      def setFoundVirusesVarargs(value: VirusFound*): Self = StObject.set(x, "FoundViruses", js.Array(value :_*))
+      inline def setFoundVirusesVarargs(value: VirusFound*): Self = StObject.set(x, "FoundViruses", js.Array(value :_*))
     }
   }
   
@@ -397,11 +383,9 @@ object mod {
     @js.native
     val ^ : WebsiteScanRequest = js.native
     
-    @scala.inline
-    implicit class WebsiteScanRequestMutableBuilder[Self <: WebsiteScanRequest] (val x: Self) extends AnyVal {
+    extension [Self <: WebsiteScanRequest](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -430,14 +414,11 @@ object mod {
     @js.native
     val ^ : WebsiteScanResult = js.native
     
-    @scala.inline
-    implicit class WebsiteScanResultMutableBuilder[Self <: WebsiteScanResult] (val x: Self) extends AnyVal {
+    extension [Self <: WebsiteScanResult](x: Self) {
       
-      @scala.inline
-      def setWebsiteHttpResponseCode(value: Double): Self = StObject.set(x, "WebsiteHttpResponseCode", value.asInstanceOf[js.Any])
+      inline def setWebsiteHttpResponseCode(value: Double): Self = StObject.set(x, "WebsiteHttpResponseCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebsiteThreatType(value: WebsiteThreatType): Self = StObject.set(x, "WebsiteThreatType", value.asInstanceOf[js.Any])
+      inline def setWebsiteThreatType(value: WebsiteThreatType): Self = StObject.set(x, "WebsiteThreatType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -536,8 +517,7 @@ object mod {
   }
   object ApiInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       agent: Agent,
       authentications: Apikey,
       basePath: String,
@@ -550,38 +530,27 @@ object mod {
       __obj.asInstanceOf[ApiInstance]
     }
     
-    @scala.inline
-    implicit class ApiInstanceMutableBuilder[Self <: ApiInstance] (val x: Self) extends AnyVal {
+    extension [Self <: ApiInstance](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthentications(value: Apikey): Self = StObject.set(x, "authentications", value.asInstanceOf[js.Any])
+      inline def setAuthentications(value: Apikey): Self = StObject.set(x, "authentications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultHeaders(value: js.Array[String]): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
+      inline def setDefaultHeaders(value: js.Array[String]): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultHeadersVarargs(value: String*): Self = StObject.set(x, "defaultHeaders", js.Array(value :_*))
+      inline def setDefaultHeadersVarargs(value: String*): Self = StObject.set(x, "defaultHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setEnableCookies(value: Boolean): Self = StObject.set(x, "enableCookies", value.asInstanceOf[js.Any])
+      inline def setEnableCookies(value: Boolean): Self = StObject.set(x, "enableCookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestAgent(value: Agent): Self = StObject.set(x, "requestAgent", value.asInstanceOf[js.Any])
+      inline def setRequestAgent(value: Agent): Self = StObject.set(x, "requestAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestAgentNull: Self = StObject.set(x, "requestAgent", null)
+      inline def setRequestAgentNull: Self = StObject.set(x, "requestAgent", null)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -597,27 +566,21 @@ object mod {
   }
   object ApiInstanceAuthentications {
     
-    @scala.inline
-    def apply(apiKey: String): ApiInstanceAuthentications = {
+    inline def apply(apiKey: String): ApiInstanceAuthentications = {
       val __obj = js.Dynamic.literal(apiKey = apiKey.asInstanceOf[js.Any], in = "header", name = "Apikey")
       __obj.updateDynamic("type")("apiKey")
       __obj.asInstanceOf[ApiInstanceAuthentications]
     }
     
-    @scala.inline
-    implicit class ApiInstanceAuthenticationsMutableBuilder[Self <: ApiInstanceAuthentications] (val x: Self) extends AnyVal {
+    extension [Self <: ApiInstanceAuthentications](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIn(value: header): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      inline def setIn(value: header): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: typings.cloudmersiveVirusApiClient.cloudmersiveVirusApiClientStrings.Apikey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.cloudmersiveVirusApiClient.cloudmersiveVirusApiClientStrings.Apikey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: apiKey_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: apiKey_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -673,8 +636,7 @@ object mod {
   }
   object ScanFileAdvancedOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowExecutables: Boolean,
       allowInvalidFiles: Boolean,
       allowScripts: Boolean,
@@ -684,20 +646,15 @@ object mod {
       __obj.asInstanceOf[ScanFileAdvancedOptions]
     }
     
-    @scala.inline
-    implicit class ScanFileAdvancedOptionsMutableBuilder[Self <: ScanFileAdvancedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScanFileAdvancedOptions](x: Self) {
       
-      @scala.inline
-      def setAllowExecutables(value: Boolean): Self = StObject.set(x, "allowExecutables", value.asInstanceOf[js.Any])
+      inline def setAllowExecutables(value: Boolean): Self = StObject.set(x, "allowExecutables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowInvalidFiles(value: Boolean): Self = StObject.set(x, "allowInvalidFiles", value.asInstanceOf[js.Any])
+      inline def setAllowInvalidFiles(value: Boolean): Self = StObject.set(x, "allowInvalidFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowScripts(value: Boolean): Self = StObject.set(x, "allowScripts", value.asInstanceOf[js.Any])
+      inline def setAllowScripts(value: Boolean): Self = StObject.set(x, "allowScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictFileTypes(value: String): Self = StObject.set(x, "restrictFileTypes", value.asInstanceOf[js.Any])
+      inline def setRestrictFileTypes(value: String): Self = StObject.set(x, "restrictFileTypes", value.asInstanceOf[js.Any])
     }
   }
   

@@ -18,6 +18,5 @@ object custom {
   @js.native
   val httpOptions: js.Symbol = js.native
   
-  @scala.inline
-  def setHttpOptionsDefaults(params: HttpOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHttpOptionsDefaults")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setHttpOptionsDefaults(params: HttpOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setHttpOptionsDefaults")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -12,19 +12,15 @@ trait GetTableTtl extends StObject {
 }
 object GetTableTtl {
   
-  @scala.inline
-  def apply(attributeName: String, enabled: Boolean): GetTableTtl = {
+  inline def apply(attributeName: String, enabled: Boolean): GetTableTtl = {
     val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTableTtl]
   }
   
-  @scala.inline
-  implicit class GetTableTtlMutableBuilder[Self <: GetTableTtl] (val x: Self) extends AnyVal {
+  extension [Self <: GetTableTtl](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

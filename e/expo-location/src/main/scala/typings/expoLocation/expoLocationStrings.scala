@@ -8,26 +8,21 @@ object expoLocationStrings {
   
   @js.native
   sealed trait always extends StObject
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait coarse extends StObject
-  @scala.inline
-  def coarse: coarse = "coarse".asInstanceOf[coarse]
+  inline def coarse: coarse = "coarse".asInstanceOf[coarse]
   
   @js.native
   sealed trait fine extends StObject
-  @scala.inline
-  def fine: fine = "fine".asInstanceOf[fine]
+  inline def fine: fine = "fine".asInstanceOf[fine]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait whenInUse extends StObject
-  @scala.inline
-  def whenInUse: whenInUse = "whenInUse".asInstanceOf[whenInUse]
+  inline def whenInUse: whenInUse = "whenInUse".asInstanceOf[whenInUse]
 }

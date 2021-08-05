@@ -16,22 +16,17 @@ trait SchemaAccountInfo extends StObject {
 }
 object SchemaAccountInfo {
   
-  @scala.inline
-  def apply(): SchemaAccountInfo = {
+  inline def apply(): SchemaAccountInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountInfo]
   }
   
-  @scala.inline
-  implicit class SchemaAccountInfoMutableBuilder[Self <: SchemaAccountInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountInfo](x: Self) {
     
-    @scala.inline
-    def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[String]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
+    inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    @scala.inline
-    def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: String*): Self = StObject.set(x, "emails", js.Array(value :_*))
   }
 }

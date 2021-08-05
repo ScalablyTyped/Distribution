@@ -14,17 +14,14 @@ object anon {
   }
   object IsHttpError {
     
-    @scala.inline
-    def apply(isHttpError: /* error */ js.Any => /* is http-errors.http-errors.HttpError */ Boolean): IsHttpError = {
+    inline def apply(isHttpError: /* error */ js.Any => /* is http-errors.http-errors.HttpError */ Boolean): IsHttpError = {
       val __obj = js.Dynamic.literal(isHttpError = js.Any.fromFunction1(isHttpError))
       __obj.asInstanceOf[IsHttpError]
     }
     
-    @scala.inline
-    implicit class IsHttpErrorMutableBuilder[Self <: IsHttpError] (val x: Self) extends AnyVal {
+    extension [Self <: IsHttpError](x: Self) {
       
-      @scala.inline
-      def setIsHttpError(value: /* error */ js.Any => /* is http-errors.http-errors.HttpError */ Boolean): Self = StObject.set(x, "isHttpError", js.Any.fromFunction1(value))
+      inline def setIsHttpError(value: /* error */ js.Any => /* is http-errors.http-errors.HttpError */ Boolean): Self = StObject.set(x, "isHttpError", js.Any.fromFunction1(value))
     }
   }
 }

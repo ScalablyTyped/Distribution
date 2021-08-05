@@ -66,21 +66,16 @@ object eventPermissionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventPermissionState): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventPermissionState, opts: CustomResourceOptions): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
+    inline def get(name: String, id: Input[ID]): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
+    inline def get(name: String, id: Input[ID], state: EventPermissionState): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
+    inline def get(name: String, id: Input[ID], state: EventPermissionState, opts: CustomResourceOptions): EventPermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventPermission]
     
     /**
       * Returns true if the given object is an instance of EventPermission.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/eventPermission.EventPermission */ Boolean]
   }
   
   trait EventPermissionArgs extends StObject {
@@ -112,38 +107,28 @@ object eventPermissionMod {
   }
   object EventPermissionArgs {
     
-    @scala.inline
-    def apply(principal: Input[String], statementId: Input[String]): EventPermissionArgs = {
+    inline def apply(principal: Input[String], statementId: Input[String]): EventPermissionArgs = {
       val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any], statementId = statementId.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventPermissionArgs]
     }
     
-    @scala.inline
-    implicit class EventPermissionArgsMutableBuilder[Self <: EventPermissionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EventPermissionArgs](x: Self) {
       
-      @scala.inline
-      def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setCondition(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventPermissionCondition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventPermissionCondition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
+      inline def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
+      inline def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
       
-      @scala.inline
-      def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementId(value: Input[String]): Self = StObject.set(x, "statementId", value.asInstanceOf[js.Any])
+      inline def setStatementId(value: Input[String]): Self = StObject.set(x, "statementId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,44 +161,32 @@ object eventPermissionMod {
   }
   object EventPermissionState {
     
-    @scala.inline
-    def apply(): EventPermissionState = {
+    inline def apply(): EventPermissionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventPermissionState]
     }
     
-    @scala.inline
-    implicit class EventPermissionStateMutableBuilder[Self <: EventPermissionState] (val x: Self) extends AnyVal {
+    extension [Self <: EventPermissionState](x: Self) {
       
-      @scala.inline
-      def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: Input[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setCondition(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventPermissionCondition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Input[typings.pulumiAws.inputMod.cloudwatch.EventPermissionCondition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
+      inline def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
+      inline def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
       
-      @scala.inline
-      def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+      inline def setPrincipal(value: Input[String]): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+      inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
       
-      @scala.inline
-      def setStatementId(value: Input[String]): Self = StObject.set(x, "statementId", value.asInstanceOf[js.Any])
+      inline def setStatementId(value: Input[String]): Self = StObject.set(x, "statementId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementIdUndefined: Self = StObject.set(x, "statementId", js.undefined)
+      inline def setStatementIdUndefined: Self = StObject.set(x, "statementId", js.undefined)
     }
   }
 }

@@ -13,16 +13,13 @@ trait Dictname
 }
 object Dictname {
   
-  @scala.inline
-  def apply(Key: String): Dictname = {
+  inline def apply(Key: String): Dictname = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictname]
   }
   
-  @scala.inline
-  implicit class DictnameMutableBuilder[Self <: Dictname] (val x: Self) extends AnyVal {
+  extension [Self <: Dictname](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
   }
 }

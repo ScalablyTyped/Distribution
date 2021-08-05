@@ -27,22 +27,17 @@ trait ChartSeriesAddress extends StObject {
 }
 object ChartSeriesAddress {
   
-  @scala.inline
-  def apply(DataRangeAddress: String, DomainRangeAddresses: SafeArray[String], LabelAddress: String): ChartSeriesAddress = {
+  inline def apply(DataRangeAddress: String, DomainRangeAddresses: SafeArray[String], LabelAddress: String): ChartSeriesAddress = {
     val __obj = js.Dynamic.literal(DataRangeAddress = DataRangeAddress.asInstanceOf[js.Any], DomainRangeAddresses = DomainRangeAddresses.asInstanceOf[js.Any], LabelAddress = LabelAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesAddress]
   }
   
-  @scala.inline
-  implicit class ChartSeriesAddressMutableBuilder[Self <: ChartSeriesAddress] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSeriesAddress](x: Self) {
     
-    @scala.inline
-    def setDataRangeAddress(value: String): Self = StObject.set(x, "DataRangeAddress", value.asInstanceOf[js.Any])
+    inline def setDataRangeAddress(value: String): Self = StObject.set(x, "DataRangeAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainRangeAddresses(value: SafeArray[String]): Self = StObject.set(x, "DomainRangeAddresses", value.asInstanceOf[js.Any])
+    inline def setDomainRangeAddresses(value: SafeArray[String]): Self = StObject.set(x, "DomainRangeAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelAddress(value: String): Self = StObject.set(x, "LabelAddress", value.asInstanceOf[js.Any])
+    inline def setLabelAddress(value: String): Self = StObject.set(x, "LabelAddress", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait ContainerProps
 }
 object ContainerProps {
   
-  @scala.inline
-  def apply(): ContainerProps = {
+  inline def apply(): ContainerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerProps]
   }
   
-  @scala.inline
-  implicit class ContainerPropsMutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerProps](x: Self) {
     
-    @scala.inline
-    def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+    inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
+    inline def setFluidUndefined: Self = StObject.set(x, "fluid", js.undefined)
   }
 }

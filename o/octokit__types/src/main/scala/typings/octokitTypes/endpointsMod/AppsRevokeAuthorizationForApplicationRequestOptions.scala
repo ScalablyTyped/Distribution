@@ -20,25 +20,19 @@ trait AppsRevokeAuthorizationForApplicationRequestOptions extends StObject {
 }
 object AppsRevokeAuthorizationForApplicationRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsRevokeAuthorizationForApplicationRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsRevokeAuthorizationForApplicationRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/applications/:client_id/tokens/:access_token")
     __obj.asInstanceOf[AppsRevokeAuthorizationForApplicationRequestOptions]
   }
   
-  @scala.inline
-  implicit class AppsRevokeAuthorizationForApplicationRequestOptionsMutableBuilder[Self <: AppsRevokeAuthorizationForApplicationRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppsRevokeAuthorizationForApplicationRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashapplicationsSlashColonclient_idSlashtokensSlashColonaccess_token): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashapplicationsSlashColonclient_idSlashtokensSlashColonaccess_token): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

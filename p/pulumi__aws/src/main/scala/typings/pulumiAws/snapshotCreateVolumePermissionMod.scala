@@ -50,14 +50,10 @@ object snapshotCreateVolumePermissionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SnapshotCreateVolumePermissionState): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
+    inline def get(name: String, id: Input[ID], state: SnapshotCreateVolumePermissionState): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
+    inline def get(
       name: String,
       id: Input[ID],
       state: SnapshotCreateVolumePermissionState,
@@ -68,8 +64,7 @@ object snapshotCreateVolumePermissionMod {
       * Returns true if the given object is an instance of SnapshotCreateVolumePermission.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ Boolean]
   }
   
   trait SnapshotCreateVolumePermissionArgs extends StObject {
@@ -86,20 +81,16 @@ object snapshotCreateVolumePermissionMod {
   }
   object SnapshotCreateVolumePermissionArgs {
     
-    @scala.inline
-    def apply(accountId: Input[String], snapshotId: Input[String]): SnapshotCreateVolumePermissionArgs = {
+    inline def apply(accountId: Input[String], snapshotId: Input[String]): SnapshotCreateVolumePermissionArgs = {
       val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], snapshotId = snapshotId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnapshotCreateVolumePermissionArgs]
     }
     
-    @scala.inline
-    implicit class SnapshotCreateVolumePermissionArgsMutableBuilder[Self <: SnapshotCreateVolumePermissionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotCreateVolumePermissionArgs](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotId(value: Input[String]): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+      inline def setSnapshotId(value: Input[String]): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,26 +108,20 @@ object snapshotCreateVolumePermissionMod {
   }
   object SnapshotCreateVolumePermissionState {
     
-    @scala.inline
-    def apply(): SnapshotCreateVolumePermissionState = {
+    inline def apply(): SnapshotCreateVolumePermissionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SnapshotCreateVolumePermissionState]
     }
     
-    @scala.inline
-    implicit class SnapshotCreateVolumePermissionStateMutableBuilder[Self <: SnapshotCreateVolumePermissionState] (val x: Self) extends AnyVal {
+    extension [Self <: SnapshotCreateVolumePermissionState](x: Self) {
       
-      @scala.inline
-      def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: Input[String]): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+      inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
       
-      @scala.inline
-      def setSnapshotId(value: Input[String]): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+      inline def setSnapshotId(value: Input[String]): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+      inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
     }
   }
 }

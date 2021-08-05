@@ -15,26 +15,20 @@ trait ColumnRef extends StObject {
 }
 object ColumnRef {
   
-  @scala.inline
-  def apply(column: String): ColumnRef = {
+  inline def apply(column: String): ColumnRef = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], table = null)
     __obj.updateDynamic("type")("column_ref")
     __obj.asInstanceOf[ColumnRef]
   }
   
-  @scala.inline
-  implicit class ColumnRefMutableBuilder[Self <: ColumnRef] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnRef](x: Self) {
     
-    @scala.inline
-    def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNull: Self = StObject.set(x, "table", null)
+    inline def setTableNull: Self = StObject.set(x, "table", null)
     
-    @scala.inline
-    def setType(value: column_ref): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: column_ref): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

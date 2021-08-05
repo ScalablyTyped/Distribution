@@ -72,8 +72,7 @@ object anon {
   }
   object Anticipate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       anticipate: /* v */ Double => Double,
       backIn: /* v */ Double => Double,
       backInOut: /* v */ Double => Double,
@@ -90,41 +89,29 @@ object anon {
       __obj.asInstanceOf[Anticipate]
     }
     
-    @scala.inline
-    implicit class AnticipateMutableBuilder[Self <: Anticipate] (val x: Self) extends AnyVal {
+    extension [Self <: Anticipate](x: Self) {
       
-      @scala.inline
-      def setAnticipate(value: /* v */ Double => Double): Self = StObject.set(x, "anticipate", js.Any.fromFunction1(value))
+      inline def setAnticipate(value: /* v */ Double => Double): Self = StObject.set(x, "anticipate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBackIn(value: /* v */ Double => Double): Self = StObject.set(x, "backIn", js.Any.fromFunction1(value))
+      inline def setBackIn(value: /* v */ Double => Double): Self = StObject.set(x, "backIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBackInOut(value: /* v */ Double => Double): Self = StObject.set(x, "backInOut", js.Any.fromFunction1(value))
+      inline def setBackInOut(value: /* v */ Double => Double): Self = StObject.set(x, "backInOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBackOut(value: /* v */ Double => Double): Self = StObject.set(x, "backOut", js.Any.fromFunction1(value))
+      inline def setBackOut(value: /* v */ Double => Double): Self = StObject.set(x, "backOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCircIn(value: /* v */ Double => Double): Self = StObject.set(x, "circIn", js.Any.fromFunction1(value))
+      inline def setCircIn(value: /* v */ Double => Double): Self = StObject.set(x, "circIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCircInOut(value: /* v */ Double => Double): Self = StObject.set(x, "circInOut", js.Any.fromFunction1(value))
+      inline def setCircInOut(value: /* v */ Double => Double): Self = StObject.set(x, "circInOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCircOut(value: /* v */ Double => Double): Self = StObject.set(x, "circOut", js.Any.fromFunction1(value))
+      inline def setCircOut(value: /* v */ Double => Double): Self = StObject.set(x, "circOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEaseIn(value: /* v */ Double => Double): Self = StObject.set(x, "easeIn", js.Any.fromFunction1(value))
+      inline def setEaseIn(value: /* v */ Double => Double): Self = StObject.set(x, "easeIn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEaseInOut(value: /* v */ Double => Double): Self = StObject.set(x, "easeInOut", js.Any.fromFunction1(value))
+      inline def setEaseInOut(value: /* v */ Double => Double): Self = StObject.set(x, "easeInOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEaseOut(value: /* v */ Double => Double): Self = StObject.set(x, "easeOut", js.Any.fromFunction1(value))
+      inline def setEaseOut(value: /* v */ Double => Double): Self = StObject.set(x, "easeOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLinear(value: /* v */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
+      inline def setLinear(value: /* v */ Double => Double): Self = StObject.set(x, "linear", js.Any.fromFunction1(value))
     }
   }
   
@@ -134,19 +121,16 @@ object anon {
   }
   object Ease {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ease: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TweenProps * / any['ease'] */ js.Any) | linear | easeIn | easeOut | easeInOut | circIn | circOut | circInOut | backIn | backOut | backInOut | anticipate | CubicBezierArgs
     ): Ease = {
       val __obj = js.Dynamic.literal(ease = ease.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ease]
     }
     
-    @scala.inline
-    implicit class EaseMutableBuilder[Self <: Ease] (val x: Self) extends AnyVal {
+    extension [Self <: Ease](x: Self) {
       
-      @scala.inline
-      def setEase(
+      inline def setEase(
         value: (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TweenProps * / any['ease'] */ js.Any) | linear | easeIn | easeOut | easeInOut | circIn | circOut | circInOut | backIn | backOut | backInOut | anticipate | CubicBezierArgs
       ): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
     }
@@ -158,17 +142,14 @@ object anon {
   }
   object ElementStyler {
     
-    @scala.inline
-    def apply(elementStyler: Styler): ElementStyler = {
+    inline def apply(elementStyler: Styler): ElementStyler = {
       val __obj = js.Dynamic.literal(elementStyler = elementStyler.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementStyler]
     }
     
-    @scala.inline
-    implicit class ElementStylerMutableBuilder[Self <: ElementStyler] (val x: Self) extends AnyVal {
+    extension [Self <: ElementStyler](x: Self) {
       
-      @scala.inline
-      def setElementStyler(value: Styler): Self = StObject.set(x, "elementStyler", value.asInstanceOf[js.Any])
+      inline def setElementStyler(value: Styler): Self = StObject.set(x, "elementStyler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,18 +159,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(): Type = {
+    inline def apply(): Type = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("tween")
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: tween): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: tween): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

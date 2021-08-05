@@ -58,8 +58,7 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Msxml2DotDOMDocument: DOMDocument60,
     Msxml2DotDOMDocumentDot6Dot0: DOMDocument60,
     Msxml2DotFreeThreadedDOMDocument: FreeThreadedDOMDocument60,
@@ -89,43 +88,30 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setMsxml2DotDOMDocument(value: DOMDocument60): Self = StObject.set(x, "Msxml2.DOMDocument", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotDOMDocument(value: DOMDocument60): Self = StObject.set(x, "Msxml2.DOMDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotDOMDocumentDot6Dot0(value: DOMDocument60): Self = StObject.set(x, "Msxml2.DOMDocument.6.0", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotDOMDocumentDot6Dot0(value: DOMDocument60): Self = StObject.set(x, "Msxml2.DOMDocument.6.0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotFreeThreadedDOMDocument(value: FreeThreadedDOMDocument60): Self = StObject.set(x, "Msxml2.FreeThreadedDOMDocument", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotFreeThreadedDOMDocument(value: FreeThreadedDOMDocument60): Self = StObject.set(x, "Msxml2.FreeThreadedDOMDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotMXHTMLWriter(value: MXHTMLWriter60): Self = StObject.set(x, "Msxml2.MXHTMLWriter", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotMXHTMLWriter(value: MXHTMLWriter60): Self = StObject.set(x, "Msxml2.MXHTMLWriter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotMXNamespaceManager(value: MXNamespaceManager60): Self = StObject.set(x, "Msxml2.MXNamespaceManager", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotMXNamespaceManager(value: MXNamespaceManager60): Self = StObject.set(x, "Msxml2.MXNamespaceManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotMXXMLWriter(value: MXXMLWriter60): Self = StObject.set(x, "Msxml2.MXXMLWriter", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotMXXMLWriter(value: MXXMLWriter60): Self = StObject.set(x, "Msxml2.MXXMLWriter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotSAXAttributes(value: SAXAttributes60): Self = StObject.set(x, "Msxml2.SAXAttributes", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotSAXAttributes(value: SAXAttributes60): Self = StObject.set(x, "Msxml2.SAXAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotSAXXMLReader(value: SAXXMLReader60): Self = StObject.set(x, "Msxml2.SAXXMLReader", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotSAXXMLReader(value: SAXXMLReader60): Self = StObject.set(x, "Msxml2.SAXXMLReader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotServerXMLHTTP(value: ServerXMLHTTP60): Self = StObject.set(x, "Msxml2.ServerXMLHTTP", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotServerXMLHTTP(value: ServerXMLHTTP60): Self = StObject.set(x, "Msxml2.ServerXMLHTTP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotXMLHTTP(value: XMLHTTP60): Self = StObject.set(x, "Msxml2.XMLHTTP", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotXMLHTTP(value: XMLHTTP60): Self = StObject.set(x, "Msxml2.XMLHTTP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotXMLSchemaCache(value: XMLSchemaCache60): Self = StObject.set(x, "Msxml2.XMLSchemaCache", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotXMLSchemaCache(value: XMLSchemaCache60): Self = StObject.set(x, "Msxml2.XMLSchemaCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsxml2DotXSLTemplate(value: XSLTemplate60): Self = StObject.set(x, "Msxml2.XSLTemplate", value.asInstanceOf[js.Any])
+    inline def setMsxml2DotXSLTemplate(value: XSLTemplate60): Self = StObject.set(x, "Msxml2.XSLTemplate", value.asInstanceOf[js.Any])
   }
 }

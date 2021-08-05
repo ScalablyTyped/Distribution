@@ -90,58 +90,41 @@ trait VictoryLineProps
 }
 object VictoryLineProps {
   
-  @scala.inline
-  def apply(): VictoryLineProps = {
+  inline def apply(): VictoryLineProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryLineProps]
   }
   
-  @scala.inline
-  implicit class VictoryLinePropsMutableBuilder[Self <: VictoryLineProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryLineProps](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[EventPropTypeInterface[data | labels | parent, Double | String]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, Double | String])*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: (EventPropTypeInterface[data | labels | parent, Double | String])*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setInterpolation(value: InterpolationPropType): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: InterpolationPropType): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
-    @scala.inline
-    def setLabels(value: (js.Array[Double | String]) | js.Function): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: (js.Array[Double | String]) | js.Function): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: (Double | String)*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: (Double | String)*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
+    inline def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
+    inline def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
     
-    @scala.inline
-    def setSortKey(value: String | js.Array[String] | js.Function): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
+    inline def setSortKey(value: String | js.Array[String] | js.Function): Self = StObject.set(x, "sortKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortKeyUndefined: Self = StObject.set(x, "sortKey", js.undefined)
+    inline def setSortKeyUndefined: Self = StObject.set(x, "sortKey", js.undefined)
     
-    @scala.inline
-    def setSortKeyVarargs(value: String*): Self = StObject.set(x, "sortKey", js.Array(value :_*))
+    inline def setSortKeyVarargs(value: String*): Self = StObject.set(x, "sortKey", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: VictoryStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

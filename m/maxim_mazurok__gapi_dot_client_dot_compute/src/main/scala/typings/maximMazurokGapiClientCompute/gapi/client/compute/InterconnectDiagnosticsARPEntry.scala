@@ -14,25 +14,19 @@ trait InterconnectDiagnosticsARPEntry extends StObject {
 }
 object InterconnectDiagnosticsARPEntry {
   
-  @scala.inline
-  def apply(): InterconnectDiagnosticsARPEntry = {
+  inline def apply(): InterconnectDiagnosticsARPEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterconnectDiagnosticsARPEntry]
   }
   
-  @scala.inline
-  implicit class InterconnectDiagnosticsARPEntryMutableBuilder[Self <: InterconnectDiagnosticsARPEntry] (val x: Self) extends AnyVal {
+  extension [Self <: InterconnectDiagnosticsARPEntry](x: Self) {
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
+    inline def setMacAddressUndefined: Self = StObject.set(x, "macAddress", js.undefined)
   }
 }

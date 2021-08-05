@@ -8,16 +8,13 @@ object bricksJsStrings {
   
   @js.native
   sealed trait pack extends StObject
-  @scala.inline
-  def pack: pack = "pack".asInstanceOf[pack]
+  inline def pack: pack = "pack".asInstanceOf[pack]
   
   @js.native
   sealed trait resize extends StObject
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
   sealed trait update extends StObject
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
 }

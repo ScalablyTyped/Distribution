@@ -10,16 +10,13 @@ trait Jql extends StObject {
 }
 object Jql {
   
-  @scala.inline
-  def apply(jql: String): Jql = {
+  inline def apply(jql: String): Jql = {
     val __obj = js.Dynamic.literal(jql = jql.asInstanceOf[js.Any])
     __obj.asInstanceOf[Jql]
   }
   
-  @scala.inline
-  implicit class JqlMutableBuilder[Self <: Jql] (val x: Self) extends AnyVal {
+  extension [Self <: Jql](x: Self) {
     
-    @scala.inline
-    def setJql(value: String): Self = StObject.set(x, "jql", value.asInstanceOf[js.Any])
+    inline def setJql(value: String): Self = StObject.set(x, "jql", value.asInstanceOf[js.Any])
   }
 }

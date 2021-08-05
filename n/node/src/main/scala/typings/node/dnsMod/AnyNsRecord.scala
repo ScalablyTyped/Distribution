@@ -15,20 +15,16 @@ trait AnyNsRecord
 }
 object AnyNsRecord {
   
-  @scala.inline
-  def apply(value: String): AnyNsRecord = {
+  inline def apply(value: String): AnyNsRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NS")
     __obj.asInstanceOf[AnyNsRecord]
   }
   
-  @scala.inline
-  implicit class AnyNsRecordMutableBuilder[Self <: AnyNsRecord] (val x: Self) extends AnyVal {
+  extension [Self <: AnyNsRecord](x: Self) {
     
-    @scala.inline
-    def setType(value: NS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

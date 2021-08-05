@@ -21,8 +21,7 @@ trait DeploymentInput
 }
 object DeploymentInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifactsDownloadInput: ArtifactsDownloadInput,
     condition: String,
     demands: js.Array[js.Any],
@@ -37,25 +36,18 @@ object DeploymentInput {
     __obj.asInstanceOf[DeploymentInput]
   }
   
-  @scala.inline
-  implicit class DeploymentInputMutableBuilder[Self <: DeploymentInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentInput](x: Self) {
     
-    @scala.inline
-    def setArtifactsDownloadInput(value: ArtifactsDownloadInput): Self = StObject.set(x, "artifactsDownloadInput", value.asInstanceOf[js.Any])
+    inline def setArtifactsDownloadInput(value: ArtifactsDownloadInput): Self = StObject.set(x, "artifactsDownloadInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
     
-    @scala.inline
-    def setEnableAccessToken(value: Boolean): Self = StObject.set(x, "enableAccessToken", value.asInstanceOf[js.Any])
+    inline def setEnableAccessToken(value: Boolean): Self = StObject.set(x, "enableAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueId(value: Double): Self = StObject.set(x, "queueId", value.asInstanceOf[js.Any])
+    inline def setQueueId(value: Double): Self = StObject.set(x, "queueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipArtifactsDownload(value: Boolean): Self = StObject.set(x, "skipArtifactsDownload", value.asInstanceOf[js.Any])
+    inline def setSkipArtifactsDownload(value: Boolean): Self = StObject.set(x, "skipArtifactsDownload", value.asInstanceOf[js.Any])
   }
 }

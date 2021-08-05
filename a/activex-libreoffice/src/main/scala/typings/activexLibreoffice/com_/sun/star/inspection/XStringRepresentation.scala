@@ -29,19 +29,15 @@ trait XStringRepresentation extends StObject {
 }
 object XStringRepresentation {
   
-  @scala.inline
-  def apply(convertToControlValue: js.Any => String, convertToPropertyValue: (String, `type`) => js.Any): XStringRepresentation = {
+  inline def apply(convertToControlValue: js.Any => String, convertToPropertyValue: (String, `type`) => js.Any): XStringRepresentation = {
     val __obj = js.Dynamic.literal(convertToControlValue = js.Any.fromFunction1(convertToControlValue), convertToPropertyValue = js.Any.fromFunction2(convertToPropertyValue))
     __obj.asInstanceOf[XStringRepresentation]
   }
   
-  @scala.inline
-  implicit class XStringRepresentationMutableBuilder[Self <: XStringRepresentation] (val x: Self) extends AnyVal {
+  extension [Self <: XStringRepresentation](x: Self) {
     
-    @scala.inline
-    def setConvertToControlValue(value: js.Any => String): Self = StObject.set(x, "convertToControlValue", js.Any.fromFunction1(value))
+    inline def setConvertToControlValue(value: js.Any => String): Self = StObject.set(x, "convertToControlValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConvertToPropertyValue(value: (String, `type`) => js.Any): Self = StObject.set(x, "convertToPropertyValue", js.Any.fromFunction2(value))
+    inline def setConvertToPropertyValue(value: (String, `type`) => js.Any): Self = StObject.set(x, "convertToPropertyValue", js.Any.fromFunction2(value))
   }
 }

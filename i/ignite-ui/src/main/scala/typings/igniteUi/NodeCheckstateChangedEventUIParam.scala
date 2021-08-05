@@ -33,49 +33,35 @@ trait NodeCheckstateChangedEventUIParam extends StObject {
 }
 object NodeCheckstateChangedEventUIParam {
   
-  @scala.inline
-  def apply(): NodeCheckstateChangedEventUIParam = {
+  inline def apply(): NodeCheckstateChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeCheckstateChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class NodeCheckstateChangedEventUIParamMutableBuilder[Self <: NodeCheckstateChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: NodeCheckstateChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setNewCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "newCheckedNodes", value.asInstanceOf[js.Any])
+    inline def setNewCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "newCheckedNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewCheckedNodesUndefined: Self = StObject.set(x, "newCheckedNodes", js.undefined)
+    inline def setNewCheckedNodesUndefined: Self = StObject.set(x, "newCheckedNodes", js.undefined)
     
-    @scala.inline
-    def setNewCheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "newCheckedNodes", js.Array(value :_*))
+    inline def setNewCheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "newCheckedNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setNewPartiallyCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "newPartiallyCheckedNodes", value.asInstanceOf[js.Any])
+    inline def setNewPartiallyCheckedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "newPartiallyCheckedNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPartiallyCheckedNodesUndefined: Self = StObject.set(x, "newPartiallyCheckedNodes", js.undefined)
+    inline def setNewPartiallyCheckedNodesUndefined: Self = StObject.set(x, "newPartiallyCheckedNodes", js.undefined)
     
-    @scala.inline
-    def setNewPartiallyCheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "newPartiallyCheckedNodes", js.Array(value :_*))
+    inline def setNewPartiallyCheckedNodesVarargs(value: js.Any*): Self = StObject.set(x, "newPartiallyCheckedNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setNewState(value: String): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
+    inline def setNewState(value: String): Self = StObject.set(x, "newState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewStateUndefined: Self = StObject.set(x, "newState", js.undefined)
+    inline def setNewStateUndefined: Self = StObject.set(x, "newState", js.undefined)
     
-    @scala.inline
-    def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: js.Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

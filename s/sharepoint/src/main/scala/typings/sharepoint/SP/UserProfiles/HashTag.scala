@@ -17,8 +17,7 @@ trait HashTag
 }
 object HashTag {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -31,13 +30,10 @@ object HashTag {
     __obj.asInstanceOf[HashTag]
   }
   
-  @scala.inline
-  implicit class HashTagMutableBuilder[Self <: HashTag] (val x: Self) extends AnyVal {
+  extension [Self <: HashTag](x: Self) {
     
-    @scala.inline
-    def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+    inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_useCount(value: () => Double): Self = StObject.set(x, "get_useCount", js.Any.fromFunction0(value))
+    inline def setGet_useCount(value: () => Double): Self = StObject.set(x, "get_useCount", js.Any.fromFunction0(value))
   }
 }

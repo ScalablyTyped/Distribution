@@ -17,31 +17,23 @@ trait GoogleCloudRecommendationengineV1beta1Image extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1Image {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1Image = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1Image = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1Image]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ImageMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1Image] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1Image](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

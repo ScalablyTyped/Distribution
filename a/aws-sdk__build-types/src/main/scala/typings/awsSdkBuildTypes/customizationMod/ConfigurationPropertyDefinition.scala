@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConfigurationPropertyDefinition extends StObject
 object ConfigurationPropertyDefinition {
   
-  @scala.inline
-  def EnvironmentForkedConfigurationPropertyDefinition(
+  inline def EnvironmentForkedConfigurationPropertyDefinition(
     browser: ConfigurationPropertyDefinitionRuntimeAttributes & AdditionalDocumentation,
     documentation: String,
     inputType: String,
@@ -24,8 +23,7 @@ object ConfigurationPropertyDefinition {
     __obj.asInstanceOf[typings.awsSdkBuildTypes.customizationMod.EnvironmentForkedConfigurationPropertyDefinition]
   }
   
-  @scala.inline
-  def UnifiedConfigurationPropertyDefinition(documentation: String, inputType: String, required: Boolean): typings.awsSdkBuildTypes.customizationMod.UnifiedConfigurationPropertyDefinition = {
+  inline def UnifiedConfigurationPropertyDefinition(documentation: String, inputType: String, required: Boolean): typings.awsSdkBuildTypes.customizationMod.UnifiedConfigurationPropertyDefinition = {
     val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], inputType = inputType.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("unified")
     __obj.asInstanceOf[typings.awsSdkBuildTypes.customizationMod.UnifiedConfigurationPropertyDefinition]

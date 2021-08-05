@@ -68,55 +68,39 @@ trait AccessibilityScreenReaderSectionOptions extends StObject {
 }
 object AccessibilityScreenReaderSectionOptions {
   
-  @scala.inline
-  def apply(): AccessibilityScreenReaderSectionOptions = {
+  inline def apply(): AccessibilityScreenReaderSectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessibilityScreenReaderSectionOptions]
   }
   
-  @scala.inline
-  implicit class AccessibilityScreenReaderSectionOptionsMutableBuilder[Self <: AccessibilityScreenReaderSectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityScreenReaderSectionOptions](x: Self) {
     
-    @scala.inline
-    def setAfterChartFormat(value: String): Self = StObject.set(x, "afterChartFormat", value.asInstanceOf[js.Any])
+    inline def setAfterChartFormat(value: String): Self = StObject.set(x, "afterChartFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterChartFormatUndefined: Self = StObject.set(x, "afterChartFormat", js.undefined)
+    inline def setAfterChartFormatUndefined: Self = StObject.set(x, "afterChartFormat", js.undefined)
     
-    @scala.inline
-    def setAfterChartFormatter(value: Chart_ => String): Self = StObject.set(x, "afterChartFormatter", js.Any.fromFunction1(value))
+    inline def setAfterChartFormatter(value: Chart_ => String): Self = StObject.set(x, "afterChartFormatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAfterChartFormatterUndefined: Self = StObject.set(x, "afterChartFormatter", js.undefined)
+    inline def setAfterChartFormatterUndefined: Self = StObject.set(x, "afterChartFormatter", js.undefined)
     
-    @scala.inline
-    def setAxisRangeDateFormat(value: String): Self = StObject.set(x, "axisRangeDateFormat", value.asInstanceOf[js.Any])
+    inline def setAxisRangeDateFormat(value: String): Self = StObject.set(x, "axisRangeDateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisRangeDateFormatUndefined: Self = StObject.set(x, "axisRangeDateFormat", js.undefined)
+    inline def setAxisRangeDateFormatUndefined: Self = StObject.set(x, "axisRangeDateFormat", js.undefined)
     
-    @scala.inline
-    def setBeforeChartFormat(value: String): Self = StObject.set(x, "beforeChartFormat", value.asInstanceOf[js.Any])
+    inline def setBeforeChartFormat(value: String): Self = StObject.set(x, "beforeChartFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeChartFormatUndefined: Self = StObject.set(x, "beforeChartFormat", js.undefined)
+    inline def setBeforeChartFormatUndefined: Self = StObject.set(x, "beforeChartFormat", js.undefined)
     
-    @scala.inline
-    def setBeforeChartFormatter(value: Chart_ => String): Self = StObject.set(x, "beforeChartFormatter", js.Any.fromFunction1(value))
+    inline def setBeforeChartFormatter(value: Chart_ => String): Self = StObject.set(x, "beforeChartFormatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeChartFormatterUndefined: Self = StObject.set(x, "beforeChartFormatter", js.undefined)
+    inline def setBeforeChartFormatterUndefined: Self = StObject.set(x, "beforeChartFormatter", js.undefined)
     
-    @scala.inline
-    def setOnPlayAsSoundClick(value: /* evt */ MouseEvent => Unit): Self = StObject.set(x, "onPlayAsSoundClick", js.Any.fromFunction1(value))
+    inline def setOnPlayAsSoundClick(value: /* evt */ MouseEvent => Unit): Self = StObject.set(x, "onPlayAsSoundClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPlayAsSoundClickUndefined: Self = StObject.set(x, "onPlayAsSoundClick", js.undefined)
+    inline def setOnPlayAsSoundClickUndefined: Self = StObject.set(x, "onPlayAsSoundClick", js.undefined)
     
-    @scala.inline
-    def setOnViewDataTableClick(value: /* evt */ MouseEvent => Unit): Self = StObject.set(x, "onViewDataTableClick", js.Any.fromFunction1(value))
+    inline def setOnViewDataTableClick(value: /* evt */ MouseEvent => Unit): Self = StObject.set(x, "onViewDataTableClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnViewDataTableClickUndefined: Self = StObject.set(x, "onViewDataTableClick", js.undefined)
+    inline def setOnViewDataTableClickUndefined: Self = StObject.set(x, "onViewDataTableClick", js.undefined)
   }
 }

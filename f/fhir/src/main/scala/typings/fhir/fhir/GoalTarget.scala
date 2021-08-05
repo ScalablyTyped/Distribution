@@ -48,55 +48,39 @@ trait GoalTarget
 }
 object GoalTarget {
   
-  @scala.inline
-  def apply(): GoalTarget = {
+  inline def apply(): GoalTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoalTarget]
   }
   
-  @scala.inline
-  implicit class GoalTargetMutableBuilder[Self <: GoalTarget] (val x: Self) extends AnyVal {
+  extension [Self <: GoalTarget](x: Self) {
     
-    @scala.inline
-    def setDetailCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "detailCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setDetailCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "detailCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailCodeableConceptUndefined: Self = StObject.set(x, "detailCodeableConcept", js.undefined)
+    inline def setDetailCodeableConceptUndefined: Self = StObject.set(x, "detailCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setDetailQuantity(value: Quantity): Self = StObject.set(x, "detailQuantity", value.asInstanceOf[js.Any])
+    inline def setDetailQuantity(value: Quantity): Self = StObject.set(x, "detailQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailQuantityUndefined: Self = StObject.set(x, "detailQuantity", js.undefined)
+    inline def setDetailQuantityUndefined: Self = StObject.set(x, "detailQuantity", js.undefined)
     
-    @scala.inline
-    def setDetailRange(value: Range): Self = StObject.set(x, "detailRange", value.asInstanceOf[js.Any])
+    inline def setDetailRange(value: Range): Self = StObject.set(x, "detailRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailRangeUndefined: Self = StObject.set(x, "detailRange", js.undefined)
+    inline def setDetailRangeUndefined: Self = StObject.set(x, "detailRange", js.undefined)
     
-    @scala.inline
-    def setDueDate(value: date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
+    inline def setDueDate(value: date): Self = StObject.set(x, "dueDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDueDateUndefined: Self = StObject.set(x, "dueDate", js.undefined)
+    inline def setDueDateUndefined: Self = StObject.set(x, "dueDate", js.undefined)
     
-    @scala.inline
-    def setDueDuration(value: Duration): Self = StObject.set(x, "dueDuration", value.asInstanceOf[js.Any])
+    inline def setDueDuration(value: Duration): Self = StObject.set(x, "dueDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDueDurationUndefined: Self = StObject.set(x, "dueDuration", js.undefined)
+    inline def setDueDurationUndefined: Self = StObject.set(x, "dueDuration", js.undefined)
     
-    @scala.inline
-    def setMeasure(value: CodeableConcept): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
+    inline def setMeasure(value: CodeableConcept): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
+    inline def setMeasureUndefined: Self = StObject.set(x, "measure", js.undefined)
     
-    @scala.inline
-    def set_dueDate(value: Element): Self = StObject.set(x, "_dueDate", value.asInstanceOf[js.Any])
+    inline def set_dueDate(value: Element): Self = StObject.set(x, "_dueDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dueDateUndefined: Self = StObject.set(x, "_dueDate", js.undefined)
+    inline def set_dueDateUndefined: Self = StObject.set(x, "_dueDate", js.undefined)
   }
 }

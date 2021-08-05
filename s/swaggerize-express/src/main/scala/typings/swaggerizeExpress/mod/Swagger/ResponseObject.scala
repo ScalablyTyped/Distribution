@@ -18,34 +18,25 @@ trait ResponseObject
 }
 object ResponseObject {
   
-  @scala.inline
-  def apply(description: String): ResponseObject = {
+  inline def apply(description: String): ResponseObject = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseObject]
   }
   
-  @scala.inline
-  implicit class ResponseObjectMutableBuilder[Self <: ResponseObject] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseObject](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExamples(value: ExampleObject): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    inline def setExamples(value: ExampleObject): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: HeadersObject): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: HeadersObject): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setSchema(value: SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

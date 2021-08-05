@@ -56,67 +56,47 @@ trait ParamsResourceVolumesMybooksList
 }
 object ParamsResourceVolumesMybooksList {
   
-  @scala.inline
-  def apply(): ParamsResourceVolumesMybooksList = {
+  inline def apply(): ParamsResourceVolumesMybooksList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceVolumesMybooksList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceVolumesMybooksListMutableBuilder[Self <: ParamsResourceVolumesMybooksList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceVolumesMybooksList](x: Self) {
     
-    @scala.inline
-    def setAcquireMethod(value: js.Array[String]): Self = StObject.set(x, "acquireMethod", value.asInstanceOf[js.Any])
+    inline def setAcquireMethod(value: js.Array[String]): Self = StObject.set(x, "acquireMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcquireMethodUndefined: Self = StObject.set(x, "acquireMethod", js.undefined)
+    inline def setAcquireMethodUndefined: Self = StObject.set(x, "acquireMethod", js.undefined)
     
-    @scala.inline
-    def setAcquireMethodVarargs(value: String*): Self = StObject.set(x, "acquireMethod", js.Array(value :_*))
+    inline def setAcquireMethodVarargs(value: String*): Self = StObject.set(x, "acquireMethod", js.Array(value :_*))
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setProcessingState(value: js.Array[String]): Self = StObject.set(x, "processingState", value.asInstanceOf[js.Any])
+    inline def setProcessingState(value: js.Array[String]): Self = StObject.set(x, "processingState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingStateUndefined: Self = StObject.set(x, "processingState", js.undefined)
+    inline def setProcessingStateUndefined: Self = StObject.set(x, "processingState", js.undefined)
     
-    @scala.inline
-    def setProcessingStateVarargs(value: String*): Self = StObject.set(x, "processingState", js.Array(value :_*))
+    inline def setProcessingStateVarargs(value: String*): Self = StObject.set(x, "processingState", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

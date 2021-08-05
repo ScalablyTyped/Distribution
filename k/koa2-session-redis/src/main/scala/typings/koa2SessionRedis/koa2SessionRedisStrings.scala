@@ -8,6 +8,5 @@ object koa2SessionRedisStrings {
   
   @js.native
   sealed trait session extends StObject
-  @scala.inline
-  def session: session = "session".asInstanceOf[session]
+  inline def session: session = "session".asInstanceOf[session]
 }

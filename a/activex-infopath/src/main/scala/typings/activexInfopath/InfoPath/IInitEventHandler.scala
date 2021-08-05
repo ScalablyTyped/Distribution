@@ -6,15 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IInitEventHandler extends StObject {
   
-  @JSName("InfoPath.IInitEventHandler_typekey")
+  /* private */ @JSName("InfoPath.IInitEventHandler_typekey")
   var InfoPathDotIInitEventHandler_typekey: IInitEventHandler
   
   def InitEventHandler(punkSender: js.Any, pDocument: _XDocument, pROMode: XdReadOnlyViewMode): Unit
 }
 object IInitEventHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotIInitEventHandler_typekey: IInitEventHandler,
     InitEventHandler: (js.Any, _XDocument, XdReadOnlyViewMode) => Unit
   ): IInitEventHandler = {
@@ -23,13 +22,10 @@ object IInitEventHandler {
     __obj.asInstanceOf[IInitEventHandler]
   }
   
-  @scala.inline
-  implicit class IInitEventHandlerMutableBuilder[Self <: IInitEventHandler] (val x: Self) extends AnyVal {
+  extension [Self <: IInitEventHandler](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotIInitEventHandler_typekey(value: IInitEventHandler): Self = StObject.set(x, "InfoPath.IInitEventHandler_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotIInitEventHandler_typekey(value: IInitEventHandler): Self = StObject.set(x, "InfoPath.IInitEventHandler_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitEventHandler(value: (js.Any, _XDocument, XdReadOnlyViewMode) => Unit): Self = StObject.set(x, "InitEventHandler", js.Any.fromFunction3(value))
+    inline def setInitEventHandler(value: (js.Any, _XDocument, XdReadOnlyViewMode) => Unit): Self = StObject.set(x, "InitEventHandler", js.Any.fromFunction3(value))
   }
 }

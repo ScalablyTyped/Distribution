@@ -13,16 +13,13 @@ trait DeleteIndexFieldResponse extends StObject {
 }
 object DeleteIndexFieldResponse {
   
-  @scala.inline
-  def apply(IndexField: IndexFieldStatus): DeleteIndexFieldResponse = {
+  inline def apply(IndexField: IndexFieldStatus): DeleteIndexFieldResponse = {
     val __obj = js.Dynamic.literal(IndexField = IndexField.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIndexFieldResponse]
   }
   
-  @scala.inline
-  implicit class DeleteIndexFieldResponseMutableBuilder[Self <: DeleteIndexFieldResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIndexFieldResponse](x: Self) {
     
-    @scala.inline
-    def setIndexField(value: IndexFieldStatus): Self = StObject.set(x, "IndexField", value.asInstanceOf[js.Any])
+    inline def setIndexField(value: IndexFieldStatus): Self = StObject.set(x, "IndexField", value.asInstanceOf[js.Any])
   }
 }

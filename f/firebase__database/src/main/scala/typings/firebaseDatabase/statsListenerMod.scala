@@ -13,10 +13,10 @@ object statsListenerMod {
   class StatsListener protected () extends StObject {
     def this(collection_ : StatsCollection) = this()
     
-    var collection_ : js.Any = js.native
+    /* private */ var collection_ : js.Any = js.native
     
     def get(): StringDictionary[Double] = js.native
     
-    var last_ : js.Any = js.native
+    /* private */ var last_ : js.Any = js.native
   }
 }

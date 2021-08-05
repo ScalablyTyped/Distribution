@@ -28,8 +28,7 @@ object runtimeInfoMod {
   }
   object RuntimeInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       architecture: String,
       args: js.Object,
       chromeVersion: String,
@@ -41,44 +40,31 @@ object runtimeInfoMod {
       __obj.asInstanceOf[RuntimeInfo]
     }
     
-    @scala.inline
-    implicit class RuntimeInfoMutableBuilder[Self <: RuntimeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeInfo](x: Self) {
       
-      @scala.inline
-      def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+      inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgs(value: js.Object): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Object): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromeVersion(value: String): Self = StObject.set(x, "chromeVersion", value.asInstanceOf[js.Any])
+      inline def setChromeVersion(value: String): Self = StObject.set(x, "chromeVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFdc3AppUuid(value: String): Self = StObject.set(x, "fdc3AppUuid", value.asInstanceOf[js.Any])
+      inline def setFdc3AppUuid(value: String): Self = StObject.set(x, "fdc3AppUuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFdc3AppUuidUndefined: Self = StObject.set(x, "fdc3AppUuid", js.undefined)
+      inline def setFdc3AppUuidUndefined: Self = StObject.set(x, "fdc3AppUuid", js.undefined)
       
-      @scala.inline
-      def setFdc3ChannelName(value: String): Self = StObject.set(x, "fdc3ChannelName", value.asInstanceOf[js.Any])
+      inline def setFdc3ChannelName(value: String): Self = StObject.set(x, "fdc3ChannelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFdc3ChannelNameUndefined: Self = StObject.set(x, "fdc3ChannelName", js.undefined)
+      inline def setFdc3ChannelNameUndefined: Self = StObject.set(x, "fdc3ChannelName", js.undefined)
       
-      @scala.inline
-      def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
+      inline def setManifestUrl(value: String): Self = StObject.set(x, "manifestUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityRealm(value: String): Self = StObject.set(x, "securityRealm", value.asInstanceOf[js.Any])
+      inline def setSecurityRealm(value: String): Self = StObject.set(x, "securityRealm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityRealmUndefined: Self = StObject.set(x, "securityRealm", js.undefined)
+      inline def setSecurityRealmUndefined: Self = StObject.set(x, "securityRealm", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

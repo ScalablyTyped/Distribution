@@ -29,40 +29,29 @@ trait ReadDirItem extends StObject {
 }
 object ReadDirItem {
   
-  @scala.inline
-  def apply(isDirectory: () => Boolean, isFile: () => Boolean, name: String, path: String, size: String): ReadDirItem = {
+  inline def apply(isDirectory: () => Boolean, isFile: () => Boolean, name: String, path: String, size: String): ReadDirItem = {
     val __obj = js.Dynamic.literal(isDirectory = js.Any.fromFunction0(isDirectory), isFile = js.Any.fromFunction0(isFile), name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadDirItem]
   }
   
-  @scala.inline
-  implicit class ReadDirItemMutableBuilder[Self <: ReadDirItem] (val x: Self) extends AnyVal {
+  extension [Self <: ReadDirItem](x: Self) {
     
-    @scala.inline
-    def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
+    inline def setCtime(value: Date): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtimeUndefined: Self = StObject.set(x, "ctime", js.undefined)
+    inline def setCtimeUndefined: Self = StObject.set(x, "ctime", js.undefined)
     
-    @scala.inline
-    def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
+    inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
+    inline def setIsFile(value: () => Boolean): Self = StObject.set(x, "isFile", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+    inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

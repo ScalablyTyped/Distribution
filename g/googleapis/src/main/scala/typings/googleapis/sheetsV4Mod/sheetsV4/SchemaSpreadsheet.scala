@@ -41,58 +41,41 @@ trait SchemaSpreadsheet extends StObject {
 }
 object SchemaSpreadsheet {
   
-  @scala.inline
-  def apply(): SchemaSpreadsheet = {
+  inline def apply(): SchemaSpreadsheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSpreadsheet]
   }
   
-  @scala.inline
-  implicit class SchemaSpreadsheetMutableBuilder[Self <: SchemaSpreadsheet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSpreadsheet](x: Self) {
     
-    @scala.inline
-    def setDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
+    inline def setDeveloperMetadataUndefined: Self = StObject.set(x, "developerMetadata", js.undefined)
     
-    @scala.inline
-    def setDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
+    inline def setDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "developerMetadata", js.Array(value :_*))
     
-    @scala.inline
-    def setNamedRanges(value: js.Array[SchemaNamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
+    inline def setNamedRanges(value: js.Array[SchemaNamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
+    inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
     
-    @scala.inline
-    def setNamedRangesVarargs(value: SchemaNamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
+    inline def setNamedRangesVarargs(value: SchemaNamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setProperties(value: SchemaSpreadsheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SchemaSpreadsheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setSheets(value: js.Array[SchemaSheet]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
+    inline def setSheets(value: js.Array[SchemaSheet]): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
+    inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
     
-    @scala.inline
-    def setSheetsVarargs(value: SchemaSheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: SchemaSheet*): Self = StObject.set(x, "sheets", js.Array(value :_*))
     
-    @scala.inline
-    def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
+    inline def setSpreadsheetIdUndefined: Self = StObject.set(x, "spreadsheetId", js.undefined)
     
-    @scala.inline
-    def setSpreadsheetUrl(value: String): Self = StObject.set(x, "spreadsheetUrl", value.asInstanceOf[js.Any])
+    inline def setSpreadsheetUrl(value: String): Self = StObject.set(x, "spreadsheetUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheetUrlUndefined: Self = StObject.set(x, "spreadsheetUrl", js.undefined)
+    inline def setSpreadsheetUrlUndefined: Self = StObject.set(x, "spreadsheetUrl", js.undefined)
   }
 }

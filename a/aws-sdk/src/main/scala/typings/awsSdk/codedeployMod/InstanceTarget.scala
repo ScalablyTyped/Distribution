@@ -43,58 +43,41 @@ trait InstanceTarget extends StObject {
 }
 object InstanceTarget {
   
-  @scala.inline
-  def apply(): InstanceTarget = {
+  inline def apply(): InstanceTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceTarget]
   }
   
-  @scala.inline
-  implicit class InstanceTargetMutableBuilder[Self <: InstanceTarget] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceTarget](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    @scala.inline
-    def setInstanceLabel(value: TargetLabel): Self = StObject.set(x, "instanceLabel", value.asInstanceOf[js.Any])
+    inline def setInstanceLabel(value: TargetLabel): Self = StObject.set(x, "instanceLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceLabelUndefined: Self = StObject.set(x, "instanceLabel", js.undefined)
+    inline def setInstanceLabelUndefined: Self = StObject.set(x, "instanceLabel", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedAt(value: Time): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: Time): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
+    inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setLifecycleEvents(value: LifecycleEventList): Self = StObject.set(x, "lifecycleEvents", value.asInstanceOf[js.Any])
+    inline def setLifecycleEvents(value: LifecycleEventList): Self = StObject.set(x, "lifecycleEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleEventsUndefined: Self = StObject.set(x, "lifecycleEvents", js.undefined)
+    inline def setLifecycleEventsUndefined: Self = StObject.set(x, "lifecycleEvents", js.undefined)
     
-    @scala.inline
-    def setLifecycleEventsVarargs(value: LifecycleEvent*): Self = StObject.set(x, "lifecycleEvents", js.Array(value :_*))
+    inline def setLifecycleEventsVarargs(value: LifecycleEvent*): Self = StObject.set(x, "lifecycleEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: TargetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TargetStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTargetArn(value: TargetArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: TargetArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetArnUndefined: Self = StObject.set(x, "targetArn", js.undefined)
+    inline def setTargetArnUndefined: Self = StObject.set(x, "targetArn", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: TargetId): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetId): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

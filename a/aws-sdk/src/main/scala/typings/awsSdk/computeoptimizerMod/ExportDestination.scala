@@ -13,19 +13,15 @@ trait ExportDestination extends StObject {
 }
 object ExportDestination {
   
-  @scala.inline
-  def apply(): ExportDestination = {
+  inline def apply(): ExportDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportDestination]
   }
   
-  @scala.inline
-  implicit class ExportDestinationMutableBuilder[Self <: ExportDestination] (val x: Self) extends AnyVal {
+  extension [Self <: ExportDestination](x: Self) {
     
-    @scala.inline
-    def setS3(value: S3Destination): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: S3Destination): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
+    inline def setS3Undefined: Self = StObject.set(x, "s3", js.undefined)
   }
 }

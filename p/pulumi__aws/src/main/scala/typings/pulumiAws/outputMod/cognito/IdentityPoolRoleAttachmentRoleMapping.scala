@@ -28,35 +28,26 @@ trait IdentityPoolRoleAttachmentRoleMapping extends StObject {
 }
 object IdentityPoolRoleAttachmentRoleMapping {
   
-  @scala.inline
-  def apply(identityProvider: String, `type`: String): IdentityPoolRoleAttachmentRoleMapping = {
+  inline def apply(identityProvider: String, `type`: String): IdentityPoolRoleAttachmentRoleMapping = {
     val __obj = js.Dynamic.literal(identityProvider = identityProvider.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityPoolRoleAttachmentRoleMapping]
   }
   
-  @scala.inline
-  implicit class IdentityPoolRoleAttachmentRoleMappingMutableBuilder[Self <: IdentityPoolRoleAttachmentRoleMapping] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityPoolRoleAttachmentRoleMapping](x: Self) {
     
-    @scala.inline
-    def setAmbiguousRoleResolution(value: String): Self = StObject.set(x, "ambiguousRoleResolution", value.asInstanceOf[js.Any])
+    inline def setAmbiguousRoleResolution(value: String): Self = StObject.set(x, "ambiguousRoleResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "ambiguousRoleResolution", js.undefined)
+    inline def setAmbiguousRoleResolutionUndefined: Self = StObject.set(x, "ambiguousRoleResolution", js.undefined)
     
-    @scala.inline
-    def setIdentityProvider(value: String): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
+    inline def setIdentityProvider(value: String): Self = StObject.set(x, "identityProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingRules(value: js.Array[IdentityPoolRoleAttachmentRoleMappingMappingRule]): Self = StObject.set(x, "mappingRules", value.asInstanceOf[js.Any])
+    inline def setMappingRules(value: js.Array[IdentityPoolRoleAttachmentRoleMappingMappingRule]): Self = StObject.set(x, "mappingRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingRulesUndefined: Self = StObject.set(x, "mappingRules", js.undefined)
+    inline def setMappingRulesUndefined: Self = StObject.set(x, "mappingRules", js.undefined)
     
-    @scala.inline
-    def setMappingRulesVarargs(value: IdentityPoolRoleAttachmentRoleMappingMappingRule*): Self = StObject.set(x, "mappingRules", js.Array(value :_*))
+    inline def setMappingRulesVarargs(value: IdentityPoolRoleAttachmentRoleMappingMappingRule*): Self = StObject.set(x, "mappingRules", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -100,8 +100,7 @@ trait XDesktop
 }
 object XDesktop {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Components: XEnumerationAccess,
     CurrentComponent: XComponent,
     CurrentFrame: XFrame,
@@ -119,34 +118,24 @@ object XDesktop {
     __obj.asInstanceOf[XDesktop]
   }
   
-  @scala.inline
-  implicit class XDesktopMutableBuilder[Self <: XDesktop] (val x: Self) extends AnyVal {
+  extension [Self <: XDesktop](x: Self) {
     
-    @scala.inline
-    def setAddTerminateListener(value: XTerminateListener => Unit): Self = StObject.set(x, "addTerminateListener", js.Any.fromFunction1(value))
+    inline def setAddTerminateListener(value: XTerminateListener => Unit): Self = StObject.set(x, "addTerminateListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComponents(value: XEnumerationAccess): Self = StObject.set(x, "Components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: XEnumerationAccess): Self = StObject.set(x, "Components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentComponent(value: XComponent): Self = StObject.set(x, "CurrentComponent", value.asInstanceOf[js.Any])
+    inline def setCurrentComponent(value: XComponent): Self = StObject.set(x, "CurrentComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentFrame(value: XFrame): Self = StObject.set(x, "CurrentFrame", value.asInstanceOf[js.Any])
+    inline def setCurrentFrame(value: XFrame): Self = StObject.set(x, "CurrentFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetComponents(value: () => XEnumerationAccess): Self = StObject.set(x, "getComponents", js.Any.fromFunction0(value))
+    inline def setGetComponents(value: () => XEnumerationAccess): Self = StObject.set(x, "getComponents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentComponent(value: () => XComponent): Self = StObject.set(x, "getCurrentComponent", js.Any.fromFunction0(value))
+    inline def setGetCurrentComponent(value: () => XComponent): Self = StObject.set(x, "getCurrentComponent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentFrame(value: () => XFrame): Self = StObject.set(x, "getCurrentFrame", js.Any.fromFunction0(value))
+    inline def setGetCurrentFrame(value: () => XFrame): Self = StObject.set(x, "getCurrentFrame", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveTerminateListener(value: XTerminateListener => Unit): Self = StObject.set(x, "removeTerminateListener", js.Any.fromFunction1(value))
+    inline def setRemoveTerminateListener(value: XTerminateListener => Unit): Self = StObject.set(x, "removeTerminateListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTerminate(value: () => Boolean): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+    inline def setTerminate(value: () => Boolean): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
   }
 }

@@ -20,25 +20,19 @@ trait GoogleAnalyticsAdminV1alphaAuditUserLinksRequest extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaAuditUserLinksRequest {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaAuditUserLinksRequest = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaAuditUserLinksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAuditUserLinksRequest]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaAuditUserLinksRequestMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAuditUserLinksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaAuditUserLinksRequest](x: Self) {
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

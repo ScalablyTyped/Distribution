@@ -14,20 +14,16 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: Double, message: String): Code = {
+    inline def apply(code: Double, message: String): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: Double, id_str: String): Id = {
+    inline def apply(id: Double, id_str: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], id_str = id_str.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
+      inline def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,20 +54,16 @@ object anon {
   }
   object Text {
     
-    @scala.inline
-    def apply(): Text = {
+    inline def apply(): Text = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

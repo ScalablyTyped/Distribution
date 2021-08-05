@@ -18,25 +18,19 @@ trait ResolveCaseResponse extends StObject {
 }
 object ResolveCaseResponse {
   
-  @scala.inline
-  def apply(): ResolveCaseResponse = {
+  inline def apply(): ResolveCaseResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveCaseResponse]
   }
   
-  @scala.inline
-  implicit class ResolveCaseResponseMutableBuilder[Self <: ResolveCaseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveCaseResponse](x: Self) {
     
-    @scala.inline
-    def setFinalCaseStatus(value: CaseStatus): Self = StObject.set(x, "finalCaseStatus", value.asInstanceOf[js.Any])
+    inline def setFinalCaseStatus(value: CaseStatus): Self = StObject.set(x, "finalCaseStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalCaseStatusUndefined: Self = StObject.set(x, "finalCaseStatus", js.undefined)
+    inline def setFinalCaseStatusUndefined: Self = StObject.set(x, "finalCaseStatus", js.undefined)
     
-    @scala.inline
-    def setInitialCaseStatus(value: CaseStatus): Self = StObject.set(x, "initialCaseStatus", value.asInstanceOf[js.Any])
+    inline def setInitialCaseStatus(value: CaseStatus): Self = StObject.set(x, "initialCaseStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialCaseStatusUndefined: Self = StObject.set(x, "initialCaseStatus", js.undefined)
+    inline def setInitialCaseStatusUndefined: Self = StObject.set(x, "initialCaseStatus", js.undefined)
   }
 }

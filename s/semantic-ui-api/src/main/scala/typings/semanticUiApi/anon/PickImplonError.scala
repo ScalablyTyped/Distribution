@@ -15,16 +15,13 @@ trait PickImplonError extends StObject {
 }
 object PickImplonError {
   
-  @scala.inline
-  def apply(onError: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): PickImplonError = {
+  inline def apply(onError: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): PickImplonError = {
     val __obj = js.Dynamic.literal(onError = js.Any.fromFunction3(onError))
     __obj.asInstanceOf[PickImplonError]
   }
   
-  @scala.inline
-  implicit class PickImplonErrorMutableBuilder[Self <: PickImplonError] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonError](x: Self) {
     
-    @scala.inline
-    def setOnError(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+    inline def setOnError(value: (/* errorMessage */ String, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
   }
 }

@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminGetGithubPackagesBillingGheEndpoint extends StObj
 }
 object ParametersEnterpriseAdminGetGithubPackagesBillingGheEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminGetGithubPackagesBillingGheEndpoint,
     request: EnterpriseAdminGetGithubPackagesBillingGheRequestOptions,
     response: OctokitResponse[EnterpriseAdminGetGithubPackagesBillingGheResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminGetGithubPackagesBillingGheEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminGetGithubPackagesBillingGheEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminGetGithubPackagesBillingGheEndpointMutableBuilder[Self <: ParametersEnterpriseAdminGetGithubPackagesBillingGheEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminGetGithubPackagesBillingGheEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminGetGithubPackagesBillingGheEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminGetGithubPackagesBillingGheEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminGetGithubPackagesBillingGheRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminGetGithubPackagesBillingGheRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminGetGithubPackagesBillingGheResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminGetGithubPackagesBillingGheResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -16,37 +16,27 @@ trait AllImage extends StObject {
 }
 object AllImage {
   
-  @scala.inline
-  def apply(): AllImage = {
+  inline def apply(): AllImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllImage]
   }
   
-  @scala.inline
-  implicit class AllImageMutableBuilder[Self <: AllImage] (val x: Self) extends AnyVal {
+  extension [Self <: AllImage](x: Self) {
     
-    @scala.inline
-    def setAllImage(value: DisplayName): Self = StObject.set(x, "allImage", value.asInstanceOf[js.Any])
+    inline def setAllImage(value: DisplayName): Self = StObject.set(x, "allImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllImageUndefined: Self = StObject.set(x, "allImage", js.undefined)
+    inline def setAllImageUndefined: Self = StObject.set(x, "allImage", js.undefined)
     
-    @scala.inline
-    def setBesides(value: `0`): Self = StObject.set(x, "besides", value.asInstanceOf[js.Any])
+    inline def setBesides(value: `0`): Self = StObject.set(x, "besides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBesidesUndefined: Self = StObject.set(x, "besides", js.undefined)
+    inline def setBesidesUndefined: Self = StObject.set(x, "besides", js.undefined)
     
-    @scala.inline
-    def setViewPort(value: `0`): Self = StObject.set(x, "viewPort", value.asInstanceOf[js.Any])
+    inline def setViewPort(value: `0`): Self = StObject.set(x, "viewPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewPortUndefined: Self = StObject.set(x, "viewPort", js.undefined)
+    inline def setViewPortUndefined: Self = StObject.set(x, "viewPort", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: Boolean): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: Boolean): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

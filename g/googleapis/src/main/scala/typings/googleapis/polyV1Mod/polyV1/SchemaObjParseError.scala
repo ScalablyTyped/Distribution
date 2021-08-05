@@ -43,49 +43,35 @@ trait SchemaObjParseError extends StObject {
 }
 object SchemaObjParseError {
   
-  @scala.inline
-  def apply(): SchemaObjParseError = {
+  inline def apply(): SchemaObjParseError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaObjParseError]
   }
   
-  @scala.inline
-  implicit class SchemaObjParseErrorMutableBuilder[Self <: SchemaObjParseError] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaObjParseError](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+    inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+    inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+    inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
   }
 }

@@ -29,44 +29,32 @@ object miniProgressMod {
   }
   object IMiniProgressProps {
     
-    @scala.inline
-    def apply(target: Double, targetLabel: String): IMiniProgressProps = {
+    inline def apply(target: Double, targetLabel: String): IMiniProgressProps = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any], targetLabel = targetLabel.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMiniProgressProps]
     }
     
-    @scala.inline
-    implicit class IMiniProgressPropsMutableBuilder[Self <: IMiniProgressProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMiniProgressProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+      inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetLabel(value: String): Self = StObject.set(x, "targetLabel", value.asInstanceOf[js.Any])
+      inline def setTargetLabel(value: String): Self = StObject.set(x, "targetLabel", value.asInstanceOf[js.Any])
     }
   }
   

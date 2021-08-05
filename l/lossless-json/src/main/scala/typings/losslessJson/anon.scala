@@ -12,20 +12,16 @@ object anon {
   }
   object CircularRefs {
     
-    @scala.inline
-    def apply(): CircularRefs = {
+    inline def apply(): CircularRefs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CircularRefs]
     }
     
-    @scala.inline
-    implicit class CircularRefsMutableBuilder[Self <: CircularRefs] (val x: Self) extends AnyVal {
+    extension [Self <: CircularRefs](x: Self) {
       
-      @scala.inline
-      def setCircularRefs(value: Boolean): Self = StObject.set(x, "circularRefs", value.asInstanceOf[js.Any])
+      inline def setCircularRefs(value: Boolean): Self = StObject.set(x, "circularRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircularRefsUndefined: Self = StObject.set(x, "circularRefs", js.undefined)
+      inline def setCircularRefsUndefined: Self = StObject.set(x, "circularRefs", js.undefined)
     }
   }
   
@@ -35,17 +31,14 @@ object anon {
   }
   object CircularRefsBoolean {
     
-    @scala.inline
-    def apply(circularRefs: Boolean): CircularRefsBoolean = {
+    inline def apply(circularRefs: Boolean): CircularRefsBoolean = {
       val __obj = js.Dynamic.literal(circularRefs = circularRefs.asInstanceOf[js.Any])
       __obj.asInstanceOf[CircularRefsBoolean]
     }
     
-    @scala.inline
-    implicit class CircularRefsBooleanMutableBuilder[Self <: CircularRefsBoolean] (val x: Self) extends AnyVal {
+    extension [Self <: CircularRefsBoolean](x: Self) {
       
-      @scala.inline
-      def setCircularRefs(value: Boolean): Self = StObject.set(x, "circularRefs", value.asInstanceOf[js.Any])
+      inline def setCircularRefs(value: Boolean): Self = StObject.set(x, "circularRefs", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,16 +13,13 @@ trait GitPullRequestMergeOptions extends StObject {
 }
 object GitPullRequestMergeOptions {
   
-  @scala.inline
-  def apply(disableRenames: Boolean): GitPullRequestMergeOptions = {
+  inline def apply(disableRenames: Boolean): GitPullRequestMergeOptions = {
     val __obj = js.Dynamic.literal(disableRenames = disableRenames.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitPullRequestMergeOptions]
   }
   
-  @scala.inline
-  implicit class GitPullRequestMergeOptionsMutableBuilder[Self <: GitPullRequestMergeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestMergeOptions](x: Self) {
     
-    @scala.inline
-    def setDisableRenames(value: Boolean): Self = StObject.set(x, "disableRenames", value.asInstanceOf[js.Any])
+    inline def setDisableRenames(value: Boolean): Self = StObject.set(x, "disableRenames", value.asInstanceOf[js.Any])
   }
 }

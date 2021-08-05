@@ -15,7 +15,7 @@ trait EmailAdapterObject extends StObject {
   
   var CC: String
   
-  @JSName("InfoPath.EmailAdapterObject_typekey")
+  /* private */ @JSName("InfoPath.EmailAdapterObject_typekey")
   var InfoPathDotEmailAdapterObject_typekey: EmailAdapterObject
   
   var Intro: String
@@ -38,8 +38,7 @@ trait EmailAdapterObject extends StObject {
 }
 object EmailAdapterObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AttachmentFileName: String,
     AttachmentType: XdAttachmentType,
     BCC: String,
@@ -60,49 +59,34 @@ object EmailAdapterObject {
     __obj.asInstanceOf[EmailAdapterObject]
   }
   
-  @scala.inline
-  implicit class EmailAdapterObjectMutableBuilder[Self <: EmailAdapterObject] (val x: Self) extends AnyVal {
+  extension [Self <: EmailAdapterObject](x: Self) {
     
-    @scala.inline
-    def setAttachmentFileName(value: String): Self = StObject.set(x, "AttachmentFileName", value.asInstanceOf[js.Any])
+    inline def setAttachmentFileName(value: String): Self = StObject.set(x, "AttachmentFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentType(value: XdAttachmentType): Self = StObject.set(x, "AttachmentType", value.asInstanceOf[js.Any])
+    inline def setAttachmentType(value: XdAttachmentType): Self = StObject.set(x, "AttachmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
+    inline def setBCC(value: String): Self = StObject.set(x, "BCC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC(value: String): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
+    inline def setCC(value: String): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotEmailAdapterObject_typekey(value: EmailAdapterObject): Self = StObject.set(x, "InfoPath.EmailAdapterObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotEmailAdapterObject_typekey(value: EmailAdapterObject): Self = StObject.set(x, "InfoPath.EmailAdapterObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntro(value: String): Self = StObject.set(x, "Intro", value.asInstanceOf[js.Any])
+    inline def setIntro(value: String): Self = StObject.set(x, "Intro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
+    inline def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
+    inline def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitData(value: IXMLDOMNode => Unit): Self = StObject.set(x, "SubmitData", js.Any.fromFunction1(value))
+    inline def setSubmitData(value: IXMLDOMNode => Unit): Self = StObject.set(x, "SubmitData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

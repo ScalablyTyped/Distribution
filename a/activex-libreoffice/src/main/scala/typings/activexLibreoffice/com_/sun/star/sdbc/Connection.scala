@@ -28,8 +28,7 @@ trait Connection
      with XWarningsSupplier
 object Connection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoCommit: Boolean,
     Catalog: String,
     MetaData: XDatabaseMetaData,

@@ -46,10 +46,8 @@ object BatchHeader {
     * @param [properties] Properties to set
     * @returns BatchHeader instance
     */
-  @scala.inline
-  def create(): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchHeader]
-  @scala.inline
-  def create(properties: IBatchHeader): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
+  inline def create(): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BatchHeader]
+  inline def create(properties: IBatchHeader): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
   
   /**
     * Decodes a BatchHeader message from the specified reader or buffer.
@@ -59,14 +57,10 @@ object BatchHeader {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decode(reader: Reader): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
-  @scala.inline
-  def decode(reader: Reader, length: Double): BatchHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchHeader]
-  @scala.inline
-  def decode(reader: Uint8Array): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): BatchHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchHeader]
+  inline def decode(reader: Reader): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
+  inline def decode(reader: Reader, length: Double): BatchHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchHeader]
+  inline def decode(reader: Uint8Array): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
+  inline def decode(reader: Uint8Array, length: Double): BatchHeader = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[BatchHeader]
   
   /**
     * Decodes a BatchHeader message from the specified reader or buffer, length delimited.
@@ -75,10 +69,8 @@ object BatchHeader {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decodeDelimited(reader: Reader): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
+  inline def decodeDelimited(reader: Reader): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
+  inline def decodeDelimited(reader: Uint8Array): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
   
   /**
     * Encodes the specified BatchHeader message. Does not implicitly {@link BatchHeader.verify|verify} messages.
@@ -86,10 +78,8 @@ object BatchHeader {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encode(message: IBatchHeader): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IBatchHeader, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IBatchHeader): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IBatchHeader, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified BatchHeader message, length delimited. Does not implicitly {@link BatchHeader.verify|verify} messages.
@@ -97,18 +87,15 @@ object BatchHeader {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encodeDelimited(message: IBatchHeader): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IBatchHeader, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IBatchHeader): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IBatchHeader, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a BatchHeader message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns BatchHeader
     */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
+  inline def fromObject(`object`: StringDictionary[js.Any]): BatchHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BatchHeader]
   
   /**
     * Creates a plain object from a BatchHeader message. Also converts values to other types if specified.
@@ -116,16 +103,13 @@ object BatchHeader {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @scala.inline
-  def toObject(message: BatchHeader): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: BatchHeader, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: BatchHeader): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: BatchHeader, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a BatchHeader message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

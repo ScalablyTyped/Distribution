@@ -23,25 +23,19 @@ trait GitPullRequestIterationChanges extends StObject {
 }
 object GitPullRequestIterationChanges {
   
-  @scala.inline
-  def apply(changeEntries: js.Array[GitPullRequestChange], nextSkip: Double, nextTop: Double): GitPullRequestIterationChanges = {
+  inline def apply(changeEntries: js.Array[GitPullRequestChange], nextSkip: Double, nextTop: Double): GitPullRequestIterationChanges = {
     val __obj = js.Dynamic.literal(changeEntries = changeEntries.asInstanceOf[js.Any], nextSkip = nextSkip.asInstanceOf[js.Any], nextTop = nextTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitPullRequestIterationChanges]
   }
   
-  @scala.inline
-  implicit class GitPullRequestIterationChangesMutableBuilder[Self <: GitPullRequestIterationChanges] (val x: Self) extends AnyVal {
+  extension [Self <: GitPullRequestIterationChanges](x: Self) {
     
-    @scala.inline
-    def setChangeEntries(value: js.Array[GitPullRequestChange]): Self = StObject.set(x, "changeEntries", value.asInstanceOf[js.Any])
+    inline def setChangeEntries(value: js.Array[GitPullRequestChange]): Self = StObject.set(x, "changeEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeEntriesVarargs(value: GitPullRequestChange*): Self = StObject.set(x, "changeEntries", js.Array(value :_*))
+    inline def setChangeEntriesVarargs(value: GitPullRequestChange*): Self = StObject.set(x, "changeEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextSkip(value: Double): Self = StObject.set(x, "nextSkip", value.asInstanceOf[js.Any])
+    inline def setNextSkip(value: Double): Self = StObject.set(x, "nextSkip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTop(value: Double): Self = StObject.set(x, "nextTop", value.asInstanceOf[js.Any])
+    inline def setNextTop(value: Double): Self = StObject.set(x, "nextTop", value.asInstanceOf[js.Any])
   }
 }

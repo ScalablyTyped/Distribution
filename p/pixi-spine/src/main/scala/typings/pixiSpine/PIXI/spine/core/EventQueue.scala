@@ -32,8 +32,7 @@ trait EventQueue extends StObject {
 }
 object EventQueue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animState: AnimationState,
     clear: () => Unit,
     complete: TrackEntry => Unit,
@@ -51,46 +50,32 @@ object EventQueue {
     __obj.asInstanceOf[EventQueue]
   }
   
-  @scala.inline
-  implicit class EventQueueMutableBuilder[Self <: EventQueue] (val x: Self) extends AnyVal {
+  extension [Self <: EventQueue](x: Self) {
     
-    @scala.inline
-    def setAnimState(value: AnimationState): Self = StObject.set(x, "animState", value.asInstanceOf[js.Any])
+    inline def setAnimState(value: AnimationState): Self = StObject.set(x, "animState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComplete(value: TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeprecateStuff(value: () => Boolean): Self = StObject.set(x, "deprecateStuff", js.Any.fromFunction0(value))
+    inline def setDeprecateStuff(value: () => Boolean): Self = StObject.set(x, "deprecateStuff", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDispose(value: TrackEntry => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
+    inline def setDispose(value: TrackEntry => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDrain(value: () => Unit): Self = StObject.set(x, "drain", js.Any.fromFunction0(value))
+    inline def setDrain(value: () => Unit): Self = StObject.set(x, "drain", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDrainDisabled(value: Boolean): Self = StObject.set(x, "drainDisabled", value.asInstanceOf[js.Any])
+    inline def setDrainDisabled(value: Boolean): Self = StObject.set(x, "drainDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: TrackEntry => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+    inline def setEnd(value: TrackEntry => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEvent(value: (TrackEntry, Event) => Unit): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
+    inline def setEvent(value: (TrackEntry, Event) => Unit): Self = StObject.set(x, "event", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInterrupt(value: TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
+    inline def setInterrupt(value: TrackEntry => Unit): Self = StObject.set(x, "interrupt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+    inline def setObjects(value: js.Array[js.Any]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
+    inline def setObjectsVarargs(value: js.Any*): Self = StObject.set(x, "objects", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: TrackEntry => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
   }
 }

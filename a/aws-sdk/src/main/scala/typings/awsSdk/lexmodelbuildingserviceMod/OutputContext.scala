@@ -23,8 +23,7 @@ trait OutputContext extends StObject {
 }
 object OutputContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: OutputContextName,
     timeToLiveInSeconds: ContextTimeToLiveInSeconds,
     turnsToLive: ContextTurnsToLive
@@ -33,16 +32,12 @@ object OutputContext {
     __obj.asInstanceOf[OutputContext]
   }
   
-  @scala.inline
-  implicit class OutputContextMutableBuilder[Self <: OutputContext] (val x: Self) extends AnyVal {
+  extension [Self <: OutputContext](x: Self) {
     
-    @scala.inline
-    def setName(value: OutputContextName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: OutputContextName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLiveInSeconds(value: ContextTimeToLiveInSeconds): Self = StObject.set(x, "timeToLiveInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeToLiveInSeconds(value: ContextTimeToLiveInSeconds): Self = StObject.set(x, "timeToLiveInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTurnsToLive(value: ContextTurnsToLive): Self = StObject.set(x, "turnsToLive", value.asInstanceOf[js.Any])
+    inline def setTurnsToLive(value: ContextTurnsToLive): Self = StObject.set(x, "turnsToLive", value.asInstanceOf[js.Any])
   }
 }

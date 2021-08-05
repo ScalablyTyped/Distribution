@@ -14,20 +14,16 @@ object anon {
   }
   object AudioBitsPerSecond {
     
-    @scala.inline
-    def apply(audioBitsPerSecond: Double, mimeType: String): AudioBitsPerSecond = {
+    inline def apply(audioBitsPerSecond: Double, mimeType: String): AudioBitsPerSecond = {
       val __obj = js.Dynamic.literal(audioBitsPerSecond = audioBitsPerSecond.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[AudioBitsPerSecond]
     }
     
-    @scala.inline
-    implicit class AudioBitsPerSecondMutableBuilder[Self <: AudioBitsPerSecond] (val x: Self) extends AnyVal {
+    extension [Self <: AudioBitsPerSecond](x: Self) {
       
-      @scala.inline
-      def setAudioBitsPerSecond(value: Double): Self = StObject.set(x, "audioBitsPerSecond", value.asInstanceOf[js.Any])
+      inline def setAudioBitsPerSecond(value: Double): Self = StObject.set(x, "audioBitsPerSecond", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -19,43 +19,31 @@ trait PartialLifetimes extends StObject {
 }
 object PartialLifetimes {
   
-  @scala.inline
-  def apply(): PartialLifetimes = {
+  inline def apply(): PartialLifetimes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialLifetimes]
   }
   
-  @scala.inline
-  implicit class PartialLifetimesMutableBuilder[Self <: PartialLifetimes] (val x: Self) extends AnyVal {
+  extension [Self <: PartialLifetimes](x: Self) {
     
-    @scala.inline
-    def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
+    inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
+    inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
     
-    @scala.inline
-    def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
+    inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
+    inline def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
-    @scala.inline
-    def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
+    inline def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
+    inline def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
     
-    @scala.inline
-    def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+    inline def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
   }
 }

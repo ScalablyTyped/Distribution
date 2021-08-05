@@ -28,37 +28,27 @@ trait DescribeAccountLimitsAnswer extends StObject {
 }
 object DescribeAccountLimitsAnswer {
   
-  @scala.inline
-  def apply(): DescribeAccountLimitsAnswer = {
+  inline def apply(): DescribeAccountLimitsAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountLimitsAnswer]
   }
   
-  @scala.inline
-  implicit class DescribeAccountLimitsAnswerMutableBuilder[Self <: DescribeAccountLimitsAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountLimitsAnswer](x: Self) {
     
-    @scala.inline
-    def setMaxNumberOfAutoScalingGroups(value: MaxNumberOfAutoScalingGroups): Self = StObject.set(x, "MaxNumberOfAutoScalingGroups", value.asInstanceOf[js.Any])
+    inline def setMaxNumberOfAutoScalingGroups(value: MaxNumberOfAutoScalingGroups): Self = StObject.set(x, "MaxNumberOfAutoScalingGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNumberOfAutoScalingGroupsUndefined: Self = StObject.set(x, "MaxNumberOfAutoScalingGroups", js.undefined)
+    inline def setMaxNumberOfAutoScalingGroupsUndefined: Self = StObject.set(x, "MaxNumberOfAutoScalingGroups", js.undefined)
     
-    @scala.inline
-    def setMaxNumberOfLaunchConfigurations(value: MaxNumberOfLaunchConfigurations): Self = StObject.set(x, "MaxNumberOfLaunchConfigurations", value.asInstanceOf[js.Any])
+    inline def setMaxNumberOfLaunchConfigurations(value: MaxNumberOfLaunchConfigurations): Self = StObject.set(x, "MaxNumberOfLaunchConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNumberOfLaunchConfigurationsUndefined: Self = StObject.set(x, "MaxNumberOfLaunchConfigurations", js.undefined)
+    inline def setMaxNumberOfLaunchConfigurationsUndefined: Self = StObject.set(x, "MaxNumberOfLaunchConfigurations", js.undefined)
     
-    @scala.inline
-    def setNumberOfAutoScalingGroups(value: NumberOfAutoScalingGroups): Self = StObject.set(x, "NumberOfAutoScalingGroups", value.asInstanceOf[js.Any])
+    inline def setNumberOfAutoScalingGroups(value: NumberOfAutoScalingGroups): Self = StObject.set(x, "NumberOfAutoScalingGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfAutoScalingGroupsUndefined: Self = StObject.set(x, "NumberOfAutoScalingGroups", js.undefined)
+    inline def setNumberOfAutoScalingGroupsUndefined: Self = StObject.set(x, "NumberOfAutoScalingGroups", js.undefined)
     
-    @scala.inline
-    def setNumberOfLaunchConfigurations(value: NumberOfLaunchConfigurations): Self = StObject.set(x, "NumberOfLaunchConfigurations", value.asInstanceOf[js.Any])
+    inline def setNumberOfLaunchConfigurations(value: NumberOfLaunchConfigurations): Self = StObject.set(x, "NumberOfLaunchConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfLaunchConfigurationsUndefined: Self = StObject.set(x, "NumberOfLaunchConfigurations", js.undefined)
+    inline def setNumberOfLaunchConfigurationsUndefined: Self = StObject.set(x, "NumberOfLaunchConfigurations", js.undefined)
   }
 }

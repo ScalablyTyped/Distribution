@@ -20,47 +20,34 @@ object anon {
   }
   object Custom {
     
-    @scala.inline
-    def apply(): Custom = {
+    inline def apply(): Custom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Custom]
     }
     
-    @scala.inline
-    implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
+    extension [Self <: Custom](x: Self) {
       
-      @scala.inline
-      def setCustom(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
+      inline def setCustom(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "custom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
       
-      @scala.inline
-      def setExt(value: String | js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String | js.Array[String]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      @scala.inline
-      def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
+      inline def setExtVarargs(value: String*): Self = StObject.set(x, "ext", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: String | js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String | js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+      inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPathVarargs(value: (String | RegExp)*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: (String | RegExp)*): Self = StObject.set(x, "path", js.Array(value :_*))
     }
   }
 }

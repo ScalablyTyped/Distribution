@@ -21,8 +21,7 @@ trait StripeApplePay extends StObject {
 }
 object StripeApplePay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buildSession: (StripeApplePayPaymentRequest, js.Function2[
       /* result */ StripeApplePaySessionResult, 
       /* completion */ js.Function1[/* value */ js.Any, Unit], 
@@ -34,11 +33,9 @@ object StripeApplePay {
     __obj.asInstanceOf[StripeApplePay]
   }
   
-  @scala.inline
-  implicit class StripeApplePayMutableBuilder[Self <: StripeApplePay] (val x: Self) extends AnyVal {
+  extension [Self <: StripeApplePay](x: Self) {
     
-    @scala.inline
-    def setBuildSession(
+    inline def setBuildSession(
       value: (StripeApplePayPaymentRequest, js.Function2[
           /* result */ StripeApplePaySessionResult, 
           /* completion */ js.Function1[/* value */ js.Any, Unit], 
@@ -46,7 +43,6 @@ object StripeApplePay {
         ], js.Function1[/* error */ Message, Unit]) => js.Any
     ): Self = StObject.set(x, "buildSession", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCheckAvailability(value: js.Function1[/* result */ Boolean, Unit] => Unit): Self = StObject.set(x, "checkAvailability", js.Any.fromFunction1(value))
+    inline def setCheckAvailability(value: js.Function1[/* result */ Boolean, Unit] => Unit): Self = StObject.set(x, "checkAvailability", js.Any.fromFunction1(value))
   }
 }

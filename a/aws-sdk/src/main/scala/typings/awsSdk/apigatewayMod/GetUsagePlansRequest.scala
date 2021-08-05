@@ -23,31 +23,23 @@ trait GetUsagePlansRequest extends StObject {
 }
 object GetUsagePlansRequest {
   
-  @scala.inline
-  def apply(): GetUsagePlansRequest = {
+  inline def apply(): GetUsagePlansRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUsagePlansRequest]
   }
   
-  @scala.inline
-  implicit class GetUsagePlansRequestMutableBuilder[Self <: GetUsagePlansRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsagePlansRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

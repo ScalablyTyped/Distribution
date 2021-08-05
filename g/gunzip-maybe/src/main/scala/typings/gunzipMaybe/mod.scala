@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
-  @scala.inline
-  def apply(maxRecursion: Double): Transform = ^.asInstanceOf[js.Dynamic].apply(maxRecursion.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  inline def apply(maxRecursion: Double): Transform = ^.asInstanceOf[js.Dynamic].apply(maxRecursion.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("gunzip-maybe", JSImport.Namespace)
   @js.native

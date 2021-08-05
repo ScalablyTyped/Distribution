@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListenTargetOptions extends StObject
 object ListenTargetOptions {
   
-  @scala.inline
-  def body: typings.ionicCore.ionicCoreStrings.body = "body".asInstanceOf[typings.ionicCore.ionicCoreStrings.body]
+  inline def body: typings.ionicCore.ionicCoreStrings.body = "body".asInstanceOf[typings.ionicCore.ionicCoreStrings.body]
   
-  @scala.inline
-  def document: typings.ionicCore.ionicCoreStrings.document = "document".asInstanceOf[typings.ionicCore.ionicCoreStrings.document]
+  inline def document: typings.ionicCore.ionicCoreStrings.document = "document".asInstanceOf[typings.ionicCore.ionicCoreStrings.document]
   
-  @scala.inline
-  def window: typings.ionicCore.ionicCoreStrings.window = "window".asInstanceOf[typings.ionicCore.ionicCoreStrings.window]
+  inline def window: typings.ionicCore.ionicCoreStrings.window = "window".asInstanceOf[typings.ionicCore.ionicCoreStrings.window]
 }

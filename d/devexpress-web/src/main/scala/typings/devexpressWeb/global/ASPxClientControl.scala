@@ -121,23 +121,19 @@ object ASPxClientControl {
     * @param container An HTML element that is the container of the controls.
     */
   /* static member */
-  @scala.inline
-  def AdjustControls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AdjustControls")().asInstanceOf[Unit]
-  @scala.inline
-  def AdjustControls(container: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AdjustControls")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def AdjustControls(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AdjustControls")().asInstanceOf[Unit]
+  inline def AdjustControls(container: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("AdjustControls")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Converts the specified object to the current object's type. The converted client object specified by the obj parameter.
     * @param obj The client object to be type cast.
     */
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientControl = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientControl]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientControl = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientControl]
   
   /**
     * Returns a collection of client web control objects.
     */
   /* static member */
-  @scala.inline
-  def GetControlCollection(): typings.devexpressWeb.ASPxClientControlCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("GetControlCollection")().asInstanceOf[typings.devexpressWeb.ASPxClientControlCollection]
+  inline def GetControlCollection(): typings.devexpressWeb.ASPxClientControlCollection = ^.asInstanceOf[js.Dynamic].applyDynamic("GetControlCollection")().asInstanceOf[typings.devexpressWeb.ASPxClientControlCollection]
 }

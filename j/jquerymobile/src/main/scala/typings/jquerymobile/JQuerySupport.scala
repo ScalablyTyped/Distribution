@@ -10,16 +10,13 @@ trait JQuerySupport extends StObject {
 }
 object JQuerySupport {
   
-  @scala.inline
-  def apply(touchOverflow: js.Any): JQuerySupport = {
+  inline def apply(touchOverflow: js.Any): JQuerySupport = {
     val __obj = js.Dynamic.literal(touchOverflow = touchOverflow.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuerySupport]
   }
   
-  @scala.inline
-  implicit class JQuerySupportMutableBuilder[Self <: JQuerySupport] (val x: Self) extends AnyVal {
+  extension [Self <: JQuerySupport](x: Self) {
     
-    @scala.inline
-    def setTouchOverflow(value: js.Any): Self = StObject.set(x, "touchOverflow", value.asInstanceOf[js.Any])
+    inline def setTouchOverflow(value: js.Any): Self = StObject.set(x, "touchOverflow", value.asInstanceOf[js.Any])
   }
 }

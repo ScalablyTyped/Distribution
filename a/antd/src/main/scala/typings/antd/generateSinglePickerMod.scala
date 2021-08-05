@@ -12,6 +12,5 @@ object generateSinglePickerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](generateConfig: GenerateConfig[DateType]): DatePicker[DateType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[DatePicker[DateType]]
+  inline def default[DateType](generateConfig: GenerateConfig[DateType]): DatePicker[DateType] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(generateConfig.asInstanceOf[js.Any]).asInstanceOf[DatePicker[DateType]]
 }

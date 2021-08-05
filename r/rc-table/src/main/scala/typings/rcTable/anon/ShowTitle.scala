@@ -10,19 +10,15 @@ trait ShowTitle extends StObject {
 }
 object ShowTitle {
   
-  @scala.inline
-  def apply(): ShowTitle = {
+  inline def apply(): ShowTitle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShowTitle]
   }
   
-  @scala.inline
-  implicit class ShowTitleMutableBuilder[Self <: ShowTitle] (val x: Self) extends AnyVal {
+  extension [Self <: ShowTitle](x: Self) {
     
-    @scala.inline
-    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
+    inline def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
+    inline def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
   }
 }

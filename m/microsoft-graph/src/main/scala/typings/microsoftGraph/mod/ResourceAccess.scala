@@ -17,28 +17,21 @@ trait ResourceAccess extends StObject {
 }
 object ResourceAccess {
   
-  @scala.inline
-  def apply(): ResourceAccess = {
+  inline def apply(): ResourceAccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceAccess]
   }
   
-  @scala.inline
-  implicit class ResourceAccessMutableBuilder[Self <: ResourceAccess] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceAccess](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -23,43 +23,31 @@ trait DeviceExchangeAccessStateSummary extends StObject {
 }
 object DeviceExchangeAccessStateSummary {
   
-  @scala.inline
-  def apply(): DeviceExchangeAccessStateSummary = {
+  inline def apply(): DeviceExchangeAccessStateSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceExchangeAccessStateSummary]
   }
   
-  @scala.inline
-  implicit class DeviceExchangeAccessStateSummaryMutableBuilder[Self <: DeviceExchangeAccessStateSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceExchangeAccessStateSummary](x: Self) {
     
-    @scala.inline
-    def setAllowedDeviceCount(value: Double): Self = StObject.set(x, "allowedDeviceCount", value.asInstanceOf[js.Any])
+    inline def setAllowedDeviceCount(value: Double): Self = StObject.set(x, "allowedDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedDeviceCountUndefined: Self = StObject.set(x, "allowedDeviceCount", js.undefined)
+    inline def setAllowedDeviceCountUndefined: Self = StObject.set(x, "allowedDeviceCount", js.undefined)
     
-    @scala.inline
-    def setBlockedDeviceCount(value: Double): Self = StObject.set(x, "blockedDeviceCount", value.asInstanceOf[js.Any])
+    inline def setBlockedDeviceCount(value: Double): Self = StObject.set(x, "blockedDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedDeviceCountUndefined: Self = StObject.set(x, "blockedDeviceCount", js.undefined)
+    inline def setBlockedDeviceCountUndefined: Self = StObject.set(x, "blockedDeviceCount", js.undefined)
     
-    @scala.inline
-    def setQuarantinedDeviceCount(value: Double): Self = StObject.set(x, "quarantinedDeviceCount", value.asInstanceOf[js.Any])
+    inline def setQuarantinedDeviceCount(value: Double): Self = StObject.set(x, "quarantinedDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuarantinedDeviceCountUndefined: Self = StObject.set(x, "quarantinedDeviceCount", js.undefined)
+    inline def setQuarantinedDeviceCountUndefined: Self = StObject.set(x, "quarantinedDeviceCount", js.undefined)
     
-    @scala.inline
-    def setUnavailableDeviceCount(value: Double): Self = StObject.set(x, "unavailableDeviceCount", value.asInstanceOf[js.Any])
+    inline def setUnavailableDeviceCount(value: Double): Self = StObject.set(x, "unavailableDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnavailableDeviceCountUndefined: Self = StObject.set(x, "unavailableDeviceCount", js.undefined)
+    inline def setUnavailableDeviceCountUndefined: Self = StObject.set(x, "unavailableDeviceCount", js.undefined)
     
-    @scala.inline
-    def setUnknownDeviceCount(value: Double): Self = StObject.set(x, "unknownDeviceCount", value.asInstanceOf[js.Any])
+    inline def setUnknownDeviceCount(value: Double): Self = StObject.set(x, "unknownDeviceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownDeviceCountUndefined: Self = StObject.set(x, "unknownDeviceCount", js.undefined)
+    inline def setUnknownDeviceCountUndefined: Self = StObject.set(x, "unknownDeviceCount", js.undefined)
   }
 }

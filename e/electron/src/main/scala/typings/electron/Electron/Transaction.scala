@@ -47,8 +47,7 @@ trait Transaction extends StObject {
 }
 object Transaction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorCode: Double,
     errorMessage: String,
     originalTransactionIdentifier: String,
@@ -61,28 +60,20 @@ object Transaction {
     __obj.asInstanceOf[Transaction]
   }
   
-  @scala.inline
-  implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+  extension [Self <: Transaction](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalTransactionIdentifier(value: String): Self = StObject.set(x, "originalTransactionIdentifier", value.asInstanceOf[js.Any])
+    inline def setOriginalTransactionIdentifier(value: String): Self = StObject.set(x, "originalTransactionIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment(value: Payment): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
+    inline def setPayment(value: Payment): Self = StObject.set(x, "payment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionDate(value: String): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
+    inline def setTransactionDate(value: String): Self = StObject.set(x, "transactionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdentifier(value: String): Self = StObject.set(x, "transactionIdentifier", value.asInstanceOf[js.Any])
+    inline def setTransactionIdentifier(value: String): Self = StObject.set(x, "transactionIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionState(value: purchasing | purchased | failed | restored | deferred): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
+    inline def setTransactionState(value: purchasing | purchased | failed | restored | deferred): Self = StObject.set(x, "transactionState", value.asInstanceOf[js.Any])
   }
 }

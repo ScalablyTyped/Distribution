@@ -26,20 +26,16 @@ object typesGetSegmentImportJobsOutputMod {
   }
   object GetSegmentImportJobsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, ImportJobsResponse: UnmarshalledImportJobsResponse): GetSegmentImportJobsOutput = {
+    inline def apply($metadata: ResponseMetadata, ImportJobsResponse: UnmarshalledImportJobsResponse): GetSegmentImportJobsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ImportJobsResponse = ImportJobsResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSegmentImportJobsOutput]
     }
     
-    @scala.inline
-    implicit class GetSegmentImportJobsOutputMutableBuilder[Self <: GetSegmentImportJobsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetSegmentImportJobsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportJobsResponse(value: UnmarshalledImportJobsResponse): Self = StObject.set(x, "ImportJobsResponse", value.asInstanceOf[js.Any])
+      inline def setImportJobsResponse(value: UnmarshalledImportJobsResponse): Self = StObject.set(x, "ImportJobsResponse", value.asInstanceOf[js.Any])
     }
   }
 }

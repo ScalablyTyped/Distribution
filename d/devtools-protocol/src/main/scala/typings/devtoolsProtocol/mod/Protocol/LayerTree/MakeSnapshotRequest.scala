@@ -13,16 +13,13 @@ trait MakeSnapshotRequest extends StObject {
 }
 object MakeSnapshotRequest {
   
-  @scala.inline
-  def apply(layerId: LayerId): MakeSnapshotRequest = {
+  inline def apply(layerId: LayerId): MakeSnapshotRequest = {
     val __obj = js.Dynamic.literal(layerId = layerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class MakeSnapshotRequestMutableBuilder[Self <: MakeSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: MakeSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: LayerId): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
   }
 }

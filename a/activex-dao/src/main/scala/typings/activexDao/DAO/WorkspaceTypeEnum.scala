@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkspaceTypeEnum extends StObject
 object WorkspaceTypeEnum {
   
-  @scala.inline
-  def dbUseJet: `2` = 2.asInstanceOf[`2`]
+  inline def dbUseJet: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def dbUseODBC: `1` = 1.asInstanceOf[`1`]
+  inline def dbUseODBC: `1` = 1.asInstanceOf[`1`]
 }

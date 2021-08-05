@@ -67,8 +67,7 @@ object anon {
   }
   object All {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       DEFAULT: String,
       all: String,
       debug: String,
@@ -81,29 +80,21 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    @scala.inline
-    implicit class AllMutableBuilder[Self <: All] (val x: Self) extends AnyVal {
+    extension [Self <: All](x: Self) {
       
-      @scala.inline
-      def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEFAULT(value: String): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
+      inline def setDEFAULT(value: String): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOff(value: String): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
+      inline def setOff(value: String): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: String): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: String): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -329,32 +320,26 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(name: String): Children = {
+    inline def apply(name: String): Children = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(
+      inline def setChildren(
         value: js.Array[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias video.js.video.js.videojs.Child */ js.Object
             ]
       ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(
+      inline def setChildrenVarargs(
         value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias video.js.video.js.videojs.Child */ js.Object)*
       ): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

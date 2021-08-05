@@ -21,25 +21,19 @@ trait SchemaReplaceAllTextRequest extends StObject {
 }
 object SchemaReplaceAllTextRequest {
   
-  @scala.inline
-  def apply(): SchemaReplaceAllTextRequest = {
+  inline def apply(): SchemaReplaceAllTextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReplaceAllTextRequest]
   }
   
-  @scala.inline
-  implicit class SchemaReplaceAllTextRequestMutableBuilder[Self <: SchemaReplaceAllTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReplaceAllTextRequest](x: Self) {
     
-    @scala.inline
-    def setContainsText(value: SchemaSubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
+    inline def setContainsText(value: SchemaSubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
+    inline def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
     
-    @scala.inline
-    def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
+    inline def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
+    inline def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
   }
 }

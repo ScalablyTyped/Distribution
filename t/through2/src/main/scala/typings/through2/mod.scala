@@ -9,28 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: Unit, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: Unit, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: Unit, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: DuplexOptions): Transform = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: DuplexOptions, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: DuplexOptions, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(opts: DuplexOptions, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(transform: TransformFunction): Transform = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply(transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  inline def apply(opts: Unit, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(opts: Unit, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(opts: Unit, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(opts: DuplexOptions): Transform = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(opts: DuplexOptions, transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(opts: DuplexOptions, transform: TransformFunction): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(opts: DuplexOptions, transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(transform: TransformFunction): Transform = ^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].apply(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
   @JSImport("through2", JSImport.Namespace)
   @js.native
@@ -40,40 +29,25 @@ object mod {
     * Creates a constructor for a custom Transform. This is useful when you
     * want to use the same transform logic in multiple instances.
     */
-  @scala.inline
-  def ctor(): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")().asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(opts: Unit, transform: Unit, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(opts: Unit, transform: TransformFunction): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(opts: Unit, transform: TransformFunction, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(opts: DuplexOptions): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(opts: DuplexOptions, transform: Unit, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(opts: DuplexOptions, transform: TransformFunction): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(opts: DuplexOptions, transform: TransformFunction, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(transform: Unit, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(transform: TransformFunction): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(transform.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
-  @scala.inline
-  def ctor(transform: TransformFunction, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  inline def ctor(): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")().asInstanceOf[Through2Constructor]
+  inline def ctor(opts: Unit, transform: Unit, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  inline def ctor(opts: Unit, transform: TransformFunction): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  inline def ctor(opts: Unit, transform: TransformFunction, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  inline def ctor(opts: DuplexOptions): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  inline def ctor(opts: DuplexOptions, transform: Unit, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  inline def ctor(opts: DuplexOptions, transform: TransformFunction): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  inline def ctor(opts: DuplexOptions, transform: TransformFunction, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  inline def ctor(transform: Unit, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  inline def ctor(transform: TransformFunction): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(transform.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  inline def ctor(transform: TransformFunction, flush: FlushCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
   
   /**
     * Convenvience method for creating object streams
     */
-  @scala.inline
-  def obj(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")().asInstanceOf[Transform]
-  @scala.inline
-  def obj(transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def obj(transform: TransformFunction): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def obj(transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def obj(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")().asInstanceOf[Transform]
+  inline def obj(transform: Unit, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def obj(transform: TransformFunction): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(transform.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def obj(transform: TransformFunction, flush: FlushCallback): Transform = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(transform.asInstanceOf[js.Any], flush.asInstanceOf[js.Any])).asInstanceOf[Transform]
   
   type FlushCallback = js.ThisFunction1[/* this */ Transform, /* flushCallback */ js.Function0[Unit], Unit]
   

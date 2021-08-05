@@ -20,40 +20,29 @@ trait MediaMetadataInit extends StObject {
 }
 object MediaMetadataInit {
   
-  @scala.inline
-  def apply(): MediaMetadataInit = {
+  inline def apply(): MediaMetadataInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaMetadataInit]
   }
   
-  @scala.inline
-  implicit class MediaMetadataInitMutableBuilder[Self <: MediaMetadataInit] (val x: Self) extends AnyVal {
+  extension [Self <: MediaMetadataInit](x: Self) {
     
-    @scala.inline
-    def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
+    inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
     
-    @scala.inline
-    def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+    inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
+    inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
     
-    @scala.inline
-    def setArtwork(value: js.Array[MediaImage]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
+    inline def setArtwork(value: js.Array[MediaImage]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
+    inline def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
     
-    @scala.inline
-    def setArtworkVarargs(value: MediaImage*): Self = StObject.set(x, "artwork", js.Array(value :_*))
+    inline def setArtworkVarargs(value: MediaImage*): Self = StObject.set(x, "artwork", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

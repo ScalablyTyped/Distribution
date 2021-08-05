@@ -19,11 +19,11 @@ object dispatcherMod {
     
     /* private */ def _connect(): js.Any = js.native
     
-    var _connected: js.Any = js.native
+    /* private */ var _connected: js.Any = js.native
     
     /* private */ def _disconnect(): js.Any = js.native
     
-    var _eventNameToCallbackSet: js.Any = js.native
+    /* private */ var _eventNameToCallbackSet: js.Any = js.native
     
     /**
       * All listeners are registered to this `EventTarget` and events are then
@@ -31,7 +31,7 @@ object dispatcherMod {
       *
       * Subclasses set their own event target instead of `document`.
       */
-    var _eventTarget: EventTarget = js.native
+    /* protected */ var _eventTarget: EventTarget = js.native
     
     /**
       * Subclasses set these in constructor. Then, these get attached to the event
@@ -40,7 +40,7 @@ object dispatcherMod {
       * eventname is a DOM event name like "mouseup", "touchstart", etc. The
       * callback is simply registered to the event callback with bubbling.
       */
-    var _eventToProcessingFunction: StringDictionary[js.Function1[/* e */ Event, js.Any]] = js.native
+    /* protected */ var _eventToProcessingFunction: StringDictionary[js.Function1[/* e */ Event, js.Any]] = js.native
     
     /* private */ def _hasNoCallbacks(): js.Any = js.native
     

@@ -51,8 +51,7 @@ trait DesktopTask
 }
 object DesktopTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActiveFrame: XFrame,
     ComponentWindow: XWindow,
     ContainerWindow: XWindow,
@@ -109,31 +108,22 @@ object DesktopTask {
     __obj.asInstanceOf[DesktopTask]
   }
   
-  @scala.inline
-  implicit class DesktopTaskMutableBuilder[Self <: DesktopTask] (val x: Self) extends AnyVal {
+  extension [Self <: DesktopTask](x: Self) {
     
-    @scala.inline
-    def setInitialize(value: XWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: XWindow => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAlwaysVisible(value: Boolean): Self = StObject.set(x, "IsAlwaysVisible", value.asInstanceOf[js.Any])
+    inline def setIsAlwaysVisible(value: Boolean): Self = StObject.set(x, "IsAlwaysVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDesktop(value: Boolean): Self = StObject.set(x, "IsDesktop", value.asInstanceOf[js.Any])
+    inline def setIsDesktop(value: Boolean): Self = StObject.set(x, "IsDesktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFloating(value: Boolean): Self = StObject.set(x, "IsFloating", value.asInstanceOf[js.Any])
+    inline def setIsFloating(value: Boolean): Self = StObject.set(x, "IsFloating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

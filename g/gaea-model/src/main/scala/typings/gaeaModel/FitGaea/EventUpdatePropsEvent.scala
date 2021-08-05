@@ -13,16 +13,13 @@ trait EventUpdatePropsEvent extends StObject {
 }
 object EventUpdatePropsEvent {
   
-  @scala.inline
-  def apply(props: ComponentProps): EventUpdatePropsEvent = {
+  inline def apply(props: ComponentProps): EventUpdatePropsEvent = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventUpdatePropsEvent]
   }
   
-  @scala.inline
-  implicit class EventUpdatePropsEventMutableBuilder[Self <: EventUpdatePropsEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EventUpdatePropsEvent](x: Self) {
     
-    @scala.inline
-    def setProps(value: ComponentProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: ComponentProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

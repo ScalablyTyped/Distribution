@@ -26,31 +26,23 @@ trait Padding extends StObject {
 }
 object Padding {
   
-  @scala.inline
-  def apply(): Padding = {
+  inline def apply(): Padding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Padding]
   }
   
-  @scala.inline
-  implicit class PaddingMutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
+  extension [Self <: Padding](x: Self) {
     
-    @scala.inline
-    def setPadding(value: typings.c3.mod.Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: typings.c3.mod.Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTitle_position(value: right | center | left): Self = StObject.set(x, "title_position", value.asInstanceOf[js.Any])
+    inline def setTitle_position(value: right | center | left): Self = StObject.set(x, "title_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle_positionUndefined: Self = StObject.set(x, "title_position", js.undefined)
+    inline def setTitle_positionUndefined: Self = StObject.set(x, "title_position", js.undefined)
   }
 }

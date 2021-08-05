@@ -33,6 +33,6 @@ trait DiagramNodeChildren extends StObject {
   
   def SelectAll(): Unit = js.native
   
-  @JSName("Word.DiagramNodeChildren_typekey")
+  /* private */ @JSName("Word.DiagramNodeChildren_typekey")
   var WordDotDiagramNodeChildren_typekey: DiagramNodeChildren = js.native
 }

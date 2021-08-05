@@ -27,8 +27,7 @@ object listItemActionUniDriverMod {
   }
   object ListItemActionUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -44,29 +43,21 @@ object listItemActionUniDriverMod {
       __obj.asInstanceOf[ListItemActionUniDriver]
     }
     
-    @scala.inline
-    implicit class ListItemActionUniDriverMutableBuilder[Self <: ListItemActionUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemActionUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetSkin(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+      inline def setGetSkin(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitleText", js.Any.fromFunction0(value))
+      inline def setGetSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitleText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
+      inline def setGetTitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getTitleText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPrefixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPrefixIconExists", js.Any.fromFunction0(value))
+      inline def setIsPrefixIconExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPrefixIconExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSubtitleExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSubtitleExists", js.Any.fromFunction0(value))
+      inline def setIsSubtitleExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSubtitleExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTitleExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTitleExists", js.Any.fromFunction0(value))
+      inline def setIsTitleExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTitleExists", js.Any.fromFunction0(value))
     }
   }
 }

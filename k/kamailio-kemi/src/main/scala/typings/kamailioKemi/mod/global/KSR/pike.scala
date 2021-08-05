@@ -10,6 +10,5 @@ object pike {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pikeCheckReq(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pike_check_req")().asInstanceOf[Double]
+  inline def pikeCheckReq(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pike_check_req")().asInstanceOf[Double]
 }

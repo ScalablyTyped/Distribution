@@ -23,8 +23,7 @@ trait XReferenceResolvedListener
 }
 object XReferenceResolvedListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     referenceResolved: Double => Unit,
@@ -34,10 +33,8 @@ object XReferenceResolvedListener {
     __obj.asInstanceOf[XReferenceResolvedListener]
   }
   
-  @scala.inline
-  implicit class XReferenceResolvedListenerMutableBuilder[Self <: XReferenceResolvedListener] (val x: Self) extends AnyVal {
+  extension [Self <: XReferenceResolvedListener](x: Self) {
     
-    @scala.inline
-    def setReferenceResolved(value: Double => Unit): Self = StObject.set(x, "referenceResolved", js.Any.fromFunction1(value))
+    inline def setReferenceResolved(value: Double => Unit): Self = StObject.set(x, "referenceResolved", js.Any.fromFunction1(value))
   }
 }

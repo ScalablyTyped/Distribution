@@ -18,28 +18,21 @@ trait DescribeCanariesResponse extends StObject {
 }
 object DescribeCanariesResponse {
   
-  @scala.inline
-  def apply(): DescribeCanariesResponse = {
+  inline def apply(): DescribeCanariesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCanariesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCanariesResponseMutableBuilder[Self <: DescribeCanariesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCanariesResponse](x: Self) {
     
-    @scala.inline
-    def setCanaries(value: Canaries): Self = StObject.set(x, "Canaries", value.asInstanceOf[js.Any])
+    inline def setCanaries(value: Canaries): Self = StObject.set(x, "Canaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanariesUndefined: Self = StObject.set(x, "Canaries", js.undefined)
+    inline def setCanariesUndefined: Self = StObject.set(x, "Canaries", js.undefined)
     
-    @scala.inline
-    def setCanariesVarargs(value: Canary*): Self = StObject.set(x, "Canaries", js.Array(value :_*))
+    inline def setCanariesVarargs(value: Canary*): Self = StObject.set(x, "Canaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

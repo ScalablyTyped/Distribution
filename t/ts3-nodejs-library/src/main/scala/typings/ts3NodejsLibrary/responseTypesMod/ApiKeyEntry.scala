@@ -28,8 +28,7 @@ trait ApiKeyEntry
 }
 object ApiKeyEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cldbid: Double,
     count: Double,
     createdAt: Double,
@@ -43,31 +42,22 @@ object ApiKeyEntry {
     __obj.asInstanceOf[ApiKeyEntry]
   }
   
-  @scala.inline
-  implicit class ApiKeyEntryMutableBuilder[Self <: ApiKeyEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ApiKeyEntry](x: Self) {
     
-    @scala.inline
-    def setCldbid(value: Double): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+    inline def setCldbid(value: Double): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresAt(value: Double): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: Double): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: ApiKeyScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: ApiKeyScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSid(value: Double): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    inline def setSid(value: Double): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
+    inline def setTimeLeft(value: Double): Self = StObject.set(x, "timeLeft", value.asInstanceOf[js.Any])
   }
 }

@@ -15,11 +15,9 @@ object fileTools {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addUploadWidget(editor: typings.ckeditor.CKEDITOR.editor, name: String, `def`: uploadWidgetDefinition): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUploadWidget")(editor.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addUploadWidget(editor: typings.ckeditor.CKEDITOR.editor, name: String, `def`: uploadWidgetDefinition): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addUploadWidget")(editor.asInstanceOf[js.Any], name.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def bindNotification(
+  inline def bindNotification(
     editor: typings.ckeditor.CKEDITOR.editor,
     fileLoader: typings.ckeditor.CKEDITOR.fileTools.fileLoader
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindNotification")(editor.asInstanceOf[js.Any], fileLoader.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -35,22 +33,17 @@ object fileTools {
     def this(editor: typings.ckeditor.CKEDITOR.editor, fileOrData: Blob, fileName: String) = this()
   }
   
-  @scala.inline
-  def getUploadUrl(config: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUploadUrl")(config.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getUploadUrl(config: StringDictionary[js.Any], `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUploadUrl")(config.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getUploadUrl(config: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUploadUrl")(config.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getUploadUrl(config: StringDictionary[js.Any], `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUploadUrl")(config.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSGlobal("CKEDITOR.fileTools.isFileUploadSupported")
   @js.native
   def isFileUploadSupported: Boolean = js.native
-  @scala.inline
-  def isFileUploadSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFileUploadSupported")(x.asInstanceOf[js.Any])
+  inline def isFileUploadSupported_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFileUploadSupported")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isTypeSupported(file: Blob, supportedTypes: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(file.asInstanceOf[js.Any], supportedTypes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isTypeSupported(file: Blob, supportedTypes: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeSupported")(file.asInstanceOf[js.Any], supportedTypes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def markElement(element: element, widgetName: String, loaderId: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markElement")(element.asInstanceOf[js.Any], widgetName.asInstanceOf[js.Any], loaderId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def markElement(element: element, widgetName: String, loaderId: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markElement")(element.asInstanceOf[js.Any], widgetName.asInstanceOf[js.Any], loaderId.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("CKEDITOR.fileTools.uploadRepository")
   @js.native

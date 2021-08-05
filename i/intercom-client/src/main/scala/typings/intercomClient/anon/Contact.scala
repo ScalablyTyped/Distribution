@@ -14,19 +14,15 @@ trait Contact extends StObject {
 }
 object Contact {
   
-  @scala.inline
-  def apply(contact: LeadIdentifier, user: UserIdentifier): Contact = {
+  inline def apply(contact: LeadIdentifier, user: UserIdentifier): Contact = {
     val __obj = js.Dynamic.literal(contact = contact.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contact]
   }
   
-  @scala.inline
-  implicit class ContactMutableBuilder[Self <: Contact] (val x: Self) extends AnyVal {
+  extension [Self <: Contact](x: Self) {
     
-    @scala.inline
-    def setContact(value: LeadIdentifier): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: LeadIdentifier): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: UserIdentifier): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: UserIdentifier): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait ISearch
      with IText
 object ISearch {
   
-  @scala.inline
-  def apply(): ISearch = {
+  inline def apply(): ISearch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISearch]
   }

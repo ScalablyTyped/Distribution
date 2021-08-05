@@ -37,27 +37,21 @@ object helperHelperMod {
   }
   object HelperOptions {
     
-    @scala.inline
-    def apply[TIntent /* <: Intent */, TValueSpec](intent: TIntent, `type`: InputValueSpec): HelperOptions[TIntent, TValueSpec] = {
+    inline def apply[TIntent /* <: Intent */, TValueSpec](intent: TIntent, `type`: InputValueSpec): HelperOptions[TIntent, TValueSpec] = {
       val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[HelperOptions[TIntent, TValueSpec]]
     }
     
-    @scala.inline
-    implicit class HelperOptionsMutableBuilder[Self <: HelperOptions[?, ?], TIntent /* <: Intent */, TValueSpec] (val x: Self & (HelperOptions[TIntent, TValueSpec])) extends AnyVal {
+    extension [Self <: HelperOptions[?, ?], TIntent /* <: Intent */, TValueSpec](x: Self & (HelperOptions[TIntent, TValueSpec])) {
       
-      @scala.inline
-      def setData(value: TValueSpec): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TValueSpec): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setIntent(value: TIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+      inline def setIntent(value: TIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: InputValueSpec): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: InputValueSpec): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

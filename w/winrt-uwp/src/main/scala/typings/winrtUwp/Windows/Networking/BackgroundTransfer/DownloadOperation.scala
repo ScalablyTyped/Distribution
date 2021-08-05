@@ -71,8 +71,7 @@ trait DownloadOperation extends StObject {
 }
 object DownloadOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachAsync: () => IPromiseWithIAsyncOperationWithProgress[DownloadOperation, DownloadOperation],
     costPolicy: BackgroundTransferCostPolicy,
     getResponseInformation: () => ResponseInformation,
@@ -93,52 +92,36 @@ object DownloadOperation {
     __obj.asInstanceOf[DownloadOperation]
   }
   
-  @scala.inline
-  implicit class DownloadOperationMutableBuilder[Self <: DownloadOperation] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadOperation](x: Self) {
     
-    @scala.inline
-    def setAttachAsync(value: () => IPromiseWithIAsyncOperationWithProgress[DownloadOperation, DownloadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
+    inline def setAttachAsync(value: () => IPromiseWithIAsyncOperationWithProgress[DownloadOperation, DownloadOperation]): Self = StObject.set(x, "attachAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
+    inline def setCostPolicy(value: BackgroundTransferCostPolicy): Self = StObject.set(x, "costPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetResponseInformation(value: () => ResponseInformation): Self = StObject.set(x, "getResponseInformation", js.Any.fromFunction0(value))
+    inline def setGetResponseInformation(value: () => ResponseInformation): Self = StObject.set(x, "getResponseInformation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResultStreamAt(value: Double => IInputStream): Self = StObject.set(x, "getResultStreamAt", js.Any.fromFunction1(value))
+    inline def setGetResultStreamAt(value: Double => IInputStream): Self = StObject.set(x, "getResultStreamAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPriority(value: BackgroundTransferPriority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: BackgroundTransferPriority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: BackgroundDownloadProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: BackgroundDownloadProgress): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
+    inline def setRequestedUri(value: Uri): Self = StObject.set(x, "requestedUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultFile(value: IStorageFile): Self = StObject.set(x, "resultFile", value.asInstanceOf[js.Any])
+    inline def setResultFile(value: IStorageFile): Self = StObject.set(x, "resultFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+    inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartAsync(value: () => IPromiseWithIAsyncOperationWithProgress[DownloadOperation, DownloadOperation]): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
+    inline def setStartAsync(value: () => IPromiseWithIAsyncOperationWithProgress[DownloadOperation, DownloadOperation]): Self = StObject.set(x, "startAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTransferGroup(value: BackgroundTransferGroup): Self = StObject.set(x, "transferGroup", value.asInstanceOf[js.Any])
+    inline def setTransferGroup(value: BackgroundTransferGroup): Self = StObject.set(x, "transferGroup", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait RatingSelectEvent
 }
 object RatingSelectEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Rating): RatingSelectEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Rating): RatingSelectEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[RatingSelectEvent]
   }
   
-  @scala.inline
-  implicit class RatingSelectEventMutableBuilder[Self <: RatingSelectEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RatingSelectEvent](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

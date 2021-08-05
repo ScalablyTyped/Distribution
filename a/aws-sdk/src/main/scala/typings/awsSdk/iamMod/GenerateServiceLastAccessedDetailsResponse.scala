@@ -13,19 +13,15 @@ trait GenerateServiceLastAccessedDetailsResponse extends StObject {
 }
 object GenerateServiceLastAccessedDetailsResponse {
   
-  @scala.inline
-  def apply(): GenerateServiceLastAccessedDetailsResponse = {
+  inline def apply(): GenerateServiceLastAccessedDetailsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateServiceLastAccessedDetailsResponse]
   }
   
-  @scala.inline
-  implicit class GenerateServiceLastAccessedDetailsResponseMutableBuilder[Self <: GenerateServiceLastAccessedDetailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateServiceLastAccessedDetailsResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: jobIDType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: jobIDType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

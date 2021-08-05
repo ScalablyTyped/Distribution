@@ -14,25 +14,19 @@ trait RegexMatcher extends StObject {
 }
 object RegexMatcher {
   
-  @scala.inline
-  def apply(): RegexMatcher = {
+  inline def apply(): RegexMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegexMatcher]
   }
   
-  @scala.inline
-  implicit class RegexMatcherMutableBuilder[Self <: RegexMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: RegexMatcher](x: Self) {
     
-    @scala.inline
-    def setGoogleRe2(value: GoogleRE2): Self = StObject.set(x, "googleRe2", value.asInstanceOf[js.Any])
+    inline def setGoogleRe2(value: GoogleRE2): Self = StObject.set(x, "googleRe2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleRe2Undefined: Self = StObject.set(x, "googleRe2", js.undefined)
+    inline def setGoogleRe2Undefined: Self = StObject.set(x, "googleRe2", js.undefined)
     
-    @scala.inline
-    def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+    inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
   }
 }

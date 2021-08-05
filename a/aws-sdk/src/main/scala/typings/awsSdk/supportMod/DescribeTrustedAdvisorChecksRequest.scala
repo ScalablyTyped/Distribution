@@ -13,16 +13,13 @@ trait DescribeTrustedAdvisorChecksRequest extends StObject {
 }
 object DescribeTrustedAdvisorChecksRequest {
   
-  @scala.inline
-  def apply(language: String): DescribeTrustedAdvisorChecksRequest = {
+  inline def apply(language: String): DescribeTrustedAdvisorChecksRequest = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTrustedAdvisorChecksRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTrustedAdvisorChecksRequestMutableBuilder[Self <: DescribeTrustedAdvisorChecksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTrustedAdvisorChecksRequest](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
   }
 }

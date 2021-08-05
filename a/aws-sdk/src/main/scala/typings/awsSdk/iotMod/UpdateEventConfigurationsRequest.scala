@@ -13,19 +13,15 @@ trait UpdateEventConfigurationsRequest extends StObject {
 }
 object UpdateEventConfigurationsRequest {
   
-  @scala.inline
-  def apply(): UpdateEventConfigurationsRequest = {
+  inline def apply(): UpdateEventConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateEventConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateEventConfigurationsRequestMutableBuilder[Self <: UpdateEventConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEventConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setEventConfigurations(value: EventConfigurations): Self = StObject.set(x, "eventConfigurations", value.asInstanceOf[js.Any])
+    inline def setEventConfigurations(value: EventConfigurations): Self = StObject.set(x, "eventConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventConfigurationsUndefined: Self = StObject.set(x, "eventConfigurations", js.undefined)
+    inline def setEventConfigurationsUndefined: Self = StObject.set(x, "eventConfigurations", js.undefined)
   }
 }

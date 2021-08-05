@@ -18,28 +18,21 @@ trait ListHandshakesForAccountResponse extends StObject {
 }
 object ListHandshakesForAccountResponse {
   
-  @scala.inline
-  def apply(): ListHandshakesForAccountResponse = {
+  inline def apply(): ListHandshakesForAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListHandshakesForAccountResponse]
   }
   
-  @scala.inline
-  implicit class ListHandshakesForAccountResponseMutableBuilder[Self <: ListHandshakesForAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListHandshakesForAccountResponse](x: Self) {
     
-    @scala.inline
-    def setHandshakes(value: Handshakes): Self = StObject.set(x, "Handshakes", value.asInstanceOf[js.Any])
+    inline def setHandshakes(value: Handshakes): Self = StObject.set(x, "Handshakes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandshakesUndefined: Self = StObject.set(x, "Handshakes", js.undefined)
+    inline def setHandshakesUndefined: Self = StObject.set(x, "Handshakes", js.undefined)
     
-    @scala.inline
-    def setHandshakesVarargs(value: Handshake*): Self = StObject.set(x, "Handshakes", js.Array(value :_*))
+    inline def setHandshakesVarargs(value: Handshake*): Self = StObject.set(x, "Handshakes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

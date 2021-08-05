@@ -87,26 +87,20 @@ object linkModelMod {
   }
   object LinkModelListener {
     
-    @scala.inline
-    def apply(): LinkModelListener = {
+    inline def apply(): LinkModelListener = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LinkModelListener]
     }
     
-    @scala.inline
-    implicit class LinkModelListenerMutableBuilder[Self <: LinkModelListener] (val x: Self) extends AnyVal {
+    extension [Self <: LinkModelListener](x: Self) {
       
-      @scala.inline
-      def setSourcePortChanged(value: /* event */ BaseEventLinkModelLinkMod => Unit): Self = StObject.set(x, "sourcePortChanged", js.Any.fromFunction1(value))
+      inline def setSourcePortChanged(value: /* event */ BaseEventLinkModelLinkMod => Unit): Self = StObject.set(x, "sourcePortChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSourcePortChangedUndefined: Self = StObject.set(x, "sourcePortChanged", js.undefined)
+      inline def setSourcePortChangedUndefined: Self = StObject.set(x, "sourcePortChanged", js.undefined)
       
-      @scala.inline
-      def setTargetPortChanged(value: /* event */ BaseEventLinkModelLinkMod => Unit): Self = StObject.set(x, "targetPortChanged", js.Any.fromFunction1(value))
+      inline def setTargetPortChanged(value: /* event */ BaseEventLinkModelLinkMod => Unit): Self = StObject.set(x, "targetPortChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTargetPortChangedUndefined: Self = StObject.set(x, "targetPortChanged", js.undefined)
+      inline def setTargetPortChangedUndefined: Self = StObject.set(x, "targetPortChanged", js.undefined)
     }
   }
 }

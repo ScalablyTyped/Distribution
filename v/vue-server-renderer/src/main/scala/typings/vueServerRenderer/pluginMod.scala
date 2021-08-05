@@ -21,20 +21,16 @@ object pluginMod {
   }
   object WebpackPluginOptions {
     
-    @scala.inline
-    def apply(): WebpackPluginOptions = {
+    inline def apply(): WebpackPluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebpackPluginOptions]
     }
     
-    @scala.inline
-    implicit class WebpackPluginOptionsMutableBuilder[Self <: WebpackPluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebpackPluginOptions](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     }
   }
 }

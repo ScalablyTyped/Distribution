@@ -47,55 +47,39 @@ trait PaneBackgroundOptions extends StObject {
 }
 object PaneBackgroundOptions {
   
-  @scala.inline
-  def apply(): PaneBackgroundOptions = {
+  inline def apply(): PaneBackgroundOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaneBackgroundOptions]
   }
   
-  @scala.inline
-  implicit class PaneBackgroundOptionsMutableBuilder[Self <: PaneBackgroundOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PaneBackgroundOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setInnerRadius(value: Double | String): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+    inline def setInnerRadius(value: Double | String): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
+    inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
-    @scala.inline
-    def setOuterRadius(value: Double | String): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
+    inline def setOuterRadius(value: Double | String): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
+    inline def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
     
-    @scala.inline
-    def setShape(value: PaneBackgroundShapeValue): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: PaneBackgroundShapeValue): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
   }
 }

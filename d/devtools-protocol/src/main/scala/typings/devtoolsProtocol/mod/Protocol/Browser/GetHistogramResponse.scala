@@ -13,16 +13,13 @@ trait GetHistogramResponse extends StObject {
 }
 object GetHistogramResponse {
   
-  @scala.inline
-  def apply(histogram: Histogram): GetHistogramResponse = {
+  inline def apply(histogram: Histogram): GetHistogramResponse = {
     val __obj = js.Dynamic.literal(histogram = histogram.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHistogramResponse]
   }
   
-  @scala.inline
-  implicit class GetHistogramResponseMutableBuilder[Self <: GetHistogramResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetHistogramResponse](x: Self) {
     
-    @scala.inline
-    def setHistogram(value: Histogram): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
+    inline def setHistogram(value: Histogram): Self = StObject.set(x, "histogram", value.asInstanceOf[js.Any])
   }
 }

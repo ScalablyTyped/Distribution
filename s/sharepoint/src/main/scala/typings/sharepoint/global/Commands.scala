@@ -21,36 +21,31 @@ object Commands {
     @JSGlobal("Commands.CommandIds.ApplicationStateChanged")
     @js.native
     def ApplicationStateChanged: String = js.native
-    @scala.inline
-    def ApplicationStateChanged_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplicationStateChanged")(x.asInstanceOf[js.Any])
+    inline def ApplicationStateChanged_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ApplicationStateChanged")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Commands.CommandIds.GlobalRedo")
     @js.native
     def GlobalRedo: String = js.native
-    @scala.inline
-    def GlobalRedo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobalRedo")(x.asInstanceOf[js.Any])
+    inline def GlobalRedo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobalRedo")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Commands.CommandIds.GlobalUndo")
     @js.native
     def GlobalUndo: String = js.native
-    @scala.inline
-    def GlobalUndo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobalUndo")(x.asInstanceOf[js.Any])
+    inline def GlobalUndo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GlobalUndo")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Commands.CommandIds.Redo")
     @js.native
     def Redo: String = js.native
-    @scala.inline
-    def Redo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Redo")(x.asInstanceOf[js.Any])
+    inline def Redo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Redo")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Commands.CommandIds.Undo")
     @js.native
     def Undo: String = js.native
-    @scala.inline
-    def Undo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Undo")(x.asInstanceOf[js.Any])
+    inline def Undo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Undo")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Commands.GlobalRedoProperties")
@@ -68,8 +63,7 @@ object Commands {
     @JSGlobal("Commands.GlobalRedoProperties.SequenceNumber")
     @js.native
     def SequenceNumber: String = js.native
-    @scala.inline
-    def SequenceNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceNumber")(x.asInstanceOf[js.Any])
+    inline def SequenceNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceNumber")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Commands.GlobalUndoProperties")
@@ -87,8 +81,7 @@ object Commands {
     @JSGlobal("Commands.GlobalUndoProperties.SequenceNumber")
     @js.native
     def SequenceNumber: String = js.native
-    @scala.inline
-    def SequenceNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceNumber")(x.asInstanceOf[js.Any])
+    inline def SequenceNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceNumber")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Commands.RedoProperties")
@@ -106,8 +99,7 @@ object Commands {
     @JSGlobal("Commands.RedoProperties.SequenceNumber")
     @js.native
     def SequenceNumber: String = js.native
-    @scala.inline
-    def SequenceNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceNumber")(x.asInstanceOf[js.Any])
+    inline def SequenceNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceNumber")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Commands.UndoProperties")
@@ -125,7 +117,6 @@ object Commands {
     @JSGlobal("Commands.UndoProperties.SequenceNumber")
     @js.native
     def SequenceNumber: String = js.native
-    @scala.inline
-    def SequenceNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceNumber")(x.asInstanceOf[js.Any])
+    inline def SequenceNumber_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SequenceNumber")(x.asInstanceOf[js.Any])
   }
 }

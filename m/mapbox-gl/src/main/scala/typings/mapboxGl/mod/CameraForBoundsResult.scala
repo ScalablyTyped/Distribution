@@ -17,22 +17,17 @@ trait CameraForBoundsResult extends StObject {
 }
 object CameraForBoundsResult {
   
-  @scala.inline
-  def apply(bearing: Double, center: Lat, zoom: Double): CameraForBoundsResult = {
+  inline def apply(bearing: Double, center: Lat, zoom: Double): CameraForBoundsResult = {
     val __obj = js.Dynamic.literal(bearing = bearing.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraForBoundsResult]
   }
   
-  @scala.inline
-  implicit class CameraForBoundsResultMutableBuilder[Self <: CameraForBoundsResult] (val x: Self) extends AnyVal {
+  extension [Self <: CameraForBoundsResult](x: Self) {
     
-    @scala.inline
-    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+    inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenter(value: Lat): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Lat): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

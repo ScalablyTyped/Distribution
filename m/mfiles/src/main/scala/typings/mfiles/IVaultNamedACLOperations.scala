@@ -48,8 +48,7 @@ trait IVaultNamedACLOperations extends StObject {
 }
 object IVaultNamedACLOperations {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddNamedACLAdmin: INamedACLAdmin => INamedACLAdmin,
     GetMatchingNamedACLForAccessControlList: (IAccessControlList, Boolean, Boolean, Boolean) => INamedACL,
     GetMatchingNamedACLForAccessControlListComponent: (IAccessControlListComponent, Boolean, Boolean) => INamedACL,
@@ -70,52 +69,36 @@ object IVaultNamedACLOperations {
     __obj.asInstanceOf[IVaultNamedACLOperations]
   }
   
-  @scala.inline
-  implicit class IVaultNamedACLOperationsMutableBuilder[Self <: IVaultNamedACLOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultNamedACLOperations](x: Self) {
     
-    @scala.inline
-    def setAddNamedACLAdmin(value: INamedACLAdmin => INamedACLAdmin): Self = StObject.set(x, "AddNamedACLAdmin", js.Any.fromFunction1(value))
+    inline def setAddNamedACLAdmin(value: INamedACLAdmin => INamedACLAdmin): Self = StObject.set(x, "AddNamedACLAdmin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMatchingNamedACLForAccessControlList(value: (IAccessControlList, Boolean, Boolean, Boolean) => INamedACL): Self = StObject.set(x, "GetMatchingNamedACLForAccessControlList", js.Any.fromFunction4(value))
+    inline def setGetMatchingNamedACLForAccessControlList(value: (IAccessControlList, Boolean, Boolean, Boolean) => INamedACL): Self = StObject.set(x, "GetMatchingNamedACLForAccessControlList", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetMatchingNamedACLForAccessControlListComponent(value: (IAccessControlListComponent, Boolean, Boolean) => INamedACL): Self = StObject.set(x, "GetMatchingNamedACLForAccessControlListComponent", js.Any.fromFunction3(value))
+    inline def setGetMatchingNamedACLForAccessControlListComponent(value: (IAccessControlListComponent, Boolean, Boolean) => INamedACL): Self = StObject.set(x, "GetMatchingNamedACLForAccessControlListComponent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetNamedACL(value: Double => INamedACL): Self = StObject.set(x, "GetNamedACL", js.Any.fromFunction1(value))
+    inline def setGetNamedACL(value: Double => INamedACL): Self = StObject.set(x, "GetNamedACL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedACLAdmin(value: Double => INamedACLAdmin): Self = StObject.set(x, "GetNamedACLAdmin", js.Any.fromFunction1(value))
+    inline def setGetNamedACLAdmin(value: Double => INamedACLAdmin): Self = StObject.set(x, "GetNamedACLAdmin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedACLIDByAlias(value: String => Double): Self = StObject.set(x, "GetNamedACLIDByAlias", js.Any.fromFunction1(value))
+    inline def setGetNamedACLIDByAlias(value: String => Double): Self = StObject.set(x, "GetNamedACLIDByAlias", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedACLIDByGUID(value: String => Double): Self = StObject.set(x, "GetNamedACLIDByGUID", js.Any.fromFunction1(value))
+    inline def setGetNamedACLIDByGUID(value: String => Double): Self = StObject.set(x, "GetNamedACLIDByGUID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedACLWithRefresh(value: (Double, Boolean) => INamedACL): Self = StObject.set(x, "GetNamedACLWithRefresh", js.Any.fromFunction2(value))
+    inline def setGetNamedACLWithRefresh(value: (Double, Boolean) => INamedACL): Self = StObject.set(x, "GetNamedACLWithRefresh", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetNamedACLs(value: () => INamedACLs): Self = StObject.set(x, "GetNamedACLs", js.Any.fromFunction0(value))
+    inline def setGetNamedACLs(value: () => INamedACLs): Self = StObject.set(x, "GetNamedACLs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNamedACLsByTypeAdmin(value: MFNamedACLType => INamedACLsAdmin): Self = StObject.set(x, "GetNamedACLsByTypeAdmin", js.Any.fromFunction1(value))
+    inline def setGetNamedACLsByTypeAdmin(value: MFNamedACLType => INamedACLsAdmin): Self = StObject.set(x, "GetNamedACLsByTypeAdmin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNamedACLsWithRefresh(value: Boolean => INamedACLs): Self = StObject.set(x, "GetNamedACLsWithRefresh", js.Any.fromFunction1(value))
+    inline def setGetNamedACLsWithRefresh(value: Boolean => INamedACLs): Self = StObject.set(x, "GetNamedACLsWithRefresh", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsNamedACLUsedInAutomaticPermissionsAdmin(value: Double => Boolean): Self = StObject.set(x, "IsNamedACLUsedInAutomaticPermissionsAdmin", js.Any.fromFunction1(value))
+    inline def setIsNamedACLUsedInAutomaticPermissionsAdmin(value: Double => Boolean): Self = StObject.set(x, "IsNamedACLUsedInAutomaticPermissionsAdmin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveNamedACLWithPropagationAdmin(value: (Double, Boolean) => Unit): Self = StObject.set(x, "RemoveNamedACLWithPropagationAdmin", js.Any.fromFunction2(value))
+    inline def setRemoveNamedACLWithPropagationAdmin(value: (Double, Boolean) => Unit): Self = StObject.set(x, "RemoveNamedACLWithPropagationAdmin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdateNamedACLAdmin(value: INamedACLAdmin => Unit): Self = StObject.set(x, "UpdateNamedACLAdmin", js.Any.fromFunction1(value))
+    inline def setUpdateNamedACLAdmin(value: INamedACLAdmin => Unit): Self = StObject.set(x, "UpdateNamedACLAdmin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateNamedACLWithPropagationAdmin(value: (INamedACLAdmin, Boolean, Boolean) => Unit): Self = StObject.set(x, "UpdateNamedACLWithPropagationAdmin", js.Any.fromFunction3(value))
+    inline def setUpdateNamedACLWithPropagationAdmin(value: (INamedACLAdmin, Boolean, Boolean) => Unit): Self = StObject.set(x, "UpdateNamedACLWithPropagationAdmin", js.Any.fromFunction3(value))
   }
 }

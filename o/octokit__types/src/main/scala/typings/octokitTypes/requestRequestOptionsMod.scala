@@ -36,38 +36,28 @@ object requestRequestOptionsMod {
   }
   object RequestRequestOptions {
     
-    @scala.inline
-    def apply(): RequestRequestOptions = {
+    inline def apply(): RequestRequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestRequestOptions]
     }
     
-    @scala.inline
-    implicit class RequestRequestOptionsMutableBuilder[Self <: RequestRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestRequestOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setFetch(value: Fetch): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: Fetch): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setSignal(value: Signal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: Signal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

@@ -37,8 +37,7 @@ object contextualIdentities {
   }
   object ContextualIdentity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: String,
       colorCode: String,
       cookieStoreId: String,
@@ -50,26 +49,19 @@ object contextualIdentities {
       __obj.asInstanceOf[ContextualIdentity]
     }
     
-    @scala.inline
-    implicit class ContextualIdentityMutableBuilder[Self <: ContextualIdentity] (val x: Self) extends AnyVal {
+    extension [Self <: ContextualIdentity](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorCode(value: String): Self = StObject.set(x, "colorCode", value.asInstanceOf[js.Any])
+      inline def setColorCode(value: String): Self = StObject.set(x, "colorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+      inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,23 +79,18 @@ object contextualIdentities {
   }
   object CreateDetails {
     
-    @scala.inline
-    def apply(color: String, icon: String, name: String): CreateDetails = {
+    inline def apply(color: String, icon: String, name: String): CreateDetails = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateDetails]
     }
     
-    @scala.inline
-    implicit class CreateDetailsMutableBuilder[Self <: CreateDetails] (val x: Self) extends AnyVal {
+    extension [Self <: CreateDetails](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,17 +101,14 @@ object contextualIdentities {
   }
   object OnCreatedChangeInfo {
     
-    @scala.inline
-    def apply(contextualIdentity: ContextualIdentity): OnCreatedChangeInfo = {
+    inline def apply(contextualIdentity: ContextualIdentity): OnCreatedChangeInfo = {
       val __obj = js.Dynamic.literal(contextualIdentity = contextualIdentity.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnCreatedChangeInfo]
     }
     
-    @scala.inline
-    implicit class OnCreatedChangeInfoMutableBuilder[Self <: OnCreatedChangeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: OnCreatedChangeInfo](x: Self) {
       
-      @scala.inline
-      def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
+      inline def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -135,17 +119,14 @@ object contextualIdentities {
   }
   object OnRemovedChangeInfo {
     
-    @scala.inline
-    def apply(contextualIdentity: ContextualIdentity): OnRemovedChangeInfo = {
+    inline def apply(contextualIdentity: ContextualIdentity): OnRemovedChangeInfo = {
       val __obj = js.Dynamic.literal(contextualIdentity = contextualIdentity.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnRemovedChangeInfo]
     }
     
-    @scala.inline
-    implicit class OnRemovedChangeInfoMutableBuilder[Self <: OnRemovedChangeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: OnRemovedChangeInfo](x: Self) {
       
-      @scala.inline
-      def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
+      inline def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,17 +137,14 @@ object contextualIdentities {
   }
   object OnUpdatedChangeInfo {
     
-    @scala.inline
-    def apply(contextualIdentity: ContextualIdentity): OnUpdatedChangeInfo = {
+    inline def apply(contextualIdentity: ContextualIdentity): OnUpdatedChangeInfo = {
       val __obj = js.Dynamic.literal(contextualIdentity = contextualIdentity.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnUpdatedChangeInfo]
     }
     
-    @scala.inline
-    implicit class OnUpdatedChangeInfoMutableBuilder[Self <: OnUpdatedChangeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: OnUpdatedChangeInfo](x: Self) {
       
-      @scala.inline
-      def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
+      inline def setContextualIdentity(value: ContextualIdentity): Self = StObject.set(x, "contextualIdentity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,20 +156,16 @@ object contextualIdentities {
   }
   object QueryDetails {
     
-    @scala.inline
-    def apply(): QueryDetails = {
+    inline def apply(): QueryDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryDetails]
     }
     
-    @scala.inline
-    implicit class QueryDetailsMutableBuilder[Self <: QueryDetails] (val x: Self) extends AnyVal {
+    extension [Self <: QueryDetails](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -209,32 +183,24 @@ object contextualIdentities {
   }
   object UpdateDetails {
     
-    @scala.inline
-    def apply(): UpdateDetails = {
+    inline def apply(): UpdateDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateDetails]
     }
     
-    @scala.inline
-    implicit class UpdateDetailsMutableBuilder[Self <: UpdateDetails] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateDetails](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

@@ -13,19 +13,15 @@ trait WirelessConnection extends StObject {
 }
 object WirelessConnection {
   
-  @scala.inline
-  def apply(): WirelessConnection = {
+  inline def apply(): WirelessConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WirelessConnection]
   }
   
-  @scala.inline
-  implicit class WirelessConnectionMutableBuilder[Self <: WirelessConnection] (val x: Self) extends AnyVal {
+  extension [Self <: WirelessConnection](x: Self) {
     
-    @scala.inline
-    def setIsWifiEnabled(value: Boolean): Self = StObject.set(x, "IsWifiEnabled", value.asInstanceOf[js.Any])
+    inline def setIsWifiEnabled(value: Boolean): Self = StObject.set(x, "IsWifiEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWifiEnabledUndefined: Self = StObject.set(x, "IsWifiEnabled", js.undefined)
+    inline def setIsWifiEnabledUndefined: Self = StObject.set(x, "IsWifiEnabled", js.undefined)
   }
 }

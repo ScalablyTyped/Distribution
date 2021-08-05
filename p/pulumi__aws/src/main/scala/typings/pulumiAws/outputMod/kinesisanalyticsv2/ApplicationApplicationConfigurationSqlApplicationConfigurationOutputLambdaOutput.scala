@@ -13,16 +13,13 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambda
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput {
   
-  @scala.inline
-  def apply(resourceArn: String): ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput = {
+  inline def apply(resourceArn: String): ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }
 }

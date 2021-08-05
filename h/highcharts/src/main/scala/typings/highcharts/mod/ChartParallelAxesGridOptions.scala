@@ -37,46 +37,33 @@ trait ChartParallelAxesGridOptions extends StObject {
 }
 object ChartParallelAxesGridOptions {
   
-  @scala.inline
-  def apply(): ChartParallelAxesGridOptions = {
+  inline def apply(): ChartParallelAxesGridOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartParallelAxesGridOptions]
   }
   
-  @scala.inline
-  implicit class ChartParallelAxesGridOptionsMutableBuilder[Self <: ChartParallelAxesGridOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartParallelAxesGridOptions](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    @scala.inline
-    def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+    inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
+    inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
     
-    @scala.inline
-    def setColumns(value: js.Array[XAxisOptions]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[XAxisOptions]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: XAxisOptions*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: XAxisOptions*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

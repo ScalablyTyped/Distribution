@@ -13,19 +13,15 @@ trait Files extends StObject {
 }
 object Files {
   
-  @scala.inline
-  def apply(files: js.Any, xhr: XMLHttpRequest): Files = {
+  inline def apply(files: js.Any, xhr: XMLHttpRequest): Files = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Files]
   }
   
-  @scala.inline
-  implicit class FilesMutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
+  extension [Self <: Files](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
   }
 }

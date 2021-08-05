@@ -11,16 +11,13 @@ trait PickImplnotFound extends StObject {
 }
 object PickImplnotFound {
   
-  @scala.inline
-  def apply(notFound: String): PickImplnotFound = {
+  inline def apply(notFound: String): PickImplnotFound = {
     val __obj = js.Dynamic.literal(notFound = notFound.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplnotFound]
   }
   
-  @scala.inline
-  implicit class PickImplnotFoundMutableBuilder[Self <: PickImplnotFound] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplnotFound](x: Self) {
     
-    @scala.inline
-    def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
   }
 }

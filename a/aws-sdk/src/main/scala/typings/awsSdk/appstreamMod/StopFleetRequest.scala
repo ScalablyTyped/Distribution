@@ -13,16 +13,13 @@ trait StopFleetRequest extends StObject {
 }
 object StopFleetRequest {
   
-  @scala.inline
-  def apply(Name: String): StopFleetRequest = {
+  inline def apply(Name: String): StopFleetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopFleetRequest]
   }
   
-  @scala.inline
-  implicit class StopFleetRequestMutableBuilder[Self <: StopFleetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopFleetRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

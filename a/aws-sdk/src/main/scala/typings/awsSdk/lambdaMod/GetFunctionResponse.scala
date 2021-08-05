@@ -28,37 +28,27 @@ trait GetFunctionResponse extends StObject {
 }
 object GetFunctionResponse {
   
-  @scala.inline
-  def apply(): GetFunctionResponse = {
+  inline def apply(): GetFunctionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFunctionResponse]
   }
   
-  @scala.inline
-  implicit class GetFunctionResponseMutableBuilder[Self <: GetFunctionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionResponse](x: Self) {
     
-    @scala.inline
-    def setCode(value: FunctionCodeLocation): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: FunctionCodeLocation): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setConcurrency(value: Concurrency): Self = StObject.set(x, "Concurrency", value.asInstanceOf[js.Any])
+    inline def setConcurrency(value: Concurrency): Self = StObject.set(x, "Concurrency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrencyUndefined: Self = StObject.set(x, "Concurrency", js.undefined)
+    inline def setConcurrencyUndefined: Self = StObject.set(x, "Concurrency", js.undefined)
     
-    @scala.inline
-    def setConfiguration(value: FunctionConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: FunctionConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

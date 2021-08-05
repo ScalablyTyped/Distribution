@@ -12,19 +12,15 @@ trait EnergySpent extends StObject {
 }
 object EnergySpent {
   
-  @scala.inline
-  def apply(amount: Double, energySpent: Double): EnergySpent = {
+  inline def apply(amount: Double, energySpent: Double): EnergySpent = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], energySpent = energySpent.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergySpent]
   }
   
-  @scala.inline
-  implicit class EnergySpentMutableBuilder[Self <: EnergySpent] (val x: Self) extends AnyVal {
+  extension [Self <: EnergySpent](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnergySpent(value: Double): Self = StObject.set(x, "energySpent", value.asInstanceOf[js.Any])
+    inline def setEnergySpent(value: Double): Self = StObject.set(x, "energySpent", value.asInstanceOf[js.Any])
   }
 }

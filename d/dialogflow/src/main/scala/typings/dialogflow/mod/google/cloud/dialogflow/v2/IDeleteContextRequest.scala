@@ -12,22 +12,17 @@ trait IDeleteContextRequest extends StObject {
 }
 object IDeleteContextRequest {
   
-  @scala.inline
-  def apply(): IDeleteContextRequest = {
+  inline def apply(): IDeleteContextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDeleteContextRequest]
   }
   
-  @scala.inline
-  implicit class IDeleteContextRequestMutableBuilder[Self <: IDeleteContextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IDeleteContextRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

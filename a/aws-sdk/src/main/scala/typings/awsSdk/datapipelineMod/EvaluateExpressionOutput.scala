@@ -13,16 +13,13 @@ trait EvaluateExpressionOutput extends StObject {
 }
 object EvaluateExpressionOutput {
   
-  @scala.inline
-  def apply(evaluatedExpression: longString): EvaluateExpressionOutput = {
+  inline def apply(evaluatedExpression: longString): EvaluateExpressionOutput = {
     val __obj = js.Dynamic.literal(evaluatedExpression = evaluatedExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvaluateExpressionOutput]
   }
   
-  @scala.inline
-  implicit class EvaluateExpressionOutputMutableBuilder[Self <: EvaluateExpressionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: EvaluateExpressionOutput](x: Self) {
     
-    @scala.inline
-    def setEvaluatedExpression(value: longString): Self = StObject.set(x, "evaluatedExpression", value.asInstanceOf[js.Any])
+    inline def setEvaluatedExpression(value: longString): Self = StObject.set(x, "evaluatedExpression", value.asInstanceOf[js.Any])
   }
 }

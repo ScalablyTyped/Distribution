@@ -15,7 +15,6 @@ object signatureInputConstantsMod {
     @JSImport("wix-ui-core/dist/src/components/signature-input/constants", "SIGNATURE_INPUT_METADATA.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
 }

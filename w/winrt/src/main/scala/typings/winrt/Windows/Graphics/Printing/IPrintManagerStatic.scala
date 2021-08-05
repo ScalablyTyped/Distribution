@@ -13,19 +13,15 @@ trait IPrintManagerStatic extends StObject {
 }
 object IPrintManagerStatic {
   
-  @scala.inline
-  def apply(getForCurrentView: () => PrintManager, showPrintUIAsync: () => IAsyncOperation[Boolean]): IPrintManagerStatic = {
+  inline def apply(getForCurrentView: () => PrintManager, showPrintUIAsync: () => IAsyncOperation[Boolean]): IPrintManagerStatic = {
     val __obj = js.Dynamic.literal(getForCurrentView = js.Any.fromFunction0(getForCurrentView), showPrintUIAsync = js.Any.fromFunction0(showPrintUIAsync))
     __obj.asInstanceOf[IPrintManagerStatic]
   }
   
-  @scala.inline
-  implicit class IPrintManagerStaticMutableBuilder[Self <: IPrintManagerStatic] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintManagerStatic](x: Self) {
     
-    @scala.inline
-    def setGetForCurrentView(value: () => PrintManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
+    inline def setGetForCurrentView(value: () => PrintManager): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowPrintUIAsync(value: () => IAsyncOperation[Boolean]): Self = StObject.set(x, "showPrintUIAsync", js.Any.fromFunction0(value))
+    inline def setShowPrintUIAsync(value: () => IAsyncOperation[Boolean]): Self = StObject.set(x, "showPrintUIAsync", js.Any.fromFunction0(value))
   }
 }

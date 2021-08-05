@@ -12,22 +12,17 @@ trait `1`[D /* <: js.Object */] extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): `1`[D] = {
+  inline def apply[D /* <: js.Object */](): `1`[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`1`[D]]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`[?], D /* <: js.Object */] (val x: Self & `1`[D]) extends AnyVal {
+  extension [Self <: `1`[?], D /* <: js.Object */](x: Self & `1`[D]) {
     
-    @scala.inline
-    def setAccessor(value: typings.reactTable.mod.Accessor[D] | IdType[D]): Self = StObject.set(x, "accessor", value.asInstanceOf[js.Any])
+    inline def setAccessor(value: typings.reactTable.mod.Accessor[D] | IdType[D]): Self = StObject.set(x, "accessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessorFunction3(value: (D, /* index */ Double, /* sub */ Data[D]) => CellValue[js.Any]): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
+    inline def setAccessorFunction3(value: (D, /* index */ Double, /* sub */ Data[D]) => CellValue[js.Any]): Self = StObject.set(x, "accessor", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
+    inline def setAccessorUndefined: Self = StObject.set(x, "accessor", js.undefined)
   }
 }

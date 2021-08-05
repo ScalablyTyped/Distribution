@@ -12,17 +12,14 @@ object anon {
   }
   object ToSqlString {
     
-    @scala.inline
-    def apply(toSqlString: () => String): ToSqlString = {
+    inline def apply(toSqlString: () => String): ToSqlString = {
       val __obj = js.Dynamic.literal(toSqlString = js.Any.fromFunction0(toSqlString))
       __obj.asInstanceOf[ToSqlString]
     }
     
-    @scala.inline
-    implicit class ToSqlStringMutableBuilder[Self <: ToSqlString] (val x: Self) extends AnyVal {
+    extension [Self <: ToSqlString](x: Self) {
       
-      @scala.inline
-      def setToSqlString(value: () => String): Self = StObject.set(x, "toSqlString", js.Any.fromFunction0(value))
+      inline def setToSqlString(value: () => String): Self = StObject.set(x, "toSqlString", js.Any.fromFunction0(value))
     }
   }
 }

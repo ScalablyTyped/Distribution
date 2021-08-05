@@ -22,8 +22,7 @@ trait utils extends StObject {
 }
 object utils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     formatDateLabel: Double => String,
     getDeviationValues: (Double, Double, Double) => js.Array[Double]
   ): utils = {
@@ -31,13 +30,10 @@ object utils {
     __obj.asInstanceOf[utils]
   }
   
-  @scala.inline
-  implicit class utilsMutableBuilder[Self <: utils] (val x: Self) extends AnyVal {
+  extension [Self <: utils](x: Self) {
     
-    @scala.inline
-    def setFormatDateLabel(value: Double => String): Self = StObject.set(x, "formatDateLabel", js.Any.fromFunction1(value))
+    inline def setFormatDateLabel(value: Double => String): Self = StObject.set(x, "formatDateLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDeviationValues(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "getDeviationValues", js.Any.fromFunction3(value))
+    inline def setGetDeviationValues(value: (Double, Double, Double) => js.Array[Double]): Self = StObject.set(x, "getDeviationValues", js.Any.fromFunction3(value))
   }
 }

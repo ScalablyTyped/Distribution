@@ -53,92 +53,64 @@ object collapseCollapseMod extends Shortcut {
   }
   object CollapseProps {
     
-    @scala.inline
-    def apply(): CollapseProps = {
+    inline def apply(): CollapseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollapseProps]
     }
     
-    @scala.inline
-    implicit class CollapsePropsMutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
+    extension [Self <: CollapseProps](x: Self) {
       
-      @scala.inline
-      def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
+      inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
+      inline def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
       
-      @scala.inline
-      def setActiveKey(value: (js.Array[String | Double]) | String | Double): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+      inline def setActiveKey(value: (js.Array[String | Double]) | String | Double): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
+      inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
       
-      @scala.inline
-      def setActiveKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "activeKey", js.Array(value :_*))
+      inline def setActiveKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "activeKey", js.Array(value :_*))
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultActiveKey(value: (js.Array[String | Double]) | String | Double): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
+      inline def setDefaultActiveKey(value: (js.Array[String | Double]) | String | Double): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
+      inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
       
-      @scala.inline
-      def setDefaultActiveKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "defaultActiveKey", js.Array(value :_*))
+      inline def setDefaultActiveKeyVarargs(value: (String | Double)*): Self = StObject.set(x, "defaultActiveKey", js.Array(value :_*))
       
-      @scala.inline
-      def setDestroyInactivePanel(value: Boolean): Self = StObject.set(x, "destroyInactivePanel", value.asInstanceOf[js.Any])
+      inline def setDestroyInactivePanel(value: Boolean): Self = StObject.set(x, "destroyInactivePanel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyInactivePanelUndefined: Self = StObject.set(x, "destroyInactivePanel", js.undefined)
+      inline def setDestroyInactivePanelUndefined: Self = StObject.set(x, "destroyInactivePanel", js.undefined)
       
-      @scala.inline
-      def setExpandIcon(value: /* panelProps */ PanelProps => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
+      inline def setExpandIcon(value: /* panelProps */ PanelProps => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExpandIconPosition(value: ExpandIconPosition): Self = StObject.set(x, "expandIconPosition", value.asInstanceOf[js.Any])
+      inline def setExpandIconPosition(value: ExpandIconPosition): Self = StObject.set(x, "expandIconPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIconPositionUndefined: Self = StObject.set(x, "expandIconPosition", js.undefined)
+      inline def setExpandIconPositionUndefined: Self = StObject.set(x, "expandIconPosition", js.undefined)
       
-      @scala.inline
-      def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+      inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
       
-      @scala.inline
-      def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
+      inline def setGhost(value: Boolean): Self = StObject.set(x, "ghost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
+      inline def setGhostUndefined: Self = StObject.set(x, "ghost", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* key */ String | js.Array[String] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* key */ String | js.Array[String] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -169,62 +141,44 @@ object collapseCollapseMod extends Shortcut {
   }
   object PanelProps {
     
-    @scala.inline
-    def apply(): PanelProps = {
+    inline def apply(): PanelProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PanelProps]
     }
     
-    @scala.inline
-    implicit class PanelPropsMutableBuilder[Self <: PanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: PanelProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+      inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      @scala.inline
-      def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
+      inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
+      inline def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

@@ -27,25 +27,19 @@ trait DefaultTreeCommentNode
 }
 object DefaultTreeCommentNode {
   
-  @scala.inline
-  def apply(data: String, parentNode: DefaultTreeParentNode): DefaultTreeCommentNode = {
+  inline def apply(data: String, parentNode: DefaultTreeParentNode): DefaultTreeCommentNode = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], nodeName = "#comment", parentNode = parentNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultTreeCommentNode]
   }
   
-  @scala.inline
-  implicit class DefaultTreeCommentNodeMutableBuilder[Self <: DefaultTreeCommentNode] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultTreeCommentNode](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeName(value: Numbersigncomment): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: Numbersigncomment): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+    inline def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+    inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ class RevocationValues ()
   extends typings.xadesjs.xmlMod.RevocationValues
 object RevocationValues {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.RevocationValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("RevocationValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.RevocationValues]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.RevocationValues] = ^.asInstanceOf[js.Dynamic].selectDynamic("RevocationValues").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.RevocationValues]]
 }

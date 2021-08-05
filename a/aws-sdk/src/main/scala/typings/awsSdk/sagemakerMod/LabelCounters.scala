@@ -33,43 +33,31 @@ trait LabelCounters extends StObject {
 }
 object LabelCounters {
   
-  @scala.inline
-  def apply(): LabelCounters = {
+  inline def apply(): LabelCounters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelCounters]
   }
   
-  @scala.inline
-  implicit class LabelCountersMutableBuilder[Self <: LabelCounters] (val x: Self) extends AnyVal {
+  extension [Self <: LabelCounters](x: Self) {
     
-    @scala.inline
-    def setFailedNonRetryableError(value: LabelCounter): Self = StObject.set(x, "FailedNonRetryableError", value.asInstanceOf[js.Any])
+    inline def setFailedNonRetryableError(value: LabelCounter): Self = StObject.set(x, "FailedNonRetryableError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedNonRetryableErrorUndefined: Self = StObject.set(x, "FailedNonRetryableError", js.undefined)
+    inline def setFailedNonRetryableErrorUndefined: Self = StObject.set(x, "FailedNonRetryableError", js.undefined)
     
-    @scala.inline
-    def setHumanLabeled(value: LabelCounter): Self = StObject.set(x, "HumanLabeled", value.asInstanceOf[js.Any])
+    inline def setHumanLabeled(value: LabelCounter): Self = StObject.set(x, "HumanLabeled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLabeledUndefined: Self = StObject.set(x, "HumanLabeled", js.undefined)
+    inline def setHumanLabeledUndefined: Self = StObject.set(x, "HumanLabeled", js.undefined)
     
-    @scala.inline
-    def setMachineLabeled(value: LabelCounter): Self = StObject.set(x, "MachineLabeled", value.asInstanceOf[js.Any])
+    inline def setMachineLabeled(value: LabelCounter): Self = StObject.set(x, "MachineLabeled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineLabeledUndefined: Self = StObject.set(x, "MachineLabeled", js.undefined)
+    inline def setMachineLabeledUndefined: Self = StObject.set(x, "MachineLabeled", js.undefined)
     
-    @scala.inline
-    def setTotalLabeled(value: LabelCounter): Self = StObject.set(x, "TotalLabeled", value.asInstanceOf[js.Any])
+    inline def setTotalLabeled(value: LabelCounter): Self = StObject.set(x, "TotalLabeled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalLabeledUndefined: Self = StObject.set(x, "TotalLabeled", js.undefined)
+    inline def setTotalLabeledUndefined: Self = StObject.set(x, "TotalLabeled", js.undefined)
     
-    @scala.inline
-    def setUnlabeled(value: LabelCounter): Self = StObject.set(x, "Unlabeled", value.asInstanceOf[js.Any])
+    inline def setUnlabeled(value: LabelCounter): Self = StObject.set(x, "Unlabeled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlabeledUndefined: Self = StObject.set(x, "Unlabeled", js.undefined)
+    inline def setUnlabeledUndefined: Self = StObject.set(x, "Unlabeled", js.undefined)
   }
 }

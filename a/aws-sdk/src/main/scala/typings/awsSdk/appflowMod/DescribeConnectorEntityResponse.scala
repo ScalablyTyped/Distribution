@@ -13,19 +13,15 @@ trait DescribeConnectorEntityResponse extends StObject {
 }
 object DescribeConnectorEntityResponse {
   
-  @scala.inline
-  def apply(connectorEntityFields: ConnectorEntityFieldList): DescribeConnectorEntityResponse = {
+  inline def apply(connectorEntityFields: ConnectorEntityFieldList): DescribeConnectorEntityResponse = {
     val __obj = js.Dynamic.literal(connectorEntityFields = connectorEntityFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeConnectorEntityResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConnectorEntityResponseMutableBuilder[Self <: DescribeConnectorEntityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConnectorEntityResponse](x: Self) {
     
-    @scala.inline
-    def setConnectorEntityFields(value: ConnectorEntityFieldList): Self = StObject.set(x, "connectorEntityFields", value.asInstanceOf[js.Any])
+    inline def setConnectorEntityFields(value: ConnectorEntityFieldList): Self = StObject.set(x, "connectorEntityFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorEntityFieldsVarargs(value: ConnectorEntityField*): Self = StObject.set(x, "connectorEntityFields", js.Array(value :_*))
+    inline def setConnectorEntityFieldsVarargs(value: ConnectorEntityField*): Self = StObject.set(x, "connectorEntityFields", js.Array(value :_*))
   }
 }

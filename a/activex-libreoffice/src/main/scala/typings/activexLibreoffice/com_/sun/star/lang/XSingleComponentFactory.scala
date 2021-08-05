@@ -33,8 +33,7 @@ trait XSingleComponentFactory
 }
 object XSingleComponentFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createInstanceWithArgumentsAndContext: (SeqEquiv[js.Any], XComponentContext) => XInterface,
     createInstanceWithContext: XComponentContext => XInterface,
@@ -45,13 +44,10 @@ object XSingleComponentFactory {
     __obj.asInstanceOf[XSingleComponentFactory]
   }
   
-  @scala.inline
-  implicit class XSingleComponentFactoryMutableBuilder[Self <: XSingleComponentFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XSingleComponentFactory](x: Self) {
     
-    @scala.inline
-    def setCreateInstanceWithArgumentsAndContext(value: (SeqEquiv[js.Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction2(value))
+    inline def setCreateInstanceWithArgumentsAndContext(value: (SeqEquiv[js.Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateInstanceWithContext(value: XComponentContext => XInterface): Self = StObject.set(x, "createInstanceWithContext", js.Any.fromFunction1(value))
+    inline def setCreateInstanceWithContext(value: XComponentContext => XInterface): Self = StObject.set(x, "createInstanceWithContext", js.Any.fromFunction1(value))
   }
 }

@@ -44,37 +44,27 @@ trait PlusNativeObjAnimationViewStyles extends StObject {
 }
 object PlusNativeObjAnimationViewStyles {
   
-  @scala.inline
-  def apply(): PlusNativeObjAnimationViewStyles = {
+  inline def apply(): PlusNativeObjAnimationViewStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjAnimationViewStyles]
   }
   
-  @scala.inline
-  implicit class PlusNativeObjAnimationViewStylesMutableBuilder[Self <: PlusNativeObjAnimationViewStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeObjAnimationViewStyles](x: Self) {
     
-    @scala.inline
-    def setBitmap(value: PlusNativeObjBitmap): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
+    inline def setBitmap(value: PlusNativeObjBitmap): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitmapUndefined: Self = StObject.set(x, "bitmap", js.undefined)
+    inline def setBitmapUndefined: Self = StObject.set(x, "bitmap", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRect(value: PlusNativeObjRect): Self = StObject.set(x, "textRect", value.asInstanceOf[js.Any])
+    inline def setTextRect(value: PlusNativeObjRect): Self = StObject.set(x, "textRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRectUndefined: Self = StObject.set(x, "textRect", js.undefined)
+    inline def setTextRectUndefined: Self = StObject.set(x, "textRect", js.undefined)
     
-    @scala.inline
-    def setTextStyles(value: PlusNativeObjTextStyles): Self = StObject.set(x, "textStyles", value.asInstanceOf[js.Any])
+    inline def setTextStyles(value: PlusNativeObjTextStyles): Self = StObject.set(x, "textStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStylesUndefined: Self = StObject.set(x, "textStyles", js.undefined)
+    inline def setTextStylesUndefined: Self = StObject.set(x, "textStyles", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

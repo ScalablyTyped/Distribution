@@ -23,31 +23,23 @@ trait MessagePartBody extends StObject {
 }
 object MessagePartBody {
   
-  @scala.inline
-  def apply(): MessagePartBody = {
+  inline def apply(): MessagePartBody = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessagePartBody]
   }
   
-  @scala.inline
-  implicit class MessagePartBodyMutableBuilder[Self <: MessagePartBody] (val x: Self) extends AnyVal {
+  extension [Self <: MessagePartBody](x: Self) {
     
-    @scala.inline
-    def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
+    inline def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
+    inline def setAttachmentIdUndefined: Self = StObject.set(x, "attachmentId", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

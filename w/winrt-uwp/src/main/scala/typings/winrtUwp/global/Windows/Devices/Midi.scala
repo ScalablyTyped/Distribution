@@ -146,16 +146,14 @@ object Midi {
       * @return The asynchronous operation. Upon completion, IAsyncOperation.GetResults returns a MidiInPort object.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiInPort] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiInPort]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiInPort] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiInPort]]
     
     /**
       * Gets a query string that can be used to enumerate all MidiInPort objects on the system.
       * @return The query string used to enumerate the MidiInPort objects on the system.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
   
   /** Provides data for the MessageReceived event. */
@@ -336,16 +334,14 @@ object Midi {
       * @return The asynchronous operation. Upon completion, IAsyncOperation.GetResults returns a MidiOutPort object.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[IMidiOutPort] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IMidiOutPort]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[IMidiOutPort] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IMidiOutPort]]
     
     /**
       * Gets a query string that can be used to enumerate all MidiOutPort objects on the system.
       * @return The query string used to enumerate the MidiOutPort objects on the system.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
   
   /** Represents a MIDI message that specifies a pitch bend change. */
@@ -603,16 +599,14 @@ object Midi {
       * @return An instance of the Windows MIDI synthesizer.
       */
     /* static member */
-    @scala.inline
-    def createAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiSynthesizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiSynthesizer]]
+    inline def createAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiSynthesizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiSynthesizer]]
     /**
       * Creates a new instance of the Microsoft MIDI synthesizer with a specified audio output device.
       * @param audioDevice The audio output device.
       * @return An instance of the Microsoft MIDI synthesizer.
       */
     /* static member */
-    @scala.inline
-    def createAsync(audioDevice: DeviceInformation): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiSynthesizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(audioDevice.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiSynthesizer]]
+    inline def createAsync(audioDevice: DeviceInformation): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiSynthesizer] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAsync")(audioDevice.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Midi.MidiSynthesizer]]
     
     /**
       * Determines whether a particular device is an instance of the Microsoft MIDI synthesizer. When all MIDI out ports on the system are enumerated, this method can be used to identify which of them is the Microsoft MIDI synthesizer.
@@ -620,8 +614,7 @@ object Midi {
       * @return True if the device is the Microsoft MIDI synthesizer; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def isSynthesizer(midiDevice: DeviceInformation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSynthesizer")(midiDevice.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSynthesizer(midiDevice: DeviceInformation): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSynthesizer")(midiDevice.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   /** Represents a MIDI message that specifies a system exclusive message. */

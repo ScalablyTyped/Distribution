@@ -17,19 +17,15 @@ trait SchemaNestingLevel extends StObject {
 }
 object SchemaNestingLevel {
   
-  @scala.inline
-  def apply(): SchemaNestingLevel = {
+  inline def apply(): SchemaNestingLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNestingLevel]
   }
   
-  @scala.inline
-  implicit class SchemaNestingLevelMutableBuilder[Self <: SchemaNestingLevel] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNestingLevel](x: Self) {
     
-    @scala.inline
-    def setBulletStyle(value: SchemaTextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
+    inline def setBulletStyle(value: SchemaTextStyle): Self = StObject.set(x, "bulletStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
+    inline def setBulletStyleUndefined: Self = StObject.set(x, "bulletStyle", js.undefined)
   }
 }

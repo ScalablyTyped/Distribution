@@ -16,40 +16,29 @@ trait SpreadsheetSheetRow extends StObject {
 }
 object SpreadsheetSheetRow {
   
-  @scala.inline
-  def apply(): SpreadsheetSheetRow = {
+  inline def apply(): SpreadsheetSheetRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpreadsheetSheetRow]
   }
   
-  @scala.inline
-  implicit class SpreadsheetSheetRowMutableBuilder[Self <: SpreadsheetSheetRow] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetSheetRow](x: Self) {
     
-    @scala.inline
-    def setCells(value: js.Array[SpreadsheetSheetRowCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[SpreadsheetSheetRowCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+    inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    @scala.inline
-    def setCellsVarargs(value: SpreadsheetSheetRowCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: SpreadsheetSheetRowCell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -16,17 +16,14 @@ object TypeCheck {
   }
   object Options {
     
-    @scala.inline
-    def apply(customTypes: CustomType): Options = {
+    inline def apply(customTypes: CustomType): Options = {
       val __obj = js.Dynamic.literal(customTypes = customTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCustomTypes(value: CustomType): Self = StObject.set(x, "customTypes", value.asInstanceOf[js.Any])
+      inline def setCustomTypes(value: CustomType): Self = StObject.set(x, "customTypes", value.asInstanceOf[js.Any])
     }
   }
   

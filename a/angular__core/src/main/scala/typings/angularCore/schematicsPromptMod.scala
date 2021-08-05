@@ -10,11 +10,9 @@ object schematicsPromptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInquirer(): Inquirer = ^.asInstanceOf[js.Dynamic].applyDynamic("getInquirer")().asInstanceOf[Inquirer]
+  inline def getInquirer(): Inquirer = ^.asInstanceOf[js.Dynamic].applyDynamic("getInquirer")().asInstanceOf[Inquirer]
   
-  @scala.inline
-  def supportsPrompt(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsPrompt")().asInstanceOf[Boolean]
+  inline def supportsPrompt(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsPrompt")().asInstanceOf[Boolean]
   
   @js.native
   trait Inquirer

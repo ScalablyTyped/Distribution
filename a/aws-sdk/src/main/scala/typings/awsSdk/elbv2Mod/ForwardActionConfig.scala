@@ -18,28 +18,21 @@ trait ForwardActionConfig extends StObject {
 }
 object ForwardActionConfig {
   
-  @scala.inline
-  def apply(): ForwardActionConfig = {
+  inline def apply(): ForwardActionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForwardActionConfig]
   }
   
-  @scala.inline
-  implicit class ForwardActionConfigMutableBuilder[Self <: ForwardActionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardActionConfig](x: Self) {
     
-    @scala.inline
-    def setTargetGroupStickinessConfig(value: TargetGroupStickinessConfig): Self = StObject.set(x, "TargetGroupStickinessConfig", value.asInstanceOf[js.Any])
+    inline def setTargetGroupStickinessConfig(value: TargetGroupStickinessConfig): Self = StObject.set(x, "TargetGroupStickinessConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupStickinessConfigUndefined: Self = StObject.set(x, "TargetGroupStickinessConfig", js.undefined)
+    inline def setTargetGroupStickinessConfigUndefined: Self = StObject.set(x, "TargetGroupStickinessConfig", js.undefined)
     
-    @scala.inline
-    def setTargetGroups(value: TargetGroupList): Self = StObject.set(x, "TargetGroups", value.asInstanceOf[js.Any])
+    inline def setTargetGroups(value: TargetGroupList): Self = StObject.set(x, "TargetGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupsUndefined: Self = StObject.set(x, "TargetGroups", js.undefined)
+    inline def setTargetGroupsUndefined: Self = StObject.set(x, "TargetGroups", js.undefined)
     
-    @scala.inline
-    def setTargetGroupsVarargs(value: TargetGroupTuple*): Self = StObject.set(x, "TargetGroups", js.Array(value :_*))
+    inline def setTargetGroupsVarargs(value: TargetGroupTuple*): Self = StObject.set(x, "TargetGroups", js.Array(value :_*))
   }
 }

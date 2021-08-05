@@ -27,8 +27,7 @@ trait CompoundExpressionNode
 }
 object CompoundExpressionNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[
       SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
     ],
@@ -39,31 +38,24 @@ object CompoundExpressionNode {
     __obj.asInstanceOf[CompoundExpressionNode]
   }
   
-  @scala.inline
-  implicit class CompoundExpressionNodeMutableBuilder[Self <: CompoundExpressionNode] (val x: Self) extends AnyVal {
+  extension [Self <: CompoundExpressionNode](x: Self) {
     
-    @scala.inline
-    def setChildren(
+    inline def setChildren(
       value: js.Array[
           SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
         ]
     ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(
+    inline def setChildrenVarargs(
       value: (SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol)*
     ): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifiers(value: js.Array[String]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
+    inline def setIdentifiers(value: js.Array[String]): Self = StObject.set(x, "identifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifiersUndefined: Self = StObject.set(x, "identifiers", js.undefined)
+    inline def setIdentifiersUndefined: Self = StObject.set(x, "identifiers", js.undefined)
     
-    @scala.inline
-    def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
+    inline def setIdentifiersVarargs(value: String*): Self = StObject.set(x, "identifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `8`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `8`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

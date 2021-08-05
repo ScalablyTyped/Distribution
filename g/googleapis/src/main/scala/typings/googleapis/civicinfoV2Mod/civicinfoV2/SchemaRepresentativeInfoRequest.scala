@@ -14,19 +14,15 @@ trait SchemaRepresentativeInfoRequest extends StObject {
 }
 object SchemaRepresentativeInfoRequest {
   
-  @scala.inline
-  def apply(): SchemaRepresentativeInfoRequest = {
+  inline def apply(): SchemaRepresentativeInfoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRepresentativeInfoRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRepresentativeInfoRequestMutableBuilder[Self <: SchemaRepresentativeInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRepresentativeInfoRequest](x: Self) {
     
-    @scala.inline
-    def setContextParams(value: SchemaContextParams): Self = StObject.set(x, "contextParams", value.asInstanceOf[js.Any])
+    inline def setContextParams(value: SchemaContextParams): Self = StObject.set(x, "contextParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextParamsUndefined: Self = StObject.set(x, "contextParams", js.undefined)
+    inline def setContextParamsUndefined: Self = StObject.set(x, "contextParams", js.undefined)
   }
 }

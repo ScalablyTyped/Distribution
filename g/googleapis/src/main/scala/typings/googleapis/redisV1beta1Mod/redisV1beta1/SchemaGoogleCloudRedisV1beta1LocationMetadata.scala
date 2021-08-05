@@ -23,19 +23,15 @@ trait SchemaGoogleCloudRedisV1beta1LocationMetadata extends StObject {
 }
 object SchemaGoogleCloudRedisV1beta1LocationMetadata {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudRedisV1beta1LocationMetadata = {
+  inline def apply(): SchemaGoogleCloudRedisV1beta1LocationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudRedisV1beta1LocationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudRedisV1beta1LocationMetadataMutableBuilder[Self <: SchemaGoogleCloudRedisV1beta1LocationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudRedisV1beta1LocationMetadata](x: Self) {
     
-    @scala.inline
-    def setAvailableZones(value: StringDictionary[SchemaGoogleCloudRedisV1beta1ZoneMetadata]): Self = StObject.set(x, "availableZones", value.asInstanceOf[js.Any])
+    inline def setAvailableZones(value: StringDictionary[SchemaGoogleCloudRedisV1beta1ZoneMetadata]): Self = StObject.set(x, "availableZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)
+    inline def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)
   }
 }

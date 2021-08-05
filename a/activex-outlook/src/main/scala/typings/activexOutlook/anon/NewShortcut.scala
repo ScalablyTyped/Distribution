@@ -11,16 +11,13 @@ trait NewShortcut extends StObject {
 }
 object NewShortcut {
   
-  @scala.inline
-  def apply(NewShortcut: OutlookBarShortcut): NewShortcut = {
+  inline def apply(NewShortcut: OutlookBarShortcut): NewShortcut = {
     val __obj = js.Dynamic.literal(NewShortcut = NewShortcut.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewShortcut]
   }
   
-  @scala.inline
-  implicit class NewShortcutMutableBuilder[Self <: NewShortcut] (val x: Self) extends AnyVal {
+  extension [Self <: NewShortcut](x: Self) {
     
-    @scala.inline
-    def setNewShortcut(value: OutlookBarShortcut): Self = StObject.set(x, "NewShortcut", value.asInstanceOf[js.Any])
+    inline def setNewShortcut(value: OutlookBarShortcut): Self = StObject.set(x, "NewShortcut", value.asInstanceOf[js.Any])
   }
 }

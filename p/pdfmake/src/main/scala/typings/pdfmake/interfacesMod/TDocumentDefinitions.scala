@@ -54,133 +54,93 @@ trait TDocumentDefinitions extends StObject {
 }
 object TDocumentDefinitions {
   
-  @scala.inline
-  def apply(content: Content): TDocumentDefinitions = {
+  inline def apply(content: Content): TDocumentDefinitions = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[TDocumentDefinitions]
   }
   
-  @scala.inline
-  implicit class TDocumentDefinitionsMutableBuilder[Self <: TDocumentDefinitions] (val x: Self) extends AnyVal {
+  extension [Self <: TDocumentDefinitions](x: Self) {
     
-    @scala.inline
-    def setBackground(value: DynamicBackground | Content): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: DynamicBackground | Content): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundFunction2(value: (/* currentPage */ Double, /* pageSize */ ContextPageSize) => js.UndefOr[Content | Null]): Self = StObject.set(x, "background", js.Any.fromFunction2(value))
+    inline def setBackgroundFunction2(value: (/* currentPage */ Double, /* pageSize */ ContextPageSize) => js.UndefOr[Content | Null]): Self = StObject.set(x, "background", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+    inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+    inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
     
-    @scala.inline
-    def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultStyle(value: Style): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
+    inline def setDefaultStyle(value: Style): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
+    inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
     
-    @scala.inline
-    def setFooter(value: DynamicContent | Content): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: DynamicContent | Content): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterFunction3(
+    inline def setFooterFunction3(
       value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => js.UndefOr[Content | Null]
     ): Self = StObject.set(x, "footer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHeader(value: DynamicContent | Content): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: DynamicContent | Content): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderFunction3(
+    inline def setHeaderFunction3(
       value: (/* currentPage */ Double, /* pageCount */ Double, /* pageSize */ ContextPageSize) => js.UndefOr[Content | Null]
     ): Self = StObject.set(x, "header", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setImages(value: StringDictionary[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: StringDictionary[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setInfo(value: TDocumentInformation): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: TDocumentInformation): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
+    inline def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
+    inline def setOwnerPasswordUndefined: Self = StObject.set(x, "ownerPassword", js.undefined)
     
-    @scala.inline
-    def setPageBreakBefore(
+    inline def setPageBreakBefore(
       value: (/* currentNode */ Node, /* followingNodesOnPage */ js.Array[Node], /* nodesOnNextPage */ js.Array[Node], /* previousNodesOnPage */ js.Array[Node]) => Boolean
     ): Self = StObject.set(x, "pageBreakBefore", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
+    inline def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
     
-    @scala.inline
-    def setPageMargins(value: Margins): Self = StObject.set(x, "pageMargins", value.asInstanceOf[js.Any])
+    inline def setPageMargins(value: Margins): Self = StObject.set(x, "pageMargins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageMarginsUndefined: Self = StObject.set(x, "pageMargins", js.undefined)
+    inline def setPageMarginsUndefined: Self = StObject.set(x, "pageMargins", js.undefined)
     
-    @scala.inline
-    def setPageOrientation(value: PageOrientation): Self = StObject.set(x, "pageOrientation", value.asInstanceOf[js.Any])
+    inline def setPageOrientation(value: PageOrientation): Self = StObject.set(x, "pageOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageOrientationUndefined: Self = StObject.set(x, "pageOrientation", js.undefined)
+    inline def setPageOrientationUndefined: Self = StObject.set(x, "pageOrientation", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: DocumentPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: DocumentPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setStyles(value: StyleDictionary): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StyleDictionary): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setUserPassword(value: String): Self = StObject.set(x, "userPassword", value.asInstanceOf[js.Any])
+    inline def setUserPassword(value: String): Self = StObject.set(x, "userPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPasswordUndefined: Self = StObject.set(x, "userPassword", js.undefined)
+    inline def setUserPasswordUndefined: Self = StObject.set(x, "userPassword", js.undefined)
     
-    @scala.inline
-    def setVersion(value: PDFVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: PDFVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setWatermark(value: String | Watermark): Self = StObject.set(x, "watermark", value.asInstanceOf[js.Any])
+    inline def setWatermark(value: String | Watermark): Self = StObject.set(x, "watermark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatermarkUndefined: Self = StObject.set(x, "watermark", js.undefined)
+    inline def setWatermarkUndefined: Self = StObject.set(x, "watermark", js.undefined)
   }
 }

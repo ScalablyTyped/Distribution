@@ -17,31 +17,23 @@ trait TailLogEntriesResponse extends StObject {
 }
 object TailLogEntriesResponse {
   
-  @scala.inline
-  def apply(): TailLogEntriesResponse = {
+  inline def apply(): TailLogEntriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TailLogEntriesResponse]
   }
   
-  @scala.inline
-  implicit class TailLogEntriesResponseMutableBuilder[Self <: TailLogEntriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TailLogEntriesResponse](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[LogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[LogEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: LogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: LogEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setSuppressionInfo(value: js.Array[SuppressionInfo]): Self = StObject.set(x, "suppressionInfo", value.asInstanceOf[js.Any])
+    inline def setSuppressionInfo(value: js.Array[SuppressionInfo]): Self = StObject.set(x, "suppressionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressionInfoUndefined: Self = StObject.set(x, "suppressionInfo", js.undefined)
+    inline def setSuppressionInfoUndefined: Self = StObject.set(x, "suppressionInfo", js.undefined)
     
-    @scala.inline
-    def setSuppressionInfoVarargs(value: SuppressionInfo*): Self = StObject.set(x, "suppressionInfo", js.Array(value :_*))
+    inline def setSuppressionInfoVarargs(value: SuppressionInfo*): Self = StObject.set(x, "suppressionInfo", js.Array(value :_*))
   }
 }

@@ -109,145 +109,100 @@ object commonMod {
   }
   object GaxiosOptions {
     
-    @scala.inline
-    def apply(): GaxiosOptions = {
+    inline def apply(): GaxiosOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GaxiosOptions]
     }
     
-    @scala.inline
-    implicit class GaxiosOptionsMutableBuilder[Self <: GaxiosOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GaxiosOptions](x: Self) {
       
-      @scala.inline
-      def setAdapter(
+      inline def setAdapter(
         value: (GaxiosOptions, /* defaultAdapter */ js.Function1[GaxiosOptions, GaxiosPromise[js.Any]]) => GaxiosPromise[js.Any]
       ): Self = StObject.set(x, "adapter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
-      @scala.inline
-      def setAgent(value: Agent | (js.Function1[/* parsedUrl */ URL_, Agent])): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent | (js.Function1[/* parsedUrl */ URL_, Agent])): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentFunction1(value: /* parsedUrl */ URL_ => Agent): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
+      inline def setAgentFunction1(value: /* parsedUrl */ URL_ => Agent): Self = StObject.set(x, "agent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+      inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+      inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFollow(value: Double): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+      inline def setFollow(value: Double): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+      inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
+      inline def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
+      inline def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
       
-      @scala.inline
-      def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
+      inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
+      inline def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
       
-      @scala.inline
-      def setMethod(value: GET | HEAD | POST | DELETE | PUT | CONNECT | OPTIONS | TRACE | PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: GET | HEAD | POST | DELETE | PUT | CONNECT | OPTIONS | TRACE | PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+      inline def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
+      inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsSerializer(value: /* params */ StringDictionary[String | Double] => String): Self = StObject.set(x, "paramsSerializer", js.Any.fromFunction1(value))
+      inline def setParamsSerializer(value: /* params */ StringDictionary[String | Double] => String): Self = StObject.set(x, "paramsSerializer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParamsSerializerUndefined: Self = StObject.set(x, "paramsSerializer", js.undefined)
+      inline def setParamsSerializerUndefined: Self = StObject.set(x, "paramsSerializer", js.undefined)
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: arraybuffer | blob | json | text | stream): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: arraybuffer | blob | json | text | stream): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      @scala.inline
-      def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryConfig(value: RetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
+      inline def setRetryConfig(value: RetryConfig): Self = StObject.set(x, "retryConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryConfigUndefined: Self = StObject.set(x, "retryConfig", js.undefined)
+      inline def setRetryConfigUndefined: Self = StObject.set(x, "retryConfig", js.undefined)
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setValidateStatus(value: /* status */ Double => Boolean): Self = StObject.set(x, "validateStatus", js.Any.fromFunction1(value))
+      inline def setValidateStatus(value: /* status */ Double => Boolean): Self = StObject.set(x, "validateStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateStatusUndefined: Self = StObject.set(x, "validateStatus", js.undefined)
+      inline def setValidateStatusUndefined: Self = StObject.set(x, "validateStatus", js.undefined)
     }
   }
   
@@ -269,8 +224,7 @@ object commonMod {
   }
   object GaxiosResponse {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       config: GaxiosOptions,
       data: T,
       headers: Headers,
@@ -282,26 +236,19 @@ object commonMod {
       __obj.asInstanceOf[GaxiosResponse[T]]
     }
     
-    @scala.inline
-    implicit class GaxiosResponseMutableBuilder[Self <: GaxiosResponse[?], T] (val x: Self & GaxiosResponse[T]) extends AnyVal {
+    extension [Self <: GaxiosResponse[?], T](x: Self & GaxiosResponse[T]) {
       
-      @scala.inline
-      def setConfig(value: GaxiosOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: GaxiosOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: GaxiosXMLHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: GaxiosXMLHttpRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -311,17 +258,14 @@ object commonMod {
   }
   object GaxiosXMLHttpRequest {
     
-    @scala.inline
-    def apply(responseURL: String): GaxiosXMLHttpRequest = {
+    inline def apply(responseURL: String): GaxiosXMLHttpRequest = {
       val __obj = js.Dynamic.literal(responseURL = responseURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[GaxiosXMLHttpRequest]
     }
     
-    @scala.inline
-    implicit class GaxiosXMLHttpRequestMutableBuilder[Self <: GaxiosXMLHttpRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GaxiosXMLHttpRequest](x: Self) {
       
-      @scala.inline
-      def setResponseURL(value: String): Self = StObject.set(x, "responseURL", value.asInstanceOf[js.Any])
+      inline def setResponseURL(value: String): Self = StObject.set(x, "responseURL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -373,68 +317,48 @@ object commonMod {
   }
   object RetryConfig {
     
-    @scala.inline
-    def apply(): RetryConfig = {
+    inline def apply(): RetryConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RetryConfig]
     }
     
-    @scala.inline
-    implicit class RetryConfigMutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RetryConfig](x: Self) {
       
-      @scala.inline
-      def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
+      inline def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentRetryAttemptUndefined: Self = StObject.set(x, "currentRetryAttempt", js.undefined)
+      inline def setCurrentRetryAttemptUndefined: Self = StObject.set(x, "currentRetryAttempt", js.undefined)
       
-      @scala.inline
-      def setHttpMethodsToRetry(value: js.Array[String]): Self = StObject.set(x, "httpMethodsToRetry", value.asInstanceOf[js.Any])
+      inline def setHttpMethodsToRetry(value: js.Array[String]): Self = StObject.set(x, "httpMethodsToRetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpMethodsToRetryUndefined: Self = StObject.set(x, "httpMethodsToRetry", js.undefined)
+      inline def setHttpMethodsToRetryUndefined: Self = StObject.set(x, "httpMethodsToRetry", js.undefined)
       
-      @scala.inline
-      def setHttpMethodsToRetryVarargs(value: String*): Self = StObject.set(x, "httpMethodsToRetry", js.Array(value :_*))
+      inline def setHttpMethodsToRetryVarargs(value: String*): Self = StObject.set(x, "httpMethodsToRetry", js.Array(value :_*))
       
-      @scala.inline
-      def setNoResponseRetries(value: Double): Self = StObject.set(x, "noResponseRetries", value.asInstanceOf[js.Any])
+      inline def setNoResponseRetries(value: Double): Self = StObject.set(x, "noResponseRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoResponseRetriesUndefined: Self = StObject.set(x, "noResponseRetries", js.undefined)
+      inline def setNoResponseRetriesUndefined: Self = StObject.set(x, "noResponseRetries", js.undefined)
       
-      @scala.inline
-      def setOnRetryAttempt(value: /* err */ GaxiosError[js.Any] => js.Promise[Unit] | Unit): Self = StObject.set(x, "onRetryAttempt", js.Any.fromFunction1(value))
+      inline def setOnRetryAttempt(value: /* err */ GaxiosError[js.Any] => js.Promise[Unit] | Unit): Self = StObject.set(x, "onRetryAttempt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRetryAttemptUndefined: Self = StObject.set(x, "onRetryAttempt", js.undefined)
+      inline def setOnRetryAttemptUndefined: Self = StObject.set(x, "onRetryAttempt", js.undefined)
       
-      @scala.inline
-      def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+      inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
+      inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setShouldRetry(value: /* err */ GaxiosError[js.Any] => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRetry", js.Any.fromFunction1(value))
+      inline def setShouldRetry(value: /* err */ GaxiosError[js.Any] => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "shouldRetry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldRetryUndefined: Self = StObject.set(x, "shouldRetry", js.undefined)
+      inline def setShouldRetryUndefined: Self = StObject.set(x, "shouldRetry", js.undefined)
       
-      @scala.inline
-      def setStatusCodesToRetry(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "statusCodesToRetry", value.asInstanceOf[js.Any])
+      inline def setStatusCodesToRetry(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "statusCodesToRetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodesToRetryUndefined: Self = StObject.set(x, "statusCodesToRetry", js.undefined)
+      inline def setStatusCodesToRetryUndefined: Self = StObject.set(x, "statusCodesToRetry", js.undefined)
       
-      @scala.inline
-      def setStatusCodesToRetryVarargs(value: js.Array[Double]*): Self = StObject.set(x, "statusCodesToRetry", js.Array(value :_*))
+      inline def setStatusCodesToRetryVarargs(value: js.Array[Double]*): Self = StObject.set(x, "statusCodesToRetry", js.Array(value :_*))
     }
   }
 }

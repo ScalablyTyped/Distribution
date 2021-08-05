@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DropDirection extends StObject
 object DropDirection {
   
-  @scala.inline
-  def dropdown: typings.reactBootstrapTable.reactBootstrapTableStrings.dropdown = "dropdown".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.dropdown]
+  inline def dropdown: typings.reactBootstrapTable.reactBootstrapTableStrings.dropdown = "dropdown".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.dropdown]
   
-  @scala.inline
-  def dropup: typings.reactBootstrapTable.reactBootstrapTableStrings.dropup = "dropup".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.dropup]
+  inline def dropup: typings.reactBootstrapTable.reactBootstrapTableStrings.dropup = "dropup".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.dropup]
 }

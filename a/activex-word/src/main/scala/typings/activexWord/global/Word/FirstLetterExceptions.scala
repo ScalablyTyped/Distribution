@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.FirstLetterExceptions")
 @js.native
-class FirstLetterExceptions protected ()
+/* private */ class FirstLetterExceptions ()
   extends StObject
      with typings.activexWord.Word.FirstLetterExceptions {
   
@@ -28,7 +28,7 @@ class FirstLetterExceptions protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.FirstLetterExceptions_typekey")
   var WordDotFirstLetterExceptions_typekey: typings.activexWord.Word.FirstLetterExceptions = js.native
 }

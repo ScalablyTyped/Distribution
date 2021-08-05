@@ -20,34 +20,25 @@ trait ObjectFilter extends StObject {
 }
 object ObjectFilter {
   
-  @scala.inline
-  def apply(): ObjectFilter = {
+  inline def apply(): ObjectFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectFilter]
   }
   
-  @scala.inline
-  implicit class ObjectFilterMutableBuilder[Self <: ObjectFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectFilter](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+    inline def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+    inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
     
-    @scala.inline
-    def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
+    inline def setObjectIdsVarargs(value: String*): Self = StObject.set(x, "objectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

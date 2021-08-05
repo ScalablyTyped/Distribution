@@ -18,19 +18,15 @@ trait ASPxClientFileManagerItemsDeletedEventArgs
 }
 object ASPxClientFileManagerItemsDeletedEventArgs {
   
-  @scala.inline
-  def apply(items: js.Array[ASPxClientFileManagerItem]): ASPxClientFileManagerItemsDeletedEventArgs = {
+  inline def apply(items: js.Array[ASPxClientFileManagerItem]): ASPxClientFileManagerItemsDeletedEventArgs = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerItemsDeletedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerItemsDeletedEventArgsMutableBuilder[Self <: ASPxClientFileManagerItemsDeletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerItemsDeletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ASPxClientFileManagerItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ASPxClientFileManagerItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ASPxClientFileManagerItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ASPxClientFileManagerItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

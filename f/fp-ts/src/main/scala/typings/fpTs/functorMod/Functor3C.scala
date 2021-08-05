@@ -17,8 +17,7 @@ trait Functor3C[F /* <: /* import warning: transforms.QualifyReferences#resolveT
 }
 object Functor3C {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
     URI: F,
     _E: E,
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
@@ -27,18 +26,14 @@ object Functor3C {
     __obj.asInstanceOf[Functor3C[F, E]]
   }
   
-  @scala.inline
-  implicit class Functor3CMutableBuilder[Self <: Functor3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (Functor3C[F, E])) extends AnyVal {
+  extension [Self <: Functor3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (Functor3C[F, E])) {
     
-    @scala.inline
-    def setMap(
+    inline def setMap(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+    inline def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
   }
 }

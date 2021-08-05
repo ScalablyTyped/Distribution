@@ -27,44 +27,34 @@ object anon {
   }
   object Element {
     
-    @scala.inline
-    def apply(element: typings.std.Element): Element = {
+    inline def apply(element: typings.std.Element): Element = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "multilineTag", value.asInstanceOf[js.Any])
+      inline def setMultilineTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "multilineTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineTagUndefined: Self = StObject.set(x, "multilineTag", js.undefined)
+      inline def setMultilineTagUndefined: Self = StObject.set(x, "multilineTag", js.undefined)
       
-      @scala.inline
-      def setMultilineWrapperTags(
+      inline def setMultilineWrapperTags(
         value: js.Array[
               /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
             ]
       ): Self = StObject.set(x, "multilineWrapperTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineWrapperTagsUndefined: Self = StObject.set(x, "multilineWrapperTags", js.undefined)
+      inline def setMultilineWrapperTagsUndefined: Self = StObject.set(x, "multilineWrapperTags", js.undefined)
       
-      @scala.inline
-      def setMultilineWrapperTagsVarargs(
+      inline def setMultilineWrapperTagsVarargs(
         value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any)*
       ): Self = StObject.set(x, "multilineWrapperTags", js.Array(value :_*))
       
-      @scala.inline
-      def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     }
   }
   
@@ -74,17 +64,14 @@ object anon {
   }
   object Html {
     
-    @scala.inline
-    def apply(html: String): Html = {
+    inline def apply(html: String): Html = {
       val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
       __obj.asInstanceOf[Html]
     }
     
-    @scala.inline
-    implicit class HtmlMutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
+    extension [Self <: Html](x: Self) {
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,23 +85,18 @@ object anon {
   }
   object MultilineTag {
     
-    @scala.inline
-    def apply(value: Value): MultilineTag = {
+    inline def apply(value: Value): MultilineTag = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultilineTag]
     }
     
-    @scala.inline
-    implicit class MultilineTagMutableBuilder[Self <: MultilineTag] (val x: Self) extends AnyVal {
+    extension [Self <: MultilineTag](x: Self) {
       
-      @scala.inline
-      def setMultilineTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "multilineTag", value.asInstanceOf[js.Any])
+      inline def setMultilineTag(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any): Self = StObject.set(x, "multilineTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineTagUndefined: Self = StObject.set(x, "multilineTag", js.undefined)
+      inline def setMultilineTagUndefined: Self = StObject.set(x, "multilineTag", js.undefined)
       
-      @scala.inline
-      def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,17 +106,14 @@ object anon {
   }
   object Text {
     
-    @scala.inline
-    def apply(text: String): Text = {
+    inline def apply(text: String): Text = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,8 +141,7 @@ object anon {
   }
   object TypeofimportedSelectors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getFormatType: String => js.UndefOr[NamedFormatConfiguration],
       getFormatTypeForBareElement: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any => js.UndefOr[NamedFormatConfiguration],
       getFormatTypeForClassName: String => js.UndefOr[NamedFormatConfiguration],
@@ -173,22 +151,17 @@ object anon {
       __obj.asInstanceOf[TypeofimportedSelectors]
     }
     
-    @scala.inline
-    implicit class TypeofimportedSelectorsMutableBuilder[Self <: TypeofimportedSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofimportedSelectors](x: Self) {
       
-      @scala.inline
-      def setGetFormatType(value: String => js.UndefOr[NamedFormatConfiguration]): Self = StObject.set(x, "getFormatType", js.Any.fromFunction1(value))
+      inline def setGetFormatType(value: String => js.UndefOr[NamedFormatConfiguration]): Self = StObject.set(x, "getFormatType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFormatTypeForBareElement(
+      inline def setGetFormatTypeForBareElement(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any => js.UndefOr[NamedFormatConfiguration]
       ): Self = StObject.set(x, "getFormatTypeForBareElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFormatTypeForClassName(value: String => js.UndefOr[NamedFormatConfiguration]): Self = StObject.set(x, "getFormatTypeForClassName", js.Any.fromFunction1(value))
+      inline def setGetFormatTypeForClassName(value: String => js.UndefOr[NamedFormatConfiguration]): Self = StObject.set(x, "getFormatTypeForClassName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFormatTypes(value: () => js.Array[NamedFormatConfiguration]): Self = StObject.set(x, "getFormatTypes", js.Any.fromFunction0(value))
+      inline def setGetFormatTypes(value: () => js.Array[NamedFormatConfiguration]): Self = StObject.set(x, "getFormatTypes", js.Any.fromFunction0(value))
     }
   }
 }

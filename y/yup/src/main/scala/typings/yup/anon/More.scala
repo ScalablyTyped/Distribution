@@ -10,16 +10,13 @@ trait More extends StObject {
 }
 object More {
   
-  @scala.inline
-  def apply(more: Double): More = {
+  inline def apply(more: Double): More = {
     val __obj = js.Dynamic.literal(more = more.asInstanceOf[js.Any])
     __obj.asInstanceOf[More]
   }
   
-  @scala.inline
-  implicit class MoreMutableBuilder[Self <: More] (val x: Self) extends AnyVal {
+  extension [Self <: More](x: Self) {
     
-    @scala.inline
-    def setMore(value: Double): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
+    inline def setMore(value: Double): Self = StObject.set(x, "more", value.asInstanceOf[js.Any])
   }
 }

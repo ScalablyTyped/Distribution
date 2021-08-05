@@ -34,37 +34,27 @@ trait InitialiseOptions extends StObject {
 }
 object InitialiseOptions {
   
-  @scala.inline
-  def apply(): InitialiseOptions = {
+  inline def apply(): InitialiseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitialiseOptions]
   }
   
-  @scala.inline
-  implicit class InitialiseOptionsMutableBuilder[Self <: InitialiseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitialiseOptions](x: Self) {
     
-    @scala.inline
-    def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
+    inline def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigDirUndefined: Self = StObject.set(x, "configDir", js.undefined)
+    inline def setConfigDirUndefined: Self = StObject.set(x, "configDir", js.undefined)
     
-    @scala.inline
-    def setDriverName(value: String): Self = StObject.set(x, "driverName", value.asInstanceOf[js.Any])
+    inline def setDriverName(value: String): Self = StObject.set(x, "driverName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverNameUndefined: Self = StObject.set(x, "driverName", js.undefined)
+    inline def setDriverNameUndefined: Self = StObject.set(x, "driverName", js.undefined)
     
-    @scala.inline
-    def setErrorUrl(value: String): Self = StObject.set(x, "errorUrl", value.asInstanceOf[js.Any])
+    inline def setErrorUrl(value: String): Self = StObject.set(x, "errorUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUrlUndefined: Self = StObject.set(x, "errorUrl", js.undefined)
+    inline def setErrorUrlUndefined: Self = StObject.set(x, "errorUrl", js.undefined)
     
-    @scala.inline
-    def setLibDir(value: String): Self = StObject.set(x, "libDir", value.asInstanceOf[js.Any])
+    inline def setLibDir(value: String): Self = StObject.set(x, "libDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibDirUndefined: Self = StObject.set(x, "libDir", js.undefined)
+    inline def setLibDirUndefined: Self = StObject.set(x, "libDir", js.undefined)
   }
 }

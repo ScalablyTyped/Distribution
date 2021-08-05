@@ -16,7 +16,7 @@ trait PropertyTest extends StObject {
   
   val Name: String
   
-  @JSName("Office.PropertyTest_typekey")
+  /* private */ @JSName("Office.PropertyTest_typekey")
   var OfficeDotPropertyTest_typekey: PropertyTest
   
   val SecondValue: js.Any
@@ -25,8 +25,7 @@ trait PropertyTest extends StObject {
 }
 object PropertyTest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Condition: MsoCondition,
     Connector: MsoConnector,
@@ -41,31 +40,22 @@ object PropertyTest {
     __obj.asInstanceOf[PropertyTest]
   }
   
-  @scala.inline
-  implicit class PropertyTestMutableBuilder[Self <: PropertyTest] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyTest](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondition(value: MsoCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: MsoCondition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnector(value: MsoConnector): Self = StObject.set(x, "Connector", value.asInstanceOf[js.Any])
+    inline def setConnector(value: MsoConnector): Self = StObject.set(x, "Connector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotPropertyTest_typekey(value: PropertyTest): Self = StObject.set(x, "Office.PropertyTest_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotPropertyTest_typekey(value: PropertyTest): Self = StObject.set(x, "Office.PropertyTest_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondValue(value: js.Any): Self = StObject.set(x, "SecondValue", value.asInstanceOf[js.Any])
+    inline def setSecondValue(value: js.Any): Self = StObject.set(x, "SecondValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

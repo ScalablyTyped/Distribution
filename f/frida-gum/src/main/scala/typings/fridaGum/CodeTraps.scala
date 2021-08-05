@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CodeTraps extends StObject
 object CodeTraps {
   
-  @scala.inline
-  def default: typings.fridaGum.fridaGumStrings.default = "default".asInstanceOf[typings.fridaGum.fridaGumStrings.default]
+  inline def default: typings.fridaGum.fridaGumStrings.default = "default".asInstanceOf[typings.fridaGum.fridaGumStrings.default]
   
-  @scala.inline
-  def all: typings.fridaGum.fridaGumStrings.all = "all".asInstanceOf[typings.fridaGum.fridaGumStrings.all]
+  inline def all: typings.fridaGum.fridaGumStrings.all = "all".asInstanceOf[typings.fridaGum.fridaGumStrings.all]
 }

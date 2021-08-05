@@ -126,26 +126,22 @@ object geom {
     @JSGlobal("jsts.geom.CoordinateSequence.M")
     @js.native
     def M: Double = js.native
-    @scala.inline
-    def M_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("M")(x.asInstanceOf[js.Any])
+    inline def M_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("M")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.geom.CoordinateSequence.X")
     @js.native
     def X: Double = js.native
-    @scala.inline
-    def X_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X")(x.asInstanceOf[js.Any])
+    inline def X_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("X")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.geom.CoordinateSequence.Y")
     @js.native
     def Y: Double = js.native
-    @scala.inline
-    def Y_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Y")(x.asInstanceOf[js.Any])
+    inline def Y_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Y")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.geom.CoordinateSequence.Z")
     @js.native
     def Z: Double = js.native
-    @scala.inline
-    def Z_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z")(x.asInstanceOf[js.Any])
+    inline def Z_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("jsts.geom.Envelope")
@@ -205,8 +201,7 @@ object geom {
       *          q the point to test for intersection.
       * @return {boolean} <code>true</code> if q intersects the envelope p1-p2.
       */
-    @scala.inline
-    def intersects(
+    inline def intersects(
       p1: typings.jsts.jsts.geom.Coordinate,
       p2: typings.jsts.jsts.geom.Coordinate,
       q: typings.jsts.jsts.geom.Coordinate
@@ -226,8 +221,7 @@ object geom {
       *          q2 another extremal point of the envelope Q.
       * @return {boolean} <code>true</code> if Q intersects P.
       */
-    @scala.inline
-    def intersectsEnvelope(
+    inline def intersectsEnvelope(
       p1: typings.jsts.jsts.geom.Coordinate,
       p2: typings.jsts.jsts.geom.Coordinate,
       q1: typings.jsts.jsts.geom.Coordinate,
@@ -2337,13 +2331,10 @@ object geom {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isTrue(actualDimensionValue: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrue")(actualDimensionValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isTrue(actualDimensionValue: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrue")(actualDimensionValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def matches(actualDimensionSymbols: String, requiredDimensionSymbols: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(actualDimensionSymbols.asInstanceOf[js.Any], requiredDimensionSymbols.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def matches(actualDimensionValue: Double, requiredDimensionSymbol: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(actualDimensionValue.asInstanceOf[js.Any], requiredDimensionSymbol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def matches(actualDimensionSymbols: String, requiredDimensionSymbols: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(actualDimensionSymbols.asInstanceOf[js.Any], requiredDimensionSymbols.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def matches(actualDimensionValue: Double, requiredDimensionSymbol: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(actualDimensionValue.asInstanceOf[js.Any], requiredDimensionSymbol.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSGlobal("jsts.geom.LineSegment")
@@ -2705,8 +2696,7 @@ object geom {
       * @param {jsts.geom.Coordinate} p1
       * @return {jsts.geom.Coordinate} the midpoint of the segment
       */
-    @scala.inline
-    def midPoint(p0: typings.jsts.jsts.geom.Coordinate, p1: typings.jsts.jsts.geom.Coordinate): typings.jsts.jsts.geom.Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("midPoint")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.Coordinate]
+    inline def midPoint(p0: typings.jsts.jsts.geom.Coordinate, p1: typings.jsts.jsts.geom.Coordinate): typings.jsts.jsts.geom.Coordinate = (^.asInstanceOf[js.Dynamic].applyDynamic("midPoint")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.Coordinate]
   }
   
   @JSGlobal("jsts.geom.LineString")
@@ -6928,20 +6918,17 @@ object geom {
     @JSGlobal("jsts.geom.PrecisionModel.FIXED")
     @js.native
     def FIXED: String = js.native
-    @scala.inline
-    def FIXED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIXED")(x.asInstanceOf[js.Any])
+    inline def FIXED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FIXED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.geom.PrecisionModel.FLOATING")
     @js.native
     def FLOATING: String = js.native
-    @scala.inline
-    def FLOATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLOATING")(x.asInstanceOf[js.Any])
+    inline def FLOATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLOATING")(x.asInstanceOf[js.Any])
     
     @JSGlobal("jsts.geom.PrecisionModel.FLOATING_SINGLE")
     @js.native
     def FLOATING_SINGLE: String = js.native
-    @scala.inline
-    def FLOATING_SINGLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLOATING_SINGLE")(x.asInstanceOf[js.Any])
+    inline def FLOATING_SINGLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLOATING_SINGLE")(x.asInstanceOf[js.Any])
   }
   
   object util {
@@ -6969,38 +6956,24 @@ object geom {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def reflectionInstance(x0: Double, y0: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("reflectionInstance")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
-      @scala.inline
-      def reflectionInstance(x0: Double, y0: Double, x1: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("reflectionInstance")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
-      @scala.inline
-      def reflectionInstance(x0: Double, y0: Double, x1: Double, y1: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("reflectionInstance")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
-      @scala.inline
-      def reflectionInstance(x0: Double, y0: Double, x1: Unit, y1: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("reflectionInstance")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def reflectionInstance(x0: Double, y0: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("reflectionInstance")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def reflectionInstance(x0: Double, y0: Double, x1: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("reflectionInstance")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def reflectionInstance(x0: Double, y0: Double, x1: Double, y1: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("reflectionInstance")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def reflectionInstance(x0: Double, y0: Double, x1: Unit, y1: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("reflectionInstance")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
       
-      @scala.inline
-      def rotationInstance(sinTheta: Double, cosTheta: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("rotationInstance")(sinTheta.asInstanceOf[js.Any], cosTheta.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
-      @scala.inline
-      def rotationInstance(sinTheta: Double, cosTheta: Double, x: Double, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("rotationInstance")(sinTheta.asInstanceOf[js.Any], cosTheta.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
-      @scala.inline
-      def rotationInstance(theta: Double): typings.jsts.jsts.geom.util.AffineTransformation = ^.asInstanceOf[js.Dynamic].applyDynamic("rotationInstance")(theta.asInstanceOf[js.Any]).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
-      @scala.inline
-      def rotationInstance(theta: Double, x: Double, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("rotationInstance")(theta.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def rotationInstance(sinTheta: Double, cosTheta: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("rotationInstance")(sinTheta.asInstanceOf[js.Any], cosTheta.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def rotationInstance(sinTheta: Double, cosTheta: Double, x: Double, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("rotationInstance")(sinTheta.asInstanceOf[js.Any], cosTheta.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def rotationInstance(theta: Double): typings.jsts.jsts.geom.util.AffineTransformation = ^.asInstanceOf[js.Dynamic].applyDynamic("rotationInstance")(theta.asInstanceOf[js.Any]).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def rotationInstance(theta: Double, x: Double, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("rotationInstance")(theta.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
       
-      @scala.inline
-      def scaleInstance(xScale: Double, yScale: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleInstance")(xScale.asInstanceOf[js.Any], yScale.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
-      @scala.inline
-      def scaleInstance(xScale: Double, yScale: Double, x: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleInstance")(xScale.asInstanceOf[js.Any], yScale.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
-      @scala.inline
-      def scaleInstance(xScale: Double, yScale: Double, x: Double, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleInstance")(xScale.asInstanceOf[js.Any], yScale.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
-      @scala.inline
-      def scaleInstance(xScale: Double, yScale: Double, x: Unit, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleInstance")(xScale.asInstanceOf[js.Any], yScale.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def scaleInstance(xScale: Double, yScale: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleInstance")(xScale.asInstanceOf[js.Any], yScale.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def scaleInstance(xScale: Double, yScale: Double, x: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleInstance")(xScale.asInstanceOf[js.Any], yScale.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def scaleInstance(xScale: Double, yScale: Double, x: Double, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleInstance")(xScale.asInstanceOf[js.Any], yScale.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def scaleInstance(xScale: Double, yScale: Double, x: Unit, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleInstance")(xScale.asInstanceOf[js.Any], yScale.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
       
-      @scala.inline
-      def shearInstance(xShear: Double, yShear: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("shearInstance")(xShear.asInstanceOf[js.Any], yShear.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def shearInstance(xShear: Double, yShear: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("shearInstance")(xShear.asInstanceOf[js.Any], yShear.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
       
-      @scala.inline
-      def translationInstance(x: Double, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("translationInstance")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
+      inline def translationInstance(x: Double, y: Double): typings.jsts.jsts.geom.util.AffineTransformation = (^.asInstanceOf[js.Dynamic].applyDynamic("translationInstance")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.jsts.jsts.geom.util.AffineTransformation]
     }
   }
 }

@@ -12,21 +12,17 @@ trait RecordMeta extends StObject {
 }
 object RecordMeta {
   
-  @scala.inline
-  def apply(`@rid`: ORID, `@version`: Version): RecordMeta = {
+  inline def apply(`@rid`: ORID, `@version`: Version): RecordMeta = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("@rid")(`@rid`.asInstanceOf[js.Any])
     __obj.updateDynamic("@version")(`@version`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordMeta]
   }
   
-  @scala.inline
-  implicit class RecordMetaMutableBuilder[Self <: RecordMeta] (val x: Self) extends AnyVal {
+  extension [Self <: RecordMeta](x: Self) {
     
-    @scala.inline
-    def `set@rid`(value: ORID): Self = StObject.set(x, "@rid", value.asInstanceOf[js.Any])
+    inline def `set@rid`(value: ORID): Self = StObject.set(x, "@rid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set@version`(value: Version): Self = StObject.set(x, "@version", value.asInstanceOf[js.Any])
+    inline def `set@version`(value: Version): Self = StObject.set(x, "@version", value.asInstanceOf[js.Any])
   }
 }

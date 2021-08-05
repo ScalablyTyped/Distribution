@@ -18,22 +18,17 @@ trait BatchResponse extends StObject {
 }
 object BatchResponse {
   
-  @scala.inline
-  def apply(objectIDs: js.Array[String], taskID: Double): BatchResponse = {
+  inline def apply(objectIDs: js.Array[String], taskID: Double): BatchResponse = {
     val __obj = js.Dynamic.literal(objectIDs = objectIDs.asInstanceOf[js.Any], taskID = taskID.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchResponse]
   }
   
-  @scala.inline
-  implicit class BatchResponseMutableBuilder[Self <: BatchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchResponse](x: Self) {
     
-    @scala.inline
-    def setObjectIDs(value: js.Array[String]): Self = StObject.set(x, "objectIDs", value.asInstanceOf[js.Any])
+    inline def setObjectIDs(value: js.Array[String]): Self = StObject.set(x, "objectIDs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIDsVarargs(value: String*): Self = StObject.set(x, "objectIDs", js.Array(value :_*))
+    inline def setObjectIDsVarargs(value: String*): Self = StObject.set(x, "objectIDs", js.Array(value :_*))
     
-    @scala.inline
-    def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
+    inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
   }
 }

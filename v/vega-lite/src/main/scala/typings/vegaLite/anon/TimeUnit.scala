@@ -18,34 +18,25 @@ trait TimeUnit extends StObject {
 }
 object TimeUnit {
   
-  @scala.inline
-  def apply(timeUnit: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams): TimeUnit = {
+  inline def apply(timeUnit: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams): TimeUnit = {
     val __obj = js.Dynamic.literal(timeUnit = timeUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeUnit]
   }
   
-  @scala.inline
-  implicit class TimeUnitMutableBuilder[Self <: TimeUnit] (val x: Self) extends AnyVal {
+  extension [Self <: TimeUnit](x: Self) {
     
-    @scala.inline
-    def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: typings.vegaLite.srcTimeunitMod.TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUndefinedIfExprNotRequired(value: Boolean): Self = StObject.set(x, "undefinedIfExprNotRequired", value.asInstanceOf[js.Any])
+    inline def setUndefinedIfExprNotRequired(value: Boolean): Self = StObject.set(x, "undefinedIfExprNotRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefinedIfExprNotRequiredUndefined: Self = StObject.set(x, "undefinedIfExprNotRequired", js.undefined)
+    inline def setUndefinedIfExprNotRequiredUndefined: Self = StObject.set(x, "undefinedIfExprNotRequired", js.undefined)
     
-    @scala.inline
-    def setWrapTime(value: Boolean): Self = StObject.set(x, "wrapTime", value.asInstanceOf[js.Any])
+    inline def setWrapTime(value: Boolean): Self = StObject.set(x, "wrapTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapTimeUndefined: Self = StObject.set(x, "wrapTime", js.undefined)
+    inline def setWrapTimeUndefined: Self = StObject.set(x, "wrapTime", js.undefined)
   }
 }

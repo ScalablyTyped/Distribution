@@ -8,11 +8,9 @@ object d3DsvStrings {
   
   @js.native
   sealed trait DSVRaw extends StObject
-  @scala.inline
-  def DSVRaw: DSVRaw = "DSVRaw".asInstanceOf[DSVRaw]
+  inline def DSVRaw: DSVRaw = "DSVRaw".asInstanceOf[DSVRaw]
   
   @js.native
   sealed trait DSVRowString extends StObject
-  @scala.inline
-  def DSVRowString: DSVRowString = "DSVRowString".asInstanceOf[DSVRowString]
+  inline def DSVRowString: DSVRowString = "DSVRowString".asInstanceOf[DSVRowString]
 }

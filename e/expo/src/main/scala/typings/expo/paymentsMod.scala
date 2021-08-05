@@ -14,6 +14,5 @@ object paymentsMod {
   @js.native
   val default: js.Any = js.native
   
-  @scala.inline
-  def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
+  inline def initialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[Unit]
 }

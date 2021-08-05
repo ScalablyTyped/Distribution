@@ -18,19 +18,15 @@ trait TeamSettingsDataContractBase extends StObject {
 }
 object TeamSettingsDataContractBase {
   
-  @scala.inline
-  def apply(_links: js.Any, url: String): TeamSettingsDataContractBase = {
+  inline def apply(_links: js.Any, url: String): TeamSettingsDataContractBase = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamSettingsDataContractBase]
   }
   
-  @scala.inline
-  implicit class TeamSettingsDataContractBaseMutableBuilder[Self <: TeamSettingsDataContractBase] (val x: Self) extends AnyVal {
+  extension [Self <: TeamSettingsDataContractBase](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

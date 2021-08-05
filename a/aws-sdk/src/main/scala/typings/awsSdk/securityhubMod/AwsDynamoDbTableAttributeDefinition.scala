@@ -18,25 +18,19 @@ trait AwsDynamoDbTableAttributeDefinition extends StObject {
 }
 object AwsDynamoDbTableAttributeDefinition {
   
-  @scala.inline
-  def apply(): AwsDynamoDbTableAttributeDefinition = {
+  inline def apply(): AwsDynamoDbTableAttributeDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsDynamoDbTableAttributeDefinition]
   }
   
-  @scala.inline
-  implicit class AwsDynamoDbTableAttributeDefinitionMutableBuilder[Self <: AwsDynamoDbTableAttributeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: AwsDynamoDbTableAttributeDefinition](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: NonEmptyString): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: NonEmptyString): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setAttributeType(value: NonEmptyString): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
+    inline def setAttributeType(value: NonEmptyString): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
+    inline def setAttributeTypeUndefined: Self = StObject.set(x, "AttributeType", js.undefined)
   }
 }

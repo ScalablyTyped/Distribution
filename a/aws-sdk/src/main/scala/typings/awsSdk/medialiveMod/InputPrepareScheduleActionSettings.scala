@@ -23,34 +23,25 @@ trait InputPrepareScheduleActionSettings extends StObject {
 }
 object InputPrepareScheduleActionSettings {
   
-  @scala.inline
-  def apply(): InputPrepareScheduleActionSettings = {
+  inline def apply(): InputPrepareScheduleActionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputPrepareScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class InputPrepareScheduleActionSettingsMutableBuilder[Self <: InputPrepareScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: InputPrepareScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setInputAttachmentNameReference(value: string): Self = StObject.set(x, "InputAttachmentNameReference", value.asInstanceOf[js.Any])
+    inline def setInputAttachmentNameReference(value: string): Self = StObject.set(x, "InputAttachmentNameReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputAttachmentNameReferenceUndefined: Self = StObject.set(x, "InputAttachmentNameReference", js.undefined)
+    inline def setInputAttachmentNameReferenceUndefined: Self = StObject.set(x, "InputAttachmentNameReference", js.undefined)
     
-    @scala.inline
-    def setInputClippingSettings(value: InputClippingSettings): Self = StObject.set(x, "InputClippingSettings", value.asInstanceOf[js.Any])
+    inline def setInputClippingSettings(value: InputClippingSettings): Self = StObject.set(x, "InputClippingSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputClippingSettingsUndefined: Self = StObject.set(x, "InputClippingSettings", js.undefined)
+    inline def setInputClippingSettingsUndefined: Self = StObject.set(x, "InputClippingSettings", js.undefined)
     
-    @scala.inline
-    def setUrlPath(value: listOfString): Self = StObject.set(x, "UrlPath", value.asInstanceOf[js.Any])
+    inline def setUrlPath(value: listOfString): Self = StObject.set(x, "UrlPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlPathUndefined: Self = StObject.set(x, "UrlPath", js.undefined)
+    inline def setUrlPathUndefined: Self = StObject.set(x, "UrlPath", js.undefined)
     
-    @scala.inline
-    def setUrlPathVarargs(value: string*): Self = StObject.set(x, "UrlPath", js.Array(value :_*))
+    inline def setUrlPathVarargs(value: string*): Self = StObject.set(x, "UrlPath", js.Array(value :_*))
   }
 }

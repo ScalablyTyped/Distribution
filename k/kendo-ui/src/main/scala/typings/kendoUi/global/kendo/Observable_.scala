@@ -17,13 +17,11 @@ object Observable_ {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(prototype: js.Object): Observable = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(prototype.asInstanceOf[js.Any]).asInstanceOf[Observable]
+  inline def extend(prototype: js.Object): Observable = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(prototype.asInstanceOf[js.Any]).asInstanceOf[Observable]
   
   /* static member */
   @JSGlobal("kendo.Observable.fn")
   @js.native
   def fn: Observable = js.native
-  @scala.inline
-  def fn_=(x: Observable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: Observable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

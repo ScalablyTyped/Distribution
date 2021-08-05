@@ -37,70 +37,49 @@ trait RunPivotReportResponse extends StObject {
 }
 object RunPivotReportResponse {
   
-  @scala.inline
-  def apply(): RunPivotReportResponse = {
+  inline def apply(): RunPivotReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunPivotReportResponse]
   }
   
-  @scala.inline
-  implicit class RunPivotReportResponseMutableBuilder[Self <: RunPivotReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RunPivotReportResponse](x: Self) {
     
-    @scala.inline
-    def setAggregates(value: js.Array[Row]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    inline def setAggregates(value: js.Array[Row]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
+    inline def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
     
-    @scala.inline
-    def setAggregatesVarargs(value: Row*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
+    inline def setAggregatesVarargs(value: Row*): Self = StObject.set(x, "aggregates", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensionHeaders(value: js.Array[DimensionHeader]): Self = StObject.set(x, "dimensionHeaders", value.asInstanceOf[js.Any])
+    inline def setDimensionHeaders(value: js.Array[DimensionHeader]): Self = StObject.set(x, "dimensionHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionHeadersUndefined: Self = StObject.set(x, "dimensionHeaders", js.undefined)
+    inline def setDimensionHeadersUndefined: Self = StObject.set(x, "dimensionHeaders", js.undefined)
     
-    @scala.inline
-    def setDimensionHeadersVarargs(value: DimensionHeader*): Self = StObject.set(x, "dimensionHeaders", js.Array(value :_*))
+    inline def setDimensionHeadersVarargs(value: DimensionHeader*): Self = StObject.set(x, "dimensionHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(value: ResponseMetaData): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ResponseMetaData): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setMetricHeaders(value: js.Array[MetricHeader]): Self = StObject.set(x, "metricHeaders", value.asInstanceOf[js.Any])
+    inline def setMetricHeaders(value: js.Array[MetricHeader]): Self = StObject.set(x, "metricHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricHeadersUndefined: Self = StObject.set(x, "metricHeaders", js.undefined)
+    inline def setMetricHeadersUndefined: Self = StObject.set(x, "metricHeaders", js.undefined)
     
-    @scala.inline
-    def setMetricHeadersVarargs(value: MetricHeader*): Self = StObject.set(x, "metricHeaders", js.Array(value :_*))
+    inline def setMetricHeadersVarargs(value: MetricHeader*): Self = StObject.set(x, "metricHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setPivotHeaders(value: js.Array[PivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
+    inline def setPivotHeaders(value: js.Array[PivotHeader]): Self = StObject.set(x, "pivotHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
+    inline def setPivotHeadersUndefined: Self = StObject.set(x, "pivotHeaders", js.undefined)
     
-    @scala.inline
-    def setPivotHeadersVarargs(value: PivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
+    inline def setPivotHeadersVarargs(value: PivotHeader*): Self = StObject.set(x, "pivotHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setPropertyQuota(value: PropertyQuota): Self = StObject.set(x, "propertyQuota", value.asInstanceOf[js.Any])
+    inline def setPropertyQuota(value: PropertyQuota): Self = StObject.set(x, "propertyQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyQuotaUndefined: Self = StObject.set(x, "propertyQuota", js.undefined)
+    inline def setPropertyQuotaUndefined: Self = StObject.set(x, "propertyQuota", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

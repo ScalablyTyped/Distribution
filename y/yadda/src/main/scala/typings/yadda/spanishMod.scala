@@ -1834,8 +1834,7 @@ object spanishMod extends Shortcut {
   }
   object Vocabulary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _steps: js.Array[String],
       background: String,
       cuando: String,
@@ -1862,35 +1861,25 @@ object spanishMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    @scala.inline
-    implicit class VocabularyMutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    extension [Self <: Vocabulary](x: Self) {
       
-      @scala.inline
-      def setCuando(value: String): Self = StObject.set(x, "cuando", value.asInstanceOf[js.Any])
+      inline def setCuando(value: String): Self = StObject.set(x, "cuando", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDada(value: String): Self = StObject.set(x, "dada", value.asInstanceOf[js.Any])
+      inline def setDada(value: String): Self = StObject.set(x, "dada", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDadas(value: String): Self = StObject.set(x, "dadas", value.asInstanceOf[js.Any])
+      inline def setDadas(value: String): Self = StObject.set(x, "dadas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDado(value: String): Self = StObject.set(x, "dado", value.asInstanceOf[js.Any])
+      inline def setDado(value: String): Self = StObject.set(x, "dado", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDados(value: String): Self = StObject.set(x, "dados", value.asInstanceOf[js.Any])
+      inline def setDados(value: String): Self = StObject.set(x, "dados", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntonces(value: String): Self = StObject.set(x, "entonces", value.asInstanceOf[js.Any])
+      inline def setEntonces(value: String): Self = StObject.set(x, "entonces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSea(value: String): Self = StObject.set(x, "sea", value.asInstanceOf[js.Any])
+      inline def setSea(value: String): Self = StObject.set(x, "sea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSean(value: String): Self = StObject.set(x, "sean", value.asInstanceOf[js.Any])
+      inline def setSean(value: String): Self = StObject.set(x, "sean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSi(value: String): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
+      inline def setSi(value: String): Self = StObject.set(x, "si", value.asInstanceOf[js.Any])
     }
   }
   

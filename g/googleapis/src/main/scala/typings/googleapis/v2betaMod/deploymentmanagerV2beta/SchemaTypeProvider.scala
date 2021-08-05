@@ -79,85 +79,59 @@ trait SchemaTypeProvider extends StObject {
 }
 object SchemaTypeProvider {
   
-  @scala.inline
-  def apply(): SchemaTypeProvider = {
+  inline def apply(): SchemaTypeProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTypeProvider]
   }
   
-  @scala.inline
-  implicit class SchemaTypeProviderMutableBuilder[Self <: SchemaTypeProvider] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTypeProvider](x: Self) {
     
-    @scala.inline
-    def setCollectionOverrides(value: js.Array[SchemaCollectionOverride]): Self = StObject.set(x, "collectionOverrides", value.asInstanceOf[js.Any])
+    inline def setCollectionOverrides(value: js.Array[SchemaCollectionOverride]): Self = StObject.set(x, "collectionOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionOverridesUndefined: Self = StObject.set(x, "collectionOverrides", js.undefined)
+    inline def setCollectionOverridesUndefined: Self = StObject.set(x, "collectionOverrides", js.undefined)
     
-    @scala.inline
-    def setCollectionOverridesVarargs(value: SchemaCollectionOverride*): Self = StObject.set(x, "collectionOverrides", js.Array(value :_*))
+    inline def setCollectionOverridesVarargs(value: SchemaCollectionOverride*): Self = StObject.set(x, "collectionOverrides", js.Array(value :_*))
     
-    @scala.inline
-    def setCredential(value: SchemaCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: SchemaCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
+    inline def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDescriptorUrl(value: String): Self = StObject.set(x, "descriptorUrl", value.asInstanceOf[js.Any])
+    inline def setDescriptorUrl(value: String): Self = StObject.set(x, "descriptorUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptorUrlUndefined: Self = StObject.set(x, "descriptorUrl", js.undefined)
+    inline def setDescriptorUrlUndefined: Self = StObject.set(x, "descriptorUrl", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
+    inline def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
+    inline def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Array[SchemaTypeProviderLabelEntry]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[SchemaTypeProviderLabelEntry]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: SchemaTypeProviderLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: SchemaTypeProviderLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: SchemaOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setOptions(value: SchemaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SchemaOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

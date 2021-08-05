@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyAttributesEnum extends StObject
 object PropertyAttributesEnum {
   
-  @scala.inline
-  def adPropNotSupported: `0` = 0.asInstanceOf[`0`]
+  inline def adPropNotSupported: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adPropOptional: `2` = 2.asInstanceOf[`2`]
+  inline def adPropOptional: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adPropRead: `512` = 512.asInstanceOf[`512`]
+  inline def adPropRead: `512` = 512.asInstanceOf[`512`]
   
-  @scala.inline
-  def adPropRequired: `1` = 1.asInstanceOf[`1`]
+  inline def adPropRequired: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adPropWrite: `1024` = 1024.asInstanceOf[`1024`]
+  inline def adPropWrite: `1024` = 1024.asInstanceOf[`1024`]
 }

@@ -21,19 +21,15 @@ trait IAlfaNumString extends StObject {
 }
 object IAlfaNumString {
   
-  @scala.inline
-  def apply(qIsNum: Boolean, qString: String): IAlfaNumString = {
+  inline def apply(qIsNum: Boolean, qString: String): IAlfaNumString = {
     val __obj = js.Dynamic.literal(qIsNum = qIsNum.asInstanceOf[js.Any], qString = qString.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAlfaNumString]
   }
   
-  @scala.inline
-  implicit class IAlfaNumStringMutableBuilder[Self <: IAlfaNumString] (val x: Self) extends AnyVal {
+  extension [Self <: IAlfaNumString](x: Self) {
     
-    @scala.inline
-    def setQIsNum(value: Boolean): Self = StObject.set(x, "qIsNum", value.asInstanceOf[js.Any])
+    inline def setQIsNum(value: Boolean): Self = StObject.set(x, "qIsNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQString(value: String): Self = StObject.set(x, "qString", value.asInstanceOf[js.Any])
+    inline def setQString(value: String): Self = StObject.set(x, "qString", value.asInstanceOf[js.Any])
   }
 }

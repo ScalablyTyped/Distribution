@@ -33,10 +33,8 @@ object scbrokerMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(): SCBroker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SCBroker]
-  @scala.inline
-  def create(options: Run): SCBroker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[SCBroker]
+  inline def create(): SCBroker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SCBroker]
+  inline def create(options: Run): SCBroker = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[SCBroker]
   
   type PublishMiddleware = js.Function1[/* req */ PublishMiddlewareData, Unit]
   
@@ -50,23 +48,18 @@ object scbrokerMod {
   }
   object PublishMiddlewareData {
     
-    @scala.inline
-    def apply(channel: String, command: js.Object, socket: ComSocket): PublishMiddlewareData = {
+    inline def apply(channel: String, command: js.Object, socket: ComSocket): PublishMiddlewareData = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishMiddlewareData]
     }
     
-    @scala.inline
-    implicit class PublishMiddlewareDataMutableBuilder[Self <: PublishMiddlewareData] (val x: Self) extends AnyVal {
+    extension [Self <: PublishMiddlewareData](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommand(value: js.Object): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: js.Object): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket(value: ComSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: ComSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,32 +165,24 @@ object scbrokerMod {
   }
   object SCBrokerOptions {
     
-    @scala.inline
-    def apply(): SCBrokerOptions = {
+    inline def apply(): SCBrokerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SCBrokerOptions]
     }
     
-    @scala.inline
-    implicit class SCBrokerOptionsMutableBuilder[Self <: SCBrokerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SCBrokerOptions](x: Self) {
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setIpcAckTimeout(value: Double): Self = StObject.set(x, "ipcAckTimeout", value.asInstanceOf[js.Any])
+      inline def setIpcAckTimeout(value: Double): Self = StObject.set(x, "ipcAckTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpcAckTimeoutUndefined: Self = StObject.set(x, "ipcAckTimeout", js.undefined)
+      inline def setIpcAckTimeoutUndefined: Self = StObject.set(x, "ipcAckTimeout", js.undefined)
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
+      inline def setSecretKeyUndefined: Self = StObject.set(x, "secretKey", js.undefined)
     }
   }
   
@@ -211,20 +196,16 @@ object scbrokerMod {
   }
   object SubscribeMiddlewareData {
     
-    @scala.inline
-    def apply(channel: String, socket: ComSocket): SubscribeMiddlewareData = {
+    inline def apply(channel: String, socket: ComSocket): SubscribeMiddlewareData = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscribeMiddlewareData]
     }
     
-    @scala.inline
-    implicit class SubscribeMiddlewareDataMutableBuilder[Self <: SubscribeMiddlewareData] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeMiddlewareData](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket(value: ComSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: ComSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     }
   }
   

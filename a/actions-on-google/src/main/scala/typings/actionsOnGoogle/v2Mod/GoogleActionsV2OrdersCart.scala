@@ -47,64 +47,45 @@ trait GoogleActionsV2OrdersCart extends StObject {
 }
 object GoogleActionsV2OrdersCart {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersCart = {
+  inline def apply(): GoogleActionsV2OrdersCart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersCart]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersCartMutableBuilder[Self <: GoogleActionsV2OrdersCart] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersCart](x: Self) {
     
-    @scala.inline
-    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLineItems(value: js.Array[GoogleActionsV2OrdersLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    inline def setLineItems(value: js.Array[GoogleActionsV2OrdersLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
+    inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    @scala.inline
-    def setLineItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
     
-    @scala.inline
-    def setMerchant(value: GoogleActionsV2OrdersMerchant): Self = StObject.set(x, "merchant", value.asInstanceOf[js.Any])
+    inline def setMerchant(value: GoogleActionsV2OrdersMerchant): Self = StObject.set(x, "merchant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantUndefined: Self = StObject.set(x, "merchant", js.undefined)
+    inline def setMerchantUndefined: Self = StObject.set(x, "merchant", js.undefined)
     
-    @scala.inline
-    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setOtherItems(value: js.Array[GoogleActionsV2OrdersLineItem]): Self = StObject.set(x, "otherItems", value.asInstanceOf[js.Any])
+    inline def setOtherItems(value: js.Array[GoogleActionsV2OrdersLineItem]): Self = StObject.set(x, "otherItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherItemsUndefined: Self = StObject.set(x, "otherItems", js.undefined)
+    inline def setOtherItemsUndefined: Self = StObject.set(x, "otherItems", js.undefined)
     
-    @scala.inline
-    def setOtherItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "otherItems", js.Array(value :_*))
+    inline def setOtherItemsVarargs(value: GoogleActionsV2OrdersLineItem*): Self = StObject.set(x, "otherItems", js.Array(value :_*))
     
-    @scala.inline
-    def setPromotions(value: js.Array[GoogleActionsV2OrdersPromotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
+    inline def setPromotions(value: js.Array[GoogleActionsV2OrdersPromotion]): Self = StObject.set(x, "promotions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
+    inline def setPromotionsUndefined: Self = StObject.set(x, "promotions", js.undefined)
     
-    @scala.inline
-    def setPromotionsVarargs(value: GoogleActionsV2OrdersPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
+    inline def setPromotionsVarargs(value: GoogleActionsV2OrdersPromotion*): Self = StObject.set(x, "promotions", js.Array(value :_*))
   }
 }

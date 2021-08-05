@@ -18,8 +18,7 @@ trait ParametersReposGetPagesBuildEndpoint extends StObject {
 }
 object ParametersReposGetPagesBuildEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposGetPagesBuildEndpoint,
     request: ReposGetPagesBuildRequestOptions,
     response: OctokitResponse[ReposGetPagesBuildResponseData]
@@ -28,16 +27,12 @@ object ParametersReposGetPagesBuildEndpoint {
     __obj.asInstanceOf[ParametersReposGetPagesBuildEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposGetPagesBuildEndpointMutableBuilder[Self <: ParametersReposGetPagesBuildEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposGetPagesBuildEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposGetPagesBuildEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposGetPagesBuildEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposGetPagesBuildRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposGetPagesBuildRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposGetPagesBuildResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposGetPagesBuildResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

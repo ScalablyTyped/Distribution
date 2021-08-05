@@ -128,8 +128,7 @@ trait Typeofmedia extends StObject {
 }
 object Typeofmedia {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DEFAULT_MEDIA_RECEIVER_APP_ID: String,
     EditTracksInfoRequest: Instantiable2[
       /* activeTrackIds */ js.UndefOr[js.Array[Double]], 
@@ -171,14 +170,11 @@ object Typeofmedia {
     __obj.asInstanceOf[Typeofmedia]
   }
   
-  @scala.inline
-  implicit class TypeofmediaMutableBuilder[Self <: Typeofmedia] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofmedia](x: Self) {
     
-    @scala.inline
-    def setDEFAULT_MEDIA_RECEIVER_APP_ID(value: String): Self = StObject.set(x, "DEFAULT_MEDIA_RECEIVER_APP_ID", value.asInstanceOf[js.Any])
+    inline def setDEFAULT_MEDIA_RECEIVER_APP_ID(value: String): Self = StObject.set(x, "DEFAULT_MEDIA_RECEIVER_APP_ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditTracksInfoRequest(
+    inline def setEditTracksInfoRequest(
       value: Instantiable2[
           /* activeTrackIds */ js.UndefOr[js.Array[Double]], 
           /* textTrackStyle */ js.UndefOr[TextTrackStyle], 
@@ -186,14 +182,11 @@ object Typeofmedia {
         ]
     ): Self = StObject.set(x, "EditTracksInfoRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenericMediaMetadata(value: Instantiable0[GenericMediaMetadata]): Self = StObject.set(x, "GenericMediaMetadata", value.asInstanceOf[js.Any])
+    inline def setGenericMediaMetadata(value: Instantiable0[GenericMediaMetadata]): Self = StObject.set(x, "GenericMediaMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetStatusRequest(value: Instantiable0[GetStatusRequest]): Self = StObject.set(x, "GetStatusRequest", value.asInstanceOf[js.Any])
+    inline def setGetStatusRequest(value: Instantiable0[GetStatusRequest]): Self = StObject.set(x, "GetStatusRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveSeekableRange(
+    inline def setLiveSeekableRange(
       value: Instantiable4[
           /* start */ js.UndefOr[Double], 
           /* end */ js.UndefOr[Double], 
@@ -203,67 +196,46 @@ object Typeofmedia {
         ]
     ): Self = StObject.set(x, "LiveSeekableRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadRequest(value: Instantiable1[/* mediaInfo */ MediaInfo, LoadRequest]): Self = StObject.set(x, "LoadRequest", value.asInstanceOf[js.Any])
+    inline def setLoadRequest(value: Instantiable1[/* mediaInfo */ MediaInfo, LoadRequest]): Self = StObject.set(x, "LoadRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia(value: Instantiable2[/* sessionId */ String, /* mediaSessionId */ Double, Media]): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Instantiable2[/* sessionId */ String, /* mediaSessionId */ Double, Media]): Self = StObject.set(x, "Media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaInfo(value: Instantiable2[/* contentId */ String, /* contentType */ String, MediaInfo]): Self = StObject.set(x, "MediaInfo", value.asInstanceOf[js.Any])
+    inline def setMediaInfo(value: Instantiable2[/* contentId */ String, /* contentType */ String, MediaInfo]): Self = StObject.set(x, "MediaInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovieMediaMetadata(value: Instantiable0[MovieMediaMetadata]): Self = StObject.set(x, "MovieMediaMetadata", value.asInstanceOf[js.Any])
+    inline def setMovieMediaMetadata(value: Instantiable0[MovieMediaMetadata]): Self = StObject.set(x, "MovieMediaMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMusicTrackMediaMetadata(value: Instantiable0[MusicTrackMediaMetadata]): Self = StObject.set(x, "MusicTrackMediaMetadata", value.asInstanceOf[js.Any])
+    inline def setMusicTrackMediaMetadata(value: Instantiable0[MusicTrackMediaMetadata]): Self = StObject.set(x, "MusicTrackMediaMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPauseRequest(value: Instantiable0[PauseRequest]): Self = StObject.set(x, "PauseRequest", value.asInstanceOf[js.Any])
+    inline def setPauseRequest(value: Instantiable0[PauseRequest]): Self = StObject.set(x, "PauseRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoMediaMetadata(value: Instantiable0[PhotoMediaMetadata]): Self = StObject.set(x, "PhotoMediaMetadata", value.asInstanceOf[js.Any])
+    inline def setPhotoMediaMetadata(value: Instantiable0[PhotoMediaMetadata]): Self = StObject.set(x, "PhotoMediaMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayRequest(value: Instantiable0[PlayRequest]): Self = StObject.set(x, "PlayRequest", value.asInstanceOf[js.Any])
+    inline def setPlayRequest(value: Instantiable0[PlayRequest]): Self = StObject.set(x, "PlayRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueInsertItemsRequest(value: Instantiable1[/* itemsToInsert */ js.Array[QueueItem], QueueInsertItemsRequest]): Self = StObject.set(x, "QueueInsertItemsRequest", value.asInstanceOf[js.Any])
+    inline def setQueueInsertItemsRequest(value: Instantiable1[/* itemsToInsert */ js.Array[QueueItem], QueueInsertItemsRequest]): Self = StObject.set(x, "QueueInsertItemsRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueItem(value: Instantiable1[/* mediaInfo */ MediaInfo, QueueItem]): Self = StObject.set(x, "QueueItem", value.asInstanceOf[js.Any])
+    inline def setQueueItem(value: Instantiable1[/* mediaInfo */ MediaInfo, QueueItem]): Self = StObject.set(x, "QueueItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueLoadRequest(value: Instantiable1[/* items */ js.Array[QueueItem], QueueLoadRequest]): Self = StObject.set(x, "QueueLoadRequest", value.asInstanceOf[js.Any])
+    inline def setQueueLoadRequest(value: Instantiable1[/* items */ js.Array[QueueItem], QueueLoadRequest]): Self = StObject.set(x, "QueueLoadRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueRemoveItemsRequest(value: Instantiable1[/* itemIdsToRemove */ js.Array[Double], QueueRemoveItemsRequest]): Self = StObject.set(x, "QueueRemoveItemsRequest", value.asInstanceOf[js.Any])
+    inline def setQueueRemoveItemsRequest(value: Instantiable1[/* itemIdsToRemove */ js.Array[Double], QueueRemoveItemsRequest]): Self = StObject.set(x, "QueueRemoveItemsRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueReorderItemsRequest(value: Instantiable1[/* itemIdsToReorder */ js.Array[Double], QueueReorderItemsRequest]): Self = StObject.set(x, "QueueReorderItemsRequest", value.asInstanceOf[js.Any])
+    inline def setQueueReorderItemsRequest(value: Instantiable1[/* itemIdsToReorder */ js.Array[Double], QueueReorderItemsRequest]): Self = StObject.set(x, "QueueReorderItemsRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUpdateItemsRequest(value: Instantiable1[/* itemsToUpdate */ js.Array[QueueItem], QueueUpdateItemsRequest]): Self = StObject.set(x, "QueueUpdateItemsRequest", value.asInstanceOf[js.Any])
+    inline def setQueueUpdateItemsRequest(value: Instantiable1[/* itemsToUpdate */ js.Array[QueueItem], QueueUpdateItemsRequest]): Self = StObject.set(x, "QueueUpdateItemsRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeekRequest(value: Instantiable0[SeekRequest]): Self = StObject.set(x, "SeekRequest", value.asInstanceOf[js.Any])
+    inline def setSeekRequest(value: Instantiable0[SeekRequest]): Self = StObject.set(x, "SeekRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopRequest(value: Instantiable0[StopRequest]): Self = StObject.set(x, "StopRequest", value.asInstanceOf[js.Any])
+    inline def setStopRequest(value: Instantiable0[StopRequest]): Self = StObject.set(x, "StopRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTrackStyle(value: Instantiable0[TextTrackStyle]): Self = StObject.set(x, "TextTrackStyle", value.asInstanceOf[js.Any])
+    inline def setTextTrackStyle(value: Instantiable0[TextTrackStyle]): Self = StObject.set(x, "TextTrackStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Typeoftimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Typeoftimeout): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack(value: Instantiable2[/* trackId */ Double, /* trackType */ TrackType, Track]): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: Instantiable2[/* trackId */ Double, /* trackType */ TrackType, Track]): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTvShowMediaMetadata(value: Instantiable0[TvShowMediaMetadata]): Self = StObject.set(x, "TvShowMediaMetadata", value.asInstanceOf[js.Any])
+    inline def setTvShowMediaMetadata(value: Instantiable0[TvShowMediaMetadata]): Self = StObject.set(x, "TvShowMediaMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeRequest(value: Instantiable1[/* volume */ Volume, VolumeRequest]): Self = StObject.set(x, "VolumeRequest", value.asInstanceOf[js.Any])
+    inline def setVolumeRequest(value: Instantiable1[/* volume */ Volume, VolumeRequest]): Self = StObject.set(x, "VolumeRequest", value.asInstanceOf[js.Any])
   }
 }

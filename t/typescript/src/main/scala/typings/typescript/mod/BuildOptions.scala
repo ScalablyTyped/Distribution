@@ -23,49 +23,35 @@ trait BuildOptions
 }
 object BuildOptions {
   
-  @scala.inline
-  def apply(): BuildOptions = {
+  inline def apply(): BuildOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildOptions]
   }
   
-  @scala.inline
-  implicit class BuildOptionsMutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BuildOptions](x: Self) {
     
-    @scala.inline
-    def setAssumeChangesOnlyAffectDirectDependencies(value: Boolean): Self = StObject.set(x, "assumeChangesOnlyAffectDirectDependencies", value.asInstanceOf[js.Any])
+    inline def setAssumeChangesOnlyAffectDirectDependencies(value: Boolean): Self = StObject.set(x, "assumeChangesOnlyAffectDirectDependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssumeChangesOnlyAffectDirectDependenciesUndefined: Self = StObject.set(x, "assumeChangesOnlyAffectDirectDependencies", js.undefined)
+    inline def setAssumeChangesOnlyAffectDirectDependenciesUndefined: Self = StObject.set(x, "assumeChangesOnlyAffectDirectDependencies", js.undefined)
     
-    @scala.inline
-    def setDry(value: Boolean): Self = StObject.set(x, "dry", value.asInstanceOf[js.Any])
+    inline def setDry(value: Boolean): Self = StObject.set(x, "dry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryUndefined: Self = StObject.set(x, "dry", js.undefined)
+    inline def setDryUndefined: Self = StObject.set(x, "dry", js.undefined)
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setIncremental(value: Boolean): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
+    inline def setIncremental(value: Boolean): Self = StObject.set(x, "incremental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
+    inline def setIncrementalUndefined: Self = StObject.set(x, "incremental", js.undefined)
     
-    @scala.inline
-    def setTraceResolution(value: Boolean): Self = StObject.set(x, "traceResolution", value.asInstanceOf[js.Any])
+    inline def setTraceResolution(value: Boolean): Self = StObject.set(x, "traceResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceResolutionUndefined: Self = StObject.set(x, "traceResolution", js.undefined)
+    inline def setTraceResolutionUndefined: Self = StObject.set(x, "traceResolution", js.undefined)
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

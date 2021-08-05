@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("hpp", JSImport.Namespace)
   @js.native
@@ -30,41 +28,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCheckBody(value: Boolean): Self = StObject.set(x, "checkBody", value.asInstanceOf[js.Any])
+      inline def setCheckBody(value: Boolean): Self = StObject.set(x, "checkBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckBodyOnlyForContentType(value: String): Self = StObject.set(x, "checkBodyOnlyForContentType", value.asInstanceOf[js.Any])
+      inline def setCheckBodyOnlyForContentType(value: String): Self = StObject.set(x, "checkBodyOnlyForContentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckBodyOnlyForContentTypeUndefined: Self = StObject.set(x, "checkBodyOnlyForContentType", js.undefined)
+      inline def setCheckBodyOnlyForContentTypeUndefined: Self = StObject.set(x, "checkBodyOnlyForContentType", js.undefined)
       
-      @scala.inline
-      def setCheckBodyUndefined: Self = StObject.set(x, "checkBody", js.undefined)
+      inline def setCheckBodyUndefined: Self = StObject.set(x, "checkBody", js.undefined)
       
-      @scala.inline
-      def setCheckQuery(value: Boolean): Self = StObject.set(x, "checkQuery", value.asInstanceOf[js.Any])
+      inline def setCheckQuery(value: Boolean): Self = StObject.set(x, "checkQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckQueryUndefined: Self = StObject.set(x, "checkQuery", js.undefined)
+      inline def setCheckQueryUndefined: Self = StObject.set(x, "checkQuery", js.undefined)
       
-      @scala.inline
-      def setWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+      inline def setWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+      inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
       
-      @scala.inline
-      def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
+      inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value :_*))
     }
   }
 }

@@ -20,37 +20,27 @@ trait DirectorySiteSettings extends StObject {
 }
 object DirectorySiteSettings {
   
-  @scala.inline
-  def apply(): DirectorySiteSettings = {
+  inline def apply(): DirectorySiteSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectorySiteSettings]
   }
   
-  @scala.inline
-  implicit class DirectorySiteSettingsMutableBuilder[Self <: DirectorySiteSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DirectorySiteSettings](x: Self) {
     
-    @scala.inline
-    def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
+    inline def setActiveViewOptOut(value: Boolean): Self = StObject.set(x, "activeViewOptOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveViewOptOutUndefined: Self = StObject.set(x, "activeViewOptOut", js.undefined)
+    inline def setActiveViewOptOutUndefined: Self = StObject.set(x, "activeViewOptOut", js.undefined)
     
-    @scala.inline
-    def setDfpSettings(value: DfpSettings): Self = StObject.set(x, "dfpSettings", value.asInstanceOf[js.Any])
+    inline def setDfpSettings(value: DfpSettings): Self = StObject.set(x, "dfpSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDfpSettingsUndefined: Self = StObject.set(x, "dfpSettings", js.undefined)
+    inline def setDfpSettingsUndefined: Self = StObject.set(x, "dfpSettings", js.undefined)
     
-    @scala.inline
-    def setInstreamVideoPlacementAccepted(value: Boolean): Self = StObject.set(x, "instreamVideoPlacementAccepted", value.asInstanceOf[js.Any])
+    inline def setInstreamVideoPlacementAccepted(value: Boolean): Self = StObject.set(x, "instreamVideoPlacementAccepted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstreamVideoPlacementAcceptedUndefined: Self = StObject.set(x, "instreamVideoPlacementAccepted", js.undefined)
+    inline def setInstreamVideoPlacementAcceptedUndefined: Self = StObject.set(x, "instreamVideoPlacementAccepted", js.undefined)
     
-    @scala.inline
-    def setInterstitialPlacementAccepted(value: Boolean): Self = StObject.set(x, "interstitialPlacementAccepted", value.asInstanceOf[js.Any])
+    inline def setInterstitialPlacementAccepted(value: Boolean): Self = StObject.set(x, "interstitialPlacementAccepted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterstitialPlacementAcceptedUndefined: Self = StObject.set(x, "interstitialPlacementAccepted", js.undefined)
+    inline def setInterstitialPlacementAcceptedUndefined: Self = StObject.set(x, "interstitialPlacementAccepted", js.undefined)
   }
 }

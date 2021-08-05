@@ -20,29 +20,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object VariableDeclarationStatement {
   
-  @scala.inline
-  def apply(variables: js.Array[ASTNode]): VariableDeclarationStatement = {
+  inline def apply(variables: js.Array[ASTNode]): VariableDeclarationStatement = {
     val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("VariableDeclarationStatement")
     __obj.asInstanceOf[VariableDeclarationStatement]
   }
   
-  @scala.inline
-  implicit class VariableDeclarationStatementMutableBuilder[Self <: VariableDeclarationStatement] (val x: Self) extends AnyVal {
+  extension [Self <: VariableDeclarationStatement](x: Self) {
     
-    @scala.inline
-    def setInitialValue(value: Expression): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    inline def setInitialValue(value: Expression): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+    inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: js.Array[ASTNode]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: js.Array[ASTNode]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesVarargs(value: ASTNode*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: ASTNode*): Self = StObject.set(x, "variables", js.Array(value :_*))
   }
 }

@@ -43,58 +43,41 @@ trait ReservationPurchaseRecommendation extends StObject {
 }
 object ReservationPurchaseRecommendation {
   
-  @scala.inline
-  def apply(): ReservationPurchaseRecommendation = {
+  inline def apply(): ReservationPurchaseRecommendation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservationPurchaseRecommendation]
   }
   
-  @scala.inline
-  implicit class ReservationPurchaseRecommendationMutableBuilder[Self <: ReservationPurchaseRecommendation] (val x: Self) extends AnyVal {
+  extension [Self <: ReservationPurchaseRecommendation](x: Self) {
     
-    @scala.inline
-    def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
+    inline def setAccountScope(value: AccountScope): Self = StObject.set(x, "AccountScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountScopeUndefined: Self = StObject.set(x, "AccountScope", js.undefined)
+    inline def setAccountScopeUndefined: Self = StObject.set(x, "AccountScope", js.undefined)
     
-    @scala.inline
-    def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setLookbackPeriodInDays(value: LookbackPeriodInDays): Self = StObject.set(x, "LookbackPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
+    inline def setLookbackPeriodInDaysUndefined: Self = StObject.set(x, "LookbackPeriodInDays", js.undefined)
     
-    @scala.inline
-    def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
+    inline def setPaymentOption(value: PaymentOption): Self = StObject.set(x, "PaymentOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
+    inline def setPaymentOptionUndefined: Self = StObject.set(x, "PaymentOption", js.undefined)
     
-    @scala.inline
-    def setRecommendationDetails(value: ReservationPurchaseRecommendationDetails): Self = StObject.set(x, "RecommendationDetails", value.asInstanceOf[js.Any])
+    inline def setRecommendationDetails(value: ReservationPurchaseRecommendationDetails): Self = StObject.set(x, "RecommendationDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationDetailsUndefined: Self = StObject.set(x, "RecommendationDetails", js.undefined)
+    inline def setRecommendationDetailsUndefined: Self = StObject.set(x, "RecommendationDetails", js.undefined)
     
-    @scala.inline
-    def setRecommendationDetailsVarargs(value: ReservationPurchaseRecommendationDetail*): Self = StObject.set(x, "RecommendationDetails", js.Array(value :_*))
+    inline def setRecommendationDetailsVarargs(value: ReservationPurchaseRecommendationDetail*): Self = StObject.set(x, "RecommendationDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setRecommendationSummary(value: ReservationPurchaseRecommendationSummary): Self = StObject.set(x, "RecommendationSummary", value.asInstanceOf[js.Any])
+    inline def setRecommendationSummary(value: ReservationPurchaseRecommendationSummary): Self = StObject.set(x, "RecommendationSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationSummaryUndefined: Self = StObject.set(x, "RecommendationSummary", js.undefined)
+    inline def setRecommendationSummaryUndefined: Self = StObject.set(x, "RecommendationSummary", js.undefined)
     
-    @scala.inline
-    def setServiceSpecification(value: ServiceSpecification): Self = StObject.set(x, "ServiceSpecification", value.asInstanceOf[js.Any])
+    inline def setServiceSpecification(value: ServiceSpecification): Self = StObject.set(x, "ServiceSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceSpecificationUndefined: Self = StObject.set(x, "ServiceSpecification", js.undefined)
+    inline def setServiceSpecificationUndefined: Self = StObject.set(x, "ServiceSpecification", js.undefined)
     
-    @scala.inline
-    def setTermInYears(value: TermInYears): Self = StObject.set(x, "TermInYears", value.asInstanceOf[js.Any])
+    inline def setTermInYears(value: TermInYears): Self = StObject.set(x, "TermInYears", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermInYearsUndefined: Self = StObject.set(x, "TermInYears", js.undefined)
+    inline def setTermInYearsUndefined: Self = StObject.set(x, "TermInYears", js.undefined)
   }
 }

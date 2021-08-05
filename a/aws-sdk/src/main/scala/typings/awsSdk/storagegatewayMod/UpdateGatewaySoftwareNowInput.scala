@@ -10,16 +10,13 @@ trait UpdateGatewaySoftwareNowInput extends StObject {
 }
 object UpdateGatewaySoftwareNowInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN): UpdateGatewaySoftwareNowInput = {
+  inline def apply(GatewayARN: GatewayARN): UpdateGatewaySoftwareNowInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGatewaySoftwareNowInput]
   }
   
-  @scala.inline
-  implicit class UpdateGatewaySoftwareNowInputMutableBuilder[Self <: UpdateGatewaySoftwareNowInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGatewaySoftwareNowInput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

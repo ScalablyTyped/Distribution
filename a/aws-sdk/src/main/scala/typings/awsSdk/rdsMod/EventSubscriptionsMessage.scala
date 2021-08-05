@@ -18,28 +18,21 @@ trait EventSubscriptionsMessage extends StObject {
 }
 object EventSubscriptionsMessage {
   
-  @scala.inline
-  def apply(): EventSubscriptionsMessage = {
+  inline def apply(): EventSubscriptionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventSubscriptionsMessage]
   }
   
-  @scala.inline
-  implicit class EventSubscriptionsMessageMutableBuilder[Self <: EventSubscriptionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: EventSubscriptionsMessage](x: Self) {
     
-    @scala.inline
-    def setEventSubscriptionsList(value: EventSubscriptionsList): Self = StObject.set(x, "EventSubscriptionsList", value.asInstanceOf[js.Any])
+    inline def setEventSubscriptionsList(value: EventSubscriptionsList): Self = StObject.set(x, "EventSubscriptionsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSubscriptionsListUndefined: Self = StObject.set(x, "EventSubscriptionsList", js.undefined)
+    inline def setEventSubscriptionsListUndefined: Self = StObject.set(x, "EventSubscriptionsList", js.undefined)
     
-    @scala.inline
-    def setEventSubscriptionsListVarargs(value: EventSubscription*): Self = StObject.set(x, "EventSubscriptionsList", js.Array(value :_*))
+    inline def setEventSubscriptionsListVarargs(value: EventSubscription*): Self = StObject.set(x, "EventSubscriptionsList", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -22,24 +22,17 @@ trait GeometryBox
      with _OffsetProperty[js.Any]
 object GeometryBox {
   
-  @scala.inline
-  def `border-box`: typings.preact.preactStrings.`border-box` = "border-box".asInstanceOf[typings.preact.preactStrings.`border-box`]
+  inline def `border-box`: typings.preact.preactStrings.`border-box` = "border-box".asInstanceOf[typings.preact.preactStrings.`border-box`]
   
-  @scala.inline
-  def `content-box`: typings.preact.preactStrings.`content-box` = "content-box".asInstanceOf[typings.preact.preactStrings.`content-box`]
+  inline def `content-box`: typings.preact.preactStrings.`content-box` = "content-box".asInstanceOf[typings.preact.preactStrings.`content-box`]
   
-  @scala.inline
-  def `fill-box`: typings.preact.preactStrings.`fill-box` = "fill-box".asInstanceOf[typings.preact.preactStrings.`fill-box`]
+  inline def `fill-box`: typings.preact.preactStrings.`fill-box` = "fill-box".asInstanceOf[typings.preact.preactStrings.`fill-box`]
   
-  @scala.inline
-  def `margin-box`: typings.preact.preactStrings.`margin-box` = "margin-box".asInstanceOf[typings.preact.preactStrings.`margin-box`]
+  inline def `margin-box`: typings.preact.preactStrings.`margin-box` = "margin-box".asInstanceOf[typings.preact.preactStrings.`margin-box`]
   
-  @scala.inline
-  def `padding-box`: typings.preact.preactStrings.`padding-box` = "padding-box".asInstanceOf[typings.preact.preactStrings.`padding-box`]
+  inline def `padding-box`: typings.preact.preactStrings.`padding-box` = "padding-box".asInstanceOf[typings.preact.preactStrings.`padding-box`]
   
-  @scala.inline
-  def `stroke-box`: typings.preact.preactStrings.`stroke-box` = "stroke-box".asInstanceOf[typings.preact.preactStrings.`stroke-box`]
+  inline def `stroke-box`: typings.preact.preactStrings.`stroke-box` = "stroke-box".asInstanceOf[typings.preact.preactStrings.`stroke-box`]
   
-  @scala.inline
-  def `view-box`: typings.preact.preactStrings.`view-box` = "view-box".asInstanceOf[typings.preact.preactStrings.`view-box`]
+  inline def `view-box`: typings.preact.preactStrings.`view-box` = "view-box".asInstanceOf[typings.preact.preactStrings.`view-box`]
 }

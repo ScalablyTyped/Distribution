@@ -13,22 +13,17 @@ trait BatchReadResponse extends StObject {
 }
 object BatchReadResponse {
   
-  @scala.inline
-  def apply(): BatchReadResponse = {
+  inline def apply(): BatchReadResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchReadResponse]
   }
   
-  @scala.inline
-  implicit class BatchReadResponseMutableBuilder[Self <: BatchReadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchReadResponse](x: Self) {
     
-    @scala.inline
-    def setResponses(value: BatchReadOperationResponseList): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: BatchReadOperationResponseList): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "Responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: BatchReadOperationResponse*): Self = StObject.set(x, "Responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: BatchReadOperationResponse*): Self = StObject.set(x, "Responses", js.Array(value :_*))
   }
 }

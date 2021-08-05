@@ -27,8 +27,7 @@ trait CallbackType
 }
 object CallbackType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[Argument],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
@@ -40,25 +39,18 @@ object CallbackType {
     __obj.asInstanceOf[CallbackType]
   }
   
-  @scala.inline
-  implicit class CallbackTypeMutableBuilder[Self <: CallbackType] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackType](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
+    inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: callback): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: callback): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

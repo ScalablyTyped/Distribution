@@ -10,19 +10,15 @@ trait PlaneDetectionState extends StObject {
 }
 object PlaneDetectionState {
   
-  @scala.inline
-  def apply(): PlaneDetectionState = {
+  inline def apply(): PlaneDetectionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlaneDetectionState]
   }
   
-  @scala.inline
-  implicit class PlaneDetectionStateMutableBuilder[Self <: PlaneDetectionState] (val x: Self) extends AnyVal {
+  extension [Self <: PlaneDetectionState](x: Self) {
     
-    @scala.inline
-    def setPlaneDetectionState(value: EnabledBoolean): Self = StObject.set(x, "planeDetectionState", value.asInstanceOf[js.Any])
+    inline def setPlaneDetectionState(value: EnabledBoolean): Self = StObject.set(x, "planeDetectionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaneDetectionStateUndefined: Self = StObject.set(x, "planeDetectionState", js.undefined)
+    inline def setPlaneDetectionStateUndefined: Self = StObject.set(x, "planeDetectionState", js.undefined)
   }
 }

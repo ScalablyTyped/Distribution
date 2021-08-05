@@ -21,21 +21,21 @@ object facetMod {
     
     def assemble(): js.Array[VgData] = js.native
     
-    var assembleFacetHeaderData: js.Any = js.native
+    /* private */ var assembleFacetHeaderData: js.Any = js.native
     
-    var assembleRowColumnHeaderData: js.Any = js.native
+    /* private */ var assembleRowColumnHeaderData: js.Any = js.native
     
-    val childModel: js.Any = js.native
+    /* private */ val childModel: js.Any = js.native
     
-    val column: js.Any = js.native
+    /* private */ val column: js.Any = js.native
     
     var data: String = js.native
     
-    val facet: js.Any = js.native
+    /* private */ val facet: js.Any = js.native
     
     def fields: js.Array[String] = js.native
     
-    var getChildIndependentFieldsWithStep: js.Any = js.native
+    /* private */ var getChildIndependentFieldsWithStep: js.Any = js.native
     
     /**
       * The name to reference this source is its name.
@@ -46,6 +46,6 @@ object facetMod {
     
     val name: String = js.native
     
-    val row: js.Any = js.native
+    /* private */ val row: js.Any = js.native
   }
 }

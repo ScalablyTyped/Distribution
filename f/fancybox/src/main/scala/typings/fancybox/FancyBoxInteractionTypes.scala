@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FancyBoxInteractionTypes extends StObject
 object FancyBoxInteractionTypes {
   
-  @scala.inline
-  def close: typings.fancybox.fancyboxStrings.close = "close".asInstanceOf[typings.fancybox.fancyboxStrings.close]
+  inline def close: typings.fancybox.fancyboxStrings.close = "close".asInstanceOf[typings.fancybox.fancyboxStrings.close]
   
-  @scala.inline
-  def `false`: typings.fancybox.fancyboxBooleans.`false` = false.asInstanceOf[typings.fancybox.fancyboxBooleans.`false`]
+  inline def `false`: typings.fancybox.fancyboxBooleans.`false` = false.asInstanceOf[typings.fancybox.fancyboxBooleans.`false`]
   
-  @scala.inline
-  def next: typings.fancybox.fancyboxStrings.next = "next".asInstanceOf[typings.fancybox.fancyboxStrings.next]
+  inline def next: typings.fancybox.fancyboxStrings.next = "next".asInstanceOf[typings.fancybox.fancyboxStrings.next]
   
-  @scala.inline
-  def nextOrClose: typings.fancybox.fancyboxStrings.nextOrClose = "nextOrClose".asInstanceOf[typings.fancybox.fancyboxStrings.nextOrClose]
+  inline def nextOrClose: typings.fancybox.fancyboxStrings.nextOrClose = "nextOrClose".asInstanceOf[typings.fancybox.fancyboxStrings.nextOrClose]
   
-  @scala.inline
-  def toggleControls: typings.fancybox.fancyboxStrings.toggleControls = "toggleControls".asInstanceOf[typings.fancybox.fancyboxStrings.toggleControls]
+  inline def toggleControls: typings.fancybox.fancyboxStrings.toggleControls = "toggleControls".asInstanceOf[typings.fancybox.fancyboxStrings.toggleControls]
   
-  @scala.inline
-  def zoom: typings.fancybox.fancyboxStrings.zoom = "zoom".asInstanceOf[typings.fancybox.fancyboxStrings.zoom]
+  inline def zoom: typings.fancybox.fancyboxStrings.zoom = "zoom".asInstanceOf[typings.fancybox.fancyboxStrings.zoom]
 }

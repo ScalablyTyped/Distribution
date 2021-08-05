@@ -24,6 +24,6 @@ object flagMod {
     
     def set(enumVal: Double, newValue: Boolean): this.type = js.native
     
-    var value: js.Any = js.native
+    /* private */ var value: js.Any = js.native
   }
 }

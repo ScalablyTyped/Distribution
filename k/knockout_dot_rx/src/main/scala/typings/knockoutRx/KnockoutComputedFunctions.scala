@@ -11,16 +11,13 @@ trait KnockoutComputedFunctions[T] extends StObject {
 }
 object KnockoutComputedFunctions {
   
-  @scala.inline
-  def apply[T](toObservableWithReplyLatest: () => Observable[T]): KnockoutComputedFunctions[T] = {
+  inline def apply[T](toObservableWithReplyLatest: () => Observable[T]): KnockoutComputedFunctions[T] = {
     val __obj = js.Dynamic.literal(toObservableWithReplyLatest = js.Any.fromFunction0(toObservableWithReplyLatest))
     __obj.asInstanceOf[KnockoutComputedFunctions[T]]
   }
   
-  @scala.inline
-  implicit class KnockoutComputedFunctionsMutableBuilder[Self <: KnockoutComputedFunctions[?], T] (val x: Self & KnockoutComputedFunctions[T]) extends AnyVal {
+  extension [Self <: KnockoutComputedFunctions[?], T](x: Self & KnockoutComputedFunctions[T]) {
     
-    @scala.inline
-    def setToObservableWithReplyLatest(value: () => Observable[T]): Self = StObject.set(x, "toObservableWithReplyLatest", js.Any.fromFunction0(value))
+    inline def setToObservableWithReplyLatest(value: () => Observable[T]): Self = StObject.set(x, "toObservableWithReplyLatest", js.Any.fromFunction0(value))
   }
 }

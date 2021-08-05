@@ -36,31 +36,23 @@ trait ChartTitleFormatLoadOptions extends StObject {
 }
 object ChartTitleFormatLoadOptions {
   
-  @scala.inline
-  def apply(): ChartTitleFormatLoadOptions = {
+  inline def apply(): ChartTitleFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartTitleFormatLoadOptions]
   }
   
-  @scala.inline
-  implicit class ChartTitleFormatLoadOptionsMutableBuilder[Self <: ChartTitleFormatLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTitleFormatLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setBorder(value: ChartBorderLoadOptions): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ChartBorderLoadOptions): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setFont(value: ChartFontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: ChartFontLoadOptions): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
   }
 }

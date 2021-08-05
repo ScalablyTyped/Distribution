@@ -21,20 +21,16 @@ trait StatefulSetUpdateStrategy extends StObject {
 }
 object StatefulSetUpdateStrategy {
   
-  @scala.inline
-  def apply(rollingUpdate: RollingUpdateStatefulSetStrategy, `type`: String): StatefulSetUpdateStrategy = {
+  inline def apply(rollingUpdate: RollingUpdateStatefulSetStrategy, `type`: String): StatefulSetUpdateStrategy = {
     val __obj = js.Dynamic.literal(rollingUpdate = rollingUpdate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatefulSetUpdateStrategy]
   }
   
-  @scala.inline
-  implicit class StatefulSetUpdateStrategyMutableBuilder[Self <: StatefulSetUpdateStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: StatefulSetUpdateStrategy](x: Self) {
     
-    @scala.inline
-    def setRollingUpdate(value: RollingUpdateStatefulSetStrategy): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
+    inline def setRollingUpdate(value: RollingUpdateStatefulSetStrategy): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

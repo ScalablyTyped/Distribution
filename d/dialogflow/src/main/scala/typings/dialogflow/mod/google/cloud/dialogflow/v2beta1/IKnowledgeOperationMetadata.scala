@@ -15,24 +15,19 @@ trait IKnowledgeOperationMetadata extends StObject {
 }
 object IKnowledgeOperationMetadata {
   
-  @scala.inline
-  def apply(): IKnowledgeOperationMetadata = {
+  inline def apply(): IKnowledgeOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IKnowledgeOperationMetadata]
   }
   
-  @scala.inline
-  implicit class IKnowledgeOperationMetadataMutableBuilder[Self <: IKnowledgeOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: IKnowledgeOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setState(
+    inline def setState(
       value: State | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2beta1.KnowledgeOperationMetadata.State * / any */ String)
     ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateNull: Self = StObject.set(x, "state", null)
+    inline def setStateNull: Self = StObject.set(x, "state", null)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

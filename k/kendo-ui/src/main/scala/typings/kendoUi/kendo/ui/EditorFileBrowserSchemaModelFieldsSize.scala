@@ -12,25 +12,19 @@ trait EditorFileBrowserSchemaModelFieldsSize extends StObject {
 }
 object EditorFileBrowserSchemaModelFieldsSize {
   
-  @scala.inline
-  def apply(): EditorFileBrowserSchemaModelFieldsSize = {
+  inline def apply(): EditorFileBrowserSchemaModelFieldsSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorFileBrowserSchemaModelFieldsSize]
   }
   
-  @scala.inline
-  implicit class EditorFileBrowserSchemaModelFieldsSizeMutableBuilder[Self <: EditorFileBrowserSchemaModelFieldsSize] (val x: Self) extends AnyVal {
+  extension [Self <: EditorFileBrowserSchemaModelFieldsSize](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
   }
 }

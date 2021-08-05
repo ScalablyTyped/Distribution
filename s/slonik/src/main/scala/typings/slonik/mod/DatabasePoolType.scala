@@ -23,8 +23,7 @@ trait DatabasePoolType
 }
 object DatabasePoolType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     any: /* args */ QueryMethodParams[js.Any] => js.Promise[js.Array[js.Any]],
     anyFirst: /* args */ QueryMethodParams[js.Any] => js.Promise[
       js.Array[
@@ -57,24 +56,18 @@ object DatabasePoolType {
     __obj.asInstanceOf[DatabasePoolType]
   }
   
-  @scala.inline
-  implicit class DatabasePoolTypeMutableBuilder[Self <: DatabasePoolType] (val x: Self) extends AnyVal {
+  extension [Self <: DatabasePoolType](x: Self) {
     
-    @scala.inline
-    def setConnect(value: ConnectionRoutineType[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+    inline def setConnect(value: ConnectionRoutineType[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnd(value: () => js.Promise[Unit]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => js.Promise[Unit]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPoolState(value: () => PoolStateType): Self = StObject.set(x, "getPoolState", js.Any.fromFunction0(value))
+    inline def setGetPoolState(value: () => PoolStateType): Self = StObject.set(x, "getPoolState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStream(
+    inline def setStream(
       value: (TaggedTemplateLiteralInvocationType[QueryResultRowType[String]], StreamHandlerType) => js.Promise[Null]
     ): Self = StObject.set(x, "stream", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTransaction(value: TransactionFunctionType[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
+    inline def setTransaction(value: TransactionFunctionType[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
   }
 }

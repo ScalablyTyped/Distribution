@@ -12,19 +12,15 @@ trait Component extends StObject {
 }
 object Component {
   
-  @scala.inline
-  def apply(component: Instantiable, position: String): Component = {
+  inline def apply(component: Instantiable, position: String): Component = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[Component]
   }
   
-  @scala.inline
-  implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+  extension [Self <: Component](x: Self) {
     
-    @scala.inline
-    def setComponent(value: Instantiable): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Instantiable): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -14,56 +14,46 @@ object testUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def check(componentName: String, expected: ExpectedComponents): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def check(componentName: String, expected: ExpectedComponents, exactProperties: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def check(componentName: String, expected: ExpectedComponents, exactProperties: Boolean, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def check(
+  inline def check(componentName: String, expected: ExpectedComponents): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def check(componentName: String, expected: ExpectedComponents, exactProperties: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def check(componentName: String, expected: ExpectedComponents, exactProperties: Boolean, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def check(
     componentName: String,
     expected: ExpectedComponents,
     exactProperties: Boolean,
     description: String,
     parserOpts: ParserOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def check(
+  inline def check(
     componentName: String,
     expected: ExpectedComponents,
     exactProperties: Boolean,
     description: Null,
     parserOpts: ParserOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def check(
+  inline def check(
     componentName: String,
     expected: ExpectedComponents,
     exactProperties: Boolean,
     description: Unit,
     parserOpts: ParserOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def check(componentName: String, expected: ExpectedComponents, exactProperties: Unit, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def check(
+  inline def check(componentName: String, expected: ExpectedComponents, exactProperties: Unit, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def check(
     componentName: String,
     expected: ExpectedComponents,
     exactProperties: Unit,
     description: String,
     parserOpts: ParserOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def check(
+  inline def check(
     componentName: String,
     expected: ExpectedComponents,
     exactProperties: Unit,
     description: Null,
     parserOpts: ParserOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def check(
+  inline def check(
     componentName: String,
     expected: ExpectedComponents,
     exactProperties: Unit,
@@ -71,27 +61,22 @@ object testUtilsMod {
     parserOpts: ParserOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def checkComponent(actual: js.Array[ComponentDoc], expected: ExpectedComponents): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def checkComponent(actual: js.Array[ComponentDoc], expected: ExpectedComponents, exactProperties: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def checkComponent(
+  inline def checkComponent(actual: js.Array[ComponentDoc], expected: ExpectedComponents): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkComponent(actual: js.Array[ComponentDoc], expected: ExpectedComponents, exactProperties: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkComponent(
     actual: js.Array[ComponentDoc],
     expected: ExpectedComponents,
     exactProperties: Boolean,
     description: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def checkComponent(
+  inline def checkComponent(
     actual: js.Array[ComponentDoc],
     expected: ExpectedComponents,
     exactProperties: Unit,
     description: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def fixturePath(componentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixturePath")(componentName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fixturePath(componentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixturePath")(componentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type ExpectedComponent = StringDictionary[ExpectedProp]
   
@@ -115,57 +100,41 @@ object testUtilsMod {
   }
   object ExpectedProp {
     
-    @scala.inline
-    def apply(`type`: String): ExpectedProp = {
+    inline def apply(`type`: String): ExpectedProp = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpectedProp]
     }
     
-    @scala.inline
-    implicit class ExpectedPropMutableBuilder[Self <: ExpectedProp] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectedProp](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: String | Double | Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String | Double | Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setParent(value: FileName): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: FileName): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

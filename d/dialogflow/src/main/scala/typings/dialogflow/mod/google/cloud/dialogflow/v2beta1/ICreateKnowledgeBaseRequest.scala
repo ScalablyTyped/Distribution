@@ -15,31 +15,23 @@ trait ICreateKnowledgeBaseRequest extends StObject {
 }
 object ICreateKnowledgeBaseRequest {
   
-  @scala.inline
-  def apply(): ICreateKnowledgeBaseRequest = {
+  inline def apply(): ICreateKnowledgeBaseRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICreateKnowledgeBaseRequest]
   }
   
-  @scala.inline
-  implicit class ICreateKnowledgeBaseRequestMutableBuilder[Self <: ICreateKnowledgeBaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateKnowledgeBaseRequest](x: Self) {
     
-    @scala.inline
-    def setKnowledgeBase(value: IKnowledgeBase): Self = StObject.set(x, "knowledgeBase", value.asInstanceOf[js.Any])
+    inline def setKnowledgeBase(value: IKnowledgeBase): Self = StObject.set(x, "knowledgeBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnowledgeBaseNull: Self = StObject.set(x, "knowledgeBase", null)
+    inline def setKnowledgeBaseNull: Self = StObject.set(x, "knowledgeBase", null)
     
-    @scala.inline
-    def setKnowledgeBaseUndefined: Self = StObject.set(x, "knowledgeBase", js.undefined)
+    inline def setKnowledgeBaseUndefined: Self = StObject.set(x, "knowledgeBase", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

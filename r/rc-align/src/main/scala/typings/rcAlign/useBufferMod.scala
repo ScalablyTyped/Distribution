@@ -10,6 +10,5 @@ object useBufferMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(callback: js.Function0[Boolean], buffer: Double): js.Array[js.Function1[/* force */ js.UndefOr[Boolean], Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Function1[/* force */ js.UndefOr[Boolean], Unit]]]
+  inline def default(callback: js.Function0[Boolean], buffer: Double): js.Array[js.Function1[/* force */ js.UndefOr[Boolean], Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Function1[/* force */ js.UndefOr[Boolean], Unit]]]
 }

@@ -67,83 +67,59 @@ trait WorkspaceUserAuthorization extends StObject {
 }
 object WorkspaceUserAuthorization {
   
-  @scala.inline
-  def apply(): WorkspaceUserAuthorization = {
+  inline def apply(): WorkspaceUserAuthorization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceUserAuthorization]
   }
   
-  @scala.inline
-  implicit class WorkspaceUserAuthorizationMutableBuilder[Self <: WorkspaceUserAuthorization] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceUserAuthorization](x: Self) {
     
-    @scala.inline
-    def setCanDelete(value: String): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
+    inline def setCanDelete(value: String): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDeleteUndefined: Self = StObject.set(x, "canDelete", js.undefined)
+    inline def setCanDeleteUndefined: Self = StObject.set(x, "canDelete", js.undefined)
     
-    @scala.inline
-    def setCanMove(value: String): Self = StObject.set(x, "canMove", value.asInstanceOf[js.Any])
+    inline def setCanMove(value: String): Self = StObject.set(x, "canMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanMoveUndefined: Self = StObject.set(x, "canMove", js.undefined)
+    inline def setCanMoveUndefined: Self = StObject.set(x, "canMove", js.undefined)
     
-    @scala.inline
-    def setCanTransact(value: String): Self = StObject.set(x, "canTransact", value.asInstanceOf[js.Any])
+    inline def setCanTransact(value: String): Self = StObject.set(x, "canTransact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanTransactUndefined: Self = StObject.set(x, "canTransact", js.undefined)
+    inline def setCanTransactUndefined: Self = StObject.set(x, "canTransact", js.undefined)
     
-    @scala.inline
-    def setCanView(value: String): Self = StObject.set(x, "canView", value.asInstanceOf[js.Any])
+    inline def setCanView(value: String): Self = StObject.set(x, "canView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanViewUndefined: Self = StObject.set(x, "canView", js.undefined)
+    inline def setCanViewUndefined: Self = StObject.set(x, "canView", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedById(value: String): Self = StObject.set(x, "createdById", value.asInstanceOf[js.Any])
+    inline def setCreatedById(value: String): Self = StObject.set(x, "createdById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByIdUndefined: Self = StObject.set(x, "createdById", js.undefined)
+    inline def setCreatedByIdUndefined: Self = StObject.set(x, "createdById", js.undefined)
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedById(value: String): Self = StObject.set(x, "modifiedById", value.asInstanceOf[js.Any])
+    inline def setModifiedById(value: String): Self = StObject.set(x, "modifiedById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedByIdUndefined: Self = StObject.set(x, "modifiedById", js.undefined)
+    inline def setModifiedByIdUndefined: Self = StObject.set(x, "modifiedById", js.undefined)
     
-    @scala.inline
-    def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
+    inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
     
-    @scala.inline
-    def setWorkspaceUserId(value: String): Self = StObject.set(x, "workspaceUserId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceUserId(value: String): Self = StObject.set(x, "workspaceUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceUserIdUndefined: Self = StObject.set(x, "workspaceUserId", js.undefined)
+    inline def setWorkspaceUserIdUndefined: Self = StObject.set(x, "workspaceUserId", js.undefined)
     
-    @scala.inline
-    def setWorkspaceUserInformation(
+    inline def setWorkspaceUserInformation(
       value: /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
     ): Self = StObject.set(x, "workspaceUserInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceUserInformationUndefined: Self = StObject.set(x, "workspaceUserInformation", js.undefined)
+    inline def setWorkspaceUserInformationUndefined: Self = StObject.set(x, "workspaceUserInformation", js.undefined)
   }
 }

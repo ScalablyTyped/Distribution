@@ -15,19 +15,15 @@ trait AbortSignal extends StObject {
 }
 object AbortSignal {
   
-  @scala.inline
-  def apply(aborted: Boolean, onabort: AbortEvent => Unit): AbortSignal = {
+  inline def apply(aborted: Boolean, onabort: AbortEvent => Unit): AbortSignal = {
     val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], onabort = js.Any.fromFunction1(onabort))
     __obj.asInstanceOf[AbortSignal]
   }
   
-  @scala.inline
-  implicit class AbortSignalMutableBuilder[Self <: AbortSignal] (val x: Self) extends AnyVal {
+  extension [Self <: AbortSignal](x: Self) {
     
-    @scala.inline
-    def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+    inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnabort(value: AbortEvent => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction1(value))
+    inline def setOnabort(value: AbortEvent => Unit): Self = StObject.set(x, "onabort", js.Any.fromFunction1(value))
   }
 }

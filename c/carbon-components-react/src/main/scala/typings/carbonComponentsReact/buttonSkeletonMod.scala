@@ -24,26 +24,20 @@ object buttonSkeletonMod extends Shortcut {
   }
   object ButtonSkeletonProps {
     
-    @scala.inline
-    def apply(): ButtonSkeletonProps = {
+    inline def apply(): ButtonSkeletonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonSkeletonProps]
     }
     
-    @scala.inline
-    implicit class ButtonSkeletonPropsMutableBuilder[Self <: ButtonSkeletonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonSkeletonProps](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
     }
   }
   

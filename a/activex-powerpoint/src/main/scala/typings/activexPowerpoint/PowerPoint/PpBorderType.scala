@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpBorderType extends StObject
 object PpBorderType {
   
-  @scala.inline
-  def ppBorderBottom: `3` = 3.asInstanceOf[`3`]
+  inline def ppBorderBottom: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppBorderDiagonalDown: `5` = 5.asInstanceOf[`5`]
+  inline def ppBorderDiagonalDown: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppBorderDiagonalUp: `6` = 6.asInstanceOf[`6`]
+  inline def ppBorderDiagonalUp: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def ppBorderLeft: `2` = 2.asInstanceOf[`2`]
+  inline def ppBorderLeft: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppBorderRight: `4` = 4.asInstanceOf[`4`]
+  inline def ppBorderRight: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppBorderTop: `1` = 1.asInstanceOf[`1`]
+  inline def ppBorderTop: `1` = 1.asInstanceOf[`1`]
 }

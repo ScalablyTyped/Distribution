@@ -23,34 +23,25 @@ trait VpcClassicLink extends StObject {
 }
 object VpcClassicLink {
   
-  @scala.inline
-  def apply(): VpcClassicLink = {
+  inline def apply(): VpcClassicLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpcClassicLink]
   }
   
-  @scala.inline
-  implicit class VpcClassicLinkMutableBuilder[Self <: VpcClassicLink] (val x: Self) extends AnyVal {
+  extension [Self <: VpcClassicLink](x: Self) {
     
-    @scala.inline
-    def setClassicLinkEnabled(value: Boolean): Self = StObject.set(x, "ClassicLinkEnabled", value.asInstanceOf[js.Any])
+    inline def setClassicLinkEnabled(value: Boolean): Self = StObject.set(x, "ClassicLinkEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassicLinkEnabledUndefined: Self = StObject.set(x, "ClassicLinkEnabled", js.undefined)
+    inline def setClassicLinkEnabledUndefined: Self = StObject.set(x, "ClassicLinkEnabled", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

@@ -15,7 +15,7 @@ class PositionTrackingWalker ()
   extends StObject
      with typings.typescriptServices.TypeScript.PositionTrackingWalker {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _position: js.Any = js.native
   
   /* CompleteClass */
@@ -210,8 +210,8 @@ class PositionTrackingWalker ()
   /* CompleteClass */
   override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
   
-  /* CompleteClass */
-  /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def visitOptionalToken(token: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def visitParameter(node: typings.typescriptServices.TypeScript.ParameterSyntax): js.Any = js.native

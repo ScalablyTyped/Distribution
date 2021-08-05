@@ -10,19 +10,15 @@ trait ResponsiveMode extends StObject {
 }
 object ResponsiveMode {
   
-  @scala.inline
-  def apply(): ResponsiveMode = {
+  inline def apply(): ResponsiveMode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponsiveMode]
   }
   
-  @scala.inline
-  implicit class ResponsiveModeMutableBuilder[Self <: ResponsiveMode] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsiveMode](x: Self) {
     
-    @scala.inline
-    def setResponsiveMode(value: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode): Self = StObject.set(x, "responsiveMode", value.asInstanceOf[js.Any])
+    inline def setResponsiveMode(value: typings.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode): Self = StObject.set(x, "responsiveMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsiveModeUndefined: Self = StObject.set(x, "responsiveMode", js.undefined)
+    inline def setResponsiveModeUndefined: Self = StObject.set(x, "responsiveMode", js.undefined)
   }
 }

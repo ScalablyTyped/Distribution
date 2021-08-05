@@ -23,8 +23,7 @@ trait BaseIndexMark
 }
 object BaseIndexMark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlternativeText: String,
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
@@ -43,10 +42,8 @@ object BaseIndexMark {
     __obj.asInstanceOf[BaseIndexMark]
   }
   
-  @scala.inline
-  implicit class BaseIndexMarkMutableBuilder[Self <: BaseIndexMark] (val x: Self) extends AnyVal {
+  extension [Self <: BaseIndexMark](x: Self) {
     
-    @scala.inline
-    def setAlternativeText(value: String): Self = StObject.set(x, "AlternativeText", value.asInstanceOf[js.Any])
+    inline def setAlternativeText(value: String): Self = StObject.set(x, "AlternativeText", value.asInstanceOf[js.Any])
   }
 }

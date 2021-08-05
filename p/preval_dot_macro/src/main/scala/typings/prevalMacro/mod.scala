@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(strings: TemplateStringsArray, values: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def apply(strings: TemplateStringsArray, values: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(strings.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("preval.macro", JSImport.Namespace)
   @js.native

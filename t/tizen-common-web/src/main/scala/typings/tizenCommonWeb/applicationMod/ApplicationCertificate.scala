@@ -18,20 +18,16 @@ trait ApplicationCertificate extends StObject {
 }
 object ApplicationCertificate {
   
-  @scala.inline
-  def apply(`type`: String, value: String): ApplicationCertificate = {
+  inline def apply(`type`: String, value: String): ApplicationCertificate = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationCertificate]
   }
   
-  @scala.inline
-  implicit class ApplicationCertificateMutableBuilder[Self <: ApplicationCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationCertificate](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

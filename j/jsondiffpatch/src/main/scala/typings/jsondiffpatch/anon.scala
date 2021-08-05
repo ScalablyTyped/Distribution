@@ -20,20 +20,16 @@ object anon {
   }
   object DetectMove {
     
-    @scala.inline
-    def apply(detectMove: Boolean, includeValueOnMove: Boolean): DetectMove = {
+    inline def apply(detectMove: Boolean, includeValueOnMove: Boolean): DetectMove = {
       val __obj = js.Dynamic.literal(detectMove = detectMove.asInstanceOf[js.Any], includeValueOnMove = includeValueOnMove.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetectMove]
     }
     
-    @scala.inline
-    implicit class DetectMoveMutableBuilder[Self <: DetectMove] (val x: Self) extends AnyVal {
+    extension [Self <: DetectMove](x: Self) {
       
-      @scala.inline
-      def setDetectMove(value: Boolean): Self = StObject.set(x, "detectMove", value.asInstanceOf[js.Any])
+      inline def setDetectMove(value: Boolean): Self = StObject.set(x, "detectMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeValueOnMove(value: Boolean): Self = StObject.set(x, "includeValueOnMove", value.asInstanceOf[js.Any])
+      inline def setIncludeValueOnMove(value: Boolean): Self = StObject.set(x, "includeValueOnMove", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,23 +43,18 @@ object anon {
   }
   object Diff {
     
-    @scala.inline
-    def apply(diff: Pipe[DiffContext], patch: Pipe[PatchContext], reverse: Pipe[ReverseContext]): Diff = {
+    inline def apply(diff: Pipe[DiffContext], patch: Pipe[PatchContext], reverse: Pipe[ReverseContext]): Diff = {
       val __obj = js.Dynamic.literal(diff = diff.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], reverse = reverse.asInstanceOf[js.Any])
       __obj.asInstanceOf[Diff]
     }
     
-    @scala.inline
-    implicit class DiffMutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
+    extension [Self <: Diff](x: Self) {
       
-      @scala.inline
-      def setDiff(value: Pipe[DiffContext]): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
+      inline def setDiff(value: Pipe[DiffContext]): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatch(value: Pipe[PatchContext]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: Pipe[PatchContext]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverse(value: Pipe[ReverseContext]): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Pipe[ReverseContext]): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,17 +65,14 @@ object anon {
   }
   object MinLength {
     
-    @scala.inline
-    def apply(minLength: Double): MinLength = {
+    inline def apply(minLength: Double): MinLength = {
       val __obj = js.Dynamic.literal(minLength = minLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[MinLength]
     }
     
-    @scala.inline
-    implicit class MinLengthMutableBuilder[Self <: MinLength] (val x: Self) extends AnyVal {
+    extension [Self <: MinLength](x: Self) {
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     }
   }
 }

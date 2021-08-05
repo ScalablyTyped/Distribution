@@ -30,7 +30,7 @@ object untagResourceCommandMod {
         ] {
     def this(input: UntagResourceCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -42,7 +42,7 @@ object untagResourceCommandMod {
       options: HttpHandlerOptions
     ): Handler[UntagResourceCommandInput, UntagResourceCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type UntagResourceCommandInput = UntagResourceInput
@@ -54,8 +54,7 @@ object untagResourceCommandMod {
        with _ServiceOutputTypes
   object UntagResourceCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UntagResourceCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): UntagResourceCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UntagResourceCommandOutput]
     }

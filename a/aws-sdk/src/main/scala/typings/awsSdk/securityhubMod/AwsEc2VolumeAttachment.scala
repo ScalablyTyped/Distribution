@@ -28,37 +28,27 @@ trait AwsEc2VolumeAttachment extends StObject {
 }
 object AwsEc2VolumeAttachment {
   
-  @scala.inline
-  def apply(): AwsEc2VolumeAttachment = {
+  inline def apply(): AwsEc2VolumeAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsEc2VolumeAttachment]
   }
   
-  @scala.inline
-  implicit class AwsEc2VolumeAttachmentMutableBuilder[Self <: AwsEc2VolumeAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: AwsEc2VolumeAttachment](x: Self) {
     
-    @scala.inline
-    def setAttachTime(value: NonEmptyString): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
+    inline def setAttachTime(value: NonEmptyString): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachTimeUndefined: Self = StObject.set(x, "AttachTime", js.undefined)
+    inline def setAttachTimeUndefined: Self = StObject.set(x, "AttachTime", js.undefined)
     
-    @scala.inline
-    def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
+    inline def setDeleteOnTerminationUndefined: Self = StObject.set(x, "DeleteOnTermination", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: NonEmptyString): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: NonEmptyString): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -11,25 +11,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compile(tmpl: String): RenderFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(tmpl.asInstanceOf[js.Any]).asInstanceOf[RenderFunction]
-  @scala.inline
-  def compile(tmpl: String, `def`: js.Object): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(tmpl.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
+  inline def compile(tmpl: String): RenderFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(tmpl.asInstanceOf[js.Any]).asInstanceOf[RenderFunction]
+  inline def compile(tmpl: String, `def`: js.Object): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(tmpl.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
   
-  @scala.inline
-  def template(tmpl: String): RenderFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any]).asInstanceOf[RenderFunction]
-  @scala.inline
-  def template(tmpl: String, c: Unit, `def`: js.Object): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], c.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
-  @scala.inline
-  def template(tmpl: String, c: TemplateSettings_): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
-  @scala.inline
-  def template(tmpl: String, c: TemplateSettings_, `def`: js.Object): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], c.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
+  inline def template(tmpl: String): RenderFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any]).asInstanceOf[RenderFunction]
+  inline def template(tmpl: String, c: Unit, `def`: js.Object): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], c.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
+  inline def template(tmpl: String, c: TemplateSettings_): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
+  inline def template(tmpl: String, c: TemplateSettings_, `def`: js.Object): RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("template")(tmpl.asInstanceOf[js.Any], c.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[RenderFunction]
   
   @JSImport("dot", "templateSettings")
   @js.native
   def templateSettings: TemplateSettings_ = js.native
-  @scala.inline
-  def templateSettings_=(x: TemplateSettings_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("templateSettings")(x.asInstanceOf[js.Any])
+  inline def templateSettings_=(x: TemplateSettings_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("templateSettings")(x.asInstanceOf[js.Any])
   
   @JSImport("dot", "version")
   @js.native
@@ -71,8 +64,7 @@ object mod {
   }
   object TemplateSettings_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       append: Boolean,
       conditional: RegExp,
       define: RegExp,
@@ -91,47 +83,33 @@ object mod {
       __obj.asInstanceOf[TemplateSettings_]
     }
     
-    @scala.inline
-    implicit class TemplateSettings_MutableBuilder[Self <: TemplateSettings_] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateSettings_](x: Self) {
       
-      @scala.inline
-      def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+      inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditional(value: RegExp): Self = StObject.set(x, "conditional", value.asInstanceOf[js.Any])
+      inline def setConditional(value: RegExp): Self = StObject.set(x, "conditional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefine(value: RegExp): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
+      inline def setDefine(value: RegExp): Self = StObject.set(x, "define", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefineParams(value: RegExp): Self = StObject.set(x, "defineParams", value.asInstanceOf[js.Any])
+      inline def setDefineParams(value: RegExp): Self = StObject.set(x, "defineParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncode(value: RegExp): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      inline def setEncode(value: RegExp): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvaluate(value: RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
+      inline def setEvaluate(value: RegExp): Self = StObject.set(x, "evaluate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolate(value: RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+      inline def setInterpolate(value: RegExp): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterate(value: RegExp): Self = StObject.set(x, "iterate", value.asInstanceOf[js.Any])
+      inline def setIterate(value: RegExp): Self = StObject.set(x, "iterate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfcontained(value: Boolean): Self = StObject.set(x, "selfcontained", value.asInstanceOf[js.Any])
+      inline def setSelfcontained(value: Boolean): Self = StObject.set(x, "selfcontained", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+      inline def setStrip(value: Boolean): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUse(value: RegExp): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+      inline def setUse(value: RegExp): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseParams(value: RegExp): Self = StObject.set(x, "useParams", value.asInstanceOf[js.Any])
+      inline def setUseParams(value: RegExp): Self = StObject.set(x, "useParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarname(value: String): Self = StObject.set(x, "varname", value.asInstanceOf[js.Any])
+      inline def setVarname(value: String): Self = StObject.set(x, "varname", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,17 +121,14 @@ object mod {
     }
     object String {
       
-      @scala.inline
-      def apply(encodeHTML: () => java.lang.String): typings.dot.mod.global.String = {
+      inline def apply(encodeHTML: () => java.lang.String): typings.dot.mod.global.String = {
         val __obj = js.Dynamic.literal(encodeHTML = js.Any.fromFunction0(encodeHTML))
         __obj.asInstanceOf[typings.dot.mod.global.String]
       }
       
-      @scala.inline
-      implicit class StringMutableBuilder[Self <: typings.dot.mod.global.String] (val x: Self) extends AnyVal {
+      extension [Self <: typings.dot.mod.global.String](x: Self) {
         
-        @scala.inline
-        def setEncodeHTML(value: () => java.lang.String): Self = StObject.set(x, "encodeHTML", js.Any.fromFunction0(value))
+        inline def setEncodeHTML(value: () => java.lang.String): Self = StObject.set(x, "encodeHTML", js.Any.fromFunction0(value))
       }
     }
   }

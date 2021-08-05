@@ -25,53 +25,43 @@ object mod {
   @JSImport("express-winston", "bodyBlacklist")
   @js.native
   def bodyBlacklist: js.Array[String] = js.native
-  @scala.inline
-  def bodyBlacklist_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyBlacklist")(x.asInstanceOf[js.Any])
+  inline def bodyBlacklist_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyBlacklist")(x.asInstanceOf[js.Any])
   
   @JSImport("express-winston", "bodyWhitelist")
   @js.native
   def bodyWhitelist: js.Array[String] = js.native
-  @scala.inline
-  def bodyWhitelist_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyWhitelist")(x.asInstanceOf[js.Any])
+  inline def bodyWhitelist_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyWhitelist")(x.asInstanceOf[js.Any])
   
   @JSImport("express-winston", "defaultRequestFilter")
   @js.native
   def defaultRequestFilter: RequestFilter = js.native
-  @scala.inline
-  def defaultRequestFilter_=(x: RequestFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRequestFilter")(x.asInstanceOf[js.Any])
+  inline def defaultRequestFilter_=(x: RequestFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultRequestFilter")(x.asInstanceOf[js.Any])
   
   @JSImport("express-winston", "defaultResponseFilter")
   @js.native
   def defaultResponseFilter: ResponseFilter = js.native
-  @scala.inline
-  def defaultResponseFilter_=(x: ResponseFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResponseFilter")(x.asInstanceOf[js.Any])
+  inline def defaultResponseFilter_=(x: ResponseFilter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResponseFilter")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def defaultSkip(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSkip")().asInstanceOf[Boolean]
+  inline def defaultSkip(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSkip")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def errorLogger(options: ErrorLoggerOptions): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def errorLogger(options: ErrorLoggerOptions): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorLogger")(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-winston", "ignoredRoutes")
   @js.native
   def ignoredRoutes: js.Array[String] = js.native
-  @scala.inline
-  def ignoredRoutes_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoredRoutes")(x.asInstanceOf[js.Any])
+  inline def ignoredRoutes_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ignoredRoutes")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def logger(options: LoggerOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def logger(options: LoggerOptions): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   @JSImport("express-winston", "requestWhitelist")
   @js.native
   def requestWhitelist: js.Array[String] = js.native
-  @scala.inline
-  def requestWhitelist_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestWhitelist")(x.asInstanceOf[js.Any])
+  inline def requestWhitelist_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestWhitelist")(x.asInstanceOf[js.Any])
   
   @JSImport("express-winston", "responseWhitelist")
   @js.native
   def responseWhitelist: js.Array[String] = js.native
-  @scala.inline
-  def responseWhitelist_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("responseWhitelist")(x.asInstanceOf[js.Any])
+  inline def responseWhitelist_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("responseWhitelist")(x.asInstanceOf[js.Any])
   
   trait BaseErrorLoggerOptions extends StObject {
     
@@ -107,127 +97,90 @@ object mod {
   }
   object BaseErrorLoggerOptions {
     
-    @scala.inline
-    def apply(): BaseErrorLoggerOptions = {
+    inline def apply(): BaseErrorLoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseErrorLoggerOptions]
     }
     
-    @scala.inline
-    implicit class BaseErrorLoggerOptionsMutableBuilder[Self <: BaseErrorLoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseErrorLoggerOptions](x: Self) {
       
-      @scala.inline
-      def setBaseMeta(value: js.Object): Self = StObject.set(x, "baseMeta", value.asInstanceOf[js.Any])
+      inline def setBaseMeta(value: js.Object): Self = StObject.set(x, "baseMeta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseMetaUndefined: Self = StObject.set(x, "baseMeta", js.undefined)
+      inline def setBaseMetaUndefined: Self = StObject.set(x, "baseMeta", js.undefined)
       
-      @scala.inline
-      def setBlacklistedMetaFields(value: js.Array[String]): Self = StObject.set(x, "blacklistedMetaFields", value.asInstanceOf[js.Any])
+      inline def setBlacklistedMetaFields(value: js.Array[String]): Self = StObject.set(x, "blacklistedMetaFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlacklistedMetaFieldsUndefined: Self = StObject.set(x, "blacklistedMetaFields", js.undefined)
+      inline def setBlacklistedMetaFieldsUndefined: Self = StObject.set(x, "blacklistedMetaFields", js.undefined)
       
-      @scala.inline
-      def setBlacklistedMetaFieldsVarargs(value: String*): Self = StObject.set(x, "blacklistedMetaFields", js.Array(value :_*))
+      inline def setBlacklistedMetaFieldsVarargs(value: String*): Self = StObject.set(x, "blacklistedMetaFields", js.Array(value :_*))
       
-      @scala.inline
-      def setDynamicMeta(
+      inline def setDynamicMeta(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => js.Object
       ): Self = StObject.set(x, "dynamicMeta", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDynamicMetaUndefined: Self = StObject.set(x, "dynamicMeta", js.undefined)
+      inline def setDynamicMetaUndefined: Self = StObject.set(x, "dynamicMeta", js.undefined)
       
-      @scala.inline
-      def setExceptionToMeta(value: /* err */ Error => js.Object): Self = StObject.set(x, "exceptionToMeta", js.Any.fromFunction1(value))
+      inline def setExceptionToMeta(value: /* err */ Error => js.Object): Self = StObject.set(x, "exceptionToMeta", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExceptionToMetaUndefined: Self = StObject.set(x, "exceptionToMeta", js.undefined)
+      inline def setExceptionToMetaUndefined: Self = StObject.set(x, "exceptionToMeta", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHeaderBlacklist(value: js.Array[String]): Self = StObject.set(x, "headerBlacklist", value.asInstanceOf[js.Any])
+      inline def setHeaderBlacklist(value: js.Array[String]): Self = StObject.set(x, "headerBlacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderBlacklistUndefined: Self = StObject.set(x, "headerBlacklist", js.undefined)
+      inline def setHeaderBlacklistUndefined: Self = StObject.set(x, "headerBlacklist", js.undefined)
       
-      @scala.inline
-      def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value :_*))
+      inline def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value :_*))
       
-      @scala.inline
-      def setLevel(value: String | DynamicLevelFunction): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String | DynamicLevelFunction): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelFunction3(
+      inline def setLevelFunction3(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => String
       ): Self = StObject.set(x, "level", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaField(value: String): Self = StObject.set(x, "metaField", value.asInstanceOf[js.Any])
+      inline def setMetaField(value: String): Self = StObject.set(x, "metaField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaFieldUndefined: Self = StObject.set(x, "metaField", js.undefined)
+      inline def setMetaFieldUndefined: Self = StObject.set(x, "metaField", js.undefined)
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setMsg(value: MessageTemplate): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: MessageTemplate): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFunction2(
+      inline def setMsgFunction2(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
       ): Self = StObject.set(x, "msg", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+      inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
       
-      @scala.inline
-      def setRequestField(value: String): Self = StObject.set(x, "requestField", value.asInstanceOf[js.Any])
+      inline def setRequestField(value: String): Self = StObject.set(x, "requestField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestFieldUndefined: Self = StObject.set(x, "requestField", js.undefined)
+      inline def setRequestFieldUndefined: Self = StObject.set(x, "requestField", js.undefined)
       
-      @scala.inline
-      def setRequestFilter(value: (/* req */ FilterRequest, /* propName */ String) => js.Any): Self = StObject.set(x, "requestFilter", js.Any.fromFunction2(value))
+      inline def setRequestFilter(value: (/* req */ FilterRequest, /* propName */ String) => js.Any): Self = StObject.set(x, "requestFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequestFilterUndefined: Self = StObject.set(x, "requestFilter", js.undefined)
+      inline def setRequestFilterUndefined: Self = StObject.set(x, "requestFilter", js.undefined)
       
-      @scala.inline
-      def setRequestWhitelist(value: js.Array[String]): Self = StObject.set(x, "requestWhitelist", value.asInstanceOf[js.Any])
+      inline def setRequestWhitelist(value: js.Array[String]): Self = StObject.set(x, "requestWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestWhitelistUndefined: Self = StObject.set(x, "requestWhitelist", js.undefined)
+      inline def setRequestWhitelistUndefined: Self = StObject.set(x, "requestWhitelist", js.undefined)
       
-      @scala.inline
-      def setRequestWhitelistVarargs(value: String*): Self = StObject.set(x, "requestWhitelist", js.Array(value :_*))
+      inline def setRequestWhitelistVarargs(value: String*): Self = StObject.set(x, "requestWhitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setResponseField(value: String): Self = StObject.set(x, "responseField", value.asInstanceOf[js.Any])
+      inline def setResponseField(value: String): Self = StObject.set(x, "responseField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseFieldUndefined: Self = StObject.set(x, "responseField", js.undefined)
+      inline def setResponseFieldUndefined: Self = StObject.set(x, "responseField", js.undefined)
       
-      @scala.inline
-      def setSkip(
+      inline def setSkip(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => Boolean
       ): Self = StObject.set(x, "skip", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     }
   }
   
@@ -279,180 +232,126 @@ object mod {
   }
   object BaseLoggerOptions {
     
-    @scala.inline
-    def apply(): BaseLoggerOptions = {
+    inline def apply(): BaseLoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseLoggerOptions]
     }
     
-    @scala.inline
-    implicit class BaseLoggerOptionsMutableBuilder[Self <: BaseLoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseLoggerOptions](x: Self) {
       
-      @scala.inline
-      def setBaseMeta(value: js.Object): Self = StObject.set(x, "baseMeta", value.asInstanceOf[js.Any])
+      inline def setBaseMeta(value: js.Object): Self = StObject.set(x, "baseMeta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseMetaUndefined: Self = StObject.set(x, "baseMeta", js.undefined)
+      inline def setBaseMetaUndefined: Self = StObject.set(x, "baseMeta", js.undefined)
       
-      @scala.inline
-      def setBodyBlacklist(value: js.Array[String]): Self = StObject.set(x, "bodyBlacklist", value.asInstanceOf[js.Any])
+      inline def setBodyBlacklist(value: js.Array[String]): Self = StObject.set(x, "bodyBlacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyBlacklistUndefined: Self = StObject.set(x, "bodyBlacklist", js.undefined)
+      inline def setBodyBlacklistUndefined: Self = StObject.set(x, "bodyBlacklist", js.undefined)
       
-      @scala.inline
-      def setBodyBlacklistVarargs(value: String*): Self = StObject.set(x, "bodyBlacklist", js.Array(value :_*))
+      inline def setBodyBlacklistVarargs(value: String*): Self = StObject.set(x, "bodyBlacklist", js.Array(value :_*))
       
-      @scala.inline
-      def setBodyWhitelist(value: js.Array[String]): Self = StObject.set(x, "bodyWhitelist", value.asInstanceOf[js.Any])
+      inline def setBodyWhitelist(value: js.Array[String]): Self = StObject.set(x, "bodyWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyWhitelistUndefined: Self = StObject.set(x, "bodyWhitelist", js.undefined)
+      inline def setBodyWhitelistUndefined: Self = StObject.set(x, "bodyWhitelist", js.undefined)
       
-      @scala.inline
-      def setBodyWhitelistVarargs(value: String*): Self = StObject.set(x, "bodyWhitelist", js.Array(value :_*))
+      inline def setBodyWhitelistVarargs(value: String*): Self = StObject.set(x, "bodyWhitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
+      inline def setColorize(value: Boolean): Self = StObject.set(x, "colorize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
+      inline def setColorizeUndefined: Self = StObject.set(x, "colorize", js.undefined)
       
-      @scala.inline
-      def setDynamicMeta(
+      inline def setDynamicMeta(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => js.Object
       ): Self = StObject.set(x, "dynamicMeta", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDynamicMetaUndefined: Self = StObject.set(x, "dynamicMeta", js.undefined)
+      inline def setDynamicMetaUndefined: Self = StObject.set(x, "dynamicMeta", js.undefined)
       
-      @scala.inline
-      def setExpressFormat(value: Boolean): Self = StObject.set(x, "expressFormat", value.asInstanceOf[js.Any])
+      inline def setExpressFormat(value: Boolean): Self = StObject.set(x, "expressFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressFormatUndefined: Self = StObject.set(x, "expressFormat", js.undefined)
+      inline def setExpressFormatUndefined: Self = StObject.set(x, "expressFormat", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHeaderBlacklist(value: js.Array[String]): Self = StObject.set(x, "headerBlacklist", value.asInstanceOf[js.Any])
+      inline def setHeaderBlacklist(value: js.Array[String]): Self = StObject.set(x, "headerBlacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderBlacklistUndefined: Self = StObject.set(x, "headerBlacklist", js.undefined)
+      inline def setHeaderBlacklistUndefined: Self = StObject.set(x, "headerBlacklist", js.undefined)
       
-      @scala.inline
-      def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value :_*))
+      inline def setHeaderBlacklistVarargs(value: String*): Self = StObject.set(x, "headerBlacklist", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreRoute(
+      inline def setIgnoreRoute(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
       ): Self = StObject.set(x, "ignoreRoute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIgnoreRouteUndefined: Self = StObject.set(x, "ignoreRoute", js.undefined)
+      inline def setIgnoreRouteUndefined: Self = StObject.set(x, "ignoreRoute", js.undefined)
       
-      @scala.inline
-      def setIgnoredRoutes(value: js.Array[String]): Self = StObject.set(x, "ignoredRoutes", value.asInstanceOf[js.Any])
+      inline def setIgnoredRoutes(value: js.Array[String]): Self = StObject.set(x, "ignoredRoutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredRoutesUndefined: Self = StObject.set(x, "ignoredRoutes", js.undefined)
+      inline def setIgnoredRoutesUndefined: Self = StObject.set(x, "ignoredRoutes", js.undefined)
       
-      @scala.inline
-      def setIgnoredRoutesVarargs(value: String*): Self = StObject.set(x, "ignoredRoutes", js.Array(value :_*))
+      inline def setIgnoredRoutesVarargs(value: String*): Self = StObject.set(x, "ignoredRoutes", js.Array(value :_*))
       
-      @scala.inline
-      def setLevel(value: String | DynamicLevelFunction): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: String | DynamicLevelFunction): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelFunction3(
+      inline def setLevelFunction3(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* err */ Error) => String
       ): Self = StObject.set(x, "level", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaField(value: String): Self = StObject.set(x, "metaField", value.asInstanceOf[js.Any])
+      inline def setMetaField(value: String): Self = StObject.set(x, "metaField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaFieldUndefined: Self = StObject.set(x, "metaField", js.undefined)
+      inline def setMetaFieldUndefined: Self = StObject.set(x, "metaField", js.undefined)
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setMsg(value: MessageTemplate): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: MessageTemplate): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgFunction2(
+      inline def setMsgFunction2(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => String
       ): Self = StObject.set(x, "msg", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+      inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
       
-      @scala.inline
-      def setRequestField(value: String): Self = StObject.set(x, "requestField", value.asInstanceOf[js.Any])
+      inline def setRequestField(value: String): Self = StObject.set(x, "requestField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestFieldUndefined: Self = StObject.set(x, "requestField", js.undefined)
+      inline def setRequestFieldUndefined: Self = StObject.set(x, "requestField", js.undefined)
       
-      @scala.inline
-      def setRequestFilter(value: (/* req */ FilterRequest, /* propName */ String) => js.Any): Self = StObject.set(x, "requestFilter", js.Any.fromFunction2(value))
+      inline def setRequestFilter(value: (/* req */ FilterRequest, /* propName */ String) => js.Any): Self = StObject.set(x, "requestFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequestFilterUndefined: Self = StObject.set(x, "requestFilter", js.undefined)
+      inline def setRequestFilterUndefined: Self = StObject.set(x, "requestFilter", js.undefined)
       
-      @scala.inline
-      def setRequestWhitelist(value: js.Array[String]): Self = StObject.set(x, "requestWhitelist", value.asInstanceOf[js.Any])
+      inline def setRequestWhitelist(value: js.Array[String]): Self = StObject.set(x, "requestWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestWhitelistUndefined: Self = StObject.set(x, "requestWhitelist", js.undefined)
+      inline def setRequestWhitelistUndefined: Self = StObject.set(x, "requestWhitelist", js.undefined)
       
-      @scala.inline
-      def setRequestWhitelistVarargs(value: String*): Self = StObject.set(x, "requestWhitelist", js.Array(value :_*))
+      inline def setRequestWhitelistVarargs(value: String*): Self = StObject.set(x, "requestWhitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setResponseField(value: String): Self = StObject.set(x, "responseField", value.asInstanceOf[js.Any])
+      inline def setResponseField(value: String): Self = StObject.set(x, "responseField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseFieldUndefined: Self = StObject.set(x, "responseField", js.undefined)
+      inline def setResponseFieldUndefined: Self = StObject.set(x, "responseField", js.undefined)
       
-      @scala.inline
-      def setResponseFilter(value: (/* res */ FilterResponse, /* propName */ String) => js.Any): Self = StObject.set(x, "responseFilter", js.Any.fromFunction2(value))
+      inline def setResponseFilter(value: (/* res */ FilterResponse, /* propName */ String) => js.Any): Self = StObject.set(x, "responseFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResponseFilterUndefined: Self = StObject.set(x, "responseFilter", js.undefined)
+      inline def setResponseFilterUndefined: Self = StObject.set(x, "responseFilter", js.undefined)
       
-      @scala.inline
-      def setResponseWhitelist(value: js.Array[String]): Self = StObject.set(x, "responseWhitelist", value.asInstanceOf[js.Any])
+      inline def setResponseWhitelist(value: js.Array[String]): Self = StObject.set(x, "responseWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseWhitelistUndefined: Self = StObject.set(x, "responseWhitelist", js.undefined)
+      inline def setResponseWhitelistUndefined: Self = StObject.set(x, "responseWhitelist", js.undefined)
       
-      @scala.inline
-      def setResponseWhitelistVarargs(value: String*): Self = StObject.set(x, "responseWhitelist", js.Array(value :_*))
+      inline def setResponseWhitelistVarargs(value: String*): Self = StObject.set(x, "responseWhitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setSkip(
+      inline def setSkip(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
       ): Self = StObject.set(x, "skip", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setStatusLevels(value: Boolean | StatusLevels): Self = StObject.set(x, "statusLevels", value.asInstanceOf[js.Any])
+      inline def setStatusLevels(value: Boolean | StatusLevels): Self = StObject.set(x, "statusLevels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusLevelsUndefined: Self = StObject.set(x, "statusLevels", js.undefined)
+      inline def setStatusLevelsUndefined: Self = StObject.set(x, "statusLevels", js.undefined)
     }
   }
   
@@ -477,14 +376,12 @@ object mod {
   trait ErrorLoggerOptions extends StObject
   object ErrorLoggerOptions {
     
-    @scala.inline
-    def ErrorLoggerOptionsWithTransports(transports: js.Array[typings.winstonTransport.mod.^]): typings.expressWinston.mod.ErrorLoggerOptionsWithTransports = {
+    inline def ErrorLoggerOptionsWithTransports(transports: js.Array[typings.winstonTransport.mod.^]): typings.expressWinston.mod.ErrorLoggerOptionsWithTransports = {
       val __obj = js.Dynamic.literal(transports = transports.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expressWinston.mod.ErrorLoggerOptionsWithTransports]
     }
     
-    @scala.inline
-    def ErrorLoggerOptionsWithWinstonInstance(winstonInstance: Logger): typings.expressWinston.mod.ErrorLoggerOptionsWithWinstonInstance = {
+    inline def ErrorLoggerOptionsWithWinstonInstance(winstonInstance: Logger): typings.expressWinston.mod.ErrorLoggerOptionsWithWinstonInstance = {
       val __obj = js.Dynamic.literal(winstonInstance = winstonInstance.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expressWinston.mod.ErrorLoggerOptionsWithWinstonInstance]
     }
@@ -499,20 +396,16 @@ object mod {
   }
   object ErrorLoggerOptionsWithTransports {
     
-    @scala.inline
-    def apply(transports: js.Array[typings.winstonTransport.mod.^]): ErrorLoggerOptionsWithTransports = {
+    inline def apply(transports: js.Array[typings.winstonTransport.mod.^]): ErrorLoggerOptionsWithTransports = {
       val __obj = js.Dynamic.literal(transports = transports.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorLoggerOptionsWithTransports]
     }
     
-    @scala.inline
-    implicit class ErrorLoggerOptionsWithTransportsMutableBuilder[Self <: ErrorLoggerOptionsWithTransports] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorLoggerOptionsWithTransports](x: Self) {
       
-      @scala.inline
-      def setTransports(value: js.Array[typings.winstonTransport.mod.^]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+      inline def setTransports(value: js.Array[typings.winstonTransport.mod.^]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value :_*))
     }
   }
   
@@ -525,17 +418,14 @@ object mod {
   }
   object ErrorLoggerOptionsWithWinstonInstance {
     
-    @scala.inline
-    def apply(winstonInstance: Logger): ErrorLoggerOptionsWithWinstonInstance = {
+    inline def apply(winstonInstance: Logger): ErrorLoggerOptionsWithWinstonInstance = {
       val __obj = js.Dynamic.literal(winstonInstance = winstonInstance.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorLoggerOptionsWithWinstonInstance]
     }
     
-    @scala.inline
-    implicit class ErrorLoggerOptionsWithWinstonInstanceMutableBuilder[Self <: ErrorLoggerOptionsWithWinstonInstance] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorLoggerOptionsWithWinstonInstance](x: Self) {
       
-      @scala.inline
-      def setWinstonInstance(value: Logger): Self = StObject.set(x, "winstonInstance", value.asInstanceOf[js.Any])
+      inline def setWinstonInstance(value: Logger): Self = StObject.set(x, "winstonInstance", value.asInstanceOf[js.Any])
     }
   }
   
@@ -590,14 +480,12 @@ object mod {
   trait LoggerOptions extends StObject
   object LoggerOptions {
     
-    @scala.inline
-    def LoggerOptionsWithTransports(transports: js.Array[typings.winstonTransport.mod.^]): typings.expressWinston.mod.LoggerOptionsWithTransports = {
+    inline def LoggerOptionsWithTransports(transports: js.Array[typings.winstonTransport.mod.^]): typings.expressWinston.mod.LoggerOptionsWithTransports = {
       val __obj = js.Dynamic.literal(transports = transports.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expressWinston.mod.LoggerOptionsWithTransports]
     }
     
-    @scala.inline
-    def LoggerOptionsWithWinstonInstance(winstonInstance: Logger): typings.expressWinston.mod.LoggerOptionsWithWinstonInstance = {
+    inline def LoggerOptionsWithWinstonInstance(winstonInstance: Logger): typings.expressWinston.mod.LoggerOptionsWithWinstonInstance = {
       val __obj = js.Dynamic.literal(winstonInstance = winstonInstance.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expressWinston.mod.LoggerOptionsWithWinstonInstance]
     }
@@ -612,20 +500,16 @@ object mod {
   }
   object LoggerOptionsWithTransports {
     
-    @scala.inline
-    def apply(transports: js.Array[typings.winstonTransport.mod.^]): LoggerOptionsWithTransports = {
+    inline def apply(transports: js.Array[typings.winstonTransport.mod.^]): LoggerOptionsWithTransports = {
       val __obj = js.Dynamic.literal(transports = transports.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoggerOptionsWithTransports]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsWithTransportsMutableBuilder[Self <: LoggerOptionsWithTransports] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptionsWithTransports](x: Self) {
       
-      @scala.inline
-      def setTransports(value: js.Array[typings.winstonTransport.mod.^]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+      inline def setTransports(value: js.Array[typings.winstonTransport.mod.^]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: typings.winstonTransport.mod.^ *): Self = StObject.set(x, "transports", js.Array(value :_*))
     }
   }
   
@@ -638,17 +522,14 @@ object mod {
   }
   object LoggerOptionsWithWinstonInstance {
     
-    @scala.inline
-    def apply(winstonInstance: Logger): LoggerOptionsWithWinstonInstance = {
+    inline def apply(winstonInstance: Logger): LoggerOptionsWithWinstonInstance = {
       val __obj = js.Dynamic.literal(winstonInstance = winstonInstance.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoggerOptionsWithWinstonInstance]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsWithWinstonInstanceMutableBuilder[Self <: LoggerOptionsWithWinstonInstance] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptionsWithWinstonInstance](x: Self) {
       
-      @scala.inline
-      def setWinstonInstance(value: Logger): Self = StObject.set(x, "winstonInstance", value.asInstanceOf[js.Any])
+      inline def setWinstonInstance(value: Logger): Self = StObject.set(x, "winstonInstance", value.asInstanceOf[js.Any])
     }
   }
   
@@ -678,32 +559,24 @@ object mod {
   }
   object StatusLevels {
     
-    @scala.inline
-    def apply(): StatusLevels = {
+    inline def apply(): StatusLevels = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatusLevels]
     }
     
-    @scala.inline
-    implicit class StatusLevelsMutableBuilder[Self <: StatusLevels] (val x: Self) extends AnyVal {
+    extension [Self <: StatusLevels](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setWarn(value: String): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: String): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
   }
 }

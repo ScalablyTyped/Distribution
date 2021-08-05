@@ -13,16 +13,13 @@ trait Dictx
 }
 object Dictx {
   
-  @scala.inline
-  def apply(ref: js.Any => Unit): Dictx = {
+  inline def apply(ref: js.Any => Unit): Dictx = {
     val __obj = js.Dynamic.literal(ref = js.Any.fromFunction1(ref))
     __obj.asInstanceOf[Dictx]
   }
   
-  @scala.inline
-  implicit class DictxMutableBuilder[Self <: Dictx] (val x: Self) extends AnyVal {
+  extension [Self <: Dictx](x: Self) {
     
-    @scala.inline
-    def setRef(value: js.Any => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRef(value: js.Any => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
   }
 }

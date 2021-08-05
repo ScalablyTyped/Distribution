@@ -28,31 +28,23 @@ trait GetCampaignVersionsRequest extends StObject {
 }
 object GetCampaignVersionsRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, CampaignId: string): GetCampaignVersionsRequest = {
+  inline def apply(ApplicationId: string, CampaignId: string): GetCampaignVersionsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCampaignVersionsRequest]
   }
   
-  @scala.inline
-  implicit class GetCampaignVersionsRequestMutableBuilder[Self <: GetCampaignVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCampaignVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignId(value: string): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: string): Self = StObject.set(x, "CampaignId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: string): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: string): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "Token", js.undefined)
   }
 }

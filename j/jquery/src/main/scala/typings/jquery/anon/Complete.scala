@@ -16,16 +16,13 @@ trait Complete[TElement]
 }
 object Complete {
   
-  @scala.inline
-  def apply[TElement](complete: () => Unit): Complete[TElement] = {
+  inline def apply[TElement](complete: () => Unit): Complete[TElement] = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[Complete[TElement]]
   }
   
-  @scala.inline
-  implicit class CompleteMutableBuilder[Self <: Complete[?], TElement] (val x: Self & Complete[TElement]) extends AnyVal {
+  extension [Self <: Complete[?], TElement](x: Self & Complete[TElement]) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

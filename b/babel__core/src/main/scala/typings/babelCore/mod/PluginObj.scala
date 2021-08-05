@@ -21,46 +21,33 @@ trait PluginObj[S] extends StObject {
 }
 object PluginObj {
   
-  @scala.inline
-  def apply[S](visitor: Visitor[S]): PluginObj[S] = {
+  inline def apply[S](visitor: Visitor[S]): PluginObj[S] = {
     val __obj = js.Dynamic.literal(visitor = visitor.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginObj[S]]
   }
   
-  @scala.inline
-  implicit class PluginObjMutableBuilder[Self <: PluginObj[?], S] (val x: Self & PluginObj[S]) extends AnyVal {
+  extension [Self <: PluginObj[?], S](x: Self & PluginObj[S]) {
     
-    @scala.inline
-    def setInherits(value: js.Any): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
+    inline def setInherits(value: js.Any): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
+    inline def setInheritsUndefined: Self = StObject.set(x, "inherits", js.undefined)
     
-    @scala.inline
-    def setManipulateOptions(value: (/* opts */ js.Any, /* parserOpts */ js.Any) => Unit): Self = StObject.set(x, "manipulateOptions", js.Any.fromFunction2(value))
+    inline def setManipulateOptions(value: (/* opts */ js.Any, /* parserOpts */ js.Any) => Unit): Self = StObject.set(x, "manipulateOptions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setManipulateOptionsUndefined: Self = StObject.set(x, "manipulateOptions", js.undefined)
+    inline def setManipulateOptionsUndefined: Self = StObject.set(x, "manipulateOptions", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPost(value: js.ThisFunction1[/* this */ S, /* file */ BabelFile, Unit]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: js.ThisFunction1[/* this */ S, /* file */ BabelFile, Unit]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    @scala.inline
-    def setPre(value: js.ThisFunction1[/* this */ S, /* file */ BabelFile, Unit]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    inline def setPre(value: js.ThisFunction1[/* this */ S, /* file */ BabelFile, Unit]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+    inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
-    @scala.inline
-    def setVisitor(value: Visitor[S]): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
+    inline def setVisitor(value: Visitor[S]): Self = StObject.set(x, "visitor", value.asInstanceOf[js.Any])
   }
 }

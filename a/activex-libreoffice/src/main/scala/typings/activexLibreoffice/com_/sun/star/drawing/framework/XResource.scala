@@ -24,22 +24,17 @@ trait XResource extends StObject {
 }
 object XResource {
   
-  @scala.inline
-  def apply(ResourceId: XResourceId, getResourceId: () => XResourceId, isAnchorOnly: () => Boolean): XResource = {
+  inline def apply(ResourceId: XResourceId, getResourceId: () => XResourceId, isAnchorOnly: () => Boolean): XResource = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any], getResourceId = js.Any.fromFunction0(getResourceId), isAnchorOnly = js.Any.fromFunction0(isAnchorOnly))
     __obj.asInstanceOf[XResource]
   }
   
-  @scala.inline
-  implicit class XResourceMutableBuilder[Self <: XResource] (val x: Self) extends AnyVal {
+  extension [Self <: XResource](x: Self) {
     
-    @scala.inline
-    def setGetResourceId(value: () => XResourceId): Self = StObject.set(x, "getResourceId", js.Any.fromFunction0(value))
+    inline def setGetResourceId(value: () => XResourceId): Self = StObject.set(x, "getResourceId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAnchorOnly(value: () => Boolean): Self = StObject.set(x, "isAnchorOnly", js.Any.fromFunction0(value))
+    inline def setIsAnchorOnly(value: () => Boolean): Self = StObject.set(x, "isAnchorOnly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResourceId(value: XResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: XResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

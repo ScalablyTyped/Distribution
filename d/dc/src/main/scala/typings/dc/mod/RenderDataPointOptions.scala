@@ -14,22 +14,17 @@ trait RenderDataPointOptions extends StObject {
 }
 object RenderDataPointOptions {
   
-  @scala.inline
-  def apply(fillOpacity: Double, radius: Double, strokeOpacity: Double): RenderDataPointOptions = {
+  inline def apply(fillOpacity: Double, radius: Double, strokeOpacity: Double): RenderDataPointOptions = {
     val __obj = js.Dynamic.literal(fillOpacity = fillOpacity.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], strokeOpacity = strokeOpacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderDataPointOptions]
   }
   
-  @scala.inline
-  implicit class RenderDataPointOptionsMutableBuilder[Self <: RenderDataPointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RenderDataPointOptions](x: Self) {
     
-    @scala.inline
-    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
   }
 }

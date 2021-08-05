@@ -60,8 +60,7 @@ trait Package extends StObject {
 }
 object Package {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appVersion: String,
     deploymentKey: String,
     description: String,
@@ -77,37 +76,26 @@ object Package {
     __obj.asInstanceOf[Package]
   }
   
-  @scala.inline
-  implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
+  extension [Self <: Package](x: Self) {
     
-    @scala.inline
-    def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
+    inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentKey(value: String): Self = StObject.set(x, "deploymentKey", value.asInstanceOf[js.Any])
+    inline def setDeploymentKey(value: String): Self = StObject.set(x, "deploymentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedInstall(value: Boolean): Self = StObject.set(x, "failedInstall", value.asInstanceOf[js.Any])
+    inline def setFailedInstall(value: Boolean): Self = StObject.set(x, "failedInstall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFirstRun(value: Boolean): Self = StObject.set(x, "isFirstRun", value.asInstanceOf[js.Any])
+    inline def setIsFirstRun(value: Boolean): Self = StObject.set(x, "isFirstRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMandatory(value: Boolean): Self = StObject.set(x, "isMandatory", value.asInstanceOf[js.Any])
+    inline def setIsMandatory(value: Boolean): Self = StObject.set(x, "isMandatory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPending(value: Boolean): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
+    inline def setIsPending(value: Boolean): Self = StObject.set(x, "isPending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageHash(value: String): Self = StObject.set(x, "packageHash", value.asInstanceOf[js.Any])
+    inline def setPackageHash(value: String): Self = StObject.set(x, "packageHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageSize(value: Double): Self = StObject.set(x, "packageSize", value.asInstanceOf[js.Any])
+    inline def setPackageSize(value: Double): Self = StObject.set(x, "packageSize", value.asInstanceOf[js.Any])
   }
 }

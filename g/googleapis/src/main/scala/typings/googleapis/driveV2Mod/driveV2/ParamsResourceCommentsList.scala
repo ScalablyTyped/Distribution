@@ -49,49 +49,35 @@ trait ParamsResourceCommentsList
 }
 object ParamsResourceCommentsList {
   
-  @scala.inline
-  def apply(): ParamsResourceCommentsList = {
+  inline def apply(): ParamsResourceCommentsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCommentsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCommentsListMutableBuilder[Self <: ParamsResourceCommentsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCommentsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
+    inline def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDeletedUndefined: Self = StObject.set(x, "includeDeleted", js.undefined)
+    inline def setIncludeDeletedUndefined: Self = StObject.set(x, "includeDeleted", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setUpdatedMin(value: String): Self = StObject.set(x, "updatedMin", value.asInstanceOf[js.Any])
+    inline def setUpdatedMin(value: String): Self = StObject.set(x, "updatedMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedMinUndefined: Self = StObject.set(x, "updatedMin", js.undefined)
+    inline def setUpdatedMinUndefined: Self = StObject.set(x, "updatedMin", js.undefined)
   }
 }

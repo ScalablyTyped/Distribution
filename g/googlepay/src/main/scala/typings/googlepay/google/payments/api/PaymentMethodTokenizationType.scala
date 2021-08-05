@@ -23,9 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentMethodTokenizationType extends StObject
 object PaymentMethodTokenizationType {
   
-  @scala.inline
-  def DIRECT: typings.googlepay.googlepayStrings.DIRECT = "DIRECT".asInstanceOf[typings.googlepay.googlepayStrings.DIRECT]
+  inline def DIRECT: typings.googlepay.googlepayStrings.DIRECT = "DIRECT".asInstanceOf[typings.googlepay.googlepayStrings.DIRECT]
   
-  @scala.inline
-  def PAYMENT_GATEWAY: typings.googlepay.googlepayStrings.PAYMENT_GATEWAY = "PAYMENT_GATEWAY".asInstanceOf[typings.googlepay.googlepayStrings.PAYMENT_GATEWAY]
+  inline def PAYMENT_GATEWAY: typings.googlepay.googlepayStrings.PAYMENT_GATEWAY = "PAYMENT_GATEWAY".asInstanceOf[typings.googlepay.googlepayStrings.PAYMENT_GATEWAY]
 }

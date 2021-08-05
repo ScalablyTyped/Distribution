@@ -53,67 +53,47 @@ trait TrialComponentMetricSummary extends StObject {
 }
 object TrialComponentMetricSummary {
   
-  @scala.inline
-  def apply(): TrialComponentMetricSummary = {
+  inline def apply(): TrialComponentMetricSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrialComponentMetricSummary]
   }
   
-  @scala.inline
-  implicit class TrialComponentMetricSummaryMutableBuilder[Self <: TrialComponentMetricSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TrialComponentMetricSummary](x: Self) {
     
-    @scala.inline
-    def setAvg(value: OptionalDouble): Self = StObject.set(x, "Avg", value.asInstanceOf[js.Any])
+    inline def setAvg(value: OptionalDouble): Self = StObject.set(x, "Avg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvgUndefined: Self = StObject.set(x, "Avg", js.undefined)
+    inline def setAvgUndefined: Self = StObject.set(x, "Avg", js.undefined)
     
-    @scala.inline
-    def setCount(value: OptionalInteger): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: OptionalInteger): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "Count", js.undefined)
     
-    @scala.inline
-    def setLast(value: OptionalDouble): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
+    inline def setLast(value: OptionalDouble): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUndefined: Self = StObject.set(x, "Last", js.undefined)
+    inline def setLastUndefined: Self = StObject.set(x, "Last", js.undefined)
     
-    @scala.inline
-    def setMax(value: OptionalDouble): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: OptionalDouble): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
     
-    @scala.inline
-    def setMin(value: OptionalDouble): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
+    inline def setMin(value: OptionalDouble): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "Min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "Min", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: TrialComponentSourceArn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: TrialComponentSourceArn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
-    @scala.inline
-    def setStdDev(value: OptionalDouble): Self = StObject.set(x, "StdDev", value.asInstanceOf[js.Any])
+    inline def setStdDev(value: OptionalDouble): Self = StObject.set(x, "StdDev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdDevUndefined: Self = StObject.set(x, "StdDev", js.undefined)
+    inline def setStdDevUndefined: Self = StObject.set(x, "StdDev", js.undefined)
     
-    @scala.inline
-    def setTimeStamp(value: Timestamp): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Timestamp): Self = StObject.set(x, "TimeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStampUndefined: Self = StObject.set(x, "TimeStamp", js.undefined)
+    inline def setTimeStampUndefined: Self = StObject.set(x, "TimeStamp", js.undefined)
   }
 }

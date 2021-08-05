@@ -10,16 +10,13 @@ trait DvCommonWidget extends StObject {
 }
 object DvCommonWidget {
   
-  @scala.inline
-  def apply(option: (js.Object, js.Object) => Unit): DvCommonWidget = {
+  inline def apply(option: (js.Object, js.Object) => Unit): DvCommonWidget = {
     val __obj = js.Dynamic.literal(option = js.Any.fromFunction2(option))
     __obj.asInstanceOf[DvCommonWidget]
   }
   
-  @scala.inline
-  implicit class DvCommonWidgetMutableBuilder[Self <: DvCommonWidget] (val x: Self) extends AnyVal {
+  extension [Self <: DvCommonWidget](x: Self) {
     
-    @scala.inline
-    def setOption(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
+    inline def setOption(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
   }
 }

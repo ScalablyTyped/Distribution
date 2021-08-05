@@ -22,25 +22,19 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(): JQueryStatic = {
+  inline def apply(): JQueryStatic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setJstree(value: JSTreeStatic): Self = StObject.set(x, "jstree", value.asInstanceOf[js.Any])
+    inline def setJstree(value: JSTreeStatic): Self = StObject.set(x, "jstree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJstreeUndefined: Self = StObject.set(x, "jstree", js.undefined)
+    inline def setJstreeUndefined: Self = StObject.set(x, "jstree", js.undefined)
     
-    @scala.inline
-    def setVakata(value: VakataStatic): Self = StObject.set(x, "vakata", value.asInstanceOf[js.Any])
+    inline def setVakata(value: VakataStatic): Self = StObject.set(x, "vakata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVakataUndefined: Self = StObject.set(x, "vakata", js.undefined)
+    inline def setVakataUndefined: Self = StObject.set(x, "vakata", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object getDataAttrMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: StringDictionary[js.Any]): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
+  inline def default(props: StringDictionary[js.Any]): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
 }

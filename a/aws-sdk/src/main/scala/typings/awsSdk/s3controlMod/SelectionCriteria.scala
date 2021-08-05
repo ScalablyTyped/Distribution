@@ -23,31 +23,23 @@ trait SelectionCriteria extends StObject {
 }
 object SelectionCriteria {
   
-  @scala.inline
-  def apply(): SelectionCriteria = {
+  inline def apply(): SelectionCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectionCriteria]
   }
   
-  @scala.inline
-  implicit class SelectionCriteriaMutableBuilder[Self <: SelectionCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionCriteria](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: StorageLensPrefixLevelDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: StorageLensPrefixLevelDelimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
-    @scala.inline
-    def setMaxDepth(value: StorageLensPrefixLevelMaxDepth): Self = StObject.set(x, "MaxDepth", value.asInstanceOf[js.Any])
+    inline def setMaxDepth(value: StorageLensPrefixLevelMaxDepth): Self = StObject.set(x, "MaxDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDepthUndefined: Self = StObject.set(x, "MaxDepth", js.undefined)
+    inline def setMaxDepthUndefined: Self = StObject.set(x, "MaxDepth", js.undefined)
     
-    @scala.inline
-    def setMinStorageBytesPercentage(value: MinStorageBytesPercentage): Self = StObject.set(x, "MinStorageBytesPercentage", value.asInstanceOf[js.Any])
+    inline def setMinStorageBytesPercentage(value: MinStorageBytesPercentage): Self = StObject.set(x, "MinStorageBytesPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinStorageBytesPercentageUndefined: Self = StObject.set(x, "MinStorageBytesPercentage", js.undefined)
+    inline def setMinStorageBytesPercentageUndefined: Self = StObject.set(x, "MinStorageBytesPercentage", js.undefined)
   }
 }

@@ -50,10 +50,8 @@ object Source {
     * @returns Source instance
     */
   /* static member */
-  @scala.inline
-  def create(): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Source]
-  @scala.inline
-  def create(properties: ISource): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Source]
+  inline def create(): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Source]
+  inline def create(properties: ISource): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Source]
   
   /**
     * Decodes a Source message from the specified reader or buffer.
@@ -64,14 +62,10 @@ object Source {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Source]
-  @scala.inline
-  def decode(reader: Reader, length: Double): Source = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Source]
-  @scala.inline
-  def decode(reader: Uint8Array): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Source]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): Source = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Source]
+  inline def decode(reader: Reader): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Source]
+  inline def decode(reader: Reader, length: Double): Source = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Source]
+  inline def decode(reader: Uint8Array): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Source]
+  inline def decode(reader: Uint8Array, length: Double): Source = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Source]
   
   /**
     * Decodes a Source message from the specified reader or buffer, length delimited.
@@ -81,10 +75,8 @@ object Source {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Source]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Source]
+  inline def decodeDelimited(reader: Reader): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Source]
+  inline def decodeDelimited(reader: Uint8Array): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Source]
   
   /**
     * Encodes the specified Source message. Does not implicitly {@link io.cucumber.messages.Source.verify|verify} messages.
@@ -93,10 +85,8 @@ object Source {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: ISource): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: ISource, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: ISource): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: ISource, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Source message, length delimited. Does not implicitly {@link io.cucumber.messages.Source.verify|verify} messages.
@@ -105,10 +95,8 @@ object Source {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: ISource): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: ISource, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ISource): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ISource, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Source message from a plain object. Also converts values to their respective internal types.
@@ -116,8 +104,7 @@ object Source {
     * @returns Source
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Source]
+  inline def fromObject(`object`: StringDictionary[js.Any]): Source = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Source]
   
   /**
     * Creates a plain object from a Source message. Also converts values to other types if specified.
@@ -126,10 +113,8 @@ object Source {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: Source): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: Source, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Source): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: Source, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Source message.
@@ -137,6 +122,5 @@ object Source {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

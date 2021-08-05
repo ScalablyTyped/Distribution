@@ -196,8 +196,7 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,
@@ -233,100 +232,68 @@ object File {
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
+    inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
+    inline def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesTotal(value: Double): Self = StObject.set(x, "bytesTotal", value.asInstanceOf[js.Any])
+    inline def setBytesTotal(value: Double): Self = StObject.set(x, "bytesTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCache(value: BaseCache | TextureManager): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: BaseCache | TextureManager): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasCacheConflict(value: () => Boolean): Self = StObject.set(x, "hasCacheConflict", js.Any.fromFunction0(value))
+    inline def setHasCacheConflict(value: () => Boolean): Self = StObject.set(x, "hasCacheConflict", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkFile(value: File): Self = StObject.set(x, "linkFile", value.asInstanceOf[js.Any])
+    inline def setLinkFile(value: File): Self = StObject.set(x, "linkFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+    inline def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoader(value: LoaderPlugin): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    inline def setLoader(value: LoaderPlugin): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiFile(value: MultiFile): Self = StObject.set(x, "multiFile", value.asInstanceOf[js.Any])
+    inline def setMultiFile(value: MultiFile): Self = StObject.set(x, "multiFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(value: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
+    inline def setOnError(value: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnLoad(value: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction2(value))
+    inline def setOnLoad(value: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnProcess(value: () => Unit): Self = StObject.set(x, "onProcess", js.Any.fromFunction0(value))
+    inline def setOnProcess(value: () => Unit): Self = StObject.set(x, "onProcess", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnProcessComplete(value: () => Unit): Self = StObject.set(x, "onProcessComplete", js.Any.fromFunction0(value))
+    inline def setOnProcessComplete(value: () => Unit): Self = StObject.set(x, "onProcessComplete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnProcessError(value: () => Unit): Self = StObject.set(x, "onProcessError", js.Any.fromFunction0(value))
+    inline def setOnProcessError(value: () => Unit): Self = StObject.set(x, "onProcessError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnProgress(value: ProgressEvent[EventTarget] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+    inline def setOnProgress(value: ProgressEvent[EventTarget] => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPendingDestroy(value: () => Unit): Self = StObject.set(x, "pendingDestroy", js.Any.fromFunction0(value))
+    inline def setPendingDestroy(value: () => Unit): Self = StObject.set(x, "pendingDestroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+    inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetXHR(value: () => Unit): Self = StObject.set(x, "resetXHR", js.Any.fromFunction0(value))
+    inline def setResetXHR(value: () => Unit): Self = StObject.set(x, "resetXHR", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetLink(value: File => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction1(value))
+    inline def setSetLink(value: File => Unit): Self = StObject.set(x, "setLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: integer): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: integer): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: js.Object | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: js.Object | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrLoader(value: XMLHttpRequest): Self = StObject.set(x, "xhrLoader", value.asInstanceOf[js.Any])
+    inline def setXhrLoader(value: XMLHttpRequest): Self = StObject.set(x, "xhrLoader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
+    inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
   }
 }

@@ -79,125 +79,86 @@ object mod {
   }
   object FuseOptions {
     
-    @scala.inline
-    def apply[T](): FuseOptions[T] = {
+    inline def apply[T](): FuseOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FuseOptions[T]]
     }
     
-    @scala.inline
-    implicit class FuseOptionsMutableBuilder[Self <: FuseOptions[?], T] (val x: Self & FuseOptions[T]) extends AnyVal {
+    extension [Self <: FuseOptions[?], T](x: Self & FuseOptions[T]) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setFindAllMatches(value: Boolean): Self = StObject.set(x, "findAllMatches", value.asInstanceOf[js.Any])
+      inline def setFindAllMatches(value: Boolean): Self = StObject.set(x, "findAllMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindAllMatchesUndefined: Self = StObject.set(x, "findAllMatches", js.undefined)
+      inline def setFindAllMatchesUndefined: Self = StObject.set(x, "findAllMatches", js.undefined)
       
-      @scala.inline
-      def setGetFn(value: (/* obj */ js.Any, /* path */ String) => js.Any): Self = StObject.set(x, "getFn", js.Any.fromFunction2(value))
+      inline def setGetFn(value: (/* obj */ js.Any, /* path */ String) => js.Any): Self = StObject.set(x, "getFn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetFnUndefined: Self = StObject.set(x, "getFn", js.undefined)
+      inline def setGetFnUndefined: Self = StObject.set(x, "getFn", js.undefined)
       
-      @scala.inline
-      def setId(value: /* keyof T */ String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: /* keyof T */ String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIncludeMatches(value: Boolean): Self = StObject.set(x, "includeMatches", value.asInstanceOf[js.Any])
+      inline def setIncludeMatches(value: Boolean): Self = StObject.set(x, "includeMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeMatchesUndefined: Self = StObject.set(x, "includeMatches", js.undefined)
+      inline def setIncludeMatchesUndefined: Self = StObject.set(x, "includeMatches", js.undefined)
       
-      @scala.inline
-      def setIncludeScore(value: Boolean): Self = StObject.set(x, "includeScore", value.asInstanceOf[js.Any])
+      inline def setIncludeScore(value: Boolean): Self = StObject.set(x, "includeScore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeScoreUndefined: Self = StObject.set(x, "includeScore", js.undefined)
+      inline def setIncludeScoreUndefined: Self = StObject.set(x, "includeScore", js.undefined)
       
-      @scala.inline
-      def setKeys(value: js.Array[Name[T] | (/* keyof T */ String)]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[Name[T] | (/* keyof T */ String)]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setKeysVarargs(value: (Name[T] | (/* keyof T */ String))*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: (Name[T] | (/* keyof T */ String))*): Self = StObject.set(x, "keys", js.Array(value :_*))
       
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setMatchAllTokens(value: Boolean): Self = StObject.set(x, "matchAllTokens", value.asInstanceOf[js.Any])
+      inline def setMatchAllTokens(value: Boolean): Self = StObject.set(x, "matchAllTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchAllTokensUndefined: Self = StObject.set(x, "matchAllTokens", js.undefined)
+      inline def setMatchAllTokensUndefined: Self = StObject.set(x, "matchAllTokens", js.undefined)
       
-      @scala.inline
-      def setMaxPatternLength(value: Double): Self = StObject.set(x, "maxPatternLength", value.asInstanceOf[js.Any])
+      inline def setMaxPatternLength(value: Double): Self = StObject.set(x, "maxPatternLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPatternLengthUndefined: Self = StObject.set(x, "maxPatternLength", js.undefined)
+      inline def setMaxPatternLengthUndefined: Self = StObject.set(x, "maxPatternLength", js.undefined)
       
-      @scala.inline
-      def setMinMatchCharLength(value: Double): Self = StObject.set(x, "minMatchCharLength", value.asInstanceOf[js.Any])
+      inline def setMinMatchCharLength(value: Double): Self = StObject.set(x, "minMatchCharLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinMatchCharLengthUndefined: Self = StObject.set(x, "minMatchCharLength", js.undefined)
+      inline def setMinMatchCharLengthUndefined: Self = StObject.set(x, "minMatchCharLength", js.undefined)
       
-      @scala.inline
-      def setShouldSort(value: Boolean): Self = StObject.set(x, "shouldSort", value.asInstanceOf[js.Any])
+      inline def setShouldSort(value: Boolean): Self = StObject.set(x, "shouldSort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldSortUndefined: Self = StObject.set(x, "shouldSort", js.undefined)
+      inline def setShouldSortUndefined: Self = StObject.set(x, "shouldSort", js.undefined)
       
-      @scala.inline
-      def setSortFn(value: (/* a */ Score, /* b */ Score) => Double): Self = StObject.set(x, "sortFn", js.Any.fromFunction2(value))
+      inline def setSortFn(value: (/* a */ Score, /* b */ Score) => Double): Self = StObject.set(x, "sortFn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSortFnUndefined: Self = StObject.set(x, "sortFn", js.undefined)
+      inline def setSortFnUndefined: Self = StObject.set(x, "sortFn", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setTokenSeparator(value: RegExp): Self = StObject.set(x, "tokenSeparator", value.asInstanceOf[js.Any])
+      inline def setTokenSeparator(value: RegExp): Self = StObject.set(x, "tokenSeparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenSeparatorUndefined: Self = StObject.set(x, "tokenSeparator", js.undefined)
+      inline def setTokenSeparatorUndefined: Self = StObject.set(x, "tokenSeparator", js.undefined)
       
-      @scala.inline
-      def setTokenize(value: Boolean): Self = StObject.set(x, "tokenize", value.asInstanceOf[js.Any])
+      inline def setTokenize(value: Boolean): Self = StObject.set(x, "tokenize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenizeUndefined: Self = StObject.set(x, "tokenize", js.undefined)
+      inline def setTokenizeUndefined: Self = StObject.set(x, "tokenize", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   
@@ -209,20 +170,16 @@ object mod {
   }
   object FuseResultWithMatches {
     
-    @scala.inline
-    def apply[T](item: T, matches: js.Any): FuseResultWithMatches[T] = {
+    inline def apply[T](item: T, matches: js.Any): FuseResultWithMatches[T] = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any])
       __obj.asInstanceOf[FuseResultWithMatches[T]]
     }
     
-    @scala.inline
-    implicit class FuseResultWithMatchesMutableBuilder[Self <: FuseResultWithMatches[?], T] (val x: Self & FuseResultWithMatches[T]) extends AnyVal {
+    extension [Self <: FuseResultWithMatches[?], T](x: Self & FuseResultWithMatches[T]) {
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatches(value: js.Any): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: js.Any): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,20 +191,16 @@ object mod {
   }
   object FuseResultWithScore {
     
-    @scala.inline
-    def apply[T](item: T, score: Double): FuseResultWithScore[T] = {
+    inline def apply[T](item: T, score: Double): FuseResultWithScore[T] = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[FuseResultWithScore[T]]
     }
     
-    @scala.inline
-    implicit class FuseResultWithScoreMutableBuilder[Self <: FuseResultWithScore[?], T] (val x: Self & FuseResultWithScore[T]) extends AnyVal {
+    extension [Self <: FuseResultWithScore[?], T](x: Self & FuseResultWithScore[T]) {
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
   
@@ -257,20 +210,16 @@ object mod {
   }
   object SearchOpts {
     
-    @scala.inline
-    def apply(): SearchOpts = {
+    inline def apply(): SearchOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchOpts]
     }
     
-    @scala.inline
-    implicit class SearchOptsMutableBuilder[Self <: SearchOpts] (val x: Self) extends AnyVal {
+    extension [Self <: SearchOpts](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
 }

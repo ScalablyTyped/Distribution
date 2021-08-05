@@ -26,28 +26,21 @@ trait MutedInfo extends StObject {
 }
 object MutedInfo {
   
-  @scala.inline
-  def apply(muted: Boolean): MutedInfo = {
+  inline def apply(muted: Boolean): MutedInfo = {
     val __obj = js.Dynamic.literal(muted = muted.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutedInfo]
   }
   
-  @scala.inline
-  implicit class MutedInfoMutableBuilder[Self <: MutedInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MutedInfo](x: Self) {
     
-    @scala.inline
-    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
+    inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
+    inline def setExtensionIdUndefined: Self = StObject.set(x, "extensionId", js.undefined)
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

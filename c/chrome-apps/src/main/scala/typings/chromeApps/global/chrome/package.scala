@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Different page speed and load metrics
   */
-@scala.inline
-def csi(): typings.chromeApps.anon.OnloadT = typings.chromeApps.global.chrome.^.asInstanceOf[js.Dynamic].applyDynamic("csi")().asInstanceOf[typings.chromeApps.anon.OnloadT]
+inline def csi(): typings.chromeApps.anon.OnloadT = typings.chromeApps.global.chrome.^.asInstanceOf[js.Dynamic].applyDynamic("csi")().asInstanceOf[typings.chromeApps.anon.OnloadT]
 
 // #endregion
 // #region placeholders
@@ -26,8 +25,7 @@ def csi(): typings.chromeApps.anon.OnloadT = typings.chromeApps.global.chrome.^.
   * Please consult the official documentation.
   * @see[Documentation]{@link https://developer.chrome.com/apps/experimental}
   */
-@scala.inline
-def experimental: js.Any = typings.chromeApps.global.chrome.^.asInstanceOf[js.Dynamic].selectDynamic("experimental").asInstanceOf[js.Any]
+inline def experimental: js.Any = typings.chromeApps.global.chrome.^.asInstanceOf[js.Dynamic].selectDynamic("experimental").asInstanceOf[js.Any]
 
 /**
   * @deprecated Deprecated in Chrome 64.
@@ -37,8 +35,7 @@ def experimental: js.Any = typings.chromeApps.global.chrome.^.asInstanceOf[js.Dy
   * @see[Use this instead]{@link https://www.w3.org/TR/navigation-timing-2/}
   * @see[Deprecation article]{@link https://developers.google.com/web/updates/2017/12/chrome-loadtimes-deprecated}
   */
-@scala.inline
-def loadTimes(): typings.chromeApps.chrome.deprecatedButUsable = typings.chromeApps.global.chrome.^.asInstanceOf[js.Dynamic].applyDynamic("loadTimes")().asInstanceOf[typings.chromeApps.chrome.deprecatedButUsable]
+inline def loadTimes(): typings.chromeApps.chrome.deprecatedButUsable = typings.chromeApps.global.chrome.^.asInstanceOf[js.Dynamic].applyDynamic("loadTimes")().asInstanceOf[typings.chromeApps.chrome.deprecatedButUsable]
 
 // #endregion
 // #region chrome.serial
@@ -52,5 +49,4 @@ def loadTimes(): typings.chromeApps.chrome.deprecatedButUsable = typings.chromeA
   *  sockets.udp, sockets.tcp and sockets.tcpServer APIs.
   * @since Chrome 23
   */
-@scala.inline
-def serial: typings.chromeApps.chrome.deprecated = typings.chromeApps.global.chrome.^.asInstanceOf[js.Dynamic].selectDynamic("serial").asInstanceOf[typings.chromeApps.chrome.deprecated]
+inline def serial: typings.chromeApps.chrome.deprecated = typings.chromeApps.global.chrome.^.asInstanceOf[js.Dynamic].selectDynamic("serial").asInstanceOf[typings.chromeApps.chrome.deprecated]

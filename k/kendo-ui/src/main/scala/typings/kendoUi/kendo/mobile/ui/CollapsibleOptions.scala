@@ -24,61 +24,43 @@ trait CollapsibleOptions extends StObject {
 }
 object CollapsibleOptions {
   
-  @scala.inline
-  def apply(): CollapsibleOptions = {
+  inline def apply(): CollapsibleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollapsibleOptions]
   }
   
-  @scala.inline
-  implicit class CollapsibleOptionsMutableBuilder[Self <: CollapsibleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollapsibleOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setCollapse(value: /* e */ CollapsibleEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
+    inline def setCollapse(value: /* e */ CollapsibleEvent => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    @scala.inline
-    def setExpand(value: /* e */ CollapsibleEvent => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
+    inline def setExpand(value: /* e */ CollapsibleEvent => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpandIcon(value: String): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
+    inline def setExpandIcon(value: String): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+    inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setIconPosition(value: String): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
+    inline def setIconPosition(value: String): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
+    inline def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
     
-    @scala.inline
-    def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

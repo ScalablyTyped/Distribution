@@ -11,19 +11,15 @@ trait CancelTestMatrixResponse extends StObject {
 }
 object CancelTestMatrixResponse {
   
-  @scala.inline
-  def apply(): CancelTestMatrixResponse = {
+  inline def apply(): CancelTestMatrixResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelTestMatrixResponse]
   }
   
-  @scala.inline
-  implicit class CancelTestMatrixResponseMutableBuilder[Self <: CancelTestMatrixResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CancelTestMatrixResponse](x: Self) {
     
-    @scala.inline
-    def setTestState(value: String): Self = StObject.set(x, "testState", value.asInstanceOf[js.Any])
+    inline def setTestState(value: String): Self = StObject.set(x, "testState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestStateUndefined: Self = StObject.set(x, "testState", js.undefined)
+    inline def setTestStateUndefined: Self = StObject.set(x, "testState", js.undefined)
   }
 }

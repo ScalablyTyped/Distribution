@@ -13,22 +13,17 @@ trait OutputResources extends StObject {
 }
 object OutputResources {
   
-  @scala.inline
-  def apply(): OutputResources = {
+  inline def apply(): OutputResources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutputResources]
   }
   
-  @scala.inline
-  implicit class OutputResourcesMutableBuilder[Self <: OutputResources] (val x: Self) extends AnyVal {
+  extension [Self <: OutputResources](x: Self) {
     
-    @scala.inline
-    def setAmis(value: AmiList): Self = StObject.set(x, "amis", value.asInstanceOf[js.Any])
+    inline def setAmis(value: AmiList): Self = StObject.set(x, "amis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmisUndefined: Self = StObject.set(x, "amis", js.undefined)
+    inline def setAmisUndefined: Self = StObject.set(x, "amis", js.undefined)
     
-    @scala.inline
-    def setAmisVarargs(value: Ami*): Self = StObject.set(x, "amis", js.Array(value :_*))
+    inline def setAmisVarargs(value: Ami*): Self = StObject.set(x, "amis", js.Array(value :_*))
   }
 }

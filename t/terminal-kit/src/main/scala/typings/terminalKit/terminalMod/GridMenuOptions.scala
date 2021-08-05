@@ -33,85 +33,59 @@ trait GridMenuOptions extends StObject {
 }
 object GridMenuOptions {
   
-  @scala.inline
-  def apply(): GridMenuOptions = {
+  inline def apply(): GridMenuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridMenuOptions]
   }
   
-  @scala.inline
-  implicit class GridMenuOptionsMutableBuilder[Self <: GridMenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridMenuOptions](x: Self) {
     
-    @scala.inline
-    def setExitOnUnexpectedKey(value: Boolean): Self = StObject.set(x, "exitOnUnexpectedKey", value.asInstanceOf[js.Any])
+    inline def setExitOnUnexpectedKey(value: Boolean): Self = StObject.set(x, "exitOnUnexpectedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitOnUnexpectedKeyUndefined: Self = StObject.set(x, "exitOnUnexpectedKey", js.undefined)
+    inline def setExitOnUnexpectedKeyUndefined: Self = StObject.set(x, "exitOnUnexpectedKey", js.undefined)
     
-    @scala.inline
-    def setItemMaxWidth(value: Double): Self = StObject.set(x, "itemMaxWidth", value.asInstanceOf[js.Any])
+    inline def setItemMaxWidth(value: Double): Self = StObject.set(x, "itemMaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemMaxWidthUndefined: Self = StObject.set(x, "itemMaxWidth", js.undefined)
+    inline def setItemMaxWidthUndefined: Self = StObject.set(x, "itemMaxWidth", js.undefined)
     
-    @scala.inline
-    def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
+    inline def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyBindingsUndefined: Self = StObject.set(x, "keyBindings", js.undefined)
+    inline def setKeyBindingsUndefined: Self = StObject.set(x, "keyBindings", js.undefined)
     
-    @scala.inline
-    def setLeftPadding(value: String): Self = StObject.set(x, "leftPadding", value.asInstanceOf[js.Any])
+    inline def setLeftPadding(value: String): Self = StObject.set(x, "leftPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftPaddingUndefined: Self = StObject.set(x, "leftPadding", js.undefined)
+    inline def setLeftPaddingUndefined: Self = StObject.set(x, "leftPadding", js.undefined)
     
-    @scala.inline
-    def setRightPadding(value: String): Self = StObject.set(x, "rightPadding", value.asInstanceOf[js.Any])
+    inline def setRightPadding(value: String): Self = StObject.set(x, "rightPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightPaddingUndefined: Self = StObject.set(x, "rightPadding", js.undefined)
+    inline def setRightPaddingUndefined: Self = StObject.set(x, "rightPadding", js.undefined)
     
-    @scala.inline
-    def setSelectedLeftPadding(value: String): Self = StObject.set(x, "selectedLeftPadding", value.asInstanceOf[js.Any])
+    inline def setSelectedLeftPadding(value: String): Self = StObject.set(x, "selectedLeftPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedLeftPaddingUndefined: Self = StObject.set(x, "selectedLeftPadding", js.undefined)
+    inline def setSelectedLeftPaddingUndefined: Self = StObject.set(x, "selectedLeftPadding", js.undefined)
     
-    @scala.inline
-    def setSelectedRightPadding(value: String): Self = StObject.set(x, "selectedRightPadding", value.asInstanceOf[js.Any])
+    inline def setSelectedRightPadding(value: String): Self = StObject.set(x, "selectedRightPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedRightPaddingUndefined: Self = StObject.set(x, "selectedRightPadding", js.undefined)
+    inline def setSelectedRightPaddingUndefined: Self = StObject.set(x, "selectedRightPadding", js.undefined)
     
-    @scala.inline
-    def setSelectedStyle(value: CTerminal): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedStyle(value: CTerminal): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
+    inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

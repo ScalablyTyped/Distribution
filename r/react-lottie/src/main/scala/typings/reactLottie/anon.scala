@@ -34,56 +34,40 @@ object anon {
   }
   object ClassName {
     
-    @scala.inline
-    def apply(): ClassName = {
+    inline def apply(): ClassName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClassName]
     }
     
-    @scala.inline
-    implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+    extension [Self <: ClassName](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClearCanvas(value: Boolean): Self = StObject.set(x, "clearCanvas", value.asInstanceOf[js.Any])
+      inline def setClearCanvas(value: Boolean): Self = StObject.set(x, "clearCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearCanvasUndefined: Self = StObject.set(x, "clearCanvas", js.undefined)
+      inline def setClearCanvasUndefined: Self = StObject.set(x, "clearCanvas", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setHideOnTransparent(value: Boolean): Self = StObject.set(x, "hideOnTransparent", value.asInstanceOf[js.Any])
+      inline def setHideOnTransparent(value: Boolean): Self = StObject.set(x, "hideOnTransparent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideOnTransparentUndefined: Self = StObject.set(x, "hideOnTransparent", js.undefined)
+      inline def setHideOnTransparentUndefined: Self = StObject.set(x, "hideOnTransparent", js.undefined)
       
-      @scala.inline
-      def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+      inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
+      inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
       
-      @scala.inline
-      def setProgressiveLoad(value: Boolean): Self = StObject.set(x, "progressiveLoad", value.asInstanceOf[js.Any])
+      inline def setProgressiveLoad(value: Boolean): Self = StObject.set(x, "progressiveLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressiveLoadUndefined: Self = StObject.set(x, "progressiveLoad", js.undefined)
+      inline def setProgressiveLoadUndefined: Self = StObject.set(x, "progressiveLoad", js.undefined)
       
-      @scala.inline
-      def setScaleMode(value: js.Any): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
+      inline def setScaleMode(value: js.Any): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleModeUndefined: Self = StObject.set(x, "scaleMode", js.undefined)
+      inline def setScaleModeUndefined: Self = StObject.set(x, "scaleMode", js.undefined)
     }
   }
 }

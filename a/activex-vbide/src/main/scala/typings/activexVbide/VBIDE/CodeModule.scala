@@ -116,6 +116,6 @@ trait CodeModule extends StObject {
   
   val VBE: typings.activexVbide.VBIDE.VBE = js.native
   
-  @JSName("VBIDE.CodeModule_typekey")
+  /* private */ @JSName("VBIDE.CodeModule_typekey")
   var VBIDEDotCodeModule_typekey: CodeModule = js.native
 }

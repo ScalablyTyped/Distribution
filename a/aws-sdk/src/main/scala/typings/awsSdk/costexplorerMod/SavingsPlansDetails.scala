@@ -23,31 +23,23 @@ trait SavingsPlansDetails extends StObject {
 }
 object SavingsPlansDetails {
   
-  @scala.inline
-  def apply(): SavingsPlansDetails = {
+  inline def apply(): SavingsPlansDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SavingsPlansDetails]
   }
   
-  @scala.inline
-  implicit class SavingsPlansDetailsMutableBuilder[Self <: SavingsPlansDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SavingsPlansDetails](x: Self) {
     
-    @scala.inline
-    def setInstanceFamily(value: GenericString): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
+    inline def setInstanceFamily(value: GenericString): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
+    inline def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
     
-    @scala.inline
-    def setOfferingId(value: GenericString): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
+    inline def setOfferingId(value: GenericString): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
+    inline def setOfferingIdUndefined: Self = StObject.set(x, "OfferingId", js.undefined)
     
-    @scala.inline
-    def setRegion(value: GenericString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: GenericString): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
   }
 }

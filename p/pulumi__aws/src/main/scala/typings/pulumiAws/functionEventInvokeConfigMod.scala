@@ -66,21 +66,16 @@ object functionEventInvokeConfigMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FunctionEventInvokeConfigState): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: FunctionEventInvokeConfigState, opts: CustomResourceOptions): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
+    inline def get(name: String, id: Input[ID]): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
+    inline def get(name: String, id: Input[ID], state: FunctionEventInvokeConfigState): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
+    inline def get(name: String, id: Input[ID], state: FunctionEventInvokeConfigState, opts: CustomResourceOptions): FunctionEventInvokeConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FunctionEventInvokeConfig]
     
     /**
       * Returns true if the given object is an instance of FunctionEventInvokeConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/functionEventInvokeConfig.FunctionEventInvokeConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/functionEventInvokeConfig.FunctionEventInvokeConfig */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/functionEventInvokeConfig.FunctionEventInvokeConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/functionEventInvokeConfig.FunctionEventInvokeConfig */ Boolean]
   }
   
   trait FunctionEventInvokeConfigArgs extends StObject {
@@ -114,41 +109,30 @@ object functionEventInvokeConfigMod {
   }
   object FunctionEventInvokeConfigArgs {
     
-    @scala.inline
-    def apply(functionName: Input[String]): FunctionEventInvokeConfigArgs = {
+    inline def apply(functionName: Input[String]): FunctionEventInvokeConfigArgs = {
       val __obj = js.Dynamic.literal(functionName = functionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionEventInvokeConfigArgs]
     }
     
-    @scala.inline
-    implicit class FunctionEventInvokeConfigArgsMutableBuilder[Self <: FunctionEventInvokeConfigArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionEventInvokeConfigArgs](x: Self) {
       
-      @scala.inline
-      def setDestinationConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionEventInvokeConfigDestinationConfig]): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
+      inline def setDestinationConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionEventInvokeConfigDestinationConfig]): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
+      inline def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: Input[String]): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: Input[String]): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumEventAgeInSeconds(value: Input[Double]): Self = StObject.set(x, "maximumEventAgeInSeconds", value.asInstanceOf[js.Any])
+      inline def setMaximumEventAgeInSeconds(value: Input[Double]): Self = StObject.set(x, "maximumEventAgeInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumEventAgeInSecondsUndefined: Self = StObject.set(x, "maximumEventAgeInSeconds", js.undefined)
+      inline def setMaximumEventAgeInSecondsUndefined: Self = StObject.set(x, "maximumEventAgeInSeconds", js.undefined)
       
-      @scala.inline
-      def setMaximumRetryAttempts(value: Input[Double]): Self = StObject.set(x, "maximumRetryAttempts", value.asInstanceOf[js.Any])
+      inline def setMaximumRetryAttempts(value: Input[Double]): Self = StObject.set(x, "maximumRetryAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "maximumRetryAttempts", js.undefined)
+      inline def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "maximumRetryAttempts", js.undefined)
       
-      @scala.inline
-      def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
     }
   }
   
@@ -183,44 +167,32 @@ object functionEventInvokeConfigMod {
   }
   object FunctionEventInvokeConfigState {
     
-    @scala.inline
-    def apply(): FunctionEventInvokeConfigState = {
+    inline def apply(): FunctionEventInvokeConfigState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FunctionEventInvokeConfigState]
     }
     
-    @scala.inline
-    implicit class FunctionEventInvokeConfigStateMutableBuilder[Self <: FunctionEventInvokeConfigState] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionEventInvokeConfigState](x: Self) {
       
-      @scala.inline
-      def setDestinationConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionEventInvokeConfigDestinationConfig]): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
+      inline def setDestinationConfig(value: Input[typings.pulumiAws.inputMod.lambda.FunctionEventInvokeConfigDestinationConfig]): Self = StObject.set(x, "destinationConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
+      inline def setDestinationConfigUndefined: Self = StObject.set(x, "destinationConfig", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: Input[String]): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: Input[String]): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+      inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
-      @scala.inline
-      def setMaximumEventAgeInSeconds(value: Input[Double]): Self = StObject.set(x, "maximumEventAgeInSeconds", value.asInstanceOf[js.Any])
+      inline def setMaximumEventAgeInSeconds(value: Input[Double]): Self = StObject.set(x, "maximumEventAgeInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumEventAgeInSecondsUndefined: Self = StObject.set(x, "maximumEventAgeInSeconds", js.undefined)
+      inline def setMaximumEventAgeInSecondsUndefined: Self = StObject.set(x, "maximumEventAgeInSeconds", js.undefined)
       
-      @scala.inline
-      def setMaximumRetryAttempts(value: Input[Double]): Self = StObject.set(x, "maximumRetryAttempts", value.asInstanceOf[js.Any])
+      inline def setMaximumRetryAttempts(value: Input[Double]): Self = StObject.set(x, "maximumRetryAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "maximumRetryAttempts", js.undefined)
+      inline def setMaximumRetryAttemptsUndefined: Self = StObject.set(x, "maximumRetryAttempts", js.undefined)
       
-      @scala.inline
-      def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: Input[String]): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
+      inline def setQualifierUndefined: Self = StObject.set(x, "qualifier", js.undefined)
     }
   }
 }

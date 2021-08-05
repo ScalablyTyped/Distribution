@@ -53,64 +53,45 @@ trait CreateDeploymentRequest extends StObject {
 }
 object CreateDeploymentRequest {
   
-  @scala.inline
-  def apply(restApiId: String): CreateDeploymentRequest = {
+  inline def apply(restApiId: String): CreateDeploymentRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class CreateDeploymentRequestMutableBuilder[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setCacheClusterEnabled(value: NullableBoolean): Self = StObject.set(x, "cacheClusterEnabled", value.asInstanceOf[js.Any])
+    inline def setCacheClusterEnabled(value: NullableBoolean): Self = StObject.set(x, "cacheClusterEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheClusterEnabledUndefined: Self = StObject.set(x, "cacheClusterEnabled", js.undefined)
+    inline def setCacheClusterEnabledUndefined: Self = StObject.set(x, "cacheClusterEnabled", js.undefined)
     
-    @scala.inline
-    def setCacheClusterSize(value: CacheClusterSize): Self = StObject.set(x, "cacheClusterSize", value.asInstanceOf[js.Any])
+    inline def setCacheClusterSize(value: CacheClusterSize): Self = StObject.set(x, "cacheClusterSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheClusterSizeUndefined: Self = StObject.set(x, "cacheClusterSize", js.undefined)
+    inline def setCacheClusterSizeUndefined: Self = StObject.set(x, "cacheClusterSize", js.undefined)
     
-    @scala.inline
-    def setCanarySettings(value: DeploymentCanarySettings): Self = StObject.set(x, "canarySettings", value.asInstanceOf[js.Any])
+    inline def setCanarySettings(value: DeploymentCanarySettings): Self = StObject.set(x, "canarySettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanarySettingsUndefined: Self = StObject.set(x, "canarySettings", js.undefined)
+    inline def setCanarySettingsUndefined: Self = StObject.set(x, "canarySettings", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageDescription(value: String): Self = StObject.set(x, "stageDescription", value.asInstanceOf[js.Any])
+    inline def setStageDescription(value: String): Self = StObject.set(x, "stageDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageDescriptionUndefined: Self = StObject.set(x, "stageDescription", js.undefined)
+    inline def setStageDescriptionUndefined: Self = StObject.set(x, "stageDescription", js.undefined)
     
-    @scala.inline
-    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
+    inline def setStageNameUndefined: Self = StObject.set(x, "stageName", js.undefined)
     
-    @scala.inline
-    def setTracingEnabled(value: NullableBoolean): Self = StObject.set(x, "tracingEnabled", value.asInstanceOf[js.Any])
+    inline def setTracingEnabled(value: NullableBoolean): Self = StObject.set(x, "tracingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracingEnabledUndefined: Self = StObject.set(x, "tracingEnabled", js.undefined)
+    inline def setTracingEnabledUndefined: Self = StObject.set(x, "tracingEnabled", js.undefined)
     
-    @scala.inline
-    def setVariables(value: MapOfStringToString): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: MapOfStringToString): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+    inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
   }
 }

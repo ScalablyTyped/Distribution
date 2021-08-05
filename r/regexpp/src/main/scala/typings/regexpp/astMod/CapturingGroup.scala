@@ -24,8 +24,7 @@ trait CapturingGroup
 }
 object CapturingGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternatives: js.Array[Alternative],
     end: Double,
     parent: Alternative | Quantifier,
@@ -38,31 +37,22 @@ object CapturingGroup {
     __obj.asInstanceOf[CapturingGroup]
   }
   
-  @scala.inline
-  implicit class CapturingGroupMutableBuilder[Self <: CapturingGroup] (val x: Self) extends AnyVal {
+  extension [Self <: CapturingGroup](x: Self) {
     
-    @scala.inline
-    def setAlternatives(value: js.Array[Alternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+    inline def setAlternatives(value: js.Array[Alternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativesVarargs(value: Alternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: Alternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Alternative | Quantifier): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferences(value: js.Array[Backreference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    inline def setReferences(value: js.Array[Backreference]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferencesVarargs(value: Backreference*): Self = StObject.set(x, "references", js.Array(value :_*))
+    inline def setReferencesVarargs(value: Backreference*): Self = StObject.set(x, "references", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.CapturingGroup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.regexpp.regexppStrings.CapturingGroup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

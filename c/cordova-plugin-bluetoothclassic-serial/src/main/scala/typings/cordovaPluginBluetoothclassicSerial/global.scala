@@ -9,6 +9,5 @@ object global {
   @JSGlobal("bluetoothClassicSerial")
   @js.native
   def bluetoothClassicSerial: BluetoothClassicSerial = js.native
-  @scala.inline
-  def bluetoothClassicSerial_=(x: BluetoothClassicSerial): Unit = js.Dynamic.global.updateDynamic("bluetoothClassicSerial")(x.asInstanceOf[js.Any])
+  inline def bluetoothClassicSerial_=(x: BluetoothClassicSerial): Unit = js.Dynamic.global.updateDynamic("bluetoothClassicSerial")(x.asInstanceOf[js.Any])
 }

@@ -39,45 +39,33 @@ trait RecipientUpdateResponse extends StObject {
 }
 object RecipientUpdateResponse {
   
-  @scala.inline
-  def apply(): RecipientUpdateResponse = {
+  inline def apply(): RecipientUpdateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientUpdateResponse]
   }
   
-  @scala.inline
-  implicit class RecipientUpdateResponseMutableBuilder[Self <: RecipientUpdateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientUpdateResponse](x: Self) {
     
-    @scala.inline
-    def setCombined(value: String): Self = StObject.set(x, "combined", value.asInstanceOf[js.Any])
+    inline def setCombined(value: String): Self = StObject.set(x, "combined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCombinedUndefined: Self = StObject.set(x, "combined", js.undefined)
+    inline def setCombinedUndefined: Self = StObject.set(x, "combined", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
+    inline def setRecipientId(value: String): Self = StObject.set(x, "recipientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientIdGuid(value: String): Self = StObject.set(x, "recipientIdGuid", value.asInstanceOf[js.Any])
+    inline def setRecipientIdGuid(value: String): Self = StObject.set(x, "recipientIdGuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientIdGuidUndefined: Self = StObject.set(x, "recipientIdGuid", js.undefined)
+    inline def setRecipientIdGuidUndefined: Self = StObject.set(x, "recipientIdGuid", js.undefined)
     
-    @scala.inline
-    def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
+    inline def setRecipientIdUndefined: Self = StObject.set(x, "recipientId", js.undefined)
     
-    @scala.inline
-    def setTabs(value: EnvelopeRecipientTabs): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: EnvelopeRecipientTabs): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+    inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
   }
 }

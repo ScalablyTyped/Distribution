@@ -18,25 +18,19 @@ trait DetectFacesRequest extends StObject {
 }
 object DetectFacesRequest {
   
-  @scala.inline
-  def apply(Image: Image): DetectFacesRequest = {
+  inline def apply(Image: Image): DetectFacesRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectFacesRequest]
   }
   
-  @scala.inline
-  implicit class DetectFacesRequestMutableBuilder[Self <: DetectFacesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectFacesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Attribute*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait LocalSearchSearchOptions extends StObject {
 }
 object LocalSearchSearchOptions {
   
-  @scala.inline
-  def apply(customData: js.Any, forceLocal: Boolean): LocalSearchSearchOptions = {
+  inline def apply(customData: js.Any, forceLocal: Boolean): LocalSearchSearchOptions = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], forceLocal = forceLocal.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalSearchSearchOptions]
   }
   
-  @scala.inline
-  implicit class LocalSearchSearchOptionsMutableBuilder[Self <: LocalSearchSearchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LocalSearchSearchOptions](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceLocal(value: Boolean): Self = StObject.set(x, "forceLocal", value.asInstanceOf[js.Any])
+    inline def setForceLocal(value: Boolean): Self = StObject.set(x, "forceLocal", value.asInstanceOf[js.Any])
   }
 }

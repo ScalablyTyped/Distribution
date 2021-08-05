@@ -16,16 +16,13 @@ trait SkMaskFilterFactory extends StObject {
 }
 object SkMaskFilterFactory {
   
-  @scala.inline
-  def apply(MakeBlur: (BlurStyle, Double, Boolean) => SkMaskFilter): SkMaskFilterFactory = {
+  inline def apply(MakeBlur: (BlurStyle, Double, Boolean) => SkMaskFilter): SkMaskFilterFactory = {
     val __obj = js.Dynamic.literal(MakeBlur = js.Any.fromFunction3(MakeBlur))
     __obj.asInstanceOf[SkMaskFilterFactory]
   }
   
-  @scala.inline
-  implicit class SkMaskFilterFactoryMutableBuilder[Self <: SkMaskFilterFactory] (val x: Self) extends AnyVal {
+  extension [Self <: SkMaskFilterFactory](x: Self) {
     
-    @scala.inline
-    def setMakeBlur(value: (BlurStyle, Double, Boolean) => SkMaskFilter): Self = StObject.set(x, "MakeBlur", js.Any.fromFunction3(value))
+    inline def setMakeBlur(value: (BlurStyle, Double, Boolean) => SkMaskFilter): Self = StObject.set(x, "MakeBlur", js.Any.fromFunction3(value))
   }
 }

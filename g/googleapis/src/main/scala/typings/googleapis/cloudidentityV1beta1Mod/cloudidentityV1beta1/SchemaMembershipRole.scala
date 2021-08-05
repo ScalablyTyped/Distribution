@@ -17,19 +17,15 @@ trait SchemaMembershipRole extends StObject {
 }
 object SchemaMembershipRole {
   
-  @scala.inline
-  def apply(): SchemaMembershipRole = {
+  inline def apply(): SchemaMembershipRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMembershipRole]
   }
   
-  @scala.inline
-  implicit class SchemaMembershipRoleMutableBuilder[Self <: SchemaMembershipRole] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMembershipRole](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

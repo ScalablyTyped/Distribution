@@ -15,20 +15,16 @@ object typesConcurrencyMod {
   }
   object Concurrency {
     
-    @scala.inline
-    def apply(): Concurrency = {
+    inline def apply(): Concurrency = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Concurrency]
     }
     
-    @scala.inline
-    implicit class ConcurrencyMutableBuilder[Self <: Concurrency] (val x: Self) extends AnyVal {
+    extension [Self <: Concurrency](x: Self) {
       
-      @scala.inline
-      def setReservedConcurrentExecutions(value: Double): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
+      inline def setReservedConcurrentExecutions(value: Double): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "ReservedConcurrentExecutions", js.undefined)
+      inline def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "ReservedConcurrentExecutions", js.undefined)
     }
   }
   

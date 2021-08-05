@@ -18,22 +18,17 @@ trait DeleteDashboardRequest extends StObject {
 }
 object DeleteDashboardRequest {
   
-  @scala.inline
-  def apply(dashboardId: ID): DeleteDashboardRequest = {
+  inline def apply(dashboardId: ID): DeleteDashboardRequest = {
     val __obj = js.Dynamic.literal(dashboardId = dashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDashboardRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDashboardRequestMutableBuilder[Self <: DeleteDashboardRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDashboardRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setDashboardId(value: ID): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ID): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait TeamsCreateOrUpdateIdPGroupConnectionsInOrgResponseData extends StObject {
 }
 object TeamsCreateOrUpdateIdPGroupConnectionsInOrgResponseData {
   
-  @scala.inline
-  def apply(groups: Groupdescription): TeamsCreateOrUpdateIdPGroupConnectionsInOrgResponseData = {
+  inline def apply(groups: Groupdescription): TeamsCreateOrUpdateIdPGroupConnectionsInOrgResponseData = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsCreateOrUpdateIdPGroupConnectionsInOrgResponseData]
   }
   
-  @scala.inline
-  implicit class TeamsCreateOrUpdateIdPGroupConnectionsInOrgResponseDataMutableBuilder[Self <: TeamsCreateOrUpdateIdPGroupConnectionsInOrgResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsCreateOrUpdateIdPGroupConnectionsInOrgResponseData](x: Self) {
     
-    @scala.inline
-    def setGroups(value: Groupdescription): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: Groupdescription): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
   }
 }

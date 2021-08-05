@@ -28,15 +28,12 @@ object jqueryMod {
       Note: you need to install the `asEventStream` method on JQuery by calling
       [init()](#_.aseventstream) as in `Bacon.$.init($)`.
       */
-    @scala.inline
-    def asEventStream(eventName: String, selector: String, eventTransformer: js.Any): EventStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Any]]
-    @scala.inline
-    def asEventStream(eventName: String, selector: Unit, eventTransformer: js.Any): EventStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Any]]
+    inline def asEventStream(eventName: String, selector: String, eventTransformer: js.Any): EventStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Any]]
+    inline def asEventStream(eventName: String, selector: Unit, eventTransformer: js.Any): EventStream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("asEventStream")(eventName.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], eventTransformer.asInstanceOf[js.Any])).asInstanceOf[EventStream[js.Any]]
     
     /**
       * Installs the [asEventStream](#_.aseventstream) to the given jQuery/Zepto object (the `$` object).
       */
-    @scala.inline
-    def init(jQuery: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(jQuery.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(jQuery: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(jQuery.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

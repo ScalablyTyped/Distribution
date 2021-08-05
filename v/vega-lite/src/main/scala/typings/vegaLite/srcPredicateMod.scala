@@ -17,48 +17,33 @@ object srcPredicateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fieldFilterExpression(predicate: FieldPredicate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldFilterExpression")(predicate.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def fieldFilterExpression(predicate: FieldPredicate, useInRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldFilterExpression")(predicate.asInstanceOf[js.Any], useInRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fieldFilterExpression(predicate: FieldPredicate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldFilterExpression")(predicate.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fieldFilterExpression(predicate: FieldPredicate, useInRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldFilterExpression")(predicate.asInstanceOf[js.Any], useInRange.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def fieldValidPredicate(fieldExpr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldValidPredicate")(fieldExpr.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def fieldValidPredicate(fieldExpr: String, valid: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldValidPredicate")(fieldExpr.asInstanceOf[js.Any], valid.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fieldValidPredicate(fieldExpr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldValidPredicate")(fieldExpr.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fieldValidPredicate(fieldExpr: String, valid: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldValidPredicate")(fieldExpr.asInstanceOf[js.Any], valid.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def isFieldEqualPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldEqualPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean]
+  inline def isFieldEqualPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldEqualPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean]
   
-  @scala.inline
-  def isFieldGTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean]
+  inline def isFieldGTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean]
   
-  @scala.inline
-  def isFieldGTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean]
+  inline def isFieldGTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean]
   
-  @scala.inline
-  def isFieldLTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean]
+  inline def isFieldLTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean]
   
-  @scala.inline
-  def isFieldLTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean]
+  inline def isFieldLTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean]
   
-  @scala.inline
-  def isFieldOneOfPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOneOfPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean]
+  inline def isFieldOneOfPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOneOfPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean]
   
-  @scala.inline
-  def isFieldPredicate(predicate: Predicate): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFieldPredicate(predicate: Predicate): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isFieldRangePredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldRangePredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean]
+  inline def isFieldRangePredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldRangePredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean]
   
-  @scala.inline
-  def isFieldValidPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldValidPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean]
+  inline def isFieldValidPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldValidPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean]
   
-  @scala.inline
-  def isSelectionPredicate(predicate: LogicalComposition[Predicate]): /* is vega-lite.vega-lite/build/src/predicate.SelectionPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.SelectionPredicate */ Boolean]
+  inline def isSelectionPredicate(predicate: LogicalComposition[Predicate]): /* is vega-lite.vega-lite/build/src/predicate.SelectionPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.SelectionPredicate */ Boolean]
   
-  @scala.inline
-  def normalizePredicate(f: Predicate): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePredicate")(f.asInstanceOf[js.Any]).asInstanceOf[Predicate]
+  inline def normalizePredicate(f: Predicate): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePredicate")(f.asInstanceOf[js.Any]).asInstanceOf[Predicate]
   
   trait FieldEqualPredicate
     extends StObject
@@ -73,17 +58,14 @@ object srcPredicateMod {
   }
   object FieldEqualPredicate {
     
-    @scala.inline
-    def apply(equal: String | Double | Boolean | DateTime | ExprRef | SignalRef, field: FieldName): FieldEqualPredicate = {
+    inline def apply(equal: String | Double | Boolean | DateTime | ExprRef | SignalRef, field: FieldName): FieldEqualPredicate = {
       val __obj = js.Dynamic.literal(equal = equal.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldEqualPredicate]
     }
     
-    @scala.inline
-    implicit class FieldEqualPredicateMutableBuilder[Self <: FieldEqualPredicate] (val x: Self) extends AnyVal {
+    extension [Self <: FieldEqualPredicate](x: Self) {
       
-      @scala.inline
-      def setEqual(value: String | Double | Boolean | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
+      inline def setEqual(value: String | Double | Boolean | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,17 +82,14 @@ object srcPredicateMod {
   }
   object FieldGTEPredicate {
     
-    @scala.inline
-    def apply(field: FieldName, gte: String | Double | DateTime | ExprRef | SignalRef): FieldGTEPredicate = {
+    inline def apply(field: FieldName, gte: String | Double | DateTime | ExprRef | SignalRef): FieldGTEPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], gte = gte.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldGTEPredicate]
     }
     
-    @scala.inline
-    implicit class FieldGTEPredicateMutableBuilder[Self <: FieldGTEPredicate] (val x: Self) extends AnyVal {
+    extension [Self <: FieldGTEPredicate](x: Self) {
       
-      @scala.inline
-      def setGte(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+      inline def setGte(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,17 +106,14 @@ object srcPredicateMod {
   }
   object FieldGTPredicate {
     
-    @scala.inline
-    def apply(field: FieldName, gt: String | Double | DateTime | ExprRef | SignalRef): FieldGTPredicate = {
+    inline def apply(field: FieldName, gt: String | Double | DateTime | ExprRef | SignalRef): FieldGTPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], gt = gt.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldGTPredicate]
     }
     
-    @scala.inline
-    implicit class FieldGTPredicateMutableBuilder[Self <: FieldGTPredicate] (val x: Self) extends AnyVal {
+    extension [Self <: FieldGTPredicate](x: Self) {
       
-      @scala.inline
-      def setGt(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+      inline def setGt(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,17 +130,14 @@ object srcPredicateMod {
   }
   object FieldLTEPredicate {
     
-    @scala.inline
-    def apply(field: FieldName, lte: String | Double | DateTime | ExprRef | SignalRef): FieldLTEPredicate = {
+    inline def apply(field: FieldName, lte: String | Double | DateTime | ExprRef | SignalRef): FieldLTEPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], lte = lte.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldLTEPredicate]
     }
     
-    @scala.inline
-    implicit class FieldLTEPredicateMutableBuilder[Self <: FieldLTEPredicate] (val x: Self) extends AnyVal {
+    extension [Self <: FieldLTEPredicate](x: Self) {
       
-      @scala.inline
-      def setLte(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+      inline def setLte(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
     }
   }
   
@@ -181,17 +154,14 @@ object srcPredicateMod {
   }
   object FieldLTPredicate {
     
-    @scala.inline
-    def apply(field: FieldName, lt: String | Double | DateTime | ExprRef | SignalRef): FieldLTPredicate = {
+    inline def apply(field: FieldName, lt: String | Double | DateTime | ExprRef | SignalRef): FieldLTPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], lt = lt.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldLTPredicate]
     }
     
-    @scala.inline
-    implicit class FieldLTPredicateMutableBuilder[Self <: FieldLTPredicate] (val x: Self) extends AnyVal {
+    extension [Self <: FieldLTPredicate](x: Self) {
       
-      @scala.inline
-      def setLt(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+      inline def setLt(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,20 +179,16 @@ object srcPredicateMod {
   }
   object FieldOneOfPredicate {
     
-    @scala.inline
-    def apply(field: FieldName, oneOf: js.Array[Boolean | DateTime | Double | String]): FieldOneOfPredicate = {
+    inline def apply(field: FieldName, oneOf: js.Array[Boolean | DateTime | Double | String]): FieldOneOfPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], oneOf = oneOf.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldOneOfPredicate]
     }
     
-    @scala.inline
-    implicit class FieldOneOfPredicateMutableBuilder[Self <: FieldOneOfPredicate] (val x: Self) extends AnyVal {
+    extension [Self <: FieldOneOfPredicate](x: Self) {
       
-      @scala.inline
-      def setOneOf(value: js.Array[Boolean | DateTime | Double | String]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
+      inline def setOneOf(value: js.Array[Boolean | DateTime | Double | String]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneOfVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
+      inline def setOneOfVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "oneOf", js.Array(value :_*))
     }
   }
   
@@ -239,44 +205,37 @@ object srcPredicateMod {
   trait FieldPredicate extends StObject
   object FieldPredicate {
     
-    @scala.inline
-    def FieldEqualPredicate(equal: String | Double | Boolean | DateTime | ExprRef | SignalRef, field: FieldName): typings.vegaLite.srcPredicateMod.FieldEqualPredicate = {
+    inline def FieldEqualPredicate(equal: String | Double | Boolean | DateTime | ExprRef | SignalRef, field: FieldName): typings.vegaLite.srcPredicateMod.FieldEqualPredicate = {
       val __obj = js.Dynamic.literal(equal = equal.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldEqualPredicate]
     }
     
-    @scala.inline
-    def FieldGTEPredicate(field: FieldName, gte: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldGTEPredicate = {
+    inline def FieldGTEPredicate(field: FieldName, gte: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldGTEPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], gte = gte.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldGTEPredicate]
     }
     
-    @scala.inline
-    def FieldGTPredicate(field: FieldName, gt: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldGTPredicate = {
+    inline def FieldGTPredicate(field: FieldName, gt: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldGTPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], gt = gt.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldGTPredicate]
     }
     
-    @scala.inline
-    def FieldLTEPredicate(field: FieldName, lte: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldLTEPredicate = {
+    inline def FieldLTEPredicate(field: FieldName, lte: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldLTEPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], lte = lte.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldLTEPredicate]
     }
     
-    @scala.inline
-    def FieldLTPredicate(field: FieldName, lt: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldLTPredicate = {
+    inline def FieldLTPredicate(field: FieldName, lt: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldLTPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], lt = lt.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldLTPredicate]
     }
     
-    @scala.inline
-    def FieldOneOfPredicate(field: FieldName, oneOf: js.Array[Boolean | DateTime | Double | String]): typings.vegaLite.srcPredicateMod.FieldOneOfPredicate = {
+    inline def FieldOneOfPredicate(field: FieldName, oneOf: js.Array[Boolean | DateTime | Double | String]): typings.vegaLite.srcPredicateMod.FieldOneOfPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], oneOf = oneOf.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldOneOfPredicate]
     }
     
-    @scala.inline
-    def FieldRangePredicate(
+    inline def FieldRangePredicate(
       field: FieldName,
       range: (js.Array[Double | DateTime | Null | ExprRef | SignalRef]) | ExprRef | SignalRef
     ): typings.vegaLite.srcPredicateMod.FieldRangePredicate = {
@@ -284,8 +243,7 @@ object srcPredicateMod {
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldRangePredicate]
     }
     
-    @scala.inline
-    def FieldValidPredicate_(field: FieldName, valid: Boolean): typings.vegaLite.srcPredicateMod.FieldValidPredicate_ = {
+    inline def FieldValidPredicate_(field: FieldName, valid: Boolean): typings.vegaLite.srcPredicateMod.FieldValidPredicate_ = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldValidPredicate_]
     }
@@ -305,23 +263,18 @@ object srcPredicateMod {
   }
   object FieldPredicateBase {
     
-    @scala.inline
-    def apply(field: FieldName): FieldPredicateBase = {
+    inline def apply(field: FieldName): FieldPredicateBase = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldPredicateBase]
     }
     
-    @scala.inline
-    implicit class FieldPredicateBaseMutableBuilder[Self <: FieldPredicateBase] (val x: Self) extends AnyVal {
+    extension [Self <: FieldPredicateBase](x: Self) {
       
-      @scala.inline
-      def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUnit(value: TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+      inline def setTimeUnit(value: TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+      inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
     }
   }
   
@@ -341,8 +294,7 @@ object srcPredicateMod {
   }
   object FieldRangePredicate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       field: FieldName,
       range: (js.Array[Double | DateTime | Null | ExprRef | SignalRef]) | ExprRef | SignalRef
     ): FieldRangePredicate = {
@@ -350,14 +302,11 @@ object srcPredicateMod {
       __obj.asInstanceOf[FieldRangePredicate]
     }
     
-    @scala.inline
-    implicit class FieldRangePredicateMutableBuilder[Self <: FieldRangePredicate] (val x: Self) extends AnyVal {
+    extension [Self <: FieldRangePredicate](x: Self) {
       
-      @scala.inline
-      def setRange(value: (js.Array[Double | DateTime | Null | ExprRef | SignalRef]) | ExprRef | SignalRef): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: (js.Array[Double | DateTime | Null | ExprRef | SignalRef]) | ExprRef | SignalRef): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeVarargs(value: (Double | DateTime | Null | ExprRef | SignalRef)*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: (Double | DateTime | Null | ExprRef | SignalRef)*): Self = StObject.set(x, "range", js.Array(value :_*))
     }
   }
   
@@ -374,17 +323,14 @@ object srcPredicateMod {
   }
   object FieldValidPredicate_ {
     
-    @scala.inline
-    def apply(field: FieldName, valid: Boolean): FieldValidPredicate_ = {
+    inline def apply(field: FieldName, valid: Boolean): FieldValidPredicate_ = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldValidPredicate_]
     }
     
-    @scala.inline
-    implicit class FieldValidPredicate_MutableBuilder[Self <: FieldValidPredicate_] (val x: Self) extends AnyVal {
+    extension [Self <: FieldValidPredicate_](x: Self) {
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -413,61 +359,51 @@ object srcPredicateMod {
   }
   object SelectionPredicate {
     
-    @scala.inline
-    def apply(selection: LogicalComposition[String]): SelectionPredicate = {
+    inline def apply(selection: LogicalComposition[String]): SelectionPredicate = {
       val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionPredicate]
     }
     
-    @scala.inline
-    implicit class SelectionPredicateMutableBuilder[Self <: SelectionPredicate] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionPredicate](x: Self) {
       
-      @scala.inline
-      def setSelection(value: LogicalComposition[String]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: LogicalComposition[String]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     }
   }
   
   trait _Predicate extends StObject
   object _Predicate {
     
-    @scala.inline
-    def FieldEqualPredicate(equal: String | Double | Boolean | DateTime | ExprRef | SignalRef, field: FieldName): typings.vegaLite.srcPredicateMod.FieldEqualPredicate = {
+    inline def FieldEqualPredicate(equal: String | Double | Boolean | DateTime | ExprRef | SignalRef, field: FieldName): typings.vegaLite.srcPredicateMod.FieldEqualPredicate = {
       val __obj = js.Dynamic.literal(equal = equal.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldEqualPredicate]
     }
     
-    @scala.inline
-    def FieldGTEPredicate(field: FieldName, gte: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldGTEPredicate = {
+    inline def FieldGTEPredicate(field: FieldName, gte: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldGTEPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], gte = gte.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldGTEPredicate]
     }
     
-    @scala.inline
-    def FieldGTPredicate(field: FieldName, gt: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldGTPredicate = {
+    inline def FieldGTPredicate(field: FieldName, gt: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldGTPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], gt = gt.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldGTPredicate]
     }
     
-    @scala.inline
-    def FieldLTEPredicate(field: FieldName, lte: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldLTEPredicate = {
+    inline def FieldLTEPredicate(field: FieldName, lte: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldLTEPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], lte = lte.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldLTEPredicate]
     }
     
-    @scala.inline
-    def FieldLTPredicate(field: FieldName, lt: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldLTPredicate = {
+    inline def FieldLTPredicate(field: FieldName, lt: String | Double | DateTime | ExprRef | SignalRef): typings.vegaLite.srcPredicateMod.FieldLTPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], lt = lt.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldLTPredicate]
     }
     
-    @scala.inline
-    def FieldOneOfPredicate(field: FieldName, oneOf: js.Array[Boolean | DateTime | Double | String]): typings.vegaLite.srcPredicateMod.FieldOneOfPredicate = {
+    inline def FieldOneOfPredicate(field: FieldName, oneOf: js.Array[Boolean | DateTime | Double | String]): typings.vegaLite.srcPredicateMod.FieldOneOfPredicate = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], oneOf = oneOf.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldOneOfPredicate]
     }
     
-    @scala.inline
-    def FieldRangePredicate(
+    inline def FieldRangePredicate(
       field: FieldName,
       range: (js.Array[Double | DateTime | Null | ExprRef | SignalRef]) | ExprRef | SignalRef
     ): typings.vegaLite.srcPredicateMod.FieldRangePredicate = {
@@ -475,14 +411,12 @@ object srcPredicateMod {
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldRangePredicate]
     }
     
-    @scala.inline
-    def FieldValidPredicate_(field: FieldName, valid: Boolean): typings.vegaLite.srcPredicateMod.FieldValidPredicate_ = {
+    inline def FieldValidPredicate_(field: FieldName, valid: Boolean): typings.vegaLite.srcPredicateMod.FieldValidPredicate_ = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.FieldValidPredicate_]
     }
     
-    @scala.inline
-    def SelectionPredicate(selection: LogicalComposition[String]): typings.vegaLite.srcPredicateMod.SelectionPredicate = {
+    inline def SelectionPredicate(selection: LogicalComposition[String]): typings.vegaLite.srcPredicateMod.SelectionPredicate = {
       val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaLite.srcPredicateMod.SelectionPredicate]
     }

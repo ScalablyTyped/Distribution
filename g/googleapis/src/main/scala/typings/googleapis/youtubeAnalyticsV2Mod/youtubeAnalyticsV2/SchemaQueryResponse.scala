@@ -48,43 +48,31 @@ trait SchemaQueryResponse extends StObject {
 }
 object SchemaQueryResponse {
   
-  @scala.inline
-  def apply(): SchemaQueryResponse = {
+  inline def apply(): SchemaQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryResponse]
   }
   
-  @scala.inline
-  implicit class SchemaQueryResponseMutableBuilder[Self <: SchemaQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryResponse](x: Self) {
     
-    @scala.inline
-    def setColumnHeaders(value: js.Array[SchemaResultTableColumnHeader]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
+    inline def setColumnHeaders(value: js.Array[SchemaResultTableColumnHeader]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
+    inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
     
-    @scala.inline
-    def setColumnHeadersVarargs(value: SchemaResultTableColumnHeader*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
+    inline def setColumnHeadersVarargs(value: SchemaResultTableColumnHeader*): Self = StObject.set(x, "columnHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

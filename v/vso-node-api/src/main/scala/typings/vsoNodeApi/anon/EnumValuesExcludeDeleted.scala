@@ -10,16 +10,13 @@ trait EnumValuesExcludeDeleted extends StObject {
 }
 object EnumValuesExcludeDeleted {
   
-  @scala.inline
-  def apply(enumValues: ExcludeDeleted): EnumValuesExcludeDeleted = {
+  inline def apply(enumValues: ExcludeDeleted): EnumValuesExcludeDeleted = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesExcludeDeleted]
   }
   
-  @scala.inline
-  implicit class EnumValuesExcludeDeletedMutableBuilder[Self <: EnumValuesExcludeDeleted] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesExcludeDeleted](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: ExcludeDeleted): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: ExcludeDeleted): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

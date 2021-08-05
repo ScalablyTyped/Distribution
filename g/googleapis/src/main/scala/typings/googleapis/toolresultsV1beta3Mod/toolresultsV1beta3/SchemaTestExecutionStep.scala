@@ -46,43 +46,31 @@ trait SchemaTestExecutionStep extends StObject {
 }
 object SchemaTestExecutionStep {
   
-  @scala.inline
-  def apply(): SchemaTestExecutionStep = {
+  inline def apply(): SchemaTestExecutionStep = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTestExecutionStep]
   }
   
-  @scala.inline
-  implicit class SchemaTestExecutionStepMutableBuilder[Self <: SchemaTestExecutionStep] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTestExecutionStep](x: Self) {
     
-    @scala.inline
-    def setTestIssues(value: js.Array[SchemaTestIssue]): Self = StObject.set(x, "testIssues", value.asInstanceOf[js.Any])
+    inline def setTestIssues(value: js.Array[SchemaTestIssue]): Self = StObject.set(x, "testIssues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestIssuesUndefined: Self = StObject.set(x, "testIssues", js.undefined)
+    inline def setTestIssuesUndefined: Self = StObject.set(x, "testIssues", js.undefined)
     
-    @scala.inline
-    def setTestIssuesVarargs(value: SchemaTestIssue*): Self = StObject.set(x, "testIssues", js.Array(value :_*))
+    inline def setTestIssuesVarargs(value: SchemaTestIssue*): Self = StObject.set(x, "testIssues", js.Array(value :_*))
     
-    @scala.inline
-    def setTestSuiteOverviews(value: js.Array[SchemaTestSuiteOverview]): Self = StObject.set(x, "testSuiteOverviews", value.asInstanceOf[js.Any])
+    inline def setTestSuiteOverviews(value: js.Array[SchemaTestSuiteOverview]): Self = StObject.set(x, "testSuiteOverviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSuiteOverviewsUndefined: Self = StObject.set(x, "testSuiteOverviews", js.undefined)
+    inline def setTestSuiteOverviewsUndefined: Self = StObject.set(x, "testSuiteOverviews", js.undefined)
     
-    @scala.inline
-    def setTestSuiteOverviewsVarargs(value: SchemaTestSuiteOverview*): Self = StObject.set(x, "testSuiteOverviews", js.Array(value :_*))
+    inline def setTestSuiteOverviewsVarargs(value: SchemaTestSuiteOverview*): Self = StObject.set(x, "testSuiteOverviews", js.Array(value :_*))
     
-    @scala.inline
-    def setTestTiming(value: SchemaTestTiming): Self = StObject.set(x, "testTiming", value.asInstanceOf[js.Any])
+    inline def setTestTiming(value: SchemaTestTiming): Self = StObject.set(x, "testTiming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTimingUndefined: Self = StObject.set(x, "testTiming", js.undefined)
+    inline def setTestTimingUndefined: Self = StObject.set(x, "testTiming", js.undefined)
     
-    @scala.inline
-    def setToolExecution(value: SchemaToolExecution): Self = StObject.set(x, "toolExecution", value.asInstanceOf[js.Any])
+    inline def setToolExecution(value: SchemaToolExecution): Self = StObject.set(x, "toolExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolExecutionUndefined: Self = StObject.set(x, "toolExecution", js.undefined)
+    inline def setToolExecutionUndefined: Self = StObject.set(x, "toolExecution", js.undefined)
   }
 }

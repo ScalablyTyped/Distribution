@@ -17,25 +17,19 @@ trait DisableServiceRequest extends StObject {
 }
 object DisableServiceRequest {
   
-  @scala.inline
-  def apply(): DisableServiceRequest = {
+  inline def apply(): DisableServiceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableServiceRequest]
   }
   
-  @scala.inline
-  implicit class DisableServiceRequestMutableBuilder[Self <: DisableServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableServiceRequest](x: Self) {
     
-    @scala.inline
-    def setCheckIfServiceHasUsage(value: String): Self = StObject.set(x, "checkIfServiceHasUsage", value.asInstanceOf[js.Any])
+    inline def setCheckIfServiceHasUsage(value: String): Self = StObject.set(x, "checkIfServiceHasUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckIfServiceHasUsageUndefined: Self = StObject.set(x, "checkIfServiceHasUsage", js.undefined)
+    inline def setCheckIfServiceHasUsageUndefined: Self = StObject.set(x, "checkIfServiceHasUsage", js.undefined)
     
-    @scala.inline
-    def setDisableDependentServices(value: Boolean): Self = StObject.set(x, "disableDependentServices", value.asInstanceOf[js.Any])
+    inline def setDisableDependentServices(value: Boolean): Self = StObject.set(x, "disableDependentServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableDependentServicesUndefined: Self = StObject.set(x, "disableDependentServices", js.undefined)
+    inline def setDisableDependentServicesUndefined: Self = StObject.set(x, "disableDependentServices", js.undefined)
   }
 }

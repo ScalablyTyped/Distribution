@@ -13,19 +13,15 @@ trait ExportClientVpnClientConfigurationResult extends StObject {
 }
 object ExportClientVpnClientConfigurationResult {
   
-  @scala.inline
-  def apply(): ExportClientVpnClientConfigurationResult = {
+  inline def apply(): ExportClientVpnClientConfigurationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportClientVpnClientConfigurationResult]
   }
   
-  @scala.inline
-  implicit class ExportClientVpnClientConfigurationResultMutableBuilder[Self <: ExportClientVpnClientConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ExportClientVpnClientConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setClientConfiguration(value: String): Self = StObject.set(x, "ClientConfiguration", value.asInstanceOf[js.Any])
+    inline def setClientConfiguration(value: String): Self = StObject.set(x, "ClientConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientConfigurationUndefined: Self = StObject.set(x, "ClientConfiguration", js.undefined)
+    inline def setClientConfigurationUndefined: Self = StObject.set(x, "ClientConfiguration", js.undefined)
   }
 }

@@ -35,31 +35,23 @@ trait PlusContactsContactField extends StObject {
 }
 object PlusContactsContactField {
   
-  @scala.inline
-  def apply(): PlusContactsContactField = {
+  inline def apply(): PlusContactsContactField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusContactsContactField]
   }
   
-  @scala.inline
-  implicit class PlusContactsContactFieldMutableBuilder[Self <: PlusContactsContactField] (val x: Self) extends AnyVal {
+  extension [Self <: PlusContactsContactField](x: Self) {
     
-    @scala.inline
-    def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
+    inline def setPreferred(value: Boolean): Self = StObject.set(x, "preferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
+    inline def setPreferredUndefined: Self = StObject.set(x, "preferred", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

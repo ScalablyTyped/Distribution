@@ -16,9 +16,9 @@ object regionMapMod {
        with ReadonlyRegionMap[T] {
     def this(equateValues: js.Function2[/* a */ T, /* b */ T, Boolean]) = this()
     
-    var _equateRegions: js.Any = js.native
+    /* private */ var _equateRegions: js.Any = js.native
     
-    var _sourceFileRegions: js.Any = js.native
+    /* private */ var _sourceFileRegions: js.Any = js.native
     
     def addRegion(sourceFile: String, line: Double, value: T): Unit = js.native
     /**
@@ -57,8 +57,7 @@ object regionMapMod {
   }
   object ReadonlyRegionMap {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       findRegion: (SourceFile, Double) => js.UndefOr[Region[T]],
       regions: (SourceFile, Double) => IterableIterator[Region[T]]
     ): ReadonlyRegionMap[T] = {
@@ -66,14 +65,11 @@ object regionMapMod {
       __obj.asInstanceOf[ReadonlyRegionMap[T]]
     }
     
-    @scala.inline
-    implicit class ReadonlyRegionMapMutableBuilder[Self <: ReadonlyRegionMap[?], T] (val x: Self & ReadonlyRegionMap[T]) extends AnyVal {
+    extension [Self <: ReadonlyRegionMap[?], T](x: Self & ReadonlyRegionMap[T]) {
       
-      @scala.inline
-      def setFindRegion(value: (SourceFile, Double) => js.UndefOr[Region[T]]): Self = StObject.set(x, "findRegion", js.Any.fromFunction2(value))
+      inline def setFindRegion(value: (SourceFile, Double) => js.UndefOr[Region[T]]): Self = StObject.set(x, "findRegion", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegions(value: (SourceFile, Double) => IterableIterator[Region[T]]): Self = StObject.set(x, "regions", js.Any.fromFunction2(value))
+      inline def setRegions(value: (SourceFile, Double) => IterableIterator[Region[T]]): Self = StObject.set(x, "regions", js.Any.fromFunction2(value))
     }
   }
   
@@ -85,20 +81,16 @@ object regionMapMod {
   }
   object Region {
     
-    @scala.inline
-    def apply[T](line: Double, value: T): Region[T] = {
+    inline def apply[T](line: Double, value: T): Region[T] = {
       val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Region[T]]
     }
     
-    @scala.inline
-    implicit class RegionMutableBuilder[Self <: Region[?], T] (val x: Self & Region[T]) extends AnyVal {
+    extension [Self <: Region[?], T](x: Self & Region[T]) {
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

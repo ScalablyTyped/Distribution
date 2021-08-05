@@ -11,19 +11,15 @@ trait LaunchAppAction extends StObject {
 }
 object LaunchAppAction {
   
-  @scala.inline
-  def apply(): LaunchAppAction = {
+  inline def apply(): LaunchAppAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchAppAction]
   }
   
-  @scala.inline
-  implicit class LaunchAppActionMutableBuilder[Self <: LaunchAppAction] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchAppAction](x: Self) {
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

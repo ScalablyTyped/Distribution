@@ -11,22 +11,17 @@ trait AcknowledgeRequest extends StObject {
 }
 object AcknowledgeRequest {
   
-  @scala.inline
-  def apply(): AcknowledgeRequest = {
+  inline def apply(): AcknowledgeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AcknowledgeRequest]
   }
   
-  @scala.inline
-  implicit class AcknowledgeRequestMutableBuilder[Self <: AcknowledgeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AcknowledgeRequest](x: Self) {
     
-    @scala.inline
-    def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
+    inline def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
+    inline def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
     
-    @scala.inline
-    def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
+    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
   }
 }

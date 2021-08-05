@@ -28,67 +28,47 @@ trait ApplyFilter extends StObject {
 }
 object ApplyFilter {
   
-  @scala.inline
-  def apply(): ApplyFilter = {
+  inline def apply(): ApplyFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplyFilter]
   }
   
-  @scala.inline
-  implicit class ApplyFilterMutableBuilder[Self <: ApplyFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyFilter](x: Self) {
     
-    @scala.inline
-    def setApplyFilter(value: auto | onClick): Self = StObject.set(x, "applyFilter", value.asInstanceOf[js.Any])
+    inline def setApplyFilter(value: auto | onClick): Self = StObject.set(x, "applyFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyFilterText(value: String): Self = StObject.set(x, "applyFilterText", value.asInstanceOf[js.Any])
+    inline def setApplyFilterText(value: String): Self = StObject.set(x, "applyFilterText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyFilterTextUndefined: Self = StObject.set(x, "applyFilterText", js.undefined)
+    inline def setApplyFilterTextUndefined: Self = StObject.set(x, "applyFilterText", js.undefined)
     
-    @scala.inline
-    def setApplyFilterUndefined: Self = StObject.set(x, "applyFilter", js.undefined)
+    inline def setApplyFilterUndefined: Self = StObject.set(x, "applyFilter", js.undefined)
     
-    @scala.inline
-    def setBetweenEndText(value: String): Self = StObject.set(x, "betweenEndText", value.asInstanceOf[js.Any])
+    inline def setBetweenEndText(value: String): Self = StObject.set(x, "betweenEndText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetweenEndTextUndefined: Self = StObject.set(x, "betweenEndText", js.undefined)
+    inline def setBetweenEndTextUndefined: Self = StObject.set(x, "betweenEndText", js.undefined)
     
-    @scala.inline
-    def setBetweenStartText(value: String): Self = StObject.set(x, "betweenStartText", value.asInstanceOf[js.Any])
+    inline def setBetweenStartText(value: String): Self = StObject.set(x, "betweenStartText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetweenStartTextUndefined: Self = StObject.set(x, "betweenStartText", js.undefined)
+    inline def setBetweenStartTextUndefined: Self = StObject.set(x, "betweenStartText", js.undefined)
     
-    @scala.inline
-    def setOperationDescriptions(value: Between): Self = StObject.set(x, "operationDescriptions", value.asInstanceOf[js.Any])
+    inline def setOperationDescriptions(value: Between): Self = StObject.set(x, "operationDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationDescriptionsUndefined: Self = StObject.set(x, "operationDescriptions", js.undefined)
+    inline def setOperationDescriptionsUndefined: Self = StObject.set(x, "operationDescriptions", js.undefined)
     
-    @scala.inline
-    def setResetOperationText(value: String): Self = StObject.set(x, "resetOperationText", value.asInstanceOf[js.Any])
+    inline def setResetOperationText(value: String): Self = StObject.set(x, "resetOperationText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetOperationTextUndefined: Self = StObject.set(x, "resetOperationText", js.undefined)
+    inline def setResetOperationTextUndefined: Self = StObject.set(x, "resetOperationText", js.undefined)
     
-    @scala.inline
-    def setShowAllText(value: String): Self = StObject.set(x, "showAllText", value.asInstanceOf[js.Any])
+    inline def setShowAllText(value: String): Self = StObject.set(x, "showAllText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAllTextUndefined: Self = StObject.set(x, "showAllText", js.undefined)
+    inline def setShowAllTextUndefined: Self = StObject.set(x, "showAllText", js.undefined)
     
-    @scala.inline
-    def setShowOperationChooser(value: Boolean): Self = StObject.set(x, "showOperationChooser", value.asInstanceOf[js.Any])
+    inline def setShowOperationChooser(value: Boolean): Self = StObject.set(x, "showOperationChooser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowOperationChooserUndefined: Self = StObject.set(x, "showOperationChooser", js.undefined)
+    inline def setShowOperationChooserUndefined: Self = StObject.set(x, "showOperationChooser", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

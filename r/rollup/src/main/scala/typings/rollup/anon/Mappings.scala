@@ -18,19 +18,15 @@ trait Mappings
 }
 object Mappings {
   
-  @scala.inline
-  def apply(plugin: String): Mappings = {
+  inline def apply(plugin: String): Mappings = {
     val __obj = js.Dynamic.literal(missing = true, plugin = plugin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mappings]
   }
   
-  @scala.inline
-  implicit class MappingsMutableBuilder[Self <: Mappings] (val x: Self) extends AnyVal {
+  extension [Self <: Mappings](x: Self) {
     
-    @scala.inline
-    def setMissing(value: `true`): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+    inline def setMissing(value: `true`): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
   }
 }

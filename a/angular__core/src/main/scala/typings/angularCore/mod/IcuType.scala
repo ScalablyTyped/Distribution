@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IcuType extends StObject
 object IcuType {
   
-  @scala.inline
-  def plural: `1` = 1.asInstanceOf[`1`]
+  inline def plural: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def select: `0` = 0.asInstanceOf[`0`]
+  inline def select: `0` = 0.asInstanceOf[`0`]
 }

@@ -18,28 +18,21 @@ trait FieldsOptions extends StObject {
 }
 object FieldsOptions {
   
-  @scala.inline
-  def apply(): FieldsOptions = {
+  inline def apply(): FieldsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldsOptions]
   }
   
-  @scala.inline
-  implicit class FieldsOptionsMutableBuilder[Self <: FieldsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FieldsOptions](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

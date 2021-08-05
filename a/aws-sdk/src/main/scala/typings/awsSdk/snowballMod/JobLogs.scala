@@ -23,31 +23,23 @@ trait JobLogs extends StObject {
 }
 object JobLogs {
   
-  @scala.inline
-  def apply(): JobLogs = {
+  inline def apply(): JobLogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobLogs]
   }
   
-  @scala.inline
-  implicit class JobLogsMutableBuilder[Self <: JobLogs] (val x: Self) extends AnyVal {
+  extension [Self <: JobLogs](x: Self) {
     
-    @scala.inline
-    def setJobCompletionReportURI(value: String): Self = StObject.set(x, "JobCompletionReportURI", value.asInstanceOf[js.Any])
+    inline def setJobCompletionReportURI(value: String): Self = StObject.set(x, "JobCompletionReportURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobCompletionReportURIUndefined: Self = StObject.set(x, "JobCompletionReportURI", js.undefined)
+    inline def setJobCompletionReportURIUndefined: Self = StObject.set(x, "JobCompletionReportURI", js.undefined)
     
-    @scala.inline
-    def setJobFailureLogURI(value: String): Self = StObject.set(x, "JobFailureLogURI", value.asInstanceOf[js.Any])
+    inline def setJobFailureLogURI(value: String): Self = StObject.set(x, "JobFailureLogURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobFailureLogURIUndefined: Self = StObject.set(x, "JobFailureLogURI", js.undefined)
+    inline def setJobFailureLogURIUndefined: Self = StObject.set(x, "JobFailureLogURI", js.undefined)
     
-    @scala.inline
-    def setJobSuccessLogURI(value: String): Self = StObject.set(x, "JobSuccessLogURI", value.asInstanceOf[js.Any])
+    inline def setJobSuccessLogURI(value: String): Self = StObject.set(x, "JobSuccessLogURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobSuccessLogURIUndefined: Self = StObject.set(x, "JobSuccessLogURI", js.undefined)
+    inline def setJobSuccessLogURIUndefined: Self = StObject.set(x, "JobSuccessLogURI", js.undefined)
   }
 }

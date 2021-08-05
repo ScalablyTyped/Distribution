@@ -13,16 +13,13 @@ trait CreateMatchmakingRuleSetOutput extends StObject {
 }
 object CreateMatchmakingRuleSetOutput {
   
-  @scala.inline
-  def apply(RuleSet: MatchmakingRuleSet): CreateMatchmakingRuleSetOutput = {
+  inline def apply(RuleSet: MatchmakingRuleSet): CreateMatchmakingRuleSetOutput = {
     val __obj = js.Dynamic.literal(RuleSet = RuleSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMatchmakingRuleSetOutput]
   }
   
-  @scala.inline
-  implicit class CreateMatchmakingRuleSetOutputMutableBuilder[Self <: CreateMatchmakingRuleSetOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMatchmakingRuleSetOutput](x: Self) {
     
-    @scala.inline
-    def setRuleSet(value: MatchmakingRuleSet): Self = StObject.set(x, "RuleSet", value.asInstanceOf[js.Any])
+    inline def setRuleSet(value: MatchmakingRuleSet): Self = StObject.set(x, "RuleSet", value.asInstanceOf[js.Any])
   }
 }

@@ -15568,29 +15568,22 @@ object JQuery {
     }
     object AjaxSettingsBase {
       
-      @scala.inline
-      def apply[TContext](): AjaxSettingsBase[TContext] = {
+      inline def apply[TContext](): AjaxSettingsBase[TContext] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AjaxSettingsBase[TContext]]
       }
       
-      @scala.inline
-      implicit class AjaxSettingsBaseMutableBuilder[Self <: AjaxSettingsBase[?], TContext] (val x: Self & AjaxSettingsBase[TContext]) extends AnyVal {
+      extension [Self <: AjaxSettingsBase[?], TContext](x: Self & AjaxSettingsBase[TContext]) {
         
-        @scala.inline
-        def setAccepts(value: PlainObject[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
+        inline def setAccepts(value: PlainObject[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
+        inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
         
-        @scala.inline
-        def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+        inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+        inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
         
-        @scala.inline
-        def setBeforeSend(
+        inline def setBeforeSend(
           value: js.ThisFunction2[
                   /* this */ TContext, 
                   /* jqXHR */ jqXHR[js.Any], 
@@ -15599,203 +15592,137 @@ object JQuery {
                 ]
         ): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+        inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
         
-        @scala.inline
-        def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+        inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+        inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
         
-        @scala.inline
-        def setComplete(value: TypeOrArray[CompleteCallback[TContext]]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+        inline def setComplete(value: TypeOrArray[CompleteCallback[TContext]]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+        inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
         
-        @scala.inline
-        def setCompleteVarargs(value: CompleteCallback[TContext]*): Self = StObject.set(x, "complete", js.Array(value :_*))
+        inline def setCompleteVarargs(value: CompleteCallback[TContext]*): Self = StObject.set(x, "complete", js.Array(value :_*))
         
-        @scala.inline
-        def setContentType(value: String | `false`): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+        inline def setContentType(value: String | `false`): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+        inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
         
-        @scala.inline
-        def setContents(value: PlainObject[RegExp]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+        inline def setContents(value: PlainObject[RegExp]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+        inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
         
-        @scala.inline
-        def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+        inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+        inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
         
-        @scala.inline
-        def setConverters(value: PlainObject[(js.Function1[/* value */ js.Any, js.Any]) | `true`]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
+        inline def setConverters(value: PlainObject[(js.Function1[/* value */ js.Any, js.Any]) | `true`]): Self = StObject.set(x, "converters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConvertersUndefined: Self = StObject.set(x, "converters", js.undefined)
+        inline def setConvertersUndefined: Self = StObject.set(x, "converters", js.undefined)
         
-        @scala.inline
-        def setCrossDomain(value: Boolean): Self = StObject.set(x, "crossDomain", value.asInstanceOf[js.Any])
+        inline def setCrossDomain(value: Boolean): Self = StObject.set(x, "crossDomain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCrossDomainUndefined: Self = StObject.set(x, "crossDomain", js.undefined)
+        inline def setCrossDomainUndefined: Self = StObject.set(x, "crossDomain", js.undefined)
         
-        @scala.inline
-        def setData(value: PlainObject[js.Any] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: PlainObject[js.Any] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataFilter(value: (/* data */ String, /* type */ String) => js.Any): Self = StObject.set(x, "dataFilter", js.Any.fromFunction2(value))
+        inline def setDataFilter(value: (/* data */ String, /* type */ String) => js.Any): Self = StObject.set(x, "dataFilter", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
+        inline def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
         
-        @scala.inline
-        def setDataType(value: xml | html | script | json | jsonp | text | String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+        inline def setDataType(value: xml | html | script | json | jsonp | text | String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+        inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
         
-        @scala.inline
-        def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+        inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        @scala.inline
-        def setEnctype(value: `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
+        inline def setEnctype(value: `applicationSlashx-www-form-urlencoded` | `multipartSlashform-data` | textSlashplain): Self = StObject.set(x, "enctype", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
+        inline def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
         
-        @scala.inline
-        def setError(value: TypeOrArray[ErrorCallback[TContext]]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: TypeOrArray[ErrorCallback[TContext]]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+        inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
         
-        @scala.inline
-        def setErrorVarargs(value: ErrorCallback[TContext]*): Self = StObject.set(x, "error", js.Array(value :_*))
+        inline def setErrorVarargs(value: ErrorCallback[TContext]*): Self = StObject.set(x, "error", js.Array(value :_*))
         
-        @scala.inline
-        def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+        inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+        inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
         
-        @scala.inline
-        def setHeaders(value: PlainObject[js.UndefOr[String | Null]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+        inline def setHeaders(value: PlainObject[js.UndefOr[String | Null]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+        inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
         
-        @scala.inline
-        def setIfModified(value: Boolean): Self = StObject.set(x, "ifModified", value.asInstanceOf[js.Any])
+        inline def setIfModified(value: Boolean): Self = StObject.set(x, "ifModified", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIfModifiedUndefined: Self = StObject.set(x, "ifModified", js.undefined)
+        inline def setIfModifiedUndefined: Self = StObject.set(x, "ifModified", js.undefined)
         
-        @scala.inline
-        def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
+        inline def setIsLocal(value: Boolean): Self = StObject.set(x, "isLocal", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
+        inline def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
         
-        @scala.inline
-        def setJsonp(value: String | `false`): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+        inline def setJsonp(value: String | `false`): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJsonpCallback(value: String | (js.ThisFunction0[/* this */ TContext, String])): Self = StObject.set(x, "jsonpCallback", value.asInstanceOf[js.Any])
+        inline def setJsonpCallback(value: String | (js.ThisFunction0[/* this */ TContext, String])): Self = StObject.set(x, "jsonpCallback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJsonpCallbackUndefined: Self = StObject.set(x, "jsonpCallback", js.undefined)
+        inline def setJsonpCallbackUndefined: Self = StObject.set(x, "jsonpCallback", js.undefined)
         
-        @scala.inline
-        def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+        inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
         
-        @scala.inline
-        def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+        inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
         
-        @scala.inline
-        def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+        inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+        inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
         
-        @scala.inline
-        def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+        inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+        inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
         
-        @scala.inline
-        def setProcessData(value: Boolean): Self = StObject.set(x, "processData", value.asInstanceOf[js.Any])
+        inline def setProcessData(value: Boolean): Self = StObject.set(x, "processData", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
+        inline def setProcessDataUndefined: Self = StObject.set(x, "processData", js.undefined)
         
-        @scala.inline
-        def setScriptCharset(value: String): Self = StObject.set(x, "scriptCharset", value.asInstanceOf[js.Any])
+        inline def setScriptCharset(value: String): Self = StObject.set(x, "scriptCharset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScriptCharsetUndefined: Self = StObject.set(x, "scriptCharset", js.undefined)
+        inline def setScriptCharsetUndefined: Self = StObject.set(x, "scriptCharset", js.undefined)
         
-        @scala.inline
-        def setStatusCode(value: StatusCodeCallbacks[TContext]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+        inline def setStatusCode(value: StatusCodeCallbacks[TContext]): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+        inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
         
-        @scala.inline
-        def setSuccess(value: TypeOrArray[SuccessCallback[TContext]]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+        inline def setSuccess(value: TypeOrArray[SuccessCallback[TContext]]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+        inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
         
-        @scala.inline
-        def setSuccessVarargs(value: SuccessCallback[TContext]*): Self = StObject.set(x, "success", js.Array(value :_*))
+        inline def setSuccessVarargs(value: SuccessCallback[TContext]*): Self = StObject.set(x, "success", js.Array(value :_*))
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
         
-        @scala.inline
-        def setTraditional(value: Boolean): Self = StObject.set(x, "traditional", value.asInstanceOf[js.Any])
+        inline def setTraditional(value: Boolean): Self = StObject.set(x, "traditional", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTraditionalUndefined: Self = StObject.set(x, "traditional", js.undefined)
+        inline def setTraditionalUndefined: Self = StObject.set(x, "traditional", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+        inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
         
-        @scala.inline
-        def setXhr(value: () => XMLHttpRequest): Self = StObject.set(x, "xhr", js.Any.fromFunction0(value))
+        inline def setXhr(value: () => XMLHttpRequest): Self = StObject.set(x, "xhr", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setXhrFields(value: XHRFields): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
+        inline def setXhrFields(value: XHRFields): Self = StObject.set(x, "xhrFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setXhrFieldsUndefined: Self = StObject.set(x, "xhrFields", js.undefined)
+        inline def setXhrFieldsUndefined: Self = StObject.set(x, "xhrFields", js.undefined)
         
-        @scala.inline
-        def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+        inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
       }
     }
     
@@ -15818,17 +15745,13 @@ object JQuery {
     trait ErrorTextStatus extends StObject
     object ErrorTextStatus {
       
-      @scala.inline
-      def abort: typings.jquery.jqueryStrings.abort = "abort".asInstanceOf[typings.jquery.jqueryStrings.abort]
+      inline def abort: typings.jquery.jqueryStrings.abort = "abort".asInstanceOf[typings.jquery.jqueryStrings.abort]
       
-      @scala.inline
-      def error: typings.jquery.jqueryStrings.error = "error".asInstanceOf[typings.jquery.jqueryStrings.error]
+      inline def error: typings.jquery.jqueryStrings.error = "error".asInstanceOf[typings.jquery.jqueryStrings.error]
       
-      @scala.inline
-      def parsererror: typings.jquery.jqueryStrings.parsererror = "parsererror".asInstanceOf[typings.jquery.jqueryStrings.parsererror]
+      inline def parsererror: typings.jquery.jqueryStrings.parsererror = "parsererror".asInstanceOf[typings.jquery.jqueryStrings.parsererror]
       
-      @scala.inline
-      def timeout: typings.jquery.jqueryStrings.timeout = "timeout".asInstanceOf[typings.jquery.jqueryStrings.timeout]
+      inline def timeout: typings.jquery.jqueryStrings.timeout = "timeout".asInstanceOf[typings.jquery.jqueryStrings.timeout]
     }
     
     // region StatusCodeCallbacks
@@ -16646,2415 +16569,1613 @@ object JQuery {
     }
     object StatusCodeCallbacks {
       
-      @scala.inline
-      def apply[TContext](Object: js.Object): StatusCodeCallbacks[TContext] = {
+      inline def apply[TContext](Object: js.Object): StatusCodeCallbacks[TContext] = {
         val __obj = js.Dynamic.literal()
         js.Dynamic.global.Object.assign(__obj, Object)
         __obj.asInstanceOf[StatusCodeCallbacks[TContext]]
       }
       
-      @scala.inline
-      implicit class StatusCodeCallbacksMutableBuilder[Self <: StatusCodeCallbacks[?], TContext] (val x: Self & StatusCodeCallbacks[TContext]) extends AnyVal {
+      extension [Self <: StatusCodeCallbacks[?], TContext](x: Self & StatusCodeCallbacks[TContext]) {
         
-        @scala.inline
-        def set200(value: SuccessCallback[TContext]): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+        inline def set200(value: SuccessCallback[TContext]): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set200Undefined: Self = StObject.set(x, "200", js.undefined)
+        inline def set200Undefined: Self = StObject.set(x, "200", js.undefined)
         
-        @scala.inline
-        def set201(value: SuccessCallback[TContext]): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
+        inline def set201(value: SuccessCallback[TContext]): Self = StObject.set(x, "201", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set201Undefined: Self = StObject.set(x, "201", js.undefined)
+        inline def set201Undefined: Self = StObject.set(x, "201", js.undefined)
         
-        @scala.inline
-        def set202(value: SuccessCallback[TContext]): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
+        inline def set202(value: SuccessCallback[TContext]): Self = StObject.set(x, "202", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set202Undefined: Self = StObject.set(x, "202", js.undefined)
+        inline def set202Undefined: Self = StObject.set(x, "202", js.undefined)
         
-        @scala.inline
-        def set203(value: SuccessCallback[TContext]): Self = StObject.set(x, "203", value.asInstanceOf[js.Any])
+        inline def set203(value: SuccessCallback[TContext]): Self = StObject.set(x, "203", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set203Undefined: Self = StObject.set(x, "203", js.undefined)
+        inline def set203Undefined: Self = StObject.set(x, "203", js.undefined)
         
-        @scala.inline
-        def set204(value: SuccessCallback[TContext]): Self = StObject.set(x, "204", value.asInstanceOf[js.Any])
+        inline def set204(value: SuccessCallback[TContext]): Self = StObject.set(x, "204", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set204Undefined: Self = StObject.set(x, "204", js.undefined)
+        inline def set204Undefined: Self = StObject.set(x, "204", js.undefined)
         
-        @scala.inline
-        def set205(value: SuccessCallback[TContext]): Self = StObject.set(x, "205", value.asInstanceOf[js.Any])
+        inline def set205(value: SuccessCallback[TContext]): Self = StObject.set(x, "205", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set205Undefined: Self = StObject.set(x, "205", js.undefined)
+        inline def set205Undefined: Self = StObject.set(x, "205", js.undefined)
         
-        @scala.inline
-        def set206(value: SuccessCallback[TContext]): Self = StObject.set(x, "206", value.asInstanceOf[js.Any])
+        inline def set206(value: SuccessCallback[TContext]): Self = StObject.set(x, "206", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set206Undefined: Self = StObject.set(x, "206", js.undefined)
+        inline def set206Undefined: Self = StObject.set(x, "206", js.undefined)
         
-        @scala.inline
-        def set207(value: SuccessCallback[TContext]): Self = StObject.set(x, "207", value.asInstanceOf[js.Any])
+        inline def set207(value: SuccessCallback[TContext]): Self = StObject.set(x, "207", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set207Undefined: Self = StObject.set(x, "207", js.undefined)
+        inline def set207Undefined: Self = StObject.set(x, "207", js.undefined)
         
-        @scala.inline
-        def set208(value: SuccessCallback[TContext]): Self = StObject.set(x, "208", value.asInstanceOf[js.Any])
+        inline def set208(value: SuccessCallback[TContext]): Self = StObject.set(x, "208", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set208Undefined: Self = StObject.set(x, "208", js.undefined)
+        inline def set208Undefined: Self = StObject.set(x, "208", js.undefined)
         
-        @scala.inline
-        def set209(value: SuccessCallback[TContext]): Self = StObject.set(x, "209", value.asInstanceOf[js.Any])
+        inline def set209(value: SuccessCallback[TContext]): Self = StObject.set(x, "209", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set209Undefined: Self = StObject.set(x, "209", js.undefined)
+        inline def set209Undefined: Self = StObject.set(x, "209", js.undefined)
         
-        @scala.inline
-        def set210(value: SuccessCallback[TContext]): Self = StObject.set(x, "210", value.asInstanceOf[js.Any])
+        inline def set210(value: SuccessCallback[TContext]): Self = StObject.set(x, "210", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set210Undefined: Self = StObject.set(x, "210", js.undefined)
+        inline def set210Undefined: Self = StObject.set(x, "210", js.undefined)
         
-        @scala.inline
-        def set211(value: SuccessCallback[TContext]): Self = StObject.set(x, "211", value.asInstanceOf[js.Any])
+        inline def set211(value: SuccessCallback[TContext]): Self = StObject.set(x, "211", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set211Undefined: Self = StObject.set(x, "211", js.undefined)
+        inline def set211Undefined: Self = StObject.set(x, "211", js.undefined)
         
-        @scala.inline
-        def set212(value: SuccessCallback[TContext]): Self = StObject.set(x, "212", value.asInstanceOf[js.Any])
+        inline def set212(value: SuccessCallback[TContext]): Self = StObject.set(x, "212", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set212Undefined: Self = StObject.set(x, "212", js.undefined)
+        inline def set212Undefined: Self = StObject.set(x, "212", js.undefined)
         
-        @scala.inline
-        def set213(value: SuccessCallback[TContext]): Self = StObject.set(x, "213", value.asInstanceOf[js.Any])
+        inline def set213(value: SuccessCallback[TContext]): Self = StObject.set(x, "213", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set213Undefined: Self = StObject.set(x, "213", js.undefined)
+        inline def set213Undefined: Self = StObject.set(x, "213", js.undefined)
         
-        @scala.inline
-        def set214(value: SuccessCallback[TContext]): Self = StObject.set(x, "214", value.asInstanceOf[js.Any])
+        inline def set214(value: SuccessCallback[TContext]): Self = StObject.set(x, "214", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set214Undefined: Self = StObject.set(x, "214", js.undefined)
+        inline def set214Undefined: Self = StObject.set(x, "214", js.undefined)
         
-        @scala.inline
-        def set215(value: SuccessCallback[TContext]): Self = StObject.set(x, "215", value.asInstanceOf[js.Any])
+        inline def set215(value: SuccessCallback[TContext]): Self = StObject.set(x, "215", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set215Undefined: Self = StObject.set(x, "215", js.undefined)
+        inline def set215Undefined: Self = StObject.set(x, "215", js.undefined)
         
-        @scala.inline
-        def set216(value: SuccessCallback[TContext]): Self = StObject.set(x, "216", value.asInstanceOf[js.Any])
+        inline def set216(value: SuccessCallback[TContext]): Self = StObject.set(x, "216", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set216Undefined: Self = StObject.set(x, "216", js.undefined)
+        inline def set216Undefined: Self = StObject.set(x, "216", js.undefined)
         
-        @scala.inline
-        def set217(value: SuccessCallback[TContext]): Self = StObject.set(x, "217", value.asInstanceOf[js.Any])
+        inline def set217(value: SuccessCallback[TContext]): Self = StObject.set(x, "217", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set217Undefined: Self = StObject.set(x, "217", js.undefined)
+        inline def set217Undefined: Self = StObject.set(x, "217", js.undefined)
         
-        @scala.inline
-        def set218(value: SuccessCallback[TContext]): Self = StObject.set(x, "218", value.asInstanceOf[js.Any])
+        inline def set218(value: SuccessCallback[TContext]): Self = StObject.set(x, "218", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set218Undefined: Self = StObject.set(x, "218", js.undefined)
+        inline def set218Undefined: Self = StObject.set(x, "218", js.undefined)
         
-        @scala.inline
-        def set219(value: SuccessCallback[TContext]): Self = StObject.set(x, "219", value.asInstanceOf[js.Any])
+        inline def set219(value: SuccessCallback[TContext]): Self = StObject.set(x, "219", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set219Undefined: Self = StObject.set(x, "219", js.undefined)
+        inline def set219Undefined: Self = StObject.set(x, "219", js.undefined)
         
-        @scala.inline
-        def set220(value: SuccessCallback[TContext]): Self = StObject.set(x, "220", value.asInstanceOf[js.Any])
+        inline def set220(value: SuccessCallback[TContext]): Self = StObject.set(x, "220", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set220Undefined: Self = StObject.set(x, "220", js.undefined)
+        inline def set220Undefined: Self = StObject.set(x, "220", js.undefined)
         
-        @scala.inline
-        def set221(value: SuccessCallback[TContext]): Self = StObject.set(x, "221", value.asInstanceOf[js.Any])
+        inline def set221(value: SuccessCallback[TContext]): Self = StObject.set(x, "221", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set221Undefined: Self = StObject.set(x, "221", js.undefined)
+        inline def set221Undefined: Self = StObject.set(x, "221", js.undefined)
         
-        @scala.inline
-        def set222(value: SuccessCallback[TContext]): Self = StObject.set(x, "222", value.asInstanceOf[js.Any])
+        inline def set222(value: SuccessCallback[TContext]): Self = StObject.set(x, "222", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set222Undefined: Self = StObject.set(x, "222", js.undefined)
+        inline def set222Undefined: Self = StObject.set(x, "222", js.undefined)
         
-        @scala.inline
-        def set223(value: SuccessCallback[TContext]): Self = StObject.set(x, "223", value.asInstanceOf[js.Any])
+        inline def set223(value: SuccessCallback[TContext]): Self = StObject.set(x, "223", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set223Undefined: Self = StObject.set(x, "223", js.undefined)
+        inline def set223Undefined: Self = StObject.set(x, "223", js.undefined)
         
-        @scala.inline
-        def set224(value: SuccessCallback[TContext]): Self = StObject.set(x, "224", value.asInstanceOf[js.Any])
+        inline def set224(value: SuccessCallback[TContext]): Self = StObject.set(x, "224", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set224Undefined: Self = StObject.set(x, "224", js.undefined)
+        inline def set224Undefined: Self = StObject.set(x, "224", js.undefined)
         
-        @scala.inline
-        def set225(value: SuccessCallback[TContext]): Self = StObject.set(x, "225", value.asInstanceOf[js.Any])
+        inline def set225(value: SuccessCallback[TContext]): Self = StObject.set(x, "225", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set225Undefined: Self = StObject.set(x, "225", js.undefined)
+        inline def set225Undefined: Self = StObject.set(x, "225", js.undefined)
         
-        @scala.inline
-        def set226(value: SuccessCallback[TContext]): Self = StObject.set(x, "226", value.asInstanceOf[js.Any])
+        inline def set226(value: SuccessCallback[TContext]): Self = StObject.set(x, "226", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set226Undefined: Self = StObject.set(x, "226", js.undefined)
+        inline def set226Undefined: Self = StObject.set(x, "226", js.undefined)
         
-        @scala.inline
-        def set227(value: SuccessCallback[TContext]): Self = StObject.set(x, "227", value.asInstanceOf[js.Any])
+        inline def set227(value: SuccessCallback[TContext]): Self = StObject.set(x, "227", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set227Undefined: Self = StObject.set(x, "227", js.undefined)
+        inline def set227Undefined: Self = StObject.set(x, "227", js.undefined)
         
-        @scala.inline
-        def set228(value: SuccessCallback[TContext]): Self = StObject.set(x, "228", value.asInstanceOf[js.Any])
+        inline def set228(value: SuccessCallback[TContext]): Self = StObject.set(x, "228", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set228Undefined: Self = StObject.set(x, "228", js.undefined)
+        inline def set228Undefined: Self = StObject.set(x, "228", js.undefined)
         
-        @scala.inline
-        def set229(value: SuccessCallback[TContext]): Self = StObject.set(x, "229", value.asInstanceOf[js.Any])
+        inline def set229(value: SuccessCallback[TContext]): Self = StObject.set(x, "229", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set229Undefined: Self = StObject.set(x, "229", js.undefined)
+        inline def set229Undefined: Self = StObject.set(x, "229", js.undefined)
         
-        @scala.inline
-        def set230(value: SuccessCallback[TContext]): Self = StObject.set(x, "230", value.asInstanceOf[js.Any])
+        inline def set230(value: SuccessCallback[TContext]): Self = StObject.set(x, "230", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set230Undefined: Self = StObject.set(x, "230", js.undefined)
+        inline def set230Undefined: Self = StObject.set(x, "230", js.undefined)
         
-        @scala.inline
-        def set231(value: SuccessCallback[TContext]): Self = StObject.set(x, "231", value.asInstanceOf[js.Any])
+        inline def set231(value: SuccessCallback[TContext]): Self = StObject.set(x, "231", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set231Undefined: Self = StObject.set(x, "231", js.undefined)
+        inline def set231Undefined: Self = StObject.set(x, "231", js.undefined)
         
-        @scala.inline
-        def set232(value: SuccessCallback[TContext]): Self = StObject.set(x, "232", value.asInstanceOf[js.Any])
+        inline def set232(value: SuccessCallback[TContext]): Self = StObject.set(x, "232", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set232Undefined: Self = StObject.set(x, "232", js.undefined)
+        inline def set232Undefined: Self = StObject.set(x, "232", js.undefined)
         
-        @scala.inline
-        def set233(value: SuccessCallback[TContext]): Self = StObject.set(x, "233", value.asInstanceOf[js.Any])
+        inline def set233(value: SuccessCallback[TContext]): Self = StObject.set(x, "233", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set233Undefined: Self = StObject.set(x, "233", js.undefined)
+        inline def set233Undefined: Self = StObject.set(x, "233", js.undefined)
         
-        @scala.inline
-        def set234(value: SuccessCallback[TContext]): Self = StObject.set(x, "234", value.asInstanceOf[js.Any])
+        inline def set234(value: SuccessCallback[TContext]): Self = StObject.set(x, "234", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set234Undefined: Self = StObject.set(x, "234", js.undefined)
+        inline def set234Undefined: Self = StObject.set(x, "234", js.undefined)
         
-        @scala.inline
-        def set235(value: SuccessCallback[TContext]): Self = StObject.set(x, "235", value.asInstanceOf[js.Any])
+        inline def set235(value: SuccessCallback[TContext]): Self = StObject.set(x, "235", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set235Undefined: Self = StObject.set(x, "235", js.undefined)
+        inline def set235Undefined: Self = StObject.set(x, "235", js.undefined)
         
-        @scala.inline
-        def set236(value: SuccessCallback[TContext]): Self = StObject.set(x, "236", value.asInstanceOf[js.Any])
+        inline def set236(value: SuccessCallback[TContext]): Self = StObject.set(x, "236", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set236Undefined: Self = StObject.set(x, "236", js.undefined)
+        inline def set236Undefined: Self = StObject.set(x, "236", js.undefined)
         
-        @scala.inline
-        def set237(value: SuccessCallback[TContext]): Self = StObject.set(x, "237", value.asInstanceOf[js.Any])
+        inline def set237(value: SuccessCallback[TContext]): Self = StObject.set(x, "237", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set237Undefined: Self = StObject.set(x, "237", js.undefined)
+        inline def set237Undefined: Self = StObject.set(x, "237", js.undefined)
         
-        @scala.inline
-        def set238(value: SuccessCallback[TContext]): Self = StObject.set(x, "238", value.asInstanceOf[js.Any])
+        inline def set238(value: SuccessCallback[TContext]): Self = StObject.set(x, "238", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set238Undefined: Self = StObject.set(x, "238", js.undefined)
+        inline def set238Undefined: Self = StObject.set(x, "238", js.undefined)
         
-        @scala.inline
-        def set239(value: SuccessCallback[TContext]): Self = StObject.set(x, "239", value.asInstanceOf[js.Any])
+        inline def set239(value: SuccessCallback[TContext]): Self = StObject.set(x, "239", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set239Undefined: Self = StObject.set(x, "239", js.undefined)
+        inline def set239Undefined: Self = StObject.set(x, "239", js.undefined)
         
-        @scala.inline
-        def set240(value: SuccessCallback[TContext]): Self = StObject.set(x, "240", value.asInstanceOf[js.Any])
+        inline def set240(value: SuccessCallback[TContext]): Self = StObject.set(x, "240", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set240Undefined: Self = StObject.set(x, "240", js.undefined)
+        inline def set240Undefined: Self = StObject.set(x, "240", js.undefined)
         
-        @scala.inline
-        def set241(value: SuccessCallback[TContext]): Self = StObject.set(x, "241", value.asInstanceOf[js.Any])
+        inline def set241(value: SuccessCallback[TContext]): Self = StObject.set(x, "241", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set241Undefined: Self = StObject.set(x, "241", js.undefined)
+        inline def set241Undefined: Self = StObject.set(x, "241", js.undefined)
         
-        @scala.inline
-        def set242(value: SuccessCallback[TContext]): Self = StObject.set(x, "242", value.asInstanceOf[js.Any])
+        inline def set242(value: SuccessCallback[TContext]): Self = StObject.set(x, "242", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set242Undefined: Self = StObject.set(x, "242", js.undefined)
+        inline def set242Undefined: Self = StObject.set(x, "242", js.undefined)
         
-        @scala.inline
-        def set243(value: SuccessCallback[TContext]): Self = StObject.set(x, "243", value.asInstanceOf[js.Any])
+        inline def set243(value: SuccessCallback[TContext]): Self = StObject.set(x, "243", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set243Undefined: Self = StObject.set(x, "243", js.undefined)
+        inline def set243Undefined: Self = StObject.set(x, "243", js.undefined)
         
-        @scala.inline
-        def set244(value: SuccessCallback[TContext]): Self = StObject.set(x, "244", value.asInstanceOf[js.Any])
+        inline def set244(value: SuccessCallback[TContext]): Self = StObject.set(x, "244", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set244Undefined: Self = StObject.set(x, "244", js.undefined)
+        inline def set244Undefined: Self = StObject.set(x, "244", js.undefined)
         
-        @scala.inline
-        def set245(value: SuccessCallback[TContext]): Self = StObject.set(x, "245", value.asInstanceOf[js.Any])
+        inline def set245(value: SuccessCallback[TContext]): Self = StObject.set(x, "245", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set245Undefined: Self = StObject.set(x, "245", js.undefined)
+        inline def set245Undefined: Self = StObject.set(x, "245", js.undefined)
         
-        @scala.inline
-        def set246(value: SuccessCallback[TContext]): Self = StObject.set(x, "246", value.asInstanceOf[js.Any])
+        inline def set246(value: SuccessCallback[TContext]): Self = StObject.set(x, "246", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set246Undefined: Self = StObject.set(x, "246", js.undefined)
+        inline def set246Undefined: Self = StObject.set(x, "246", js.undefined)
         
-        @scala.inline
-        def set247(value: SuccessCallback[TContext]): Self = StObject.set(x, "247", value.asInstanceOf[js.Any])
+        inline def set247(value: SuccessCallback[TContext]): Self = StObject.set(x, "247", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set247Undefined: Self = StObject.set(x, "247", js.undefined)
+        inline def set247Undefined: Self = StObject.set(x, "247", js.undefined)
         
-        @scala.inline
-        def set248(value: SuccessCallback[TContext]): Self = StObject.set(x, "248", value.asInstanceOf[js.Any])
+        inline def set248(value: SuccessCallback[TContext]): Self = StObject.set(x, "248", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set248Undefined: Self = StObject.set(x, "248", js.undefined)
+        inline def set248Undefined: Self = StObject.set(x, "248", js.undefined)
         
-        @scala.inline
-        def set249(value: SuccessCallback[TContext]): Self = StObject.set(x, "249", value.asInstanceOf[js.Any])
+        inline def set249(value: SuccessCallback[TContext]): Self = StObject.set(x, "249", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set249Undefined: Self = StObject.set(x, "249", js.undefined)
+        inline def set249Undefined: Self = StObject.set(x, "249", js.undefined)
         
-        @scala.inline
-        def set250(value: SuccessCallback[TContext]): Self = StObject.set(x, "250", value.asInstanceOf[js.Any])
+        inline def set250(value: SuccessCallback[TContext]): Self = StObject.set(x, "250", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set250Undefined: Self = StObject.set(x, "250", js.undefined)
+        inline def set250Undefined: Self = StObject.set(x, "250", js.undefined)
         
-        @scala.inline
-        def set251(value: SuccessCallback[TContext]): Self = StObject.set(x, "251", value.asInstanceOf[js.Any])
+        inline def set251(value: SuccessCallback[TContext]): Self = StObject.set(x, "251", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set251Undefined: Self = StObject.set(x, "251", js.undefined)
+        inline def set251Undefined: Self = StObject.set(x, "251", js.undefined)
         
-        @scala.inline
-        def set252(value: SuccessCallback[TContext]): Self = StObject.set(x, "252", value.asInstanceOf[js.Any])
+        inline def set252(value: SuccessCallback[TContext]): Self = StObject.set(x, "252", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set252Undefined: Self = StObject.set(x, "252", js.undefined)
+        inline def set252Undefined: Self = StObject.set(x, "252", js.undefined)
         
-        @scala.inline
-        def set253(value: SuccessCallback[TContext]): Self = StObject.set(x, "253", value.asInstanceOf[js.Any])
+        inline def set253(value: SuccessCallback[TContext]): Self = StObject.set(x, "253", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set253Undefined: Self = StObject.set(x, "253", js.undefined)
+        inline def set253Undefined: Self = StObject.set(x, "253", js.undefined)
         
-        @scala.inline
-        def set254(value: SuccessCallback[TContext]): Self = StObject.set(x, "254", value.asInstanceOf[js.Any])
+        inline def set254(value: SuccessCallback[TContext]): Self = StObject.set(x, "254", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set254Undefined: Self = StObject.set(x, "254", js.undefined)
+        inline def set254Undefined: Self = StObject.set(x, "254", js.undefined)
         
-        @scala.inline
-        def set255(value: SuccessCallback[TContext]): Self = StObject.set(x, "255", value.asInstanceOf[js.Any])
+        inline def set255(value: SuccessCallback[TContext]): Self = StObject.set(x, "255", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set255Undefined: Self = StObject.set(x, "255", js.undefined)
+        inline def set255Undefined: Self = StObject.set(x, "255", js.undefined)
         
-        @scala.inline
-        def set256(value: SuccessCallback[TContext]): Self = StObject.set(x, "256", value.asInstanceOf[js.Any])
+        inline def set256(value: SuccessCallback[TContext]): Self = StObject.set(x, "256", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set256Undefined: Self = StObject.set(x, "256", js.undefined)
+        inline def set256Undefined: Self = StObject.set(x, "256", js.undefined)
         
-        @scala.inline
-        def set257(value: SuccessCallback[TContext]): Self = StObject.set(x, "257", value.asInstanceOf[js.Any])
+        inline def set257(value: SuccessCallback[TContext]): Self = StObject.set(x, "257", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set257Undefined: Self = StObject.set(x, "257", js.undefined)
+        inline def set257Undefined: Self = StObject.set(x, "257", js.undefined)
         
-        @scala.inline
-        def set258(value: SuccessCallback[TContext]): Self = StObject.set(x, "258", value.asInstanceOf[js.Any])
+        inline def set258(value: SuccessCallback[TContext]): Self = StObject.set(x, "258", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set258Undefined: Self = StObject.set(x, "258", js.undefined)
+        inline def set258Undefined: Self = StObject.set(x, "258", js.undefined)
         
-        @scala.inline
-        def set259(value: SuccessCallback[TContext]): Self = StObject.set(x, "259", value.asInstanceOf[js.Any])
+        inline def set259(value: SuccessCallback[TContext]): Self = StObject.set(x, "259", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set259Undefined: Self = StObject.set(x, "259", js.undefined)
+        inline def set259Undefined: Self = StObject.set(x, "259", js.undefined)
         
-        @scala.inline
-        def set260(value: SuccessCallback[TContext]): Self = StObject.set(x, "260", value.asInstanceOf[js.Any])
+        inline def set260(value: SuccessCallback[TContext]): Self = StObject.set(x, "260", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set260Undefined: Self = StObject.set(x, "260", js.undefined)
+        inline def set260Undefined: Self = StObject.set(x, "260", js.undefined)
         
-        @scala.inline
-        def set261(value: SuccessCallback[TContext]): Self = StObject.set(x, "261", value.asInstanceOf[js.Any])
+        inline def set261(value: SuccessCallback[TContext]): Self = StObject.set(x, "261", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set261Undefined: Self = StObject.set(x, "261", js.undefined)
+        inline def set261Undefined: Self = StObject.set(x, "261", js.undefined)
         
-        @scala.inline
-        def set262(value: SuccessCallback[TContext]): Self = StObject.set(x, "262", value.asInstanceOf[js.Any])
+        inline def set262(value: SuccessCallback[TContext]): Self = StObject.set(x, "262", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set262Undefined: Self = StObject.set(x, "262", js.undefined)
+        inline def set262Undefined: Self = StObject.set(x, "262", js.undefined)
         
-        @scala.inline
-        def set263(value: SuccessCallback[TContext]): Self = StObject.set(x, "263", value.asInstanceOf[js.Any])
+        inline def set263(value: SuccessCallback[TContext]): Self = StObject.set(x, "263", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set263Undefined: Self = StObject.set(x, "263", js.undefined)
+        inline def set263Undefined: Self = StObject.set(x, "263", js.undefined)
         
-        @scala.inline
-        def set264(value: SuccessCallback[TContext]): Self = StObject.set(x, "264", value.asInstanceOf[js.Any])
+        inline def set264(value: SuccessCallback[TContext]): Self = StObject.set(x, "264", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set264Undefined: Self = StObject.set(x, "264", js.undefined)
+        inline def set264Undefined: Self = StObject.set(x, "264", js.undefined)
         
-        @scala.inline
-        def set265(value: SuccessCallback[TContext]): Self = StObject.set(x, "265", value.asInstanceOf[js.Any])
+        inline def set265(value: SuccessCallback[TContext]): Self = StObject.set(x, "265", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set265Undefined: Self = StObject.set(x, "265", js.undefined)
+        inline def set265Undefined: Self = StObject.set(x, "265", js.undefined)
         
-        @scala.inline
-        def set266(value: SuccessCallback[TContext]): Self = StObject.set(x, "266", value.asInstanceOf[js.Any])
+        inline def set266(value: SuccessCallback[TContext]): Self = StObject.set(x, "266", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set266Undefined: Self = StObject.set(x, "266", js.undefined)
+        inline def set266Undefined: Self = StObject.set(x, "266", js.undefined)
         
-        @scala.inline
-        def set267(value: SuccessCallback[TContext]): Self = StObject.set(x, "267", value.asInstanceOf[js.Any])
+        inline def set267(value: SuccessCallback[TContext]): Self = StObject.set(x, "267", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set267Undefined: Self = StObject.set(x, "267", js.undefined)
+        inline def set267Undefined: Self = StObject.set(x, "267", js.undefined)
         
-        @scala.inline
-        def set268(value: SuccessCallback[TContext]): Self = StObject.set(x, "268", value.asInstanceOf[js.Any])
+        inline def set268(value: SuccessCallback[TContext]): Self = StObject.set(x, "268", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set268Undefined: Self = StObject.set(x, "268", js.undefined)
+        inline def set268Undefined: Self = StObject.set(x, "268", js.undefined)
         
-        @scala.inline
-        def set269(value: SuccessCallback[TContext]): Self = StObject.set(x, "269", value.asInstanceOf[js.Any])
+        inline def set269(value: SuccessCallback[TContext]): Self = StObject.set(x, "269", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set269Undefined: Self = StObject.set(x, "269", js.undefined)
+        inline def set269Undefined: Self = StObject.set(x, "269", js.undefined)
         
-        @scala.inline
-        def set270(value: SuccessCallback[TContext]): Self = StObject.set(x, "270", value.asInstanceOf[js.Any])
+        inline def set270(value: SuccessCallback[TContext]): Self = StObject.set(x, "270", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set270Undefined: Self = StObject.set(x, "270", js.undefined)
+        inline def set270Undefined: Self = StObject.set(x, "270", js.undefined)
         
-        @scala.inline
-        def set271(value: SuccessCallback[TContext]): Self = StObject.set(x, "271", value.asInstanceOf[js.Any])
+        inline def set271(value: SuccessCallback[TContext]): Self = StObject.set(x, "271", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set271Undefined: Self = StObject.set(x, "271", js.undefined)
+        inline def set271Undefined: Self = StObject.set(x, "271", js.undefined)
         
-        @scala.inline
-        def set272(value: SuccessCallback[TContext]): Self = StObject.set(x, "272", value.asInstanceOf[js.Any])
+        inline def set272(value: SuccessCallback[TContext]): Self = StObject.set(x, "272", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set272Undefined: Self = StObject.set(x, "272", js.undefined)
+        inline def set272Undefined: Self = StObject.set(x, "272", js.undefined)
         
-        @scala.inline
-        def set273(value: SuccessCallback[TContext]): Self = StObject.set(x, "273", value.asInstanceOf[js.Any])
+        inline def set273(value: SuccessCallback[TContext]): Self = StObject.set(x, "273", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set273Undefined: Self = StObject.set(x, "273", js.undefined)
+        inline def set273Undefined: Self = StObject.set(x, "273", js.undefined)
         
-        @scala.inline
-        def set274(value: SuccessCallback[TContext]): Self = StObject.set(x, "274", value.asInstanceOf[js.Any])
+        inline def set274(value: SuccessCallback[TContext]): Self = StObject.set(x, "274", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set274Undefined: Self = StObject.set(x, "274", js.undefined)
+        inline def set274Undefined: Self = StObject.set(x, "274", js.undefined)
         
-        @scala.inline
-        def set275(value: SuccessCallback[TContext]): Self = StObject.set(x, "275", value.asInstanceOf[js.Any])
+        inline def set275(value: SuccessCallback[TContext]): Self = StObject.set(x, "275", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set275Undefined: Self = StObject.set(x, "275", js.undefined)
+        inline def set275Undefined: Self = StObject.set(x, "275", js.undefined)
         
-        @scala.inline
-        def set276(value: SuccessCallback[TContext]): Self = StObject.set(x, "276", value.asInstanceOf[js.Any])
+        inline def set276(value: SuccessCallback[TContext]): Self = StObject.set(x, "276", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set276Undefined: Self = StObject.set(x, "276", js.undefined)
+        inline def set276Undefined: Self = StObject.set(x, "276", js.undefined)
         
-        @scala.inline
-        def set277(value: SuccessCallback[TContext]): Self = StObject.set(x, "277", value.asInstanceOf[js.Any])
+        inline def set277(value: SuccessCallback[TContext]): Self = StObject.set(x, "277", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set277Undefined: Self = StObject.set(x, "277", js.undefined)
+        inline def set277Undefined: Self = StObject.set(x, "277", js.undefined)
         
-        @scala.inline
-        def set278(value: SuccessCallback[TContext]): Self = StObject.set(x, "278", value.asInstanceOf[js.Any])
+        inline def set278(value: SuccessCallback[TContext]): Self = StObject.set(x, "278", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set278Undefined: Self = StObject.set(x, "278", js.undefined)
+        inline def set278Undefined: Self = StObject.set(x, "278", js.undefined)
         
-        @scala.inline
-        def set279(value: SuccessCallback[TContext]): Self = StObject.set(x, "279", value.asInstanceOf[js.Any])
+        inline def set279(value: SuccessCallback[TContext]): Self = StObject.set(x, "279", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set279Undefined: Self = StObject.set(x, "279", js.undefined)
+        inline def set279Undefined: Self = StObject.set(x, "279", js.undefined)
         
-        @scala.inline
-        def set280(value: SuccessCallback[TContext]): Self = StObject.set(x, "280", value.asInstanceOf[js.Any])
+        inline def set280(value: SuccessCallback[TContext]): Self = StObject.set(x, "280", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set280Undefined: Self = StObject.set(x, "280", js.undefined)
+        inline def set280Undefined: Self = StObject.set(x, "280", js.undefined)
         
-        @scala.inline
-        def set281(value: SuccessCallback[TContext]): Self = StObject.set(x, "281", value.asInstanceOf[js.Any])
+        inline def set281(value: SuccessCallback[TContext]): Self = StObject.set(x, "281", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set281Undefined: Self = StObject.set(x, "281", js.undefined)
+        inline def set281Undefined: Self = StObject.set(x, "281", js.undefined)
         
-        @scala.inline
-        def set282(value: SuccessCallback[TContext]): Self = StObject.set(x, "282", value.asInstanceOf[js.Any])
+        inline def set282(value: SuccessCallback[TContext]): Self = StObject.set(x, "282", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set282Undefined: Self = StObject.set(x, "282", js.undefined)
+        inline def set282Undefined: Self = StObject.set(x, "282", js.undefined)
         
-        @scala.inline
-        def set283(value: SuccessCallback[TContext]): Self = StObject.set(x, "283", value.asInstanceOf[js.Any])
+        inline def set283(value: SuccessCallback[TContext]): Self = StObject.set(x, "283", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set283Undefined: Self = StObject.set(x, "283", js.undefined)
+        inline def set283Undefined: Self = StObject.set(x, "283", js.undefined)
         
-        @scala.inline
-        def set284(value: SuccessCallback[TContext]): Self = StObject.set(x, "284", value.asInstanceOf[js.Any])
+        inline def set284(value: SuccessCallback[TContext]): Self = StObject.set(x, "284", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set284Undefined: Self = StObject.set(x, "284", js.undefined)
+        inline def set284Undefined: Self = StObject.set(x, "284", js.undefined)
         
-        @scala.inline
-        def set285(value: SuccessCallback[TContext]): Self = StObject.set(x, "285", value.asInstanceOf[js.Any])
+        inline def set285(value: SuccessCallback[TContext]): Self = StObject.set(x, "285", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set285Undefined: Self = StObject.set(x, "285", js.undefined)
+        inline def set285Undefined: Self = StObject.set(x, "285", js.undefined)
         
-        @scala.inline
-        def set286(value: SuccessCallback[TContext]): Self = StObject.set(x, "286", value.asInstanceOf[js.Any])
+        inline def set286(value: SuccessCallback[TContext]): Self = StObject.set(x, "286", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set286Undefined: Self = StObject.set(x, "286", js.undefined)
+        inline def set286Undefined: Self = StObject.set(x, "286", js.undefined)
         
-        @scala.inline
-        def set287(value: SuccessCallback[TContext]): Self = StObject.set(x, "287", value.asInstanceOf[js.Any])
+        inline def set287(value: SuccessCallback[TContext]): Self = StObject.set(x, "287", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set287Undefined: Self = StObject.set(x, "287", js.undefined)
+        inline def set287Undefined: Self = StObject.set(x, "287", js.undefined)
         
-        @scala.inline
-        def set288(value: SuccessCallback[TContext]): Self = StObject.set(x, "288", value.asInstanceOf[js.Any])
+        inline def set288(value: SuccessCallback[TContext]): Self = StObject.set(x, "288", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set288Undefined: Self = StObject.set(x, "288", js.undefined)
+        inline def set288Undefined: Self = StObject.set(x, "288", js.undefined)
         
-        @scala.inline
-        def set289(value: SuccessCallback[TContext]): Self = StObject.set(x, "289", value.asInstanceOf[js.Any])
+        inline def set289(value: SuccessCallback[TContext]): Self = StObject.set(x, "289", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set289Undefined: Self = StObject.set(x, "289", js.undefined)
+        inline def set289Undefined: Self = StObject.set(x, "289", js.undefined)
         
-        @scala.inline
-        def set290(value: SuccessCallback[TContext]): Self = StObject.set(x, "290", value.asInstanceOf[js.Any])
+        inline def set290(value: SuccessCallback[TContext]): Self = StObject.set(x, "290", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set290Undefined: Self = StObject.set(x, "290", js.undefined)
+        inline def set290Undefined: Self = StObject.set(x, "290", js.undefined)
         
-        @scala.inline
-        def set291(value: SuccessCallback[TContext]): Self = StObject.set(x, "291", value.asInstanceOf[js.Any])
+        inline def set291(value: SuccessCallback[TContext]): Self = StObject.set(x, "291", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set291Undefined: Self = StObject.set(x, "291", js.undefined)
+        inline def set291Undefined: Self = StObject.set(x, "291", js.undefined)
         
-        @scala.inline
-        def set292(value: SuccessCallback[TContext]): Self = StObject.set(x, "292", value.asInstanceOf[js.Any])
+        inline def set292(value: SuccessCallback[TContext]): Self = StObject.set(x, "292", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set292Undefined: Self = StObject.set(x, "292", js.undefined)
+        inline def set292Undefined: Self = StObject.set(x, "292", js.undefined)
         
-        @scala.inline
-        def set293(value: SuccessCallback[TContext]): Self = StObject.set(x, "293", value.asInstanceOf[js.Any])
+        inline def set293(value: SuccessCallback[TContext]): Self = StObject.set(x, "293", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set293Undefined: Self = StObject.set(x, "293", js.undefined)
+        inline def set293Undefined: Self = StObject.set(x, "293", js.undefined)
         
-        @scala.inline
-        def set294(value: SuccessCallback[TContext]): Self = StObject.set(x, "294", value.asInstanceOf[js.Any])
+        inline def set294(value: SuccessCallback[TContext]): Self = StObject.set(x, "294", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set294Undefined: Self = StObject.set(x, "294", js.undefined)
+        inline def set294Undefined: Self = StObject.set(x, "294", js.undefined)
         
-        @scala.inline
-        def set295(value: SuccessCallback[TContext]): Self = StObject.set(x, "295", value.asInstanceOf[js.Any])
+        inline def set295(value: SuccessCallback[TContext]): Self = StObject.set(x, "295", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set295Undefined: Self = StObject.set(x, "295", js.undefined)
+        inline def set295Undefined: Self = StObject.set(x, "295", js.undefined)
         
-        @scala.inline
-        def set296(value: SuccessCallback[TContext]): Self = StObject.set(x, "296", value.asInstanceOf[js.Any])
+        inline def set296(value: SuccessCallback[TContext]): Self = StObject.set(x, "296", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set296Undefined: Self = StObject.set(x, "296", js.undefined)
+        inline def set296Undefined: Self = StObject.set(x, "296", js.undefined)
         
-        @scala.inline
-        def set297(value: SuccessCallback[TContext]): Self = StObject.set(x, "297", value.asInstanceOf[js.Any])
+        inline def set297(value: SuccessCallback[TContext]): Self = StObject.set(x, "297", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set297Undefined: Self = StObject.set(x, "297", js.undefined)
+        inline def set297Undefined: Self = StObject.set(x, "297", js.undefined)
         
-        @scala.inline
-        def set298(value: SuccessCallback[TContext]): Self = StObject.set(x, "298", value.asInstanceOf[js.Any])
+        inline def set298(value: SuccessCallback[TContext]): Self = StObject.set(x, "298", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set298Undefined: Self = StObject.set(x, "298", js.undefined)
+        inline def set298Undefined: Self = StObject.set(x, "298", js.undefined)
         
-        @scala.inline
-        def set299(value: SuccessCallback[TContext]): Self = StObject.set(x, "299", value.asInstanceOf[js.Any])
+        inline def set299(value: SuccessCallback[TContext]): Self = StObject.set(x, "299", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set299Undefined: Self = StObject.set(x, "299", js.undefined)
+        inline def set299Undefined: Self = StObject.set(x, "299", js.undefined)
         
-        @scala.inline
-        def set300(value: ErrorCallback[TContext]): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
+        inline def set300(value: ErrorCallback[TContext]): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set300Undefined: Self = StObject.set(x, "300", js.undefined)
+        inline def set300Undefined: Self = StObject.set(x, "300", js.undefined)
         
-        @scala.inline
-        def set301(value: ErrorCallback[TContext]): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
+        inline def set301(value: ErrorCallback[TContext]): Self = StObject.set(x, "301", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set301Undefined: Self = StObject.set(x, "301", js.undefined)
+        inline def set301Undefined: Self = StObject.set(x, "301", js.undefined)
         
-        @scala.inline
-        def set302(value: ErrorCallback[TContext]): Self = StObject.set(x, "302", value.asInstanceOf[js.Any])
+        inline def set302(value: ErrorCallback[TContext]): Self = StObject.set(x, "302", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set302Undefined: Self = StObject.set(x, "302", js.undefined)
+        inline def set302Undefined: Self = StObject.set(x, "302", js.undefined)
         
-        @scala.inline
-        def set303(value: ErrorCallback[TContext]): Self = StObject.set(x, "303", value.asInstanceOf[js.Any])
+        inline def set303(value: ErrorCallback[TContext]): Self = StObject.set(x, "303", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set303Undefined: Self = StObject.set(x, "303", js.undefined)
+        inline def set303Undefined: Self = StObject.set(x, "303", js.undefined)
         
-        @scala.inline
-        def set304(value: SuccessCallback[TContext]): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
+        inline def set304(value: SuccessCallback[TContext]): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set304Undefined: Self = StObject.set(x, "304", js.undefined)
+        inline def set304Undefined: Self = StObject.set(x, "304", js.undefined)
         
-        @scala.inline
-        def set305(value: ErrorCallback[TContext]): Self = StObject.set(x, "305", value.asInstanceOf[js.Any])
+        inline def set305(value: ErrorCallback[TContext]): Self = StObject.set(x, "305", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set305Undefined: Self = StObject.set(x, "305", js.undefined)
+        inline def set305Undefined: Self = StObject.set(x, "305", js.undefined)
         
-        @scala.inline
-        def set306(value: ErrorCallback[TContext]): Self = StObject.set(x, "306", value.asInstanceOf[js.Any])
+        inline def set306(value: ErrorCallback[TContext]): Self = StObject.set(x, "306", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set306Undefined: Self = StObject.set(x, "306", js.undefined)
+        inline def set306Undefined: Self = StObject.set(x, "306", js.undefined)
         
-        @scala.inline
-        def set307(value: ErrorCallback[TContext]): Self = StObject.set(x, "307", value.asInstanceOf[js.Any])
+        inline def set307(value: ErrorCallback[TContext]): Self = StObject.set(x, "307", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set307Undefined: Self = StObject.set(x, "307", js.undefined)
+        inline def set307Undefined: Self = StObject.set(x, "307", js.undefined)
         
-        @scala.inline
-        def set308(value: ErrorCallback[TContext]): Self = StObject.set(x, "308", value.asInstanceOf[js.Any])
+        inline def set308(value: ErrorCallback[TContext]): Self = StObject.set(x, "308", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set308Undefined: Self = StObject.set(x, "308", js.undefined)
+        inline def set308Undefined: Self = StObject.set(x, "308", js.undefined)
         
-        @scala.inline
-        def set309(value: ErrorCallback[TContext]): Self = StObject.set(x, "309", value.asInstanceOf[js.Any])
+        inline def set309(value: ErrorCallback[TContext]): Self = StObject.set(x, "309", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set309Undefined: Self = StObject.set(x, "309", js.undefined)
+        inline def set309Undefined: Self = StObject.set(x, "309", js.undefined)
         
-        @scala.inline
-        def set310(value: ErrorCallback[TContext]): Self = StObject.set(x, "310", value.asInstanceOf[js.Any])
+        inline def set310(value: ErrorCallback[TContext]): Self = StObject.set(x, "310", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set310Undefined: Self = StObject.set(x, "310", js.undefined)
+        inline def set310Undefined: Self = StObject.set(x, "310", js.undefined)
         
-        @scala.inline
-        def set311(value: ErrorCallback[TContext]): Self = StObject.set(x, "311", value.asInstanceOf[js.Any])
+        inline def set311(value: ErrorCallback[TContext]): Self = StObject.set(x, "311", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set311Undefined: Self = StObject.set(x, "311", js.undefined)
+        inline def set311Undefined: Self = StObject.set(x, "311", js.undefined)
         
-        @scala.inline
-        def set312(value: ErrorCallback[TContext]): Self = StObject.set(x, "312", value.asInstanceOf[js.Any])
+        inline def set312(value: ErrorCallback[TContext]): Self = StObject.set(x, "312", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set312Undefined: Self = StObject.set(x, "312", js.undefined)
+        inline def set312Undefined: Self = StObject.set(x, "312", js.undefined)
         
-        @scala.inline
-        def set313(value: ErrorCallback[TContext]): Self = StObject.set(x, "313", value.asInstanceOf[js.Any])
+        inline def set313(value: ErrorCallback[TContext]): Self = StObject.set(x, "313", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set313Undefined: Self = StObject.set(x, "313", js.undefined)
+        inline def set313Undefined: Self = StObject.set(x, "313", js.undefined)
         
-        @scala.inline
-        def set314(value: ErrorCallback[TContext]): Self = StObject.set(x, "314", value.asInstanceOf[js.Any])
+        inline def set314(value: ErrorCallback[TContext]): Self = StObject.set(x, "314", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set314Undefined: Self = StObject.set(x, "314", js.undefined)
+        inline def set314Undefined: Self = StObject.set(x, "314", js.undefined)
         
-        @scala.inline
-        def set315(value: ErrorCallback[TContext]): Self = StObject.set(x, "315", value.asInstanceOf[js.Any])
+        inline def set315(value: ErrorCallback[TContext]): Self = StObject.set(x, "315", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set315Undefined: Self = StObject.set(x, "315", js.undefined)
+        inline def set315Undefined: Self = StObject.set(x, "315", js.undefined)
         
-        @scala.inline
-        def set316(value: ErrorCallback[TContext]): Self = StObject.set(x, "316", value.asInstanceOf[js.Any])
+        inline def set316(value: ErrorCallback[TContext]): Self = StObject.set(x, "316", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set316Undefined: Self = StObject.set(x, "316", js.undefined)
+        inline def set316Undefined: Self = StObject.set(x, "316", js.undefined)
         
-        @scala.inline
-        def set317(value: ErrorCallback[TContext]): Self = StObject.set(x, "317", value.asInstanceOf[js.Any])
+        inline def set317(value: ErrorCallback[TContext]): Self = StObject.set(x, "317", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set317Undefined: Self = StObject.set(x, "317", js.undefined)
+        inline def set317Undefined: Self = StObject.set(x, "317", js.undefined)
         
-        @scala.inline
-        def set318(value: ErrorCallback[TContext]): Self = StObject.set(x, "318", value.asInstanceOf[js.Any])
+        inline def set318(value: ErrorCallback[TContext]): Self = StObject.set(x, "318", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set318Undefined: Self = StObject.set(x, "318", js.undefined)
+        inline def set318Undefined: Self = StObject.set(x, "318", js.undefined)
         
-        @scala.inline
-        def set319(value: ErrorCallback[TContext]): Self = StObject.set(x, "319", value.asInstanceOf[js.Any])
+        inline def set319(value: ErrorCallback[TContext]): Self = StObject.set(x, "319", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set319Undefined: Self = StObject.set(x, "319", js.undefined)
+        inline def set319Undefined: Self = StObject.set(x, "319", js.undefined)
         
-        @scala.inline
-        def set320(value: ErrorCallback[TContext]): Self = StObject.set(x, "320", value.asInstanceOf[js.Any])
+        inline def set320(value: ErrorCallback[TContext]): Self = StObject.set(x, "320", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set320Undefined: Self = StObject.set(x, "320", js.undefined)
+        inline def set320Undefined: Self = StObject.set(x, "320", js.undefined)
         
-        @scala.inline
-        def set321(value: ErrorCallback[TContext]): Self = StObject.set(x, "321", value.asInstanceOf[js.Any])
+        inline def set321(value: ErrorCallback[TContext]): Self = StObject.set(x, "321", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set321Undefined: Self = StObject.set(x, "321", js.undefined)
+        inline def set321Undefined: Self = StObject.set(x, "321", js.undefined)
         
-        @scala.inline
-        def set322(value: ErrorCallback[TContext]): Self = StObject.set(x, "322", value.asInstanceOf[js.Any])
+        inline def set322(value: ErrorCallback[TContext]): Self = StObject.set(x, "322", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set322Undefined: Self = StObject.set(x, "322", js.undefined)
+        inline def set322Undefined: Self = StObject.set(x, "322", js.undefined)
         
-        @scala.inline
-        def set323(value: ErrorCallback[TContext]): Self = StObject.set(x, "323", value.asInstanceOf[js.Any])
+        inline def set323(value: ErrorCallback[TContext]): Self = StObject.set(x, "323", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set323Undefined: Self = StObject.set(x, "323", js.undefined)
+        inline def set323Undefined: Self = StObject.set(x, "323", js.undefined)
         
-        @scala.inline
-        def set324(value: ErrorCallback[TContext]): Self = StObject.set(x, "324", value.asInstanceOf[js.Any])
+        inline def set324(value: ErrorCallback[TContext]): Self = StObject.set(x, "324", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set324Undefined: Self = StObject.set(x, "324", js.undefined)
+        inline def set324Undefined: Self = StObject.set(x, "324", js.undefined)
         
-        @scala.inline
-        def set325(value: ErrorCallback[TContext]): Self = StObject.set(x, "325", value.asInstanceOf[js.Any])
+        inline def set325(value: ErrorCallback[TContext]): Self = StObject.set(x, "325", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set325Undefined: Self = StObject.set(x, "325", js.undefined)
+        inline def set325Undefined: Self = StObject.set(x, "325", js.undefined)
         
-        @scala.inline
-        def set326(value: ErrorCallback[TContext]): Self = StObject.set(x, "326", value.asInstanceOf[js.Any])
+        inline def set326(value: ErrorCallback[TContext]): Self = StObject.set(x, "326", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set326Undefined: Self = StObject.set(x, "326", js.undefined)
+        inline def set326Undefined: Self = StObject.set(x, "326", js.undefined)
         
-        @scala.inline
-        def set327(value: ErrorCallback[TContext]): Self = StObject.set(x, "327", value.asInstanceOf[js.Any])
+        inline def set327(value: ErrorCallback[TContext]): Self = StObject.set(x, "327", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set327Undefined: Self = StObject.set(x, "327", js.undefined)
+        inline def set327Undefined: Self = StObject.set(x, "327", js.undefined)
         
-        @scala.inline
-        def set328(value: ErrorCallback[TContext]): Self = StObject.set(x, "328", value.asInstanceOf[js.Any])
+        inline def set328(value: ErrorCallback[TContext]): Self = StObject.set(x, "328", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set328Undefined: Self = StObject.set(x, "328", js.undefined)
+        inline def set328Undefined: Self = StObject.set(x, "328", js.undefined)
         
-        @scala.inline
-        def set329(value: ErrorCallback[TContext]): Self = StObject.set(x, "329", value.asInstanceOf[js.Any])
+        inline def set329(value: ErrorCallback[TContext]): Self = StObject.set(x, "329", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set329Undefined: Self = StObject.set(x, "329", js.undefined)
+        inline def set329Undefined: Self = StObject.set(x, "329", js.undefined)
         
-        @scala.inline
-        def set330(value: ErrorCallback[TContext]): Self = StObject.set(x, "330", value.asInstanceOf[js.Any])
+        inline def set330(value: ErrorCallback[TContext]): Self = StObject.set(x, "330", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set330Undefined: Self = StObject.set(x, "330", js.undefined)
+        inline def set330Undefined: Self = StObject.set(x, "330", js.undefined)
         
-        @scala.inline
-        def set331(value: ErrorCallback[TContext]): Self = StObject.set(x, "331", value.asInstanceOf[js.Any])
+        inline def set331(value: ErrorCallback[TContext]): Self = StObject.set(x, "331", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set331Undefined: Self = StObject.set(x, "331", js.undefined)
+        inline def set331Undefined: Self = StObject.set(x, "331", js.undefined)
         
-        @scala.inline
-        def set332(value: ErrorCallback[TContext]): Self = StObject.set(x, "332", value.asInstanceOf[js.Any])
+        inline def set332(value: ErrorCallback[TContext]): Self = StObject.set(x, "332", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set332Undefined: Self = StObject.set(x, "332", js.undefined)
+        inline def set332Undefined: Self = StObject.set(x, "332", js.undefined)
         
-        @scala.inline
-        def set333(value: ErrorCallback[TContext]): Self = StObject.set(x, "333", value.asInstanceOf[js.Any])
+        inline def set333(value: ErrorCallback[TContext]): Self = StObject.set(x, "333", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set333Undefined: Self = StObject.set(x, "333", js.undefined)
+        inline def set333Undefined: Self = StObject.set(x, "333", js.undefined)
         
-        @scala.inline
-        def set334(value: ErrorCallback[TContext]): Self = StObject.set(x, "334", value.asInstanceOf[js.Any])
+        inline def set334(value: ErrorCallback[TContext]): Self = StObject.set(x, "334", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set334Undefined: Self = StObject.set(x, "334", js.undefined)
+        inline def set334Undefined: Self = StObject.set(x, "334", js.undefined)
         
-        @scala.inline
-        def set335(value: ErrorCallback[TContext]): Self = StObject.set(x, "335", value.asInstanceOf[js.Any])
+        inline def set335(value: ErrorCallback[TContext]): Self = StObject.set(x, "335", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set335Undefined: Self = StObject.set(x, "335", js.undefined)
+        inline def set335Undefined: Self = StObject.set(x, "335", js.undefined)
         
-        @scala.inline
-        def set336(value: ErrorCallback[TContext]): Self = StObject.set(x, "336", value.asInstanceOf[js.Any])
+        inline def set336(value: ErrorCallback[TContext]): Self = StObject.set(x, "336", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set336Undefined: Self = StObject.set(x, "336", js.undefined)
+        inline def set336Undefined: Self = StObject.set(x, "336", js.undefined)
         
-        @scala.inline
-        def set337(value: ErrorCallback[TContext]): Self = StObject.set(x, "337", value.asInstanceOf[js.Any])
+        inline def set337(value: ErrorCallback[TContext]): Self = StObject.set(x, "337", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set337Undefined: Self = StObject.set(x, "337", js.undefined)
+        inline def set337Undefined: Self = StObject.set(x, "337", js.undefined)
         
-        @scala.inline
-        def set338(value: ErrorCallback[TContext]): Self = StObject.set(x, "338", value.asInstanceOf[js.Any])
+        inline def set338(value: ErrorCallback[TContext]): Self = StObject.set(x, "338", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set338Undefined: Self = StObject.set(x, "338", js.undefined)
+        inline def set338Undefined: Self = StObject.set(x, "338", js.undefined)
         
-        @scala.inline
-        def set339(value: ErrorCallback[TContext]): Self = StObject.set(x, "339", value.asInstanceOf[js.Any])
+        inline def set339(value: ErrorCallback[TContext]): Self = StObject.set(x, "339", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set339Undefined: Self = StObject.set(x, "339", js.undefined)
+        inline def set339Undefined: Self = StObject.set(x, "339", js.undefined)
         
-        @scala.inline
-        def set340(value: ErrorCallback[TContext]): Self = StObject.set(x, "340", value.asInstanceOf[js.Any])
+        inline def set340(value: ErrorCallback[TContext]): Self = StObject.set(x, "340", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set340Undefined: Self = StObject.set(x, "340", js.undefined)
+        inline def set340Undefined: Self = StObject.set(x, "340", js.undefined)
         
-        @scala.inline
-        def set341(value: ErrorCallback[TContext]): Self = StObject.set(x, "341", value.asInstanceOf[js.Any])
+        inline def set341(value: ErrorCallback[TContext]): Self = StObject.set(x, "341", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set341Undefined: Self = StObject.set(x, "341", js.undefined)
+        inline def set341Undefined: Self = StObject.set(x, "341", js.undefined)
         
-        @scala.inline
-        def set342(value: ErrorCallback[TContext]): Self = StObject.set(x, "342", value.asInstanceOf[js.Any])
+        inline def set342(value: ErrorCallback[TContext]): Self = StObject.set(x, "342", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set342Undefined: Self = StObject.set(x, "342", js.undefined)
+        inline def set342Undefined: Self = StObject.set(x, "342", js.undefined)
         
-        @scala.inline
-        def set343(value: ErrorCallback[TContext]): Self = StObject.set(x, "343", value.asInstanceOf[js.Any])
+        inline def set343(value: ErrorCallback[TContext]): Self = StObject.set(x, "343", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set343Undefined: Self = StObject.set(x, "343", js.undefined)
+        inline def set343Undefined: Self = StObject.set(x, "343", js.undefined)
         
-        @scala.inline
-        def set344(value: ErrorCallback[TContext]): Self = StObject.set(x, "344", value.asInstanceOf[js.Any])
+        inline def set344(value: ErrorCallback[TContext]): Self = StObject.set(x, "344", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set344Undefined: Self = StObject.set(x, "344", js.undefined)
+        inline def set344Undefined: Self = StObject.set(x, "344", js.undefined)
         
-        @scala.inline
-        def set345(value: ErrorCallback[TContext]): Self = StObject.set(x, "345", value.asInstanceOf[js.Any])
+        inline def set345(value: ErrorCallback[TContext]): Self = StObject.set(x, "345", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set345Undefined: Self = StObject.set(x, "345", js.undefined)
+        inline def set345Undefined: Self = StObject.set(x, "345", js.undefined)
         
-        @scala.inline
-        def set346(value: ErrorCallback[TContext]): Self = StObject.set(x, "346", value.asInstanceOf[js.Any])
+        inline def set346(value: ErrorCallback[TContext]): Self = StObject.set(x, "346", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set346Undefined: Self = StObject.set(x, "346", js.undefined)
+        inline def set346Undefined: Self = StObject.set(x, "346", js.undefined)
         
-        @scala.inline
-        def set347(value: ErrorCallback[TContext]): Self = StObject.set(x, "347", value.asInstanceOf[js.Any])
+        inline def set347(value: ErrorCallback[TContext]): Self = StObject.set(x, "347", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set347Undefined: Self = StObject.set(x, "347", js.undefined)
+        inline def set347Undefined: Self = StObject.set(x, "347", js.undefined)
         
-        @scala.inline
-        def set348(value: ErrorCallback[TContext]): Self = StObject.set(x, "348", value.asInstanceOf[js.Any])
+        inline def set348(value: ErrorCallback[TContext]): Self = StObject.set(x, "348", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set348Undefined: Self = StObject.set(x, "348", js.undefined)
+        inline def set348Undefined: Self = StObject.set(x, "348", js.undefined)
         
-        @scala.inline
-        def set349(value: ErrorCallback[TContext]): Self = StObject.set(x, "349", value.asInstanceOf[js.Any])
+        inline def set349(value: ErrorCallback[TContext]): Self = StObject.set(x, "349", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set349Undefined: Self = StObject.set(x, "349", js.undefined)
+        inline def set349Undefined: Self = StObject.set(x, "349", js.undefined)
         
-        @scala.inline
-        def set350(value: ErrorCallback[TContext]): Self = StObject.set(x, "350", value.asInstanceOf[js.Any])
+        inline def set350(value: ErrorCallback[TContext]): Self = StObject.set(x, "350", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set350Undefined: Self = StObject.set(x, "350", js.undefined)
+        inline def set350Undefined: Self = StObject.set(x, "350", js.undefined)
         
-        @scala.inline
-        def set351(value: ErrorCallback[TContext]): Self = StObject.set(x, "351", value.asInstanceOf[js.Any])
+        inline def set351(value: ErrorCallback[TContext]): Self = StObject.set(x, "351", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set351Undefined: Self = StObject.set(x, "351", js.undefined)
+        inline def set351Undefined: Self = StObject.set(x, "351", js.undefined)
         
-        @scala.inline
-        def set352(value: ErrorCallback[TContext]): Self = StObject.set(x, "352", value.asInstanceOf[js.Any])
+        inline def set352(value: ErrorCallback[TContext]): Self = StObject.set(x, "352", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set352Undefined: Self = StObject.set(x, "352", js.undefined)
+        inline def set352Undefined: Self = StObject.set(x, "352", js.undefined)
         
-        @scala.inline
-        def set353(value: ErrorCallback[TContext]): Self = StObject.set(x, "353", value.asInstanceOf[js.Any])
+        inline def set353(value: ErrorCallback[TContext]): Self = StObject.set(x, "353", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set353Undefined: Self = StObject.set(x, "353", js.undefined)
+        inline def set353Undefined: Self = StObject.set(x, "353", js.undefined)
         
-        @scala.inline
-        def set354(value: ErrorCallback[TContext]): Self = StObject.set(x, "354", value.asInstanceOf[js.Any])
+        inline def set354(value: ErrorCallback[TContext]): Self = StObject.set(x, "354", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set354Undefined: Self = StObject.set(x, "354", js.undefined)
+        inline def set354Undefined: Self = StObject.set(x, "354", js.undefined)
         
-        @scala.inline
-        def set355(value: ErrorCallback[TContext]): Self = StObject.set(x, "355", value.asInstanceOf[js.Any])
+        inline def set355(value: ErrorCallback[TContext]): Self = StObject.set(x, "355", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set355Undefined: Self = StObject.set(x, "355", js.undefined)
+        inline def set355Undefined: Self = StObject.set(x, "355", js.undefined)
         
-        @scala.inline
-        def set356(value: ErrorCallback[TContext]): Self = StObject.set(x, "356", value.asInstanceOf[js.Any])
+        inline def set356(value: ErrorCallback[TContext]): Self = StObject.set(x, "356", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set356Undefined: Self = StObject.set(x, "356", js.undefined)
+        inline def set356Undefined: Self = StObject.set(x, "356", js.undefined)
         
-        @scala.inline
-        def set357(value: ErrorCallback[TContext]): Self = StObject.set(x, "357", value.asInstanceOf[js.Any])
+        inline def set357(value: ErrorCallback[TContext]): Self = StObject.set(x, "357", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set357Undefined: Self = StObject.set(x, "357", js.undefined)
+        inline def set357Undefined: Self = StObject.set(x, "357", js.undefined)
         
-        @scala.inline
-        def set358(value: ErrorCallback[TContext]): Self = StObject.set(x, "358", value.asInstanceOf[js.Any])
+        inline def set358(value: ErrorCallback[TContext]): Self = StObject.set(x, "358", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set358Undefined: Self = StObject.set(x, "358", js.undefined)
+        inline def set358Undefined: Self = StObject.set(x, "358", js.undefined)
         
-        @scala.inline
-        def set359(value: ErrorCallback[TContext]): Self = StObject.set(x, "359", value.asInstanceOf[js.Any])
+        inline def set359(value: ErrorCallback[TContext]): Self = StObject.set(x, "359", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set359Undefined: Self = StObject.set(x, "359", js.undefined)
+        inline def set359Undefined: Self = StObject.set(x, "359", js.undefined)
         
-        @scala.inline
-        def set360(value: ErrorCallback[TContext]): Self = StObject.set(x, "360", value.asInstanceOf[js.Any])
+        inline def set360(value: ErrorCallback[TContext]): Self = StObject.set(x, "360", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set360Undefined: Self = StObject.set(x, "360", js.undefined)
+        inline def set360Undefined: Self = StObject.set(x, "360", js.undefined)
         
-        @scala.inline
-        def set361(value: ErrorCallback[TContext]): Self = StObject.set(x, "361", value.asInstanceOf[js.Any])
+        inline def set361(value: ErrorCallback[TContext]): Self = StObject.set(x, "361", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set361Undefined: Self = StObject.set(x, "361", js.undefined)
+        inline def set361Undefined: Self = StObject.set(x, "361", js.undefined)
         
-        @scala.inline
-        def set362(value: ErrorCallback[TContext]): Self = StObject.set(x, "362", value.asInstanceOf[js.Any])
+        inline def set362(value: ErrorCallback[TContext]): Self = StObject.set(x, "362", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set362Undefined: Self = StObject.set(x, "362", js.undefined)
+        inline def set362Undefined: Self = StObject.set(x, "362", js.undefined)
         
-        @scala.inline
-        def set363(value: ErrorCallback[TContext]): Self = StObject.set(x, "363", value.asInstanceOf[js.Any])
+        inline def set363(value: ErrorCallback[TContext]): Self = StObject.set(x, "363", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set363Undefined: Self = StObject.set(x, "363", js.undefined)
+        inline def set363Undefined: Self = StObject.set(x, "363", js.undefined)
         
-        @scala.inline
-        def set364(value: ErrorCallback[TContext]): Self = StObject.set(x, "364", value.asInstanceOf[js.Any])
+        inline def set364(value: ErrorCallback[TContext]): Self = StObject.set(x, "364", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set364Undefined: Self = StObject.set(x, "364", js.undefined)
+        inline def set364Undefined: Self = StObject.set(x, "364", js.undefined)
         
-        @scala.inline
-        def set365(value: ErrorCallback[TContext]): Self = StObject.set(x, "365", value.asInstanceOf[js.Any])
+        inline def set365(value: ErrorCallback[TContext]): Self = StObject.set(x, "365", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set365Undefined: Self = StObject.set(x, "365", js.undefined)
+        inline def set365Undefined: Self = StObject.set(x, "365", js.undefined)
         
-        @scala.inline
-        def set366(value: ErrorCallback[TContext]): Self = StObject.set(x, "366", value.asInstanceOf[js.Any])
+        inline def set366(value: ErrorCallback[TContext]): Self = StObject.set(x, "366", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set366Undefined: Self = StObject.set(x, "366", js.undefined)
+        inline def set366Undefined: Self = StObject.set(x, "366", js.undefined)
         
-        @scala.inline
-        def set367(value: ErrorCallback[TContext]): Self = StObject.set(x, "367", value.asInstanceOf[js.Any])
+        inline def set367(value: ErrorCallback[TContext]): Self = StObject.set(x, "367", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set367Undefined: Self = StObject.set(x, "367", js.undefined)
+        inline def set367Undefined: Self = StObject.set(x, "367", js.undefined)
         
-        @scala.inline
-        def set368(value: ErrorCallback[TContext]): Self = StObject.set(x, "368", value.asInstanceOf[js.Any])
+        inline def set368(value: ErrorCallback[TContext]): Self = StObject.set(x, "368", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set368Undefined: Self = StObject.set(x, "368", js.undefined)
+        inline def set368Undefined: Self = StObject.set(x, "368", js.undefined)
         
-        @scala.inline
-        def set369(value: ErrorCallback[TContext]): Self = StObject.set(x, "369", value.asInstanceOf[js.Any])
+        inline def set369(value: ErrorCallback[TContext]): Self = StObject.set(x, "369", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set369Undefined: Self = StObject.set(x, "369", js.undefined)
+        inline def set369Undefined: Self = StObject.set(x, "369", js.undefined)
         
-        @scala.inline
-        def set370(value: ErrorCallback[TContext]): Self = StObject.set(x, "370", value.asInstanceOf[js.Any])
+        inline def set370(value: ErrorCallback[TContext]): Self = StObject.set(x, "370", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set370Undefined: Self = StObject.set(x, "370", js.undefined)
+        inline def set370Undefined: Self = StObject.set(x, "370", js.undefined)
         
-        @scala.inline
-        def set371(value: ErrorCallback[TContext]): Self = StObject.set(x, "371", value.asInstanceOf[js.Any])
+        inline def set371(value: ErrorCallback[TContext]): Self = StObject.set(x, "371", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set371Undefined: Self = StObject.set(x, "371", js.undefined)
+        inline def set371Undefined: Self = StObject.set(x, "371", js.undefined)
         
-        @scala.inline
-        def set372(value: ErrorCallback[TContext]): Self = StObject.set(x, "372", value.asInstanceOf[js.Any])
+        inline def set372(value: ErrorCallback[TContext]): Self = StObject.set(x, "372", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set372Undefined: Self = StObject.set(x, "372", js.undefined)
+        inline def set372Undefined: Self = StObject.set(x, "372", js.undefined)
         
-        @scala.inline
-        def set373(value: ErrorCallback[TContext]): Self = StObject.set(x, "373", value.asInstanceOf[js.Any])
+        inline def set373(value: ErrorCallback[TContext]): Self = StObject.set(x, "373", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set373Undefined: Self = StObject.set(x, "373", js.undefined)
+        inline def set373Undefined: Self = StObject.set(x, "373", js.undefined)
         
-        @scala.inline
-        def set374(value: ErrorCallback[TContext]): Self = StObject.set(x, "374", value.asInstanceOf[js.Any])
+        inline def set374(value: ErrorCallback[TContext]): Self = StObject.set(x, "374", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set374Undefined: Self = StObject.set(x, "374", js.undefined)
+        inline def set374Undefined: Self = StObject.set(x, "374", js.undefined)
         
-        @scala.inline
-        def set375(value: ErrorCallback[TContext]): Self = StObject.set(x, "375", value.asInstanceOf[js.Any])
+        inline def set375(value: ErrorCallback[TContext]): Self = StObject.set(x, "375", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set375Undefined: Self = StObject.set(x, "375", js.undefined)
+        inline def set375Undefined: Self = StObject.set(x, "375", js.undefined)
         
-        @scala.inline
-        def set376(value: ErrorCallback[TContext]): Self = StObject.set(x, "376", value.asInstanceOf[js.Any])
+        inline def set376(value: ErrorCallback[TContext]): Self = StObject.set(x, "376", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set376Undefined: Self = StObject.set(x, "376", js.undefined)
+        inline def set376Undefined: Self = StObject.set(x, "376", js.undefined)
         
-        @scala.inline
-        def set377(value: ErrorCallback[TContext]): Self = StObject.set(x, "377", value.asInstanceOf[js.Any])
+        inline def set377(value: ErrorCallback[TContext]): Self = StObject.set(x, "377", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set377Undefined: Self = StObject.set(x, "377", js.undefined)
+        inline def set377Undefined: Self = StObject.set(x, "377", js.undefined)
         
-        @scala.inline
-        def set378(value: ErrorCallback[TContext]): Self = StObject.set(x, "378", value.asInstanceOf[js.Any])
+        inline def set378(value: ErrorCallback[TContext]): Self = StObject.set(x, "378", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set378Undefined: Self = StObject.set(x, "378", js.undefined)
+        inline def set378Undefined: Self = StObject.set(x, "378", js.undefined)
         
-        @scala.inline
-        def set379(value: ErrorCallback[TContext]): Self = StObject.set(x, "379", value.asInstanceOf[js.Any])
+        inline def set379(value: ErrorCallback[TContext]): Self = StObject.set(x, "379", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set379Undefined: Self = StObject.set(x, "379", js.undefined)
+        inline def set379Undefined: Self = StObject.set(x, "379", js.undefined)
         
-        @scala.inline
-        def set380(value: ErrorCallback[TContext]): Self = StObject.set(x, "380", value.asInstanceOf[js.Any])
+        inline def set380(value: ErrorCallback[TContext]): Self = StObject.set(x, "380", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set380Undefined: Self = StObject.set(x, "380", js.undefined)
+        inline def set380Undefined: Self = StObject.set(x, "380", js.undefined)
         
-        @scala.inline
-        def set381(value: ErrorCallback[TContext]): Self = StObject.set(x, "381", value.asInstanceOf[js.Any])
+        inline def set381(value: ErrorCallback[TContext]): Self = StObject.set(x, "381", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set381Undefined: Self = StObject.set(x, "381", js.undefined)
+        inline def set381Undefined: Self = StObject.set(x, "381", js.undefined)
         
-        @scala.inline
-        def set382(value: ErrorCallback[TContext]): Self = StObject.set(x, "382", value.asInstanceOf[js.Any])
+        inline def set382(value: ErrorCallback[TContext]): Self = StObject.set(x, "382", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set382Undefined: Self = StObject.set(x, "382", js.undefined)
+        inline def set382Undefined: Self = StObject.set(x, "382", js.undefined)
         
-        @scala.inline
-        def set383(value: ErrorCallback[TContext]): Self = StObject.set(x, "383", value.asInstanceOf[js.Any])
+        inline def set383(value: ErrorCallback[TContext]): Self = StObject.set(x, "383", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set383Undefined: Self = StObject.set(x, "383", js.undefined)
+        inline def set383Undefined: Self = StObject.set(x, "383", js.undefined)
         
-        @scala.inline
-        def set384(value: ErrorCallback[TContext]): Self = StObject.set(x, "384", value.asInstanceOf[js.Any])
+        inline def set384(value: ErrorCallback[TContext]): Self = StObject.set(x, "384", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set384Undefined: Self = StObject.set(x, "384", js.undefined)
+        inline def set384Undefined: Self = StObject.set(x, "384", js.undefined)
         
-        @scala.inline
-        def set385(value: ErrorCallback[TContext]): Self = StObject.set(x, "385", value.asInstanceOf[js.Any])
+        inline def set385(value: ErrorCallback[TContext]): Self = StObject.set(x, "385", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set385Undefined: Self = StObject.set(x, "385", js.undefined)
+        inline def set385Undefined: Self = StObject.set(x, "385", js.undefined)
         
-        @scala.inline
-        def set386(value: ErrorCallback[TContext]): Self = StObject.set(x, "386", value.asInstanceOf[js.Any])
+        inline def set386(value: ErrorCallback[TContext]): Self = StObject.set(x, "386", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set386Undefined: Self = StObject.set(x, "386", js.undefined)
+        inline def set386Undefined: Self = StObject.set(x, "386", js.undefined)
         
-        @scala.inline
-        def set387(value: ErrorCallback[TContext]): Self = StObject.set(x, "387", value.asInstanceOf[js.Any])
+        inline def set387(value: ErrorCallback[TContext]): Self = StObject.set(x, "387", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set387Undefined: Self = StObject.set(x, "387", js.undefined)
+        inline def set387Undefined: Self = StObject.set(x, "387", js.undefined)
         
-        @scala.inline
-        def set388(value: ErrorCallback[TContext]): Self = StObject.set(x, "388", value.asInstanceOf[js.Any])
+        inline def set388(value: ErrorCallback[TContext]): Self = StObject.set(x, "388", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set388Undefined: Self = StObject.set(x, "388", js.undefined)
+        inline def set388Undefined: Self = StObject.set(x, "388", js.undefined)
         
-        @scala.inline
-        def set389(value: ErrorCallback[TContext]): Self = StObject.set(x, "389", value.asInstanceOf[js.Any])
+        inline def set389(value: ErrorCallback[TContext]): Self = StObject.set(x, "389", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set389Undefined: Self = StObject.set(x, "389", js.undefined)
+        inline def set389Undefined: Self = StObject.set(x, "389", js.undefined)
         
-        @scala.inline
-        def set390(value: ErrorCallback[TContext]): Self = StObject.set(x, "390", value.asInstanceOf[js.Any])
+        inline def set390(value: ErrorCallback[TContext]): Self = StObject.set(x, "390", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set390Undefined: Self = StObject.set(x, "390", js.undefined)
+        inline def set390Undefined: Self = StObject.set(x, "390", js.undefined)
         
-        @scala.inline
-        def set391(value: ErrorCallback[TContext]): Self = StObject.set(x, "391", value.asInstanceOf[js.Any])
+        inline def set391(value: ErrorCallback[TContext]): Self = StObject.set(x, "391", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set391Undefined: Self = StObject.set(x, "391", js.undefined)
+        inline def set391Undefined: Self = StObject.set(x, "391", js.undefined)
         
-        @scala.inline
-        def set392(value: ErrorCallback[TContext]): Self = StObject.set(x, "392", value.asInstanceOf[js.Any])
+        inline def set392(value: ErrorCallback[TContext]): Self = StObject.set(x, "392", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set392Undefined: Self = StObject.set(x, "392", js.undefined)
+        inline def set392Undefined: Self = StObject.set(x, "392", js.undefined)
         
-        @scala.inline
-        def set393(value: ErrorCallback[TContext]): Self = StObject.set(x, "393", value.asInstanceOf[js.Any])
+        inline def set393(value: ErrorCallback[TContext]): Self = StObject.set(x, "393", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set393Undefined: Self = StObject.set(x, "393", js.undefined)
+        inline def set393Undefined: Self = StObject.set(x, "393", js.undefined)
         
-        @scala.inline
-        def set394(value: ErrorCallback[TContext]): Self = StObject.set(x, "394", value.asInstanceOf[js.Any])
+        inline def set394(value: ErrorCallback[TContext]): Self = StObject.set(x, "394", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set394Undefined: Self = StObject.set(x, "394", js.undefined)
+        inline def set394Undefined: Self = StObject.set(x, "394", js.undefined)
         
-        @scala.inline
-        def set395(value: ErrorCallback[TContext]): Self = StObject.set(x, "395", value.asInstanceOf[js.Any])
+        inline def set395(value: ErrorCallback[TContext]): Self = StObject.set(x, "395", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set395Undefined: Self = StObject.set(x, "395", js.undefined)
+        inline def set395Undefined: Self = StObject.set(x, "395", js.undefined)
         
-        @scala.inline
-        def set396(value: ErrorCallback[TContext]): Self = StObject.set(x, "396", value.asInstanceOf[js.Any])
+        inline def set396(value: ErrorCallback[TContext]): Self = StObject.set(x, "396", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set396Undefined: Self = StObject.set(x, "396", js.undefined)
+        inline def set396Undefined: Self = StObject.set(x, "396", js.undefined)
         
-        @scala.inline
-        def set397(value: ErrorCallback[TContext]): Self = StObject.set(x, "397", value.asInstanceOf[js.Any])
+        inline def set397(value: ErrorCallback[TContext]): Self = StObject.set(x, "397", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set397Undefined: Self = StObject.set(x, "397", js.undefined)
+        inline def set397Undefined: Self = StObject.set(x, "397", js.undefined)
         
-        @scala.inline
-        def set398(value: ErrorCallback[TContext]): Self = StObject.set(x, "398", value.asInstanceOf[js.Any])
+        inline def set398(value: ErrorCallback[TContext]): Self = StObject.set(x, "398", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set398Undefined: Self = StObject.set(x, "398", js.undefined)
+        inline def set398Undefined: Self = StObject.set(x, "398", js.undefined)
         
-        @scala.inline
-        def set399(value: ErrorCallback[TContext]): Self = StObject.set(x, "399", value.asInstanceOf[js.Any])
+        inline def set399(value: ErrorCallback[TContext]): Self = StObject.set(x, "399", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set399Undefined: Self = StObject.set(x, "399", js.undefined)
+        inline def set399Undefined: Self = StObject.set(x, "399", js.undefined)
         
-        @scala.inline
-        def set400(value: ErrorCallback[TContext]): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
+        inline def set400(value: ErrorCallback[TContext]): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set400Undefined: Self = StObject.set(x, "400", js.undefined)
+        inline def set400Undefined: Self = StObject.set(x, "400", js.undefined)
         
-        @scala.inline
-        def set401(value: ErrorCallback[TContext]): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+        inline def set401(value: ErrorCallback[TContext]): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set401Undefined: Self = StObject.set(x, "401", js.undefined)
+        inline def set401Undefined: Self = StObject.set(x, "401", js.undefined)
         
-        @scala.inline
-        def set402(value: ErrorCallback[TContext]): Self = StObject.set(x, "402", value.asInstanceOf[js.Any])
+        inline def set402(value: ErrorCallback[TContext]): Self = StObject.set(x, "402", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set402Undefined: Self = StObject.set(x, "402", js.undefined)
+        inline def set402Undefined: Self = StObject.set(x, "402", js.undefined)
         
-        @scala.inline
-        def set403(value: ErrorCallback[TContext]): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+        inline def set403(value: ErrorCallback[TContext]): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set403Undefined: Self = StObject.set(x, "403", js.undefined)
+        inline def set403Undefined: Self = StObject.set(x, "403", js.undefined)
         
-        @scala.inline
-        def set404(value: ErrorCallback[TContext]): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+        inline def set404(value: ErrorCallback[TContext]): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set404Undefined: Self = StObject.set(x, "404", js.undefined)
+        inline def set404Undefined: Self = StObject.set(x, "404", js.undefined)
         
-        @scala.inline
-        def set405(value: ErrorCallback[TContext]): Self = StObject.set(x, "405", value.asInstanceOf[js.Any])
+        inline def set405(value: ErrorCallback[TContext]): Self = StObject.set(x, "405", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set405Undefined: Self = StObject.set(x, "405", js.undefined)
+        inline def set405Undefined: Self = StObject.set(x, "405", js.undefined)
         
-        @scala.inline
-        def set406(value: ErrorCallback[TContext]): Self = StObject.set(x, "406", value.asInstanceOf[js.Any])
+        inline def set406(value: ErrorCallback[TContext]): Self = StObject.set(x, "406", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set406Undefined: Self = StObject.set(x, "406", js.undefined)
+        inline def set406Undefined: Self = StObject.set(x, "406", js.undefined)
         
-        @scala.inline
-        def set407(value: ErrorCallback[TContext]): Self = StObject.set(x, "407", value.asInstanceOf[js.Any])
+        inline def set407(value: ErrorCallback[TContext]): Self = StObject.set(x, "407", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set407Undefined: Self = StObject.set(x, "407", js.undefined)
+        inline def set407Undefined: Self = StObject.set(x, "407", js.undefined)
         
-        @scala.inline
-        def set408(value: ErrorCallback[TContext]): Self = StObject.set(x, "408", value.asInstanceOf[js.Any])
+        inline def set408(value: ErrorCallback[TContext]): Self = StObject.set(x, "408", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set408Undefined: Self = StObject.set(x, "408", js.undefined)
+        inline def set408Undefined: Self = StObject.set(x, "408", js.undefined)
         
-        @scala.inline
-        def set409(value: ErrorCallback[TContext]): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
+        inline def set409(value: ErrorCallback[TContext]): Self = StObject.set(x, "409", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set409Undefined: Self = StObject.set(x, "409", js.undefined)
+        inline def set409Undefined: Self = StObject.set(x, "409", js.undefined)
         
-        @scala.inline
-        def set410(value: ErrorCallback[TContext]): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
+        inline def set410(value: ErrorCallback[TContext]): Self = StObject.set(x, "410", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set410Undefined: Self = StObject.set(x, "410", js.undefined)
+        inline def set410Undefined: Self = StObject.set(x, "410", js.undefined)
         
-        @scala.inline
-        def set411(value: ErrorCallback[TContext]): Self = StObject.set(x, "411", value.asInstanceOf[js.Any])
+        inline def set411(value: ErrorCallback[TContext]): Self = StObject.set(x, "411", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set411Undefined: Self = StObject.set(x, "411", js.undefined)
+        inline def set411Undefined: Self = StObject.set(x, "411", js.undefined)
         
-        @scala.inline
-        def set412(value: ErrorCallback[TContext]): Self = StObject.set(x, "412", value.asInstanceOf[js.Any])
+        inline def set412(value: ErrorCallback[TContext]): Self = StObject.set(x, "412", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set412Undefined: Self = StObject.set(x, "412", js.undefined)
+        inline def set412Undefined: Self = StObject.set(x, "412", js.undefined)
         
-        @scala.inline
-        def set413(value: ErrorCallback[TContext]): Self = StObject.set(x, "413", value.asInstanceOf[js.Any])
+        inline def set413(value: ErrorCallback[TContext]): Self = StObject.set(x, "413", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set413Undefined: Self = StObject.set(x, "413", js.undefined)
+        inline def set413Undefined: Self = StObject.set(x, "413", js.undefined)
         
-        @scala.inline
-        def set414(value: ErrorCallback[TContext]): Self = StObject.set(x, "414", value.asInstanceOf[js.Any])
+        inline def set414(value: ErrorCallback[TContext]): Self = StObject.set(x, "414", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set414Undefined: Self = StObject.set(x, "414", js.undefined)
+        inline def set414Undefined: Self = StObject.set(x, "414", js.undefined)
         
-        @scala.inline
-        def set415(value: ErrorCallback[TContext]): Self = StObject.set(x, "415", value.asInstanceOf[js.Any])
+        inline def set415(value: ErrorCallback[TContext]): Self = StObject.set(x, "415", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set415Undefined: Self = StObject.set(x, "415", js.undefined)
+        inline def set415Undefined: Self = StObject.set(x, "415", js.undefined)
         
-        @scala.inline
-        def set416(value: ErrorCallback[TContext]): Self = StObject.set(x, "416", value.asInstanceOf[js.Any])
+        inline def set416(value: ErrorCallback[TContext]): Self = StObject.set(x, "416", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set416Undefined: Self = StObject.set(x, "416", js.undefined)
+        inline def set416Undefined: Self = StObject.set(x, "416", js.undefined)
         
-        @scala.inline
-        def set417(value: ErrorCallback[TContext]): Self = StObject.set(x, "417", value.asInstanceOf[js.Any])
+        inline def set417(value: ErrorCallback[TContext]): Self = StObject.set(x, "417", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set417Undefined: Self = StObject.set(x, "417", js.undefined)
+        inline def set417Undefined: Self = StObject.set(x, "417", js.undefined)
         
-        @scala.inline
-        def set418(value: ErrorCallback[TContext]): Self = StObject.set(x, "418", value.asInstanceOf[js.Any])
+        inline def set418(value: ErrorCallback[TContext]): Self = StObject.set(x, "418", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set418Undefined: Self = StObject.set(x, "418", js.undefined)
+        inline def set418Undefined: Self = StObject.set(x, "418", js.undefined)
         
-        @scala.inline
-        def set419(value: ErrorCallback[TContext]): Self = StObject.set(x, "419", value.asInstanceOf[js.Any])
+        inline def set419(value: ErrorCallback[TContext]): Self = StObject.set(x, "419", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set419Undefined: Self = StObject.set(x, "419", js.undefined)
+        inline def set419Undefined: Self = StObject.set(x, "419", js.undefined)
         
-        @scala.inline
-        def set420(value: ErrorCallback[TContext]): Self = StObject.set(x, "420", value.asInstanceOf[js.Any])
+        inline def set420(value: ErrorCallback[TContext]): Self = StObject.set(x, "420", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set420Undefined: Self = StObject.set(x, "420", js.undefined)
+        inline def set420Undefined: Self = StObject.set(x, "420", js.undefined)
         
-        @scala.inline
-        def set421(value: ErrorCallback[TContext]): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
+        inline def set421(value: ErrorCallback[TContext]): Self = StObject.set(x, "421", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set421Undefined: Self = StObject.set(x, "421", js.undefined)
+        inline def set421Undefined: Self = StObject.set(x, "421", js.undefined)
         
-        @scala.inline
-        def set422(value: ErrorCallback[TContext]): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+        inline def set422(value: ErrorCallback[TContext]): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set422Undefined: Self = StObject.set(x, "422", js.undefined)
+        inline def set422Undefined: Self = StObject.set(x, "422", js.undefined)
         
-        @scala.inline
-        def set423(value: ErrorCallback[TContext]): Self = StObject.set(x, "423", value.asInstanceOf[js.Any])
+        inline def set423(value: ErrorCallback[TContext]): Self = StObject.set(x, "423", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set423Undefined: Self = StObject.set(x, "423", js.undefined)
+        inline def set423Undefined: Self = StObject.set(x, "423", js.undefined)
         
-        @scala.inline
-        def set424(value: ErrorCallback[TContext]): Self = StObject.set(x, "424", value.asInstanceOf[js.Any])
+        inline def set424(value: ErrorCallback[TContext]): Self = StObject.set(x, "424", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set424Undefined: Self = StObject.set(x, "424", js.undefined)
+        inline def set424Undefined: Self = StObject.set(x, "424", js.undefined)
         
-        @scala.inline
-        def set425(value: ErrorCallback[TContext]): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
+        inline def set425(value: ErrorCallback[TContext]): Self = StObject.set(x, "425", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set425Undefined: Self = StObject.set(x, "425", js.undefined)
+        inline def set425Undefined: Self = StObject.set(x, "425", js.undefined)
         
-        @scala.inline
-        def set426(value: ErrorCallback[TContext]): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
+        inline def set426(value: ErrorCallback[TContext]): Self = StObject.set(x, "426", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set426Undefined: Self = StObject.set(x, "426", js.undefined)
+        inline def set426Undefined: Self = StObject.set(x, "426", js.undefined)
         
-        @scala.inline
-        def set427(value: ErrorCallback[TContext]): Self = StObject.set(x, "427", value.asInstanceOf[js.Any])
+        inline def set427(value: ErrorCallback[TContext]): Self = StObject.set(x, "427", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set427Undefined: Self = StObject.set(x, "427", js.undefined)
+        inline def set427Undefined: Self = StObject.set(x, "427", js.undefined)
         
-        @scala.inline
-        def set428(value: ErrorCallback[TContext]): Self = StObject.set(x, "428", value.asInstanceOf[js.Any])
+        inline def set428(value: ErrorCallback[TContext]): Self = StObject.set(x, "428", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set428Undefined: Self = StObject.set(x, "428", js.undefined)
+        inline def set428Undefined: Self = StObject.set(x, "428", js.undefined)
         
-        @scala.inline
-        def set429(value: ErrorCallback[TContext]): Self = StObject.set(x, "429", value.asInstanceOf[js.Any])
+        inline def set429(value: ErrorCallback[TContext]): Self = StObject.set(x, "429", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set429Undefined: Self = StObject.set(x, "429", js.undefined)
+        inline def set429Undefined: Self = StObject.set(x, "429", js.undefined)
         
-        @scala.inline
-        def set430(value: ErrorCallback[TContext]): Self = StObject.set(x, "430", value.asInstanceOf[js.Any])
+        inline def set430(value: ErrorCallback[TContext]): Self = StObject.set(x, "430", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set430Undefined: Self = StObject.set(x, "430", js.undefined)
+        inline def set430Undefined: Self = StObject.set(x, "430", js.undefined)
         
-        @scala.inline
-        def set431(value: ErrorCallback[TContext]): Self = StObject.set(x, "431", value.asInstanceOf[js.Any])
+        inline def set431(value: ErrorCallback[TContext]): Self = StObject.set(x, "431", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set431Undefined: Self = StObject.set(x, "431", js.undefined)
+        inline def set431Undefined: Self = StObject.set(x, "431", js.undefined)
         
-        @scala.inline
-        def set432(value: ErrorCallback[TContext]): Self = StObject.set(x, "432", value.asInstanceOf[js.Any])
+        inline def set432(value: ErrorCallback[TContext]): Self = StObject.set(x, "432", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set432Undefined: Self = StObject.set(x, "432", js.undefined)
+        inline def set432Undefined: Self = StObject.set(x, "432", js.undefined)
         
-        @scala.inline
-        def set433(value: ErrorCallback[TContext]): Self = StObject.set(x, "433", value.asInstanceOf[js.Any])
+        inline def set433(value: ErrorCallback[TContext]): Self = StObject.set(x, "433", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set433Undefined: Self = StObject.set(x, "433", js.undefined)
+        inline def set433Undefined: Self = StObject.set(x, "433", js.undefined)
         
-        @scala.inline
-        def set434(value: ErrorCallback[TContext]): Self = StObject.set(x, "434", value.asInstanceOf[js.Any])
+        inline def set434(value: ErrorCallback[TContext]): Self = StObject.set(x, "434", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set434Undefined: Self = StObject.set(x, "434", js.undefined)
+        inline def set434Undefined: Self = StObject.set(x, "434", js.undefined)
         
-        @scala.inline
-        def set435(value: ErrorCallback[TContext]): Self = StObject.set(x, "435", value.asInstanceOf[js.Any])
+        inline def set435(value: ErrorCallback[TContext]): Self = StObject.set(x, "435", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set435Undefined: Self = StObject.set(x, "435", js.undefined)
+        inline def set435Undefined: Self = StObject.set(x, "435", js.undefined)
         
-        @scala.inline
-        def set436(value: ErrorCallback[TContext]): Self = StObject.set(x, "436", value.asInstanceOf[js.Any])
+        inline def set436(value: ErrorCallback[TContext]): Self = StObject.set(x, "436", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set436Undefined: Self = StObject.set(x, "436", js.undefined)
+        inline def set436Undefined: Self = StObject.set(x, "436", js.undefined)
         
-        @scala.inline
-        def set437(value: ErrorCallback[TContext]): Self = StObject.set(x, "437", value.asInstanceOf[js.Any])
+        inline def set437(value: ErrorCallback[TContext]): Self = StObject.set(x, "437", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set437Undefined: Self = StObject.set(x, "437", js.undefined)
+        inline def set437Undefined: Self = StObject.set(x, "437", js.undefined)
         
-        @scala.inline
-        def set438(value: ErrorCallback[TContext]): Self = StObject.set(x, "438", value.asInstanceOf[js.Any])
+        inline def set438(value: ErrorCallback[TContext]): Self = StObject.set(x, "438", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set438Undefined: Self = StObject.set(x, "438", js.undefined)
+        inline def set438Undefined: Self = StObject.set(x, "438", js.undefined)
         
-        @scala.inline
-        def set439(value: ErrorCallback[TContext]): Self = StObject.set(x, "439", value.asInstanceOf[js.Any])
+        inline def set439(value: ErrorCallback[TContext]): Self = StObject.set(x, "439", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set439Undefined: Self = StObject.set(x, "439", js.undefined)
+        inline def set439Undefined: Self = StObject.set(x, "439", js.undefined)
         
-        @scala.inline
-        def set440(value: ErrorCallback[TContext]): Self = StObject.set(x, "440", value.asInstanceOf[js.Any])
+        inline def set440(value: ErrorCallback[TContext]): Self = StObject.set(x, "440", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set440Undefined: Self = StObject.set(x, "440", js.undefined)
+        inline def set440Undefined: Self = StObject.set(x, "440", js.undefined)
         
-        @scala.inline
-        def set441(value: ErrorCallback[TContext]): Self = StObject.set(x, "441", value.asInstanceOf[js.Any])
+        inline def set441(value: ErrorCallback[TContext]): Self = StObject.set(x, "441", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set441Undefined: Self = StObject.set(x, "441", js.undefined)
+        inline def set441Undefined: Self = StObject.set(x, "441", js.undefined)
         
-        @scala.inline
-        def set442(value: ErrorCallback[TContext]): Self = StObject.set(x, "442", value.asInstanceOf[js.Any])
+        inline def set442(value: ErrorCallback[TContext]): Self = StObject.set(x, "442", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set442Undefined: Self = StObject.set(x, "442", js.undefined)
+        inline def set442Undefined: Self = StObject.set(x, "442", js.undefined)
         
-        @scala.inline
-        def set443(value: ErrorCallback[TContext]): Self = StObject.set(x, "443", value.asInstanceOf[js.Any])
+        inline def set443(value: ErrorCallback[TContext]): Self = StObject.set(x, "443", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set443Undefined: Self = StObject.set(x, "443", js.undefined)
+        inline def set443Undefined: Self = StObject.set(x, "443", js.undefined)
         
-        @scala.inline
-        def set444(value: ErrorCallback[TContext]): Self = StObject.set(x, "444", value.asInstanceOf[js.Any])
+        inline def set444(value: ErrorCallback[TContext]): Self = StObject.set(x, "444", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set444Undefined: Self = StObject.set(x, "444", js.undefined)
+        inline def set444Undefined: Self = StObject.set(x, "444", js.undefined)
         
-        @scala.inline
-        def set445(value: ErrorCallback[TContext]): Self = StObject.set(x, "445", value.asInstanceOf[js.Any])
+        inline def set445(value: ErrorCallback[TContext]): Self = StObject.set(x, "445", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set445Undefined: Self = StObject.set(x, "445", js.undefined)
+        inline def set445Undefined: Self = StObject.set(x, "445", js.undefined)
         
-        @scala.inline
-        def set446(value: ErrorCallback[TContext]): Self = StObject.set(x, "446", value.asInstanceOf[js.Any])
+        inline def set446(value: ErrorCallback[TContext]): Self = StObject.set(x, "446", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set446Undefined: Self = StObject.set(x, "446", js.undefined)
+        inline def set446Undefined: Self = StObject.set(x, "446", js.undefined)
         
-        @scala.inline
-        def set447(value: ErrorCallback[TContext]): Self = StObject.set(x, "447", value.asInstanceOf[js.Any])
+        inline def set447(value: ErrorCallback[TContext]): Self = StObject.set(x, "447", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set447Undefined: Self = StObject.set(x, "447", js.undefined)
+        inline def set447Undefined: Self = StObject.set(x, "447", js.undefined)
         
-        @scala.inline
-        def set448(value: ErrorCallback[TContext]): Self = StObject.set(x, "448", value.asInstanceOf[js.Any])
+        inline def set448(value: ErrorCallback[TContext]): Self = StObject.set(x, "448", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set448Undefined: Self = StObject.set(x, "448", js.undefined)
+        inline def set448Undefined: Self = StObject.set(x, "448", js.undefined)
         
-        @scala.inline
-        def set449(value: ErrorCallback[TContext]): Self = StObject.set(x, "449", value.asInstanceOf[js.Any])
+        inline def set449(value: ErrorCallback[TContext]): Self = StObject.set(x, "449", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set449Undefined: Self = StObject.set(x, "449", js.undefined)
+        inline def set449Undefined: Self = StObject.set(x, "449", js.undefined)
         
-        @scala.inline
-        def set450(value: ErrorCallback[TContext]): Self = StObject.set(x, "450", value.asInstanceOf[js.Any])
+        inline def set450(value: ErrorCallback[TContext]): Self = StObject.set(x, "450", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set450Undefined: Self = StObject.set(x, "450", js.undefined)
+        inline def set450Undefined: Self = StObject.set(x, "450", js.undefined)
         
-        @scala.inline
-        def set451(value: ErrorCallback[TContext]): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
+        inline def set451(value: ErrorCallback[TContext]): Self = StObject.set(x, "451", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set451Undefined: Self = StObject.set(x, "451", js.undefined)
+        inline def set451Undefined: Self = StObject.set(x, "451", js.undefined)
         
-        @scala.inline
-        def set452(value: ErrorCallback[TContext]): Self = StObject.set(x, "452", value.asInstanceOf[js.Any])
+        inline def set452(value: ErrorCallback[TContext]): Self = StObject.set(x, "452", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set452Undefined: Self = StObject.set(x, "452", js.undefined)
+        inline def set452Undefined: Self = StObject.set(x, "452", js.undefined)
         
-        @scala.inline
-        def set453(value: ErrorCallback[TContext]): Self = StObject.set(x, "453", value.asInstanceOf[js.Any])
+        inline def set453(value: ErrorCallback[TContext]): Self = StObject.set(x, "453", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set453Undefined: Self = StObject.set(x, "453", js.undefined)
+        inline def set453Undefined: Self = StObject.set(x, "453", js.undefined)
         
-        @scala.inline
-        def set454(value: ErrorCallback[TContext]): Self = StObject.set(x, "454", value.asInstanceOf[js.Any])
+        inline def set454(value: ErrorCallback[TContext]): Self = StObject.set(x, "454", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set454Undefined: Self = StObject.set(x, "454", js.undefined)
+        inline def set454Undefined: Self = StObject.set(x, "454", js.undefined)
         
-        @scala.inline
-        def set455(value: ErrorCallback[TContext]): Self = StObject.set(x, "455", value.asInstanceOf[js.Any])
+        inline def set455(value: ErrorCallback[TContext]): Self = StObject.set(x, "455", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set455Undefined: Self = StObject.set(x, "455", js.undefined)
+        inline def set455Undefined: Self = StObject.set(x, "455", js.undefined)
         
-        @scala.inline
-        def set456(value: ErrorCallback[TContext]): Self = StObject.set(x, "456", value.asInstanceOf[js.Any])
+        inline def set456(value: ErrorCallback[TContext]): Self = StObject.set(x, "456", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set456Undefined: Self = StObject.set(x, "456", js.undefined)
+        inline def set456Undefined: Self = StObject.set(x, "456", js.undefined)
         
-        @scala.inline
-        def set457(value: ErrorCallback[TContext]): Self = StObject.set(x, "457", value.asInstanceOf[js.Any])
+        inline def set457(value: ErrorCallback[TContext]): Self = StObject.set(x, "457", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set457Undefined: Self = StObject.set(x, "457", js.undefined)
+        inline def set457Undefined: Self = StObject.set(x, "457", js.undefined)
         
-        @scala.inline
-        def set458(value: ErrorCallback[TContext]): Self = StObject.set(x, "458", value.asInstanceOf[js.Any])
+        inline def set458(value: ErrorCallback[TContext]): Self = StObject.set(x, "458", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set458Undefined: Self = StObject.set(x, "458", js.undefined)
+        inline def set458Undefined: Self = StObject.set(x, "458", js.undefined)
         
-        @scala.inline
-        def set459(value: ErrorCallback[TContext]): Self = StObject.set(x, "459", value.asInstanceOf[js.Any])
+        inline def set459(value: ErrorCallback[TContext]): Self = StObject.set(x, "459", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set459Undefined: Self = StObject.set(x, "459", js.undefined)
+        inline def set459Undefined: Self = StObject.set(x, "459", js.undefined)
         
-        @scala.inline
-        def set460(value: ErrorCallback[TContext]): Self = StObject.set(x, "460", value.asInstanceOf[js.Any])
+        inline def set460(value: ErrorCallback[TContext]): Self = StObject.set(x, "460", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set460Undefined: Self = StObject.set(x, "460", js.undefined)
+        inline def set460Undefined: Self = StObject.set(x, "460", js.undefined)
         
-        @scala.inline
-        def set461(value: ErrorCallback[TContext]): Self = StObject.set(x, "461", value.asInstanceOf[js.Any])
+        inline def set461(value: ErrorCallback[TContext]): Self = StObject.set(x, "461", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set461Undefined: Self = StObject.set(x, "461", js.undefined)
+        inline def set461Undefined: Self = StObject.set(x, "461", js.undefined)
         
-        @scala.inline
-        def set462(value: ErrorCallback[TContext]): Self = StObject.set(x, "462", value.asInstanceOf[js.Any])
+        inline def set462(value: ErrorCallback[TContext]): Self = StObject.set(x, "462", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set462Undefined: Self = StObject.set(x, "462", js.undefined)
+        inline def set462Undefined: Self = StObject.set(x, "462", js.undefined)
         
-        @scala.inline
-        def set463(value: ErrorCallback[TContext]): Self = StObject.set(x, "463", value.asInstanceOf[js.Any])
+        inline def set463(value: ErrorCallback[TContext]): Self = StObject.set(x, "463", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set463Undefined: Self = StObject.set(x, "463", js.undefined)
+        inline def set463Undefined: Self = StObject.set(x, "463", js.undefined)
         
-        @scala.inline
-        def set464(value: ErrorCallback[TContext]): Self = StObject.set(x, "464", value.asInstanceOf[js.Any])
+        inline def set464(value: ErrorCallback[TContext]): Self = StObject.set(x, "464", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set464Undefined: Self = StObject.set(x, "464", js.undefined)
+        inline def set464Undefined: Self = StObject.set(x, "464", js.undefined)
         
-        @scala.inline
-        def set465(value: ErrorCallback[TContext]): Self = StObject.set(x, "465", value.asInstanceOf[js.Any])
+        inline def set465(value: ErrorCallback[TContext]): Self = StObject.set(x, "465", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set465Undefined: Self = StObject.set(x, "465", js.undefined)
+        inline def set465Undefined: Self = StObject.set(x, "465", js.undefined)
         
-        @scala.inline
-        def set466(value: ErrorCallback[TContext]): Self = StObject.set(x, "466", value.asInstanceOf[js.Any])
+        inline def set466(value: ErrorCallback[TContext]): Self = StObject.set(x, "466", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set466Undefined: Self = StObject.set(x, "466", js.undefined)
+        inline def set466Undefined: Self = StObject.set(x, "466", js.undefined)
         
-        @scala.inline
-        def set467(value: ErrorCallback[TContext]): Self = StObject.set(x, "467", value.asInstanceOf[js.Any])
+        inline def set467(value: ErrorCallback[TContext]): Self = StObject.set(x, "467", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set467Undefined: Self = StObject.set(x, "467", js.undefined)
+        inline def set467Undefined: Self = StObject.set(x, "467", js.undefined)
         
-        @scala.inline
-        def set468(value: ErrorCallback[TContext]): Self = StObject.set(x, "468", value.asInstanceOf[js.Any])
+        inline def set468(value: ErrorCallback[TContext]): Self = StObject.set(x, "468", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set468Undefined: Self = StObject.set(x, "468", js.undefined)
+        inline def set468Undefined: Self = StObject.set(x, "468", js.undefined)
         
-        @scala.inline
-        def set469(value: ErrorCallback[TContext]): Self = StObject.set(x, "469", value.asInstanceOf[js.Any])
+        inline def set469(value: ErrorCallback[TContext]): Self = StObject.set(x, "469", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set469Undefined: Self = StObject.set(x, "469", js.undefined)
+        inline def set469Undefined: Self = StObject.set(x, "469", js.undefined)
         
-        @scala.inline
-        def set470(value: ErrorCallback[TContext]): Self = StObject.set(x, "470", value.asInstanceOf[js.Any])
+        inline def set470(value: ErrorCallback[TContext]): Self = StObject.set(x, "470", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set470Undefined: Self = StObject.set(x, "470", js.undefined)
+        inline def set470Undefined: Self = StObject.set(x, "470", js.undefined)
         
-        @scala.inline
-        def set471(value: ErrorCallback[TContext]): Self = StObject.set(x, "471", value.asInstanceOf[js.Any])
+        inline def set471(value: ErrorCallback[TContext]): Self = StObject.set(x, "471", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set471Undefined: Self = StObject.set(x, "471", js.undefined)
+        inline def set471Undefined: Self = StObject.set(x, "471", js.undefined)
         
-        @scala.inline
-        def set472(value: ErrorCallback[TContext]): Self = StObject.set(x, "472", value.asInstanceOf[js.Any])
+        inline def set472(value: ErrorCallback[TContext]): Self = StObject.set(x, "472", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set472Undefined: Self = StObject.set(x, "472", js.undefined)
+        inline def set472Undefined: Self = StObject.set(x, "472", js.undefined)
         
-        @scala.inline
-        def set473(value: ErrorCallback[TContext]): Self = StObject.set(x, "473", value.asInstanceOf[js.Any])
+        inline def set473(value: ErrorCallback[TContext]): Self = StObject.set(x, "473", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set473Undefined: Self = StObject.set(x, "473", js.undefined)
+        inline def set473Undefined: Self = StObject.set(x, "473", js.undefined)
         
-        @scala.inline
-        def set474(value: ErrorCallback[TContext]): Self = StObject.set(x, "474", value.asInstanceOf[js.Any])
+        inline def set474(value: ErrorCallback[TContext]): Self = StObject.set(x, "474", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set474Undefined: Self = StObject.set(x, "474", js.undefined)
+        inline def set474Undefined: Self = StObject.set(x, "474", js.undefined)
         
-        @scala.inline
-        def set475(value: ErrorCallback[TContext]): Self = StObject.set(x, "475", value.asInstanceOf[js.Any])
+        inline def set475(value: ErrorCallback[TContext]): Self = StObject.set(x, "475", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set475Undefined: Self = StObject.set(x, "475", js.undefined)
+        inline def set475Undefined: Self = StObject.set(x, "475", js.undefined)
         
-        @scala.inline
-        def set476(value: ErrorCallback[TContext]): Self = StObject.set(x, "476", value.asInstanceOf[js.Any])
+        inline def set476(value: ErrorCallback[TContext]): Self = StObject.set(x, "476", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set476Undefined: Self = StObject.set(x, "476", js.undefined)
+        inline def set476Undefined: Self = StObject.set(x, "476", js.undefined)
         
-        @scala.inline
-        def set477(value: ErrorCallback[TContext]): Self = StObject.set(x, "477", value.asInstanceOf[js.Any])
+        inline def set477(value: ErrorCallback[TContext]): Self = StObject.set(x, "477", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set477Undefined: Self = StObject.set(x, "477", js.undefined)
+        inline def set477Undefined: Self = StObject.set(x, "477", js.undefined)
         
-        @scala.inline
-        def set478(value: ErrorCallback[TContext]): Self = StObject.set(x, "478", value.asInstanceOf[js.Any])
+        inline def set478(value: ErrorCallback[TContext]): Self = StObject.set(x, "478", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set478Undefined: Self = StObject.set(x, "478", js.undefined)
+        inline def set478Undefined: Self = StObject.set(x, "478", js.undefined)
         
-        @scala.inline
-        def set479(value: ErrorCallback[TContext]): Self = StObject.set(x, "479", value.asInstanceOf[js.Any])
+        inline def set479(value: ErrorCallback[TContext]): Self = StObject.set(x, "479", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set479Undefined: Self = StObject.set(x, "479", js.undefined)
+        inline def set479Undefined: Self = StObject.set(x, "479", js.undefined)
         
-        @scala.inline
-        def set480(value: ErrorCallback[TContext]): Self = StObject.set(x, "480", value.asInstanceOf[js.Any])
+        inline def set480(value: ErrorCallback[TContext]): Self = StObject.set(x, "480", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set480Undefined: Self = StObject.set(x, "480", js.undefined)
+        inline def set480Undefined: Self = StObject.set(x, "480", js.undefined)
         
-        @scala.inline
-        def set481(value: ErrorCallback[TContext]): Self = StObject.set(x, "481", value.asInstanceOf[js.Any])
+        inline def set481(value: ErrorCallback[TContext]): Self = StObject.set(x, "481", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set481Undefined: Self = StObject.set(x, "481", js.undefined)
+        inline def set481Undefined: Self = StObject.set(x, "481", js.undefined)
         
-        @scala.inline
-        def set482(value: ErrorCallback[TContext]): Self = StObject.set(x, "482", value.asInstanceOf[js.Any])
+        inline def set482(value: ErrorCallback[TContext]): Self = StObject.set(x, "482", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set482Undefined: Self = StObject.set(x, "482", js.undefined)
+        inline def set482Undefined: Self = StObject.set(x, "482", js.undefined)
         
-        @scala.inline
-        def set483(value: ErrorCallback[TContext]): Self = StObject.set(x, "483", value.asInstanceOf[js.Any])
+        inline def set483(value: ErrorCallback[TContext]): Self = StObject.set(x, "483", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set483Undefined: Self = StObject.set(x, "483", js.undefined)
+        inline def set483Undefined: Self = StObject.set(x, "483", js.undefined)
         
-        @scala.inline
-        def set484(value: ErrorCallback[TContext]): Self = StObject.set(x, "484", value.asInstanceOf[js.Any])
+        inline def set484(value: ErrorCallback[TContext]): Self = StObject.set(x, "484", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set484Undefined: Self = StObject.set(x, "484", js.undefined)
+        inline def set484Undefined: Self = StObject.set(x, "484", js.undefined)
         
-        @scala.inline
-        def set485(value: ErrorCallback[TContext]): Self = StObject.set(x, "485", value.asInstanceOf[js.Any])
+        inline def set485(value: ErrorCallback[TContext]): Self = StObject.set(x, "485", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set485Undefined: Self = StObject.set(x, "485", js.undefined)
+        inline def set485Undefined: Self = StObject.set(x, "485", js.undefined)
         
-        @scala.inline
-        def set486(value: ErrorCallback[TContext]): Self = StObject.set(x, "486", value.asInstanceOf[js.Any])
+        inline def set486(value: ErrorCallback[TContext]): Self = StObject.set(x, "486", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set486Undefined: Self = StObject.set(x, "486", js.undefined)
+        inline def set486Undefined: Self = StObject.set(x, "486", js.undefined)
         
-        @scala.inline
-        def set487(value: ErrorCallback[TContext]): Self = StObject.set(x, "487", value.asInstanceOf[js.Any])
+        inline def set487(value: ErrorCallback[TContext]): Self = StObject.set(x, "487", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set487Undefined: Self = StObject.set(x, "487", js.undefined)
+        inline def set487Undefined: Self = StObject.set(x, "487", js.undefined)
         
-        @scala.inline
-        def set488(value: ErrorCallback[TContext]): Self = StObject.set(x, "488", value.asInstanceOf[js.Any])
+        inline def set488(value: ErrorCallback[TContext]): Self = StObject.set(x, "488", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set488Undefined: Self = StObject.set(x, "488", js.undefined)
+        inline def set488Undefined: Self = StObject.set(x, "488", js.undefined)
         
-        @scala.inline
-        def set489(value: ErrorCallback[TContext]): Self = StObject.set(x, "489", value.asInstanceOf[js.Any])
+        inline def set489(value: ErrorCallback[TContext]): Self = StObject.set(x, "489", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set489Undefined: Self = StObject.set(x, "489", js.undefined)
+        inline def set489Undefined: Self = StObject.set(x, "489", js.undefined)
         
-        @scala.inline
-        def set490(value: ErrorCallback[TContext]): Self = StObject.set(x, "490", value.asInstanceOf[js.Any])
+        inline def set490(value: ErrorCallback[TContext]): Self = StObject.set(x, "490", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set490Undefined: Self = StObject.set(x, "490", js.undefined)
+        inline def set490Undefined: Self = StObject.set(x, "490", js.undefined)
         
-        @scala.inline
-        def set491(value: ErrorCallback[TContext]): Self = StObject.set(x, "491", value.asInstanceOf[js.Any])
+        inline def set491(value: ErrorCallback[TContext]): Self = StObject.set(x, "491", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set491Undefined: Self = StObject.set(x, "491", js.undefined)
+        inline def set491Undefined: Self = StObject.set(x, "491", js.undefined)
         
-        @scala.inline
-        def set492(value: ErrorCallback[TContext]): Self = StObject.set(x, "492", value.asInstanceOf[js.Any])
+        inline def set492(value: ErrorCallback[TContext]): Self = StObject.set(x, "492", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set492Undefined: Self = StObject.set(x, "492", js.undefined)
+        inline def set492Undefined: Self = StObject.set(x, "492", js.undefined)
         
-        @scala.inline
-        def set493(value: ErrorCallback[TContext]): Self = StObject.set(x, "493", value.asInstanceOf[js.Any])
+        inline def set493(value: ErrorCallback[TContext]): Self = StObject.set(x, "493", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set493Undefined: Self = StObject.set(x, "493", js.undefined)
+        inline def set493Undefined: Self = StObject.set(x, "493", js.undefined)
         
-        @scala.inline
-        def set494(value: ErrorCallback[TContext]): Self = StObject.set(x, "494", value.asInstanceOf[js.Any])
+        inline def set494(value: ErrorCallback[TContext]): Self = StObject.set(x, "494", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set494Undefined: Self = StObject.set(x, "494", js.undefined)
+        inline def set494Undefined: Self = StObject.set(x, "494", js.undefined)
         
-        @scala.inline
-        def set495(value: ErrorCallback[TContext]): Self = StObject.set(x, "495", value.asInstanceOf[js.Any])
+        inline def set495(value: ErrorCallback[TContext]): Self = StObject.set(x, "495", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set495Undefined: Self = StObject.set(x, "495", js.undefined)
+        inline def set495Undefined: Self = StObject.set(x, "495", js.undefined)
         
-        @scala.inline
-        def set496(value: ErrorCallback[TContext]): Self = StObject.set(x, "496", value.asInstanceOf[js.Any])
+        inline def set496(value: ErrorCallback[TContext]): Self = StObject.set(x, "496", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set496Undefined: Self = StObject.set(x, "496", js.undefined)
+        inline def set496Undefined: Self = StObject.set(x, "496", js.undefined)
         
-        @scala.inline
-        def set497(value: ErrorCallback[TContext]): Self = StObject.set(x, "497", value.asInstanceOf[js.Any])
+        inline def set497(value: ErrorCallback[TContext]): Self = StObject.set(x, "497", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set497Undefined: Self = StObject.set(x, "497", js.undefined)
+        inline def set497Undefined: Self = StObject.set(x, "497", js.undefined)
         
-        @scala.inline
-        def set498(value: ErrorCallback[TContext]): Self = StObject.set(x, "498", value.asInstanceOf[js.Any])
+        inline def set498(value: ErrorCallback[TContext]): Self = StObject.set(x, "498", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set498Undefined: Self = StObject.set(x, "498", js.undefined)
+        inline def set498Undefined: Self = StObject.set(x, "498", js.undefined)
         
-        @scala.inline
-        def set499(value: ErrorCallback[TContext]): Self = StObject.set(x, "499", value.asInstanceOf[js.Any])
+        inline def set499(value: ErrorCallback[TContext]): Self = StObject.set(x, "499", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set499Undefined: Self = StObject.set(x, "499", js.undefined)
+        inline def set499Undefined: Self = StObject.set(x, "499", js.undefined)
         
-        @scala.inline
-        def set500(value: ErrorCallback[TContext]): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+        inline def set500(value: ErrorCallback[TContext]): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set500Undefined: Self = StObject.set(x, "500", js.undefined)
+        inline def set500Undefined: Self = StObject.set(x, "500", js.undefined)
         
-        @scala.inline
-        def set501(value: ErrorCallback[TContext]): Self = StObject.set(x, "501", value.asInstanceOf[js.Any])
+        inline def set501(value: ErrorCallback[TContext]): Self = StObject.set(x, "501", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set501Undefined: Self = StObject.set(x, "501", js.undefined)
+        inline def set501Undefined: Self = StObject.set(x, "501", js.undefined)
         
-        @scala.inline
-        def set502(value: ErrorCallback[TContext]): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
+        inline def set502(value: ErrorCallback[TContext]): Self = StObject.set(x, "502", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set502Undefined: Self = StObject.set(x, "502", js.undefined)
+        inline def set502Undefined: Self = StObject.set(x, "502", js.undefined)
         
-        @scala.inline
-        def set503(value: ErrorCallback[TContext]): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+        inline def set503(value: ErrorCallback[TContext]): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set503Undefined: Self = StObject.set(x, "503", js.undefined)
+        inline def set503Undefined: Self = StObject.set(x, "503", js.undefined)
         
-        @scala.inline
-        def set504(value: ErrorCallback[TContext]): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
+        inline def set504(value: ErrorCallback[TContext]): Self = StObject.set(x, "504", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set504Undefined: Self = StObject.set(x, "504", js.undefined)
+        inline def set504Undefined: Self = StObject.set(x, "504", js.undefined)
         
-        @scala.inline
-        def set505(value: ErrorCallback[TContext]): Self = StObject.set(x, "505", value.asInstanceOf[js.Any])
+        inline def set505(value: ErrorCallback[TContext]): Self = StObject.set(x, "505", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set505Undefined: Self = StObject.set(x, "505", js.undefined)
+        inline def set505Undefined: Self = StObject.set(x, "505", js.undefined)
         
-        @scala.inline
-        def set506(value: ErrorCallback[TContext]): Self = StObject.set(x, "506", value.asInstanceOf[js.Any])
+        inline def set506(value: ErrorCallback[TContext]): Self = StObject.set(x, "506", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set506Undefined: Self = StObject.set(x, "506", js.undefined)
+        inline def set506Undefined: Self = StObject.set(x, "506", js.undefined)
         
-        @scala.inline
-        def set507(value: ErrorCallback[TContext]): Self = StObject.set(x, "507", value.asInstanceOf[js.Any])
+        inline def set507(value: ErrorCallback[TContext]): Self = StObject.set(x, "507", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set507Undefined: Self = StObject.set(x, "507", js.undefined)
+        inline def set507Undefined: Self = StObject.set(x, "507", js.undefined)
         
-        @scala.inline
-        def set508(value: ErrorCallback[TContext]): Self = StObject.set(x, "508", value.asInstanceOf[js.Any])
+        inline def set508(value: ErrorCallback[TContext]): Self = StObject.set(x, "508", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set508Undefined: Self = StObject.set(x, "508", js.undefined)
+        inline def set508Undefined: Self = StObject.set(x, "508", js.undefined)
         
-        @scala.inline
-        def set509(value: ErrorCallback[TContext]): Self = StObject.set(x, "509", value.asInstanceOf[js.Any])
+        inline def set509(value: ErrorCallback[TContext]): Self = StObject.set(x, "509", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set509Undefined: Self = StObject.set(x, "509", js.undefined)
+        inline def set509Undefined: Self = StObject.set(x, "509", js.undefined)
         
-        @scala.inline
-        def set510(value: ErrorCallback[TContext]): Self = StObject.set(x, "510", value.asInstanceOf[js.Any])
+        inline def set510(value: ErrorCallback[TContext]): Self = StObject.set(x, "510", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set510Undefined: Self = StObject.set(x, "510", js.undefined)
+        inline def set510Undefined: Self = StObject.set(x, "510", js.undefined)
         
-        @scala.inline
-        def set511(value: ErrorCallback[TContext]): Self = StObject.set(x, "511", value.asInstanceOf[js.Any])
+        inline def set511(value: ErrorCallback[TContext]): Self = StObject.set(x, "511", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set511Undefined: Self = StObject.set(x, "511", js.undefined)
+        inline def set511Undefined: Self = StObject.set(x, "511", js.undefined)
         
-        @scala.inline
-        def set512(value: ErrorCallback[TContext]): Self = StObject.set(x, "512", value.asInstanceOf[js.Any])
+        inline def set512(value: ErrorCallback[TContext]): Self = StObject.set(x, "512", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set512Undefined: Self = StObject.set(x, "512", js.undefined)
+        inline def set512Undefined: Self = StObject.set(x, "512", js.undefined)
         
-        @scala.inline
-        def set513(value: ErrorCallback[TContext]): Self = StObject.set(x, "513", value.asInstanceOf[js.Any])
+        inline def set513(value: ErrorCallback[TContext]): Self = StObject.set(x, "513", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set513Undefined: Self = StObject.set(x, "513", js.undefined)
+        inline def set513Undefined: Self = StObject.set(x, "513", js.undefined)
         
-        @scala.inline
-        def set514(value: ErrorCallback[TContext]): Self = StObject.set(x, "514", value.asInstanceOf[js.Any])
+        inline def set514(value: ErrorCallback[TContext]): Self = StObject.set(x, "514", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set514Undefined: Self = StObject.set(x, "514", js.undefined)
+        inline def set514Undefined: Self = StObject.set(x, "514", js.undefined)
         
-        @scala.inline
-        def set515(value: ErrorCallback[TContext]): Self = StObject.set(x, "515", value.asInstanceOf[js.Any])
+        inline def set515(value: ErrorCallback[TContext]): Self = StObject.set(x, "515", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set515Undefined: Self = StObject.set(x, "515", js.undefined)
+        inline def set515Undefined: Self = StObject.set(x, "515", js.undefined)
         
-        @scala.inline
-        def set516(value: ErrorCallback[TContext]): Self = StObject.set(x, "516", value.asInstanceOf[js.Any])
+        inline def set516(value: ErrorCallback[TContext]): Self = StObject.set(x, "516", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set516Undefined: Self = StObject.set(x, "516", js.undefined)
+        inline def set516Undefined: Self = StObject.set(x, "516", js.undefined)
         
-        @scala.inline
-        def set517(value: ErrorCallback[TContext]): Self = StObject.set(x, "517", value.asInstanceOf[js.Any])
+        inline def set517(value: ErrorCallback[TContext]): Self = StObject.set(x, "517", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set517Undefined: Self = StObject.set(x, "517", js.undefined)
+        inline def set517Undefined: Self = StObject.set(x, "517", js.undefined)
         
-        @scala.inline
-        def set518(value: ErrorCallback[TContext]): Self = StObject.set(x, "518", value.asInstanceOf[js.Any])
+        inline def set518(value: ErrorCallback[TContext]): Self = StObject.set(x, "518", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set518Undefined: Self = StObject.set(x, "518", js.undefined)
+        inline def set518Undefined: Self = StObject.set(x, "518", js.undefined)
         
-        @scala.inline
-        def set519(value: ErrorCallback[TContext]): Self = StObject.set(x, "519", value.asInstanceOf[js.Any])
+        inline def set519(value: ErrorCallback[TContext]): Self = StObject.set(x, "519", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set519Undefined: Self = StObject.set(x, "519", js.undefined)
+        inline def set519Undefined: Self = StObject.set(x, "519", js.undefined)
         
-        @scala.inline
-        def set520(value: ErrorCallback[TContext]): Self = StObject.set(x, "520", value.asInstanceOf[js.Any])
+        inline def set520(value: ErrorCallback[TContext]): Self = StObject.set(x, "520", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set520Undefined: Self = StObject.set(x, "520", js.undefined)
+        inline def set520Undefined: Self = StObject.set(x, "520", js.undefined)
         
-        @scala.inline
-        def set521(value: ErrorCallback[TContext]): Self = StObject.set(x, "521", value.asInstanceOf[js.Any])
+        inline def set521(value: ErrorCallback[TContext]): Self = StObject.set(x, "521", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set521Undefined: Self = StObject.set(x, "521", js.undefined)
+        inline def set521Undefined: Self = StObject.set(x, "521", js.undefined)
         
-        @scala.inline
-        def set522(value: ErrorCallback[TContext]): Self = StObject.set(x, "522", value.asInstanceOf[js.Any])
+        inline def set522(value: ErrorCallback[TContext]): Self = StObject.set(x, "522", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set522Undefined: Self = StObject.set(x, "522", js.undefined)
+        inline def set522Undefined: Self = StObject.set(x, "522", js.undefined)
         
-        @scala.inline
-        def set523(value: ErrorCallback[TContext]): Self = StObject.set(x, "523", value.asInstanceOf[js.Any])
+        inline def set523(value: ErrorCallback[TContext]): Self = StObject.set(x, "523", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set523Undefined: Self = StObject.set(x, "523", js.undefined)
+        inline def set523Undefined: Self = StObject.set(x, "523", js.undefined)
         
-        @scala.inline
-        def set524(value: ErrorCallback[TContext]): Self = StObject.set(x, "524", value.asInstanceOf[js.Any])
+        inline def set524(value: ErrorCallback[TContext]): Self = StObject.set(x, "524", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set524Undefined: Self = StObject.set(x, "524", js.undefined)
+        inline def set524Undefined: Self = StObject.set(x, "524", js.undefined)
         
-        @scala.inline
-        def set525(value: ErrorCallback[TContext]): Self = StObject.set(x, "525", value.asInstanceOf[js.Any])
+        inline def set525(value: ErrorCallback[TContext]): Self = StObject.set(x, "525", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set525Undefined: Self = StObject.set(x, "525", js.undefined)
+        inline def set525Undefined: Self = StObject.set(x, "525", js.undefined)
         
-        @scala.inline
-        def set526(value: ErrorCallback[TContext]): Self = StObject.set(x, "526", value.asInstanceOf[js.Any])
+        inline def set526(value: ErrorCallback[TContext]): Self = StObject.set(x, "526", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set526Undefined: Self = StObject.set(x, "526", js.undefined)
+        inline def set526Undefined: Self = StObject.set(x, "526", js.undefined)
         
-        @scala.inline
-        def set527(value: ErrorCallback[TContext]): Self = StObject.set(x, "527", value.asInstanceOf[js.Any])
+        inline def set527(value: ErrorCallback[TContext]): Self = StObject.set(x, "527", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set527Undefined: Self = StObject.set(x, "527", js.undefined)
+        inline def set527Undefined: Self = StObject.set(x, "527", js.undefined)
         
-        @scala.inline
-        def set528(value: ErrorCallback[TContext]): Self = StObject.set(x, "528", value.asInstanceOf[js.Any])
+        inline def set528(value: ErrorCallback[TContext]): Self = StObject.set(x, "528", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set528Undefined: Self = StObject.set(x, "528", js.undefined)
+        inline def set528Undefined: Self = StObject.set(x, "528", js.undefined)
         
-        @scala.inline
-        def set529(value: ErrorCallback[TContext]): Self = StObject.set(x, "529", value.asInstanceOf[js.Any])
+        inline def set529(value: ErrorCallback[TContext]): Self = StObject.set(x, "529", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set529Undefined: Self = StObject.set(x, "529", js.undefined)
+        inline def set529Undefined: Self = StObject.set(x, "529", js.undefined)
         
-        @scala.inline
-        def set530(value: ErrorCallback[TContext]): Self = StObject.set(x, "530", value.asInstanceOf[js.Any])
+        inline def set530(value: ErrorCallback[TContext]): Self = StObject.set(x, "530", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set530Undefined: Self = StObject.set(x, "530", js.undefined)
+        inline def set530Undefined: Self = StObject.set(x, "530", js.undefined)
         
-        @scala.inline
-        def set531(value: ErrorCallback[TContext]): Self = StObject.set(x, "531", value.asInstanceOf[js.Any])
+        inline def set531(value: ErrorCallback[TContext]): Self = StObject.set(x, "531", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set531Undefined: Self = StObject.set(x, "531", js.undefined)
+        inline def set531Undefined: Self = StObject.set(x, "531", js.undefined)
         
-        @scala.inline
-        def set532(value: ErrorCallback[TContext]): Self = StObject.set(x, "532", value.asInstanceOf[js.Any])
+        inline def set532(value: ErrorCallback[TContext]): Self = StObject.set(x, "532", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set532Undefined: Self = StObject.set(x, "532", js.undefined)
+        inline def set532Undefined: Self = StObject.set(x, "532", js.undefined)
         
-        @scala.inline
-        def set533(value: ErrorCallback[TContext]): Self = StObject.set(x, "533", value.asInstanceOf[js.Any])
+        inline def set533(value: ErrorCallback[TContext]): Self = StObject.set(x, "533", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set533Undefined: Self = StObject.set(x, "533", js.undefined)
+        inline def set533Undefined: Self = StObject.set(x, "533", js.undefined)
         
-        @scala.inline
-        def set534(value: ErrorCallback[TContext]): Self = StObject.set(x, "534", value.asInstanceOf[js.Any])
+        inline def set534(value: ErrorCallback[TContext]): Self = StObject.set(x, "534", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set534Undefined: Self = StObject.set(x, "534", js.undefined)
+        inline def set534Undefined: Self = StObject.set(x, "534", js.undefined)
         
-        @scala.inline
-        def set535(value: ErrorCallback[TContext]): Self = StObject.set(x, "535", value.asInstanceOf[js.Any])
+        inline def set535(value: ErrorCallback[TContext]): Self = StObject.set(x, "535", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set535Undefined: Self = StObject.set(x, "535", js.undefined)
+        inline def set535Undefined: Self = StObject.set(x, "535", js.undefined)
         
-        @scala.inline
-        def set536(value: ErrorCallback[TContext]): Self = StObject.set(x, "536", value.asInstanceOf[js.Any])
+        inline def set536(value: ErrorCallback[TContext]): Self = StObject.set(x, "536", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set536Undefined: Self = StObject.set(x, "536", js.undefined)
+        inline def set536Undefined: Self = StObject.set(x, "536", js.undefined)
         
-        @scala.inline
-        def set537(value: ErrorCallback[TContext]): Self = StObject.set(x, "537", value.asInstanceOf[js.Any])
+        inline def set537(value: ErrorCallback[TContext]): Self = StObject.set(x, "537", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set537Undefined: Self = StObject.set(x, "537", js.undefined)
+        inline def set537Undefined: Self = StObject.set(x, "537", js.undefined)
         
-        @scala.inline
-        def set538(value: ErrorCallback[TContext]): Self = StObject.set(x, "538", value.asInstanceOf[js.Any])
+        inline def set538(value: ErrorCallback[TContext]): Self = StObject.set(x, "538", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set538Undefined: Self = StObject.set(x, "538", js.undefined)
+        inline def set538Undefined: Self = StObject.set(x, "538", js.undefined)
         
-        @scala.inline
-        def set539(value: ErrorCallback[TContext]): Self = StObject.set(x, "539", value.asInstanceOf[js.Any])
+        inline def set539(value: ErrorCallback[TContext]): Self = StObject.set(x, "539", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set539Undefined: Self = StObject.set(x, "539", js.undefined)
+        inline def set539Undefined: Self = StObject.set(x, "539", js.undefined)
         
-        @scala.inline
-        def set540(value: ErrorCallback[TContext]): Self = StObject.set(x, "540", value.asInstanceOf[js.Any])
+        inline def set540(value: ErrorCallback[TContext]): Self = StObject.set(x, "540", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set540Undefined: Self = StObject.set(x, "540", js.undefined)
+        inline def set540Undefined: Self = StObject.set(x, "540", js.undefined)
         
-        @scala.inline
-        def set541(value: ErrorCallback[TContext]): Self = StObject.set(x, "541", value.asInstanceOf[js.Any])
+        inline def set541(value: ErrorCallback[TContext]): Self = StObject.set(x, "541", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set541Undefined: Self = StObject.set(x, "541", js.undefined)
+        inline def set541Undefined: Self = StObject.set(x, "541", js.undefined)
         
-        @scala.inline
-        def set542(value: ErrorCallback[TContext]): Self = StObject.set(x, "542", value.asInstanceOf[js.Any])
+        inline def set542(value: ErrorCallback[TContext]): Self = StObject.set(x, "542", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set542Undefined: Self = StObject.set(x, "542", js.undefined)
+        inline def set542Undefined: Self = StObject.set(x, "542", js.undefined)
         
-        @scala.inline
-        def set543(value: ErrorCallback[TContext]): Self = StObject.set(x, "543", value.asInstanceOf[js.Any])
+        inline def set543(value: ErrorCallback[TContext]): Self = StObject.set(x, "543", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set543Undefined: Self = StObject.set(x, "543", js.undefined)
+        inline def set543Undefined: Self = StObject.set(x, "543", js.undefined)
         
-        @scala.inline
-        def set544(value: ErrorCallback[TContext]): Self = StObject.set(x, "544", value.asInstanceOf[js.Any])
+        inline def set544(value: ErrorCallback[TContext]): Self = StObject.set(x, "544", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set544Undefined: Self = StObject.set(x, "544", js.undefined)
+        inline def set544Undefined: Self = StObject.set(x, "544", js.undefined)
         
-        @scala.inline
-        def set545(value: ErrorCallback[TContext]): Self = StObject.set(x, "545", value.asInstanceOf[js.Any])
+        inline def set545(value: ErrorCallback[TContext]): Self = StObject.set(x, "545", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set545Undefined: Self = StObject.set(x, "545", js.undefined)
+        inline def set545Undefined: Self = StObject.set(x, "545", js.undefined)
         
-        @scala.inline
-        def set546(value: ErrorCallback[TContext]): Self = StObject.set(x, "546", value.asInstanceOf[js.Any])
+        inline def set546(value: ErrorCallback[TContext]): Self = StObject.set(x, "546", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set546Undefined: Self = StObject.set(x, "546", js.undefined)
+        inline def set546Undefined: Self = StObject.set(x, "546", js.undefined)
         
-        @scala.inline
-        def set547(value: ErrorCallback[TContext]): Self = StObject.set(x, "547", value.asInstanceOf[js.Any])
+        inline def set547(value: ErrorCallback[TContext]): Self = StObject.set(x, "547", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set547Undefined: Self = StObject.set(x, "547", js.undefined)
+        inline def set547Undefined: Self = StObject.set(x, "547", js.undefined)
         
-        @scala.inline
-        def set548(value: ErrorCallback[TContext]): Self = StObject.set(x, "548", value.asInstanceOf[js.Any])
+        inline def set548(value: ErrorCallback[TContext]): Self = StObject.set(x, "548", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set548Undefined: Self = StObject.set(x, "548", js.undefined)
+        inline def set548Undefined: Self = StObject.set(x, "548", js.undefined)
         
-        @scala.inline
-        def set549(value: ErrorCallback[TContext]): Self = StObject.set(x, "549", value.asInstanceOf[js.Any])
+        inline def set549(value: ErrorCallback[TContext]): Self = StObject.set(x, "549", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set549Undefined: Self = StObject.set(x, "549", js.undefined)
+        inline def set549Undefined: Self = StObject.set(x, "549", js.undefined)
         
-        @scala.inline
-        def set550(value: ErrorCallback[TContext]): Self = StObject.set(x, "550", value.asInstanceOf[js.Any])
+        inline def set550(value: ErrorCallback[TContext]): Self = StObject.set(x, "550", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set550Undefined: Self = StObject.set(x, "550", js.undefined)
+        inline def set550Undefined: Self = StObject.set(x, "550", js.undefined)
         
-        @scala.inline
-        def set551(value: ErrorCallback[TContext]): Self = StObject.set(x, "551", value.asInstanceOf[js.Any])
+        inline def set551(value: ErrorCallback[TContext]): Self = StObject.set(x, "551", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set551Undefined: Self = StObject.set(x, "551", js.undefined)
+        inline def set551Undefined: Self = StObject.set(x, "551", js.undefined)
         
-        @scala.inline
-        def set552(value: ErrorCallback[TContext]): Self = StObject.set(x, "552", value.asInstanceOf[js.Any])
+        inline def set552(value: ErrorCallback[TContext]): Self = StObject.set(x, "552", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set552Undefined: Self = StObject.set(x, "552", js.undefined)
+        inline def set552Undefined: Self = StObject.set(x, "552", js.undefined)
         
-        @scala.inline
-        def set553(value: ErrorCallback[TContext]): Self = StObject.set(x, "553", value.asInstanceOf[js.Any])
+        inline def set553(value: ErrorCallback[TContext]): Self = StObject.set(x, "553", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set553Undefined: Self = StObject.set(x, "553", js.undefined)
+        inline def set553Undefined: Self = StObject.set(x, "553", js.undefined)
         
-        @scala.inline
-        def set554(value: ErrorCallback[TContext]): Self = StObject.set(x, "554", value.asInstanceOf[js.Any])
+        inline def set554(value: ErrorCallback[TContext]): Self = StObject.set(x, "554", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set554Undefined: Self = StObject.set(x, "554", js.undefined)
+        inline def set554Undefined: Self = StObject.set(x, "554", js.undefined)
         
-        @scala.inline
-        def set555(value: ErrorCallback[TContext]): Self = StObject.set(x, "555", value.asInstanceOf[js.Any])
+        inline def set555(value: ErrorCallback[TContext]): Self = StObject.set(x, "555", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set555Undefined: Self = StObject.set(x, "555", js.undefined)
+        inline def set555Undefined: Self = StObject.set(x, "555", js.undefined)
         
-        @scala.inline
-        def set556(value: ErrorCallback[TContext]): Self = StObject.set(x, "556", value.asInstanceOf[js.Any])
+        inline def set556(value: ErrorCallback[TContext]): Self = StObject.set(x, "556", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set556Undefined: Self = StObject.set(x, "556", js.undefined)
+        inline def set556Undefined: Self = StObject.set(x, "556", js.undefined)
         
-        @scala.inline
-        def set557(value: ErrorCallback[TContext]): Self = StObject.set(x, "557", value.asInstanceOf[js.Any])
+        inline def set557(value: ErrorCallback[TContext]): Self = StObject.set(x, "557", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set557Undefined: Self = StObject.set(x, "557", js.undefined)
+        inline def set557Undefined: Self = StObject.set(x, "557", js.undefined)
         
-        @scala.inline
-        def set558(value: ErrorCallback[TContext]): Self = StObject.set(x, "558", value.asInstanceOf[js.Any])
+        inline def set558(value: ErrorCallback[TContext]): Self = StObject.set(x, "558", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set558Undefined: Self = StObject.set(x, "558", js.undefined)
+        inline def set558Undefined: Self = StObject.set(x, "558", js.undefined)
         
-        @scala.inline
-        def set559(value: ErrorCallback[TContext]): Self = StObject.set(x, "559", value.asInstanceOf[js.Any])
+        inline def set559(value: ErrorCallback[TContext]): Self = StObject.set(x, "559", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set559Undefined: Self = StObject.set(x, "559", js.undefined)
+        inline def set559Undefined: Self = StObject.set(x, "559", js.undefined)
         
-        @scala.inline
-        def set560(value: ErrorCallback[TContext]): Self = StObject.set(x, "560", value.asInstanceOf[js.Any])
+        inline def set560(value: ErrorCallback[TContext]): Self = StObject.set(x, "560", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set560Undefined: Self = StObject.set(x, "560", js.undefined)
+        inline def set560Undefined: Self = StObject.set(x, "560", js.undefined)
         
-        @scala.inline
-        def set561(value: ErrorCallback[TContext]): Self = StObject.set(x, "561", value.asInstanceOf[js.Any])
+        inline def set561(value: ErrorCallback[TContext]): Self = StObject.set(x, "561", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set561Undefined: Self = StObject.set(x, "561", js.undefined)
+        inline def set561Undefined: Self = StObject.set(x, "561", js.undefined)
         
-        @scala.inline
-        def set562(value: ErrorCallback[TContext]): Self = StObject.set(x, "562", value.asInstanceOf[js.Any])
+        inline def set562(value: ErrorCallback[TContext]): Self = StObject.set(x, "562", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set562Undefined: Self = StObject.set(x, "562", js.undefined)
+        inline def set562Undefined: Self = StObject.set(x, "562", js.undefined)
         
-        @scala.inline
-        def set563(value: ErrorCallback[TContext]): Self = StObject.set(x, "563", value.asInstanceOf[js.Any])
+        inline def set563(value: ErrorCallback[TContext]): Self = StObject.set(x, "563", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set563Undefined: Self = StObject.set(x, "563", js.undefined)
+        inline def set563Undefined: Self = StObject.set(x, "563", js.undefined)
         
-        @scala.inline
-        def set564(value: ErrorCallback[TContext]): Self = StObject.set(x, "564", value.asInstanceOf[js.Any])
+        inline def set564(value: ErrorCallback[TContext]): Self = StObject.set(x, "564", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set564Undefined: Self = StObject.set(x, "564", js.undefined)
+        inline def set564Undefined: Self = StObject.set(x, "564", js.undefined)
         
-        @scala.inline
-        def set565(value: ErrorCallback[TContext]): Self = StObject.set(x, "565", value.asInstanceOf[js.Any])
+        inline def set565(value: ErrorCallback[TContext]): Self = StObject.set(x, "565", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set565Undefined: Self = StObject.set(x, "565", js.undefined)
+        inline def set565Undefined: Self = StObject.set(x, "565", js.undefined)
         
-        @scala.inline
-        def set566(value: ErrorCallback[TContext]): Self = StObject.set(x, "566", value.asInstanceOf[js.Any])
+        inline def set566(value: ErrorCallback[TContext]): Self = StObject.set(x, "566", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set566Undefined: Self = StObject.set(x, "566", js.undefined)
+        inline def set566Undefined: Self = StObject.set(x, "566", js.undefined)
         
-        @scala.inline
-        def set567(value: ErrorCallback[TContext]): Self = StObject.set(x, "567", value.asInstanceOf[js.Any])
+        inline def set567(value: ErrorCallback[TContext]): Self = StObject.set(x, "567", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set567Undefined: Self = StObject.set(x, "567", js.undefined)
+        inline def set567Undefined: Self = StObject.set(x, "567", js.undefined)
         
-        @scala.inline
-        def set568(value: ErrorCallback[TContext]): Self = StObject.set(x, "568", value.asInstanceOf[js.Any])
+        inline def set568(value: ErrorCallback[TContext]): Self = StObject.set(x, "568", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set568Undefined: Self = StObject.set(x, "568", js.undefined)
+        inline def set568Undefined: Self = StObject.set(x, "568", js.undefined)
         
-        @scala.inline
-        def set569(value: ErrorCallback[TContext]): Self = StObject.set(x, "569", value.asInstanceOf[js.Any])
+        inline def set569(value: ErrorCallback[TContext]): Self = StObject.set(x, "569", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set569Undefined: Self = StObject.set(x, "569", js.undefined)
+        inline def set569Undefined: Self = StObject.set(x, "569", js.undefined)
         
-        @scala.inline
-        def set570(value: ErrorCallback[TContext]): Self = StObject.set(x, "570", value.asInstanceOf[js.Any])
+        inline def set570(value: ErrorCallback[TContext]): Self = StObject.set(x, "570", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set570Undefined: Self = StObject.set(x, "570", js.undefined)
+        inline def set570Undefined: Self = StObject.set(x, "570", js.undefined)
         
-        @scala.inline
-        def set571(value: ErrorCallback[TContext]): Self = StObject.set(x, "571", value.asInstanceOf[js.Any])
+        inline def set571(value: ErrorCallback[TContext]): Self = StObject.set(x, "571", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set571Undefined: Self = StObject.set(x, "571", js.undefined)
+        inline def set571Undefined: Self = StObject.set(x, "571", js.undefined)
         
-        @scala.inline
-        def set572(value: ErrorCallback[TContext]): Self = StObject.set(x, "572", value.asInstanceOf[js.Any])
+        inline def set572(value: ErrorCallback[TContext]): Self = StObject.set(x, "572", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set572Undefined: Self = StObject.set(x, "572", js.undefined)
+        inline def set572Undefined: Self = StObject.set(x, "572", js.undefined)
         
-        @scala.inline
-        def set573(value: ErrorCallback[TContext]): Self = StObject.set(x, "573", value.asInstanceOf[js.Any])
+        inline def set573(value: ErrorCallback[TContext]): Self = StObject.set(x, "573", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set573Undefined: Self = StObject.set(x, "573", js.undefined)
+        inline def set573Undefined: Self = StObject.set(x, "573", js.undefined)
         
-        @scala.inline
-        def set574(value: ErrorCallback[TContext]): Self = StObject.set(x, "574", value.asInstanceOf[js.Any])
+        inline def set574(value: ErrorCallback[TContext]): Self = StObject.set(x, "574", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set574Undefined: Self = StObject.set(x, "574", js.undefined)
+        inline def set574Undefined: Self = StObject.set(x, "574", js.undefined)
         
-        @scala.inline
-        def set575(value: ErrorCallback[TContext]): Self = StObject.set(x, "575", value.asInstanceOf[js.Any])
+        inline def set575(value: ErrorCallback[TContext]): Self = StObject.set(x, "575", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set575Undefined: Self = StObject.set(x, "575", js.undefined)
+        inline def set575Undefined: Self = StObject.set(x, "575", js.undefined)
         
-        @scala.inline
-        def set576(value: ErrorCallback[TContext]): Self = StObject.set(x, "576", value.asInstanceOf[js.Any])
+        inline def set576(value: ErrorCallback[TContext]): Self = StObject.set(x, "576", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set576Undefined: Self = StObject.set(x, "576", js.undefined)
+        inline def set576Undefined: Self = StObject.set(x, "576", js.undefined)
         
-        @scala.inline
-        def set577(value: ErrorCallback[TContext]): Self = StObject.set(x, "577", value.asInstanceOf[js.Any])
+        inline def set577(value: ErrorCallback[TContext]): Self = StObject.set(x, "577", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set577Undefined: Self = StObject.set(x, "577", js.undefined)
+        inline def set577Undefined: Self = StObject.set(x, "577", js.undefined)
         
-        @scala.inline
-        def set578(value: ErrorCallback[TContext]): Self = StObject.set(x, "578", value.asInstanceOf[js.Any])
+        inline def set578(value: ErrorCallback[TContext]): Self = StObject.set(x, "578", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set578Undefined: Self = StObject.set(x, "578", js.undefined)
+        inline def set578Undefined: Self = StObject.set(x, "578", js.undefined)
         
-        @scala.inline
-        def set579(value: ErrorCallback[TContext]): Self = StObject.set(x, "579", value.asInstanceOf[js.Any])
+        inline def set579(value: ErrorCallback[TContext]): Self = StObject.set(x, "579", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set579Undefined: Self = StObject.set(x, "579", js.undefined)
+        inline def set579Undefined: Self = StObject.set(x, "579", js.undefined)
         
-        @scala.inline
-        def set580(value: ErrorCallback[TContext]): Self = StObject.set(x, "580", value.asInstanceOf[js.Any])
+        inline def set580(value: ErrorCallback[TContext]): Self = StObject.set(x, "580", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set580Undefined: Self = StObject.set(x, "580", js.undefined)
+        inline def set580Undefined: Self = StObject.set(x, "580", js.undefined)
         
-        @scala.inline
-        def set581(value: ErrorCallback[TContext]): Self = StObject.set(x, "581", value.asInstanceOf[js.Any])
+        inline def set581(value: ErrorCallback[TContext]): Self = StObject.set(x, "581", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set581Undefined: Self = StObject.set(x, "581", js.undefined)
+        inline def set581Undefined: Self = StObject.set(x, "581", js.undefined)
         
-        @scala.inline
-        def set582(value: ErrorCallback[TContext]): Self = StObject.set(x, "582", value.asInstanceOf[js.Any])
+        inline def set582(value: ErrorCallback[TContext]): Self = StObject.set(x, "582", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set582Undefined: Self = StObject.set(x, "582", js.undefined)
+        inline def set582Undefined: Self = StObject.set(x, "582", js.undefined)
         
-        @scala.inline
-        def set583(value: ErrorCallback[TContext]): Self = StObject.set(x, "583", value.asInstanceOf[js.Any])
+        inline def set583(value: ErrorCallback[TContext]): Self = StObject.set(x, "583", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set583Undefined: Self = StObject.set(x, "583", js.undefined)
+        inline def set583Undefined: Self = StObject.set(x, "583", js.undefined)
         
-        @scala.inline
-        def set584(value: ErrorCallback[TContext]): Self = StObject.set(x, "584", value.asInstanceOf[js.Any])
+        inline def set584(value: ErrorCallback[TContext]): Self = StObject.set(x, "584", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set584Undefined: Self = StObject.set(x, "584", js.undefined)
+        inline def set584Undefined: Self = StObject.set(x, "584", js.undefined)
         
-        @scala.inline
-        def set585(value: ErrorCallback[TContext]): Self = StObject.set(x, "585", value.asInstanceOf[js.Any])
+        inline def set585(value: ErrorCallback[TContext]): Self = StObject.set(x, "585", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set585Undefined: Self = StObject.set(x, "585", js.undefined)
+        inline def set585Undefined: Self = StObject.set(x, "585", js.undefined)
         
-        @scala.inline
-        def set586(value: ErrorCallback[TContext]): Self = StObject.set(x, "586", value.asInstanceOf[js.Any])
+        inline def set586(value: ErrorCallback[TContext]): Self = StObject.set(x, "586", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set586Undefined: Self = StObject.set(x, "586", js.undefined)
+        inline def set586Undefined: Self = StObject.set(x, "586", js.undefined)
         
-        @scala.inline
-        def set587(value: ErrorCallback[TContext]): Self = StObject.set(x, "587", value.asInstanceOf[js.Any])
+        inline def set587(value: ErrorCallback[TContext]): Self = StObject.set(x, "587", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set587Undefined: Self = StObject.set(x, "587", js.undefined)
+        inline def set587Undefined: Self = StObject.set(x, "587", js.undefined)
         
-        @scala.inline
-        def set588(value: ErrorCallback[TContext]): Self = StObject.set(x, "588", value.asInstanceOf[js.Any])
+        inline def set588(value: ErrorCallback[TContext]): Self = StObject.set(x, "588", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set588Undefined: Self = StObject.set(x, "588", js.undefined)
+        inline def set588Undefined: Self = StObject.set(x, "588", js.undefined)
         
-        @scala.inline
-        def set589(value: ErrorCallback[TContext]): Self = StObject.set(x, "589", value.asInstanceOf[js.Any])
+        inline def set589(value: ErrorCallback[TContext]): Self = StObject.set(x, "589", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set589Undefined: Self = StObject.set(x, "589", js.undefined)
+        inline def set589Undefined: Self = StObject.set(x, "589", js.undefined)
         
-        @scala.inline
-        def set590(value: ErrorCallback[TContext]): Self = StObject.set(x, "590", value.asInstanceOf[js.Any])
+        inline def set590(value: ErrorCallback[TContext]): Self = StObject.set(x, "590", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set590Undefined: Self = StObject.set(x, "590", js.undefined)
+        inline def set590Undefined: Self = StObject.set(x, "590", js.undefined)
         
-        @scala.inline
-        def set591(value: ErrorCallback[TContext]): Self = StObject.set(x, "591", value.asInstanceOf[js.Any])
+        inline def set591(value: ErrorCallback[TContext]): Self = StObject.set(x, "591", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set591Undefined: Self = StObject.set(x, "591", js.undefined)
+        inline def set591Undefined: Self = StObject.set(x, "591", js.undefined)
         
-        @scala.inline
-        def set592(value: ErrorCallback[TContext]): Self = StObject.set(x, "592", value.asInstanceOf[js.Any])
+        inline def set592(value: ErrorCallback[TContext]): Self = StObject.set(x, "592", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set592Undefined: Self = StObject.set(x, "592", js.undefined)
+        inline def set592Undefined: Self = StObject.set(x, "592", js.undefined)
         
-        @scala.inline
-        def set593(value: ErrorCallback[TContext]): Self = StObject.set(x, "593", value.asInstanceOf[js.Any])
+        inline def set593(value: ErrorCallback[TContext]): Self = StObject.set(x, "593", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set593Undefined: Self = StObject.set(x, "593", js.undefined)
+        inline def set593Undefined: Self = StObject.set(x, "593", js.undefined)
         
-        @scala.inline
-        def set594(value: ErrorCallback[TContext]): Self = StObject.set(x, "594", value.asInstanceOf[js.Any])
+        inline def set594(value: ErrorCallback[TContext]): Self = StObject.set(x, "594", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set594Undefined: Self = StObject.set(x, "594", js.undefined)
+        inline def set594Undefined: Self = StObject.set(x, "594", js.undefined)
         
-        @scala.inline
-        def set595(value: ErrorCallback[TContext]): Self = StObject.set(x, "595", value.asInstanceOf[js.Any])
+        inline def set595(value: ErrorCallback[TContext]): Self = StObject.set(x, "595", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set595Undefined: Self = StObject.set(x, "595", js.undefined)
+        inline def set595Undefined: Self = StObject.set(x, "595", js.undefined)
         
-        @scala.inline
-        def set596(value: ErrorCallback[TContext]): Self = StObject.set(x, "596", value.asInstanceOf[js.Any])
+        inline def set596(value: ErrorCallback[TContext]): Self = StObject.set(x, "596", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set596Undefined: Self = StObject.set(x, "596", js.undefined)
+        inline def set596Undefined: Self = StObject.set(x, "596", js.undefined)
         
-        @scala.inline
-        def set597(value: ErrorCallback[TContext]): Self = StObject.set(x, "597", value.asInstanceOf[js.Any])
+        inline def set597(value: ErrorCallback[TContext]): Self = StObject.set(x, "597", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set597Undefined: Self = StObject.set(x, "597", js.undefined)
+        inline def set597Undefined: Self = StObject.set(x, "597", js.undefined)
         
-        @scala.inline
-        def set598(value: ErrorCallback[TContext]): Self = StObject.set(x, "598", value.asInstanceOf[js.Any])
+        inline def set598(value: ErrorCallback[TContext]): Self = StObject.set(x, "598", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set598Undefined: Self = StObject.set(x, "598", js.undefined)
+        inline def set598Undefined: Self = StObject.set(x, "598", js.undefined)
         
-        @scala.inline
-        def set599(value: ErrorCallback[TContext]): Self = StObject.set(x, "599", value.asInstanceOf[js.Any])
+        inline def set599(value: ErrorCallback[TContext]): Self = StObject.set(x, "599", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set599Undefined: Self = StObject.set(x, "599", js.undefined)
+        inline def set599Undefined: Self = StObject.set(x, "599", js.undefined)
       }
     }
     
@@ -19074,14 +18195,11 @@ object JQuery {
     trait SuccessTextStatus extends StObject
     object SuccessTextStatus {
       
-      @scala.inline
-      def nocontent: typings.jquery.jqueryStrings.nocontent = "nocontent".asInstanceOf[typings.jquery.jqueryStrings.nocontent]
+      inline def nocontent: typings.jquery.jqueryStrings.nocontent = "nocontent".asInstanceOf[typings.jquery.jqueryStrings.nocontent]
       
-      @scala.inline
-      def notmodified: typings.jquery.jqueryStrings.notmodified = "notmodified".asInstanceOf[typings.jquery.jqueryStrings.notmodified]
+      inline def notmodified: typings.jquery.jqueryStrings.notmodified = "notmodified".asInstanceOf[typings.jquery.jqueryStrings.notmodified]
       
-      @scala.inline
-      def success: typings.jquery.jqueryStrings.success = "success".asInstanceOf[typings.jquery.jqueryStrings.success]
+      inline def success: typings.jquery.jqueryStrings.success = "success".asInstanceOf[typings.jquery.jqueryStrings.success]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -19096,26 +18214,19 @@ object JQuery {
     trait TextStatus extends StObject
     object TextStatus {
       
-      @scala.inline
-      def abort: typings.jquery.jqueryStrings.abort = "abort".asInstanceOf[typings.jquery.jqueryStrings.abort]
+      inline def abort: typings.jquery.jqueryStrings.abort = "abort".asInstanceOf[typings.jquery.jqueryStrings.abort]
       
-      @scala.inline
-      def error: typings.jquery.jqueryStrings.error = "error".asInstanceOf[typings.jquery.jqueryStrings.error]
+      inline def error: typings.jquery.jqueryStrings.error = "error".asInstanceOf[typings.jquery.jqueryStrings.error]
       
-      @scala.inline
-      def nocontent: typings.jquery.jqueryStrings.nocontent = "nocontent".asInstanceOf[typings.jquery.jqueryStrings.nocontent]
+      inline def nocontent: typings.jquery.jqueryStrings.nocontent = "nocontent".asInstanceOf[typings.jquery.jqueryStrings.nocontent]
       
-      @scala.inline
-      def notmodified: typings.jquery.jqueryStrings.notmodified = "notmodified".asInstanceOf[typings.jquery.jqueryStrings.notmodified]
+      inline def notmodified: typings.jquery.jqueryStrings.notmodified = "notmodified".asInstanceOf[typings.jquery.jqueryStrings.notmodified]
       
-      @scala.inline
-      def parsererror: typings.jquery.jqueryStrings.parsererror = "parsererror".asInstanceOf[typings.jquery.jqueryStrings.parsererror]
+      inline def parsererror: typings.jquery.jqueryStrings.parsererror = "parsererror".asInstanceOf[typings.jquery.jqueryStrings.parsererror]
       
-      @scala.inline
-      def success: typings.jquery.jqueryStrings.success = "success".asInstanceOf[typings.jquery.jqueryStrings.success]
+      inline def success: typings.jquery.jqueryStrings.success = "success".asInstanceOf[typings.jquery.jqueryStrings.success]
       
-      @scala.inline
-      def timeout: typings.jquery.jqueryStrings.timeout = "timeout".asInstanceOf[typings.jquery.jqueryStrings.timeout]
+      inline def timeout: typings.jquery.jqueryStrings.timeout = "timeout".asInstanceOf[typings.jquery.jqueryStrings.timeout]
     }
     
     // #endregion
@@ -19137,47 +18248,34 @@ object JQuery {
     }
     object XHRFields {
       
-      @scala.inline
-      def apply(): XHRFields = {
+      inline def apply(): XHRFields = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[XHRFields]
       }
       
-      @scala.inline
-      implicit class XHRFieldsMutableBuilder[Self <: XHRFields] (val x: Self) extends AnyVal {
+      extension [Self <: XHRFields](x: Self) {
         
-        @scala.inline
-        def setMsCaching(value: String): Self = StObject.set(x, "msCaching", value.asInstanceOf[js.Any])
+        inline def setMsCaching(value: String): Self = StObject.set(x, "msCaching", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMsCachingUndefined: Self = StObject.set(x, "msCaching", js.undefined)
+        inline def setMsCachingUndefined: Self = StObject.set(x, "msCaching", js.undefined)
         
-        @scala.inline
-        def setOnreadystatechange(value: js.ThisFunction1[XHRFields, /* ev */ typings.std.Event, js.Any]): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
+        inline def setOnreadystatechange(value: js.ThisFunction1[XHRFields, /* ev */ typings.std.Event, js.Any]): Self = StObject.set(x, "onreadystatechange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnreadystatechangeNull: Self = StObject.set(x, "onreadystatechange", null)
+        inline def setOnreadystatechangeNull: Self = StObject.set(x, "onreadystatechange", null)
         
-        @scala.inline
-        def setOnreadystatechangeUndefined: Self = StObject.set(x, "onreadystatechange", js.undefined)
+        inline def setOnreadystatechangeUndefined: Self = StObject.set(x, "onreadystatechange", js.undefined)
         
-        @scala.inline
-        def setResponseType(value: XMLHttpRequestResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+        inline def setResponseType(value: XMLHttpRequestResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+        inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
         
-        @scala.inline
-        def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+        inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+        inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
       }
     }
   }
@@ -19195,20 +18293,16 @@ object JQuery {
   }
   object AjaxSettings {
     
-    @scala.inline
-    def apply[TContext](): AjaxSettings[TContext] = {
+    inline def apply[TContext](): AjaxSettings[TContext] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AjaxSettings[TContext]]
     }
     
-    @scala.inline
-    implicit class AjaxSettingsMutableBuilder[Self <: AjaxSettings[?], TContext] (val x: Self & AjaxSettings[TContext]) extends AnyVal {
+    extension [Self <: AjaxSettings[?], TContext](x: Self & AjaxSettings[TContext]) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -19380,8 +18474,7 @@ object JQuery {
   }
   object BlurEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -19429,11 +18522,9 @@ object JQuery {
       __obj.asInstanceOf[BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class BlurEventMutableBuilder[Self <: BlurEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: BlurEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: blur): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: blur): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -19880,8 +18971,7 @@ object JQuery {
   }
   object ChangeEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -19930,11 +19020,9 @@ object JQuery {
       __obj.asInstanceOf[ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class ChangeEventMutableBuilder[Self <: ChangeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: ChangeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: change): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: change): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -19961,8 +19049,7 @@ object JQuery {
   }
   object ClickEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -20010,11 +19097,9 @@ object JQuery {
       __obj.asInstanceOf[ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class ClickEventMutableBuilder[Self <: ClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: ClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: click): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: click): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -20041,8 +19126,7 @@ object JQuery {
   }
   object ContextMenuEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -20090,11 +19174,9 @@ object JQuery {
       __obj.asInstanceOf[ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class ContextMenuEventMutableBuilder[Self <: ContextMenuEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: ContextMenuEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: contextmenu): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: contextmenu): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -20108,20 +19190,16 @@ object JQuery {
   }
   object Coordinates {
     
-    @scala.inline
-    def apply(left: Double, top: Double): Coordinates = {
+    inline def apply(left: Double, top: Double): Coordinates = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Coordinates]
     }
     
-    @scala.inline
-    implicit class CoordinatesMutableBuilder[Self <: Coordinates] (val x: Self) extends AnyVal {
+    extension [Self <: Coordinates](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21333,8 +20411,7 @@ object JQuery {
   }
   object DoubleClickEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -21382,11 +20459,9 @@ object JQuery {
       __obj.asInstanceOf[DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DoubleClickEventMutableBuilder[Self <: DoubleClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: DoubleClickEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: dblclick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: dblclick): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21399,8 +20474,7 @@ object JQuery {
   }
   object DragEndEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -21423,11 +20497,9 @@ object JQuery {
       __obj.asInstanceOf[DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DragEndEventMutableBuilder[Self <: DragEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: DragEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: dragend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: dragend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21440,8 +20512,7 @@ object JQuery {
   }
   object DragEnterEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -21464,11 +20535,9 @@ object JQuery {
       __obj.asInstanceOf[DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DragEnterEventMutableBuilder[Self <: DragEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: DragEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: dragenter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: dragenter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21481,8 +20550,7 @@ object JQuery {
   }
   object DragEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -21505,11 +20573,9 @@ object JQuery {
       __obj.asInstanceOf[typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DragEventMutableBuilder[Self <: typings.jquery.JQuery.DragEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: typings.jquery.JQuery.DragEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: drag): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21524,8 +20590,7 @@ object JQuery {
   }
   object DragEventBase {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -21549,14 +20614,11 @@ object JQuery {
       __obj.asInstanceOf[DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DragEventBaseMutableBuilder[Self <: DragEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: DragEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setOriginalEvent(value: typings.jquery.DragEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: typings.jquery.DragEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
   }
   
@@ -21569,8 +20631,7 @@ object JQuery {
   }
   object DragExitEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -21593,11 +20654,9 @@ object JQuery {
       __obj.asInstanceOf[DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DragExitEventMutableBuilder[Self <: DragExitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: DragExitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: dragexit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: dragexit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21610,8 +20669,7 @@ object JQuery {
   }
   object DragLeaveEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -21634,11 +20692,9 @@ object JQuery {
       __obj.asInstanceOf[DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DragLeaveEventMutableBuilder[Self <: DragLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: DragLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: dragleave): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: dragleave): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21651,8 +20707,7 @@ object JQuery {
   }
   object DragOverEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -21675,11 +20730,9 @@ object JQuery {
       __obj.asInstanceOf[DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DragOverEventMutableBuilder[Self <: DragOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: DragOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: dragover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: dragover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21692,8 +20745,7 @@ object JQuery {
   }
   object DragStartEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -21716,11 +20768,9 @@ object JQuery {
       __obj.asInstanceOf[DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DragStartEventMutableBuilder[Self <: DragStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: DragStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: dragstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: dragstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21733,8 +20783,7 @@ object JQuery {
   }
   object DropEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -21757,11 +20806,9 @@ object JQuery {
       __obj.asInstanceOf[DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class DropEventMutableBuilder[Self <: DropEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: DropEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -21909,8 +20956,7 @@ object JQuery {
   }
   object Effects {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       interval: Double,
       off: Boolean,
       step: PlainObject[AnimationHook[Node]],
@@ -21922,26 +20968,19 @@ object JQuery {
       __obj.asInstanceOf[Effects]
     }
     
-    @scala.inline
-    implicit class EffectsMutableBuilder[Self <: Effects] (val x: Self) extends AnyVal {
+    extension [Self <: Effects](x: Self) {
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOff(value: Boolean): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
+      inline def setOff(value: Boolean): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStep(value: PlainObject[AnimationHook[Node]]): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: PlainObject[AnimationHook[Node]]): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
+      inline def setTick(value: () => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimer(value: TickFunction[js.Any] => Unit): Self = StObject.set(x, "timer", js.Any.fromFunction1(value))
+      inline def setTimer(value: TickFunction[js.Any] => Unit): Self = StObject.set(x, "timer", js.Any.fromFunction1(value))
     }
   }
   
@@ -22040,17 +21079,14 @@ object JQuery {
   }
   object EffectsOptions {
     
-    @scala.inline
-    def apply[TElement](): EffectsOptions[TElement] = {
+    inline def apply[TElement](): EffectsOptions[TElement] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EffectsOptions[TElement]]
     }
     
-    @scala.inline
-    implicit class EffectsOptionsMutableBuilder[Self <: EffectsOptions[?], TElement] (val x: Self & EffectsOptions[TElement]) extends AnyVal {
+    extension [Self <: EffectsOptions[?], TElement](x: Self & EffectsOptions[TElement]) {
       
-      @scala.inline
-      def setAlways(
+      inline def setAlways(
         value: js.ThisFunction2[
               /* this */ TElement, 
               /* animation */ Animation[TElement], 
@@ -22059,17 +21095,13 @@ object JQuery {
             ]
       ): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
+      inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
       
-      @scala.inline
-      def setComplete(value: js.ThisFunction0[/* this */ TElement, Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: js.ThisFunction0[/* this */ TElement, Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setDone(
+      inline def setDone(
         value: js.ThisFunction2[
               /* this */ TElement, 
               /* animation */ Animation[TElement], 
@@ -22078,23 +21110,17 @@ object JQuery {
             ]
       ): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+      inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Duration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setFail(
+      inline def setFail(
         value: js.ThisFunction2[
               /* this */ TElement, 
               /* animation */ Animation[TElement], 
@@ -22103,11 +21129,9 @@ object JQuery {
             ]
       ): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+      inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
       
-      @scala.inline
-      def setProgress(
+      inline def setProgress(
         value: js.ThisFunction3[
               /* this */ TElement, 
               /* animation */ Animation[TElement], 
@@ -22117,32 +21141,23 @@ object JQuery {
             ]
       ): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+      inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
       
-      @scala.inline
-      def setQueue(value: Boolean | String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: Boolean | String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+      inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
       
-      @scala.inline
-      def setSpecialEasing(value: PlainObject[String]): Self = StObject.set(x, "specialEasing", value.asInstanceOf[js.Any])
+      inline def setSpecialEasing(value: PlainObject[String]): Self = StObject.set(x, "specialEasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecialEasingUndefined: Self = StObject.set(x, "specialEasing", js.undefined)
+      inline def setSpecialEasingUndefined: Self = StObject.set(x, "specialEasing", js.undefined)
       
-      @scala.inline
-      def setStart(value: js.ThisFunction1[/* this */ TElement, /* animation */ Animation[TElement], Unit]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: js.ThisFunction1[/* this */ TElement, /* animation */ Animation[TElement], Unit]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStep(value: js.ThisFunction2[/* this */ TElement, /* now */ Double, /* tween */ Tween[TElement], Unit]): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: js.ThisFunction2[/* this */ TElement, /* now */ Double, /* tween */ Tween[TElement], Unit]): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
   
@@ -22645,8 +21660,7 @@ object JQuery {
   }
   object Event {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
       isPropagationStopped: () => Boolean,
@@ -22661,212 +21675,143 @@ object JQuery {
       __obj.asInstanceOf[typings.jquery.JQuery.Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: typings.jquery.JQuery.Event] (val x: Self) extends AnyVal {
+    extension [Self <: typings.jquery.JQuery.Event](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+      inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+      inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+      inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
       
-      @scala.inline
-      def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      inline def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedTouchesUndefined: Self = StObject.set(x, "changedTouches", js.undefined)
+      inline def setChangedTouchesUndefined: Self = StObject.set(x, "changedTouches", js.undefined)
       
-      @scala.inline
-      def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      inline def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharCodeUndefined: Self = StObject.set(x, "charCode", js.undefined)
+      inline def setCharCodeUndefined: Self = StObject.set(x, "charCode", js.undefined)
       
-      @scala.inline
-      def setCharUndefined: Self = StObject.set(x, "char", js.undefined)
+      inline def setCharUndefined: Self = StObject.set(x, "char", js.undefined)
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientXUndefined: Self = StObject.set(x, "clientX", js.undefined)
+      inline def setClientXUndefined: Self = StObject.set(x, "clientX", js.undefined)
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientYUndefined: Self = StObject.set(x, "clientY", js.undefined)
+      inline def setClientYUndefined: Self = StObject.set(x, "clientY", js.undefined)
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+      inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
       
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPhaseUndefined: Self = StObject.set(x, "eventPhase", js.undefined)
+      inline def setEventPhaseUndefined: Self = StObject.set(x, "eventPhase", js.undefined)
       
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
+      inline def setKeyCodeUndefined: Self = StObject.set(x, "keyCode", js.undefined)
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
+      inline def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
       
-      @scala.inline
-      def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+      inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
       
-      @scala.inline
-      def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+      inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
+      inline def setPageXUndefined: Self = StObject.set(x, "pageX", js.undefined)
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
+      inline def setPageYUndefined: Self = StObject.set(x, "pageY", js.undefined)
       
-      @scala.inline
-      def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerIdUndefined: Self = StObject.set(x, "pointerId", js.undefined)
+      inline def setPointerIdUndefined: Self = StObject.set(x, "pointerId", js.undefined)
       
-      @scala.inline
-      def setPointerType(value: String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      inline def setPointerType(value: String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerTypeUndefined: Self = StObject.set(x, "pointerType", js.undefined)
+      inline def setPointerTypeUndefined: Self = StObject.set(x, "pointerType", js.undefined)
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenXUndefined: Self = StObject.set(x, "screenX", js.undefined)
+      inline def setScreenXUndefined: Self = StObject.set(x, "screenX", js.undefined)
       
-      @scala.inline
-      def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenYUndefined: Self = StObject.set(x, "screenY", js.undefined)
+      inline def setScreenYUndefined: Self = StObject.set(x, "screenY", js.undefined)
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+      inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
       
-      @scala.inline
-      def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+      inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      inline def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTouchesUndefined: Self = StObject.set(x, "targetTouches", js.undefined)
+      inline def setTargetTouchesUndefined: Self = StObject.set(x, "targetTouches", js.undefined)
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToElement(value: Element): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      inline def setToElement(value: Element): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToElementUndefined: Self = StObject.set(x, "toElement", js.undefined)
+      inline def setToElementUndefined: Self = StObject.set(x, "toElement", js.undefined)
       
-      @scala.inline
-      def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
+      inline def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: Window): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: Window): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       
-      @scala.inline
-      def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
+      inline def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
     }
   }
   
@@ -23151,8 +22096,7 @@ object JQuery {
   }
   object EventBase {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -23202,101 +22146,69 @@ object JQuery {
       __obj.asInstanceOf[EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class EventBaseMutableBuilder[Self <: EventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: EventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (EventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setAltKey(value: Unit): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Unit): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      inline def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      inline def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      inline def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Unit): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Unit): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: Unit): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Unit): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Unit): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Unit): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      inline def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      inline def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: Unit): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: Unit): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Unit): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Unit): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      inline def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      inline def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: Unit): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: Unit): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: Unit): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Unit): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23314,17 +22226,14 @@ object JQuery {
   }
   object EventExtensions {
     
-    @scala.inline
-    def apply(special: SpecialEventHooks): EventExtensions = {
+    inline def apply(special: SpecialEventHooks): EventExtensions = {
       val __obj = js.Dynamic.literal(special = special.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventExtensions]
     }
     
-    @scala.inline
-    implicit class EventExtensionsMutableBuilder[Self <: EventExtensions] (val x: Self) extends AnyVal {
+    extension [Self <: EventExtensions](x: Self) {
       
-      @scala.inline
-      def setSpecial(value: SpecialEventHooks): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
+      inline def setSpecial(value: SpecialEventHooks): Self = StObject.set(x, "special", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23432,8 +22341,7 @@ object JQuery {
   }
   object FocusEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -23481,11 +22389,9 @@ object JQuery {
       __obj.asInstanceOf[typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class FocusEventMutableBuilder[Self <: typings.jquery.JQuery.FocusEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: typings.jquery.JQuery.FocusEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: focus): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: focus): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23757,8 +22663,7 @@ object JQuery {
   }
   object FocusEventBase {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -23807,98 +22712,67 @@ object JQuery {
       __obj.asInstanceOf[FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class FocusEventBaseMutableBuilder[Self <: FocusEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: FocusEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (FocusEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setAltKey(value: Unit): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Unit): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      inline def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      inline def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      inline def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Unit): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Unit): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Unit): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Unit): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: typings.jquery.FocusEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: typings.jquery.FocusEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      inline def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      inline def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
+      inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
       
-      @scala.inline
-      def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
+      inline def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
       
-      @scala.inline
-      def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Unit): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Unit): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      inline def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      inline def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: Unit): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Unit): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23911,8 +22785,7 @@ object JQuery {
   }
   object FocusInEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -23960,11 +22833,9 @@ object JQuery {
       __obj.asInstanceOf[FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class FocusInEventMutableBuilder[Self <: FocusInEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: FocusInEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: focusin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: focusin): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -23977,8 +22848,7 @@ object JQuery {
   }
   object FocusOutEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -24026,11 +22896,9 @@ object JQuery {
       __obj.asInstanceOf[FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class FocusOutEventMutableBuilder[Self <: FocusOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: FocusOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: focusout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: focusout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24072,8 +22940,7 @@ object JQuery {
   }
   object HandleObject {
     
-    @scala.inline
-    def apply[TTarget, TData](
+    inline def apply[TTarget, TData](
       data: TData,
       handler: (TriggeredEvent[TTarget, TData, js.Any, js.Any], /* repeated */ js.Any) => js.Any,
       namespace: String,
@@ -24085,32 +22952,23 @@ object JQuery {
       __obj.asInstanceOf[HandleObject[TTarget, TData]]
     }
     
-    @scala.inline
-    implicit class HandleObjectMutableBuilder[Self <: HandleObject[?, ?], TTarget, TData] (val x: Self & (HandleObject[TTarget, TData])) extends AnyVal {
+    extension [Self <: HandleObject[?, ?], TTarget, TData](x: Self & (HandleObject[TTarget, TData])) {
       
-      @scala.inline
-      def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandler(value: (TriggeredEvent[TTarget, TData, js.Any, js.Any], /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+      inline def setHandler(value: (TriggeredEvent[TTarget, TData, js.Any, js.Any], /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigType(value: String): Self = StObject.set(x, "origType", value.asInstanceOf[js.Any])
+      inline def setOrigType(value: String): Self = StObject.set(x, "origType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorNull: Self = StObject.set(x, "selector", null)
+      inline def setSelectorNull: Self = StObject.set(x, "selector", null)
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24123,8 +22981,7 @@ object JQuery {
   }
   object KeyDownEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Unit,
@@ -24173,11 +23030,9 @@ object JQuery {
       __obj.asInstanceOf[KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class KeyDownEventMutableBuilder[Self <: KeyDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: KeyDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: keydown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: keydown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24190,8 +23045,7 @@ object JQuery {
   }
   object KeyPressEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Unit,
@@ -24240,11 +23094,9 @@ object JQuery {
       __obj.asInstanceOf[KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class KeyPressEventMutableBuilder[Self <: KeyPressEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: KeyPressEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: keypress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: keypress): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24257,8 +23109,7 @@ object JQuery {
   }
   object KeyUpEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Unit,
@@ -24307,11 +23158,9 @@ object JQuery {
       __obj.asInstanceOf[KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class KeyUpEventMutableBuilder[Self <: KeyUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: KeyUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: keyup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: keyup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24581,8 +23430,7 @@ object JQuery {
   }
   object KeyboardEventBase {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Unit,
@@ -24632,92 +23480,63 @@ object JQuery {
       __obj.asInstanceOf[KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class KeyboardEventBaseMutableBuilder[Self <: KeyboardEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: KeyboardEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      inline def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      inline def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: KeyboardEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: KeyboardEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      inline def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      inline def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: Unit): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: Unit): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      inline def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      inline def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24744,8 +23563,7 @@ object JQuery {
   }
   object MouseDownEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -24793,11 +23611,9 @@ object JQuery {
       __obj.asInstanceOf[MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class MouseDownEventMutableBuilder[Self <: MouseDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: MouseDownEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: mousedown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mousedown): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -24811,8 +23627,7 @@ object JQuery {
   }
   object MouseEnterEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -24860,11 +23675,9 @@ object JQuery {
       __obj.asInstanceOf[MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class MouseEnterEventMutableBuilder[Self <: MouseEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: MouseEnterEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -25135,8 +23948,7 @@ object JQuery {
   }
   object MouseEventBase {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -25185,98 +23997,67 @@ object JQuery {
       __obj.asInstanceOf[MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class MouseEventBaseMutableBuilder[Self <: MouseEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: MouseEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      inline def setChangedTouches(value: Unit): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      inline def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      inline def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      inline def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      inline def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
+      inline def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
       
-      @scala.inline
-      def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
+      inline def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
       
-      @scala.inline
-      def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      inline def setTargetTouches(value: Unit): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToElement(value: Element): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      inline def setToElement(value: Element): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: Unit): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
@@ -25290,8 +24071,7 @@ object JQuery {
   }
   object MouseLeaveEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -25339,11 +24119,9 @@ object JQuery {
       __obj.asInstanceOf[MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class MouseLeaveEventMutableBuilder[Self <: MouseLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: MouseLeaveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -25370,8 +24148,7 @@ object JQuery {
   }
   object MouseMoveEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -25419,11 +24196,9 @@ object JQuery {
       __obj.asInstanceOf[MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class MouseMoveEventMutableBuilder[Self <: MouseMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: MouseMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: mousemove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mousemove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -25436,8 +24211,7 @@ object JQuery {
   }
   object MouseOutEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -25485,11 +24259,9 @@ object JQuery {
       __obj.asInstanceOf[MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class MouseOutEventMutableBuilder[Self <: MouseOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: MouseOutEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mouseout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -25502,8 +24274,7 @@ object JQuery {
   }
   object MouseOverEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -25551,11 +24322,9 @@ object JQuery {
       __obj.asInstanceOf[MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class MouseOverEventMutableBuilder[Self <: MouseOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: MouseOverEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mouseover): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -25582,8 +24351,7 @@ object JQuery {
   }
   object MouseUpEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Double,
@@ -25631,11 +24399,9 @@ object JQuery {
       __obj.asInstanceOf[MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class MouseUpEventMutableBuilder[Self <: MouseUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: MouseUpEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: mouseup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: mouseup): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -25650,20 +24416,16 @@ object JQuery {
   }
   object NameValuePair {
     
-    @scala.inline
-    def apply(name: String, value: String): NameValuePair = {
+    inline def apply(name: String, value: String): NameValuePair = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameValuePair]
     }
     
-    @scala.inline
-    implicit class NameValuePairMutableBuilder[Self <: NameValuePair] (val x: Self) extends AnyVal {
+    extension [Self <: NameValuePair](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -26922,8 +25684,7 @@ object JQuery {
   }
   object ResizeEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -26972,11 +25733,9 @@ object JQuery {
       __obj.asInstanceOf[ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class ResizeEventMutableBuilder[Self <: ResizeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: ResizeEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: resize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: resize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -26989,8 +25748,7 @@ object JQuery {
   }
   object ScrollEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -27039,11 +25797,9 @@ object JQuery {
       __obj.asInstanceOf[ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class ScrollEventMutableBuilder[Self <: ScrollEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: ScrollEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: scroll): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: scroll): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27056,8 +25812,7 @@ object JQuery {
   }
   object SelectEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -27106,11 +25861,9 @@ object JQuery {
       __obj.asInstanceOf[SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class SelectEventMutableBuilder[Self <: SelectEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: SelectEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: select): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: select): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27135,8 +25888,7 @@ object JQuery {
   }
   object Selectors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Colon: PseudoFunctions,
       attrHandle: AttrHandleFunctions,
       cacheLength: Double,
@@ -27154,11 +25906,9 @@ object JQuery {
       __obj.asInstanceOf[Selectors]
     }
     
-    @scala.inline
-    implicit class SelectorsMutableBuilder[Self <: Selectors] (val x: Self) extends AnyVal {
+    extension [Self <: Selectors](x: Self) {
       
-      @scala.inline
-      def setColon(value: PseudoFunctions): Self = StObject.set(x, ":", value.asInstanceOf[js.Any])
+      inline def setColon(value: PseudoFunctions): Self = StObject.set(x, ":", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27211,8 +25961,7 @@ object JQuery {
   }
   object SubmitEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Unit,
       bubbles: Boolean,
       button: Unit,
@@ -27261,11 +26010,9 @@ object JQuery {
       __obj.asInstanceOf[SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class SubmitEventMutableBuilder[Self <: SubmitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: SubmitEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: submit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: submit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27298,8 +26045,7 @@ object JQuery {
   }
   object TouchCancelEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Unit,
@@ -27348,11 +26094,9 @@ object JQuery {
       __obj.asInstanceOf[TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class TouchCancelEventMutableBuilder[Self <: TouchCancelEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: TouchCancelEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: touchcancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: touchcancel): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27365,8 +26109,7 @@ object JQuery {
   }
   object TouchEndEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Unit,
@@ -27415,11 +26158,9 @@ object JQuery {
       __obj.asInstanceOf[TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class TouchEndEventMutableBuilder[Self <: TouchEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: TouchEndEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: touchend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: touchend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27691,8 +26432,7 @@ object JQuery {
   }
   object TouchEventBase {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Unit,
@@ -27742,92 +26482,63 @@ object JQuery {
       __obj.asInstanceOf[TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class TouchEventBaseMutableBuilder[Self <: TouchEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: TouchEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: Unit): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Unit): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+      inline def setChangedTouches(value: TouchList): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+      inline def setChar(value: Unit): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
+      inline def setCharCode(value: Unit): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+      inline def setClientX(value: Unit): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+      inline def setClientY(value: Unit): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Unit): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
+      inline def setKeyCode(value: Unit): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+      inline def setOffsetX(value: Unit): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+      inline def setOffsetY(value: Unit): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: TouchEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: TouchEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Unit): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Unit): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+      inline def setPointerId(value: Unit): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+      inline def setPointerType(value: Unit): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedTarget(value: Unit): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+      inline def setRelatedTarget(value: Unit): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
+      inline def setScreenX(value: Unit): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
+      inline def setScreenY(value: Unit): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+      inline def setTargetTouches(value: TouchList): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
+      inline def setToElement(value: Unit): Self = StObject.set(x, "toElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: TouchList): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: Unit): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Unit): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27840,8 +26551,7 @@ object JQuery {
   }
   object TouchMoveEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Unit,
@@ -27890,11 +26600,9 @@ object JQuery {
       __obj.asInstanceOf[TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class TouchMoveEventMutableBuilder[Self <: TouchMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: TouchMoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: touchmove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: touchmove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27907,8 +26615,7 @@ object JQuery {
   }
   object TouchStartEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       altKey: Boolean,
       bubbles: Boolean,
       button: Unit,
@@ -27957,11 +26664,9 @@ object JQuery {
       __obj.asInstanceOf[TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class TouchStartEventMutableBuilder[Self <: TouchStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: TouchStartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setType(value: touchstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: touchstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -27973,8 +26678,7 @@ object JQuery {
   }
   object Transport {
     
-    @scala.inline
-    def apply(abort: () => Unit, send: (PlainObject[js.Any], SuccessCallback) => Unit): Transport = {
+    inline def apply(abort: () => Unit, send: (PlainObject[js.Any], SuccessCallback) => Unit): Transport = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), send = js.Any.fromFunction2(send))
       __obj.asInstanceOf[Transport]
     }
@@ -27987,14 +26691,11 @@ object JQuery {
         Unit
       ]
     
-    @scala.inline
-    implicit class TransportMutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
+    extension [Self <: Transport](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSend(value: (PlainObject[js.Any], SuccessCallback) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+      inline def setSend(value: (PlainObject[js.Any], SuccessCallback) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     }
   }
   
@@ -28226,8 +26927,7 @@ object JQuery {
   }
   object TriggeredEvent {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       currentTarget: TCurrentTarget,
       data: TData,
       delegateTarget: TDelegateTarget,
@@ -28246,38 +26946,27 @@ object JQuery {
       __obj.asInstanceOf[TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class TriggeredEventMutableBuilder[Self <: TriggeredEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: TriggeredEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TriggeredEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setCurrentTarget(value: TCurrentTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: TCurrentTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateTarget(value: TDelegateTarget): Self = StObject.set(x, "delegateTarget", value.asInstanceOf[js.Any])
+      inline def setDelegateTarget(value: TDelegateTarget): Self = StObject.set(x, "delegateTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setOriginalEvent(value: typings.jquery.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: typings.jquery.Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setTarget(value: TTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: TTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -28364,8 +27053,7 @@ object JQuery {
   }
   object Tween {
     
-    @scala.inline
-    def apply[TElement](
+    inline def apply[TElement](
       cur: () => js.Any,
       easing: String,
       elem: TElement,
@@ -28381,44 +27069,31 @@ object JQuery {
       __obj.asInstanceOf[Tween[TElement]]
     }
     
-    @scala.inline
-    implicit class TweenMutableBuilder[Self <: Tween[?], TElement] (val x: Self & Tween[TElement]) extends AnyVal {
+    extension [Self <: Tween[?], TElement](x: Self & Tween[TElement]) {
       
-      @scala.inline
-      def setCur(value: () => js.Any): Self = StObject.set(x, "cur", js.Any.fromFunction0(value))
+      inline def setCur(value: () => js.Any): Self = StObject.set(x, "cur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElem(value: TElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
+      inline def setElem(value: TElement): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: EffectsOptions[TElement]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: EffectsOptions[TElement]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
+      inline def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
       
-      @scala.inline
-      def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: Double => Tween[TElement]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
+      inline def setRun(value: Double => Tween[TElement]): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -28500,8 +27175,7 @@ object JQuery {
         ]
   object TypeEventHandlers {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](): TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](): TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
@@ -28592,8 +27266,7 @@ object JQuery {
   }
   object TypeToTriggeredEventMap {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       blur: BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget],
       change: ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget],
       click: ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget],
@@ -28633,110 +27306,75 @@ object JQuery {
       __obj.asInstanceOf[TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class TypeToTriggeredEventMapMutableBuilder[Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setBlur(value: BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
+      inline def setBlur(value: BlurEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChange(value: ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+      inline def setChange(value: ChangeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClick(value: ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+      inline def setClick(value: ClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextmenu(value: ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
+      inline def setContextmenu(value: ContextMenuEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDblclick(value: DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
+      inline def setDblclick(value: DoubleClickEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrag(value: typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+      inline def setDrag(value: typings.jquery.JQuery.DragEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragend(value: DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
+      inline def setDragend(value: DragEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragenter(value: DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragenter", value.asInstanceOf[js.Any])
+      inline def setDragenter(value: DragEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragexit(value: DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
+      inline def setDragexit(value: DragExitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragleave(value: DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragleave", value.asInstanceOf[js.Any])
+      inline def setDragleave(value: DragLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragover(value: DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragover", value.asInstanceOf[js.Any])
+      inline def setDragover(value: DragOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragstart(value: DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
+      inline def setDragstart(value: DragStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrop(value: DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+      inline def setDrop(value: DropEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocus(value: typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: typings.jquery.JQuery.FocusEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusin(value: FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "focusin", value.asInstanceOf[js.Any])
+      inline def setFocusin(value: FocusInEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "focusin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusout(value: FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "focusout", value.asInstanceOf[js.Any])
+      inline def setFocusout(value: FocusOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "focusout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeydown(value: KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
+      inline def setKeydown(value: KeyDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeypress(value: KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
+      inline def setKeypress(value: KeyPressEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyup(value: KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
+      inline def setKeyup(value: KeyUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousedown(value: MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
+      inline def setMousedown(value: MouseDownEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseenter(value: MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
+      inline def setMouseenter(value: MouseEnterEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseleave(value: MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
+      inline def setMouseleave(value: MouseLeaveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousemove(value: MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
+      inline def setMousemove(value: MouseMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseout(value: MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
+      inline def setMouseout(value: MouseOutEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseover(value: MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
+      inline def setMouseover(value: MouseOverEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseup(value: MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
+      inline def setMouseup(value: MouseUpEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResize(value: ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: ResizeEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScroll(value: ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: ScrollEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelect(value: SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: SelectEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmit(value: SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
+      inline def setSubmit(value: SubmitEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchcancel(value: TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
+      inline def setTouchcancel(value: TouchCancelEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchend(value: TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
+      inline def setTouchend(value: TouchEndEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchmove(value: TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
+      inline def setTouchmove(value: TouchMoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchstart(value: TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
+      inline def setTouchstart(value: TouchStartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -28769,8 +27407,7 @@ object JQuery {
   }
   object UIEventBase {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](
       bubbles: Boolean,
       cancelable: Boolean,
       currentTarget: TCurrentTarget,
@@ -28794,29 +27431,21 @@ object JQuery {
       __obj.asInstanceOf[UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class UIEventBaseMutableBuilder[Self <: UIEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: UIEventBase[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+      inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: UIEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: UIEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
       
-      @scala.inline
-      def setView(value: Window): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: Window): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
   
@@ -28831,17 +27460,14 @@ object JQuery {
   }
   object UrlAjaxSettings {
     
-    @scala.inline
-    def apply[TContext](url: String): UrlAjaxSettings[TContext] = {
+    inline def apply[TContext](url: String): UrlAjaxSettings[TContext] = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlAjaxSettings[TContext]]
     }
     
-    @scala.inline
-    implicit class UrlAjaxSettingsMutableBuilder[Self <: UrlAjaxSettings[?], TContext] (val x: Self & UrlAjaxSettings[TContext]) extends AnyVal {
+    extension [Self <: UrlAjaxSettings[?], TContext](x: Self & UrlAjaxSettings[TContext]) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -28867,34 +27493,28 @@ object JQuery {
   }
   object _CSSHook {
     
-    @scala.inline
-    def apply[TElement](get: (TElement, js.Any, js.Any) => js.Any, set: (TElement, js.Any) => Unit): _CSSHook[TElement] = {
+    inline def apply[TElement](get: (TElement, js.Any, js.Any) => js.Any, set: (TElement, js.Any) => Unit): _CSSHook[TElement] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction3(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[_CSSHook[TElement]]
     }
     
-    @scala.inline
-    implicit class _CSSHookMutableBuilder[Self <: _CSSHook[?], TElement] (val x: Self & _CSSHook[TElement]) extends AnyVal {
+    extension [Self <: _CSSHook[?], TElement](x: Self & _CSSHook[TElement]) {
       
-      @scala.inline
-      def setGet(value: (TElement, js.Any, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+      inline def setGet(value: (TElement, js.Any, js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSet(value: (TElement, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (TElement, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
   trait _CoordinatesPartial extends StObject
   object _CoordinatesPartial {
     
-    @scala.inline
-    def PickCoordinatesleft(left: Double): typings.jquery.anon.PickCoordinatesleft = {
+    inline def PickCoordinatesleft(left: Double): typings.jquery.anon.PickCoordinatesleft = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jquery.anon.PickCoordinatesleft]
     }
     
-    @scala.inline
-    def PickCoordinatestop(top: Double): typings.jquery.anon.PickCoordinatestop = {
+    inline def PickCoordinatestop(top: Double): typings.jquery.anon.PickCoordinatestop = {
       val __obj = js.Dynamic.literal(top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jquery.anon.PickCoordinatestop]
     }
@@ -28907,14 +27527,12 @@ object JQuery {
   trait _PropHook[TElement] extends StObject
   object _PropHook {
     
-    @scala.inline
-    def Get[TElement](get: Tween[TElement] => js.Any): typings.jquery.anon.Get[TElement] = {
+    inline def Get[TElement](get: Tween[TElement] => js.Any): typings.jquery.anon.Get[TElement] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[typings.jquery.anon.Get[TElement]]
     }
     
-    @scala.inline
-    def Set[TElement](set: Tween[TElement] => Unit): typings.jquery.anon.Set[TElement] = {
+    inline def Set[TElement](set: Tween[TElement] => Unit): typings.jquery.anon.Set[TElement] = {
       val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set))
       __obj.asInstanceOf[typings.jquery.anon.Set[TElement]]
     }
@@ -28923,76 +27541,64 @@ object JQuery {
   trait _SpecialEventHook[TTarget, TData] extends StObject
   object _SpecialEventHook {
     
-    @scala.inline
-    def Add[TTarget, TData](add: HandleObject[TTarget, TData] => Unit): typings.jquery.anon.Add[TTarget, TData] = {
+    inline def Add[TTarget, TData](add: HandleObject[TTarget, TData] => Unit): typings.jquery.anon.Add[TTarget, TData] = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add))
       __obj.asInstanceOf[typings.jquery.anon.Add[TTarget, TData]]
     }
     
-    @scala.inline
-    def BindType(bindType: String): typings.jquery.anon.BindType = {
+    inline def BindType(bindType: String): typings.jquery.anon.BindType = {
       val __obj = js.Dynamic.literal(bindType = bindType.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jquery.anon.BindType]
     }
     
-    @scala.inline
-    def Default[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, js.Any, js.Any], TData) => Unit | `false`): typings.jquery.anon.Default[TTarget, TData] = {
+    inline def Default[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, js.Any, js.Any], TData) => Unit | `false`): typings.jquery.anon.Default[TTarget, TData] = {
       val __obj = js.Dynamic.literal(_default = js.Any.fromFunction2(_default))
       __obj.asInstanceOf[typings.jquery.anon.Default[TTarget, TData]]
     }
     
-    @scala.inline
-    def DelegateType(delegateType: String): typings.jquery.anon.DelegateType = {
+    inline def DelegateType(delegateType: String): typings.jquery.anon.DelegateType = {
       val __obj = js.Dynamic.literal(delegateType = delegateType.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jquery.anon.DelegateType]
     }
     
-    @scala.inline
-    def Handle[TTarget, TData](
+    inline def Handle[TTarget, TData](
       handle: ((TriggeredEvent[TTarget, TData, js.Any, js.Any]) & (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit
     ): typings.jquery.anon.Handle[TTarget, TData] = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction2(handle))
       __obj.asInstanceOf[typings.jquery.anon.Handle[TTarget, TData]]
     }
     
-    @scala.inline
-    def NoBubble(noBubble: Boolean): typings.jquery.anon.NoBubble = {
+    inline def NoBubble(noBubble: Boolean): typings.jquery.anon.NoBubble = {
       val __obj = js.Dynamic.literal(noBubble = noBubble.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jquery.anon.NoBubble]
     }
     
-    @scala.inline
-    def PostDispatch[TTarget](postDispatch: typings.jquery.JQuery.Event => Unit): typings.jquery.anon.PostDispatch[TTarget] = {
+    inline def PostDispatch[TTarget](postDispatch: typings.jquery.JQuery.Event => Unit): typings.jquery.anon.PostDispatch[TTarget] = {
       val __obj = js.Dynamic.literal(postDispatch = js.Any.fromFunction1(postDispatch))
       __obj.asInstanceOf[typings.jquery.anon.PostDispatch[TTarget]]
     }
     
-    @scala.inline
-    def PreDispatch[TTarget](preDispatch: typings.jquery.JQuery.Event => `false` | Unit): typings.jquery.anon.PreDispatch[TTarget] = {
+    inline def PreDispatch[TTarget](preDispatch: typings.jquery.JQuery.Event => `false` | Unit): typings.jquery.anon.PreDispatch[TTarget] = {
       val __obj = js.Dynamic.literal(preDispatch = js.Any.fromFunction1(preDispatch))
       __obj.asInstanceOf[typings.jquery.anon.PreDispatch[TTarget]]
     }
     
-    @scala.inline
-    def Remove[TTarget, TData](remove: HandleObject[TTarget, TData] => Unit): typings.jquery.anon.Remove[TTarget, TData] = {
+    inline def Remove[TTarget, TData](remove: HandleObject[TTarget, TData] => Unit): typings.jquery.anon.Remove[TTarget, TData] = {
       val __obj = js.Dynamic.literal(remove = js.Any.fromFunction1(remove))
       __obj.asInstanceOf[typings.jquery.anon.Remove[TTarget, TData]]
     }
     
-    @scala.inline
-    def Setup[TTarget, TData](setup: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): typings.jquery.anon.Setup[TTarget, TData] = {
+    inline def Setup[TTarget, TData](setup: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): typings.jquery.anon.Setup[TTarget, TData] = {
       val __obj = js.Dynamic.literal(setup = js.Any.fromFunction3(setup))
       __obj.asInstanceOf[typings.jquery.anon.Setup[TTarget, TData]]
     }
     
-    @scala.inline
-    def Teardown[TTarget](teardown: () => Unit | `false`): typings.jquery.anon.Teardown[TTarget] = {
+    inline def Teardown[TTarget](teardown: () => Unit | `false`): typings.jquery.anon.Teardown[TTarget] = {
       val __obj = js.Dynamic.literal(teardown = js.Any.fromFunction0(teardown))
       __obj.asInstanceOf[typings.jquery.anon.Teardown[TTarget]]
     }
     
-    @scala.inline
-    def Trigger[TTarget, TData](trigger: (typings.jquery.JQuery.Event, TData) => Unit | `false`): typings.jquery.anon.Trigger[TTarget, TData] = {
+    inline def Trigger[TTarget, TData](trigger: (typings.jquery.JQuery.Event, TData) => Unit | `false`): typings.jquery.anon.Trigger[TTarget, TData] = {
       val __obj = js.Dynamic.literal(trigger = js.Any.fromFunction2(trigger))
       __obj.asInstanceOf[typings.jquery.anon.Trigger[TTarget, TData]]
     }
@@ -29001,20 +27607,17 @@ object JQuery {
   trait _SpeedSettings[TElement] extends StObject
   object _SpeedSettings {
     
-    @scala.inline
-    def Complete[TElement](complete: () => Unit): typings.jquery.anon.Complete[TElement] = {
+    inline def Complete[TElement](complete: () => Unit): typings.jquery.anon.Complete[TElement] = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
       __obj.asInstanceOf[typings.jquery.anon.Complete[TElement]]
     }
     
-    @scala.inline
-    def Duration(duration: typings.jquery.JQuery.Duration): typings.jquery.anon.Duration = {
+    inline def Duration(duration: typings.jquery.JQuery.Duration): typings.jquery.anon.Duration = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jquery.anon.Duration]
     }
     
-    @scala.inline
-    def Easing(easing: String): typings.jquery.anon.Easing = {
+    inline def Easing(easing: String): typings.jquery.anon.Easing = {
       val __obj = js.Dynamic.literal(easing = easing.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.jquery.anon.Easing]
     }
@@ -29173,300 +27776,228 @@ object JQuery {
   }
   object _TypeEventHandlers {
     
-    @scala.inline
-    def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](): _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
+    inline def apply[TDelegateTarget, TData, TCurrentTarget, TTarget](): _TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[_TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    @scala.inline
-    implicit class _TypeEventHandlersMutableBuilder[Self <: _TypeEventHandlers[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (_TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
+    extension [Self <: _TypeEventHandlers[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (_TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
       
-      @scala.inline
-      def setBlur(
+      inline def setBlur(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, blur]) | `false` | js.Object
       ): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
+      inline def setBlurUndefined: Self = StObject.set(x, "blur", js.undefined)
       
-      @scala.inline
-      def setChange(
+      inline def setChange(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, change]) | `false` | js.Object
       ): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+      inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
       
-      @scala.inline
-      def setClick(
+      inline def setClick(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, click]) | `false` | js.Object
       ): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+      inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
-      @scala.inline
-      def setContextmenu(
+      inline def setContextmenu(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, contextmenu]) | `false` | js.Object
       ): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
+      inline def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
       
-      @scala.inline
-      def setDblclick(
+      inline def setDblclick(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dblclick]) | `false` | js.Object
       ): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
+      inline def setDblclickUndefined: Self = StObject.set(x, "dblclick", js.undefined)
       
-      @scala.inline
-      def setDrag(
+      inline def setDrag(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, drag]) | `false` | js.Object
       ): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+      inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
       
-      @scala.inline
-      def setDragend(
+      inline def setDragend(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragend]) | `false` | js.Object
       ): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
+      inline def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
       
-      @scala.inline
-      def setDragenter(
+      inline def setDragenter(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragenter]) | `false` | js.Object
       ): Self = StObject.set(x, "dragenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
+      inline def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
       
-      @scala.inline
-      def setDragexit(
+      inline def setDragexit(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragexit]) | `false` | js.Object
       ): Self = StObject.set(x, "dragexit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragexitUndefined: Self = StObject.set(x, "dragexit", js.undefined)
+      inline def setDragexitUndefined: Self = StObject.set(x, "dragexit", js.undefined)
       
-      @scala.inline
-      def setDragleave(
+      inline def setDragleave(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragleave]) | `false` | js.Object
       ): Self = StObject.set(x, "dragleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragleaveUndefined: Self = StObject.set(x, "dragleave", js.undefined)
+      inline def setDragleaveUndefined: Self = StObject.set(x, "dragleave", js.undefined)
       
-      @scala.inline
-      def setDragover(
+      inline def setDragover(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragover]) | `false` | js.Object
       ): Self = StObject.set(x, "dragover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragoverUndefined: Self = StObject.set(x, "dragover", js.undefined)
+      inline def setDragoverUndefined: Self = StObject.set(x, "dragover", js.undefined)
       
-      @scala.inline
-      def setDragstart(
+      inline def setDragstart(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, dragstart]) | `false` | js.Object
       ): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
+      inline def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
       
-      @scala.inline
-      def setDrop(
+      inline def setDrop(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, drop]) | `false` | js.Object
       ): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+      inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      @scala.inline
-      def setFocus(
+      inline def setFocus(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, focus]) | `false` | js.Object
       ): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+      inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      @scala.inline
-      def setFocusin(
+      inline def setFocusin(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, focusin]) | `false` | js.Object
       ): Self = StObject.set(x, "focusin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusinUndefined: Self = StObject.set(x, "focusin", js.undefined)
+      inline def setFocusinUndefined: Self = StObject.set(x, "focusin", js.undefined)
       
-      @scala.inline
-      def setFocusout(
+      inline def setFocusout(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, focusout]) | `false` | js.Object
       ): Self = StObject.set(x, "focusout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusoutUndefined: Self = StObject.set(x, "focusout", js.undefined)
+      inline def setFocusoutUndefined: Self = StObject.set(x, "focusout", js.undefined)
       
-      @scala.inline
-      def setKeydown(
+      inline def setKeydown(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, keydown]) | `false` | js.Object
       ): Self = StObject.set(x, "keydown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
+      inline def setKeydownUndefined: Self = StObject.set(x, "keydown", js.undefined)
       
-      @scala.inline
-      def setKeypress(
+      inline def setKeypress(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, keypress]) | `false` | js.Object
       ): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeypressUndefined: Self = StObject.set(x, "keypress", js.undefined)
+      inline def setKeypressUndefined: Self = StObject.set(x, "keypress", js.undefined)
       
-      @scala.inline
-      def setKeyup(
+      inline def setKeyup(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, keyup]) | `false` | js.Object
       ): Self = StObject.set(x, "keyup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyupUndefined: Self = StObject.set(x, "keyup", js.undefined)
+      inline def setKeyupUndefined: Self = StObject.set(x, "keyup", js.undefined)
       
-      @scala.inline
-      def setMousedown(
+      inline def setMousedown(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mousedown]) | `false` | js.Object
       ): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousedownUndefined: Self = StObject.set(x, "mousedown", js.undefined)
+      inline def setMousedownUndefined: Self = StObject.set(x, "mousedown", js.undefined)
       
-      @scala.inline
-      def setMouseenter(
+      inline def setMouseenter(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseenter]) | `false` | js.Object
       ): Self = StObject.set(x, "mouseenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseenterUndefined: Self = StObject.set(x, "mouseenter", js.undefined)
+      inline def setMouseenterUndefined: Self = StObject.set(x, "mouseenter", js.undefined)
       
-      @scala.inline
-      def setMouseleave(
+      inline def setMouseleave(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseleave]) | `false` | js.Object
       ): Self = StObject.set(x, "mouseleave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseleaveUndefined: Self = StObject.set(x, "mouseleave", js.undefined)
+      inline def setMouseleaveUndefined: Self = StObject.set(x, "mouseleave", js.undefined)
       
-      @scala.inline
-      def setMousemove(
+      inline def setMousemove(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mousemove]) | `false` | js.Object
       ): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
+      inline def setMousemoveUndefined: Self = StObject.set(x, "mousemove", js.undefined)
       
-      @scala.inline
-      def setMouseout(
+      inline def setMouseout(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseout]) | `false` | js.Object
       ): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
+      inline def setMouseoutUndefined: Self = StObject.set(x, "mouseout", js.undefined)
       
-      @scala.inline
-      def setMouseover(
+      inline def setMouseover(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseover]) | `false` | js.Object
       ): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
+      inline def setMouseoverUndefined: Self = StObject.set(x, "mouseover", js.undefined)
       
-      @scala.inline
-      def setMouseup(
+      inline def setMouseup(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, mouseup]) | `false` | js.Object
       ): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseupUndefined: Self = StObject.set(x, "mouseup", js.undefined)
+      inline def setMouseupUndefined: Self = StObject.set(x, "mouseup", js.undefined)
       
-      @scala.inline
-      def setResize(
+      inline def setResize(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, resize]) | `false` | js.Object
       ): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setScroll(
+      inline def setScroll(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, scroll]) | `false` | js.Object
       ): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      @scala.inline
-      def setSelect(
+      inline def setSelect(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, select]) | `false` | js.Object
       ): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setSubmit(
+      inline def setSubmit(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, submit]) | `false` | js.Object
       ): Self = StObject.set(x, "submit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
+      inline def setSubmitUndefined: Self = StObject.set(x, "submit", js.undefined)
       
-      @scala.inline
-      def setTouchcancel(
+      inline def setTouchcancel(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, touchcancel]) | `false` | js.Object
       ): Self = StObject.set(x, "touchcancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchcancelUndefined: Self = StObject.set(x, "touchcancel", js.undefined)
+      inline def setTouchcancelUndefined: Self = StObject.set(x, "touchcancel", js.undefined)
       
-      @scala.inline
-      def setTouchend(
+      inline def setTouchend(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, touchend]) | `false` | js.Object
       ): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchendUndefined: Self = StObject.set(x, "touchend", js.undefined)
+      inline def setTouchendUndefined: Self = StObject.set(x, "touchend", js.undefined)
       
-      @scala.inline
-      def setTouchmove(
+      inline def setTouchmove(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, touchmove]) | `false` | js.Object
       ): Self = StObject.set(x, "touchmove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchmoveUndefined: Self = StObject.set(x, "touchmove", js.undefined)
+      inline def setTouchmoveUndefined: Self = StObject.set(x, "touchmove", js.undefined)
       
-      @scala.inline
-      def setTouchstart(
+      inline def setTouchstart(
         value: (TypeEventHandler[TDelegateTarget, TData, TCurrentTarget, TTarget, touchstart]) | `false` | js.Object
       ): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
+      inline def setTouchstartUndefined: Self = StObject.set(x, "touchstart", js.undefined)
     }
   }
   
   trait _ValHook[TElement] extends StObject
   object _ValHook {
     
-    @scala.inline
-    def `0`[TElement](get: TElement => js.Any): typings.jquery.anon.`0`[TElement] = {
+    inline def `0`[TElement](get: TElement => js.Any): typings.jquery.anon.`0`[TElement] = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[typings.jquery.anon.`0`[TElement]]
     }
     
-    @scala.inline
-    def `1`[TElement](set: (TElement, js.Any) => js.Any): typings.jquery.anon.`1`[TElement] = {
+    inline def `1`[TElement](set: (TElement, js.Any) => js.Any): typings.jquery.anon.`1`[TElement] = {
       val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[typings.jquery.anon.`1`[TElement]]
     }

@@ -11,8 +11,7 @@ object eventTriggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def shouldTriggerEvents(alwaysCallback: Boolean, shouldFireScrollEvent: Boolean, isTriggeredCurrentTotal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldTriggerEvents")(alwaysCallback.asInstanceOf[js.Any], shouldFireScrollEvent.asInstanceOf[js.Any], isTriggeredCurrentTotal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shouldTriggerEvents(alwaysCallback: Boolean, shouldFireScrollEvent: Boolean, isTriggeredCurrentTotal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldTriggerEvents")(alwaysCallback.asInstanceOf[js.Any], shouldFireScrollEvent.asInstanceOf[js.Any], isTriggeredCurrentTotal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait IDistanceRange extends StObject {
     
@@ -22,20 +21,16 @@ object eventTriggerMod {
   }
   object IDistanceRange {
     
-    @scala.inline
-    def apply(down: Double, up: Double): IDistanceRange = {
+    inline def apply(down: Double, up: Double): IDistanceRange = {
       val __obj = js.Dynamic.literal(down = down.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDistanceRange]
     }
     
-    @scala.inline
-    implicit class IDistanceRangeMutableBuilder[Self <: IDistanceRange] (val x: Self) extends AnyVal {
+    extension [Self <: IDistanceRange](x: Self) {
       
-      @scala.inline
-      def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+      inline def setDown(value: Double): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+      inline def setUp(value: Double): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +42,16 @@ object eventTriggerMod {
   }
   object IScrollConfig {
     
-    @scala.inline
-    def apply(alwaysCallback: Boolean, shouldFireScrollEvent: Boolean): IScrollConfig = {
+    inline def apply(alwaysCallback: Boolean, shouldFireScrollEvent: Boolean): IScrollConfig = {
       val __obj = js.Dynamic.literal(alwaysCallback = alwaysCallback.asInstanceOf[js.Any], shouldFireScrollEvent = shouldFireScrollEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[IScrollConfig]
     }
     
-    @scala.inline
-    implicit class IScrollConfigMutableBuilder[Self <: IScrollConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollConfig](x: Self) {
       
-      @scala.inline
-      def setAlwaysCallback(value: Boolean): Self = StObject.set(x, "alwaysCallback", value.asInstanceOf[js.Any])
+      inline def setAlwaysCallback(value: Boolean): Self = StObject.set(x, "alwaysCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldFireScrollEvent(value: Boolean): Self = StObject.set(x, "shouldFireScrollEvent", value.asInstanceOf[js.Any])
+      inline def setShouldFireScrollEvent(value: Boolean): Self = StObject.set(x, "shouldFireScrollEvent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,23 +67,18 @@ object eventTriggerMod {
   }
   object IScrollerProps {
     
-    @scala.inline
-    def apply(alwaysCallback: Boolean, container: IPositionStats, disabled: Boolean, down: Double, up: Double): IScrollerProps = {
+    inline def apply(alwaysCallback: Boolean, container: IPositionStats, disabled: Boolean, down: Double, up: Double): IScrollerProps = {
       val __obj = js.Dynamic.literal(alwaysCallback = alwaysCallback.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], down = down.asInstanceOf[js.Any], up = up.asInstanceOf[js.Any])
       __obj.asInstanceOf[IScrollerProps]
     }
     
-    @scala.inline
-    implicit class IScrollerPropsMutableBuilder[Self <: IScrollerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IScrollerProps](x: Self) {
       
-      @scala.inline
-      def setAlwaysCallback(value: Boolean): Self = StObject.set(x, "alwaysCallback", value.asInstanceOf[js.Any])
+      inline def setAlwaysCallback(value: Boolean): Self = StObject.set(x, "alwaysCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer(value: IPositionStats): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: IPositionStats): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,20 +90,16 @@ object eventTriggerMod {
   }
   object ITriggerEvents {
     
-    @scala.inline
-    def apply(down: js.Any => js.Any, up: js.Any => js.Any): ITriggerEvents = {
+    inline def apply(down: js.Any => js.Any, up: js.Any => js.Any): ITriggerEvents = {
       val __obj = js.Dynamic.literal(down = js.Any.fromFunction1(down), up = js.Any.fromFunction1(up))
       __obj.asInstanceOf[ITriggerEvents]
     }
     
-    @scala.inline
-    implicit class ITriggerEventsMutableBuilder[Self <: ITriggerEvents] (val x: Self) extends AnyVal {
+    extension [Self <: ITriggerEvents](x: Self) {
       
-      @scala.inline
-      def setDown(value: js.Any => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: js.Any => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUp(value: js.Any => js.Any): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+      inline def setUp(value: js.Any => js.Any): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
     }
   }
 }

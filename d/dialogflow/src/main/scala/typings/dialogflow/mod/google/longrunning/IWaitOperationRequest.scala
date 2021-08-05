@@ -16,31 +16,23 @@ trait IWaitOperationRequest extends StObject {
 }
 object IWaitOperationRequest {
   
-  @scala.inline
-  def apply(): IWaitOperationRequest = {
+  inline def apply(): IWaitOperationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IWaitOperationRequest]
   }
   
-  @scala.inline
-  implicit class IWaitOperationRequestMutableBuilder[Self <: IWaitOperationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IWaitOperationRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: IDuration): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: IDuration): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutNull: Self = StObject.set(x, "timeout", null)
+    inline def setTimeoutNull: Self = StObject.set(x, "timeout", null)
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

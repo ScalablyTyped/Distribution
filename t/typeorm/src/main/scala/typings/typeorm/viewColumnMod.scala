@@ -12,8 +12,6 @@ object viewColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ViewColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ViewColumn")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def ViewColumn(options: ViewColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ViewColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def ViewColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ViewColumn")().asInstanceOf[PropertyDecorator]
+  inline def ViewColumn(options: ViewColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ViewColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

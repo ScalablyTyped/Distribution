@@ -11,10 +11,8 @@ object mod {
     * @param old An object to sort the keys of, if not object just returns whatever
     * was given
     */
-  @scala.inline
-  def apply[T](old: T): T = ^.asInstanceOf[js.Dynamic].apply(old.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def apply[T](old: T, options: VisitOptions): T = (^.asInstanceOf[js.Dynamic].apply(old.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T](old: T): T = ^.asInstanceOf[js.Dynamic].apply(old.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T](old: T, options: VisitOptions): T = (^.asInstanceOf[js.Dynamic].apply(old.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("sort-json", JSImport.Namespace)
   @js.native
@@ -27,14 +25,10 @@ object mod {
     * * String: Absolute path to JSON file to sort and overwrite
     * * Array: Absolute paths to JSON files to sort and overwrite
     */
-  @scala.inline
-  def overwrite(absolutePaths: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def overwrite(absolutePaths: String, options: OverwriteOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def overwrite(absolutePaths: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def overwrite(absolutePaths: js.Array[String], options: OverwriteOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def overwrite(absolutePaths: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def overwrite(absolutePaths: String, options: OverwriteOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def overwrite(absolutePaths: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def overwrite(absolutePaths: js.Array[String], options: OverwriteOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait OverwriteOptions
     extends StObject
@@ -52,26 +46,20 @@ object mod {
   }
   object OverwriteOptions {
     
-    @scala.inline
-    def apply(): OverwriteOptions = {
+    inline def apply(): OverwriteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OverwriteOptions]
     }
     
-    @scala.inline
-    implicit class OverwriteOptionsMutableBuilder[Self <: OverwriteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OverwriteOptions](x: Self) {
       
-      @scala.inline
-      def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
+      inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
+      inline def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
       
-      @scala.inline
-      def setNoFinalNewLine(value: Boolean): Self = StObject.set(x, "noFinalNewLine", value.asInstanceOf[js.Any])
+      inline def setNoFinalNewLine(value: Boolean): Self = StObject.set(x, "noFinalNewLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoFinalNewLineUndefined: Self = StObject.set(x, "noFinalNewLine", js.undefined)
+      inline def setNoFinalNewLineUndefined: Self = StObject.set(x, "noFinalNewLine", js.undefined)
     }
   }
   
@@ -97,38 +85,28 @@ object mod {
   }
   object VisitOptions {
     
-    @scala.inline
-    def apply(): VisitOptions = {
+    inline def apply(): VisitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VisitOptions]
     }
     
-    @scala.inline
-    implicit class VisitOptionsMutableBuilder[Self <: VisitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VisitOptions](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+      inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+      inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     }
   }
 }

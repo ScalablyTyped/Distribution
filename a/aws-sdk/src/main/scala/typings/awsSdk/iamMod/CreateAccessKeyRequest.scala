@@ -13,19 +13,15 @@ trait CreateAccessKeyRequest extends StObject {
 }
 object CreateAccessKeyRequest {
   
-  @scala.inline
-  def apply(): CreateAccessKeyRequest = {
+  inline def apply(): CreateAccessKeyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAccessKeyRequest]
   }
   
-  @scala.inline
-  implicit class CreateAccessKeyRequestMutableBuilder[Self <: CreateAccessKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccessKeyRequest](x: Self) {
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

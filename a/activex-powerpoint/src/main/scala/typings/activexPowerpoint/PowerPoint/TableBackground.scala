@@ -11,7 +11,7 @@ trait TableBackground extends StObject {
   
   val Picture: PictureFormat
   
-  @JSName("PowerPoint.TableBackground_typekey")
+  /* private */ @JSName("PowerPoint.TableBackground_typekey")
   var PowerPointDotTableBackground_typekey: TableBackground
   
   val Reflection: ReflectionFormat
@@ -20,8 +20,7 @@ trait TableBackground extends StObject {
 }
 object TableBackground {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Fill: FillFormat,
     Picture: PictureFormat,
     PowerPointDotTableBackground_typekey: TableBackground,
@@ -33,22 +32,16 @@ object TableBackground {
     __obj.asInstanceOf[TableBackground]
   }
   
-  @scala.inline
-  implicit class TableBackgroundMutableBuilder[Self <: TableBackground] (val x: Self) extends AnyVal {
+  extension [Self <: TableBackground](x: Self) {
     
-    @scala.inline
-    def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicture(value: PictureFormat): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
+    inline def setPicture(value: PictureFormat): Self = StObject.set(x, "Picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotTableBackground_typekey(value: TableBackground): Self = StObject.set(x, "PowerPoint.TableBackground_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotTableBackground_typekey(value: TableBackground): Self = StObject.set(x, "PowerPoint.TableBackground_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReflection(value: ReflectionFormat): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
+    inline def setReflection(value: ReflectionFormat): Self = StObject.set(x, "Reflection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
   }
 }

@@ -24,23 +24,18 @@ object anon {
   }
   object MaxDelayMillis {
     
-    @scala.inline
-    def apply(maxDelayMillis: Double, maxOutstandingBytes: Double, maxOutstandingMessages: Double): MaxDelayMillis = {
+    inline def apply(maxDelayMillis: Double, maxOutstandingBytes: Double, maxOutstandingMessages: Double): MaxDelayMillis = {
       val __obj = js.Dynamic.literal(maxDelayMillis = maxDelayMillis.asInstanceOf[js.Any], maxOutstandingBytes = maxOutstandingBytes.asInstanceOf[js.Any], maxOutstandingMessages = maxOutstandingMessages.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxDelayMillis]
     }
     
-    @scala.inline
-    implicit class MaxDelayMillisMutableBuilder[Self <: MaxDelayMillis] (val x: Self) extends AnyVal {
+    extension [Self <: MaxDelayMillis](x: Self) {
       
-      @scala.inline
-      def setMaxDelayMillis(value: Double): Self = StObject.set(x, "maxDelayMillis", value.asInstanceOf[js.Any])
+      inline def setMaxDelayMillis(value: Double): Self = StObject.set(x, "maxDelayMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOutstandingBytes(value: Double): Self = StObject.set(x, "maxOutstandingBytes", value.asInstanceOf[js.Any])
+      inline def setMaxOutstandingBytes(value: Double): Self = StObject.set(x, "maxOutstandingBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOutstandingMessages(value: Double): Self = StObject.set(x, "maxOutstandingMessages", value.asInstanceOf[js.Any])
+      inline def setMaxOutstandingMessages(value: Double): Self = StObject.set(x, "maxOutstandingMessages", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,8 +51,7 @@ object anon {
   }
   object MaxExtensionMinutes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       maxExtensionMinutes: Double,
       maxOutstandingBytes: Double,
       maxOutstandingMessages: Double,
@@ -67,20 +61,15 @@ object anon {
       __obj.asInstanceOf[MaxExtensionMinutes]
     }
     
-    @scala.inline
-    implicit class MaxExtensionMinutesMutableBuilder[Self <: MaxExtensionMinutes] (val x: Self) extends AnyVal {
+    extension [Self <: MaxExtensionMinutes](x: Self) {
       
-      @scala.inline
-      def setMaxExtensionMinutes(value: Double): Self = StObject.set(x, "maxExtensionMinutes", value.asInstanceOf[js.Any])
+      inline def setMaxExtensionMinutes(value: Double): Self = StObject.set(x, "maxExtensionMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOutstandingBytes(value: Double): Self = StObject.set(x, "maxOutstandingBytes", value.asInstanceOf[js.Any])
+      inline def setMaxOutstandingBytes(value: Double): Self = StObject.set(x, "maxOutstandingBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOutstandingMessages(value: Double): Self = StObject.set(x, "maxOutstandingMessages", value.asInstanceOf[js.Any])
+      inline def setMaxOutstandingMessages(value: Double): Self = StObject.set(x, "maxOutstandingMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxStreams(value: Double): Self = StObject.set(x, "maxStreams", value.asInstanceOf[js.Any])
+      inline def setMaxStreams(value: Double): Self = StObject.set(x, "maxStreams", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -23,31 +23,23 @@ trait ScalingParameters extends StObject {
 }
 object ScalingParameters {
   
-  @scala.inline
-  def apply(): ScalingParameters = {
+  inline def apply(): ScalingParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScalingParameters]
   }
   
-  @scala.inline
-  implicit class ScalingParametersMutableBuilder[Self <: ScalingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingParameters](x: Self) {
     
-    @scala.inline
-    def setDesiredInstanceType(value: PartitionInstanceType): Self = StObject.set(x, "DesiredInstanceType", value.asInstanceOf[js.Any])
+    inline def setDesiredInstanceType(value: PartitionInstanceType): Self = StObject.set(x, "DesiredInstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredInstanceTypeUndefined: Self = StObject.set(x, "DesiredInstanceType", js.undefined)
+    inline def setDesiredInstanceTypeUndefined: Self = StObject.set(x, "DesiredInstanceType", js.undefined)
     
-    @scala.inline
-    def setDesiredPartitionCount(value: UIntValue): Self = StObject.set(x, "DesiredPartitionCount", value.asInstanceOf[js.Any])
+    inline def setDesiredPartitionCount(value: UIntValue): Self = StObject.set(x, "DesiredPartitionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredPartitionCountUndefined: Self = StObject.set(x, "DesiredPartitionCount", js.undefined)
+    inline def setDesiredPartitionCountUndefined: Self = StObject.set(x, "DesiredPartitionCount", js.undefined)
     
-    @scala.inline
-    def setDesiredReplicationCount(value: UIntValue): Self = StObject.set(x, "DesiredReplicationCount", value.asInstanceOf[js.Any])
+    inline def setDesiredReplicationCount(value: UIntValue): Self = StObject.set(x, "DesiredReplicationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredReplicationCountUndefined: Self = StObject.set(x, "DesiredReplicationCount", js.undefined)
+    inline def setDesiredReplicationCountUndefined: Self = StObject.set(x, "DesiredReplicationCount", js.undefined)
   }
 }

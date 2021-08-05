@@ -27,22 +27,18 @@ object mod {
   }
   object ClassicFormFields {
     
-    @scala.inline
-    def apply(`BIRTHDAY[day]`: Double, `BIRTHDAY[month]`: Double, EMAIL: String, FNAME: String, LNAME: String): ClassicFormFields = {
+    inline def apply(`BIRTHDAY[day]`: Double, `BIRTHDAY[month]`: Double, EMAIL: String, FNAME: String, LNAME: String): ClassicFormFields = {
       val __obj = js.Dynamic.literal(EMAIL = EMAIL.asInstanceOf[js.Any], FNAME = FNAME.asInstanceOf[js.Any], LNAME = LNAME.asInstanceOf[js.Any])
       __obj.updateDynamic("BIRTHDAY[day]")(`BIRTHDAY[day]`.asInstanceOf[js.Any])
       __obj.updateDynamic("BIRTHDAY[month]")(`BIRTHDAY[month]`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassicFormFields]
     }
     
-    @scala.inline
-    implicit class ClassicFormFieldsMutableBuilder[Self <: ClassicFormFields] (val x: Self) extends AnyVal {
+    extension [Self <: ClassicFormFields](x: Self) {
       
-      @scala.inline
-      def `setBIRTHDAY[day]`(value: Double): Self = StObject.set(x, "BIRTHDAY[day]", value.asInstanceOf[js.Any])
+      inline def `setBIRTHDAY[day]`(value: Double): Self = StObject.set(x, "BIRTHDAY[day]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setBIRTHDAY[month]`(value: Double): Self = StObject.set(x, "BIRTHDAY[month]", value.asInstanceOf[js.Any])
+      inline def `setBIRTHDAY[month]`(value: Double): Self = StObject.set(x, "BIRTHDAY[month]", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,17 +50,14 @@ object mod {
   }
   object EmailFormFields {
     
-    @scala.inline
-    def apply(EMAIL: String): EmailFormFields = {
+    inline def apply(EMAIL: String): EmailFormFields = {
       val __obj = js.Dynamic.literal(EMAIL = EMAIL.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmailFormFields]
     }
     
-    @scala.inline
-    implicit class EmailFormFieldsMutableBuilder[Self <: EmailFormFields] (val x: Self) extends AnyVal {
+    extension [Self <: EmailFormFields](x: Self) {
       
-      @scala.inline
-      def setEMAIL(value: String): Self = StObject.set(x, "EMAIL", value.asInstanceOf[js.Any])
+      inline def setEMAIL(value: String): Self = StObject.set(x, "EMAIL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,20 +71,16 @@ object mod {
   }
   object ErrorResponseArgs {
     
-    @scala.inline
-    def apply(message: String | Error): ErrorResponseArgs = {
+    inline def apply(message: String | Error): ErrorResponseArgs = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "error")
       __obj.asInstanceOf[ErrorResponseArgs]
     }
     
-    @scala.inline
-    implicit class ErrorResponseArgsMutableBuilder[Self <: ErrorResponseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorResponseArgs](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String | Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | Error): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: error): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,20 +98,16 @@ object mod {
   }
   object NameFormFields {
     
-    @scala.inline
-    def apply(EMAIL: String, FNAME: String, LNAME: String): NameFormFields = {
+    inline def apply(EMAIL: String, FNAME: String, LNAME: String): NameFormFields = {
       val __obj = js.Dynamic.literal(EMAIL = EMAIL.asInstanceOf[js.Any], FNAME = FNAME.asInstanceOf[js.Any], LNAME = LNAME.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameFormFields]
     }
     
-    @scala.inline
-    implicit class NameFormFieldsMutableBuilder[Self <: NameFormFields] (val x: Self) extends AnyVal {
+    extension [Self <: NameFormFields](x: Self) {
       
-      @scala.inline
-      def setFNAME(value: String): Self = StObject.set(x, "FNAME", value.asInstanceOf[js.Any])
+      inline def setFNAME(value: String): Self = StObject.set(x, "FNAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLNAME(value: String): Self = StObject.set(x, "LNAME", value.asInstanceOf[js.Any])
+      inline def setLNAME(value: String): Self = StObject.set(x, "LNAME", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,23 +119,18 @@ object mod {
   }
   object PendingArgs {
     
-    @scala.inline
-    def apply(message: Null): PendingArgs = {
+    inline def apply(message: Null): PendingArgs = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = null)
       __obj.asInstanceOf[PendingArgs]
     }
     
-    @scala.inline
-    implicit class PendingArgsMutableBuilder[Self <: PendingArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PendingArgs](x: Self) {
       
-      @scala.inline
-      def setMessage(value: Null): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Null): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: sending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: sending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusNull: Self = StObject.set(x, "status", null)
+      inline def setStatusNull: Self = StObject.set(x, "status", null)
     }
   }
   
@@ -162,23 +142,18 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply[FormFields](url: String): Props[FormFields] = {
+    inline def apply[FormFields](url: String): Props[FormFields] = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props[FormFields]]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[?], FormFields] (val x: Self & Props[FormFields]) extends AnyVal {
+    extension [Self <: Props[?], FormFields](x: Self & Props[FormFields]) {
       
-      @scala.inline
-      def setRender(value: /* hooks */ FormHooks[FormFields] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* hooks */ FormHooks[FormFields] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,14 +164,12 @@ object mod {
   trait ResponseArgs extends StObject
   object ResponseArgs {
     
-    @scala.inline
-    def ErrorResponseArgs(message: String | Error): typings.reactMailchimpSubscribe.mod.ErrorResponseArgs = {
+    inline def ErrorResponseArgs(message: String | Error): typings.reactMailchimpSubscribe.mod.ErrorResponseArgs = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "error")
       __obj.asInstanceOf[typings.reactMailchimpSubscribe.mod.ErrorResponseArgs]
     }
     
-    @scala.inline
-    def SuccessResponseArgs(message: String): typings.reactMailchimpSubscribe.mod.SuccessResponseArgs = {
+    inline def SuccessResponseArgs(message: String): typings.reactMailchimpSubscribe.mod.SuccessResponseArgs = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "success")
       __obj.asInstanceOf[typings.reactMailchimpSubscribe.mod.SuccessResponseArgs]
     }
@@ -208,17 +181,14 @@ object mod {
   }
   object SubscribeArg {
     
-    @scala.inline
-    def apply[FormFields](subscribe: FormFields => Unit): SubscribeArg[FormFields] = {
+    inline def apply[FormFields](subscribe: FormFields => Unit): SubscribeArg[FormFields] = {
       val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
       __obj.asInstanceOf[SubscribeArg[FormFields]]
     }
     
-    @scala.inline
-    implicit class SubscribeArgMutableBuilder[Self <: SubscribeArg[?], FormFields] (val x: Self & SubscribeArg[FormFields]) extends AnyVal {
+    extension [Self <: SubscribeArg[?], FormFields](x: Self & SubscribeArg[FormFields]) {
       
-      @scala.inline
-      def setSubscribe(value: FormFields => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: FormFields => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -232,20 +202,16 @@ object mod {
   }
   object SuccessResponseArgs {
     
-    @scala.inline
-    def apply(message: String): SuccessResponseArgs = {
+    inline def apply(message: String): SuccessResponseArgs = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = "success")
       __obj.asInstanceOf[SuccessResponseArgs]
     }
     
-    @scala.inline
-    implicit class SuccessResponseArgsMutableBuilder[Self <: SuccessResponseArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SuccessResponseArgs](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: success): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: success): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

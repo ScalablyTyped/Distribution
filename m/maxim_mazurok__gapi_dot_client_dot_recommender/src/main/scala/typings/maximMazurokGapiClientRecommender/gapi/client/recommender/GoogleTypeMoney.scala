@@ -21,31 +21,23 @@ trait GoogleTypeMoney extends StObject {
 }
 object GoogleTypeMoney {
   
-  @scala.inline
-  def apply(): GoogleTypeMoney = {
+  inline def apply(): GoogleTypeMoney = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleTypeMoney]
   }
   
-  @scala.inline
-  implicit class GoogleTypeMoneyMutableBuilder[Self <: GoogleTypeMoney] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleTypeMoney](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+    inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
+    inline def setNanosUndefined: Self = StObject.set(x, "nanos", js.undefined)
     
-    @scala.inline
-    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

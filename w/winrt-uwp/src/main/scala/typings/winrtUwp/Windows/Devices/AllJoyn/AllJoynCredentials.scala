@@ -23,8 +23,7 @@ trait AllJoynCredentials extends StObject {
 }
 object AllJoynCredentials {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticationMechanism: AllJoynAuthenticationMechanism,
     certificate: Certificate,
     passwordCredential: PasswordCredential,
@@ -34,19 +33,14 @@ object AllJoynCredentials {
     __obj.asInstanceOf[AllJoynCredentials]
   }
   
-  @scala.inline
-  implicit class AllJoynCredentialsMutableBuilder[Self <: AllJoynCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynCredentials](x: Self) {
     
-    @scala.inline
-    def setAuthenticationMechanism(value: AllJoynAuthenticationMechanism): Self = StObject.set(x, "authenticationMechanism", value.asInstanceOf[js.Any])
+    inline def setAuthenticationMechanism(value: AllJoynAuthenticationMechanism): Self = StObject.set(x, "authenticationMechanism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificate(value: Certificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordCredential(value: PasswordCredential): Self = StObject.set(x, "passwordCredential", value.asInstanceOf[js.Any])
+    inline def setPasswordCredential(value: PasswordCredential): Self = StObject.set(x, "passwordCredential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

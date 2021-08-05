@@ -57,8 +57,7 @@ trait LocalClientTime extends StObject {
 }
 object LocalClientTime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     date: Double,
     hours: Double,
     milliseconds: Double,
@@ -72,31 +71,22 @@ object LocalClientTime {
     __obj.asInstanceOf[LocalClientTime]
   }
   
-  @scala.inline
-  implicit class LocalClientTimeMutableBuilder[Self <: LocalClientTime] (val x: Self) extends AnyVal {
+  extension [Self <: LocalClientTime](x: Self) {
     
-    @scala.inline
-    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
+    inline def setMilliseconds(value: Double): Self = StObject.set(x, "milliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneOffset(value: Double): Self = StObject.set(x, "timezoneOffset", value.asInstanceOf[js.Any])
+    inline def setTimezoneOffset(value: Double): Self = StObject.set(x, "timezoneOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

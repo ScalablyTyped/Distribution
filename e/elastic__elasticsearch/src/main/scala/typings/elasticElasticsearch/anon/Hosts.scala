@@ -12,22 +12,17 @@ trait Hosts extends StObject {
 }
 object Hosts {
   
-  @scala.inline
-  def apply(hosts: js.Array[js.Any], reason: String): Hosts = {
+  inline def apply(hosts: js.Array[js.Any], reason: String): Hosts = {
     val __obj = js.Dynamic.literal(hosts = hosts.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hosts]
   }
   
-  @scala.inline
-  implicit class HostsMutableBuilder[Self <: Hosts] (val x: Self) extends AnyVal {
+  extension [Self <: Hosts](x: Self) {
     
-    @scala.inline
-    def setHosts(value: js.Array[js.Any]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+    inline def setHosts(value: js.Array[js.Any]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostsVarargs(value: js.Any*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+    inline def setHostsVarargs(value: js.Any*): Self = StObject.set(x, "hosts", js.Array(value :_*))
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

@@ -19,28 +19,21 @@ trait SchemaTableDataInsertAllResponse extends StObject {
 }
 object SchemaTableDataInsertAllResponse {
   
-  @scala.inline
-  def apply(): SchemaTableDataInsertAllResponse = {
+  inline def apply(): SchemaTableDataInsertAllResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableDataInsertAllResponse]
   }
   
-  @scala.inline
-  implicit class SchemaTableDataInsertAllResponseMutableBuilder[Self <: SchemaTableDataInsertAllResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableDataInsertAllResponse](x: Self) {
     
-    @scala.inline
-    def setInsertErrors(value: js.Array[Errors]): Self = StObject.set(x, "insertErrors", value.asInstanceOf[js.Any])
+    inline def setInsertErrors(value: js.Array[Errors]): Self = StObject.set(x, "insertErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertErrorsUndefined: Self = StObject.set(x, "insertErrors", js.undefined)
+    inline def setInsertErrorsUndefined: Self = StObject.set(x, "insertErrors", js.undefined)
     
-    @scala.inline
-    def setInsertErrorsVarargs(value: Errors*): Self = StObject.set(x, "insertErrors", js.Array(value :_*))
+    inline def setInsertErrorsVarargs(value: Errors*): Self = StObject.set(x, "insertErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

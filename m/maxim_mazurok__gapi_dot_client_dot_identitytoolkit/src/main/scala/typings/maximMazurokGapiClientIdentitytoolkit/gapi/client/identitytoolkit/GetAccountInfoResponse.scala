@@ -14,28 +14,21 @@ trait GetAccountInfoResponse extends StObject {
 }
 object GetAccountInfoResponse {
   
-  @scala.inline
-  def apply(): GetAccountInfoResponse = {
+  inline def apply(): GetAccountInfoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccountInfoResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountInfoResponseMutableBuilder[Self <: GetAccountInfoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountInfoResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUsers(value: js.Array[UserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[UserInfo]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: UserInfo*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: UserInfo*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

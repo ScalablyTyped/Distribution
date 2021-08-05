@@ -10,19 +10,15 @@ trait SparklineSeriesItemOverlay extends StObject {
 }
 object SparklineSeriesItemOverlay {
   
-  @scala.inline
-  def apply(): SparklineSeriesItemOverlay = {
+  inline def apply(): SparklineSeriesItemOverlay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SparklineSeriesItemOverlay]
   }
   
-  @scala.inline
-  implicit class SparklineSeriesItemOverlayMutableBuilder[Self <: SparklineSeriesItemOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: SparklineSeriesItemOverlay](x: Self) {
     
-    @scala.inline
-    def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
   }
 }

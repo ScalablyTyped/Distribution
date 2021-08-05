@@ -18,25 +18,19 @@ trait AttachInstancesQuery extends StObject {
 }
 object AttachInstancesQuery {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName): AttachInstancesQuery = {
+  inline def apply(AutoScalingGroupName: ResourceName): AttachInstancesQuery = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachInstancesQuery]
   }
   
-  @scala.inline
-  implicit class AttachInstancesQueryMutableBuilder[Self <: AttachInstancesQuery] (val x: Self) extends AnyVal {
+  extension [Self <: AttachInstancesQuery](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
+    inline def setInstanceIds(value: InstanceIds): Self = StObject.set(x, "InstanceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
+    inline def setInstanceIdsUndefined: Self = StObject.set(x, "InstanceIds", js.undefined)
     
-    @scala.inline
-    def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
+    inline def setInstanceIdsVarargs(value: XmlStringMaxLen19*): Self = StObject.set(x, "InstanceIds", js.Array(value :_*))
   }
 }

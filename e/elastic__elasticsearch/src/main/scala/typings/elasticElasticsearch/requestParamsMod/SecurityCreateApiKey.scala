@@ -15,22 +15,17 @@ trait SecurityCreateApiKey[T]
 }
 object SecurityCreateApiKey {
   
-  @scala.inline
-  def apply[T](body: T): SecurityCreateApiKey[T] = {
+  inline def apply[T](body: T): SecurityCreateApiKey[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityCreateApiKey[T]]
   }
   
-  @scala.inline
-  implicit class SecurityCreateApiKeyMutableBuilder[Self <: SecurityCreateApiKey[?], T] (val x: Self & SecurityCreateApiKey[T]) extends AnyVal {
+  extension [Self <: SecurityCreateApiKey[?], T](x: Self & SecurityCreateApiKey[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
   }
 }

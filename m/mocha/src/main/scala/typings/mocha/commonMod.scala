@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object commonMod {
   
-  @scala.inline
-  def apply(suites: js.Array[Suite], context: MochaGlobals, mocha: Mocha): CommonFunctions = (^.asInstanceOf[js.Dynamic].apply(suites.asInstanceOf[js.Any], context.asInstanceOf[js.Any], mocha.asInstanceOf[js.Any])).asInstanceOf[CommonFunctions]
+  inline def apply(suites: js.Array[Suite], context: MochaGlobals, mocha: Mocha): CommonFunctions = (^.asInstanceOf[js.Dynamic].apply(suites.asInstanceOf[js.Any], context.asInstanceOf[js.Any], mocha.asInstanceOf[js.Any])).asInstanceOf[CommonFunctions]
   
   @JSImport("mocha/lib/interfaces/common", JSImport.Namespace)
   @js.native
@@ -103,41 +102,30 @@ object commonMod {
   }
   object CreateOptions {
     
-    @scala.inline
-    def apply(title: String): CreateOptions = {
+    inline def apply(title: String): CreateOptions = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateOptions]
     }
     
-    @scala.inline
-    implicit class CreateOptionsMutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateOptions](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setFn(value: js.ThisFunction0[/* this */ Suite, Unit]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+      inline def setFn(value: js.ThisFunction0[/* this */ Suite, Unit]): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
+      inline def setFnUndefined: Self = StObject.set(x, "fn", js.undefined)
       
-      @scala.inline
-      def setIsOnly(value: Boolean): Self = StObject.set(x, "isOnly", value.asInstanceOf[js.Any])
+      inline def setIsOnly(value: Boolean): Self = StObject.set(x, "isOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOnlyUndefined: Self = StObject.set(x, "isOnly", js.undefined)
+      inline def setIsOnlyUndefined: Self = StObject.set(x, "isOnly", js.undefined)
       
-      @scala.inline
-      def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: Boolean): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+      inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,23 +148,18 @@ object commonMod {
   }
   object SuiteFunctions {
     
-    @scala.inline
-    def apply(create: CreateOptions => Suite, only: CreateOptions => Suite, skip: CreateOptions => Suite): SuiteFunctions = {
+    inline def apply(create: CreateOptions => Suite, only: CreateOptions => Suite, skip: CreateOptions => Suite): SuiteFunctions = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), only = js.Any.fromFunction1(only), skip = js.Any.fromFunction1(skip))
       __obj.asInstanceOf[SuiteFunctions]
     }
     
-    @scala.inline
-    implicit class SuiteFunctionsMutableBuilder[Self <: SuiteFunctions] (val x: Self) extends AnyVal {
+    extension [Self <: SuiteFunctions](x: Self) {
       
-      @scala.inline
-      def setCreate(value: CreateOptions => Suite): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: CreateOptions => Suite): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnly(value: CreateOptions => Suite): Self = StObject.set(x, "only", js.Any.fromFunction1(value))
+      inline def setOnly(value: CreateOptions => Suite): Self = StObject.set(x, "only", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkip(value: CreateOptions => Suite): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+      inline def setSkip(value: CreateOptions => Suite): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     }
   }
   
@@ -199,23 +182,18 @@ object commonMod {
   }
   object TestFunctions {
     
-    @scala.inline
-    def apply(only: (Mocha, Test) => Test, retries: Double => Unit, skip: String => Unit): TestFunctions = {
+    inline def apply(only: (Mocha, Test) => Test, retries: Double => Unit, skip: String => Unit): TestFunctions = {
       val __obj = js.Dynamic.literal(only = js.Any.fromFunction2(only), retries = js.Any.fromFunction1(retries), skip = js.Any.fromFunction1(skip))
       __obj.asInstanceOf[TestFunctions]
     }
     
-    @scala.inline
-    implicit class TestFunctionsMutableBuilder[Self <: TestFunctions] (val x: Self) extends AnyVal {
+    extension [Self <: TestFunctions](x: Self) {
       
-      @scala.inline
-      def setOnly(value: (Mocha, Test) => Test): Self = StObject.set(x, "only", js.Any.fromFunction2(value))
+      inline def setOnly(value: (Mocha, Test) => Test): Self = StObject.set(x, "only", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRetries(value: Double => Unit): Self = StObject.set(x, "retries", js.Any.fromFunction1(value))
+      inline def setRetries(value: Double => Unit): Self = StObject.set(x, "retries", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkip(value: String => Unit): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+      inline def setSkip(value: String => Unit): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     }
   }
 }

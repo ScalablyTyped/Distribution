@@ -13,16 +13,13 @@ trait DeleteExperimentRequest extends StObject {
 }
 object DeleteExperimentRequest {
   
-  @scala.inline
-  def apply(ExperimentName: ExperimentEntityName): DeleteExperimentRequest = {
+  inline def apply(ExperimentName: ExperimentEntityName): DeleteExperimentRequest = {
     val __obj = js.Dynamic.literal(ExperimentName = ExperimentName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteExperimentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteExperimentRequestMutableBuilder[Self <: DeleteExperimentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteExperimentRequest](x: Self) {
     
-    @scala.inline
-    def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
+    inline def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
   }
 }

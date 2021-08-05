@@ -23,19 +23,15 @@ trait ASPxClientTreeListBatchEditNodeDeletingEventArgs
 }
 object ASPxClientTreeListBatchEditNodeDeletingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, nodeKey: String, nodeValues: js.Any): ASPxClientTreeListBatchEditNodeDeletingEventArgs = {
+  inline def apply(cancel: Boolean, nodeKey: String, nodeValues: js.Any): ASPxClientTreeListBatchEditNodeDeletingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], nodeValues = nodeValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeDeletingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientTreeListBatchEditNodeDeletingEventArgsMutableBuilder[Self <: ASPxClientTreeListBatchEditNodeDeletingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTreeListBatchEditNodeDeletingEventArgs](x: Self) {
     
-    @scala.inline
-    def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
+    inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeValues(value: js.Any): Self = StObject.set(x, "nodeValues", value.asInstanceOf[js.Any])
+    inline def setNodeValues(value: js.Any): Self = StObject.set(x, "nodeValues", value.asInstanceOf[js.Any])
   }
 }

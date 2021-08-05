@@ -17,17 +17,14 @@ trait PathMark
 }
 object PathMark {
   
-  @scala.inline
-  def apply(): PathMark = {
+  inline def apply(): PathMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("path")
     __obj.asInstanceOf[PathMark]
   }
   
-  @scala.inline
-  implicit class PathMarkMutableBuilder[Self <: PathMark] (val x: Self) extends AnyVal {
+  extension [Self <: PathMark](x: Self) {
     
-    @scala.inline
-    def setType(value: path): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: path): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

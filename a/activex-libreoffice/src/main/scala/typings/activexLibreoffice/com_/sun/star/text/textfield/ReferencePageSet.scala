@@ -31,8 +31,7 @@ trait ReferencePageSet
 }
 object ReferencePageSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -63,13 +62,10 @@ object ReferencePageSet {
     __obj.asInstanceOf[ReferencePageSet]
   }
   
-  @scala.inline
-  implicit class ReferencePageSetMutableBuilder[Self <: ReferencePageSet] (val x: Self) extends AnyVal {
+  extension [Self <: ReferencePageSet](x: Self) {
     
-    @scala.inline
-    def setNameOn(value: Boolean): Self = StObject.set(x, "NameOn", value.asInstanceOf[js.Any])
+    inline def setNameOn(value: Boolean): Self = StObject.set(x, "NameOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
   }
 }

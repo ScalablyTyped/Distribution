@@ -18,8 +18,7 @@ trait Ionic1ServeOptions
 }
 object Ionic1ServeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `--`: js.Array[String],
     address: String,
     consolelogs: Boolean,
@@ -41,19 +40,14 @@ object Ionic1ServeOptions {
     __obj.asInstanceOf[Ionic1ServeOptions]
   }
   
-  @scala.inline
-  implicit class Ionic1ServeOptionsMutableBuilder[Self <: Ionic1ServeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Ionic1ServeOptions](x: Self) {
     
-    @scala.inline
-    def setConsolelogs(value: Boolean): Self = StObject.set(x, "consolelogs", value.asInstanceOf[js.Any])
+    inline def setConsolelogs(value: Boolean): Self = StObject.set(x, "consolelogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLivereloadPort(value: Double): Self = StObject.set(x, "livereloadPort", value.asInstanceOf[js.Any])
+    inline def setLivereloadPort(value: Double): Self = StObject.set(x, "livereloadPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationPort(value: Double): Self = StObject.set(x, "notificationPort", value.asInstanceOf[js.Any])
+    inline def setNotificationPort(value: Double): Self = StObject.set(x, "notificationPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerlogs(value: Boolean): Self = StObject.set(x, "serverlogs", value.asInstanceOf[js.Any])
+    inline def setServerlogs(value: Boolean): Self = StObject.set(x, "serverlogs", value.asInstanceOf[js.Any])
   }
 }

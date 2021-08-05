@@ -68,81 +68,58 @@ trait CIMMarkerPlacementInsidePolygon
 }
 object CIMMarkerPlacementInsidePolygon {
   
-  @scala.inline
-  def apply(): CIMMarkerPlacementInsidePolygon = {
+  inline def apply(): CIMMarkerPlacementInsidePolygon = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementInsidePolygon")
     __obj.asInstanceOf[CIMMarkerPlacementInsidePolygon]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementInsidePolygonMutableBuilder[Self <: CIMMarkerPlacementInsidePolygon] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementInsidePolygon](x: Self) {
     
-    @scala.inline
-    def setClipping(
+    inline def setClipping(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementClip * / any */ String
     ): Self = StObject.set(x, "clipping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClippingUndefined: Self = StObject.set(x, "clipping", js.undefined)
+    inline def setClippingUndefined: Self = StObject.set(x, "clipping", js.undefined)
     
-    @scala.inline
-    def setGridAngle(value: Double): Self = StObject.set(x, "gridAngle", value.asInstanceOf[js.Any])
+    inline def setGridAngle(value: Double): Self = StObject.set(x, "gridAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAngleUndefined: Self = StObject.set(x, "gridAngle", js.undefined)
+    inline def setGridAngleUndefined: Self = StObject.set(x, "gridAngle", js.undefined)
     
-    @scala.inline
-    def setGridType(
+    inline def setGridType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementGridType * / any */ String
     ): Self = StObject.set(x, "gridType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridTypeUndefined: Self = StObject.set(x, "gridType", js.undefined)
+    inline def setGridTypeUndefined: Self = StObject.set(x, "gridType", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setRandomness(value: Double): Self = StObject.set(x, "randomness", value.asInstanceOf[js.Any])
+    inline def setRandomness(value: Double): Self = StObject.set(x, "randomness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomnessUndefined: Self = StObject.set(x, "randomness", js.undefined)
+    inline def setRandomnessUndefined: Self = StObject.set(x, "randomness", js.undefined)
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
-    @scala.inline
-    def setShiftOddRows(value: Boolean): Self = StObject.set(x, "shiftOddRows", value.asInstanceOf[js.Any])
+    inline def setShiftOddRows(value: Boolean): Self = StObject.set(x, "shiftOddRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftOddRowsUndefined: Self = StObject.set(x, "shiftOddRows", js.undefined)
+    inline def setShiftOddRowsUndefined: Self = StObject.set(x, "shiftOddRows", js.undefined)
     
-    @scala.inline
-    def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
+    inline def setStepX(value: Double): Self = StObject.set(x, "stepX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepXUndefined: Self = StObject.set(x, "stepX", js.undefined)
+    inline def setStepXUndefined: Self = StObject.set(x, "stepX", js.undefined)
     
-    @scala.inline
-    def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
+    inline def setStepY(value: Double): Self = StObject.set(x, "stepY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepYUndefined: Self = StObject.set(x, "stepY", js.undefined)
+    inline def setStepYUndefined: Self = StObject.set(x, "stepY", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementInsidePolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementInsidePolygon): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

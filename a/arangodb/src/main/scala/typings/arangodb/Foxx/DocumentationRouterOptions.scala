@@ -17,8 +17,7 @@ trait DocumentationRouterOptions extends StObject {
 }
 object DocumentationRouterOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     before: (Request, Response) => Unit | `false`,
     indexFile: String,
     mount: String,
@@ -28,19 +27,14 @@ object DocumentationRouterOptions {
     __obj.asInstanceOf[DocumentationRouterOptions]
   }
   
-  @scala.inline
-  implicit class DocumentationRouterOptionsMutableBuilder[Self <: DocumentationRouterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentationRouterOptions](x: Self) {
     
-    @scala.inline
-    def setBefore(value: (Request, Response) => Unit | `false`): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+    inline def setBefore(value: (Request, Response) => Unit | `false`): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIndexFile(value: String): Self = StObject.set(x, "indexFile", value.asInstanceOf[js.Any])
+    inline def setIndexFile(value: String): Self = StObject.set(x, "indexFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+    inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwaggerRoot(value: String): Self = StObject.set(x, "swaggerRoot", value.asInstanceOf[js.Any])
+    inline def setSwaggerRoot(value: String): Self = StObject.set(x, "swaggerRoot", value.asInstanceOf[js.Any])
   }
 }

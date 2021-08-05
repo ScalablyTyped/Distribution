@@ -12,110 +12,62 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(id: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def parse(id: String, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def parse(id: String, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def parse(id: String, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def parse(id: String, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def parse(id: String, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def parse(id: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def parse(id: String, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def parse(id: String, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def parse(id: String, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def parse(id: String, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def parse(id: String, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def parse_Buffer(id: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def parse_Buffer(id: String, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def parse_Buffer(id: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def parse_Buffer(id: String, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(id.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def unparse(buffer: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def unparse(buffer: js.Array[Double], offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def unparse(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def unparse(buffer: Buffer, offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def unparse(buffer: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unparse(buffer: js.Array[Double], offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def unparse(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unparse(buffer: Buffer, offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def v1(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")().asInstanceOf[String]
-  @scala.inline
-  def v1(options: Unit, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v1(options: Unit, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v1(options: Unit, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v1(options: Unit, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def v1(options: Unit, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def v1(options: UUIDOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def v1(options: UUIDOptions, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v1(options: UUIDOptions, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v1(options: UUIDOptions, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v1(options: UUIDOptions, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def v1(options: UUIDOptions, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v1(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")().asInstanceOf[String]
+  inline def v1(options: Unit, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v1(options: Unit, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v1(options: Unit, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v1(options: Unit, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v1(options: Unit, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v1(options: UUIDOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def v1(options: UUIDOptions, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v1(options: UUIDOptions, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v1(options: UUIDOptions, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v1(options: UUIDOptions, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v1(options: UUIDOptions, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def v1_Array(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")().asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v1_Array(options: UUIDOptions): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def v1_Array(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")().asInstanceOf[js.Array[Double]]
+  inline def v1_Array(options: UUIDOptions): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def v1_Buffer(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")().asInstanceOf[Buffer]
-  @scala.inline
-  def v1_Buffer(options: Unit, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def v1_Buffer(options: UUIDOptions): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def v1_Buffer(options: UUIDOptions, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v1_Buffer(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")().asInstanceOf[Buffer]
+  inline def v1_Buffer(options: Unit, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v1_Buffer(options: UUIDOptions): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def v1_Buffer(options: UUIDOptions, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v1")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def v4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[String]
-  @scala.inline
-  def v4(options: Unit, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v4(options: Unit, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v4(options: Unit, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v4(options: Unit, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def v4(options: Unit, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def v4(options: UUIDOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def v4(options: UUIDOptions, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v4(options: UUIDOptions, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v4(options: UUIDOptions, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v4(options: UUIDOptions, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def v4(options: UUIDOptions, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[String]
+  inline def v4(options: Unit, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v4(options: Unit, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v4(options: Unit, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v4(options: Unit, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v4(options: Unit, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v4(options: UUIDOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def v4(options: UUIDOptions, buffer: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v4(options: UUIDOptions, buffer: js.Array[Double], offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v4(options: UUIDOptions, buffer: Unit, offset: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def v4(options: UUIDOptions, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v4(options: UUIDOptions, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def v4_Array(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[js.Array[Double]]
-  @scala.inline
-  def v4_Array(options: UUIDOptions): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def v4_Array(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[js.Array[Double]]
+  inline def v4_Array(options: UUIDOptions): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def v4_Buffer(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[Buffer]
-  @scala.inline
-  def v4_Buffer(options: Unit, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def v4_Buffer(options: UUIDOptions): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def v4_Buffer(options: UUIDOptions, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v4_Buffer(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[Buffer]
+  inline def v4_Buffer(options: Unit, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def v4_Buffer(options: UUIDOptions): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def v4_Buffer(options: UUIDOptions, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @js.native
   trait UUID extends StObject {
@@ -183,41 +135,30 @@ object mod {
   }
   object UUIDOptions {
     
-    @scala.inline
-    def apply(): UUIDOptions = {
+    inline def apply(): UUIDOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UUIDOptions]
     }
     
-    @scala.inline
-    implicit class UUIDOptionsMutableBuilder[Self <: UUIDOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UUIDOptions](x: Self) {
       
-      @scala.inline
-      def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
+      inline def setClockseq(value: Double): Self = StObject.set(x, "clockseq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockseqUndefined: Self = StObject.set(x, "clockseq", js.undefined)
+      inline def setClockseqUndefined: Self = StObject.set(x, "clockseq", js.undefined)
       
-      @scala.inline
-      def setMsecs(value: Double | Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
+      inline def setMsecs(value: Double | Date): Self = StObject.set(x, "msecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsecsUndefined: Self = StObject.set(x, "msecs", js.undefined)
+      inline def setMsecsUndefined: Self = StObject.set(x, "msecs", js.undefined)
       
-      @scala.inline
-      def setNode(value: js.Array[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: js.Array[js.Any]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      @scala.inline
-      def setNodeVarargs(value: js.Any*): Self = StObject.set(x, "node", js.Array(value :_*))
+      inline def setNodeVarargs(value: js.Any*): Self = StObject.set(x, "node", js.Array(value :_*))
       
-      @scala.inline
-      def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
+      inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNsecsUndefined: Self = StObject.set(x, "nsecs", js.undefined)
+      inline def setNsecsUndefined: Self = StObject.set(x, "nsecs", js.undefined)
     }
   }
 }

@@ -27,8 +27,7 @@ trait XDialogClosedListener
 }
 object XDialogClosedListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     dialogClosed: DialogClosedEvent => Unit,
     disposing: EventObject => Unit,
@@ -39,10 +38,8 @@ object XDialogClosedListener {
     __obj.asInstanceOf[XDialogClosedListener]
   }
   
-  @scala.inline
-  implicit class XDialogClosedListenerMutableBuilder[Self <: XDialogClosedListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDialogClosedListener](x: Self) {
     
-    @scala.inline
-    def setDialogClosed(value: DialogClosedEvent => Unit): Self = StObject.set(x, "dialogClosed", js.Any.fromFunction1(value))
+    inline def setDialogClosed(value: DialogClosedEvent => Unit): Self = StObject.set(x, "dialogClosed", js.Any.fromFunction1(value))
   }
 }

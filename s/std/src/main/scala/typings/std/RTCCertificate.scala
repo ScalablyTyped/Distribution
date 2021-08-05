@@ -12,19 +12,15 @@ trait RTCCertificate extends StObject {
 }
 object RTCCertificate {
   
-  @scala.inline
-  def apply(expires: Double, getFingerprints: () => js.Array[RTCDtlsFingerprint]): RTCCertificate = {
+  inline def apply(expires: Double, getFingerprints: () => js.Array[RTCDtlsFingerprint]): RTCCertificate = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], getFingerprints = js.Any.fromFunction0(getFingerprints))
     __obj.asInstanceOf[RTCCertificate]
   }
   
-  @scala.inline
-  implicit class RTCCertificateMutableBuilder[Self <: RTCCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: RTCCertificate](x: Self) {
     
-    @scala.inline
-    def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFingerprints(value: () => js.Array[RTCDtlsFingerprint]): Self = StObject.set(x, "getFingerprints", js.Any.fromFunction0(value))
+    inline def setGetFingerprints(value: () => js.Array[RTCDtlsFingerprint]): Self = StObject.set(x, "getFingerprints", js.Any.fromFunction0(value))
   }
 }

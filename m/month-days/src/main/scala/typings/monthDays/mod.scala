@@ -15,10 +15,8 @@ object mod {
   //=> 29
   ```
   */
-  @scala.inline
-  def apply(): Double = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Double]
-  @scala.inline
-  def apply(options: Options): Double = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(): Double = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Double]
+  inline def apply(options: Options): Double = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("month-days", JSImport.Namespace)
   @js.native
@@ -39,26 +37,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
 }

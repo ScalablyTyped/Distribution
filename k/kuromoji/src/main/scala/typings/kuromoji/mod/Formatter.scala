@@ -12,8 +12,7 @@ trait Formatter[T] extends StObject {
 }
 object Formatter {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     formatEntry: (Double, Double, String, js.Array[String]) => T,
     formatUnknownEntry: (Double, Double, String, js.Array[String]) => T
   ): Formatter[T] = {
@@ -21,13 +20,10 @@ object Formatter {
     __obj.asInstanceOf[Formatter[T]]
   }
   
-  @scala.inline
-  implicit class FormatterMutableBuilder[Self <: Formatter[?], T] (val x: Self & Formatter[T]) extends AnyVal {
+  extension [Self <: Formatter[?], T](x: Self & Formatter[T]) {
     
-    @scala.inline
-    def setFormatEntry(value: (Double, Double, String, js.Array[String]) => T): Self = StObject.set(x, "formatEntry", js.Any.fromFunction4(value))
+    inline def setFormatEntry(value: (Double, Double, String, js.Array[String]) => T): Self = StObject.set(x, "formatEntry", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFormatUnknownEntry(value: (Double, Double, String, js.Array[String]) => T): Self = StObject.set(x, "formatUnknownEntry", js.Any.fromFunction4(value))
+    inline def setFormatUnknownEntry(value: (Double, Double, String, js.Array[String]) => T): Self = StObject.set(x, "formatUnknownEntry", js.Any.fromFunction4(value))
   }
 }

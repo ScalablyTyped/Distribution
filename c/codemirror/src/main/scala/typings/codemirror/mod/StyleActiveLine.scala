@@ -13,16 +13,13 @@ trait StyleActiveLine extends StObject {
 }
 object StyleActiveLine {
   
-  @scala.inline
-  def apply(nonEmpty: Boolean): StyleActiveLine = {
+  inline def apply(nonEmpty: Boolean): StyleActiveLine = {
     val __obj = js.Dynamic.literal(nonEmpty = nonEmpty.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleActiveLine]
   }
   
-  @scala.inline
-  implicit class StyleActiveLineMutableBuilder[Self <: StyleActiveLine] (val x: Self) extends AnyVal {
+  extension [Self <: StyleActiveLine](x: Self) {
     
-    @scala.inline
-    def setNonEmpty(value: Boolean): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
+    inline def setNonEmpty(value: Boolean): Self = StObject.set(x, "nonEmpty", value.asInstanceOf[js.Any])
   }
 }

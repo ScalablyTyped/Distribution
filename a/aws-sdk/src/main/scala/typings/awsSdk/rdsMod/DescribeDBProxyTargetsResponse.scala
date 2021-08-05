@@ -18,28 +18,21 @@ trait DescribeDBProxyTargetsResponse extends StObject {
 }
 object DescribeDBProxyTargetsResponse {
   
-  @scala.inline
-  def apply(): DescribeDBProxyTargetsResponse = {
+  inline def apply(): DescribeDBProxyTargetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDBProxyTargetsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDBProxyTargetsResponseMutableBuilder[Self <: DescribeDBProxyTargetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDBProxyTargetsResponse](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setTargets(value: TargetList): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: TargetList): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
+    inline def setTargetsUndefined: Self = StObject.set(x, "Targets", js.undefined)
     
-    @scala.inline
-    def setTargetsVarargs(value: DBProxyTarget*): Self = StObject.set(x, "Targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: DBProxyTarget*): Self = StObject.set(x, "Targets", js.Array(value :_*))
   }
 }

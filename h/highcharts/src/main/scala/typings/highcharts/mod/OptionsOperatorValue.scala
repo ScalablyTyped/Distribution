@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsOperatorValue extends StObject
 object OptionsOperatorValue {
   
-  @scala.inline
-  def EqualssignEqualssign: typings.highcharts.highchartsStrings.EqualssignEqualssign = "==".asInstanceOf[typings.highcharts.highchartsStrings.EqualssignEqualssign]
+  inline def EqualssignEqualssign: typings.highcharts.highchartsStrings.EqualssignEqualssign = "==".asInstanceOf[typings.highcharts.highchartsStrings.EqualssignEqualssign]
   
-  @scala.inline
-  def EqualssignEqualssignEqualssign: typings.highcharts.highchartsStrings.EqualssignEqualssignEqualssign = "===".asInstanceOf[typings.highcharts.highchartsStrings.EqualssignEqualssignEqualssign]
+  inline def EqualssignEqualssignEqualssign: typings.highcharts.highchartsStrings.EqualssignEqualssignEqualssign = "===".asInstanceOf[typings.highcharts.highchartsStrings.EqualssignEqualssignEqualssign]
   
-  @scala.inline
-  def Greaterthansign: typings.highcharts.highchartsStrings.Greaterthansign = ">".asInstanceOf[typings.highcharts.highchartsStrings.Greaterthansign]
+  inline def Greaterthansign: typings.highcharts.highchartsStrings.Greaterthansign = ">".asInstanceOf[typings.highcharts.highchartsStrings.Greaterthansign]
   
-  @scala.inline
-  def GreaterthansignEqualssign: typings.highcharts.highchartsStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.highcharts.highchartsStrings.GreaterthansignEqualssign]
+  inline def GreaterthansignEqualssign: typings.highcharts.highchartsStrings.GreaterthansignEqualssign = ">=".asInstanceOf[typings.highcharts.highchartsStrings.GreaterthansignEqualssign]
   
-  @scala.inline
-  def Lessthansign: typings.highcharts.highchartsStrings.Lessthansign = "<".asInstanceOf[typings.highcharts.highchartsStrings.Lessthansign]
+  inline def Lessthansign: typings.highcharts.highchartsStrings.Lessthansign = "<".asInstanceOf[typings.highcharts.highchartsStrings.Lessthansign]
   
-  @scala.inline
-  def LessthansignEqualssign: typings.highcharts.highchartsStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.highcharts.highchartsStrings.LessthansignEqualssign]
+  inline def LessthansignEqualssign: typings.highcharts.highchartsStrings.LessthansignEqualssign = "<=".asInstanceOf[typings.highcharts.highchartsStrings.LessthansignEqualssign]
 }

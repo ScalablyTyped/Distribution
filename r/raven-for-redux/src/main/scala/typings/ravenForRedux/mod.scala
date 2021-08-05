@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(raven: RavenStatic): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].apply(raven.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  @scala.inline
-  def apply(raven: RavenStatic, options: RavenMiddlewareOptions[js.Any]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].apply(raven.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def apply(raven: RavenStatic): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].apply(raven.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def apply(raven: RavenStatic, options: RavenMiddlewareOptions[js.Any]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].apply(raven.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
   @JSImport("raven-for-redux", JSImport.Namespace)
   @js.native
@@ -36,50 +34,36 @@ object mod {
   }
   object RavenMiddlewareOptions {
     
-    @scala.inline
-    def apply[T](): RavenMiddlewareOptions[T] = {
+    inline def apply[T](): RavenMiddlewareOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RavenMiddlewareOptions[T]]
     }
     
-    @scala.inline
-    implicit class RavenMiddlewareOptionsMutableBuilder[Self <: RavenMiddlewareOptions[?], T] (val x: Self & RavenMiddlewareOptions[T]) extends AnyVal {
+    extension [Self <: RavenMiddlewareOptions[?], T](x: Self & RavenMiddlewareOptions[T]) {
       
-      @scala.inline
-      def setActionTransformer(value: /* action */ Action[js.Any] => Action[js.Any]): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
+      inline def setActionTransformer(value: /* action */ Action[js.Any] => Action[js.Any]): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionTransformerUndefined: Self = StObject.set(x, "actionTransformer", js.undefined)
+      inline def setActionTransformerUndefined: Self = StObject.set(x, "actionTransformer", js.undefined)
       
-      @scala.inline
-      def setBreadcrumbCategory(value: String): Self = StObject.set(x, "breadcrumbCategory", value.asInstanceOf[js.Any])
+      inline def setBreadcrumbCategory(value: String): Self = StObject.set(x, "breadcrumbCategory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreadcrumbCategoryUndefined: Self = StObject.set(x, "breadcrumbCategory", js.undefined)
+      inline def setBreadcrumbCategoryUndefined: Self = StObject.set(x, "breadcrumbCategory", js.undefined)
       
-      @scala.inline
-      def setBreadcrumbDataFromAction(value: /* action */ Action[js.Any] => js.Any): Self = StObject.set(x, "breadcrumbDataFromAction", js.Any.fromFunction1(value))
+      inline def setBreadcrumbDataFromAction(value: /* action */ Action[js.Any] => js.Any): Self = StObject.set(x, "breadcrumbDataFromAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBreadcrumbDataFromActionUndefined: Self = StObject.set(x, "breadcrumbDataFromAction", js.undefined)
+      inline def setBreadcrumbDataFromActionUndefined: Self = StObject.set(x, "breadcrumbDataFromAction", js.undefined)
       
-      @scala.inline
-      def setFilterBreadcrumbActions(value: /* action */ Action[js.Any] => Boolean): Self = StObject.set(x, "filterBreadcrumbActions", js.Any.fromFunction1(value))
+      inline def setFilterBreadcrumbActions(value: /* action */ Action[js.Any] => Boolean): Self = StObject.set(x, "filterBreadcrumbActions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterBreadcrumbActionsUndefined: Self = StObject.set(x, "filterBreadcrumbActions", js.undefined)
+      inline def setFilterBreadcrumbActionsUndefined: Self = StObject.set(x, "filterBreadcrumbActions", js.undefined)
       
-      @scala.inline
-      def setGetUserContext(value: /* state */ T => RavenUserContext): Self = StObject.set(x, "getUserContext", js.Any.fromFunction1(value))
+      inline def setGetUserContext(value: /* state */ T => RavenUserContext): Self = StObject.set(x, "getUserContext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUserContextUndefined: Self = StObject.set(x, "getUserContext", js.undefined)
+      inline def setGetUserContextUndefined: Self = StObject.set(x, "getUserContext", js.undefined)
       
-      @scala.inline
-      def setStateTransformer(value: /* state */ T => T): Self = StObject.set(x, "stateTransformer", js.Any.fromFunction1(value))
+      inline def setStateTransformer(value: /* state */ T => T): Self = StObject.set(x, "stateTransformer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStateTransformerUndefined: Self = StObject.set(x, "stateTransformer", js.undefined)
+      inline def setStateTransformerUndefined: Self = StObject.set(x, "stateTransformer", js.undefined)
     }
   }
   
@@ -93,32 +77,24 @@ object mod {
   }
   object RavenUserContext {
     
-    @scala.inline
-    def apply(): RavenUserContext = {
+    inline def apply(): RavenUserContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RavenUserContext]
     }
     
-    @scala.inline
-    implicit class RavenUserContextMutableBuilder[Self <: RavenUserContext] (val x: Self) extends AnyVal {
+    extension [Self <: RavenUserContext](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
 }

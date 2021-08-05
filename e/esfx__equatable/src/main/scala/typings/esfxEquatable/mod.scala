@@ -25,15 +25,13 @@ object mod {
     /**
       * Determines whether a value is Comparable.
       */
-    @scala.inline
-    def hasInstance(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.Comparable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.Comparable */ Boolean]
+    inline def hasInstance(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.Comparable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.Comparable */ Boolean]
     
     /**
       * Determines whether a value is Comparable.
       * @deprecated Use `Comparable.hasInstance` instead.
       */
-    @scala.inline
-    def isComparable(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.Comparable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComparable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.Comparable */ Boolean]
+    inline def isComparable(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.Comparable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComparable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.Comparable */ Boolean]
     
     @JSImport("@esfx/equatable", "Comparable.name")
     @js.native
@@ -49,8 +47,7 @@ object mod {
     /**
       * Creates a `Comparer` from a comparison function.
       */
-    @scala.inline
-    def create[T](comparison: Comparison[T]): typings.esfxEquatable.distMod.Comparer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(comparison.asInstanceOf[js.Any]).asInstanceOf[typings.esfxEquatable.distMod.Comparer[T]]
+    inline def create[T](comparison: Comparison[T]): typings.esfxEquatable.distMod.Comparer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(comparison.asInstanceOf[js.Any]).asInstanceOf[typings.esfxEquatable.distMod.Comparer[T]]
     
     /**
       * The default `Comparer`.
@@ -90,10 +87,8 @@ object mod {
     /**
       * Creates an `Equaler` from a comparison function and an optional hash generator.
       */
-    @scala.inline
-    def create[T](equalityComparison: EqualityComparison[T]): typings.esfxEquatable.distMod.Equaler[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(equalityComparison.asInstanceOf[js.Any]).asInstanceOf[typings.esfxEquatable.distMod.Equaler[T]]
-    @scala.inline
-    def create[T](equalityComparison: EqualityComparison[T], hashGenerator: HashGenerator[T]): typings.esfxEquatable.distMod.Equaler[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(equalityComparison.asInstanceOf[js.Any], hashGenerator.asInstanceOf[js.Any])).asInstanceOf[typings.esfxEquatable.distMod.Equaler[T]]
+    inline def create[T](equalityComparison: EqualityComparison[T]): typings.esfxEquatable.distMod.Equaler[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(equalityComparison.asInstanceOf[js.Any]).asInstanceOf[typings.esfxEquatable.distMod.Equaler[T]]
+    inline def create[T](equalityComparison: EqualityComparison[T], hashGenerator: HashGenerator[T]): typings.esfxEquatable.distMod.Equaler[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(equalityComparison.asInstanceOf[js.Any], hashGenerator.asInstanceOf[js.Any])).asInstanceOf[typings.esfxEquatable.distMod.Equaler[T]]
     
     /**
       * Gets the default `Equaler`.
@@ -140,8 +135,7 @@ object mod {
     /**
       * Determines whether a value is Equatable.
       */
-    @scala.inline
-    def hasInstance(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.Equatable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.Equatable */ Boolean]
+    inline def hasInstance(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.Equatable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.Equatable */ Boolean]
     
     /**
       * A well-known symbol used to define a hashing method on a value.
@@ -154,8 +148,7 @@ object mod {
       * Determines whether a value is Equatable.
       * @deprecated Use `Equatable.hasInstance` instead.
       */
-    @scala.inline
-    def isEquatable(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.Equatable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEquatable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.Equatable */ Boolean]
+    inline def isEquatable(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.Equatable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEquatable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.Equatable */ Boolean]
     
     @JSImport("@esfx/equatable", "Equatable.name")
     @js.native
@@ -171,15 +164,13 @@ object mod {
     /**
       * Determines whether a value is StructuralComparable.
       */
-    @scala.inline
-    def hasInstance(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.StructuralComparable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.StructuralComparable */ Boolean]
+    inline def hasInstance(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.StructuralComparable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.StructuralComparable */ Boolean]
     
     /**
       * Determines whether a value is StructuralComparable.
       * @deprecated Use `StructuralComparable.hasInstance` instead.
       */
-    @scala.inline
-    def isStructuralComparable(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.StructuralComparable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStructuralComparable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.StructuralComparable */ Boolean]
+    inline def isStructuralComparable(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.StructuralComparable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStructuralComparable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.StructuralComparable */ Boolean]
     
     @JSImport("@esfx/equatable", "StructuralComparable.name")
     @js.native
@@ -202,15 +193,13 @@ object mod {
     /**
       * Determines whether a value is StructuralEquatable.
       */
-    @scala.inline
-    def hasInstance(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.StructuralEquatable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.StructuralEquatable */ Boolean]
+    inline def hasInstance(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.StructuralEquatable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasInstance")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.StructuralEquatable */ Boolean]
     
     /**
       * Determines whether a value is StructuralEquatable.
       * @deprecated Use `StructuralEquatable.hasInstance` instead.
       */
-    @scala.inline
-    def isStructuralEquatable(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.StructuralEquatable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStructuralEquatable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.StructuralEquatable */ Boolean]
+    inline def isStructuralEquatable(value: js.Any): /* is @esfx/equatable.@esfx/equatable/dist.StructuralEquatable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStructuralEquatable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @esfx/equatable.@esfx/equatable/dist.StructuralEquatable */ Boolean]
     
     @JSImport("@esfx/equatable", "StructuralEquatable.name")
     @js.native

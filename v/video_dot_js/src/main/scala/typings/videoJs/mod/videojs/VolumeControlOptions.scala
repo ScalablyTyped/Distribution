@@ -14,25 +14,19 @@ trait VolumeControlOptions
 }
 object VolumeControlOptions {
   
-  @scala.inline
-  def apply(): VolumeControlOptions = {
+  inline def apply(): VolumeControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeControlOptions]
   }
   
-  @scala.inline
-  implicit class VolumeControlOptionsMutableBuilder[Self <: VolumeControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeControlOptions](x: Self) {
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     
-    @scala.inline
-    def setVolumeBar(value: VolumeBar): Self = StObject.set(x, "volumeBar", value.asInstanceOf[js.Any])
+    inline def setVolumeBar(value: VolumeBar): Self = StObject.set(x, "volumeBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeBarUndefined: Self = StObject.set(x, "volumeBar", js.undefined)
+    inline def setVolumeBarUndefined: Self = StObject.set(x, "volumeBar", js.undefined)
   }
 }

@@ -16,14 +16,12 @@ object converter {
     * @param mtype Message type
     * @returns Codegen instance
     */
-  @scala.inline
-  def fromObject(mtype: typings.apolloProtobufjs.mod.Type): Codegen = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(mtype.asInstanceOf[js.Any]).asInstanceOf[Codegen]
+  inline def fromObject(mtype: typings.apolloProtobufjs.mod.Type): Codegen = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(mtype.asInstanceOf[js.Any]).asInstanceOf[Codegen]
   
   /**
     * Generates a runtime message to plain object converter specific to the specified message type.
     * @param mtype Message type
     * @returns Codegen instance
     */
-  @scala.inline
-  def toObject(mtype: typings.apolloProtobufjs.mod.Type): Codegen = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(mtype.asInstanceOf[js.Any]).asInstanceOf[Codegen]
+  inline def toObject(mtype: typings.apolloProtobufjs.mod.Type): Codegen = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(mtype.asInstanceOf[js.Any]).asInstanceOf[Codegen]
 }

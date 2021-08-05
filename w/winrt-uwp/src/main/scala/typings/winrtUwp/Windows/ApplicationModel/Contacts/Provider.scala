@@ -102,17 +102,14 @@ object Provider {
   }
   object ContactRemovedEventArgs {
     
-    @scala.inline
-    def apply(id: String): ContactRemovedEventArgs = {
+    inline def apply(id: String): ContactRemovedEventArgs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContactRemovedEventArgs]
     }
     
-    @scala.inline
-    implicit class ContactRemovedEventArgsMutableBuilder[Self <: ContactRemovedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ContactRemovedEventArgs](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -38,49 +38,35 @@ trait ListTypeRegistrationsInput extends StObject {
 }
 object ListTypeRegistrationsInput {
   
-  @scala.inline
-  def apply(): ListTypeRegistrationsInput = {
+  inline def apply(): ListTypeRegistrationsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTypeRegistrationsInput]
   }
   
-  @scala.inline
-  implicit class ListTypeRegistrationsInputMutableBuilder[Self <: ListTypeRegistrationsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTypeRegistrationsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRegistrationStatusFilter(value: RegistrationStatus): Self = StObject.set(x, "RegistrationStatusFilter", value.asInstanceOf[js.Any])
+    inline def setRegistrationStatusFilter(value: RegistrationStatus): Self = StObject.set(x, "RegistrationStatusFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationStatusFilterUndefined: Self = StObject.set(x, "RegistrationStatusFilter", js.undefined)
+    inline def setRegistrationStatusFilterUndefined: Self = StObject.set(x, "RegistrationStatusFilter", js.undefined)
     
-    @scala.inline
-    def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArn(value: TypeArn): Self = StObject.set(x, "TypeArn", value.asInstanceOf[js.Any])
+    inline def setTypeArn(value: TypeArn): Self = StObject.set(x, "TypeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArnUndefined: Self = StObject.set(x, "TypeArn", js.undefined)
+    inline def setTypeArnUndefined: Self = StObject.set(x, "TypeArn", js.undefined)
     
-    @scala.inline
-    def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
+    inline def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

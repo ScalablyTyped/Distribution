@@ -12,48 +12,41 @@ object whatInputStrings {
   sealed trait initial
     extends StObject
        with InputMethod
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
   sealed trait input
     extends StObject
        with Strategy
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
   sealed trait intent
     extends StObject
        with Strategy
-  @scala.inline
-  def intent: intent = "intent".asInstanceOf[intent]
+  inline def intent: intent = "intent".asInstanceOf[intent]
   
   @js.native
   sealed trait keyboard
     extends StObject
        with InputMethod
-  @scala.inline
-  def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
+  inline def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
   
   @js.native
   sealed trait mouse
     extends StObject
        with InputMethod
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
   sealed trait pointer
     extends StObject
        with InputMethod
-  @scala.inline
-  def pointer: pointer = "pointer".asInstanceOf[pointer]
+  inline def pointer: pointer = "pointer".asInstanceOf[pointer]
   
   @js.native
   sealed trait touch
     extends StObject
        with InputMethod
-  @scala.inline
-  def touch: touch = "touch".asInstanceOf[touch]
+  inline def touch: touch = "touch".asInstanceOf[touch]
 }

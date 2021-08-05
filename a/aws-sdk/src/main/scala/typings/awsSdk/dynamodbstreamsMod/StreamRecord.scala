@@ -43,55 +43,39 @@ trait StreamRecord extends StObject {
 }
 object StreamRecord {
   
-  @scala.inline
-  def apply(): StreamRecord = {
+  inline def apply(): StreamRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamRecord]
   }
   
-  @scala.inline
-  implicit class StreamRecordMutableBuilder[Self <: StreamRecord] (val x: Self) extends AnyVal {
+  extension [Self <: StreamRecord](x: Self) {
     
-    @scala.inline
-    def setApproximateCreationDateTime(value: Date): Self = StObject.set(x, "ApproximateCreationDateTime", value.asInstanceOf[js.Any])
+    inline def setApproximateCreationDateTime(value: Date): Self = StObject.set(x, "ApproximateCreationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproximateCreationDateTimeUndefined: Self = StObject.set(x, "ApproximateCreationDateTime", js.undefined)
+    inline def setApproximateCreationDateTimeUndefined: Self = StObject.set(x, "ApproximateCreationDateTime", js.undefined)
     
-    @scala.inline
-    def setKeys(value: AttributeMap): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: AttributeMap): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    @scala.inline
-    def setNewImage(value: AttributeMap): Self = StObject.set(x, "NewImage", value.asInstanceOf[js.Any])
+    inline def setNewImage(value: AttributeMap): Self = StObject.set(x, "NewImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewImageUndefined: Self = StObject.set(x, "NewImage", js.undefined)
+    inline def setNewImageUndefined: Self = StObject.set(x, "NewImage", js.undefined)
     
-    @scala.inline
-    def setOldImage(value: AttributeMap): Self = StObject.set(x, "OldImage", value.asInstanceOf[js.Any])
+    inline def setOldImage(value: AttributeMap): Self = StObject.set(x, "OldImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldImageUndefined: Self = StObject.set(x, "OldImage", js.undefined)
+    inline def setOldImageUndefined: Self = StObject.set(x, "OldImage", js.undefined)
     
-    @scala.inline
-    def setSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+    inline def setSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
+    inline def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
     
-    @scala.inline
-    def setSizeBytes(value: PositiveLongObject): Self = StObject.set(x, "SizeBytes", value.asInstanceOf[js.Any])
+    inline def setSizeBytes(value: PositiveLongObject): Self = StObject.set(x, "SizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeBytesUndefined: Self = StObject.set(x, "SizeBytes", js.undefined)
+    inline def setSizeBytesUndefined: Self = StObject.set(x, "SizeBytes", js.undefined)
     
-    @scala.inline
-    def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
+    inline def setStreamViewType(value: StreamViewType): Self = StObject.set(x, "StreamViewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
+    inline def setStreamViewTypeUndefined: Self = StObject.set(x, "StreamViewType", js.undefined)
   }
 }

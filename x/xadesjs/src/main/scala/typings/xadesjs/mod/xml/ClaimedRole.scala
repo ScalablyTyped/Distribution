@@ -13,6 +13,5 @@ class ClaimedRole ()
   extends typings.xadesjs.xmlMod.ClaimedRole
 object ClaimedRole {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.ClaimedRole] = ^.asInstanceOf[js.Dynamic].selectDynamic("ClaimedRole").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ClaimedRole]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.ClaimedRole] = ^.asInstanceOf[js.Dynamic].selectDynamic("ClaimedRole").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.ClaimedRole]]
 }

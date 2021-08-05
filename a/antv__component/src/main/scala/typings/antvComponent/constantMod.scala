@@ -15,14 +15,12 @@ object constantMod {
     @JSImport("@antv/component/lib/slider/constant", "BACKGROUND_STYLE.fill")
     @js.native
     def fill: String = js.native
-    @scala.inline
-    def fill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
+    inline def fill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/component/lib/slider/constant", "BACKGROUND_STYLE.opacity")
     @js.native
     def opacity: Double = js.native
-    @scala.inline
-    def opacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opacity")(x.asInstanceOf[js.Any])
+    inline def opacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opacity")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@antv/component/lib/slider/constant", "DEFAULT_HANDLER_WIDTH")
@@ -38,20 +36,17 @@ object constantMod {
     @JSImport("@antv/component/lib/slider/constant", "FOREGROUND_STYLE.cursor")
     @js.native
     def cursor: String = js.native
-    @scala.inline
-    def cursor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursor")(x.asInstanceOf[js.Any])
+    inline def cursor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursor")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/component/lib/slider/constant", "FOREGROUND_STYLE.fill")
     @js.native
     def fill: String = js.native
-    @scala.inline
-    def fill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
+    inline def fill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/component/lib/slider/constant", "FOREGROUND_STYLE.opacity")
     @js.native
     def opacity: Double = js.native
-    @scala.inline
-    def opacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opacity")(x.asInstanceOf[js.Any])
+    inline def opacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opacity")(x.asInstanceOf[js.Any])
   }
   
   object HANDLER_STYLE {
@@ -63,14 +58,12 @@ object constantMod {
     @JSImport("@antv/component/lib/slider/constant", "HANDLER_STYLE.height")
     @js.native
     def height: Double = js.native
-    @scala.inline
-    def height_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
+    inline def height_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("height")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/component/lib/slider/constant", "HANDLER_STYLE.width")
     @js.native
     def width: Double = js.native
-    @scala.inline
-    def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
+    inline def width_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("width")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@antv/component/lib/slider/constant", "SLIDER_CHANGE")
@@ -86,19 +79,16 @@ object constantMod {
     @JSImport("@antv/component/lib/slider/constant", "TEXT_STYLE.fill")
     @js.native
     def fill: String = js.native
-    @scala.inline
-    def fill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
+    inline def fill_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/component/lib/slider/constant", "TEXT_STYLE.opacity")
     @js.native
     def opacity: Double = js.native
-    @scala.inline
-    def opacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opacity")(x.asInstanceOf[js.Any])
+    inline def opacity_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opacity")(x.asInstanceOf[js.Any])
     
     @JSImport("@antv/component/lib/slider/constant", "TEXT_STYLE.textBaseline")
     @js.native
     def textBaseline: String = js.native
-    @scala.inline
-    def textBaseline_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textBaseline")(x.asInstanceOf[js.Any])
+    inline def textBaseline_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textBaseline")(x.asInstanceOf[js.Any])
   }
 }

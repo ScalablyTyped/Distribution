@@ -20,8 +20,7 @@ trait PipeableCompactable2[F /* <: /* import warning: transforms.QualifyReferenc
 }
 object PipeableCompactable2 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
     compact: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Option<A>> */ js.Any => js.Any,
     separate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Either<A, B>> */ js.Any => Separated[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, 
@@ -32,16 +31,13 @@ object PipeableCompactable2 {
     __obj.asInstanceOf[PipeableCompactable2[F]]
   }
   
-  @scala.inline
-  implicit class PipeableCompactable2MutableBuilder[Self <: PipeableCompactable2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & PipeableCompactable2[F]) extends AnyVal {
+  extension [Self <: PipeableCompactable2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & PipeableCompactable2[F]) {
     
-    @scala.inline
-    def setCompact(
+    inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Option<A>> */ js.Any => js.Any
     ): Self = StObject.set(x, "compact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparate(
+    inline def setSeparate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Either<A, B>> */ js.Any => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any

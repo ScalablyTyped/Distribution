@@ -13,19 +13,15 @@ trait OptionsForExternalUrlAsValidationTargetAndObjectAsResult
 }
 object OptionsForExternalUrlAsValidationTargetAndObjectAsResult {
   
-  @scala.inline
-  def apply(url: String): OptionsForExternalUrlAsValidationTargetAndObjectAsResult = {
+  inline def apply(url: String): OptionsForExternalUrlAsValidationTargetAndObjectAsResult = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsForExternalUrlAsValidationTargetAndObjectAsResult]
   }
   
-  @scala.inline
-  implicit class OptionsForExternalUrlAsValidationTargetAndObjectAsResultMutableBuilder[Self <: OptionsForExternalUrlAsValidationTargetAndObjectAsResult] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsForExternalUrlAsValidationTargetAndObjectAsResult](x: Self) {
     
-    @scala.inline
-    def setFormat(value: json): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: json): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

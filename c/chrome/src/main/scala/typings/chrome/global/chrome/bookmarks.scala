@@ -33,41 +33,29 @@ object bookmarks {
   @JSGlobal("chrome.bookmarks.MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE")
   @js.native
   def MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE: Double = js.native
-  @scala.inline
-  def MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE")(x.asInstanceOf[js.Any])
+  inline def MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_SUSTAINED_WRITE_OPERATIONS_PER_MINUTE")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.bookmarks.MAX_WRITE_OPERATIONS_PER_HOUR")
   @js.native
   def MAX_WRITE_OPERATIONS_PER_HOUR: Double = js.native
-  @scala.inline
-  def MAX_WRITE_OPERATIONS_PER_HOUR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_WRITE_OPERATIONS_PER_HOUR")(x.asInstanceOf[js.Any])
+  inline def MAX_WRITE_OPERATIONS_PER_HOUR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_WRITE_OPERATIONS_PER_HOUR")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def create(bookmark: BookmarkCreateArg): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(bookmark.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def create(bookmark: BookmarkCreateArg, callback: js.Function1[/* result */ BookmarkTreeNode, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(bookmark.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(bookmark: BookmarkCreateArg): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(bookmark.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def create(bookmark: BookmarkCreateArg, callback: js.Function1[/* result */ BookmarkTreeNode, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(bookmark.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def get(idList: js.Array[String], callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(idList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def get(id: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def get(idList: js.Array[String], callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(idList.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def get(id: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getChildren(id: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getChildren(id: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getRecent(numberOfItems: Double, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getRecent")(numberOfItems.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getRecent(numberOfItems: Double, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getRecent")(numberOfItems.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getSubTree(id: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubTree")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getSubTree(id: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubTree")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getTree(callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTree")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getTree(callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTree")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def move(id: String, destination: BookmarkDestinationArg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(id.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def move(
+  inline def move(id: String, destination: BookmarkDestinationArg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(id.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def move(
     id: String,
     destination: BookmarkDestinationArg,
     callback: js.Function1[/* result */ BookmarkTreeNode, Unit]
@@ -76,64 +64,49 @@ object bookmarks {
   @JSGlobal("chrome.bookmarks.onChanged")
   @js.native
   def onChanged: BookmarkChangedEvent = js.native
-  @scala.inline
-  def onChanged_=(x: BookmarkChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChanged")(x.asInstanceOf[js.Any])
+  inline def onChanged_=(x: BookmarkChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChanged")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.bookmarks.onChildrenReordered")
   @js.native
   def onChildrenReordered: BookmarkChildrenReordered = js.native
-  @scala.inline
-  def onChildrenReordered_=(x: BookmarkChildrenReordered): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChildrenReordered")(x.asInstanceOf[js.Any])
+  inline def onChildrenReordered_=(x: BookmarkChildrenReordered): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChildrenReordered")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.bookmarks.onCreated")
   @js.native
   def onCreated: BookmarkCreatedEvent = js.native
-  @scala.inline
-  def onCreated_=(x: BookmarkCreatedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onCreated")(x.asInstanceOf[js.Any])
+  inline def onCreated_=(x: BookmarkCreatedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onCreated")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.bookmarks.onImportBegan")
   @js.native
   def onImportBegan: BookmarkImportBeganEvent = js.native
-  @scala.inline
-  def onImportBegan_=(x: BookmarkImportBeganEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onImportBegan")(x.asInstanceOf[js.Any])
+  inline def onImportBegan_=(x: BookmarkImportBeganEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onImportBegan")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.bookmarks.onImportEnded")
   @js.native
   def onImportEnded: BookmarkImportEndedEvent = js.native
-  @scala.inline
-  def onImportEnded_=(x: BookmarkImportEndedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onImportEnded")(x.asInstanceOf[js.Any])
+  inline def onImportEnded_=(x: BookmarkImportEndedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onImportEnded")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.bookmarks.onMoved")
   @js.native
   def onMoved: BookmarkMovedEvent = js.native
-  @scala.inline
-  def onMoved_=(x: BookmarkMovedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onMoved")(x.asInstanceOf[js.Any])
+  inline def onMoved_=(x: BookmarkMovedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onMoved")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.bookmarks.onRemoved")
   @js.native
   def onRemoved: BookmarkRemovedEvent = js.native
-  @scala.inline
-  def onRemoved_=(x: BookmarkRemovedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRemoved")(x.asInstanceOf[js.Any])
+  inline def onRemoved_=(x: BookmarkRemovedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRemoved")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def remove(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def remove(id: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remove(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(id: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeTree(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def removeTree(id: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeTree(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeTree(id: String, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def search(query: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def search(query: BookmarkSearchQuery, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def search(query: String, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def search(query: BookmarkSearchQuery, callback: js.Function1[/* results */ js.Array[BookmarkTreeNode], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def update(id: String, changes: BookmarkChangesArg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(
+  inline def update(id: String, changes: BookmarkChangesArg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(
     id: String,
     changes: BookmarkChangesArg,
     callback: js.Function1[/* result */ BookmarkTreeNode, Unit]

@@ -26,25 +26,19 @@ trait NetworkEndpointGroupCloudFunction extends StObject {
 }
 object NetworkEndpointGroupCloudFunction {
   
-  @scala.inline
-  def apply(): NetworkEndpointGroupCloudFunction = {
+  inline def apply(): NetworkEndpointGroupCloudFunction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkEndpointGroupCloudFunction]
   }
   
-  @scala.inline
-  implicit class NetworkEndpointGroupCloudFunctionMutableBuilder[Self <: NetworkEndpointGroupCloudFunction] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkEndpointGroupCloudFunction](x: Self) {
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setUrlMask(value: String): Self = StObject.set(x, "urlMask", value.asInstanceOf[js.Any])
+    inline def setUrlMask(value: String): Self = StObject.set(x, "urlMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlMaskUndefined: Self = StObject.set(x, "urlMask", js.undefined)
+    inline def setUrlMaskUndefined: Self = StObject.set(x, "urlMask", js.undefined)
   }
 }

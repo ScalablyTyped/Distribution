@@ -21,8 +21,7 @@ object iAggFuncServiceMod {
   }
   object IAggFuncService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addAggFunc: (String, IAggFunc) => Unit,
       addAggFuncs: StringDictionary[IAggFunc] => Unit,
       clear: () => Unit,
@@ -32,20 +31,15 @@ object iAggFuncServiceMod {
       __obj.asInstanceOf[IAggFuncService]
     }
     
-    @scala.inline
-    implicit class IAggFuncServiceMutableBuilder[Self <: IAggFuncService] (val x: Self) extends AnyVal {
+    extension [Self <: IAggFuncService](x: Self) {
       
-      @scala.inline
-      def setAddAggFunc(value: (String, IAggFunc) => Unit): Self = StObject.set(x, "addAggFunc", js.Any.fromFunction2(value))
+      inline def setAddAggFunc(value: (String, IAggFunc) => Unit): Self = StObject.set(x, "addAggFunc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddAggFuncs(value: StringDictionary[IAggFunc] => Unit): Self = StObject.set(x, "addAggFuncs", js.Any.fromFunction1(value))
+      inline def setAddAggFuncs(value: StringDictionary[IAggFunc] => Unit): Self = StObject.set(x, "addAggFuncs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDefaultAggFunc(value: Column => String): Self = StObject.set(x, "getDefaultAggFunc", js.Any.fromFunction1(value))
+      inline def setGetDefaultAggFunc(value: Column => String): Self = StObject.set(x, "getDefaultAggFunc", js.Any.fromFunction1(value))
     }
   }
 }

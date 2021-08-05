@@ -12,6 +12,5 @@ object unidriverReactBaseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ReactBase(base: UniDriver[js.Any]): GetStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("ReactBase")(base.asInstanceOf[js.Any]).asInstanceOf[GetStyle]
+  inline def ReactBase(base: UniDriver[js.Any]): GetStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("ReactBase")(base.asInstanceOf[js.Any]).asInstanceOf[GetStyle]
 }

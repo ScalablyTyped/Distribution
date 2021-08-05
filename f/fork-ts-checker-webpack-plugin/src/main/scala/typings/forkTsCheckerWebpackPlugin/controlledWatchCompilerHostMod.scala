@@ -19,10 +19,8 @@ object controlledWatchCompilerHostMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](typescript: Typeofts, parsedCommandLine: ParsedCommandLine, system: ControlledTypeScriptSystem): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](typescript: Typeofts, parsedCommandLine: ParsedCommandLine, system: ControlledTypeScriptSystem): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -31,8 +29,7 @@ object controlledWatchCompilerHostMod {
     reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -42,8 +39,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -53,8 +49,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: Unit,
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -62,8 +57,7 @@ object controlledWatchCompilerHostMod {
     reportDiagnostic: Unit,
     reportWatchStatus: WatchStatusReporter
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -72,8 +66,7 @@ object controlledWatchCompilerHostMod {
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -83,8 +76,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -94,16 +86,14 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: Unit,
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: Unit,
     reportDiagnostic: DiagnosticReporter
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -112,8 +102,7 @@ object controlledWatchCompilerHostMod {
     reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -123,8 +112,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -134,8 +122,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: Unit,
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -143,8 +130,7 @@ object controlledWatchCompilerHostMod {
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -153,8 +139,7 @@ object controlledWatchCompilerHostMod {
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -164,8 +149,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -175,15 +159,13 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: Unit,
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -192,8 +174,7 @@ object controlledWatchCompilerHostMod {
     reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -203,8 +184,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -214,8 +194,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: Unit,
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -223,8 +202,7 @@ object controlledWatchCompilerHostMod {
     reportDiagnostic: Unit,
     reportWatchStatus: WatchStatusReporter
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -233,8 +211,7 @@ object controlledWatchCompilerHostMod {
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -244,8 +221,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -255,16 +231,14 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: Unit,
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
     createProgram: CreateProgram_[TProgram],
     reportDiagnostic: DiagnosticReporter
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -273,8 +247,7 @@ object controlledWatchCompilerHostMod {
     reportWatchStatus: Unit,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -284,8 +257,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -295,8 +267,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: Unit,
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -304,8 +275,7 @@ object controlledWatchCompilerHostMod {
     reportDiagnostic: DiagnosticReporter,
     reportWatchStatus: WatchStatusReporter
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -314,8 +284,7 @@ object controlledWatchCompilerHostMod {
     reportWatchStatus: WatchStatusReporter,
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,
@@ -325,8 +294,7 @@ object controlledWatchCompilerHostMod {
     afterProgramCreate: js.Function1[/* program */ TProgram, Unit],
     hostExtensions: js.Array[TypeScriptHostExtension]
   ): WatchCompilerHostOfFilesAndCompilerOptions[TProgram] = (^.asInstanceOf[js.Dynamic].applyDynamic("createControlledWatchCompilerHost")(typescript.asInstanceOf[js.Any], parsedCommandLine.asInstanceOf[js.Any], system.asInstanceOf[js.Any], createProgram.asInstanceOf[js.Any], reportDiagnostic.asInstanceOf[js.Any], reportWatchStatus.asInstanceOf[js.Any], afterProgramCreate.asInstanceOf[js.Any], hostExtensions.asInstanceOf[js.Any])).asInstanceOf[WatchCompilerHostOfFilesAndCompilerOptions[TProgram]]
-  @scala.inline
-  def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
+  inline def createControlledWatchCompilerHost[TProgram /* <: BuilderProgram */](
     typescript: Typeofts,
     parsedCommandLine: ParsedCommandLine,
     system: ControlledTypeScriptSystem,

@@ -20,8 +20,7 @@ trait `24` extends StObject {
 }
 object `24` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     scopeDescriptor: typings.atom.mod.ScopeDescriptor,
     value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`
   ): `24` = {
@@ -29,13 +28,10 @@ object `24` {
     __obj.asInstanceOf[`24`]
   }
   
-  @scala.inline
-  implicit class `24MutableBuilder`[Self <: `24`] (val x: Self) extends AnyVal {
+  extension [Self <: `24`](x: Self) {
     
-    @scala.inline
-    def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
+    inline def setScopeDescriptor(value: typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: `12px` | `14px` | `16px` | `18px` | `21px` | `24px` | `28px` | `32px`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

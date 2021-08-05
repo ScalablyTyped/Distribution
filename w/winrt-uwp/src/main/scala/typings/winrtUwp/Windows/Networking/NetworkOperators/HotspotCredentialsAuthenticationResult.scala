@@ -23,8 +23,7 @@ trait HotspotCredentialsAuthenticationResult extends StObject {
 }
 object HotspotCredentialsAuthenticationResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticationReplyXml: XmlDocument,
     hasNetworkErrorOccurred: Boolean,
     logoffUrl: Uri,
@@ -34,19 +33,14 @@ object HotspotCredentialsAuthenticationResult {
     __obj.asInstanceOf[HotspotCredentialsAuthenticationResult]
   }
   
-  @scala.inline
-  implicit class HotspotCredentialsAuthenticationResultMutableBuilder[Self <: HotspotCredentialsAuthenticationResult] (val x: Self) extends AnyVal {
+  extension [Self <: HotspotCredentialsAuthenticationResult](x: Self) {
     
-    @scala.inline
-    def setAuthenticationReplyXml(value: XmlDocument): Self = StObject.set(x, "authenticationReplyXml", value.asInstanceOf[js.Any])
+    inline def setAuthenticationReplyXml(value: XmlDocument): Self = StObject.set(x, "authenticationReplyXml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNetworkErrorOccurred(value: Boolean): Self = StObject.set(x, "hasNetworkErrorOccurred", value.asInstanceOf[js.Any])
+    inline def setHasNetworkErrorOccurred(value: Boolean): Self = StObject.set(x, "hasNetworkErrorOccurred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoffUrl(value: Uri): Self = StObject.set(x, "logoffUrl", value.asInstanceOf[js.Any])
+    inline def setLogoffUrl(value: Uri): Self = StObject.set(x, "logoffUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCode(value: HotspotAuthenticationResponseCode): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: HotspotAuthenticationResponseCode): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
   }
 }

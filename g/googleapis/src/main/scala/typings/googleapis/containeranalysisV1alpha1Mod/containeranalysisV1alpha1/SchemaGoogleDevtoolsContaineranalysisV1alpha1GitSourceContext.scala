@@ -22,25 +22,19 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext extends StOb
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext = {
+  inline def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContextMutableBuilder[Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1GitSourceContext](x: Self) {
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

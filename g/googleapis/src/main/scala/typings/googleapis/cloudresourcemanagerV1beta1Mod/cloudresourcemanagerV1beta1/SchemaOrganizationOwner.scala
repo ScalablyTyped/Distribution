@@ -19,19 +19,15 @@ trait SchemaOrganizationOwner extends StObject {
 }
 object SchemaOrganizationOwner {
   
-  @scala.inline
-  def apply(): SchemaOrganizationOwner = {
+  inline def apply(): SchemaOrganizationOwner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrganizationOwner]
   }
   
-  @scala.inline
-  implicit class SchemaOrganizationOwnerMutableBuilder[Self <: SchemaOrganizationOwner] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrganizationOwner](x: Self) {
     
-    @scala.inline
-    def setDirectoryCustomerId(value: String): Self = StObject.set(x, "directoryCustomerId", value.asInstanceOf[js.Any])
+    inline def setDirectoryCustomerId(value: String): Self = StObject.set(x, "directoryCustomerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryCustomerIdUndefined: Self = StObject.set(x, "directoryCustomerId", js.undefined)
+    inline def setDirectoryCustomerIdUndefined: Self = StObject.set(x, "directoryCustomerId", js.undefined)
   }
 }

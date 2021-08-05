@@ -52,21 +52,16 @@ object secretPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SecretPolicyState): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SecretPolicyState, opts: CustomResourceOptions): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
+    inline def get(name: String, id: Input[ID]): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
+    inline def get(name: String, id: Input[ID], state: SecretPolicyState): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
+    inline def get(name: String, id: Input[ID], state: SecretPolicyState, opts: CustomResourceOptions): SecretPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretPolicy]
     
     /**
       * Returns true if the given object is an instance of SecretPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/secretsmanager/secretPolicy.SecretPolicy */ Boolean]
   }
   
   trait SecretPolicyArgs extends StObject {
@@ -85,26 +80,20 @@ object secretPolicyMod {
   }
   object SecretPolicyArgs {
     
-    @scala.inline
-    def apply(policy: Input[String], secretArn: Input[String]): SecretPolicyArgs = {
+    inline def apply(policy: Input[String], secretArn: Input[String]): SecretPolicyArgs = {
       val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], secretArn = secretArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecretPolicyArgs]
     }
     
-    @scala.inline
-    implicit class SecretPolicyArgsMutableBuilder[Self <: SecretPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SecretPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setBlockPublicPolicy(value: Input[Boolean]): Self = StObject.set(x, "blockPublicPolicy", value.asInstanceOf[js.Any])
+      inline def setBlockPublicPolicy(value: Input[Boolean]): Self = StObject.set(x, "blockPublicPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockPublicPolicyUndefined: Self = StObject.set(x, "blockPublicPolicy", js.undefined)
+      inline def setBlockPublicPolicyUndefined: Self = StObject.set(x, "blockPublicPolicy", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretArn(value: Input[String]): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
+      inline def setSecretArn(value: Input[String]): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,32 +113,24 @@ object secretPolicyMod {
   }
   object SecretPolicyState {
     
-    @scala.inline
-    def apply(): SecretPolicyState = {
+    inline def apply(): SecretPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SecretPolicyState]
     }
     
-    @scala.inline
-    implicit class SecretPolicyStateMutableBuilder[Self <: SecretPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: SecretPolicyState](x: Self) {
       
-      @scala.inline
-      def setBlockPublicPolicy(value: Input[Boolean]): Self = StObject.set(x, "blockPublicPolicy", value.asInstanceOf[js.Any])
+      inline def setBlockPublicPolicy(value: Input[Boolean]): Self = StObject.set(x, "blockPublicPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockPublicPolicyUndefined: Self = StObject.set(x, "blockPublicPolicy", js.undefined)
+      inline def setBlockPublicPolicyUndefined: Self = StObject.set(x, "blockPublicPolicy", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setSecretArn(value: Input[String]): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
+      inline def setSecretArn(value: Input[String]): Self = StObject.set(x, "secretArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretArnUndefined: Self = StObject.set(x, "secretArn", js.undefined)
+      inline def setSecretArnUndefined: Self = StObject.set(x, "secretArn", js.undefined)
     }
   }
 }

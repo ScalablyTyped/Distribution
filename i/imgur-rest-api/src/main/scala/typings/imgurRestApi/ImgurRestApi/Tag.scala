@@ -18,34 +18,25 @@ trait Tag extends StObject {
 }
 object Tag {
   
-  @scala.inline
-  def apply(followers: Double, items: js.Array[GalleryItem], name: String, total_items: Double): Tag = {
+  inline def apply(followers: Double, items: js.Array[GalleryItem], name: String, total_items: Double): Tag = {
     val __obj = js.Dynamic.literal(followers = followers.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], total_items = total_items.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
   
-  @scala.inline
-  implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+  extension [Self <: Tag](x: Self) {
     
-    @scala.inline
-    def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+    inline def setFollowers(value: Double): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+    inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowingUndefined: Self = StObject.set(x, "following", js.undefined)
+    inline def setFollowingUndefined: Self = StObject.set(x, "following", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[GalleryItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[GalleryItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: GalleryItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: GalleryItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_items(value: Double): Self = StObject.set(x, "total_items", value.asInstanceOf[js.Any])
+    inline def setTotal_items(value: Double): Self = StObject.set(x, "total_items", value.asInstanceOf[js.Any])
   }
 }

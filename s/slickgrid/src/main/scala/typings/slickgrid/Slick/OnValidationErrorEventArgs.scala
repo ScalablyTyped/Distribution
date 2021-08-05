@@ -24,8 +24,7 @@ trait OnValidationErrorEventArgs[T /* <: SlickData */]
 }
 object OnValidationErrorEventArgs {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](
+  inline def apply[T /* <: SlickData */](
     cell: Double,
     cellNode: HTMLElement,
     column: Column[T],
@@ -38,25 +37,18 @@ object OnValidationErrorEventArgs {
     __obj.asInstanceOf[OnValidationErrorEventArgs[T]]
   }
   
-  @scala.inline
-  implicit class OnValidationErrorEventArgsMutableBuilder[Self <: OnValidationErrorEventArgs[?], T /* <: SlickData */] (val x: Self & OnValidationErrorEventArgs[T]) extends AnyVal {
+  extension [Self <: OnValidationErrorEventArgs[?], T /* <: SlickData */](x: Self & OnValidationErrorEventArgs[T]) {
     
-    @scala.inline
-    def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellNode(value: HTMLElement): Self = StObject.set(x, "cellNode", value.asInstanceOf[js.Any])
+    inline def setCellNode(value: HTMLElement): Self = StObject.set(x, "cellNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditor(value: Editor[T]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: Editor[T]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationResults(value: ValidateResults): Self = StObject.set(x, "validationResults", value.asInstanceOf[js.Any])
+    inline def setValidationResults(value: ValidateResults): Self = StObject.set(x, "validationResults", value.asInstanceOf[js.Any])
   }
 }

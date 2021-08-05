@@ -37,8 +37,7 @@ trait CSIVolumeSource extends StObject {
 }
 object CSIVolumeSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     driver: String,
     fsType: String,
     nodePublishSecretRef: LocalObjectReference,
@@ -49,22 +48,16 @@ object CSIVolumeSource {
     __obj.asInstanceOf[CSIVolumeSource]
   }
   
-  @scala.inline
-  implicit class CSIVolumeSourceMutableBuilder[Self <: CSIVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: CSIVolumeSource](x: Self) {
     
-    @scala.inline
-    def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePublishSecretRef(value: LocalObjectReference): Self = StObject.set(x, "nodePublishSecretRef", value.asInstanceOf[js.Any])
+    inline def setNodePublishSecretRef(value: LocalObjectReference): Self = StObject.set(x, "nodePublishSecretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeAttributes(value: StringDictionary[String]): Self = StObject.set(x, "volumeAttributes", value.asInstanceOf[js.Any])
+    inline def setVolumeAttributes(value: StringDictionary[String]): Self = StObject.set(x, "volumeAttributes", value.asInstanceOf[js.Any])
   }
 }

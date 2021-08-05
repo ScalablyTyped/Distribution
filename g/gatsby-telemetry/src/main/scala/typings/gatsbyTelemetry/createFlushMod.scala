@@ -10,6 +10,5 @@ object createFlushMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createFlush(isTrackingEnabled: Boolean): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFlush")(isTrackingEnabled.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
+  inline def createFlush(isTrackingEnabled: Boolean): js.Function0[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFlush")(isTrackingEnabled.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[Unit]]]
 }

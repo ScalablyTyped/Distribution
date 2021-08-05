@@ -31,8 +31,7 @@ trait TaskAgentSession extends StObject {
 }
 object TaskAgentSession {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     agent: TaskAgentReference,
     encryptionKey: TaskAgentSessionKey,
     ownerName: String,
@@ -43,22 +42,16 @@ object TaskAgentSession {
     __obj.asInstanceOf[TaskAgentSession]
   }
   
-  @scala.inline
-  implicit class TaskAgentSessionMutableBuilder[Self <: TaskAgentSession] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentSession](x: Self) {
     
-    @scala.inline
-    def setAgent(value: TaskAgentReference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: TaskAgentReference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKey(value: TaskAgentSessionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptionKey(value: TaskAgentSessionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
+    inline def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "systemCapabilities", value.asInstanceOf[js.Any])
+    inline def setSystemCapabilities(value: StringDictionary[String]): Self = StObject.set(x, "systemCapabilities", value.asInstanceOf[js.Any])
   }
 }

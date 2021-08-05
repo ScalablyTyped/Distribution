@@ -18,19 +18,15 @@ trait RestoreAnalysisRequest extends StObject {
 }
 object RestoreAnalysisRequest {
   
-  @scala.inline
-  def apply(AnalysisId: RestrictiveResourceId, AwsAccountId: AwsAccountId): RestoreAnalysisRequest = {
+  inline def apply(AnalysisId: RestrictiveResourceId, AwsAccountId: AwsAccountId): RestoreAnalysisRequest = {
     val __obj = js.Dynamic.literal(AnalysisId = AnalysisId.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RestoreAnalysisRequest]
   }
   
-  @scala.inline
-  implicit class RestoreAnalysisRequestMutableBuilder[Self <: RestoreAnalysisRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreAnalysisRequest](x: Self) {
     
-    @scala.inline
-    def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
+    inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
   }
 }

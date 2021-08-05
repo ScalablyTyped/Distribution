@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContextType extends StObject
 object ContextType {
   
-  @scala.inline
-  def offline: typings.devtoolsProtocol.devtoolsProtocolStrings.offline = "offline".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.offline]
+  inline def offline: typings.devtoolsProtocol.devtoolsProtocolStrings.offline = "offline".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.offline]
   
-  @scala.inline
-  def realtime: typings.devtoolsProtocol.devtoolsProtocolStrings.realtime = "realtime".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.realtime]
+  inline def realtime: typings.devtoolsProtocol.devtoolsProtocolStrings.realtime = "realtime".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.realtime]
 }

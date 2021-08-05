@@ -15,10 +15,8 @@ object uploadsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: SdkConfig): UploadsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[UploadsService]
-  @scala.inline
-  def default(config: typings.mapboxMapboxSdk.mod.default): UploadsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[UploadsService]
+  inline def default(config: SdkConfig): UploadsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[UploadsService]
+  inline def default(config: typings.mapboxMapboxSdk.mod.default): UploadsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[UploadsService]
   
   trait S3Credentials extends StObject {
     
@@ -36,8 +34,7 @@ object uploadsMod {
   }
   object S3Credentials {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessKeyId: String,
       bucket: String,
       key: String,
@@ -49,26 +46,19 @@ object uploadsMod {
       __obj.asInstanceOf[S3Credentials]
     }
     
-    @scala.inline
-    implicit class S3CredentialsMutableBuilder[Self <: S3Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: S3Credentials](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+      inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,8 +84,7 @@ object uploadsMod {
   }
   object UploadResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       complete: Boolean,
       created: String,
       id: String,
@@ -109,38 +98,27 @@ object uploadsMod {
       __obj.asInstanceOf[UploadResponse]
     }
     
-    @scala.inline
-    implicit class UploadResponseMutableBuilder[Self <: UploadResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UploadResponse](x: Self) {
       
-      @scala.inline
-      def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileset(value: String): Self = StObject.set(x, "tileset", value.asInstanceOf[js.Any])
+      inline def setTileset(value: String): Self = StObject.set(x, "tileset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,8 +157,7 @@ object uploadsMod {
   }
   object UploadsService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createUpload: MapId => MapiRequest,
       createUploadCredentials: () => MapiRequest,
       deleteUpload: UploadId => js.Any,
@@ -191,23 +168,17 @@ object uploadsMod {
       __obj.asInstanceOf[UploadsService]
     }
     
-    @scala.inline
-    implicit class UploadsServiceMutableBuilder[Self <: UploadsService] (val x: Self) extends AnyVal {
+    extension [Self <: UploadsService](x: Self) {
       
-      @scala.inline
-      def setCreateUpload(value: MapId => MapiRequest): Self = StObject.set(x, "createUpload", js.Any.fromFunction1(value))
+      inline def setCreateUpload(value: MapId => MapiRequest): Self = StObject.set(x, "createUpload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateUploadCredentials(value: () => MapiRequest): Self = StObject.set(x, "createUploadCredentials", js.Any.fromFunction0(value))
+      inline def setCreateUploadCredentials(value: () => MapiRequest): Self = StObject.set(x, "createUploadCredentials", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeleteUpload(value: UploadId => js.Any): Self = StObject.set(x, "deleteUpload", js.Any.fromFunction1(value))
+      inline def setDeleteUpload(value: UploadId => js.Any): Self = StObject.set(x, "deleteUpload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUpload(value: UploadId => js.Any): Self = StObject.set(x, "getUpload", js.Any.fromFunction1(value))
+      inline def setGetUpload(value: UploadId => js.Any): Self = StObject.set(x, "getUpload", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListUploads(value: Reverse => MapiRequest): Self = StObject.set(x, "listUploads", js.Any.fromFunction1(value))
+      inline def setListUploads(value: Reverse => MapiRequest): Self = StObject.set(x, "listUploads", js.Any.fromFunction1(value))
     }
   }
 }

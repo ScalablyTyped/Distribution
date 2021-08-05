@@ -28,25 +28,19 @@ trait DeleteWebACLRequest extends StObject {
 }
 object DeleteWebACLRequest {
   
-  @scala.inline
-  def apply(Id: EntityId, LockToken: LockToken, Name: EntityName, Scope: Scope): DeleteWebACLRequest = {
+  inline def apply(Id: EntityId, LockToken: LockToken, Name: EntityName, Scope: Scope): DeleteWebACLRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], LockToken = LockToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Scope = Scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWebACLRequest]
   }
   
-  @scala.inline
-  implicit class DeleteWebACLRequestMutableBuilder[Self <: DeleteWebACLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWebACLRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
+    inline def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
   }
 }

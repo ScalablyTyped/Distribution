@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImpactLocation extends StObject
 object ImpactLocation {
   
-  @scala.inline
-  def CombineImpact(combine: Combine): typings.reactBeautifulDnd.mod.CombineImpact = {
+  inline def CombineImpact(combine: Combine): typings.reactBeautifulDnd.mod.CombineImpact = {
     val __obj = js.Dynamic.literal(combine = combine.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("COMBINE")
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.CombineImpact]
   }
   
-  @scala.inline
-  def ReorderImpact(destination: DraggableLocation): typings.reactBeautifulDnd.mod.ReorderImpact = {
+  inline def ReorderImpact(destination: DraggableLocation): typings.reactBeautifulDnd.mod.ReorderImpact = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("REORDER")
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.ReorderImpact]

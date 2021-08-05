@@ -17,19 +17,15 @@ trait TabRemoveInfo extends StObject {
 }
 object TabRemoveInfo {
   
-  @scala.inline
-  def apply(isWindowClosing: Boolean, windowId: Double): TabRemoveInfo = {
+  inline def apply(isWindowClosing: Boolean, windowId: Double): TabRemoveInfo = {
     val __obj = js.Dynamic.literal(isWindowClosing = isWindowClosing.asInstanceOf[js.Any], windowId = windowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabRemoveInfo]
   }
   
-  @scala.inline
-  implicit class TabRemoveInfoMutableBuilder[Self <: TabRemoveInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TabRemoveInfo](x: Self) {
     
-    @scala.inline
-    def setIsWindowClosing(value: Boolean): Self = StObject.set(x, "isWindowClosing", value.asInstanceOf[js.Any])
+    inline def setIsWindowClosing(value: Boolean): Self = StObject.set(x, "isWindowClosing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+    inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
   }
 }

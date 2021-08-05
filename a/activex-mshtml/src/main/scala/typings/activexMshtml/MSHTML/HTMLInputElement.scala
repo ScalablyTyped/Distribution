@@ -10,7 +10,7 @@ trait HTMLInputElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLInputElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLInputElement_typekey")
   var MSHTMLDotHTMLInputElement_typekey: HTMLInputElement = js.native
   
   var accept: String = js.native

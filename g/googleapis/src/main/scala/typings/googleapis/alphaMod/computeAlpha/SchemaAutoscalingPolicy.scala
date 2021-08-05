@@ -63,64 +63,45 @@ trait SchemaAutoscalingPolicy extends StObject {
 }
 object SchemaAutoscalingPolicy {
   
-  @scala.inline
-  def apply(): SchemaAutoscalingPolicy = {
+  inline def apply(): SchemaAutoscalingPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAutoscalingPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaAutoscalingPolicyMutableBuilder[Self <: SchemaAutoscalingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAutoscalingPolicy](x: Self) {
     
-    @scala.inline
-    def setCoolDownPeriodSec(value: Double): Self = StObject.set(x, "coolDownPeriodSec", value.asInstanceOf[js.Any])
+    inline def setCoolDownPeriodSec(value: Double): Self = StObject.set(x, "coolDownPeriodSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoolDownPeriodSecUndefined: Self = StObject.set(x, "coolDownPeriodSec", js.undefined)
+    inline def setCoolDownPeriodSecUndefined: Self = StObject.set(x, "coolDownPeriodSec", js.undefined)
     
-    @scala.inline
-    def setCpuUtilization(value: SchemaAutoscalingPolicyCpuUtilization): Self = StObject.set(x, "cpuUtilization", value.asInstanceOf[js.Any])
+    inline def setCpuUtilization(value: SchemaAutoscalingPolicyCpuUtilization): Self = StObject.set(x, "cpuUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuUtilizationUndefined: Self = StObject.set(x, "cpuUtilization", js.undefined)
+    inline def setCpuUtilizationUndefined: Self = StObject.set(x, "cpuUtilization", js.undefined)
     
-    @scala.inline
-    def setCustomMetricUtilizations(value: js.Array[SchemaAutoscalingPolicyCustomMetricUtilization]): Self = StObject.set(x, "customMetricUtilizations", value.asInstanceOf[js.Any])
+    inline def setCustomMetricUtilizations(value: js.Array[SchemaAutoscalingPolicyCustomMetricUtilization]): Self = StObject.set(x, "customMetricUtilizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomMetricUtilizationsUndefined: Self = StObject.set(x, "customMetricUtilizations", js.undefined)
+    inline def setCustomMetricUtilizationsUndefined: Self = StObject.set(x, "customMetricUtilizations", js.undefined)
     
-    @scala.inline
-    def setCustomMetricUtilizationsVarargs(value: SchemaAutoscalingPolicyCustomMetricUtilization*): Self = StObject.set(x, "customMetricUtilizations", js.Array(value :_*))
+    inline def setCustomMetricUtilizationsVarargs(value: SchemaAutoscalingPolicyCustomMetricUtilization*): Self = StObject.set(x, "customMetricUtilizations", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadBalancingUtilization(value: SchemaAutoscalingPolicyLoadBalancingUtilization): Self = StObject.set(x, "loadBalancingUtilization", value.asInstanceOf[js.Any])
+    inline def setLoadBalancingUtilization(value: SchemaAutoscalingPolicyLoadBalancingUtilization): Self = StObject.set(x, "loadBalancingUtilization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancingUtilizationUndefined: Self = StObject.set(x, "loadBalancingUtilization", js.undefined)
+    inline def setLoadBalancingUtilizationUndefined: Self = StObject.set(x, "loadBalancingUtilization", js.undefined)
     
-    @scala.inline
-    def setMaxNumReplicas(value: Double): Self = StObject.set(x, "maxNumReplicas", value.asInstanceOf[js.Any])
+    inline def setMaxNumReplicas(value: Double): Self = StObject.set(x, "maxNumReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNumReplicasUndefined: Self = StObject.set(x, "maxNumReplicas", js.undefined)
+    inline def setMaxNumReplicasUndefined: Self = StObject.set(x, "maxNumReplicas", js.undefined)
     
-    @scala.inline
-    def setMinNumReplicas(value: Double): Self = StObject.set(x, "minNumReplicas", value.asInstanceOf[js.Any])
+    inline def setMinNumReplicas(value: Double): Self = StObject.set(x, "minNumReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinNumReplicasUndefined: Self = StObject.set(x, "minNumReplicas", js.undefined)
+    inline def setMinNumReplicasUndefined: Self = StObject.set(x, "minNumReplicas", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setQueueBasedScaling(value: SchemaAutoscalingPolicyQueueBasedScaling): Self = StObject.set(x, "queueBasedScaling", value.asInstanceOf[js.Any])
+    inline def setQueueBasedScaling(value: SchemaAutoscalingPolicyQueueBasedScaling): Self = StObject.set(x, "queueBasedScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueBasedScalingUndefined: Self = StObject.set(x, "queueBasedScaling", js.undefined)
+    inline def setQueueBasedScalingUndefined: Self = StObject.set(x, "queueBasedScaling", js.undefined)
   }
 }

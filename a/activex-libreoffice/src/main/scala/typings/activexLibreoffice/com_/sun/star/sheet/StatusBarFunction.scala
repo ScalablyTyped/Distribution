@@ -25,25 +25,18 @@ object StatusBarFunction {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def AVERAGE: `1` = 1.asInstanceOf[`1`]
+    inline def AVERAGE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def COUNT: `3` = 3.asInstanceOf[`3`]
+    inline def COUNT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def COUNTNUMS: `2` = 2.asInstanceOf[`2`]
+    inline def COUNTNUMS: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MAX: `4` = 4.asInstanceOf[`4`]
+    inline def MAX: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def MIN: `5` = 5.asInstanceOf[`5`]
+    inline def MIN: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def SUM: `9` = 9.asInstanceOf[`9`]
+    inline def SUM: `9` = 9.asInstanceOf[`9`]
   }
 }

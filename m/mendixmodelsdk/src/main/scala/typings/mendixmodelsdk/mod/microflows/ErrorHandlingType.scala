@@ -21,15 +21,13 @@ object ErrorHandlingType {
   @JSImport("mendixmodelsdk", "microflows.ErrorHandlingType.Abort")
   @js.native
   def Abort: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType = js.native
-  @scala.inline
-  def Abort_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Abort")(x.asInstanceOf[js.Any])
+  inline def Abort_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Abort")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.ErrorHandlingType.Continue")
   @js.native
   def Continue: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType = js.native
-  @scala.inline
-  def Continue_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Continue")(x.asInstanceOf[js.Any])
+  inline def Continue_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Continue")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.ErrorHandlingType.Custom")
@@ -40,16 +38,13 @@ object ErrorHandlingType {
   @JSImport("mendixmodelsdk", "microflows.ErrorHandlingType.CustomWithoutRollBack")
   @js.native
   def CustomWithoutRollBack: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType = js.native
-  @scala.inline
-  def CustomWithoutRollBack_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomWithoutRollBack")(x.asInstanceOf[js.Any])
+  inline def CustomWithoutRollBack_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CustomWithoutRollBack")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Custom_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
+  inline def Custom_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.ErrorHandlingType.Rollback")
   @js.native
   def Rollback: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType = js.native
-  @scala.inline
-  def Rollback_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rollback")(x.asInstanceOf[js.Any])
+  inline def Rollback_=(x: typings.mendixmodelsdk.microflowsMod.microflows.ErrorHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Rollback")(x.asInstanceOf[js.Any])
 }

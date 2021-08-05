@@ -20,31 +20,23 @@ trait ComputeMessageStatsRequest extends StObject {
 }
 object ComputeMessageStatsRequest {
   
-  @scala.inline
-  def apply(): ComputeMessageStatsRequest = {
+  inline def apply(): ComputeMessageStatsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComputeMessageStatsRequest]
   }
   
-  @scala.inline
-  implicit class ComputeMessageStatsRequestMutableBuilder[Self <: ComputeMessageStatsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeMessageStatsRequest](x: Self) {
     
-    @scala.inline
-    def setEndCursor(value: Cursor): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
+    inline def setEndCursor(value: Cursor): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
+    inline def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
     
-    @scala.inline
-    def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
-    @scala.inline
-    def setStartCursor(value: Cursor): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
+    inline def setStartCursor(value: Cursor): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartCursorUndefined: Self = StObject.set(x, "startCursor", js.undefined)
+    inline def setStartCursorUndefined: Self = StObject.set(x, "startCursor", js.undefined)
   }
 }

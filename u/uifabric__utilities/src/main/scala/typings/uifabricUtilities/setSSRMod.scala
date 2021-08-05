@@ -14,9 +14,7 @@ object setSSRMod {
   @js.native
   def isSSR: Boolean = js.native
   
-  @scala.inline
-  def isSSR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isSSR")(x.asInstanceOf[js.Any])
+  inline def isSSR_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isSSR")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def setSSR(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSSR")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setSSR(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSSR")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

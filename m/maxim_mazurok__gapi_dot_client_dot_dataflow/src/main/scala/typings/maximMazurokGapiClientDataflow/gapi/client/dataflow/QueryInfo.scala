@@ -11,22 +11,17 @@ trait QueryInfo extends StObject {
 }
 object QueryInfo {
   
-  @scala.inline
-  def apply(): QueryInfo = {
+  inline def apply(): QueryInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryInfo]
   }
   
-  @scala.inline
-  implicit class QueryInfoMutableBuilder[Self <: QueryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: QueryInfo](x: Self) {
     
-    @scala.inline
-    def setQueryProperty(value: js.Array[String]): Self = StObject.set(x, "queryProperty", value.asInstanceOf[js.Any])
+    inline def setQueryProperty(value: js.Array[String]): Self = StObject.set(x, "queryProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryPropertyUndefined: Self = StObject.set(x, "queryProperty", js.undefined)
+    inline def setQueryPropertyUndefined: Self = StObject.set(x, "queryProperty", js.undefined)
     
-    @scala.inline
-    def setQueryPropertyVarargs(value: String*): Self = StObject.set(x, "queryProperty", js.Array(value :_*))
+    inline def setQueryPropertyVarargs(value: String*): Self = StObject.set(x, "queryProperty", js.Array(value :_*))
   }
 }

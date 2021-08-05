@@ -11,22 +11,17 @@ trait NamedItemCollectionData extends StObject {
 }
 object NamedItemCollectionData {
   
-  @scala.inline
-  def apply(): NamedItemCollectionData = {
+  inline def apply(): NamedItemCollectionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedItemCollectionData]
   }
   
-  @scala.inline
-  implicit class NamedItemCollectionDataMutableBuilder[Self <: NamedItemCollectionData] (val x: Self) extends AnyVal {
+  extension [Self <: NamedItemCollectionData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[NamedItemData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[NamedItemData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: NamedItemData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: NamedItemData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

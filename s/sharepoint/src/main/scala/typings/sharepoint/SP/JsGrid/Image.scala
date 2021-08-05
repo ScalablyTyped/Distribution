@@ -24,8 +24,7 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Render: (String, js.Function1[/* eventInfo */ DomEvent, Unit], Boolean) => HTMLElement,
     bIsAnimated: Boolean,
     bIsClustered: Boolean,
@@ -37,25 +36,18 @@ object Image {
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setBIsAnimated(value: Boolean): Self = StObject.set(x, "bIsAnimated", value.asInstanceOf[js.Any])
+    inline def setBIsAnimated(value: Boolean): Self = StObject.set(x, "bIsAnimated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBIsClustered(value: Boolean): Self = StObject.set(x, "bIsClustered", value.asInstanceOf[js.Any])
+    inline def setBIsClustered(value: Boolean): Self = StObject.set(x, "bIsClustered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgCssNames(value: String): Self = StObject.set(x, "imgCssNames", value.asInstanceOf[js.Any])
+    inline def setImgCssNames(value: String): Self = StObject.set(x, "imgCssNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgSrc(value: String): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
+    inline def setImgSrc(value: String): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptOuterCssNames(value: String): Self = StObject.set(x, "optOuterCssNames", value.asInstanceOf[js.Any])
+    inline def setOptOuterCssNames(value: String): Self = StObject.set(x, "optOuterCssNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender(value: (String, js.Function1[/* eventInfo */ DomEvent, Unit], Boolean) => HTMLElement): Self = StObject.set(x, "Render", js.Any.fromFunction3(value))
+    inline def setRender(value: (String, js.Function1[/* eventInfo */ DomEvent, Unit], Boolean) => HTMLElement): Self = StObject.set(x, "Render", js.Any.fromFunction3(value))
   }
 }

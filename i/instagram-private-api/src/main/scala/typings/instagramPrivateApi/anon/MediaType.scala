@@ -15,22 +15,17 @@ trait MediaType extends StObject {
 }
 object MediaType {
   
-  @scala.inline
-  def apply(mediaId: String): MediaType = {
+  inline def apply(mediaId: String): MediaType = {
     val __obj = js.Dynamic.literal(mediaId = mediaId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaType]
   }
   
-  @scala.inline
-  implicit class MediaTypeMutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
+  extension [Self <: MediaType](x: Self) {
     
-    @scala.inline
-    def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
+    inline def setMediaId(value: String): Self = StObject.set(x, "mediaId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: PHOTO | VIDEO | CAROUSEL): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: PHOTO | VIDEO | CAROUSEL): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
   }
 }

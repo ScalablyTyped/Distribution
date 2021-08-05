@@ -37,62 +37,45 @@ trait PrestoJob extends StObject {
 }
 object PrestoJob {
   
-  @scala.inline
-  def apply(): PrestoJob = {
+  inline def apply(): PrestoJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrestoJob]
   }
   
-  @scala.inline
-  implicit class PrestoJobMutableBuilder[Self <: PrestoJob] (val x: Self) extends AnyVal {
+  extension [Self <: PrestoJob](x: Self) {
     
-    @scala.inline
-    def setClientTags(value: js.Array[String]): Self = StObject.set(x, "clientTags", value.asInstanceOf[js.Any])
+    inline def setClientTags(value: js.Array[String]): Self = StObject.set(x, "clientTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTagsUndefined: Self = StObject.set(x, "clientTags", js.undefined)
+    inline def setClientTagsUndefined: Self = StObject.set(x, "clientTags", js.undefined)
     
-    @scala.inline
-    def setClientTagsVarargs(value: String*): Self = StObject.set(x, "clientTags", js.Array(value :_*))
+    inline def setClientTagsVarargs(value: String*): Self = StObject.set(x, "clientTags", js.Array(value :_*))
     
-    @scala.inline
-    def setContinueOnFailure(value: Boolean): Self = StObject.set(x, "continueOnFailure", value.asInstanceOf[js.Any])
+    inline def setContinueOnFailure(value: Boolean): Self = StObject.set(x, "continueOnFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueOnFailureUndefined: Self = StObject.set(x, "continueOnFailure", js.undefined)
+    inline def setContinueOnFailureUndefined: Self = StObject.set(x, "continueOnFailure", js.undefined)
     
-    @scala.inline
-    def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
+    inline def setLoggingConfig(value: LoggingConfig): Self = StObject.set(x, "loggingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
+    inline def setLoggingConfigUndefined: Self = StObject.set(x, "loggingConfig", js.undefined)
     
-    @scala.inline
-    def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+    inline def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
+    inline def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
     
-    @scala.inline
-    def setProperties(
+    inline def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.PrestoJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setQueryFileUri(value: String): Self = StObject.set(x, "queryFileUri", value.asInstanceOf[js.Any])
+    inline def setQueryFileUri(value: String): Self = StObject.set(x, "queryFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryFileUriUndefined: Self = StObject.set(x, "queryFileUri", js.undefined)
+    inline def setQueryFileUriUndefined: Self = StObject.set(x, "queryFileUri", js.undefined)
     
-    @scala.inline
-    def setQueryList(value: QueryList): Self = StObject.set(x, "queryList", value.asInstanceOf[js.Any])
+    inline def setQueryList(value: QueryList): Self = StObject.set(x, "queryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryListUndefined: Self = StObject.set(x, "queryList", js.undefined)
+    inline def setQueryListUndefined: Self = StObject.set(x, "queryList", js.undefined)
   }
 }

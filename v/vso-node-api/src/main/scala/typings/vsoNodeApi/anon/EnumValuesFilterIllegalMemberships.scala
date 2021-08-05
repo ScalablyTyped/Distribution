@@ -10,16 +10,13 @@ trait EnumValuesFilterIllegalMemberships extends StObject {
 }
 object EnumValuesFilterIllegalMemberships {
   
-  @scala.inline
-  def apply(enumValues: FilterIllegalMemberships): EnumValuesFilterIllegalMemberships = {
+  inline def apply(enumValues: FilterIllegalMemberships): EnumValuesFilterIllegalMemberships = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesFilterIllegalMemberships]
   }
   
-  @scala.inline
-  implicit class EnumValuesFilterIllegalMembershipsMutableBuilder[Self <: EnumValuesFilterIllegalMemberships] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesFilterIllegalMemberships](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: FilterIllegalMemberships): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: FilterIllegalMemberships): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

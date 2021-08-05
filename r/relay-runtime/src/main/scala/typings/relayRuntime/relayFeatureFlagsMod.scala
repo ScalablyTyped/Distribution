@@ -22,8 +22,7 @@ object relayFeatureFlagsMod {
   }
   object FeatureFlags {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ENABLE_PARTIAL_RENDERING_DEFAULT: Boolean,
       ENABLE_RELAY_CONTAINERS_SUSPENSE: Boolean,
       ENABLE_UNIQUE_MUTATION_ROOT: Boolean,
@@ -33,20 +32,15 @@ object relayFeatureFlagsMod {
       __obj.asInstanceOf[FeatureFlags]
     }
     
-    @scala.inline
-    implicit class FeatureFlagsMutableBuilder[Self <: FeatureFlags] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureFlags](x: Self) {
       
-      @scala.inline
-      def setENABLE_PARTIAL_RENDERING_DEFAULT(value: Boolean): Self = StObject.set(x, "ENABLE_PARTIAL_RENDERING_DEFAULT", value.asInstanceOf[js.Any])
+      inline def setENABLE_PARTIAL_RENDERING_DEFAULT(value: Boolean): Self = StObject.set(x, "ENABLE_PARTIAL_RENDERING_DEFAULT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENABLE_RELAY_CONTAINERS_SUSPENSE(value: Boolean): Self = StObject.set(x, "ENABLE_RELAY_CONTAINERS_SUSPENSE", value.asInstanceOf[js.Any])
+      inline def setENABLE_RELAY_CONTAINERS_SUSPENSE(value: Boolean): Self = StObject.set(x, "ENABLE_RELAY_CONTAINERS_SUSPENSE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENABLE_UNIQUE_MUTATION_ROOT(value: Boolean): Self = StObject.set(x, "ENABLE_UNIQUE_MUTATION_ROOT", value.asInstanceOf[js.Any])
+      inline def setENABLE_UNIQUE_MUTATION_ROOT(value: Boolean): Self = StObject.set(x, "ENABLE_UNIQUE_MUTATION_ROOT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setENABLE_VARIABLE_CONNECTION_KEY(value: Boolean): Self = StObject.set(x, "ENABLE_VARIABLE_CONNECTION_KEY", value.asInstanceOf[js.Any])
+      inline def setENABLE_VARIABLE_CONNECTION_KEY(value: Boolean): Self = StObject.set(x, "ENABLE_VARIABLE_CONNECTION_KEY", value.asInstanceOf[js.Any])
     }
   }
 }

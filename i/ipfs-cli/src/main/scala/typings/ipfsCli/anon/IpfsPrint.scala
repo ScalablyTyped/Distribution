@@ -12,19 +12,15 @@ trait IpfsPrint extends StObject {
 }
 object IpfsPrint {
   
-  @scala.inline
-  def apply(ipfs: js.Any, print: js.Any): IpfsPrint = {
+  inline def apply(ipfs: js.Any, print: js.Any): IpfsPrint = {
     val __obj = js.Dynamic.literal(ipfs = ipfs.asInstanceOf[js.Any], print = print.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpfsPrint]
   }
   
-  @scala.inline
-  implicit class IpfsPrintMutableBuilder[Self <: IpfsPrint] (val x: Self) extends AnyVal {
+  extension [Self <: IpfsPrint](x: Self) {
     
-    @scala.inline
-    def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
+    inline def setIpfs(value: js.Any): Self = StObject.set(x, "ipfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrint(value: js.Any): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+    inline def setPrint(value: js.Any): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
   }
 }

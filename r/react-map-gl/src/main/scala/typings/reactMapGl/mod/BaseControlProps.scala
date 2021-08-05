@@ -16,37 +16,27 @@ trait BaseControlProps extends StObject {
 }
 object BaseControlProps {
   
-  @scala.inline
-  def apply(): BaseControlProps = {
+  inline def apply(): BaseControlProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseControlProps]
   }
   
-  @scala.inline
-  implicit class BaseControlPropsMutableBuilder[Self <: BaseControlProps] (val x: Self) extends AnyVal {
+  extension [Self <: BaseControlProps](x: Self) {
     
-    @scala.inline
-    def setCaptureClick(value: Boolean): Self = StObject.set(x, "captureClick", value.asInstanceOf[js.Any])
+    inline def setCaptureClick(value: Boolean): Self = StObject.set(x, "captureClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureClickUndefined: Self = StObject.set(x, "captureClick", js.undefined)
+    inline def setCaptureClickUndefined: Self = StObject.set(x, "captureClick", js.undefined)
     
-    @scala.inline
-    def setCaptureDoubleClick(value: Boolean): Self = StObject.set(x, "captureDoubleClick", value.asInstanceOf[js.Any])
+    inline def setCaptureDoubleClick(value: Boolean): Self = StObject.set(x, "captureDoubleClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureDoubleClickUndefined: Self = StObject.set(x, "captureDoubleClick", js.undefined)
+    inline def setCaptureDoubleClickUndefined: Self = StObject.set(x, "captureDoubleClick", js.undefined)
     
-    @scala.inline
-    def setCaptureDrag(value: Boolean): Self = StObject.set(x, "captureDrag", value.asInstanceOf[js.Any])
+    inline def setCaptureDrag(value: Boolean): Self = StObject.set(x, "captureDrag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureDragUndefined: Self = StObject.set(x, "captureDrag", js.undefined)
+    inline def setCaptureDragUndefined: Self = StObject.set(x, "captureDrag", js.undefined)
     
-    @scala.inline
-    def setCaptureScroll(value: Boolean): Self = StObject.set(x, "captureScroll", value.asInstanceOf[js.Any])
+    inline def setCaptureScroll(value: Boolean): Self = StObject.set(x, "captureScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureScrollUndefined: Self = StObject.set(x, "captureScroll", js.undefined)
+    inline def setCaptureScrollUndefined: Self = StObject.set(x, "captureScroll", js.undefined)
   }
 }

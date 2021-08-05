@@ -11,19 +11,15 @@ trait Rows extends StObject {
 }
 object Rows {
   
-  @scala.inline
-  def apply(rows: js.Array[GetObjectViewItem]): Rows = {
+  inline def apply(rows: js.Array[GetObjectViewItem]): Rows = {
     val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rows]
   }
   
-  @scala.inline
-  implicit class RowsMutableBuilder[Self <: Rows] (val x: Self) extends AnyVal {
+  extension [Self <: Rows](x: Self) {
     
-    @scala.inline
-    def setRows(value: js.Array[GetObjectViewItem]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[GetObjectViewItem]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: GetObjectViewItem*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: GetObjectViewItem*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

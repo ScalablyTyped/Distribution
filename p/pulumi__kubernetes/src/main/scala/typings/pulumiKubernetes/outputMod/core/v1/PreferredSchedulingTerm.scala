@@ -21,19 +21,15 @@ trait PreferredSchedulingTerm extends StObject {
 }
 object PreferredSchedulingTerm {
   
-  @scala.inline
-  def apply(preference: NodeSelectorTerm, weight: Double): PreferredSchedulingTerm = {
+  inline def apply(preference: NodeSelectorTerm, weight: Double): PreferredSchedulingTerm = {
     val __obj = js.Dynamic.literal(preference = preference.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreferredSchedulingTerm]
   }
   
-  @scala.inline
-  implicit class PreferredSchedulingTermMutableBuilder[Self <: PreferredSchedulingTerm] (val x: Self) extends AnyVal {
+  extension [Self <: PreferredSchedulingTerm](x: Self) {
     
-    @scala.inline
-    def setPreference(value: NodeSelectorTerm): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: NodeSelectorTerm): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

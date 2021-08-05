@@ -12,8 +12,7 @@ object reporterRpcServiceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerReporterRpcService[TConfiguration /* <: js.Object */](
+  inline def registerReporterRpcService[TConfiguration /* <: js.Object */](
     servicePort: RpcMessagePort,
     reporterFactory: js.Function1[/* configuration */ TConfiguration, Reporter]
   ): ReporterRpcService = (^.asInstanceOf[js.Dynamic].applyDynamic("registerReporterRpcService")(servicePort.asInstanceOf[js.Any], reporterFactory.asInstanceOf[js.Any])).asInstanceOf[ReporterRpcService]
@@ -28,23 +27,18 @@ object reporterRpcServiceMod {
   }
   object ReporterRpcService {
     
-    @scala.inline
-    def apply(close: () => js.Promise[Unit], isOpen: () => Boolean, open: () => js.Promise[Unit]): ReporterRpcService = {
+    inline def apply(close: () => js.Promise[Unit], isOpen: () => Boolean, open: () => js.Promise[Unit]): ReporterRpcService = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), isOpen = js.Any.fromFunction0(isOpen), open = js.Any.fromFunction0(open))
       __obj.asInstanceOf[ReporterRpcService]
     }
     
-    @scala.inline
-    implicit class ReporterRpcServiceMutableBuilder[Self <: ReporterRpcService] (val x: Self) extends AnyVal {
+    extension [Self <: ReporterRpcService](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
+      inline def setIsOpen(value: () => Boolean): Self = StObject.set(x, "isOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      inline def setOpen(value: () => js.Promise[Unit]): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     }
   }
 }

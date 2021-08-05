@@ -11,6 +11,5 @@ object neverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[EventStream[V]]
+  inline def default[V](): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[EventStream[V]]
 }

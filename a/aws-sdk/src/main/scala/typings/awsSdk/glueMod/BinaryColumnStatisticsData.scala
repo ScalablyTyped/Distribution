@@ -23,22 +23,17 @@ trait BinaryColumnStatisticsData extends StObject {
 }
 object BinaryColumnStatisticsData {
   
-  @scala.inline
-  def apply(AverageLength: NonNegativeDouble, MaximumLength: NonNegativeLong, NumberOfNulls: NonNegativeLong): BinaryColumnStatisticsData = {
+  inline def apply(AverageLength: NonNegativeDouble, MaximumLength: NonNegativeLong, NumberOfNulls: NonNegativeLong): BinaryColumnStatisticsData = {
     val __obj = js.Dynamic.literal(AverageLength = AverageLength.asInstanceOf[js.Any], MaximumLength = MaximumLength.asInstanceOf[js.Any], NumberOfNulls = NumberOfNulls.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinaryColumnStatisticsData]
   }
   
-  @scala.inline
-  implicit class BinaryColumnStatisticsDataMutableBuilder[Self <: BinaryColumnStatisticsData] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryColumnStatisticsData](x: Self) {
     
-    @scala.inline
-    def setAverageLength(value: NonNegativeDouble): Self = StObject.set(x, "AverageLength", value.asInstanceOf[js.Any])
+    inline def setAverageLength(value: NonNegativeDouble): Self = StObject.set(x, "AverageLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumLength(value: NonNegativeLong): Self = StObject.set(x, "MaximumLength", value.asInstanceOf[js.Any])
+    inline def setMaximumLength(value: NonNegativeLong): Self = StObject.set(x, "MaximumLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
+    inline def setNumberOfNulls(value: NonNegativeLong): Self = StObject.set(x, "NumberOfNulls", value.asInstanceOf[js.Any])
   }
 }

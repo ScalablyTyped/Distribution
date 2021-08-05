@@ -14,22 +14,17 @@ trait ResolvedModule extends StObject {
 }
 object ResolvedModule {
   
-  @scala.inline
-  def apply(resolvedFileName: java.lang.String): ResolvedModule = {
+  inline def apply(resolvedFileName: java.lang.String): ResolvedModule = {
     val __obj = js.Dynamic.literal(resolvedFileName = resolvedFileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedModule]
   }
   
-  @scala.inline
-  implicit class ResolvedModuleMutableBuilder[Self <: ResolvedModule] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedModule](x: Self) {
     
-    @scala.inline
-    def setIsExternalLibraryImport(value: Boolean): Self = StObject.set(x, "isExternalLibraryImport", value.asInstanceOf[js.Any])
+    inline def setIsExternalLibraryImport(value: Boolean): Self = StObject.set(x, "isExternalLibraryImport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExternalLibraryImportUndefined: Self = StObject.set(x, "isExternalLibraryImport", js.undefined)
+    inline def setIsExternalLibraryImportUndefined: Self = StObject.set(x, "isExternalLibraryImport", js.undefined)
     
-    @scala.inline
-    def setResolvedFileName(value: java.lang.String): Self = StObject.set(x, "resolvedFileName", value.asInstanceOf[js.Any])
+    inline def setResolvedFileName(value: java.lang.String): Self = StObject.set(x, "resolvedFileName", value.asInstanceOf[js.Any])
   }
 }

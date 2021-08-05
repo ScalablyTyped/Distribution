@@ -17,19 +17,15 @@ trait SchemaDownloadLineItemsResponse extends StObject {
 }
 object SchemaDownloadLineItemsResponse {
   
-  @scala.inline
-  def apply(): SchemaDownloadLineItemsResponse = {
+  inline def apply(): SchemaDownloadLineItemsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDownloadLineItemsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDownloadLineItemsResponseMutableBuilder[Self <: SchemaDownloadLineItemsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDownloadLineItemsResponse](x: Self) {
     
-    @scala.inline
-    def setLineItems(value: String): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    inline def setLineItems(value: String): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
+    inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
   }
 }

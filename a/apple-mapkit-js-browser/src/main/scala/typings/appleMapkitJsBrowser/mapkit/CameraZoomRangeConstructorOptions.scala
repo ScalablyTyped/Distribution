@@ -21,25 +21,19 @@ trait CameraZoomRangeConstructorOptions extends StObject {
 }
 object CameraZoomRangeConstructorOptions {
   
-  @scala.inline
-  def apply(): CameraZoomRangeConstructorOptions = {
+  inline def apply(): CameraZoomRangeConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CameraZoomRangeConstructorOptions]
   }
   
-  @scala.inline
-  implicit class CameraZoomRangeConstructorOptionsMutableBuilder[Self <: CameraZoomRangeConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CameraZoomRangeConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setMaxCameraDistance(value: Double): Self = StObject.set(x, "maxCameraDistance", value.asInstanceOf[js.Any])
+    inline def setMaxCameraDistance(value: Double): Self = StObject.set(x, "maxCameraDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCameraDistanceUndefined: Self = StObject.set(x, "maxCameraDistance", js.undefined)
+    inline def setMaxCameraDistanceUndefined: Self = StObject.set(x, "maxCameraDistance", js.undefined)
     
-    @scala.inline
-    def setMinCameraDistance(value: Double): Self = StObject.set(x, "minCameraDistance", value.asInstanceOf[js.Any])
+    inline def setMinCameraDistance(value: Double): Self = StObject.set(x, "minCameraDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCameraDistanceUndefined: Self = StObject.set(x, "minCameraDistance", js.undefined)
+    inline def setMinCameraDistanceUndefined: Self = StObject.set(x, "minCameraDistance", js.undefined)
   }
 }

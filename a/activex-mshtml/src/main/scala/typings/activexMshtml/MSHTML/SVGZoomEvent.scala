@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGZoomEvent extends StObject {
   
-  @JSName("MSHTML.SVGZoomEvent_typekey")
+  /* private */ @JSName("MSHTML.SVGZoomEvent_typekey")
   var MSHTMLDotSVGZoomEvent_typekey: SVGZoomEvent
   
   val bubbles: Boolean
@@ -59,8 +59,7 @@ trait SVGZoomEvent extends StObject {
 }
 object SVGZoomEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGZoomEvent_typekey: SVGZoomEvent,
     bubbles: Boolean,
     cancelBubble: Boolean,
@@ -92,79 +91,54 @@ object SVGZoomEvent {
     __obj.asInstanceOf[SVGZoomEvent]
   }
   
-  @scala.inline
-  implicit class SVGZoomEventMutableBuilder[Self <: SVGZoomEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SVGZoomEvent](x: Self) {
     
-    @scala.inline
-    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
+    inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTarget(value: IEventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: IEventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+    inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+    inline def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
+    inline def setInitEvent(value: (String, Boolean, Boolean) => Unit): Self = StObject.set(x, "initEvent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInitUIEvent(value: (String, Boolean, Boolean, IHTMLWindow2, Double) => Unit): Self = StObject.set(x, "initUIEvent", js.Any.fromFunction5(value))
+    inline def setInitUIEvent(value: (String, Boolean, Boolean, IHTMLWindow2, Double) => Unit): Self = StObject.set(x, "initUIEvent", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+    inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGZoomEvent_typekey(value: SVGZoomEvent): Self = StObject.set(x, "MSHTML.SVGZoomEvent_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGZoomEvent_typekey(value: SVGZoomEvent): Self = StObject.set(x, "MSHTML.SVGZoomEvent_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewScale(value: Double): Self = StObject.set(x, "newScale", value.asInstanceOf[js.Any])
+    inline def setNewScale(value: Double): Self = StObject.set(x, "newScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTranslate(value: SVGPoint): Self = StObject.set(x, "newTranslate", value.asInstanceOf[js.Any])
+    inline def setNewTranslate(value: SVGPoint): Self = StObject.set(x, "newTranslate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreviousScale(value: Double): Self = StObject.set(x, "previousScale", value.asInstanceOf[js.Any])
+    inline def setPreviousScale(value: Double): Self = StObject.set(x, "previousScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousTranslate(value: SVGPoint): Self = StObject.set(x, "previousTranslate", value.asInstanceOf[js.Any])
+    inline def setPreviousTranslate(value: SVGPoint): Self = StObject.set(x, "previousTranslate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
+    inline def setSrcElement(value: IHTMLElement): Self = StObject.set(x, "srcElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+    inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarget(value: IEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: IEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: IHTMLWindow2): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: IHTMLWindow2): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomRectScreen(value: SVGRect): Self = StObject.set(x, "zoomRectScreen", value.asInstanceOf[js.Any])
+    inline def setZoomRectScreen(value: SVGRect): Self = StObject.set(x, "zoomRectScreen", value.asInstanceOf[js.Any])
   }
 }

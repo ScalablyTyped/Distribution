@@ -23,31 +23,23 @@ trait DeviceNetworkProfileInfo extends StObject {
 }
 object DeviceNetworkProfileInfo {
   
-  @scala.inline
-  def apply(): DeviceNetworkProfileInfo = {
+  inline def apply(): DeviceNetworkProfileInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceNetworkProfileInfo]
   }
   
-  @scala.inline
-  implicit class DeviceNetworkProfileInfoMutableBuilder[Self <: DeviceNetworkProfileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceNetworkProfileInfo](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    @scala.inline
-    def setCertificateExpirationTime(value: CertificateTime): Self = StObject.set(x, "CertificateExpirationTime", value.asInstanceOf[js.Any])
+    inline def setCertificateExpirationTime(value: CertificateTime): Self = StObject.set(x, "CertificateExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateExpirationTimeUndefined: Self = StObject.set(x, "CertificateExpirationTime", js.undefined)
+    inline def setCertificateExpirationTimeUndefined: Self = StObject.set(x, "CertificateExpirationTime", js.undefined)
     
-    @scala.inline
-    def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
+    inline def setNetworkProfileArn(value: Arn): Self = StObject.set(x, "NetworkProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfileArnUndefined: Self = StObject.set(x, "NetworkProfileArn", js.undefined)
+    inline def setNetworkProfileArnUndefined: Self = StObject.set(x, "NetworkProfileArn", js.undefined)
   }
 }

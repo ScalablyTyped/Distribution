@@ -31,8 +31,7 @@ trait DefinitionContent
      with XHierarchicalName
 object DefinitionContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentType: String,
     HierarchicalName: String,
     Identifier: XContentIdentifier,

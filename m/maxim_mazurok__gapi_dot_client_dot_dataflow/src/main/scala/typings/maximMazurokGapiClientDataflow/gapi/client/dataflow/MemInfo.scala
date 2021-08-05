@@ -20,37 +20,27 @@ trait MemInfo extends StObject {
 }
 object MemInfo {
   
-  @scala.inline
-  def apply(): MemInfo = {
+  inline def apply(): MemInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemInfo]
   }
   
-  @scala.inline
-  implicit class MemInfoMutableBuilder[Self <: MemInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MemInfo](x: Self) {
     
-    @scala.inline
-    def setCurrentLimitBytes(value: String): Self = StObject.set(x, "currentLimitBytes", value.asInstanceOf[js.Any])
+    inline def setCurrentLimitBytes(value: String): Self = StObject.set(x, "currentLimitBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentLimitBytesUndefined: Self = StObject.set(x, "currentLimitBytes", js.undefined)
+    inline def setCurrentLimitBytesUndefined: Self = StObject.set(x, "currentLimitBytes", js.undefined)
     
-    @scala.inline
-    def setCurrentRssBytes(value: String): Self = StObject.set(x, "currentRssBytes", value.asInstanceOf[js.Any])
+    inline def setCurrentRssBytes(value: String): Self = StObject.set(x, "currentRssBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRssBytesUndefined: Self = StObject.set(x, "currentRssBytes", js.undefined)
+    inline def setCurrentRssBytesUndefined: Self = StObject.set(x, "currentRssBytes", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setTotalGbMs(value: String): Self = StObject.set(x, "totalGbMs", value.asInstanceOf[js.Any])
+    inline def setTotalGbMs(value: String): Self = StObject.set(x, "totalGbMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalGbMsUndefined: Self = StObject.set(x, "totalGbMs", js.undefined)
+    inline def setTotalGbMsUndefined: Self = StObject.set(x, "totalGbMs", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait SetIdentityNotificationTopicRequest extends StObject {
 }
 object SetIdentityNotificationTopicRequest {
   
-  @scala.inline
-  def apply(Identity: Identity, NotificationType: NotificationType): SetIdentityNotificationTopicRequest = {
+  inline def apply(Identity: Identity, NotificationType: NotificationType): SetIdentityNotificationTopicRequest = {
     val __obj = js.Dynamic.literal(Identity = Identity.asInstanceOf[js.Any], NotificationType = NotificationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIdentityNotificationTopicRequest]
   }
   
-  @scala.inline
-  implicit class SetIdentityNotificationTopicRequestMutableBuilder[Self <: SetIdentityNotificationTopicRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetIdentityNotificationTopicRequest](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
+    inline def setNotificationType(value: NotificationType): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopic(value: NotificationTopic): Self = StObject.set(x, "SnsTopic", value.asInstanceOf[js.Any])
+    inline def setSnsTopic(value: NotificationTopic): Self = StObject.set(x, "SnsTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicUndefined: Self = StObject.set(x, "SnsTopic", js.undefined)
+    inline def setSnsTopicUndefined: Self = StObject.set(x, "SnsTopic", js.undefined)
   }
 }

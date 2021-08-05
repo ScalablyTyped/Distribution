@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MSWebViewPermissionType extends StObject
 object MSWebViewPermissionType {
   
-  @scala.inline
-  def geolocation: typings.std.stdStrings.geolocation = "geolocation".asInstanceOf[typings.std.stdStrings.geolocation]
+  inline def geolocation: typings.std.stdStrings.geolocation = "geolocation".asInstanceOf[typings.std.stdStrings.geolocation]
   
-  @scala.inline
-  def media: typings.std.stdStrings.media = "media".asInstanceOf[typings.std.stdStrings.media]
+  inline def media: typings.std.stdStrings.media = "media".asInstanceOf[typings.std.stdStrings.media]
   
-  @scala.inline
-  def pointerlock: typings.std.stdStrings.pointerlock = "pointerlock".asInstanceOf[typings.std.stdStrings.pointerlock]
+  inline def pointerlock: typings.std.stdStrings.pointerlock = "pointerlock".asInstanceOf[typings.std.stdStrings.pointerlock]
   
-  @scala.inline
-  def unlimitedIndexedDBQuota: typings.std.stdStrings.unlimitedIndexedDBQuota = "unlimitedIndexedDBQuota".asInstanceOf[typings.std.stdStrings.unlimitedIndexedDBQuota]
+  inline def unlimitedIndexedDBQuota: typings.std.stdStrings.unlimitedIndexedDBQuota = "unlimitedIndexedDBQuota".asInstanceOf[typings.std.stdStrings.unlimitedIndexedDBQuota]
   
-  @scala.inline
-  def webnotifications: typings.std.stdStrings.webnotifications = "webnotifications".asInstanceOf[typings.std.stdStrings.webnotifications]
+  inline def webnotifications: typings.std.stdStrings.webnotifications = "webnotifications".asInstanceOf[typings.std.stdStrings.webnotifications]
 }

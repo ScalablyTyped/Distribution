@@ -18,22 +18,17 @@ trait CreateLoadBalancerListenerInput extends StObject {
 }
 object CreateLoadBalancerListenerInput {
   
-  @scala.inline
-  def apply(Listeners: Listeners, LoadBalancerName: AccessPointName): CreateLoadBalancerListenerInput = {
+  inline def apply(Listeners: Listeners, LoadBalancerName: AccessPointName): CreateLoadBalancerListenerInput = {
     val __obj = js.Dynamic.literal(Listeners = Listeners.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLoadBalancerListenerInput]
   }
   
-  @scala.inline
-  implicit class CreateLoadBalancerListenerInputMutableBuilder[Self <: CreateLoadBalancerListenerInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLoadBalancerListenerInput](x: Self) {
     
-    @scala.inline
-    def setListeners(value: Listeners): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: Listeners): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: Listener*): Self = StObject.set(x, "Listeners", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ object innerBlocksMod {
   
   object default {
     
-    @scala.inline
-    def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/block-editor/components/inner-blocks", JSImport.Default)
     @js.native
@@ -28,14 +27,12 @@ object innerBlocksMod {
     @JSImport("@wordpress/block-editor/components/inner-blocks", "default.ButtonBlockerAppender")
     @js.native
     def ButtonBlockerAppender: ComponentType[Children] = js.native
-    @scala.inline
-    def ButtonBlockerAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ButtonBlockerAppender")(x.asInstanceOf[js.Any])
+    inline def ButtonBlockerAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ButtonBlockerAppender")(x.asInstanceOf[js.Any])
     
     @JSImport("@wordpress/block-editor/components/inner-blocks", "default.Content")
     @js.native
     def Content: ComponentType[Children] = js.native
-    @scala.inline
-    def Content_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+    inline def Content_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
     
     /**
       * display the default block appender as set by `wp.blocks.setDefaultBlockName`. Typically this
@@ -44,8 +41,7 @@ object innerBlocksMod {
     @JSImport("@wordpress/block-editor/components/inner-blocks", "default.DefaultBlockAppender")
     @js.native
     def DefaultBlockAppender: ComponentType[Children] = js.native
-    @scala.inline
-    def DefaultBlockAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultBlockAppender")(x.asInstanceOf[js.Any])
+    inline def DefaultBlockAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultBlockAppender")(x.asInstanceOf[js.Any])
   }
   
   object InnerBlocks {
@@ -90,47 +86,34 @@ object innerBlocksMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setAllowedBlocks(value: js.Array[String]): Self = StObject.set(x, "allowedBlocks", value.asInstanceOf[js.Any])
+        inline def setAllowedBlocks(value: js.Array[String]): Self = StObject.set(x, "allowedBlocks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowedBlocksUndefined: Self = StObject.set(x, "allowedBlocks", js.undefined)
+        inline def setAllowedBlocksUndefined: Self = StObject.set(x, "allowedBlocks", js.undefined)
         
-        @scala.inline
-        def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value :_*))
+        inline def setAllowedBlocksVarargs(value: String*): Self = StObject.set(x, "allowedBlocks", js.Array(value :_*))
         
-        @scala.inline
-        def setRenderAppender(value: ComponentType[js.Object]): Self = StObject.set(x, "renderAppender", value.asInstanceOf[js.Any])
+        inline def setRenderAppender(value: ComponentType[js.Object]): Self = StObject.set(x, "renderAppender", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderAppenderUndefined: Self = StObject.set(x, "renderAppender", js.undefined)
+        inline def setRenderAppenderUndefined: Self = StObject.set(x, "renderAppender", js.undefined)
         
-        @scala.inline
-        def setTemplate(value: TemplateArray): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: TemplateArray): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateInsertUpdatesSelection(value: Boolean): Self = StObject.set(x, "templateInsertUpdatesSelection", value.asInstanceOf[js.Any])
+        inline def setTemplateInsertUpdatesSelection(value: Boolean): Self = StObject.set(x, "templateInsertUpdatesSelection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateInsertUpdatesSelectionUndefined: Self = StObject.set(x, "templateInsertUpdatesSelection", js.undefined)
+        inline def setTemplateInsertUpdatesSelectionUndefined: Self = StObject.set(x, "templateInsertUpdatesSelection", js.undefined)
         
-        @scala.inline
-        def setTemplateLock(value: EditorTemplateLock): Self = StObject.set(x, "templateLock", value.asInstanceOf[js.Any])
+        inline def setTemplateLock(value: EditorTemplateLock): Self = StObject.set(x, "templateLock", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateLockUndefined: Self = StObject.set(x, "templateLock", js.undefined)
+        inline def setTemplateLockUndefined: Self = StObject.set(x, "templateLock", js.undefined)
         
-        @scala.inline
-        def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+        inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       }
     }
   }

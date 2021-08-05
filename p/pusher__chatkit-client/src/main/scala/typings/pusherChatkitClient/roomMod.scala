@@ -21,30 +21,23 @@ object roomMod {
   }
   object PusherReadCursor {
     
-    @scala.inline
-    def apply(position: Double, room: PusherRoom, `type`: Double, updatedAt: String, user: PusherUser): PusherReadCursor = {
+    inline def apply(position: Double, room: PusherRoom, `type`: Double, updatedAt: String, user: PusherUser): PusherReadCursor = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PusherReadCursor]
     }
     
-    @scala.inline
-    implicit class PusherReadCursorMutableBuilder[Self <: PusherReadCursor] (val x: Self) extends AnyVal {
+    extension [Self <: PusherReadCursor](x: Self) {
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoom(value: PusherRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+      inline def setRoom(value: PusherRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+      inline def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: PusherUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: PusherUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,8 +65,7 @@ object roomMod {
   }
   object PusherRoom {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createdAt: String,
       createdByUserId: String,
       id: String,
@@ -88,44 +80,31 @@ object roomMod {
       __obj.asInstanceOf[PusherRoom]
     }
     
-    @scala.inline
-    implicit class PusherRoomMutableBuilder[Self <: PusherRoom] (val x: Self) extends AnyVal {
+    extension [Self <: PusherRoom](x: Self) {
       
-      @scala.inline
-      def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedByUserId(value: String): Self = StObject.set(x, "createdByUserId", value.asInstanceOf[js.Any])
+      inline def setCreatedByUserId(value: String): Self = StObject.set(x, "createdByUserId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
+      inline def setCustomDataUndefined: Self = StObject.set(x, "customData", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
+      inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastMessageAt(value: String): Self = StObject.set(x, "lastMessageAt", value.asInstanceOf[js.Any])
+      inline def setLastMessageAt(value: String): Self = StObject.set(x, "lastMessageAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnreadCount(value: Double): Self = StObject.set(x, "unreadCount", value.asInstanceOf[js.Any])
+      inline def setUnreadCount(value: Double): Self = StObject.set(x, "unreadCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+      inline def setUpdatedAt(value: String): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[PusherUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[PusherUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: PusherUser*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: PusherUser*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
 }

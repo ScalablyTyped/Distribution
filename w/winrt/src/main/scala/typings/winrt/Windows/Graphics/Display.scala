@@ -99,8 +99,7 @@ object Display {
   }
   object IDisplayPropertiesStatics {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoRotationPreferences: DisplayOrientations,
       currentOrientation: DisplayOrientations,
       getColorProfileAsync: () => IAsyncOperation[IRandomAccessStream],
@@ -118,44 +117,31 @@ object Display {
       __obj.asInstanceOf[IDisplayPropertiesStatics]
     }
     
-    @scala.inline
-    implicit class IDisplayPropertiesStaticsMutableBuilder[Self <: IDisplayPropertiesStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IDisplayPropertiesStatics](x: Self) {
       
-      @scala.inline
-      def setAutoRotationPreferences(value: DisplayOrientations): Self = StObject.set(x, "autoRotationPreferences", value.asInstanceOf[js.Any])
+      inline def setAutoRotationPreferences(value: DisplayOrientations): Self = StObject.set(x, "autoRotationPreferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentOrientation(value: DisplayOrientations): Self = StObject.set(x, "currentOrientation", value.asInstanceOf[js.Any])
+      inline def setCurrentOrientation(value: DisplayOrientations): Self = StObject.set(x, "currentOrientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetColorProfileAsync(value: () => IAsyncOperation[IRandomAccessStream]): Self = StObject.set(x, "getColorProfileAsync", js.Any.fromFunction0(value))
+      inline def setGetColorProfileAsync(value: () => IAsyncOperation[IRandomAccessStream]): Self = StObject.set(x, "getColorProfileAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLogicalDpi(value: Double): Self = StObject.set(x, "logicalDpi", value.asInstanceOf[js.Any])
+      inline def setLogicalDpi(value: Double): Self = StObject.set(x, "logicalDpi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeOrientation(value: DisplayOrientations): Self = StObject.set(x, "nativeOrientation", value.asInstanceOf[js.Any])
+      inline def setNativeOrientation(value: DisplayOrientations): Self = StObject.set(x, "nativeOrientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOncolorprofilechanged(value: js.Any): Self = StObject.set(x, "oncolorprofilechanged", value.asInstanceOf[js.Any])
+      inline def setOncolorprofilechanged(value: js.Any): Self = StObject.set(x, "oncolorprofilechanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOndisplaycontentsinvalidated(value: js.Any): Self = StObject.set(x, "ondisplaycontentsinvalidated", value.asInstanceOf[js.Any])
+      inline def setOndisplaycontentsinvalidated(value: js.Any): Self = StObject.set(x, "ondisplaycontentsinvalidated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlogicaldpichanged(value: js.Any): Self = StObject.set(x, "onlogicaldpichanged", value.asInstanceOf[js.Any])
+      inline def setOnlogicaldpichanged(value: js.Any): Self = StObject.set(x, "onlogicaldpichanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnorientationchanged(value: js.Any): Self = StObject.set(x, "onorientationchanged", value.asInstanceOf[js.Any])
+      inline def setOnorientationchanged(value: js.Any): Self = StObject.set(x, "onorientationchanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnstereoenabledchanged(value: js.Any): Self = StObject.set(x, "onstereoenabledchanged", value.asInstanceOf[js.Any])
+      inline def setOnstereoenabledchanged(value: js.Any): Self = StObject.set(x, "onstereoenabledchanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionScale(value: ResolutionScale): Self = StObject.set(x, "resolutionScale", value.asInstanceOf[js.Any])
+      inline def setResolutionScale(value: ResolutionScale): Self = StObject.set(x, "resolutionScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStereoEnabled(value: Boolean): Self = StObject.set(x, "stereoEnabled", value.asInstanceOf[js.Any])
+      inline def setStereoEnabled(value: Boolean): Self = StObject.set(x, "stereoEnabled", value.asInstanceOf[js.Any])
     }
   }
 }

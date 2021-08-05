@@ -24,6 +24,5 @@ class ThemeProvider protected ()
 }
 object ThemeProvider {
   
-  @scala.inline
-  def apply: ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ThemeProvider").asInstanceOf[ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]]]
+  inline def apply: ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]] = ^.asInstanceOf[js.Dynamic].selectDynamic("ThemeProvider").asInstanceOf[ThemeProviderComponent[AnyIfEmpty[DefaultTheme], AnyIfEmpty[DefaultTheme]]]
 }

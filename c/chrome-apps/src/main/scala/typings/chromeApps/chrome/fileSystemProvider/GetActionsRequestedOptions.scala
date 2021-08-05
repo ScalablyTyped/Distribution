@@ -19,22 +19,17 @@ trait GetActionsRequestedOptions extends StObject {
 }
 object GetActionsRequestedOptions {
   
-  @scala.inline
-  def apply(entryPath: String, fileSystemId: String, requestId: integer): GetActionsRequestedOptions = {
+  inline def apply(entryPath: String, fileSystemId: String, requestId: integer): GetActionsRequestedOptions = {
     val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetActionsRequestedOptions]
   }
   
-  @scala.inline
-  implicit class GetActionsRequestedOptionsMutableBuilder[Self <: GetActionsRequestedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetActionsRequestedOptions](x: Self) {
     
-    @scala.inline
-    def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
+    inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: integer): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

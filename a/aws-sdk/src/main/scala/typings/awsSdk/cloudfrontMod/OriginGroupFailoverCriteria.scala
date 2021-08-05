@@ -13,16 +13,13 @@ trait OriginGroupFailoverCriteria extends StObject {
 }
 object OriginGroupFailoverCriteria {
   
-  @scala.inline
-  def apply(StatusCodes: StatusCodes): OriginGroupFailoverCriteria = {
+  inline def apply(StatusCodes: StatusCodes): OriginGroupFailoverCriteria = {
     val __obj = js.Dynamic.literal(StatusCodes = StatusCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginGroupFailoverCriteria]
   }
   
-  @scala.inline
-  implicit class OriginGroupFailoverCriteriaMutableBuilder[Self <: OriginGroupFailoverCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: OriginGroupFailoverCriteria](x: Self) {
     
-    @scala.inline
-    def setStatusCodes(value: StatusCodes): Self = StObject.set(x, "StatusCodes", value.asInstanceOf[js.Any])
+    inline def setStatusCodes(value: StatusCodes): Self = StObject.set(x, "StatusCodes", value.asInstanceOf[js.Any])
   }
 }

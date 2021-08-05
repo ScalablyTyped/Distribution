@@ -20,22 +20,17 @@ trait DictadditionalPropsOnClickTagName
 }
 object DictadditionalPropsOnClickTagName {
   
-  @scala.inline
-  def apply(tagName: ComponentType[js.Any]): DictadditionalPropsOnClickTagName = {
+  inline def apply(tagName: ComponentType[js.Any]): DictadditionalPropsOnClickTagName = {
     val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DictadditionalPropsOnClickTagName]
   }
   
-  @scala.inline
-  implicit class DictadditionalPropsOnClickTagNameMutableBuilder[Self <: DictadditionalPropsOnClickTagName] (val x: Self) extends AnyVal {
+  extension [Self <: DictadditionalPropsOnClickTagName](x: Self) {
     
-    @scala.inline
-    def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setTagName(value: ComponentType[js.Any]): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: ComponentType[js.Any]): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
   }
 }

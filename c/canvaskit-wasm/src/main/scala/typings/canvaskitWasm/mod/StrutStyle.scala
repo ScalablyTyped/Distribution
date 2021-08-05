@@ -22,58 +22,41 @@ trait StrutStyle extends StObject {
 }
 object StrutStyle {
   
-  @scala.inline
-  def apply(): StrutStyle = {
+  inline def apply(): StrutStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StrutStyle]
   }
   
-  @scala.inline
-  implicit class StrutStyleMutableBuilder[Self <: StrutStyle] (val x: Self) extends AnyVal {
+  extension [Self <: StrutStyle](x: Self) {
     
-    @scala.inline
-    def setFontFamilies(value: js.Array[String]): Self = StObject.set(x, "fontFamilies", value.asInstanceOf[js.Any])
+    inline def setFontFamilies(value: js.Array[String]): Self = StObject.set(x, "fontFamilies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamiliesUndefined: Self = StObject.set(x, "fontFamilies", js.undefined)
+    inline def setFontFamiliesUndefined: Self = StObject.set(x, "fontFamilies", js.undefined)
     
-    @scala.inline
-    def setFontFamiliesVarargs(value: String*): Self = StObject.set(x, "fontFamilies", js.Array(value :_*))
+    inline def setFontFamiliesVarargs(value: String*): Self = StObject.set(x, "fontFamilies", js.Array(value :_*))
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
     
-    @scala.inline
-    def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: FontStyle): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    @scala.inline
-    def setForceStrutHeight(value: Boolean): Self = StObject.set(x, "forceStrutHeight", value.asInstanceOf[js.Any])
+    inline def setForceStrutHeight(value: Boolean): Self = StObject.set(x, "forceStrutHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceStrutHeightUndefined: Self = StObject.set(x, "forceStrutHeight", js.undefined)
+    inline def setForceStrutHeightUndefined: Self = StObject.set(x, "forceStrutHeight", js.undefined)
     
-    @scala.inline
-    def setHeightMultiplier(value: Double): Self = StObject.set(x, "heightMultiplier", value.asInstanceOf[js.Any])
+    inline def setHeightMultiplier(value: Double): Self = StObject.set(x, "heightMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightMultiplierUndefined: Self = StObject.set(x, "heightMultiplier", js.undefined)
+    inline def setHeightMultiplierUndefined: Self = StObject.set(x, "heightMultiplier", js.undefined)
     
-    @scala.inline
-    def setLeading(value: Double): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+    inline def setLeading(value: Double): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+    inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
     
-    @scala.inline
-    def setStrutEnabled(value: Boolean): Self = StObject.set(x, "strutEnabled", value.asInstanceOf[js.Any])
+    inline def setStrutEnabled(value: Boolean): Self = StObject.set(x, "strutEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrutEnabledUndefined: Self = StObject.set(x, "strutEnabled", js.undefined)
+    inline def setStrutEnabledUndefined: Self = StObject.set(x, "strutEnabled", js.undefined)
   }
 }

@@ -107,8 +107,7 @@ trait CurrencyFormatter extends StObject {
 }
 object CurrencyFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyRoundingForCurrency: RoundingAlgorithm => Unit,
     currency: String,
     format: Double => String,
@@ -136,73 +135,50 @@ object CurrencyFormatter {
     __obj.asInstanceOf[CurrencyFormatter]
   }
   
-  @scala.inline
-  implicit class CurrencyFormatterMutableBuilder[Self <: CurrencyFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: CurrencyFormatter](x: Self) {
     
-    @scala.inline
-    def setApplyRoundingForCurrency(value: RoundingAlgorithm => Unit): Self = StObject.set(x, "applyRoundingForCurrency", js.Any.fromFunction1(value))
+    inline def setApplyRoundingForCurrency(value: RoundingAlgorithm => Unit): Self = StObject.set(x, "applyRoundingForCurrency", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    inline def setFormat(value: Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatDouble(value: Double => String): Self = StObject.set(x, "formatDouble", js.Any.fromFunction1(value))
+    inline def setFormatDouble(value: Double => String): Self = StObject.set(x, "formatDouble", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatInt(value: Double => String): Self = StObject.set(x, "formatInt", js.Any.fromFunction1(value))
+    inline def setFormatInt(value: Double => String): Self = StObject.set(x, "formatInt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatUInt(value: Double => String): Self = StObject.set(x, "formatUInt", js.Any.fromFunction1(value))
+    inline def setFormatUInt(value: Double => String): Self = StObject.set(x, "formatUInt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFractionDigits(value: Double): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
+    inline def setFractionDigits(value: Double): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicRegion(value: String): Self = StObject.set(x, "geographicRegion", value.asInstanceOf[js.Any])
+    inline def setGeographicRegion(value: String): Self = StObject.set(x, "geographicRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegerDigits(value: Double): Self = StObject.set(x, "integerDigits", value.asInstanceOf[js.Any])
+    inline def setIntegerDigits(value: Double): Self = StObject.set(x, "integerDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDecimalPointAlwaysDisplayed(value: Boolean): Self = StObject.set(x, "isDecimalPointAlwaysDisplayed", value.asInstanceOf[js.Any])
+    inline def setIsDecimalPointAlwaysDisplayed(value: Boolean): Self = StObject.set(x, "isDecimalPointAlwaysDisplayed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGrouped(value: Boolean): Self = StObject.set(x, "isGrouped", value.asInstanceOf[js.Any])
+    inline def setIsGrouped(value: Boolean): Self = StObject.set(x, "isGrouped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsZeroSigned(value: Boolean): Self = StObject.set(x, "isZeroSigned", value.asInstanceOf[js.Any])
+    inline def setIsZeroSigned(value: Boolean): Self = StObject.set(x, "isZeroSigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: CurrencyFormatterMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: CurrencyFormatterMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberRounder(value: INumberRounder): Self = StObject.set(x, "numberRounder", value.asInstanceOf[js.Any])
+    inline def setNumberRounder(value: INumberRounder): Self = StObject.set(x, "numberRounder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumeralSystem(value: String): Self = StObject.set(x, "numeralSystem", value.asInstanceOf[js.Any])
+    inline def setNumeralSystem(value: String): Self = StObject.set(x, "numeralSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseDouble(value: String => Double): Self = StObject.set(x, "parseDouble", js.Any.fromFunction1(value))
+    inline def setParseDouble(value: String => Double): Self = StObject.set(x, "parseDouble", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseInt(value: String => Double): Self = StObject.set(x, "parseInt", js.Any.fromFunction1(value))
+    inline def setParseInt(value: String => Double): Self = StObject.set(x, "parseInt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseUInt(value: String => Double): Self = StObject.set(x, "parseUInt", js.Any.fromFunction1(value))
+    inline def setParseUInt(value: String => Double): Self = StObject.set(x, "parseUInt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolvedGeographicRegion(value: String): Self = StObject.set(x, "resolvedGeographicRegion", value.asInstanceOf[js.Any])
+    inline def setResolvedGeographicRegion(value: String): Self = StObject.set(x, "resolvedGeographicRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
+    inline def setResolvedLanguage(value: String): Self = StObject.set(x, "resolvedLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignificantDigits(value: Double): Self = StObject.set(x, "significantDigits", value.asInstanceOf[js.Any])
+    inline def setSignificantDigits(value: Double): Self = StObject.set(x, "significantDigits", value.asInstanceOf[js.Any])
   }
 }

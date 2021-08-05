@@ -79,7 +79,7 @@ trait TaskRequestAcceptItem extends StObject {
   
   var NoAging: Boolean = js.native
   
-  @JSName("Outlook.TaskRequestAcceptItem_typekey")
+  /* private */ @JSName("Outlook.TaskRequestAcceptItem_typekey")
   var OutlookDotTaskRequestAcceptItem_typekey: TaskRequestAcceptItem = js.native
   
   val OutlookInternalVersion: Double = js.native

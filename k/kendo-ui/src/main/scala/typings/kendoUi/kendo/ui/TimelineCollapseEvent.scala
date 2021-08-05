@@ -13,19 +13,15 @@ trait TimelineCollapseEvent
 }
 object TimelineCollapseEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Timeline): TimelineCollapseEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Timeline): TimelineCollapseEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineCollapseEvent]
   }
   
-  @scala.inline
-  implicit class TimelineCollapseEventMutableBuilder[Self <: TimelineCollapseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineCollapseEvent](x: Self) {
     
-    @scala.inline
-    def setDataItem(value: Model): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+    inline def setDataItem(value: Model): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
+    inline def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
   }
 }

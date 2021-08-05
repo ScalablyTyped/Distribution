@@ -58,8 +58,7 @@ trait Deep
 }
 object Deep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contain: Include,
     contains: Include,
     eq_ : (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion,
@@ -80,40 +79,28 @@ object Deep {
     __obj.asInstanceOf[Deep]
   }
   
-  @scala.inline
-  implicit class DeepMutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
+  extension [Self <: Deep](x: Self) {
     
-    @scala.inline
-    def setContain(value: Include): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+    inline def setContain(value: Include): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContains(value: Include): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: Include): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEq_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "eq", js.Any.fromFunction2(value))
+    inline def setEq_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "eq", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEqual(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
+    inline def setEqual(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEquals_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+    inline def setEquals_(value: (/* value */ js.Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: Include): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludes(value: Include): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: Include): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNested(value: Nested): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
+    inline def setNested(value: Nested): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdered(value: Ordered): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
+    inline def setOrdered(value: Ordered): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwn(value: Own): Self = StObject.set(x, "own", value.asInstanceOf[js.Any])
+    inline def setOwn(value: Own): Self = StObject.set(x, "own", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: Property): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: Property): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }
 }

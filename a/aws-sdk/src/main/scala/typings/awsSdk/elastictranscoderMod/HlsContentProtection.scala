@@ -38,49 +38,35 @@ trait HlsContentProtection extends StObject {
 }
 object HlsContentProtection {
   
-  @scala.inline
-  def apply(): HlsContentProtection = {
+  inline def apply(): HlsContentProtection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsContentProtection]
   }
   
-  @scala.inline
-  implicit class HlsContentProtectionMutableBuilder[Self <: HlsContentProtection] (val x: Self) extends AnyVal {
+  extension [Self <: HlsContentProtection](x: Self) {
     
-    @scala.inline
-    def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
+    inline def setInitializationVector(value: ZeroTo255String): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
+    inline def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
     
-    @scala.inline
-    def setKey(value: Base64EncodedString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Base64EncodedString): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMd5(value: Base64EncodedString): Self = StObject.set(x, "KeyMd5", value.asInstanceOf[js.Any])
+    inline def setKeyMd5(value: Base64EncodedString): Self = StObject.set(x, "KeyMd5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMd5Undefined: Self = StObject.set(x, "KeyMd5", js.undefined)
+    inline def setKeyMd5Undefined: Self = StObject.set(x, "KeyMd5", js.undefined)
     
-    @scala.inline
-    def setKeyStoragePolicy(value: KeyStoragePolicy): Self = StObject.set(x, "KeyStoragePolicy", value.asInstanceOf[js.Any])
+    inline def setKeyStoragePolicy(value: KeyStoragePolicy): Self = StObject.set(x, "KeyStoragePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyStoragePolicyUndefined: Self = StObject.set(x, "KeyStoragePolicy", js.undefined)
+    inline def setKeyStoragePolicyUndefined: Self = StObject.set(x, "KeyStoragePolicy", js.undefined)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setLicenseAcquisitionUrl(value: ZeroTo512String): Self = StObject.set(x, "LicenseAcquisitionUrl", value.asInstanceOf[js.Any])
+    inline def setLicenseAcquisitionUrl(value: ZeroTo512String): Self = StObject.set(x, "LicenseAcquisitionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseAcquisitionUrlUndefined: Self = StObject.set(x, "LicenseAcquisitionUrl", js.undefined)
+    inline def setLicenseAcquisitionUrlUndefined: Self = StObject.set(x, "LicenseAcquisitionUrl", js.undefined)
     
-    @scala.inline
-    def setMethod(value: HlsContentProtectionMethod): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: HlsContentProtectionMethod): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
   }
 }

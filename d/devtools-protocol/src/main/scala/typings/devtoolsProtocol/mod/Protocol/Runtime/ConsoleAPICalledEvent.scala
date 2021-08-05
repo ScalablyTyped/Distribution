@@ -60,8 +60,7 @@ trait ConsoleAPICalledEvent extends StObject {
 }
 object ConsoleAPICalledEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: js.Array[RemoteObject],
     executionContextId: ExecutionContextId,
     timestamp: Timestamp,
@@ -72,35 +71,25 @@ object ConsoleAPICalledEvent {
     __obj.asInstanceOf[ConsoleAPICalledEvent]
   }
   
-  @scala.inline
-  implicit class ConsoleAPICalledEventMutableBuilder[Self <: ConsoleAPICalledEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ConsoleAPICalledEvent](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[RemoteObject]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[RemoteObject]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: RemoteObject*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: RemoteObject*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
+    inline def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: log | debug | info | error | warning | dir | dirxml | table | trace | clear | startGroup | startGroupCollapsed | endGroup | assert | profile | profileEnd | count | timeEnd
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

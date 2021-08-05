@@ -28,34 +28,25 @@ trait ListPrincipalsForPortfolioInput extends StObject {
 }
 object ListPrincipalsForPortfolioInput {
   
-  @scala.inline
-  def apply(PortfolioId: Id): ListPrincipalsForPortfolioInput = {
+  inline def apply(PortfolioId: Id): ListPrincipalsForPortfolioInput = {
     val __obj = js.Dynamic.literal(PortfolioId = PortfolioId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListPrincipalsForPortfolioInput]
   }
   
-  @scala.inline
-  implicit class ListPrincipalsForPortfolioInputMutableBuilder[Self <: ListPrincipalsForPortfolioInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListPrincipalsForPortfolioInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
-    @scala.inline
-    def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
+    inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
   }
 }

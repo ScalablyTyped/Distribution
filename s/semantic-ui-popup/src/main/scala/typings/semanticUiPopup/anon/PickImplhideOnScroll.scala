@@ -13,16 +13,13 @@ trait PickImplhideOnScroll extends StObject {
 }
 object PickImplhideOnScroll {
   
-  @scala.inline
-  def apply(hideOnScroll: auto | `false`): PickImplhideOnScroll = {
+  inline def apply(hideOnScroll: auto | `false`): PickImplhideOnScroll = {
     val __obj = js.Dynamic.literal(hideOnScroll = hideOnScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhideOnScroll]
   }
   
-  @scala.inline
-  implicit class PickImplhideOnScrollMutableBuilder[Self <: PickImplhideOnScroll] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplhideOnScroll](x: Self) {
     
-    @scala.inline
-    def setHideOnScroll(value: auto | `false`): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
+    inline def setHideOnScroll(value: auto | `false`): Self = StObject.set(x, "hideOnScroll", value.asInstanceOf[js.Any])
   }
 }

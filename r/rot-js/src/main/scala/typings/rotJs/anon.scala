@@ -25,20 +25,16 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Height = {
+    inline def apply(height: Double, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,119 +77,82 @@ object anon {
   }
   object PartialDisplayOptions {
     
-    @scala.inline
-    def apply(): PartialDisplayOptions = {
+    inline def apply(): PartialDisplayOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialDisplayOptions]
     }
     
-    @scala.inline
-    implicit class PartialDisplayOptionsMutableBuilder[Self <: PartialDisplayOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialDisplayOptions](x: Self) {
       
-      @scala.inline
-      def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+      inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      @scala.inline
-      def setBorder(value: Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      @scala.inline
-      def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
+      inline def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
+      inline def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
       
-      @scala.inline
-      def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      @scala.inline
-      def setForceSquareRatio(value: Boolean): Self = StObject.set(x, "forceSquareRatio", value.asInstanceOf[js.Any])
+      inline def setForceSquareRatio(value: Boolean): Self = StObject.set(x, "forceSquareRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceSquareRatioUndefined: Self = StObject.set(x, "forceSquareRatio", js.undefined)
+      inline def setForceSquareRatioUndefined: Self = StObject.set(x, "forceSquareRatio", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLayout(value: LayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: LayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+      inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       
-      @scala.inline
-      def setTileColorize(value: Boolean): Self = StObject.set(x, "tileColorize", value.asInstanceOf[js.Any])
+      inline def setTileColorize(value: Boolean): Self = StObject.set(x, "tileColorize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileColorizeUndefined: Self = StObject.set(x, "tileColorize", js.undefined)
+      inline def setTileColorizeUndefined: Self = StObject.set(x, "tileColorize", js.undefined)
       
-      @scala.inline
-      def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+      inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
+      inline def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
       
-      @scala.inline
-      def setTileMap(value: StringDictionary[js.Tuple2[Double, Double]]): Self = StObject.set(x, "tileMap", value.asInstanceOf[js.Any])
+      inline def setTileMap(value: StringDictionary[js.Tuple2[Double, Double]]): Self = StObject.set(x, "tileMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileMapUndefined: Self = StObject.set(x, "tileMap", js.undefined)
+      inline def setTileMapUndefined: Self = StObject.set(x, "tileMap", js.undefined)
       
-      @scala.inline
-      def setTileSet(value: HTMLCanvasElement | HTMLImageElement | HTMLVideoElement | ImageBitmap): Self = StObject.set(x, "tileSet", value.asInstanceOf[js.Any])
+      inline def setTileSet(value: HTMLCanvasElement | HTMLImageElement | HTMLVideoElement | ImageBitmap): Self = StObject.set(x, "tileSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileSetNull: Self = StObject.set(x, "tileSet", null)
+      inline def setTileSetNull: Self = StObject.set(x, "tileSet", null)
       
-      @scala.inline
-      def setTileSetUndefined: Self = StObject.set(x, "tileSet", js.undefined)
+      inline def setTileSetUndefined: Self = StObject.set(x, "tileSet", js.undefined)
       
-      @scala.inline
-      def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+      inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
+      inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
       
-      @scala.inline
-      def setTranspose(value: Boolean): Self = StObject.set(x, "transpose", value.asInstanceOf[js.Any])
+      inline def setTranspose(value: Boolean): Self = StObject.set(x, "transpose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransposeUndefined: Self = StObject.set(x, "transpose", js.undefined)
+      inline def setTransposeUndefined: Self = StObject.set(x, "transpose", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -204,20 +163,16 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
+      inline def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopologyUndefined: Self = StObject.set(x, "topology", js.undefined)
+      inline def setTopologyUndefined: Self = StObject.set(x, "topology", js.undefined)
     }
   }
   
@@ -232,38 +187,28 @@ object anon {
   }
   object PartialOptionsBorn {
     
-    @scala.inline
-    def apply(): PartialOptionsBorn = {
+    inline def apply(): PartialOptionsBorn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptionsBorn]
     }
     
-    @scala.inline
-    implicit class PartialOptionsBornMutableBuilder[Self <: PartialOptionsBorn] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsBorn](x: Self) {
       
-      @scala.inline
-      def setBorn(value: js.Array[Double]): Self = StObject.set(x, "born", value.asInstanceOf[js.Any])
+      inline def setBorn(value: js.Array[Double]): Self = StObject.set(x, "born", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBornUndefined: Self = StObject.set(x, "born", js.undefined)
+      inline def setBornUndefined: Self = StObject.set(x, "born", js.undefined)
       
-      @scala.inline
-      def setBornVarargs(value: Double*): Self = StObject.set(x, "born", js.Array(value :_*))
+      inline def setBornVarargs(value: Double*): Self = StObject.set(x, "born", js.Array(value :_*))
       
-      @scala.inline
-      def setSurvive(value: js.Array[Double]): Self = StObject.set(x, "survive", value.asInstanceOf[js.Any])
+      inline def setSurvive(value: js.Array[Double]): Self = StObject.set(x, "survive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurviveUndefined: Self = StObject.set(x, "survive", js.undefined)
+      inline def setSurviveUndefined: Self = StObject.set(x, "survive", js.undefined)
       
-      @scala.inline
-      def setSurviveVarargs(value: Double*): Self = StObject.set(x, "survive", js.Array(value :_*))
+      inline def setSurviveVarargs(value: Double*): Self = StObject.set(x, "survive", js.Array(value :_*))
       
-      @scala.inline
-      def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
+      inline def setTopology(value: `4` | `6` | `8`): Self = StObject.set(x, "topology", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopologyUndefined: Self = StObject.set(x, "topology", js.undefined)
+      inline def setTopologyUndefined: Self = StObject.set(x, "topology", js.undefined)
     }
   }
   
@@ -280,38 +225,28 @@ object anon {
   }
   object PartialOptionsCellHeight {
     
-    @scala.inline
-    def apply(): PartialOptionsCellHeight = {
+    inline def apply(): PartialOptionsCellHeight = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptionsCellHeight]
     }
     
-    @scala.inline
-    implicit class PartialOptionsCellHeightMutableBuilder[Self <: PartialOptionsCellHeight] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsCellHeight](x: Self) {
       
-      @scala.inline
-      def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+      inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
+      inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
       
-      @scala.inline
-      def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
+      inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
+      inline def setCellWidthUndefined: Self = StObject.set(x, "cellWidth", js.undefined)
       
-      @scala.inline
-      def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
+      inline def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomHeightUndefined: Self = StObject.set(x, "roomHeight", js.undefined)
+      inline def setRoomHeightUndefined: Self = StObject.set(x, "roomHeight", js.undefined)
       
-      @scala.inline
-      def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
+      inline def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomWidthUndefined: Self = StObject.set(x, "roomWidth", js.undefined)
+      inline def setRoomWidthUndefined: Self = StObject.set(x, "roomWidth", js.undefined)
     }
   }
   
@@ -330,44 +265,32 @@ object anon {
   }
   object PartialOptionsCorridorLength {
     
-    @scala.inline
-    def apply(): PartialOptionsCorridorLength = {
+    inline def apply(): PartialOptionsCorridorLength = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptionsCorridorLength]
     }
     
-    @scala.inline
-    implicit class PartialOptionsCorridorLengthMutableBuilder[Self <: PartialOptionsCorridorLength] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsCorridorLength](x: Self) {
       
-      @scala.inline
-      def setCorridorLength(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "corridorLength", value.asInstanceOf[js.Any])
+      inline def setCorridorLength(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "corridorLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorridorLengthUndefined: Self = StObject.set(x, "corridorLength", js.undefined)
+      inline def setCorridorLengthUndefined: Self = StObject.set(x, "corridorLength", js.undefined)
       
-      @scala.inline
-      def setDugPercentage(value: Double): Self = StObject.set(x, "dugPercentage", value.asInstanceOf[js.Any])
+      inline def setDugPercentage(value: Double): Self = StObject.set(x, "dugPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDugPercentageUndefined: Self = StObject.set(x, "dugPercentage", js.undefined)
+      inline def setDugPercentageUndefined: Self = StObject.set(x, "dugPercentage", js.undefined)
       
-      @scala.inline
-      def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
+      inline def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomHeightUndefined: Self = StObject.set(x, "roomHeight", js.undefined)
+      inline def setRoomHeightUndefined: Self = StObject.set(x, "roomHeight", js.undefined)
       
-      @scala.inline
-      def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
+      inline def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomWidthUndefined: Self = StObject.set(x, "roomWidth", js.undefined)
+      inline def setRoomWidthUndefined: Self = StObject.set(x, "roomWidth", js.undefined)
       
-      @scala.inline
-      def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+      inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
+      inline def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
     }
   }
   
@@ -382,32 +305,24 @@ object anon {
   }
   object PartialOptionsEmissionThreshold {
     
-    @scala.inline
-    def apply(): PartialOptionsEmissionThreshold = {
+    inline def apply(): PartialOptionsEmissionThreshold = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptionsEmissionThreshold]
     }
     
-    @scala.inline
-    implicit class PartialOptionsEmissionThresholdMutableBuilder[Self <: PartialOptionsEmissionThreshold] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsEmissionThreshold](x: Self) {
       
-      @scala.inline
-      def setEmissionThreshold(value: Double): Self = StObject.set(x, "emissionThreshold", value.asInstanceOf[js.Any])
+      inline def setEmissionThreshold(value: Double): Self = StObject.set(x, "emissionThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmissionThresholdUndefined: Self = StObject.set(x, "emissionThreshold", js.undefined)
+      inline def setEmissionThresholdUndefined: Self = StObject.set(x, "emissionThreshold", js.undefined)
       
-      @scala.inline
-      def setPasses(value: Double): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
+      inline def setPasses(value: Double): Self = StObject.set(x, "passes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassesUndefined: Self = StObject.set(x, "passes", js.undefined)
+      inline def setPassesUndefined: Self = StObject.set(x, "passes", js.undefined)
       
-      @scala.inline
-      def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     }
   }
   
@@ -422,32 +337,24 @@ object anon {
   }
   object PartialOptionsOrder {
     
-    @scala.inline
-    def apply(): PartialOptionsOrder = {
+    inline def apply(): PartialOptionsOrder = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptionsOrder]
     }
     
-    @scala.inline
-    implicit class PartialOptionsOrderMutableBuilder[Self <: PartialOptionsOrder] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsOrder](x: Self) {
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setPrior(value: Double): Self = StObject.set(x, "prior", value.asInstanceOf[js.Any])
+      inline def setPrior(value: Double): Self = StObject.set(x, "prior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorUndefined: Self = StObject.set(x, "prior", js.undefined)
+      inline def setPriorUndefined: Self = StObject.set(x, "prior", js.undefined)
       
-      @scala.inline
-      def setWords(value: Boolean): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
+      inline def setWords(value: Boolean): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
+      inline def setWordsUndefined: Self = StObject.set(x, "words", js.undefined)
     }
   }
   
@@ -464,38 +371,28 @@ object anon {
   }
   object PartialOptionsRoomDugPercentage {
     
-    @scala.inline
-    def apply(): PartialOptionsRoomDugPercentage = {
+    inline def apply(): PartialOptionsRoomDugPercentage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptionsRoomDugPercentage]
     }
     
-    @scala.inline
-    implicit class PartialOptionsRoomDugPercentageMutableBuilder[Self <: PartialOptionsRoomDugPercentage] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptionsRoomDugPercentage](x: Self) {
       
-      @scala.inline
-      def setRoomDugPercentage(value: Double): Self = StObject.set(x, "roomDugPercentage", value.asInstanceOf[js.Any])
+      inline def setRoomDugPercentage(value: Double): Self = StObject.set(x, "roomDugPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomDugPercentageUndefined: Self = StObject.set(x, "roomDugPercentage", js.undefined)
+      inline def setRoomDugPercentageUndefined: Self = StObject.set(x, "roomDugPercentage", js.undefined)
       
-      @scala.inline
-      def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
+      inline def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomHeightUndefined: Self = StObject.set(x, "roomHeight", js.undefined)
+      inline def setRoomHeightUndefined: Self = StObject.set(x, "roomHeight", js.undefined)
       
-      @scala.inline
-      def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
+      inline def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomWidthUndefined: Self = StObject.set(x, "roomWidth", js.undefined)
+      inline def setRoomWidthUndefined: Self = StObject.set(x, "roomWidth", js.undefined)
       
-      @scala.inline
-      def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+      inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
+      inline def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
     }
   }
   

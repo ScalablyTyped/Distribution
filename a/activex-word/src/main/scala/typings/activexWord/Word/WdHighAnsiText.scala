@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdHighAnsiText extends StObject
 object WdHighAnsiText {
   
-  @scala.inline
-  def wdAutoDetectHighAnsiFarEast: `2` = 2.asInstanceOf[`2`]
+  inline def wdAutoDetectHighAnsiFarEast: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdHighAnsiIsFarEast: `0` = 0.asInstanceOf[`0`]
+  inline def wdHighAnsiIsFarEast: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdHighAnsiIsHighAnsi: `1` = 1.asInstanceOf[`1`]
+  inline def wdHighAnsiIsHighAnsi: `1` = 1.asInstanceOf[`1`]
 }

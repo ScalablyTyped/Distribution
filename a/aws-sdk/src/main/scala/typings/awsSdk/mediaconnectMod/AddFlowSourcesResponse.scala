@@ -18,28 +18,21 @@ trait AddFlowSourcesResponse extends StObject {
 }
 object AddFlowSourcesResponse {
   
-  @scala.inline
-  def apply(): AddFlowSourcesResponse = {
+  inline def apply(): AddFlowSourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddFlowSourcesResponse]
   }
   
-  @scala.inline
-  implicit class AddFlowSourcesResponseMutableBuilder[Self <: AddFlowSourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddFlowSourcesResponse](x: Self) {
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
     
-    @scala.inline
-    def setSources(value: listOfSource): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: listOfSource): Self = StObject.set(x, "Sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "Sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: Source*): Self = StObject.set(x, "Sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "Sources", js.Array(value :_*))
   }
 }

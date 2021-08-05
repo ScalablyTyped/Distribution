@@ -23,31 +23,23 @@ trait CognitoStreams extends StObject {
 }
 object CognitoStreams {
   
-  @scala.inline
-  def apply(): CognitoStreams = {
+  inline def apply(): CognitoStreams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CognitoStreams]
   }
   
-  @scala.inline
-  implicit class CognitoStreamsMutableBuilder[Self <: CognitoStreams] (val x: Self) extends AnyVal {
+  extension [Self <: CognitoStreams](x: Self) {
     
-    @scala.inline
-    def setRoleArn(value: AssumeRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AssumeRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     
-    @scala.inline
-    def setStreamingStatus(value: StreamingStatus): Self = StObject.set(x, "StreamingStatus", value.asInstanceOf[js.Any])
+    inline def setStreamingStatus(value: StreamingStatus): Self = StObject.set(x, "StreamingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingStatusUndefined: Self = StObject.set(x, "StreamingStatus", js.undefined)
+    inline def setStreamingStatusUndefined: Self = StObject.set(x, "StreamingStatus", js.undefined)
   }
 }

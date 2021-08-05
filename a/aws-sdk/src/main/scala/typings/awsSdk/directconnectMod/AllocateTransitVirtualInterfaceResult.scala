@@ -10,19 +10,15 @@ trait AllocateTransitVirtualInterfaceResult extends StObject {
 }
 object AllocateTransitVirtualInterfaceResult {
   
-  @scala.inline
-  def apply(): AllocateTransitVirtualInterfaceResult = {
+  inline def apply(): AllocateTransitVirtualInterfaceResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllocateTransitVirtualInterfaceResult]
   }
   
-  @scala.inline
-  implicit class AllocateTransitVirtualInterfaceResultMutableBuilder[Self <: AllocateTransitVirtualInterfaceResult] (val x: Self) extends AnyVal {
+  extension [Self <: AllocateTransitVirtualInterfaceResult](x: Self) {
     
-    @scala.inline
-    def setVirtualInterface(value: VirtualInterface): Self = StObject.set(x, "virtualInterface", value.asInstanceOf[js.Any])
+    inline def setVirtualInterface(value: VirtualInterface): Self = StObject.set(x, "virtualInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceUndefined: Self = StObject.set(x, "virtualInterface", js.undefined)
+    inline def setVirtualInterfaceUndefined: Self = StObject.set(x, "virtualInterface", js.undefined)
   }
 }

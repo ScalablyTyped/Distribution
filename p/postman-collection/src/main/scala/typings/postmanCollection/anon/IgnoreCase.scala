@@ -10,16 +10,13 @@ trait IgnoreCase extends StObject {
 }
 object IgnoreCase {
   
-  @scala.inline
-  def apply(ignoreCase: Boolean): IgnoreCase = {
+  inline def apply(ignoreCase: Boolean): IgnoreCase = {
     val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgnoreCase]
   }
   
-  @scala.inline
-  implicit class IgnoreCaseMutableBuilder[Self <: IgnoreCase] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreCase](x: Self) {
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
   }
 }

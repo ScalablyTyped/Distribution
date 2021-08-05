@@ -22,19 +22,15 @@ trait ISearchSuggestItem extends StObject {
 }
 object ISearchSuggestItem {
   
-  @scala.inline
-  def apply(qTerm: Double, qValue: String): ISearchSuggestItem = {
+  inline def apply(qTerm: Double, qValue: String): ISearchSuggestItem = {
     val __obj = js.Dynamic.literal(qTerm = qTerm.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchSuggestItem]
   }
   
-  @scala.inline
-  implicit class ISearchSuggestItemMutableBuilder[Self <: ISearchSuggestItem] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchSuggestItem](x: Self) {
     
-    @scala.inline
-    def setQTerm(value: Double): Self = StObject.set(x, "qTerm", value.asInstanceOf[js.Any])
+    inline def setQTerm(value: Double): Self = StObject.set(x, "qTerm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValue(value: String): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
+    inline def setQValue(value: String): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

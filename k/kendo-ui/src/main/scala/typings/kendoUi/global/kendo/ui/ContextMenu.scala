@@ -21,13 +21,11 @@ object ContextMenu {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ContextMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ContextMenu]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.ContextMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ContextMenu]
   
   /* static member */
   @JSGlobal("kendo.ui.ContextMenu.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.ContextMenu = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.ContextMenu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.ContextMenu): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

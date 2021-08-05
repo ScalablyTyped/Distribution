@@ -26,34 +26,25 @@ trait SchemaViewDefinition extends StObject {
 }
 object SchemaViewDefinition {
   
-  @scala.inline
-  def apply(): SchemaViewDefinition = {
+  inline def apply(): SchemaViewDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaViewDefinition]
   }
   
-  @scala.inline
-  implicit class SchemaViewDefinitionMutableBuilder[Self <: SchemaViewDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaViewDefinition](x: Self) {
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
+    inline def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
+    inline def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
     
-    @scala.inline
-    def setUserDefinedFunctionResources(value: js.Array[SchemaUserDefinedFunctionResource]): Self = StObject.set(x, "userDefinedFunctionResources", value.asInstanceOf[js.Any])
+    inline def setUserDefinedFunctionResources(value: js.Array[SchemaUserDefinedFunctionResource]): Self = StObject.set(x, "userDefinedFunctionResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedFunctionResourcesUndefined: Self = StObject.set(x, "userDefinedFunctionResources", js.undefined)
+    inline def setUserDefinedFunctionResourcesUndefined: Self = StObject.set(x, "userDefinedFunctionResources", js.undefined)
     
-    @scala.inline
-    def setUserDefinedFunctionResourcesVarargs(value: SchemaUserDefinedFunctionResource*): Self = StObject.set(x, "userDefinedFunctionResources", js.Array(value :_*))
+    inline def setUserDefinedFunctionResourcesVarargs(value: SchemaUserDefinedFunctionResource*): Self = StObject.set(x, "userDefinedFunctionResources", js.Array(value :_*))
   }
 }

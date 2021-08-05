@@ -220,8 +220,7 @@ trait HexoConfig
 }
 object HexoConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     archive_dir: String,
     author: String,
     category_dir: String,
@@ -263,157 +262,106 @@ object HexoConfig {
     __obj.asInstanceOf[HexoConfig]
   }
   
-  @scala.inline
-  implicit class HexoConfigMutableBuilder[Self <: HexoConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HexoConfig](x: Self) {
     
-    @scala.inline
-    def setArchive_dir(value: String): Self = StObject.set(x, "archive_dir", value.asInstanceOf[js.Any])
+    inline def setArchive_dir(value: String): Self = StObject.set(x, "archive_dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory_dir(value: String): Self = StObject.set(x, "category_dir", value.asInstanceOf[js.Any])
+    inline def setCategory_dir(value: String): Self = StObject.set(x, "category_dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory_map(value: StringDictionary[String | Double]): Self = StObject.set(x, "category_map", value.asInstanceOf[js.Any])
+    inline def setCategory_map(value: StringDictionary[String | Double]): Self = StObject.set(x, "category_map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode_dir(value: String): Self = StObject.set(x, "code_dir", value.asInstanceOf[js.Any])
+    inline def setCode_dir(value: String): Self = StObject.set(x, "code_dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate_format(value: String): Self = StObject.set(x, "date_format", value.asInstanceOf[js.Any])
+    inline def setDate_format(value: String): Self = StObject.set(x, "date_format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_category(value: String): Self = StObject.set(x, "default_category", value.asInstanceOf[js.Any])
+    inline def setDefault_category(value: String): Self = StObject.set(x, "default_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_layout(value: String): Self = StObject.set(x, "default_layout", value.asInstanceOf[js.Any])
+    inline def setDefault_layout(value: String): Self = StObject.set(x, "default_layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploy(value: Config): Self = StObject.set(x, "deploy", value.asInstanceOf[js.Any])
+    inline def setDeploy(value: Config): Self = StObject.set(x, "deploy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployNull: Self = StObject.set(x, "deploy", null)
+    inline def setDeployNull: Self = StObject.set(x, "deploy", null)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setExternal_link(value: Boolean): Self = StObject.set(x, "external_link", value.asInstanceOf[js.Any])
+    inline def setExternal_link(value: Boolean): Self = StObject.set(x, "external_link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename_case(value: Double): Self = StObject.set(x, "filename_case", value.asInstanceOf[js.Any])
+    inline def setFilename_case(value: Double): Self = StObject.set(x, "filename_case", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuture(value: Boolean): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+    inline def setFuture(value: Boolean): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlight(value: Autodetect): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Autodetect): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI18n_dir(value: String): Self = StObject.set(x, "i18n_dir", value.asInstanceOf[js.Any])
+    inline def setI18n_dir(value: String): Self = StObject.set(x, "i18n_dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_post_name(value: String): Self = StObject.set(x, "new_post_name", value.asInstanceOf[js.Any])
+    inline def setNew_post_name(value: String): Self = StObject.set(x, "new_post_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagination_dir(value: String): Self = StObject.set(x, "pagination_dir", value.asInstanceOf[js.Any])
+    inline def setPagination_dir(value: String): Self = StObject.set(x, "pagination_dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermalink(value: String): Self = StObject.set(x, "permalink", value.asInstanceOf[js.Any])
+    inline def setPermalink(value: String): Self = StObject.set(x, "permalink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermalink_defaults(value: String): Self = StObject.set(x, "permalink_defaults", value.asInstanceOf[js.Any])
+    inline def setPermalink_defaults(value: String): Self = StObject.set(x, "permalink_defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermalink_defaultsNull: Self = StObject.set(x, "permalink_defaults", null)
+    inline def setPermalink_defaultsNull: Self = StObject.set(x, "permalink_defaults", null)
     
-    @scala.inline
-    def setPost_asset_folder(value: Boolean): Self = StObject.set(x, "post_asset_folder", value.asInstanceOf[js.Any])
+    inline def setPost_asset_folder(value: Boolean): Self = StObject.set(x, "post_asset_folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublic_dir(value: String): Self = StObject.set(x, "public_dir", value.asInstanceOf[js.Any])
+    inline def setPublic_dir(value: String): Self = StObject.set(x, "public_dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelative_link(value: Boolean): Self = StObject.set(x, "relative_link", value.asInstanceOf[js.Any])
+    inline def setRelative_link(value: Boolean): Self = StObject.set(x, "relative_link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender_drafts(value: Boolean): Self = StObject.set(x, "render_drafts", value.asInstanceOf[js.Any])
+    inline def setRender_drafts(value: Boolean): Self = StObject.set(x, "render_drafts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip_render(value: String | js.Array[String]): Self = StObject.set(x, "skip_render", value.asInstanceOf[js.Any])
+    inline def setSkip_render(value: String | js.Array[String]): Self = StObject.set(x, "skip_render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkip_renderNull: Self = StObject.set(x, "skip_render", null)
+    inline def setSkip_renderNull: Self = StObject.set(x, "skip_render", null)
     
-    @scala.inline
-    def setSkip_renderVarargs(value: String*): Self = StObject.set(x, "skip_render", js.Array(value :_*))
+    inline def setSkip_renderVarargs(value: String*): Self = StObject.set(x, "skip_render", js.Array(value :_*))
     
-    @scala.inline
-    def setSource_dir(value: String): Self = StObject.set(x, "source_dir", value.asInstanceOf[js.Any])
+    inline def setSource_dir(value: String): Self = StObject.set(x, "source_dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag_dir(value: String): Self = StObject.set(x, "tag_dir", value.asInstanceOf[js.Any])
+    inline def setTag_dir(value: String): Self = StObject.set(x, "tag_dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag_map(value: StringDictionary[String | Double]): Self = StObject.set(x, "tag_map", value.asInstanceOf[js.Any])
+    inline def setTag_map(value: StringDictionary[String | Double]): Self = StObject.set(x, "tag_map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: String | `false`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String | `false`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme_config(value: StringDictionary[String | Double]): Self = StObject.set(x, "theme_config", value.asInstanceOf[js.Any])
+    inline def setTheme_config(value: StringDictionary[String | Double]): Self = StObject.set(x, "theme_config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_format(value: String): Self = StObject.set(x, "time_format", value.asInstanceOf[js.Any])
+    inline def setTime_format(value: String): Self = StObject.set(x, "time_format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitlecase(value: Boolean): Self = StObject.set(x, "titlecase", value.asInstanceOf[js.Any])
+    inline def setTitlecase(value: Boolean): Self = StObject.set(x, "titlecase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

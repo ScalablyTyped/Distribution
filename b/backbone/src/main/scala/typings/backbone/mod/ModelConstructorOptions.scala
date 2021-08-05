@@ -13,19 +13,15 @@ trait ModelConstructorOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Obj
 }
 object ModelConstructorOptions {
   
-  @scala.inline
-  def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): ModelConstructorOptions[TModel] = {
+  inline def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): ModelConstructorOptions[TModel] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelConstructorOptions[TModel]]
   }
   
-  @scala.inline
-  implicit class ModelConstructorOptionsMutableBuilder[Self <: ModelConstructorOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] (val x: Self & ModelConstructorOptions[TModel]) extends AnyVal {
+  extension [Self <: ModelConstructorOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](x: Self & ModelConstructorOptions[TModel]) {
     
-    @scala.inline
-    def setCollection(value: Collection[TModel]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: Collection[TModel]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+    inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
   }
 }

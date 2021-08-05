@@ -10,19 +10,15 @@ trait Onselect extends StObject {
 }
 object Onselect {
   
-  @scala.inline
-  def apply(): Onselect = {
+  inline def apply(): Onselect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Onselect]
   }
   
-  @scala.inline
-  implicit class OnselectMutableBuilder[Self <: Onselect] (val x: Self) extends AnyVal {
+  extension [Self <: Onselect](x: Self) {
     
-    @scala.inline
-    def setOnselect(value: () => Unit): Self = StObject.set(x, "onselect", js.Any.fromFunction0(value))
+    inline def setOnselect(value: () => Unit): Self = StObject.set(x, "onselect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
+    inline def setOnselectUndefined: Self = StObject.set(x, "onselect", js.undefined)
   }
 }

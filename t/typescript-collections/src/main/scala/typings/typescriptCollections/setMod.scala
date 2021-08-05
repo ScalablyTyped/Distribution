@@ -60,7 +60,7 @@ object setMod {
       * @type {Object}
       * @protected
       */
-    /* CompleteClass */
+    /* protected */ /* CompleteClass */
     var dictionary: typings.typescriptCollections.dictionaryMod.default[T, js.Any] = js.native
     
     /**
@@ -161,7 +161,7 @@ object setMod {
       * @type {Object}
       * @protected
       */
-    var dictionary: typings.typescriptCollections.dictionaryMod.default[T, js.Any]
+    /* protected */ var dictionary: typings.typescriptCollections.dictionaryMod.default[T, js.Any]
     
     /**
       * Performs a difference between this and another set.
@@ -226,8 +226,7 @@ object setMod {
   }
   object Set {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       add: T => Boolean,
       clear: () => Unit,
       contains: T => Boolean,
@@ -246,47 +245,33 @@ object setMod {
       __obj.asInstanceOf[Set[T]]
     }
     
-    @scala.inline
-    implicit class SetMutableBuilder[Self <: Set[?], T] (val x: Self & Set[T]) extends AnyVal {
+    extension [Self <: Set[?], T](x: Self & Set[T]) {
       
-      @scala.inline
-      def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDictionary(value: typings.typescriptCollections.dictionaryMod.default[T, js.Any]): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+      inline def setDictionary(value: typings.typescriptCollections.dictionaryMod.default[T, js.Any]): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDifference(value: Set[T] => Unit): Self = StObject.set(x, "difference", js.Any.fromFunction1(value))
+      inline def setDifference(value: Set[T] => Unit): Self = StObject.set(x, "difference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: ILoopFunction[T] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: ILoopFunction[T] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntersection(value: Set[T] => Unit): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
+      inline def setIntersection(value: Set[T] => Unit): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSubsetOf(value: Set[T] => Boolean): Self = StObject.set(x, "isSubsetOf", js.Any.fromFunction1(value))
+      inline def setIsSubsetOf(value: Set[T] => Boolean): Self = StObject.set(x, "isSubsetOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: T => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: T => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnion(value: Set[T] => Unit): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
+      inline def setUnion(value: Set[T] => Unit): Self = StObject.set(x, "union", js.Any.fromFunction1(value))
     }
   }
 }

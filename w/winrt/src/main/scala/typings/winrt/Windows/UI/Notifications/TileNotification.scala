@@ -11,8 +11,7 @@ trait TileNotification
      with ITileNotification
 object TileNotification {
   
-  @scala.inline
-  def apply(content: XmlDocument, expirationTime: Date, tag: String): TileNotification = {
+  inline def apply(content: XmlDocument, expirationTime: Date, tag: String): TileNotification = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileNotification]
   }

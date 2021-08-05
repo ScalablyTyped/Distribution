@@ -17,31 +17,23 @@ trait Feed extends StObject {
 }
 object Feed {
   
-  @scala.inline
-  def apply(): Feed = {
+  inline def apply(): Feed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Feed]
   }
   
-  @scala.inline
-  implicit class FeedMutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
+  extension [Self <: Feed](x: Self) {
     
-    @scala.inline
-    def setCourseRosterChangesInfo(value: CourseRosterChangesInfo): Self = StObject.set(x, "courseRosterChangesInfo", value.asInstanceOf[js.Any])
+    inline def setCourseRosterChangesInfo(value: CourseRosterChangesInfo): Self = StObject.set(x, "courseRosterChangesInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseRosterChangesInfoUndefined: Self = StObject.set(x, "courseRosterChangesInfo", js.undefined)
+    inline def setCourseRosterChangesInfoUndefined: Self = StObject.set(x, "courseRosterChangesInfo", js.undefined)
     
-    @scala.inline
-    def setCourseWorkChangesInfo(value: CourseWorkChangesInfo): Self = StObject.set(x, "courseWorkChangesInfo", value.asInstanceOf[js.Any])
+    inline def setCourseWorkChangesInfo(value: CourseWorkChangesInfo): Self = StObject.set(x, "courseWorkChangesInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseWorkChangesInfoUndefined: Self = StObject.set(x, "courseWorkChangesInfo", js.undefined)
+    inline def setCourseWorkChangesInfoUndefined: Self = StObject.set(x, "courseWorkChangesInfo", js.undefined)
     
-    @scala.inline
-    def setFeedType(value: String): Self = StObject.set(x, "feedType", value.asInstanceOf[js.Any])
+    inline def setFeedType(value: String): Self = StObject.set(x, "feedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedTypeUndefined: Self = StObject.set(x, "feedType", js.undefined)
+    inline def setFeedTypeUndefined: Self = StObject.set(x, "feedType", js.undefined)
   }
 }

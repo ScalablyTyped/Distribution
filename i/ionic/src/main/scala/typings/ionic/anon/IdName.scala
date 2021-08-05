@@ -13,19 +13,15 @@ trait IdName extends StObject {
 }
 object IdName {
   
-  @scala.inline
-  def apply(id: String, name: IntegrationName): IdName = {
+  inline def apply(id: String, name: IntegrationName): IdName = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdName]
   }
   
-  @scala.inline
-  implicit class IdNameMutableBuilder[Self <: IdName] (val x: Self) extends AnyVal {
+  extension [Self <: IdName](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: IntegrationName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: IntegrationName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

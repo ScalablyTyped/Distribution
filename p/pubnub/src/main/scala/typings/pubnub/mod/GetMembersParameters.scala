@@ -13,16 +13,13 @@ trait GetMembersParameters
 }
 object GetMembersParameters {
   
-  @scala.inline
-  def apply(spaceId: String): GetMembersParameters = {
+  inline def apply(spaceId: String): GetMembersParameters = {
     val __obj = js.Dynamic.literal(spaceId = spaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMembersParameters]
   }
   
-  @scala.inline
-  implicit class GetMembersParametersMutableBuilder[Self <: GetMembersParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GetMembersParameters](x: Self) {
     
-    @scala.inline
-    def setSpaceId(value: String): Self = StObject.set(x, "spaceId", value.asInstanceOf[js.Any])
+    inline def setSpaceId(value: String): Self = StObject.set(x, "spaceId", value.asInstanceOf[js.Any])
   }
 }

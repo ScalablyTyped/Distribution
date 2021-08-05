@@ -398,95 +398,66 @@ object mod {
   }
   object JSONPathOptions {
     
-    @scala.inline
-    def apply(path: String | js.Array[js.Any]): JSONPathOptions = {
+    inline def apply(path: String | js.Array[js.Any]): JSONPathOptions = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], json = null)
       __obj.asInstanceOf[JSONPathOptions]
     }
     
-    @scala.inline
-    implicit class JSONPathOptionsMutableBuilder[Self <: JSONPathOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JSONPathOptions](x: Self) {
       
-      @scala.inline
-      def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
+      inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
+      inline def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
       
-      @scala.inline
-      def setCallback(value: (/* payload */ js.Any, /* payloadType */ js.Any, /* fullPayload */ js.Any) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+      inline def setCallback(value: (/* payload */ js.Any, /* payloadType */ js.Any, /* fullPayload */ js.Any) => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+      inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
+      inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean | Double | String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean | Double | String | js.Object | js.Array[js.Any]): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonNull: Self = StObject.set(x, "json", null)
+      inline def setJsonNull: Self = StObject.set(x, "json", null)
       
-      @scala.inline
-      def setJsonVarargs(value: js.Any*): Self = StObject.set(x, "json", js.Array(value :_*))
+      inline def setJsonVarargs(value: js.Any*): Self = StObject.set(x, "json", js.Array(value :_*))
       
-      @scala.inline
-      def setOtherTypeCallback(value: JSONPathOtherTypeCallback): Self = StObject.set(x, "otherTypeCallback", value.asInstanceOf[js.Any])
+      inline def setOtherTypeCallback(value: JSONPathOtherTypeCallback): Self = StObject.set(x, "otherTypeCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherTypeCallbackUndefined: Self = StObject.set(x, "otherTypeCallback", js.undefined)
+      inline def setOtherTypeCallbackUndefined: Self = StObject.set(x, "otherTypeCallback", js.undefined)
       
-      @scala.inline
-      def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNull: Self = StObject.set(x, "parent", null)
+      inline def setParentNull: Self = StObject.set(x, "parent", null)
       
-      @scala.inline
-      def setParentProperty(value: js.Any): Self = StObject.set(x, "parentProperty", value.asInstanceOf[js.Any])
+      inline def setParentProperty(value: js.Any): Self = StObject.set(x, "parentProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentPropertyNull: Self = StObject.set(x, "parentProperty", null)
+      inline def setParentPropertyNull: Self = StObject.set(x, "parentProperty", null)
       
-      @scala.inline
-      def setParentPropertyUndefined: Self = StObject.set(x, "parentProperty", js.undefined)
+      inline def setParentPropertyUndefined: Self = StObject.set(x, "parentProperty", js.undefined)
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setPath(value: String | js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | js.Array[js.Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: js.Any*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setPreventEval(value: Boolean): Self = StObject.set(x, "preventEval", value.asInstanceOf[js.Any])
+      inline def setPreventEval(value: Boolean): Self = StObject.set(x, "preventEval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventEvalUndefined: Self = StObject.set(x, "preventEval", js.undefined)
+      inline def setPreventEvalUndefined: Self = StObject.set(x, "preventEval", js.undefined)
       
-      @scala.inline
-      def setResultType(value: value | path | pointer | parent | parentProperty | all): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
+      inline def setResultType(value: value | path | pointer | parent | parentProperty | all): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
+      inline def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
       
-      @scala.inline
-      def setSandbox(value: Map[String, js.Any]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+      inline def setSandbox(value: Map[String, js.Any]): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+      inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
@@ -499,17 +470,14 @@ object mod {
   }
   object JSONPathOptionsAutoStart {
     
-    @scala.inline
-    def apply(path: String | js.Array[js.Any]): JSONPathOptionsAutoStart = {
+    inline def apply(path: String | js.Array[js.Any]): JSONPathOptionsAutoStart = {
       val __obj = js.Dynamic.literal(autostart = false, path = path.asInstanceOf[js.Any], json = null)
       __obj.asInstanceOf[JSONPathOptionsAutoStart]
     }
     
-    @scala.inline
-    implicit class JSONPathOptionsAutoStartMutableBuilder[Self <: JSONPathOptionsAutoStart] (val x: Self) extends AnyVal {
+    extension [Self <: JSONPathOptionsAutoStart](x: Self) {
       
-      @scala.inline
-      def setAutostart(value: `false`): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
+      inline def setAutostart(value: `false`): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
     }
   }
   

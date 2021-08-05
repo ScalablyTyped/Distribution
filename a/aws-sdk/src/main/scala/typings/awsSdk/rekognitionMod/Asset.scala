@@ -10,19 +10,15 @@ trait Asset extends StObject {
 }
 object Asset {
   
-  @scala.inline
-  def apply(): Asset = {
+  inline def apply(): Asset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Asset]
   }
   
-  @scala.inline
-  implicit class AssetMutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
+  extension [Self <: Asset](x: Self) {
     
-    @scala.inline
-    def setGroundTruthManifest(value: GroundTruthManifest): Self = StObject.set(x, "GroundTruthManifest", value.asInstanceOf[js.Any])
+    inline def setGroundTruthManifest(value: GroundTruthManifest): Self = StObject.set(x, "GroundTruthManifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundTruthManifestUndefined: Self = StObject.set(x, "GroundTruthManifest", js.undefined)
+    inline def setGroundTruthManifestUndefined: Self = StObject.set(x, "GroundTruthManifest", js.undefined)
   }
 }

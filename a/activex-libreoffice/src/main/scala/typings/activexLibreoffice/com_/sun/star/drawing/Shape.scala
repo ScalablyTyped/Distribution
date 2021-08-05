@@ -129,8 +129,7 @@ trait Shape
 }
 object Shape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GluePoints: XIndexContainer,
     Hyperlink: String,
     InteropGrabBag: SafeArray[PropertyValue],
@@ -181,61 +180,42 @@ object Shape {
     __obj.asInstanceOf[Shape]
   }
   
-  @scala.inline
-  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
+  extension [Self <: Shape](x: Self) {
     
-    @scala.inline
-    def setHyperlink(value: String): Self = StObject.set(x, "Hyperlink", value.asInstanceOf[js.Any])
+    inline def setHyperlink(value: String): Self = StObject.set(x, "Hyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "InteropGrabBag", value.asInstanceOf[js.Any])
+    inline def setInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "InteropGrabBag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerID(value: Double): Self = StObject.set(x, "LayerID", value.asInstanceOf[js.Any])
+    inline def setLayerID(value: Double): Self = StObject.set(x, "LayerID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerName(value: String): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
+    inline def setLayerName(value: String): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveProtect(value: Boolean): Self = StObject.set(x, "MoveProtect", value.asInstanceOf[js.Any])
+    inline def setMoveProtect(value: Boolean): Self = StObject.set(x, "MoveProtect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOrder(value: Double): Self = StObject.set(x, "NavigationOrder", value.asInstanceOf[js.Any])
+    inline def setNavigationOrder(value: Double): Self = StObject.set(x, "NavigationOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
+    inline def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeHeight(value: Double): Self = StObject.set(x, "RelativeHeight", value.asInstanceOf[js.Any])
+    inline def setRelativeHeight(value: Double): Self = StObject.set(x, "RelativeHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeHeightRelation(value: Double): Self = StObject.set(x, "RelativeHeightRelation", value.asInstanceOf[js.Any])
+    inline def setRelativeHeightRelation(value: Double): Self = StObject.set(x, "RelativeHeightRelation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeWidth(value: Double): Self = StObject.set(x, "RelativeWidth", value.asInstanceOf[js.Any])
+    inline def setRelativeWidth(value: Double): Self = StObject.set(x, "RelativeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeWidthRelation(value: Double): Self = StObject.set(x, "RelativeWidthRelation", value.asInstanceOf[js.Any])
+    inline def setRelativeWidthRelation(value: Double): Self = StObject.set(x, "RelativeWidthRelation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "ShapeUserDefinedAttributes", value.asInstanceOf[js.Any])
+    inline def setShapeUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "ShapeUserDefinedAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeProtect(value: Boolean): Self = StObject.set(x, "SizeProtect", value.asInstanceOf[js.Any])
+    inline def setSizeProtect(value: Boolean): Self = StObject.set(x, "SizeProtect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: XStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: XStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformation(value: HomogenMatrix3): Self = StObject.set(x, "Transformation", value.asInstanceOf[js.Any])
+    inline def setTransformation(value: HomogenMatrix3): Self = StObject.set(x, "Transformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZOrder(value: Double): Self = StObject.set(x, "ZOrder", value.asInstanceOf[js.Any])
+    inline def setZOrder(value: Double): Self = StObject.set(x, "ZOrder", value.asInstanceOf[js.Any])
   }
 }

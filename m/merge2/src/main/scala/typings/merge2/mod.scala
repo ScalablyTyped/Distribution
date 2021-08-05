@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(args: Streams*): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[Merge2Stream]
+  inline def apply(args: Streams*): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[Merge2Stream]
   /**
     * @summary        This function takes an arbitrary number of streams and returns a
     *                 Merge2Stream.
@@ -25,26 +24,16 @@ object mod {
     *
     * @return         A merged duplex stream
     */
-  @scala.inline
-  def apply(a: Streams): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[Merge2Stream]
-  @scala.inline
-  def apply(a: Streams, b: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
-  @scala.inline
-  def apply(a: Streams, b: Streams, c: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
-  @scala.inline
-  def apply(a: Streams, b: Streams, c: Streams, d: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
-  @scala.inline
-  def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
-  @scala.inline
-  def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
-  @scala.inline
-  def apply(a: Streams, b: Streams, c: Streams, d: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
-  @scala.inline
-  def apply(a: Streams, b: Streams, c: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
-  @scala.inline
-  def apply(a: Streams, b: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
-  @scala.inline
-  def apply(a: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams, b: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams, b: Streams, c: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams, b: Streams, c: Streams, d: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams, b: Streams, c: Streams, d: Streams, e: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams, b: Streams, c: Streams, d: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams, b: Streams, c: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams, b: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(a: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
   
   @JSImport("merge2", JSImport.Namespace)
   @js.native
@@ -86,26 +75,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+      inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     }
   }
   

@@ -14,8 +14,7 @@ object markupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def printChildren(
+  inline def printChildren(
     children: js.Array[js.Any],
     config: Config,
     indentation: String,
@@ -24,17 +23,13 @@ object markupMod {
     printer: Printer
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printChildren")(children.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printComment(comment: String, config: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printComment")(comment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def printComment(comment: String, config: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printComment")(comment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printElement(`type`: String, printedProps: String, printedChildren: String, config: Config, indentation: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printElement")(`type`.asInstanceOf[js.Any], printedProps.asInstanceOf[js.Any], printedChildren.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def printElement(`type`: String, printedProps: String, printedChildren: String, config: Config, indentation: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printElement")(`type`.asInstanceOf[js.Any], printedProps.asInstanceOf[js.Any], printedChildren.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printElementAsLeaf(`type`: String, config: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printElementAsLeaf")(`type`.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def printElementAsLeaf(`type`: String, config: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printElementAsLeaf")(`type`.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printProps(
+  inline def printProps(
     keys: js.Array[String],
     props: Record[String, js.Any],
     config: Config,
@@ -44,6 +39,5 @@ object markupMod {
     printer: Printer
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printProps")(keys.asInstanceOf[js.Any], props.asInstanceOf[js.Any], config.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], printer.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def printText(text: String, config: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printText")(text.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def printText(text: String, config: Config): String = (^.asInstanceOf[js.Dynamic].applyDynamic("printText")(text.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
 }

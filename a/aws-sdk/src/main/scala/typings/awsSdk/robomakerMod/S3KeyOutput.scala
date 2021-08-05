@@ -18,25 +18,19 @@ trait S3KeyOutput extends StObject {
 }
 object S3KeyOutput {
   
-  @scala.inline
-  def apply(): S3KeyOutput = {
+  inline def apply(): S3KeyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3KeyOutput]
   }
   
-  @scala.inline
-  implicit class S3KeyOutputMutableBuilder[Self <: S3KeyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: S3KeyOutput](x: Self) {
     
-    @scala.inline
-    def setEtag(value: S3Etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: S3Etag): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setS3Key(value: S3Key): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: S3Key): Self = StObject.set(x, "s3Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyUndefined: Self = StObject.set(x, "s3Key", js.undefined)
+    inline def setS3KeyUndefined: Self = StObject.set(x, "s3Key", js.undefined)
   }
 }

@@ -15,22 +15,17 @@ trait IntrospectionNonNullTypeRef
 }
 object IntrospectionNonNullTypeRef {
   
-  @scala.inline
-  def apply(): IntrospectionNonNullTypeRef = {
+  inline def apply(): IntrospectionNonNullTypeRef = {
     val __obj = js.Dynamic.literal(kind = "NON_NULL")
     __obj.asInstanceOf[IntrospectionNonNullTypeRef]
   }
   
-  @scala.inline
-  implicit class IntrospectionNonNullTypeRefMutableBuilder[Self <: IntrospectionNonNullTypeRef] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionNonNullTypeRef](x: Self) {
     
-    @scala.inline
-    def setKind(value: NON_NULL): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: NON_NULL): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfType(value: IntrospectionTypeRef): Self = StObject.set(x, "ofType", value.asInstanceOf[js.Any])
+    inline def setOfType(value: IntrospectionTypeRef): Self = StObject.set(x, "ofType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfTypeUndefined: Self = StObject.set(x, "ofType", js.undefined)
+    inline def setOfTypeUndefined: Self = StObject.set(x, "ofType", js.undefined)
   }
 }

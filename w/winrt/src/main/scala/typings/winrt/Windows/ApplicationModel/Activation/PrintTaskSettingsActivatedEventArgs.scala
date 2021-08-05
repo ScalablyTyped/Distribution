@@ -10,8 +10,7 @@ trait PrintTaskSettingsActivatedEventArgs
      with IPrintTaskSettingsActivatedEventArgs
 object PrintTaskSettingsActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configuration: PrintTaskConfiguration,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

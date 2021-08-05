@@ -12,97 +12,83 @@ object commitlintLoadStrings {
   sealed trait always
     extends StObject
        with Applicability
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait `camel-case`
     extends StObject
        with Case
-  @scala.inline
-  def `camel-case`: `camel-case` = "camel-case".asInstanceOf[`camel-case`]
+  inline def `camel-case`: `camel-case` = "camel-case".asInstanceOf[`camel-case`]
   
   @js.native
   sealed trait `kebab-case`
     extends StObject
        with Case
-  @scala.inline
-  def `kebab-case`: `kebab-case` = "kebab-case".asInstanceOf[`kebab-case`]
+  inline def `kebab-case`: `kebab-case` = "kebab-case".asInstanceOf[`kebab-case`]
   
   @js.native
   sealed trait `lower-case`
     extends StObject
        with Case
-  @scala.inline
-  def `lower-case`: `lower-case` = "lower-case".asInstanceOf[`lower-case`]
+  inline def `lower-case`: `lower-case` = "lower-case".asInstanceOf[`lower-case`]
   
   @js.native
   sealed trait lowerCase
     extends StObject
        with Case
-  @scala.inline
-  def lowerCase: lowerCase = "lowerCase".asInstanceOf[lowerCase]
+  inline def lowerCase: lowerCase = "lowerCase".asInstanceOf[lowerCase]
   
   @js.native
   sealed trait lowercase_
     extends StObject
        with Case
-  @scala.inline
-  def lowercase_ : lowercase_ = "lowercase".asInstanceOf[lowercase_]
+  inline def lowercase_ : lowercase_ = "lowercase".asInstanceOf[lowercase_]
   
   @js.native
   sealed trait never
     extends StObject
        with Applicability
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
   sealed trait `pascal-case`
     extends StObject
        with Case
-  @scala.inline
-  def `pascal-case`: `pascal-case` = "pascal-case".asInstanceOf[`pascal-case`]
+  inline def `pascal-case`: `pascal-case` = "pascal-case".asInstanceOf[`pascal-case`]
   
   @js.native
   sealed trait `sentence-case`
     extends StObject
        with Case
-  @scala.inline
-  def `sentence-case`: `sentence-case` = "sentence-case".asInstanceOf[`sentence-case`]
+  inline def `sentence-case`: `sentence-case` = "sentence-case".asInstanceOf[`sentence-case`]
   
   @js.native
   sealed trait sentencecase
     extends StObject
        with Case
-  @scala.inline
-  def sentencecase: sentencecase = "sentencecase".asInstanceOf[sentencecase]
+  inline def sentencecase: sentencecase = "sentencecase".asInstanceOf[sentencecase]
   
   @js.native
   sealed trait `snake-case`
     extends StObject
        with Case
-  @scala.inline
-  def `snake-case`: `snake-case` = "snake-case".asInstanceOf[`snake-case`]
+  inline def `snake-case`: `snake-case` = "snake-case".asInstanceOf[`snake-case`]
   
   @js.native
   sealed trait `start-case`
     extends StObject
        with Case
-  @scala.inline
-  def `start-case`: `start-case` = "start-case".asInstanceOf[`start-case`]
+  inline def `start-case`: `start-case` = "start-case".asInstanceOf[`start-case`]
   
   @js.native
   sealed trait `upper-case`
     extends StObject
        with Case
-  @scala.inline
-  def `upper-case`: `upper-case` = "upper-case".asInstanceOf[`upper-case`]
+  inline def `upper-case`: `upper-case` = "upper-case".asInstanceOf[`upper-case`]
   
   @js.native
   sealed trait uppercase
     extends StObject
        with Case
-  @scala.inline
-  def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
+  inline def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
 }

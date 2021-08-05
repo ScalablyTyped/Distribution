@@ -66,76 +66,55 @@ trait ChunkedUploadResponse extends StObject {
 }
 object ChunkedUploadResponse {
   
-  @scala.inline
-  def apply(): ChunkedUploadResponse = {
+  inline def apply(): ChunkedUploadResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChunkedUploadResponse]
   }
   
-  @scala.inline
-  implicit class ChunkedUploadResponseMutableBuilder[Self <: ChunkedUploadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ChunkedUploadResponse](x: Self) {
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setChunkedUploadId(value: String): Self = StObject.set(x, "chunkedUploadId", value.asInstanceOf[js.Any])
+    inline def setChunkedUploadId(value: String): Self = StObject.set(x, "chunkedUploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkedUploadIdUndefined: Self = StObject.set(x, "chunkedUploadId", js.undefined)
+    inline def setChunkedUploadIdUndefined: Self = StObject.set(x, "chunkedUploadId", js.undefined)
     
-    @scala.inline
-    def setChunkedUploadParts(
+    inline def setChunkedUploadParts(
       value: js.Array[
           /* An object that contains information about the chunked upload part. */ ChunkedUploadPart
         ]
     ): Self = StObject.set(x, "chunkedUploadParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkedUploadPartsUndefined: Self = StObject.set(x, "chunkedUploadParts", js.undefined)
+    inline def setChunkedUploadPartsUndefined: Self = StObject.set(x, "chunkedUploadParts", js.undefined)
     
-    @scala.inline
-    def setChunkedUploadPartsVarargs(
+    inline def setChunkedUploadPartsVarargs(
       value: (/* An object that contains information about the chunked upload part. */ ChunkedUploadPart)*
     ): Self = StObject.set(x, "chunkedUploadParts", js.Array(value :_*))
     
-    @scala.inline
-    def setChunkedUploadUri(value: String): Self = StObject.set(x, "chunkedUploadUri", value.asInstanceOf[js.Any])
+    inline def setChunkedUploadUri(value: String): Self = StObject.set(x, "chunkedUploadUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkedUploadUriUndefined: Self = StObject.set(x, "chunkedUploadUri", js.undefined)
+    inline def setChunkedUploadUriUndefined: Self = StObject.set(x, "chunkedUploadUri", js.undefined)
     
-    @scala.inline
-    def setCommitted(value: String): Self = StObject.set(x, "committed", value.asInstanceOf[js.Any])
+    inline def setCommitted(value: String): Self = StObject.set(x, "committed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommittedUndefined: Self = StObject.set(x, "committed", js.undefined)
+    inline def setCommittedUndefined: Self = StObject.set(x, "committed", js.undefined)
     
-    @scala.inline
-    def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
+    inline def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
+    inline def setExpirationDateTimeUndefined: Self = StObject.set(x, "expirationDateTime", js.undefined)
     
-    @scala.inline
-    def setMaxChunkedUploadParts(value: String): Self = StObject.set(x, "maxChunkedUploadParts", value.asInstanceOf[js.Any])
+    inline def setMaxChunkedUploadParts(value: String): Self = StObject.set(x, "maxChunkedUploadParts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxChunkedUploadPartsUndefined: Self = StObject.set(x, "maxChunkedUploadParts", js.undefined)
+    inline def setMaxChunkedUploadPartsUndefined: Self = StObject.set(x, "maxChunkedUploadParts", js.undefined)
     
-    @scala.inline
-    def setMaxTotalSize(value: String): Self = StObject.set(x, "maxTotalSize", value.asInstanceOf[js.Any])
+    inline def setMaxTotalSize(value: String): Self = StObject.set(x, "maxTotalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTotalSizeUndefined: Self = StObject.set(x, "maxTotalSize", js.undefined)
+    inline def setMaxTotalSizeUndefined: Self = StObject.set(x, "maxTotalSize", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: String): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: String): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

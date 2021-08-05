@@ -12,28 +12,21 @@ trait GrafeasV1beta1IntotoDetails extends StObject {
 }
 object GrafeasV1beta1IntotoDetails {
   
-  @scala.inline
-  def apply(): GrafeasV1beta1IntotoDetails = {
+  inline def apply(): GrafeasV1beta1IntotoDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrafeasV1beta1IntotoDetails]
   }
   
-  @scala.inline
-  implicit class GrafeasV1beta1IntotoDetailsMutableBuilder[Self <: GrafeasV1beta1IntotoDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GrafeasV1beta1IntotoDetails](x: Self) {
     
-    @scala.inline
-    def setSignatures(value: js.Array[GrafeasV1beta1IntotoSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    inline def setSignatures(value: js.Array[GrafeasV1beta1IntotoSignature]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
+    inline def setSignaturesUndefined: Self = StObject.set(x, "signatures", js.undefined)
     
-    @scala.inline
-    def setSignaturesVarargs(value: GrafeasV1beta1IntotoSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
+    inline def setSignaturesVarargs(value: GrafeasV1beta1IntotoSignature*): Self = StObject.set(x, "signatures", js.Array(value :_*))
     
-    @scala.inline
-    def setSigned(value: Link): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+    inline def setSigned(value: Link): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+    inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
   }
 }

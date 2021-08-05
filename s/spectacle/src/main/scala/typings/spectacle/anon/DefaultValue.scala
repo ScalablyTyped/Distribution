@@ -15,28 +15,21 @@ trait DefaultValue extends StObject {
 }
 object DefaultValue {
   
-  @scala.inline
-  def apply(children: (js.Any, Double) => ReactNode, values: js.Array[js.Any]): DefaultValue = {
+  inline def apply(children: (js.Any, Double) => ReactNode, values: js.Array[js.Any]): DefaultValue = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultValue]
   }
   
-  @scala.inline
-  implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultValue](x: Self) {
     
-    @scala.inline
-    def setChildren(value: (js.Any, Double) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+    inline def setChildren(value: (js.Any, Double) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

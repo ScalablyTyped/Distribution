@@ -55,21 +55,16 @@ object ec2RouteTableAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RouteTableAssociationState): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RouteTableAssociationState, opts: CustomResourceOptions): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
+    inline def get(name: String, id: Input[ID]): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
+    inline def get(name: String, id: Input[ID], state: RouteTableAssociationState): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
+    inline def get(name: String, id: Input[ID], state: RouteTableAssociationState, opts: CustomResourceOptions): RouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTableAssociation]
     
     /**
       * Returns true if the given object is an instance of RouteTableAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/routeTableAssociation.RouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/routeTableAssociation.RouteTableAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/routeTableAssociation.RouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/routeTableAssociation.RouteTableAssociation */ Boolean]
   }
   
   trait RouteTableAssociationArgs extends StObject {
@@ -91,29 +86,22 @@ object ec2RouteTableAssociationMod {
   }
   object RouteTableAssociationArgs {
     
-    @scala.inline
-    def apply(routeTableId: Input[String]): RouteTableAssociationArgs = {
+    inline def apply(routeTableId: Input[String]): RouteTableAssociationArgs = {
       val __obj = js.Dynamic.literal(routeTableId = routeTableId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteTableAssociationArgs]
     }
     
-    @scala.inline
-    implicit class RouteTableAssociationArgsMutableBuilder[Self <: RouteTableAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RouteTableAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setGatewayId(value: Input[String]): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+      inline def setGatewayId(value: Input[String]): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
+      inline def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
       
-      @scala.inline
-      def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
+      inline def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
     }
   }
   
@@ -136,32 +124,24 @@ object ec2RouteTableAssociationMod {
   }
   object RouteTableAssociationState {
     
-    @scala.inline
-    def apply(): RouteTableAssociationState = {
+    inline def apply(): RouteTableAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteTableAssociationState]
     }
     
-    @scala.inline
-    implicit class RouteTableAssociationStateMutableBuilder[Self <: RouteTableAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: RouteTableAssociationState](x: Self) {
       
-      @scala.inline
-      def setGatewayId(value: Input[String]): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
+      inline def setGatewayId(value: Input[String]): Self = StObject.set(x, "gatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
+      inline def setGatewayIdUndefined: Self = StObject.set(x, "gatewayId", js.undefined)
       
-      @scala.inline
-      def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
+      inline def setRouteTableId(value: Input[String]): Self = StObject.set(x, "routeTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteTableIdUndefined: Self = StObject.set(x, "routeTableId", js.undefined)
+      inline def setRouteTableIdUndefined: Self = StObject.set(x, "routeTableId", js.undefined)
       
-      @scala.inline
-      def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: Input[String]): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
+      inline def setSubnetIdUndefined: Self = StObject.set(x, "subnetId", js.undefined)
     }
   }
 }

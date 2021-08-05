@@ -22,20 +22,16 @@ object cropRotateMod extends Shortcut {
   }
   object CropRotateProps {
     
-    @scala.inline
-    def apply(): CropRotateProps = {
+    inline def apply(): CropRotateProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CropRotateProps]
     }
     
-    @scala.inline
-    implicit class CropRotatePropsMutableBuilder[Self <: CropRotateProps] (val x: Self) extends AnyVal {
+    extension [Self <: CropRotateProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

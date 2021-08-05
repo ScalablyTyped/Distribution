@@ -15,13 +15,13 @@ object deadlineFilterMod {
   class DeadlineFilter protected () extends BaseFilter {
     def this(channel: Channel, callStream: Call) = this()
     
-    val callStream: js.Any = js.native
+    /* private */ val callStream: js.Any = js.native
     
-    val channel: js.Any = js.native
+    /* private */ val channel: js.Any = js.native
     
-    var deadline: js.Any = js.native
+    /* private */ var deadline: js.Any = js.native
     
-    var timer: js.Any = js.native
+    /* private */ var timer: js.Any = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/deadline-filter", "DeadlineFilterFactory")
@@ -31,7 +31,7 @@ object deadlineFilterMod {
        with FilterFactory[DeadlineFilter] {
     def this(channel: Channel) = this()
     
-    val channel: js.Any = js.native
+    /* private */ val channel: js.Any = js.native
     
     /* CompleteClass */
     override def createFilter(callStream: Call): DeadlineFilter = js.native

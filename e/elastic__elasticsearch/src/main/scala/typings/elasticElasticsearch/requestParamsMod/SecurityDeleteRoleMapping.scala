@@ -15,22 +15,17 @@ trait SecurityDeleteRoleMapping
 }
 object SecurityDeleteRoleMapping {
   
-  @scala.inline
-  def apply(name: String): SecurityDeleteRoleMapping = {
+  inline def apply(name: String): SecurityDeleteRoleMapping = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityDeleteRoleMapping]
   }
   
-  @scala.inline
-  implicit class SecurityDeleteRoleMappingMutableBuilder[Self <: SecurityDeleteRoleMapping] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityDeleteRoleMapping](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
   }
 }

@@ -21,9 +21,7 @@ object PrintManager {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getForCurrentView(): typings.winrt.Windows.Graphics.Printing.PrintManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.Graphics.Printing.PrintManager]
+  inline def getForCurrentView(): typings.winrt.Windows.Graphics.Printing.PrintManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.Graphics.Printing.PrintManager]
   
-  @scala.inline
-  def showPrintUIAsync(): IAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("showPrintUIAsync")().asInstanceOf[IAsyncOperation[Boolean]]
+  inline def showPrintUIAsync(): IAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("showPrintUIAsync")().asInstanceOf[IAsyncOperation[Boolean]]
 }

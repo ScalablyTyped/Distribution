@@ -14,22 +14,17 @@ trait OptionsPath extends StObject {
 }
 object OptionsPath {
   
-  @scala.inline
-  def apply(method: String, options: Ext, path: String): OptionsPath = {
+  inline def apply(method: String, options: Ext, path: String): OptionsPath = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsPath]
   }
   
-  @scala.inline
-  implicit class OptionsPathMutableBuilder[Self <: OptionsPath] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsPath](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: Ext): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Ext): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

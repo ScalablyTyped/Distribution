@@ -23,28 +23,21 @@ trait S3Source extends StObject {
 }
 object S3Source {
   
-  @scala.inline
-  def apply(DataSourceArn: Arn, InputColumns: InputColumnList): S3Source = {
+  inline def apply(DataSourceArn: Arn, InputColumns: InputColumnList): S3Source = {
     val __obj = js.Dynamic.literal(DataSourceArn = DataSourceArn.asInstanceOf[js.Any], InputColumns = InputColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3Source]
   }
   
-  @scala.inline
-  implicit class S3SourceMutableBuilder[Self <: S3Source] (val x: Self) extends AnyVal {
+  extension [Self <: S3Source](x: Self) {
     
-    @scala.inline
-    def setDataSourceArn(value: Arn): Self = StObject.set(x, "DataSourceArn", value.asInstanceOf[js.Any])
+    inline def setDataSourceArn(value: Arn): Self = StObject.set(x, "DataSourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputColumns(value: InputColumnList): Self = StObject.set(x, "InputColumns", value.asInstanceOf[js.Any])
+    inline def setInputColumns(value: InputColumnList): Self = StObject.set(x, "InputColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "InputColumns", js.Array(value :_*))
+    inline def setInputColumnsVarargs(value: InputColumn*): Self = StObject.set(x, "InputColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setUploadSettings(value: UploadSettings): Self = StObject.set(x, "UploadSettings", value.asInstanceOf[js.Any])
+    inline def setUploadSettings(value: UploadSettings): Self = StObject.set(x, "UploadSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadSettingsUndefined: Self = StObject.set(x, "UploadSettings", js.undefined)
+    inline def setUploadSettingsUndefined: Self = StObject.set(x, "UploadSettings", js.undefined)
   }
 }

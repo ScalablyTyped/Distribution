@@ -22,23 +22,18 @@ object dropdown {
   }
   object IDropdown {
     
-    @scala.inline
-    def apply(destroy: () => Unit, hide: () => Unit, show: () => Unit): IDropdown = {
+    inline def apply(destroy: () => Unit, hide: () => Unit, show: () => Unit): IDropdown = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
       __obj.asInstanceOf[IDropdown]
     }
     
-    @scala.inline
-    implicit class IDropdownMutableBuilder[Self <: IDropdown] (val x: Self) extends AnyVal {
+    extension [Self <: IDropdown](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -70,86 +65,60 @@ object dropdown {
   }
   object IDropdownOptions {
     
-    @scala.inline
-    def apply(): IDropdownOptions = {
+    inline def apply(): IDropdownOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDropdownOptions]
     }
     
-    @scala.inline
-    implicit class IDropdownOptionsMutableBuilder[Self <: IDropdownOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IDropdownOptions](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setContainer(value: String | Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String | Boolean): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double | Hide): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double | Hide): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setOnBeforeHide(value: /* dropdown */ IDropdown => Unit): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction1(value))
+      inline def setOnBeforeHide(value: /* dropdown */ IDropdown => Unit): Self = StObject.set(x, "onBeforeHide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeHideUndefined: Self = StObject.set(x, "onBeforeHide", js.undefined)
+      inline def setOnBeforeHideUndefined: Self = StObject.set(x, "onBeforeHide", js.undefined)
       
-      @scala.inline
-      def setOnBeforeShow(value: /* dropdown */ IDropdown => Unit): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction1(value))
+      inline def setOnBeforeShow(value: /* dropdown */ IDropdown => Unit): Self = StObject.set(x, "onBeforeShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBeforeShowUndefined: Self = StObject.set(x, "onBeforeShow", js.undefined)
+      inline def setOnBeforeShowUndefined: Self = StObject.set(x, "onBeforeShow", js.undefined)
       
-      @scala.inline
-      def setOnHide(value: /* dropdown */ IDropdown => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+      inline def setOnHide(value: /* dropdown */ IDropdown => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+      inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: /* dropdown */ IDropdown => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* dropdown */ IDropdown => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+      inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
       
-      @scala.inline
-      def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+      inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     }
   }
   
@@ -159,17 +128,14 @@ object dropdown {
   }
   object IDropdownProvider {
     
-    @scala.inline
-    def apply(defaults: IDropdownOptions): IDropdownProvider = {
+    inline def apply(defaults: IDropdownOptions): IDropdownProvider = {
       val __obj = js.Dynamic.literal(defaults = defaults.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDropdownProvider]
     }
     
-    @scala.inline
-    implicit class IDropdownProviderMutableBuilder[Self <: IDropdownProvider] (val x: Self) extends AnyVal {
+    extension [Self <: IDropdownProvider](x: Self) {
       
-      @scala.inline
-      def setDefaults(value: IDropdownOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: IDropdownOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
   }
   

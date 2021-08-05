@@ -12,19 +12,15 @@ trait DataStatusCode extends StObject {
 }
 object DataStatusCode {
   
-  @scala.inline
-  def apply(data: String, statusCode: Double): DataStatusCode = {
+  inline def apply(data: String, statusCode: Double): DataStatusCode = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataStatusCode]
   }
   
-  @scala.inline
-  implicit class DataStatusCodeMutableBuilder[Self <: DataStatusCode] (val x: Self) extends AnyVal {
+  extension [Self <: DataStatusCode](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

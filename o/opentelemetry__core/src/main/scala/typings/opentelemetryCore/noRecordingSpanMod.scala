@@ -13,6 +13,6 @@ object noRecordingSpanMod {
   class NoRecordingSpan protected () extends NoopSpan {
     def this(spanContext: SpanContext) = this()
     
-    val _context: js.Any = js.native
+    /* private */ val _context: js.Any = js.native
   }
 }

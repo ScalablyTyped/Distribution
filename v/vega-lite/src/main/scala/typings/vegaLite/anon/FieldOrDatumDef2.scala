@@ -25,8 +25,7 @@ trait FieldOrDatumDef2 extends StObject {
 }
 object FieldOrDatumDef2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     band: Double,
     fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
     offset: Double | SignalRef,
@@ -36,31 +35,22 @@ object FieldOrDatumDef2 {
     __obj.asInstanceOf[FieldOrDatumDef2]
   }
   
-  @scala.inline
-  implicit class FieldOrDatumDef2MutableBuilder[Self <: FieldOrDatumDef2] (val x: Self) extends AnyVal {
+  extension [Self <: FieldOrDatumDef2](x: Self) {
     
-    @scala.inline
-    def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldOrDatumDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
+    inline def setFieldOrDatumDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldOrDatumDef2(value: SecondaryFieldDef[String]): Self = StObject.set(x, "fieldOrDatumDef2", value.asInstanceOf[js.Any])
+    inline def setFieldOrDatumDef2(value: SecondaryFieldDef[String]): Self = StObject.set(x, "fieldOrDatumDef2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldOrDatumDef2Undefined: Self = StObject.set(x, "fieldOrDatumDef2", js.undefined)
+    inline def setFieldOrDatumDef2Undefined: Self = StObject.set(x, "fieldOrDatumDef2", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | SignalRef): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleName(value: String): Self = StObject.set(x, "scaleName", value.asInstanceOf[js.Any])
+    inline def setScaleName(value: String): Self = StObject.set(x, "scaleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSuffix(value: String): Self = StObject.set(x, "startSuffix", value.asInstanceOf[js.Any])
+    inline def setStartSuffix(value: String): Self = StObject.set(x, "startSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSuffixUndefined: Self = StObject.set(x, "startSuffix", js.undefined)
+    inline def setStartSuffixUndefined: Self = StObject.set(x, "startSuffix", js.undefined)
   }
 }

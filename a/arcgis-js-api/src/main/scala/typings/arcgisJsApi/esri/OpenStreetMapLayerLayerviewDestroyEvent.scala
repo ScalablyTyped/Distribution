@@ -12,19 +12,15 @@ trait OpenStreetMapLayerLayerviewDestroyEvent extends StObject {
 }
 object OpenStreetMapLayerLayerviewDestroyEvent {
   
-  @scala.inline
-  def apply(layerView: LayerView, view: View): OpenStreetMapLayerLayerviewDestroyEvent = {
+  inline def apply(layerView: LayerView, view: View): OpenStreetMapLayerLayerviewDestroyEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenStreetMapLayerLayerviewDestroyEvent]
   }
   
-  @scala.inline
-  implicit class OpenStreetMapLayerLayerviewDestroyEventMutableBuilder[Self <: OpenStreetMapLayerLayerviewDestroyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: OpenStreetMapLayerLayerviewDestroyEvent](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

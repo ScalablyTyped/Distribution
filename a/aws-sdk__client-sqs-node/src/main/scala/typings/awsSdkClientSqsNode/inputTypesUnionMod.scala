@@ -55,8 +55,7 @@ object inputTypesUnionMod {
   trait InputTypesUnion extends StObject
   object InputTypesUnion {
     
-    @scala.inline
-    def AddPermissionInput(
+    inline def AddPermissionInput(
       AWSAccountIds: js.Array[String] | Iterable[String],
       Actions: js.Array[String] | Iterable[String],
       Label: String,
@@ -66,8 +65,7 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesAddPermissionInputMod.AddPermissionInput]
     }
     
-    @scala.inline
-    def ChangeMessageVisibilityBatchInput(
+    inline def ChangeMessageVisibilityBatchInput(
       Entries: js.Array[ChangeMessageVisibilityBatchRequestEntry] | Iterable[ChangeMessageVisibilityBatchRequestEntry],
       QueueUrl: String
     ): typings.awsSdkClientSqsNode.typesChangeMessageVisibilityBatchInputMod.ChangeMessageVisibilityBatchInput = {
@@ -75,20 +73,17 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesChangeMessageVisibilityBatchInputMod.ChangeMessageVisibilityBatchInput]
     }
     
-    @scala.inline
-    def ChangeMessageVisibilityInput(QueueUrl: String, ReceiptHandle: String, VisibilityTimeout: Double): typings.awsSdkClientSqsNode.typesChangeMessageVisibilityInputMod.ChangeMessageVisibilityInput = {
+    inline def ChangeMessageVisibilityInput(QueueUrl: String, ReceiptHandle: String, VisibilityTimeout: Double): typings.awsSdkClientSqsNode.typesChangeMessageVisibilityInputMod.ChangeMessageVisibilityInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any], VisibilityTimeout = VisibilityTimeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesChangeMessageVisibilityInputMod.ChangeMessageVisibilityInput]
     }
     
-    @scala.inline
-    def CreateQueueInput(QueueName: String): typings.awsSdkClientSqsNode.typesCreateQueueInputMod.CreateQueueInput = {
+    inline def CreateQueueInput(QueueName: String): typings.awsSdkClientSqsNode.typesCreateQueueInputMod.CreateQueueInput = {
       val __obj = js.Dynamic.literal(QueueName = QueueName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesCreateQueueInputMod.CreateQueueInput]
     }
     
-    @scala.inline
-    def DeleteMessageBatchInput(
+    inline def DeleteMessageBatchInput(
       Entries: js.Array[DeleteMessageBatchRequestEntry] | Iterable[DeleteMessageBatchRequestEntry],
       QueueUrl: String
     ): typings.awsSdkClientSqsNode.typesDeleteMessageBatchInputMod.DeleteMessageBatchInput = {
@@ -96,68 +91,57 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesDeleteMessageBatchInputMod.DeleteMessageBatchInput]
     }
     
-    @scala.inline
-    def DeleteMessageInput(QueueUrl: String, ReceiptHandle: String): typings.awsSdkClientSqsNode.typesDeleteMessageInputMod.DeleteMessageInput = {
+    inline def DeleteMessageInput(QueueUrl: String, ReceiptHandle: String): typings.awsSdkClientSqsNode.typesDeleteMessageInputMod.DeleteMessageInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesDeleteMessageInputMod.DeleteMessageInput]
     }
     
-    @scala.inline
-    def DeleteQueueInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesDeleteQueueInputMod.DeleteQueueInput = {
+    inline def DeleteQueueInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesDeleteQueueInputMod.DeleteQueueInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesDeleteQueueInputMod.DeleteQueueInput]
     }
     
-    @scala.inline
-    def GetQueueAttributesInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesGetQueueAttributesInputMod.GetQueueAttributesInput = {
+    inline def GetQueueAttributesInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesGetQueueAttributesInputMod.GetQueueAttributesInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesGetQueueAttributesInputMod.GetQueueAttributesInput]
     }
     
-    @scala.inline
-    def GetQueueUrlInput(QueueName: String): typings.awsSdkClientSqsNode.typesGetQueueUrlInputMod.GetQueueUrlInput = {
+    inline def GetQueueUrlInput(QueueName: String): typings.awsSdkClientSqsNode.typesGetQueueUrlInputMod.GetQueueUrlInput = {
       val __obj = js.Dynamic.literal(QueueName = QueueName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesGetQueueUrlInputMod.GetQueueUrlInput]
     }
     
-    @scala.inline
-    def ListDeadLetterSourceQueuesInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesListDeadLetterSourceQueuesInputMod.ListDeadLetterSourceQueuesInput = {
+    inline def ListDeadLetterSourceQueuesInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesListDeadLetterSourceQueuesInputMod.ListDeadLetterSourceQueuesInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesListDeadLetterSourceQueuesInputMod.ListDeadLetterSourceQueuesInput]
     }
     
-    @scala.inline
-    def ListQueueTagsInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesListQueueTagsInputMod.ListQueueTagsInput = {
+    inline def ListQueueTagsInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesListQueueTagsInputMod.ListQueueTagsInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesListQueueTagsInputMod.ListQueueTagsInput]
     }
     
-    @scala.inline
-    def ListQueuesInput(): typings.awsSdkClientSqsNode.typesListQueuesInputMod.ListQueuesInput = {
+    inline def ListQueuesInput(): typings.awsSdkClientSqsNode.typesListQueuesInputMod.ListQueuesInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesListQueuesInputMod.ListQueuesInput]
     }
     
-    @scala.inline
-    def PurgeQueueInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesPurgeQueueInputMod.PurgeQueueInput = {
+    inline def PurgeQueueInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesPurgeQueueInputMod.PurgeQueueInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesPurgeQueueInputMod.PurgeQueueInput]
     }
     
-    @scala.inline
-    def ReceiveMessageInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesReceiveMessageInputMod.ReceiveMessageInput = {
+    inline def ReceiveMessageInput(QueueUrl: String): typings.awsSdkClientSqsNode.typesReceiveMessageInputMod.ReceiveMessageInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesReceiveMessageInputMod.ReceiveMessageInput]
     }
     
-    @scala.inline
-    def RemovePermissionInput(Label: String, QueueUrl: String): typings.awsSdkClientSqsNode.typesRemovePermissionInputMod.RemovePermissionInput = {
+    inline def RemovePermissionInput(Label: String, QueueUrl: String): typings.awsSdkClientSqsNode.typesRemovePermissionInputMod.RemovePermissionInput = {
       val __obj = js.Dynamic.literal(Label = Label.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesRemovePermissionInputMod.RemovePermissionInput]
     }
     
-    @scala.inline
-    def SendMessageBatchInput(
+    inline def SendMessageBatchInput(
       Entries: js.Array[SendMessageBatchRequestEntry] | Iterable[SendMessageBatchRequestEntry],
       QueueUrl: String
     ): typings.awsSdkClientSqsNode.typesSendMessageBatchInputMod.SendMessageBatchInput = {
@@ -165,14 +149,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesSendMessageBatchInputMod.SendMessageBatchInput]
     }
     
-    @scala.inline
-    def SendMessageInput(MessageBody: String, QueueUrl: String): typings.awsSdkClientSqsNode.typesSendMessageInputMod.SendMessageInput = {
+    inline def SendMessageInput(MessageBody: String, QueueUrl: String): typings.awsSdkClientSqsNode.typesSendMessageInputMod.SendMessageInput = {
       val __obj = js.Dynamic.literal(MessageBody = MessageBody.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesSendMessageInputMod.SendMessageInput]
     }
     
-    @scala.inline
-    def SetQueueAttributesInput(
+    inline def SetQueueAttributesInput(
       Attributes: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
       */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.SetQueueAttributesInput & TopLevel[js.Any]) | (Iterable[
@@ -187,14 +169,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesSetQueueAttributesInputMod.SetQueueAttributesInput]
     }
     
-    @scala.inline
-    def TagQueueInput(QueueUrl: String, Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): typings.awsSdkClientSqsNode.typesTagQueueInputMod.TagQueueInput = {
+    inline def TagQueueInput(QueueUrl: String, Tags: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): typings.awsSdkClientSqsNode.typesTagQueueInputMod.TagQueueInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesTagQueueInputMod.TagQueueInput]
     }
     
-    @scala.inline
-    def UntagQueueInput(QueueUrl: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientSqsNode.typesUntagQueueInputMod.UntagQueueInput = {
+    inline def UntagQueueInput(QueueUrl: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientSqsNode.typesUntagQueueInputMod.UntagQueueInput = {
       val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesUntagQueueInputMod.UntagQueueInput]
     }

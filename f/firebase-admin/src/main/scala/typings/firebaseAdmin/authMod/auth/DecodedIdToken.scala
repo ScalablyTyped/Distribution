@@ -116,8 +116,7 @@ trait DecodedIdToken
 }
 object DecodedIdToken {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aud: String,
     auth_time: Double,
     exp: Double,
@@ -131,55 +130,38 @@ object DecodedIdToken {
     __obj.asInstanceOf[DecodedIdToken]
   }
   
-  @scala.inline
-  implicit class DecodedIdTokenMutableBuilder[Self <: DecodedIdToken] (val x: Self) extends AnyVal {
+  extension [Self <: DecodedIdToken](x: Self) {
     
-    @scala.inline
-    def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
+    inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth_time(value: Double): Self = StObject.set(x, "auth_time", value.asInstanceOf[js.Any])
+    inline def setAuth_time(value: Double): Self = StObject.set(x, "auth_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
+    inline def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
+    inline def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
     
-    @scala.inline
-    def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+    inline def setExp(value: Double): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirebase(value: Dictkey): Self = StObject.set(x, "firebase", value.asInstanceOf[js.Any])
+    inline def setFirebase(value: Dictkey): Self = StObject.set(x, "firebase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
+    inline def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
+    inline def setIss(value: String): Self = StObject.set(x, "iss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+    inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
+    inline def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
     
-    @scala.inline
-    def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+    inline def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
+    inline def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
     
-    @scala.inline
-    def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+    inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

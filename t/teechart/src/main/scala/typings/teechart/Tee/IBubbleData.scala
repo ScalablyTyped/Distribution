@@ -12,19 +12,15 @@ trait IBubbleData
 }
 object IBubbleData {
   
-  @scala.inline
-  def apply(labels: js.Array[String], radius: js.Array[Double], source: js.Any, values: js.Array[Double]): IBubbleData = {
+  inline def apply(labels: js.Array[String], radius: js.Array[Double], source: js.Any, values: js.Array[Double]): IBubbleData = {
     val __obj = js.Dynamic.literal(labels = labels.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBubbleData]
   }
   
-  @scala.inline
-  implicit class IBubbleDataMutableBuilder[Self <: IBubbleData] (val x: Self) extends AnyVal {
+  extension [Self <: IBubbleData](x: Self) {
     
-    @scala.inline
-    def setRadius(value: js.Array[Double]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: js.Array[Double]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusVarargs(value: Double*): Self = StObject.set(x, "radius", js.Array(value :_*))
+    inline def setRadiusVarargs(value: Double*): Self = StObject.set(x, "radius", js.Array(value :_*))
   }
 }

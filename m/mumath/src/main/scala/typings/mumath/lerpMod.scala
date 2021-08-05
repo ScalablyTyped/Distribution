@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object lerpMod {
   
-  @scala.inline
-  def apply(x: Double, y: Double, ratio: Double): Double = (^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(x: Double, y: Double, ratio: Double): Double = (^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("mumath/lerp", JSImport.Namespace)
   @js.native

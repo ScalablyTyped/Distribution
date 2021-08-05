@@ -16,19 +16,14 @@ object renderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRenderPixel(event: default, pixel: Pixel): Pixel = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderPixel")(event.asInstanceOf[js.Any], pixel.asInstanceOf[js.Any])).asInstanceOf[Pixel]
+  inline def getRenderPixel(event: default, pixel: Pixel): Pixel = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderPixel")(event.asInstanceOf[js.Any], pixel.asInstanceOf[js.Any])).asInstanceOf[Pixel]
   
-  @scala.inline
-  def getVectorContext(event: default): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getVectorContext")(event.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
+  inline def getVectorContext(event: default): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getVectorContext")(event.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
   
-  @scala.inline
-  def renderDeclutterItems(frameState: FrameState, declutterTree: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderDeclutterItems")(frameState.asInstanceOf[js.Any], declutterTree.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def renderDeclutterItems(frameState: FrameState, declutterTree: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderDeclutterItems")(frameState.asInstanceOf[js.Any], declutterTree.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def toContext(context: CanvasRenderingContext2D): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
-  @scala.inline
-  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): typings.ol.immediateMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.immediateMod.default]
+  inline def toContext(context: CanvasRenderingContext2D): typings.ol.immediateMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[typings.ol.immediateMod.default]
+  inline def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): typings.ol.immediateMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[typings.ol.immediateMod.default]
   
   type OrderFunction = js.Function2[/* p0 */ FeatureLike, /* p1 */ FeatureLike, Double]
   
@@ -48,8 +43,7 @@ object renderMod {
   }
   object State {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       context: CanvasRenderingContext2D,
       feature: FeatureLike,
       geometry: typings.ol.simpleGeometryMod.default,
@@ -61,26 +55,19 @@ object renderMod {
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeature(value: FeatureLike): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: FeatureLike): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometry(value: typings.ol.simpleGeometryMod.default): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: typings.ol.simpleGeometryMod.default): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,26 +79,20 @@ object renderMod {
   }
   object ToContextOptions {
     
-    @scala.inline
-    def apply(): ToContextOptions = {
+    inline def apply(): ToContextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToContextOptions]
     }
     
-    @scala.inline
-    implicit class ToContextOptionsMutableBuilder[Self <: ToContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ToContextOptions](x: Self) {
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

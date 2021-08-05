@@ -20,41 +20,30 @@ object facebook {
     }
     object AddPaymentInfoParameters {
       
-      @scala.inline
-      def apply(): AddPaymentInfoParameters = {
+      inline def apply(): AddPaymentInfoParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AddPaymentInfoParameters]
       }
       
-      @scala.inline
-      implicit class AddPaymentInfoParametersMutableBuilder[Self <: AddPaymentInfoParameters] (val x: Self) extends AnyVal {
+      extension [Self <: AddPaymentInfoParameters](x: Self) {
         
-        @scala.inline
-        def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
+        inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
+        inline def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
         
-        @scala.inline
-        def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
+        inline def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
+        inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        @scala.inline
-        def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -72,47 +61,34 @@ object facebook {
     }
     object AddToCartParameters {
       
-      @scala.inline
-      def apply(): AddToCartParameters = {
+      inline def apply(): AddToCartParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AddToCartParameters]
       }
       
-      @scala.inline
-      implicit class AddToCartParametersMutableBuilder[Self <: AddToCartParameters] (val x: Self) extends AnyVal {
+      extension [Self <: AddToCartParameters](x: Self) {
         
-        @scala.inline
-        def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
+        inline def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
+        inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        @scala.inline
-        def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
         
-        @scala.inline
-        def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
+        inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
+        inline def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
         
-        @scala.inline
-        def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+        inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+        inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -130,47 +106,34 @@ object facebook {
     }
     object AddToWishlistParameters {
       
-      @scala.inline
-      def apply(): AddToWishlistParameters = {
+      inline def apply(): AddToWishlistParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[AddToWishlistParameters]
       }
       
-      @scala.inline
-      implicit class AddToWishlistParametersMutableBuilder[Self <: AddToWishlistParameters] (val x: Self) extends AnyVal {
+      extension [Self <: AddToWishlistParameters](x: Self) {
         
-        @scala.inline
-        def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
+        inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
+        inline def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
         
-        @scala.inline
-        def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
+        inline def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
+        inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        @scala.inline
-        def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
         
-        @scala.inline
-        def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
+        inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
+        inline def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -186,38 +149,28 @@ object facebook {
     }
     object CompleteRegistrationParameters {
       
-      @scala.inline
-      def apply(): CompleteRegistrationParameters = {
+      inline def apply(): CompleteRegistrationParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CompleteRegistrationParameters]
       }
       
-      @scala.inline
-      implicit class CompleteRegistrationParametersMutableBuilder[Self <: CompleteRegistrationParameters] (val x: Self) extends AnyVal {
+      extension [Self <: CompleteRegistrationParameters](x: Self) {
         
-        @scala.inline
-        def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
+        inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
+        inline def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -229,8 +182,7 @@ object facebook {
            with typings.facebookPixel.facebook.Pixel.AddToCartParameters
       object AddToCartParameters {
         
-        @scala.inline
-        def apply(): typings.facebookPixel.facebook.Pixel.DPA.AddToCartParameters = {
+        inline def apply(): typings.facebookPixel.facebook.Pixel.DPA.AddToCartParameters = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.facebookPixel.facebook.Pixel.DPA.AddToCartParameters]
         }
@@ -241,8 +193,7 @@ object facebook {
            with typings.facebookPixel.facebook.Pixel.PurchaseParameters
       object PurchaseParameters {
         
-        @scala.inline
-        def apply(currency: String, value: Double): typings.facebookPixel.facebook.Pixel.DPA.PurchaseParameters = {
+        inline def apply(currency: String, value: Double): typings.facebookPixel.facebook.Pixel.DPA.PurchaseParameters = {
           val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.facebookPixel.facebook.Pixel.DPA.PurchaseParameters]
         }
@@ -253,8 +204,7 @@ object facebook {
            with typings.facebookPixel.facebook.Pixel.ViewContentParameters
       object ViewContentParameters {
         
-        @scala.inline
-        def apply(): typings.facebookPixel.facebook.Pixel.DPA.ViewContentParameters = {
+        inline def apply(): typings.facebookPixel.facebook.Pixel.DPA.ViewContentParameters = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.facebookPixel.facebook.Pixel.DPA.ViewContentParameters]
         }
@@ -321,53 +271,38 @@ object facebook {
     }
     object InitiateCheckoutParameters {
       
-      @scala.inline
-      def apply(): InitiateCheckoutParameters = {
+      inline def apply(): InitiateCheckoutParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[InitiateCheckoutParameters]
       }
       
-      @scala.inline
-      implicit class InitiateCheckoutParametersMutableBuilder[Self <: InitiateCheckoutParameters] (val x: Self) extends AnyVal {
+      extension [Self <: InitiateCheckoutParameters](x: Self) {
         
-        @scala.inline
-        def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
+        inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
+        inline def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
         
-        @scala.inline
-        def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
+        inline def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
+        inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        @scala.inline
-        def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
         
-        @scala.inline
-        def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
+        inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
+        inline def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setNum_items(value: Double): Self = StObject.set(x, "num_items", value.asInstanceOf[js.Any])
+        inline def setNum_items(value: Double): Self = StObject.set(x, "num_items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNum_itemsUndefined: Self = StObject.set(x, "num_items", js.undefined)
+        inline def setNum_itemsUndefined: Self = StObject.set(x, "num_items", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -383,38 +318,28 @@ object facebook {
     }
     object LeadParameters {
       
-      @scala.inline
-      def apply(): LeadParameters = {
+      inline def apply(): LeadParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LeadParameters]
       }
       
-      @scala.inline
-      implicit class LeadParametersMutableBuilder[Self <: LeadParameters] (val x: Self) extends AnyVal {
+      extension [Self <: LeadParameters](x: Self) {
         
-        @scala.inline
-        def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
+        inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
+        inline def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
         
-        @scala.inline
-        def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
+        inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
+        inline def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -436,53 +361,38 @@ object facebook {
     }
     object PurchaseParameters {
       
-      @scala.inline
-      def apply(currency: String, value: Double): PurchaseParameters = {
+      inline def apply(currency: String, value: Double): PurchaseParameters = {
         val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[PurchaseParameters]
       }
       
-      @scala.inline
-      implicit class PurchaseParametersMutableBuilder[Self <: PurchaseParameters] (val x: Self) extends AnyVal {
+      extension [Self <: PurchaseParameters](x: Self) {
         
-        @scala.inline
-        def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
+        inline def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
+        inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        @scala.inline
-        def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
         
-        @scala.inline
-        def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
+        inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
+        inline def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
         
-        @scala.inline
-        def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+        inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+        inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNum_items(value: Double): Self = StObject.set(x, "num_items", value.asInstanceOf[js.Any])
+        inline def setNum_items(value: Double): Self = StObject.set(x, "num_items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNum_itemsUndefined: Self = StObject.set(x, "num_items", js.undefined)
+        inline def setNum_itemsUndefined: Self = StObject.set(x, "num_items", js.undefined)
         
-        @scala.inline
-        def setOrder_id(value: String): Self = StObject.set(x, "order_id", value.asInstanceOf[js.Any])
+        inline def setOrder_id(value: String): Self = StObject.set(x, "order_id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrder_idUndefined: Self = StObject.set(x, "order_id", js.undefined)
+        inline def setOrder_idUndefined: Self = StObject.set(x, "order_id", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -500,47 +410,34 @@ object facebook {
     }
     object SearchParameters {
       
-      @scala.inline
-      def apply(): SearchParameters = {
+      inline def apply(): SearchParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SearchParameters]
       }
       
-      @scala.inline
-      implicit class SearchParametersMutableBuilder[Self <: SearchParameters] (val x: Self) extends AnyVal {
+      extension [Self <: SearchParameters](x: Self) {
         
-        @scala.inline
-        def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
+        inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
+        inline def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
         
-        @scala.inline
-        def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
+        inline def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
+        inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        @scala.inline
-        def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setSearch_string(value: String): Self = StObject.set(x, "search_string", value.asInstanceOf[js.Any])
+        inline def setSearch_string(value: String): Self = StObject.set(x, "search_string", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearch_stringUndefined: Self = StObject.set(x, "search_string", js.undefined)
+        inline def setSearch_stringUndefined: Self = StObject.set(x, "search_string", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
     
@@ -560,53 +457,38 @@ object facebook {
     }
     object ViewContentParameters {
       
-      @scala.inline
-      def apply(): ViewContentParameters = {
+      inline def apply(): ViewContentParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ViewContentParameters]
       }
       
-      @scala.inline
-      implicit class ViewContentParametersMutableBuilder[Self <: ViewContentParameters] (val x: Self) extends AnyVal {
+      extension [Self <: ViewContentParameters](x: Self) {
         
-        @scala.inline
-        def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
+        inline def setContent_category(value: String): Self = StObject.set(x, "content_category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
+        inline def setContent_categoryUndefined: Self = StObject.set(x, "content_category", js.undefined)
         
-        @scala.inline
-        def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
+        inline def setContent_ids(value: js.Array[String]): Self = StObject.set(x, "content_ids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
+        inline def setContent_idsUndefined: Self = StObject.set(x, "content_ids", js.undefined)
         
-        @scala.inline
-        def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
+        inline def setContent_idsVarargs(value: String*): Self = StObject.set(x, "content_ids", js.Array(value :_*))
         
-        @scala.inline
-        def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
+        inline def setContent_name(value: String): Self = StObject.set(x, "content_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
+        inline def setContent_nameUndefined: Self = StObject.set(x, "content_name", js.undefined)
         
-        @scala.inline
-        def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+        inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
+        inline def setContent_typeUndefined: Self = StObject.set(x, "content_type", js.undefined)
         
-        @scala.inline
-        def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+        inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
   }

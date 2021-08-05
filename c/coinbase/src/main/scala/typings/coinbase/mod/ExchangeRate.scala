@@ -11,16 +11,13 @@ trait ExchangeRate extends StObject {
 }
 object ExchangeRate {
   
-  @scala.inline
-  def apply(data: Currency): ExchangeRate = {
+  inline def apply(data: Currency): ExchangeRate = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExchangeRate]
   }
   
-  @scala.inline
-  implicit class ExchangeRateMutableBuilder[Self <: ExchangeRate] (val x: Self) extends AnyVal {
+  extension [Self <: ExchangeRate](x: Self) {
     
-    @scala.inline
-    def setData(value: Currency): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Currency): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

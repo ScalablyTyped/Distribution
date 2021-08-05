@@ -17,19 +17,15 @@ trait Deeptype extends StObject {
 }
 object Deeptype {
   
-  @scala.inline
-  def apply(dining: Dining): Deeptype = {
+  inline def apply(dining: Dining): Deeptype = {
     val __obj = js.Dynamic.literal(deep_type = "DINING", dining = dining.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deeptype]
   }
   
-  @scala.inline
-  implicit class DeeptypeMutableBuilder[Self <: Deeptype] (val x: Self) extends AnyVal {
+  extension [Self <: Deeptype](x: Self) {
     
-    @scala.inline
-    def setDeep_type(value: DINING): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
+    inline def setDeep_type(value: DINING): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDining(value: Dining): Self = StObject.set(x, "dining", value.asInstanceOf[js.Any])
+    inline def setDining(value: Dining): Self = StObject.set(x, "dining", value.asInstanceOf[js.Any])
   }
 }

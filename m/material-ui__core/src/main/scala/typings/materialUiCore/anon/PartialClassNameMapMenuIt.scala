@@ -15,31 +15,23 @@ trait PartialClassNameMapMenuIt extends StObject {
 }
 object PartialClassNameMapMenuIt {
   
-  @scala.inline
-  def apply(): PartialClassNameMapMenuIt = {
+  inline def apply(): PartialClassNameMapMenuIt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapMenuIt]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapMenuItMutableBuilder[Self <: PartialClassNameMapMenuIt] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapMenuIt](x: Self) {
     
-    @scala.inline
-    def setGutters(value: String): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
+    inline def setGutters(value: String): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
+    inline def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

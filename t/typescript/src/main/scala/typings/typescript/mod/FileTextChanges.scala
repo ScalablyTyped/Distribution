@@ -14,28 +14,21 @@ trait FileTextChanges extends StObject {
 }
 object FileTextChanges {
   
-  @scala.inline
-  def apply(fileName: java.lang.String, textChanges: js.Array[TextChange]): FileTextChanges = {
+  inline def apply(fileName: java.lang.String, textChanges: js.Array[TextChange]): FileTextChanges = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], textChanges = textChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileTextChanges]
   }
   
-  @scala.inline
-  implicit class FileTextChangesMutableBuilder[Self <: FileTextChanges] (val x: Self) extends AnyVal {
+  extension [Self <: FileTextChanges](x: Self) {
     
-    @scala.inline
-    def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNewFile(value: Boolean): Self = StObject.set(x, "isNewFile", value.asInstanceOf[js.Any])
+    inline def setIsNewFile(value: Boolean): Self = StObject.set(x, "isNewFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNewFileUndefined: Self = StObject.set(x, "isNewFile", js.undefined)
+    inline def setIsNewFileUndefined: Self = StObject.set(x, "isNewFile", js.undefined)
     
-    @scala.inline
-    def setTextChanges(value: js.Array[TextChange]): Self = StObject.set(x, "textChanges", value.asInstanceOf[js.Any])
+    inline def setTextChanges(value: js.Array[TextChange]): Self = StObject.set(x, "textChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextChangesVarargs(value: TextChange*): Self = StObject.set(x, "textChanges", js.Array(value :_*))
+    inline def setTextChangesVarargs(value: TextChange*): Self = StObject.set(x, "textChanges", js.Array(value :_*))
   }
 }

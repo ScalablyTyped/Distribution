@@ -43,8 +43,7 @@ trait PutSnapshotBlockRequest extends StObject {
 }
 object PutSnapshotBlockRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BlockData: BlockData,
     BlockIndex: BlockIndex,
     Checksum: Checksum,
@@ -56,31 +55,22 @@ object PutSnapshotBlockRequest {
     __obj.asInstanceOf[PutSnapshotBlockRequest]
   }
   
-  @scala.inline
-  implicit class PutSnapshotBlockRequestMutableBuilder[Self <: PutSnapshotBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutSnapshotBlockRequest](x: Self) {
     
-    @scala.inline
-    def setBlockData(value: BlockData): Self = StObject.set(x, "BlockData", value.asInstanceOf[js.Any])
+    inline def setBlockData(value: BlockData): Self = StObject.set(x, "BlockData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockIndex(value: BlockIndex): Self = StObject.set(x, "BlockIndex", value.asInstanceOf[js.Any])
+    inline def setBlockIndex(value: BlockIndex): Self = StObject.set(x, "BlockIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: Checksum): Self = StObject.set(x, "Checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
+    inline def setChecksumAlgorithm(value: ChecksumAlgorithm): Self = StObject.set(x, "ChecksumAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLength(value: DataLength): Self = StObject.set(x, "DataLength", value.asInstanceOf[js.Any])
+    inline def setDataLength(value: DataLength): Self = StObject.set(x, "DataLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Progress): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Progress): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "Progress", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: SnapshotId): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
   }
 }

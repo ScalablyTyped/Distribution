@@ -13,19 +13,15 @@ trait TodayMarkerProps
 }
 object TodayMarkerProps {
   
-  @scala.inline
-  def apply(date: Date | Double): TodayMarkerProps = {
+  inline def apply(date: Date | Double): TodayMarkerProps = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[TodayMarkerProps]
   }
   
-  @scala.inline
-  implicit class TodayMarkerPropsMutableBuilder[Self <: TodayMarkerProps] (val x: Self) extends AnyVal {
+  extension [Self <: TodayMarkerProps](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
   }
 }

@@ -21,16 +21,13 @@ trait InstallException
 }
 object InstallException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, displayName: String): InstallException = {
+  inline def apply(Context: XInterface, Message: String, displayName: String): InstallException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallException]
   }
   
-  @scala.inline
-  implicit class InstallExceptionMutableBuilder[Self <: InstallException] (val x: Self) extends AnyVal {
+  extension [Self <: InstallException](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
   }
 }

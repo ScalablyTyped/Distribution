@@ -70,9 +70,7 @@ object viewsMod {
     var viewDecl_Ng1ViewConfig: Ng1ViewDeclaration = js.native
   }
   
-  @scala.inline
-  def getNg1ViewConfigFactory(): ViewConfigFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("getNg1ViewConfigFactory")().asInstanceOf[ViewConfigFactory]
+  inline def getNg1ViewConfigFactory(): ViewConfigFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("getNg1ViewConfigFactory")().asInstanceOf[ViewConfigFactory]
   
-  @scala.inline
-  def ng1ViewsBuilder(state: StateObject): StringDictionary[Ng1ViewDeclaration] = ^.asInstanceOf[js.Dynamic].applyDynamic("ng1ViewsBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Ng1ViewDeclaration]]
+  inline def ng1ViewsBuilder(state: StateObject): StringDictionary[Ng1ViewDeclaration] = ^.asInstanceOf[js.Dynamic].applyDynamic("ng1ViewsBuilder")(state.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Ng1ViewDeclaration]]
 }

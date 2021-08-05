@@ -18,19 +18,15 @@ trait ByteMatchSetSummary extends StObject {
 }
 object ByteMatchSetSummary {
   
-  @scala.inline
-  def apply(ByteMatchSetId: ResourceId, Name: ResourceName): ByteMatchSetSummary = {
+  inline def apply(ByteMatchSetId: ResourceId, Name: ResourceName): ByteMatchSetSummary = {
     val __obj = js.Dynamic.literal(ByteMatchSetId = ByteMatchSetId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByteMatchSetSummary]
   }
   
-  @scala.inline
-  implicit class ByteMatchSetSummaryMutableBuilder[Self <: ByteMatchSetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ByteMatchSetSummary](x: Self) {
     
-    @scala.inline
-    def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
+    inline def setByteMatchSetId(value: ResourceId): Self = StObject.set(x, "ByteMatchSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

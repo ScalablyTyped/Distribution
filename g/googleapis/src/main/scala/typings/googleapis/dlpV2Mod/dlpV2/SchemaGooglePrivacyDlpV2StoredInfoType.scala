@@ -28,34 +28,25 @@ trait SchemaGooglePrivacyDlpV2StoredInfoType extends StObject {
 }
 object SchemaGooglePrivacyDlpV2StoredInfoType {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2StoredInfoType = {
+  inline def apply(): SchemaGooglePrivacyDlpV2StoredInfoType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2StoredInfoType]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2StoredInfoTypeMutableBuilder[Self <: SchemaGooglePrivacyDlpV2StoredInfoType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2StoredInfoType](x: Self) {
     
-    @scala.inline
-    def setCurrentVersion(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPendingVersions(value: js.Array[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion]): Self = StObject.set(x, "pendingVersions", value.asInstanceOf[js.Any])
+    inline def setPendingVersions(value: js.Array[SchemaGooglePrivacyDlpV2StoredInfoTypeVersion]): Self = StObject.set(x, "pendingVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingVersionsUndefined: Self = StObject.set(x, "pendingVersions", js.undefined)
+    inline def setPendingVersionsUndefined: Self = StObject.set(x, "pendingVersions", js.undefined)
     
-    @scala.inline
-    def setPendingVersionsVarargs(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion*): Self = StObject.set(x, "pendingVersions", js.Array(value :_*))
+    inline def setPendingVersionsVarargs(value: SchemaGooglePrivacyDlpV2StoredInfoTypeVersion*): Self = StObject.set(x, "pendingVersions", js.Array(value :_*))
   }
 }

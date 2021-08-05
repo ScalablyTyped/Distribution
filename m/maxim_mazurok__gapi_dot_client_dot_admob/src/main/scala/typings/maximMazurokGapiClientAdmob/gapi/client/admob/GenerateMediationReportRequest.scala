@@ -11,19 +11,15 @@ trait GenerateMediationReportRequest extends StObject {
 }
 object GenerateMediationReportRequest {
   
-  @scala.inline
-  def apply(): GenerateMediationReportRequest = {
+  inline def apply(): GenerateMediationReportRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateMediationReportRequest]
   }
   
-  @scala.inline
-  implicit class GenerateMediationReportRequestMutableBuilder[Self <: GenerateMediationReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateMediationReportRequest](x: Self) {
     
-    @scala.inline
-    def setReportSpec(value: MediationReportSpec): Self = StObject.set(x, "reportSpec", value.asInstanceOf[js.Any])
+    inline def setReportSpec(value: MediationReportSpec): Self = StObject.set(x, "reportSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportSpecUndefined: Self = StObject.set(x, "reportSpec", js.undefined)
+    inline def setReportSpecUndefined: Self = StObject.set(x, "reportSpec", js.undefined)
   }
 }

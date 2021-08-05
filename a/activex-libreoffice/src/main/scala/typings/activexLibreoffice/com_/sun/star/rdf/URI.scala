@@ -38,8 +38,7 @@ trait URI
 }
 object URI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LocalName: String,
     Namespace: String,
     StringValue: String,
@@ -51,16 +50,12 @@ object URI {
     __obj.asInstanceOf[URI]
   }
   
-  @scala.inline
-  implicit class URIMutableBuilder[Self <: URI] (val x: Self) extends AnyVal {
+  extension [Self <: URI](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateKnown(value: Double => Unit): Self = StObject.set(x, "createKnown", js.Any.fromFunction1(value))
+    inline def setCreateKnown(value: Double => Unit): Self = StObject.set(x, "createKnown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateNS(value: (String, String) => Unit): Self = StObject.set(x, "createNS", js.Any.fromFunction2(value))
+    inline def setCreateNS(value: (String, String) => Unit): Self = StObject.set(x, "createNS", js.Any.fromFunction2(value))
   }
 }

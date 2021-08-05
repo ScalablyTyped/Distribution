@@ -86,8 +86,7 @@ object mod {
   }
   object ReactWOWProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any,
       children: Element
     ): ReactWOWProps = {
@@ -95,77 +94,53 @@ object mod {
       __obj.asInstanceOf[ReactWOWProps]
     }
     
-    @scala.inline
-    implicit class ReactWOWPropsMutableBuilder[Self <: ReactWOWProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactWOWProps](x: Self) {
       
-      @scala.inline
-      def setAnimateClass(value: String): Self = StObject.set(x, "animateClass", value.asInstanceOf[js.Any])
+      inline def setAnimateClass(value: String): Self = StObject.set(x, "animateClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateClassUndefined: Self = StObject.set(x, "animateClass", js.undefined)
+      inline def setAnimateClassUndefined: Self = StObject.set(x, "animateClass", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setIteration(value: String): Self = StObject.set(x, "iteration", value.asInstanceOf[js.Any])
+      inline def setIteration(value: String): Self = StObject.set(x, "iteration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterationUndefined: Self = StObject.set(x, "iteration", js.undefined)
+      inline def setIterationUndefined: Self = StObject.set(x, "iteration", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double | js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double | js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
+      inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value :_*))
       
-      @scala.inline
-      def setOverflow(value: Boolean): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: Boolean): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+      inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      @scala.inline
-      def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+      inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
     }
   }
 }

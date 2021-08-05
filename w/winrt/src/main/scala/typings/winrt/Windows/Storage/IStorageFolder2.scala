@@ -11,16 +11,13 @@ trait IStorageFolder2 extends StObject {
 }
 object IStorageFolder2 {
   
-  @scala.inline
-  def apply(tryGetItemAsync: String => IAsyncOperation[IStorageItem]): IStorageFolder2 = {
+  inline def apply(tryGetItemAsync: String => IAsyncOperation[IStorageItem]): IStorageFolder2 = {
     val __obj = js.Dynamic.literal(tryGetItemAsync = js.Any.fromFunction1(tryGetItemAsync))
     __obj.asInstanceOf[IStorageFolder2]
   }
   
-  @scala.inline
-  implicit class IStorageFolder2MutableBuilder[Self <: IStorageFolder2] (val x: Self) extends AnyVal {
+  extension [Self <: IStorageFolder2](x: Self) {
     
-    @scala.inline
-    def setTryGetItemAsync(value: String => IAsyncOperation[IStorageItem]): Self = StObject.set(x, "tryGetItemAsync", js.Any.fromFunction1(value))
+    inline def setTryGetItemAsync(value: String => IAsyncOperation[IStorageItem]): Self = StObject.set(x, "tryGetItemAsync", js.Any.fromFunction1(value))
   }
 }

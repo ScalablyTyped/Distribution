@@ -20,45 +20,45 @@ object groupedListBaseMod {
        with IGroupedList {
     def this(props: IGroupedListProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _computeIsSomeGroupExpanded: js.Any = js.native
+    /* private */ var _computeIsSomeGroupExpanded: js.Any = js.native
     
-    var _forceListUpdates: js.Any = js.native
+    /* private */ var _forceListUpdates: js.Any = js.native
     
-    var _getDefaultGroupItemLimit: js.Any = js.native
+    /* private */ var _getDefaultGroupItemLimit: js.Any = js.native
     
-    var _getGroupHeight: js.Any = js.native
+    /* private */ var _getGroupHeight: js.Any = js.native
     
-    var _getGroupItemLimit: js.Any = js.native
+    /* private */ var _getGroupItemLimit: js.Any = js.native
     
-    var _getGroupKey: js.Any = js.native
+    /* private */ var _getGroupKey: js.Any = js.native
     
-    var _getGroupNestingDepth: js.Any = js.native
+    /* private */ var _getGroupNestingDepth: js.Any = js.native
     
-    var _getPageHeight: js.Any = js.native
+    /* private */ var _getPageHeight: js.Any = js.native
     
-    var _getPageSpecification: js.Any = js.native
+    /* private */ var _getPageSpecification: js.Any = js.native
     
-    var _isInnerZoneKeystroke: js.Any = js.native
+    /* private */ var _isInnerZoneKeystroke: js.Any = js.native
     
-    var _isSomeGroupExpanded: js.Any = js.native
+    /* private */ var _isSomeGroupExpanded: js.Any = js.native
     
-    var _list: js.Any = js.native
+    /* private */ var _list: js.Any = js.native
     
-    var _onToggleCollapse: js.Any = js.native
+    /* private */ var _onToggleCollapse: js.Any = js.native
     
-    var _onToggleSelectGroup: js.Any = js.native
+    /* private */ var _onToggleSelectGroup: js.Any = js.native
     
-    var _onToggleSummarize: js.Any = js.native
+    /* private */ var _onToggleSummarize: js.Any = js.native
     
-    var _renderGroup: js.Any = js.native
+    /* private */ var _renderGroup: js.Any = js.native
     
-    var _returnOne: js.Any = js.native
+    /* private */ var _returnOne: js.Any = js.native
     
-    var _setGroupsCollapsedState: js.Any = js.native
+    /* private */ var _setGroupsCollapsedState: js.Any = js.native
     
-    var _updateIsSomeGroupExpanded: js.Any = js.native
+    /* private */ var _updateIsSomeGroupExpanded: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MGroupedListBase(): Unit = js.native
@@ -76,11 +76,9 @@ object groupedListBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupedList.base", "GroupedListBase.defaultProps")
     @js.native
     def defaultProps: Compact = js.native
-    @scala.inline
-    def defaultProps_=(x: Compact): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Compact): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: IGroupedListProps, previousState: IGroupedListState): IGroupedListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IGroupedListState]
+    inline def getDerivedStateFromProps(nextProps: IGroupedListProps, previousState: IGroupedListState): IGroupedListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IGroupedListState]
   }
   
   trait IGroupedListState extends StObject {
@@ -97,50 +95,36 @@ object groupedListBaseMod {
   }
   object IGroupedListState {
     
-    @scala.inline
-    def apply(): IGroupedListState = {
+    inline def apply(): IGroupedListState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupedListState]
     }
     
-    @scala.inline
-    implicit class IGroupedListStateMutableBuilder[Self <: IGroupedListState] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupedListState](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setGroups(value: js.Array[IGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[IGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setListProps(value: IListProps[js.Any]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
+      inline def setListProps(value: IListProps[js.Any]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
+      inline def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)
       
-      @scala.inline
-      def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+      inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     }
   }
 }

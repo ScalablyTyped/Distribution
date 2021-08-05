@@ -10,16 +10,13 @@ trait DoBootstrap extends StObject {
 }
 object DoBootstrap {
   
-  @scala.inline
-  def apply(ngDoBootstrap: ApplicationRef => Unit): DoBootstrap = {
+  inline def apply(ngDoBootstrap: ApplicationRef => Unit): DoBootstrap = {
     val __obj = js.Dynamic.literal(ngDoBootstrap = js.Any.fromFunction1(ngDoBootstrap))
     __obj.asInstanceOf[DoBootstrap]
   }
   
-  @scala.inline
-  implicit class DoBootstrapMutableBuilder[Self <: DoBootstrap] (val x: Self) extends AnyVal {
+  extension [Self <: DoBootstrap](x: Self) {
     
-    @scala.inline
-    def setNgDoBootstrap(value: ApplicationRef => Unit): Self = StObject.set(x, "ngDoBootstrap", js.Any.fromFunction1(value))
+    inline def setNgDoBootstrap(value: ApplicationRef => Unit): Self = StObject.set(x, "ngDoBootstrap", js.Any.fromFunction1(value))
   }
 }

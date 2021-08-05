@@ -24,43 +24,31 @@ trait AreYouSureOptions extends StObject {
 }
 object AreYouSureOptions {
   
-  @scala.inline
-  def apply(): AreYouSureOptions = {
+  inline def apply(): AreYouSureOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AreYouSureOptions]
   }
   
-  @scala.inline
-  implicit class AreYouSureOptionsMutableBuilder[Self <: AreYouSureOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AreYouSureOptions](x: Self) {
     
-    @scala.inline
-    def setChange(value: js.Function): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+    inline def setChange(value: js.Function): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setDirtyClass(value: String): Self = StObject.set(x, "dirtyClass", value.asInstanceOf[js.Any])
+    inline def setDirtyClass(value: String): Self = StObject.set(x, "dirtyClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirtyClassUndefined: Self = StObject.set(x, "dirtyClass", js.undefined)
+    inline def setDirtyClassUndefined: Self = StObject.set(x, "dirtyClass", js.undefined)
     
-    @scala.inline
-    def setFieldSelector(value: String): Self = StObject.set(x, "fieldSelector", value.asInstanceOf[js.Any])
+    inline def setFieldSelector(value: String): Self = StObject.set(x, "fieldSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldSelectorUndefined: Self = StObject.set(x, "fieldSelector", js.undefined)
+    inline def setFieldSelectorUndefined: Self = StObject.set(x, "fieldSelector", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait DescribeVaultInputwaiterW extends StObject {
 }
 object DescribeVaultInputwaiterW {
   
-  @scala.inline
-  def apply(accountId: String, vaultName: String): DescribeVaultInputwaiterW = {
+  inline def apply(accountId: String, vaultName: String): DescribeVaultInputwaiterW = {
     val __obj = js.Dynamic.literal(accountId = accountId.asInstanceOf[js.Any], vaultName = vaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeVaultInputwaiterW]
   }
   
-  @scala.inline
-  implicit class DescribeVaultInputwaiterWMutableBuilder[Self <: DescribeVaultInputwaiterW] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVaultInputwaiterW](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
+    inline def setVaultName(value: String): Self = StObject.set(x, "vaultName", value.asInstanceOf[js.Any])
   }
 }

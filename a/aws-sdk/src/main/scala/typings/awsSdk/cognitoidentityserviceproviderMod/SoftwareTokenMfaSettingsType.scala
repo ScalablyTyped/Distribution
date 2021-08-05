@@ -18,25 +18,19 @@ trait SoftwareTokenMfaSettingsType extends StObject {
 }
 object SoftwareTokenMfaSettingsType {
   
-  @scala.inline
-  def apply(): SoftwareTokenMfaSettingsType = {
+  inline def apply(): SoftwareTokenMfaSettingsType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SoftwareTokenMfaSettingsType]
   }
   
-  @scala.inline
-  implicit class SoftwareTokenMfaSettingsTypeMutableBuilder[Self <: SoftwareTokenMfaSettingsType] (val x: Self) extends AnyVal {
+  extension [Self <: SoftwareTokenMfaSettingsType](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setPreferredMfa(value: BooleanType): Self = StObject.set(x, "PreferredMfa", value.asInstanceOf[js.Any])
+    inline def setPreferredMfa(value: BooleanType): Self = StObject.set(x, "PreferredMfa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredMfaUndefined: Self = StObject.set(x, "PreferredMfa", js.undefined)
+    inline def setPreferredMfaUndefined: Self = StObject.set(x, "PreferredMfa", js.undefined)
   }
 }

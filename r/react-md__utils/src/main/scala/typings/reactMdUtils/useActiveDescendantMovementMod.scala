@@ -20,8 +20,7 @@ object useActiveDescendantMovementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useActiveDescendantMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
+  inline def useActiveDescendantMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
     hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions: ActiveDescendantOptions[D, CE, IE]
   ): ActiveDescendantMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useActiveDescendantMovement")(hasBaseIdGetIdDefaultFocusedIndexItemsOnChangeGetItemValueValueKeyOnKeyDownOnEnterOnSpaceOptions.asInstanceOf[js.Any]).asInstanceOf[ActiveDescendantMovementProviders[CE, IE]]
   
@@ -41,8 +40,7 @@ object useActiveDescendantMovementMod {
   }
   object ActiveDescendantMovementProviders {
     
-    @scala.inline
-    def apply[CE /* <: HTMLElement */, IE /* <: HTMLElement */](
+    inline def apply[CE /* <: HTMLElement */, IE /* <: HTMLElement */](
       activeId: ActiveDescendantId,
       focusedIndex: Double,
       itemRefs: ItemRefList[IE],
@@ -53,26 +51,19 @@ object useActiveDescendantMovementMod {
       __obj.asInstanceOf[ActiveDescendantMovementProviders[CE, IE]]
     }
     
-    @scala.inline
-    implicit class ActiveDescendantMovementProvidersMutableBuilder[Self <: ActiveDescendantMovementProviders[?, ?], CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (ActiveDescendantMovementProviders[CE, IE])) extends AnyVal {
+    extension [Self <: ActiveDescendantMovementProviders[?, ?], CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (ActiveDescendantMovementProviders[CE, IE])) {
       
-      @scala.inline
-      def setActiveId(value: ActiveDescendantId): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
+      inline def setActiveId(value: ActiveDescendantId): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedIndex(value: Double): Self = StObject.set(x, "focusedIndex", value.asInstanceOf[js.Any])
+      inline def setFocusedIndex(value: Double): Self = StObject.set(x, "focusedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemRefs(value: ItemRefList[IE]): Self = StObject.set(x, "itemRefs", value.asInstanceOf[js.Any])
+      inline def setItemRefs(value: ItemRefList[IE]): Self = StObject.set(x, "itemRefs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemRefsVarargs(value: ItemRef[IE]*): Self = StObject.set(x, "itemRefs", js.Array(value :_*))
+      inline def setItemRefsVarargs(value: ItemRef[IE]*): Self = StObject.set(x, "itemRefs", js.Array(value :_*))
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[CE] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[CE] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFocusedIndex(value: SetStateAction[Double] => Unit): Self = StObject.set(x, "setFocusedIndex", js.Any.fromFunction1(value))
+      inline def setSetFocusedIndex(value: SetStateAction[Double] => Unit): Self = StObject.set(x, "setFocusedIndex", js.Any.fromFunction1(value))
     }
   }
   
@@ -116,8 +107,7 @@ object useActiveDescendantMovementMod {
   }
   object ActiveDescendantOptions {
     
-    @scala.inline
-    def apply[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
+    inline def apply[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
       baseId: String,
       decrementKeys: js.Array[IncrementMovementKey],
       incrementKeys: js.Array[IncrementMovementKey],
@@ -129,38 +119,27 @@ object useActiveDescendantMovementMod {
       __obj.asInstanceOf[ActiveDescendantOptions[D, CE, IE]]
     }
     
-    @scala.inline
-    implicit class ActiveDescendantOptionsMutableBuilder[Self <: ActiveDescendantOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (ActiveDescendantOptions[D, CE, IE])) extends AnyVal {
+    extension [Self <: ActiveDescendantOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](x: Self & (ActiveDescendantOptions[D, CE, IE])) {
       
-      @scala.inline
-      def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
+      inline def setBaseId(value: String): Self = StObject.set(x, "baseId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFocusedIndex(value: js.Function0[Double] | Double): Self = StObject.set(x, "defaultFocusedIndex", value.asInstanceOf[js.Any])
+      inline def setDefaultFocusedIndex(value: js.Function0[Double] | Double): Self = StObject.set(x, "defaultFocusedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFocusedIndexFunction0(value: () => Double): Self = StObject.set(x, "defaultFocusedIndex", js.Any.fromFunction0(value))
+      inline def setDefaultFocusedIndexFunction0(value: () => Double): Self = StObject.set(x, "defaultFocusedIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultFocusedIndexUndefined: Self = StObject.set(x, "defaultFocusedIndex", js.undefined)
+      inline def setDefaultFocusedIndexUndefined: Self = StObject.set(x, "defaultFocusedIndex", js.undefined)
       
-      @scala.inline
-      def setGetId(value: (/* id */ String, /* index */ Double) => String): Self = StObject.set(x, "getId", js.Any.fromFunction2(value))
+      inline def setGetId(value: (/* id */ String, /* index */ Double) => String): Self = StObject.set(x, "getId", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
+      inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
       
-      @scala.inline
-      def setOnEnter(value: (/* focusedIndex */ Double, /* itemRef */ IE | Null) => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction2(value))
+      inline def setOnEnter(value: (/* focusedIndex */ Double, /* itemRef */ IE | Null) => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+      inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
       
-      @scala.inline
-      def setOnSpace(value: (/* focusedIndex */ Double, /* itemRef */ IE | Null) => Unit): Self = StObject.set(x, "onSpace", js.Any.fromFunction2(value))
+      inline def setOnSpace(value: (/* focusedIndex */ Double, /* itemRef */ IE | Null) => Unit): Self = StObject.set(x, "onSpace", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSpaceUndefined: Self = StObject.set(x, "onSpace", js.undefined)
+      inline def setOnSpaceUndefined: Self = StObject.set(x, "onSpace", js.undefined)
     }
   }
   

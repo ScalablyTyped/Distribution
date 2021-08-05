@@ -14,25 +14,19 @@ trait RectButtonProperties
 }
 object RectButtonProperties {
   
-  @scala.inline
-  def apply(): RectButtonProperties = {
+  inline def apply(): RectButtonProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RectButtonProperties]
   }
   
-  @scala.inline
-  implicit class RectButtonPropertiesMutableBuilder[Self <: RectButtonProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RectButtonProperties](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+    inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
-    @scala.inline
-    def setUnderlayColor(value: String): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
+    inline def setUnderlayColor(value: String): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
+    inline def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
   }
 }

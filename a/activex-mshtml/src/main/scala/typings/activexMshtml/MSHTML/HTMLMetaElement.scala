@@ -10,7 +10,7 @@ trait HTMLMetaElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLMetaElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLMetaElement_typekey")
   var MSHTMLDotHTMLMetaElement_typekey: HTMLMetaElement = js.native
   
   var accessKey: String = js.native

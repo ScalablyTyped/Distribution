@@ -13,18 +13,13 @@ object pipeSupportMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createClientPipeTransport(pipeName: String): js.Promise[PipeTransport] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PipeTransport]]
-  @scala.inline
-  def createClientPipeTransport(pipeName: String, encoding: BufferEncoding): js.Promise[PipeTransport] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PipeTransport]]
+  inline def createClientPipeTransport(pipeName: String): js.Promise[PipeTransport] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PipeTransport]]
+  inline def createClientPipeTransport(pipeName: String, encoding: BufferEncoding): js.Promise[PipeTransport] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PipeTransport]]
   
-  @scala.inline
-  def createServerPipeTransport(pipeName: String): js.Tuple2[MessageReader, MessageWriter] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServerPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[MessageReader, MessageWriter]]
-  @scala.inline
-  def createServerPipeTransport(pipeName: String, encoding: BufferEncoding): js.Tuple2[MessageReader, MessageWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[MessageReader, MessageWriter]]
+  inline def createServerPipeTransport(pipeName: String): js.Tuple2[MessageReader, MessageWriter] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServerPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[MessageReader, MessageWriter]]
+  inline def createServerPipeTransport(pipeName: String, encoding: BufferEncoding): js.Tuple2[MessageReader, MessageWriter] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[MessageReader, MessageWriter]]
   
-  @scala.inline
-  def generateRandomPipeName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomPipeName")().asInstanceOf[String]
+  inline def generateRandomPipeName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomPipeName")().asInstanceOf[String]
   
   trait PipeTransport extends StObject {
     
@@ -32,17 +27,14 @@ object pipeSupportMod {
   }
   object PipeTransport {
     
-    @scala.inline
-    def apply(onConnected: () => js.Promise[js.Tuple2[MessageReader, MessageWriter]]): PipeTransport = {
+    inline def apply(onConnected: () => js.Promise[js.Tuple2[MessageReader, MessageWriter]]): PipeTransport = {
       val __obj = js.Dynamic.literal(onConnected = js.Any.fromFunction0(onConnected))
       __obj.asInstanceOf[PipeTransport]
     }
     
-    @scala.inline
-    implicit class PipeTransportMutableBuilder[Self <: PipeTransport] (val x: Self) extends AnyVal {
+    extension [Self <: PipeTransport](x: Self) {
       
-      @scala.inline
-      def setOnConnected(value: () => js.Promise[js.Tuple2[MessageReader, MessageWriter]]): Self = StObject.set(x, "onConnected", js.Any.fromFunction0(value))
+      inline def setOnConnected(value: () => js.Promise[js.Tuple2[MessageReader, MessageWriter]]): Self = StObject.set(x, "onConnected", js.Any.fromFunction0(value))
     }
   }
 }

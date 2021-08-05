@@ -127,104 +127,72 @@ object mod extends Shortcut {
   }
   object CameraProps {
     
-    @scala.inline
-    def apply(): CameraProps = {
+    inline def apply(): CameraProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CameraProps]
     }
     
-    @scala.inline
-    implicit class CameraPropsMutableBuilder[Self <: CameraProps] (val x: Self) extends AnyVal {
+    extension [Self <: CameraProps](x: Self) {
       
-      @scala.inline
-      def setIdealFacingMode(value: environment | user): Self = StObject.set(x, "idealFacingMode", value.asInstanceOf[js.Any])
+      inline def setIdealFacingMode(value: environment | user): Self = StObject.set(x, "idealFacingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdealFacingModeUndefined: Self = StObject.set(x, "idealFacingMode", js.undefined)
+      inline def setIdealFacingModeUndefined: Self = StObject.set(x, "idealFacingMode", js.undefined)
       
-      @scala.inline
-      def setIdealResolution(value: Height): Self = StObject.set(x, "idealResolution", value.asInstanceOf[js.Any])
+      inline def setIdealResolution(value: Height): Self = StObject.set(x, "idealResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdealResolutionUndefined: Self = StObject.set(x, "idealResolution", js.undefined)
+      inline def setIdealResolutionUndefined: Self = StObject.set(x, "idealResolution", js.undefined)
       
-      @scala.inline
-      def setImageCompression(value: Double): Self = StObject.set(x, "imageCompression", value.asInstanceOf[js.Any])
+      inline def setImageCompression(value: Double): Self = StObject.set(x, "imageCompression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageCompressionUndefined: Self = StObject.set(x, "imageCompression", js.undefined)
+      inline def setImageCompressionUndefined: Self = StObject.set(x, "imageCompression", js.undefined)
       
-      @scala.inline
-      def setImageType(value: png | jpg): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+      inline def setImageType(value: png | jpg): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
+      inline def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
       
-      @scala.inline
-      def setIsDisplayStartCameraError(value: Boolean): Self = StObject.set(x, "isDisplayStartCameraError", value.asInstanceOf[js.Any])
+      inline def setIsDisplayStartCameraError(value: Boolean): Self = StObject.set(x, "isDisplayStartCameraError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisplayStartCameraErrorUndefined: Self = StObject.set(x, "isDisplayStartCameraError", js.undefined)
+      inline def setIsDisplayStartCameraErrorUndefined: Self = StObject.set(x, "isDisplayStartCameraError", js.undefined)
       
-      @scala.inline
-      def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
+      inline def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
+      inline def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
       
-      @scala.inline
-      def setIsImageMirror(value: Boolean): Self = StObject.set(x, "isImageMirror", value.asInstanceOf[js.Any])
+      inline def setIsImageMirror(value: Boolean): Self = StObject.set(x, "isImageMirror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsImageMirrorUndefined: Self = StObject.set(x, "isImageMirror", js.undefined)
+      inline def setIsImageMirrorUndefined: Self = StObject.set(x, "isImageMirror", js.undefined)
       
-      @scala.inline
-      def setIsMaxResolution(value: Boolean): Self = StObject.set(x, "isMaxResolution", value.asInstanceOf[js.Any])
+      inline def setIsMaxResolution(value: Boolean): Self = StObject.set(x, "isMaxResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMaxResolutionUndefined: Self = StObject.set(x, "isMaxResolution", js.undefined)
+      inline def setIsMaxResolutionUndefined: Self = StObject.set(x, "isMaxResolution", js.undefined)
       
-      @scala.inline
-      def setIsSilentMode(value: Boolean): Self = StObject.set(x, "isSilentMode", value.asInstanceOf[js.Any])
+      inline def setIsSilentMode(value: Boolean): Self = StObject.set(x, "isSilentMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSilentModeUndefined: Self = StObject.set(x, "isSilentMode", js.undefined)
+      inline def setIsSilentModeUndefined: Self = StObject.set(x, "isSilentMode", js.undefined)
       
-      @scala.inline
-      def setOnCameraError(value: /* error */ Error => Unit): Self = StObject.set(x, "onCameraError", js.Any.fromFunction1(value))
+      inline def setOnCameraError(value: /* error */ Error => Unit): Self = StObject.set(x, "onCameraError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCameraErrorUndefined: Self = StObject.set(x, "onCameraError", js.undefined)
+      inline def setOnCameraErrorUndefined: Self = StObject.set(x, "onCameraError", js.undefined)
       
-      @scala.inline
-      def setOnCameraStart(value: () => Unit): Self = StObject.set(x, "onCameraStart", js.Any.fromFunction0(value))
+      inline def setOnCameraStart(value: () => Unit): Self = StObject.set(x, "onCameraStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCameraStartUndefined: Self = StObject.set(x, "onCameraStart", js.undefined)
+      inline def setOnCameraStartUndefined: Self = StObject.set(x, "onCameraStart", js.undefined)
       
-      @scala.inline
-      def setOnCameraStop(value: () => Unit): Self = StObject.set(x, "onCameraStop", js.Any.fromFunction0(value))
+      inline def setOnCameraStop(value: () => Unit): Self = StObject.set(x, "onCameraStop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCameraStopUndefined: Self = StObject.set(x, "onCameraStop", js.undefined)
+      inline def setOnCameraStopUndefined: Self = StObject.set(x, "onCameraStop", js.undefined)
       
-      @scala.inline
-      def setOnTakePhoto(value: /* dataUri */ String => Unit): Self = StObject.set(x, "onTakePhoto", js.Any.fromFunction1(value))
+      inline def setOnTakePhoto(value: /* dataUri */ String => Unit): Self = StObject.set(x, "onTakePhoto", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTakePhotoAnimationDone(value: /* dataUri */ String => Unit): Self = StObject.set(x, "onTakePhotoAnimationDone", js.Any.fromFunction1(value))
+      inline def setOnTakePhotoAnimationDone(value: /* dataUri */ String => Unit): Self = StObject.set(x, "onTakePhotoAnimationDone", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTakePhotoAnimationDoneUndefined: Self = StObject.set(x, "onTakePhotoAnimationDone", js.undefined)
+      inline def setOnTakePhotoAnimationDoneUndefined: Self = StObject.set(x, "onTakePhotoAnimationDone", js.undefined)
       
-      @scala.inline
-      def setOnTakePhotoUndefined: Self = StObject.set(x, "onTakePhoto", js.undefined)
+      inline def setOnTakePhotoUndefined: Self = StObject.set(x, "onTakePhoto", js.undefined)
       
-      @scala.inline
-      def setSizeFactor(value: Double): Self = StObject.set(x, "sizeFactor", value.asInstanceOf[js.Any])
+      inline def setSizeFactor(value: Double): Self = StObject.set(x, "sizeFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeFactorUndefined: Self = StObject.set(x, "sizeFactor", js.undefined)
+      inline def setSizeFactorUndefined: Self = StObject.set(x, "sizeFactor", js.undefined)
     }
   }
   
@@ -236,20 +204,16 @@ object mod extends Shortcut {
   }
   object FacingMode {
     
-    @scala.inline
-    def apply(): FacingMode = {
+    inline def apply(): FacingMode = {
       val __obj = js.Dynamic.literal(ENVIRONMENT = "environment", USER = "user")
       __obj.asInstanceOf[FacingMode]
     }
     
-    @scala.inline
-    implicit class FacingModeMutableBuilder[Self <: FacingMode] (val x: Self) extends AnyVal {
+    extension [Self <: FacingMode](x: Self) {
       
-      @scala.inline
-      def setENVIRONMENT(value: environment): Self = StObject.set(x, "ENVIRONMENT", value.asInstanceOf[js.Any])
+      inline def setENVIRONMENT(value: environment): Self = StObject.set(x, "ENVIRONMENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSER(value: user): Self = StObject.set(x, "USER", value.asInstanceOf[js.Any])
+      inline def setUSER(value: user): Self = StObject.set(x, "USER", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,20 +225,16 @@ object mod extends Shortcut {
   }
   object ImageTypes {
     
-    @scala.inline
-    def apply(): ImageTypes = {
+    inline def apply(): ImageTypes = {
       val __obj = js.Dynamic.literal(JPG = "jpg", PNG = "png")
       __obj.asInstanceOf[ImageTypes]
     }
     
-    @scala.inline
-    implicit class ImageTypesMutableBuilder[Self <: ImageTypes] (val x: Self) extends AnyVal {
+    extension [Self <: ImageTypes](x: Self) {
       
-      @scala.inline
-      def setJPG(value: jpg): Self = StObject.set(x, "JPG", value.asInstanceOf[js.Any])
+      inline def setJPG(value: jpg): Self = StObject.set(x, "JPG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPNG(value: png): Self = StObject.set(x, "PNG", value.asInstanceOf[js.Any])
+      inline def setPNG(value: png): Self = StObject.set(x, "PNG", value.asInstanceOf[js.Any])
     }
   }
   

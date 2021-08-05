@@ -15,31 +15,23 @@ trait DialogflowV1OriginalRequest extends StObject {
 }
 object DialogflowV1OriginalRequest {
   
-  @scala.inline
-  def apply(): DialogflowV1OriginalRequest = {
+  inline def apply(): DialogflowV1OriginalRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1OriginalRequest]
   }
   
-  @scala.inline
-  implicit class DialogflowV1OriginalRequestMutableBuilder[Self <: DialogflowV1OriginalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1OriginalRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: GoogleActionsV2AppRequest): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: GoogleActionsV2AppRequest): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

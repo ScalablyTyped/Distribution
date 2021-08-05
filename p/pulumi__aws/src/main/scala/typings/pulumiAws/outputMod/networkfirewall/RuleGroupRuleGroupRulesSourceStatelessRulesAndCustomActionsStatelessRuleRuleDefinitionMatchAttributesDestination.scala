@@ -13,19 +13,15 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination {
   
-  @scala.inline
-  def apply(): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination = {
+  inline def apply(): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestinationMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesDestination](x: Self) {
     
-    @scala.inline
-    def setAddressDefinition(value: String): Self = StObject.set(x, "addressDefinition", value.asInstanceOf[js.Any])
+    inline def setAddressDefinition(value: String): Self = StObject.set(x, "addressDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressDefinitionUndefined: Self = StObject.set(x, "addressDefinition", js.undefined)
+    inline def setAddressDefinitionUndefined: Self = StObject.set(x, "addressDefinition", js.undefined)
   }
 }

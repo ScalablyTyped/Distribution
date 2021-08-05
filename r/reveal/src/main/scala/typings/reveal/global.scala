@@ -9,6 +9,5 @@ object global {
   @JSGlobal("Reveal")
   @js.native
   def Reveal: RevealStatic = js.native
-  @scala.inline
-  def Reveal_=(x: RevealStatic): Unit = js.Dynamic.global.updateDynamic("Reveal")(x.asInstanceOf[js.Any])
+  inline def Reveal_=(x: RevealStatic): Unit = js.Dynamic.global.updateDynamic("Reveal")(x.asInstanceOf[js.Any])
 }

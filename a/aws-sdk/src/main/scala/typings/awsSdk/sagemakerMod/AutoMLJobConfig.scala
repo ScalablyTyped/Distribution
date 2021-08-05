@@ -18,25 +18,19 @@ trait AutoMLJobConfig extends StObject {
 }
 object AutoMLJobConfig {
   
-  @scala.inline
-  def apply(): AutoMLJobConfig = {
+  inline def apply(): AutoMLJobConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoMLJobConfig]
   }
   
-  @scala.inline
-  implicit class AutoMLJobConfigMutableBuilder[Self <: AutoMLJobConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLJobConfig](x: Self) {
     
-    @scala.inline
-    def setCompletionCriteria(value: AutoMLJobCompletionCriteria): Self = StObject.set(x, "CompletionCriteria", value.asInstanceOf[js.Any])
+    inline def setCompletionCriteria(value: AutoMLJobCompletionCriteria): Self = StObject.set(x, "CompletionCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletionCriteriaUndefined: Self = StObject.set(x, "CompletionCriteria", js.undefined)
+    inline def setCompletionCriteriaUndefined: Self = StObject.set(x, "CompletionCriteria", js.undefined)
     
-    @scala.inline
-    def setSecurityConfig(value: AutoMLSecurityConfig): Self = StObject.set(x, "SecurityConfig", value.asInstanceOf[js.Any])
+    inline def setSecurityConfig(value: AutoMLSecurityConfig): Self = StObject.set(x, "SecurityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityConfigUndefined: Self = StObject.set(x, "SecurityConfig", js.undefined)
+    inline def setSecurityConfigUndefined: Self = StObject.set(x, "SecurityConfig", js.undefined)
   }
 }

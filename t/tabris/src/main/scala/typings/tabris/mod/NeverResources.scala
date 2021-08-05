@@ -19,7 +19,7 @@ trait NeverResources extends StObject {
   @JSName(" ")
   var Space: js.UndefOr[scala.Nothing] = js.undefined
   
-  @JSName("")
+  /* private */ @JSName("")
   var _empty: js.UndefOr[scala.Nothing] = js.undefined
   
   @JSName("_")

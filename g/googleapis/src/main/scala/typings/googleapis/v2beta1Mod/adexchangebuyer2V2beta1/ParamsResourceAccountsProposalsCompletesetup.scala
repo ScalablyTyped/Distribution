@@ -34,37 +34,27 @@ trait ParamsResourceAccountsProposalsCompletesetup
 }
 object ParamsResourceAccountsProposalsCompletesetup {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsProposalsCompletesetup = {
+  inline def apply(): ParamsResourceAccountsProposalsCompletesetup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsProposalsCompletesetup]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsProposalsCompletesetupMutableBuilder[Self <: ParamsResourceAccountsProposalsCompletesetup] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsProposalsCompletesetup](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProposalId(value: String): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
+    inline def setProposalId(value: String): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
+    inline def setProposalIdUndefined: Self = StObject.set(x, "proposalId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCompleteSetupRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCompleteSetupRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

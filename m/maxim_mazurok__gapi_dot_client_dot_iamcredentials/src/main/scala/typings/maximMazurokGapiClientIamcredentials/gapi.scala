@@ -41,38 +41,28 @@ object gapi {
       }
       object GenerateAccessTokenRequest {
         
-        @scala.inline
-        def apply(): GenerateAccessTokenRequest = {
+        inline def apply(): GenerateAccessTokenRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GenerateAccessTokenRequest]
         }
         
-        @scala.inline
-        implicit class GenerateAccessTokenRequestMutableBuilder[Self <: GenerateAccessTokenRequest] (val x: Self) extends AnyVal {
+        extension [Self <: GenerateAccessTokenRequest](x: Self) {
           
-          @scala.inline
-          def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+          inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+          inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
           
-          @scala.inline
-          def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
           
-          @scala.inline
-          def setLifetime(value: String): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+          inline def setLifetime(value: String): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
+          inline def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
           
-          @scala.inline
-          def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+          inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+          inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
           
-          @scala.inline
-          def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+          inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
         }
       }
       
@@ -86,26 +76,20 @@ object gapi {
       }
       object GenerateAccessTokenResponse {
         
-        @scala.inline
-        def apply(): GenerateAccessTokenResponse = {
+        inline def apply(): GenerateAccessTokenResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GenerateAccessTokenResponse]
         }
         
-        @scala.inline
-        implicit class GenerateAccessTokenResponseMutableBuilder[Self <: GenerateAccessTokenResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GenerateAccessTokenResponse](x: Self) {
           
-          @scala.inline
-          def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+          inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+          inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
           
-          @scala.inline
-          def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+          inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+          inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
         }
       }
       
@@ -127,35 +111,26 @@ object gapi {
       }
       object GenerateIdTokenRequest {
         
-        @scala.inline
-        def apply(): GenerateIdTokenRequest = {
+        inline def apply(): GenerateIdTokenRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GenerateIdTokenRequest]
         }
         
-        @scala.inline
-        implicit class GenerateIdTokenRequestMutableBuilder[Self <: GenerateIdTokenRequest] (val x: Self) extends AnyVal {
+        extension [Self <: GenerateIdTokenRequest](x: Self) {
           
-          @scala.inline
-          def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+          inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+          inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
           
-          @scala.inline
-          def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+          inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+          inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
           
-          @scala.inline
-          def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
           
-          @scala.inline
-          def setIncludeEmail(value: Boolean): Self = StObject.set(x, "includeEmail", value.asInstanceOf[js.Any])
+          inline def setIncludeEmail(value: Boolean): Self = StObject.set(x, "includeEmail", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIncludeEmailUndefined: Self = StObject.set(x, "includeEmail", js.undefined)
+          inline def setIncludeEmailUndefined: Self = StObject.set(x, "includeEmail", js.undefined)
         }
       }
       
@@ -166,20 +141,16 @@ object gapi {
       }
       object GenerateIdTokenResponse {
         
-        @scala.inline
-        def apply(): GenerateIdTokenResponse = {
+        inline def apply(): GenerateIdTokenResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GenerateIdTokenResponse]
         }
         
-        @scala.inline
-        implicit class GenerateIdTokenResponseMutableBuilder[Self <: GenerateIdTokenResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GenerateIdTokenResponse](x: Self) {
           
-          @scala.inline
-          def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+          inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+          inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
         }
       }
       
@@ -189,17 +160,14 @@ object gapi {
       }
       object ProjectsResource {
         
-        @scala.inline
-        def apply(serviceAccounts: ServiceAccountsResource): ProjectsResource = {
+        inline def apply(serviceAccounts: ServiceAccountsResource): ProjectsResource = {
           val __obj = js.Dynamic.literal(serviceAccounts = serviceAccounts.asInstanceOf[js.Any])
           __obj.asInstanceOf[ProjectsResource]
         }
         
-        @scala.inline
-        implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+        extension [Self <: ProjectsResource](x: Self) {
           
-          @scala.inline
-          def setServiceAccounts(value: ServiceAccountsResource): Self = StObject.set(x, "serviceAccounts", value.asInstanceOf[js.Any])
+          inline def setServiceAccounts(value: ServiceAccountsResource): Self = StObject.set(x, "serviceAccounts", value.asInstanceOf[js.Any])
         }
       }
       
@@ -238,29 +206,22 @@ object gapi {
       }
       object SignBlobRequest {
         
-        @scala.inline
-        def apply(): SignBlobRequest = {
+        inline def apply(): SignBlobRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SignBlobRequest]
         }
         
-        @scala.inline
-        implicit class SignBlobRequestMutableBuilder[Self <: SignBlobRequest] (val x: Self) extends AnyVal {
+        extension [Self <: SignBlobRequest](x: Self) {
           
-          @scala.inline
-          def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+          inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+          inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
           
-          @scala.inline
-          def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
           
-          @scala.inline
-          def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+          inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+          inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
         }
       }
       
@@ -282,26 +243,20 @@ object gapi {
       }
       object SignBlobResponse {
         
-        @scala.inline
-        def apply(): SignBlobResponse = {
+        inline def apply(): SignBlobResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SignBlobResponse]
         }
         
-        @scala.inline
-        implicit class SignBlobResponseMutableBuilder[Self <: SignBlobResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SignBlobResponse](x: Self) {
           
-          @scala.inline
-          def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+          inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+          inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
           
-          @scala.inline
-          def setSignedBlob(value: String): Self = StObject.set(x, "signedBlob", value.asInstanceOf[js.Any])
+          inline def setSignedBlob(value: String): Self = StObject.set(x, "signedBlob", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSignedBlobUndefined: Self = StObject.set(x, "signedBlob", js.undefined)
+          inline def setSignedBlobUndefined: Self = StObject.set(x, "signedBlob", js.undefined)
         }
       }
       
@@ -323,29 +278,22 @@ object gapi {
       }
       object SignJwtRequest {
         
-        @scala.inline
-        def apply(): SignJwtRequest = {
+        inline def apply(): SignJwtRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SignJwtRequest]
         }
         
-        @scala.inline
-        implicit class SignJwtRequestMutableBuilder[Self <: SignJwtRequest] (val x: Self) extends AnyVal {
+        extension [Self <: SignJwtRequest](x: Self) {
           
-          @scala.inline
-          def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
+          inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
+          inline def setDelegatesUndefined: Self = StObject.set(x, "delegates", js.undefined)
           
-          @scala.inline
-          def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
+          inline def setDelegatesVarargs(value: String*): Self = StObject.set(x, "delegates", js.Array(value :_*))
           
-          @scala.inline
-          def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+          inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+          inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
         }
       }
       
@@ -368,26 +316,20 @@ object gapi {
       }
       object SignJwtResponse {
         
-        @scala.inline
-        def apply(): SignJwtResponse = {
+        inline def apply(): SignJwtResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[SignJwtResponse]
         }
         
-        @scala.inline
-        implicit class SignJwtResponseMutableBuilder[Self <: SignJwtResponse] (val x: Self) extends AnyVal {
+        extension [Self <: SignJwtResponse](x: Self) {
           
-          @scala.inline
-          def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+          inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+          inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
           
-          @scala.inline
-          def setSignedJwt(value: String): Self = StObject.set(x, "signedJwt", value.asInstanceOf[js.Any])
+          inline def setSignedJwt(value: String): Self = StObject.set(x, "signedJwt", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSignedJwtUndefined: Self = StObject.set(x, "signedJwt", js.undefined)
+          inline def setSignedJwtUndefined: Self = StObject.set(x, "signedJwt", js.undefined)
         }
       }
     }

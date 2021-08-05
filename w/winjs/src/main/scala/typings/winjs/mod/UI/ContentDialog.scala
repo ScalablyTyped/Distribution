@@ -45,8 +45,7 @@ object ContentDialog {
     @JSImport("winjs", "UI.ContentDialog.DismissalResult.none")
     @js.native
     def none: String = js.native
-    @scala.inline
-    def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+    inline def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
     
     /**
       * The user dismissed the dialog by pressing the primary command.
@@ -54,8 +53,7 @@ object ContentDialog {
     @JSImport("winjs", "UI.ContentDialog.DismissalResult.primary")
     @js.native
     def primary: String = js.native
-    @scala.inline
-    def primary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primary")(x.asInstanceOf[js.Any])
+    inline def primary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("primary")(x.asInstanceOf[js.Any])
     
     /**
       * The user dismissed the dialog by pressing the secondary command.
@@ -63,8 +61,7 @@ object ContentDialog {
     @JSImport("winjs", "UI.ContentDialog.DismissalResult.secondary")
     @js.native
     def secondary: String = js.native
-    @scala.inline
-    def secondary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondary")(x.asInstanceOf[js.Any])
+    inline def secondary_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondary")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -74,6 +71,5 @@ object ContentDialog {
   @JSImport("winjs", "UI.ContentDialog.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

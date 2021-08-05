@@ -15,8 +15,7 @@ object forkTsCheckerWebpackPluginStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createForkTsCheckerWebpackPluginState(): ForkTsCheckerWebpackPluginState = ^.asInstanceOf[js.Dynamic].applyDynamic("createForkTsCheckerWebpackPluginState")().asInstanceOf[ForkTsCheckerWebpackPluginState]
+  inline def createForkTsCheckerWebpackPluginState(): ForkTsCheckerWebpackPluginState = ^.asInstanceOf[js.Dynamic].applyDynamic("createForkTsCheckerWebpackPluginState")().asInstanceOf[ForkTsCheckerWebpackPluginState]
   
   trait ForkTsCheckerWebpackPluginState extends StObject {
     
@@ -36,8 +35,7 @@ object forkTsCheckerWebpackPluginStateMod {
   }
   object ForkTsCheckerWebpackPluginState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dependenciesPromise: js.Promise[js.UndefOr[Dependencies]],
       initialized: Boolean,
       issuesPromise: js.Promise[js.UndefOr[js.Array[Issue]]],
@@ -48,35 +46,25 @@ object forkTsCheckerWebpackPluginStateMod {
       __obj.asInstanceOf[ForkTsCheckerWebpackPluginState]
     }
     
-    @scala.inline
-    implicit class ForkTsCheckerWebpackPluginStateMutableBuilder[Self <: ForkTsCheckerWebpackPluginState] (val x: Self) extends AnyVal {
+    extension [Self <: ForkTsCheckerWebpackPluginState](x: Self) {
       
-      @scala.inline
-      def setDependenciesPromise(value: js.Promise[js.UndefOr[Dependencies]]): Self = StObject.set(x, "dependenciesPromise", value.asInstanceOf[js.Any])
+      inline def setDependenciesPromise(value: js.Promise[js.UndefOr[Dependencies]]): Self = StObject.set(x, "dependenciesPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialized(value: Boolean): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
+      inline def setInitialized(value: Boolean): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuesPromise(value: js.Promise[js.UndefOr[js.Array[Issue]]]): Self = StObject.set(x, "issuesPromise", value.asInstanceOf[js.Any])
+      inline def setIssuesPromise(value: js.Promise[js.UndefOr[js.Array[Issue]]]): Self = StObject.set(x, "issuesPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastDependencies(value: Dependencies): Self = StObject.set(x, "lastDependencies", value.asInstanceOf[js.Any])
+      inline def setLastDependencies(value: Dependencies): Self = StObject.set(x, "lastDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastDependenciesUndefined: Self = StObject.set(x, "lastDependencies", js.undefined)
+      inline def setLastDependenciesUndefined: Self = StObject.set(x, "lastDependencies", js.undefined)
       
-      @scala.inline
-      def setReportPromise(value: js.Promise[js.UndefOr[Report]]): Self = StObject.set(x, "reportPromise", value.asInstanceOf[js.Any])
+      inline def setReportPromise(value: js.Promise[js.UndefOr[Report]]): Self = StObject.set(x, "reportPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatching(value: Boolean): Self = StObject.set(x, "watching", value.asInstanceOf[js.Any])
+      inline def setWatching(value: Boolean): Self = StObject.set(x, "watching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebpackDevServerDoneTap(value: Tap[TapType, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "webpackDevServerDoneTap", value.asInstanceOf[js.Any])
+      inline def setWebpackDevServerDoneTap(value: Tap[TapType, js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "webpackDevServerDoneTap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebpackDevServerDoneTapUndefined: Self = StObject.set(x, "webpackDevServerDoneTap", js.undefined)
+      inline def setWebpackDevServerDoneTapUndefined: Self = StObject.set(x, "webpackDevServerDoneTap", js.undefined)
     }
   }
 }

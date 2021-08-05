@@ -22,20 +22,16 @@ object youtubeSmallMod extends Shortcut {
   }
   object YoutubeSmallProps {
     
-    @scala.inline
-    def apply(): YoutubeSmallProps = {
+    inline def apply(): YoutubeSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[YoutubeSmallProps]
     }
     
-    @scala.inline
-    implicit class YoutubeSmallPropsMutableBuilder[Self <: YoutubeSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: YoutubeSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

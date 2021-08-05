@@ -12,8 +12,6 @@ object alertNativeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(title: ReactNode, content: ReactNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(title: ReactNode, content: ReactNode, actions: js.Array[Text]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(title: ReactNode, content: ReactNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(title: ReactNode, content: ReactNode, actions: js.Array[Text]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

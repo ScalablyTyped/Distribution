@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChannelCountMode extends StObject
 object ChannelCountMode {
   
-  @scala.inline
-  def `clamped-max`: typings.devtoolsProtocol.devtoolsProtocolStrings.`clamped-max` = "clamped-max".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`clamped-max`]
+  inline def `clamped-max`: typings.devtoolsProtocol.devtoolsProtocolStrings.`clamped-max` = "clamped-max".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`clamped-max`]
   
-  @scala.inline
-  def explicit: typings.devtoolsProtocol.devtoolsProtocolStrings.explicit = "explicit".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.explicit]
+  inline def explicit: typings.devtoolsProtocol.devtoolsProtocolStrings.explicit = "explicit".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.explicit]
   
-  @scala.inline
-  def max: typings.devtoolsProtocol.devtoolsProtocolStrings.max = "max".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.max]
+  inline def max: typings.devtoolsProtocol.devtoolsProtocolStrings.max = "max".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.max]
 }

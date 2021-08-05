@@ -18,25 +18,19 @@ trait ActivitiesType extends StObject {
 }
 object ActivitiesType {
   
-  @scala.inline
-  def apply(Activities: Activities): ActivitiesType = {
+  inline def apply(Activities: Activities): ActivitiesType = {
     val __obj = js.Dynamic.literal(Activities = Activities.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitiesType]
   }
   
-  @scala.inline
-  implicit class ActivitiesTypeMutableBuilder[Self <: ActivitiesType] (val x: Self) extends AnyVal {
+  extension [Self <: ActivitiesType](x: Self) {
     
-    @scala.inline
-    def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "Activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "Activities", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

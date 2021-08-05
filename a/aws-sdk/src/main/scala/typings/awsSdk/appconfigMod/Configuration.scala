@@ -23,31 +23,23 @@ trait Configuration extends StObject {
 }
 object Configuration {
   
-  @scala.inline
-  def apply(): Configuration = {
+  inline def apply(): Configuration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Configuration]
   }
   
-  @scala.inline
-  implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+  extension [Self <: Configuration](x: Self) {
     
-    @scala.inline
-    def setConfigurationVersion(value: Version): Self = StObject.set(x, "ConfigurationVersion", value.asInstanceOf[js.Any])
+    inline def setConfigurationVersion(value: Version): Self = StObject.set(x, "ConfigurationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationVersionUndefined: Self = StObject.set(x, "ConfigurationVersion", js.undefined)
+    inline def setConfigurationVersionUndefined: Self = StObject.set(x, "ConfigurationVersion", js.undefined)
     
-    @scala.inline
-    def setContent(value: _Blob): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: _Blob): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
   }
 }

@@ -166,8 +166,7 @@ object commitMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(
+    inline def create(
       repo: Repository,
       updateRef: String,
       author: Signature,
@@ -179,8 +178,7 @@ object commitMod {
       parents: js.Array[js.Any]
     ): Oid = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], updateRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], messageEncoding.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tree.asInstanceOf[js.Any], parentCount.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[Oid]
     
-    @scala.inline
-    def createV(
+    inline def createV(
       id: Oid,
       repo: Repository,
       updateRef: String,
@@ -192,23 +190,18 @@ object commitMod {
       parentCount: Double
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("createV")(id.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], updateRef.asInstanceOf[js.Any], author.asInstanceOf[js.Any], committer.asInstanceOf[js.Any], messageEncoding.asInstanceOf[js.Any], message.asInstanceOf[js.Any], tree.asInstanceOf[js.Any], parentCount.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def createWithSignature(repo: Repository, commitContent: String, signature: String, signatureField: String): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithSignature")(repo.asInstanceOf[js.Any], commitContent.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], signatureField.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    inline def createWithSignature(repo: Repository, commitContent: String, signature: String, signatureField: String): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithSignature")(repo.asInstanceOf[js.Any], commitContent.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], signatureField.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
     /**
       * Retrieves the commit pointed to by the oid
       *
       *
       */
-    @scala.inline
-    def lookup(repo: Repository, id: String): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
-    @scala.inline
-    def lookup(repo: Repository, id: Commit): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
-    @scala.inline
-    def lookup(repo: Repository, id: Oid): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
+    inline def lookup(repo: Repository, id: String): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
+    inline def lookup(repo: Repository, id: Commit): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
+    inline def lookup(repo: Repository, id: Oid): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
     
-    @scala.inline
-    def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
+    inline def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Commit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Commit]]
   }
   
   @js.native

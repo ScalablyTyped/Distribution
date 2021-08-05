@@ -14,19 +14,15 @@ trait WaitOperationRequest extends StObject {
 }
 object WaitOperationRequest {
   
-  @scala.inline
-  def apply(): WaitOperationRequest = {
+  inline def apply(): WaitOperationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WaitOperationRequest]
   }
   
-  @scala.inline
-  implicit class WaitOperationRequestMutableBuilder[Self <: WaitOperationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WaitOperationRequest](x: Self) {
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

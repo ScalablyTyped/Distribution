@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Mailer")
 @js.native
-class Mailer protected ()
+/* private */ class Mailer ()
   extends StObject
      with typings.activexWord.Word.Mailer {
   
@@ -44,7 +44,7 @@ class Mailer protected ()
   /* CompleteClass */
   var Subject: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Mailer_typekey")
   var WordDotMailer_typekey: typings.activexWord.Word.Mailer = js.native
 }

@@ -103,7 +103,7 @@ trait TextRange2 extends StObject {
   def MathZones(Start: Double, Length: Double): TextRange2 = js.native
   def MathZones(Start: Unit, Length: Double): TextRange2 = js.native
   
-  @JSName("Office.TextRange2_typekey")
+  /* private */ @JSName("Office.TextRange2_typekey")
   var OfficeDotTextRange2_typekey: TextRange2 = js.native
   
   val ParagraphFormat: ParagraphFormat2 = js.native

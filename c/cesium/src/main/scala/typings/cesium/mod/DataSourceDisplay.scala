@@ -31,8 +31,7 @@ object DataSourceDisplay {
   @JSImport("cesium", "DataSourceDisplay.defaultVisualizersCallback")
   @js.native
   def defaultVisualizersCallback: VisualizersCallback = js.native
-  @scala.inline
-  def defaultVisualizersCallback_=(x: VisualizersCallback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVisualizersCallback")(x.asInstanceOf[js.Any])
+  inline def defaultVisualizersCallback_=(x: VisualizersCallback): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVisualizersCallback")(x.asInstanceOf[js.Any])
   
   type VisualizersCallback = js.Function2[/* scene */ Scene, /* dataSource */ DataSource, js.Array[Visualizer]]
 }

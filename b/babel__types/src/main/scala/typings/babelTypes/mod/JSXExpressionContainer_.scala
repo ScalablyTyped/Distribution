@@ -19,20 +19,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object JSXExpressionContainer_ {
   
-  @scala.inline
-  def apply(expression: Expression | JSXEmptyExpression_): JSXExpressionContainer_ = {
+  inline def apply(expression: Expression | JSXEmptyExpression_): JSXExpressionContainer_ = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("JSXExpressionContainer")
     __obj.asInstanceOf[JSXExpressionContainer_]
   }
   
-  @scala.inline
-  implicit class JSXExpressionContainer_MutableBuilder[Self <: JSXExpressionContainer_] (val x: Self) extends AnyVal {
+  extension [Self <: JSXExpressionContainer_](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression | JSXEmptyExpression_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression | JSXEmptyExpression_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: JSXExpressionContainer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXExpressionContainer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

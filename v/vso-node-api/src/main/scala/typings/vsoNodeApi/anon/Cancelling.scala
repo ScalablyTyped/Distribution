@@ -22,8 +22,7 @@ trait Cancelling extends StObject {
 }
 object Cancelling {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     cancelling: scala.Double,
     completed: scala.Double,
@@ -36,28 +35,20 @@ object Cancelling {
     __obj.asInstanceOf[Cancelling]
   }
   
-  @scala.inline
-  implicit class CancellingMutableBuilder[Self <: Cancelling] (val x: Self) extends AnyVal {
+  extension [Self <: Cancelling](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelling(value: scala.Double): Self = StObject.set(x, "cancelling", value.asInstanceOf[js.Any])
+    inline def setCancelling(value: scala.Double): Self = StObject.set(x, "cancelling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotStarted(value: scala.Double): Self = StObject.set(x, "notStarted", value.asInstanceOf[js.Any])
+    inline def setNotStarted(value: scala.Double): Self = StObject.set(x, "notStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostponed(value: scala.Double): Self = StObject.set(x, "postponed", value.asInstanceOf[js.Any])
+    inline def setPostponed(value: scala.Double): Self = StObject.set(x, "postponed", value.asInstanceOf[js.Any])
   }
 }

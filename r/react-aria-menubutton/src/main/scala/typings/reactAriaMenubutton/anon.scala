@@ -16,17 +16,14 @@ object anon {
   }
   object FocusButton {
     
-    @scala.inline
-    def apply(focusButton: Boolean): FocusButton = {
+    inline def apply(focusButton: Boolean): FocusButton = {
       val __obj = js.Dynamic.literal(focusButton = focusButton.asInstanceOf[js.Any])
       __obj.asInstanceOf[FocusButton]
     }
     
-    @scala.inline
-    implicit class FocusButtonMutableBuilder[Self <: FocusButton] (val x: Self) extends AnyVal {
+    extension [Self <: FocusButton](x: Self) {
       
-      @scala.inline
-      def setFocusButton(value: Boolean): Self = StObject.set(x, "focusButton", value.asInstanceOf[js.Any])
+      inline def setFocusButton(value: Boolean): Self = StObject.set(x, "focusButton", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,17 +37,14 @@ object anon {
   }
   object FocusMenu {
     
-    @scala.inline
-    def apply(focusMenu: Boolean): FocusMenu = {
+    inline def apply(focusMenu: Boolean): FocusMenu = {
       val __obj = js.Dynamic.literal(focusMenu = focusMenu.asInstanceOf[js.Any])
       __obj.asInstanceOf[FocusMenu]
     }
     
-    @scala.inline
-    implicit class FocusMenuMutableBuilder[Self <: FocusMenu] (val x: Self) extends AnyVal {
+    extension [Self <: FocusMenu](x: Self) {
       
-      @scala.inline
-      def setFocusMenu(value: Boolean): Self = StObject.set(x, "focusMenu", value.asInstanceOf[js.Any])
+      inline def setFocusMenu(value: Boolean): Self = StObject.set(x, "focusMenu", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,17 +54,14 @@ object anon {
   }
   object IsOpen {
     
-    @scala.inline
-    def apply(isOpen: Boolean): IsOpen = {
+    inline def apply(isOpen: Boolean): IsOpen = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsOpen]
     }
     
-    @scala.inline
-    implicit class IsOpenMutableBuilder[Self <: IsOpen] (val x: Self) extends AnyVal {
+    extension [Self <: IsOpen](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }
   }
 }

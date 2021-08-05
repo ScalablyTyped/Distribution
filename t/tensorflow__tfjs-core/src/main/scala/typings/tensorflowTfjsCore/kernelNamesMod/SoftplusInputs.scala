@@ -11,19 +11,15 @@ trait SoftplusInputs extends StObject {
 }
 object SoftplusInputs {
   
-  @scala.inline
-  def apply(): SoftplusInputs = {
+  inline def apply(): SoftplusInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SoftplusInputs]
   }
   
-  @scala.inline
-  implicit class SoftplusInputsMutableBuilder[Self <: SoftplusInputs] (val x: Self) extends AnyVal {
+  extension [Self <: SoftplusInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

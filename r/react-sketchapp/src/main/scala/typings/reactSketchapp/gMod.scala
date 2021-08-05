@@ -22,8 +22,7 @@ object gMod {
        with FontProps
   object GProps {
     
-    @scala.inline
-    def apply(): GProps = {
+    inline def apply(): GProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GProps]
     }

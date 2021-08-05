@@ -50,13 +50,12 @@ trait Property extends StObject {
   /** Returns/Sets the Property Value */
   var Value: js.Any
   
-  @JSName("WIA.Property_typekey")
+  /* private */ @JSName("WIA.Property_typekey")
   var WIADotProperty_typekey: Property
 }
 object Property {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsReadOnly: Boolean,
     IsVector: Boolean,
     Name: String,
@@ -76,46 +75,32 @@ object Property {
     __obj.asInstanceOf[Property]
   }
   
-  @scala.inline
-  implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
+  extension [Self <: Property](x: Self) {
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "IsReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVector(value: Boolean): Self = StObject.set(x, "IsVector", value.asInstanceOf[js.Any])
+    inline def setIsVector(value: Boolean): Self = StObject.set(x, "IsVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyID(value: Double): Self = StObject.set(x, "PropertyID", value.asInstanceOf[js.Any])
+    inline def setPropertyID(value: Double): Self = StObject.set(x, "PropertyID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubType(value: WiaSubType): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
+    inline def setSubType(value: WiaSubType): Self = StObject.set(x, "SubType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTypeDefault(value: js.Any): Self = StObject.set(x, "SubTypeDefault", value.asInstanceOf[js.Any])
+    inline def setSubTypeDefault(value: js.Any): Self = StObject.set(x, "SubTypeDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTypeMax(value: Double): Self = StObject.set(x, "SubTypeMax", value.asInstanceOf[js.Any])
+    inline def setSubTypeMax(value: Double): Self = StObject.set(x, "SubTypeMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTypeMin(value: Double): Self = StObject.set(x, "SubTypeMin", value.asInstanceOf[js.Any])
+    inline def setSubTypeMin(value: Double): Self = StObject.set(x, "SubTypeMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTypeStep(value: Double): Self = StObject.set(x, "SubTypeStep", value.asInstanceOf[js.Any])
+    inline def setSubTypeStep(value: Double): Self = StObject.set(x, "SubTypeStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubTypeValues(value: Vector[js.Any]): Self = StObject.set(x, "SubTypeValues", value.asInstanceOf[js.Any])
+    inline def setSubTypeValues(value: Vector[js.Any]): Self = StObject.set(x, "SubTypeValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotProperty_typekey(value: Property): Self = StObject.set(x, "WIA.Property_typekey", value.asInstanceOf[js.Any])
+    inline def setWIADotProperty_typekey(value: Property): Self = StObject.set(x, "WIA.Property_typekey", value.asInstanceOf[js.Any])
   }
 }

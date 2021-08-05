@@ -15,18 +15,14 @@ object mod {
   
   object compress {
     
-    @scala.inline
-    def apply(buffer: Buffer): Uint8Array = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-    @scala.inline
-    def apply(buffer: Buffer, options: CompressOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def apply(buffer: Buffer): Uint8Array = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def apply(buffer: Buffer, options: CompressOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
     @JSImport("brotli", "compress")
     @js.native
     val ^ : js.Any = js.native
   }
   
-  @scala.inline
-  def decompress(buffer: Buffer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  @scala.inline
-  def decompress(buffer: Buffer, outputSize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any], outputSize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  inline def decompress(buffer: Buffer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def decompress(buffer: Buffer, outputSize: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(buffer.asInstanceOf[js.Any], outputSize.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

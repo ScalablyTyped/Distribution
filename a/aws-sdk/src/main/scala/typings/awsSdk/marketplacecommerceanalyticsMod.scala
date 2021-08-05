@@ -33,20 +33,16 @@ object marketplacecommerceanalyticsMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -136,8 +132,7 @@ object marketplacecommerceanalyticsMod {
   }
   object GenerateDataSetRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataSetPublicationDate: DataSetPublicationDate,
       dataSetType: DataSetType,
       destinationS3BucketName: DestinationS3BucketName,
@@ -148,35 +143,25 @@ object marketplacecommerceanalyticsMod {
       __obj.asInstanceOf[GenerateDataSetRequest]
     }
     
-    @scala.inline
-    implicit class GenerateDataSetRequestMutableBuilder[Self <: GenerateDataSetRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateDataSetRequest](x: Self) {
       
-      @scala.inline
-      def setCustomerDefinedValues(value: CustomerDefinedValues): Self = StObject.set(x, "customerDefinedValues", value.asInstanceOf[js.Any])
+      inline def setCustomerDefinedValues(value: CustomerDefinedValues): Self = StObject.set(x, "customerDefinedValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerDefinedValuesUndefined: Self = StObject.set(x, "customerDefinedValues", js.undefined)
+      inline def setCustomerDefinedValuesUndefined: Self = StObject.set(x, "customerDefinedValues", js.undefined)
       
-      @scala.inline
-      def setDataSetPublicationDate(value: DataSetPublicationDate): Self = StObject.set(x, "dataSetPublicationDate", value.asInstanceOf[js.Any])
+      inline def setDataSetPublicationDate(value: DataSetPublicationDate): Self = StObject.set(x, "dataSetPublicationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSetType(value: DataSetType): Self = StObject.set(x, "dataSetType", value.asInstanceOf[js.Any])
+      inline def setDataSetType(value: DataSetType): Self = StObject.set(x, "dataSetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationS3BucketName(value: DestinationS3BucketName): Self = StObject.set(x, "destinationS3BucketName", value.asInstanceOf[js.Any])
+      inline def setDestinationS3BucketName(value: DestinationS3BucketName): Self = StObject.set(x, "destinationS3BucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationS3Prefix(value: DestinationS3Prefix): Self = StObject.set(x, "destinationS3Prefix", value.asInstanceOf[js.Any])
+      inline def setDestinationS3Prefix(value: DestinationS3Prefix): Self = StObject.set(x, "destinationS3Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationS3PrefixUndefined: Self = StObject.set(x, "destinationS3Prefix", js.undefined)
+      inline def setDestinationS3PrefixUndefined: Self = StObject.set(x, "destinationS3Prefix", js.undefined)
       
-      @scala.inline
-      def setRoleNameArn(value: RoleNameArn): Self = StObject.set(x, "roleNameArn", value.asInstanceOf[js.Any])
+      inline def setRoleNameArn(value: RoleNameArn): Self = StObject.set(x, "roleNameArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+      inline def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,20 +174,16 @@ object marketplacecommerceanalyticsMod {
   }
   object GenerateDataSetResult {
     
-    @scala.inline
-    def apply(): GenerateDataSetResult = {
+    inline def apply(): GenerateDataSetResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateDataSetResult]
     }
     
-    @scala.inline
-    implicit class GenerateDataSetResultMutableBuilder[Self <: GenerateDataSetResult] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateDataSetResult](x: Self) {
       
-      @scala.inline
-      def setDataSetRequestId(value: DataSetRequestId): Self = StObject.set(x, "dataSetRequestId", value.asInstanceOf[js.Any])
+      inline def setDataSetRequestId(value: DataSetRequestId): Self = StObject.set(x, "dataSetRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSetRequestIdUndefined: Self = StObject.set(x, "dataSetRequestId", js.undefined)
+      inline def setDataSetRequestIdUndefined: Self = StObject.set(x, "dataSetRequestId", js.undefined)
     }
   }
   
@@ -288,8 +269,7 @@ object marketplacecommerceanalyticsMod {
   }
   object StartSupportDataExportRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataSetType: SupportDataSetType,
       destinationS3BucketName: DestinationS3BucketName,
       fromDate: FromDate,
@@ -300,35 +280,25 @@ object marketplacecommerceanalyticsMod {
       __obj.asInstanceOf[StartSupportDataExportRequest]
     }
     
-    @scala.inline
-    implicit class StartSupportDataExportRequestMutableBuilder[Self <: StartSupportDataExportRequest] (val x: Self) extends AnyVal {
+    extension [Self <: StartSupportDataExportRequest](x: Self) {
       
-      @scala.inline
-      def setCustomerDefinedValues(value: CustomerDefinedValues): Self = StObject.set(x, "customerDefinedValues", value.asInstanceOf[js.Any])
+      inline def setCustomerDefinedValues(value: CustomerDefinedValues): Self = StObject.set(x, "customerDefinedValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerDefinedValuesUndefined: Self = StObject.set(x, "customerDefinedValues", js.undefined)
+      inline def setCustomerDefinedValuesUndefined: Self = StObject.set(x, "customerDefinedValues", js.undefined)
       
-      @scala.inline
-      def setDataSetType(value: SupportDataSetType): Self = StObject.set(x, "dataSetType", value.asInstanceOf[js.Any])
+      inline def setDataSetType(value: SupportDataSetType): Self = StObject.set(x, "dataSetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationS3BucketName(value: DestinationS3BucketName): Self = StObject.set(x, "destinationS3BucketName", value.asInstanceOf[js.Any])
+      inline def setDestinationS3BucketName(value: DestinationS3BucketName): Self = StObject.set(x, "destinationS3BucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationS3Prefix(value: DestinationS3Prefix): Self = StObject.set(x, "destinationS3Prefix", value.asInstanceOf[js.Any])
+      inline def setDestinationS3Prefix(value: DestinationS3Prefix): Self = StObject.set(x, "destinationS3Prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationS3PrefixUndefined: Self = StObject.set(x, "destinationS3Prefix", js.undefined)
+      inline def setDestinationS3PrefixUndefined: Self = StObject.set(x, "destinationS3Prefix", js.undefined)
       
-      @scala.inline
-      def setFromDate(value: FromDate): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+      inline def setFromDate(value: FromDate): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleNameArn(value: RoleNameArn): Self = StObject.set(x, "roleNameArn", value.asInstanceOf[js.Any])
+      inline def setRoleNameArn(value: RoleNameArn): Self = StObject.set(x, "roleNameArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+      inline def setSnsTopicArn(value: SnsTopicArn): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -341,20 +311,16 @@ object marketplacecommerceanalyticsMod {
   }
   object StartSupportDataExportResult {
     
-    @scala.inline
-    def apply(): StartSupportDataExportResult = {
+    inline def apply(): StartSupportDataExportResult = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StartSupportDataExportResult]
     }
     
-    @scala.inline
-    implicit class StartSupportDataExportResultMutableBuilder[Self <: StartSupportDataExportResult] (val x: Self) extends AnyVal {
+    extension [Self <: StartSupportDataExportResult](x: Self) {
       
-      @scala.inline
-      def setDataSetRequestId(value: DataSetRequestId): Self = StObject.set(x, "dataSetRequestId", value.asInstanceOf[js.Any])
+      inline def setDataSetRequestId(value: DataSetRequestId): Self = StObject.set(x, "dataSetRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSetRequestIdUndefined: Self = StObject.set(x, "dataSetRequestId", js.undefined)
+      inline def setDataSetRequestIdUndefined: Self = StObject.set(x, "dataSetRequestId", js.undefined)
     }
   }
   

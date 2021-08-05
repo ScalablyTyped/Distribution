@@ -23,25 +23,19 @@ trait Metric extends StObject {
 }
 object Metric {
   
-  @scala.inline
-  def apply(expression: Expression, variables: ExpressionVariables, window: MetricWindow): Metric = {
+  inline def apply(expression: Expression, variables: ExpressionVariables, window: MetricWindow): Metric = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metric]
   }
   
-  @scala.inline
-  implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+  extension [Self <: Metric](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariables(value: ExpressionVariables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    inline def setVariables(value: ExpressionVariables): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariablesVarargs(value: ExpressionVariable*): Self = StObject.set(x, "variables", js.Array(value :_*))
+    inline def setVariablesVarargs(value: ExpressionVariable*): Self = StObject.set(x, "variables", js.Array(value :_*))
     
-    @scala.inline
-    def setWindow(value: MetricWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: MetricWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
   }
 }

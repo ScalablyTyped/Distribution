@@ -14,40 +14,29 @@ trait DeviceMotionEventRotationRateInit extends StObject {
 }
 object DeviceMotionEventRotationRateInit {
   
-  @scala.inline
-  def apply(): DeviceMotionEventRotationRateInit = {
+  inline def apply(): DeviceMotionEventRotationRateInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceMotionEventRotationRateInit]
   }
   
-  @scala.inline
-  implicit class DeviceMotionEventRotationRateInitMutableBuilder[Self <: DeviceMotionEventRotationRateInit] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceMotionEventRotationRateInit](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaNull: Self = StObject.set(x, "alpha", null)
+    inline def setAlphaNull: Self = StObject.set(x, "alpha", null)
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+    inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetaNull: Self = StObject.set(x, "beta", null)
+    inline def setBetaNull: Self = StObject.set(x, "beta", null)
     
-    @scala.inline
-    def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
+    inline def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
     
-    @scala.inline
-    def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+    inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGammaNull: Self = StObject.set(x, "gamma", null)
+    inline def setGammaNull: Self = StObject.set(x, "gamma", null)
     
-    @scala.inline
-    def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
+    inline def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
   }
 }

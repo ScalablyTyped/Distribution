@@ -42,8 +42,7 @@ trait XStarBasicModuleInfo
 }
 object XStarBasicModuleInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Language: String,
     Name: String,
     Source: String,
@@ -58,25 +57,18 @@ object XStarBasicModuleInfo {
     __obj.asInstanceOf[XStarBasicModuleInfo]
   }
   
-  @scala.inline
-  implicit class XStarBasicModuleInfoMutableBuilder[Self <: XStarBasicModuleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XStarBasicModuleInfo](x: Self) {
     
-    @scala.inline
-    def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
+    inline def setGetLanguage(value: () => String): Self = StObject.set(x, "getLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSource(value: () => String): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
+    inline def setGetSource(value: () => String): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

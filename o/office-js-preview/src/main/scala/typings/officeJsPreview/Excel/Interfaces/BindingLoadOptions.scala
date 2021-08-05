@@ -36,31 +36,23 @@ trait BindingLoadOptions extends StObject {
 }
 object BindingLoadOptions {
   
-  @scala.inline
-  def apply(): BindingLoadOptions = {
+  inline def apply(): BindingLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BindingLoadOptions]
   }
   
-  @scala.inline
-  implicit class BindingLoadOptionsMutableBuilder[Self <: BindingLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BindingLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

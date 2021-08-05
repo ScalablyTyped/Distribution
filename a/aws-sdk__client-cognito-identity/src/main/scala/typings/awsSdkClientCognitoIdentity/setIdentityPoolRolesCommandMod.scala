@@ -27,7 +27,7 @@ object setIdentityPoolRolesCommandMod {
         ] {
     def this(input: SetIdentityPoolRolesCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -39,7 +39,7 @@ object setIdentityPoolRolesCommandMod {
       options: HttpHandlerOptions
     ): Handler[SetIdentityPoolRolesCommandInput, SetIdentityPoolRolesCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type SetIdentityPoolRolesCommandInput = SetIdentityPoolRolesInput

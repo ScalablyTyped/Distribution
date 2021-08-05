@@ -14,23 +14,18 @@ trait IFilterOrderByItem extends StObject {
 }
 object IFilterOrderByItem {
   
-  @scala.inline
-  def apply(index: js.Any, `type`: String, value: js.Any): IFilterOrderByItem = {
+  inline def apply(index: js.Any, `type`: String, value: js.Any): IFilterOrderByItem = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFilterOrderByItem]
   }
   
-  @scala.inline
-  implicit class IFilterOrderByItemMutableBuilder[Self <: IFilterOrderByItem] (val x: Self) extends AnyVal {
+  extension [Self <: IFilterOrderByItem](x: Self) {
     
-    @scala.inline
-    def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

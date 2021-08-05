@@ -21,7 +21,7 @@ object clusteredBarPlotMod {
   class ClusteredBar[X, Y] () extends Bar[X, Y] {
     def this(orientation: BarOrientation) = this()
     
-    var _clusterOffsets: js.Any = js.native
+    /* private */ var _clusterOffsets: js.Any = js.native
     
     /* private */ def _makeInnerScale(): js.Any = js.native
     

@@ -21,20 +21,17 @@ object MemberAccessRights {
   @JSImport("mendixmodelsdk", "domainmodels.MemberAccessRights.None")
   @js.native
   def None: typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccessRights = js.native
-  @scala.inline
-  def None_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccessRights): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccessRights): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.MemberAccessRights.ReadOnly")
   @js.native
   def ReadOnly: typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccessRights = js.native
-  @scala.inline
-  def ReadOnly_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccessRights): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReadOnly")(x.asInstanceOf[js.Any])
+  inline def ReadOnly_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccessRights): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReadOnly")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "domainmodels.MemberAccessRights.ReadWrite")
   @js.native
   def ReadWrite: typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccessRights = js.native
-  @scala.inline
-  def ReadWrite_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccessRights): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReadWrite")(x.asInstanceOf[js.Any])
+  inline def ReadWrite_=(x: typings.mendixmodelsdk.domainmodelsMod.domainmodels.MemberAccessRights): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReadWrite")(x.asInstanceOf[js.Any])
 }

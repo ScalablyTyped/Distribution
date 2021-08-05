@@ -13,8 +13,7 @@ object dateTimeFormatFormatDateTimeRangeToPartsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def FormatDateTimeRangeToParts(
+  inline def FormatDateTimeRangeToParts(
     dtf: DateTimeFormat,
     x: Double,
     y: Double,

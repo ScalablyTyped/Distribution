@@ -22,20 +22,16 @@ object mirrorHorizontalSmallMod extends Shortcut {
   }
   object MirrorHorizontalSmallProps {
     
-    @scala.inline
-    def apply(): MirrorHorizontalSmallProps = {
+    inline def apply(): MirrorHorizontalSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MirrorHorizontalSmallProps]
     }
     
-    @scala.inline
-    implicit class MirrorHorizontalSmallPropsMutableBuilder[Self <: MirrorHorizontalSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: MirrorHorizontalSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

@@ -57,8 +57,7 @@ object servicesMod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backoffConfig: js.Any,
       documentsUri: String,
       insightsUri: String,
@@ -72,32 +71,23 @@ object servicesMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setBackoffConfig(value: js.Any): Self = StObject.set(x, "backoffConfig", value.asInstanceOf[js.Any])
+      inline def setBackoffConfig(value: js.Any): Self = StObject.set(x, "backoffConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentsUri(value: String): Self = StObject.set(x, "documentsUri", value.asInstanceOf[js.Any])
+      inline def setDocumentsUri(value: String): Self = StObject.set(x, "documentsUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsightsUri(value: String): Self = StObject.set(x, "insightsUri", value.asInstanceOf[js.Any])
+      inline def setInsightsUri(value: String): Self = StObject.set(x, "insightsUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListsUri(value: String): Self = StObject.set(x, "listsUri", value.asInstanceOf[js.Any])
+      inline def setListsUri(value: String): Self = StObject.set(x, "listsUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapsUri(value: String): Self = StObject.set(x, "mapsUri", value.asInstanceOf[js.Any])
+      inline def setMapsUri(value: String): Self = StObject.set(x, "mapsUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionStorageEnabled(value: Boolean): Self = StObject.set(x, "sessionStorageEnabled", value.asInstanceOf[js.Any])
+      inline def setSessionStorageEnabled(value: Boolean): Self = StObject.set(x, "sessionStorageEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamsUri(value: String): Self = StObject.set(x, "streamsUri", value.asInstanceOf[js.Any])
+      inline def setStreamsUri(value: String): Self = StObject.set(x, "streamsUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionsUri(value: String): Self = StObject.set(x, "subscriptionsUri", value.asInstanceOf[js.Any])
+      inline def setSubscriptionsUri(value: String): Self = StObject.set(x, "subscriptionsUri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,20 +114,16 @@ object servicesMod {
   }
   object Notifications {
     
-    @scala.inline
-    def apply(connectionState: js.Any, updateToken: String => js.Promise[Notifications]): Notifications = {
+    inline def apply(connectionState: js.Any, updateToken: String => js.Promise[Notifications]): Notifications = {
       val __obj = js.Dynamic.literal(connectionState = connectionState.asInstanceOf[js.Any], updateToken = js.Any.fromFunction1(updateToken))
       __obj.asInstanceOf[Notifications]
     }
     
-    @scala.inline
-    implicit class NotificationsMutableBuilder[Self <: Notifications] (val x: Self) extends AnyVal {
+    extension [Self <: Notifications](x: Self) {
       
-      @scala.inline
-      def setConnectionState(value: js.Any): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
+      inline def setConnectionState(value: js.Any): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateToken(value: String => js.Promise[Notifications]): Self = StObject.set(x, "updateToken", js.Any.fromFunction1(value))
+      inline def setUpdateToken(value: String => js.Promise[Notifications]): Self = StObject.set(x, "updateToken", js.Any.fromFunction1(value))
     }
   }
   
@@ -159,8 +145,7 @@ object servicesMod {
   }
   object Services {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: Configuration,
       network: Network,
       notifications: Notifications,
@@ -173,29 +158,21 @@ object servicesMod {
       __obj.asInstanceOf[Services]
     }
     
-    @scala.inline
-    implicit class ServicesMutableBuilder[Self <: Services] (val x: Self) extends AnyVal {
+    extension [Self <: Services](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Configuration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Configuration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifications(value: Notifications): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Notifications): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouter(value: typings.twilioSync.routerMod.Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: typings.twilioSync.routerMod.Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorage(value: Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptions(value: Subscriptions): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+      inline def setSubscriptions(value: Subscriptions): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwilsock(value: typings.twilsock.mod.Twilsock): Self = StObject.set(x, "twilsock", value.asInstanceOf[js.Any])
+      inline def setTwilsock(value: typings.twilsock.mod.Twilsock): Self = StObject.set(x, "twilsock", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,8 +190,7 @@ object servicesMod {
   }
   object Storage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       read: (String, String) => js.Object,
       remove: (String, String, String) => js.Any,
       store: (String, String, js.Object) => js.Any,
@@ -225,23 +201,17 @@ object servicesMod {
       __obj.asInstanceOf[Storage]
     }
     
-    @scala.inline
-    implicit class StorageMutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
+    extension [Self <: Storage](x: Self) {
       
-      @scala.inline
-      def setRead(value: (String, String) => js.Object): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+      inline def setRead(value: (String, String) => js.Object): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemove(value: (String, String, String) => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction3(value))
+      inline def setRemove(value: (String, String, String) => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStore(value: (String, String, js.Object) => js.Any): Self = StObject.set(x, "store", js.Any.fromFunction3(value))
+      inline def setStore(value: (String, String, js.Object) => js.Any): Self = StObject.set(x, "store", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpdate(value: (String, String, String, js.Object) => js.Any): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
+      inline def setUpdate(value: (String, String, String, js.Object) => js.Any): Self = StObject.set(x, "update", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setUpdateStorageId(value: String => js.Any): Self = StObject.set(x, "updateStorageId", js.Any.fromFunction1(value))
+      inline def setUpdateStorageId(value: String => js.Any): Self = StObject.set(x, "updateStorageId", js.Any.fromFunction1(value))
     }
   }
 }

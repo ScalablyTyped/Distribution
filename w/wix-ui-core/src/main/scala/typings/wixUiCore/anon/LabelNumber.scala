@@ -12,19 +12,15 @@ trait LabelNumber extends StObject {
 }
 object LabelNumber {
   
-  @scala.inline
-  def apply(label: Double, value: Double): LabelNumber = {
+  inline def apply(label: Double, value: Double): LabelNumber = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelNumber]
   }
   
-  @scala.inline
-  implicit class LabelNumberMutableBuilder[Self <: LabelNumber] (val x: Self) extends AnyVal {
+  extension [Self <: LabelNumber](x: Self) {
     
-    @scala.inline
-    def setLabel(value: Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

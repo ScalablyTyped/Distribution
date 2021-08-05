@@ -15,11 +15,9 @@ object utilsConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getMode(): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getMode")().asInstanceOf[Mode]
+  inline def getMode(): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getMode")().asInstanceOf[Mode]
   
-  @scala.inline
-  def setupConfig(config: IonicConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setupConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def setupConfig(config: IonicConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setupConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait IonicConfig extends StObject {
     
@@ -232,299 +230,202 @@ object utilsConfigMod {
   }
   object IonicConfig {
     
-    @scala.inline
-    def apply(): IonicConfig = {
+    inline def apply(): IonicConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IonicConfig]
     }
     
-    @scala.inline
-    implicit class IonicConfigMutableBuilder[Self <: IonicConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IonicConfig](x: Self) {
       
-      @scala.inline
-      def setActionSheetEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "actionSheetEnter", js.Any.fromFunction2(value))
+      inline def setActionSheetEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "actionSheetEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setActionSheetEnterUndefined: Self = StObject.set(x, "actionSheetEnter", js.undefined)
+      inline def setActionSheetEnterUndefined: Self = StObject.set(x, "actionSheetEnter", js.undefined)
       
-      @scala.inline
-      def setActionSheetLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "actionSheetLeave", js.Any.fromFunction2(value))
+      inline def setActionSheetLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "actionSheetLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setActionSheetLeaveUndefined: Self = StObject.set(x, "actionSheetLeave", js.undefined)
+      inline def setActionSheetLeaveUndefined: Self = StObject.set(x, "actionSheetLeave", js.undefined)
       
-      @scala.inline
-      def setAlertEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "alertEnter", js.Any.fromFunction2(value))
+      inline def setAlertEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "alertEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAlertEnterUndefined: Self = StObject.set(x, "alertEnter", js.undefined)
+      inline def setAlertEnterUndefined: Self = StObject.set(x, "alertEnter", js.undefined)
       
-      @scala.inline
-      def setAlertLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "alertLeave", js.Any.fromFunction2(value))
+      inline def setAlertLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "alertLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAlertLeaveUndefined: Self = StObject.set(x, "alertLeave", js.undefined)
+      inline def setAlertLeaveUndefined: Self = StObject.set(x, "alertLeave", js.undefined)
       
-      @scala.inline
-      def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      @scala.inline
-      def setBackButtonDefaultHref(value: String): Self = StObject.set(x, "backButtonDefaultHref", value.asInstanceOf[js.Any])
+      inline def setBackButtonDefaultHref(value: String): Self = StObject.set(x, "backButtonDefaultHref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackButtonDefaultHrefUndefined: Self = StObject.set(x, "backButtonDefaultHref", js.undefined)
+      inline def setBackButtonDefaultHrefUndefined: Self = StObject.set(x, "backButtonDefaultHref", js.undefined)
       
-      @scala.inline
-      def setBackButtonIcon(value: String): Self = StObject.set(x, "backButtonIcon", value.asInstanceOf[js.Any])
+      inline def setBackButtonIcon(value: String): Self = StObject.set(x, "backButtonIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackButtonIconUndefined: Self = StObject.set(x, "backButtonIcon", js.undefined)
+      inline def setBackButtonIconUndefined: Self = StObject.set(x, "backButtonIcon", js.undefined)
       
-      @scala.inline
-      def setBackButtonText(value: String): Self = StObject.set(x, "backButtonText", value.asInstanceOf[js.Any])
+      inline def setBackButtonText(value: String): Self = StObject.set(x, "backButtonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackButtonTextUndefined: Self = StObject.set(x, "backButtonText", js.undefined)
+      inline def setBackButtonTextUndefined: Self = StObject.set(x, "backButtonText", js.undefined)
       
-      @scala.inline
-      def setExperimentalTransitionShadow(value: Boolean): Self = StObject.set(x, "experimentalTransitionShadow", value.asInstanceOf[js.Any])
+      inline def setExperimentalTransitionShadow(value: Boolean): Self = StObject.set(x, "experimentalTransitionShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperimentalTransitionShadowUndefined: Self = StObject.set(x, "experimentalTransitionShadow", js.undefined)
+      inline def setExperimentalTransitionShadowUndefined: Self = StObject.set(x, "experimentalTransitionShadow", js.undefined)
       
-      @scala.inline
-      def setHardwareBackButton(value: Boolean): Self = StObject.set(x, "hardwareBackButton", value.asInstanceOf[js.Any])
+      inline def setHardwareBackButton(value: Boolean): Self = StObject.set(x, "hardwareBackButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHardwareBackButtonUndefined: Self = StObject.set(x, "hardwareBackButton", js.undefined)
+      inline def setHardwareBackButtonUndefined: Self = StObject.set(x, "hardwareBackButton", js.undefined)
       
-      @scala.inline
-      def setHideCaretOnScroll(value: Boolean): Self = StObject.set(x, "hideCaretOnScroll", value.asInstanceOf[js.Any])
+      inline def setHideCaretOnScroll(value: Boolean): Self = StObject.set(x, "hideCaretOnScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideCaretOnScrollUndefined: Self = StObject.set(x, "hideCaretOnScroll", js.undefined)
+      inline def setHideCaretOnScrollUndefined: Self = StObject.set(x, "hideCaretOnScroll", js.undefined)
       
-      @scala.inline
-      def setInfiniteLoadingSpinner(value: SpinnerTypes): Self = StObject.set(x, "infiniteLoadingSpinner", value.asInstanceOf[js.Any])
+      inline def setInfiniteLoadingSpinner(value: SpinnerTypes): Self = StObject.set(x, "infiniteLoadingSpinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfiniteLoadingSpinnerNull: Self = StObject.set(x, "infiniteLoadingSpinner", null)
+      inline def setInfiniteLoadingSpinnerNull: Self = StObject.set(x, "infiniteLoadingSpinner", null)
       
-      @scala.inline
-      def setInfiniteLoadingSpinnerUndefined: Self = StObject.set(x, "infiniteLoadingSpinner", js.undefined)
+      inline def setInfiniteLoadingSpinnerUndefined: Self = StObject.set(x, "infiniteLoadingSpinner", js.undefined)
       
-      @scala.inline
-      def setInputBlurring(value: Boolean): Self = StObject.set(x, "inputBlurring", value.asInstanceOf[js.Any])
+      inline def setInputBlurring(value: Boolean): Self = StObject.set(x, "inputBlurring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputBlurringUndefined: Self = StObject.set(x, "inputBlurring", js.undefined)
+      inline def setInputBlurringUndefined: Self = StObject.set(x, "inputBlurring", js.undefined)
       
-      @scala.inline
-      def setInputShims(value: Boolean): Self = StObject.set(x, "inputShims", value.asInstanceOf[js.Any])
+      inline def setInputShims(value: Boolean): Self = StObject.set(x, "inputShims", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputShimsUndefined: Self = StObject.set(x, "inputShims", js.undefined)
+      inline def setInputShimsUndefined: Self = StObject.set(x, "inputShims", js.undefined)
       
-      @scala.inline
-      def setKeyboardHeight(value: Double): Self = StObject.set(x, "keyboardHeight", value.asInstanceOf[js.Any])
+      inline def setKeyboardHeight(value: Double): Self = StObject.set(x, "keyboardHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardHeightUndefined: Self = StObject.set(x, "keyboardHeight", js.undefined)
+      inline def setKeyboardHeightUndefined: Self = StObject.set(x, "keyboardHeight", js.undefined)
       
-      @scala.inline
-      def setLoadingEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "loadingEnter", js.Any.fromFunction2(value))
+      inline def setLoadingEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "loadingEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadingEnterUndefined: Self = StObject.set(x, "loadingEnter", js.undefined)
+      inline def setLoadingEnterUndefined: Self = StObject.set(x, "loadingEnter", js.undefined)
       
-      @scala.inline
-      def setLoadingLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "loadingLeave", js.Any.fromFunction2(value))
+      inline def setLoadingLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "loadingLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLoadingLeaveUndefined: Self = StObject.set(x, "loadingLeave", js.undefined)
+      inline def setLoadingLeaveUndefined: Self = StObject.set(x, "loadingLeave", js.undefined)
       
-      @scala.inline
-      def setLoadingSpinner(value: SpinnerTypes): Self = StObject.set(x, "loadingSpinner", value.asInstanceOf[js.Any])
+      inline def setLoadingSpinner(value: SpinnerTypes): Self = StObject.set(x, "loadingSpinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingSpinnerNull: Self = StObject.set(x, "loadingSpinner", null)
+      inline def setLoadingSpinnerNull: Self = StObject.set(x, "loadingSpinner", null)
       
-      @scala.inline
-      def setLoadingSpinnerUndefined: Self = StObject.set(x, "loadingSpinner", js.undefined)
+      inline def setLoadingSpinnerUndefined: Self = StObject.set(x, "loadingSpinner", js.undefined)
       
-      @scala.inline
-      def setMenuIcon(value: String): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
+      inline def setMenuIcon(value: String): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuIconUndefined: Self = StObject.set(x, "menuIcon", js.undefined)
+      inline def setMenuIconUndefined: Self = StObject.set(x, "menuIcon", js.undefined)
       
-      @scala.inline
-      def setMenuType(value: String): Self = StObject.set(x, "menuType", value.asInstanceOf[js.Any])
+      inline def setMenuType(value: String): Self = StObject.set(x, "menuType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuTypeUndefined: Self = StObject.set(x, "menuType", js.undefined)
+      inline def setMenuTypeUndefined: Self = StObject.set(x, "menuType", js.undefined)
       
-      @scala.inline
-      def setModalEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "modalEnter", js.Any.fromFunction2(value))
+      inline def setModalEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "modalEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModalEnterUndefined: Self = StObject.set(x, "modalEnter", js.undefined)
+      inline def setModalEnterUndefined: Self = StObject.set(x, "modalEnter", js.undefined)
       
-      @scala.inline
-      def setModalLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "modalLeave", js.Any.fromFunction2(value))
+      inline def setModalLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "modalLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModalLeaveUndefined: Self = StObject.set(x, "modalLeave", js.undefined)
+      inline def setModalLeaveUndefined: Self = StObject.set(x, "modalLeave", js.undefined)
       
-      @scala.inline
-      def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setNavAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "navAnimation", js.Any.fromFunction2(value))
+      inline def setNavAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "navAnimation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNavAnimationUndefined: Self = StObject.set(x, "navAnimation", js.undefined)
+      inline def setNavAnimationUndefined: Self = StObject.set(x, "navAnimation", js.undefined)
       
-      @scala.inline
-      def setPersistConfig(value: Boolean): Self = StObject.set(x, "persistConfig", value.asInstanceOf[js.Any])
+      inline def setPersistConfig(value: Boolean): Self = StObject.set(x, "persistConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistConfigUndefined: Self = StObject.set(x, "persistConfig", js.undefined)
+      inline def setPersistConfigUndefined: Self = StObject.set(x, "persistConfig", js.undefined)
       
-      @scala.inline
-      def setPickerEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "pickerEnter", js.Any.fromFunction2(value))
+      inline def setPickerEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "pickerEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPickerEnterUndefined: Self = StObject.set(x, "pickerEnter", js.undefined)
+      inline def setPickerEnterUndefined: Self = StObject.set(x, "pickerEnter", js.undefined)
       
-      @scala.inline
-      def setPickerLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "pickerLeave", js.Any.fromFunction2(value))
+      inline def setPickerLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "pickerLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPickerLeaveUndefined: Self = StObject.set(x, "pickerLeave", js.undefined)
+      inline def setPickerLeaveUndefined: Self = StObject.set(x, "pickerLeave", js.undefined)
       
-      @scala.inline
-      def setPopoverEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "popoverEnter", js.Any.fromFunction2(value))
+      inline def setPopoverEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "popoverEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPopoverEnterUndefined: Self = StObject.set(x, "popoverEnter", js.undefined)
+      inline def setPopoverEnterUndefined: Self = StObject.set(x, "popoverEnter", js.undefined)
       
-      @scala.inline
-      def setPopoverLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "popoverLeave", js.Any.fromFunction2(value))
+      inline def setPopoverLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "popoverLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPopoverLeaveUndefined: Self = StObject.set(x, "popoverLeave", js.undefined)
+      inline def setPopoverLeaveUndefined: Self = StObject.set(x, "popoverLeave", js.undefined)
       
-      @scala.inline
-      def setRefreshingIcon(value: String): Self = StObject.set(x, "refreshingIcon", value.asInstanceOf[js.Any])
+      inline def setRefreshingIcon(value: String): Self = StObject.set(x, "refreshingIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshingIconUndefined: Self = StObject.set(x, "refreshingIcon", js.undefined)
+      inline def setRefreshingIconUndefined: Self = StObject.set(x, "refreshingIcon", js.undefined)
       
-      @scala.inline
-      def setRefreshingSpinner(value: SpinnerTypes): Self = StObject.set(x, "refreshingSpinner", value.asInstanceOf[js.Any])
+      inline def setRefreshingSpinner(value: SpinnerTypes): Self = StObject.set(x, "refreshingSpinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshingSpinnerNull: Self = StObject.set(x, "refreshingSpinner", null)
+      inline def setRefreshingSpinnerNull: Self = StObject.set(x, "refreshingSpinner", null)
       
-      @scala.inline
-      def setRefreshingSpinnerUndefined: Self = StObject.set(x, "refreshingSpinner", js.undefined)
+      inline def setRefreshingSpinnerUndefined: Self = StObject.set(x, "refreshingSpinner", js.undefined)
       
-      @scala.inline
-      def setRippleEffect(value: Boolean): Self = StObject.set(x, "rippleEffect", value.asInstanceOf[js.Any])
+      inline def setRippleEffect(value: Boolean): Self = StObject.set(x, "rippleEffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRippleEffectUndefined: Self = StObject.set(x, "rippleEffect", js.undefined)
+      inline def setRippleEffectUndefined: Self = StObject.set(x, "rippleEffect", js.undefined)
       
-      @scala.inline
-      def setSanitizerEnabled(value: Boolean): Self = StObject.set(x, "sanitizerEnabled", value.asInstanceOf[js.Any])
+      inline def setSanitizerEnabled(value: Boolean): Self = StObject.set(x, "sanitizerEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSanitizerEnabledUndefined: Self = StObject.set(x, "sanitizerEnabled", js.undefined)
+      inline def setSanitizerEnabledUndefined: Self = StObject.set(x, "sanitizerEnabled", js.undefined)
       
-      @scala.inline
-      def setScrollAssist(value: Boolean): Self = StObject.set(x, "scrollAssist", value.asInstanceOf[js.Any])
+      inline def setScrollAssist(value: Boolean): Self = StObject.set(x, "scrollAssist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollAssistUndefined: Self = StObject.set(x, "scrollAssist", js.undefined)
+      inline def setScrollAssistUndefined: Self = StObject.set(x, "scrollAssist", js.undefined)
       
-      @scala.inline
-      def setScrollPadding(value: Boolean): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
+      inline def setScrollPadding(value: Boolean): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPaddingUndefined: Self = StObject.set(x, "scrollPadding", js.undefined)
+      inline def setScrollPaddingUndefined: Self = StObject.set(x, "scrollPadding", js.undefined)
       
-      @scala.inline
-      def setSpinner(value: SpinnerTypes): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
+      inline def setSpinner(value: SpinnerTypes): Self = StObject.set(x, "spinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnerUndefined: Self = StObject.set(x, "spinner", js.undefined)
+      inline def setSpinnerUndefined: Self = StObject.set(x, "spinner", js.undefined)
       
-      @scala.inline
-      def setStatusTap(value: Boolean): Self = StObject.set(x, "statusTap", value.asInstanceOf[js.Any])
+      inline def setStatusTap(value: Boolean): Self = StObject.set(x, "statusTap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusTapUndefined: Self = StObject.set(x, "statusTap", js.undefined)
+      inline def setStatusTapUndefined: Self = StObject.set(x, "statusTap", js.undefined)
       
-      @scala.inline
-      def setSwipeBackEnabled(value: Boolean): Self = StObject.set(x, "swipeBackEnabled", value.asInstanceOf[js.Any])
+      inline def setSwipeBackEnabled(value: Boolean): Self = StObject.set(x, "swipeBackEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeBackEnabledUndefined: Self = StObject.set(x, "swipeBackEnabled", js.undefined)
+      inline def setSwipeBackEnabledUndefined: Self = StObject.set(x, "swipeBackEnabled", js.undefined)
       
-      @scala.inline
-      def setTabButtonLayout(value: TabButtonLayout): Self = StObject.set(x, "tabButtonLayout", value.asInstanceOf[js.Any])
+      inline def setTabButtonLayout(value: TabButtonLayout): Self = StObject.set(x, "tabButtonLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabButtonLayoutUndefined: Self = StObject.set(x, "tabButtonLayout", js.undefined)
+      inline def setTabButtonLayoutUndefined: Self = StObject.set(x, "tabButtonLayout", js.undefined)
       
-      @scala.inline
-      def setToastEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "toastEnter", js.Any.fromFunction2(value))
+      inline def setToastEnter(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "toastEnter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToastEnterUndefined: Self = StObject.set(x, "toastEnter", js.undefined)
+      inline def setToastEnterUndefined: Self = StObject.set(x, "toastEnter", js.undefined)
       
-      @scala.inline
-      def setToastLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "toastLeave", js.Any.fromFunction2(value))
+      inline def setToastLeave(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "toastLeave", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToastLeaveUndefined: Self = StObject.set(x, "toastLeave", js.undefined)
+      inline def setToastLeaveUndefined: Self = StObject.set(x, "toastLeave", js.undefined)
       
-      @scala.inline
-      def set_ael(value: (/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any) => js.Any): Self = StObject.set(x, "_ael", js.Any.fromFunction4(value))
+      inline def set_ael(value: (/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any) => js.Any): Self = StObject.set(x, "_ael", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def set_aelUndefined: Self = StObject.set(x, "_ael", js.undefined)
+      inline def set_aelUndefined: Self = StObject.set(x, "_ael", js.undefined)
       
-      @scala.inline
-      def set_forceStatusbarPadding(value: Boolean): Self = StObject.set(x, "_forceStatusbarPadding", value.asInstanceOf[js.Any])
+      inline def set_forceStatusbarPadding(value: Boolean): Self = StObject.set(x, "_forceStatusbarPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_forceStatusbarPaddingUndefined: Self = StObject.set(x, "_forceStatusbarPadding", js.undefined)
+      inline def set_forceStatusbarPaddingUndefined: Self = StObject.set(x, "_forceStatusbarPadding", js.undefined)
       
-      @scala.inline
-      def set_rel(value: (/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any) => js.Any): Self = StObject.set(x, "_rel", js.Any.fromFunction4(value))
+      inline def set_rel(value: (/* el */ js.Any, /* name */ String, /* cb */ js.Any, /* opts */ js.Any) => js.Any): Self = StObject.set(x, "_rel", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def set_relUndefined: Self = StObject.set(x, "_rel", js.undefined)
+      inline def set_relUndefined: Self = StObject.set(x, "_rel", js.undefined)
       
-      @scala.inline
-      def set_testing(value: Boolean): Self = StObject.set(x, "_testing", value.asInstanceOf[js.Any])
+      inline def set_testing(value: Boolean): Self = StObject.set(x, "_testing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_testingUndefined: Self = StObject.set(x, "_testing", js.undefined)
+      inline def set_testingUndefined: Self = StObject.set(x, "_testing", js.undefined)
       
-      @scala.inline
-      def set_zoneGate(value: /* h */ js.Function0[js.Any] => js.Any): Self = StObject.set(x, "_zoneGate", js.Any.fromFunction1(value))
+      inline def set_zoneGate(value: /* h */ js.Function0[js.Any] => js.Any): Self = StObject.set(x, "_zoneGate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_zoneGateUndefined: Self = StObject.set(x, "_zoneGate", js.undefined)
+      inline def set_zoneGateUndefined: Self = StObject.set(x, "_zoneGate", js.undefined)
     }
   }
 }

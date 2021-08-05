@@ -23,34 +23,25 @@ trait DeviceStatusInfo extends StObject {
 }
 object DeviceStatusInfo {
   
-  @scala.inline
-  def apply(): DeviceStatusInfo = {
+  inline def apply(): DeviceStatusInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceStatusInfo]
   }
   
-  @scala.inline
-  implicit class DeviceStatusInfoMutableBuilder[Self <: DeviceStatusInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceStatusInfo](x: Self) {
     
-    @scala.inline
-    def setConnectionStatus(value: ConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
+    inline def setConnectionStatus(value: ConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
+    inline def setConnectionStatusUndefined: Self = StObject.set(x, "ConnectionStatus", js.undefined)
     
-    @scala.inline
-    def setConnectionStatusUpdatedTime(value: ConnectionStatusUpdatedTime): Self = StObject.set(x, "ConnectionStatusUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setConnectionStatusUpdatedTime(value: ConnectionStatusUpdatedTime): Self = StObject.set(x, "ConnectionStatusUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionStatusUpdatedTimeUndefined: Self = StObject.set(x, "ConnectionStatusUpdatedTime", js.undefined)
+    inline def setConnectionStatusUpdatedTimeUndefined: Self = StObject.set(x, "ConnectionStatusUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setDeviceStatusDetails(value: DeviceStatusDetails): Self = StObject.set(x, "DeviceStatusDetails", value.asInstanceOf[js.Any])
+    inline def setDeviceStatusDetails(value: DeviceStatusDetails): Self = StObject.set(x, "DeviceStatusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceStatusDetailsUndefined: Self = StObject.set(x, "DeviceStatusDetails", js.undefined)
+    inline def setDeviceStatusDetailsUndefined: Self = StObject.set(x, "DeviceStatusDetails", js.undefined)
     
-    @scala.inline
-    def setDeviceStatusDetailsVarargs(value: DeviceStatusDetail*): Self = StObject.set(x, "DeviceStatusDetails", js.Array(value :_*))
+    inline def setDeviceStatusDetailsVarargs(value: DeviceStatusDetail*): Self = StObject.set(x, "DeviceStatusDetails", js.Array(value :_*))
   }
 }

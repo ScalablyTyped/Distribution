@@ -23,12 +23,10 @@ object SearchBar {
   @JSImport("antd-mobile", "SearchBar.contextTypes")
   @js.native
   def contextTypes: AntLocale = js.native
-  @scala.inline
-  def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile", "SearchBar.defaultProps")
   @js.native
   def defaultProps: OnBlur = js.native
-  @scala.inline
-  def defaultProps_=(x: OnBlur): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: OnBlur): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

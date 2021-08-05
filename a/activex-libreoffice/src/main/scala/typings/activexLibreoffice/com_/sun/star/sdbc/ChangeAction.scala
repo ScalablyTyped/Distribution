@@ -19,16 +19,12 @@ object ChangeAction {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DELETE: `3` = 3.asInstanceOf[`3`]
+    inline def DELETE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def INSERT: `1` = 1.asInstanceOf[`1`]
+    inline def INSERT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def UNDO: `4` = 4.asInstanceOf[`4`]
+    inline def UNDO: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def UPDATE: `2` = 2.asInstanceOf[`2`]
+    inline def UPDATE: `2` = 2.asInstanceOf[`2`]
   }
 }

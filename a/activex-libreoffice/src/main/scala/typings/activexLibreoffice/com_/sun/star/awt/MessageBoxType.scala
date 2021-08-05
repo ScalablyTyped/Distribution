@@ -24,22 +24,17 @@ trait MessageBoxType extends StObject
 object MessageBoxType {
   
   /** A message box to provide an error message to the user. */
-  @scala.inline
-  def ERRORBOX: `3` = 3.asInstanceOf[`3`]
+  inline def ERRORBOX: `3` = 3.asInstanceOf[`3`]
   
   /** A message box to inform the user about a certain event */
-  @scala.inline
-  def INFOBOX: `1` = 1.asInstanceOf[`1`]
+  inline def INFOBOX: `1` = 1.asInstanceOf[`1`]
   
   /** A normal message box. */
-  @scala.inline
-  def MESSAGEBOX: `0` = 0.asInstanceOf[`0`]
+  inline def MESSAGEBOX: `0` = 0.asInstanceOf[`0`]
   
   /** A message box to query information from the user. */
-  @scala.inline
-  def QUERYBOX: `4` = 4.asInstanceOf[`4`]
+  inline def QUERYBOX: `4` = 4.asInstanceOf[`4`]
   
   /** A message to warn the user about a certain problem. */
-  @scala.inline
-  def WARNINGBOX: `2` = 2.asInstanceOf[`2`]
+  inline def WARNINGBOX: `2` = 2.asInstanceOf[`2`]
 }

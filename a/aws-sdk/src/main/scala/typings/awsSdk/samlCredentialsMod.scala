@@ -51,35 +51,26 @@ object samlCredentialsMod {
   }
   object SAMLCredentialsParams {
     
-    @scala.inline
-    def apply(PrincipalArn: String, RoleArn: String, SAMLAssertion: String): SAMLCredentialsParams = {
+    inline def apply(PrincipalArn: String, RoleArn: String, SAMLAssertion: String): SAMLCredentialsParams = {
       val __obj = js.Dynamic.literal(PrincipalArn = PrincipalArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any], SAMLAssertion = SAMLAssertion.asInstanceOf[js.Any])
       __obj.asInstanceOf[SAMLCredentialsParams]
     }
     
-    @scala.inline
-    implicit class SAMLCredentialsParamsMutableBuilder[Self <: SAMLCredentialsParams] (val x: Self) extends AnyVal {
+    extension [Self <: SAMLCredentialsParams](x: Self) {
       
-      @scala.inline
-      def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
+      inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
+      inline def setDurationSecondsUndefined: Self = StObject.set(x, "DurationSeconds", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
       
-      @scala.inline
-      def setPrincipalArn(value: String): Self = StObject.set(x, "PrincipalArn", value.asInstanceOf[js.Any])
+      inline def setPrincipalArn(value: String): Self = StObject.set(x, "PrincipalArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSAMLAssertion(value: String): Self = StObject.set(x, "SAMLAssertion", value.asInstanceOf[js.Any])
+      inline def setSAMLAssertion(value: String): Self = StObject.set(x, "SAMLAssertion", value.asInstanceOf[js.Any])
     }
   }
 }

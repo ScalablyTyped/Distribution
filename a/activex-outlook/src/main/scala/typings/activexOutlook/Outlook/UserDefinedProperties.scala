@@ -22,7 +22,7 @@ trait UserDefinedProperties extends StObject {
   
   def Item(Index: js.Any): UserDefinedProperty = js.native
   
-  @JSName("Outlook.UserDefinedProperties_typekey")
+  /* private */ @JSName("Outlook.UserDefinedProperties_typekey")
   var OutlookDotUserDefinedProperties_typekey: UserDefinedProperties = js.native
   
   val Parent: js.Any = js.native

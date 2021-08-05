@@ -19,19 +19,15 @@ trait DateRange extends StObject {
 }
 object DateRange {
   
-  @scala.inline
-  def apply(end: Date, start: Date): DateRange = {
+  inline def apply(end: Date, start: Date): DateRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateRange]
   }
   
-  @scala.inline
-  implicit class DateRangeMutableBuilder[Self <: DateRange] (val x: Self) extends AnyVal {
+  extension [Self <: DateRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

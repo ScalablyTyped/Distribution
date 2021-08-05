@@ -20,8 +20,7 @@ trait SuiteUpdateModel extends StObject {
 }
 object SuiteUpdateModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultConfigurations: js.Array[ShallowReference],
     defaultTesters: js.Array[ShallowReference],
     inheritDefaultConfigurations: Boolean,
@@ -33,31 +32,22 @@ object SuiteUpdateModel {
     __obj.asInstanceOf[SuiteUpdateModel]
   }
   
-  @scala.inline
-  implicit class SuiteUpdateModelMutableBuilder[Self <: SuiteUpdateModel] (val x: Self) extends AnyVal {
+  extension [Self <: SuiteUpdateModel](x: Self) {
     
-    @scala.inline
-    def setDefaultConfigurations(value: js.Array[ShallowReference]): Self = StObject.set(x, "defaultConfigurations", value.asInstanceOf[js.Any])
+    inline def setDefaultConfigurations(value: js.Array[ShallowReference]): Self = StObject.set(x, "defaultConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultConfigurationsVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultConfigurations", js.Array(value :_*))
+    inline def setDefaultConfigurationsVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultTesters(value: js.Array[ShallowReference]): Self = StObject.set(x, "defaultTesters", value.asInstanceOf[js.Any])
+    inline def setDefaultTesters(value: js.Array[ShallowReference]): Self = StObject.set(x, "defaultTesters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTestersVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultTesters", js.Array(value :_*))
+    inline def setDefaultTestersVarargs(value: ShallowReference*): Self = StObject.set(x, "defaultTesters", js.Array(value :_*))
     
-    @scala.inline
-    def setInheritDefaultConfigurations(value: Boolean): Self = StObject.set(x, "inheritDefaultConfigurations", value.asInstanceOf[js.Any])
+    inline def setInheritDefaultConfigurations(value: Boolean): Self = StObject.set(x, "inheritDefaultConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: ShallowReference): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ShallowReference): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
   }
 }

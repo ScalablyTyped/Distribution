@@ -10,16 +10,13 @@ trait Document extends StObject {
 }
 object Document {
   
-  @scala.inline
-  def apply(timeline: AnimationTimeline): Document = {
+  inline def apply(timeline: AnimationTimeline): Document = {
     val __obj = js.Dynamic.literal(timeline = timeline.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
   
-  @scala.inline
-  implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+  extension [Self <: Document](x: Self) {
     
-    @scala.inline
-    def setTimeline(value: AnimationTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: AnimationTimeline): Self = StObject.set(x, "timeline", value.asInstanceOf[js.Any])
   }
 }

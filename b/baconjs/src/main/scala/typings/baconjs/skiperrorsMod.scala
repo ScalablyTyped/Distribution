@@ -10,6 +10,5 @@ object skiperrorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](src: typings.baconjs.observableMod.default[V]): typings.baconjs.observableMod.default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[V]]
+  inline def default[V](src: typings.baconjs.observableMod.default[V]): typings.baconjs.observableMod.default[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[V]]
 }

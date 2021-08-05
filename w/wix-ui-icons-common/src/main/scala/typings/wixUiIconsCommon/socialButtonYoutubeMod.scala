@@ -22,20 +22,16 @@ object socialButtonYoutubeMod extends Shortcut {
   }
   object SocialButtonYoutubeProps {
     
-    @scala.inline
-    def apply(): SocialButtonYoutubeProps = {
+    inline def apply(): SocialButtonYoutubeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocialButtonYoutubeProps]
     }
     
-    @scala.inline
-    implicit class SocialButtonYoutubePropsMutableBuilder[Self <: SocialButtonYoutubeProps] (val x: Self) extends AnyVal {
+    extension [Self <: SocialButtonYoutubeProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

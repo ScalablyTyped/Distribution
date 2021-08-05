@@ -12,16 +12,13 @@ trait OptionsForExternalUrlAsValidationTarget
 }
 object OptionsForExternalUrlAsValidationTarget {
   
-  @scala.inline
-  def apply(url: String): OptionsForExternalUrlAsValidationTarget = {
+  inline def apply(url: String): OptionsForExternalUrlAsValidationTarget = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsForExternalUrlAsValidationTarget]
   }
   
-  @scala.inline
-  implicit class OptionsForExternalUrlAsValidationTargetMutableBuilder[Self <: OptionsForExternalUrlAsValidationTarget] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsForExternalUrlAsValidationTarget](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait ReposCompareCommitsEndpoint extends StObject {
 }
 object ReposCompareCommitsEndpoint {
   
-  @scala.inline
-  def apply(base: String, head: String, owner: String, repo: String): ReposCompareCommitsEndpoint = {
+  inline def apply(base: String, head: String, owner: String, repo: String): ReposCompareCommitsEndpoint = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCompareCommitsEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposCompareCommitsEndpointMutableBuilder[Self <: ReposCompareCommitsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCompareCommitsEndpoint](x: Self) {
     
-    @scala.inline
-    def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+    inline def setHead(value: String): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

@@ -15,31 +15,23 @@ trait HalfExtents extends StObject {
 }
 object HalfExtents {
   
-  @scala.inline
-  def apply(): HalfExtents = {
+  inline def apply(): HalfExtents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HalfExtents]
   }
   
-  @scala.inline
-  implicit class HalfExtentsMutableBuilder[Self <: HalfExtents] (val x: Self) extends AnyVal {
+  extension [Self <: HalfExtents](x: Self) {
     
-    @scala.inline
-    def setHalfExtents(value: Vec2): Self = StObject.set(x, "halfExtents", value.asInstanceOf[js.Any])
+    inline def setHalfExtents(value: Vec2): Self = StObject.set(x, "halfExtents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHalfExtentsUndefined: Self = StObject.set(x, "halfExtents", js.undefined)
+    inline def setHalfExtentsUndefined: Self = StObject.set(x, "halfExtents", js.undefined)
     
-    @scala.inline
-    def setLengthSegments(value: Double): Self = StObject.set(x, "lengthSegments", value.asInstanceOf[js.Any])
+    inline def setLengthSegments(value: Double): Self = StObject.set(x, "lengthSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthSegmentsUndefined: Self = StObject.set(x, "lengthSegments", js.undefined)
+    inline def setLengthSegmentsUndefined: Self = StObject.set(x, "lengthSegments", js.undefined)
     
-    @scala.inline
-    def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
+    inline def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthSegmentsUndefined: Self = StObject.set(x, "widthSegments", js.undefined)
+    inline def setWidthSegmentsUndefined: Self = StObject.set(x, "widthSegments", js.undefined)
   }
 }

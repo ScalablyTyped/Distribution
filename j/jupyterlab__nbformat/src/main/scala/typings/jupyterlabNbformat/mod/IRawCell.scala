@@ -30,25 +30,19 @@ trait IRawCell
 }
 object IRawCell {
   
-  @scala.inline
-  def apply(metadata: PartialIRawCellMetadata, source: MultilineString): IRawCell = {
+  inline def apply(metadata: PartialIRawCellMetadata, source: MultilineString): IRawCell = {
     val __obj = js.Dynamic.literal(cell_type = "raw", metadata = metadata.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRawCell]
   }
   
-  @scala.inline
-  implicit class IRawCellMutableBuilder[Self <: IRawCell] (val x: Self) extends AnyVal {
+  extension [Self <: IRawCell](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: IAttachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: IAttachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
     
-    @scala.inline
-    def setCell_type(value: raw): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
+    inline def setCell_type(value: raw): Self = StObject.set(x, "cell_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: PartialIRawCellMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: PartialIRawCellMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }
 }

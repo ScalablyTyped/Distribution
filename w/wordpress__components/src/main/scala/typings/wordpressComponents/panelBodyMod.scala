@@ -68,56 +68,40 @@ object panelBodyMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setIcon(value: IconType[js.Object]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: IconType[js.Object]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setInitialOpen(value: Boolean): Self = StObject.set(x, "initialOpen", value.asInstanceOf[js.Any])
+        inline def setInitialOpen(value: Boolean): Self = StObject.set(x, "initialOpen", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInitialOpenUndefined: Self = StObject.set(x, "initialOpen", js.undefined)
+        inline def setInitialOpenUndefined: Self = StObject.set(x, "initialOpen", js.undefined)
         
-        @scala.inline
-        def setOnToggle(value: () => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction0(value))
+        inline def setOnToggle(value: () => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
+        inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
         
-        @scala.inline
-        def setOpened(value: Boolean): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
+        inline def setOpened(value: Boolean): Self = StObject.set(x, "opened", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
+        inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
   }

@@ -15,17 +15,14 @@ object anon {
   }
   object DecodeOptionscompletetrue {
     
-    @scala.inline
-    def apply(complete: js.UndefOr[Boolean] & `true`): DecodeOptionscompletetrue = {
+    inline def apply(complete: js.UndefOr[Boolean] & `true`): DecodeOptionscompletetrue = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodeOptionscompletetrue]
     }
     
-    @scala.inline
-    implicit class DecodeOptionscompletetrueMutableBuilder[Self <: DecodeOptionscompletetrue] (val x: Self) extends AnyVal {
+    extension [Self <: DecodeOptionscompletetrue](x: Self) {
       
-      @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,44 +39,32 @@ object anon {
   }
   object DecryptOptionscompletetru {
     
-    @scala.inline
-    def apply(complete: js.UndefOr[Boolean] & `true`): DecryptOptionscompletetru = {
+    inline def apply(complete: js.UndefOr[Boolean] & `true`): DecryptOptionscompletetru = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecryptOptionscompletetru]
     }
     
-    @scala.inline
-    implicit class DecryptOptionscompletetruMutableBuilder[Self <: DecryptOptionscompletetru] (val x: Self) extends AnyVal {
+    extension [Self <: DecryptOptionscompletetru](x: Self) {
       
-      @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEncryptionAlgorithms(value: js.Array[String]): Self = StObject.set(x, "contentEncryptionAlgorithms", value.asInstanceOf[js.Any])
+      inline def setContentEncryptionAlgorithms(value: js.Array[String]): Self = StObject.set(x, "contentEncryptionAlgorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentEncryptionAlgorithmsUndefined: Self = StObject.set(x, "contentEncryptionAlgorithms", js.undefined)
+      inline def setContentEncryptionAlgorithmsUndefined: Self = StObject.set(x, "contentEncryptionAlgorithms", js.undefined)
       
-      @scala.inline
-      def setContentEncryptionAlgorithmsVarargs(value: String*): Self = StObject.set(x, "contentEncryptionAlgorithms", js.Array(value :_*))
+      inline def setContentEncryptionAlgorithmsVarargs(value: String*): Self = StObject.set(x, "contentEncryptionAlgorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
+      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
       
-      @scala.inline
-      def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
       
-      @scala.inline
-      def setKeyManagementAlgorithms(value: js.Array[String]): Self = StObject.set(x, "keyManagementAlgorithms", value.asInstanceOf[js.Any])
+      inline def setKeyManagementAlgorithms(value: js.Array[String]): Self = StObject.set(x, "keyManagementAlgorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyManagementAlgorithmsUndefined: Self = StObject.set(x, "keyManagementAlgorithms", js.undefined)
+      inline def setKeyManagementAlgorithmsUndefined: Self = StObject.set(x, "keyManagementAlgorithms", js.undefined)
       
-      @scala.inline
-      def setKeyManagementAlgorithmsVarargs(value: String*): Self = StObject.set(x, "keyManagementAlgorithms", js.Array(value :_*))
+      inline def setKeyManagementAlgorithmsVarargs(value: String*): Self = StObject.set(x, "keyManagementAlgorithms", js.Array(value :_*))
     }
   }
   
@@ -94,35 +79,26 @@ object anon {
   }
   object VerifyOptionscompletetrue {
     
-    @scala.inline
-    def apply(complete: js.UndefOr[Boolean] & `true`): VerifyOptionscompletetrue = {
+    inline def apply(complete: js.UndefOr[Boolean] & `true`): VerifyOptionscompletetrue = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptionscompletetrue]
     }
     
-    @scala.inline
-    implicit class VerifyOptionscompletetrueMutableBuilder[Self <: VerifyOptionscompletetrue] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptionscompletetrue](x: Self) {
       
-      @scala.inline
-      def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      @scala.inline
-      def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
+      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
       
-      @scala.inline
-      def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
     }
   }
   
@@ -159,107 +135,74 @@ object anon {
   }
   object VerifyOptionscompletetrueAlgorithms {
     
-    @scala.inline
-    def apply(complete: js.UndefOr[Boolean] & `true`): VerifyOptionscompletetrueAlgorithms = {
+    inline def apply(complete: js.UndefOr[Boolean] & `true`): VerifyOptionscompletetrueAlgorithms = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptionscompletetrueAlgorithms]
     }
     
-    @scala.inline
-    implicit class VerifyOptionscompletetrueAlgorithmsMutableBuilder[Self <: VerifyOptionscompletetrueAlgorithms] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptionscompletetrueAlgorithms](x: Self) {
       
-      @scala.inline
-      def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      @scala.inline
-      def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: String | js.Array[String]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
       
-      @scala.inline
-      def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
+      inline def setAudienceVarargs(value: String*): Self = StObject.set(x, "audience", js.Array(value :_*))
       
-      @scala.inline
-      def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
+      inline def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
+      inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
-      @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
+      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
       
-      @scala.inline
-      def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
+      inline def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
+      inline def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
       
-      @scala.inline
-      def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
+      inline def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
+      inline def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
       
-      @scala.inline
-      def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
+      inline def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
+      inline def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: String | js.Array[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: String | js.Array[String]): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
       
-      @scala.inline
-      def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
+      inline def setIssuerVarargs(value: String*): Self = StObject.set(x, "issuer", js.Array(value :_*))
       
-      @scala.inline
-      def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
+      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
+      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
       
-      @scala.inline
-      def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
+      inline def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
+      inline def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
       
-      @scala.inline
-      def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      @scala.inline
-      def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
+      inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
+      inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
     }
   }
   
@@ -300,8 +243,7 @@ object anon {
   }
   object VerifyOptionscompletetrueAudience {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String]),
       complete: js.UndefOr[Boolean] & `true`,
       issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
@@ -310,101 +252,69 @@ object anon {
       __obj.asInstanceOf[VerifyOptionscompletetrueAudience]
     }
     
-    @scala.inline
-    implicit class VerifyOptionscompletetrueAudienceMutableBuilder[Self <: VerifyOptionscompletetrueAudience] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptionscompletetrueAudience](x: Self) {
       
-      @scala.inline
-      def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      @scala.inline
-      def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
+      inline def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
+      inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
-      @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
+      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
       
-      @scala.inline
-      def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
+      inline def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
+      inline def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
       
-      @scala.inline
-      def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
+      inline def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
+      inline def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
       
-      @scala.inline
-      def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
+      inline def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
+      inline def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
+      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
+      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
       
-      @scala.inline
-      def setMaxAuthAge(value: String): Self = StObject.set(x, "maxAuthAge", value.asInstanceOf[js.Any])
+      inline def setMaxAuthAge(value: String): Self = StObject.set(x, "maxAuthAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAuthAgeUndefined: Self = StObject.set(x, "maxAuthAge", js.undefined)
+      inline def setMaxAuthAgeUndefined: Self = StObject.set(x, "maxAuthAge", js.undefined)
       
-      @scala.inline
-      def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
+      inline def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
+      inline def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      @scala.inline
-      def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
+      inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
+      inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
     }
   }
   
@@ -441,8 +351,7 @@ object anon {
   }
   object VerifyOptionscompletetrueClockTolerance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String]),
       complete: js.UndefOr[Boolean] & `true`,
       issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
@@ -451,89 +360,61 @@ object anon {
       __obj.asInstanceOf[VerifyOptionscompletetrueClockTolerance]
     }
     
-    @scala.inline
-    implicit class VerifyOptionscompletetrueClockToleranceMutableBuilder[Self <: VerifyOptionscompletetrueClockTolerance] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptionscompletetrueClockTolerance](x: Self) {
       
-      @scala.inline
-      def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      @scala.inline
-      def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
+      inline def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
+      inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
-      @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
+      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
       
-      @scala.inline
-      def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
+      inline def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
+      inline def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
       
-      @scala.inline
-      def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
+      inline def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
+      inline def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
       
-      @scala.inline
-      def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
+      inline def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
+      inline def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
+      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
+      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
       
-      @scala.inline
-      def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
+      inline def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
+      inline def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
       
-      @scala.inline
-      def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      @scala.inline
-      def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
+      inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
+      inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
     }
   }
   
@@ -572,8 +453,7 @@ object anon {
   }
   object VerifyOptionscompletetrueComplete {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String]),
       complete: js.UndefOr[Boolean] & `true`,
       issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
@@ -582,95 +462,65 @@ object anon {
       __obj.asInstanceOf[VerifyOptionscompletetrueComplete]
     }
     
-    @scala.inline
-    implicit class VerifyOptionscompletetrueCompleteMutableBuilder[Self <: VerifyOptionscompletetrueComplete] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyOptionscompletetrueComplete](x: Self) {
       
-      @scala.inline
-      def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
       
-      @scala.inline
-      def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
-      @scala.inline
-      def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      inline def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
+      inline def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
+      inline def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
-      @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
+      inline def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
+      inline def setCritUndefined: Self = StObject.set(x, "crit", js.undefined)
       
-      @scala.inline
-      def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
+      inline def setCritVarargs(value: String*): Self = StObject.set(x, "crit", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
+      inline def setIgnoreExp(value: Boolean): Self = StObject.set(x, "ignoreExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
+      inline def setIgnoreExpUndefined: Self = StObject.set(x, "ignoreExp", js.undefined)
       
-      @scala.inline
-      def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
+      inline def setIgnoreIat(value: Boolean): Self = StObject.set(x, "ignoreIat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
+      inline def setIgnoreIatUndefined: Self = StObject.set(x, "ignoreIat", js.undefined)
       
-      @scala.inline
-      def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
+      inline def setIgnoreNbf(value: Boolean): Self = StObject.set(x, "ignoreNbf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
+      inline def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
       
-      @scala.inline
-      def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
+      inline def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
+      inline def setJtiUndefined: Self = StObject.set(x, "jti", js.undefined)
       
-      @scala.inline
-      def setMaxAuthAge(value: String): Self = StObject.set(x, "maxAuthAge", value.asInstanceOf[js.Any])
+      inline def setMaxAuthAge(value: String): Self = StObject.set(x, "maxAuthAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAuthAgeUndefined: Self = StObject.set(x, "maxAuthAge", js.undefined)
+      inline def setMaxAuthAgeUndefined: Self = StObject.set(x, "maxAuthAge", js.undefined)
       
-      @scala.inline
-      def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
+      inline def setMaxTokenAge(value: String): Self = StObject.set(x, "maxTokenAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
+      inline def setMaxTokenAgeUndefined: Self = StObject.set(x, "maxTokenAge", js.undefined)
       
-      @scala.inline
-      def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setNow(value: Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      @scala.inline
-      def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
+      inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
+      inline def setTypUndefined: Self = StObject.set(x, "typ", js.undefined)
     }
   }
 }

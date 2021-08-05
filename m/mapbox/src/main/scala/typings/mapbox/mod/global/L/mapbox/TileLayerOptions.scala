@@ -12,19 +12,15 @@ trait TileLayerOptions
 }
 object TileLayerOptions {
   
-  @scala.inline
-  def apply(): TileLayerOptions = {
+  inline def apply(): TileLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileLayerOptions]
   }
   
-  @scala.inline
-  implicit class TileLayerOptionsMutableBuilder[Self <: TileLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayerOptions](x: Self) {
     
-    @scala.inline
-    def setRetinaVersion(value: String): Self = StObject.set(x, "retinaVersion", value.asInstanceOf[js.Any])
+    inline def setRetinaVersion(value: String): Self = StObject.set(x, "retinaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetinaVersionUndefined: Self = StObject.set(x, "retinaVersion", js.undefined)
+    inline def setRetinaVersionUndefined: Self = StObject.set(x, "retinaVersion", js.undefined)
   }
 }

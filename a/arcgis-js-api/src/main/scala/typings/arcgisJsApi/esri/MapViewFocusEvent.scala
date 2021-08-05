@@ -12,19 +12,15 @@ trait MapViewFocusEvent extends StObject {
 }
 object MapViewFocusEvent {
   
-  @scala.inline
-  def apply(native: js.Any, target: View): MapViewFocusEvent = {
+  inline def apply(native: js.Any, target: View): MapViewFocusEvent = {
     val __obj = js.Dynamic.literal(native = native.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapViewFocusEvent]
   }
   
-  @scala.inline
-  implicit class MapViewFocusEventMutableBuilder[Self <: MapViewFocusEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MapViewFocusEvent](x: Self) {
     
-    @scala.inline
-    def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: View): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: View): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

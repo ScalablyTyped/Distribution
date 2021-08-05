@@ -16,16 +16,13 @@ trait IDisplayData
 }
 object IDisplayData {
   
-  @scala.inline
-  def apply(data: StringDictionary[js.Any]): IDisplayData = {
+  inline def apply(data: StringDictionary[js.Any]): IDisplayData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = "display_data")
     __obj.asInstanceOf[IDisplayData]
   }
   
-  @scala.inline
-  implicit class IDisplayDataMutableBuilder[Self <: IDisplayData] (val x: Self) extends AnyVal {
+  extension [Self <: IDisplayData](x: Self) {
     
-    @scala.inline
-    def setOutput_type(value: display_data): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+    inline def setOutput_type(value: display_data): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }
 }

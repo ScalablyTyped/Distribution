@@ -22,8 +22,7 @@ trait ConditionalExpression_
 }
 object ConditionalExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternate: Expression,
     consequent: Expression,
     end: Double,
@@ -36,19 +35,14 @@ object ConditionalExpression_ {
     __obj.asInstanceOf[ConditionalExpression_]
   }
   
-  @scala.inline
-  implicit class ConditionalExpression_MutableBuilder[Self <: ConditionalExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalExpression_](x: Self) {
     
-    @scala.inline
-    def setAlternate(value: Expression): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: Expression): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsequent(value: Expression): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
+    inline def setConsequent(value: Expression): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ConditionalExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ConditionalExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

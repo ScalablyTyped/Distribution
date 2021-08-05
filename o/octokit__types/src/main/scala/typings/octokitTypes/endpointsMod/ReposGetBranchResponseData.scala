@@ -23,8 +23,7 @@ trait ReposGetBranchResponseData extends StObject {
 }
 object ReposGetBranchResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: Self,
     commit: Commit,
     name: String,
@@ -37,25 +36,18 @@ object ReposGetBranchResponseData {
     __obj.asInstanceOf[ReposGetBranchResponseData]
   }
   
-  @scala.inline
-  implicit class ReposGetBranchResponseDataMutableBuilder[Self <: ReposGetBranchResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetBranchResponseData](x: Self) {
     
-    @scala.inline
-    def setCommit(value: Commit): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Commit): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection(value: Enabled): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: Enabled): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtection_url(value: String): Self = StObject.set(x, "protection_url", value.asInstanceOf[js.Any])
+    inline def setProtection_url(value: String): Self = StObject.set(x, "protection_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

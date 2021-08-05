@@ -42,35 +42,26 @@ object angularModal {
   }
   object AngularModalSettings {
     
-    @scala.inline
-    def apply(): AngularModalSettings = {
+    inline def apply(): AngularModalSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AngularModalSettings]
     }
     
-    @scala.inline
-    implicit class AngularModalSettingsMutableBuilder[Self <: AngularModalSettings] (val x: Self) extends AnyVal {
+    extension [Self <: AngularModalSettings](x: Self) {
       
-      @scala.inline
-      def setContainer(value: AngularModalJQuerySelector): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: AngularModalJQuerySelector): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setContainerVarargs(value: (js.Any | Element)*): Self = StObject.set(x, "container", js.Array(value :_*))
+      inline def setContainerVarargs(value: (js.Any | Element)*): Self = StObject.set(x, "container", js.Array(value :_*))
       
-      @scala.inline
-      def setController(value: AngularModalControllerDefinition): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: AngularModalControllerDefinition): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+      inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
+      inline def setControllerAsUndefined: Self = StObject.set(x, "controllerAs", js.undefined)
       
-      @scala.inline
-      def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+      inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
     }
   }
   
@@ -82,17 +73,14 @@ object angularModal {
   }
   object AngularModalSettingsWithTemplate {
     
-    @scala.inline
-    def apply(template: js.Any): AngularModalSettingsWithTemplate = {
+    inline def apply(template: js.Any): AngularModalSettingsWithTemplate = {
       val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
       __obj.asInstanceOf[AngularModalSettingsWithTemplate]
     }
     
-    @scala.inline
-    implicit class AngularModalSettingsWithTemplateMutableBuilder[Self <: AngularModalSettingsWithTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: AngularModalSettingsWithTemplate](x: Self) {
       
-      @scala.inline
-      def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,17 +92,14 @@ object angularModal {
   }
   object AngularModalSettingsWithTemplateUrl {
     
-    @scala.inline
-    def apply(templateUrl: String): AngularModalSettingsWithTemplateUrl = {
+    inline def apply(templateUrl: String): AngularModalSettingsWithTemplateUrl = {
       val __obj = js.Dynamic.literal(templateUrl = templateUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[AngularModalSettingsWithTemplateUrl]
     }
     
-    @scala.inline
-    implicit class AngularModalSettingsWithTemplateUrlMutableBuilder[Self <: AngularModalSettingsWithTemplateUrl] (val x: Self) extends AnyVal {
+    extension [Self <: AngularModalSettingsWithTemplateUrl](x: Self) {
       
-      @scala.inline
-      def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     }
   }
 }

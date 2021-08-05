@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ObjectFrame extends StObject {
   
-  @JSName("Access.ObjectFrame_typekey")
+  /* private */ @JSName("Access.ObjectFrame_typekey")
   var AccessDotObjectFrame_typekey: ObjectFrame = js.native
   
   var Action: Double = js.native

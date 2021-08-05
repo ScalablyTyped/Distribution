@@ -10,19 +10,15 @@ trait CopyDBSnapshotResult extends StObject {
 }
 object CopyDBSnapshotResult {
   
-  @scala.inline
-  def apply(): CopyDBSnapshotResult = {
+  inline def apply(): CopyDBSnapshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyDBSnapshotResult]
   }
   
-  @scala.inline
-  implicit class CopyDBSnapshotResultMutableBuilder[Self <: CopyDBSnapshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: CopyDBSnapshotResult](x: Self) {
     
-    @scala.inline
-    def setDBSnapshot(value: DBSnapshot): Self = StObject.set(x, "DBSnapshot", value.asInstanceOf[js.Any])
+    inline def setDBSnapshot(value: DBSnapshot): Self = StObject.set(x, "DBSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSnapshotUndefined: Self = StObject.set(x, "DBSnapshot", js.undefined)
+    inline def setDBSnapshotUndefined: Self = StObject.set(x, "DBSnapshot", js.undefined)
   }
 }

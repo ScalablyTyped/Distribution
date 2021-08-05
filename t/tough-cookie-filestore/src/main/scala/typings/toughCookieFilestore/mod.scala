@@ -70,23 +70,18 @@ object mod {
   }
   object Cookie {
     
-    @scala.inline
-    def apply(domain: String, key: String, path: String): Cookie = {
+    inline def apply(domain: String, key: String, path: String): Cookie = {
       val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cookie]
     }
     
-    @scala.inline
-    implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
+    extension [Self <: Cookie](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,8 +122,7 @@ object mod {
   }
   object FileCookieStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       filePath: String,
       findCookie: (String, String, String, js.Function2[/* whatever */ Null, /* cookie */ js.UndefOr[Cookie | Null], Unit]) => Unit,
       findCookies: (String, String, js.Function2[/* whatever */ Null, /* cookies */ js.Array[Cookie], Unit]) => Unit,
@@ -146,48 +140,35 @@ object mod {
       __obj.asInstanceOf[FileCookieStore]
     }
     
-    @scala.inline
-    implicit class FileCookieStoreMutableBuilder[Self <: FileCookieStore] (val x: Self) extends AnyVal {
+    extension [Self <: FileCookieStore](x: Self) {
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindCookie(
+      inline def setFindCookie(
         value: (String, String, String, js.Function2[/* whatever */ Null, /* cookie */ js.UndefOr[Cookie | Null], Unit]) => Unit
       ): Self = StObject.set(x, "findCookie", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindCookies(
+      inline def setFindCookies(
         value: (String, String, js.Function2[/* whatever */ Null, /* cookies */ js.Array[Cookie], Unit]) => Unit
       ): Self = StObject.set(x, "findCookies", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIdx(value: StringDictionary[StringDictionary[StringDictionary[Cookie]]]): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+      inline def setIdx(value: StringDictionary[StringDictionary[StringDictionary[Cookie]]]): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadFromFile(value: (String, js.Function1[/* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "loadFromFile", js.Any.fromFunction2(value))
+      inline def setLoadFromFile(value: (String, js.Function1[/* data */ js.Any, Unit]) => Unit): Self = StObject.set(x, "loadFromFile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPutCookie(value: (Cookie, String, String, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "putCookie", js.Any.fromFunction4(value))
+      inline def setPutCookie(value: (Cookie, String, String, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "putCookie", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRemoveCookie(value: (String, String, String, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "removeCookie", js.Any.fromFunction4(value))
+      inline def setRemoveCookie(value: (String, String, String, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "removeCookie", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRemoveCookies(value: (String, String, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "removeCookies", js.Any.fromFunction3(value))
+      inline def setRemoveCookies(value: (String, String, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "removeCookies", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSaveToFile(value: (String, js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "saveToFile", js.Any.fromFunction3(value))
+      inline def setSaveToFile(value: (String, js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "saveToFile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
+      inline def setSynchronous(value: Boolean): Self = StObject.set(x, "synchronous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateCookie(value: (Cookie, Cookie, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "updateCookie", js.Any.fromFunction3(value))
+      inline def setUpdateCookie(value: (Cookie, Cookie, js.Function1[/* whatever */ Null, Unit]) => Unit): Self = StObject.set(x, "updateCookie", js.Any.fromFunction3(value))
     }
   }
 }

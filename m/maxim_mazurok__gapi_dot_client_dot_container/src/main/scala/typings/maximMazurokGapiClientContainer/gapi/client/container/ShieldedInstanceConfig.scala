@@ -20,25 +20,19 @@ trait ShieldedInstanceConfig extends StObject {
 }
 object ShieldedInstanceConfig {
   
-  @scala.inline
-  def apply(): ShieldedInstanceConfig = {
+  inline def apply(): ShieldedInstanceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShieldedInstanceConfig]
   }
   
-  @scala.inline
-  implicit class ShieldedInstanceConfigMutableBuilder[Self <: ShieldedInstanceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ShieldedInstanceConfig](x: Self) {
     
-    @scala.inline
-    def setEnableIntegrityMonitoring(value: Boolean): Self = StObject.set(x, "enableIntegrityMonitoring", value.asInstanceOf[js.Any])
+    inline def setEnableIntegrityMonitoring(value: Boolean): Self = StObject.set(x, "enableIntegrityMonitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableIntegrityMonitoringUndefined: Self = StObject.set(x, "enableIntegrityMonitoring", js.undefined)
+    inline def setEnableIntegrityMonitoringUndefined: Self = StObject.set(x, "enableIntegrityMonitoring", js.undefined)
     
-    @scala.inline
-    def setEnableSecureBoot(value: Boolean): Self = StObject.set(x, "enableSecureBoot", value.asInstanceOf[js.Any])
+    inline def setEnableSecureBoot(value: Boolean): Self = StObject.set(x, "enableSecureBoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSecureBootUndefined: Self = StObject.set(x, "enableSecureBoot", js.undefined)
+    inline def setEnableSecureBootUndefined: Self = StObject.set(x, "enableSecureBoot", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait FontName extends StObject {
 }
 object FontName {
   
-  @scala.inline
-  def apply(family: String, style: String): FontName = {
+  inline def apply(family: String, style: String): FontName = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontName]
   }
   
-  @scala.inline
-  implicit class FontNameMutableBuilder[Self <: FontName] (val x: Self) extends AnyVal {
+  extension [Self <: FontName](x: Self) {
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

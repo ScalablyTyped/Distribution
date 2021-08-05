@@ -16,8 +16,7 @@ trait ElementNode
      with TemplateChildNode
 object ElementNode {
   
-  @scala.inline
-  def ComponentNode(
+  inline def ComponentNode(
     children: js.Array[TemplateChildNode],
     isSelfClosing: Boolean,
     loc: SourceLocation,
@@ -30,8 +29,7 @@ object ElementNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.ComponentNode]
   }
   
-  @scala.inline
-  def PlainElementNode(
+  inline def PlainElementNode(
     children: js.Array[TemplateChildNode],
     isSelfClosing: Boolean,
     loc: SourceLocation,
@@ -44,8 +42,7 @@ object ElementNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.PlainElementNode]
   }
   
-  @scala.inline
-  def SlotOutletNode(
+  inline def SlotOutletNode(
     children: js.Array[TemplateChildNode],
     isSelfClosing: Boolean,
     loc: SourceLocation,
@@ -58,8 +55,7 @@ object ElementNode {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SlotOutletNode]
   }
   
-  @scala.inline
-  def TemplateNode(
+  inline def TemplateNode(
     children: js.Array[TemplateChildNode],
     codegenNode: Unit,
     isSelfClosing: Boolean,

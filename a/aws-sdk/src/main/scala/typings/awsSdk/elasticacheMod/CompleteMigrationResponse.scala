@@ -10,19 +10,15 @@ trait CompleteMigrationResponse extends StObject {
 }
 object CompleteMigrationResponse {
   
-  @scala.inline
-  def apply(): CompleteMigrationResponse = {
+  inline def apply(): CompleteMigrationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompleteMigrationResponse]
   }
   
-  @scala.inline
-  implicit class CompleteMigrationResponseMutableBuilder[Self <: CompleteMigrationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CompleteMigrationResponse](x: Self) {
     
-    @scala.inline
-    def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
+    inline def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
+    inline def setReplicationGroupUndefined: Self = StObject.set(x, "ReplicationGroup", js.undefined)
   }
 }

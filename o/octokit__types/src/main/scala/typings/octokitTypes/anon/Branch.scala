@@ -12,19 +12,15 @@ trait Branch extends StObject {
 }
 object Branch {
   
-  @scala.inline
-  def apply(branch: String, directory: String): Branch = {
+  inline def apply(branch: String, directory: String): Branch = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], directory = directory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Branch]
   }
   
-  @scala.inline
-  implicit class BranchMutableBuilder[Self <: Branch] (val x: Self) extends AnyVal {
+  extension [Self <: Branch](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+    inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait IPublishResponse extends StObject {
 }
 object IPublishResponse {
   
-  @scala.inline
-  def apply(): IPublishResponse = {
+  inline def apply(): IPublishResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPublishResponse]
   }
   
-  @scala.inline
-  implicit class IPublishResponseMutableBuilder[Self <: IPublishResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IPublishResponse](x: Self) {
     
-    @scala.inline
-    def setMessageIds(value: js.Array[String]): Self = StObject.set(x, "messageIds", value.asInstanceOf[js.Any])
+    inline def setMessageIds(value: js.Array[String]): Self = StObject.set(x, "messageIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdsNull: Self = StObject.set(x, "messageIds", null)
+    inline def setMessageIdsNull: Self = StObject.set(x, "messageIds", null)
     
-    @scala.inline
-    def setMessageIdsUndefined: Self = StObject.set(x, "messageIds", js.undefined)
+    inline def setMessageIdsUndefined: Self = StObject.set(x, "messageIds", js.undefined)
     
-    @scala.inline
-    def setMessageIdsVarargs(value: String*): Self = StObject.set(x, "messageIds", js.Array(value :_*))
+    inline def setMessageIdsVarargs(value: String*): Self = StObject.set(x, "messageIds", js.Array(value :_*))
   }
 }

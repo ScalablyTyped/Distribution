@@ -14,16 +14,13 @@ trait IPersonListOptions
 }
 object IPersonListOptions {
   
-  @scala.inline
-  def apply(relationship: Executive): IPersonListOptions = {
+  inline def apply(relationship: Executive): IPersonListOptions = {
     val __obj = js.Dynamic.literal(relationship = relationship.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPersonListOptions]
   }
   
-  @scala.inline
-  implicit class IPersonListOptionsMutableBuilder[Self <: IPersonListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPersonListOptions](x: Self) {
     
-    @scala.inline
-    def setRelationship(value: Executive): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
+    inline def setRelationship(value: Executive): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
   }
 }

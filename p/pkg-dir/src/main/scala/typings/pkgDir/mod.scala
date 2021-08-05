@@ -29,10 +29,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[String]]]
-  @scala.inline
-  def apply(cwd: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def apply(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[js.UndefOr[String]]]
+  inline def apply(cwd: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(cwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
   @JSImport("pkg-dir", JSImport.Namespace)
   @js.native
@@ -43,8 +41,6 @@ object mod {
   	@param cwd - Directory to start from. Default: `process.cwd()`.
   	@returns The project root path or `undefined` if it couldn't be found.
   	*/
-  @scala.inline
-  def sync(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[String]]
-  @scala.inline
-  def sync(cwd: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def sync(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[js.UndefOr[String]]
+  inline def sync(cwd: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(cwd.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

@@ -29,26 +29,20 @@ object Spotify {
   }
   object Album {
     
-    @scala.inline
-    def apply(images: js.Array[Image], name: String, uri: String): Album = {
+    inline def apply(images: js.Array[Image], name: String, uri: String): Album = {
       val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[Album]
     }
     
-    @scala.inline
-    implicit class AlbumMutableBuilder[Self <: Album] (val x: Self) extends AnyVal {
+    extension [Self <: Album](x: Self) {
       
-      @scala.inline
-      def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,20 +54,16 @@ object Spotify {
   }
   object Artist {
     
-    @scala.inline
-    def apply(name: String, uri: String): Artist = {
+    inline def apply(name: String, uri: String): Artist = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[Artist]
     }
     
-    @scala.inline
-    implicit class ArtistMutableBuilder[Self <: Artist] (val x: Self) extends AnyVal {
+    extension [Self <: Artist](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,17 +73,14 @@ object Spotify {
   }
   object Error {
     
-    @scala.inline
-    def apply(message: String): Error = {
+    inline def apply(message: String): Error = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,17 +95,13 @@ object Spotify {
   trait ErrorTypes extends StObject
   object ErrorTypes {
     
-    @scala.inline
-    def account_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error = "account_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error]
+    inline def account_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error = "account_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.account_error]
     
-    @scala.inline
-    def authentication_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error = "authentication_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error]
+    inline def authentication_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error = "authentication_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.authentication_error]
     
-    @scala.inline
-    def initialization_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error = "initialization_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error]
+    inline def initialization_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error = "initialization_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.initialization_error]
     
-    @scala.inline
-    def playback_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error = "playback_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error]
+    inline def playback_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error = "playback_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error]
   }
   
   trait Image extends StObject {
@@ -131,35 +114,26 @@ object Spotify {
   }
   object Image {
     
-    @scala.inline
-    def apply(url: String): Image = {
+    inline def apply(url: String): Image = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Image]
     }
     
-    @scala.inline
-    implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+    extension [Self <: Image](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightNull: Self = StObject.set(x, "height", null)
+      inline def setHeightNull: Self = StObject.set(x, "height", null)
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthNull: Self = StObject.set(x, "width", null)
+      inline def setWidthNull: Self = StObject.set(x, "width", null)
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -171,23 +145,18 @@ object Spotify {
   }
   object PlaybackContext {
     
-    @scala.inline
-    def apply(metadata: js.Any): PlaybackContext = {
+    inline def apply(metadata: js.Any): PlaybackContext = {
       val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], uri = null)
       __obj.asInstanceOf[PlaybackContext]
     }
     
-    @scala.inline
-    implicit class PlaybackContextMutableBuilder[Self <: PlaybackContext] (val x: Self) extends AnyVal {
+    extension [Self <: PlaybackContext](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriNull: Self = StObject.set(x, "uri", null)
+      inline def setUriNull: Self = StObject.set(x, "uri", null)
     }
   }
   
@@ -209,8 +178,7 @@ object Spotify {
   }
   object PlaybackDisallows {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       pausing: Boolean,
       peeking_next: Boolean,
       peeking_prev: Boolean,
@@ -223,29 +191,21 @@ object Spotify {
       __obj.asInstanceOf[PlaybackDisallows]
     }
     
-    @scala.inline
-    implicit class PlaybackDisallowsMutableBuilder[Self <: PlaybackDisallows] (val x: Self) extends AnyVal {
+    extension [Self <: PlaybackDisallows](x: Self) {
       
-      @scala.inline
-      def setPausing(value: Boolean): Self = StObject.set(x, "pausing", value.asInstanceOf[js.Any])
+      inline def setPausing(value: Boolean): Self = StObject.set(x, "pausing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeeking_next(value: Boolean): Self = StObject.set(x, "peeking_next", value.asInstanceOf[js.Any])
+      inline def setPeeking_next(value: Boolean): Self = StObject.set(x, "peeking_next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeeking_prev(value: Boolean): Self = StObject.set(x, "peeking_prev", value.asInstanceOf[js.Any])
+      inline def setPeeking_prev(value: Boolean): Self = StObject.set(x, "peeking_prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResuming(value: Boolean): Self = StObject.set(x, "resuming", value.asInstanceOf[js.Any])
+      inline def setResuming(value: Boolean): Self = StObject.set(x, "resuming", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeeking(value: Boolean): Self = StObject.set(x, "seeking", value.asInstanceOf[js.Any])
+      inline def setSeeking(value: Boolean): Self = StObject.set(x, "seeking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipping_next(value: Boolean): Self = StObject.set(x, "skipping_next", value.asInstanceOf[js.Any])
+      inline def setSkipping_next(value: Boolean): Self = StObject.set(x, "skipping_next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipping_prev(value: Boolean): Self = StObject.set(x, "skipping_prev", value.asInstanceOf[js.Any])
+      inline def setSkipping_prev(value: Boolean): Self = StObject.set(x, "skipping_prev", value.asInstanceOf[js.Any])
     }
   }
   
@@ -269,8 +229,7 @@ object Spotify {
   }
   object PlaybackRestrictions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disallow_pausing_reasons: js.Array[String],
       disallow_peeking_next_reasons: js.Array[String],
       disallow_peeking_prev_reasons: js.Array[String],
@@ -283,50 +242,35 @@ object Spotify {
       __obj.asInstanceOf[PlaybackRestrictions]
     }
     
-    @scala.inline
-    implicit class PlaybackRestrictionsMutableBuilder[Self <: PlaybackRestrictions] (val x: Self) extends AnyVal {
+    extension [Self <: PlaybackRestrictions](x: Self) {
       
-      @scala.inline
-      def setDisallow_pausing_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_pausing_reasons", value.asInstanceOf[js.Any])
+      inline def setDisallow_pausing_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_pausing_reasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallow_pausing_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_pausing_reasons", js.Array(value :_*))
+      inline def setDisallow_pausing_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_pausing_reasons", js.Array(value :_*))
       
-      @scala.inline
-      def setDisallow_peeking_next_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_peeking_next_reasons", value.asInstanceOf[js.Any])
+      inline def setDisallow_peeking_next_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_peeking_next_reasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallow_peeking_next_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_peeking_next_reasons", js.Array(value :_*))
+      inline def setDisallow_peeking_next_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_peeking_next_reasons", js.Array(value :_*))
       
-      @scala.inline
-      def setDisallow_peeking_prev_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_peeking_prev_reasons", value.asInstanceOf[js.Any])
+      inline def setDisallow_peeking_prev_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_peeking_prev_reasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallow_peeking_prev_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_peeking_prev_reasons", js.Array(value :_*))
+      inline def setDisallow_peeking_prev_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_peeking_prev_reasons", js.Array(value :_*))
       
-      @scala.inline
-      def setDisallow_resuming_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_resuming_reasons", value.asInstanceOf[js.Any])
+      inline def setDisallow_resuming_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_resuming_reasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallow_resuming_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_resuming_reasons", js.Array(value :_*))
+      inline def setDisallow_resuming_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_resuming_reasons", js.Array(value :_*))
       
-      @scala.inline
-      def setDisallow_seeking_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_seeking_reasons", value.asInstanceOf[js.Any])
+      inline def setDisallow_seeking_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_seeking_reasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallow_seeking_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_seeking_reasons", js.Array(value :_*))
+      inline def setDisallow_seeking_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_seeking_reasons", js.Array(value :_*))
       
-      @scala.inline
-      def setDisallow_skipping_next_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_skipping_next_reasons", value.asInstanceOf[js.Any])
+      inline def setDisallow_skipping_next_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_skipping_next_reasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallow_skipping_next_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_skipping_next_reasons", js.Array(value :_*))
+      inline def setDisallow_skipping_next_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_skipping_next_reasons", js.Array(value :_*))
       
-      @scala.inline
-      def setDisallow_skipping_prev_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_skipping_prev_reasons", value.asInstanceOf[js.Any])
+      inline def setDisallow_skipping_prev_reasons(value: js.Array[String]): Self = StObject.set(x, "disallow_skipping_prev_reasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallow_skipping_prev_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_skipping_prev_reasons", js.Array(value :_*))
+      inline def setDisallow_skipping_prev_reasonsVarargs(value: String*): Self = StObject.set(x, "disallow_skipping_prev_reasons", js.Array(value :_*))
     }
   }
   
@@ -357,8 +301,7 @@ object Spotify {
   }
   object PlaybackState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       context: PlaybackContext,
       disallows: PlaybackDisallows,
       duration: Double,
@@ -373,35 +316,25 @@ object Spotify {
       __obj.asInstanceOf[PlaybackState]
     }
     
-    @scala.inline
-    implicit class PlaybackStateMutableBuilder[Self <: PlaybackState] (val x: Self) extends AnyVal {
+    extension [Self <: PlaybackState](x: Self) {
       
-      @scala.inline
-      def setContext(value: PlaybackContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: PlaybackContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisallows(value: PlaybackDisallows): Self = StObject.set(x, "disallows", value.asInstanceOf[js.Any])
+      inline def setDisallows(value: PlaybackDisallows): Self = StObject.set(x, "disallows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepeat_mode(value: `0` | `1` | `2`): Self = StObject.set(x, "repeat_mode", value.asInstanceOf[js.Any])
+      inline def setRepeat_mode(value: `0` | `1` | `2`): Self = StObject.set(x, "repeat_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrictions(value: PlaybackRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+      inline def setRestrictions(value: PlaybackRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
+      inline def setShuffle(value: Boolean): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_window(value: PlaybackTrackWindow): Self = StObject.set(x, "track_window", value.asInstanceOf[js.Any])
+      inline def setTrack_window(value: PlaybackTrackWindow): Self = StObject.set(x, "track_window", value.asInstanceOf[js.Any])
     }
   }
   
@@ -417,29 +350,22 @@ object Spotify {
   }
   object PlaybackTrackWindow {
     
-    @scala.inline
-    def apply(current_track: Track, next_tracks: js.Array[Track], previous_tracks: js.Array[Track]): PlaybackTrackWindow = {
+    inline def apply(current_track: Track, next_tracks: js.Array[Track], previous_tracks: js.Array[Track]): PlaybackTrackWindow = {
       val __obj = js.Dynamic.literal(current_track = current_track.asInstanceOf[js.Any], next_tracks = next_tracks.asInstanceOf[js.Any], previous_tracks = previous_tracks.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlaybackTrackWindow]
     }
     
-    @scala.inline
-    implicit class PlaybackTrackWindowMutableBuilder[Self <: PlaybackTrackWindow] (val x: Self) extends AnyVal {
+    extension [Self <: PlaybackTrackWindow](x: Self) {
       
-      @scala.inline
-      def setCurrent_track(value: Track): Self = StObject.set(x, "current_track", value.asInstanceOf[js.Any])
+      inline def setCurrent_track(value: Track): Self = StObject.set(x, "current_track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_tracks(value: js.Array[Track]): Self = StObject.set(x, "next_tracks", value.asInstanceOf[js.Any])
+      inline def setNext_tracks(value: js.Array[Track]): Self = StObject.set(x, "next_tracks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_tracksVarargs(value: Track*): Self = StObject.set(x, "next_tracks", js.Array(value :_*))
+      inline def setNext_tracksVarargs(value: Track*): Self = StObject.set(x, "next_tracks", js.Array(value :_*))
       
-      @scala.inline
-      def setPrevious_tracks(value: js.Array[Track]): Self = StObject.set(x, "previous_tracks", value.asInstanceOf[js.Any])
+      inline def setPrevious_tracks(value: js.Array[Track]): Self = StObject.set(x, "previous_tracks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious_tracksVarargs(value: Track*): Self = StObject.set(x, "previous_tracks", js.Array(value :_*))
+      inline def setPrevious_tracksVarargs(value: Track*): Self = StObject.set(x, "previous_tracks", js.Array(value :_*))
     }
   }
   
@@ -456,26 +382,20 @@ object Spotify {
   }
   object PlayerInit {
     
-    @scala.inline
-    def apply(getOAuthToken: js.Function1[/* token */ String, Unit] => Unit, name: String): PlayerInit = {
+    inline def apply(getOAuthToken: js.Function1[/* token */ String, Unit] => Unit, name: String): PlayerInit = {
       val __obj = js.Dynamic.literal(getOAuthToken = js.Any.fromFunction1(getOAuthToken), name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerInit]
     }
     
-    @scala.inline
-    implicit class PlayerInitMutableBuilder[Self <: PlayerInit] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerInit](x: Self) {
       
-      @scala.inline
-      def setGetOAuthToken(value: js.Function1[/* token */ String, Unit] => Unit): Self = StObject.set(x, "getOAuthToken", js.Any.fromFunction1(value))
+      inline def setGetOAuthToken(value: js.Function1[/* token */ String, Unit] => Unit): Self = StObject.set(x, "getOAuthToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+      inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     }
   }
   
@@ -562,8 +482,7 @@ object Spotify {
   }
   object Track {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       album: Album,
       artists: js.Array[Artist],
       is_playable: Boolean,
@@ -577,38 +496,27 @@ object Spotify {
       __obj.asInstanceOf[Track]
     }
     
-    @scala.inline
-    implicit class TrackMutableBuilder[Self <: Track] (val x: Self) extends AnyVal {
+    extension [Self <: Track](x: Self) {
       
-      @scala.inline
-      def setAlbum(value: Album): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+      inline def setAlbum(value: Album): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtists(value: js.Array[Artist]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
+      inline def setArtists(value: js.Array[Artist]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtistsVarargs(value: Artist*): Self = StObject.set(x, "artists", js.Array(value :_*))
+      inline def setArtistsVarargs(value: Artist*): Self = StObject.set(x, "artists", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdNull: Self = StObject.set(x, "id", null)
+      inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      @scala.inline
-      def setIs_playable(value: Boolean): Self = StObject.set(x, "is_playable", value.asInstanceOf[js.Any])
+      inline def setIs_playable(value: Boolean): Self = StObject.set(x, "is_playable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_type(value: audio | video): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
+      inline def setMedia_type(value: audio | video): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: track | episode | ad): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: track | episode | ad): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -618,17 +526,14 @@ object Spotify {
   }
   object WebPlaybackInstance {
     
-    @scala.inline
-    def apply(device_id: String): WebPlaybackInstance = {
+    inline def apply(device_id: String): WebPlaybackInstance = {
       val __obj = js.Dynamic.literal(device_id = device_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebPlaybackInstance]
     }
     
-    @scala.inline
-    implicit class WebPlaybackInstanceMutableBuilder[Self <: WebPlaybackInstance] (val x: Self) extends AnyVal {
+    extension [Self <: WebPlaybackInstance](x: Self) {
       
-      @scala.inline
-      def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
+      inline def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
     }
   }
 }

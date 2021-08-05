@@ -13,19 +13,15 @@ trait Guid extends StObject {
 }
 object Guid {
   
-  @scala.inline
-  def apply(guid: GUID, path: String): Guid = {
+  inline def apply(guid: GUID, path: String): Guid = {
     val __obj = js.Dynamic.literal(guid = guid.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[Guid]
   }
   
-  @scala.inline
-  implicit class GuidMutableBuilder[Self <: Guid] (val x: Self) extends AnyVal {
+  extension [Self <: Guid](x: Self) {
     
-    @scala.inline
-    def setGuid(value: GUID): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: GUID): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

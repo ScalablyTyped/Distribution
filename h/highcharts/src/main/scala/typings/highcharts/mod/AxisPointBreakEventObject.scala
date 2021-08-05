@@ -20,8 +20,7 @@ trait AxisPointBreakEventObject extends StObject {
 }
 object AxisPointBreakEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     brk: Dictionary[Double],
     point: Point,
     preventDefault: js.Function,
@@ -33,22 +32,16 @@ object AxisPointBreakEventObject {
     __obj.asInstanceOf[AxisPointBreakEventObject]
   }
   
-  @scala.inline
-  implicit class AxisPointBreakEventObjectMutableBuilder[Self <: AxisPointBreakEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: AxisPointBreakEventObject](x: Self) {
     
-    @scala.inline
-    def setBrk(value: Dictionary[Double]): Self = StObject.set(x, "brk", value.asInstanceOf[js.Any])
+    inline def setBrk(value: Dictionary[Double]): Self = StObject.set(x, "brk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: SVGElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: SVGElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: pointBreak | pointInBreak): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pointBreak | pointInBreak): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

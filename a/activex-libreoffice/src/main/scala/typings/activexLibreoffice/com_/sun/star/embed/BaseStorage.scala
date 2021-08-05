@@ -30,8 +30,7 @@ trait BaseStorage
 }
 object BaseStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     OpenMode: Double,
@@ -74,13 +73,10 @@ object BaseStorage {
     __obj.asInstanceOf[BaseStorage]
   }
   
-  @scala.inline
-  implicit class BaseStorageMutableBuilder[Self <: BaseStorage] (val x: Self) extends AnyVal {
+  extension [Self <: BaseStorage](x: Self) {
     
-    @scala.inline
-    def setOpenMode(value: Double): Self = StObject.set(x, "OpenMode", value.asInstanceOf[js.Any])
+    inline def setOpenMode(value: Double): Self = StObject.set(x, "OpenMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

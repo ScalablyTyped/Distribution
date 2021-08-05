@@ -10,16 +10,13 @@ trait HResult extends StObject {
 }
 object HResult {
   
-  @scala.inline
-  def apply(value: Double): HResult = {
+  inline def apply(value: Double): HResult = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HResult]
   }
   
-  @scala.inline
-  implicit class HResultMutableBuilder[Self <: HResult] (val x: Self) extends AnyVal {
+  extension [Self <: HResult](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

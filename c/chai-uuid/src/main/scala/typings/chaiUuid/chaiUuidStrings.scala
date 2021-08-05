@@ -11,41 +11,35 @@ object chaiUuidStrings {
   sealed trait _empty
     extends StObject
        with UuidVersion
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait v1
     extends StObject
        with UuidVersion
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
   
   @js.native
   sealed trait v2
     extends StObject
        with UuidVersion
-  @scala.inline
-  def v2: v2 = "v2".asInstanceOf[v2]
+  inline def v2: v2 = "v2".asInstanceOf[v2]
   
   @js.native
   sealed trait v3
     extends StObject
        with UuidVersion
-  @scala.inline
-  def v3: v3 = "v3".asInstanceOf[v3]
+  inline def v3: v3 = "v3".asInstanceOf[v3]
   
   @js.native
   sealed trait v4
     extends StObject
        with UuidVersion
-  @scala.inline
-  def v4: v4 = "v4".asInstanceOf[v4]
+  inline def v4: v4 = "v4".asInstanceOf[v4]
   
   @js.native
   sealed trait v5
     extends StObject
        with UuidVersion
-  @scala.inline
-  def v5: v5 = "v5".asInstanceOf[v5]
+  inline def v5: v5 = "v5".asInstanceOf[v5]
 }

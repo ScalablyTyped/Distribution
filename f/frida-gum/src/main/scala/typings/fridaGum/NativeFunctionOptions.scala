@@ -16,37 +16,27 @@ trait NativeFunctionOptions extends StObject {
 }
 object NativeFunctionOptions {
   
-  @scala.inline
-  def apply(): NativeFunctionOptions = {
+  inline def apply(): NativeFunctionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NativeFunctionOptions]
   }
   
-  @scala.inline
-  implicit class NativeFunctionOptionsMutableBuilder[Self <: NativeFunctionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NativeFunctionOptions](x: Self) {
     
-    @scala.inline
-    def setAbi(value: NativeABI): Self = StObject.set(x, "abi", value.asInstanceOf[js.Any])
+    inline def setAbi(value: NativeABI): Self = StObject.set(x, "abi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbiUndefined: Self = StObject.set(x, "abi", js.undefined)
+    inline def setAbiUndefined: Self = StObject.set(x, "abi", js.undefined)
     
-    @scala.inline
-    def setExceptions(value: ExceptionsBehavior): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
+    inline def setExceptions(value: ExceptionsBehavior): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
+    inline def setExceptionsUndefined: Self = StObject.set(x, "exceptions", js.undefined)
     
-    @scala.inline
-    def setScheduling(value: SchedulingBehavior): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
+    inline def setScheduling(value: SchedulingBehavior): Self = StObject.set(x, "scheduling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
+    inline def setSchedulingUndefined: Self = StObject.set(x, "scheduling", js.undefined)
     
-    @scala.inline
-    def setTraps(value: CodeTraps): Self = StObject.set(x, "traps", value.asInstanceOf[js.Any])
+    inline def setTraps(value: CodeTraps): Self = StObject.set(x, "traps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrapsUndefined: Self = StObject.set(x, "traps", js.undefined)
+    inline def setTrapsUndefined: Self = StObject.set(x, "traps", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait PlotAroonAroonDownOptions extends StObject {
 }
 object PlotAroonAroonDownOptions {
   
-  @scala.inline
-  def apply(): PlotAroonAroonDownOptions = {
+  inline def apply(): PlotAroonAroonDownOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotAroonAroonDownOptions]
   }
   
-  @scala.inline
-  implicit class PlotAroonAroonDownOptionsMutableBuilder[Self <: PlotAroonAroonDownOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotAroonAroonDownOptions](x: Self) {
     
-    @scala.inline
-    def setStyles(value: PlotAroonAroonDownStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotAroonAroonDownStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

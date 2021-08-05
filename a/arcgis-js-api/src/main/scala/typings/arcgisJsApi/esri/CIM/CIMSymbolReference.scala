@@ -55,77 +55,54 @@ trait CIMSymbolReference extends StObject {
 }
 object CIMSymbolReference {
   
-  @scala.inline
-  def apply(): CIMSymbolReference = {
+  inline def apply(): CIMSymbolReference = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMSymbolReference")
     __obj.asInstanceOf[CIMSymbolReference]
   }
   
-  @scala.inline
-  implicit class CIMSymbolReferenceMutableBuilder[Self <: CIMSymbolReference] (val x: Self) extends AnyVal {
+  extension [Self <: CIMSymbolReference](x: Self) {
     
-    @scala.inline
-    def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
+    inline def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
+    inline def setMaxDistanceUndefined: Self = StObject.set(x, "maxDistance", js.undefined)
     
-    @scala.inline
-    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
-    @scala.inline
-    def setMinDistance(value: Double): Self = StObject.set(x, "minDistance", value.asInstanceOf[js.Any])
+    inline def setMinDistance(value: Double): Self = StObject.set(x, "minDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDistanceUndefined: Self = StObject.set(x, "minDistance", js.undefined)
+    inline def setMinDistanceUndefined: Self = StObject.set(x, "minDistance", js.undefined)
     
-    @scala.inline
-    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+    inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
     
-    @scala.inline
-    def setPrimitiveOverrides(value: js.Array[CIMPrimitiveOverride]): Self = StObject.set(x, "primitiveOverrides", value.asInstanceOf[js.Any])
+    inline def setPrimitiveOverrides(value: js.Array[CIMPrimitiveOverride]): Self = StObject.set(x, "primitiveOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitiveOverridesUndefined: Self = StObject.set(x, "primitiveOverrides", js.undefined)
+    inline def setPrimitiveOverridesUndefined: Self = StObject.set(x, "primitiveOverrides", js.undefined)
     
-    @scala.inline
-    def setPrimitiveOverridesVarargs(value: CIMPrimitiveOverride*): Self = StObject.set(x, "primitiveOverrides", js.Array(value :_*))
+    inline def setPrimitiveOverridesVarargs(value: CIMPrimitiveOverride*): Self = StObject.set(x, "primitiveOverrides", js.Array(value :_*))
     
-    @scala.inline
-    def setScaleDependentSizeVariation(value: js.Array[CIMScaleDependentSizeVariation]): Self = StObject.set(x, "scaleDependentSizeVariation", value.asInstanceOf[js.Any])
+    inline def setScaleDependentSizeVariation(value: js.Array[CIMScaleDependentSizeVariation]): Self = StObject.set(x, "scaleDependentSizeVariation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDependentSizeVariationUndefined: Self = StObject.set(x, "scaleDependentSizeVariation", js.undefined)
+    inline def setScaleDependentSizeVariationUndefined: Self = StObject.set(x, "scaleDependentSizeVariation", js.undefined)
     
-    @scala.inline
-    def setScaleDependentSizeVariationVarargs(value: CIMScaleDependentSizeVariation*): Self = StObject.set(x, "scaleDependentSizeVariation", js.Array(value :_*))
+    inline def setScaleDependentSizeVariationVarargs(value: CIMScaleDependentSizeVariation*): Self = StObject.set(x, "scaleDependentSizeVariation", js.Array(value :_*))
     
-    @scala.inline
-    def setStylePath(value: String): Self = StObject.set(x, "stylePath", value.asInstanceOf[js.Any])
+    inline def setStylePath(value: String): Self = StObject.set(x, "stylePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylePathUndefined: Self = StObject.set(x, "stylePath", js.undefined)
+    inline def setStylePathUndefined: Self = StObject.set(x, "stylePath", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: CIMSymbolType): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: CIMSymbolType): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolName(value: String): Self = StObject.set(x, "symbolName", value.asInstanceOf[js.Any])
+    inline def setSymbolName(value: String): Self = StObject.set(x, "symbolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolNameUndefined: Self = StObject.set(x, "symbolName", js.undefined)
+    inline def setSymbolNameUndefined: Self = StObject.set(x, "symbolName", js.undefined)
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMSymbolReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMSymbolReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

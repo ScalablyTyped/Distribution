@@ -13,16 +13,13 @@ trait Classes[T /* <: String | StyleRules[String] | StyleRulesCallback[String] *
 }
 object Classes {
   
-  @scala.inline
-  def apply[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */](classes: ClassNameMap[js.Any | T]): Classes[T] = {
+  inline def apply[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */](classes: ClassNameMap[js.Any | T]): Classes[T] = {
     val __obj = js.Dynamic.literal(classes = classes.asInstanceOf[js.Any])
     __obj.asInstanceOf[Classes[T]]
   }
   
-  @scala.inline
-  implicit class ClassesMutableBuilder[Self <: Classes[?], T /* <: String | StyleRules[String] | StyleRulesCallback[String] */] (val x: Self & Classes[T]) extends AnyVal {
+  extension [Self <: Classes[?], T /* <: String | StyleRules[String] | StyleRulesCallback[String] */](x: Self & Classes[T]) {
     
-    @scala.inline
-    def setClasses(value: ClassNameMap[js.Any | T]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: ClassNameMap[js.Any | T]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
   }
 }

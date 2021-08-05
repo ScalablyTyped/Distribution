@@ -18,25 +18,19 @@ trait RetryOptions extends StObject {
 }
 object RetryOptions {
   
-  @scala.inline
-  def apply(): RetryOptions = {
+  inline def apply(): RetryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryOptions]
   }
   
-  @scala.inline
-  implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RetryOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
   }
 }

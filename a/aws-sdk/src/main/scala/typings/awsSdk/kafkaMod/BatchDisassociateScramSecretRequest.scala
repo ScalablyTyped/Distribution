@@ -22,22 +22,17 @@ trait BatchDisassociateScramSecretRequest extends StObject {
 }
 object BatchDisassociateScramSecretRequest {
   
-  @scala.inline
-  def apply(ClusterArn: string, SecretArnList: listOfString): BatchDisassociateScramSecretRequest = {
+  inline def apply(ClusterArn: string, SecretArnList: listOfString): BatchDisassociateScramSecretRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any], SecretArnList = SecretArnList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDisassociateScramSecretRequest]
   }
   
-  @scala.inline
-  implicit class BatchDisassociateScramSecretRequestMutableBuilder[Self <: BatchDisassociateScramSecretRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDisassociateScramSecretRequest](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnList(value: listOfString): Self = StObject.set(x, "SecretArnList", value.asInstanceOf[js.Any])
+    inline def setSecretArnList(value: listOfString): Self = StObject.set(x, "SecretArnList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnListVarargs(value: string*): Self = StObject.set(x, "SecretArnList", js.Array(value :_*))
+    inline def setSecretArnListVarargs(value: string*): Self = StObject.set(x, "SecretArnList", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait ReplicationReplicaLinkDownInfo extends StObject {
 }
 object ReplicationReplicaLinkDownInfo {
   
-  @scala.inline
-  def apply(master_link_down_since_seconds: String, master_link_status: DOWN): ReplicationReplicaLinkDownInfo = {
+  inline def apply(master_link_down_since_seconds: String, master_link_status: DOWN): ReplicationReplicaLinkDownInfo = {
     val __obj = js.Dynamic.literal(master_link_down_since_seconds = master_link_down_since_seconds.asInstanceOf[js.Any], master_link_status = master_link_status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationReplicaLinkDownInfo]
   }
   
-  @scala.inline
-  implicit class ReplicationReplicaLinkDownInfoMutableBuilder[Self <: ReplicationReplicaLinkDownInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationReplicaLinkDownInfo](x: Self) {
     
-    @scala.inline
-    def setMaster_link_down_since_seconds(value: String): Self = StObject.set(x, "master_link_down_since_seconds", value.asInstanceOf[js.Any])
+    inline def setMaster_link_down_since_seconds(value: String): Self = StObject.set(x, "master_link_down_since_seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_link_status(value: DOWN): Self = StObject.set(x, "master_link_status", value.asInstanceOf[js.Any])
+    inline def setMaster_link_status(value: DOWN): Self = StObject.set(x, "master_link_status", value.asInstanceOf[js.Any])
   }
 }

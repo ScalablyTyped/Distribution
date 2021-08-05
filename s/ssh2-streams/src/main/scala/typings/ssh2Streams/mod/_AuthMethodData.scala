@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _AuthMethodData extends StObject
 object _AuthMethodData {
   
-  @scala.inline
-  def HostbasedAuthMethodData(key: Buffer, keyAlgo: String, localHostname: String, localUsername: String): typings.ssh2Streams.mod.HostbasedAuthMethodData = {
+  inline def HostbasedAuthMethodData(key: Buffer, keyAlgo: String, localHostname: String, localUsername: String): typings.ssh2Streams.mod.HostbasedAuthMethodData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyAlgo = keyAlgo.asInstanceOf[js.Any], localHostname = localHostname.asInstanceOf[js.Any], localUsername = localUsername.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ssh2Streams.mod.HostbasedAuthMethodData]
   }
   
-  @scala.inline
-  def PublicKeyAuthMethodData(key: Buffer, keyAlgo: String): typings.ssh2Streams.mod.PublicKeyAuthMethodData = {
+  inline def PublicKeyAuthMethodData(key: Buffer, keyAlgo: String): typings.ssh2Streams.mod.PublicKeyAuthMethodData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyAlgo = keyAlgo.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ssh2Streams.mod.PublicKeyAuthMethodData]
   }

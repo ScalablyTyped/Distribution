@@ -13,16 +13,13 @@ trait ChoiceCosmetics extends StObject {
 }
 object ChoiceCosmetics {
   
-  @scala.inline
-  def apply(pic: String): ChoiceCosmetics = {
+  inline def apply(pic: String): ChoiceCosmetics = {
     val __obj = js.Dynamic.literal(pic = pic.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChoiceCosmetics]
   }
   
-  @scala.inline
-  implicit class ChoiceCosmeticsMutableBuilder[Self <: ChoiceCosmetics] (val x: Self) extends AnyVal {
+  extension [Self <: ChoiceCosmetics](x: Self) {
     
-    @scala.inline
-    def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
+    inline def setPic(value: String): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
   }
 }

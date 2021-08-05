@@ -48,43 +48,32 @@ object typesExpectedAttributeValueMod {
   }
   object ExpectedAttributeValue {
     
-    @scala.inline
-    def apply(): ExpectedAttributeValue = {
+    inline def apply(): ExpectedAttributeValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpectedAttributeValue]
     }
     
-    @scala.inline
-    implicit class ExpectedAttributeValueMutableBuilder[Self <: ExpectedAttributeValue] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectedAttributeValue](x: Self) {
       
-      @scala.inline
-      def setAttributeValueList(value: js.Array[AttributeValue] | Iterable[AttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
+      inline def setAttributeValueList(value: js.Array[AttributeValue] | Iterable[AttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
+      inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
       
-      @scala.inline
-      def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+      inline def setAttributeValueListVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
       
-      @scala.inline
-      def setComparisonOperator(
+      inline def setComparisonOperator(
         value: EQ | NE | IN | LE | LT | GE | GT | BETWEEN | NOT_NULL | NULL | CONTAINS | NOT_CONTAINS | BEGINS_WITH | String
       ): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
+      inline def setComparisonOperatorUndefined: Self = StObject.set(x, "ComparisonOperator", js.undefined)
       
-      @scala.inline
-      def setExists(value: Boolean): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
+      inline def setExists(value: Boolean): Self = StObject.set(x, "Exists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsUndefined: Self = StObject.set(x, "Exists", js.undefined)
+      inline def setExistsUndefined: Self = StObject.set(x, "Exists", js.undefined)
       
-      @scala.inline
-      def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: AttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
   
@@ -106,29 +95,22 @@ object typesExpectedAttributeValueMod {
   }
   object UnmarshalledExpectedAttributeValue {
     
-    @scala.inline
-    def apply(): UnmarshalledExpectedAttributeValue = {
+    inline def apply(): UnmarshalledExpectedAttributeValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledExpectedAttributeValue]
     }
     
-    @scala.inline
-    implicit class UnmarshalledExpectedAttributeValueMutableBuilder[Self <: UnmarshalledExpectedAttributeValue] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledExpectedAttributeValue](x: Self) {
       
-      @scala.inline
-      def setAttributeValueList(value: js.Array[UnmarshalledAttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
+      inline def setAttributeValueList(value: js.Array[UnmarshalledAttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
+      inline def setAttributeValueListUndefined: Self = StObject.set(x, "AttributeValueList", js.undefined)
       
-      @scala.inline
-      def setAttributeValueListVarargs(value: UnmarshalledAttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
+      inline def setAttributeValueListVarargs(value: UnmarshalledAttributeValue*): Self = StObject.set(x, "AttributeValueList", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: UnmarshalledAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: UnmarshalledAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
 }

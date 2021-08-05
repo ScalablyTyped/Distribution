@@ -71,61 +71,43 @@ trait ParagraphData extends StObject {
 }
 object ParagraphData {
   
-  @scala.inline
-  def apply(): ParagraphData = {
+  inline def apply(): ParagraphData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParagraphData]
   }
   
-  @scala.inline
-  implicit class ParagraphDataMutableBuilder[Self <: ParagraphData] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImage(value: ImageData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageData): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setInkWords(value: js.Array[InkWordData]): Self = StObject.set(x, "inkWords", value.asInstanceOf[js.Any])
+    inline def setInkWords(value: js.Array[InkWordData]): Self = StObject.set(x, "inkWords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInkWordsUndefined: Self = StObject.set(x, "inkWords", js.undefined)
+    inline def setInkWordsUndefined: Self = StObject.set(x, "inkWords", js.undefined)
     
-    @scala.inline
-    def setInkWordsVarargs(value: InkWordData*): Self = StObject.set(x, "inkWords", js.Array(value :_*))
+    inline def setInkWordsVarargs(value: InkWordData*): Self = StObject.set(x, "inkWords", js.Array(value :_*))
     
-    @scala.inline
-    def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
+    inline def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
+    inline def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
-    @scala.inline
-    def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
+    inline def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
     
-    @scala.inline
-    def setRichText(value: RichTextData): Self = StObject.set(x, "richText", value.asInstanceOf[js.Any])
+    inline def setRichText(value: RichTextData): Self = StObject.set(x, "richText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRichTextUndefined: Self = StObject.set(x, "richText", js.undefined)
+    inline def setRichTextUndefined: Self = StObject.set(x, "richText", js.undefined)
     
-    @scala.inline
-    def setTable(value: TableData): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: TableData): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
     
-    @scala.inline
-    def setType(value: ParagraphType | RichText | Image | Table | Ink | Other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ParagraphType | RichText | Image | Table | Ink | Other): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

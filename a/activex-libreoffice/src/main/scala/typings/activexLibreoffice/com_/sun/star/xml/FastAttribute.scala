@@ -15,19 +15,15 @@ trait FastAttribute extends StObject {
 }
 object FastAttribute {
   
-  @scala.inline
-  def apply(Token: Double, Value: String): FastAttribute = {
+  inline def apply(Token: Double, Value: String): FastAttribute = {
     val __obj = js.Dynamic.literal(Token = Token.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FastAttribute]
   }
   
-  @scala.inline
-  implicit class FastAttributeMutableBuilder[Self <: FastAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: FastAttribute](x: Self) {
     
-    @scala.inline
-    def setToken(value: Double): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
+    inline def setToken(value: Double): Self = StObject.set(x, "Token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

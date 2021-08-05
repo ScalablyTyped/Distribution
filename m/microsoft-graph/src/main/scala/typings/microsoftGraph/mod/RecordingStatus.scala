@@ -16,18 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecordingStatus extends StObject
 object RecordingStatus {
   
-  @scala.inline
-  def failed: failed_ = "failed".asInstanceOf[failed_]
+  inline def failed: failed_ = "failed".asInstanceOf[failed_]
   
-  @scala.inline
-  def notRecording: typings.microsoftGraph.microsoftGraphStrings.notRecording = "notRecording".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notRecording]
+  inline def notRecording: typings.microsoftGraph.microsoftGraphStrings.notRecording = "notRecording".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notRecording]
   
-  @scala.inline
-  def recording: typings.microsoftGraph.microsoftGraphStrings.recording = "recording".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.recording]
+  inline def recording: typings.microsoftGraph.microsoftGraphStrings.recording = "recording".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.recording]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

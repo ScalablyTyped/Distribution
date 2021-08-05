@@ -19,19 +19,15 @@ trait GradientStop extends StObject {
 }
 object GradientStop {
   
-  @scala.inline
-  def apply(color: Color, offset: Double): GradientStop = {
+  inline def apply(color: Color, offset: Double): GradientStop = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientStop]
   }
   
-  @scala.inline
-  implicit class GradientStopMutableBuilder[Self <: GradientStop] (val x: Self) extends AnyVal {
+  extension [Self <: GradientStop](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
   }
 }

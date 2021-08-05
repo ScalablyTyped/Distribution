@@ -16,25 +16,19 @@ trait IPropertyValueSuggestion extends StObject {
 }
 object IPropertyValueSuggestion {
   
-  @scala.inline
-  def apply(Clone: () => IPropertyValueSuggestion, IsFact: Boolean, Quality: Double, TypedValue: ITypedValue): IPropertyValueSuggestion = {
+  inline def apply(Clone: () => IPropertyValueSuggestion, IsFact: Boolean, Quality: Double, TypedValue: ITypedValue): IPropertyValueSuggestion = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), IsFact = IsFact.asInstanceOf[js.Any], Quality = Quality.asInstanceOf[js.Any], TypedValue = TypedValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPropertyValueSuggestion]
   }
   
-  @scala.inline
-  implicit class IPropertyValueSuggestionMutableBuilder[Self <: IPropertyValueSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyValueSuggestion](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IPropertyValueSuggestion): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyValueSuggestion): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFact(value: Boolean): Self = StObject.set(x, "IsFact", value.asInstanceOf[js.Any])
+    inline def setIsFact(value: Boolean): Self = StObject.set(x, "IsFact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypedValue(value: ITypedValue): Self = StObject.set(x, "TypedValue", value.asInstanceOf[js.Any])
+    inline def setTypedValue(value: ITypedValue): Self = StObject.set(x, "TypedValue", value.asInstanceOf[js.Any])
   }
 }

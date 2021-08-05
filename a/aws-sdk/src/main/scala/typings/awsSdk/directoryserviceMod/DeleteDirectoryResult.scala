@@ -13,19 +13,15 @@ trait DeleteDirectoryResult extends StObject {
 }
 object DeleteDirectoryResult {
   
-  @scala.inline
-  def apply(): DeleteDirectoryResult = {
+  inline def apply(): DeleteDirectoryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteDirectoryResult]
   }
   
-  @scala.inline
-  implicit class DeleteDirectoryResultMutableBuilder[Self <: DeleteDirectoryResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDirectoryResult](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
   }
 }

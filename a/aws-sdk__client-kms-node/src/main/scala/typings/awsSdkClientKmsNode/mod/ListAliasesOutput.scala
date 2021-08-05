@@ -10,8 +10,7 @@ trait ListAliasesOutput
      with typings.awsSdkClientKmsNode.typesListAliasesOutputMod.ListAliasesOutput
 object ListAliasesOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): ListAliasesOutput = {
+  inline def apply($metadata: ResponseMetadata): ListAliasesOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAliasesOutput]
   }

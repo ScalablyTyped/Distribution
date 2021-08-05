@@ -10,19 +10,15 @@ trait LiveChatMessageRetractedDetails extends StObject {
 }
 object LiveChatMessageRetractedDetails {
   
-  @scala.inline
-  def apply(): LiveChatMessageRetractedDetails = {
+  inline def apply(): LiveChatMessageRetractedDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LiveChatMessageRetractedDetails]
   }
   
-  @scala.inline
-  implicit class LiveChatMessageRetractedDetailsMutableBuilder[Self <: LiveChatMessageRetractedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LiveChatMessageRetractedDetails](x: Self) {
     
-    @scala.inline
-    def setRetractedMessageId(value: String): Self = StObject.set(x, "retractedMessageId", value.asInstanceOf[js.Any])
+    inline def setRetractedMessageId(value: String): Self = StObject.set(x, "retractedMessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetractedMessageIdUndefined: Self = StObject.set(x, "retractedMessageId", js.undefined)
+    inline def setRetractedMessageIdUndefined: Self = StObject.set(x, "retractedMessageId", js.undefined)
   }
 }

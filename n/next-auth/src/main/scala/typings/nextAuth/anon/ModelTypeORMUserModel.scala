@@ -13,19 +13,15 @@ trait ModelTypeORMUserModel extends StObject {
 }
 object ModelTypeORMUserModel {
   
-  @scala.inline
-  def apply(model: TypeORMUserModel, schema: typings.nextAuth.adaptersMod.Schema[TypeORMUserModel]): ModelTypeORMUserModel = {
+  inline def apply(model: TypeORMUserModel, schema: typings.nextAuth.adaptersMod.Schema[TypeORMUserModel]): ModelTypeORMUserModel = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelTypeORMUserModel]
   }
   
-  @scala.inline
-  implicit class ModelTypeORMUserModelMutableBuilder[Self <: ModelTypeORMUserModel] (val x: Self) extends AnyVal {
+  extension [Self <: ModelTypeORMUserModel](x: Self) {
     
-    @scala.inline
-    def setModel(value: TypeORMUserModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: TypeORMUserModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: typings.nextAuth.adaptersMod.Schema[TypeORMUserModel]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: typings.nextAuth.adaptersMod.Schema[TypeORMUserModel]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

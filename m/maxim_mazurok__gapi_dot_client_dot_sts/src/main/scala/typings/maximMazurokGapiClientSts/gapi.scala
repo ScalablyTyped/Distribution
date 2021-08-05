@@ -35,44 +35,32 @@ object gapi {
       }
       object GoogleIdentityStsV1ExchangeTokenRequest {
         
-        @scala.inline
-        def apply(): GoogleIdentityStsV1ExchangeTokenRequest = {
+        inline def apply(): GoogleIdentityStsV1ExchangeTokenRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleIdentityStsV1ExchangeTokenRequest]
         }
         
-        @scala.inline
-        implicit class GoogleIdentityStsV1ExchangeTokenRequestMutableBuilder[Self <: GoogleIdentityStsV1ExchangeTokenRequest] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleIdentityStsV1ExchangeTokenRequest](x: Self) {
           
-          @scala.inline
-          def setGrantType(value: String): Self = StObject.set(x, "grantType", value.asInstanceOf[js.Any])
+          inline def setGrantType(value: String): Self = StObject.set(x, "grantType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setGrantTypeUndefined: Self = StObject.set(x, "grantType", js.undefined)
+          inline def setGrantTypeUndefined: Self = StObject.set(x, "grantType", js.undefined)
           
-          @scala.inline
-          def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+          inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+          inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
           
-          @scala.inline
-          def setRequestedTokenType(value: String): Self = StObject.set(x, "requestedTokenType", value.asInstanceOf[js.Any])
+          inline def setRequestedTokenType(value: String): Self = StObject.set(x, "requestedTokenType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRequestedTokenTypeUndefined: Self = StObject.set(x, "requestedTokenType", js.undefined)
+          inline def setRequestedTokenTypeUndefined: Self = StObject.set(x, "requestedTokenType", js.undefined)
           
-          @scala.inline
-          def setSubjectToken(value: String): Self = StObject.set(x, "subjectToken", value.asInstanceOf[js.Any])
+          inline def setSubjectToken(value: String): Self = StObject.set(x, "subjectToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSubjectTokenType(value: String): Self = StObject.set(x, "subjectTokenType", value.asInstanceOf[js.Any])
+          inline def setSubjectTokenType(value: String): Self = StObject.set(x, "subjectTokenType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSubjectTokenTypeUndefined: Self = StObject.set(x, "subjectTokenType", js.undefined)
+          inline def setSubjectTokenTypeUndefined: Self = StObject.set(x, "subjectTokenType", js.undefined)
           
-          @scala.inline
-          def setSubjectTokenUndefined: Self = StObject.set(x, "subjectToken", js.undefined)
+          inline def setSubjectTokenUndefined: Self = StObject.set(x, "subjectToken", js.undefined)
         }
       }
       
@@ -95,38 +83,28 @@ object gapi {
       }
       object GoogleIdentityStsV1ExchangeTokenResponse {
         
-        @scala.inline
-        def apply(): GoogleIdentityStsV1ExchangeTokenResponse = {
+        inline def apply(): GoogleIdentityStsV1ExchangeTokenResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleIdentityStsV1ExchangeTokenResponse]
         }
         
-        @scala.inline
-        implicit class GoogleIdentityStsV1ExchangeTokenResponseMutableBuilder[Self <: GoogleIdentityStsV1ExchangeTokenResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleIdentityStsV1ExchangeTokenResponse](x: Self) {
           
-          @scala.inline
-          def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+          inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+          inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
           
-          @scala.inline
-          def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+          inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExpires_inUndefined: Self = StObject.set(x, "expires_in", js.undefined)
+          inline def setExpires_inUndefined: Self = StObject.set(x, "expires_in", js.undefined)
           
-          @scala.inline
-          def setIssued_token_type(value: String): Self = StObject.set(x, "issued_token_type", value.asInstanceOf[js.Any])
+          inline def setIssued_token_type(value: String): Self = StObject.set(x, "issued_token_type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIssued_token_typeUndefined: Self = StObject.set(x, "issued_token_type", js.undefined)
+          inline def setIssued_token_typeUndefined: Self = StObject.set(x, "issued_token_type", js.undefined)
           
-          @scala.inline
-          def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
+          inline def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setToken_typeUndefined: Self = StObject.set(x, "token_type", js.undefined)
+          inline def setToken_typeUndefined: Self = StObject.set(x, "token_type", js.undefined)
         }
       }
       

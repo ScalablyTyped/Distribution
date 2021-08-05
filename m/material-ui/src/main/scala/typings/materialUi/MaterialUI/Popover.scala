@@ -28,32 +28,24 @@ object Popover {
   }
   object PopoverAnimationDefaultProps {
     
-    @scala.inline
-    def apply(open: Boolean): PopoverAnimationDefaultProps = {
+    inline def apply(open: Boolean): PopoverAnimationDefaultProps = {
       val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopoverAnimationDefaultProps]
     }
     
-    @scala.inline
-    implicit class PopoverAnimationDefaultPropsMutableBuilder[Self <: PopoverAnimationDefaultProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverAnimationDefaultProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
+      inline def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
+      inline def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
       
-      @scala.inline
-      def setZDepth(value: Double): Self = StObject.set(x, "zDepth", value.asInstanceOf[js.Any])
+      inline def setZDepth(value: Double): Self = StObject.set(x, "zDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZDepthUndefined: Self = StObject.set(x, "zDepth", js.undefined)
+      inline def setZDepthUndefined: Self = StObject.set(x, "zDepth", js.undefined)
     }
   }
   
@@ -65,23 +57,18 @@ object Popover {
   }
   object PopoverAnimationProps {
     
-    @scala.inline
-    def apply(open: Boolean): PopoverAnimationProps = {
+    inline def apply(open: Boolean): PopoverAnimationProps = {
       val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopoverAnimationProps]
     }
     
-    @scala.inline
-    implicit class PopoverAnimationPropsMutableBuilder[Self <: PopoverAnimationProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverAnimationProps](x: Self) {
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -99,32 +86,24 @@ object Popover {
   }
   object PopoverAnimationVerticalProps {
     
-    @scala.inline
-    def apply(open: Boolean): PopoverAnimationVerticalProps = {
+    inline def apply(open: Boolean): PopoverAnimationVerticalProps = {
       val __obj = js.Dynamic.literal(open = open.asInstanceOf[js.Any])
       __obj.asInstanceOf[PopoverAnimationVerticalProps]
     }
     
-    @scala.inline
-    implicit class PopoverAnimationVerticalPropsMutableBuilder[Self <: PopoverAnimationVerticalProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverAnimationVerticalProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
+      inline def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
+      inline def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
       
-      @scala.inline
-      def setZDepth(value: Double): Self = StObject.set(x, "zDepth", value.asInstanceOf[js.Any])
+      inline def setZDepth(value: Double): Self = StObject.set(x, "zDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZDepthUndefined: Self = StObject.set(x, "zDepth", js.undefined)
+      inline def setZDepthUndefined: Self = StObject.set(x, "zDepth", js.undefined)
     }
   }
   
@@ -158,92 +137,64 @@ object Popover {
   }
   object PopoverProps {
     
-    @scala.inline
-    def apply(): PopoverProps = {
+    inline def apply(): PopoverProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PopoverProps]
     }
     
-    @scala.inline
-    implicit class PopoverPropsMutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopoverProps](x: Self) {
       
-      @scala.inline
-      def setAnchorEl(value: ReactInstance): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
+      inline def setAnchorEl(value: ReactInstance): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorElUndefined: Self = StObject.set(x, "anchorEl", js.undefined)
+      inline def setAnchorElUndefined: Self = StObject.set(x, "anchorEl", js.undefined)
       
-      @scala.inline
-      def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
+      inline def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
+      inline def setAnchorOriginUndefined: Self = StObject.set(x, "anchorOrigin", js.undefined)
       
-      @scala.inline
-      def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: ComponentClass[PopoverAnimationProps, ComponentState]): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setAutoCloseWhenOffScreen(value: Boolean): Self = StObject.set(x, "autoCloseWhenOffScreen", value.asInstanceOf[js.Any])
+      inline def setAutoCloseWhenOffScreen(value: Boolean): Self = StObject.set(x, "autoCloseWhenOffScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCloseWhenOffScreenUndefined: Self = StObject.set(x, "autoCloseWhenOffScreen", js.undefined)
+      inline def setAutoCloseWhenOffScreenUndefined: Self = StObject.set(x, "autoCloseWhenOffScreen", js.undefined)
       
-      @scala.inline
-      def setCanAutoPosition(value: Boolean): Self = StObject.set(x, "canAutoPosition", value.asInstanceOf[js.Any])
+      inline def setCanAutoPosition(value: Boolean): Self = StObject.set(x, "canAutoPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanAutoPositionUndefined: Self = StObject.set(x, "canAutoPosition", js.undefined)
+      inline def setCanAutoPositionUndefined: Self = StObject.set(x, "canAutoPosition", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOnRequestClose(value: /* reason */ String => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
+      inline def setOnRequestClose(value: /* reason */ String => Unit): Self = StObject.set(x, "onRequestClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
+      inline def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
+      inline def setTargetOrigin(value: origin): Self = StObject.set(x, "targetOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
+      inline def setTargetOriginUndefined: Self = StObject.set(x, "targetOrigin", js.undefined)
       
-      @scala.inline
-      def setUseLayerForClickAway(value: Boolean): Self = StObject.set(x, "useLayerForClickAway", value.asInstanceOf[js.Any])
+      inline def setUseLayerForClickAway(value: Boolean): Self = StObject.set(x, "useLayerForClickAway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLayerForClickAwayUndefined: Self = StObject.set(x, "useLayerForClickAway", js.undefined)
+      inline def setUseLayerForClickAwayUndefined: Self = StObject.set(x, "useLayerForClickAway", js.undefined)
       
-      @scala.inline
-      def setZDepth(value: Double): Self = StObject.set(x, "zDepth", value.asInstanceOf[js.Any])
+      inline def setZDepth(value: Double): Self = StObject.set(x, "zDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZDepthUndefined: Self = StObject.set(x, "zDepth", js.undefined)
+      inline def setZDepthUndefined: Self = StObject.set(x, "zDepth", js.undefined)
     }
   }
 }

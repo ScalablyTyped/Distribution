@@ -312,58 +312,41 @@ object mod {
   
   object default {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       parent: js.UndefOr[Node | js.Array[Node] | Null],
       opts: js.UndefOr[TraverseOptions[Node]],
       scope: js.UndefOr[Scope],
       state: js.UndefOr[js.Any],
       parentPath: js.UndefOr[NodePath[Node]]
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](
+    inline def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](
       parent: js.Array[Node],
       opts: TraverseOptions[S],
       scope: Unit,
       state: S,
       parentPath: NodePath[Node]
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](
+    inline def apply[S](parent: js.Array[Node], opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](
       parent: js.Array[Node],
       opts: TraverseOptions[S],
       scope: Scope,
       state: S,
       parentPath: NodePath[Node]
     ): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Unit, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Unit, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Node, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Node, opts: TraverseOptions[S], scope: Unit, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def apply[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Null, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Null, opts: TraverseOptions[S], scope: Unit, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Null, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Unit, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Unit, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Node, opts: TraverseOptions[S], scope: Unit, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Node, opts: TraverseOptions[S], scope: Unit, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply[S](parent: Node, opts: TraverseOptions[S], scope: Scope, state: S, parentPath: NodePath[Node]): Unit = (^.asInstanceOf[js.Dynamic].apply(parent.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], state.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@babel/traverse", JSImport.Default)
     @js.native
@@ -372,28 +355,23 @@ object mod {
     @JSImport("@babel/traverse", "default.explode")
     @js.native
     def explode: FnCall = js.native
-    @scala.inline
-    def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
       */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
       */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any]]
-    @scala.inline
-    def explode_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("explode")(x.asInstanceOf[js.Any])
+    inline def explode_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("explode")(x.asInstanceOf[js.Any])
     
     @JSImport("@babel/traverse", "default.verify")
     @js.native
     def verify: js.Function1[/* visitor */ Visitor[js.Object], Unit] = js.native
-    @scala.inline
-    def verify(visitor: Visitor[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def verify_=(x: js.Function1[/* visitor */ Visitor[js.Object], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verify")(x.asInstanceOf[js.Any])
+    inline def verify(visitor: Visitor[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def verify_=(x: js.Function1[/* visitor */ Visitor[js.Object], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("verify")(x.asInstanceOf[js.Any])
     
     @JSImport("@babel/traverse", "default.visitors")
     @js.native
     def visitors: Typeofvisitors = js.native
-    @scala.inline
-    def visitors_=(x: Typeofvisitors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visitors")(x.asInstanceOf[js.Any])
+    inline def visitors_=(x: Typeofvisitors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("visitors")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@babel/traverse", "Binding")
@@ -2510,8 +2488,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def get[C /* <: Node */, K /* <: /* keyof C */ String */](opts: Container[C, K]): NodePath[
+    inline def get[C /* <: Node */, K /* <: /* keyof C */ String */](opts: Container[C, K]): NodePath[
         /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(opts.asInstanceOf[js.Any]).asInstanceOf[NodePath[
         /* import warning: importer.ImportType#apply Failed type conversion: C[K] */ js.Any
@@ -2674,20 +2651,16 @@ object mod {
       * - Visitors of virtual types are wrapped, so that they are only visited when their dynamic check passes
       * - `enter` and `exit` functions are wrapped in arrays, to ease merging of visitors
       */
-    @scala.inline
-    def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    inline def explode[S](visitor: Visitor[S]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
       */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("explode")(visitor.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ Type in 'AnyTypeAnnotation' | 'ArgumentPlaceholder' | 'ArrayExpression' | 'ArrayPattern' | 'ArrayTypeAnnotation' | 'ArrowFunctionExpression' | 'AssignmentExpression' | 'AssignmentPattern' | 'AwaitExpression' | 'BigIntLiteral' | 'BinaryExpression' | 'LogicalExpression' | 'BindExpression' | 'BlockStatement' | 'Program' | 'TSModuleBlock' | 'CatchClause' | 'DoWhileStatement' | 'ForInStatement' | 'ForStatement' | 'FunctionDeclaration' | 'FunctionExpression' | 'ObjectMethod' | 'SwitchStatement' | 'WhileStatement' | 'ForOfStatement' | 'ClassMethod' | 'ClassPrivateMethod' | 'StaticBlock' | 'BooleanLiteral' | 'BooleanLiteralTypeAnnotation' | 'BooleanTypeAnnotation' | 'BreakStatement' | 'CallExpression' | 'ClassExpression' | 'ClassDeclaration' | 'ClassBody' | 'ClassImplements' | 'ClassPrivateProperty' | 'ClassProperty' | 'ContinueStatement' | 'ReturnStatement' | 'ThrowStatement' | 'ConditionalExpression' | 'IfStatement' | 'DebuggerStatement' | 'DecimalLiteral' | 'VariableDeclaration' | 'ExportAllDeclaration' | 'ExportDefaultDeclaration' | 'ExportNamedDeclaration' | 'ImportDeclaration' | 'DeclareClass' | 'DeclareFunction' | 'DeclareInterface' | 'DeclareModule' | 'DeclareModuleExports' | 'DeclareTypeAlias' | 'DeclareOpaqueType' | 'DeclareVariable' | 'DeclareExportDeclaration' | 'DeclareExportAllDeclaration' | 'InterfaceDeclaration' | 'OpaqueType' | 'TypeAlias' | 'EnumDeclaration' | 'TSDeclareFunction' | 'TSInterfaceDeclaration' | 'TSTypeAliasDeclaration' | 'TSEnumDeclaration' | 'TSModuleDeclaration' | 'DeclaredPredicate' | 'Decorator' | 'Directive' | 'DirectiveLiteral' | 'DoExpression' | 'EmptyStatement' | 'EmptyTypeAnnotation' | 'EnumBooleanBody' | 'EnumNumberBody' | 'EnumStringBody' | 'EnumSymbolBody' | 'EnumBooleanMember' | 'EnumDefaultedMember' | 'EnumNumberMember' | 'EnumStringMember' | 'ExistsTypeAnnotation' | 'ExportDefaultSpecifier' | 'ExportNamespaceSpecifier' | 'ExportSpecifier' | 'Identifier' | 'StringLiteral' | 'NumericLiteral' | 'NullLiteral' | 'RegExpLiteral' | 'MemberExpression' | 'NewExpression' | 'ObjectExpression' | 'SequenceExpression' | 'ParenthesizedExpression' | 'ThisExpression' | 'UnaryExpression' | 'UpdateExpression' | 'MetaProperty' | 'Super' | 'TaggedTemplateExpression' | 'TemplateLiteral' | 'YieldExpression' | 'Import' | 'OptionalMemberExpression' | 'OptionalCallExpression' | 'TypeCastExpression' | 'JSXElement' | 'JSXFragment' | 'PipelinePrimaryTopicReference' | 'RecordExpression' | 'TupleExpression' | 'TSAsExpression' | 'TSTypeAssertion' | 'TSNonNullExpression' | 'ExpressionStatement' | 'File' | 'NullLiteralTypeAnnotation' | 'FunctionTypeAnnotation' | 'FunctionTypeParam' | 'GenericTypeAnnotation' | 'InferredPredicate' | 'InterfaceExtends' | 'InterfaceTypeAnnotation' | 'IntersectionTypeAnnotation' | 'MixedTypeAnnotation' | 'NullableTypeAnnotation' | 'NumberLiteralTypeAnnotation' | 'NumberTypeAnnotation' | 'ObjectTypeAnnotation' | 'ObjectTypeInternalSlot' | 'ObjectTypeCallProperty' | 'ObjectTypeIndexer' | 'ObjectTypeProperty' | 'ObjectTypeSpreadProperty' | 'QualifiedTypeIdentifier' | 'StringLiteralTypeAnnotation' | 'StringTypeAnnotation' | 'SymbolTypeAnnotation' | 'ThisTypeAnnotation' | 'TupleTypeAnnotation' | 'TypeofTypeAnnotation' | 'TypeAnnotation' | 'TypeParameter' | 'TypeParameterDeclaration' | 'TypeParameterInstantiation' | 'UnionTypeAnnotation' | 'Variance' | 'VoidTypeAnnotation' | 'JSXAttribute' | 'JSXClosingElement' | 'JSXExpressionContainer' | 'JSXSpreadChild' | 'JSXOpeningElement' | 'JSXText' | 'JSXOpeningFragment' | 'JSXClosingFragment' | 'ImportAttribute' | 'ImportDefaultSpecifier' | 'ImportNamespaceSpecifier' | 'ImportSpecifier' | 'InterpreterDirective' | 'JSXEmptyExpression' | 'JSXIdentifier' | 'JSXMemberExpression' | 'JSXNamespacedName' | 'JSXSpreadAttribute' | 'RestElement' | 'ObjectPattern' | 'TSParameterProperty' | 'LabeledStatement' | 'Noop' | 'ObjectProperty' | 'PipelineBareFunction' | 'PipelineTopicExpression' | 'Placeholder' | 'PrivateName' | 'SpreadElement' | 'TryStatement' | 'WithStatement' | 'TSImportEqualsDeclaration' | 'TSExportAssignment' | 'TSNamespaceExportDeclaration' | 'SwitchCase' | 'TSAnyKeyword' | 'TSArrayType' | 'TSBooleanKeyword' | 'TSBigIntKeyword' | 'TSIntrinsicKeyword' | 'TSNeverKeyword' | 'TSNullKeyword' | 'TSNumberKeyword' | 'TSObjectKeyword' | 'TSStringKeyword' | 'TSSymbolKeyword' | 'TSUndefinedKeyword' | 'TSUnknownKeyword' | 'TSVoidKeyword' | 'TSThisType' | 'TSLiteralType' | 'TSCallSignatureDeclaration' | 'TSConditionalType' | 'TSConstructSignatureDeclaration' | 'TSConstructorType' | 'TSDeclareMethod' | 'TSQualifiedName' | 'TSEnumMember' | 'TSExpressionWithTypeArguments' | 'TSExternalModuleReference' | 'TSFunctionType' | 'TSImportType' | 'TSIndexSignature' | 'TSIndexedAccessType' | 'TSInferType' | 'TSInterfaceBody' | 'TSIntersectionType' | 'TSMappedType' | 'TSMethodSignature' | 'TSNamedTupleMember' | 'TSOptionalType' | 'TSParenthesizedType' | 'TSPropertySignature' | 'TSRestType' | 'TSTupleType' | 'TSTypeReference' | 'TSTypePredicate' | 'TSTypeQuery' | 'TSTypeLiteral' | 'TSUnionType' | 'TSTypeOperator' | 'TSTypeAnnotation' | 'TSTypeParameter' | 'TSTypeParameterDeclaration' | 'TSTypeParameterInstantiation' | 'TemplateElement' | 'V8IntrinsicIdentifier' | 'VariableDeclarator' ]:? @babel/traverse.@babel/traverse.VisitNodeObject<S, std.Extract<@babel/types.@babel/types.Node, {  type :Type}>>}
       */ typings.babelTraverse.babelTraverseStrings.explode & TopLevel[js.Any]]
     
-    @scala.inline
-    def merge[S](visitors: js.Array[Visitor[S]]): Visitor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any]).asInstanceOf[Visitor[js.Any]]
-    @scala.inline
-    def merge[S](visitors: js.Array[Visitor[S]], states: js.Array[S]): Visitor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any], states.asInstanceOf[js.Any])).asInstanceOf[Visitor[js.Any]]
+    inline def merge[S](visitors: js.Array[Visitor[S]]): Visitor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any]).asInstanceOf[Visitor[js.Any]]
+    inline def merge[S](visitors: js.Array[Visitor[S]], states: js.Array[S]): Visitor[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(visitors.asInstanceOf[js.Any], states.asInstanceOf[js.Any])).asInstanceOf[Visitor[js.Any]]
     
-    @scala.inline
-    def verify(visitor: Visitor[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def verify(visitor: Visitor[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(visitor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type ArrayKeys[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof T ]: T[P] extends std.Array<any>? P : never}[keyof T] */ js.Any
@@ -2704,8 +2677,7 @@ object mod {
   }
   object HubInterface {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addHelper: String => js.Any,
       buildError: (Node, String, Instantiable1[/* message */ js.UndefOr[String], js.Any]) => js.Any,
       getCode: () => js.UndefOr[String],
@@ -2715,20 +2687,15 @@ object mod {
       __obj.asInstanceOf[HubInterface]
     }
     
-    @scala.inline
-    implicit class HubInterfaceMutableBuilder[Self <: HubInterface] (val x: Self) extends AnyVal {
+    extension [Self <: HubInterface](x: Self) {
       
-      @scala.inline
-      def setAddHelper(value: String => js.Any): Self = StObject.set(x, "addHelper", js.Any.fromFunction1(value))
+      inline def setAddHelper(value: String => js.Any): Self = StObject.set(x, "addHelper", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBuildError(value: (Node, String, Instantiable1[/* message */ js.UndefOr[String], js.Any]) => js.Any): Self = StObject.set(x, "buildError", js.Any.fromFunction3(value))
+      inline def setBuildError(value: (Node, String, Instantiable1[/* message */ js.UndefOr[String], js.Any]) => js.Any): Self = StObject.set(x, "buildError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetCode(value: () => js.UndefOr[String]): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+      inline def setGetCode(value: () => js.UndefOr[String]): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScope(value: () => js.UndefOr[Scope]): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+      inline def setGetScope(value: () => js.UndefOr[Scope]): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     }
   }
   
@@ -2748,26 +2715,20 @@ object mod {
   }
   object TraversalContext {
     
-    @scala.inline
-    def apply(opts: js.Any, parentPath: NodePath[Node], scope: Scope, state: js.Any): TraversalContext = {
+    inline def apply(opts: js.Any, parentPath: NodePath[Node], scope: Scope, state: js.Any): TraversalContext = {
       val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any], parentPath = parentPath.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[TraversalContext]
     }
     
-    @scala.inline
-    implicit class TraversalContextMutableBuilder[Self <: TraversalContext] (val x: Self) extends AnyVal {
+    extension [Self <: TraversalContext](x: Self) {
       
-      @scala.inline
-      def setOpts(value: js.Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: js.Any): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentPath(value: NodePath[Node]): Self = StObject.set(x, "parentPath", value.asInstanceOf[js.Any])
+      inline def setParentPath(value: NodePath[Node]): Self = StObject.set(x, "parentPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2781,26 +2742,20 @@ object mod {
   }
   object TraverseOptions {
     
-    @scala.inline
-    def apply[S](): TraverseOptions[S] = {
+    inline def apply[S](): TraverseOptions[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TraverseOptions[S]]
     }
     
-    @scala.inline
-    implicit class TraverseOptionsMutableBuilder[Self <: TraverseOptions[?], S] (val x: Self & TraverseOptions[S]) extends AnyVal {
+    extension [Self <: TraverseOptions[?], S](x: Self & TraverseOptions[S]) {
       
-      @scala.inline
-      def setNoScope(value: Boolean): Self = StObject.set(x, "noScope", value.asInstanceOf[js.Any])
+      inline def setNoScope(value: Boolean): Self = StObject.set(x, "noScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoScopeUndefined: Self = StObject.set(x, "noScope", js.undefined)
+      inline def setNoScopeUndefined: Self = StObject.set(x, "noScope", js.undefined)
       
-      @scala.inline
-      def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -2816,26 +2771,20 @@ object mod {
   }
   object VisitNodeObject {
     
-    @scala.inline
-    def apply[S, P /* <: Node */](): VisitNodeObject[S, P] = {
+    inline def apply[S, P /* <: Node */](): VisitNodeObject[S, P] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VisitNodeObject[S, P]]
     }
     
-    @scala.inline
-    implicit class VisitNodeObjectMutableBuilder[Self <: VisitNodeObject[?, ?], S, P /* <: Node */] (val x: Self & (VisitNodeObject[S, P])) extends AnyVal {
+    extension [Self <: VisitNodeObject[?, ?], S, P /* <: Node */](x: Self & (VisitNodeObject[S, P])) {
       
-      @scala.inline
-      def setEnter(value: VisitNodeFunction[S, P]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: VisitNodeFunction[S, P]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setExit(value: VisitNodeFunction[S, P]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: VisitNodeFunction[S, P]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+      inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
     }
   }
   
@@ -3422,1748 +3371,1168 @@ object mod {
   }
   object Visitor {
     
-    @scala.inline
-    def apply[S](): Visitor[S] = {
+    inline def apply[S](): Visitor[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Visitor[S]]
     }
     
-    @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor[?], S] (val x: Self & Visitor[S]) extends AnyVal {
+    extension [Self <: Visitor[?], S](x: Self & Visitor[S]) {
       
-      @scala.inline
-      def setAnyTypeAnnotation(value: VisitNode[S, Extract[Node, `64`]]): Self = StObject.set(x, "AnyTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setAnyTypeAnnotation(value: VisitNode[S, Extract[Node, `64`]]): Self = StObject.set(x, "AnyTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnyTypeAnnotationUndefined: Self = StObject.set(x, "AnyTypeAnnotation", js.undefined)
+      inline def setAnyTypeAnnotationUndefined: Self = StObject.set(x, "AnyTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setArgumentPlaceholder(value: VisitNode[S, Extract[Node, `232`]]): Self = StObject.set(x, "ArgumentPlaceholder", value.asInstanceOf[js.Any])
+      inline def setArgumentPlaceholder(value: VisitNode[S, Extract[Node, `232`]]): Self = StObject.set(x, "ArgumentPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentPlaceholderUndefined: Self = StObject.set(x, "ArgumentPlaceholder", js.undefined)
+      inline def setArgumentPlaceholderUndefined: Self = StObject.set(x, "ArgumentPlaceholder", js.undefined)
       
-      @scala.inline
-      def setArrayExpression(value: VisitNode[S, Extract[Node, `55`]]): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
+      inline def setArrayExpression(value: VisitNode[S, Extract[Node, `55`]]): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayExpressionUndefined: Self = StObject.set(x, "ArrayExpression", js.undefined)
+      inline def setArrayExpressionUndefined: Self = StObject.set(x, "ArrayExpression", js.undefined)
       
-      @scala.inline
-      def setArrayPattern(value: VisitNode[S, Extract[Node, `112`]]): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
+      inline def setArrayPattern(value: VisitNode[S, Extract[Node, `112`]]): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayPatternUndefined: Self = StObject.set(x, "ArrayPattern", js.undefined)
+      inline def setArrayPatternUndefined: Self = StObject.set(x, "ArrayPattern", js.undefined)
       
-      @scala.inline
-      def setArrayTypeAnnotation(value: VisitNode[S, Extract[Node, `84`]]): Self = StObject.set(x, "ArrayTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setArrayTypeAnnotation(value: VisitNode[S, Extract[Node, `84`]]): Self = StObject.set(x, "ArrayTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayTypeAnnotationUndefined: Self = StObject.set(x, "ArrayTypeAnnotation", js.undefined)
+      inline def setArrayTypeAnnotationUndefined: Self = StObject.set(x, "ArrayTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setArrowFunctionExpression(value: VisitNode[S, Extract[Node, `143`]]): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
+      inline def setArrowFunctionExpression(value: VisitNode[S, Extract[Node, `143`]]): Self = StObject.set(x, "ArrowFunctionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowFunctionExpressionUndefined: Self = StObject.set(x, "ArrowFunctionExpression", js.undefined)
+      inline def setArrowFunctionExpressionUndefined: Self = StObject.set(x, "ArrowFunctionExpression", js.undefined)
       
-      @scala.inline
-      def setAssignmentExpression(value: VisitNode[S, Extract[Node, `132`]]): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
+      inline def setAssignmentExpression(value: VisitNode[S, Extract[Node, `132`]]): Self = StObject.set(x, "AssignmentExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignmentExpressionUndefined: Self = StObject.set(x, "AssignmentExpression", js.undefined)
+      inline def setAssignmentExpressionUndefined: Self = StObject.set(x, "AssignmentExpression", js.undefined)
       
-      @scala.inline
-      def setAssignmentPattern(value: VisitNode[S, Extract[Node, `63`]]): Self = StObject.set(x, "AssignmentPattern", value.asInstanceOf[js.Any])
+      inline def setAssignmentPattern(value: VisitNode[S, Extract[Node, `63`]]): Self = StObject.set(x, "AssignmentPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignmentPatternUndefined: Self = StObject.set(x, "AssignmentPattern", js.undefined)
+      inline def setAssignmentPatternUndefined: Self = StObject.set(x, "AssignmentPattern", js.undefined)
       
-      @scala.inline
-      def setAwaitExpression(value: VisitNode[S, Extract[Node, `110`]]): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
+      inline def setAwaitExpression(value: VisitNode[S, Extract[Node, `110`]]): Self = StObject.set(x, "AwaitExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwaitExpressionUndefined: Self = StObject.set(x, "AwaitExpression", js.undefined)
+      inline def setAwaitExpressionUndefined: Self = StObject.set(x, "AwaitExpression", js.undefined)
       
-      @scala.inline
-      def setBigIntLiteral(value: VisitNode[S, Extract[Node, `179`]]): Self = StObject.set(x, "BigIntLiteral", value.asInstanceOf[js.Any])
+      inline def setBigIntLiteral(value: VisitNode[S, Extract[Node, `179`]]): Self = StObject.set(x, "BigIntLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBigIntLiteralUndefined: Self = StObject.set(x, "BigIntLiteral", js.undefined)
+      inline def setBigIntLiteralUndefined: Self = StObject.set(x, "BigIntLiteral", js.undefined)
       
-      @scala.inline
-      def setBinary(value: VisitNode[S, Binary]): Self = StObject.set(x, "Binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: VisitNode[S, Binary]): Self = StObject.set(x, "Binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryExpression(value: VisitNode[S, Extract[Node, `87`]]): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
+      inline def setBinaryExpression(value: VisitNode[S, Extract[Node, `87`]]): Self = StObject.set(x, "BinaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryExpressionUndefined: Self = StObject.set(x, "BinaryExpression", js.undefined)
+      inline def setBinaryExpressionUndefined: Self = StObject.set(x, "BinaryExpression", js.undefined)
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "Binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "Binary", js.undefined)
       
-      @scala.inline
-      def setBindExpression(value: VisitNode[S, Extract[Node, `77`]]): Self = StObject.set(x, "BindExpression", value.asInstanceOf[js.Any])
+      inline def setBindExpression(value: VisitNode[S, Extract[Node, `77`]]): Self = StObject.set(x, "BindExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindExpressionUndefined: Self = StObject.set(x, "BindExpression", js.undefined)
+      inline def setBindExpressionUndefined: Self = StObject.set(x, "BindExpression", js.undefined)
       
-      @scala.inline
-      def setBlock(value: VisitNode[S, Block]): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: VisitNode[S, Block]): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockParent(value: VisitNode[S, BlockParent]): Self = StObject.set(x, "BlockParent", value.asInstanceOf[js.Any])
+      inline def setBlockParent(value: VisitNode[S, BlockParent]): Self = StObject.set(x, "BlockParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockParentUndefined: Self = StObject.set(x, "BlockParent", js.undefined)
+      inline def setBlockParentUndefined: Self = StObject.set(x, "BlockParent", js.undefined)
       
-      @scala.inline
-      def setBlockStatement(value: VisitNode[S, Extract[Node, `24`]]): Self = StObject.set(x, "BlockStatement", value.asInstanceOf[js.Any])
+      inline def setBlockStatement(value: VisitNode[S, Extract[Node, `24`]]): Self = StObject.set(x, "BlockStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockStatementUndefined: Self = StObject.set(x, "BlockStatement", js.undefined)
+      inline def setBlockStatementUndefined: Self = StObject.set(x, "BlockStatement", js.undefined)
       
-      @scala.inline
-      def setBlockUndefined: Self = StObject.set(x, "Block", js.undefined)
+      inline def setBlockUndefined: Self = StObject.set(x, "Block", js.undefined)
       
-      @scala.inline
-      def setBooleanLiteral(value: VisitNode[S, Extract[Node, `129`]]): Self = StObject.set(x, "BooleanLiteral", value.asInstanceOf[js.Any])
+      inline def setBooleanLiteral(value: VisitNode[S, Extract[Node, `129`]]): Self = StObject.set(x, "BooleanLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBooleanLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `173`]]): Self = StObject.set(x, "BooleanLiteralTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setBooleanLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `173`]]): Self = StObject.set(x, "BooleanLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBooleanLiteralTypeAnnotationUndefined: Self = StObject.set(x, "BooleanLiteralTypeAnnotation", js.undefined)
+      inline def setBooleanLiteralTypeAnnotationUndefined: Self = StObject.set(x, "BooleanLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setBooleanLiteralUndefined: Self = StObject.set(x, "BooleanLiteral", js.undefined)
+      inline def setBooleanLiteralUndefined: Self = StObject.set(x, "BooleanLiteral", js.undefined)
       
-      @scala.inline
-      def setBooleanTypeAnnotation(value: VisitNode[S, Extract[Node, `178`]]): Self = StObject.set(x, "BooleanTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setBooleanTypeAnnotation(value: VisitNode[S, Extract[Node, `178`]]): Self = StObject.set(x, "BooleanTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBooleanTypeAnnotationUndefined: Self = StObject.set(x, "BooleanTypeAnnotation", js.undefined)
+      inline def setBooleanTypeAnnotationUndefined: Self = StObject.set(x, "BooleanTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setBreakStatement(value: VisitNode[S, Extract[Node, `1`]]): Self = StObject.set(x, "BreakStatement", value.asInstanceOf[js.Any])
+      inline def setBreakStatement(value: VisitNode[S, Extract[Node, `1`]]): Self = StObject.set(x, "BreakStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakStatementUndefined: Self = StObject.set(x, "BreakStatement", js.undefined)
+      inline def setBreakStatementUndefined: Self = StObject.set(x, "BreakStatement", js.undefined)
       
-      @scala.inline
-      def setCallExpression(value: VisitNode[S, Extract[Node, `46`]]): Self = StObject.set(x, "CallExpression", value.asInstanceOf[js.Any])
+      inline def setCallExpression(value: VisitNode[S, Extract[Node, `46`]]): Self = StObject.set(x, "CallExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallExpressionUndefined: Self = StObject.set(x, "CallExpression", js.undefined)
+      inline def setCallExpressionUndefined: Self = StObject.set(x, "CallExpression", js.undefined)
       
-      @scala.inline
-      def setCatchClause(value: VisitNode[S, Extract[Node, `171`]]): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
+      inline def setCatchClause(value: VisitNode[S, Extract[Node, `171`]]): Self = StObject.set(x, "CatchClause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCatchClauseUndefined: Self = StObject.set(x, "CatchClause", js.undefined)
+      inline def setCatchClauseUndefined: Self = StObject.set(x, "CatchClause", js.undefined)
       
-      @scala.inline
-      def setClass(value: VisitNode[S, Class]): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+      inline def setClass(value: VisitNode[S, Class]): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassBody(value: VisitNode[S, Extract[Node, `225`]]): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
+      inline def setClassBody(value: VisitNode[S, Extract[Node, `225`]]): Self = StObject.set(x, "ClassBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassBodyUndefined: Self = StObject.set(x, "ClassBody", js.undefined)
+      inline def setClassBodyUndefined: Self = StObject.set(x, "ClassBody", js.undefined)
       
-      @scala.inline
-      def setClassDeclaration(value: VisitNode[S, Extract[Node, `106`]]): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
+      inline def setClassDeclaration(value: VisitNode[S, Extract[Node, `106`]]): Self = StObject.set(x, "ClassDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassDeclarationUndefined: Self = StObject.set(x, "ClassDeclaration", js.undefined)
+      inline def setClassDeclarationUndefined: Self = StObject.set(x, "ClassDeclaration", js.undefined)
       
-      @scala.inline
-      def setClassExpression(value: VisitNode[S, Extract[Node, Type]]): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
+      inline def setClassExpression(value: VisitNode[S, Extract[Node, Type]]): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassExpressionUndefined: Self = StObject.set(x, "ClassExpression", js.undefined)
+      inline def setClassExpressionUndefined: Self = StObject.set(x, "ClassExpression", js.undefined)
       
-      @scala.inline
-      def setClassImplements(value: VisitNode[S, Extract[Node, `207`]]): Self = StObject.set(x, "ClassImplements", value.asInstanceOf[js.Any])
+      inline def setClassImplements(value: VisitNode[S, Extract[Node, `207`]]): Self = StObject.set(x, "ClassImplements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassImplementsUndefined: Self = StObject.set(x, "ClassImplements", js.undefined)
+      inline def setClassImplementsUndefined: Self = StObject.set(x, "ClassImplements", js.undefined)
       
-      @scala.inline
-      def setClassMethod(value: VisitNode[S, Extract[Node, `184`]]): Self = StObject.set(x, "ClassMethod", value.asInstanceOf[js.Any])
+      inline def setClassMethod(value: VisitNode[S, Extract[Node, `184`]]): Self = StObject.set(x, "ClassMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassMethodUndefined: Self = StObject.set(x, "ClassMethod", js.undefined)
+      inline def setClassMethodUndefined: Self = StObject.set(x, "ClassMethod", js.undefined)
       
-      @scala.inline
-      def setClassPrivateMethod(value: VisitNode[S, Extract[Node, `228`]]): Self = StObject.set(x, "ClassPrivateMethod", value.asInstanceOf[js.Any])
+      inline def setClassPrivateMethod(value: VisitNode[S, Extract[Node, `228`]]): Self = StObject.set(x, "ClassPrivateMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassPrivateMethodUndefined: Self = StObject.set(x, "ClassPrivateMethod", js.undefined)
+      inline def setClassPrivateMethodUndefined: Self = StObject.set(x, "ClassPrivateMethod", js.undefined)
       
-      @scala.inline
-      def setClassPrivateProperty(value: VisitNode[S, Extract[Node, `223`]]): Self = StObject.set(x, "ClassPrivateProperty", value.asInstanceOf[js.Any])
+      inline def setClassPrivateProperty(value: VisitNode[S, Extract[Node, `223`]]): Self = StObject.set(x, "ClassPrivateProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassPrivatePropertyUndefined: Self = StObject.set(x, "ClassPrivateProperty", js.undefined)
+      inline def setClassPrivatePropertyUndefined: Self = StObject.set(x, "ClassPrivateProperty", js.undefined)
       
-      @scala.inline
-      def setClassProperty(value: VisitNode[S, Extract[Node, `187`]]): Self = StObject.set(x, "ClassProperty", value.asInstanceOf[js.Any])
+      inline def setClassProperty(value: VisitNode[S, Extract[Node, `187`]]): Self = StObject.set(x, "ClassProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassPropertyUndefined: Self = StObject.set(x, "ClassProperty", js.undefined)
+      inline def setClassPropertyUndefined: Self = StObject.set(x, "ClassProperty", js.undefined)
       
-      @scala.inline
-      def setClassUndefined: Self = StObject.set(x, "Class", js.undefined)
+      inline def setClassUndefined: Self = StObject.set(x, "Class", js.undefined)
       
-      @scala.inline
-      def setCompletionStatement(value: VisitNode[S, CompletionStatement]): Self = StObject.set(x, "CompletionStatement", value.asInstanceOf[js.Any])
+      inline def setCompletionStatement(value: VisitNode[S, CompletionStatement]): Self = StObject.set(x, "CompletionStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletionStatementUndefined: Self = StObject.set(x, "CompletionStatement", js.undefined)
+      inline def setCompletionStatementUndefined: Self = StObject.set(x, "CompletionStatement", js.undefined)
       
-      @scala.inline
-      def setConditional(value: VisitNode[S, Conditional]): Self = StObject.set(x, "Conditional", value.asInstanceOf[js.Any])
+      inline def setConditional(value: VisitNode[S, Conditional]): Self = StObject.set(x, "Conditional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalExpression(value: VisitNode[S, Extract[Node, `165`]]): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
+      inline def setConditionalExpression(value: VisitNode[S, Extract[Node, `165`]]): Self = StObject.set(x, "ConditionalExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalExpressionUndefined: Self = StObject.set(x, "ConditionalExpression", js.undefined)
+      inline def setConditionalExpressionUndefined: Self = StObject.set(x, "ConditionalExpression", js.undefined)
       
-      @scala.inline
-      def setConditionalUndefined: Self = StObject.set(x, "Conditional", js.undefined)
+      inline def setConditionalUndefined: Self = StObject.set(x, "Conditional", js.undefined)
       
-      @scala.inline
-      def setContinueStatement(value: VisitNode[S, Extract[Node, `39`]]): Self = StObject.set(x, "ContinueStatement", value.asInstanceOf[js.Any])
+      inline def setContinueStatement(value: VisitNode[S, Extract[Node, `39`]]): Self = StObject.set(x, "ContinueStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinueStatementUndefined: Self = StObject.set(x, "ContinueStatement", js.undefined)
+      inline def setContinueStatementUndefined: Self = StObject.set(x, "ContinueStatement", js.undefined)
       
-      @scala.inline
-      def setDebuggerStatement(value: VisitNode[S, Extract[Node, `135`]]): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
+      inline def setDebuggerStatement(value: VisitNode[S, Extract[Node, `135`]]): Self = StObject.set(x, "DebuggerStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebuggerStatementUndefined: Self = StObject.set(x, "DebuggerStatement", js.undefined)
+      inline def setDebuggerStatementUndefined: Self = StObject.set(x, "DebuggerStatement", js.undefined)
       
-      @scala.inline
-      def setDecimalLiteral(value: VisitNode[S, Extract[Node, `201`]]): Self = StObject.set(x, "DecimalLiteral", value.asInstanceOf[js.Any])
+      inline def setDecimalLiteral(value: VisitNode[S, Extract[Node, `201`]]): Self = StObject.set(x, "DecimalLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalLiteralUndefined: Self = StObject.set(x, "DecimalLiteral", js.undefined)
+      inline def setDecimalLiteralUndefined: Self = StObject.set(x, "DecimalLiteral", js.undefined)
       
-      @scala.inline
-      def setDeclaration(value: VisitNode[S, Declaration]): Self = StObject.set(x, "Declaration", value.asInstanceOf[js.Any])
+      inline def setDeclaration(value: VisitNode[S, Declaration]): Self = StObject.set(x, "Declaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclarationUndefined: Self = StObject.set(x, "Declaration", js.undefined)
+      inline def setDeclarationUndefined: Self = StObject.set(x, "Declaration", js.undefined)
       
-      @scala.inline
-      def setDeclareClass(value: VisitNode[S, Extract[Node, `235`]]): Self = StObject.set(x, "DeclareClass", value.asInstanceOf[js.Any])
+      inline def setDeclareClass(value: VisitNode[S, Extract[Node, `235`]]): Self = StObject.set(x, "DeclareClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareClassUndefined: Self = StObject.set(x, "DeclareClass", js.undefined)
+      inline def setDeclareClassUndefined: Self = StObject.set(x, "DeclareClass", js.undefined)
       
-      @scala.inline
-      def setDeclareExportAllDeclaration(value: VisitNode[S, Extract[Node, `107`]]): Self = StObject.set(x, "DeclareExportAllDeclaration", value.asInstanceOf[js.Any])
+      inline def setDeclareExportAllDeclaration(value: VisitNode[S, Extract[Node, `107`]]): Self = StObject.set(x, "DeclareExportAllDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareExportAllDeclarationUndefined: Self = StObject.set(x, "DeclareExportAllDeclaration", js.undefined)
+      inline def setDeclareExportAllDeclarationUndefined: Self = StObject.set(x, "DeclareExportAllDeclaration", js.undefined)
       
-      @scala.inline
-      def setDeclareExportDeclaration(value: VisitNode[S, Extract[Node, `153`]]): Self = StObject.set(x, "DeclareExportDeclaration", value.asInstanceOf[js.Any])
+      inline def setDeclareExportDeclaration(value: VisitNode[S, Extract[Node, `153`]]): Self = StObject.set(x, "DeclareExportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareExportDeclarationUndefined: Self = StObject.set(x, "DeclareExportDeclaration", js.undefined)
+      inline def setDeclareExportDeclarationUndefined: Self = StObject.set(x, "DeclareExportDeclaration", js.undefined)
       
-      @scala.inline
-      def setDeclareFunction(value: VisitNode[S, Extract[Node, `102`]]): Self = StObject.set(x, "DeclareFunction", value.asInstanceOf[js.Any])
+      inline def setDeclareFunction(value: VisitNode[S, Extract[Node, `102`]]): Self = StObject.set(x, "DeclareFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareFunctionUndefined: Self = StObject.set(x, "DeclareFunction", js.undefined)
+      inline def setDeclareFunctionUndefined: Self = StObject.set(x, "DeclareFunction", js.undefined)
       
-      @scala.inline
-      def setDeclareInterface(value: VisitNode[S, Extract[Node, `156`]]): Self = StObject.set(x, "DeclareInterface", value.asInstanceOf[js.Any])
+      inline def setDeclareInterface(value: VisitNode[S, Extract[Node, `156`]]): Self = StObject.set(x, "DeclareInterface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareInterfaceUndefined: Self = StObject.set(x, "DeclareInterface", js.undefined)
+      inline def setDeclareInterfaceUndefined: Self = StObject.set(x, "DeclareInterface", js.undefined)
       
-      @scala.inline
-      def setDeclareModule(value: VisitNode[S, Extract[Node, `34`]]): Self = StObject.set(x, "DeclareModule", value.asInstanceOf[js.Any])
+      inline def setDeclareModule(value: VisitNode[S, Extract[Node, `34`]]): Self = StObject.set(x, "DeclareModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareModuleExports(value: VisitNode[S, Extract[Node, `216`]]): Self = StObject.set(x, "DeclareModuleExports", value.asInstanceOf[js.Any])
+      inline def setDeclareModuleExports(value: VisitNode[S, Extract[Node, `216`]]): Self = StObject.set(x, "DeclareModuleExports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareModuleExportsUndefined: Self = StObject.set(x, "DeclareModuleExports", js.undefined)
+      inline def setDeclareModuleExportsUndefined: Self = StObject.set(x, "DeclareModuleExports", js.undefined)
       
-      @scala.inline
-      def setDeclareModuleUndefined: Self = StObject.set(x, "DeclareModule", js.undefined)
+      inline def setDeclareModuleUndefined: Self = StObject.set(x, "DeclareModule", js.undefined)
       
-      @scala.inline
-      def setDeclareOpaqueType(value: VisitNode[S, Extract[Node, `222`]]): Self = StObject.set(x, "DeclareOpaqueType", value.asInstanceOf[js.Any])
+      inline def setDeclareOpaqueType(value: VisitNode[S, Extract[Node, `222`]]): Self = StObject.set(x, "DeclareOpaqueType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareOpaqueTypeUndefined: Self = StObject.set(x, "DeclareOpaqueType", js.undefined)
+      inline def setDeclareOpaqueTypeUndefined: Self = StObject.set(x, "DeclareOpaqueType", js.undefined)
       
-      @scala.inline
-      def setDeclareTypeAlias(value: VisitNode[S, Extract[Node, `162`]]): Self = StObject.set(x, "DeclareTypeAlias", value.asInstanceOf[js.Any])
+      inline def setDeclareTypeAlias(value: VisitNode[S, Extract[Node, `162`]]): Self = StObject.set(x, "DeclareTypeAlias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareTypeAliasUndefined: Self = StObject.set(x, "DeclareTypeAlias", js.undefined)
+      inline def setDeclareTypeAliasUndefined: Self = StObject.set(x, "DeclareTypeAlias", js.undefined)
       
-      @scala.inline
-      def setDeclareVariable(value: VisitNode[S, Extract[Node, `177`]]): Self = StObject.set(x, "DeclareVariable", value.asInstanceOf[js.Any])
+      inline def setDeclareVariable(value: VisitNode[S, Extract[Node, `177`]]): Self = StObject.set(x, "DeclareVariable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclareVariableUndefined: Self = StObject.set(x, "DeclareVariable", js.undefined)
+      inline def setDeclareVariableUndefined: Self = StObject.set(x, "DeclareVariable", js.undefined)
       
-      @scala.inline
-      def setDeclaredPredicate(value: VisitNode[S, Extract[Node, `183`]]): Self = StObject.set(x, "DeclaredPredicate", value.asInstanceOf[js.Any])
+      inline def setDeclaredPredicate(value: VisitNode[S, Extract[Node, `183`]]): Self = StObject.set(x, "DeclaredPredicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclaredPredicateUndefined: Self = StObject.set(x, "DeclaredPredicate", js.undefined)
+      inline def setDeclaredPredicateUndefined: Self = StObject.set(x, "DeclaredPredicate", js.undefined)
       
-      @scala.inline
-      def setDecorator(value: VisitNode[S, Extract[Node, `80`]]): Self = StObject.set(x, "Decorator", value.asInstanceOf[js.Any])
+      inline def setDecorator(value: VisitNode[S, Extract[Node, `80`]]): Self = StObject.set(x, "Decorator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoratorUndefined: Self = StObject.set(x, "Decorator", js.undefined)
+      inline def setDecoratorUndefined: Self = StObject.set(x, "Decorator", js.undefined)
       
-      @scala.inline
-      def setDirective(value: VisitNode[S, Extract[Node, `62`]]): Self = StObject.set(x, "Directive", value.asInstanceOf[js.Any])
+      inline def setDirective(value: VisitNode[S, Extract[Node, `62`]]): Self = StObject.set(x, "Directive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectiveLiteral(value: VisitNode[S, Extract[Node, `140`]]): Self = StObject.set(x, "DirectiveLiteral", value.asInstanceOf[js.Any])
+      inline def setDirectiveLiteral(value: VisitNode[S, Extract[Node, `140`]]): Self = StObject.set(x, "DirectiveLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectiveLiteralUndefined: Self = StObject.set(x, "DirectiveLiteral", js.undefined)
+      inline def setDirectiveLiteralUndefined: Self = StObject.set(x, "DirectiveLiteral", js.undefined)
       
-      @scala.inline
-      def setDirectiveUndefined: Self = StObject.set(x, "Directive", js.undefined)
+      inline def setDirectiveUndefined: Self = StObject.set(x, "Directive", js.undefined)
       
-      @scala.inline
-      def setDoExpression(value: VisitNode[S, Extract[Node, `212`]]): Self = StObject.set(x, "DoExpression", value.asInstanceOf[js.Any])
+      inline def setDoExpression(value: VisitNode[S, Extract[Node, `212`]]): Self = StObject.set(x, "DoExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoExpressionUndefined: Self = StObject.set(x, "DoExpression", js.undefined)
+      inline def setDoExpressionUndefined: Self = StObject.set(x, "DoExpression", js.undefined)
       
-      @scala.inline
-      def setDoWhileStatement(value: VisitNode[S, Extract[Node, `195`]]): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
+      inline def setDoWhileStatement(value: VisitNode[S, Extract[Node, `195`]]): Self = StObject.set(x, "DoWhileStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoWhileStatementUndefined: Self = StObject.set(x, "DoWhileStatement", js.undefined)
+      inline def setDoWhileStatementUndefined: Self = StObject.set(x, "DoWhileStatement", js.undefined)
       
-      @scala.inline
-      def setEmptyStatement(value: VisitNode[S, Extract[Node, `105`]]): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
+      inline def setEmptyStatement(value: VisitNode[S, Extract[Node, `105`]]): Self = StObject.set(x, "EmptyStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyStatementUndefined: Self = StObject.set(x, "EmptyStatement", js.undefined)
+      inline def setEmptyStatementUndefined: Self = StObject.set(x, "EmptyStatement", js.undefined)
       
-      @scala.inline
-      def setEmptyTypeAnnotation(value: VisitNode[S, Extract[Node, `139`]]): Self = StObject.set(x, "EmptyTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setEmptyTypeAnnotation(value: VisitNode[S, Extract[Node, `139`]]): Self = StObject.set(x, "EmptyTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyTypeAnnotationUndefined: Self = StObject.set(x, "EmptyTypeAnnotation", js.undefined)
+      inline def setEmptyTypeAnnotationUndefined: Self = StObject.set(x, "EmptyTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setEnter(value: VisitNodeFunction[S, Node]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+      inline def setEnter(value: VisitNodeFunction[S, Node]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setEnumBody(value: VisitNode[S, EnumBody]): Self = StObject.set(x, "EnumBody", value.asInstanceOf[js.Any])
+      inline def setEnumBody(value: VisitNode[S, EnumBody]): Self = StObject.set(x, "EnumBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumBodyUndefined: Self = StObject.set(x, "EnumBody", js.undefined)
+      inline def setEnumBodyUndefined: Self = StObject.set(x, "EnumBody", js.undefined)
       
-      @scala.inline
-      def setEnumBooleanBody(value: VisitNode[S, Extract[Node, `134`]]): Self = StObject.set(x, "EnumBooleanBody", value.asInstanceOf[js.Any])
+      inline def setEnumBooleanBody(value: VisitNode[S, Extract[Node, `134`]]): Self = StObject.set(x, "EnumBooleanBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumBooleanBodyUndefined: Self = StObject.set(x, "EnumBooleanBody", js.undefined)
+      inline def setEnumBooleanBodyUndefined: Self = StObject.set(x, "EnumBooleanBody", js.undefined)
       
-      @scala.inline
-      def setEnumBooleanMember(value: VisitNode[S, Extract[Node, `114`]]): Self = StObject.set(x, "EnumBooleanMember", value.asInstanceOf[js.Any])
+      inline def setEnumBooleanMember(value: VisitNode[S, Extract[Node, `114`]]): Self = StObject.set(x, "EnumBooleanMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumBooleanMemberUndefined: Self = StObject.set(x, "EnumBooleanMember", js.undefined)
+      inline def setEnumBooleanMemberUndefined: Self = StObject.set(x, "EnumBooleanMember", js.undefined)
       
-      @scala.inline
-      def setEnumDeclaration(value: VisitNode[S, Extract[Node, `66`]]): Self = StObject.set(x, "EnumDeclaration", value.asInstanceOf[js.Any])
+      inline def setEnumDeclaration(value: VisitNode[S, Extract[Node, `66`]]): Self = StObject.set(x, "EnumDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumDeclarationUndefined: Self = StObject.set(x, "EnumDeclaration", js.undefined)
+      inline def setEnumDeclarationUndefined: Self = StObject.set(x, "EnumDeclaration", js.undefined)
       
-      @scala.inline
-      def setEnumDefaultedMember(value: VisitNode[S, Extract[Node, `186`]]): Self = StObject.set(x, "EnumDefaultedMember", value.asInstanceOf[js.Any])
+      inline def setEnumDefaultedMember(value: VisitNode[S, Extract[Node, `186`]]): Self = StObject.set(x, "EnumDefaultedMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumDefaultedMemberUndefined: Self = StObject.set(x, "EnumDefaultedMember", js.undefined)
+      inline def setEnumDefaultedMemberUndefined: Self = StObject.set(x, "EnumDefaultedMember", js.undefined)
       
-      @scala.inline
-      def setEnumMember(value: VisitNode[S, EnumMember]): Self = StObject.set(x, "EnumMember", value.asInstanceOf[js.Any])
+      inline def setEnumMember(value: VisitNode[S, EnumMember]): Self = StObject.set(x, "EnumMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumMemberUndefined: Self = StObject.set(x, "EnumMember", js.undefined)
+      inline def setEnumMemberUndefined: Self = StObject.set(x, "EnumMember", js.undefined)
       
-      @scala.inline
-      def setEnumNumberBody(value: VisitNode[S, Extract[Node, `233`]]): Self = StObject.set(x, "EnumNumberBody", value.asInstanceOf[js.Any])
+      inline def setEnumNumberBody(value: VisitNode[S, Extract[Node, `233`]]): Self = StObject.set(x, "EnumNumberBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumNumberBodyUndefined: Self = StObject.set(x, "EnumNumberBody", js.undefined)
+      inline def setEnumNumberBodyUndefined: Self = StObject.set(x, "EnumNumberBody", js.undefined)
       
-      @scala.inline
-      def setEnumNumberMember(value: VisitNode[S, Extract[Node, `200`]]): Self = StObject.set(x, "EnumNumberMember", value.asInstanceOf[js.Any])
+      inline def setEnumNumberMember(value: VisitNode[S, Extract[Node, `200`]]): Self = StObject.set(x, "EnumNumberMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumNumberMemberUndefined: Self = StObject.set(x, "EnumNumberMember", js.undefined)
+      inline def setEnumNumberMemberUndefined: Self = StObject.set(x, "EnumNumberMember", js.undefined)
       
-      @scala.inline
-      def setEnumStringBody(value: VisitNode[S, Extract[Node, `158`]]): Self = StObject.set(x, "EnumStringBody", value.asInstanceOf[js.Any])
+      inline def setEnumStringBody(value: VisitNode[S, Extract[Node, `158`]]): Self = StObject.set(x, "EnumStringBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumStringBodyUndefined: Self = StObject.set(x, "EnumStringBody", js.undefined)
+      inline def setEnumStringBodyUndefined: Self = StObject.set(x, "EnumStringBody", js.undefined)
       
-      @scala.inline
-      def setEnumStringMember(value: VisitNode[S, Extract[Node, `4`]]): Self = StObject.set(x, "EnumStringMember", value.asInstanceOf[js.Any])
+      inline def setEnumStringMember(value: VisitNode[S, Extract[Node, `4`]]): Self = StObject.set(x, "EnumStringMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumStringMemberUndefined: Self = StObject.set(x, "EnumStringMember", js.undefined)
+      inline def setEnumStringMemberUndefined: Self = StObject.set(x, "EnumStringMember", js.undefined)
       
-      @scala.inline
-      def setEnumSymbolBody(value: VisitNode[S, Extract[Node, `193`]]): Self = StObject.set(x, "EnumSymbolBody", value.asInstanceOf[js.Any])
+      inline def setEnumSymbolBody(value: VisitNode[S, Extract[Node, `193`]]): Self = StObject.set(x, "EnumSymbolBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumSymbolBodyUndefined: Self = StObject.set(x, "EnumSymbolBody", js.undefined)
+      inline def setEnumSymbolBodyUndefined: Self = StObject.set(x, "EnumSymbolBody", js.undefined)
       
-      @scala.inline
-      def setExistsTypeAnnotation(value: VisitNode[S, Extract[Node, `116`]]): Self = StObject.set(x, "ExistsTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setExistsTypeAnnotation(value: VisitNode[S, Extract[Node, `116`]]): Self = StObject.set(x, "ExistsTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistsTypeAnnotationUndefined: Self = StObject.set(x, "ExistsTypeAnnotation", js.undefined)
+      inline def setExistsTypeAnnotationUndefined: Self = StObject.set(x, "ExistsTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setExit(value: VisitNodeFunction[S, Node]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: VisitNodeFunction[S, Node]): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+      inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
       
-      @scala.inline
-      def setExportAllDeclaration(value: VisitNode[S, Extract[Node, `36`]]): Self = StObject.set(x, "ExportAllDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportAllDeclaration(value: VisitNode[S, Extract[Node, `36`]]): Self = StObject.set(x, "ExportAllDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportAllDeclarationUndefined: Self = StObject.set(x, "ExportAllDeclaration", js.undefined)
+      inline def setExportAllDeclarationUndefined: Self = StObject.set(x, "ExportAllDeclaration", js.undefined)
       
-      @scala.inline
-      def setExportDeclaration(value: VisitNode[S, ExportDeclaration]): Self = StObject.set(x, "ExportDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportDeclaration(value: VisitNode[S, ExportDeclaration]): Self = StObject.set(x, "ExportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportDeclarationUndefined: Self = StObject.set(x, "ExportDeclaration", js.undefined)
+      inline def setExportDeclarationUndefined: Self = StObject.set(x, "ExportDeclaration", js.undefined)
       
-      @scala.inline
-      def setExportDefaultDeclaration(value: VisitNode[S, Extract[Node, `78`]]): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportDefaultDeclaration(value: VisitNode[S, Extract[Node, `78`]]): Self = StObject.set(x, "ExportDefaultDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportDefaultDeclarationUndefined: Self = StObject.set(x, "ExportDefaultDeclaration", js.undefined)
+      inline def setExportDefaultDeclarationUndefined: Self = StObject.set(x, "ExportDefaultDeclaration", js.undefined)
       
-      @scala.inline
-      def setExportDefaultSpecifier(value: VisitNode[S, Extract[Node, `3`]]): Self = StObject.set(x, "ExportDefaultSpecifier", value.asInstanceOf[js.Any])
+      inline def setExportDefaultSpecifier(value: VisitNode[S, Extract[Node, `3`]]): Self = StObject.set(x, "ExportDefaultSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportDefaultSpecifierUndefined: Self = StObject.set(x, "ExportDefaultSpecifier", js.undefined)
+      inline def setExportDefaultSpecifierUndefined: Self = StObject.set(x, "ExportDefaultSpecifier", js.undefined)
       
-      @scala.inline
-      def setExportNamedDeclaration(value: VisitNode[S, Extract[Node, `45`]]): Self = StObject.set(x, "ExportNamedDeclaration", value.asInstanceOf[js.Any])
+      inline def setExportNamedDeclaration(value: VisitNode[S, Extract[Node, `45`]]): Self = StObject.set(x, "ExportNamedDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportNamedDeclarationUndefined: Self = StObject.set(x, "ExportNamedDeclaration", js.undefined)
+      inline def setExportNamedDeclarationUndefined: Self = StObject.set(x, "ExportNamedDeclaration", js.undefined)
       
-      @scala.inline
-      def setExportNamespaceSpecifier(value: VisitNode[S, Extract[Node, `174`]]): Self = StObject.set(x, "ExportNamespaceSpecifier", value.asInstanceOf[js.Any])
+      inline def setExportNamespaceSpecifier(value: VisitNode[S, Extract[Node, `174`]]): Self = StObject.set(x, "ExportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportNamespaceSpecifierUndefined: Self = StObject.set(x, "ExportNamespaceSpecifier", js.undefined)
+      inline def setExportNamespaceSpecifierUndefined: Self = StObject.set(x, "ExportNamespaceSpecifier", js.undefined)
       
-      @scala.inline
-      def setExportSpecifier(value: VisitNode[S, Extract[Node, `113`]]): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
+      inline def setExportSpecifier(value: VisitNode[S, Extract[Node, `113`]]): Self = StObject.set(x, "ExportSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportSpecifierUndefined: Self = StObject.set(x, "ExportSpecifier", js.undefined)
+      inline def setExportSpecifierUndefined: Self = StObject.set(x, "ExportSpecifier", js.undefined)
       
-      @scala.inline
-      def setExpression(value: VisitNode[S, Expression]): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: VisitNode[S, Expression]): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionStatement(value: VisitNode[S, Extract[Node, `61`]]): Self = StObject.set(x, "ExpressionStatement", value.asInstanceOf[js.Any])
+      inline def setExpressionStatement(value: VisitNode[S, Extract[Node, `61`]]): Self = StObject.set(x, "ExpressionStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionStatementUndefined: Self = StObject.set(x, "ExpressionStatement", js.undefined)
+      inline def setExpressionStatementUndefined: Self = StObject.set(x, "ExpressionStatement", js.undefined)
       
-      @scala.inline
-      def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
+      inline def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
       
-      @scala.inline
-      def setExpressionWrapper(value: VisitNode[S, ExpressionWrapper]): Self = StObject.set(x, "ExpressionWrapper", value.asInstanceOf[js.Any])
+      inline def setExpressionWrapper(value: VisitNode[S, ExpressionWrapper]): Self = StObject.set(x, "ExpressionWrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionWrapperUndefined: Self = StObject.set(x, "ExpressionWrapper", js.undefined)
+      inline def setExpressionWrapperUndefined: Self = StObject.set(x, "ExpressionWrapper", js.undefined)
       
-      @scala.inline
-      def setFile(value: VisitNode[S, Extract[Node, `27`]]): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+      inline def setFile(value: VisitNode[S, Extract[Node, `27`]]): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "File", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "File", js.undefined)
       
-      @scala.inline
-      def setFlow(value: VisitNode[S, Flow]): Self = StObject.set(x, "Flow", value.asInstanceOf[js.Any])
+      inline def setFlow(value: VisitNode[S, Flow]): Self = StObject.set(x, "Flow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowBaseAnnotation(value: VisitNode[S, FlowBaseAnnotation]): Self = StObject.set(x, "FlowBaseAnnotation", value.asInstanceOf[js.Any])
+      inline def setFlowBaseAnnotation(value: VisitNode[S, FlowBaseAnnotation]): Self = StObject.set(x, "FlowBaseAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowBaseAnnotationUndefined: Self = StObject.set(x, "FlowBaseAnnotation", js.undefined)
+      inline def setFlowBaseAnnotationUndefined: Self = StObject.set(x, "FlowBaseAnnotation", js.undefined)
       
-      @scala.inline
-      def setFlowDeclaration(value: VisitNode[S, FlowDeclaration]): Self = StObject.set(x, "FlowDeclaration", value.asInstanceOf[js.Any])
+      inline def setFlowDeclaration(value: VisitNode[S, FlowDeclaration]): Self = StObject.set(x, "FlowDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowDeclarationUndefined: Self = StObject.set(x, "FlowDeclaration", js.undefined)
+      inline def setFlowDeclarationUndefined: Self = StObject.set(x, "FlowDeclaration", js.undefined)
       
-      @scala.inline
-      def setFlowPredicate(value: VisitNode[S, FlowPredicate]): Self = StObject.set(x, "FlowPredicate", value.asInstanceOf[js.Any])
+      inline def setFlowPredicate(value: VisitNode[S, FlowPredicate]): Self = StObject.set(x, "FlowPredicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowPredicateUndefined: Self = StObject.set(x, "FlowPredicate", js.undefined)
+      inline def setFlowPredicateUndefined: Self = StObject.set(x, "FlowPredicate", js.undefined)
       
-      @scala.inline
-      def setFlowType(value: VisitNode[S, FlowType]): Self = StObject.set(x, "FlowType", value.asInstanceOf[js.Any])
+      inline def setFlowType(value: VisitNode[S, FlowType]): Self = StObject.set(x, "FlowType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowTypeUndefined: Self = StObject.set(x, "FlowType", js.undefined)
+      inline def setFlowTypeUndefined: Self = StObject.set(x, "FlowType", js.undefined)
       
-      @scala.inline
-      def setFlowUndefined: Self = StObject.set(x, "Flow", js.undefined)
+      inline def setFlowUndefined: Self = StObject.set(x, "Flow", js.undefined)
       
-      @scala.inline
-      def setFor(value: VisitNode[S, For]): Self = StObject.set(x, "For", value.asInstanceOf[js.Any])
+      inline def setFor(value: VisitNode[S, For]): Self = StObject.set(x, "For", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForInStatement(value: VisitNode[S, Extract[Node, `16`]]): Self = StObject.set(x, "ForInStatement", value.asInstanceOf[js.Any])
+      inline def setForInStatement(value: VisitNode[S, Extract[Node, `16`]]): Self = StObject.set(x, "ForInStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForInStatementUndefined: Self = StObject.set(x, "ForInStatement", js.undefined)
+      inline def setForInStatementUndefined: Self = StObject.set(x, "ForInStatement", js.undefined)
       
-      @scala.inline
-      def setForOfStatement(value: VisitNode[S, Extract[Node, `161`]]): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
+      inline def setForOfStatement(value: VisitNode[S, Extract[Node, `161`]]): Self = StObject.set(x, "ForOfStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForOfStatementUndefined: Self = StObject.set(x, "ForOfStatement", js.undefined)
+      inline def setForOfStatementUndefined: Self = StObject.set(x, "ForOfStatement", js.undefined)
       
-      @scala.inline
-      def setForStatement(value: VisitNode[S, Extract[Node, `185`]]): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
+      inline def setForStatement(value: VisitNode[S, Extract[Node, `185`]]): Self = StObject.set(x, "ForStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForStatementUndefined: Self = StObject.set(x, "ForStatement", js.undefined)
+      inline def setForStatementUndefined: Self = StObject.set(x, "ForStatement", js.undefined)
       
-      @scala.inline
-      def setForUndefined: Self = StObject.set(x, "For", js.undefined)
+      inline def setForUndefined: Self = StObject.set(x, "For", js.undefined)
       
-      @scala.inline
-      def setForXStatement(value: VisitNode[S, ForXStatement]): Self = StObject.set(x, "ForXStatement", value.asInstanceOf[js.Any])
+      inline def setForXStatement(value: VisitNode[S, ForXStatement]): Self = StObject.set(x, "ForXStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForXStatementUndefined: Self = StObject.set(x, "ForXStatement", js.undefined)
+      inline def setForXStatementUndefined: Self = StObject.set(x, "ForXStatement", js.undefined)
       
-      @scala.inline
-      def setFunction(value: VisitNode[S, Function]): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
+      inline def setFunction(value: VisitNode[S, Function]): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionDeclaration(value: VisitNode[S, Extract[Node, `133`]]): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
+      inline def setFunctionDeclaration(value: VisitNode[S, Extract[Node, `133`]]): Self = StObject.set(x, "FunctionDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionDeclarationUndefined: Self = StObject.set(x, "FunctionDeclaration", js.undefined)
+      inline def setFunctionDeclarationUndefined: Self = StObject.set(x, "FunctionDeclaration", js.undefined)
       
-      @scala.inline
-      def setFunctionExpression(value: VisitNode[S, Extract[Node, `188`]]): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
+      inline def setFunctionExpression(value: VisitNode[S, Extract[Node, `188`]]): Self = StObject.set(x, "FunctionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionExpressionUndefined: Self = StObject.set(x, "FunctionExpression", js.undefined)
+      inline def setFunctionExpressionUndefined: Self = StObject.set(x, "FunctionExpression", js.undefined)
       
-      @scala.inline
-      def setFunctionParent(value: VisitNode[S, FunctionParent]): Self = StObject.set(x, "FunctionParent", value.asInstanceOf[js.Any])
+      inline def setFunctionParent(value: VisitNode[S, FunctionParent]): Self = StObject.set(x, "FunctionParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionParentUndefined: Self = StObject.set(x, "FunctionParent", js.undefined)
+      inline def setFunctionParentUndefined: Self = StObject.set(x, "FunctionParent", js.undefined)
       
-      @scala.inline
-      def setFunctionTypeAnnotation(value: VisitNode[S, Extract[Node, `40`]]): Self = StObject.set(x, "FunctionTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setFunctionTypeAnnotation(value: VisitNode[S, Extract[Node, `40`]]): Self = StObject.set(x, "FunctionTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionTypeAnnotationUndefined: Self = StObject.set(x, "FunctionTypeAnnotation", js.undefined)
+      inline def setFunctionTypeAnnotationUndefined: Self = StObject.set(x, "FunctionTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setFunctionTypeParam(value: VisitNode[S, Extract[Node, `221`]]): Self = StObject.set(x, "FunctionTypeParam", value.asInstanceOf[js.Any])
+      inline def setFunctionTypeParam(value: VisitNode[S, Extract[Node, `221`]]): Self = StObject.set(x, "FunctionTypeParam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionTypeParamUndefined: Self = StObject.set(x, "FunctionTypeParam", js.undefined)
+      inline def setFunctionTypeParamUndefined: Self = StObject.set(x, "FunctionTypeParam", js.undefined)
       
-      @scala.inline
-      def setFunctionUndefined: Self = StObject.set(x, "Function", js.undefined)
+      inline def setFunctionUndefined: Self = StObject.set(x, "Function", js.undefined)
       
-      @scala.inline
-      def setGenericTypeAnnotation(value: VisitNode[S, Extract[Node, `237`]]): Self = StObject.set(x, "GenericTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setGenericTypeAnnotation(value: VisitNode[S, Extract[Node, `237`]]): Self = StObject.set(x, "GenericTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenericTypeAnnotationUndefined: Self = StObject.set(x, "GenericTypeAnnotation", js.undefined)
+      inline def setGenericTypeAnnotationUndefined: Self = StObject.set(x, "GenericTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setIdentifier(value: VisitNode[S, Extract[Node, `97`]]): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: VisitNode[S, Extract[Node, `97`]]): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
+      inline def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
       
-      @scala.inline
-      def setIfStatement(value: VisitNode[S, Extract[Node, `83`]]): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
+      inline def setIfStatement(value: VisitNode[S, Extract[Node, `83`]]): Self = StObject.set(x, "IfStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfStatementUndefined: Self = StObject.set(x, "IfStatement", js.undefined)
+      inline def setIfStatementUndefined: Self = StObject.set(x, "IfStatement", js.undefined)
       
-      @scala.inline
-      def setImmutable(value: VisitNode[S, Immutable]): Self = StObject.set(x, "Immutable", value.asInstanceOf[js.Any])
+      inline def setImmutable(value: VisitNode[S, Immutable]): Self = StObject.set(x, "Immutable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmutableUndefined: Self = StObject.set(x, "Immutable", js.undefined)
+      inline def setImmutableUndefined: Self = StObject.set(x, "Immutable", js.undefined)
       
-      @scala.inline
-      def setImport(value: VisitNode[S, Extract[Node, `167`]]): Self = StObject.set(x, "Import", value.asInstanceOf[js.Any])
+      inline def setImport(value: VisitNode[S, Extract[Node, `167`]]): Self = StObject.set(x, "Import", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportAttribute(value: VisitNode[S, Extract[Node, `120`]]): Self = StObject.set(x, "ImportAttribute", value.asInstanceOf[js.Any])
+      inline def setImportAttribute(value: VisitNode[S, Extract[Node, `120`]]): Self = StObject.set(x, "ImportAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportAttributeUndefined: Self = StObject.set(x, "ImportAttribute", js.undefined)
+      inline def setImportAttributeUndefined: Self = StObject.set(x, "ImportAttribute", js.undefined)
       
-      @scala.inline
-      def setImportDeclaration(value: VisitNode[S, Extract[Node, `236`]]): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
+      inline def setImportDeclaration(value: VisitNode[S, Extract[Node, `236`]]): Self = StObject.set(x, "ImportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportDeclarationUndefined: Self = StObject.set(x, "ImportDeclaration", js.undefined)
+      inline def setImportDeclarationUndefined: Self = StObject.set(x, "ImportDeclaration", js.undefined)
       
-      @scala.inline
-      def setImportDefaultSpecifier(value: VisitNode[S, Extract[Node, `18`]]): Self = StObject.set(x, "ImportDefaultSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportDefaultSpecifier(value: VisitNode[S, Extract[Node, `18`]]): Self = StObject.set(x, "ImportDefaultSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportDefaultSpecifierUndefined: Self = StObject.set(x, "ImportDefaultSpecifier", js.undefined)
+      inline def setImportDefaultSpecifierUndefined: Self = StObject.set(x, "ImportDefaultSpecifier", js.undefined)
       
-      @scala.inline
-      def setImportNamespaceSpecifier(value: VisitNode[S, Extract[Node, `197`]]): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportNamespaceSpecifier(value: VisitNode[S, Extract[Node, `197`]]): Self = StObject.set(x, "ImportNamespaceSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportNamespaceSpecifierUndefined: Self = StObject.set(x, "ImportNamespaceSpecifier", js.undefined)
+      inline def setImportNamespaceSpecifierUndefined: Self = StObject.set(x, "ImportNamespaceSpecifier", js.undefined)
       
-      @scala.inline
-      def setImportSpecifier(value: VisitNode[S, Extract[Node, `111`]]): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
+      inline def setImportSpecifier(value: VisitNode[S, Extract[Node, `111`]]): Self = StObject.set(x, "ImportSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportSpecifierUndefined: Self = StObject.set(x, "ImportSpecifier", js.undefined)
+      inline def setImportSpecifierUndefined: Self = StObject.set(x, "ImportSpecifier", js.undefined)
       
-      @scala.inline
-      def setImportUndefined: Self = StObject.set(x, "Import", js.undefined)
+      inline def setImportUndefined: Self = StObject.set(x, "Import", js.undefined)
       
-      @scala.inline
-      def setInferredPredicate(value: VisitNode[S, Extract[Node, `131`]]): Self = StObject.set(x, "InferredPredicate", value.asInstanceOf[js.Any])
+      inline def setInferredPredicate(value: VisitNode[S, Extract[Node, `131`]]): Self = StObject.set(x, "InferredPredicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInferredPredicateUndefined: Self = StObject.set(x, "InferredPredicate", js.undefined)
+      inline def setInferredPredicateUndefined: Self = StObject.set(x, "InferredPredicate", js.undefined)
       
-      @scala.inline
-      def setInterfaceDeclaration(value: VisitNode[S, Extract[Node, `47`]]): Self = StObject.set(x, "InterfaceDeclaration", value.asInstanceOf[js.Any])
+      inline def setInterfaceDeclaration(value: VisitNode[S, Extract[Node, `47`]]): Self = StObject.set(x, "InterfaceDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceDeclarationUndefined: Self = StObject.set(x, "InterfaceDeclaration", js.undefined)
+      inline def setInterfaceDeclarationUndefined: Self = StObject.set(x, "InterfaceDeclaration", js.undefined)
       
-      @scala.inline
-      def setInterfaceExtends(value: VisitNode[S, Extract[Node, `136`]]): Self = StObject.set(x, "InterfaceExtends", value.asInstanceOf[js.Any])
+      inline def setInterfaceExtends(value: VisitNode[S, Extract[Node, `136`]]): Self = StObject.set(x, "InterfaceExtends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceExtendsUndefined: Self = StObject.set(x, "InterfaceExtends", js.undefined)
+      inline def setInterfaceExtendsUndefined: Self = StObject.set(x, "InterfaceExtends", js.undefined)
       
-      @scala.inline
-      def setInterfaceTypeAnnotation(value: VisitNode[S, Extract[Node, `8`]]): Self = StObject.set(x, "InterfaceTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setInterfaceTypeAnnotation(value: VisitNode[S, Extract[Node, `8`]]): Self = StObject.set(x, "InterfaceTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceTypeAnnotationUndefined: Self = StObject.set(x, "InterfaceTypeAnnotation", js.undefined)
+      inline def setInterfaceTypeAnnotationUndefined: Self = StObject.set(x, "InterfaceTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setInterpreterDirective(value: VisitNode[S, Extract[Node, `86`]]): Self = StObject.set(x, "InterpreterDirective", value.asInstanceOf[js.Any])
+      inline def setInterpreterDirective(value: VisitNode[S, Extract[Node, `86`]]): Self = StObject.set(x, "InterpreterDirective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpreterDirectiveUndefined: Self = StObject.set(x, "InterpreterDirective", js.undefined)
+      inline def setInterpreterDirectiveUndefined: Self = StObject.set(x, "InterpreterDirective", js.undefined)
       
-      @scala.inline
-      def setIntersectionTypeAnnotation(value: VisitNode[S, Extract[Node, `209`]]): Self = StObject.set(x, "IntersectionTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setIntersectionTypeAnnotation(value: VisitNode[S, Extract[Node, `209`]]): Self = StObject.set(x, "IntersectionTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntersectionTypeAnnotationUndefined: Self = StObject.set(x, "IntersectionTypeAnnotation", js.undefined)
+      inline def setIntersectionTypeAnnotationUndefined: Self = StObject.set(x, "IntersectionTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setJSX(value: VisitNode[S, JSX]): Self = StObject.set(x, "JSX", value.asInstanceOf[js.Any])
+      inline def setJSX(value: VisitNode[S, JSX]): Self = StObject.set(x, "JSX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXAttribute(value: VisitNode[S, Extract[Node, `100`]]): Self = StObject.set(x, "JSXAttribute", value.asInstanceOf[js.Any])
+      inline def setJSXAttribute(value: VisitNode[S, Extract[Node, `100`]]): Self = StObject.set(x, "JSXAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXAttributeUndefined: Self = StObject.set(x, "JSXAttribute", js.undefined)
+      inline def setJSXAttributeUndefined: Self = StObject.set(x, "JSXAttribute", js.undefined)
       
-      @scala.inline
-      def setJSXClosingElement(value: VisitNode[S, Extract[Node, `126`]]): Self = StObject.set(x, "JSXClosingElement", value.asInstanceOf[js.Any])
+      inline def setJSXClosingElement(value: VisitNode[S, Extract[Node, `126`]]): Self = StObject.set(x, "JSXClosingElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXClosingElementUndefined: Self = StObject.set(x, "JSXClosingElement", js.undefined)
+      inline def setJSXClosingElementUndefined: Self = StObject.set(x, "JSXClosingElement", js.undefined)
       
-      @scala.inline
-      def setJSXClosingFragment(value: VisitNode[S, Extract[Node, `206`]]): Self = StObject.set(x, "JSXClosingFragment", value.asInstanceOf[js.Any])
+      inline def setJSXClosingFragment(value: VisitNode[S, Extract[Node, `206`]]): Self = StObject.set(x, "JSXClosingFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXClosingFragmentUndefined: Self = StObject.set(x, "JSXClosingFragment", js.undefined)
+      inline def setJSXClosingFragmentUndefined: Self = StObject.set(x, "JSXClosingFragment", js.undefined)
       
-      @scala.inline
-      def setJSXElement(value: VisitNode[S, Extract[Node, `169`]]): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
+      inline def setJSXElement(value: VisitNode[S, Extract[Node, `169`]]): Self = StObject.set(x, "JSXElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXElementUndefined: Self = StObject.set(x, "JSXElement", js.undefined)
+      inline def setJSXElementUndefined: Self = StObject.set(x, "JSXElement", js.undefined)
       
-      @scala.inline
-      def setJSXEmptyExpression(value: VisitNode[S, Extract[Node, `122`]]): Self = StObject.set(x, "JSXEmptyExpression", value.asInstanceOf[js.Any])
+      inline def setJSXEmptyExpression(value: VisitNode[S, Extract[Node, `122`]]): Self = StObject.set(x, "JSXEmptyExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXEmptyExpressionUndefined: Self = StObject.set(x, "JSXEmptyExpression", js.undefined)
+      inline def setJSXEmptyExpressionUndefined: Self = StObject.set(x, "JSXEmptyExpression", js.undefined)
       
-      @scala.inline
-      def setJSXExpressionContainer(value: VisitNode[S, Extract[Node, `31`]]): Self = StObject.set(x, "JSXExpressionContainer", value.asInstanceOf[js.Any])
+      inline def setJSXExpressionContainer(value: VisitNode[S, Extract[Node, `31`]]): Self = StObject.set(x, "JSXExpressionContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXExpressionContainerUndefined: Self = StObject.set(x, "JSXExpressionContainer", js.undefined)
+      inline def setJSXExpressionContainerUndefined: Self = StObject.set(x, "JSXExpressionContainer", js.undefined)
       
-      @scala.inline
-      def setJSXFragment(value: VisitNode[S, Extract[Node, `147`]]): Self = StObject.set(x, "JSXFragment", value.asInstanceOf[js.Any])
+      inline def setJSXFragment(value: VisitNode[S, Extract[Node, `147`]]): Self = StObject.set(x, "JSXFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXFragmentUndefined: Self = StObject.set(x, "JSXFragment", js.undefined)
+      inline def setJSXFragmentUndefined: Self = StObject.set(x, "JSXFragment", js.undefined)
       
-      @scala.inline
-      def setJSXIdentifier(value: VisitNode[S, Extract[Node, `85`]]): Self = StObject.set(x, "JSXIdentifier", value.asInstanceOf[js.Any])
+      inline def setJSXIdentifier(value: VisitNode[S, Extract[Node, `85`]]): Self = StObject.set(x, "JSXIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXIdentifierUndefined: Self = StObject.set(x, "JSXIdentifier", js.undefined)
+      inline def setJSXIdentifierUndefined: Self = StObject.set(x, "JSXIdentifier", js.undefined)
       
-      @scala.inline
-      def setJSXMemberExpression(value: VisitNode[S, Extract[Node, `192`]]): Self = StObject.set(x, "JSXMemberExpression", value.asInstanceOf[js.Any])
+      inline def setJSXMemberExpression(value: VisitNode[S, Extract[Node, `192`]]): Self = StObject.set(x, "JSXMemberExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXMemberExpressionUndefined: Self = StObject.set(x, "JSXMemberExpression", js.undefined)
+      inline def setJSXMemberExpressionUndefined: Self = StObject.set(x, "JSXMemberExpression", js.undefined)
       
-      @scala.inline
-      def setJSXNamespacedName(value: VisitNode[S, Extract[Node, `149`]]): Self = StObject.set(x, "JSXNamespacedName", value.asInstanceOf[js.Any])
+      inline def setJSXNamespacedName(value: VisitNode[S, Extract[Node, `149`]]): Self = StObject.set(x, "JSXNamespacedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXNamespacedNameUndefined: Self = StObject.set(x, "JSXNamespacedName", js.undefined)
+      inline def setJSXNamespacedNameUndefined: Self = StObject.set(x, "JSXNamespacedName", js.undefined)
       
-      @scala.inline
-      def setJSXOpeningElement(value: VisitNode[S, Extract[Node, `72`]]): Self = StObject.set(x, "JSXOpeningElement", value.asInstanceOf[js.Any])
+      inline def setJSXOpeningElement(value: VisitNode[S, Extract[Node, `72`]]): Self = StObject.set(x, "JSXOpeningElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXOpeningElementUndefined: Self = StObject.set(x, "JSXOpeningElement", js.undefined)
+      inline def setJSXOpeningElementUndefined: Self = StObject.set(x, "JSXOpeningElement", js.undefined)
       
-      @scala.inline
-      def setJSXOpeningFragment(value: VisitNode[S, Extract[Node, `213`]]): Self = StObject.set(x, "JSXOpeningFragment", value.asInstanceOf[js.Any])
+      inline def setJSXOpeningFragment(value: VisitNode[S, Extract[Node, `213`]]): Self = StObject.set(x, "JSXOpeningFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXOpeningFragmentUndefined: Self = StObject.set(x, "JSXOpeningFragment", js.undefined)
+      inline def setJSXOpeningFragmentUndefined: Self = StObject.set(x, "JSXOpeningFragment", js.undefined)
       
-      @scala.inline
-      def setJSXSpreadAttribute(value: VisitNode[S, Extract[Node, `48`]]): Self = StObject.set(x, "JSXSpreadAttribute", value.asInstanceOf[js.Any])
+      inline def setJSXSpreadAttribute(value: VisitNode[S, Extract[Node, `48`]]): Self = StObject.set(x, "JSXSpreadAttribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXSpreadAttributeUndefined: Self = StObject.set(x, "JSXSpreadAttribute", js.undefined)
+      inline def setJSXSpreadAttributeUndefined: Self = StObject.set(x, "JSXSpreadAttribute", js.undefined)
       
-      @scala.inline
-      def setJSXSpreadChild(value: VisitNode[S, Extract[Node, `71`]]): Self = StObject.set(x, "JSXSpreadChild", value.asInstanceOf[js.Any])
+      inline def setJSXSpreadChild(value: VisitNode[S, Extract[Node, `71`]]): Self = StObject.set(x, "JSXSpreadChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXSpreadChildUndefined: Self = StObject.set(x, "JSXSpreadChild", js.undefined)
+      inline def setJSXSpreadChildUndefined: Self = StObject.set(x, "JSXSpreadChild", js.undefined)
       
-      @scala.inline
-      def setJSXText(value: VisitNode[S, Extract[Node, `190`]]): Self = StObject.set(x, "JSXText", value.asInstanceOf[js.Any])
+      inline def setJSXText(value: VisitNode[S, Extract[Node, `190`]]): Self = StObject.set(x, "JSXText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJSXTextUndefined: Self = StObject.set(x, "JSXText", js.undefined)
+      inline def setJSXTextUndefined: Self = StObject.set(x, "JSXText", js.undefined)
       
-      @scala.inline
-      def setJSXUndefined: Self = StObject.set(x, "JSX", js.undefined)
+      inline def setJSXUndefined: Self = StObject.set(x, "JSX", js.undefined)
       
-      @scala.inline
-      def setLVal(value: VisitNode[S, LVal]): Self = StObject.set(x, "LVal", value.asInstanceOf[js.Any])
+      inline def setLVal(value: VisitNode[S, LVal]): Self = StObject.set(x, "LVal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLValUndefined: Self = StObject.set(x, "LVal", js.undefined)
+      inline def setLValUndefined: Self = StObject.set(x, "LVal", js.undefined)
       
-      @scala.inline
-      def setLabeledStatement(value: VisitNode[S, Extract[Node, `35`]]): Self = StObject.set(x, "LabeledStatement", value.asInstanceOf[js.Any])
+      inline def setLabeledStatement(value: VisitNode[S, Extract[Node, `35`]]): Self = StObject.set(x, "LabeledStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabeledStatementUndefined: Self = StObject.set(x, "LabeledStatement", js.undefined)
+      inline def setLabeledStatementUndefined: Self = StObject.set(x, "LabeledStatement", js.undefined)
       
-      @scala.inline
-      def setLiteral(value: VisitNode[S, Literal]): Self = StObject.set(x, "Literal", value.asInstanceOf[js.Any])
+      inline def setLiteral(value: VisitNode[S, Literal]): Self = StObject.set(x, "Literal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiteralUndefined: Self = StObject.set(x, "Literal", js.undefined)
+      inline def setLiteralUndefined: Self = StObject.set(x, "Literal", js.undefined)
       
-      @scala.inline
-      def setLogicalExpression(value: VisitNode[S, Extract[Node, `68`]]): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
+      inline def setLogicalExpression(value: VisitNode[S, Extract[Node, `68`]]): Self = StObject.set(x, "LogicalExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogicalExpressionUndefined: Self = StObject.set(x, "LogicalExpression", js.undefined)
+      inline def setLogicalExpressionUndefined: Self = StObject.set(x, "LogicalExpression", js.undefined)
       
-      @scala.inline
-      def setLoop(value: VisitNode[S, Loop]): Self = StObject.set(x, "Loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: VisitNode[S, Loop]): Self = StObject.set(x, "Loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "Loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "Loop", js.undefined)
       
-      @scala.inline
-      def setMemberExpression(value: VisitNode[S, Extract[Node, `59`]]): Self = StObject.set(x, "MemberExpression", value.asInstanceOf[js.Any])
+      inline def setMemberExpression(value: VisitNode[S, Extract[Node, `59`]]): Self = StObject.set(x, "MemberExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberExpressionUndefined: Self = StObject.set(x, "MemberExpression", js.undefined)
+      inline def setMemberExpressionUndefined: Self = StObject.set(x, "MemberExpression", js.undefined)
       
-      @scala.inline
-      def setMetaProperty(value: VisitNode[S, Extract[Node, `81`]]): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
+      inline def setMetaProperty(value: VisitNode[S, Extract[Node, `81`]]): Self = StObject.set(x, "MetaProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaPropertyUndefined: Self = StObject.set(x, "MetaProperty", js.undefined)
+      inline def setMetaPropertyUndefined: Self = StObject.set(x, "MetaProperty", js.undefined)
       
-      @scala.inline
-      def setMethod(value: VisitNode[S, Method]): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: VisitNode[S, Method]): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
       
-      @scala.inline
-      def setMixedTypeAnnotation(value: VisitNode[S, Extract[Node, `56`]]): Self = StObject.set(x, "MixedTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setMixedTypeAnnotation(value: VisitNode[S, Extract[Node, `56`]]): Self = StObject.set(x, "MixedTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMixedTypeAnnotationUndefined: Self = StObject.set(x, "MixedTypeAnnotation", js.undefined)
+      inline def setMixedTypeAnnotationUndefined: Self = StObject.set(x, "MixedTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setModuleDeclaration(value: VisitNode[S, ModuleDeclaration]): Self = StObject.set(x, "ModuleDeclaration", value.asInstanceOf[js.Any])
+      inline def setModuleDeclaration(value: VisitNode[S, ModuleDeclaration]): Self = StObject.set(x, "ModuleDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleDeclarationUndefined: Self = StObject.set(x, "ModuleDeclaration", js.undefined)
+      inline def setModuleDeclarationUndefined: Self = StObject.set(x, "ModuleDeclaration", js.undefined)
       
-      @scala.inline
-      def setModuleSpecifier(value: VisitNode[S, ModuleSpecifier]): Self = StObject.set(x, "ModuleSpecifier", value.asInstanceOf[js.Any])
+      inline def setModuleSpecifier(value: VisitNode[S, ModuleSpecifier]): Self = StObject.set(x, "ModuleSpecifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleSpecifierUndefined: Self = StObject.set(x, "ModuleSpecifier", js.undefined)
+      inline def setModuleSpecifierUndefined: Self = StObject.set(x, "ModuleSpecifier", js.undefined)
       
-      @scala.inline
-      def setNewExpression(value: VisitNode[S, Extract[Node, `58`]]): Self = StObject.set(x, "NewExpression", value.asInstanceOf[js.Any])
+      inline def setNewExpression(value: VisitNode[S, Extract[Node, `58`]]): Self = StObject.set(x, "NewExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewExpressionUndefined: Self = StObject.set(x, "NewExpression", js.undefined)
+      inline def setNewExpressionUndefined: Self = StObject.set(x, "NewExpression", js.undefined)
       
-      @scala.inline
-      def setNoop(value: VisitNode[S, Extract[Node, `33`]]): Self = StObject.set(x, "Noop", value.asInstanceOf[js.Any])
+      inline def setNoop(value: VisitNode[S, Extract[Node, `33`]]): Self = StObject.set(x, "Noop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoopUndefined: Self = StObject.set(x, "Noop", js.undefined)
+      inline def setNoopUndefined: Self = StObject.set(x, "Noop", js.undefined)
       
-      @scala.inline
-      def setNullLiteral(value: VisitNode[S, Extract[Node, `238`]]): Self = StObject.set(x, "NullLiteral", value.asInstanceOf[js.Any])
+      inline def setNullLiteral(value: VisitNode[S, Extract[Node, `238`]]): Self = StObject.set(x, "NullLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `42`]]): Self = StObject.set(x, "NullLiteralTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setNullLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `42`]]): Self = StObject.set(x, "NullLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullLiteralTypeAnnotationUndefined: Self = StObject.set(x, "NullLiteralTypeAnnotation", js.undefined)
+      inline def setNullLiteralTypeAnnotationUndefined: Self = StObject.set(x, "NullLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setNullLiteralUndefined: Self = StObject.set(x, "NullLiteral", js.undefined)
+      inline def setNullLiteralUndefined: Self = StObject.set(x, "NullLiteral", js.undefined)
       
-      @scala.inline
-      def setNullableTypeAnnotation(value: VisitNode[S, Extract[Node, `96`]]): Self = StObject.set(x, "NullableTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setNullableTypeAnnotation(value: VisitNode[S, Extract[Node, `96`]]): Self = StObject.set(x, "NullableTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullableTypeAnnotationUndefined: Self = StObject.set(x, "NullableTypeAnnotation", js.undefined)
+      inline def setNullableTypeAnnotationUndefined: Self = StObject.set(x, "NullableTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setNumberLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `152`]]): Self = StObject.set(x, "NumberLiteralTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setNumberLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `152`]]): Self = StObject.set(x, "NumberLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberLiteralTypeAnnotationUndefined: Self = StObject.set(x, "NumberLiteralTypeAnnotation", js.undefined)
+      inline def setNumberLiteralTypeAnnotationUndefined: Self = StObject.set(x, "NumberLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setNumberTypeAnnotation(value: VisitNode[S, Extract[Node, `159`]]): Self = StObject.set(x, "NumberTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setNumberTypeAnnotation(value: VisitNode[S, Extract[Node, `159`]]): Self = StObject.set(x, "NumberTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberTypeAnnotationUndefined: Self = StObject.set(x, "NumberTypeAnnotation", js.undefined)
+      inline def setNumberTypeAnnotationUndefined: Self = StObject.set(x, "NumberTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setNumericLiteral(value: VisitNode[S, Extract[Node, `210`]]): Self = StObject.set(x, "NumericLiteral", value.asInstanceOf[js.Any])
+      inline def setNumericLiteral(value: VisitNode[S, Extract[Node, `210`]]): Self = StObject.set(x, "NumericLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumericLiteralUndefined: Self = StObject.set(x, "NumericLiteral", js.undefined)
+      inline def setNumericLiteralUndefined: Self = StObject.set(x, "NumericLiteral", js.undefined)
       
-      @scala.inline
-      def setObjectExpression(value: VisitNode[S, Extract[Node, `121`]]): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
+      inline def setObjectExpression(value: VisitNode[S, Extract[Node, `121`]]): Self = StObject.set(x, "ObjectExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectExpressionUndefined: Self = StObject.set(x, "ObjectExpression", js.undefined)
+      inline def setObjectExpressionUndefined: Self = StObject.set(x, "ObjectExpression", js.undefined)
       
-      @scala.inline
-      def setObjectMember(value: VisitNode[S, ObjectMember]): Self = StObject.set(x, "ObjectMember", value.asInstanceOf[js.Any])
+      inline def setObjectMember(value: VisitNode[S, ObjectMember]): Self = StObject.set(x, "ObjectMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectMemberUndefined: Self = StObject.set(x, "ObjectMember", js.undefined)
+      inline def setObjectMemberUndefined: Self = StObject.set(x, "ObjectMember", js.undefined)
       
-      @scala.inline
-      def setObjectMethod(value: VisitNode[S, Extract[Node, `123`]]): Self = StObject.set(x, "ObjectMethod", value.asInstanceOf[js.Any])
+      inline def setObjectMethod(value: VisitNode[S, Extract[Node, `123`]]): Self = StObject.set(x, "ObjectMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectMethodUndefined: Self = StObject.set(x, "ObjectMethod", js.undefined)
+      inline def setObjectMethodUndefined: Self = StObject.set(x, "ObjectMethod", js.undefined)
       
-      @scala.inline
-      def setObjectPattern(value: VisitNode[S, Extract[Node, `217`]]): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
+      inline def setObjectPattern(value: VisitNode[S, Extract[Node, `217`]]): Self = StObject.set(x, "ObjectPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectPatternUndefined: Self = StObject.set(x, "ObjectPattern", js.undefined)
+      inline def setObjectPatternUndefined: Self = StObject.set(x, "ObjectPattern", js.undefined)
       
-      @scala.inline
-      def setObjectProperty(value: VisitNode[S, Extract[Node, `141`]]): Self = StObject.set(x, "ObjectProperty", value.asInstanceOf[js.Any])
+      inline def setObjectProperty(value: VisitNode[S, Extract[Node, `141`]]): Self = StObject.set(x, "ObjectProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectPropertyUndefined: Self = StObject.set(x, "ObjectProperty", js.undefined)
+      inline def setObjectPropertyUndefined: Self = StObject.set(x, "ObjectProperty", js.undefined)
       
-      @scala.inline
-      def setObjectTypeAnnotation(value: VisitNode[S, Extract[Node, `82`]]): Self = StObject.set(x, "ObjectTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setObjectTypeAnnotation(value: VisitNode[S, Extract[Node, `82`]]): Self = StObject.set(x, "ObjectTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectTypeAnnotationUndefined: Self = StObject.set(x, "ObjectTypeAnnotation", js.undefined)
+      inline def setObjectTypeAnnotationUndefined: Self = StObject.set(x, "ObjectTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setObjectTypeCallProperty(value: VisitNode[S, Extract[Node, `12`]]): Self = StObject.set(x, "ObjectTypeCallProperty", value.asInstanceOf[js.Any])
+      inline def setObjectTypeCallProperty(value: VisitNode[S, Extract[Node, `12`]]): Self = StObject.set(x, "ObjectTypeCallProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectTypeCallPropertyUndefined: Self = StObject.set(x, "ObjectTypeCallProperty", js.undefined)
+      inline def setObjectTypeCallPropertyUndefined: Self = StObject.set(x, "ObjectTypeCallProperty", js.undefined)
       
-      @scala.inline
-      def setObjectTypeIndexer(value: VisitNode[S, Extract[Node, `170`]]): Self = StObject.set(x, "ObjectTypeIndexer", value.asInstanceOf[js.Any])
+      inline def setObjectTypeIndexer(value: VisitNode[S, Extract[Node, `170`]]): Self = StObject.set(x, "ObjectTypeIndexer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectTypeIndexerUndefined: Self = StObject.set(x, "ObjectTypeIndexer", js.undefined)
+      inline def setObjectTypeIndexerUndefined: Self = StObject.set(x, "ObjectTypeIndexer", js.undefined)
       
-      @scala.inline
-      def setObjectTypeInternalSlot(value: VisitNode[S, Extract[Node, `226`]]): Self = StObject.set(x, "ObjectTypeInternalSlot", value.asInstanceOf[js.Any])
+      inline def setObjectTypeInternalSlot(value: VisitNode[S, Extract[Node, `226`]]): Self = StObject.set(x, "ObjectTypeInternalSlot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectTypeInternalSlotUndefined: Self = StObject.set(x, "ObjectTypeInternalSlot", js.undefined)
+      inline def setObjectTypeInternalSlotUndefined: Self = StObject.set(x, "ObjectTypeInternalSlot", js.undefined)
       
-      @scala.inline
-      def setObjectTypeProperty(value: VisitNode[S, Extract[Node, `154`]]): Self = StObject.set(x, "ObjectTypeProperty", value.asInstanceOf[js.Any])
+      inline def setObjectTypeProperty(value: VisitNode[S, Extract[Node, `154`]]): Self = StObject.set(x, "ObjectTypeProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectTypePropertyUndefined: Self = StObject.set(x, "ObjectTypeProperty", js.undefined)
+      inline def setObjectTypePropertyUndefined: Self = StObject.set(x, "ObjectTypeProperty", js.undefined)
       
-      @scala.inline
-      def setObjectTypeSpreadProperty(value: VisitNode[S, Extract[Node, `79`]]): Self = StObject.set(x, "ObjectTypeSpreadProperty", value.asInstanceOf[js.Any])
+      inline def setObjectTypeSpreadProperty(value: VisitNode[S, Extract[Node, `79`]]): Self = StObject.set(x, "ObjectTypeSpreadProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectTypeSpreadPropertyUndefined: Self = StObject.set(x, "ObjectTypeSpreadProperty", js.undefined)
+      inline def setObjectTypeSpreadPropertyUndefined: Self = StObject.set(x, "ObjectTypeSpreadProperty", js.undefined)
       
-      @scala.inline
-      def setOpaqueType(value: VisitNode[S, Extract[Node, `69`]]): Self = StObject.set(x, "OpaqueType", value.asInstanceOf[js.Any])
+      inline def setOpaqueType(value: VisitNode[S, Extract[Node, `69`]]): Self = StObject.set(x, "OpaqueType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpaqueTypeUndefined: Self = StObject.set(x, "OpaqueType", js.undefined)
+      inline def setOpaqueTypeUndefined: Self = StObject.set(x, "OpaqueType", js.undefined)
       
-      @scala.inline
-      def setOptionalCallExpression(value: VisitNode[S, Extract[Node, `44`]]): Self = StObject.set(x, "OptionalCallExpression", value.asInstanceOf[js.Any])
+      inline def setOptionalCallExpression(value: VisitNode[S, Extract[Node, `44`]]): Self = StObject.set(x, "OptionalCallExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalCallExpressionUndefined: Self = StObject.set(x, "OptionalCallExpression", js.undefined)
+      inline def setOptionalCallExpressionUndefined: Self = StObject.set(x, "OptionalCallExpression", js.undefined)
       
-      @scala.inline
-      def setOptionalMemberExpression(value: VisitNode[S, Extract[Node, `26`]]): Self = StObject.set(x, "OptionalMemberExpression", value.asInstanceOf[js.Any])
+      inline def setOptionalMemberExpression(value: VisitNode[S, Extract[Node, `26`]]): Self = StObject.set(x, "OptionalMemberExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalMemberExpressionUndefined: Self = StObject.set(x, "OptionalMemberExpression", js.undefined)
+      inline def setOptionalMemberExpressionUndefined: Self = StObject.set(x, "OptionalMemberExpression", js.undefined)
       
-      @scala.inline
-      def setParenthesizedExpression(value: VisitNode[S, Extract[Node, `199`]]): Self = StObject.set(x, "ParenthesizedExpression", value.asInstanceOf[js.Any])
+      inline def setParenthesizedExpression(value: VisitNode[S, Extract[Node, `199`]]): Self = StObject.set(x, "ParenthesizedExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParenthesizedExpressionUndefined: Self = StObject.set(x, "ParenthesizedExpression", js.undefined)
+      inline def setParenthesizedExpressionUndefined: Self = StObject.set(x, "ParenthesizedExpression", js.undefined)
       
-      @scala.inline
-      def setPattern(value: VisitNode[S, Pattern]): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: VisitNode[S, Pattern]): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternLike(value: VisitNode[S, PatternLike]): Self = StObject.set(x, "PatternLike", value.asInstanceOf[js.Any])
+      inline def setPatternLike(value: VisitNode[S, PatternLike]): Self = StObject.set(x, "PatternLike", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternLikeUndefined: Self = StObject.set(x, "PatternLike", js.undefined)
+      inline def setPatternLikeUndefined: Self = StObject.set(x, "PatternLike", js.undefined)
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "Pattern", js.undefined)
       
-      @scala.inline
-      def setPipelineBareFunction(value: VisitNode[S, Extract[Node, `157`]]): Self = StObject.set(x, "PipelineBareFunction", value.asInstanceOf[js.Any])
+      inline def setPipelineBareFunction(value: VisitNode[S, Extract[Node, `157`]]): Self = StObject.set(x, "PipelineBareFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipelineBareFunctionUndefined: Self = StObject.set(x, "PipelineBareFunction", js.undefined)
+      inline def setPipelineBareFunctionUndefined: Self = StObject.set(x, "PipelineBareFunction", js.undefined)
       
-      @scala.inline
-      def setPipelinePrimaryTopicReference(value: VisitNode[S, Extract[Node, `30`]]): Self = StObject.set(x, "PipelinePrimaryTopicReference", value.asInstanceOf[js.Any])
+      inline def setPipelinePrimaryTopicReference(value: VisitNode[S, Extract[Node, `30`]]): Self = StObject.set(x, "PipelinePrimaryTopicReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipelinePrimaryTopicReferenceUndefined: Self = StObject.set(x, "PipelinePrimaryTopicReference", js.undefined)
+      inline def setPipelinePrimaryTopicReferenceUndefined: Self = StObject.set(x, "PipelinePrimaryTopicReference", js.undefined)
       
-      @scala.inline
-      def setPipelineTopicExpression(value: VisitNode[S, Extract[Node, `103`]]): Self = StObject.set(x, "PipelineTopicExpression", value.asInstanceOf[js.Any])
+      inline def setPipelineTopicExpression(value: VisitNode[S, Extract[Node, `103`]]): Self = StObject.set(x, "PipelineTopicExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipelineTopicExpressionUndefined: Self = StObject.set(x, "PipelineTopicExpression", js.undefined)
+      inline def setPipelineTopicExpressionUndefined: Self = StObject.set(x, "PipelineTopicExpression", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: VisitNode[S, Extract[Node, `163`]]): Self = StObject.set(x, "Placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: VisitNode[S, Extract[Node, `163`]]): Self = StObject.set(x, "Placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "Placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "Placeholder", js.undefined)
       
-      @scala.inline
-      def setPrivate(value: VisitNode[S, Private]): Self = StObject.set(x, "Private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: VisitNode[S, Private]): Self = StObject.set(x, "Private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateName(value: VisitNode[S, Extract[Node, `93`]]): Self = StObject.set(x, "PrivateName", value.asInstanceOf[js.Any])
+      inline def setPrivateName(value: VisitNode[S, Extract[Node, `93`]]): Self = StObject.set(x, "PrivateName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateNameUndefined: Self = StObject.set(x, "PrivateName", js.undefined)
+      inline def setPrivateNameUndefined: Self = StObject.set(x, "PrivateName", js.undefined)
       
-      @scala.inline
-      def setPrivateUndefined: Self = StObject.set(x, "Private", js.undefined)
+      inline def setPrivateUndefined: Self = StObject.set(x, "Private", js.undefined)
       
-      @scala.inline
-      def setProgram(value: VisitNode[S, Extract[Node, `150`]]): Self = StObject.set(x, "Program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: VisitNode[S, Extract[Node, `150`]]): Self = StObject.set(x, "Program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "Program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "Program", js.undefined)
       
-      @scala.inline
-      def setProperty(value: VisitNode[S, Property]): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: VisitNode[S, Property]): Self = StObject.set(x, "Property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "Property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "Property", js.undefined)
       
-      @scala.inline
-      def setPureish(value: VisitNode[S, Pureish]): Self = StObject.set(x, "Pureish", value.asInstanceOf[js.Any])
+      inline def setPureish(value: VisitNode[S, Pureish]): Self = StObject.set(x, "Pureish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPureishUndefined: Self = StObject.set(x, "Pureish", js.undefined)
+      inline def setPureishUndefined: Self = StObject.set(x, "Pureish", js.undefined)
       
-      @scala.inline
-      def setQualifiedTypeIdentifier(value: VisitNode[S, Extract[Node, `73`]]): Self = StObject.set(x, "QualifiedTypeIdentifier", value.asInstanceOf[js.Any])
+      inline def setQualifiedTypeIdentifier(value: VisitNode[S, Extract[Node, `73`]]): Self = StObject.set(x, "QualifiedTypeIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifiedTypeIdentifierUndefined: Self = StObject.set(x, "QualifiedTypeIdentifier", js.undefined)
+      inline def setQualifiedTypeIdentifierUndefined: Self = StObject.set(x, "QualifiedTypeIdentifier", js.undefined)
       
-      @scala.inline
-      def setRecordExpression(value: VisitNode[S, Extract[Node, `60`]]): Self = StObject.set(x, "RecordExpression", value.asInstanceOf[js.Any])
+      inline def setRecordExpression(value: VisitNode[S, Extract[Node, `60`]]): Self = StObject.set(x, "RecordExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordExpressionUndefined: Self = StObject.set(x, "RecordExpression", js.undefined)
+      inline def setRecordExpressionUndefined: Self = StObject.set(x, "RecordExpression", js.undefined)
       
-      @scala.inline
-      def setRegExpLiteral(value: VisitNode[S, Extract[Node, `37`]]): Self = StObject.set(x, "RegExpLiteral", value.asInstanceOf[js.Any])
+      inline def setRegExpLiteral(value: VisitNode[S, Extract[Node, `37`]]): Self = StObject.set(x, "RegExpLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegExpLiteralUndefined: Self = StObject.set(x, "RegExpLiteral", js.undefined)
+      inline def setRegExpLiteralUndefined: Self = StObject.set(x, "RegExpLiteral", js.undefined)
       
-      @scala.inline
-      def setRestElement(value: VisitNode[S, Extract[Node, `25`]]): Self = StObject.set(x, "RestElement", value.asInstanceOf[js.Any])
+      inline def setRestElement(value: VisitNode[S, Extract[Node, `25`]]): Self = StObject.set(x, "RestElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestElementUndefined: Self = StObject.set(x, "RestElement", js.undefined)
+      inline def setRestElementUndefined: Self = StObject.set(x, "RestElement", js.undefined)
       
-      @scala.inline
-      def setReturnStatement(value: VisitNode[S, Extract[Node, `5`]]): Self = StObject.set(x, "ReturnStatement", value.asInstanceOf[js.Any])
+      inline def setReturnStatement(value: VisitNode[S, Extract[Node, `5`]]): Self = StObject.set(x, "ReturnStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnStatementUndefined: Self = StObject.set(x, "ReturnStatement", js.undefined)
+      inline def setReturnStatementUndefined: Self = StObject.set(x, "ReturnStatement", js.undefined)
       
-      @scala.inline
-      def setScopable(value: VisitNode[S, Scopable]): Self = StObject.set(x, "Scopable", value.asInstanceOf[js.Any])
+      inline def setScopable(value: VisitNode[S, Scopable]): Self = StObject.set(x, "Scopable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopableUndefined: Self = StObject.set(x, "Scopable", js.undefined)
+      inline def setScopableUndefined: Self = StObject.set(x, "Scopable", js.undefined)
       
-      @scala.inline
-      def setSequenceExpression(value: VisitNode[S, Extract[Node, `166`]]): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
+      inline def setSequenceExpression(value: VisitNode[S, Extract[Node, `166`]]): Self = StObject.set(x, "SequenceExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceExpressionUndefined: Self = StObject.set(x, "SequenceExpression", js.undefined)
+      inline def setSequenceExpressionUndefined: Self = StObject.set(x, "SequenceExpression", js.undefined)
       
-      @scala.inline
-      def setSpreadElement(value: VisitNode[S, Extract[Node, `22`]]): Self = StObject.set(x, "SpreadElement", value.asInstanceOf[js.Any])
+      inline def setSpreadElement(value: VisitNode[S, Extract[Node, `22`]]): Self = StObject.set(x, "SpreadElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpreadElementUndefined: Self = StObject.set(x, "SpreadElement", js.undefined)
+      inline def setSpreadElementUndefined: Self = StObject.set(x, "SpreadElement", js.undefined)
       
-      @scala.inline
-      def setStatement(value: VisitNode[S, Statement]): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
+      inline def setStatement(value: VisitNode[S, Statement]): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementUndefined: Self = StObject.set(x, "Statement", js.undefined)
+      inline def setStatementUndefined: Self = StObject.set(x, "Statement", js.undefined)
       
-      @scala.inline
-      def setStaticBlock(value: VisitNode[S, Extract[Node, `108`]]): Self = StObject.set(x, "StaticBlock", value.asInstanceOf[js.Any])
+      inline def setStaticBlock(value: VisitNode[S, Extract[Node, `108`]]): Self = StObject.set(x, "StaticBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticBlockUndefined: Self = StObject.set(x, "StaticBlock", js.undefined)
+      inline def setStaticBlockUndefined: Self = StObject.set(x, "StaticBlock", js.undefined)
       
-      @scala.inline
-      def setStringLiteral(value: VisitNode[S, Extract[Node, `128`]]): Self = StObject.set(x, "StringLiteral", value.asInstanceOf[js.Any])
+      inline def setStringLiteral(value: VisitNode[S, Extract[Node, `128`]]): Self = StObject.set(x, "StringLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `219`]]): Self = StObject.set(x, "StringLiteralTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setStringLiteralTypeAnnotation(value: VisitNode[S, Extract[Node, `219`]]): Self = StObject.set(x, "StringLiteralTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringLiteralTypeAnnotationUndefined: Self = StObject.set(x, "StringLiteralTypeAnnotation", js.undefined)
+      inline def setStringLiteralTypeAnnotationUndefined: Self = StObject.set(x, "StringLiteralTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setStringLiteralUndefined: Self = StObject.set(x, "StringLiteral", js.undefined)
+      inline def setStringLiteralUndefined: Self = StObject.set(x, "StringLiteral", js.undefined)
       
-      @scala.inline
-      def setStringTypeAnnotation(value: VisitNode[S, Extract[Node, `2`]]): Self = StObject.set(x, "StringTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setStringTypeAnnotation(value: VisitNode[S, Extract[Node, `2`]]): Self = StObject.set(x, "StringTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringTypeAnnotationUndefined: Self = StObject.set(x, "StringTypeAnnotation", js.undefined)
+      inline def setStringTypeAnnotationUndefined: Self = StObject.set(x, "StringTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setSuper(value: VisitNode[S, Extract[Node, `160`]]): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
+      inline def setSuper(value: VisitNode[S, Extract[Node, `160`]]): Self = StObject.set(x, "Super", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuperUndefined: Self = StObject.set(x, "Super", js.undefined)
+      inline def setSuperUndefined: Self = StObject.set(x, "Super", js.undefined)
       
-      @scala.inline
-      def setSwitchCase(value: VisitNode[S, Extract[Node, `53`]]): Self = StObject.set(x, "SwitchCase", value.asInstanceOf[js.Any])
+      inline def setSwitchCase(value: VisitNode[S, Extract[Node, `53`]]): Self = StObject.set(x, "SwitchCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchCaseUndefined: Self = StObject.set(x, "SwitchCase", js.undefined)
+      inline def setSwitchCaseUndefined: Self = StObject.set(x, "SwitchCase", js.undefined)
       
-      @scala.inline
-      def setSwitchStatement(value: VisitNode[S, Extract[Node, `43`]]): Self = StObject.set(x, "SwitchStatement", value.asInstanceOf[js.Any])
+      inline def setSwitchStatement(value: VisitNode[S, Extract[Node, `43`]]): Self = StObject.set(x, "SwitchStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchStatementUndefined: Self = StObject.set(x, "SwitchStatement", js.undefined)
+      inline def setSwitchStatementUndefined: Self = StObject.set(x, "SwitchStatement", js.undefined)
       
-      @scala.inline
-      def setSymbolTypeAnnotation(value: VisitNode[S, Extract[Node, `49`]]): Self = StObject.set(x, "SymbolTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setSymbolTypeAnnotation(value: VisitNode[S, Extract[Node, `49`]]): Self = StObject.set(x, "SymbolTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolTypeAnnotationUndefined: Self = StObject.set(x, "SymbolTypeAnnotation", js.undefined)
+      inline def setSymbolTypeAnnotationUndefined: Self = StObject.set(x, "SymbolTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setTSAnyKeyword(value: VisitNode[S, Extract[Node, `9`]]): Self = StObject.set(x, "TSAnyKeyword", value.asInstanceOf[js.Any])
+      inline def setTSAnyKeyword(value: VisitNode[S, Extract[Node, `9`]]): Self = StObject.set(x, "TSAnyKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSAnyKeywordUndefined: Self = StObject.set(x, "TSAnyKeyword", js.undefined)
+      inline def setTSAnyKeywordUndefined: Self = StObject.set(x, "TSAnyKeyword", js.undefined)
       
-      @scala.inline
-      def setTSArrayType(value: VisitNode[S, Extract[Node, `0`]]): Self = StObject.set(x, "TSArrayType", value.asInstanceOf[js.Any])
+      inline def setTSArrayType(value: VisitNode[S, Extract[Node, `0`]]): Self = StObject.set(x, "TSArrayType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSArrayTypeUndefined: Self = StObject.set(x, "TSArrayType", js.undefined)
+      inline def setTSArrayTypeUndefined: Self = StObject.set(x, "TSArrayType", js.undefined)
       
-      @scala.inline
-      def setTSAsExpression(value: VisitNode[S, Extract[Node, `7`]]): Self = StObject.set(x, "TSAsExpression", value.asInstanceOf[js.Any])
+      inline def setTSAsExpression(value: VisitNode[S, Extract[Node, `7`]]): Self = StObject.set(x, "TSAsExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSAsExpressionUndefined: Self = StObject.set(x, "TSAsExpression", js.undefined)
+      inline def setTSAsExpressionUndefined: Self = StObject.set(x, "TSAsExpression", js.undefined)
       
-      @scala.inline
-      def setTSBaseType(value: VisitNode[S, TSBaseType]): Self = StObject.set(x, "TSBaseType", value.asInstanceOf[js.Any])
+      inline def setTSBaseType(value: VisitNode[S, TSBaseType]): Self = StObject.set(x, "TSBaseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSBaseTypeUndefined: Self = StObject.set(x, "TSBaseType", js.undefined)
+      inline def setTSBaseTypeUndefined: Self = StObject.set(x, "TSBaseType", js.undefined)
       
-      @scala.inline
-      def setTSBigIntKeyword(value: VisitNode[S, Extract[Node, `52`]]): Self = StObject.set(x, "TSBigIntKeyword", value.asInstanceOf[js.Any])
+      inline def setTSBigIntKeyword(value: VisitNode[S, Extract[Node, `52`]]): Self = StObject.set(x, "TSBigIntKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSBigIntKeywordUndefined: Self = StObject.set(x, "TSBigIntKeyword", js.undefined)
+      inline def setTSBigIntKeywordUndefined: Self = StObject.set(x, "TSBigIntKeyword", js.undefined)
       
-      @scala.inline
-      def setTSBooleanKeyword(value: VisitNode[S, Extract[Node, `218`]]): Self = StObject.set(x, "TSBooleanKeyword", value.asInstanceOf[js.Any])
+      inline def setTSBooleanKeyword(value: VisitNode[S, Extract[Node, `218`]]): Self = StObject.set(x, "TSBooleanKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSBooleanKeywordUndefined: Self = StObject.set(x, "TSBooleanKeyword", js.undefined)
+      inline def setTSBooleanKeywordUndefined: Self = StObject.set(x, "TSBooleanKeyword", js.undefined)
       
-      @scala.inline
-      def setTSCallSignatureDeclaration(value: VisitNode[S, Extract[Node, `146`]]): Self = StObject.set(x, "TSCallSignatureDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSCallSignatureDeclaration(value: VisitNode[S, Extract[Node, `146`]]): Self = StObject.set(x, "TSCallSignatureDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSCallSignatureDeclarationUndefined: Self = StObject.set(x, "TSCallSignatureDeclaration", js.undefined)
+      inline def setTSCallSignatureDeclarationUndefined: Self = StObject.set(x, "TSCallSignatureDeclaration", js.undefined)
       
-      @scala.inline
-      def setTSConditionalType(value: VisitNode[S, Extract[Node, `17`]]): Self = StObject.set(x, "TSConditionalType", value.asInstanceOf[js.Any])
+      inline def setTSConditionalType(value: VisitNode[S, Extract[Node, `17`]]): Self = StObject.set(x, "TSConditionalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSConditionalTypeUndefined: Self = StObject.set(x, "TSConditionalType", js.undefined)
+      inline def setTSConditionalTypeUndefined: Self = StObject.set(x, "TSConditionalType", js.undefined)
       
-      @scala.inline
-      def setTSConstructSignatureDeclaration(value: VisitNode[S, Extract[Node, `119`]]): Self = StObject.set(x, "TSConstructSignatureDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSConstructSignatureDeclaration(value: VisitNode[S, Extract[Node, `119`]]): Self = StObject.set(x, "TSConstructSignatureDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSConstructSignatureDeclarationUndefined: Self = StObject.set(x, "TSConstructSignatureDeclaration", js.undefined)
+      inline def setTSConstructSignatureDeclarationUndefined: Self = StObject.set(x, "TSConstructSignatureDeclaration", js.undefined)
       
-      @scala.inline
-      def setTSConstructorType(value: VisitNode[S, Extract[Node, `208`]]): Self = StObject.set(x, "TSConstructorType", value.asInstanceOf[js.Any])
+      inline def setTSConstructorType(value: VisitNode[S, Extract[Node, `208`]]): Self = StObject.set(x, "TSConstructorType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSConstructorTypeUndefined: Self = StObject.set(x, "TSConstructorType", js.undefined)
+      inline def setTSConstructorTypeUndefined: Self = StObject.set(x, "TSConstructorType", js.undefined)
       
-      @scala.inline
-      def setTSDeclareFunction(value: VisitNode[S, Extract[Node, `196`]]): Self = StObject.set(x, "TSDeclareFunction", value.asInstanceOf[js.Any])
+      inline def setTSDeclareFunction(value: VisitNode[S, Extract[Node, `196`]]): Self = StObject.set(x, "TSDeclareFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSDeclareFunctionUndefined: Self = StObject.set(x, "TSDeclareFunction", js.undefined)
+      inline def setTSDeclareFunctionUndefined: Self = StObject.set(x, "TSDeclareFunction", js.undefined)
       
-      @scala.inline
-      def setTSDeclareMethod(value: VisitNode[S, Extract[Node, `75`]]): Self = StObject.set(x, "TSDeclareMethod", value.asInstanceOf[js.Any])
+      inline def setTSDeclareMethod(value: VisitNode[S, Extract[Node, `75`]]): Self = StObject.set(x, "TSDeclareMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSDeclareMethodUndefined: Self = StObject.set(x, "TSDeclareMethod", js.undefined)
+      inline def setTSDeclareMethodUndefined: Self = StObject.set(x, "TSDeclareMethod", js.undefined)
       
-      @scala.inline
-      def setTSEntityName(value: VisitNode[S, TSEntityName]): Self = StObject.set(x, "TSEntityName", value.asInstanceOf[js.Any])
+      inline def setTSEntityName(value: VisitNode[S, TSEntityName]): Self = StObject.set(x, "TSEntityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSEntityNameUndefined: Self = StObject.set(x, "TSEntityName", js.undefined)
+      inline def setTSEntityNameUndefined: Self = StObject.set(x, "TSEntityName", js.undefined)
       
-      @scala.inline
-      def setTSEnumDeclaration(value: VisitNode[S, Extract[Node, `89`]]): Self = StObject.set(x, "TSEnumDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSEnumDeclaration(value: VisitNode[S, Extract[Node, `89`]]): Self = StObject.set(x, "TSEnumDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSEnumDeclarationUndefined: Self = StObject.set(x, "TSEnumDeclaration", js.undefined)
+      inline def setTSEnumDeclarationUndefined: Self = StObject.set(x, "TSEnumDeclaration", js.undefined)
       
-      @scala.inline
-      def setTSEnumMember(value: VisitNode[S, Extract[Node, `130`]]): Self = StObject.set(x, "TSEnumMember", value.asInstanceOf[js.Any])
+      inline def setTSEnumMember(value: VisitNode[S, Extract[Node, `130`]]): Self = StObject.set(x, "TSEnumMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSEnumMemberUndefined: Self = StObject.set(x, "TSEnumMember", js.undefined)
+      inline def setTSEnumMemberUndefined: Self = StObject.set(x, "TSEnumMember", js.undefined)
       
-      @scala.inline
-      def setTSExportAssignment(value: VisitNode[S, Extract[Node, `142`]]): Self = StObject.set(x, "TSExportAssignment", value.asInstanceOf[js.Any])
+      inline def setTSExportAssignment(value: VisitNode[S, Extract[Node, `142`]]): Self = StObject.set(x, "TSExportAssignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSExportAssignmentUndefined: Self = StObject.set(x, "TSExportAssignment", js.undefined)
+      inline def setTSExportAssignmentUndefined: Self = StObject.set(x, "TSExportAssignment", js.undefined)
       
-      @scala.inline
-      def setTSExpressionWithTypeArguments(value: VisitNode[S, Extract[Node, `144`]]): Self = StObject.set(x, "TSExpressionWithTypeArguments", value.asInstanceOf[js.Any])
+      inline def setTSExpressionWithTypeArguments(value: VisitNode[S, Extract[Node, `144`]]): Self = StObject.set(x, "TSExpressionWithTypeArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSExpressionWithTypeArgumentsUndefined: Self = StObject.set(x, "TSExpressionWithTypeArguments", js.undefined)
+      inline def setTSExpressionWithTypeArgumentsUndefined: Self = StObject.set(x, "TSExpressionWithTypeArguments", js.undefined)
       
-      @scala.inline
-      def setTSExternalModuleReference(value: VisitNode[S, Extract[Node, `118`]]): Self = StObject.set(x, "TSExternalModuleReference", value.asInstanceOf[js.Any])
+      inline def setTSExternalModuleReference(value: VisitNode[S, Extract[Node, `118`]]): Self = StObject.set(x, "TSExternalModuleReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSExternalModuleReferenceUndefined: Self = StObject.set(x, "TSExternalModuleReference", js.undefined)
+      inline def setTSExternalModuleReferenceUndefined: Self = StObject.set(x, "TSExternalModuleReference", js.undefined)
       
-      @scala.inline
-      def setTSFunctionType(value: VisitNode[S, Extract[Node, `41`]]): Self = StObject.set(x, "TSFunctionType", value.asInstanceOf[js.Any])
+      inline def setTSFunctionType(value: VisitNode[S, Extract[Node, `41`]]): Self = StObject.set(x, "TSFunctionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSFunctionTypeUndefined: Self = StObject.set(x, "TSFunctionType", js.undefined)
+      inline def setTSFunctionTypeUndefined: Self = StObject.set(x, "TSFunctionType", js.undefined)
       
-      @scala.inline
-      def setTSImportEqualsDeclaration(value: VisitNode[S, Extract[Node, `155`]]): Self = StObject.set(x, "TSImportEqualsDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSImportEqualsDeclaration(value: VisitNode[S, Extract[Node, `155`]]): Self = StObject.set(x, "TSImportEqualsDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSImportEqualsDeclarationUndefined: Self = StObject.set(x, "TSImportEqualsDeclaration", js.undefined)
+      inline def setTSImportEqualsDeclarationUndefined: Self = StObject.set(x, "TSImportEqualsDeclaration", js.undefined)
       
-      @scala.inline
-      def setTSImportType(value: VisitNode[S, Extract[Node, `234`]]): Self = StObject.set(x, "TSImportType", value.asInstanceOf[js.Any])
+      inline def setTSImportType(value: VisitNode[S, Extract[Node, `234`]]): Self = StObject.set(x, "TSImportType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSImportTypeUndefined: Self = StObject.set(x, "TSImportType", js.undefined)
+      inline def setTSImportTypeUndefined: Self = StObject.set(x, "TSImportType", js.undefined)
       
-      @scala.inline
-      def setTSIndexSignature(value: VisitNode[S, Extract[Node, `202`]]): Self = StObject.set(x, "TSIndexSignature", value.asInstanceOf[js.Any])
+      inline def setTSIndexSignature(value: VisitNode[S, Extract[Node, `202`]]): Self = StObject.set(x, "TSIndexSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSIndexSignatureUndefined: Self = StObject.set(x, "TSIndexSignature", js.undefined)
+      inline def setTSIndexSignatureUndefined: Self = StObject.set(x, "TSIndexSignature", js.undefined)
       
-      @scala.inline
-      def setTSIndexedAccessType(value: VisitNode[S, Extract[Node, `28`]]): Self = StObject.set(x, "TSIndexedAccessType", value.asInstanceOf[js.Any])
+      inline def setTSIndexedAccessType(value: VisitNode[S, Extract[Node, `28`]]): Self = StObject.set(x, "TSIndexedAccessType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSIndexedAccessTypeUndefined: Self = StObject.set(x, "TSIndexedAccessType", js.undefined)
+      inline def setTSIndexedAccessTypeUndefined: Self = StObject.set(x, "TSIndexedAccessType", js.undefined)
       
-      @scala.inline
-      def setTSInferType(value: VisitNode[S, Extract[Node, `101`]]): Self = StObject.set(x, "TSInferType", value.asInstanceOf[js.Any])
+      inline def setTSInferType(value: VisitNode[S, Extract[Node, `101`]]): Self = StObject.set(x, "TSInferType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSInferTypeUndefined: Self = StObject.set(x, "TSInferType", js.undefined)
+      inline def setTSInferTypeUndefined: Self = StObject.set(x, "TSInferType", js.undefined)
       
-      @scala.inline
-      def setTSInterfaceBody(value: VisitNode[S, Extract[Node, `6`]]): Self = StObject.set(x, "TSInterfaceBody", value.asInstanceOf[js.Any])
+      inline def setTSInterfaceBody(value: VisitNode[S, Extract[Node, `6`]]): Self = StObject.set(x, "TSInterfaceBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSInterfaceBodyUndefined: Self = StObject.set(x, "TSInterfaceBody", js.undefined)
+      inline def setTSInterfaceBodyUndefined: Self = StObject.set(x, "TSInterfaceBody", js.undefined)
       
-      @scala.inline
-      def setTSInterfaceDeclaration(value: VisitNode[S, Extract[Node, `182`]]): Self = StObject.set(x, "TSInterfaceDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSInterfaceDeclaration(value: VisitNode[S, Extract[Node, `182`]]): Self = StObject.set(x, "TSInterfaceDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSInterfaceDeclarationUndefined: Self = StObject.set(x, "TSInterfaceDeclaration", js.undefined)
+      inline def setTSInterfaceDeclarationUndefined: Self = StObject.set(x, "TSInterfaceDeclaration", js.undefined)
       
-      @scala.inline
-      def setTSIntersectionType(value: VisitNode[S, Extract[Node, `231`]]): Self = StObject.set(x, "TSIntersectionType", value.asInstanceOf[js.Any])
+      inline def setTSIntersectionType(value: VisitNode[S, Extract[Node, `231`]]): Self = StObject.set(x, "TSIntersectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSIntersectionTypeUndefined: Self = StObject.set(x, "TSIntersectionType", js.undefined)
+      inline def setTSIntersectionTypeUndefined: Self = StObject.set(x, "TSIntersectionType", js.undefined)
       
-      @scala.inline
-      def setTSIntrinsicKeyword(value: VisitNode[S, Extract[Node, `65`]]): Self = StObject.set(x, "TSIntrinsicKeyword", value.asInstanceOf[js.Any])
+      inline def setTSIntrinsicKeyword(value: VisitNode[S, Extract[Node, `65`]]): Self = StObject.set(x, "TSIntrinsicKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSIntrinsicKeywordUndefined: Self = StObject.set(x, "TSIntrinsicKeyword", js.undefined)
+      inline def setTSIntrinsicKeywordUndefined: Self = StObject.set(x, "TSIntrinsicKeyword", js.undefined)
       
-      @scala.inline
-      def setTSLiteralType(value: VisitNode[S, Extract[Node, `19`]]): Self = StObject.set(x, "TSLiteralType", value.asInstanceOf[js.Any])
+      inline def setTSLiteralType(value: VisitNode[S, Extract[Node, `19`]]): Self = StObject.set(x, "TSLiteralType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSLiteralTypeUndefined: Self = StObject.set(x, "TSLiteralType", js.undefined)
+      inline def setTSLiteralTypeUndefined: Self = StObject.set(x, "TSLiteralType", js.undefined)
       
-      @scala.inline
-      def setTSMappedType(value: VisitNode[S, Extract[Node, `125`]]): Self = StObject.set(x, "TSMappedType", value.asInstanceOf[js.Any])
+      inline def setTSMappedType(value: VisitNode[S, Extract[Node, `125`]]): Self = StObject.set(x, "TSMappedType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSMappedTypeUndefined: Self = StObject.set(x, "TSMappedType", js.undefined)
+      inline def setTSMappedTypeUndefined: Self = StObject.set(x, "TSMappedType", js.undefined)
       
-      @scala.inline
-      def setTSMethodSignature(value: VisitNode[S, Extract[Node, `198`]]): Self = StObject.set(x, "TSMethodSignature", value.asInstanceOf[js.Any])
+      inline def setTSMethodSignature(value: VisitNode[S, Extract[Node, `198`]]): Self = StObject.set(x, "TSMethodSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSMethodSignatureUndefined: Self = StObject.set(x, "TSMethodSignature", js.undefined)
+      inline def setTSMethodSignatureUndefined: Self = StObject.set(x, "TSMethodSignature", js.undefined)
       
-      @scala.inline
-      def setTSModuleBlock(value: VisitNode[S, Extract[Node, `224`]]): Self = StObject.set(x, "TSModuleBlock", value.asInstanceOf[js.Any])
+      inline def setTSModuleBlock(value: VisitNode[S, Extract[Node, `224`]]): Self = StObject.set(x, "TSModuleBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSModuleBlockUndefined: Self = StObject.set(x, "TSModuleBlock", js.undefined)
+      inline def setTSModuleBlockUndefined: Self = StObject.set(x, "TSModuleBlock", js.undefined)
       
-      @scala.inline
-      def setTSModuleDeclaration(value: VisitNode[S, Extract[Node, `15`]]): Self = StObject.set(x, "TSModuleDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSModuleDeclaration(value: VisitNode[S, Extract[Node, `15`]]): Self = StObject.set(x, "TSModuleDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSModuleDeclarationUndefined: Self = StObject.set(x, "TSModuleDeclaration", js.undefined)
+      inline def setTSModuleDeclarationUndefined: Self = StObject.set(x, "TSModuleDeclaration", js.undefined)
       
-      @scala.inline
-      def setTSNamedTupleMember(value: VisitNode[S, Extract[Node, `215`]]): Self = StObject.set(x, "TSNamedTupleMember", value.asInstanceOf[js.Any])
+      inline def setTSNamedTupleMember(value: VisitNode[S, Extract[Node, `215`]]): Self = StObject.set(x, "TSNamedTupleMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSNamedTupleMemberUndefined: Self = StObject.set(x, "TSNamedTupleMember", js.undefined)
+      inline def setTSNamedTupleMemberUndefined: Self = StObject.set(x, "TSNamedTupleMember", js.undefined)
       
-      @scala.inline
-      def setTSNamespaceExportDeclaration(value: VisitNode[S, Extract[Node, `88`]]): Self = StObject.set(x, "TSNamespaceExportDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSNamespaceExportDeclaration(value: VisitNode[S, Extract[Node, `88`]]): Self = StObject.set(x, "TSNamespaceExportDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSNamespaceExportDeclarationUndefined: Self = StObject.set(x, "TSNamespaceExportDeclaration", js.undefined)
+      inline def setTSNamespaceExportDeclarationUndefined: Self = StObject.set(x, "TSNamespaceExportDeclaration", js.undefined)
       
-      @scala.inline
-      def setTSNeverKeyword(value: VisitNode[S, Extract[Node, `230`]]): Self = StObject.set(x, "TSNeverKeyword", value.asInstanceOf[js.Any])
+      inline def setTSNeverKeyword(value: VisitNode[S, Extract[Node, `230`]]): Self = StObject.set(x, "TSNeverKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSNeverKeywordUndefined: Self = StObject.set(x, "TSNeverKeyword", js.undefined)
+      inline def setTSNeverKeywordUndefined: Self = StObject.set(x, "TSNeverKeyword", js.undefined)
       
-      @scala.inline
-      def setTSNonNullExpression(value: VisitNode[S, Extract[Node, `95`]]): Self = StObject.set(x, "TSNonNullExpression", value.asInstanceOf[js.Any])
+      inline def setTSNonNullExpression(value: VisitNode[S, Extract[Node, `95`]]): Self = StObject.set(x, "TSNonNullExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSNonNullExpressionUndefined: Self = StObject.set(x, "TSNonNullExpression", js.undefined)
+      inline def setTSNonNullExpressionUndefined: Self = StObject.set(x, "TSNonNullExpression", js.undefined)
       
-      @scala.inline
-      def setTSNullKeyword(value: VisitNode[S, Extract[Node, `32`]]): Self = StObject.set(x, "TSNullKeyword", value.asInstanceOf[js.Any])
+      inline def setTSNullKeyword(value: VisitNode[S, Extract[Node, `32`]]): Self = StObject.set(x, "TSNullKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSNullKeywordUndefined: Self = StObject.set(x, "TSNullKeyword", js.undefined)
+      inline def setTSNullKeywordUndefined: Self = StObject.set(x, "TSNullKeyword", js.undefined)
       
-      @scala.inline
-      def setTSNumberKeyword(value: VisitNode[S, Extract[Node, `176`]]): Self = StObject.set(x, "TSNumberKeyword", value.asInstanceOf[js.Any])
+      inline def setTSNumberKeyword(value: VisitNode[S, Extract[Node, `176`]]): Self = StObject.set(x, "TSNumberKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSNumberKeywordUndefined: Self = StObject.set(x, "TSNumberKeyword", js.undefined)
+      inline def setTSNumberKeywordUndefined: Self = StObject.set(x, "TSNumberKeyword", js.undefined)
       
-      @scala.inline
-      def setTSObjectKeyword(value: VisitNode[S, Extract[Node, `211`]]): Self = StObject.set(x, "TSObjectKeyword", value.asInstanceOf[js.Any])
+      inline def setTSObjectKeyword(value: VisitNode[S, Extract[Node, `211`]]): Self = StObject.set(x, "TSObjectKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSObjectKeywordUndefined: Self = StObject.set(x, "TSObjectKeyword", js.undefined)
+      inline def setTSObjectKeywordUndefined: Self = StObject.set(x, "TSObjectKeyword", js.undefined)
       
-      @scala.inline
-      def setTSOptionalType(value: VisitNode[S, Extract[Node, `180`]]): Self = StObject.set(x, "TSOptionalType", value.asInstanceOf[js.Any])
+      inline def setTSOptionalType(value: VisitNode[S, Extract[Node, `180`]]): Self = StObject.set(x, "TSOptionalType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSOptionalTypeUndefined: Self = StObject.set(x, "TSOptionalType", js.undefined)
+      inline def setTSOptionalTypeUndefined: Self = StObject.set(x, "TSOptionalType", js.undefined)
       
-      @scala.inline
-      def setTSParameterProperty(value: VisitNode[S, Extract[Node, `191`]]): Self = StObject.set(x, "TSParameterProperty", value.asInstanceOf[js.Any])
+      inline def setTSParameterProperty(value: VisitNode[S, Extract[Node, `191`]]): Self = StObject.set(x, "TSParameterProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSParameterPropertyUndefined: Self = StObject.set(x, "TSParameterProperty", js.undefined)
+      inline def setTSParameterPropertyUndefined: Self = StObject.set(x, "TSParameterProperty", js.undefined)
       
-      @scala.inline
-      def setTSParenthesizedType(value: VisitNode[S, Extract[Node, `220`]]): Self = StObject.set(x, "TSParenthesizedType", value.asInstanceOf[js.Any])
+      inline def setTSParenthesizedType(value: VisitNode[S, Extract[Node, `220`]]): Self = StObject.set(x, "TSParenthesizedType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSParenthesizedTypeUndefined: Self = StObject.set(x, "TSParenthesizedType", js.undefined)
+      inline def setTSParenthesizedTypeUndefined: Self = StObject.set(x, "TSParenthesizedType", js.undefined)
       
-      @scala.inline
-      def setTSPropertySignature(value: VisitNode[S, Extract[Node, `115`]]): Self = StObject.set(x, "TSPropertySignature", value.asInstanceOf[js.Any])
+      inline def setTSPropertySignature(value: VisitNode[S, Extract[Node, `115`]]): Self = StObject.set(x, "TSPropertySignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSPropertySignatureUndefined: Self = StObject.set(x, "TSPropertySignature", js.undefined)
+      inline def setTSPropertySignatureUndefined: Self = StObject.set(x, "TSPropertySignature", js.undefined)
       
-      @scala.inline
-      def setTSQualifiedName(value: VisitNode[S, Extract[Node, `29`]]): Self = StObject.set(x, "TSQualifiedName", value.asInstanceOf[js.Any])
+      inline def setTSQualifiedName(value: VisitNode[S, Extract[Node, `29`]]): Self = StObject.set(x, "TSQualifiedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSQualifiedNameUndefined: Self = StObject.set(x, "TSQualifiedName", js.undefined)
+      inline def setTSQualifiedNameUndefined: Self = StObject.set(x, "TSQualifiedName", js.undefined)
       
-      @scala.inline
-      def setTSRestType(value: VisitNode[S, Extract[Node, `205`]]): Self = StObject.set(x, "TSRestType", value.asInstanceOf[js.Any])
+      inline def setTSRestType(value: VisitNode[S, Extract[Node, `205`]]): Self = StObject.set(x, "TSRestType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSRestTypeUndefined: Self = StObject.set(x, "TSRestType", js.undefined)
+      inline def setTSRestTypeUndefined: Self = StObject.set(x, "TSRestType", js.undefined)
       
-      @scala.inline
-      def setTSStringKeyword(value: VisitNode[S, Extract[Node, `99`]]): Self = StObject.set(x, "TSStringKeyword", value.asInstanceOf[js.Any])
+      inline def setTSStringKeyword(value: VisitNode[S, Extract[Node, `99`]]): Self = StObject.set(x, "TSStringKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSStringKeywordUndefined: Self = StObject.set(x, "TSStringKeyword", js.undefined)
+      inline def setTSStringKeywordUndefined: Self = StObject.set(x, "TSStringKeyword", js.undefined)
       
-      @scala.inline
-      def setTSSymbolKeyword(value: VisitNode[S, Extract[Node, `124`]]): Self = StObject.set(x, "TSSymbolKeyword", value.asInstanceOf[js.Any])
+      inline def setTSSymbolKeyword(value: VisitNode[S, Extract[Node, `124`]]): Self = StObject.set(x, "TSSymbolKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSSymbolKeywordUndefined: Self = StObject.set(x, "TSSymbolKeyword", js.undefined)
+      inline def setTSSymbolKeywordUndefined: Self = StObject.set(x, "TSSymbolKeyword", js.undefined)
       
-      @scala.inline
-      def setTSThisType(value: VisitNode[S, Extract[Node, `203`]]): Self = StObject.set(x, "TSThisType", value.asInstanceOf[js.Any])
+      inline def setTSThisType(value: VisitNode[S, Extract[Node, `203`]]): Self = StObject.set(x, "TSThisType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSThisTypeUndefined: Self = StObject.set(x, "TSThisType", js.undefined)
+      inline def setTSThisTypeUndefined: Self = StObject.set(x, "TSThisType", js.undefined)
       
-      @scala.inline
-      def setTSTupleType(value: VisitNode[S, Extract[Node, `194`]]): Self = StObject.set(x, "TSTupleType", value.asInstanceOf[js.Any])
+      inline def setTSTupleType(value: VisitNode[S, Extract[Node, `194`]]): Self = StObject.set(x, "TSTupleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTupleTypeUndefined: Self = StObject.set(x, "TSTupleType", js.undefined)
+      inline def setTSTupleTypeUndefined: Self = StObject.set(x, "TSTupleType", js.undefined)
       
-      @scala.inline
-      def setTSType(value: VisitNode[S, TSType]): Self = StObject.set(x, "TSType", value.asInstanceOf[js.Any])
+      inline def setTSType(value: VisitNode[S, TSType]): Self = StObject.set(x, "TSType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeAliasDeclaration(value: VisitNode[S, Extract[Node, `90`]]): Self = StObject.set(x, "TSTypeAliasDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSTypeAliasDeclaration(value: VisitNode[S, Extract[Node, `90`]]): Self = StObject.set(x, "TSTypeAliasDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeAliasDeclarationUndefined: Self = StObject.set(x, "TSTypeAliasDeclaration", js.undefined)
+      inline def setTSTypeAliasDeclarationUndefined: Self = StObject.set(x, "TSTypeAliasDeclaration", js.undefined)
       
-      @scala.inline
-      def setTSTypeAnnotation(value: VisitNode[S, Extract[Node, `109`]]): Self = StObject.set(x, "TSTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setTSTypeAnnotation(value: VisitNode[S, Extract[Node, `109`]]): Self = StObject.set(x, "TSTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeAnnotationUndefined: Self = StObject.set(x, "TSTypeAnnotation", js.undefined)
+      inline def setTSTypeAnnotationUndefined: Self = StObject.set(x, "TSTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setTSTypeAssertion(value: VisitNode[S, Extract[Node, `229`]]): Self = StObject.set(x, "TSTypeAssertion", value.asInstanceOf[js.Any])
+      inline def setTSTypeAssertion(value: VisitNode[S, Extract[Node, `229`]]): Self = StObject.set(x, "TSTypeAssertion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeAssertionUndefined: Self = StObject.set(x, "TSTypeAssertion", js.undefined)
+      inline def setTSTypeAssertionUndefined: Self = StObject.set(x, "TSTypeAssertion", js.undefined)
       
-      @scala.inline
-      def setTSTypeElement(value: VisitNode[S, TSTypeElement]): Self = StObject.set(x, "TSTypeElement", value.asInstanceOf[js.Any])
+      inline def setTSTypeElement(value: VisitNode[S, TSTypeElement]): Self = StObject.set(x, "TSTypeElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeElementUndefined: Self = StObject.set(x, "TSTypeElement", js.undefined)
+      inline def setTSTypeElementUndefined: Self = StObject.set(x, "TSTypeElement", js.undefined)
       
-      @scala.inline
-      def setTSTypeLiteral(value: VisitNode[S, Extract[Node, `151`]]): Self = StObject.set(x, "TSTypeLiteral", value.asInstanceOf[js.Any])
+      inline def setTSTypeLiteral(value: VisitNode[S, Extract[Node, `151`]]): Self = StObject.set(x, "TSTypeLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeLiteralUndefined: Self = StObject.set(x, "TSTypeLiteral", js.undefined)
+      inline def setTSTypeLiteralUndefined: Self = StObject.set(x, "TSTypeLiteral", js.undefined)
       
-      @scala.inline
-      def setTSTypeOperator(value: VisitNode[S, Extract[Node, `51`]]): Self = StObject.set(x, "TSTypeOperator", value.asInstanceOf[js.Any])
+      inline def setTSTypeOperator(value: VisitNode[S, Extract[Node, `51`]]): Self = StObject.set(x, "TSTypeOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeOperatorUndefined: Self = StObject.set(x, "TSTypeOperator", js.undefined)
+      inline def setTSTypeOperatorUndefined: Self = StObject.set(x, "TSTypeOperator", js.undefined)
       
-      @scala.inline
-      def setTSTypeParameter(value: VisitNode[S, Extract[Node, `92`]]): Self = StObject.set(x, "TSTypeParameter", value.asInstanceOf[js.Any])
+      inline def setTSTypeParameter(value: VisitNode[S, Extract[Node, `92`]]): Self = StObject.set(x, "TSTypeParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeParameterDeclaration(value: VisitNode[S, Extract[Node, `20`]]): Self = StObject.set(x, "TSTypeParameterDeclaration", value.asInstanceOf[js.Any])
+      inline def setTSTypeParameterDeclaration(value: VisitNode[S, Extract[Node, `20`]]): Self = StObject.set(x, "TSTypeParameterDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeParameterDeclarationUndefined: Self = StObject.set(x, "TSTypeParameterDeclaration", js.undefined)
+      inline def setTSTypeParameterDeclarationUndefined: Self = StObject.set(x, "TSTypeParameterDeclaration", js.undefined)
       
-      @scala.inline
-      def setTSTypeParameterInstantiation(value: VisitNode[S, Extract[Node, `74`]]): Self = StObject.set(x, "TSTypeParameterInstantiation", value.asInstanceOf[js.Any])
+      inline def setTSTypeParameterInstantiation(value: VisitNode[S, Extract[Node, `74`]]): Self = StObject.set(x, "TSTypeParameterInstantiation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeParameterInstantiationUndefined: Self = StObject.set(x, "TSTypeParameterInstantiation", js.undefined)
+      inline def setTSTypeParameterInstantiationUndefined: Self = StObject.set(x, "TSTypeParameterInstantiation", js.undefined)
       
-      @scala.inline
-      def setTSTypeParameterUndefined: Self = StObject.set(x, "TSTypeParameter", js.undefined)
+      inline def setTSTypeParameterUndefined: Self = StObject.set(x, "TSTypeParameter", js.undefined)
       
-      @scala.inline
-      def setTSTypePredicate(value: VisitNode[S, Extract[Node, `181`]]): Self = StObject.set(x, "TSTypePredicate", value.asInstanceOf[js.Any])
+      inline def setTSTypePredicate(value: VisitNode[S, Extract[Node, `181`]]): Self = StObject.set(x, "TSTypePredicate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypePredicateUndefined: Self = StObject.set(x, "TSTypePredicate", js.undefined)
+      inline def setTSTypePredicateUndefined: Self = StObject.set(x, "TSTypePredicate", js.undefined)
       
-      @scala.inline
-      def setTSTypeQuery(value: VisitNode[S, Extract[Node, `117`]]): Self = StObject.set(x, "TSTypeQuery", value.asInstanceOf[js.Any])
+      inline def setTSTypeQuery(value: VisitNode[S, Extract[Node, `117`]]): Self = StObject.set(x, "TSTypeQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeQueryUndefined: Self = StObject.set(x, "TSTypeQuery", js.undefined)
+      inline def setTSTypeQueryUndefined: Self = StObject.set(x, "TSTypeQuery", js.undefined)
       
-      @scala.inline
-      def setTSTypeReference(value: VisitNode[S, Extract[Node, `240`]]): Self = StObject.set(x, "TSTypeReference", value.asInstanceOf[js.Any])
+      inline def setTSTypeReference(value: VisitNode[S, Extract[Node, `240`]]): Self = StObject.set(x, "TSTypeReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSTypeReferenceUndefined: Self = StObject.set(x, "TSTypeReference", js.undefined)
+      inline def setTSTypeReferenceUndefined: Self = StObject.set(x, "TSTypeReference", js.undefined)
       
-      @scala.inline
-      def setTSTypeUndefined: Self = StObject.set(x, "TSType", js.undefined)
+      inline def setTSTypeUndefined: Self = StObject.set(x, "TSType", js.undefined)
       
-      @scala.inline
-      def setTSUndefinedKeyword(value: VisitNode[S, Extract[Node, `164`]]): Self = StObject.set(x, "TSUndefinedKeyword", value.asInstanceOf[js.Any])
+      inline def setTSUndefinedKeyword(value: VisitNode[S, Extract[Node, `164`]]): Self = StObject.set(x, "TSUndefinedKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSUndefinedKeywordUndefined: Self = StObject.set(x, "TSUndefinedKeyword", js.undefined)
+      inline def setTSUndefinedKeywordUndefined: Self = StObject.set(x, "TSUndefinedKeyword", js.undefined)
       
-      @scala.inline
-      def setTSUnionType(value: VisitNode[S, Extract[Node, `91`]]): Self = StObject.set(x, "TSUnionType", value.asInstanceOf[js.Any])
+      inline def setTSUnionType(value: VisitNode[S, Extract[Node, `91`]]): Self = StObject.set(x, "TSUnionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSUnionTypeUndefined: Self = StObject.set(x, "TSUnionType", js.undefined)
+      inline def setTSUnionTypeUndefined: Self = StObject.set(x, "TSUnionType", js.undefined)
       
-      @scala.inline
-      def setTSUnknownKeyword(value: VisitNode[S, Extract[Node, `54`]]): Self = StObject.set(x, "TSUnknownKeyword", value.asInstanceOf[js.Any])
+      inline def setTSUnknownKeyword(value: VisitNode[S, Extract[Node, `54`]]): Self = StObject.set(x, "TSUnknownKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSUnknownKeywordUndefined: Self = StObject.set(x, "TSUnknownKeyword", js.undefined)
+      inline def setTSUnknownKeywordUndefined: Self = StObject.set(x, "TSUnknownKeyword", js.undefined)
       
-      @scala.inline
-      def setTSVoidKeyword(value: VisitNode[S, Extract[Node, `57`]]): Self = StObject.set(x, "TSVoidKeyword", value.asInstanceOf[js.Any])
+      inline def setTSVoidKeyword(value: VisitNode[S, Extract[Node, `57`]]): Self = StObject.set(x, "TSVoidKeyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTSVoidKeywordUndefined: Self = StObject.set(x, "TSVoidKeyword", js.undefined)
+      inline def setTSVoidKeywordUndefined: Self = StObject.set(x, "TSVoidKeyword", js.undefined)
       
-      @scala.inline
-      def setTaggedTemplateExpression(value: VisitNode[S, Extract[Node, `70`]]): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
+      inline def setTaggedTemplateExpression(value: VisitNode[S, Extract[Node, `70`]]): Self = StObject.set(x, "TaggedTemplateExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaggedTemplateExpressionUndefined: Self = StObject.set(x, "TaggedTemplateExpression", js.undefined)
+      inline def setTaggedTemplateExpressionUndefined: Self = StObject.set(x, "TaggedTemplateExpression", js.undefined)
       
-      @scala.inline
-      def setTemplateElement(value: VisitNode[S, Extract[Node, `189`]]): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
+      inline def setTemplateElement(value: VisitNode[S, Extract[Node, `189`]]): Self = StObject.set(x, "TemplateElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateElementUndefined: Self = StObject.set(x, "TemplateElement", js.undefined)
+      inline def setTemplateElementUndefined: Self = StObject.set(x, "TemplateElement", js.undefined)
       
-      @scala.inline
-      def setTemplateLiteral(value: VisitNode[S, Extract[Node, `76`]]): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
+      inline def setTemplateLiteral(value: VisitNode[S, Extract[Node, `76`]]): Self = StObject.set(x, "TemplateLiteral", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateLiteralUndefined: Self = StObject.set(x, "TemplateLiteral", js.undefined)
+      inline def setTemplateLiteralUndefined: Self = StObject.set(x, "TemplateLiteral", js.undefined)
       
-      @scala.inline
-      def setTerminatorless(value: VisitNode[S, Terminatorless]): Self = StObject.set(x, "Terminatorless", value.asInstanceOf[js.Any])
+      inline def setTerminatorless(value: VisitNode[S, Terminatorless]): Self = StObject.set(x, "Terminatorless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminatorlessUndefined: Self = StObject.set(x, "Terminatorless", js.undefined)
+      inline def setTerminatorlessUndefined: Self = StObject.set(x, "Terminatorless", js.undefined)
       
-      @scala.inline
-      def setThisExpression(value: VisitNode[S, Extract[Node, `227`]]): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
+      inline def setThisExpression(value: VisitNode[S, Extract[Node, `227`]]): Self = StObject.set(x, "ThisExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThisExpressionUndefined: Self = StObject.set(x, "ThisExpression", js.undefined)
+      inline def setThisExpressionUndefined: Self = StObject.set(x, "ThisExpression", js.undefined)
       
-      @scala.inline
-      def setThisTypeAnnotation(value: VisitNode[S, Extract[Node, `50`]]): Self = StObject.set(x, "ThisTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setThisTypeAnnotation(value: VisitNode[S, Extract[Node, `50`]]): Self = StObject.set(x, "ThisTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThisTypeAnnotationUndefined: Self = StObject.set(x, "ThisTypeAnnotation", js.undefined)
+      inline def setThisTypeAnnotationUndefined: Self = StObject.set(x, "ThisTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setThrowStatement(value: VisitNode[S, Extract[Node, `137`]]): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
+      inline def setThrowStatement(value: VisitNode[S, Extract[Node, `137`]]): Self = StObject.set(x, "ThrowStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowStatementUndefined: Self = StObject.set(x, "ThrowStatement", js.undefined)
+      inline def setThrowStatementUndefined: Self = StObject.set(x, "ThrowStatement", js.undefined)
       
-      @scala.inline
-      def setTryStatement(value: VisitNode[S, Extract[Node, `23`]]): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
+      inline def setTryStatement(value: VisitNode[S, Extract[Node, `23`]]): Self = StObject.set(x, "TryStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTryStatementUndefined: Self = StObject.set(x, "TryStatement", js.undefined)
+      inline def setTryStatementUndefined: Self = StObject.set(x, "TryStatement", js.undefined)
       
-      @scala.inline
-      def setTupleExpression(value: VisitNode[S, Extract[Node, `204`]]): Self = StObject.set(x, "TupleExpression", value.asInstanceOf[js.Any])
+      inline def setTupleExpression(value: VisitNode[S, Extract[Node, `204`]]): Self = StObject.set(x, "TupleExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTupleExpressionUndefined: Self = StObject.set(x, "TupleExpression", js.undefined)
+      inline def setTupleExpressionUndefined: Self = StObject.set(x, "TupleExpression", js.undefined)
       
-      @scala.inline
-      def setTupleTypeAnnotation(value: VisitNode[S, Extract[Node, `13`]]): Self = StObject.set(x, "TupleTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setTupleTypeAnnotation(value: VisitNode[S, Extract[Node, `13`]]): Self = StObject.set(x, "TupleTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTupleTypeAnnotationUndefined: Self = StObject.set(x, "TupleTypeAnnotation", js.undefined)
+      inline def setTupleTypeAnnotationUndefined: Self = StObject.set(x, "TupleTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setTypeAlias(value: VisitNode[S, Extract[Node, `175`]]): Self = StObject.set(x, "TypeAlias", value.asInstanceOf[js.Any])
+      inline def setTypeAlias(value: VisitNode[S, Extract[Node, `175`]]): Self = StObject.set(x, "TypeAlias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeAliasUndefined: Self = StObject.set(x, "TypeAlias", js.undefined)
+      inline def setTypeAliasUndefined: Self = StObject.set(x, "TypeAlias", js.undefined)
       
-      @scala.inline
-      def setTypeAnnotation(value: VisitNode[S, Extract[Node, `21`]]): Self = StObject.set(x, "TypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setTypeAnnotation(value: VisitNode[S, Extract[Node, `21`]]): Self = StObject.set(x, "TypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeAnnotationUndefined: Self = StObject.set(x, "TypeAnnotation", js.undefined)
+      inline def setTypeAnnotationUndefined: Self = StObject.set(x, "TypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setTypeCastExpression(value: VisitNode[S, Extract[Node, `10`]]): Self = StObject.set(x, "TypeCastExpression", value.asInstanceOf[js.Any])
+      inline def setTypeCastExpression(value: VisitNode[S, Extract[Node, `10`]]): Self = StObject.set(x, "TypeCastExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeCastExpressionUndefined: Self = StObject.set(x, "TypeCastExpression", js.undefined)
+      inline def setTypeCastExpressionUndefined: Self = StObject.set(x, "TypeCastExpression", js.undefined)
       
-      @scala.inline
-      def setTypeParameter(value: VisitNode[S, Extract[Node, `168`]]): Self = StObject.set(x, "TypeParameter", value.asInstanceOf[js.Any])
+      inline def setTypeParameter(value: VisitNode[S, Extract[Node, `168`]]): Self = StObject.set(x, "TypeParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeParameterDeclaration(value: VisitNode[S, Extract[Node, `14`]]): Self = StObject.set(x, "TypeParameterDeclaration", value.asInstanceOf[js.Any])
+      inline def setTypeParameterDeclaration(value: VisitNode[S, Extract[Node, `14`]]): Self = StObject.set(x, "TypeParameterDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeParameterDeclarationUndefined: Self = StObject.set(x, "TypeParameterDeclaration", js.undefined)
+      inline def setTypeParameterDeclarationUndefined: Self = StObject.set(x, "TypeParameterDeclaration", js.undefined)
       
-      @scala.inline
-      def setTypeParameterInstantiation(value: VisitNode[S, Extract[Node, `239`]]): Self = StObject.set(x, "TypeParameterInstantiation", value.asInstanceOf[js.Any])
+      inline def setTypeParameterInstantiation(value: VisitNode[S, Extract[Node, `239`]]): Self = StObject.set(x, "TypeParameterInstantiation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeParameterInstantiationUndefined: Self = StObject.set(x, "TypeParameterInstantiation", js.undefined)
+      inline def setTypeParameterInstantiationUndefined: Self = StObject.set(x, "TypeParameterInstantiation", js.undefined)
       
-      @scala.inline
-      def setTypeParameterUndefined: Self = StObject.set(x, "TypeParameter", js.undefined)
+      inline def setTypeParameterUndefined: Self = StObject.set(x, "TypeParameter", js.undefined)
       
-      @scala.inline
-      def setTypeofTypeAnnotation(value: VisitNode[S, Extract[Node, `145`]]): Self = StObject.set(x, "TypeofTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setTypeofTypeAnnotation(value: VisitNode[S, Extract[Node, `145`]]): Self = StObject.set(x, "TypeofTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeofTypeAnnotationUndefined: Self = StObject.set(x, "TypeofTypeAnnotation", js.undefined)
+      inline def setTypeofTypeAnnotationUndefined: Self = StObject.set(x, "TypeofTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setUnaryExpression(value: VisitNode[S, Extract[Node, `172`]]): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
+      inline def setUnaryExpression(value: VisitNode[S, Extract[Node, `172`]]): Self = StObject.set(x, "UnaryExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnaryExpressionUndefined: Self = StObject.set(x, "UnaryExpression", js.undefined)
+      inline def setUnaryExpressionUndefined: Self = StObject.set(x, "UnaryExpression", js.undefined)
       
-      @scala.inline
-      def setUnaryLike(value: VisitNode[S, UnaryLike]): Self = StObject.set(x, "UnaryLike", value.asInstanceOf[js.Any])
+      inline def setUnaryLike(value: VisitNode[S, UnaryLike]): Self = StObject.set(x, "UnaryLike", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnaryLikeUndefined: Self = StObject.set(x, "UnaryLike", js.undefined)
+      inline def setUnaryLikeUndefined: Self = StObject.set(x, "UnaryLike", js.undefined)
       
-      @scala.inline
-      def setUnionTypeAnnotation(value: VisitNode[S, Extract[Node, `214`]]): Self = StObject.set(x, "UnionTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setUnionTypeAnnotation(value: VisitNode[S, Extract[Node, `214`]]): Self = StObject.set(x, "UnionTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnionTypeAnnotationUndefined: Self = StObject.set(x, "UnionTypeAnnotation", js.undefined)
+      inline def setUnionTypeAnnotationUndefined: Self = StObject.set(x, "UnionTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setUpdateExpression(value: VisitNode[S, Extract[Node, `98`]]): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
+      inline def setUpdateExpression(value: VisitNode[S, Extract[Node, `98`]]): Self = StObject.set(x, "UpdateExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
+      inline def setUpdateExpressionUndefined: Self = StObject.set(x, "UpdateExpression", js.undefined)
       
-      @scala.inline
-      def setUserWhitespacable(value: VisitNode[S, UserWhitespacable]): Self = StObject.set(x, "UserWhitespacable", value.asInstanceOf[js.Any])
+      inline def setUserWhitespacable(value: VisitNode[S, UserWhitespacable]): Self = StObject.set(x, "UserWhitespacable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserWhitespacableUndefined: Self = StObject.set(x, "UserWhitespacable", js.undefined)
+      inline def setUserWhitespacableUndefined: Self = StObject.set(x, "UserWhitespacable", js.undefined)
       
-      @scala.inline
-      def setV8IntrinsicIdentifier(value: VisitNode[S, Extract[Node, `138`]]): Self = StObject.set(x, "V8IntrinsicIdentifier", value.asInstanceOf[js.Any])
+      inline def setV8IntrinsicIdentifier(value: VisitNode[S, Extract[Node, `138`]]): Self = StObject.set(x, "V8IntrinsicIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV8IntrinsicIdentifierUndefined: Self = StObject.set(x, "V8IntrinsicIdentifier", js.undefined)
+      inline def setV8IntrinsicIdentifierUndefined: Self = StObject.set(x, "V8IntrinsicIdentifier", js.undefined)
       
-      @scala.inline
-      def setVariableDeclaration(value: VisitNode[S, Extract[Node, `67`]]): Self = StObject.set(x, "VariableDeclaration", value.asInstanceOf[js.Any])
+      inline def setVariableDeclaration(value: VisitNode[S, Extract[Node, `67`]]): Self = StObject.set(x, "VariableDeclaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableDeclarationUndefined: Self = StObject.set(x, "VariableDeclaration", js.undefined)
+      inline def setVariableDeclarationUndefined: Self = StObject.set(x, "VariableDeclaration", js.undefined)
       
-      @scala.inline
-      def setVariableDeclarator(value: VisitNode[S, Extract[Node, `127`]]): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
+      inline def setVariableDeclarator(value: VisitNode[S, Extract[Node, `127`]]): Self = StObject.set(x, "VariableDeclarator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariableDeclaratorUndefined: Self = StObject.set(x, "VariableDeclarator", js.undefined)
+      inline def setVariableDeclaratorUndefined: Self = StObject.set(x, "VariableDeclarator", js.undefined)
       
-      @scala.inline
-      def setVariance(value: VisitNode[S, Extract[Node, `148`]]): Self = StObject.set(x, "Variance", value.asInstanceOf[js.Any])
+      inline def setVariance(value: VisitNode[S, Extract[Node, `148`]]): Self = StObject.set(x, "Variance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVarianceUndefined: Self = StObject.set(x, "Variance", js.undefined)
+      inline def setVarianceUndefined: Self = StObject.set(x, "Variance", js.undefined)
       
-      @scala.inline
-      def setVoidTypeAnnotation(value: VisitNode[S, Extract[Node, `104`]]): Self = StObject.set(x, "VoidTypeAnnotation", value.asInstanceOf[js.Any])
+      inline def setVoidTypeAnnotation(value: VisitNode[S, Extract[Node, `104`]]): Self = StObject.set(x, "VoidTypeAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoidTypeAnnotationUndefined: Self = StObject.set(x, "VoidTypeAnnotation", js.undefined)
+      inline def setVoidTypeAnnotationUndefined: Self = StObject.set(x, "VoidTypeAnnotation", js.undefined)
       
-      @scala.inline
-      def setWhile(value: VisitNode[S, While]): Self = StObject.set(x, "While", value.asInstanceOf[js.Any])
+      inline def setWhile(value: VisitNode[S, While]): Self = StObject.set(x, "While", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhileStatement(value: VisitNode[S, Extract[Node, `38`]]): Self = StObject.set(x, "WhileStatement", value.asInstanceOf[js.Any])
+      inline def setWhileStatement(value: VisitNode[S, Extract[Node, `38`]]): Self = StObject.set(x, "WhileStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhileStatementUndefined: Self = StObject.set(x, "WhileStatement", js.undefined)
+      inline def setWhileStatementUndefined: Self = StObject.set(x, "WhileStatement", js.undefined)
       
-      @scala.inline
-      def setWhileUndefined: Self = StObject.set(x, "While", js.undefined)
+      inline def setWhileUndefined: Self = StObject.set(x, "While", js.undefined)
       
-      @scala.inline
-      def setWithStatement(value: VisitNode[S, Extract[Node, `94`]]): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
+      inline def setWithStatement(value: VisitNode[S, Extract[Node, `94`]]): Self = StObject.set(x, "WithStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithStatementUndefined: Self = StObject.set(x, "WithStatement", js.undefined)
+      inline def setWithStatementUndefined: Self = StObject.set(x, "WithStatement", js.undefined)
       
-      @scala.inline
-      def setYieldExpression(value: VisitNode[S, Extract[Node, `11`]]): Self = StObject.set(x, "YieldExpression", value.asInstanceOf[js.Any])
+      inline def setYieldExpression(value: VisitNode[S, Extract[Node, `11`]]): Self = StObject.set(x, "YieldExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYieldExpressionUndefined: Self = StObject.set(x, "YieldExpression", js.undefined)
+      inline def setYieldExpressionUndefined: Self = StObject.set(x, "YieldExpression", js.undefined)
     }
   }
 }

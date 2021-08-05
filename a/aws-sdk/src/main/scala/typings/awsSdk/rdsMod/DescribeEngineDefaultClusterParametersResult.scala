@@ -10,19 +10,15 @@ trait DescribeEngineDefaultClusterParametersResult extends StObject {
 }
 object DescribeEngineDefaultClusterParametersResult {
   
-  @scala.inline
-  def apply(): DescribeEngineDefaultClusterParametersResult = {
+  inline def apply(): DescribeEngineDefaultClusterParametersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEngineDefaultClusterParametersResult]
   }
   
-  @scala.inline
-  implicit class DescribeEngineDefaultClusterParametersResultMutableBuilder[Self <: DescribeEngineDefaultClusterParametersResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEngineDefaultClusterParametersResult](x: Self) {
     
-    @scala.inline
-    def setEngineDefaults(value: EngineDefaults): Self = StObject.set(x, "EngineDefaults", value.asInstanceOf[js.Any])
+    inline def setEngineDefaults(value: EngineDefaults): Self = StObject.set(x, "EngineDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineDefaultsUndefined: Self = StObject.set(x, "EngineDefaults", js.undefined)
+    inline def setEngineDefaultsUndefined: Self = StObject.set(x, "EngineDefaults", js.undefined)
   }
 }

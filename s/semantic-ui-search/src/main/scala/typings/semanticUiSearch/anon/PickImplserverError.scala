@@ -11,16 +11,13 @@ trait PickImplserverError extends StObject {
 }
 object PickImplserverError {
   
-  @scala.inline
-  def apply(serverError: String): PickImplserverError = {
+  inline def apply(serverError: String): PickImplserverError = {
     val __obj = js.Dynamic.literal(serverError = serverError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplserverError]
   }
   
-  @scala.inline
-  implicit class PickImplserverErrorMutableBuilder[Self <: PickImplserverError] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplserverError](x: Self) {
     
-    @scala.inline
-    def setServerError(value: String): Self = StObject.set(x, "serverError", value.asInstanceOf[js.Any])
+    inline def setServerError(value: String): Self = StObject.set(x, "serverError", value.asInstanceOf[js.Any])
   }
 }

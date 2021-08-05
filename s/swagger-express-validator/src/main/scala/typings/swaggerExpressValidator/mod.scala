@@ -10,15 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("swagger-express-validator", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validator(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("validator")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def validator(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("validator")(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   trait Options extends StObject {
     
@@ -50,51 +48,38 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(schema: String): Options = {
+    inline def apply(schema: String): Options = {
       val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowNullable(value: Boolean): Self = StObject.set(x, "allowNullable", value.asInstanceOf[js.Any])
+      inline def setAllowNullable(value: Boolean): Self = StObject.set(x, "allowNullable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNullableUndefined: Self = StObject.set(x, "allowNullable", js.undefined)
+      inline def setAllowNullableUndefined: Self = StObject.set(x, "allowNullable", js.undefined)
       
-      @scala.inline
-      def setRequestValidationFn(
+      inline def setRequestValidationFn(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* data */ js.Any, /* errors */ js.Any) => Unit
       ): Self = StObject.set(x, "requestValidationFn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRequestValidationFnUndefined: Self = StObject.set(x, "requestValidationFn", js.undefined)
+      inline def setRequestValidationFnUndefined: Self = StObject.set(x, "requestValidationFn", js.undefined)
       
-      @scala.inline
-      def setResponseValidationFn(
+      inline def setResponseValidationFn(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* data */ js.Any, /* errors */ js.Any) => Unit
       ): Self = StObject.set(x, "responseValidationFn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setResponseValidationFnUndefined: Self = StObject.set(x, "responseValidationFn", js.undefined)
+      inline def setResponseValidationFnUndefined: Self = StObject.set(x, "responseValidationFn", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateRequest(value: Boolean): Self = StObject.set(x, "validateRequest", value.asInstanceOf[js.Any])
+      inline def setValidateRequest(value: Boolean): Self = StObject.set(x, "validateRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateRequestUndefined: Self = StObject.set(x, "validateRequest", js.undefined)
+      inline def setValidateRequestUndefined: Self = StObject.set(x, "validateRequest", js.undefined)
       
-      @scala.inline
-      def setValidateResponse(value: Boolean): Self = StObject.set(x, "validateResponse", value.asInstanceOf[js.Any])
+      inline def setValidateResponse(value: Boolean): Self = StObject.set(x, "validateResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateResponseUndefined: Self = StObject.set(x, "validateResponse", js.undefined)
+      inline def setValidateResponseUndefined: Self = StObject.set(x, "validateResponse", js.undefined)
     }
   }
 }

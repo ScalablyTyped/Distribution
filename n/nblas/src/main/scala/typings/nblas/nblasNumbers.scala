@@ -14,62 +14,53 @@ object nblasNumbers {
   sealed trait `111`
     extends StObject
        with MatrixTrans
-  @scala.inline
-  def `111`: `111` = 111.asInstanceOf[`111`]
+  inline def `111`: `111` = 111.asInstanceOf[`111`]
   
   @js.native
   sealed trait `112`
     extends StObject
        with MatrixTrans
-  @scala.inline
-  def `112`: `112` = 112.asInstanceOf[`112`]
+  inline def `112`: `112` = 112.asInstanceOf[`112`]
   
   @js.native
   sealed trait `113`
     extends StObject
        with MatrixTrans
-  @scala.inline
-  def `113`: `113` = 113.asInstanceOf[`113`]
+  inline def `113`: `113` = 113.asInstanceOf[`113`]
   
   @js.native
   sealed trait `121`
     extends StObject
        with MatrixUpperLower
-  @scala.inline
-  def `121`: `121` = 121.asInstanceOf[`121`]
+  inline def `121`: `121` = 121.asInstanceOf[`121`]
   
   @js.native
   sealed trait `122`
     extends StObject
        with MatrixUpperLower
-  @scala.inline
-  def `122`: `122` = 122.asInstanceOf[`122`]
+  inline def `122`: `122` = 122.asInstanceOf[`122`]
   
   @js.native
   sealed trait `131`
     extends StObject
        with MatrixUnit
-  @scala.inline
-  def `131`: `131` = 131.asInstanceOf[`131`]
+  inline def `131`: `131` = 131.asInstanceOf[`131`]
   
   @js.native
   sealed trait `132`
     extends StObject
        with MatrixUnit
-  @scala.inline
-  def `132`: `132` = 132.asInstanceOf[`132`]
+  inline def `132`: `132` = 132.asInstanceOf[`132`]
   
   @js.native
   sealed trait `141`
     extends StObject
        with MatrixLeftRight
-  @scala.inline
-  def `141`: `141` = 141.asInstanceOf[`141`]
+  inline def `141`: `141` = 141.asInstanceOf[`141`]
   
   @js.native
   sealed trait `142`
     extends StObject
        with MatrixLeftRight
-  @scala.inline
-  def `142`: `142` = 142.asInstanceOf[`142`]
+  inline def `142`: `142` = 142.asInstanceOf[`142`]
 }

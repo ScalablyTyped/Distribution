@@ -75,8 +75,7 @@ trait XImageConsumer
 }
 object XImageConsumer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     complete: (Double, XImageProducer) => Unit,
     init: (Double, Double) => Unit,
@@ -90,22 +89,16 @@ object XImageConsumer {
     __obj.asInstanceOf[XImageConsumer]
   }
   
-  @scala.inline
-  implicit class XImageConsumerMutableBuilder[Self <: XImageConsumer] (val x: Self) extends AnyVal {
+  extension [Self <: XImageConsumer](x: Self) {
     
-    @scala.inline
-    def setComplete(value: (Double, XImageProducer) => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
+    inline def setComplete(value: (Double, XImageProducer) => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInit(value: (Double, Double) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+    inline def setInit(value: (Double, Double) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetColorModel(value: (Double, SeqEquiv[Double], Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setColorModel", js.Any.fromFunction6(value))
+    inline def setSetColorModel(value: (Double, SeqEquiv[Double], Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setColorModel", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setSetPixelsByBytes(value: (Double, Double, Double, Double, SeqEquiv[Double], Double, Double) => Unit): Self = StObject.set(x, "setPixelsByBytes", js.Any.fromFunction7(value))
+    inline def setSetPixelsByBytes(value: (Double, Double, Double, Double, SeqEquiv[Double], Double, Double) => Unit): Self = StObject.set(x, "setPixelsByBytes", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setSetPixelsByLongs(value: (Double, Double, Double, Double, SeqEquiv[Double], Double, Double) => Unit): Self = StObject.set(x, "setPixelsByLongs", js.Any.fromFunction7(value))
+    inline def setSetPixelsByLongs(value: (Double, Double, Double, Double, SeqEquiv[Double], Double, Double) => Unit): Self = StObject.set(x, "setPixelsByLongs", js.Any.fromFunction7(value))
   }
 }

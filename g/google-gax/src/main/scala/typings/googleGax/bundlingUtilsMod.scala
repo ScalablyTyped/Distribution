@@ -11,6 +11,5 @@ object bundlingUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeBundleId(obj: RequestType, discriminatorFields: js.Array[String]): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBundleId")(obj.asInstanceOf[js.Any], discriminatorFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def computeBundleId(obj: RequestType, discriminatorFields: js.Array[String]): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeBundleId")(obj.asInstanceOf[js.Any], discriminatorFields.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

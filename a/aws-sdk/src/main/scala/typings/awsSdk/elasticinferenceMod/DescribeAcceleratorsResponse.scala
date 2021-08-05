@@ -18,28 +18,21 @@ trait DescribeAcceleratorsResponse extends StObject {
 }
 object DescribeAcceleratorsResponse {
   
-  @scala.inline
-  def apply(): DescribeAcceleratorsResponse = {
+  inline def apply(): DescribeAcceleratorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAcceleratorsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAcceleratorsResponseMutableBuilder[Self <: DescribeAcceleratorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAcceleratorsResponse](x: Self) {
     
-    @scala.inline
-    def setAcceleratorSet(value: ElasticInferenceAcceleratorSet): Self = StObject.set(x, "acceleratorSet", value.asInstanceOf[js.Any])
+    inline def setAcceleratorSet(value: ElasticInferenceAcceleratorSet): Self = StObject.set(x, "acceleratorSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorSetUndefined: Self = StObject.set(x, "acceleratorSet", js.undefined)
+    inline def setAcceleratorSetUndefined: Self = StObject.set(x, "acceleratorSet", js.undefined)
     
-    @scala.inline
-    def setAcceleratorSetVarargs(value: ElasticInferenceAccelerator*): Self = StObject.set(x, "acceleratorSet", js.Array(value :_*))
+    inline def setAcceleratorSetVarargs(value: ElasticInferenceAccelerator*): Self = StObject.set(x, "acceleratorSet", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

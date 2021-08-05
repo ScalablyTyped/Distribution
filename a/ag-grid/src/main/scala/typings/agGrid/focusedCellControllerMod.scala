@@ -15,13 +15,13 @@ object focusedCellControllerMod {
     
     def clearFocusedCell(): Unit = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var focusedCell: js.Any = js.native
+    /* private */ var focusedCell: js.Any = js.native
     
     def getFocusCellToUseAfterRefresh(): GridCell = js.native
     
@@ -29,9 +29,9 @@ object focusedCellControllerMod {
     
     /* private */ def getGridCellForDomElement(eBrowserCell: js.Any): js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     /* private */ def init(): js.Any = js.native
     

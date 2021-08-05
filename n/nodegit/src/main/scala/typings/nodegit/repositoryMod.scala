@@ -496,34 +496,23 @@ object repositoryMod {
     /**
       * Creates a branch with the passed in name pointing to the commit
       */
-    @scala.inline
-    def discover(startPath: String, acrossFs: Double, ceilingDirs: String): js.Promise[Buf] = (^.asInstanceOf[js.Dynamic].applyDynamic("discover")(startPath.asInstanceOf[js.Any], acrossFs.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buf]]
+    inline def discover(startPath: String, acrossFs: Double, ceilingDirs: String): js.Promise[Buf] = (^.asInstanceOf[js.Dynamic].applyDynamic("discover")(startPath.asInstanceOf[js.Any], acrossFs.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buf]]
     
-    @scala.inline
-    def init(path: String, isBare: Double): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(path.asInstanceOf[js.Any], isBare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    inline def init(path: String, isBare: Double): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(path.asInstanceOf[js.Any], isBare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
-    @scala.inline
-    def initExt(repoPath: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("initExt")(repoPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
-    @scala.inline
-    def initExt(repoPath: String, options: RepositoryInitOptions): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("initExt")(repoPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    inline def initExt(repoPath: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("initExt")(repoPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+    inline def initExt(repoPath: String, options: RepositoryInitOptions): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("initExt")(repoPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
-    @scala.inline
-    def open(path: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+    inline def open(path: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
     
-    @scala.inline
-    def openBare(barePath: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("openBare")(barePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+    inline def openBare(barePath: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("openBare")(barePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
     
-    @scala.inline
-    def openExt(path: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
-    @scala.inline
-    def openExt(path: String, flags: Double): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
-    @scala.inline
-    def openExt(path: String, flags: Double, ceilingDirs: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
-    @scala.inline
-    def openExt(path: String, flags: Unit, ceilingDirs: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    inline def openExt(path: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+    inline def openExt(path: String, flags: Double): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    inline def openExt(path: String, flags: Double, ceilingDirs: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    inline def openExt(path: String, flags: Unit, ceilingDirs: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
-    @scala.inline
-    def wrapOdb(odb: Odb): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapOdb")(odb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+    inline def wrapOdb(odb: Odb): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapOdb")(odb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
   }
   
   trait RepositoryInitOptions extends StObject {
@@ -546,8 +535,7 @@ object repositoryMod {
   }
   object RepositoryInitOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       flags: Double,
       initialHead: String,
@@ -561,32 +549,23 @@ object repositoryMod {
       __obj.asInstanceOf[RepositoryInitOptions]
     }
     
-    @scala.inline
-    implicit class RepositoryInitOptionsMutableBuilder[Self <: RepositoryInitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RepositoryInitOptions](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialHead(value: String): Self = StObject.set(x, "initialHead", value.asInstanceOf[js.Any])
+      inline def setInitialHead(value: String): Self = StObject.set(x, "initialHead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUrl(value: String): Self = StObject.set(x, "originUrl", value.asInstanceOf[js.Any])
+      inline def setOriginUrl(value: String): Self = StObject.set(x, "originUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplatePath(value: String): Self = StObject.set(x, "templatePath", value.asInstanceOf[js.Any])
+      inline def setTemplatePath(value: String): Self = StObject.set(x, "templatePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkdirPath(value: String): Self = StObject.set(x, "workdirPath", value.asInstanceOf[js.Any])
+      inline def setWorkdirPath(value: String): Self = StObject.set(x, "workdirPath", value.asInstanceOf[js.Any])
     }
   }
 }

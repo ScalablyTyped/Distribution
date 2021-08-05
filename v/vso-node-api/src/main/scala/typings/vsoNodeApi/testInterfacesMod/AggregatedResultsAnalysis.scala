@@ -21,8 +21,7 @@ trait AggregatedResultsAnalysis extends StObject {
 }
 object AggregatedResultsAnalysis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: js.Any,
     notReportedResultsByOutcome: NumberDictionary[AggregatedResultsByOutcome],
     previousContext: TestResultsContext,
@@ -34,25 +33,18 @@ object AggregatedResultsAnalysis {
     __obj.asInstanceOf[AggregatedResultsAnalysis]
   }
   
-  @scala.inline
-  implicit class AggregatedResultsAnalysisMutableBuilder[Self <: AggregatedResultsAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedResultsAnalysis](x: Self) {
     
-    @scala.inline
-    def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: js.Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotReportedResultsByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "notReportedResultsByOutcome", value.asInstanceOf[js.Any])
+    inline def setNotReportedResultsByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "notReportedResultsByOutcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousContext(value: TestResultsContext): Self = StObject.set(x, "previousContext", value.asInstanceOf[js.Any])
+    inline def setPreviousContext(value: TestResultsContext): Self = StObject.set(x, "previousContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "resultsByOutcome", value.asInstanceOf[js.Any])
+    inline def setResultsByOutcome(value: NumberDictionary[AggregatedResultsByOutcome]): Self = StObject.set(x, "resultsByOutcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsDifference(value: AggregatedResultsDifference): Self = StObject.set(x, "resultsDifference", value.asInstanceOf[js.Any])
+    inline def setResultsDifference(value: AggregatedResultsDifference): Self = StObject.set(x, "resultsDifference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalTests(value: Double): Self = StObject.set(x, "totalTests", value.asInstanceOf[js.Any])
+    inline def setTotalTests(value: Double): Self = StObject.set(x, "totalTests", value.asInstanceOf[js.Any])
   }
 }

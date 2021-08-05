@@ -18,19 +18,15 @@ trait CreateHealthCheckRequest extends StObject {
 }
 object CreateHealthCheckRequest {
   
-  @scala.inline
-  def apply(CallerReference: HealthCheckNonce, HealthCheckConfig: HealthCheckConfig): CreateHealthCheckRequest = {
+  inline def apply(CallerReference: HealthCheckNonce, HealthCheckConfig: HealthCheckConfig): CreateHealthCheckRequest = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], HealthCheckConfig = HealthCheckConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHealthCheckRequest]
   }
   
-  @scala.inline
-  implicit class CreateHealthCheckRequestMutableBuilder[Self <: CreateHealthCheckRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHealthCheckRequest](x: Self) {
     
-    @scala.inline
-    def setCallerReference(value: HealthCheckNonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: HealthCheckNonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckConfig(value: HealthCheckConfig): Self = StObject.set(x, "HealthCheckConfig", value.asInstanceOf[js.Any])
+    inline def setHealthCheckConfig(value: HealthCheckConfig): Self = StObject.set(x, "HealthCheckConfig", value.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,8 @@ object astMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createAST(source: String): SourceFile = ^.asInstanceOf[js.Dynamic].applyDynamic("createAST")(source.asInstanceOf[js.Any]).asInstanceOf[SourceFile]
-  @scala.inline
-  def createAST(source: String, fileName: String): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("createAST")(source.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-  @scala.inline
-  def createAST(source: String, fileName: String, scriptKind: ScriptKind): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("createAST")(source.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], scriptKind.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
-  @scala.inline
-  def createAST(source: String, fileName: Unit, scriptKind: ScriptKind): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("createAST")(source.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], scriptKind.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
+  inline def createAST(source: String): SourceFile = ^.asInstanceOf[js.Dynamic].applyDynamic("createAST")(source.asInstanceOf[js.Any]).asInstanceOf[SourceFile]
+  inline def createAST(source: String, fileName: String): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("createAST")(source.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
+  inline def createAST(source: String, fileName: String, scriptKind: ScriptKind): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("createAST")(source.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], scriptKind.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
+  inline def createAST(source: String, fileName: Unit, scriptKind: ScriptKind): SourceFile = (^.asInstanceOf[js.Dynamic].applyDynamic("createAST")(source.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], scriptKind.asInstanceOf[js.Any])).asInstanceOf[SourceFile]
 }

@@ -13,16 +13,13 @@ trait DeleteConnectionAliasRequest extends StObject {
 }
 object DeleteConnectionAliasRequest {
   
-  @scala.inline
-  def apply(AliasId: ConnectionAliasId): DeleteConnectionAliasRequest = {
+  inline def apply(AliasId: ConnectionAliasId): DeleteConnectionAliasRequest = {
     val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConnectionAliasRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConnectionAliasRequestMutableBuilder[Self <: DeleteConnectionAliasRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConnectionAliasRequest](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
   }
 }

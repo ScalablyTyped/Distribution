@@ -56,88 +56,61 @@ trait Deployment extends StObject {
 }
 object Deployment {
   
-  @scala.inline
-  def apply(): Deployment = {
+  inline def apply(): Deployment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Deployment]
   }
   
-  @scala.inline
-  implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
+  extension [Self <: Deployment](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
+    inline def setInsertTime(value: String): Self = StObject.set(x, "insertTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
+    inline def setInsertTimeUndefined: Self = StObject.set(x, "insertTime", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Array[DeploymentLabelEntry]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[DeploymentLabelEntry]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: DeploymentLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: DeploymentLabelEntry*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+    inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setTarget(value: TargetConfiguration): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TargetConfiguration): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: DeploymentUpdate): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: DeploymentUpdate): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

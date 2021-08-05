@@ -12,22 +12,17 @@ trait LangReq extends StObject {
 }
 object LangReq {
   
-  @scala.inline
-  def apply(lang: String): LangReq = {
+  inline def apply(lang: String): LangReq = {
     val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangReq]
   }
   
-  @scala.inline
-  implicit class LangReqMutableBuilder[Self <: LangReq] (val x: Self) extends AnyVal {
+  extension [Self <: LangReq](x: Self) {
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
   }
 }

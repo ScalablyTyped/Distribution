@@ -15,8 +15,7 @@ trait XAccessibleGetAccFlowTo
 }
 object XAccessibleGetAccFlowTo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getAccFlowTo: (js.Any, Double) => SafeArray[js.Any],
     queryInterface: `type` => js.Any,
@@ -26,10 +25,8 @@ object XAccessibleGetAccFlowTo {
     __obj.asInstanceOf[XAccessibleGetAccFlowTo]
   }
   
-  @scala.inline
-  implicit class XAccessibleGetAccFlowToMutableBuilder[Self <: XAccessibleGetAccFlowTo] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleGetAccFlowTo](x: Self) {
     
-    @scala.inline
-    def setGetAccFlowTo(value: (js.Any, Double) => SafeArray[js.Any]): Self = StObject.set(x, "getAccFlowTo", js.Any.fromFunction2(value))
+    inline def setGetAccFlowTo(value: (js.Any, Double) => SafeArray[js.Any]): Self = StObject.set(x, "getAccFlowTo", js.Any.fromFunction2(value))
   }
 }

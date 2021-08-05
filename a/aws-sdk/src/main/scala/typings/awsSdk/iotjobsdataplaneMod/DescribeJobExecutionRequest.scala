@@ -28,31 +28,23 @@ trait DescribeJobExecutionRequest extends StObject {
 }
 object DescribeJobExecutionRequest {
   
-  @scala.inline
-  def apply(jobId: DescribeJobExecutionJobId, thingName: ThingName): DescribeJobExecutionRequest = {
+  inline def apply(jobId: DescribeJobExecutionJobId, thingName: ThingName): DescribeJobExecutionRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeJobExecutionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeJobExecutionRequestMutableBuilder[Self <: DescribeJobExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeJobExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setExecutionNumber(value: ExecutionNumber): Self = StObject.set(x, "executionNumber", value.asInstanceOf[js.Any])
+    inline def setExecutionNumber(value: ExecutionNumber): Self = StObject.set(x, "executionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionNumberUndefined: Self = StObject.set(x, "executionNumber", js.undefined)
+    inline def setExecutionNumberUndefined: Self = StObject.set(x, "executionNumber", js.undefined)
     
-    @scala.inline
-    def setIncludeJobDocument(value: IncludeJobDocument): Self = StObject.set(x, "includeJobDocument", value.asInstanceOf[js.Any])
+    inline def setIncludeJobDocument(value: IncludeJobDocument): Self = StObject.set(x, "includeJobDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeJobDocumentUndefined: Self = StObject.set(x, "includeJobDocument", js.undefined)
+    inline def setIncludeJobDocumentUndefined: Self = StObject.set(x, "includeJobDocument", js.undefined)
     
-    @scala.inline
-    def setJobId(value: DescribeJobExecutionJobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: DescribeJobExecutionJobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

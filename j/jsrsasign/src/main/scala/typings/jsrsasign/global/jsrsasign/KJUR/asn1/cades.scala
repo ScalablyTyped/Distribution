@@ -184,8 +184,7 @@ object cades {
       * info = KJUR.asn1.cades.CAdESUtil.parseSignedDataForAddingUnsigned(beshex);
       * sd = info.obj;
       */
-    @scala.inline
-    def parseSignedDataForAddingUnsigned(hex: String): Algs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSignedDataForAddingUnsigned")(hex.asInstanceOf[js.Any]).asInstanceOf[Algs]
+    inline def parseSignedDataForAddingUnsigned(hex: String): Algs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSignedDataForAddingUnsigned")(hex.asInstanceOf[js.Any]).asInstanceOf[Algs]
     
     /**
       * parse SignerInfo to add unsigned attributes
@@ -211,8 +210,7 @@ object cades {
       * future version. That's way this version provides support
       * for CAdES-T and not for CAdES-C.
       */
-    @scala.inline
-    def parseSignerInfoForAddingUnsigned(hex: String, iSI: Double, nth: Double): Digalg = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSignerInfoForAddingUnsigned")(hex.asInstanceOf[js.Any], iSI.asInstanceOf[js.Any], nth.asInstanceOf[js.Any])).asInstanceOf[Digalg]
+    inline def parseSignerInfoForAddingUnsigned(hex: String, iSI: Double, nth: Double): Digalg = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSignerInfoForAddingUnsigned")(hex.asInstanceOf[js.Any], iSI.asInstanceOf[js.Any], nth.asInstanceOf[js.Any])).asInstanceOf[Digalg]
   }
   
   /**

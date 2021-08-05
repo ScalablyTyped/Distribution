@@ -22,16 +22,16 @@ object browserFilesMod {
        with IOHandler {
     def this(fileNamePrefix: String) = this()
     
-    val jsonAnchor: js.Any = js.native
+    /* private */ val jsonAnchor: js.Any = js.native
     
-    val modelTopologyFileName: js.Any = js.native
+    /* private */ val modelTopologyFileName: js.Any = js.native
     
     @JSName("save")
     def save_MBrowserDownloads_(modelArtifacts: ModelArtifacts): js.Promise[SaveResult] = js.native
     
-    val weightDataAnchor: js.Any = js.native
+    /* private */ val weightDataAnchor: js.Any = js.native
     
-    val weightDataFileName: js.Any = js.native
+    /* private */ val weightDataFileName: js.Any = js.native
   }
   /* static members */
   object BrowserDownloads_ {
@@ -41,15 +41,12 @@ object browserFilesMod {
     val URL_SCHEME: /* "downloads://" */ String = js.native
   }
   
-  @scala.inline
-  def browserDownloads(): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserDownloads")().asInstanceOf[IOHandler]
-  @scala.inline
-  def browserDownloads(fileNamePrefix: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserDownloads")(fileNamePrefix.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  inline def browserDownloads(): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserDownloads")().asInstanceOf[IOHandler]
+  inline def browserDownloads(fileNamePrefix: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserDownloads")(fileNamePrefix.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
   
   @JSImport("@tensorflow/tfjs-core/dist/io/browser_files", "browserDownloadsRouter")
   @js.native
   val browserDownloadsRouter: IORouter = js.native
   
-  @scala.inline
-  def browserFiles(files: js.Array[File]): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserFiles")(files.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  inline def browserFiles(files: js.Array[File]): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserFiles")(files.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
 }

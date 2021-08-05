@@ -52,67 +52,47 @@ trait SchemaClusterOperationMetadata extends StObject {
 }
 object SchemaClusterOperationMetadata {
   
-  @scala.inline
-  def apply(): SchemaClusterOperationMetadata = {
+  inline def apply(): SchemaClusterOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClusterOperationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaClusterOperationMetadataMutableBuilder[Self <: SchemaClusterOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClusterOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    @scala.inline
-    def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
+    inline def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
+    inline def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SchemaClusterOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaClusterOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusHistory(value: js.Array[SchemaClusterOperationStatus]): Self = StObject.set(x, "statusHistory", value.asInstanceOf[js.Any])
+    inline def setStatusHistory(value: js.Array[SchemaClusterOperationStatus]): Self = StObject.set(x, "statusHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
+    inline def setStatusHistoryUndefined: Self = StObject.set(x, "statusHistory", js.undefined)
     
-    @scala.inline
-    def setStatusHistoryVarargs(value: SchemaClusterOperationStatus*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
+    inline def setStatusHistoryVarargs(value: SchemaClusterOperationStatus*): Self = StObject.set(x, "statusHistory", js.Array(value :_*))
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

@@ -24,28 +24,21 @@ trait GattPresentationFormat extends StObject {
 }
 object GattPresentationFormat {
   
-  @scala.inline
-  def apply(description: Double, exponent: Double, formatType: Double, namespace: Double, unit: Double): GattPresentationFormat = {
+  inline def apply(description: Double, exponent: Double, formatType: Double, namespace: Double, unit: Double): GattPresentationFormat = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], exponent = exponent.asInstanceOf[js.Any], formatType = formatType.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GattPresentationFormat]
   }
   
-  @scala.inline
-  implicit class GattPresentationFormatMutableBuilder[Self <: GattPresentationFormat] (val x: Self) extends AnyVal {
+  extension [Self <: GattPresentationFormat](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Double): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Double): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExponent(value: Double): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
+    inline def setExponent(value: Double): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatType(value: Double): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    inline def setFormatType(value: Double): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Double): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Double): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait Polyfill extends StObject {
 }
 object Polyfill {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Blob: PolyfillBlob,
     Event: PolyfillEvent,
     Fetch: PolyfillFetch,
@@ -36,28 +35,20 @@ object Polyfill {
     __obj.asInstanceOf[Polyfill]
   }
   
-  @scala.inline
-  implicit class PolyfillMutableBuilder[Self <: Polyfill] (val x: Self) extends AnyVal {
+  extension [Self <: Polyfill](x: Self) {
     
-    @scala.inline
-    def setBlob(value: PolyfillBlob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: PolyfillBlob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: PolyfillEvent): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: PolyfillEvent): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetch(value: PolyfillFetch): Self = StObject.set(x, "Fetch", value.asInstanceOf[js.Any])
+    inline def setFetch(value: PolyfillFetch): Self = StObject.set(x, "Fetch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: PolyfillFile): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+    inline def setFile(value: PolyfillFile): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileReader(value: PolyfillFileReader): Self = StObject.set(x, "FileReader", value.asInstanceOf[js.Any])
+    inline def setFileReader(value: PolyfillFileReader): Self = StObject.set(x, "FileReader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressEvent(value: PolyfillProgressEvent): Self = StObject.set(x, "ProgressEvent", value.asInstanceOf[js.Any])
+    inline def setProgressEvent(value: PolyfillProgressEvent): Self = StObject.set(x, "ProgressEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXMLHttpRequest(value: PolyfillXMLHttpRequest): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
+    inline def setXMLHttpRequest(value: PolyfillXMLHttpRequest): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
   }
 }

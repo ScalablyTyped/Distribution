@@ -27,37 +27,27 @@ trait AuthorizationCode
 }
 object AuthorizationCode {
   
-  @scala.inline
-  def apply(authorizationCode: String, client: Client, expiresAt: Date, redirectUri: String, user: User): AuthorizationCode = {
+  inline def apply(authorizationCode: String, client: Client, expiresAt: Date, redirectUri: String, user: User): AuthorizationCode = {
     val __obj = js.Dynamic.literal(authorizationCode = authorizationCode.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], redirectUri = redirectUri.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationCode]
   }
   
-  @scala.inline
-  implicit class AuthorizationCodeMutableBuilder[Self <: AuthorizationCode] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationCode](x: Self) {
     
-    @scala.inline
-    def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
+    inline def setAuthorizationCode(value: String): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+    inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

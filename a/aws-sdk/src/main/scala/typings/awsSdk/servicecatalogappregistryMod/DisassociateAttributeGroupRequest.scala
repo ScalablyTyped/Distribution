@@ -18,19 +18,15 @@ trait DisassociateAttributeGroupRequest extends StObject {
 }
 object DisassociateAttributeGroupRequest {
   
-  @scala.inline
-  def apply(application: ApplicationSpecifier, attributeGroup: AttributeGroupSpecifier): DisassociateAttributeGroupRequest = {
+  inline def apply(application: ApplicationSpecifier, attributeGroup: AttributeGroupSpecifier): DisassociateAttributeGroupRequest = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], attributeGroup = attributeGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateAttributeGroupRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateAttributeGroupRequestMutableBuilder[Self <: DisassociateAttributeGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateAttributeGroupRequest](x: Self) {
     
-    @scala.inline
-    def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeGroup(value: AttributeGroupSpecifier): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
+    inline def setAttributeGroup(value: AttributeGroupSpecifier): Self = StObject.set(x, "attributeGroup", value.asInstanceOf[js.Any])
   }
 }

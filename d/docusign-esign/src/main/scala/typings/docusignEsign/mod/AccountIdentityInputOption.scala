@@ -14,31 +14,23 @@ trait AccountIdentityInputOption extends StObject {
 }
 object AccountIdentityInputOption {
   
-  @scala.inline
-  def apply(): AccountIdentityInputOption = {
+  inline def apply(): AccountIdentityInputOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountIdentityInputOption]
   }
   
-  @scala.inline
-  implicit class AccountIdentityInputOptionMutableBuilder[Self <: AccountIdentityInputOption] (val x: Self) extends AnyVal {
+  extension [Self <: AccountIdentityInputOption](x: Self) {
     
-    @scala.inline
-    def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
+    inline def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
     
-    @scala.inline
-    def setOptionName(value: String): Self = StObject.set(x, "optionName", value.asInstanceOf[js.Any])
+    inline def setOptionName(value: String): Self = StObject.set(x, "optionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionNameUndefined: Self = StObject.set(x, "optionName", js.undefined)
+    inline def setOptionNameUndefined: Self = StObject.set(x, "optionName", js.undefined)
     
-    @scala.inline
-    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
+    inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

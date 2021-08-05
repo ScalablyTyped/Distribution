@@ -11,6 +11,5 @@ object numbersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def numbers(height: Double, width: Double, num: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("numbers")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def numbers(height: Double, width: Double, num: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("numbers")(height.asInstanceOf[js.Any], width.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

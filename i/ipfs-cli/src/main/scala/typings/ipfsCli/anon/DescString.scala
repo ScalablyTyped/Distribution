@@ -12,20 +12,16 @@ trait DescString extends StObject {
 }
 object DescString {
   
-  @scala.inline
-  def apply(desc: String, `type`: String): DescString = {
+  inline def apply(desc: String, `type`: String): DescString = {
     val __obj = js.Dynamic.literal(desc = desc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescString]
   }
   
-  @scala.inline
-  implicit class DescStringMutableBuilder[Self <: DescString] (val x: Self) extends AnyVal {
+  extension [Self <: DescString](x: Self) {
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,25 +15,19 @@ trait ValidateErrorEntity[Values] extends StObject {
 }
 object ValidateErrorEntity {
   
-  @scala.inline
-  def apply[Values](errorFields: js.Array[Errors], outOfDate: Boolean, values: Values): ValidateErrorEntity[Values] = {
+  inline def apply[Values](errorFields: js.Array[Errors], outOfDate: Boolean, values: Values): ValidateErrorEntity[Values] = {
     val __obj = js.Dynamic.literal(errorFields = errorFields.asInstanceOf[js.Any], outOfDate = outOfDate.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateErrorEntity[Values]]
   }
   
-  @scala.inline
-  implicit class ValidateErrorEntityMutableBuilder[Self <: ValidateErrorEntity[?], Values] (val x: Self & ValidateErrorEntity[Values]) extends AnyVal {
+  extension [Self <: ValidateErrorEntity[?], Values](x: Self & ValidateErrorEntity[Values]) {
     
-    @scala.inline
-    def setErrorFields(value: js.Array[Errors]): Self = StObject.set(x, "errorFields", value.asInstanceOf[js.Any])
+    inline def setErrorFields(value: js.Array[Errors]): Self = StObject.set(x, "errorFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorFieldsVarargs(value: Errors*): Self = StObject.set(x, "errorFields", js.Array(value :_*))
+    inline def setErrorFieldsVarargs(value: Errors*): Self = StObject.set(x, "errorFields", js.Array(value :_*))
     
-    @scala.inline
-    def setOutOfDate(value: Boolean): Self = StObject.set(x, "outOfDate", value.asInstanceOf[js.Any])
+    inline def setOutOfDate(value: Boolean): Self = StObject.set(x, "outOfDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: Values): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Values): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

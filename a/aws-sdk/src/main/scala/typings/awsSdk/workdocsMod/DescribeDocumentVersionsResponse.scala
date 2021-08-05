@@ -18,28 +18,21 @@ trait DescribeDocumentVersionsResponse extends StObject {
 }
 object DescribeDocumentVersionsResponse {
   
-  @scala.inline
-  def apply(): DescribeDocumentVersionsResponse = {
+  inline def apply(): DescribeDocumentVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDocumentVersionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDocumentVersionsResponseMutableBuilder[Self <: DescribeDocumentVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDocumentVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setDocumentVersions(value: DocumentVersionMetadataList): Self = StObject.set(x, "DocumentVersions", value.asInstanceOf[js.Any])
+    inline def setDocumentVersions(value: DocumentVersionMetadataList): Self = StObject.set(x, "DocumentVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVersionsUndefined: Self = StObject.set(x, "DocumentVersions", js.undefined)
+    inline def setDocumentVersionsUndefined: Self = StObject.set(x, "DocumentVersions", js.undefined)
     
-    @scala.inline
-    def setDocumentVersionsVarargs(value: DocumentVersionMetadata*): Self = StObject.set(x, "DocumentVersions", js.Array(value :_*))
+    inline def setDocumentVersionsVarargs(value: DocumentVersionMetadata*): Self = StObject.set(x, "DocumentVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

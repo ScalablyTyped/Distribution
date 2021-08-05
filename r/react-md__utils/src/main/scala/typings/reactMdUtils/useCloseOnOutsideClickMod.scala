@@ -13,15 +13,11 @@ object useCloseOnOutsideClickMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getElement[E /* <: HTMLElement */](): E | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[E | Null]
-  @scala.inline
-  def getElement[E /* <: HTMLElement */](element: E): E | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[E | Null]
-  @scala.inline
-  def getElement[E /* <: HTMLElement */](element: MutableRefObject[E | Null]): E | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[E | Null]
+  inline def getElement[E /* <: HTMLElement */](): E | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")().asInstanceOf[E | Null]
+  inline def getElement[E /* <: HTMLElement */](element: E): E | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[E | Null]
+  inline def getElement[E /* <: HTMLElement */](element: MutableRefObject[E | Null]): E | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[E | Null]
   
-  @scala.inline
-  def useCloseOnOutsideClick[E /* <: HTMLElement */](hasEnabledElementOnOutsideClick: CloseOnOutsideClickOptions[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useCloseOnOutsideClick")(hasEnabledElementOnOutsideClick.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useCloseOnOutsideClick[E /* <: HTMLElement */](hasEnabledElementOnOutsideClick: CloseOnOutsideClickOptions[E]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useCloseOnOutsideClick")(hasEnabledElementOnOutsideClick.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait CloseOnOutsideClickOptions[E /* <: HTMLElement */] extends StObject {
     
@@ -44,8 +40,7 @@ object useCloseOnOutsideClickMod {
   }
   object CloseOnOutsideClickOptions {
     
-    @scala.inline
-    def apply[E /* <: HTMLElement */](
+    inline def apply[E /* <: HTMLElement */](
       enabled: Boolean,
       onOutsideClick: (/* element */ E | Null, /* target */ HTMLElement | Null, /* contains */ Contains) => Unit
     ): CloseOnOutsideClickOptions[E] = {
@@ -53,20 +48,15 @@ object useCloseOnOutsideClickMod {
       __obj.asInstanceOf[CloseOnOutsideClickOptions[E]]
     }
     
-    @scala.inline
-    implicit class CloseOnOutsideClickOptionsMutableBuilder[Self <: CloseOnOutsideClickOptions[?], E /* <: HTMLElement */] (val x: Self & CloseOnOutsideClickOptions[E]) extends AnyVal {
+    extension [Self <: CloseOnOutsideClickOptions[?], E /* <: HTMLElement */](x: Self & CloseOnOutsideClickOptions[E]) {
       
-      @scala.inline
-      def setElement(value: E | (MutableRefObject[E | Null])): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: E | (MutableRefObject[E | Null])): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementNull: Self = StObject.set(x, "element", null)
+      inline def setElementNull: Self = StObject.set(x, "element", null)
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnOutsideClick(value: (/* element */ E | Null, /* target */ HTMLElement | Null, /* contains */ Contains) => Unit): Self = StObject.set(x, "onOutsideClick", js.Any.fromFunction3(value))
+      inline def setOnOutsideClick(value: (/* element */ E | Null, /* target */ HTMLElement | Null, /* contains */ Contains) => Unit): Self = StObject.set(x, "onOutsideClick", js.Any.fromFunction3(value))
     }
   }
   

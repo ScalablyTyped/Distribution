@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions extends StObject {
 }
 object StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions = {
+  inline def apply(): StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsFlagsFlagDiamondpinOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

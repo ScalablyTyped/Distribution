@@ -65,21 +65,16 @@ object userGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserGroupState): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserGroupState, opts: CustomResourceOptions): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
+    inline def get(name: String, id: Input[ID]): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
+    inline def get(name: String, id: Input[ID], state: UserGroupState): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
+    inline def get(name: String, id: Input[ID], state: UserGroupState, opts: CustomResourceOptions): UserGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserGroup]
     
     /**
       * Returns true if the given object is an instance of UserGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cognito/userGroup.UserGroup */ Boolean]
   }
   
   trait UserGroupArgs extends StObject {
@@ -111,41 +106,30 @@ object userGroupMod {
   }
   object UserGroupArgs {
     
-    @scala.inline
-    def apply(userPoolId: Input[String]): UserGroupArgs = {
+    inline def apply(userPoolId: Input[String]): UserGroupArgs = {
       val __obj = js.Dynamic.literal(userPoolId = userPoolId.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserGroupArgs]
     }
     
-    @scala.inline
-    implicit class UserGroupArgsMutableBuilder[Self <: UserGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserGroupArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrecedence(value: Input[Double]): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+      inline def setPrecedence(value: Input[Double]): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecedenceUndefined: Self = StObject.set(x, "precedence", js.undefined)
+      inline def setPrecedenceUndefined: Self = StObject.set(x, "precedence", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,44 +162,32 @@ object userGroupMod {
   }
   object UserGroupState {
     
-    @scala.inline
-    def apply(): UserGroupState = {
+    inline def apply(): UserGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserGroupState]
     }
     
-    @scala.inline
-    implicit class UserGroupStateMutableBuilder[Self <: UserGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: UserGroupState](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrecedence(value: Input[Double]): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
+      inline def setPrecedence(value: Input[Double]): Self = StObject.set(x, "precedence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecedenceUndefined: Self = StObject.set(x, "precedence", js.undefined)
+      inline def setPrecedenceUndefined: Self = StObject.set(x, "precedence", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: Input[String]): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
+      inline def setUserPoolIdUndefined: Self = StObject.set(x, "userPoolId", js.undefined)
     }
   }
 }

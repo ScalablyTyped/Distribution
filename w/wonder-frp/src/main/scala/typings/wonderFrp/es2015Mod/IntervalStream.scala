@@ -17,6 +17,5 @@ object IntervalStream {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(interval: Double, scheduler: typings.wonderFrp.coreSchedulerMod.Scheduler): typings.wonderFrp.streamIntervalStreamMod.IntervalStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(interval.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamIntervalStreamMod.IntervalStream]
+  inline def create(interval: Double, scheduler: typings.wonderFrp.coreSchedulerMod.Scheduler): typings.wonderFrp.streamIntervalStreamMod.IntervalStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(interval.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamIntervalStreamMod.IntervalStream]
 }

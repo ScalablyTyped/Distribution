@@ -14,25 +14,19 @@ trait ColHTMLAttributes[T]
 }
 object ColHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): ColHTMLAttributes[T] = {
+  inline def apply[T](): ColHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class ColHTMLAttributesMutableBuilder[Self <: ColHTMLAttributes[?], T] (val x: Self & ColHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: ColHTMLAttributes[?], T](x: Self & ColHTMLAttributes[T]) {
     
-    @scala.inline
-    def setSpan(value: Double | String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: Double | String): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+    inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

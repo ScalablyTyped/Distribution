@@ -20,40 +20,29 @@ trait Properties extends StObject {
 }
 object Properties {
   
-  @scala.inline
-  def apply(edges: js.Array[String], event: js.Array[String], nodes: js.Array[String], pointer: Canvas): Properties = {
+  inline def apply(edges: js.Array[String], event: js.Array[String], nodes: js.Array[String], pointer: Canvas): Properties = {
     val __obj = js.Dynamic.literal(edges = edges.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any], pointer = pointer.asInstanceOf[js.Any])
     __obj.asInstanceOf[Properties]
   }
   
-  @scala.inline
-  implicit class PropertiesMutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
+  extension [Self <: Properties](x: Self) {
     
-    @scala.inline
-    def setEdges(value: js.Array[String]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: js.Array[String]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesVarargs(value: String*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: String*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
-    @scala.inline
-    def setEvent(value: js.Array[String]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Array[String]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventVarargs(value: String*): Self = StObject.set(x, "event", js.Array(value :_*))
+    inline def setEventVarargs(value: String*): Self = StObject.set(x, "event", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[String]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: String*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setPointer(value: Canvas): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+    inline def setPointer(value: Canvas): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSelection(value: Nodes): Self = StObject.set(x, "previousSelection", value.asInstanceOf[js.Any])
+    inline def setPreviousSelection(value: Nodes): Self = StObject.set(x, "previousSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSelectionUndefined: Self = StObject.set(x, "previousSelection", js.undefined)
+    inline def setPreviousSelectionUndefined: Self = StObject.set(x, "previousSelection", js.undefined)
   }
 }

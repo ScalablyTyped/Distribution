@@ -14,22 +14,17 @@ trait RequestOrig extends StObject {
 }
 object RequestOrig {
   
-  @scala.inline
-  def apply(params: js.Object, payload: js.Object, query: js.Object): RequestOrig = {
+  inline def apply(params: js.Object, payload: js.Object, query: js.Object): RequestOrig = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestOrig]
   }
   
-  @scala.inline
-  implicit class RequestOrigMutableBuilder[Self <: RequestOrig] (val x: Self) extends AnyVal {
+  extension [Self <: RequestOrig](x: Self) {
     
-    @scala.inline
-    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

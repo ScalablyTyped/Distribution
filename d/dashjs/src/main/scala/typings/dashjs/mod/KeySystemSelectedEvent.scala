@@ -18,29 +18,22 @@ trait KeySystemSelectedEvent
 }
 object KeySystemSelectedEvent {
   
-  @scala.inline
-  def apply(): KeySystemSelectedEvent = {
+  inline def apply(): KeySystemSelectedEvent = {
     val __obj = js.Dynamic.literal(data = null)
     __obj.updateDynamic("type")("public_keySystemSelected")
     __obj.asInstanceOf[KeySystemSelectedEvent]
   }
   
-  @scala.inline
-  implicit class KeySystemSelectedEventMutableBuilder[Self <: KeySystemSelectedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeySystemSelectedEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNull: Self = StObject.set(x, "data", null)
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setType(value: public_keySystemSelected): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: public_keySystemSelected): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -20,14 +20,10 @@ object mod {
     *
     * @return {boolean} Whether the two values are shallow equal.
     */
-  @scala.inline
-  def apply(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(a: js.Array[js.Any], b: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(a: Record[String, js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(a: Record[String, js.Any], b: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: js.Array[js.Any], b: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: Record[String, js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: Record[String, js.Any], b: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("@wordpress/is-shallow-equal", JSImport.Namespace)
   @js.native
@@ -42,8 +38,7 @@ object mod {
     * @return {boolean} Whether the two arrays are shallow equal.
     */
   /* was `typeof imported_arrays` */
-  @scala.inline
-  def isShallowEqualArrays(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isShallowEqualArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isShallowEqualArrays(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isShallowEqualArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Returns true if the two objects are shallow equal, or false otherwise.
@@ -54,8 +49,7 @@ object mod {
     * @return {boolean} Whether the two objects are shallow equal.
     */
   /* was `typeof imported_objects` */
-  @scala.inline
-  def isShallowEqualObjects(a: Record[String, js.Any], b: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isShallowEqualObjects")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isShallowEqualObjects(a: Record[String, js.Any], b: Record[String, js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isShallowEqualObjects")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type ComparableObject = StringDictionary[js.Any]
 }

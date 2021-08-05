@@ -22,10 +22,8 @@ object ajaxHelperMod {
       * @param port The target host port.
       * @return A promise that will resolve with the response body from the forwarded request.
       */
-    @scala.inline
-    def fwdAjax(request: js.Any, host: String): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fwdAjax")(request.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-    @scala.inline
-    def fwdAjax(request: js.Any, host: String, port: Double): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fwdAjax")(request.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+    inline def fwdAjax(request: js.Any, host: String): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fwdAjax")(request.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+    inline def fwdAjax(request: js.Any, host: String, port: Double): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("fwdAjax")(request.asInstanceOf[js.Any], host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
     
     /**
       * Gets the JSON data from the body of the response. If it fails to parse as valid JSON, the original data will be returned.
@@ -33,8 +31,7 @@ object ajaxHelperMod {
       * @param response The response object.
       * @return A promise that is resolved with the data.
       */
-    @scala.inline
-    def getJsonData(response: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsonData")(response.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+    inline def getJsonData(response: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsonData")(response.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
     
     /**
       * Forwards the request back to the same host but a different path.
@@ -44,9 +41,7 @@ object ajaxHelperMod {
       * @param method The forward request method.
       * @return A promise that will resolve with the response body from the forwarded request.
       */
-    @scala.inline
-    def loopbackAjax(request: Request, path: String): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loopbackAjax")(request.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-    @scala.inline
-    def loopbackAjax(request: Request, path: String, method: String): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loopbackAjax")(request.asInstanceOf[js.Any], path.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+    inline def loopbackAjax(request: Request, path: String): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loopbackAjax")(request.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+    inline def loopbackAjax(request: Request, path: String, method: String): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("loopbackAjax")(request.asInstanceOf[js.Any], path.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   }
 }

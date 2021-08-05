@@ -17,19 +17,15 @@ trait SchemaCancelTestMatrixResponse extends StObject {
 }
 object SchemaCancelTestMatrixResponse {
   
-  @scala.inline
-  def apply(): SchemaCancelTestMatrixResponse = {
+  inline def apply(): SchemaCancelTestMatrixResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCancelTestMatrixResponse]
   }
   
-  @scala.inline
-  implicit class SchemaCancelTestMatrixResponseMutableBuilder[Self <: SchemaCancelTestMatrixResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCancelTestMatrixResponse](x: Self) {
     
-    @scala.inline
-    def setTestState(value: String): Self = StObject.set(x, "testState", value.asInstanceOf[js.Any])
+    inline def setTestState(value: String): Self = StObject.set(x, "testState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestStateUndefined: Self = StObject.set(x, "testState", js.undefined)
+    inline def setTestStateUndefined: Self = StObject.set(x, "testState", js.undefined)
   }
 }

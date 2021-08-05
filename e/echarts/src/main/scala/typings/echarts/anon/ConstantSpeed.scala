@@ -146,70 +146,49 @@ trait ConstantSpeed extends StObject {
 }
 object ConstantSpeed {
   
-  @scala.inline
-  def apply(): ConstantSpeed = {
+  inline def apply(): ConstantSpeed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConstantSpeed]
   }
   
-  @scala.inline
-  implicit class ConstantSpeedMutableBuilder[Self <: ConstantSpeed] (val x: Self) extends AnyVal {
+  extension [Self <: ConstantSpeed](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setConstantSpeed(value: Double): Self = StObject.set(x, "constantSpeed", value.asInstanceOf[js.Any])
+    inline def setConstantSpeed(value: Double): Self = StObject.set(x, "constantSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstantSpeedUndefined: Self = StObject.set(x, "constantSpeed", js.undefined)
+    inline def setConstantSpeedUndefined: Self = StObject.set(x, "constantSpeed", js.undefined)
     
-    @scala.inline
-    def setDelay(value: js.Function | Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: js.Function | Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+    inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
+    inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
-    @scala.inline
-    def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+    inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setTrailLength(value: Double): Self = StObject.set(x, "trailLength", value.asInstanceOf[js.Any])
+    inline def setTrailLength(value: Double): Self = StObject.set(x, "trailLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailLengthUndefined: Self = StObject.set(x, "trailLength", js.undefined)
+    inline def setTrailLengthUndefined: Self = StObject.set(x, "trailLength", js.undefined)
   }
 }

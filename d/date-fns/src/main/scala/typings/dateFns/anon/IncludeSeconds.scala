@@ -14,31 +14,23 @@ trait IncludeSeconds extends StObject {
 }
 object IncludeSeconds {
   
-  @scala.inline
-  def apply(): IncludeSeconds = {
+  inline def apply(): IncludeSeconds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludeSeconds]
   }
   
-  @scala.inline
-  implicit class IncludeSecondsMutableBuilder[Self <: IncludeSeconds] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeSeconds](x: Self) {
     
-    @scala.inline
-    def setAddSuffix(value: Boolean): Self = StObject.set(x, "addSuffix", value.asInstanceOf[js.Any])
+    inline def setAddSuffix(value: Boolean): Self = StObject.set(x, "addSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddSuffixUndefined: Self = StObject.set(x, "addSuffix", js.undefined)
+    inline def setAddSuffixUndefined: Self = StObject.set(x, "addSuffix", js.undefined)
     
-    @scala.inline
-    def setIncludeSeconds(value: Boolean): Self = StObject.set(x, "includeSeconds", value.asInstanceOf[js.Any])
+    inline def setIncludeSeconds(value: Boolean): Self = StObject.set(x, "includeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSecondsUndefined: Self = StObject.set(x, "includeSeconds", js.undefined)
+    inline def setIncludeSecondsUndefined: Self = StObject.set(x, "includeSeconds", js.undefined)
     
-    @scala.inline
-    def setLocale(value: typings.dateFns.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: typings.dateFns.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

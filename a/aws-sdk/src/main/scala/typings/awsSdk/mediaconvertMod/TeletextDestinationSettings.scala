@@ -18,28 +18,21 @@ trait TeletextDestinationSettings extends StObject {
 }
 object TeletextDestinationSettings {
   
-  @scala.inline
-  def apply(): TeletextDestinationSettings = {
+  inline def apply(): TeletextDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TeletextDestinationSettings]
   }
   
-  @scala.inline
-  implicit class TeletextDestinationSettingsMutableBuilder[Self <: TeletextDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TeletextDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
+    inline def setPageNumber(value: stringMin3Max3Pattern1809aFAF09aEAE): Self = StObject.set(x, "PageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumberUndefined: Self = StObject.set(x, "PageNumber", js.undefined)
+    inline def setPageNumberUndefined: Self = StObject.set(x, "PageNumber", js.undefined)
     
-    @scala.inline
-    def setPageTypes(value: listOfTeletextPageType): Self = StObject.set(x, "PageTypes", value.asInstanceOf[js.Any])
+    inline def setPageTypes(value: listOfTeletextPageType): Self = StObject.set(x, "PageTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTypesUndefined: Self = StObject.set(x, "PageTypes", js.undefined)
+    inline def setPageTypesUndefined: Self = StObject.set(x, "PageTypes", js.undefined)
     
-    @scala.inline
-    def setPageTypesVarargs(value: TeletextPageType*): Self = StObject.set(x, "PageTypes", js.Array(value :_*))
+    inline def setPageTypesVarargs(value: TeletextPageType*): Self = StObject.set(x, "PageTypes", js.Array(value :_*))
   }
 }

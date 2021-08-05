@@ -18,28 +18,21 @@ trait ListGameServersOutput extends StObject {
 }
 object ListGameServersOutput {
   
-  @scala.inline
-  def apply(): ListGameServersOutput = {
+  inline def apply(): ListGameServersOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGameServersOutput]
   }
   
-  @scala.inline
-  implicit class ListGameServersOutputMutableBuilder[Self <: ListGameServersOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListGameServersOutput](x: Self) {
     
-    @scala.inline
-    def setGameServers(value: GameServers): Self = StObject.set(x, "GameServers", value.asInstanceOf[js.Any])
+    inline def setGameServers(value: GameServers): Self = StObject.set(x, "GameServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServersUndefined: Self = StObject.set(x, "GameServers", js.undefined)
+    inline def setGameServersUndefined: Self = StObject.set(x, "GameServers", js.undefined)
     
-    @scala.inline
-    def setGameServersVarargs(value: GameServer*): Self = StObject.set(x, "GameServers", js.Array(value :_*))
+    inline def setGameServersVarargs(value: GameServer*): Self = StObject.set(x, "GameServers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -17,28 +17,21 @@ trait ShardSummary extends StObject {
 }
 object ShardSummary {
   
-  @scala.inline
-  def apply(): ShardSummary = {
+  inline def apply(): ShardSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShardSummary]
   }
   
-  @scala.inline
-  implicit class ShardSummaryMutableBuilder[Self <: ShardSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ShardSummary](x: Self) {
     
-    @scala.inline
-    def setRuns(value: js.Array[js.Any]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
+    inline def setRuns(value: js.Array[js.Any]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunsUndefined: Self = StObject.set(x, "runs", js.undefined)
+    inline def setRunsUndefined: Self = StObject.set(x, "runs", js.undefined)
     
-    @scala.inline
-    def setRunsVarargs(value: js.Any*): Self = StObject.set(x, "runs", js.Array(value :_*))
+    inline def setRunsVarargs(value: js.Any*): Self = StObject.set(x, "runs", js.Array(value :_*))
     
-    @scala.inline
-    def setShardResult(value: MergedResult): Self = StObject.set(x, "shardResult", value.asInstanceOf[js.Any])
+    inline def setShardResult(value: MergedResult): Self = StObject.set(x, "shardResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardResultUndefined: Self = StObject.set(x, "shardResult", js.undefined)
+    inline def setShardResultUndefined: Self = StObject.set(x, "shardResult", js.undefined)
   }
 }

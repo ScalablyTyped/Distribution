@@ -20,42 +20,34 @@ trait MarginLeftProps[TLength] extends StObject {
 }
 object MarginLeftProps {
   
-  @scala.inline
-  def apply[TLength](): MarginLeftProps[TLength] = {
+  inline def apply[TLength](): MarginLeftProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarginLeftProps[TLength]]
   }
   
-  @scala.inline
-  implicit class MarginLeftPropsMutableBuilder[Self <: MarginLeftProps[?], TLength] (val x: Self & MarginLeftProps[TLength]) extends AnyVal {
+  extension [Self <: MarginLeftProps[?], TLength](x: Self & MarginLeftProps[TLength]) {
     
-    @scala.inline
-    def setMarginLeft(
+    inline def setMarginLeft(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    @scala.inline
-    def setMarginLeftVarargs(
+    inline def setMarginLeftVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any)*
     ): Self = StObject.set(x, "marginLeft", js.Array(value :_*))
     
-    @scala.inline
-    def setMl(
+    inline def setMl(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
+    inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
-    @scala.inline
-    def setMlVarargs(
+    inline def setMlVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any)*
     ): Self = StObject.set(x, "ml", js.Array(value :_*))
   }

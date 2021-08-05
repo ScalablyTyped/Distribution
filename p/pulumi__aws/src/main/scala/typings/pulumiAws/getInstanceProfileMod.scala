@@ -11,10 +11,8 @@ object getInstanceProfileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getInstanceProfile(args: GetInstanceProfileArgs): js.Promise[GetInstanceProfileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceProfile")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceProfileResult]]
-  @scala.inline
-  def getInstanceProfile(args: GetInstanceProfileArgs, opts: InvokeOptions): js.Promise[GetInstanceProfileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceProfile")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceProfileResult]]
+  inline def getInstanceProfile(args: GetInstanceProfileArgs): js.Promise[GetInstanceProfileResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceProfile")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceProfileResult]]
+  inline def getInstanceProfile(args: GetInstanceProfileArgs, opts: InvokeOptions): js.Promise[GetInstanceProfileResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceProfile")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceProfileResult]]
   
   trait GetInstanceProfileArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getInstanceProfileMod {
   }
   object GetInstanceProfileArgs {
     
-    @scala.inline
-    def apply(name: String): GetInstanceProfileArgs = {
+    inline def apply(name: String): GetInstanceProfileArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetInstanceProfileArgs]
     }
     
-    @scala.inline
-    implicit class GetInstanceProfileArgsMutableBuilder[Self <: GetInstanceProfileArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetInstanceProfileArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,8 +76,7 @@ object getInstanceProfileMod {
   }
   object GetInstanceProfileResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       createDate: String,
       id: String,
@@ -96,32 +90,23 @@ object getInstanceProfileMod {
       __obj.asInstanceOf[GetInstanceProfileResult]
     }
     
-    @scala.inline
-    implicit class GetInstanceProfileResultMutableBuilder[Self <: GetInstanceProfileResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetInstanceProfileResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDate(value: String): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
+      inline def setCreateDate(value: String): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
+      inline def setRoleId(value: String): Self = StObject.set(x, "roleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+      inline def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     }
   }
 }

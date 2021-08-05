@@ -74,64 +74,45 @@ trait Result[T] extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply[T](): Result[T] = {
+  inline def apply[T](): Result[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Result[T]]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result[?], T] (val x: Self & Result[T]) extends AnyVal {
+  extension [Self <: Result[?], T](x: Self & Result[T]) {
     
-    @scala.inline
-    def setImplicitResults(value: js.Array[js.Array[T] | ResultSet[T]]): Self = StObject.set(x, "implicitResults", value.asInstanceOf[js.Any])
+    inline def setImplicitResults(value: js.Array[js.Array[T] | ResultSet[T]]): Self = StObject.set(x, "implicitResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitResultsUndefined: Self = StObject.set(x, "implicitResults", js.undefined)
+    inline def setImplicitResultsUndefined: Self = StObject.set(x, "implicitResults", js.undefined)
     
-    @scala.inline
-    def setImplicitResultsVarargs(value: (js.Array[T] | ResultSet[T])*): Self = StObject.set(x, "implicitResults", js.Array(value :_*))
+    inline def setImplicitResultsVarargs(value: (js.Array[T] | ResultSet[T])*): Self = StObject.set(x, "implicitResults", js.Array(value :_*))
     
-    @scala.inline
-    def setLastRowid(value: String): Self = StObject.set(x, "lastRowid", value.asInstanceOf[js.Any])
+    inline def setLastRowid(value: String): Self = StObject.set(x, "lastRowid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRowidUndefined: Self = StObject.set(x, "lastRowid", js.undefined)
+    inline def setLastRowidUndefined: Self = StObject.set(x, "lastRowid", js.undefined)
     
-    @scala.inline
-    def setMetaData(value: js.Array[Metadata[T]]): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    inline def setMetaData(value: js.Array[Metadata[T]]): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
+    inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
     
-    @scala.inline
-    def setMetaDataVarargs(value: Metadata[T]*): Self = StObject.set(x, "metaData", js.Array(value :_*))
+    inline def setMetaDataVarargs(value: Metadata[T]*): Self = StObject.set(x, "metaData", js.Array(value :_*))
     
-    @scala.inline
-    def setOutBinds(value: T): Self = StObject.set(x, "outBinds", value.asInstanceOf[js.Any])
+    inline def setOutBinds(value: T): Self = StObject.set(x, "outBinds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutBindsUndefined: Self = StObject.set(x, "outBinds", js.undefined)
+    inline def setOutBindsUndefined: Self = StObject.set(x, "outBinds", js.undefined)
     
-    @scala.inline
-    def setResultSet(value: ResultSet[T]): Self = StObject.set(x, "resultSet", value.asInstanceOf[js.Any])
+    inline def setResultSet(value: ResultSet[T]): Self = StObject.set(x, "resultSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetUndefined: Self = StObject.set(x, "resultSet", js.undefined)
+    inline def setResultSetUndefined: Self = StObject.set(x, "resultSet", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[T]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
+    inline def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsAffectedUndefined: Self = StObject.set(x, "rowsAffected", js.undefined)
+    inline def setRowsAffectedUndefined: Self = StObject.set(x, "rowsAffected", js.undefined)
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: T*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

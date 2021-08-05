@@ -38,8 +38,7 @@ trait Header extends StObject {
 }
 object Header {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Destination: Destination,
     DestinationPort: Port,
     Direction: StatefulRuleDirection,
@@ -51,25 +50,18 @@ object Header {
     __obj.asInstanceOf[Header]
   }
   
-  @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+  extension [Self <: Header](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPort(value: Port): Self = StObject.set(x, "DestinationPort", value.asInstanceOf[js.Any])
+    inline def setDestinationPort(value: Port): Self = StObject.set(x, "DestinationPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: StatefulRuleDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: StatefulRuleDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: StatefulRuleProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: StatefulRuleProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePort(value: Port): Self = StObject.set(x, "SourcePort", value.asInstanceOf[js.Any])
+    inline def setSourcePort(value: Port): Self = StObject.set(x, "SourcePort", value.asInstanceOf[js.Any])
   }
 }

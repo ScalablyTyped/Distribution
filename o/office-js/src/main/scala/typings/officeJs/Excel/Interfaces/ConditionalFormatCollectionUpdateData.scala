@@ -11,22 +11,17 @@ trait ConditionalFormatCollectionUpdateData extends StObject {
 }
 object ConditionalFormatCollectionUpdateData {
   
-  @scala.inline
-  def apply(): ConditionalFormatCollectionUpdateData = {
+  inline def apply(): ConditionalFormatCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalFormatCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class ConditionalFormatCollectionUpdateDataMutableBuilder[Self <: ConditionalFormatCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalFormatCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[ConditionalFormatData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ConditionalFormatData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ConditionalFormatData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ConditionalFormatData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

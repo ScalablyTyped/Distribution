@@ -16,19 +16,19 @@ object elementQueriesElementQueriesMod {
     def this(element: HTMLElement) = this()
     def this(element: HTMLElement, hasPrefix: Prefix) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _element: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getQueryAttributeValue: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _queries: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _queryPrefix: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _setQueryAttribute: js.Any = js.native
     
     /* CompleteClass */
@@ -43,15 +43,15 @@ object elementQueriesElementQueriesMod {
   
   trait ElementQueries extends StObject {
     
-    var _element: js.Any
+    /* private */ var _element: js.Any
     
-    var _getQueryAttributeValue: js.Any
+    /* private */ var _getQueryAttributeValue: js.Any
     
-    var _queries: js.Any
+    /* private */ var _queries: js.Any
     
-    var _queryPrefix: js.Any
+    /* private */ var _queryPrefix: js.Any
     
-    var _setQueryAttribute: js.Any
+    /* private */ var _setQueryAttribute: js.Any
     
     def destroy(): Unit
     
@@ -61,8 +61,7 @@ object elementQueriesElementQueriesMod {
   }
   object ElementQueries {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _element: js.Any,
       _getQueryAttributeValue: js.Any,
       _queries: js.Any,
@@ -76,32 +75,23 @@ object elementQueriesElementQueriesMod {
       __obj.asInstanceOf[ElementQueries]
     }
     
-    @scala.inline
-    implicit class ElementQueriesMutableBuilder[Self <: ElementQueries] (val x: Self) extends AnyVal {
+    extension [Self <: ElementQueries](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetQueries(value: () => Unit): Self = StObject.set(x, "getQueries", js.Any.fromFunction0(value))
+      inline def setGetQueries(value: () => Unit): Self = StObject.set(x, "getQueries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+      inline def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_element(value: js.Any): Self = StObject.set(x, "_element", value.asInstanceOf[js.Any])
+      inline def set_element(value: js.Any): Self = StObject.set(x, "_element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getQueryAttributeValue(value: js.Any): Self = StObject.set(x, "_getQueryAttributeValue", value.asInstanceOf[js.Any])
+      inline def set_getQueryAttributeValue(value: js.Any): Self = StObject.set(x, "_getQueryAttributeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_queries(value: js.Any): Self = StObject.set(x, "_queries", value.asInstanceOf[js.Any])
+      inline def set_queries(value: js.Any): Self = StObject.set(x, "_queries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_queryPrefix(value: js.Any): Self = StObject.set(x, "_queryPrefix", value.asInstanceOf[js.Any])
+      inline def set_queryPrefix(value: js.Any): Self = StObject.set(x, "_queryPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_setQueryAttribute(value: js.Any): Self = StObject.set(x, "_setQueryAttribute", value.asInstanceOf[js.Any])
+      inline def set_setQueryAttribute(value: js.Any): Self = StObject.set(x, "_setQueryAttribute", value.asInstanceOf[js.Any])
     }
   }
 }

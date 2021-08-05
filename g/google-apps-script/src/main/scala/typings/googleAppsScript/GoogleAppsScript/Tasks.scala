@@ -27,8 +27,7 @@ trait Tasks extends StObject {
 }
 object Tasks {
   
-  @scala.inline
-  def apply(newTask: () => Task, newTaskLinks: () => TaskLinks, newTaskList: () => TaskList): Tasks = {
+  inline def apply(newTask: () => Task, newTaskLinks: () => TaskLinks, newTaskList: () => TaskList): Tasks = {
     val __obj = js.Dynamic.literal(newTask = js.Any.fromFunction0(newTask), newTaskLinks = js.Any.fromFunction0(newTaskLinks), newTaskList = js.Any.fromFunction0(newTaskList))
     __obj.asInstanceOf[Tasks]
   }
@@ -130,107 +129,74 @@ object Tasks {
     }
     object Task {
       
-      @scala.inline
-      def apply(): Task = {
+      inline def apply(): Task = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Task]
       }
       
-      @scala.inline
-      implicit class TaskMutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
+      extension [Self <: Task](x: Self) {
         
-        @scala.inline
-        def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+        inline def setCompleted(value: String): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+        inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
         
-        @scala.inline
-        def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+        inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+        inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
         
-        @scala.inline
-        def setDue(value: String): Self = StObject.set(x, "due", value.asInstanceOf[js.Any])
+        inline def setDue(value: String): Self = StObject.set(x, "due", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDueUndefined: Self = StObject.set(x, "due", js.undefined)
+        inline def setDueUndefined: Self = StObject.set(x, "due", js.undefined)
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+        inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+        inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setLinks(value: js.Array[TaskLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+        inline def setLinks(value: js.Array[TaskLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+        inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
         
-        @scala.inline
-        def setLinksVarargs(value: TaskLinks*): Self = StObject.set(x, "links", js.Array(value :_*))
+        inline def setLinksVarargs(value: TaskLinks*): Self = StObject.set(x, "links", js.Array(value :_*))
         
-        @scala.inline
-        def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+        inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+        inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
         
-        @scala.inline
-        def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+        inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+        inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
         
-        @scala.inline
-        def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+        inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+        inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+        inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+        inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
       }
     }
     
@@ -244,32 +210,24 @@ object Tasks {
     }
     object TaskLinks {
       
-      @scala.inline
-      def apply(): TaskLinks = {
+      inline def apply(): TaskLinks = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TaskLinks]
       }
       
-      @scala.inline
-      implicit class TaskLinksMutableBuilder[Self <: TaskLinks] (val x: Self) extends AnyVal {
+      extension [Self <: TaskLinks](x: Self) {
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+        inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -289,50 +247,36 @@ object Tasks {
     }
     object TaskList {
       
-      @scala.inline
-      def apply(): TaskList = {
+      inline def apply(): TaskList = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TaskList]
       }
       
-      @scala.inline
-      implicit class TaskListMutableBuilder[Self <: TaskList] (val x: Self) extends AnyVal {
+      extension [Self <: TaskList](x: Self) {
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+        inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+        inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+        inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+        inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
       }
     }
     
@@ -348,41 +292,30 @@ object Tasks {
     }
     object TaskLists {
       
-      @scala.inline
-      def apply(): TaskLists = {
+      inline def apply(): TaskLists = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TaskLists]
       }
       
-      @scala.inline
-      implicit class TaskListsMutableBuilder[Self <: TaskLists] (val x: Self) extends AnyVal {
+      extension [Self <: TaskLists](x: Self) {
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setItems(value: js.Array[TaskList]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[TaskList]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: TaskList*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: TaskList*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
     
@@ -398,67 +331,48 @@ object Tasks {
     }
     object Tasks {
       
-      @scala.inline
-      def apply(): typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.Tasks = {
+      inline def apply(): typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.Tasks = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.Tasks]
       }
       
-      @scala.inline
-      implicit class TasksMutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.Tasks] (val x: Self) extends AnyVal {
+      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Tasks.Schema.Tasks](x: Self) {
         
-        @scala.inline
-        def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+        inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+        inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
         
-        @scala.inline
-        def setItems(value: js.Array[Task]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[Task]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: Task*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: Task*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
       }
     }
   }
   
-  @scala.inline
-  implicit class TasksMutableBuilder[Self <: Tasks] (val x: Self) extends AnyVal {
+  extension [Self <: Tasks](x: Self) {
     
-    @scala.inline
-    def setNewTask(value: () => Task): Self = StObject.set(x, "newTask", js.Any.fromFunction0(value))
+    inline def setNewTask(value: () => Task): Self = StObject.set(x, "newTask", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTaskLinks(value: () => TaskLinks): Self = StObject.set(x, "newTaskLinks", js.Any.fromFunction0(value))
+    inline def setNewTaskLinks(value: () => TaskLinks): Self = StObject.set(x, "newTaskLinks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewTaskList(value: () => TaskList): Self = StObject.set(x, "newTaskList", js.Any.fromFunction0(value))
+    inline def setNewTaskList(value: () => TaskList): Self = StObject.set(x, "newTaskList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTasklists(value: TasklistsCollection): Self = StObject.set(x, "Tasklists", value.asInstanceOf[js.Any])
+    inline def setTasklists(value: TasklistsCollection): Self = StObject.set(x, "Tasklists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasklistsUndefined: Self = StObject.set(x, "Tasklists", js.undefined)
+    inline def setTasklistsUndefined: Self = StObject.set(x, "Tasklists", js.undefined)
     
-    @scala.inline
-    def setTasks(value: TasksCollection): Self = StObject.set(x, "Tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: TasksCollection): Self = StObject.set(x, "Tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksUndefined: Self = StObject.set(x, "Tasks", js.undefined)
+    inline def setTasksUndefined: Self = StObject.set(x, "Tasks", js.undefined)
   }
 }

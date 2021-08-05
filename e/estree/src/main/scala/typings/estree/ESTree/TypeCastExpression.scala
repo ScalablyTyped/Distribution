@@ -13,8 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TypeCastExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expression: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Expression */ js.Any,
     typeAnnotation: TypeAnnotation
   ): TypeCastExpression = {
@@ -22,15 +21,12 @@ object TypeCastExpression {
     __obj.asInstanceOf[TypeCastExpression]
   }
   
-  @scala.inline
-  implicit class TypeCastExpressionMutableBuilder[Self <: TypeCastExpression] (val x: Self) extends AnyVal {
+  extension [Self <: TypeCastExpression](x: Self) {
     
-    @scala.inline
-    def setExpression(
+    inline def setExpression(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Expression */ js.Any
     ): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

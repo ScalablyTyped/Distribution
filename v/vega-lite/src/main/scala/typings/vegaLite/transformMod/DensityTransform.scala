@@ -71,73 +71,51 @@ trait DensityTransform
 }
 object DensityTransform {
   
-  @scala.inline
-  def apply(density: FieldName): DensityTransform = {
+  inline def apply(density: FieldName): DensityTransform = {
     val __obj = js.Dynamic.literal(density = density.asInstanceOf[js.Any])
     __obj.asInstanceOf[DensityTransform]
   }
   
-  @scala.inline
-  implicit class DensityTransformMutableBuilder[Self <: DensityTransform] (val x: Self) extends AnyVal {
+  extension [Self <: DensityTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+    inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
-    @scala.inline
-    def setCounts(value: Boolean): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
+    inline def setCounts(value: Boolean): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
+    inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
-    @scala.inline
-    def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
     
-    @scala.inline
-    def setDensity(value: FieldName): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: FieldName): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxsteps(value: Double): Self = StObject.set(x, "maxsteps", value.asInstanceOf[js.Any])
+    inline def setMaxsteps(value: Double): Self = StObject.set(x, "maxsteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxstepsUndefined: Self = StObject.set(x, "maxsteps", js.undefined)
+    inline def setMaxstepsUndefined: Self = StObject.set(x, "maxsteps", js.undefined)
     
-    @scala.inline
-    def setMinsteps(value: Double): Self = StObject.set(x, "minsteps", value.asInstanceOf[js.Any])
+    inline def setMinsteps(value: Double): Self = StObject.set(x, "minsteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinstepsUndefined: Self = StObject.set(x, "minsteps", js.undefined)
+    inline def setMinstepsUndefined: Self = StObject.set(x, "minsteps", js.undefined)
     
-    @scala.inline
-    def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
   }
 }

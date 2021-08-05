@@ -18,37 +18,27 @@ trait ExecStartOptions extends StObject {
 }
 object ExecStartOptions {
   
-  @scala.inline
-  def apply(): ExecStartOptions = {
+  inline def apply(): ExecStartOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecStartOptions]
   }
   
-  @scala.inline
-  implicit class ExecStartOptionsMutableBuilder[Self <: ExecStartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecStartOptions](x: Self) {
     
-    @scala.inline
-    def setDetach(value: Boolean): Self = StObject.set(x, "Detach", value.asInstanceOf[js.Any])
+    inline def setDetach(value: Boolean): Self = StObject.set(x, "Detach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachUndefined: Self = StObject.set(x, "Detach", js.undefined)
+    inline def setDetachUndefined: Self = StObject.set(x, "Detach", js.undefined)
     
-    @scala.inline
-    def setHijack(value: Boolean): Self = StObject.set(x, "hijack", value.asInstanceOf[js.Any])
+    inline def setHijack(value: Boolean): Self = StObject.set(x, "hijack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHijackUndefined: Self = StObject.set(x, "hijack", js.undefined)
+    inline def setHijackUndefined: Self = StObject.set(x, "hijack", js.undefined)
     
-    @scala.inline
-    def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+    inline def setStdin(value: Boolean): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+    inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
     
-    @scala.inline
-    def setTty(value: Boolean): Self = StObject.set(x, "Tty", value.asInstanceOf[js.Any])
+    inline def setTty(value: Boolean): Self = StObject.set(x, "Tty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtyUndefined: Self = StObject.set(x, "Tty", js.undefined)
+    inline def setTtyUndefined: Self = StObject.set(x, "Tty", js.undefined)
   }
 }

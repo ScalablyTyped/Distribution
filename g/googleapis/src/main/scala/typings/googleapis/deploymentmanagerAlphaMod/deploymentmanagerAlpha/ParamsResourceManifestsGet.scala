@@ -34,37 +34,27 @@ trait ParamsResourceManifestsGet
 }
 object ParamsResourceManifestsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceManifestsGet = {
+  inline def apply(): ParamsResourceManifestsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceManifestsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceManifestsGetMutableBuilder[Self <: ParamsResourceManifestsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceManifestsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDeployment(value: String): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: String): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
+    inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
     
-    @scala.inline
-    def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+    inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

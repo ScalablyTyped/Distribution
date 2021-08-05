@@ -17,31 +17,23 @@ trait BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse extends StObject
 }
 object BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse = {
+  inline def apply(): BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponseMutableBuilder[Self <: BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2BatchReadBlobsResponseResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: BuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

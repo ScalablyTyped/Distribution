@@ -18,8 +18,7 @@ trait ParametersUsersListEndpoint extends StObject {
 }
 object ParametersUsersListEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersListEndpoint,
     request: UsersListRequestOptions,
     response: OctokitResponse[UsersListResponseData]
@@ -28,16 +27,12 @@ object ParametersUsersListEndpoint {
     __obj.asInstanceOf[ParametersUsersListEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersListEndpointMutableBuilder[Self <: ParametersUsersListEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersListEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersListEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersListEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: UsersListRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: UsersListRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[UsersListResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[UsersListResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

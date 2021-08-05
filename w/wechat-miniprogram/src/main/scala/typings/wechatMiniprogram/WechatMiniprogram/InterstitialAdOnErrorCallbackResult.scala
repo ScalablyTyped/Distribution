@@ -34,8 +34,7 @@ trait InterstitialAdOnErrorCallbackResult extends StObject {
 }
 object InterstitialAdOnErrorCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errCode: `1000` | `1001` | `1002` | `1003` | `1004` | `1005` | `1006` | `1007` | `1008`,
     errMsg: String
   ): InterstitialAdOnErrorCallbackResult = {
@@ -43,13 +42,10 @@ object InterstitialAdOnErrorCallbackResult {
     __obj.asInstanceOf[InterstitialAdOnErrorCallbackResult]
   }
   
-  @scala.inline
-  implicit class InterstitialAdOnErrorCallbackResultMutableBuilder[Self <: InterstitialAdOnErrorCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: InterstitialAdOnErrorCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: `1000` | `1001` | `1002` | `1003` | `1004` | `1005` | `1006` | `1007` | `1008`): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: `1000` | `1001` | `1002` | `1003` | `1004` | `1005` | `1006` | `1007` | `1008`): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

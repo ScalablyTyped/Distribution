@@ -16,8 +16,7 @@ trait GridViewBatchEditChangesSavingEventArgs
 }
 object GridViewBatchEditChangesSavingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     deletedValues: js.Any,
     insertedValues: js.Any,
@@ -28,16 +27,12 @@ object GridViewBatchEditChangesSavingEventArgs {
     __obj.asInstanceOf[GridViewBatchEditChangesSavingEventArgs]
   }
   
-  @scala.inline
-  implicit class GridViewBatchEditChangesSavingEventArgsMutableBuilder[Self <: GridViewBatchEditChangesSavingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GridViewBatchEditChangesSavingEventArgs](x: Self) {
     
-    @scala.inline
-    def setDeletedValues(value: js.Any): Self = StObject.set(x, "deletedValues", value.asInstanceOf[js.Any])
+    inline def setDeletedValues(value: js.Any): Self = StObject.set(x, "deletedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertedValues(value: js.Any): Self = StObject.set(x, "insertedValues", value.asInstanceOf[js.Any])
+    inline def setInsertedValues(value: js.Any): Self = StObject.set(x, "insertedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedValues(value: js.Any): Self = StObject.set(x, "updatedValues", value.asInstanceOf[js.Any])
+    inline def setUpdatedValues(value: js.Any): Self = StObject.set(x, "updatedValues", value.asInstanceOf[js.Any])
   }
 }

@@ -17,40 +17,29 @@ trait MeetingParticipantInfo extends StObject {
 }
 object MeetingParticipantInfo {
   
-  @scala.inline
-  def apply(): MeetingParticipantInfo = {
+  inline def apply(): MeetingParticipantInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeetingParticipantInfo]
   }
   
-  @scala.inline
-  implicit class MeetingParticipantInfoMutableBuilder[Self <: MeetingParticipantInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MeetingParticipantInfo](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityNull: Self = StObject.set(x, "identity", null)
+    inline def setIdentityNull: Self = StObject.set(x, "identity", null)
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
-    @scala.inline
-    def setRole(value: NullableOption[OnlineMeetingRole]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: NullableOption[OnlineMeetingRole]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNull: Self = StObject.set(x, "role", null)
+    inline def setRoleNull: Self = StObject.set(x, "role", null)
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setUpn(value: NullableOption[String]): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
+    inline def setUpn(value: NullableOption[String]): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpnNull: Self = StObject.set(x, "upn", null)
+    inline def setUpnNull: Self = StObject.set(x, "upn", null)
     
-    @scala.inline
-    def setUpnUndefined: Self = StObject.set(x, "upn", js.undefined)
+    inline def setUpnUndefined: Self = StObject.set(x, "upn", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait Online extends StObject {
 }
 object Online {
   
-  @scala.inline
-  def apply(offline: scala.Double, online: scala.Double): Online = {
+  inline def apply(offline: scala.Double, online: scala.Double): Online = {
     val __obj = js.Dynamic.literal(offline = offline.asInstanceOf[js.Any], online = online.asInstanceOf[js.Any])
     __obj.asInstanceOf[Online]
   }
   
-  @scala.inline
-  implicit class OnlineMutableBuilder[Self <: Online] (val x: Self) extends AnyVal {
+  extension [Self <: Online](x: Self) {
     
-    @scala.inline
-    def setOffline(value: scala.Double): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
+    inline def setOffline(value: scala.Double): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnline(value: scala.Double): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
+    inline def setOnline(value: scala.Double): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
   }
 }

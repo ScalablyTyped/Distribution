@@ -12,17 +12,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ASTNode(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ASTNode")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def ASTNode(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ASTNode")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def codegen(options: CodegenOptions): js.Function1[/* ast */ js.Any, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("codegen")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ast */ js.Any, Code]]
+  inline def codegen(options: CodegenOptions): js.Function1[/* ast */ js.Any, Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("codegen")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ast */ js.Any, Code]]
   
-  @scala.inline
-  def functions(codegen: js.Any): StringDictionary[String | js.Function0[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("functions")(codegen.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String | js.Function0[String]]]
+  inline def functions(codegen: js.Any): StringDictionary[String | js.Function0[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("functions")(codegen.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String | js.Function0[String]]]
   
-  @scala.inline
-  def parse(expression: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def parse(expression: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(expression.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait CodegenOptions extends StObject {
     
@@ -51,58 +47,42 @@ object mod {
   }
   object CodegenOptions {
     
-    @scala.inline
-    def apply(globalvar: String | (js.Function1[/* id */ String, String])): CodegenOptions = {
+    inline def apply(globalvar: String | (js.Function1[/* id */ String, String])): CodegenOptions = {
       val __obj = js.Dynamic.literal(globalvar = globalvar.asInstanceOf[js.Any])
       __obj.asInstanceOf[CodegenOptions]
     }
     
-    @scala.inline
-    implicit class CodegenOptionsMutableBuilder[Self <: CodegenOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CodegenOptions](x: Self) {
       
-      @scala.inline
-      def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
+      inline def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
+      inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
       
-      @scala.inline
-      def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
+      inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
       
-      @scala.inline
-      def setConstants(value: StringDictionary[String]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      inline def setConstants(value: StringDictionary[String]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)
+      inline def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)
       
-      @scala.inline
-      def setFieldvar(value: String): Self = StObject.set(x, "fieldvar", value.asInstanceOf[js.Any])
+      inline def setFieldvar(value: String): Self = StObject.set(x, "fieldvar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldvarUndefined: Self = StObject.set(x, "fieldvar", js.undefined)
+      inline def setFieldvarUndefined: Self = StObject.set(x, "fieldvar", js.undefined)
       
-      @scala.inline
-      def setForbidden(value: js.Array[String]): Self = StObject.set(x, "forbidden", value.asInstanceOf[js.Any])
+      inline def setForbidden(value: js.Array[String]): Self = StObject.set(x, "forbidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForbiddenUndefined: Self = StObject.set(x, "forbidden", js.undefined)
+      inline def setForbiddenUndefined: Self = StObject.set(x, "forbidden", js.undefined)
       
-      @scala.inline
-      def setForbiddenVarargs(value: String*): Self = StObject.set(x, "forbidden", js.Array(value :_*))
+      inline def setForbiddenVarargs(value: String*): Self = StObject.set(x, "forbidden", js.Array(value :_*))
       
-      @scala.inline
-      def setFunctions(
+      inline def setFunctions(
         value: /* astVisitor */ js.Any => StringDictionary[String | (js.Function1[/* args */ js.Any, String])]
       ): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
       
-      @scala.inline
-      def setGlobalvar(value: String | (js.Function1[/* id */ String, String])): Self = StObject.set(x, "globalvar", value.asInstanceOf[js.Any])
+      inline def setGlobalvar(value: String | (js.Function1[/* id */ String, String])): Self = StObject.set(x, "globalvar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalvarFunction1(value: /* id */ String => String): Self = StObject.set(x, "globalvar", js.Any.fromFunction1(value))
+      inline def setGlobalvarFunction1(value: /* id */ String => String): Self = StObject.set(x, "globalvar", js.Any.fromFunction1(value))
     }
   }
 }

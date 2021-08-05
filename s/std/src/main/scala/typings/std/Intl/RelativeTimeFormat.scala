@@ -82,8 +82,7 @@ trait RelativeTimeFormat extends StObject {
 }
 object RelativeTimeFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     format: (Double, RelativeTimeFormatUnit) => String,
     formatToParts: (Double, RelativeTimeFormatUnit) => js.Array[RelativeTimeFormatPart],
     resolvedOptions: () => ResolvedRelativeTimeFormatOptions
@@ -92,16 +91,12 @@ object RelativeTimeFormat {
     __obj.asInstanceOf[RelativeTimeFormat]
   }
   
-  @scala.inline
-  implicit class RelativeTimeFormatMutableBuilder[Self <: RelativeTimeFormat] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeTimeFormat](x: Self) {
     
-    @scala.inline
-    def setFormat(value: (Double, RelativeTimeFormatUnit) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+    inline def setFormat(value: (Double, RelativeTimeFormatUnit) => String): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFormatToParts(value: (Double, RelativeTimeFormatUnit) => js.Array[RelativeTimeFormatPart]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction2(value))
+    inline def setFormatToParts(value: (Double, RelativeTimeFormatUnit) => js.Array[RelativeTimeFormatPart]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolvedOptions(value: () => ResolvedRelativeTimeFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
+    inline def setResolvedOptions(value: () => ResolvedRelativeTimeFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
   }
 }

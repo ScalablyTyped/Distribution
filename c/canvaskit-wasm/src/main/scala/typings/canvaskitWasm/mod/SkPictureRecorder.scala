@@ -22,8 +22,7 @@ trait SkPictureRecorder
 }
 object SkPictureRecorder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginRecording: InputRect => SkCanvas,
     delete: () => Unit,
     deleteAfter: () => Unit,
@@ -35,13 +34,10 @@ object SkPictureRecorder {
     __obj.asInstanceOf[SkPictureRecorder]
   }
   
-  @scala.inline
-  implicit class SkPictureRecorderMutableBuilder[Self <: SkPictureRecorder] (val x: Self) extends AnyVal {
+  extension [Self <: SkPictureRecorder](x: Self) {
     
-    @scala.inline
-    def setBeginRecording(value: InputRect => SkCanvas): Self = StObject.set(x, "beginRecording", js.Any.fromFunction1(value))
+    inline def setBeginRecording(value: InputRect => SkCanvas): Self = StObject.set(x, "beginRecording", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinishRecordingAsPicture(value: () => SkPicture): Self = StObject.set(x, "finishRecordingAsPicture", js.Any.fromFunction0(value))
+    inline def setFinishRecordingAsPicture(value: () => SkPicture): Self = StObject.set(x, "finishRecordingAsPicture", js.Any.fromFunction0(value))
   }
 }

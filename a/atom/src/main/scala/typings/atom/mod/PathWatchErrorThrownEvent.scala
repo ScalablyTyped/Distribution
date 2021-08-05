@@ -18,19 +18,15 @@ trait PathWatchErrorThrownEvent extends StObject {
 }
 object PathWatchErrorThrownEvent {
   
-  @scala.inline
-  def apply(error: Error, handle: () => Unit): PathWatchErrorThrownEvent = {
+  inline def apply(error: Error, handle: () => Unit): PathWatchErrorThrownEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], handle = js.Any.fromFunction0(handle))
     __obj.asInstanceOf[PathWatchErrorThrownEvent]
   }
   
-  @scala.inline
-  implicit class PathWatchErrorThrownEventMutableBuilder[Self <: PathWatchErrorThrownEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PathWatchErrorThrownEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
+    inline def setHandle(value: () => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction0(value))
   }
 }

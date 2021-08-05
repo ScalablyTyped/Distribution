@@ -13,10 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/LocalizationEditor/LocalizationEditor.LocalizationEditorProps> & {  displayName :'LocalizationEditor'} */
 object LocalizationEditor {
   
-  @scala.inline
-  def apply(props: PropsWithChildren[LocalizationEditorProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-  @scala.inline
-  def apply(props: PropsWithChildren[LocalizationEditorProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def apply(props: PropsWithChildren[LocalizationEditorProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def apply(props: PropsWithChildren[LocalizationEditorProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
   @JSImport("fundamental-react", "LocalizationEditor")
   @js.native
@@ -25,24 +23,20 @@ object LocalizationEditor {
   @JSImport("fundamental-react", "LocalizationEditor.contextTypes")
   @js.native
   def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-  @scala.inline
-  def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("fundamental-react", "LocalizationEditor.defaultProps")
   @js.native
   def defaultProps: js.UndefOr[PartialLocalizationEditor] = js.native
-  @scala.inline
-  def defaultProps_=(x: js.UndefOr[PartialLocalizationEditor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: js.UndefOr[PartialLocalizationEditor]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("fundamental-react", "LocalizationEditor.displayName")
   @js.native
   def displayName: js.UndefOr[typings.fundamentalReact.fundamentalReactStrings.LocalizationEditor | String] = js.native
-  @scala.inline
-  def displayName_=(x: js.UndefOr[typings.fundamentalReact.fundamentalReactStrings.LocalizationEditor | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: js.UndefOr[typings.fundamentalReact.fundamentalReactStrings.LocalizationEditor | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
   @JSImport("fundamental-react", "LocalizationEditor.propTypes")
   @js.native
   def propTypes: js.UndefOr[WeakValidationMapLocaliza] = js.native
-  @scala.inline
-  def propTypes_=(x: js.UndefOr[WeakValidationMapLocaliza]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: js.UndefOr[WeakValidationMapLocaliza]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

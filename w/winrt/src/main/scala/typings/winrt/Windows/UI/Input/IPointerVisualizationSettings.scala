@@ -12,19 +12,15 @@ trait IPointerVisualizationSettings extends StObject {
 }
 object IPointerVisualizationSettings {
   
-  @scala.inline
-  def apply(isBarrelButtonFeedbackEnabled: Boolean, isContactFeedbackEnabled: Boolean): IPointerVisualizationSettings = {
+  inline def apply(isBarrelButtonFeedbackEnabled: Boolean, isContactFeedbackEnabled: Boolean): IPointerVisualizationSettings = {
     val __obj = js.Dynamic.literal(isBarrelButtonFeedbackEnabled = isBarrelButtonFeedbackEnabled.asInstanceOf[js.Any], isContactFeedbackEnabled = isContactFeedbackEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPointerVisualizationSettings]
   }
   
-  @scala.inline
-  implicit class IPointerVisualizationSettingsMutableBuilder[Self <: IPointerVisualizationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IPointerVisualizationSettings](x: Self) {
     
-    @scala.inline
-    def setIsBarrelButtonFeedbackEnabled(value: Boolean): Self = StObject.set(x, "isBarrelButtonFeedbackEnabled", value.asInstanceOf[js.Any])
+    inline def setIsBarrelButtonFeedbackEnabled(value: Boolean): Self = StObject.set(x, "isBarrelButtonFeedbackEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsContactFeedbackEnabled(value: Boolean): Self = StObject.set(x, "isContactFeedbackEnabled", value.asInstanceOf[js.Any])
+    inline def setIsContactFeedbackEnabled(value: Boolean): Self = StObject.set(x, "isContactFeedbackEnabled", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedObject extends StObject
 object ManagedObject {
   
-  @scala.inline
-  def managed: typings.chromeApps.chromeAppsStrings.managed = "managed".asInstanceOf[typings.chromeApps.chromeAppsStrings.managed]
+  inline def managed: typings.chromeApps.chromeAppsStrings.managed = "managed".asInstanceOf[typings.chromeApps.chromeAppsStrings.managed]
   
-  @scala.inline
-  def unmanaged: typings.chromeApps.chromeAppsStrings.unmanaged = "unmanaged".asInstanceOf[typings.chromeApps.chromeAppsStrings.unmanaged]
+  inline def unmanaged: typings.chromeApps.chromeAppsStrings.unmanaged = "unmanaged".asInstanceOf[typings.chromeApps.chromeAppsStrings.unmanaged]
 }

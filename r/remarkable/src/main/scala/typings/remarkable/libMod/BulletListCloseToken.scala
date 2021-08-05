@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object BulletListCloseToken {
   
-  @scala.inline
-  def apply(level: Double): BulletListCloseToken = {
+  inline def apply(level: Double): BulletListCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("bullet_list_close")
     __obj.asInstanceOf[BulletListCloseToken]
   }
   
-  @scala.inline
-  implicit class BulletListCloseTokenMutableBuilder[Self <: BulletListCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: BulletListCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: bullet_list_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bullet_list_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

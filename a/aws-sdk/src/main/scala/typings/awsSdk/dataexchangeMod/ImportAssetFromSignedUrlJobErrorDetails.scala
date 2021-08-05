@@ -10,16 +10,13 @@ trait ImportAssetFromSignedUrlJobErrorDetails extends StObject {
 }
 object ImportAssetFromSignedUrlJobErrorDetails {
   
-  @scala.inline
-  def apply(AssetName: AssetName): ImportAssetFromSignedUrlJobErrorDetails = {
+  inline def apply(AssetName: AssetName): ImportAssetFromSignedUrlJobErrorDetails = {
     val __obj = js.Dynamic.literal(AssetName = AssetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportAssetFromSignedUrlJobErrorDetails]
   }
   
-  @scala.inline
-  implicit class ImportAssetFromSignedUrlJobErrorDetailsMutableBuilder[Self <: ImportAssetFromSignedUrlJobErrorDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAssetFromSignedUrlJobErrorDetails](x: Self) {
     
-    @scala.inline
-    def setAssetName(value: AssetName): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
+    inline def setAssetName(value: AssetName): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
   }
 }

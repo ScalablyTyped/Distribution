@@ -41,8 +41,7 @@ object insertEventMod {
   }
   object InsertEvent {
     
-    @scala.inline
-    def apply[Entity](
+    inline def apply[Entity](
       connection: Connection,
       entity: Entity,
       manager: EntityManager,
@@ -53,23 +52,17 @@ object insertEventMod {
       __obj.asInstanceOf[InsertEvent[Entity]]
     }
     
-    @scala.inline
-    implicit class InsertEventMutableBuilder[Self <: InsertEvent[?], Entity] (val x: Self & InsertEvent[Entity]) extends AnyVal {
+    extension [Self <: InsertEvent[?], Entity](x: Self & InsertEvent[Entity]) {
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+      inline def setManager(value: EntityManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: EntityMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: EntityMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
+      inline def setQueryRunner(value: QueryRunner): Self = StObject.set(x, "queryRunner", value.asInstanceOf[js.Any])
     }
   }
 }

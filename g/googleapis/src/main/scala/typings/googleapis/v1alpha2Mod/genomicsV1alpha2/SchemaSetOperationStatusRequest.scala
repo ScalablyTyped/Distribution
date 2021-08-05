@@ -22,46 +22,33 @@ trait SchemaSetOperationStatusRequest extends StObject {
 }
 object SchemaSetOperationStatusRequest {
   
-  @scala.inline
-  def apply(): SchemaSetOperationStatusRequest = {
+  inline def apply(): SchemaSetOperationStatusRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSetOperationStatusRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSetOperationStatusRequestMutableBuilder[Self <: SchemaSetOperationStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSetOperationStatusRequest](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setTimestampEvents(value: js.Array[SchemaTimestampEvent]): Self = StObject.set(x, "timestampEvents", value.asInstanceOf[js.Any])
+    inline def setTimestampEvents(value: js.Array[SchemaTimestampEvent]): Self = StObject.set(x, "timestampEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampEventsUndefined: Self = StObject.set(x, "timestampEvents", js.undefined)
+    inline def setTimestampEventsUndefined: Self = StObject.set(x, "timestampEvents", js.undefined)
     
-    @scala.inline
-    def setTimestampEventsVarargs(value: SchemaTimestampEvent*): Self = StObject.set(x, "timestampEvents", js.Array(value :_*))
+    inline def setTimestampEventsVarargs(value: SchemaTimestampEvent*): Self = StObject.set(x, "timestampEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setValidationToken(value: String): Self = StObject.set(x, "validationToken", value.asInstanceOf[js.Any])
+    inline def setValidationToken(value: String): Self = StObject.set(x, "validationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationTokenUndefined: Self = StObject.set(x, "validationToken", js.undefined)
+    inline def setValidationTokenUndefined: Self = StObject.set(x, "validationToken", js.undefined)
   }
 }

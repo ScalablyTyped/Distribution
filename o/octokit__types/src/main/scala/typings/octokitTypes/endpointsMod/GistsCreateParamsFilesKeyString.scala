@@ -10,16 +10,13 @@ trait GistsCreateParamsFilesKeyString extends StObject {
 }
 object GistsCreateParamsFilesKeyString {
   
-  @scala.inline
-  def apply(content: String): GistsCreateParamsFilesKeyString = {
+  inline def apply(content: String): GistsCreateParamsFilesKeyString = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsCreateParamsFilesKeyString]
   }
   
-  @scala.inline
-  implicit class GistsCreateParamsFilesKeyStringMutableBuilder[Self <: GistsCreateParamsFilesKeyString] (val x: Self) extends AnyVal {
+  extension [Self <: GistsCreateParamsFilesKeyString](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

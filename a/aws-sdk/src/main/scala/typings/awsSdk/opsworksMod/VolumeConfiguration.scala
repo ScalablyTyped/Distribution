@@ -43,46 +43,33 @@ trait VolumeConfiguration extends StObject {
 }
 object VolumeConfiguration {
   
-  @scala.inline
-  def apply(MountPoint: String, NumberOfDisks: Integer, Size: Integer): VolumeConfiguration = {
+  inline def apply(MountPoint: String, NumberOfDisks: Integer, Size: Integer): VolumeConfiguration = {
     val __obj = js.Dynamic.literal(MountPoint = MountPoint.asInstanceOf[js.Any], NumberOfDisks = NumberOfDisks.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeConfiguration]
   }
   
-  @scala.inline
-  implicit class VolumeConfigurationMutableBuilder[Self <: VolumeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeConfiguration](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: Boolean): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Boolean): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
-    @scala.inline
-    def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
     
-    @scala.inline
-    def setMountPoint(value: String): Self = StObject.set(x, "MountPoint", value.asInstanceOf[js.Any])
+    inline def setMountPoint(value: String): Self = StObject.set(x, "MountPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfDisks(value: Integer): Self = StObject.set(x, "NumberOfDisks", value.asInstanceOf[js.Any])
+    inline def setNumberOfDisks(value: Integer): Self = StObject.set(x, "NumberOfDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaidLevel(value: Integer): Self = StObject.set(x, "RaidLevel", value.asInstanceOf[js.Any])
+    inline def setRaidLevel(value: Integer): Self = StObject.set(x, "RaidLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaidLevelUndefined: Self = StObject.set(x, "RaidLevel", js.undefined)
+    inline def setRaidLevelUndefined: Self = StObject.set(x, "RaidLevel", js.undefined)
     
-    @scala.inline
-    def setSize(value: Integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Integer): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeType(value: String): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: String): Self = StObject.set(x, "VolumeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
+    inline def setVolumeTypeUndefined: Self = StObject.set(x, "VolumeType", js.undefined)
   }
 }

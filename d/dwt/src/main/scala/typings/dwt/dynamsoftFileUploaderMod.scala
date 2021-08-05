@@ -25,19 +25,16 @@ object dynamsoftFileUploaderMod {
   }
   object FileUploader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Init: (String, js.Function1[/* uploadManager */ UploadManager, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
     ): FileUploader = {
       val __obj = js.Dynamic.literal(Init = js.Any.fromFunction3(Init))
       __obj.asInstanceOf[FileUploader]
     }
     
-    @scala.inline
-    implicit class FileUploaderMutableBuilder[Self <: FileUploader] (val x: Self) extends AnyVal {
+    extension [Self <: FileUploader](x: Self) {
       
-      @scala.inline
-      def setInit(
+      inline def setInit(
         value: (String, js.Function1[/* uploadManager */ UploadManager, Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
       ): Self = StObject.set(x, "Init", js.Any.fromFunction3(value))
     }
@@ -54,17 +51,14 @@ object dynamsoftFileUploaderMod {
   }
   object FormField {
     
-    @scala.inline
-    def apply(Add: (String, String) => Unit): FormField = {
+    inline def apply(Add: (String, String) => Unit): FormField = {
       val __obj = js.Dynamic.literal(Add = js.Any.fromFunction2(Add))
       __obj.asInstanceOf[FormField]
     }
     
-    @scala.inline
-    implicit class FormFieldMutableBuilder[Self <: FormField] (val x: Self) extends AnyVal {
+    extension [Self <: FormField](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, String) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     }
   }
   
@@ -139,8 +133,7 @@ object dynamsoftFileUploaderMod {
   }
   object Job {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BlockSize: Double,
       FileName: String,
       FormField: FormField,
@@ -158,44 +151,31 @@ object dynamsoftFileUploaderMod {
       __obj.asInstanceOf[Job]
     }
     
-    @scala.inline
-    implicit class JobMutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
+    extension [Self <: Job](x: Self) {
       
-      @scala.inline
-      def setBlockSize(value: Double): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
+      inline def setBlockSize(value: Double): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormField(value: FormField): Self = StObject.set(x, "FormField", value.asInstanceOf[js.Any])
+      inline def setFormField(value: FormField): Self = StObject.set(x, "FormField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpHeader(value: js.Object): Self = StObject.set(x, "HttpHeader", value.asInstanceOf[js.Any])
+      inline def setHttpHeader(value: js.Object): Self = StObject.set(x, "HttpHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpVersion(value: String): Self = StObject.set(x, "HttpVersion", value.asInstanceOf[js.Any])
+      inline def setHttpVersion(value: String): Self = StObject.set(x, "HttpVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRunFailure(value: (Job, Double, String) => Unit): Self = StObject.set(x, "OnRunFailure", js.Any.fromFunction3(value))
+      inline def setOnRunFailure(value: (Job, Double, String) => Unit): Self = StObject.set(x, "OnRunFailure", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnRunSuccess(value: Job => Unit): Self = StObject.set(x, "OnRunSuccess", js.Any.fromFunction1(value))
+      inline def setOnRunSuccess(value: Job => Unit): Self = StObject.set(x, "OnRunSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUploadTransferPercentage(value: (Job, Double) => Unit): Self = StObject.set(x, "OnUploadTransferPercentage", js.Any.fromFunction2(value))
+      inline def setOnUploadTransferPercentage(value: (Job, Double) => Unit): Self = StObject.set(x, "OnUploadTransferPercentage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setServerUrl(value: String): Self = StObject.set(x, "ServerUrl", value.asInstanceOf[js.Any])
+      inline def setServerUrl(value: String): Self = StObject.set(x, "ServerUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceValue(value: SourceValue): Self = StObject.set(x, "SourceValue", value.asInstanceOf[js.Any])
+      inline def setSourceValue(value: SourceValue): Self = StObject.set(x, "SourceValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadNum(value: Double): Self = StObject.set(x, "ThreadNum", value.asInstanceOf[js.Any])
+      inline def setThreadNum(value: Double): Self = StObject.set(x, "ThreadNum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,26 +219,20 @@ object dynamsoftFileUploaderMod {
   }
   object UploadManager {
     
-    @scala.inline
-    def apply(Cancel: Job => Boolean, CancelAllUpload: () => Boolean, CreateJob: () => Job, Run: Job => Boolean): UploadManager = {
+    inline def apply(Cancel: Job => Boolean, CancelAllUpload: () => Boolean, CreateJob: () => Job, Run: Job => Boolean): UploadManager = {
       val __obj = js.Dynamic.literal(Cancel = js.Any.fromFunction1(Cancel), CancelAllUpload = js.Any.fromFunction0(CancelAllUpload), CreateJob = js.Any.fromFunction0(CreateJob), Run = js.Any.fromFunction1(Run))
       __obj.asInstanceOf[UploadManager]
     }
     
-    @scala.inline
-    implicit class UploadManagerMutableBuilder[Self <: UploadManager] (val x: Self) extends AnyVal {
+    extension [Self <: UploadManager](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Job => Boolean): Self = StObject.set(x, "Cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: Job => Boolean): Self = StObject.set(x, "Cancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCancelAllUpload(value: () => Boolean): Self = StObject.set(x, "CancelAllUpload", js.Any.fromFunction0(value))
+      inline def setCancelAllUpload(value: () => Boolean): Self = StObject.set(x, "CancelAllUpload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateJob(value: () => Job): Self = StObject.set(x, "CreateJob", js.Any.fromFunction0(value))
+      inline def setCreateJob(value: () => Job): Self = StObject.set(x, "CreateJob", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRun(value: Job => Boolean): Self = StObject.set(x, "Run", js.Any.fromFunction1(value))
+      inline def setRun(value: Job => Boolean): Self = StObject.set(x, "Run", js.Any.fromFunction1(value))
     }
   }
 }

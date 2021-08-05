@@ -10,16 +10,13 @@ trait SpatialAnchorRawCoordinateSystemAdjustedEventArgs extends StObject {
 }
 object SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
   
-  @scala.inline
-  def apply(oldRawCoordinateSystemToNewRawCoordinateSystemTransform: js.Any): SpatialAnchorRawCoordinateSystemAdjustedEventArgs = {
+  inline def apply(oldRawCoordinateSystemToNewRawCoordinateSystemTransform: js.Any): SpatialAnchorRawCoordinateSystemAdjustedEventArgs = {
     val __obj = js.Dynamic.literal(oldRawCoordinateSystemToNewRawCoordinateSystemTransform = oldRawCoordinateSystemToNewRawCoordinateSystemTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialAnchorRawCoordinateSystemAdjustedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialAnchorRawCoordinateSystemAdjustedEventArgsMutableBuilder[Self <: SpatialAnchorRawCoordinateSystemAdjustedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialAnchorRawCoordinateSystemAdjustedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOldRawCoordinateSystemToNewRawCoordinateSystemTransform(value: js.Any): Self = StObject.set(x, "oldRawCoordinateSystemToNewRawCoordinateSystemTransform", value.asInstanceOf[js.Any])
+    inline def setOldRawCoordinateSystemToNewRawCoordinateSystemTransform(value: js.Any): Self = StObject.set(x, "oldRawCoordinateSystemToNewRawCoordinateSystemTransform", value.asInstanceOf[js.Any])
   }
 }

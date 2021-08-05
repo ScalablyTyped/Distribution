@@ -12,8 +12,7 @@ object devToolsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerService(service: AnyInterpreter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(service.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerService(service: AnyInterpreter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerService")(service.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type AnyInterpreter = Interpreter[js.Any, js.Any, js.Any, ContextAny]
 }

@@ -22,40 +22,29 @@ trait IPolylineOptions
 }
 object IPolylineOptions {
   
-  @scala.inline
-  def apply(): IPolylineOptions = {
+  inline def apply(): IPolylineOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPolylineOptions]
   }
   
-  @scala.inline
-  implicit class IPolylineOptionsMutableBuilder[Self <: IPolylineOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPolylineOptions](x: Self) {
     
-    @scala.inline
-    def setGeneralizable(value: Boolean): Self = StObject.set(x, "generalizable", value.asInstanceOf[js.Any])
+    inline def setGeneralizable(value: Boolean): Self = StObject.set(x, "generalizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneralizableUndefined: Self = StObject.set(x, "generalizable", js.undefined)
+    inline def setGeneralizableUndefined: Self = StObject.set(x, "generalizable", js.undefined)
     
-    @scala.inline
-    def setStrokeColor(value: String | Color): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    inline def setStrokeColor(value: String | Color): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    @scala.inline
-    def setStrokeDashArray(value: js.Array[Double] | String): Self = StObject.set(x, "strokeDashArray", value.asInstanceOf[js.Any])
+    inline def setStrokeDashArray(value: js.Array[Double] | String): Self = StObject.set(x, "strokeDashArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeDashArrayUndefined: Self = StObject.set(x, "strokeDashArray", js.undefined)
+    inline def setStrokeDashArrayUndefined: Self = StObject.set(x, "strokeDashArray", js.undefined)
     
-    @scala.inline
-    def setStrokeDashArrayVarargs(value: Double*): Self = StObject.set(x, "strokeDashArray", js.Array(value :_*))
+    inline def setStrokeDashArrayVarargs(value: Double*): Self = StObject.set(x, "strokeDashArray", js.Array(value :_*))
     
-    @scala.inline
-    def setStrokeThickness(value: Double): Self = StObject.set(x, "strokeThickness", value.asInstanceOf[js.Any])
+    inline def setStrokeThickness(value: Double): Self = StObject.set(x, "strokeThickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeThicknessUndefined: Self = StObject.set(x, "strokeThickness", js.undefined)
+    inline def setStrokeThicknessUndefined: Self = StObject.set(x, "strokeThickness", js.undefined)
   }
 }

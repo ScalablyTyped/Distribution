@@ -21,35 +21,26 @@ trait ListItem
 }
 object ListItem {
   
-  @scala.inline
-  def apply(children: js.Array[BlockContent]): ListItem = {
+  inline def apply(children: js.Array[BlockContent]): ListItem = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("listItem")
     __obj.asInstanceOf[ListItem]
   }
   
-  @scala.inline
-  implicit class ListItemMutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
+  extension [Self <: ListItem](x: Self) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    @scala.inline
-    def setChildren(value: js.Array[BlockContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[BlockContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: BlockContent*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: BlockContent*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
+    inline def setSpread(value: Boolean): Self = StObject.set(x, "spread", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
+    inline def setSpreadUndefined: Self = StObject.set(x, "spread", js.undefined)
     
-    @scala.inline
-    def setType(value: listItem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: listItem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -67,7 +67,7 @@ trait GroupObject extends StObject {
   
   var Enabled: Boolean = js.native
   
-  @JSName("Excel.GroupObject_typekey")
+  /* private */ @JSName("Excel.GroupObject_typekey")
   var ExcelDotGroupObject_typekey: GroupObject = js.native
   
   val Font: typings.activexExcel.Excel.Font = js.native

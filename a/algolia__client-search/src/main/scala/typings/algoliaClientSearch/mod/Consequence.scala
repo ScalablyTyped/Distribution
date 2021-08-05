@@ -36,49 +36,35 @@ trait Consequence extends StObject {
 }
 object Consequence {
   
-  @scala.inline
-  def apply(): Consequence = {
+  inline def apply(): Consequence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Consequence]
   }
   
-  @scala.inline
-  implicit class ConsequenceMutableBuilder[Self <: Consequence] (val x: Self) extends AnyVal {
+  extension [Self <: Consequence](x: Self) {
     
-    @scala.inline
-    def setFilterPromotes(value: Boolean): Self = StObject.set(x, "filterPromotes", value.asInstanceOf[js.Any])
+    inline def setFilterPromotes(value: Boolean): Self = StObject.set(x, "filterPromotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPromotesUndefined: Self = StObject.set(x, "filterPromotes", js.undefined)
+    inline def setFilterPromotesUndefined: Self = StObject.set(x, "filterPromotes", js.undefined)
     
-    @scala.inline
-    def setHide(value: js.Array[ObjectID]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: js.Array[ObjectID]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setHideVarargs(value: ObjectID*): Self = StObject.set(x, "hide", js.Array(value :_*))
+    inline def setHideVarargs(value: ObjectID*): Self = StObject.set(x, "hide", js.Array(value :_*))
     
-    @scala.inline
-    def setParams(value: ConsequenceParamsPickSear): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: ConsequenceParamsPickSear): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setPromote(value: js.Array[ConsequencePromote]): Self = StObject.set(x, "promote", value.asInstanceOf[js.Any])
+    inline def setPromote(value: js.Array[ConsequencePromote]): Self = StObject.set(x, "promote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromoteUndefined: Self = StObject.set(x, "promote", js.undefined)
+    inline def setPromoteUndefined: Self = StObject.set(x, "promote", js.undefined)
     
-    @scala.inline
-    def setPromoteVarargs(value: ConsequencePromote*): Self = StObject.set(x, "promote", js.Array(value :_*))
+    inline def setPromoteVarargs(value: ConsequencePromote*): Self = StObject.set(x, "promote", js.Array(value :_*))
     
-    @scala.inline
-    def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: js.Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+    inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
   }
 }

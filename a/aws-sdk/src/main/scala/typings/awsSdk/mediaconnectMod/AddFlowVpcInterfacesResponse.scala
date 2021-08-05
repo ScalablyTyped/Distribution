@@ -18,28 +18,21 @@ trait AddFlowVpcInterfacesResponse extends StObject {
 }
 object AddFlowVpcInterfacesResponse {
   
-  @scala.inline
-  def apply(): AddFlowVpcInterfacesResponse = {
+  inline def apply(): AddFlowVpcInterfacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddFlowVpcInterfacesResponse]
   }
   
-  @scala.inline
-  implicit class AddFlowVpcInterfacesResponseMutableBuilder[Self <: AddFlowVpcInterfacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddFlowVpcInterfacesResponse](x: Self) {
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
+    inline def setFlowArnUndefined: Self = StObject.set(x, "FlowArn", js.undefined)
     
-    @scala.inline
-    def setVpcInterfaces(value: listOfVpcInterface): Self = StObject.set(x, "VpcInterfaces", value.asInstanceOf[js.Any])
+    inline def setVpcInterfaces(value: listOfVpcInterface): Self = StObject.set(x, "VpcInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcInterfacesUndefined: Self = StObject.set(x, "VpcInterfaces", js.undefined)
+    inline def setVpcInterfacesUndefined: Self = StObject.set(x, "VpcInterfaces", js.undefined)
     
-    @scala.inline
-    def setVpcInterfacesVarargs(value: VpcInterface*): Self = StObject.set(x, "VpcInterfaces", js.Array(value :_*))
+    inline def setVpcInterfacesVarargs(value: VpcInterface*): Self = StObject.set(x, "VpcInterfaces", js.Array(value :_*))
   }
 }

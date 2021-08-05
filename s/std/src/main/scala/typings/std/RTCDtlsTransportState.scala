@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCDtlsTransportState extends StObject
 object RTCDtlsTransportState {
   
-  @scala.inline
-  def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
+  inline def closed: typings.std.stdStrings.closed = "closed".asInstanceOf[typings.std.stdStrings.closed]
   
-  @scala.inline
-  def connected: typings.std.stdStrings.connected = "connected".asInstanceOf[typings.std.stdStrings.connected]
+  inline def connected: typings.std.stdStrings.connected = "connected".asInstanceOf[typings.std.stdStrings.connected]
   
-  @scala.inline
-  def connecting: typings.std.stdStrings.connecting = "connecting".asInstanceOf[typings.std.stdStrings.connecting]
+  inline def connecting: typings.std.stdStrings.connecting = "connecting".asInstanceOf[typings.std.stdStrings.connecting]
   
-  @scala.inline
-  def failed: typings.std.stdStrings.failed = "failed".asInstanceOf[typings.std.stdStrings.failed]
+  inline def failed: typings.std.stdStrings.failed = "failed".asInstanceOf[typings.std.stdStrings.failed]
   
-  @scala.inline
-  def `new`: typings.std.stdStrings.`new` = "new".asInstanceOf[typings.std.stdStrings.`new`]
+  inline def `new`: typings.std.stdStrings.`new` = "new".asInstanceOf[typings.std.stdStrings.`new`]
 }

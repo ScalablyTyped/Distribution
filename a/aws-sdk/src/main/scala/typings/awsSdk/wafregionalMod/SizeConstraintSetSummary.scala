@@ -18,19 +18,15 @@ trait SizeConstraintSetSummary extends StObject {
 }
 object SizeConstraintSetSummary {
   
-  @scala.inline
-  def apply(Name: ResourceName, SizeConstraintSetId: ResourceId): SizeConstraintSetSummary = {
+  inline def apply(Name: ResourceName, SizeConstraintSetId: ResourceId): SizeConstraintSetSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SizeConstraintSetId = SizeConstraintSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeConstraintSetSummary]
   }
   
-  @scala.inline
-  implicit class SizeConstraintSetSummaryMutableBuilder[Self <: SizeConstraintSetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SizeConstraintSetSummary](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
+    inline def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait BingMapsApiType extends StObject {
 }
 object BingMapsApiType {
   
-  @scala.inline
-  def apply(defaultKey: String, getKey: String => String): BingMapsApiType = {
+  inline def apply(defaultKey: String, getKey: String => String): BingMapsApiType = {
     val __obj = js.Dynamic.literal(defaultKey = defaultKey.asInstanceOf[js.Any], getKey = js.Any.fromFunction1(getKey))
     __obj.asInstanceOf[BingMapsApiType]
   }
   
-  @scala.inline
-  implicit class BingMapsApiTypeMutableBuilder[Self <: BingMapsApiType] (val x: Self) extends AnyVal {
+  extension [Self <: BingMapsApiType](x: Self) {
     
-    @scala.inline
-    def setDefaultKey(value: String): Self = StObject.set(x, "defaultKey", value.asInstanceOf[js.Any])
+    inline def setDefaultKey(value: String): Self = StObject.set(x, "defaultKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKey(value: String => String): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+    inline def setGetKey(value: String => String): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
   }
 }

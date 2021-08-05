@@ -74,21 +74,16 @@ object wafv2RegexPatternSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RegexPatternSetState): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RegexPatternSetState, opts: CustomResourceOptions): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
+    inline def get(name: String, id: Input[ID]): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
+    inline def get(name: String, id: Input[ID], state: RegexPatternSetState): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
+    inline def get(name: String, id: Input[ID], state: RegexPatternSetState, opts: CustomResourceOptions): RegexPatternSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RegexPatternSet]
     
     /**
       * Returns true if the given object is an instance of RegexPatternSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/regexPatternSet.RegexPatternSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/regexPatternSet.RegexPatternSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/wafv2/regexPatternSet.RegexPatternSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/wafv2/regexPatternSet.RegexPatternSet */ Boolean]
   }
   
   trait RegexPatternSetArgs extends StObject {
@@ -124,48 +119,36 @@ object wafv2RegexPatternSetMod {
   }
   object RegexPatternSetArgs {
     
-    @scala.inline
-    def apply(scope: Input[String]): RegexPatternSetArgs = {
+    inline def apply(scope: Input[String]): RegexPatternSetArgs = {
       val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegexPatternSetArgs]
     }
     
-    @scala.inline
-    implicit class RegexPatternSetArgsMutableBuilder[Self <: RegexPatternSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RegexPatternSetArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRegularExpressions(
+      inline def setRegularExpressions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.wafv2.RegexPatternSetRegularExpression]]
             ]
       ): Self = StObject.set(x, "regularExpressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegularExpressionsUndefined: Self = StObject.set(x, "regularExpressions", js.undefined)
+      inline def setRegularExpressionsUndefined: Self = StObject.set(x, "regularExpressions", js.undefined)
       
-      @scala.inline
-      def setRegularExpressionsVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.RegexPatternSetRegularExpression]*): Self = StObject.set(x, "regularExpressions", js.Array(value :_*))
+      inline def setRegularExpressionsVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.RegexPatternSetRegularExpression]*): Self = StObject.set(x, "regularExpressions", js.Array(value :_*))
       
-      @scala.inline
-      def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -209,63 +192,46 @@ object wafv2RegexPatternSetMod {
   }
   object RegexPatternSetState {
     
-    @scala.inline
-    def apply(): RegexPatternSetState = {
+    inline def apply(): RegexPatternSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegexPatternSetState]
     }
     
-    @scala.inline
-    implicit class RegexPatternSetStateMutableBuilder[Self <: RegexPatternSetState] (val x: Self) extends AnyVal {
+    extension [Self <: RegexPatternSetState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLockToken(value: Input[String]): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
+      inline def setLockToken(value: Input[String]): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockTokenUndefined: Self = StObject.set(x, "lockToken", js.undefined)
+      inline def setLockTokenUndefined: Self = StObject.set(x, "lockToken", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRegularExpressions(
+      inline def setRegularExpressions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.wafv2.RegexPatternSetRegularExpression]]
             ]
       ): Self = StObject.set(x, "regularExpressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegularExpressionsUndefined: Self = StObject.set(x, "regularExpressions", js.undefined)
+      inline def setRegularExpressionsUndefined: Self = StObject.set(x, "regularExpressions", js.undefined)
       
-      @scala.inline
-      def setRegularExpressionsVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.RegexPatternSetRegularExpression]*): Self = StObject.set(x, "regularExpressions", js.Array(value :_*))
+      inline def setRegularExpressionsVarargs(value: Input[typings.pulumiAws.inputMod.wafv2.RegexPatternSetRegularExpression]*): Self = StObject.set(x, "regularExpressions", js.Array(value :_*))
       
-      @scala.inline
-      def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Input[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

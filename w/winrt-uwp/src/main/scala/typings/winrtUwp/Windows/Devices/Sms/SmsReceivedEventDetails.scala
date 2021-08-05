@@ -21,8 +21,7 @@ trait SmsReceivedEventDetails extends StObject {
 }
 object SmsReceivedEventDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     binaryMessage: SmsBinaryMessage,
     deviceId: String,
     messageClass: SmsMessageClass,
@@ -32,19 +31,14 @@ object SmsReceivedEventDetails {
     __obj.asInstanceOf[SmsReceivedEventDetails]
   }
   
-  @scala.inline
-  implicit class SmsReceivedEventDetailsMutableBuilder[Self <: SmsReceivedEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SmsReceivedEventDetails](x: Self) {
     
-    @scala.inline
-    def setBinaryMessage(value: SmsBinaryMessage): Self = StObject.set(x, "binaryMessage", value.asInstanceOf[js.Any])
+    inline def setBinaryMessage(value: SmsBinaryMessage): Self = StObject.set(x, "binaryMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
+    inline def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIndex(value: Double): Self = StObject.set(x, "messageIndex", value.asInstanceOf[js.Any])
+    inline def setMessageIndex(value: Double): Self = StObject.set(x, "messageIndex", value.asInstanceOf[js.Any])
   }
 }

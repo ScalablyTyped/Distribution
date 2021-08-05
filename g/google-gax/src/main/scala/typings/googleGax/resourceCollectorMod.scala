@@ -21,7 +21,7 @@ object resourceCollectorMod {
     @JSName("apiCall")
     var apiCall_Original: SimpleCallbackFunction = js.native
     
-    var callback: js.Any = js.native
+    /* private */ var callback: js.Any = js.native
     
     var maxResults: Double = js.native
     

@@ -38,46 +38,33 @@ trait ListAttributesRequest extends StObject {
 }
 object ListAttributesRequest {
   
-  @scala.inline
-  def apply(targetType: TargetType): ListAttributesRequest = {
+  inline def apply(targetType: TargetType): ListAttributesRequest = {
     val __obj = js.Dynamic.literal(targetType = targetType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAttributesRequest]
   }
   
-  @scala.inline
-  implicit class ListAttributesRequestMutableBuilder[Self <: ListAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
-    @scala.inline
-    def setAttributeValue(value: String): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: String): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValueUndefined: Self = StObject.set(x, "attributeValue", js.undefined)
+    inline def setAttributeValueUndefined: Self = StObject.set(x, "attributeValue", js.undefined)
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: TargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: TargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
   }
 }

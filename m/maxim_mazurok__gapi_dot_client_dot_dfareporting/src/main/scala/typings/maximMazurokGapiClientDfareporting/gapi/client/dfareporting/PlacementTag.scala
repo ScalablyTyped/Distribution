@@ -14,28 +14,21 @@ trait PlacementTag extends StObject {
 }
 object PlacementTag {
   
-  @scala.inline
-  def apply(): PlacementTag = {
+  inline def apply(): PlacementTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementTag]
   }
   
-  @scala.inline
-  implicit class PlacementTagMutableBuilder[Self <: PlacementTag] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementTag](x: Self) {
     
-    @scala.inline
-    def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
+    inline def setPlacementId(value: String): Self = StObject.set(x, "placementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
+    inline def setPlacementIdUndefined: Self = StObject.set(x, "placementId", js.undefined)
     
-    @scala.inline
-    def setTagDatas(value: js.Array[TagData]): Self = StObject.set(x, "tagDatas", value.asInstanceOf[js.Any])
+    inline def setTagDatas(value: js.Array[TagData]): Self = StObject.set(x, "tagDatas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagDatasUndefined: Self = StObject.set(x, "tagDatas", js.undefined)
+    inline def setTagDatasUndefined: Self = StObject.set(x, "tagDatas", js.undefined)
     
-    @scala.inline
-    def setTagDatasVarargs(value: TagData*): Self = StObject.set(x, "tagDatas", js.Array(value :_*))
+    inline def setTagDatasVarargs(value: TagData*): Self = StObject.set(x, "tagDatas", js.Array(value :_*))
   }
 }

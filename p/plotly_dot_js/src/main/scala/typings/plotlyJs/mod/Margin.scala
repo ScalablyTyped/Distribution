@@ -18,28 +18,21 @@ trait Margin extends StObject {
 }
 object Margin {
   
-  @scala.inline
-  def apply(b: Double, l: Double, pad: Double, r: Double, t: Double): Margin = {
+  inline def apply(b: Double, l: Double, pad: Double, r: Double, t: Double): Margin = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], pad = pad.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[Margin]
   }
   
-  @scala.inline
-  implicit class MarginMutableBuilder[Self <: Margin] (val x: Self) extends AnyVal {
+  extension [Self <: Margin](x: Self) {
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

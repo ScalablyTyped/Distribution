@@ -33,8 +33,7 @@ trait XUIElementFactory
 }
 object XUIElementFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createUIElement: (String, SeqEquiv[PropertyValue]) => XUIElement,
     queryInterface: `type` => js.Any,
@@ -44,10 +43,8 @@ object XUIElementFactory {
     __obj.asInstanceOf[XUIElementFactory]
   }
   
-  @scala.inline
-  implicit class XUIElementFactoryMutableBuilder[Self <: XUIElementFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XUIElementFactory](x: Self) {
     
-    @scala.inline
-    def setCreateUIElement(value: (String, SeqEquiv[PropertyValue]) => XUIElement): Self = StObject.set(x, "createUIElement", js.Any.fromFunction2(value))
+    inline def setCreateUIElement(value: (String, SeqEquiv[PropertyValue]) => XUIElement): Self = StObject.set(x, "createUIElement", js.Any.fromFunction2(value))
   }
 }

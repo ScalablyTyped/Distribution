@@ -37,38 +37,28 @@ trait ParserDecoratorCustomizationDefinition
 }
 object ParserDecoratorCustomizationDefinition {
   
-  @scala.inline
-  def apply(expression: String, priority: Double): ParserDecoratorCustomizationDefinition = {
+  inline def apply(expression: String, priority: Double): ParserDecoratorCustomizationDefinition = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ParserDecorator")
     __obj.asInstanceOf[ParserDecoratorCustomizationDefinition]
   }
   
-  @scala.inline
-  implicit class ParserDecoratorCustomizationDefinitionMutableBuilder[Self <: ParserDecoratorCustomizationDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ParserDecoratorCustomizationDefinition](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: ConfigurationDefinition): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ConfigurationDefinition): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    inline def setImports(value: js.Array[Import]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
-    @scala.inline
-    def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    inline def setImportsVarargs(value: Import*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ParserDecorator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ParserDecorator): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

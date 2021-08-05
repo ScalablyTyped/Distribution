@@ -24,25 +24,19 @@ trait GetEncodedResponseResponse extends StObject {
 }
 object GetEncodedResponseResponse {
   
-  @scala.inline
-  def apply(encodedSize: integer, originalSize: integer): GetEncodedResponseResponse = {
+  inline def apply(encodedSize: integer, originalSize: integer): GetEncodedResponseResponse = {
     val __obj = js.Dynamic.literal(encodedSize = encodedSize.asInstanceOf[js.Any], originalSize = originalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEncodedResponseResponse]
   }
   
-  @scala.inline
-  implicit class GetEncodedResponseResponseMutableBuilder[Self <: GetEncodedResponseResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEncodedResponseResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setEncodedSize(value: integer): Self = StObject.set(x, "encodedSize", value.asInstanceOf[js.Any])
+    inline def setEncodedSize(value: integer): Self = StObject.set(x, "encodedSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalSize(value: integer): Self = StObject.set(x, "originalSize", value.asInstanceOf[js.Any])
+    inline def setOriginalSize(value: integer): Self = StObject.set(x, "originalSize", value.asInstanceOf[js.Any])
   }
 }

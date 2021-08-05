@@ -116,8 +116,7 @@ object mod {
       * @param b - any "Point like" object with {x,y}
       * @return the resulting Point object.
       */
-    @scala.inline
-    def add(a: XY, b: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def add(a: XY, b: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
     
     /**
       * Compare two points component-wise. Ordered by y axis first, then x axis.
@@ -125,15 +124,11 @@ object mod {
       * @param b - point object with {x,y}
       * @return `< 0` if `a < b` ; `> 0` if `a > b` ; `0` otherwise.
       */
-    @scala.inline
-    def compare(a: XY, b: XY): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def compare(a: XY, b: XY): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def cross(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def cross(a: Double, b: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
-    @scala.inline
-    def cross(a: XY, b: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def cross(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def cross(a: Double, b: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def cross(a: XY, b: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
     /**
       * Perform the cross product on either two points (result is a scalar)
       * or a point and a scalar (result is a point).
@@ -143,8 +138,7 @@ object mod {
       * @param  b - Point object or scalar.
       * @return a Point object or a number, depending on the parameters.
       */
-    @scala.inline
-    def cross(a: XY, b: XY): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def cross(a: XY, b: XY): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Peform the dot product on two vectors.
@@ -152,8 +146,7 @@ object mod {
       * @param b - any "Point like" object with {x,y}
       * @return the dot product
       */
-    @scala.inline
-    def dot(a: XY, b: XY): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def dot(a: XY, b: XY): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Test two Point objects for equality.
@@ -161,8 +154,7 @@ object mod {
       * @param b - point object with {x,y}
       * @return `true` if `a == b`, `false` otherwise.
       */
-    @scala.inline
-    def equals(a: XY, b: XY): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equals(a: XY, b: XY): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Multiply a point by a scalar and return the result as a new Point object.
@@ -170,16 +162,14 @@ object mod {
       * @param p - any "Point like" object with {x,y}
       * @return the resulting Point object.
       */
-    @scala.inline
-    def mul(s: Double, p: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(s.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def mul(s: Double, p: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(s.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Point]
     
     /**
       * Negate a point component-wise and return the result as a new Point object.
       * @param p - any "Point like" object with {x,y}
       * @return the resulting Point object.
       */
-    @scala.inline
-    def negate(p: XY): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("negate")(p.asInstanceOf[js.Any]).asInstanceOf[Point]
+    inline def negate(p: XY): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("negate")(p.asInstanceOf[js.Any]).asInstanceOf[Point]
     
     /**
       * Subtract two points component-wise and return the result as a new Point object.
@@ -187,8 +177,7 @@ object mod {
       * @param b - any "Point like" object with {x,y}
       * @return the resulting Point object.
       */
-    @scala.inline
-    def sub(a: XY, b: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
+    inline def sub(a: XY, b: XY): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Point]
     
     /**
       * Point pretty printing. Delegates to the point's custom "toString()" method if exists,
@@ -202,8 +191,7 @@ object mod {
       * @param p - point object with {x,y}
       * @returns `"(x;y)"`
       */
-    @scala.inline
-    def toString(p: XY): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toString(p: XY): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(p.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("poly2tri", "PointError")
@@ -423,20 +411,16 @@ object mod {
   }
   object IPointLike {
     
-    @scala.inline
-    def apply(x: Double, y: Double): IPointLike = {
+    inline def apply(x: Double, y: Double): IPointLike = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPointLike]
     }
     
-    @scala.inline
-    implicit class IPointLikeMutableBuilder[Self <: IPointLike] (val x: Self) extends AnyVal {
+    extension [Self <: IPointLike](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -451,20 +435,16 @@ object mod {
   }
   object SweepContextOptions {
     
-    @scala.inline
-    def apply(): SweepContextOptions = {
+    inline def apply(): SweepContextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SweepContextOptions]
     }
     
-    @scala.inline
-    implicit class SweepContextOptionsMutableBuilder[Self <: SweepContextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SweepContextOptions](x: Self) {
       
-      @scala.inline
-      def setCloneArrays(value: Boolean): Self = StObject.set(x, "cloneArrays", value.asInstanceOf[js.Any])
+      inline def setCloneArrays(value: Boolean): Self = StObject.set(x, "cloneArrays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneArraysUndefined: Self = StObject.set(x, "cloneArrays", js.undefined)
+      inline def setCloneArraysUndefined: Self = StObject.set(x, "cloneArrays", js.undefined)
     }
   }
   

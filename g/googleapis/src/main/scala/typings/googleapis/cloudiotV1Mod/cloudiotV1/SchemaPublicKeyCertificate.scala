@@ -26,31 +26,23 @@ trait SchemaPublicKeyCertificate extends StObject {
 }
 object SchemaPublicKeyCertificate {
   
-  @scala.inline
-  def apply(): SchemaPublicKeyCertificate = {
+  inline def apply(): SchemaPublicKeyCertificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPublicKeyCertificate]
   }
   
-  @scala.inline
-  implicit class SchemaPublicKeyCertificateMutableBuilder[Self <: SchemaPublicKeyCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPublicKeyCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setX509Details(value: SchemaX509CertificateDetails): Self = StObject.set(x, "x509Details", value.asInstanceOf[js.Any])
+    inline def setX509Details(value: SchemaX509CertificateDetails): Self = StObject.set(x, "x509Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX509DetailsUndefined: Self = StObject.set(x, "x509Details", js.undefined)
+    inline def setX509DetailsUndefined: Self = StObject.set(x, "x509Details", js.undefined)
   }
 }

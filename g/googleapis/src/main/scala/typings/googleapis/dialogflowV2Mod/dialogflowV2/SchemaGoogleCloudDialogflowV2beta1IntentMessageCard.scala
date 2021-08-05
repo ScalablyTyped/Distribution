@@ -31,40 +31,29 @@ trait SchemaGoogleCloudDialogflowV2beta1IntentMessageCard extends StObject {
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageCard {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageCard = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1IntentMessageCard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1IntentMessageCard]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1IntentMessageCardMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageCard] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1IntentMessageCard](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

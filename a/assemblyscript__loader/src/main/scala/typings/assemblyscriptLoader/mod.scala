@@ -30,45 +30,27 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def demangle[T /* <: js.Object */](exports: js.Object): T = ^.asInstanceOf[js.Dynamic].applyDynamic("demangle")(exports.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def demangle[T /* <: js.Object */](exports: js.Object, baseModule: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("demangle")(exports.asInstanceOf[js.Any], baseModule.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def demangle[T /* <: js.Object */](exports: js.Object): T = ^.asInstanceOf[js.Dynamic].applyDynamic("demangle")(exports.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def demangle[T /* <: js.Object */](exports: js.Object, baseModule: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("demangle")(exports.asInstanceOf[js.Any], baseModule.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def instantiate[T /* <: js.Object */](source: js.Thenable[Module | BufferSource | Response]): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiate[T /* <: js.Object */](source: js.Thenable[Module | BufferSource | Response], imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiate[T /* <: js.Object */](source: BufferSource): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiate[T /* <: js.Object */](source: BufferSource, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiate[T /* <: js.Object */](source: Response): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiate[T /* <: js.Object */](source: Response, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiate[T /* <: js.Object */](source: Module): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiate[T /* <: js.Object */](source: Module, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiate[T /* <: js.Object */](source: js.Thenable[Module | BufferSource | Response]): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiate[T /* <: js.Object */](source: js.Thenable[Module | BufferSource | Response], imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiate[T /* <: js.Object */](source: BufferSource): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiate[T /* <: js.Object */](source: BufferSource, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiate[T /* <: js.Object */](source: Response): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiate[T /* <: js.Object */](source: Response, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiate[T /* <: js.Object */](source: Module): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiate[T /* <: js.Object */](source: Module, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiate")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
   
-  @scala.inline
-  def instantiateStreaming[T /* <: js.Object */](source: js.Thenable[Response]): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiateStreaming[T /* <: js.Object */](source: js.Thenable[Response], imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiateStreaming[T /* <: js.Object */](source: Response): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
-  @scala.inline
-  def instantiateStreaming[T /* <: js.Object */](source: Response, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiateStreaming[T /* <: js.Object */](source: js.Thenable[Response]): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiateStreaming[T /* <: js.Object */](source: js.Thenable[Response], imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiateStreaming[T /* <: js.Object */](source: Response): js.Promise[ASUtil & T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ASUtil & T]]
+  inline def instantiateStreaming[T /* <: js.Object */](source: Response, imports: ImportsObject): js.Promise[ASUtil & T] = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateStreaming")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ASUtil & T]]
   
-  @scala.inline
-  def instantiateSync[T /* <: js.Object */](source: BufferSource): ASUtil & T = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any]).asInstanceOf[ASUtil & T]
-  @scala.inline
-  def instantiateSync[T /* <: js.Object */](source: BufferSource, imports: ImportsObject): ASUtil & T = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[ASUtil & T]
-  @scala.inline
-  def instantiateSync[T /* <: js.Object */](source: Module): ASUtil & T = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any]).asInstanceOf[ASUtil & T]
-  @scala.inline
-  def instantiateSync[T /* <: js.Object */](source: Module, imports: ImportsObject): ASUtil & T = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[ASUtil & T]
+  inline def instantiateSync[T /* <: js.Object */](source: BufferSource): ASUtil & T = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any]).asInstanceOf[ASUtil & T]
+  inline def instantiateSync[T /* <: js.Object */](source: BufferSource, imports: ImportsObject): ASUtil & T = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[ASUtil & T]
+  inline def instantiateSync[T /* <: js.Object */](source: Module): ASUtil & T = ^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any]).asInstanceOf[ASUtil & T]
+  inline def instantiateSync[T /* <: js.Object */](source: Module, imports: ImportsObject): ASUtil & T = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateSync")(source.asInstanceOf[js.Any], imports.asInstanceOf[js.Any])).asInstanceOf[ASUtil & T]
   
   /** Utility mixed in by the loader. */
   trait ASUtil extends StObject {
@@ -184,8 +166,7 @@ object mod {
   }
   object ASUtil {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       __alloc: (Double, Double) => Double,
       __allocArray: (Double, ArrayLike[Double]) => Double,
       __allocString: String => Double,
@@ -221,140 +202,95 @@ object mod {
       __obj.asInstanceOf[ASUtil]
     }
     
-    @scala.inline
-    implicit class ASUtilMutableBuilder[Self <: ASUtil] (val x: Self) extends AnyVal {
+    extension [Self <: ASUtil](x: Self) {
       
-      @scala.inline
-      def setMemory(value: Memory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Memory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
       
-      @scala.inline
-      def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      @scala.inline
-      def set__alloc(value: (Double, Double) => Double): Self = StObject.set(x, "__alloc", js.Any.fromFunction2(value))
+      inline def set__alloc(value: (Double, Double) => Double): Self = StObject.set(x, "__alloc", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set__allocArray(value: (Double, ArrayLike[Double]) => Double): Self = StObject.set(x, "__allocArray", js.Any.fromFunction2(value))
+      inline def set__allocArray(value: (Double, ArrayLike[Double]) => Double): Self = StObject.set(x, "__allocArray", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set__allocString(value: String => Double): Self = StObject.set(x, "__allocString", js.Any.fromFunction1(value))
+      inline def set__allocString(value: String => Double): Self = StObject.set(x, "__allocString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__collect(value: () => Unit): Self = StObject.set(x, "__collect", js.Any.fromFunction0(value))
+      inline def set__collect(value: () => Unit): Self = StObject.set(x, "__collect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set__getArray(value: Double => js.Array[Double]): Self = StObject.set(x, "__getArray", js.Any.fromFunction1(value))
+      inline def set__getArray(value: Double => js.Array[Double]): Self = StObject.set(x, "__getArray", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getArrayBuffer(value: Double => ArrayBuffer): Self = StObject.set(x, "__getArrayBuffer", js.Any.fromFunction1(value))
+      inline def set__getArrayBuffer(value: Double => ArrayBuffer): Self = StObject.set(x, "__getArrayBuffer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getArrayView(value: Double => ArrayBufferView): Self = StObject.set(x, "__getArrayView", js.Any.fromFunction1(value))
+      inline def set__getArrayView(value: Double => ArrayBufferView): Self = StObject.set(x, "__getArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getFloat32Array(value: Double => Float32Array): Self = StObject.set(x, "__getFloat32Array", js.Any.fromFunction1(value))
+      inline def set__getFloat32Array(value: Double => Float32Array): Self = StObject.set(x, "__getFloat32Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getFloat32ArrayView(value: Double => Float32Array): Self = StObject.set(x, "__getFloat32ArrayView", js.Any.fromFunction1(value))
+      inline def set__getFloat32ArrayView(value: Double => Float32Array): Self = StObject.set(x, "__getFloat32ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getFloat64Array(value: Double => Float64Array): Self = StObject.set(x, "__getFloat64Array", js.Any.fromFunction1(value))
+      inline def set__getFloat64Array(value: Double => Float64Array): Self = StObject.set(x, "__getFloat64Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getFloat64ArrayView(value: Double => Float64Array): Self = StObject.set(x, "__getFloat64ArrayView", js.Any.fromFunction1(value))
+      inline def set__getFloat64ArrayView(value: Double => Float64Array): Self = StObject.set(x, "__getFloat64ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getInt16Array(value: Double => Int16Array): Self = StObject.set(x, "__getInt16Array", js.Any.fromFunction1(value))
+      inline def set__getInt16Array(value: Double => Int16Array): Self = StObject.set(x, "__getInt16Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getInt16ArrayView(value: Double => Int16Array): Self = StObject.set(x, "__getInt16ArrayView", js.Any.fromFunction1(value))
+      inline def set__getInt16ArrayView(value: Double => Int16Array): Self = StObject.set(x, "__getInt16ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getInt32Array(value: Double => Int32Array): Self = StObject.set(x, "__getInt32Array", js.Any.fromFunction1(value))
+      inline def set__getInt32Array(value: Double => Int32Array): Self = StObject.set(x, "__getInt32Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getInt32ArrayView(value: Double => Int32Array): Self = StObject.set(x, "__getInt32ArrayView", js.Any.fromFunction1(value))
+      inline def set__getInt32ArrayView(value: Double => Int32Array): Self = StObject.set(x, "__getInt32ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getInt64Array(value: /* ptr */ Double => BigInt64Array): Self = StObject.set(x, "__getInt64Array", js.Any.fromFunction1(value))
+      inline def set__getInt64Array(value: /* ptr */ Double => BigInt64Array): Self = StObject.set(x, "__getInt64Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getInt64ArrayUndefined: Self = StObject.set(x, "__getInt64Array", js.undefined)
+      inline def set__getInt64ArrayUndefined: Self = StObject.set(x, "__getInt64Array", js.undefined)
       
-      @scala.inline
-      def set__getInt64ArrayView(value: /* ptr */ Double => BigInt64Array): Self = StObject.set(x, "__getInt64ArrayView", js.Any.fromFunction1(value))
+      inline def set__getInt64ArrayView(value: /* ptr */ Double => BigInt64Array): Self = StObject.set(x, "__getInt64ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getInt64ArrayViewUndefined: Self = StObject.set(x, "__getInt64ArrayView", js.undefined)
+      inline def set__getInt64ArrayViewUndefined: Self = StObject.set(x, "__getInt64ArrayView", js.undefined)
       
-      @scala.inline
-      def set__getInt8Array(value: Double => Int8Array): Self = StObject.set(x, "__getInt8Array", js.Any.fromFunction1(value))
+      inline def set__getInt8Array(value: Double => Int8Array): Self = StObject.set(x, "__getInt8Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getInt8ArrayView(value: Double => Int8Array): Self = StObject.set(x, "__getInt8ArrayView", js.Any.fromFunction1(value))
+      inline def set__getInt8ArrayView(value: Double => Int8Array): Self = StObject.set(x, "__getInt8ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getString(value: Double => String): Self = StObject.set(x, "__getString", js.Any.fromFunction1(value))
+      inline def set__getString(value: Double => String): Self = StObject.set(x, "__getString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint16Array(value: Double => Uint16Array): Self = StObject.set(x, "__getUint16Array", js.Any.fromFunction1(value))
+      inline def set__getUint16Array(value: Double => Uint16Array): Self = StObject.set(x, "__getUint16Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint16ArrayView(value: Double => Uint16Array): Self = StObject.set(x, "__getUint16ArrayView", js.Any.fromFunction1(value))
+      inline def set__getUint16ArrayView(value: Double => Uint16Array): Self = StObject.set(x, "__getUint16ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint32Array(value: Double => Uint32Array): Self = StObject.set(x, "__getUint32Array", js.Any.fromFunction1(value))
+      inline def set__getUint32Array(value: Double => Uint32Array): Self = StObject.set(x, "__getUint32Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint32ArrayView(value: Double => Uint32Array): Self = StObject.set(x, "__getUint32ArrayView", js.Any.fromFunction1(value))
+      inline def set__getUint32ArrayView(value: Double => Uint32Array): Self = StObject.set(x, "__getUint32ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint64Array(value: /* ptr */ Double => BigUint64Array): Self = StObject.set(x, "__getUint64Array", js.Any.fromFunction1(value))
+      inline def set__getUint64Array(value: /* ptr */ Double => BigUint64Array): Self = StObject.set(x, "__getUint64Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint64ArrayUndefined: Self = StObject.set(x, "__getUint64Array", js.undefined)
+      inline def set__getUint64ArrayUndefined: Self = StObject.set(x, "__getUint64Array", js.undefined)
       
-      @scala.inline
-      def set__getUint64ArrayView(value: /* ptr */ Double => BigUint64Array): Self = StObject.set(x, "__getUint64ArrayView", js.Any.fromFunction1(value))
+      inline def set__getUint64ArrayView(value: /* ptr */ Double => BigUint64Array): Self = StObject.set(x, "__getUint64ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint64ArrayViewUndefined: Self = StObject.set(x, "__getUint64ArrayView", js.undefined)
+      inline def set__getUint64ArrayViewUndefined: Self = StObject.set(x, "__getUint64ArrayView", js.undefined)
       
-      @scala.inline
-      def set__getUint8Array(value: Double => Uint8Array): Self = StObject.set(x, "__getUint8Array", js.Any.fromFunction1(value))
+      inline def set__getUint8Array(value: Double => Uint8Array): Self = StObject.set(x, "__getUint8Array", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint8ArrayView(value: Double => Uint8Array): Self = StObject.set(x, "__getUint8ArrayView", js.Any.fromFunction1(value))
+      inline def set__getUint8ArrayView(value: Double => Uint8Array): Self = StObject.set(x, "__getUint8ArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint8ClampedArray(value: Double => Uint8ClampedArray): Self = StObject.set(x, "__getUint8ClampedArray", js.Any.fromFunction1(value))
+      inline def set__getUint8ClampedArray(value: Double => Uint8ClampedArray): Self = StObject.set(x, "__getUint8ClampedArray", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__getUint8ClampedArrayView(value: Double => Uint8ClampedArray): Self = StObject.set(x, "__getUint8ClampedArrayView", js.Any.fromFunction1(value))
+      inline def set__getUint8ClampedArrayView(value: Double => Uint8ClampedArray): Self = StObject.set(x, "__getUint8ClampedArrayView", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__instanceof(value: (Double, Double) => Boolean): Self = StObject.set(x, "__instanceof", js.Any.fromFunction2(value))
+      inline def set__instanceof(value: (Double, Double) => Boolean): Self = StObject.set(x, "__instanceof", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set__release(value: Double => Unit): Self = StObject.set(x, "__release", js.Any.fromFunction1(value))
+      inline def set__release(value: Double => Unit): Self = StObject.set(x, "__release", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__reset(value: () => Unit): Self = StObject.set(x, "__reset", js.Any.fromFunction0(value))
+      inline def set__reset(value: () => Unit): Self = StObject.set(x, "__reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set__resetUndefined: Self = StObject.set(x, "__reset", js.undefined)
+      inline def set__resetUndefined: Self = StObject.set(x, "__reset", js.undefined)
       
-      @scala.inline
-      def set__retain(value: Double => Double): Self = StObject.set(x, "__retain", js.Any.fromFunction1(value))
+      inline def set__retain(value: Double => Double): Self = StObject.set(x, "__retain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_start(value: () => Unit): Self = StObject.set(x, "_start", js.Any.fromFunction0(value))
+      inline def set_start(value: () => Unit): Self = StObject.set(x, "_start", js.Any.fromFunction0(value))
     }
   }
   
@@ -366,20 +302,16 @@ object mod {
   }
   object ImportsObject {
     
-    @scala.inline
-    def apply(): ImportsObject = {
+    inline def apply(): ImportsObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImportsObject]
     }
     
-    @scala.inline
-    implicit class ImportsObjectMutableBuilder[Self <: ImportsObject] (val x: Self) extends AnyVal {
+    extension [Self <: ImportsObject](x: Self) {
       
-      @scala.inline
-      def setEnv(value: Abort): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: Abort): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     }
   }
 }

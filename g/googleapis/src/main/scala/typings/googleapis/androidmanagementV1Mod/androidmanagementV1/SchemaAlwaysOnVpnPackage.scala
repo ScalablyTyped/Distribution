@@ -21,25 +21,19 @@ trait SchemaAlwaysOnVpnPackage extends StObject {
 }
 object SchemaAlwaysOnVpnPackage {
   
-  @scala.inline
-  def apply(): SchemaAlwaysOnVpnPackage = {
+  inline def apply(): SchemaAlwaysOnVpnPackage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAlwaysOnVpnPackage]
   }
   
-  @scala.inline
-  implicit class SchemaAlwaysOnVpnPackageMutableBuilder[Self <: SchemaAlwaysOnVpnPackage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAlwaysOnVpnPackage](x: Self) {
     
-    @scala.inline
-    def setLockdownEnabled(value: Boolean): Self = StObject.set(x, "lockdownEnabled", value.asInstanceOf[js.Any])
+    inline def setLockdownEnabled(value: Boolean): Self = StObject.set(x, "lockdownEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockdownEnabledUndefined: Self = StObject.set(x, "lockdownEnabled", js.undefined)
+    inline def setLockdownEnabledUndefined: Self = StObject.set(x, "lockdownEnabled", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

@@ -25,29 +25,22 @@ object selectSourceMod {
   }
   object SelectSource {
     
-    @scala.inline
-    def apply(text: String): SelectSource = {
+    inline def apply(text: String): SelectSource = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectSource]
     }
     
-    @scala.inline
-    implicit class SelectSourceMutableBuilder[Self <: SelectSource] (val x: Self) extends AnyVal {
+    extension [Self <: SelectSource](x: Self) {
       
-      @scala.inline
-      def `setData-class`(value: String): Self = StObject.set(x, "data-class", value.asInstanceOf[js.Any])
+      inline def `setData-class`(value: String): Self = StObject.set(x, "data-class", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-classUndefined`: Self = StObject.set(x, "data-class", js.undefined)
+      inline def `setData-classUndefined`: Self = StObject.set(x, "data-class", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

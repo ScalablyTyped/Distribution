@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleFlexBasis extends StObject
 object styleFlexBasis {
   
-  @scala.inline
-  def styleFlexBasisAuto: `0` = 0.asInstanceOf[`0`]
+  inline def styleFlexBasisAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleFlexBasisNotSet: `1` = 1.asInstanceOf[`1`]
+  inline def styleFlexBasisNotSet: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleFlexBasis_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleFlexBasis_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

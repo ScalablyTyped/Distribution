@@ -26,8 +26,7 @@ trait ScimUpdateAttributeForUserEndpoint extends StObject {
 }
 object ScimUpdateAttributeForUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Operations: js.Array[ScimUpdateAttributeForUserParamsOperations],
     org_ : String,
     schemas: js.Array[String],
@@ -38,25 +37,18 @@ object ScimUpdateAttributeForUserEndpoint {
     __obj.asInstanceOf[ScimUpdateAttributeForUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ScimUpdateAttributeForUserEndpointMutableBuilder[Self <: ScimUpdateAttributeForUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ScimUpdateAttributeForUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setOperations(value: js.Array[ScimUpdateAttributeForUserParamsOperations]): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: js.Array[ScimUpdateAttributeForUserParamsOperations]): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsVarargs(value: ScimUpdateAttributeForUserParamsOperations*): Self = StObject.set(x, "Operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: ScimUpdateAttributeForUserParamsOperations*): Self = StObject.set(x, "Operations", js.Array(value :_*))
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
-    @scala.inline
-    def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
+    inline def setScim_user_id(value: String): Self = StObject.set(x, "scim_user_id", value.asInstanceOf[js.Any])
   }
 }

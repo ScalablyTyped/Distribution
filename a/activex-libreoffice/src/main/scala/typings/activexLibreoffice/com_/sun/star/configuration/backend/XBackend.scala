@@ -68,8 +68,7 @@ trait XBackend
 }
 object XBackend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getOwnUpdateHandler: String => XUpdateHandler,
     getUpdateHandler: (String, String) => XUpdateHandler,
@@ -82,19 +81,14 @@ object XBackend {
     __obj.asInstanceOf[XBackend]
   }
   
-  @scala.inline
-  implicit class XBackendMutableBuilder[Self <: XBackend] (val x: Self) extends AnyVal {
+  extension [Self <: XBackend](x: Self) {
     
-    @scala.inline
-    def setGetOwnUpdateHandler(value: String => XUpdateHandler): Self = StObject.set(x, "getOwnUpdateHandler", js.Any.fromFunction1(value))
+    inline def setGetOwnUpdateHandler(value: String => XUpdateHandler): Self = StObject.set(x, "getOwnUpdateHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetUpdateHandler(value: (String, String) => XUpdateHandler): Self = StObject.set(x, "getUpdateHandler", js.Any.fromFunction2(value))
+    inline def setGetUpdateHandler(value: (String, String) => XUpdateHandler): Self = StObject.set(x, "getUpdateHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setListLayers(value: (String, String) => SafeArray[XLayer]): Self = StObject.set(x, "listLayers", js.Any.fromFunction2(value))
+    inline def setListLayers(value: (String, String) => SafeArray[XLayer]): Self = StObject.set(x, "listLayers", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setListOwnLayers(value: String => SafeArray[XLayer]): Self = StObject.set(x, "listOwnLayers", js.Any.fromFunction1(value))
+    inline def setListOwnLayers(value: String => SafeArray[XLayer]): Self = StObject.set(x, "listOwnLayers", js.Any.fromFunction1(value))
   }
 }

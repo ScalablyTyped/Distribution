@@ -12,19 +12,15 @@ trait AgentPoolEvent extends StObject {
 }
 object AgentPoolEvent {
   
-  @scala.inline
-  def apply(eventType: String, pool: TaskAgentPool): AgentPoolEvent = {
+  inline def apply(eventType: String, pool: TaskAgentPool): AgentPoolEvent = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any], pool = pool.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentPoolEvent]
   }
   
-  @scala.inline
-  implicit class AgentPoolEventMutableBuilder[Self <: AgentPoolEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AgentPoolEvent](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPool(value: TaskAgentPool): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: TaskAgentPool): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
   }
 }

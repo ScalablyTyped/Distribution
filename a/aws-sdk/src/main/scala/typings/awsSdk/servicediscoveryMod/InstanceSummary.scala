@@ -18,25 +18,19 @@ trait InstanceSummary extends StObject {
 }
 object InstanceSummary {
   
-  @scala.inline
-  def apply(): InstanceSummary = {
+  inline def apply(): InstanceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceSummary]
   }
   
-  @scala.inline
-  implicit class InstanceSummaryMutableBuilder[Self <: InstanceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceSummary](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

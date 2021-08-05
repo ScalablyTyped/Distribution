@@ -12,10 +12,8 @@ object getSecretRotationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSecretRotation(args: GetSecretRotationArgs): js.Promise[GetSecretRotationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecretRotation")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretRotationResult]]
-  @scala.inline
-  def getSecretRotation(args: GetSecretRotationArgs, opts: InvokeOptions): js.Promise[GetSecretRotationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecretRotation")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretRotationResult]]
+  inline def getSecretRotation(args: GetSecretRotationArgs): js.Promise[GetSecretRotationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecretRotation")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSecretRotationResult]]
+  inline def getSecretRotation(args: GetSecretRotationArgs, opts: InvokeOptions): js.Promise[GetSecretRotationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecretRotation")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSecretRotationResult]]
   
   trait GetSecretRotationArgs extends StObject {
     
@@ -26,17 +24,14 @@ object getSecretRotationMod {
   }
   object GetSecretRotationArgs {
     
-    @scala.inline
-    def apply(secretId: String): GetSecretRotationArgs = {
+    inline def apply(secretId: String): GetSecretRotationArgs = {
       val __obj = js.Dynamic.literal(secretId = secretId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSecretRotationArgs]
     }
     
-    @scala.inline
-    implicit class GetSecretRotationArgsMutableBuilder[Self <: GetSecretRotationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecretRotationArgs](x: Self) {
       
-      @scala.inline
-      def setSecretId(value: String): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
+      inline def setSecretId(value: String): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,8 +61,7 @@ object getSecretRotationMod {
   }
   object GetSecretRotationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       rotationEnabled: Boolean,
       rotationLambdaArn: String,
@@ -78,26 +72,19 @@ object getSecretRotationMod {
       __obj.asInstanceOf[GetSecretRotationResult]
     }
     
-    @scala.inline
-    implicit class GetSecretRotationResultMutableBuilder[Self <: GetSecretRotationResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSecretRotationResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationEnabled(value: Boolean): Self = StObject.set(x, "rotationEnabled", value.asInstanceOf[js.Any])
+      inline def setRotationEnabled(value: Boolean): Self = StObject.set(x, "rotationEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationLambdaArn(value: String): Self = StObject.set(x, "rotationLambdaArn", value.asInstanceOf[js.Any])
+      inline def setRotationLambdaArn(value: String): Self = StObject.set(x, "rotationLambdaArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationRules(value: js.Array[GetSecretRotationRotationRule]): Self = StObject.set(x, "rotationRules", value.asInstanceOf[js.Any])
+      inline def setRotationRules(value: js.Array[GetSecretRotationRotationRule]): Self = StObject.set(x, "rotationRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationRulesVarargs(value: GetSecretRotationRotationRule*): Self = StObject.set(x, "rotationRules", js.Array(value :_*))
+      inline def setRotationRulesVarargs(value: GetSecretRotationRotationRule*): Self = StObject.set(x, "rotationRules", js.Array(value :_*))
       
-      @scala.inline
-      def setSecretId(value: String): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
+      inline def setSecretId(value: String): Self = StObject.set(x, "secretId", value.asInstanceOf[js.Any])
     }
   }
 }

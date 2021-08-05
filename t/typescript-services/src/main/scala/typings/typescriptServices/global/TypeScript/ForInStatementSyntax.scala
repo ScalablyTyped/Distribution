@@ -107,8 +107,7 @@ object ForInStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     forKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
     inKeyword: ISyntaxToken,
@@ -118,6 +117,5 @@ object ForInStatementSyntax {
   ): typings.typescriptServices.TypeScript.ForInStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(forKeyword.asInstanceOf[js.Any], openParenToken.asInstanceOf[js.Any], inKeyword.asInstanceOf[js.Any], expression.asInstanceOf[js.Any], closeParenToken.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ForInStatementSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(expression: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptServices.TypeScript.ForInStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ForInStatementSyntax]
+  inline def create1(expression: IExpressionSyntax, statement: IStatementSyntax): typings.typescriptServices.TypeScript.ForInStatementSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any], statement.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ForInStatementSyntax]
 }

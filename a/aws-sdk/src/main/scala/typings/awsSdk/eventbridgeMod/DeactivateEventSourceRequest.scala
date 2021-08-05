@@ -13,16 +13,13 @@ trait DeactivateEventSourceRequest extends StObject {
 }
 object DeactivateEventSourceRequest {
   
-  @scala.inline
-  def apply(Name: EventSourceName): DeactivateEventSourceRequest = {
+  inline def apply(Name: EventSourceName): DeactivateEventSourceRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeactivateEventSourceRequest]
   }
   
-  @scala.inline
-  implicit class DeactivateEventSourceRequestMutableBuilder[Self <: DeactivateEventSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeactivateEventSourceRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EventSourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

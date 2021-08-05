@@ -13,19 +13,15 @@ trait A[ParamList /* <: ParamListBase */] extends StObject {
 }
 object A {
   
-  @scala.inline
-  def apply[ParamList /* <: ParamListBase */](a: ParamList, b: /* keyof ParamList */ String): A[ParamList] = {
+  inline def apply[ParamList /* <: ParamListBase */](a: ParamList, b: /* keyof ParamList */ String): A[ParamList] = {
     val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any])
     __obj.asInstanceOf[A[ParamList]]
   }
   
-  @scala.inline
-  implicit class AMutableBuilder[Self <: A[?], ParamList /* <: ParamListBase */] (val x: Self & A[ParamList]) extends AnyVal {
+  extension [Self <: A[?], ParamList /* <: ParamListBase */](x: Self & A[ParamList]) {
     
-    @scala.inline
-    def setA(value: ParamList): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: ParamList): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: /* keyof ParamList */ String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: /* keyof ParamList */ String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
   }
 }

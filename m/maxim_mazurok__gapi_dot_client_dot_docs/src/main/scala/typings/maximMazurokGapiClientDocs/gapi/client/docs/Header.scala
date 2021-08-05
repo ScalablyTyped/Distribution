@@ -14,28 +14,21 @@ trait Header extends StObject {
 }
 object Header {
   
-  @scala.inline
-  def apply(): Header = {
+  inline def apply(): Header = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Header]
   }
   
-  @scala.inline
-  implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+  extension [Self <: Header](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
+    inline def setContentVarargs(value: StructuralElement*): Self = StObject.set(x, "content", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
+    inline def setHeaderId(value: String): Self = StObject.set(x, "headerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
+    inline def setHeaderIdUndefined: Self = StObject.set(x, "headerId", js.undefined)
   }
 }

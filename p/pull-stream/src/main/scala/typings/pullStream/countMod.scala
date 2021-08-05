@@ -10,10 +10,8 @@ object countMod {
   /**
     * Create a stream that outputs 0 ... `max`. By default, `max` = `Infinity`.
     */
-  @scala.inline
-  def apply(): Source[Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Source[Double]]
-  @scala.inline
-  def apply(max: Double): Source[Double] = ^.asInstanceOf[js.Dynamic].apply(max.asInstanceOf[js.Any]).asInstanceOf[Source[Double]]
+  inline def apply(): Source[Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Source[Double]]
+  inline def apply(max: Double): Source[Double] = ^.asInstanceOf[js.Dynamic].apply(max.asInstanceOf[js.Any]).asInstanceOf[Source[Double]]
   
   @JSImport("pull-stream/sources/count", JSImport.Namespace)
   @js.native

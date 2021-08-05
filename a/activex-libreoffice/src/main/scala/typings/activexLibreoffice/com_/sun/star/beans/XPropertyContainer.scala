@@ -35,8 +35,7 @@ trait XPropertyContainer
 }
 object XPropertyContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addProperty: (String, Double, js.Any) => Unit,
     queryInterface: `type` => js.Any,
@@ -47,13 +46,10 @@ object XPropertyContainer {
     __obj.asInstanceOf[XPropertyContainer]
   }
   
-  @scala.inline
-  implicit class XPropertyContainerMutableBuilder[Self <: XPropertyContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertyContainer](x: Self) {
     
-    @scala.inline
-    def setAddProperty(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
+    inline def setAddProperty(value: (String, Double, js.Any) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveProperty(value: String => Unit): Self = StObject.set(x, "removeProperty", js.Any.fromFunction1(value))
+    inline def setRemoveProperty(value: String => Unit): Self = StObject.set(x, "removeProperty", js.Any.fromFunction1(value))
   }
 }

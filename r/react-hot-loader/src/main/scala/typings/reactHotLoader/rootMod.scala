@@ -11,8 +11,6 @@ object rootMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hot[T](Component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("hot")(Component.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def hot[T](Component: T, props: AppContainerProps): T = (^.asInstanceOf[js.Dynamic].applyDynamic("hot")(Component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def hot[T](Component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("hot")(Component.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def hot[T](Component: T, props: AppContainerProps): T = (^.asInstanceOf[js.Dynamic].applyDynamic("hot")(Component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[T]
 }

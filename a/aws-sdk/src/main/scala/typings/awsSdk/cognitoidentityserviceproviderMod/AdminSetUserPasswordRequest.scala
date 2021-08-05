@@ -28,28 +28,21 @@ trait AdminSetUserPasswordRequest extends StObject {
 }
 object AdminSetUserPasswordRequest {
   
-  @scala.inline
-  def apply(Password: PasswordType, UserPoolId: UserPoolIdType, Username: UsernameType): AdminSetUserPasswordRequest = {
+  inline def apply(Password: PasswordType, UserPoolId: UserPoolIdType, Username: UsernameType): AdminSetUserPasswordRequest = {
     val __obj = js.Dynamic.literal(Password = Password.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminSetUserPasswordRequest]
   }
   
-  @scala.inline
-  implicit class AdminSetUserPasswordRequestMutableBuilder[Self <: AdminSetUserPasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminSetUserPasswordRequest](x: Self) {
     
-    @scala.inline
-    def setPassword(value: PasswordType): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: PasswordType): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanent(value: BooleanType): Self = StObject.set(x, "Permanent", value.asInstanceOf[js.Any])
+    inline def setPermanent(value: BooleanType): Self = StObject.set(x, "Permanent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanentUndefined: Self = StObject.set(x, "Permanent", js.undefined)
+    inline def setPermanentUndefined: Self = StObject.set(x, "Permanent", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
   }
 }

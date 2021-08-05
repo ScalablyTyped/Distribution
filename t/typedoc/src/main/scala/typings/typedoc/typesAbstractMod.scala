@@ -21,10 +21,8 @@ object typesAbstractMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isTypeListEqual(a: js.Array[Type], b: js.Array[Type]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeListEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isTypeListEqual(a: js.Array[Type], b: js.Array[Type]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeListEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isTypeListSimilar(a: js.Array[Type], b: js.Array[Type]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeListSimilar")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isTypeListSimilar(a: js.Array[Type], b: js.Array[Type]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeListSimilar")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

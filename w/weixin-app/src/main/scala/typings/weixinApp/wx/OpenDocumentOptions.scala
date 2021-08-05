@@ -27,22 +27,17 @@ trait OpenDocumentOptions
 }
 object OpenDocumentOptions {
   
-  @scala.inline
-  def apply(filePath: String): OpenDocumentOptions = {
+  inline def apply(filePath: String): OpenDocumentOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDocumentOptions]
   }
   
-  @scala.inline
-  implicit class OpenDocumentOptionsMutableBuilder[Self <: OpenDocumentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenDocumentOptions](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileType(value: doc | xls | ppt | pdf | docx | xlsx | pptx): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: doc | xls | ppt | pdf | docx | xlsx | pptx): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
   }
 }

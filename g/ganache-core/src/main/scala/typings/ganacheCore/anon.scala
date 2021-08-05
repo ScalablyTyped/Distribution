@@ -12,17 +12,14 @@ object anon {
   }
   object Log {
     
-    @scala.inline
-    def apply(log: String => Unit): Log = {
+    inline def apply(log: String => Unit): Log = {
       val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
       __obj.asInstanceOf[Log]
     }
     
-    @scala.inline
-    implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+    extension [Self <: Log](x: Self) {
       
-      @scala.inline
-      def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
     }
   }
 }

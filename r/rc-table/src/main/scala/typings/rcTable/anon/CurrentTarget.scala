@@ -13,22 +13,17 @@ trait CurrentTarget extends StObject {
 }
 object CurrentTarget {
   
-  @scala.inline
-  def apply(currentTarget: HTMLDivElement): CurrentTarget = {
+  inline def apply(currentTarget: HTMLDivElement): CurrentTarget = {
     val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentTarget]
   }
   
-  @scala.inline
-  implicit class CurrentTargetMutableBuilder[Self <: CurrentTarget] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentTarget](x: Self) {
     
-    @scala.inline
-    def setCurrentTarget(value: HTMLDivElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: HTMLDivElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+    inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
   }
 }

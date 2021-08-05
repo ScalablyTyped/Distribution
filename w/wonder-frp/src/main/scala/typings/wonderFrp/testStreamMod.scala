@@ -14,7 +14,7 @@ object testStreamMod {
   class TestStream protected () extends BaseStream {
     def this(messages: js.Array[Record], scheduler: TestScheduler) = this()
     
-    var _messages: js.Any = js.native
+    /* private */ var _messages: js.Any = js.native
     
     @JSName("scheduler")
     var scheduler_TestStream: TestScheduler = js.native
@@ -26,7 +26,6 @@ object testStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(messages: js.Array[Record], scheduler: TestScheduler): TestStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(messages.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[TestStream]
+    inline def create(messages: js.Array[Record], scheduler: TestScheduler): TestStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(messages.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[TestStream]
   }
 }

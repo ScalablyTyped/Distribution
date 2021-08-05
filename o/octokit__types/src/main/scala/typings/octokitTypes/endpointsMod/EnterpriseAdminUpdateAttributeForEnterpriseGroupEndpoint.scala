@@ -28,8 +28,7 @@ trait EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint extends StObject 
 }
 object EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Operations: js.Array[EnterpriseAdminUpdateAttributeForEnterpriseGroupParamsOperations],
     enterprise: String,
     schemas: js.Array[String],
@@ -39,25 +38,18 @@ object EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint {
     __obj.asInstanceOf[EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpointMutableBuilder[Self <: EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: js.Array[EnterpriseAdminUpdateAttributeForEnterpriseGroupParamsOperations]): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: js.Array[EnterpriseAdminUpdateAttributeForEnterpriseGroupParamsOperations]): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsVarargs(value: EnterpriseAdminUpdateAttributeForEnterpriseGroupParamsOperations*): Self = StObject.set(x, "Operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: EnterpriseAdminUpdateAttributeForEnterpriseGroupParamsOperations*): Self = StObject.set(x, "Operations", js.Array(value :_*))
     
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
-    @scala.inline
-    def setScim_group_id(value: String): Self = StObject.set(x, "scim_group_id", value.asInstanceOf[js.Any])
+    inline def setScim_group_id(value: String): Self = StObject.set(x, "scim_group_id", value.asInstanceOf[js.Any])
   }
 }

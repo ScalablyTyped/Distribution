@@ -16,31 +16,23 @@ trait WeakValidationMapPageFoot extends StObject {
 }
 object WeakValidationMapPageFoot {
   
-  @scala.inline
-  def apply(): WeakValidationMapPageFoot = {
+  inline def apply(): WeakValidationMapPageFoot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapPageFoot]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapPageFootMutableBuilder[Self <: WeakValidationMapPageFoot] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapPageFoot](x: Self) {
     
-    @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDataHook(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+    inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     
-    @scala.inline
-    def setDivider(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+    inline def setDivider(value: Validator[js.UndefOr[Boolean | Null]]): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+    inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
   }
 }

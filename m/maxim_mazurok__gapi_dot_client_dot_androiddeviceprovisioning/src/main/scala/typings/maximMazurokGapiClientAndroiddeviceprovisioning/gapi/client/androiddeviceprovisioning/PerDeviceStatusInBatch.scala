@@ -20,37 +20,27 @@ trait PerDeviceStatusInBatch extends StObject {
 }
 object PerDeviceStatusInBatch {
   
-  @scala.inline
-  def apply(): PerDeviceStatusInBatch = {
+  inline def apply(): PerDeviceStatusInBatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerDeviceStatusInBatch]
   }
   
-  @scala.inline
-  implicit class PerDeviceStatusInBatchMutableBuilder[Self <: PerDeviceStatusInBatch] (val x: Self) extends AnyVal {
+  extension [Self <: PerDeviceStatusInBatch](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setErrorIdentifier(value: String): Self = StObject.set(x, "errorIdentifier", value.asInstanceOf[js.Any])
+    inline def setErrorIdentifier(value: String): Self = StObject.set(x, "errorIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorIdentifierUndefined: Self = StObject.set(x, "errorIdentifier", js.undefined)
+    inline def setErrorIdentifierUndefined: Self = StObject.set(x, "errorIdentifier", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

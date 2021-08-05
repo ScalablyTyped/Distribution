@@ -17,6 +17,5 @@ object EntityObjectManager {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(entityObject: typings.wonderJs.entityObjectMod.EntityObject): typings.wonderJs.entityObjectManagerMod.EntityObjectManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityObject.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.entityObjectManagerMod.EntityObjectManager]
+  inline def create(entityObject: typings.wonderJs.entityObjectMod.EntityObject): typings.wonderJs.entityObjectManagerMod.EntityObjectManager = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(entityObject.asInstanceOf[js.Any]).asInstanceOf[typings.wonderJs.entityObjectManagerMod.EntityObjectManager]
 }

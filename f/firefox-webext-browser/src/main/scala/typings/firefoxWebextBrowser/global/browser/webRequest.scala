@@ -48,23 +48,19 @@ object webRequest {
   val MAX_HANDLER_BEHAVIOR_CHANGED_CALLS_PER_10_MINUTES: Double = js.native
   
   /** ... */
-  @scala.inline
-  def filterResponseData(requestId: String): StreamFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("filterResponseData")(requestId.asInstanceOf[js.Any]).asInstanceOf[StreamFilter]
+  inline def filterResponseData(requestId: String): StreamFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("filterResponseData")(requestId.asInstanceOf[js.Any]).asInstanceOf[StreamFilter]
   
   /**
     * Retrieves the security information for the request. Returns a promise that will resolve to a SecurityInfo object.
     */
-  @scala.inline
-  def getSecurityInfo(requestId: String): js.Promise[SecurityInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityInfo")(requestId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SecurityInfo]]
-  @scala.inline
-  def getSecurityInfo(requestId: String, options: GetSecurityInfoOptions): js.Promise[SecurityInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityInfo")(requestId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SecurityInfo]]
+  inline def getSecurityInfo(requestId: String): js.Promise[SecurityInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityInfo")(requestId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SecurityInfo]]
+  inline def getSecurityInfo(requestId: String, options: GetSecurityInfoOptions): js.Promise[SecurityInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecurityInfo")(requestId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SecurityInfo]]
   
   /* webRequest functions */
   /**
     * Needs to be called when the behavior of the webRequest handlers has changed to prevent incorrect handling due to caching. This function call is expensive. Don't call it often.
     */
-  @scala.inline
-  def handlerBehaviorChanged(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handlerBehaviorChanged")().asInstanceOf[js.Promise[Unit]]
+  inline def handlerBehaviorChanged(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handlerBehaviorChanged")().asInstanceOf[js.Promise[Unit]]
   
   /**
     * Fired when an authentication failure is received. The listener has three options: it can provide authentication credentials, it can cancel the request and display the error page, or it can take no action on the challenge. If bad user credentials are provided, this may be called multiple times for the same request.

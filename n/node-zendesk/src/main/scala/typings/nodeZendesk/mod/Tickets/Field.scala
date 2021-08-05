@@ -12,19 +12,15 @@ trait Field extends StObject {
 }
 object Field {
   
-  @scala.inline
-  def apply(id: Double, value: js.Any): Field = {
+  inline def apply(id: Double, value: js.Any): Field = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

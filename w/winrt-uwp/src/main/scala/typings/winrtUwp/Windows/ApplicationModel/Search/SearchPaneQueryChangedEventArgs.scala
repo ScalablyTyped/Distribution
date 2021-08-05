@@ -18,22 +18,17 @@ trait SearchPaneQueryChangedEventArgs extends StObject {
 }
 object SearchPaneQueryChangedEventArgs {
   
-  @scala.inline
-  def apply(language: String, linguisticDetails: SearchPaneQueryLinguisticDetails, queryText: String): SearchPaneQueryChangedEventArgs = {
+  inline def apply(language: String, linguisticDetails: SearchPaneQueryLinguisticDetails, queryText: String): SearchPaneQueryChangedEventArgs = {
     val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], linguisticDetails = linguisticDetails.asInstanceOf[js.Any], queryText = queryText.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPaneQueryChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class SearchPaneQueryChangedEventArgsMutableBuilder[Self <: SearchPaneQueryChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SearchPaneQueryChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinguisticDetails(value: SearchPaneQueryLinguisticDetails): Self = StObject.set(x, "linguisticDetails", value.asInstanceOf[js.Any])
+    inline def setLinguisticDetails(value: SearchPaneQueryLinguisticDetails): Self = StObject.set(x, "linguisticDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
+    inline def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
   }
 }

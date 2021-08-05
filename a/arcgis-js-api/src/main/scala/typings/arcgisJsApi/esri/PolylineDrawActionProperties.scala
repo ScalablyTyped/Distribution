@@ -20,19 +20,15 @@ trait PolylineDrawActionProperties
 }
 object PolylineDrawActionProperties {
   
-  @scala.inline
-  def apply(): PolylineDrawActionProperties = {
+  inline def apply(): PolylineDrawActionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolylineDrawActionProperties]
   }
   
-  @scala.inline
-  implicit class PolylineDrawActionPropertiesMutableBuilder[Self <: PolylineDrawActionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PolylineDrawActionProperties](x: Self) {
     
-    @scala.inline
-    def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

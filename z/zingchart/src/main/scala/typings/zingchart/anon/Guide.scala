@@ -41,67 +41,47 @@ trait Guide extends StObject {
 }
 object Guide {
   
-  @scala.inline
-  def apply(): Guide = {
+  inline def apply(): Guide = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Guide]
   }
   
-  @scala.inline
-  implicit class GuideMutableBuilder[Self <: Guide] (val x: Self) extends AnyVal {
+  extension [Self <: Guide](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setGuide(value: BackgroundcolorItems): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
+    inline def setGuide(value: BackgroundcolorItems): Self = StObject.set(x, "guide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuideUndefined: Self = StObject.set(x, "guide", js.undefined)
+    inline def setGuideUndefined: Self = StObject.set(x, "guide", js.undefined)
     
-    @scala.inline
-    def setItem(value: Fontstyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Fontstyle): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Any): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def `setRef-line`(value: LinestyleLinewidth): Self = StObject.set(x, "ref-line", value.asInstanceOf[js.Any])
+    inline def `setRef-line`(value: LinestyleLinewidth): Self = StObject.set(x, "ref-line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setRef-lineUndefined`: Self = StObject.set(x, "ref-line", js.undefined)
+    inline def `setRef-lineUndefined`: Self = StObject.set(x, "ref-line", js.undefined)
     
-    @scala.inline
-    def setTick(value: Placement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: Placement): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: Fontweight): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: Fontweight): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

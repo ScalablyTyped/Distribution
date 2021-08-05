@@ -64,26 +64,20 @@ object protocolImplementationMod {
   }
   object ImplementationClientCapabilities {
     
-    @scala.inline
-    def apply(): ImplementationClientCapabilities = {
+    inline def apply(): ImplementationClientCapabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImplementationClientCapabilities]
     }
     
-    @scala.inline
-    implicit class ImplementationClientCapabilitiesMutableBuilder[Self <: ImplementationClientCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: ImplementationClientCapabilities](x: Self) {
       
-      @scala.inline
-      def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+      inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+      inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
       
-      @scala.inline
-      def setLinkSupport(value: Boolean): Self = StObject.set(x, "linkSupport", value.asInstanceOf[js.Any])
+      inline def setLinkSupport(value: Boolean): Self = StObject.set(x, "linkSupport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkSupportUndefined: Self = StObject.set(x, "linkSupport", js.undefined)
+      inline def setLinkSupportUndefined: Self = StObject.set(x, "linkSupport", js.undefined)
     }
   }
   
@@ -96,8 +90,7 @@ object protocolImplementationMod {
        with PartialResultParams
   object ImplementationParams {
     
-    @scala.inline
-    def apply(position: Position, textDocument: TextDocumentIdentifier): ImplementationParams = {
+    inline def apply(position: Position, textDocument: TextDocumentIdentifier): ImplementationParams = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImplementationParams]
     }
@@ -110,8 +103,7 @@ object protocolImplementationMod {
        with StaticRegistrationOptions
   object ImplementationRegistrationOptions {
     
-    @scala.inline
-    def apply(): ImplementationRegistrationOptions = {
+    inline def apply(): ImplementationRegistrationOptions = {
       val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[ImplementationRegistrationOptions]
     }

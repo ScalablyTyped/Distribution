@@ -38,49 +38,35 @@ trait ModifyReplicationGroupShardConfigurationMessage extends StObject {
 }
 object ModifyReplicationGroupShardConfigurationMessage {
   
-  @scala.inline
-  def apply(ApplyImmediately: Boolean, NodeGroupCount: Integer, ReplicationGroupId: String): ModifyReplicationGroupShardConfigurationMessage = {
+  inline def apply(ApplyImmediately: Boolean, NodeGroupCount: Integer, ReplicationGroupId: String): ModifyReplicationGroupShardConfigurationMessage = {
     val __obj = js.Dynamic.literal(ApplyImmediately = ApplyImmediately.asInstanceOf[js.Any], NodeGroupCount = NodeGroupCount.asInstanceOf[js.Any], ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyReplicationGroupShardConfigurationMessage]
   }
   
-  @scala.inline
-  implicit class ModifyReplicationGroupShardConfigurationMessageMutableBuilder[Self <: ModifyReplicationGroupShardConfigurationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyReplicationGroupShardConfigurationMessage](x: Self) {
     
-    @scala.inline
-    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
+    inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupCount(value: Integer): Self = StObject.set(x, "NodeGroupCount", value.asInstanceOf[js.Any])
+    inline def setNodeGroupCount(value: Integer): Self = StObject.set(x, "NodeGroupCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupsToRemove(value: NodeGroupsToRemoveList): Self = StObject.set(x, "NodeGroupsToRemove", value.asInstanceOf[js.Any])
+    inline def setNodeGroupsToRemove(value: NodeGroupsToRemoveList): Self = StObject.set(x, "NodeGroupsToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupsToRemoveUndefined: Self = StObject.set(x, "NodeGroupsToRemove", js.undefined)
+    inline def setNodeGroupsToRemoveUndefined: Self = StObject.set(x, "NodeGroupsToRemove", js.undefined)
     
-    @scala.inline
-    def setNodeGroupsToRemoveVarargs(value: AllowedNodeGroupId*): Self = StObject.set(x, "NodeGroupsToRemove", js.Array(value :_*))
+    inline def setNodeGroupsToRemoveVarargs(value: AllowedNodeGroupId*): Self = StObject.set(x, "NodeGroupsToRemove", js.Array(value :_*))
     
-    @scala.inline
-    def setNodeGroupsToRetain(value: NodeGroupsToRetainList): Self = StObject.set(x, "NodeGroupsToRetain", value.asInstanceOf[js.Any])
+    inline def setNodeGroupsToRetain(value: NodeGroupsToRetainList): Self = StObject.set(x, "NodeGroupsToRetain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeGroupsToRetainUndefined: Self = StObject.set(x, "NodeGroupsToRetain", js.undefined)
+    inline def setNodeGroupsToRetainUndefined: Self = StObject.set(x, "NodeGroupsToRetain", js.undefined)
     
-    @scala.inline
-    def setNodeGroupsToRetainVarargs(value: AllowedNodeGroupId*): Self = StObject.set(x, "NodeGroupsToRetain", js.Array(value :_*))
+    inline def setNodeGroupsToRetainVarargs(value: AllowedNodeGroupId*): Self = StObject.set(x, "NodeGroupsToRetain", js.Array(value :_*))
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReshardingConfiguration(value: ReshardingConfigurationList): Self = StObject.set(x, "ReshardingConfiguration", value.asInstanceOf[js.Any])
+    inline def setReshardingConfiguration(value: ReshardingConfigurationList): Self = StObject.set(x, "ReshardingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReshardingConfigurationUndefined: Self = StObject.set(x, "ReshardingConfiguration", js.undefined)
+    inline def setReshardingConfigurationUndefined: Self = StObject.set(x, "ReshardingConfiguration", js.undefined)
     
-    @scala.inline
-    def setReshardingConfigurationVarargs(value: ReshardingConfiguration*): Self = StObject.set(x, "ReshardingConfiguration", js.Array(value :_*))
+    inline def setReshardingConfigurationVarargs(value: ReshardingConfiguration*): Self = StObject.set(x, "ReshardingConfiguration", js.Array(value :_*))
   }
 }

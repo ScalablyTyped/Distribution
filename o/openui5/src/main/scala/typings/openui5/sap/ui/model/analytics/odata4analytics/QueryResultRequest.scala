@@ -214,8 +214,7 @@ trait QueryResultRequest extends StObject {
 }
 object QueryResultRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToAggregationLevel: js.Any => Unit,
     getAggregationLevel: () => js.Array[js.Any],
     getAggregationLevelDetails: js.Any => js.Any,
@@ -244,76 +243,52 @@ object QueryResultRequest {
     __obj.asInstanceOf[QueryResultRequest]
   }
   
-  @scala.inline
-  implicit class QueryResultRequestMutableBuilder[Self <: QueryResultRequest] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResultRequest](x: Self) {
     
-    @scala.inline
-    def setAddToAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "addToAggregationLevel", js.Any.fromFunction1(value))
+    inline def setAddToAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "addToAggregationLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAggregationLevel(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAggregationLevel", js.Any.fromFunction0(value))
+    inline def setGetAggregationLevel(value: () => js.Array[js.Any]): Self = StObject.set(x, "getAggregationLevel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAggregationLevelDetails(value: js.Any => js.Any): Self = StObject.set(x, "getAggregationLevelDetails", js.Any.fromFunction1(value))
+    inline def setGetAggregationLevelDetails(value: js.Any => js.Any): Self = StObject.set(x, "getAggregationLevelDetails", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
+    inline def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMeasureNames(value: () => js.Array[js.Any]): Self = StObject.set(x, "getMeasureNames", js.Any.fromFunction0(value))
+    inline def setGetMeasureNames(value: () => js.Array[js.Any]): Self = StObject.set(x, "getMeasureNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameterizationRequest(value: () => js.Any): Self = StObject.set(x, "getParameterizationRequest", js.Any.fromFunction0(value))
+    inline def setGetParameterizationRequest(value: () => js.Any): Self = StObject.set(x, "getParameterizationRequest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetQueryResult(value: () => QueryResult): Self = StObject.set(x, "getQueryResult", js.Any.fromFunction0(value))
+    inline def setGetQueryResult(value: () => QueryResult): Self = StObject.set(x, "getQueryResult", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResultPageBoundaries(value: () => js.Any): Self = StObject.set(x, "getResultPageBoundaries", js.Any.fromFunction0(value))
+    inline def setGetResultPageBoundaries(value: () => js.Any): Self = StObject.set(x, "getResultPageBoundaries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSortExpression(value: () => SortExpression): Self = StObject.set(x, "getSortExpression", js.Any.fromFunction0(value))
+    inline def setGetSortExpression(value: () => SortExpression): Self = StObject.set(x, "getSortExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURIQueryOptionValue(value: String => String): Self = StObject.set(x, "getURIQueryOptionValue", js.Any.fromFunction1(value))
+    inline def setGetURIQueryOptionValue(value: String => String): Self = StObject.set(x, "getURIQueryOptionValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetURIToQueryResultEntitySet(value: String => String): Self = StObject.set(x, "getURIToQueryResultEntitySet", js.Any.fromFunction1(value))
+    inline def setGetURIToQueryResultEntitySet(value: String => String): Self = StObject.set(x, "getURIToQueryResultEntitySet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetURIToQueryResultEntries(value: (String, String) => String): Self = StObject.set(x, "getURIToQueryResultEntries", js.Any.fromFunction2(value))
+    inline def setGetURIToQueryResultEntries(value: (String, String) => String): Self = StObject.set(x, "getURIToQueryResultEntries", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIncludeDimensionKeyTextAttributes(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "includeDimensionKeyTextAttributes", js.Any.fromFunction4(value))
+    inline def setIncludeDimensionKeyTextAttributes(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "includeDimensionKeyTextAttributes", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setIncludeMeasureRawFormattedValueUnit(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "includeMeasureRawFormattedValueUnit", js.Any.fromFunction4(value))
+    inline def setIncludeMeasureRawFormattedValueUnit(value: (js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "includeMeasureRawFormattedValueUnit", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRemoveFromAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "removeFromAggregationLevel", js.Any.fromFunction1(value))
+    inline def setRemoveFromAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "removeFromAggregationLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "setAggregationLevel", js.Any.fromFunction1(value))
+    inline def setSetAggregationLevel(value: js.Any => Unit): Self = StObject.set(x, "setAggregationLevel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilterExpression(value: FilterExpression => Unit): Self = StObject.set(x, "setFilterExpression", js.Any.fromFunction1(value))
+    inline def setSetFilterExpression(value: FilterExpression => Unit): Self = StObject.set(x, "setFilterExpression", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMeasures(value: js.Any => Unit): Self = StObject.set(x, "setMeasures", js.Any.fromFunction1(value))
+    inline def setSetMeasures(value: js.Any => Unit): Self = StObject.set(x, "setMeasures", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParameterizationRequest(value: js.Any => Unit): Self = StObject.set(x, "setParameterizationRequest", js.Any.fromFunction1(value))
+    inline def setSetParameterizationRequest(value: js.Any => Unit): Self = StObject.set(x, "setParameterizationRequest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRequestOptions(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "setRequestOptions", js.Any.fromFunction3(value))
+    inline def setSetRequestOptions(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "setRequestOptions", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetResourcePath(value: js.Any => Unit): Self = StObject.set(x, "setResourcePath", js.Any.fromFunction1(value))
+    inline def setSetResourcePath(value: js.Any => Unit): Self = StObject.set(x, "setResourcePath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetResultPageBoundaries(value: (Number, Number) => Unit): Self = StObject.set(x, "setResultPageBoundaries", js.Any.fromFunction2(value))
+    inline def setSetResultPageBoundaries(value: (Number, Number) => Unit): Self = StObject.set(x, "setResultPageBoundaries", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSortExpression(value: SortExpression => Unit): Self = StObject.set(x, "setSortExpression", js.Any.fromFunction1(value))
+    inline def setSetSortExpression(value: SortExpression => Unit): Self = StObject.set(x, "setSortExpression", js.Any.fromFunction1(value))
   }
 }

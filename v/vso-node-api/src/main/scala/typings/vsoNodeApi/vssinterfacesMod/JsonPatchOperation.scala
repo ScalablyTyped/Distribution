@@ -28,25 +28,19 @@ trait JsonPatchOperation extends StObject {
 }
 object JsonPatchOperation {
   
-  @scala.inline
-  def apply(from: String, op: Operation, path: String, value: js.Any): JsonPatchOperation = {
+  inline def apply(from: String, op: Operation, path: String, value: js.Any): JsonPatchOperation = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonPatchOperation]
   }
   
-  @scala.inline
-  implicit class JsonPatchOperationMutableBuilder[Self <: JsonPatchOperation] (val x: Self) extends AnyVal {
+  extension [Self <: JsonPatchOperation](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOp(value: Operation): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: Operation): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

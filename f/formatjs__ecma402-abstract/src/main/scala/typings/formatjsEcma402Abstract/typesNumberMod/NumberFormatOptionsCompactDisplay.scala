@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormatOptionsCompactDisplay extends StObject
 object NumberFormatOptionsCompactDisplay {
   
-  @scala.inline
-  def long: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.long = "long".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.long]
+  inline def long: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.long = "long".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.long]
   
-  @scala.inline
-  def short: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.short = "short".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.short]
+  inline def short: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.short = "short".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.short]
 }

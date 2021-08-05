@@ -23,31 +23,23 @@ trait DescribeIndexResponse extends StObject {
 }
 object DescribeIndexResponse {
   
-  @scala.inline
-  def apply(): DescribeIndexResponse = {
+  inline def apply(): DescribeIndexResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeIndexResponse]
   }
   
-  @scala.inline
-  implicit class DescribeIndexResponseMutableBuilder[Self <: DescribeIndexResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIndexResponse](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: IndexName): Self = StObject.set(x, "indexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
+    inline def setIndexNameUndefined: Self = StObject.set(x, "indexName", js.undefined)
     
-    @scala.inline
-    def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "indexStatus", value.asInstanceOf[js.Any])
+    inline def setIndexStatus(value: IndexStatus): Self = StObject.set(x, "indexStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexStatusUndefined: Self = StObject.set(x, "indexStatus", js.undefined)
+    inline def setIndexStatusUndefined: Self = StObject.set(x, "indexStatus", js.undefined)
     
-    @scala.inline
-    def setSchema(value: IndexSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: IndexSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
   }
 }

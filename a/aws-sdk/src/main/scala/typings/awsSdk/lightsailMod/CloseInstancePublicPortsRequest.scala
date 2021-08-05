@@ -18,19 +18,15 @@ trait CloseInstancePublicPortsRequest extends StObject {
 }
 object CloseInstancePublicPortsRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName, portInfo: PortInfo): CloseInstancePublicPortsRequest = {
+  inline def apply(instanceName: ResourceName, portInfo: PortInfo): CloseInstancePublicPortsRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], portInfo = portInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseInstancePublicPortsRequest]
   }
   
-  @scala.inline
-  implicit class CloseInstancePublicPortsRequestMutableBuilder[Self <: CloseInstancePublicPortsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CloseInstancePublicPortsRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortInfo(value: PortInfo): Self = StObject.set(x, "portInfo", value.asInstanceOf[js.Any])
+    inline def setPortInfo(value: PortInfo): Self = StObject.set(x, "portInfo", value.asInstanceOf[js.Any])
   }
 }

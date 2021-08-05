@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AppEventsFlushBehavior extends StObject
 object AppEventsFlushBehavior {
   
-  @scala.inline
-  def auto: typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto = "auto".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto]
+  inline def auto: typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto = "auto".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto]
   
-  @scala.inline
-  def `explicitly-only`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`explicitly-only` = "explicitly-only".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.`explicitly-only`]
+  inline def `explicitly-only`: typings.reactNativeFbsdk.reactNativeFbsdkStrings.`explicitly-only` = "explicitly-only".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.`explicitly-only`]
 }

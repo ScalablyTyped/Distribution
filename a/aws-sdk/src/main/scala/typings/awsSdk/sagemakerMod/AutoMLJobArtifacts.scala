@@ -18,25 +18,19 @@ trait AutoMLJobArtifacts extends StObject {
 }
 object AutoMLJobArtifacts {
   
-  @scala.inline
-  def apply(): AutoMLJobArtifacts = {
+  inline def apply(): AutoMLJobArtifacts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoMLJobArtifacts]
   }
   
-  @scala.inline
-  implicit class AutoMLJobArtifactsMutableBuilder[Self <: AutoMLJobArtifacts] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLJobArtifacts](x: Self) {
     
-    @scala.inline
-    def setCandidateDefinitionNotebookLocation(value: CandidateDefinitionNotebookLocation): Self = StObject.set(x, "CandidateDefinitionNotebookLocation", value.asInstanceOf[js.Any])
+    inline def setCandidateDefinitionNotebookLocation(value: CandidateDefinitionNotebookLocation): Self = StObject.set(x, "CandidateDefinitionNotebookLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateDefinitionNotebookLocationUndefined: Self = StObject.set(x, "CandidateDefinitionNotebookLocation", js.undefined)
+    inline def setCandidateDefinitionNotebookLocationUndefined: Self = StObject.set(x, "CandidateDefinitionNotebookLocation", js.undefined)
     
-    @scala.inline
-    def setDataExplorationNotebookLocation(value: DataExplorationNotebookLocation): Self = StObject.set(x, "DataExplorationNotebookLocation", value.asInstanceOf[js.Any])
+    inline def setDataExplorationNotebookLocation(value: DataExplorationNotebookLocation): Self = StObject.set(x, "DataExplorationNotebookLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataExplorationNotebookLocationUndefined: Self = StObject.set(x, "DataExplorationNotebookLocation", js.undefined)
+    inline def setDataExplorationNotebookLocationUndefined: Self = StObject.set(x, "DataExplorationNotebookLocation", js.undefined)
   }
 }

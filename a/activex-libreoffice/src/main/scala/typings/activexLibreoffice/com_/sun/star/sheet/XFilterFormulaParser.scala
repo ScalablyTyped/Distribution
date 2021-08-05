@@ -17,8 +17,7 @@ trait XFilterFormulaParser
 }
 object XFilterFormulaParser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedNamespace: String,
     parseFormula: (String, CellAddress) => SafeArray[FormulaToken],
     printFormula: (SeqEquiv[FormulaToken], CellAddress) => String
@@ -27,10 +26,8 @@ object XFilterFormulaParser {
     __obj.asInstanceOf[XFilterFormulaParser]
   }
   
-  @scala.inline
-  implicit class XFilterFormulaParserMutableBuilder[Self <: XFilterFormulaParser] (val x: Self) extends AnyVal {
+  extension [Self <: XFilterFormulaParser](x: Self) {
     
-    @scala.inline
-    def setSupportedNamespace(value: String): Self = StObject.set(x, "SupportedNamespace", value.asInstanceOf[js.Any])
+    inline def setSupportedNamespace(value: String): Self = StObject.set(x, "SupportedNamespace", value.asInstanceOf[js.Any])
   }
 }

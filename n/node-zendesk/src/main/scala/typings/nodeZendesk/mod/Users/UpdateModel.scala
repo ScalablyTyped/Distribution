@@ -15,19 +15,15 @@ trait UpdateModel
 }
 object UpdateModel {
   
-  @scala.inline
-  def apply(): UpdateModel = {
+  inline def apply(): UpdateModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateModel]
   }
   
-  @scala.inline
-  implicit class UpdateModelMutableBuilder[Self <: UpdateModel] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateModel](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

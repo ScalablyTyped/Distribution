@@ -18,25 +18,19 @@ trait WorldCount extends StObject {
 }
 object WorldCount {
   
-  @scala.inline
-  def apply(): WorldCount = {
+  inline def apply(): WorldCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorldCount]
   }
   
-  @scala.inline
-  implicit class WorldCountMutableBuilder[Self <: WorldCount] (val x: Self) extends AnyVal {
+  extension [Self <: WorldCount](x: Self) {
     
-    @scala.inline
-    def setFloorplanCount(value: FloorplanCount): Self = StObject.set(x, "floorplanCount", value.asInstanceOf[js.Any])
+    inline def setFloorplanCount(value: FloorplanCount): Self = StObject.set(x, "floorplanCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloorplanCountUndefined: Self = StObject.set(x, "floorplanCount", js.undefined)
+    inline def setFloorplanCountUndefined: Self = StObject.set(x, "floorplanCount", js.undefined)
     
-    @scala.inline
-    def setInteriorCountPerFloorplan(value: InteriorCountPerFloorplan): Self = StObject.set(x, "interiorCountPerFloorplan", value.asInstanceOf[js.Any])
+    inline def setInteriorCountPerFloorplan(value: InteriorCountPerFloorplan): Self = StObject.set(x, "interiorCountPerFloorplan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteriorCountPerFloorplanUndefined: Self = StObject.set(x, "interiorCountPerFloorplan", js.undefined)
+    inline def setInteriorCountPerFloorplanUndefined: Self = StObject.set(x, "interiorCountPerFloorplan", js.undefined)
   }
 }

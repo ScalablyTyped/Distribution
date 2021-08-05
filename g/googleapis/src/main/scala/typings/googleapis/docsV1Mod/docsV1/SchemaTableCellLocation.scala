@@ -28,31 +28,23 @@ trait SchemaTableCellLocation extends StObject {
 }
 object SchemaTableCellLocation {
   
-  @scala.inline
-  def apply(): SchemaTableCellLocation = {
+  inline def apply(): SchemaTableCellLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableCellLocation]
   }
   
-  @scala.inline
-  implicit class SchemaTableCellLocationMutableBuilder[Self <: SchemaTableCellLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableCellLocation](x: Self) {
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
-    @scala.inline
-    def setTableStartLocation(value: SchemaLocation): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
+    inline def setTableStartLocation(value: SchemaLocation): Self = StObject.set(x, "tableStartLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
+    inline def setTableStartLocationUndefined: Self = StObject.set(x, "tableStartLocation", js.undefined)
   }
 }

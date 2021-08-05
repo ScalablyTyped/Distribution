@@ -18,19 +18,15 @@ trait AudioVoice extends StObject {
 }
 object AudioVoice {
   
-  @scala.inline
-  def apply(connect: js.Object => Unit, disconnect: () => Unit): AudioVoice = {
+  inline def apply(connect: js.Object => Unit, disconnect: () => Unit): AudioVoice = {
     val __obj = js.Dynamic.literal(connect = js.Any.fromFunction1(connect), disconnect = js.Any.fromFunction0(disconnect))
     __obj.asInstanceOf[AudioVoice]
   }
   
-  @scala.inline
-  implicit class AudioVoiceMutableBuilder[Self <: AudioVoice] (val x: Self) extends AnyVal {
+  extension [Self <: AudioVoice](x: Self) {
     
-    @scala.inline
-    def setConnect(value: js.Object => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
+    inline def setConnect(value: js.Object => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+    inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
   }
 }

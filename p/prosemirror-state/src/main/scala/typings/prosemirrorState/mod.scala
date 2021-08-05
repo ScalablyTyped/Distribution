@@ -112,8 +112,7 @@ object mod {
     /**
       * Create a new state.
       */
-    @scala.inline
-    def create[S /* <: Schema[js.Any, js.Any] */](config: Doc[S]): EditorState[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[EditorState[S]]
+    inline def create[S /* <: Schema[js.Any, js.Any] */](config: Doc[S]): EditorState[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[EditorState[S]]
     
     /**
       * Deserialize a JSON representation of a state. `config` should
@@ -122,10 +121,8 @@ object mod {
       * to deserialize the state of plugins, by associating plugin
       * instances with the property names they use in the JSON object.
       */
-    @scala.inline
-    def fromJSON[S /* <: Schema[js.Any, js.Any] */](config: typings.prosemirrorState.anon.Schema[S], json: StringDictionary[js.Any]): EditorState[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(config.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[EditorState[S]]
-    @scala.inline
-    def fromJSON[S /* <: Schema[js.Any, js.Any] */](
+    inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](config: typings.prosemirrorState.anon.Schema[S], json: StringDictionary[js.Any]): EditorState[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(config.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[EditorState[S]]
+    inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](
       config: typings.prosemirrorState.anon.Schema[S],
       json: StringDictionary[js.Any],
       pluginFields: StringDictionary[Plugin[js.Any, S]]
@@ -156,15 +153,13 @@ object mod {
     /**
       * Create a node selection from non-resolved positions.
       */
-    @scala.inline
-    def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double): NodeSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[NodeSelection[S]]
+    inline def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], from: Double): NodeSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[NodeSelection[S]]
     
     /**
       * Determines whether the given node may be selected as a node
       * selection.
       */
-    @scala.inline
-    def isSelectable(node: Node[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSelectable(node: Node[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectable")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("prosemirror-state", "Plugin")
@@ -344,8 +339,7 @@ object mod {
       * Find the cursor or leaf node selection closest to the end of the
       * given document.
       */
-    @scala.inline
-    def atEnd[S /* <: Schema[js.Any, js.Any] */](doc: Node[S]): Selection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("atEnd")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection[S]]
+    inline def atEnd[S /* <: Schema[js.Any, js.Any] */](doc: Node[S]): Selection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("atEnd")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection[S]]
     
     /**
       * Find the cursor or leaf node selection closest to the start of
@@ -353,8 +347,7 @@ object mod {
       * [`AllSelection`](#state.AllSelection) if no valid position
       * exists.
       */
-    @scala.inline
-    def atStart[S /* <: Schema[js.Any, js.Any] */](doc: Node[S]): Selection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("atStart")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection[S]]
+    inline def atStart[S /* <: Schema[js.Any, js.Any] */](doc: Node[S]): Selection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("atStart")(doc.asInstanceOf[js.Any]).asInstanceOf[Selection[S]]
     
     /**
       * Find a valid cursor or leaf node selection starting at the given
@@ -363,17 +356,14 @@ object mod {
       * selections. Will return null when no valid selection position is
       * found.
       */
-    @scala.inline
-    def findFrom[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S], dir: Double): js.UndefOr[Selection[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Selection[S] | Null]]
-    @scala.inline
-    def findFrom[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S], dir: Double, textOnly: Boolean): js.UndefOr[Selection[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], textOnly.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Selection[S] | Null]]
+    inline def findFrom[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S], dir: Double): js.UndefOr[Selection[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Selection[S] | Null]]
+    inline def findFrom[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S], dir: Double, textOnly: Boolean): js.UndefOr[Selection[S] | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFrom")($pos.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], textOnly.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Selection[S] | Null]]
     
     /**
       * Deserialize the JSON representation of a selection. Must be
       * implemented for custom classes (as a static class method).
       */
-    @scala.inline
-    def fromJSON[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], json: StringDictionary[js.Any]): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(doc.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
+    inline def fromJSON[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], json: StringDictionary[js.Any]): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(doc.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
     
     /**
       * To be able to deserialize selections from JSON, custom selection
@@ -381,18 +371,15 @@ object mod {
       * can be disambiguated. Try to pick something that's unlikely to
       * clash with classes from other modules.
       */
-    @scala.inline
-    def jsonID(id: String, selectionClass: Instantiable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonID")(id.asInstanceOf[js.Any], selectionClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def jsonID(id: String, selectionClass: Instantiable): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonID")(id.asInstanceOf[js.Any], selectionClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Find a valid cursor or leaf node selection near the given
       * position. Searches forward first by default, but if `bias` is
       * negative, it will search backwards first.
       */
-    @scala.inline
-    def near[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S]): Selection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any]).asInstanceOf[Selection[S]]
-    @scala.inline
-    def near[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S], bias: Double): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
+    inline def near[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S]): Selection[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any]).asInstanceOf[Selection[S]]
+    inline def near[S /* <: Schema[js.Any, js.Any] */]($pos: ResolvedPos[S], bias: Double): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("near")($pos.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
   }
   
   @JSImport("prosemirror-state", "SelectionRange")
@@ -444,18 +431,14 @@ object mod {
       * [`Selection.near`](#state.Selection^near) when the document
       * doesn't contain a valid text position.
       */
-    @scala.inline
-    def between[S /* <: Schema[js.Any, js.Any] */]($anchor: ResolvedPos[S], $head: ResolvedPos[S]): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
-    @scala.inline
-    def between[S /* <: Schema[js.Any, js.Any] */]($anchor: ResolvedPos[S], $head: ResolvedPos[S], bias: Double): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
+    inline def between[S /* <: Schema[js.Any, js.Any] */]($anchor: ResolvedPos[S], $head: ResolvedPos[S]): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
+    inline def between[S /* <: Schema[js.Any, js.Any] */]($anchor: ResolvedPos[S], $head: ResolvedPos[S], bias: Double): Selection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")($anchor.asInstanceOf[js.Any], $head.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Selection[S]]
     
     /**
       * Create a text selection from non-resolved positions.
       */
-    @scala.inline
-    def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchor: Double): TextSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[TextSelection[S]]
-    @scala.inline
-    def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchor: Double, head: Double): TextSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[TextSelection[S]]
+    inline def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchor: Double): TextSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[TextSelection[S]]
+    inline def create[S /* <: Schema[js.Any, js.Any] */](doc: Node[S], anchor: Double, head: Double): TextSelection[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[TextSelection[S]]
   }
   
   @JSImport("prosemirror-state", "Transaction")
@@ -642,70 +625,50 @@ object mod {
   }
   object PluginSpec {
     
-    @scala.inline
-    def apply[T, S /* <: Schema[js.Any, js.Any] */](): PluginSpec[T, S] = {
+    inline def apply[T, S /* <: Schema[js.Any, js.Any] */](): PluginSpec[T, S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginSpec[T, S]]
     }
     
-    @scala.inline
-    implicit class PluginSpecMutableBuilder[Self <: PluginSpec[?, ?], T, S /* <: Schema[js.Any, js.Any] */] (val x: Self & (PluginSpec[T, S])) extends AnyVal {
+    extension [Self <: PluginSpec[?, ?], T, S /* <: Schema[js.Any, js.Any] */](x: Self & (PluginSpec[T, S])) {
       
-      @scala.inline
-      def setAppendTransaction(
+      inline def setAppendTransaction(
         value: (/* transactions */ js.Array[Transaction[S]], /* oldState */ EditorState[S], /* newState */ EditorState[S]) => js.UndefOr[Transaction[S] | Null | Unit]
       ): Self = StObject.set(x, "appendTransaction", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAppendTransactionNull: Self = StObject.set(x, "appendTransaction", null)
+      inline def setAppendTransactionNull: Self = StObject.set(x, "appendTransaction", null)
       
-      @scala.inline
-      def setAppendTransactionUndefined: Self = StObject.set(x, "appendTransaction", js.undefined)
+      inline def setAppendTransactionUndefined: Self = StObject.set(x, "appendTransaction", js.undefined)
       
-      @scala.inline
-      def setFilterTransaction(value: (/* p1 */ Transaction[S], /* p2 */ EditorState[S]) => Boolean): Self = StObject.set(x, "filterTransaction", js.Any.fromFunction2(value))
+      inline def setFilterTransaction(value: (/* p1 */ Transaction[S], /* p2 */ EditorState[S]) => Boolean): Self = StObject.set(x, "filterTransaction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterTransactionNull: Self = StObject.set(x, "filterTransaction", null)
+      inline def setFilterTransactionNull: Self = StObject.set(x, "filterTransaction", null)
       
-      @scala.inline
-      def setFilterTransactionUndefined: Self = StObject.set(x, "filterTransaction", js.undefined)
+      inline def setFilterTransactionUndefined: Self = StObject.set(x, "filterTransaction", js.undefined)
       
-      @scala.inline
-      def setKey(value: PluginKey[T, S]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: PluginKey[T, S]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNull: Self = StObject.set(x, "key", null)
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setProps(value: EditorProps[Plugin[T, S], S]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: EditorProps[Plugin[T, S], S]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsNull: Self = StObject.set(x, "props", null)
+      inline def setPropsNull: Self = StObject.set(x, "props", null)
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setState(value: StateField[T, S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: StateField[T, S]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateNull: Self = StObject.set(x, "state", null)
+      inline def setStateNull: Self = StObject.set(x, "state", null)
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setView(value: /* p */ EditorView[S] => Destroy[S]): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+      inline def setView(value: /* p */ EditorView[S] => Destroy[S]): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setViewNull: Self = StObject.set(x, "view", null)
+      inline def setViewNull: Self = StObject.set(x, "view", null)
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }
   }
   
@@ -726,20 +689,16 @@ object mod {
   }
   object SelectionBookmark {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](map: Mapping => SelectionBookmark[S], resolve: Node[S] => Selection[S]): SelectionBookmark[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](map: Mapping => SelectionBookmark[S], resolve: Node[S] => Selection[S]): SelectionBookmark[S] = {
       val __obj = js.Dynamic.literal(map = js.Any.fromFunction1(map), resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[SelectionBookmark[S]]
     }
     
-    @scala.inline
-    implicit class SelectionBookmarkMutableBuilder[Self <: SelectionBookmark[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & SelectionBookmark[S]) extends AnyVal {
+    extension [Self <: SelectionBookmark[?], S /* <: Schema[js.Any, js.Any] */](x: Self & SelectionBookmark[S]) {
       
-      @scala.inline
-      def setMap(value: Mapping => SelectionBookmark[S]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: Mapping => SelectionBookmark[S]): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolve(value: Node[S] => Selection[S]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: Node[S] => Selection[S]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
   
@@ -784,8 +743,7 @@ object mod {
   }
   object StateField {
     
-    @scala.inline
-    def apply[T, S /* <: Schema[js.Any, js.Any] */](
+    inline def apply[T, S /* <: Schema[js.Any, js.Any] */](
       apply: (Transaction[S], T, EditorState[S], EditorState[S]) => T,
       init: (StringDictionary[js.Any], EditorState[S]) => T
     ): StateField[T, S] = {
@@ -793,14 +751,11 @@ object mod {
       __obj.asInstanceOf[StateField[T, S]]
     }
     
-    @scala.inline
-    implicit class StateFieldMutableBuilder[Self <: StateField[?, ?], T, S /* <: Schema[js.Any, js.Any] */] (val x: Self & (StateField[T, S])) extends AnyVal {
+    extension [Self <: StateField[?, ?], T, S /* <: Schema[js.Any, js.Any] */](x: Self & (StateField[T, S])) {
       
-      @scala.inline
-      def setApply(value: (Transaction[S], T, EditorState[S], EditorState[S]) => T): Self = StObject.set(x, "apply", js.Any.fromFunction4(value))
+      inline def setApply(value: (Transaction[S], T, EditorState[S], EditorState[S]) => T): Self = StObject.set(x, "apply", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFromJSON(
+      inline def setFromJSON(
         value: js.ThisFunction3[
               /* this */ Plugin[T, S], 
               /* config */ StringDictionary[js.Any], 
@@ -810,23 +765,17 @@ object mod {
             ]
       ): Self = StObject.set(x, "fromJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromJSONNull: Self = StObject.set(x, "fromJSON", null)
+      inline def setFromJSONNull: Self = StObject.set(x, "fromJSON", null)
       
-      @scala.inline
-      def setFromJSONUndefined: Self = StObject.set(x, "fromJSON", js.undefined)
+      inline def setFromJSONUndefined: Self = StObject.set(x, "fromJSON", js.undefined)
       
-      @scala.inline
-      def setInit(value: (StringDictionary[js.Any], EditorState[S]) => T): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+      inline def setInit(value: (StringDictionary[js.Any], EditorState[S]) => T): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setToJSON(value: js.ThisFunction1[/* this */ Plugin[T, S], /* value */ T, js.Any]): Self = StObject.set(x, "toJSON", value.asInstanceOf[js.Any])
+      inline def setToJSON(value: js.ThisFunction1[/* this */ Plugin[T, S], /* value */ T, js.Any]): Self = StObject.set(x, "toJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSONNull: Self = StObject.set(x, "toJSON", null)
+      inline def setToJSONNull: Self = StObject.set(x, "toJSON", null)
       
-      @scala.inline
-      def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
+      inline def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
     }
   }
 }

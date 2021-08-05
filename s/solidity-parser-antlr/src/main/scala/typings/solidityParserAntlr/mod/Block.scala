@@ -17,23 +17,18 @@ trait Block
 }
 object Block {
   
-  @scala.inline
-  def apply(statements: js.Array[Statement]): Block = {
+  inline def apply(statements: js.Array[Statement]): Block = {
     val __obj = js.Dynamic.literal(statements = statements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Block")
     __obj.asInstanceOf[Block]
   }
   
-  @scala.inline
-  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+  extension [Self <: Block](x: Self) {
     
-    @scala.inline
-    def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: js.Array[Statement]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: Statement*): Self = StObject.set(x, "statements", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

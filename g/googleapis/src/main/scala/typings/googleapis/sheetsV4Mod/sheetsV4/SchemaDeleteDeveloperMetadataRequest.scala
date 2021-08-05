@@ -17,19 +17,15 @@ trait SchemaDeleteDeveloperMetadataRequest extends StObject {
 }
 object SchemaDeleteDeveloperMetadataRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteDeveloperMetadataRequest = {
+  inline def apply(): SchemaDeleteDeveloperMetadataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteDeveloperMetadataRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteDeveloperMetadataRequestMutableBuilder[Self <: SchemaDeleteDeveloperMetadataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteDeveloperMetadataRequest](x: Self) {
     
-    @scala.inline
-    def setDataFilter(value: SchemaDataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
+    inline def setDataFilter(value: SchemaDataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
+    inline def setDataFilterUndefined: Self = StObject.set(x, "dataFilter", js.undefined)
   }
 }

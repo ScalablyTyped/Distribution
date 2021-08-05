@@ -19,17 +19,14 @@ object tabbedArgsTableMod {
   }
   object TabbedArgsTableProps {
     
-    @scala.inline
-    def apply(tabs: Record[String, ArgsTableProps]): TabbedArgsTableProps = {
+    inline def apply(tabs: Record[String, ArgsTableProps]): TabbedArgsTableProps = {
       val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabbedArgsTableProps]
     }
     
-    @scala.inline
-    implicit class TabbedArgsTablePropsMutableBuilder[Self <: TabbedArgsTableProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabbedArgsTableProps](x: Self) {
       
-      @scala.inline
-      def setTabs(value: Record[String, ArgsTableProps]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: Record[String, ArgsTableProps]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     }
   }
 }

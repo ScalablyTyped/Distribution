@@ -21,19 +21,15 @@ trait ASPxClientHitObject extends StObject {
 }
 object ASPxClientHitObject {
   
-  @scala.inline
-  def apply(AdditionalObject: ASPxClientWebChartElement, Object: ASPxClientWebChartElement): ASPxClientHitObject = {
+  inline def apply(AdditionalObject: ASPxClientWebChartElement, Object: ASPxClientWebChartElement): ASPxClientHitObject = {
     val __obj = js.Dynamic.literal(AdditionalObject = AdditionalObject.asInstanceOf[js.Any], Object = Object.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHitObject]
   }
   
-  @scala.inline
-  implicit class ASPxClientHitObjectMutableBuilder[Self <: ASPxClientHitObject] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHitObject](x: Self) {
     
-    @scala.inline
-    def setAdditionalObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "AdditionalObject", value.asInstanceOf[js.Any])
+    inline def setAdditionalObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "AdditionalObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
+    inline def setObject(value: ASPxClientWebChartElement): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
   }
 }

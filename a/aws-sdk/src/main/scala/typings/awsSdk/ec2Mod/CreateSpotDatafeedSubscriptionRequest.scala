@@ -23,28 +23,21 @@ trait CreateSpotDatafeedSubscriptionRequest extends StObject {
 }
 object CreateSpotDatafeedSubscriptionRequest {
   
-  @scala.inline
-  def apply(Bucket: String): CreateSpotDatafeedSubscriptionRequest = {
+  inline def apply(Bucket: String): CreateSpotDatafeedSubscriptionRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateSpotDatafeedSubscriptionRequest]
   }
   
-  @scala.inline
-  implicit class CreateSpotDatafeedSubscriptionRequestMutableBuilder[Self <: CreateSpotDatafeedSubscriptionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSpotDatafeedSubscriptionRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
   }
 }

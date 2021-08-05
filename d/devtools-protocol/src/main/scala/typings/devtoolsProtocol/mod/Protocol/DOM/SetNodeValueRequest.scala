@@ -18,19 +18,15 @@ trait SetNodeValueRequest extends StObject {
 }
 object SetNodeValueRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId, value: String): SetNodeValueRequest = {
+  inline def apply(nodeId: NodeId, value: String): SetNodeValueRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetNodeValueRequest]
   }
   
-  @scala.inline
-  implicit class SetNodeValueRequestMutableBuilder[Self <: SetNodeValueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetNodeValueRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

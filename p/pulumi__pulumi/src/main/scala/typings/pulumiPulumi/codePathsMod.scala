@@ -14,36 +14,27 @@ object codePathsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def computeCodePaths(): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")().asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-  @scala.inline
-  def computeCodePaths(extraIncludePaths: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-  @scala.inline
-  def computeCodePaths(extraIncludePaths: js.Array[String], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-  @scala.inline
-  def computeCodePaths(
+  inline def computeCodePaths(): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")().asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  inline def computeCodePaths(extraIncludePaths: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  inline def computeCodePaths(extraIncludePaths: js.Array[String], extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  inline def computeCodePaths(
     extraIncludePaths: js.Array[String],
     extraIncludePackages: js.Array[String],
     extraExcludePackages: js.Array[String]
   ): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-  @scala.inline
-  def computeCodePaths(
+  inline def computeCodePaths(
     extraIncludePaths: js.Array[String],
     extraIncludePackages: Unit,
     extraExcludePackages: js.Array[String]
   ): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-  @scala.inline
-  def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-  @scala.inline
-  def computeCodePaths(
+  inline def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  inline def computeCodePaths(
     extraIncludePaths: Unit,
     extraIncludePackages: js.Array[String],
     extraExcludePackages: js.Array[String]
   ): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-  @scala.inline
-  def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: Unit, extraExcludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
-  @scala.inline
-  def computeCodePaths(options: CodePathOptions): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  inline def computeCodePaths(extraIncludePaths: Unit, extraIncludePackages: Unit, extraExcludePackages: js.Array[String]): js.Promise[Map[String, Asset | Archive]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(extraIncludePaths.asInstanceOf[js.Any], extraIncludePackages.asInstanceOf[js.Any], extraExcludePackages.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
+  inline def computeCodePaths(options: CodePathOptions): js.Promise[Map[String, Asset | Archive]] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeCodePaths")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[String, Asset | Archive]]]
   
   trait CodePathOptions extends StObject {
     
@@ -76,47 +67,34 @@ object codePathsMod {
   }
   object CodePathOptions {
     
-    @scala.inline
-    def apply(): CodePathOptions = {
+    inline def apply(): CodePathOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CodePathOptions]
     }
     
-    @scala.inline
-    implicit class CodePathOptionsMutableBuilder[Self <: CodePathOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CodePathOptions](x: Self) {
       
-      @scala.inline
-      def setExtraExcludePackages(value: js.Array[String]): Self = StObject.set(x, "extraExcludePackages", value.asInstanceOf[js.Any])
+      inline def setExtraExcludePackages(value: js.Array[String]): Self = StObject.set(x, "extraExcludePackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraExcludePackagesUndefined: Self = StObject.set(x, "extraExcludePackages", js.undefined)
+      inline def setExtraExcludePackagesUndefined: Self = StObject.set(x, "extraExcludePackages", js.undefined)
       
-      @scala.inline
-      def setExtraExcludePackagesVarargs(value: String*): Self = StObject.set(x, "extraExcludePackages", js.Array(value :_*))
+      inline def setExtraExcludePackagesVarargs(value: String*): Self = StObject.set(x, "extraExcludePackages", js.Array(value :_*))
       
-      @scala.inline
-      def setExtraIncludePackages(value: js.Array[String]): Self = StObject.set(x, "extraIncludePackages", value.asInstanceOf[js.Any])
+      inline def setExtraIncludePackages(value: js.Array[String]): Self = StObject.set(x, "extraIncludePackages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraIncludePackagesUndefined: Self = StObject.set(x, "extraIncludePackages", js.undefined)
+      inline def setExtraIncludePackagesUndefined: Self = StObject.set(x, "extraIncludePackages", js.undefined)
       
-      @scala.inline
-      def setExtraIncludePackagesVarargs(value: String*): Self = StObject.set(x, "extraIncludePackages", js.Array(value :_*))
+      inline def setExtraIncludePackagesVarargs(value: String*): Self = StObject.set(x, "extraIncludePackages", js.Array(value :_*))
       
-      @scala.inline
-      def setExtraIncludePaths(value: js.Array[String]): Self = StObject.set(x, "extraIncludePaths", value.asInstanceOf[js.Any])
+      inline def setExtraIncludePaths(value: js.Array[String]): Self = StObject.set(x, "extraIncludePaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraIncludePathsUndefined: Self = StObject.set(x, "extraIncludePaths", js.undefined)
+      inline def setExtraIncludePathsUndefined: Self = StObject.set(x, "extraIncludePaths", js.undefined)
       
-      @scala.inline
-      def setExtraIncludePathsVarargs(value: String*): Self = StObject.set(x, "extraIncludePaths", js.Array(value :_*))
+      inline def setExtraIncludePathsVarargs(value: String*): Self = StObject.set(x, "extraIncludePaths", js.Array(value :_*))
       
-      @scala.inline
-      def setLogResource(value: Resource): Self = StObject.set(x, "logResource", value.asInstanceOf[js.Any])
+      inline def setLogResource(value: Resource): Self = StObject.set(x, "logResource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogResourceUndefined: Self = StObject.set(x, "logResource", js.undefined)
+      inline def setLogResourceUndefined: Self = StObject.set(x, "logResource", js.undefined)
     }
   }
 }

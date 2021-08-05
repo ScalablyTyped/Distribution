@@ -38,52 +38,37 @@ trait HTTPRequest extends StObject {
 }
 object HTTPRequest {
   
-  @scala.inline
-  def apply(): HTTPRequest = {
+  inline def apply(): HTTPRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HTTPRequest]
   }
   
-  @scala.inline
-  implicit class HTTPRequestMutableBuilder[Self <: HTTPRequest] (val x: Self) extends AnyVal {
+  extension [Self <: HTTPRequest](x: Self) {
     
-    @scala.inline
-    def setClientIP(value: IPString): Self = StObject.set(x, "ClientIP", value.asInstanceOf[js.Any])
+    inline def setClientIP(value: IPString): Self = StObject.set(x, "ClientIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIPUndefined: Self = StObject.set(x, "ClientIP", js.undefined)
+    inline def setClientIPUndefined: Self = StObject.set(x, "ClientIP", js.undefined)
     
-    @scala.inline
-    def setCountry(value: Country): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: Country): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "Country", js.undefined)
     
-    @scala.inline
-    def setHTTPVersion(value: HTTPVersion): Self = StObject.set(x, "HTTPVersion", value.asInstanceOf[js.Any])
+    inline def setHTTPVersion(value: HTTPVersion): Self = StObject.set(x, "HTTPVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTTPVersionUndefined: Self = StObject.set(x, "HTTPVersion", js.undefined)
+    inline def setHTTPVersionUndefined: Self = StObject.set(x, "HTTPVersion", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: HTTPHeaders): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: HTTPHeaders): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "Headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: HTTPHeader*): Self = StObject.set(x, "Headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: HTTPHeader*): Self = StObject.set(x, "Headers", js.Array(value :_*))
     
-    @scala.inline
-    def setMethod(value: HTTPMethod): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: HTTPMethod): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
     
-    @scala.inline
-    def setURI(value: URIString): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: URIString): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
+    inline def setURIUndefined: Self = StObject.set(x, "URI", js.undefined)
   }
 }

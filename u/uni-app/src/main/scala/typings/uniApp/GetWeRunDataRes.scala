@@ -23,31 +23,23 @@ trait GetWeRunDataRes extends StObject {
 }
 object GetWeRunDataRes {
   
-  @scala.inline
-  def apply(): GetWeRunDataRes = {
+  inline def apply(): GetWeRunDataRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetWeRunDataRes]
   }
   
-  @scala.inline
-  implicit class GetWeRunDataResMutableBuilder[Self <: GetWeRunDataRes] (val x: Self) extends AnyVal {
+  extension [Self <: GetWeRunDataRes](x: Self) {
     
-    @scala.inline
-    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedDataUndefined: Self = StObject.set(x, "encryptedData", js.undefined)
+    inline def setEncryptedDataUndefined: Self = StObject.set(x, "encryptedData", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    @scala.inline
-    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+    inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
   }
 }

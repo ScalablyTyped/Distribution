@@ -17,40 +17,29 @@ trait WindowsUpdateSettings extends StObject {
 }
 object WindowsUpdateSettings {
   
-  @scala.inline
-  def apply(): WindowsUpdateSettings = {
+  inline def apply(): WindowsUpdateSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsUpdateSettings]
   }
   
-  @scala.inline
-  implicit class WindowsUpdateSettingsMutableBuilder[Self <: WindowsUpdateSettings] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsUpdateSettings](x: Self) {
     
-    @scala.inline
-    def setClassifications(value: js.Array[String]): Self = StObject.set(x, "classifications", value.asInstanceOf[js.Any])
+    inline def setClassifications(value: js.Array[String]): Self = StObject.set(x, "classifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassificationsUndefined: Self = StObject.set(x, "classifications", js.undefined)
+    inline def setClassificationsUndefined: Self = StObject.set(x, "classifications", js.undefined)
     
-    @scala.inline
-    def setClassificationsVarargs(value: String*): Self = StObject.set(x, "classifications", js.Array(value :_*))
+    inline def setClassificationsVarargs(value: String*): Self = StObject.set(x, "classifications", js.Array(value :_*))
     
-    @scala.inline
-    def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+    inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
+    inline def setExcludesUndefined: Self = StObject.set(x, "excludes", js.undefined)
     
-    @scala.inline
-    def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
     
-    @scala.inline
-    def setExclusivePatches(value: js.Array[String]): Self = StObject.set(x, "exclusivePatches", value.asInstanceOf[js.Any])
+    inline def setExclusivePatches(value: js.Array[String]): Self = StObject.set(x, "exclusivePatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusivePatchesUndefined: Self = StObject.set(x, "exclusivePatches", js.undefined)
+    inline def setExclusivePatchesUndefined: Self = StObject.set(x, "exclusivePatches", js.undefined)
     
-    @scala.inline
-    def setExclusivePatchesVarargs(value: String*): Self = StObject.set(x, "exclusivePatches", js.Array(value :_*))
+    inline def setExclusivePatchesVarargs(value: String*): Self = StObject.set(x, "exclusivePatches", js.Array(value :_*))
   }
 }

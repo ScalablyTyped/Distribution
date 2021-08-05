@@ -19,31 +19,23 @@ trait QueryInterpretation extends StObject {
 }
 object QueryInterpretation {
   
-  @scala.inline
-  def apply(): QueryInterpretation = {
+  inline def apply(): QueryInterpretation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryInterpretation]
   }
   
-  @scala.inline
-  implicit class QueryInterpretationMutableBuilder[Self <: QueryInterpretation] (val x: Self) extends AnyVal {
+  extension [Self <: QueryInterpretation](x: Self) {
     
-    @scala.inline
-    def setInterpretationType(value: String): Self = StObject.set(x, "interpretationType", value.asInstanceOf[js.Any])
+    inline def setInterpretationType(value: String): Self = StObject.set(x, "interpretationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpretationTypeUndefined: Self = StObject.set(x, "interpretationType", js.undefined)
+    inline def setInterpretationTypeUndefined: Self = StObject.set(x, "interpretationType", js.undefined)
     
-    @scala.inline
-    def setInterpretedQuery(value: String): Self = StObject.set(x, "interpretedQuery", value.asInstanceOf[js.Any])
+    inline def setInterpretedQuery(value: String): Self = StObject.set(x, "interpretedQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpretedQueryUndefined: Self = StObject.set(x, "interpretedQuery", js.undefined)
+    inline def setInterpretedQueryUndefined: Self = StObject.set(x, "interpretedQuery", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

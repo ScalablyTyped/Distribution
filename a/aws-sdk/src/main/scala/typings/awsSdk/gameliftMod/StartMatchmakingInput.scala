@@ -23,28 +23,21 @@ trait StartMatchmakingInput extends StObject {
 }
 object StartMatchmakingInput {
   
-  @scala.inline
-  def apply(ConfigurationName: MatchmakingConfigurationName, Players: PlayerList): StartMatchmakingInput = {
+  inline def apply(ConfigurationName: MatchmakingConfigurationName, Players: PlayerList): StartMatchmakingInput = {
     val __obj = js.Dynamic.literal(ConfigurationName = ConfigurationName.asInstanceOf[js.Any], Players = Players.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMatchmakingInput]
   }
   
-  @scala.inline
-  implicit class StartMatchmakingInputMutableBuilder[Self <: StartMatchmakingInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartMatchmakingInput](x: Self) {
     
-    @scala.inline
-    def setConfigurationName(value: MatchmakingConfigurationName): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
+    inline def setConfigurationName(value: MatchmakingConfigurationName): Self = StObject.set(x, "ConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayers(value: PlayerList): Self = StObject.set(x, "Players", value.asInstanceOf[js.Any])
+    inline def setPlayers(value: PlayerList): Self = StObject.set(x, "Players", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value :_*))
+    inline def setPlayersVarargs(value: Player*): Self = StObject.set(x, "Players", js.Array(value :_*))
     
-    @scala.inline
-    def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
+    inline def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicketIdUndefined: Self = StObject.set(x, "TicketId", js.undefined)
+    inline def setTicketIdUndefined: Self = StObject.set(x, "TicketId", js.undefined)
   }
 }

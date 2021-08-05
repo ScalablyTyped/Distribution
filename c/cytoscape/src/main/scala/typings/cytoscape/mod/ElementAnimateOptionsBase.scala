@@ -31,49 +31,35 @@ trait ElementAnimateOptionsBase extends StObject {
 }
 object ElementAnimateOptionsBase {
   
-  @scala.inline
-  def apply(): ElementAnimateOptionsBase = {
+  inline def apply(): ElementAnimateOptionsBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElementAnimateOptionsBase]
   }
   
-  @scala.inline
-  implicit class ElementAnimateOptionsBaseMutableBuilder[Self <: ElementAnimateOptionsBase] (val x: Self) extends AnyVal {
+  extension [Self <: ElementAnimateOptionsBase](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: TransitionTimingFunction): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: TransitionTimingFunction): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    @scala.inline
-    def setStep(value: () => Unit): Self = StObject.set(x, "step", js.Any.fromFunction0(value))
+    inline def setStep(value: () => Unit): Self = StObject.set(x, "step", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StringDictionary[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StringDictionary[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ trait WikiPageCreationInformation
 }
 object WikiPageCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -37,19 +36,14 @@ object WikiPageCreationInformation {
     __obj.asInstanceOf[WikiPageCreationInformation]
   }
   
-  @scala.inline
-  implicit class WikiPageCreationInformationMutableBuilder[Self <: WikiPageCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: WikiPageCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_serverRelativeUrl(value: () => String): Self = StObject.set(x, "get_serverRelativeUrl", js.Any.fromFunction0(value))
+    inline def setGet_serverRelativeUrl(value: () => String): Self = StObject.set(x, "get_serverRelativeUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_wikiHtmlContent(value: () => String): Self = StObject.set(x, "get_wikiHtmlContent", js.Any.fromFunction0(value))
+    inline def setGet_wikiHtmlContent(value: () => String): Self = StObject.set(x, "get_wikiHtmlContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_serverRelativeUrl(value: String => Unit): Self = StObject.set(x, "set_serverRelativeUrl", js.Any.fromFunction1(value))
+    inline def setSet_serverRelativeUrl(value: String => Unit): Self = StObject.set(x, "set_serverRelativeUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_wikiHtmlContent(value: String => Unit): Self = StObject.set(x, "set_wikiHtmlContent", js.Any.fromFunction1(value))
+    inline def setSet_wikiHtmlContent(value: String => Unit): Self = StObject.set(x, "set_wikiHtmlContent", js.Any.fromFunction1(value))
   }
 }

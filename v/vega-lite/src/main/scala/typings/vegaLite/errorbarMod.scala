@@ -48,15 +48,13 @@ object errorbarMod {
   @js.native
   val errorBarNormalizer: CompositeMarkNormalizer[errorbar] = js.native
   
-  @scala.inline
-  def errorBarParams[M /* <: ErrorBar | ErrorBand */, MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */](
+  inline def errorBarParams[M /* <: ErrorBar | ErrorBand */, MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */](
     spec: GenericUnitSpec[ErrorEncoding[String], M | MD],
     compositeMark: M,
     config: Config[ExprRef | SignalRef]
   ): ContinuousAxisChannelDef[MD, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarParams")(spec.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ContinuousAxisChannelDef[MD, M]]
   
-  @scala.inline
-  def normalizeErrorBar(spec: GenericUnitSpec[ErrorEncoding[String], ErrorBar | ErrorBarDef], hasConfig: NormalizerParams): NormalizedLayerSpec | NormalizedUnitSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBar")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec | NormalizedUnitSpec]
+  inline def normalizeErrorBar(spec: GenericUnitSpec[ErrorEncoding[String], ErrorBar | ErrorBarDef], hasConfig: NormalizerParams): NormalizedLayerSpec | NormalizedUnitSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBar")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec | NormalizedUnitSpec]
   
   type ErrorBar = errorbar
   
@@ -67,11 +65,9 @@ object errorbarMod {
   trait ErrorBarCenter extends StObject
   object ErrorBarCenter {
     
-    @scala.inline
-    def mean: typings.vegaLite.vegaLiteStrings.mean = "mean".asInstanceOf[typings.vegaLite.vegaLiteStrings.mean]
+    inline def mean: typings.vegaLite.vegaLiteStrings.mean = "mean".asInstanceOf[typings.vegaLite.vegaLiteStrings.mean]
     
-    @scala.inline
-    def median: typings.vegaLite.vegaLiteStrings.median = "median".asInstanceOf[typings.vegaLite.vegaLiteStrings.median]
+    inline def median: typings.vegaLite.vegaLiteStrings.median = "median".asInstanceOf[typings.vegaLite.vegaLiteStrings.median]
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -106,38 +102,28 @@ object errorbarMod {
   }
   object ErrorBarConfig {
     
-    @scala.inline
-    def apply(): ErrorBarConfig = {
+    inline def apply(): ErrorBarConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorBarConfig]
     }
     
-    @scala.inline
-    implicit class ErrorBarConfigMutableBuilder[Self <: ErrorBarConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorBarConfig](x: Self) {
       
-      @scala.inline
-      def setCenter(value: ErrorBarCenter): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: ErrorBarCenter): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setExtent(value: ErrorBarExtent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: ErrorBarExtent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+      inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+      inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     }
   }
   
@@ -150,20 +136,16 @@ object errorbarMod {
   }
   object ErrorBarConfigMixins {
     
-    @scala.inline
-    def apply(): ErrorBarConfigMixins = {
+    inline def apply(): ErrorBarConfigMixins = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorBarConfigMixins]
     }
     
-    @scala.inline
-    implicit class ErrorBarConfigMixinsMutableBuilder[Self <: ErrorBarConfigMixins] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorBarConfigMixins](x: Self) {
       
-      @scala.inline
-      def setErrorbar(value: ErrorBarConfig): Self = StObject.set(x, "errorbar", value.asInstanceOf[js.Any])
+      inline def setErrorbar(value: ErrorBarConfig): Self = StObject.set(x, "errorbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorbarUndefined: Self = StObject.set(x, "errorbar", js.undefined)
+      inline def setErrorbarUndefined: Self = StObject.set(x, "errorbar", js.undefined)
     }
   }
   
@@ -178,17 +160,13 @@ object errorbarMod {
   trait ErrorBarExtent extends StObject
   object ErrorBarExtent {
     
-    @scala.inline
-    def ci: typings.vegaLite.vegaLiteStrings.ci = "ci".asInstanceOf[typings.vegaLite.vegaLiteStrings.ci]
+    inline def ci: typings.vegaLite.vegaLiteStrings.ci = "ci".asInstanceOf[typings.vegaLite.vegaLiteStrings.ci]
     
-    @scala.inline
-    def iqr: typings.vegaLite.vegaLiteStrings.iqr = "iqr".asInstanceOf[typings.vegaLite.vegaLiteStrings.iqr]
+    inline def iqr: typings.vegaLite.vegaLiteStrings.iqr = "iqr".asInstanceOf[typings.vegaLite.vegaLiteStrings.iqr]
     
-    @scala.inline
-    def stderr: typings.vegaLite.vegaLiteStrings.stderr = "stderr".asInstanceOf[typings.vegaLite.vegaLiteStrings.stderr]
+    inline def stderr: typings.vegaLite.vegaLiteStrings.stderr = "stderr".asInstanceOf[typings.vegaLite.vegaLiteStrings.stderr]
     
-    @scala.inline
-    def stdev: typings.vegaLite.vegaLiteStrings.stdev = "stdev".asInstanceOf[typings.vegaLite.vegaLiteStrings.stdev]
+    inline def stdev: typings.vegaLite.vegaLiteStrings.stdev = "stdev".asInstanceOf[typings.vegaLite.vegaLiteStrings.stdev]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -240,83 +218,58 @@ object errorbarMod {
   }
   object ErrorEncoding {
     
-    @scala.inline
-    def apply[F /* <: Field */](): ErrorEncoding[F] = {
+    inline def apply[F /* <: Field */](): ErrorEncoding[F] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorEncoding[F]]
     }
     
-    @scala.inline
-    implicit class ErrorEncodingMutableBuilder[Self <: ErrorEncoding[?], F /* <: Field */] (val x: Self & ErrorEncoding[F]) extends AnyVal {
+    extension [Self <: ErrorEncoding[?], F /* <: Field */](x: Self & ErrorEncoding[F]) {
       
-      @scala.inline
-      def setColor(value: ColorDef[F]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: ColorDef[F]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDetail(value: (FieldDefWithoutScale[F, StandardType]) | (js.Array[FieldDefWithoutScale[F, StandardType]])): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+      inline def setDetail(value: (FieldDefWithoutScale[F, StandardType]) | (js.Array[FieldDefWithoutScale[F, StandardType]])): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+      inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
-      @scala.inline
-      def setDetailVarargs(value: (FieldDefWithoutScale[F, StandardType])*): Self = StObject.set(x, "detail", js.Array(value :_*))
+      inline def setDetailVarargs(value: (FieldDefWithoutScale[F, StandardType])*): Self = StObject.set(x, "detail", js.Array(value :_*))
       
-      @scala.inline
-      def setOpacity(value: NumericMarkPropDef[F]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: NumericMarkPropDef[F]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setX(value: PositionDef[F]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: PositionDef[F]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2(value: Position2Def[F]): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+      inline def setX2(value: Position2Def[F]): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
+      inline def setX2Undefined: Self = StObject.set(x, "x2", js.undefined)
       
-      @scala.inline
-      def setXError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError", value.asInstanceOf[js.Any])
+      inline def setXError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXError2(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError2", value.asInstanceOf[js.Any])
+      inline def setXError2(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXError2Undefined: Self = StObject.set(x, "xError2", js.undefined)
+      inline def setXError2Undefined: Self = StObject.set(x, "xError2", js.undefined)
       
-      @scala.inline
-      def setXErrorUndefined: Self = StObject.set(x, "xError", js.undefined)
+      inline def setXErrorUndefined: Self = StObject.set(x, "xError", js.undefined)
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: PositionDef[F]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: PositionDef[F]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2(value: Position2Def[F]): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: Position2Def[F]): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+      inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
       
-      @scala.inline
-      def setYError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "yError", value.asInstanceOf[js.Any])
+      inline def setYError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "yError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYError2(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "yError2", value.asInstanceOf[js.Any])
+      inline def setYError2(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "yError2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYError2Undefined: Self = StObject.set(x, "yError2", js.undefined)
+      inline def setYError2Undefined: Self = StObject.set(x, "yError2", js.undefined)
       
-      @scala.inline
-      def setYErrorUndefined: Self = StObject.set(x, "yError", js.undefined)
+      inline def setYErrorUndefined: Self = StObject.set(x, "yError", js.undefined)
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -344,38 +297,28 @@ object errorbarMod {
   }
   object ErrorExtraEncoding {
     
-    @scala.inline
-    def apply[F /* <: Field */](): ErrorExtraEncoding[F] = {
+    inline def apply[F /* <: Field */](): ErrorExtraEncoding[F] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorExtraEncoding[F]]
     }
     
-    @scala.inline
-    implicit class ErrorExtraEncodingMutableBuilder[Self <: ErrorExtraEncoding[?], F /* <: Field */] (val x: Self & ErrorExtraEncoding[F]) extends AnyVal {
+    extension [Self <: ErrorExtraEncoding[?], F /* <: Field */](x: Self & ErrorExtraEncoding[F]) {
       
-      @scala.inline
-      def setXError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError", value.asInstanceOf[js.Any])
+      inline def setXError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXError2(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError2", value.asInstanceOf[js.Any])
+      inline def setXError2(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXError2Undefined: Self = StObject.set(x, "xError2", js.undefined)
+      inline def setXError2Undefined: Self = StObject.set(x, "xError2", js.undefined)
       
-      @scala.inline
-      def setXErrorUndefined: Self = StObject.set(x, "xError", js.undefined)
+      inline def setXErrorUndefined: Self = StObject.set(x, "xError", js.undefined)
       
-      @scala.inline
-      def setYError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "yError", value.asInstanceOf[js.Any])
+      inline def setYError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "yError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYError2(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "yError2", value.asInstanceOf[js.Any])
+      inline def setYError2(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "yError2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYError2Undefined: Self = StObject.set(x, "yError2", js.undefined)
+      inline def setYError2Undefined: Self = StObject.set(x, "yError2", js.undefined)
       
-      @scala.inline
-      def setYErrorUndefined: Self = StObject.set(x, "yError", js.undefined)
+      inline def setYErrorUndefined: Self = StObject.set(x, "yError", js.undefined)
     }
   }
   
@@ -387,13 +330,10 @@ object errorbarMod {
   trait ErrorInputType extends StObject
   object ErrorInputType {
     
-    @scala.inline
-    def `aggregated-error`: typings.vegaLite.vegaLiteStrings.`aggregated-error` = "aggregated-error".asInstanceOf[typings.vegaLite.vegaLiteStrings.`aggregated-error`]
+    inline def `aggregated-error`: typings.vegaLite.vegaLiteStrings.`aggregated-error` = "aggregated-error".asInstanceOf[typings.vegaLite.vegaLiteStrings.`aggregated-error`]
     
-    @scala.inline
-    def `aggregated-upper-lower`: typings.vegaLite.vegaLiteStrings.`aggregated-upper-lower` = "aggregated-upper-lower".asInstanceOf[typings.vegaLite.vegaLiteStrings.`aggregated-upper-lower`]
+    inline def `aggregated-upper-lower`: typings.vegaLite.vegaLiteStrings.`aggregated-upper-lower` = "aggregated-upper-lower".asInstanceOf[typings.vegaLite.vegaLiteStrings.`aggregated-upper-lower`]
     
-    @scala.inline
-    def raw: typings.vegaLite.vegaLiteStrings.raw = "raw".asInstanceOf[typings.vegaLite.vegaLiteStrings.raw]
+    inline def raw: typings.vegaLite.vegaLiteStrings.raw = "raw".asInstanceOf[typings.vegaLite.vegaLiteStrings.raw]
   }
 }

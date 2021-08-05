@@ -107,94 +107,65 @@ trait SceneViewProperties
 }
 object SceneViewProperties {
   
-  @scala.inline
-  def apply(): SceneViewProperties = {
+  inline def apply(): SceneViewProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SceneViewProperties]
   }
   
-  @scala.inline
-  implicit class SceneViewPropertiesMutableBuilder[Self <: SceneViewProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewProperties](x: Self) {
     
-    @scala.inline
-    def setAlphaCompositingEnabled(value: Boolean): Self = StObject.set(x, "alphaCompositingEnabled", value.asInstanceOf[js.Any])
+    inline def setAlphaCompositingEnabled(value: Boolean): Self = StObject.set(x, "alphaCompositingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaCompositingEnabledUndefined: Self = StObject.set(x, "alphaCompositingEnabled", js.undefined)
+    inline def setAlphaCompositingEnabledUndefined: Self = StObject.set(x, "alphaCompositingEnabled", js.undefined)
     
-    @scala.inline
-    def setCamera(value: CameraProperties): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: CameraProperties): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    @scala.inline
-    def setCenter(value: PointProperties | js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: PointProperties | js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
+    inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value :_*))
     
-    @scala.inline
-    def setClippingArea(value: ExtentProperties): Self = StObject.set(x, "clippingArea", value.asInstanceOf[js.Any])
+    inline def setClippingArea(value: ExtentProperties): Self = StObject.set(x, "clippingArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClippingAreaUndefined: Self = StObject.set(x, "clippingArea", js.undefined)
+    inline def setClippingAreaUndefined: Self = StObject.set(x, "clippingArea", js.undefined)
     
-    @scala.inline
-    def setConstraints(value: SceneViewConstraintsProperties): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+    inline def setConstraints(value: SceneViewConstraintsProperties): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+    inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: SceneViewEnvironmentProperties): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: SceneViewEnvironmentProperties): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
     
-    @scala.inline
-    def setHighlightOptions(value: SceneViewHighlightOptionsProperties): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
+    inline def setHighlightOptions(value: SceneViewHighlightOptionsProperties): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightOptionsUndefined: Self = StObject.set(x, "highlightOptions", js.undefined)
+    inline def setHighlightOptionsUndefined: Self = StObject.set(x, "highlightOptions", js.undefined)
     
-    @scala.inline
-    def setQualityProfile(value: low | medium | high): Self = StObject.set(x, "qualityProfile", value.asInstanceOf[js.Any])
+    inline def setQualityProfile(value: low | medium | high): Self = StObject.set(x, "qualityProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityProfileUndefined: Self = StObject.set(x, "qualityProfile", js.undefined)
+    inline def setQualityProfileUndefined: Self = StObject.set(x, "qualityProfile", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setViewingMode(value: global | local): Self = StObject.set(x, "viewingMode", value.asInstanceOf[js.Any])
+    inline def setViewingMode(value: global | local): Self = StObject.set(x, "viewingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewingModeUndefined: Self = StObject.set(x, "viewingMode", js.undefined)
+    inline def setViewingModeUndefined: Self = StObject.set(x, "viewingMode", js.undefined)
     
-    @scala.inline
-    def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
+    inline def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
+    inline def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

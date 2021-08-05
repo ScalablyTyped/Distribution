@@ -14,28 +14,21 @@ trait InstallApp extends StObject {
 }
 object InstallApp {
   
-  @scala.inline
-  def apply(packageName: String): InstallApp = {
+  inline def apply(packageName: String): InstallApp = {
     val __obj = js.Dynamic.literal(packageName = packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallApp]
   }
   
-  @scala.inline
-  implicit class InstallAppMutableBuilder[Self <: InstallApp] (val x: Self) extends AnyVal {
+  extension [Self <: InstallApp](x: Self) {
     
-    @scala.inline
-    def setInstallApp(value: Boolean): Self = StObject.set(x, "installApp", value.asInstanceOf[js.Any])
+    inline def setInstallApp(value: Boolean): Self = StObject.set(x, "installApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallAppUndefined: Self = StObject.set(x, "installApp", js.undefined)
+    inline def setInstallAppUndefined: Self = StObject.set(x, "installApp", js.undefined)
     
-    @scala.inline
-    def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
+    inline def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
+    inline def setMinimumVersionUndefined: Self = StObject.set(x, "minimumVersion", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
   }
 }

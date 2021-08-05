@@ -26,11 +26,11 @@ object mapMod {
       */
     def this(source: IIterator[T], fn: js.Function2[/* value */ T, /* index */ Double, U]) = this()
     
-    var _fn: js.Any = js.native
+    /* private */ var _fn: js.Any = js.native
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -65,6 +65,5 @@ object mapMod {
     override def next(): js.UndefOr[U] = js.native
   }
   
-  @scala.inline
-  def map[T, U](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, U]): IIterator[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IIterator[U]]
+  inline def map[T, U](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, U]): IIterator[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IIterator[U]]
 }

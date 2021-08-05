@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlFixedFormatQuality extends StObject
 object XlFixedFormatQuality {
   
-  @scala.inline
-  def xlQualityMinimum: `1` = 1.asInstanceOf[`1`]
+  inline def xlQualityMinimum: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlQualityStandard: `0` = 0.asInstanceOf[`0`]
+  inline def xlQualityStandard: `0` = 0.asInstanceOf[`0`]
 }

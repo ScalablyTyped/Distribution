@@ -13,22 +13,17 @@ trait WorkbookFilter
 }
 object WorkbookFilter {
   
-  @scala.inline
-  def apply(): WorkbookFilter = {
+  inline def apply(): WorkbookFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookFilter]
   }
   
-  @scala.inline
-  implicit class WorkbookFilterMutableBuilder[Self <: WorkbookFilter] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookFilter](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: NullableOption[WorkbookFilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: NullableOption[WorkbookFilterCriteria]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaNull: Self = StObject.set(x, "criteria", null)
+    inline def setCriteriaNull: Self = StObject.set(x, "criteria", null)
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
   }
 }

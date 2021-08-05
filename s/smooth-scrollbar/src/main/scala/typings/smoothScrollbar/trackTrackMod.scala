@@ -17,7 +17,7 @@ object trackTrackMod {
     def this(direction: TrackDirection) = this()
     def this(direction: TrackDirection, thumbMinSize: Double) = this()
     
-    var _isShown: js.Any = js.native
+    /* private */ var _isShown: js.Any = js.native
     
     /* CompleteClass */
     override def attachTo(container: HTMLElement): Unit = js.native

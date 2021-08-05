@@ -21,28 +21,21 @@ trait PropertyMetadata extends StObject {
 }
 object PropertyMetadata {
   
-  @scala.inline
-  def apply(): PropertyMetadata = {
+  inline def apply(): PropertyMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyMetadata]
   }
   
-  @scala.inline
-  implicit class PropertyMetadataMutableBuilder[Self <: PropertyMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyMetadata](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setRights(value: String): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
+    inline def setRights(value: String): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightsUndefined: Self = StObject.set(x, "rights", js.undefined)
+    inline def setRightsUndefined: Self = StObject.set(x, "rights", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object scriptsIsFocusedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

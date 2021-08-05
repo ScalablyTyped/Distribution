@@ -38,20 +38,16 @@ object mod {
   }
   object SlideRenderProps {
     
-    @scala.inline
-    def apply(index: Double, key: Double): SlideRenderProps = {
+    inline def apply(index: Double, key: Double): SlideRenderProps = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[SlideRenderProps]
     }
     
-    @scala.inline
-    implicit class SlideRenderPropsMutableBuilder[Self <: SlideRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SlideRenderProps](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,26 +63,20 @@ object mod {
   }
   object WithAutoPlay {
     
-    @scala.inline
-    def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithAutoPlay = {
+    inline def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithAutoPlay = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex))
       __obj.asInstanceOf[WithAutoPlay]
     }
     
-    @scala.inline
-    implicit class WithAutoPlayMutableBuilder[Self <: WithAutoPlay] (val x: Self) extends AnyVal {
+    extension [Self <: WithAutoPlay](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
+      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSwitching(value: (/* index */ Double, /* type */ OnSwitchingCallbackTypeDescriptor) => Unit): Self = StObject.set(x, "onSwitching", js.Any.fromFunction2(value))
+      inline def setOnSwitching(value: (/* index */ Double, /* type */ OnSwitchingCallbackTypeDescriptor) => Unit): Self = StObject.set(x, "onSwitching", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnSwitchingUndefined: Self = StObject.set(x, "onSwitching", js.undefined)
+      inline def setOnSwitchingUndefined: Self = StObject.set(x, "onSwitching", js.undefined)
     }
   }
   
@@ -106,44 +96,32 @@ object mod {
   }
   object WithAutoPlayProps {
     
-    @scala.inline
-    def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithAutoPlayProps = {
+    inline def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithAutoPlayProps = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex))
       __obj.asInstanceOf[WithAutoPlayProps]
     }
     
-    @scala.inline
-    implicit class WithAutoPlayPropsMutableBuilder[Self <: WithAutoPlayProps] (val x: Self) extends AnyVal {
+    extension [Self <: WithAutoPlayProps](x: Self) {
       
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setDirection(value: incremental | decremental): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: incremental | decremental): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
+      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
+      inline def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideCountUndefined: Self = StObject.set(x, "slideCount", js.undefined)
+      inline def setSlideCountUndefined: Self = StObject.set(x, "slideCount", js.undefined)
     }
   }
   
@@ -155,20 +133,16 @@ object mod {
   }
   object WithBindKeyboard {
     
-    @scala.inline
-    def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithBindKeyboard = {
+    inline def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithBindKeyboard = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex))
       __obj.asInstanceOf[WithBindKeyboard]
     }
     
-    @scala.inline
-    implicit class WithBindKeyboardMutableBuilder[Self <: WithBindKeyboard] (val x: Self) extends AnyVal {
+    extension [Self <: WithBindKeyboard](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
+      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
     }
   }
   
@@ -184,34 +158,26 @@ object mod {
   }
   object WithBindKeyboardProps {
     
-    @scala.inline
-    def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithBindKeyboardProps = {
+    inline def apply(index: Double, onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit): WithBindKeyboardProps = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], onChangeIndex = js.Any.fromFunction2(onChangeIndex))
       __obj.asInstanceOf[WithBindKeyboardProps]
     }
     
-    @scala.inline
-    implicit class WithBindKeyboardPropsMutableBuilder[Self <: WithBindKeyboardProps] (val x: Self) extends AnyVal {
+    extension [Self <: WithBindKeyboardProps](x: Self) {
       
-      @scala.inline
-      def setAxis(
+      inline def setAxis(
         value: typings.reactSwipeableViewsUtils.reactSwipeableViewsUtilsStrings.x | `x-reverse` | y | `y-reverse`
       ): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
+      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSlidecount(value: Double): Self = StObject.set(x, "slidecount", value.asInstanceOf[js.Any])
+      inline def setSlidecount(value: Double): Self = StObject.set(x, "slidecount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidecountUndefined: Self = StObject.set(x, "slidecount", js.undefined)
+      inline def setSlidecountUndefined: Self = StObject.set(x, "slidecount", js.undefined)
     }
   }
   
@@ -225,8 +191,7 @@ object mod {
   }
   object WithVirtualize {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       index: Double,
       onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit,
       slideRenderer: SlideRendererCallback => ReactNode
@@ -235,17 +200,13 @@ object mod {
       __obj.asInstanceOf[WithVirtualize]
     }
     
-    @scala.inline
-    implicit class WithVirtualizeMutableBuilder[Self <: WithVirtualize] (val x: Self) extends AnyVal {
+    extension [Self <: WithVirtualize](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
+      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSlideRenderer(value: SlideRendererCallback => ReactNode): Self = StObject.set(x, "slideRenderer", js.Any.fromFunction1(value))
+      inline def setSlideRenderer(value: SlideRendererCallback => ReactNode): Self = StObject.set(x, "slideRenderer", js.Any.fromFunction1(value))
     }
   }
   
@@ -269,8 +230,7 @@ object mod {
   }
   object WithVirtualizeProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       index: Double,
       onChangeIndex: (/* index */ Double, /* indexLatest */ Double) => Unit,
       slideRenderer: /* render */ SlideRenderProps => ReactNode
@@ -279,47 +239,33 @@ object mod {
       __obj.asInstanceOf[WithVirtualizeProps]
     }
     
-    @scala.inline
-    implicit class WithVirtualizePropsMutableBuilder[Self <: WithVirtualizeProps] (val x: Self) extends AnyVal {
+    extension [Self <: WithVirtualizeProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
+      inline def setOnChangeIndex(value: (/* index */ Double, /* indexLatest */ Double) => Unit): Self = StObject.set(x, "onChangeIndex", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTransitionEnd(value: () => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction0(value))
+      inline def setOnTransitionEnd(value: () => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
+      inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      @scala.inline
-      def setOverscanSlideAfter(value: Double): Self = StObject.set(x, "overscanSlideAfter", value.asInstanceOf[js.Any])
+      inline def setOverscanSlideAfter(value: Double): Self = StObject.set(x, "overscanSlideAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverscanSlideAfterUndefined: Self = StObject.set(x, "overscanSlideAfter", js.undefined)
+      inline def setOverscanSlideAfterUndefined: Self = StObject.set(x, "overscanSlideAfter", js.undefined)
       
-      @scala.inline
-      def setOverscanSlideBefore(value: Double): Self = StObject.set(x, "overscanSlideBefore", value.asInstanceOf[js.Any])
+      inline def setOverscanSlideBefore(value: Double): Self = StObject.set(x, "overscanSlideBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverscanSlideBeforeUndefined: Self = StObject.set(x, "overscanSlideBefore", js.undefined)
+      inline def setOverscanSlideBeforeUndefined: Self = StObject.set(x, "overscanSlideBefore", js.undefined)
       
-      @scala.inline
-      def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
+      inline def setSlideCount(value: Double): Self = StObject.set(x, "slideCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideCountUndefined: Self = StObject.set(x, "slideCount", js.undefined)
+      inline def setSlideCountUndefined: Self = StObject.set(x, "slideCount", js.undefined)
       
-      @scala.inline
-      def setSlideRenderer(value: /* render */ SlideRenderProps => ReactNode): Self = StObject.set(x, "slideRenderer", js.Any.fromFunction1(value))
+      inline def setSlideRenderer(value: /* render */ SlideRenderProps => ReactNode): Self = StObject.set(x, "slideRenderer", js.Any.fromFunction1(value))
     }
   }
 }

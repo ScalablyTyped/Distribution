@@ -21,34 +21,25 @@ trait MultiVarWrite extends StObject {
 }
 object MultiVarWrite {
   
-  @scala.inline
-  def apply(Amount: Double, Area: Area, Data: Buffer, Start: Double, WordLen: WordLen): MultiVarWrite = {
+  inline def apply(Amount: Double, Area: Area, Data: Buffer, Start: Double, WordLen: WordLen): MultiVarWrite = {
     val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Area = Area.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any], WordLen = WordLen.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiVarWrite]
   }
   
-  @scala.inline
-  implicit class MultiVarWriteMutableBuilder[Self <: MultiVarWrite] (val x: Self) extends AnyVal {
+  extension [Self <: MultiVarWrite](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArea(value: Area): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
+    inline def setArea(value: Area): Self = StObject.set(x, "Area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBNumber(value: Double): Self = StObject.set(x, "DBNumber", value.asInstanceOf[js.Any])
+    inline def setDBNumber(value: Double): Self = StObject.set(x, "DBNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBNumberUndefined: Self = StObject.set(x, "DBNumber", js.undefined)
+    inline def setDBNumberUndefined: Self = StObject.set(x, "DBNumber", js.undefined)
     
-    @scala.inline
-    def setData(value: Buffer): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordLen(value: WordLen): Self = StObject.set(x, "WordLen", value.asInstanceOf[js.Any])
+    inline def setWordLen(value: WordLen): Self = StObject.set(x, "WordLen", value.asInstanceOf[js.Any])
   }
 }

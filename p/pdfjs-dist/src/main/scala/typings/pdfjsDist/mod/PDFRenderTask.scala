@@ -18,16 +18,13 @@ trait PDFRenderTask
 }
 object PDFRenderTask {
   
-  @scala.inline
-  def apply(cancel: () => Unit, promise: PDFPromise[PDFPageProxy]): PDFRenderTask = {
+  inline def apply(cancel: () => Unit, promise: PDFPromise[PDFPageProxy]): PDFRenderTask = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFRenderTask]
   }
   
-  @scala.inline
-  implicit class PDFRenderTaskMutableBuilder[Self <: PDFRenderTask] (val x: Self) extends AnyVal {
+  extension [Self <: PDFRenderTask](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }
 }

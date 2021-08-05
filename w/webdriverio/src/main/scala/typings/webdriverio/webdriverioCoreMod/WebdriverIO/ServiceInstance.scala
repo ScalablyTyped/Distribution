@@ -19,33 +19,25 @@ trait ServiceInstance
 }
 object ServiceInstance {
   
-  @scala.inline
-  def apply(): ServiceInstance = {
+  inline def apply(): ServiceInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceInstance]
   }
   
-  @scala.inline
-  implicit class ServiceInstanceMutableBuilder[Self <: ServiceInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceInstance](x: Self) {
     
-    @scala.inline
-    def setCapabilities(
+    inline def setCapabilities(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebDriver.DesiredCapabilities */ js.Any
     ): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+    inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
     
-    @scala.inline
-    def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setOptions(value: Record[String, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Record[String, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

@@ -27,61 +27,43 @@ trait TestSuite
 }
 object TestSuite {
   
-  @scala.inline
-  def apply(): TestSuite = {
+  inline def apply(): TestSuite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestSuite]
   }
   
-  @scala.inline
-  implicit class TestSuiteMutableBuilder[Self <: TestSuite] (val x: Self) extends AnyVal {
+  extension [Self <: TestSuite](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRunCount(value: Double): Self = StObject.set(x, "runCount", value.asInstanceOf[js.Any])
+    inline def setRunCount(value: Double): Self = StObject.set(x, "runCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunCountUndefined: Self = StObject.set(x, "runCount", js.undefined)
+    inline def setRunCountUndefined: Self = StObject.set(x, "runCount", js.undefined)
     
-    @scala.inline
-    def setTestDuration(value: Duration): Self = StObject.set(x, "testDuration", value.asInstanceOf[js.Any])
+    inline def setTestDuration(value: Duration): Self = StObject.set(x, "testDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestDurationUndefined: Self = StObject.set(x, "testDuration", js.undefined)
+    inline def setTestDurationUndefined: Self = StObject.set(x, "testDuration", js.undefined)
     
-    @scala.inline
-    def setTestsuiteFinishedAt(value: Instant): Self = StObject.set(x, "testsuiteFinishedAt", value.asInstanceOf[js.Any])
+    inline def setTestsuiteFinishedAt(value: Instant): Self = StObject.set(x, "testsuiteFinishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsuiteFinishedAtUndefined: Self = StObject.set(x, "testsuiteFinishedAt", js.undefined)
+    inline def setTestsuiteFinishedAtUndefined: Self = StObject.set(x, "testsuiteFinishedAt", js.undefined)
     
-    @scala.inline
-    def setTestsuiteStartedAt(value: Instant): Self = StObject.set(x, "testsuiteStartedAt", value.asInstanceOf[js.Any])
+    inline def setTestsuiteStartedAt(value: Instant): Self = StObject.set(x, "testsuiteStartedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsuiteStartedAtUndefined: Self = StObject.set(x, "testsuiteStartedAt", js.undefined)
+    inline def setTestsuiteStartedAtUndefined: Self = StObject.set(x, "testsuiteStartedAt", js.undefined)
     
-    @scala.inline
-    def setTotalDuration(value: Duration): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
+    inline def setTotalDuration(value: Duration): Self = StObject.set(x, "totalDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalDurationUndefined: Self = StObject.set(x, "totalDuration", js.undefined)
+    inline def setTotalDurationUndefined: Self = StObject.set(x, "totalDuration", js.undefined)
     
-    @scala.inline
-    def setUnexpected(value: Double): Self = StObject.set(x, "unexpected", value.asInstanceOf[js.Any])
+    inline def setUnexpected(value: Double): Self = StObject.set(x, "unexpected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnexpectedUndefined: Self = StObject.set(x, "unexpected", js.undefined)
+    inline def setUnexpectedUndefined: Self = StObject.set(x, "unexpected", js.undefined)
     
-    @scala.inline
-    def setWithFailures(value: Double): Self = StObject.set(x, "withFailures", value.asInstanceOf[js.Any])
+    inline def setWithFailures(value: Double): Self = StObject.set(x, "withFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithFailuresUndefined: Self = StObject.set(x, "withFailures", js.undefined)
+    inline def setWithFailuresUndefined: Self = StObject.set(x, "withFailures", js.undefined)
   }
 }

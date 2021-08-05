@@ -13,19 +13,15 @@ trait CreateBusinessReportScheduleResponse extends StObject {
 }
 object CreateBusinessReportScheduleResponse {
   
-  @scala.inline
-  def apply(): CreateBusinessReportScheduleResponse = {
+  inline def apply(): CreateBusinessReportScheduleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBusinessReportScheduleResponse]
   }
   
-  @scala.inline
-  implicit class CreateBusinessReportScheduleResponseMutableBuilder[Self <: CreateBusinessReportScheduleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBusinessReportScheduleResponse](x: Self) {
     
-    @scala.inline
-    def setScheduleArn(value: Arn): Self = StObject.set(x, "ScheduleArn", value.asInstanceOf[js.Any])
+    inline def setScheduleArn(value: Arn): Self = StObject.set(x, "ScheduleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleArnUndefined: Self = StObject.set(x, "ScheduleArn", js.undefined)
+    inline def setScheduleArnUndefined: Self = StObject.set(x, "ScheduleArn", js.undefined)
   }
 }

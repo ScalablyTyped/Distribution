@@ -13,8 +13,7 @@ object conv3DMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def conv3D(args: AttrsConv3DAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv3D")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def conv3D(args: AttrsConv3DAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv3D")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Conv3D", "conv3DConfig")
   @js.native

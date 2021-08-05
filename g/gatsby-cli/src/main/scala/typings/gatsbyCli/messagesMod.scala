@@ -25,32 +25,24 @@ object messagesMod {
   }
   object IMessageProps {
     
-    @scala.inline
-    def apply(level: ActivityLogLevels | LogLevels, text: String): IMessageProps = {
+    inline def apply(level: ActivityLogLevels | LogLevels, text: String): IMessageProps = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[IMessageProps]
     }
     
-    @scala.inline
-    implicit class IMessagePropsMutableBuilder[Self <: IMessageProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMessageProps](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setLevel(value: ActivityLogLevels | LogLevels): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: ActivityLogLevels | LogLevels): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+      inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait GetBackupPlanFromJSONOutput extends StObject {
 }
 object GetBackupPlanFromJSONOutput {
   
-  @scala.inline
-  def apply(): GetBackupPlanFromJSONOutput = {
+  inline def apply(): GetBackupPlanFromJSONOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBackupPlanFromJSONOutput]
   }
   
-  @scala.inline
-  implicit class GetBackupPlanFromJSONOutputMutableBuilder[Self <: GetBackupPlanFromJSONOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackupPlanFromJSONOutput](x: Self) {
     
-    @scala.inline
-    def setBackupPlan(value: BackupPlan): Self = StObject.set(x, "BackupPlan", value.asInstanceOf[js.Any])
+    inline def setBackupPlan(value: BackupPlan): Self = StObject.set(x, "BackupPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanUndefined: Self = StObject.set(x, "BackupPlan", js.undefined)
+    inline def setBackupPlanUndefined: Self = StObject.set(x, "BackupPlan", js.undefined)
   }
 }

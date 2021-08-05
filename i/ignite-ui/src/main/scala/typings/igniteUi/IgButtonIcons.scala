@@ -18,25 +18,19 @@ trait IgButtonIcons
 }
 object IgButtonIcons {
   
-  @scala.inline
-  def apply(): IgButtonIcons = {
+  inline def apply(): IgButtonIcons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgButtonIcons]
   }
   
-  @scala.inline
-  implicit class IgButtonIconsMutableBuilder[Self <: IgButtonIcons] (val x: Self) extends AnyVal {
+  extension [Self <: IgButtonIcons](x: Self) {
     
-    @scala.inline
-    def setPrimary(value: js.Any): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: js.Any): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setSecondary(value: js.Any): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: js.Any): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
   }
 }

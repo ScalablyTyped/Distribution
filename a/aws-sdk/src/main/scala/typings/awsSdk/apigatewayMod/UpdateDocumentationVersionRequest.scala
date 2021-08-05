@@ -23,28 +23,21 @@ trait UpdateDocumentationVersionRequest extends StObject {
 }
 object UpdateDocumentationVersionRequest {
   
-  @scala.inline
-  def apply(documentationVersion: String, restApiId: String): UpdateDocumentationVersionRequest = {
+  inline def apply(documentationVersion: String, restApiId: String): UpdateDocumentationVersionRequest = {
     val __obj = js.Dynamic.literal(documentationVersion = documentationVersion.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDocumentationVersionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDocumentationVersionRequestMutableBuilder[Self <: UpdateDocumentationVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDocumentationVersionRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentationVersion(value: String): Self = StObject.set(x, "documentationVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentationVersion(value: String): Self = StObject.set(x, "documentationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
+    inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
+    inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

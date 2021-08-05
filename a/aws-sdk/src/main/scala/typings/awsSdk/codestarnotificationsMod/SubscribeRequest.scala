@@ -20,25 +20,19 @@ trait SubscribeRequest extends StObject {
 }
 object SubscribeRequest {
   
-  @scala.inline
-  def apply(Arn: NotificationRuleArn, Target: Target): SubscribeRequest = {
+  inline def apply(Arn: NotificationRuleArn, Target: Target): SubscribeRequest = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubscribeRequest]
   }
   
-  @scala.inline
-  implicit class SubscribeRequestMutableBuilder[Self <: SubscribeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Target): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Target): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

@@ -29,31 +29,23 @@ trait ParamsResourceColumnDelete
 }
 object ParamsResourceColumnDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceColumnDelete = {
+  inline def apply(): ParamsResourceColumnDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceColumnDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceColumnDeleteMutableBuilder[Self <: ParamsResourceColumnDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceColumnDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
+    inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
+    inline def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

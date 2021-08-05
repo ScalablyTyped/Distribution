@@ -33,8 +33,7 @@ object esAutoSizerMod {
     @JSImport("react-virtualized/dist/es/AutoSizer", "AutoSizer.defaultProps")
     @js.native
     def defaultProps: DisableHeight = js.native
-    @scala.inline
-    def defaultProps_=(x: DisableHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DisableHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait AutoSizerProps
@@ -93,65 +92,46 @@ object esAutoSizerMod {
   }
   object AutoSizerProps {
     
-    @scala.inline
-    def apply(children: Size => ReactNode): AutoSizerProps = {
+    inline def apply(children: Size => ReactNode): AutoSizerProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[AutoSizerProps]
     }
     
-    @scala.inline
-    implicit class AutoSizerPropsMutableBuilder[Self <: AutoSizerProps] (val x: Self) extends AnyVal {
+    extension [Self <: AutoSizerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: Size => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: Size => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
+      inline def setDefaultHeight(value: Double): Self = StObject.set(x, "defaultHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
+      inline def setDefaultHeightUndefined: Self = StObject.set(x, "defaultHeight", js.undefined)
       
-      @scala.inline
-      def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
+      inline def setDefaultWidth(value: Double): Self = StObject.set(x, "defaultWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultWidthUndefined: Self = StObject.set(x, "defaultWidth", js.undefined)
+      inline def setDefaultWidthUndefined: Self = StObject.set(x, "defaultWidth", js.undefined)
       
-      @scala.inline
-      def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
+      inline def setDisableHeight(value: Boolean): Self = StObject.set(x, "disableHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
+      inline def setDisableHeightUndefined: Self = StObject.set(x, "disableHeight", js.undefined)
       
-      @scala.inline
-      def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
+      inline def setDisableWidth(value: Boolean): Self = StObject.set(x, "disableWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
+      inline def setDisableWidthUndefined: Self = StObject.set(x, "disableWidth", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: /* info */ Size => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* info */ Size => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -165,20 +145,16 @@ object esAutoSizerMod {
   }
   object Size {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Size = {
+    inline def apply(height: Double, width: Double): Size = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
-    @scala.inline
-    implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+    extension [Self <: Size](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

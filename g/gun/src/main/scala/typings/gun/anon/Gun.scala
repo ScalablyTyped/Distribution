@@ -17,8 +17,7 @@ trait Gun[DataType, ReferenceKey] extends StObject {
 }
 object Gun {
   
-  @scala.inline
-  def apply[DataType, ReferenceKey](
+  inline def apply[DataType, ReferenceKey](
     gun: ChainReference[DataType, ReferenceKey, `false`],
     key: ReferenceKey,
     put: ArrayAsRecord[DataType]
@@ -27,16 +26,12 @@ object Gun {
     __obj.asInstanceOf[Gun[DataType, ReferenceKey]]
   }
   
-  @scala.inline
-  implicit class GunMutableBuilder[Self <: Gun[?, ?], DataType, ReferenceKey] (val x: Self & (Gun[DataType, ReferenceKey])) extends AnyVal {
+  extension [Self <: Gun[?, ?], DataType, ReferenceKey](x: Self & (Gun[DataType, ReferenceKey])) {
     
-    @scala.inline
-    def setGun(value: ChainReference[DataType, ReferenceKey, `false`]): Self = StObject.set(x, "gun", value.asInstanceOf[js.Any])
+    inline def setGun(value: ChainReference[DataType, ReferenceKey, `false`]): Self = StObject.set(x, "gun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: ReferenceKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ReferenceKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPut(value: ArrayAsRecord[DataType]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: ArrayAsRecord[DataType]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import war
 }
 object Edge {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](
+  inline def apply[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](
     actions: js.Array[Action[TContext, TEvent]],
     event: TEventType,
     source: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]],
@@ -37,42 +36,30 @@ object Edge {
     __obj.asInstanceOf[Edge[TContext, TEvent, TEventType]]
   }
   
-  @scala.inline
-  implicit class EdgeMutableBuilder[Self <: Edge[?, ?, ?], TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] (val x: Self & (Edge[TContext, TEvent, TEventType])) extends AnyVal {
+  extension [Self <: Edge[?, ?, ?], TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](x: Self & (Edge[TContext, TEvent, TEventType])) {
     
-    @scala.inline
-    def setActions(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setCond(value: Condition[TContext, TEvent & (`3`[TEventType, TEvent])]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+    inline def setCond(value: Condition[TContext, TEvent & (`3`[TEventType, TEvent])]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondFunction3(
+    inline def setCondFunction3(
       value: (TContext, TEvent & (`3`[TEventType, TEvent]), /* meta */ GuardMeta[TContext, TEvent & (`3`[TEventType, TEvent])]) => Boolean
     ): Self = StObject.set(x, "cond", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
+    inline def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
     
-    @scala.inline
-    def setEvent(value: TEventType): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: TEventType): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: MetaObject): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: MetaObject): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    @scala.inline
-    def setSource(value: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransition(value: TransitionDefinition[TContext, TEvent]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: TransitionDefinition[TContext, TEvent]): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
   }
 }

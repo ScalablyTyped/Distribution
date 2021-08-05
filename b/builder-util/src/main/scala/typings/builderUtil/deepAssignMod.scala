@@ -10,6 +10,5 @@ object deepAssignMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deepAssign[T](target: T, objects: js.Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deepAssign")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def deepAssign[T](target: T, objects: js.Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("deepAssign")(target.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[T]
 }

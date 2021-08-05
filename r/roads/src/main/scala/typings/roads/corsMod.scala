@@ -12,6 +12,5 @@ object corsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: CacheMaxAge): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def default(options: CacheMaxAge): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
 }

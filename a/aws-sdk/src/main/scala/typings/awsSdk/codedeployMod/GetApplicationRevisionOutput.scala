@@ -23,31 +23,23 @@ trait GetApplicationRevisionOutput extends StObject {
 }
 object GetApplicationRevisionOutput {
   
-  @scala.inline
-  def apply(): GetApplicationRevisionOutput = {
+  inline def apply(): GetApplicationRevisionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetApplicationRevisionOutput]
   }
   
-  @scala.inline
-  implicit class GetApplicationRevisionOutputMutableBuilder[Self <: GetApplicationRevisionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetApplicationRevisionOutput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
     
-    @scala.inline
-    def setRevision(value: RevisionLocation): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: RevisionLocation): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionInfo(value: GenericRevisionInfo): Self = StObject.set(x, "revisionInfo", value.asInstanceOf[js.Any])
+    inline def setRevisionInfo(value: GenericRevisionInfo): Self = StObject.set(x, "revisionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionInfoUndefined: Self = StObject.set(x, "revisionInfo", js.undefined)
+    inline def setRevisionInfoUndefined: Self = StObject.set(x, "revisionInfo", js.undefined)
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
   }
 }

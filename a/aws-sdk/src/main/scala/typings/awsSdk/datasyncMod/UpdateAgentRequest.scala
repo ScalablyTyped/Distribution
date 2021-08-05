@@ -18,22 +18,17 @@ trait UpdateAgentRequest extends StObject {
 }
 object UpdateAgentRequest {
   
-  @scala.inline
-  def apply(AgentArn: AgentArn): UpdateAgentRequest = {
+  inline def apply(AgentArn: AgentArn): UpdateAgentRequest = {
     val __obj = js.Dynamic.literal(AgentArn = AgentArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAgentRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAgentRequestMutableBuilder[Self <: UpdateAgentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAgentRequest](x: Self) {
     
-    @scala.inline
-    def setAgentArn(value: AgentArn): Self = StObject.set(x, "AgentArn", value.asInstanceOf[js.Any])
+    inline def setAgentArn(value: AgentArn): Self = StObject.set(x, "AgentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

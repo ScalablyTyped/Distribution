@@ -20,8 +20,7 @@ trait CanAdd extends StObject {
 }
 object CanAdd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canAdd: (js.Any, js.Any) => Boolean,
     check: js.Any => /* is node.Buffer */ Boolean,
     decode: KeyValue => Buffer,
@@ -32,22 +31,16 @@ object CanAdd {
     __obj.asInstanceOf[CanAdd]
   }
   
-  @scala.inline
-  implicit class CanAddMutableBuilder[Self <: CanAdd] (val x: Self) extends AnyVal {
+  extension [Self <: CanAdd](x: Self) {
     
-    @scala.inline
-    def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
+    inline def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheck(value: js.Any => /* is node.Buffer */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: js.Any => /* is node.Buffer */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecode(value: KeyValue => Buffer): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: KeyValue => Buffer): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncode(value: Buffer => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: Buffer => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

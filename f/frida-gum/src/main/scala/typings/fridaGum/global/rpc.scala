@@ -19,6 +19,5 @@ object rpc {
   @JSGlobal("rpc.exports")
   @js.native
   def exports: RpcExports = js.native
-  @scala.inline
-  def exports_=(x: RpcExports): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
+  inline def exports_=(x: RpcExports): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
 }

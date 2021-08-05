@@ -10,16 +10,13 @@ trait Point extends StObject {
 }
 object Point {
   
-  @scala.inline
-  def apply(point: typings.googleMapReact.mod.Point): Point = {
+  inline def apply(point: typings.googleMapReact.mod.Point): Point = {
     val __obj = js.Dynamic.literal(point = point.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
   
-  @scala.inline
-  implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+  extension [Self <: Point](x: Self) {
     
-    @scala.inline
-    def setPoint(value: typings.googleMapReact.mod.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: typings.googleMapReact.mod.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
   }
 }

@@ -43,56 +43,40 @@ object editableInputMod {
   }
   object EditableInputProps {
     
-    @scala.inline
-    def apply(): EditableInputProps = {
+    inline def apply(): EditableInputProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditableInputProps]
     }
     
-    @scala.inline
-    implicit class EditableInputPropsMutableBuilder[Self <: EditableInputProps] (val x: Self) extends AnyVal {
+    extension [Self <: EditableInputProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDragLabel(value: String): Self = StObject.set(x, "dragLabel", value.asInstanceOf[js.Any])
+      inline def setDragLabel(value: String): Self = StObject.set(x, "dragLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragLabelUndefined: Self = StObject.set(x, "dragLabel", js.undefined)
+      inline def setDragLabelUndefined: Self = StObject.set(x, "dragLabel", js.undefined)
       
-      @scala.inline
-      def setDragMax(value: String): Self = StObject.set(x, "dragMax", value.asInstanceOf[js.Any])
+      inline def setDragMax(value: String): Self = StObject.set(x, "dragMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragMaxUndefined: Self = StObject.set(x, "dragMax", js.undefined)
+      inline def setDragMaxUndefined: Self = StObject.set(x, "dragMax", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* color */ ColorResult, /* event */ ChangeEvent[HTMLInputElement]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setStyle(value: EditableInputStyles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: EditableInputStyles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -106,32 +90,24 @@ object editableInputMod {
   }
   object EditableInputStyles {
     
-    @scala.inline
-    def apply(): EditableInputStyles = {
+    inline def apply(): EditableInputStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditableInputStyles]
     }
     
-    @scala.inline
-    implicit class EditableInputStylesMutableBuilder[Self <: EditableInputStyles] (val x: Self) extends AnyVal {
+    extension [Self <: EditableInputStyles](x: Self) {
       
-      @scala.inline
-      def setInput(value: CSSProperties): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: CSSProperties): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setWrap(value: CSSProperties): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: CSSProperties): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
 }

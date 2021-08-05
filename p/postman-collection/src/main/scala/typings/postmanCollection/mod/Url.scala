@@ -70,9 +70,7 @@ object Url {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isUrl(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUrl(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parse(url: String): UrlDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[UrlDefinition]
+  inline def parse(url: String): UrlDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[UrlDefinition]
 }

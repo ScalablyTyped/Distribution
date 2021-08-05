@@ -10,16 +10,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(NativeKeyboard: NativeKeyboard): Window = {
+  inline def apply(NativeKeyboard: NativeKeyboard): Window = {
     val __obj = js.Dynamic.literal(NativeKeyboard = NativeKeyboard.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setNativeKeyboard(value: NativeKeyboard): Self = StObject.set(x, "NativeKeyboard", value.asInstanceOf[js.Any])
+    inline def setNativeKeyboard(value: NativeKeyboard): Self = StObject.set(x, "NativeKeyboard", value.asInstanceOf[js.Any])
   }
 }

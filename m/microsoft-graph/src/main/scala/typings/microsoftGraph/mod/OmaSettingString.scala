@@ -13,19 +13,15 @@ trait OmaSettingString
 }
 object OmaSettingString {
   
-  @scala.inline
-  def apply(): OmaSettingString = {
+  inline def apply(): OmaSettingString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmaSettingString]
   }
   
-  @scala.inline
-  implicit class OmaSettingStringMutableBuilder[Self <: OmaSettingString] (val x: Self) extends AnyVal {
+  extension [Self <: OmaSettingString](x: Self) {
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait StopJobRequest extends StObject {
 }
 object StopJobRequest {
   
-  @scala.inline
-  def apply(arn: AmazonResourceName): StopJobRequest = {
+  inline def apply(arn: AmazonResourceName): StopJobRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopJobRequest]
   }
   
-  @scala.inline
-  implicit class StopJobRequestMutableBuilder[Self <: StopJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopJobRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }
 }

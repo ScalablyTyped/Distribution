@@ -13,7 +13,7 @@ object lineOffsetMapMod {
   @js.native
   class LineOffsetMap () extends StObject {
     
-    var generatedFilesLineOffsets: js.Any = js.native
+    /* private */ var generatedFilesLineOffsets: js.Any = js.native
     
     def getEffectiveFilenameAtPosition(sourceFile: String, position: Position): String = js.native
     /**
@@ -39,6 +39,6 @@ object lineOffsetMapMod {
     
     def getRawRangeFromEffectiveRange(filename: String, range: Range): Range = js.native
     
-    var sourceFilesLineOffsets: js.Any = js.native
+    /* private */ var sourceFilesLineOffsets: js.Any = js.native
   }
 }

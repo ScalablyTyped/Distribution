@@ -13,8 +13,7 @@ trait Return
 }
 object Return {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -34,10 +33,8 @@ object Return {
     __obj.asInstanceOf[Return]
   }
   
-  @scala.inline
-  implicit class ReturnMutableBuilder[Self <: Return] (val x: Self) extends AnyVal {
+  extension [Self <: Return](x: Self) {
     
-    @scala.inline
-    def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
   }
 }

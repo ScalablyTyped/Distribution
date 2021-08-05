@@ -40,103 +40,71 @@ trait Element extends StObject {
 }
 object Element {
   
-  @scala.inline
-  def apply(): Element = {
+  inline def apply(): Element = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setFadeDelay(value: Double): Self = StObject.set(x, "fadeDelay", value.asInstanceOf[js.Any])
+    inline def setFadeDelay(value: Double): Self = StObject.set(x, "fadeDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeDelayUndefined: Self = StObject.set(x, "fadeDelay", js.undefined)
+    inline def setFadeDelayUndefined: Self = StObject.set(x, "fadeDelay", js.undefined)
     
-    @scala.inline
-    def setFadeLength(value: Double): Self = StObject.set(x, "fadeLength", value.asInstanceOf[js.Any])
+    inline def setFadeLength(value: Double): Self = StObject.set(x, "fadeLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeLengthUndefined: Self = StObject.set(x, "fadeLength", js.undefined)
+    inline def setFadeLengthUndefined: Self = StObject.set(x, "fadeLength", js.undefined)
     
-    @scala.inline
-    def setOnBlur(value: ButtonEvent => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: ButtonEvent => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: ButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: ButtonEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setOnEnter(value: ButtonEvent => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+    inline def setOnEnter(value: ButtonEvent => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+    inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
     
-    @scala.inline
-    def setOnExit(value: ButtonEvent => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
+    inline def setOnExit(value: ButtonEvent => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+    inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
     
-    @scala.inline
-    def setOnFocus(value: ButtonEvent => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: ButtonEvent => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: ButtonEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: ButtonEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setOnRelease(value: ButtonEvent => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
+    inline def setOnRelease(value: ButtonEvent => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
+    inline def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
     
-    @scala.inline
-    def setSrcDown(value: String): Self = StObject.set(x, "srcDown", value.asInstanceOf[js.Any])
+    inline def setSrcDown(value: String): Self = StObject.set(x, "srcDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcDownUndefined: Self = StObject.set(x, "srcDown", js.undefined)
+    inline def setSrcDownUndefined: Self = StObject.set(x, "srcDown", js.undefined)
     
-    @scala.inline
-    def setSrcGroup(value: String): Self = StObject.set(x, "srcGroup", value.asInstanceOf[js.Any])
+    inline def setSrcGroup(value: String): Self = StObject.set(x, "srcGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcGroupUndefined: Self = StObject.set(x, "srcGroup", js.undefined)
+    inline def setSrcGroupUndefined: Self = StObject.set(x, "srcGroup", js.undefined)
     
-    @scala.inline
-    def setSrcHover(value: String): Self = StObject.set(x, "srcHover", value.asInstanceOf[js.Any])
+    inline def setSrcHover(value: String): Self = StObject.set(x, "srcHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcHoverUndefined: Self = StObject.set(x, "srcHover", js.undefined)
+    inline def setSrcHoverUndefined: Self = StObject.set(x, "srcHover", js.undefined)
     
-    @scala.inline
-    def setSrcRest(value: String): Self = StObject.set(x, "srcRest", value.asInstanceOf[js.Any])
+    inline def setSrcRest(value: String): Self = StObject.set(x, "srcRest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcRestUndefined: Self = StObject.set(x, "srcRest", js.undefined)
+    inline def setSrcRestUndefined: Self = StObject.set(x, "srcRest", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

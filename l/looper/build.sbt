@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "looper"
-version := "4.0-dt-20200401Z-b6a70c"
+version := "4.0-dt-20200401Z-cf2dd0"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

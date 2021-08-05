@@ -42,8 +42,7 @@ trait heatmapGetSchemesByTagParams
 }
 object heatmapGetSchemesByTagParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -52,37 +51,26 @@ object heatmapGetSchemesByTagParams {
     __obj.asInstanceOf[heatmapGetSchemesByTagParams]
   }
   
-  @scala.inline
-  implicit class heatmapGetSchemesByTagParamsMutableBuilder[Self <: heatmapGetSchemesByTagParams] (val x: Self) extends AnyVal {
+  extension [Self <: heatmapGetSchemesByTagParams](x: Self) {
     
-    @scala.inline
-    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    inline def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
+    inline def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
     
-    @scala.inline
-    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
-    @scala.inline
-    def setExcludedTags(value: js.Array[String]): Self = StObject.set(x, "excludedTags", value.asInstanceOf[js.Any])
+    inline def setExcludedTags(value: js.Array[String]): Self = StObject.set(x, "excludedTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedTagsUndefined: Self = StObject.set(x, "excludedTags", js.undefined)
+    inline def setExcludedTagsUndefined: Self = StObject.set(x, "excludedTags", js.undefined)
     
-    @scala.inline
-    def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value :_*))
+    inline def setExcludedTagsVarargs(value: String*): Self = StObject.set(x, "excludedTags", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludedTags(value: js.Array[String]): Self = StObject.set(x, "includedTags", value.asInstanceOf[js.Any])
+    inline def setIncludedTags(value: js.Array[String]): Self = StObject.set(x, "includedTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedTagsUndefined: Self = StObject.set(x, "includedTags", js.undefined)
+    inline def setIncludedTagsUndefined: Self = StObject.set(x, "includedTags", js.undefined)
     
-    @scala.inline
-    def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value :_*))
+    inline def setIncludedTagsVarargs(value: String*): Self = StObject.set(x, "includedTags", js.Array(value :_*))
   }
 }

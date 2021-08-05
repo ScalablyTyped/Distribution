@@ -10,22 +10,17 @@ trait SchemaInstanceGroupManagersSetAutoHealingRequest extends StObject {
 }
 object SchemaInstanceGroupManagersSetAutoHealingRequest {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagersSetAutoHealingRequest = {
+  inline def apply(): SchemaInstanceGroupManagersSetAutoHealingRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersSetAutoHealingRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagersSetAutoHealingRequestMutableBuilder[Self <: SchemaInstanceGroupManagersSetAutoHealingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagersSetAutoHealingRequest](x: Self) {
     
-    @scala.inline
-    def setAutoHealingPolicies(value: js.Array[SchemaInstanceGroupManagerAutoHealingPolicy]): Self = StObject.set(x, "autoHealingPolicies", value.asInstanceOf[js.Any])
+    inline def setAutoHealingPolicies(value: js.Array[SchemaInstanceGroupManagerAutoHealingPolicy]): Self = StObject.set(x, "autoHealingPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHealingPoliciesUndefined: Self = StObject.set(x, "autoHealingPolicies", js.undefined)
+    inline def setAutoHealingPoliciesUndefined: Self = StObject.set(x, "autoHealingPolicies", js.undefined)
     
-    @scala.inline
-    def setAutoHealingPoliciesVarargs(value: SchemaInstanceGroupManagerAutoHealingPolicy*): Self = StObject.set(x, "autoHealingPolicies", js.Array(value :_*))
+    inline def setAutoHealingPoliciesVarargs(value: SchemaInstanceGroupManagerAutoHealingPolicy*): Self = StObject.set(x, "autoHealingPolicies", js.Array(value :_*))
   }
 }

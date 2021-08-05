@@ -13,19 +13,15 @@ trait CreateAccessPointOutput extends StObject {
 }
 object CreateAccessPointOutput {
   
-  @scala.inline
-  def apply(): CreateAccessPointOutput = {
+  inline def apply(): CreateAccessPointOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateAccessPointOutput]
   }
   
-  @scala.inline
-  implicit class CreateAccessPointOutputMutableBuilder[Self <: CreateAccessPointOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccessPointOutput](x: Self) {
     
-    @scala.inline
-    def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
+    inline def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDNSNameUndefined: Self = StObject.set(x, "DNSName", js.undefined)
+    inline def setDNSNameUndefined: Self = StObject.set(x, "DNSName", js.undefined)
   }
 }

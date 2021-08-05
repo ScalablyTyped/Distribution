@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.AnimationPoints")
 @js.native
-class AnimationPoints protected ()
+/* private */ class AnimationPoints ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.AnimationPoints

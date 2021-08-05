@@ -29,37 +29,27 @@ trait XmlaStoreOptions extends StObject {
 }
 object XmlaStoreOptions {
   
-  @scala.inline
-  def apply(): XmlaStoreOptions = {
+  inline def apply(): XmlaStoreOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XmlaStoreOptions]
   }
   
-  @scala.inline
-  implicit class XmlaStoreOptionsMutableBuilder[Self <: XmlaStoreOptions] (val x: Self) extends AnyVal {
+  extension [Self <: XmlaStoreOptions](x: Self) {
     
-    @scala.inline
-    def setBeforeSend(value: /* options */ Data => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    inline def setBeforeSend(value: /* options */ Data => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+    inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
-    @scala.inline
-    def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
+    inline def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
     
-    @scala.inline
-    def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    inline def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

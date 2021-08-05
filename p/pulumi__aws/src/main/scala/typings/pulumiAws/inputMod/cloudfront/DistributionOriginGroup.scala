@@ -24,8 +24,7 @@ trait DistributionOriginGroup extends StObject {
 }
 object DistributionOriginGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     failoverCriteria: Input[DistributionOriginGroupFailoverCriteria],
     members: Input[js.Array[Input[DistributionOriginGroupMember]]],
     originId: Input[String]
@@ -34,19 +33,14 @@ object DistributionOriginGroup {
     __obj.asInstanceOf[DistributionOriginGroup]
   }
   
-  @scala.inline
-  implicit class DistributionOriginGroupMutableBuilder[Self <: DistributionOriginGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionOriginGroup](x: Self) {
     
-    @scala.inline
-    def setFailoverCriteria(value: Input[DistributionOriginGroupFailoverCriteria]): Self = StObject.set(x, "failoverCriteria", value.asInstanceOf[js.Any])
+    inline def setFailoverCriteria(value: Input[DistributionOriginGroupFailoverCriteria]): Self = StObject.set(x, "failoverCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: Input[js.Array[Input[DistributionOriginGroupMember]]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: Input[js.Array[Input[DistributionOriginGroupMember]]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: Input[DistributionOriginGroupMember]*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: Input[DistributionOriginGroupMember]*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setOriginId(value: Input[String]): Self = StObject.set(x, "originId", value.asInstanceOf[js.Any])
+    inline def setOriginId(value: Input[String]): Self = StObject.set(x, "originId", value.asInstanceOf[js.Any])
   }
 }

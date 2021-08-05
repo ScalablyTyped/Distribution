@@ -11,17 +11,14 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bodyKey(n: typings.bnJs.mod.^, hash: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bodyKey")(n.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def bodyKey(n: typings.bnJs.mod.^, hash: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bodyKey")(n.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   /**
     * Convert BN to big endian Buffer
     */
-  @scala.inline
-  def bufBE8(n: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufBE8")(n.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def bufBE8(n: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufBE8")(n.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def hashToNumberKey(hash: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hashToNumberKey")(hash.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def hashToNumberKey(hash: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hashToNumberKey")(hash.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /**
     * Current canonical head for full sync
@@ -37,16 +34,13 @@ object utilMod {
   @js.native
   val headHeaderKey: /* "LastHeader" */ String = js.native
   
-  @scala.inline
-  def headerKey(n: typings.bnJs.mod.^, hash: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("headerKey")(n.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def headerKey(n: typings.bnJs.mod.^, hash: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("headerKey")(n.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @JSImport("ethereumjs-blockchain/dist/util", "headsKey")
   @js.native
   val headsKey: /* "heads" */ String = js.native
   
-  @scala.inline
-  def numberToHashKey(n: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToHashKey")(n.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def numberToHashKey(n: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToHashKey")(n.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @scala.inline
-  def tdKey(n: typings.bnJs.mod.^, hash: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("tdKey")(n.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def tdKey(n: typings.bnJs.mod.^, hash: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("tdKey")(n.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Buffer]
 }

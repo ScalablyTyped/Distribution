@@ -24,10 +24,8 @@ object mod {
     *
     * @param path
     */
-  @scala.inline
-  def apply(path: String): typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context]]
-  @scala.inline
-  def apply(path: Config): typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context]]
+  inline def apply(path: String): typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context]]
+  inline def apply(path: Config): typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context]]
   
   @JSImport("conventional-changelog-preset-loader", JSImport.Namespace)
   @js.native
@@ -35,8 +33,7 @@ object mod {
   
   object presetLoader {
     
-    @scala.inline
-    def apply(requireMethod: RequireMethod): js.Any = ^.asInstanceOf[js.Dynamic].apply(requireMethod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def apply(requireMethod: RequireMethod): js.Any = ^.asInstanceOf[js.Dynamic].apply(requireMethod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("conventional-changelog-preset-loader", "presetLoader")
     @js.native
@@ -67,17 +64,14 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(name: String): Config = {
+    inline def apply(name: String): Config = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

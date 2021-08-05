@@ -19,37 +19,27 @@ trait LoadModelOptions
 }
 object LoadModelOptions {
   
-  @scala.inline
-  def apply(): LoadModelOptions = {
+  inline def apply(): LoadModelOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadModelOptions]
   }
   
-  @scala.inline
-  implicit class LoadModelOptionsMutableBuilder[Self <: LoadModelOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadModelOptions](x: Self) {
     
-    @scala.inline
-    def setFileLoader(value: FileLoader): Self = StObject.set(x, "fileLoader", value.asInstanceOf[js.Any])
+    inline def setFileLoader(value: FileLoader): Self = StObject.set(x, "fileLoader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileLoaderUndefined: Self = StObject.set(x, "fileLoader", js.undefined)
+    inline def setFileLoaderUndefined: Self = StObject.set(x, "fileLoader", js.undefined)
     
-    @scala.inline
-    def setIds(value: String): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: String): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setLoadOptions(value: js.Object): Self = StObject.set(x, "loadOptions", value.asInstanceOf[js.Any])
+    inline def setLoadOptions(value: js.Object): Self = StObject.set(x, "loadOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadOptionsUndefined: Self = StObject.set(x, "loadOptions", js.undefined)
+    inline def setLoadOptionsUndefined: Self = StObject.set(x, "loadOptions", js.undefined)
     
-    @scala.inline
-    def setSharedPropertyDbPath(value: String): Self = StObject.set(x, "sharedPropertyDbPath", value.asInstanceOf[js.Any])
+    inline def setSharedPropertyDbPath(value: String): Self = StObject.set(x, "sharedPropertyDbPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedPropertyDbPathUndefined: Self = StObject.set(x, "sharedPropertyDbPath", js.undefined)
+    inline def setSharedPropertyDbPathUndefined: Self = StObject.set(x, "sharedPropertyDbPath", js.undefined)
   }
 }

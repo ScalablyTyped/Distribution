@@ -573,20 +573,16 @@ object requestMod {
   }
   object Progress {
     
-    @scala.inline
-    def apply(loaded: Double, total: Double): Progress = {
+    inline def apply(loaded: Double, total: Double): Progress = {
       val __obj = js.Dynamic.literal(loaded = loaded.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Progress]
     }
     
-    @scala.inline
-    implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+    extension [Self <: Progress](x: Self) {
       
-      @scala.inline
-      def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+      inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   

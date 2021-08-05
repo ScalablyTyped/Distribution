@@ -24,61 +24,43 @@ trait CssClassNames extends StObject {
 }
 object CssClassNames {
   
-  @scala.inline
-  def apply(): CssClassNames = {
+  inline def apply(): CssClassNames = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CssClassNames]
   }
   
-  @scala.inline
-  implicit class CssClassNamesMutableBuilder[Self <: CssClassNames] (val x: Self) extends AnyVal {
+  extension [Self <: CssClassNames](x: Self) {
     
-    @scala.inline
-    def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
+    inline def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderCellUndefined: Self = StObject.set(x, "headerCell", js.undefined)
+    inline def setHeaderCellUndefined: Self = StObject.set(x, "headerCell", js.undefined)
     
-    @scala.inline
-    def setHeaderRow(value: String): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
+    inline def setHeaderRow(value: String): Self = StObject.set(x, "headerRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderRowUndefined: Self = StObject.set(x, "headerRow", js.undefined)
+    inline def setHeaderRowUndefined: Self = StObject.set(x, "headerRow", js.undefined)
     
-    @scala.inline
-    def setHoverTableRow(value: String): Self = StObject.set(x, "hoverTableRow", value.asInstanceOf[js.Any])
+    inline def setHoverTableRow(value: String): Self = StObject.set(x, "hoverTableRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverTableRowUndefined: Self = StObject.set(x, "hoverTableRow", js.undefined)
+    inline def setHoverTableRowUndefined: Self = StObject.set(x, "hoverTableRow", js.undefined)
     
-    @scala.inline
-    def setOddTableRow(value: String): Self = StObject.set(x, "oddTableRow", value.asInstanceOf[js.Any])
+    inline def setOddTableRow(value: String): Self = StObject.set(x, "oddTableRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOddTableRowUndefined: Self = StObject.set(x, "oddTableRow", js.undefined)
+    inline def setOddTableRowUndefined: Self = StObject.set(x, "oddTableRow", js.undefined)
     
-    @scala.inline
-    def setRowNumberCell(value: String): Self = StObject.set(x, "rowNumberCell", value.asInstanceOf[js.Any])
+    inline def setRowNumberCell(value: String): Self = StObject.set(x, "rowNumberCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowNumberCellUndefined: Self = StObject.set(x, "rowNumberCell", js.undefined)
+    inline def setRowNumberCellUndefined: Self = StObject.set(x, "rowNumberCell", js.undefined)
     
-    @scala.inline
-    def setSelectedTableRow(value: String): Self = StObject.set(x, "selectedTableRow", value.asInstanceOf[js.Any])
+    inline def setSelectedTableRow(value: String): Self = StObject.set(x, "selectedTableRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedTableRowUndefined: Self = StObject.set(x, "selectedTableRow", js.undefined)
+    inline def setSelectedTableRowUndefined: Self = StObject.set(x, "selectedTableRow", js.undefined)
     
-    @scala.inline
-    def setTableCell(value: String): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
+    inline def setTableCell(value: String): Self = StObject.set(x, "tableCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCellUndefined: Self = StObject.set(x, "tableCell", js.undefined)
+    inline def setTableCellUndefined: Self = StObject.set(x, "tableCell", js.undefined)
     
-    @scala.inline
-    def setTableRow(value: String): Self = StObject.set(x, "tableRow", value.asInstanceOf[js.Any])
+    inline def setTableRow(value: String): Self = StObject.set(x, "tableRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRowUndefined: Self = StObject.set(x, "tableRow", js.undefined)
+    inline def setTableRowUndefined: Self = StObject.set(x, "tableRow", js.undefined)
   }
 }

@@ -52,80 +52,56 @@ object buttonButtonMod {
   }
   object ButtonProps {
     
-    @scala.inline
-    def apply(): ButtonProps = {
+    inline def apply(): ButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonProps]
     }
     
-    @scala.inline
-    implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setContainsIcon(value: Boolean): Self = StObject.set(x, "containsIcon", value.asInstanceOf[js.Any])
+      inline def setContainsIcon(value: Boolean): Self = StObject.set(x, "containsIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainsIconUndefined: Self = StObject.set(x, "containsIcon", js.undefined)
+      inline def setContainsIconUndefined: Self = StObject.set(x, "containsIcon", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setGray(value: Boolean): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
+      inline def setGray(value: Boolean): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrayUndefined: Self = StObject.set(x, "gray", js.undefined)
+      inline def setGrayUndefined: Self = StObject.set(x, "gray", js.undefined)
       
-      @scala.inline
-      def setInForm(value: Boolean): Self = StObject.set(x, "inForm", value.asInstanceOf[js.Any])
+      inline def setInForm(value: Boolean): Self = StObject.set(x, "inForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInFormUndefined: Self = StObject.set(x, "inForm", js.undefined)
+      inline def setInFormUndefined: Self = StObject.set(x, "inForm", js.undefined)
       
-      @scala.inline
-      def setIsLink(value: Boolean): Self = StObject.set(x, "isLink", value.asInstanceOf[js.Any])
+      inline def setIsLink(value: Boolean): Self = StObject.set(x, "isLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLinkUndefined: Self = StObject.set(x, "isLink", js.undefined)
+      inline def setIsLinkUndefined: Self = StObject.set(x, "isLink", js.undefined)
       
-      @scala.inline
-      def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+      inline def setOutline(value: Boolean): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+      inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
       
-      @scala.inline
-      def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+      inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+      inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
       
-      @scala.inline
-      def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+      inline def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+      inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
       
-      @scala.inline
-      def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
-      @scala.inline
-      def setTertiary(value: Boolean): Self = StObject.set(x, "tertiary", value.asInstanceOf[js.Any])
+      inline def setTertiary(value: Boolean): Self = StObject.set(x, "tertiary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTertiaryUndefined: Self = StObject.set(x, "tertiary", js.undefined)
+      inline def setTertiaryUndefined: Self = StObject.set(x, "tertiary", js.undefined)
     }
   }
 }

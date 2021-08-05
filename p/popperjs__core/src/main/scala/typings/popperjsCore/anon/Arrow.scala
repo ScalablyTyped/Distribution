@@ -16,25 +16,19 @@ trait Arrow extends StObject {
 }
 object Arrow {
   
-  @scala.inline
-  def apply(popper: HTMLElement, reference: typings.std.Element | VirtualElement): Arrow = {
+  inline def apply(popper: HTMLElement, reference: typings.std.Element | VirtualElement): Arrow = {
     val __obj = js.Dynamic.literal(popper = popper.asInstanceOf[js.Any], reference = reference.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arrow]
   }
   
-  @scala.inline
-  implicit class ArrowMutableBuilder[Self <: Arrow] (val x: Self) extends AnyVal {
+  extension [Self <: Arrow](x: Self) {
     
-    @scala.inline
-    def setArrow(value: HTMLElement): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
+    inline def setArrow(value: HTMLElement): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
+    inline def setArrowUndefined: Self = StObject.set(x, "arrow", js.undefined)
     
-    @scala.inline
-    def setPopper(value: HTMLElement): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
+    inline def setPopper(value: HTMLElement): Self = StObject.set(x, "popper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: typings.std.Element | VirtualElement): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: typings.std.Element | VirtualElement): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
   }
 }

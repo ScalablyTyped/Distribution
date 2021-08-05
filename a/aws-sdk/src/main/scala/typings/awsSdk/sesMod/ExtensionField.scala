@@ -18,19 +18,15 @@ trait ExtensionField extends StObject {
 }
 object ExtensionField {
   
-  @scala.inline
-  def apply(Name: ExtensionFieldName, Value: ExtensionFieldValue): ExtensionField = {
+  inline def apply(Name: ExtensionFieldName, Value: ExtensionFieldValue): ExtensionField = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionField]
   }
   
-  @scala.inline
-  implicit class ExtensionFieldMutableBuilder[Self <: ExtensionField] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionField](x: Self) {
     
-    @scala.inline
-    def setName(value: ExtensionFieldName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ExtensionFieldName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ExtensionFieldValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ExtensionFieldValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

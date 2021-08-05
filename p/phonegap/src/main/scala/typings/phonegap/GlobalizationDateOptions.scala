@@ -12,25 +12,19 @@ trait GlobalizationDateOptions extends StObject {
 }
 object GlobalizationDateOptions {
   
-  @scala.inline
-  def apply(): GlobalizationDateOptions = {
+  inline def apply(): GlobalizationDateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalizationDateOptions]
   }
   
-  @scala.inline
-  implicit class GlobalizationDateOptionsMutableBuilder[Self <: GlobalizationDateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalizationDateOptions](x: Self) {
     
-    @scala.inline
-    def setFormatLength(value: String): Self = StObject.set(x, "formatLength", value.asInstanceOf[js.Any])
+    inline def setFormatLength(value: String): Self = StObject.set(x, "formatLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatLengthUndefined: Self = StObject.set(x, "formatLength", js.undefined)
+    inline def setFormatLengthUndefined: Self = StObject.set(x, "formatLength", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

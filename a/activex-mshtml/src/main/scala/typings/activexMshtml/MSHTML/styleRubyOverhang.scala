@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleRubyOverhang extends StObject
 object styleRubyOverhang {
   
-  @scala.inline
-  def styleRubyOverhangAuto: `1` = 1.asInstanceOf[`1`]
+  inline def styleRubyOverhangAuto: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleRubyOverhangNone: `3` = 3.asInstanceOf[`3`]
+  inline def styleRubyOverhangNone: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleRubyOverhangNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleRubyOverhangNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleRubyOverhangWhitespace: `2` = 2.asInstanceOf[`2`]
+  inline def styleRubyOverhangWhitespace: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleRubyOverhang_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleRubyOverhang_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

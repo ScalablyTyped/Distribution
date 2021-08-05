@@ -11,13 +11,11 @@ object reduceMod {
   /**
     * Reduce stream into single value, then callback.
     */
-  @scala.inline
-  def apply[T, U](
+  inline def apply[T, U](
     reducer: js.Function2[/* acc */ U | Null, /* data */ T, U],
     cb: js.Function2[/* err */ EndOrError, /* result */ U, js.Any]
   ): Sink[T] = (^.asInstanceOf[js.Dynamic].apply(reducer.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
-  @scala.inline
-  def apply[T, U](
+  inline def apply[T, U](
     reducer: js.Function2[/* acc */ U, /* data */ T, U],
     initial: U,
     cb: js.Function2[/* err */ EndOrError, /* result */ U, js.Any]

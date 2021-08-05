@@ -17,8 +17,7 @@ trait Merge
 }
 object Merge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     merge: js.Array[
       (js.Array[
         /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
@@ -29,11 +28,9 @@ object Merge {
     __obj.asInstanceOf[Merge]
   }
   
-  @scala.inline
-  implicit class MergeMutableBuilder[Self <: Merge] (val x: Self) extends AnyVal {
+  extension [Self <: Merge](x: Self) {
     
-    @scala.inline
-    def setMerge(
+    inline def setMerge(
       value: js.Array[
           (js.Array[
             /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
@@ -41,8 +38,7 @@ object Merge {
         ]
     ): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeVarargs(
+    inline def setMergeVarargs(
       value: ((js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
         ]) | (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object))*

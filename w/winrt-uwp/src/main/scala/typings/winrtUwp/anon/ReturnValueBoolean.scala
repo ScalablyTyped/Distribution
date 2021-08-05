@@ -13,19 +13,15 @@ trait ReturnValueBoolean extends StObject {
 }
 object ReturnValueBoolean {
   
-  @scala.inline
-  def apply(returnValue: Boolean, value: PowerlineFrequency): ReturnValueBoolean = {
+  inline def apply(returnValue: Boolean, value: PowerlineFrequency): ReturnValueBoolean = {
     val __obj = js.Dynamic.literal(returnValue = returnValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnValueBoolean]
   }
   
-  @scala.inline
-  implicit class ReturnValueBooleanMutableBuilder[Self <: ReturnValueBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnValueBoolean](x: Self) {
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: PowerlineFrequency): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: PowerlineFrequency): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

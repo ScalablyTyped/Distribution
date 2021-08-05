@@ -23,25 +23,19 @@ trait AcceptMatchInput extends StObject {
 }
 object AcceptMatchInput {
   
-  @scala.inline
-  def apply(AcceptanceType: AcceptanceType, PlayerIds: StringList, TicketId: MatchmakingIdStringModel): AcceptMatchInput = {
+  inline def apply(AcceptanceType: AcceptanceType, PlayerIds: StringList, TicketId: MatchmakingIdStringModel): AcceptMatchInput = {
     val __obj = js.Dynamic.literal(AcceptanceType = AcceptanceType.asInstanceOf[js.Any], PlayerIds = PlayerIds.asInstanceOf[js.Any], TicketId = TicketId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AcceptMatchInput]
   }
   
-  @scala.inline
-  implicit class AcceptMatchInputMutableBuilder[Self <: AcceptMatchInput] (val x: Self) extends AnyVal {
+  extension [Self <: AcceptMatchInput](x: Self) {
     
-    @scala.inline
-    def setAcceptanceType(value: AcceptanceType): Self = StObject.set(x, "AcceptanceType", value.asInstanceOf[js.Any])
+    inline def setAcceptanceType(value: AcceptanceType): Self = StObject.set(x, "AcceptanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIds(value: StringList): Self = StObject.set(x, "PlayerIds", value.asInstanceOf[js.Any])
+    inline def setPlayerIds(value: StringList): Self = StObject.set(x, "PlayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "PlayerIds", js.Array(value :_*))
+    inline def setPlayerIdsVarargs(value: NonZeroAndMaxString*): Self = StObject.set(x, "PlayerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
+    inline def setTicketId(value: MatchmakingIdStringModel): Self = StObject.set(x, "TicketId", value.asInstanceOf[js.Any])
   }
 }

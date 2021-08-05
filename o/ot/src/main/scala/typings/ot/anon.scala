@@ -14,20 +14,16 @@ object anon {
   }
   object Anchor {
     
-    @scala.inline
-    def apply(anchor: Double, head: Double): Anchor = {
+    inline def apply(anchor: Double, head: Double): Anchor = {
       val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any])
       __obj.asInstanceOf[Anchor]
     }
     
-    @scala.inline
-    implicit class AnchorMutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
+    extension [Self <: Anchor](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
+      inline def setHead(value: Double): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String): Id = {
+    inline def apply(id: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

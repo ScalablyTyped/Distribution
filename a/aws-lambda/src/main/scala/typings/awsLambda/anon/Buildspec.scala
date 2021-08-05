@@ -15,23 +15,18 @@ trait Buildspec extends StObject {
 }
 object Buildspec {
   
-  @scala.inline
-  def apply(buildspec: String, location: String, `type`: CodeBuildSourceLocationType): Buildspec = {
+  inline def apply(buildspec: String, location: String, `type`: CodeBuildSourceLocationType): Buildspec = {
     val __obj = js.Dynamic.literal(buildspec = buildspec.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buildspec]
   }
   
-  @scala.inline
-  implicit class BuildspecMutableBuilder[Self <: Buildspec] (val x: Self) extends AnyVal {
+  extension [Self <: Buildspec](x: Self) {
     
-    @scala.inline
-    def setBuildspec(value: String): Self = StObject.set(x, "buildspec", value.asInstanceOf[js.Any])
+    inline def setBuildspec(value: String): Self = StObject.set(x, "buildspec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CodeBuildSourceLocationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeBuildSourceLocationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -24,25 +24,19 @@ trait SchemaCreateServiceAccountKeyRequest extends StObject {
 }
 object SchemaCreateServiceAccountKeyRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateServiceAccountKeyRequest = {
+  inline def apply(): SchemaCreateServiceAccountKeyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateServiceAccountKeyRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateServiceAccountKeyRequestMutableBuilder[Self <: SchemaCreateServiceAccountKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateServiceAccountKeyRequest](x: Self) {
     
-    @scala.inline
-    def setKeyAlgorithm(value: String): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
+    inline def setKeyAlgorithm(value: String): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyAlgorithmUndefined: Self = StObject.set(x, "keyAlgorithm", js.undefined)
+    inline def setKeyAlgorithmUndefined: Self = StObject.set(x, "keyAlgorithm", js.undefined)
     
-    @scala.inline
-    def setPrivateKeyType(value: String): Self = StObject.set(x, "privateKeyType", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyType(value: String): Self = StObject.set(x, "privateKeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyTypeUndefined: Self = StObject.set(x, "privateKeyType", js.undefined)
+    inline def setPrivateKeyTypeUndefined: Self = StObject.set(x, "privateKeyType", js.undefined)
   }
 }

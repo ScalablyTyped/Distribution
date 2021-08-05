@@ -18,28 +18,21 @@ trait ListWorkGroupsOutput extends StObject {
 }
 object ListWorkGroupsOutput {
   
-  @scala.inline
-  def apply(): ListWorkGroupsOutput = {
+  inline def apply(): ListWorkGroupsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWorkGroupsOutput]
   }
   
-  @scala.inline
-  implicit class ListWorkGroupsOutputMutableBuilder[Self <: ListWorkGroupsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorkGroupsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWorkGroups(value: WorkGroupsList): Self = StObject.set(x, "WorkGroups", value.asInstanceOf[js.Any])
+    inline def setWorkGroups(value: WorkGroupsList): Self = StObject.set(x, "WorkGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkGroupsUndefined: Self = StObject.set(x, "WorkGroups", js.undefined)
+    inline def setWorkGroupsUndefined: Self = StObject.set(x, "WorkGroups", js.undefined)
     
-    @scala.inline
-    def setWorkGroupsVarargs(value: WorkGroupSummary*): Self = StObject.set(x, "WorkGroups", js.Array(value :_*))
+    inline def setWorkGroupsVarargs(value: WorkGroupSummary*): Self = StObject.set(x, "WorkGroups", js.Array(value :_*))
   }
 }

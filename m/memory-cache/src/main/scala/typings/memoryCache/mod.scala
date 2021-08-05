@@ -47,49 +47,36 @@ object mod {
     def size(): Double = js.native
   }
   
-  @scala.inline
-  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @scala.inline
-  def debug(bool: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(bool.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def debug(bool: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(bool.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def del(key: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def del(key: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def get(key: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(key: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def hits(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hits")().asInstanceOf[Double]
+  inline def hits(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hits")().asInstanceOf[Double]
   
-  @scala.inline
-  def keys(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")().asInstanceOf[js.Array[js.Any]]
+  inline def keys(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")().asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def memsize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("memsize")().asInstanceOf[Double]
+  inline def memsize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("memsize")().asInstanceOf[Double]
   
-  @scala.inline
-  def misses(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("misses")().asInstanceOf[Double]
+  inline def misses(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("misses")().asInstanceOf[Double]
   
-  @scala.inline
-  def put[V](key: js.Any, value: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[V]
-  @scala.inline
-  def put[V](key: js.Any, value: V, time: Double): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[V]
-  @scala.inline
-  def put[V](
+  inline def put[V](key: js.Any, value: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[V]
+  inline def put[V](key: js.Any, value: V, time: Double): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[V]
+  inline def put[V](
     key: js.Any,
     value: V,
     time: Double,
     timeoutCallback: js.Function2[/* key */ js.Any, /* value */ js.Any, Unit]
   ): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], time.asInstanceOf[js.Any], timeoutCallback.asInstanceOf[js.Any])).asInstanceOf[V]
-  @scala.inline
-  def put[V](
+  inline def put[V](
     key: js.Any,
     value: V,
     time: Unit,
     timeoutCallback: js.Function2[/* key */ js.Any, /* value */ js.Any, Unit]
   ): V = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], time.asInstanceOf[js.Any], timeoutCallback.asInstanceOf[js.Any])).asInstanceOf[V]
   
-  @scala.inline
-  def size(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("size")().asInstanceOf[Double]
+  inline def size(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("size")().asInstanceOf[Double]
 }

@@ -39,65 +39,47 @@ trait DataTableProps[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[St
 }
 object DataTableProps {
   
-  @scala.inline
-  def apply[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](headers: js.Array[H], rows: js.Array[R]): DataTableProps[R, H] = {
+  inline def apply[R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](headers: js.Array[H], rows: js.Array[R]): DataTableProps[R, H] = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableProps[R, H]]
   }
   
-  @scala.inline
-  implicit class DataTablePropsMutableBuilder[Self <: DataTableProps[?, ?], R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */] (val x: Self & (DataTableProps[R, H])) extends AnyVal {
+  extension [Self <: DataTableProps[?, ?], R /* <: DataTableRow[String] */, H /* <: DataTableHeader[String] */](x: Self & (DataTableProps[R, H])) {
     
-    @scala.inline
-    def setFilterRows(
+    inline def setFilterRows(
       value: /* data */ FilterRowsData[R, H] => js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: R['id'] */ js.Any
         ]
     ): Self = StObject.set(x, "filterRows", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFilterRowsUndefined: Self = StObject.set(x, "filterRows", js.undefined)
+    inline def setFilterRowsUndefined: Self = StObject.set(x, "filterRows", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Array[H]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[H]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersVarargs(value: H*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: H*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setRadio(value: Boolean): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+    inline def setRadio(value: Boolean): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
+    inline def setRadioUndefined: Self = StObject.set(x, "radio", js.undefined)
     
-    @scala.inline
-    def setRender(value: /* props */ DataTableCustomRenderProps[R, H] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: /* props */ DataTableCustomRenderProps[R, H] => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[R]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[R]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: R*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: R*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setSortRow(value: (/* cellA */ js.Any, /* cellB */ js.Any, /* data */ SortRowData) => Double): Self = StObject.set(x, "sortRow", js.Any.fromFunction3(value))
+    inline def setSortRow(value: (/* cellA */ js.Any, /* cellB */ js.Any, /* data */ SortRowData) => Double): Self = StObject.set(x, "sortRow", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSortRowUndefined: Self = StObject.set(x, "sortRow", js.undefined)
+    inline def setSortRowUndefined: Self = StObject.set(x, "sortRow", js.undefined)
     
-    @scala.inline
-    def setStickyHeader(value: Boolean): Self = StObject.set(x, "stickyHeader", value.asInstanceOf[js.Any])
+    inline def setStickyHeader(value: Boolean): Self = StObject.set(x, "stickyHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStickyHeaderUndefined: Self = StObject.set(x, "stickyHeader", js.undefined)
+    inline def setStickyHeaderUndefined: Self = StObject.set(x, "stickyHeader", js.undefined)
   }
 }

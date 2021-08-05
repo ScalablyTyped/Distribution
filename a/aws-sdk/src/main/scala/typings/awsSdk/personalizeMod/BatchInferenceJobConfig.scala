@@ -13,19 +13,15 @@ trait BatchInferenceJobConfig extends StObject {
 }
 object BatchInferenceJobConfig {
   
-  @scala.inline
-  def apply(): BatchInferenceJobConfig = {
+  inline def apply(): BatchInferenceJobConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchInferenceJobConfig]
   }
   
-  @scala.inline
-  implicit class BatchInferenceJobConfigMutableBuilder[Self <: BatchInferenceJobConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BatchInferenceJobConfig](x: Self) {
     
-    @scala.inline
-    def setItemExplorationConfig(value: HyperParameters): Self = StObject.set(x, "itemExplorationConfig", value.asInstanceOf[js.Any])
+    inline def setItemExplorationConfig(value: HyperParameters): Self = StObject.set(x, "itemExplorationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemExplorationConfigUndefined: Self = StObject.set(x, "itemExplorationConfig", js.undefined)
+    inline def setItemExplorationConfigUndefined: Self = StObject.set(x, "itemExplorationConfig", js.undefined)
   }
 }

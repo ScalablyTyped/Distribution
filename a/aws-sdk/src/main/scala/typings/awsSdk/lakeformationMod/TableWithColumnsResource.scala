@@ -33,40 +33,29 @@ trait TableWithColumnsResource extends StObject {
 }
 object TableWithColumnsResource {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, Name: NameString): TableWithColumnsResource = {
+  inline def apply(DatabaseName: NameString, Name: NameString): TableWithColumnsResource = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableWithColumnsResource]
   }
   
-  @scala.inline
-  implicit class TableWithColumnsResourceMutableBuilder[Self <: TableWithColumnsResource] (val x: Self) extends AnyVal {
+  extension [Self <: TableWithColumnsResource](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setColumnNames(value: ColumnNames): Self = StObject.set(x, "ColumnNames", value.asInstanceOf[js.Any])
+    inline def setColumnNames(value: ColumnNames): Self = StObject.set(x, "ColumnNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnNamesUndefined: Self = StObject.set(x, "ColumnNames", js.undefined)
+    inline def setColumnNamesUndefined: Self = StObject.set(x, "ColumnNames", js.undefined)
     
-    @scala.inline
-    def setColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ColumnNames", js.Array(value :_*))
+    inline def setColumnNamesVarargs(value: NameString*): Self = StObject.set(x, "ColumnNames", js.Array(value :_*))
     
-    @scala.inline
-    def setColumnWildcard(value: ColumnWildcard): Self = StObject.set(x, "ColumnWildcard", value.asInstanceOf[js.Any])
+    inline def setColumnWildcard(value: ColumnWildcard): Self = StObject.set(x, "ColumnWildcard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnWildcardUndefined: Self = StObject.set(x, "ColumnWildcard", js.undefined)
+    inline def setColumnWildcardUndefined: Self = StObject.set(x, "ColumnWildcard", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -54,17 +54,14 @@ object systemSystemMod {
   }
   object ServiceIdentifier {
     
-    @scala.inline
-    def apply(name: String): ServiceIdentifier = {
+    inline def apply(name: String): ServiceIdentifier = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceIdentifier]
     }
     
-    @scala.inline
-    implicit class ServiceIdentifierMutableBuilder[Self <: ServiceIdentifier] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceIdentifier](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -527,7 +524,7 @@ object systemSystemMod {
       */
     def runRvmHealthCheck(): js.Promise[js.Array[String]] = js.native
     
-    var sendExternalProcessRequest: js.Any = js.native
+    /* private */ var sendExternalProcessRequest: js.Any = js.native
     
     /**
       * Set the minimum log level above which logs will be written to the OpenFin log

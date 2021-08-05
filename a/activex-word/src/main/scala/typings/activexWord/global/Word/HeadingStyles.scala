@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.HeadingStyles")
 @js.native
-class HeadingStyles protected ()
+/* private */ class HeadingStyles ()
   extends StObject
      with typings.activexWord.Word.HeadingStyles {
   
@@ -28,7 +28,7 @@ class HeadingStyles protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.HeadingStyles_typekey")
   var WordDotHeadingStyles_typekey: typings.activexWord.Word.HeadingStyles = js.native
 }

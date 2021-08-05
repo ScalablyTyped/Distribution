@@ -19,24 +19,19 @@ trait ObjectType[T]
 }
 object ObjectType {
   
-  @scala.inline
-  def apply[T](name: PropertyKey, `object`: T): ObjectType[T] = {
+  inline def apply[T](name: PropertyKey, `object`: T): ObjectType[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("remove")
     __obj.asInstanceOf[ObjectType[T]]
   }
   
-  @scala.inline
-  implicit class ObjectTypeMutableBuilder[Self <: ObjectType[?], T] (val x: Self & ObjectType[T]) extends AnyVal {
+  extension [Self <: ObjectType[?], T](x: Self & ObjectType[T]) {
     
-    @scala.inline
-    def setName(value: PropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: PropertyKey): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: remove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: remove): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

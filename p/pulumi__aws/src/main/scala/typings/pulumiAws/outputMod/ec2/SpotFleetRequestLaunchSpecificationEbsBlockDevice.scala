@@ -24,8 +24,7 @@ trait SpotFleetRequestLaunchSpecificationEbsBlockDevice extends StObject {
 }
 object SpotFleetRequestLaunchSpecificationEbsBlockDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceName: String,
     encrypted: Boolean,
     iops: Double,
@@ -38,34 +37,24 @@ object SpotFleetRequestLaunchSpecificationEbsBlockDevice {
     __obj.asInstanceOf[SpotFleetRequestLaunchSpecificationEbsBlockDevice]
   }
   
-  @scala.inline
-  implicit class SpotFleetRequestLaunchSpecificationEbsBlockDeviceMutableBuilder[Self <: SpotFleetRequestLaunchSpecificationEbsBlockDevice] (val x: Self) extends AnyVal {
+  extension [Self <: SpotFleetRequestLaunchSpecificationEbsBlockDevice](x: Self) {
     
-    @scala.inline
-    def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
+    inline def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "deleteOnTermination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteOnTerminationUndefined: Self = StObject.set(x, "deleteOnTermination", js.undefined)
+    inline def setDeleteOnTerminationUndefined: Self = StObject.set(x, "deleteOnTermination", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: Double): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSize(value: Double): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
+    inline def setVolumeSize(value: Double): Self = StObject.set(x, "volumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
+    inline def setVolumeType(value: String): Self = StObject.set(x, "volumeType", value.asInstanceOf[js.Any])
   }
 }

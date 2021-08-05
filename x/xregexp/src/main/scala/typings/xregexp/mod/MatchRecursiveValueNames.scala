@@ -31,8 +31,7 @@ trait MatchRecursiveValueNames extends StObject {
 }
 object MatchRecursiveValueNames {
   
-  @scala.inline
-  def apply(): MatchRecursiveValueNames = {
+  inline def apply(): MatchRecursiveValueNames = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(null)
     __obj.updateDynamic("1")(null)
@@ -41,31 +40,22 @@ object MatchRecursiveValueNames {
     __obj.asInstanceOf[MatchRecursiveValueNames]
   }
   
-  @scala.inline
-  implicit class MatchRecursiveValueNamesMutableBuilder[Self <: MatchRecursiveValueNames] (val x: Self) extends AnyVal {
+  extension [Self <: MatchRecursiveValueNames](x: Self) {
     
-    @scala.inline
-    def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set0Null: Self = StObject.set(x, "0", null)
+    inline def set0Null: Self = StObject.set(x, "0", null)
     
-    @scala.inline
-    def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1Null: Self = StObject.set(x, "1", null)
+    inline def set1Null: Self = StObject.set(x, "1", null)
     
-    @scala.inline
-    def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2Null: Self = StObject.set(x, "2", null)
+    inline def set2Null: Self = StObject.set(x, "2", null)
     
-    @scala.inline
-    def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+    inline def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set3Null: Self = StObject.set(x, "3", null)
+    inline def set3Null: Self = StObject.set(x, "3", null)
   }
 }

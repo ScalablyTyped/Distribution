@@ -23,25 +23,19 @@ trait GetUserAttributeVerificationCodeRequest extends StObject {
 }
 object GetUserAttributeVerificationCodeRequest {
   
-  @scala.inline
-  def apply(AccessToken: TokenModelType, AttributeName: AttributeNameType): GetUserAttributeVerificationCodeRequest = {
+  inline def apply(AccessToken: TokenModelType, AttributeName: AttributeNameType): GetUserAttributeVerificationCodeRequest = {
     val __obj = js.Dynamic.literal(AccessToken = AccessToken.asInstanceOf[js.Any], AttributeName = AttributeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserAttributeVerificationCodeRequest]
   }
   
-  @scala.inline
-  implicit class GetUserAttributeVerificationCodeRequestMutableBuilder[Self <: GetUserAttributeVerificationCodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserAttributeVerificationCodeRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
   }
 }

@@ -18,8 +18,7 @@ trait Basename extends StObject {
 }
 object Basename {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basename: String,
     chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Chunk */ js.Any,
     filename: String,
@@ -30,24 +29,18 @@ object Basename {
     __obj.asInstanceOf[Basename]
   }
   
-  @scala.inline
-  implicit class BasenameMutableBuilder[Self <: Basename] (val x: Self) extends AnyVal {
+  extension [Self <: Basename](x: Self) {
     
-    @scala.inline
-    def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+    inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunk(
+    inline def setChunk(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Chunk */ js.Any
     ): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

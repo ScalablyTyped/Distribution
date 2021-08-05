@@ -13,16 +13,13 @@ trait DescribeAgentRequest extends StObject {
 }
 object DescribeAgentRequest {
   
-  @scala.inline
-  def apply(AgentArn: AgentArn): DescribeAgentRequest = {
+  inline def apply(AgentArn: AgentArn): DescribeAgentRequest = {
     val __obj = js.Dynamic.literal(AgentArn = AgentArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAgentRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAgentRequestMutableBuilder[Self <: DescribeAgentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAgentRequest](x: Self) {
     
-    @scala.inline
-    def setAgentArn(value: AgentArn): Self = StObject.set(x, "AgentArn", value.asInstanceOf[js.Any])
+    inline def setAgentArn(value: AgentArn): Self = StObject.set(x, "AgentArn", value.asInstanceOf[js.Any])
   }
 }

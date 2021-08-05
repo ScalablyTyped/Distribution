@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DelegateMeetingMessageDeliveryOptions extends StObject
 object DelegateMeetingMessageDeliveryOptions {
   
-  @scala.inline
-  def sendToDelegateAndInformationToPrincipal: typings.microsoftGraph.microsoftGraphStrings.sendToDelegateAndInformationToPrincipal = "sendToDelegateAndInformationToPrincipal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendToDelegateAndInformationToPrincipal]
+  inline def sendToDelegateAndInformationToPrincipal: typings.microsoftGraph.microsoftGraphStrings.sendToDelegateAndInformationToPrincipal = "sendToDelegateAndInformationToPrincipal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendToDelegateAndInformationToPrincipal]
   
-  @scala.inline
-  def sendToDelegateAndPrincipal: typings.microsoftGraph.microsoftGraphStrings.sendToDelegateAndPrincipal = "sendToDelegateAndPrincipal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendToDelegateAndPrincipal]
+  inline def sendToDelegateAndPrincipal: typings.microsoftGraph.microsoftGraphStrings.sendToDelegateAndPrincipal = "sendToDelegateAndPrincipal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendToDelegateAndPrincipal]
   
-  @scala.inline
-  def sendToDelegateOnly: typings.microsoftGraph.microsoftGraphStrings.sendToDelegateOnly = "sendToDelegateOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendToDelegateOnly]
+  inline def sendToDelegateOnly: typings.microsoftGraph.microsoftGraphStrings.sendToDelegateOnly = "sendToDelegateOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.sendToDelegateOnly]
 }

@@ -13,8 +13,7 @@ object complexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def complex(args: BackendMathBackendCPU): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("complex")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def complex(args: BackendMathBackendCPU): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("complex")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Complex", "complexConfig")
   @js.native

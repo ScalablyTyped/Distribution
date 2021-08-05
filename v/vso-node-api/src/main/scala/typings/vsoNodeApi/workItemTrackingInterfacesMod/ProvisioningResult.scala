@@ -13,19 +13,15 @@ trait ProvisioningResult extends StObject {
 }
 object ProvisioningResult {
   
-  @scala.inline
-  def apply(provisioningImportEvents: js.Array[String]): ProvisioningResult = {
+  inline def apply(provisioningImportEvents: js.Array[String]): ProvisioningResult = {
     val __obj = js.Dynamic.literal(provisioningImportEvents = provisioningImportEvents.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningResult]
   }
   
-  @scala.inline
-  implicit class ProvisioningResultMutableBuilder[Self <: ProvisioningResult] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisioningResult](x: Self) {
     
-    @scala.inline
-    def setProvisioningImportEvents(value: js.Array[String]): Self = StObject.set(x, "provisioningImportEvents", value.asInstanceOf[js.Any])
+    inline def setProvisioningImportEvents(value: js.Array[String]): Self = StObject.set(x, "provisioningImportEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningImportEventsVarargs(value: String*): Self = StObject.set(x, "provisioningImportEvents", js.Array(value :_*))
+    inline def setProvisioningImportEventsVarargs(value: String*): Self = StObject.set(x, "provisioningImportEvents", js.Array(value :_*))
   }
 }

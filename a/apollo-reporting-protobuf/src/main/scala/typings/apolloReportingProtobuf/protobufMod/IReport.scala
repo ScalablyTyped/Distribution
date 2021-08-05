@@ -19,40 +19,29 @@ trait IReport extends StObject {
 }
 object IReport {
   
-  @scala.inline
-  def apply(): IReport = {
+  inline def apply(): IReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IReport]
   }
   
-  @scala.inline
-  implicit class IReportMutableBuilder[Self <: IReport] (val x: Self) extends AnyVal {
+  extension [Self <: IReport](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: ITimestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: ITimestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeNull: Self = StObject.set(x, "endTime", null)
+    inline def setEndTimeNull: Self = StObject.set(x, "endTime", null)
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setHeader(value: IReportHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: IReportHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderNull: Self = StObject.set(x, "header", null)
+    inline def setHeaderNull: Self = StObject.set(x, "header", null)
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setTracesPerQuery(value: StringDictionary[ITracesAndStats]): Self = StObject.set(x, "tracesPerQuery", value.asInstanceOf[js.Any])
+    inline def setTracesPerQuery(value: StringDictionary[ITracesAndStats]): Self = StObject.set(x, "tracesPerQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracesPerQueryNull: Self = StObject.set(x, "tracesPerQuery", null)
+    inline def setTracesPerQueryNull: Self = StObject.set(x, "tracesPerQuery", null)
     
-    @scala.inline
-    def setTracesPerQueryUndefined: Self = StObject.set(x, "tracesPerQuery", js.undefined)
+    inline def setTracesPerQueryUndefined: Self = StObject.set(x, "tracesPerQuery", js.undefined)
   }
 }

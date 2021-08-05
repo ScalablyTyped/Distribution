@@ -15,20 +15,16 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setMocha(value: MochaClientOptions): Self = StObject.set(x, "mocha", value.asInstanceOf[js.Any])
+      inline def setMocha(value: MochaClientOptions): Self = StObject.set(x, "mocha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMochaUndefined: Self = StObject.set(x, "mocha", js.undefined)
+      inline def setMochaUndefined: Self = StObject.set(x, "mocha", js.undefined)
     }
   }
   
@@ -45,29 +41,22 @@ object mod {
   }
   object MochaClientOptions {
     
-    @scala.inline
-    def apply(): MochaClientOptions = {
+    inline def apply(): MochaClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MochaClientOptions]
     }
     
-    @scala.inline
-    implicit class MochaClientOptionsMutableBuilder[Self <: MochaClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MochaClientOptions](x: Self) {
       
-      @scala.inline
-      def setExport(value: js.Array[String]): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
+      inline def setExport(value: js.Array[String]): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
+      inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
       
-      @scala.inline
-      def setExportVarargs(value: String*): Self = StObject.set(x, "export", js.Array(value :_*))
+      inline def setExportVarargs(value: String*): Self = StObject.set(x, "export", js.Array(value :_*))
       
-      @scala.inline
-      def setOpts(value: `true` | String): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: `true` | String): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+      inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
     }
   }
 }

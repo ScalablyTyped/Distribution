@@ -15,28 +15,21 @@ trait InstanceGroupManagersScopedList extends StObject {
 }
 object InstanceGroupManagersScopedList {
   
-  @scala.inline
-  def apply(): InstanceGroupManagersScopedList = {
+  inline def apply(): InstanceGroupManagersScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupManagersScopedList]
   }
   
-  @scala.inline
-  implicit class InstanceGroupManagersScopedListMutableBuilder[Self <: InstanceGroupManagersScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupManagersScopedList](x: Self) {
     
-    @scala.inline
-    def setInstanceGroupManagers(value: js.Array[InstanceGroupManager]): Self = StObject.set(x, "instanceGroupManagers", value.asInstanceOf[js.Any])
+    inline def setInstanceGroupManagers(value: js.Array[InstanceGroupManager]): Self = StObject.set(x, "instanceGroupManagers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceGroupManagersUndefined: Self = StObject.set(x, "instanceGroupManagers", js.undefined)
+    inline def setInstanceGroupManagersUndefined: Self = StObject.set(x, "instanceGroupManagers", js.undefined)
     
-    @scala.inline
-    def setInstanceGroupManagersVarargs(value: InstanceGroupManager*): Self = StObject.set(x, "instanceGroupManagers", js.Array(value :_*))
+    inline def setInstanceGroupManagersVarargs(value: InstanceGroupManager*): Self = StObject.set(x, "instanceGroupManagers", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

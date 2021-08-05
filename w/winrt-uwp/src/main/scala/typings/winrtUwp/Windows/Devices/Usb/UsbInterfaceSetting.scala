@@ -38,8 +38,7 @@ trait UsbInterfaceSetting extends StObject {
 }
 object UsbInterfaceSetting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bulkInEndpoints: IVectorView[UsbBulkInEndpointDescriptor],
     bulkOutEndpoints: IVectorView[UsbBulkOutEndpointDescriptor],
     descriptors: IVectorView[UsbDescriptor],
@@ -53,31 +52,22 @@ object UsbInterfaceSetting {
     __obj.asInstanceOf[UsbInterfaceSetting]
   }
   
-  @scala.inline
-  implicit class UsbInterfaceSettingMutableBuilder[Self <: UsbInterfaceSetting] (val x: Self) extends AnyVal {
+  extension [Self <: UsbInterfaceSetting](x: Self) {
     
-    @scala.inline
-    def setBulkInEndpoints(value: IVectorView[UsbBulkInEndpointDescriptor]): Self = StObject.set(x, "bulkInEndpoints", value.asInstanceOf[js.Any])
+    inline def setBulkInEndpoints(value: IVectorView[UsbBulkInEndpointDescriptor]): Self = StObject.set(x, "bulkInEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkOutEndpoints(value: IVectorView[UsbBulkOutEndpointDescriptor]): Self = StObject.set(x, "bulkOutEndpoints", value.asInstanceOf[js.Any])
+    inline def setBulkOutEndpoints(value: IVectorView[UsbBulkOutEndpointDescriptor]): Self = StObject.set(x, "bulkOutEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptors(value: IVectorView[UsbDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
+    inline def setDescriptors(value: IVectorView[UsbDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceDescriptor(value: UsbInterfaceDescriptor): Self = StObject.set(x, "interfaceDescriptor", value.asInstanceOf[js.Any])
+    inline def setInterfaceDescriptor(value: UsbInterfaceDescriptor): Self = StObject.set(x, "interfaceDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterruptInEndpoints(value: IVectorView[UsbInterruptInEndpointDescriptor]): Self = StObject.set(x, "interruptInEndpoints", value.asInstanceOf[js.Any])
+    inline def setInterruptInEndpoints(value: IVectorView[UsbInterruptInEndpointDescriptor]): Self = StObject.set(x, "interruptInEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterruptOutEndpoints(value: IVectorView[UsbInterruptOutEndpointDescriptor]): Self = StObject.set(x, "interruptOutEndpoints", value.asInstanceOf[js.Any])
+    inline def setInterruptOutEndpoints(value: IVectorView[UsbInterruptOutEndpointDescriptor]): Self = StObject.set(x, "interruptOutEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectSettingAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "selectSettingAsync", js.Any.fromFunction0(value))
+    inline def setSelectSettingAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "selectSettingAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }
 }

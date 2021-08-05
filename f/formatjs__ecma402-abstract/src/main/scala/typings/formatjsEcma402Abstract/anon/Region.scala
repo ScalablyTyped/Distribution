@@ -19,8 +19,7 @@ trait Region extends StObject {
 }
 object Region {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currency: NarrowRecordShortRecord,
     language: NarrowRecord,
     region: ShortRecord,
@@ -30,19 +29,14 @@ object Region {
     __obj.asInstanceOf[Region]
   }
   
-  @scala.inline
-  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+  extension [Self <: Region](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: NarrowRecordShortRecord): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: NarrowRecordShortRecord): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: NarrowRecord): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: NarrowRecord): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: ShortRecord): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: ShortRecord): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript(value: LongRecordNarrowRecord): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: LongRecordNarrowRecord): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
   }
 }

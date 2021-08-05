@@ -12,8 +12,7 @@ object tapAfterCompileToGetIssuesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tapAfterCompileToGetIssues(
+  inline def tapAfterCompileToGetIssues(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     configuration: ForkTsCheckerWebpackPluginConfiguration,
     state: ForkTsCheckerWebpackPluginState

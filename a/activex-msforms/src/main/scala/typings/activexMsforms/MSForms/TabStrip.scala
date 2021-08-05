@@ -37,7 +37,7 @@ trait TabStrip extends StObject {
   
   var ForeColor: Double
   
-  @JSName("MSForms.TabStrip_typekey")
+  /* private */ @JSName("MSForms.TabStrip_typekey")
   var MSFormsDotTabStrip_typekey: TabStrip
   
   var MouseIcon: StdPicture
@@ -82,8 +82,7 @@ trait TabStrip extends StObject {
 }
 object TabStrip {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackColor: Double,
     ClientHeight: Double,
     ClientLeft: Double,
@@ -125,112 +124,76 @@ object TabStrip {
     __obj.asInstanceOf[TabStrip]
   }
   
-  @scala.inline
-  implicit class TabStripMutableBuilder[Self <: TabStrip] (val x: Self) extends AnyVal {
+  extension [Self <: TabStrip](x: Self) {
     
-    @scala.inline
-    def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientHeight(value: Double): Self = StObject.set(x, "ClientHeight", value.asInstanceOf[js.Any])
+    inline def setClientHeight(value: Double): Self = StObject.set(x, "ClientHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientLeft(value: Double): Self = StObject.set(x, "ClientLeft", value.asInstanceOf[js.Any])
+    inline def setClientLeft(value: Double): Self = StObject.set(x, "ClientLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTop(value: Double): Self = StObject.set(x, "ClientTop", value.asInstanceOf[js.Any])
+    inline def setClientTop(value: Double): Self = StObject.set(x, "ClientTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientWidth(value: Double): Self = StObject.set(x, "ClientWidth", value.asInstanceOf[js.Any])
+    inline def setClientWidth(value: Double): Self = StObject.set(x, "ClientWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: NewFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: NewFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontBold(value: Boolean): Self = StObject.set(x, "FontBold", value.asInstanceOf[js.Any])
+    inline def setFontBold(value: Boolean): Self = StObject.set(x, "FontBold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontItalic(value: Boolean): Self = StObject.set(x, "FontItalic", value.asInstanceOf[js.Any])
+    inline def setFontItalic(value: Boolean): Self = StObject.set(x, "FontItalic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
+    inline def setFontName(value: String): Self = StObject.set(x, "FontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "FontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStrikethru(value: Boolean): Self = StObject.set(x, "FontStrikethru", value.asInstanceOf[js.Any])
+    inline def setFontStrikethru(value: Boolean): Self = StObject.set(x, "FontStrikethru", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUnderline(value: Boolean): Self = StObject.set(x, "FontUnderline", value.asInstanceOf[js.Any])
+    inline def setFontUnderline(value: Boolean): Self = StObject.set(x, "FontUnderline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeight(value: Double): Self = StObject.set(x, "FontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: Double): Self = StObject.set(x, "FontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
+    inline def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotTabStrip_typekey(value: TabStrip): Self = StObject.set(x, "MSForms.TabStrip_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotTabStrip_typekey(value: TabStrip): Self = StObject.set(x, "MSForms.TabStrip_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
+    inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePointer(value: fmMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    inline def setMousePointer(value: fmMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiRow(value: Boolean): Self = StObject.set(x, "MultiRow", value.asInstanceOf[js.Any])
+    inline def setMultiRow(value: Boolean): Self = StObject.set(x, "MultiRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItem(value: Tab): Self = StObject.set(x, "SelectedItem", value.asInstanceOf[js.Any])
+    inline def setSelectedItem(value: Tab): Self = StObject.set(x, "SelectedItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: fmTabStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: fmTabStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabFixedHeight(value: Double): Self = StObject.set(x, "TabFixedHeight", value.asInstanceOf[js.Any])
+    inline def setTabFixedHeight(value: Double): Self = StObject.set(x, "TabFixedHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabFixedWidth(value: Double): Self = StObject.set(x, "TabFixedWidth", value.asInstanceOf[js.Any])
+    inline def setTabFixedWidth(value: Double): Self = StObject.set(x, "TabFixedWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabOrientation(value: fmTabOrientation): Self = StObject.set(x, "TabOrientation", value.asInstanceOf[js.Any])
+    inline def setTabOrientation(value: fmTabOrientation): Self = StObject.set(x, "TabOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabs(value: Tabs): Self = StObject.set(x, "Tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: Tabs): Self = StObject.set(x, "Tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Font_Reserved(value: NewFont): Self = StObject.set(x, "_Font_Reserved", value.asInstanceOf[js.Any])
+    inline def set_Font_Reserved(value: NewFont): Self = StObject.set(x, "_Font_Reserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_GetClientHeight(value: Double => Unit): Self = StObject.set(x, "_GetClientHeight", js.Any.fromFunction1(value))
+    inline def set_GetClientHeight(value: Double => Unit): Self = StObject.set(x, "_GetClientHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_GetClientLeft(value: Double => Unit): Self = StObject.set(x, "_GetClientLeft", js.Any.fromFunction1(value))
+    inline def set_GetClientLeft(value: Double => Unit): Self = StObject.set(x, "_GetClientLeft", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_GetClientTop(value: Double => Unit): Self = StObject.set(x, "_GetClientTop", js.Any.fromFunction1(value))
+    inline def set_GetClientTop(value: Double => Unit): Self = StObject.set(x, "_GetClientTop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_GetClientWidth(value: Double => Unit): Self = StObject.set(x, "_GetClientWidth", js.Any.fromFunction1(value))
+    inline def set_GetClientWidth(value: Double => Unit): Self = StObject.set(x, "_GetClientWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_GetTabFixedHeight(value: Double => Unit): Self = StObject.set(x, "_GetTabFixedHeight", js.Any.fromFunction1(value))
+    inline def set_GetTabFixedHeight(value: Double => Unit): Self = StObject.set(x, "_GetTabFixedHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_GetTabFixedWidth(value: Double => Unit): Self = StObject.set(x, "_GetTabFixedWidth", js.Any.fromFunction1(value))
+    inline def set_GetTabFixedWidth(value: Double => Unit): Self = StObject.set(x, "_GetTabFixedWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_SetTabFixedHeight(value: Double => Unit): Self = StObject.set(x, "_SetTabFixedHeight", js.Any.fromFunction1(value))
+    inline def set_SetTabFixedHeight(value: Double => Unit): Self = StObject.set(x, "_SetTabFixedHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_SetTabFixedWidth(value: Double => Unit): Self = StObject.set(x, "_SetTabFixedWidth", js.Any.fromFunction1(value))
+    inline def set_SetTabFixedWidth(value: Double => Unit): Self = StObject.set(x, "_SetTabFixedWidth", js.Any.fromFunction1(value))
   }
 }

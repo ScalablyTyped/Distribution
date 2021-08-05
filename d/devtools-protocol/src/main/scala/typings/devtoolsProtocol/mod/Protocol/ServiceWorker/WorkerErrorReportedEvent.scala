@@ -10,16 +10,13 @@ trait WorkerErrorReportedEvent extends StObject {
 }
 object WorkerErrorReportedEvent {
   
-  @scala.inline
-  def apply(errorMessage: ServiceWorkerErrorMessage): WorkerErrorReportedEvent = {
+  inline def apply(errorMessage: ServiceWorkerErrorMessage): WorkerErrorReportedEvent = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerErrorReportedEvent]
   }
   
-  @scala.inline
-  implicit class WorkerErrorReportedEventMutableBuilder[Self <: WorkerErrorReportedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerErrorReportedEvent](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: ServiceWorkerErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ServiceWorkerErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }
 }

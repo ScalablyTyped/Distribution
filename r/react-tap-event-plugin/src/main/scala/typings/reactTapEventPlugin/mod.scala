@@ -20,20 +20,16 @@ object mod extends Shortcut {
   }
   object StrategyOverrides {
     
-    @scala.inline
-    def apply(): StrategyOverrides = {
+    inline def apply(): StrategyOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrategyOverrides]
     }
     
-    @scala.inline
-    implicit class StrategyOverridesMutableBuilder[Self <: StrategyOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: StrategyOverrides](x: Self) {
       
-      @scala.inline
-      def setShouldRejectClick(value: (/* lastTouchEventTimestamp */ Date, /* clickEventTimestamp */ Date) => Boolean): Self = StObject.set(x, "shouldRejectClick", js.Any.fromFunction2(value))
+      inline def setShouldRejectClick(value: (/* lastTouchEventTimestamp */ Date, /* clickEventTimestamp */ Date) => Boolean): Self = StObject.set(x, "shouldRejectClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShouldRejectClickUndefined: Self = StObject.set(x, "shouldRejectClick", js.undefined)
+      inline def setShouldRejectClickUndefined: Self = StObject.set(x, "shouldRejectClick", js.undefined)
     }
   }
   

@@ -42,10 +42,8 @@ object ConsensusNotifyBlockValid {
     * @param [properties] Properties to set
     * @returns ConsensusNotifyBlockValid instance
     */
-  @scala.inline
-  def create(): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusNotifyBlockValid]
-  @scala.inline
-  def create(properties: IConsensusNotifyBlockValid): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
+  inline def create(): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusNotifyBlockValid]
+  inline def create(properties: IConsensusNotifyBlockValid): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
   
   /**
     * Decodes a ConsensusNotifyBlockValid message from the specified reader or buffer.
@@ -55,14 +53,10 @@ object ConsensusNotifyBlockValid {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decode(reader: Reader): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ConsensusNotifyBlockValid = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusNotifyBlockValid]
-  @scala.inline
-  def decode(reader: Uint8Array): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ConsensusNotifyBlockValid = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusNotifyBlockValid]
+  inline def decode(reader: Reader): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
+  inline def decode(reader: Reader, length: Double): ConsensusNotifyBlockValid = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusNotifyBlockValid]
+  inline def decode(reader: Uint8Array): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
+  inline def decode(reader: Uint8Array, length: Double): ConsensusNotifyBlockValid = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusNotifyBlockValid]
   
   /**
     * Decodes a ConsensusNotifyBlockValid message from the specified reader or buffer, length delimited.
@@ -71,10 +65,8 @@ object ConsensusNotifyBlockValid {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
+  inline def decodeDelimited(reader: Reader): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
+  inline def decodeDelimited(reader: Uint8Array): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
   
   /**
     * Encodes the specified ConsensusNotifyBlockValid message. Does not implicitly {@link ConsensusNotifyBlockValid.verify|verify} messages.
@@ -82,10 +74,8 @@ object ConsensusNotifyBlockValid {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encode(message: IConsensusNotifyBlockValid): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IConsensusNotifyBlockValid, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IConsensusNotifyBlockValid): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IConsensusNotifyBlockValid, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ConsensusNotifyBlockValid message, length delimited. Does not implicitly {@link ConsensusNotifyBlockValid.verify|verify} messages.
@@ -93,18 +83,15 @@ object ConsensusNotifyBlockValid {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encodeDelimited(message: IConsensusNotifyBlockValid): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IConsensusNotifyBlockValid, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IConsensusNotifyBlockValid): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IConsensusNotifyBlockValid, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ConsensusNotifyBlockValid message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusNotifyBlockValid
     */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusNotifyBlockValid]
   
   /**
     * Creates a plain object from a ConsensusNotifyBlockValid message. Also converts values to other types if specified.
@@ -112,16 +99,13 @@ object ConsensusNotifyBlockValid {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @scala.inline
-  def toObject(message: ConsensusNotifyBlockValid): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ConsensusNotifyBlockValid, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusNotifyBlockValid): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusNotifyBlockValid, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ConsensusNotifyBlockValid message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

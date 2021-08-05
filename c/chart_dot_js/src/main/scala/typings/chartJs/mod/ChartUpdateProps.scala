@@ -14,31 +14,23 @@ trait ChartUpdateProps extends StObject {
 }
 object ChartUpdateProps {
   
-  @scala.inline
-  def apply(): ChartUpdateProps = {
+  inline def apply(): ChartUpdateProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartUpdateProps]
   }
   
-  @scala.inline
-  implicit class ChartUpdatePropsMutableBuilder[Self <: ChartUpdateProps] (val x: Self) extends AnyVal {
+  extension [Self <: ChartUpdateProps](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+    inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+    inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
   }
 }

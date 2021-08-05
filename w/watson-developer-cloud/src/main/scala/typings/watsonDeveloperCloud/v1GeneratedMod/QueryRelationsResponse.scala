@@ -12,22 +12,17 @@ trait QueryRelationsResponse extends StObject {
 }
 object QueryRelationsResponse {
   
-  @scala.inline
-  def apply(): QueryRelationsResponse = {
+  inline def apply(): QueryRelationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryRelationsResponse]
   }
   
-  @scala.inline
-  implicit class QueryRelationsResponseMutableBuilder[Self <: QueryRelationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRelationsResponse](x: Self) {
     
-    @scala.inline
-    def setRelations(value: js.Array[QueryRelationsRelationship]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: js.Array[QueryRelationsRelationship]): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
+    inline def setRelationsUndefined: Self = StObject.set(x, "relations", js.undefined)
     
-    @scala.inline
-    def setRelationsVarargs(value: QueryRelationsRelationship*): Self = StObject.set(x, "relations", js.Array(value :_*))
+    inline def setRelationsVarargs(value: QueryRelationsRelationship*): Self = StObject.set(x, "relations", js.Array(value :_*))
   }
 }

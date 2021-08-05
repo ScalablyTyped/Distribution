@@ -84,8 +84,7 @@ trait SjclJson extends StObject {
 }
 object SjclJson {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     decode: String => js.Object,
     decrypt: (/* password */ SjclElGamalSecretKey | BitArray_ | String, /* ciphertext */ SjclCipherEncrypted | String, /* params */ js.UndefOr[SjclCipherDecryptParams], /* rp */ js.UndefOr[SjclCipherDecrypted]) => String,
     encode: js.Object => String,
@@ -95,22 +94,17 @@ object SjclJson {
     __obj.asInstanceOf[SjclJson]
   }
   
-  @scala.inline
-  implicit class SjclJsonMutableBuilder[Self <: SjclJson] (val x: Self) extends AnyVal {
+  extension [Self <: SjclJson](x: Self) {
     
-    @scala.inline
-    def setDecode(value: String => js.Object): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: String => js.Object): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecrypt(
+    inline def setDecrypt(
       value: (/* password */ SjclElGamalSecretKey | BitArray_ | String, /* ciphertext */ SjclCipherEncrypted | String, /* params */ js.UndefOr[SjclCipherDecryptParams], /* rp */ js.UndefOr[SjclCipherDecrypted]) => String
     ): Self = StObject.set(x, "decrypt", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEncode(value: js.Object => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: js.Object => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncrypt(
+    inline def setEncrypt(
       value: (/* password */ SjclElGamalPublicKey | BitArray_ | String, /* plaintext */ String, /* params */ js.UndefOr[SjclCipherEncryptParams], /* rp */ js.UndefOr[SjclCipherEncrypted]) => SjclCipherEncrypted
     ): Self = StObject.set(x, "encrypt", js.Any.fromFunction4(value))
   }

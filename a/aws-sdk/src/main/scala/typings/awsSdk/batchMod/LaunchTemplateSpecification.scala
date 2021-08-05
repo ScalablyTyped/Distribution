@@ -23,31 +23,23 @@ trait LaunchTemplateSpecification extends StObject {
 }
 object LaunchTemplateSpecification {
   
-  @scala.inline
-  def apply(): LaunchTemplateSpecification = {
+  inline def apply(): LaunchTemplateSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplateSpecification]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateSpecificationMutableBuilder[Self <: LaunchTemplateSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateSpecification](x: Self) {
     
-    @scala.inline
-    def setLaunchTemplateId(value: String): Self = StObject.set(x, "launchTemplateId", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateId(value: String): Self = StObject.set(x, "launchTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateIdUndefined: Self = StObject.set(x, "launchTemplateId", js.undefined)
+    inline def setLaunchTemplateIdUndefined: Self = StObject.set(x, "launchTemplateId", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateName(value: String): Self = StObject.set(x, "launchTemplateName", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateName(value: String): Self = StObject.set(x, "launchTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateNameUndefined: Self = StObject.set(x, "launchTemplateName", js.undefined)
+    inline def setLaunchTemplateNameUndefined: Self = StObject.set(x, "launchTemplateName", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

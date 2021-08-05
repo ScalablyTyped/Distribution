@@ -33,43 +33,31 @@ trait GlobalReplicationGroupMember extends StObject {
 }
 object GlobalReplicationGroupMember {
   
-  @scala.inline
-  def apply(): GlobalReplicationGroupMember = {
+  inline def apply(): GlobalReplicationGroupMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalReplicationGroupMember]
   }
   
-  @scala.inline
-  implicit class GlobalReplicationGroupMemberMutableBuilder[Self <: GlobalReplicationGroupMember] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalReplicationGroupMember](x: Self) {
     
-    @scala.inline
-    def setAutomaticFailover(value: AutomaticFailoverStatus): Self = StObject.set(x, "AutomaticFailover", value.asInstanceOf[js.Any])
+    inline def setAutomaticFailover(value: AutomaticFailoverStatus): Self = StObject.set(x, "AutomaticFailover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticFailoverUndefined: Self = StObject.set(x, "AutomaticFailover", js.undefined)
+    inline def setAutomaticFailoverUndefined: Self = StObject.set(x, "AutomaticFailover", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
+    inline def setReplicationGroupIdUndefined: Self = StObject.set(x, "ReplicationGroupId", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupRegion(value: String): Self = StObject.set(x, "ReplicationGroupRegion", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupRegion(value: String): Self = StObject.set(x, "ReplicationGroupRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupRegionUndefined: Self = StObject.set(x, "ReplicationGroupRegion", js.undefined)
+    inline def setReplicationGroupRegionUndefined: Self = StObject.set(x, "ReplicationGroupRegion", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

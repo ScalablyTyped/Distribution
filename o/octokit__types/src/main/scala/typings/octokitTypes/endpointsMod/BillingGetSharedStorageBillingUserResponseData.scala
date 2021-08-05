@@ -23,8 +23,7 @@ trait BillingGetSharedStorageBillingUserResponseData extends StObject {
 }
 object BillingGetSharedStorageBillingUserResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     days_left_in_billing_cycle: Double,
     estimated_paid_storage_for_month: Double,
     estimated_storage_for_month: Double
@@ -33,16 +32,12 @@ object BillingGetSharedStorageBillingUserResponseData {
     __obj.asInstanceOf[BillingGetSharedStorageBillingUserResponseData]
   }
   
-  @scala.inline
-  implicit class BillingGetSharedStorageBillingUserResponseDataMutableBuilder[Self <: BillingGetSharedStorageBillingUserResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: BillingGetSharedStorageBillingUserResponseData](x: Self) {
     
-    @scala.inline
-    def setDays_left_in_billing_cycle(value: Double): Self = StObject.set(x, "days_left_in_billing_cycle", value.asInstanceOf[js.Any])
+    inline def setDays_left_in_billing_cycle(value: Double): Self = StObject.set(x, "days_left_in_billing_cycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimated_paid_storage_for_month(value: Double): Self = StObject.set(x, "estimated_paid_storage_for_month", value.asInstanceOf[js.Any])
+    inline def setEstimated_paid_storage_for_month(value: Double): Self = StObject.set(x, "estimated_paid_storage_for_month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimated_storage_for_month(value: Double): Self = StObject.set(x, "estimated_storage_for_month", value.asInstanceOf[js.Any])
+    inline def setEstimated_storage_for_month(value: Double): Self = StObject.set(x, "estimated_storage_for_month", value.asInstanceOf[js.Any])
   }
 }

@@ -9,7 +9,7 @@ trait DataSourceObject extends StObject {
   
   val DOM: IXMLDOMDocument
   
-  @JSName("InfoPath.DataSourceObject_typekey")
+  /* private */ @JSName("InfoPath.DataSourceObject_typekey")
   var InfoPathDotDataSourceObject_typekey: DataSourceObject
   
   val Name: String
@@ -20,8 +20,7 @@ trait DataSourceObject extends StObject {
 }
 object DataSourceObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DOM: IXMLDOMDocument,
     InfoPathDotDataSourceObject_typekey: DataSourceObject,
     Name: String,
@@ -33,22 +32,16 @@ object DataSourceObject {
     __obj.asInstanceOf[DataSourceObject]
   }
   
-  @scala.inline
-  implicit class DataSourceObjectMutableBuilder[Self <: DataSourceObject] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceObject](x: Self) {
     
-    @scala.inline
-    def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
+    inline def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotDataSourceObject_typekey(value: DataSourceObject): Self = StObject.set(x, "InfoPath.DataSourceObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotDataSourceObject_typekey(value: DataSourceObject): Self = StObject.set(x, "InfoPath.DataSourceObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAdapter(value: js.Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
+    inline def setQueryAdapter(value: js.Any): Self = StObject.set(x, "QueryAdapter", value.asInstanceOf[js.Any])
   }
 }

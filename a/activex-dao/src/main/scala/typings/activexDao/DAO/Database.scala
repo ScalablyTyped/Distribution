@@ -76,7 +76,7 @@ trait Database extends StObject {
   def CreateTableDef(Name: Unit, Attributes: TableDefAttributeEnum, SourceTableName: String, Connect: String): TableDef = js.native
   def CreateTableDef(Name: Unit, Attributes: TableDefAttributeEnum, SourceTableName: Unit, Connect: String): TableDef = js.native
   
-  @JSName("DAO.Database_typekey")
+  /* private */ @JSName("DAO.Database_typekey")
   var DAODotDatabase_typekey: Database = js.native
   
   var DesignMasterID: String = js.native

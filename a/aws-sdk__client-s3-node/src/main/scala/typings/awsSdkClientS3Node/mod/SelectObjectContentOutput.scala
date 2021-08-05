@@ -10,8 +10,7 @@ trait SelectObjectContentOutput
      with typings.awsSdkClientS3Node.typesSelectObjectContentOutputMod.SelectObjectContentOutput
 object SelectObjectContentOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): SelectObjectContentOutput = {
+  inline def apply($metadata: ResponseMetadata): SelectObjectContentOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectObjectContentOutput]
   }

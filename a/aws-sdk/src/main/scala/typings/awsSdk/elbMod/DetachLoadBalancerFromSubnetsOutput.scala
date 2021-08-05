@@ -13,22 +13,17 @@ trait DetachLoadBalancerFromSubnetsOutput extends StObject {
 }
 object DetachLoadBalancerFromSubnetsOutput {
   
-  @scala.inline
-  def apply(): DetachLoadBalancerFromSubnetsOutput = {
+  inline def apply(): DetachLoadBalancerFromSubnetsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetachLoadBalancerFromSubnetsOutput]
   }
   
-  @scala.inline
-  implicit class DetachLoadBalancerFromSubnetsOutputMutableBuilder[Self <: DetachLoadBalancerFromSubnetsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DetachLoadBalancerFromSubnetsOutput](x: Self) {
     
-    @scala.inline
-    def setSubnets(value: Subnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: Subnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
+    inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    @scala.inline
-    def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
   }
 }

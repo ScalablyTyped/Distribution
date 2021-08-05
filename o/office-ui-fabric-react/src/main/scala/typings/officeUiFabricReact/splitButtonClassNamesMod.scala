@@ -11,10 +11,8 @@ object splitButtonClassNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
-  @scala.inline
-  def getSplitButtonClassNames(
+  inline def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
+  inline def getSplitButtonClassNames(
     styles: IButtonStyles,
     disabled: Boolean,
     expanded: Boolean,
@@ -36,44 +34,32 @@ object splitButtonClassNamesMod {
   }
   object ISplitButtonClassNames {
     
-    @scala.inline
-    def apply(): ISplitButtonClassNames = {
+    inline def apply(): ISplitButtonClassNames = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISplitButtonClassNames]
     }
     
-    @scala.inline
-    implicit class ISplitButtonClassNamesMutableBuilder[Self <: ISplitButtonClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: ISplitButtonClassNames](x: Self) {
       
-      @scala.inline
-      def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setFlexContainer(value: String): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
+      inline def setFlexContainer(value: String): Self = StObject.set(x, "flexContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
+      inline def setFlexContainerUndefined: Self = StObject.set(x, "flexContainer", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSplitButtonContainer(value: String): Self = StObject.set(x, "splitButtonContainer", value.asInstanceOf[js.Any])
+      inline def setSplitButtonContainer(value: String): Self = StObject.set(x, "splitButtonContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitButtonContainerUndefined: Self = StObject.set(x, "splitButtonContainer", js.undefined)
+      inline def setSplitButtonContainerUndefined: Self = StObject.set(x, "splitButtonContainer", js.undefined)
     }
   }
 }

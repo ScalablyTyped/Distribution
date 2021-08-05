@@ -19,8 +19,7 @@ trait AgentJobRequestMessage
 }
 object AgentJobRequestMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     environment: JobEnvironment,
     jobId: String,
     jobName: String,
@@ -36,22 +35,16 @@ object AgentJobRequestMessage {
     __obj.asInstanceOf[AgentJobRequestMessage]
   }
   
-  @scala.inline
-  implicit class AgentJobRequestMessageMutableBuilder[Self <: AgentJobRequestMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AgentJobRequestMessage](x: Self) {
     
-    @scala.inline
-    def setLockToken(value: String): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
+    inline def setLockToken(value: String): Self = StObject.set(x, "lockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUntil(value: Date): Self = StObject.set(x, "lockedUntil", value.asInstanceOf[js.Any])
+    inline def setLockedUntil(value: Date): Self = StObject.set(x, "lockedUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: Double): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasks(value: js.Array[TaskInstance]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: js.Array[TaskInstance]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksVarargs(value: TaskInstance*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: TaskInstance*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

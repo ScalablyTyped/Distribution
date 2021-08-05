@@ -18,34 +18,25 @@ trait SDPEncodingParameters extends StObject {
 }
 object SDPEncodingParameters {
   
-  @scala.inline
-  def apply(ssrc: Double): SDPEncodingParameters = {
+  inline def apply(ssrc: Double): SDPEncodingParameters = {
     val __obj = js.Dynamic.literal(ssrc = ssrc.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPEncodingParameters]
   }
   
-  @scala.inline
-  implicit class SDPEncodingParametersMutableBuilder[Self <: SDPEncodingParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SDPEncodingParameters](x: Self) {
     
-    @scala.inline
-    def setCodecPayloadType(value: Double): Self = StObject.set(x, "codecPayloadType", value.asInstanceOf[js.Any])
+    inline def setCodecPayloadType(value: Double): Self = StObject.set(x, "codecPayloadType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecPayloadTypeUndefined: Self = StObject.set(x, "codecPayloadType", js.undefined)
+    inline def setCodecPayloadTypeUndefined: Self = StObject.set(x, "codecPayloadType", js.undefined)
     
-    @scala.inline
-    def setFec(value: Mechanism): Self = StObject.set(x, "fec", value.asInstanceOf[js.Any])
+    inline def setFec(value: Mechanism): Self = StObject.set(x, "fec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFecUndefined: Self = StObject.set(x, "fec", js.undefined)
+    inline def setFecUndefined: Self = StObject.set(x, "fec", js.undefined)
     
-    @scala.inline
-    def setRtx(value: Ssrc): Self = StObject.set(x, "rtx", value.asInstanceOf[js.Any])
+    inline def setRtx(value: Ssrc): Self = StObject.set(x, "rtx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtxUndefined: Self = StObject.set(x, "rtx", js.undefined)
+    inline def setRtxUndefined: Self = StObject.set(x, "rtx", js.undefined)
     
-    @scala.inline
-    def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
+    inline def setSsrc(value: Double): Self = StObject.set(x, "ssrc", value.asInstanceOf[js.Any])
   }
 }

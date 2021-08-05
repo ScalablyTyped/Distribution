@@ -17,20 +17,16 @@ object typesProgressEventMod {
   }
   object ProgressEvent {
     
-    @scala.inline
-    def apply(): ProgressEvent = {
+    inline def apply(): ProgressEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProgressEvent]
     }
     
-    @scala.inline
-    implicit class ProgressEventMutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressEvent](x: Self) {
       
-      @scala.inline
-      def setDetails(value: Progress): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: Progress): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     }
   }
   
@@ -46,20 +42,16 @@ object typesProgressEventMod {
   }
   object UnmarshalledProgressEvent {
     
-    @scala.inline
-    def apply(): UnmarshalledProgressEvent = {
+    inline def apply(): UnmarshalledProgressEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledProgressEvent]
     }
     
-    @scala.inline
-    implicit class UnmarshalledProgressEventMutableBuilder[Self <: UnmarshalledProgressEvent] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledProgressEvent](x: Self) {
       
-      @scala.inline
-      def setDetails(value: UnmarshalledProgress): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: UnmarshalledProgress): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     }
   }
 }

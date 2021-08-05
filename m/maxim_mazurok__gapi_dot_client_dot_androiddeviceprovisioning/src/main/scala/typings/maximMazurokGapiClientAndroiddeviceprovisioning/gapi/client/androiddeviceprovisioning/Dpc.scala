@@ -20,31 +20,23 @@ trait Dpc extends StObject {
 }
 object Dpc {
   
-  @scala.inline
-  def apply(): Dpc = {
+  inline def apply(): Dpc = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dpc]
   }
   
-  @scala.inline
-  implicit class DpcMutableBuilder[Self <: Dpc] (val x: Self) extends AnyVal {
+  extension [Self <: Dpc](x: Self) {
     
-    @scala.inline
-    def setDpcName(value: String): Self = StObject.set(x, "dpcName", value.asInstanceOf[js.Any])
+    inline def setDpcName(value: String): Self = StObject.set(x, "dpcName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpcNameUndefined: Self = StObject.set(x, "dpcName", js.undefined)
+    inline def setDpcNameUndefined: Self = StObject.set(x, "dpcName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
   }
 }

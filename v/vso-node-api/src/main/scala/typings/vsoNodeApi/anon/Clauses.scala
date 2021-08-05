@@ -18,8 +18,7 @@ trait Clauses extends StObject {
 }
 object Clauses {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     clauses: scala.Double,
     minimal: scala.Double,
@@ -30,22 +29,16 @@ object Clauses {
     __obj.asInstanceOf[Clauses]
   }
   
-  @scala.inline
-  implicit class ClausesMutableBuilder[Self <: Clauses] (val x: Self) extends AnyVal {
+  extension [Self <: Clauses](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClauses(value: scala.Double): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
+    inline def setClauses(value: scala.Double): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimal(value: scala.Double): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
+    inline def setMinimal(value: scala.Double): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWiql(value: scala.Double): Self = StObject.set(x, "wiql", value.asInstanceOf[js.Any])
+    inline def setWiql(value: scala.Double): Self = StObject.set(x, "wiql", value.asInstanceOf[js.Any])
   }
 }

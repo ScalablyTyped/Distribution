@@ -6,15 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ISubmitToHostEventHandler extends StObject {
   
-  @JSName("InfoPath.ISubmitToHostEventHandler_typekey")
+  /* private */ @JSName("InfoPath.ISubmitToHostEventHandler_typekey")
   var InfoPathDotISubmitToHostEventHandler_typekey: ISubmitToHostEventHandler
   
   def SubmitToHostEventHandler(punkSender: js.Any, bstrAdapterName: String, pbstrErrorMessage: String): Double
 }
 object ISubmitToHostEventHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotISubmitToHostEventHandler_typekey: ISubmitToHostEventHandler,
     SubmitToHostEventHandler: (js.Any, String, String) => Double
   ): ISubmitToHostEventHandler = {
@@ -23,13 +22,10 @@ object ISubmitToHostEventHandler {
     __obj.asInstanceOf[ISubmitToHostEventHandler]
   }
   
-  @scala.inline
-  implicit class ISubmitToHostEventHandlerMutableBuilder[Self <: ISubmitToHostEventHandler] (val x: Self) extends AnyVal {
+  extension [Self <: ISubmitToHostEventHandler](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotISubmitToHostEventHandler_typekey(value: ISubmitToHostEventHandler): Self = StObject.set(x, "InfoPath.ISubmitToHostEventHandler_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotISubmitToHostEventHandler_typekey(value: ISubmitToHostEventHandler): Self = StObject.set(x, "InfoPath.ISubmitToHostEventHandler_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitToHostEventHandler(value: (js.Any, String, String) => Double): Self = StObject.set(x, "SubmitToHostEventHandler", js.Any.fromFunction3(value))
+    inline def setSubmitToHostEventHandler(value: (js.Any, String, String) => Double): Self = StObject.set(x, "SubmitToHostEventHandler", js.Any.fromFunction3(value))
   }
 }

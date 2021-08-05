@@ -12,23 +12,18 @@ object inputInterfaceMod {
   }
   object InputChangeEventDetail {
     
-    @scala.inline
-    def apply(): InputChangeEventDetail = {
+    inline def apply(): InputChangeEventDetail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputChangeEventDetail]
     }
     
-    @scala.inline
-    implicit class InputChangeEventDetailMutableBuilder[Self <: InputChangeEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: InputChangeEventDetail](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

@@ -30,8 +30,7 @@ trait TypeofColor extends StObject {
 }
 object TypeofColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BLUE: Color,
     GREEN: Color,
     MAGENTA: Color,
@@ -44,28 +43,20 @@ object TypeofColor {
     __obj.asInstanceOf[TypeofColor]
   }
   
-  @scala.inline
-  implicit class TypeofColorMutableBuilder[Self <: TypeofColor] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofColor](x: Self) {
     
-    @scala.inline
-    def setBLUE(value: Color): Self = StObject.set(x, "BLUE", value.asInstanceOf[js.Any])
+    inline def setBLUE(value: Color): Self = StObject.set(x, "BLUE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGREEN(value: Color): Self = StObject.set(x, "GREEN", value.asInstanceOf[js.Any])
+    inline def setGREEN(value: Color): Self = StObject.set(x, "GREEN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMAGENTA(value: Color): Self = StObject.set(x, "MAGENTA", value.asInstanceOf[js.Any])
+    inline def setMAGENTA(value: Color): Self = StObject.set(x, "MAGENTA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRED(value: Color): Self = StObject.set(x, "RED", value.asInstanceOf[js.Any])
+    inline def setRED(value: Color): Self = StObject.set(x, "RED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRgb888ToColor(value: (Color, Double) => Unit): Self = StObject.set(x, "rgb888ToColor", js.Any.fromFunction2(value))
+    inline def setRgb888ToColor(value: (Color, Double) => Unit): Self = StObject.set(x, "rgb888ToColor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRgba8888ToColor(value: (Color, Double) => Unit): Self = StObject.set(x, "rgba8888ToColor", js.Any.fromFunction2(value))
+    inline def setRgba8888ToColor(value: (Color, Double) => Unit): Self = StObject.set(x, "rgba8888ToColor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWHITE(value: Color): Self = StObject.set(x, "WHITE", value.asInstanceOf[js.Any])
+    inline def setWHITE(value: Color): Self = StObject.set(x, "WHITE", value.asInstanceOf[js.Any])
   }
 }

@@ -8,16 +8,13 @@ object findandreplacedomtextStrings {
   
   @js.native
   sealed trait first extends StObject
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait prose extends StObject
-  @scala.inline
-  def prose: prose = "prose".asInstanceOf[prose]
+  inline def prose: prose = "prose".asInstanceOf[prose]
   
   @js.native
   sealed trait retain extends StObject
-  @scala.inline
-  def retain: retain = "retain".asInstanceOf[retain]
+  inline def retain: retain = "retain".asInstanceOf[retain]
 }

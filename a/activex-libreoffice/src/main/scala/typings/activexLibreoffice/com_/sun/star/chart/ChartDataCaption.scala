@@ -23,22 +23,16 @@ object ChartDataCaption {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FORMAT: `8` = 8.asInstanceOf[`8`]
+    inline def FORMAT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PERCENT: `2` = 2.asInstanceOf[`2`]
+    inline def PERCENT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def SYMBOL: `16` = 16.asInstanceOf[`16`]
+    inline def SYMBOL: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def TEXT: `4` = 4.asInstanceOf[`4`]
+    inline def TEXT: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def VALUE: `1` = 1.asInstanceOf[`1`]
+    inline def VALUE: `1` = 1.asInstanceOf[`1`]
   }
 }

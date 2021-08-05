@@ -15,11 +15,8 @@ object superagentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(res: String): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(res.asInstanceOf[js.Any]).asInstanceOf[Entity]
-  @scala.inline
-  def parse(res: Response, fn: js.Function2[/* err */ Error | Null, /* body */ Entity, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(res.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def parse(res: String): Entity = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(res.asInstanceOf[js.Any]).asInstanceOf[Entity]
+  inline def parse(res: Response, fn: js.Function2[/* err */ Error | Null, /* body */ Entity, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(res.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def perform(request: js.Any, action: Action): SuperAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("perform")(request.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[SuperAgentRequest]
+  inline def perform(request: js.Any, action: Action): SuperAgentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("perform")(request.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[SuperAgentRequest]
 }

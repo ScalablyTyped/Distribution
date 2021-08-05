@@ -28,8 +28,7 @@ object Custom {
       * @return Returns the CustomSensor object from its identifier.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(sensorId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Custom.CustomSensor] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(sensorId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Custom.CustomSensor]]
+    inline def fromIdAsync(sensorId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Custom.CustomSensor] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(sensorId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Custom.CustomSensor]]
     
     /**
       * Gets the device selector from the given interface identifier.
@@ -37,8 +36,7 @@ object Custom {
       * @return Returns the device selector, if it exists; otherwise, null.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(interfaceId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(interfaceId.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(interfaceId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(interfaceId.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Represents a property set of key/value pairs that contain the custom data sent from the sensor’s driver to the app. */

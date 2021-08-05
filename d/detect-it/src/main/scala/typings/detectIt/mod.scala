@@ -49,8 +49,7 @@ object mod extends Shortcut {
   }
   object detectIt {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deviceType: hybrid | mouseOnly | touchOnly,
       hasMouse: Boolean,
       hasTouch: Boolean,
@@ -65,35 +64,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.detectIt.mod.detectIt]
     }
     
-    @scala.inline
-    implicit class detectItMutableBuilder[Self <: typings.detectIt.mod.detectIt] (val x: Self) extends AnyVal {
+    extension [Self <: typings.detectIt.mod.detectIt](x: Self) {
       
-      @scala.inline
-      def setDeviceType(value: hybrid | mouseOnly | touchOnly): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+      inline def setDeviceType(value: hybrid | mouseOnly | touchOnly): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasMouse(value: Boolean): Self = StObject.set(x, "hasMouse", value.asInstanceOf[js.Any])
+      inline def setHasMouse(value: Boolean): Self = StObject.set(x, "hasMouse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasTouch(value: Boolean): Self = StObject.set(x, "hasTouch", value.asInstanceOf[js.Any])
+      inline def setHasTouch(value: Boolean): Self = StObject.set(x, "hasTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTouchPoints(value: Double): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
+      inline def setMaxTouchPoints(value: Double): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassiveEvents(value: Boolean): Self = StObject.set(x, "passiveEvents", value.asInstanceOf[js.Any])
+      inline def setPassiveEvents(value: Boolean): Self = StObject.set(x, "passiveEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryHover(value: hover | none): Self = StObject.set(x, "primaryHover", value.asInstanceOf[js.Any])
+      inline def setPrimaryHover(value: hover | none): Self = StObject.set(x, "primaryHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryPointer(value: coarse | fine | none): Self = StObject.set(x, "primaryPointer", value.asInstanceOf[js.Any])
+      inline def setPrimaryPointer(value: coarse | fine | none): Self = StObject.set(x, "primaryPointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: state): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: state): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -109,8 +98,7 @@ object mod extends Shortcut {
   }
   object state {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       detectHover: detectHover,
       detectPassiveEvents: detectPassiveEvents,
       detectPointer: detectPointer,
@@ -120,20 +108,15 @@ object mod extends Shortcut {
       __obj.asInstanceOf[state]
     }
     
-    @scala.inline
-    implicit class stateMutableBuilder[Self <: state] (val x: Self) extends AnyVal {
+    extension [Self <: state](x: Self) {
       
-      @scala.inline
-      def setDetectHover(value: detectHover): Self = StObject.set(x, "detectHover", value.asInstanceOf[js.Any])
+      inline def setDetectHover(value: detectHover): Self = StObject.set(x, "detectHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectPassiveEvents(value: detectPassiveEvents): Self = StObject.set(x, "detectPassiveEvents", value.asInstanceOf[js.Any])
+      inline def setDetectPassiveEvents(value: detectPassiveEvents): Self = StObject.set(x, "detectPassiveEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectPointer(value: detectPointer): Self = StObject.set(x, "detectPointer", value.asInstanceOf[js.Any])
+      inline def setDetectPointer(value: detectPointer): Self = StObject.set(x, "detectPointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectTouchEvents(value: detectTouchEvents): Self = StObject.set(x, "detectTouchEvents", value.asInstanceOf[js.Any])
+      inline def setDetectTouchEvents(value: detectTouchEvents): Self = StObject.set(x, "detectTouchEvents", value.asInstanceOf[js.Any])
     }
   }
 }

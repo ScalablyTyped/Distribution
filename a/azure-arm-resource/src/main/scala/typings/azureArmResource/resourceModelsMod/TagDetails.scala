@@ -29,40 +29,29 @@ trait TagDetails extends StObject {
 }
 object TagDetails {
   
-  @scala.inline
-  def apply(): TagDetails = {
+  inline def apply(): TagDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TagDetails]
   }
   
-  @scala.inline
-  implicit class TagDetailsMutableBuilder[Self <: TagDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TagDetails](x: Self) {
     
-    @scala.inline
-    def setCount(value: TagCount): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: TagCount): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[TagValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[TagValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: TagValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: TagValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

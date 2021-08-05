@@ -21,11 +21,11 @@ object appThemeMod {
     extends StObject
        with NativeEventEmitter {
     
-    var _currentTheme: js.Any = js.native
+    /* private */ var _currentTheme: js.Any = js.native
     
-    var _highContrastColors: js.Any = js.native
+    /* private */ var _highContrastColors: js.Any = js.native
     
-    var _isHighContrast: js.Any = js.native
+    /* private */ var _isHighContrast: js.Any = js.native
     
     def currentHighContrastColors: IHighContrastColors = js.native
     
@@ -66,8 +66,7 @@ object appThemeMod {
   }
   object MissingNativeAppThemeShim {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addEventListener: () => Unit,
       addListener: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent & IHighContrastChangedEvent, Unit]) => js.Any,
       currentHighContrastColors: IHighContrastColors,
@@ -83,42 +82,31 @@ object appThemeMod {
       __obj.asInstanceOf[MissingNativeAppThemeShim]
     }
     
-    @scala.inline
-    implicit class MissingNativeAppThemeShimMutableBuilder[Self <: MissingNativeAppThemeShim] (val x: Self) extends AnyVal {
+    extension [Self <: MissingNativeAppThemeShim](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: () => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction0(value))
+      inline def setAddEventListener(value: () => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAddListener(
+      inline def setAddListener(
         value: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent & IHighContrastChangedEvent, Unit]) => js.Any
       ): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCurrentHighContrastColors(value: IHighContrastColors): Self = StObject.set(x, "currentHighContrastColors", value.asInstanceOf[js.Any])
+      inline def setCurrentHighContrastColors(value: IHighContrastColors): Self = StObject.set(x, "currentHighContrastColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTheme(value: String): Self = StObject.set(x, "currentTheme", value.asInstanceOf[js.Any])
+      inline def setCurrentTheme(value: String): Self = StObject.set(x, "currentTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
+      inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHighContrast(value: Boolean): Self = StObject.set(x, "isHighContrast", value.asInstanceOf[js.Any])
+      inline def setIsHighContrast(value: Boolean): Self = StObject.set(x, "isHighContrast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveAllListeners(value: () => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
+      inline def setRemoveAllListeners(value: () => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveEventListener(value: () => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction0(value))
+      inline def setRemoveEventListener(value: () => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveListener(
+      inline def setRemoveListener(
         value: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent & IHighContrastChangedEvent, Unit]) => Unit
       ): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveSubscription(value: () => Unit): Self = StObject.set(x, "removeSubscription", js.Any.fromFunction0(value))
+      inline def setRemoveSubscription(value: () => Unit): Self = StObject.set(x, "removeSubscription", js.Any.fromFunction0(value))
     }
   }
 }

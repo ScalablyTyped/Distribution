@@ -34,37 +34,27 @@ trait SchemaColors extends StObject {
 }
 object SchemaColors {
   
-  @scala.inline
-  def apply(): SchemaColors = {
+  inline def apply(): SchemaColors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaColors]
   }
   
-  @scala.inline
-  implicit class SchemaColorsMutableBuilder[Self <: SchemaColors] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaColors](x: Self) {
     
-    @scala.inline
-    def setCalendar(value: StringDictionary[SchemaColorDefinition]): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: StringDictionary[SchemaColorDefinition]): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
+    inline def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
-    @scala.inline
-    def setEvent(value: StringDictionary[SchemaColorDefinition]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: StringDictionary[SchemaColorDefinition]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
   }
 }

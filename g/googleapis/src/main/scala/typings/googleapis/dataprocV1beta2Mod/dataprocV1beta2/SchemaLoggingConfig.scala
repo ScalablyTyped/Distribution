@@ -20,19 +20,15 @@ trait SchemaLoggingConfig extends StObject {
 }
 object SchemaLoggingConfig {
   
-  @scala.inline
-  def apply(): SchemaLoggingConfig = {
+  inline def apply(): SchemaLoggingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLoggingConfig]
   }
   
-  @scala.inline
-  implicit class SchemaLoggingConfigMutableBuilder[Self <: SchemaLoggingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLoggingConfig](x: Self) {
     
-    @scala.inline
-    def setDriverLogLevels(value: StringDictionary[String]): Self = StObject.set(x, "driverLogLevels", value.asInstanceOf[js.Any])
+    inline def setDriverLogLevels(value: StringDictionary[String]): Self = StObject.set(x, "driverLogLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverLogLevelsUndefined: Self = StObject.set(x, "driverLogLevels", js.undefined)
+    inline def setDriverLogLevelsUndefined: Self = StObject.set(x, "driverLogLevels", js.undefined)
   }
 }

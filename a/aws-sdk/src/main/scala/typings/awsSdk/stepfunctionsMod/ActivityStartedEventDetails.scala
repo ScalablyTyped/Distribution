@@ -13,19 +13,15 @@ trait ActivityStartedEventDetails extends StObject {
 }
 object ActivityStartedEventDetails {
   
-  @scala.inline
-  def apply(): ActivityStartedEventDetails = {
+  inline def apply(): ActivityStartedEventDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityStartedEventDetails]
   }
   
-  @scala.inline
-  implicit class ActivityStartedEventDetailsMutableBuilder[Self <: ActivityStartedEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityStartedEventDetails](x: Self) {
     
-    @scala.inline
-    def setWorkerName(value: Identity): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
+    inline def setWorkerName(value: Identity): Self = StObject.set(x, "workerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerNameUndefined: Self = StObject.set(x, "workerName", js.undefined)
+    inline def setWorkerNameUndefined: Self = StObject.set(x, "workerName", js.undefined)
   }
 }

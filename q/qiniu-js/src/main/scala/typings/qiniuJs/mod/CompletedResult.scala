@@ -26,8 +26,7 @@ trait CompletedResult extends StObject {
 }
 object CompletedResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bucket: String,
     ext: String,
     key: String,
@@ -40,40 +39,28 @@ object CompletedResult {
     __obj.asInstanceOf[CompletedResult]
   }
   
-  @scala.inline
-  implicit class CompletedResultMutableBuilder[Self <: CompletedResult] (val x: Self) extends AnyVal {
+  extension [Self <: CompletedResult](x: Self) {
     
-    @scala.inline
-    def setAvinfo(value: AvAudioInfo): Self = StObject.set(x, "avinfo", value.asInstanceOf[js.Any])
+    inline def setAvinfo(value: AvAudioInfo): Self = StObject.set(x, "avinfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvinfoUndefined: Self = StObject.set(x, "avinfo", js.undefined)
+    inline def setAvinfoUndefined: Self = StObject.set(x, "avinfo", js.undefined)
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageInfo(value: AvImageInfo): Self = StObject.set(x, "imageInfo", value.asInstanceOf[js.Any])
+    inline def setImageInfo(value: AvImageInfo): Self = StObject.set(x, "imageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageInfoUndefined: Self = StObject.set(x, "imageInfo", js.undefined)
+    inline def setImageInfoUndefined: Self = StObject.set(x, "imageInfo", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentid(value: String): Self = StObject.set(x, "persistentid", value.asInstanceOf[js.Any])
+    inline def setPersistentid(value: String): Self = StObject.set(x, "persistentid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSec(value: String): Self = StObject.set(x, "sec", value.asInstanceOf[js.Any])
+    inline def setSec(value: String): Self = StObject.set(x, "sec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

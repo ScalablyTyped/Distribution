@@ -11,6 +11,5 @@ object resizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resizeHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resizeHandler(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeHandler")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

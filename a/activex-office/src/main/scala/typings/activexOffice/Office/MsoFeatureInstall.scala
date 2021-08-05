@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoFeatureInstall extends StObject
 object MsoFeatureInstall {
   
-  @scala.inline
-  def msoFeatureInstallNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoFeatureInstallNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoFeatureInstallOnDemand: `1` = 1.asInstanceOf[`1`]
+  inline def msoFeatureInstallOnDemand: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoFeatureInstallOnDemandWithUI: `2` = 2.asInstanceOf[`2`]
+  inline def msoFeatureInstallOnDemandWithUI: `2` = 2.asInstanceOf[`2`]
 }

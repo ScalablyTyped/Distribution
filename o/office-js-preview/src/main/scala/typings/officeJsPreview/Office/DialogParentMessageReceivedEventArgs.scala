@@ -25,20 +25,16 @@ trait DialogParentMessageReceivedEventArgs extends StObject {
 }
 object DialogParentMessageReceivedEventArgs {
   
-  @scala.inline
-  def apply(message: String, `type`: EventType): DialogParentMessageReceivedEventArgs = {
+  inline def apply(message: String, `type`: EventType): DialogParentMessageReceivedEventArgs = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogParentMessageReceivedEventArgs]
   }
   
-  @scala.inline
-  implicit class DialogParentMessageReceivedEventArgsMutableBuilder[Self <: DialogParentMessageReceivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DialogParentMessageReceivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

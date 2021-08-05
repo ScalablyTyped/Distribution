@@ -10,19 +10,15 @@ trait PriorityChild extends StObject {
 }
 object PriorityChild {
   
-  @scala.inline
-  def apply(config: js.Array[LoadBalancingConfig]): PriorityChild = {
+  inline def apply(config: js.Array[LoadBalancingConfig]): PriorityChild = {
     val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriorityChild]
   }
   
-  @scala.inline
-  implicit class PriorityChildMutableBuilder[Self <: PriorityChild] (val x: Self) extends AnyVal {
+  extension [Self <: PriorityChild](x: Self) {
     
-    @scala.inline
-    def setConfig(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "config", js.Array(value :_*))
+    inline def setConfigVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "config", js.Array(value :_*))
   }
 }

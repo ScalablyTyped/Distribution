@@ -27,19 +27,15 @@ trait QuizFeedback extends StObject {
 }
 object QuizFeedback {
   
-  @scala.inline
-  def apply(getLinkUrls: () => js.Array[String], getText: () => String): QuizFeedback = {
+  inline def apply(getLinkUrls: () => js.Array[String], getText: () => String): QuizFeedback = {
     val __obj = js.Dynamic.literal(getLinkUrls = js.Any.fromFunction0(getLinkUrls), getText = js.Any.fromFunction0(getText))
     __obj.asInstanceOf[QuizFeedback]
   }
   
-  @scala.inline
-  implicit class QuizFeedbackMutableBuilder[Self <: QuizFeedback] (val x: Self) extends AnyVal {
+  extension [Self <: QuizFeedback](x: Self) {
     
-    @scala.inline
-    def setGetLinkUrls(value: () => js.Array[String]): Self = StObject.set(x, "getLinkUrls", js.Any.fromFunction0(value))
+    inline def setGetLinkUrls(value: () => js.Array[String]): Self = StObject.set(x, "getLinkUrls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
   }
 }

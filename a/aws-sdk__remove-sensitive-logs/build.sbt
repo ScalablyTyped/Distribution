@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk__remove-sensitive-logs"
-version := "0.1.0-preview.1-cec0e1"
+version := "0.1.0-preview.1-d2d709"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

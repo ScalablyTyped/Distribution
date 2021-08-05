@@ -154,8 +154,7 @@ trait IHyperCubeDef extends StObject {
 }
 object IHyperCubeDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAlwaysFullyExpanded: Boolean,
     qDimensions: js.Array[INxDimension],
     qIndentMode: Boolean,
@@ -178,76 +177,52 @@ object IHyperCubeDef {
     __obj.asInstanceOf[IHyperCubeDef]
   }
   
-  @scala.inline
-  implicit class IHyperCubeDefMutableBuilder[Self <: IHyperCubeDef] (val x: Self) extends AnyVal {
+  extension [Self <: IHyperCubeDef](x: Self) {
     
-    @scala.inline
-    def setQAlwaysFullyExpanded(value: Boolean): Self = StObject.set(x, "qAlwaysFullyExpanded", value.asInstanceOf[js.Any])
+    inline def setQAlwaysFullyExpanded(value: Boolean): Self = StObject.set(x, "qAlwaysFullyExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCalcCond(value: IValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
+    inline def setQCalcCond(value: IValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCalcCondUndefined: Self = StObject.set(x, "qCalcCond", js.undefined)
+    inline def setQCalcCondUndefined: Self = StObject.set(x, "qCalcCond", js.undefined)
     
-    @scala.inline
-    def setQDimensions(value: js.Array[INxDimension]): Self = StObject.set(x, "qDimensions", value.asInstanceOf[js.Any])
+    inline def setQDimensions(value: js.Array[INxDimension]): Self = StObject.set(x, "qDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDimensionsVarargs(value: INxDimension*): Self = StObject.set(x, "qDimensions", js.Array(value :_*))
+    inline def setQDimensionsVarargs(value: INxDimension*): Self = StObject.set(x, "qDimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setQIndentMode(value: Boolean): Self = StObject.set(x, "qIndentMode", value.asInstanceOf[js.Any])
+    inline def setQIndentMode(value: Boolean): Self = StObject.set(x, "qIndentMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQInitialDataFetch(value: js.Array[INxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
+    inline def setQInitialDataFetch(value: js.Array[INxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
+    inline def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value :_*))
     
-    @scala.inline
-    def setQInterColumnSortOrder(value: js.Array[Double]): Self = StObject.set(x, "qInterColumnSortOrder", value.asInstanceOf[js.Any])
+    inline def setQInterColumnSortOrder(value: js.Array[Double]): Self = StObject.set(x, "qInterColumnSortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQInterColumnSortOrderVarargs(value: Double*): Self = StObject.set(x, "qInterColumnSortOrder", js.Array(value :_*))
+    inline def setQInterColumnSortOrderVarargs(value: Double*): Self = StObject.set(x, "qInterColumnSortOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setQMaxStackedCells(value: Double): Self = StObject.set(x, "qMaxStackedCells", value.asInstanceOf[js.Any])
+    inline def setQMaxStackedCells(value: Double): Self = StObject.set(x, "qMaxStackedCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeasures(value: js.Array[INxMeasure]): Self = StObject.set(x, "qMeasures", value.asInstanceOf[js.Any])
+    inline def setQMeasures(value: js.Array[INxMeasure]): Self = StObject.set(x, "qMeasures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMeasuresVarargs(value: INxMeasure*): Self = StObject.set(x, "qMeasures", js.Array(value :_*))
+    inline def setQMeasuresVarargs(value: INxMeasure*): Self = StObject.set(x, "qMeasures", js.Array(value :_*))
     
-    @scala.inline
-    def setQMode(value: NxHypercubeMode): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
+    inline def setQMode(value: NxHypercubeMode): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNoOfLeftDims(value: Double): Self = StObject.set(x, "qNoOfLeftDims", value.asInstanceOf[js.Any])
+    inline def setQNoOfLeftDims(value: Double): Self = StObject.set(x, "qNoOfLeftDims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPopulateMissing(value: Boolean): Self = StObject.set(x, "qPopulateMissing", value.asInstanceOf[js.Any])
+    inline def setQPopulateMissing(value: Boolean): Self = StObject.set(x, "qPopulateMissing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPseudoDimPos(value: Double): Self = StObject.set(x, "qPseudoDimPos", value.asInstanceOf[js.Any])
+    inline def setQPseudoDimPos(value: Double): Self = StObject.set(x, "qPseudoDimPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQReductionMode(value: ReductionModeType): Self = StObject.set(x, "qReductionMode", value.asInstanceOf[js.Any])
+    inline def setQReductionMode(value: ReductionModeType): Self = StObject.set(x, "qReductionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQShowTotalsAbove(value: Boolean): Self = StObject.set(x, "qShowTotalsAbove", value.asInstanceOf[js.Any])
+    inline def setQShowTotalsAbove(value: Boolean): Self = StObject.set(x, "qShowTotalsAbove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSortbyYValue(value: String): Self = StObject.set(x, "qSortbyYValue", value.asInstanceOf[js.Any])
+    inline def setQSortbyYValue(value: String): Self = StObject.set(x, "qSortbyYValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
+    inline def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSuppressMissing(value: Boolean): Self = StObject.set(x, "qSuppressMissing", value.asInstanceOf[js.Any])
+    inline def setQSuppressMissing(value: Boolean): Self = StObject.set(x, "qSuppressMissing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSuppressZero(value: Boolean): Self = StObject.set(x, "qSuppressZero", value.asInstanceOf[js.Any])
+    inline def setQSuppressZero(value: Boolean): Self = StObject.set(x, "qSuppressZero", value.asInstanceOf[js.Any])
   }
 }

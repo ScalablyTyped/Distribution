@@ -20,8 +20,7 @@ trait NativeScrollEvent extends StObject {
 }
 object NativeScrollEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentInset: NativeScrollRectangle,
     contentOffset: NativeScrollPoint,
     contentSize: NativeScrollSize,
@@ -32,28 +31,20 @@ object NativeScrollEvent {
     __obj.asInstanceOf[NativeScrollEvent]
   }
   
-  @scala.inline
-  implicit class NativeScrollEventMutableBuilder[Self <: NativeScrollEvent] (val x: Self) extends AnyVal {
+  extension [Self <: NativeScrollEvent](x: Self) {
     
-    @scala.inline
-    def setContentInset(value: NativeScrollRectangle): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
+    inline def setContentInset(value: NativeScrollRectangle): Self = StObject.set(x, "contentInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentOffset(value: NativeScrollPoint): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
+    inline def setContentOffset(value: NativeScrollPoint): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentSize(value: NativeScrollSize): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
+    inline def setContentSize(value: NativeScrollSize): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutMeasurement(value: NativeScrollSize): Self = StObject.set(x, "layoutMeasurement", value.asInstanceOf[js.Any])
+    inline def setLayoutMeasurement(value: NativeScrollSize): Self = StObject.set(x, "layoutMeasurement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocity(value: NativeScrollVelocity): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    inline def setVelocity(value: NativeScrollVelocity): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
+    inline def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
     
-    @scala.inline
-    def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
+    inline def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
   }
 }

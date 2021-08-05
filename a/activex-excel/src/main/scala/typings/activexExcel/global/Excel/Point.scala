@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Point")
 @js.native
-class Point protected ()
+/* private */ class Point ()
   extends StObject
      with typings.activexExcel.Excel.Point

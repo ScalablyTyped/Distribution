@@ -68,32 +68,24 @@ object canvasMod {
   }
   object ICanvasConfig {
     
-    @scala.inline
-    def apply(): ICanvasConfig = {
+    inline def apply(): ICanvasConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICanvasConfig]
     }
     
-    @scala.inline
-    implicit class ICanvasConfigMutableBuilder[Self <: ICanvasConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ICanvasConfig](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

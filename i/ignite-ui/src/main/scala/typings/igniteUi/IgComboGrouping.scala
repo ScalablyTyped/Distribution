@@ -30,25 +30,19 @@ trait IgComboGrouping
 }
 object IgComboGrouping {
   
-  @scala.inline
-  def apply(): IgComboGrouping = {
+  inline def apply(): IgComboGrouping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgComboGrouping]
   }
   
-  @scala.inline
-  implicit class IgComboGroupingMutableBuilder[Self <: IgComboGrouping] (val x: Self) extends AnyVal {
+  extension [Self <: IgComboGrouping](x: Self) {
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

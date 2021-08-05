@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
-  @scala.inline
-  def apply(driver: Driver): Instance = ^.asInstanceOf[js.Dynamic].apply(driver.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  inline def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
+  inline def apply(driver: Driver): Instance = ^.asInstanceOf[js.Dynamic].apply(driver.asInstanceOf[js.Any]).asInstanceOf[Instance]
   
   @JSImport("x-ray-crawler", JSImport.Namespace)
   @js.native

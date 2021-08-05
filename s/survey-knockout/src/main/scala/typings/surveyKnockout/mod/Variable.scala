@@ -21,6 +21,5 @@ object Variable {
   @JSImport("survey-knockout", "Variable.DisableConversionChar")
   @js.native
   def DisableConversionChar: String = js.native
-  @scala.inline
-  def DisableConversionChar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisableConversionChar")(x.asInstanceOf[js.Any])
+  inline def DisableConversionChar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisableConversionChar")(x.asInstanceOf[js.Any])
 }

@@ -20,37 +20,27 @@ trait SourceContext extends StObject {
 }
 object SourceContext {
   
-  @scala.inline
-  def apply(): SourceContext = {
+  inline def apply(): SourceContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceContext]
   }
   
-  @scala.inline
-  implicit class SourceContextMutableBuilder[Self <: SourceContext] (val x: Self) extends AnyVal {
+  extension [Self <: SourceContext](x: Self) {
     
-    @scala.inline
-    def setCloudRepo(value: CloudRepoSourceContext): Self = StObject.set(x, "cloudRepo", value.asInstanceOf[js.Any])
+    inline def setCloudRepo(value: CloudRepoSourceContext): Self = StObject.set(x, "cloudRepo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudRepoUndefined: Self = StObject.set(x, "cloudRepo", js.undefined)
+    inline def setCloudRepoUndefined: Self = StObject.set(x, "cloudRepo", js.undefined)
     
-    @scala.inline
-    def setCloudWorkspace(value: CloudWorkspaceSourceContext): Self = StObject.set(x, "cloudWorkspace", value.asInstanceOf[js.Any])
+    inline def setCloudWorkspace(value: CloudWorkspaceSourceContext): Self = StObject.set(x, "cloudWorkspace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWorkspaceUndefined: Self = StObject.set(x, "cloudWorkspace", js.undefined)
+    inline def setCloudWorkspaceUndefined: Self = StObject.set(x, "cloudWorkspace", js.undefined)
     
-    @scala.inline
-    def setGerrit(value: GerritSourceContext): Self = StObject.set(x, "gerrit", value.asInstanceOf[js.Any])
+    inline def setGerrit(value: GerritSourceContext): Self = StObject.set(x, "gerrit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGerritUndefined: Self = StObject.set(x, "gerrit", js.undefined)
+    inline def setGerritUndefined: Self = StObject.set(x, "gerrit", js.undefined)
     
-    @scala.inline
-    def setGit(value: GitSourceContext): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+    inline def setGit(value: GitSourceContext): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitUndefined: Self = StObject.set(x, "git", js.undefined)
+    inline def setGitUndefined: Self = StObject.set(x, "git", js.undefined)
   }
 }

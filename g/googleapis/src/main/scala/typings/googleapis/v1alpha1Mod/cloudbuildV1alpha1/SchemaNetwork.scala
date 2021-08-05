@@ -32,31 +32,23 @@ trait SchemaNetwork extends StObject {
 }
 object SchemaNetwork {
   
-  @scala.inline
-  def apply(): SchemaNetwork = {
+  inline def apply(): SchemaNetwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNetwork]
   }
   
-  @scala.inline
-  implicit class SchemaNetworkMutableBuilder[Self <: SchemaNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNetwork](x: Self) {
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
   }
 }

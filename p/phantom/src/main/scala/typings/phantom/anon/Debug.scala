@@ -17,37 +17,27 @@ trait Debug extends StObject {
 }
 object Debug {
   
-  @scala.inline
-  def apply(): Debug = {
+  inline def apply(): Debug = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Debug]
   }
   
-  @scala.inline
-  implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+  extension [Self <: Debug](x: Self) {
     
-    @scala.inline
-    def setDebug(value: winstonLeveledLogMethod): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: winstonLeveledLogMethod): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setError(value: winstonLeveledLogMethod): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: winstonLeveledLogMethod): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInfo(value: winstonLeveledLogMethod): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: winstonLeveledLogMethod): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setWarn(value: winstonLeveledLogMethod): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+    inline def setWarn(value: winstonLeveledLogMethod): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+    inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
   }
 }

@@ -55,9 +55,9 @@ object pickerMod {
   class QueuePicker protected () extends StObject {
     def this(loadBalancer: LoadBalancer) = this()
     
-    var calledExitIdle: js.Any = js.native
+    /* private */ var calledExitIdle: js.Any = js.native
     
-    var loadBalancer: js.Any = js.native
+    /* private */ var loadBalancer: js.Any = js.native
     
     def pick(pickArgs: PickArgs): QueuePickResult = js.native
   }
@@ -72,7 +72,7 @@ object pickerMod {
     /* CompleteClass */
     override def pick(pickArgs: PickArgs): PickResult = js.native
     
-    var status: js.Any = js.native
+    /* private */ var status: js.Any = js.native
   }
   
   trait CompletePickResult
@@ -87,20 +87,16 @@ object pickerMod {
   }
   object CompletePickResult {
     
-    @scala.inline
-    def apply(pickResultType: COMPLETE, status: Null): CompletePickResult = {
+    inline def apply(pickResultType: COMPLETE, status: Null): CompletePickResult = {
       val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], extraFilterFactory = null, onCallStarted = null, subchannel = null)
       __obj.asInstanceOf[CompletePickResult]
     }
     
-    @scala.inline
-    implicit class CompletePickResultMutableBuilder[Self <: CompletePickResult] (val x: Self) extends AnyVal {
+    extension [Self <: CompletePickResult](x: Self) {
       
-      @scala.inline
-      def setPickResultType(value: COMPLETE): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
+      inline def setPickResultType(value: COMPLETE): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Null): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Null): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,8 +121,7 @@ object pickerMod {
   }
   object DropCallPickResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       extraFilterFactory: Null,
       onCallStarted: Null,
       pickResultType: DROP,
@@ -137,23 +132,17 @@ object pickerMod {
       __obj.asInstanceOf[DropCallPickResult]
     }
     
-    @scala.inline
-    implicit class DropCallPickResultMutableBuilder[Self <: DropCallPickResult] (val x: Self) extends AnyVal {
+    extension [Self <: DropCallPickResult](x: Self) {
       
-      @scala.inline
-      def setExtraFilterFactory(value: Null): Self = StObject.set(x, "extraFilterFactory", value.asInstanceOf[js.Any])
+      inline def setExtraFilterFactory(value: Null): Self = StObject.set(x, "extraFilterFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCallStarted(value: Null): Self = StObject.set(x, "onCallStarted", value.asInstanceOf[js.Any])
+      inline def setOnCallStarted(value: Null): Self = StObject.set(x, "onCallStarted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickResultType(value: DROP): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
+      inline def setPickResultType(value: DROP): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: StatusObject): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: StatusObject): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubchannel(value: Null): Self = StObject.set(x, "subchannel", value.asInstanceOf[js.Any])
+      inline def setSubchannel(value: Null): Self = StObject.set(x, "subchannel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,17 +152,14 @@ object pickerMod {
   }
   object PickArgs {
     
-    @scala.inline
-    def apply(metadata: Metadata): PickArgs = {
+    inline def apply(metadata: Metadata): PickArgs = {
       val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickArgs]
     }
     
-    @scala.inline
-    implicit class PickArgsMutableBuilder[Self <: PickArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PickArgs](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,41 +191,30 @@ object pickerMod {
   }
   object PickResult {
     
-    @scala.inline
-    def apply(pickResultType: PickResultType): PickResult = {
+    inline def apply(pickResultType: PickResultType): PickResult = {
       val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], extraFilterFactory = null, onCallStarted = null, status = null, subchannel = null)
       __obj.asInstanceOf[PickResult]
     }
     
-    @scala.inline
-    implicit class PickResultMutableBuilder[Self <: PickResult] (val x: Self) extends AnyVal {
+    extension [Self <: PickResult](x: Self) {
       
-      @scala.inline
-      def setExtraFilterFactory(value: FilterFactory[Filter]): Self = StObject.set(x, "extraFilterFactory", value.asInstanceOf[js.Any])
+      inline def setExtraFilterFactory(value: FilterFactory[Filter]): Self = StObject.set(x, "extraFilterFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraFilterFactoryNull: Self = StObject.set(x, "extraFilterFactory", null)
+      inline def setExtraFilterFactoryNull: Self = StObject.set(x, "extraFilterFactory", null)
       
-      @scala.inline
-      def setOnCallStarted(value: () => Unit): Self = StObject.set(x, "onCallStarted", js.Any.fromFunction0(value))
+      inline def setOnCallStarted(value: () => Unit): Self = StObject.set(x, "onCallStarted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCallStartedNull: Self = StObject.set(x, "onCallStarted", null)
+      inline def setOnCallStartedNull: Self = StObject.set(x, "onCallStarted", null)
       
-      @scala.inline
-      def setPickResultType(value: PickResultType): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
+      inline def setPickResultType(value: PickResultType): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: StatusObject): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: StatusObject): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusNull: Self = StObject.set(x, "status", null)
+      inline def setStatusNull: Self = StObject.set(x, "status", null)
       
-      @scala.inline
-      def setSubchannel(value: Subchannel): Self = StObject.set(x, "subchannel", value.asInstanceOf[js.Any])
+      inline def setSubchannel(value: Subchannel): Self = StObject.set(x, "subchannel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubchannelNull: Self = StObject.set(x, "subchannel", null)
+      inline def setSubchannelNull: Self = StObject.set(x, "subchannel", null)
     }
   }
   
@@ -249,17 +224,14 @@ object pickerMod {
   }
   object Picker {
     
-    @scala.inline
-    def apply(pick: PickArgs => PickResult): Picker = {
+    inline def apply(pick: PickArgs => PickResult): Picker = {
       val __obj = js.Dynamic.literal(pick = js.Any.fromFunction1(pick))
       __obj.asInstanceOf[Picker]
     }
     
-    @scala.inline
-    implicit class PickerMutableBuilder[Self <: Picker] (val x: Self) extends AnyVal {
+    extension [Self <: Picker](x: Self) {
       
-      @scala.inline
-      def setPick(value: PickArgs => PickResult): Self = StObject.set(x, "pick", js.Any.fromFunction1(value))
+      inline def setPick(value: PickArgs => PickResult): Self = StObject.set(x, "pick", js.Any.fromFunction1(value))
     }
   }
   
@@ -284,8 +256,7 @@ object pickerMod {
   }
   object QueuePickResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       extraFilterFactory: Null,
       onCallStarted: Null,
       pickResultType: QUEUE,
@@ -296,23 +267,17 @@ object pickerMod {
       __obj.asInstanceOf[QueuePickResult]
     }
     
-    @scala.inline
-    implicit class QueuePickResultMutableBuilder[Self <: QueuePickResult] (val x: Self) extends AnyVal {
+    extension [Self <: QueuePickResult](x: Self) {
       
-      @scala.inline
-      def setExtraFilterFactory(value: Null): Self = StObject.set(x, "extraFilterFactory", value.asInstanceOf[js.Any])
+      inline def setExtraFilterFactory(value: Null): Self = StObject.set(x, "extraFilterFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCallStarted(value: Null): Self = StObject.set(x, "onCallStarted", value.asInstanceOf[js.Any])
+      inline def setOnCallStarted(value: Null): Self = StObject.set(x, "onCallStarted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickResultType(value: QUEUE): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
+      inline def setPickResultType(value: QUEUE): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Null): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Null): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubchannel(value: Null): Self = StObject.set(x, "subchannel", value.asInstanceOf[js.Any])
+      inline def setSubchannel(value: Null): Self = StObject.set(x, "subchannel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -337,8 +302,7 @@ object pickerMod {
   }
   object TransientFailurePickResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       extraFilterFactory: Null,
       onCallStarted: Null,
       pickResultType: TRANSIENT_FAILURE,
@@ -349,23 +313,17 @@ object pickerMod {
       __obj.asInstanceOf[TransientFailurePickResult]
     }
     
-    @scala.inline
-    implicit class TransientFailurePickResultMutableBuilder[Self <: TransientFailurePickResult] (val x: Self) extends AnyVal {
+    extension [Self <: TransientFailurePickResult](x: Self) {
       
-      @scala.inline
-      def setExtraFilterFactory(value: Null): Self = StObject.set(x, "extraFilterFactory", value.asInstanceOf[js.Any])
+      inline def setExtraFilterFactory(value: Null): Self = StObject.set(x, "extraFilterFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCallStarted(value: Null): Self = StObject.set(x, "onCallStarted", value.asInstanceOf[js.Any])
+      inline def setOnCallStarted(value: Null): Self = StObject.set(x, "onCallStarted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPickResultType(value: TRANSIENT_FAILURE): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
+      inline def setPickResultType(value: TRANSIENT_FAILURE): Self = StObject.set(x, "pickResultType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: StatusObject): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: StatusObject): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubchannel(value: Null): Self = StObject.set(x, "subchannel", value.asInstanceOf[js.Any])
+      inline def setSubchannel(value: Null): Self = StObject.set(x, "subchannel", value.asInstanceOf[js.Any])
     }
   }
 }

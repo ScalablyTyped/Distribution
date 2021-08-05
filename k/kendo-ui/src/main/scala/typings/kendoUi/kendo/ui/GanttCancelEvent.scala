@@ -16,25 +16,19 @@ trait GanttCancelEvent
 }
 object GanttCancelEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttCancelEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttCancelEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttCancelEvent]
   }
   
-  @scala.inline
-  implicit class GanttCancelEventMutableBuilder[Self <: GanttCancelEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GanttCancelEvent](x: Self) {
     
-    @scala.inline
-    def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setTask(value: GanttTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: GanttTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

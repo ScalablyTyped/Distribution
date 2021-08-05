@@ -10,16 +10,13 @@ trait BoardUserSettings extends StObject {
 }
 object BoardUserSettings {
   
-  @scala.inline
-  def apply(autoRefreshState: Boolean): BoardUserSettings = {
+  inline def apply(autoRefreshState: Boolean): BoardUserSettings = {
     val __obj = js.Dynamic.literal(autoRefreshState = autoRefreshState.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardUserSettings]
   }
   
-  @scala.inline
-  implicit class BoardUserSettingsMutableBuilder[Self <: BoardUserSettings] (val x: Self) extends AnyVal {
+  extension [Self <: BoardUserSettings](x: Self) {
     
-    @scala.inline
-    def setAutoRefreshState(value: Boolean): Self = StObject.set(x, "autoRefreshState", value.asInstanceOf[js.Any])
+    inline def setAutoRefreshState(value: Boolean): Self = StObject.set(x, "autoRefreshState", value.asInstanceOf[js.Any])
   }
 }

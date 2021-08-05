@@ -23,28 +23,21 @@ trait TagStreamInput extends StObject {
 }
 object TagStreamInput {
   
-  @scala.inline
-  def apply(Tags: ResourceTags): TagStreamInput = {
+  inline def apply(Tags: ResourceTags): TagStreamInput = {
     val __obj = js.Dynamic.literal(Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagStreamInput]
   }
   
-  @scala.inline
-  implicit class TagStreamInputMutableBuilder[Self <: TagStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: TagStreamInput](x: Self) {
     
-    @scala.inline
-    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     
-    @scala.inline
-    def setTags(value: ResourceTags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: ResourceTags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
   }
 }

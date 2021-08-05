@@ -27,26 +27,20 @@ object anon {
   }
   object AdReason {
     
-    @scala.inline
-    def apply(adReason: EventReasonEnum, adStatus: EventStatusEnum, pError: Error, pRecordset: Recordset): AdReason = {
+    inline def apply(adReason: EventReasonEnum, adStatus: EventStatusEnum, pError: Error, pRecordset: Recordset): AdReason = {
       val __obj = js.Dynamic.literal(adReason = adReason.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], pError = pError.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdReason]
     }
     
-    @scala.inline
-    implicit class AdReasonMutableBuilder[Self <: AdReason] (val x: Self) extends AnyVal {
+    extension [Self <: AdReason](x: Self) {
       
-      @scala.inline
-      def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
+      inline def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
+      inline def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,23 +57,18 @@ object anon {
   }
   object AdReasonAdStatus {
     
-    @scala.inline
-    def apply(adReason: EventReasonEnum, adStatus: EventStatusEnum, pRecordset: Recordset): AdReasonAdStatus = {
+    inline def apply(adReason: EventReasonEnum, adStatus: EventStatusEnum, pRecordset: Recordset): AdReasonAdStatus = {
       val __obj = js.Dynamic.literal(adReason = adReason.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdReasonAdStatus]
     }
     
-    @scala.inline
-    implicit class AdReasonAdStatusMutableBuilder[Self <: AdReasonAdStatus] (val x: Self) extends AnyVal {
+    extension [Self <: AdReasonAdStatus](x: Self) {
       
-      @scala.inline
-      def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
+      inline def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,26 +84,20 @@ object anon {
   }
   object AdStatus {
     
-    @scala.inline
-    def apply(TransactionLevel: Double, adStatus: EventStatusEnum, pConnection: Connection, pError: Error): AdStatus = {
+    inline def apply(TransactionLevel: Double, adStatus: EventStatusEnum, pConnection: Connection, pError: Error): AdStatus = {
       val __obj = js.Dynamic.literal(TransactionLevel = TransactionLevel.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], pConnection = pConnection.asInstanceOf[js.Any], pError = pError.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdStatus]
     }
     
-    @scala.inline
-    implicit class AdStatusMutableBuilder[Self <: AdStatus] (val x: Self) extends AnyVal {
+    extension [Self <: AdStatus](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
+      inline def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
+      inline def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransactionLevel(value: Double): Self = StObject.set(x, "TransactionLevel", value.asInstanceOf[js.Any])
+      inline def setTransactionLevel(value: Double): Self = StObject.set(x, "TransactionLevel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,20 +109,16 @@ object anon {
   }
   object AdStatusPConnection {
     
-    @scala.inline
-    def apply(adStatus: EventStatusEnum, pConnection: Connection): AdStatusPConnection = {
+    inline def apply(adStatus: EventStatusEnum, pConnection: Connection): AdStatusPConnection = {
       val __obj = js.Dynamic.literal(adStatus = adStatus.asInstanceOf[js.Any], pConnection = pConnection.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdStatusPConnection]
     }
     
-    @scala.inline
-    implicit class AdStatusPConnectionMutableBuilder[Self <: AdStatusPConnection] (val x: Self) extends AnyVal {
+    extension [Self <: AdStatusPConnection](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
+      inline def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -160,29 +139,22 @@ object anon {
   }
   object CFields {
     
-    @scala.inline
-    def apply(Fields: js.Any, adStatus: EventStatusEnum, cFields: Double, pError: Error, pRecordset: Recordset): CFields = {
+    inline def apply(Fields: js.Any, adStatus: EventStatusEnum, cFields: Double, pError: Error, pRecordset: Recordset): CFields = {
       val __obj = js.Dynamic.literal(Fields = Fields.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], cFields = cFields.asInstanceOf[js.Any], pError = pError.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[CFields]
     }
     
-    @scala.inline
-    implicit class CFieldsMutableBuilder[Self <: CFields] (val x: Self) extends AnyVal {
+    extension [Self <: CFields](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCFields(value: Double): Self = StObject.set(x, "cFields", value.asInstanceOf[js.Any])
+      inline def setCFields(value: Double): Self = StObject.set(x, "cFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(value: js.Any): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Any): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
+      inline def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,8 +175,7 @@ object anon {
   }
   object CRecords {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adReason: EventReasonEnum,
       adStatus: EventStatusEnum,
       cRecords: Double,
@@ -215,23 +186,17 @@ object anon {
       __obj.asInstanceOf[CRecords]
     }
     
-    @scala.inline
-    implicit class CRecordsMutableBuilder[Self <: CRecords] (val x: Self) extends AnyVal {
+    extension [Self <: CRecords](x: Self) {
       
-      @scala.inline
-      def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
+      inline def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCRecords(value: Double): Self = StObject.set(x, "cRecords", value.asInstanceOf[js.Any])
+      inline def setCRecords(value: Double): Self = StObject.set(x, "cRecords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
+      inline def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -248,23 +213,18 @@ object anon {
   }
   object FMoreData {
     
-    @scala.inline
-    def apply(adStatus: EventStatusEnum, fMoreData: Boolean, pRecordset: Recordset): FMoreData = {
+    inline def apply(adStatus: EventStatusEnum, fMoreData: Boolean, pRecordset: Recordset): FMoreData = {
       val __obj = js.Dynamic.literal(adStatus = adStatus.asInstanceOf[js.Any], fMoreData = fMoreData.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[FMoreData]
     }
     
-    @scala.inline
-    implicit class FMoreDataMutableBuilder[Self <: FMoreData] (val x: Self) extends AnyVal {
+    extension [Self <: FMoreData](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFMoreData(value: Boolean): Self = StObject.set(x, "fMoreData", value.asInstanceOf[js.Any])
+      inline def setFMoreData(value: Boolean): Self = StObject.set(x, "fMoreData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,26 +243,20 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(Fields: js.Any, adStatus: EventStatusEnum, cFields: Double, pRecordset: Recordset): Fields = {
+    inline def apply(Fields: js.Any, adStatus: EventStatusEnum, cFields: Double, pRecordset: Recordset): Fields = {
       val __obj = js.Dynamic.literal(Fields = Fields.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], cFields = cFields.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCFields(value: Double): Self = StObject.set(x, "cFields", value.asInstanceOf[js.Any])
+      inline def setCFields(value: Double): Self = StObject.set(x, "cFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(value: js.Any): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Any): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,26 +275,20 @@ object anon {
   }
   object MaxProgress {
     
-    @scala.inline
-    def apply(MaxProgress: Double, Progress: Double, adStatus: EventStatusEnum, pRecordset: Recordset): MaxProgress = {
+    inline def apply(MaxProgress: Double, Progress: Double, adStatus: EventStatusEnum, pRecordset: Recordset): MaxProgress = {
       val __obj = js.Dynamic.literal(MaxProgress = MaxProgress.asInstanceOf[js.Any], Progress = Progress.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxProgress]
     }
     
-    @scala.inline
-    implicit class MaxProgressMutableBuilder[Self <: MaxProgress] (val x: Self) extends AnyVal {
+    extension [Self <: MaxProgress](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxProgress(value: Double): Self = StObject.set(x, "MaxProgress", value.asInstanceOf[js.Any])
+      inline def setMaxProgress(value: Double): Self = StObject.set(x, "MaxProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     }
   }
   
@@ -354,23 +302,18 @@ object anon {
   }
   object PConnection {
     
-    @scala.inline
-    def apply(adStatus: EventStatusEnum, pConnection: Connection, pError: Error): PConnection = {
+    inline def apply(adStatus: EventStatusEnum, pConnection: Connection, pError: Error): PConnection = {
       val __obj = js.Dynamic.literal(adStatus = adStatus.asInstanceOf[js.Any], pConnection = pConnection.asInstanceOf[js.Any], pError = pError.asInstanceOf[js.Any])
       __obj.asInstanceOf[PConnection]
     }
     
-    @scala.inline
-    implicit class PConnectionMutableBuilder[Self <: PConnection] (val x: Self) extends AnyVal {
+    extension [Self <: PConnection](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
+      inline def setPConnection(value: Connection): Self = StObject.set(x, "pConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
+      inline def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
     }
   }
   
@@ -387,23 +330,18 @@ object anon {
   }
   object PError {
     
-    @scala.inline
-    def apply(adStatus: EventStatusEnum, pError: Error, pRecordset: Recordset): PError = {
+    inline def apply(adStatus: EventStatusEnum, pError: Error, pRecordset: Recordset): PError = {
       val __obj = js.Dynamic.literal(adStatus = adStatus.asInstanceOf[js.Any], pError = pError.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[PError]
     }
     
-    @scala.inline
-    implicit class PErrorMutableBuilder[Self <: PError] (val x: Self) extends AnyVal {
+    extension [Self <: PError](x: Self) {
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
+      inline def setPError(value: Error): Self = StObject.set(x, "pError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -422,26 +360,20 @@ object anon {
   }
   object PRecordset {
     
-    @scala.inline
-    def apply(adReason: EventReasonEnum, adStatus: EventStatusEnum, cRecords: Double, pRecordset: Recordset): PRecordset = {
+    inline def apply(adReason: EventReasonEnum, adStatus: EventStatusEnum, cRecords: Double, pRecordset: Recordset): PRecordset = {
       val __obj = js.Dynamic.literal(adReason = adReason.asInstanceOf[js.Any], adStatus = adStatus.asInstanceOf[js.Any], cRecords = cRecords.asInstanceOf[js.Any], pRecordset = pRecordset.asInstanceOf[js.Any])
       __obj.asInstanceOf[PRecordset]
     }
     
-    @scala.inline
-    implicit class PRecordsetMutableBuilder[Self <: PRecordset] (val x: Self) extends AnyVal {
+    extension [Self <: PRecordset](x: Self) {
       
-      @scala.inline
-      def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
+      inline def setAdReason(value: EventReasonEnum): Self = StObject.set(x, "adReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
+      inline def setAdStatus(value: EventStatusEnum): Self = StObject.set(x, "adStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCRecords(value: Double): Self = StObject.set(x, "cRecords", value.asInstanceOf[js.Any])
+      inline def setCRecords(value: Double): Self = StObject.set(x, "cRecords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
+      inline def setPRecordset(value: Recordset): Self = StObject.set(x, "pRecordset", value.asInstanceOf[js.Any])
     }
   }
 }

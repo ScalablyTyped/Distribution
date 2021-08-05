@@ -38,8 +38,7 @@ trait ASPxClientDashboardItemDataAxis extends StObject {
 }
 object ASPxClientDashboardItemDataAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetDimensions: () => js.Array[ASPxClientDashboardItemDataDimension],
     GetPointByUniqueValues: js.Array[js.Any] => ASPxClientDashboardItemDataAxisPoint,
     GetPoints: () => js.Array[ASPxClientDashboardItemDataAxisPoint],
@@ -50,22 +49,16 @@ object ASPxClientDashboardItemDataAxis {
     __obj.asInstanceOf[ASPxClientDashboardItemDataAxis]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemDataAxisMutableBuilder[Self <: ASPxClientDashboardItemDataAxis] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemDataAxis](x: Self) {
     
-    @scala.inline
-    def setGetDimensions(value: () => js.Array[ASPxClientDashboardItemDataDimension]): Self = StObject.set(x, "GetDimensions", js.Any.fromFunction0(value))
+    inline def setGetDimensions(value: () => js.Array[ASPxClientDashboardItemDataDimension]): Self = StObject.set(x, "GetDimensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPointByUniqueValues(value: js.Array[js.Any] => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetPointByUniqueValues", js.Any.fromFunction1(value))
+    inline def setGetPointByUniqueValues(value: js.Array[js.Any] => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetPointByUniqueValues", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPoints(value: () => js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "GetPoints", js.Any.fromFunction0(value))
+    inline def setGetPoints(value: () => js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "GetPoints", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPointsByDimension(value: String => js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "GetPointsByDimension", js.Any.fromFunction1(value))
+    inline def setGetPointsByDimension(value: String => js.Array[ASPxClientDashboardItemDataAxisPoint]): Self = StObject.set(x, "GetPointsByDimension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRootPoint(value: () => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetRootPoint", js.Any.fromFunction0(value))
+    inline def setGetRootPoint(value: () => ASPxClientDashboardItemDataAxisPoint): Self = StObject.set(x, "GetRootPoint", js.Any.fromFunction0(value))
   }
 }

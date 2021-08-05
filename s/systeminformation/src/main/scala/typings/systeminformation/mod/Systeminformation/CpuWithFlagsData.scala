@@ -12,8 +12,7 @@ trait CpuWithFlagsData
 }
 object CpuWithFlagsData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     brand: String,
     cache: CpuCacheData,
     cores: Double,
@@ -37,10 +36,8 @@ object CpuWithFlagsData {
     __obj.asInstanceOf[CpuWithFlagsData]
   }
   
-  @scala.inline
-  implicit class CpuWithFlagsDataMutableBuilder[Self <: CpuWithFlagsData] (val x: Self) extends AnyVal {
+  extension [Self <: CpuWithFlagsData](x: Self) {
     
-    @scala.inline
-    def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
   }
 }

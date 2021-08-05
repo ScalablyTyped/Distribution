@@ -10,19 +10,15 @@ trait DialogflowV1MessageBasicCardButtonAction extends StObject {
 }
 object DialogflowV1MessageBasicCardButtonAction {
   
-  @scala.inline
-  def apply(): DialogflowV1MessageBasicCardButtonAction = {
+  inline def apply(): DialogflowV1MessageBasicCardButtonAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1MessageBasicCardButtonAction]
   }
   
-  @scala.inline
-  implicit class DialogflowV1MessageBasicCardButtonActionMutableBuilder[Self <: DialogflowV1MessageBasicCardButtonAction] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1MessageBasicCardButtonAction](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

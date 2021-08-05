@@ -10,16 +10,13 @@ trait GetResponseAction extends StObject {
 }
 object GetResponseAction {
   
-  @scala.inline
-  def apply(body: GetResponseActionData): GetResponseAction = {
+  inline def apply(body: GetResponseActionData): GetResponseAction = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponseAction]
   }
   
-  @scala.inline
-  implicit class GetResponseActionMutableBuilder[Self <: GetResponseAction] (val x: Self) extends AnyVal {
+  extension [Self <: GetResponseAction](x: Self) {
     
-    @scala.inline
-    def setBody(value: GetResponseActionData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: GetResponseActionData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

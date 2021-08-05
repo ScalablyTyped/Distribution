@@ -26,8 +26,7 @@ trait PrivilegeKeyEntry
 }
 object PrivilegeKeyEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     token: String,
     tokenCreated: Double,
     tokenCustomset: js.Array[TokenCustomSet],
@@ -40,31 +39,22 @@ object PrivilegeKeyEntry {
     __obj.asInstanceOf[PrivilegeKeyEntry]
   }
   
-  @scala.inline
-  implicit class PrivilegeKeyEntryMutableBuilder[Self <: PrivilegeKeyEntry] (val x: Self) extends AnyVal {
+  extension [Self <: PrivilegeKeyEntry](x: Self) {
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenCreated(value: Double): Self = StObject.set(x, "tokenCreated", value.asInstanceOf[js.Any])
+    inline def setTokenCreated(value: Double): Self = StObject.set(x, "tokenCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenCustomset(value: js.Array[TokenCustomSet]): Self = StObject.set(x, "tokenCustomset", value.asInstanceOf[js.Any])
+    inline def setTokenCustomset(value: js.Array[TokenCustomSet]): Self = StObject.set(x, "tokenCustomset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenCustomsetVarargs(value: TokenCustomSet*): Self = StObject.set(x, "tokenCustomset", js.Array(value :_*))
+    inline def setTokenCustomsetVarargs(value: TokenCustomSet*): Self = StObject.set(x, "tokenCustomset", js.Array(value :_*))
     
-    @scala.inline
-    def setTokenDescription(value: String): Self = StObject.set(x, "tokenDescription", value.asInstanceOf[js.Any])
+    inline def setTokenDescription(value: String): Self = StObject.set(x, "tokenDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenId1(value: Double): Self = StObject.set(x, "tokenId1", value.asInstanceOf[js.Any])
+    inline def setTokenId1(value: Double): Self = StObject.set(x, "tokenId1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenId2(value: Double): Self = StObject.set(x, "tokenId2", value.asInstanceOf[js.Any])
+    inline def setTokenId2(value: Double): Self = StObject.set(x, "tokenId2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenType(value: Double): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
+    inline def setTokenType(value: Double): Self = StObject.set(x, "tokenType", value.asInstanceOf[js.Any])
   }
 }

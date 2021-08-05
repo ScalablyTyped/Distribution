@@ -13,19 +13,15 @@ trait BackupFailureDetails extends StObject {
 }
 object BackupFailureDetails {
   
-  @scala.inline
-  def apply(): BackupFailureDetails = {
+  inline def apply(): BackupFailureDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackupFailureDetails]
   }
   
-  @scala.inline
-  implicit class BackupFailureDetailsMutableBuilder[Self <: BackupFailureDetails] (val x: Self) extends AnyVal {
+  extension [Self <: BackupFailureDetails](x: Self) {
     
-    @scala.inline
-    def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

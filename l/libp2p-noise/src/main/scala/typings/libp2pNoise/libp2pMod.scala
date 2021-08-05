@@ -20,8 +20,7 @@ object libp2pMod {
   }
   object INoiseConnection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       secureInbound: (^, js.Any, ^) => js.Promise[SecureOutbound],
       secureOutbound: (^, js.Any, ^) => js.Promise[SecureOutbound]
     ): INoiseConnection = {
@@ -29,20 +28,15 @@ object libp2pMod {
       __obj.asInstanceOf[INoiseConnection]
     }
     
-    @scala.inline
-    implicit class INoiseConnectionMutableBuilder[Self <: INoiseConnection] (val x: Self) extends AnyVal {
+    extension [Self <: INoiseConnection](x: Self) {
       
-      @scala.inline
-      def setRemoteEarlyData(value: () => bytes): Self = StObject.set(x, "remoteEarlyData", js.Any.fromFunction0(value))
+      inline def setRemoteEarlyData(value: () => bytes): Self = StObject.set(x, "remoteEarlyData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoteEarlyDataUndefined: Self = StObject.set(x, "remoteEarlyData", js.undefined)
+      inline def setRemoteEarlyDataUndefined: Self = StObject.set(x, "remoteEarlyData", js.undefined)
       
-      @scala.inline
-      def setSecureInbound(value: (^, js.Any, ^) => js.Promise[SecureOutbound]): Self = StObject.set(x, "secureInbound", js.Any.fromFunction3(value))
+      inline def setSecureInbound(value: (^, js.Any, ^) => js.Promise[SecureOutbound]): Self = StObject.set(x, "secureInbound", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSecureOutbound(value: (^, js.Any, ^) => js.Promise[SecureOutbound]): Self = StObject.set(x, "secureOutbound", js.Any.fromFunction3(value))
+      inline def setSecureOutbound(value: (^, js.Any, ^) => js.Promise[SecureOutbound]): Self = StObject.set(x, "secureOutbound", js.Any.fromFunction3(value))
     }
   }
   
@@ -54,20 +48,16 @@ object libp2pMod {
   }
   object KeyPair {
     
-    @scala.inline
-    def apply(privateKey: bytes32, publicKey: bytes32): KeyPair = {
+    inline def apply(privateKey: bytes32, publicKey: bytes32): KeyPair = {
       val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyPair]
     }
     
-    @scala.inline
-    implicit class KeyPairMutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
+    extension [Self <: KeyPair](x: Self) {
       
-      @scala.inline
-      def setPrivateKey(value: bytes32): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: bytes32): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicKey(value: bytes32): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: bytes32): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,23 +71,18 @@ object libp2pMod {
   }
   object SecureOutbound {
     
-    @scala.inline
-    def apply(conn: js.Any, remoteEarlyData: Buffer, remotePeer: ^): SecureOutbound = {
+    inline def apply(conn: js.Any, remoteEarlyData: Buffer, remotePeer: ^): SecureOutbound = {
       val __obj = js.Dynamic.literal(conn = conn.asInstanceOf[js.Any], remoteEarlyData = remoteEarlyData.asInstanceOf[js.Any], remotePeer = remotePeer.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecureOutbound]
     }
     
-    @scala.inline
-    implicit class SecureOutboundMutableBuilder[Self <: SecureOutbound] (val x: Self) extends AnyVal {
+    extension [Self <: SecureOutbound](x: Self) {
       
-      @scala.inline
-      def setConn(value: js.Any): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
+      inline def setConn(value: js.Any): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoteEarlyData(value: Buffer): Self = StObject.set(x, "remoteEarlyData", value.asInstanceOf[js.Any])
+      inline def setRemoteEarlyData(value: Buffer): Self = StObject.set(x, "remoteEarlyData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemotePeer(value: ^): Self = StObject.set(x, "remotePeer", value.asInstanceOf[js.Any])
+      inline def setRemotePeer(value: ^): Self = StObject.set(x, "remotePeer", value.asInstanceOf[js.Any])
     }
   }
 }

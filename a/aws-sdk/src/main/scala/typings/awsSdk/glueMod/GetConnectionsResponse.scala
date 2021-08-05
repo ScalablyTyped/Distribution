@@ -18,28 +18,21 @@ trait GetConnectionsResponse extends StObject {
 }
 object GetConnectionsResponse {
   
-  @scala.inline
-  def apply(): GetConnectionsResponse = {
+  inline def apply(): GetConnectionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConnectionsResponse]
   }
   
-  @scala.inline
-  implicit class GetConnectionsResponseMutableBuilder[Self <: GetConnectionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectionsResponse](x: Self) {
     
-    @scala.inline
-    def setConnectionList(value: ConnectionList): Self = StObject.set(x, "ConnectionList", value.asInstanceOf[js.Any])
+    inline def setConnectionList(value: ConnectionList): Self = StObject.set(x, "ConnectionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionListUndefined: Self = StObject.set(x, "ConnectionList", js.undefined)
+    inline def setConnectionListUndefined: Self = StObject.set(x, "ConnectionList", js.undefined)
     
-    @scala.inline
-    def setConnectionListVarargs(value: Connection*): Self = StObject.set(x, "ConnectionList", js.Array(value :_*))
+    inline def setConnectionListVarargs(value: Connection*): Self = StObject.set(x, "ConnectionList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

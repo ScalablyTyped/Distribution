@@ -14,23 +14,18 @@ trait ICustomControl extends StObject {
 }
 object ICustomControl {
   
-  @scala.inline
-  def apply(label: String, ref: String, `type`: String): ICustomControl = {
+  inline def apply(label: String, ref: String, `type`: String): ICustomControl = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomControl]
   }
   
-  @scala.inline
-  implicit class ICustomControlMutableBuilder[Self <: ICustomControl] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomControl](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

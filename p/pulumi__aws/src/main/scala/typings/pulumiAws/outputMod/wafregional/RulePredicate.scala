@@ -14,23 +14,18 @@ trait RulePredicate extends StObject {
 }
 object RulePredicate {
   
-  @scala.inline
-  def apply(dataId: String, negated: Boolean, `type`: String): RulePredicate = {
+  inline def apply(dataId: String, negated: Boolean, `type`: String): RulePredicate = {
     val __obj = js.Dynamic.literal(dataId = dataId.asInstanceOf[js.Any], negated = negated.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulePredicate]
   }
   
-  @scala.inline
-  implicit class RulePredicateMutableBuilder[Self <: RulePredicate] (val x: Self) extends AnyVal {
+  extension [Self <: RulePredicate](x: Self) {
     
-    @scala.inline
-    def setDataId(value: String): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
+    inline def setDataId(value: String): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegated(value: Boolean): Self = StObject.set(x, "negated", value.asInstanceOf[js.Any])
+    inline def setNegated(value: Boolean): Self = StObject.set(x, "negated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

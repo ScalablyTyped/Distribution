@@ -12,19 +12,15 @@ trait KnockoutUtils extends StObject {
 }
 object KnockoutUtils {
   
-  @scala.inline
-  def apply(uniqueId: String => String, unwrapProperties: js.Any => js.Any): KnockoutUtils = {
+  inline def apply(uniqueId: String => String, unwrapProperties: js.Any => js.Any): KnockoutUtils = {
     val __obj = js.Dynamic.literal(uniqueId = js.Any.fromFunction1(uniqueId), unwrapProperties = js.Any.fromFunction1(unwrapProperties))
     __obj.asInstanceOf[KnockoutUtils]
   }
   
-  @scala.inline
-  implicit class KnockoutUtilsMutableBuilder[Self <: KnockoutUtils] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutUtils](x: Self) {
     
-    @scala.inline
-    def setUniqueId(value: String => String): Self = StObject.set(x, "uniqueId", js.Any.fromFunction1(value))
+    inline def setUniqueId(value: String => String): Self = StObject.set(x, "uniqueId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnwrapProperties(value: js.Any => js.Any): Self = StObject.set(x, "unwrapProperties", js.Any.fromFunction1(value))
+    inline def setUnwrapProperties(value: js.Any => js.Any): Self = StObject.set(x, "unwrapProperties", js.Any.fromFunction1(value))
   }
 }

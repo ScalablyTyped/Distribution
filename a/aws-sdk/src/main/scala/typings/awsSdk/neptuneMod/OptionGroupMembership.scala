@@ -18,25 +18,19 @@ trait OptionGroupMembership extends StObject {
 }
 object OptionGroupMembership {
   
-  @scala.inline
-  def apply(): OptionGroupMembership = {
+  inline def apply(): OptionGroupMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionGroupMembership]
   }
   
-  @scala.inline
-  implicit class OptionGroupMembershipMutableBuilder[Self <: OptionGroupMembership] (val x: Self) extends AnyVal {
+  extension [Self <: OptionGroupMembership](x: Self) {
     
-    @scala.inline
-    def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
+    inline def setOptionGroupName(value: String): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionGroupNameUndefined: Self = StObject.set(x, "OptionGroupName", js.undefined)
+    inline def setOptionGroupNameUndefined: Self = StObject.set(x, "OptionGroupName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

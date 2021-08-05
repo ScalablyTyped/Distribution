@@ -15,8 +15,7 @@ trait CsvUpload
 }
 object CsvUpload {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     append: js.Object => CsvUpload,
     apply: () => Unit,
     forCampaignManagement: () => CsvUpload,
@@ -28,13 +27,10 @@ object CsvUpload {
     __obj.asInstanceOf[CsvUpload]
   }
   
-  @scala.inline
-  implicit class CsvUploadMutableBuilder[Self <: CsvUpload] (val x: Self) extends AnyVal {
+  extension [Self <: CsvUpload](x: Self) {
     
-    @scala.inline
-    def setAppend(value: js.Object => CsvUpload): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+    inline def setAppend(value: js.Object => CsvUpload): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
+    inline def setApply(value: () => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction0(value))
   }
 }

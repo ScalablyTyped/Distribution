@@ -33,13 +33,13 @@ object backendMod {
   class DataStorage[T] protected () extends StObject {
     def this(backend: KernelBackend, dataMover: DataMover) = this()
     
-    var backend: js.Any = js.native
+    /* private */ var backend: js.Any = js.native
     
-    var data: js.Any = js.native
+    /* private */ var data: js.Any = js.native
     
-    var dataIdsCount: js.Any = js.native
+    /* private */ var dataIdsCount: js.Any = js.native
     
-    var dataMover: js.Any = js.native
+    /* private */ var dataMover: js.Any = js.native
     
     def delete(dataId: DataId): Boolean = js.native
     
@@ -450,17 +450,14 @@ object backendMod {
   }
   object BackendTimer {
     
-    @scala.inline
-    def apply(time: js.Function0[Unit] => js.Promise[BackendTimingInfo]): BackendTimer = {
+    inline def apply(time: js.Function0[Unit] => js.Promise[BackendTimingInfo]): BackendTimer = {
       val __obj = js.Dynamic.literal(time = js.Any.fromFunction1(time))
       __obj.asInstanceOf[BackendTimer]
     }
     
-    @scala.inline
-    implicit class BackendTimerMutableBuilder[Self <: BackendTimer] (val x: Self) extends AnyVal {
+    extension [Self <: BackendTimer](x: Self) {
       
-      @scala.inline
-      def setTime(value: js.Function0[Unit] => js.Promise[BackendTimingInfo]): Self = StObject.set(x, "time", js.Any.fromFunction1(value))
+      inline def setTime(value: js.Function0[Unit] => js.Promise[BackendTimingInfo]): Self = StObject.set(x, "time", js.Any.fromFunction1(value))
     }
   }
   
@@ -472,23 +469,18 @@ object backendMod {
   }
   object BackendTimingInfo {
     
-    @scala.inline
-    def apply(kernelMs: Double | Error): BackendTimingInfo = {
+    inline def apply(kernelMs: Double | Error): BackendTimingInfo = {
       val __obj = js.Dynamic.literal(kernelMs = kernelMs.asInstanceOf[js.Any])
       __obj.asInstanceOf[BackendTimingInfo]
     }
     
-    @scala.inline
-    implicit class BackendTimingInfoMutableBuilder[Self <: BackendTimingInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BackendTimingInfo](x: Self) {
       
-      @scala.inline
-      def setGetExtraProfileInfo(value: () => String): Self = StObject.set(x, "getExtraProfileInfo", js.Any.fromFunction0(value))
+      inline def setGetExtraProfileInfo(value: () => String): Self = StObject.set(x, "getExtraProfileInfo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExtraProfileInfoUndefined: Self = StObject.set(x, "getExtraProfileInfo", js.undefined)
+      inline def setGetExtraProfileInfoUndefined: Self = StObject.set(x, "getExtraProfileInfo", js.undefined)
       
-      @scala.inline
-      def setKernelMs(value: Double | Error): Self = StObject.set(x, "kernelMs", value.asInstanceOf[js.Any])
+      inline def setKernelMs(value: Double | Error): Self = StObject.set(x, "kernelMs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -503,17 +495,14 @@ object backendMod {
   }
   object DataMover {
     
-    @scala.inline
-    def apply(moveData: (KernelBackend, DataId) => Unit): DataMover = {
+    inline def apply(moveData: (KernelBackend, DataId) => Unit): DataMover = {
       val __obj = js.Dynamic.literal(moveData = js.Any.fromFunction2(moveData))
       __obj.asInstanceOf[DataMover]
     }
     
-    @scala.inline
-    implicit class DataMoverMutableBuilder[Self <: DataMover] (val x: Self) extends AnyVal {
+    extension [Self <: DataMover](x: Self) {
       
-      @scala.inline
-      def setMoveData(value: (KernelBackend, DataId) => Unit): Self = StObject.set(x, "moveData", js.Any.fromFunction2(value))
+      inline def setMoveData(value: (KernelBackend, DataId) => Unit): Self = StObject.set(x, "moveData", js.Any.fromFunction2(value))
     }
   }
   
@@ -536,8 +525,7 @@ object backendMod {
   }
   object TensorStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disposeData: DataId => Unit,
       memory: () => Unreliable,
       move: (DataId, BackendValues, js.Array[Double], DataType) => Unit,
@@ -550,29 +538,21 @@ object backendMod {
       __obj.asInstanceOf[TensorStorage]
     }
     
-    @scala.inline
-    implicit class TensorStorageMutableBuilder[Self <: TensorStorage] (val x: Self) extends AnyVal {
+    extension [Self <: TensorStorage](x: Self) {
       
-      @scala.inline
-      def setDisposeData(value: DataId => Unit): Self = StObject.set(x, "disposeData", js.Any.fromFunction1(value))
+      inline def setDisposeData(value: DataId => Unit): Self = StObject.set(x, "disposeData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMemory(value: () => Unreliable): Self = StObject.set(x, "memory", js.Any.fromFunction0(value))
+      inline def setMemory(value: () => Unreliable): Self = StObject.set(x, "memory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMove(value: (DataId, BackendValues, js.Array[Double], DataType) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction4(value))
+      inline def setMove(value: (DataId, BackendValues, js.Array[Double], DataType) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setNumDataIds(value: () => Double): Self = StObject.set(x, "numDataIds", js.Any.fromFunction0(value))
+      inline def setNumDataIds(value: () => Double): Self = StObject.set(x, "numDataIds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRead(value: DataId => js.Promise[BackendValues]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: DataId => js.Promise[BackendValues]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadSync(value: DataId => BackendValues): Self = StObject.set(x, "readSync", js.Any.fromFunction1(value))
+      inline def setReadSync(value: DataId => BackendValues): Self = StObject.set(x, "readSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: (BackendValues, js.Array[Double], DataType) => DataId): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
+      inline def setWrite(value: (BackendValues, js.Array[Double], DataType) => DataId): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
     }
   }
 }

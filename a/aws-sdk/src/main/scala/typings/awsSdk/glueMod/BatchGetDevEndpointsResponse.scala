@@ -18,31 +18,23 @@ trait BatchGetDevEndpointsResponse extends StObject {
 }
 object BatchGetDevEndpointsResponse {
   
-  @scala.inline
-  def apply(): BatchGetDevEndpointsResponse = {
+  inline def apply(): BatchGetDevEndpointsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetDevEndpointsResponse]
   }
   
-  @scala.inline
-  implicit class BatchGetDevEndpointsResponseMutableBuilder[Self <: BatchGetDevEndpointsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetDevEndpointsResponse](x: Self) {
     
-    @scala.inline
-    def setDevEndpoints(value: DevEndpointList): Self = StObject.set(x, "DevEndpoints", value.asInstanceOf[js.Any])
+    inline def setDevEndpoints(value: DevEndpointList): Self = StObject.set(x, "DevEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevEndpointsNotFound(value: DevEndpointNames): Self = StObject.set(x, "DevEndpointsNotFound", value.asInstanceOf[js.Any])
+    inline def setDevEndpointsNotFound(value: DevEndpointNames): Self = StObject.set(x, "DevEndpointsNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevEndpointsNotFoundUndefined: Self = StObject.set(x, "DevEndpointsNotFound", js.undefined)
+    inline def setDevEndpointsNotFoundUndefined: Self = StObject.set(x, "DevEndpointsNotFound", js.undefined)
     
-    @scala.inline
-    def setDevEndpointsNotFoundVarargs(value: GenericString*): Self = StObject.set(x, "DevEndpointsNotFound", js.Array(value :_*))
+    inline def setDevEndpointsNotFoundVarargs(value: GenericString*): Self = StObject.set(x, "DevEndpointsNotFound", js.Array(value :_*))
     
-    @scala.inline
-    def setDevEndpointsUndefined: Self = StObject.set(x, "DevEndpoints", js.undefined)
+    inline def setDevEndpointsUndefined: Self = StObject.set(x, "DevEndpoints", js.undefined)
     
-    @scala.inline
-    def setDevEndpointsVarargs(value: DevEndpoint*): Self = StObject.set(x, "DevEndpoints", js.Array(value :_*))
+    inline def setDevEndpointsVarargs(value: DevEndpoint*): Self = StObject.set(x, "DevEndpoints", js.Array(value :_*))
   }
 }

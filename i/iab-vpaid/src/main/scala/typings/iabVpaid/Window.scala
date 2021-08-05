@@ -12,19 +12,15 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(): Window = {
+  inline def apply(): Window = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setGetVPAIDAd(value: () => VpaidCreative): Self = StObject.set(x, "getVPAIDAd", js.Any.fromFunction0(value))
+    inline def setGetVPAIDAd(value: () => VpaidCreative): Self = StObject.set(x, "getVPAIDAd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVPAIDAdUndefined: Self = StObject.set(x, "getVPAIDAd", js.undefined)
+    inline def setGetVPAIDAdUndefined: Self = StObject.set(x, "getVPAIDAd", js.undefined)
   }
 }

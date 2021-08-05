@@ -48,8 +48,7 @@ object bounceMod {
   }
   object Bounce {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BouncedAt: String,
       CanActivate: Boolean,
       Description: String,
@@ -72,71 +71,49 @@ object bounceMod {
       __obj.asInstanceOf[Bounce]
     }
     
-    @scala.inline
-    implicit class BounceMutableBuilder[Self <: Bounce] (val x: Self) extends AnyVal {
+    extension [Self <: Bounce](x: Self) {
       
-      @scala.inline
-      def setBouncedAt(value: String): Self = StObject.set(x, "BouncedAt", value.asInstanceOf[js.Any])
+      inline def setBouncedAt(value: String): Self = StObject.set(x, "BouncedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanActivate(value: Boolean): Self = StObject.set(x, "CanActivate", value.asInstanceOf[js.Any])
+      inline def setCanActivate(value: Boolean): Self = StObject.set(x, "CanActivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDumpAvailable(value: Boolean): Self = StObject.set(x, "DumpAvailable", value.asInstanceOf[js.Any])
+      inline def setDumpAvailable(value: Boolean): Self = StObject.set(x, "DumpAvailable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactive(value: Boolean): Self = StObject.set(x, "Inactive", value.asInstanceOf[js.Any])
+      inline def setInactive(value: Boolean): Self = StObject.set(x, "Inactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
+      inline def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
+      inline def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordType(value: String): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
+      inline def setRecordType(value: String): Self = StObject.set(x, "RecordType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerID(value: String): Self = StObject.set(x, "ServerID", value.asInstanceOf[js.Any])
+      inline def setServerID(value: String): Self = StObject.set(x, "ServerID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeCode(value: Double): Self = StObject.set(x, "TypeCode", value.asInstanceOf[js.Any])
+      inline def setTypeCode(value: Double): Self = StObject.set(x, "TypeCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,20 +125,16 @@ object bounceMod {
   }
   object BounceActivationResponse {
     
-    @scala.inline
-    def apply(Bounce: Bounce, Message: String): BounceActivationResponse = {
+    inline def apply(Bounce: Bounce, Message: String): BounceActivationResponse = {
       val __obj = js.Dynamic.literal(Bounce = Bounce.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
       __obj.asInstanceOf[BounceActivationResponse]
     }
     
-    @scala.inline
-    implicit class BounceActivationResponseMutableBuilder[Self <: BounceActivationResponse] (val x: Self) extends AnyVal {
+    extension [Self <: BounceActivationResponse](x: Self) {
       
-      @scala.inline
-      def setBounce(value: Bounce): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
+      inline def setBounce(value: Bounce): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,17 +144,14 @@ object bounceMod {
   }
   object BounceDump {
     
-    @scala.inline
-    def apply(Body: String): BounceDump = {
+    inline def apply(Body: String): BounceDump = {
       val __obj = js.Dynamic.literal(Body = Body.asInstanceOf[js.Any])
       __obj.asInstanceOf[BounceDump]
     }
     
-    @scala.inline
-    implicit class BounceDumpMutableBuilder[Self <: BounceDump] (val x: Self) extends AnyVal {
+    extension [Self <: BounceDump](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,26 +165,20 @@ object bounceMod {
   }
   object BounceMetric {
     
-    @scala.inline
-    def apply(Count: Double, Name: String): BounceMetric = {
+    inline def apply(Count: Double, Name: String): BounceMetric = {
       val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BounceMetric]
     }
     
-    @scala.inline
-    implicit class BounceMetricMutableBuilder[Self <: BounceMetric] (val x: Self) extends AnyVal {
+    extension [Self <: BounceMetric](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
   
@@ -226,23 +190,18 @@ object bounceMod {
   }
   object Bounces {
     
-    @scala.inline
-    def apply(Bounces: js.Array[Bounce], TotalCount: Double): Bounces = {
+    inline def apply(Bounces: js.Array[Bounce], TotalCount: Double): Bounces = {
       val __obj = js.Dynamic.literal(Bounces = Bounces.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bounces]
     }
     
-    @scala.inline
-    implicit class BouncesMutableBuilder[Self <: Bounces] (val x: Self) extends AnyVal {
+    extension [Self <: Bounces](x: Self) {
       
-      @scala.inline
-      def setBounces(value: js.Array[Bounce]): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
+      inline def setBounces(value: js.Array[Bounce]): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBouncesVarargs(value: Bounce*): Self = StObject.set(x, "Bounces", js.Array(value :_*))
+      inline def setBouncesVarargs(value: Bounce*): Self = StObject.set(x, "Bounces", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,23 +213,18 @@ object bounceMod {
   }
   object DeliveryStatistics {
     
-    @scala.inline
-    def apply(Bounces: js.Array[BounceMetric], InactiveMails: Double): DeliveryStatistics = {
+    inline def apply(Bounces: js.Array[BounceMetric], InactiveMails: Double): DeliveryStatistics = {
       val __obj = js.Dynamic.literal(Bounces = Bounces.asInstanceOf[js.Any], InactiveMails = InactiveMails.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeliveryStatistics]
     }
     
-    @scala.inline
-    implicit class DeliveryStatisticsMutableBuilder[Self <: DeliveryStatistics] (val x: Self) extends AnyVal {
+    extension [Self <: DeliveryStatistics](x: Self) {
       
-      @scala.inline
-      def setBounces(value: js.Array[BounceMetric]): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
+      inline def setBounces(value: js.Array[BounceMetric]): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBouncesVarargs(value: BounceMetric*): Self = StObject.set(x, "Bounces", js.Array(value :_*))
+      inline def setBouncesVarargs(value: BounceMetric*): Self = StObject.set(x, "Bounces", js.Array(value :_*))
       
-      @scala.inline
-      def setInactiveMails(value: Double): Self = StObject.set(x, "InactiveMails", value.asInstanceOf[js.Any])
+      inline def setInactiveMails(value: Double): Self = StObject.set(x, "InactiveMails", value.asInstanceOf[js.Any])
     }
   }
 }

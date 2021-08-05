@@ -15,19 +15,15 @@ trait Id[D /* <: js.Object */] extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](Header: Renderer[HeaderProps[D]], id: IdType[D]): Id[D] = {
+  inline def apply[D /* <: js.Object */](Header: Renderer[HeaderProps[D]], id: IdType[D]): Id[D] = {
     val __obj = js.Dynamic.literal(Header = Header.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id[D]]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id[?], D /* <: js.Object */] (val x: Self & Id[D]) extends AnyVal {
+  extension [Self <: Id[?], D /* <: js.Object */](x: Self & Id[D]) {
     
-    @scala.inline
-    def setHeader(value: Renderer[HeaderProps[D]]): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Renderer[HeaderProps[D]]): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: IdType[D]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdType[D]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

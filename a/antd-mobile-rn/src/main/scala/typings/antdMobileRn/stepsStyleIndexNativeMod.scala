@@ -29,8 +29,7 @@ object stepsStyleIndexNativeMod {
     @js.native
     def contentL: PaddingLeftNumber = js.native
     
-    @scala.inline
-    def contentL_=(x: PaddingLeftNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content_l")(x.asInstanceOf[js.Any])
+    inline def contentL_=(x: PaddingLeftNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content_l")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.content_s")
     @js.native
@@ -40,109 +39,93 @@ object stepsStyleIndexNativeMod {
     @js.native
     def contentSH: PaddingTopNumber = js.native
     
-    @scala.inline
-    def contentSH_=(x: PaddingTopNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content_s_h")(x.asInstanceOf[js.Any])
+    inline def contentSH_=(x: PaddingTopNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content_s_h")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def contentS_=(x: PaddingLeftNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content_s")(x.asInstanceOf[js.Any])
+    inline def contentS_=(x: PaddingLeftNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("content_s")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.description_l")
     @js.native
     def descriptionL: ColorStringFontSizeNumber = js.native
     
-    @scala.inline
-    def descriptionL_=(x: ColorStringFontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("description_l")(x.asInstanceOf[js.Any])
+    inline def descriptionL_=(x: ColorStringFontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("description_l")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.description_s")
     @js.native
     def descriptionS: ColorStringFontSizeNumber = js.native
     
-    @scala.inline
-    def descriptionS_=(x: ColorStringFontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("description_s")(x.asInstanceOf[js.Any])
+    inline def descriptionS_=(x: ColorStringFontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("description_s")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.head_blue_l")
     @js.native
     def headBlueL: BackgroundColorStringBorderColorString = js.native
     
-    @scala.inline
-    def headBlueL_=(x: BackgroundColorStringBorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_blue_l")(x.asInstanceOf[js.Any])
+    inline def headBlueL_=(x: BackgroundColorStringBorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_blue_l")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.head_blue_s")
     @js.native
     def headBlueS: BorderColorString = js.native
     
-    @scala.inline
-    def headBlueS_=(x: BorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_blue_s")(x.asInstanceOf[js.Any])
+    inline def headBlueS_=(x: BorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_blue_s")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.head_default_l")
     @js.native
     def headDefaultL: BackgroundColorBorderColor = js.native
     
-    @scala.inline
-    def headDefaultL_=(x: BackgroundColorBorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_default_l")(x.asInstanceOf[js.Any])
+    inline def headDefaultL_=(x: BackgroundColorBorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_default_l")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.head_default_s")
     @js.native
     def headDefaultS: BackgroundColorBorderColor = js.native
     
-    @scala.inline
-    def headDefaultS_=(x: BackgroundColorBorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_default_s")(x.asInstanceOf[js.Any])
+    inline def headDefaultS_=(x: BackgroundColorBorderColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_default_s")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.head_gray_l")
     @js.native
     def headGrayL: BackgroundColorStringBorderColorString = js.native
     
-    @scala.inline
-    def headGrayL_=(x: BackgroundColorStringBorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_gray_l")(x.asInstanceOf[js.Any])
+    inline def headGrayL_=(x: BackgroundColorStringBorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_gray_l")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.head_gray_s")
     @js.native
     def headGrayS: BorderColorString = js.native
     
-    @scala.inline
-    def headGrayS_=(x: BorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_gray_s")(x.asInstanceOf[js.Any])
+    inline def headGrayS_=(x: BorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_gray_s")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.head_red_l")
     @js.native
     def headRedL: BackgroundColorStringBorderColorString = js.native
     
-    @scala.inline
-    def headRedL_=(x: BackgroundColorStringBorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_red_l")(x.asInstanceOf[js.Any])
+    inline def headRedL_=(x: BackgroundColorStringBorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_red_l")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.head_red_s")
     @js.native
     def headRedS: BorderColorString = js.native
     
-    @scala.inline
-    def headRedS_=(x: BorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_red_s")(x.asInstanceOf[js.Any])
+    inline def headRedS_=(x: BorderColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("head_red_s")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.icon_l")
     @js.native
     def iconL: HeightWidth = js.native
     
-    @scala.inline
-    def iconL_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon_l")(x.asInstanceOf[js.Any])
+    inline def iconL_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon_l")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.icon_s")
     @js.native
     def iconS: HeightWidth = js.native
     
-    @scala.inline
-    def iconS_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon_s")(x.asInstanceOf[js.Any])
+    inline def iconS_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("icon_s")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.tail_blue")
     @js.native
     def tailBlue: BackgroundColorString = js.native
     
-    @scala.inline
-    def tailBlue_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_blue")(x.asInstanceOf[js.Any])
+    inline def tailBlue_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_blue")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.tail_default_l")
     @js.native
     def tailDefaultL: MarginLeftWidth = js.native
     
-    @scala.inline
-    def tailDefaultL_=(x: MarginLeftWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_default_l")(x.asInstanceOf[js.Any])
+    inline def tailDefaultL_=(x: MarginLeftWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_default_l")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.tail_default_s")
     @js.native
@@ -152,46 +135,39 @@ object stepsStyleIndexNativeMod {
     @js.native
     def tailDefaultSH: HeightMarginTop = js.native
     
-    @scala.inline
-    def tailDefaultSH_=(x: HeightMarginTop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_default_s_h")(x.asInstanceOf[js.Any])
+    inline def tailDefaultSH_=(x: HeightMarginTop): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_default_s_h")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def tailDefaultS_=(x: MarginLeftWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_default_s")(x.asInstanceOf[js.Any])
+    inline def tailDefaultS_=(x: MarginLeftWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_default_s")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.tail_error")
     @js.native
     def tailError: BackgroundColorString = js.native
     
-    @scala.inline
-    def tailError_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_error")(x.asInstanceOf[js.Any])
+    inline def tailError_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_error")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.tail_gray")
     @js.native
     def tailGray: BackgroundColorString = js.native
     
-    @scala.inline
-    def tailGray_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_gray")(x.asInstanceOf[js.Any])
+    inline def tailGray_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_gray")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.tail_last")
     @js.native
     def tailLast: BackgroundColorString = js.native
     
-    @scala.inline
-    def tailLast_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_last")(x.asInstanceOf[js.Any])
+    inline def tailLast_=(x: BackgroundColorString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tail_last")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.title_l")
     @js.native
     def titleL: FontWeightPaddingBottom = js.native
     
-    @scala.inline
-    def titleL_=(x: FontWeightPaddingBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title_l")(x.asInstanceOf[js.Any])
+    inline def titleL_=(x: FontWeightPaddingBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title_l")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/steps/style/index.native", "default.title_s")
     @js.native
     def titleS: FontWeightPaddingBottom = js.native
     
-    @scala.inline
-    def titleS_=(x: FontWeightPaddingBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title_s")(x.asInstanceOf[js.Any])
+    inline def titleS_=(x: FontWeightPaddingBottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title_s")(x.asInstanceOf[js.Any])
   }
   
   trait IStepsStyle extends StObject {
@@ -242,8 +218,7 @@ object stepsStyleIndexNativeMod {
   }
   object IStepsStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content_l: ViewStyle,
       content_s: ViewStyle,
       description_l: TextStyle,
@@ -271,74 +246,51 @@ object stepsStyleIndexNativeMod {
       __obj.asInstanceOf[IStepsStyle]
     }
     
-    @scala.inline
-    implicit class IStepsStyleMutableBuilder[Self <: IStepsStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IStepsStyle](x: Self) {
       
-      @scala.inline
-      def setContent_l(value: ViewStyle): Self = StObject.set(x, "content_l", value.asInstanceOf[js.Any])
+      inline def setContent_l(value: ViewStyle): Self = StObject.set(x, "content_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent_s(value: ViewStyle): Self = StObject.set(x, "content_s", value.asInstanceOf[js.Any])
+      inline def setContent_s(value: ViewStyle): Self = StObject.set(x, "content_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription_l(value: TextStyle): Self = StObject.set(x, "description_l", value.asInstanceOf[js.Any])
+      inline def setDescription_l(value: TextStyle): Self = StObject.set(x, "description_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription_s(value: TextStyle): Self = StObject.set(x, "description_s", value.asInstanceOf[js.Any])
+      inline def setDescription_s(value: TextStyle): Self = StObject.set(x, "description_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_blue_l(value: ViewStyle): Self = StObject.set(x, "head_blue_l", value.asInstanceOf[js.Any])
+      inline def setHead_blue_l(value: ViewStyle): Self = StObject.set(x, "head_blue_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_blue_s(value: ViewStyle): Self = StObject.set(x, "head_blue_s", value.asInstanceOf[js.Any])
+      inline def setHead_blue_s(value: ViewStyle): Self = StObject.set(x, "head_blue_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_default_l(value: ViewStyle): Self = StObject.set(x, "head_default_l", value.asInstanceOf[js.Any])
+      inline def setHead_default_l(value: ViewStyle): Self = StObject.set(x, "head_default_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_default_s(value: ViewStyle): Self = StObject.set(x, "head_default_s", value.asInstanceOf[js.Any])
+      inline def setHead_default_s(value: ViewStyle): Self = StObject.set(x, "head_default_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_gray_l(value: ViewStyle): Self = StObject.set(x, "head_gray_l", value.asInstanceOf[js.Any])
+      inline def setHead_gray_l(value: ViewStyle): Self = StObject.set(x, "head_gray_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_gray_s(value: ViewStyle): Self = StObject.set(x, "head_gray_s", value.asInstanceOf[js.Any])
+      inline def setHead_gray_s(value: ViewStyle): Self = StObject.set(x, "head_gray_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_red_l(value: ViewStyle): Self = StObject.set(x, "head_red_l", value.asInstanceOf[js.Any])
+      inline def setHead_red_l(value: ViewStyle): Self = StObject.set(x, "head_red_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHead_red_s(value: ViewStyle): Self = StObject.set(x, "head_red_s", value.asInstanceOf[js.Any])
+      inline def setHead_red_s(value: ViewStyle): Self = StObject.set(x, "head_red_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon_l(value: ViewStyle): Self = StObject.set(x, "icon_l", value.asInstanceOf[js.Any])
+      inline def setIcon_l(value: ViewStyle): Self = StObject.set(x, "icon_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon_s(value: ViewStyle): Self = StObject.set(x, "icon_s", value.asInstanceOf[js.Any])
+      inline def setIcon_s(value: ViewStyle): Self = StObject.set(x, "icon_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_blue(value: ViewStyle): Self = StObject.set(x, "tail_blue", value.asInstanceOf[js.Any])
+      inline def setTail_blue(value: ViewStyle): Self = StObject.set(x, "tail_blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_default_l(value: ViewStyle): Self = StObject.set(x, "tail_default_l", value.asInstanceOf[js.Any])
+      inline def setTail_default_l(value: ViewStyle): Self = StObject.set(x, "tail_default_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_default_s(value: ViewStyle): Self = StObject.set(x, "tail_default_s", value.asInstanceOf[js.Any])
+      inline def setTail_default_s(value: ViewStyle): Self = StObject.set(x, "tail_default_s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_error(value: ViewStyle): Self = StObject.set(x, "tail_error", value.asInstanceOf[js.Any])
+      inline def setTail_error(value: ViewStyle): Self = StObject.set(x, "tail_error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_gray(value: ViewStyle): Self = StObject.set(x, "tail_gray", value.asInstanceOf[js.Any])
+      inline def setTail_gray(value: ViewStyle): Self = StObject.set(x, "tail_gray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTail_last(value: ViewStyle): Self = StObject.set(x, "tail_last", value.asInstanceOf[js.Any])
+      inline def setTail_last(value: ViewStyle): Self = StObject.set(x, "tail_last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle_l(value: TextStyle): Self = StObject.set(x, "title_l", value.asInstanceOf[js.Any])
+      inline def setTitle_l(value: TextStyle): Self = StObject.set(x, "title_l", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle_s(value: TextStyle): Self = StObject.set(x, "title_s", value.asInstanceOf[js.Any])
+      inline def setTitle_s(value: TextStyle): Self = StObject.set(x, "title_s", value.asInstanceOf[js.Any])
     }
   }
 }

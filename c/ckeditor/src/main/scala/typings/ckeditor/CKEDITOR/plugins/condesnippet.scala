@@ -30,8 +30,7 @@ object condesnippet {
   }
   object highlighter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       highlight: (String, String, js.Function1[/* highlightedCode */ String, Unit]) => Unit,
       highlighter: (String, String, js.Function1[/* highlightedCode */ String, Unit]) => Unit,
       init: js.Function0[Unit] => Unit,
@@ -50,23 +49,17 @@ object condesnippet {
       __obj.asInstanceOf[highlighter]
     }
     
-    @scala.inline
-    implicit class highlighterMutableBuilder[Self <: highlighter] (val x: Self) extends AnyVal {
+    extension [Self <: highlighter](x: Self) {
       
-      @scala.inline
-      def setHighlight(value: (String, String, js.Function1[/* highlightedCode */ String, Unit]) => Unit): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
+      inline def setHighlight(value: (String, String, js.Function1[/* highlightedCode */ String, Unit]) => Unit): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHighlighter(value: (String, String, js.Function1[/* highlightedCode */ String, Unit]) => Unit): Self = StObject.set(x, "highlighter", js.Any.fromFunction3(value))
+      inline def setHighlighter(value: (String, String, js.Function1[/* highlightedCode */ String, Unit]) => Unit): Self = StObject.set(x, "highlighter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setInit(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLanguages(value: StringDictionary[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: StringDictionary[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(
+      inline def setQueue(
         value: js.Array[
               js.Function3[
                 /* code */ String, 
@@ -77,8 +70,7 @@ object condesnippet {
             ]
       ): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueVarargs(
+      inline def setQueueVarargs(
         value: (js.Function3[
               /* code */ String, 
               /* lang */ String, 
@@ -87,8 +79,7 @@ object condesnippet {
             ])*
       ): Self = StObject.set(x, "queue", js.Array(value :_*))
       
-      @scala.inline
-      def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+      inline def setReady(value: Boolean): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     }
   }
 }

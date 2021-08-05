@@ -15,16 +15,13 @@ trait JavascriptSetDetails
 }
 object JavascriptSetDetails {
   
-  @scala.inline
-  def apply(primaryPattern: String, setting: allow | block): JavascriptSetDetails = {
+  inline def apply(primaryPattern: String, setting: allow | block): JavascriptSetDetails = {
     val __obj = js.Dynamic.literal(primaryPattern = primaryPattern.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[JavascriptSetDetails]
   }
   
-  @scala.inline
-  implicit class JavascriptSetDetailsMutableBuilder[Self <: JavascriptSetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: JavascriptSetDetails](x: Self) {
     
-    @scala.inline
-    def setSetting(value: allow | block): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: allow | block): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

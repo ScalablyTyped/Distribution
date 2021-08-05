@@ -21,31 +21,23 @@ trait IModuleOptions extends StObject {
 }
 object IModuleOptions {
   
-  @scala.inline
-  def apply(): IModuleOptions = {
+  inline def apply(): IModuleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IModuleOptions]
   }
   
-  @scala.inline
-  implicit class IModuleOptionsMutableBuilder[Self <: IModuleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IModuleOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setErrorCallback(value: () => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction0(value))
+    inline def setErrorCallback(value: () => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
+    inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
   }
 }

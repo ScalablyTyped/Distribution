@@ -12,6 +12,5 @@ object timelineConnectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: TimelineConnectorProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: TimelineConnectorProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

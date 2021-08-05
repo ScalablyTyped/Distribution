@@ -22,27 +22,20 @@ object mod {
     @JSImport("@carbon/icon-helpers", "defaultAttributes.focusable")
     @js.native
     def focusable: String = js.native
-    @scala.inline
-    def focusable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusable")(x.asInstanceOf[js.Any])
+    inline def focusable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusable")(x.asInstanceOf[js.Any])
     
     @JSImport("@carbon/icon-helpers", "defaultAttributes.preserveAspectRatio")
     @js.native
     def preserveAspectRatio: String = js.native
-    @scala.inline
-    def preserveAspectRatio_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preserveAspectRatio")(x.asInstanceOf[js.Any])
+    inline def preserveAspectRatio_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preserveAspectRatio")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def formatAttributes(attrs: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatAttributes")(attrs.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatAttributes(attrs: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatAttributes")(attrs.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getAttributes(): Focusable = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributes")().asInstanceOf[Focusable]
-  @scala.inline
-  def getAttributes(hasWidthHeightViewBoxAttributes: Height): Focusable = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributes")(hasWidthHeightViewBoxAttributes.asInstanceOf[js.Any]).asInstanceOf[Focusable]
+  inline def getAttributes(): Focusable = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributes")().asInstanceOf[Focusable]
+  inline def getAttributes(hasWidthHeightViewBoxAttributes: Height): Focusable = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributes")(hasWidthHeightViewBoxAttributes.asInstanceOf[js.Any]).asInstanceOf[Focusable]
   
-  @scala.inline
-  def toSVG(descriptor: js.Any): SVGSVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(descriptor.asInstanceOf[js.Any]).asInstanceOf[SVGSVGElement]
+  inline def toSVG(descriptor: js.Any): SVGSVGElement = ^.asInstanceOf[js.Dynamic].applyDynamic("toSVG")(descriptor.asInstanceOf[js.Any]).asInstanceOf[SVGSVGElement]
   
-  @scala.inline
-  def toString_(descriptor: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(descriptor.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(descriptor: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(descriptor.asInstanceOf[js.Any]).asInstanceOf[String]
 }

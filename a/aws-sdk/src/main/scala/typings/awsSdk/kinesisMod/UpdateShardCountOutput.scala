@@ -23,31 +23,23 @@ trait UpdateShardCountOutput extends StObject {
 }
 object UpdateShardCountOutput {
   
-  @scala.inline
-  def apply(): UpdateShardCountOutput = {
+  inline def apply(): UpdateShardCountOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateShardCountOutput]
   }
   
-  @scala.inline
-  implicit class UpdateShardCountOutputMutableBuilder[Self <: UpdateShardCountOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateShardCountOutput](x: Self) {
     
-    @scala.inline
-    def setCurrentShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "CurrentShardCount", value.asInstanceOf[js.Any])
+    inline def setCurrentShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "CurrentShardCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentShardCountUndefined: Self = StObject.set(x, "CurrentShardCount", js.undefined)
+    inline def setCurrentShardCountUndefined: Self = StObject.set(x, "CurrentShardCount", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     
-    @scala.inline
-    def setTargetShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "TargetShardCount", value.asInstanceOf[js.Any])
+    inline def setTargetShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "TargetShardCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetShardCountUndefined: Self = StObject.set(x, "TargetShardCount", js.undefined)
+    inline def setTargetShardCountUndefined: Self = StObject.set(x, "TargetShardCount", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object systraceProfileMiddlewareMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(req: IncomingMessagerawBodystr, res: ServerResponse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(req: IncomingMessagerawBodystr, res: ServerResponse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

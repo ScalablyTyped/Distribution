@@ -9,7 +9,7 @@ trait SyntaxTreeToAstVisitor
   extends StObject
      with ISyntaxVisitor {
   
-  var compilationSettings: js.Any = js.native
+  /* private */ var compilationSettings: js.Any = js.native
   
   /* private */ def convertComment(trivia: js.Any, commentStartPosition: js.Any, hasTrailingNewLine: js.Any): js.Any = js.native
   
@@ -23,7 +23,7 @@ trait SyntaxTreeToAstVisitor
   
   def createTokenSpan(fullStart: Double, element: ISyntaxToken): ASTSpan = js.native
   
-  var fileName: js.Any = js.native
+  /* private */ var fileName: js.Any = js.native
   
   var lineMap: LineMap = js.native
   

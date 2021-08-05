@@ -13,16 +13,13 @@ trait StopStreamProcessorRequest extends StObject {
 }
 object StopStreamProcessorRequest {
   
-  @scala.inline
-  def apply(Name: StreamProcessorName): StopStreamProcessorRequest = {
+  inline def apply(Name: StreamProcessorName): StopStreamProcessorRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopStreamProcessorRequest]
   }
   
-  @scala.inline
-  implicit class StopStreamProcessorRequestMutableBuilder[Self <: StopStreamProcessorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopStreamProcessorRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: StreamProcessorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: StreamProcessorName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

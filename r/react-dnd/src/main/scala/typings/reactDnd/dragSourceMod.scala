@@ -15,27 +15,23 @@ object dragSourceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def DragSource[RequiredProps, CollectedProps, DragObject](
+  inline def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: js.Function1[/* props */ RequiredProps, SourceType],
     spec: DragSourceSpec[RequiredProps, DragObject],
     collect: DragSourceCollector[CollectedProps, RequiredProps]
   ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragSource")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
-  @scala.inline
-  def DragSource[RequiredProps, CollectedProps, DragObject](
+  inline def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: js.Function1[/* props */ RequiredProps, SourceType],
     spec: DragSourceSpec[RequiredProps, DragObject],
     collect: DragSourceCollector[CollectedProps, RequiredProps],
     options: DndOptions[RequiredProps]
   ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragSource")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
-  @scala.inline
-  def DragSource[RequiredProps, CollectedProps, DragObject](
+  inline def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: SourceType,
     spec: DragSourceSpec[RequiredProps, DragObject],
     collect: DragSourceCollector[CollectedProps, RequiredProps]
   ): DndComponentEnhancer[CollectedProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("DragSource")(`type`.asInstanceOf[js.Any], spec.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[DndComponentEnhancer[CollectedProps]]
-  @scala.inline
-  def DragSource[RequiredProps, CollectedProps, DragObject](
+  inline def DragSource[RequiredProps, CollectedProps, DragObject](
     `type`: SourceType,
     spec: DragSourceSpec[RequiredProps, DragObject],
     collect: DragSourceCollector[CollectedProps, RequiredProps],

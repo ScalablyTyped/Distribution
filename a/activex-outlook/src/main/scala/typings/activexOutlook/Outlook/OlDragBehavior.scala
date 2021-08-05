@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlDragBehavior extends StObject
 object OlDragBehavior {
   
-  @scala.inline
-  def olDragBehaviorDisabled: `0` = 0.asInstanceOf[`0`]
+  inline def olDragBehaviorDisabled: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olDragBehaviorEnabled: `1` = 1.asInstanceOf[`1`]
+  inline def olDragBehaviorEnabled: `1` = 1.asInstanceOf[`1`]
 }

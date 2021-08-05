@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberUnitLength extends StObject
 object NumberUnitLength {
   
-  @scala.inline
-  def `2-digit`: typings.luxon.luxonStrings.`2-digit` = "2-digit".asInstanceOf[typings.luxon.luxonStrings.`2-digit`]
+  inline def `2-digit`: typings.luxon.luxonStrings.`2-digit` = "2-digit".asInstanceOf[typings.luxon.luxonStrings.`2-digit`]
   
-  @scala.inline
-  def numeric: typings.luxon.luxonStrings.numeric = "numeric".asInstanceOf[typings.luxon.luxonStrings.numeric]
+  inline def numeric: typings.luxon.luxonStrings.numeric = "numeric".asInstanceOf[typings.luxon.luxonStrings.numeric]
 }

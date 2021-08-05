@@ -21,7 +21,7 @@ class IonTabButton protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * The selected tab component
@@ -29,5 +29,5 @@ class IonTabButton protected ()
   /* CompleteClass */
   var selected: Boolean = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

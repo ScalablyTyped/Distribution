@@ -153,8 +153,7 @@ trait ILabel extends StObject {
 }
 object ILabel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAddressBarcodePosition: Double => AddressBarcodePosition,
     getAddressObjectCount: () => Double,
     getAddressText: Double => String,
@@ -172,45 +171,32 @@ object ILabel {
     __obj.asInstanceOf[ILabel]
   }
   
-  @scala.inline
-  implicit class ILabelMutableBuilder[Self <: ILabel] (val x: Self) extends AnyVal {
+  extension [Self <: ILabel](x: Self) {
     
-    @scala.inline
-    def setGetAddressBarcodePosition(value: Double => AddressBarcodePosition): Self = StObject.set(x, "getAddressBarcodePosition", js.Any.fromFunction1(value))
+    inline def setGetAddressBarcodePosition(value: Double => AddressBarcodePosition): Self = StObject.set(x, "getAddressBarcodePosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAddressObjectCount(value: () => Double): Self = StObject.set(x, "getAddressObjectCount", js.Any.fromFunction0(value))
+    inline def setGetAddressObjectCount(value: () => Double): Self = StObject.set(x, "getAddressObjectCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAddressText(value: Double => String): Self = StObject.set(x, "getAddressText", js.Any.fromFunction1(value))
+    inline def setGetAddressText(value: Double => String): Self = StObject.set(x, "getAddressText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLabelXml(value: () => String): Self = StObject.set(x, "getLabelXml", js.Any.fromFunction0(value))
+    inline def setGetLabelXml(value: () => String): Self = StObject.set(x, "getLabelXml", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetObjectNames(value: () => js.Array[String]): Self = StObject.set(x, "getObjectNames", js.Any.fromFunction0(value))
+    inline def setGetObjectNames(value: () => js.Array[String]): Self = StObject.set(x, "getObjectNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetObjectText(value: String => String): Self = StObject.set(x, "getObjectText", js.Any.fromFunction1(value))
+    inline def setGetObjectText(value: String => String): Self = StObject.set(x, "getObjectText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrint(value: (String, String, String) => Unit): Self = StObject.set(x, "print", js.Any.fromFunction3(value))
+    inline def setPrint(value: (String, String, String) => Unit): Self = StObject.set(x, "print", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPrintAndPollStatus(
+    inline def setPrintAndPollStatus(
       value: (String, String, String, js.Function2[/* printJob */ PrintJob, /* printJobStatusInfo */ PrintJobStatusInfo, Boolean], Double) => PrintJob
     ): Self = StObject.set(x, "printAndPollStatus", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setRender(value: (String, String) => String): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    inline def setRender(value: (String, String) => String): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetAddressBarcodePosition(value: (Double, AddressBarcodePosition) => ILabel): Self = StObject.set(x, "setAddressBarcodePosition", js.Any.fromFunction2(value))
+    inline def setSetAddressBarcodePosition(value: (Double, AddressBarcodePosition) => ILabel): Self = StObject.set(x, "setAddressBarcodePosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetAddressText(value: (Double, String) => ILabel): Self = StObject.set(x, "setAddressText", js.Any.fromFunction2(value))
+    inline def setSetAddressText(value: (Double, String) => ILabel): Self = StObject.set(x, "setAddressText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetObjectText(value: (String, String) => ILabel): Self = StObject.set(x, "setObjectText", js.Any.fromFunction2(value))
+    inline def setSetObjectText(value: (String, String) => ILabel): Self = StObject.set(x, "setObjectText", js.Any.fromFunction2(value))
   }
 }

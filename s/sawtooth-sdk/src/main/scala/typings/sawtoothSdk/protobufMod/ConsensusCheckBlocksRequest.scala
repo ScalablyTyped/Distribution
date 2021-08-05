@@ -42,10 +42,8 @@ object ConsensusCheckBlocksRequest {
     * @param [properties] Properties to set
     * @returns ConsensusCheckBlocksRequest instance
     */
-  @scala.inline
-  def create(): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusCheckBlocksRequest]
-  @scala.inline
-  def create(properties: IConsensusCheckBlocksRequest): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
+  inline def create(): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ConsensusCheckBlocksRequest]
+  inline def create(properties: IConsensusCheckBlocksRequest): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
   
   /**
     * Decodes a ConsensusCheckBlocksRequest message from the specified reader or buffer.
@@ -55,14 +53,10 @@ object ConsensusCheckBlocksRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decode(reader: Reader): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ConsensusCheckBlocksRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusCheckBlocksRequest]
-  @scala.inline
-  def decode(reader: Uint8Array): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ConsensusCheckBlocksRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusCheckBlocksRequest]
+  inline def decode(reader: Reader): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
+  inline def decode(reader: Reader, length: Double): ConsensusCheckBlocksRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusCheckBlocksRequest]
+  inline def decode(reader: Uint8Array): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
+  inline def decode(reader: Uint8Array, length: Double): ConsensusCheckBlocksRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ConsensusCheckBlocksRequest]
   
   /**
     * Decodes a ConsensusCheckBlocksRequest message from the specified reader or buffer, length delimited.
@@ -71,10 +65,8 @@ object ConsensusCheckBlocksRequest {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
+  inline def decodeDelimited(reader: Reader): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
+  inline def decodeDelimited(reader: Uint8Array): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
   
   /**
     * Encodes the specified ConsensusCheckBlocksRequest message. Does not implicitly {@link ConsensusCheckBlocksRequest.verify|verify} messages.
@@ -82,10 +74,8 @@ object ConsensusCheckBlocksRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encode(message: IConsensusCheckBlocksRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IConsensusCheckBlocksRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IConsensusCheckBlocksRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IConsensusCheckBlocksRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ConsensusCheckBlocksRequest message, length delimited. Does not implicitly {@link ConsensusCheckBlocksRequest.verify|verify} messages.
@@ -93,18 +83,15 @@ object ConsensusCheckBlocksRequest {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encodeDelimited(message: IConsensusCheckBlocksRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IConsensusCheckBlocksRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IConsensusCheckBlocksRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IConsensusCheckBlocksRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ConsensusCheckBlocksRequest message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusCheckBlocksRequest
     */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ConsensusCheckBlocksRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ConsensusCheckBlocksRequest]
   
   /**
     * Creates a plain object from a ConsensusCheckBlocksRequest message. Also converts values to other types if specified.
@@ -112,16 +99,13 @@ object ConsensusCheckBlocksRequest {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @scala.inline
-  def toObject(message: ConsensusCheckBlocksRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ConsensusCheckBlocksRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusCheckBlocksRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ConsensusCheckBlocksRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ConsensusCheckBlocksRequest message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

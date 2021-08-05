@@ -26,49 +26,35 @@ trait DV3Ids extends StObject {
 }
 object DV3Ids {
   
-  @scala.inline
-  def apply(): DV3Ids = {
+  inline def apply(): DV3Ids = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DV3Ids]
   }
   
-  @scala.inline
-  implicit class DV3IdsMutableBuilder[Self <: DV3Ids] (val x: Self) extends AnyVal {
+  extension [Self <: DV3Ids](x: Self) {
     
-    @scala.inline
-    def setDvCampaignId(value: String): Self = StObject.set(x, "dvCampaignId", value.asInstanceOf[js.Any])
+    inline def setDvCampaignId(value: String): Self = StObject.set(x, "dvCampaignId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDvCampaignIdUndefined: Self = StObject.set(x, "dvCampaignId", js.undefined)
+    inline def setDvCampaignIdUndefined: Self = StObject.set(x, "dvCampaignId", js.undefined)
     
-    @scala.inline
-    def setDvCreativeId(value: String): Self = StObject.set(x, "dvCreativeId", value.asInstanceOf[js.Any])
+    inline def setDvCreativeId(value: String): Self = StObject.set(x, "dvCreativeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDvCreativeIdUndefined: Self = StObject.set(x, "dvCreativeId", js.undefined)
+    inline def setDvCreativeIdUndefined: Self = StObject.set(x, "dvCreativeId", js.undefined)
     
-    @scala.inline
-    def setDvInsertionOrderId(value: String): Self = StObject.set(x, "dvInsertionOrderId", value.asInstanceOf[js.Any])
+    inline def setDvInsertionOrderId(value: String): Self = StObject.set(x, "dvInsertionOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDvInsertionOrderIdUndefined: Self = StObject.set(x, "dvInsertionOrderId", js.undefined)
+    inline def setDvInsertionOrderIdUndefined: Self = StObject.set(x, "dvInsertionOrderId", js.undefined)
     
-    @scala.inline
-    def setDvLineItemId(value: String): Self = StObject.set(x, "dvLineItemId", value.asInstanceOf[js.Any])
+    inline def setDvLineItemId(value: String): Self = StObject.set(x, "dvLineItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDvLineItemIdUndefined: Self = StObject.set(x, "dvLineItemId", js.undefined)
+    inline def setDvLineItemIdUndefined: Self = StObject.set(x, "dvLineItemId", js.undefined)
     
-    @scala.inline
-    def setDvSiteId(value: String): Self = StObject.set(x, "dvSiteId", value.asInstanceOf[js.Any])
+    inline def setDvSiteId(value: String): Self = StObject.set(x, "dvSiteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDvSiteIdUndefined: Self = StObject.set(x, "dvSiteId", js.undefined)
+    inline def setDvSiteIdUndefined: Self = StObject.set(x, "dvSiteId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

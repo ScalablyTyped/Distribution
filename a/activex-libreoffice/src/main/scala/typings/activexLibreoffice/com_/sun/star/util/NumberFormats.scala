@@ -15,8 +15,7 @@ trait NumberFormats
      with XNumberFormatTypes
 object NumberFormats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addNew: (String, Locale) => Double,
     addNewConverted: (String, Locale, Locale) => Double,

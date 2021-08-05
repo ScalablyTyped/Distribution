@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlProtectedViewCloseReason extends StObject
 object XlProtectedViewCloseReason {
   
-  @scala.inline
-  def xlProtectedViewCloseEdit: `1` = 1.asInstanceOf[`1`]
+  inline def xlProtectedViewCloseEdit: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlProtectedViewCloseForced: `2` = 2.asInstanceOf[`2`]
+  inline def xlProtectedViewCloseForced: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlProtectedViewCloseNormal: `0` = 0.asInstanceOf[`0`]
+  inline def xlProtectedViewCloseNormal: `0` = 0.asInstanceOf[`0`]
 }

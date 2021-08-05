@@ -14,14 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReaderSelector extends StObject
 object ReaderSelector {
   
-  @scala.inline
-  def PluralReaderSelector(kind: String, selectors: js.Array[SingularReaderSelector]): typings.relayRuntime.relayStoreTypesMod.PluralReaderSelector = {
+  inline def PluralReaderSelector(kind: String, selectors: js.Array[SingularReaderSelector]): typings.relayRuntime.relayStoreTypesMod.PluralReaderSelector = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.relayStoreTypesMod.PluralReaderSelector]
   }
   
-  @scala.inline
-  def SingularReaderSelector(
+  inline def SingularReaderSelector(
     dataID: DataID,
     isWithinUnmatchedTypeRefinement: Boolean,
     kind: String,

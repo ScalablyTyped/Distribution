@@ -11,25 +11,19 @@ trait IOpList extends StObject {
 }
 object IOpList {
   
-  @scala.inline
-  def apply(): IOpList = {
+  inline def apply(): IOpList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IOpList]
   }
   
-  @scala.inline
-  implicit class IOpListMutableBuilder[Self <: IOpList] (val x: Self) extends AnyVal {
+  extension [Self <: IOpList](x: Self) {
     
-    @scala.inline
-    def setOp(value: js.Array[IOpDef]): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: js.Array[IOpDef]): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpNull: Self = StObject.set(x, "op", null)
+    inline def setOpNull: Self = StObject.set(x, "op", null)
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     
-    @scala.inline
-    def setOpVarargs(value: IOpDef*): Self = StObject.set(x, "op", js.Array(value :_*))
+    inline def setOpVarargs(value: IOpDef*): Self = StObject.set(x, "op", js.Array(value :_*))
   }
 }

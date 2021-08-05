@@ -34,8 +34,7 @@ trait AutoHeight extends StObject {
 }
 object AutoHeight {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     noRowsRenderer: () => Null,
     onRowsRendered: () => Unit,
     onScroll: () => Unit,
@@ -45,34 +44,24 @@ object AutoHeight {
     __obj.asInstanceOf[AutoHeight]
   }
   
-  @scala.inline
-  implicit class AutoHeightMutableBuilder[Self <: AutoHeight] (val x: Self) extends AnyVal {
+  extension [Self <: AutoHeight](x: Self) {
     
-    @scala.inline
-    def setAutoHeight(value: `false`): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+    inline def setAutoHeight(value: `false`): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedRowSize(value: `30`): Self = StObject.set(x, "estimatedRowSize", value.asInstanceOf[js.Any])
+    inline def setEstimatedRowSize(value: `30`): Self = StObject.set(x, "estimatedRowSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoRowsRenderer(value: () => Null): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
+    inline def setNoRowsRenderer(value: () => Null): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnRowsRendered(value: () => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction0(value))
+    inline def setOnRowsRendered(value: () => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnScroll(value: () => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
+    inline def setOnScroll(value: () => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOverscanIndicesGetter(value: /* params */ OverscanIndicesGetterParams => OverscanIndices): Self = StObject.set(x, "overscanIndicesGetter", js.Any.fromFunction1(value))
+    inline def setOverscanIndicesGetter(value: /* params */ OverscanIndicesGetterParams => OverscanIndices): Self = StObject.set(x, "overscanIndicesGetter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOverscanRowCount(value: `10`): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
+    inline def setOverscanRowCount(value: `10`): Self = StObject.set(x, "overscanRowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToAlignment(value: auto): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
+    inline def setScrollToAlignment(value: auto): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToIndex(value: `-1`): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
+    inline def setScrollToIndex(value: `-1`): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
   }
 }

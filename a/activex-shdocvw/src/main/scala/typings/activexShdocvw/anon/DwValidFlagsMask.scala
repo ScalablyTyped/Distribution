@@ -12,19 +12,15 @@ trait DwValidFlagsMask extends StObject {
 }
 object DwValidFlagsMask {
   
-  @scala.inline
-  def apply(dwValidFlagsMask: Double, dwWindowStateFlags: Double): DwValidFlagsMask = {
+  inline def apply(dwValidFlagsMask: Double, dwWindowStateFlags: Double): DwValidFlagsMask = {
     val __obj = js.Dynamic.literal(dwValidFlagsMask = dwValidFlagsMask.asInstanceOf[js.Any], dwWindowStateFlags = dwWindowStateFlags.asInstanceOf[js.Any])
     __obj.asInstanceOf[DwValidFlagsMask]
   }
   
-  @scala.inline
-  implicit class DwValidFlagsMaskMutableBuilder[Self <: DwValidFlagsMask] (val x: Self) extends AnyVal {
+  extension [Self <: DwValidFlagsMask](x: Self) {
     
-    @scala.inline
-    def setDwValidFlagsMask(value: Double): Self = StObject.set(x, "dwValidFlagsMask", value.asInstanceOf[js.Any])
+    inline def setDwValidFlagsMask(value: Double): Self = StObject.set(x, "dwValidFlagsMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDwWindowStateFlags(value: Double): Self = StObject.set(x, "dwWindowStateFlags", value.asInstanceOf[js.Any])
+    inline def setDwWindowStateFlags(value: Double): Self = StObject.set(x, "dwWindowStateFlags", value.asInstanceOf[js.Any])
   }
 }

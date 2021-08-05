@@ -23,28 +23,21 @@ trait GetSegmentDetectionRequest extends StObject {
 }
 object GetSegmentDetectionRequest {
   
-  @scala.inline
-  def apply(JobId: JobId): GetSegmentDetectionRequest = {
+  inline def apply(JobId: JobId): GetSegmentDetectionRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSegmentDetectionRequest]
   }
   
-  @scala.inline
-  implicit class GetSegmentDetectionRequestMutableBuilder[Self <: GetSegmentDetectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSegmentDetectionRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

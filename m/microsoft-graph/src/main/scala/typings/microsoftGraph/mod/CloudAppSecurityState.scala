@@ -20,40 +20,29 @@ trait CloudAppSecurityState extends StObject {
 }
 object CloudAppSecurityState {
   
-  @scala.inline
-  def apply(): CloudAppSecurityState = {
+  inline def apply(): CloudAppSecurityState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudAppSecurityState]
   }
   
-  @scala.inline
-  implicit class CloudAppSecurityStateMutableBuilder[Self <: CloudAppSecurityState] (val x: Self) extends AnyVal {
+  extension [Self <: CloudAppSecurityState](x: Self) {
     
-    @scala.inline
-    def setDestinationServiceIp(value: NullableOption[String]): Self = StObject.set(x, "destinationServiceIp", value.asInstanceOf[js.Any])
+    inline def setDestinationServiceIp(value: NullableOption[String]): Self = StObject.set(x, "destinationServiceIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationServiceIpNull: Self = StObject.set(x, "destinationServiceIp", null)
+    inline def setDestinationServiceIpNull: Self = StObject.set(x, "destinationServiceIp", null)
     
-    @scala.inline
-    def setDestinationServiceIpUndefined: Self = StObject.set(x, "destinationServiceIp", js.undefined)
+    inline def setDestinationServiceIpUndefined: Self = StObject.set(x, "destinationServiceIp", js.undefined)
     
-    @scala.inline
-    def setDestinationServiceName(value: NullableOption[String]): Self = StObject.set(x, "destinationServiceName", value.asInstanceOf[js.Any])
+    inline def setDestinationServiceName(value: NullableOption[String]): Self = StObject.set(x, "destinationServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationServiceNameNull: Self = StObject.set(x, "destinationServiceName", null)
+    inline def setDestinationServiceNameNull: Self = StObject.set(x, "destinationServiceName", null)
     
-    @scala.inline
-    def setDestinationServiceNameUndefined: Self = StObject.set(x, "destinationServiceName", js.undefined)
+    inline def setDestinationServiceNameUndefined: Self = StObject.set(x, "destinationServiceName", js.undefined)
     
-    @scala.inline
-    def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
+    inline def setRiskScore(value: NullableOption[String]): Self = StObject.set(x, "riskScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
+    inline def setRiskScoreNull: Self = StObject.set(x, "riskScore", null)
     
-    @scala.inline
-    def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
+    inline def setRiskScoreUndefined: Self = StObject.set(x, "riskScore", js.undefined)
   }
 }

@@ -32,61 +32,43 @@ trait PatchConfig extends StObject {
 }
 object PatchConfig {
   
-  @scala.inline
-  def apply(): PatchConfig = {
+  inline def apply(): PatchConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchConfig]
   }
   
-  @scala.inline
-  implicit class PatchConfigMutableBuilder[Self <: PatchConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PatchConfig](x: Self) {
     
-    @scala.inline
-    def setApt(value: AptSettings): Self = StObject.set(x, "apt", value.asInstanceOf[js.Any])
+    inline def setApt(value: AptSettings): Self = StObject.set(x, "apt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAptUndefined: Self = StObject.set(x, "apt", js.undefined)
+    inline def setAptUndefined: Self = StObject.set(x, "apt", js.undefined)
     
-    @scala.inline
-    def setGoo(value: js.Any): Self = StObject.set(x, "goo", value.asInstanceOf[js.Any])
+    inline def setGoo(value: js.Any): Self = StObject.set(x, "goo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGooUndefined: Self = StObject.set(x, "goo", js.undefined)
+    inline def setGooUndefined: Self = StObject.set(x, "goo", js.undefined)
     
-    @scala.inline
-    def setPostStep(value: ExecStep): Self = StObject.set(x, "postStep", value.asInstanceOf[js.Any])
+    inline def setPostStep(value: ExecStep): Self = StObject.set(x, "postStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostStepUndefined: Self = StObject.set(x, "postStep", js.undefined)
+    inline def setPostStepUndefined: Self = StObject.set(x, "postStep", js.undefined)
     
-    @scala.inline
-    def setPreStep(value: ExecStep): Self = StObject.set(x, "preStep", value.asInstanceOf[js.Any])
+    inline def setPreStep(value: ExecStep): Self = StObject.set(x, "preStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreStepUndefined: Self = StObject.set(x, "preStep", js.undefined)
+    inline def setPreStepUndefined: Self = StObject.set(x, "preStep", js.undefined)
     
-    @scala.inline
-    def setRebootConfig(value: String): Self = StObject.set(x, "rebootConfig", value.asInstanceOf[js.Any])
+    inline def setRebootConfig(value: String): Self = StObject.set(x, "rebootConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRebootConfigUndefined: Self = StObject.set(x, "rebootConfig", js.undefined)
+    inline def setRebootConfigUndefined: Self = StObject.set(x, "rebootConfig", js.undefined)
     
-    @scala.inline
-    def setWindowsUpdate(value: WindowsUpdateSettings): Self = StObject.set(x, "windowsUpdate", value.asInstanceOf[js.Any])
+    inline def setWindowsUpdate(value: WindowsUpdateSettings): Self = StObject.set(x, "windowsUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsUpdateUndefined: Self = StObject.set(x, "windowsUpdate", js.undefined)
+    inline def setWindowsUpdateUndefined: Self = StObject.set(x, "windowsUpdate", js.undefined)
     
-    @scala.inline
-    def setYum(value: YumSettings): Self = StObject.set(x, "yum", value.asInstanceOf[js.Any])
+    inline def setYum(value: YumSettings): Self = StObject.set(x, "yum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYumUndefined: Self = StObject.set(x, "yum", js.undefined)
+    inline def setYumUndefined: Self = StObject.set(x, "yum", js.undefined)
     
-    @scala.inline
-    def setZypper(value: ZypperSettings): Self = StObject.set(x, "zypper", value.asInstanceOf[js.Any])
+    inline def setZypper(value: ZypperSettings): Self = StObject.set(x, "zypper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZypperUndefined: Self = StObject.set(x, "zypper", js.undefined)
+    inline def setZypperUndefined: Self = StObject.set(x, "zypper", js.undefined)
   }
 }

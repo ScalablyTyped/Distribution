@@ -18,19 +18,15 @@ trait DeleteConditionalForwarderRequest extends StObject {
 }
 object DeleteConditionalForwarderRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, RemoteDomainName: RemoteDomainName): DeleteConditionalForwarderRequest = {
+  inline def apply(DirectoryId: DirectoryId, RemoteDomainName: RemoteDomainName): DeleteConditionalForwarderRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], RemoteDomainName = RemoteDomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConditionalForwarderRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConditionalForwarderRequestMutableBuilder[Self <: DeleteConditionalForwarderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConditionalForwarderRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteDomainName(value: RemoteDomainName): Self = StObject.set(x, "RemoteDomainName", value.asInstanceOf[js.Any])
+    inline def setRemoteDomainName(value: RemoteDomainName): Self = StObject.set(x, "RemoteDomainName", value.asInstanceOf[js.Any])
   }
 }

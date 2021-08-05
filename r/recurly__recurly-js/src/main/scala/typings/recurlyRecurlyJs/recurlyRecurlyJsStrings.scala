@@ -17,33 +17,28 @@ object recurlyRecurlyJsStrings {
   sealed trait attach
     extends StObject
        with ElementEvent
-  @scala.inline
-  def attach: attach = "attach".asInstanceOf[attach]
+  inline def attach: attach = "attach".asInstanceOf[attach]
   
   @js.native
   sealed trait bacs extends StObject
-  @scala.inline
-  def bacs: bacs = "bacs".asInstanceOf[bacs]
+  inline def bacs: bacs = "bacs".asInstanceOf[bacs]
   
   @js.native
   sealed trait becs extends StObject
-  @scala.inline
-  def becs: becs = "becs".asInstanceOf[becs]
+  inline def becs: becs = "becs".asInstanceOf[becs]
   
   @js.native
   sealed trait blur
     extends StObject
        with ElementEvent
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
   sealed trait cancel
     extends StObject
        with ApplePayEvent
        with PayPalEvent
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
   sealed trait change
@@ -51,8 +46,7 @@ object recurlyRecurlyJsStrings {
        with ElementEvent
        with PricingEvent
        with RecurlyEvent
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
   sealed trait error
@@ -62,135 +56,116 @@ object recurlyRecurlyJsStrings {
        with PayPalEvent
        with RecurlyEvent
        with ThreeDSecureEvent
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait errorDotcoupon
     extends StObject
        with PricingEvent
-  @scala.inline
-  def errorDotcoupon: errorDotcoupon = "error.coupon".asInstanceOf[errorDotcoupon]
+  inline def errorDotcoupon: errorDotcoupon = "error.coupon".asInstanceOf[errorDotcoupon]
   
   @js.native
   sealed trait fieldColonsubmit
     extends StObject
        with RecurlyEvent
-  @scala.inline
-  def fieldColonsubmit: fieldColonsubmit = "field:submit".asInstanceOf[fieldColonsubmit]
+  inline def fieldColonsubmit: fieldColonsubmit = "field:submit".asInstanceOf[fieldColonsubmit]
   
   @js.native
   sealed trait focus
     extends StObject
        with ElementEvent
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
   sealed trait paymentAuthorized
     extends StObject
        with ApplePayEvent
-  @scala.inline
-  def paymentAuthorized: paymentAuthorized = "paymentAuthorized".asInstanceOf[paymentAuthorized]
+  inline def paymentAuthorized: paymentAuthorized = "paymentAuthorized".asInstanceOf[paymentAuthorized]
   
   @js.native
   sealed trait ready
     extends StObject
        with ApplePayEvent
        with PayPalEvent
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
   sealed trait remove
     extends StObject
        with ElementEvent
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait setDotaddon
     extends StObject
        with PricingEvent
-  @scala.inline
-  def setDotaddon: setDotaddon = "set.addon".asInstanceOf[setDotaddon]
+  inline def setDotaddon: setDotaddon = "set.addon".asInstanceOf[setDotaddon]
   
   @js.native
   sealed trait setDotaddress
     extends StObject
        with PricingEvent
-  @scala.inline
-  def setDotaddress: setDotaddress = "set.address".asInstanceOf[setDotaddress]
+  inline def setDotaddress: setDotaddress = "set.address".asInstanceOf[setDotaddress]
   
   @js.native
   sealed trait setDotadjustment
     extends StObject
        with PricingEvent
-  @scala.inline
-  def setDotadjustment: setDotadjustment = "set.adjustment".asInstanceOf[setDotadjustment]
+  inline def setDotadjustment: setDotadjustment = "set.adjustment".asInstanceOf[setDotadjustment]
   
   @js.native
   sealed trait setDotcoupon
     extends StObject
        with PricingEvent
-  @scala.inline
-  def setDotcoupon: setDotcoupon = "set.coupon".asInstanceOf[setDotcoupon]
+  inline def setDotcoupon: setDotcoupon = "set.coupon".asInstanceOf[setDotcoupon]
   
   @js.native
   sealed trait setDotgift_card
     extends StObject
        with PricingEvent
-  @scala.inline
-  def setDotgift_card: setDotgift_card = "set.gift_card".asInstanceOf[setDotgift_card]
+  inline def setDotgift_card: setDotgift_card = "set.gift_card".asInstanceOf[setDotgift_card]
   
   @js.native
   sealed trait setDotplan
     extends StObject
        with PricingEvent
-  @scala.inline
-  def setDotplan: setDotplan = "set.plan".asInstanceOf[setDotplan]
+  inline def setDotplan: setDotplan = "set.plan".asInstanceOf[setDotplan]
   
   @js.native
   sealed trait setDotshippingAddress
     extends StObject
        with PricingEvent
-  @scala.inline
-  def setDotshippingAddress: setDotshippingAddress = "set.shippingAddress".asInstanceOf[setDotshippingAddress]
+  inline def setDotshippingAddress: setDotshippingAddress = "set.shippingAddress".asInstanceOf[setDotshippingAddress]
   
   @js.native
   sealed trait setDotsubscription
     extends StObject
        with PricingEvent
-  @scala.inline
-  def setDotsubscription: setDotsubscription = "set.subscription".asInstanceOf[setDotsubscription]
+  inline def setDotsubscription: setDotsubscription = "set.subscription".asInstanceOf[setDotsubscription]
   
   @js.native
   sealed trait setDottax
     extends StObject
        with PricingEvent
-  @scala.inline
-  def setDottax: setDottax = "set.tax".asInstanceOf[setDottax]
+  inline def setDottax: setDottax = "set.tax".asInstanceOf[setDottax]
   
   @js.native
   sealed trait shippingContactSelected
     extends StObject
        with ApplePayEvent
-  @scala.inline
-  def shippingContactSelected: shippingContactSelected = "shippingContactSelected".asInstanceOf[shippingContactSelected]
+  inline def shippingContactSelected: shippingContactSelected = "shippingContactSelected".asInstanceOf[shippingContactSelected]
   
   @js.native
   sealed trait shippingMethodSelected
     extends StObject
        with ApplePayEvent
-  @scala.inline
-  def shippingMethodSelected: shippingMethodSelected = "shippingMethodSelected".asInstanceOf[shippingMethodSelected]
+  inline def shippingMethodSelected: shippingMethodSelected = "shippingMethodSelected".asInstanceOf[shippingMethodSelected]
   
   @js.native
   sealed trait submit
     extends StObject
        with ElementEvent
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
+  inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
   sealed trait token
@@ -199,20 +174,17 @@ object recurlyRecurlyJsStrings {
        with ApplePayEvent
        with PayPalEvent
        with ThreeDSecureEvent
-  @scala.inline
-  def token: token = "token".asInstanceOf[token]
+  inline def token: token = "token".asInstanceOf[token]
   
   @js.native
   sealed trait unsetDotcoupon
     extends StObject
        with PricingEvent
-  @scala.inline
-  def unsetDotcoupon: unsetDotcoupon = "unset.coupon".asInstanceOf[unsetDotcoupon]
+  inline def unsetDotcoupon: unsetDotcoupon = "unset.coupon".asInstanceOf[unsetDotcoupon]
   
   @js.native
   sealed trait unsetDotgift_card
     extends StObject
        with PricingEvent
-  @scala.inline
-  def unsetDotgift_card: unsetDotgift_card = "unset.gift_card".asInstanceOf[unsetDotgift_card]
+  inline def unsetDotgift_card: unsetDotgift_card = "unset.gift_card".asInstanceOf[unsetDotgift_card]
 }

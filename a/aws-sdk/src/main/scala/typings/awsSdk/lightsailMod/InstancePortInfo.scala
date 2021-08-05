@@ -53,73 +53,51 @@ trait InstancePortInfo extends StObject {
 }
 object InstancePortInfo {
   
-  @scala.inline
-  def apply(): InstancePortInfo = {
+  inline def apply(): InstancePortInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstancePortInfo]
   }
   
-  @scala.inline
-  implicit class InstancePortInfoMutableBuilder[Self <: InstancePortInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InstancePortInfo](x: Self) {
     
-    @scala.inline
-    def setAccessDirection(value: AccessDirection): Self = StObject.set(x, "accessDirection", value.asInstanceOf[js.Any])
+    inline def setAccessDirection(value: AccessDirection): Self = StObject.set(x, "accessDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessDirectionUndefined: Self = StObject.set(x, "accessDirection", js.undefined)
+    inline def setAccessDirectionUndefined: Self = StObject.set(x, "accessDirection", js.undefined)
     
-    @scala.inline
-    def setAccessFrom(value: String): Self = StObject.set(x, "accessFrom", value.asInstanceOf[js.Any])
+    inline def setAccessFrom(value: String): Self = StObject.set(x, "accessFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessFromUndefined: Self = StObject.set(x, "accessFrom", js.undefined)
+    inline def setAccessFromUndefined: Self = StObject.set(x, "accessFrom", js.undefined)
     
-    @scala.inline
-    def setAccessType(value: PortAccessType): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
+    inline def setAccessType(value: PortAccessType): Self = StObject.set(x, "accessType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTypeUndefined: Self = StObject.set(x, "accessType", js.undefined)
+    inline def setAccessTypeUndefined: Self = StObject.set(x, "accessType", js.undefined)
     
-    @scala.inline
-    def setCidrListAliases(value: StringList): Self = StObject.set(x, "cidrListAliases", value.asInstanceOf[js.Any])
+    inline def setCidrListAliases(value: StringList): Self = StObject.set(x, "cidrListAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrListAliasesUndefined: Self = StObject.set(x, "cidrListAliases", js.undefined)
+    inline def setCidrListAliasesUndefined: Self = StObject.set(x, "cidrListAliases", js.undefined)
     
-    @scala.inline
-    def setCidrListAliasesVarargs(value: String*): Self = StObject.set(x, "cidrListAliases", js.Array(value :_*))
+    inline def setCidrListAliasesVarargs(value: String*): Self = StObject.set(x, "cidrListAliases", js.Array(value :_*))
     
-    @scala.inline
-    def setCidrs(value: StringList): Self = StObject.set(x, "cidrs", value.asInstanceOf[js.Any])
+    inline def setCidrs(value: StringList): Self = StObject.set(x, "cidrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrsUndefined: Self = StObject.set(x, "cidrs", js.undefined)
+    inline def setCidrsUndefined: Self = StObject.set(x, "cidrs", js.undefined)
     
-    @scala.inline
-    def setCidrsVarargs(value: String*): Self = StObject.set(x, "cidrs", js.Array(value :_*))
+    inline def setCidrsVarargs(value: String*): Self = StObject.set(x, "cidrs", js.Array(value :_*))
     
-    @scala.inline
-    def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+    inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
+    inline def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
     
-    @scala.inline
-    def setFromPort(value: Port): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
+    inline def setFromPort(value: Port): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPortUndefined: Self = StObject.set(x, "fromPort", js.undefined)
+    inline def setFromPortUndefined: Self = StObject.set(x, "fromPort", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: NetworkProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: NetworkProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setToPort(value: Port): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
+    inline def setToPort(value: Port): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
+    inline def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
   }
 }

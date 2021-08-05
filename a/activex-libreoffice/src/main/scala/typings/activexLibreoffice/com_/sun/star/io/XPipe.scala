@@ -21,8 +21,7 @@ trait XPipe
      with XInputStream
 object XPipe {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     available: () => Double,
     closeInput: () => Unit,

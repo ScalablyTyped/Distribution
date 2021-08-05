@@ -10,16 +10,13 @@ trait SignatureSignature extends StObject {
 }
 object SignatureSignature {
   
-  @scala.inline
-  def apply(signature: typings.openpgp.mod.signature.Signature): SignatureSignature = {
+  inline def apply(signature: typings.openpgp.mod.signature.Signature): SignatureSignature = {
     val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignatureSignature]
   }
   
-  @scala.inline
-  implicit class SignatureSignatureMutableBuilder[Self <: SignatureSignature] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureSignature](x: Self) {
     
-    @scala.inline
-    def setSignature(value: typings.openpgp.mod.signature.Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: typings.openpgp.mod.signature.Signature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

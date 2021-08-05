@@ -13,16 +13,13 @@ trait DescribeAccountSettingsRequest extends StObject {
 }
 object DescribeAccountSettingsRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId): DescribeAccountSettingsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId): DescribeAccountSettingsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAccountSettingsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAccountSettingsRequestMutableBuilder[Self <: DescribeAccountSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
   }
 }

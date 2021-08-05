@@ -28,23 +28,18 @@ object mod extends Shortcut {
   }
   object DevTools {
     
-    @scala.inline
-    def apply(isOpen: Boolean): DevTools = {
+    inline def apply(isOpen: Boolean): DevTools = {
       val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
       __obj.asInstanceOf[DevTools]
     }
     
-    @scala.inline
-    implicit class DevToolsMutableBuilder[Self <: DevTools] (val x: Self) extends AnyVal {
+    extension [Self <: DevTools](x: Self) {
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+      inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     }
   }
   
@@ -63,11 +58,9 @@ object mod extends Shortcut {
   trait Orientation extends StObject
   object Orientation {
     
-    @scala.inline
-    def horizontal: typings.devtoolsDetect.devtoolsDetectStrings.horizontal = "horizontal".asInstanceOf[typings.devtoolsDetect.devtoolsDetectStrings.horizontal]
+    inline def horizontal: typings.devtoolsDetect.devtoolsDetectStrings.horizontal = "horizontal".asInstanceOf[typings.devtoolsDetect.devtoolsDetectStrings.horizontal]
     
-    @scala.inline
-    def vertical: typings.devtoolsDetect.devtoolsDetectStrings.vertical = "vertical".asInstanceOf[typings.devtoolsDetect.devtoolsDetectStrings.vertical]
+    inline def vertical: typings.devtoolsDetect.devtoolsDetectStrings.vertical = "vertical".asInstanceOf[typings.devtoolsDetect.devtoolsDetectStrings.vertical]
   }
   
   type _To = DevTools

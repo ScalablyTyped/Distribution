@@ -12,19 +12,15 @@ trait Typeofcat extends StObject {
 }
 object Typeofcat {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: Typeofoptions): Typeofcat = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options: Typeofoptions): Typeofcat = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofcat]
   }
   
-  @scala.inline
-  implicit class TypeofcatMutableBuilder[Self <: Typeofcat] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofcat](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: Typeofoptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Typeofoptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

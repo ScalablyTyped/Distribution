@@ -23,31 +23,23 @@ trait VirtualGatewayConnectionPool extends StObject {
 }
 object VirtualGatewayConnectionPool {
   
-  @scala.inline
-  def apply(): VirtualGatewayConnectionPool = {
+  inline def apply(): VirtualGatewayConnectionPool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualGatewayConnectionPool]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayConnectionPoolMutableBuilder[Self <: VirtualGatewayConnectionPool] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayConnectionPool](x: Self) {
     
-    @scala.inline
-    def setGrpc(value: VirtualGatewayGrpcConnectionPool): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
+    inline def setGrpc(value: VirtualGatewayGrpcConnectionPool): Self = StObject.set(x, "grpc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrpcUndefined: Self = StObject.set(x, "grpc", js.undefined)
+    inline def setGrpcUndefined: Self = StObject.set(x, "grpc", js.undefined)
     
-    @scala.inline
-    def setHttp(value: VirtualGatewayHttpConnectionPool): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: VirtualGatewayHttpConnectionPool): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp2(value: VirtualGatewayHttp2ConnectionPool): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
+    inline def setHttp2(value: VirtualGatewayHttp2ConnectionPool): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
+    inline def setHttp2Undefined: Self = StObject.set(x, "http2", js.undefined)
     
-    @scala.inline
-    def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+    inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
   }
 }

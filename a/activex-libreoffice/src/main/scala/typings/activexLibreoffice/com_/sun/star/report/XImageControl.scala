@@ -48,8 +48,7 @@ trait XImageControl
 }
 object XImageControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharAutoKerning: Boolean,
     CharCaseMap: Double,
     CharColor: Color,
@@ -173,16 +172,12 @@ object XImageControl {
     __obj.asInstanceOf[XImageControl]
   }
   
-  @scala.inline
-  implicit class XImageControlMutableBuilder[Self <: XImageControl] (val x: Self) extends AnyVal {
+  extension [Self <: XImageControl](x: Self) {
     
-    @scala.inline
-    def setImageURL(value: String): Self = StObject.set(x, "ImageURL", value.asInstanceOf[js.Any])
+    inline def setImageURL(value: String): Self = StObject.set(x, "ImageURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveIRI(value: Boolean): Self = StObject.set(x, "PreserveIRI", value.asInstanceOf[js.Any])
+    inline def setPreserveIRI(value: Boolean): Self = StObject.set(x, "PreserveIRI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleMode(value: Double): Self = StObject.set(x, "ScaleMode", value.asInstanceOf[js.Any])
+    inline def setScaleMode(value: Double): Self = StObject.set(x, "ScaleMode", value.asInstanceOf[js.Any])
   }
 }

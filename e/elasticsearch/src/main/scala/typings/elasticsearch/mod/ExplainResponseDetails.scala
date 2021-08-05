@@ -14,25 +14,19 @@ trait ExplainResponseDetails extends StObject {
 }
 object ExplainResponseDetails {
   
-  @scala.inline
-  def apply(description: String, details: js.Array[ExplainResponseDetails], value: Double): ExplainResponseDetails = {
+  inline def apply(description: String, details: js.Array[ExplainResponseDetails], value: Double): ExplainResponseDetails = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplainResponseDetails]
   }
   
-  @scala.inline
-  implicit class ExplainResponseDetailsMutableBuilder[Self <: ExplainResponseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ExplainResponseDetails](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: js.Array[ExplainResponseDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: js.Array[ExplainResponseDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsVarargs(value: ExplainResponseDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: ExplainResponseDetails*): Self = StObject.set(x, "details", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

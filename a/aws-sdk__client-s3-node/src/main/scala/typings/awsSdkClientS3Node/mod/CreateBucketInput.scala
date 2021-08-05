@@ -9,8 +9,7 @@ trait CreateBucketInput
      with typings.awsSdkClientS3Node.typesCreateBucketInputMod.CreateBucketInput
 object CreateBucketInput {
   
-  @scala.inline
-  def apply(Bucket: String): CreateBucketInput = {
+  inline def apply(Bucket: String): CreateBucketInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketInput]
   }

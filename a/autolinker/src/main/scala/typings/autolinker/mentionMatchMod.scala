@@ -40,7 +40,7 @@ object mentionMatchMod {
       *
       * The Mention that was matched, without the '@' character.
       */
-    val mention: js.Any = js.native
+    /* private */ val mention: js.Any = js.native
     
     /**
       * @cfg {String} serviceName
@@ -48,7 +48,7 @@ object mentionMatchMod {
       * The service to point mention matches to. See {@link Autolinker#mention}
       * for available values.
       */
-    val serviceName: js.Any = js.native
+    /* private */ val serviceName: js.Any = js.native
   }
   
   trait MentionMatchConfig
@@ -61,8 +61,7 @@ object mentionMatchMod {
   }
   object MentionMatchConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       matchedText: String,
       mention: String,
       offset: Double,
@@ -73,14 +72,11 @@ object mentionMatchMod {
       __obj.asInstanceOf[MentionMatchConfig]
     }
     
-    @scala.inline
-    implicit class MentionMatchConfigMutableBuilder[Self <: MentionMatchConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MentionMatchConfig](x: Self) {
       
-      @scala.inline
-      def setMention(value: String): Self = StObject.set(x, "mention", value.asInstanceOf[js.Any])
+      inline def setMention(value: String): Self = StObject.set(x, "mention", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: MentionServices): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: MentionServices): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
 }

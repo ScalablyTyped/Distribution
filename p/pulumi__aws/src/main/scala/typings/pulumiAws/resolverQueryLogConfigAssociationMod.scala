@@ -50,14 +50,10 @@ object resolverQueryLogConfigAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigAssociationState): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
+    inline def get(name: String, id: Input[ID], state: ResolverQueryLogConfigAssociationState): ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResolverQueryLogConfigAssociation]
+    inline def get(
       name: String,
       id: Input[ID],
       state: ResolverQueryLogConfigAssociationState,
@@ -68,8 +64,7 @@ object resolverQueryLogConfigAssociationMod {
       * Returns true if the given object is an instance of ResolverQueryLogConfigAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean]
   }
   
   trait ResolverQueryLogConfigAssociationArgs extends StObject {
@@ -86,20 +81,16 @@ object resolverQueryLogConfigAssociationMod {
   }
   object ResolverQueryLogConfigAssociationArgs {
     
-    @scala.inline
-    def apply(resolverQueryLogConfigId: Input[String], resourceId: Input[String]): ResolverQueryLogConfigAssociationArgs = {
+    inline def apply(resolverQueryLogConfigId: Input[String], resourceId: Input[String]): ResolverQueryLogConfigAssociationArgs = {
       val __obj = js.Dynamic.literal(resolverQueryLogConfigId = resolverQueryLogConfigId.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolverQueryLogConfigAssociationArgs]
     }
     
-    @scala.inline
-    implicit class ResolverQueryLogConfigAssociationArgsMutableBuilder[Self <: ResolverQueryLogConfigAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResolverQueryLogConfigAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setResolverQueryLogConfigId(value: Input[String]): Self = StObject.set(x, "resolverQueryLogConfigId", value.asInstanceOf[js.Any])
+      inline def setResolverQueryLogConfigId(value: Input[String]): Self = StObject.set(x, "resolverQueryLogConfigId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,26 +108,20 @@ object resolverQueryLogConfigAssociationMod {
   }
   object ResolverQueryLogConfigAssociationState {
     
-    @scala.inline
-    def apply(): ResolverQueryLogConfigAssociationState = {
+    inline def apply(): ResolverQueryLogConfigAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResolverQueryLogConfigAssociationState]
     }
     
-    @scala.inline
-    implicit class ResolverQueryLogConfigAssociationStateMutableBuilder[Self <: ResolverQueryLogConfigAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: ResolverQueryLogConfigAssociationState](x: Self) {
       
-      @scala.inline
-      def setResolverQueryLogConfigId(value: Input[String]): Self = StObject.set(x, "resolverQueryLogConfigId", value.asInstanceOf[js.Any])
+      inline def setResolverQueryLogConfigId(value: Input[String]): Self = StObject.set(x, "resolverQueryLogConfigId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolverQueryLogConfigIdUndefined: Self = StObject.set(x, "resolverQueryLogConfigId", js.undefined)
+      inline def setResolverQueryLogConfigIdUndefined: Self = StObject.set(x, "resolverQueryLogConfigId", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: Input[String]): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+      inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
     }
   }
 }

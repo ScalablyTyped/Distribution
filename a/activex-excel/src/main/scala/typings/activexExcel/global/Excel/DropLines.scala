@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.DropLines")
 @js.native
-class DropLines protected ()
+/* private */ class DropLines ()
   extends StObject
      with typings.activexExcel.Excel.DropLines {
   
@@ -23,7 +23,7 @@ class DropLines protected ()
   /* CompleteClass */
   override def Delete(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.DropLines_typekey")
   var ExcelDotDropLines_typekey: typings.activexExcel.Excel.DropLines = js.native
   

@@ -23,19 +23,15 @@ trait Info extends StObject {
 }
 object Info {
   
-  @scala.inline
-  def apply(setId: String => Info, setText: String => Info): Info = {
+  inline def apply(setId: String => Info, setText: String => Info): Info = {
     val __obj = js.Dynamic.literal(setId = js.Any.fromFunction1(setId), setText = js.Any.fromFunction1(setText))
     __obj.asInstanceOf[Info]
   }
   
-  @scala.inline
-  implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+  extension [Self <: Info](x: Self) {
     
-    @scala.inline
-    def setSetId(value: String => Info): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    inline def setSetId(value: String => Info): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Info): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Info): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

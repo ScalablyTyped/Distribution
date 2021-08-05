@@ -15,19 +15,15 @@ trait PortalLayerProperties extends StObject {
 }
 object PortalLayerProperties {
   
-  @scala.inline
-  def apply(): PortalLayerProperties = {
+  inline def apply(): PortalLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortalLayerProperties]
   }
   
-  @scala.inline
-  implicit class PortalLayerPropertiesMutableBuilder[Self <: PortalLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PortalLayerProperties](x: Self) {
     
-    @scala.inline
-    def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    inline def setPortalItem(value: PortalItemProperties): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
+    inline def setPortalItemUndefined: Self = StObject.set(x, "portalItem", js.undefined)
   }
 }

@@ -84,35 +84,26 @@ object spriteMod {
   }
   object SpriteConfig {
     
-    @scala.inline
-    def apply(animation: String, animations: js.Any, image: HTMLImageElement): SpriteConfig = {
+    inline def apply(animation: String, animations: js.Any, image: HTMLImageElement): SpriteConfig = {
       val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], animations = animations.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpriteConfig]
     }
     
-    @scala.inline
-    implicit class SpriteConfigMutableBuilder[Self <: SpriteConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SpriteConfig](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimations(value: js.Any): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+      inline def setAnimations(value: js.Any): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameIndex(value: Double): Self = StObject.set(x, "frameIndex", value.asInstanceOf[js.Any])
+      inline def setFrameIndex(value: Double): Self = StObject.set(x, "frameIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameIndexUndefined: Self = StObject.set(x, "frameIndex", js.undefined)
+      inline def setFrameIndexUndefined: Self = StObject.set(x, "frameIndex", js.undefined)
       
-      @scala.inline
-      def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+      inline def setFrameRate(value: Double): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+      inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
       
-      @scala.inline
-      def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: HTMLImageElement): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     }
   }
 }

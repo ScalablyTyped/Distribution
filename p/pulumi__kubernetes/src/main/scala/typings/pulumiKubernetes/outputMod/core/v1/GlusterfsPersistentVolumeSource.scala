@@ -31,25 +31,19 @@ trait GlusterfsPersistentVolumeSource extends StObject {
 }
 object GlusterfsPersistentVolumeSource {
   
-  @scala.inline
-  def apply(endpoints: String, endpointsNamespace: String, path: String, readOnly: Boolean): GlusterfsPersistentVolumeSource = {
+  inline def apply(endpoints: String, endpointsNamespace: String, path: String, readOnly: Boolean): GlusterfsPersistentVolumeSource = {
     val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any], endpointsNamespace = endpointsNamespace.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlusterfsPersistentVolumeSource]
   }
   
-  @scala.inline
-  implicit class GlusterfsPersistentVolumeSourceMutableBuilder[Self <: GlusterfsPersistentVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: GlusterfsPersistentVolumeSource](x: Self) {
     
-    @scala.inline
-    def setEndpoints(value: String): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: String): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsNamespace(value: String): Self = StObject.set(x, "endpointsNamespace", value.asInstanceOf[js.Any])
+    inline def setEndpointsNamespace(value: String): Self = StObject.set(x, "endpointsNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
   }
 }

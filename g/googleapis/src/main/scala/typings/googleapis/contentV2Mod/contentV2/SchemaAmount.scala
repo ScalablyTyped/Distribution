@@ -18,25 +18,19 @@ trait SchemaAmount extends StObject {
 }
 object SchemaAmount {
   
-  @scala.inline
-  def apply(): SchemaAmount = {
+  inline def apply(): SchemaAmount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAmount]
   }
   
-  @scala.inline
-  implicit class SchemaAmountMutableBuilder[Self <: SchemaAmount] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAmount](x: Self) {
     
-    @scala.inline
-    def setPretax(value: SchemaPrice): Self = StObject.set(x, "pretax", value.asInstanceOf[js.Any])
+    inline def setPretax(value: SchemaPrice): Self = StObject.set(x, "pretax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPretaxUndefined: Self = StObject.set(x, "pretax", js.undefined)
+    inline def setPretaxUndefined: Self = StObject.set(x, "pretax", js.undefined)
     
-    @scala.inline
-    def setTax(value: SchemaPrice): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
+    inline def setTax(value: SchemaPrice): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
+    inline def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ object prevNextButtonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def PrevNextButton(hasNameDisabledOnClick: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PrevNextButton")(hasNameDisabledOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def PrevNextButton(hasNameDisabledOnClick: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("PrevNextButton")(hasNameDisabledOnClick.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props extends StObject {
     
@@ -26,23 +25,18 @@ object prevNextButtonMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(disabled: Boolean, name: prev | next, onClick: js.Any => Unit): Props = {
+    inline def apply(disabled: Boolean, name: prev | next, onClick: js.Any => Unit): Props = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: prev | next): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: prev | next): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     }
   }
 }

@@ -10,19 +10,15 @@ trait FadeEffectOptions extends StObject {
 }
 object FadeEffectOptions {
   
-  @scala.inline
-  def apply(): FadeEffectOptions = {
+  inline def apply(): FadeEffectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FadeEffectOptions]
   }
   
-  @scala.inline
-  implicit class FadeEffectOptionsMutableBuilder[Self <: FadeEffectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FadeEffectOptions](x: Self) {
     
-    @scala.inline
-    def setCrossFade(value: Boolean): Self = StObject.set(x, "crossFade", value.asInstanceOf[js.Any])
+    inline def setCrossFade(value: Boolean): Self = StObject.set(x, "crossFade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossFadeUndefined: Self = StObject.set(x, "crossFade", js.undefined)
+    inline def setCrossFadeUndefined: Self = StObject.set(x, "crossFade", js.undefined)
   }
 }

@@ -35,8 +35,7 @@ trait VertexRemoveEventInfo
 }
 object VertexRemoveEventInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -48,22 +47,16 @@ object VertexRemoveEventInfo {
     __obj.asInstanceOf[VertexRemoveEventInfo]
   }
   
-  @scala.inline
-  implicit class VertexRemoveEventInfoMutableBuilder[Self <: VertexRemoveEventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: VertexRemoveEventInfo](x: Self) {
     
-    @scala.inline
-    def setRemoved(value: js.Array[Graphic]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    inline def setRemoved(value: js.Array[Graphic]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedVarargs(value: Graphic*): Self = StObject.set(x, "removed", js.Array(value :_*))
+    inline def setRemovedVarargs(value: Graphic*): Self = StObject.set(x, "removed", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: `vertex-remove`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `vertex-remove`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertices(value: js.Array[VertexRemoveEventInfoVertices]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[VertexRemoveEventInfoVertices]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesVarargs(value: VertexRemoveEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: VertexRemoveEventInfoVertices*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

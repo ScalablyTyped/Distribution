@@ -12,19 +12,15 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(GID: Double, UID: Double): User = {
+  inline def apply(GID: Double, UID: Double): User = {
     val __obj = js.Dynamic.literal(GID = GID.asInstanceOf[js.Any], UID = UID.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setGID(value: Double): Self = StObject.set(x, "GID", value.asInstanceOf[js.Any])
+    inline def setGID(value: Double): Self = StObject.set(x, "GID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUID(value: Double): Self = StObject.set(x, "UID", value.asInstanceOf[js.Any])
+    inline def setUID(value: Double): Self = StObject.set(x, "UID", value.asInstanceOf[js.Any])
   }
 }

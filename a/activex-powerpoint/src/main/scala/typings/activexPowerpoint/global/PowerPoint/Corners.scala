@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Corners")
 @js.native
-class Corners protected ()
+/* private */ class Corners ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Corners {
   
@@ -22,7 +22,7 @@ class Corners protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Corners_typekey")
   var PowerPointDotCorners_typekey: typings.activexPowerpoint.PowerPoint.Corners = js.native
   

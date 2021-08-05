@@ -121,8 +121,7 @@ object mod {
   }
   object DateIOFormats {
     
-    @scala.inline
-    def apply[TLibFormatToken](
+    inline def apply[TLibFormatToken](
       dayOfMonth: TLibFormatToken,
       fullDate: TLibFormatToken,
       fullDateTime: TLibFormatToken,
@@ -155,89 +154,61 @@ object mod {
       __obj.asInstanceOf[DateIOFormats[TLibFormatToken]]
     }
     
-    @scala.inline
-    implicit class DateIOFormatsMutableBuilder[Self <: DateIOFormats[?], TLibFormatToken] (val x: Self & DateIOFormats[TLibFormatToken]) extends AnyVal {
+    extension [Self <: DateIOFormats[?], TLibFormatToken](x: Self & DateIOFormats[TLibFormatToken]) {
       
-      @scala.inline
-      def setDayOfMonth(value: TLibFormatToken): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
+      inline def setDayOfMonth(value: TLibFormatToken): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullDate(value: TLibFormatToken): Self = StObject.set(x, "fullDate", value.asInstanceOf[js.Any])
+      inline def setFullDate(value: TLibFormatToken): Self = StObject.set(x, "fullDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullDateTime(value: TLibFormatToken): Self = StObject.set(x, "fullDateTime", value.asInstanceOf[js.Any])
+      inline def setFullDateTime(value: TLibFormatToken): Self = StObject.set(x, "fullDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullDateTime12h(value: TLibFormatToken): Self = StObject.set(x, "fullDateTime12h", value.asInstanceOf[js.Any])
+      inline def setFullDateTime12h(value: TLibFormatToken): Self = StObject.set(x, "fullDateTime12h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullDateTime24h(value: TLibFormatToken): Self = StObject.set(x, "fullDateTime24h", value.asInstanceOf[js.Any])
+      inline def setFullDateTime24h(value: TLibFormatToken): Self = StObject.set(x, "fullDateTime24h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullDateWithWeekday(value: TLibFormatToken): Self = StObject.set(x, "fullDateWithWeekday", value.asInstanceOf[js.Any])
+      inline def setFullDateWithWeekday(value: TLibFormatToken): Self = StObject.set(x, "fullDateWithWeekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullTime(value: TLibFormatToken): Self = StObject.set(x, "fullTime", value.asInstanceOf[js.Any])
+      inline def setFullTime(value: TLibFormatToken): Self = StObject.set(x, "fullTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullTime12h(value: TLibFormatToken): Self = StObject.set(x, "fullTime12h", value.asInstanceOf[js.Any])
+      inline def setFullTime12h(value: TLibFormatToken): Self = StObject.set(x, "fullTime12h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullTime24h(value: TLibFormatToken): Self = StObject.set(x, "fullTime24h", value.asInstanceOf[js.Any])
+      inline def setFullTime24h(value: TLibFormatToken): Self = StObject.set(x, "fullTime24h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHours12h(value: TLibFormatToken): Self = StObject.set(x, "hours12h", value.asInstanceOf[js.Any])
+      inline def setHours12h(value: TLibFormatToken): Self = StObject.set(x, "hours12h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHours24h(value: TLibFormatToken): Self = StObject.set(x, "hours24h", value.asInstanceOf[js.Any])
+      inline def setHours24h(value: TLibFormatToken): Self = StObject.set(x, "hours24h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardDate(value: TLibFormatToken): Self = StObject.set(x, "keyboardDate", value.asInstanceOf[js.Any])
+      inline def setKeyboardDate(value: TLibFormatToken): Self = StObject.set(x, "keyboardDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardDateTime(value: TLibFormatToken): Self = StObject.set(x, "keyboardDateTime", value.asInstanceOf[js.Any])
+      inline def setKeyboardDateTime(value: TLibFormatToken): Self = StObject.set(x, "keyboardDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardDateTime12h(value: TLibFormatToken): Self = StObject.set(x, "keyboardDateTime12h", value.asInstanceOf[js.Any])
+      inline def setKeyboardDateTime12h(value: TLibFormatToken): Self = StObject.set(x, "keyboardDateTime12h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardDateTime24h(value: TLibFormatToken): Self = StObject.set(x, "keyboardDateTime24h", value.asInstanceOf[js.Any])
+      inline def setKeyboardDateTime24h(value: TLibFormatToken): Self = StObject.set(x, "keyboardDateTime24h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutes(value: TLibFormatToken): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: TLibFormatToken): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonth(value: TLibFormatToken): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: TLibFormatToken): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthAndDate(value: TLibFormatToken): Self = StObject.set(x, "monthAndDate", value.asInstanceOf[js.Any])
+      inline def setMonthAndDate(value: TLibFormatToken): Self = StObject.set(x, "monthAndDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthAndYear(value: TLibFormatToken): Self = StObject.set(x, "monthAndYear", value.asInstanceOf[js.Any])
+      inline def setMonthAndYear(value: TLibFormatToken): Self = StObject.set(x, "monthAndYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthShort(value: TLibFormatToken): Self = StObject.set(x, "monthShort", value.asInstanceOf[js.Any])
+      inline def setMonthShort(value: TLibFormatToken): Self = StObject.set(x, "monthShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalDate(value: TLibFormatToken): Self = StObject.set(x, "normalDate", value.asInstanceOf[js.Any])
+      inline def setNormalDate(value: TLibFormatToken): Self = StObject.set(x, "normalDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalDateWithWeekday(value: TLibFormatToken): Self = StObject.set(x, "normalDateWithWeekday", value.asInstanceOf[js.Any])
+      inline def setNormalDateWithWeekday(value: TLibFormatToken): Self = StObject.set(x, "normalDateWithWeekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: TLibFormatToken): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: TLibFormatToken): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortDate(value: TLibFormatToken): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
+      inline def setShortDate(value: TLibFormatToken): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekday(value: TLibFormatToken): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: TLibFormatToken): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayShort(value: TLibFormatToken): Self = StObject.set(x, "weekdayShort", value.asInstanceOf[js.Any])
+      inline def setWeekdayShort(value: TLibFormatToken): Self = StObject.set(x, "weekdayShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYear(value: TLibFormatToken): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: TLibFormatToken): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     }
   }
   
@@ -394,31 +365,22 @@ object mod {
   trait Unit extends StObject
   object Unit {
     
-    @scala.inline
-    def days: typings.dateIoCore.dateIoCoreStrings.days = "days".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.days]
+    inline def days: typings.dateIoCore.dateIoCoreStrings.days = "days".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.days]
     
-    @scala.inline
-    def hours: typings.dateIoCore.dateIoCoreStrings.hours = "hours".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.hours]
+    inline def hours: typings.dateIoCore.dateIoCoreStrings.hours = "hours".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.hours]
     
-    @scala.inline
-    def milliseconds: typings.dateIoCore.dateIoCoreStrings.milliseconds = "milliseconds".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.milliseconds]
+    inline def milliseconds: typings.dateIoCore.dateIoCoreStrings.milliseconds = "milliseconds".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.milliseconds]
     
-    @scala.inline
-    def minutes: typings.dateIoCore.dateIoCoreStrings.minutes = "minutes".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.minutes]
+    inline def minutes: typings.dateIoCore.dateIoCoreStrings.minutes = "minutes".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.minutes]
     
-    @scala.inline
-    def months: typings.dateIoCore.dateIoCoreStrings.months = "months".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.months]
+    inline def months: typings.dateIoCore.dateIoCoreStrings.months = "months".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.months]
     
-    @scala.inline
-    def quarters: typings.dateIoCore.dateIoCoreStrings.quarters = "quarters".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.quarters]
+    inline def quarters: typings.dateIoCore.dateIoCoreStrings.quarters = "quarters".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.quarters]
     
-    @scala.inline
-    def seconds: typings.dateIoCore.dateIoCoreStrings.seconds = "seconds".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.seconds]
+    inline def seconds: typings.dateIoCore.dateIoCoreStrings.seconds = "seconds".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.seconds]
     
-    @scala.inline
-    def weeks: typings.dateIoCore.dateIoCoreStrings.weeks = "weeks".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.weeks]
+    inline def weeks: typings.dateIoCore.dateIoCoreStrings.weeks = "weeks".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.weeks]
     
-    @scala.inline
-    def years: typings.dateIoCore.dateIoCoreStrings.years = "years".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.years]
+    inline def years: typings.dateIoCore.dateIoCoreStrings.years = "years".asInstanceOf[typings.dateIoCore.dateIoCoreStrings.years]
   }
 }

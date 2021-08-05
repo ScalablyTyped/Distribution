@@ -20,34 +20,25 @@ trait Delimited
 }
 object Delimited {
   
-  @scala.inline
-  def apply(): Delimited = {
+  inline def apply(): Delimited = {
     val __obj = js.Dynamic.literal(delimited = false)
     __obj.asInstanceOf[Delimited]
   }
   
-  @scala.inline
-  implicit class DelimitedMutableBuilder[Self <: Delimited] (val x: Self) extends AnyVal {
+  extension [Self <: Delimited](x: Self) {
     
-    @scala.inline
-    def setDelimited(value: `false`): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
+    inline def setDelimited(value: `false`): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: Double): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "partition", js.undefined)
     
-    @scala.inline
-    def setPartitioned(value: Boolean): Self = StObject.set(x, "partitioned", value.asInstanceOf[js.Any])
+    inline def setPartitioned(value: Boolean): Self = StObject.set(x, "partitioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionedUndefined: Self = StObject.set(x, "partitioned", js.undefined)
+    inline def setPartitionedUndefined: Self = StObject.set(x, "partitioned", js.undefined)
   }
 }

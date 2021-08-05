@@ -23,31 +23,23 @@ trait LabelCountersForWorkteam extends StObject {
 }
 object LabelCountersForWorkteam {
   
-  @scala.inline
-  def apply(): LabelCountersForWorkteam = {
+  inline def apply(): LabelCountersForWorkteam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelCountersForWorkteam]
   }
   
-  @scala.inline
-  implicit class LabelCountersForWorkteamMutableBuilder[Self <: LabelCountersForWorkteam] (val x: Self) extends AnyVal {
+  extension [Self <: LabelCountersForWorkteam](x: Self) {
     
-    @scala.inline
-    def setHumanLabeled(value: LabelCounter): Self = StObject.set(x, "HumanLabeled", value.asInstanceOf[js.Any])
+    inline def setHumanLabeled(value: LabelCounter): Self = StObject.set(x, "HumanLabeled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLabeledUndefined: Self = StObject.set(x, "HumanLabeled", js.undefined)
+    inline def setHumanLabeledUndefined: Self = StObject.set(x, "HumanLabeled", js.undefined)
     
-    @scala.inline
-    def setPendingHuman(value: LabelCounter): Self = StObject.set(x, "PendingHuman", value.asInstanceOf[js.Any])
+    inline def setPendingHuman(value: LabelCounter): Self = StObject.set(x, "PendingHuman", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingHumanUndefined: Self = StObject.set(x, "PendingHuman", js.undefined)
+    inline def setPendingHumanUndefined: Self = StObject.set(x, "PendingHuman", js.undefined)
     
-    @scala.inline
-    def setTotal(value: LabelCounter): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: LabelCounter): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

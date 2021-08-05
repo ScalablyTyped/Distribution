@@ -15,28 +15,21 @@ trait TopHitsResults extends StObject {
 }
 object TopHitsResults {
   
-  @scala.inline
-  def apply(): TopHitsResults = {
+  inline def apply(): TopHitsResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopHitsResults]
   }
   
-  @scala.inline
-  implicit class TopHitsResultsMutableBuilder[Self <: TopHitsResults] (val x: Self) extends AnyVal {
+  extension [Self <: TopHitsResults](x: Self) {
     
-    @scala.inline
-    def setHits(value: js.Array[QueryResult]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
+    inline def setHits(value: js.Array[QueryResult]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitsUndefined: Self = StObject.set(x, "hits", js.undefined)
+    inline def setHitsUndefined: Self = StObject.set(x, "hits", js.undefined)
     
-    @scala.inline
-    def setHitsVarargs(value: QueryResult*): Self = StObject.set(x, "hits", js.Array(value :_*))
+    inline def setHitsVarargs(value: QueryResult*): Self = StObject.set(x, "hits", js.Array(value :_*))
     
-    @scala.inline
-    def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
+    inline def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
+    inline def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
   }
 }

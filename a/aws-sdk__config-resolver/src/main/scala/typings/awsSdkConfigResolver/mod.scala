@@ -34,13 +34,11 @@ object mod {
   @js.native
   val REGION_INI_NAME: /* "region" */ String = js.native
   
-  @scala.inline
-  def resolveEndpointsConfig[T](
+  inline def resolveEndpointsConfig[T](
     input: T & EndpointsInputConfig & typings.awsSdkConfigResolver.endpointsConfigMod.PreviouslyResolved
   ): T & EndpointsResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveEndpointsConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & EndpointsResolvedConfig]
   
-  @scala.inline
-  def resolveRegionConfig[T](input: T & RegionInputConfig & typings.awsSdkConfigResolver.regionConfigMod.PreviouslyResolved): T & RegionResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRegionConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RegionResolvedConfig]
+  inline def resolveRegionConfig[T](input: T & RegionInputConfig & typings.awsSdkConfigResolver.regionConfigMod.PreviouslyResolved): T & RegionResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRegionConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RegionResolvedConfig]
   
   trait PreviouslyResolved
     extends StObject
@@ -48,8 +46,7 @@ object mod {
        with typings.awsSdkConfigResolver.regionConfigMod.PreviouslyResolved
   object PreviouslyResolved {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       region: () => js.Promise[String],
       regionInfoProvider: (/* region */ String, /* options */ js.UndefOr[js.Any]) => js.Promise[js.UndefOr[RegionInfo]],
       urlParser: /* url */ String => Endpoint

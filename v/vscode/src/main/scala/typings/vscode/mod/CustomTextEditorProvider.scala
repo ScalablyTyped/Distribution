@@ -30,16 +30,13 @@ trait CustomTextEditorProvider extends StObject {
 }
 object CustomTextEditorProvider {
   
-  @scala.inline
-  def apply(resolveCustomTextEditor: (TextDocument, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): CustomTextEditorProvider = {
+  inline def apply(resolveCustomTextEditor: (TextDocument, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): CustomTextEditorProvider = {
     val __obj = js.Dynamic.literal(resolveCustomTextEditor = js.Any.fromFunction3(resolveCustomTextEditor))
     __obj.asInstanceOf[CustomTextEditorProvider]
   }
   
-  @scala.inline
-  implicit class CustomTextEditorProviderMutableBuilder[Self <: CustomTextEditorProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CustomTextEditorProvider](x: Self) {
     
-    @scala.inline
-    def setResolveCustomTextEditor(value: (TextDocument, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): Self = StObject.set(x, "resolveCustomTextEditor", js.Any.fromFunction3(value))
+    inline def setResolveCustomTextEditor(value: (TextDocument, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): Self = StObject.set(x, "resolveCustomTextEditor", js.Any.fromFunction3(value))
   }
 }

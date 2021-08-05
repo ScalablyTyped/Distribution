@@ -12,22 +12,17 @@ trait ItemColor extends StObject {
 }
 object ItemColor {
   
-  @scala.inline
-  def apply(itemColor: String, itemList: js.Array[String]): ItemColor = {
+  inline def apply(itemColor: String, itemList: js.Array[String]): ItemColor = {
     val __obj = js.Dynamic.literal(itemColor = itemColor.asInstanceOf[js.Any], itemList = itemList.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemColor]
   }
   
-  @scala.inline
-  implicit class ItemColorMutableBuilder[Self <: ItemColor] (val x: Self) extends AnyVal {
+  extension [Self <: ItemColor](x: Self) {
     
-    @scala.inline
-    def setItemColor(value: String): Self = StObject.set(x, "itemColor", value.asInstanceOf[js.Any])
+    inline def setItemColor(value: String): Self = StObject.set(x, "itemColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemList(value: js.Array[String]): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
+    inline def setItemList(value: js.Array[String]): Self = StObject.set(x, "itemList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value :_*))
+    inline def setItemListVarargs(value: String*): Self = StObject.set(x, "itemList", js.Array(value :_*))
   }
 }

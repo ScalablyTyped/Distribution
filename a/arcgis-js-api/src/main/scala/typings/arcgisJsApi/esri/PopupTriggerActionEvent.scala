@@ -10,16 +10,13 @@ trait PopupTriggerActionEvent extends StObject {
 }
 object PopupTriggerActionEvent {
   
-  @scala.inline
-  def apply(action: ActionButton | ActionToggle): PopupTriggerActionEvent = {
+  inline def apply(action: ActionButton | ActionToggle): PopupTriggerActionEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupTriggerActionEvent]
   }
   
-  @scala.inline
-  implicit class PopupTriggerActionEventMutableBuilder[Self <: PopupTriggerActionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PopupTriggerActionEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

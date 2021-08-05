@@ -237,21 +237,18 @@ object constantsMod {
     @JSGlobal("mapRunsUserAction")
     @js.native
     def mapRunsUserAction: js.Any = js.native
-    @scala.inline
-    def mapRunsUserAction_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("mapRunsUserAction")(x.asInstanceOf[js.Any])
+    inline def mapRunsUserAction_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("mapRunsUserAction")(x.asInstanceOf[js.Any])
     
     // = null;
     @JSGlobal("portalAccessIndicator")
     @js.native
     def portalAccessIndicator: js.Any = js.native
-    @scala.inline
-    def portalAccessIndicator_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("portalAccessIndicator")(x.asInstanceOf[js.Any])
+    inline def portalAccessIndicator_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("portalAccessIndicator")(x.asInstanceOf[js.Any])
     
     @JSGlobal("portalRangeIndicator")
     @js.native
     def portalRangeIndicator: js.Any = js.native
-    @scala.inline
-    def portalRangeIndicator_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("portalRangeIndicator")(x.asInstanceOf[js.Any])
+    inline def portalRangeIndicator_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("portalRangeIndicator")(x.asInstanceOf[js.Any])
     
     // = false;
     @JSGlobal("portalsFactionLayers")
@@ -265,8 +262,7 @@ object constantsMod {
     @JSGlobal("refreshTimeout")
     @js.native
     def refreshTimeout: js.Any = js.native
-    @scala.inline
-    def refreshTimeout_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("refreshTimeout")(x.asInstanceOf[js.Any])
+    inline def refreshTimeout_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("refreshTimeout")(x.asInstanceOf[js.Any])
     
     @JSGlobal("script_info")
     @js.native
@@ -277,8 +273,7 @@ object constantsMod {
     @JSGlobal("selectedPortal")
     @js.native
     def selectedPortal: PortalGUID | Null = js.native
-    @scala.inline
-    def selectedPortal_=(x: PortalGUID | Null): Unit = js.Dynamic.global.updateDynamic("selectedPortal")(x.asInstanceOf[js.Any])
+    inline def selectedPortal_=(x: PortalGUID | Null): Unit = js.Dynamic.global.updateDynamic("selectedPortal")(x.asInstanceOf[js.Any])
     
     // = undefined;
     @JSGlobal("urlPortal")
@@ -289,11 +284,9 @@ object constantsMod {
     @JSGlobal("urlPortalLL")
     @js.native
     def urlPortalLL: js.Any = js.native
-    @scala.inline
-    def urlPortalLL_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("urlPortalLL")(x.asInstanceOf[js.Any])
+    inline def urlPortalLL_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("urlPortalLL")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def urlPortal_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("urlPortal")(x.asInstanceOf[js.Any])
+    inline def urlPortal_=(x: js.Any): Unit = js.Dynamic.global.updateDynamic("urlPortal")(x.asInstanceOf[js.Any])
     
     /** @default ['#000',...,'#9627F4'] */
     object COLORS_MOD

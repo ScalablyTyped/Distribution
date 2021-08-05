@@ -18,19 +18,15 @@ trait ContinuousParameterRangeSpecification extends StObject {
 }
 object ContinuousParameterRangeSpecification {
   
-  @scala.inline
-  def apply(MaxValue: ParameterValue, MinValue: ParameterValue): ContinuousParameterRangeSpecification = {
+  inline def apply(MaxValue: ParameterValue, MinValue: ParameterValue): ContinuousParameterRangeSpecification = {
     val __obj = js.Dynamic.literal(MaxValue = MaxValue.asInstanceOf[js.Any], MinValue = MinValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinuousParameterRangeSpecification]
   }
   
-  @scala.inline
-  implicit class ContinuousParameterRangeSpecificationMutableBuilder[Self <: ContinuousParameterRangeSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: ContinuousParameterRangeSpecification](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: ParameterValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: ParameterValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: ParameterValue): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: ParameterValue): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
   }
 }

@@ -17,26 +17,21 @@ trait CloudStorageProviders extends StObject {
 }
 object CloudStorageProviders {
   
-  @scala.inline
-  def apply(): CloudStorageProviders = {
+  inline def apply(): CloudStorageProviders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudStorageProviders]
   }
   
-  @scala.inline
-  implicit class CloudStorageProvidersMutableBuilder[Self <: CloudStorageProviders] (val x: Self) extends AnyVal {
+  extension [Self <: CloudStorageProviders](x: Self) {
     
-    @scala.inline
-    def setStorageProviders(
+    inline def setStorageProviders(
       value: js.Array[
           /* Contains details about a specific cloud storage provider. */ CloudStorageProvider
         ]
     ): Self = StObject.set(x, "storageProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageProvidersUndefined: Self = StObject.set(x, "storageProviders", js.undefined)
+    inline def setStorageProvidersUndefined: Self = StObject.set(x, "storageProviders", js.undefined)
     
-    @scala.inline
-    def setStorageProvidersVarargs(value: (/* Contains details about a specific cloud storage provider. */ CloudStorageProvider)*): Self = StObject.set(x, "storageProviders", js.Array(value :_*))
+    inline def setStorageProvidersVarargs(value: (/* Contains details about a specific cloud storage provider. */ CloudStorageProvider)*): Self = StObject.set(x, "storageProviders", js.Array(value :_*))
   }
 }

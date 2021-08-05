@@ -13,16 +13,13 @@ trait GetSuppressedDestinationResponse extends StObject {
 }
 object GetSuppressedDestinationResponse {
   
-  @scala.inline
-  def apply(SuppressedDestination: SuppressedDestination): GetSuppressedDestinationResponse = {
+  inline def apply(SuppressedDestination: SuppressedDestination): GetSuppressedDestinationResponse = {
     val __obj = js.Dynamic.literal(SuppressedDestination = SuppressedDestination.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSuppressedDestinationResponse]
   }
   
-  @scala.inline
-  implicit class GetSuppressedDestinationResponseMutableBuilder[Self <: GetSuppressedDestinationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSuppressedDestinationResponse](x: Self) {
     
-    @scala.inline
-    def setSuppressedDestination(value: SuppressedDestination): Self = StObject.set(x, "SuppressedDestination", value.asInstanceOf[js.Any])
+    inline def setSuppressedDestination(value: SuppressedDestination): Self = StObject.set(x, "SuppressedDestination", value.asInstanceOf[js.Any])
   }
 }

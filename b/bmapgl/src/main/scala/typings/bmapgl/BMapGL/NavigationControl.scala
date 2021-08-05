@@ -15,8 +15,7 @@ trait NavigationControl
 }
 object NavigationControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultAnchor: ControlAnchor,
     defaultOffset: Size,
     getAnchor: () => ControlAnchor,
@@ -35,13 +34,10 @@ object NavigationControl {
     __obj.asInstanceOf[NavigationControl]
   }
   
-  @scala.inline
-  implicit class NavigationControlMutableBuilder[Self <: NavigationControl] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationControl](x: Self) {
     
-    @scala.inline
-    def setGetType(value: () => NavigationControlOptions): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => NavigationControlOptions): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetType(value: NavigationControlType => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+    inline def setSetType(value: NavigationControlType => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
   }
 }

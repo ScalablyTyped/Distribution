@@ -16,23 +16,18 @@ trait StandardOutputAppender
 }
 object StandardOutputAppender {
   
-  @scala.inline
-  def apply(): StandardOutputAppender = {
+  inline def apply(): StandardOutputAppender = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("stdout")
     __obj.asInstanceOf[StandardOutputAppender]
   }
   
-  @scala.inline
-  implicit class StandardOutputAppenderMutableBuilder[Self <: StandardOutputAppender] (val x: Self) extends AnyVal {
+  extension [Self <: StandardOutputAppender](x: Self) {
     
-    @scala.inline
-    def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: Layout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setType(value: stdout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: stdout): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

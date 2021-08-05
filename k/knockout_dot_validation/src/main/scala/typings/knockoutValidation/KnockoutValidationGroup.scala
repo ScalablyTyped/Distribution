@@ -14,31 +14,23 @@ trait KnockoutValidationGroup extends StObject {
 }
 object KnockoutValidationGroup {
   
-  @scala.inline
-  def apply(): KnockoutValidationGroup = {
+  inline def apply(): KnockoutValidationGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KnockoutValidationGroup]
   }
   
-  @scala.inline
-  implicit class KnockoutValidationGroupMutableBuilder[Self <: KnockoutValidationGroup] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutValidationGroup](x: Self) {
     
-    @scala.inline
-    def setErrors(value: KnockoutValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: KnockoutValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setIsAnyMessageShown(value: () => Boolean): Self = StObject.set(x, "isAnyMessageShown", js.Any.fromFunction0(value))
+    inline def setIsAnyMessageShown(value: () => Boolean): Self = StObject.set(x, "isAnyMessageShown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAnyMessageShownUndefined: Self = StObject.set(x, "isAnyMessageShown", js.undefined)
+    inline def setIsAnyMessageShownUndefined: Self = StObject.set(x, "isAnyMessageShown", js.undefined)
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
   }
 }

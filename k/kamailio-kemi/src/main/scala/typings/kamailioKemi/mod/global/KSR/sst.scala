@@ -10,6 +10,5 @@ object sst {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sstCheckMin(flag: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sst_check_min")(flag.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def sstCheckMin(flag: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sst_check_min")(flag.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -8,11 +8,9 @@ object maximMazurokGapiClientGroupssettingsStrings {
   
   @js.native
   sealed trait groupssettings extends StObject
-  @scala.inline
-  def groupssettings: groupssettings = "groupssettings".asInstanceOf[groupssettings]
+  inline def groupssettings: groupssettings = "groupssettings".asInstanceOf[groupssettings]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

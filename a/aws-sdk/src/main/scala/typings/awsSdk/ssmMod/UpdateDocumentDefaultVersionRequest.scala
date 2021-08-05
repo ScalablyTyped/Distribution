@@ -18,19 +18,15 @@ trait UpdateDocumentDefaultVersionRequest extends StObject {
 }
 object UpdateDocumentDefaultVersionRequest {
   
-  @scala.inline
-  def apply(DocumentVersion: DocumentVersionNumber, Name: DocumentName): UpdateDocumentDefaultVersionRequest = {
+  inline def apply(DocumentVersion: DocumentVersionNumber, Name: DocumentName): UpdateDocumentDefaultVersionRequest = {
     val __obj = js.Dynamic.literal(DocumentVersion = DocumentVersion.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDocumentDefaultVersionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDocumentDefaultVersionRequestMutableBuilder[Self <: UpdateDocumentDefaultVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDocumentDefaultVersionRequest](x: Self) {
     
-    @scala.inline
-    def setDocumentVersion(value: DocumentVersionNumber): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentVersion(value: DocumentVersionNumber): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

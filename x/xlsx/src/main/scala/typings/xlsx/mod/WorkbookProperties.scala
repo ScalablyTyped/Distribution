@@ -17,31 +17,23 @@ trait WorkbookProperties extends StObject {
 }
 object WorkbookProperties {
   
-  @scala.inline
-  def apply(): WorkbookProperties = {
+  inline def apply(): WorkbookProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookProperties]
   }
   
-  @scala.inline
-  implicit class WorkbookPropertiesMutableBuilder[Self <: WorkbookProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookProperties](x: Self) {
     
-    @scala.inline
-    def setCodeName(value: String): Self = StObject.set(x, "CodeName", value.asInstanceOf[js.Any])
+    inline def setCodeName(value: String): Self = StObject.set(x, "CodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeNameUndefined: Self = StObject.set(x, "CodeName", js.undefined)
+    inline def setCodeNameUndefined: Self = StObject.set(x, "CodeName", js.undefined)
     
-    @scala.inline
-    def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
+    inline def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate1904Undefined: Self = StObject.set(x, "date1904", js.undefined)
+    inline def setDate1904Undefined: Self = StObject.set(x, "date1904", js.undefined)
     
-    @scala.inline
-    def setFilterPrivacy(value: Boolean): Self = StObject.set(x, "filterPrivacy", value.asInstanceOf[js.Any])
+    inline def setFilterPrivacy(value: Boolean): Self = StObject.set(x, "filterPrivacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterPrivacyUndefined: Self = StObject.set(x, "filterPrivacy", js.undefined)
+    inline def setFilterPrivacyUndefined: Self = StObject.set(x, "filterPrivacy", js.undefined)
   }
 }

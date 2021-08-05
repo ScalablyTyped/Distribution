@@ -23,17 +23,14 @@ object socialButtonMod {
   }
   object SocialButtonProps {
     
-    @scala.inline
-    def apply(provider: String): SocialButtonProps = {
+    inline def apply(provider: String): SocialButtonProps = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocialButtonProps]
     }
     
-    @scala.inline
-    implicit class SocialButtonPropsMutableBuilder[Self <: SocialButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SocialButtonProps](x: Self) {
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     }
   }
 }

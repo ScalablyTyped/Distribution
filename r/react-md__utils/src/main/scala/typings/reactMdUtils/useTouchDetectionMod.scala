@@ -14,8 +14,6 @@ object useTouchDetectionMod {
   @js.native
   val DEFAULT_TOUCH_TIMEOUT: /* 1200 */ Double = js.native
   
-  @scala.inline
-  def useTouchDetection(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useTouchDetection")().asInstanceOf[Boolean]
-  @scala.inline
-  def useTouchDetection(touchTimeout: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useTouchDetection")(touchTimeout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def useTouchDetection(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useTouchDetection")().asInstanceOf[Boolean]
+  inline def useTouchDetection(touchTimeout: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useTouchDetection")(touchTimeout.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

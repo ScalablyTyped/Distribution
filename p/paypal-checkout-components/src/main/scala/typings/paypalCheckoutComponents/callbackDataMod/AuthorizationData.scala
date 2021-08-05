@@ -16,34 +16,25 @@ trait AuthorizationData extends StObject {
 }
 object AuthorizationData {
   
-  @scala.inline
-  def apply(payerId: String): AuthorizationData = {
+  inline def apply(payerId: String): AuthorizationData = {
     val __obj = js.Dynamic.literal(payerId = payerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationData]
   }
   
-  @scala.inline
-  implicit class AuthorizationDataMutableBuilder[Self <: AuthorizationData] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationData](x: Self) {
     
-    @scala.inline
-    def setBillingToken(value: String): Self = StObject.set(x, "billingToken", value.asInstanceOf[js.Any])
+    inline def setBillingToken(value: String): Self = StObject.set(x, "billingToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingTokenUndefined: Self = StObject.set(x, "billingToken", js.undefined)
+    inline def setBillingTokenUndefined: Self = StObject.set(x, "billingToken", js.undefined)
     
-    @scala.inline
-    def setPayerId(value: String): Self = StObject.set(x, "payerId", value.asInstanceOf[js.Any])
+    inline def setPayerId(value: String): Self = StObject.set(x, "payerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
+    inline def setPaymentId(value: String): Self = StObject.set(x, "paymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentIdUndefined: Self = StObject.set(x, "paymentId", js.undefined)
+    inline def setPaymentIdUndefined: Self = StObject.set(x, "paymentId", js.undefined)
     
-    @scala.inline
-    def setVault(value: Boolean): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
+    inline def setVault(value: Boolean): Self = StObject.set(x, "vault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
+    inline def setVaultUndefined: Self = StObject.set(x, "vault", js.undefined)
   }
 }

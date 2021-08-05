@@ -19,12 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProcessStatus extends StObject
 object ProcessStatus {
   
-  @scala.inline
-  def Aborted: aborted = "aborted".asInstanceOf[aborted]
+  inline def Aborted: aborted = "aborted".asInstanceOf[aborted]
   
-  @scala.inline
-  def Active: active = "active".asInstanceOf[active]
+  inline def Active: active = "active".asInstanceOf[active]
   
-  @scala.inline
-  def Finished: finished = "finished".asInstanceOf[finished]
+  inline def Finished: finished = "finished".asInstanceOf[finished]
 }

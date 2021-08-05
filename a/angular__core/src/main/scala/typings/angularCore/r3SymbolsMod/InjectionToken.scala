@@ -46,22 +46,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait InjectionToken[T] extends StObject {
   
-  var _desc: String
+  /* protected */ var _desc: String
   
   val ɵprov: js.UndefOr[scala.Nothing] = js.undefined
 }
 object InjectionToken {
   
-  @scala.inline
-  def apply[T](_desc: String): InjectionToken[T] = {
+  inline def apply[T](_desc: String): InjectionToken[T] = {
     val __obj = js.Dynamic.literal(_desc = _desc.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectionToken[T]]
   }
   
-  @scala.inline
-  implicit class InjectionTokenMutableBuilder[Self <: InjectionToken[?], T] (val x: Self & InjectionToken[T]) extends AnyVal {
+  extension [Self <: InjectionToken[?], T](x: Self & InjectionToken[T]) {
     
-    @scala.inline
-    def set_desc(value: String): Self = StObject.set(x, "_desc", value.asInstanceOf[js.Any])
+    inline def set_desc(value: String): Self = StObject.set(x, "_desc", value.asInstanceOf[js.Any])
   }
 }

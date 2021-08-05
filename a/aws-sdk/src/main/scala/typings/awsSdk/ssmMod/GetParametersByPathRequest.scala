@@ -38,49 +38,35 @@ trait GetParametersByPathRequest extends StObject {
 }
 object GetParametersByPathRequest {
   
-  @scala.inline
-  def apply(Path: PSParameterName): GetParametersByPathRequest = {
+  inline def apply(Path: PSParameterName): GetParametersByPathRequest = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersByPathRequest]
   }
   
-  @scala.inline
-  implicit class GetParametersByPathRequestMutableBuilder[Self <: GetParametersByPathRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetParametersByPathRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: GetParametersByPathMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: GetParametersByPathMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setParameterFilters(value: ParameterStringFilterList): Self = StObject.set(x, "ParameterFilters", value.asInstanceOf[js.Any])
+    inline def setParameterFilters(value: ParameterStringFilterList): Self = StObject.set(x, "ParameterFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterFiltersUndefined: Self = StObject.set(x, "ParameterFilters", js.undefined)
+    inline def setParameterFiltersUndefined: Self = StObject.set(x, "ParameterFilters", js.undefined)
     
-    @scala.inline
-    def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = StObject.set(x, "ParameterFilters", js.Array(value :_*))
+    inline def setParameterFiltersVarargs(value: ParameterStringFilter*): Self = StObject.set(x, "ParameterFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: PSParameterName): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: PSParameterName): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "Recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "Recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "Recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "Recursive", js.undefined)
     
-    @scala.inline
-    def setWithDecryption(value: Boolean): Self = StObject.set(x, "WithDecryption", value.asInstanceOf[js.Any])
+    inline def setWithDecryption(value: Boolean): Self = StObject.set(x, "WithDecryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithDecryptionUndefined: Self = StObject.set(x, "WithDecryption", js.undefined)
+    inline def setWithDecryptionUndefined: Self = StObject.set(x, "WithDecryption", js.undefined)
   }
 }

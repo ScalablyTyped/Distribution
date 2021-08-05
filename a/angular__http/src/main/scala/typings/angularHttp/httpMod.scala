@@ -17,9 +17,9 @@ object httpMod {
   class Http protected () extends StObject {
     def this(_backend: ConnectionBackend, _defaultOptions: RequestOptions) = this()
     
-    var _backend: ConnectionBackend = js.native
+    /* protected */ var _backend: ConnectionBackend = js.native
     
-    var _defaultOptions: RequestOptions = js.native
+    /* protected */ var _defaultOptions: RequestOptions = js.native
     
     /**
       * Performs a request with `delete` http method.

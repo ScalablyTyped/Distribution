@@ -26,8 +26,7 @@ object Pages {
     * @param members An object that defines the members that the control will have.
     * @returns A constructor function that creates the PageControl.
     **/
-  @scala.inline
-  def define(uri: String, members: IPageControlMembers): js.Function4[
+  inline def define(uri: String, members: IPageControlMembers): js.Function4[
     /* element */ js.UndefOr[HTMLElement], 
     /* options */ js.UndefOr[js.Any], 
     /* complete */ js.UndefOr[js.Function1[/* page */ js.Any, Unit]], 
@@ -46,8 +45,7 @@ object Pages {
     * @param uri The URI for the content that defines the page.
     * @returns A constructor function that creates the page.
     **/
-  @scala.inline
-  def get(uri: String): js.Function4[
+  inline def get(uri: String): js.Function4[
     /* element */ js.UndefOr[HTMLElement], 
     /* options */ js.UndefOr[js.Any], 
     /* complete */ js.UndefOr[js.Function1[/* page */ js.Any, Unit]], 
@@ -69,20 +67,12 @@ object Pages {
     * @param parentedPromise A Promise that is fulfilled when the new PageControl is done rendering and its contents becomes the child of element.
     * @returns A promise that is fulfilled when rendering is complete, if asynchronous processing is necessary. If not, returns nothing.
     **/
-  @scala.inline
-  def render(uri: String): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
-  @scala.inline
-  def render(uri: String, element: Unit, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-  @scala.inline
-  def render(uri: String, element: Unit, options: js.Any, parentedPromise: Promise[js.Any]): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parentedPromise.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-  @scala.inline
-  def render(uri: String, element: Unit, options: Unit, parentedPromise: Promise[js.Any]): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parentedPromise.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-  @scala.inline
-  def render(uri: String, element: HTMLElement): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-  @scala.inline
-  def render(uri: String, element: HTMLElement, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-  @scala.inline
-  def render(uri: String, element: HTMLElement, options: js.Any, parentedPromise: Promise[js.Any]): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parentedPromise.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
-  @scala.inline
-  def render(uri: String, element: HTMLElement, options: Unit, parentedPromise: Promise[js.Any]): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parentedPromise.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  inline def render(uri: String): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  inline def render(uri: String, element: Unit, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  inline def render(uri: String, element: Unit, options: js.Any, parentedPromise: Promise[js.Any]): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parentedPromise.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  inline def render(uri: String, element: Unit, options: Unit, parentedPromise: Promise[js.Any]): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parentedPromise.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  inline def render(uri: String, element: HTMLElement): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  inline def render(uri: String, element: HTMLElement, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  inline def render(uri: String, element: HTMLElement, options: js.Any, parentedPromise: Promise[js.Any]): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parentedPromise.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  inline def render(uri: String, element: HTMLElement, options: Unit, parentedPromise: Promise[js.Any]): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(uri.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parentedPromise.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
 }

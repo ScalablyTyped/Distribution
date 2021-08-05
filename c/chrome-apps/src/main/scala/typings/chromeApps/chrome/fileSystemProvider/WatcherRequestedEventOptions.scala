@@ -19,16 +19,13 @@ trait WatcherRequestedEventOptions
 }
 object WatcherRequestedEventOptions {
   
-  @scala.inline
-  def apply(entryPath: String, fileSystemId: String, recursive: Boolean, requestId: integer): WatcherRequestedEventOptions = {
+  inline def apply(entryPath: String, fileSystemId: String, recursive: Boolean, requestId: integer): WatcherRequestedEventOptions = {
     val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatcherRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class WatcherRequestedEventOptionsMutableBuilder[Self <: WatcherRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WatcherRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }
 }

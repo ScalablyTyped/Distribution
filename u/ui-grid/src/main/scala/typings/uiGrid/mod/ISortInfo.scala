@@ -14,31 +14,23 @@ trait ISortInfo extends StObject {
 }
 object ISortInfo {
   
-  @scala.inline
-  def apply(): ISortInfo = {
+  inline def apply(): ISortInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISortInfo]
   }
   
-  @scala.inline
-  implicit class ISortInfoMutableBuilder[Self <: ISortInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ISortInfo](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setIgnoreSort(value: Boolean): Self = StObject.set(x, "ignoreSort", value.asInstanceOf[js.Any])
+    inline def setIgnoreSort(value: Boolean): Self = StObject.set(x, "ignoreSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreSortUndefined: Self = StObject.set(x, "ignoreSort", js.undefined)
+    inline def setIgnoreSortUndefined: Self = StObject.set(x, "ignoreSort", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
   }
 }

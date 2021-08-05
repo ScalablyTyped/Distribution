@@ -18,28 +18,21 @@ trait AjvError extends StObject {
 }
 object AjvError {
   
-  @scala.inline
-  def apply(message: String, name: String, params: js.Any, property: String, stack: String): AjvError = {
+  inline def apply(message: String, name: String, params: js.Any, property: String, stack: String): AjvError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjvError]
   }
   
-  @scala.inline
-  implicit class AjvErrorMutableBuilder[Self <: AjvError] (val x: Self) extends AnyVal {
+  extension [Self <: AjvError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
   }
 }

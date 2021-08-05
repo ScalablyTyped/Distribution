@@ -28,37 +28,27 @@ trait EventOptions extends StObject {
 }
 object EventOptions {
   
-  @scala.inline
-  def apply(): EventOptions = {
+  inline def apply(): EventOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventOptions]
   }
   
-  @scala.inline
-  implicit class EventOptionsMutableBuilder[Self <: EventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EventOptions](x: Self) {
     
-    @scala.inline
-    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+    inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
     
-    @scala.inline
-    def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
+    inline def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
+    inline def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
+    inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
   }
 }

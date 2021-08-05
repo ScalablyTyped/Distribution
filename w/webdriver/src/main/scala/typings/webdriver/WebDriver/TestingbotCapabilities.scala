@@ -18,46 +18,33 @@ trait TestingbotCapabilities extends StObject {
 }
 object TestingbotCapabilities {
   
-  @scala.inline
-  def apply(): TestingbotCapabilities = {
+  inline def apply(): TestingbotCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestingbotCapabilities]
   }
   
-  @scala.inline
-  implicit class TestingbotCapabilitiesMutableBuilder[Self <: TestingbotCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: TestingbotCapabilities](x: Self) {
     
-    @scala.inline
-    def setBuild(value: String | Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: String | Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+    inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def `setTunnel-identifier`(value: String): Self = StObject.set(x, "tunnel-identifier", value.asInstanceOf[js.Any])
+    inline def `setTunnel-identifier`(value: String): Self = StObject.set(x, "tunnel-identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTunnel-identifierUndefined`: Self = StObject.set(x, "tunnel-identifier", js.undefined)
+    inline def `setTunnel-identifierUndefined`: Self = StObject.set(x, "tunnel-identifier", js.undefined)
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ColorScheme")
 @js.native
-class ColorScheme protected ()
+/* private */ class ColorScheme ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ColorScheme {
   
@@ -26,7 +26,7 @@ class ColorScheme protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ColorScheme_typekey")
   var PowerPointDotColorScheme_typekey: typings.activexPowerpoint.PowerPoint.ColorScheme = js.native
 }

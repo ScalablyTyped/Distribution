@@ -35,37 +35,27 @@ trait ParamsResourceProjectsNotesCreate
 }
 object ParamsResourceProjectsNotesCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsNotesCreate = {
+  inline def apply(): ParamsResourceProjectsNotesCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsNotesCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsNotesCreateMutableBuilder[Self <: ParamsResourceProjectsNotesCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsNotesCreate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setNoteId(value: String): Self = StObject.set(x, "noteId", value.asInstanceOf[js.Any])
+    inline def setNoteId(value: String): Self = StObject.set(x, "noteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteIdUndefined: Self = StObject.set(x, "noteId", js.undefined)
+    inline def setNoteIdUndefined: Self = StObject.set(x, "noteId", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaNote): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaNote): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

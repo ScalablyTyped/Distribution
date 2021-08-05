@@ -40,31 +40,23 @@ trait SchemaDisk extends StObject {
 }
 object SchemaDisk {
   
-  @scala.inline
-  def apply(): SchemaDisk = {
+  inline def apply(): SchemaDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDisk]
   }
   
-  @scala.inline
-  implicit class SchemaDiskMutableBuilder[Self <: SchemaDisk] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDisk](x: Self) {
     
-    @scala.inline
-    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
+    inline def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
+    inline def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
-    @scala.inline
-    def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
+    inline def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPointUndefined: Self = StObject.set(x, "mountPoint", js.undefined)
+    inline def setMountPointUndefined: Self = StObject.set(x, "mountPoint", js.undefined)
     
-    @scala.inline
-    def setSizeGb(value: Double): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
+    inline def setSizeGb(value: Double): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
+    inline def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
   }
 }

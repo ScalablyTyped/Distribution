@@ -17,28 +17,21 @@ trait ListStepAccessibilityClustersResponse extends StObject {
 }
 object ListStepAccessibilityClustersResponse {
   
-  @scala.inline
-  def apply(): ListStepAccessibilityClustersResponse = {
+  inline def apply(): ListStepAccessibilityClustersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStepAccessibilityClustersResponse]
   }
   
-  @scala.inline
-  implicit class ListStepAccessibilityClustersResponseMutableBuilder[Self <: ListStepAccessibilityClustersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListStepAccessibilityClustersResponse](x: Self) {
     
-    @scala.inline
-    def setClusters(value: js.Array[SuggestionClusterProto]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: js.Array[SuggestionClusterProto]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: SuggestionClusterProto*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: SuggestionClusterProto*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

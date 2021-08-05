@@ -20,7 +20,7 @@ trait XMLChildNodeSuggestion extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.XMLChildNodeSuggestion_typekey")
+  /* private */ @JSName("Word.XMLChildNodeSuggestion_typekey")
   var WordDotXMLChildNodeSuggestion_typekey: XMLChildNodeSuggestion = js.native
   
   val XMLSchemaReference: typings.activexWord.Word.XMLSchemaReference = js.native

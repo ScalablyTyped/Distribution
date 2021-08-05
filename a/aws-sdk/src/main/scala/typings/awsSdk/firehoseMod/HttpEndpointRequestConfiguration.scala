@@ -18,28 +18,21 @@ trait HttpEndpointRequestConfiguration extends StObject {
 }
 object HttpEndpointRequestConfiguration {
   
-  @scala.inline
-  def apply(): HttpEndpointRequestConfiguration = {
+  inline def apply(): HttpEndpointRequestConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpEndpointRequestConfiguration]
   }
   
-  @scala.inline
-  implicit class HttpEndpointRequestConfigurationMutableBuilder[Self <: HttpEndpointRequestConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: HttpEndpointRequestConfiguration](x: Self) {
     
-    @scala.inline
-    def setCommonAttributes(value: HttpEndpointCommonAttributesList): Self = StObject.set(x, "CommonAttributes", value.asInstanceOf[js.Any])
+    inline def setCommonAttributes(value: HttpEndpointCommonAttributesList): Self = StObject.set(x, "CommonAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonAttributesUndefined: Self = StObject.set(x, "CommonAttributes", js.undefined)
+    inline def setCommonAttributesUndefined: Self = StObject.set(x, "CommonAttributes", js.undefined)
     
-    @scala.inline
-    def setCommonAttributesVarargs(value: HttpEndpointCommonAttribute*): Self = StObject.set(x, "CommonAttributes", js.Array(value :_*))
+    inline def setCommonAttributesVarargs(value: HttpEndpointCommonAttribute*): Self = StObject.set(x, "CommonAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setContentEncoding(value: ContentEncoding): Self = StObject.set(x, "ContentEncoding", value.asInstanceOf[js.Any])
+    inline def setContentEncoding(value: ContentEncoding): Self = StObject.set(x, "ContentEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentEncodingUndefined: Self = StObject.set(x, "ContentEncoding", js.undefined)
+    inline def setContentEncodingUndefined: Self = StObject.set(x, "ContentEncoding", js.undefined)
   }
 }

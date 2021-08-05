@@ -49,49 +49,35 @@ trait CurrencyPlanPrice extends StObject {
 }
 object CurrencyPlanPrice {
   
-  @scala.inline
-  def apply(): CurrencyPlanPrice = {
+  inline def apply(): CurrencyPlanPrice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CurrencyPlanPrice]
   }
   
-  @scala.inline
-  implicit class CurrencyPlanPriceMutableBuilder[Self <: CurrencyPlanPrice] (val x: Self) extends AnyVal {
+  extension [Self <: CurrencyPlanPrice](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setCurrencySymbol(value: String): Self = StObject.set(x, "currencySymbol", value.asInstanceOf[js.Any])
+    inline def setCurrencySymbol(value: String): Self = StObject.set(x, "currencySymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencySymbolUndefined: Self = StObject.set(x, "currencySymbol", js.undefined)
+    inline def setCurrencySymbolUndefined: Self = StObject.set(x, "currencySymbol", js.undefined)
     
-    @scala.inline
-    def setPerSeatPrice(value: String): Self = StObject.set(x, "perSeatPrice", value.asInstanceOf[js.Any])
+    inline def setPerSeatPrice(value: String): Self = StObject.set(x, "perSeatPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerSeatPriceUndefined: Self = StObject.set(x, "perSeatPrice", js.undefined)
+    inline def setPerSeatPriceUndefined: Self = StObject.set(x, "perSeatPrice", js.undefined)
     
-    @scala.inline
-    def setSupportIncidentFee(value: String): Self = StObject.set(x, "supportIncidentFee", value.asInstanceOf[js.Any])
+    inline def setSupportIncidentFee(value: String): Self = StObject.set(x, "supportIncidentFee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportIncidentFeeUndefined: Self = StObject.set(x, "supportIncidentFee", js.undefined)
+    inline def setSupportIncidentFeeUndefined: Self = StObject.set(x, "supportIncidentFee", js.undefined)
     
-    @scala.inline
-    def setSupportPlanFee(value: String): Self = StObject.set(x, "supportPlanFee", value.asInstanceOf[js.Any])
+    inline def setSupportPlanFee(value: String): Self = StObject.set(x, "supportPlanFee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportPlanFeeUndefined: Self = StObject.set(x, "supportPlanFee", js.undefined)
+    inline def setSupportPlanFeeUndefined: Self = StObject.set(x, "supportPlanFee", js.undefined)
     
-    @scala.inline
-    def setSupportedCardTypes(value: CreditCardTypes): Self = StObject.set(x, "supportedCardTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedCardTypes(value: CreditCardTypes): Self = StObject.set(x, "supportedCardTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedCardTypesUndefined: Self = StObject.set(x, "supportedCardTypes", js.undefined)
+    inline def setSupportedCardTypesUndefined: Self = StObject.set(x, "supportedCardTypes", js.undefined)
   }
 }

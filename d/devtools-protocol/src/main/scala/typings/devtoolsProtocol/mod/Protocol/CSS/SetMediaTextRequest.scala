@@ -14,22 +14,17 @@ trait SetMediaTextRequest extends StObject {
 }
 object SetMediaTextRequest {
   
-  @scala.inline
-  def apply(range: SourceRange, styleSheetId: StyleSheetId, text: String): SetMediaTextRequest = {
+  inline def apply(range: SourceRange, styleSheetId: StyleSheetId, text: String): SetMediaTextRequest = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], styleSheetId = styleSheetId.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetMediaTextRequest]
   }
   
-  @scala.inline
-  implicit class SetMediaTextRequestMutableBuilder[Self <: SetMediaTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetMediaTextRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

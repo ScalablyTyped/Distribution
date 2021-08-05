@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.SmartTags")
 @js.native
-class SmartTags protected ()
+/* private */ class SmartTags ()
   extends StObject
      with typings.activexWord.Word.SmartTags

@@ -18,25 +18,19 @@ trait CreateChannelBanResponse extends StObject {
 }
 object CreateChannelBanResponse {
   
-  @scala.inline
-  def apply(): CreateChannelBanResponse = {
+  inline def apply(): CreateChannelBanResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateChannelBanResponse]
   }
   
-  @scala.inline
-  implicit class CreateChannelBanResponseMutableBuilder[Self <: CreateChannelBanResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateChannelBanResponse](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
-    @scala.inline
-    def setMember(value: Identity): Self = StObject.set(x, "Member", value.asInstanceOf[js.Any])
+    inline def setMember(value: Identity): Self = StObject.set(x, "Member", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberUndefined: Self = StObject.set(x, "Member", js.undefined)
+    inline def setMemberUndefined: Self = StObject.set(x, "Member", js.undefined)
   }
 }

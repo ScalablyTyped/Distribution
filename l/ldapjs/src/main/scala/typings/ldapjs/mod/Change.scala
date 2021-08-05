@@ -13,19 +13,15 @@ trait Change extends StObject {
 }
 object Change {
   
-  @scala.inline
-  def apply(modification: StringDictionary[js.Any], operation: String): Change = {
+  inline def apply(modification: StringDictionary[js.Any], operation: String): Change = {
     val __obj = js.Dynamic.literal(modification = modification.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[Change]
   }
   
-  @scala.inline
-  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+  extension [Self <: Change](x: Self) {
     
-    @scala.inline
-    def setModification(value: StringDictionary[js.Any]): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
+    inline def setModification(value: StringDictionary[js.Any]): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

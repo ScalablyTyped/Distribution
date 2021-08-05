@@ -11,19 +11,15 @@ trait DisksResizeRequest extends StObject {
 }
 object DisksResizeRequest {
   
-  @scala.inline
-  def apply(): DisksResizeRequest = {
+  inline def apply(): DisksResizeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisksResizeRequest]
   }
   
-  @scala.inline
-  implicit class DisksResizeRequestMutableBuilder[Self <: DisksResizeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisksResizeRequest](x: Self) {
     
-    @scala.inline
-    def setSizeGb(value: String): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
+    inline def setSizeGb(value: String): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
+    inline def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
   }
 }

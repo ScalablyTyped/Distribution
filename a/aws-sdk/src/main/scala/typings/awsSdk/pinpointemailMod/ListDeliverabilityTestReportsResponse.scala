@@ -18,25 +18,19 @@ trait ListDeliverabilityTestReportsResponse extends StObject {
 }
 object ListDeliverabilityTestReportsResponse {
   
-  @scala.inline
-  def apply(DeliverabilityTestReports: DeliverabilityTestReports): ListDeliverabilityTestReportsResponse = {
+  inline def apply(DeliverabilityTestReports: DeliverabilityTestReports): ListDeliverabilityTestReportsResponse = {
     val __obj = js.Dynamic.literal(DeliverabilityTestReports = DeliverabilityTestReports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeliverabilityTestReportsResponse]
   }
   
-  @scala.inline
-  implicit class ListDeliverabilityTestReportsResponseMutableBuilder[Self <: ListDeliverabilityTestReportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeliverabilityTestReportsResponse](x: Self) {
     
-    @scala.inline
-    def setDeliverabilityTestReports(value: DeliverabilityTestReports): Self = StObject.set(x, "DeliverabilityTestReports", value.asInstanceOf[js.Any])
+    inline def setDeliverabilityTestReports(value: DeliverabilityTestReports): Self = StObject.set(x, "DeliverabilityTestReports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliverabilityTestReportsVarargs(value: DeliverabilityTestReport*): Self = StObject.set(x, "DeliverabilityTestReports", js.Array(value :_*))
+    inline def setDeliverabilityTestReportsVarargs(value: DeliverabilityTestReport*): Self = StObject.set(x, "DeliverabilityTestReports", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -27,26 +27,20 @@ trait RequestHeadersacceptstrin
 }
 object RequestHeadersacceptstrin {
   
-  @scala.inline
-  def apply(accept: js.UndefOr[String] & String, `user-agent`: js.UndefOr[String] & String): RequestHeadersacceptstrin = {
+  inline def apply(accept: js.UndefOr[String] & String, `user-agent`: js.UndefOr[String] & String): RequestHeadersacceptstrin = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any])
     __obj.updateDynamic("user-agent")(`user-agent`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestHeadersacceptstrin]
   }
   
-  @scala.inline
-  implicit class RequestHeadersacceptstrinMutableBuilder[Self <: RequestHeadersacceptstrin] (val x: Self) extends AnyVal {
+  extension [Self <: RequestHeadersacceptstrin](x: Self) {
     
-    @scala.inline
-    def setAccept(value: js.UndefOr[String] & String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: js.UndefOr[String] & String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+    inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
+    inline def setAuthorizationUndefined: Self = StObject.set(x, "authorization", js.undefined)
     
-    @scala.inline
-    def `setUser-agent`(value: js.UndefOr[String] & String): Self = StObject.set(x, "user-agent", value.asInstanceOf[js.Any])
+    inline def `setUser-agent`(value: js.UndefOr[String] & String): Self = StObject.set(x, "user-agent", value.asInstanceOf[js.Any])
   }
 }

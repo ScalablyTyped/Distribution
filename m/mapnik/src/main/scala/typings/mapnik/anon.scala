@@ -32,50 +32,36 @@ object anon {
   }
   object Areathreshold {
     
-    @scala.inline
-    def apply(): Areathreshold = {
+    inline def apply(): Areathreshold = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Areathreshold]
     }
     
-    @scala.inline
-    implicit class AreathresholdMutableBuilder[Self <: Areathreshold] (val x: Self) extends AnyVal {
+    extension [Self <: Areathreshold](x: Self) {
       
-      @scala.inline
-      def setArea_threshold(value: Double): Self = StObject.set(x, "area_threshold", value.asInstanceOf[js.Any])
+      inline def setArea_threshold(value: Double): Self = StObject.set(x, "area_threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArea_thresholdUndefined: Self = StObject.set(x, "area_threshold", js.undefined)
+      inline def setArea_thresholdUndefined: Self = StObject.set(x, "area_threshold", js.undefined)
       
-      @scala.inline
-      def setFill_type(value: Double): Self = StObject.set(x, "fill_type", value.asInstanceOf[js.Any])
+      inline def setFill_type(value: Double): Self = StObject.set(x, "fill_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFill_typeUndefined: Self = StObject.set(x, "fill_type", js.undefined)
+      inline def setFill_typeUndefined: Self = StObject.set(x, "fill_type", js.undefined)
       
-      @scala.inline
-      def setMulti_polygon_union(value: Boolean): Self = StObject.set(x, "multi_polygon_union", value.asInstanceOf[js.Any])
+      inline def setMulti_polygon_union(value: Boolean): Self = StObject.set(x, "multi_polygon_union", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMulti_polygon_unionUndefined: Self = StObject.set(x, "multi_polygon_union", js.undefined)
+      inline def setMulti_polygon_unionUndefined: Self = StObject.set(x, "multi_polygon_union", js.undefined)
       
-      @scala.inline
-      def setProcess_all_rings(value: Boolean): Self = StObject.set(x, "process_all_rings", value.asInstanceOf[js.Any])
+      inline def setProcess_all_rings(value: Boolean): Self = StObject.set(x, "process_all_rings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcess_all_ringsUndefined: Self = StObject.set(x, "process_all_rings", js.undefined)
+      inline def setProcess_all_ringsUndefined: Self = StObject.set(x, "process_all_rings", js.undefined)
       
-      @scala.inline
-      def setSimplify_distance(value: Double): Self = StObject.set(x, "simplify_distance", value.asInstanceOf[js.Any])
+      inline def setSimplify_distance(value: Double): Self = StObject.set(x, "simplify_distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimplify_distanceUndefined: Self = StObject.set(x, "simplify_distance", js.undefined)
+      inline def setSimplify_distanceUndefined: Self = StObject.set(x, "simplify_distance", js.undefined)
       
-      @scala.inline
-      def setStrictly_simple(value: Boolean): Self = StObject.set(x, "strictly_simple", value.asInstanceOf[js.Any])
+      inline def setStrictly_simple(value: Boolean): Self = StObject.set(x, "strictly_simple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictly_simpleUndefined: Self = StObject.set(x, "strictly_simple", js.undefined)
+      inline def setStrictly_simpleUndefined: Self = StObject.set(x, "strictly_simple", js.undefined)
     }
   }
   
@@ -115,110 +101,76 @@ object anon {
   }
   object Callback {
     
-    @scala.inline
-    def apply(): Callback = {
+    inline def apply(): Callback = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Callback]
     }
     
-    @scala.inline
-    implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
+    extension [Self <: Callback](x: Self) {
       
-      @scala.inline
-      def setArea_threshold(value: Double): Self = StObject.set(x, "area_threshold", value.asInstanceOf[js.Any])
+      inline def setArea_threshold(value: Double): Self = StObject.set(x, "area_threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArea_thresholdUndefined: Self = StObject.set(x, "area_threshold", js.undefined)
+      inline def setArea_thresholdUndefined: Self = StObject.set(x, "area_threshold", js.undefined)
       
-      @scala.inline
-      def setCallback(value: /* err */ Error => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: /* err */ Error => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setFill_type(value: Double): Self = StObject.set(x, "fill_type", value.asInstanceOf[js.Any])
+      inline def setFill_type(value: Double): Self = StObject.set(x, "fill_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFill_typeUndefined: Self = StObject.set(x, "fill_type", js.undefined)
+      inline def setFill_typeUndefined: Self = StObject.set(x, "fill_type", js.undefined)
       
-      @scala.inline
-      def setImage_format(value: webp | jpeg | png | tiff): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
+      inline def setImage_format(value: webp | jpeg | png | tiff): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_formatUndefined: Self = StObject.set(x, "image_format", js.undefined)
+      inline def setImage_formatUndefined: Self = StObject.set(x, "image_format", js.undefined)
       
-      @scala.inline
-      def setMax_extent(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "max_extent", value.asInstanceOf[js.Any])
+      inline def setMax_extent(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "max_extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_extentUndefined: Self = StObject.set(x, "max_extent", js.undefined)
+      inline def setMax_extentUndefined: Self = StObject.set(x, "max_extent", js.undefined)
       
-      @scala.inline
-      def setMulti_polygon_union(value: Boolean): Self = StObject.set(x, "multi_polygon_union", value.asInstanceOf[js.Any])
+      inline def setMulti_polygon_union(value: Boolean): Self = StObject.set(x, "multi_polygon_union", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMulti_polygon_unionUndefined: Self = StObject.set(x, "multi_polygon_union", js.undefined)
+      inline def setMulti_polygon_unionUndefined: Self = StObject.set(x, "multi_polygon_union", js.undefined)
       
-      @scala.inline
-      def setOffset_x(value: Double): Self = StObject.set(x, "offset_x", value.asInstanceOf[js.Any])
+      inline def setOffset_x(value: Double): Self = StObject.set(x, "offset_x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset_xUndefined: Self = StObject.set(x, "offset_x", js.undefined)
+      inline def setOffset_xUndefined: Self = StObject.set(x, "offset_x", js.undefined)
       
-      @scala.inline
-      def setOffset_y(value: Double): Self = StObject.set(x, "offset_y", value.asInstanceOf[js.Any])
+      inline def setOffset_y(value: Double): Self = StObject.set(x, "offset_y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset_yUndefined: Self = StObject.set(x, "offset_y", js.undefined)
+      inline def setOffset_yUndefined: Self = StObject.set(x, "offset_y", js.undefined)
       
-      @scala.inline
-      def setProcess_all_rings(value: Boolean): Self = StObject.set(x, "process_all_rings", value.asInstanceOf[js.Any])
+      inline def setProcess_all_rings(value: Boolean): Self = StObject.set(x, "process_all_rings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcess_all_ringsUndefined: Self = StObject.set(x, "process_all_rings", js.undefined)
+      inline def setProcess_all_ringsUndefined: Self = StObject.set(x, "process_all_rings", js.undefined)
       
-      @scala.inline
-      def setReencode(value: Boolean): Self = StObject.set(x, "reencode", value.asInstanceOf[js.Any])
+      inline def setReencode(value: Boolean): Self = StObject.set(x, "reencode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReencodeUndefined: Self = StObject.set(x, "reencode", js.undefined)
+      inline def setReencodeUndefined: Self = StObject.set(x, "reencode", js.undefined)
       
-      @scala.inline
-      def setScale_denominator(value: Double): Self = StObject.set(x, "scale_denominator", value.asInstanceOf[js.Any])
+      inline def setScale_denominator(value: Double): Self = StObject.set(x, "scale_denominator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale_denominatorUndefined: Self = StObject.set(x, "scale_denominator", js.undefined)
+      inline def setScale_denominatorUndefined: Self = StObject.set(x, "scale_denominator", js.undefined)
       
-      @scala.inline
-      def setScale_factor(value: Double): Self = StObject.set(x, "scale_factor", value.asInstanceOf[js.Any])
+      inline def setScale_factor(value: Double): Self = StObject.set(x, "scale_factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale_factorUndefined: Self = StObject.set(x, "scale_factor", js.undefined)
+      inline def setScale_factorUndefined: Self = StObject.set(x, "scale_factor", js.undefined)
       
-      @scala.inline
-      def setScaling_method(value: String): Self = StObject.set(x, "scaling_method", value.asInstanceOf[js.Any])
+      inline def setScaling_method(value: String): Self = StObject.set(x, "scaling_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaling_methodUndefined: Self = StObject.set(x, "scaling_method", js.undefined)
+      inline def setScaling_methodUndefined: Self = StObject.set(x, "scaling_method", js.undefined)
       
-      @scala.inline
-      def setSimplify_distance(value: Double): Self = StObject.set(x, "simplify_distance", value.asInstanceOf[js.Any])
+      inline def setSimplify_distance(value: Double): Self = StObject.set(x, "simplify_distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimplify_distanceUndefined: Self = StObject.set(x, "simplify_distance", js.undefined)
+      inline def setSimplify_distanceUndefined: Self = StObject.set(x, "simplify_distance", js.undefined)
       
-      @scala.inline
-      def setStrictly_simple(value: Boolean): Self = StObject.set(x, "strictly_simple", value.asInstanceOf[js.Any])
+      inline def setStrictly_simple(value: Boolean): Self = StObject.set(x, "strictly_simple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictly_simpleUndefined: Self = StObject.set(x, "strictly_simple", js.undefined)
+      inline def setStrictly_simpleUndefined: Self = StObject.set(x, "strictly_simple", js.undefined)
       
-      @scala.inline
-      def setThreading_mode(value: String): Self = StObject.set(x, "threading_mode", value.asInstanceOf[js.Any])
+      inline def setThreading_mode(value: String): Self = StObject.set(x, "threading_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreading_modeUndefined: Self = StObject.set(x, "threading_mode", js.undefined)
+      inline def setThreading_modeUndefined: Self = StObject.set(x, "threading_mode", js.undefined)
     }
   }
   
@@ -232,32 +184,24 @@ object anon {
   }
   object Compression {
     
-    @scala.inline
-    def apply(): Compression = {
+    inline def apply(): Compression = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Compression]
     }
     
-    @scala.inline
-    implicit class CompressionMutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
+    extension [Self <: Compression](x: Self) {
       
-      @scala.inline
-      def setCompression(value: Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: FILTERED | HUFFMAN_ONLY | RLE | FIXED | DEFAULT): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: FILTERED | HUFFMAN_ONLY | RLE | FIXED | DEFAULT): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
   
@@ -295,104 +239,72 @@ object anon {
   }
   object Filltype {
     
-    @scala.inline
-    def apply(): Filltype = {
+    inline def apply(): Filltype = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Filltype]
     }
     
-    @scala.inline
-    implicit class FilltypeMutableBuilder[Self <: Filltype] (val x: Self) extends AnyVal {
+    extension [Self <: Filltype](x: Self) {
       
-      @scala.inline
-      def setArea_threshold(value: Double): Self = StObject.set(x, "area_threshold", value.asInstanceOf[js.Any])
+      inline def setArea_threshold(value: Double): Self = StObject.set(x, "area_threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArea_thresholdUndefined: Self = StObject.set(x, "area_threshold", js.undefined)
+      inline def setArea_thresholdUndefined: Self = StObject.set(x, "area_threshold", js.undefined)
       
-      @scala.inline
-      def setFill_type(value: Double): Self = StObject.set(x, "fill_type", value.asInstanceOf[js.Any])
+      inline def setFill_type(value: Double): Self = StObject.set(x, "fill_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFill_typeUndefined: Self = StObject.set(x, "fill_type", js.undefined)
+      inline def setFill_typeUndefined: Self = StObject.set(x, "fill_type", js.undefined)
       
-      @scala.inline
-      def setImage_format(value: webp | jpeg | png | tiff): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
+      inline def setImage_format(value: webp | jpeg | png | tiff): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_formatUndefined: Self = StObject.set(x, "image_format", js.undefined)
+      inline def setImage_formatUndefined: Self = StObject.set(x, "image_format", js.undefined)
       
-      @scala.inline
-      def setMax_extent(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "max_extent", value.asInstanceOf[js.Any])
+      inline def setMax_extent(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "max_extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_extentUndefined: Self = StObject.set(x, "max_extent", js.undefined)
+      inline def setMax_extentUndefined: Self = StObject.set(x, "max_extent", js.undefined)
       
-      @scala.inline
-      def setMulti_polygon_union(value: Boolean): Self = StObject.set(x, "multi_polygon_union", value.asInstanceOf[js.Any])
+      inline def setMulti_polygon_union(value: Boolean): Self = StObject.set(x, "multi_polygon_union", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMulti_polygon_unionUndefined: Self = StObject.set(x, "multi_polygon_union", js.undefined)
+      inline def setMulti_polygon_unionUndefined: Self = StObject.set(x, "multi_polygon_union", js.undefined)
       
-      @scala.inline
-      def setOffset_x(value: Double): Self = StObject.set(x, "offset_x", value.asInstanceOf[js.Any])
+      inline def setOffset_x(value: Double): Self = StObject.set(x, "offset_x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset_xUndefined: Self = StObject.set(x, "offset_x", js.undefined)
+      inline def setOffset_xUndefined: Self = StObject.set(x, "offset_x", js.undefined)
       
-      @scala.inline
-      def setOffset_y(value: Double): Self = StObject.set(x, "offset_y", value.asInstanceOf[js.Any])
+      inline def setOffset_y(value: Double): Self = StObject.set(x, "offset_y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset_yUndefined: Self = StObject.set(x, "offset_y", js.undefined)
+      inline def setOffset_yUndefined: Self = StObject.set(x, "offset_y", js.undefined)
       
-      @scala.inline
-      def setProcess_all_rings(value: Boolean): Self = StObject.set(x, "process_all_rings", value.asInstanceOf[js.Any])
+      inline def setProcess_all_rings(value: Boolean): Self = StObject.set(x, "process_all_rings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcess_all_ringsUndefined: Self = StObject.set(x, "process_all_rings", js.undefined)
+      inline def setProcess_all_ringsUndefined: Self = StObject.set(x, "process_all_rings", js.undefined)
       
-      @scala.inline
-      def setReencode(value: Boolean): Self = StObject.set(x, "reencode", value.asInstanceOf[js.Any])
+      inline def setReencode(value: Boolean): Self = StObject.set(x, "reencode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReencodeUndefined: Self = StObject.set(x, "reencode", js.undefined)
+      inline def setReencodeUndefined: Self = StObject.set(x, "reencode", js.undefined)
       
-      @scala.inline
-      def setScale_denominator(value: Double): Self = StObject.set(x, "scale_denominator", value.asInstanceOf[js.Any])
+      inline def setScale_denominator(value: Double): Self = StObject.set(x, "scale_denominator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale_denominatorUndefined: Self = StObject.set(x, "scale_denominator", js.undefined)
+      inline def setScale_denominatorUndefined: Self = StObject.set(x, "scale_denominator", js.undefined)
       
-      @scala.inline
-      def setScale_factor(value: Double): Self = StObject.set(x, "scale_factor", value.asInstanceOf[js.Any])
+      inline def setScale_factor(value: Double): Self = StObject.set(x, "scale_factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale_factorUndefined: Self = StObject.set(x, "scale_factor", js.undefined)
+      inline def setScale_factorUndefined: Self = StObject.set(x, "scale_factor", js.undefined)
       
-      @scala.inline
-      def setScaling_method(value: String): Self = StObject.set(x, "scaling_method", value.asInstanceOf[js.Any])
+      inline def setScaling_method(value: String): Self = StObject.set(x, "scaling_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaling_methodUndefined: Self = StObject.set(x, "scaling_method", js.undefined)
+      inline def setScaling_methodUndefined: Self = StObject.set(x, "scaling_method", js.undefined)
       
-      @scala.inline
-      def setSimplify_distance(value: Double): Self = StObject.set(x, "simplify_distance", value.asInstanceOf[js.Any])
+      inline def setSimplify_distance(value: Double): Self = StObject.set(x, "simplify_distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimplify_distanceUndefined: Self = StObject.set(x, "simplify_distance", js.undefined)
+      inline def setSimplify_distanceUndefined: Self = StObject.set(x, "simplify_distance", js.undefined)
       
-      @scala.inline
-      def setStrictly_simple(value: Boolean): Self = StObject.set(x, "strictly_simple", value.asInstanceOf[js.Any])
+      inline def setStrictly_simple(value: Boolean): Self = StObject.set(x, "strictly_simple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictly_simpleUndefined: Self = StObject.set(x, "strictly_simple", js.undefined)
+      inline def setStrictly_simpleUndefined: Self = StObject.set(x, "strictly_simple", js.undefined)
       
-      @scala.inline
-      def setThreading_mode(value: String): Self = StObject.set(x, "threading_mode", value.asInstanceOf[js.Any])
+      inline def setThreading_mode(value: String): Self = StObject.set(x, "threading_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreading_modeUndefined: Self = StObject.set(x, "threading_mode", js.undefined)
+      inline def setThreading_modeUndefined: Self = StObject.set(x, "threading_mode", js.undefined)
     }
   }
   
@@ -404,26 +316,20 @@ object anon {
   }
   object Imageformat {
     
-    @scala.inline
-    def apply(): Imageformat = {
+    inline def apply(): Imageformat = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Imageformat]
     }
     
-    @scala.inline
-    implicit class ImageformatMutableBuilder[Self <: Imageformat] (val x: Self) extends AnyVal {
+    extension [Self <: Imageformat](x: Self) {
       
-      @scala.inline
-      def setImage_format(value: String): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
+      inline def setImage_format(value: String): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_formatUndefined: Self = StObject.set(x, "image_format", js.undefined)
+      inline def setImage_formatUndefined: Self = StObject.set(x, "image_format", js.undefined)
       
-      @scala.inline
-      def setImage_scaling(value: String): Self = StObject.set(x, "image_scaling", value.asInstanceOf[js.Any])
+      inline def setImage_scaling(value: String): Self = StObject.set(x, "image_scaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_scalingUndefined: Self = StObject.set(x, "image_scaling", js.undefined)
+      inline def setImage_scalingUndefined: Self = StObject.set(x, "image_scaling", js.undefined)
     }
   }
   
@@ -435,26 +341,20 @@ object anon {
   }
   object Imagescaling {
     
-    @scala.inline
-    def apply(): Imagescaling = {
+    inline def apply(): Imagescaling = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Imagescaling]
     }
     
-    @scala.inline
-    implicit class ImagescalingMutableBuilder[Self <: Imagescaling] (val x: Self) extends AnyVal {
+    extension [Self <: Imagescaling](x: Self) {
       
-      @scala.inline
-      def setImage_format(value: webp | jpeg | png | tiff): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
+      inline def setImage_format(value: webp | jpeg | png | tiff): Self = StObject.set(x, "image_format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_formatUndefined: Self = StObject.set(x, "image_format", js.undefined)
+      inline def setImage_formatUndefined: Self = StObject.set(x, "image_format", js.undefined)
       
-      @scala.inline
-      def setImage_scaling(value: String): Self = StObject.set(x, "image_scaling", value.asInstanceOf[js.Any])
+      inline def setImage_scaling(value: String): Self = StObject.set(x, "image_scaling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage_scalingUndefined: Self = StObject.set(x, "image_scaling", js.undefined)
+      inline def setImage_scalingUndefined: Self = StObject.set(x, "image_scaling", js.undefined)
     }
   }
   
@@ -466,26 +366,20 @@ object anon {
   }
   object Layer {
     
-    @scala.inline
-    def apply(): Layer = {
+    inline def apply(): Layer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Layer]
     }
     
-    @scala.inline
-    implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+    extension [Self <: Layer](x: Self) {
       
-      @scala.inline
-      def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+      inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
       
-      @scala.inline
-      def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+      inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+      inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     }
   }
   
@@ -497,26 +391,20 @@ object anon {
   }
   object Upgrade {
     
-    @scala.inline
-    def apply(): Upgrade = {
+    inline def apply(): Upgrade = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Upgrade]
     }
     
-    @scala.inline
-    implicit class UpgradeMutableBuilder[Self <: Upgrade] (val x: Self) extends AnyVal {
+    extension [Self <: Upgrade](x: Self) {
       
-      @scala.inline
-      def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
+      inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpgradeUndefined: Self = StObject.set(x, "upgrade", js.undefined)
+      inline def setUpgradeUndefined: Self = StObject.set(x, "upgrade", js.undefined)
       
-      @scala.inline
-      def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     }
   }
 }

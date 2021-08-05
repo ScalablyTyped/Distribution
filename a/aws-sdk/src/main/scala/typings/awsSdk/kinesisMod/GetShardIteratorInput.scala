@@ -33,34 +33,25 @@ trait GetShardIteratorInput extends StObject {
 }
 object GetShardIteratorInput {
   
-  @scala.inline
-  def apply(ShardId: ShardId, ShardIteratorType: ShardIteratorType, StreamName: StreamName): GetShardIteratorInput = {
+  inline def apply(ShardId: ShardId, ShardIteratorType: ShardIteratorType, StreamName: StreamName): GetShardIteratorInput = {
     val __obj = js.Dynamic.literal(ShardId = ShardId.asInstanceOf[js.Any], ShardIteratorType = ShardIteratorType.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetShardIteratorInput]
   }
   
-  @scala.inline
-  implicit class GetShardIteratorInputMutableBuilder[Self <: GetShardIteratorInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetShardIteratorInput](x: Self) {
     
-    @scala.inline
-    def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
+    inline def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardIteratorType(value: ShardIteratorType): Self = StObject.set(x, "ShardIteratorType", value.asInstanceOf[js.Any])
+    inline def setShardIteratorType(value: ShardIteratorType): Self = StObject.set(x, "ShardIteratorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "StartingSequenceNumber", value.asInstanceOf[js.Any])
+    inline def setStartingSequenceNumber(value: SequenceNumber): Self = StObject.set(x, "StartingSequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingSequenceNumberUndefined: Self = StObject.set(x, "StartingSequenceNumber", js.undefined)
+    inline def setStartingSequenceNumberUndefined: Self = StObject.set(x, "StartingSequenceNumber", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

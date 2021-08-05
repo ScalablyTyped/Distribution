@@ -18,24 +18,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimingFunction extends StObject
 object TimingFunction {
   
-  @scala.inline
-  def ease: typings.aliApp.aliAppStrings.ease = "ease".asInstanceOf[typings.aliApp.aliAppStrings.ease]
+  inline def ease: typings.aliApp.aliAppStrings.ease = "ease".asInstanceOf[typings.aliApp.aliAppStrings.ease]
   
-  @scala.inline
-  def `ease-in`: typings.aliApp.aliAppStrings.`ease-in` = "ease-in".asInstanceOf[typings.aliApp.aliAppStrings.`ease-in`]
+  inline def `ease-in`: typings.aliApp.aliAppStrings.`ease-in` = "ease-in".asInstanceOf[typings.aliApp.aliAppStrings.`ease-in`]
   
-  @scala.inline
-  def `ease-in-out`: typings.aliApp.aliAppStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.aliApp.aliAppStrings.`ease-in-out`]
+  inline def `ease-in-out`: typings.aliApp.aliAppStrings.`ease-in-out` = "ease-in-out".asInstanceOf[typings.aliApp.aliAppStrings.`ease-in-out`]
   
-  @scala.inline
-  def `ease-out`: typings.aliApp.aliAppStrings.`ease-out` = "ease-out".asInstanceOf[typings.aliApp.aliAppStrings.`ease-out`]
+  inline def `ease-out`: typings.aliApp.aliAppStrings.`ease-out` = "ease-out".asInstanceOf[typings.aliApp.aliAppStrings.`ease-out`]
   
-  @scala.inline
-  def linear: typings.aliApp.aliAppStrings.linear = "linear".asInstanceOf[typings.aliApp.aliAppStrings.linear]
+  inline def linear: typings.aliApp.aliAppStrings.linear = "linear".asInstanceOf[typings.aliApp.aliAppStrings.linear]
   
-  @scala.inline
-  def `step-end`: typings.aliApp.aliAppStrings.`step-end` = "step-end".asInstanceOf[typings.aliApp.aliAppStrings.`step-end`]
+  inline def `step-end`: typings.aliApp.aliAppStrings.`step-end` = "step-end".asInstanceOf[typings.aliApp.aliAppStrings.`step-end`]
   
-  @scala.inline
-  def `step-start`: typings.aliApp.aliAppStrings.`step-start` = "step-start".asInstanceOf[typings.aliApp.aliAppStrings.`step-start`]
+  inline def `step-start`: typings.aliApp.aliAppStrings.`step-start` = "step-start".asInstanceOf[typings.aliApp.aliAppStrings.`step-start`]
 }

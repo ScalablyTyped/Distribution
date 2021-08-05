@@ -53,8 +53,7 @@ object mod {
     /* 10 */ val PROCESSING_REVERT_ERROR: typings.filepond.mod.FileStatus.PROCESSING_REVERT_ERROR & Double = js.native
   }
   
-  @scala.inline
-  def registerPlugin(plugins: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerPlugin(plugins: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait FilePondProps
     extends StObject
@@ -66,23 +65,18 @@ object mod {
   }
   object FilePondProps {
     
-    @scala.inline
-    def apply(): FilePondProps = {
+    inline def apply(): FilePondProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilePondProps]
     }
     
-    @scala.inline
-    implicit class FilePondPropsMutableBuilder[Self <: FilePondProps] (val x: Self) extends AnyVal {
+    extension [Self <: FilePondProps](x: Self) {
       
-      @scala.inline
-      def setAcceptedFileTypes(value: js.Array[String]): Self = StObject.set(x, "acceptedFileTypes", value.asInstanceOf[js.Any])
+      inline def setAcceptedFileTypes(value: js.Array[String]): Self = StObject.set(x, "acceptedFileTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptedFileTypesUndefined: Self = StObject.set(x, "acceptedFileTypes", js.undefined)
+      inline def setAcceptedFileTypesUndefined: Self = StObject.set(x, "acceptedFileTypes", js.undefined)
       
-      @scala.inline
-      def setAcceptedFileTypesVarargs(value: String*): Self = StObject.set(x, "acceptedFileTypes", js.Array(value :_*))
+      inline def setAcceptedFileTypesVarargs(value: String*): Self = StObject.set(x, "acceptedFileTypes", js.Array(value :_*))
     }
   }
   

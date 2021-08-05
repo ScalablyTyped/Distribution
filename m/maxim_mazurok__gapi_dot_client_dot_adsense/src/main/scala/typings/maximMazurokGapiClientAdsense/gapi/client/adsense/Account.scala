@@ -28,58 +28,41 @@ trait Account extends StObject {
 }
 object Account {
   
-  @scala.inline
-  def apply(): Account = {
+  inline def apply(): Account = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Account]
   }
   
-  @scala.inline
-  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+  extension [Self <: Account](x: Self) {
     
-    @scala.inline
-    def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
+    inline def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreation_timeUndefined: Self = StObject.set(x, "creation_time", js.undefined)
+    inline def setCreation_timeUndefined: Self = StObject.set(x, "creation_time", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPremium(value: Boolean): Self = StObject.set(x, "premium", value.asInstanceOf[js.Any])
+    inline def setPremium(value: Boolean): Self = StObject.set(x, "premium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPremiumUndefined: Self = StObject.set(x, "premium", js.undefined)
+    inline def setPremiumUndefined: Self = StObject.set(x, "premium", js.undefined)
     
-    @scala.inline
-    def setSubAccounts(value: js.Array[Account]): Self = StObject.set(x, "subAccounts", value.asInstanceOf[js.Any])
+    inline def setSubAccounts(value: js.Array[Account]): Self = StObject.set(x, "subAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubAccountsUndefined: Self = StObject.set(x, "subAccounts", js.undefined)
+    inline def setSubAccountsUndefined: Self = StObject.set(x, "subAccounts", js.undefined)
     
-    @scala.inline
-    def setSubAccountsVarargs(value: Account*): Self = StObject.set(x, "subAccounts", js.Array(value :_*))
+    inline def setSubAccountsVarargs(value: Account*): Self = StObject.set(x, "subAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

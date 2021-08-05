@@ -13,19 +13,15 @@ trait DescribeDominantLanguageDetectionJobResponse extends StObject {
 }
 object DescribeDominantLanguageDetectionJobResponse {
   
-  @scala.inline
-  def apply(): DescribeDominantLanguageDetectionJobResponse = {
+  inline def apply(): DescribeDominantLanguageDetectionJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDominantLanguageDetectionJobResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDominantLanguageDetectionJobResponseMutableBuilder[Self <: DescribeDominantLanguageDetectionJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDominantLanguageDetectionJobResponse](x: Self) {
     
-    @scala.inline
-    def setDominantLanguageDetectionJobProperties(value: DominantLanguageDetectionJobProperties): Self = StObject.set(x, "DominantLanguageDetectionJobProperties", value.asInstanceOf[js.Any])
+    inline def setDominantLanguageDetectionJobProperties(value: DominantLanguageDetectionJobProperties): Self = StObject.set(x, "DominantLanguageDetectionJobProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDominantLanguageDetectionJobPropertiesUndefined: Self = StObject.set(x, "DominantLanguageDetectionJobProperties", js.undefined)
+    inline def setDominantLanguageDetectionJobPropertiesUndefined: Self = StObject.set(x, "DominantLanguageDetectionJobProperties", js.undefined)
   }
 }

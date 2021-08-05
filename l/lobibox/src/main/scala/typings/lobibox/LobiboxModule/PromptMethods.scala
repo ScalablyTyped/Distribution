@@ -12,25 +12,19 @@ trait PromptMethods extends StObject {
 }
 object PromptMethods {
   
-  @scala.inline
-  def apply(): PromptMethods = {
+  inline def apply(): PromptMethods = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PromptMethods]
   }
   
-  @scala.inline
-  implicit class PromptMethodsMutableBuilder[Self <: PromptMethods] (val x: Self) extends AnyVal {
+  extension [Self <: PromptMethods](x: Self) {
     
-    @scala.inline
-    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* val */ js.UndefOr[String] => PromptMethods): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* val */ js.UndefOr[String] => PromptMethods): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
   }
 }

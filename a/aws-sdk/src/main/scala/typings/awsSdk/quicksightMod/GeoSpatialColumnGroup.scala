@@ -23,25 +23,19 @@ trait GeoSpatialColumnGroup extends StObject {
 }
 object GeoSpatialColumnGroup {
   
-  @scala.inline
-  def apply(Columns: ColumnList, CountryCode: GeoSpatialCountryCode, Name: ColumnGroupName): GeoSpatialColumnGroup = {
+  inline def apply(Columns: ColumnList, CountryCode: GeoSpatialCountryCode, Name: ColumnGroupName): GeoSpatialColumnGroup = {
     val __obj = js.Dynamic.literal(Columns = Columns.asInstanceOf[js.Any], CountryCode = CountryCode.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoSpatialColumnGroup]
   }
   
-  @scala.inline
-  implicit class GeoSpatialColumnGroupMutableBuilder[Self <: GeoSpatialColumnGroup] (val x: Self) extends AnyVal {
+  extension [Self <: GeoSpatialColumnGroup](x: Self) {
     
-    @scala.inline
-    def setColumns(value: ColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: ColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "Columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "Columns", js.Array(value :_*))
     
-    @scala.inline
-    def setCountryCode(value: GeoSpatialCountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: GeoSpatialCountryCode): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ColumnGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ColumnGroupName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

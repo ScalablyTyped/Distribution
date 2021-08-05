@@ -18,8 +18,7 @@ trait ViewportComponentFullInfo extends StObject {
 }
 object ViewportComponentFullInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childs: StringDictionary[ViewportComponentInfo],
     componentInfo: ViewportComponentInfo,
     mapUniqueKey: String
@@ -28,16 +27,12 @@ object ViewportComponentFullInfo {
     __obj.asInstanceOf[ViewportComponentFullInfo]
   }
   
-  @scala.inline
-  implicit class ViewportComponentFullInfoMutableBuilder[Self <: ViewportComponentFullInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ViewportComponentFullInfo](x: Self) {
     
-    @scala.inline
-    def setChilds(value: StringDictionary[ViewportComponentInfo]): Self = StObject.set(x, "childs", value.asInstanceOf[js.Any])
+    inline def setChilds(value: StringDictionary[ViewportComponentInfo]): Self = StObject.set(x, "childs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentInfo(value: ViewportComponentInfo): Self = StObject.set(x, "componentInfo", value.asInstanceOf[js.Any])
+    inline def setComponentInfo(value: ViewportComponentInfo): Self = StObject.set(x, "componentInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
+    inline def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
   }
 }

@@ -16,37 +16,27 @@ trait SFCDescriptor extends StObject {
 }
 object SFCDescriptor {
   
-  @scala.inline
-  def apply(customBlocks: js.Array[SFCBlock], styles: js.Array[SFCBlock]): SFCDescriptor = {
+  inline def apply(customBlocks: js.Array[SFCBlock], styles: js.Array[SFCBlock]): SFCDescriptor = {
     val __obj = js.Dynamic.literal(customBlocks = customBlocks.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCDescriptor]
   }
   
-  @scala.inline
-  implicit class SFCDescriptorMutableBuilder[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: SFCDescriptor](x: Self) {
     
-    @scala.inline
-    def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
+    inline def setCustomBlocks(value: js.Array[SFCBlock]): Self = StObject.set(x, "customBlocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
+    inline def setCustomBlocksVarargs(value: SFCBlock*): Self = StObject.set(x, "customBlocks", js.Array(value :_*))
     
-    @scala.inline
-    def setScript(value: SFCBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: SFCBlock): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     
-    @scala.inline
-    def setStyles(value: js.Array[SFCBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[SFCBlock]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: SFCBlock*): Self = StObject.set(x, "styles", js.Array(value :_*))
     
-    @scala.inline
-    def setTemplate(value: SFCBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: SFCBlock): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

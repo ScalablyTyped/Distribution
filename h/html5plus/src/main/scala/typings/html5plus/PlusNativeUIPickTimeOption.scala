@@ -47,37 +47,27 @@ trait PlusNativeUIPickTimeOption extends StObject {
 }
 object PlusNativeUIPickTimeOption {
   
-  @scala.inline
-  def apply(): PlusNativeUIPickTimeOption = {
+  inline def apply(): PlusNativeUIPickTimeOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeUIPickTimeOption]
   }
   
-  @scala.inline
-  implicit class PlusNativeUIPickTimeOptionMutableBuilder[Self <: PlusNativeUIPickTimeOption] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeUIPickTimeOption](x: Self) {
     
-    @scala.inline
-    def setIs24Hour(value: Boolean): Self = StObject.set(x, "is24Hour", value.asInstanceOf[js.Any])
+    inline def setIs24Hour(value: Boolean): Self = StObject.set(x, "is24Hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs24HourUndefined: Self = StObject.set(x, "is24Hour", js.undefined)
+    inline def setIs24HourUndefined: Self = StObject.set(x, "is24Hour", js.undefined)
     
-    @scala.inline
-    def setPopover(value: js.Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
+    inline def setPopover(value: js.Any): Self = StObject.set(x, "popover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
+    inline def setPopoverUndefined: Self = StObject.set(x, "popover", js.undefined)
     
-    @scala.inline
-    def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -28,40 +28,29 @@ trait ModifyVpcEndpointServicePermissionsRequest extends StObject {
 }
 object ModifyVpcEndpointServicePermissionsRequest {
   
-  @scala.inline
-  def apply(ServiceId: VpcEndpointServiceId): ModifyVpcEndpointServicePermissionsRequest = {
+  inline def apply(ServiceId: VpcEndpointServiceId): ModifyVpcEndpointServicePermissionsRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyVpcEndpointServicePermissionsRequest]
   }
   
-  @scala.inline
-  implicit class ModifyVpcEndpointServicePermissionsRequestMutableBuilder[Self <: ModifyVpcEndpointServicePermissionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyVpcEndpointServicePermissionsRequest](x: Self) {
     
-    @scala.inline
-    def setAddAllowedPrincipals(value: ValueStringList): Self = StObject.set(x, "AddAllowedPrincipals", value.asInstanceOf[js.Any])
+    inline def setAddAllowedPrincipals(value: ValueStringList): Self = StObject.set(x, "AddAllowedPrincipals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddAllowedPrincipalsUndefined: Self = StObject.set(x, "AddAllowedPrincipals", js.undefined)
+    inline def setAddAllowedPrincipalsUndefined: Self = StObject.set(x, "AddAllowedPrincipals", js.undefined)
     
-    @scala.inline
-    def setAddAllowedPrincipalsVarargs(value: String*): Self = StObject.set(x, "AddAllowedPrincipals", js.Array(value :_*))
+    inline def setAddAllowedPrincipalsVarargs(value: String*): Self = StObject.set(x, "AddAllowedPrincipals", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setRemoveAllowedPrincipals(value: ValueStringList): Self = StObject.set(x, "RemoveAllowedPrincipals", value.asInstanceOf[js.Any])
+    inline def setRemoveAllowedPrincipals(value: ValueStringList): Self = StObject.set(x, "RemoveAllowedPrincipals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAllowedPrincipalsUndefined: Self = StObject.set(x, "RemoveAllowedPrincipals", js.undefined)
+    inline def setRemoveAllowedPrincipalsUndefined: Self = StObject.set(x, "RemoveAllowedPrincipals", js.undefined)
     
-    @scala.inline
-    def setRemoveAllowedPrincipalsVarargs(value: String*): Self = StObject.set(x, "RemoveAllowedPrincipals", js.Array(value :_*))
+    inline def setRemoveAllowedPrincipalsVarargs(value: String*): Self = StObject.set(x, "RemoveAllowedPrincipals", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceId(value: VpcEndpointServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: VpcEndpointServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
   }
 }

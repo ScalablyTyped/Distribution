@@ -38,19 +38,15 @@ object adaptersMod extends Shortcut {
     @js.native
     val ^ : Adapters = js.native
     
-    @scala.inline
-    implicit class AdaptersMutableBuilder[Self <: Adapters] (val x: Self) extends AnyVal {
+    extension [Self <: Adapters](x: Self) {
       
-      @scala.inline
-      def setDefault(
+      inline def setDefault(
         value: (/* typeOrmConfig */ ConnectionOptions, /* options */ js.UndefOr[Models]) => Adapter[js.Any, Profile, js.Any, js.Any]
       ): Self = StObject.set(x, "Default", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrisma(value: PrismaAdapter): Self = StObject.set(x, "Prisma", value.asInstanceOf[js.Any])
+      inline def setPrisma(value: PrismaAdapter): Self = StObject.set(x, "Prisma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeORM(value: TypeORMAdapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "TypeORM", value.asInstanceOf[js.Any])
+      inline def setTypeORM(value: TypeORMAdapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "TypeORM", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,19 +212,16 @@ object adaptersMod extends Shortcut {
   }
   object Adapter {
     
-    @scala.inline
-    def apply[TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */](
+    inline def apply[TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */](
       getAdapter: AppOptions => js.Promise[AdapterInstance[TUser, TProfile, TSession, TVerificationRequest]]
     ): Adapter[TUser, TProfile, TSession, TVerificationRequest] = {
       val __obj = js.Dynamic.literal(getAdapter = js.Any.fromFunction1(getAdapter))
       __obj.asInstanceOf[Adapter[TUser, TProfile, TSession, TVerificationRequest]]
     }
     
-    @scala.inline
-    implicit class AdapterMutableBuilder[Self <: Adapter[?, ?, ?, ?], TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */] (val x: Self & (Adapter[TUser, TProfile, TSession, TVerificationRequest])) extends AnyVal {
+    extension [Self <: Adapter[?, ?, ?, ?], TUser /* <: User */, TProfile /* <: Profile */, TSession /* <: Session */, TVerificationRequest /* <: VerificationRequest */](x: Self & (Adapter[TUser, TProfile, TSession, TVerificationRequest])) {
       
-      @scala.inline
-      def setGetAdapter(value: AppOptions => js.Promise[AdapterInstance[TUser, TProfile, TSession, TVerificationRequest]]): Self = StObject.set(x, "getAdapter", js.Any.fromFunction1(value))
+      inline def setGetAdapter(value: AppOptions => js.Promise[AdapterInstance[TUser, TProfile, TSession, TVerificationRequest]]): Self = StObject.set(x, "getAdapter", js.Any.fromFunction1(value))
     }
   }
   
@@ -307,8 +300,7 @@ object adaptersMod extends Shortcut {
   }
   object EmailSessionProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbackUrl: String,
       id: String,
       name: String,
@@ -321,17 +313,13 @@ object adaptersMod extends Shortcut {
       __obj.asInstanceOf[EmailSessionProvider]
     }
     
-    @scala.inline
-    implicit class EmailSessionProviderMutableBuilder[Self <: EmailSessionProvider] (val x: Self) extends AnyVal {
+    extension [Self <: EmailSessionProvider](x: Self) {
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setSendVerificationRequest(value: SendVerificationRequestParams => js.Promise[Unit]): Self = StObject.set(x, "sendVerificationRequest", js.Any.fromFunction1(value))
+      inline def setSendVerificationRequest(value: SendVerificationRequestParams => js.Promise[Unit]): Self = StObject.set(x, "sendVerificationRequest", js.Any.fromFunction1(value))
     }
   }
   
@@ -341,17 +329,14 @@ object adaptersMod extends Shortcut {
   }
   object PrismaAdapter {
     
-    @scala.inline
-    def apply(Adapter: ModelMapping => Adapter[js.Any, js.Any, js.Any, js.Any]): PrismaAdapter = {
+    inline def apply(Adapter: ModelMapping => Adapter[js.Any, js.Any, js.Any, js.Any]): PrismaAdapter = {
       val __obj = js.Dynamic.literal(Adapter = js.Any.fromFunction1(Adapter))
       __obj.asInstanceOf[PrismaAdapter]
     }
     
-    @scala.inline
-    implicit class PrismaAdapterMutableBuilder[Self <: PrismaAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: PrismaAdapter](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: ModelMapping => Adapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "Adapter", js.Any.fromFunction1(value))
+      inline def setAdapter(value: ModelMapping => Adapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "Adapter", js.Any.fromFunction1(value))
     }
   }
   
@@ -367,35 +352,26 @@ object adaptersMod extends Shortcut {
   }
   object Profile {
     
-    @scala.inline
-    def apply(id: String, name: String): Profile = {
+    inline def apply(id: String, name: String): Profile = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], email = null)
       __obj.asInstanceOf[Profile]
     }
     
-    @scala.inline
-    implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+    extension [Self <: Profile](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailNull: Self = StObject.set(x, "email", null)
+      inline def setEmailNull: Self = StObject.set(x, "email", null)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageNull: Self = StObject.set(x, "image", null)
+      inline def setImageNull: Self = StObject.set(x, "image", null)
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -415,29 +391,22 @@ object adaptersMod extends Shortcut {
   }
   object SendVerificationRequestParams {
     
-    @scala.inline
-    def apply(baseUrl: String, identifier: String, provider: SessionProvider, token: String, url: String): SendVerificationRequestParams = {
+    inline def apply(baseUrl: String, identifier: String, provider: SessionProvider, token: String, url: String): SendVerificationRequestParams = {
       val __obj = js.Dynamic.literal(baseUrl = baseUrl.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendVerificationRequestParams]
     }
     
-    @scala.inline
-    implicit class SendVerificationRequestParamsMutableBuilder[Self <: SendVerificationRequestParams] (val x: Self) extends AnyVal {
+    extension [Self <: SendVerificationRequestParams](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider(value: SessionProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: SessionProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -453,26 +422,20 @@ object adaptersMod extends Shortcut {
   }
   object Session {
     
-    @scala.inline
-    def apply(accessToken: String, expires: Date, sessionToken: String, userId: String | Double | js.Object): Session = {
+    inline def apply(accessToken: String, expires: Date, sessionToken: String, userId: String | Double | js.Object): Session = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], sessionToken = sessionToken.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Session]
     }
     
-    @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+    extension [Self <: Session](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String | Double | js.Object): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String | Double | js.Object): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -498,23 +461,18 @@ object adaptersMod extends Shortcut {
   }
   object VerificationRequest {
     
-    @scala.inline
-    def apply(expires: Date, identifier: String, token: String): VerificationRequest = {
+    inline def apply(expires: Date, identifier: String, token: String): VerificationRequest = {
       val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerificationRequest]
     }
     
-    @scala.inline
-    implicit class VerificationRequestMutableBuilder[Self <: VerificationRequest] (val x: Self) extends AnyVal {
+    extension [Self <: VerificationRequest](x: Self) {
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   

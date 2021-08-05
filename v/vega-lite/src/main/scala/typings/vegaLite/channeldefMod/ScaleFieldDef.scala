@@ -12,8 +12,7 @@ trait ScaleFieldDef[F /* <: Field */, T /* <: Type */, B /* <: Bin */]
      with ScaleMixins
 object ScaleFieldDef {
   
-  @scala.inline
-  def apply[F /* <: Field */, T /* <: Type */, B /* <: Bin */](): ScaleFieldDef[F, T, B] = {
+  inline def apply[F /* <: Field */, T /* <: Type */, B /* <: Bin */](): ScaleFieldDef[F, T, B] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaleFieldDef[F, T, B]]
   }

@@ -10,6 +10,5 @@ object Models {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Model]
+  inline def default(): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Model]
 }

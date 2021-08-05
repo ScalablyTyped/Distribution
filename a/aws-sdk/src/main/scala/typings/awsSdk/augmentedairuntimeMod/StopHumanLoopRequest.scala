@@ -13,16 +13,13 @@ trait StopHumanLoopRequest extends StObject {
 }
 object StopHumanLoopRequest {
   
-  @scala.inline
-  def apply(HumanLoopName: HumanLoopName): StopHumanLoopRequest = {
+  inline def apply(HumanLoopName: HumanLoopName): StopHumanLoopRequest = {
     val __obj = js.Dynamic.literal(HumanLoopName = HumanLoopName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopHumanLoopRequest]
   }
   
-  @scala.inline
-  implicit class StopHumanLoopRequestMutableBuilder[Self <: StopHumanLoopRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopHumanLoopRequest](x: Self) {
     
-    @scala.inline
-    def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
+    inline def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,27 +14,22 @@ trait TextShadowProps extends StObject {
 }
 object TextShadowProps {
   
-  @scala.inline
-  def apply(): TextShadowProps = {
+  inline def apply(): TextShadowProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextShadowProps]
   }
   
-  @scala.inline
-  implicit class TextShadowPropsMutableBuilder[Self <: TextShadowProps] (val x: Self) extends AnyVal {
+  extension [Self <: TextShadowProps](x: Self) {
     
-    @scala.inline
-    def setTextShadow(
+    inline def setTextShadow(
       value: ResponsiveValue[
           (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double
         ]
     ): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
+    inline def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
     
-    @scala.inline
-    def setTextShadowVarargs(
+    inline def setTextShadowVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextShadow */ js.Any) | Double)*
     ): Self = StObject.set(x, "textShadow", js.Array(value :_*))
   }

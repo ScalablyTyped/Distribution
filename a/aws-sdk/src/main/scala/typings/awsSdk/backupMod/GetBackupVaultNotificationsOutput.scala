@@ -28,40 +28,29 @@ trait GetBackupVaultNotificationsOutput extends StObject {
 }
 object GetBackupVaultNotificationsOutput {
   
-  @scala.inline
-  def apply(): GetBackupVaultNotificationsOutput = {
+  inline def apply(): GetBackupVaultNotificationsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBackupVaultNotificationsOutput]
   }
   
-  @scala.inline
-  implicit class GetBackupVaultNotificationsOutputMutableBuilder[Self <: GetBackupVaultNotificationsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackupVaultNotificationsOutput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
+    inline def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
+    inline def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
     
-    @scala.inline
-    def setBackupVaultEvents(value: BackupVaultEvents): Self = StObject.set(x, "BackupVaultEvents", value.asInstanceOf[js.Any])
+    inline def setBackupVaultEvents(value: BackupVaultEvents): Self = StObject.set(x, "BackupVaultEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultEventsUndefined: Self = StObject.set(x, "BackupVaultEvents", js.undefined)
+    inline def setBackupVaultEventsUndefined: Self = StObject.set(x, "BackupVaultEvents", js.undefined)
     
-    @scala.inline
-    def setBackupVaultEventsVarargs(value: BackupVaultEvent*): Self = StObject.set(x, "BackupVaultEvents", js.Array(value :_*))
+    inline def setBackupVaultEventsVarargs(value: BackupVaultEvent*): Self = StObject.set(x, "BackupVaultEvents", js.Array(value :_*))
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultNameUndefined: Self = StObject.set(x, "BackupVaultName", js.undefined)
+    inline def setBackupVaultNameUndefined: Self = StObject.set(x, "BackupVaultName", js.undefined)
     
-    @scala.inline
-    def setSNSTopicArn(value: ARN): Self = StObject.set(x, "SNSTopicArn", value.asInstanceOf[js.Any])
+    inline def setSNSTopicArn(value: ARN): Self = StObject.set(x, "SNSTopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSNSTopicArnUndefined: Self = StObject.set(x, "SNSTopicArn", js.undefined)
+    inline def setSNSTopicArnUndefined: Self = StObject.set(x, "SNSTopicArn", js.undefined)
   }
 }

@@ -13,20 +13,16 @@ object anon {
   }
   object UseWebWorkers {
     
-    @scala.inline
-    def apply(): UseWebWorkers = {
+    inline def apply(): UseWebWorkers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UseWebWorkers]
     }
     
-    @scala.inline
-    implicit class UseWebWorkersMutableBuilder[Self <: UseWebWorkers] (val x: Self) extends AnyVal {
+    extension [Self <: UseWebWorkers](x: Self) {
       
-      @scala.inline
-      def setUseWebWorkers(value: Boolean): Self = StObject.set(x, "useWebWorkers", value.asInstanceOf[js.Any])
+      inline def setUseWebWorkers(value: Boolean): Self = StObject.set(x, "useWebWorkers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseWebWorkersUndefined: Self = StObject.set(x, "useWebWorkers", js.undefined)
+      inline def setUseWebWorkersUndefined: Self = StObject.set(x, "useWebWorkers", js.undefined)
     }
   }
 }

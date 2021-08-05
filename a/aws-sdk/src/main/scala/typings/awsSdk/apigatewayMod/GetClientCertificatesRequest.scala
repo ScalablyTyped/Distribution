@@ -18,25 +18,19 @@ trait GetClientCertificatesRequest extends StObject {
 }
 object GetClientCertificatesRequest {
   
-  @scala.inline
-  def apply(): GetClientCertificatesRequest = {
+  inline def apply(): GetClientCertificatesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetClientCertificatesRequest]
   }
   
-  @scala.inline
-  implicit class GetClientCertificatesRequestMutableBuilder[Self <: GetClientCertificatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetClientCertificatesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

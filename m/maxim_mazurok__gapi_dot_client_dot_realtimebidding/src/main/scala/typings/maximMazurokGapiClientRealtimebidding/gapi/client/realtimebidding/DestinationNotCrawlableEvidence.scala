@@ -17,31 +17,23 @@ trait DestinationNotCrawlableEvidence extends StObject {
 }
 object DestinationNotCrawlableEvidence {
   
-  @scala.inline
-  def apply(): DestinationNotCrawlableEvidence = {
+  inline def apply(): DestinationNotCrawlableEvidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestinationNotCrawlableEvidence]
   }
   
-  @scala.inline
-  implicit class DestinationNotCrawlableEvidenceMutableBuilder[Self <: DestinationNotCrawlableEvidence] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationNotCrawlableEvidence](x: Self) {
     
-    @scala.inline
-    def setCrawlTime(value: String): Self = StObject.set(x, "crawlTime", value.asInstanceOf[js.Any])
+    inline def setCrawlTime(value: String): Self = StObject.set(x, "crawlTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlTimeUndefined: Self = StObject.set(x, "crawlTime", js.undefined)
+    inline def setCrawlTimeUndefined: Self = StObject.set(x, "crawlTime", js.undefined)
     
-    @scala.inline
-    def setCrawledUrl(value: String): Self = StObject.set(x, "crawledUrl", value.asInstanceOf[js.Any])
+    inline def setCrawledUrl(value: String): Self = StObject.set(x, "crawledUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawledUrlUndefined: Self = StObject.set(x, "crawledUrl", js.undefined)
+    inline def setCrawledUrlUndefined: Self = StObject.set(x, "crawledUrl", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

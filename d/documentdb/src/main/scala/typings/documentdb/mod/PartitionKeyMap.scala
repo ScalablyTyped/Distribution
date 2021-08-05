@@ -12,19 +12,15 @@ trait PartitionKeyMap extends StObject {
 }
 object PartitionKeyMap {
   
-  @scala.inline
-  def apply(link: String, range: Range): PartitionKeyMap = {
+  inline def apply(link: String, range: Range): PartitionKeyMap = {
     val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartitionKeyMap]
   }
   
-  @scala.inline
-  implicit class PartitionKeyMapMutableBuilder[Self <: PartitionKeyMap] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionKeyMap](x: Self) {
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

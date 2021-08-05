@@ -8,21 +8,17 @@ object uifabricReactHooksStrings {
   
   @js.native
   sealed trait defaultValueProp extends StObject
-  @scala.inline
-  def defaultValueProp: defaultValueProp = "defaultValueProp".asInstanceOf[defaultValueProp]
+  inline def defaultValueProp: defaultValueProp = "defaultValueProp".asInstanceOf[defaultValueProp]
   
   @js.native
   sealed trait onChangeProp extends StObject
-  @scala.inline
-  def onChangeProp: onChangeProp = "onChangeProp".asInstanceOf[onChangeProp]
+  inline def onChangeProp: onChangeProp = "onChangeProp".asInstanceOf[onChangeProp]
   
   @js.native
   sealed trait readOnlyProp extends StObject
-  @scala.inline
-  def readOnlyProp: readOnlyProp = "readOnlyProp".asInstanceOf[readOnlyProp]
+  inline def readOnlyProp: readOnlyProp = "readOnlyProp".asInstanceOf[readOnlyProp]
   
   @js.native
   sealed trait valueProp extends StObject
-  @scala.inline
-  def valueProp: valueProp = "valueProp".asInstanceOf[valueProp]
+  inline def valueProp: valueProp = "valueProp".asInstanceOf[valueProp]
 }

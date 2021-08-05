@@ -80,8 +80,7 @@ object Appearance {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def create(model: IModel): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -92,8 +91,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInControlBarButtonUnderAppearance(container: ControlBarButton): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInControlBarButtonUnderAppearance(container: ControlBarButton): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -104,8 +102,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInGridColumnUnderAppearance(container: GridColumn): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInGridColumnUnderAppearance(container: GridColumn): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridColumnUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -116,8 +113,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderAppearance(container: LayoutGridColumn): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInLayoutGridColumnUnderAppearance(container: LayoutGridColumn): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -128,8 +124,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridRowUnderAppearance(container: LayoutGridRow): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridRowUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInLayoutGridRowUnderAppearance(container: LayoutGridRow): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridRowUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -140,8 +135,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderAppearance(container: Layout): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInLayoutUnderAppearance(container: Layout): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -152,8 +146,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderAppearance(container: NavigationListItem): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInNavigationListItemUnderAppearance(container: NavigationListItem): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -164,8 +157,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPageTemplateUnderAppearance(container: PageTemplate): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageTemplateUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInPageTemplateUnderAppearance(container: PageTemplate): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageTemplateUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -176,8 +168,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPageUnderAppearance(container: Page): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInPageUnderAppearance(container: Page): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -188,8 +179,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderAppearance(container: ScrollContainerRegion): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInScrollContainerRegionUnderAppearance(container: ScrollContainerRegion): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -200,8 +190,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderAppearance(container: TableCell): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInTableCellUnderAppearance(container: TableCell): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -212,8 +201,7 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInTableRowUnderAppearance(container: TableRow): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInTableRowUnderAppearance(container: TableRow): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /**
     * Creates and returns a new Appearance instance in the SDK and on the server.
@@ -224,20 +212,17 @@ object Appearance {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetUnderAppearance(container: Widget): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
+  inline def createInWidgetUnderAppearance(container: Widget): Appearance = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetUnderAppearance")(container.asInstanceOf[js.Any]).asInstanceOf[Appearance]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Appearance.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.Appearance.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

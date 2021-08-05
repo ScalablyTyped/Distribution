@@ -78,8 +78,7 @@ object Input {
     }
     object Axis {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         destroy: () => Unit,
         events: EventEmitter,
         getValue: () => Double,
@@ -92,29 +91,21 @@ object Input {
         __obj.asInstanceOf[Axis]
       }
       
-      @scala.inline
-      implicit class AxisMutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
+      extension [Self <: Axis](x: Self) {
         
-        @scala.inline
-        def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+        inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+        inline def setGetValue(value: () => Double): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPad(value: typings.phaser.Phaser.Input.Gamepad.Gamepad): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+        inline def setPad(value: typings.phaser.Phaser.Input.Gamepad.Gamepad): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+        inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -162,8 +153,7 @@ object Input {
     }
     object Button {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         destroy: () => Unit,
         events: EventEmitter,
         index: integer,
@@ -176,29 +166,21 @@ object Input {
         __obj.asInstanceOf[Button]
       }
       
-      @scala.inline
-      implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+      extension [Self <: Button](x: Self) {
         
-        @scala.inline
-        def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+        inline def setEvents(value: EventEmitter): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPad(value: typings.phaser.Phaser.Input.Gamepad.Gamepad): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+        inline def setPad(value: typings.phaser.Phaser.Input.Gamepad.Gamepad): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+        inline def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+        inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1700,8 +1682,7 @@ object Input {
     }
     object KeyCombo {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         current: integer,
         deleteOnMatch: Boolean,
         destroy: () => Unit,
@@ -1722,56 +1703,39 @@ object Input {
         __obj.asInstanceOf[KeyCombo]
       }
       
-      @scala.inline
-      implicit class KeyComboMutableBuilder[Self <: KeyCombo] (val x: Self) extends AnyVal {
+      extension [Self <: KeyCombo](x: Self) {
         
-        @scala.inline
-        def setCurrent(value: integer): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+        inline def setCurrent(value: integer): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteOnMatch(value: Boolean): Self = StObject.set(x, "deleteOnMatch", value.asInstanceOf[js.Any])
+        inline def setDeleteOnMatch(value: Boolean): Self = StObject.set(x, "deleteOnMatch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+        inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyCodes(value: js.Array[js.Any]): Self = StObject.set(x, "keyCodes", value.asInstanceOf[js.Any])
+        inline def setKeyCodes(value: js.Array[js.Any]): Self = StObject.set(x, "keyCodes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyCodesVarargs(value: js.Any*): Self = StObject.set(x, "keyCodes", js.Array(value :_*))
+        inline def setKeyCodesVarargs(value: js.Any*): Self = StObject.set(x, "keyCodes", js.Array(value :_*))
         
-        @scala.inline
-        def setManager(value: KeyboardPlugin): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+        inline def setManager(value: KeyboardPlugin): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMatched(value: Boolean): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
+        inline def setMatched(value: Boolean): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxKeyDelay(value: integer): Self = StObject.set(x, "maxKeyDelay", value.asInstanceOf[js.Any])
+        inline def setMaxKeyDelay(value: integer): Self = StObject.set(x, "maxKeyDelay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+        inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResetOnMatch(value: Boolean): Self = StObject.set(x, "resetOnMatch", value.asInstanceOf[js.Any])
+        inline def setResetOnMatch(value: Boolean): Self = StObject.set(x, "resetOnMatch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResetOnWrongKey(value: Boolean): Self = StObject.set(x, "resetOnWrongKey", value.asInstanceOf[js.Any])
+        inline def setResetOnWrongKey(value: Boolean): Self = StObject.set(x, "resetOnWrongKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeLastMatched(value: Double): Self = StObject.set(x, "timeLastMatched", value.asInstanceOf[js.Any])
+        inline def setTimeLastMatched(value: Double): Self = StObject.set(x, "timeLastMatched", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeMatched(value: Double): Self = StObject.set(x, "timeMatched", value.asInstanceOf[js.Any])
+        inline def setTimeMatched(value: Double): Self = StObject.set(x, "timeMatched", value.asInstanceOf[js.Any])
       }
     }
     
@@ -2428,8 +2392,7 @@ object Input {
     }
     object MouseManager {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         capture: Boolean,
         destroy: () => Unit,
         disableContextMenu: () => MouseManager,
@@ -2455,68 +2418,47 @@ object Input {
         __obj.asInstanceOf[MouseManager]
       }
       
-      @scala.inline
-      implicit class MouseManagerMutableBuilder[Self <: MouseManager] (val x: Self) extends AnyVal {
+      extension [Self <: MouseManager](x: Self) {
         
-        @scala.inline
-        def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+        inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDisableContextMenu(value: () => MouseManager): Self = StObject.set(x, "disableContextMenu", js.Any.fromFunction0(value))
+        inline def setDisableContextMenu(value: () => MouseManager): Self = StObject.set(x, "disableContextMenu", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+        inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+        inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setManager(value: InputManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+        inline def setManager(value: InputManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnMouseDown(value: js.Function): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
+        inline def setOnMouseDown(value: js.Function): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnMouseDownWindow(value: js.Function): Self = StObject.set(x, "onMouseDownWindow", value.asInstanceOf[js.Any])
+        inline def setOnMouseDownWindow(value: js.Function): Self = StObject.set(x, "onMouseDownWindow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnMouseMove(value: js.Function): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
+        inline def setOnMouseMove(value: js.Function): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnMouseOut(value: js.Function): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
+        inline def setOnMouseOut(value: js.Function): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnMouseOver(value: js.Function): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
+        inline def setOnMouseOver(value: js.Function): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnMouseUp(value: js.Function): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
+        inline def setOnMouseUp(value: js.Function): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnMouseUpWindow(value: js.Function): Self = StObject.set(x, "onMouseUpWindow", value.asInstanceOf[js.Any])
+        inline def setOnMouseUpWindow(value: js.Function): Self = StObject.set(x, "onMouseUpWindow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnMouseWheel(value: js.Function): Self = StObject.set(x, "onMouseWheel", value.asInstanceOf[js.Any])
+        inline def setOnMouseWheel(value: js.Function): Self = StObject.set(x, "onMouseWheel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPointerLockChange(value: js.Function): Self = StObject.set(x, "pointerLockChange", value.asInstanceOf[js.Any])
+        inline def setPointerLockChange(value: js.Function): Self = StObject.set(x, "pointerLockChange", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReleasePointerLock(value: () => Unit): Self = StObject.set(x, "releasePointerLock", js.Any.fromFunction0(value))
+        inline def setReleasePointerLock(value: () => Unit): Self = StObject.set(x, "releasePointerLock", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRequestPointerLock(value: () => Unit): Self = StObject.set(x, "requestPointerLock", js.Any.fromFunction0(value))
+        inline def setRequestPointerLock(value: () => Unit): Self = StObject.set(x, "requestPointerLock", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setStartListeners(value: () => Unit): Self = StObject.set(x, "startListeners", js.Any.fromFunction0(value))
+        inline def setStartListeners(value: () => Unit): Self = StObject.set(x, "startListeners", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setStopListeners(value: () => Unit): Self = StObject.set(x, "stopListeners", js.Any.fromFunction0(value))
+        inline def setStopListeners(value: () => Unit): Self = StObject.set(x, "stopListeners", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -3100,8 +3042,7 @@ object Input {
     }
     object TouchManager {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         capture: Boolean,
         destroy: () => Unit,
         disableContextMenu: () => TouchManager,
@@ -3124,59 +3065,41 @@ object Input {
         __obj.asInstanceOf[TouchManager]
       }
       
-      @scala.inline
-      implicit class TouchManagerMutableBuilder[Self <: TouchManager] (val x: Self) extends AnyVal {
+      extension [Self <: TouchManager](x: Self) {
         
-        @scala.inline
-        def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+        inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+        inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDisableContextMenu(value: () => TouchManager): Self = StObject.set(x, "disableContextMenu", js.Any.fromFunction0(value))
+        inline def setDisableContextMenu(value: () => TouchManager): Self = StObject.set(x, "disableContextMenu", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+        inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setManager(value: InputManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+        inline def setManager(value: InputManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnTouchCancel(value: js.Function): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
+        inline def setOnTouchCancel(value: js.Function): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnTouchCancelWindow(value: js.Function): Self = StObject.set(x, "onTouchCancelWindow", value.asInstanceOf[js.Any])
+        inline def setOnTouchCancelWindow(value: js.Function): Self = StObject.set(x, "onTouchCancelWindow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnTouchEnd(value: js.Function): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
+        inline def setOnTouchEnd(value: js.Function): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnTouchEndWindow(value: js.Function): Self = StObject.set(x, "onTouchEndWindow", value.asInstanceOf[js.Any])
+        inline def setOnTouchEndWindow(value: js.Function): Self = StObject.set(x, "onTouchEndWindow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnTouchMove(value: js.Function): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
+        inline def setOnTouchMove(value: js.Function): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnTouchOut(value: js.Function): Self = StObject.set(x, "onTouchOut", value.asInstanceOf[js.Any])
+        inline def setOnTouchOut(value: js.Function): Self = StObject.set(x, "onTouchOut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnTouchOver(value: js.Function): Self = StObject.set(x, "onTouchOver", value.asInstanceOf[js.Any])
+        inline def setOnTouchOver(value: js.Function): Self = StObject.set(x, "onTouchOver", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnTouchStart(value: js.Function): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
+        inline def setOnTouchStart(value: js.Function): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnTouchStartWindow(value: js.Function): Self = StObject.set(x, "onTouchStartWindow", value.asInstanceOf[js.Any])
+        inline def setOnTouchStartWindow(value: js.Function): Self = StObject.set(x, "onTouchStartWindow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartListeners(value: () => Unit): Self = StObject.set(x, "startListeners", js.Any.fromFunction0(value))
+        inline def setStartListeners(value: () => Unit): Self = StObject.set(x, "startListeners", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setStopListeners(value: () => Unit): Self = StObject.set(x, "stopListeners", js.Any.fromFunction0(value))
+        inline def setStopListeners(value: () => Unit): Self = StObject.set(x, "stopListeners", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
   }

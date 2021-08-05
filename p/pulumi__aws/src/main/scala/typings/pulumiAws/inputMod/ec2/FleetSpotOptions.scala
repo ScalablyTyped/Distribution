@@ -24,31 +24,23 @@ trait FleetSpotOptions extends StObject {
 }
 object FleetSpotOptions {
   
-  @scala.inline
-  def apply(): FleetSpotOptions = {
+  inline def apply(): FleetSpotOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FleetSpotOptions]
   }
   
-  @scala.inline
-  implicit class FleetSpotOptionsMutableBuilder[Self <: FleetSpotOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FleetSpotOptions](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: Input[String]): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: Input[String]): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationStrategyUndefined: Self = StObject.set(x, "allocationStrategy", js.undefined)
+    inline def setAllocationStrategyUndefined: Self = StObject.set(x, "allocationStrategy", js.undefined)
     
-    @scala.inline
-    def setInstanceInterruptionBehavior(value: Input[String]): Self = StObject.set(x, "instanceInterruptionBehavior", value.asInstanceOf[js.Any])
+    inline def setInstanceInterruptionBehavior(value: Input[String]): Self = StObject.set(x, "instanceInterruptionBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceInterruptionBehaviorUndefined: Self = StObject.set(x, "instanceInterruptionBehavior", js.undefined)
+    inline def setInstanceInterruptionBehaviorUndefined: Self = StObject.set(x, "instanceInterruptionBehavior", js.undefined)
     
-    @scala.inline
-    def setInstancePoolsToUseCount(value: Input[Double]): Self = StObject.set(x, "instancePoolsToUseCount", value.asInstanceOf[js.Any])
+    inline def setInstancePoolsToUseCount(value: Input[Double]): Self = StObject.set(x, "instancePoolsToUseCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancePoolsToUseCountUndefined: Self = StObject.set(x, "instancePoolsToUseCount", js.undefined)
+    inline def setInstancePoolsToUseCountUndefined: Self = StObject.set(x, "instancePoolsToUseCount", js.undefined)
   }
 }

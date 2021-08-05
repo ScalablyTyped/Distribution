@@ -23,31 +23,23 @@ trait ThemeAlias extends StObject {
 }
 object ThemeAlias {
   
-  @scala.inline
-  def apply(): ThemeAlias = {
+  inline def apply(): ThemeAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeAlias]
   }
   
-  @scala.inline
-  implicit class ThemeAliasMutableBuilder[Self <: ThemeAlias] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeAlias](x: Self) {
     
-    @scala.inline
-    def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
+    inline def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
+    inline def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setThemeVersionNumber(value: VersionNumber): Self = StObject.set(x, "ThemeVersionNumber", value.asInstanceOf[js.Any])
+    inline def setThemeVersionNumber(value: VersionNumber): Self = StObject.set(x, "ThemeVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeVersionNumberUndefined: Self = StObject.set(x, "ThemeVersionNumber", js.undefined)
+    inline def setThemeVersionNumberUndefined: Self = StObject.set(x, "ThemeVersionNumber", js.undefined)
   }
 }

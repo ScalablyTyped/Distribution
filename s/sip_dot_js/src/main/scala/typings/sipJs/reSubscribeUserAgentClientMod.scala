@@ -20,7 +20,7 @@ object reSubscribeUserAgentClientMod {
     def this(dialog: SubscriptionDialog, delegate: Unit, options: RequestOptions) = this()
     def this(dialog: SubscriptionDialog, delegate: OutgoingRequestDelegate, options: RequestOptions) = this()
     
-    var dialog: js.Any = js.native
+    /* private */ var dialog: js.Any = js.native
     
     /** Stop waiting for an inital subscription creating NOTIFY. */
     def waitNotifyStop(): Unit = js.native

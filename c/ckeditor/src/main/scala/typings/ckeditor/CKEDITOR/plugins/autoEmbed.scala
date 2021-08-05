@@ -12,16 +12,13 @@ trait autoEmbed extends StObject {
 }
 object autoEmbed {
   
-  @scala.inline
-  def apply(getWidgetDefinition: (editor, String) => definition): autoEmbed = {
+  inline def apply(getWidgetDefinition: (editor, String) => definition): autoEmbed = {
     val __obj = js.Dynamic.literal(getWidgetDefinition = js.Any.fromFunction2(getWidgetDefinition))
     __obj.asInstanceOf[autoEmbed]
   }
   
-  @scala.inline
-  implicit class autoEmbedMutableBuilder[Self <: autoEmbed] (val x: Self) extends AnyVal {
+  extension [Self <: autoEmbed](x: Self) {
     
-    @scala.inline
-    def setGetWidgetDefinition(value: (editor, String) => definition): Self = StObject.set(x, "getWidgetDefinition", js.Any.fromFunction2(value))
+    inline def setGetWidgetDefinition(value: (editor, String) => definition): Self = StObject.set(x, "getWidgetDefinition", js.Any.fromFunction2(value))
   }
 }

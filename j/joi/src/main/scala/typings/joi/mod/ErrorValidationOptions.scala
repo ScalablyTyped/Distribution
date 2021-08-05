@@ -13,19 +13,15 @@ trait ErrorValidationOptions
 }
 object ErrorValidationOptions {
   
-  @scala.inline
-  def apply(): ErrorValidationOptions = {
+  inline def apply(): ErrorValidationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorValidationOptions]
   }
   
-  @scala.inline
-  implicit class ErrorValidationOptionsMutableBuilder[Self <: ErrorValidationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorValidationOptions](x: Self) {
     
-    @scala.inline
-    def setMessages(value: Record[String, LanguageMessageTemplate]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Record[String, LanguageMessageTemplate]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
   }
 }

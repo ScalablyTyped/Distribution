@@ -17,8 +17,7 @@ object contactItemBuilderUniDriverMod {
   }
   object ContactItemBuilderUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object contactItemBuilderUniDriverMod {
       __obj.asInstanceOf[ContactItemBuilderUniDriver]
     }
     
-    @scala.inline
-    implicit class ContactItemBuilderUniDriverMutableBuilder[Self <: ContactItemBuilderUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ContactItemBuilderUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetSubtitle(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
+      inline def setGetSubtitle(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     }
   }
 }

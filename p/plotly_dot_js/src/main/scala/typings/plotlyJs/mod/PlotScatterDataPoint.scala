@@ -24,8 +24,7 @@ trait PlotScatterDataPoint extends StObject {
 }
 object PlotScatterDataPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     curveNumber: Double,
     data: PlotData,
     pointIndex: Double,
@@ -39,31 +38,22 @@ object PlotScatterDataPoint {
     __obj.asInstanceOf[PlotScatterDataPoint]
   }
   
-  @scala.inline
-  implicit class PlotScatterDataPointMutableBuilder[Self <: PlotScatterDataPoint] (val x: Self) extends AnyVal {
+  extension [Self <: PlotScatterDataPoint](x: Self) {
     
-    @scala.inline
-    def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
+    inline def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: PlotData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PlotData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
+    inline def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
+    inline def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxis(value: LayoutAxis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
+    inline def setXaxis(value: LayoutAxis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxis(value: LayoutAxis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
+    inline def setYaxis(value: LayoutAxis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
   }
 }

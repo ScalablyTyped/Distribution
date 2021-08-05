@@ -12,22 +12,17 @@ trait RelatedNode extends StObject {
 }
 object RelatedNode {
   
-  @scala.inline
-  def apply(html: String, target: js.Array[String]): RelatedNode = {
+  inline def apply(html: String, target: js.Array[String]): RelatedNode = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelatedNode]
   }
   
-  @scala.inline
-  implicit class RelatedNodeMutableBuilder[Self <: RelatedNode] (val x: Self) extends AnyVal {
+  extension [Self <: RelatedNode](x: Self) {
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
+    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value :_*))
   }
 }

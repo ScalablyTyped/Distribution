@@ -16,22 +16,17 @@ trait CursorObject extends StObject {
 }
 object CursorObject {
   
-  @scala.inline
-  def apply(after: String): CursorObject = {
+  inline def apply(after: String): CursorObject = {
     val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any])
     __obj.asInstanceOf[CursorObject]
   }
   
-  @scala.inline
-  implicit class CursorObjectMutableBuilder[Self <: CursorObject] (val x: Self) extends AnyVal {
+  extension [Self <: CursorObject](x: Self) {
     
-    @scala.inline
-    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
   }
 }

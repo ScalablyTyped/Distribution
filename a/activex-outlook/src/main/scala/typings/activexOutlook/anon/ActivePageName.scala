@@ -10,16 +10,13 @@ trait ActivePageName extends StObject {
 }
 object ActivePageName {
   
-  @scala.inline
-  def apply(ActivePageName: String): ActivePageName = {
+  inline def apply(ActivePageName: String): ActivePageName = {
     val __obj = js.Dynamic.literal(ActivePageName = ActivePageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivePageName]
   }
   
-  @scala.inline
-  implicit class ActivePageNameMutableBuilder[Self <: ActivePageName] (val x: Self) extends AnyVal {
+  extension [Self <: ActivePageName](x: Self) {
     
-    @scala.inline
-    def setActivePageName(value: String): Self = StObject.set(x, "ActivePageName", value.asInstanceOf[js.Any])
+    inline def setActivePageName(value: String): Self = StObject.set(x, "ActivePageName", value.asInstanceOf[js.Any])
   }
 }

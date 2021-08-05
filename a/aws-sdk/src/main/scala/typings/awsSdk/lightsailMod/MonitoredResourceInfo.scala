@@ -23,31 +23,23 @@ trait MonitoredResourceInfo extends StObject {
 }
 object MonitoredResourceInfo {
   
-  @scala.inline
-  def apply(): MonitoredResourceInfo = {
+  inline def apply(): MonitoredResourceInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MonitoredResourceInfo]
   }
   
-  @scala.inline
-  implicit class MonitoredResourceInfoMutableBuilder[Self <: MonitoredResourceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoredResourceInfo](x: Self) {
     
-    @scala.inline
-    def setArn(value: ResourceArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ResourceArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait OriginSslProtocols extends StObject {
 }
 object OriginSslProtocols {
   
-  @scala.inline
-  def apply(Items: SslProtocolsList, Quantity: integer): OriginSslProtocols = {
+  inline def apply(Items: SslProtocolsList, Quantity: integer): OriginSslProtocols = {
     val __obj = js.Dynamic.literal(Items = Items.asInstanceOf[js.Any], Quantity = Quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[OriginSslProtocols]
   }
   
-  @scala.inline
-  implicit class OriginSslProtocolsMutableBuilder[Self <: OriginSslProtocols] (val x: Self) extends AnyVal {
+  extension [Self <: OriginSslProtocols](x: Self) {
     
-    @scala.inline
-    def setItems(value: SslProtocolsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: SslProtocolsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: SslProtocol*): Self = StObject.set(x, "Items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SslProtocol*): Self = StObject.set(x, "Items", js.Array(value :_*))
     
-    @scala.inline
-    def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: integer): Self = StObject.set(x, "Quantity", value.asInstanceOf[js.Any])
   }
 }

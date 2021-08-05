@@ -28,20 +28,16 @@ object mod {
   }
   object SaveEventParams {
     
-    @scala.inline
-    def apply(encoded: String, pathName: String): SaveEventParams = {
+    inline def apply(encoded: String, pathName: String): SaveEventParams = {
       val __obj = js.Dynamic.literal(encoded = encoded.asInstanceOf[js.Any], pathName = pathName.asInstanceOf[js.Any])
       __obj.asInstanceOf[SaveEventParams]
     }
     
-    @scala.inline
-    implicit class SaveEventParamsMutableBuilder[Self <: SaveEventParams] (val x: Self) extends AnyVal {
+    extension [Self <: SaveEventParams](x: Self) {
       
-      @scala.inline
-      def setEncoded(value: String): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
+      inline def setEncoded(value: String): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathName(value: String): Self = StObject.set(x, "pathName", value.asInstanceOf[js.Any])
+      inline def setPathName(value: String): Self = StObject.set(x, "pathName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,62 +119,44 @@ object mod {
   }
   object SignatureCaptureProps {
     
-    @scala.inline
-    def apply(): SignatureCaptureProps = {
+    inline def apply(): SignatureCaptureProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SignatureCaptureProps]
     }
     
-    @scala.inline
-    implicit class SignatureCapturePropsMutableBuilder[Self <: SignatureCaptureProps] (val x: Self) extends AnyVal {
+    extension [Self <: SignatureCaptureProps](x: Self) {
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setOnDragEvent(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onDragEvent", js.Any.fromFunction1(value))
+      inline def setOnDragEvent(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onDragEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDragEventUndefined: Self = StObject.set(x, "onDragEvent", js.undefined)
+      inline def setOnDragEventUndefined: Self = StObject.set(x, "onDragEvent", js.undefined)
       
-      @scala.inline
-      def setOnSaveEvent(value: /* params */ SaveEventParams => Unit): Self = StObject.set(x, "onSaveEvent", js.Any.fromFunction1(value))
+      inline def setOnSaveEvent(value: /* params */ SaveEventParams => Unit): Self = StObject.set(x, "onSaveEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSaveEventUndefined: Self = StObject.set(x, "onSaveEvent", js.undefined)
+      inline def setOnSaveEventUndefined: Self = StObject.set(x, "onSaveEvent", js.undefined)
       
-      @scala.inline
-      def setSaveImageFileInExtStorage(value: Boolean): Self = StObject.set(x, "saveImageFileInExtStorage", value.asInstanceOf[js.Any])
+      inline def setSaveImageFileInExtStorage(value: Boolean): Self = StObject.set(x, "saveImageFileInExtStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveImageFileInExtStorageUndefined: Self = StObject.set(x, "saveImageFileInExtStorage", js.undefined)
+      inline def setSaveImageFileInExtStorageUndefined: Self = StObject.set(x, "saveImageFileInExtStorage", js.undefined)
       
-      @scala.inline
-      def setShowBorder(value: Boolean): Self = StObject.set(x, "showBorder", value.asInstanceOf[js.Any])
+      inline def setShowBorder(value: Boolean): Self = StObject.set(x, "showBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowBorderUndefined: Self = StObject.set(x, "showBorder", js.undefined)
+      inline def setShowBorderUndefined: Self = StObject.set(x, "showBorder", js.undefined)
       
-      @scala.inline
-      def setShowNativeButtons(value: Boolean): Self = StObject.set(x, "showNativeButtons", value.asInstanceOf[js.Any])
+      inline def setShowNativeButtons(value: Boolean): Self = StObject.set(x, "showNativeButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNativeButtonsUndefined: Self = StObject.set(x, "showNativeButtons", js.undefined)
+      inline def setShowNativeButtonsUndefined: Self = StObject.set(x, "showNativeButtons", js.undefined)
       
-      @scala.inline
-      def setShowTitleLabel(value: Boolean): Self = StObject.set(x, "showTitleLabel", value.asInstanceOf[js.Any])
+      inline def setShowTitleLabel(value: Boolean): Self = StObject.set(x, "showTitleLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTitleLabelUndefined: Self = StObject.set(x, "showTitleLabel", js.undefined)
+      inline def setShowTitleLabelUndefined: Self = StObject.set(x, "showTitleLabel", js.undefined)
       
-      @scala.inline
-      def setViewMode(value: portrait | landscape): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: portrait | landscape): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+      inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
     }
   }
 }

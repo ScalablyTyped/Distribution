@@ -17,8 +17,7 @@ object anon {
   }
   object DisabledStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabledStyle: SVGAttributes[js.Object],
       overStyle: SVGAttributes[js.Object],
       style: SVGAttributes[js.Object]
@@ -27,17 +26,13 @@ object anon {
       __obj.asInstanceOf[DisabledStyle]
     }
     
-    @scala.inline
-    implicit class DisabledStyleMutableBuilder[Self <: DisabledStyle] (val x: Self) extends AnyVal {
+    extension [Self <: DisabledStyle](x: Self) {
       
-      @scala.inline
-      def setDisabledStyle(value: SVGAttributes[js.Object]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
+      inline def setDisabledStyle(value: SVGAttributes[js.Object]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverStyle(value: SVGAttributes[js.Object]): Self = StObject.set(x, "overStyle", value.asInstanceOf[js.Any])
+      inline def setOverStyle(value: SVGAttributes[js.Object]): Self = StObject.set(x, "overStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: SVGAttributes[js.Object]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: SVGAttributes[js.Object]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +44,16 @@ object anon {
   }
   object PageSize {
     
-    @scala.inline
-    def apply(pageSize: Double, skip: Double): PageSize = {
+    inline def apply(pageSize: Double, skip: Double): PageSize = {
       val __obj = js.Dynamic.literal(pageSize = pageSize.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageSize]
     }
     
-    @scala.inline
-    implicit class PageSizeMutableBuilder[Self <: PageSize] (val x: Self) extends AnyVal {
+    extension [Self <: PageSize](x: Self) {
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     }
   }
 }

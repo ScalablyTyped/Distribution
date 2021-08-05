@@ -18,22 +18,17 @@ trait CreateGroupCertificateAuthorityRequest extends StObject {
 }
 object CreateGroupCertificateAuthorityRequest {
   
-  @scala.inline
-  def apply(GroupId: string): CreateGroupCertificateAuthorityRequest = {
+  inline def apply(GroupId: string): CreateGroupCertificateAuthorityRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateGroupCertificateAuthorityRequest]
   }
   
-  @scala.inline
-  implicit class CreateGroupCertificateAuthorityRequestMutableBuilder[Self <: CreateGroupCertificateAuthorityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGroupCertificateAuthorityRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
   }
 }

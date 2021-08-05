@@ -26,29 +26,23 @@ trait DuplicateObjectRequest extends StObject {
 }
 object DuplicateObjectRequest {
   
-  @scala.inline
-  def apply(): DuplicateObjectRequest = {
+  inline def apply(): DuplicateObjectRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DuplicateObjectRequest]
   }
   
-  @scala.inline
-  implicit class DuplicateObjectRequestMutableBuilder[Self <: DuplicateObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DuplicateObjectRequest](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setObjectIds(
+    inline def setObjectIds(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientSlides.maximMazurokGapiClientSlidesStrings.DuplicateObjectRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+    inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
   }
 }

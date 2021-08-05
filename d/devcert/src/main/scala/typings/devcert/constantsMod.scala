@@ -31,18 +31,15 @@ object constantsMod {
   @js.native
   val configDir: js.Any = js.native
   
-  @scala.inline
-  def configPath(pathSegments: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("configPath")(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def configPath(pathSegments: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("configPath")(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("devcert/dist/constants", "domainsDir")
   @js.native
   val domainsDir: String = js.native
   
-  @scala.inline
-  def ensureConfigDirs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureConfigDirs")().asInstanceOf[Unit]
+  inline def ensureConfigDirs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureConfigDirs")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getLegacyConfigDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegacyConfigDir")().asInstanceOf[String]
+  inline def getLegacyConfigDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegacyConfigDir")().asInstanceOf[String]
   
   @JSImport("devcert/dist/constants", "isLinux")
   @js.native
@@ -64,8 +61,7 @@ object constantsMod {
   @js.native
   val opensslSerialFilePath: String = js.native
   
-  @scala.inline
-  def pathForDomain(domain: String, pathSegments: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pathForDomain")(domain.asInstanceOf[js.Any], pathSegments.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pathForDomain(domain: String, pathSegments: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pathForDomain")(domain.asInstanceOf[js.Any], pathSegments.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("devcert/dist/constants", "rootCACertPath")
   @js.native
@@ -79,9 +75,7 @@ object constantsMod {
   @js.native
   val rootCAKeyPath: String = js.native
   
-  @scala.inline
-  def withDomainCertificateConfig(domain: String, cb: js.Function1[/* filepath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("withDomainCertificateConfig")(domain.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def withDomainCertificateConfig(domain: String, cb: js.Function1[/* filepath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("withDomainCertificateConfig")(domain.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def withDomainSigningRequestConfig(domain: String, cb: js.Function1[/* filepath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("withDomainSigningRequestConfig")(domain.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def withDomainSigningRequestConfig(domain: String, cb: js.Function1[/* filepath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("withDomainSigningRequestConfig")(domain.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

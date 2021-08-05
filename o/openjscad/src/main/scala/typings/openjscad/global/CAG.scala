@@ -27,8 +27,7 @@ object CAG {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def PathsToDxf(paths: js.Array[Path2D]): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("PathsToDxf")(paths.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  inline def PathsToDxf(paths: js.Array[Path2D]): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("PathsToDxf")(paths.asInstanceOf[js.Any]).asInstanceOf[Blob]
   
   @JSGlobal("CAG.Side")
   @js.native
@@ -44,8 +43,7 @@ object CAG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromFakePolygon(polygon: Polygon): typings.openjscad.CAG.Side = ^.asInstanceOf[js.Dynamic].applyDynamic("_fromFakePolygon")(polygon.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG.Side]
+    inline def fromFakePolygon(polygon: Polygon): typings.openjscad.CAG.Side = ^.asInstanceOf[js.Dynamic].applyDynamic("_fromFakePolygon")(polygon.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG.Side]
   }
   
   @JSGlobal("CAG.Vertex")
@@ -66,28 +64,22 @@ object CAG {
   }
   
   /* static member */
-  @scala.inline
-  def circle(options: ICircleOptions): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("circle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def circle(options: ICircleOptions): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("circle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   /* static member */
-  @scala.inline
-  def fromCompactBinary(bin: js.Any): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompactBinary")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def fromCompactBinary(bin: js.Any): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompactBinary")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   /* static member */
-  @scala.inline
-  def fromFakeCSG(csg: typings.openjscad.CSG): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFakeCSG")(csg.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def fromFakeCSG(csg: typings.openjscad.CSG): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFakeCSG")(csg.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   /* static member */
-  @scala.inline
-  def fromPoints(points: js.Array[Vector2D]): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def fromPoints(points: js.Array[Vector2D]): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   /* static member */
-  @scala.inline
-  def fromPointsNoCheck(points: js.Array[Vector2D]): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPointsNoCheck")(points.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def fromPointsNoCheck(points: js.Array[Vector2D]): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPointsNoCheck")(points.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   /* static member */
-  @scala.inline
-  def fromSides(sides: js.Array[typings.openjscad.CAG.Side]): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSides")(sides.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def fromSides(sides: js.Array[typings.openjscad.CAG.Side]): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSides")(sides.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   @JSGlobal("CAG.fuzzyCAGFactory")
   @js.native
@@ -109,14 +101,11 @@ object CAG {
   }
   
   /* static member */
-  @scala.inline
-  def linesIntersect(p0start: Vector2D, p0end: Vector2D, p1start: Vector2D, p1end: Vector2D): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("linesIntersect")(p0start.asInstanceOf[js.Any], p0end.asInstanceOf[js.Any], p1start.asInstanceOf[js.Any], p1end.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def linesIntersect(p0start: Vector2D, p0end: Vector2D, p1start: Vector2D, p1end: Vector2D): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("linesIntersect")(p0start.asInstanceOf[js.Any], p0end.asInstanceOf[js.Any], p1start.asInstanceOf[js.Any], p1end.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def rectangle(options: IRectangleOptions): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def rectangle(options: IRectangleOptions): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
   
   /* static member */
-  @scala.inline
-  def roundedRectangle(options: js.Any): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("roundedRectangle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
+  inline def roundedRectangle(options: js.Any): typings.openjscad.CAG = ^.asInstanceOf[js.Dynamic].applyDynamic("roundedRectangle")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CAG]
 }

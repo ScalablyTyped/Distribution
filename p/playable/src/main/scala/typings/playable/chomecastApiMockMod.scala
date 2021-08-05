@@ -31,7 +31,7 @@ object chomecastApiMockMod {
     
     def SessionState: js.Any = js.native
     
-    var _context: js.Any = js.native
+    /* private */ var _context: js.Any = js.native
     
     def context: CastContext = js.native
     
@@ -120,12 +120,10 @@ object chomecastApiMockMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+    inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   }
   
   @JSImport("playable/dist/src/testkit/chomecast-api-mock", "WindowChromeAPIMock")
@@ -173,7 +171,7 @@ object chomecastApiMockMod {
   
   trait Publisher extends StObject {
     
-    var _listeners: StringDictionary[js.Array[js.Function]]
+    /* protected */ var _listeners: StringDictionary[js.Array[js.Function]]
     
     def addEventListener(`type`: eventType, func: js.Function): Unit
     
@@ -181,8 +179,7 @@ object chomecastApiMockMod {
   }
   object Publisher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _listeners: StringDictionary[js.Array[js.Function]],
       addEventListener: (eventType, js.Function) => Unit,
       trigger: (eventType, js.Any) => Unit
@@ -191,17 +188,13 @@ object chomecastApiMockMod {
       __obj.asInstanceOf[Publisher]
     }
     
-    @scala.inline
-    implicit class PublisherMutableBuilder[Self <: Publisher] (val x: Self) extends AnyVal {
+    extension [Self <: Publisher](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: (eventType, js.Function) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+      inline def setAddEventListener(value: (eventType, js.Function) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTrigger(value: (eventType, js.Any) => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
+      inline def setTrigger(value: (eventType, js.Any) => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_listeners(value: StringDictionary[js.Array[js.Function]]): Self = StObject.set(x, "_listeners", value.asInstanceOf[js.Any])
+      inline def set_listeners(value: StringDictionary[js.Array[js.Function]]): Self = StObject.set(x, "_listeners", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,17 +204,14 @@ object chomecastApiMockMod {
   }
   object RemotePlayer {
     
-    @scala.inline
-    def apply(currentTime: Double): RemotePlayer = {
+    inline def apply(currentTime: Double): RemotePlayer = {
       val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemotePlayer]
     }
     
-    @scala.inline
-    implicit class RemotePlayerMutableBuilder[Self <: RemotePlayer] (val x: Self) extends AnyVal {
+    extension [Self <: RemotePlayer](x: Self) {
       
-      @scala.inline
-      def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+      inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,8 +227,7 @@ object chomecastApiMockMod {
   }
   object RemotePlayerController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _listeners: StringDictionary[js.Array[js.Function]],
       addEventListener: (eventType, js.Function) => Unit,
       player: RemotePlayer,
@@ -250,17 +239,13 @@ object chomecastApiMockMod {
       __obj.asInstanceOf[RemotePlayerController]
     }
     
-    @scala.inline
-    implicit class RemotePlayerControllerMutableBuilder[Self <: RemotePlayerController] (val x: Self) extends AnyVal {
+    extension [Self <: RemotePlayerController](x: Self) {
       
-      @scala.inline
-      def setPlayer(value: RemotePlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+      inline def setPlayer(value: RemotePlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
+      inline def setSeek(value: () => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetVolumeLevel(value: () => Unit): Self = StObject.set(x, "setVolumeLevel", js.Any.fromFunction0(value))
+      inline def setSetVolumeLevel(value: () => Unit): Self = StObject.set(x, "setVolumeLevel", js.Any.fromFunction0(value))
     }
   }
 }

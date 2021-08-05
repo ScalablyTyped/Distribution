@@ -18,37 +18,27 @@ trait NativeViewGestureHandlerProperties
 }
 object NativeViewGestureHandlerProperties {
   
-  @scala.inline
-  def apply(): NativeViewGestureHandlerProperties = {
+  inline def apply(): NativeViewGestureHandlerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NativeViewGestureHandlerProperties]
   }
   
-  @scala.inline
-  implicit class NativeViewGestureHandlerPropertiesMutableBuilder[Self <: NativeViewGestureHandlerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: NativeViewGestureHandlerProperties](x: Self) {
     
-    @scala.inline
-    def setDisallowInterruption(value: Boolean): Self = StObject.set(x, "disallowInterruption", value.asInstanceOf[js.Any])
+    inline def setDisallowInterruption(value: Boolean): Self = StObject.set(x, "disallowInterruption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisallowInterruptionUndefined: Self = StObject.set(x, "disallowInterruption", js.undefined)
+    inline def setDisallowInterruptionUndefined: Self = StObject.set(x, "disallowInterruption", js.undefined)
     
-    @scala.inline
-    def setOnGestureEvent(value: /* event */ NativeViewGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
+    inline def setOnGestureEvent(value: /* event */ NativeViewGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
+    inline def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
     
-    @scala.inline
-    def setOnHandlerStateChange(value: /* event */ NativeViewGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
+    inline def setOnHandlerStateChange(value: /* event */ NativeViewGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
+    inline def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
     
-    @scala.inline
-    def setShouldActivateOnStart(value: Boolean): Self = StObject.set(x, "shouldActivateOnStart", value.asInstanceOf[js.Any])
+    inline def setShouldActivateOnStart(value: Boolean): Self = StObject.set(x, "shouldActivateOnStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldActivateOnStartUndefined: Self = StObject.set(x, "shouldActivateOnStart", js.undefined)
+    inline def setShouldActivateOnStartUndefined: Self = StObject.set(x, "shouldActivateOnStart", js.undefined)
   }
 }

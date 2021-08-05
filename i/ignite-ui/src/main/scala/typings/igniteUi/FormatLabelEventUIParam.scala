@@ -33,43 +33,31 @@ trait FormatLabelEventUIParam extends StObject {
 }
 object FormatLabelEventUIParam {
   
-  @scala.inline
-  def apply(): FormatLabelEventUIParam = {
+  inline def apply(): FormatLabelEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormatLabelEventUIParam]
   }
   
-  @scala.inline
-  implicit class FormatLabelEventUIParamMutableBuilder[Self <: FormatLabelEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FormatLabelEventUIParam](x: Self) {
     
-    @scala.inline
-    def setActualMaximumValue(value: js.Any): Self = StObject.set(x, "actualMaximumValue", value.asInstanceOf[js.Any])
+    inline def setActualMaximumValue(value: js.Any): Self = StObject.set(x, "actualMaximumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualMaximumValueUndefined: Self = StObject.set(x, "actualMaximumValue", js.undefined)
+    inline def setActualMaximumValueUndefined: Self = StObject.set(x, "actualMaximumValue", js.undefined)
     
-    @scala.inline
-    def setActualMinimumValue(value: js.Any): Self = StObject.set(x, "actualMinimumValue", value.asInstanceOf[js.Any])
+    inline def setActualMinimumValue(value: js.Any): Self = StObject.set(x, "actualMinimumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualMinimumValueUndefined: Self = StObject.set(x, "actualMinimumValue", js.undefined)
+    inline def setActualMinimumValueUndefined: Self = StObject.set(x, "actualMinimumValue", js.undefined)
     
-    @scala.inline
-    def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: js.Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

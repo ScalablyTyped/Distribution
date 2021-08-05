@@ -12,23 +12,18 @@ object anon {
   }
   object Ignore {
     
-    @scala.inline
-    def apply(): Ignore = {
+    inline def apply(): Ignore = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ignore]
     }
     
-    @scala.inline
-    implicit class IgnoreMutableBuilder[Self <: Ignore] (val x: Self) extends AnyVal {
+    extension [Self <: Ignore](x: Self) {
       
-      @scala.inline
-      def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     }
   }
 }

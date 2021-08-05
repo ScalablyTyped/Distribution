@@ -10,8 +10,7 @@ trait GetBucketAccelerateConfigurationOutput
      with typings.awsSdkClientS3Node.typesGetBucketAccelerateConfigurationOutputMod.GetBucketAccelerateConfigurationOutput
 object GetBucketAccelerateConfigurationOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketAccelerateConfigurationOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketAccelerateConfigurationOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketAccelerateConfigurationOutput]
   }

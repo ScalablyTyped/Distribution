@@ -18,19 +18,15 @@ trait DeleteUserPoolDomainRequest extends StObject {
 }
 object DeleteUserPoolDomainRequest {
   
-  @scala.inline
-  def apply(Domain: DomainType, UserPoolId: UserPoolIdType): DeleteUserPoolDomainRequest = {
+  inline def apply(Domain: DomainType, UserPoolId: UserPoolIdType): DeleteUserPoolDomainRequest = {
     val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any], UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteUserPoolDomainRequest]
   }
   
-  @scala.inline
-  implicit class DeleteUserPoolDomainRequestMutableBuilder[Self <: DeleteUserPoolDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteUserPoolDomainRequest](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainType): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

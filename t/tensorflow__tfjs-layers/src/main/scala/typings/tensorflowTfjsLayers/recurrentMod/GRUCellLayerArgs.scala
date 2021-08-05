@@ -42,31 +42,23 @@ trait GRUCellLayerArgs
 }
 object GRUCellLayerArgs {
   
-  @scala.inline
-  def apply(units: Double): GRUCellLayerArgs = {
+  inline def apply(units: Double): GRUCellLayerArgs = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any])
     __obj.asInstanceOf[GRUCellLayerArgs]
   }
   
-  @scala.inline
-  implicit class GRUCellLayerArgsMutableBuilder[Self <: GRUCellLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GRUCellLayerArgs](x: Self) {
     
-    @scala.inline
-    def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
+    inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
     
-    @scala.inline
-    def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
+    inline def setRecurrentActivation(value: ActivationIdentifier): Self = StObject.set(x, "recurrentActivation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
+    inline def setRecurrentActivationUndefined: Self = StObject.set(x, "recurrentActivation", js.undefined)
     
-    @scala.inline
-    def setResetAfter(value: Boolean): Self = StObject.set(x, "resetAfter", value.asInstanceOf[js.Any])
+    inline def setResetAfter(value: Boolean): Self = StObject.set(x, "resetAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetAfterUndefined: Self = StObject.set(x, "resetAfter", js.undefined)
+    inline def setResetAfterUndefined: Self = StObject.set(x, "resetAfter", js.undefined)
   }
 }

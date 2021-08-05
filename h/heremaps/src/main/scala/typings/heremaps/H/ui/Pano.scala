@@ -19,23 +19,18 @@ object Pano {
   }
   object Options {
     
-    @scala.inline
-    def apply(mapTypes: MapType): Options = {
+    inline def apply(mapTypes: MapType): Options = {
       val __obj = js.Dynamic.literal(mapTypes = mapTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlignment(value: LayoutAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: LayoutAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+      inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      @scala.inline
-      def setMapTypes(value: MapType): Self = StObject.set(x, "mapTypes", value.asInstanceOf[js.Any])
+      inline def setMapTypes(value: MapType): Self = StObject.set(x, "mapTypes", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,25 +18,19 @@ trait UserPoolDeviceConfiguration extends StObject {
 }
 object UserPoolDeviceConfiguration {
   
-  @scala.inline
-  def apply(): UserPoolDeviceConfiguration = {
+  inline def apply(): UserPoolDeviceConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserPoolDeviceConfiguration]
   }
   
-  @scala.inline
-  implicit class UserPoolDeviceConfigurationMutableBuilder[Self <: UserPoolDeviceConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolDeviceConfiguration](x: Self) {
     
-    @scala.inline
-    def setChallengeRequiredOnNewDevice(value: Boolean): Self = StObject.set(x, "challengeRequiredOnNewDevice", value.asInstanceOf[js.Any])
+    inline def setChallengeRequiredOnNewDevice(value: Boolean): Self = StObject.set(x, "challengeRequiredOnNewDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChallengeRequiredOnNewDeviceUndefined: Self = StObject.set(x, "challengeRequiredOnNewDevice", js.undefined)
+    inline def setChallengeRequiredOnNewDeviceUndefined: Self = StObject.set(x, "challengeRequiredOnNewDevice", js.undefined)
     
-    @scala.inline
-    def setDeviceOnlyRememberedOnUserPrompt(value: Boolean): Self = StObject.set(x, "deviceOnlyRememberedOnUserPrompt", value.asInstanceOf[js.Any])
+    inline def setDeviceOnlyRememberedOnUserPrompt(value: Boolean): Self = StObject.set(x, "deviceOnlyRememberedOnUserPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceOnlyRememberedOnUserPromptUndefined: Self = StObject.set(x, "deviceOnlyRememberedOnUserPrompt", js.undefined)
+    inline def setDeviceOnlyRememberedOnUserPromptUndefined: Self = StObject.set(x, "deviceOnlyRememberedOnUserPrompt", js.undefined)
   }
 }

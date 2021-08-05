@@ -18,25 +18,19 @@ trait TargetGroupAttribute extends StObject {
 }
 object TargetGroupAttribute {
   
-  @scala.inline
-  def apply(): TargetGroupAttribute = {
+  inline def apply(): TargetGroupAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetGroupAttribute]
   }
   
-  @scala.inline
-  implicit class TargetGroupAttributeMutableBuilder[Self <: TargetGroupAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: TargetGroupAttribute](x: Self) {
     
-    @scala.inline
-    def setKey(value: TargetGroupAttributeKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TargetGroupAttributeKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValue(value: TargetGroupAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TargetGroupAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

@@ -40,49 +40,35 @@ trait CallbacksWithTypeopenIdLi extends StObject {
 }
 object CallbacksWithTypeopenIdLi {
   
-  @scala.inline
-  def apply(groupId: String, nonceStr: String, signature: String, timeStamp: Double): CallbacksWithTypeopenIdLi = {
+  inline def apply(groupId: String, nonceStr: String, signature: String, timeStamp: Double): CallbacksWithTypeopenIdLi = {
     val __obj = js.Dynamic.literal(groupId = groupId.asInstanceOf[js.Any], nonceStr = nonceStr.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallbacksWithTypeopenIdLi]
   }
   
-  @scala.inline
-  implicit class CallbacksWithTypeopenIdLiMutableBuilder[Self <: CallbacksWithTypeopenIdLi] (val x: Self) extends AnyVal {
+  extension [Self <: CallbacksWithTypeopenIdLi](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuteConfig(value: MuteEarphone): Self = StObject.set(x, "muteConfig", value.asInstanceOf[js.Any])
+    inline def setMuteConfig(value: MuteEarphone): Self = StObject.set(x, "muteConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuteConfigUndefined: Self = StObject.set(x, "muteConfig", js.undefined)
+    inline def setMuteConfigUndefined: Self = StObject.set(x, "muteConfig", js.undefined)
     
-    @scala.inline
-    def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+    inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ OpenIdList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ OpenIdList => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

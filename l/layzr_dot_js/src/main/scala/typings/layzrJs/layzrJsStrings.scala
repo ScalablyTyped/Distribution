@@ -11,13 +11,11 @@ object layzrJsStrings {
   sealed trait srcColonafter
     extends StObject
        with LayzrEvents
-  @scala.inline
-  def srcColonafter: srcColonafter = "src:after".asInstanceOf[srcColonafter]
+  inline def srcColonafter: srcColonafter = "src:after".asInstanceOf[srcColonafter]
   
   @js.native
   sealed trait srcColonbefore
     extends StObject
        with LayzrEvents
-  @scala.inline
-  def srcColonbefore: srcColonbefore = "src:before".asInstanceOf[srcColonbefore]
+  inline def srcColonbefore: srcColonbefore = "src:before".asInstanceOf[srcColonbefore]
 }

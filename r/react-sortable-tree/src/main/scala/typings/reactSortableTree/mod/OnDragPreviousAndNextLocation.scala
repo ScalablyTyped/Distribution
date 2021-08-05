@@ -14,8 +14,7 @@ trait OnDragPreviousAndNextLocation
 }
 object OnDragPreviousAndNextLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     nextPath: NumberOrStringArray,
     nextTreeIndex: Double,
     prevPath: NumberOrStringArray,
@@ -25,19 +24,14 @@ object OnDragPreviousAndNextLocation {
     __obj.asInstanceOf[OnDragPreviousAndNextLocation]
   }
   
-  @scala.inline
-  implicit class OnDragPreviousAndNextLocationMutableBuilder[Self <: OnDragPreviousAndNextLocation] (val x: Self) extends AnyVal {
+  extension [Self <: OnDragPreviousAndNextLocation](x: Self) {
     
-    @scala.inline
-    def setNextParent(value: TreeItem): Self = StObject.set(x, "nextParent", value.asInstanceOf[js.Any])
+    inline def setNextParent(value: TreeItem): Self = StObject.set(x, "nextParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextParentNull: Self = StObject.set(x, "nextParent", null)
+    inline def setNextParentNull: Self = StObject.set(x, "nextParent", null)
     
-    @scala.inline
-    def setPrevParent(value: TreeItem): Self = StObject.set(x, "prevParent", value.asInstanceOf[js.Any])
+    inline def setPrevParent(value: TreeItem): Self = StObject.set(x, "prevParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevParentNull: Self = StObject.set(x, "prevParent", null)
+    inline def setPrevParentNull: Self = StObject.set(x, "prevParent", null)
   }
 }

@@ -33,20 +33,16 @@ object eventIteratorMod {
   }
   object EventHandlers {
     
-    @scala.inline
-    def apply(highWater: () => Unit, lowWater: () => Unit): EventHandlers = {
+    inline def apply(highWater: () => Unit, lowWater: () => Unit): EventHandlers = {
       val __obj = js.Dynamic.literal(highWater = js.Any.fromFunction0(highWater), lowWater = js.Any.fromFunction0(lowWater))
       __obj.asInstanceOf[EventHandlers]
     }
     
-    @scala.inline
-    implicit class EventHandlersMutableBuilder[Self <: EventHandlers] (val x: Self) extends AnyVal {
+    extension [Self <: EventHandlers](x: Self) {
       
-      @scala.inline
-      def setHighWater(value: () => Unit): Self = StObject.set(x, "highWater", js.Any.fromFunction0(value))
+      inline def setHighWater(value: () => Unit): Self = StObject.set(x, "highWater", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLowWater(value: () => Unit): Self = StObject.set(x, "lowWater", js.Any.fromFunction0(value))
+      inline def setLowWater(value: () => Unit): Self = StObject.set(x, "lowWater", js.Any.fromFunction0(value))
     }
   }
   
@@ -58,26 +54,20 @@ object eventIteratorMod {
   }
   object EventIteratorOptions {
     
-    @scala.inline
-    def apply(): EventIteratorOptions = {
+    inline def apply(): EventIteratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventIteratorOptions]
     }
     
-    @scala.inline
-    implicit class EventIteratorOptionsMutableBuilder[Self <: EventIteratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EventIteratorOptions](x: Self) {
       
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
-      @scala.inline
-      def setLowWaterMark(value: Double): Self = StObject.set(x, "lowWaterMark", value.asInstanceOf[js.Any])
+      inline def setLowWaterMark(value: Double): Self = StObject.set(x, "lowWaterMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowWaterMarkUndefined: Self = StObject.set(x, "lowWaterMark", js.undefined)
+      inline def setLowWaterMarkUndefined: Self = StObject.set(x, "lowWaterMark", js.undefined)
     }
   }
   
@@ -98,8 +88,7 @@ object eventIteratorMod {
   }
   object Queue {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       fail: Error => Unit,
       on: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: event-iterator.event-iterator/lib/event-iterator.EventHandlers[E] */ js.Any) => Unit,
       push: T => Unit,
@@ -109,22 +98,17 @@ object eventIteratorMod {
       __obj.asInstanceOf[Queue[T]]
     }
     
-    @scala.inline
-    implicit class QueueMutableBuilder[Self <: Queue[?], T] (val x: Self & Queue[T]) extends AnyVal {
+    extension [Self <: Queue[?], T](x: Self & Queue[T]) {
       
-      @scala.inline
-      def setFail(value: Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+      inline def setFail(value: Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOn(
+      inline def setOn(
         value: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: event-iterator.event-iterator/lib/event-iterator.EventHandlers[E] */ js.Any) => Unit
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   

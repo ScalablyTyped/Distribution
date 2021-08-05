@@ -14,19 +14,15 @@ trait OnBLEConnectionStateChangedOptions
 }
 object OnBLEConnectionStateChangedOptions {
   
-  @scala.inline
-  def apply(): OnBLEConnectionStateChangedOptions = {
+  inline def apply(): OnBLEConnectionStateChangedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnBLEConnectionStateChangedOptions]
   }
   
-  @scala.inline
-  implicit class OnBLEConnectionStateChangedOptionsMutableBuilder[Self <: OnBLEConnectionStateChangedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OnBLEConnectionStateChangedOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ Connected => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ Connected => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

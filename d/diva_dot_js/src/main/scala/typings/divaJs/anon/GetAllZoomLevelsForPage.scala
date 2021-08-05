@@ -13,8 +13,7 @@ trait GetAllZoomLevelsForPage extends StObject {
 }
 object GetAllZoomLevelsForPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAllZoomLevelsForPage: Double | js.Array[SourceProvider],
     getBestZoomLevelForPage: Double | SourceProvider
   ): GetAllZoomLevelsForPage = {
@@ -22,16 +21,12 @@ object GetAllZoomLevelsForPage {
     __obj.asInstanceOf[GetAllZoomLevelsForPage]
   }
   
-  @scala.inline
-  implicit class GetAllZoomLevelsForPageMutableBuilder[Self <: GetAllZoomLevelsForPage] (val x: Self) extends AnyVal {
+  extension [Self <: GetAllZoomLevelsForPage](x: Self) {
     
-    @scala.inline
-    def setGetAllZoomLevelsForPage(value: Double | js.Array[SourceProvider]): Self = StObject.set(x, "getAllZoomLevelsForPage", value.asInstanceOf[js.Any])
+    inline def setGetAllZoomLevelsForPage(value: Double | js.Array[SourceProvider]): Self = StObject.set(x, "getAllZoomLevelsForPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllZoomLevelsForPageVarargs(value: SourceProvider*): Self = StObject.set(x, "getAllZoomLevelsForPage", js.Array(value :_*))
+    inline def setGetAllZoomLevelsForPageVarargs(value: SourceProvider*): Self = StObject.set(x, "getAllZoomLevelsForPage", js.Array(value :_*))
     
-    @scala.inline
-    def setGetBestZoomLevelForPage(value: Double | SourceProvider): Self = StObject.set(x, "getBestZoomLevelForPage", value.asInstanceOf[js.Any])
+    inline def setGetBestZoomLevelForPage(value: Double | SourceProvider): Self = StObject.set(x, "getBestZoomLevelForPage", value.asInstanceOf[js.Any])
   }
 }

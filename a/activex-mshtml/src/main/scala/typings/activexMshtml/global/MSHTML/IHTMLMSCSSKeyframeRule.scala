@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLMSCSSKeyframeRule")
 @js.native
-class IHTMLMSCSSKeyframeRule protected ()
+/* private */ class IHTMLMSCSSKeyframeRule ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLMSCSSKeyframeRule {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLMSCSSKeyframeRule_typekey")
   var MSHTMLDotIHTMLMSCSSKeyframeRule_typekey: typings.activexMshtml.MSHTML.IHTMLMSCSSKeyframeRule = js.native
   

@@ -23,49 +23,35 @@ trait AccountStatus extends StObject {
 }
 object AccountStatus {
   
-  @scala.inline
-  def apply(): AccountStatus = {
+  inline def apply(): AccountStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountStatus]
   }
   
-  @scala.inline
-  implicit class AccountStatusMutableBuilder[Self <: AccountStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AccountStatus](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAccountLevelIssues(value: js.Array[AccountStatusAccountLevelIssue]): Self = StObject.set(x, "accountLevelIssues", value.asInstanceOf[js.Any])
+    inline def setAccountLevelIssues(value: js.Array[AccountStatusAccountLevelIssue]): Self = StObject.set(x, "accountLevelIssues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountLevelIssuesUndefined: Self = StObject.set(x, "accountLevelIssues", js.undefined)
+    inline def setAccountLevelIssuesUndefined: Self = StObject.set(x, "accountLevelIssues", js.undefined)
     
-    @scala.inline
-    def setAccountLevelIssuesVarargs(value: AccountStatusAccountLevelIssue*): Self = StObject.set(x, "accountLevelIssues", js.Array(value :_*))
+    inline def setAccountLevelIssuesVarargs(value: AccountStatusAccountLevelIssue*): Self = StObject.set(x, "accountLevelIssues", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProducts(value: js.Array[AccountStatusProducts]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: js.Array[AccountStatusProducts]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
+    inline def setProductsUndefined: Self = StObject.set(x, "products", js.undefined)
     
-    @scala.inline
-    def setProductsVarargs(value: AccountStatusProducts*): Self = StObject.set(x, "products", js.Array(value :_*))
+    inline def setProductsVarargs(value: AccountStatusProducts*): Self = StObject.set(x, "products", js.Array(value :_*))
     
-    @scala.inline
-    def setWebsiteClaimed(value: Boolean): Self = StObject.set(x, "websiteClaimed", value.asInstanceOf[js.Any])
+    inline def setWebsiteClaimed(value: Boolean): Self = StObject.set(x, "websiteClaimed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteClaimedUndefined: Self = StObject.set(x, "websiteClaimed", js.undefined)
+    inline def setWebsiteClaimedUndefined: Self = StObject.set(x, "websiteClaimed", js.undefined)
   }
 }

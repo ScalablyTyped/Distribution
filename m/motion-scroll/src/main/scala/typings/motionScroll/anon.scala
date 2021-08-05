@@ -33,74 +33,52 @@ object anon {
   }
   object Axis {
     
-    @scala.inline
-    def apply(): Axis = {
+    inline def apply(): Axis = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Axis]
     }
     
-    @scala.inline
-    implicit class AxisMutableBuilder[Self <: Axis] (val x: Self) extends AnyVal {
+    extension [Self <: Axis](x: Self) {
       
-      @scala.inline
-      def setAxis(value: typings.motionScroll.motionScrollStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: typings.motionScroll.motionScrollStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setCallBack(value: () => Unit): Self = StObject.set(x, "callBack", js.Any.fromFunction0(value))
+      inline def setCallBack(value: () => Unit): Self = StObject.set(x, "callBack", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCallBackUndefined: Self = StObject.set(x, "callBack", js.undefined)
+      inline def setCallBackUndefined: Self = StObject.set(x, "callBack", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setEasing(value: () => Unit): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
+      inline def setEasing(value: () => Unit): Self = StObject.set(x, "easing", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setMaxScrollTime(value: Double): Self = StObject.set(x, "maxScrollTime", value.asInstanceOf[js.Any])
+      inline def setMaxScrollTime(value: Double): Self = StObject.set(x, "maxScrollTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxScrollTimeUndefined: Self = StObject.set(x, "maxScrollTime", js.undefined)
+      inline def setMaxScrollTimeUndefined: Self = StObject.set(x, "maxScrollTime", js.undefined)
       
-      @scala.inline
-      def setMinScrollTime(value: Double): Self = StObject.set(x, "minScrollTime", value.asInstanceOf[js.Any])
+      inline def setMinScrollTime(value: Double): Self = StObject.set(x, "minScrollTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinScrollTimeUndefined: Self = StObject.set(x, "minScrollTime", js.undefined)
+      inline def setMinScrollTimeUndefined: Self = StObject.set(x, "minScrollTime", js.undefined)
       
-      @scala.inline
-      def setScrollTo(value: Double): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
+      inline def setScrollTo(value: Double): Self = StObject.set(x, "scrollTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
+      inline def setScrollToUndefined: Self = StObject.set(x, "scrollTo", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     }
   }
 }

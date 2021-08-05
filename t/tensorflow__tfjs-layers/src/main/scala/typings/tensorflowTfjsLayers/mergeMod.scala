@@ -31,8 +31,7 @@ object mergeMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Add.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Average")
@@ -51,8 +50,7 @@ object mergeMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Average.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Concatenate")
@@ -62,7 +60,7 @@ object mergeMod {
     
     val DEFAULT_AXIS: /* -1 */ Double = js.native
     
-    val axis: js.Any = js.native
+    /* private */ val axis: js.Any = js.native
   }
   /* static members */
   object Concatenate_ {
@@ -75,8 +73,7 @@ object mergeMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Concatenate.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Dot")
@@ -84,11 +81,11 @@ object mergeMod {
   class Dot protected () extends Merge {
     def this(args: DotLayerArgs) = this()
     
-    var axes: js.Any = js.native
+    /* private */ var axes: js.Any = js.native
     
-    var interpretAxes: js.Any = js.native
+    /* private */ var interpretAxes: js.Any = js.native
     
-    var normalize: js.Any = js.native
+    /* private */ var normalize: js.Any = js.native
   }
   /* static members */
   object Dot {
@@ -101,8 +98,7 @@ object mergeMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Dot.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Maximum")
@@ -121,8 +117,7 @@ object mergeMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Maximum.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Merge")
@@ -140,7 +135,7 @@ object mergeMod {
       * @throws ValueError: If `shape1` and `shape2` are not compatible for
       *   element-wise operations.
       */
-    var computeElementwiseOpOutputShape: js.Any = js.native
+    /* private */ var computeElementwiseOpOutputShape: js.Any = js.native
     
     /**
       * Logic for merging multiple tensors, to be overridden by subclasses.
@@ -148,7 +143,7 @@ object mergeMod {
       */
     /* protected */ def mergeFunction(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] = js.native
     
-    var reshapeRequired: Boolean = js.native
+    /* protected */ var reshapeRequired: Boolean = js.native
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Minimum")
@@ -167,8 +162,7 @@ object mergeMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Minimum.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Multiply")
@@ -187,51 +181,32 @@ object mergeMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Multiply.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def add(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def add(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def add(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def add(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def add(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def add(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @scala.inline
-  def average(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def average(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def average(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def average(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def average(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def average(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @scala.inline
-  def concatenate(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def concatenate(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def concatenate(config: ConcatenateLayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def concatenate(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def concatenate(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def concatenate(config: ConcatenateLayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @scala.inline
-  def maximum(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def maximum(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def maximum(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def maximum(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def maximum(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def maximum(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @scala.inline
-  def minimum(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def minimum(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def minimum(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def minimum(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def minimum(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def minimum(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @scala.inline
-  def multiply(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def multiply(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
-  @scala.inline
-  def multiply(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def multiply(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def multiply(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  inline def multiply(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
   trait ConcatenateLayerArgs
     extends StObject
@@ -244,20 +219,16 @@ object mergeMod {
   }
   object ConcatenateLayerArgs {
     
-    @scala.inline
-    def apply(): ConcatenateLayerArgs = {
+    inline def apply(): ConcatenateLayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConcatenateLayerArgs]
     }
     
-    @scala.inline
-    implicit class ConcatenateLayerArgsMutableBuilder[Self <: ConcatenateLayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ConcatenateLayerArgs](x: Self) {
       
-      @scala.inline
-      def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     }
   }
   
@@ -283,23 +254,18 @@ object mergeMod {
   }
   object DotLayerArgs {
     
-    @scala.inline
-    def apply(axes: Double | (js.Tuple2[Double, Double])): DotLayerArgs = {
+    inline def apply(axes: Double | (js.Tuple2[Double, Double])): DotLayerArgs = {
       val __obj = js.Dynamic.literal(axes = axes.asInstanceOf[js.Any])
       __obj.asInstanceOf[DotLayerArgs]
     }
     
-    @scala.inline
-    implicit class DotLayerArgsMutableBuilder[Self <: DotLayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DotLayerArgs](x: Self) {
       
-      @scala.inline
-      def setAxes(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      inline def setAxes(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+      inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     }
   }
 }

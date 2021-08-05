@@ -62,85 +62,59 @@ trait RemoteVideoStats extends StObject {
 }
 object RemoteVideoStats {
   
-  @scala.inline
-  def apply(): RemoteVideoStats = {
+  inline def apply(): RemoteVideoStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoteVideoStats]
   }
   
-  @scala.inline
-  implicit class RemoteVideoStatsMutableBuilder[Self <: RemoteVideoStats] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteVideoStats](x: Self) {
     
-    @scala.inline
-    def setEnd2EndDelay(value: String): Self = StObject.set(x, "End2EndDelay", value.asInstanceOf[js.Any])
+    inline def setEnd2EndDelay(value: String): Self = StObject.set(x, "End2EndDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd2EndDelayUndefined: Self = StObject.set(x, "End2EndDelay", js.undefined)
+    inline def setEnd2EndDelayUndefined: Self = StObject.set(x, "End2EndDelay", js.undefined)
     
-    @scala.inline
-    def setMuteState(value: String): Self = StObject.set(x, "MuteState", value.asInstanceOf[js.Any])
+    inline def setMuteState(value: String): Self = StObject.set(x, "MuteState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuteStateUndefined: Self = StObject.set(x, "MuteState", js.undefined)
+    inline def setMuteStateUndefined: Self = StObject.set(x, "MuteState", js.undefined)
     
-    @scala.inline
-    def setPacketLossRate(value: String): Self = StObject.set(x, "PacketLossRate", value.asInstanceOf[js.Any])
+    inline def setPacketLossRate(value: String): Self = StObject.set(x, "PacketLossRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacketLossRateUndefined: Self = StObject.set(x, "PacketLossRate", js.undefined)
+    inline def setPacketLossRateUndefined: Self = StObject.set(x, "PacketLossRate", js.undefined)
     
-    @scala.inline
-    def setRecvBitrate(value: String): Self = StObject.set(x, "RecvBitrate", value.asInstanceOf[js.Any])
+    inline def setRecvBitrate(value: String): Self = StObject.set(x, "RecvBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecvBitrateUndefined: Self = StObject.set(x, "RecvBitrate", js.undefined)
+    inline def setRecvBitrateUndefined: Self = StObject.set(x, "RecvBitrate", js.undefined)
     
-    @scala.inline
-    def setRecvResolutionHeight(value: String): Self = StObject.set(x, "RecvResolutionHeight", value.asInstanceOf[js.Any])
+    inline def setRecvResolutionHeight(value: String): Self = StObject.set(x, "RecvResolutionHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecvResolutionHeightUndefined: Self = StObject.set(x, "RecvResolutionHeight", js.undefined)
+    inline def setRecvResolutionHeightUndefined: Self = StObject.set(x, "RecvResolutionHeight", js.undefined)
     
-    @scala.inline
-    def setRecvResolutionWidth(value: String): Self = StObject.set(x, "RecvResolutionWidth", value.asInstanceOf[js.Any])
+    inline def setRecvResolutionWidth(value: String): Self = StObject.set(x, "RecvResolutionWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecvResolutionWidthUndefined: Self = StObject.set(x, "RecvResolutionWidth", js.undefined)
+    inline def setRecvResolutionWidthUndefined: Self = StObject.set(x, "RecvResolutionWidth", js.undefined)
     
-    @scala.inline
-    def setRenderFrameRate(value: String): Self = StObject.set(x, "RenderFrameRate", value.asInstanceOf[js.Any])
+    inline def setRenderFrameRate(value: String): Self = StObject.set(x, "RenderFrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderFrameRateUndefined: Self = StObject.set(x, "RenderFrameRate", js.undefined)
+    inline def setRenderFrameRateUndefined: Self = StObject.set(x, "RenderFrameRate", js.undefined)
     
-    @scala.inline
-    def setRenderResolutionHeight(value: String): Self = StObject.set(x, "RenderResolutionHeight", value.asInstanceOf[js.Any])
+    inline def setRenderResolutionHeight(value: String): Self = StObject.set(x, "RenderResolutionHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderResolutionHeightUndefined: Self = StObject.set(x, "RenderResolutionHeight", js.undefined)
+    inline def setRenderResolutionHeightUndefined: Self = StObject.set(x, "RenderResolutionHeight", js.undefined)
     
-    @scala.inline
-    def setRenderResolutionWidth(value: String): Self = StObject.set(x, "RenderResolutionWidth", value.asInstanceOf[js.Any])
+    inline def setRenderResolutionWidth(value: String): Self = StObject.set(x, "RenderResolutionWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderResolutionWidthUndefined: Self = StObject.set(x, "RenderResolutionWidth", js.undefined)
+    inline def setRenderResolutionWidthUndefined: Self = StObject.set(x, "RenderResolutionWidth", js.undefined)
     
-    @scala.inline
-    def setTotalFreezeTime(value: String): Self = StObject.set(x, "TotalFreezeTime", value.asInstanceOf[js.Any])
+    inline def setTotalFreezeTime(value: String): Self = StObject.set(x, "TotalFreezeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFreezeTimeUndefined: Self = StObject.set(x, "TotalFreezeTime", js.undefined)
+    inline def setTotalFreezeTimeUndefined: Self = StObject.set(x, "TotalFreezeTime", js.undefined)
     
-    @scala.inline
-    def setTotalPlayDuration(value: String): Self = StObject.set(x, "TotalPlayDuration", value.asInstanceOf[js.Any])
+    inline def setTotalPlayDuration(value: String): Self = StObject.set(x, "TotalPlayDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPlayDurationUndefined: Self = StObject.set(x, "TotalPlayDuration", js.undefined)
+    inline def setTotalPlayDurationUndefined: Self = StObject.set(x, "TotalPlayDuration", js.undefined)
     
-    @scala.inline
-    def setTransportDelay(value: String): Self = StObject.set(x, "TransportDelay", value.asInstanceOf[js.Any])
+    inline def setTransportDelay(value: String): Self = StObject.set(x, "TransportDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportDelayUndefined: Self = StObject.set(x, "TransportDelay", js.undefined)
+    inline def setTransportDelayUndefined: Self = StObject.set(x, "TransportDelay", js.undefined)
   }
 }

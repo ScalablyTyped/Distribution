@@ -34,37 +34,27 @@ trait PlotPriceenvelopesParamsOptions extends StObject {
 }
 object PlotPriceenvelopesParamsOptions {
   
-  @scala.inline
-  def apply(): PlotPriceenvelopesParamsOptions = {
+  inline def apply(): PlotPriceenvelopesParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotPriceenvelopesParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotPriceenvelopesParamsOptionsMutableBuilder[Self <: PlotPriceenvelopesParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotPriceenvelopesParamsOptions](x: Self) {
     
-    @scala.inline
-    def setBottomBand(value: Double): Self = StObject.set(x, "bottomBand", value.asInstanceOf[js.Any])
+    inline def setBottomBand(value: Double): Self = StObject.set(x, "bottomBand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomBandUndefined: Self = StObject.set(x, "bottomBand", js.undefined)
+    inline def setBottomBandUndefined: Self = StObject.set(x, "bottomBand", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setTopBand(value: Double): Self = StObject.set(x, "topBand", value.asInstanceOf[js.Any])
+    inline def setTopBand(value: Double): Self = StObject.set(x, "topBand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopBandUndefined: Self = StObject.set(x, "topBand", js.undefined)
+    inline def setTopBandUndefined: Self = StObject.set(x, "topBand", js.undefined)
   }
 }

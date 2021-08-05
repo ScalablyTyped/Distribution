@@ -27,35 +27,26 @@ object anon {
   }
   object Cookie {
     
-    @scala.inline
-    def apply(): Cookie = {
+    inline def apply(): Cookie = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cookie]
     }
     
-    @scala.inline
-    implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
+    extension [Self <: Cookie](x: Self) {
       
-      @scala.inline
-      def setCookie(value: IOptions | (js.Function1[/* ctx */ js.UndefOr[Context], IOptions])): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: IOptions | (js.Function1[/* ctx */ js.UndefOr[Context], IOptions])): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieFunction1(value: /* ctx */ js.UndefOr[Context] => IOptions): Self = StObject.set(x, "cookie", js.Any.fromFunction1(value))
+      inline def setCookieFunction1(value: /* ctx */ js.UndefOr[Context] => IOptions): Self = StObject.set(x, "cookie", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: js.Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     }
   }
   
@@ -65,17 +56,14 @@ object anon {
   }
   object RegenerateId {
     
-    @scala.inline
-    def apply(regenerateId: () => Unit): RegenerateId = {
+    inline def apply(regenerateId: () => Unit): RegenerateId = {
       val __obj = js.Dynamic.literal(regenerateId = js.Any.fromFunction0(regenerateId))
       __obj.asInstanceOf[RegenerateId]
     }
     
-    @scala.inline
-    implicit class RegenerateIdMutableBuilder[Self <: RegenerateId] (val x: Self) extends AnyVal {
+    extension [Self <: RegenerateId](x: Self) {
       
-      @scala.inline
-      def setRegenerateId(value: () => Unit): Self = StObject.set(x, "regenerateId", js.Any.fromFunction0(value))
+      inline def setRegenerateId(value: () => Unit): Self = StObject.set(x, "regenerateId", js.Any.fromFunction0(value))
     }
   }
 }

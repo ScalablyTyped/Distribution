@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRowAlignment extends StObject
 object WdRowAlignment {
   
-  @scala.inline
-  def wdAlignRowCenter: `1` = 1.asInstanceOf[`1`]
+  inline def wdAlignRowCenter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdAlignRowLeft: `0` = 0.asInstanceOf[`0`]
+  inline def wdAlignRowLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdAlignRowRight: `2` = 2.asInstanceOf[`2`]
+  inline def wdAlignRowRight: `2` = 2.asInstanceOf[`2`]
 }

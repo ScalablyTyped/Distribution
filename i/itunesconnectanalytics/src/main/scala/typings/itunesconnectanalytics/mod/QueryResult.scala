@@ -12,22 +12,17 @@ trait QueryResult extends StObject {
 }
 object QueryResult {
   
-  @scala.inline
-  def apply(results: js.Array[AnalyticsResult], size: Double): QueryResult = {
+  inline def apply(results: js.Array[AnalyticsResult], size: Double): QueryResult = {
     val __obj = js.Dynamic.literal(results = results.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult]
   }
   
-  @scala.inline
-  implicit class QueryResultMutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResult](x: Self) {
     
-    @scala.inline
-    def setResults(value: js.Array[AnalyticsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[AnalyticsResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: AnalyticsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: AnalyticsResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

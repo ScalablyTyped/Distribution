@@ -28,37 +28,27 @@ trait AwsRdsDbStatusInfo extends StObject {
 }
 object AwsRdsDbStatusInfo {
   
-  @scala.inline
-  def apply(): AwsRdsDbStatusInfo = {
+  inline def apply(): AwsRdsDbStatusInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbStatusInfo]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbStatusInfoMutableBuilder[Self <: AwsRdsDbStatusInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbStatusInfo](x: Self) {
     
-    @scala.inline
-    def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setNormal(value: Boolean): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Boolean): Self = StObject.set(x, "Normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalUndefined: Self = StObject.set(x, "Normal", js.undefined)
+    inline def setNormalUndefined: Self = StObject.set(x, "Normal", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NonEmptyString): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusType(value: NonEmptyString): Self = StObject.set(x, "StatusType", value.asInstanceOf[js.Any])
+    inline def setStatusType(value: NonEmptyString): Self = StObject.set(x, "StatusType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusTypeUndefined: Self = StObject.set(x, "StatusType", js.undefined)
+    inline def setStatusTypeUndefined: Self = StObject.set(x, "StatusType", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

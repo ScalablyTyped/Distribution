@@ -23,55 +23,39 @@ trait FixedContent extends StObject {
 }
 object FixedContent {
   
-  @scala.inline
-  def apply(): FixedContent = {
+  inline def apply(): FixedContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FixedContent]
   }
   
-  @scala.inline
-  implicit class FixedContentMutableBuilder[Self <: FixedContent] (val x: Self) extends AnyVal {
+  extension [Self <: FixedContent](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setFixedContent(value: Boolean): Self = StObject.set(x, "fixedContent", value.asInstanceOf[js.Any])
+    inline def setFixedContent(value: Boolean): Self = StObject.set(x, "fixedContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedContentUndefined: Self = StObject.set(x, "fixedContent", js.undefined)
+    inline def setFixedContentUndefined: Self = StObject.set(x, "fixedContent", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* e */ PullHookChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* e */ PullHookChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setOnLoad(value: /* done */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(value: /* done */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    @scala.inline
-    def setOnPull(value: () => Unit): Self = StObject.set(x, "onPull", js.Any.fromFunction0(value))
+    inline def setOnPull(value: () => Unit): Self = StObject.set(x, "onPull", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPullUndefined: Self = StObject.set(x, "onPull", js.undefined)
+    inline def setOnPullUndefined: Self = StObject.set(x, "onPull", js.undefined)
     
-    @scala.inline
-    def setThresholdHeight(value: Double): Self = StObject.set(x, "thresholdHeight", value.asInstanceOf[js.Any])
+    inline def setThresholdHeight(value: Double): Self = StObject.set(x, "thresholdHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdHeightUndefined: Self = StObject.set(x, "thresholdHeight", js.undefined)
+    inline def setThresholdHeightUndefined: Self = StObject.set(x, "thresholdHeight", js.undefined)
   }
 }

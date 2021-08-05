@@ -18,28 +18,21 @@ trait ListReportsOutput extends StObject {
 }
 object ListReportsOutput {
   
-  @scala.inline
-  def apply(): ListReportsOutput = {
+  inline def apply(): ListReportsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReportsOutput]
   }
   
-  @scala.inline
-  implicit class ListReportsOutputMutableBuilder[Self <: ListReportsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListReportsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReports(value: ReportArns): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
+    inline def setReports(value: ReportArns): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
+    inline def setReportsUndefined: Self = StObject.set(x, "reports", js.undefined)
     
-    @scala.inline
-    def setReportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reports", js.Array(value :_*))
+    inline def setReportsVarargs(value: NonEmptyString*): Self = StObject.set(x, "reports", js.Array(value :_*))
   }
 }

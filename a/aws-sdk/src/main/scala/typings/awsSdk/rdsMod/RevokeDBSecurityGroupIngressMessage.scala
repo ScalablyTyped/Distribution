@@ -33,40 +33,29 @@ trait RevokeDBSecurityGroupIngressMessage extends StObject {
 }
 object RevokeDBSecurityGroupIngressMessage {
   
-  @scala.inline
-  def apply(DBSecurityGroupName: String): RevokeDBSecurityGroupIngressMessage = {
+  inline def apply(DBSecurityGroupName: String): RevokeDBSecurityGroupIngressMessage = {
     val __obj = js.Dynamic.literal(DBSecurityGroupName = DBSecurityGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeDBSecurityGroupIngressMessage]
   }
   
-  @scala.inline
-  implicit class RevokeDBSecurityGroupIngressMessageMutableBuilder[Self <: RevokeDBSecurityGroupIngressMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeDBSecurityGroupIngressMessage](x: Self) {
     
-    @scala.inline
-    def setCIDRIP(value: String): Self = StObject.set(x, "CIDRIP", value.asInstanceOf[js.Any])
+    inline def setCIDRIP(value: String): Self = StObject.set(x, "CIDRIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCIDRIPUndefined: Self = StObject.set(x, "CIDRIP", js.undefined)
+    inline def setCIDRIPUndefined: Self = StObject.set(x, "CIDRIP", js.undefined)
     
-    @scala.inline
-    def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2SecurityGroupId(value: String): Self = StObject.set(x, "EC2SecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setEC2SecurityGroupId(value: String): Self = StObject.set(x, "EC2SecurityGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2SecurityGroupIdUndefined: Self = StObject.set(x, "EC2SecurityGroupId", js.undefined)
+    inline def setEC2SecurityGroupIdUndefined: Self = StObject.set(x, "EC2SecurityGroupId", js.undefined)
     
-    @scala.inline
-    def setEC2SecurityGroupName(value: String): Self = StObject.set(x, "EC2SecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setEC2SecurityGroupName(value: String): Self = StObject.set(x, "EC2SecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2SecurityGroupNameUndefined: Self = StObject.set(x, "EC2SecurityGroupName", js.undefined)
+    inline def setEC2SecurityGroupNameUndefined: Self = StObject.set(x, "EC2SecurityGroupName", js.undefined)
     
-    @scala.inline
-    def setEC2SecurityGroupOwnerId(value: String): Self = StObject.set(x, "EC2SecurityGroupOwnerId", value.asInstanceOf[js.Any])
+    inline def setEC2SecurityGroupOwnerId(value: String): Self = StObject.set(x, "EC2SecurityGroupOwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEC2SecurityGroupOwnerIdUndefined: Self = StObject.set(x, "EC2SecurityGroupOwnerId", js.undefined)
+    inline def setEC2SecurityGroupOwnerIdUndefined: Self = StObject.set(x, "EC2SecurityGroupOwnerId", js.undefined)
   }
 }

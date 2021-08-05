@@ -21,11 +21,11 @@ class Gzip_ () extends StObject {
   def this(opts: GzipOptions) = this()
   def this(opts: GzipOptions, cb: FlateStreamHandler) = this()
   
-  var c: js.Any = js.native
+  /* private */ var c: js.Any = js.native
   
-  var l: js.Any = js.native
+  /* private */ var l: js.Any = js.native
   
-  var o: js.Any = js.native
+  /* private */ var o: js.Any = js.native
   
   /**
     * The handler to call whenever data is available
@@ -37,7 +37,7 @@ class Gzip_ () extends StObject {
   @JSName("ondata")
   var ondata_Original: FlateStreamHandler = js.native
   
-  var p: js.Any = js.native
+  /* private */ var p: js.Any = js.native
   
   /**
     * Pushes a chunk to be GZIPped
@@ -47,5 +47,5 @@ class Gzip_ () extends StObject {
   def push(chunk: Uint8Array): Unit = js.native
   def push(chunk: Uint8Array, `final`: Boolean): Unit = js.native
   
-  var v: js.Any = js.native
+  /* private */ var v: js.Any = js.native
 }

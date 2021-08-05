@@ -12,16 +12,13 @@ trait EmailMailboxChangedDeferral extends StObject {
 }
 object EmailMailboxChangedDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): EmailMailboxChangedDeferral = {
+  inline def apply(complete: () => Unit): EmailMailboxChangedDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[EmailMailboxChangedDeferral]
   }
   
-  @scala.inline
-  implicit class EmailMailboxChangedDeferralMutableBuilder[Self <: EmailMailboxChangedDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: EmailMailboxChangedDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

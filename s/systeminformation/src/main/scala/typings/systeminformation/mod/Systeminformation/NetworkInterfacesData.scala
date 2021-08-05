@@ -47,8 +47,7 @@ trait NetworkInterfacesData extends StObject {
 }
 object NetworkInterfacesData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     carrier_changes: Double,
     dhcp: Boolean,
     dnsSuffix: String,
@@ -74,64 +73,44 @@ object NetworkInterfacesData {
     __obj.asInstanceOf[NetworkInterfacesData]
   }
   
-  @scala.inline
-  implicit class NetworkInterfacesDataMutableBuilder[Self <: NetworkInterfacesData] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkInterfacesData](x: Self) {
     
-    @scala.inline
-    def setCarrier_changes(value: Double): Self = StObject.set(x, "carrier_changes", value.asInstanceOf[js.Any])
+    inline def setCarrier_changes(value: Double): Self = StObject.set(x, "carrier_changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDhcp(value: Boolean): Self = StObject.set(x, "dhcp", value.asInstanceOf[js.Any])
+    inline def setDhcp(value: Boolean): Self = StObject.set(x, "dhcp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
+    inline def setDnsSuffix(value: String): Self = StObject.set(x, "dnsSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplex(value: String): Self = StObject.set(x, "duplex", value.asInstanceOf[js.Any])
+    inline def setDuplex(value: String): Self = StObject.set(x, "duplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIeee8021xAuth(value: String): Self = StObject.set(x, "ieee8021xAuth", value.asInstanceOf[js.Any])
+    inline def setIeee8021xAuth(value: String): Self = StObject.set(x, "ieee8021xAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIeee8021xState(value: String): Self = StObject.set(x, "ieee8021xState", value.asInstanceOf[js.Any])
+    inline def setIeee8021xState(value: String): Self = StObject.set(x, "ieee8021xState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIface(value: String): Self = StObject.set(x, "iface", value.asInstanceOf[js.Any])
+    inline def setIface(value: String): Self = StObject.set(x, "iface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfaceName(value: String): Self = StObject.set(x, "ifaceName", value.asInstanceOf[js.Any])
+    inline def setIfaceName(value: String): Self = StObject.set(x, "ifaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp4(value: String): Self = StObject.set(x, "ip4", value.asInstanceOf[js.Any])
+    inline def setIp4(value: String): Self = StObject.set(x, "ip4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp4subnet(value: String): Self = StObject.set(x, "ip4subnet", value.asInstanceOf[js.Any])
+    inline def setIp4subnet(value: String): Self = StObject.set(x, "ip4subnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp6(value: String): Self = StObject.set(x, "ip6", value.asInstanceOf[js.Any])
+    inline def setIp6(value: String): Self = StObject.set(x, "ip6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp6subnet(value: String): Self = StObject.set(x, "ip6subnet", value.asInstanceOf[js.Any])
+    inline def setIp6subnet(value: String): Self = StObject.set(x, "ip6subnet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtu(value: Double): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
+    inline def setMtu(value: Double): Self = StObject.set(x, "mtu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperstate(value: String): Self = StObject.set(x, "operstate", value.asInstanceOf[js.Any])
+    inline def setOperstate(value: String): Self = StObject.set(x, "operstate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
+    inline def setVirtual(value: Boolean): Self = StObject.set(x, "virtual", value.asInstanceOf[js.Any])
   }
 }

@@ -13,17 +13,14 @@ trait WebAclRuleOverrideAction extends StObject {
 }
 object WebAclRuleOverrideAction {
   
-  @scala.inline
-  def apply(`type`: String): WebAclRuleOverrideAction = {
+  inline def apply(`type`: String): WebAclRuleOverrideAction = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleOverrideAction]
   }
   
-  @scala.inline
-  implicit class WebAclRuleOverrideActionMutableBuilder[Self <: WebAclRuleOverrideAction] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleOverrideAction](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

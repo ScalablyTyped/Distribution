@@ -10,19 +10,15 @@ trait CreateItemRelationships extends StObject {
 }
 object CreateItemRelationships {
   
-  @scala.inline
-  def apply(): CreateItemRelationships = {
+  inline def apply(): CreateItemRelationships = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateItemRelationships]
   }
   
-  @scala.inline
-  implicit class CreateItemRelationshipsMutableBuilder[Self <: CreateItemRelationships] (val x: Self) extends AnyVal {
+  extension [Self <: CreateItemRelationships](x: Self) {
     
-    @scala.inline
-    def setStorage(value: CreateItemRelationshipsStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: CreateItemRelationshipsStorage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
   }
 }

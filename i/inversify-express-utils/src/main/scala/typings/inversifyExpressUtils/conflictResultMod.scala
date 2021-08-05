@@ -16,7 +16,7 @@ object conflictResultMod {
        with ConflictResult {
     def this(apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
     /* CompleteClass */
@@ -27,21 +27,18 @@ object conflictResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
   }
   object ConflictResult {
     
-    @scala.inline
-    def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): ConflictResult = {
+    inline def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): ConflictResult = {
       val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync))
       __obj.asInstanceOf[ConflictResult]
     }
     
-    @scala.inline
-    implicit class ConflictResultMutableBuilder[Self <: ConflictResult] (val x: Self) extends AnyVal {
+    extension [Self <: ConflictResult](x: Self) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
     }
   }
 }

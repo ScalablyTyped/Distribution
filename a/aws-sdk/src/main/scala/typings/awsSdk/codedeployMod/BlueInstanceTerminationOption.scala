@@ -18,25 +18,19 @@ trait BlueInstanceTerminationOption extends StObject {
 }
 object BlueInstanceTerminationOption {
   
-  @scala.inline
-  def apply(): BlueInstanceTerminationOption = {
+  inline def apply(): BlueInstanceTerminationOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlueInstanceTerminationOption]
   }
   
-  @scala.inline
-  implicit class BlueInstanceTerminationOptionMutableBuilder[Self <: BlueInstanceTerminationOption] (val x: Self) extends AnyVal {
+  extension [Self <: BlueInstanceTerminationOption](x: Self) {
     
-    @scala.inline
-    def setAction(value: InstanceAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: InstanceAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setTerminationWaitTimeInMinutes(value: Duration): Self = StObject.set(x, "terminationWaitTimeInMinutes", value.asInstanceOf[js.Any])
+    inline def setTerminationWaitTimeInMinutes(value: Duration): Self = StObject.set(x, "terminationWaitTimeInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminationWaitTimeInMinutesUndefined: Self = StObject.set(x, "terminationWaitTimeInMinutes", js.undefined)
+    inline def setTerminationWaitTimeInMinutesUndefined: Self = StObject.set(x, "terminationWaitTimeInMinutes", js.undefined)
   }
 }

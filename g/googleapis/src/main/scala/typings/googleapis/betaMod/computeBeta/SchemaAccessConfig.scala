@@ -61,55 +61,39 @@ trait SchemaAccessConfig extends StObject {
 }
 object SchemaAccessConfig {
   
-  @scala.inline
-  def apply(): SchemaAccessConfig = {
+  inline def apply(): SchemaAccessConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccessConfig]
   }
   
-  @scala.inline
-  implicit class SchemaAccessConfigMutableBuilder[Self <: SchemaAccessConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccessConfig](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNatIP(value: String): Self = StObject.set(x, "natIP", value.asInstanceOf[js.Any])
+    inline def setNatIP(value: String): Self = StObject.set(x, "natIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNatIPUndefined: Self = StObject.set(x, "natIP", js.undefined)
+    inline def setNatIPUndefined: Self = StObject.set(x, "natIP", js.undefined)
     
-    @scala.inline
-    def setNetworkTier(value: String): Self = StObject.set(x, "networkTier", value.asInstanceOf[js.Any])
+    inline def setNetworkTier(value: String): Self = StObject.set(x, "networkTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkTierUndefined: Self = StObject.set(x, "networkTier", js.undefined)
+    inline def setNetworkTierUndefined: Self = StObject.set(x, "networkTier", js.undefined)
     
-    @scala.inline
-    def setPublicPtrDomainName(value: String): Self = StObject.set(x, "publicPtrDomainName", value.asInstanceOf[js.Any])
+    inline def setPublicPtrDomainName(value: String): Self = StObject.set(x, "publicPtrDomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicPtrDomainNameUndefined: Self = StObject.set(x, "publicPtrDomainName", js.undefined)
+    inline def setPublicPtrDomainNameUndefined: Self = StObject.set(x, "publicPtrDomainName", js.undefined)
     
-    @scala.inline
-    def setSetPublicPtr(value: Boolean): Self = StObject.set(x, "setPublicPtr", value.asInstanceOf[js.Any])
+    inline def setSetPublicPtr(value: Boolean): Self = StObject.set(x, "setPublicPtr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPublicPtrUndefined: Self = StObject.set(x, "setPublicPtr", js.undefined)
+    inline def setSetPublicPtrUndefined: Self = StObject.set(x, "setPublicPtr", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -44,73 +44,51 @@ trait SuggestionProto extends StObject {
 }
 object SuggestionProto {
   
-  @scala.inline
-  def apply(): SuggestionProto = {
+  inline def apply(): SuggestionProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestionProto]
   }
   
-  @scala.inline
-  implicit class SuggestionProtoMutableBuilder[Self <: SuggestionProto] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestionProto](x: Self) {
     
-    @scala.inline
-    def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
+    inline def setHelpUrl(value: String): Self = StObject.set(x, "helpUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
+    inline def setHelpUrlUndefined: Self = StObject.set(x, "helpUrl", js.undefined)
     
-    @scala.inline
-    def setLongMessage(value: SafeHtmlProto): Self = StObject.set(x, "longMessage", value.asInstanceOf[js.Any])
+    inline def setLongMessage(value: SafeHtmlProto): Self = StObject.set(x, "longMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongMessageUndefined: Self = StObject.set(x, "longMessage", js.undefined)
+    inline def setLongMessageUndefined: Self = StObject.set(x, "longMessage", js.undefined)
     
-    @scala.inline
-    def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setPseudoResourceId(value: String): Self = StObject.set(x, "pseudoResourceId", value.asInstanceOf[js.Any])
+    inline def setPseudoResourceId(value: String): Self = StObject.set(x, "pseudoResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudoResourceIdUndefined: Self = StObject.set(x, "pseudoResourceId", js.undefined)
+    inline def setPseudoResourceIdUndefined: Self = StObject.set(x, "pseudoResourceId", js.undefined)
     
-    @scala.inline
-    def setRegion(value: RegionProto): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: RegionProto): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
+    inline def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenIdUndefined: Self = StObject.set(x, "screenId", js.undefined)
+    inline def setScreenIdUndefined: Self = StObject.set(x, "screenId", js.undefined)
     
-    @scala.inline
-    def setSecondaryPriority(value: Double): Self = StObject.set(x, "secondaryPriority", value.asInstanceOf[js.Any])
+    inline def setSecondaryPriority(value: Double): Self = StObject.set(x, "secondaryPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryPriorityUndefined: Self = StObject.set(x, "secondaryPriority", js.undefined)
+    inline def setSecondaryPriorityUndefined: Self = StObject.set(x, "secondaryPriority", js.undefined)
     
-    @scala.inline
-    def setShortMessage(value: SafeHtmlProto): Self = StObject.set(x, "shortMessage", value.asInstanceOf[js.Any])
+    inline def setShortMessage(value: SafeHtmlProto): Self = StObject.set(x, "shortMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortMessageUndefined: Self = StObject.set(x, "shortMessage", js.undefined)
+    inline def setShortMessageUndefined: Self = StObject.set(x, "shortMessage", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

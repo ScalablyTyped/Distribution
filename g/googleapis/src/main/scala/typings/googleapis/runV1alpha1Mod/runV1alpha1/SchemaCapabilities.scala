@@ -21,31 +21,23 @@ trait SchemaCapabilities extends StObject {
 }
 object SchemaCapabilities {
   
-  @scala.inline
-  def apply(): SchemaCapabilities = {
+  inline def apply(): SchemaCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCapabilities]
   }
   
-  @scala.inline
-  implicit class SchemaCapabilitiesMutableBuilder[Self <: SchemaCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCapabilities](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: js.Array[String]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setAddVarargs(value: String*): Self = StObject.set(x, "add", js.Array(value :_*))
+    inline def setAddVarargs(value: String*): Self = StObject.set(x, "add", js.Array(value :_*))
     
-    @scala.inline
-    def setDrop(value: js.Array[String]): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: js.Array[String]): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
     
-    @scala.inline
-    def setDropVarargs(value: String*): Self = StObject.set(x, "drop", js.Array(value :_*))
+    inline def setDropVarargs(value: String*): Self = StObject.set(x, "drop", js.Array(value :_*))
   }
 }

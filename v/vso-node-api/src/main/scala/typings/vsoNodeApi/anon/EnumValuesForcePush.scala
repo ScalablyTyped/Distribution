@@ -10,16 +10,13 @@ trait EnumValuesForcePush extends StObject {
 }
 object EnumValuesForcePush {
   
-  @scala.inline
-  def apply(enumValues: ForcePush): EnumValuesForcePush = {
+  inline def apply(enumValues: ForcePush): EnumValuesForcePush = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesForcePush]
   }
   
-  @scala.inline
-  implicit class EnumValuesForcePushMutableBuilder[Self <: EnumValuesForcePush] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesForcePush](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: ForcePush): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: ForcePush): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

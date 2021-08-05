@@ -18,22 +18,17 @@ trait AddPrefixListEntry extends StObject {
 }
 object AddPrefixListEntry {
   
-  @scala.inline
-  def apply(Cidr: String): AddPrefixListEntry = {
+  inline def apply(Cidr: String): AddPrefixListEntry = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddPrefixListEntry]
   }
   
-  @scala.inline
-  implicit class AddPrefixListEntryMutableBuilder[Self <: AddPrefixListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: AddPrefixListEntry](x: Self) {
     
-    @scala.inline
-    def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

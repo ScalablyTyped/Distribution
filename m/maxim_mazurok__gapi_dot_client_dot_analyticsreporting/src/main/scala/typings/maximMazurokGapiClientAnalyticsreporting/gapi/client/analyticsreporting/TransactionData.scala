@@ -20,37 +20,27 @@ trait TransactionData extends StObject {
 }
 object TransactionData {
   
-  @scala.inline
-  def apply(): TransactionData = {
+  inline def apply(): TransactionData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransactionData]
   }
   
-  @scala.inline
-  implicit class TransactionDataMutableBuilder[Self <: TransactionData] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionData](x: Self) {
     
-    @scala.inline
-    def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "transactionId", js.undefined)
     
-    @scala.inline
-    def setTransactionRevenue(value: Double): Self = StObject.set(x, "transactionRevenue", value.asInstanceOf[js.Any])
+    inline def setTransactionRevenue(value: Double): Self = StObject.set(x, "transactionRevenue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionRevenueUndefined: Self = StObject.set(x, "transactionRevenue", js.undefined)
+    inline def setTransactionRevenueUndefined: Self = StObject.set(x, "transactionRevenue", js.undefined)
     
-    @scala.inline
-    def setTransactionShipping(value: Double): Self = StObject.set(x, "transactionShipping", value.asInstanceOf[js.Any])
+    inline def setTransactionShipping(value: Double): Self = StObject.set(x, "transactionShipping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionShippingUndefined: Self = StObject.set(x, "transactionShipping", js.undefined)
+    inline def setTransactionShippingUndefined: Self = StObject.set(x, "transactionShipping", js.undefined)
     
-    @scala.inline
-    def setTransactionTax(value: Double): Self = StObject.set(x, "transactionTax", value.asInstanceOf[js.Any])
+    inline def setTransactionTax(value: Double): Self = StObject.set(x, "transactionTax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionTaxUndefined: Self = StObject.set(x, "transactionTax", js.undefined)
+    inline def setTransactionTaxUndefined: Self = StObject.set(x, "transactionTax", js.undefined)
   }
 }

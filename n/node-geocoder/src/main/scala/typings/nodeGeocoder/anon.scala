@@ -14,26 +14,20 @@ object anon {
   }
   object Confidence {
     
-    @scala.inline
-    def apply(): Confidence = {
+    inline def apply(): Confidence = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Confidence]
     }
     
-    @scala.inline
-    implicit class ConfidenceMutableBuilder[Self <: Confidence] (val x: Self) extends AnyVal {
+    extension [Self <: Confidence](x: Self) {
       
-      @scala.inline
-      def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+      inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+      inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
       
-      @scala.inline
-      def setGooglePlaceId(value: String): Self = StObject.set(x, "googlePlaceId", value.asInstanceOf[js.Any])
+      inline def setGooglePlaceId(value: String): Self = StObject.set(x, "googlePlaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGooglePlaceIdUndefined: Self = StObject.set(x, "googlePlaceId", js.undefined)
+      inline def setGooglePlaceIdUndefined: Self = StObject.set(x, "googlePlaceId", js.undefined)
     }
   }
   
@@ -49,38 +43,28 @@ object anon {
   }
   object Level1long {
     
-    @scala.inline
-    def apply(): Level1long = {
+    inline def apply(): Level1long = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Level1long]
     }
     
-    @scala.inline
-    implicit class Level1longMutableBuilder[Self <: Level1long] (val x: Self) extends AnyVal {
+    extension [Self <: Level1long](x: Self) {
       
-      @scala.inline
-      def setLevel1long(value: String): Self = StObject.set(x, "level1long", value.asInstanceOf[js.Any])
+      inline def setLevel1long(value: String): Self = StObject.set(x, "level1long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel1longUndefined: Self = StObject.set(x, "level1long", js.undefined)
+      inline def setLevel1longUndefined: Self = StObject.set(x, "level1long", js.undefined)
       
-      @scala.inline
-      def setLevel1short(value: String): Self = StObject.set(x, "level1short", value.asInstanceOf[js.Any])
+      inline def setLevel1short(value: String): Self = StObject.set(x, "level1short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel1shortUndefined: Self = StObject.set(x, "level1short", js.undefined)
+      inline def setLevel1shortUndefined: Self = StObject.set(x, "level1short", js.undefined)
       
-      @scala.inline
-      def setLevel2long(value: String): Self = StObject.set(x, "level2long", value.asInstanceOf[js.Any])
+      inline def setLevel2long(value: String): Self = StObject.set(x, "level2long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel2longUndefined: Self = StObject.set(x, "level2long", js.undefined)
+      inline def setLevel2longUndefined: Self = StObject.set(x, "level2long", js.undefined)
       
-      @scala.inline
-      def setLevel2short(value: String): Self = StObject.set(x, "level2short", value.asInstanceOf[js.Any])
+      inline def setLevel2short(value: String): Self = StObject.set(x, "level2short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel2shortUndefined: Self = StObject.set(x, "level2short", js.undefined)
+      inline def setLevel2shortUndefined: Self = StObject.set(x, "level2short", js.undefined)
     }
   }
 }

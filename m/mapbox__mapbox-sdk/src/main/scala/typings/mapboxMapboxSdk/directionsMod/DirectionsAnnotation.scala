@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsAnnotation extends StObject
 object DirectionsAnnotation {
   
-  @scala.inline
-  def congestion: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.congestion = "congestion".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.congestion]
+  inline def congestion: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.congestion = "congestion".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.congestion]
   
-  @scala.inline
-  def distance: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.distance = "distance".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.distance]
+  inline def distance: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.distance = "distance".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.distance]
   
-  @scala.inline
-  def duration: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.duration = "duration".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.duration]
+  inline def duration: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.duration = "duration".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.duration]
   
-  @scala.inline
-  def speed: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.speed = "speed".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.speed]
+  inline def speed: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.speed = "speed".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.speed]
 }

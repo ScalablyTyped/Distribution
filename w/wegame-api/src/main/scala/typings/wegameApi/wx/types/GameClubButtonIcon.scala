@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GameClubButtonIcon extends StObject
 object GameClubButtonIcon {
   
-  @scala.inline
-  def dark: typings.wegameApi.wegameApiStrings.dark = "dark".asInstanceOf[typings.wegameApi.wegameApiStrings.dark]
+  inline def dark: typings.wegameApi.wegameApiStrings.dark = "dark".asInstanceOf[typings.wegameApi.wegameApiStrings.dark]
   
-  @scala.inline
-  def green: typings.wegameApi.wegameApiStrings.green = "green".asInstanceOf[typings.wegameApi.wegameApiStrings.green]
+  inline def green: typings.wegameApi.wegameApiStrings.green = "green".asInstanceOf[typings.wegameApi.wegameApiStrings.green]
   
-  @scala.inline
-  def light: typings.wegameApi.wegameApiStrings.light = "light".asInstanceOf[typings.wegameApi.wegameApiStrings.light]
+  inline def light: typings.wegameApi.wegameApiStrings.light = "light".asInstanceOf[typings.wegameApi.wegameApiStrings.light]
   
-  @scala.inline
-  def white: typings.wegameApi.wegameApiStrings.white = "white".asInstanceOf[typings.wegameApi.wegameApiStrings.white]
+  inline def white: typings.wegameApi.wegameApiStrings.white = "white".asInstanceOf[typings.wegameApi.wegameApiStrings.white]
 }

@@ -34,28 +34,21 @@ trait PayPalItem extends StObject {
 }
 object PayPalItem {
   
-  @scala.inline
-  def apply(currency: String, name: String, price: String, quantity: Double, sku: String): PayPalItem = {
+  inline def apply(currency: String, name: String, price: String, quantity: Double, sku: String): PayPalItem = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any], sku = sku.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayPalItem]
   }
   
-  @scala.inline
-  implicit class PayPalItemMutableBuilder[Self <: PayPalItem] (val x: Self) extends AnyVal {
+  extension [Self <: PayPalItem](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+    inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
   }
 }

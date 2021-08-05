@@ -14,19 +14,15 @@ trait Engine extends StObject {
 }
 object Engine {
   
-  @scala.inline
-  def apply(engine: IPlaybackEngine, eventEmitter: IEventEmitter): Engine = {
+  inline def apply(engine: IPlaybackEngine, eventEmitter: IEventEmitter): Engine = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any], eventEmitter = eventEmitter.asInstanceOf[js.Any])
     __obj.asInstanceOf[Engine]
   }
   
-  @scala.inline
-  implicit class EngineMutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
+  extension [Self <: Engine](x: Self) {
     
-    @scala.inline
-    def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
   }
 }

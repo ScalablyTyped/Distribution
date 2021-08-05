@@ -25,75 +25,75 @@ object positioningContainerPositioningContainerMod {
     @JSName("UNSAFE_componentWillUpdate")
     def UNSAFE_componentWillUpdate_MPositioningContainer(newProps: IPositioningContainerProps): Unit = js.native
     
-    var _arePositionsEqual: js.Any = js.native
+    /* private */ var _arePositionsEqual: js.Any = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _comparePositions: js.Any = js.native
+    /* private */ var _comparePositions: js.Any = js.native
     
-    var _contentHost: js.Any = js.native
+    /* private */ var _contentHost: js.Any = js.native
     
-    var _didSetInitialFocus: js.Any = js.native
+    /* private */ var _didSetInitialFocus: js.Any = js.native
     
     /* protected */ def _dismissOnLostFocus(ev: Event): Unit = js.native
     
     /* protected */ def _dismissOnScroll(ev: Event): Unit = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var _getBounds: js.Any = js.native
+    /* private */ var _getBounds: js.Any = js.native
     
     /**
       * Return the maximum height the container can grow to
       * without going out of the specified bounds
       */
-    var _getMaxHeight: js.Any = js.native
+    /* private */ var _getMaxHeight: js.Any = js.native
     
-    var _getTarget: js.Any = js.native
+    /* private */ var _getTarget: js.Any = js.native
     
     /**
       * The maximum height the PositioningContainer can grow to
       * without going being the window or target bounds
       */
-    var _maxHeight: js.Any = js.native
+    /* private */ var _maxHeight: js.Any = js.native
     
     /* protected */ def _onComponentDidMount(): Unit = js.native
     
-    var _positionAttempts: js.Any = js.native
+    /* private */ var _positionAttempts: js.Any = js.native
     
     /**
       * The primary positioned div.
       */
-    var _positionedHost: js.Any = js.native
+    /* private */ var _positionedHost: js.Any = js.native
     
     /**
       * The bounds used when determing if and where the
       * PositioningContainer should be placed.
       */
-    var _positioningBounds: js.Any = js.native
+    /* private */ var _positioningBounds: js.Any = js.native
     
     /**
       * Animates the height if finalHeight was given.
       */
-    var _setHeightOffsetEveryFrame: js.Any = js.native
+    /* private */ var _setHeightOffsetEveryFrame: js.Any = js.native
     
-    var _setHeightOffsetTimer: js.Any = js.native
+    /* private */ var _setHeightOffsetTimer: js.Any = js.native
     
     /* protected */ def _setInitialFocus(): Unit = js.native
     
-    var _setTargetWindowAndElement: js.Any = js.native
+    /* private */ var _setTargetWindowAndElement: js.Any = js.native
     
-    var _target: js.Any = js.native
+    /* private */ var _target: js.Any = js.native
     
     /**
       * Stores an instance of Window, used to check
       * for server side rendering and if focus was lost.
       */
-    var _targetWindow: js.Any = js.native
+    /* private */ var _targetWindow: js.Any = js.native
     
-    var _updateAsyncPosition: js.Any = js.native
+    /* private */ var _updateAsyncPosition: js.Any = js.native
     
-    var _updatePosition: js.Any = js.native
+    /* private */ var _updatePosition: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPositioningContainer(): Unit = js.native
@@ -128,8 +128,7 @@ object positioningContainerPositioningContainerMod {
     @JSImport("office-ui-fabric-react/lib/components/Coachmark/PositioningContainer/PositioningContainer", "PositioningContainer.defaultProps")
     @js.native
     def defaultProps: IPositioningContainerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IPositioningContainerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IPositioningContainerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IPositioningContainerState extends StObject {
@@ -147,26 +146,20 @@ object positioningContainerPositioningContainerMod {
   }
   object IPositioningContainerState {
     
-    @scala.inline
-    def apply(): IPositioningContainerState = {
+    inline def apply(): IPositioningContainerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPositioningContainerState]
     }
     
-    @scala.inline
-    implicit class IPositioningContainerStateMutableBuilder[Self <: IPositioningContainerState] (val x: Self) extends AnyVal {
+    extension [Self <: IPositioningContainerState](x: Self) {
       
-      @scala.inline
-      def setHeightOffset(value: Double): Self = StObject.set(x, "heightOffset", value.asInstanceOf[js.Any])
+      inline def setHeightOffset(value: Double): Self = StObject.set(x, "heightOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightOffsetUndefined: Self = StObject.set(x, "heightOffset", js.undefined)
+      inline def setHeightOffsetUndefined: Self = StObject.set(x, "heightOffset", js.undefined)
       
-      @scala.inline
-      def setPositions(value: IPositionedData): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+      inline def setPositions(value: IPositionedData): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
+      inline def setPositionsUndefined: Self = StObject.set(x, "positions", js.undefined)
     }
   }
 }

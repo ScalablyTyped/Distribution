@@ -21,11 +21,9 @@ object sliderMod {
     @js.native
     val ^ : STATE_CHANGE_TYPE = js.native
     
-    @scala.inline
-    implicit class STATE_CHANGE_TYPEMutableBuilder[Self <: STATE_CHANGE_TYPE] (val x: Self) extends AnyVal {
+    extension [Self <: STATE_CHANGE_TYPE](x: Self) {
       
-      @scala.inline
-      def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+      inline def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,8 +111,7 @@ object sliderMod {
   }
   object SharedProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $disabled: Boolean,
       $isDragged: Boolean,
       $marks: Boolean,
@@ -127,32 +124,23 @@ object sliderMod {
       __obj.asInstanceOf[SharedProps]
     }
     
-    @scala.inline
-    implicit class SharedPropsMutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
+    extension [Self <: SharedProps](x: Self) {
       
-      @scala.inline
-      def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
+      inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isDragged(value: Boolean): Self = StObject.set(x, "$isDragged", value.asInstanceOf[js.Any])
+      inline def set$isDragged(value: Boolean): Self = StObject.set(x, "$isDragged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$marks(value: Boolean): Self = StObject.set(x, "$marks", value.asInstanceOf[js.Any])
+      inline def set$marks(value: Boolean): Self = StObject.set(x, "$marks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$max(value: Double): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
+      inline def set$max(value: Double): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$min(value: Double): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
+      inline def set$min(value: Double): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$thumbIndex(value: Double): Self = StObject.set(x, "$thumbIndex", value.asInstanceOf[js.Any])
+      inline def set$thumbIndex(value: Double): Self = StObject.set(x, "$thumbIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$value(value: js.Array[Double]): Self = StObject.set(x, "$value", value.asInstanceOf[js.Any])
+      inline def set$value(value: js.Array[Double]): Self = StObject.set(x, "$value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$valueVarargs(value: Double*): Self = StObject.set(x, "$value", js.Array(value :_*))
+      inline def set$valueVarargs(value: Double*): Self = StObject.set(x, "$value", js.Array(value :_*))
     }
   }
   
@@ -196,86 +184,66 @@ object sliderMod {
   }
   object SliderOverrides {
     
-    @scala.inline
-    def apply(): SliderOverrides = {
+    inline def apply(): SliderOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderOverrides]
     }
     
-    @scala.inline
-    implicit class SliderOverridesMutableBuilder[Self <: SliderOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: SliderOverrides](x: Self) {
       
-      @scala.inline
-      def setInnerThumb(
+      inline def setInnerThumb(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "InnerThumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerThumbUndefined: Self = StObject.set(x, "InnerThumb", js.undefined)
+      inline def setInnerThumbUndefined: Self = StObject.set(x, "InnerThumb", js.undefined)
       
-      @scala.inline
-      def setInnerTrack(
+      inline def setInnerTrack(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "InnerTrack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerTrackUndefined: Self = StObject.set(x, "InnerTrack", js.undefined)
+      inline def setInnerTrackUndefined: Self = StObject.set(x, "InnerTrack", js.undefined)
       
-      @scala.inline
-      def setMark(
+      inline def setMark(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "Mark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkUndefined: Self = StObject.set(x, "Mark", js.undefined)
+      inline def setMarkUndefined: Self = StObject.set(x, "Mark", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setThumb(
+      inline def setThumb(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "Thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbUndefined: Self = StObject.set(x, "Thumb", js.undefined)
+      inline def setThumbUndefined: Self = StObject.set(x, "Thumb", js.undefined)
       
-      @scala.inline
-      def setThumbValue(
+      inline def setThumbValue(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "ThumbValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbValueUndefined: Self = StObject.set(x, "ThumbValue", js.undefined)
+      inline def setThumbValueUndefined: Self = StObject.set(x, "ThumbValue", js.undefined)
       
-      @scala.inline
-      def setTick(
+      inline def setTick(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "Tick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickBar(
+      inline def setTickBar(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "TickBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickBarUndefined: Self = StObject.set(x, "TickBar", js.undefined)
+      inline def setTickBarUndefined: Self = StObject.set(x, "TickBar", js.undefined)
       
-      @scala.inline
-      def setTickUndefined: Self = StObject.set(x, "Tick", js.undefined)
+      inline def setTickUndefined: Self = StObject.set(x, "Tick", js.undefined)
       
-      @scala.inline
-      def setTrack(
+      inline def setTrack(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedProps> */ js.Any
       ): Self = StObject.set(x, "Track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUndefined: Self = StObject.set(x, "Track", js.undefined)
+      inline def setTrackUndefined: Self = StObject.set(x, "Track", js.undefined)
     }
   }
   
@@ -301,68 +269,48 @@ object sliderMod {
   }
   object SliderProps {
     
-    @scala.inline
-    def apply(value: js.Array[Double]): SliderProps = {
+    inline def apply(value: js.Array[Double]): SliderProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliderProps]
     }
     
-    @scala.inline
-    implicit class SliderPropsMutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setMarks(value: Boolean): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+      inline def setMarks(value: Boolean): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+      inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFinalChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
+      inline def setOnFinalChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
+      inline def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: SliderOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: SliderOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -372,20 +320,16 @@ object sliderMod {
   }
   object State {
     
-    @scala.inline
-    def apply(value: js.Array[Double]): State = {
+    inline def apply(value: js.Array[Double]): State = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: Double*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -415,74 +359,52 @@ object sliderMod {
   }
   object StatefulContainerProps {
     
-    @scala.inline
-    def apply(): StatefulContainerProps = {
+    inline def apply(): StatefulContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    @scala.inline
-    implicit class StatefulContainerPropsMutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulContainerProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setMarks(value: Boolean): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+      inline def setMarks(value: Boolean): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+      inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFinalChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
+      inline def setOnFinalChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
+      inline def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: SliderOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: SliderOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setStateReducer(value: (/* stateType */ String, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
+      inline def setStateReducer(value: (/* stateType */ String, /* nextState */ State, /* currentState */ State) => State): Self = StObject.set(x, "stateReducer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
+      inline def setStateReducerUndefined: Self = StObject.set(x, "stateReducer", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
   
@@ -506,62 +428,44 @@ object sliderMod {
   }
   object StatefulSliderProps {
     
-    @scala.inline
-    def apply(): StatefulSliderProps = {
+    inline def apply(): StatefulSliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StatefulSliderProps]
     }
     
-    @scala.inline
-    implicit class StatefulSliderPropsMutableBuilder[Self <: StatefulSliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: StatefulSliderProps](x: Self) {
       
-      @scala.inline
-      def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+      inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+      inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
       
-      @scala.inline
-      def setMarks(value: Boolean): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+      inline def setMarks(value: Boolean): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
+      inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFinalChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
+      inline def setOnFinalChange(value: /* e */ State => js.Any): Self = StObject.set(x, "onFinalChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
+      inline def setOnFinalChangeUndefined: Self = StObject.set(x, "onFinalChange", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: SliderOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: SliderOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
 }

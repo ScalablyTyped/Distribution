@@ -43,55 +43,39 @@ trait LaunchTemplatePlacement extends StObject {
 }
 object LaunchTemplatePlacement {
   
-  @scala.inline
-  def apply(): LaunchTemplatePlacement = {
+  inline def apply(): LaunchTemplatePlacement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplatePlacement]
   }
   
-  @scala.inline
-  implicit class LaunchTemplatePlacementMutableBuilder[Self <: LaunchTemplatePlacement] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplatePlacement](x: Self) {
     
-    @scala.inline
-    def setAffinity(value: String): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
+    inline def setAffinity(value: String): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffinityUndefined: Self = StObject.set(x, "affinity", js.undefined)
+    inline def setAffinityUndefined: Self = StObject.set(x, "affinity", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
     
-    @scala.inline
-    def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
+    inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostIdUndefined: Self = StObject.set(x, "hostId", js.undefined)
+    inline def setHostIdUndefined: Self = StObject.set(x, "hostId", js.undefined)
     
-    @scala.inline
-    def setPartitionNumber(value: Double): Self = StObject.set(x, "partitionNumber", value.asInstanceOf[js.Any])
+    inline def setPartitionNumber(value: Double): Self = StObject.set(x, "partitionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionNumberUndefined: Self = StObject.set(x, "partitionNumber", js.undefined)
+    inline def setPartitionNumberUndefined: Self = StObject.set(x, "partitionNumber", js.undefined)
     
-    @scala.inline
-    def setSpreadDomain(value: String): Self = StObject.set(x, "spreadDomain", value.asInstanceOf[js.Any])
+    inline def setSpreadDomain(value: String): Self = StObject.set(x, "spreadDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadDomainUndefined: Self = StObject.set(x, "spreadDomain", js.undefined)
+    inline def setSpreadDomainUndefined: Self = StObject.set(x, "spreadDomain", js.undefined)
     
-    @scala.inline
-    def setTenancy(value: String): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
+    inline def setTenancy(value: String): Self = StObject.set(x, "tenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenancyUndefined: Self = StObject.set(x, "tenancy", js.undefined)
+    inline def setTenancyUndefined: Self = StObject.set(x, "tenancy", js.undefined)
   }
 }

@@ -8,16 +8,13 @@ object angularHotkeysStrings {
   
   @js.native
   sealed trait INPUT extends StObject
-  @scala.inline
-  def INPUT: INPUT = "INPUT".asInstanceOf[INPUT]
+  inline def INPUT: INPUT = "INPUT".asInstanceOf[INPUT]
   
   @js.native
   sealed trait SELECT extends StObject
-  @scala.inline
-  def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
+  inline def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
   
   @js.native
   sealed trait TEXTAREA extends StObject
-  @scala.inline
-  def TEXTAREA: TEXTAREA = "TEXTAREA".asInstanceOf[TEXTAREA]
+  inline def TEXTAREA: TEXTAREA = "TEXTAREA".asInstanceOf[TEXTAREA]
 }

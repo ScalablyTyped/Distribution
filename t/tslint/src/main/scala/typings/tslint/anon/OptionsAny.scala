@@ -10,16 +10,13 @@ trait OptionsAny extends StObject {
 }
 object OptionsAny {
   
-  @scala.inline
-  def apply(options: js.Any): OptionsAny = {
+  inline def apply(options: js.Any): OptionsAny = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsAny]
   }
   
-  @scala.inline
-  implicit class OptionsAnyMutableBuilder[Self <: OptionsAny] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsAny](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

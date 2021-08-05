@@ -12,25 +12,19 @@ trait Option extends StObject {
 }
 object Option {
   
-  @scala.inline
-  def apply(): Option = {
+  inline def apply(): Option = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Option]
   }
   
-  @scala.inline
-  implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+  extension [Self <: Option](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

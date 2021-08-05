@@ -20,13 +20,12 @@ trait XMLSchemaReference extends StObject {
   
   def Reload(): Unit
   
-  @JSName("Word.XMLSchemaReference_typekey")
+  /* private */ @JSName("Word.XMLSchemaReference_typekey")
   var WordDotXMLSchemaReference_typekey: XMLSchemaReference
 }
 object XMLSchemaReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -41,31 +40,22 @@ object XMLSchemaReference {
     __obj.asInstanceOf[XMLSchemaReference]
   }
   
-  @scala.inline
-  implicit class XMLSchemaReferenceMutableBuilder[Self <: XMLSchemaReference] (val x: Self) extends AnyVal {
+  extension [Self <: XMLSchemaReference](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
+    inline def setNamespaceURI(value: String): Self = StObject.set(x, "NamespaceURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReload(value: () => Unit): Self = StObject.set(x, "Reload", js.Any.fromFunction0(value))
+    inline def setReload(value: () => Unit): Self = StObject.set(x, "Reload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWordDotXMLSchemaReference_typekey(value: XMLSchemaReference): Self = StObject.set(x, "Word.XMLSchemaReference_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotXMLSchemaReference_typekey(value: XMLSchemaReference): Self = StObject.set(x, "Word.XMLSchemaReference_typekey", value.asInstanceOf[js.Any])
   }
 }

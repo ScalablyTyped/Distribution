@@ -38,8 +38,7 @@ trait NotifyBLECharacteristicValueChangedOptions
 }
 object NotifyBLECharacteristicValueChangedOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     characteristicId: String,
     deviceId: String,
     serviceId: String,
@@ -50,28 +49,20 @@ object NotifyBLECharacteristicValueChangedOptions {
     __obj.asInstanceOf[NotifyBLECharacteristicValueChangedOptions]
   }
   
-  @scala.inline
-  implicit class NotifyBLECharacteristicValueChangedOptionsMutableBuilder[Self <: NotifyBLECharacteristicValueChangedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyBLECharacteristicValueChangedOptions](x: Self) {
     
-    @scala.inline
-    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptorId(value: String): Self = StObject.set(x, "descriptorId", value.asInstanceOf[js.Any])
+    inline def setDescriptorId(value: String): Self = StObject.set(x, "descriptorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptorIdUndefined: Self = StObject.set(x, "descriptorId", js.undefined)
+    inline def setDescriptorIdUndefined: Self = StObject.set(x, "descriptorId", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: ErrMsgResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

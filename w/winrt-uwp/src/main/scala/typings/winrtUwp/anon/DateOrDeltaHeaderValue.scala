@@ -13,19 +13,15 @@ trait DateOrDeltaHeaderValue extends StObject {
 }
 object DateOrDeltaHeaderValue {
   
-  @scala.inline
-  def apply(dateOrDeltaHeaderValue: HttpDateOrDeltaHeaderValue, returnValue: Boolean): DateOrDeltaHeaderValue = {
+  inline def apply(dateOrDeltaHeaderValue: HttpDateOrDeltaHeaderValue, returnValue: Boolean): DateOrDeltaHeaderValue = {
     val __obj = js.Dynamic.literal(dateOrDeltaHeaderValue = dateOrDeltaHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateOrDeltaHeaderValue]
   }
   
-  @scala.inline
-  implicit class DateOrDeltaHeaderValueMutableBuilder[Self <: DateOrDeltaHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: DateOrDeltaHeaderValue](x: Self) {
     
-    @scala.inline
-    def setDateOrDeltaHeaderValue(value: HttpDateOrDeltaHeaderValue): Self = StObject.set(x, "dateOrDeltaHeaderValue", value.asInstanceOf[js.Any])
+    inline def setDateOrDeltaHeaderValue(value: HttpDateOrDeltaHeaderValue): Self = StObject.set(x, "dateOrDeltaHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

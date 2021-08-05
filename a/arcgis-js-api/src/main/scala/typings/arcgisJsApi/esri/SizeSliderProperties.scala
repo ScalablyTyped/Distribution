@@ -31,34 +31,25 @@ trait SizeSliderProperties
 }
 object SizeSliderProperties {
   
-  @scala.inline
-  def apply(): SizeSliderProperties = {
+  inline def apply(): SizeSliderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SizeSliderProperties]
   }
   
-  @scala.inline
-  implicit class SizeSliderPropertiesMutableBuilder[Self <: SizeSliderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SizeSliderProperties](x: Self) {
     
-    @scala.inline
-    def setStops(value: js.Array[SizeStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[SizeStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: SizeStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: SizeStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: SizeSliderStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: SizeSliderStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: SizeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: SizeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

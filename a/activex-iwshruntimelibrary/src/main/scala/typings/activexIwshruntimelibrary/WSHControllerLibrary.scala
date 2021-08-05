@@ -12,7 +12,7 @@ object WSHControllerLibrary {
     def CreateScript(Command: String): js.Any = js.native
     def CreateScript(Command: String, Server: js.Any): js.Any = js.native
     
-    @JSName("WSHControllerLibrary.WSHController_typekey")
+    /* private */ @JSName("WSHControllerLibrary.WSHController_typekey")
     var WSHControllerLibraryDotWSHController_typekey: WSHController = js.native
   }
 }

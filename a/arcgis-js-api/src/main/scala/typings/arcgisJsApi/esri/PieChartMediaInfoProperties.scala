@@ -10,8 +10,7 @@ trait PieChartMediaInfoProperties
      with ChartMediaInfoProperties
 object PieChartMediaInfoProperties {
   
-  @scala.inline
-  def apply(): PieChartMediaInfoProperties = {
+  inline def apply(): PieChartMediaInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PieChartMediaInfoProperties]
   }

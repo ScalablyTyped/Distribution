@@ -20,40 +20,29 @@ trait FacetResult extends StObject {
 }
 object FacetResult {
   
-  @scala.inline
-  def apply(): FacetResult = {
+  inline def apply(): FacetResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FacetResult]
   }
   
-  @scala.inline
-  implicit class FacetResultMutableBuilder[Self <: FacetResult] (val x: Self) extends AnyVal {
+  extension [Self <: FacetResult](x: Self) {
     
-    @scala.inline
-    def setBuckets(value: js.Array[FacetBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: js.Array[FacetBucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    @scala.inline
-    def setBucketsVarargs(value: FacetBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: FacetBucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
+    inline def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
   }
 }

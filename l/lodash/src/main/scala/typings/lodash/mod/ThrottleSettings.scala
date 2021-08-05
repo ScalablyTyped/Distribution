@@ -18,25 +18,19 @@ trait ThrottleSettings extends StObject {
 }
 object ThrottleSettings {
   
-  @scala.inline
-  def apply(): ThrottleSettings = {
+  inline def apply(): ThrottleSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThrottleSettings]
   }
   
-  @scala.inline
-  implicit class ThrottleSettingsMutableBuilder[Self <: ThrottleSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ThrottleSettings](x: Self) {
     
-    @scala.inline
-    def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+    inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+    inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
     
-    @scala.inline
-    def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+    inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+    inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
   }
 }

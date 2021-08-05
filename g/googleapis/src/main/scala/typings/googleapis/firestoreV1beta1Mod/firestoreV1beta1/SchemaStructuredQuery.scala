@@ -63,67 +63,47 @@ trait SchemaStructuredQuery extends StObject {
 }
 object SchemaStructuredQuery {
   
-  @scala.inline
-  def apply(): SchemaStructuredQuery = {
+  inline def apply(): SchemaStructuredQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStructuredQuery]
   }
   
-  @scala.inline
-  implicit class SchemaStructuredQueryMutableBuilder[Self <: SchemaStructuredQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStructuredQuery](x: Self) {
     
-    @scala.inline
-    def setEndAt(value: SchemaCursor): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
+    inline def setEndAt(value: SchemaCursor): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAtUndefined: Self = StObject.set(x, "endAt", js.undefined)
+    inline def setEndAtUndefined: Self = StObject.set(x, "endAt", js.undefined)
     
-    @scala.inline
-    def setFrom(value: js.Array[SchemaCollectionSelector]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: js.Array[SchemaCollectionSelector]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setFromVarargs(value: SchemaCollectionSelector*): Self = StObject.set(x, "from", js.Array(value :_*))
+    inline def setFromVarargs(value: SchemaCollectionSelector*): Self = StObject.set(x, "from", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: js.Array[SchemaOrder]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: js.Array[SchemaOrder]): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setOrderByVarargs(value: SchemaOrder*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+    inline def setOrderByVarargs(value: SchemaOrder*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
     
-    @scala.inline
-    def setSelect(value: SchemaProjection): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: SchemaProjection): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setStartAt(value: SchemaCursor): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+    inline def setStartAt(value: SchemaCursor): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+    inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
     
-    @scala.inline
-    def setWhere(value: SchemaFilter): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: SchemaFilter): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
   }
 }

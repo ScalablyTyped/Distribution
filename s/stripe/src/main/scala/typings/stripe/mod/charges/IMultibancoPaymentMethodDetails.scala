@@ -11,17 +11,14 @@ trait IMultibancoPaymentMethodDetails extends StObject {
 }
 object IMultibancoPaymentMethodDetails {
   
-  @scala.inline
-  def apply(): IMultibancoPaymentMethodDetails = {
+  inline def apply(): IMultibancoPaymentMethodDetails = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("multibanco")
     __obj.asInstanceOf[IMultibancoPaymentMethodDetails]
   }
   
-  @scala.inline
-  implicit class IMultibancoPaymentMethodDetailsMutableBuilder[Self <: IMultibancoPaymentMethodDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IMultibancoPaymentMethodDetails](x: Self) {
     
-    @scala.inline
-    def setType(value: multibanco): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: multibanco): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

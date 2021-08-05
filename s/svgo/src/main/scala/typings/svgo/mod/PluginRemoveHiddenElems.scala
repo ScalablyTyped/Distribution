@@ -12,16 +12,13 @@ trait PluginRemoveHiddenElems
 }
 object PluginRemoveHiddenElems {
   
-  @scala.inline
-  def apply(removeHiddenElems: Boolean | js.Object): PluginRemoveHiddenElems = {
+  inline def apply(removeHiddenElems: Boolean | js.Object): PluginRemoveHiddenElems = {
     val __obj = js.Dynamic.literal(removeHiddenElems = removeHiddenElems.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveHiddenElems]
   }
   
-  @scala.inline
-  implicit class PluginRemoveHiddenElemsMutableBuilder[Self <: PluginRemoveHiddenElems] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveHiddenElems](x: Self) {
     
-    @scala.inline
-    def setRemoveHiddenElems(value: Boolean | js.Object): Self = StObject.set(x, "removeHiddenElems", value.asInstanceOf[js.Any])
+    inline def setRemoveHiddenElems(value: Boolean | js.Object): Self = StObject.set(x, "removeHiddenElems", value.asInstanceOf[js.Any])
   }
 }

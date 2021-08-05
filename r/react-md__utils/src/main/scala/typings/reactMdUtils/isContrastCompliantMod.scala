@@ -23,12 +23,9 @@ object isContrastCompliantMod {
   @js.native
   val NORMAL_TEXT_CONTRAST_RATIO: /* 4.5 */ Double = js.native
   
-  @scala.inline
-  def isContrastCompliant(background: HexString, foreground: HexString): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContrastCompliant")(background.asInstanceOf[js.Any], foreground.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isContrastCompliant(background: HexString, foreground: HexString, compliance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContrastCompliant")(background.asInstanceOf[js.Any], foreground.asInstanceOf[js.Any], compliance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isContrastCompliant(background: HexString, foreground: HexString, compliance: ContrastRatioCompliance): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContrastCompliant")(background.asInstanceOf[js.Any], foreground.asInstanceOf[js.Any], compliance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isContrastCompliant(background: HexString, foreground: HexString): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContrastCompliant")(background.asInstanceOf[js.Any], foreground.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isContrastCompliant(background: HexString, foreground: HexString, compliance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContrastCompliant")(background.asInstanceOf[js.Any], foreground.asInstanceOf[js.Any], compliance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isContrastCompliant(background: HexString, foreground: HexString, compliance: ContrastRatioCompliance): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isContrastCompliant")(background.asInstanceOf[js.Any], foreground.asInstanceOf[js.Any], compliance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdUtils.reactMdUtilsStrings.large
@@ -38,13 +35,10 @@ object isContrastCompliantMod {
   trait ContrastRatioCompliance extends StObject
   object ContrastRatioCompliance {
     
-    @scala.inline
-    def AAA: typings.reactMdUtils.reactMdUtilsStrings.AAA = "AAA".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.AAA]
+    inline def AAA: typings.reactMdUtils.reactMdUtilsStrings.AAA = "AAA".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.AAA]
     
-    @scala.inline
-    def large: typings.reactMdUtils.reactMdUtilsStrings.large = "large".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.large]
+    inline def large: typings.reactMdUtils.reactMdUtilsStrings.large = "large".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.large]
     
-    @scala.inline
-    def normal: typings.reactMdUtils.reactMdUtilsStrings.normal = "normal".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.normal]
+    inline def normal: typings.reactMdUtils.reactMdUtilsStrings.normal = "normal".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.normal]
   }
 }

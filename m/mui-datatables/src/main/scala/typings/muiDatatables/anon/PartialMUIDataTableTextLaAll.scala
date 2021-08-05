@@ -15,31 +15,23 @@ trait PartialMUIDataTableTextLaAll extends StObject {
 }
 object PartialMUIDataTableTextLaAll {
   
-  @scala.inline
-  def apply(): PartialMUIDataTableTextLaAll = {
+  inline def apply(): PartialMUIDataTableTextLaAll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMUIDataTableTextLaAll]
   }
   
-  @scala.inline
-  implicit class PartialMUIDataTableTextLaAllMutableBuilder[Self <: PartialMUIDataTableTextLaAll] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMUIDataTableTextLaAll](x: Self) {
     
-    @scala.inline
-    def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
     
-    @scala.inline
-    def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

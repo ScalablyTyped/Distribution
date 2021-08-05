@@ -14,25 +14,19 @@ trait Replication extends StObject {
 }
 object Replication {
   
-  @scala.inline
-  def apply(): Replication = {
+  inline def apply(): Replication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Replication]
   }
   
-  @scala.inline
-  implicit class ReplicationMutableBuilder[Self <: Replication] (val x: Self) extends AnyVal {
+  extension [Self <: Replication](x: Self) {
     
-    @scala.inline
-    def setAutomatic(value: Automatic): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+    inline def setAutomatic(value: Automatic): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
+    inline def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
     
-    @scala.inline
-    def setUserManaged(value: UserManaged): Self = StObject.set(x, "userManaged", value.asInstanceOf[js.Any])
+    inline def setUserManaged(value: UserManaged): Self = StObject.set(x, "userManaged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserManagedUndefined: Self = StObject.set(x, "userManaged", js.undefined)
+    inline def setUserManagedUndefined: Self = StObject.set(x, "userManaged", js.undefined)
   }
 }

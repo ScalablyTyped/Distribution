@@ -49,8 +49,7 @@ object clientMockMod {
   }
   object ClientCall {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       event: String,
       id: String,
       listen: Boolean,
@@ -66,35 +65,25 @@ object clientMockMod {
       __obj.asInstanceOf[ClientCall]
     }
     
-    @scala.inline
-    implicit class ClientCallMutableBuilder[Self <: ClientCall] (val x: Self) extends AnyVal {
+    extension [Self <: ClientCall](x: Self) {
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListen(value: Boolean): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
+      inline def setListen(value: Boolean): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: create | set | get | listen | call | destroy): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: create | set | get | listen | call | destroy): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,26 +99,20 @@ object clientMockMod {
   }
   object ClientCallCall {
     
-    @scala.inline
-    def apply(id: String, method: String, parameters: StringDictionary[js.Any]): ClientCallCall = {
+    inline def apply(id: String, method: String, parameters: StringDictionary[js.Any]): ClientCallCall = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], op = "call", parameters = parameters.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientCallCall]
     }
     
-    @scala.inline
-    implicit class ClientCallCallMutableBuilder[Self <: ClientCallCall] (val x: Self) extends AnyVal {
+    extension [Self <: ClientCallCall](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: call): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: call): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: StringDictionary[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,27 +128,21 @@ object clientMockMod {
   }
   object ClientCreateCall {
     
-    @scala.inline
-    def apply(id: String, properties: StringDictionary[js.Any], `type`: String): ClientCreateCall = {
+    inline def apply(id: String, properties: StringDictionary[js.Any], `type`: String): ClientCreateCall = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], op = "create", properties = properties.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientCreateCall]
     }
     
-    @scala.inline
-    implicit class ClientCreateCallMutableBuilder[Self <: ClientCreateCall] (val x: Self) extends AnyVal {
+    extension [Self <: ClientCreateCall](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: create): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: create): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,20 +154,16 @@ object clientMockMod {
   }
   object ClientDestroyCall {
     
-    @scala.inline
-    def apply(id: String): ClientDestroyCall = {
+    inline def apply(id: String): ClientDestroyCall = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], op = "destroy")
       __obj.asInstanceOf[ClientDestroyCall]
     }
     
-    @scala.inline
-    implicit class ClientDestroyCallMutableBuilder[Self <: ClientDestroyCall] (val x: Self) extends AnyVal {
+    extension [Self <: ClientDestroyCall](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: destroy): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: destroy): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,23 +177,18 @@ object clientMockMod {
   }
   object ClientGetCall {
     
-    @scala.inline
-    def apply(id: String, property: String): ClientGetCall = {
+    inline def apply(id: String, property: String): ClientGetCall = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], op = "get", property = property.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientGetCall]
     }
     
-    @scala.inline
-    implicit class ClientGetCallMutableBuilder[Self <: ClientGetCall] (val x: Self) extends AnyVal {
+    extension [Self <: ClientGetCall](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: get): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: get): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     }
   }
   
@@ -236,26 +204,20 @@ object clientMockMod {
   }
   object ClientListenCall {
     
-    @scala.inline
-    def apply(event: String, id: String, listen: Boolean): ClientListenCall = {
+    inline def apply(event: String, id: String, listen: Boolean): ClientListenCall = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], listen = listen.asInstanceOf[js.Any], op = "listen")
       __obj.asInstanceOf[ClientListenCall]
     }
     
-    @scala.inline
-    implicit class ClientListenCallMutableBuilder[Self <: ClientListenCall] (val x: Self) extends AnyVal {
+    extension [Self <: ClientListenCall](x: Self) {
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListen(value: Boolean): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
+      inline def setListen(value: Boolean): Self = StObject.set(x, "listen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: listen): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: listen): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     }
   }
   
@@ -285,23 +247,18 @@ object clientMockMod {
   }
   object ClientSetCall {
     
-    @scala.inline
-    def apply(id: String, properties: StringDictionary[js.Any]): ClientSetCall = {
+    inline def apply(id: String, properties: StringDictionary[js.Any]): ClientSetCall = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], op = "set", properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientSetCall]
     }
     
-    @scala.inline
-    implicit class ClientSetCallMutableBuilder[Self <: ClientSetCall] (val x: Self) extends AnyVal {
+    extension [Self <: ClientSetCall](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: set): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: set): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
 }

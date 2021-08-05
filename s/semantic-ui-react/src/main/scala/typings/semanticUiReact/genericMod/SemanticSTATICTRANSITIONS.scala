@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SemanticSTATICTRANSITIONS extends StObject
 object SemanticSTATICTRANSITIONS {
   
-  @scala.inline
-  def bounce: typings.semanticUiReact.semanticUiReactStrings.bounce = "bounce".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bounce]
+  inline def bounce: typings.semanticUiReact.semanticUiReactStrings.bounce = "bounce".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.bounce]
   
-  @scala.inline
-  def flash: typings.semanticUiReact.semanticUiReactStrings.flash = "flash".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.flash]
+  inline def flash: typings.semanticUiReact.semanticUiReactStrings.flash = "flash".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.flash]
   
-  @scala.inline
-  def glow: typings.semanticUiReact.semanticUiReactStrings.glow = "glow".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.glow]
+  inline def glow: typings.semanticUiReact.semanticUiReactStrings.glow = "glow".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.glow]
   
-  @scala.inline
-  def jiggle: typings.semanticUiReact.semanticUiReactStrings.jiggle = "jiggle".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jiggle]
+  inline def jiggle: typings.semanticUiReact.semanticUiReactStrings.jiggle = "jiggle".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.jiggle]
   
-  @scala.inline
-  def pulse: typings.semanticUiReact.semanticUiReactStrings.pulse = "pulse".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pulse]
+  inline def pulse: typings.semanticUiReact.semanticUiReactStrings.pulse = "pulse".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.pulse]
   
-  @scala.inline
-  def shake: typings.semanticUiReact.semanticUiReactStrings.shake = "shake".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.shake]
+  inline def shake: typings.semanticUiReact.semanticUiReactStrings.shake = "shake".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.shake]
   
-  @scala.inline
-  def tada: typings.semanticUiReact.semanticUiReactStrings.tada = "tada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tada]
+  inline def tada: typings.semanticUiReact.semanticUiReactStrings.tada = "tada".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tada]
 }

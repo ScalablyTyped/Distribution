@@ -13,24 +13,18 @@ object onActionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyAction(target: IAnyStateTreeNode, actions: js.Array[ISerializedActionCall]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAction")(target.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def applyAction(target: IAnyStateTreeNode, actions: ISerializedActionCall): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAction")(target.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyAction(target: IAnyStateTreeNode, actions: js.Array[ISerializedActionCall]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAction")(target.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyAction(target: IAnyStateTreeNode, actions: ISerializedActionCall): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAction")(target.asInstanceOf[js.Any], actions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def onAction(target: IAnyStateTreeNode, listener: js.Function1[/* call */ ISerializedActionCall, Unit]): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onAction")(target.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
-  @scala.inline
-  def onAction(
+  inline def onAction(target: IAnyStateTreeNode, listener: js.Function1[/* call */ ISerializedActionCall, Unit]): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onAction")(target.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
+  inline def onAction(
     target: IAnyStateTreeNode,
     listener: js.Function1[/* call */ ISerializedActionCall, Unit],
     attachAfter: Boolean
   ): IDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("onAction")(target.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], attachAfter.asInstanceOf[js.Any])).asInstanceOf[IDisposer]
   
-  @scala.inline
-  def recordActions(subject: IAnyStateTreeNode): IActionRecorder = ^.asInstanceOf[js.Dynamic].applyDynamic("recordActions")(subject.asInstanceOf[js.Any]).asInstanceOf[IActionRecorder]
-  @scala.inline
-  def recordActions(
+  inline def recordActions(subject: IAnyStateTreeNode): IActionRecorder = ^.asInstanceOf[js.Dynamic].applyDynamic("recordActions")(subject.asInstanceOf[js.Any]).asInstanceOf[IActionRecorder]
+  inline def recordActions(
     subject: IAnyStateTreeNode,
     filter: js.Function2[
       /* action */ ISerializedActionCall, 
@@ -53,8 +47,7 @@ object onActionMod {
   }
   object IActionRecorder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actions: js.Array[ISerializedActionCall],
       recording: Boolean,
       replay: IAnyStateTreeNode => Unit,
@@ -65,26 +58,19 @@ object onActionMod {
       __obj.asInstanceOf[IActionRecorder]
     }
     
-    @scala.inline
-    implicit class IActionRecorderMutableBuilder[Self <: IActionRecorder] (val x: Self) extends AnyVal {
+    extension [Self <: IActionRecorder](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[ISerializedActionCall]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[ISerializedActionCall]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsVarargs(value: ISerializedActionCall*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: ISerializedActionCall*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setRecording(value: Boolean): Self = StObject.set(x, "recording", value.asInstanceOf[js.Any])
+      inline def setRecording(value: Boolean): Self = StObject.set(x, "recording", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplay(value: IAnyStateTreeNode => Unit): Self = StObject.set(x, "replay", js.Any.fromFunction1(value))
+      inline def setReplay(value: IAnyStateTreeNode => Unit): Self = StObject.set(x, "replay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
+      inline def setResume(value: () => Unit): Self = StObject.set(x, "resume", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -98,32 +84,24 @@ object onActionMod {
   }
   object ISerializedActionCall {
     
-    @scala.inline
-    def apply(name: String): ISerializedActionCall = {
+    inline def apply(name: String): ISerializedActionCall = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISerializedActionCall]
     }
     
-    @scala.inline
-    implicit class ISerializedActionCallMutableBuilder[Self <: ISerializedActionCall] (val x: Self) extends AnyVal {
+    extension [Self <: ISerializedActionCall](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
 }

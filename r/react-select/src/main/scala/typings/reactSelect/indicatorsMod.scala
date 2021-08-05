@@ -20,11 +20,9 @@ object indicatorsMod {
   @js.native
   val ClearIndicator: ComponentType[IndicatorProps[js.Any]] = js.native
   
-  @scala.inline
-  def CrossIcon(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CrossIcon")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def CrossIcon(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CrossIcon")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def DownChevron(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DownChevron")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def DownChevron(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DownChevron")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("react-select/src/components/indicators", "DropdownIndicator")
   @js.native
@@ -46,11 +44,9 @@ object indicatorsMod {
   @js.native
   val dropdownIndicatorCSS: baseCSS = js.native
   
-  @scala.inline
-  def indicatorSeparatorCSS(state: SeparatorState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("indicatorSeparatorCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def indicatorSeparatorCSS(state: SeparatorState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("indicatorSeparatorCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def loadingIndicatorCSS(state: IsFocused): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingIndicatorCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def loadingIndicatorCSS(state: IsFocused): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingIndicatorCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
   @js.native
   trait IndicatorProps[OptionType /* <: OptionTypeBase */]
@@ -97,17 +93,14 @@ object indicatorsMod {
   }
   object SeparatorState {
     
-    @scala.inline
-    def apply(isDisabled: Boolean): SeparatorState = {
+    inline def apply(isDisabled: Boolean): SeparatorState = {
       val __obj = js.Dynamic.literal(isDisabled = isDisabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[SeparatorState]
     }
     
-    @scala.inline
-    implicit class SeparatorStateMutableBuilder[Self <: SeparatorState] (val x: Self) extends AnyVal {
+    extension [Self <: SeparatorState](x: Self) {
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     }
   }
   

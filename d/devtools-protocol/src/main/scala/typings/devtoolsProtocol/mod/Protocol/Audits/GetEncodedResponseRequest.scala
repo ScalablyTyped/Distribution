@@ -32,31 +32,23 @@ trait GetEncodedResponseRequest extends StObject {
 }
 object GetEncodedResponseRequest {
   
-  @scala.inline
-  def apply(encoding: webp | jpeg | png, requestId: RequestId): GetEncodedResponseRequest = {
+  inline def apply(encoding: webp | jpeg | png, requestId: RequestId): GetEncodedResponseRequest = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEncodedResponseRequest]
   }
   
-  @scala.inline
-  implicit class GetEncodedResponseRequestMutableBuilder[Self <: GetEncodedResponseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEncodedResponseRequest](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: webp | jpeg | png): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: webp | jpeg | png): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeOnly(value: Boolean): Self = StObject.set(x, "sizeOnly", value.asInstanceOf[js.Any])
+    inline def setSizeOnly(value: Boolean): Self = StObject.set(x, "sizeOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeOnlyUndefined: Self = StObject.set(x, "sizeOnly", js.undefined)
+    inline def setSizeOnlyUndefined: Self = StObject.set(x, "sizeOnly", js.undefined)
   }
 }

@@ -12,8 +12,6 @@ object parsetextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
-  @scala.inline
-  def default(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
+  inline def default(text: String): PartialOptions | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[PartialOptions | Null]
+  inline def default(text: String, language: Language): PartialOptions | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[PartialOptions | Null]
 }

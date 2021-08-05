@@ -23,31 +23,23 @@ trait RxNormConcept extends StObject {
 }
 object RxNormConcept {
   
-  @scala.inline
-  def apply(): RxNormConcept = {
+  inline def apply(): RxNormConcept = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RxNormConcept]
   }
   
-  @scala.inline
-  implicit class RxNormConceptMutableBuilder[Self <: RxNormConcept] (val x: Self) extends AnyVal {
+  extension [Self <: RxNormConcept](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait UserDataValidationParameters extends StObject {
 }
 object UserDataValidationParameters {
   
-  @scala.inline
-  def apply(): UserDataValidationParameters = {
+  inline def apply(): UserDataValidationParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserDataValidationParameters]
   }
   
-  @scala.inline
-  implicit class UserDataValidationParametersMutableBuilder[Self <: UserDataValidationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: UserDataValidationParameters](x: Self) {
     
-    @scala.inline
-    def setScriptType(value: ScriptType): Self = StObject.set(x, "scriptType", value.asInstanceOf[js.Any])
+    inline def setScriptType(value: ScriptType): Self = StObject.set(x, "scriptType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptTypeUndefined: Self = StObject.set(x, "scriptType", js.undefined)
+    inline def setScriptTypeUndefined: Self = StObject.set(x, "scriptType", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

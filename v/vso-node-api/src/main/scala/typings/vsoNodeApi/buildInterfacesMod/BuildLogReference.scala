@@ -23,23 +23,18 @@ trait BuildLogReference extends StObject {
 }
 object BuildLogReference {
   
-  @scala.inline
-  def apply(id: Double, `type`: String, url: String): BuildLogReference = {
+  inline def apply(id: Double, `type`: String, url: String): BuildLogReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildLogReference]
   }
   
-  @scala.inline
-  implicit class BuildLogReferenceMutableBuilder[Self <: BuildLogReference] (val x: Self) extends AnyVal {
+  extension [Self <: BuildLogReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

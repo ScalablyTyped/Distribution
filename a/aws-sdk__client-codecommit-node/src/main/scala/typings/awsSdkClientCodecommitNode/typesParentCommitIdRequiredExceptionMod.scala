@@ -18,17 +18,14 @@ object typesParentCommitIdRequiredExceptionMod {
   }
   object ParentCommitIdRequiredException {
     
-    @scala.inline
-    def apply(): ParentCommitIdRequiredException = {
+    inline def apply(): ParentCommitIdRequiredException = {
       val __obj = js.Dynamic.literal(name = "ParentCommitIdRequiredException")
       __obj.asInstanceOf[ParentCommitIdRequiredException]
     }
     
-    @scala.inline
-    implicit class ParentCommitIdRequiredExceptionMutableBuilder[Self <: ParentCommitIdRequiredException] (val x: Self) extends AnyVal {
+    extension [Self <: ParentCommitIdRequiredException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitIdRequiredException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

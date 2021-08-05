@@ -14,31 +14,23 @@ trait RsaOtherPrimesInfo extends StObject {
 }
 object RsaOtherPrimesInfo {
   
-  @scala.inline
-  def apply(): RsaOtherPrimesInfo = {
+  inline def apply(): RsaOtherPrimesInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RsaOtherPrimesInfo]
   }
   
-  @scala.inline
-  implicit class RsaOtherPrimesInfoMutableBuilder[Self <: RsaOtherPrimesInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RsaOtherPrimesInfo](x: Self) {
     
-    @scala.inline
-    def setD(value: java.lang.String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: java.lang.String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
-    @scala.inline
-    def setR(value: java.lang.String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: java.lang.String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    @scala.inline
-    def setT(value: java.lang.String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: java.lang.String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+    inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
   }
 }

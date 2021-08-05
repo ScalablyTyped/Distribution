@@ -22,19 +22,15 @@ trait ServiceAccountSubject extends StObject {
 }
 object ServiceAccountSubject {
   
-  @scala.inline
-  def apply(name: Input[String], namespace: Input[String]): ServiceAccountSubject = {
+  inline def apply(name: Input[String], namespace: Input[String]): ServiceAccountSubject = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccountSubject]
   }
   
-  @scala.inline
-  implicit class ServiceAccountSubjectMutableBuilder[Self <: ServiceAccountSubject] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccountSubject](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Input[String]): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
   }
 }

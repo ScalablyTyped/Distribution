@@ -22,36 +22,25 @@ trait CompositeStyle
      with _WebkitMaskCompositeProperty
 object CompositeStyle {
   
-  @scala.inline
-  def clear: typings.preact.preactStrings.clear = "clear".asInstanceOf[typings.preact.preactStrings.clear]
+  inline def clear: typings.preact.preactStrings.clear = "clear".asInstanceOf[typings.preact.preactStrings.clear]
   
-  @scala.inline
-  def copy: typings.preact.preactStrings.copy = "copy".asInstanceOf[typings.preact.preactStrings.copy]
+  inline def copy: typings.preact.preactStrings.copy = "copy".asInstanceOf[typings.preact.preactStrings.copy]
   
-  @scala.inline
-  def `destination-atop`: typings.preact.preactStrings.`destination-atop` = "destination-atop".asInstanceOf[typings.preact.preactStrings.`destination-atop`]
+  inline def `destination-atop`: typings.preact.preactStrings.`destination-atop` = "destination-atop".asInstanceOf[typings.preact.preactStrings.`destination-atop`]
   
-  @scala.inline
-  def `destination-in`: typings.preact.preactStrings.`destination-in` = "destination-in".asInstanceOf[typings.preact.preactStrings.`destination-in`]
+  inline def `destination-in`: typings.preact.preactStrings.`destination-in` = "destination-in".asInstanceOf[typings.preact.preactStrings.`destination-in`]
   
-  @scala.inline
-  def `destination-out`: typings.preact.preactStrings.`destination-out` = "destination-out".asInstanceOf[typings.preact.preactStrings.`destination-out`]
+  inline def `destination-out`: typings.preact.preactStrings.`destination-out` = "destination-out".asInstanceOf[typings.preact.preactStrings.`destination-out`]
   
-  @scala.inline
-  def `destination-over`: typings.preact.preactStrings.`destination-over` = "destination-over".asInstanceOf[typings.preact.preactStrings.`destination-over`]
+  inline def `destination-over`: typings.preact.preactStrings.`destination-over` = "destination-over".asInstanceOf[typings.preact.preactStrings.`destination-over`]
   
-  @scala.inline
-  def `source-atop`: typings.preact.preactStrings.`source-atop` = "source-atop".asInstanceOf[typings.preact.preactStrings.`source-atop`]
+  inline def `source-atop`: typings.preact.preactStrings.`source-atop` = "source-atop".asInstanceOf[typings.preact.preactStrings.`source-atop`]
   
-  @scala.inline
-  def `source-in`: typings.preact.preactStrings.`source-in` = "source-in".asInstanceOf[typings.preact.preactStrings.`source-in`]
+  inline def `source-in`: typings.preact.preactStrings.`source-in` = "source-in".asInstanceOf[typings.preact.preactStrings.`source-in`]
   
-  @scala.inline
-  def `source-out`: typings.preact.preactStrings.`source-out` = "source-out".asInstanceOf[typings.preact.preactStrings.`source-out`]
+  inline def `source-out`: typings.preact.preactStrings.`source-out` = "source-out".asInstanceOf[typings.preact.preactStrings.`source-out`]
   
-  @scala.inline
-  def `source-over`: typings.preact.preactStrings.`source-over` = "source-over".asInstanceOf[typings.preact.preactStrings.`source-over`]
+  inline def `source-over`: typings.preact.preactStrings.`source-over` = "source-over".asInstanceOf[typings.preact.preactStrings.`source-over`]
   
-  @scala.inline
-  def xor: typings.preact.preactStrings.xor = "xor".asInstanceOf[typings.preact.preactStrings.xor]
+  inline def xor: typings.preact.preactStrings.xor = "xor".asInstanceOf[typings.preact.preactStrings.xor]
 }

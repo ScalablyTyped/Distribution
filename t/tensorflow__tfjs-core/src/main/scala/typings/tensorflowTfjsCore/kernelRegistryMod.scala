@@ -17,29 +17,21 @@ object kernelRegistryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def copyRegisteredKernels(registeredBackendName: String, newBackendName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyRegisteredKernels")(registeredBackendName.asInstanceOf[js.Any], newBackendName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copyRegisteredKernels(registeredBackendName: String, newBackendName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyRegisteredKernels")(registeredBackendName.asInstanceOf[js.Any], newBackendName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getGradient(kernelName: String): GradConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getGradient")(kernelName.asInstanceOf[js.Any]).asInstanceOf[GradConfig]
+  inline def getGradient(kernelName: String): GradConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getGradient")(kernelName.asInstanceOf[js.Any]).asInstanceOf[GradConfig]
   
-  @scala.inline
-  def getKernel(kernelName: String, backendName: String): KernelConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getKernel")(kernelName.asInstanceOf[js.Any], backendName.asInstanceOf[js.Any])).asInstanceOf[KernelConfig]
+  inline def getKernel(kernelName: String, backendName: String): KernelConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getKernel")(kernelName.asInstanceOf[js.Any], backendName.asInstanceOf[js.Any])).asInstanceOf[KernelConfig]
   
-  @scala.inline
-  def getKernelsForBackend(backendName: String): js.Array[KernelConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKernelsForBackend")(backendName.asInstanceOf[js.Any]).asInstanceOf[js.Array[KernelConfig]]
+  inline def getKernelsForBackend(backendName: String): js.Array[KernelConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKernelsForBackend")(backendName.asInstanceOf[js.Any]).asInstanceOf[js.Array[KernelConfig]]
   
-  @scala.inline
-  def registerGradient(config: GradConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerGradient")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerGradient(config: GradConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerGradient")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerKernel(config: KernelConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerKernel")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerKernel(config: KernelConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerKernel")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def unregisterGradient(kernelName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterGradient")(kernelName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unregisterGradient(kernelName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterGradient")(kernelName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def unregisterKernel(kernelName: String, backendName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterKernel")(kernelName.asInstanceOf[js.Any], backendName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def unregisterKernel(kernelName: String, backendName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterKernel")(kernelName.asInstanceOf[js.Any], backendName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Attribute = AttributeValue | RecursiveArray[AttributeValue]
   
@@ -64,8 +56,7 @@ object kernelRegistryMod {
   }
   object GradConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       gradFunc: (/* dy */ Tensor[Rank] | js.Array[Tensor[Rank]], /* saved */ js.Array[Tensor[Rank]], /* attrs */ NamedAttrMap) => NamedGradientMap,
       kernelName: String
     ): GradConfig = {
@@ -73,40 +64,29 @@ object kernelRegistryMod {
       __obj.asInstanceOf[GradConfig]
     }
     
-    @scala.inline
-    implicit class GradConfigMutableBuilder[Self <: GradConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GradConfig](x: Self) {
       
-      @scala.inline
-      def setGradFunc(
+      inline def setGradFunc(
         value: (/* dy */ Tensor[Rank] | js.Array[Tensor[Rank]], /* saved */ js.Array[Tensor[Rank]], /* attrs */ NamedAttrMap) => NamedGradientMap
       ): Self = StObject.set(x, "gradFunc", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setInputsToSave(value: js.Array[String]): Self = StObject.set(x, "inputsToSave", value.asInstanceOf[js.Any])
+      inline def setInputsToSave(value: js.Array[String]): Self = StObject.set(x, "inputsToSave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsToSaveUndefined: Self = StObject.set(x, "inputsToSave", js.undefined)
+      inline def setInputsToSaveUndefined: Self = StObject.set(x, "inputsToSave", js.undefined)
       
-      @scala.inline
-      def setInputsToSaveVarargs(value: String*): Self = StObject.set(x, "inputsToSave", js.Array(value :_*))
+      inline def setInputsToSaveVarargs(value: String*): Self = StObject.set(x, "inputsToSave", js.Array(value :_*))
       
-      @scala.inline
-      def setKernelName(value: String): Self = StObject.set(x, "kernelName", value.asInstanceOf[js.Any])
+      inline def setKernelName(value: String): Self = StObject.set(x, "kernelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsToSave(value: js.Array[Boolean]): Self = StObject.set(x, "outputsToSave", value.asInstanceOf[js.Any])
+      inline def setOutputsToSave(value: js.Array[Boolean]): Self = StObject.set(x, "outputsToSave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsToSaveUndefined: Self = StObject.set(x, "outputsToSave", js.undefined)
+      inline def setOutputsToSaveUndefined: Self = StObject.set(x, "outputsToSave", js.undefined)
       
-      @scala.inline
-      def setOutputsToSaveVarargs(value: Boolean*): Self = StObject.set(x, "outputsToSave", js.Array(value :_*))
+      inline def setOutputsToSaveVarargs(value: Boolean*): Self = StObject.set(x, "outputsToSave", js.Array(value :_*))
       
-      @scala.inline
-      def setSaveAllInputs(value: Boolean): Self = StObject.set(x, "saveAllInputs", value.asInstanceOf[js.Any])
+      inline def setSaveAllInputs(value: Boolean): Self = StObject.set(x, "saveAllInputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveAllInputsUndefined: Self = StObject.set(x, "saveAllInputs", js.undefined)
+      inline def setSaveAllInputsUndefined: Self = StObject.set(x, "saveAllInputs", js.undefined)
     }
   }
   
@@ -133,8 +113,7 @@ object kernelRegistryMod {
   }
   object KernelConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backendName: String,
       kernelFunc: /* params */ Attrs => TensorInfo | js.Array[TensorInfo],
       kernelName: String
@@ -143,29 +122,21 @@ object kernelRegistryMod {
       __obj.asInstanceOf[KernelConfig]
     }
     
-    @scala.inline
-    implicit class KernelConfigMutableBuilder[Self <: KernelConfig] (val x: Self) extends AnyVal {
+    extension [Self <: KernelConfig](x: Self) {
       
-      @scala.inline
-      def setBackendName(value: String): Self = StObject.set(x, "backendName", value.asInstanceOf[js.Any])
+      inline def setBackendName(value: String): Self = StObject.set(x, "backendName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisposeFunc(value: /* backend */ js.Object => Unit): Self = StObject.set(x, "disposeFunc", js.Any.fromFunction1(value))
+      inline def setDisposeFunc(value: /* backend */ js.Object => Unit): Self = StObject.set(x, "disposeFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisposeFuncUndefined: Self = StObject.set(x, "disposeFunc", js.undefined)
+      inline def setDisposeFuncUndefined: Self = StObject.set(x, "disposeFunc", js.undefined)
       
-      @scala.inline
-      def setKernelFunc(value: /* params */ Attrs => TensorInfo | js.Array[TensorInfo]): Self = StObject.set(x, "kernelFunc", js.Any.fromFunction1(value))
+      inline def setKernelFunc(value: /* params */ Attrs => TensorInfo | js.Array[TensorInfo]): Self = StObject.set(x, "kernelFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKernelName(value: String): Self = StObject.set(x, "kernelName", value.asInstanceOf[js.Any])
+      inline def setKernelName(value: String): Self = StObject.set(x, "kernelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetupFunc(value: /* backend */ js.Object => Unit): Self = StObject.set(x, "setupFunc", js.Any.fromFunction1(value))
+      inline def setSetupFunc(value: /* backend */ js.Object => Unit): Self = StObject.set(x, "setupFunc", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetupFuncUndefined: Self = StObject.set(x, "setupFunc", js.undefined)
+      inline def setSetupFuncUndefined: Self = StObject.set(x, "setupFunc", js.undefined)
     }
   }
   
@@ -180,8 +151,7 @@ object kernelRegistryMod {
        with /* name */ StringDictionary[Attribute]
   object NamedAttrMap {
     
-    @scala.inline
-    def apply(): NamedAttrMap = {
+    inline def apply(): NamedAttrMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NamedAttrMap]
     }
@@ -199,26 +169,20 @@ object kernelRegistryMod {
   }
   object TensorInfo {
     
-    @scala.inline
-    def apply(dataId: DataId, dtype: DataType, shape: js.Array[Double]): TensorInfo = {
+    inline def apply(dataId: DataId, dtype: DataType, shape: js.Array[Double]): TensorInfo = {
       val __obj = js.Dynamic.literal(dataId = dataId.asInstanceOf[js.Any], dtype = dtype.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
       __obj.asInstanceOf[TensorInfo]
     }
     
-    @scala.inline
-    implicit class TensorInfoMutableBuilder[Self <: TensorInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TensorInfo](x: Self) {
       
-      @scala.inline
-      def setDataId(value: DataId): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
+      inline def setDataId(value: DataId): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: js.Array[Double]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: Double*): Self = StObject.set(x, "shape", js.Array(value :_*))
     }
   }
 }

@@ -11,16 +11,13 @@ trait OESStandardDerivatives extends StObject {
 }
 object OESStandardDerivatives {
   
-  @scala.inline
-  def apply(FRAGMENT_SHADER_DERIVATIVE_HINT_OES: GLenum): OESStandardDerivatives = {
+  inline def apply(FRAGMENT_SHADER_DERIVATIVE_HINT_OES: GLenum): OESStandardDerivatives = {
     val __obj = js.Dynamic.literal(FRAGMENT_SHADER_DERIVATIVE_HINT_OES = FRAGMENT_SHADER_DERIVATIVE_HINT_OES.asInstanceOf[js.Any])
     __obj.asInstanceOf[OESStandardDerivatives]
   }
   
-  @scala.inline
-  implicit class OESStandardDerivativesMutableBuilder[Self <: OESStandardDerivatives] (val x: Self) extends AnyVal {
+  extension [Self <: OESStandardDerivatives](x: Self) {
     
-    @scala.inline
-    def setFRAGMENT_SHADER_DERIVATIVE_HINT_OES(value: GLenum): Self = StObject.set(x, "FRAGMENT_SHADER_DERIVATIVE_HINT_OES", value.asInstanceOf[js.Any])
+    inline def setFRAGMENT_SHADER_DERIVATIVE_HINT_OES(value: GLenum): Self = StObject.set(x, "FRAGMENT_SHADER_DERIVATIVE_HINT_OES", value.asInstanceOf[js.Any])
   }
 }

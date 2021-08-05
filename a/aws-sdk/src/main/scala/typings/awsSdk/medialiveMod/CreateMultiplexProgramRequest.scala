@@ -29,8 +29,7 @@ trait CreateMultiplexProgramRequest extends StObject {
 }
 object CreateMultiplexProgramRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MultiplexId: string,
     MultiplexProgramSettings: MultiplexProgramSettings,
     ProgramName: string,
@@ -40,19 +39,14 @@ object CreateMultiplexProgramRequest {
     __obj.asInstanceOf[CreateMultiplexProgramRequest]
   }
   
-  @scala.inline
-  implicit class CreateMultiplexProgramRequestMutableBuilder[Self <: CreateMultiplexProgramRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMultiplexProgramRequest](x: Self) {
     
-    @scala.inline
-    def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
+    inline def setMultiplexId(value: string): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplexProgramSettings(value: MultiplexProgramSettings): Self = StObject.set(x, "MultiplexProgramSettings", value.asInstanceOf[js.Any])
+    inline def setMultiplexProgramSettings(value: MultiplexProgramSettings): Self = StObject.set(x, "MultiplexProgramSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
+    inline def setProgramName(value: string): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: string): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
   }
 }

@@ -27,8 +27,7 @@ trait FocusSettings extends StObject {
 }
 object FocusSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoFocusRange: AutoFocusRange,
     disableDriverFallback: Boolean,
     distance: ManualFocusDistance,
@@ -40,25 +39,18 @@ object FocusSettings {
     __obj.asInstanceOf[FocusSettings]
   }
   
-  @scala.inline
-  implicit class FocusSettingsMutableBuilder[Self <: FocusSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FocusSettings](x: Self) {
     
-    @scala.inline
-    def setAutoFocusRange(value: AutoFocusRange): Self = StObject.set(x, "autoFocusRange", value.asInstanceOf[js.Any])
+    inline def setAutoFocusRange(value: AutoFocusRange): Self = StObject.set(x, "autoFocusRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableDriverFallback(value: Boolean): Self = StObject.set(x, "disableDriverFallback", value.asInstanceOf[js.Any])
+    inline def setDisableDriverFallback(value: Boolean): Self = StObject.set(x, "disableDriverFallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: ManualFocusDistance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: ManualFocusDistance): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: FocusMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: FocusMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForFocus(value: Boolean): Self = StObject.set(x, "waitForFocus", value.asInstanceOf[js.Any])
+    inline def setWaitForFocus(value: Boolean): Self = StObject.set(x, "waitForFocus", value.asInstanceOf[js.Any])
   }
 }

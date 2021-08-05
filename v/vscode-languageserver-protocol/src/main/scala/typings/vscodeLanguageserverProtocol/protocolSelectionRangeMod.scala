@@ -53,20 +53,16 @@ object protocolSelectionRangeMod {
   }
   object SelectionRangeClientCapabilities {
     
-    @scala.inline
-    def apply(): SelectionRangeClientCapabilities = {
+    inline def apply(): SelectionRangeClientCapabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectionRangeClientCapabilities]
     }
     
-    @scala.inline
-    implicit class SelectionRangeClientCapabilitiesMutableBuilder[Self <: SelectionRangeClientCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionRangeClientCapabilities](x: Self) {
       
-      @scala.inline
-      def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+      inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+      inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
     }
   }
   
@@ -89,23 +85,18 @@ object protocolSelectionRangeMod {
   }
   object SelectionRangeParams {
     
-    @scala.inline
-    def apply(positions: js.Array[Position], textDocument: TextDocumentIdentifier): SelectionRangeParams = {
+    inline def apply(positions: js.Array[Position], textDocument: TextDocumentIdentifier): SelectionRangeParams = {
       val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionRangeParams]
     }
     
-    @scala.inline
-    implicit class SelectionRangeParamsMutableBuilder[Self <: SelectionRangeParams] (val x: Self) extends AnyVal {
+    extension [Self <: SelectionRangeParams](x: Self) {
       
-      @scala.inline
-      def setPositions(value: js.Array[Position]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+      inline def setPositions(value: js.Array[Position]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionsVarargs(value: Position*): Self = StObject.set(x, "positions", js.Array(value :_*))
+      inline def setPositionsVarargs(value: Position*): Self = StObject.set(x, "positions", js.Array(value :_*))
       
-      @scala.inline
-      def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
+      inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,8 +107,7 @@ object protocolSelectionRangeMod {
        with StaticRegistrationOptions
   object SelectionRangeRegistrationOptions {
     
-    @scala.inline
-    def apply(): SelectionRangeRegistrationOptions = {
+    inline def apply(): SelectionRangeRegistrationOptions = {
       val __obj = js.Dynamic.literal(documentSelector = null)
       __obj.asInstanceOf[SelectionRangeRegistrationOptions]
     }

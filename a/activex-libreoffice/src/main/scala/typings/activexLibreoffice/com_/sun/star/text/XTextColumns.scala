@@ -59,8 +59,7 @@ trait XTextColumns
 }
 object XTextColumns {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnCount: Double,
     Columns: SafeArray[TextColumn],
     ReferenceValue: Double,
@@ -77,31 +76,22 @@ object XTextColumns {
     __obj.asInstanceOf[XTextColumns]
   }
   
-  @scala.inline
-  implicit class XTextColumnsMutableBuilder[Self <: XTextColumns] (val x: Self) extends AnyVal {
+  extension [Self <: XTextColumns](x: Self) {
     
-    @scala.inline
-    def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Double): Self = StObject.set(x, "ColumnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumns(value: SafeArray[TextColumn]): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: SafeArray[TextColumn]): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumnCount(value: () => Double): Self = StObject.set(x, "getColumnCount", js.Any.fromFunction0(value))
+    inline def setGetColumnCount(value: () => Double): Self = StObject.set(x, "getColumnCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetColumns(value: () => SafeArray[TextColumn]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
+    inline def setGetColumns(value: () => SafeArray[TextColumn]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReferenceValue(value: () => Double): Self = StObject.set(x, "getReferenceValue", js.Any.fromFunction0(value))
+    inline def setGetReferenceValue(value: () => Double): Self = StObject.set(x, "getReferenceValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReferenceValue(value: Double): Self = StObject.set(x, "ReferenceValue", value.asInstanceOf[js.Any])
+    inline def setReferenceValue(value: Double): Self = StObject.set(x, "ReferenceValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetColumnCount(value: Double => Unit): Self = StObject.set(x, "setColumnCount", js.Any.fromFunction1(value))
+    inline def setSetColumnCount(value: Double => Unit): Self = StObject.set(x, "setColumnCount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetColumns(value: SeqEquiv[TextColumn] => Unit): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
+    inline def setSetColumns(value: SeqEquiv[TextColumn] => Unit): Self = StObject.set(x, "setColumns", js.Any.fromFunction1(value))
   }
 }

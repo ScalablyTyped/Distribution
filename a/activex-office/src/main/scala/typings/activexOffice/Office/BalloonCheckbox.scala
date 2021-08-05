@@ -16,7 +16,7 @@ trait BalloonCheckbox extends StObject {
   
   val Name: String
   
-  @JSName("Office.BalloonCheckbox_typekey")
+  /* private */ @JSName("Office.BalloonCheckbox_typekey")
   var OfficeDotBalloonCheckbox_typekey: BalloonCheckbox
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait BalloonCheckbox extends StObject {
 }
 object BalloonCheckbox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Checked: Boolean,
     Creator: Double,
@@ -41,31 +40,22 @@ object BalloonCheckbox {
     __obj.asInstanceOf[BalloonCheckbox]
   }
   
-  @scala.inline
-  implicit class BalloonCheckboxMutableBuilder[Self <: BalloonCheckbox] (val x: Self) extends AnyVal {
+  extension [Self <: BalloonCheckbox](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotBalloonCheckbox_typekey(value: BalloonCheckbox): Self = StObject.set(x, "Office.BalloonCheckbox_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotBalloonCheckbox_typekey(value: BalloonCheckbox): Self = StObject.set(x, "Office.BalloonCheckbox_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

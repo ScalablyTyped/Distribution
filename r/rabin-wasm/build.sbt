@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rabin-wasm"
-version := "0.1.4-e27b34"
+version := "0.1.4-494223"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

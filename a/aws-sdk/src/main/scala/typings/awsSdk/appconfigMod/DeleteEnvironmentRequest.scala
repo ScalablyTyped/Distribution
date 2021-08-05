@@ -18,19 +18,15 @@ trait DeleteEnvironmentRequest extends StObject {
 }
 object DeleteEnvironmentRequest {
   
-  @scala.inline
-  def apply(ApplicationId: Id, EnvironmentId: Id): DeleteEnvironmentRequest = {
+  inline def apply(ApplicationId: Id, EnvironmentId: Id): DeleteEnvironmentRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], EnvironmentId = EnvironmentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEnvironmentRequestMutableBuilder[Self <: DeleteEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentId(value: Id): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: Id): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
   }
 }

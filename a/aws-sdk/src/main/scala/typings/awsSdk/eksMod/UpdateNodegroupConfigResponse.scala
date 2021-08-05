@@ -10,19 +10,15 @@ trait UpdateNodegroupConfigResponse extends StObject {
 }
 object UpdateNodegroupConfigResponse {
   
-  @scala.inline
-  def apply(): UpdateNodegroupConfigResponse = {
+  inline def apply(): UpdateNodegroupConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateNodegroupConfigResponse]
   }
   
-  @scala.inline
-  implicit class UpdateNodegroupConfigResponseMutableBuilder[Self <: UpdateNodegroupConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNodegroupConfigResponse](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

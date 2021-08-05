@@ -31,37 +31,27 @@ trait TouchableHighlightProps
 }
 object TouchableHighlightProps {
   
-  @scala.inline
-  def apply(): TouchableHighlightProps = {
+  inline def apply(): TouchableHighlightProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchableHighlightProps]
   }
   
-  @scala.inline
-  implicit class TouchableHighlightPropsMutableBuilder[Self <: TouchableHighlightProps] (val x: Self) extends AnyVal {
+  extension [Self <: TouchableHighlightProps](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+    inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
     
-    @scala.inline
-    def setOnHideUnderlay(value: () => Unit): Self = StObject.set(x, "onHideUnderlay", js.Any.fromFunction0(value))
+    inline def setOnHideUnderlay(value: () => Unit): Self = StObject.set(x, "onHideUnderlay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
+    inline def setOnHideUnderlayUndefined: Self = StObject.set(x, "onHideUnderlay", js.undefined)
     
-    @scala.inline
-    def setOnShowUnderlay(value: () => Unit): Self = StObject.set(x, "onShowUnderlay", js.Any.fromFunction0(value))
+    inline def setOnShowUnderlay(value: () => Unit): Self = StObject.set(x, "onShowUnderlay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
+    inline def setOnShowUnderlayUndefined: Self = StObject.set(x, "onShowUnderlay", js.undefined)
     
-    @scala.inline
-    def setUnderlayColor(value: ColorValue): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
+    inline def setUnderlayColor(value: ColorValue): Self = StObject.set(x, "underlayColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
+    inline def setUnderlayColorUndefined: Self = StObject.set(x, "underlayColor", js.undefined)
   }
 }

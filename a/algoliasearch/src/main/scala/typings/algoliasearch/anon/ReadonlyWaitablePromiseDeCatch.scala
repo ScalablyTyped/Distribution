@@ -16,8 +16,7 @@ trait ReadonlyWaitablePromiseDeCatch extends StObject {
 }
 object ReadonlyWaitablePromiseDeCatch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[DeleteResponse | js.Any],
     `finally`: () => js.Promise[DeleteResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyWaitablePromiseDeCatch {
     __obj.asInstanceOf[ReadonlyWaitablePromiseDeCatch]
   }
   
-  @scala.inline
-  implicit class ReadonlyWaitablePromiseDeCatchMutableBuilder[Self <: ReadonlyWaitablePromiseDeCatch] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyWaitablePromiseDeCatch](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[DeleteResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[DeleteResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[DeleteResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[DeleteResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

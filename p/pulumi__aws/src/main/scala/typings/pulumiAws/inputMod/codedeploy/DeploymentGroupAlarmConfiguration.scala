@@ -26,34 +26,25 @@ trait DeploymentGroupAlarmConfiguration extends StObject {
 }
 object DeploymentGroupAlarmConfiguration {
   
-  @scala.inline
-  def apply(): DeploymentGroupAlarmConfiguration = {
+  inline def apply(): DeploymentGroupAlarmConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentGroupAlarmConfiguration]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupAlarmConfigurationMutableBuilder[Self <: DeploymentGroupAlarmConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupAlarmConfiguration](x: Self) {
     
-    @scala.inline
-    def setAlarms(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
+    inline def setAlarms(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
+    inline def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
     
-    @scala.inline
-    def setAlarmsVarargs(value: Input[String]*): Self = StObject.set(x, "alarms", js.Array(value :_*))
+    inline def setAlarmsVarargs(value: Input[String]*): Self = StObject.set(x, "alarms", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIgnorePollAlarmFailure(value: Input[Boolean]): Self = StObject.set(x, "ignorePollAlarmFailure", value.asInstanceOf[js.Any])
+    inline def setIgnorePollAlarmFailure(value: Input[Boolean]): Self = StObject.set(x, "ignorePollAlarmFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePollAlarmFailureUndefined: Self = StObject.set(x, "ignorePollAlarmFailure", js.undefined)
+    inline def setIgnorePollAlarmFailureUndefined: Self = StObject.set(x, "ignorePollAlarmFailure", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait Authenticate extends StObject {
 }
 object Authenticate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticate: (String, String) => js.Promise[UsernamePermissions | Null],
     default: () => js.Promise[AnonymousPermissions | Null],
     users: String => js.Promise[UsernamePermissions | Null]
@@ -30,19 +29,14 @@ object Authenticate {
     __obj.asInstanceOf[Authenticate]
   }
   
-  @scala.inline
-  implicit class AuthenticateMutableBuilder[Self <: Authenticate] (val x: Self) extends AnyVal {
+  extension [Self <: Authenticate](x: Self) {
     
-    @scala.inline
-    def setAuthenticate(value: (String, String) => js.Promise[UsernamePermissions | Null]): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
+    inline def setAuthenticate(value: (String, String) => js.Promise[UsernamePermissions | Null]): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDefault(value: () => js.Promise[AnonymousPermissions | Null]): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
+    inline def setDefault(value: () => js.Promise[AnonymousPermissions | Null]): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: credentials): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: credentials): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: String => js.Promise[UsernamePermissions | Null]): Self = StObject.set(x, "users", js.Any.fromFunction1(value))
+    inline def setUsers(value: String => js.Promise[UsernamePermissions | Null]): Self = StObject.set(x, "users", js.Any.fromFunction1(value))
   }
 }

@@ -34,41 +34,30 @@ object typesGetBucketNotificationConfigurationOutputMod {
   }
   object GetBucketNotificationConfigurationOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketNotificationConfigurationOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketNotificationConfigurationOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketNotificationConfigurationOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketNotificationConfigurationOutputMutableBuilder[Self <: GetBucketNotificationConfigurationOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketNotificationConfigurationOutput](x: Self) {
       
-      @scala.inline
-      def setLambdaFunctionConfigurations(value: js.Array[UnmarshalledLambdaFunctionConfiguration]): Self = StObject.set(x, "LambdaFunctionConfigurations", value.asInstanceOf[js.Any])
+      inline def setLambdaFunctionConfigurations(value: js.Array[UnmarshalledLambdaFunctionConfiguration]): Self = StObject.set(x, "LambdaFunctionConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaFunctionConfigurationsUndefined: Self = StObject.set(x, "LambdaFunctionConfigurations", js.undefined)
+      inline def setLambdaFunctionConfigurationsUndefined: Self = StObject.set(x, "LambdaFunctionConfigurations", js.undefined)
       
-      @scala.inline
-      def setLambdaFunctionConfigurationsVarargs(value: UnmarshalledLambdaFunctionConfiguration*): Self = StObject.set(x, "LambdaFunctionConfigurations", js.Array(value :_*))
+      inline def setLambdaFunctionConfigurationsVarargs(value: UnmarshalledLambdaFunctionConfiguration*): Self = StObject.set(x, "LambdaFunctionConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setQueueConfigurations(value: js.Array[UnmarshalledQueueConfiguration]): Self = StObject.set(x, "QueueConfigurations", value.asInstanceOf[js.Any])
+      inline def setQueueConfigurations(value: js.Array[UnmarshalledQueueConfiguration]): Self = StObject.set(x, "QueueConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueConfigurationsUndefined: Self = StObject.set(x, "QueueConfigurations", js.undefined)
+      inline def setQueueConfigurationsUndefined: Self = StObject.set(x, "QueueConfigurations", js.undefined)
       
-      @scala.inline
-      def setQueueConfigurationsVarargs(value: UnmarshalledQueueConfiguration*): Self = StObject.set(x, "QueueConfigurations", js.Array(value :_*))
+      inline def setQueueConfigurationsVarargs(value: UnmarshalledQueueConfiguration*): Self = StObject.set(x, "QueueConfigurations", js.Array(value :_*))
       
-      @scala.inline
-      def setTopicConfigurations(value: js.Array[UnmarshalledTopicConfiguration]): Self = StObject.set(x, "TopicConfigurations", value.asInstanceOf[js.Any])
+      inline def setTopicConfigurations(value: js.Array[UnmarshalledTopicConfiguration]): Self = StObject.set(x, "TopicConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicConfigurationsUndefined: Self = StObject.set(x, "TopicConfigurations", js.undefined)
+      inline def setTopicConfigurationsUndefined: Self = StObject.set(x, "TopicConfigurations", js.undefined)
       
-      @scala.inline
-      def setTopicConfigurationsVarargs(value: UnmarshalledTopicConfiguration*): Self = StObject.set(x, "TopicConfigurations", js.Array(value :_*))
+      inline def setTopicConfigurationsVarargs(value: UnmarshalledTopicConfiguration*): Self = StObject.set(x, "TopicConfigurations", js.Array(value :_*))
     }
   }
 }

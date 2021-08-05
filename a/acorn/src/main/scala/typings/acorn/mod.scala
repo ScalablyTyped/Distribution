@@ -65,8 +65,7 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def extend(
+    inline def extend(
       plugins: (js.Function1[
           /* BaseParser */ TypeofParser & (Instantiable3[/* options */ Options, /* input */ String, /* startPos */ js.UndefOr[Double], Parser]), 
           TypeofParser & (Instantiable3[/* options */ Options, /* input */ String, /* startPos */ js.UndefOr[Double], Parser])
@@ -74,22 +73,16 @@ object mod {
     ): TypeofParser & (Instantiable3[/* options */ Options, /* input */ String, /* startPos */ js.UndefOr[Double], Parser]) = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugins.asInstanceOf[js.Any]).asInstanceOf[TypeofParser & (Instantiable3[/* options */ Options, /* input */ String, /* startPos */ js.UndefOr[Double], Parser])]
     
     /* static member */
-    @scala.inline
-    def parse(input: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Node]
-    @scala.inline
-    def parse(input: String, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
+    inline def parse(input: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Node]
+    inline def parse(input: String, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
     
     /* static member */
-    @scala.inline
-    def parseExpressionAt(input: String, pos: Double): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Node]
-    @scala.inline
-    def parseExpressionAt(input: String, pos: Double, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
+    inline def parseExpressionAt(input: String, pos: Double): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Node]
+    inline def parseExpressionAt(input: String, pos: Double, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
     
     /* static member */
-    @scala.inline
-    def tokenizer(input: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any]).asInstanceOf[Call]
-    @scala.inline
-    def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
+    inline def tokenizer(input: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any]).asInstanceOf[Call]
+    inline def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
   }
   
   @JSImport("acorn", "SourceLocation")
@@ -165,21 +158,15 @@ object mod {
   @js.native
   val defaultOptions: Options = js.native
   
-  @scala.inline
-  def getLineInfo(input: String, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineInfo")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
+  inline def getLineInfo(input: String, offset: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("getLineInfo")(input.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Position]
   
-  @scala.inline
-  def isIdentifierChar(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierChar")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isIdentifierChar(code: Double, astral: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierChar")(code.asInstanceOf[js.Any], astral.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isIdentifierChar(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierChar")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIdentifierChar(code: Double, astral: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierChar")(code.asInstanceOf[js.Any], astral.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isIdentifierStart(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierStart")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isIdentifierStart(code: Double, astral: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierStart")(code.asInstanceOf[js.Any], astral.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isIdentifierStart(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierStart")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isIdentifierStart(code: Double, astral: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierStart")(code.asInstanceOf[js.Any], astral.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("acorn", "lineBreak")
   @js.native
@@ -189,19 +176,13 @@ object mod {
   @js.native
   val lineBreakG: RegExp = js.native
   
-  @scala.inline
-  def parse(input: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Node]
-  @scala.inline
-  def parse(input: String, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def parse(input: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def parse(input: String, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
   
-  @scala.inline
-  def parseExpressionAt(input: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any]).asInstanceOf[Node]
-  @scala.inline
-  def parseExpressionAt(input: String, pos: Double): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Node]
-  @scala.inline
-  def parseExpressionAt(input: String, pos: Double, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
-  @scala.inline
-  def parseExpressionAt(input: String, pos: Unit, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def parseExpressionAt(input: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def parseExpressionAt(input: String, pos: Double): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def parseExpressionAt(input: String, pos: Double, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
+  inline def parseExpressionAt(input: String, pos: Unit, options: Options): Node = (^.asInstanceOf[js.Dynamic].applyDynamic("parseExpressionAt")(input.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Node]
   
   object tokContexts {
     
@@ -213,50 +194,43 @@ object mod {
     @js.native
     def bExpr: TokContext = js.native
     
-    @scala.inline
-    def bExpr_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b_expr")(x.asInstanceOf[js.Any])
+    inline def bExpr_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b_expr")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokContexts.b_stat")
     @js.native
     def bStat: TokContext = js.native
     
-    @scala.inline
-    def bStat_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b_stat")(x.asInstanceOf[js.Any])
+    inline def bStat_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b_stat")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokContexts.b_tmpl")
     @js.native
     def bTmpl: TokContext = js.native
     
-    @scala.inline
-    def bTmpl_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b_tmpl")(x.asInstanceOf[js.Any])
+    inline def bTmpl_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b_tmpl")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokContexts.f_expr")
     @js.native
     def fExpr: TokContext = js.native
     
-    @scala.inline
-    def fExpr_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("f_expr")(x.asInstanceOf[js.Any])
+    inline def fExpr_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("f_expr")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokContexts.p_expr")
     @js.native
     def pExpr: TokContext = js.native
     
-    @scala.inline
-    def pExpr_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("p_expr")(x.asInstanceOf[js.Any])
+    inline def pExpr_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("p_expr")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokContexts.p_stat")
     @js.native
     def pStat: TokContext = js.native
     
-    @scala.inline
-    def pStat_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("p_stat")(x.asInstanceOf[js.Any])
+    inline def pStat_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("p_stat")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokContexts.q_tmpl")
     @js.native
     def qTmpl: TokContext = js.native
     
-    @scala.inline
-    def qTmpl_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("q_tmpl")(x.asInstanceOf[js.Any])
+    inline def qTmpl_=(x: TokContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("q_tmpl")(x.asInstanceOf[js.Any])
   }
   
   object tokTypes {
@@ -272,75 +246,63 @@ object mod {
     @JSImport("acorn", "tokTypes.arrow")
     @js.native
     def arrow: TokenType = js.native
-    @scala.inline
-    def arrow_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrow")(x.asInstanceOf[js.Any])
+    inline def arrow_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrow")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.assign")
     @js.native
     def assign: TokenType = js.native
-    @scala.inline
-    def assign_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assign")(x.asInstanceOf[js.Any])
+    inline def assign_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("assign")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.backQuote")
     @js.native
     def backQuote: TokenType = js.native
-    @scala.inline
-    def backQuote_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backQuote")(x.asInstanceOf[js.Any])
+    inline def backQuote_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backQuote")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.bitShift")
     @js.native
     def bitShift: TokenType = js.native
-    @scala.inline
-    def bitShift_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitShift")(x.asInstanceOf[js.Any])
+    inline def bitShift_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitShift")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.bitwiseAND")
     @js.native
     def bitwiseAND: TokenType = js.native
-    @scala.inline
-    def bitwiseAND_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitwiseAND")(x.asInstanceOf[js.Any])
+    inline def bitwiseAND_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitwiseAND")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.bitwiseOR")
     @js.native
     def bitwiseOR: TokenType = js.native
-    @scala.inline
-    def bitwiseOR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitwiseOR")(x.asInstanceOf[js.Any])
+    inline def bitwiseOR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitwiseOR")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.bitwiseXOR")
     @js.native
     def bitwiseXOR: TokenType = js.native
-    @scala.inline
-    def bitwiseXOR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitwiseXOR")(x.asInstanceOf[js.Any])
+    inline def bitwiseXOR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bitwiseXOR")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.braceL")
     @js.native
     def braceL: TokenType = js.native
-    @scala.inline
-    def braceL_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("braceL")(x.asInstanceOf[js.Any])
+    inline def braceL_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("braceL")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.braceR")
     @js.native
     def braceR: TokenType = js.native
-    @scala.inline
-    def braceR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("braceR")(x.asInstanceOf[js.Any])
+    inline def braceR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("braceR")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.bracketL")
     @js.native
     def bracketL: TokenType = js.native
-    @scala.inline
-    def bracketL_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bracketL")(x.asInstanceOf[js.Any])
+    inline def bracketL_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bracketL")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.bracketR")
     @js.native
     def bracketR: TokenType = js.native
-    @scala.inline
-    def bracketR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bracketR")(x.asInstanceOf[js.Any])
+    inline def bracketR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bracketR")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._break")
     @js.native
     def break: TokenType = js.native
     
-    @scala.inline
-    def break_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_break")(x.asInstanceOf[js.Any])
+    inline def break_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_break")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._case")
     @js.native
@@ -357,45 +319,38 @@ object mod {
     @JSImport("acorn", "tokTypes.colon")
     @js.native
     def colon: TokenType = js.native
-    @scala.inline
-    def colon_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colon")(x.asInstanceOf[js.Any])
+    inline def colon_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colon")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.comma")
     @js.native
     def comma: TokenType = js.native
-    @scala.inline
-    def comma_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("comma")(x.asInstanceOf[js.Any])
+    inline def comma_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("comma")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._const")
     @js.native
     def const: TokenType = js.native
     
-    @scala.inline
-    def const_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_const")(x.asInstanceOf[js.Any])
+    inline def const_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_const")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._continue")
     @js.native
     def continue: TokenType = js.native
     
-    @scala.inline
-    def continue_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_continue")(x.asInstanceOf[js.Any])
+    inline def continue_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_continue")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._debugger")
     @js.native
     def debugger: TokenType = js.native
     
-    @scala.inline
-    def debugger_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debugger")(x.asInstanceOf[js.Any])
+    inline def debugger_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_debugger")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def default_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_default")(x.asInstanceOf[js.Any])
+    inline def default_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_default")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._delete")
     @js.native
     def delete: TokenType = js.native
     
-    @scala.inline
-    def delete_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_delete")(x.asInstanceOf[js.Any])
+    inline def delete_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_delete")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._do")
     @js.native
@@ -404,20 +359,17 @@ object mod {
     @JSImport("acorn", "tokTypes.dollarBraceL")
     @js.native
     def dollarBraceL: TokenType = js.native
-    @scala.inline
-    def dollarBraceL_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dollarBraceL")(x.asInstanceOf[js.Any])
+    inline def dollarBraceL_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dollarBraceL")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.dot")
     @js.native
     def dot: TokenType = js.native
-    @scala.inline
-    def dot_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dot")(x.asInstanceOf[js.Any])
+    inline def dot_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dot")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.ellipsis")
     @js.native
     def ellipsis: TokenType = js.native
-    @scala.inline
-    def ellipsis_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ellipsis")(x.asInstanceOf[js.Any])
+    inline def ellipsis_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ellipsis")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._else")
     @js.native
@@ -426,21 +378,18 @@ object mod {
     @JSImport("acorn", "tokTypes.eof")
     @js.native
     def eof: TokenType = js.native
-    @scala.inline
-    def eof_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eof")(x.asInstanceOf[js.Any])
+    inline def eof_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eof")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.eq")
     @js.native
     def eq_ : TokenType = js.native
     
-    @scala.inline
-    def eq__=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eq")(x.asInstanceOf[js.Any])
+    inline def eq__=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("eq")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.equality")
     @js.native
     def equality: TokenType = js.native
-    @scala.inline
-    def equality_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("equality")(x.asInstanceOf[js.Any])
+    inline def equality_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("equality")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._export")
     @js.native
@@ -466,8 +415,7 @@ object mod {
     @js.native
     def function: TokenType = js.native
     
-    @scala.inline
-    def function_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_function")(x.asInstanceOf[js.Any])
+    inline def function_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_function")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._if")
     @js.native
@@ -481,45 +429,38 @@ object mod {
     @js.native
     def in: TokenType = js.native
     
-    @scala.inline
-    def in_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_in")(x.asInstanceOf[js.Any])
+    inline def in_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_in")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.incDec")
     @js.native
     def incDec: TokenType = js.native
-    @scala.inline
-    def incDec_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incDec")(x.asInstanceOf[js.Any])
+    inline def incDec_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incDec")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._instanceof")
     @js.native
     def instanceof: TokenType = js.native
     
-    @scala.inline
-    def instanceof_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instanceof")(x.asInstanceOf[js.Any])
+    inline def instanceof_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instanceof")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.logicalAND")
     @js.native
     def logicalAND: TokenType = js.native
-    @scala.inline
-    def logicalAND_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logicalAND")(x.asInstanceOf[js.Any])
+    inline def logicalAND_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logicalAND")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.logicalOR")
     @js.native
     def logicalOR: TokenType = js.native
-    @scala.inline
-    def logicalOR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logicalOR")(x.asInstanceOf[js.Any])
+    inline def logicalOR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logicalOR")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.modulo")
     @js.native
     def modulo: TokenType = js.native
-    @scala.inline
-    def modulo_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modulo")(x.asInstanceOf[js.Any])
+    inline def modulo_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modulo")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.name")
     @js.native
     def name: TokenType = js.native
-    @scala.inline
-    def name_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    inline def name_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._new")
     @js.native
@@ -532,50 +473,42 @@ object mod {
     @JSImport("acorn", "tokTypes.num")
     @js.native
     def num: TokenType = js.native
-    @scala.inline
-    def num_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("num")(x.asInstanceOf[js.Any])
+    inline def num_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("num")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.parenL")
     @js.native
     def parenL: TokenType = js.native
-    @scala.inline
-    def parenL_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parenL")(x.asInstanceOf[js.Any])
+    inline def parenL_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parenL")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.parenR")
     @js.native
     def parenR: TokenType = js.native
-    @scala.inline
-    def parenR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parenR")(x.asInstanceOf[js.Any])
+    inline def parenR_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parenR")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.plusMin")
     @js.native
     def plusMin: TokenType = js.native
-    @scala.inline
-    def plusMin_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusMin")(x.asInstanceOf[js.Any])
+    inline def plusMin_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plusMin")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.prefix")
     @js.native
     def prefix: TokenType = js.native
-    @scala.inline
-    def prefix_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
+    inline def prefix_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefix")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.question")
     @js.native
     def question: TokenType = js.native
-    @scala.inline
-    def question_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("question")(x.asInstanceOf[js.Any])
+    inline def question_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("question")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.regexp")
     @js.native
     def regexp: TokenType = js.native
-    @scala.inline
-    def regexp_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
+    inline def regexp_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.relational")
     @js.native
     def relational: TokenType = js.native
-    @scala.inline
-    def relational_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relational")(x.asInstanceOf[js.Any])
+    inline def relational_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("relational")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._return")
     @js.native
@@ -584,32 +517,27 @@ object mod {
     @JSImport("acorn", "tokTypes.semi")
     @js.native
     def semi: TokenType = js.native
-    @scala.inline
-    def semi_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("semi")(x.asInstanceOf[js.Any])
+    inline def semi_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("semi")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.slash")
     @js.native
     def slash: TokenType = js.native
-    @scala.inline
-    def slash_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slash")(x.asInstanceOf[js.Any])
+    inline def slash_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slash")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.star")
     @js.native
     def star: TokenType = js.native
-    @scala.inline
-    def star_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("star")(x.asInstanceOf[js.Any])
+    inline def star_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("star")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.starstar")
     @js.native
     def starstar: TokenType = js.native
-    @scala.inline
-    def starstar_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("starstar")(x.asInstanceOf[js.Any])
+    inline def starstar_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("starstar")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.string")
     @js.native
     def string: TokenType = js.native
-    @scala.inline
-    def string_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
+    inline def string_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._super")
     @js.native
@@ -619,14 +547,12 @@ object mod {
     @js.native
     def switch: TokenType = js.native
     
-    @scala.inline
-    def switch_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_switch")(x.asInstanceOf[js.Any])
+    inline def switch_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_switch")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes.template")
     @js.native
     def template: TokenType = js.native
-    @scala.inline
-    def template_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("template")(x.asInstanceOf[js.Any])
+    inline def template_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("template")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._this")
     @js.native
@@ -648,8 +574,7 @@ object mod {
     @js.native
     def typeof: TokenType = js.native
     
-    @scala.inline
-    def typeof_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_typeof")(x.asInstanceOf[js.Any])
+    inline def typeof_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_typeof")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._var")
     @js.native
@@ -659,8 +584,7 @@ object mod {
     @js.native
     def void: TokenType = js.native
     
-    @scala.inline
-    def void_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_void")(x.asInstanceOf[js.Any])
+    inline def void_=(x: TokenType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_void")(x.asInstanceOf[js.Any])
     
     @JSImport("acorn", "tokTypes._while")
     @js.native
@@ -671,10 +595,8 @@ object mod {
     val `with`: TokenType = js.native
   }
   
-  @scala.inline
-  def tokenizer(input: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any]).asInstanceOf[Call]
-  @scala.inline
-  def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
+  inline def tokenizer(input: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any]).asInstanceOf[Call]
+  inline def tokenizer(input: String, options: Options): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenizer")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Call]
   
   @JSImport("acorn", "version")
   @js.native
@@ -700,39 +622,29 @@ object mod {
   }
   object Comment {
     
-    @scala.inline
-    def apply(end: Double, start: Double, `type`: String, value: String): Comment = {
+    inline def apply(end: Double, start: Double, `type`: String, value: String): Comment = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Comment]
     }
     
-    @scala.inline
-    implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+    extension [Self <: Comment](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+      inline def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+      inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
       
-      @scala.inline
-      def setRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -790,67 +702,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowAwaitOutsideFunction(value: Boolean): Self = StObject.set(x, "allowAwaitOutsideFunction", value.asInstanceOf[js.Any])
+      inline def setAllowAwaitOutsideFunction(value: Boolean): Self = StObject.set(x, "allowAwaitOutsideFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowAwaitOutsideFunctionUndefined: Self = StObject.set(x, "allowAwaitOutsideFunction", js.undefined)
+      inline def setAllowAwaitOutsideFunctionUndefined: Self = StObject.set(x, "allowAwaitOutsideFunction", js.undefined)
       
-      @scala.inline
-      def setAllowHashBang(value: Boolean): Self = StObject.set(x, "allowHashBang", value.asInstanceOf[js.Any])
+      inline def setAllowHashBang(value: Boolean): Self = StObject.set(x, "allowHashBang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHashBangUndefined: Self = StObject.set(x, "allowHashBang", js.undefined)
+      inline def setAllowHashBangUndefined: Self = StObject.set(x, "allowHashBang", js.undefined)
       
-      @scala.inline
-      def setAllowImportExportEverywhere(value: Boolean): Self = StObject.set(x, "allowImportExportEverywhere", value.asInstanceOf[js.Any])
+      inline def setAllowImportExportEverywhere(value: Boolean): Self = StObject.set(x, "allowImportExportEverywhere", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowImportExportEverywhereUndefined: Self = StObject.set(x, "allowImportExportEverywhere", js.undefined)
+      inline def setAllowImportExportEverywhereUndefined: Self = StObject.set(x, "allowImportExportEverywhere", js.undefined)
       
-      @scala.inline
-      def setAllowReserved(value: Boolean | never): Self = StObject.set(x, "allowReserved", value.asInstanceOf[js.Any])
+      inline def setAllowReserved(value: Boolean | never): Self = StObject.set(x, "allowReserved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowReservedUndefined: Self = StObject.set(x, "allowReserved", js.undefined)
+      inline def setAllowReservedUndefined: Self = StObject.set(x, "allowReserved", js.undefined)
       
-      @scala.inline
-      def setAllowReturnOutsideFunction(value: Boolean): Self = StObject.set(x, "allowReturnOutsideFunction", value.asInstanceOf[js.Any])
+      inline def setAllowReturnOutsideFunction(value: Boolean): Self = StObject.set(x, "allowReturnOutsideFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowReturnOutsideFunctionUndefined: Self = StObject.set(x, "allowReturnOutsideFunction", js.undefined)
+      inline def setAllowReturnOutsideFunctionUndefined: Self = StObject.set(x, "allowReturnOutsideFunction", js.undefined)
       
-      @scala.inline
-      def setDirectSourceFile(value: String): Self = StObject.set(x, "directSourceFile", value.asInstanceOf[js.Any])
+      inline def setDirectSourceFile(value: String): Self = StObject.set(x, "directSourceFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectSourceFileUndefined: Self = StObject.set(x, "directSourceFile", js.undefined)
+      inline def setDirectSourceFileUndefined: Self = StObject.set(x, "directSourceFile", js.undefined)
       
-      @scala.inline
-      def setEcmaVersion(
+      inline def setEcmaVersion(
         value: `3` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `2015` | `2016` | `2017` | `2018` | `2019` | `2020`
       ): Self = StObject.set(x, "ecmaVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcmaVersionUndefined: Self = StObject.set(x, "ecmaVersion", js.undefined)
+      inline def setEcmaVersionUndefined: Self = StObject.set(x, "ecmaVersion", js.undefined)
       
-      @scala.inline
-      def setLocations(value: Boolean): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: Boolean): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+      inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
       
-      @scala.inline
-      def setOnComment(
+      inline def setOnComment(
         value: (js.Function6[
               /* isBlock */ Boolean, 
               /* text */ String, 
@@ -862,70 +755,49 @@ object mod {
             ]) | js.Array[Comment]
       ): Self = StObject.set(x, "onComment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCommentFunction6(
+      inline def setOnCommentFunction6(
         value: (/* isBlock */ Boolean, /* text */ String, /* start */ Double, /* end */ Double, /* startLoc */ js.UndefOr[Position], /* endLoc */ js.UndefOr[Position]) => Unit
       ): Self = StObject.set(x, "onComment", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setOnCommentUndefined: Self = StObject.set(x, "onComment", js.undefined)
+      inline def setOnCommentUndefined: Self = StObject.set(x, "onComment", js.undefined)
       
-      @scala.inline
-      def setOnCommentVarargs(value: Comment*): Self = StObject.set(x, "onComment", js.Array(value :_*))
+      inline def setOnCommentVarargs(value: Comment*): Self = StObject.set(x, "onComment", js.Array(value :_*))
       
-      @scala.inline
-      def setOnInsertedSemicolon(value: (/* lastTokEnd */ Double, /* lastTokEndLoc */ js.UndefOr[Position]) => Unit): Self = StObject.set(x, "onInsertedSemicolon", js.Any.fromFunction2(value))
+      inline def setOnInsertedSemicolon(value: (/* lastTokEnd */ Double, /* lastTokEndLoc */ js.UndefOr[Position]) => Unit): Self = StObject.set(x, "onInsertedSemicolon", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnInsertedSemicolonUndefined: Self = StObject.set(x, "onInsertedSemicolon", js.undefined)
+      inline def setOnInsertedSemicolonUndefined: Self = StObject.set(x, "onInsertedSemicolon", js.undefined)
       
-      @scala.inline
-      def setOnToken(value: (js.Function1[/* token */ Token, js.Any]) | js.Array[Token]): Self = StObject.set(x, "onToken", value.asInstanceOf[js.Any])
+      inline def setOnToken(value: (js.Function1[/* token */ Token, js.Any]) | js.Array[Token]): Self = StObject.set(x, "onToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTokenFunction1(value: /* token */ Token => js.Any): Self = StObject.set(x, "onToken", js.Any.fromFunction1(value))
+      inline def setOnTokenFunction1(value: /* token */ Token => js.Any): Self = StObject.set(x, "onToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTokenUndefined: Self = StObject.set(x, "onToken", js.undefined)
+      inline def setOnTokenUndefined: Self = StObject.set(x, "onToken", js.undefined)
       
-      @scala.inline
-      def setOnTokenVarargs(value: Token*): Self = StObject.set(x, "onToken", js.Array(value :_*))
+      inline def setOnTokenVarargs(value: Token*): Self = StObject.set(x, "onToken", js.Array(value :_*))
       
-      @scala.inline
-      def setOnTrailingComma(value: (/* lastTokEnd */ Double, /* lastTokEndLoc */ js.UndefOr[Position]) => Unit): Self = StObject.set(x, "onTrailingComma", js.Any.fromFunction2(value))
+      inline def setOnTrailingComma(value: (/* lastTokEnd */ Double, /* lastTokEndLoc */ js.UndefOr[Position]) => Unit): Self = StObject.set(x, "onTrailingComma", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnTrailingCommaUndefined: Self = StObject.set(x, "onTrailingComma", js.undefined)
+      inline def setOnTrailingCommaUndefined: Self = StObject.set(x, "onTrailingComma", js.undefined)
       
-      @scala.inline
-      def setPreserveParens(value: Boolean): Self = StObject.set(x, "preserveParens", value.asInstanceOf[js.Any])
+      inline def setPreserveParens(value: Boolean): Self = StObject.set(x, "preserveParens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveParensUndefined: Self = StObject.set(x, "preserveParens", js.undefined)
+      inline def setPreserveParensUndefined: Self = StObject.set(x, "preserveParens", js.undefined)
       
-      @scala.inline
-      def setProgram(value: Node): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+      inline def setProgram(value: Node): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      @scala.inline
-      def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+      inline def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+      inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
       
-      @scala.inline
-      def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+      inline def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
+      inline def setSourceFileUndefined: Self = StObject.set(x, "sourceFile", js.undefined)
       
-      @scala.inline
-      def setSourceType(value: script | module): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+      inline def setSourceType(value: script | module): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+      inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     }
   }
   
@@ -939,23 +811,18 @@ object mod {
   }
   object Position {
     
-    @scala.inline
-    def apply(column: Double, line: Double, offset: Double): Position = {
+    inline def apply(column: Double, line: Double, offset: Double): Position = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Position]
     }
     
-    @scala.inline
-    implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+    extension [Self <: Position](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
 }

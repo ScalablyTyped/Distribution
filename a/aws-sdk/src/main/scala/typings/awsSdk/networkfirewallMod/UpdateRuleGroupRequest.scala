@@ -48,58 +48,41 @@ trait UpdateRuleGroupRequest extends StObject {
 }
 object UpdateRuleGroupRequest {
   
-  @scala.inline
-  def apply(UpdateToken: UpdateToken): UpdateRuleGroupRequest = {
+  inline def apply(UpdateToken: UpdateToken): UpdateRuleGroupRequest = {
     val __obj = js.Dynamic.literal(UpdateToken = UpdateToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRuleGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRuleGroupRequestMutableBuilder[Self <: UpdateRuleGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRuleGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setRuleGroup(value: RuleGroup): Self = StObject.set(x, "RuleGroup", value.asInstanceOf[js.Any])
+    inline def setRuleGroup(value: RuleGroup): Self = StObject.set(x, "RuleGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupArn(value: ResourceArn): Self = StObject.set(x, "RuleGroupArn", value.asInstanceOf[js.Any])
+    inline def setRuleGroupArn(value: ResourceArn): Self = StObject.set(x, "RuleGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupArnUndefined: Self = StObject.set(x, "RuleGroupArn", js.undefined)
+    inline def setRuleGroupArnUndefined: Self = StObject.set(x, "RuleGroupArn", js.undefined)
     
-    @scala.inline
-    def setRuleGroupName(value: ResourceName): Self = StObject.set(x, "RuleGroupName", value.asInstanceOf[js.Any])
+    inline def setRuleGroupName(value: ResourceName): Self = StObject.set(x, "RuleGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupNameUndefined: Self = StObject.set(x, "RuleGroupName", js.undefined)
+    inline def setRuleGroupNameUndefined: Self = StObject.set(x, "RuleGroupName", js.undefined)
     
-    @scala.inline
-    def setRuleGroupUndefined: Self = StObject.set(x, "RuleGroup", js.undefined)
+    inline def setRuleGroupUndefined: Self = StObject.set(x, "RuleGroup", js.undefined)
     
-    @scala.inline
-    def setRules(value: RulesString): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: RulesString): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setType(value: RuleGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RuleGroupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
+    inline def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
   }
 }

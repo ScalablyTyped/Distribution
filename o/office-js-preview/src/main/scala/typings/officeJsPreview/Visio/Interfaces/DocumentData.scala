@@ -33,34 +33,25 @@ trait DocumentData extends StObject {
 }
 object DocumentData {
   
-  @scala.inline
-  def apply(): DocumentData = {
+  inline def apply(): DocumentData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentData]
   }
   
-  @scala.inline
-  implicit class DocumentDataMutableBuilder[Self <: DocumentData] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentData](x: Self) {
     
-    @scala.inline
-    def setApplication(value: ApplicationData): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: ApplicationData): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
-    @scala.inline
-    def setPages(value: js.Array[PageData]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[PageData]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: PageData*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: PageData*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setView(value: DocumentViewData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: DocumentViewData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

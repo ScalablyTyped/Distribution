@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleBackgroundClip extends StObject
 object styleBackgroundClip {
   
-  @scala.inline
-  def styleBackgroundClipBorderBox: `0` = 0.asInstanceOf[`0`]
+  inline def styleBackgroundClipBorderBox: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleBackgroundClipContentBox: `2` = 2.asInstanceOf[`2`]
+  inline def styleBackgroundClipContentBox: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleBackgroundClipNotSet: `3` = 3.asInstanceOf[`3`]
+  inline def styleBackgroundClipNotSet: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleBackgroundClipPaddingBox: `1` = 1.asInstanceOf[`1`]
+  inline def styleBackgroundClipPaddingBox: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleBackgroundClip_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleBackgroundClip_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

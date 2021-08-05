@@ -48,46 +48,33 @@ trait FilePattern extends StObject {
 }
 object FilePattern {
   
-  @scala.inline
-  def apply(pattern: String): FilePattern = {
+  inline def apply(pattern: String): FilePattern = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePattern]
   }
   
-  @scala.inline
-  implicit class FilePatternMutableBuilder[Self <: FilePattern] (val x: Self) extends AnyVal {
+  extension [Self <: FilePattern](x: Self) {
     
-    @scala.inline
-    def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
+    inline def setIncluded(value: Boolean): Self = StObject.set(x, "included", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
+    inline def setIncludedUndefined: Self = StObject.set(x, "included", js.undefined)
     
-    @scala.inline
-    def setNocache(value: Boolean): Self = StObject.set(x, "nocache", value.asInstanceOf[js.Any])
+    inline def setNocache(value: Boolean): Self = StObject.set(x, "nocache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNocacheUndefined: Self = StObject.set(x, "nocache", js.undefined)
+    inline def setNocacheUndefined: Self = StObject.set(x, "nocache", js.undefined)
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServed(value: Boolean): Self = StObject.set(x, "served", value.asInstanceOf[js.Any])
+    inline def setServed(value: Boolean): Self = StObject.set(x, "served", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServedUndefined: Self = StObject.set(x, "served", js.undefined)
+    inline def setServedUndefined: Self = StObject.set(x, "served", js.undefined)
     
-    @scala.inline
-    def setType(value: FilePatternTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FilePatternTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWatched(value: Boolean): Self = StObject.set(x, "watched", value.asInstanceOf[js.Any])
+    inline def setWatched(value: Boolean): Self = StObject.set(x, "watched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchedUndefined: Self = StObject.set(x, "watched", js.undefined)
+    inline def setWatchedUndefined: Self = StObject.set(x, "watched", js.undefined)
   }
 }

@@ -12,23 +12,18 @@ trait VastAdAttributes extends StObject {
 }
 object VastAdAttributes {
   
-  @scala.inline
-  def apply(`type`: String): VastAdAttributes = {
+  inline def apply(`type`: String): VastAdAttributes = {
     val __obj = js.Dynamic.literal(fallback_index = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VastAdAttributes]
   }
   
-  @scala.inline
-  implicit class VastAdAttributesMutableBuilder[Self <: VastAdAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: VastAdAttributes](x: Self) {
     
-    @scala.inline
-    def setFallback_index(value: String): Self = StObject.set(x, "fallback_index", value.asInstanceOf[js.Any])
+    inline def setFallback_index(value: String): Self = StObject.set(x, "fallback_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallback_indexNull: Self = StObject.set(x, "fallback_index", null)
+    inline def setFallback_indexNull: Self = StObject.set(x, "fallback_index", null)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,15 +18,14 @@ trait ChartColorFormat extends StObject {
   
   val Type: Double
   
-  @JSName("Word.ChartColorFormat_typekey")
+  /* private */ @JSName("Word.ChartColorFormat_typekey")
   var WordDotChartColorFormat_typekey: ChartColorFormat
   
   val _Default: Double
 }
 object ChartColorFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Parent: js.Any,
@@ -41,31 +40,22 @@ object ChartColorFormat {
     __obj.asInstanceOf[ChartColorFormat]
   }
   
-  @scala.inline
-  implicit class ChartColorFormatMutableBuilder[Self <: ChartColorFormat] (val x: Self) extends AnyVal {
+  extension [Self <: ChartColorFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
+    inline def setRGB(value: Double): Self = StObject.set(x, "RGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeColor(value: Double): Self = StObject.set(x, "SchemeColor", value.asInstanceOf[js.Any])
+    inline def setSchemeColor(value: Double): Self = StObject.set(x, "SchemeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotChartColorFormat_typekey(value: ChartColorFormat): Self = StObject.set(x, "Word.ChartColorFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotChartColorFormat_typekey(value: ChartColorFormat): Self = StObject.set(x, "Word.ChartColorFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: Double): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: Double): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

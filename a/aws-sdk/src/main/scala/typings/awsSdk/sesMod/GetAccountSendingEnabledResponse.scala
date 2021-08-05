@@ -13,19 +13,15 @@ trait GetAccountSendingEnabledResponse extends StObject {
 }
 object GetAccountSendingEnabledResponse {
   
-  @scala.inline
-  def apply(): GetAccountSendingEnabledResponse = {
+  inline def apply(): GetAccountSendingEnabledResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccountSendingEnabledResponse]
   }
   
-  @scala.inline
-  implicit class GetAccountSendingEnabledResponseMutableBuilder[Self <: GetAccountSendingEnabledResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountSendingEnabledResponse](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

@@ -99,8 +99,7 @@ object mod {
   }
   object AddressData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: String,
       addressEnglish: String,
       addressType: R | J,
@@ -135,95 +134,65 @@ object mod {
       __obj.asInstanceOf[AddressData]
     }
     
-    @scala.inline
-    implicit class AddressDataMutableBuilder[Self <: AddressData] (val x: Self) extends AnyVal {
+    extension [Self <: AddressData](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressEnglish(value: String): Self = StObject.set(x, "addressEnglish", value.asInstanceOf[js.Any])
+      inline def setAddressEnglish(value: String): Self = StObject.set(x, "addressEnglish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressType(value: R | J): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
+      inline def setAddressType(value: R | J): Self = StObject.set(x, "addressType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApartment(value: Y | N): Self = StObject.set(x, "apartment", value.asInstanceOf[js.Any])
+      inline def setApartment(value: Y | N): Self = StObject.set(x, "apartment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoJibunAddress(value: String): Self = StObject.set(x, "autoJibunAddress", value.asInstanceOf[js.Any])
+      inline def setAutoJibunAddress(value: String): Self = StObject.set(x, "autoJibunAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoJibunAddressEnglish(value: String): Self = StObject.set(x, "autoJibunAddressEnglish", value.asInstanceOf[js.Any])
+      inline def setAutoJibunAddressEnglish(value: String): Self = StObject.set(x, "autoJibunAddressEnglish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRoadAddress(value: String): Self = StObject.set(x, "autoRoadAddress", value.asInstanceOf[js.Any])
+      inline def setAutoRoadAddress(value: String): Self = StObject.set(x, "autoRoadAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRoadAddressEnglish(value: String): Self = StObject.set(x, "autoRoadAddressEnglish", value.asInstanceOf[js.Any])
+      inline def setAutoRoadAddressEnglish(value: String): Self = StObject.set(x, "autoRoadAddressEnglish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBcode(value: String): Self = StObject.set(x, "bcode", value.asInstanceOf[js.Any])
+      inline def setBcode(value: String): Self = StObject.set(x, "bcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBname(value: String): Self = StObject.set(x, "bname", value.asInstanceOf[js.Any])
+      inline def setBname(value: String): Self = StObject.set(x, "bname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBname1(value: String): Self = StObject.set(x, "bname1", value.asInstanceOf[js.Any])
+      inline def setBname1(value: String): Self = StObject.set(x, "bname1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBname2(value: String): Self = StObject.set(x, "bname2", value.asInstanceOf[js.Any])
+      inline def setBname2(value: String): Self = StObject.set(x, "bname2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildingCode(value: String): Self = StObject.set(x, "buildingCode", value.asInstanceOf[js.Any])
+      inline def setBuildingCode(value: String): Self = StObject.set(x, "buildingCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildingName(value: String): Self = StObject.set(x, "buildingName", value.asInstanceOf[js.Any])
+      inline def setBuildingName(value: String): Self = StObject.set(x, "buildingName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHname(value: String): Self = StObject.set(x, "hname", value.asInstanceOf[js.Any])
+      inline def setHname(value: String): Self = StObject.set(x, "hname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJibunAddress(value: String): Self = StObject.set(x, "jibunAddress", value.asInstanceOf[js.Any])
+      inline def setJibunAddress(value: String): Self = StObject.set(x, "jibunAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJibunAddressEnglish(value: String): Self = StObject.set(x, "jibunAddressEnglish", value.asInstanceOf[js.Any])
+      inline def setJibunAddressEnglish(value: String): Self = StObject.set(x, "jibunAddressEnglish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoSelected(value: Y | N): Self = StObject.set(x, "noSelected", value.asInstanceOf[js.Any])
+      inline def setNoSelected(value: Y | N): Self = StObject.set(x, "noSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoadAddress(value: String): Self = StObject.set(x, "roadAddress", value.asInstanceOf[js.Any])
+      inline def setRoadAddress(value: String): Self = StObject.set(x, "roadAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoadAddressEnglish(value: String): Self = StObject.set(x, "roadAddressEnglish", value.asInstanceOf[js.Any])
+      inline def setRoadAddressEnglish(value: String): Self = StObject.set(x, "roadAddressEnglish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoadname(value: String): Self = StObject.set(x, "roadname", value.asInstanceOf[js.Any])
+      inline def setRoadname(value: String): Self = StObject.set(x, "roadname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoadnameCode(value: String): Self = StObject.set(x, "roadnameCode", value.asInstanceOf[js.Any])
+      inline def setRoadnameCode(value: String): Self = StObject.set(x, "roadnameCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSido(value: String): Self = StObject.set(x, "sido", value.asInstanceOf[js.Any])
+      inline def setSido(value: String): Self = StObject.set(x, "sido", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigungu(value: String): Self = StObject.set(x, "sigungu", value.asInstanceOf[js.Any])
+      inline def setSigungu(value: String): Self = StObject.set(x, "sigungu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigunguCode(value: String): Self = StObject.set(x, "sigunguCode", value.asInstanceOf[js.Any])
+      inline def setSigunguCode(value: String): Self = StObject.set(x, "sigunguCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserLanguageType(value: K | E): Self = StObject.set(x, "userLanguageType", value.asInstanceOf[js.Any])
+      inline def setUserLanguageType(value: K | E): Self = StObject.set(x, "userLanguageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserSelectedType(value: R | J): Self = StObject.set(x, "userSelectedType", value.asInstanceOf[js.Any])
+      inline def setUserSelectedType(value: R | J): Self = StObject.set(x, "userSelectedType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZonecode(value: String): Self = StObject.set(x, "zonecode", value.asInstanceOf[js.Any])
+      inline def setZonecode(value: String): Self = StObject.set(x, "zonecode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,161 +250,110 @@ object mod {
   }
   object DaumPostcodeProps {
     
-    @scala.inline
-    def apply(onComplete: AddressData => Unit): DaumPostcodeProps = {
+    inline def apply(onComplete: AddressData => Unit): DaumPostcodeProps = {
       val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction1(onComplete))
       __obj.asInstanceOf[DaumPostcodeProps]
     }
     
-    @scala.inline
-    implicit class DaumPostcodePropsMutableBuilder[Self <: DaumPostcodeProps] (val x: Self) extends AnyVal {
+    extension [Self <: DaumPostcodeProps](x: Self) {
       
-      @scala.inline
-      def setAlwaysShowEngAddr(value: Boolean): Self = StObject.set(x, "alwaysShowEngAddr", value.asInstanceOf[js.Any])
+      inline def setAlwaysShowEngAddr(value: Boolean): Self = StObject.set(x, "alwaysShowEngAddr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysShowEngAddrUndefined: Self = StObject.set(x, "alwaysShowEngAddr", js.undefined)
+      inline def setAlwaysShowEngAddrUndefined: Self = StObject.set(x, "alwaysShowEngAddr", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+      inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+      inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
       
-      @scala.inline
-      def setAutoMapping(value: Boolean): Self = StObject.set(x, "autoMapping", value.asInstanceOf[js.Any])
+      inline def setAutoMapping(value: Boolean): Self = StObject.set(x, "autoMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoMappingUndefined: Self = StObject.set(x, "autoMapping", js.undefined)
+      inline def setAutoMappingUndefined: Self = StObject.set(x, "autoMapping", js.undefined)
       
-      @scala.inline
-      def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+      inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+      inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
       
-      @scala.inline
-      def setDefaultQuery(value: String): Self = StObject.set(x, "defaultQuery", value.asInstanceOf[js.Any])
+      inline def setDefaultQuery(value: String): Self = StObject.set(x, "defaultQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultQueryUndefined: Self = StObject.set(x, "defaultQuery", js.undefined)
+      inline def setDefaultQueryUndefined: Self = StObject.set(x, "defaultQuery", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: ReactElement): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: ReactElement): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setFocusContent(value: Boolean): Self = StObject.set(x, "focusContent", value.asInstanceOf[js.Any])
+      inline def setFocusContent(value: Boolean): Self = StObject.set(x, "focusContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusContentUndefined: Self = StObject.set(x, "focusContent", js.undefined)
+      inline def setFocusContentUndefined: Self = StObject.set(x, "focusContent", js.undefined)
       
-      @scala.inline
-      def setFocusInput(value: Boolean): Self = StObject.set(x, "focusInput", value.asInstanceOf[js.Any])
+      inline def setFocusInput(value: Boolean): Self = StObject.set(x, "focusInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusInputUndefined: Self = StObject.set(x, "focusInput", js.undefined)
+      inline def setFocusInputUndefined: Self = StObject.set(x, "focusInput", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHideEngBtn(value: Boolean): Self = StObject.set(x, "hideEngBtn", value.asInstanceOf[js.Any])
+      inline def setHideEngBtn(value: Boolean): Self = StObject.set(x, "hideEngBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideEngBtnUndefined: Self = StObject.set(x, "hideEngBtn", js.undefined)
+      inline def setHideEngBtnUndefined: Self = StObject.set(x, "hideEngBtn", js.undefined)
       
-      @scala.inline
-      def setHideMapBtn(value: Boolean): Self = StObject.set(x, "hideMapBtn", value.asInstanceOf[js.Any])
+      inline def setHideMapBtn(value: Boolean): Self = StObject.set(x, "hideMapBtn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideMapBtnUndefined: Self = StObject.set(x, "hideMapBtn", js.undefined)
+      inline def setHideMapBtnUndefined: Self = StObject.set(x, "hideMapBtn", js.undefined)
       
-      @scala.inline
-      def setMaxSuggestItems(value: Double): Self = StObject.set(x, "maxSuggestItems", value.asInstanceOf[js.Any])
+      inline def setMaxSuggestItems(value: Double): Self = StObject.set(x, "maxSuggestItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSuggestItemsUndefined: Self = StObject.set(x, "maxSuggestItems", js.undefined)
+      inline def setMaxSuggestItemsUndefined: Self = StObject.set(x, "maxSuggestItems", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: AddressData => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: AddressData => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSearch(value: /* data */ SearchData => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+      inline def setOnSearch(value: /* data */ SearchData => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
+      inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
-      @scala.inline
-      def setPleaseReadGuide(value: Double): Self = StObject.set(x, "pleaseReadGuide", value.asInstanceOf[js.Any])
+      inline def setPleaseReadGuide(value: Double): Self = StObject.set(x, "pleaseReadGuide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPleaseReadGuideTimer(value: Double): Self = StObject.set(x, "pleaseReadGuideTimer", value.asInstanceOf[js.Any])
+      inline def setPleaseReadGuideTimer(value: Double): Self = StObject.set(x, "pleaseReadGuideTimer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPleaseReadGuideTimerUndefined: Self = StObject.set(x, "pleaseReadGuideTimer", js.undefined)
+      inline def setPleaseReadGuideTimerUndefined: Self = StObject.set(x, "pleaseReadGuideTimer", js.undefined)
       
-      @scala.inline
-      def setPleaseReadGuideUndefined: Self = StObject.set(x, "pleaseReadGuide", js.undefined)
+      inline def setPleaseReadGuideUndefined: Self = StObject.set(x, "pleaseReadGuide", js.undefined)
       
-      @scala.inline
-      def setScriptUrl(value: String): Self = StObject.set(x, "scriptUrl", value.asInstanceOf[js.Any])
+      inline def setScriptUrl(value: String): Self = StObject.set(x, "scriptUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptUrlUndefined: Self = StObject.set(x, "scriptUrl", js.undefined)
+      inline def setScriptUrlUndefined: Self = StObject.set(x, "scriptUrl", js.undefined)
       
-      @scala.inline
-      def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
+      inline def setShorthand(value: Boolean): Self = StObject.set(x, "shorthand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShorthandUndefined: Self = StObject.set(x, "shorthand", js.undefined)
+      inline def setShorthandUndefined: Self = StObject.set(x, "shorthand", js.undefined)
       
-      @scala.inline
-      def setShowMoreHName(value: Boolean): Self = StObject.set(x, "showMoreHName", value.asInstanceOf[js.Any])
+      inline def setShowMoreHName(value: Boolean): Self = StObject.set(x, "showMoreHName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowMoreHNameUndefined: Self = StObject.set(x, "showMoreHName", js.undefined)
+      inline def setShowMoreHNameUndefined: Self = StObject.set(x, "showMoreHName", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSubmitMode(value: Boolean): Self = StObject.set(x, "submitMode", value.asInstanceOf[js.Any])
+      inline def setSubmitMode(value: Boolean): Self = StObject.set(x, "submitMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitModeUndefined: Self = StObject.set(x, "submitMode", js.undefined)
+      inline def setSubmitModeUndefined: Self = StObject.set(x, "submitMode", js.undefined)
       
-      @scala.inline
-      def setTheme(value: js.Object): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: js.Object): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setUseSuggest(value: Boolean): Self = StObject.set(x, "useSuggest", value.asInstanceOf[js.Any])
+      inline def setUseSuggest(value: Boolean): Self = StObject.set(x, "useSuggest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSuggestUndefined: Self = StObject.set(x, "useSuggest", js.undefined)
+      inline def setUseSuggestUndefined: Self = StObject.set(x, "useSuggest", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -447,20 +365,16 @@ object mod {
   }
   object SearchData {
     
-    @scala.inline
-    def apply(count: Double, q: String): SearchData = {
+    inline def apply(count: Double, q: String): SearchData = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any])
       __obj.asInstanceOf[SearchData]
     }
     
-    @scala.inline
-    implicit class SearchDataMutableBuilder[Self <: SearchData] (val x: Self) extends AnyVal {
+    extension [Self <: SearchData](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+      inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     }
   }
 }

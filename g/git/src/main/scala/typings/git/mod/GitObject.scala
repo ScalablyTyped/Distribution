@@ -14,6 +14,5 @@ object GitObject {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def from_raw(rawObject: js.Any, repository: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("from_raw")(rawObject.asInstanceOf[js.Any], repository.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def from_raw(rawObject: js.Any, repository: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("from_raw")(rawObject.asInstanceOf[js.Any], repository.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

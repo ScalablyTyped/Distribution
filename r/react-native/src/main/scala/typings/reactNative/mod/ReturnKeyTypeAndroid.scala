@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReturnKeyTypeAndroid extends StObject
 object ReturnKeyTypeAndroid {
   
-  @scala.inline
-  def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
+  inline def none: typings.reactNative.reactNativeStrings.none = "none".asInstanceOf[typings.reactNative.reactNativeStrings.none]
   
-  @scala.inline
-  def previous: typings.reactNative.reactNativeStrings.previous = "previous".asInstanceOf[typings.reactNative.reactNativeStrings.previous]
+  inline def previous: typings.reactNative.reactNativeStrings.previous = "previous".asInstanceOf[typings.reactNative.reactNativeStrings.previous]
 }

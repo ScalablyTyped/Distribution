@@ -10,17 +10,14 @@ trait BlockSubscriptionChannel extends StObject {
 }
 object BlockSubscriptionChannel {
   
-  @scala.inline
-  def apply(`type`: String): BlockSubscriptionChannel = {
+  inline def apply(`type`: String): BlockSubscriptionChannel = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockSubscriptionChannel]
   }
   
-  @scala.inline
-  implicit class BlockSubscriptionChannelMutableBuilder[Self <: BlockSubscriptionChannel] (val x: Self) extends AnyVal {
+  extension [Self <: BlockSubscriptionChannel](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

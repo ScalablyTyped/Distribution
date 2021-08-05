@@ -21,35 +21,26 @@ object anon {
   }
   object AccessToken {
     
-    @scala.inline
-    def apply(host: String): AccessToken = {
+    inline def apply(host: String): AccessToken = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessToken]
     }
     
-    @scala.inline
-    implicit class AccessTokenMutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
+    extension [Self <: AccessToken](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+      inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -63,26 +54,20 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: String, host: String): Code = {
+    inline def apply(code: String, host: String): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
     }
   }
   
@@ -92,20 +77,16 @@ object anon {
   }
   object Errors {
     
-    @scala.inline
-    def apply(errors: js.Array[BacklogErrorMessage]): Errors = {
+    inline def apply(errors: js.Array[BacklogErrorMessage]): Errors = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[Errors]
     }
     
-    @scala.inline
-    implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+    extension [Self <: Errors](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[BacklogErrorMessage]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[BacklogErrorMessage]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: BacklogErrorMessage*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: BacklogErrorMessage*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   
@@ -119,29 +100,22 @@ object anon {
   }
   object Host {
     
-    @scala.inline
-    def apply(host: String): Host = {
+    inline def apply(host: String): Host = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
       __obj.asInstanceOf[Host]
     }
     
-    @scala.inline
-    implicit class HostMutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
+    extension [Self <: Host](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
+      inline def setRedirectUri(value: String): Self = StObject.set(x, "redirectUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
+      inline def setRedirectUriUndefined: Self = StObject.set(x, "redirectUri", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -155,26 +129,20 @@ object anon {
   }
   object Method {
     
-    @scala.inline
-    def apply(method: String, path: String): Method = {
+    inline def apply(method: String, path: String): Method = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Method]
     }
     
-    @scala.inline
-    implicit class MethodMutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
+    extension [Self <: Method](x: Self) {
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: Params | FormData): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Params | FormData): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,20 +154,16 @@ object anon {
   }
   object RefreshToken {
     
-    @scala.inline
-    def apply(host: String, refreshToken: String): RefreshToken = {
+    inline def apply(host: String, refreshToken: String): RefreshToken = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefreshToken]
     }
     
-    @scala.inline
-    implicit class RefreshTokenMutableBuilder[Self <: RefreshToken] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshToken](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+      inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     }
   }
 }

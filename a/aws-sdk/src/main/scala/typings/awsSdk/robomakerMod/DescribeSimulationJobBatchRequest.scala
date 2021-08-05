@@ -13,16 +13,13 @@ trait DescribeSimulationJobBatchRequest extends StObject {
 }
 object DescribeSimulationJobBatchRequest {
   
-  @scala.inline
-  def apply(batch: Arn): DescribeSimulationJobBatchRequest = {
+  inline def apply(batch: Arn): DescribeSimulationJobBatchRequest = {
     val __obj = js.Dynamic.literal(batch = batch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSimulationJobBatchRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSimulationJobBatchRequestMutableBuilder[Self <: DescribeSimulationJobBatchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSimulationJobBatchRequest](x: Self) {
     
-    @scala.inline
-    def setBatch(value: Arn): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+    inline def setBatch(value: Arn): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
   }
 }

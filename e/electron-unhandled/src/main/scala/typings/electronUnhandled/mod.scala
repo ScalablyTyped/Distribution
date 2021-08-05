@@ -11,10 +11,8 @@ object mod {
   	Catch unhandled errors and promise rejections in your [Electron](https://electronjs.org) app.
   	You probably want to call this both in the main process and any renderer processes to catch all possible errors.
   	*/
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
-  @scala.inline
-  def apply(options: UnhandledOptions): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(options: UnhandledOptions): Unit = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("electron-unhandled", JSImport.Namespace)
   @js.native
@@ -25,10 +23,8 @@ object mod {
   	It will use the same options specified in the `unhandled()` call or the defaults.
   	@param error - Error to log.
   	*/
-  @scala.inline
-  def logError(error: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def logError(error: Error, options: LogErrorOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def logError(error: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def logError(error: Error, options: LogErrorOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(error.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait LogErrorOptions extends StObject {
     
@@ -40,20 +36,16 @@ object mod {
   }
   object LogErrorOptions {
     
-    @scala.inline
-    def apply(): LogErrorOptions = {
+    inline def apply(): LogErrorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogErrorOptions]
     }
     
-    @scala.inline
-    implicit class LogErrorOptionsMutableBuilder[Self <: LogErrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LogErrorOptions](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -95,32 +87,24 @@ object mod {
   }
   object UnhandledOptions {
     
-    @scala.inline
-    def apply(): UnhandledOptions = {
+    inline def apply(): UnhandledOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnhandledOptions]
     }
     
-    @scala.inline
-    implicit class UnhandledOptionsMutableBuilder[Self <: UnhandledOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UnhandledOptions](x: Self) {
       
-      @scala.inline
-      def setLogger(value: /* error */ Error => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
+      inline def setLogger(value: /* error */ Error => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setReportButton(value: /* error */ Error => Unit): Self = StObject.set(x, "reportButton", js.Any.fromFunction1(value))
+      inline def setReportButton(value: /* error */ Error => Unit): Self = StObject.set(x, "reportButton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReportButtonUndefined: Self = StObject.set(x, "reportButton", js.undefined)
+      inline def setReportButtonUndefined: Self = StObject.set(x, "reportButton", js.undefined)
       
-      @scala.inline
-      def setShowDialog(value: Boolean): Self = StObject.set(x, "showDialog", value.asInstanceOf[js.Any])
+      inline def setShowDialog(value: Boolean): Self = StObject.set(x, "showDialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDialogUndefined: Self = StObject.set(x, "showDialog", js.undefined)
+      inline def setShowDialogUndefined: Self = StObject.set(x, "showDialog", js.undefined)
     }
   }
 }

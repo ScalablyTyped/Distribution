@@ -15,19 +15,15 @@ trait PlaceGeometry extends StObject {
 }
 object PlaceGeometry {
   
-  @scala.inline
-  def apply(location: LatLng, viewport: LatLngBounds): PlaceGeometry = {
+  inline def apply(location: LatLng, viewport: LatLngBounds): PlaceGeometry = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceGeometry]
   }
   
-  @scala.inline
-  implicit class PlaceGeometryMutableBuilder[Self <: PlaceGeometry] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceGeometry](x: Self) {
     
-    @scala.inline
-    def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewport(value: LatLngBounds): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: LatLngBounds): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
   }
 }

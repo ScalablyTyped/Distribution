@@ -18,6 +18,5 @@ object layoutChangeMod {
   @js.native
   val default: FC[ChangeSetting] = js.native
   
-  @scala.inline
-  def renderLayoutSettingItem(item: SettingItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderLayoutSettingItem")(item.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def renderLayoutSettingItem(item: SettingItemProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("renderLayoutSettingItem")(item.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

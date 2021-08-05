@@ -23,40 +23,29 @@ trait ProtectiveEquipmentSummary extends StObject {
 }
 object ProtectiveEquipmentSummary {
   
-  @scala.inline
-  def apply(): ProtectiveEquipmentSummary = {
+  inline def apply(): ProtectiveEquipmentSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProtectiveEquipmentSummary]
   }
   
-  @scala.inline
-  implicit class ProtectiveEquipmentSummaryMutableBuilder[Self <: ProtectiveEquipmentSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectiveEquipmentSummary](x: Self) {
     
-    @scala.inline
-    def setPersonsIndeterminate(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsIndeterminate", value.asInstanceOf[js.Any])
+    inline def setPersonsIndeterminate(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsIndeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonsIndeterminateUndefined: Self = StObject.set(x, "PersonsIndeterminate", js.undefined)
+    inline def setPersonsIndeterminateUndefined: Self = StObject.set(x, "PersonsIndeterminate", js.undefined)
     
-    @scala.inline
-    def setPersonsIndeterminateVarargs(value: UInteger*): Self = StObject.set(x, "PersonsIndeterminate", js.Array(value :_*))
+    inline def setPersonsIndeterminateVarargs(value: UInteger*): Self = StObject.set(x, "PersonsIndeterminate", js.Array(value :_*))
     
-    @scala.inline
-    def setPersonsWithRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsWithRequiredEquipment", value.asInstanceOf[js.Any])
+    inline def setPersonsWithRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsWithRequiredEquipment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonsWithRequiredEquipmentUndefined: Self = StObject.set(x, "PersonsWithRequiredEquipment", js.undefined)
+    inline def setPersonsWithRequiredEquipmentUndefined: Self = StObject.set(x, "PersonsWithRequiredEquipment", js.undefined)
     
-    @scala.inline
-    def setPersonsWithRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithRequiredEquipment", js.Array(value :_*))
+    inline def setPersonsWithRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithRequiredEquipment", js.Array(value :_*))
     
-    @scala.inline
-    def setPersonsWithoutRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsWithoutRequiredEquipment", value.asInstanceOf[js.Any])
+    inline def setPersonsWithoutRequiredEquipment(value: ProtectiveEquipmentPersonIds): Self = StObject.set(x, "PersonsWithoutRequiredEquipment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonsWithoutRequiredEquipmentUndefined: Self = StObject.set(x, "PersonsWithoutRequiredEquipment", js.undefined)
+    inline def setPersonsWithoutRequiredEquipmentUndefined: Self = StObject.set(x, "PersonsWithoutRequiredEquipment", js.undefined)
     
-    @scala.inline
-    def setPersonsWithoutRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithoutRequiredEquipment", js.Array(value :_*))
+    inline def setPersonsWithoutRequiredEquipmentVarargs(value: UInteger*): Self = StObject.set(x, "PersonsWithoutRequiredEquipment", js.Array(value :_*))
   }
 }

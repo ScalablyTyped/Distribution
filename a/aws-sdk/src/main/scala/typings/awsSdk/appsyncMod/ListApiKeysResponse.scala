@@ -18,28 +18,21 @@ trait ListApiKeysResponse extends StObject {
 }
 object ListApiKeysResponse {
   
-  @scala.inline
-  def apply(): ListApiKeysResponse = {
+  inline def apply(): ListApiKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListApiKeysResponse]
   }
   
-  @scala.inline
-  implicit class ListApiKeysResponseMutableBuilder[Self <: ListApiKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListApiKeysResponse](x: Self) {
     
-    @scala.inline
-    def setApiKeys(value: ApiKeys): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
+    inline def setApiKeys(value: ApiKeys): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiKeysUndefined: Self = StObject.set(x, "apiKeys", js.undefined)
+    inline def setApiKeysUndefined: Self = StObject.set(x, "apiKeys", js.undefined)
     
-    @scala.inline
-    def setApiKeysVarargs(value: ApiKey*): Self = StObject.set(x, "apiKeys", js.Array(value :_*))
+    inline def setApiKeysVarargs(value: ApiKey*): Self = StObject.set(x, "apiKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

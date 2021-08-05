@@ -13,18 +13,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attachToSession(options: AttachSessionOptions): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def attachToSession(options: AttachSessionOptions, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def attachToSession(
+  inline def attachToSession(options: AttachSessionOptions): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+  inline def attachToSession(options: AttachSessionOptions, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def attachToSession(
     options: AttachSessionOptions,
     modifier: js.Function1[/* repeated */ js.Any, js.Any],
     proto: js.Object
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def attachToSession(
+  inline def attachToSession(
     options: AttachSessionOptions,
     modifier: js.Function1[/* repeated */ js.Any, js.Any],
     proto: js.Object,
@@ -34,8 +30,7 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def attachToSession(
+  inline def attachToSession(
     options: AttachSessionOptions,
     modifier: js.Function1[/* repeated */ js.Any, js.Any],
     proto: Unit,
@@ -45,10 +40,8 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def attachToSession(options: AttachSessionOptions, modifier: Unit, proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def attachToSession(
+  inline def attachToSession(options: AttachSessionOptions, modifier: Unit, proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def attachToSession(
     options: AttachSessionOptions,
     modifier: Unit,
     proto: js.Object,
@@ -58,8 +51,7 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def attachToSession(
+  inline def attachToSession(
     options: AttachSessionOptions,
     modifier: Unit,
     proto: Unit,
@@ -70,14 +62,10 @@ object mod {
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("attachToSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
   
-  @scala.inline
-  def newSession(): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")().asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any], proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(
+  inline def newSession(): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")().asInstanceOf[js.Promise[Client]]
+  inline def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def newSession(options: Unit, modifier: js.Function1[/* repeated */ js.Any, js.Any], proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def newSession(
     options: Unit,
     modifier: js.Function1[/* repeated */ js.Any, js.Any],
     proto: js.Object,
@@ -87,8 +75,7 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(
+  inline def newSession(
     options: Unit,
     modifier: js.Function1[/* repeated */ js.Any, js.Any],
     proto: Unit,
@@ -98,10 +85,8 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(options: Unit, modifier: Unit, proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(
+  inline def newSession(options: Unit, modifier: Unit, proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def newSession(
     options: Unit,
     modifier: Unit,
     proto: js.Object,
@@ -111,8 +96,7 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(
+  inline def newSession(
     options: Unit,
     modifier: Unit,
     proto: Unit,
@@ -122,14 +106,10 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(options: Options): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(options: Options, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(options: Options, modifier: js.Function1[/* repeated */ js.Any, js.Any], proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(
+  inline def newSession(options: Options): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+  inline def newSession(options: Options, modifier: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def newSession(options: Options, modifier: js.Function1[/* repeated */ js.Any, js.Any], proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def newSession(
     options: Options,
     modifier: js.Function1[/* repeated */ js.Any, js.Any],
     proto: js.Object,
@@ -139,8 +119,7 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(
+  inline def newSession(
     options: Options,
     modifier: js.Function1[/* repeated */ js.Any, js.Any],
     proto: Unit,
@@ -150,10 +129,8 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(options: Options, modifier: Unit, proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(
+  inline def newSession(options: Options, modifier: Unit, proto: js.Object): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
+  inline def newSession(
     options: Options,
     modifier: Unit,
     proto: js.Object,
@@ -163,8 +140,7 @@ object mod {
       js.Any
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
-  @scala.inline
-  def newSession(
+  inline def newSession(
     options: Options,
     modifier: Unit,
     proto: Unit,
@@ -175,6 +151,5 @@ object mod {
     ]
   ): js.Promise[Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("newSession")(options.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any], proto.asInstanceOf[js.Any], commandWrapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Client]]
   
-  @scala.inline
-  def reloadSession(instance: Client): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSession")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
+  inline def reloadSession(instance: Client): js.Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSession")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Client]]
 }

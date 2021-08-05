@@ -12,22 +12,17 @@ trait CatAliasesParams
 }
 object CatAliasesParams {
   
-  @scala.inline
-  def apply(format: String): CatAliasesParams = {
+  inline def apply(format: String): CatAliasesParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatAliasesParams]
   }
   
-  @scala.inline
-  implicit class CatAliasesParamsMutableBuilder[Self <: CatAliasesParams] (val x: Self) extends AnyVal {
+  extension [Self <: CatAliasesParams](x: Self) {
     
-    @scala.inline
-    def setName(value: NameList): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameList): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

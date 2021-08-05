@@ -25,20 +25,16 @@ object componentsAntdIconMod extends Shortcut {
   }
   object AntdIconProps {
     
-    @scala.inline
-    def apply(): AntdIconProps = {
+    inline def apply(): AntdIconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AntdIconProps]
     }
     
-    @scala.inline
-    implicit class AntdIconPropsMutableBuilder[Self <: AntdIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: AntdIconProps](x: Self) {
       
-      @scala.inline
-      def setTwoToneColor(value: TwoToneColor): Self = StObject.set(x, "twoToneColor", value.asInstanceOf[js.Any])
+      inline def setTwoToneColor(value: TwoToneColor): Self = StObject.set(x, "twoToneColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwoToneColorUndefined: Self = StObject.set(x, "twoToneColor", js.undefined)
+      inline def setTwoToneColorUndefined: Self = StObject.set(x, "twoToneColor", js.undefined)
     }
   }
   
@@ -60,17 +56,14 @@ object componentsAntdIconMod extends Shortcut {
   }
   object IconComponentProps {
     
-    @scala.inline
-    def apply(icon: IconDefinition): IconComponentProps = {
+    inline def apply(icon: IconDefinition): IconComponentProps = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconComponentProps]
     }
     
-    @scala.inline
-    implicit class IconComponentPropsMutableBuilder[Self <: IconComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconComponentProps](x: Self) {
       
-      @scala.inline
-      def setIcon(value: IconDefinition): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconDefinition): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }
   }
   

@@ -21,43 +21,31 @@ trait AscendingText extends StObject {
 }
 object AscendingText {
   
-  @scala.inline
-  def apply(): AscendingText = {
+  inline def apply(): AscendingText = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AscendingText]
   }
   
-  @scala.inline
-  implicit class AscendingTextMutableBuilder[Self <: AscendingText] (val x: Self) extends AnyVal {
+  extension [Self <: AscendingText](x: Self) {
     
-    @scala.inline
-    def setAscendingText(value: String): Self = StObject.set(x, "ascendingText", value.asInstanceOf[js.Any])
+    inline def setAscendingText(value: String): Self = StObject.set(x, "ascendingText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAscendingTextUndefined: Self = StObject.set(x, "ascendingText", js.undefined)
+    inline def setAscendingTextUndefined: Self = StObject.set(x, "ascendingText", js.undefined)
     
-    @scala.inline
-    def setClearText(value: String): Self = StObject.set(x, "clearText", value.asInstanceOf[js.Any])
+    inline def setClearText(value: String): Self = StObject.set(x, "clearText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearTextUndefined: Self = StObject.set(x, "clearText", js.undefined)
+    inline def setClearTextUndefined: Self = StObject.set(x, "clearText", js.undefined)
     
-    @scala.inline
-    def setDescendingText(value: String): Self = StObject.set(x, "descendingText", value.asInstanceOf[js.Any])
+    inline def setDescendingText(value: String): Self = StObject.set(x, "descendingText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescendingTextUndefined: Self = StObject.set(x, "descendingText", js.undefined)
+    inline def setDescendingTextUndefined: Self = StObject.set(x, "descendingText", js.undefined)
     
-    @scala.inline
-    def setMode(value: multiple | none | single_): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: multiple | none | single_): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setShowSortIndexes(value: Boolean): Self = StObject.set(x, "showSortIndexes", value.asInstanceOf[js.Any])
+    inline def setShowSortIndexes(value: Boolean): Self = StObject.set(x, "showSortIndexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSortIndexesUndefined: Self = StObject.set(x, "showSortIndexes", js.undefined)
+    inline def setShowSortIndexesUndefined: Self = StObject.set(x, "showSortIndexes", js.undefined)
   }
 }

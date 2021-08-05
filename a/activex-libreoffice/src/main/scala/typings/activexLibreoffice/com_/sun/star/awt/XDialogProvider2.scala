@@ -35,8 +35,7 @@ trait XDialogProvider2
 }
 object XDialogProvider2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createDialog: String => XDialog,
     createDialogWithArguments: (String, SeqEquiv[NamedValue]) => XDialog,
@@ -48,13 +47,10 @@ object XDialogProvider2 {
     __obj.asInstanceOf[XDialogProvider2]
   }
   
-  @scala.inline
-  implicit class XDialogProvider2MutableBuilder[Self <: XDialogProvider2] (val x: Self) extends AnyVal {
+  extension [Self <: XDialogProvider2](x: Self) {
     
-    @scala.inline
-    def setCreateDialogWithArguments(value: (String, SeqEquiv[NamedValue]) => XDialog): Self = StObject.set(x, "createDialogWithArguments", js.Any.fromFunction2(value))
+    inline def setCreateDialogWithArguments(value: (String, SeqEquiv[NamedValue]) => XDialog): Self = StObject.set(x, "createDialogWithArguments", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateDialogWithHandler(value: (String, XInterface) => XDialog): Self = StObject.set(x, "createDialogWithHandler", js.Any.fromFunction2(value))
+    inline def setCreateDialogWithHandler(value: (String, XInterface) => XDialog): Self = StObject.set(x, "createDialogWithHandler", js.Any.fromFunction2(value))
   }
 }

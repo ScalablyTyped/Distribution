@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def removeSensitiveLogs(
+  inline def removeSensitiveLogs(
     obj: js.Any,
     member: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Member */ js.Any
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeSensitiveLogs")(obj.asInstanceOf[js.Any], member.asInstanceOf[js.Any])).asInstanceOf[String]

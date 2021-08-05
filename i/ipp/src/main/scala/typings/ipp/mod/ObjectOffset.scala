@@ -14,31 +14,23 @@ trait ObjectOffset extends StObject {
 }
 object ObjectOffset {
   
-  @scala.inline
-  def apply(): ObjectOffset = {
+  inline def apply(): ObjectOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectOffset]
   }
   
-  @scala.inline
-  implicit class ObjectOffsetMutableBuilder[Self <: ObjectOffset] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectOffset](x: Self) {
     
-    @scala.inline
-    def `setX-offset`(value: Double): Self = StObject.set(x, "x-offset", value.asInstanceOf[js.Any])
+    inline def `setX-offset`(value: Double): Self = StObject.set(x, "x-offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-offsetUndefined`: Self = StObject.set(x, "x-offset", js.undefined)
+    inline def `setX-offsetUndefined`: Self = StObject.set(x, "x-offset", js.undefined)
     
-    @scala.inline
-    def `setY-offset`(value: Double): Self = StObject.set(x, "y-offset", value.asInstanceOf[js.Any])
+    inline def `setY-offset`(value: Double): Self = StObject.set(x, "y-offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setY-offsetUndefined`: Self = StObject.set(x, "y-offset", js.undefined)
+    inline def `setY-offsetUndefined`: Self = StObject.set(x, "y-offset", js.undefined)
     
-    @scala.inline
-    def `setZ-offset`(value: Double): Self = StObject.set(x, "z-offset", value.asInstanceOf[js.Any])
+    inline def `setZ-offset`(value: Double): Self = StObject.set(x, "z-offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZ-offsetUndefined`: Self = StObject.set(x, "z-offset", js.undefined)
+    inline def `setZ-offsetUndefined`: Self = StObject.set(x, "z-offset", js.undefined)
   }
 }

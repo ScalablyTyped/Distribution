@@ -60,68 +60,49 @@ trait GoogleCloudMlV1Model extends StObject {
 }
 object GoogleCloudMlV1Model {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1Model = {
+  inline def apply(): GoogleCloudMlV1Model = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1Model]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ModelMutableBuilder[Self <: GoogleCloudMlV1Model] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1Model](x: Self) {
     
-    @scala.inline
-    def setDefaultVersion(value: GoogleCloudMlV1Version): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultVersion(value: GoogleCloudMlV1Version): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
+    inline def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ GoogleCloudMlV1__Model & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOnlinePredictionConsoleLogging(value: Boolean): Self = StObject.set(x, "onlinePredictionConsoleLogging", value.asInstanceOf[js.Any])
+    inline def setOnlinePredictionConsoleLogging(value: Boolean): Self = StObject.set(x, "onlinePredictionConsoleLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlinePredictionConsoleLoggingUndefined: Self = StObject.set(x, "onlinePredictionConsoleLogging", js.undefined)
+    inline def setOnlinePredictionConsoleLoggingUndefined: Self = StObject.set(x, "onlinePredictionConsoleLogging", js.undefined)
     
-    @scala.inline
-    def setOnlinePredictionLogging(value: Boolean): Self = StObject.set(x, "onlinePredictionLogging", value.asInstanceOf[js.Any])
+    inline def setOnlinePredictionLogging(value: Boolean): Self = StObject.set(x, "onlinePredictionLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlinePredictionLoggingUndefined: Self = StObject.set(x, "onlinePredictionLogging", js.undefined)
+    inline def setOnlinePredictionLoggingUndefined: Self = StObject.set(x, "onlinePredictionLogging", js.undefined)
     
-    @scala.inline
-    def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
+    inline def setRegionsVarargs(value: String*): Self = StObject.set(x, "regions", js.Array(value :_*))
   }
 }

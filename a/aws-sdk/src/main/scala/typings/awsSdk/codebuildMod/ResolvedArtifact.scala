@@ -23,31 +23,23 @@ trait ResolvedArtifact extends StObject {
 }
 object ResolvedArtifact {
   
-  @scala.inline
-  def apply(): ResolvedArtifact = {
+  inline def apply(): ResolvedArtifact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolvedArtifact]
   }
   
-  @scala.inline
-  implicit class ResolvedArtifactMutableBuilder[Self <: ResolvedArtifact] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedArtifact](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setType(value: ArtifactsType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArtifactsType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

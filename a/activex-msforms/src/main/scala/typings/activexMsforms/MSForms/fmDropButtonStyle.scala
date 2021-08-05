@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmDropButtonStyle extends StObject
 object fmDropButtonStyle {
   
-  @scala.inline
-  def fmDropButtonStyleArrow: `1` = 1.asInstanceOf[`1`]
+  inline def fmDropButtonStyleArrow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmDropButtonStyleEllipsis: `2` = 2.asInstanceOf[`2`]
+  inline def fmDropButtonStyleEllipsis: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmDropButtonStylePlain: `0` = 0.asInstanceOf[`0`]
+  inline def fmDropButtonStylePlain: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmDropButtonStyleReduce: `3` = 3.asInstanceOf[`3`]
+  inline def fmDropButtonStyleReduce: `3` = 3.asInstanceOf[`3`]
 }

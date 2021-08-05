@@ -21,29 +21,25 @@ trait ManagementOperation
      with UpdateOperation
 object ManagementOperation {
   
-  @scala.inline
-  def ClearDropOperation(graph: GraphReference, silent: Boolean, `type`: clear | drop): typings.sparqljs.mod.ClearDropOperation = {
+  inline def ClearDropOperation(graph: GraphReference, silent: Boolean, `type`: clear | drop): typings.sparqljs.mod.ClearDropOperation = {
     val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sparqljs.mod.ClearDropOperation]
   }
   
-  @scala.inline
-  def CopyMoveAddOperation(destination: GraphOrDefault, silent: Boolean, source: GraphOrDefault, `type`: copy | move | add): typings.sparqljs.mod.CopyMoveAddOperation = {
+  inline def CopyMoveAddOperation(destination: GraphOrDefault, silent: Boolean, source: GraphOrDefault, `type`: copy | move | add): typings.sparqljs.mod.CopyMoveAddOperation = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.sparqljs.mod.CopyMoveAddOperation]
   }
   
-  @scala.inline
-  def CreateOperation(graph: IriTerm, silent: Boolean): typings.sparqljs.mod.CreateOperation = {
+  inline def CreateOperation(graph: IriTerm, silent: Boolean): typings.sparqljs.mod.CreateOperation = {
     val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("create")
     __obj.asInstanceOf[typings.sparqljs.mod.CreateOperation]
   }
   
-  @scala.inline
-  def LoadOperation(destination: IriTerm | `false`, silent: Boolean, source: IriTerm): typings.sparqljs.mod.LoadOperation = {
+  inline def LoadOperation(destination: IriTerm | `false`, silent: Boolean, source: IriTerm): typings.sparqljs.mod.LoadOperation = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("load")
     __obj.asInstanceOf[typings.sparqljs.mod.LoadOperation]

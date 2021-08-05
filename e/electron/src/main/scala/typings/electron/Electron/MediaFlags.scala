@@ -48,8 +48,7 @@ trait MediaFlags extends StObject {
 }
 object MediaFlags {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canRotate: Boolean,
     canToggleControls: Boolean,
     hasAudio: Boolean,
@@ -63,31 +62,22 @@ object MediaFlags {
     __obj.asInstanceOf[MediaFlags]
   }
   
-  @scala.inline
-  implicit class MediaFlagsMutableBuilder[Self <: MediaFlags] (val x: Self) extends AnyVal {
+  extension [Self <: MediaFlags](x: Self) {
     
-    @scala.inline
-    def setCanRotate(value: Boolean): Self = StObject.set(x, "canRotate", value.asInstanceOf[js.Any])
+    inline def setCanRotate(value: Boolean): Self = StObject.set(x, "canRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanToggleControls(value: Boolean): Self = StObject.set(x, "canToggleControls", value.asInstanceOf[js.Any])
+    inline def setCanToggleControls(value: Boolean): Self = StObject.set(x, "canToggleControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAudio(value: Boolean): Self = StObject.set(x, "hasAudio", value.asInstanceOf[js.Any])
+    inline def setHasAudio(value: Boolean): Self = StObject.set(x, "hasAudio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInError(value: Boolean): Self = StObject.set(x, "inError", value.asInstanceOf[js.Any])
+    inline def setInError(value: Boolean): Self = StObject.set(x, "inError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsControlsVisible(value: Boolean): Self = StObject.set(x, "isControlsVisible", value.asInstanceOf[js.Any])
+    inline def setIsControlsVisible(value: Boolean): Self = StObject.set(x, "isControlsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLooping(value: Boolean): Self = StObject.set(x, "isLooping", value.asInstanceOf[js.Any])
+    inline def setIsLooping(value: Boolean): Self = StObject.set(x, "isLooping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMuted(value: Boolean): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
+    inline def setIsMuted(value: Boolean): Self = StObject.set(x, "isMuted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
+    inline def setIsPaused(value: Boolean): Self = StObject.set(x, "isPaused", value.asInstanceOf[js.Any])
   }
 }

@@ -19,47 +19,29 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def close(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def close(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def closeAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")().asInstanceOf[Unit]
+    inline def closeAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeAll")().asInstanceOf[Unit]
     
-    @scala.inline
-    def error(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Double]
-    @scala.inline
-    def error(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def error(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def error(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def error(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Double]
+    inline def error(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def error(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def error(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def info(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("info")().asInstanceOf[Double]
-    @scala.inline
-    def info(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def info(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def info(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def info(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("info")().asInstanceOf[Double]
+    inline def info(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def info(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def info(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def success(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("success")().asInstanceOf[Double]
-    @scala.inline
-    def success(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def success(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def success(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def success(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("success")().asInstanceOf[Double]
+    inline def success(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def success(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def success(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def warning(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")().asInstanceOf[Double]
-    @scala.inline
-    def warning(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def warning(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def warning(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def warning(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")().asInstanceOf[Double]
+    inline def warning(msg: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")(msg.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def warning(msg: String, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def warning(msg: Unit, data: SAlertConfigProps): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(msg.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   object SAlert {
@@ -76,38 +58,28 @@ object mod {
     }
     object SAlertBeepProps {
       
-      @scala.inline
-      def apply(): SAlertBeepProps = {
+      inline def apply(): SAlertBeepProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SAlertBeepProps]
       }
       
-      @scala.inline
-      implicit class SAlertBeepPropsMutableBuilder[Self <: SAlertBeepProps] (val x: Self) extends AnyVal {
+      extension [Self <: SAlertBeepProps](x: Self) {
         
-        @scala.inline
-        def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+        inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
         
-        @scala.inline
-        def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+        inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
         
-        @scala.inline
-        def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+        inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+        inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
         
-        @scala.inline
-        def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+        inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+        inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
       }
     }
     
@@ -137,80 +109,56 @@ object mod {
     }
     object SAlertConfigProps {
       
-      @scala.inline
-      def apply(): SAlertConfigProps = {
+      inline def apply(): SAlertConfigProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SAlertConfigProps]
       }
       
-      @scala.inline
-      implicit class SAlertConfigPropsMutableBuilder[Self <: SAlertConfigProps] (val x: Self) extends AnyVal {
+      extension [Self <: SAlertConfigProps](x: Self) {
         
-        @scala.inline
-        def setBeep(value: String | Boolean | SAlertBeepProps): Self = StObject.set(x, "beep", value.asInstanceOf[js.Any])
+        inline def setBeep(value: String | Boolean | SAlertBeepProps): Self = StObject.set(x, "beep", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBeepUndefined: Self = StObject.set(x, "beep", js.undefined)
+        inline def setBeepUndefined: Self = StObject.set(x, "beep", js.undefined)
         
-        @scala.inline
-        def setContentTemplate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
+        inline def setContentTemplate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
+        inline def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
         
-        @scala.inline
-        def setCustomFields(value: js.Object): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+        inline def setCustomFields(value: js.Object): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+        inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
         
-        @scala.inline
-        def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+        inline def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+        inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
         
-        @scala.inline
-        def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+        inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+        inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
         
-        @scala.inline
-        def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+        inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+        inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
         
-        @scala.inline
-        def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
+        inline def setOnShow(value: () => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+        inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
         
-        @scala.inline
-        def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setStack(value: Boolean | SAlertStackProps): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+        inline def setStack(value: Boolean | SAlertStackProps): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+        inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
         
-        @scala.inline
-        def setTimeout(value: String | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: String | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       }
     }
     
@@ -222,20 +170,16 @@ object mod {
     }
     object SAlertProps {
       
-      @scala.inline
-      def apply(): SAlertProps = {
+      inline def apply(): SAlertProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SAlertProps]
       }
       
-      @scala.inline
-      implicit class SAlertPropsMutableBuilder[Self <: SAlertProps] (val x: Self) extends AnyVal {
+      extension [Self <: SAlertProps](x: Self) {
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+        inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       }
     }
     
@@ -247,26 +191,20 @@ object mod {
     }
     object SAlertStackProps {
       
-      @scala.inline
-      def apply(): SAlertStackProps = {
+      inline def apply(): SAlertStackProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SAlertStackProps]
       }
       
-      @scala.inline
-      implicit class SAlertStackPropsMutableBuilder[Self <: SAlertStackProps] (val x: Self) extends AnyVal {
+      extension [Self <: SAlertStackProps](x: Self) {
         
-        @scala.inline
-        def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+        inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+        inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         
-        @scala.inline
-        def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+        inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+        inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
       }
     }
   }

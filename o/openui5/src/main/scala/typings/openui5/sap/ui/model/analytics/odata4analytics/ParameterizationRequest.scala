@@ -39,8 +39,7 @@ trait ParameterizationRequest extends StObject {
 }
 object ParameterizationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getParameterization: () => Parameterization,
     getURIToParameterizationEntitySet: String => Unit,
     getURIToParameterizationEntry: String => Unit,
@@ -50,19 +49,14 @@ object ParameterizationRequest {
     __obj.asInstanceOf[ParameterizationRequest]
   }
   
-  @scala.inline
-  implicit class ParameterizationRequestMutableBuilder[Self <: ParameterizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterizationRequest](x: Self) {
     
-    @scala.inline
-    def setGetParameterization(value: () => Parameterization): Self = StObject.set(x, "getParameterization", js.Any.fromFunction0(value))
+    inline def setGetParameterization(value: () => Parameterization): Self = StObject.set(x, "getParameterization", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURIToParameterizationEntitySet(value: String => Unit): Self = StObject.set(x, "getURIToParameterizationEntitySet", js.Any.fromFunction1(value))
+    inline def setGetURIToParameterizationEntitySet(value: String => Unit): Self = StObject.set(x, "getURIToParameterizationEntitySet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetURIToParameterizationEntry(value: String => Unit): Self = StObject.set(x, "getURIToParameterizationEntry", js.Any.fromFunction1(value))
+    inline def setGetURIToParameterizationEntry(value: String => Unit): Self = StObject.set(x, "getURIToParameterizationEntry", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParameterValue(value: (String, String, String) => Unit): Self = StObject.set(x, "setParameterValue", js.Any.fromFunction3(value))
+    inline def setSetParameterValue(value: (String, String, String) => Unit): Self = StObject.set(x, "setParameterValue", js.Any.fromFunction3(value))
   }
 }

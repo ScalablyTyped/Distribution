@@ -11,19 +11,15 @@ trait PartialClassNameMapPopove extends StObject {
 }
 object PartialClassNameMapPopove {
   
-  @scala.inline
-  def apply(): PartialClassNameMapPopove = {
+  inline def apply(): PartialClassNameMapPopove = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapPopove]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapPopoveMutableBuilder[Self <: PartialClassNameMapPopove] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapPopove](x: Self) {
     
-    @scala.inline
-    def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
+    inline def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
+    inline def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
   }
 }

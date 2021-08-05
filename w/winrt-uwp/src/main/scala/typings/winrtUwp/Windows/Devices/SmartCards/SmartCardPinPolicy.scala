@@ -27,8 +27,7 @@ trait SmartCardPinPolicy extends StObject {
 }
 object SmartCardPinPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     digits: SmartCardPinCharacterPolicyOption,
     lowercaseLetters: SmartCardPinCharacterPolicyOption,
     maxLength: Double,
@@ -40,25 +39,18 @@ object SmartCardPinPolicy {
     __obj.asInstanceOf[SmartCardPinPolicy]
   }
   
-  @scala.inline
-  implicit class SmartCardPinPolicyMutableBuilder[Self <: SmartCardPinPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SmartCardPinPolicy](x: Self) {
     
-    @scala.inline
-    def setDigits(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+    inline def setDigits(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowercaseLetters(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "lowercaseLetters", value.asInstanceOf[js.Any])
+    inline def setLowercaseLetters(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "lowercaseLetters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecialCharacters(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "specialCharacters", value.asInstanceOf[js.Any])
+    inline def setSpecialCharacters(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "specialCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUppercaseLetters(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "uppercaseLetters", value.asInstanceOf[js.Any])
+    inline def setUppercaseLetters(value: SmartCardPinCharacterPolicyOption): Self = StObject.set(x, "uppercaseLetters", value.asInstanceOf[js.Any])
   }
 }

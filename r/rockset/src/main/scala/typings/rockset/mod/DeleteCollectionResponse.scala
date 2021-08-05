@@ -11,19 +11,15 @@ trait DeleteCollectionResponse extends StObject {
 }
 object DeleteCollectionResponse {
   
-  @scala.inline
-  def apply(): DeleteCollectionResponse = {
+  inline def apply(): DeleteCollectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteCollectionResponse]
   }
   
-  @scala.inline
-  implicit class DeleteCollectionResponseMutableBuilder[Self <: DeleteCollectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCollectionResponse](x: Self) {
     
-    @scala.inline
-    def setData(value: Collection): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Collection): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

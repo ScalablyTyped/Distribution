@@ -11,8 +11,7 @@ object mod {
     * Get PID from a port
     * @param port Port to lookup.
     */
-  @scala.inline
-  def apply(port: Double): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  inline def apply(port: Double): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
   
   @JSImport("pid-from-port", JSImport.Namespace)
   @js.native
@@ -23,13 +22,11 @@ object mod {
     * @param ports Ports to lookup.
     * @returns A `Promise<Map>` with the port as key and the PID as value.
     */
-  @scala.inline
-  def all(ports: js.Array[Double]): js.Promise[Map[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(ports.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[Double, Double]]]
+  inline def all(ports: js.Array[Double]): js.Promise[Map[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(ports.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[Double, Double]]]
   
   /**
     * Get all PIDs from ports.
     * @returns A `Promise<Map>` with the port as key and the PID as value.
     */
-  @scala.inline
-  def list(): js.Promise[Map[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[Map[Double, Double]]]
+  inline def list(): js.Promise[Map[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[Map[Double, Double]]]
 }

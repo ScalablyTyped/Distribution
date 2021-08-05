@@ -41,10 +41,10 @@ object mod {
     def this(el: GridHTMLElement, opts: GridStackOptions) = this()
     
     /** called to resize children nested grids when we/item resizes */
-    var _resizeNestedGrids: js.Any = js.native
+    /* private */ var _resizeNestedGrids: js.Any = js.native
     
     /** add or remove the window size event handler */
-    var _updateWindowResizeEvent: js.Any = js.native
+    /* private */ var _updateWindowResizeEvent: js.Any = js.native
     
     /**
       * add a new widget and returns it.
@@ -458,8 +458,7 @@ object mod {
         /* nodes */ js.UndefOr[js.Array[GridStackNode]], 
         typings.gridstack.gridstackEngineMod.GridStackEngine
       ] = js.native
-    @scala.inline
-    def Engine_=(
+    inline def Engine_=(
       x: Instantiable5[
           /* column */ js.UndefOr[Double], 
           /* onchange */ js.UndefOr[onChangeCB], 
@@ -474,8 +473,7 @@ object mod {
     @JSImport("gridstack", "GridStack.Utils")
     @js.native
     def Utils: TypeofUtils = js.native
-    @scala.inline
-    def Utils_=(x: TypeofUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Utils")(x.asInstanceOf[js.Any])
+    inline def Utils_=(x: TypeofUtils): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Utils")(x.asInstanceOf[js.Any])
     
     /**
       * initializing the HTML element, or selector string, into a grid will return the grid. Calling it again will
@@ -490,14 +488,10 @@ object mod {
       * Note: the HTMLElement (of type GridHTMLElement) will store a `gridstack: GridStack` value that can be retrieve later
       * let grid = document.querySelector('.grid-stack').gridstack;
       */
-    @scala.inline
-    def init(): GridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[GridStack]
-    @scala.inline
-    def init(options: Unit, elOrString: GridStackElement): GridStack = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], elOrString.asInstanceOf[js.Any])).asInstanceOf[GridStack]
-    @scala.inline
-    def init(options: GridStackOptions): GridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[GridStack]
-    @scala.inline
-    def init(options: GridStackOptions, elOrString: GridStackElement): GridStack = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], elOrString.asInstanceOf[js.Any])).asInstanceOf[GridStack]
+    inline def init(): GridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[GridStack]
+    inline def init(options: Unit, elOrString: GridStackElement): GridStack = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], elOrString.asInstanceOf[js.Any])).asInstanceOf[GridStack]
+    inline def init(options: GridStackOptions): GridStack = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[GridStack]
+    inline def init(options: GridStackOptions, elOrString: GridStackElement): GridStack = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any], elOrString.asInstanceOf[js.Any])).asInstanceOf[GridStack]
     
     /**
       * Will initialize a list of elements (given a selector) and return an array of grids.
@@ -508,14 +502,10 @@ object mod {
       * let grids = GridStack.initAll();
       * grids.forEach(...)
       */
-    @scala.inline
-    def initAll(): js.Array[GridStack] = ^.asInstanceOf[js.Dynamic].applyDynamic("initAll")().asInstanceOf[js.Array[GridStack]]
-    @scala.inline
-    def initAll(options: Unit, selector: String): js.Array[GridStack] = (^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStack]]
-    @scala.inline
-    def initAll(options: GridStackOptions): js.Array[GridStack] = ^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[GridStack]]
-    @scala.inline
-    def initAll(options: GridStackOptions, selector: String): js.Array[GridStack] = (^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStack]]
+    inline def initAll(): js.Array[GridStack] = ^.asInstanceOf[js.Dynamic].applyDynamic("initAll")().asInstanceOf[js.Array[GridStack]]
+    inline def initAll(options: Unit, selector: String): js.Array[GridStack] = (^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStack]]
+    inline def initAll(options: GridStackOptions): js.Array[GridStack] = ^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[GridStack]]
+    inline def initAll(options: GridStackOptions, selector: String): js.Array[GridStack] = (^.asInstanceOf[js.Dynamic].applyDynamic("initAll")(options.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStack]]
   }
   
   @JSImport("gridstack", "GridStackDD")
@@ -532,18 +522,15 @@ object mod {
     val ^ : js.Any = js.native
     
     /** get the current registered plugin to use */
-    @scala.inline
-    def get(): TypeofGridStackDD = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[TypeofGridStackDD]
+    inline def get(): TypeofGridStackDD = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[TypeofGridStackDD]
     
     /** call this method to register your plugin instead of the default no-op one */
-    @scala.inline
-    def registerPlugin(pluginClass: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginClass.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerPlugin(pluginClass: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(pluginClass.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("gridstack", "GridStackDD.registeredPlugins")
     @js.native
     def registeredPlugins: TypeofGridStackDD = js.native
-    @scala.inline
-    def registeredPlugins_=(x: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registeredPlugins")(x.asInstanceOf[js.Any])
+    inline def registeredPlugins_=(x: TypeofGridStackDD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registeredPlugins")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("gridstack", "GridStackDDJQueryUI")
@@ -608,16 +595,13 @@ object mod {
     val ^ : js.Any = js.native
     
     /** inserts a CSS rule */
-    @scala.inline
-    def addCSSRule(sheet: CSSStyleSheet, selector: String, rules: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCSSRule")(sheet.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addCSSRule(sheet: CSSStyleSheet, selector: String, rules: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCSSRule")(sheet.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], rules.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** makes a shallow copy of the passed json struct */
-    @scala.inline
-    def clone(target: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(target.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def clone(target: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(target.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /** return the closest parent matching the given class */
-    @scala.inline
-    def closestByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+    inline def closestByClass(el: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("closestByClass")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
     /**
       * creates a style sheet with style id under given parent
@@ -625,28 +609,21 @@ object mod {
       * @param parent to insert the stylesheet as first child,
       * if none supplied it will be appended to the document head instead.
       */
-    @scala.inline
-    def createStylesheet(id: String): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
-    @scala.inline
-    def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = (^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CSSStyleSheet]
+    inline def createStylesheet(id: String): CSSStyleSheet = ^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any]).asInstanceOf[CSSStyleSheet]
+    inline def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = (^.asInstanceOf[js.Dynamic].applyDynamic("createStylesheet")(id.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CSSStyleSheet]
     
     /** copies unset fields in target to use the given default sources values */
-    @scala.inline
-    def defaults(target: js.Any, sources: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def defaults(target: js.Any, sources: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     /** returns true if a and b overlap */
-    @scala.inline
-    def isIntercepted(a: GridStackWidget, b: GridStackWidget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIntercepted")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isIntercepted(a: GridStackWidget, b: GridStackWidget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIntercepted")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def parseHeight(`val`: numberOrString): HeightData = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHeight")(`val`.asInstanceOf[js.Any]).asInstanceOf[HeightData]
+    inline def parseHeight(`val`: numberOrString): HeightData = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHeight")(`val`.asInstanceOf[js.Any]).asInstanceOf[HeightData]
     
-    @scala.inline
-    def removePositioningStyles(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePositioningStyles")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removePositioningStyles(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removePositioningStyles")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** removed the given stylesheet id */
-    @scala.inline
-    def removeStylesheet(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStylesheet")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeStylesheet(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStylesheet")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Sorts array of nodes
@@ -654,40 +631,27 @@ object mod {
       * @param dir 1 for asc, -1 for desc (optional)
       * @param width width of the grid. If undefined the width will be calculated automatically (optional).
       **/
-    @scala.inline
-    def sort(nodes: js.Array[GridStackNode]): js.Array[GridStackNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[GridStackNode]]
-    @scala.inline
-    def sort(nodes: js.Array[GridStackNode], dir: Unit, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    inline def sort(nodes: js.Array[GridStackNode]): js.Array[GridStackNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[GridStackNode]]
+    inline def sort(nodes: js.Array[GridStackNode], dir: Unit, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
     
-    @scala.inline
-    def sort_1(nodes: js.Array[GridStackNode], dir: `-1`): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
-    @scala.inline
-    def sort_1(nodes: js.Array[GridStackNode], dir: `-1`, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
-    @scala.inline
-    def sort_1(nodes: js.Array[GridStackNode], dir: `1`): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
-    @scala.inline
-    def sort_1(nodes: js.Array[GridStackNode], dir: `1`, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    inline def sort_1(nodes: js.Array[GridStackNode], dir: `-1`): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    inline def sort_1(nodes: js.Array[GridStackNode], dir: `-1`, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    inline def sort_1(nodes: js.Array[GridStackNode], dir: `1`): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
+    inline def sort_1(nodes: js.Array[GridStackNode], dir: `1`, column: Double): js.Array[GridStackNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("sort")(nodes.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[js.Array[GridStackNode]]
     
-    @scala.inline
-    def toBool(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBool")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def toBool(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("toBool")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def toNumber(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")().asInstanceOf[Double | Null]
-    @scala.inline
-    def toNumber(value: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+    inline def toNumber(): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")().asInstanceOf[Double | Null]
+    inline def toNumber(value: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   }
   
-  @scala.inline
-  def obsolete(self: js.Any, f: js.Any, oldName: String, newName: String, rev: String): js.Function1[/* repeated */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("obsolete")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
+  inline def obsolete(self: js.Any, f: js.Any, oldName: String, newName: String, rev: String): js.Function1[/* repeated */ js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("obsolete")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
   
-  @scala.inline
-  def obsoleteAttr(el: HTMLElement, oldName: String, newName: String, rev: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteAttr")(el.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def obsoleteAttr(el: HTMLElement, oldName: String, newName: String, rev: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteAttr")(el.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def obsoleteOpts(opts: GridStackOptions, oldName: String, newName: String, rev: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteOpts")(opts.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def obsoleteOpts(opts: GridStackOptions, oldName: String, newName: String, rev: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteOpts")(opts.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], newName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def obsoleteOptsDel(opts: GridStackOptions, oldName: String, rev: String, info: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteOptsDel")(opts.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def obsoleteOptsDel(opts: GridStackOptions, oldName: String, rev: String, info: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("obsoleteOptsDel")(opts.asInstanceOf[js.Any], oldName.asInstanceOf[js.Any], rev.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait CellPosition extends StObject {
     
@@ -697,20 +661,16 @@ object mod {
   }
   object CellPosition {
     
-    @scala.inline
-    def apply(x: Double, y: Double): CellPosition = {
+    inline def apply(x: Double, y: Double): CellPosition = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[CellPosition]
     }
     
-    @scala.inline
-    implicit class CellPositionMutableBuilder[Self <: CellPosition] (val x: Self) extends AnyVal {
+    extension [Self <: CellPosition](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -753,35 +713,25 @@ object mod {
   trait GridStackEvent extends StObject
   object GridStackEvent {
     
-    @scala.inline
-    def added: typings.gridstack.gridstackStrings.added = "added".asInstanceOf[typings.gridstack.gridstackStrings.added]
+    inline def added: typings.gridstack.gridstackStrings.added = "added".asInstanceOf[typings.gridstack.gridstackStrings.added]
     
-    @scala.inline
-    def change: typings.gridstack.gridstackStrings.change = "change".asInstanceOf[typings.gridstack.gridstackStrings.change]
+    inline def change: typings.gridstack.gridstackStrings.change = "change".asInstanceOf[typings.gridstack.gridstackStrings.change]
     
-    @scala.inline
-    def disable: typings.gridstack.gridstackStrings.disable = "disable".asInstanceOf[typings.gridstack.gridstackStrings.disable]
+    inline def disable: typings.gridstack.gridstackStrings.disable = "disable".asInstanceOf[typings.gridstack.gridstackStrings.disable]
     
-    @scala.inline
-    def dragstart: typings.gridstack.gridstackStrings.dragstart = "dragstart".asInstanceOf[typings.gridstack.gridstackStrings.dragstart]
+    inline def dragstart: typings.gridstack.gridstackStrings.dragstart = "dragstart".asInstanceOf[typings.gridstack.gridstackStrings.dragstart]
     
-    @scala.inline
-    def dragstop: typings.gridstack.gridstackStrings.dragstop = "dragstop".asInstanceOf[typings.gridstack.gridstackStrings.dragstop]
+    inline def dragstop: typings.gridstack.gridstackStrings.dragstop = "dragstop".asInstanceOf[typings.gridstack.gridstackStrings.dragstop]
     
-    @scala.inline
-    def dropped: typings.gridstack.gridstackStrings.dropped = "dropped".asInstanceOf[typings.gridstack.gridstackStrings.dropped]
+    inline def dropped: typings.gridstack.gridstackStrings.dropped = "dropped".asInstanceOf[typings.gridstack.gridstackStrings.dropped]
     
-    @scala.inline
-    def enable: typings.gridstack.gridstackStrings.enable = "enable".asInstanceOf[typings.gridstack.gridstackStrings.enable]
+    inline def enable: typings.gridstack.gridstackStrings.enable = "enable".asInstanceOf[typings.gridstack.gridstackStrings.enable]
     
-    @scala.inline
-    def removed: typings.gridstack.gridstackStrings.removed = "removed".asInstanceOf[typings.gridstack.gridstackStrings.removed]
+    inline def removed: typings.gridstack.gridstackStrings.removed = "removed".asInstanceOf[typings.gridstack.gridstackStrings.removed]
     
-    @scala.inline
-    def resizestart: typings.gridstack.gridstackStrings.resizestart = "resizestart".asInstanceOf[typings.gridstack.gridstackStrings.resizestart]
+    inline def resizestart: typings.gridstack.gridstackStrings.resizestart = "resizestart".asInstanceOf[typings.gridstack.gridstackStrings.resizestart]
     
-    @scala.inline
-    def resizestop: typings.gridstack.gridstackStrings.resizestop = "resizestop".asInstanceOf[typings.gridstack.gridstackStrings.resizestop]
+    inline def resizestop: typings.gridstack.gridstackStrings.resizestop = "resizestop".asInstanceOf[typings.gridstack.gridstackStrings.resizestop]
   }
   
   trait MousePosition extends StObject {
@@ -792,20 +742,16 @@ object mod {
   }
   object MousePosition {
     
-    @scala.inline
-    def apply(left: Double, top: Double): MousePosition = {
+    inline def apply(left: Double, top: Double): MousePosition = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[MousePosition]
     }
     
-    @scala.inline
-    implicit class MousePositionMutableBuilder[Self <: MousePosition] (val x: Self) extends AnyVal {
+    extension [Self <: MousePosition](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
 }

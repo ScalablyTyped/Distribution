@@ -24,8 +24,7 @@ trait ObjectMetricStatus extends StObject {
 }
 object ObjectMetricStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     current: Input[MetricValueStatus],
     describedObject: Input[CrossVersionObjectReference],
     metric: Input[MetricIdentifier]
@@ -34,16 +33,12 @@ object ObjectMetricStatus {
     __obj.asInstanceOf[ObjectMetricStatus]
   }
   
-  @scala.inline
-  implicit class ObjectMetricStatusMutableBuilder[Self <: ObjectMetricStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectMetricStatus](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: Input[MetricValueStatus]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Input[MetricValueStatus]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribedObject(value: Input[CrossVersionObjectReference]): Self = StObject.set(x, "describedObject", value.asInstanceOf[js.Any])
+    inline def setDescribedObject(value: Input[CrossVersionObjectReference]): Self = StObject.set(x, "describedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric(value: Input[MetricIdentifier]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: Input[MetricIdentifier]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
   }
 }

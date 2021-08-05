@@ -13,16 +13,13 @@ trait ViewDocument[D]
 }
 object ViewDocument {
   
-  @scala.inline
-  def apply[D](_id: String, views: StringDictionary[View[D]]): ViewDocument[D] = {
+  inline def apply[D](_id: String, views: StringDictionary[View[D]]): ViewDocument[D] = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewDocument[D]]
   }
   
-  @scala.inline
-  implicit class ViewDocumentMutableBuilder[Self <: ViewDocument[?], D] (val x: Self & ViewDocument[D]) extends AnyVal {
+  extension [Self <: ViewDocument[?], D](x: Self & ViewDocument[D]) {
     
-    @scala.inline
-    def setViews(value: StringDictionary[View[D]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: StringDictionary[View[D]]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
   }
 }

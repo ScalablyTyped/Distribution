@@ -28,8 +28,7 @@ object cssmotionMod {
   @js.native
   val default: ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = js.native
   
-  @scala.inline
-  def genCSSMotion(config: CSSMotionConfig): ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = ^.asInstanceOf[js.Dynamic].applyDynamic("genCSSMotion")(config.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[CSSMotionPropsrefRefanyun]]
+  inline def genCSSMotion(config: CSSMotionConfig): ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = ^.asInstanceOf[js.Dynamic].applyDynamic("genCSSMotion")(config.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[CSSMotionPropsrefRefanyun]]
   
   type CSSMotionConfig = Boolean | ForwardRef
   
@@ -100,176 +99,120 @@ object cssmotionMod {
   }
   object CSSMotionProps {
     
-    @scala.inline
-    def apply(): CSSMotionProps = {
+    inline def apply(): CSSMotionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSMotionProps]
     }
     
-    @scala.inline
-    implicit class CSSMotionPropsMutableBuilder[Self <: CSSMotionProps] (val x: Self) extends AnyVal {
+    extension [Self <: CSSMotionProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: (/* props */ Dictkey, /* ref */ js.Function1[/* node */ js.Any, Unit]) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (/* props */ Dictkey, /* ref */ js.Function1[/* node */ js.Any, Unit]) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setEventProps(value: js.Object): Self = StObject.set(x, "eventProps", value.asInstanceOf[js.Any])
+      inline def setEventProps(value: js.Object): Self = StObject.set(x, "eventProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPropsUndefined: Self = StObject.set(x, "eventProps", js.undefined)
+      inline def setEventPropsUndefined: Self = StObject.set(x, "eventProps", js.undefined)
       
-      @scala.inline
-      def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
+      inline def setForceRender(value: Boolean): Self = StObject.set(x, "forceRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      inline def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
-      @scala.inline
-      def setInternalRef(value: Ref[js.Any]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
+      inline def setInternalRef(value: Ref[js.Any]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
+      inline def setInternalRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInternalRefNull: Self = StObject.set(x, "internalRef", null)
+      inline def setInternalRefNull: Self = StObject.set(x, "internalRef", null)
       
-      @scala.inline
-      def setInternalRefUndefined: Self = StObject.set(x, "internalRef", js.undefined)
+      inline def setInternalRefUndefined: Self = StObject.set(x, "internalRef", js.undefined)
       
-      @scala.inline
-      def setLeavedClassName(value: String): Self = StObject.set(x, "leavedClassName", value.asInstanceOf[js.Any])
+      inline def setLeavedClassName(value: String): Self = StObject.set(x, "leavedClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeavedClassNameUndefined: Self = StObject.set(x, "leavedClassName", js.undefined)
+      inline def setLeavedClassNameUndefined: Self = StObject.set(x, "leavedClassName", js.undefined)
       
-      @scala.inline
-      def setMotionAppear(value: Boolean): Self = StObject.set(x, "motionAppear", value.asInstanceOf[js.Any])
+      inline def setMotionAppear(value: Boolean): Self = StObject.set(x, "motionAppear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionAppearUndefined: Self = StObject.set(x, "motionAppear", js.undefined)
+      inline def setMotionAppearUndefined: Self = StObject.set(x, "motionAppear", js.undefined)
       
-      @scala.inline
-      def setMotionDeadline(value: Double): Self = StObject.set(x, "motionDeadline", value.asInstanceOf[js.Any])
+      inline def setMotionDeadline(value: Double): Self = StObject.set(x, "motionDeadline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionDeadlineUndefined: Self = StObject.set(x, "motionDeadline", js.undefined)
+      inline def setMotionDeadlineUndefined: Self = StObject.set(x, "motionDeadline", js.undefined)
       
-      @scala.inline
-      def setMotionEnter(value: Boolean): Self = StObject.set(x, "motionEnter", value.asInstanceOf[js.Any])
+      inline def setMotionEnter(value: Boolean): Self = StObject.set(x, "motionEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionEnterUndefined: Self = StObject.set(x, "motionEnter", js.undefined)
+      inline def setMotionEnterUndefined: Self = StObject.set(x, "motionEnter", js.undefined)
       
-      @scala.inline
-      def setMotionLeave(value: Boolean): Self = StObject.set(x, "motionLeave", value.asInstanceOf[js.Any])
+      inline def setMotionLeave(value: Boolean): Self = StObject.set(x, "motionLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionLeaveImmediately(value: Boolean): Self = StObject.set(x, "motionLeaveImmediately", value.asInstanceOf[js.Any])
+      inline def setMotionLeaveImmediately(value: Boolean): Self = StObject.set(x, "motionLeaveImmediately", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionLeaveImmediatelyUndefined: Self = StObject.set(x, "motionLeaveImmediately", js.undefined)
+      inline def setMotionLeaveImmediatelyUndefined: Self = StObject.set(x, "motionLeaveImmediately", js.undefined)
       
-      @scala.inline
-      def setMotionLeaveUndefined: Self = StObject.set(x, "motionLeave", js.undefined)
+      inline def setMotionLeaveUndefined: Self = StObject.set(x, "motionLeave", js.undefined)
       
-      @scala.inline
-      def setMotionName(value: MotionName): Self = StObject.set(x, "motionName", value.asInstanceOf[js.Any])
+      inline def setMotionName(value: MotionName): Self = StObject.set(x, "motionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMotionNameUndefined: Self = StObject.set(x, "motionName", js.undefined)
+      inline def setMotionNameUndefined: Self = StObject.set(x, "motionName", js.undefined)
       
-      @scala.inline
-      def setOnAppearActive(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onAppearActive", js.Any.fromFunction2(value))
+      inline def setOnAppearActive(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onAppearActive", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAppearActiveUndefined: Self = StObject.set(x, "onAppearActive", js.undefined)
+      inline def setOnAppearActiveUndefined: Self = StObject.set(x, "onAppearActive", js.undefined)
       
-      @scala.inline
-      def setOnAppearEnd(value: (/* element */ HTMLElement, /* event */ MotionEvent) => Boolean | Unit): Self = StObject.set(x, "onAppearEnd", js.Any.fromFunction2(value))
+      inline def setOnAppearEnd(value: (/* element */ HTMLElement, /* event */ MotionEvent) => Boolean | Unit): Self = StObject.set(x, "onAppearEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAppearEndUndefined: Self = StObject.set(x, "onAppearEnd", js.undefined)
+      inline def setOnAppearEndUndefined: Self = StObject.set(x, "onAppearEnd", js.undefined)
       
-      @scala.inline
-      def setOnAppearPrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onAppearPrepare", js.Any.fromFunction1(value))
+      inline def setOnAppearPrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onAppearPrepare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAppearPrepareUndefined: Self = StObject.set(x, "onAppearPrepare", js.undefined)
+      inline def setOnAppearPrepareUndefined: Self = StObject.set(x, "onAppearPrepare", js.undefined)
       
-      @scala.inline
-      def setOnAppearStart(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onAppearStart", js.Any.fromFunction2(value))
+      inline def setOnAppearStart(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onAppearStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAppearStartUndefined: Self = StObject.set(x, "onAppearStart", js.undefined)
+      inline def setOnAppearStartUndefined: Self = StObject.set(x, "onAppearStart", js.undefined)
       
-      @scala.inline
-      def setOnEnterActive(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onEnterActive", js.Any.fromFunction2(value))
+      inline def setOnEnterActive(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onEnterActive", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEnterActiveUndefined: Self = StObject.set(x, "onEnterActive", js.undefined)
+      inline def setOnEnterActiveUndefined: Self = StObject.set(x, "onEnterActive", js.undefined)
       
-      @scala.inline
-      def setOnEnterEnd(value: (/* element */ HTMLElement, /* event */ MotionEvent) => Boolean | Unit): Self = StObject.set(x, "onEnterEnd", js.Any.fromFunction2(value))
+      inline def setOnEnterEnd(value: (/* element */ HTMLElement, /* event */ MotionEvent) => Boolean | Unit): Self = StObject.set(x, "onEnterEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEnterEndUndefined: Self = StObject.set(x, "onEnterEnd", js.undefined)
+      inline def setOnEnterEndUndefined: Self = StObject.set(x, "onEnterEnd", js.undefined)
       
-      @scala.inline
-      def setOnEnterPrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onEnterPrepare", js.Any.fromFunction1(value))
+      inline def setOnEnterPrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onEnterPrepare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEnterPrepareUndefined: Self = StObject.set(x, "onEnterPrepare", js.undefined)
+      inline def setOnEnterPrepareUndefined: Self = StObject.set(x, "onEnterPrepare", js.undefined)
       
-      @scala.inline
-      def setOnEnterStart(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onEnterStart", js.Any.fromFunction2(value))
+      inline def setOnEnterStart(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onEnterStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEnterStartUndefined: Self = StObject.set(x, "onEnterStart", js.undefined)
+      inline def setOnEnterStartUndefined: Self = StObject.set(x, "onEnterStart", js.undefined)
       
-      @scala.inline
-      def setOnLeaveActive(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onLeaveActive", js.Any.fromFunction2(value))
+      inline def setOnLeaveActive(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onLeaveActive", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnLeaveActiveUndefined: Self = StObject.set(x, "onLeaveActive", js.undefined)
+      inline def setOnLeaveActiveUndefined: Self = StObject.set(x, "onLeaveActive", js.undefined)
       
-      @scala.inline
-      def setOnLeaveEnd(value: (/* element */ HTMLElement, /* event */ MotionEvent) => Boolean | Unit): Self = StObject.set(x, "onLeaveEnd", js.Any.fromFunction2(value))
+      inline def setOnLeaveEnd(value: (/* element */ HTMLElement, /* event */ MotionEvent) => Boolean | Unit): Self = StObject.set(x, "onLeaveEnd", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnLeaveEndUndefined: Self = StObject.set(x, "onLeaveEnd", js.undefined)
+      inline def setOnLeaveEndUndefined: Self = StObject.set(x, "onLeaveEnd", js.undefined)
       
-      @scala.inline
-      def setOnLeavePrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onLeavePrepare", js.Any.fromFunction1(value))
+      inline def setOnLeavePrepare(value: /* element */ HTMLElement => js.Promise[js.Any] | Unit): Self = StObject.set(x, "onLeavePrepare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLeavePrepareUndefined: Self = StObject.set(x, "onLeavePrepare", js.undefined)
+      inline def setOnLeavePrepareUndefined: Self = StObject.set(x, "onLeavePrepare", js.undefined)
       
-      @scala.inline
-      def setOnLeaveStart(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onLeaveStart", js.Any.fromFunction2(value))
+      inline def setOnLeaveStart(value: (/* element */ HTMLElement, /* event */ MotionEvent) => CSSProperties | Unit): Self = StObject.set(x, "onLeaveStart", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnLeaveStartUndefined: Self = StObject.set(x, "onLeaveStart", js.undefined)
+      inline def setOnLeaveStartUndefined: Self = StObject.set(x, "onLeaveStart", js.undefined)
       
-      @scala.inline
-      def setOnVisibleChanged(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChanged", js.Any.fromFunction1(value))
+      inline def setOnVisibleChanged(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibleChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVisibleChangedUndefined: Self = StObject.set(x, "onVisibleChanged", js.undefined)
+      inline def setOnVisibleChangedUndefined: Self = StObject.set(x, "onVisibleChanged", js.undefined)
       
-      @scala.inline
-      def setRemoveOnLeave(value: Boolean): Self = StObject.set(x, "removeOnLeave", value.asInstanceOf[js.Any])
+      inline def setRemoveOnLeave(value: Boolean): Self = StObject.set(x, "removeOnLeave", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveOnLeaveUndefined: Self = StObject.set(x, "removeOnLeave", js.undefined)
+      inline def setRemoveOnLeaveUndefined: Self = StObject.set(x, "removeOnLeave", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -287,44 +230,32 @@ object cssmotionMod {
   }
   object CSSMotionState {
     
-    @scala.inline
-    def apply(): CSSMotionState = {
+    inline def apply(): CSSMotionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSMotionState]
     }
     
-    @scala.inline
-    implicit class CSSMotionStateMutableBuilder[Self <: CSSMotionState] (val x: Self) extends AnyVal {
+    extension [Self <: CSSMotionState](x: Self) {
       
-      @scala.inline
-      def setNewStatus(value: Boolean): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
+      inline def setNewStatus(value: Boolean): Self = StObject.set(x, "newStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewStatusUndefined: Self = StObject.set(x, "newStatus", js.undefined)
+      inline def setNewStatusUndefined: Self = StObject.set(x, "newStatus", js.undefined)
       
-      @scala.inline
-      def setPrevProps(value: CSSMotionProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: CSSMotionProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
+      inline def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
       
-      @scala.inline
-      def setStatus(value: MotionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: MotionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusActive(value: Boolean): Self = StObject.set(x, "statusActive", value.asInstanceOf[js.Any])
+      inline def setStatusActive(value: Boolean): Self = StObject.set(x, "statusActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusActiveUndefined: Self = StObject.set(x, "statusActive", js.undefined)
+      inline def setStatusActiveUndefined: Self = StObject.set(x, "statusActive", js.undefined)
       
-      @scala.inline
-      def setStatusStyle(value: CSSProperties): Self = StObject.set(x, "statusStyle", value.asInstanceOf[js.Any])
+      inline def setStatusStyle(value: CSSProperties): Self = StObject.set(x, "statusStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusStyleUndefined: Self = StObject.set(x, "statusStyle", js.undefined)
+      inline def setStatusStyleUndefined: Self = StObject.set(x, "statusStyle", js.undefined)
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   

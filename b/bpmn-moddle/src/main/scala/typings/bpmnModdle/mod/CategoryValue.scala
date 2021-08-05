@@ -14,8 +14,7 @@ trait CategoryValue
 }
 object CategoryValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     categorizedFlowElements: js.Array[FlowElement],
@@ -26,16 +25,12 @@ object CategoryValue {
     __obj.asInstanceOf[CategoryValue]
   }
   
-  @scala.inline
-  implicit class CategoryValueMutableBuilder[Self <: CategoryValue] (val x: Self) extends AnyVal {
+  extension [Self <: CategoryValue](x: Self) {
     
-    @scala.inline
-    def setCategorizedFlowElements(value: js.Array[FlowElement]): Self = StObject.set(x, "categorizedFlowElements", value.asInstanceOf[js.Any])
+    inline def setCategorizedFlowElements(value: js.Array[FlowElement]): Self = StObject.set(x, "categorizedFlowElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategorizedFlowElementsVarargs(value: FlowElement*): Self = StObject.set(x, "categorizedFlowElements", js.Array(value :_*))
+    inline def setCategorizedFlowElementsVarargs(value: FlowElement*): Self = StObject.set(x, "categorizedFlowElements", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

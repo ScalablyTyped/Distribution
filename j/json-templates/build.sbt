@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-templates"
-version := "3.0-dt-20200515Z-ef26f0"
+version := "3.0-dt-20200515Z-699156"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

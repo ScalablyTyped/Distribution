@@ -68,62 +68,44 @@ object typesDirectMessageConfigurationMod {
   }
   object DirectMessageConfiguration {
     
-    @scala.inline
-    def apply(): DirectMessageConfiguration = {
+    inline def apply(): DirectMessageConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirectMessageConfiguration]
     }
     
-    @scala.inline
-    implicit class DirectMessageConfigurationMutableBuilder[Self <: DirectMessageConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: DirectMessageConfiguration](x: Self) {
       
-      @scala.inline
-      def setADMMessage(value: ADMMessage): Self = StObject.set(x, "ADMMessage", value.asInstanceOf[js.Any])
+      inline def setADMMessage(value: ADMMessage): Self = StObject.set(x, "ADMMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADMMessageUndefined: Self = StObject.set(x, "ADMMessage", js.undefined)
+      inline def setADMMessageUndefined: Self = StObject.set(x, "ADMMessage", js.undefined)
       
-      @scala.inline
-      def setAPNSMessage(value: APNSMessage): Self = StObject.set(x, "APNSMessage", value.asInstanceOf[js.Any])
+      inline def setAPNSMessage(value: APNSMessage): Self = StObject.set(x, "APNSMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPNSMessageUndefined: Self = StObject.set(x, "APNSMessage", js.undefined)
+      inline def setAPNSMessageUndefined: Self = StObject.set(x, "APNSMessage", js.undefined)
       
-      @scala.inline
-      def setBaiduMessage(value: BaiduMessage): Self = StObject.set(x, "BaiduMessage", value.asInstanceOf[js.Any])
+      inline def setBaiduMessage(value: BaiduMessage): Self = StObject.set(x, "BaiduMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaiduMessageUndefined: Self = StObject.set(x, "BaiduMessage", js.undefined)
+      inline def setBaiduMessageUndefined: Self = StObject.set(x, "BaiduMessage", js.undefined)
       
-      @scala.inline
-      def setDefaultMessage(value: DefaultMessage): Self = StObject.set(x, "DefaultMessage", value.asInstanceOf[js.Any])
+      inline def setDefaultMessage(value: DefaultMessage): Self = StObject.set(x, "DefaultMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMessageUndefined: Self = StObject.set(x, "DefaultMessage", js.undefined)
+      inline def setDefaultMessageUndefined: Self = StObject.set(x, "DefaultMessage", js.undefined)
       
-      @scala.inline
-      def setDefaultPushNotificationMessage(value: DefaultPushNotificationMessage): Self = StObject.set(x, "DefaultPushNotificationMessage", value.asInstanceOf[js.Any])
+      inline def setDefaultPushNotificationMessage(value: DefaultPushNotificationMessage): Self = StObject.set(x, "DefaultPushNotificationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPushNotificationMessageUndefined: Self = StObject.set(x, "DefaultPushNotificationMessage", js.undefined)
+      inline def setDefaultPushNotificationMessageUndefined: Self = StObject.set(x, "DefaultPushNotificationMessage", js.undefined)
       
-      @scala.inline
-      def setEmailMessage(value: EmailMessage): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
+      inline def setEmailMessage(value: EmailMessage): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailMessageUndefined: Self = StObject.set(x, "EmailMessage", js.undefined)
+      inline def setEmailMessageUndefined: Self = StObject.set(x, "EmailMessage", js.undefined)
       
-      @scala.inline
-      def setGCMMessage(value: GCMMessage): Self = StObject.set(x, "GCMMessage", value.asInstanceOf[js.Any])
+      inline def setGCMMessage(value: GCMMessage): Self = StObject.set(x, "GCMMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGCMMessageUndefined: Self = StObject.set(x, "GCMMessage", js.undefined)
+      inline def setGCMMessageUndefined: Self = StObject.set(x, "GCMMessage", js.undefined)
       
-      @scala.inline
-      def setSMSMessage(value: SMSMessage): Self = StObject.set(x, "SMSMessage", value.asInstanceOf[js.Any])
+      inline def setSMSMessage(value: SMSMessage): Self = StObject.set(x, "SMSMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSMSMessageUndefined: Self = StObject.set(x, "SMSMessage", js.undefined)
+      inline def setSMSMessageUndefined: Self = StObject.set(x, "SMSMessage", js.undefined)
     }
   }
   
@@ -181,62 +163,44 @@ object typesDirectMessageConfigurationMod {
   }
   object UnmarshalledDirectMessageConfiguration {
     
-    @scala.inline
-    def apply(): UnmarshalledDirectMessageConfiguration = {
+    inline def apply(): UnmarshalledDirectMessageConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledDirectMessageConfiguration]
     }
     
-    @scala.inline
-    implicit class UnmarshalledDirectMessageConfigurationMutableBuilder[Self <: UnmarshalledDirectMessageConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledDirectMessageConfiguration](x: Self) {
       
-      @scala.inline
-      def setADMMessage(value: UnmarshalledADMMessage): Self = StObject.set(x, "ADMMessage", value.asInstanceOf[js.Any])
+      inline def setADMMessage(value: UnmarshalledADMMessage): Self = StObject.set(x, "ADMMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADMMessageUndefined: Self = StObject.set(x, "ADMMessage", js.undefined)
+      inline def setADMMessageUndefined: Self = StObject.set(x, "ADMMessage", js.undefined)
       
-      @scala.inline
-      def setAPNSMessage(value: UnmarshalledAPNSMessage): Self = StObject.set(x, "APNSMessage", value.asInstanceOf[js.Any])
+      inline def setAPNSMessage(value: UnmarshalledAPNSMessage): Self = StObject.set(x, "APNSMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPNSMessageUndefined: Self = StObject.set(x, "APNSMessage", js.undefined)
+      inline def setAPNSMessageUndefined: Self = StObject.set(x, "APNSMessage", js.undefined)
       
-      @scala.inline
-      def setBaiduMessage(value: UnmarshalledBaiduMessage): Self = StObject.set(x, "BaiduMessage", value.asInstanceOf[js.Any])
+      inline def setBaiduMessage(value: UnmarshalledBaiduMessage): Self = StObject.set(x, "BaiduMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaiduMessageUndefined: Self = StObject.set(x, "BaiduMessage", js.undefined)
+      inline def setBaiduMessageUndefined: Self = StObject.set(x, "BaiduMessage", js.undefined)
       
-      @scala.inline
-      def setDefaultMessage(value: UnmarshalledDefaultMessage): Self = StObject.set(x, "DefaultMessage", value.asInstanceOf[js.Any])
+      inline def setDefaultMessage(value: UnmarshalledDefaultMessage): Self = StObject.set(x, "DefaultMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMessageUndefined: Self = StObject.set(x, "DefaultMessage", js.undefined)
+      inline def setDefaultMessageUndefined: Self = StObject.set(x, "DefaultMessage", js.undefined)
       
-      @scala.inline
-      def setDefaultPushNotificationMessage(value: UnmarshalledDefaultPushNotificationMessage): Self = StObject.set(x, "DefaultPushNotificationMessage", value.asInstanceOf[js.Any])
+      inline def setDefaultPushNotificationMessage(value: UnmarshalledDefaultPushNotificationMessage): Self = StObject.set(x, "DefaultPushNotificationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPushNotificationMessageUndefined: Self = StObject.set(x, "DefaultPushNotificationMessage", js.undefined)
+      inline def setDefaultPushNotificationMessageUndefined: Self = StObject.set(x, "DefaultPushNotificationMessage", js.undefined)
       
-      @scala.inline
-      def setEmailMessage(value: UnmarshalledEmailMessage): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
+      inline def setEmailMessage(value: UnmarshalledEmailMessage): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailMessageUndefined: Self = StObject.set(x, "EmailMessage", js.undefined)
+      inline def setEmailMessageUndefined: Self = StObject.set(x, "EmailMessage", js.undefined)
       
-      @scala.inline
-      def setGCMMessage(value: UnmarshalledGCMMessage): Self = StObject.set(x, "GCMMessage", value.asInstanceOf[js.Any])
+      inline def setGCMMessage(value: UnmarshalledGCMMessage): Self = StObject.set(x, "GCMMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGCMMessageUndefined: Self = StObject.set(x, "GCMMessage", js.undefined)
+      inline def setGCMMessageUndefined: Self = StObject.set(x, "GCMMessage", js.undefined)
       
-      @scala.inline
-      def setSMSMessage(value: UnmarshalledSMSMessage): Self = StObject.set(x, "SMSMessage", value.asInstanceOf[js.Any])
+      inline def setSMSMessage(value: UnmarshalledSMSMessage): Self = StObject.set(x, "SMSMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSMSMessageUndefined: Self = StObject.set(x, "SMSMessage", js.undefined)
+      inline def setSMSMessageUndefined: Self = StObject.set(x, "SMSMessage", js.undefined)
     }
   }
 }

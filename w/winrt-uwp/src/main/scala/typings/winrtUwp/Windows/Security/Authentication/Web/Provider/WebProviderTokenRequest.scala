@@ -36,8 +36,7 @@ trait WebProviderTokenRequest extends StObject {
 }
 object WebProviderTokenRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applicationCallbackUri: Uri,
     clientRequest: WebTokenRequest,
     getApplicationTokenBindingKeyAsync: (TokenBindingKeyType, Uri) => IPromiseWithIAsyncOperation[CryptographicKey],
@@ -48,22 +47,16 @@ object WebProviderTokenRequest {
     __obj.asInstanceOf[WebProviderTokenRequest]
   }
   
-  @scala.inline
-  implicit class WebProviderTokenRequestMutableBuilder[Self <: WebProviderTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WebProviderTokenRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
+    inline def setApplicationCallbackUri(value: Uri): Self = StObject.set(x, "applicationCallbackUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequest(value: WebTokenRequest): Self = StObject.set(x, "clientRequest", value.asInstanceOf[js.Any])
+    inline def setClientRequest(value: WebTokenRequest): Self = StObject.set(x, "clientRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetApplicationTokenBindingKeyAsync(value: (TokenBindingKeyType, Uri) => IPromiseWithIAsyncOperation[CryptographicKey]): Self = StObject.set(x, "getApplicationTokenBindingKeyAsync", js.Any.fromFunction2(value))
+    inline def setGetApplicationTokenBindingKeyAsync(value: (TokenBindingKeyType, Uri) => IPromiseWithIAsyncOperation[CryptographicKey]): Self = StObject.set(x, "getApplicationTokenBindingKeyAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWebAccountSelectionOptions(value: WebAccountSelectionOptions): Self = StObject.set(x, "webAccountSelectionOptions", value.asInstanceOf[js.Any])
+    inline def setWebAccountSelectionOptions(value: WebAccountSelectionOptions): Self = StObject.set(x, "webAccountSelectionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAccounts(value: IVectorView[WebAccount]): Self = StObject.set(x, "webAccounts", value.asInstanceOf[js.Any])
+    inline def setWebAccounts(value: IVectorView[WebAccount]): Self = StObject.set(x, "webAccounts", value.asInstanceOf[js.Any])
   }
 }

@@ -42,8 +42,7 @@ trait LimitRangeItem extends StObject {
 }
 object LimitRangeItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     default: StringDictionary[String],
     defaultRequest: StringDictionary[String],
     max: StringDictionary[String],
@@ -56,25 +55,18 @@ object LimitRangeItem {
     __obj.asInstanceOf[LimitRangeItem]
   }
   
-  @scala.inline
-  implicit class LimitRangeItemMutableBuilder[Self <: LimitRangeItem] (val x: Self) extends AnyVal {
+  extension [Self <: LimitRangeItem](x: Self) {
     
-    @scala.inline
-    def setDefault(value: StringDictionary[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: StringDictionary[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRequest(value: StringDictionary[String]): Self = StObject.set(x, "defaultRequest", value.asInstanceOf[js.Any])
+    inline def setDefaultRequest(value: StringDictionary[String]): Self = StObject.set(x, "defaultRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: StringDictionary[String]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: StringDictionary[String]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLimitRequestRatio(value: StringDictionary[String]): Self = StObject.set(x, "maxLimitRequestRatio", value.asInstanceOf[js.Any])
+    inline def setMaxLimitRequestRatio(value: StringDictionary[String]): Self = StObject.set(x, "maxLimitRequestRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: StringDictionary[String]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: StringDictionary[String]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

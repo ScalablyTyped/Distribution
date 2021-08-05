@@ -19,51 +19,51 @@ object focusTrapZoneFocusTrapZoneMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MFocusTrapZone(nextProps: IFocusTrapZoneProps): Unit = js.native
     
-    var _bringFocusIntoZone: js.Any = js.native
+    /* private */ var _bringFocusIntoZone: js.Any = js.native
     
-    var _disposeClickHandler: js.Any = js.native
+    /* private */ var _disposeClickHandler: js.Any = js.native
     
-    var _disposeFocusHandler: js.Any = js.native
+    /* private */ var _disposeFocusHandler: js.Any = js.native
     
-    var _firstBumper: js.Any = js.native
+    /* private */ var _firstBumper: js.Any = js.native
     
-    var _focusAsync: js.Any = js.native
+    /* private */ var _focusAsync: js.Any = js.native
     
-    var _forceClickInTrap: js.Any = js.native
+    /* private */ var _forceClickInTrap: js.Any = js.native
     
-    var _forceFocusInTrap: js.Any = js.native
+    /* private */ var _forceFocusInTrap: js.Any = js.native
     
-    var _getDocument: js.Any = js.native
+    /* private */ var _getDocument: js.Any = js.native
     
-    var _hasFocus: js.Any = js.native
+    /* private */ var _hasFocus: js.Any = js.native
     
-    var _isBumper: js.Any = js.native
+    /* private */ var _isBumper: js.Any = js.native
     
-    var _lastBumper: js.Any = js.native
+    /* private */ var _lastBumper: js.Any = js.native
     
-    var _onBumperFocus: js.Any = js.native
+    /* private */ var _onBumperFocus: js.Any = js.native
     
-    var _onFirstBumperFocus: js.Any = js.native
+    /* private */ var _onFirstBumperFocus: js.Any = js.native
     
-    var _onFocusCapture: js.Any = js.native
+    /* private */ var _onFocusCapture: js.Any = js.native
     
-    var _onLastBumperFocus: js.Any = js.native
+    /* private */ var _onLastBumperFocus: js.Any = js.native
     
-    var _onRootBlur: js.Any = js.native
+    /* private */ var _onRootBlur: js.Any = js.native
     
-    var _onRootFocus: js.Any = js.native
+    /* private */ var _onRootFocus: js.Any = js.native
     
-    var _previouslyFocusedElementInTrapZone: js.Any = js.native
+    /* private */ var _previouslyFocusedElementInTrapZone: js.Any = js.native
     
-    var _previouslyFocusedElementOutsideTrapZone: js.Any = js.native
+    /* private */ var _previouslyFocusedElementOutsideTrapZone: js.Any = js.native
     
-    var _returnFocusToInitiator: js.Any = js.native
+    /* private */ var _returnFocusToInitiator: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _unmodalize: js.Any = js.native
+    /* private */ var _unmodalize: js.Any = js.native
     
-    var _updateEventHandlers: js.Any = js.native
+    /* private */ var _updateEventHandlers: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MFocusTrapZone(): Unit = js.native
@@ -91,7 +91,6 @@ object focusTrapZoneFocusTrapZoneMod {
     @JSImport("office-ui-fabric-react/lib/components/FocusTrapZone/FocusTrapZone", "FocusTrapZone._focusStack")
     @js.native
     def _focusStack: js.Any = js.native
-    @scala.inline
-    def _focusStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
+    inline def _focusStack_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_focusStack")(x.asInstanceOf[js.Any])
   }
 }

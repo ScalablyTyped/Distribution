@@ -32,8 +32,7 @@ trait BoundingClientRectCallbackResult extends StObject {
 }
 object BoundingClientRectCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottom: Double,
     dataset: js.Object,
     height: Double,
@@ -47,31 +46,22 @@ object BoundingClientRectCallbackResult {
     __obj.asInstanceOf[BoundingClientRectCallbackResult]
   }
   
-  @scala.inline
-  implicit class BoundingClientRectCallbackResultMutableBuilder[Self <: BoundingClientRectCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: BoundingClientRectCallbackResult](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataset(value: js.Object): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: js.Object): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

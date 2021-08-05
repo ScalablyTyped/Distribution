@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions extends StObject
 object GoogleActionsV2UiElementsCarouselSelectImageDisplayOptions {
   
-  @scala.inline
-  def CROPPED: typings.actionsOnGoogle.actionsOnGoogleStrings.CROPPED = "CROPPED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CROPPED]
+  inline def CROPPED: typings.actionsOnGoogle.actionsOnGoogleStrings.CROPPED = "CROPPED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CROPPED]
   
-  @scala.inline
-  def DEFAULT: typings.actionsOnGoogle.actionsOnGoogleStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DEFAULT]
+  inline def DEFAULT: typings.actionsOnGoogle.actionsOnGoogleStrings.DEFAULT = "DEFAULT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DEFAULT]
   
-  @scala.inline
-  def WHITE: typings.actionsOnGoogle.actionsOnGoogleStrings.WHITE = "WHITE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.WHITE]
+  inline def WHITE: typings.actionsOnGoogle.actionsOnGoogleStrings.WHITE = "WHITE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.WHITE]
 }

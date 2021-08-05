@@ -39,8 +39,7 @@ trait SelectionInput extends StObject {
 }
 object SelectionInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addItem: (js.Any, js.Any, Boolean) => SelectionInput,
     setFieldName: String => SelectionInput,
     setOnChangeAction: Action => SelectionInput,
@@ -51,22 +50,16 @@ object SelectionInput {
     __obj.asInstanceOf[SelectionInput]
   }
   
-  @scala.inline
-  implicit class SelectionInputMutableBuilder[Self <: SelectionInput] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionInput](x: Self) {
     
-    @scala.inline
-    def setAddItem(value: (js.Any, js.Any, Boolean) => SelectionInput): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
+    inline def setAddItem(value: (js.Any, js.Any, Boolean) => SelectionInput): Self = StObject.set(x, "addItem", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetFieldName(value: String => SelectionInput): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
+    inline def setSetFieldName(value: String => SelectionInput): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOnChangeAction(value: Action => SelectionInput): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
+    inline def setSetOnChangeAction(value: Action => SelectionInput): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTitle(value: String => SelectionInput): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    inline def setSetTitle(value: String => SelectionInput): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetType(value: SelectionInputType => SelectionInput): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+    inline def setSetType(value: SelectionInputType => SelectionInput): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
   }
 }

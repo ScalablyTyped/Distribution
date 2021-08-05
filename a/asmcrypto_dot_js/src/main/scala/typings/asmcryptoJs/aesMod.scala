@@ -12,10 +12,10 @@ object aesMod {
   @JSImport("asmcrypto.js/dist_es8/aes/aes", "AES")
   @js.native
   abstract class AES protected () extends StObject {
-    protected def this(key: Uint8Array, iv: Unit, padding: Boolean, mode: AESMode) = this()
-    protected def this(key: Uint8Array, iv: Unit, padding: Unit, mode: AESMode) = this()
-    protected def this(key: Uint8Array, iv: Uint8Array, padding: Boolean, mode: AESMode) = this()
-    protected def this(key: Uint8Array, iv: Uint8Array, padding: Unit, mode: AESMode) = this()
+    /* protected */ def this(key: Uint8Array, iv: Unit, padding: Boolean, mode: AESMode) = this()
+    /* protected */ def this(key: Uint8Array, iv: Unit, padding: Unit, mode: AESMode) = this()
+    /* protected */ def this(key: Uint8Array, iv: Uint8Array, padding: Boolean, mode: AESMode) = this()
+    /* protected */ def this(key: Uint8Array, iv: Uint8Array, padding: Unit, mode: AESMode) = this()
     
     def AES_Decrypt_finish(): Uint8Array = js.native
     
@@ -25,16 +25,16 @@ object aesMod {
     
     def AES_Encrypt_process(data: Uint8Array): Uint8Array = js.native
     
-    val asm: AESAsm = js.native
+    /* protected */ val asm: AESAsm = js.native
     
-    val heap: Uint8Array = js.native
+    /* protected */ val heap: Uint8Array = js.native
     
-    var len: Double = js.native
+    /* protected */ var len: Double = js.native
     
-    val mode: js.Any = js.native
+    /* private */ val mode: js.Any = js.native
     
-    var padding: Boolean = js.native
+    /* protected */ var padding: Boolean = js.native
     
-    var pos: Double = js.native
+    /* protected */ var pos: Double = js.native
   }
 }

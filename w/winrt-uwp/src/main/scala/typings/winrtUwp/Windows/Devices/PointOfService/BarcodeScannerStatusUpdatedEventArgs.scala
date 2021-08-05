@@ -15,19 +15,15 @@ trait BarcodeScannerStatusUpdatedEventArgs extends StObject {
 }
 object BarcodeScannerStatusUpdatedEventArgs {
   
-  @scala.inline
-  def apply(extendedStatus: Double, status: BarcodeScannerStatus): BarcodeScannerStatusUpdatedEventArgs = {
+  inline def apply(extendedStatus: Double, status: BarcodeScannerStatus): BarcodeScannerStatusUpdatedEventArgs = {
     val __obj = js.Dynamic.literal(extendedStatus = extendedStatus.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarcodeScannerStatusUpdatedEventArgs]
   }
   
-  @scala.inline
-  implicit class BarcodeScannerStatusUpdatedEventArgsMutableBuilder[Self <: BarcodeScannerStatusUpdatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BarcodeScannerStatusUpdatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
+    inline def setExtendedStatus(value: Double): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: BarcodeScannerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BarcodeScannerStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

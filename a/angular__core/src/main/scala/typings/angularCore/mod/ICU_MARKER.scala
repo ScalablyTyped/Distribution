@@ -11,16 +11,13 @@ trait ICU_MARKER extends StObject {
 }
 object ICU_MARKER {
   
-  @scala.inline
-  def apply(): ICU_MARKER = {
+  inline def apply(): ICU_MARKER = {
     val __obj = js.Dynamic.literal(marker = "ICU")
     __obj.asInstanceOf[ICU_MARKER]
   }
   
-  @scala.inline
-  implicit class ICU_MARKERMutableBuilder[Self <: ICU_MARKER] (val x: Self) extends AnyVal {
+  extension [Self <: ICU_MARKER](x: Self) {
     
-    @scala.inline
-    def setMarker(value: ICU): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: ICU): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
   }
 }

@@ -29,8 +29,7 @@ trait Referrer extends StObject {
 }
 object Referrer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     policy: default | `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `strict-origin-when-cross-origin` | `same-origin` | `strict-origin`,
     url: String
   ): Referrer = {
@@ -38,15 +37,12 @@ object Referrer {
     __obj.asInstanceOf[Referrer]
   }
   
-  @scala.inline
-  implicit class ReferrerMutableBuilder[Self <: Referrer] (val x: Self) extends AnyVal {
+  extension [Self <: Referrer](x: Self) {
     
-    @scala.inline
-    def setPolicy(
+    inline def setPolicy(
       value: default | `unsafe-url` | `no-referrer-when-downgrade` | `no-referrer` | origin | `strict-origin-when-cross-origin` | `same-origin` | `strict-origin`
     ): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

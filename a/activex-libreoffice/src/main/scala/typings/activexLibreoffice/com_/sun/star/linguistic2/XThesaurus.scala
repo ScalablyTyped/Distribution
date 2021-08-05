@@ -31,8 +31,7 @@ trait XThesaurus
 }
 object XThesaurus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Locales: SafeArray[Locale],
     acquire: () => Unit,
     getLocales: () => SafeArray[Locale],
@@ -45,10 +44,8 @@ object XThesaurus {
     __obj.asInstanceOf[XThesaurus]
   }
   
-  @scala.inline
-  implicit class XThesaurusMutableBuilder[Self <: XThesaurus] (val x: Self) extends AnyVal {
+  extension [Self <: XThesaurus](x: Self) {
     
-    @scala.inline
-    def setQueryMeanings(value: (String, Locale, PropertyValues) => SafeArray[XMeaning]): Self = StObject.set(x, "queryMeanings", js.Any.fromFunction3(value))
+    inline def setQueryMeanings(value: (String, Locale, PropertyValues) => SafeArray[XMeaning]): Self = StObject.set(x, "queryMeanings", js.Any.fromFunction3(value))
   }
 }

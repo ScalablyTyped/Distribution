@@ -26,52 +26,37 @@ trait GoogleCloudVideointelligenceV1p1beta1LabelAnnotation extends StObject {
 }
 object GoogleCloudVideointelligenceV1p1beta1LabelAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1p1beta1LabelAnnotation = {
+  inline def apply(): GoogleCloudVideointelligenceV1p1beta1LabelAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p1beta1LabelAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1p1beta1LabelAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1p1beta1LabelAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1p1beta1LabelAnnotation](x: Self) {
     
-    @scala.inline
-    def setCategoryEntities(value: js.Array[GoogleCloudVideointelligenceV1p1beta1Entity]): Self = StObject.set(x, "categoryEntities", value.asInstanceOf[js.Any])
+    inline def setCategoryEntities(value: js.Array[GoogleCloudVideointelligenceV1p1beta1Entity]): Self = StObject.set(x, "categoryEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryEntitiesUndefined: Self = StObject.set(x, "categoryEntities", js.undefined)
+    inline def setCategoryEntitiesUndefined: Self = StObject.set(x, "categoryEntities", js.undefined)
     
-    @scala.inline
-    def setCategoryEntitiesVarargs(value: GoogleCloudVideointelligenceV1p1beta1Entity*): Self = StObject.set(x, "categoryEntities", js.Array(value :_*))
+    inline def setCategoryEntitiesVarargs(value: GoogleCloudVideointelligenceV1p1beta1Entity*): Self = StObject.set(x, "categoryEntities", js.Array(value :_*))
     
-    @scala.inline
-    def setEntity(value: GoogleCloudVideointelligenceV1p1beta1Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: GoogleCloudVideointelligenceV1p1beta1Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setFrames(value: js.Array[GoogleCloudVideointelligenceV1p1beta1LabelFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[GoogleCloudVideointelligenceV1p1beta1LabelFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
     
-    @scala.inline
-    def setFramesVarargs(value: GoogleCloudVideointelligenceV1p1beta1LabelFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: GoogleCloudVideointelligenceV1p1beta1LabelFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setSegments(value: js.Array[GoogleCloudVideointelligenceV1p1beta1LabelSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[GoogleCloudVideointelligenceV1p1beta1LabelSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1p1beta1LabelSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1p1beta1LabelSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

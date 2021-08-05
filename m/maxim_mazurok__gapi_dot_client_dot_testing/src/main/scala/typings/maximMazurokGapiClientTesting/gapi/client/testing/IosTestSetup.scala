@@ -26,46 +26,33 @@ trait IosTestSetup extends StObject {
 }
 object IosTestSetup {
   
-  @scala.inline
-  def apply(): IosTestSetup = {
+  inline def apply(): IosTestSetup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosTestSetup]
   }
   
-  @scala.inline
-  implicit class IosTestSetupMutableBuilder[Self <: IosTestSetup] (val x: Self) extends AnyVal {
+  extension [Self <: IosTestSetup](x: Self) {
     
-    @scala.inline
-    def setAdditionalIpas(value: js.Array[FileReference]): Self = StObject.set(x, "additionalIpas", value.asInstanceOf[js.Any])
+    inline def setAdditionalIpas(value: js.Array[FileReference]): Self = StObject.set(x, "additionalIpas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalIpasUndefined: Self = StObject.set(x, "additionalIpas", js.undefined)
+    inline def setAdditionalIpasUndefined: Self = StObject.set(x, "additionalIpas", js.undefined)
     
-    @scala.inline
-    def setAdditionalIpasVarargs(value: FileReference*): Self = StObject.set(x, "additionalIpas", js.Array(value :_*))
+    inline def setAdditionalIpasVarargs(value: FileReference*): Self = StObject.set(x, "additionalIpas", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
+    inline def setNetworkProfile(value: String): Self = StObject.set(x, "networkProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
+    inline def setNetworkProfileUndefined: Self = StObject.set(x, "networkProfile", js.undefined)
     
-    @scala.inline
-    def setPullDirectories(value: js.Array[IosDeviceFile]): Self = StObject.set(x, "pullDirectories", value.asInstanceOf[js.Any])
+    inline def setPullDirectories(value: js.Array[IosDeviceFile]): Self = StObject.set(x, "pullDirectories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullDirectoriesUndefined: Self = StObject.set(x, "pullDirectories", js.undefined)
+    inline def setPullDirectoriesUndefined: Self = StObject.set(x, "pullDirectories", js.undefined)
     
-    @scala.inline
-    def setPullDirectoriesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pullDirectories", js.Array(value :_*))
+    inline def setPullDirectoriesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pullDirectories", js.Array(value :_*))
     
-    @scala.inline
-    def setPushFiles(value: js.Array[IosDeviceFile]): Self = StObject.set(x, "pushFiles", value.asInstanceOf[js.Any])
+    inline def setPushFiles(value: js.Array[IosDeviceFile]): Self = StObject.set(x, "pushFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushFilesUndefined: Self = StObject.set(x, "pushFiles", js.undefined)
+    inline def setPushFilesUndefined: Self = StObject.set(x, "pushFiles", js.undefined)
     
-    @scala.inline
-    def setPushFilesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pushFiles", js.Array(value :_*))
+    inline def setPushFilesVarargs(value: IosDeviceFile*): Self = StObject.set(x, "pushFiles", js.Array(value :_*))
   }
 }

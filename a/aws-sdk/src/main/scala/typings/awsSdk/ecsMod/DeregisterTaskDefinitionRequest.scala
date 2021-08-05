@@ -13,16 +13,13 @@ trait DeregisterTaskDefinitionRequest extends StObject {
 }
 object DeregisterTaskDefinitionRequest {
   
-  @scala.inline
-  def apply(taskDefinition: String): DeregisterTaskDefinitionRequest = {
+  inline def apply(taskDefinition: String): DeregisterTaskDefinitionRequest = {
     val __obj = js.Dynamic.literal(taskDefinition = taskDefinition.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeregisterTaskDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DeregisterTaskDefinitionRequestMutableBuilder[Self <: DeregisterTaskDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterTaskDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+    inline def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
   }
 }

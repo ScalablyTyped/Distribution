@@ -30,9 +30,7 @@ object errorsMod {
     var operator: js.Any = js.native
   }
   
-  @scala.inline
-  def E(sym: js.Any, `val`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("E")(sym.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def E(sym: js.Any, `val`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("E")(sym.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def message(key: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("message")(key.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def message(key: js.Any, args: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("message")(key.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

@@ -10,16 +10,13 @@ trait IGeoWithinCommandOptions extends StObject {
 }
 object IGeoWithinCommandOptions {
   
-  @scala.inline
-  def apply(geometry: GeoPolygon | GeoMultiPolygon): IGeoWithinCommandOptions = {
+  inline def apply(geometry: GeoPolygon | GeoMultiPolygon): IGeoWithinCommandOptions = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoWithinCommandOptions]
   }
   
-  @scala.inline
-  implicit class IGeoWithinCommandOptionsMutableBuilder[Self <: IGeoWithinCommandOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGeoWithinCommandOptions](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: GeoPolygon | GeoMultiPolygon): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: GeoPolygon | GeoMultiPolygon): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
   }
 }

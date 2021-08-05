@@ -10,16 +10,13 @@ trait IgtvBrowseFeedResponseAdditionalCandidates extends StObject {
 }
 object IgtvBrowseFeedResponseAdditionalCandidates {
   
-  @scala.inline
-  def apply(igtv_first_frame: IgtvBrowseFeedResponseIgtvFirstFrame): IgtvBrowseFeedResponseAdditionalCandidates = {
+  inline def apply(igtv_first_frame: IgtvBrowseFeedResponseIgtvFirstFrame): IgtvBrowseFeedResponseAdditionalCandidates = {
     val __obj = js.Dynamic.literal(igtv_first_frame = igtv_first_frame.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgtvBrowseFeedResponseAdditionalCandidates]
   }
   
-  @scala.inline
-  implicit class IgtvBrowseFeedResponseAdditionalCandidatesMutableBuilder[Self <: IgtvBrowseFeedResponseAdditionalCandidates] (val x: Self) extends AnyVal {
+  extension [Self <: IgtvBrowseFeedResponseAdditionalCandidates](x: Self) {
     
-    @scala.inline
-    def setIgtv_first_frame(value: IgtvBrowseFeedResponseIgtvFirstFrame): Self = StObject.set(x, "igtv_first_frame", value.asInstanceOf[js.Any])
+    inline def setIgtv_first_frame(value: IgtvBrowseFeedResponseIgtvFirstFrame): Self = StObject.set(x, "igtv_first_frame", value.asInstanceOf[js.Any])
   }
 }

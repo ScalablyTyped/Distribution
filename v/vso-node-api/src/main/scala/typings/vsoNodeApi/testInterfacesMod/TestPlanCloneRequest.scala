@@ -14,25 +14,19 @@ trait TestPlanCloneRequest extends StObject {
 }
 object TestPlanCloneRequest {
   
-  @scala.inline
-  def apply(destinationTestPlan: TestPlan, options: CloneOptions, suiteIds: js.Array[Double]): TestPlanCloneRequest = {
+  inline def apply(destinationTestPlan: TestPlan, options: CloneOptions, suiteIds: js.Array[Double]): TestPlanCloneRequest = {
     val __obj = js.Dynamic.literal(destinationTestPlan = destinationTestPlan.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], suiteIds = suiteIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestPlanCloneRequest]
   }
   
-  @scala.inline
-  implicit class TestPlanCloneRequestMutableBuilder[Self <: TestPlanCloneRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TestPlanCloneRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationTestPlan(value: TestPlan): Self = StObject.set(x, "destinationTestPlan", value.asInstanceOf[js.Any])
+    inline def setDestinationTestPlan(value: TestPlan): Self = StObject.set(x, "destinationTestPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: CloneOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: CloneOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuiteIds(value: js.Array[Double]): Self = StObject.set(x, "suiteIds", value.asInstanceOf[js.Any])
+    inline def setSuiteIds(value: js.Array[Double]): Self = StObject.set(x, "suiteIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuiteIdsVarargs(value: Double*): Self = StObject.set(x, "suiteIds", js.Array(value :_*))
+    inline def setSuiteIdsVarargs(value: Double*): Self = StObject.set(x, "suiteIds", js.Array(value :_*))
   }
 }

@@ -36,8 +36,7 @@ trait XEditable extends StObject {
 }
 object XEditable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activate: () => Unit,
     destroy: () => Unit,
     disable: () => Unit,
@@ -57,49 +56,34 @@ object XEditable {
     __obj.asInstanceOf[XEditable]
   }
   
-  @scala.inline
-  implicit class XEditableMutableBuilder[Self <: XEditable] (val x: Self) extends AnyVal {
+  extension [Self <: XEditable](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: Boolean => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: Boolean => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOption(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
+    inline def setOption(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: XEditableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: XEditableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetValue(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+    inline def setSetValue(value: (js.Any, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShow(value: Boolean => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: Boolean => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubmit(value: XEditableSubmitOptions => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+    inline def setSubmit(value: XEditableSubmitOptions => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggle(value: Boolean => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+    inline def setToggle(value: Boolean => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleDisabled(value: () => Unit): Self = StObject.set(x, "toggleDisabled", js.Any.fromFunction0(value))
+    inline def setToggleDisabled(value: () => Unit): Self = StObject.set(x, "toggleDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidate(value: () => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+    inline def setValidate(value: () => Unit): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
   }
 }

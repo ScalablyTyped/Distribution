@@ -13,19 +13,15 @@ trait PinpointDestination extends StObject {
 }
 object PinpointDestination {
   
-  @scala.inline
-  def apply(): PinpointDestination = {
+  inline def apply(): PinpointDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PinpointDestination]
   }
   
-  @scala.inline
-  implicit class PinpointDestinationMutableBuilder[Self <: PinpointDestination] (val x: Self) extends AnyVal {
+  extension [Self <: PinpointDestination](x: Self) {
     
-    @scala.inline
-    def setApplicationArn(value: AmazonResourceName): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
+    inline def setApplicationArn(value: AmazonResourceName): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationArnUndefined: Self = StObject.set(x, "ApplicationArn", js.undefined)
+    inline def setApplicationArnUndefined: Self = StObject.set(x, "ApplicationArn", js.undefined)
   }
 }

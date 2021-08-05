@@ -19,18 +19,14 @@ trait ValidationAlertStyle extends StObject
 object ValidationAlertStyle {
   
   /** information message is shown and the user is asked whether the change will be accepted (defaulted to "Yes"). */
-  @scala.inline
-  def INFO: `2` = 2.asInstanceOf[`2`]
+  inline def INFO: `2` = 2.asInstanceOf[`2`]
   
   /** macro is executed. */
-  @scala.inline
-  def MACRO: `3` = 3.asInstanceOf[`3`]
+  inline def MACRO: `3` = 3.asInstanceOf[`3`]
   
   /** error message is shown and the change is rejected. */
-  @scala.inline
-  def STOP: `0` = 0.asInstanceOf[`0`]
+  inline def STOP: `0` = 0.asInstanceOf[`0`]
   
   /** warning message is shown and the user is asked whether the change will be accepted (defaulted to "No"). */
-  @scala.inline
-  def WARNING: `1` = 1.asInstanceOf[`1`]
+  inline def WARNING: `1` = 1.asInstanceOf[`1`]
 }

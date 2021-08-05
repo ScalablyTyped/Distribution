@@ -16,32 +16,24 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply(): Message = {
+    inline def apply(): Message = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+      inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+      inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
 }

@@ -18,22 +18,17 @@ trait CompleteMigrationMessage extends StObject {
 }
 object CompleteMigrationMessage {
   
-  @scala.inline
-  def apply(ReplicationGroupId: String): CompleteMigrationMessage = {
+  inline def apply(ReplicationGroupId: String): CompleteMigrationMessage = {
     val __obj = js.Dynamic.literal(ReplicationGroupId = ReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompleteMigrationMessage]
   }
   
-  @scala.inline
-  implicit class CompleteMigrationMessageMutableBuilder[Self <: CompleteMigrationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CompleteMigrationMessage](x: Self) {
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "Force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "Force", js.undefined)
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
   }
 }

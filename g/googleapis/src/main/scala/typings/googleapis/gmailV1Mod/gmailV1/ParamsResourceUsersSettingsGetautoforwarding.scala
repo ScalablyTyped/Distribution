@@ -25,25 +25,19 @@ trait ParamsResourceUsersSettingsGetautoforwarding
 }
 object ParamsResourceUsersSettingsGetautoforwarding {
   
-  @scala.inline
-  def apply(): ParamsResourceUsersSettingsGetautoforwarding = {
+  inline def apply(): ParamsResourceUsersSettingsGetautoforwarding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUsersSettingsGetautoforwarding]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUsersSettingsGetautoforwardingMutableBuilder[Self <: ParamsResourceUsersSettingsGetautoforwarding] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUsersSettingsGetautoforwarding](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

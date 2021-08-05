@@ -10,16 +10,13 @@ trait EnumValuesAzureSubscription extends StObject {
 }
 object EnumValuesAzureSubscription {
   
-  @scala.inline
-  def apply(enumValues: AzureSubscription): EnumValuesAzureSubscription = {
+  inline def apply(enumValues: AzureSubscription): EnumValuesAzureSubscription = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAzureSubscription]
   }
   
-  @scala.inline
-  implicit class EnumValuesAzureSubscriptionMutableBuilder[Self <: EnumValuesAzureSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAzureSubscription](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AzureSubscription): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AzureSubscription): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

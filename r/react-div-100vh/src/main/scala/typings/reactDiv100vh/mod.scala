@@ -36,20 +36,16 @@ object mod extends Shortcut {
   }
   object Div100vhProps {
     
-    @scala.inline
-    def apply(): Div100vhProps = {
+    inline def apply(): Div100vhProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Div100vhProps]
     }
     
-    @scala.inline
-    implicit class Div100vhPropsMutableBuilder[Self <: Div100vhProps] (val x: Self) extends AnyVal {
+    extension [Self <: Div100vhProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     }
   }
   

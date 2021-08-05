@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecordTypeEnum extends StObject
 object RecordTypeEnum {
   
-  @scala.inline
-  def adCollectionRecord: `1` = 1.asInstanceOf[`1`]
+  inline def adCollectionRecord: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adSimpleRecord: `0` = 0.asInstanceOf[`0`]
+  inline def adSimpleRecord: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adStructDoc: `2` = 2.asInstanceOf[`2`]
+  inline def adStructDoc: `2` = 2.asInstanceOf[`2`]
 }

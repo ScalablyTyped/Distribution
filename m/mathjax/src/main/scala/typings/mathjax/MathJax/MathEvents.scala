@@ -19,25 +19,19 @@ trait MathEvents extends StObject {
 }
 object MathEvents {
   
-  @scala.inline
-  def apply(): MathEvents = {
+  inline def apply(): MathEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MathEvents]
   }
   
-  @scala.inline
-  implicit class MathEventsMutableBuilder[Self <: MathEvents] (val x: Self) extends AnyVal {
+  extension [Self <: MathEvents](x: Self) {
     
-    @scala.inline
-    def setHover(value: Double): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: Double): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

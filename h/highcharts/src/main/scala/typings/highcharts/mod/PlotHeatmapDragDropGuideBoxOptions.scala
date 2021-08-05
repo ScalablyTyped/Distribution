@@ -13,19 +13,15 @@ trait PlotHeatmapDragDropGuideBoxOptions extends StObject {
 }
 object PlotHeatmapDragDropGuideBoxOptions {
   
-  @scala.inline
-  def apply(): PlotHeatmapDragDropGuideBoxOptions = {
+  inline def apply(): PlotHeatmapDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotHeatmapDragDropGuideBoxOptions]
   }
   
-  @scala.inline
-  implicit class PlotHeatmapDragDropGuideBoxOptionsMutableBuilder[Self <: PlotHeatmapDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotHeatmapDragDropGuideBoxOptions](x: Self) {
     
-    @scala.inline
-    def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

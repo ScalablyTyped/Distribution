@@ -43,58 +43,41 @@ trait CapacityProvider extends StObject {
 }
 object CapacityProvider {
   
-  @scala.inline
-  def apply(): CapacityProvider = {
+  inline def apply(): CapacityProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CapacityProvider]
   }
   
-  @scala.inline
-  implicit class CapacityProviderMutableBuilder[Self <: CapacityProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CapacityProvider](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupProvider(value: AutoScalingGroupProvider): Self = StObject.set(x, "autoScalingGroupProvider", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupProvider(value: AutoScalingGroupProvider): Self = StObject.set(x, "autoScalingGroupProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupProviderUndefined: Self = StObject.set(x, "autoScalingGroupProvider", js.undefined)
+    inline def setAutoScalingGroupProviderUndefined: Self = StObject.set(x, "autoScalingGroupProvider", js.undefined)
     
-    @scala.inline
-    def setCapacityProviderArn(value: String): Self = StObject.set(x, "capacityProviderArn", value.asInstanceOf[js.Any])
+    inline def setCapacityProviderArn(value: String): Self = StObject.set(x, "capacityProviderArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityProviderArnUndefined: Self = StObject.set(x, "capacityProviderArn", js.undefined)
+    inline def setCapacityProviderArnUndefined: Self = StObject.set(x, "capacityProviderArn", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CapacityProviderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CapacityProviderStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateStatus(value: CapacityProviderUpdateStatus): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
+    inline def setUpdateStatus(value: CapacityProviderUpdateStatus): Self = StObject.set(x, "updateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStatusReason(value: String): Self = StObject.set(x, "updateStatusReason", value.asInstanceOf[js.Any])
+    inline def setUpdateStatusReason(value: String): Self = StObject.set(x, "updateStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStatusReasonUndefined: Self = StObject.set(x, "updateStatusReason", js.undefined)
+    inline def setUpdateStatusReasonUndefined: Self = StObject.set(x, "updateStatusReason", js.undefined)
     
-    @scala.inline
-    def setUpdateStatusUndefined: Self = StObject.set(x, "updateStatus", js.undefined)
+    inline def setUpdateStatusUndefined: Self = StObject.set(x, "updateStatus", js.undefined)
   }
 }

@@ -24,55 +24,39 @@ trait PrismaticConstraintOptions
 }
 object PrismaticConstraintOptions {
   
-  @scala.inline
-  def apply(): PrismaticConstraintOptions = {
+  inline def apply(): PrismaticConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrismaticConstraintOptions]
   }
   
-  @scala.inline
-  implicit class PrismaticConstraintOptionsMutableBuilder[Self <: PrismaticConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PrismaticConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setDisableRotationalLock(value: Boolean): Self = StObject.set(x, "disableRotationalLock", value.asInstanceOf[js.Any])
+    inline def setDisableRotationalLock(value: Boolean): Self = StObject.set(x, "disableRotationalLock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableRotationalLockUndefined: Self = StObject.set(x, "disableRotationalLock", js.undefined)
+    inline def setDisableRotationalLockUndefined: Self = StObject.set(x, "disableRotationalLock", js.undefined)
     
-    @scala.inline
-    def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
+    inline def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
     
-    @scala.inline
-    def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
+    inline def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
+    inline def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
     
-    @scala.inline
-    def setLocalAxisA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAxisA", value.asInstanceOf[js.Any])
+    inline def setLocalAxisA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAxisA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalAxisAUndefined: Self = StObject.set(x, "localAxisA", js.undefined)
+    inline def setLocalAxisAUndefined: Self = StObject.set(x, "localAxisA", js.undefined)
     
-    @scala.inline
-    def setLowerLimit(value: Double): Self = StObject.set(x, "lowerLimit", value.asInstanceOf[js.Any])
+    inline def setLowerLimit(value: Double): Self = StObject.set(x, "lowerLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerLimitUndefined: Self = StObject.set(x, "lowerLimit", js.undefined)
+    inline def setLowerLimitUndefined: Self = StObject.set(x, "lowerLimit", js.undefined)
     
-    @scala.inline
-    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
+    inline def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
     
-    @scala.inline
-    def setUpperLimit(value: Double): Self = StObject.set(x, "upperLimit", value.asInstanceOf[js.Any])
+    inline def setUpperLimit(value: Double): Self = StObject.set(x, "upperLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperLimitUndefined: Self = StObject.set(x, "upperLimit", js.undefined)
+    inline def setUpperLimitUndefined: Self = StObject.set(x, "upperLimit", js.undefined)
   }
 }

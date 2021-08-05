@@ -49,58 +49,41 @@ trait LegendOptions extends StObject {
 }
 object LegendOptions {
   
-  @scala.inline
-  def apply(): LegendOptions = {
+  inline def apply(): LegendOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendOptions]
   }
   
-  @scala.inline
-  implicit class LegendOptionsMutableBuilder[Self <: LegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LegendOptions](x: Self) {
     
-    @scala.inline
-    def setEqually(value: Boolean): Self = StObject.set(x, "equally", value.asInstanceOf[js.Any])
+    inline def setEqually(value: Boolean): Self = StObject.set(x, "equally", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquallyUndefined: Self = StObject.set(x, "equally", js.undefined)
+    inline def setEquallyUndefined: Self = StObject.set(x, "equally", js.undefined)
     
-    @scala.inline
-    def setHide(value: Boolean | ArrayOrString): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    inline def setHide(value: Boolean | ArrayOrString): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
+    inline def setHideVarargs(value: String*): Self = StObject.set(x, "hide", js.Array(value :_*))
     
-    @scala.inline
-    def setInset(value: Anchor): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Anchor): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setItem(value: Onclick): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Onclick): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPosition(value: bottom | right | inset): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: bottom | right | inset): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
   }
 }

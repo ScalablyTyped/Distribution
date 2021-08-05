@@ -29,23 +29,18 @@ object mod {
   }
   object ThrottleOptions {
     
-    @scala.inline
-    def apply(rate: Double): ThrottleOptions = {
+    inline def apply(rate: Double): ThrottleOptions = {
       val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThrottleOptions]
     }
     
-    @scala.inline
-    implicit class ThrottleOptionsMutableBuilder[Self <: ThrottleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ThrottleOptions](x: Self) {
       
-      @scala.inline
-      def setChunksize(value: Double): Self = StObject.set(x, "chunksize", value.asInstanceOf[js.Any])
+      inline def setChunksize(value: Double): Self = StObject.set(x, "chunksize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunksizeUndefined: Self = StObject.set(x, "chunksize", js.undefined)
+      inline def setChunksizeUndefined: Self = StObject.set(x, "chunksize", js.undefined)
       
-      @scala.inline
-      def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+      inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     }
   }
 }

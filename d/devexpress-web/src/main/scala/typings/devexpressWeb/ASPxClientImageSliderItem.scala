@@ -41,8 +41,7 @@ trait ASPxClientImageSliderItem extends StObject {
 }
 object ASPxClientImageSliderItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     imageSlider: ASPxClientImageSlider,
     imageUrl: String,
     index: Double,
@@ -54,25 +53,18 @@ object ASPxClientImageSliderItem {
     __obj.asInstanceOf[ASPxClientImageSliderItem]
   }
   
-  @scala.inline
-  implicit class ASPxClientImageSliderItemMutableBuilder[Self <: ASPxClientImageSliderItem] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientImageSliderItem](x: Self) {
     
-    @scala.inline
-    def setImageSlider(value: ASPxClientImageSlider): Self = StObject.set(x, "imageSlider", value.asInstanceOf[js.Any])
+    inline def setImageSlider(value: ASPxClientImageSlider): Self = StObject.set(x, "imageSlider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

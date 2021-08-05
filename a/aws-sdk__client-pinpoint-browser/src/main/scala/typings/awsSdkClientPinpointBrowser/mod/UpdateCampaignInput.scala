@@ -10,8 +10,7 @@ trait UpdateCampaignInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateCampaignInputMod.UpdateCampaignInput
 object UpdateCampaignInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, CampaignId: String, WriteCampaignRequest: WriteCampaignRequest): UpdateCampaignInput = {
+  inline def apply(ApplicationId: String, CampaignId: String, WriteCampaignRequest: WriteCampaignRequest): UpdateCampaignInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], CampaignId = CampaignId.asInstanceOf[js.Any], WriteCampaignRequest = WriteCampaignRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCampaignInput]
   }

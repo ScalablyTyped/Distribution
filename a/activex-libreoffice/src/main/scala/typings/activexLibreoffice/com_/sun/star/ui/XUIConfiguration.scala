@@ -37,8 +37,7 @@ trait XUIConfiguration
 }
 object XUIConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addConfigurationListener: XUIConfigurationListener => Unit,
     queryInterface: `type` => js.Any,
@@ -49,13 +48,10 @@ object XUIConfiguration {
     __obj.asInstanceOf[XUIConfiguration]
   }
   
-  @scala.inline
-  implicit class XUIConfigurationMutableBuilder[Self <: XUIConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: XUIConfiguration](x: Self) {
     
-    @scala.inline
-    def setAddConfigurationListener(value: XUIConfigurationListener => Unit): Self = StObject.set(x, "addConfigurationListener", js.Any.fromFunction1(value))
+    inline def setAddConfigurationListener(value: XUIConfigurationListener => Unit): Self = StObject.set(x, "addConfigurationListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveConfigurationListener(value: XUIConfigurationListener => Unit): Self = StObject.set(x, "removeConfigurationListener", js.Any.fromFunction1(value))
+    inline def setRemoveConfigurationListener(value: XUIConfigurationListener => Unit): Self = StObject.set(x, "removeConfigurationListener", js.Any.fromFunction1(value))
   }
 }

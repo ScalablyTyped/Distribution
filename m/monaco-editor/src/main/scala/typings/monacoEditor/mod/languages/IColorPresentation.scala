@@ -27,31 +27,23 @@ trait IColorPresentation extends StObject {
 }
 object IColorPresentation {
   
-  @scala.inline
-  def apply(label: String): IColorPresentation = {
+  inline def apply(label: String): IColorPresentation = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColorPresentation]
   }
   
-  @scala.inline
-  implicit class IColorPresentationMutableBuilder[Self <: IColorPresentation] (val x: Self) extends AnyVal {
+  extension [Self <: IColorPresentation](x: Self) {
     
-    @scala.inline
-    def setAdditionalTextEdits(value: js.Array[TextEdit]): Self = StObject.set(x, "additionalTextEdits", value.asInstanceOf[js.Any])
+    inline def setAdditionalTextEdits(value: js.Array[TextEdit]): Self = StObject.set(x, "additionalTextEdits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalTextEditsUndefined: Self = StObject.set(x, "additionalTextEdits", js.undefined)
+    inline def setAdditionalTextEditsUndefined: Self = StObject.set(x, "additionalTextEdits", js.undefined)
     
-    @scala.inline
-    def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value :_*))
+    inline def setAdditionalTextEditsVarargs(value: TextEdit*): Self = StObject.set(x, "additionalTextEdits", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextEdit(value: TextEdit): Self = StObject.set(x, "textEdit", value.asInstanceOf[js.Any])
+    inline def setTextEdit(value: TextEdit): Self = StObject.set(x, "textEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextEditUndefined: Self = StObject.set(x, "textEdit", js.undefined)
+    inline def setTextEditUndefined: Self = StObject.set(x, "textEdit", js.undefined)
   }
 }

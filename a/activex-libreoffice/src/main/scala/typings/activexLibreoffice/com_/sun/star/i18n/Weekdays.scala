@@ -25,25 +25,18 @@ object Weekdays {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FRIDAY: `5` = 5.asInstanceOf[`5`]
+    inline def FRIDAY: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def MONDAY: `1` = 1.asInstanceOf[`1`]
+    inline def MONDAY: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SATURDAY: `6` = 6.asInstanceOf[`6`]
+    inline def SATURDAY: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def SUNDAY: `0` = 0.asInstanceOf[`0`]
+    inline def SUNDAY: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def THURSDAY: `4` = 4.asInstanceOf[`4`]
+    inline def THURSDAY: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def TUESDAY: `2` = 2.asInstanceOf[`2`]
+    inline def TUESDAY: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def WEDNESDAY: `3` = 3.asInstanceOf[`3`]
+    inline def WEDNESDAY: `3` = 3.asInstanceOf[`3`]
   }
 }

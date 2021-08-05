@@ -10,9 +10,7 @@ object assertionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assertArrayOfStrings(identifier: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertArrayOfStrings")(identifier.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assertArrayOfStrings(identifier: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertArrayOfStrings")(identifier.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def assertInterpolationSymbols(identifier: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertInterpolationSymbols")(identifier.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assertInterpolationSymbols(identifier: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertInterpolationSymbols")(identifier.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

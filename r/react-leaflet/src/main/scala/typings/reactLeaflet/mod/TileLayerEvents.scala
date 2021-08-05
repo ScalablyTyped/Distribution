@@ -22,49 +22,35 @@ trait TileLayerEvents extends StObject {
 }
 object TileLayerEvents {
   
-  @scala.inline
-  def apply(): TileLayerEvents = {
+  inline def apply(): TileLayerEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileLayerEvents]
   }
   
-  @scala.inline
-  implicit class TileLayerEventsMutableBuilder[Self <: TileLayerEvents] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayerEvents](x: Self) {
     
-    @scala.inline
-    def setOnload(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
+    inline def setOnload(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
+    inline def setOnloadUndefined: Self = StObject.set(x, "onload", js.undefined)
     
-    @scala.inline
-    def setOnloading(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onloading", js.Any.fromFunction1(value))
+    inline def setOnloading(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "onloading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnloadingUndefined: Self = StObject.set(x, "onloading", js.undefined)
+    inline def setOnloadingUndefined: Self = StObject.set(x, "onloading", js.undefined)
     
-    @scala.inline
-    def setOntileerror(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileerror", js.Any.fromFunction1(value))
+    inline def setOntileerror(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileerror", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOntileerrorUndefined: Self = StObject.set(x, "ontileerror", js.undefined)
+    inline def setOntileerrorUndefined: Self = StObject.set(x, "ontileerror", js.undefined)
     
-    @scala.inline
-    def setOntileload(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileload", js.Any.fromFunction1(value))
+    inline def setOntileload(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOntileloadUndefined: Self = StObject.set(x, "ontileload", js.undefined)
+    inline def setOntileloadUndefined: Self = StObject.set(x, "ontileload", js.undefined)
     
-    @scala.inline
-    def setOntileloadstart(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileloadstart", js.Any.fromFunction1(value))
+    inline def setOntileloadstart(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileloadstart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOntileloadstartUndefined: Self = StObject.set(x, "ontileloadstart", js.undefined)
+    inline def setOntileloadstartUndefined: Self = StObject.set(x, "ontileloadstart", js.undefined)
     
-    @scala.inline
-    def setOntileunload(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileunload", js.Any.fromFunction1(value))
+    inline def setOntileunload(value: /* event */ TileEvent => Unit): Self = StObject.set(x, "ontileunload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOntileunloadUndefined: Self = StObject.set(x, "ontileunload", js.undefined)
+    inline def setOntileunloadUndefined: Self = StObject.set(x, "ontileunload", js.undefined)
   }
 }

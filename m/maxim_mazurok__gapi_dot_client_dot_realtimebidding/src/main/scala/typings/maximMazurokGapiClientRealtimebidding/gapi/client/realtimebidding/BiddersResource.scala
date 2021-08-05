@@ -12,19 +12,15 @@ trait BiddersResource extends StObject {
 }
 object BiddersResource {
   
-  @scala.inline
-  def apply(creatives: CreativesResource, pretargetingConfigs: PretargetingConfigsResource): BiddersResource = {
+  inline def apply(creatives: CreativesResource, pretargetingConfigs: PretargetingConfigsResource): BiddersResource = {
     val __obj = js.Dynamic.literal(creatives = creatives.asInstanceOf[js.Any], pretargetingConfigs = pretargetingConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiddersResource]
   }
   
-  @scala.inline
-  implicit class BiddersResourceMutableBuilder[Self <: BiddersResource] (val x: Self) extends AnyVal {
+  extension [Self <: BiddersResource](x: Self) {
     
-    @scala.inline
-    def setCreatives(value: CreativesResource): Self = StObject.set(x, "creatives", value.asInstanceOf[js.Any])
+    inline def setCreatives(value: CreativesResource): Self = StObject.set(x, "creatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPretargetingConfigs(value: PretargetingConfigsResource): Self = StObject.set(x, "pretargetingConfigs", value.asInstanceOf[js.Any])
+    inline def setPretargetingConfigs(value: PretargetingConfigsResource): Self = StObject.set(x, "pretargetingConfigs", value.asInstanceOf[js.Any])
   }
 }

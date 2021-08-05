@@ -61,8 +61,7 @@ trait ASPxClientWeekDays extends StObject {
 }
 object ASPxClientWeekDays {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EveryDay: Double,
     Friday: Double,
     Monday: Double,
@@ -78,37 +77,26 @@ object ASPxClientWeekDays {
     __obj.asInstanceOf[ASPxClientWeekDays]
   }
   
-  @scala.inline
-  implicit class ASPxClientWeekDaysMutableBuilder[Self <: ASPxClientWeekDays] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWeekDays](x: Self) {
     
-    @scala.inline
-    def setEveryDay(value: Double): Self = StObject.set(x, "EveryDay", value.asInstanceOf[js.Any])
+    inline def setEveryDay(value: Double): Self = StObject.set(x, "EveryDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriday(value: Double): Self = StObject.set(x, "Friday", value.asInstanceOf[js.Any])
+    inline def setFriday(value: Double): Self = StObject.set(x, "Friday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonday(value: Double): Self = StObject.set(x, "Monday", value.asInstanceOf[js.Any])
+    inline def setMonday(value: Double): Self = StObject.set(x, "Monday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaturday(value: Double): Self = StObject.set(x, "Saturday", value.asInstanceOf[js.Any])
+    inline def setSaturday(value: Double): Self = StObject.set(x, "Saturday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSunday(value: Double): Self = StObject.set(x, "Sunday", value.asInstanceOf[js.Any])
+    inline def setSunday(value: Double): Self = StObject.set(x, "Sunday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThursday(value: Double): Self = StObject.set(x, "Thursday", value.asInstanceOf[js.Any])
+    inline def setThursday(value: Double): Self = StObject.set(x, "Thursday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTuesday(value: Double): Self = StObject.set(x, "Tuesday", value.asInstanceOf[js.Any])
+    inline def setTuesday(value: Double): Self = StObject.set(x, "Tuesday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWednesday(value: Double): Self = StObject.set(x, "Wednesday", value.asInstanceOf[js.Any])
+    inline def setWednesday(value: Double): Self = StObject.set(x, "Wednesday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekendDays(value: Double): Self = StObject.set(x, "WeekendDays", value.asInstanceOf[js.Any])
+    inline def setWeekendDays(value: Double): Self = StObject.set(x, "WeekendDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkDays(value: Double): Self = StObject.set(x, "WorkDays", value.asInstanceOf[js.Any])
+    inline def setWorkDays(value: Double): Self = StObject.set(x, "WorkDays", value.asInstanceOf[js.Any])
   }
 }

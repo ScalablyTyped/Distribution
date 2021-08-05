@@ -10,8 +10,7 @@ trait LineChartMediaInfoProperties
      with ChartMediaInfoProperties
 object LineChartMediaInfoProperties {
   
-  @scala.inline
-  def apply(): LineChartMediaInfoProperties = {
+  inline def apply(): LineChartMediaInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineChartMediaInfoProperties]
   }

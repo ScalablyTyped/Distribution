@@ -21,27 +21,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Methods extends StObject
 object Methods {
   
-  @scala.inline
-  def DELETE: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE = "DELETE".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE]
+  inline def DELETE: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE = "DELETE".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE]
   
-  @scala.inline
-  def GET: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET = "GET".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET]
+  inline def GET: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET = "GET".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET]
   
-  @scala.inline
-  def POST: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST = "POST".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST]
+  inline def POST: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST = "POST".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST]
   
-  @scala.inline
-  def PUT: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT = "PUT".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT]
+  inline def PUT: typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT = "PUT".asInstanceOf[typings.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT]
   
-  @scala.inline
-  def delete: delete_ = "delete".asInstanceOf[delete_]
+  inline def delete: delete_ = "delete".asInstanceOf[delete_]
   
-  @scala.inline
-  def get: get_ = "get".asInstanceOf[get_]
+  inline def get: get_ = "get".asInstanceOf[get_]
   
-  @scala.inline
-  def post: post_ = "post".asInstanceOf[post_]
+  inline def post: post_ = "post".asInstanceOf[post_]
   
-  @scala.inline
-  def put: put_ = "put".asInstanceOf[put_]
+  inline def put: put_ = "put".asInstanceOf[put_]
 }

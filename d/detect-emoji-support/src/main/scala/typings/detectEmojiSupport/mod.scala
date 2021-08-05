@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def emojiSupport(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emojiSupport")().asInstanceOf[Boolean]
+  inline def emojiSupport(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emojiSupport")().asInstanceOf[Boolean]
 }

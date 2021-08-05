@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmShowListWhen extends StObject
 object fmShowListWhen {
   
-  @scala.inline
-  def fmShowListWhenAlways: `3` = 3.asInstanceOf[`3`]
+  inline def fmShowListWhenAlways: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def fmShowListWhenButton: `1` = 1.asInstanceOf[`1`]
+  inline def fmShowListWhenButton: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmShowListWhenFocus: `2` = 2.asInstanceOf[`2`]
+  inline def fmShowListWhenFocus: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmShowListWhenNever: `0` = 0.asInstanceOf[`0`]
+  inline def fmShowListWhenNever: `0` = 0.asInstanceOf[`0`]
 }

@@ -26,31 +26,23 @@ trait StatusBarPropsIOS extends StObject {
 }
 object StatusBarPropsIOS {
   
-  @scala.inline
-  def apply(): StatusBarPropsIOS = {
+  inline def apply(): StatusBarPropsIOS = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatusBarPropsIOS]
   }
   
-  @scala.inline
-  implicit class StatusBarPropsIOSMutableBuilder[Self <: StatusBarPropsIOS] (val x: Self) extends AnyVal {
+  extension [Self <: StatusBarPropsIOS](x: Self) {
     
-    @scala.inline
-    def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    inline def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
     
-    @scala.inline
-    def setNetworkActivityIndicatorVisible(value: Boolean): Self = StObject.set(x, "networkActivityIndicatorVisible", value.asInstanceOf[js.Any])
+    inline def setNetworkActivityIndicatorVisible(value: Boolean): Self = StObject.set(x, "networkActivityIndicatorVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkActivityIndicatorVisibleUndefined: Self = StObject.set(x, "networkActivityIndicatorVisible", js.undefined)
+    inline def setNetworkActivityIndicatorVisibleUndefined: Self = StObject.set(x, "networkActivityIndicatorVisible", js.undefined)
     
-    @scala.inline
-    def setShowHideTransition(value: fade | slide): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
+    inline def setShowHideTransition(value: fade | slide): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowHideTransitionUndefined: Self = StObject.set(x, "showHideTransition", js.undefined)
+    inline def setShowHideTransitionUndefined: Self = StObject.set(x, "showHideTransition", js.undefined)
   }
 }

@@ -130,8 +130,7 @@ trait DataPilotField
 }
 object DataPilotField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoShowInfo: DataPilotFieldAutoShowInfo,
     Function: GeneralFunction,
     Function2: Double,
@@ -174,64 +173,44 @@ object DataPilotField {
     __obj.asInstanceOf[DataPilotField]
   }
   
-  @scala.inline
-  implicit class DataPilotFieldMutableBuilder[Self <: DataPilotField] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotField](x: Self) {
     
-    @scala.inline
-    def setAutoShowInfo(value: DataPilotFieldAutoShowInfo): Self = StObject.set(x, "AutoShowInfo", value.asInstanceOf[js.Any])
+    inline def setAutoShowInfo(value: DataPilotFieldAutoShowInfo): Self = StObject.set(x, "AutoShowInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: GeneralFunction): Self = StObject.set(x, "Function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunction2(value: Double): Self = StObject.set(x, "Function2", value.asInstanceOf[js.Any])
+    inline def setFunction2(value: Double): Self = StObject.set(x, "Function2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupInfo(value: DataPilotFieldGroupInfo): Self = StObject.set(x, "GroupInfo", value.asInstanceOf[js.Any])
+    inline def setGroupInfo(value: DataPilotFieldGroupInfo): Self = StObject.set(x, "GroupInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAutoShowInfo(value: Boolean): Self = StObject.set(x, "HasAutoShowInfo", value.asInstanceOf[js.Any])
+    inline def setHasAutoShowInfo(value: Boolean): Self = StObject.set(x, "HasAutoShowInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasLayoutInfo(value: Boolean): Self = StObject.set(x, "HasLayoutInfo", value.asInstanceOf[js.Any])
+    inline def setHasLayoutInfo(value: Boolean): Self = StObject.set(x, "HasLayoutInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasReference(value: Boolean): Self = StObject.set(x, "HasReference", value.asInstanceOf[js.Any])
+    inline def setHasReference(value: Boolean): Self = StObject.set(x, "HasReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSortInfo(value: Boolean): Self = StObject.set(x, "HasSortInfo", value.asInstanceOf[js.Any])
+    inline def setHasSortInfo(value: Boolean): Self = StObject.set(x, "HasSortInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroupField(value: Boolean): Self = StObject.set(x, "IsGroupField", value.asInstanceOf[js.Any])
+    inline def setIsGroupField(value: Boolean): Self = StObject.set(x, "IsGroupField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutInfo(value: DataPilotFieldLayoutInfo): Self = StObject.set(x, "LayoutInfo", value.asInstanceOf[js.Any])
+    inline def setLayoutInfo(value: DataPilotFieldLayoutInfo): Self = StObject.set(x, "LayoutInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: DataPilotFieldOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: DataPilotFieldOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: DataPilotFieldReference): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: DataPilotFieldReference): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedPage(value: String): Self = StObject.set(x, "SelectedPage", value.asInstanceOf[js.Any])
+    inline def setSelectedPage(value: String): Self = StObject.set(x, "SelectedPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowEmpty(value: Boolean): Self = StObject.set(x, "ShowEmpty", value.asInstanceOf[js.Any])
+    inline def setShowEmpty(value: Boolean): Self = StObject.set(x, "ShowEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortInfo(value: DataPilotFieldSortInfo): Self = StObject.set(x, "SortInfo", value.asInstanceOf[js.Any])
+    inline def setSortInfo(value: DataPilotFieldSortInfo): Self = StObject.set(x, "SortInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotals(value: SafeArray[GeneralFunction]): Self = StObject.set(x, "Subtotals", value.asInstanceOf[js.Any])
+    inline def setSubtotals(value: SafeArray[GeneralFunction]): Self = StObject.set(x, "Subtotals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotals2(value: SafeArray[Double]): Self = StObject.set(x, "Subtotals2", value.asInstanceOf[js.Any])
+    inline def setSubtotals2(value: SafeArray[Double]): Self = StObject.set(x, "Subtotals2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseSelectedPage(value: Boolean): Self = StObject.set(x, "UseSelectedPage", value.asInstanceOf[js.Any])
+    inline def setUseSelectedPage(value: Boolean): Self = StObject.set(x, "UseSelectedPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedHierarchy(value: String): Self = StObject.set(x, "UsedHierarchy", value.asInstanceOf[js.Any])
+    inline def setUsedHierarchy(value: String): Self = StObject.set(x, "UsedHierarchy", value.asInstanceOf[js.Any])
   }
 }

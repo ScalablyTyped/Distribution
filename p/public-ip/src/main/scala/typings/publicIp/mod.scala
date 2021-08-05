@@ -24,10 +24,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def v4(): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[CancelablePromise[String]]
-  @scala.inline
-  def v4(options: Options): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[CancelablePromise[String]]
+  inline def v4(): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")().asInstanceOf[CancelablePromise[String]]
+  inline def v4(options: Options): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(options.asInstanceOf[js.Any]).asInstanceOf[CancelablePromise[String]]
   
   /**
   	Get your public IP address - very fast!
@@ -43,10 +41,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def v6(): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")().asInstanceOf[CancelablePromise[String]]
-  @scala.inline
-  def v6(options: Options): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")(options.asInstanceOf[js.Any]).asInstanceOf[CancelablePromise[String]]
+  inline def v6(): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")().asInstanceOf[CancelablePromise[String]]
+  inline def v6(options: Options): CancelablePromise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")(options.asInstanceOf[js.Any]).asInstanceOf[CancelablePromise[String]]
   
   @js.native
   trait CancelablePromise[T]
@@ -88,35 +84,26 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFallbackUrls(value: js.Array[String]): Self = StObject.set(x, "fallbackUrls", value.asInstanceOf[js.Any])
+      inline def setFallbackUrls(value: js.Array[String]): Self = StObject.set(x, "fallbackUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUrlsUndefined: Self = StObject.set(x, "fallbackUrls", js.undefined)
+      inline def setFallbackUrlsUndefined: Self = StObject.set(x, "fallbackUrls", js.undefined)
       
-      @scala.inline
-      def setFallbackUrlsVarargs(value: String*): Self = StObject.set(x, "fallbackUrls", js.Array(value :_*))
+      inline def setFallbackUrlsVarargs(value: String*): Self = StObject.set(x, "fallbackUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setOnlyHttps(value: Boolean): Self = StObject.set(x, "onlyHttps", value.asInstanceOf[js.Any])
+      inline def setOnlyHttps(value: Boolean): Self = StObject.set(x, "onlyHttps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyHttpsUndefined: Self = StObject.set(x, "onlyHttps", js.undefined)
+      inline def setOnlyHttpsUndefined: Self = StObject.set(x, "onlyHttps", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

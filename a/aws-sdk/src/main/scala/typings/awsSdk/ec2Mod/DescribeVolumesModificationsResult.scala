@@ -18,28 +18,21 @@ trait DescribeVolumesModificationsResult extends StObject {
 }
 object DescribeVolumesModificationsResult {
   
-  @scala.inline
-  def apply(): DescribeVolumesModificationsResult = {
+  inline def apply(): DescribeVolumesModificationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVolumesModificationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeVolumesModificationsResultMutableBuilder[Self <: DescribeVolumesModificationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVolumesModificationsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVolumesModifications(value: VolumeModificationList): Self = StObject.set(x, "VolumesModifications", value.asInstanceOf[js.Any])
+    inline def setVolumesModifications(value: VolumeModificationList): Self = StObject.set(x, "VolumesModifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesModificationsUndefined: Self = StObject.set(x, "VolumesModifications", js.undefined)
+    inline def setVolumesModificationsUndefined: Self = StObject.set(x, "VolumesModifications", js.undefined)
     
-    @scala.inline
-    def setVolumesModificationsVarargs(value: VolumeModification*): Self = StObject.set(x, "VolumesModifications", js.Array(value :_*))
+    inline def setVolumesModificationsVarargs(value: VolumeModification*): Self = StObject.set(x, "VolumesModifications", js.Array(value :_*))
   }
 }

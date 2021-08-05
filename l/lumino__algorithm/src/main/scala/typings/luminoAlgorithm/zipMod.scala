@@ -24,7 +24,7 @@ object zipMod {
       */
     def this(source: js.Array[IIterator[T]]) = this()
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -59,6 +59,5 @@ object zipMod {
     override def next(): js.UndefOr[js.Array[T]] = js.native
   }
   
-  @scala.inline
-  def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(objects.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Array[T]]]
+  inline def zip[T](objects: IterableOrArrayLike[T]*): IIterator[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(objects.asInstanceOf[js.Any]).asInstanceOf[IIterator[js.Array[T]]]
 }

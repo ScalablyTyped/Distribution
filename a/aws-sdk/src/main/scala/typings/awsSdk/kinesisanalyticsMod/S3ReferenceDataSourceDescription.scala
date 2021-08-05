@@ -23,22 +23,17 @@ trait S3ReferenceDataSourceDescription extends StObject {
 }
 object S3ReferenceDataSourceDescription {
   
-  @scala.inline
-  def apply(BucketARN: BucketARN, FileKey: FileKey, ReferenceRoleARN: RoleARN): S3ReferenceDataSourceDescription = {
+  inline def apply(BucketARN: BucketARN, FileKey: FileKey, ReferenceRoleARN: RoleARN): S3ReferenceDataSourceDescription = {
     val __obj = js.Dynamic.literal(BucketARN = BucketARN.asInstanceOf[js.Any], FileKey = FileKey.asInstanceOf[js.Any], ReferenceRoleARN = ReferenceRoleARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3ReferenceDataSourceDescription]
   }
   
-  @scala.inline
-  implicit class S3ReferenceDataSourceDescriptionMutableBuilder[Self <: S3ReferenceDataSourceDescription] (val x: Self) extends AnyVal {
+  extension [Self <: S3ReferenceDataSourceDescription](x: Self) {
     
-    @scala.inline
-    def setBucketARN(value: BucketARN): Self = StObject.set(x, "BucketARN", value.asInstanceOf[js.Any])
+    inline def setBucketARN(value: BucketARN): Self = StObject.set(x, "BucketARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileKey(value: FileKey): Self = StObject.set(x, "FileKey", value.asInstanceOf[js.Any])
+    inline def setFileKey(value: FileKey): Self = StObject.set(x, "FileKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceRoleARN(value: RoleARN): Self = StObject.set(x, "ReferenceRoleARN", value.asInstanceOf[js.Any])
+    inline def setReferenceRoleARN(value: RoleARN): Self = StObject.set(x, "ReferenceRoleARN", value.asInstanceOf[js.Any])
   }
 }

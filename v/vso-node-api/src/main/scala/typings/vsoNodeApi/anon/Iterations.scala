@@ -14,22 +14,17 @@ trait Iterations extends StObject {
 }
 object Iterations {
   
-  @scala.inline
-  def apply(iterations: scala.Double, none: scala.Double, workItems: scala.Double): Iterations = {
+  inline def apply(iterations: scala.Double, none: scala.Double, workItems: scala.Double): Iterations = {
     val __obj = js.Dynamic.literal(iterations = iterations.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], workItems = workItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[Iterations]
   }
   
-  @scala.inline
-  implicit class IterationsMutableBuilder[Self <: Iterations] (val x: Self) extends AnyVal {
+  extension [Self <: Iterations](x: Self) {
     
-    @scala.inline
-    def setIterations(value: scala.Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: scala.Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItems(value: scala.Double): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
+    inline def setWorkItems(value: scala.Double): Self = StObject.set(x, "workItems", value.asInstanceOf[js.Any])
   }
 }

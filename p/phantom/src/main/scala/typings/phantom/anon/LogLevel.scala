@@ -20,37 +20,27 @@ trait LogLevel extends StObject {
 }
 object LogLevel {
   
-  @scala.inline
-  def apply(): LogLevel = {
+  inline def apply(): LogLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogLevel]
   }
   
-  @scala.inline
-  implicit class LogLevelMutableBuilder[Self <: LogLevel] (val x: Self) extends AnyVal {
+  extension [Self <: LogLevel](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: debug | info | warn | error): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: debug | info | warn | error): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setLogger(value: Debug): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: Debug): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
-    @scala.inline
-    def setPhantomPath(value: String): Self = StObject.set(x, "phantomPath", value.asInstanceOf[js.Any])
+    inline def setPhantomPath(value: String): Self = StObject.set(x, "phantomPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhantomPathUndefined: Self = StObject.set(x, "phantomPath", js.undefined)
+    inline def setPhantomPathUndefined: Self = StObject.set(x, "phantomPath", js.undefined)
     
-    @scala.inline
-    def setShimPath(value: String): Self = StObject.set(x, "shimPath", value.asInstanceOf[js.Any])
+    inline def setShimPath(value: String): Self = StObject.set(x, "shimPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShimPathUndefined: Self = StObject.set(x, "shimPath", js.undefined)
+    inline def setShimPathUndefined: Self = StObject.set(x, "shimPath", js.undefined)
   }
 }

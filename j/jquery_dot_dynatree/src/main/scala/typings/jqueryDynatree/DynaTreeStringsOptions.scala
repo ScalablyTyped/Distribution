@@ -12,25 +12,19 @@ trait DynaTreeStringsOptions extends StObject {
 }
 object DynaTreeStringsOptions {
   
-  @scala.inline
-  def apply(): DynaTreeStringsOptions = {
+  inline def apply(): DynaTreeStringsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynaTreeStringsOptions]
   }
   
-  @scala.inline
-  implicit class DynaTreeStringsOptionsMutableBuilder[Self <: DynaTreeStringsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DynaTreeStringsOptions](x: Self) {
     
-    @scala.inline
-    def setLoadError(value: String): Self = StObject.set(x, "loadError", value.asInstanceOf[js.Any])
+    inline def setLoadError(value: String): Self = StObject.set(x, "loadError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadErrorUndefined: Self = StObject.set(x, "loadError", js.undefined)
+    inline def setLoadErrorUndefined: Self = StObject.set(x, "loadError", js.undefined)
     
-    @scala.inline
-    def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
   }
 }

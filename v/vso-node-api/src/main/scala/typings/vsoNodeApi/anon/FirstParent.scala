@@ -16,8 +16,7 @@ trait FirstParent extends StObject {
 }
 object FirstParent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     firstParent: scala.Double,
     fullHistory: scala.Double,
     fullHistorySimplifyMerges: scala.Double,
@@ -27,19 +26,14 @@ object FirstParent {
     __obj.asInstanceOf[FirstParent]
   }
   
-  @scala.inline
-  implicit class FirstParentMutableBuilder[Self <: FirstParent] (val x: Self) extends AnyVal {
+  extension [Self <: FirstParent](x: Self) {
     
-    @scala.inline
-    def setFirstParent(value: scala.Double): Self = StObject.set(x, "firstParent", value.asInstanceOf[js.Any])
+    inline def setFirstParent(value: scala.Double): Self = StObject.set(x, "firstParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullHistory(value: scala.Double): Self = StObject.set(x, "fullHistory", value.asInstanceOf[js.Any])
+    inline def setFullHistory(value: scala.Double): Self = StObject.set(x, "fullHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullHistorySimplifyMerges(value: scala.Double): Self = StObject.set(x, "fullHistorySimplifyMerges", value.asInstanceOf[js.Any])
+    inline def setFullHistorySimplifyMerges(value: scala.Double): Self = StObject.set(x, "fullHistorySimplifyMerges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimplifiedHistory(value: scala.Double): Self = StObject.set(x, "simplifiedHistory", value.asInstanceOf[js.Any])
+    inline def setSimplifiedHistory(value: scala.Double): Self = StObject.set(x, "simplifiedHistory", value.asInstanceOf[js.Any])
   }
 }

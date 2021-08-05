@@ -11,16 +11,13 @@ trait Port extends StObject {
 }
 object Port {
   
-  @scala.inline
-  def apply(): Port = {
+  inline def apply(): Port = {
     val __obj = js.Dynamic.literal(port = 6006)
     __obj.asInstanceOf[Port]
   }
   
-  @scala.inline
-  implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+  extension [Self <: Port](x: Self) {
     
-    @scala.inline
-    def setPort(value: `6006`): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: `6006`): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

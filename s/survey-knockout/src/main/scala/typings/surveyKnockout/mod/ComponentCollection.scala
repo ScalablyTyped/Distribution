@@ -38,6 +38,5 @@ object ComponentCollection {
   @JSImport("survey-knockout", "ComponentCollection.Instance")
   @js.native
   def Instance: ComponentCollection = js.native
-  @scala.inline
-  def Instance_=(x: ComponentCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
+  inline def Instance_=(x: ComponentCollection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instance")(x.asInstanceOf[js.Any])
 }

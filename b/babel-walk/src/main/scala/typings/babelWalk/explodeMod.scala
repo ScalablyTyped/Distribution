@@ -10,6 +10,5 @@ object explodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

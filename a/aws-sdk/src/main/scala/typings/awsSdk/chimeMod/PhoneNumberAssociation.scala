@@ -23,31 +23,23 @@ trait PhoneNumberAssociation extends StObject {
 }
 object PhoneNumberAssociation {
   
-  @scala.inline
-  def apply(): PhoneNumberAssociation = {
+  inline def apply(): PhoneNumberAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PhoneNumberAssociation]
   }
   
-  @scala.inline
-  implicit class PhoneNumberAssociationMutableBuilder[Self <: PhoneNumberAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneNumberAssociation](x: Self) {
     
-    @scala.inline
-    def setAssociatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "AssociatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setAssociatedTimestamp(value: Iso8601Timestamp): Self = StObject.set(x, "AssociatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedTimestampUndefined: Self = StObject.set(x, "AssociatedTimestamp", js.undefined)
+    inline def setAssociatedTimestampUndefined: Self = StObject.set(x, "AssociatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setName(value: PhoneNumberAssociationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: PhoneNumberAssociationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

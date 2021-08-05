@@ -31,34 +31,25 @@ trait SharePhotoContent
 }
 object SharePhotoContent {
   
-  @scala.inline
-  def apply(photos: js.Array[SharePhoto]): SharePhotoContent = {
+  inline def apply(photos: js.Array[SharePhoto]): SharePhotoContent = {
     val __obj = js.Dynamic.literal(contentType = "photo", photos = photos.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharePhotoContent]
   }
   
-  @scala.inline
-  implicit class SharePhotoContentMutableBuilder[Self <: SharePhotoContent] (val x: Self) extends AnyVal {
+  extension [Self <: SharePhotoContent](x: Self) {
     
-    @scala.inline
-    def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
+    inline def setCommonParameters(value: ShareContentCommonParameters): Self = StObject.set(x, "commonParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
+    inline def setCommonParametersUndefined: Self = StObject.set(x, "commonParameters", js.undefined)
     
-    @scala.inline
-    def setContentType(value: photo): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: photo): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
-    @scala.inline
-    def setPhotos(value: js.Array[SharePhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
+    inline def setPhotos(value: js.Array[SharePhoto]): Self = StObject.set(x, "photos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosVarargs(value: SharePhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
+    inline def setPhotosVarargs(value: SharePhoto*): Self = StObject.set(x, "photos", js.Array(value :_*))
   }
 }

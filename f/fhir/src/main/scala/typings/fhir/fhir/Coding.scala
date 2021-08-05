@@ -63,73 +63,51 @@ trait Coding
 }
 object Coding {
   
-  @scala.inline
-  def apply(): Coding = {
+  inline def apply(): Coding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Coding]
   }
   
-  @scala.inline
-  implicit class CodingMutableBuilder[Self <: Coding] (val x: Self) extends AnyVal {
+  extension [Self <: Coding](x: Self) {
     
-    @scala.inline
-    def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
-    @scala.inline
-    def setUserSelected(value: Boolean): Self = StObject.set(x, "userSelected", value.asInstanceOf[js.Any])
+    inline def setUserSelected(value: Boolean): Self = StObject.set(x, "userSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSelectedUndefined: Self = StObject.set(x, "userSelected", js.undefined)
+    inline def setUserSelectedUndefined: Self = StObject.set(x, "userSelected", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
+    inline def set_code(value: Element): Self = StObject.set(x, "_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
+    inline def set_codeUndefined: Self = StObject.set(x, "_code", js.undefined)
     
-    @scala.inline
-    def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
+    inline def set_display(value: Element): Self = StObject.set(x, "_display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
+    inline def set_displayUndefined: Self = StObject.set(x, "_display", js.undefined)
     
-    @scala.inline
-    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
+    inline def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
+    inline def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
-    @scala.inline
-    def set_userSelected(value: Element): Self = StObject.set(x, "_userSelected", value.asInstanceOf[js.Any])
+    inline def set_userSelected(value: Element): Self = StObject.set(x, "_userSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_userSelectedUndefined: Self = StObject.set(x, "_userSelected", js.undefined)
+    inline def set_userSelectedUndefined: Self = StObject.set(x, "_userSelected", js.undefined)
     
-    @scala.inline
-    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
+    inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait AssociateDeviceWithRoomRequest extends StObject {
 }
 object AssociateDeviceWithRoomRequest {
   
-  @scala.inline
-  def apply(): AssociateDeviceWithRoomRequest = {
+  inline def apply(): AssociateDeviceWithRoomRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateDeviceWithRoomRequest]
   }
   
-  @scala.inline
-  implicit class AssociateDeviceWithRoomRequestMutableBuilder[Self <: AssociateDeviceWithRoomRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateDeviceWithRoomRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: Arn): Self = StObject.set(x, "DeviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceArnUndefined: Self = StObject.set(x, "DeviceArn", js.undefined)
+    inline def setDeviceArnUndefined: Self = StObject.set(x, "DeviceArn", js.undefined)
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
   }
 }

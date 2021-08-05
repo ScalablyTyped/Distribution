@@ -19,25 +19,19 @@ trait Dictid
 }
 object Dictid {
   
-  @scala.inline
-  def apply(context: Record[String, js.Any], id: String): Dictid = {
+  inline def apply(context: Record[String, js.Any], id: String): Dictid = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictid]
   }
   
-  @scala.inline
-  implicit class DictidMutableBuilder[Self <: Dictid] (val x: Self) extends AnyVal {
+  extension [Self <: Dictid](x: Self) {
     
-    @scala.inline
-    def setContext(value: Record[String, js.Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Record[String, js.Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

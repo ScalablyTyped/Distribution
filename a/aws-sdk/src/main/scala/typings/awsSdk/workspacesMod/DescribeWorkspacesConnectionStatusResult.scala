@@ -18,28 +18,21 @@ trait DescribeWorkspacesConnectionStatusResult extends StObject {
 }
 object DescribeWorkspacesConnectionStatusResult {
   
-  @scala.inline
-  def apply(): DescribeWorkspacesConnectionStatusResult = {
+  inline def apply(): DescribeWorkspacesConnectionStatusResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkspacesConnectionStatusResult]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspacesConnectionStatusResultMutableBuilder[Self <: DescribeWorkspacesConnectionStatusResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspacesConnectionStatusResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWorkspacesConnectionStatus(value: WorkspaceConnectionStatusList): Self = StObject.set(x, "WorkspacesConnectionStatus", value.asInstanceOf[js.Any])
+    inline def setWorkspacesConnectionStatus(value: WorkspaceConnectionStatusList): Self = StObject.set(x, "WorkspacesConnectionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspacesConnectionStatusUndefined: Self = StObject.set(x, "WorkspacesConnectionStatus", js.undefined)
+    inline def setWorkspacesConnectionStatusUndefined: Self = StObject.set(x, "WorkspacesConnectionStatus", js.undefined)
     
-    @scala.inline
-    def setWorkspacesConnectionStatusVarargs(value: WorkspaceConnectionStatus*): Self = StObject.set(x, "WorkspacesConnectionStatus", js.Array(value :_*))
+    inline def setWorkspacesConnectionStatusVarargs(value: WorkspaceConnectionStatus*): Self = StObject.set(x, "WorkspacesConnectionStatus", js.Array(value :_*))
   }
 }

@@ -30,8 +30,7 @@ trait ASPxClientTimeEdit
 }
 object ASPxClientTimeEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     ButtonClick: ASPxClientEvent[ASPxClientButtonEditClickEventHandler[ASPxClientButtonEditBase]],
     DateChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]],
@@ -89,16 +88,12 @@ object ASPxClientTimeEdit {
     __obj.asInstanceOf[ASPxClientTimeEdit]
   }
   
-  @scala.inline
-  implicit class ASPxClientTimeEditMutableBuilder[Self <: ASPxClientTimeEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTimeEdit](x: Self) {
     
-    @scala.inline
-    def setDateChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]]): Self = StObject.set(x, "DateChanged", value.asInstanceOf[js.Any])
+    inline def setDateChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTimeEdit]]): Self = StObject.set(x, "DateChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDate(value: () => Date): Self = StObject.set(x, "GetDate", js.Any.fromFunction0(value))
+    inline def setGetDate(value: () => Date): Self = StObject.set(x, "GetDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDate(value: Date => Unit): Self = StObject.set(x, "SetDate", js.Any.fromFunction1(value))
+    inline def setSetDate(value: Date => Unit): Self = StObject.set(x, "SetDate", js.Any.fromFunction1(value))
   }
 }

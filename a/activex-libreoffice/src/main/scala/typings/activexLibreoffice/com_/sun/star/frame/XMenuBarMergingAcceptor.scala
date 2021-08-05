@@ -29,8 +29,7 @@ trait XMenuBarMergingAcceptor
 }
 object XMenuBarMergingAcceptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -41,13 +40,10 @@ object XMenuBarMergingAcceptor {
     __obj.asInstanceOf[XMenuBarMergingAcceptor]
   }
   
-  @scala.inline
-  implicit class XMenuBarMergingAcceptorMutableBuilder[Self <: XMenuBarMergingAcceptor] (val x: Self) extends AnyVal {
+  extension [Self <: XMenuBarMergingAcceptor](x: Self) {
     
-    @scala.inline
-    def setRemoveMergedMenuBar(value: () => Unit): Self = StObject.set(x, "removeMergedMenuBar", js.Any.fromFunction0(value))
+    inline def setRemoveMergedMenuBar(value: () => Unit): Self = StObject.set(x, "removeMergedMenuBar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetMergedMenuBar(value: XIndexAccess => Boolean): Self = StObject.set(x, "setMergedMenuBar", js.Any.fromFunction1(value))
+    inline def setSetMergedMenuBar(value: XIndexAccess => Boolean): Self = StObject.set(x, "setMergedMenuBar", js.Any.fromFunction1(value))
   }
 }

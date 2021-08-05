@@ -18,28 +18,21 @@ trait ListStreamsOutput extends StObject {
 }
 object ListStreamsOutput {
   
-  @scala.inline
-  def apply(): ListStreamsOutput = {
+  inline def apply(): ListStreamsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStreamsOutput]
   }
   
-  @scala.inline
-  implicit class ListStreamsOutputMutableBuilder[Self <: ListStreamsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStreamsOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStreamInfoList(value: StreamInfoList): Self = StObject.set(x, "StreamInfoList", value.asInstanceOf[js.Any])
+    inline def setStreamInfoList(value: StreamInfoList): Self = StObject.set(x, "StreamInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamInfoListUndefined: Self = StObject.set(x, "StreamInfoList", js.undefined)
+    inline def setStreamInfoListUndefined: Self = StObject.set(x, "StreamInfoList", js.undefined)
     
-    @scala.inline
-    def setStreamInfoListVarargs(value: StreamInfo*): Self = StObject.set(x, "StreamInfoList", js.Array(value :_*))
+    inline def setStreamInfoListVarargs(value: StreamInfo*): Self = StObject.set(x, "StreamInfoList", js.Array(value :_*))
   }
 }

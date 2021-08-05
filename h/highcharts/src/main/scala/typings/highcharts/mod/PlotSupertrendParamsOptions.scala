@@ -20,25 +20,19 @@ trait PlotSupertrendParamsOptions extends StObject {
 }
 object PlotSupertrendParamsOptions {
   
-  @scala.inline
-  def apply(): PlotSupertrendParamsOptions = {
+  inline def apply(): PlotSupertrendParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSupertrendParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotSupertrendParamsOptionsMutableBuilder[Self <: PlotSupertrendParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSupertrendParamsOptions](x: Self) {
     
-    @scala.inline
-    def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
+    inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
+    inline def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

@@ -72,29 +72,22 @@ object drawing {
   }
   object DrawingControlOptions {
     
-    @scala.inline
-    def apply(): DrawingControlOptions = {
+    inline def apply(): DrawingControlOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawingControlOptions]
     }
     
-    @scala.inline
-    implicit class DrawingControlOptionsMutableBuilder[Self <: DrawingControlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DrawingControlOptions](x: Self) {
       
-      @scala.inline
-      def setDrawingModes(value: js.Array[OverlayType]): Self = StObject.set(x, "drawingModes", value.asInstanceOf[js.Any])
+      inline def setDrawingModes(value: js.Array[OverlayType]): Self = StObject.set(x, "drawingModes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawingModesUndefined: Self = StObject.set(x, "drawingModes", js.undefined)
+      inline def setDrawingModesUndefined: Self = StObject.set(x, "drawingModes", js.undefined)
       
-      @scala.inline
-      def setDrawingModesVarargs(value: OverlayType*): Self = StObject.set(x, "drawingModes", js.Array(value :_*))
+      inline def setDrawingModesVarargs(value: OverlayType*): Self = StObject.set(x, "drawingModes", js.Array(value :_*))
       
-      @scala.inline
-      def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   
@@ -179,71 +172,50 @@ object drawing {
   }
   object DrawingManagerOptions {
     
-    @scala.inline
-    def apply(): DrawingManagerOptions = {
+    inline def apply(): DrawingManagerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawingManagerOptions]
     }
     
-    @scala.inline
-    implicit class DrawingManagerOptionsMutableBuilder[Self <: DrawingManagerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DrawingManagerOptions](x: Self) {
       
-      @scala.inline
-      def setCircleOptions(value: CircleOptions): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
+      inline def setCircleOptions(value: CircleOptions): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleOptionsUndefined: Self = StObject.set(x, "circleOptions", js.undefined)
+      inline def setCircleOptionsUndefined: Self = StObject.set(x, "circleOptions", js.undefined)
       
-      @scala.inline
-      def setDrawingControl(value: Boolean): Self = StObject.set(x, "drawingControl", value.asInstanceOf[js.Any])
+      inline def setDrawingControl(value: Boolean): Self = StObject.set(x, "drawingControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawingControlOptions(value: DrawingControlOptions): Self = StObject.set(x, "drawingControlOptions", value.asInstanceOf[js.Any])
+      inline def setDrawingControlOptions(value: DrawingControlOptions): Self = StObject.set(x, "drawingControlOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawingControlOptionsUndefined: Self = StObject.set(x, "drawingControlOptions", js.undefined)
+      inline def setDrawingControlOptionsUndefined: Self = StObject.set(x, "drawingControlOptions", js.undefined)
       
-      @scala.inline
-      def setDrawingControlUndefined: Self = StObject.set(x, "drawingControl", js.undefined)
+      inline def setDrawingControlUndefined: Self = StObject.set(x, "drawingControl", js.undefined)
       
-      @scala.inline
-      def setDrawingMode(value: OverlayType): Self = StObject.set(x, "drawingMode", value.asInstanceOf[js.Any])
+      inline def setDrawingMode(value: OverlayType): Self = StObject.set(x, "drawingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawingModeNull: Self = StObject.set(x, "drawingMode", null)
+      inline def setDrawingModeNull: Self = StObject.set(x, "drawingMode", null)
       
-      @scala.inline
-      def setDrawingModeUndefined: Self = StObject.set(x, "drawingMode", js.undefined)
+      inline def setDrawingModeUndefined: Self = StObject.set(x, "drawingMode", js.undefined)
       
-      @scala.inline
-      def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map[Element]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setMarkerOptions(value: MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
+      inline def setMarkerOptions(value: MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
+      inline def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
       
-      @scala.inline
-      def setPolygonOptions(value: PolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
+      inline def setPolygonOptions(value: PolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
+      inline def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
       
-      @scala.inline
-      def setPolylineOptions(value: PolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
+      inline def setPolylineOptions(value: PolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
+      inline def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
       
-      @scala.inline
-      def setRectangleOptions(value: RectangleOptions): Self = StObject.set(x, "rectangleOptions", value.asInstanceOf[js.Any])
+      inline def setRectangleOptions(value: RectangleOptions): Self = StObject.set(x, "rectangleOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectangleOptionsUndefined: Self = StObject.set(x, "rectangleOptions", js.undefined)
+      inline def setRectangleOptionsUndefined: Self = StObject.set(x, "rectangleOptions", js.undefined)
     }
   }
   
@@ -258,21 +230,17 @@ object drawing {
   }
   object OverlayCompleteEvent {
     
-    @scala.inline
-    def apply(overlay: Marker | Polygon | Polyline | Rectangle | Circle, `type`: OverlayType): OverlayCompleteEvent = {
+    inline def apply(overlay: Marker | Polygon | Polyline | Rectangle | Circle, `type`: OverlayType): OverlayCompleteEvent = {
       val __obj = js.Dynamic.literal(overlay = overlay.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OverlayCompleteEvent]
     }
     
-    @scala.inline
-    implicit class OverlayCompleteEventMutableBuilder[Self <: OverlayCompleteEvent] (val x: Self) extends AnyVal {
+    extension [Self <: OverlayCompleteEvent](x: Self) {
       
-      @scala.inline
-      def setOverlay(value: Marker | Polygon | Polyline | Rectangle | Circle): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: Marker | Polygon | Polyline | Rectangle | Circle): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: OverlayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: OverlayType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Reference extends StObject {
   
-  @JSName("Access.Reference_typekey")
+  /* private */ @JSName("Access.Reference_typekey")
   var AccessDotReference_typekey: Reference
   
   val BuiltIn: Boolean
@@ -35,8 +35,7 @@ trait Reference extends StObject {
 }
 object Reference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotReference_typekey: Reference,
     BuiltIn: Boolean,
     Collection: References,
@@ -54,40 +53,28 @@ object Reference {
     __obj.asInstanceOf[Reference]
   }
   
-  @scala.inline
-  implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+  extension [Self <: Reference](x: Self) {
     
-    @scala.inline
-    def setAccessDotReference_typekey(value: Reference): Self = StObject.set(x, "Access.Reference_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotReference_typekey(value: Reference): Self = StObject.set(x, "Access.Reference_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuiltIn(value: Boolean): Self = StObject.set(x, "BuiltIn", value.asInstanceOf[js.Any])
+    inline def setBuiltIn(value: Boolean): Self = StObject.set(x, "BuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection(value: References): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: References): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullPath(value: String): Self = StObject.set(x, "FullPath", value.asInstanceOf[js.Any])
+    inline def setFullPath(value: String): Self = StObject.set(x, "FullPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
+    inline def setGuid(value: String): Self = StObject.set(x, "Guid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBroken(value: Boolean): Self = StObject.set(x, "IsBroken", value.asInstanceOf[js.Any])
+    inline def setIsBroken(value: Boolean): Self = StObject.set(x, "IsBroken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKind(value: vbextRefKind): Self = StObject.set(x, "Kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: vbextRefKind): Self = StObject.set(x, "Kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajor(value: Double): Self = StObject.set(x, "Major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Double): Self = StObject.set(x, "Major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor(value: Double): Self = StObject.set(x, "Minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Double): Self = StObject.set(x, "Minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

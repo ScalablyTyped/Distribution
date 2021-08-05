@@ -29,28 +29,21 @@ trait Histogram extends StObject {
 }
 object Histogram {
   
-  @scala.inline
-  def apply(buckets: js.Array[Bucket], count: integer, name: String, sum: integer): Histogram = {
+  inline def apply(buckets: js.Array[Bucket], count: integer, name: String, sum: integer): Histogram = {
     val __obj = js.Dynamic.literal(buckets = buckets.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sum = sum.asInstanceOf[js.Any])
     __obj.asInstanceOf[Histogram]
   }
   
-  @scala.inline
-  implicit class HistogramMutableBuilder[Self <: Histogram] (val x: Self) extends AnyVal {
+  extension [Self <: Histogram](x: Self) {
     
-    @scala.inline
-    def setBuckets(value: js.Array[Bucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: js.Array[Bucket]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketsVarargs(value: Bucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: Bucket*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
-    @scala.inline
-    def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSum(value: integer): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    inline def setSum(value: integer): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
   }
 }

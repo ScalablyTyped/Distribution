@@ -12,19 +12,15 @@ trait SeekParam extends StObject {
 }
 object SeekParam {
   
-  @scala.inline
-  def apply(offset: Double, position: Double): SeekParam = {
+  inline def apply(offset: Double, position: Double): SeekParam = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeekParam]
   }
   
-  @scala.inline
-  implicit class SeekParamMutableBuilder[Self <: SeekParam] (val x: Self) extends AnyVal {
+  extension [Self <: SeekParam](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -27,8 +27,7 @@ object specReporterMod extends Shortcut {
   }
   object SpecReporter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handleTestEvent: (js.Any, js.Any) => js.Promise[Unit],
       specDone: () => Unit,
       specStarted: () => Unit,
@@ -39,20 +38,15 @@ object specReporterMod extends Shortcut {
       __obj.asInstanceOf[SpecReporter]
     }
     
-    @scala.inline
-    implicit class SpecReporterMutableBuilder[Self <: SpecReporter] (val x: Self) extends AnyVal {
+    extension [Self <: SpecReporter](x: Self) {
       
-      @scala.inline
-      def setSpecDone(value: () => Unit): Self = StObject.set(x, "specDone", js.Any.fromFunction0(value))
+      inline def setSpecDone(value: () => Unit): Self = StObject.set(x, "specDone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSpecStarted(value: () => Unit): Self = StObject.set(x, "specStarted", js.Any.fromFunction0(value))
+      inline def setSpecStarted(value: () => Unit): Self = StObject.set(x, "specStarted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSuiteDone(value: () => Unit): Self = StObject.set(x, "suiteDone", js.Any.fromFunction0(value))
+      inline def setSuiteDone(value: () => Unit): Self = StObject.set(x, "suiteDone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSuiteStarted(value: () => Unit): Self = StObject.set(x, "suiteStarted", js.Any.fromFunction0(value))
+      inline def setSuiteStarted(value: () => Unit): Self = StObject.set(x, "suiteStarted", js.Any.fromFunction0(value))
     }
   }
   

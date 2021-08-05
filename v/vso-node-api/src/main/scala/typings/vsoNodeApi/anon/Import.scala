@@ -12,20 +12,16 @@ trait Import extends StObject {
 }
 object Import {
   
-  @scala.inline
-  def apply(`import`: scala.Double, validate: scala.Double): Import = {
+  inline def apply(`import`: scala.Double, validate: scala.Double): Import = {
     val __obj = js.Dynamic.literal(validate = validate.asInstanceOf[js.Any])
     __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Import]
   }
   
-  @scala.inline
-  implicit class ImportMutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
+  extension [Self <: Import](x: Self) {
     
-    @scala.inline
-    def setImport(value: scala.Double): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+    inline def setImport(value: scala.Double): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidate(value: scala.Double): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: scala.Double): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
   }
 }

@@ -24,31 +24,23 @@ trait MatterTileOptions extends StObject {
 }
 object MatterTileOptions {
   
-  @scala.inline
-  def apply(): MatterTileOptions = {
+  inline def apply(): MatterTileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatterTileOptions]
   }
   
-  @scala.inline
-  implicit class MatterTileOptionsMutableBuilder[Self <: MatterTileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MatterTileOptions](x: Self) {
     
-    @scala.inline
-    def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
+    inline def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddToWorldUndefined: Self = StObject.set(x, "addToWorld", js.undefined)
+    inline def setAddToWorldUndefined: Self = StObject.set(x, "addToWorld", js.undefined)
     
-    @scala.inline
-    def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BodyType): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+    inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
+    inline def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
   }
 }

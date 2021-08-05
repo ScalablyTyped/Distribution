@@ -35,8 +35,7 @@ object focusContextMod extends Shortcut {
   }
   object Props {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activate: String => Unit,
       add: (String, AutoFocus) => Unit,
       deactivate: String => Unit,
@@ -50,38 +49,27 @@ object focusContextMod extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setActivate(value: String => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+      inline def setActivate(value: String => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
+      inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveIdUndefined: Self = StObject.set(x, "activeId", js.undefined)
+      inline def setActiveIdUndefined: Self = StObject.set(x, "activeId", js.undefined)
       
-      @scala.inline
-      def setAdd(value: (String, AutoFocus) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, AutoFocus) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDeactivate(value: String => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
+      inline def setDeactivate(value: String => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisableFocus(value: () => Unit): Self = StObject.set(x, "disableFocus", js.Any.fromFunction0(value))
+      inline def setDisableFocus(value: () => Unit): Self = StObject.set(x, "disableFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableFocus(value: () => Unit): Self = StObject.set(x, "enableFocus", js.Any.fromFunction0(value))
+      inline def setEnableFocus(value: () => Unit): Self = StObject.set(x, "enableFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusNext(value: () => Unit): Self = StObject.set(x, "focusNext", js.Any.fromFunction0(value))
+      inline def setFocusNext(value: () => Unit): Self = StObject.set(x, "focusNext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusPrevious(value: () => Unit): Self = StObject.set(x, "focusPrevious", js.Any.fromFunction0(value))
+      inline def setFocusPrevious(value: () => Unit): Self = StObject.set(x, "focusPrevious", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
   }
   

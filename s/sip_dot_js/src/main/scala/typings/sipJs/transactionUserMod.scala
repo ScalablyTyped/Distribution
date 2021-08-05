@@ -35,26 +35,20 @@ object transactionUserMod {
   }
   object ClientTransactionUser {
     
-    @scala.inline
-    def apply(loggerFactory: LoggerFactory): ClientTransactionUser = {
+    inline def apply(loggerFactory: LoggerFactory): ClientTransactionUser = {
       val __obj = js.Dynamic.literal(loggerFactory = loggerFactory.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientTransactionUser]
     }
     
-    @scala.inline
-    implicit class ClientTransactionUserMutableBuilder[Self <: ClientTransactionUser] (val x: Self) extends AnyVal {
+    extension [Self <: ClientTransactionUser](x: Self) {
       
-      @scala.inline
-      def setOnRequestTimeout(value: () => Unit): Self = StObject.set(x, "onRequestTimeout", js.Any.fromFunction0(value))
+      inline def setOnRequestTimeout(value: () => Unit): Self = StObject.set(x, "onRequestTimeout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRequestTimeoutUndefined: Self = StObject.set(x, "onRequestTimeout", js.undefined)
+      inline def setOnRequestTimeoutUndefined: Self = StObject.set(x, "onRequestTimeout", js.undefined)
       
-      @scala.inline
-      def setReceiveResponse(value: /* response */ IncomingResponseMessage => Unit): Self = StObject.set(x, "receiveResponse", js.Any.fromFunction1(value))
+      inline def setReceiveResponse(value: /* response */ IncomingResponseMessage => Unit): Self = StObject.set(x, "receiveResponse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReceiveResponseUndefined: Self = StObject.set(x, "receiveResponse", js.undefined)
+      inline def setReceiveResponseUndefined: Self = StObject.set(x, "receiveResponse", js.undefined)
     }
   }
   
@@ -95,29 +89,22 @@ object transactionUserMod {
   }
   object TransactionUser {
     
-    @scala.inline
-    def apply(loggerFactory: LoggerFactory): TransactionUser = {
+    inline def apply(loggerFactory: LoggerFactory): TransactionUser = {
       val __obj = js.Dynamic.literal(loggerFactory = loggerFactory.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionUser]
     }
     
-    @scala.inline
-    implicit class TransactionUserMutableBuilder[Self <: TransactionUser] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionUser](x: Self) {
       
-      @scala.inline
-      def setLoggerFactory(value: LoggerFactory): Self = StObject.set(x, "loggerFactory", value.asInstanceOf[js.Any])
+      inline def setLoggerFactory(value: LoggerFactory): Self = StObject.set(x, "loggerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStateChange(value: /* newState */ TransactionState => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
+      inline def setOnStateChange(value: /* newState */ TransactionState => Unit): Self = StObject.set(x, "onStateChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
+      inline def setOnStateChangeUndefined: Self = StObject.set(x, "onStateChange", js.undefined)
       
-      @scala.inline
-      def setOnTransportError(value: /* error */ TransportError => Unit): Self = StObject.set(x, "onTransportError", js.Any.fromFunction1(value))
+      inline def setOnTransportError(value: /* error */ TransportError => Unit): Self = StObject.set(x, "onTransportError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransportErrorUndefined: Self = StObject.set(x, "onTransportError", js.undefined)
+      inline def setOnTransportErrorUndefined: Self = StObject.set(x, "onTransportError", js.undefined)
     }
   }
 }

@@ -50,7 +50,7 @@ trait Explorer extends StObject {
   
   val NavigationPane: typings.activexOutlook.Outlook.NavigationPane
   
-  @JSName("Outlook.Explorer_typekey")
+  /* private */ @JSName("Outlook.Explorer_typekey")
   var OutlookDotExplorer_typekey: Explorer
   
   val Panes: typings.activexOutlook.Outlook.Panes
@@ -81,8 +81,7 @@ trait Explorer extends StObject {
 }
 object Explorer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountSelector: AccountSelector,
     Activate: () => Unit,
     AddToSelection: js.Any => Unit,
@@ -125,117 +124,80 @@ object Explorer {
     __obj.asInstanceOf[Explorer]
   }
   
-  @scala.inline
-  implicit class ExplorerMutableBuilder[Self <: Explorer] (val x: Self) extends AnyVal {
+  extension [Self <: Explorer](x: Self) {
     
-    @scala.inline
-    def setAccountSelector(value: AccountSelector): Self = StObject.set(x, "AccountSelector", value.asInstanceOf[js.Any])
+    inline def setAccountSelector(value: AccountSelector): Self = StObject.set(x, "AccountSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddToSelection(value: js.Any => Unit): Self = StObject.set(x, "AddToSelection", js.Any.fromFunction1(value))
+    inline def setAddToSelection(value: js.Any => Unit): Self = StObject.set(x, "AddToSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentSelection(value: AttachmentSelection): Self = StObject.set(x, "AttachmentSelection", value.asInstanceOf[js.Any])
+    inline def setAttachmentSelection(value: AttachmentSelection): Self = StObject.set(x, "AttachmentSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearSearch(value: () => Unit): Self = StObject.set(x, "ClearSearch", js.Any.fromFunction0(value))
+    inline def setClearSearch(value: () => Unit): Self = StObject.set(x, "ClearSearch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearSelection(value: () => Unit): Self = StObject.set(x, "ClearSelection", js.Any.fromFunction0(value))
+    inline def setClearSelection(value: () => Unit): Self = StObject.set(x, "ClearSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCommandBars(
+    inline def setCommandBars(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBars */ js.Any
     ): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentFolder(value: Folder): Self = StObject.set(x, "CurrentFolder", value.asInstanceOf[js.Any])
+    inline def setCurrentFolder(value: Folder): Self = StObject.set(x, "CurrentFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentView(value: js.Any): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
+    inline def setCurrentView(value: js.Any): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeselectFolder(value: Folder => Unit): Self = StObject.set(x, "DeselectFolder", js.Any.fromFunction1(value))
+    inline def setDeselectFolder(value: Folder => Unit): Self = StObject.set(x, "DeselectFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplay(value: () => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction0(value))
+    inline def setDisplay(value: () => Unit): Self = StObject.set(x, "Display", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHTMLDocument(value: js.Any): Self = StObject.set(x, "HTMLDocument", value.asInstanceOf[js.Any])
+    inline def setHTMLDocument(value: js.Any): Self = StObject.set(x, "HTMLDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFolderSelected(value: Folder => Boolean): Self = StObject.set(x, "IsFolderSelected", js.Any.fromFunction1(value))
+    inline def setIsFolderSelected(value: Folder => Boolean): Self = StObject.set(x, "IsFolderSelected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsItemSelectableInView(value: js.Any => Boolean): Self = StObject.set(x, "IsItemSelectableInView", js.Any.fromFunction1(value))
+    inline def setIsItemSelectableInView(value: js.Any => Boolean): Self = StObject.set(x, "IsItemSelectableInView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsPaneVisible(value: OlPane => Boolean): Self = StObject.set(x, "IsPaneVisible", js.Any.fromFunction1(value))
+    inline def setIsPaneVisible(value: OlPane => Boolean): Self = StObject.set(x, "IsPaneVisible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationPane(value: NavigationPane): Self = StObject.set(x, "NavigationPane", value.asInstanceOf[js.Any])
+    inline def setNavigationPane(value: NavigationPane): Self = StObject.set(x, "NavigationPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotExplorer_typekey(value: Explorer): Self = StObject.set(x, "Outlook.Explorer_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotExplorer_typekey(value: Explorer): Self = StObject.set(x, "Outlook.Explorer_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanes(value: Panes): Self = StObject.set(x, "Panes", value.asInstanceOf[js.Any])
+    inline def setPanes(value: Panes): Self = StObject.set(x, "Panes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveFromSelection(value: js.Any => Unit): Self = StObject.set(x, "RemoveFromSelection", js.Any.fromFunction1(value))
+    inline def setRemoveFromSelection(value: js.Any => Unit): Self = StObject.set(x, "RemoveFromSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearch(value: (String, OlSearchScope) => Unit): Self = StObject.set(x, "Search", js.Any.fromFunction2(value))
+    inline def setSearch(value: (String, OlSearchScope) => Unit): Self = StObject.set(x, "Search", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectAllItems(value: () => Unit): Self = StObject.set(x, "SelectAllItems", js.Any.fromFunction0(value))
+    inline def setSelectAllItems(value: () => Unit): Self = StObject.set(x, "SelectAllItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectFolder(value: Folder => Unit): Self = StObject.set(x, "SelectFolder", js.Any.fromFunction1(value))
+    inline def setSelectFolder(value: Folder => Unit): Self = StObject.set(x, "SelectFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelection(value: Selection): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: Selection): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPane(value: (OlPane, Boolean) => Unit): Self = StObject.set(x, "ShowPane", js.Any.fromFunction2(value))
+    inline def setShowPane(value: (OlPane, Boolean) => Unit): Self = StObject.set(x, "ShowPane", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViews(value: js.Any): Self = StObject.set(x, "Views", value.asInstanceOf[js.Any])
+    inline def setViews(value: js.Any): Self = StObject.set(x, "Views", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowState(value: OlWindowState): Self = StObject.set(x, "WindowState", value.asInstanceOf[js.Any])
+    inline def setWindowState(value: OlWindowState): Self = StObject.set(x, "WindowState", value.asInstanceOf[js.Any])
   }
 }

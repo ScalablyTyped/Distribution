@@ -9,8 +9,7 @@ trait SearchPaneVisibilityChangedEventArgs
      with ISearchPaneVisibilityChangedEventArgs
 object SearchPaneVisibilityChangedEventArgs {
   
-  @scala.inline
-  def apply(visible: Boolean): SearchPaneVisibilityChangedEventArgs = {
+  inline def apply(visible: Boolean): SearchPaneVisibilityChangedEventArgs = {
     val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchPaneVisibilityChangedEventArgs]
   }

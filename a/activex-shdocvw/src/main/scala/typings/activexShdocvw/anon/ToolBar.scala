@@ -10,16 +10,13 @@ trait ToolBar extends StObject {
 }
 object ToolBar {
   
-  @scala.inline
-  def apply(ToolBar: Boolean): ToolBar = {
+  inline def apply(ToolBar: Boolean): ToolBar = {
     val __obj = js.Dynamic.literal(ToolBar = ToolBar.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBar]
   }
   
-  @scala.inline
-  implicit class ToolBarMutableBuilder[Self <: ToolBar] (val x: Self) extends AnyVal {
+  extension [Self <: ToolBar](x: Self) {
     
-    @scala.inline
-    def setToolBar(value: Boolean): Self = StObject.set(x, "ToolBar", value.asInstanceOf[js.Any])
+    inline def setToolBar(value: Boolean): Self = StObject.set(x, "ToolBar", value.asInstanceOf[js.Any])
   }
 }

@@ -31,25 +31,19 @@ trait FileObject extends StObject {
 }
 object FileObject {
   
-  @scala.inline
-  def apply(fileContent: String, fileName: String, fileSize: Double, mimeType: String): FileObject = {
+  inline def apply(fileContent: String, fileName: String, fileSize: Double, mimeType: String): FileObject = {
     val __obj = js.Dynamic.literal(fileContent = fileContent.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileObject]
   }
   
-  @scala.inline
-  implicit class FileObjectMutableBuilder[Self <: FileObject] (val x: Self) extends AnyVal {
+  extension [Self <: FileObject](x: Self) {
     
-    @scala.inline
-    def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+    inline def setFileContent(value: String): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
   }
 }

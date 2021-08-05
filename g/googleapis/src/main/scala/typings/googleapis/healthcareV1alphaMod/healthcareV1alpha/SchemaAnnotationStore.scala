@@ -31,25 +31,19 @@ trait SchemaAnnotationStore extends StObject {
 }
 object SchemaAnnotationStore {
   
-  @scala.inline
-  def apply(): SchemaAnnotationStore = {
+  inline def apply(): SchemaAnnotationStore = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnnotationStore]
   }
   
-  @scala.inline
-  implicit class SchemaAnnotationStoreMutableBuilder[Self <: SchemaAnnotationStore] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnnotationStore](x: Self) {
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

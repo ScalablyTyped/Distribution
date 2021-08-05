@@ -21,13 +21,13 @@ object breadcrumbsMod {
     def this(props: IBreadcrumbsProps) = this()
     def this(props: IBreadcrumbsProps, context: js.Any) = this()
     
-    var renderBreadcrumb: js.Any = js.native
+    /* private */ var renderBreadcrumb: js.Any = js.native
     
-    var renderBreadcrumbWrapper: js.Any = js.native
+    /* private */ var renderBreadcrumbWrapper: js.Any = js.native
     
-    var renderOverflow: js.Any = js.native
+    /* private */ var renderOverflow: js.Any = js.native
     
-    var renderOverflowBreadcrumb: js.Any = js.native
+    /* private */ var renderOverflowBreadcrumb: js.Any = js.native
   }
   /* static members */
   object Breadcrumbs {
@@ -39,8 +39,7 @@ object breadcrumbsMod {
     @JSImport("@blueprintjs/core/lib/esm/components/breadcrumbs/breadcrumbs", "Breadcrumbs.defaultProps")
     @js.native
     def defaultProps: PartialIBreadcrumbsProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIBreadcrumbsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIBreadcrumbsProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IBreadcrumbsProps
@@ -96,56 +95,40 @@ object breadcrumbsMod {
   }
   object IBreadcrumbsProps {
     
-    @scala.inline
-    def apply(items: js.Array[IBreadcrumbProps]): IBreadcrumbsProps = {
+    inline def apply(items: js.Array[IBreadcrumbProps]): IBreadcrumbsProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBreadcrumbsProps]
     }
     
-    @scala.inline
-    implicit class IBreadcrumbsPropsMutableBuilder[Self <: IBreadcrumbsProps] (val x: Self) extends AnyVal {
+    extension [Self <: IBreadcrumbsProps](x: Self) {
       
-      @scala.inline
-      def setBreadcrumbRenderer(value: /* props */ IBreadcrumbProps => Element): Self = StObject.set(x, "breadcrumbRenderer", js.Any.fromFunction1(value))
+      inline def setBreadcrumbRenderer(value: /* props */ IBreadcrumbProps => Element): Self = StObject.set(x, "breadcrumbRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBreadcrumbRendererUndefined: Self = StObject.set(x, "breadcrumbRenderer", js.undefined)
+      inline def setBreadcrumbRendererUndefined: Self = StObject.set(x, "breadcrumbRenderer", js.undefined)
       
-      @scala.inline
-      def setCollapseFrom(value: Boundary): Self = StObject.set(x, "collapseFrom", value.asInstanceOf[js.Any])
+      inline def setCollapseFrom(value: Boundary): Self = StObject.set(x, "collapseFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseFromUndefined: Self = StObject.set(x, "collapseFrom", js.undefined)
+      inline def setCollapseFromUndefined: Self = StObject.set(x, "collapseFrom", js.undefined)
       
-      @scala.inline
-      def setCurrentBreadcrumbRenderer(value: /* props */ IBreadcrumbProps => Element): Self = StObject.set(x, "currentBreadcrumbRenderer", js.Any.fromFunction1(value))
+      inline def setCurrentBreadcrumbRenderer(value: /* props */ IBreadcrumbProps => Element): Self = StObject.set(x, "currentBreadcrumbRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCurrentBreadcrumbRendererUndefined: Self = StObject.set(x, "currentBreadcrumbRenderer", js.undefined)
+      inline def setCurrentBreadcrumbRendererUndefined: Self = StObject.set(x, "currentBreadcrumbRenderer", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[IBreadcrumbProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[IBreadcrumbProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: IBreadcrumbProps*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: IBreadcrumbProps*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMinVisibleItems(value: Double): Self = StObject.set(x, "minVisibleItems", value.asInstanceOf[js.Any])
+      inline def setMinVisibleItems(value: Double): Self = StObject.set(x, "minVisibleItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinVisibleItemsUndefined: Self = StObject.set(x, "minVisibleItems", js.undefined)
+      inline def setMinVisibleItemsUndefined: Self = StObject.set(x, "minVisibleItems", js.undefined)
       
-      @scala.inline
-      def setOverflowListProps(value: PartialIOverflowListProps): Self = StObject.set(x, "overflowListProps", value.asInstanceOf[js.Any])
+      inline def setOverflowListProps(value: PartialIOverflowListProps): Self = StObject.set(x, "overflowListProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowListPropsUndefined: Self = StObject.set(x, "overflowListProps", js.undefined)
+      inline def setOverflowListPropsUndefined: Self = StObject.set(x, "overflowListProps", js.undefined)
       
-      @scala.inline
-      def setPopoverProps(value: IPopoverProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      inline def setPopoverProps(value: IPopoverProps): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
+      inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
     }
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlSortOrder extends StObject
 object OlSortOrder {
   
-  @scala.inline
-  def olAscending: `1` = 1.asInstanceOf[`1`]
+  inline def olAscending: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olDescending: `2` = 2.asInstanceOf[`2`]
+  inline def olDescending: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olSortNone: `0` = 0.asInstanceOf[`0`]
+  inline def olSortNone: `0` = 0.asInstanceOf[`0`]
 }

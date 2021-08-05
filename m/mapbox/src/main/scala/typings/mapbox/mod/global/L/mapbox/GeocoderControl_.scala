@@ -32,8 +32,7 @@ trait GeocoderControl_ extends StObject {
 }
 object GeocoderControl_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getURL: () => String,
     on: (String, js.Function) => js.Any,
     onAdd: Map_ => js.Any,
@@ -45,25 +44,18 @@ object GeocoderControl_ {
     __obj.asInstanceOf[GeocoderControl_]
   }
   
-  @scala.inline
-  implicit class GeocoderControl_MutableBuilder[Self <: GeocoderControl_] (val x: Self) extends AnyVal {
+  extension [Self <: GeocoderControl_](x: Self) {
     
-    @scala.inline
-    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
+    inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: (String, js.Function) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    inline def setOnAdd(value: Map_ => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetID(value: String => js.Any): Self = StObject.set(x, "setID", js.Any.fromFunction1(value))
+    inline def setSetID(value: String => js.Any): Self = StObject.set(x, "setID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTileJSON(value: js.Any => js.Any): Self = StObject.set(x, "setTileJSON", js.Any.fromFunction1(value))
+    inline def setSetTileJSON(value: js.Any => js.Any): Self = StObject.set(x, "setTileJSON", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetURL(value: String => js.Any): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
+    inline def setSetURL(value: String => js.Any): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
   }
 }

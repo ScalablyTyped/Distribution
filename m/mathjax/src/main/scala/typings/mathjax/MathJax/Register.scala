@@ -31,8 +31,7 @@ trait Register extends StObject {
 }
 object Register {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LoadHook: (String, js.Function) => Unit,
     MessageHook: (String, js.Any) => Unit,
     PreProcessor: js.Any => Unit,
@@ -42,19 +41,14 @@ object Register {
     __obj.asInstanceOf[Register]
   }
   
-  @scala.inline
-  implicit class RegisterMutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
+  extension [Self <: Register](x: Self) {
     
-    @scala.inline
-    def setLoadHook(value: (String, js.Function) => Unit): Self = StObject.set(x, "LoadHook", js.Any.fromFunction2(value))
+    inline def setLoadHook(value: (String, js.Function) => Unit): Self = StObject.set(x, "LoadHook", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMessageHook(value: (String, js.Any) => Unit): Self = StObject.set(x, "MessageHook", js.Any.fromFunction2(value))
+    inline def setMessageHook(value: (String, js.Any) => Unit): Self = StObject.set(x, "MessageHook", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPreProcessor(value: js.Any => Unit): Self = StObject.set(x, "PreProcessor", js.Any.fromFunction1(value))
+    inline def setPreProcessor(value: js.Any => Unit): Self = StObject.set(x, "PreProcessor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartupHook(value: (String, js.Any) => Unit): Self = StObject.set(x, "StartupHook", js.Any.fromFunction2(value))
+    inline def setStartupHook(value: (String, js.Any) => Unit): Self = StObject.set(x, "StartupHook", js.Any.fromFunction2(value))
   }
 }

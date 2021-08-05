@@ -13,8 +13,7 @@ object electronFrameworkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createElectronFrameworkSupport(configuration: Configuration, packager: Packager): js.Promise[Framework] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElectronFrameworkSupport")(configuration.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Framework]]
+  inline def createElectronFrameworkSupport(configuration: Configuration, packager: Packager): js.Promise[Framework] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElectronFrameworkSupport")(configuration.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Framework]]
   
   trait ElectronDownloadOptions extends StObject {
     
@@ -46,80 +45,56 @@ object electronFrameworkMod {
   }
   object ElectronDownloadOptions {
     
-    @scala.inline
-    def apply(): ElectronDownloadOptions = {
+    inline def apply(): ElectronDownloadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ElectronDownloadOptions]
     }
     
-    @scala.inline
-    implicit class ElectronDownloadOptionsMutableBuilder[Self <: ElectronDownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ElectronDownloadOptions](x: Self) {
       
-      @scala.inline
-      def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
+      inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
+      inline def setArchUndefined: Self = StObject.set(x, "arch", js.undefined)
       
-      @scala.inline
-      def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheNull: Self = StObject.set(x, "cache", null)
+      inline def setCacheNull: Self = StObject.set(x, "cache", null)
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCustomDir(value: String): Self = StObject.set(x, "customDir", value.asInstanceOf[js.Any])
+      inline def setCustomDir(value: String): Self = StObject.set(x, "customDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomDirNull: Self = StObject.set(x, "customDir", null)
+      inline def setCustomDirNull: Self = StObject.set(x, "customDir", null)
       
-      @scala.inline
-      def setCustomDirUndefined: Self = StObject.set(x, "customDir", js.undefined)
+      inline def setCustomDirUndefined: Self = StObject.set(x, "customDir", js.undefined)
       
-      @scala.inline
-      def setCustomFilename(value: String): Self = StObject.set(x, "customFilename", value.asInstanceOf[js.Any])
+      inline def setCustomFilename(value: String): Self = StObject.set(x, "customFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFilenameNull: Self = StObject.set(x, "customFilename", null)
+      inline def setCustomFilenameNull: Self = StObject.set(x, "customFilename", null)
       
-      @scala.inline
-      def setCustomFilenameUndefined: Self = StObject.set(x, "customFilename", js.undefined)
+      inline def setCustomFilenameUndefined: Self = StObject.set(x, "customFilename", js.undefined)
       
-      @scala.inline
-      def setIsVerifyChecksum(value: Boolean): Self = StObject.set(x, "isVerifyChecksum", value.asInstanceOf[js.Any])
+      inline def setIsVerifyChecksum(value: Boolean): Self = StObject.set(x, "isVerifyChecksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVerifyChecksumUndefined: Self = StObject.set(x, "isVerifyChecksum", js.undefined)
+      inline def setIsVerifyChecksumUndefined: Self = StObject.set(x, "isVerifyChecksum", js.undefined)
       
-      @scala.inline
-      def setMirror(value: String): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+      inline def setMirror(value: String): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMirrorNull: Self = StObject.set(x, "mirror", null)
+      inline def setMirrorNull: Self = StObject.set(x, "mirror", null)
       
-      @scala.inline
-      def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
+      inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
       
-      @scala.inline
-      def setPlatform(value: ElectronPlatformName): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: ElectronPlatformName): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
+      inline def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
+      inline def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -132,16 +107,12 @@ object electronFrameworkMod {
   trait ElectronPlatformName extends StObject
   object ElectronPlatformName {
     
-    @scala.inline
-    def darwin: typings.appBuilderLib.appBuilderLibStrings.darwin = "darwin".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.darwin]
+    inline def darwin: typings.appBuilderLib.appBuilderLibStrings.darwin = "darwin".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.darwin]
     
-    @scala.inline
-    def linux: typings.appBuilderLib.appBuilderLibStrings.linux = "linux".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.linux]
+    inline def linux: typings.appBuilderLib.appBuilderLibStrings.linux = "linux".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.linux]
     
-    @scala.inline
-    def mas: typings.appBuilderLib.appBuilderLibStrings.mas = "mas".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.mas]
+    inline def mas: typings.appBuilderLib.appBuilderLibStrings.mas = "mas".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.mas]
     
-    @scala.inline
-    def win32: typings.appBuilderLib.appBuilderLibStrings.win32 = "win32".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.win32]
+    inline def win32: typings.appBuilderLib.appBuilderLibStrings.win32 = "win32".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.win32]
   }
 }

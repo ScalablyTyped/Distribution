@@ -20,49 +20,35 @@ trait MapLayerDefaults extends StObject {
 }
 object MapLayerDefaults {
   
-  @scala.inline
-  def apply(): MapLayerDefaults = {
+  inline def apply(): MapLayerDefaults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapLayerDefaults]
   }
   
-  @scala.inline
-  implicit class MapLayerDefaultsMutableBuilder[Self <: MapLayerDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: MapLayerDefaults](x: Self) {
     
-    @scala.inline
-    def setBing(value: MapLayerDefaultsBing): Self = StObject.set(x, "bing", value.asInstanceOf[js.Any])
+    inline def setBing(value: MapLayerDefaultsBing): Self = StObject.set(x, "bing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBingUndefined: Self = StObject.set(x, "bing", js.undefined)
+    inline def setBingUndefined: Self = StObject.set(x, "bing", js.undefined)
     
-    @scala.inline
-    def setBubble(value: MapLayerDefaultsBubble): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
+    inline def setBubble(value: MapLayerDefaultsBubble): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
+    inline def setBubbleUndefined: Self = StObject.set(x, "bubble", js.undefined)
     
-    @scala.inline
-    def setMarker(value: MapLayerDefaultsMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: MapLayerDefaultsMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setShape(value: MapLayerDefaultsShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: MapLayerDefaultsShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setTile(value: MapLayerDefaultsTile): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
+    inline def setTile(value: MapLayerDefaultsTile): Self = StObject.set(x, "tile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
-    @scala.inline
-    def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
+    inline def setTileUndefined: Self = StObject.set(x, "tile", js.undefined)
   }
 }

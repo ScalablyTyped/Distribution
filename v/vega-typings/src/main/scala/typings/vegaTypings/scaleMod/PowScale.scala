@@ -18,20 +18,16 @@ trait PowScale
 }
 object PowScale {
   
-  @scala.inline
-  def apply(exponent: Double | SignalRef, name: String): PowScale = {
+  inline def apply(exponent: Double | SignalRef, name: String): PowScale = {
     val __obj = js.Dynamic.literal(exponent = exponent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("pow")
     __obj.asInstanceOf[PowScale]
   }
   
-  @scala.inline
-  implicit class PowScaleMutableBuilder[Self <: PowScale] (val x: Self) extends AnyVal {
+  extension [Self <: PowScale](x: Self) {
     
-    @scala.inline
-    def setExponent(value: Double | SignalRef): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
+    inline def setExponent(value: Double | SignalRef): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: pow): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: pow): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

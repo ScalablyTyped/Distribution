@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdEndnoteLocation extends StObject
 object WdEndnoteLocation {
   
-  @scala.inline
-  def wdEndOfDocument: `1` = 1.asInstanceOf[`1`]
+  inline def wdEndOfDocument: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdEndOfSection: `0` = 0.asInstanceOf[`0`]
+  inline def wdEndOfSection: `0` = 0.asInstanceOf[`0`]
 }

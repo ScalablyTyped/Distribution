@@ -28,34 +28,25 @@ trait TerminateClientVpnConnectionsRequest extends StObject {
 }
 object TerminateClientVpnConnectionsRequest {
   
-  @scala.inline
-  def apply(ClientVpnEndpointId: ClientVpnEndpointId): TerminateClientVpnConnectionsRequest = {
+  inline def apply(ClientVpnEndpointId: ClientVpnEndpointId): TerminateClientVpnConnectionsRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateClientVpnConnectionsRequest]
   }
   
-  @scala.inline
-  implicit class TerminateClientVpnConnectionsRequestMutableBuilder[Self <: TerminateClientVpnConnectionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateClientVpnConnectionsRequest](x: Self) {
     
-    @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionId(value: VpnConnectionId): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: VpnConnectionId): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
+    inline def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

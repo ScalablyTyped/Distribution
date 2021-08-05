@@ -17,43 +17,37 @@ trait BlockPattern
      with Pattern
 object BlockPattern {
   
-  @scala.inline
-  def GraphPattern(name: IriTerm, patterns: js.Array[Pattern]): typings.sparqljs.mod.GraphPattern = {
+  inline def GraphPattern(name: IriTerm, patterns: js.Array[Pattern]): typings.sparqljs.mod.GraphPattern = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[typings.sparqljs.mod.GraphPattern]
   }
   
-  @scala.inline
-  def GroupPattern(patterns: js.Array[Pattern]): typings.sparqljs.mod.GroupPattern = {
+  inline def GroupPattern(patterns: js.Array[Pattern]): typings.sparqljs.mod.GroupPattern = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("group")
     __obj.asInstanceOf[typings.sparqljs.mod.GroupPattern]
   }
   
-  @scala.inline
-  def MinusPattern(patterns: js.Array[Pattern]): typings.sparqljs.mod.MinusPattern = {
+  inline def MinusPattern(patterns: js.Array[Pattern]): typings.sparqljs.mod.MinusPattern = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("minus")
     __obj.asInstanceOf[typings.sparqljs.mod.MinusPattern]
   }
   
-  @scala.inline
-  def OptionalPattern(patterns: js.Array[Pattern]): typings.sparqljs.mod.OptionalPattern = {
+  inline def OptionalPattern(patterns: js.Array[Pattern]): typings.sparqljs.mod.OptionalPattern = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("optional")
     __obj.asInstanceOf[typings.sparqljs.mod.OptionalPattern]
   }
   
-  @scala.inline
-  def ServicePattern(name: IriTerm, patterns: js.Array[Pattern], silent: Boolean): typings.sparqljs.mod.ServicePattern = {
+  inline def ServicePattern(name: IriTerm, patterns: js.Array[Pattern], silent: Boolean): typings.sparqljs.mod.ServicePattern = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("service")
     __obj.asInstanceOf[typings.sparqljs.mod.ServicePattern]
   }
   
-  @scala.inline
-  def UnionPattern(patterns: js.Array[Pattern]): typings.sparqljs.mod.UnionPattern = {
+  inline def UnionPattern(patterns: js.Array[Pattern]): typings.sparqljs.mod.UnionPattern = {
     val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("union")
     __obj.asInstanceOf[typings.sparqljs.mod.UnionPattern]

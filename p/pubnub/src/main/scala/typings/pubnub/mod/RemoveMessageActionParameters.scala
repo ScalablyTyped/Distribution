@@ -14,22 +14,17 @@ trait RemoveMessageActionParameters extends StObject {
 }
 object RemoveMessageActionParameters {
   
-  @scala.inline
-  def apply(actionTimetoken: String, channel: String, messageTimetoken: String): RemoveMessageActionParameters = {
+  inline def apply(actionTimetoken: String, channel: String, messageTimetoken: String): RemoveMessageActionParameters = {
     val __obj = js.Dynamic.literal(actionTimetoken = actionTimetoken.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], messageTimetoken = messageTimetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveMessageActionParameters]
   }
   
-  @scala.inline
-  implicit class RemoveMessageActionParametersMutableBuilder[Self <: RemoveMessageActionParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveMessageActionParameters](x: Self) {
     
-    @scala.inline
-    def setActionTimetoken(value: String): Self = StObject.set(x, "actionTimetoken", value.asInstanceOf[js.Any])
+    inline def setActionTimetoken(value: String): Self = StObject.set(x, "actionTimetoken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTimetoken(value: String): Self = StObject.set(x, "messageTimetoken", value.asInstanceOf[js.Any])
+    inline def setMessageTimetoken(value: String): Self = StObject.set(x, "messageTimetoken", value.asInstanceOf[js.Any])
   }
 }

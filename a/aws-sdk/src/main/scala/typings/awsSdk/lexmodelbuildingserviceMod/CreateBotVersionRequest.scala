@@ -18,22 +18,17 @@ trait CreateBotVersionRequest extends StObject {
 }
 object CreateBotVersionRequest {
   
-  @scala.inline
-  def apply(name: BotName): CreateBotVersionRequest = {
+  inline def apply(name: BotName): CreateBotVersionRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBotVersionRequest]
   }
   
-  @scala.inline
-  implicit class CreateBotVersionRequestMutableBuilder[Self <: CreateBotVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBotVersionRequest](x: Self) {
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: BotName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

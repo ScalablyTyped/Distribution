@@ -35,43 +35,31 @@ trait SchemaRemarketingListShare extends StObject {
 }
 object SchemaRemarketingListShare {
   
-  @scala.inline
-  def apply(): SchemaRemarketingListShare = {
+  inline def apply(): SchemaRemarketingListShare = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRemarketingListShare]
   }
   
-  @scala.inline
-  implicit class SchemaRemarketingListShareMutableBuilder[Self <: SchemaRemarketingListShare] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRemarketingListShare](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRemarketingListId(value: String): Self = StObject.set(x, "remarketingListId", value.asInstanceOf[js.Any])
+    inline def setRemarketingListId(value: String): Self = StObject.set(x, "remarketingListId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemarketingListIdUndefined: Self = StObject.set(x, "remarketingListId", js.undefined)
+    inline def setRemarketingListIdUndefined: Self = StObject.set(x, "remarketingListId", js.undefined)
     
-    @scala.inline
-    def setSharedAccountIds(value: js.Array[String]): Self = StObject.set(x, "sharedAccountIds", value.asInstanceOf[js.Any])
+    inline def setSharedAccountIds(value: js.Array[String]): Self = StObject.set(x, "sharedAccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAccountIdsUndefined: Self = StObject.set(x, "sharedAccountIds", js.undefined)
+    inline def setSharedAccountIdsUndefined: Self = StObject.set(x, "sharedAccountIds", js.undefined)
     
-    @scala.inline
-    def setSharedAccountIdsVarargs(value: String*): Self = StObject.set(x, "sharedAccountIds", js.Array(value :_*))
+    inline def setSharedAccountIdsVarargs(value: String*): Self = StObject.set(x, "sharedAccountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSharedAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "sharedAdvertiserIds", value.asInstanceOf[js.Any])
+    inline def setSharedAdvertiserIds(value: js.Array[String]): Self = StObject.set(x, "sharedAdvertiserIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAdvertiserIdsUndefined: Self = StObject.set(x, "sharedAdvertiserIds", js.undefined)
+    inline def setSharedAdvertiserIdsUndefined: Self = StObject.set(x, "sharedAdvertiserIds", js.undefined)
     
-    @scala.inline
-    def setSharedAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "sharedAdvertiserIds", js.Array(value :_*))
+    inline def setSharedAdvertiserIdsVarargs(value: String*): Self = StObject.set(x, "sharedAdvertiserIds", js.Array(value :_*))
   }
 }

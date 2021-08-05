@@ -65,29 +65,22 @@ object mod {
   }
   object VMAP {
     
-    @scala.inline
-    def apply(adBreaks: js.Array[VMAPAdBreak], extensions: js.Array[VMAPExtension], version: String): VMAP = {
+    inline def apply(adBreaks: js.Array[VMAPAdBreak], extensions: js.Array[VMAPExtension], version: String): VMAP = {
       val __obj = js.Dynamic.literal(adBreaks = adBreaks.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[VMAP]
     }
     
-    @scala.inline
-    implicit class VMAPMutableBuilder[Self <: VMAP] (val x: Self) extends AnyVal {
+    extension [Self <: VMAP](x: Self) {
       
-      @scala.inline
-      def setAdBreaks(value: js.Array[VMAPAdBreak]): Self = StObject.set(x, "adBreaks", value.asInstanceOf[js.Any])
+      inline def setAdBreaks(value: js.Array[VMAPAdBreak]): Self = StObject.set(x, "adBreaks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdBreaksVarargs(value: VMAPAdBreak*): Self = StObject.set(x, "adBreaks", js.Array(value :_*))
+      inline def setAdBreaksVarargs(value: VMAPAdBreak*): Self = StObject.set(x, "adBreaks", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensions(value: js.Array[VMAPExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[VMAPExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsVarargs(value: VMAPExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: VMAPExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,8 +169,7 @@ object mod {
   }
   object VMAPAdSource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adTagURI: String,
       allowMultipleAds: Boolean,
       customData: js.Any,
@@ -189,26 +181,19 @@ object mod {
       __obj.asInstanceOf[VMAPAdSource]
     }
     
-    @scala.inline
-    implicit class VMAPAdSourceMutableBuilder[Self <: VMAPAdSource] (val x: Self) extends AnyVal {
+    extension [Self <: VMAPAdSource](x: Self) {
       
-      @scala.inline
-      def setAdTagURI(value: String): Self = StObject.set(x, "adTagURI", value.asInstanceOf[js.Any])
+      inline def setAdTagURI(value: String): Self = StObject.set(x, "adTagURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMultipleAds(value: Boolean): Self = StObject.set(x, "allowMultipleAds", value.asInstanceOf[js.Any])
+      inline def setAllowMultipleAds(value: Boolean): Self = StObject.set(x, "allowMultipleAds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+      inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
+      inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVastAdData(value: Element): Self = StObject.set(x, "vastAdData", value.asInstanceOf[js.Any])
+      inline def setVastAdData(value: Element): Self = StObject.set(x, "vastAdData", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,23 +219,18 @@ object mod {
   }
   object VMAPExtension {
     
-    @scala.inline
-    def apply(attribute: js.Any, children: js.Any, value: js.Any): VMAPExtension = {
+    inline def apply(attribute: js.Any, children: js.Any, value: js.Any): VMAPExtension = {
       val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[VMAPExtension]
     }
     
-    @scala.inline
-    implicit class VMAPExtensionMutableBuilder[Self <: VMAPExtension] (val x: Self) extends AnyVal {
+    extension [Self <: VMAPExtension](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: js.Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -271,20 +251,16 @@ object mod {
   }
   object VMAPTrackingEvent {
     
-    @scala.inline
-    def apply(event: breakStart | breakEnd | error, uri: String): VMAPTrackingEvent = {
+    inline def apply(event: breakStart | breakEnd | error, uri: String): VMAPTrackingEvent = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[VMAPTrackingEvent]
     }
     
-    @scala.inline
-    implicit class VMAPTrackingEventMutableBuilder[Self <: VMAPTrackingEvent] (val x: Self) extends AnyVal {
+    extension [Self <: VMAPTrackingEvent](x: Self) {
       
-      @scala.inline
-      def setEvent(value: breakStart | breakEnd | error): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: breakStart | breakEnd | error): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.MetaProperty")
 @js.native
-class MetaProperty protected ()
+/* private */ class MetaProperty ()
   extends StObject
      with typings.activexOffice.Office.MetaProperty {
   
@@ -29,7 +29,7 @@ class MetaProperty protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.MetaProperty_typekey")
   var OfficeDotMetaProperty_typekey: typings.activexOffice.Office.MetaProperty = js.native
   

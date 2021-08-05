@@ -16,19 +16,15 @@ trait MultiFactorCreateSettings extends StObject {
 }
 object MultiFactorCreateSettings {
   
-  @scala.inline
-  def apply(enrolledFactors: js.Array[CreateMultiFactorInfoRequest]): MultiFactorCreateSettings = {
+  inline def apply(enrolledFactors: js.Array[CreateMultiFactorInfoRequest]): MultiFactorCreateSettings = {
     val __obj = js.Dynamic.literal(enrolledFactors = enrolledFactors.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiFactorCreateSettings]
   }
   
-  @scala.inline
-  implicit class MultiFactorCreateSettingsMutableBuilder[Self <: MultiFactorCreateSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MultiFactorCreateSettings](x: Self) {
     
-    @scala.inline
-    def setEnrolledFactors(value: js.Array[CreateMultiFactorInfoRequest]): Self = StObject.set(x, "enrolledFactors", value.asInstanceOf[js.Any])
+    inline def setEnrolledFactors(value: js.Array[CreateMultiFactorInfoRequest]): Self = StObject.set(x, "enrolledFactors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrolledFactorsVarargs(value: CreateMultiFactorInfoRequest*): Self = StObject.set(x, "enrolledFactors", js.Array(value :_*))
+    inline def setEnrolledFactorsVarargs(value: CreateMultiFactorInfoRequest*): Self = StObject.set(x, "enrolledFactors", js.Array(value :_*))
   }
 }

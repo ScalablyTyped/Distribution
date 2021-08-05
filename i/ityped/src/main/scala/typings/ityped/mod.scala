@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(element: String, config: Configuration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(element.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def init(element: String, config: Configuration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(element.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Configuration extends StObject {
     
@@ -25,41 +24,30 @@ object mod {
   }
   object Configuration {
     
-    @scala.inline
-    def apply(): Configuration = {
+    inline def apply(): Configuration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Configuration]
     }
     
-    @scala.inline
-    implicit class ConfigurationMutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
+    extension [Self <: Configuration](x: Self) {
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setPause(value: Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+      inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
       
-      @scala.inline
-      def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+      inline def setStrings(value: js.Array[String]): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+      inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
       
-      @scala.inline
-      def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
+      inline def setStringsVarargs(value: String*): Self = StObject.set(x, "strings", js.Array(value :_*))
       
-      @scala.inline
-      def setTypeSpeed(value: Double): Self = StObject.set(x, "typeSpeed", value.asInstanceOf[js.Any])
+      inline def setTypeSpeed(value: Double): Self = StObject.set(x, "typeSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeSpeedUndefined: Self = StObject.set(x, "typeSpeed", js.undefined)
+      inline def setTypeSpeedUndefined: Self = StObject.set(x, "typeSpeed", js.undefined)
     }
   }
 }

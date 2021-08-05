@@ -13,22 +13,17 @@ trait StepOverRequest extends StObject {
 }
 object StepOverRequest {
   
-  @scala.inline
-  def apply(): StepOverRequest = {
+  inline def apply(): StepOverRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StepOverRequest]
   }
   
-  @scala.inline
-  implicit class StepOverRequestMutableBuilder[Self <: StepOverRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StepOverRequest](x: Self) {
     
-    @scala.inline
-    def setSkipList(value: js.Array[LocationRange]): Self = StObject.set(x, "skipList", value.asInstanceOf[js.Any])
+    inline def setSkipList(value: js.Array[LocationRange]): Self = StObject.set(x, "skipList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipListUndefined: Self = StObject.set(x, "skipList", js.undefined)
+    inline def setSkipListUndefined: Self = StObject.set(x, "skipList", js.undefined)
     
-    @scala.inline
-    def setSkipListVarargs(value: LocationRange*): Self = StObject.set(x, "skipList", js.Array(value :_*))
+    inline def setSkipListVarargs(value: LocationRange*): Self = StObject.set(x, "skipList", js.Array(value :_*))
   }
 }

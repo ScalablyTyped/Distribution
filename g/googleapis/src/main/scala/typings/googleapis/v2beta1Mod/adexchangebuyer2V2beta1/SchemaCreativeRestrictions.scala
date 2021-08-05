@@ -25,34 +25,25 @@ trait SchemaCreativeRestrictions extends StObject {
 }
 object SchemaCreativeRestrictions {
   
-  @scala.inline
-  def apply(): SchemaCreativeRestrictions = {
+  inline def apply(): SchemaCreativeRestrictions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreativeRestrictions]
   }
   
-  @scala.inline
-  implicit class SchemaCreativeRestrictionsMutableBuilder[Self <: SchemaCreativeRestrictions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreativeRestrictions](x: Self) {
     
-    @scala.inline
-    def setCreativeFormat(value: String): Self = StObject.set(x, "creativeFormat", value.asInstanceOf[js.Any])
+    inline def setCreativeFormat(value: String): Self = StObject.set(x, "creativeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeFormatUndefined: Self = StObject.set(x, "creativeFormat", js.undefined)
+    inline def setCreativeFormatUndefined: Self = StObject.set(x, "creativeFormat", js.undefined)
     
-    @scala.inline
-    def setCreativeSpecifications(value: js.Array[SchemaCreativeSpecification]): Self = StObject.set(x, "creativeSpecifications", value.asInstanceOf[js.Any])
+    inline def setCreativeSpecifications(value: js.Array[SchemaCreativeSpecification]): Self = StObject.set(x, "creativeSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeSpecificationsUndefined: Self = StObject.set(x, "creativeSpecifications", js.undefined)
+    inline def setCreativeSpecificationsUndefined: Self = StObject.set(x, "creativeSpecifications", js.undefined)
     
-    @scala.inline
-    def setCreativeSpecificationsVarargs(value: SchemaCreativeSpecification*): Self = StObject.set(x, "creativeSpecifications", js.Array(value :_*))
+    inline def setCreativeSpecificationsVarargs(value: SchemaCreativeSpecification*): Self = StObject.set(x, "creativeSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setSkippableAdType(value: String): Self = StObject.set(x, "skippableAdType", value.asInstanceOf[js.Any])
+    inline def setSkippableAdType(value: String): Self = StObject.set(x, "skippableAdType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkippableAdTypeUndefined: Self = StObject.set(x, "skippableAdType", js.undefined)
+    inline def setSkippableAdTypeUndefined: Self = StObject.set(x, "skippableAdType", js.undefined)
   }
 }

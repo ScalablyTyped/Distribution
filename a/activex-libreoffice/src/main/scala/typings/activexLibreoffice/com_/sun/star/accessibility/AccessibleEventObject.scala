@@ -40,22 +40,17 @@ trait AccessibleEventObject
 }
 object AccessibleEventObject {
   
-  @scala.inline
-  def apply(EventId: Double, NewValue: js.Any, OldValue: js.Any, Source: XInterface): AccessibleEventObject = {
+  inline def apply(EventId: Double, NewValue: js.Any, OldValue: js.Any, Source: XInterface): AccessibleEventObject = {
     val __obj = js.Dynamic.literal(EventId = EventId.asInstanceOf[js.Any], NewValue = NewValue.asInstanceOf[js.Any], OldValue = OldValue.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibleEventObject]
   }
   
-  @scala.inline
-  implicit class AccessibleEventObjectMutableBuilder[Self <: AccessibleEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibleEventObject](x: Self) {
     
-    @scala.inline
-    def setEventId(value: Double): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: Double): Self = StObject.set(x, "EventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: js.Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: js.Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
   }
 }

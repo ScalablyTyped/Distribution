@@ -10,16 +10,13 @@ trait AudioNodeCreatedEvent extends StObject {
 }
 object AudioNodeCreatedEvent {
   
-  @scala.inline
-  def apply(node: AudioNode): AudioNodeCreatedEvent = {
+  inline def apply(node: AudioNode): AudioNodeCreatedEvent = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioNodeCreatedEvent]
   }
   
-  @scala.inline
-  implicit class AudioNodeCreatedEventMutableBuilder[Self <: AudioNodeCreatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AudioNodeCreatedEvent](x: Self) {
     
-    @scala.inline
-    def setNode(value: AudioNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: AudioNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

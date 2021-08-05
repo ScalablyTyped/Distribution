@@ -51,8 +51,7 @@ trait XPersistentLibraryContainer
 }
 object XPersistentLibraryContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContainerLocationName: String,
     ElementNames: SafeArray[String],
     ElementType: `type`,
@@ -85,16 +84,12 @@ object XPersistentLibraryContainer {
     __obj.asInstanceOf[XPersistentLibraryContainer]
   }
   
-  @scala.inline
-  implicit class XPersistentLibraryContainerMutableBuilder[Self <: XPersistentLibraryContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XPersistentLibraryContainer](x: Self) {
     
-    @scala.inline
-    def setContainerLocationName(value: String): Self = StObject.set(x, "ContainerLocationName", value.asInstanceOf[js.Any])
+    inline def setContainerLocationName(value: String): Self = StObject.set(x, "ContainerLocationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootLocation(value: js.Any): Self = StObject.set(x, "RootLocation", value.asInstanceOf[js.Any])
+    inline def setRootLocation(value: js.Any): Self = StObject.set(x, "RootLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreLibraries(value: () => Unit): Self = StObject.set(x, "storeLibraries", js.Any.fromFunction0(value))
+    inline def setStoreLibraries(value: () => Unit): Self = StObject.set(x, "storeLibraries", js.Any.fromFunction0(value))
   }
 }

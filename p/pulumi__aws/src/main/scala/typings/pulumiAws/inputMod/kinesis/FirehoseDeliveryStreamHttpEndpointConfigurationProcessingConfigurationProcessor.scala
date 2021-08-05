@@ -27,18 +27,15 @@ trait FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProc
 }
 object FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessor {
   
-  @scala.inline
-  def apply(`type`: Input[String]): FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessor = {
+  inline def apply(`type`: Input[String]): FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessor = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessor]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorMutableBuilder[Self <: FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessor](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: Input[
           js.Array[
             Input[
@@ -48,17 +45,14 @@ object FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationPro
         ]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(
+    inline def setParametersVarargs(
       value: (Input[
           FirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorParameter
         ])*
     ): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

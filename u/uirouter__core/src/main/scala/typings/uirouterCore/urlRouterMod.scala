@@ -67,7 +67,7 @@ object urlRouterMod {
     def listen(): js.Function = js.native
     def listen(enabled: Boolean): js.Function = js.native
     
-    /** @internal */ var location: js.Any = js.native
+    /** @internal */ /* private */ var location: js.Any = js.native
     
     /** @deprecated use [[UrlService.match]]*/
     def `match`(urlParts: UrlParts): MatchResult = js.native
@@ -96,7 +96,7 @@ object urlRouterMod {
     /** @deprecated use [[UrlRules.removeRule]]*/
     def removeRule(rule: UrlRule): Unit = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     /** @deprecated use [[UrlRules.rule]]*/
     def rule(rule: UrlRule): js.Function = js.native

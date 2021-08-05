@@ -15,19 +15,15 @@ trait SystemInfoStorage
 }
 object SystemInfoStorage {
   
-  @scala.inline
-  def apply(units: js.Array[SystemInfoStorageUnit]): SystemInfoStorage = {
+  inline def apply(units: js.Array[SystemInfoStorageUnit]): SystemInfoStorage = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoStorage]
   }
   
-  @scala.inline
-  implicit class SystemInfoStorageMutableBuilder[Self <: SystemInfoStorage] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoStorage](x: Self) {
     
-    @scala.inline
-    def setUnits(value: js.Array[SystemInfoStorageUnit]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: js.Array[SystemInfoStorageUnit]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsVarargs(value: SystemInfoStorageUnit*): Self = StObject.set(x, "units", js.Array(value :_*))
+    inline def setUnitsVarargs(value: SystemInfoStorageUnit*): Self = StObject.set(x, "units", js.Array(value :_*))
   }
 }

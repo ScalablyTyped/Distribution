@@ -33,55 +33,39 @@ trait FTInitDownload
 }
 object FTInitDownload {
   
-  @scala.inline
-  def apply(clientftfid: Double, size: Double): FTInitDownload = {
+  inline def apply(clientftfid: Double, size: Double): FTInitDownload = {
     val __obj = js.Dynamic.literal(clientftfid = clientftfid.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[FTInitDownload]
   }
   
-  @scala.inline
-  implicit class FTInitDownloadMutableBuilder[Self <: FTInitDownload] (val x: Self) extends AnyVal {
+  extension [Self <: FTInitDownload](x: Self) {
     
-    @scala.inline
-    def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
+    inline def setClientftfid(value: Double): Self = StObject.set(x, "clientftfid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFtkey(value: String): Self = StObject.set(x, "ftkey", value.asInstanceOf[js.Any])
+    inline def setFtkey(value: String): Self = StObject.set(x, "ftkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFtkeyUndefined: Self = StObject.set(x, "ftkey", js.undefined)
+    inline def setFtkeyUndefined: Self = StObject.set(x, "ftkey", js.undefined)
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+    inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setProto(value: Double): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
+    inline def setProto(value: Double): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtoUndefined: Self = StObject.set(x, "proto", js.undefined)
+    inline def setProtoUndefined: Self = StObject.set(x, "proto", js.undefined)
     
-    @scala.inline
-    def setServerftfid(value: Double): Self = StObject.set(x, "serverftfid", value.asInstanceOf[js.Any])
+    inline def setServerftfid(value: Double): Self = StObject.set(x, "serverftfid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerftfidUndefined: Self = StObject.set(x, "serverftfid", js.undefined)
+    inline def setServerftfidUndefined: Self = StObject.set(x, "serverftfid", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

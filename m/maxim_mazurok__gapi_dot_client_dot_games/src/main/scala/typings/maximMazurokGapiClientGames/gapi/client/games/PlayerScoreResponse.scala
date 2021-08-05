@@ -29,55 +29,39 @@ trait PlayerScoreResponse extends StObject {
 }
 object PlayerScoreResponse {
   
-  @scala.inline
-  def apply(): PlayerScoreResponse = {
+  inline def apply(): PlayerScoreResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlayerScoreResponse]
   }
   
-  @scala.inline
-  implicit class PlayerScoreResponseMutableBuilder[Self <: PlayerScoreResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerScoreResponse](x: Self) {
     
-    @scala.inline
-    def setBeatenScoreTimeSpans(value: js.Array[String]): Self = StObject.set(x, "beatenScoreTimeSpans", value.asInstanceOf[js.Any])
+    inline def setBeatenScoreTimeSpans(value: js.Array[String]): Self = StObject.set(x, "beatenScoreTimeSpans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeatenScoreTimeSpansUndefined: Self = StObject.set(x, "beatenScoreTimeSpans", js.undefined)
+    inline def setBeatenScoreTimeSpansUndefined: Self = StObject.set(x, "beatenScoreTimeSpans", js.undefined)
     
-    @scala.inline
-    def setBeatenScoreTimeSpansVarargs(value: String*): Self = StObject.set(x, "beatenScoreTimeSpans", js.Array(value :_*))
+    inline def setBeatenScoreTimeSpansVarargs(value: String*): Self = StObject.set(x, "beatenScoreTimeSpans", js.Array(value :_*))
     
-    @scala.inline
-    def setFormattedScore(value: String): Self = StObject.set(x, "formattedScore", value.asInstanceOf[js.Any])
+    inline def setFormattedScore(value: String): Self = StObject.set(x, "formattedScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedScoreUndefined: Self = StObject.set(x, "formattedScore", js.undefined)
+    inline def setFormattedScoreUndefined: Self = StObject.set(x, "formattedScore", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
+    inline def setLeaderboardId(value: String): Self = StObject.set(x, "leaderboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
+    inline def setLeaderboardIdUndefined: Self = StObject.set(x, "leaderboardId", js.undefined)
     
-    @scala.inline
-    def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
+    inline def setScoreTag(value: String): Self = StObject.set(x, "scoreTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
+    inline def setScoreTagUndefined: Self = StObject.set(x, "scoreTag", js.undefined)
     
-    @scala.inline
-    def setUnbeatenScores(value: js.Array[PlayerScore]): Self = StObject.set(x, "unbeatenScores", value.asInstanceOf[js.Any])
+    inline def setUnbeatenScores(value: js.Array[PlayerScore]): Self = StObject.set(x, "unbeatenScores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnbeatenScoresUndefined: Self = StObject.set(x, "unbeatenScores", js.undefined)
+    inline def setUnbeatenScoresUndefined: Self = StObject.set(x, "unbeatenScores", js.undefined)
     
-    @scala.inline
-    def setUnbeatenScoresVarargs(value: PlayerScore*): Self = StObject.set(x, "unbeatenScores", js.Array(value :_*))
+    inline def setUnbeatenScoresVarargs(value: PlayerScore*): Self = StObject.set(x, "unbeatenScores", js.Array(value :_*))
   }
 }

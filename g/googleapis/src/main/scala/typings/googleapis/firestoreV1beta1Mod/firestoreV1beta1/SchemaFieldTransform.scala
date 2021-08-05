@@ -84,55 +84,39 @@ trait SchemaFieldTransform extends StObject {
 }
 object SchemaFieldTransform {
   
-  @scala.inline
-  def apply(): SchemaFieldTransform = {
+  inline def apply(): SchemaFieldTransform = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFieldTransform]
   }
   
-  @scala.inline
-  implicit class SchemaFieldTransformMutableBuilder[Self <: SchemaFieldTransform] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFieldTransform](x: Self) {
     
-    @scala.inline
-    def setAppendMissingElements(value: SchemaArrayValue): Self = StObject.set(x, "appendMissingElements", value.asInstanceOf[js.Any])
+    inline def setAppendMissingElements(value: SchemaArrayValue): Self = StObject.set(x, "appendMissingElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendMissingElementsUndefined: Self = StObject.set(x, "appendMissingElements", js.undefined)
+    inline def setAppendMissingElementsUndefined: Self = StObject.set(x, "appendMissingElements", js.undefined)
     
-    @scala.inline
-    def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
+    inline def setFieldPath(value: String): Self = StObject.set(x, "fieldPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
+    inline def setFieldPathUndefined: Self = StObject.set(x, "fieldPath", js.undefined)
     
-    @scala.inline
-    def setIncrement(value: SchemaValue): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
+    inline def setIncrement(value: SchemaValue): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
+    inline def setIncrementUndefined: Self = StObject.set(x, "increment", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: SchemaValue): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: SchemaValue): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: SchemaValue): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: SchemaValue): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
-    @scala.inline
-    def setRemoveAllFromArray(value: SchemaArrayValue): Self = StObject.set(x, "removeAllFromArray", value.asInstanceOf[js.Any])
+    inline def setRemoveAllFromArray(value: SchemaArrayValue): Self = StObject.set(x, "removeAllFromArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAllFromArrayUndefined: Self = StObject.set(x, "removeAllFromArray", js.undefined)
+    inline def setRemoveAllFromArrayUndefined: Self = StObject.set(x, "removeAllFromArray", js.undefined)
     
-    @scala.inline
-    def setSetToServerValue(value: String): Self = StObject.set(x, "setToServerValue", value.asInstanceOf[js.Any])
+    inline def setSetToServerValue(value: String): Self = StObject.set(x, "setToServerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetToServerValueUndefined: Self = StObject.set(x, "setToServerValue", js.undefined)
+    inline def setSetToServerValueUndefined: Self = StObject.set(x, "setToServerValue", js.undefined)
   }
 }

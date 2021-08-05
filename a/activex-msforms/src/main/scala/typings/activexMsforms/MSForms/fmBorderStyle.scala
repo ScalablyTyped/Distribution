@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmBorderStyle extends StObject
 object fmBorderStyle {
   
-  @scala.inline
-  def fmBorderStyleNone: `0` = 0.asInstanceOf[`0`]
+  inline def fmBorderStyleNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmBorderStyleSingle: `1` = 1.asInstanceOf[`1`]
+  inline def fmBorderStyleSingle: `1` = 1.asInstanceOf[`1`]
 }

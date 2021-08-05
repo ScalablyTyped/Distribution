@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlFilterAllDatesInPeriod extends StObject
 object XlFilterAllDatesInPeriod {
   
-  @scala.inline
-  def xlFilterAllDatesInPeriodDay: `2` = 2.asInstanceOf[`2`]
+  inline def xlFilterAllDatesInPeriodDay: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlFilterAllDatesInPeriodHour: `3` = 3.asInstanceOf[`3`]
+  inline def xlFilterAllDatesInPeriodHour: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlFilterAllDatesInPeriodMinute: `4` = 4.asInstanceOf[`4`]
+  inline def xlFilterAllDatesInPeriodMinute: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlFilterAllDatesInPeriodMonth: `1` = 1.asInstanceOf[`1`]
+  inline def xlFilterAllDatesInPeriodMonth: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlFilterAllDatesInPeriodSecond: `5` = 5.asInstanceOf[`5`]
+  inline def xlFilterAllDatesInPeriodSecond: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlFilterAllDatesInPeriodYear: `0` = 0.asInstanceOf[`0`]
+  inline def xlFilterAllDatesInPeriodYear: `0` = 0.asInstanceOf[`0`]
 }

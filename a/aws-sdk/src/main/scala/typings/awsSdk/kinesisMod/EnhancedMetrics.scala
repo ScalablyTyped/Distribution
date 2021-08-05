@@ -13,22 +13,17 @@ trait EnhancedMetrics extends StObject {
 }
 object EnhancedMetrics {
   
-  @scala.inline
-  def apply(): EnhancedMetrics = {
+  inline def apply(): EnhancedMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnhancedMetrics]
   }
   
-  @scala.inline
-  implicit class EnhancedMetricsMutableBuilder[Self <: EnhancedMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: EnhancedMetrics](x: Self) {
     
-    @scala.inline
-    def setShardLevelMetrics(value: MetricsNameList): Self = StObject.set(x, "ShardLevelMetrics", value.asInstanceOf[js.Any])
+    inline def setShardLevelMetrics(value: MetricsNameList): Self = StObject.set(x, "ShardLevelMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardLevelMetricsUndefined: Self = StObject.set(x, "ShardLevelMetrics", js.undefined)
+    inline def setShardLevelMetricsUndefined: Self = StObject.set(x, "ShardLevelMetrics", js.undefined)
     
-    @scala.inline
-    def setShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value :_*))
+    inline def setShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "ShardLevelMetrics", js.Array(value :_*))
   }
 }

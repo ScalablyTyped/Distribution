@@ -14,21 +14,17 @@ object Data {
   }
   object Column {
     
-    @scala.inline
-    def apply(name: String, `type`: String): Column = {
+    inline def apply(name: String, `type`: String): Column = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,8 +48,7 @@ object Data {
   }
   object Table {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: (QueryJs, String) => Thenable[js.Any],
       initialize: () => Thenable[Unit],
       insert: js.Any => Thenable[js.Any],
@@ -67,32 +62,23 @@ object Data {
       __obj.asInstanceOf[Table]
     }
     
-    @scala.inline
-    implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+    extension [Self <: Table](x: Self) {
       
-      @scala.inline
-      def setDelete(value: (QueryJs, String) => Thenable[js.Any]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
+      inline def setDelete(value: (QueryJs, String) => Thenable[js.Any]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInitialize(value: () => Thenable[Unit]): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
+      inline def setInitialize(value: () => Thenable[Unit]): Self = StObject.set(x, "initialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInsert(value: js.Any => Thenable[js.Any]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+      inline def setInsert(value: js.Any => Thenable[js.Any]): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRead(value: QueryJs => Thenable[js.Array[js.Any]]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: QueryJs => Thenable[js.Array[js.Any]]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSchema(value: () => Thenable[js.Array[Column]]): Self = StObject.set(x, "schema", js.Any.fromFunction0(value))
+      inline def setSchema(value: () => Thenable[js.Array[Column]]): Self = StObject.set(x, "schema", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTruncate(value: () => Thenable[Unit]): Self = StObject.set(x, "truncate", js.Any.fromFunction0(value))
+      inline def setTruncate(value: () => Thenable[Unit]): Self = StObject.set(x, "truncate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUndelete(value: (QueryJs, String) => Thenable[js.Any]): Self = StObject.set(x, "undelete", js.Any.fromFunction2(value))
+      inline def setUndelete(value: (QueryJs, String) => Thenable[js.Any]): Self = StObject.set(x, "undelete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdate(value: (js.Any, QueryJs) => Thenable[js.Any]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (js.Any, QueryJs) => Thenable[js.Any]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }
   }
 }

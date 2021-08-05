@@ -18,25 +18,19 @@ trait Transcript extends StObject {
 }
 object Transcript {
   
-  @scala.inline
-  def apply(): Transcript = {
+  inline def apply(): Transcript = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Transcript]
   }
   
-  @scala.inline
-  implicit class TranscriptMutableBuilder[Self <: Transcript] (val x: Self) extends AnyVal {
+  extension [Self <: Transcript](x: Self) {
     
-    @scala.inline
-    def setRedactedTranscriptFileUri(value: Uri): Self = StObject.set(x, "RedactedTranscriptFileUri", value.asInstanceOf[js.Any])
+    inline def setRedactedTranscriptFileUri(value: Uri): Self = StObject.set(x, "RedactedTranscriptFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactedTranscriptFileUriUndefined: Self = StObject.set(x, "RedactedTranscriptFileUri", js.undefined)
+    inline def setRedactedTranscriptFileUriUndefined: Self = StObject.set(x, "RedactedTranscriptFileUri", js.undefined)
     
-    @scala.inline
-    def setTranscriptFileUri(value: Uri): Self = StObject.set(x, "TranscriptFileUri", value.asInstanceOf[js.Any])
+    inline def setTranscriptFileUri(value: Uri): Self = StObject.set(x, "TranscriptFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptFileUriUndefined: Self = StObject.set(x, "TranscriptFileUri", js.undefined)
+    inline def setTranscriptFileUriUndefined: Self = StObject.set(x, "TranscriptFileUri", js.undefined)
   }
 }

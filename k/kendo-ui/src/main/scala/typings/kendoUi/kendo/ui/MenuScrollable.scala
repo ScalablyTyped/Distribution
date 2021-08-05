@@ -10,19 +10,15 @@ trait MenuScrollable extends StObject {
 }
 object MenuScrollable {
   
-  @scala.inline
-  def apply(): MenuScrollable = {
+  inline def apply(): MenuScrollable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MenuScrollable]
   }
   
-  @scala.inline
-  implicit class MenuScrollableMutableBuilder[Self <: MenuScrollable] (val x: Self) extends AnyVal {
+  extension [Self <: MenuScrollable](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
   }
 }

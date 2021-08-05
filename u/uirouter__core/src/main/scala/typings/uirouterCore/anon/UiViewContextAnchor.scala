@@ -12,19 +12,15 @@ trait UiViewContextAnchor extends StObject {
 }
 object UiViewContextAnchor {
   
-  @scala.inline
-  def apply(uiViewContextAnchor: String, uiViewName: String): UiViewContextAnchor = {
+  inline def apply(uiViewContextAnchor: String, uiViewName: String): UiViewContextAnchor = {
     val __obj = js.Dynamic.literal(uiViewContextAnchor = uiViewContextAnchor.asInstanceOf[js.Any], uiViewName = uiViewName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UiViewContextAnchor]
   }
   
-  @scala.inline
-  implicit class UiViewContextAnchorMutableBuilder[Self <: UiViewContextAnchor] (val x: Self) extends AnyVal {
+  extension [Self <: UiViewContextAnchor](x: Self) {
     
-    @scala.inline
-    def setUiViewContextAnchor(value: String): Self = StObject.set(x, "uiViewContextAnchor", value.asInstanceOf[js.Any])
+    inline def setUiViewContextAnchor(value: String): Self = StObject.set(x, "uiViewContextAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiViewName(value: String): Self = StObject.set(x, "uiViewName", value.asInstanceOf[js.Any])
+    inline def setUiViewName(value: String): Self = StObject.set(x, "uiViewName", value.asInstanceOf[js.Any])
   }
 }

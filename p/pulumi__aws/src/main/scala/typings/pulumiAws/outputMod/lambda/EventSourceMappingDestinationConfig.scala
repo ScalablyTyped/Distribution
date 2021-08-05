@@ -13,19 +13,15 @@ trait EventSourceMappingDestinationConfig extends StObject {
 }
 object EventSourceMappingDestinationConfig {
   
-  @scala.inline
-  def apply(): EventSourceMappingDestinationConfig = {
+  inline def apply(): EventSourceMappingDestinationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventSourceMappingDestinationConfig]
   }
   
-  @scala.inline
-  implicit class EventSourceMappingDestinationConfigMutableBuilder[Self <: EventSourceMappingDestinationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EventSourceMappingDestinationConfig](x: Self) {
     
-    @scala.inline
-    def setOnFailure(value: EventSourceMappingDestinationConfigOnFailure): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
+    inline def setOnFailure(value: EventSourceMappingDestinationConfigOnFailure): Self = StObject.set(x, "onFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
   }
 }

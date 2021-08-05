@@ -23,25 +23,19 @@ trait DeleteOrganizationRequest extends StObject {
 }
 object DeleteOrganizationRequest {
   
-  @scala.inline
-  def apply(DeleteDirectory: Boolean, OrganizationId: OrganizationId): DeleteOrganizationRequest = {
+  inline def apply(DeleteDirectory: Boolean, OrganizationId: OrganizationId): DeleteOrganizationRequest = {
     val __obj = js.Dynamic.literal(DeleteDirectory = DeleteDirectory.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteOrganizationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteOrganizationRequestMutableBuilder[Self <: DeleteOrganizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteOrganizationRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: IdempotencyClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDeleteDirectory(value: Boolean): Self = StObject.set(x, "DeleteDirectory", value.asInstanceOf[js.Any])
+    inline def setDeleteDirectory(value: Boolean): Self = StObject.set(x, "DeleteDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

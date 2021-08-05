@@ -16,17 +16,14 @@ trait NthLastChild
 }
 object NthLastChild {
   
-  @scala.inline
-  def apply(index: NumericLiteral): NthLastChild = {
+  inline def apply(index: NumericLiteral): NthLastChild = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("nth-last-child")
     __obj.asInstanceOf[NthLastChild]
   }
   
-  @scala.inline
-  implicit class NthLastChildMutableBuilder[Self <: NthLastChild] (val x: Self) extends AnyVal {
+  extension [Self <: NthLastChild](x: Self) {
     
-    @scala.inline
-    def setType(value: `nth-last-child`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `nth-last-child`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

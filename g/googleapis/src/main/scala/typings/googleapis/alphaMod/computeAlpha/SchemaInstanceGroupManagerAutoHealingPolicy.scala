@@ -39,31 +39,23 @@ trait SchemaInstanceGroupManagerAutoHealingPolicy extends StObject {
 }
 object SchemaInstanceGroupManagerAutoHealingPolicy {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagerAutoHealingPolicy = {
+  inline def apply(): SchemaInstanceGroupManagerAutoHealingPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagerAutoHealingPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagerAutoHealingPolicyMutableBuilder[Self <: SchemaInstanceGroupManagerAutoHealingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagerAutoHealingPolicy](x: Self) {
     
-    @scala.inline
-    def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+    inline def setHealthCheck(value: String): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
+    inline def setHealthCheckUndefined: Self = StObject.set(x, "healthCheck", js.undefined)
     
-    @scala.inline
-    def setInitialDelaySec(value: Double): Self = StObject.set(x, "initialDelaySec", value.asInstanceOf[js.Any])
+    inline def setInitialDelaySec(value: Double): Self = StObject.set(x, "initialDelaySec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDelaySecUndefined: Self = StObject.set(x, "initialDelaySec", js.undefined)
+    inline def setInitialDelaySecUndefined: Self = StObject.set(x, "initialDelaySec", js.undefined)
     
-    @scala.inline
-    def setMaxUnavailable(value: SchemaFixedOrPercent): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
+    inline def setMaxUnavailable(value: SchemaFixedOrPercent): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
+    inline def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
   }
 }

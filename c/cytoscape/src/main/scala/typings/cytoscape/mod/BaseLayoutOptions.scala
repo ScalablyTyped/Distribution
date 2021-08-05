@@ -18,28 +18,21 @@ trait BaseLayoutOptions
 }
 object BaseLayoutOptions {
   
-  @scala.inline
-  def apply(name: String): BaseLayoutOptions = {
+  inline def apply(name: String): BaseLayoutOptions = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseLayoutOptions]
   }
   
-  @scala.inline
-  implicit class BaseLayoutOptionsMutableBuilder[Self <: BaseLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReady(value: /* e */ LayoutEventObject => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+    inline def setReady(value: /* e */ LayoutEventObject => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
     
-    @scala.inline
-    def setStop(value: /* e */ LayoutEventObject => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
+    inline def setStop(value: /* e */ LayoutEventObject => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

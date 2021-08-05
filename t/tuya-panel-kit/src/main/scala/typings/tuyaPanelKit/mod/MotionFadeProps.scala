@@ -12,19 +12,15 @@ trait MotionFadeProps
 }
 object MotionFadeProps {
   
-  @scala.inline
-  def apply(): MotionFadeProps = {
+  inline def apply(): MotionFadeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MotionFadeProps]
   }
   
-  @scala.inline
-  implicit class MotionFadePropsMutableBuilder[Self <: MotionFadeProps] (val x: Self) extends AnyVal {
+  extension [Self <: MotionFadeProps](x: Self) {
     
-    @scala.inline
-    def setFadeOpacity(value: Double): Self = StObject.set(x, "fadeOpacity", value.asInstanceOf[js.Any])
+    inline def setFadeOpacity(value: Double): Self = StObject.set(x, "fadeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeOpacityUndefined: Self = StObject.set(x, "fadeOpacity", js.undefined)
+    inline def setFadeOpacityUndefined: Self = StObject.set(x, "fadeOpacity", js.undefined)
   }
 }

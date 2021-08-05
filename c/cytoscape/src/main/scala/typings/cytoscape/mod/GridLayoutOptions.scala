@@ -34,8 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object GridLayoutOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     condense: Boolean,
     fit: Boolean,
     nodeDimensionsIncludeLabels: Boolean,
@@ -45,34 +44,24 @@ object GridLayoutOptions {
     __obj.asInstanceOf[GridLayoutOptions]
   }
   
-  @scala.inline
-  implicit class GridLayoutOptionsMutableBuilder[Self <: GridLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setAvoidOverlapPadding(value: Double): Self = StObject.set(x, "avoidOverlapPadding", value.asInstanceOf[js.Any])
+    inline def setAvoidOverlapPadding(value: Double): Self = StObject.set(x, "avoidOverlapPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvoidOverlapPaddingUndefined: Self = StObject.set(x, "avoidOverlapPadding", js.undefined)
+    inline def setAvoidOverlapPaddingUndefined: Self = StObject.set(x, "avoidOverlapPadding", js.undefined)
     
-    @scala.inline
-    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+    inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    @scala.inline
-    def setCondense(value: Boolean): Self = StObject.set(x, "condense", value.asInstanceOf[js.Any])
+    inline def setCondense(value: Boolean): Self = StObject.set(x, "condense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: grid): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: grid): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: NodeSingular => Col): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
+    inline def setPosition(value: NodeSingular => Col): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
   }
 }

@@ -19,16 +19,13 @@ trait Default[TTarget, TData]
 }
 object Default {
   
-  @scala.inline
-  def apply[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, js.Any, js.Any], TData) => Unit | `false`): Default[TTarget, TData] = {
+  inline def apply[TTarget, TData](_default: (TriggeredEvent[TTarget, TData, js.Any, js.Any], TData) => Unit | `false`): Default[TTarget, TData] = {
     val __obj = js.Dynamic.literal(_default = js.Any.fromFunction2(_default))
     __obj.asInstanceOf[Default[TTarget, TData]]
   }
   
-  @scala.inline
-  implicit class DefaultMutableBuilder[Self <: Default[?, ?], TTarget, TData] (val x: Self & (Default[TTarget, TData])) extends AnyVal {
+  extension [Self <: Default[?, ?], TTarget, TData](x: Self & (Default[TTarget, TData])) {
     
-    @scala.inline
-    def set_default(value: (TriggeredEvent[TTarget, TData, js.Any, js.Any], TData) => Unit | `false`): Self = StObject.set(x, "_default", js.Any.fromFunction2(value))
+    inline def set_default(value: (TriggeredEvent[TTarget, TData, js.Any, js.Any], TData) => Unit | `false`): Self = StObject.set(x, "_default", js.Any.fromFunction2(value))
   }
 }

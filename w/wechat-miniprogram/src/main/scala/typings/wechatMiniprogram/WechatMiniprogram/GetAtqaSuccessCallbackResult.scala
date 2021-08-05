@@ -14,19 +14,15 @@ trait GetAtqaSuccessCallbackResult extends StObject {
 }
 object GetAtqaSuccessCallbackResult {
   
-  @scala.inline
-  def apply(atqa: ArrayBuffer, errMsg: String): GetAtqaSuccessCallbackResult = {
+  inline def apply(atqa: ArrayBuffer, errMsg: String): GetAtqaSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(atqa = atqa.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAtqaSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetAtqaSuccessCallbackResultMutableBuilder[Self <: GetAtqaSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetAtqaSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setAtqa(value: ArrayBuffer): Self = StObject.set(x, "atqa", value.asInstanceOf[js.Any])
+    inline def setAtqa(value: ArrayBuffer): Self = StObject.set(x, "atqa", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

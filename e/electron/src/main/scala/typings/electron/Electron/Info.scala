@@ -23,31 +23,23 @@ trait Info extends StObject {
 }
 object Info {
   
-  @scala.inline
-  def apply(): Info = {
+  inline def apply(): Info = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Info]
   }
   
-  @scala.inline
-  implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+  extension [Self <: Info](x: Self) {
     
-    @scala.inline
-    def setCsp(value: String): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
+    inline def setCsp(value: String): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCspUndefined: Self = StObject.set(x, "csp", js.undefined)
+    inline def setCspUndefined: Self = StObject.set(x, "csp", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+    inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityOriginUndefined: Self = StObject.set(x, "securityOrigin", js.undefined)
+    inline def setSecurityOriginUndefined: Self = StObject.set(x, "securityOrigin", js.undefined)
   }
 }

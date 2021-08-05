@@ -134,124 +134,85 @@ trait SearchSourceProperties extends StObject {
 }
 object SearchSourceProperties {
   
-  @scala.inline
-  def apply(): SearchSourceProperties = {
+  inline def apply(): SearchSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchSourceProperties]
   }
   
-  @scala.inline
-  implicit class SearchSourcePropertiesMutableBuilder[Self <: SearchSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSourceProperties](x: Self) {
     
-    @scala.inline
-    def setAutoNavigate(value: Boolean): Self = StObject.set(x, "autoNavigate", value.asInstanceOf[js.Any])
+    inline def setAutoNavigate(value: Boolean): Self = StObject.set(x, "autoNavigate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoNavigateUndefined: Self = StObject.set(x, "autoNavigate", js.undefined)
+    inline def setAutoNavigateUndefined: Self = StObject.set(x, "autoNavigate", js.undefined)
     
-    @scala.inline
-    def setFilter(value: SearchSourceFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SearchSourceFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setGetResults(value: /* params */ js.Any => js.Promise[js.Array[SearchResult]]): Self = StObject.set(x, "getResults", js.Any.fromFunction1(value))
+    inline def setGetResults(value: /* params */ js.Any => js.Promise[js.Array[SearchResult]]): Self = StObject.set(x, "getResults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetResultsUndefined: Self = StObject.set(x, "getResults", js.undefined)
+    inline def setGetResultsUndefined: Self = StObject.set(x, "getResults", js.undefined)
     
-    @scala.inline
-    def setGetSuggestions(value: /* params */ js.Any => js.Promise[js.Array[SuggestResult]]): Self = StObject.set(x, "getSuggestions", js.Any.fromFunction1(value))
+    inline def setGetSuggestions(value: /* params */ js.Any => js.Promise[js.Array[SuggestResult]]): Self = StObject.set(x, "getSuggestions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSuggestionsUndefined: Self = StObject.set(x, "getSuggestions", js.undefined)
+    inline def setGetSuggestionsUndefined: Self = StObject.set(x, "getSuggestions", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setMaxSuggestions(value: Double): Self = StObject.set(x, "maxSuggestions", value.asInstanceOf[js.Any])
+    inline def setMaxSuggestions(value: Double): Self = StObject.set(x, "maxSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSuggestionsUndefined: Self = StObject.set(x, "maxSuggestions", js.undefined)
+    inline def setMaxSuggestionsUndefined: Self = StObject.set(x, "maxSuggestions", js.undefined)
     
-    @scala.inline
-    def setMinSuggestCharacters(value: Double): Self = StObject.set(x, "minSuggestCharacters", value.asInstanceOf[js.Any])
+    inline def setMinSuggestCharacters(value: Double): Self = StObject.set(x, "minSuggestCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSuggestCharactersUndefined: Self = StObject.set(x, "minSuggestCharacters", js.undefined)
+    inline def setMinSuggestCharactersUndefined: Self = StObject.set(x, "minSuggestCharacters", js.undefined)
     
-    @scala.inline
-    def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
+    inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
+    inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
     
-    @scala.inline
-    def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value :_*))
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
-    @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
+    inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setResultGraphicEnabled(value: Boolean): Self = StObject.set(x, "resultGraphicEnabled", value.asInstanceOf[js.Any])
+    inline def setResultGraphicEnabled(value: Boolean): Self = StObject.set(x, "resultGraphicEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultGraphicEnabledUndefined: Self = StObject.set(x, "resultGraphicEnabled", js.undefined)
+    inline def setResultGraphicEnabledUndefined: Self = StObject.set(x, "resultGraphicEnabled", js.undefined)
     
-    @scala.inline
-    def setResultSymbol(value: SymbolProperties): Self = StObject.set(x, "resultSymbol", value.asInstanceOf[js.Any])
+    inline def setResultSymbol(value: SymbolProperties): Self = StObject.set(x, "resultSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSymbolUndefined: Self = StObject.set(x, "resultSymbol", js.undefined)
+    inline def setResultSymbolUndefined: Self = StObject.set(x, "resultSymbol", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     
-    @scala.inline
-    def setSuggestionsEnabled(value: Boolean): Self = StObject.set(x, "suggestionsEnabled", value.asInstanceOf[js.Any])
+    inline def setSuggestionsEnabled(value: Boolean): Self = StObject.set(x, "suggestionsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionsEnabledUndefined: Self = StObject.set(x, "suggestionsEnabled", js.undefined)
+    inline def setSuggestionsEnabledUndefined: Self = StObject.set(x, "suggestionsEnabled", js.undefined)
     
-    @scala.inline
-    def setWithinViewEnabled(value: Boolean): Self = StObject.set(x, "withinViewEnabled", value.asInstanceOf[js.Any])
+    inline def setWithinViewEnabled(value: Boolean): Self = StObject.set(x, "withinViewEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithinViewEnabledUndefined: Self = StObject.set(x, "withinViewEnabled", js.undefined)
+    inline def setWithinViewEnabledUndefined: Self = StObject.set(x, "withinViewEnabled", js.undefined)
     
-    @scala.inline
-    def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
+    inline def setZoomScale(value: Double): Self = StObject.set(x, "zoomScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomScaleUndefined: Self = StObject.set(x, "zoomScale", js.undefined)
+    inline def setZoomScaleUndefined: Self = StObject.set(x, "zoomScale", js.undefined)
   }
 }

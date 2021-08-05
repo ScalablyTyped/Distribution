@@ -39,43 +39,31 @@ trait SchemaFindReplaceResponse extends StObject {
 }
 object SchemaFindReplaceResponse {
   
-  @scala.inline
-  def apply(): SchemaFindReplaceResponse = {
+  inline def apply(): SchemaFindReplaceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFindReplaceResponse]
   }
   
-  @scala.inline
-  implicit class SchemaFindReplaceResponseMutableBuilder[Self <: SchemaFindReplaceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFindReplaceResponse](x: Self) {
     
-    @scala.inline
-    def setFormulasChanged(value: Double): Self = StObject.set(x, "formulasChanged", value.asInstanceOf[js.Any])
+    inline def setFormulasChanged(value: Double): Self = StObject.set(x, "formulasChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulasChangedUndefined: Self = StObject.set(x, "formulasChanged", js.undefined)
+    inline def setFormulasChangedUndefined: Self = StObject.set(x, "formulasChanged", js.undefined)
     
-    @scala.inline
-    def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
+    inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
+    inline def setOccurrencesChangedUndefined: Self = StObject.set(x, "occurrencesChanged", js.undefined)
     
-    @scala.inline
-    def setRowsChanged(value: Double): Self = StObject.set(x, "rowsChanged", value.asInstanceOf[js.Any])
+    inline def setRowsChanged(value: Double): Self = StObject.set(x, "rowsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsChangedUndefined: Self = StObject.set(x, "rowsChanged", js.undefined)
+    inline def setRowsChangedUndefined: Self = StObject.set(x, "rowsChanged", js.undefined)
     
-    @scala.inline
-    def setSheetsChanged(value: Double): Self = StObject.set(x, "sheetsChanged", value.asInstanceOf[js.Any])
+    inline def setSheetsChanged(value: Double): Self = StObject.set(x, "sheetsChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetsChangedUndefined: Self = StObject.set(x, "sheetsChanged", js.undefined)
+    inline def setSheetsChangedUndefined: Self = StObject.set(x, "sheetsChanged", js.undefined)
     
-    @scala.inline
-    def setValuesChanged(value: Double): Self = StObject.set(x, "valuesChanged", value.asInstanceOf[js.Any])
+    inline def setValuesChanged(value: Double): Self = StObject.set(x, "valuesChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesChangedUndefined: Self = StObject.set(x, "valuesChanged", js.undefined)
+    inline def setValuesChangedUndefined: Self = StObject.set(x, "valuesChanged", js.undefined)
   }
 }

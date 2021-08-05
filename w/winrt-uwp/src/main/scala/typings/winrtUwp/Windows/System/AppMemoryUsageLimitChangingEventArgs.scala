@@ -15,19 +15,15 @@ trait AppMemoryUsageLimitChangingEventArgs extends StObject {
 }
 object AppMemoryUsageLimitChangingEventArgs {
   
-  @scala.inline
-  def apply(newLimit: Double, oldLimit: Double): AppMemoryUsageLimitChangingEventArgs = {
+  inline def apply(newLimit: Double, oldLimit: Double): AppMemoryUsageLimitChangingEventArgs = {
     val __obj = js.Dynamic.literal(newLimit = newLimit.asInstanceOf[js.Any], oldLimit = oldLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppMemoryUsageLimitChangingEventArgs]
   }
   
-  @scala.inline
-  implicit class AppMemoryUsageLimitChangingEventArgsMutableBuilder[Self <: AppMemoryUsageLimitChangingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppMemoryUsageLimitChangingEventArgs](x: Self) {
     
-    @scala.inline
-    def setNewLimit(value: Double): Self = StObject.set(x, "newLimit", value.asInstanceOf[js.Any])
+    inline def setNewLimit(value: Double): Self = StObject.set(x, "newLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldLimit(value: Double): Self = StObject.set(x, "oldLimit", value.asInstanceOf[js.Any])
+    inline def setOldLimit(value: Double): Self = StObject.set(x, "oldLimit", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait IOrientation
      with IAbstract
 object IOrientation {
   
-  @scala.inline
-  def apply(): IOrientation = {
+  inline def apply(): IOrientation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IOrientation]
   }

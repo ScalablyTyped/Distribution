@@ -18,19 +18,15 @@ trait DateInterval extends StObject {
 }
 object DateInterval {
   
-  @scala.inline
-  def apply(End: YearMonthDay, Start: YearMonthDay): DateInterval = {
+  inline def apply(End: YearMonthDay, Start: YearMonthDay): DateInterval = {
     val __obj = js.Dynamic.literal(End = End.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateInterval]
   }
   
-  @scala.inline
-  implicit class DateIntervalMutableBuilder[Self <: DateInterval] (val x: Self) extends AnyVal {
+  extension [Self <: DateInterval](x: Self) {
     
-    @scala.inline
-    def setEnd(value: YearMonthDay): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: YearMonthDay): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: YearMonthDay): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: YearMonthDay): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait SoaRecord extends StObject {
 }
 object SoaRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expire: Double,
     hostmaster: String,
     minttl: Double,
@@ -36,28 +35,20 @@ object SoaRecord {
     __obj.asInstanceOf[SoaRecord]
   }
   
-  @scala.inline
-  implicit class SoaRecordMutableBuilder[Self <: SoaRecord] (val x: Self) extends AnyVal {
+  extension [Self <: SoaRecord](x: Self) {
     
-    @scala.inline
-    def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+    inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostmaster(value: String): Self = StObject.set(x, "hostmaster", value.asInstanceOf[js.Any])
+    inline def setHostmaster(value: String): Self = StObject.set(x, "hostmaster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinttl(value: Double): Self = StObject.set(x, "minttl", value.asInstanceOf[js.Any])
+    inline def setMinttl(value: Double): Self = StObject.set(x, "minttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNsname(value: String): Self = StObject.set(x, "nsname", value.asInstanceOf[js.Any])
+    inline def setNsname(value: String): Self = StObject.set(x, "nsname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: Double): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: Double): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: Double): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: Double): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
   }
 }

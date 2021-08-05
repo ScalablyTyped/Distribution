@@ -12,25 +12,19 @@ trait IDBIndexParameters extends StObject {
 }
 object IDBIndexParameters {
   
-  @scala.inline
-  def apply(): IDBIndexParameters = {
+  inline def apply(): IDBIndexParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDBIndexParameters]
   }
   
-  @scala.inline
-  implicit class IDBIndexParametersMutableBuilder[Self <: IDBIndexParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IDBIndexParameters](x: Self) {
     
-    @scala.inline
-    def setMultiEntry(value: scala.Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
+    inline def setMultiEntry(value: scala.Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiEntryUndefined: Self = StObject.set(x, "multiEntry", js.undefined)
+    inline def setMultiEntryUndefined: Self = StObject.set(x, "multiEntry", js.undefined)
     
-    @scala.inline
-    def setUnique(value: scala.Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: scala.Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

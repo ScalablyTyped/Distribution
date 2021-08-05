@@ -30,8 +30,7 @@ object JQuerySortable {
   }
   object Container {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       el: JQuery,
       group: ContainerGroup,
       handle: String,
@@ -45,38 +44,27 @@ object JQuerySortable {
       __obj.asInstanceOf[Container]
     }
     
-    @scala.inline
-    implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+    extension [Self <: Container](x: Self) {
       
-      @scala.inline
-      def setEl(value: JQuery): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: JQuery): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroup(value: ContainerGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: ContainerGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemDimensions(value: js.Array[Dimensions]): Self = StObject.set(x, "itemDimensions", value.asInstanceOf[js.Any])
+      inline def setItemDimensions(value: js.Array[Dimensions]): Self = StObject.set(x, "itemDimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "itemDimensions", js.Array(value :_*))
+      inline def setItemDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "itemDimensions", js.Array(value :_*))
       
-      @scala.inline
-      def setItems(value: js.Array[HTMLElement]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[HTMLElement]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: HTMLElement*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: HTMLElement*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootGroup(value: ContainerGroup): Self = StObject.set(x, "rootGroup", value.asInstanceOf[js.Any])
+      inline def setRootGroup(value: ContainerGroup): Self = StObject.set(x, "rootGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,8 +113,7 @@ object JQuerySortable {
   }
   object ContainerGroup {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $document: JQuery,
       containerDimensions: js.Array[Dimensions],
       containers: js.Array[Container],
@@ -152,74 +139,51 @@ object JQuerySortable {
       __obj.asInstanceOf[ContainerGroup]
     }
     
-    @scala.inline
-    implicit class ContainerGroupMutableBuilder[Self <: ContainerGroup] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerGroup](x: Self) {
       
-      @scala.inline
-      def set$document(value: JQuery): Self = StObject.set(x, "$document", value.asInstanceOf[js.Any])
+      inline def set$document(value: JQuery): Self = StObject.set(x, "$document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerDimensions(value: js.Array[Dimensions]): Self = StObject.set(x, "containerDimensions", value.asInstanceOf[js.Any])
+      inline def setContainerDimensions(value: js.Array[Dimensions]): Self = StObject.set(x, "containerDimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "containerDimensions", js.Array(value :_*))
+      inline def setContainerDimensionsVarargs(value: Dimensions*): Self = StObject.set(x, "containerDimensions", js.Array(value :_*))
       
-      @scala.inline
-      def setContainers(value: js.Array[Container]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
+      inline def setContainers(value: js.Array[Container]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainersVarargs(value: Container*): Self = StObject.set(x, "containers", js.Array(value :_*))
+      inline def setContainersVarargs(value: Container*): Self = StObject.set(x, "containers", js.Array(value :_*))
       
-      @scala.inline
-      def setDelayMet(value: Boolean): Self = StObject.set(x, "delayMet", value.asInstanceOf[js.Any])
+      inline def setDelayMet(value: Boolean): Self = StObject.set(x, "delayMet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragInitDone(value: Boolean): Self = StObject.set(x, "dragInitDone", value.asInstanceOf[js.Any])
+      inline def setDragInitDone(value: Boolean): Self = StObject.set(x, "dragInitDone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragProxy(value: js.Any): Self = StObject.set(x, "dragProxy", value.asInstanceOf[js.Any])
+      inline def setDragProxy(value: js.Any): Self = StObject.set(x, "dragProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+      inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropProxy(value: js.Any): Self = StObject.set(x, "dropProxy", value.asInstanceOf[js.Any])
+      inline def setDropProxy(value: js.Any): Self = StObject.set(x, "dropProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemContainer(value: Container): Self = StObject.set(x, "itemContainer", value.asInstanceOf[js.Any])
+      inline def setItemContainer(value: Container): Self = StObject.set(x, "itemContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastAppendedItem(value: JQuery): Self = StObject.set(x, "lastAppendedItem", value.asInstanceOf[js.Any])
+      inline def setLastAppendedItem(value: JQuery): Self = StObject.set(x, "lastAppendedItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastPointer(value: Position): Self = StObject.set(x, "lastPointer", value.asInstanceOf[js.Any])
+      inline def setLastPointer(value: Position): Self = StObject.set(x, "lastPointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastRelativePointer(value: Position): Self = StObject.set(x, "lastRelativePointer", value.asInstanceOf[js.Any])
+      inline def setLastRelativePointer(value: Position): Self = StObject.set(x, "lastRelativePointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetParent(value: JQuery): Self = StObject.set(x, "offsetParent", value.asInstanceOf[js.Any])
+      inline def setOffsetParent(value: JQuery): Self = StObject.set(x, "offsetParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholder(value: JQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: JQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointer(value: Position): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
+      inline def setPointer(value: Position): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePointer(value: Position): Self = StObject.set(x, "relativePointer", value.asInstanceOf[js.Any])
+      inline def setRelativePointer(value: Position): Self = StObject.set(x, "relativePointer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSameResultBox(value: Bottom): Self = StObject.set(x, "sameResultBox", value.asInstanceOf[js.Any])
+      inline def setSameResultBox(value: Bottom): Self = StObject.set(x, "sameResultBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollProxy(value: js.Any): Self = StObject.set(x, "scrollProxy", value.asInstanceOf[js.Any])
+      inline def setScrollProxy(value: js.Any): Self = StObject.set(x, "scrollProxy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,44 +201,32 @@ object JQuerySortable {
   }
   object ContainerOptions {
     
-    @scala.inline
-    def apply(): ContainerOptions = {
+    inline def apply(): ContainerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerOptions]
     }
     
-    @scala.inline
-    implicit class ContainerOptionsMutableBuilder[Self <: ContainerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerOptions](x: Self) {
       
-      @scala.inline
-      def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+      inline def setDrag(value: Boolean): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+      inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
       
-      @scala.inline
-      def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+      inline def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+      inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      @scala.inline
-      def setExclude(value: String): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: String): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setNested(value: Boolean): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
+      inline def setNested(value: Boolean): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
+      inline def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -337,147 +289,108 @@ object JQuerySortable {
   }
   object GroupOptions {
     
-    @scala.inline
-    def apply(): GroupOptions = {
+    inline def apply(): GroupOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GroupOptions]
     }
     
-    @scala.inline
-    implicit class GroupOptionsMutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GroupOptions](x: Self) {
       
-      @scala.inline
-      def setAfterMove(
+      inline def setAfterMove(
         value: (/* $placeholder */ JQuery, /* container */ Container, /* $closestItemOrContainer */ JQuery) => Unit
       ): Self = StObject.set(x, "afterMove", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAfterMoveUndefined: Self = StObject.set(x, "afterMove", js.undefined)
+      inline def setAfterMoveUndefined: Self = StObject.set(x, "afterMove", js.undefined)
       
-      @scala.inline
-      def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
+      inline def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerPathUndefined: Self = StObject.set(x, "containerPath", js.undefined)
+      inline def setContainerPathUndefined: Self = StObject.set(x, "containerPath", js.undefined)
       
-      @scala.inline
-      def setContainerSelector(value: String): Self = StObject.set(x, "containerSelector", value.asInstanceOf[js.Any])
+      inline def setContainerSelector(value: String): Self = StObject.set(x, "containerSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerSelectorUndefined: Self = StObject.set(x, "containerSelector", js.undefined)
+      inline def setContainerSelectorUndefined: Self = StObject.set(x, "containerSelector", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
       
-      @scala.inline
-      def setIsValidTarget(value: (/* $item */ JQuery, /* container */ Container) => Boolean): Self = StObject.set(x, "isValidTarget", js.Any.fromFunction2(value))
+      inline def setIsValidTarget(value: (/* $item */ JQuery, /* container */ Container) => Boolean): Self = StObject.set(x, "isValidTarget", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsValidTargetUndefined: Self = StObject.set(x, "isValidTarget", js.undefined)
+      inline def setIsValidTargetUndefined: Self = StObject.set(x, "isValidTarget", js.undefined)
       
-      @scala.inline
-      def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
+      inline def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemPathUndefined: Self = StObject.set(x, "itemPath", js.undefined)
+      inline def setItemPathUndefined: Self = StObject.set(x, "itemPath", js.undefined)
       
-      @scala.inline
-      def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
+      inline def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
+      inline def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
       
-      @scala.inline
-      def setOnCancel(
+      inline def setOnCancel(
         value: (/* $item */ js.UndefOr[JQuery], /* container */ js.UndefOr[Container], /* _super */ js.UndefOr[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnCancelHandler */ js.Object
             ], /* event */ js.UndefOr[Event]) => Unit
       ): Self = StObject.set(x, "onCancel", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnDrag(
+      inline def setOnDrag(
         value: (/* $item */ js.UndefOr[JQuery], /* position */ js.UndefOr[Position], /* _super */ js.UndefOr[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnDragEventHandler */ js.Object
             ], /* event */ js.UndefOr[Event]) => Unit
       ): Self = StObject.set(x, "onDrag", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnDragStart(
+      inline def setOnDragStart(
         value: (/* $item */ js.UndefOr[JQuery], /* container */ js.UndefOr[Container], /* _super */ js.UndefOr[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.GenericEventHandler */ js.Object
             ], /* event */ js.UndefOr[Event]) => Unit
       ): Self = StObject.set(x, "onDragStart", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+      inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
-      @scala.inline
-      def setOnDrop(
+      inline def setOnDrop(
         value: (/* $item */ js.UndefOr[JQuery], /* container */ js.UndefOr[Container], /* _super */ js.UndefOr[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.GenericEventHandler */ js.Object
             ], /* event */ js.UndefOr[Event]) => Unit
       ): Self = StObject.set(x, "onDrop", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
+      inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
-      @scala.inline
-      def setOnMousedown(
+      inline def setOnMousedown(
         value: (/* $item */ js.UndefOr[JQuery], /* _super */ js.UndefOr[
               /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias jquery-sortable.JQuerySortable.OnMousedownHandler */ js.Object
             ], /* event */ js.UndefOr[Event]) => Unit
       ): Self = StObject.set(x, "onMousedown", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnMousedownUndefined: Self = StObject.set(x, "onMousedown", js.undefined)
+      inline def setOnMousedownUndefined: Self = StObject.set(x, "onMousedown", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: JQuery | js.Array[js.Any] | Element | String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: JQuery | js.Array[js.Any] | Element | String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPlaceholderVarargs(value: js.Any*): Self = StObject.set(x, "placeholder", js.Array(value :_*))
+      inline def setPlaceholderVarargs(value: js.Any*): Self = StObject.set(x, "placeholder", js.Array(value :_*))
       
-      @scala.inline
-      def setPullPlaceholder(value: Boolean): Self = StObject.set(x, "pullPlaceholder", value.asInstanceOf[js.Any])
+      inline def setPullPlaceholder(value: Boolean): Self = StObject.set(x, "pullPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullPlaceholderUndefined: Self = StObject.set(x, "pullPlaceholder", js.undefined)
+      inline def setPullPlaceholderUndefined: Self = StObject.set(x, "pullPlaceholder", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: (/* $parent */ JQuery, /* $children */ js.Any, /* parentIsContainer */ Boolean) => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction3(value))
+      inline def setSerialize(value: (/* $parent */ JQuery, /* $children */ js.Any, /* parentIsContainer */ Boolean) => Unit): Self = StObject.set(x, "serialize", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
-      @scala.inline
-      def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+      inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+      inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
     }
   }
   
@@ -519,20 +432,16 @@ object JQuerySortable {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     }
   }
   
@@ -544,20 +453,16 @@ object JQuerySortable {
   }
   object Position {
     
-    @scala.inline
-    def apply(left: Double, top: Double): Position = {
+    inline def apply(left: Double, top: Double): Position = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Position]
     }
     
-    @scala.inline
-    implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+    extension [Self <: Position](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   

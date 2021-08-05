@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
+  inline def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
     */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
@@ -20,8 +19,7 @@ object mod {
   {[ key in keyof InputType ]: MappedValueType}
     */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
   ]]
-  @scala.inline
-  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: Unit, options: Options): js.Promise[
+  inline def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](map: InputType, mapper: Unit, options: Options): js.Promise[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof InputType ]: MappedValueType}
     */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
@@ -30,8 +28,7 @@ object mod {
   {[ key in keyof InputType ]: MappedValueType}
     */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
   ]]
-  @scala.inline
-  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
+  inline def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
     mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType]
   ): js.Promise[
@@ -43,8 +40,7 @@ object mod {
   {[ key in keyof InputType ]: MappedValueType}
     */ typings.pProps.pPropsStrings.^ & TopLevel[js.Any]
   ]]
-  @scala.inline
-  def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
+  inline def apply[InputType /* <: StringDictionary[js.Any] */, ValueType /* <: /* import warning: importer.ImportType#apply Failed type conversion: InputType[keyof InputType] */ js.Any */, MappedValueType](
     map: InputType,
     mapper: Mapper[PromiseResult[ValueType], /* keyof InputType */ String, MappedValueType],
     options: Options
@@ -88,26 +84,22 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply[KeyType, ValueType, MappedValueType](
+  inline def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType]
   ): js.Promise[Map[KeyType, MappedValueType]] = ^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
-  @scala.inline
-  def apply[KeyType, ValueType, MappedValueType](
+  inline def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType],
     mapper: Unit,
     options: Options
   ): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
-  @scala.inline
-  def apply[KeyType, ValueType, MappedValueType](
+  inline def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType],
     mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType]
   ): js.Promise[Map[KeyType, MappedValueType]] = (^.asInstanceOf[js.Dynamic].apply(map.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Map[KeyType, MappedValueType]]]
-  @scala.inline
-  def apply[KeyType, ValueType, MappedValueType](
+  inline def apply[KeyType, ValueType, MappedValueType](
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types
   map: ReadonlyMap[KeyType, ValueType],
     mapper: Mapper[PromiseResult[ValueType], KeyType, MappedValueType],

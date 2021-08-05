@@ -21,22 +21,17 @@ trait IProgressMessage extends StObject {
 }
 object IProgressMessage {
   
-  @scala.inline
-  def apply(qMessageCode: Double, qMessageParameters: js.Array[String]): IProgressMessage = {
+  inline def apply(qMessageCode: Double, qMessageParameters: js.Array[String]): IProgressMessage = {
     val __obj = js.Dynamic.literal(qMessageCode = qMessageCode.asInstanceOf[js.Any], qMessageParameters = qMessageParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressMessage]
   }
   
-  @scala.inline
-  implicit class IProgressMessageMutableBuilder[Self <: IProgressMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IProgressMessage](x: Self) {
     
-    @scala.inline
-    def setQMessageCode(value: Double): Self = StObject.set(x, "qMessageCode", value.asInstanceOf[js.Any])
+    inline def setQMessageCode(value: Double): Self = StObject.set(x, "qMessageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMessageParameters(value: js.Array[String]): Self = StObject.set(x, "qMessageParameters", value.asInstanceOf[js.Any])
+    inline def setQMessageParameters(value: js.Array[String]): Self = StObject.set(x, "qMessageParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMessageParametersVarargs(value: String*): Self = StObject.set(x, "qMessageParameters", js.Array(value :_*))
+    inline def setQMessageParametersVarargs(value: String*): Self = StObject.set(x, "qMessageParameters", js.Array(value :_*))
   }
 }

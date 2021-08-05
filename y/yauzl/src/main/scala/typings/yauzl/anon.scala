@@ -15,20 +15,16 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: Buffer, id: Double): Data = {
+    inline def apply(data: Buffer, id: Double): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -40,20 +36,16 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(end: Double, start: Double): End = {
+    inline def apply(end: Double, start: Double): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

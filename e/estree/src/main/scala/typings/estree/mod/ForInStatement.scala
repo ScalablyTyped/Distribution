@@ -14,17 +14,14 @@ trait ForInStatement
 }
 object ForInStatement {
   
-  @scala.inline
-  def apply(body: Statement, left: VariableDeclaration | Pattern, right: Expression): ForInStatement = {
+  inline def apply(body: Statement, left: VariableDeclaration | Pattern, right: Expression): ForInStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ForInStatement")
     __obj.asInstanceOf[ForInStatement]
   }
   
-  @scala.inline
-  implicit class ForInStatementMutableBuilder[Self <: ForInStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ForInStatement](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ForInStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ForInStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

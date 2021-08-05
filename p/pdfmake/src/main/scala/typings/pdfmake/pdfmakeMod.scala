@@ -19,41 +19,33 @@ object pdfmakeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createPdf(documentDefinitions: TDocumentDefinitions): TCreatedPdf = ^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any]).asInstanceOf[TCreatedPdf]
-  @scala.inline
-  def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: StringDictionary[CustomTableLayout]): TCreatedPdf = (^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any], tableLayouts.asInstanceOf[js.Any])).asInstanceOf[TCreatedPdf]
-  @scala.inline
-  def createPdf(
+  inline def createPdf(documentDefinitions: TDocumentDefinitions): TCreatedPdf = ^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any]).asInstanceOf[TCreatedPdf]
+  inline def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: StringDictionary[CustomTableLayout]): TCreatedPdf = (^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any], tableLayouts.asInstanceOf[js.Any])).asInstanceOf[TCreatedPdf]
+  inline def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: StringDictionary[CustomTableLayout],
     fonts: Unit,
     vfs: StringDictionary[String]
   ): TCreatedPdf = (^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any], tableLayouts.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], vfs.asInstanceOf[js.Any])).asInstanceOf[TCreatedPdf]
-  @scala.inline
-  def createPdf(
+  inline def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: StringDictionary[CustomTableLayout],
     fonts: TFontDictionary
   ): TCreatedPdf = (^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any], tableLayouts.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[TCreatedPdf]
-  @scala.inline
-  def createPdf(
+  inline def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: StringDictionary[CustomTableLayout],
     fonts: TFontDictionary,
     vfs: StringDictionary[String]
   ): TCreatedPdf = (^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any], tableLayouts.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], vfs.asInstanceOf[js.Any])).asInstanceOf[TCreatedPdf]
-  @scala.inline
-  def createPdf(
+  inline def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: Unit,
     fonts: Unit,
     vfs: StringDictionary[String]
   ): TCreatedPdf = (^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any], tableLayouts.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any], vfs.asInstanceOf[js.Any])).asInstanceOf[TCreatedPdf]
-  @scala.inline
-  def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: Unit, fonts: TFontDictionary): TCreatedPdf = (^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any], tableLayouts.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[TCreatedPdf]
-  @scala.inline
-  def createPdf(
+  inline def createPdf(documentDefinitions: TDocumentDefinitions, tableLayouts: Unit, fonts: TFontDictionary): TCreatedPdf = (^.asInstanceOf[js.Dynamic].applyDynamic("createPdf")(documentDefinitions.asInstanceOf[js.Any], tableLayouts.asInstanceOf[js.Any], fonts.asInstanceOf[js.Any])).asInstanceOf[TCreatedPdf]
+  inline def createPdf(
     documentDefinitions: TDocumentDefinitions,
     tableLayouts: Unit,
     fonts: TFontDictionary,
@@ -63,8 +55,7 @@ object pdfmakeMod {
   @JSImport("pdfmake/build/pdfmake", "fonts")
   @js.native
   def fonts: TFontDictionary = js.native
-  @scala.inline
-  def fonts_=(x: TFontDictionary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fonts")(x.asInstanceOf[js.Any])
+  inline def fonts_=(x: TFontDictionary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fonts")(x.asInstanceOf[js.Any])
   
   @js.native
   trait TCreatedPdf extends StObject {

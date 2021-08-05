@@ -16,14 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(host: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(host: String, options: ProxyOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(host: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(
+  inline def apply(host: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(host: String, options: ProxyOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(host: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(
     host: js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String],
     options: ProxyOptions
   ): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].apply(host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
@@ -119,123 +115,88 @@ object mod {
   }
   object ProxyOptions {
     
-    @scala.inline
-    def apply(): ProxyOptions = {
+    inline def apply(): ProxyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProxyOptions]
     }
     
-    @scala.inline
-    implicit class ProxyOptionsMutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean | js.Promise[Boolean]
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+      inline def setHttps(value: Boolean): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
+      inline def setHttpsUndefined: Self = StObject.set(x, "https", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double | String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMemoizeHost(value: Boolean): Self = StObject.set(x, "memoizeHost", value.asInstanceOf[js.Any])
+      inline def setMemoizeHost(value: Boolean): Self = StObject.set(x, "memoizeHost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoizeHostUndefined: Self = StObject.set(x, "memoizeHost", js.undefined)
+      inline def setMemoizeHostUndefined: Self = StObject.set(x, "memoizeHost", js.undefined)
       
-      @scala.inline
-      def setParseReqBody(value: Boolean): Self = StObject.set(x, "parseReqBody", value.asInstanceOf[js.Any])
+      inline def setParseReqBody(value: Boolean): Self = StObject.set(x, "parseReqBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseReqBodyUndefined: Self = StObject.set(x, "parseReqBody", js.undefined)
+      inline def setParseReqBodyUndefined: Self = StObject.set(x, "parseReqBody", js.undefined)
       
-      @scala.inline
-      def setPreserveHostHdr(value: Boolean): Self = StObject.set(x, "preserveHostHdr", value.asInstanceOf[js.Any])
+      inline def setPreserveHostHdr(value: Boolean): Self = StObject.set(x, "preserveHostHdr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveHostHdrUndefined: Self = StObject.set(x, "preserveHostHdr", js.undefined)
+      inline def setPreserveHostHdrUndefined: Self = StObject.set(x, "preserveHostHdr", js.undefined)
       
-      @scala.inline
-      def setProxyErrorHandler(value: (/* err */ js.Any, /* res */ Response_[js.Any], /* next */ NextFunction) => js.Any): Self = StObject.set(x, "proxyErrorHandler", js.Any.fromFunction3(value))
+      inline def setProxyErrorHandler(value: (/* err */ js.Any, /* res */ Response_[js.Any], /* next */ NextFunction) => js.Any): Self = StObject.set(x, "proxyErrorHandler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setProxyErrorHandlerUndefined: Self = StObject.set(x, "proxyErrorHandler", js.undefined)
+      inline def setProxyErrorHandlerUndefined: Self = StObject.set(x, "proxyErrorHandler", js.undefined)
       
-      @scala.inline
-      def setProxyReqBodyDecorator(
+      inline def setProxyReqBodyDecorator(
         value: (/* bodyContent */ js.Any, /* srcReq */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => js.Any
       ): Self = StObject.set(x, "proxyReqBodyDecorator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProxyReqBodyDecoratorUndefined: Self = StObject.set(x, "proxyReqBodyDecorator", js.undefined)
+      inline def setProxyReqBodyDecoratorUndefined: Self = StObject.set(x, "proxyReqBodyDecorator", js.undefined)
       
-      @scala.inline
-      def setProxyReqOptDecorator(
+      inline def setProxyReqOptDecorator(
         value: (/* proxyReqOpts */ RequestOptions, /* srcReq */ Request_[ParamsDictionary, js.Any, js.Any, Query]) => RequestOptions | js.Promise[RequestOptions]
       ): Self = StObject.set(x, "proxyReqOptDecorator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProxyReqOptDecoratorUndefined: Self = StObject.set(x, "proxyReqOptDecorator", js.undefined)
+      inline def setProxyReqOptDecoratorUndefined: Self = StObject.set(x, "proxyReqOptDecorator", js.undefined)
       
-      @scala.inline
-      def setProxyReqPathResolver(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String | js.Promise[String]): Self = StObject.set(x, "proxyReqPathResolver", js.Any.fromFunction1(value))
+      inline def setProxyReqPathResolver(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String | js.Promise[String]): Self = StObject.set(x, "proxyReqPathResolver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProxyReqPathResolverUndefined: Self = StObject.set(x, "proxyReqPathResolver", js.undefined)
+      inline def setProxyReqPathResolverUndefined: Self = StObject.set(x, "proxyReqPathResolver", js.undefined)
       
-      @scala.inline
-      def setReqAsBuffer(value: Boolean): Self = StObject.set(x, "reqAsBuffer", value.asInstanceOf[js.Any])
+      inline def setReqAsBuffer(value: Boolean): Self = StObject.set(x, "reqAsBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqAsBufferUndefined: Self = StObject.set(x, "reqAsBuffer", js.undefined)
+      inline def setReqAsBufferUndefined: Self = StObject.set(x, "reqAsBuffer", js.undefined)
       
-      @scala.inline
-      def setReqBodyEncoding(value: String): Self = StObject.set(x, "reqBodyEncoding", value.asInstanceOf[js.Any])
+      inline def setReqBodyEncoding(value: String): Self = StObject.set(x, "reqBodyEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqBodyEncodingNull: Self = StObject.set(x, "reqBodyEncoding", null)
+      inline def setReqBodyEncodingNull: Self = StObject.set(x, "reqBodyEncoding", null)
       
-      @scala.inline
-      def setReqBodyEncodingUndefined: Self = StObject.set(x, "reqBodyEncoding", js.undefined)
+      inline def setReqBodyEncodingUndefined: Self = StObject.set(x, "reqBodyEncoding", js.undefined)
       
-      @scala.inline
-      def setSkipToNextHandlerFilter(value: /* proxyRes */ Response_[js.Any] => Boolean): Self = StObject.set(x, "skipToNextHandlerFilter", js.Any.fromFunction1(value))
+      inline def setSkipToNextHandlerFilter(value: /* proxyRes */ Response_[js.Any] => Boolean): Self = StObject.set(x, "skipToNextHandlerFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkipToNextHandlerFilterUndefined: Self = StObject.set(x, "skipToNextHandlerFilter", js.undefined)
+      inline def setSkipToNextHandlerFilterUndefined: Self = StObject.set(x, "skipToNextHandlerFilter", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUserResDecorator(
+      inline def setUserResDecorator(
         value: (/* proxyRes */ Response_[js.Any], /* proxyResData */ js.Any, /* userReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* userRes */ Response_[js.Any]) => Buffer | String | (js.Promise[Buffer | String])
       ): Self = StObject.set(x, "userResDecorator", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setUserResDecoratorUndefined: Self = StObject.set(x, "userResDecorator", js.undefined)
+      inline def setUserResDecoratorUndefined: Self = StObject.set(x, "userResDecorator", js.undefined)
       
-      @scala.inline
-      def setUserResHeaderDecorator(
+      inline def setUserResHeaderDecorator(
         value: (/* headers */ IncomingHttpHeaders, /* userReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* userRes */ Response_[js.Any], /* proxyReq */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* proxyRes */ Response_[js.Any]) => OutgoingHttpHeaders
       ): Self = StObject.set(x, "userResHeaderDecorator", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setUserResHeaderDecoratorUndefined: Self = StObject.set(x, "userResHeaderDecorator", js.undefined)
+      inline def setUserResHeaderDecoratorUndefined: Self = StObject.set(x, "userResHeaderDecorator", js.undefined)
     }
   }
 }

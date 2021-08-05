@@ -14,22 +14,17 @@ trait GitGetTagEndpoint extends StObject {
 }
 object GitGetTagEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, tag_sha: String): GitGetTagEndpoint = {
+  inline def apply(owner: String, repo: String, tag_sha: String): GitGetTagEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], tag_sha = tag_sha.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitGetTagEndpoint]
   }
   
-  @scala.inline
-  implicit class GitGetTagEndpointMutableBuilder[Self <: GitGetTagEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GitGetTagEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag_sha(value: String): Self = StObject.set(x, "tag_sha", value.asInstanceOf[js.Any])
+    inline def setTag_sha(value: String): Self = StObject.set(x, "tag_sha", value.asInstanceOf[js.Any])
   }
 }

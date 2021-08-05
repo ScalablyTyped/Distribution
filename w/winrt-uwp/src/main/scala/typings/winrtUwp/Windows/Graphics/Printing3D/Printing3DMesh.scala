@@ -91,8 +91,7 @@ trait Printing3DMesh extends StObject {
 }
 object Printing3DMesh {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bufferDescriptionSet: IPropertySet,
     bufferSet: IPropertySet,
     createTriangleIndices: Double => Unit,
@@ -115,60 +114,42 @@ object Printing3DMesh {
     __obj.asInstanceOf[Printing3DMesh]
   }
   
-  @scala.inline
-  implicit class Printing3DMeshMutableBuilder[Self <: Printing3DMesh] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DMesh](x: Self) {
     
-    @scala.inline
-    def setBufferDescriptionSet(value: IPropertySet): Self = StObject.set(x, "bufferDescriptionSet", value.asInstanceOf[js.Any])
+    inline def setBufferDescriptionSet(value: IPropertySet): Self = StObject.set(x, "bufferDescriptionSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferSet(value: IPropertySet): Self = StObject.set(x, "bufferSet", value.asInstanceOf[js.Any])
+    inline def setBufferSet(value: IPropertySet): Self = StObject.set(x, "bufferSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTriangleIndices(value: Double => Unit): Self = StObject.set(x, "createTriangleIndices", js.Any.fromFunction1(value))
+    inline def setCreateTriangleIndices(value: Double => Unit): Self = StObject.set(x, "createTriangleIndices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateTriangleMaterialIndices(value: Double => Unit): Self = StObject.set(x, "createTriangleMaterialIndices", js.Any.fromFunction1(value))
+    inline def setCreateTriangleMaterialIndices(value: Double => Unit): Self = StObject.set(x, "createTriangleMaterialIndices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateVertexNormals(value: Double => Unit): Self = StObject.set(x, "createVertexNormals", js.Any.fromFunction1(value))
+    inline def setCreateVertexNormals(value: Double => Unit): Self = StObject.set(x, "createVertexNormals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateVertexPositions(value: Double => Unit): Self = StObject.set(x, "createVertexPositions", js.Any.fromFunction1(value))
+    inline def setCreateVertexPositions(value: Double => Unit): Self = StObject.set(x, "createVertexPositions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetTriangleIndices(value: () => IBuffer): Self = StObject.set(x, "getTriangleIndices", js.Any.fromFunction0(value))
+    inline def setGetTriangleIndices(value: () => IBuffer): Self = StObject.set(x, "getTriangleIndices", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTriangleMaterialIndices(value: () => IBuffer): Self = StObject.set(x, "getTriangleMaterialIndices", js.Any.fromFunction0(value))
+    inline def setGetTriangleMaterialIndices(value: () => IBuffer): Self = StObject.set(x, "getTriangleMaterialIndices", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVertexNormals(value: () => IBuffer): Self = StObject.set(x, "getVertexNormals", js.Any.fromFunction0(value))
+    inline def setGetVertexNormals(value: () => IBuffer): Self = StObject.set(x, "getVertexNormals", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVertexPositions(value: () => IBuffer): Self = StObject.set(x, "getVertexPositions", js.Any.fromFunction0(value))
+    inline def setGetVertexPositions(value: () => IBuffer): Self = StObject.set(x, "getVertexPositions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndexCount(value: Double): Self = StObject.set(x, "indexCount", value.asInstanceOf[js.Any])
+    inline def setIndexCount(value: Double): Self = StObject.set(x, "indexCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleIndicesDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "triangleIndicesDescription", value.asInstanceOf[js.Any])
+    inline def setTriangleIndicesDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "triangleIndicesDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleMaterialIndicesDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "triangleMaterialIndicesDescription", value.asInstanceOf[js.Any])
+    inline def setTriangleMaterialIndicesDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "triangleMaterialIndicesDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyAsync(
+    inline def setVerifyAsync(
       value: Printing3DMeshVerificationMode => IPromiseWithIAsyncOperation[Printing3DMeshVerificationResult]
     ): Self = StObject.set(x, "verifyAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVertexCount(value: Double): Self = StObject.set(x, "vertexCount", value.asInstanceOf[js.Any])
+    inline def setVertexCount(value: Double): Self = StObject.set(x, "vertexCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexNormalsDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "vertexNormalsDescription", value.asInstanceOf[js.Any])
+    inline def setVertexNormalsDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "vertexNormalsDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexPositionsDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "vertexPositionsDescription", value.asInstanceOf[js.Any])
+    inline def setVertexPositionsDescription(value: Printing3DBufferDescription): Self = StObject.set(x, "vertexPositionsDescription", value.asInstanceOf[js.Any])
   }
 }

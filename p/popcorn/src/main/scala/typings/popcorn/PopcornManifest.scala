@@ -12,19 +12,15 @@ trait PopcornManifest extends StObject {
 }
 object PopcornManifest {
   
-  @scala.inline
-  def apply(about: PopcornManifestAbout, options: PopcornManifestOptions): PopcornManifest = {
+  inline def apply(about: PopcornManifestAbout, options: PopcornManifestOptions): PopcornManifest = {
     val __obj = js.Dynamic.literal(about = about.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopcornManifest]
   }
   
-  @scala.inline
-  implicit class PopcornManifestMutableBuilder[Self <: PopcornManifest] (val x: Self) extends AnyVal {
+  extension [Self <: PopcornManifest](x: Self) {
     
-    @scala.inline
-    def setAbout(value: PopcornManifestAbout): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
+    inline def setAbout(value: PopcornManifestAbout): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: PopcornManifestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: PopcornManifestOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

@@ -42,8 +42,7 @@ trait Minigame extends StObject {
 }
 object Minigame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     init: HTMLDivElement => Unit,
     launch: () => Unit,
     load: String => Unit,
@@ -55,61 +54,42 @@ object Minigame {
     __obj.asInstanceOf[Minigame]
   }
   
-  @scala.inline
-  implicit class MinigameMutableBuilder[Self <: Minigame] (val x: Self) extends AnyVal {
+  extension [Self <: Minigame](x: Self) {
     
-    @scala.inline
-    def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
+    inline def setDraw(value: () => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
+    inline def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
     
-    @scala.inline
-    def setEffs(value: Effects): Self = StObject.set(x, "effs", value.asInstanceOf[js.Any])
+    inline def setEffs(value: Effects): Self = StObject.set(x, "effs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffsUndefined: Self = StObject.set(x, "effs", js.undefined)
+    inline def setEffsUndefined: Self = StObject.set(x, "effs", js.undefined)
     
-    @scala.inline
-    def setInit(value: HTMLDivElement => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: HTMLDivElement => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLaunch(value: () => Unit): Self = StObject.set(x, "launch", js.Any.fromFunction0(value))
+    inline def setLaunch(value: () => Unit): Self = StObject.set(x, "launch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoad(value: String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: String => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogic(value: () => Unit): Self = StObject.set(x, "logic", js.Any.fromFunction0(value))
+    inline def setLogic(value: () => Unit): Self = StObject.set(x, "logic", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
+    inline def setLogicUndefined: Self = StObject.set(x, "logic", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLevel(value: () => Unit): Self = StObject.set(x, "onLevel", js.Any.fromFunction0(value))
+    inline def setOnLevel(value: () => Unit): Self = StObject.set(x, "onLevel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnLevelUndefined: Self = StObject.set(x, "onLevel", js.undefined)
+    inline def setOnLevelUndefined: Self = StObject.set(x, "onLevel", js.undefined)
     
-    @scala.inline
-    def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
+    inline def setOnResize(value: () => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+    inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
     
-    @scala.inline
-    def setOnRuinTheFun(value: () => Unit): Self = StObject.set(x, "onRuinTheFun", js.Any.fromFunction0(value))
+    inline def setOnRuinTheFun(value: () => Unit): Self = StObject.set(x, "onRuinTheFun", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnRuinTheFunUndefined: Self = StObject.set(x, "onRuinTheFun", js.undefined)
+    inline def setOnRuinTheFunUndefined: Self = StObject.set(x, "onRuinTheFun", js.undefined)
     
-    @scala.inline
-    def setParent(value: GameObject): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: GameObject): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave(value: () => String): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => String): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
   }
 }

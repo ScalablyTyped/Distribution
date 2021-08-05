@@ -18,31 +18,23 @@ trait DescribeContainerInstancesResponse extends StObject {
 }
 object DescribeContainerInstancesResponse {
   
-  @scala.inline
-  def apply(): DescribeContainerInstancesResponse = {
+  inline def apply(): DescribeContainerInstancesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeContainerInstancesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeContainerInstancesResponseMutableBuilder[Self <: DescribeContainerInstancesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContainerInstancesResponse](x: Self) {
     
-    @scala.inline
-    def setContainerInstances(value: ContainerInstances): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
+    inline def setContainerInstances(value: ContainerInstances): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstancesUndefined: Self = StObject.set(x, "containerInstances", js.undefined)
+    inline def setContainerInstancesUndefined: Self = StObject.set(x, "containerInstances", js.undefined)
     
-    @scala.inline
-    def setContainerInstancesVarargs(value: ContainerInstance*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
+    inline def setContainerInstancesVarargs(value: ContainerInstance*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
+    inline def setFailures(value: Failures): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
+    inline def setFailuresUndefined: Self = StObject.set(x, "failures", js.undefined)
     
-    @scala.inline
-    def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
+    inline def setFailuresVarargs(value: Failure*): Self = StObject.set(x, "failures", js.Array(value :_*))
   }
 }

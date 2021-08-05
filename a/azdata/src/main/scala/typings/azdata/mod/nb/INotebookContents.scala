@@ -16,8 +16,7 @@ trait INotebookContents extends StObject {
 }
 object INotebookContents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cells: js.Array[ICellContents],
     metadata: INotebookMetadata,
     nbformat: Double,
@@ -27,22 +26,16 @@ object INotebookContents {
     __obj.asInstanceOf[INotebookContents]
   }
   
-  @scala.inline
-  implicit class INotebookContentsMutableBuilder[Self <: INotebookContents] (val x: Self) extends AnyVal {
+  extension [Self <: INotebookContents](x: Self) {
     
-    @scala.inline
-    def setCells(value: js.Array[ICellContents]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: js.Array[ICellContents]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsVarargs(value: ICellContents*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: ICellContents*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
-    @scala.inline
-    def setMetadata(value: INotebookMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: INotebookMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNbformat(value: Double): Self = StObject.set(x, "nbformat", value.asInstanceOf[js.Any])
+    inline def setNbformat(value: Double): Self = StObject.set(x, "nbformat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNbformat_minor(value: Double): Self = StObject.set(x, "nbformat_minor", value.asInstanceOf[js.Any])
+    inline def setNbformat_minor(value: Double): Self = StObject.set(x, "nbformat_minor", value.asInstanceOf[js.Any])
   }
 }

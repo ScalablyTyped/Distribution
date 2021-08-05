@@ -21,31 +21,23 @@ trait DatabaseCreateResponse extends StObject {
 }
 object DatabaseCreateResponse {
   
-  @scala.inline
-  def apply(): DatabaseCreateResponse = {
+  inline def apply(): DatabaseCreateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatabaseCreateResponse]
   }
   
-  @scala.inline
-  implicit class DatabaseCreateResponseMutableBuilder[Self <: DatabaseCreateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseCreateResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
+    inline def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

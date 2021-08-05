@@ -17,37 +17,27 @@ trait ArimaCoefficients extends StObject {
 }
 object ArimaCoefficients {
   
-  @scala.inline
-  def apply(): ArimaCoefficients = {
+  inline def apply(): ArimaCoefficients = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArimaCoefficients]
   }
   
-  @scala.inline
-  implicit class ArimaCoefficientsMutableBuilder[Self <: ArimaCoefficients] (val x: Self) extends AnyVal {
+  extension [Self <: ArimaCoefficients](x: Self) {
     
-    @scala.inline
-    def setAutoRegressiveCoefficients(value: js.Array[Double]): Self = StObject.set(x, "autoRegressiveCoefficients", value.asInstanceOf[js.Any])
+    inline def setAutoRegressiveCoefficients(value: js.Array[Double]): Self = StObject.set(x, "autoRegressiveCoefficients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoRegressiveCoefficientsUndefined: Self = StObject.set(x, "autoRegressiveCoefficients", js.undefined)
+    inline def setAutoRegressiveCoefficientsUndefined: Self = StObject.set(x, "autoRegressiveCoefficients", js.undefined)
     
-    @scala.inline
-    def setAutoRegressiveCoefficientsVarargs(value: Double*): Self = StObject.set(x, "autoRegressiveCoefficients", js.Array(value :_*))
+    inline def setAutoRegressiveCoefficientsVarargs(value: Double*): Self = StObject.set(x, "autoRegressiveCoefficients", js.Array(value :_*))
     
-    @scala.inline
-    def setInterceptCoefficient(value: Double): Self = StObject.set(x, "interceptCoefficient", value.asInstanceOf[js.Any])
+    inline def setInterceptCoefficient(value: Double): Self = StObject.set(x, "interceptCoefficient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptCoefficientUndefined: Self = StObject.set(x, "interceptCoefficient", js.undefined)
+    inline def setInterceptCoefficientUndefined: Self = StObject.set(x, "interceptCoefficient", js.undefined)
     
-    @scala.inline
-    def setMovingAverageCoefficients(value: js.Array[Double]): Self = StObject.set(x, "movingAverageCoefficients", value.asInstanceOf[js.Any])
+    inline def setMovingAverageCoefficients(value: js.Array[Double]): Self = StObject.set(x, "movingAverageCoefficients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingAverageCoefficientsUndefined: Self = StObject.set(x, "movingAverageCoefficients", js.undefined)
+    inline def setMovingAverageCoefficientsUndefined: Self = StObject.set(x, "movingAverageCoefficients", js.undefined)
     
-    @scala.inline
-    def setMovingAverageCoefficientsVarargs(value: Double*): Self = StObject.set(x, "movingAverageCoefficients", js.Array(value :_*))
+    inline def setMovingAverageCoefficientsVarargs(value: Double*): Self = StObject.set(x, "movingAverageCoefficients", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait SchemaLiaPosDataProvider extends StObject {
 }
 object SchemaLiaPosDataProvider {
   
-  @scala.inline
-  def apply(): SchemaLiaPosDataProvider = {
+  inline def apply(): SchemaLiaPosDataProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiaPosDataProvider]
   }
   
-  @scala.inline
-  implicit class SchemaLiaPosDataProviderMutableBuilder[Self <: SchemaLiaPosDataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiaPosDataProvider](x: Self) {
     
-    @scala.inline
-    def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
+    inline def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosDataProviderIdUndefined: Self = StObject.set(x, "posDataProviderId", js.undefined)
+    inline def setPosDataProviderIdUndefined: Self = StObject.set(x, "posDataProviderId", js.undefined)
     
-    @scala.inline
-    def setPosExternalAccountId(value: String): Self = StObject.set(x, "posExternalAccountId", value.asInstanceOf[js.Any])
+    inline def setPosExternalAccountId(value: String): Self = StObject.set(x, "posExternalAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosExternalAccountIdUndefined: Self = StObject.set(x, "posExternalAccountId", js.undefined)
+    inline def setPosExternalAccountIdUndefined: Self = StObject.set(x, "posExternalAccountId", js.undefined)
   }
 }

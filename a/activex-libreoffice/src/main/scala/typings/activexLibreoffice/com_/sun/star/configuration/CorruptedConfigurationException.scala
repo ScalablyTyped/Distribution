@@ -21,16 +21,13 @@ trait CorruptedConfigurationException
 }
 object CorruptedConfigurationException {
   
-  @scala.inline
-  def apply(Context: XInterface, Details: String, Message: String): CorruptedConfigurationException = {
+  inline def apply(Context: XInterface, Details: String, Message: String): CorruptedConfigurationException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Details = Details.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[CorruptedConfigurationException]
   }
   
-  @scala.inline
-  implicit class CorruptedConfigurationExceptionMutableBuilder[Self <: CorruptedConfigurationException] (val x: Self) extends AnyVal {
+  extension [Self <: CorruptedConfigurationException](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
   }
 }

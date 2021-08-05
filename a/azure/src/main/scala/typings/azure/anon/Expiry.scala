@@ -15,28 +15,21 @@ trait Expiry extends StObject {
 }
 object Expiry {
   
-  @scala.inline
-  def apply(Expiry: Date): Expiry = {
+  inline def apply(Expiry: Date): Expiry = {
     val __obj = js.Dynamic.literal(Expiry = Expiry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expiry]
   }
   
-  @scala.inline
-  implicit class ExpiryMutableBuilder[Self <: Expiry] (val x: Self) extends AnyVal {
+  extension [Self <: Expiry](x: Self) {
     
-    @scala.inline
-    def setExpiry(value: Date): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
+    inline def setExpiry(value: Date): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermission(value: String): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: String): Self = StObject.set(x, "Permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "Permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "Permission", js.undefined)
     
-    @scala.inline
-    def setStart(value: Date): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
   }
 }

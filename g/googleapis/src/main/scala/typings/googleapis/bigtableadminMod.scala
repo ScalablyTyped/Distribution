@@ -41,8 +41,7 @@ object bigtableadminMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Bigtableadmin
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -65,8 +64,7 @@ object bigtableadminMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -108,8 +106,7 @@ object bigtableadminMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -153,14 +150,10 @@ object bigtableadminMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def bigtableadmin(options: Options): Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(options.asInstanceOf[js.Any]).asInstanceOf[Bigtableadmin]
-  @scala.inline
-  def bigtableadmin(options: typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Options): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin]
+  inline def bigtableadmin(options: Options): Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(options.asInstanceOf[js.Any]).asInstanceOf[Bigtableadmin]
+  inline def bigtableadmin(options: typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Options): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin]
   
-  @scala.inline
-  def bigtableadmin_v1(version: v1): Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(version.asInstanceOf[js.Any]).asInstanceOf[Bigtableadmin]
+  inline def bigtableadmin_v1(version: v1): Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(version.asInstanceOf[js.Any]).asInstanceOf[Bigtableadmin]
   
-  @scala.inline
-  def bigtableadmin_v2(version: v2): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin]
+  inline def bigtableadmin_v2(version: v2): typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin = ^.asInstanceOf[js.Dynamic].applyDynamic("bigtableadmin")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.bigtableadminV2Mod.bigtableadminV2.Bigtableadmin]
 }

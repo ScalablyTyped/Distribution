@@ -32,61 +32,43 @@ trait ObaIcon extends StObject {
 }
 object ObaIcon {
   
-  @scala.inline
-  def apply(): ObaIcon = {
+  inline def apply(): ObaIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObaIcon]
   }
   
-  @scala.inline
-  implicit class ObaIconMutableBuilder[Self <: ObaIcon] (val x: Self) extends AnyVal {
+  extension [Self <: ObaIcon](x: Self) {
     
-    @scala.inline
-    def setIconClickThroughUrl(value: String): Self = StObject.set(x, "iconClickThroughUrl", value.asInstanceOf[js.Any])
+    inline def setIconClickThroughUrl(value: String): Self = StObject.set(x, "iconClickThroughUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClickThroughUrlUndefined: Self = StObject.set(x, "iconClickThroughUrl", js.undefined)
+    inline def setIconClickThroughUrlUndefined: Self = StObject.set(x, "iconClickThroughUrl", js.undefined)
     
-    @scala.inline
-    def setIconClickTrackingUrl(value: String): Self = StObject.set(x, "iconClickTrackingUrl", value.asInstanceOf[js.Any])
+    inline def setIconClickTrackingUrl(value: String): Self = StObject.set(x, "iconClickTrackingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClickTrackingUrlUndefined: Self = StObject.set(x, "iconClickTrackingUrl", js.undefined)
+    inline def setIconClickTrackingUrlUndefined: Self = StObject.set(x, "iconClickTrackingUrl", js.undefined)
     
-    @scala.inline
-    def setIconViewTrackingUrl(value: String): Self = StObject.set(x, "iconViewTrackingUrl", value.asInstanceOf[js.Any])
+    inline def setIconViewTrackingUrl(value: String): Self = StObject.set(x, "iconViewTrackingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconViewTrackingUrlUndefined: Self = StObject.set(x, "iconViewTrackingUrl", js.undefined)
+    inline def setIconViewTrackingUrlUndefined: Self = StObject.set(x, "iconViewTrackingUrl", js.undefined)
     
-    @scala.inline
-    def setProgram(value: String): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: String): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+    inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
     
-    @scala.inline
-    def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
+    inline def setResourceUrl(value: String): Self = StObject.set(x, "resourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
+    inline def setResourceUrlUndefined: Self = StObject.set(x, "resourceUrl", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setXPosition(value: String): Self = StObject.set(x, "xPosition", value.asInstanceOf[js.Any])
+    inline def setXPosition(value: String): Self = StObject.set(x, "xPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXPositionUndefined: Self = StObject.set(x, "xPosition", js.undefined)
+    inline def setXPositionUndefined: Self = StObject.set(x, "xPosition", js.undefined)
     
-    @scala.inline
-    def setYPosition(value: String): Self = StObject.set(x, "yPosition", value.asInstanceOf[js.Any])
+    inline def setYPosition(value: String): Self = StObject.set(x, "yPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYPositionUndefined: Self = StObject.set(x, "yPosition", js.undefined)
+    inline def setYPositionUndefined: Self = StObject.set(x, "yPosition", js.undefined)
   }
 }

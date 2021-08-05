@@ -20,25 +20,19 @@ trait AppsListAccountsForPlanRequestOptions extends StObject {
 }
 object AppsListAccountsForPlanRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsListAccountsForPlanRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsListAccountsForPlanRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/marketplace_listing/plans/:plan_id/accounts")
     __obj.asInstanceOf[AppsListAccountsForPlanRequestOptions]
   }
   
-  @scala.inline
-  implicit class AppsListAccountsForPlanRequestOptionsMutableBuilder[Self <: AppsListAccountsForPlanRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppsListAccountsForPlanRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

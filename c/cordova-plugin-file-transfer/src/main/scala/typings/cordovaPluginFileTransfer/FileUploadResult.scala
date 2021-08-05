@@ -21,25 +21,19 @@ trait FileUploadResult extends StObject {
 }
 object FileUploadResult {
   
-  @scala.inline
-  def apply(bytesSent: Double, headers: js.Any, response: String, responseCode: Double): FileUploadResult = {
+  inline def apply(bytesSent: Double, headers: js.Any, response: String, responseCode: Double): FileUploadResult = {
     val __obj = js.Dynamic.literal(bytesSent = bytesSent.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseCode = responseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileUploadResult]
   }
   
-  @scala.inline
-  implicit class FileUploadResultMutableBuilder[Self <: FileUploadResult] (val x: Self) extends AnyVal {
+  extension [Self <: FileUploadResult](x: Self) {
     
-    @scala.inline
-    def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+    inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
   }
 }

@@ -20,25 +20,19 @@ trait StalkerParseOptions extends StObject {
 }
 object StalkerParseOptions {
   
-  @scala.inline
-  def apply(): StalkerParseOptions = {
+  inline def apply(): StalkerParseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StalkerParseOptions]
   }
   
-  @scala.inline
-  implicit class StalkerParseOptionsMutableBuilder[Self <: StalkerParseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StalkerParseOptions](x: Self) {
     
-    @scala.inline
-    def setAnnotate(value: Boolean): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
+    inline def setAnnotate(value: Boolean): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotateUndefined: Self = StObject.set(x, "annotate", js.undefined)
+    inline def setAnnotateUndefined: Self = StObject.set(x, "annotate", js.undefined)
     
-    @scala.inline
-    def setStringify(value: Boolean): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+    inline def setStringify(value: Boolean): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+    inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
   }
 }

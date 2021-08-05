@@ -12,19 +12,15 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(): Filter = {
+  inline def apply(): Filter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
   }
 }

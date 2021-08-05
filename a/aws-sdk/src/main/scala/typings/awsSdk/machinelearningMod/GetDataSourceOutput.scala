@@ -99,133 +99,91 @@ trait GetDataSourceOutput extends StObject {
 }
 object GetDataSourceOutput {
   
-  @scala.inline
-  def apply(): GetDataSourceOutput = {
+  inline def apply(): GetDataSourceOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDataSourceOutput]
   }
   
-  @scala.inline
-  implicit class GetDataSourceOutputMutableBuilder[Self <: GetDataSourceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataSourceOutput](x: Self) {
     
-    @scala.inline
-    def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
+    inline def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeStatisticsUndefined: Self = StObject.set(x, "ComputeStatistics", js.undefined)
+    inline def setComputeStatisticsUndefined: Self = StObject.set(x, "ComputeStatistics", js.undefined)
     
-    @scala.inline
-    def setComputeTime(value: LongType): Self = StObject.set(x, "ComputeTime", value.asInstanceOf[js.Any])
+    inline def setComputeTime(value: LongType): Self = StObject.set(x, "ComputeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
+    inline def setComputeTimeUndefined: Self = StObject.set(x, "ComputeTime", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: EpochTime): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setCreatedByIamUser(value: AwsUserArn): Self = StObject.set(x, "CreatedByIamUser", value.asInstanceOf[js.Any])
+    inline def setCreatedByIamUser(value: AwsUserArn): Self = StObject.set(x, "CreatedByIamUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByIamUserUndefined: Self = StObject.set(x, "CreatedByIamUser", js.undefined)
+    inline def setCreatedByIamUserUndefined: Self = StObject.set(x, "CreatedByIamUser", js.undefined)
     
-    @scala.inline
-    def setDataLocationS3(value: S3Url): Self = StObject.set(x, "DataLocationS3", value.asInstanceOf[js.Any])
+    inline def setDataLocationS3(value: S3Url): Self = StObject.set(x, "DataLocationS3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLocationS3Undefined: Self = StObject.set(x, "DataLocationS3", js.undefined)
+    inline def setDataLocationS3Undefined: Self = StObject.set(x, "DataLocationS3", js.undefined)
     
-    @scala.inline
-    def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
+    inline def setDataRearrangement(value: DataRearrangement): Self = StObject.set(x, "DataRearrangement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
+    inline def setDataRearrangementUndefined: Self = StObject.set(x, "DataRearrangement", js.undefined)
     
-    @scala.inline
-    def setDataSizeInBytes(value: LongType): Self = StObject.set(x, "DataSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setDataSizeInBytes(value: LongType): Self = StObject.set(x, "DataSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSizeInBytesUndefined: Self = StObject.set(x, "DataSizeInBytes", js.undefined)
+    inline def setDataSizeInBytesUndefined: Self = StObject.set(x, "DataSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
+    inline def setDataSourceIdUndefined: Self = StObject.set(x, "DataSourceId", js.undefined)
     
-    @scala.inline
-    def setDataSourceSchema(value: DataSchema): Self = StObject.set(x, "DataSourceSchema", value.asInstanceOf[js.Any])
+    inline def setDataSourceSchema(value: DataSchema): Self = StObject.set(x, "DataSourceSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceSchemaUndefined: Self = StObject.set(x, "DataSourceSchema", js.undefined)
+    inline def setDataSourceSchemaUndefined: Self = StObject.set(x, "DataSourceSchema", js.undefined)
     
-    @scala.inline
-    def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
+    inline def setFinishedAt(value: EpochTime): Self = StObject.set(x, "FinishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
+    inline def setFinishedAtUndefined: Self = StObject.set(x, "FinishedAt", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: EpochTime): Self = StObject.set(x, "LastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
+    inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "LastUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setLogUri(value: PresignedS3Url): Self = StObject.set(x, "LogUri", value.asInstanceOf[js.Any])
+    inline def setLogUri(value: PresignedS3Url): Self = StObject.set(x, "LogUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUriUndefined: Self = StObject.set(x, "LogUri", js.undefined)
+    inline def setLogUriUndefined: Self = StObject.set(x, "LogUri", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNumberOfFiles(value: LongType): Self = StObject.set(x, "NumberOfFiles", value.asInstanceOf[js.Any])
+    inline def setNumberOfFiles(value: LongType): Self = StObject.set(x, "NumberOfFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfFilesUndefined: Self = StObject.set(x, "NumberOfFiles", js.undefined)
+    inline def setNumberOfFilesUndefined: Self = StObject.set(x, "NumberOfFiles", js.undefined)
     
-    @scala.inline
-    def setRDSMetadata(value: RDSMetadata): Self = StObject.set(x, "RDSMetadata", value.asInstanceOf[js.Any])
+    inline def setRDSMetadata(value: RDSMetadata): Self = StObject.set(x, "RDSMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRDSMetadataUndefined: Self = StObject.set(x, "RDSMetadata", js.undefined)
+    inline def setRDSMetadataUndefined: Self = StObject.set(x, "RDSMetadata", js.undefined)
     
-    @scala.inline
-    def setRedshiftMetadata(value: RedshiftMetadata): Self = StObject.set(x, "RedshiftMetadata", value.asInstanceOf[js.Any])
+    inline def setRedshiftMetadata(value: RedshiftMetadata): Self = StObject.set(x, "RedshiftMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftMetadataUndefined: Self = StObject.set(x, "RedshiftMetadata", js.undefined)
+    inline def setRedshiftMetadataUndefined: Self = StObject.set(x, "RedshiftMetadata", js.undefined)
     
-    @scala.inline
-    def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: RoleARN): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
-    @scala.inline
-    def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: EpochTime): Self = StObject.set(x, "StartedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
+    inline def setStartedAtUndefined: Self = StObject.set(x, "StartedAt", js.undefined)
     
-    @scala.inline
-    def setStatus(value: EntityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EntityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

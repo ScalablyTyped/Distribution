@@ -23,22 +23,16 @@ object ColorScaleEntryType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def COLORSCALE_FORMULA: `5` = 5.asInstanceOf[`5`]
+    inline def COLORSCALE_FORMULA: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def COLORSCALE_MAX: `1` = 1.asInstanceOf[`1`]
+    inline def COLORSCALE_MAX: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def COLORSCALE_MIN: `0` = 0.asInstanceOf[`0`]
+    inline def COLORSCALE_MIN: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def COLORSCALE_PERCENT: `4` = 4.asInstanceOf[`4`]
+    inline def COLORSCALE_PERCENT: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def COLORSCALE_PERCENTILE: `2` = 2.asInstanceOf[`2`]
+    inline def COLORSCALE_PERCENTILE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def COLORSCALE_VALUE: `3` = 3.asInstanceOf[`3`]
+    inline def COLORSCALE_VALUE: `3` = 3.asInstanceOf[`3`]
   }
 }

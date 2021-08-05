@@ -26,8 +26,7 @@ trait SocialAttachmentAction
 }
 object SocialAttachmentAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -42,19 +41,14 @@ object SocialAttachmentAction {
     __obj.asInstanceOf[SocialAttachmentAction]
   }
   
-  @scala.inline
-  implicit class SocialAttachmentActionMutableBuilder[Self <: SocialAttachmentAction] (val x: Self) extends AnyVal {
+  extension [Self <: SocialAttachmentAction](x: Self) {
     
-    @scala.inline
-    def setGet_actionKind(value: () => SocialAttachmentActionKind): Self = StObject.set(x, "get_actionKind", js.Any.fromFunction0(value))
+    inline def setGet_actionKind(value: () => SocialAttachmentActionKind): Self = StObject.set(x, "get_actionKind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_actionUri(value: () => String): Self = StObject.set(x, "get_actionUri", js.Any.fromFunction0(value))
+    inline def setGet_actionUri(value: () => String): Self = StObject.set(x, "get_actionUri", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_actionKind(value: SocialAttachmentActionKind => SocialAttachmentActionKind): Self = StObject.set(x, "set_actionKind", js.Any.fromFunction1(value))
+    inline def setSet_actionKind(value: SocialAttachmentActionKind => SocialAttachmentActionKind): Self = StObject.set(x, "set_actionKind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_actionUri(value: String => String): Self = StObject.set(x, "set_actionUri", js.Any.fromFunction1(value))
+    inline def setSet_actionUri(value: String => String): Self = StObject.set(x, "set_actionUri", js.Any.fromFunction1(value))
   }
 }

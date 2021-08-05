@@ -21,46 +21,33 @@ trait LDMLPluralRuleMap[T] extends StObject {
 }
 object LDMLPluralRuleMap {
   
-  @scala.inline
-  def apply[T](other: T): LDMLPluralRuleMap[T] = {
+  inline def apply[T](other: T): LDMLPluralRuleMap[T] = {
     val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any])
     __obj.asInstanceOf[LDMLPluralRuleMap[T]]
   }
   
-  @scala.inline
-  implicit class LDMLPluralRuleMapMutableBuilder[Self <: LDMLPluralRuleMap[?], T] (val x: Self & LDMLPluralRuleMap[T]) extends AnyVal {
+  extension [Self <: LDMLPluralRuleMap[?], T](x: Self & LDMLPluralRuleMap[T]) {
     
-    @scala.inline
-    def setFew(value: T): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
+    inline def setFew(value: T): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
+    inline def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
     
-    @scala.inline
-    def setMany(value: T): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
+    inline def setMany(value: T): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
+    inline def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
     
-    @scala.inline
-    def setOne(value: T): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+    inline def setOne(value: T): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
+    inline def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
     
-    @scala.inline
-    def setOther(value: T): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: T): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwo(value: T): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
+    inline def setTwo(value: T): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
+    inline def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
     
-    @scala.inline
-    def setZero(value: T): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+    inline def setZero(value: T): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+    inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
   }
 }

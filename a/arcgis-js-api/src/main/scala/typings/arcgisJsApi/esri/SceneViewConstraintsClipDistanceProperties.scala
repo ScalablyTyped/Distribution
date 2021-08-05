@@ -35,8 +35,7 @@ trait SceneViewConstraintsClipDistanceProperties
 }
 object SceneViewConstraintsClipDistanceProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -45,25 +44,18 @@ object SceneViewConstraintsClipDistanceProperties {
     __obj.asInstanceOf[SceneViewConstraintsClipDistanceProperties]
   }
   
-  @scala.inline
-  implicit class SceneViewConstraintsClipDistancePropertiesMutableBuilder[Self <: SceneViewConstraintsClipDistanceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewConstraintsClipDistanceProperties](x: Self) {
     
-    @scala.inline
-    def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
+    inline def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFarUndefined: Self = StObject.set(x, "far", js.undefined)
+    inline def setFarUndefined: Self = StObject.set(x, "far", js.undefined)
     
-    @scala.inline
-    def setMode(value: auto | manual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: auto | manual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
+    inline def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearUndefined: Self = StObject.set(x, "near", js.undefined)
+    inline def setNearUndefined: Self = StObject.set(x, "near", js.undefined)
   }
 }

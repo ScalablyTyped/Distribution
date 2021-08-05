@@ -16,19 +16,15 @@ trait ProcessOptions
 }
 object ProcessOptions {
   
-  @scala.inline
-  def apply(command: String): ProcessOptions = {
+  inline def apply(command: String): ProcessOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessOptions]
   }
   
-  @scala.inline
-  implicit class ProcessOptionsMutableBuilder[Self <: ProcessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessOptions](x: Self) {
     
-    @scala.inline
-    def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
+    inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
+    inline def setAutoStartUndefined: Self = StObject.set(x, "autoStart", js.undefined)
   }
 }

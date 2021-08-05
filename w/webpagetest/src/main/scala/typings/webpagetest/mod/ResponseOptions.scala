@@ -11,19 +11,15 @@ trait ResponseOptions extends StObject {
 }
 object ResponseOptions {
   
-  @scala.inline
-  def apply(): ResponseOptions = {
+  inline def apply(): ResponseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponseOptions]
   }
   
-  @scala.inline
-  implicit class ResponseOptionsMutableBuilder[Self <: ResponseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseOptions](x: Self) {
     
-    @scala.inline
-    def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
   }
 }

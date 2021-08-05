@@ -16,37 +16,27 @@ trait ListUploadsQuery extends StObject {
 }
 object ListUploadsQuery {
   
-  @scala.inline
-  def apply(): ListUploadsQuery = {
+  inline def apply(): ListUploadsQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUploadsQuery]
   }
   
-  @scala.inline
-  implicit class ListUploadsQueryMutableBuilder[Self <: ListUploadsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ListUploadsQuery](x: Self) {
     
-    @scala.inline
-    def `setKey-marker`(value: String): Self = StObject.set(x, "key-marker", value.asInstanceOf[js.Any])
+    inline def `setKey-marker`(value: String): Self = StObject.set(x, "key-marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setKey-markerUndefined`: Self = StObject.set(x, "key-marker", js.undefined)
+    inline def `setKey-markerUndefined`: Self = StObject.set(x, "key-marker", js.undefined)
     
-    @scala.inline
-    def `setMax-uploads`(value: Double): Self = StObject.set(x, "max-uploads", value.asInstanceOf[js.Any])
+    inline def `setMax-uploads`(value: Double): Self = StObject.set(x, "max-uploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setMax-uploadsUndefined`: Self = StObject.set(x, "max-uploads", js.undefined)
+    inline def `setMax-uploadsUndefined`: Self = StObject.set(x, "max-uploads", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def `setUpload-id-marker`(value: String): Self = StObject.set(x, "upload-id-marker", value.asInstanceOf[js.Any])
+    inline def `setUpload-id-marker`(value: String): Self = StObject.set(x, "upload-id-marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUpload-id-markerUndefined`: Self = StObject.set(x, "upload-id-marker", js.undefined)
+    inline def `setUpload-id-markerUndefined`: Self = StObject.set(x, "upload-id-marker", js.undefined)
   }
 }

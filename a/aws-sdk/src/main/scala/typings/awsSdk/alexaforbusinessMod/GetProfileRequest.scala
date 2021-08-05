@@ -13,19 +13,15 @@ trait GetProfileRequest extends StObject {
 }
 object GetProfileRequest {
   
-  @scala.inline
-  def apply(): GetProfileRequest = {
+  inline def apply(): GetProfileRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetProfileRequest]
   }
   
-  @scala.inline
-  implicit class GetProfileRequestMutableBuilder[Self <: GetProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetProfileRequest](x: Self) {
     
-    @scala.inline
-    def setProfileArn(value: Arn): Self = StObject.set(x, "ProfileArn", value.asInstanceOf[js.Any])
+    inline def setProfileArn(value: Arn): Self = StObject.set(x, "ProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileArnUndefined: Self = StObject.set(x, "ProfileArn", js.undefined)
+    inline def setProfileArnUndefined: Self = StObject.set(x, "ProfileArn", js.undefined)
   }
 }

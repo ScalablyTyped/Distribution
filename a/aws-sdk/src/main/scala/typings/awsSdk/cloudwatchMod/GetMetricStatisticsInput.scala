@@ -53,8 +53,7 @@ trait GetMetricStatisticsInput extends StObject {
 }
 object GetMetricStatisticsInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndTime: Timestamp,
     MetricName: MetricName,
     Namespace: Namespace,
@@ -65,55 +64,38 @@ object GetMetricStatisticsInput {
     __obj.asInstanceOf[GetMetricStatisticsInput]
   }
   
-  @scala.inline
-  implicit class GetMetricStatisticsInputMutableBuilder[Self <: GetMetricStatisticsInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMetricStatisticsInput](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: Dimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedStatistics(value: ExtendedStatistics): Self = StObject.set(x, "ExtendedStatistics", value.asInstanceOf[js.Any])
+    inline def setExtendedStatistics(value: ExtendedStatistics): Self = StObject.set(x, "ExtendedStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedStatisticsUndefined: Self = StObject.set(x, "ExtendedStatistics", js.undefined)
+    inline def setExtendedStatisticsUndefined: Self = StObject.set(x, "ExtendedStatistics", js.undefined)
     
-    @scala.inline
-    def setExtendedStatisticsVarargs(value: ExtendedStatistic*): Self = StObject.set(x, "ExtendedStatistics", js.Array(value :_*))
+    inline def setExtendedStatisticsVarargs(value: ExtendedStatistic*): Self = StObject.set(x, "ExtendedStatistics", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: Statistics): Self = StObject.set(x, "Statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: Statistics): Self = StObject.set(x, "Statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsUndefined: Self = StObject.set(x, "Statistics", js.undefined)
+    inline def setStatisticsUndefined: Self = StObject.set(x, "Statistics", js.undefined)
     
-    @scala.inline
-    def setStatisticsVarargs(value: Statistic*): Self = StObject.set(x, "Statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: Statistic*): Self = StObject.set(x, "Statistics", js.Array(value :_*))
     
-    @scala.inline
-    def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: StandardUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

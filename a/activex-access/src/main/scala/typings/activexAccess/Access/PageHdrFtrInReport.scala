@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PageHdrFtrInReport extends StObject {
   
-  @JSName("Access._PageHdrFtrInReport_typekey")
+  /* private */ @JSName("Access._PageHdrFtrInReport_typekey")
   var AccessDot_PageHdrFtrInReport_typekey: PageHdrFtrInReport
   
   var AlternateBackColor: Double
@@ -118,8 +118,7 @@ trait PageHdrFtrInReport extends StObject {
 }
 object PageHdrFtrInReport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDot_PageHdrFtrInReport_typekey: PageHdrFtrInReport,
     AlternateBackColor: Double,
     AlternateBackShade: Double,
@@ -177,160 +176,108 @@ object PageHdrFtrInReport {
     __obj.asInstanceOf[PageHdrFtrInReport]
   }
   
-  @scala.inline
-  implicit class PageHdrFtrInReportMutableBuilder[Self <: PageHdrFtrInReport] (val x: Self) extends AnyVal {
+  extension [Self <: PageHdrFtrInReport](x: Self) {
     
-    @scala.inline
-    def setAccessDot_PageHdrFtrInReport_typekey(value: PageHdrFtrInReport): Self = StObject.set(x, "Access._PageHdrFtrInReport_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDot_PageHdrFtrInReport_typekey(value: PageHdrFtrInReport): Self = StObject.set(x, "Access._PageHdrFtrInReport_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateBackColor(value: Double): Self = StObject.set(x, "AlternateBackColor", value.asInstanceOf[js.Any])
+    inline def setAlternateBackColor(value: Double): Self = StObject.set(x, "AlternateBackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateBackShade(value: Double): Self = StObject.set(x, "AlternateBackShade", value.asInstanceOf[js.Any])
+    inline def setAlternateBackShade(value: Double): Self = StObject.set(x, "AlternateBackShade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateBackThemeColorIndex(value: Double): Self = StObject.set(x, "AlternateBackThemeColorIndex", value.asInstanceOf[js.Any])
+    inline def setAlternateBackThemeColorIndex(value: Double): Self = StObject.set(x, "AlternateBackThemeColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateBackTint(value: Double): Self = StObject.set(x, "AlternateBackTint", value.asInstanceOf[js.Any])
+    inline def setAlternateBackTint(value: Double): Self = StObject.set(x, "AlternateBackTint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHeight(value: Boolean): Self = StObject.set(x, "AutoHeight", value.asInstanceOf[js.Any])
+    inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "AutoHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackShade(value: Double): Self = StObject.set(x, "BackShade", value.asInstanceOf[js.Any])
+    inline def setBackShade(value: Double): Self = StObject.set(x, "BackShade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackThemeColorIndex(value: Double): Self = StObject.set(x, "BackThemeColorIndex", value.asInstanceOf[js.Any])
+    inline def setBackThemeColorIndex(value: Double): Self = StObject.set(x, "BackThemeColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackTint(value: Double): Self = StObject.set(x, "BackTint", value.asInstanceOf[js.Any])
+    inline def setBackTint(value: Double): Self = StObject.set(x, "BackTint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanGrow(value: Boolean): Self = StObject.set(x, "CanGrow", value.asInstanceOf[js.Any])
+    inline def setCanGrow(value: Boolean): Self = StObject.set(x, "CanGrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanShrink(value: Boolean): Self = StObject.set(x, "CanShrink", value.asInstanceOf[js.Any])
+    inline def setCanShrink(value: Boolean): Self = StObject.set(x, "CanShrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControls(value: Children): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: Children): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayWhen(value: Double): Self = StObject.set(x, "DisplayWhen", value.asInstanceOf[js.Any])
+    inline def setDisplayWhen(value: Double): Self = StObject.set(x, "DisplayWhen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventProcPrefix(value: String): Self = StObject.set(x, "EventProcPrefix", value.asInstanceOf[js.Any])
+    inline def setEventProcPrefix(value: String): Self = StObject.set(x, "EventProcPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceNewPage(value: Double): Self = StObject.set(x, "ForceNewPage", value.asInstanceOf[js.Any])
+    inline def setForceNewPage(value: Double): Self = StObject.set(x, "ForceNewPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasContinued(value: Boolean): Self = StObject.set(x, "HasContinued", value.asInstanceOf[js.Any])
+    inline def setHasContinued(value: Boolean): Self = StObject.set(x, "HasContinued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInSelection(value: Boolean): Self = StObject.set(x, "InSelection", value.asInstanceOf[js.Any])
+    inline def setInSelection(value: Boolean): Self = StObject.set(x, "InSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeepTogether(value: Boolean): Self = StObject.set(x, "KeepTogether", value.asInstanceOf[js.Any])
+    inline def setKeepTogether(value: Boolean): Self = StObject.set(x, "KeepTogether", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewRowOrCol(value: Double): Self = StObject.set(x, "NewRowOrCol", value.asInstanceOf[js.Any])
+    inline def setNewRowOrCol(value: Double): Self = StObject.set(x, "NewRowOrCol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClick(value: String): Self = StObject.set(x, "OnClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: String): Self = StObject.set(x, "OnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickMacro(value: String): Self = StObject.set(x, "OnClickMacro", value.asInstanceOf[js.Any])
+    inline def setOnClickMacro(value: String): Self = StObject.set(x, "OnClickMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDblClick(value: String): Self = StObject.set(x, "OnDblClick", value.asInstanceOf[js.Any])
+    inline def setOnDblClick(value: String): Self = StObject.set(x, "OnDblClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDblClickMacro(value: String): Self = StObject.set(x, "OnDblClickMacro", value.asInstanceOf[js.Any])
+    inline def setOnDblClickMacro(value: String): Self = StObject.set(x, "OnDblClickMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFormat(value: String): Self = StObject.set(x, "OnFormat", value.asInstanceOf[js.Any])
+    inline def setOnFormat(value: String): Self = StObject.set(x, "OnFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFormatMacro(value: String): Self = StObject.set(x, "OnFormatMacro", value.asInstanceOf[js.Any])
+    inline def setOnFormatMacro(value: String): Self = StObject.set(x, "OnFormatMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseDown(value: String): Self = StObject.set(x, "OnMouseDown", value.asInstanceOf[js.Any])
+    inline def setOnMouseDown(value: String): Self = StObject.set(x, "OnMouseDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseDownMacro(value: String): Self = StObject.set(x, "OnMouseDownMacro", value.asInstanceOf[js.Any])
+    inline def setOnMouseDownMacro(value: String): Self = StObject.set(x, "OnMouseDownMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseMove(value: String): Self = StObject.set(x, "OnMouseMove", value.asInstanceOf[js.Any])
+    inline def setOnMouseMove(value: String): Self = StObject.set(x, "OnMouseMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseMoveMacro(value: String): Self = StObject.set(x, "OnMouseMoveMacro", value.asInstanceOf[js.Any])
+    inline def setOnMouseMoveMacro(value: String): Self = StObject.set(x, "OnMouseMoveMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseUp(value: String): Self = StObject.set(x, "OnMouseUp", value.asInstanceOf[js.Any])
+    inline def setOnMouseUp(value: String): Self = StObject.set(x, "OnMouseUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnMouseUpMacro(value: String): Self = StObject.set(x, "OnMouseUpMacro", value.asInstanceOf[js.Any])
+    inline def setOnMouseUpMacro(value: String): Self = StObject.set(x, "OnMouseUpMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPaint(value: String): Self = StObject.set(x, "OnPaint", value.asInstanceOf[js.Any])
+    inline def setOnPaint(value: String): Self = StObject.set(x, "OnPaint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPaintMacro(value: String): Self = StObject.set(x, "OnPaintMacro", value.asInstanceOf[js.Any])
+    inline def setOnPaintMacro(value: String): Self = StObject.set(x, "OnPaintMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPrint(value: String): Self = StObject.set(x, "OnPrint", value.asInstanceOf[js.Any])
+    inline def setOnPrint(value: String): Self = StObject.set(x, "OnPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPrintMacro(value: String): Self = StObject.set(x, "OnPrintMacro", value.asInstanceOf[js.Any])
+    inline def setOnPrintMacro(value: String): Self = StObject.set(x, "OnPrintMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRetreat(value: String): Self = StObject.set(x, "OnRetreat", value.asInstanceOf[js.Any])
+    inline def setOnRetreat(value: String): Self = StObject.set(x, "OnRetreat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRetreatMacro(value: String): Self = StObject.set(x, "OnRetreatMacro", value.asInstanceOf[js.Any])
+    inline def setOnRetreatMacro(value: String): Self = StObject.set(x, "OnRetreatMacro", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatSection(value: Boolean): Self = StObject.set(x, "RepeatSection", value.asInstanceOf[js.Any])
+    inline def setRepeatSection(value: Boolean): Self = StObject.set(x, "RepeatSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetTabOrder(value: () => Unit): Self = StObject.set(x, "SetTabOrder", js.Any.fromFunction0(value))
+    inline def setSetTabOrder(value: () => Unit): Self = StObject.set(x, "SetTabOrder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSpecialEffect(value: Double): Self = StObject.set(x, "SpecialEffect", value.asInstanceOf[js.Any])
+    inline def setSpecialEffect(value: Double): Self = StObject.set(x, "SpecialEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWillContinue(value: Boolean): Self = StObject.set(x, "WillContinue", value.asInstanceOf[js.Any])
+    inline def setWillContinue(value: Boolean): Self = StObject.set(x, "WillContinue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Name(value: String): Self = StObject.set(x, "_Name", value.asInstanceOf[js.Any])
+    inline def set_Name(value: String): Self = StObject.set(x, "_Name", value.asInstanceOf[js.Any])
   }
 }

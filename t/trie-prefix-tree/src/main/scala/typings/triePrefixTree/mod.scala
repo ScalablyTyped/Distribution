@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(strings: js.Array[String]): CountPrefix = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(strings.asInstanceOf[js.Any]).asInstanceOf[CountPrefix]
+  inline def default(strings: js.Array[String]): CountPrefix = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(strings.asInstanceOf[js.Any]).asInstanceOf[CountPrefix]
 }

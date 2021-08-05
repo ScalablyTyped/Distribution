@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSizeRepresents extends StObject
 object XlSizeRepresents {
   
-  @scala.inline
-  def xlSizeIsArea: `1` = 1.asInstanceOf[`1`]
+  inline def xlSizeIsArea: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlSizeIsWidth: `2` = 2.asInstanceOf[`2`]
+  inline def xlSizeIsWidth: `2` = 2.asInstanceOf[`2`]
 }

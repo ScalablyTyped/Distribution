@@ -18,40 +18,29 @@ trait MomentCreationData extends StObject {
 }
 object MomentCreationData {
   
-  @scala.inline
-  def apply(input: MomentInput, isUTC: Boolean, locale: Locale_): MomentCreationData = {
+  inline def apply(input: MomentInput, isUTC: Boolean, locale: Locale_): MomentCreationData = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], isUTC = isUTC.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[MomentCreationData]
   }
   
-  @scala.inline
-  implicit class MomentCreationDataMutableBuilder[Self <: MomentCreationData] (val x: Self) extends AnyVal {
+  extension [Self <: MomentCreationData](x: Self) {
     
-    @scala.inline
-    def setFormat(value: MomentFormatSpecification): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: MomentFormatSpecification): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFormatVarargs(value: (String | MomentBuiltinFormat)*): Self = StObject.set(x, "format", js.Array(value :_*))
+    inline def setFormatVarargs(value: (String | MomentBuiltinFormat)*): Self = StObject.set(x, "format", js.Array(value :_*))
     
-    @scala.inline
-    def setInput(value: MomentInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: MomentInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputVarargs(value: (Double | String)*): Self = StObject.set(x, "input", js.Array(value :_*))
+    inline def setInputVarargs(value: (Double | String)*): Self = StObject.set(x, "input", js.Array(value :_*))
     
-    @scala.inline
-    def setIsUTC(value: Boolean): Self = StObject.set(x, "isUTC", value.asInstanceOf[js.Any])
+    inline def setIsUTC(value: Boolean): Self = StObject.set(x, "isUTC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: Locale_): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale_): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

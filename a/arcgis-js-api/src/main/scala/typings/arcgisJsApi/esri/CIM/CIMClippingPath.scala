@@ -22,31 +22,24 @@ trait CIMClippingPath extends StObject {
 }
 object CIMClippingPath {
   
-  @scala.inline
-  def apply(): CIMClippingPath = {
+  inline def apply(): CIMClippingPath = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMClippingPath")
     __obj.asInstanceOf[CIMClippingPath]
   }
   
-  @scala.inline
-  implicit class CIMClippingPathMutableBuilder[Self <: CIMClippingPath] (val x: Self) extends AnyVal {
+  extension [Self <: CIMClippingPath](x: Self) {
     
-    @scala.inline
-    def setClippingType(
+    inline def setClippingType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ClippingType * / any */ String
     ): Self = StObject.set(x, "clippingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClippingTypeUndefined: Self = StObject.set(x, "clippingType", js.undefined)
+    inline def setClippingTypeUndefined: Self = StObject.set(x, "clippingType", js.undefined)
     
-    @scala.inline
-    def setPath(value: ExternalReferencePolygon): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: ExternalReferencePolygon): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMClippingPath): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMClippingPath): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

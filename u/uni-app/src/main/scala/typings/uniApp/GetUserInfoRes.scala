@@ -38,49 +38,35 @@ trait GetUserInfoRes extends StObject {
 }
 object GetUserInfoRes {
   
-  @scala.inline
-  def apply(): GetUserInfoRes = {
+  inline def apply(): GetUserInfoRes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUserInfoRes]
   }
   
-  @scala.inline
-  implicit class GetUserInfoResMutableBuilder[Self <: GetUserInfoRes] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserInfoRes](x: Self) {
     
-    @scala.inline
-    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedDataUndefined: Self = StObject.set(x, "encryptedData", js.undefined)
+    inline def setEncryptedDataUndefined: Self = StObject.set(x, "encryptedData", js.undefined)
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    @scala.inline
-    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+    inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
     
-    @scala.inline
-    def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: String): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawDataUndefined: Self = StObject.set(x, "rawData", js.undefined)
+    inline def setRawDataUndefined: Self = StObject.set(x, "rawData", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
     
-    @scala.inline
-    def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    inline def setUserInfo(value: UserInfo): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
+    inline def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
   }
 }

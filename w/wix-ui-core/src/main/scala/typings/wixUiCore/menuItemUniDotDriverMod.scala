@@ -12,8 +12,7 @@ object menuItemUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def menuItemDriverFactory(base: UniDriver[js.Any]): MenuItemDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("menuItemDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[MenuItemDriver]
+  inline def menuItemDriverFactory(base: UniDriver[js.Any]): MenuItemDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("menuItemDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[MenuItemDriver]
   
   trait MenuItemDriver
     extends StObject
@@ -33,8 +32,7 @@ object menuItemUniDotDriverMod {
   }
   object MenuItemDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -47,20 +45,15 @@ object menuItemUniDotDriverMod {
       __obj.asInstanceOf[MenuItemDriver]
     }
     
-    @scala.inline
-    implicit class MenuItemDriverMutableBuilder[Self <: MenuItemDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MenuItemDriver](x: Self) {
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHighlighted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isHighlighted", js.Any.fromFunction0(value))
+      inline def setIsHighlighted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isHighlighted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
+      inline def setIsSelected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
     }
   }
 }

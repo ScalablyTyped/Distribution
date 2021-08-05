@@ -14,16 +14,13 @@ trait WaitForSelectorOptionsHidden
 }
 object WaitForSelectorOptionsHidden {
   
-  @scala.inline
-  def apply(): WaitForSelectorOptionsHidden = {
+  inline def apply(): WaitForSelectorOptionsHidden = {
     val __obj = js.Dynamic.literal(hidden = true)
     __obj.asInstanceOf[WaitForSelectorOptionsHidden]
   }
   
-  @scala.inline
-  implicit class WaitForSelectorOptionsHiddenMutableBuilder[Self <: WaitForSelectorOptionsHidden] (val x: Self) extends AnyVal {
+  extension [Self <: WaitForSelectorOptionsHidden](x: Self) {
     
-    @scala.inline
-    def setHidden(value: `true`): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: `true`): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
   }
 }

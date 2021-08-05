@@ -8,26 +8,21 @@ object webpackBlocksAssetsStrings {
   
   @js.native
   sealed trait asIs extends StObject
-  @scala.inline
-  def asIs: asIs = "asIs".asInstanceOf[asIs]
+  inline def asIs: asIs = "asIs".asInstanceOf[asIs]
   
   @js.native
   sealed trait camelCase extends StObject
-  @scala.inline
-  def camelCase: camelCase = "camelCase".asInstanceOf[camelCase]
+  inline def camelCase: camelCase = "camelCase".asInstanceOf[camelCase]
   
   @js.native
   sealed trait camelCaseOnly extends StObject
-  @scala.inline
-  def camelCaseOnly: camelCaseOnly = "camelCaseOnly".asInstanceOf[camelCaseOnly]
+  inline def camelCaseOnly: camelCaseOnly = "camelCaseOnly".asInstanceOf[camelCaseOnly]
   
   @js.native
   sealed trait dashes extends StObject
-  @scala.inline
-  def dashes: dashes = "dashes".asInstanceOf[dashes]
+  inline def dashes: dashes = "dashes".asInstanceOf[dashes]
   
   @js.native
   sealed trait dashesOnly extends StObject
-  @scala.inline
-  def dashesOnly: dashesOnly = "dashesOnly".asInstanceOf[dashesOnly]
+  inline def dashesOnly: dashesOnly = "dashesOnly".asInstanceOf[dashesOnly]
 }

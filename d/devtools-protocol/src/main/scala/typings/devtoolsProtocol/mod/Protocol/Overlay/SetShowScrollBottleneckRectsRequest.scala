@@ -13,16 +13,13 @@ trait SetShowScrollBottleneckRectsRequest extends StObject {
 }
 object SetShowScrollBottleneckRectsRequest {
   
-  @scala.inline
-  def apply(show: Boolean): SetShowScrollBottleneckRectsRequest = {
+  inline def apply(show: Boolean): SetShowScrollBottleneckRectsRequest = {
     val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetShowScrollBottleneckRectsRequest]
   }
   
-  @scala.inline
-  implicit class SetShowScrollBottleneckRectsRequestMutableBuilder[Self <: SetShowScrollBottleneckRectsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetShowScrollBottleneckRectsRequest](x: Self) {
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }
 }

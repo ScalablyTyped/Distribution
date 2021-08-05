@@ -27,8 +27,7 @@ trait DeleteFile
 }
 object DeleteFile {
   
-  @scala.inline
-  def apply(uri: DocumentUri): DeleteFile = {
+  inline def apply(uri: DocumentUri): DeleteFile = {
     val __obj = js.Dynamic.literal(kind = "delete", uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFile]
   }
@@ -37,27 +36,19 @@ object DeleteFile {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(uri: DocumentUri): DeleteFile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[DeleteFile]
-  @scala.inline
-  def create(uri: DocumentUri, options: DeleteFileOptions): DeleteFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DeleteFile]
+  inline def create(uri: DocumentUri): DeleteFile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[DeleteFile]
+  inline def create(uri: DocumentUri, options: DeleteFileOptions): DeleteFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DeleteFile]
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DeleteFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DeleteFile */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DeleteFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DeleteFile */ Boolean]
   
-  @scala.inline
-  implicit class DeleteFileMutableBuilder[Self <: DeleteFile] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFile](x: Self) {
     
-    @scala.inline
-    def setKind(value: delete): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: delete): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: DeleteFileOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: DeleteFileOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ object bunyanPubMod {
   @js.native
   val bunyan: IModulePatcher = js.native
   
-  @scala.inline
-  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   trait IBunyanData extends StObject {
     
@@ -26,20 +25,16 @@ object bunyanPubMod {
   }
   object IBunyanData {
     
-    @scala.inline
-    def apply(level: Double, result: String): IBunyanData = {
+    inline def apply(level: Double, result: String): IBunyanData = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBunyanData]
     }
     
-    @scala.inline
-    implicit class IBunyanDataMutableBuilder[Self <: IBunyanData] (val x: Self) extends AnyVal {
+    extension [Self <: IBunyanData](x: Self) {
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
 }

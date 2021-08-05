@@ -15,8 +15,7 @@ trait owl extends StObject {
 }
 object owl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getLiveMatch: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit,
     getSchedule: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit,
     getStandings: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit
@@ -25,16 +24,12 @@ object owl {
     __obj.asInstanceOf[owl]
   }
   
-  @scala.inline
-  implicit class owlMutableBuilder[Self <: owl] (val x: Self) extends AnyVal {
+  extension [Self <: owl](x: Self) {
     
-    @scala.inline
-    def setGetLiveMatch(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getLiveMatch", js.Any.fromFunction1(value))
+    inline def setGetLiveMatch(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getLiveMatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSchedule(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getSchedule", js.Any.fromFunction1(value))
+    inline def setGetSchedule(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getSchedule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStandings(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getStandings", js.Any.fromFunction1(value))
+    inline def setGetStandings(value: js.Function2[/* err */ Error, /* data */ js.Any, Unit] => Unit): Self = StObject.set(x, "getStandings", js.Any.fromFunction1(value))
   }
 }

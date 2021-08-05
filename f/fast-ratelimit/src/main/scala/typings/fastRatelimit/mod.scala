@@ -45,20 +45,16 @@ object mod {
   }
   object FastRateLimitOptions {
     
-    @scala.inline
-    def apply(threshold: Double, ttl: Double): FastRateLimitOptions = {
+    inline def apply(threshold: Double, ttl: Double): FastRateLimitOptions = {
       val __obj = js.Dynamic.literal(threshold = threshold.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastRateLimitOptions]
     }
     
-    @scala.inline
-    implicit class FastRateLimitOptionsMutableBuilder[Self <: FastRateLimitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FastRateLimitOptions](x: Self) {
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     }
   }
 }

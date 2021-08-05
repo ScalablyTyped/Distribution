@@ -13,19 +13,15 @@ trait DeadLetterConfig extends StObject {
 }
 object DeadLetterConfig {
   
-  @scala.inline
-  def apply(): DeadLetterConfig = {
+  inline def apply(): DeadLetterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeadLetterConfig]
   }
   
-  @scala.inline
-  implicit class DeadLetterConfigMutableBuilder[Self <: DeadLetterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DeadLetterConfig](x: Self) {
     
-    @scala.inline
-    def setArn(value: ResourceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ResourceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

@@ -25,20 +25,16 @@ object anon {
   }
   object OmitMakeDirectoryOptionsr {
     
-    @scala.inline
-    def apply(): OmitMakeDirectoryOptionsr = {
+    inline def apply(): OmitMakeDirectoryOptionsr = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OmitMakeDirectoryOptionsr]
     }
     
-    @scala.inline
-    implicit class OmitMakeDirectoryOptionsrMutableBuilder[Self <: OmitMakeDirectoryOptionsr] (val x: Self) extends AnyVal {
+    extension [Self <: OmitMakeDirectoryOptionsr](x: Self) {
       
-      @scala.inline
-      def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
 }

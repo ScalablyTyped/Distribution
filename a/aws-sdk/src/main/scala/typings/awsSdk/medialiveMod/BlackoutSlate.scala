@@ -33,43 +33,31 @@ trait BlackoutSlate extends StObject {
 }
 object BlackoutSlate {
   
-  @scala.inline
-  def apply(): BlackoutSlate = {
+  inline def apply(): BlackoutSlate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlackoutSlate]
   }
   
-  @scala.inline
-  implicit class BlackoutSlateMutableBuilder[Self <: BlackoutSlate] (val x: Self) extends AnyVal {
+  extension [Self <: BlackoutSlate](x: Self) {
     
-    @scala.inline
-    def setBlackoutSlateImage(value: InputLocation): Self = StObject.set(x, "BlackoutSlateImage", value.asInstanceOf[js.Any])
+    inline def setBlackoutSlateImage(value: InputLocation): Self = StObject.set(x, "BlackoutSlateImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlackoutSlateImageUndefined: Self = StObject.set(x, "BlackoutSlateImage", js.undefined)
+    inline def setBlackoutSlateImageUndefined: Self = StObject.set(x, "BlackoutSlateImage", js.undefined)
     
-    @scala.inline
-    def setNetworkEndBlackout(value: BlackoutSlateNetworkEndBlackout): Self = StObject.set(x, "NetworkEndBlackout", value.asInstanceOf[js.Any])
+    inline def setNetworkEndBlackout(value: BlackoutSlateNetworkEndBlackout): Self = StObject.set(x, "NetworkEndBlackout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkEndBlackoutImage(value: InputLocation): Self = StObject.set(x, "NetworkEndBlackoutImage", value.asInstanceOf[js.Any])
+    inline def setNetworkEndBlackoutImage(value: InputLocation): Self = StObject.set(x, "NetworkEndBlackoutImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkEndBlackoutImageUndefined: Self = StObject.set(x, "NetworkEndBlackoutImage", js.undefined)
+    inline def setNetworkEndBlackoutImageUndefined: Self = StObject.set(x, "NetworkEndBlackoutImage", js.undefined)
     
-    @scala.inline
-    def setNetworkEndBlackoutUndefined: Self = StObject.set(x, "NetworkEndBlackout", js.undefined)
+    inline def setNetworkEndBlackoutUndefined: Self = StObject.set(x, "NetworkEndBlackout", js.undefined)
     
-    @scala.inline
-    def setNetworkId(value: stringMin34Max34): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
+    inline def setNetworkId(value: stringMin34Max34): Self = StObject.set(x, "NetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
+    inline def setNetworkIdUndefined: Self = StObject.set(x, "NetworkId", js.undefined)
     
-    @scala.inline
-    def setState(value: BlackoutSlateState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: BlackoutSlateState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

@@ -16,17 +16,14 @@ trait HTML
 }
 object HTML {
   
-  @scala.inline
-  def apply(value: js.Any): HTML = {
+  inline def apply(value: js.Any): HTML = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("html")
     __obj.asInstanceOf[HTML]
   }
   
-  @scala.inline
-  implicit class HTMLMutableBuilder[Self <: HTML] (val x: Self) extends AnyVal {
+  extension [Self <: HTML](x: Self) {
     
-    @scala.inline
-    def setType(value: html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

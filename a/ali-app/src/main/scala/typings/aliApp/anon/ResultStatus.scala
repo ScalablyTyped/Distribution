@@ -22,19 +22,15 @@ trait ResultStatus extends StObject {
 }
 object ResultStatus {
   
-  @scala.inline
-  def apply(result: Admitstate, resultStatus: `6001` | `6002` | `9000` | `4000` | String): ResultStatus = {
+  inline def apply(result: Admitstate, resultStatus: `6001` | `6002` | `9000` | `4000` | String): ResultStatus = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], resultStatus = resultStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultStatus]
   }
   
-  @scala.inline
-  implicit class ResultStatusMutableBuilder[Self <: ResultStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ResultStatus](x: Self) {
     
-    @scala.inline
-    def setResult(value: Admitstate): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Admitstate): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultStatus(value: `6001` | `6002` | `9000` | `4000` | String): Self = StObject.set(x, "resultStatus", value.asInstanceOf[js.Any])
+    inline def setResultStatus(value: `6001` | `6002` | `9000` | `4000` | String): Self = StObject.set(x, "resultStatus", value.asInstanceOf[js.Any])
   }
 }

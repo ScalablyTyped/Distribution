@@ -20,19 +20,15 @@ trait IgGridAppendRowsOnDemandLocale
 }
 object IgGridAppendRowsOnDemandLocale {
   
-  @scala.inline
-  def apply(): IgGridAppendRowsOnDemandLocale = {
+  inline def apply(): IgGridAppendRowsOnDemandLocale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridAppendRowsOnDemandLocale]
   }
   
-  @scala.inline
-  implicit class IgGridAppendRowsOnDemandLocaleMutableBuilder[Self <: IgGridAppendRowsOnDemandLocale] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridAppendRowsOnDemandLocale](x: Self) {
     
-    @scala.inline
-    def setLoadMoreDataButtonText(value: String): Self = StObject.set(x, "loadMoreDataButtonText", value.asInstanceOf[js.Any])
+    inline def setLoadMoreDataButtonText(value: String): Self = StObject.set(x, "loadMoreDataButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadMoreDataButtonTextUndefined: Self = StObject.set(x, "loadMoreDataButtonText", js.undefined)
+    inline def setLoadMoreDataButtonTextUndefined: Self = StObject.set(x, "loadMoreDataButtonText", js.undefined)
   }
 }

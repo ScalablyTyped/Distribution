@@ -22,20 +22,16 @@ object typesPutObjectAclOutputMod {
   }
   object PutObjectAclOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): PutObjectAclOutput = {
+    inline def apply($metadata: ResponseMetadata): PutObjectAclOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutObjectAclOutput]
     }
     
-    @scala.inline
-    implicit class PutObjectAclOutputMutableBuilder[Self <: PutObjectAclOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutObjectAclOutput](x: Self) {
       
-      @scala.inline
-      def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+      inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+      inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
     }
   }
 }

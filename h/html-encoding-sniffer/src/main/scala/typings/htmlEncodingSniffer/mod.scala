@@ -13,10 +13,8 @@ object mod {
     * @return The canonical [encoding name](https://encoding.spec.whatwg.org/#names-and-labels)
     *         for use with the `whatwg-encoding` or similar package.
     */
-  @scala.inline
-  def apply(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(buffer: Buffer, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(buffer: Buffer, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("html-encoding-sniffer", JSImport.Namespace)
   @js.native
@@ -47,26 +45,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+      inline def setDefaultEncoding(value: String): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+      inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
       
-      @scala.inline
-      def setTransportLayerEncodingLabel(value: String): Self = StObject.set(x, "transportLayerEncodingLabel", value.asInstanceOf[js.Any])
+      inline def setTransportLayerEncodingLabel(value: String): Self = StObject.set(x, "transportLayerEncodingLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportLayerEncodingLabelUndefined: Self = StObject.set(x, "transportLayerEncodingLabel", js.undefined)
+      inline def setTransportLayerEncodingLabelUndefined: Self = StObject.set(x, "transportLayerEncodingLabel", js.undefined)
     }
   }
 }

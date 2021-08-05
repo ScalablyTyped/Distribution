@@ -10,19 +10,15 @@ trait TabContents extends StObject {
 }
 object TabContents {
   
-  @scala.inline
-  def apply(): TabContents = {
+  inline def apply(): TabContents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabContents]
   }
   
-  @scala.inline
-  implicit class TabContentsMutableBuilder[Self <: TabContents] (val x: Self) extends AnyVal {
+  extension [Self <: TabContents](x: Self) {
     
-    @scala.inline
-    def setTabContents(value: String): Self = StObject.set(x, "tabContents", value.asInstanceOf[js.Any])
+    inline def setTabContents(value: String): Self = StObject.set(x, "tabContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabContentsUndefined: Self = StObject.set(x, "tabContents", js.undefined)
+    inline def setTabContentsUndefined: Self = StObject.set(x, "tabContents", js.undefined)
   }
 }

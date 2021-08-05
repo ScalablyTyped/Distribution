@@ -14,28 +14,21 @@ trait PutChannelResult extends StObject {
 }
 object PutChannelResult {
   
-  @scala.inline
-  def apply(playUrls: js.Array[String], publishUrls: js.Array[String], res: NormalSuccessResponse): PutChannelResult = {
+  inline def apply(playUrls: js.Array[String], publishUrls: js.Array[String], res: NormalSuccessResponse): PutChannelResult = {
     val __obj = js.Dynamic.literal(playUrls = playUrls.asInstanceOf[js.Any], publishUrls = publishUrls.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutChannelResult]
   }
   
-  @scala.inline
-  implicit class PutChannelResultMutableBuilder[Self <: PutChannelResult] (val x: Self) extends AnyVal {
+  extension [Self <: PutChannelResult](x: Self) {
     
-    @scala.inline
-    def setPlayUrls(value: js.Array[String]): Self = StObject.set(x, "playUrls", value.asInstanceOf[js.Any])
+    inline def setPlayUrls(value: js.Array[String]): Self = StObject.set(x, "playUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "playUrls", js.Array(value :_*))
+    inline def setPlayUrlsVarargs(value: String*): Self = StObject.set(x, "playUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setPublishUrls(value: js.Array[String]): Self = StObject.set(x, "publishUrls", value.asInstanceOf[js.Any])
+    inline def setPublishUrls(value: js.Array[String]): Self = StObject.set(x, "publishUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "publishUrls", js.Array(value :_*))
+    inline def setPublishUrlsVarargs(value: String*): Self = StObject.set(x, "publishUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

@@ -23,23 +23,18 @@ trait RepositoryWebhook extends StObject {
 }
 object RepositoryWebhook {
   
-  @scala.inline
-  def apply(name: String, `type`: String, url: String): RepositoryWebhook = {
+  inline def apply(name: String, `type`: String, url: String): RepositoryWebhook = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepositoryWebhook]
   }
   
-  @scala.inline
-  implicit class RepositoryWebhookMutableBuilder[Self <: RepositoryWebhook] (val x: Self) extends AnyVal {
+  extension [Self <: RepositoryWebhook](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

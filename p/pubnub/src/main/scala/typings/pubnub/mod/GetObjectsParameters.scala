@@ -16,31 +16,23 @@ trait GetObjectsParameters extends StObject {
 }
 object GetObjectsParameters {
   
-  @scala.inline
-  def apply(): GetObjectsParameters = {
+  inline def apply(): GetObjectsParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetObjectsParameters]
   }
   
-  @scala.inline
-  implicit class GetObjectsParametersMutableBuilder[Self <: GetObjectsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectsParameters](x: Self) {
     
-    @scala.inline
-    def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPage(value: Next): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Next): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
   }
 }

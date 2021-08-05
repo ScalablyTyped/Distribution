@@ -13,16 +13,13 @@ trait GetUploadStatusRequest extends StObject {
 }
 object GetUploadStatusRequest {
   
-  @scala.inline
-  def apply(uploadId: UploadId): GetUploadStatusRequest = {
+  inline def apply(uploadId: UploadId): GetUploadStatusRequest = {
     val __obj = js.Dynamic.literal(uploadId = uploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUploadStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetUploadStatusRequestMutableBuilder[Self <: GetUploadStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUploadStatusRequest](x: Self) {
     
-    @scala.inline
-    def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }
 }

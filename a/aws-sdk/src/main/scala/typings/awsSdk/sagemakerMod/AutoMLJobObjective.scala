@@ -13,16 +13,13 @@ trait AutoMLJobObjective extends StObject {
 }
 object AutoMLJobObjective {
   
-  @scala.inline
-  def apply(MetricName: AutoMLMetricEnum): AutoMLJobObjective = {
+  inline def apply(MetricName: AutoMLMetricEnum): AutoMLJobObjective = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoMLJobObjective]
   }
   
-  @scala.inline
-  implicit class AutoMLJobObjectiveMutableBuilder[Self <: AutoMLJobObjective] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLJobObjective](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: AutoMLMetricEnum): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: AutoMLMetricEnum): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
   }
 }

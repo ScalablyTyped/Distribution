@@ -19,19 +19,15 @@ trait CurrencyAmount extends StObject {
 }
 object CurrencyAmount {
   
-  @scala.inline
-  def apply(currency: String, value: String): CurrencyAmount = {
+  inline def apply(currency: String, value: String): CurrencyAmount = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrencyAmount]
   }
   
-  @scala.inline
-  implicit class CurrencyAmountMutableBuilder[Self <: CurrencyAmount] (val x: Self) extends AnyVal {
+  extension [Self <: CurrencyAmount](x: Self) {
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

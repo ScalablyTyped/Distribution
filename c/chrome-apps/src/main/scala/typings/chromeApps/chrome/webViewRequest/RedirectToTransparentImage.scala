@@ -11,23 +11,19 @@ trait RedirectToTransparentImage
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage
 }
 object RedirectToTransparentImage {
   
-  @scala.inline
-  def apply(instanceType: String): RedirectToTransparentImage = {
+  inline def apply(instanceType: String): RedirectToTransparentImage = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectToTransparentImage")
     __obj.asInstanceOf[RedirectToTransparentImage]
   }
   
-  @scala.inline
-  implicit class RedirectToTransparentImageMutableBuilder[Self <: RedirectToTransparentImage] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectToTransparentImage](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RedirectToTransparentImage): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

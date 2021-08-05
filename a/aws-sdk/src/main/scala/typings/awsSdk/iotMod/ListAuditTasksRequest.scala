@@ -38,43 +38,31 @@ trait ListAuditTasksRequest extends StObject {
 }
 object ListAuditTasksRequest {
   
-  @scala.inline
-  def apply(endTime: Timestamp, startTime: Timestamp): ListAuditTasksRequest = {
+  inline def apply(endTime: Timestamp, startTime: Timestamp): ListAuditTasksRequest = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAuditTasksRequest]
   }
   
-  @scala.inline
-  implicit class ListAuditTasksRequestMutableBuilder[Self <: ListAuditTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAuditTasksRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStatus(value: AuditTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
+    inline def setTaskStatus(value: AuditTaskStatus): Self = StObject.set(x, "taskStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
+    inline def setTaskStatusUndefined: Self = StObject.set(x, "taskStatus", js.undefined)
     
-    @scala.inline
-    def setTaskType(value: AuditTaskType): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
+    inline def setTaskType(value: AuditTaskType): Self = StObject.set(x, "taskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
+    inline def setTaskTypeUndefined: Self = StObject.set(x, "taskType", js.undefined)
   }
 }

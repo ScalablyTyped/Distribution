@@ -12,8 +12,6 @@ object entityTableInheritanceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TableInheritance(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TableInheritance")().asInstanceOf[ClassDecorator]
-  @scala.inline
-  def TableInheritance(options: Pattern): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TableInheritance")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def TableInheritance(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TableInheritance")().asInstanceOf[ClassDecorator]
+  inline def TableInheritance(options: Pattern): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TableInheritance")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
 }

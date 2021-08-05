@@ -10,6 +10,5 @@ object global {
   @JSGlobal("imagesLoaded")
   @js.native
   def imagesLoaded: ImagesLoadedConstructor = js.native
-  @scala.inline
-  def imagesLoaded_=(x: ImagesLoadedConstructor): Unit = js.Dynamic.global.updateDynamic("imagesLoaded")(x.asInstanceOf[js.Any])
+  inline def imagesLoaded_=(x: ImagesLoadedConstructor): Unit = js.Dynamic.global.updateDynamic("imagesLoaded")(x.asInstanceOf[js.Any])
 }

@@ -31,8 +31,7 @@ trait XImportFilter
 }
 object XImportFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     importer: (SeqEquiv[PropertyValue], XDocumentHandler, SeqEquiv[String]) => Boolean,
     queryInterface: `type` => js.Any,
@@ -42,10 +41,8 @@ object XImportFilter {
     __obj.asInstanceOf[XImportFilter]
   }
   
-  @scala.inline
-  implicit class XImportFilterMutableBuilder[Self <: XImportFilter] (val x: Self) extends AnyVal {
+  extension [Self <: XImportFilter](x: Self) {
     
-    @scala.inline
-    def setImporter(value: (SeqEquiv[PropertyValue], XDocumentHandler, SeqEquiv[String]) => Boolean): Self = StObject.set(x, "importer", js.Any.fromFunction3(value))
+    inline def setImporter(value: (SeqEquiv[PropertyValue], XDocumentHandler, SeqEquiv[String]) => Boolean): Self = StObject.set(x, "importer", js.Any.fromFunction3(value))
   }
 }

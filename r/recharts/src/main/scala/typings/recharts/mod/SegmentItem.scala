@@ -12,19 +12,15 @@ trait SegmentItem extends StObject {
 }
 object SegmentItem {
   
-  @scala.inline
-  def apply(x: Double | String, y: Double | String): SegmentItem = {
+  inline def apply(x: Double | String, y: Double | String): SegmentItem = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SegmentItem]
   }
   
-  @scala.inline
-  implicit class SegmentItemMutableBuilder[Self <: SegmentItem] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentItem](x: Self) {
     
-    @scala.inline
-    def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

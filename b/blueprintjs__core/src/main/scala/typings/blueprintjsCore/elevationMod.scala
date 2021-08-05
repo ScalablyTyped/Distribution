@@ -29,31 +29,26 @@ object elevationMod {
     @JSImport("@blueprintjs/core/lib/esm/common/elevation", "Elevation.FOUR")
     @js.native
     def FOUR: `4` = js.native
-    @scala.inline
-    def FOUR_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR")(x.asInstanceOf[js.Any])
+    inline def FOUR_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common/elevation", "Elevation.ONE")
     @js.native
     def ONE: `1` = js.native
-    @scala.inline
-    def ONE_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
+    inline def ONE_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ONE")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common/elevation", "Elevation.THREE")
     @js.native
     def THREE: `3` = js.native
-    @scala.inline
-    def THREE_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THREE")(x.asInstanceOf[js.Any])
+    inline def THREE_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THREE")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common/elevation", "Elevation.TWO")
     @js.native
     def TWO: `2` = js.native
-    @scala.inline
-    def TWO_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO")(x.asInstanceOf[js.Any])
+    inline def TWO_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/common/elevation", "Elevation.ZERO")
     @js.native
     def ZERO: `0` = js.native
-    @scala.inline
-    def ZERO_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+    inline def ZERO_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   }
 }

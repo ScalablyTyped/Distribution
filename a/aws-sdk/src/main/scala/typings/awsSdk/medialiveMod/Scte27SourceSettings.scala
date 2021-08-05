@@ -17,19 +17,15 @@ trait Scte27SourceSettings extends StObject {
 }
 object Scte27SourceSettings {
   
-  @scala.inline
-  def apply(): Scte27SourceSettings = {
+  inline def apply(): Scte27SourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scte27SourceSettings]
   }
   
-  @scala.inline
-  implicit class Scte27SourceSettingsMutableBuilder[Self <: Scte27SourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Scte27SourceSettings](x: Self) {
     
-    @scala.inline
-    def setPid(value: integerMin1): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: integerMin1): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidUndefined: Self = StObject.set(x, "Pid", js.undefined)
+    inline def setPidUndefined: Self = StObject.set(x, "Pid", js.undefined)
   }
 }

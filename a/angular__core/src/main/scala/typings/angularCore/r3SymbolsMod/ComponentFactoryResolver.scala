@@ -23,16 +23,13 @@ trait ComponentFactoryResolver extends StObject {
 }
 object ComponentFactoryResolver {
   
-  @scala.inline
-  def apply(resolveComponentFactory: Type[js.Any] => ComponentFactory[js.Any]): ComponentFactoryResolver = {
+  inline def apply(resolveComponentFactory: Type[js.Any] => ComponentFactory[js.Any]): ComponentFactoryResolver = {
     val __obj = js.Dynamic.literal(resolveComponentFactory = js.Any.fromFunction1(resolveComponentFactory))
     __obj.asInstanceOf[ComponentFactoryResolver]
   }
   
-  @scala.inline
-  implicit class ComponentFactoryResolverMutableBuilder[Self <: ComponentFactoryResolver] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentFactoryResolver](x: Self) {
     
-    @scala.inline
-    def setResolveComponentFactory(value: Type[js.Any] => ComponentFactory[js.Any]): Self = StObject.set(x, "resolveComponentFactory", js.Any.fromFunction1(value))
+    inline def setResolveComponentFactory(value: Type[js.Any] => ComponentFactory[js.Any]): Self = StObject.set(x, "resolveComponentFactory", js.Any.fromFunction1(value))
   }
 }

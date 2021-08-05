@@ -13,22 +13,17 @@ trait ListResourcesForWebACLResponse extends StObject {
 }
 object ListResourcesForWebACLResponse {
   
-  @scala.inline
-  def apply(): ListResourcesForWebACLResponse = {
+  inline def apply(): ListResourcesForWebACLResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResourcesForWebACLResponse]
   }
   
-  @scala.inline
-  implicit class ListResourcesForWebACLResponseMutableBuilder[Self <: ListResourcesForWebACLResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourcesForWebACLResponse](x: Self) {
     
-    @scala.inline
-    def setResourceArns(value: ResourceArns): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
+    inline def setResourceArns(value: ResourceArns): Self = StObject.set(x, "ResourceArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnsUndefined: Self = StObject.set(x, "ResourceArns", js.undefined)
+    inline def setResourceArnsUndefined: Self = StObject.set(x, "ResourceArns", js.undefined)
     
-    @scala.inline
-    def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
+    inline def setResourceArnsVarargs(value: ResourceArn*): Self = StObject.set(x, "ResourceArns", js.Array(value :_*))
   }
 }

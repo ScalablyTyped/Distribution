@@ -13,19 +13,15 @@ trait MultiplexOutputDestination extends StObject {
 }
 object MultiplexOutputDestination {
   
-  @scala.inline
-  def apply(): MultiplexOutputDestination = {
+  inline def apply(): MultiplexOutputDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiplexOutputDestination]
   }
   
-  @scala.inline
-  implicit class MultiplexOutputDestinationMutableBuilder[Self <: MultiplexOutputDestination] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexOutputDestination](x: Self) {
     
-    @scala.inline
-    def setMediaConnectSettings(value: MultiplexMediaConnectOutputDestinationSettings): Self = StObject.set(x, "MediaConnectSettings", value.asInstanceOf[js.Any])
+    inline def setMediaConnectSettings(value: MultiplexMediaConnectOutputDestinationSettings): Self = StObject.set(x, "MediaConnectSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaConnectSettingsUndefined: Self = StObject.set(x, "MediaConnectSettings", js.undefined)
+    inline def setMediaConnectSettingsUndefined: Self = StObject.set(x, "MediaConnectSettings", js.undefined)
   }
 }

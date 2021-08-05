@@ -34,31 +34,23 @@ trait ParamsResourceBeaconsAttachmentsDelete
 }
 object ParamsResourceBeaconsAttachmentsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceBeaconsAttachmentsDelete = {
+  inline def apply(): ParamsResourceBeaconsAttachmentsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBeaconsAttachmentsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceBeaconsAttachmentsDeleteMutableBuilder[Self <: ParamsResourceBeaconsAttachmentsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceBeaconsAttachmentsDelete](x: Self) {
     
-    @scala.inline
-    def setAttachmentName(value: String): Self = StObject.set(x, "attachmentName", value.asInstanceOf[js.Any])
+    inline def setAttachmentName(value: String): Self = StObject.set(x, "attachmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentNameUndefined: Self = StObject.set(x, "attachmentName", js.undefined)
+    inline def setAttachmentNameUndefined: Self = StObject.set(x, "attachmentName", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

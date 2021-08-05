@@ -60,8 +60,7 @@ trait IExplodeComponent extends StObject {
 }
 object IExplodeComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     breaks_blocks: Boolean,
     causesFire: Boolean,
     destroyAffectedByGriefing: Boolean,
@@ -75,31 +74,22 @@ object IExplodeComponent {
     __obj.asInstanceOf[IExplodeComponent]
   }
   
-  @scala.inline
-  implicit class IExplodeComponentMutableBuilder[Self <: IExplodeComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IExplodeComponent](x: Self) {
     
-    @scala.inline
-    def setBreaks_blocks(value: Boolean): Self = StObject.set(x, "breaks_blocks", value.asInstanceOf[js.Any])
+    inline def setBreaks_blocks(value: Boolean): Self = StObject.set(x, "breaks_blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCausesFire(value: Boolean): Self = StObject.set(x, "causesFire", value.asInstanceOf[js.Any])
+    inline def setCausesFire(value: Boolean): Self = StObject.set(x, "causesFire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyAffectedByGriefing(value: Boolean): Self = StObject.set(x, "destroyAffectedByGriefing", value.asInstanceOf[js.Any])
+    inline def setDestroyAffectedByGriefing(value: Boolean): Self = StObject.set(x, "destroyAffectedByGriefing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFireAffectedByGriefing(value: Boolean): Self = StObject.set(x, "fireAffectedByGriefing", value.asInstanceOf[js.Any])
+    inline def setFireAffectedByGriefing(value: Boolean): Self = StObject.set(x, "fireAffectedByGriefing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuseLength(value: Range): Self = StObject.set(x, "fuseLength", value.asInstanceOf[js.Any])
+    inline def setFuseLength(value: Range): Self = StObject.set(x, "fuseLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFuseLit(value: Boolean): Self = StObject.set(x, "fuseLit", value.asInstanceOf[js.Any])
+    inline def setFuseLit(value: Boolean): Self = StObject.set(x, "fuseLit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResistance(value: Double): Self = StObject.set(x, "maxResistance", value.asInstanceOf[js.Any])
+    inline def setMaxResistance(value: Double): Self = StObject.set(x, "maxResistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+    inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
   }
 }

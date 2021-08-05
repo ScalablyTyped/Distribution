@@ -61,23 +61,18 @@ object displaySource {
   }
   object AuthenticationInfo {
     
-    @scala.inline
-    def apply(): AuthenticationInfo = {
+    inline def apply(): AuthenticationInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthenticationInfo]
     }
     
-    @scala.inline
-    implicit class AuthenticationInfoMutableBuilder[Self <: AuthenticationInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticationInfo](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setMethod(
+      inline def setMethod(
         value: ToStringLiteral[
               PBC, 
               /* keyof chrome-apps.anon.PBC */ typings.chromeApps.chromeAppsStrings.PBC | PIN, 
@@ -88,8 +83,7 @@ object displaySource {
             ]
       ): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
   
@@ -109,8 +103,7 @@ object displaySource {
   }
   object ErrorInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `type`: ToStringLiteral[
           CAPABILITIESNEGOTIATIONERROR, 
           /* keyof chrome-apps.anon.CAPABILITIESNEGOTIATIONERROR */ CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
@@ -125,17 +118,13 @@ object displaySource {
       __obj.asInstanceOf[ErrorInfo]
     }
     
-    @scala.inline
-    implicit class ErrorInfoMutableBuilder[Self <: ErrorInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorInfo](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: ToStringLiteral[
               CAPABILITIESNEGOTIATIONERROR, 
               /* keyof chrome-apps.anon.CAPABILITIESNEGOTIATIONERROR */ CONNECTION_ERROR | CAPABILITIES_NEGOTIATION_ERROR | MEDIA_PIPELINE_ERROR | TIMEOUT_ERROR | UNKNOWN_ERROR, 
@@ -171,8 +160,7 @@ object displaySource {
   }
   object SinkInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: integer,
       name: String,
       state: ToStringLiteral[
@@ -188,17 +176,13 @@ object displaySource {
       __obj.asInstanceOf[SinkInfo]
     }
     
-    @scala.inline
-    implicit class SinkInfoMutableBuilder[Self <: SinkInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SinkInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(
+      inline def setState(
         value: ToStringLiteral[
               CONNECTED, 
               /* keyof chrome-apps.anon.CONNECTED */ typings.chromeApps.chromeAppsStrings.CONNECTED | CONNECTING | DISCONNECTED, 
@@ -223,35 +207,26 @@ object displaySource {
   }
   object StartSessionInfo {
     
-    @scala.inline
-    def apply(sinkId: integer): StartSessionInfo = {
+    inline def apply(sinkId: integer): StartSessionInfo = {
       val __obj = js.Dynamic.literal(sinkId = sinkId.asInstanceOf[js.Any])
       __obj.asInstanceOf[StartSessionInfo]
     }
     
-    @scala.inline
-    implicit class StartSessionInfoMutableBuilder[Self <: StartSessionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: StartSessionInfo](x: Self) {
       
-      @scala.inline
-      def setAudioTrack(value: js.Object): Self = StObject.set(x, "audioTrack", value.asInstanceOf[js.Any])
+      inline def setAudioTrack(value: js.Object): Self = StObject.set(x, "audioTrack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioTrackUndefined: Self = StObject.set(x, "audioTrack", js.undefined)
+      inline def setAudioTrackUndefined: Self = StObject.set(x, "audioTrack", js.undefined)
       
-      @scala.inline
-      def setAuthenticationInfo(value: AuthenticationInfo): Self = StObject.set(x, "authenticationInfo", value.asInstanceOf[js.Any])
+      inline def setAuthenticationInfo(value: AuthenticationInfo): Self = StObject.set(x, "authenticationInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationInfoUndefined: Self = StObject.set(x, "authenticationInfo", js.undefined)
+      inline def setAuthenticationInfoUndefined: Self = StObject.set(x, "authenticationInfo", js.undefined)
       
-      @scala.inline
-      def setSinkId(value: integer): Self = StObject.set(x, "sinkId", value.asInstanceOf[js.Any])
+      inline def setSinkId(value: integer): Self = StObject.set(x, "sinkId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoTrack(value: js.Object): Self = StObject.set(x, "videoTrack", value.asInstanceOf[js.Any])
+      inline def setVideoTrack(value: js.Object): Self = StObject.set(x, "videoTrack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoTrackUndefined: Self = StObject.set(x, "videoTrack", js.undefined)
+      inline def setVideoTrackUndefined: Self = StObject.set(x, "videoTrack", js.undefined)
     }
   }
 }

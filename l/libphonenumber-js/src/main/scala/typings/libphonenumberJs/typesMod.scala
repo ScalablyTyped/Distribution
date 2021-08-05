@@ -560,8 +560,7 @@ object typesMod {
   }
   object Countries {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `001`: js.Array[js.Any],
       AC: js.Array[js.Any],
       AD: js.Array[js.Any],
@@ -814,1484 +813,991 @@ object typesMod {
       __obj.asInstanceOf[Countries]
     }
     
-    @scala.inline
-    implicit class CountriesMutableBuilder[Self <: Countries] (val x: Self) extends AnyVal {
+    extension [Self <: Countries](x: Self) {
       
-      @scala.inline
-      def set001(value: js.Array[js.Any]): Self = StObject.set(x, "001", value.asInstanceOf[js.Any])
+      inline def set001(value: js.Array[js.Any]): Self = StObject.set(x, "001", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set001Varargs(value: js.Any*): Self = StObject.set(x, "001", js.Array(value :_*))
+      inline def set001Varargs(value: js.Any*): Self = StObject.set(x, "001", js.Array(value :_*))
       
-      @scala.inline
-      def setAC(value: js.Array[js.Any]): Self = StObject.set(x, "AC", value.asInstanceOf[js.Any])
+      inline def setAC(value: js.Array[js.Any]): Self = StObject.set(x, "AC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACVarargs(value: js.Any*): Self = StObject.set(x, "AC", js.Array(value :_*))
+      inline def setACVarargs(value: js.Any*): Self = StObject.set(x, "AC", js.Array(value :_*))
       
-      @scala.inline
-      def setAD(value: js.Array[js.Any]): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
+      inline def setAD(value: js.Array[js.Any]): Self = StObject.set(x, "AD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADVarargs(value: js.Any*): Self = StObject.set(x, "AD", js.Array(value :_*))
+      inline def setADVarargs(value: js.Any*): Self = StObject.set(x, "AD", js.Array(value :_*))
       
-      @scala.inline
-      def setAE(value: js.Array[js.Any]): Self = StObject.set(x, "AE", value.asInstanceOf[js.Any])
+      inline def setAE(value: js.Array[js.Any]): Self = StObject.set(x, "AE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAEVarargs(value: js.Any*): Self = StObject.set(x, "AE", js.Array(value :_*))
+      inline def setAEVarargs(value: js.Any*): Self = StObject.set(x, "AE", js.Array(value :_*))
       
-      @scala.inline
-      def setAF(value: js.Array[js.Any]): Self = StObject.set(x, "AF", value.asInstanceOf[js.Any])
+      inline def setAF(value: js.Array[js.Any]): Self = StObject.set(x, "AF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAFVarargs(value: js.Any*): Self = StObject.set(x, "AF", js.Array(value :_*))
+      inline def setAFVarargs(value: js.Any*): Self = StObject.set(x, "AF", js.Array(value :_*))
       
-      @scala.inline
-      def setAG(value: js.Array[js.Any]): Self = StObject.set(x, "AG", value.asInstanceOf[js.Any])
+      inline def setAG(value: js.Array[js.Any]): Self = StObject.set(x, "AG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAGVarargs(value: js.Any*): Self = StObject.set(x, "AG", js.Array(value :_*))
+      inline def setAGVarargs(value: js.Any*): Self = StObject.set(x, "AG", js.Array(value :_*))
       
-      @scala.inline
-      def setAI(value: js.Array[js.Any]): Self = StObject.set(x, "AI", value.asInstanceOf[js.Any])
+      inline def setAI(value: js.Array[js.Any]): Self = StObject.set(x, "AI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAIVarargs(value: js.Any*): Self = StObject.set(x, "AI", js.Array(value :_*))
+      inline def setAIVarargs(value: js.Any*): Self = StObject.set(x, "AI", js.Array(value :_*))
       
-      @scala.inline
-      def setAL(value: js.Array[js.Any]): Self = StObject.set(x, "AL", value.asInstanceOf[js.Any])
+      inline def setAL(value: js.Array[js.Any]): Self = StObject.set(x, "AL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALVarargs(value: js.Any*): Self = StObject.set(x, "AL", js.Array(value :_*))
+      inline def setALVarargs(value: js.Any*): Self = StObject.set(x, "AL", js.Array(value :_*))
       
-      @scala.inline
-      def setAM(value: js.Array[js.Any]): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
+      inline def setAM(value: js.Array[js.Any]): Self = StObject.set(x, "AM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAMVarargs(value: js.Any*): Self = StObject.set(x, "AM", js.Array(value :_*))
+      inline def setAMVarargs(value: js.Any*): Self = StObject.set(x, "AM", js.Array(value :_*))
       
-      @scala.inline
-      def setAO(value: js.Array[js.Any]): Self = StObject.set(x, "AO", value.asInstanceOf[js.Any])
+      inline def setAO(value: js.Array[js.Any]): Self = StObject.set(x, "AO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAOVarargs(value: js.Any*): Self = StObject.set(x, "AO", js.Array(value :_*))
+      inline def setAOVarargs(value: js.Any*): Self = StObject.set(x, "AO", js.Array(value :_*))
       
-      @scala.inline
-      def setAR(value: js.Array[js.Any]): Self = StObject.set(x, "AR", value.asInstanceOf[js.Any])
+      inline def setAR(value: js.Array[js.Any]): Self = StObject.set(x, "AR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setARVarargs(value: js.Any*): Self = StObject.set(x, "AR", js.Array(value :_*))
+      inline def setARVarargs(value: js.Any*): Self = StObject.set(x, "AR", js.Array(value :_*))
       
-      @scala.inline
-      def setAS(value: js.Array[js.Any]): Self = StObject.set(x, "AS", value.asInstanceOf[js.Any])
+      inline def setAS(value: js.Array[js.Any]): Self = StObject.set(x, "AS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setASVarargs(value: js.Any*): Self = StObject.set(x, "AS", js.Array(value :_*))
+      inline def setASVarargs(value: js.Any*): Self = StObject.set(x, "AS", js.Array(value :_*))
       
-      @scala.inline
-      def setAT(value: js.Array[js.Any]): Self = StObject.set(x, "AT", value.asInstanceOf[js.Any])
+      inline def setAT(value: js.Array[js.Any]): Self = StObject.set(x, "AT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setATVarargs(value: js.Any*): Self = StObject.set(x, "AT", js.Array(value :_*))
+      inline def setATVarargs(value: js.Any*): Self = StObject.set(x, "AT", js.Array(value :_*))
       
-      @scala.inline
-      def setAU(value: js.Array[js.Any]): Self = StObject.set(x, "AU", value.asInstanceOf[js.Any])
+      inline def setAU(value: js.Array[js.Any]): Self = StObject.set(x, "AU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAUVarargs(value: js.Any*): Self = StObject.set(x, "AU", js.Array(value :_*))
+      inline def setAUVarargs(value: js.Any*): Self = StObject.set(x, "AU", js.Array(value :_*))
       
-      @scala.inline
-      def setAW(value: js.Array[js.Any]): Self = StObject.set(x, "AW", value.asInstanceOf[js.Any])
+      inline def setAW(value: js.Array[js.Any]): Self = StObject.set(x, "AW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAWVarargs(value: js.Any*): Self = StObject.set(x, "AW", js.Array(value :_*))
+      inline def setAWVarargs(value: js.Any*): Self = StObject.set(x, "AW", js.Array(value :_*))
       
-      @scala.inline
-      def setAX(value: js.Array[js.Any]): Self = StObject.set(x, "AX", value.asInstanceOf[js.Any])
+      inline def setAX(value: js.Array[js.Any]): Self = StObject.set(x, "AX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAXVarargs(value: js.Any*): Self = StObject.set(x, "AX", js.Array(value :_*))
+      inline def setAXVarargs(value: js.Any*): Self = StObject.set(x, "AX", js.Array(value :_*))
       
-      @scala.inline
-      def setAZ(value: js.Array[js.Any]): Self = StObject.set(x, "AZ", value.asInstanceOf[js.Any])
+      inline def setAZ(value: js.Array[js.Any]): Self = StObject.set(x, "AZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAZVarargs(value: js.Any*): Self = StObject.set(x, "AZ", js.Array(value :_*))
+      inline def setAZVarargs(value: js.Any*): Self = StObject.set(x, "AZ", js.Array(value :_*))
       
-      @scala.inline
-      def setBA(value: js.Array[js.Any]): Self = StObject.set(x, "BA", value.asInstanceOf[js.Any])
+      inline def setBA(value: js.Array[js.Any]): Self = StObject.set(x, "BA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBAVarargs(value: js.Any*): Self = StObject.set(x, "BA", js.Array(value :_*))
+      inline def setBAVarargs(value: js.Any*): Self = StObject.set(x, "BA", js.Array(value :_*))
       
-      @scala.inline
-      def setBB(value: js.Array[js.Any]): Self = StObject.set(x, "BB", value.asInstanceOf[js.Any])
+      inline def setBB(value: js.Array[js.Any]): Self = StObject.set(x, "BB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBBVarargs(value: js.Any*): Self = StObject.set(x, "BB", js.Array(value :_*))
+      inline def setBBVarargs(value: js.Any*): Self = StObject.set(x, "BB", js.Array(value :_*))
       
-      @scala.inline
-      def setBD(value: js.Array[js.Any]): Self = StObject.set(x, "BD", value.asInstanceOf[js.Any])
+      inline def setBD(value: js.Array[js.Any]): Self = StObject.set(x, "BD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBDVarargs(value: js.Any*): Self = StObject.set(x, "BD", js.Array(value :_*))
+      inline def setBDVarargs(value: js.Any*): Self = StObject.set(x, "BD", js.Array(value :_*))
       
-      @scala.inline
-      def setBE(value: js.Array[js.Any]): Self = StObject.set(x, "BE", value.asInstanceOf[js.Any])
+      inline def setBE(value: js.Array[js.Any]): Self = StObject.set(x, "BE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBEVarargs(value: js.Any*): Self = StObject.set(x, "BE", js.Array(value :_*))
+      inline def setBEVarargs(value: js.Any*): Self = StObject.set(x, "BE", js.Array(value :_*))
       
-      @scala.inline
-      def setBF(value: js.Array[js.Any]): Self = StObject.set(x, "BF", value.asInstanceOf[js.Any])
+      inline def setBF(value: js.Array[js.Any]): Self = StObject.set(x, "BF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBFVarargs(value: js.Any*): Self = StObject.set(x, "BF", js.Array(value :_*))
+      inline def setBFVarargs(value: js.Any*): Self = StObject.set(x, "BF", js.Array(value :_*))
       
-      @scala.inline
-      def setBG(value: js.Array[js.Any]): Self = StObject.set(x, "BG", value.asInstanceOf[js.Any])
+      inline def setBG(value: js.Array[js.Any]): Self = StObject.set(x, "BG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBGVarargs(value: js.Any*): Self = StObject.set(x, "BG", js.Array(value :_*))
+      inline def setBGVarargs(value: js.Any*): Self = StObject.set(x, "BG", js.Array(value :_*))
       
-      @scala.inline
-      def setBH(value: js.Array[js.Any]): Self = StObject.set(x, "BH", value.asInstanceOf[js.Any])
+      inline def setBH(value: js.Array[js.Any]): Self = StObject.set(x, "BH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBHVarargs(value: js.Any*): Self = StObject.set(x, "BH", js.Array(value :_*))
+      inline def setBHVarargs(value: js.Any*): Self = StObject.set(x, "BH", js.Array(value :_*))
       
-      @scala.inline
-      def setBI(value: js.Array[js.Any]): Self = StObject.set(x, "BI", value.asInstanceOf[js.Any])
+      inline def setBI(value: js.Array[js.Any]): Self = StObject.set(x, "BI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBIVarargs(value: js.Any*): Self = StObject.set(x, "BI", js.Array(value :_*))
+      inline def setBIVarargs(value: js.Any*): Self = StObject.set(x, "BI", js.Array(value :_*))
       
-      @scala.inline
-      def setBJ(value: js.Array[js.Any]): Self = StObject.set(x, "BJ", value.asInstanceOf[js.Any])
+      inline def setBJ(value: js.Array[js.Any]): Self = StObject.set(x, "BJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBJVarargs(value: js.Any*): Self = StObject.set(x, "BJ", js.Array(value :_*))
+      inline def setBJVarargs(value: js.Any*): Self = StObject.set(x, "BJ", js.Array(value :_*))
       
-      @scala.inline
-      def setBL(value: js.Array[js.Any]): Self = StObject.set(x, "BL", value.asInstanceOf[js.Any])
+      inline def setBL(value: js.Array[js.Any]): Self = StObject.set(x, "BL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBLVarargs(value: js.Any*): Self = StObject.set(x, "BL", js.Array(value :_*))
+      inline def setBLVarargs(value: js.Any*): Self = StObject.set(x, "BL", js.Array(value :_*))
       
-      @scala.inline
-      def setBM(value: js.Array[js.Any]): Self = StObject.set(x, "BM", value.asInstanceOf[js.Any])
+      inline def setBM(value: js.Array[js.Any]): Self = StObject.set(x, "BM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBMVarargs(value: js.Any*): Self = StObject.set(x, "BM", js.Array(value :_*))
+      inline def setBMVarargs(value: js.Any*): Self = StObject.set(x, "BM", js.Array(value :_*))
       
-      @scala.inline
-      def setBN(value: js.Array[js.Any]): Self = StObject.set(x, "BN", value.asInstanceOf[js.Any])
+      inline def setBN(value: js.Array[js.Any]): Self = StObject.set(x, "BN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBNVarargs(value: js.Any*): Self = StObject.set(x, "BN", js.Array(value :_*))
+      inline def setBNVarargs(value: js.Any*): Self = StObject.set(x, "BN", js.Array(value :_*))
       
-      @scala.inline
-      def setBO(value: js.Array[js.Any]): Self = StObject.set(x, "BO", value.asInstanceOf[js.Any])
+      inline def setBO(value: js.Array[js.Any]): Self = StObject.set(x, "BO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBOVarargs(value: js.Any*): Self = StObject.set(x, "BO", js.Array(value :_*))
+      inline def setBOVarargs(value: js.Any*): Self = StObject.set(x, "BO", js.Array(value :_*))
       
-      @scala.inline
-      def setBQ(value: js.Array[js.Any]): Self = StObject.set(x, "BQ", value.asInstanceOf[js.Any])
+      inline def setBQ(value: js.Array[js.Any]): Self = StObject.set(x, "BQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBQVarargs(value: js.Any*): Self = StObject.set(x, "BQ", js.Array(value :_*))
+      inline def setBQVarargs(value: js.Any*): Self = StObject.set(x, "BQ", js.Array(value :_*))
       
-      @scala.inline
-      def setBR(value: js.Array[js.Any]): Self = StObject.set(x, "BR", value.asInstanceOf[js.Any])
+      inline def setBR(value: js.Array[js.Any]): Self = StObject.set(x, "BR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBRVarargs(value: js.Any*): Self = StObject.set(x, "BR", js.Array(value :_*))
+      inline def setBRVarargs(value: js.Any*): Self = StObject.set(x, "BR", js.Array(value :_*))
       
-      @scala.inline
-      def setBS(value: js.Array[js.Any]): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
+      inline def setBS(value: js.Array[js.Any]): Self = StObject.set(x, "BS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBSVarargs(value: js.Any*): Self = StObject.set(x, "BS", js.Array(value :_*))
+      inline def setBSVarargs(value: js.Any*): Self = StObject.set(x, "BS", js.Array(value :_*))
       
-      @scala.inline
-      def setBT(value: js.Array[js.Any]): Self = StObject.set(x, "BT", value.asInstanceOf[js.Any])
+      inline def setBT(value: js.Array[js.Any]): Self = StObject.set(x, "BT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBTVarargs(value: js.Any*): Self = StObject.set(x, "BT", js.Array(value :_*))
+      inline def setBTVarargs(value: js.Any*): Self = StObject.set(x, "BT", js.Array(value :_*))
       
-      @scala.inline
-      def setBW(value: js.Array[js.Any]): Self = StObject.set(x, "BW", value.asInstanceOf[js.Any])
+      inline def setBW(value: js.Array[js.Any]): Self = StObject.set(x, "BW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBWVarargs(value: js.Any*): Self = StObject.set(x, "BW", js.Array(value :_*))
+      inline def setBWVarargs(value: js.Any*): Self = StObject.set(x, "BW", js.Array(value :_*))
       
-      @scala.inline
-      def setBY(value: js.Array[js.Any]): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
+      inline def setBY(value: js.Array[js.Any]): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBYVarargs(value: js.Any*): Self = StObject.set(x, "BY", js.Array(value :_*))
+      inline def setBYVarargs(value: js.Any*): Self = StObject.set(x, "BY", js.Array(value :_*))
       
-      @scala.inline
-      def setBZ(value: js.Array[js.Any]): Self = StObject.set(x, "BZ", value.asInstanceOf[js.Any])
+      inline def setBZ(value: js.Array[js.Any]): Self = StObject.set(x, "BZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBZVarargs(value: js.Any*): Self = StObject.set(x, "BZ", js.Array(value :_*))
+      inline def setBZVarargs(value: js.Any*): Self = StObject.set(x, "BZ", js.Array(value :_*))
       
-      @scala.inline
-      def setCA(value: js.Array[js.Any]): Self = StObject.set(x, "CA", value.asInstanceOf[js.Any])
+      inline def setCA(value: js.Array[js.Any]): Self = StObject.set(x, "CA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCAVarargs(value: js.Any*): Self = StObject.set(x, "CA", js.Array(value :_*))
+      inline def setCAVarargs(value: js.Any*): Self = StObject.set(x, "CA", js.Array(value :_*))
       
-      @scala.inline
-      def setCC(value: js.Array[js.Any]): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
+      inline def setCC(value: js.Array[js.Any]): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCCVarargs(value: js.Any*): Self = StObject.set(x, "CC", js.Array(value :_*))
+      inline def setCCVarargs(value: js.Any*): Self = StObject.set(x, "CC", js.Array(value :_*))
       
-      @scala.inline
-      def setCD(value: js.Array[js.Any]): Self = StObject.set(x, "CD", value.asInstanceOf[js.Any])
+      inline def setCD(value: js.Array[js.Any]): Self = StObject.set(x, "CD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCDVarargs(value: js.Any*): Self = StObject.set(x, "CD", js.Array(value :_*))
+      inline def setCDVarargs(value: js.Any*): Self = StObject.set(x, "CD", js.Array(value :_*))
       
-      @scala.inline
-      def setCF(value: js.Array[js.Any]): Self = StObject.set(x, "CF", value.asInstanceOf[js.Any])
+      inline def setCF(value: js.Array[js.Any]): Self = StObject.set(x, "CF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCFVarargs(value: js.Any*): Self = StObject.set(x, "CF", js.Array(value :_*))
+      inline def setCFVarargs(value: js.Any*): Self = StObject.set(x, "CF", js.Array(value :_*))
       
-      @scala.inline
-      def setCG(value: js.Array[js.Any]): Self = StObject.set(x, "CG", value.asInstanceOf[js.Any])
+      inline def setCG(value: js.Array[js.Any]): Self = StObject.set(x, "CG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCGVarargs(value: js.Any*): Self = StObject.set(x, "CG", js.Array(value :_*))
+      inline def setCGVarargs(value: js.Any*): Self = StObject.set(x, "CG", js.Array(value :_*))
       
-      @scala.inline
-      def setCH(value: js.Array[js.Any]): Self = StObject.set(x, "CH", value.asInstanceOf[js.Any])
+      inline def setCH(value: js.Array[js.Any]): Self = StObject.set(x, "CH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHVarargs(value: js.Any*): Self = StObject.set(x, "CH", js.Array(value :_*))
+      inline def setCHVarargs(value: js.Any*): Self = StObject.set(x, "CH", js.Array(value :_*))
       
-      @scala.inline
-      def setCI(value: js.Array[js.Any]): Self = StObject.set(x, "CI", value.asInstanceOf[js.Any])
+      inline def setCI(value: js.Array[js.Any]): Self = StObject.set(x, "CI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCIVarargs(value: js.Any*): Self = StObject.set(x, "CI", js.Array(value :_*))
+      inline def setCIVarargs(value: js.Any*): Self = StObject.set(x, "CI", js.Array(value :_*))
       
-      @scala.inline
-      def setCK(value: js.Array[js.Any]): Self = StObject.set(x, "CK", value.asInstanceOf[js.Any])
+      inline def setCK(value: js.Array[js.Any]): Self = StObject.set(x, "CK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCKVarargs(value: js.Any*): Self = StObject.set(x, "CK", js.Array(value :_*))
+      inline def setCKVarargs(value: js.Any*): Self = StObject.set(x, "CK", js.Array(value :_*))
       
-      @scala.inline
-      def setCL(value: js.Array[js.Any]): Self = StObject.set(x, "CL", value.asInstanceOf[js.Any])
+      inline def setCL(value: js.Array[js.Any]): Self = StObject.set(x, "CL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLVarargs(value: js.Any*): Self = StObject.set(x, "CL", js.Array(value :_*))
+      inline def setCLVarargs(value: js.Any*): Self = StObject.set(x, "CL", js.Array(value :_*))
       
-      @scala.inline
-      def setCM(value: js.Array[js.Any]): Self = StObject.set(x, "CM", value.asInstanceOf[js.Any])
+      inline def setCM(value: js.Array[js.Any]): Self = StObject.set(x, "CM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCMVarargs(value: js.Any*): Self = StObject.set(x, "CM", js.Array(value :_*))
+      inline def setCMVarargs(value: js.Any*): Self = StObject.set(x, "CM", js.Array(value :_*))
       
-      @scala.inline
-      def setCN(value: js.Array[js.Any]): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
+      inline def setCN(value: js.Array[js.Any]): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCNVarargs(value: js.Any*): Self = StObject.set(x, "CN", js.Array(value :_*))
+      inline def setCNVarargs(value: js.Any*): Self = StObject.set(x, "CN", js.Array(value :_*))
       
-      @scala.inline
-      def setCO(value: js.Array[js.Any]): Self = StObject.set(x, "CO", value.asInstanceOf[js.Any])
+      inline def setCO(value: js.Array[js.Any]): Self = StObject.set(x, "CO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOVarargs(value: js.Any*): Self = StObject.set(x, "CO", js.Array(value :_*))
+      inline def setCOVarargs(value: js.Any*): Self = StObject.set(x, "CO", js.Array(value :_*))
       
-      @scala.inline
-      def setCR(value: js.Array[js.Any]): Self = StObject.set(x, "CR", value.asInstanceOf[js.Any])
+      inline def setCR(value: js.Array[js.Any]): Self = StObject.set(x, "CR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCRVarargs(value: js.Any*): Self = StObject.set(x, "CR", js.Array(value :_*))
+      inline def setCRVarargs(value: js.Any*): Self = StObject.set(x, "CR", js.Array(value :_*))
       
-      @scala.inline
-      def setCU(value: js.Array[js.Any]): Self = StObject.set(x, "CU", value.asInstanceOf[js.Any])
+      inline def setCU(value: js.Array[js.Any]): Self = StObject.set(x, "CU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCUVarargs(value: js.Any*): Self = StObject.set(x, "CU", js.Array(value :_*))
+      inline def setCUVarargs(value: js.Any*): Self = StObject.set(x, "CU", js.Array(value :_*))
       
-      @scala.inline
-      def setCV(value: js.Array[js.Any]): Self = StObject.set(x, "CV", value.asInstanceOf[js.Any])
+      inline def setCV(value: js.Array[js.Any]): Self = StObject.set(x, "CV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCVVarargs(value: js.Any*): Self = StObject.set(x, "CV", js.Array(value :_*))
+      inline def setCVVarargs(value: js.Any*): Self = StObject.set(x, "CV", js.Array(value :_*))
       
-      @scala.inline
-      def setCW(value: js.Array[js.Any]): Self = StObject.set(x, "CW", value.asInstanceOf[js.Any])
+      inline def setCW(value: js.Array[js.Any]): Self = StObject.set(x, "CW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCWVarargs(value: js.Any*): Self = StObject.set(x, "CW", js.Array(value :_*))
+      inline def setCWVarargs(value: js.Any*): Self = StObject.set(x, "CW", js.Array(value :_*))
       
-      @scala.inline
-      def setCX(value: js.Array[js.Any]): Self = StObject.set(x, "CX", value.asInstanceOf[js.Any])
+      inline def setCX(value: js.Array[js.Any]): Self = StObject.set(x, "CX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCXVarargs(value: js.Any*): Self = StObject.set(x, "CX", js.Array(value :_*))
+      inline def setCXVarargs(value: js.Any*): Self = StObject.set(x, "CX", js.Array(value :_*))
       
-      @scala.inline
-      def setCY(value: js.Array[js.Any]): Self = StObject.set(x, "CY", value.asInstanceOf[js.Any])
+      inline def setCY(value: js.Array[js.Any]): Self = StObject.set(x, "CY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCYVarargs(value: js.Any*): Self = StObject.set(x, "CY", js.Array(value :_*))
+      inline def setCYVarargs(value: js.Any*): Self = StObject.set(x, "CY", js.Array(value :_*))
       
-      @scala.inline
-      def setCZ(value: js.Array[js.Any]): Self = StObject.set(x, "CZ", value.asInstanceOf[js.Any])
+      inline def setCZ(value: js.Array[js.Any]): Self = StObject.set(x, "CZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCZVarargs(value: js.Any*): Self = StObject.set(x, "CZ", js.Array(value :_*))
+      inline def setCZVarargs(value: js.Any*): Self = StObject.set(x, "CZ", js.Array(value :_*))
       
-      @scala.inline
-      def setDE(value: js.Array[js.Any]): Self = StObject.set(x, "DE", value.asInstanceOf[js.Any])
+      inline def setDE(value: js.Array[js.Any]): Self = StObject.set(x, "DE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEVarargs(value: js.Any*): Self = StObject.set(x, "DE", js.Array(value :_*))
+      inline def setDEVarargs(value: js.Any*): Self = StObject.set(x, "DE", js.Array(value :_*))
       
-      @scala.inline
-      def setDJ(value: js.Array[js.Any]): Self = StObject.set(x, "DJ", value.asInstanceOf[js.Any])
+      inline def setDJ(value: js.Array[js.Any]): Self = StObject.set(x, "DJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDJVarargs(value: js.Any*): Self = StObject.set(x, "DJ", js.Array(value :_*))
+      inline def setDJVarargs(value: js.Any*): Self = StObject.set(x, "DJ", js.Array(value :_*))
       
-      @scala.inline
-      def setDK(value: js.Array[js.Any]): Self = StObject.set(x, "DK", value.asInstanceOf[js.Any])
+      inline def setDK(value: js.Array[js.Any]): Self = StObject.set(x, "DK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDKVarargs(value: js.Any*): Self = StObject.set(x, "DK", js.Array(value :_*))
+      inline def setDKVarargs(value: js.Any*): Self = StObject.set(x, "DK", js.Array(value :_*))
       
-      @scala.inline
-      def setDM(value: js.Array[js.Any]): Self = StObject.set(x, "DM", value.asInstanceOf[js.Any])
+      inline def setDM(value: js.Array[js.Any]): Self = StObject.set(x, "DM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDMVarargs(value: js.Any*): Self = StObject.set(x, "DM", js.Array(value :_*))
+      inline def setDMVarargs(value: js.Any*): Self = StObject.set(x, "DM", js.Array(value :_*))
       
-      @scala.inline
-      def setDO(value: js.Array[js.Any]): Self = StObject.set(x, "DO", value.asInstanceOf[js.Any])
+      inline def setDO(value: js.Array[js.Any]): Self = StObject.set(x, "DO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDOVarargs(value: js.Any*): Self = StObject.set(x, "DO", js.Array(value :_*))
+      inline def setDOVarargs(value: js.Any*): Self = StObject.set(x, "DO", js.Array(value :_*))
       
-      @scala.inline
-      def setDZ(value: js.Array[js.Any]): Self = StObject.set(x, "DZ", value.asInstanceOf[js.Any])
+      inline def setDZ(value: js.Array[js.Any]): Self = StObject.set(x, "DZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDZVarargs(value: js.Any*): Self = StObject.set(x, "DZ", js.Array(value :_*))
+      inline def setDZVarargs(value: js.Any*): Self = StObject.set(x, "DZ", js.Array(value :_*))
       
-      @scala.inline
-      def setEC(value: js.Array[js.Any]): Self = StObject.set(x, "EC", value.asInstanceOf[js.Any])
+      inline def setEC(value: js.Array[js.Any]): Self = StObject.set(x, "EC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setECVarargs(value: js.Any*): Self = StObject.set(x, "EC", js.Array(value :_*))
+      inline def setECVarargs(value: js.Any*): Self = StObject.set(x, "EC", js.Array(value :_*))
       
-      @scala.inline
-      def setEE(value: js.Array[js.Any]): Self = StObject.set(x, "EE", value.asInstanceOf[js.Any])
+      inline def setEE(value: js.Array[js.Any]): Self = StObject.set(x, "EE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEEVarargs(value: js.Any*): Self = StObject.set(x, "EE", js.Array(value :_*))
+      inline def setEEVarargs(value: js.Any*): Self = StObject.set(x, "EE", js.Array(value :_*))
       
-      @scala.inline
-      def setEG(value: js.Array[js.Any]): Self = StObject.set(x, "EG", value.asInstanceOf[js.Any])
+      inline def setEG(value: js.Array[js.Any]): Self = StObject.set(x, "EG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEGVarargs(value: js.Any*): Self = StObject.set(x, "EG", js.Array(value :_*))
+      inline def setEGVarargs(value: js.Any*): Self = StObject.set(x, "EG", js.Array(value :_*))
       
-      @scala.inline
-      def setEH(value: js.Array[js.Any]): Self = StObject.set(x, "EH", value.asInstanceOf[js.Any])
+      inline def setEH(value: js.Array[js.Any]): Self = StObject.set(x, "EH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEHVarargs(value: js.Any*): Self = StObject.set(x, "EH", js.Array(value :_*))
+      inline def setEHVarargs(value: js.Any*): Self = StObject.set(x, "EH", js.Array(value :_*))
       
-      @scala.inline
-      def setER(value: js.Array[js.Any]): Self = StObject.set(x, "ER", value.asInstanceOf[js.Any])
+      inline def setER(value: js.Array[js.Any]): Self = StObject.set(x, "ER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERVarargs(value: js.Any*): Self = StObject.set(x, "ER", js.Array(value :_*))
+      inline def setERVarargs(value: js.Any*): Self = StObject.set(x, "ER", js.Array(value :_*))
       
-      @scala.inline
-      def setES(value: js.Array[js.Any]): Self = StObject.set(x, "ES", value.asInstanceOf[js.Any])
+      inline def setES(value: js.Array[js.Any]): Self = StObject.set(x, "ES", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setESVarargs(value: js.Any*): Self = StObject.set(x, "ES", js.Array(value :_*))
+      inline def setESVarargs(value: js.Any*): Self = StObject.set(x, "ES", js.Array(value :_*))
       
-      @scala.inline
-      def setET(value: js.Array[js.Any]): Self = StObject.set(x, "ET", value.asInstanceOf[js.Any])
+      inline def setET(value: js.Array[js.Any]): Self = StObject.set(x, "ET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setETVarargs(value: js.Any*): Self = StObject.set(x, "ET", js.Array(value :_*))
+      inline def setETVarargs(value: js.Any*): Self = StObject.set(x, "ET", js.Array(value :_*))
       
-      @scala.inline
-      def setFI(value: js.Array[js.Any]): Self = StObject.set(x, "FI", value.asInstanceOf[js.Any])
+      inline def setFI(value: js.Array[js.Any]): Self = StObject.set(x, "FI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIVarargs(value: js.Any*): Self = StObject.set(x, "FI", js.Array(value :_*))
+      inline def setFIVarargs(value: js.Any*): Self = StObject.set(x, "FI", js.Array(value :_*))
       
-      @scala.inline
-      def setFJ(value: js.Array[js.Any]): Self = StObject.set(x, "FJ", value.asInstanceOf[js.Any])
+      inline def setFJ(value: js.Array[js.Any]): Self = StObject.set(x, "FJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFJVarargs(value: js.Any*): Self = StObject.set(x, "FJ", js.Array(value :_*))
+      inline def setFJVarargs(value: js.Any*): Self = StObject.set(x, "FJ", js.Array(value :_*))
       
-      @scala.inline
-      def setFK(value: js.Array[js.Any]): Self = StObject.set(x, "FK", value.asInstanceOf[js.Any])
+      inline def setFK(value: js.Array[js.Any]): Self = StObject.set(x, "FK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFKVarargs(value: js.Any*): Self = StObject.set(x, "FK", js.Array(value :_*))
+      inline def setFKVarargs(value: js.Any*): Self = StObject.set(x, "FK", js.Array(value :_*))
       
-      @scala.inline
-      def setFM(value: js.Array[js.Any]): Self = StObject.set(x, "FM", value.asInstanceOf[js.Any])
+      inline def setFM(value: js.Array[js.Any]): Self = StObject.set(x, "FM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFMVarargs(value: js.Any*): Self = StObject.set(x, "FM", js.Array(value :_*))
+      inline def setFMVarargs(value: js.Any*): Self = StObject.set(x, "FM", js.Array(value :_*))
       
-      @scala.inline
-      def setFO(value: js.Array[js.Any]): Self = StObject.set(x, "FO", value.asInstanceOf[js.Any])
+      inline def setFO(value: js.Array[js.Any]): Self = StObject.set(x, "FO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFOVarargs(value: js.Any*): Self = StObject.set(x, "FO", js.Array(value :_*))
+      inline def setFOVarargs(value: js.Any*): Self = StObject.set(x, "FO", js.Array(value :_*))
       
-      @scala.inline
-      def setFR(value: js.Array[js.Any]): Self = StObject.set(x, "FR", value.asInstanceOf[js.Any])
+      inline def setFR(value: js.Array[js.Any]): Self = StObject.set(x, "FR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFRVarargs(value: js.Any*): Self = StObject.set(x, "FR", js.Array(value :_*))
+      inline def setFRVarargs(value: js.Any*): Self = StObject.set(x, "FR", js.Array(value :_*))
       
-      @scala.inline
-      def setGA(value: js.Array[js.Any]): Self = StObject.set(x, "GA", value.asInstanceOf[js.Any])
+      inline def setGA(value: js.Array[js.Any]): Self = StObject.set(x, "GA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGAVarargs(value: js.Any*): Self = StObject.set(x, "GA", js.Array(value :_*))
+      inline def setGAVarargs(value: js.Any*): Self = StObject.set(x, "GA", js.Array(value :_*))
       
-      @scala.inline
-      def setGB(value: js.Array[js.Any]): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
+      inline def setGB(value: js.Array[js.Any]): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGBVarargs(value: js.Any*): Self = StObject.set(x, "GB", js.Array(value :_*))
+      inline def setGBVarargs(value: js.Any*): Self = StObject.set(x, "GB", js.Array(value :_*))
       
-      @scala.inline
-      def setGD(value: js.Array[js.Any]): Self = StObject.set(x, "GD", value.asInstanceOf[js.Any])
+      inline def setGD(value: js.Array[js.Any]): Self = StObject.set(x, "GD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGDVarargs(value: js.Any*): Self = StObject.set(x, "GD", js.Array(value :_*))
+      inline def setGDVarargs(value: js.Any*): Self = StObject.set(x, "GD", js.Array(value :_*))
       
-      @scala.inline
-      def setGE(value: js.Array[js.Any]): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
+      inline def setGE(value: js.Array[js.Any]): Self = StObject.set(x, "GE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGEVarargs(value: js.Any*): Self = StObject.set(x, "GE", js.Array(value :_*))
+      inline def setGEVarargs(value: js.Any*): Self = StObject.set(x, "GE", js.Array(value :_*))
       
-      @scala.inline
-      def setGF(value: js.Array[js.Any]): Self = StObject.set(x, "GF", value.asInstanceOf[js.Any])
+      inline def setGF(value: js.Array[js.Any]): Self = StObject.set(x, "GF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGFVarargs(value: js.Any*): Self = StObject.set(x, "GF", js.Array(value :_*))
+      inline def setGFVarargs(value: js.Any*): Self = StObject.set(x, "GF", js.Array(value :_*))
       
-      @scala.inline
-      def setGG(value: js.Array[js.Any]): Self = StObject.set(x, "GG", value.asInstanceOf[js.Any])
+      inline def setGG(value: js.Array[js.Any]): Self = StObject.set(x, "GG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGGVarargs(value: js.Any*): Self = StObject.set(x, "GG", js.Array(value :_*))
+      inline def setGGVarargs(value: js.Any*): Self = StObject.set(x, "GG", js.Array(value :_*))
       
-      @scala.inline
-      def setGH(value: js.Array[js.Any]): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
+      inline def setGH(value: js.Array[js.Any]): Self = StObject.set(x, "GH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGHVarargs(value: js.Any*): Self = StObject.set(x, "GH", js.Array(value :_*))
+      inline def setGHVarargs(value: js.Any*): Self = StObject.set(x, "GH", js.Array(value :_*))
       
-      @scala.inline
-      def setGI(value: js.Array[js.Any]): Self = StObject.set(x, "GI", value.asInstanceOf[js.Any])
+      inline def setGI(value: js.Array[js.Any]): Self = StObject.set(x, "GI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGIVarargs(value: js.Any*): Self = StObject.set(x, "GI", js.Array(value :_*))
+      inline def setGIVarargs(value: js.Any*): Self = StObject.set(x, "GI", js.Array(value :_*))
       
-      @scala.inline
-      def setGL(value: js.Array[js.Any]): Self = StObject.set(x, "GL", value.asInstanceOf[js.Any])
+      inline def setGL(value: js.Array[js.Any]): Self = StObject.set(x, "GL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGLVarargs(value: js.Any*): Self = StObject.set(x, "GL", js.Array(value :_*))
+      inline def setGLVarargs(value: js.Any*): Self = StObject.set(x, "GL", js.Array(value :_*))
       
-      @scala.inline
-      def setGM(value: js.Array[js.Any]): Self = StObject.set(x, "GM", value.asInstanceOf[js.Any])
+      inline def setGM(value: js.Array[js.Any]): Self = StObject.set(x, "GM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGMVarargs(value: js.Any*): Self = StObject.set(x, "GM", js.Array(value :_*))
+      inline def setGMVarargs(value: js.Any*): Self = StObject.set(x, "GM", js.Array(value :_*))
       
-      @scala.inline
-      def setGN(value: js.Array[js.Any]): Self = StObject.set(x, "GN", value.asInstanceOf[js.Any])
+      inline def setGN(value: js.Array[js.Any]): Self = StObject.set(x, "GN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGNVarargs(value: js.Any*): Self = StObject.set(x, "GN", js.Array(value :_*))
+      inline def setGNVarargs(value: js.Any*): Self = StObject.set(x, "GN", js.Array(value :_*))
       
-      @scala.inline
-      def setGP(value: js.Array[js.Any]): Self = StObject.set(x, "GP", value.asInstanceOf[js.Any])
+      inline def setGP(value: js.Array[js.Any]): Self = StObject.set(x, "GP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGPVarargs(value: js.Any*): Self = StObject.set(x, "GP", js.Array(value :_*))
+      inline def setGPVarargs(value: js.Any*): Self = StObject.set(x, "GP", js.Array(value :_*))
       
-      @scala.inline
-      def setGQ(value: js.Array[js.Any]): Self = StObject.set(x, "GQ", value.asInstanceOf[js.Any])
+      inline def setGQ(value: js.Array[js.Any]): Self = StObject.set(x, "GQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGQVarargs(value: js.Any*): Self = StObject.set(x, "GQ", js.Array(value :_*))
+      inline def setGQVarargs(value: js.Any*): Self = StObject.set(x, "GQ", js.Array(value :_*))
       
-      @scala.inline
-      def setGR(value: js.Array[js.Any]): Self = StObject.set(x, "GR", value.asInstanceOf[js.Any])
+      inline def setGR(value: js.Array[js.Any]): Self = StObject.set(x, "GR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGRVarargs(value: js.Any*): Self = StObject.set(x, "GR", js.Array(value :_*))
+      inline def setGRVarargs(value: js.Any*): Self = StObject.set(x, "GR", js.Array(value :_*))
       
-      @scala.inline
-      def setGT(value: js.Array[js.Any]): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
+      inline def setGT(value: js.Array[js.Any]): Self = StObject.set(x, "GT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGTVarargs(value: js.Any*): Self = StObject.set(x, "GT", js.Array(value :_*))
+      inline def setGTVarargs(value: js.Any*): Self = StObject.set(x, "GT", js.Array(value :_*))
       
-      @scala.inline
-      def setGU(value: js.Array[js.Any]): Self = StObject.set(x, "GU", value.asInstanceOf[js.Any])
+      inline def setGU(value: js.Array[js.Any]): Self = StObject.set(x, "GU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGUVarargs(value: js.Any*): Self = StObject.set(x, "GU", js.Array(value :_*))
+      inline def setGUVarargs(value: js.Any*): Self = StObject.set(x, "GU", js.Array(value :_*))
       
-      @scala.inline
-      def setGW(value: js.Array[js.Any]): Self = StObject.set(x, "GW", value.asInstanceOf[js.Any])
+      inline def setGW(value: js.Array[js.Any]): Self = StObject.set(x, "GW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGWVarargs(value: js.Any*): Self = StObject.set(x, "GW", js.Array(value :_*))
+      inline def setGWVarargs(value: js.Any*): Self = StObject.set(x, "GW", js.Array(value :_*))
       
-      @scala.inline
-      def setGY(value: js.Array[js.Any]): Self = StObject.set(x, "GY", value.asInstanceOf[js.Any])
+      inline def setGY(value: js.Array[js.Any]): Self = StObject.set(x, "GY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGYVarargs(value: js.Any*): Self = StObject.set(x, "GY", js.Array(value :_*))
+      inline def setGYVarargs(value: js.Any*): Self = StObject.set(x, "GY", js.Array(value :_*))
       
-      @scala.inline
-      def setHK(value: js.Array[js.Any]): Self = StObject.set(x, "HK", value.asInstanceOf[js.Any])
+      inline def setHK(value: js.Array[js.Any]): Self = StObject.set(x, "HK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHKVarargs(value: js.Any*): Self = StObject.set(x, "HK", js.Array(value :_*))
+      inline def setHKVarargs(value: js.Any*): Self = StObject.set(x, "HK", js.Array(value :_*))
       
-      @scala.inline
-      def setHN(value: js.Array[js.Any]): Self = StObject.set(x, "HN", value.asInstanceOf[js.Any])
+      inline def setHN(value: js.Array[js.Any]): Self = StObject.set(x, "HN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHNVarargs(value: js.Any*): Self = StObject.set(x, "HN", js.Array(value :_*))
+      inline def setHNVarargs(value: js.Any*): Self = StObject.set(x, "HN", js.Array(value :_*))
       
-      @scala.inline
-      def setHR(value: js.Array[js.Any]): Self = StObject.set(x, "HR", value.asInstanceOf[js.Any])
+      inline def setHR(value: js.Array[js.Any]): Self = StObject.set(x, "HR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHRVarargs(value: js.Any*): Self = StObject.set(x, "HR", js.Array(value :_*))
+      inline def setHRVarargs(value: js.Any*): Self = StObject.set(x, "HR", js.Array(value :_*))
       
-      @scala.inline
-      def setHT(value: js.Array[js.Any]): Self = StObject.set(x, "HT", value.asInstanceOf[js.Any])
+      inline def setHT(value: js.Array[js.Any]): Self = StObject.set(x, "HT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHTVarargs(value: js.Any*): Self = StObject.set(x, "HT", js.Array(value :_*))
+      inline def setHTVarargs(value: js.Any*): Self = StObject.set(x, "HT", js.Array(value :_*))
       
-      @scala.inline
-      def setHU(value: js.Array[js.Any]): Self = StObject.set(x, "HU", value.asInstanceOf[js.Any])
+      inline def setHU(value: js.Array[js.Any]): Self = StObject.set(x, "HU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHUVarargs(value: js.Any*): Self = StObject.set(x, "HU", js.Array(value :_*))
+      inline def setHUVarargs(value: js.Any*): Self = StObject.set(x, "HU", js.Array(value :_*))
       
-      @scala.inline
-      def setID(value: js.Array[js.Any]): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: js.Array[js.Any]): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIDVarargs(value: js.Any*): Self = StObject.set(x, "ID", js.Array(value :_*))
+      inline def setIDVarargs(value: js.Any*): Self = StObject.set(x, "ID", js.Array(value :_*))
       
-      @scala.inline
-      def setIE(value: js.Array[js.Any]): Self = StObject.set(x, "IE", value.asInstanceOf[js.Any])
+      inline def setIE(value: js.Array[js.Any]): Self = StObject.set(x, "IE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIEVarargs(value: js.Any*): Self = StObject.set(x, "IE", js.Array(value :_*))
+      inline def setIEVarargs(value: js.Any*): Self = StObject.set(x, "IE", js.Array(value :_*))
       
-      @scala.inline
-      def setIL(value: js.Array[js.Any]): Self = StObject.set(x, "IL", value.asInstanceOf[js.Any])
+      inline def setIL(value: js.Array[js.Any]): Self = StObject.set(x, "IL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setILVarargs(value: js.Any*): Self = StObject.set(x, "IL", js.Array(value :_*))
+      inline def setILVarargs(value: js.Any*): Self = StObject.set(x, "IL", js.Array(value :_*))
       
-      @scala.inline
-      def setIM(value: js.Array[js.Any]): Self = StObject.set(x, "IM", value.asInstanceOf[js.Any])
+      inline def setIM(value: js.Array[js.Any]): Self = StObject.set(x, "IM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIMVarargs(value: js.Any*): Self = StObject.set(x, "IM", js.Array(value :_*))
+      inline def setIMVarargs(value: js.Any*): Self = StObject.set(x, "IM", js.Array(value :_*))
       
-      @scala.inline
-      def setIN(value: js.Array[js.Any]): Self = StObject.set(x, "IN", value.asInstanceOf[js.Any])
+      inline def setIN(value: js.Array[js.Any]): Self = StObject.set(x, "IN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINVarargs(value: js.Any*): Self = StObject.set(x, "IN", js.Array(value :_*))
+      inline def setINVarargs(value: js.Any*): Self = StObject.set(x, "IN", js.Array(value :_*))
       
-      @scala.inline
-      def setIO(value: js.Array[js.Any]): Self = StObject.set(x, "IO", value.asInstanceOf[js.Any])
+      inline def setIO(value: js.Array[js.Any]): Self = StObject.set(x, "IO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIOVarargs(value: js.Any*): Self = StObject.set(x, "IO", js.Array(value :_*))
+      inline def setIOVarargs(value: js.Any*): Self = StObject.set(x, "IO", js.Array(value :_*))
       
-      @scala.inline
-      def setIQ(value: js.Array[js.Any]): Self = StObject.set(x, "IQ", value.asInstanceOf[js.Any])
+      inline def setIQ(value: js.Array[js.Any]): Self = StObject.set(x, "IQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIQVarargs(value: js.Any*): Self = StObject.set(x, "IQ", js.Array(value :_*))
+      inline def setIQVarargs(value: js.Any*): Self = StObject.set(x, "IQ", js.Array(value :_*))
       
-      @scala.inline
-      def setIR(value: js.Array[js.Any]): Self = StObject.set(x, "IR", value.asInstanceOf[js.Any])
+      inline def setIR(value: js.Array[js.Any]): Self = StObject.set(x, "IR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIRVarargs(value: js.Any*): Self = StObject.set(x, "IR", js.Array(value :_*))
+      inline def setIRVarargs(value: js.Any*): Self = StObject.set(x, "IR", js.Array(value :_*))
       
-      @scala.inline
-      def setIS(value: js.Array[js.Any]): Self = StObject.set(x, "IS", value.asInstanceOf[js.Any])
+      inline def setIS(value: js.Array[js.Any]): Self = StObject.set(x, "IS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setISVarargs(value: js.Any*): Self = StObject.set(x, "IS", js.Array(value :_*))
+      inline def setISVarargs(value: js.Any*): Self = StObject.set(x, "IS", js.Array(value :_*))
       
-      @scala.inline
-      def setIT(value: js.Array[js.Any]): Self = StObject.set(x, "IT", value.asInstanceOf[js.Any])
+      inline def setIT(value: js.Array[js.Any]): Self = StObject.set(x, "IT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setITVarargs(value: js.Any*): Self = StObject.set(x, "IT", js.Array(value :_*))
+      inline def setITVarargs(value: js.Any*): Self = StObject.set(x, "IT", js.Array(value :_*))
       
-      @scala.inline
-      def setJE(value: js.Array[js.Any]): Self = StObject.set(x, "JE", value.asInstanceOf[js.Any])
+      inline def setJE(value: js.Array[js.Any]): Self = StObject.set(x, "JE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJEVarargs(value: js.Any*): Self = StObject.set(x, "JE", js.Array(value :_*))
+      inline def setJEVarargs(value: js.Any*): Self = StObject.set(x, "JE", js.Array(value :_*))
       
-      @scala.inline
-      def setJM(value: js.Array[js.Any]): Self = StObject.set(x, "JM", value.asInstanceOf[js.Any])
+      inline def setJM(value: js.Array[js.Any]): Self = StObject.set(x, "JM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJMVarargs(value: js.Any*): Self = StObject.set(x, "JM", js.Array(value :_*))
+      inline def setJMVarargs(value: js.Any*): Self = StObject.set(x, "JM", js.Array(value :_*))
       
-      @scala.inline
-      def setJO(value: js.Array[js.Any]): Self = StObject.set(x, "JO", value.asInstanceOf[js.Any])
+      inline def setJO(value: js.Array[js.Any]): Self = StObject.set(x, "JO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJOVarargs(value: js.Any*): Self = StObject.set(x, "JO", js.Array(value :_*))
+      inline def setJOVarargs(value: js.Any*): Self = StObject.set(x, "JO", js.Array(value :_*))
       
-      @scala.inline
-      def setJP(value: js.Array[js.Any]): Self = StObject.set(x, "JP", value.asInstanceOf[js.Any])
+      inline def setJP(value: js.Array[js.Any]): Self = StObject.set(x, "JP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJPVarargs(value: js.Any*): Self = StObject.set(x, "JP", js.Array(value :_*))
+      inline def setJPVarargs(value: js.Any*): Self = StObject.set(x, "JP", js.Array(value :_*))
       
-      @scala.inline
-      def setKE(value: js.Array[js.Any]): Self = StObject.set(x, "KE", value.asInstanceOf[js.Any])
+      inline def setKE(value: js.Array[js.Any]): Self = StObject.set(x, "KE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKEVarargs(value: js.Any*): Self = StObject.set(x, "KE", js.Array(value :_*))
+      inline def setKEVarargs(value: js.Any*): Self = StObject.set(x, "KE", js.Array(value :_*))
       
-      @scala.inline
-      def setKG(value: js.Array[js.Any]): Self = StObject.set(x, "KG", value.asInstanceOf[js.Any])
+      inline def setKG(value: js.Array[js.Any]): Self = StObject.set(x, "KG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKGVarargs(value: js.Any*): Self = StObject.set(x, "KG", js.Array(value :_*))
+      inline def setKGVarargs(value: js.Any*): Self = StObject.set(x, "KG", js.Array(value :_*))
       
-      @scala.inline
-      def setKH(value: js.Array[js.Any]): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
+      inline def setKH(value: js.Array[js.Any]): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKHVarargs(value: js.Any*): Self = StObject.set(x, "KH", js.Array(value :_*))
+      inline def setKHVarargs(value: js.Any*): Self = StObject.set(x, "KH", js.Array(value :_*))
       
-      @scala.inline
-      def setKI(value: js.Array[js.Any]): Self = StObject.set(x, "KI", value.asInstanceOf[js.Any])
+      inline def setKI(value: js.Array[js.Any]): Self = StObject.set(x, "KI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKIVarargs(value: js.Any*): Self = StObject.set(x, "KI", js.Array(value :_*))
+      inline def setKIVarargs(value: js.Any*): Self = StObject.set(x, "KI", js.Array(value :_*))
       
-      @scala.inline
-      def setKM(value: js.Array[js.Any]): Self = StObject.set(x, "KM", value.asInstanceOf[js.Any])
+      inline def setKM(value: js.Array[js.Any]): Self = StObject.set(x, "KM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKMVarargs(value: js.Any*): Self = StObject.set(x, "KM", js.Array(value :_*))
+      inline def setKMVarargs(value: js.Any*): Self = StObject.set(x, "KM", js.Array(value :_*))
       
-      @scala.inline
-      def setKN(value: js.Array[js.Any]): Self = StObject.set(x, "KN", value.asInstanceOf[js.Any])
+      inline def setKN(value: js.Array[js.Any]): Self = StObject.set(x, "KN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKNVarargs(value: js.Any*): Self = StObject.set(x, "KN", js.Array(value :_*))
+      inline def setKNVarargs(value: js.Any*): Self = StObject.set(x, "KN", js.Array(value :_*))
       
-      @scala.inline
-      def setKP(value: js.Array[js.Any]): Self = StObject.set(x, "KP", value.asInstanceOf[js.Any])
+      inline def setKP(value: js.Array[js.Any]): Self = StObject.set(x, "KP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKPVarargs(value: js.Any*): Self = StObject.set(x, "KP", js.Array(value :_*))
+      inline def setKPVarargs(value: js.Any*): Self = StObject.set(x, "KP", js.Array(value :_*))
       
-      @scala.inline
-      def setKR(value: js.Array[js.Any]): Self = StObject.set(x, "KR", value.asInstanceOf[js.Any])
+      inline def setKR(value: js.Array[js.Any]): Self = StObject.set(x, "KR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKRVarargs(value: js.Any*): Self = StObject.set(x, "KR", js.Array(value :_*))
+      inline def setKRVarargs(value: js.Any*): Self = StObject.set(x, "KR", js.Array(value :_*))
       
-      @scala.inline
-      def setKW(value: js.Array[js.Any]): Self = StObject.set(x, "KW", value.asInstanceOf[js.Any])
+      inline def setKW(value: js.Array[js.Any]): Self = StObject.set(x, "KW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKWVarargs(value: js.Any*): Self = StObject.set(x, "KW", js.Array(value :_*))
+      inline def setKWVarargs(value: js.Any*): Self = StObject.set(x, "KW", js.Array(value :_*))
       
-      @scala.inline
-      def setKY(value: js.Array[js.Any]): Self = StObject.set(x, "KY", value.asInstanceOf[js.Any])
+      inline def setKY(value: js.Array[js.Any]): Self = StObject.set(x, "KY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKYVarargs(value: js.Any*): Self = StObject.set(x, "KY", js.Array(value :_*))
+      inline def setKYVarargs(value: js.Any*): Self = StObject.set(x, "KY", js.Array(value :_*))
       
-      @scala.inline
-      def setKZ(value: js.Array[js.Any]): Self = StObject.set(x, "KZ", value.asInstanceOf[js.Any])
+      inline def setKZ(value: js.Array[js.Any]): Self = StObject.set(x, "KZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKZVarargs(value: js.Any*): Self = StObject.set(x, "KZ", js.Array(value :_*))
+      inline def setKZVarargs(value: js.Any*): Self = StObject.set(x, "KZ", js.Array(value :_*))
       
-      @scala.inline
-      def setLA(value: js.Array[js.Any]): Self = StObject.set(x, "LA", value.asInstanceOf[js.Any])
+      inline def setLA(value: js.Array[js.Any]): Self = StObject.set(x, "LA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLAVarargs(value: js.Any*): Self = StObject.set(x, "LA", js.Array(value :_*))
+      inline def setLAVarargs(value: js.Any*): Self = StObject.set(x, "LA", js.Array(value :_*))
       
-      @scala.inline
-      def setLB(value: js.Array[js.Any]): Self = StObject.set(x, "LB", value.asInstanceOf[js.Any])
+      inline def setLB(value: js.Array[js.Any]): Self = StObject.set(x, "LB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLBVarargs(value: js.Any*): Self = StObject.set(x, "LB", js.Array(value :_*))
+      inline def setLBVarargs(value: js.Any*): Self = StObject.set(x, "LB", js.Array(value :_*))
       
-      @scala.inline
-      def setLC(value: js.Array[js.Any]): Self = StObject.set(x, "LC", value.asInstanceOf[js.Any])
+      inline def setLC(value: js.Array[js.Any]): Self = StObject.set(x, "LC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLCVarargs(value: js.Any*): Self = StObject.set(x, "LC", js.Array(value :_*))
+      inline def setLCVarargs(value: js.Any*): Self = StObject.set(x, "LC", js.Array(value :_*))
       
-      @scala.inline
-      def setLI(value: js.Array[js.Any]): Self = StObject.set(x, "LI", value.asInstanceOf[js.Any])
+      inline def setLI(value: js.Array[js.Any]): Self = StObject.set(x, "LI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLIVarargs(value: js.Any*): Self = StObject.set(x, "LI", js.Array(value :_*))
+      inline def setLIVarargs(value: js.Any*): Self = StObject.set(x, "LI", js.Array(value :_*))
       
-      @scala.inline
-      def setLK(value: js.Array[js.Any]): Self = StObject.set(x, "LK", value.asInstanceOf[js.Any])
+      inline def setLK(value: js.Array[js.Any]): Self = StObject.set(x, "LK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLKVarargs(value: js.Any*): Self = StObject.set(x, "LK", js.Array(value :_*))
+      inline def setLKVarargs(value: js.Any*): Self = StObject.set(x, "LK", js.Array(value :_*))
       
-      @scala.inline
-      def setLR(value: js.Array[js.Any]): Self = StObject.set(x, "LR", value.asInstanceOf[js.Any])
+      inline def setLR(value: js.Array[js.Any]): Self = StObject.set(x, "LR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLRVarargs(value: js.Any*): Self = StObject.set(x, "LR", js.Array(value :_*))
+      inline def setLRVarargs(value: js.Any*): Self = StObject.set(x, "LR", js.Array(value :_*))
       
-      @scala.inline
-      def setLS(value: js.Array[js.Any]): Self = StObject.set(x, "LS", value.asInstanceOf[js.Any])
+      inline def setLS(value: js.Array[js.Any]): Self = StObject.set(x, "LS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLSVarargs(value: js.Any*): Self = StObject.set(x, "LS", js.Array(value :_*))
+      inline def setLSVarargs(value: js.Any*): Self = StObject.set(x, "LS", js.Array(value :_*))
       
-      @scala.inline
-      def setLT(value: js.Array[js.Any]): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
+      inline def setLT(value: js.Array[js.Any]): Self = StObject.set(x, "LT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLTVarargs(value: js.Any*): Self = StObject.set(x, "LT", js.Array(value :_*))
+      inline def setLTVarargs(value: js.Any*): Self = StObject.set(x, "LT", js.Array(value :_*))
       
-      @scala.inline
-      def setLU(value: js.Array[js.Any]): Self = StObject.set(x, "LU", value.asInstanceOf[js.Any])
+      inline def setLU(value: js.Array[js.Any]): Self = StObject.set(x, "LU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLUVarargs(value: js.Any*): Self = StObject.set(x, "LU", js.Array(value :_*))
+      inline def setLUVarargs(value: js.Any*): Self = StObject.set(x, "LU", js.Array(value :_*))
       
-      @scala.inline
-      def setLV(value: js.Array[js.Any]): Self = StObject.set(x, "LV", value.asInstanceOf[js.Any])
+      inline def setLV(value: js.Array[js.Any]): Self = StObject.set(x, "LV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLVVarargs(value: js.Any*): Self = StObject.set(x, "LV", js.Array(value :_*))
+      inline def setLVVarargs(value: js.Any*): Self = StObject.set(x, "LV", js.Array(value :_*))
       
-      @scala.inline
-      def setLY(value: js.Array[js.Any]): Self = StObject.set(x, "LY", value.asInstanceOf[js.Any])
+      inline def setLY(value: js.Array[js.Any]): Self = StObject.set(x, "LY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLYVarargs(value: js.Any*): Self = StObject.set(x, "LY", js.Array(value :_*))
+      inline def setLYVarargs(value: js.Any*): Self = StObject.set(x, "LY", js.Array(value :_*))
       
-      @scala.inline
-      def setMA(value: js.Array[js.Any]): Self = StObject.set(x, "MA", value.asInstanceOf[js.Any])
+      inline def setMA(value: js.Array[js.Any]): Self = StObject.set(x, "MA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAVarargs(value: js.Any*): Self = StObject.set(x, "MA", js.Array(value :_*))
+      inline def setMAVarargs(value: js.Any*): Self = StObject.set(x, "MA", js.Array(value :_*))
       
-      @scala.inline
-      def setMC(value: js.Array[js.Any]): Self = StObject.set(x, "MC", value.asInstanceOf[js.Any])
+      inline def setMC(value: js.Array[js.Any]): Self = StObject.set(x, "MC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMCVarargs(value: js.Any*): Self = StObject.set(x, "MC", js.Array(value :_*))
+      inline def setMCVarargs(value: js.Any*): Self = StObject.set(x, "MC", js.Array(value :_*))
       
-      @scala.inline
-      def setMD(value: js.Array[js.Any]): Self = StObject.set(x, "MD", value.asInstanceOf[js.Any])
+      inline def setMD(value: js.Array[js.Any]): Self = StObject.set(x, "MD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMDVarargs(value: js.Any*): Self = StObject.set(x, "MD", js.Array(value :_*))
+      inline def setMDVarargs(value: js.Any*): Self = StObject.set(x, "MD", js.Array(value :_*))
       
-      @scala.inline
-      def setME(value: js.Array[js.Any]): Self = StObject.set(x, "ME", value.asInstanceOf[js.Any])
+      inline def setME(value: js.Array[js.Any]): Self = StObject.set(x, "ME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMEVarargs(value: js.Any*): Self = StObject.set(x, "ME", js.Array(value :_*))
+      inline def setMEVarargs(value: js.Any*): Self = StObject.set(x, "ME", js.Array(value :_*))
       
-      @scala.inline
-      def setMF(value: js.Array[js.Any]): Self = StObject.set(x, "MF", value.asInstanceOf[js.Any])
+      inline def setMF(value: js.Array[js.Any]): Self = StObject.set(x, "MF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMFVarargs(value: js.Any*): Self = StObject.set(x, "MF", js.Array(value :_*))
+      inline def setMFVarargs(value: js.Any*): Self = StObject.set(x, "MF", js.Array(value :_*))
       
-      @scala.inline
-      def setMG(value: js.Array[js.Any]): Self = StObject.set(x, "MG", value.asInstanceOf[js.Any])
+      inline def setMG(value: js.Array[js.Any]): Self = StObject.set(x, "MG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMGVarargs(value: js.Any*): Self = StObject.set(x, "MG", js.Array(value :_*))
+      inline def setMGVarargs(value: js.Any*): Self = StObject.set(x, "MG", js.Array(value :_*))
       
-      @scala.inline
-      def setMH(value: js.Array[js.Any]): Self = StObject.set(x, "MH", value.asInstanceOf[js.Any])
+      inline def setMH(value: js.Array[js.Any]): Self = StObject.set(x, "MH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMHVarargs(value: js.Any*): Self = StObject.set(x, "MH", js.Array(value :_*))
+      inline def setMHVarargs(value: js.Any*): Self = StObject.set(x, "MH", js.Array(value :_*))
       
-      @scala.inline
-      def setMK(value: js.Array[js.Any]): Self = StObject.set(x, "MK", value.asInstanceOf[js.Any])
+      inline def setMK(value: js.Array[js.Any]): Self = StObject.set(x, "MK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMKVarargs(value: js.Any*): Self = StObject.set(x, "MK", js.Array(value :_*))
+      inline def setMKVarargs(value: js.Any*): Self = StObject.set(x, "MK", js.Array(value :_*))
       
-      @scala.inline
-      def setML(value: js.Array[js.Any]): Self = StObject.set(x, "ML", value.asInstanceOf[js.Any])
+      inline def setML(value: js.Array[js.Any]): Self = StObject.set(x, "ML", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMLVarargs(value: js.Any*): Self = StObject.set(x, "ML", js.Array(value :_*))
+      inline def setMLVarargs(value: js.Any*): Self = StObject.set(x, "ML", js.Array(value :_*))
       
-      @scala.inline
-      def setMM(value: js.Array[js.Any]): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
+      inline def setMM(value: js.Array[js.Any]): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMMVarargs(value: js.Any*): Self = StObject.set(x, "MM", js.Array(value :_*))
+      inline def setMMVarargs(value: js.Any*): Self = StObject.set(x, "MM", js.Array(value :_*))
       
-      @scala.inline
-      def setMN(value: js.Array[js.Any]): Self = StObject.set(x, "MN", value.asInstanceOf[js.Any])
+      inline def setMN(value: js.Array[js.Any]): Self = StObject.set(x, "MN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMNVarargs(value: js.Any*): Self = StObject.set(x, "MN", js.Array(value :_*))
+      inline def setMNVarargs(value: js.Any*): Self = StObject.set(x, "MN", js.Array(value :_*))
       
-      @scala.inline
-      def setMO(value: js.Array[js.Any]): Self = StObject.set(x, "MO", value.asInstanceOf[js.Any])
+      inline def setMO(value: js.Array[js.Any]): Self = StObject.set(x, "MO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMOVarargs(value: js.Any*): Self = StObject.set(x, "MO", js.Array(value :_*))
+      inline def setMOVarargs(value: js.Any*): Self = StObject.set(x, "MO", js.Array(value :_*))
       
-      @scala.inline
-      def setMP(value: js.Array[js.Any]): Self = StObject.set(x, "MP", value.asInstanceOf[js.Any])
+      inline def setMP(value: js.Array[js.Any]): Self = StObject.set(x, "MP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMPVarargs(value: js.Any*): Self = StObject.set(x, "MP", js.Array(value :_*))
+      inline def setMPVarargs(value: js.Any*): Self = StObject.set(x, "MP", js.Array(value :_*))
       
-      @scala.inline
-      def setMQ(value: js.Array[js.Any]): Self = StObject.set(x, "MQ", value.asInstanceOf[js.Any])
+      inline def setMQ(value: js.Array[js.Any]): Self = StObject.set(x, "MQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMQVarargs(value: js.Any*): Self = StObject.set(x, "MQ", js.Array(value :_*))
+      inline def setMQVarargs(value: js.Any*): Self = StObject.set(x, "MQ", js.Array(value :_*))
       
-      @scala.inline
-      def setMR(value: js.Array[js.Any]): Self = StObject.set(x, "MR", value.asInstanceOf[js.Any])
+      inline def setMR(value: js.Array[js.Any]): Self = StObject.set(x, "MR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMRVarargs(value: js.Any*): Self = StObject.set(x, "MR", js.Array(value :_*))
+      inline def setMRVarargs(value: js.Any*): Self = StObject.set(x, "MR", js.Array(value :_*))
       
-      @scala.inline
-      def setMS(value: js.Array[js.Any]): Self = StObject.set(x, "MS", value.asInstanceOf[js.Any])
+      inline def setMS(value: js.Array[js.Any]): Self = StObject.set(x, "MS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMSVarargs(value: js.Any*): Self = StObject.set(x, "MS", js.Array(value :_*))
+      inline def setMSVarargs(value: js.Any*): Self = StObject.set(x, "MS", js.Array(value :_*))
       
-      @scala.inline
-      def setMT(value: js.Array[js.Any]): Self = StObject.set(x, "MT", value.asInstanceOf[js.Any])
+      inline def setMT(value: js.Array[js.Any]): Self = StObject.set(x, "MT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMTVarargs(value: js.Any*): Self = StObject.set(x, "MT", js.Array(value :_*))
+      inline def setMTVarargs(value: js.Any*): Self = StObject.set(x, "MT", js.Array(value :_*))
       
-      @scala.inline
-      def setMU(value: js.Array[js.Any]): Self = StObject.set(x, "MU", value.asInstanceOf[js.Any])
+      inline def setMU(value: js.Array[js.Any]): Self = StObject.set(x, "MU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMUVarargs(value: js.Any*): Self = StObject.set(x, "MU", js.Array(value :_*))
+      inline def setMUVarargs(value: js.Any*): Self = StObject.set(x, "MU", js.Array(value :_*))
       
-      @scala.inline
-      def setMV(value: js.Array[js.Any]): Self = StObject.set(x, "MV", value.asInstanceOf[js.Any])
+      inline def setMV(value: js.Array[js.Any]): Self = StObject.set(x, "MV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMVVarargs(value: js.Any*): Self = StObject.set(x, "MV", js.Array(value :_*))
+      inline def setMVVarargs(value: js.Any*): Self = StObject.set(x, "MV", js.Array(value :_*))
       
-      @scala.inline
-      def setMW(value: js.Array[js.Any]): Self = StObject.set(x, "MW", value.asInstanceOf[js.Any])
+      inline def setMW(value: js.Array[js.Any]): Self = StObject.set(x, "MW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMWVarargs(value: js.Any*): Self = StObject.set(x, "MW", js.Array(value :_*))
+      inline def setMWVarargs(value: js.Any*): Self = StObject.set(x, "MW", js.Array(value :_*))
       
-      @scala.inline
-      def setMX(value: js.Array[js.Any]): Self = StObject.set(x, "MX", value.asInstanceOf[js.Any])
+      inline def setMX(value: js.Array[js.Any]): Self = StObject.set(x, "MX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMXVarargs(value: js.Any*): Self = StObject.set(x, "MX", js.Array(value :_*))
+      inline def setMXVarargs(value: js.Any*): Self = StObject.set(x, "MX", js.Array(value :_*))
       
-      @scala.inline
-      def setMY(value: js.Array[js.Any]): Self = StObject.set(x, "MY", value.asInstanceOf[js.Any])
+      inline def setMY(value: js.Array[js.Any]): Self = StObject.set(x, "MY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMYVarargs(value: js.Any*): Self = StObject.set(x, "MY", js.Array(value :_*))
+      inline def setMYVarargs(value: js.Any*): Self = StObject.set(x, "MY", js.Array(value :_*))
       
-      @scala.inline
-      def setMZ(value: js.Array[js.Any]): Self = StObject.set(x, "MZ", value.asInstanceOf[js.Any])
+      inline def setMZ(value: js.Array[js.Any]): Self = StObject.set(x, "MZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMZVarargs(value: js.Any*): Self = StObject.set(x, "MZ", js.Array(value :_*))
+      inline def setMZVarargs(value: js.Any*): Self = StObject.set(x, "MZ", js.Array(value :_*))
       
-      @scala.inline
-      def setNA(value: js.Array[js.Any]): Self = StObject.set(x, "NA", value.asInstanceOf[js.Any])
+      inline def setNA(value: js.Array[js.Any]): Self = StObject.set(x, "NA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNAVarargs(value: js.Any*): Self = StObject.set(x, "NA", js.Array(value :_*))
+      inline def setNAVarargs(value: js.Any*): Self = StObject.set(x, "NA", js.Array(value :_*))
       
-      @scala.inline
-      def setNC(value: js.Array[js.Any]): Self = StObject.set(x, "NC", value.asInstanceOf[js.Any])
+      inline def setNC(value: js.Array[js.Any]): Self = StObject.set(x, "NC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNCVarargs(value: js.Any*): Self = StObject.set(x, "NC", js.Array(value :_*))
+      inline def setNCVarargs(value: js.Any*): Self = StObject.set(x, "NC", js.Array(value :_*))
       
-      @scala.inline
-      def setNE(value: js.Array[js.Any]): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
+      inline def setNE(value: js.Array[js.Any]): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNEVarargs(value: js.Any*): Self = StObject.set(x, "NE", js.Array(value :_*))
+      inline def setNEVarargs(value: js.Any*): Self = StObject.set(x, "NE", js.Array(value :_*))
       
-      @scala.inline
-      def setNF(value: js.Array[js.Any]): Self = StObject.set(x, "NF", value.asInstanceOf[js.Any])
+      inline def setNF(value: js.Array[js.Any]): Self = StObject.set(x, "NF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNFVarargs(value: js.Any*): Self = StObject.set(x, "NF", js.Array(value :_*))
+      inline def setNFVarargs(value: js.Any*): Self = StObject.set(x, "NF", js.Array(value :_*))
       
-      @scala.inline
-      def setNG(value: js.Array[js.Any]): Self = StObject.set(x, "NG", value.asInstanceOf[js.Any])
+      inline def setNG(value: js.Array[js.Any]): Self = StObject.set(x, "NG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNGVarargs(value: js.Any*): Self = StObject.set(x, "NG", js.Array(value :_*))
+      inline def setNGVarargs(value: js.Any*): Self = StObject.set(x, "NG", js.Array(value :_*))
       
-      @scala.inline
-      def setNI(value: js.Array[js.Any]): Self = StObject.set(x, "NI", value.asInstanceOf[js.Any])
+      inline def setNI(value: js.Array[js.Any]): Self = StObject.set(x, "NI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNIVarargs(value: js.Any*): Self = StObject.set(x, "NI", js.Array(value :_*))
+      inline def setNIVarargs(value: js.Any*): Self = StObject.set(x, "NI", js.Array(value :_*))
       
-      @scala.inline
-      def setNL(value: js.Array[js.Any]): Self = StObject.set(x, "NL", value.asInstanceOf[js.Any])
+      inline def setNL(value: js.Array[js.Any]): Self = StObject.set(x, "NL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNLVarargs(value: js.Any*): Self = StObject.set(x, "NL", js.Array(value :_*))
+      inline def setNLVarargs(value: js.Any*): Self = StObject.set(x, "NL", js.Array(value :_*))
       
-      @scala.inline
-      def setNO(value: js.Array[js.Any]): Self = StObject.set(x, "NO", value.asInstanceOf[js.Any])
+      inline def setNO(value: js.Array[js.Any]): Self = StObject.set(x, "NO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOVarargs(value: js.Any*): Self = StObject.set(x, "NO", js.Array(value :_*))
+      inline def setNOVarargs(value: js.Any*): Self = StObject.set(x, "NO", js.Array(value :_*))
       
-      @scala.inline
-      def setNP(value: js.Array[js.Any]): Self = StObject.set(x, "NP", value.asInstanceOf[js.Any])
+      inline def setNP(value: js.Array[js.Any]): Self = StObject.set(x, "NP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNPVarargs(value: js.Any*): Self = StObject.set(x, "NP", js.Array(value :_*))
+      inline def setNPVarargs(value: js.Any*): Self = StObject.set(x, "NP", js.Array(value :_*))
       
-      @scala.inline
-      def setNR(value: js.Array[js.Any]): Self = StObject.set(x, "NR", value.asInstanceOf[js.Any])
+      inline def setNR(value: js.Array[js.Any]): Self = StObject.set(x, "NR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNRVarargs(value: js.Any*): Self = StObject.set(x, "NR", js.Array(value :_*))
+      inline def setNRVarargs(value: js.Any*): Self = StObject.set(x, "NR", js.Array(value :_*))
       
-      @scala.inline
-      def setNU(value: js.Array[js.Any]): Self = StObject.set(x, "NU", value.asInstanceOf[js.Any])
+      inline def setNU(value: js.Array[js.Any]): Self = StObject.set(x, "NU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUVarargs(value: js.Any*): Self = StObject.set(x, "NU", js.Array(value :_*))
+      inline def setNUVarargs(value: js.Any*): Self = StObject.set(x, "NU", js.Array(value :_*))
       
-      @scala.inline
-      def setNZ(value: js.Array[js.Any]): Self = StObject.set(x, "NZ", value.asInstanceOf[js.Any])
+      inline def setNZ(value: js.Array[js.Any]): Self = StObject.set(x, "NZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNZVarargs(value: js.Any*): Self = StObject.set(x, "NZ", js.Array(value :_*))
+      inline def setNZVarargs(value: js.Any*): Self = StObject.set(x, "NZ", js.Array(value :_*))
       
-      @scala.inline
-      def setOM(value: js.Array[js.Any]): Self = StObject.set(x, "OM", value.asInstanceOf[js.Any])
+      inline def setOM(value: js.Array[js.Any]): Self = StObject.set(x, "OM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOMVarargs(value: js.Any*): Self = StObject.set(x, "OM", js.Array(value :_*))
+      inline def setOMVarargs(value: js.Any*): Self = StObject.set(x, "OM", js.Array(value :_*))
       
-      @scala.inline
-      def setPA(value: js.Array[js.Any]): Self = StObject.set(x, "PA", value.asInstanceOf[js.Any])
+      inline def setPA(value: js.Array[js.Any]): Self = StObject.set(x, "PA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPAVarargs(value: js.Any*): Self = StObject.set(x, "PA", js.Array(value :_*))
+      inline def setPAVarargs(value: js.Any*): Self = StObject.set(x, "PA", js.Array(value :_*))
       
-      @scala.inline
-      def setPE(value: js.Array[js.Any]): Self = StObject.set(x, "PE", value.asInstanceOf[js.Any])
+      inline def setPE(value: js.Array[js.Any]): Self = StObject.set(x, "PE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPEVarargs(value: js.Any*): Self = StObject.set(x, "PE", js.Array(value :_*))
+      inline def setPEVarargs(value: js.Any*): Self = StObject.set(x, "PE", js.Array(value :_*))
       
-      @scala.inline
-      def setPF(value: js.Array[js.Any]): Self = StObject.set(x, "PF", value.asInstanceOf[js.Any])
+      inline def setPF(value: js.Array[js.Any]): Self = StObject.set(x, "PF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPFVarargs(value: js.Any*): Self = StObject.set(x, "PF", js.Array(value :_*))
+      inline def setPFVarargs(value: js.Any*): Self = StObject.set(x, "PF", js.Array(value :_*))
       
-      @scala.inline
-      def setPG(value: js.Array[js.Any]): Self = StObject.set(x, "PG", value.asInstanceOf[js.Any])
+      inline def setPG(value: js.Array[js.Any]): Self = StObject.set(x, "PG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPGVarargs(value: js.Any*): Self = StObject.set(x, "PG", js.Array(value :_*))
+      inline def setPGVarargs(value: js.Any*): Self = StObject.set(x, "PG", js.Array(value :_*))
       
-      @scala.inline
-      def setPH(value: js.Array[js.Any]): Self = StObject.set(x, "PH", value.asInstanceOf[js.Any])
+      inline def setPH(value: js.Array[js.Any]): Self = StObject.set(x, "PH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHVarargs(value: js.Any*): Self = StObject.set(x, "PH", js.Array(value :_*))
+      inline def setPHVarargs(value: js.Any*): Self = StObject.set(x, "PH", js.Array(value :_*))
       
-      @scala.inline
-      def setPK(value: js.Array[js.Any]): Self = StObject.set(x, "PK", value.asInstanceOf[js.Any])
+      inline def setPK(value: js.Array[js.Any]): Self = StObject.set(x, "PK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPKVarargs(value: js.Any*): Self = StObject.set(x, "PK", js.Array(value :_*))
+      inline def setPKVarargs(value: js.Any*): Self = StObject.set(x, "PK", js.Array(value :_*))
       
-      @scala.inline
-      def setPL(value: js.Array[js.Any]): Self = StObject.set(x, "PL", value.asInstanceOf[js.Any])
+      inline def setPL(value: js.Array[js.Any]): Self = StObject.set(x, "PL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPLVarargs(value: js.Any*): Self = StObject.set(x, "PL", js.Array(value :_*))
+      inline def setPLVarargs(value: js.Any*): Self = StObject.set(x, "PL", js.Array(value :_*))
       
-      @scala.inline
-      def setPM(value: js.Array[js.Any]): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
+      inline def setPM(value: js.Array[js.Any]): Self = StObject.set(x, "PM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPMVarargs(value: js.Any*): Self = StObject.set(x, "PM", js.Array(value :_*))
+      inline def setPMVarargs(value: js.Any*): Self = StObject.set(x, "PM", js.Array(value :_*))
       
-      @scala.inline
-      def setPR(value: js.Array[js.Any]): Self = StObject.set(x, "PR", value.asInstanceOf[js.Any])
+      inline def setPR(value: js.Array[js.Any]): Self = StObject.set(x, "PR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPRVarargs(value: js.Any*): Self = StObject.set(x, "PR", js.Array(value :_*))
+      inline def setPRVarargs(value: js.Any*): Self = StObject.set(x, "PR", js.Array(value :_*))
       
-      @scala.inline
-      def setPS(value: js.Array[js.Any]): Self = StObject.set(x, "PS", value.asInstanceOf[js.Any])
+      inline def setPS(value: js.Array[js.Any]): Self = StObject.set(x, "PS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPSVarargs(value: js.Any*): Self = StObject.set(x, "PS", js.Array(value :_*))
+      inline def setPSVarargs(value: js.Any*): Self = StObject.set(x, "PS", js.Array(value :_*))
       
-      @scala.inline
-      def setPT(value: js.Array[js.Any]): Self = StObject.set(x, "PT", value.asInstanceOf[js.Any])
+      inline def setPT(value: js.Array[js.Any]): Self = StObject.set(x, "PT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPTVarargs(value: js.Any*): Self = StObject.set(x, "PT", js.Array(value :_*))
+      inline def setPTVarargs(value: js.Any*): Self = StObject.set(x, "PT", js.Array(value :_*))
       
-      @scala.inline
-      def setPW(value: js.Array[js.Any]): Self = StObject.set(x, "PW", value.asInstanceOf[js.Any])
+      inline def setPW(value: js.Array[js.Any]): Self = StObject.set(x, "PW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPWVarargs(value: js.Any*): Self = StObject.set(x, "PW", js.Array(value :_*))
+      inline def setPWVarargs(value: js.Any*): Self = StObject.set(x, "PW", js.Array(value :_*))
       
-      @scala.inline
-      def setPY(value: js.Array[js.Any]): Self = StObject.set(x, "PY", value.asInstanceOf[js.Any])
+      inline def setPY(value: js.Array[js.Any]): Self = StObject.set(x, "PY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPYVarargs(value: js.Any*): Self = StObject.set(x, "PY", js.Array(value :_*))
+      inline def setPYVarargs(value: js.Any*): Self = StObject.set(x, "PY", js.Array(value :_*))
       
-      @scala.inline
-      def setQA(value: js.Array[js.Any]): Self = StObject.set(x, "QA", value.asInstanceOf[js.Any])
+      inline def setQA(value: js.Array[js.Any]): Self = StObject.set(x, "QA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQAVarargs(value: js.Any*): Self = StObject.set(x, "QA", js.Array(value :_*))
+      inline def setQAVarargs(value: js.Any*): Self = StObject.set(x, "QA", js.Array(value :_*))
       
-      @scala.inline
-      def setRE(value: js.Array[js.Any]): Self = StObject.set(x, "RE", value.asInstanceOf[js.Any])
+      inline def setRE(value: js.Array[js.Any]): Self = StObject.set(x, "RE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREVarargs(value: js.Any*): Self = StObject.set(x, "RE", js.Array(value :_*))
+      inline def setREVarargs(value: js.Any*): Self = StObject.set(x, "RE", js.Array(value :_*))
       
-      @scala.inline
-      def setRO(value: js.Array[js.Any]): Self = StObject.set(x, "RO", value.asInstanceOf[js.Any])
+      inline def setRO(value: js.Array[js.Any]): Self = StObject.set(x, "RO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setROVarargs(value: js.Any*): Self = StObject.set(x, "RO", js.Array(value :_*))
+      inline def setROVarargs(value: js.Any*): Self = StObject.set(x, "RO", js.Array(value :_*))
       
-      @scala.inline
-      def setRS(value: js.Array[js.Any]): Self = StObject.set(x, "RS", value.asInstanceOf[js.Any])
+      inline def setRS(value: js.Array[js.Any]): Self = StObject.set(x, "RS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRSVarargs(value: js.Any*): Self = StObject.set(x, "RS", js.Array(value :_*))
+      inline def setRSVarargs(value: js.Any*): Self = StObject.set(x, "RS", js.Array(value :_*))
       
-      @scala.inline
-      def setRU(value: js.Array[js.Any]): Self = StObject.set(x, "RU", value.asInstanceOf[js.Any])
+      inline def setRU(value: js.Array[js.Any]): Self = StObject.set(x, "RU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUVarargs(value: js.Any*): Self = StObject.set(x, "RU", js.Array(value :_*))
+      inline def setRUVarargs(value: js.Any*): Self = StObject.set(x, "RU", js.Array(value :_*))
       
-      @scala.inline
-      def setRW(value: js.Array[js.Any]): Self = StObject.set(x, "RW", value.asInstanceOf[js.Any])
+      inline def setRW(value: js.Array[js.Any]): Self = StObject.set(x, "RW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRWVarargs(value: js.Any*): Self = StObject.set(x, "RW", js.Array(value :_*))
+      inline def setRWVarargs(value: js.Any*): Self = StObject.set(x, "RW", js.Array(value :_*))
       
-      @scala.inline
-      def setSA(value: js.Array[js.Any]): Self = StObject.set(x, "SA", value.asInstanceOf[js.Any])
+      inline def setSA(value: js.Array[js.Any]): Self = StObject.set(x, "SA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSAVarargs(value: js.Any*): Self = StObject.set(x, "SA", js.Array(value :_*))
+      inline def setSAVarargs(value: js.Any*): Self = StObject.set(x, "SA", js.Array(value :_*))
       
-      @scala.inline
-      def setSB(value: js.Array[js.Any]): Self = StObject.set(x, "SB", value.asInstanceOf[js.Any])
+      inline def setSB(value: js.Array[js.Any]): Self = StObject.set(x, "SB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSBVarargs(value: js.Any*): Self = StObject.set(x, "SB", js.Array(value :_*))
+      inline def setSBVarargs(value: js.Any*): Self = StObject.set(x, "SB", js.Array(value :_*))
       
-      @scala.inline
-      def setSC(value: js.Array[js.Any]): Self = StObject.set(x, "SC", value.asInstanceOf[js.Any])
+      inline def setSC(value: js.Array[js.Any]): Self = StObject.set(x, "SC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSCVarargs(value: js.Any*): Self = StObject.set(x, "SC", js.Array(value :_*))
+      inline def setSCVarargs(value: js.Any*): Self = StObject.set(x, "SC", js.Array(value :_*))
       
-      @scala.inline
-      def setSD(value: js.Array[js.Any]): Self = StObject.set(x, "SD", value.asInstanceOf[js.Any])
+      inline def setSD(value: js.Array[js.Any]): Self = StObject.set(x, "SD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSDVarargs(value: js.Any*): Self = StObject.set(x, "SD", js.Array(value :_*))
+      inline def setSDVarargs(value: js.Any*): Self = StObject.set(x, "SD", js.Array(value :_*))
       
-      @scala.inline
-      def setSE(value: js.Array[js.Any]): Self = StObject.set(x, "SE", value.asInstanceOf[js.Any])
+      inline def setSE(value: js.Array[js.Any]): Self = StObject.set(x, "SE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSEVarargs(value: js.Any*): Self = StObject.set(x, "SE", js.Array(value :_*))
+      inline def setSEVarargs(value: js.Any*): Self = StObject.set(x, "SE", js.Array(value :_*))
       
-      @scala.inline
-      def setSG(value: js.Array[js.Any]): Self = StObject.set(x, "SG", value.asInstanceOf[js.Any])
+      inline def setSG(value: js.Array[js.Any]): Self = StObject.set(x, "SG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSGVarargs(value: js.Any*): Self = StObject.set(x, "SG", js.Array(value :_*))
+      inline def setSGVarargs(value: js.Any*): Self = StObject.set(x, "SG", js.Array(value :_*))
       
-      @scala.inline
-      def setSH(value: js.Array[js.Any]): Self = StObject.set(x, "SH", value.asInstanceOf[js.Any])
+      inline def setSH(value: js.Array[js.Any]): Self = StObject.set(x, "SH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSHVarargs(value: js.Any*): Self = StObject.set(x, "SH", js.Array(value :_*))
+      inline def setSHVarargs(value: js.Any*): Self = StObject.set(x, "SH", js.Array(value :_*))
       
-      @scala.inline
-      def setSI(value: js.Array[js.Any]): Self = StObject.set(x, "SI", value.asInstanceOf[js.Any])
+      inline def setSI(value: js.Array[js.Any]): Self = StObject.set(x, "SI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSIVarargs(value: js.Any*): Self = StObject.set(x, "SI", js.Array(value :_*))
+      inline def setSIVarargs(value: js.Any*): Self = StObject.set(x, "SI", js.Array(value :_*))
       
-      @scala.inline
-      def setSJ(value: js.Array[js.Any]): Self = StObject.set(x, "SJ", value.asInstanceOf[js.Any])
+      inline def setSJ(value: js.Array[js.Any]): Self = StObject.set(x, "SJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSJVarargs(value: js.Any*): Self = StObject.set(x, "SJ", js.Array(value :_*))
+      inline def setSJVarargs(value: js.Any*): Self = StObject.set(x, "SJ", js.Array(value :_*))
       
-      @scala.inline
-      def setSK(value: js.Array[js.Any]): Self = StObject.set(x, "SK", value.asInstanceOf[js.Any])
+      inline def setSK(value: js.Array[js.Any]): Self = StObject.set(x, "SK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSKVarargs(value: js.Any*): Self = StObject.set(x, "SK", js.Array(value :_*))
+      inline def setSKVarargs(value: js.Any*): Self = StObject.set(x, "SK", js.Array(value :_*))
       
-      @scala.inline
-      def setSL(value: js.Array[js.Any]): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
+      inline def setSL(value: js.Array[js.Any]): Self = StObject.set(x, "SL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSLVarargs(value: js.Any*): Self = StObject.set(x, "SL", js.Array(value :_*))
+      inline def setSLVarargs(value: js.Any*): Self = StObject.set(x, "SL", js.Array(value :_*))
       
-      @scala.inline
-      def setSM(value: js.Array[js.Any]): Self = StObject.set(x, "SM", value.asInstanceOf[js.Any])
+      inline def setSM(value: js.Array[js.Any]): Self = StObject.set(x, "SM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSMVarargs(value: js.Any*): Self = StObject.set(x, "SM", js.Array(value :_*))
+      inline def setSMVarargs(value: js.Any*): Self = StObject.set(x, "SM", js.Array(value :_*))
       
-      @scala.inline
-      def setSN(value: js.Array[js.Any]): Self = StObject.set(x, "SN", value.asInstanceOf[js.Any])
+      inline def setSN(value: js.Array[js.Any]): Self = StObject.set(x, "SN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSNVarargs(value: js.Any*): Self = StObject.set(x, "SN", js.Array(value :_*))
+      inline def setSNVarargs(value: js.Any*): Self = StObject.set(x, "SN", js.Array(value :_*))
       
-      @scala.inline
-      def setSO(value: js.Array[js.Any]): Self = StObject.set(x, "SO", value.asInstanceOf[js.Any])
+      inline def setSO(value: js.Array[js.Any]): Self = StObject.set(x, "SO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOVarargs(value: js.Any*): Self = StObject.set(x, "SO", js.Array(value :_*))
+      inline def setSOVarargs(value: js.Any*): Self = StObject.set(x, "SO", js.Array(value :_*))
       
-      @scala.inline
-      def setSR(value: js.Array[js.Any]): Self = StObject.set(x, "SR", value.asInstanceOf[js.Any])
+      inline def setSR(value: js.Array[js.Any]): Self = StObject.set(x, "SR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSRVarargs(value: js.Any*): Self = StObject.set(x, "SR", js.Array(value :_*))
+      inline def setSRVarargs(value: js.Any*): Self = StObject.set(x, "SR", js.Array(value :_*))
       
-      @scala.inline
-      def setSS(value: js.Array[js.Any]): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
+      inline def setSS(value: js.Array[js.Any]): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSVarargs(value: js.Any*): Self = StObject.set(x, "SS", js.Array(value :_*))
+      inline def setSSVarargs(value: js.Any*): Self = StObject.set(x, "SS", js.Array(value :_*))
       
-      @scala.inline
-      def setST(value: js.Array[js.Any]): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
+      inline def setST(value: js.Array[js.Any]): Self = StObject.set(x, "ST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTVarargs(value: js.Any*): Self = StObject.set(x, "ST", js.Array(value :_*))
+      inline def setSTVarargs(value: js.Any*): Self = StObject.set(x, "ST", js.Array(value :_*))
       
-      @scala.inline
-      def setSV(value: js.Array[js.Any]): Self = StObject.set(x, "SV", value.asInstanceOf[js.Any])
+      inline def setSV(value: js.Array[js.Any]): Self = StObject.set(x, "SV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSVVarargs(value: js.Any*): Self = StObject.set(x, "SV", js.Array(value :_*))
+      inline def setSVVarargs(value: js.Any*): Self = StObject.set(x, "SV", js.Array(value :_*))
       
-      @scala.inline
-      def setSX(value: js.Array[js.Any]): Self = StObject.set(x, "SX", value.asInstanceOf[js.Any])
+      inline def setSX(value: js.Array[js.Any]): Self = StObject.set(x, "SX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSXVarargs(value: js.Any*): Self = StObject.set(x, "SX", js.Array(value :_*))
+      inline def setSXVarargs(value: js.Any*): Self = StObject.set(x, "SX", js.Array(value :_*))
       
-      @scala.inline
-      def setSY(value: js.Array[js.Any]): Self = StObject.set(x, "SY", value.asInstanceOf[js.Any])
+      inline def setSY(value: js.Array[js.Any]): Self = StObject.set(x, "SY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSYVarargs(value: js.Any*): Self = StObject.set(x, "SY", js.Array(value :_*))
+      inline def setSYVarargs(value: js.Any*): Self = StObject.set(x, "SY", js.Array(value :_*))
       
-      @scala.inline
-      def setSZ(value: js.Array[js.Any]): Self = StObject.set(x, "SZ", value.asInstanceOf[js.Any])
+      inline def setSZ(value: js.Array[js.Any]): Self = StObject.set(x, "SZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSZVarargs(value: js.Any*): Self = StObject.set(x, "SZ", js.Array(value :_*))
+      inline def setSZVarargs(value: js.Any*): Self = StObject.set(x, "SZ", js.Array(value :_*))
       
-      @scala.inline
-      def setTA(value: js.Array[js.Any]): Self = StObject.set(x, "TA", value.asInstanceOf[js.Any])
+      inline def setTA(value: js.Array[js.Any]): Self = StObject.set(x, "TA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTAVarargs(value: js.Any*): Self = StObject.set(x, "TA", js.Array(value :_*))
+      inline def setTAVarargs(value: js.Any*): Self = StObject.set(x, "TA", js.Array(value :_*))
       
-      @scala.inline
-      def setTC(value: js.Array[js.Any]): Self = StObject.set(x, "TC", value.asInstanceOf[js.Any])
+      inline def setTC(value: js.Array[js.Any]): Self = StObject.set(x, "TC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTCVarargs(value: js.Any*): Self = StObject.set(x, "TC", js.Array(value :_*))
+      inline def setTCVarargs(value: js.Any*): Self = StObject.set(x, "TC", js.Array(value :_*))
       
-      @scala.inline
-      def setTD(value: js.Array[js.Any]): Self = StObject.set(x, "TD", value.asInstanceOf[js.Any])
+      inline def setTD(value: js.Array[js.Any]): Self = StObject.set(x, "TD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTDVarargs(value: js.Any*): Self = StObject.set(x, "TD", js.Array(value :_*))
+      inline def setTDVarargs(value: js.Any*): Self = StObject.set(x, "TD", js.Array(value :_*))
       
-      @scala.inline
-      def setTG(value: js.Array[js.Any]): Self = StObject.set(x, "TG", value.asInstanceOf[js.Any])
+      inline def setTG(value: js.Array[js.Any]): Self = StObject.set(x, "TG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTGVarargs(value: js.Any*): Self = StObject.set(x, "TG", js.Array(value :_*))
+      inline def setTGVarargs(value: js.Any*): Self = StObject.set(x, "TG", js.Array(value :_*))
       
-      @scala.inline
-      def setTH(value: js.Array[js.Any]): Self = StObject.set(x, "TH", value.asInstanceOf[js.Any])
+      inline def setTH(value: js.Array[js.Any]): Self = StObject.set(x, "TH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTHVarargs(value: js.Any*): Self = StObject.set(x, "TH", js.Array(value :_*))
+      inline def setTHVarargs(value: js.Any*): Self = StObject.set(x, "TH", js.Array(value :_*))
       
-      @scala.inline
-      def setTJ(value: js.Array[js.Any]): Self = StObject.set(x, "TJ", value.asInstanceOf[js.Any])
+      inline def setTJ(value: js.Array[js.Any]): Self = StObject.set(x, "TJ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTJVarargs(value: js.Any*): Self = StObject.set(x, "TJ", js.Array(value :_*))
+      inline def setTJVarargs(value: js.Any*): Self = StObject.set(x, "TJ", js.Array(value :_*))
       
-      @scala.inline
-      def setTK(value: js.Array[js.Any]): Self = StObject.set(x, "TK", value.asInstanceOf[js.Any])
+      inline def setTK(value: js.Array[js.Any]): Self = StObject.set(x, "TK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTKVarargs(value: js.Any*): Self = StObject.set(x, "TK", js.Array(value :_*))
+      inline def setTKVarargs(value: js.Any*): Self = StObject.set(x, "TK", js.Array(value :_*))
       
-      @scala.inline
-      def setTL(value: js.Array[js.Any]): Self = StObject.set(x, "TL", value.asInstanceOf[js.Any])
+      inline def setTL(value: js.Array[js.Any]): Self = StObject.set(x, "TL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTLVarargs(value: js.Any*): Self = StObject.set(x, "TL", js.Array(value :_*))
+      inline def setTLVarargs(value: js.Any*): Self = StObject.set(x, "TL", js.Array(value :_*))
       
-      @scala.inline
-      def setTM(value: js.Array[js.Any]): Self = StObject.set(x, "TM", value.asInstanceOf[js.Any])
+      inline def setTM(value: js.Array[js.Any]): Self = StObject.set(x, "TM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTMVarargs(value: js.Any*): Self = StObject.set(x, "TM", js.Array(value :_*))
+      inline def setTMVarargs(value: js.Any*): Self = StObject.set(x, "TM", js.Array(value :_*))
       
-      @scala.inline
-      def setTN(value: js.Array[js.Any]): Self = StObject.set(x, "TN", value.asInstanceOf[js.Any])
+      inline def setTN(value: js.Array[js.Any]): Self = StObject.set(x, "TN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTNVarargs(value: js.Any*): Self = StObject.set(x, "TN", js.Array(value :_*))
+      inline def setTNVarargs(value: js.Any*): Self = StObject.set(x, "TN", js.Array(value :_*))
       
-      @scala.inline
-      def setTO(value: js.Array[js.Any]): Self = StObject.set(x, "TO", value.asInstanceOf[js.Any])
+      inline def setTO(value: js.Array[js.Any]): Self = StObject.set(x, "TO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOVarargs(value: js.Any*): Self = StObject.set(x, "TO", js.Array(value :_*))
+      inline def setTOVarargs(value: js.Any*): Self = StObject.set(x, "TO", js.Array(value :_*))
       
-      @scala.inline
-      def setTR(value: js.Array[js.Any]): Self = StObject.set(x, "TR", value.asInstanceOf[js.Any])
+      inline def setTR(value: js.Array[js.Any]): Self = StObject.set(x, "TR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRVarargs(value: js.Any*): Self = StObject.set(x, "TR", js.Array(value :_*))
+      inline def setTRVarargs(value: js.Any*): Self = StObject.set(x, "TR", js.Array(value :_*))
       
-      @scala.inline
-      def setTT(value: js.Array[js.Any]): Self = StObject.set(x, "TT", value.asInstanceOf[js.Any])
+      inline def setTT(value: js.Array[js.Any]): Self = StObject.set(x, "TT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTTVarargs(value: js.Any*): Self = StObject.set(x, "TT", js.Array(value :_*))
+      inline def setTTVarargs(value: js.Any*): Self = StObject.set(x, "TT", js.Array(value :_*))
       
-      @scala.inline
-      def setTV(value: js.Array[js.Any]): Self = StObject.set(x, "TV", value.asInstanceOf[js.Any])
+      inline def setTV(value: js.Array[js.Any]): Self = StObject.set(x, "TV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTVVarargs(value: js.Any*): Self = StObject.set(x, "TV", js.Array(value :_*))
+      inline def setTVVarargs(value: js.Any*): Self = StObject.set(x, "TV", js.Array(value :_*))
       
-      @scala.inline
-      def setTW(value: js.Array[js.Any]): Self = StObject.set(x, "TW", value.asInstanceOf[js.Any])
+      inline def setTW(value: js.Array[js.Any]): Self = StObject.set(x, "TW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTWVarargs(value: js.Any*): Self = StObject.set(x, "TW", js.Array(value :_*))
+      inline def setTWVarargs(value: js.Any*): Self = StObject.set(x, "TW", js.Array(value :_*))
       
-      @scala.inline
-      def setTZ(value: js.Array[js.Any]): Self = StObject.set(x, "TZ", value.asInstanceOf[js.Any])
+      inline def setTZ(value: js.Array[js.Any]): Self = StObject.set(x, "TZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTZVarargs(value: js.Any*): Self = StObject.set(x, "TZ", js.Array(value :_*))
+      inline def setTZVarargs(value: js.Any*): Self = StObject.set(x, "TZ", js.Array(value :_*))
       
-      @scala.inline
-      def setUA(value: js.Array[js.Any]): Self = StObject.set(x, "UA", value.asInstanceOf[js.Any])
+      inline def setUA(value: js.Array[js.Any]): Self = StObject.set(x, "UA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUAVarargs(value: js.Any*): Self = StObject.set(x, "UA", js.Array(value :_*))
+      inline def setUAVarargs(value: js.Any*): Self = StObject.set(x, "UA", js.Array(value :_*))
       
-      @scala.inline
-      def setUG(value: js.Array[js.Any]): Self = StObject.set(x, "UG", value.asInstanceOf[js.Any])
+      inline def setUG(value: js.Array[js.Any]): Self = StObject.set(x, "UG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUGVarargs(value: js.Any*): Self = StObject.set(x, "UG", js.Array(value :_*))
+      inline def setUGVarargs(value: js.Any*): Self = StObject.set(x, "UG", js.Array(value :_*))
       
-      @scala.inline
-      def setUS(value: js.Array[js.Any]): Self = StObject.set(x, "US", value.asInstanceOf[js.Any])
+      inline def setUS(value: js.Array[js.Any]): Self = StObject.set(x, "US", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUSVarargs(value: js.Any*): Self = StObject.set(x, "US", js.Array(value :_*))
+      inline def setUSVarargs(value: js.Any*): Self = StObject.set(x, "US", js.Array(value :_*))
       
-      @scala.inline
-      def setUY(value: js.Array[js.Any]): Self = StObject.set(x, "UY", value.asInstanceOf[js.Any])
+      inline def setUY(value: js.Array[js.Any]): Self = StObject.set(x, "UY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUYVarargs(value: js.Any*): Self = StObject.set(x, "UY", js.Array(value :_*))
+      inline def setUYVarargs(value: js.Any*): Self = StObject.set(x, "UY", js.Array(value :_*))
       
-      @scala.inline
-      def setUZ(value: js.Array[js.Any]): Self = StObject.set(x, "UZ", value.asInstanceOf[js.Any])
+      inline def setUZ(value: js.Array[js.Any]): Self = StObject.set(x, "UZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUZVarargs(value: js.Any*): Self = StObject.set(x, "UZ", js.Array(value :_*))
+      inline def setUZVarargs(value: js.Any*): Self = StObject.set(x, "UZ", js.Array(value :_*))
       
-      @scala.inline
-      def setVA(value: js.Array[js.Any]): Self = StObject.set(x, "VA", value.asInstanceOf[js.Any])
+      inline def setVA(value: js.Array[js.Any]): Self = StObject.set(x, "VA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVAVarargs(value: js.Any*): Self = StObject.set(x, "VA", js.Array(value :_*))
+      inline def setVAVarargs(value: js.Any*): Self = StObject.set(x, "VA", js.Array(value :_*))
       
-      @scala.inline
-      def setVC(value: js.Array[js.Any]): Self = StObject.set(x, "VC", value.asInstanceOf[js.Any])
+      inline def setVC(value: js.Array[js.Any]): Self = StObject.set(x, "VC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVCVarargs(value: js.Any*): Self = StObject.set(x, "VC", js.Array(value :_*))
+      inline def setVCVarargs(value: js.Any*): Self = StObject.set(x, "VC", js.Array(value :_*))
       
-      @scala.inline
-      def setVE(value: js.Array[js.Any]): Self = StObject.set(x, "VE", value.asInstanceOf[js.Any])
+      inline def setVE(value: js.Array[js.Any]): Self = StObject.set(x, "VE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVEVarargs(value: js.Any*): Self = StObject.set(x, "VE", js.Array(value :_*))
+      inline def setVEVarargs(value: js.Any*): Self = StObject.set(x, "VE", js.Array(value :_*))
       
-      @scala.inline
-      def setVG(value: js.Array[js.Any]): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
+      inline def setVG(value: js.Array[js.Any]): Self = StObject.set(x, "VG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVGVarargs(value: js.Any*): Self = StObject.set(x, "VG", js.Array(value :_*))
+      inline def setVGVarargs(value: js.Any*): Self = StObject.set(x, "VG", js.Array(value :_*))
       
-      @scala.inline
-      def setVI(value: js.Array[js.Any]): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
+      inline def setVI(value: js.Array[js.Any]): Self = StObject.set(x, "VI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVIVarargs(value: js.Any*): Self = StObject.set(x, "VI", js.Array(value :_*))
+      inline def setVIVarargs(value: js.Any*): Self = StObject.set(x, "VI", js.Array(value :_*))
       
-      @scala.inline
-      def setVN(value: js.Array[js.Any]): Self = StObject.set(x, "VN", value.asInstanceOf[js.Any])
+      inline def setVN(value: js.Array[js.Any]): Self = StObject.set(x, "VN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVNVarargs(value: js.Any*): Self = StObject.set(x, "VN", js.Array(value :_*))
+      inline def setVNVarargs(value: js.Any*): Self = StObject.set(x, "VN", js.Array(value :_*))
       
-      @scala.inline
-      def setVU(value: js.Array[js.Any]): Self = StObject.set(x, "VU", value.asInstanceOf[js.Any])
+      inline def setVU(value: js.Array[js.Any]): Self = StObject.set(x, "VU", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVUVarargs(value: js.Any*): Self = StObject.set(x, "VU", js.Array(value :_*))
+      inline def setVUVarargs(value: js.Any*): Self = StObject.set(x, "VU", js.Array(value :_*))
       
-      @scala.inline
-      def setWF(value: js.Array[js.Any]): Self = StObject.set(x, "WF", value.asInstanceOf[js.Any])
+      inline def setWF(value: js.Array[js.Any]): Self = StObject.set(x, "WF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFVarargs(value: js.Any*): Self = StObject.set(x, "WF", js.Array(value :_*))
+      inline def setWFVarargs(value: js.Any*): Self = StObject.set(x, "WF", js.Array(value :_*))
       
-      @scala.inline
-      def setWS(value: js.Array[js.Any]): Self = StObject.set(x, "WS", value.asInstanceOf[js.Any])
+      inline def setWS(value: js.Array[js.Any]): Self = StObject.set(x, "WS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWSVarargs(value: js.Any*): Self = StObject.set(x, "WS", js.Array(value :_*))
+      inline def setWSVarargs(value: js.Any*): Self = StObject.set(x, "WS", js.Array(value :_*))
       
-      @scala.inline
-      def setXK(value: js.Array[js.Any]): Self = StObject.set(x, "XK", value.asInstanceOf[js.Any])
+      inline def setXK(value: js.Array[js.Any]): Self = StObject.set(x, "XK", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXKVarargs(value: js.Any*): Self = StObject.set(x, "XK", js.Array(value :_*))
+      inline def setXKVarargs(value: js.Any*): Self = StObject.set(x, "XK", js.Array(value :_*))
       
-      @scala.inline
-      def setYE(value: js.Array[js.Any]): Self = StObject.set(x, "YE", value.asInstanceOf[js.Any])
+      inline def setYE(value: js.Array[js.Any]): Self = StObject.set(x, "YE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYEVarargs(value: js.Any*): Self = StObject.set(x, "YE", js.Array(value :_*))
+      inline def setYEVarargs(value: js.Any*): Self = StObject.set(x, "YE", js.Array(value :_*))
       
-      @scala.inline
-      def setYT(value: js.Array[js.Any]): Self = StObject.set(x, "YT", value.asInstanceOf[js.Any])
+      inline def setYT(value: js.Array[js.Any]): Self = StObject.set(x, "YT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYTVarargs(value: js.Any*): Self = StObject.set(x, "YT", js.Array(value :_*))
+      inline def setYTVarargs(value: js.Any*): Self = StObject.set(x, "YT", js.Array(value :_*))
       
-      @scala.inline
-      def setZA(value: js.Array[js.Any]): Self = StObject.set(x, "ZA", value.asInstanceOf[js.Any])
+      inline def setZA(value: js.Array[js.Any]): Self = StObject.set(x, "ZA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZAVarargs(value: js.Any*): Self = StObject.set(x, "ZA", js.Array(value :_*))
+      inline def setZAVarargs(value: js.Any*): Self = StObject.set(x, "ZA", js.Array(value :_*))
       
-      @scala.inline
-      def setZM(value: js.Array[js.Any]): Self = StObject.set(x, "ZM", value.asInstanceOf[js.Any])
+      inline def setZM(value: js.Array[js.Any]): Self = StObject.set(x, "ZM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZMVarargs(value: js.Any*): Self = StObject.set(x, "ZM", js.Array(value :_*))
+      inline def setZMVarargs(value: js.Any*): Self = StObject.set(x, "ZM", js.Array(value :_*))
       
-      @scala.inline
-      def setZW(value: js.Array[js.Any]): Self = StObject.set(x, "ZW", value.asInstanceOf[js.Any])
+      inline def setZW(value: js.Array[js.Any]): Self = StObject.set(x, "ZW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZWVarargs(value: js.Any*): Self = StObject.set(x, "ZW", js.Array(value :_*))
+      inline def setZWVarargs(value: js.Any*): Self = StObject.set(x, "ZW", js.Array(value :_*))
     }
   }
   
@@ -2550,743 +2056,497 @@ object typesMod {
   trait CountryCode extends StObject
   object CountryCode {
     
-    @scala.inline
-    def `001`: typings.libphonenumberJs.libphonenumberJsStrings.`001` = "001".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.`001`]
+    inline def `001`: typings.libphonenumberJs.libphonenumberJsStrings.`001` = "001".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.`001`]
     
-    @scala.inline
-    def AC: typings.libphonenumberJs.libphonenumberJsStrings.AC = "AC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AC]
+    inline def AC: typings.libphonenumberJs.libphonenumberJsStrings.AC = "AC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AC]
     
-    @scala.inline
-    def AD: typings.libphonenumberJs.libphonenumberJsStrings.AD = "AD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AD]
+    inline def AD: typings.libphonenumberJs.libphonenumberJsStrings.AD = "AD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AD]
     
-    @scala.inline
-    def AE: typings.libphonenumberJs.libphonenumberJsStrings.AE = "AE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AE]
+    inline def AE: typings.libphonenumberJs.libphonenumberJsStrings.AE = "AE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AE]
     
-    @scala.inline
-    def AF: typings.libphonenumberJs.libphonenumberJsStrings.AF = "AF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AF]
+    inline def AF: typings.libphonenumberJs.libphonenumberJsStrings.AF = "AF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AF]
     
-    @scala.inline
-    def AG: typings.libphonenumberJs.libphonenumberJsStrings.AG = "AG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AG]
+    inline def AG: typings.libphonenumberJs.libphonenumberJsStrings.AG = "AG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AG]
     
-    @scala.inline
-    def AI: typings.libphonenumberJs.libphonenumberJsStrings.AI = "AI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AI]
+    inline def AI: typings.libphonenumberJs.libphonenumberJsStrings.AI = "AI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AI]
     
-    @scala.inline
-    def AL: typings.libphonenumberJs.libphonenumberJsStrings.AL = "AL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AL]
+    inline def AL: typings.libphonenumberJs.libphonenumberJsStrings.AL = "AL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AL]
     
-    @scala.inline
-    def AM: typings.libphonenumberJs.libphonenumberJsStrings.AM = "AM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AM]
+    inline def AM: typings.libphonenumberJs.libphonenumberJsStrings.AM = "AM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AM]
     
-    @scala.inline
-    def AO: typings.libphonenumberJs.libphonenumberJsStrings.AO = "AO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AO]
+    inline def AO: typings.libphonenumberJs.libphonenumberJsStrings.AO = "AO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AO]
     
-    @scala.inline
-    def AR: typings.libphonenumberJs.libphonenumberJsStrings.AR = "AR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AR]
+    inline def AR: typings.libphonenumberJs.libphonenumberJsStrings.AR = "AR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AR]
     
-    @scala.inline
-    def AS: typings.libphonenumberJs.libphonenumberJsStrings.AS = "AS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AS]
+    inline def AS: typings.libphonenumberJs.libphonenumberJsStrings.AS = "AS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AS]
     
-    @scala.inline
-    def AT: typings.libphonenumberJs.libphonenumberJsStrings.AT = "AT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AT]
+    inline def AT: typings.libphonenumberJs.libphonenumberJsStrings.AT = "AT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AT]
     
-    @scala.inline
-    def AU: typings.libphonenumberJs.libphonenumberJsStrings.AU = "AU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AU]
+    inline def AU: typings.libphonenumberJs.libphonenumberJsStrings.AU = "AU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AU]
     
-    @scala.inline
-    def AW: typings.libphonenumberJs.libphonenumberJsStrings.AW = "AW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AW]
+    inline def AW: typings.libphonenumberJs.libphonenumberJsStrings.AW = "AW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AW]
     
-    @scala.inline
-    def AX: typings.libphonenumberJs.libphonenumberJsStrings.AX = "AX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AX]
+    inline def AX: typings.libphonenumberJs.libphonenumberJsStrings.AX = "AX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AX]
     
-    @scala.inline
-    def AZ: typings.libphonenumberJs.libphonenumberJsStrings.AZ = "AZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AZ]
+    inline def AZ: typings.libphonenumberJs.libphonenumberJsStrings.AZ = "AZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.AZ]
     
-    @scala.inline
-    def BA: typings.libphonenumberJs.libphonenumberJsStrings.BA = "BA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BA]
+    inline def BA: typings.libphonenumberJs.libphonenumberJsStrings.BA = "BA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BA]
     
-    @scala.inline
-    def BB: typings.libphonenumberJs.libphonenumberJsStrings.BB = "BB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BB]
+    inline def BB: typings.libphonenumberJs.libphonenumberJsStrings.BB = "BB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BB]
     
-    @scala.inline
-    def BD: typings.libphonenumberJs.libphonenumberJsStrings.BD = "BD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BD]
+    inline def BD: typings.libphonenumberJs.libphonenumberJsStrings.BD = "BD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BD]
     
-    @scala.inline
-    def BE: typings.libphonenumberJs.libphonenumberJsStrings.BE = "BE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BE]
+    inline def BE: typings.libphonenumberJs.libphonenumberJsStrings.BE = "BE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BE]
     
-    @scala.inline
-    def BF: typings.libphonenumberJs.libphonenumberJsStrings.BF = "BF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BF]
+    inline def BF: typings.libphonenumberJs.libphonenumberJsStrings.BF = "BF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BF]
     
-    @scala.inline
-    def BG: typings.libphonenumberJs.libphonenumberJsStrings.BG = "BG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BG]
+    inline def BG: typings.libphonenumberJs.libphonenumberJsStrings.BG = "BG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BG]
     
-    @scala.inline
-    def BH: typings.libphonenumberJs.libphonenumberJsStrings.BH = "BH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BH]
+    inline def BH: typings.libphonenumberJs.libphonenumberJsStrings.BH = "BH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BH]
     
-    @scala.inline
-    def BI: typings.libphonenumberJs.libphonenumberJsStrings.BI = "BI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BI]
+    inline def BI: typings.libphonenumberJs.libphonenumberJsStrings.BI = "BI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BI]
     
-    @scala.inline
-    def BJ: typings.libphonenumberJs.libphonenumberJsStrings.BJ = "BJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BJ]
+    inline def BJ: typings.libphonenumberJs.libphonenumberJsStrings.BJ = "BJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BJ]
     
-    @scala.inline
-    def BL: typings.libphonenumberJs.libphonenumberJsStrings.BL = "BL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BL]
+    inline def BL: typings.libphonenumberJs.libphonenumberJsStrings.BL = "BL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BL]
     
-    @scala.inline
-    def BM: typings.libphonenumberJs.libphonenumberJsStrings.BM = "BM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BM]
+    inline def BM: typings.libphonenumberJs.libphonenumberJsStrings.BM = "BM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BM]
     
-    @scala.inline
-    def BN: typings.libphonenumberJs.libphonenumberJsStrings.BN = "BN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BN]
+    inline def BN: typings.libphonenumberJs.libphonenumberJsStrings.BN = "BN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BN]
     
-    @scala.inline
-    def BO: typings.libphonenumberJs.libphonenumberJsStrings.BO = "BO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BO]
+    inline def BO: typings.libphonenumberJs.libphonenumberJsStrings.BO = "BO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BO]
     
-    @scala.inline
-    def BQ: typings.libphonenumberJs.libphonenumberJsStrings.BQ = "BQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BQ]
+    inline def BQ: typings.libphonenumberJs.libphonenumberJsStrings.BQ = "BQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BQ]
     
-    @scala.inline
-    def BR: typings.libphonenumberJs.libphonenumberJsStrings.BR = "BR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BR]
+    inline def BR: typings.libphonenumberJs.libphonenumberJsStrings.BR = "BR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BR]
     
-    @scala.inline
-    def BS: typings.libphonenumberJs.libphonenumberJsStrings.BS = "BS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BS]
+    inline def BS: typings.libphonenumberJs.libphonenumberJsStrings.BS = "BS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BS]
     
-    @scala.inline
-    def BT: typings.libphonenumberJs.libphonenumberJsStrings.BT = "BT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BT]
+    inline def BT: typings.libphonenumberJs.libphonenumberJsStrings.BT = "BT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BT]
     
-    @scala.inline
-    def BW: typings.libphonenumberJs.libphonenumberJsStrings.BW = "BW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BW]
+    inline def BW: typings.libphonenumberJs.libphonenumberJsStrings.BW = "BW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BW]
     
-    @scala.inline
-    def BY: typings.libphonenumberJs.libphonenumberJsStrings.BY = "BY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BY]
+    inline def BY: typings.libphonenumberJs.libphonenumberJsStrings.BY = "BY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BY]
     
-    @scala.inline
-    def BZ: typings.libphonenumberJs.libphonenumberJsStrings.BZ = "BZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BZ]
+    inline def BZ: typings.libphonenumberJs.libphonenumberJsStrings.BZ = "BZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.BZ]
     
-    @scala.inline
-    def CA: typings.libphonenumberJs.libphonenumberJsStrings.CA = "CA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CA]
+    inline def CA: typings.libphonenumberJs.libphonenumberJsStrings.CA = "CA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CA]
     
-    @scala.inline
-    def CC: typings.libphonenumberJs.libphonenumberJsStrings.CC = "CC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CC]
+    inline def CC: typings.libphonenumberJs.libphonenumberJsStrings.CC = "CC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CC]
     
-    @scala.inline
-    def CD: typings.libphonenumberJs.libphonenumberJsStrings.CD = "CD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CD]
+    inline def CD: typings.libphonenumberJs.libphonenumberJsStrings.CD = "CD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CD]
     
-    @scala.inline
-    def CF: typings.libphonenumberJs.libphonenumberJsStrings.CF = "CF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CF]
+    inline def CF: typings.libphonenumberJs.libphonenumberJsStrings.CF = "CF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CF]
     
-    @scala.inline
-    def CG: typings.libphonenumberJs.libphonenumberJsStrings.CG = "CG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CG]
+    inline def CG: typings.libphonenumberJs.libphonenumberJsStrings.CG = "CG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CG]
     
-    @scala.inline
-    def CH: typings.libphonenumberJs.libphonenumberJsStrings.CH = "CH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CH]
+    inline def CH: typings.libphonenumberJs.libphonenumberJsStrings.CH = "CH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CH]
     
-    @scala.inline
-    def CI: typings.libphonenumberJs.libphonenumberJsStrings.CI = "CI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CI]
+    inline def CI: typings.libphonenumberJs.libphonenumberJsStrings.CI = "CI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CI]
     
-    @scala.inline
-    def CK: typings.libphonenumberJs.libphonenumberJsStrings.CK = "CK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CK]
+    inline def CK: typings.libphonenumberJs.libphonenumberJsStrings.CK = "CK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CK]
     
-    @scala.inline
-    def CL: typings.libphonenumberJs.libphonenumberJsStrings.CL = "CL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CL]
+    inline def CL: typings.libphonenumberJs.libphonenumberJsStrings.CL = "CL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CL]
     
-    @scala.inline
-    def CM: typings.libphonenumberJs.libphonenumberJsStrings.CM = "CM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CM]
+    inline def CM: typings.libphonenumberJs.libphonenumberJsStrings.CM = "CM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CM]
     
-    @scala.inline
-    def CN: typings.libphonenumberJs.libphonenumberJsStrings.CN = "CN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CN]
+    inline def CN: typings.libphonenumberJs.libphonenumberJsStrings.CN = "CN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CN]
     
-    @scala.inline
-    def CO: typings.libphonenumberJs.libphonenumberJsStrings.CO = "CO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CO]
+    inline def CO: typings.libphonenumberJs.libphonenumberJsStrings.CO = "CO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CO]
     
-    @scala.inline
-    def CR: typings.libphonenumberJs.libphonenumberJsStrings.CR = "CR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CR]
+    inline def CR: typings.libphonenumberJs.libphonenumberJsStrings.CR = "CR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CR]
     
-    @scala.inline
-    def CU: typings.libphonenumberJs.libphonenumberJsStrings.CU = "CU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CU]
+    inline def CU: typings.libphonenumberJs.libphonenumberJsStrings.CU = "CU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CU]
     
-    @scala.inline
-    def CV: typings.libphonenumberJs.libphonenumberJsStrings.CV = "CV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CV]
+    inline def CV: typings.libphonenumberJs.libphonenumberJsStrings.CV = "CV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CV]
     
-    @scala.inline
-    def CW: typings.libphonenumberJs.libphonenumberJsStrings.CW = "CW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CW]
+    inline def CW: typings.libphonenumberJs.libphonenumberJsStrings.CW = "CW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CW]
     
-    @scala.inline
-    def CX: typings.libphonenumberJs.libphonenumberJsStrings.CX = "CX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CX]
+    inline def CX: typings.libphonenumberJs.libphonenumberJsStrings.CX = "CX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CX]
     
-    @scala.inline
-    def CY: typings.libphonenumberJs.libphonenumberJsStrings.CY = "CY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CY]
+    inline def CY: typings.libphonenumberJs.libphonenumberJsStrings.CY = "CY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CY]
     
-    @scala.inline
-    def CZ: typings.libphonenumberJs.libphonenumberJsStrings.CZ = "CZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CZ]
+    inline def CZ: typings.libphonenumberJs.libphonenumberJsStrings.CZ = "CZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.CZ]
     
-    @scala.inline
-    def DE: typings.libphonenumberJs.libphonenumberJsStrings.DE = "DE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DE]
+    inline def DE: typings.libphonenumberJs.libphonenumberJsStrings.DE = "DE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DE]
     
-    @scala.inline
-    def DJ: typings.libphonenumberJs.libphonenumberJsStrings.DJ = "DJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DJ]
+    inline def DJ: typings.libphonenumberJs.libphonenumberJsStrings.DJ = "DJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DJ]
     
-    @scala.inline
-    def DK: typings.libphonenumberJs.libphonenumberJsStrings.DK = "DK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DK]
+    inline def DK: typings.libphonenumberJs.libphonenumberJsStrings.DK = "DK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DK]
     
-    @scala.inline
-    def DM: typings.libphonenumberJs.libphonenumberJsStrings.DM = "DM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DM]
+    inline def DM: typings.libphonenumberJs.libphonenumberJsStrings.DM = "DM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DM]
     
-    @scala.inline
-    def DO: typings.libphonenumberJs.libphonenumberJsStrings.DO = "DO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DO]
+    inline def DO: typings.libphonenumberJs.libphonenumberJsStrings.DO = "DO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DO]
     
-    @scala.inline
-    def DZ: typings.libphonenumberJs.libphonenumberJsStrings.DZ = "DZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DZ]
+    inline def DZ: typings.libphonenumberJs.libphonenumberJsStrings.DZ = "DZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.DZ]
     
-    @scala.inline
-    def EC: typings.libphonenumberJs.libphonenumberJsStrings.EC = "EC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EC]
+    inline def EC: typings.libphonenumberJs.libphonenumberJsStrings.EC = "EC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EC]
     
-    @scala.inline
-    def EE: typings.libphonenumberJs.libphonenumberJsStrings.EE = "EE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EE]
+    inline def EE: typings.libphonenumberJs.libphonenumberJsStrings.EE = "EE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EE]
     
-    @scala.inline
-    def EG: typings.libphonenumberJs.libphonenumberJsStrings.EG = "EG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EG]
+    inline def EG: typings.libphonenumberJs.libphonenumberJsStrings.EG = "EG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EG]
     
-    @scala.inline
-    def EH: typings.libphonenumberJs.libphonenumberJsStrings.EH = "EH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EH]
+    inline def EH: typings.libphonenumberJs.libphonenumberJsStrings.EH = "EH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EH]
     
-    @scala.inline
-    def ER: typings.libphonenumberJs.libphonenumberJsStrings.ER = "ER".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ER]
+    inline def ER: typings.libphonenumberJs.libphonenumberJsStrings.ER = "ER".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ER]
     
-    @scala.inline
-    def ES: typings.libphonenumberJs.libphonenumberJsStrings.ES = "ES".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ES]
+    inline def ES: typings.libphonenumberJs.libphonenumberJsStrings.ES = "ES".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ES]
     
-    @scala.inline
-    def ET: typings.libphonenumberJs.libphonenumberJsStrings.ET = "ET".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ET]
+    inline def ET: typings.libphonenumberJs.libphonenumberJsStrings.ET = "ET".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ET]
     
-    @scala.inline
-    def FI: typings.libphonenumberJs.libphonenumberJsStrings.FI = "FI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FI]
+    inline def FI: typings.libphonenumberJs.libphonenumberJsStrings.FI = "FI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FI]
     
-    @scala.inline
-    def FJ: typings.libphonenumberJs.libphonenumberJsStrings.FJ = "FJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FJ]
+    inline def FJ: typings.libphonenumberJs.libphonenumberJsStrings.FJ = "FJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FJ]
     
-    @scala.inline
-    def FK: typings.libphonenumberJs.libphonenumberJsStrings.FK = "FK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FK]
+    inline def FK: typings.libphonenumberJs.libphonenumberJsStrings.FK = "FK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FK]
     
-    @scala.inline
-    def FM: typings.libphonenumberJs.libphonenumberJsStrings.FM = "FM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FM]
+    inline def FM: typings.libphonenumberJs.libphonenumberJsStrings.FM = "FM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FM]
     
-    @scala.inline
-    def FO: typings.libphonenumberJs.libphonenumberJsStrings.FO = "FO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FO]
+    inline def FO: typings.libphonenumberJs.libphonenumberJsStrings.FO = "FO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FO]
     
-    @scala.inline
-    def FR: typings.libphonenumberJs.libphonenumberJsStrings.FR = "FR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FR]
+    inline def FR: typings.libphonenumberJs.libphonenumberJsStrings.FR = "FR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.FR]
     
-    @scala.inline
-    def GA: typings.libphonenumberJs.libphonenumberJsStrings.GA = "GA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GA]
+    inline def GA: typings.libphonenumberJs.libphonenumberJsStrings.GA = "GA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GA]
     
-    @scala.inline
-    def GB: typings.libphonenumberJs.libphonenumberJsStrings.GB = "GB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GB]
+    inline def GB: typings.libphonenumberJs.libphonenumberJsStrings.GB = "GB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GB]
     
-    @scala.inline
-    def GD: typings.libphonenumberJs.libphonenumberJsStrings.GD = "GD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GD]
+    inline def GD: typings.libphonenumberJs.libphonenumberJsStrings.GD = "GD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GD]
     
-    @scala.inline
-    def GE: typings.libphonenumberJs.libphonenumberJsStrings.GE = "GE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GE]
+    inline def GE: typings.libphonenumberJs.libphonenumberJsStrings.GE = "GE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GE]
     
-    @scala.inline
-    def GF: typings.libphonenumberJs.libphonenumberJsStrings.GF = "GF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GF]
+    inline def GF: typings.libphonenumberJs.libphonenumberJsStrings.GF = "GF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GF]
     
-    @scala.inline
-    def GG: typings.libphonenumberJs.libphonenumberJsStrings.GG = "GG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GG]
+    inline def GG: typings.libphonenumberJs.libphonenumberJsStrings.GG = "GG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GG]
     
-    @scala.inline
-    def GH: typings.libphonenumberJs.libphonenumberJsStrings.GH = "GH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GH]
+    inline def GH: typings.libphonenumberJs.libphonenumberJsStrings.GH = "GH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GH]
     
-    @scala.inline
-    def GI: typings.libphonenumberJs.libphonenumberJsStrings.GI = "GI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GI]
+    inline def GI: typings.libphonenumberJs.libphonenumberJsStrings.GI = "GI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GI]
     
-    @scala.inline
-    def GL: typings.libphonenumberJs.libphonenumberJsStrings.GL = "GL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GL]
+    inline def GL: typings.libphonenumberJs.libphonenumberJsStrings.GL = "GL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GL]
     
-    @scala.inline
-    def GM: typings.libphonenumberJs.libphonenumberJsStrings.GM = "GM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GM]
+    inline def GM: typings.libphonenumberJs.libphonenumberJsStrings.GM = "GM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GM]
     
-    @scala.inline
-    def GN: typings.libphonenumberJs.libphonenumberJsStrings.GN = "GN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GN]
+    inline def GN: typings.libphonenumberJs.libphonenumberJsStrings.GN = "GN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GN]
     
-    @scala.inline
-    def GP: typings.libphonenumberJs.libphonenumberJsStrings.GP = "GP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GP]
+    inline def GP: typings.libphonenumberJs.libphonenumberJsStrings.GP = "GP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GP]
     
-    @scala.inline
-    def GQ: typings.libphonenumberJs.libphonenumberJsStrings.GQ = "GQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GQ]
+    inline def GQ: typings.libphonenumberJs.libphonenumberJsStrings.GQ = "GQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GQ]
     
-    @scala.inline
-    def GR: typings.libphonenumberJs.libphonenumberJsStrings.GR = "GR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GR]
+    inline def GR: typings.libphonenumberJs.libphonenumberJsStrings.GR = "GR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GR]
     
-    @scala.inline
-    def GT: typings.libphonenumberJs.libphonenumberJsStrings.GT = "GT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GT]
+    inline def GT: typings.libphonenumberJs.libphonenumberJsStrings.GT = "GT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GT]
     
-    @scala.inline
-    def GU: typings.libphonenumberJs.libphonenumberJsStrings.GU = "GU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GU]
+    inline def GU: typings.libphonenumberJs.libphonenumberJsStrings.GU = "GU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GU]
     
-    @scala.inline
-    def GW: typings.libphonenumberJs.libphonenumberJsStrings.GW = "GW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GW]
+    inline def GW: typings.libphonenumberJs.libphonenumberJsStrings.GW = "GW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GW]
     
-    @scala.inline
-    def GY: typings.libphonenumberJs.libphonenumberJsStrings.GY = "GY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GY]
+    inline def GY: typings.libphonenumberJs.libphonenumberJsStrings.GY = "GY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.GY]
     
-    @scala.inline
-    def HK: typings.libphonenumberJs.libphonenumberJsStrings.HK = "HK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HK]
+    inline def HK: typings.libphonenumberJs.libphonenumberJsStrings.HK = "HK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HK]
     
-    @scala.inline
-    def HN: typings.libphonenumberJs.libphonenumberJsStrings.HN = "HN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HN]
+    inline def HN: typings.libphonenumberJs.libphonenumberJsStrings.HN = "HN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HN]
     
-    @scala.inline
-    def HR: typings.libphonenumberJs.libphonenumberJsStrings.HR = "HR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HR]
+    inline def HR: typings.libphonenumberJs.libphonenumberJsStrings.HR = "HR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HR]
     
-    @scala.inline
-    def HT: typings.libphonenumberJs.libphonenumberJsStrings.HT = "HT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HT]
+    inline def HT: typings.libphonenumberJs.libphonenumberJsStrings.HT = "HT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HT]
     
-    @scala.inline
-    def HU: typings.libphonenumberJs.libphonenumberJsStrings.HU = "HU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HU]
+    inline def HU: typings.libphonenumberJs.libphonenumberJsStrings.HU = "HU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.HU]
     
-    @scala.inline
-    def ID: typings.libphonenumberJs.libphonenumberJsStrings.ID = "ID".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ID]
+    inline def ID: typings.libphonenumberJs.libphonenumberJsStrings.ID = "ID".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ID]
     
-    @scala.inline
-    def IE: typings.libphonenumberJs.libphonenumberJsStrings.IE = "IE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IE]
+    inline def IE: typings.libphonenumberJs.libphonenumberJsStrings.IE = "IE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IE]
     
-    @scala.inline
-    def IL: typings.libphonenumberJs.libphonenumberJsStrings.IL = "IL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IL]
+    inline def IL: typings.libphonenumberJs.libphonenumberJsStrings.IL = "IL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IL]
     
-    @scala.inline
-    def IM: typings.libphonenumberJs.libphonenumberJsStrings.IM = "IM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IM]
+    inline def IM: typings.libphonenumberJs.libphonenumberJsStrings.IM = "IM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IM]
     
-    @scala.inline
-    def IN: typings.libphonenumberJs.libphonenumberJsStrings.IN = "IN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IN]
+    inline def IN: typings.libphonenumberJs.libphonenumberJsStrings.IN = "IN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IN]
     
-    @scala.inline
-    def IO: typings.libphonenumberJs.libphonenumberJsStrings.IO = "IO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IO]
+    inline def IO: typings.libphonenumberJs.libphonenumberJsStrings.IO = "IO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IO]
     
-    @scala.inline
-    def IQ: typings.libphonenumberJs.libphonenumberJsStrings.IQ = "IQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IQ]
+    inline def IQ: typings.libphonenumberJs.libphonenumberJsStrings.IQ = "IQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IQ]
     
-    @scala.inline
-    def IR: typings.libphonenumberJs.libphonenumberJsStrings.IR = "IR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IR]
+    inline def IR: typings.libphonenumberJs.libphonenumberJsStrings.IR = "IR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IR]
     
-    @scala.inline
-    def IS: typings.libphonenumberJs.libphonenumberJsStrings.IS = "IS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IS]
+    inline def IS: typings.libphonenumberJs.libphonenumberJsStrings.IS = "IS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IS]
     
-    @scala.inline
-    def IT: typings.libphonenumberJs.libphonenumberJsStrings.IT = "IT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IT]
+    inline def IT: typings.libphonenumberJs.libphonenumberJsStrings.IT = "IT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IT]
     
-    @scala.inline
-    def JE: typings.libphonenumberJs.libphonenumberJsStrings.JE = "JE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JE]
+    inline def JE: typings.libphonenumberJs.libphonenumberJsStrings.JE = "JE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JE]
     
-    @scala.inline
-    def JM: typings.libphonenumberJs.libphonenumberJsStrings.JM = "JM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JM]
+    inline def JM: typings.libphonenumberJs.libphonenumberJsStrings.JM = "JM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JM]
     
-    @scala.inline
-    def JO: typings.libphonenumberJs.libphonenumberJsStrings.JO = "JO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JO]
+    inline def JO: typings.libphonenumberJs.libphonenumberJsStrings.JO = "JO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JO]
     
-    @scala.inline
-    def JP: typings.libphonenumberJs.libphonenumberJsStrings.JP = "JP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JP]
+    inline def JP: typings.libphonenumberJs.libphonenumberJsStrings.JP = "JP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.JP]
     
-    @scala.inline
-    def KE: typings.libphonenumberJs.libphonenumberJsStrings.KE = "KE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KE]
+    inline def KE: typings.libphonenumberJs.libphonenumberJsStrings.KE = "KE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KE]
     
-    @scala.inline
-    def KG: typings.libphonenumberJs.libphonenumberJsStrings.KG = "KG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KG]
+    inline def KG: typings.libphonenumberJs.libphonenumberJsStrings.KG = "KG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KG]
     
-    @scala.inline
-    def KH: typings.libphonenumberJs.libphonenumberJsStrings.KH = "KH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KH]
+    inline def KH: typings.libphonenumberJs.libphonenumberJsStrings.KH = "KH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KH]
     
-    @scala.inline
-    def KI: typings.libphonenumberJs.libphonenumberJsStrings.KI = "KI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KI]
+    inline def KI: typings.libphonenumberJs.libphonenumberJsStrings.KI = "KI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KI]
     
-    @scala.inline
-    def KM: typings.libphonenumberJs.libphonenumberJsStrings.KM = "KM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KM]
+    inline def KM: typings.libphonenumberJs.libphonenumberJsStrings.KM = "KM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KM]
     
-    @scala.inline
-    def KN: typings.libphonenumberJs.libphonenumberJsStrings.KN = "KN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KN]
+    inline def KN: typings.libphonenumberJs.libphonenumberJsStrings.KN = "KN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KN]
     
-    @scala.inline
-    def KP: typings.libphonenumberJs.libphonenumberJsStrings.KP = "KP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KP]
+    inline def KP: typings.libphonenumberJs.libphonenumberJsStrings.KP = "KP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KP]
     
-    @scala.inline
-    def KR: typings.libphonenumberJs.libphonenumberJsStrings.KR = "KR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KR]
+    inline def KR: typings.libphonenumberJs.libphonenumberJsStrings.KR = "KR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KR]
     
-    @scala.inline
-    def KW: typings.libphonenumberJs.libphonenumberJsStrings.KW = "KW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KW]
+    inline def KW: typings.libphonenumberJs.libphonenumberJsStrings.KW = "KW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KW]
     
-    @scala.inline
-    def KY: typings.libphonenumberJs.libphonenumberJsStrings.KY = "KY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KY]
+    inline def KY: typings.libphonenumberJs.libphonenumberJsStrings.KY = "KY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KY]
     
-    @scala.inline
-    def KZ: typings.libphonenumberJs.libphonenumberJsStrings.KZ = "KZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KZ]
+    inline def KZ: typings.libphonenumberJs.libphonenumberJsStrings.KZ = "KZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.KZ]
     
-    @scala.inline
-    def LA: typings.libphonenumberJs.libphonenumberJsStrings.LA = "LA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LA]
+    inline def LA: typings.libphonenumberJs.libphonenumberJsStrings.LA = "LA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LA]
     
-    @scala.inline
-    def LB: typings.libphonenumberJs.libphonenumberJsStrings.LB = "LB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LB]
+    inline def LB: typings.libphonenumberJs.libphonenumberJsStrings.LB = "LB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LB]
     
-    @scala.inline
-    def LC: typings.libphonenumberJs.libphonenumberJsStrings.LC = "LC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LC]
+    inline def LC: typings.libphonenumberJs.libphonenumberJsStrings.LC = "LC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LC]
     
-    @scala.inline
-    def LI: typings.libphonenumberJs.libphonenumberJsStrings.LI = "LI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LI]
+    inline def LI: typings.libphonenumberJs.libphonenumberJsStrings.LI = "LI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LI]
     
-    @scala.inline
-    def LK: typings.libphonenumberJs.libphonenumberJsStrings.LK = "LK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LK]
+    inline def LK: typings.libphonenumberJs.libphonenumberJsStrings.LK = "LK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LK]
     
-    @scala.inline
-    def LR: typings.libphonenumberJs.libphonenumberJsStrings.LR = "LR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LR]
+    inline def LR: typings.libphonenumberJs.libphonenumberJsStrings.LR = "LR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LR]
     
-    @scala.inline
-    def LS: typings.libphonenumberJs.libphonenumberJsStrings.LS = "LS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LS]
+    inline def LS: typings.libphonenumberJs.libphonenumberJsStrings.LS = "LS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LS]
     
-    @scala.inline
-    def LT: typings.libphonenumberJs.libphonenumberJsStrings.LT = "LT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LT]
+    inline def LT: typings.libphonenumberJs.libphonenumberJsStrings.LT = "LT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LT]
     
-    @scala.inline
-    def LU: typings.libphonenumberJs.libphonenumberJsStrings.LU = "LU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LU]
+    inline def LU: typings.libphonenumberJs.libphonenumberJsStrings.LU = "LU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LU]
     
-    @scala.inline
-    def LV: typings.libphonenumberJs.libphonenumberJsStrings.LV = "LV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LV]
+    inline def LV: typings.libphonenumberJs.libphonenumberJsStrings.LV = "LV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LV]
     
-    @scala.inline
-    def LY: typings.libphonenumberJs.libphonenumberJsStrings.LY = "LY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LY]
+    inline def LY: typings.libphonenumberJs.libphonenumberJsStrings.LY = "LY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.LY]
     
-    @scala.inline
-    def MA: typings.libphonenumberJs.libphonenumberJsStrings.MA = "MA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MA]
+    inline def MA: typings.libphonenumberJs.libphonenumberJsStrings.MA = "MA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MA]
     
-    @scala.inline
-    def MC: typings.libphonenumberJs.libphonenumberJsStrings.MC = "MC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MC]
+    inline def MC: typings.libphonenumberJs.libphonenumberJsStrings.MC = "MC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MC]
     
-    @scala.inline
-    def MD: typings.libphonenumberJs.libphonenumberJsStrings.MD = "MD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MD]
+    inline def MD: typings.libphonenumberJs.libphonenumberJsStrings.MD = "MD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MD]
     
-    @scala.inline
-    def ME: typings.libphonenumberJs.libphonenumberJsStrings.ME = "ME".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ME]
+    inline def ME: typings.libphonenumberJs.libphonenumberJsStrings.ME = "ME".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ME]
     
-    @scala.inline
-    def MF: typings.libphonenumberJs.libphonenumberJsStrings.MF = "MF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MF]
+    inline def MF: typings.libphonenumberJs.libphonenumberJsStrings.MF = "MF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MF]
     
-    @scala.inline
-    def MG: typings.libphonenumberJs.libphonenumberJsStrings.MG = "MG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MG]
+    inline def MG: typings.libphonenumberJs.libphonenumberJsStrings.MG = "MG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MG]
     
-    @scala.inline
-    def MH: typings.libphonenumberJs.libphonenumberJsStrings.MH = "MH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MH]
+    inline def MH: typings.libphonenumberJs.libphonenumberJsStrings.MH = "MH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MH]
     
-    @scala.inline
-    def MK: typings.libphonenumberJs.libphonenumberJsStrings.MK = "MK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MK]
+    inline def MK: typings.libphonenumberJs.libphonenumberJsStrings.MK = "MK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MK]
     
-    @scala.inline
-    def ML: typings.libphonenumberJs.libphonenumberJsStrings.ML = "ML".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ML]
+    inline def ML: typings.libphonenumberJs.libphonenumberJsStrings.ML = "ML".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ML]
     
-    @scala.inline
-    def MM: typings.libphonenumberJs.libphonenumberJsStrings.MM = "MM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MM]
+    inline def MM: typings.libphonenumberJs.libphonenumberJsStrings.MM = "MM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MM]
     
-    @scala.inline
-    def MN: typings.libphonenumberJs.libphonenumberJsStrings.MN = "MN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MN]
+    inline def MN: typings.libphonenumberJs.libphonenumberJsStrings.MN = "MN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MN]
     
-    @scala.inline
-    def MO: typings.libphonenumberJs.libphonenumberJsStrings.MO = "MO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MO]
+    inline def MO: typings.libphonenumberJs.libphonenumberJsStrings.MO = "MO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MO]
     
-    @scala.inline
-    def MP: typings.libphonenumberJs.libphonenumberJsStrings.MP = "MP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MP]
+    inline def MP: typings.libphonenumberJs.libphonenumberJsStrings.MP = "MP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MP]
     
-    @scala.inline
-    def MQ: typings.libphonenumberJs.libphonenumberJsStrings.MQ = "MQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MQ]
+    inline def MQ: typings.libphonenumberJs.libphonenumberJsStrings.MQ = "MQ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MQ]
     
-    @scala.inline
-    def MR: typings.libphonenumberJs.libphonenumberJsStrings.MR = "MR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MR]
+    inline def MR: typings.libphonenumberJs.libphonenumberJsStrings.MR = "MR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MR]
     
-    @scala.inline
-    def MS: typings.libphonenumberJs.libphonenumberJsStrings.MS = "MS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MS]
+    inline def MS: typings.libphonenumberJs.libphonenumberJsStrings.MS = "MS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MS]
     
-    @scala.inline
-    def MT: typings.libphonenumberJs.libphonenumberJsStrings.MT = "MT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MT]
+    inline def MT: typings.libphonenumberJs.libphonenumberJsStrings.MT = "MT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MT]
     
-    @scala.inline
-    def MU: typings.libphonenumberJs.libphonenumberJsStrings.MU = "MU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MU]
+    inline def MU: typings.libphonenumberJs.libphonenumberJsStrings.MU = "MU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MU]
     
-    @scala.inline
-    def MV: typings.libphonenumberJs.libphonenumberJsStrings.MV = "MV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MV]
+    inline def MV: typings.libphonenumberJs.libphonenumberJsStrings.MV = "MV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MV]
     
-    @scala.inline
-    def MW: typings.libphonenumberJs.libphonenumberJsStrings.MW = "MW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MW]
+    inline def MW: typings.libphonenumberJs.libphonenumberJsStrings.MW = "MW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MW]
     
-    @scala.inline
-    def MX: typings.libphonenumberJs.libphonenumberJsStrings.MX = "MX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MX]
+    inline def MX: typings.libphonenumberJs.libphonenumberJsStrings.MX = "MX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MX]
     
-    @scala.inline
-    def MY: typings.libphonenumberJs.libphonenumberJsStrings.MY = "MY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MY]
+    inline def MY: typings.libphonenumberJs.libphonenumberJsStrings.MY = "MY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MY]
     
-    @scala.inline
-    def MZ: typings.libphonenumberJs.libphonenumberJsStrings.MZ = "MZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MZ]
+    inline def MZ: typings.libphonenumberJs.libphonenumberJsStrings.MZ = "MZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.MZ]
     
-    @scala.inline
-    def NA: typings.libphonenumberJs.libphonenumberJsStrings.NA = "NA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NA]
+    inline def NA: typings.libphonenumberJs.libphonenumberJsStrings.NA = "NA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NA]
     
-    @scala.inline
-    def NC: typings.libphonenumberJs.libphonenumberJsStrings.NC = "NC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NC]
+    inline def NC: typings.libphonenumberJs.libphonenumberJsStrings.NC = "NC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NC]
     
-    @scala.inline
-    def NE: typings.libphonenumberJs.libphonenumberJsStrings.NE = "NE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NE]
+    inline def NE: typings.libphonenumberJs.libphonenumberJsStrings.NE = "NE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NE]
     
-    @scala.inline
-    def NF: typings.libphonenumberJs.libphonenumberJsStrings.NF = "NF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NF]
+    inline def NF: typings.libphonenumberJs.libphonenumberJsStrings.NF = "NF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NF]
     
-    @scala.inline
-    def NG: typings.libphonenumberJs.libphonenumberJsStrings.NG = "NG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NG]
+    inline def NG: typings.libphonenumberJs.libphonenumberJsStrings.NG = "NG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NG]
     
-    @scala.inline
-    def NI: typings.libphonenumberJs.libphonenumberJsStrings.NI = "NI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NI]
+    inline def NI: typings.libphonenumberJs.libphonenumberJsStrings.NI = "NI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NI]
     
-    @scala.inline
-    def NL: typings.libphonenumberJs.libphonenumberJsStrings.NL = "NL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NL]
+    inline def NL: typings.libphonenumberJs.libphonenumberJsStrings.NL = "NL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NL]
     
-    @scala.inline
-    def NO: typings.libphonenumberJs.libphonenumberJsStrings.NO = "NO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NO]
+    inline def NO: typings.libphonenumberJs.libphonenumberJsStrings.NO = "NO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NO]
     
-    @scala.inline
-    def NP: typings.libphonenumberJs.libphonenumberJsStrings.NP = "NP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NP]
+    inline def NP: typings.libphonenumberJs.libphonenumberJsStrings.NP = "NP".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NP]
     
-    @scala.inline
-    def NR: typings.libphonenumberJs.libphonenumberJsStrings.NR = "NR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NR]
+    inline def NR: typings.libphonenumberJs.libphonenumberJsStrings.NR = "NR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NR]
     
-    @scala.inline
-    def NU: typings.libphonenumberJs.libphonenumberJsStrings.NU = "NU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NU]
+    inline def NU: typings.libphonenumberJs.libphonenumberJsStrings.NU = "NU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NU]
     
-    @scala.inline
-    def NZ: typings.libphonenumberJs.libphonenumberJsStrings.NZ = "NZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NZ]
+    inline def NZ: typings.libphonenumberJs.libphonenumberJsStrings.NZ = "NZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NZ]
     
-    @scala.inline
-    def OM: typings.libphonenumberJs.libphonenumberJsStrings.OM = "OM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.OM]
+    inline def OM: typings.libphonenumberJs.libphonenumberJsStrings.OM = "OM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.OM]
     
-    @scala.inline
-    def PA: typings.libphonenumberJs.libphonenumberJsStrings.PA = "PA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PA]
+    inline def PA: typings.libphonenumberJs.libphonenumberJsStrings.PA = "PA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PA]
     
-    @scala.inline
-    def PE: typings.libphonenumberJs.libphonenumberJsStrings.PE = "PE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PE]
+    inline def PE: typings.libphonenumberJs.libphonenumberJsStrings.PE = "PE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PE]
     
-    @scala.inline
-    def PF: typings.libphonenumberJs.libphonenumberJsStrings.PF = "PF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PF]
+    inline def PF: typings.libphonenumberJs.libphonenumberJsStrings.PF = "PF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PF]
     
-    @scala.inline
-    def PG: typings.libphonenumberJs.libphonenumberJsStrings.PG = "PG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PG]
+    inline def PG: typings.libphonenumberJs.libphonenumberJsStrings.PG = "PG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PG]
     
-    @scala.inline
-    def PH: typings.libphonenumberJs.libphonenumberJsStrings.PH = "PH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PH]
+    inline def PH: typings.libphonenumberJs.libphonenumberJsStrings.PH = "PH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PH]
     
-    @scala.inline
-    def PK: typings.libphonenumberJs.libphonenumberJsStrings.PK = "PK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PK]
+    inline def PK: typings.libphonenumberJs.libphonenumberJsStrings.PK = "PK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PK]
     
-    @scala.inline
-    def PL: typings.libphonenumberJs.libphonenumberJsStrings.PL = "PL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PL]
+    inline def PL: typings.libphonenumberJs.libphonenumberJsStrings.PL = "PL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PL]
     
-    @scala.inline
-    def PM: typings.libphonenumberJs.libphonenumberJsStrings.PM = "PM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PM]
+    inline def PM: typings.libphonenumberJs.libphonenumberJsStrings.PM = "PM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PM]
     
-    @scala.inline
-    def PR: typings.libphonenumberJs.libphonenumberJsStrings.PR = "PR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PR]
+    inline def PR: typings.libphonenumberJs.libphonenumberJsStrings.PR = "PR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PR]
     
-    @scala.inline
-    def PS: typings.libphonenumberJs.libphonenumberJsStrings.PS = "PS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PS]
+    inline def PS: typings.libphonenumberJs.libphonenumberJsStrings.PS = "PS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PS]
     
-    @scala.inline
-    def PT: typings.libphonenumberJs.libphonenumberJsStrings.PT = "PT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PT]
+    inline def PT: typings.libphonenumberJs.libphonenumberJsStrings.PT = "PT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PT]
     
-    @scala.inline
-    def PW: typings.libphonenumberJs.libphonenumberJsStrings.PW = "PW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PW]
+    inline def PW: typings.libphonenumberJs.libphonenumberJsStrings.PW = "PW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PW]
     
-    @scala.inline
-    def PY: typings.libphonenumberJs.libphonenumberJsStrings.PY = "PY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PY]
+    inline def PY: typings.libphonenumberJs.libphonenumberJsStrings.PY = "PY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.PY]
     
-    @scala.inline
-    def QA: typings.libphonenumberJs.libphonenumberJsStrings.QA = "QA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.QA]
+    inline def QA: typings.libphonenumberJs.libphonenumberJsStrings.QA = "QA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.QA]
     
-    @scala.inline
-    def RE: typings.libphonenumberJs.libphonenumberJsStrings.RE = "RE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RE]
+    inline def RE: typings.libphonenumberJs.libphonenumberJsStrings.RE = "RE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RE]
     
-    @scala.inline
-    def RO: typings.libphonenumberJs.libphonenumberJsStrings.RO = "RO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RO]
+    inline def RO: typings.libphonenumberJs.libphonenumberJsStrings.RO = "RO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RO]
     
-    @scala.inline
-    def RS: typings.libphonenumberJs.libphonenumberJsStrings.RS = "RS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RS]
+    inline def RS: typings.libphonenumberJs.libphonenumberJsStrings.RS = "RS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RS]
     
-    @scala.inline
-    def RU: typings.libphonenumberJs.libphonenumberJsStrings.RU = "RU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RU]
+    inline def RU: typings.libphonenumberJs.libphonenumberJsStrings.RU = "RU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RU]
     
-    @scala.inline
-    def RW: typings.libphonenumberJs.libphonenumberJsStrings.RW = "RW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RW]
+    inline def RW: typings.libphonenumberJs.libphonenumberJsStrings.RW = "RW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RW]
     
-    @scala.inline
-    def SA: typings.libphonenumberJs.libphonenumberJsStrings.SA = "SA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SA]
+    inline def SA: typings.libphonenumberJs.libphonenumberJsStrings.SA = "SA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SA]
     
-    @scala.inline
-    def SB: typings.libphonenumberJs.libphonenumberJsStrings.SB = "SB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SB]
+    inline def SB: typings.libphonenumberJs.libphonenumberJsStrings.SB = "SB".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SB]
     
-    @scala.inline
-    def SC: typings.libphonenumberJs.libphonenumberJsStrings.SC = "SC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SC]
+    inline def SC: typings.libphonenumberJs.libphonenumberJsStrings.SC = "SC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SC]
     
-    @scala.inline
-    def SD: typings.libphonenumberJs.libphonenumberJsStrings.SD = "SD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SD]
+    inline def SD: typings.libphonenumberJs.libphonenumberJsStrings.SD = "SD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SD]
     
-    @scala.inline
-    def SE: typings.libphonenumberJs.libphonenumberJsStrings.SE = "SE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SE]
+    inline def SE: typings.libphonenumberJs.libphonenumberJsStrings.SE = "SE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SE]
     
-    @scala.inline
-    def SG: typings.libphonenumberJs.libphonenumberJsStrings.SG = "SG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SG]
+    inline def SG: typings.libphonenumberJs.libphonenumberJsStrings.SG = "SG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SG]
     
-    @scala.inline
-    def SH: typings.libphonenumberJs.libphonenumberJsStrings.SH = "SH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SH]
+    inline def SH: typings.libphonenumberJs.libphonenumberJsStrings.SH = "SH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SH]
     
-    @scala.inline
-    def SI: typings.libphonenumberJs.libphonenumberJsStrings.SI = "SI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SI]
+    inline def SI: typings.libphonenumberJs.libphonenumberJsStrings.SI = "SI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SI]
     
-    @scala.inline
-    def SJ: typings.libphonenumberJs.libphonenumberJsStrings.SJ = "SJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SJ]
+    inline def SJ: typings.libphonenumberJs.libphonenumberJsStrings.SJ = "SJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SJ]
     
-    @scala.inline
-    def SK: typings.libphonenumberJs.libphonenumberJsStrings.SK = "SK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SK]
+    inline def SK: typings.libphonenumberJs.libphonenumberJsStrings.SK = "SK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SK]
     
-    @scala.inline
-    def SL: typings.libphonenumberJs.libphonenumberJsStrings.SL = "SL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SL]
+    inline def SL: typings.libphonenumberJs.libphonenumberJsStrings.SL = "SL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SL]
     
-    @scala.inline
-    def SM: typings.libphonenumberJs.libphonenumberJsStrings.SM = "SM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SM]
+    inline def SM: typings.libphonenumberJs.libphonenumberJsStrings.SM = "SM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SM]
     
-    @scala.inline
-    def SN: typings.libphonenumberJs.libphonenumberJsStrings.SN = "SN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SN]
+    inline def SN: typings.libphonenumberJs.libphonenumberJsStrings.SN = "SN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SN]
     
-    @scala.inline
-    def SO: typings.libphonenumberJs.libphonenumberJsStrings.SO = "SO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SO]
+    inline def SO: typings.libphonenumberJs.libphonenumberJsStrings.SO = "SO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SO]
     
-    @scala.inline
-    def SR: typings.libphonenumberJs.libphonenumberJsStrings.SR = "SR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SR]
+    inline def SR: typings.libphonenumberJs.libphonenumberJsStrings.SR = "SR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SR]
     
-    @scala.inline
-    def SS: typings.libphonenumberJs.libphonenumberJsStrings.SS = "SS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SS]
+    inline def SS: typings.libphonenumberJs.libphonenumberJsStrings.SS = "SS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SS]
     
-    @scala.inline
-    def ST: typings.libphonenumberJs.libphonenumberJsStrings.ST = "ST".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ST]
+    inline def ST: typings.libphonenumberJs.libphonenumberJsStrings.ST = "ST".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ST]
     
-    @scala.inline
-    def SV: typings.libphonenumberJs.libphonenumberJsStrings.SV = "SV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SV]
+    inline def SV: typings.libphonenumberJs.libphonenumberJsStrings.SV = "SV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SV]
     
-    @scala.inline
-    def SX: typings.libphonenumberJs.libphonenumberJsStrings.SX = "SX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SX]
+    inline def SX: typings.libphonenumberJs.libphonenumberJsStrings.SX = "SX".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SX]
     
-    @scala.inline
-    def SY: typings.libphonenumberJs.libphonenumberJsStrings.SY = "SY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SY]
+    inline def SY: typings.libphonenumberJs.libphonenumberJsStrings.SY = "SY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SY]
     
-    @scala.inline
-    def SZ: typings.libphonenumberJs.libphonenumberJsStrings.SZ = "SZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SZ]
+    inline def SZ: typings.libphonenumberJs.libphonenumberJsStrings.SZ = "SZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.SZ]
     
-    @scala.inline
-    def TA: typings.libphonenumberJs.libphonenumberJsStrings.TA = "TA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TA]
+    inline def TA: typings.libphonenumberJs.libphonenumberJsStrings.TA = "TA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TA]
     
-    @scala.inline
-    def TC: typings.libphonenumberJs.libphonenumberJsStrings.TC = "TC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TC]
+    inline def TC: typings.libphonenumberJs.libphonenumberJsStrings.TC = "TC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TC]
     
-    @scala.inline
-    def TD: typings.libphonenumberJs.libphonenumberJsStrings.TD = "TD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TD]
+    inline def TD: typings.libphonenumberJs.libphonenumberJsStrings.TD = "TD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TD]
     
-    @scala.inline
-    def TG: typings.libphonenumberJs.libphonenumberJsStrings.TG = "TG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TG]
+    inline def TG: typings.libphonenumberJs.libphonenumberJsStrings.TG = "TG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TG]
     
-    @scala.inline
-    def TH: typings.libphonenumberJs.libphonenumberJsStrings.TH = "TH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TH]
+    inline def TH: typings.libphonenumberJs.libphonenumberJsStrings.TH = "TH".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TH]
     
-    @scala.inline
-    def TJ: typings.libphonenumberJs.libphonenumberJsStrings.TJ = "TJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TJ]
+    inline def TJ: typings.libphonenumberJs.libphonenumberJsStrings.TJ = "TJ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TJ]
     
-    @scala.inline
-    def TK: typings.libphonenumberJs.libphonenumberJsStrings.TK = "TK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TK]
+    inline def TK: typings.libphonenumberJs.libphonenumberJsStrings.TK = "TK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TK]
     
-    @scala.inline
-    def TL: typings.libphonenumberJs.libphonenumberJsStrings.TL = "TL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TL]
+    inline def TL: typings.libphonenumberJs.libphonenumberJsStrings.TL = "TL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TL]
     
-    @scala.inline
-    def TM: typings.libphonenumberJs.libphonenumberJsStrings.TM = "TM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TM]
+    inline def TM: typings.libphonenumberJs.libphonenumberJsStrings.TM = "TM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TM]
     
-    @scala.inline
-    def TN: typings.libphonenumberJs.libphonenumberJsStrings.TN = "TN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TN]
+    inline def TN: typings.libphonenumberJs.libphonenumberJsStrings.TN = "TN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TN]
     
-    @scala.inline
-    def TO: typings.libphonenumberJs.libphonenumberJsStrings.TO = "TO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TO]
+    inline def TO: typings.libphonenumberJs.libphonenumberJsStrings.TO = "TO".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TO]
     
-    @scala.inline
-    def TR: typings.libphonenumberJs.libphonenumberJsStrings.TR = "TR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TR]
+    inline def TR: typings.libphonenumberJs.libphonenumberJsStrings.TR = "TR".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TR]
     
-    @scala.inline
-    def TT: typings.libphonenumberJs.libphonenumberJsStrings.TT = "TT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TT]
+    inline def TT: typings.libphonenumberJs.libphonenumberJsStrings.TT = "TT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TT]
     
-    @scala.inline
-    def TV: typings.libphonenumberJs.libphonenumberJsStrings.TV = "TV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TV]
+    inline def TV: typings.libphonenumberJs.libphonenumberJsStrings.TV = "TV".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TV]
     
-    @scala.inline
-    def TW: typings.libphonenumberJs.libphonenumberJsStrings.TW = "TW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TW]
+    inline def TW: typings.libphonenumberJs.libphonenumberJsStrings.TW = "TW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TW]
     
-    @scala.inline
-    def TZ: typings.libphonenumberJs.libphonenumberJsStrings.TZ = "TZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TZ]
+    inline def TZ: typings.libphonenumberJs.libphonenumberJsStrings.TZ = "TZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.TZ]
     
-    @scala.inline
-    def UA: typings.libphonenumberJs.libphonenumberJsStrings.UA = "UA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UA]
+    inline def UA: typings.libphonenumberJs.libphonenumberJsStrings.UA = "UA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UA]
     
-    @scala.inline
-    def UG: typings.libphonenumberJs.libphonenumberJsStrings.UG = "UG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UG]
+    inline def UG: typings.libphonenumberJs.libphonenumberJsStrings.UG = "UG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UG]
     
-    @scala.inline
-    def US: typings.libphonenumberJs.libphonenumberJsStrings.US = "US".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.US]
+    inline def US: typings.libphonenumberJs.libphonenumberJsStrings.US = "US".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.US]
     
-    @scala.inline
-    def UY: typings.libphonenumberJs.libphonenumberJsStrings.UY = "UY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UY]
+    inline def UY: typings.libphonenumberJs.libphonenumberJsStrings.UY = "UY".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UY]
     
-    @scala.inline
-    def UZ: typings.libphonenumberJs.libphonenumberJsStrings.UZ = "UZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UZ]
+    inline def UZ: typings.libphonenumberJs.libphonenumberJsStrings.UZ = "UZ".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.UZ]
     
-    @scala.inline
-    def VA: typings.libphonenumberJs.libphonenumberJsStrings.VA = "VA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VA]
+    inline def VA: typings.libphonenumberJs.libphonenumberJsStrings.VA = "VA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VA]
     
-    @scala.inline
-    def VC: typings.libphonenumberJs.libphonenumberJsStrings.VC = "VC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VC]
+    inline def VC: typings.libphonenumberJs.libphonenumberJsStrings.VC = "VC".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VC]
     
-    @scala.inline
-    def VE: typings.libphonenumberJs.libphonenumberJsStrings.VE = "VE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VE]
+    inline def VE: typings.libphonenumberJs.libphonenumberJsStrings.VE = "VE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VE]
     
-    @scala.inline
-    def VG: typings.libphonenumberJs.libphonenumberJsStrings.VG = "VG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VG]
+    inline def VG: typings.libphonenumberJs.libphonenumberJsStrings.VG = "VG".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VG]
     
-    @scala.inline
-    def VI: typings.libphonenumberJs.libphonenumberJsStrings.VI = "VI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VI]
+    inline def VI: typings.libphonenumberJs.libphonenumberJsStrings.VI = "VI".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VI]
     
-    @scala.inline
-    def VN: typings.libphonenumberJs.libphonenumberJsStrings.VN = "VN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VN]
+    inline def VN: typings.libphonenumberJs.libphonenumberJsStrings.VN = "VN".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VN]
     
-    @scala.inline
-    def VU: typings.libphonenumberJs.libphonenumberJsStrings.VU = "VU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VU]
+    inline def VU: typings.libphonenumberJs.libphonenumberJsStrings.VU = "VU".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.VU]
     
-    @scala.inline
-    def WF: typings.libphonenumberJs.libphonenumberJsStrings.WF = "WF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.WF]
+    inline def WF: typings.libphonenumberJs.libphonenumberJsStrings.WF = "WF".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.WF]
     
-    @scala.inline
-    def WS: typings.libphonenumberJs.libphonenumberJsStrings.WS = "WS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.WS]
+    inline def WS: typings.libphonenumberJs.libphonenumberJsStrings.WS = "WS".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.WS]
     
-    @scala.inline
-    def XK: typings.libphonenumberJs.libphonenumberJsStrings.XK = "XK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.XK]
+    inline def XK: typings.libphonenumberJs.libphonenumberJsStrings.XK = "XK".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.XK]
     
-    @scala.inline
-    def YE: typings.libphonenumberJs.libphonenumberJsStrings.YE = "YE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.YE]
+    inline def YE: typings.libphonenumberJs.libphonenumberJsStrings.YE = "YE".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.YE]
     
-    @scala.inline
-    def YT: typings.libphonenumberJs.libphonenumberJsStrings.YT = "YT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.YT]
+    inline def YT: typings.libphonenumberJs.libphonenumberJsStrings.YT = "YT".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.YT]
     
-    @scala.inline
-    def ZA: typings.libphonenumberJs.libphonenumberJsStrings.ZA = "ZA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ZA]
+    inline def ZA: typings.libphonenumberJs.libphonenumberJsStrings.ZA = "ZA".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ZA]
     
-    @scala.inline
-    def ZM: typings.libphonenumberJs.libphonenumberJsStrings.ZM = "ZM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ZM]
+    inline def ZM: typings.libphonenumberJs.libphonenumberJsStrings.ZM = "ZM".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ZM]
     
-    @scala.inline
-    def ZW: typings.libphonenumberJs.libphonenumberJsStrings.ZW = "ZW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ZW]
+    inline def ZW: typings.libphonenumberJs.libphonenumberJsStrings.ZW = "ZW".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.ZW]
   }
   
   type E164Number = String
@@ -3314,46 +2574,34 @@ object typesMod {
   }
   object FormatNumberOptions {
     
-    @scala.inline
-    def apply(): FormatNumberOptions = {
+    inline def apply(): FormatNumberOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatNumberOptions]
     }
     
-    @scala.inline
-    implicit class FormatNumberOptionsMutableBuilder[Self <: FormatNumberOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FormatNumberOptions](x: Self) {
       
-      @scala.inline
-      def setFormatExtension(
+      inline def setFormatExtension(
         value: (/* formattedNumber */ String, /* extension */ Extension, /* metadata */ Metadata) => String
       ): Self = StObject.set(x, "formatExtension", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFormatExtensionUndefined: Self = StObject.set(x, "formatExtension", js.undefined)
+      inline def setFormatExtensionUndefined: Self = StObject.set(x, "formatExtension", js.undefined)
       
-      @scala.inline
-      def setFromCountry(value: CountryCode): Self = StObject.set(x, "fromCountry", value.asInstanceOf[js.Any])
+      inline def setFromCountry(value: CountryCode): Self = StObject.set(x, "fromCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromCountryUndefined: Self = StObject.set(x, "fromCountry", js.undefined)
+      inline def setFromCountryUndefined: Self = StObject.set(x, "fromCountry", js.undefined)
       
-      @scala.inline
-      def setHumanReadable(value: Boolean): Self = StObject.set(x, "humanReadable", value.asInstanceOf[js.Any])
+      inline def setHumanReadable(value: Boolean): Self = StObject.set(x, "humanReadable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHumanReadableUndefined: Self = StObject.set(x, "humanReadable", js.undefined)
+      inline def setHumanReadableUndefined: Self = StObject.set(x, "humanReadable", js.undefined)
       
-      @scala.inline
-      def setNationalPrefix(value: Boolean): Self = StObject.set(x, "nationalPrefix", value.asInstanceOf[js.Any])
+      inline def setNationalPrefix(value: Boolean): Self = StObject.set(x, "nationalPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNationalPrefixUndefined: Self = StObject.set(x, "nationalPrefix", js.undefined)
+      inline def setNationalPrefixUndefined: Self = StObject.set(x, "nationalPrefix", js.undefined)
       
-      @scala.inline
-      def setV2(value: Boolean): Self = StObject.set(x, "v2", value.asInstanceOf[js.Any])
+      inline def setV2(value: Boolean): Self = StObject.set(x, "v2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV2Undefined: Self = StObject.set(x, "v2", js.undefined)
+      inline def setV2Undefined: Self = StObject.set(x, "v2", js.undefined)
     }
   }
   
@@ -3365,28 +2613,22 @@ object typesMod {
   }
   object FormatNumberOptionsWithoutIDD {
     
-    @scala.inline
-    def apply(): FormatNumberOptionsWithoutIDD = {
+    inline def apply(): FormatNumberOptionsWithoutIDD = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormatNumberOptionsWithoutIDD]
     }
     
-    @scala.inline
-    implicit class FormatNumberOptionsWithoutIDDMutableBuilder[Self <: FormatNumberOptionsWithoutIDD] (val x: Self) extends AnyVal {
+    extension [Self <: FormatNumberOptionsWithoutIDD](x: Self) {
       
-      @scala.inline
-      def setFormatExtension(
+      inline def setFormatExtension(
         value: (/* formattedNumber */ String, /* extension */ Extension, /* metadata */ Metadata) => String
       ): Self = StObject.set(x, "formatExtension", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFormatExtensionUndefined: Self = StObject.set(x, "formatExtension", js.undefined)
+      inline def setFormatExtensionUndefined: Self = StObject.set(x, "formatExtension", js.undefined)
       
-      @scala.inline
-      def setV2(value: Boolean): Self = StObject.set(x, "v2", value.asInstanceOf[js.Any])
+      inline def setV2(value: Boolean): Self = StObject.set(x, "v2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV2Undefined: Self = StObject.set(x, "v2", js.undefined)
+      inline def setV2Undefined: Self = StObject.set(x, "v2", js.undefined)
     }
   }
   
@@ -3398,20 +2640,16 @@ object typesMod {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(countries: Countries, country_calling_codes: CountryCallingCodes): Metadata = {
+    inline def apply(countries: Countries, country_calling_codes: CountryCallingCodes): Metadata = {
       val __obj = js.Dynamic.literal(countries = countries.asInstanceOf[js.Any], country_calling_codes = country_calling_codes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setCountries(value: Countries): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+      inline def setCountries(value: Countries): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry_calling_codes(value: CountryCallingCodes): Self = StObject.set(x, "country_calling_codes", value.asInstanceOf[js.Any])
+      inline def setCountry_calling_codes(value: CountryCallingCodes): Self = StObject.set(x, "country_calling_codes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3429,26 +2667,19 @@ object typesMod {
   trait NumberFormat extends StObject
   object NumberFormat {
     
-    @scala.inline
-    def EDot164: typings.libphonenumberJs.libphonenumberJsStrings.EDot164 = "E.164".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EDot164]
+    inline def EDot164: typings.libphonenumberJs.libphonenumberJsStrings.EDot164 = "E.164".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.EDot164]
     
-    @scala.inline
-    def IDD: typings.libphonenumberJs.libphonenumberJsStrings.IDD = "IDD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IDD]
+    inline def IDD: typings.libphonenumberJs.libphonenumberJsStrings.IDD = "IDD".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.IDD]
     
-    @scala.inline
-    def INTERNATIONAL: typings.libphonenumberJs.libphonenumberJsStrings.INTERNATIONAL = "INTERNATIONAL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.INTERNATIONAL]
+    inline def INTERNATIONAL: typings.libphonenumberJs.libphonenumberJsStrings.INTERNATIONAL = "INTERNATIONAL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.INTERNATIONAL]
     
-    @scala.inline
-    def International: International_ = "International".asInstanceOf[International_]
+    inline def International: International_ = "International".asInstanceOf[International_]
     
-    @scala.inline
-    def NATIONAL: typings.libphonenumberJs.libphonenumberJsStrings.NATIONAL = "NATIONAL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NATIONAL]
+    inline def NATIONAL: typings.libphonenumberJs.libphonenumberJsStrings.NATIONAL = "NATIONAL".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.NATIONAL]
     
-    @scala.inline
-    def National: National_ = "National".asInstanceOf[National_]
+    inline def National: National_ = "National".asInstanceOf[National_]
     
-    @scala.inline
-    def RFC3966: typings.libphonenumberJs.libphonenumberJsStrings.RFC3966 = "RFC3966".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RFC3966]
+    inline def RFC3966: typings.libphonenumberJs.libphonenumberJsStrings.RFC3966 = "RFC3966".asInstanceOf[typings.libphonenumberJs.libphonenumberJsStrings.RFC3966]
   }
   
   trait NumberFound extends StObject {
@@ -3461,23 +2692,18 @@ object typesMod {
   }
   object NumberFound {
     
-    @scala.inline
-    def apply(endsAt: Double, number: PhoneNumber, startsAt: Double): NumberFound = {
+    inline def apply(endsAt: Double, number: PhoneNumber, startsAt: Double): NumberFound = {
       val __obj = js.Dynamic.literal(endsAt = endsAt.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], startsAt = startsAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[NumberFound]
     }
     
-    @scala.inline
-    implicit class NumberFoundMutableBuilder[Self <: NumberFound] (val x: Self) extends AnyVal {
+    extension [Self <: NumberFound](x: Self) {
       
-      @scala.inline
-      def setEndsAt(value: Double): Self = StObject.set(x, "endsAt", value.asInstanceOf[js.Any])
+      inline def setEndsAt(value: Double): Self = StObject.set(x, "endsAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: PhoneNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: PhoneNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsAt(value: Double): Self = StObject.set(x, "startsAt", value.asInstanceOf[js.Any])
+      inline def setStartsAt(value: Double): Self = StObject.set(x, "startsAt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -3495,32 +2721,24 @@ object typesMod {
   }
   object NumberFoundLegacy {
     
-    @scala.inline
-    def apply(country: CountryCode, endsAt: Double, phone: NationalNumber, startsAt: Double): NumberFoundLegacy = {
+    inline def apply(country: CountryCode, endsAt: Double, phone: NationalNumber, startsAt: Double): NumberFoundLegacy = {
       val __obj = js.Dynamic.literal(country = country.asInstanceOf[js.Any], endsAt = endsAt.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], startsAt = startsAt.asInstanceOf[js.Any])
       __obj.asInstanceOf[NumberFoundLegacy]
     }
     
-    @scala.inline
-    implicit class NumberFoundLegacyMutableBuilder[Self <: NumberFoundLegacy] (val x: Self) extends AnyVal {
+    extension [Self <: NumberFoundLegacy](x: Self) {
       
-      @scala.inline
-      def setCountry(value: CountryCode): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: CountryCode): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndsAt(value: Double): Self = StObject.set(x, "endsAt", value.asInstanceOf[js.Any])
+      inline def setEndsAt(value: Double): Self = StObject.set(x, "endsAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExt(value: Extension): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: Extension): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      @scala.inline
-      def setPhone(value: NationalNumber): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: NationalNumber): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartsAt(value: Double): Self = StObject.set(x, "startsAt", value.asInstanceOf[js.Any])
+      inline def setStartsAt(value: Double): Self = StObject.set(x, "startsAt", value.asInstanceOf[js.Any])
     }
   }
   

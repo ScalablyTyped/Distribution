@@ -16,34 +16,25 @@ trait Discoveryclusters extends StObject {
 }
 object Discoveryclusters {
   
-  @scala.inline
-  def apply(): Discoveryclusters = {
+  inline def apply(): Discoveryclusters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Discoveryclusters]
   }
   
-  @scala.inline
-  implicit class DiscoveryclustersMutableBuilder[Self <: Discoveryclusters] (val x: Self) extends AnyVal {
+  extension [Self <: Discoveryclusters](x: Self) {
     
-    @scala.inline
-    def setClusters(value: js.Array[Bannerwithcontentcontainer]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: js.Array[Bannerwithcontentcontainer]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: Bannerwithcontentcontainer*): Self = StObject.set(x, "clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Bannerwithcontentcontainer*): Self = StObject.set(x, "clusters", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTotalClusters(value: Double): Self = StObject.set(x, "totalClusters", value.asInstanceOf[js.Any])
+    inline def setTotalClusters(value: Double): Self = StObject.set(x, "totalClusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalClustersUndefined: Self = StObject.set(x, "totalClusters", js.undefined)
+    inline def setTotalClustersUndefined: Self = StObject.set(x, "totalClusters", js.undefined)
   }
 }

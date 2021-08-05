@@ -41,17 +41,14 @@ object mod {
   }
   object TreeSync {
     
-    @scala.inline
-    def apply(sync: () => js.Array[TreeSyncResult]): TreeSync = {
+    inline def apply(sync: () => js.Array[TreeSyncResult]): TreeSync = {
       val __obj = js.Dynamic.literal(sync = js.Any.fromFunction0(sync))
       __obj.asInstanceOf[TreeSync]
     }
     
-    @scala.inline
-    implicit class TreeSyncMutableBuilder[Self <: TreeSync] (val x: Self) extends AnyVal {
+    extension [Self <: TreeSync](x: Self) {
       
-      @scala.inline
-      def setSync(value: () => js.Array[TreeSyncResult]): Self = StObject.set(x, "sync", js.Any.fromFunction0(value))
+      inline def setSync(value: () => js.Array[TreeSyncResult]): Self = StObject.set(x, "sync", js.Any.fromFunction0(value))
     }
   }
   
@@ -73,32 +70,24 @@ object mod {
   }
   object TreeSyncOptions {
     
-    @scala.inline
-    def apply(): TreeSyncOptions = {
+    inline def apply(): TreeSyncOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeSyncOptions]
     }
     
-    @scala.inline
-    implicit class TreeSyncOptionsMutableBuilder[Self <: TreeSyncOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TreeSyncOptions](x: Self) {
       
-      @scala.inline
-      def setGlobs(value: js.Array[String]): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
+      inline def setGlobs(value: js.Array[String]): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobsUndefined: Self = StObject.set(x, "globs", js.undefined)
+      inline def setGlobsUndefined: Self = StObject.set(x, "globs", js.undefined)
       
-      @scala.inline
-      def setGlobsVarargs(value: String*): Self = StObject.set(x, "globs", js.Array(value :_*))
+      inline def setGlobsVarargs(value: String*): Self = StObject.set(x, "globs", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     }
   }
   

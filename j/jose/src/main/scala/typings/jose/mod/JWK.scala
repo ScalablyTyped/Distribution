@@ -49,217 +49,119 @@ object JWK {
   @js.native
   val None: typings.jose.mod.JWK.NoneKey = js.native
   
-  @scala.inline
-  def asKey(jwk: JWKECKey): ECKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[ECKey]
-  @scala.inline
-  def asKey(jwk: JWKOKPKey): OKPKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[OKPKey]
-  @scala.inline
-  def asKey(jwk: JWKOctKey): OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[OctKey]
-  @scala.inline
-  def asKey(jwk: JWKRSAKey): RSAKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[RSAKey]
-  @scala.inline
-  def asKey(jwk: JWKRSAKey, options: ImportOptions): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
-  @scala.inline
-  def asKey(key: KeyInput): RSAKey | ECKey | OKPKey | OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any]).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
-  @scala.inline
-  def asKey(key: KeyInput, parameters: KeyParameters): RSAKey | ECKey | OKPKey | OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
-  @scala.inline
-  def asKey(key: KeyObject): RSAKey | ECKey | OKPKey | OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any]).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
-  @scala.inline
-  def asKey(key: KeyObject, parameters: KeyParameters): RSAKey | ECKey | OKPKey | OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
+  inline def asKey(jwk: JWKECKey): ECKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[ECKey]
+  inline def asKey(jwk: JWKOKPKey): OKPKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[OKPKey]
+  inline def asKey(jwk: JWKOctKey): OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[OctKey]
+  inline def asKey(jwk: JWKRSAKey): RSAKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[RSAKey]
+  inline def asKey(jwk: JWKRSAKey, options: ImportOptions): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(jwk.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
+  inline def asKey(key: KeyInput): RSAKey | ECKey | OKPKey | OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any]).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
+  inline def asKey(key: KeyInput, parameters: KeyParameters): RSAKey | ECKey | OKPKey | OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
+  inline def asKey(key: KeyObject): RSAKey | ECKey | OKPKey | OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any]).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
+  inline def asKey(key: KeyObject, parameters: KeyParameters): RSAKey | ECKey | OKPKey | OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("asKey")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
   
-  @scala.inline
-  def generate(kty: keyType): js.Promise[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Double): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Double, parameters: Unit, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Double, parameters: BasicParameters): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Double, parameters: BasicParameters, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Unit, parameters: Unit, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Unit, parameters: BasicParameters): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Unit, parameters: BasicParameters, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Curves): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Curves, parameters: Unit, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Curves, parameters: BasicParameters): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
-  @scala.inline
-  def generate(kty: keyType, crvOrSize: Curves, parameters: BasicParameters, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType): js.Promise[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Double): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Double, parameters: Unit, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Double, parameters: BasicParameters): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Double, parameters: BasicParameters, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Unit, parameters: Unit, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Unit, parameters: BasicParameters): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Unit, parameters: BasicParameters, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Curves): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Curves, parameters: Unit, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Curves, parameters: BasicParameters): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
+  inline def generate(kty: keyType, crvOrSize: Curves, parameters: BasicParameters, `private`: Boolean): js.Promise[Key] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Key]]
   
-  @scala.inline
-  def generateSync(kty: keyType): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Double): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Double, parameters: Unit, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Double, parameters: BasicParameters): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Double, parameters: BasicParameters, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Unit, parameters: Unit, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Unit, parameters: BasicParameters): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Unit, parameters: BasicParameters, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Curves): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Curves, parameters: Unit, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Curves, parameters: BasicParameters): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Key]
-  @scala.inline
-  def generateSync(kty: keyType, crvOrSize: Curves, parameters: BasicParameters, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Double): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Double, parameters: Unit, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Double, parameters: BasicParameters): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Double, parameters: BasicParameters, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Unit, parameters: Unit, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Unit, parameters: BasicParameters): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Unit, parameters: BasicParameters, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Curves): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Curves, parameters: Unit, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Curves, parameters: BasicParameters): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def generateSync(kty: keyType, crvOrSize: Curves, parameters: BasicParameters, `private`: Boolean): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crvOrSize.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[Key]
   
-  @scala.inline
-  def generateSync_EC(kty: EC): ECKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[ECKey]
-  @scala.inline
-  def generateSync_EC(kty: EC, crv: Unit, parameters: Unit, `private`: Boolean): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[ECKey]
-  @scala.inline
-  def generateSync_EC(kty: EC, crv: Unit, parameters: BasicParameters): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ECKey]
-  @scala.inline
-  def generateSync_EC(kty: EC, crv: Unit, parameters: BasicParameters, `private`: Boolean): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[ECKey]
-  @scala.inline
-  def generateSync_EC(kty: EC, crv: ECCurve): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any])).asInstanceOf[ECKey]
-  @scala.inline
-  def generateSync_EC(kty: EC, crv: ECCurve, parameters: Unit, `private`: Boolean): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[ECKey]
-  @scala.inline
-  def generateSync_EC(kty: EC, crv: ECCurve, parameters: BasicParameters): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ECKey]
-  @scala.inline
-  def generateSync_EC(kty: EC, crv: ECCurve, parameters: BasicParameters, `private`: Boolean): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[ECKey]
+  inline def generateSync_EC(kty: EC): ECKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[ECKey]
+  inline def generateSync_EC(kty: EC, crv: Unit, parameters: Unit, `private`: Boolean): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[ECKey]
+  inline def generateSync_EC(kty: EC, crv: Unit, parameters: BasicParameters): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ECKey]
+  inline def generateSync_EC(kty: EC, crv: Unit, parameters: BasicParameters, `private`: Boolean): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[ECKey]
+  inline def generateSync_EC(kty: EC, crv: ECCurve): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any])).asInstanceOf[ECKey]
+  inline def generateSync_EC(kty: EC, crv: ECCurve, parameters: Unit, `private`: Boolean): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[ECKey]
+  inline def generateSync_EC(kty: EC, crv: ECCurve, parameters: BasicParameters): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[ECKey]
+  inline def generateSync_EC(kty: EC, crv: ECCurve, parameters: BasicParameters, `private`: Boolean): ECKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[ECKey]
   
-  @scala.inline
-  def generateSync_OKP(kty: OKP): OKPKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[OKPKey]
-  @scala.inline
-  def generateSync_OKP(kty: OKP, crv: Unit, parameters: Unit, `private`: Boolean): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
-  @scala.inline
-  def generateSync_OKP(kty: OKP, crv: Unit, parameters: BasicParameters): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
-  @scala.inline
-  def generateSync_OKP(kty: OKP, crv: Unit, parameters: BasicParameters, `private`: Boolean): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
-  @scala.inline
-  def generateSync_OKP(kty: OKP, crv: OKPCurve): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
-  @scala.inline
-  def generateSync_OKP(kty: OKP, crv: OKPCurve, parameters: Unit, `private`: Boolean): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
-  @scala.inline
-  def generateSync_OKP(kty: OKP, crv: OKPCurve, parameters: BasicParameters): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
-  @scala.inline
-  def generateSync_OKP(kty: OKP, crv: OKPCurve, parameters: BasicParameters, `private`: Boolean): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
+  inline def generateSync_OKP(kty: OKP): OKPKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[OKPKey]
+  inline def generateSync_OKP(kty: OKP, crv: Unit, parameters: Unit, `private`: Boolean): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
+  inline def generateSync_OKP(kty: OKP, crv: Unit, parameters: BasicParameters): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
+  inline def generateSync_OKP(kty: OKP, crv: Unit, parameters: BasicParameters, `private`: Boolean): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
+  inline def generateSync_OKP(kty: OKP, crv: OKPCurve): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
+  inline def generateSync_OKP(kty: OKP, crv: OKPCurve, parameters: Unit, `private`: Boolean): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
+  inline def generateSync_OKP(kty: OKP, crv: OKPCurve, parameters: BasicParameters): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
+  inline def generateSync_OKP(kty: OKP, crv: OKPCurve, parameters: BasicParameters, `private`: Boolean): OKPKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[OKPKey]
   
-  @scala.inline
-  def generateSync_RSA(kty: RSA): RSAKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[RSAKey]
-  @scala.inline
-  def generateSync_RSA(kty: RSA, bitlength: Double): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
-  @scala.inline
-  def generateSync_RSA(kty: RSA, bitlength: Double, parameters: Unit, `private`: Boolean): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
-  @scala.inline
-  def generateSync_RSA(kty: RSA, bitlength: Double, parameters: BasicParameters): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
-  @scala.inline
-  def generateSync_RSA(kty: RSA, bitlength: Double, parameters: BasicParameters, `private`: Boolean): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
-  @scala.inline
-  def generateSync_RSA(kty: RSA, bitlength: Unit, parameters: Unit, `private`: Boolean): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
-  @scala.inline
-  def generateSync_RSA(kty: RSA, bitlength: Unit, parameters: BasicParameters): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
-  @scala.inline
-  def generateSync_RSA(kty: RSA, bitlength: Unit, parameters: BasicParameters, `private`: Boolean): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
+  inline def generateSync_RSA(kty: RSA): RSAKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[RSAKey]
+  inline def generateSync_RSA(kty: RSA, bitlength: Double): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
+  inline def generateSync_RSA(kty: RSA, bitlength: Double, parameters: Unit, `private`: Boolean): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
+  inline def generateSync_RSA(kty: RSA, bitlength: Double, parameters: BasicParameters): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
+  inline def generateSync_RSA(kty: RSA, bitlength: Double, parameters: BasicParameters, `private`: Boolean): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
+  inline def generateSync_RSA(kty: RSA, bitlength: Unit, parameters: Unit, `private`: Boolean): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
+  inline def generateSync_RSA(kty: RSA, bitlength: Unit, parameters: BasicParameters): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
+  inline def generateSync_RSA(kty: RSA, bitlength: Unit, parameters: BasicParameters, `private`: Boolean): RSAKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[RSAKey]
   
-  @scala.inline
-  def generateSync_oct(kty: oct): OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[OctKey]
-  @scala.inline
-  def generateSync_oct(kty: oct, bitlength: Double): OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any])).asInstanceOf[OctKey]
-  @scala.inline
-  def generateSync_oct(kty: oct, bitlength: Double, parameters: BasicParameters): OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[OctKey]
-  @scala.inline
-  def generateSync_oct(kty: oct, bitlength: Unit, parameters: BasicParameters): OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[OctKey]
+  inline def generateSync_oct(kty: oct): OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any]).asInstanceOf[OctKey]
+  inline def generateSync_oct(kty: oct, bitlength: Double): OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any])).asInstanceOf[OctKey]
+  inline def generateSync_oct(kty: oct, bitlength: Double, parameters: BasicParameters): OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[OctKey]
+  inline def generateSync_oct(kty: oct, bitlength: Unit, parameters: BasicParameters): OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSync")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[OctKey]
   
-  @scala.inline
-  def generate_EC(kty: EC): js.Promise[ECKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ECKey]]
-  @scala.inline
-  def generate_EC(kty: EC, crv: Unit, parameters: Unit, `private`: Boolean): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
-  @scala.inline
-  def generate_EC(kty: EC, crv: Unit, parameters: BasicParameters): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
-  @scala.inline
-  def generate_EC(kty: EC, crv: Unit, parameters: BasicParameters, `private`: Boolean): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
-  @scala.inline
-  def generate_EC(kty: EC, crv: ECCurve): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
-  @scala.inline
-  def generate_EC(kty: EC, crv: ECCurve, parameters: Unit, `private`: Boolean): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
-  @scala.inline
-  def generate_EC(kty: EC, crv: ECCurve, parameters: BasicParameters): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
-  @scala.inline
-  def generate_EC(kty: EC, crv: ECCurve, parameters: BasicParameters, `private`: Boolean): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
+  inline def generate_EC(kty: EC): js.Promise[ECKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ECKey]]
+  inline def generate_EC(kty: EC, crv: Unit, parameters: Unit, `private`: Boolean): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
+  inline def generate_EC(kty: EC, crv: Unit, parameters: BasicParameters): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
+  inline def generate_EC(kty: EC, crv: Unit, parameters: BasicParameters, `private`: Boolean): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
+  inline def generate_EC(kty: EC, crv: ECCurve): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
+  inline def generate_EC(kty: EC, crv: ECCurve, parameters: Unit, `private`: Boolean): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
+  inline def generate_EC(kty: EC, crv: ECCurve, parameters: BasicParameters): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
+  inline def generate_EC(kty: EC, crv: ECCurve, parameters: BasicParameters, `private`: Boolean): js.Promise[ECKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ECKey]]
   
-  @scala.inline
-  def generate_OKP(kty: OKP): js.Promise[OKPKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OKPKey]]
-  @scala.inline
-  def generate_OKP(kty: OKP, crv: Unit, parameters: Unit, `private`: Boolean): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
-  @scala.inline
-  def generate_OKP(kty: OKP, crv: Unit, parameters: BasicParameters): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
-  @scala.inline
-  def generate_OKP(kty: OKP, crv: Unit, parameters: BasicParameters, `private`: Boolean): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
-  @scala.inline
-  def generate_OKP(kty: OKP, crv: OKPCurve): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
-  @scala.inline
-  def generate_OKP(kty: OKP, crv: OKPCurve, parameters: Unit, `private`: Boolean): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
-  @scala.inline
-  def generate_OKP(kty: OKP, crv: OKPCurve, parameters: BasicParameters): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
-  @scala.inline
-  def generate_OKP(kty: OKP, crv: OKPCurve, parameters: BasicParameters, `private`: Boolean): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
+  inline def generate_OKP(kty: OKP): js.Promise[OKPKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OKPKey]]
+  inline def generate_OKP(kty: OKP, crv: Unit, parameters: Unit, `private`: Boolean): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
+  inline def generate_OKP(kty: OKP, crv: Unit, parameters: BasicParameters): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
+  inline def generate_OKP(kty: OKP, crv: Unit, parameters: BasicParameters, `private`: Boolean): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
+  inline def generate_OKP(kty: OKP, crv: OKPCurve): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
+  inline def generate_OKP(kty: OKP, crv: OKPCurve, parameters: Unit, `private`: Boolean): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
+  inline def generate_OKP(kty: OKP, crv: OKPCurve, parameters: BasicParameters): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
+  inline def generate_OKP(kty: OKP, crv: OKPCurve, parameters: BasicParameters, `private`: Boolean): js.Promise[OKPKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], crv.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OKPKey]]
   
-  @scala.inline
-  def generate_RSA(kty: RSA): js.Promise[RSAKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RSAKey]]
-  @scala.inline
-  def generate_RSA(kty: RSA, bitlength: Double): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
-  @scala.inline
-  def generate_RSA(kty: RSA, bitlength: Double, parameters: Unit, `private`: Boolean): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
-  @scala.inline
-  def generate_RSA(kty: RSA, bitlength: Double, parameters: BasicParameters): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
-  @scala.inline
-  def generate_RSA(kty: RSA, bitlength: Double, parameters: BasicParameters, `private`: Boolean): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
-  @scala.inline
-  def generate_RSA(kty: RSA, bitlength: Unit, parameters: Unit, `private`: Boolean): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
-  @scala.inline
-  def generate_RSA(kty: RSA, bitlength: Unit, parameters: BasicParameters): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
-  @scala.inline
-  def generate_RSA(kty: RSA, bitlength: Unit, parameters: BasicParameters, `private`: Boolean): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
+  inline def generate_RSA(kty: RSA): js.Promise[RSAKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RSAKey]]
+  inline def generate_RSA(kty: RSA, bitlength: Double): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
+  inline def generate_RSA(kty: RSA, bitlength: Double, parameters: Unit, `private`: Boolean): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
+  inline def generate_RSA(kty: RSA, bitlength: Double, parameters: BasicParameters): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
+  inline def generate_RSA(kty: RSA, bitlength: Double, parameters: BasicParameters, `private`: Boolean): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
+  inline def generate_RSA(kty: RSA, bitlength: Unit, parameters: Unit, `private`: Boolean): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
+  inline def generate_RSA(kty: RSA, bitlength: Unit, parameters: BasicParameters): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
+  inline def generate_RSA(kty: RSA, bitlength: Unit, parameters: BasicParameters, `private`: Boolean): js.Promise[RSAKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], `private`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[RSAKey]]
   
-  @scala.inline
-  def generate_oct(kty: oct): js.Promise[OctKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OctKey]]
-  @scala.inline
-  def generate_oct(kty: oct, bitlength: Double): js.Promise[OctKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OctKey]]
-  @scala.inline
-  def generate_oct(kty: oct, bitlength: Double, parameters: BasicParameters): js.Promise[OctKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OctKey]]
-  @scala.inline
-  def generate_oct(kty: oct, bitlength: Unit, parameters: BasicParameters): js.Promise[OctKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OctKey]]
+  inline def generate_oct(kty: oct): js.Promise[OctKey] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[OctKey]]
+  inline def generate_oct(kty: oct, bitlength: Double): js.Promise[OctKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OctKey]]
+  inline def generate_oct(kty: oct, bitlength: Double, parameters: BasicParameters): js.Promise[OctKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OctKey]]
+  inline def generate_oct(kty: oct, bitlength: Unit, parameters: BasicParameters): js.Promise[OctKey] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(kty.asInstanceOf[js.Any], bitlength.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[OctKey]]
   
-  @scala.inline
-  def importKey(jwk: JWKECKey): ECKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[ECKey]
-  @scala.inline
-  def importKey(jwk: JWKOKPKey): OKPKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[OKPKey]
-  @scala.inline
-  def importKey(jwk: JWKOctKey): OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[OctKey]
-  @scala.inline
-  def importKey(jwk: JWKRSAKey): RSAKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[RSAKey]
-  @scala.inline
-  def importKey(key: KeyInput): RSAKey | ECKey | OKPKey | OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(key.asInstanceOf[js.Any]).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
-  @scala.inline
-  def importKey(key: KeyInput, parameters: KeyParameters): RSAKey | ECKey | OKPKey | OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
+  inline def importKey(jwk: JWKECKey): ECKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[ECKey]
+  inline def importKey(jwk: JWKOKPKey): OKPKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[OKPKey]
+  inline def importKey(jwk: JWKOctKey): OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[OctKey]
+  inline def importKey(jwk: JWKRSAKey): RSAKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(jwk.asInstanceOf[js.Any]).asInstanceOf[RSAKey]
+  inline def importKey(key: KeyInput): RSAKey | ECKey | OKPKey | OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(key.asInstanceOf[js.Any]).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
+  inline def importKey(key: KeyInput, parameters: KeyParameters): RSAKey | ECKey | OKPKey | OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
   /*
     * @deprecated in favor of asKey
     */
-  @scala.inline
-  def importKey(key: KeyObject): RSAKey | ECKey | OKPKey | OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(key.asInstanceOf[js.Any]).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
-  @scala.inline
-  def importKey(key: KeyObject, parameters: KeyParameters): RSAKey | ECKey | OKPKey | OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
+  inline def importKey(key: KeyObject): RSAKey | ECKey | OKPKey | OctKey = ^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(key.asInstanceOf[js.Any]).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
+  inline def importKey(key: KeyObject, parameters: KeyParameters): RSAKey | ECKey | OKPKey | OctKey = (^.asInstanceOf[js.Dynamic].applyDynamic("importKey")(key.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[RSAKey | ECKey | OKPKey | OctKey]
   
-  @scala.inline
-  def isKey(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isKey(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @js.native
   trait ECKey
@@ -544,32 +446,24 @@ object JWK {
   }
   object pemEncodingOptions {
     
-    @scala.inline
-    def apply(): pemEncodingOptions = {
+    inline def apply(): pemEncodingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[pemEncodingOptions]
     }
     
-    @scala.inline
-    implicit class pemEncodingOptionsMutableBuilder[Self <: pemEncodingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: pemEncodingOptions](x: Self) {
       
-      @scala.inline
-      def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
+      inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
+      inline def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
       
-      @scala.inline
-      def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+      inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+      inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

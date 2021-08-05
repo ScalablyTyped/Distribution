@@ -37,44 +37,32 @@ object groupSpacerTypesMod {
   }
   object IGroupSpacerProps {
     
-    @scala.inline
-    def apply(count: Double): IGroupSpacerProps = {
+    inline def apply(count: Double): IGroupSpacerProps = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGroupSpacerProps]
     }
     
-    @scala.inline
-    implicit class IGroupSpacerPropsMutableBuilder[Self <: IGroupSpacerProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupSpacerProps](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
+      inline def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
+      inline def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IGroupSpacerStyleProps, IGroupSpacerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IGroupSpacerStyleProps, IGroupSpacerStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IGroupSpacerStyleProps => DeepPartial[IGroupSpacerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IGroupSpacerStyleProps => DeepPartial[IGroupSpacerStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -87,23 +75,18 @@ object groupSpacerTypesMod {
   }
   object IGroupSpacerStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): IGroupSpacerStyleProps = {
+    inline def apply(theme: ITheme): IGroupSpacerStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGroupSpacerStyleProps]
     }
     
-    @scala.inline
-    implicit class IGroupSpacerStylePropsMutableBuilder[Self <: IGroupSpacerStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupSpacerStyleProps](x: Self) {
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -113,23 +96,18 @@ object groupSpacerTypesMod {
   }
   object IGroupSpacerStyles {
     
-    @scala.inline
-    def apply(): IGroupSpacerStyles = {
+    inline def apply(): IGroupSpacerStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGroupSpacerStyles]
     }
     
-    @scala.inline
-    implicit class IGroupSpacerStylesMutableBuilder[Self <: IGroupSpacerStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IGroupSpacerStyles](x: Self) {
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
 }

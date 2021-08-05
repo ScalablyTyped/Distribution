@@ -12,16 +12,13 @@ trait OpenCardDetailOptions
 }
 object OpenCardDetailOptions {
   
-  @scala.inline
-  def apply(passId: String): OpenCardDetailOptions = {
+  inline def apply(passId: String): OpenCardDetailOptions = {
     val __obj = js.Dynamic.literal(passId = passId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenCardDetailOptions]
   }
   
-  @scala.inline
-  implicit class OpenCardDetailOptionsMutableBuilder[Self <: OpenCardDetailOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenCardDetailOptions](x: Self) {
     
-    @scala.inline
-    def setPassId(value: String): Self = StObject.set(x, "passId", value.asInstanceOf[js.Any])
+    inline def setPassId(value: String): Self = StObject.set(x, "passId", value.asInstanceOf[js.Any])
   }
 }

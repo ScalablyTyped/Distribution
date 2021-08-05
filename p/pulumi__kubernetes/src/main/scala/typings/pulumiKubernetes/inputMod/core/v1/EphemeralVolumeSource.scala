@@ -28,25 +28,19 @@ trait EphemeralVolumeSource extends StObject {
 }
 object EphemeralVolumeSource {
   
-  @scala.inline
-  def apply(): EphemeralVolumeSource = {
+  inline def apply(): EphemeralVolumeSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EphemeralVolumeSource]
   }
   
-  @scala.inline
-  implicit class EphemeralVolumeSourceMutableBuilder[Self <: EphemeralVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: EphemeralVolumeSource](x: Self) {
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setVolumeClaimTemplate(value: Input[PersistentVolumeClaimTemplate]): Self = StObject.set(x, "volumeClaimTemplate", value.asInstanceOf[js.Any])
+    inline def setVolumeClaimTemplate(value: Input[PersistentVolumeClaimTemplate]): Self = StObject.set(x, "volumeClaimTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeClaimTemplateUndefined: Self = StObject.set(x, "volumeClaimTemplate", js.undefined)
+    inline def setVolumeClaimTemplateUndefined: Self = StObject.set(x, "volumeClaimTemplate", js.undefined)
   }
 }

@@ -19,25 +19,19 @@ trait StyleData extends StObject {
 }
 object StyleData {
   
-  @scala.inline
-  def apply(Content: String, CreateTime: String, LastModifyTime: String, Name: String): StyleData = {
+  inline def apply(Content: String, CreateTime: String, LastModifyTime: String, Name: String): StyleData = {
     val __obj = js.Dynamic.literal(Content = Content.asInstanceOf[js.Any], CreateTime = CreateTime.asInstanceOf[js.Any], LastModifyTime = LastModifyTime.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleData]
   }
   
-  @scala.inline
-  implicit class StyleDataMutableBuilder[Self <: StyleData] (val x: Self) extends AnyVal {
+  extension [Self <: StyleData](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifyTime(value: String): Self = StObject.set(x, "LastModifyTime", value.asInstanceOf[js.Any])
+    inline def setLastModifyTime(value: String): Self = StObject.set(x, "LastModifyTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

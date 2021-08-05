@@ -5,78 +5,50 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Application: typings.openfin.applicationMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Application").asInstanceOf[typings.openfin.applicationMod.default]
-@scala.inline
-def Application_=(x: typings.openfin.applicationMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Application")(x.asInstanceOf[js.Any])
+inline def Application: typings.openfin.applicationMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Application").asInstanceOf[typings.openfin.applicationMod.default]
+inline def Application_=(x: typings.openfin.applicationMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Application")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def Clipboard: typings.openfin.clipboardMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Clipboard").asInstanceOf[typings.openfin.clipboardMod.default]
-@scala.inline
-def Clipboard_=(x: typings.openfin.clipboardMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Clipboard")(x.asInstanceOf[js.Any])
+inline def Clipboard: typings.openfin.clipboardMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Clipboard").asInstanceOf[typings.openfin.clipboardMod.default]
+inline def Clipboard_=(x: typings.openfin.clipboardMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Clipboard")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def ExternalApplication: typings.openfin.externalApplicationExternalApplicationMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("ExternalApplication").asInstanceOf[typings.openfin.externalApplicationExternalApplicationMod.default]
-@scala.inline
-def ExternalApplication_=(x: typings.openfin.externalApplicationExternalApplicationMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("ExternalApplication")(x.asInstanceOf[js.Any])
+inline def ExternalApplication: typings.openfin.externalApplicationExternalApplicationMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("ExternalApplication").asInstanceOf[typings.openfin.externalApplicationExternalApplicationMod.default]
+inline def ExternalApplication_=(x: typings.openfin.externalApplicationExternalApplicationMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("ExternalApplication")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def ExternalWindow: typings.openfin.externalWindowExternalWindowMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("ExternalWindow").asInstanceOf[typings.openfin.externalWindowExternalWindowMod.default]
-@scala.inline
-def ExternalWindow_=(x: typings.openfin.externalWindowExternalWindowMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("ExternalWindow")(x.asInstanceOf[js.Any])
+inline def ExternalWindow: typings.openfin.externalWindowExternalWindowMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("ExternalWindow").asInstanceOf[typings.openfin.externalWindowExternalWindowMod.default]
+inline def ExternalWindow_=(x: typings.openfin.externalWindowExternalWindowMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("ExternalWindow")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def Frame: typings.openfin.frameFrameMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Frame").asInstanceOf[typings.openfin.frameFrameMod.default]
-@scala.inline
-def Frame_=(x: typings.openfin.frameFrameMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Frame")(x.asInstanceOf[js.Any])
+inline def Frame: typings.openfin.frameFrameMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Frame").asInstanceOf[typings.openfin.frameFrameMod.default]
+inline def Frame_=(x: typings.openfin.frameFrameMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Frame")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def GlobalHotkey: typings.openfin.apiGlobalHotkeyMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("GlobalHotkey").asInstanceOf[typings.openfin.apiGlobalHotkeyMod.default]
-@scala.inline
-def GlobalHotkey_=(x: typings.openfin.apiGlobalHotkeyMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("GlobalHotkey")(x.asInstanceOf[js.Any])
+inline def GlobalHotkey: typings.openfin.apiGlobalHotkeyMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("GlobalHotkey").asInstanceOf[typings.openfin.apiGlobalHotkeyMod.default]
+inline def GlobalHotkey_=(x: typings.openfin.apiGlobalHotkeyMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("GlobalHotkey")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def InterApplicationBus: typings.openfin.interappbusMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("InterApplicationBus").asInstanceOf[typings.openfin.interappbusMod.default]
-@scala.inline
-def InterApplicationBus_=(x: typings.openfin.interappbusMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("InterApplicationBus")(x.asInstanceOf[js.Any])
+inline def InterApplicationBus: typings.openfin.interappbusMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("InterApplicationBus").asInstanceOf[typings.openfin.interappbusMod.default]
+inline def InterApplicationBus_=(x: typings.openfin.interappbusMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("InterApplicationBus")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def Layout: typings.openfin.layoutMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Layout").asInstanceOf[typings.openfin.layoutMod.default]
+inline def Layout: typings.openfin.layoutMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Layout").asInstanceOf[typings.openfin.layoutMod.default]
 type Layout = typings.openfin.layoutMod.Layout
-@scala.inline
-def Layout_=(x: typings.openfin.layoutMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Layout")(x.asInstanceOf[js.Any])
+inline def Layout_=(x: typings.openfin.layoutMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Layout")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def Notification: typings.openfin.notificationMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Notification").asInstanceOf[typings.openfin.notificationMod.default]
-@scala.inline
-def Notification_=(x: typings.openfin.notificationMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Notification")(x.asInstanceOf[js.Any])
+inline def Notification: typings.openfin.notificationMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Notification").asInstanceOf[typings.openfin.notificationMod.default]
+inline def Notification_=(x: typings.openfin.notificationMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Notification")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def Platform: typings.openfin.platformPlatformMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Platform").asInstanceOf[typings.openfin.platformPlatformMod.default]
+inline def Platform: typings.openfin.platformPlatformMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Platform").asInstanceOf[typings.openfin.platformPlatformMod.default]
 type Platform = typings.openfin.platformPlatformMod.Platform
-@scala.inline
-def Platform_=(x: typings.openfin.platformPlatformMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Platform")(x.asInstanceOf[js.Any])
+inline def Platform_=(x: typings.openfin.platformPlatformMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Platform")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def System: typings.openfin.systemSystemMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("System").asInstanceOf[typings.openfin.systemSystemMod.default]
-@scala.inline
-def System_=(x: typings.openfin.systemSystemMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("System")(x.asInstanceOf[js.Any])
+inline def System: typings.openfin.systemSystemMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("System").asInstanceOf[typings.openfin.systemSystemMod.default]
+inline def System_=(x: typings.openfin.systemSystemMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("System")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def View: typings.openfin.viewViewMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("View").asInstanceOf[typings.openfin.viewViewMod.default]
+inline def View: typings.openfin.viewViewMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("View").asInstanceOf[typings.openfin.viewViewMod.default]
 type View = typings.openfin.viewViewMod.View
-@scala.inline
-def View_=(x: typings.openfin.viewViewMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+inline def View_=(x: typings.openfin.viewViewMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def Window: typings.openfin.windowWindowMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Window").asInstanceOf[typings.openfin.windowWindowMod.default]
-@scala.inline
-def Window_=(x: typings.openfin.windowWindowMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Window")(x.asInstanceOf[js.Any])
+inline def Window: typings.openfin.windowWindowMod.default = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("Window").asInstanceOf[typings.openfin.windowWindowMod.default]
+inline def Window_=(x: typings.openfin.windowWindowMod.default): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("Window")(x.asInstanceOf[js.Any])
 
-@scala.inline
-def me: (typings.openfin.viewViewMod.View | typings.std.Window | typings.openfin.v2MainMod.Frame | js.Object) & (/* import warning: importer.ImportType#apply Failed type conversion: openfin.openfin/_v2/transport/transport.default['me'] */ js.Any) = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("me").asInstanceOf[(typings.openfin.viewViewMod.View | typings.std.Window | typings.openfin.v2MainMod.Frame | js.Object) & (/* import warning: importer.ImportType#apply Failed type conversion: openfin.openfin/_v2/transport/transport.default['me'] */ js.Any)]
-@scala.inline
-def me_=(
+inline def me: (typings.openfin.viewViewMod.View | typings.std.Window | typings.openfin.v2MainMod.Frame | js.Object) & (/* import warning: importer.ImportType#apply Failed type conversion: openfin.openfin/_v2/transport/transport.default['me'] */ js.Any) = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].selectDynamic("me").asInstanceOf[(typings.openfin.viewViewMod.View | typings.std.Window | typings.openfin.v2MainMod.Frame | js.Object) & (/* import warning: importer.ImportType#apply Failed type conversion: openfin.openfin/_v2/transport/transport.default['me'] */ js.Any)]
+inline def me_=(
   x: (typings.openfin.viewViewMod.View | typings.std.Window | typings.openfin.v2MainMod.Frame | js.Object) & (/* import warning: importer.ImportType#apply Failed type conversion: openfin.openfin/_v2/transport/transport.default['me'] */ js.Any)
 ): scala.Unit = typings.openfin.mod.fin.^.asInstanceOf[js.Dynamic].updateDynamic("me")(x.asInstanceOf[js.Any])
 

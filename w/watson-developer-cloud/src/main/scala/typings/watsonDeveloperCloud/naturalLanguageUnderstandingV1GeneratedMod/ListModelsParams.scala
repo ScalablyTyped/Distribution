@@ -13,25 +13,19 @@ trait ListModelsParams extends StObject {
 }
 object ListModelsParams {
   
-  @scala.inline
-  def apply(): ListModelsParams = {
+  inline def apply(): ListModelsParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListModelsParams]
   }
   
-  @scala.inline
-  implicit class ListModelsParamsMutableBuilder[Self <: ListModelsParams] (val x: Self) extends AnyVal {
+  extension [Self <: ListModelsParams](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

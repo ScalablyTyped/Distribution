@@ -19,8 +19,7 @@ object previewThumbnailTypesMod {
   }
   object IPreviewThumbnail {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       setTime: String => Unit,
@@ -30,20 +29,15 @@ object previewThumbnailTypesMod {
       __obj.asInstanceOf[IPreviewThumbnail]
     }
     
-    @scala.inline
-    implicit class IPreviewThumbnailMutableBuilder[Self <: IPreviewThumbnail] (val x: Self) extends AnyVal {
+    extension [Self <: IPreviewThumbnail](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetTime(value: String => Unit): Self = StObject.set(x, "setTime", js.Any.fromFunction1(value))
+      inline def setSetTime(value: String => Unit): Self = StObject.set(x, "setTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowAt(value: Double => Unit): Self = StObject.set(x, "showAt", js.Any.fromFunction1(value))
+      inline def setShowAt(value: Double => Unit): Self = StObject.set(x, "showAt", js.Any.fromFunction1(value))
     }
   }
   
@@ -61,8 +55,7 @@ object previewThumbnailTypesMod {
   }
   object IPreviewThumbnailViewStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: String,
       empty: String,
       highQualityFrame: String,
@@ -73,23 +66,17 @@ object previewThumbnailTypesMod {
       __obj.asInstanceOf[IPreviewThumbnailViewStyles]
     }
     
-    @scala.inline
-    implicit class IPreviewThumbnailViewStylesMutableBuilder[Self <: IPreviewThumbnailViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IPreviewThumbnailViewStyles](x: Self) {
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighQualityFrame(value: String): Self = StObject.set(x, "highQualityFrame", value.asInstanceOf[js.Any])
+      inline def setHighQualityFrame(value: String): Self = StObject.set(x, "highQualityFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowQualityFrame(value: String): Self = StObject.set(x, "lowQualityFrame", value.asInstanceOf[js.Any])
+      inline def setLowQualityFrame(value: String): Self = StObject.set(x, "lowQualityFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbText(value: String): Self = StObject.set(x, "thumbText", value.asInstanceOf[js.Any])
+      inline def setThumbText(value: String): Self = StObject.set(x, "thumbText", value.asInstanceOf[js.Any])
     }
   }
 }

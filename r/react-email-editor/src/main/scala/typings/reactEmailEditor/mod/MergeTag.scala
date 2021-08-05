@@ -12,20 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MergeTag extends StObject
 object MergeTag {
   
-  @scala.inline
-  def ConditionalMergeTag(name: String, rules: js.Array[ConditionalMergeTagRule]): typings.reactEmailEditor.mod.ConditionalMergeTag = {
+  inline def ConditionalMergeTag(name: String, rules: js.Array[ConditionalMergeTagRule]): typings.reactEmailEditor.mod.ConditionalMergeTag = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], rules = rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactEmailEditor.mod.ConditionalMergeTag]
   }
   
-  @scala.inline
-  def GroupedMergeTag(mergeTags: js.Array[SimpleMergeTag | typings.reactEmailEditor.mod.GroupedMergeTag], name: String): typings.reactEmailEditor.mod.GroupedMergeTag = {
+  inline def GroupedMergeTag(mergeTags: js.Array[SimpleMergeTag | typings.reactEmailEditor.mod.GroupedMergeTag], name: String): typings.reactEmailEditor.mod.GroupedMergeTag = {
     val __obj = js.Dynamic.literal(mergeTags = mergeTags.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactEmailEditor.mod.GroupedMergeTag]
   }
   
-  @scala.inline
-  def SimpleMergeTag(name: String, value: String): typings.reactEmailEditor.mod.SimpleMergeTag = {
+  inline def SimpleMergeTag(name: String, value: String): typings.reactEmailEditor.mod.SimpleMergeTag = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactEmailEditor.mod.SimpleMergeTag]
   }

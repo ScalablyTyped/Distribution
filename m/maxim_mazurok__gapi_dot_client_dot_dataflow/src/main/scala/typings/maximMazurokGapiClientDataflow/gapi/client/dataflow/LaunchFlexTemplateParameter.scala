@@ -45,73 +45,55 @@ trait LaunchFlexTemplateParameter extends StObject {
 }
 object LaunchFlexTemplateParameter {
   
-  @scala.inline
-  def apply(): LaunchFlexTemplateParameter = {
+  inline def apply(): LaunchFlexTemplateParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchFlexTemplateParameter]
   }
   
-  @scala.inline
-  implicit class LaunchFlexTemplateParameterMutableBuilder[Self <: LaunchFlexTemplateParameter] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchFlexTemplateParameter](x: Self) {
     
-    @scala.inline
-    def setContainerSpec(value: ContainerSpec): Self = StObject.set(x, "containerSpec", value.asInstanceOf[js.Any])
+    inline def setContainerSpec(value: ContainerSpec): Self = StObject.set(x, "containerSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerSpecGcsPath(value: String): Self = StObject.set(x, "containerSpecGcsPath", value.asInstanceOf[js.Any])
+    inline def setContainerSpecGcsPath(value: String): Self = StObject.set(x, "containerSpecGcsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerSpecGcsPathUndefined: Self = StObject.set(x, "containerSpecGcsPath", js.undefined)
+    inline def setContainerSpecGcsPathUndefined: Self = StObject.set(x, "containerSpecGcsPath", js.undefined)
     
-    @scala.inline
-    def setContainerSpecUndefined: Self = StObject.set(x, "containerSpec", js.undefined)
+    inline def setContainerSpecUndefined: Self = StObject.set(x, "containerSpec", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: FlexTemplateRuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: FlexTemplateRuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
-    @scala.inline
-    def setLaunchOptions(
+    inline def setLaunchOptions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[js.Any]
     ): Self = StObject.set(x, "launchOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchOptionsUndefined: Self = StObject.set(x, "launchOptions", js.undefined)
+    inline def setLaunchOptionsUndefined: Self = StObject.set(x, "launchOptions", js.undefined)
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setTransformNameMappings(
+    inline def setTransformNameMappings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LaunchFlexTemplateParameter & TopLevel[js.Any]
     ): Self = StObject.set(x, "transformNameMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformNameMappingsUndefined: Self = StObject.set(x, "transformNameMappings", js.undefined)
+    inline def setTransformNameMappingsUndefined: Self = StObject.set(x, "transformNameMappings", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Boolean): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

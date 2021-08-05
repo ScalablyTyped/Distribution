@@ -98,38 +98,28 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCustomLanguageInterface(value: () => String): Self = StObject.set(x, "customLanguageInterface", js.Any.fromFunction0(value))
+      inline def setCustomLanguageInterface(value: () => String): Self = StObject.set(x, "customLanguageInterface", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCustomLanguageInterfaceUndefined: Self = StObject.set(x, "customLanguageInterface", js.undefined)
+      inline def setCustomLanguageInterfaceUndefined: Self = StObject.set(x, "customLanguageInterface", js.undefined)
       
-      @scala.inline
-      def setLogsEnabled(value: Boolean): Self = StObject.set(x, "logsEnabled", value.asInstanceOf[js.Any])
+      inline def setLogsEnabled(value: Boolean): Self = StObject.set(x, "logsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsEnabledUndefined: Self = StObject.set(x, "logsEnabled", js.undefined)
+      inline def setLogsEnabledUndefined: Self = StObject.set(x, "logsEnabled", js.undefined)
       
-      @scala.inline
-      def setPseudo(value: Boolean): Self = StObject.set(x, "pseudo", value.asInstanceOf[js.Any])
+      inline def setPseudo(value: Boolean): Self = StObject.set(x, "pseudo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPseudoMultipleLanguages(value: Boolean): Self = StObject.set(x, "pseudoMultipleLanguages", value.asInstanceOf[js.Any])
+      inline def setPseudoMultipleLanguages(value: Boolean): Self = StObject.set(x, "pseudoMultipleLanguages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPseudoMultipleLanguagesUndefined: Self = StObject.set(x, "pseudoMultipleLanguages", js.undefined)
+      inline def setPseudoMultipleLanguagesUndefined: Self = StObject.set(x, "pseudoMultipleLanguages", js.undefined)
       
-      @scala.inline
-      def setPseudoUndefined: Self = StObject.set(x, "pseudo", js.undefined)
+      inline def setPseudoUndefined: Self = StObject.set(x, "pseudo", js.undefined)
     }
   }
   

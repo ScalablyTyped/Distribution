@@ -16,8 +16,7 @@ trait Key extends StObject {
 }
 object Key {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     key: typings.openpgp.mod.key.Key,
     privateKeyArmored: String,
     publicKeyArmored: String,
@@ -27,19 +26,14 @@ object Key {
     __obj.asInstanceOf[Key]
   }
   
-  @scala.inline
-  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+  extension [Self <: Key](x: Self) {
     
-    @scala.inline
-    def setKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyArmored(value: String): Self = StObject.set(x, "privateKeyArmored", value.asInstanceOf[js.Any])
+    inline def setPrivateKeyArmored(value: String): Self = StObject.set(x, "privateKeyArmored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyArmored(value: String): Self = StObject.set(x, "publicKeyArmored", value.asInstanceOf[js.Any])
+    inline def setPublicKeyArmored(value: String): Self = StObject.set(x, "publicKeyArmored", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevocationCertificate(value: String): Self = StObject.set(x, "revocationCertificate", value.asInstanceOf[js.Any])
+    inline def setRevocationCertificate(value: String): Self = StObject.set(x, "revocationCertificate", value.asInstanceOf[js.Any])
   }
 }

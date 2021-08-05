@@ -30,25 +30,19 @@ trait CommentRichContent extends StObject {
 }
 object CommentRichContent {
   
-  @scala.inline
-  def apply(richContent: String): CommentRichContent = {
+  inline def apply(richContent: String): CommentRichContent = {
     val __obj = js.Dynamic.literal(richContent = richContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentRichContent]
   }
   
-  @scala.inline
-  implicit class CommentRichContentMutableBuilder[Self <: CommentRichContent] (val x: Self) extends AnyVal {
+  extension [Self <: CommentRichContent](x: Self) {
     
-    @scala.inline
-    def setMentions(value: js.Array[CommentMention]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
+    inline def setMentions(value: js.Array[CommentMention]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
+    inline def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
-    @scala.inline
-    def setMentionsVarargs(value: CommentMention*): Self = StObject.set(x, "mentions", js.Array(value :_*))
+    inline def setMentionsVarargs(value: CommentMention*): Self = StObject.set(x, "mentions", js.Array(value :_*))
     
-    @scala.inline
-    def setRichContent(value: String): Self = StObject.set(x, "richContent", value.asInstanceOf[js.Any])
+    inline def setRichContent(value: String): Self = StObject.set(x, "richContent", value.asInstanceOf[js.Any])
   }
 }

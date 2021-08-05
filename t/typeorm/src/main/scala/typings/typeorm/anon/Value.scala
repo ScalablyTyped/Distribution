@@ -14,19 +14,15 @@ trait Value extends StObject {
 }
 object Value {
   
-  @scala.inline
-  def apply(relation: RelationMetadata, value: ObjectLiteral): Value = {
+  inline def apply(relation: RelationMetadata, value: ObjectLiteral): Value = {
     val __obj = js.Dynamic.literal(relation = relation.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+  extension [Self <: Value](x: Self) {
     
-    @scala.inline
-    def setRelation(value: RelationMetadata): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
+    inline def setRelation(value: RelationMetadata): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ObjectLiteral): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ObjectLiteral): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

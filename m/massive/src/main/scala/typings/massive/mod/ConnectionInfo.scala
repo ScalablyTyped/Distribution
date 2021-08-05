@@ -24,64 +24,45 @@ trait ConnectionInfo extends StObject {
 }
 object ConnectionInfo {
   
-  @scala.inline
-  def apply(): ConnectionInfo = {
+  inline def apply(): ConnectionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionInfo]
   }
   
-  @scala.inline
-  implicit class ConnectionInfoMutableBuilder[Self <: ConnectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionInfo](x: Self) {
     
-    @scala.inline
-    def setApplication_name(value: String): Self = StObject.set(x, "application_name", value.asInstanceOf[js.Any])
+    inline def setApplication_name(value: String): Self = StObject.set(x, "application_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication_nameUndefined: Self = StObject.set(x, "application_name", js.undefined)
+    inline def setApplication_nameUndefined: Self = StObject.set(x, "application_name", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
     
-    @scala.inline
-    def setFallback_application_name(value: Boolean): Self = StObject.set(x, "fallback_application_name", value.asInstanceOf[js.Any])
+    inline def setFallback_application_name(value: Boolean): Self = StObject.set(x, "fallback_application_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallback_application_nameUndefined: Self = StObject.set(x, "fallback_application_name", js.undefined)
+    inline def setFallback_application_nameUndefined: Self = StObject.set(x, "fallback_application_name", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordNull: Self = StObject.set(x, "password", null)
+    inline def setPasswordNull: Self = StObject.set(x, "password", null)
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

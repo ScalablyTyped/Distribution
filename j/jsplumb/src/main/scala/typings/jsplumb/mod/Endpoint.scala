@@ -39,8 +39,7 @@ trait Endpoint
 }
 object Endpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     anchor: Anchor,
     connectorSelector: () => Connection,
     getElement: () => Element,
@@ -63,52 +62,36 @@ object Endpoint {
     __obj.asInstanceOf[Endpoint]
   }
   
-  @scala.inline
-  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+  extension [Self <: Endpoint](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+    inline def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+    inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    @scala.inline
-    def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
     
-    @scala.inline
-    def setConnectorSelector(value: () => Connection): Self = StObject.set(x, "connectorSelector", js.Any.fromFunction0(value))
+    inline def setConnectorSelector(value: () => Connection): Self = StObject.set(x, "connectorSelector", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetElement(value: () => Element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    inline def setGetElement(value: () => Element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+    inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
+    inline def setMaxConnections(value: Double): Self = StObject.set(x, "maxConnections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetElement(value: Element => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+    inline def setSetElement(value: Element => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
+    inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "setEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEndpoint(value: EndpointSpec => Unit): Self = StObject.set(x, "setEndpoint", js.Any.fromFunction1(value))
+    inline def setSetEndpoint(value: EndpointSpec => Unit): Self = StObject.set(x, "setEndpoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHover(value: Boolean => Unit): Self = StObject.set(x, "setHover", js.Any.fromFunction1(value))
+    inline def setSetHover(value: Boolean => Unit): Self = StObject.set(x, "setHover", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: EndpointId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EndpointId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

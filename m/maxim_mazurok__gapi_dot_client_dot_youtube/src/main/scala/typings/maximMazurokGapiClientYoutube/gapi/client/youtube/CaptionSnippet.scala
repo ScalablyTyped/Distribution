@@ -54,91 +54,63 @@ trait CaptionSnippet extends StObject {
 }
 object CaptionSnippet {
   
-  @scala.inline
-  def apply(): CaptionSnippet = {
+  inline def apply(): CaptionSnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptionSnippet]
   }
   
-  @scala.inline
-  implicit class CaptionSnippetMutableBuilder[Self <: CaptionSnippet] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionSnippet](x: Self) {
     
-    @scala.inline
-    def setAudioTrackType(value: String): Self = StObject.set(x, "audioTrackType", value.asInstanceOf[js.Any])
+    inline def setAudioTrackType(value: String): Self = StObject.set(x, "audioTrackType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioTrackTypeUndefined: Self = StObject.set(x, "audioTrackType", js.undefined)
+    inline def setAudioTrackTypeUndefined: Self = StObject.set(x, "audioTrackType", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setIsAutoSynced(value: Boolean): Self = StObject.set(x, "isAutoSynced", value.asInstanceOf[js.Any])
+    inline def setIsAutoSynced(value: Boolean): Self = StObject.set(x, "isAutoSynced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoSyncedUndefined: Self = StObject.set(x, "isAutoSynced", js.undefined)
+    inline def setIsAutoSyncedUndefined: Self = StObject.set(x, "isAutoSynced", js.undefined)
     
-    @scala.inline
-    def setIsCC(value: Boolean): Self = StObject.set(x, "isCC", value.asInstanceOf[js.Any])
+    inline def setIsCC(value: Boolean): Self = StObject.set(x, "isCC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCCUndefined: Self = StObject.set(x, "isCC", js.undefined)
+    inline def setIsCCUndefined: Self = StObject.set(x, "isCC", js.undefined)
     
-    @scala.inline
-    def setIsDraft(value: Boolean): Self = StObject.set(x, "isDraft", value.asInstanceOf[js.Any])
+    inline def setIsDraft(value: Boolean): Self = StObject.set(x, "isDraft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDraftUndefined: Self = StObject.set(x, "isDraft", js.undefined)
+    inline def setIsDraftUndefined: Self = StObject.set(x, "isDraft", js.undefined)
     
-    @scala.inline
-    def setIsEasyReader(value: Boolean): Self = StObject.set(x, "isEasyReader", value.asInstanceOf[js.Any])
+    inline def setIsEasyReader(value: Boolean): Self = StObject.set(x, "isEasyReader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEasyReaderUndefined: Self = StObject.set(x, "isEasyReader", js.undefined)
+    inline def setIsEasyReaderUndefined: Self = StObject.set(x, "isEasyReader", js.undefined)
     
-    @scala.inline
-    def setIsLarge(value: Boolean): Self = StObject.set(x, "isLarge", value.asInstanceOf[js.Any])
+    inline def setIsLarge(value: Boolean): Self = StObject.set(x, "isLarge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLargeUndefined: Self = StObject.set(x, "isLarge", js.undefined)
+    inline def setIsLargeUndefined: Self = StObject.set(x, "isLarge", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTrackKind(value: String): Self = StObject.set(x, "trackKind", value.asInstanceOf[js.Any])
+    inline def setTrackKind(value: String): Self = StObject.set(x, "trackKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackKindUndefined: Self = StObject.set(x, "trackKind", js.undefined)
+    inline def setTrackKindUndefined: Self = StObject.set(x, "trackKind", js.undefined)
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

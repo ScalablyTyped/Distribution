@@ -37,44 +37,32 @@ object tabPaneMod {
   }
   object TabPaneProps {
     
-    @scala.inline
-    def apply(): TabPaneProps = {
+    inline def apply(): TabPaneProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabPaneProps]
     }
     
-    @scala.inline
-    implicit class TabPanePropsMutableBuilder[Self <: TabPaneProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabPaneProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: Boolean | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: Boolean | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+      inline def setEventKey(value: js.Any): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
+      inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
       
-      @scala.inline
-      def setMountOnEnter(value: Boolean): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
+      inline def setMountOnEnter(value: Boolean): Self = StObject.set(x, "mountOnEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
+      inline def setMountOnEnterUndefined: Self = StObject.set(x, "mountOnEnter", js.undefined)
       
-      @scala.inline
-      def setUnmountOnExit(value: Boolean): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
+      inline def setUnmountOnExit(value: Boolean): Self = StObject.set(x, "unmountOnExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
+      inline def setUnmountOnExitUndefined: Self = StObject.set(x, "unmountOnExit", js.undefined)
     }
   }
 }

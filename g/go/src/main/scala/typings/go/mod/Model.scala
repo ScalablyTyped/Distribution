@@ -436,12 +436,8 @@ object Model {
     * @param {model=} model an optional model to be modified; if not supplied, it constructs and returns a new model whose name is specified by the "class" property.
     */
   /* static member */
-  @scala.inline
-  def fromJson(s: String): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any]).asInstanceOf[Model]
-  @scala.inline
-  def fromJson(s: String, model: Model): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Model]
-  @scala.inline
-  def fromJson(s: js.Object): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any]).asInstanceOf[Model]
-  @scala.inline
-  def fromJson(s: js.Object, model: Model): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Model]
+  inline def fromJson(s: String): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any]).asInstanceOf[Model]
+  inline def fromJson(s: String, model: Model): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Model]
+  inline def fromJson(s: js.Object): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any]).asInstanceOf[Model]
+  inline def fromJson(s: js.Object, model: Model): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(s.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[Model]
 }

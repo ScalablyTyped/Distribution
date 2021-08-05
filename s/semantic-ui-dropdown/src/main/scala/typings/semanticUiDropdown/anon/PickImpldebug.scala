@@ -11,16 +11,13 @@ trait PickImpldebug extends StObject {
 }
 object PickImpldebug {
   
-  @scala.inline
-  def apply(debug: Boolean): PickImpldebug = {
+  inline def apply(debug: Boolean): PickImpldebug = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldebug]
   }
   
-  @scala.inline
-  implicit class PickImpldebugMutableBuilder[Self <: PickImpldebug] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldebug](x: Self) {
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
   }
 }

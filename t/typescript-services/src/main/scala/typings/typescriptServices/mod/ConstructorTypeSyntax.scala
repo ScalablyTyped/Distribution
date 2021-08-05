@@ -97,8 +97,7 @@ object ConstructorTypeSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     newKeyword: ISyntaxToken,
     parameterList: typings.typescriptServices.TypeScript.ParameterListSyntax,
     equalsGreaterThanToken: ISyntaxToken,
@@ -106,6 +105,5 @@ object ConstructorTypeSyntax {
   ): typings.typescriptServices.TypeScript.ConstructorTypeSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(newKeyword.asInstanceOf[js.Any], parameterList.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ConstructorTypeSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(`type`: ITypeSyntax): typings.typescriptServices.TypeScript.ConstructorTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ConstructorTypeSyntax]
+  inline def create1(`type`: ITypeSyntax): typings.typescriptServices.TypeScript.ConstructorTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ConstructorTypeSyntax]
 }

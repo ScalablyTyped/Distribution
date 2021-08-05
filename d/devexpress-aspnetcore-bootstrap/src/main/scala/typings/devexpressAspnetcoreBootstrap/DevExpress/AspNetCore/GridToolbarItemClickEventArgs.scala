@@ -18,8 +18,7 @@ trait GridToolbarItemClickEventArgs
 }
 object GridToolbarItemClickEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     item: BootstrapMenuItem,
     processOnServer: Boolean,
     sender: Control,
@@ -31,19 +30,14 @@ object GridToolbarItemClickEventArgs {
     __obj.asInstanceOf[GridToolbarItemClickEventArgs]
   }
   
-  @scala.inline
-  implicit class GridToolbarItemClickEventArgsMutableBuilder[Self <: GridToolbarItemClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GridToolbarItemClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setItem(value: BootstrapMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: BootstrapMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarIndex(value: Double): Self = StObject.set(x, "toolbarIndex", value.asInstanceOf[js.Any])
+    inline def setToolbarIndex(value: Double): Self = StObject.set(x, "toolbarIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarName(value: String): Self = StObject.set(x, "toolbarName", value.asInstanceOf[js.Any])
+    inline def setToolbarName(value: String): Self = StObject.set(x, "toolbarName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsePostBack(value: Boolean): Self = StObject.set(x, "usePostBack", value.asInstanceOf[js.Any])
+    inline def setUsePostBack(value: Boolean): Self = StObject.set(x, "usePostBack", value.asInstanceOf[js.Any])
   }
 }

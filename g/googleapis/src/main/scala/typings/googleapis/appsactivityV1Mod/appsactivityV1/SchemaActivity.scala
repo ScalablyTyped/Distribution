@@ -23,28 +23,21 @@ trait SchemaActivity extends StObject {
 }
 object SchemaActivity {
   
-  @scala.inline
-  def apply(): SchemaActivity = {
+  inline def apply(): SchemaActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaActivity]
   }
   
-  @scala.inline
-  implicit class SchemaActivityMutableBuilder[Self <: SchemaActivity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaActivity](x: Self) {
     
-    @scala.inline
-    def setCombinedEvent(value: SchemaEvent): Self = StObject.set(x, "combinedEvent", value.asInstanceOf[js.Any])
+    inline def setCombinedEvent(value: SchemaEvent): Self = StObject.set(x, "combinedEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCombinedEventUndefined: Self = StObject.set(x, "combinedEvent", js.undefined)
+    inline def setCombinedEventUndefined: Self = StObject.set(x, "combinedEvent", js.undefined)
     
-    @scala.inline
-    def setSingleEvents(value: js.Array[SchemaEvent]): Self = StObject.set(x, "singleEvents", value.asInstanceOf[js.Any])
+    inline def setSingleEvents(value: js.Array[SchemaEvent]): Self = StObject.set(x, "singleEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleEventsUndefined: Self = StObject.set(x, "singleEvents", js.undefined)
+    inline def setSingleEventsUndefined: Self = StObject.set(x, "singleEvents", js.undefined)
     
-    @scala.inline
-    def setSingleEventsVarargs(value: SchemaEvent*): Self = StObject.set(x, "singleEvents", js.Array(value :_*))
+    inline def setSingleEventsVarargs(value: SchemaEvent*): Self = StObject.set(x, "singleEvents", js.Array(value :_*))
   }
 }

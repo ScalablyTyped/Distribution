@@ -55,91 +55,63 @@ trait Disk extends StObject {
 }
 object Disk {
   
-  @scala.inline
-  def apply(): Disk = {
+  inline def apply(): Disk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Disk]
   }
   
-  @scala.inline
-  implicit class DiskMutableBuilder[Self <: Disk] (val x: Self) extends AnyVal {
+  extension [Self <: Disk](x: Self) {
     
-    @scala.inline
-    def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
+    inline def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
+    inline def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
     
-    @scala.inline
-    def setBoot(value: Boolean): Self = StObject.set(x, "boot", value.asInstanceOf[js.Any])
+    inline def setBoot(value: Boolean): Self = StObject.set(x, "boot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootUndefined: Self = StObject.set(x, "boot", js.undefined)
+    inline def setBootUndefined: Self = StObject.set(x, "boot", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
+    inline def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
-    @scala.inline
-    def setGuestOsFeatures(value: js.Array[GuestOsFeature]): Self = StObject.set(x, "guestOsFeatures", value.asInstanceOf[js.Any])
+    inline def setGuestOsFeatures(value: js.Array[GuestOsFeature]): Self = StObject.set(x, "guestOsFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
+    inline def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
     
-    @scala.inline
-    def setGuestOsFeaturesVarargs(value: GuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
+    inline def setGuestOsFeaturesVarargs(value: GuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
+    inline def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
+    inline def setInterfaceUndefined: Self = StObject.set(x, "interface", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLicenses(value: js.Array[String]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+    inline def setLicenses(value: js.Array[String]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
+    inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
-    @scala.inline
-    def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
+    inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

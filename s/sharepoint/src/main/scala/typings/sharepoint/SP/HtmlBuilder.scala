@@ -22,8 +22,7 @@ trait HtmlBuilder extends StObject {
 }
 object HtmlBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAttribute: (String, String) => Unit,
     addCommunitiesCssClass: String => Unit,
     addCssClass: String => Unit,
@@ -36,28 +35,20 @@ object HtmlBuilder {
     __obj.asInstanceOf[HtmlBuilder]
   }
   
-  @scala.inline
-  implicit class HtmlBuilderMutableBuilder[Self <: HtmlBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlBuilder](x: Self) {
     
-    @scala.inline
-    def setAddAttribute(value: (String, String) => Unit): Self = StObject.set(x, "addAttribute", js.Any.fromFunction2(value))
+    inline def setAddAttribute(value: (String, String) => Unit): Self = StObject.set(x, "addAttribute", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddCommunitiesCssClass(value: String => Unit): Self = StObject.set(x, "addCommunitiesCssClass", js.Any.fromFunction1(value))
+    inline def setAddCommunitiesCssClass(value: String => Unit): Self = StObject.set(x, "addCommunitiesCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddCssClass(value: String => Unit): Self = StObject.set(x, "addCssClass", js.Any.fromFunction1(value))
+    inline def setAddCssClass(value: String => Unit): Self = StObject.set(x, "addCssClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderBeginTag(value: String => Unit): Self = StObject.set(x, "renderBeginTag", js.Any.fromFunction1(value))
+    inline def setRenderBeginTag(value: String => Unit): Self = StObject.set(x, "renderBeginTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderEndTag(value: () => Unit): Self = StObject.set(x, "renderEndTag", js.Any.fromFunction0(value))
+    inline def setRenderEndTag(value: () => Unit): Self = StObject.set(x, "renderEndTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteEncoded(value: String => Unit): Self = StObject.set(x, "writeEncoded", js.Any.fromFunction1(value))
+    inline def setWriteEncoded(value: String => Unit): Self = StObject.set(x, "writeEncoded", js.Any.fromFunction1(value))
   }
 }

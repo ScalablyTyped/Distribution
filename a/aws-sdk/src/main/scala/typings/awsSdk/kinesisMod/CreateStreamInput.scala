@@ -18,19 +18,15 @@ trait CreateStreamInput extends StObject {
 }
 object CreateStreamInput {
   
-  @scala.inline
-  def apply(ShardCount: PositiveIntegerObject, StreamName: StreamName): CreateStreamInput = {
+  inline def apply(ShardCount: PositiveIntegerObject, StreamName: StreamName): CreateStreamInput = {
     val __obj = js.Dynamic.literal(ShardCount = ShardCount.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateStreamInput]
   }
   
-  @scala.inline
-  implicit class CreateStreamInputMutableBuilder[Self <: CreateStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStreamInput](x: Self) {
     
-    @scala.inline
-    def setShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "ShardCount", value.asInstanceOf[js.Any])
+    inline def setShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "ShardCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait ListChannelMembershipsForAppInstanceUserRequest extends StObject {
 }
 object ListChannelMembershipsForAppInstanceUserRequest {
   
-  @scala.inline
-  def apply(): ListChannelMembershipsForAppInstanceUserRequest = {
+  inline def apply(): ListChannelMembershipsForAppInstanceUserRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListChannelMembershipsForAppInstanceUserRequest]
   }
   
-  @scala.inline
-  implicit class ListChannelMembershipsForAppInstanceUserRequestMutableBuilder[Self <: ListChannelMembershipsForAppInstanceUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListChannelMembershipsForAppInstanceUserRequest](x: Self) {
     
-    @scala.inline
-    def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
+    inline def setAppInstanceUserArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppInstanceUserArnUndefined: Self = StObject.set(x, "AppInstanceUserArn", js.undefined)
+    inline def setAppInstanceUserArnUndefined: Self = StObject.set(x, "AppInstanceUserArn", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

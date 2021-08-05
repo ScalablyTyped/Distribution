@@ -49,8 +49,7 @@ trait Annotation
 }
 object Annotation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -85,25 +84,18 @@ object Annotation {
     __obj.asInstanceOf[Annotation]
   }
   
-  @scala.inline
-  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
+  extension [Self <: Annotation](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeValue(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
+    inline def setDateTimeValue(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "DateTimeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitials(value: String): Self = StObject.set(x, "Initials", value.asInstanceOf[js.Any])
+    inline def setInitials(value: String): Self = StObject.set(x, "Initials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -33,25 +33,19 @@ trait SchemaDeviceCredential extends StObject {
 }
 object SchemaDeviceCredential {
   
-  @scala.inline
-  def apply(): SchemaDeviceCredential = {
+  inline def apply(): SchemaDeviceCredential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeviceCredential]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceCredentialMutableBuilder[Self <: SchemaDeviceCredential] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeviceCredential](x: Self) {
     
-    @scala.inline
-    def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: String): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
+    inline def setExpirationTimeUndefined: Self = StObject.set(x, "expirationTime", js.undefined)
     
-    @scala.inline
-    def setPublicKey(value: SchemaPublicKeyCredential): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: SchemaPublicKeyCredential): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
+    inline def setPublicKeyUndefined: Self = StObject.set(x, "publicKey", js.undefined)
   }
 }

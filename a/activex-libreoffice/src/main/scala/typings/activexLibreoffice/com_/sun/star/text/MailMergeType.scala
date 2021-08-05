@@ -19,16 +19,12 @@ object MailMergeType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FILE: `2` = 2.asInstanceOf[`2`]
+    inline def FILE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MAIL: `3` = 3.asInstanceOf[`3`]
+    inline def MAIL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def PRINTER: `1` = 1.asInstanceOf[`1`]
+    inline def PRINTER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SHELL: `4` = 4.asInstanceOf[`4`]
+    inline def SHELL: `4` = 4.asInstanceOf[`4`]
   }
 }

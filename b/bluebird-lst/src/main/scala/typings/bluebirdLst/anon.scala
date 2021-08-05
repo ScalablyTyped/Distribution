@@ -22,38 +22,28 @@ object anon {
   }
   object Cancellation {
     
-    @scala.inline
-    def apply(): Cancellation = {
+    inline def apply(): Cancellation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cancellation]
     }
     
-    @scala.inline
-    implicit class CancellationMutableBuilder[Self <: Cancellation] (val x: Self) extends AnyVal {
+    extension [Self <: Cancellation](x: Self) {
       
-      @scala.inline
-      def setCancellation(value: Boolean): Self = StObject.set(x, "cancellation", value.asInstanceOf[js.Any])
+      inline def setCancellation(value: Boolean): Self = StObject.set(x, "cancellation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancellationUndefined: Self = StObject.set(x, "cancellation", js.undefined)
+      inline def setCancellationUndefined: Self = StObject.set(x, "cancellation", js.undefined)
       
-      @scala.inline
-      def setLongStackTraces(value: Boolean): Self = StObject.set(x, "longStackTraces", value.asInstanceOf[js.Any])
+      inline def setLongStackTraces(value: Boolean): Self = StObject.set(x, "longStackTraces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongStackTracesUndefined: Self = StObject.set(x, "longStackTraces", js.undefined)
+      inline def setLongStackTracesUndefined: Self = StObject.set(x, "longStackTraces", js.undefined)
       
-      @scala.inline
-      def setMonitoring(value: Boolean): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
+      inline def setMonitoring(value: Boolean): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
+      inline def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
       
-      @scala.inline
-      def setWarnings(value: Boolean | WForgottenReturn): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: Boolean | WForgottenReturn): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     }
   }
   
@@ -64,17 +54,14 @@ object anon {
   }
   object WForgottenReturn {
     
-    @scala.inline
-    def apply(wForgottenReturn: Boolean): WForgottenReturn = {
+    inline def apply(wForgottenReturn: Boolean): WForgottenReturn = {
       val __obj = js.Dynamic.literal(wForgottenReturn = wForgottenReturn.asInstanceOf[js.Any])
       __obj.asInstanceOf[WForgottenReturn]
     }
     
-    @scala.inline
-    implicit class WForgottenReturnMutableBuilder[Self <: WForgottenReturn] (val x: Self) extends AnyVal {
+    extension [Self <: WForgottenReturn](x: Self) {
       
-      @scala.inline
-      def setWForgottenReturn(value: Boolean): Self = StObject.set(x, "wForgottenReturn", value.asInstanceOf[js.Any])
+      inline def setWForgottenReturn(value: Boolean): Self = StObject.set(x, "wForgottenReturn", value.asInstanceOf[js.Any])
     }
   }
 }

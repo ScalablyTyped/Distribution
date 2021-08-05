@@ -42,28 +42,21 @@ trait MerchantInfo extends StObject {
 }
 object MerchantInfo {
   
-  @scala.inline
-  def apply(merchantId: String): MerchantInfo = {
+  inline def apply(merchantId: String): MerchantInfo = {
     val __obj = js.Dynamic.literal(merchantId = merchantId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MerchantInfo]
   }
   
-  @scala.inline
-  implicit class MerchantInfoMutableBuilder[Self <: MerchantInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MerchantInfo](x: Self) {
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantName(value: String): Self = StObject.set(x, "merchantName", value.asInstanceOf[js.Any])
+    inline def setMerchantName(value: String): Self = StObject.set(x, "merchantName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantNameUndefined: Self = StObject.set(x, "merchantName", js.undefined)
+    inline def setMerchantNameUndefined: Self = StObject.set(x, "merchantName", js.undefined)
     
-    @scala.inline
-    def setSoftwareInfo(value: SoftwareInfo): Self = StObject.set(x, "softwareInfo", value.asInstanceOf[js.Any])
+    inline def setSoftwareInfo(value: SoftwareInfo): Self = StObject.set(x, "softwareInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareInfoUndefined: Self = StObject.set(x, "softwareInfo", js.undefined)
+    inline def setSoftwareInfoUndefined: Self = StObject.set(x, "softwareInfo", js.undefined)
   }
 }

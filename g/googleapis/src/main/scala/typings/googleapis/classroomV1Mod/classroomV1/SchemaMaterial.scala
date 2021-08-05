@@ -33,37 +33,27 @@ trait SchemaMaterial extends StObject {
 }
 object SchemaMaterial {
   
-  @scala.inline
-  def apply(): SchemaMaterial = {
+  inline def apply(): SchemaMaterial = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMaterial]
   }
   
-  @scala.inline
-  implicit class SchemaMaterialMutableBuilder[Self <: SchemaMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMaterial](x: Self) {
     
-    @scala.inline
-    def setDriveFile(value: SchemaSharedDriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
+    inline def setDriveFile(value: SchemaSharedDriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
+    inline def setDriveFileUndefined: Self = StObject.set(x, "driveFile", js.undefined)
     
-    @scala.inline
-    def setForm(value: SchemaForm): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: SchemaForm): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    @scala.inline
-    def setLink(value: SchemaLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: SchemaLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setYoutubeVideo(value: SchemaYouTubeVideo): Self = StObject.set(x, "youtubeVideo", value.asInstanceOf[js.Any])
+    inline def setYoutubeVideo(value: SchemaYouTubeVideo): Self = StObject.set(x, "youtubeVideo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoutubeVideoUndefined: Self = StObject.set(x, "youtubeVideo", js.undefined)
+    inline def setYoutubeVideoUndefined: Self = StObject.set(x, "youtubeVideo", js.undefined)
   }
 }

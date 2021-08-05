@@ -33,43 +33,31 @@ trait Jitter extends StObject {
 }
 object Jitter {
   
-  @scala.inline
-  def apply(): Jitter = {
+  inline def apply(): Jitter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Jitter]
   }
   
-  @scala.inline
-  implicit class JitterMutableBuilder[Self <: Jitter] (val x: Self) extends AnyVal {
+  extension [Self <: Jitter](x: Self) {
     
-    @scala.inline
-    def setJitter(value: js.Any): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
+    inline def setJitter(value: js.Any): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
+    inline def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
     
-    @scala.inline
-    def setMeanFactor(value: js.Any): Self = StObject.set(x, "meanFactor", value.asInstanceOf[js.Any])
+    inline def setMeanFactor(value: js.Any): Self = StObject.set(x, "meanFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeanFactorUndefined: Self = StObject.set(x, "meanFactor", js.undefined)
+    inline def setMeanFactorUndefined: Self = StObject.set(x, "meanFactor", js.undefined)
     
-    @scala.inline
-    def setRoundingFactor(value: js.Any): Self = StObject.set(x, "roundingFactor", value.asInstanceOf[js.Any])
+    inline def setRoundingFactor(value: js.Any): Self = StObject.set(x, "roundingFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundingFactorUndefined: Self = StObject.set(x, "roundingFactor", js.undefined)
+    inline def setRoundingFactorUndefined: Self = StObject.set(x, "roundingFactor", js.undefined)
     
-    @scala.inline
-    def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+    inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+    inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
   }
 }

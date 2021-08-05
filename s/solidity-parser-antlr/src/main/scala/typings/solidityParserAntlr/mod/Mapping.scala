@@ -19,23 +19,18 @@ trait Mapping
 }
 object Mapping {
   
-  @scala.inline
-  def apply(keyType: ElementaryTypeName, valueType: TypeName): Mapping = {
+  inline def apply(keyType: ElementaryTypeName, valueType: TypeName): Mapping = {
     val __obj = js.Dynamic.literal(keyType = keyType.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Mapping")
     __obj.asInstanceOf[Mapping]
   }
   
-  @scala.inline
-  implicit class MappingMutableBuilder[Self <: Mapping] (val x: Self) extends AnyVal {
+  extension [Self <: Mapping](x: Self) {
     
-    @scala.inline
-    def setKeyType(value: ElementaryTypeName): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: ElementaryTypeName): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.Mapping): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.Mapping): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueType(value: TypeName): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: TypeName): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
   }
 }

@@ -34,8 +34,7 @@ trait RetentionPolicy extends StObject {
 }
 object RetentionPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifactTypesToDelete: js.Array[String],
     artifacts: js.Array[String],
     branches: js.Array[String],
@@ -48,37 +47,26 @@ object RetentionPolicy {
     __obj.asInstanceOf[RetentionPolicy]
   }
   
-  @scala.inline
-  implicit class RetentionPolicyMutableBuilder[Self <: RetentionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RetentionPolicy](x: Self) {
     
-    @scala.inline
-    def setArtifactTypesToDelete(value: js.Array[String]): Self = StObject.set(x, "artifactTypesToDelete", value.asInstanceOf[js.Any])
+    inline def setArtifactTypesToDelete(value: js.Array[String]): Self = StObject.set(x, "artifactTypesToDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactTypesToDeleteVarargs(value: String*): Self = StObject.set(x, "artifactTypesToDelete", js.Array(value :_*))
+    inline def setArtifactTypesToDeleteVarargs(value: String*): Self = StObject.set(x, "artifactTypesToDelete", js.Array(value :_*))
     
-    @scala.inline
-    def setArtifacts(value: js.Array[String]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: js.Array[String]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactsVarargs(value: String*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: String*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
-    @scala.inline
-    def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+    inline def setBranches(value: js.Array[String]): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: String*): Self = StObject.set(x, "branches", js.Array(value :_*))
     
-    @scala.inline
-    def setDaysToKeep(value: Double): Self = StObject.set(x, "daysToKeep", value.asInstanceOf[js.Any])
+    inline def setDaysToKeep(value: Double): Self = StObject.set(x, "daysToKeep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteBuildRecord(value: Boolean): Self = StObject.set(x, "deleteBuildRecord", value.asInstanceOf[js.Any])
+    inline def setDeleteBuildRecord(value: Boolean): Self = StObject.set(x, "deleteBuildRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTestResults(value: Boolean): Self = StObject.set(x, "deleteTestResults", value.asInstanceOf[js.Any])
+    inline def setDeleteTestResults(value: Boolean): Self = StObject.set(x, "deleteTestResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumToKeep(value: Double): Self = StObject.set(x, "minimumToKeep", value.asInstanceOf[js.Any])
+    inline def setMinimumToKeep(value: Double): Self = StObject.set(x, "minimumToKeep", value.asInstanceOf[js.Any])
   }
 }

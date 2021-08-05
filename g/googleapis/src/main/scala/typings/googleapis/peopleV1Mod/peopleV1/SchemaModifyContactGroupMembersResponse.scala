@@ -16,22 +16,17 @@ trait SchemaModifyContactGroupMembersResponse extends StObject {
 }
 object SchemaModifyContactGroupMembersResponse {
   
-  @scala.inline
-  def apply(): SchemaModifyContactGroupMembersResponse = {
+  inline def apply(): SchemaModifyContactGroupMembersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModifyContactGroupMembersResponse]
   }
   
-  @scala.inline
-  implicit class SchemaModifyContactGroupMembersResponseMutableBuilder[Self <: SchemaModifyContactGroupMembersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModifyContactGroupMembersResponse](x: Self) {
     
-    @scala.inline
-    def setNotFoundResourceNames(value: js.Array[String]): Self = StObject.set(x, "notFoundResourceNames", value.asInstanceOf[js.Any])
+    inline def setNotFoundResourceNames(value: js.Array[String]): Self = StObject.set(x, "notFoundResourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundResourceNamesUndefined: Self = StObject.set(x, "notFoundResourceNames", js.undefined)
+    inline def setNotFoundResourceNamesUndefined: Self = StObject.set(x, "notFoundResourceNames", js.undefined)
     
-    @scala.inline
-    def setNotFoundResourceNamesVarargs(value: String*): Self = StObject.set(x, "notFoundResourceNames", js.Array(value :_*))
+    inline def setNotFoundResourceNamesVarargs(value: String*): Self = StObject.set(x, "notFoundResourceNames", js.Array(value :_*))
   }
 }

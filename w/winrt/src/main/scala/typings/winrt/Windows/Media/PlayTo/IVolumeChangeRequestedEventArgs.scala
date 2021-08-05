@@ -10,16 +10,13 @@ trait IVolumeChangeRequestedEventArgs extends StObject {
 }
 object IVolumeChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(volume: Double): IVolumeChangeRequestedEventArgs = {
+  inline def apply(volume: Double): IVolumeChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(volume = volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVolumeChangeRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class IVolumeChangeRequestedEventArgsMutableBuilder[Self <: IVolumeChangeRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IVolumeChangeRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

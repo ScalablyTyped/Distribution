@@ -24,8 +24,7 @@ object anon {
   }
   object Config {
     
-    @scala.inline
-    def apply[TimerRef](
+    inline def apply[TimerRef](
       config: StackTraceConfig,
       global: Global,
       moduleMocker: ModuleMocker,
@@ -35,26 +34,19 @@ object anon {
       __obj.asInstanceOf[Config[TimerRef]]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[?], TimerRef] (val x: Self & Config[TimerRef]) extends AnyVal {
+    extension [Self <: Config[?], TimerRef](x: Self & Config[TimerRef]) {
       
-      @scala.inline
-      def setConfig(value: StackTraceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: StackTraceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobal(value: Global): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Global): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLoops(value: Double): Self = StObject.set(x, "maxLoops", value.asInstanceOf[js.Any])
+      inline def setMaxLoops(value: Double): Self = StObject.set(x, "maxLoops", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLoopsUndefined: Self = StObject.set(x, "maxLoops", js.undefined)
+      inline def setMaxLoopsUndefined: Self = StObject.set(x, "maxLoops", js.undefined)
       
-      @scala.inline
-      def setModuleMocker(value: ModuleMocker): Self = StObject.set(x, "moduleMocker", value.asInstanceOf[js.Any])
+      inline def setModuleMocker(value: ModuleMocker): Self = StObject.set(x, "moduleMocker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimerConfig(value: TimerConfig[TimerRef]): Self = StObject.set(x, "timerConfig", value.asInstanceOf[js.Any])
+      inline def setTimerConfig(value: TimerConfig[TimerRef]): Self = StObject.set(x, "timerConfig", value.asInstanceOf[js.Any])
     }
   }
 }

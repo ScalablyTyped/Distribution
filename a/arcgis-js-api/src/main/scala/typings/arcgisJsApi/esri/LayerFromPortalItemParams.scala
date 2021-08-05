@@ -19,8 +19,7 @@ trait LayerFromPortalItemParams
 }
 object LayerFromPortalItemParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     portalItem: PortalItem,
@@ -30,10 +29,8 @@ object LayerFromPortalItemParams {
     __obj.asInstanceOf[LayerFromPortalItemParams]
   }
   
-  @scala.inline
-  implicit class LayerFromPortalItemParamsMutableBuilder[Self <: LayerFromPortalItemParams] (val x: Self) extends AnyVal {
+  extension [Self <: LayerFromPortalItemParams](x: Self) {
     
-    @scala.inline
-    def setPortalItem(value: PortalItem): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+    inline def setPortalItem(value: PortalItem): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
   }
 }

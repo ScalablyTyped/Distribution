@@ -12,19 +12,15 @@ trait JQEditRangeSliderOptions
 }
 object JQEditRangeSliderOptions {
   
-  @scala.inline
-  def apply(): JQEditRangeSliderOptions = {
+  inline def apply(): JQEditRangeSliderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQEditRangeSliderOptions]
   }
   
-  @scala.inline
-  implicit class JQEditRangeSliderOptionsMutableBuilder[Self <: JQEditRangeSliderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JQEditRangeSliderOptions](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

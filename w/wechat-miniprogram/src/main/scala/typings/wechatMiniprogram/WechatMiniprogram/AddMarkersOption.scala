@@ -23,43 +23,31 @@ trait AddMarkersOption extends StObject {
 }
 object AddMarkersOption {
   
-  @scala.inline
-  def apply(markers: js.Array[js.Any]): AddMarkersOption = {
+  inline def apply(markers: js.Array[js.Any]): AddMarkersOption = {
     val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddMarkersOption]
   }
   
-  @scala.inline
-  implicit class AddMarkersOptionMutableBuilder[Self <: AddMarkersOption] (val x: Self) extends AnyVal {
+  extension [Self <: AddMarkersOption](x: Self) {
     
-    @scala.inline
-    def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: js.Array[js.Any]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: js.Any*): Self = StObject.set(x, "markers", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

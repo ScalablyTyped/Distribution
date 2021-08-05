@@ -47,8 +47,7 @@ trait MetadataRequestedEventOptions
 }
 object MetadataRequestedEventOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     entryPath: String,
     fileSystemId: String,
     isDirectory: Boolean,
@@ -63,25 +62,18 @@ object MetadataRequestedEventOptions {
     __obj.asInstanceOf[MetadataRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class MetadataRequestedEventOptionsMutableBuilder[Self <: MetadataRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+    inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: Boolean): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: Boolean): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModificationTime(value: Boolean): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+    inline def setModificationTime(value: Boolean): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }
 }

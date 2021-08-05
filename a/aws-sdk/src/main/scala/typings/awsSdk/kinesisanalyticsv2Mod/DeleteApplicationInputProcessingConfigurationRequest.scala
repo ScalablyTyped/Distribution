@@ -23,22 +23,17 @@ trait DeleteApplicationInputProcessingConfigurationRequest extends StObject {
 }
 object DeleteApplicationInputProcessingConfigurationRequest {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, CurrentApplicationVersionId: ApplicationVersionId, InputId: Id): DeleteApplicationInputProcessingConfigurationRequest = {
+  inline def apply(ApplicationName: ApplicationName, CurrentApplicationVersionId: ApplicationVersionId, InputId: Id): DeleteApplicationInputProcessingConfigurationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], CurrentApplicationVersionId = CurrentApplicationVersionId.asInstanceOf[js.Any], InputId = InputId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationInputProcessingConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteApplicationInputProcessingConfigurationRequestMutableBuilder[Self <: DeleteApplicationInputProcessingConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApplicationInputProcessingConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setCurrentApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "CurrentApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: Id): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
   }
 }

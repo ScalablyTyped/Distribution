@@ -31,35 +31,26 @@ object dataMod {
   }
   object BaseData {
     
-    @scala.inline
-    def apply(name: String): BaseData = {
+    inline def apply(name: String): BaseData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseData]
     }
     
-    @scala.inline
-    implicit class BaseDataMutableBuilder[Self <: BaseData] (val x: Self) extends AnyVal {
+    extension [Self <: BaseData](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(value: js.Array[OnTrigger]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: js.Array[OnTrigger]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      @scala.inline
-      def setOnVarargs(value: OnTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
+      inline def setOnVarargs(value: OnTrigger*): Self = StObject.set(x, "on", js.Array(value :_*))
       
-      @scala.inline
-      def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: js.Array[Transforms]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
+      inline def setTransformVarargs(value: Transforms*): Self = StObject.set(x, "transform", js.Array(value :_*))
     }
   }
   
@@ -72,26 +63,22 @@ object dataMod {
   trait Data extends StObject
   object Data {
     
-    @scala.inline
-    def BaseData(name: String): typings.vegaTypings.dataMod.BaseData = {
+    inline def BaseData(name: String): typings.vegaTypings.dataMod.BaseData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.dataMod.BaseData]
     }
     
-    @scala.inline
-    def SourceData(name: String, source: String | js.Array[String]): typings.vegaTypings.dataMod.SourceData = {
+    inline def SourceData(name: String, source: String | js.Array[String]): typings.vegaTypings.dataMod.SourceData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.dataMod.SourceData]
     }
     
-    @scala.inline
-    def UrlData(name: String, url: URI | SignalRef): typings.vegaTypings.dataMod.UrlData = {
+    inline def UrlData(name: String, url: URI | SignalRef): typings.vegaTypings.dataMod.UrlData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.dataMod.UrlData]
     }
     
-    @scala.inline
-    def ValuesData(name: String, values: js.Array[Datum] | js.Object): typings.vegaTypings.dataMod.ValuesData = {
+    inline def ValuesData(name: String, values: js.Array[Datum] | js.Object): typings.vegaTypings.dataMod.ValuesData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.dataMod.ValuesData]
     }
@@ -108,17 +95,13 @@ object dataMod {
        with TypeInference
   object DataType {
     
-    @scala.inline
-    def boolean: typings.vegaTypings.vegaTypingsStrings.boolean = "boolean".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.boolean]
+    inline def boolean: typings.vegaTypings.vegaTypingsStrings.boolean = "boolean".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.boolean]
     
-    @scala.inline
-    def date: typings.vegaTypings.vegaTypingsStrings.date = "date".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.date]
+    inline def date: typings.vegaTypings.vegaTypingsStrings.date = "date".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.date]
     
-    @scala.inline
-    def number: typings.vegaTypings.vegaTypingsStrings.number = "number".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.number]
+    inline def number: typings.vegaTypings.vegaTypingsStrings.number = "number".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.number]
     
-    @scala.inline
-    def string: typings.vegaTypings.vegaTypingsStrings.string = "string".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.string]
+    inline def string: typings.vegaTypings.vegaTypingsStrings.string = "string".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.string]
   }
   
   type Datum = js.Any
@@ -146,36 +129,27 @@ object dataMod {
   }
   object FormatDSV {
     
-    @scala.inline
-    def apply(delimiter: String): FormatDSV = {
+    inline def apply(delimiter: String): FormatDSV = {
       val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("dsv")
       __obj.asInstanceOf[FormatDSV]
     }
     
-    @scala.inline
-    implicit class FormatDSVMutableBuilder[Self <: FormatDSV] (val x: Self) extends AnyVal {
+    extension [Self <: FormatDSV](x: Self) {
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+      inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
       
-      @scala.inline
-      def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setType(value: dsv): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: dsv): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,36 +167,27 @@ object dataMod {
   }
   object FormatJSON {
     
-    @scala.inline
-    def apply(): FormatJSON = {
+    inline def apply(): FormatJSON = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("json")
       __obj.asInstanceOf[FormatJSON]
     }
     
-    @scala.inline
-    implicit class FormatJSONMutableBuilder[Self <: FormatJSON] (val x: Self) extends AnyVal {
+    extension [Self <: FormatJSON](x: Self) {
       
-      @scala.inline
-      def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+      inline def setCopy(value: Boolean): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+      inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
       
-      @scala.inline
-      def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setProperty(value: String | SignalRef): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String | SignalRef): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+      inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
-      @scala.inline
-      def setType(value: json): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: json): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,33 +203,25 @@ object dataMod {
   }
   object FormatSV {
     
-    @scala.inline
-    def apply(`type`: csv | tsv): FormatSV = {
+    inline def apply(`type`: csv | tsv): FormatSV = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormatSV]
     }
     
-    @scala.inline
-    implicit class FormatSVMutableBuilder[Self <: FormatSV] (val x: Self) extends AnyVal {
+    extension [Self <: FormatSV](x: Self) {
       
-      @scala.inline
-      def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Array[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
+      inline def setHeaderVarargs(value: String*): Self = StObject.set(x, "header", js.Array(value :_*))
       
-      @scala.inline
-      def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setType(value: csv | tsv): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: csv | tsv): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -281,20 +238,16 @@ object dataMod {
   }
   object SourceData {
     
-    @scala.inline
-    def apply(name: String, source: String | js.Array[String]): SourceData = {
+    inline def apply(name: String, source: String | js.Array[String]): SourceData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceData]
     }
     
-    @scala.inline
-    implicit class SourceDataMutableBuilder[Self <: SourceData] (val x: Self) extends AnyVal {
+    extension [Self <: SourceData](x: Self) {
       
-      @scala.inline
-      def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String | js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
+      inline def setSourceVarargs(value: String*): Self = StObject.set(x, "source", js.Array(value :_*))
     }
   }
   
@@ -313,29 +266,22 @@ object dataMod {
   }
   object UrlData {
     
-    @scala.inline
-    def apply(name: String, url: URI | SignalRef): UrlData = {
+    inline def apply(name: String, url: URI | SignalRef): UrlData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[UrlData]
     }
     
-    @scala.inline
-    implicit class UrlDataMutableBuilder[Self <: UrlData] (val x: Self) extends AnyVal {
+    extension [Self <: UrlData](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean | SignalRef): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean | SignalRef): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Format | SignalRef): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format | SignalRef): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setUrl(value: URI | SignalRef): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: URI | SignalRef): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -352,61 +298,49 @@ object dataMod {
   }
   object ValuesData {
     
-    @scala.inline
-    def apply(name: String, values: js.Array[Datum] | js.Object): ValuesData = {
+    inline def apply(name: String, values: js.Array[Datum] | js.Object): ValuesData = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValuesData]
     }
     
-    @scala.inline
-    implicit class ValuesDataMutableBuilder[Self <: ValuesData] (val x: Self) extends AnyVal {
+    extension [Self <: ValuesData](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean | SignalRef): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean | SignalRef): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Format | SignalRef): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Format | SignalRef): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Array[Datum] | js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Datum] | js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Datum*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Datum*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
   trait _Format extends StObject
   object _Format {
     
-    @scala.inline
-    def FormatDSV(delimiter: String): typings.vegaTypings.dataMod.FormatDSV = {
+    inline def FormatDSV(delimiter: String): typings.vegaTypings.dataMod.FormatDSV = {
       val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("dsv")
       __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatDSV]
     }
     
-    @scala.inline
-    def FormatJSON(): typings.vegaTypings.dataMod.FormatJSON = {
+    inline def FormatJSON(): typings.vegaTypings.dataMod.FormatJSON = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("json")
       __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatJSON]
     }
     
-    @scala.inline
-    def FormatSV(`type`: csv | tsv): typings.vegaTypings.dataMod.FormatSV = {
+    inline def FormatSV(`type`: csv | tsv): typings.vegaTypings.dataMod.FormatSV = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.dataMod.FormatSV]
     }
     
-    @scala.inline
-    def Parse(parse: typings.vegaTypings.dataMod.Parse): typings.vegaTypings.anon.Parse = {
+    inline def Parse(parse: typings.vegaTypings.dataMod.Parse): typings.vegaTypings.anon.Parse = {
       val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vegaTypings.anon.Parse]
     }

@@ -43,14 +43,12 @@ object Injector {
   @JSImport("@angular/core", "Injector.NULL")
   @js.native
   def NULL: Injector = js.native
-  @scala.inline
-  def NULL_=(x: Injector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
+  inline def NULL_=(x: Injector): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/core", "Injector.THROW_IF_NOT_FOUND")
   @js.native
   def THROW_IF_NOT_FOUND: js.Object = js.native
-  @scala.inline
-  def THROW_IF_NOT_FOUND_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THROW_IF_NOT_FOUND")(x.asInstanceOf[js.Any])
+  inline def THROW_IF_NOT_FOUND_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("THROW_IF_NOT_FOUND")(x.asInstanceOf[js.Any])
   
   /**
     * Creates a new injector instance that provides one or more dependencies,
@@ -64,13 +62,10 @@ object Injector {
     * @returns The new injector instance.
     *
     */
-  @scala.inline
-  def create(options: Parent): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Injector]
+  inline def create(options: Parent): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Injector]
   /**
     * @deprecated from v5 use the new signature Injector.create(options)
     */
-  @scala.inline
-  def create(providers: js.Array[StaticProvider]): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(providers.asInstanceOf[js.Any]).asInstanceOf[Injector]
-  @scala.inline
-  def create(providers: js.Array[StaticProvider], parent: Injector): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Injector]
+  inline def create(providers: js.Array[StaticProvider]): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(providers.asInstanceOf[js.Any]).asInstanceOf[Injector]
+  inline def create(providers: js.Array[StaticProvider], parent: Injector): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Injector]
 }

@@ -15,29 +15,25 @@ trait ModuleSpecifier
      with Node
 object ModuleSpecifier {
   
-  @scala.inline
-  def ExportSpecifier(exported: Identifier, local: Identifier): typings.estree.mod.ExportSpecifier = {
+  inline def ExportSpecifier(exported: Identifier, local: Identifier): typings.estree.mod.ExportSpecifier = {
     val __obj = js.Dynamic.literal(exported = exported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExportSpecifier")
     __obj.asInstanceOf[typings.estree.mod.ExportSpecifier]
   }
   
-  @scala.inline
-  def ImportDefaultSpecifier(local: Identifier): typings.estree.mod.ImportDefaultSpecifier = {
+  inline def ImportDefaultSpecifier(local: Identifier): typings.estree.mod.ImportDefaultSpecifier = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ImportDefaultSpecifier")
     __obj.asInstanceOf[typings.estree.mod.ImportDefaultSpecifier]
   }
   
-  @scala.inline
-  def ImportNamespaceSpecifier(local: Identifier): typings.estree.mod.ImportNamespaceSpecifier = {
+  inline def ImportNamespaceSpecifier(local: Identifier): typings.estree.mod.ImportNamespaceSpecifier = {
     val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ImportNamespaceSpecifier")
     __obj.asInstanceOf[typings.estree.mod.ImportNamespaceSpecifier]
   }
   
-  @scala.inline
-  def ImportSpecifier(imported: Identifier, local: Identifier): typings.estree.mod.ImportSpecifier = {
+  inline def ImportSpecifier(imported: Identifier, local: Identifier): typings.estree.mod.ImportSpecifier = {
     val __obj = js.Dynamic.literal(imported = imported.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ImportSpecifier")
     __obj.asInstanceOf[typings.estree.mod.ImportSpecifier]

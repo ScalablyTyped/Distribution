@@ -18,25 +18,19 @@ trait SchemaJobCancelResponse extends StObject {
 }
 object SchemaJobCancelResponse {
   
-  @scala.inline
-  def apply(): SchemaJobCancelResponse = {
+  inline def apply(): SchemaJobCancelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobCancelResponse]
   }
   
-  @scala.inline
-  implicit class SchemaJobCancelResponseMutableBuilder[Self <: SchemaJobCancelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobCancelResponse](x: Self) {
     
-    @scala.inline
-    def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: SchemaJob): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
+    inline def setJobUndefined: Self = StObject.set(x, "job", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

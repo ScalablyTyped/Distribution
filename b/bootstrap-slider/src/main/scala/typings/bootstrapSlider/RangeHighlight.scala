@@ -14,31 +14,23 @@ trait RangeHighlight extends StObject {
 }
 object RangeHighlight {
   
-  @scala.inline
-  def apply(): RangeHighlight = {
+  inline def apply(): RangeHighlight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeHighlight]
   }
   
-  @scala.inline
-  implicit class RangeHighlightMutableBuilder[Self <: RangeHighlight] (val x: Self) extends AnyVal {
+  extension [Self <: RangeHighlight](x: Self) {
     
-    @scala.inline
-    def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

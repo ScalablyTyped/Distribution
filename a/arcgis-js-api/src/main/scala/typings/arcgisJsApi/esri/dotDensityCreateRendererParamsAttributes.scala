@@ -40,8 +40,7 @@ trait dotDensityCreateRendererParamsAttributes
 }
 object dotDensityCreateRendererParamsAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -50,31 +49,22 @@ object dotDensityCreateRendererParamsAttributes {
     __obj.asInstanceOf[dotDensityCreateRendererParamsAttributes]
   }
   
-  @scala.inline
-  implicit class dotDensityCreateRendererParamsAttributesMutableBuilder[Self <: dotDensityCreateRendererParamsAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: dotDensityCreateRendererParamsAttributes](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
+    inline def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
+    inline def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
     
-    @scala.inline
-    def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
   }
 }

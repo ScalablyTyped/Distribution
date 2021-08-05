@@ -30,8 +30,7 @@ trait XLoadable
 }
 object XLoadable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     initNew: () => Unit,
     load: SeqEquiv[PropertyValue] => Unit,
@@ -42,13 +41,10 @@ object XLoadable {
     __obj.asInstanceOf[XLoadable]
   }
   
-  @scala.inline
-  implicit class XLoadableMutableBuilder[Self <: XLoadable] (val x: Self) extends AnyVal {
+  extension [Self <: XLoadable](x: Self) {
     
-    @scala.inline
-    def setInitNew(value: () => Unit): Self = StObject.set(x, "initNew", js.Any.fromFunction0(value))
+    inline def setInitNew(value: () => Unit): Self = StObject.set(x, "initNew", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoad(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
+    inline def setLoad(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
   }
 }

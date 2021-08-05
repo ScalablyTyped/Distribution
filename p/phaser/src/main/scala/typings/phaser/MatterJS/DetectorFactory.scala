@@ -27,8 +27,7 @@ trait DetectorFactory extends StObject {
 }
 object DetectorFactory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canCollide: (ICollisionFilter, ICollisionFilter) => Boolean,
     collisions: (js.Array[IPair], Engine) => js.Array[ICollisionData]
   ): DetectorFactory = {
@@ -36,13 +35,10 @@ object DetectorFactory {
     __obj.asInstanceOf[DetectorFactory]
   }
   
-  @scala.inline
-  implicit class DetectorFactoryMutableBuilder[Self <: DetectorFactory] (val x: Self) extends AnyVal {
+  extension [Self <: DetectorFactory](x: Self) {
     
-    @scala.inline
-    def setCanCollide(value: (ICollisionFilter, ICollisionFilter) => Boolean): Self = StObject.set(x, "canCollide", js.Any.fromFunction2(value))
+    inline def setCanCollide(value: (ICollisionFilter, ICollisionFilter) => Boolean): Self = StObject.set(x, "canCollide", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCollisions(value: (js.Array[IPair], Engine) => js.Array[ICollisionData]): Self = StObject.set(x, "collisions", js.Any.fromFunction2(value))
+    inline def setCollisions(value: (js.Array[IPair], Engine) => js.Array[ICollisionData]): Self = StObject.set(x, "collisions", js.Any.fromFunction2(value))
   }
 }

@@ -57,20 +57,16 @@ object mod {
   }
   object SearchApi {
     
-    @scala.inline
-    def apply(indexDocument: (String, String) => Unit, search: String => js.Promise[js.Array[String]]): SearchApi = {
+    inline def apply(indexDocument: (String, String) => Unit, search: String => js.Promise[js.Array[String]]): SearchApi = {
       val __obj = js.Dynamic.literal(indexDocument = js.Any.fromFunction2(indexDocument), search = js.Any.fromFunction1(search))
       __obj.asInstanceOf[SearchApi]
     }
     
-    @scala.inline
-    implicit class SearchApiMutableBuilder[Self <: SearchApi] (val x: Self) extends AnyVal {
+    extension [Self <: SearchApi](x: Self) {
       
-      @scala.inline
-      def setIndexDocument(value: (String, String) => Unit): Self = StObject.set(x, "indexDocument", js.Any.fromFunction2(value))
+      inline def setIndexDocument(value: (String, String) => Unit): Self = StObject.set(x, "indexDocument", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSearch(value: String => js.Promise[js.Array[String]]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      inline def setSearch(value: String => js.Promise[js.Array[String]]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
     }
   }
 }

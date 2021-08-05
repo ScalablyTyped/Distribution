@@ -22,8 +22,7 @@ trait Store
 }
 object Store {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: () => js.Any,
     destroy: () => js.Any,
     findOrCreate: (Model[js.Any, ModelSetOptions, js.Object], StoreOptions) => js.Any,
@@ -33,17 +32,13 @@ object Store {
     __obj.asInstanceOf[Store]
   }
   
-  @scala.inline
-  implicit class StoreMutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
+  extension [Self <: Store](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => js.Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindOrCreate(value: (Model[js.Any, ModelSetOptions, js.Object], StoreOptions) => js.Any): Self = StObject.set(x, "findOrCreate", js.Any.fromFunction2(value))
+    inline def setFindOrCreate(value: (Model[js.Any, ModelSetOptions, js.Object], StoreOptions) => js.Any): Self = StObject.set(x, "findOrCreate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegister(
+    inline def setRegister(
       value: (Model[js.Any, ModelSetOptions, js.Object], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ js.Any, StoreOptions) => js.Any
     ): Self = StObject.set(x, "register", js.Any.fromFunction3(value))
   }

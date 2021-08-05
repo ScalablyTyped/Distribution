@@ -52,8 +52,7 @@ trait QueryTypes extends StObject {
 }
 object QueryTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BULKDELETE: String,
     BULKUPDATE: String,
     DELETE: String,
@@ -72,46 +71,32 @@ object QueryTypes {
     __obj.asInstanceOf[QueryTypes]
   }
   
-  @scala.inline
-  implicit class QueryTypesMutableBuilder[Self <: QueryTypes] (val x: Self) extends AnyVal {
+  extension [Self <: QueryTypes](x: Self) {
     
-    @scala.inline
-    def setBULKDELETE(value: String): Self = StObject.set(x, "BULKDELETE", value.asInstanceOf[js.Any])
+    inline def setBULKDELETE(value: String): Self = StObject.set(x, "BULKDELETE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBULKUPDATE(value: String): Self = StObject.set(x, "BULKUPDATE", value.asInstanceOf[js.Any])
+    inline def setBULKUPDATE(value: String): Self = StObject.set(x, "BULKUPDATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDELETE(value: String): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+    inline def setDELETE(value: String): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDESCRIBE(value: String): Self = StObject.set(x, "DESCRIBE", value.asInstanceOf[js.Any])
+    inline def setDESCRIBE(value: String): Self = StObject.set(x, "DESCRIBE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFOREIGNKEYS(value: String): Self = StObject.set(x, "FOREIGNKEYS", value.asInstanceOf[js.Any])
+    inline def setFOREIGNKEYS(value: String): Self = StObject.set(x, "FOREIGNKEYS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINSERT(value: String): Self = StObject.set(x, "INSERT", value.asInstanceOf[js.Any])
+    inline def setINSERT(value: String): Self = StObject.set(x, "INSERT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRAW(value: String): Self = StObject.set(x, "RAW", value.asInstanceOf[js.Any])
+    inline def setRAW(value: String): Self = StObject.set(x, "RAW", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSELECT(value: String): Self = StObject.set(x, "SELECT", value.asInstanceOf[js.Any])
+    inline def setSELECT(value: String): Self = StObject.set(x, "SELECT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHOWINDEXES(value: String): Self = StObject.set(x, "SHOWINDEXES", value.asInstanceOf[js.Any])
+    inline def setSHOWINDEXES(value: String): Self = StObject.set(x, "SHOWINDEXES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHOWTABLES(value: String): Self = StObject.set(x, "SHOWTABLES", value.asInstanceOf[js.Any])
+    inline def setSHOWTABLES(value: String): Self = StObject.set(x, "SHOWTABLES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUPDATE(value: String): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
+    inline def setUPDATE(value: String): Self = StObject.set(x, "UPDATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUPSERT(value: String): Self = StObject.set(x, "UPSERT", value.asInstanceOf[js.Any])
+    inline def setUPSERT(value: String): Self = StObject.set(x, "UPSERT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
+    inline def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
   }
 }

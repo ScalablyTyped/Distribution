@@ -18,28 +18,21 @@ trait DistributionUniform
 }
 object DistributionUniform {
   
-  @scala.inline
-  def apply(): DistributionUniform = {
+  inline def apply(): DistributionUniform = {
     val __obj = js.Dynamic.literal(function = "uniform")
     __obj.asInstanceOf[DistributionUniform]
   }
   
-  @scala.inline
-  implicit class DistributionUniformMutableBuilder[Self <: DistributionUniform] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionUniform](x: Self) {
     
-    @scala.inline
-    def setFunction(value: uniform): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: uniform): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double | SignalRef): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double | SignalRef): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double | SignalRef): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double | SignalRef): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

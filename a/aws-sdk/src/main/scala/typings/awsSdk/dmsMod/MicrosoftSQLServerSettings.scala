@@ -58,73 +58,51 @@ trait MicrosoftSQLServerSettings extends StObject {
 }
 object MicrosoftSQLServerSettings {
   
-  @scala.inline
-  def apply(): MicrosoftSQLServerSettings = {
+  inline def apply(): MicrosoftSQLServerSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MicrosoftSQLServerSettings]
   }
   
-  @scala.inline
-  implicit class MicrosoftSQLServerSettingsMutableBuilder[Self <: MicrosoftSQLServerSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MicrosoftSQLServerSettings](x: Self) {
     
-    @scala.inline
-    def setBcpPacketSize(value: IntegerOptional): Self = StObject.set(x, "BcpPacketSize", value.asInstanceOf[js.Any])
+    inline def setBcpPacketSize(value: IntegerOptional): Self = StObject.set(x, "BcpPacketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBcpPacketSizeUndefined: Self = StObject.set(x, "BcpPacketSize", js.undefined)
+    inline def setBcpPacketSizeUndefined: Self = StObject.set(x, "BcpPacketSize", js.undefined)
     
-    @scala.inline
-    def setControlTablesFileGroup(value: String): Self = StObject.set(x, "ControlTablesFileGroup", value.asInstanceOf[js.Any])
+    inline def setControlTablesFileGroup(value: String): Self = StObject.set(x, "ControlTablesFileGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlTablesFileGroupUndefined: Self = StObject.set(x, "ControlTablesFileGroup", js.undefined)
+    inline def setControlTablesFileGroupUndefined: Self = StObject.set(x, "ControlTablesFileGroup", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    @scala.inline
-    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setReadBackupOnly(value: BooleanOptional): Self = StObject.set(x, "ReadBackupOnly", value.asInstanceOf[js.Any])
+    inline def setReadBackupOnly(value: BooleanOptional): Self = StObject.set(x, "ReadBackupOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadBackupOnlyUndefined: Self = StObject.set(x, "ReadBackupOnly", js.undefined)
+    inline def setReadBackupOnlyUndefined: Self = StObject.set(x, "ReadBackupOnly", js.undefined)
     
-    @scala.inline
-    def setSafeguardPolicy(value: SafeguardPolicy): Self = StObject.set(x, "SafeguardPolicy", value.asInstanceOf[js.Any])
+    inline def setSafeguardPolicy(value: SafeguardPolicy): Self = StObject.set(x, "SafeguardPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeguardPolicyUndefined: Self = StObject.set(x, "SafeguardPolicy", js.undefined)
+    inline def setSafeguardPolicyUndefined: Self = StObject.set(x, "SafeguardPolicy", js.undefined)
     
-    @scala.inline
-    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
+    inline def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
-    @scala.inline
-    def setUseBcpFullLoad(value: BooleanOptional): Self = StObject.set(x, "UseBcpFullLoad", value.asInstanceOf[js.Any])
+    inline def setUseBcpFullLoad(value: BooleanOptional): Self = StObject.set(x, "UseBcpFullLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBcpFullLoadUndefined: Self = StObject.set(x, "UseBcpFullLoad", js.undefined)
+    inline def setUseBcpFullLoadUndefined: Self = StObject.set(x, "UseBcpFullLoad", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

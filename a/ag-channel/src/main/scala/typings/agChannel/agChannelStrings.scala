@@ -11,20 +11,17 @@ object agChannelStrings {
   sealed trait pending
     extends StObject
        with ChannelState
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait subscribed
     extends StObject
        with ChannelState
-  @scala.inline
-  def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
+  inline def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
   
   @js.native
   sealed trait unsubscribed
     extends StObject
        with ChannelState
-  @scala.inline
-  def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
+  inline def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
 }

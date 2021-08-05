@@ -18,28 +18,21 @@ trait DescribeInstancesOutput extends StObject {
 }
 object DescribeInstancesOutput {
   
-  @scala.inline
-  def apply(): DescribeInstancesOutput = {
+  inline def apply(): DescribeInstancesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInstancesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeInstancesOutputMutableBuilder[Self <: DescribeInstancesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstancesOutput](x: Self) {
     
-    @scala.inline
-    def setInstances(value: InstanceList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: InstanceList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

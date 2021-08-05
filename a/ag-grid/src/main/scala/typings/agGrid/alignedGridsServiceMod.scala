@@ -14,11 +14,11 @@ object alignedGridsServiceMod {
   @js.native
   class AlignedGridsService () extends StObject {
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var consuming: js.Any = js.native
+    /* private */ var consuming: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     /* private */ def fireColumnEvent(event: js.Any): js.Any = js.native
     
@@ -30,13 +30,13 @@ object alignedGridsServiceMod {
     
     def getMasterColumns(event: ColumnEvent): js.Array[Column] = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
     def init(): Unit = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     def onColumnEvent(event: AgEvent): Unit = js.native
     

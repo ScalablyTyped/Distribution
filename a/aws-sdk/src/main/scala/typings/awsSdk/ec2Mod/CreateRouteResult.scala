@@ -13,19 +13,15 @@ trait CreateRouteResult extends StObject {
 }
 object CreateRouteResult {
   
-  @scala.inline
-  def apply(): CreateRouteResult = {
+  inline def apply(): CreateRouteResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRouteResult]
   }
   
-  @scala.inline
-  implicit class CreateRouteResultMutableBuilder[Self <: CreateRouteResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRouteResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
   }
 }

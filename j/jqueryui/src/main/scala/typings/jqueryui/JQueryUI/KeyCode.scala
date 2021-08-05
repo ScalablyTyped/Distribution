@@ -52,8 +52,7 @@ trait KeyCode extends StObject {
 }
 object KeyCode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BACKSPACE: Double,
     COMMA: Double,
     DELETE: Double,
@@ -81,73 +80,50 @@ object KeyCode {
     __obj.asInstanceOf[KeyCode]
   }
   
-  @scala.inline
-  implicit class KeyCodeMutableBuilder[Self <: KeyCode] (val x: Self) extends AnyVal {
+  extension [Self <: KeyCode](x: Self) {
     
-    @scala.inline
-    def setBACKSPACE(value: Double): Self = StObject.set(x, "BACKSPACE", value.asInstanceOf[js.Any])
+    inline def setBACKSPACE(value: Double): Self = StObject.set(x, "BACKSPACE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMMA(value: Double): Self = StObject.set(x, "COMMA", value.asInstanceOf[js.Any])
+    inline def setCOMMA(value: Double): Self = StObject.set(x, "COMMA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDELETE(value: Double): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
+    inline def setDELETE(value: Double): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOWN(value: Double): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
+    inline def setDOWN(value: Double): Self = StObject.set(x, "DOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEND(value: Double): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
+    inline def setEND(value: Double): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setENTER(value: Double): Self = StObject.set(x, "ENTER", value.asInstanceOf[js.Any])
+    inline def setENTER(value: Double): Self = StObject.set(x, "ENTER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setESCAPE(value: Double): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
+    inline def setESCAPE(value: Double): Self = StObject.set(x, "ESCAPE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHOME(value: Double): Self = StObject.set(x, "HOME", value.asInstanceOf[js.Any])
+    inline def setHOME(value: Double): Self = StObject.set(x, "HOME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLEFT(value: Double): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
+    inline def setLEFT(value: Double): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUMPAD_ADD(value: Double): Self = StObject.set(x, "NUMPAD_ADD", value.asInstanceOf[js.Any])
+    inline def setNUMPAD_ADD(value: Double): Self = StObject.set(x, "NUMPAD_ADD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUMPAD_DECIMAL(value: Double): Self = StObject.set(x, "NUMPAD_DECIMAL", value.asInstanceOf[js.Any])
+    inline def setNUMPAD_DECIMAL(value: Double): Self = StObject.set(x, "NUMPAD_DECIMAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUMPAD_DIVIDE(value: Double): Self = StObject.set(x, "NUMPAD_DIVIDE", value.asInstanceOf[js.Any])
+    inline def setNUMPAD_DIVIDE(value: Double): Self = StObject.set(x, "NUMPAD_DIVIDE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUMPAD_ENTER(value: Double): Self = StObject.set(x, "NUMPAD_ENTER", value.asInstanceOf[js.Any])
+    inline def setNUMPAD_ENTER(value: Double): Self = StObject.set(x, "NUMPAD_ENTER", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUMPAD_MULTIPLY(value: Double): Self = StObject.set(x, "NUMPAD_MULTIPLY", value.asInstanceOf[js.Any])
+    inline def setNUMPAD_MULTIPLY(value: Double): Self = StObject.set(x, "NUMPAD_MULTIPLY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUMPAD_SUBTRACT(value: Double): Self = StObject.set(x, "NUMPAD_SUBTRACT", value.asInstanceOf[js.Any])
+    inline def setNUMPAD_SUBTRACT(value: Double): Self = StObject.set(x, "NUMPAD_SUBTRACT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPAGE_DOWN(value: Double): Self = StObject.set(x, "PAGE_DOWN", value.asInstanceOf[js.Any])
+    inline def setPAGE_DOWN(value: Double): Self = StObject.set(x, "PAGE_DOWN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPAGE_UP(value: Double): Self = StObject.set(x, "PAGE_UP", value.asInstanceOf[js.Any])
+    inline def setPAGE_UP(value: Double): Self = StObject.set(x, "PAGE_UP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPERIOD(value: Double): Self = StObject.set(x, "PERIOD", value.asInstanceOf[js.Any])
+    inline def setPERIOD(value: Double): Self = StObject.set(x, "PERIOD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIGHT(value: Double): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
+    inline def setRIGHT(value: Double): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSPACE(value: Double): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
+    inline def setSPACE(value: Double): Self = StObject.set(x, "SPACE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTAB(value: Double): Self = StObject.set(x, "TAB", value.asInstanceOf[js.Any])
+    inline def setTAB(value: Double): Self = StObject.set(x, "TAB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUP(value: Double): Self = StObject.set(x, "UP", value.asInstanceOf[js.Any])
+    inline def setUP(value: Double): Self = StObject.set(x, "UP", value.asInstanceOf[js.Any])
   }
 }

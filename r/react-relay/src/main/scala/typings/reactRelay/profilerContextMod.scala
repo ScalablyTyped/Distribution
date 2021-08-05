@@ -17,17 +17,14 @@ object profilerContextMod {
   }
   object ProfilerContextType {
     
-    @scala.inline
-    def apply(wrapPrepareQueryResource: js.Function0[js.Any] => js.Any): ProfilerContextType = {
+    inline def apply(wrapPrepareQueryResource: js.Function0[js.Any] => js.Any): ProfilerContextType = {
       val __obj = js.Dynamic.literal(wrapPrepareQueryResource = js.Any.fromFunction1(wrapPrepareQueryResource))
       __obj.asInstanceOf[ProfilerContextType]
     }
     
-    @scala.inline
-    implicit class ProfilerContextTypeMutableBuilder[Self <: ProfilerContextType] (val x: Self) extends AnyVal {
+    extension [Self <: ProfilerContextType](x: Self) {
       
-      @scala.inline
-      def setWrapPrepareQueryResource(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "wrapPrepareQueryResource", js.Any.fromFunction1(value))
+      inline def setWrapPrepareQueryResource(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "wrapPrepareQueryResource", js.Any.fromFunction1(value))
     }
   }
 }

@@ -13,19 +13,15 @@ trait Buffer extends StObject {
 }
 object Buffer {
   
-  @scala.inline
-  def apply(buffer: typings.node.Buffer, client: IgApiClient): Buffer = {
+  inline def apply(buffer: typings.node.Buffer, client: IgApiClient): Buffer = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
     __obj.asInstanceOf[Buffer]
   }
   
-  @scala.inline
-  implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
+  extension [Self <: Buffer](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: typings.node.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: typings.node.Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient(value: IgApiClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    inline def setClient(value: IgApiClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
   }
 }

@@ -38,8 +38,7 @@ object floatingHelperContentDriverMod {
   }
   object FloatingHelperContentDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clickActionButton: () => Unit,
       exists: () => Boolean,
       getActionButtonText: () => String,
@@ -58,44 +57,31 @@ object floatingHelperContentDriverMod {
       __obj.asInstanceOf[FloatingHelperContentDriver]
     }
     
-    @scala.inline
-    implicit class FloatingHelperContentDriverMutableBuilder[Self <: FloatingHelperContentDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingHelperContentDriver](x: Self) {
       
-      @scala.inline
-      def setClickActionButton(value: () => Unit): Self = StObject.set(x, "clickActionButton", js.Any.fromFunction0(value))
+      inline def setClickActionButton(value: () => Unit): Self = StObject.set(x, "clickActionButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetActionButtonText(value: () => String): Self = StObject.set(x, "getActionButtonText", js.Any.fromFunction0(value))
+      inline def setGetActionButtonText(value: () => String): Self = StObject.set(x, "getActionButtonText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBodyContent(value: () => String): Self = StObject.set(x, "getBodyContent", js.Any.fromFunction0(value))
+      inline def setGetBodyContent(value: () => String): Self = StObject.set(x, "getBodyContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFooter(value: () => HTMLElement): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
+      inline def setGetFooter(value: () => HTMLElement): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImage(value: () => HTMLElement): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
+      inline def setGetImage(value: () => HTMLElement): Self = StObject.set(x, "getImage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitleContent(value: () => String): Self = StObject.set(x, "getTitleContent", js.Any.fromFunction0(value))
+      inline def setGetTitleContent(value: () => String): Self = StObject.set(x, "getTitleContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasActionButton(value: () => Boolean): Self = StObject.set(x, "hasActionButton", js.Any.fromFunction0(value))
+      inline def setHasActionButton(value: () => Boolean): Self = StObject.set(x, "hasActionButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasBody(value: () => Boolean): Self = StObject.set(x, "hasBody", js.Any.fromFunction0(value))
+      inline def setHasBody(value: () => Boolean): Self = StObject.set(x, "hasBody", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasFooter(value: () => Boolean): Self = StObject.set(x, "hasFooter", js.Any.fromFunction0(value))
+      inline def setHasFooter(value: () => Boolean): Self = StObject.set(x, "hasFooter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasImage(value: () => Boolean): Self = StObject.set(x, "hasImage", js.Any.fromFunction0(value))
+      inline def setHasImage(value: () => Boolean): Self = StObject.set(x, "hasImage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasTitle(value: () => Boolean): Self = StObject.set(x, "hasTitle", js.Any.fromFunction0(value))
+      inline def setHasTitle(value: () => Boolean): Self = StObject.set(x, "hasTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMatchesActionButtonClassName(value: String => Boolean): Self = StObject.set(x, "matchesActionButtonClassName", js.Any.fromFunction1(value))
+      inline def setMatchesActionButtonClassName(value: String => Boolean): Self = StObject.set(x, "matchesActionButtonClassName", js.Any.fromFunction1(value))
     }
   }
 }

@@ -18,25 +18,19 @@ trait DatastoreStorageSummary extends StObject {
 }
 object DatastoreStorageSummary {
   
-  @scala.inline
-  def apply(): DatastoreStorageSummary = {
+  inline def apply(): DatastoreStorageSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatastoreStorageSummary]
   }
   
-  @scala.inline
-  implicit class DatastoreStorageSummaryMutableBuilder[Self <: DatastoreStorageSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DatastoreStorageSummary](x: Self) {
     
-    @scala.inline
-    def setCustomerManagedS3(value: CustomerManagedDatastoreS3StorageSummary): Self = StObject.set(x, "customerManagedS3", value.asInstanceOf[js.Any])
+    inline def setCustomerManagedS3(value: CustomerManagedDatastoreS3StorageSummary): Self = StObject.set(x, "customerManagedS3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerManagedS3Undefined: Self = StObject.set(x, "customerManagedS3", js.undefined)
+    inline def setCustomerManagedS3Undefined: Self = StObject.set(x, "customerManagedS3", js.undefined)
     
-    @scala.inline
-    def setServiceManagedS3(value: ServiceManagedDatastoreS3StorageSummary): Self = StObject.set(x, "serviceManagedS3", value.asInstanceOf[js.Any])
+    inline def setServiceManagedS3(value: ServiceManagedDatastoreS3StorageSummary): Self = StObject.set(x, "serviceManagedS3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceManagedS3Undefined: Self = StObject.set(x, "serviceManagedS3", js.undefined)
+    inline def setServiceManagedS3Undefined: Self = StObject.set(x, "serviceManagedS3", js.undefined)
   }
 }

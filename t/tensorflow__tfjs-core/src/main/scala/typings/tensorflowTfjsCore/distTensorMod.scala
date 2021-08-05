@@ -639,7 +639,7 @@ object distTensorMod {
     
     val isDisposed: Boolean = js.native
     
-    var isDisposedInternal: Boolean = js.native
+    /* protected */ var isDisposedInternal: Boolean = js.native
     
     def isFinite[T /* <: Tensor[Rank] */](): T = js.native
     
@@ -1486,14 +1486,11 @@ object distTensorMod {
     var trainable: Boolean = js.native
   }
   
-  @scala.inline
-  def setDeprecationWarningFn(fn: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDeprecationWarningFn")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDeprecationWarningFn(fn: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDeprecationWarningFn")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setOpHandler(handler: OpHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setOpHandler(handler: OpHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOpHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setTensorTracker(fn: js.Function0[TensorTracker]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTensorTracker")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTensorTracker(fn: js.Function0[TensorTracker]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTensorTracker")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Backend extends StObject
   
@@ -1603,28 +1600,22 @@ object distTensorMod {
   }
   object TensorData {
     
-    @scala.inline
-    def apply[D /* <: DataType */](): TensorData[D] = {
+    inline def apply[D /* <: DataType */](): TensorData[D] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TensorData[D]]
     }
     
-    @scala.inline
-    implicit class TensorDataMutableBuilder[Self <: TensorData[?], D /* <: DataType */] (val x: Self & TensorData[D]) extends AnyVal {
+    extension [Self <: TensorData[?], D /* <: DataType */](x: Self & TensorData[D]) {
       
-      @scala.inline
-      def setDataId(value: DataId): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
+      inline def setDataId(value: DataId): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataIdUndefined: Self = StObject.set(x, "dataId", js.undefined)
+      inline def setDataIdUndefined: Self = StObject.set(x, "dataId", js.undefined)
       
-      @scala.inline
-      def setValues(
+      inline def setValues(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[D] */ js.Any
       ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     }
   }
   

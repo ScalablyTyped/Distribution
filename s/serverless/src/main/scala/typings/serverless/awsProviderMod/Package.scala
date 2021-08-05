@@ -18,49 +18,35 @@ trait Package extends StObject {
 }
 object Package {
   
-  @scala.inline
-  def apply(): Package = {
+  inline def apply(): Package = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Package]
   }
   
-  @scala.inline
-  implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
+  extension [Self <: Package](x: Self) {
     
-    @scala.inline
-    def setArtifact(value: String): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
+    inline def setArtifact(value: String): Self = StObject.set(x, "artifact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactUndefined: Self = StObject.set(x, "artifact", js.undefined)
+    inline def setArtifactUndefined: Self = StObject.set(x, "artifact", js.undefined)
     
-    @scala.inline
-    def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDevDependencies(value: Boolean): Self = StObject.set(x, "excludeDevDependencies", value.asInstanceOf[js.Any])
+    inline def setExcludeDevDependencies(value: Boolean): Self = StObject.set(x, "excludeDevDependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDevDependenciesUndefined: Self = StObject.set(x, "excludeDevDependencies", js.undefined)
+    inline def setExcludeDevDependenciesUndefined: Self = StObject.set(x, "excludeDevDependencies", js.undefined)
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setIndividually(value: Boolean): Self = StObject.set(x, "individually", value.asInstanceOf[js.Any])
+    inline def setIndividually(value: Boolean): Self = StObject.set(x, "individually", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividuallyUndefined: Self = StObject.set(x, "individually", js.undefined)
+    inline def setIndividuallyUndefined: Self = StObject.set(x, "individually", js.undefined)
   }
 }

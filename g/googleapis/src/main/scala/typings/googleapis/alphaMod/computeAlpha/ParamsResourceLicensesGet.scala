@@ -28,31 +28,23 @@ trait ParamsResourceLicensesGet
 }
 object ParamsResourceLicensesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceLicensesGet = {
+  inline def apply(): ParamsResourceLicensesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceLicensesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceLicensesGetMutableBuilder[Self <: ParamsResourceLicensesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceLicensesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
+    inline def setLicenseUndefined: Self = StObject.set(x, "license", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
   }
 }

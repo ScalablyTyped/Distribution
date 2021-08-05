@@ -13,19 +13,15 @@ trait BillingGroupProperties extends StObject {
 }
 object BillingGroupProperties {
   
-  @scala.inline
-  def apply(): BillingGroupProperties = {
+  inline def apply(): BillingGroupProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingGroupProperties]
   }
   
-  @scala.inline
-  implicit class BillingGroupPropertiesMutableBuilder[Self <: BillingGroupProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BillingGroupProperties](x: Self) {
     
-    @scala.inline
-    def setBillingGroupDescription(value: BillingGroupDescription): Self = StObject.set(x, "billingGroupDescription", value.asInstanceOf[js.Any])
+    inline def setBillingGroupDescription(value: BillingGroupDescription): Self = StObject.set(x, "billingGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingGroupDescriptionUndefined: Self = StObject.set(x, "billingGroupDescription", js.undefined)
+    inline def setBillingGroupDescriptionUndefined: Self = StObject.set(x, "billingGroupDescription", js.undefined)
   }
 }

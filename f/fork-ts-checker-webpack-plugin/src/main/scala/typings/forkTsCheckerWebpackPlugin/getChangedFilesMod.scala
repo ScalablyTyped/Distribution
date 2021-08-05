@@ -10,8 +10,7 @@ object getChangedFilesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getChangedFiles(
+  inline def getChangedFiles(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
   ): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChangedFiles")(compiler.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

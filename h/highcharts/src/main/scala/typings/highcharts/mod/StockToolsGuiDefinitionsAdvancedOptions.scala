@@ -20,40 +20,29 @@ trait StockToolsGuiDefinitionsAdvancedOptions extends StObject {
 }
 object StockToolsGuiDefinitionsAdvancedOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsAdvancedOptions = {
+  inline def apply(): StockToolsGuiDefinitionsAdvancedOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsAdvancedOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsAdvancedOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsAdvancedOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsAdvancedOptions](x: Self) {
     
-    @scala.inline
-    def setFibonacci(value: StockToolsGuiDefinitionsAdvancedFibonacciOptions): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
+    inline def setFibonacci(value: StockToolsGuiDefinitionsAdvancedFibonacciOptions): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
+    inline def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setParallelChannel(value: StockToolsGuiDefinitionsAdvancedParallelChannelOptions): Self = StObject.set(x, "parallelChannel", value.asInstanceOf[js.Any])
+    inline def setParallelChannel(value: StockToolsGuiDefinitionsAdvancedParallelChannelOptions): Self = StObject.set(x, "parallelChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelChannelUndefined: Self = StObject.set(x, "parallelChannel", js.undefined)
+    inline def setParallelChannelUndefined: Self = StObject.set(x, "parallelChannel", js.undefined)
     
-    @scala.inline
-    def setPitchfork(value: StockToolsGuiDefinitionsAdvancedPitchforkOptions): Self = StObject.set(x, "pitchfork", value.asInstanceOf[js.Any])
+    inline def setPitchfork(value: StockToolsGuiDefinitionsAdvancedPitchforkOptions): Self = StObject.set(x, "pitchfork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchforkUndefined: Self = StObject.set(x, "pitchfork", js.undefined)
+    inline def setPitchforkUndefined: Self = StObject.set(x, "pitchfork", js.undefined)
   }
 }

@@ -27,6 +27,5 @@ object Vec3 {
   @JSImport("cannon", "Vec3.ZERO")
   @js.native
   def ZERO: typings.cannon.CANNON.Vec3 = js.native
-  @scala.inline
-  def ZERO_=(x: typings.cannon.CANNON.Vec3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
+  inline def ZERO_=(x: typings.cannon.CANNON.Vec3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
 }

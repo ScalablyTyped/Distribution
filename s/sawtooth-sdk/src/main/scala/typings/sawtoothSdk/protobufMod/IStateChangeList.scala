@@ -11,25 +11,19 @@ trait IStateChangeList extends StObject {
 }
 object IStateChangeList {
   
-  @scala.inline
-  def apply(): IStateChangeList = {
+  inline def apply(): IStateChangeList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStateChangeList]
   }
   
-  @scala.inline
-  implicit class IStateChangeListMutableBuilder[Self <: IStateChangeList] (val x: Self) extends AnyVal {
+  extension [Self <: IStateChangeList](x: Self) {
     
-    @scala.inline
-    def setStateChanges(value: js.Array[IStateChange]): Self = StObject.set(x, "stateChanges", value.asInstanceOf[js.Any])
+    inline def setStateChanges(value: js.Array[IStateChange]): Self = StObject.set(x, "stateChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangesNull: Self = StObject.set(x, "stateChanges", null)
+    inline def setStateChangesNull: Self = StObject.set(x, "stateChanges", null)
     
-    @scala.inline
-    def setStateChangesUndefined: Self = StObject.set(x, "stateChanges", js.undefined)
+    inline def setStateChangesUndefined: Self = StObject.set(x, "stateChanges", js.undefined)
     
-    @scala.inline
-    def setStateChangesVarargs(value: IStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value :_*))
+    inline def setStateChangesVarargs(value: IStateChange*): Self = StObject.set(x, "stateChanges", js.Array(value :_*))
   }
 }

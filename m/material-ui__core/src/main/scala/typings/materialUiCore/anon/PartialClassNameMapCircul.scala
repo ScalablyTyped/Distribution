@@ -29,73 +29,51 @@ trait PartialClassNameMapCircul extends StObject {
 }
 object PartialClassNameMapCircul {
   
-  @scala.inline
-  def apply(): PartialClassNameMapCircul = {
+  inline def apply(): PartialClassNameMapCircul = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapCircul]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapCirculMutableBuilder[Self <: PartialClassNameMapCircul] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapCircul](x: Self) {
     
-    @scala.inline
-    def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleDisableShrink(value: String): Self = StObject.set(x, "circleDisableShrink", value.asInstanceOf[js.Any])
+    inline def setCircleDisableShrink(value: String): Self = StObject.set(x, "circleDisableShrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleDisableShrinkUndefined: Self = StObject.set(x, "circleDisableShrink", js.undefined)
+    inline def setCircleDisableShrinkUndefined: Self = StObject.set(x, "circleDisableShrink", js.undefined)
     
-    @scala.inline
-    def setCircleIndeterminate(value: String): Self = StObject.set(x, "circleIndeterminate", value.asInstanceOf[js.Any])
+    inline def setCircleIndeterminate(value: String): Self = StObject.set(x, "circleIndeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleIndeterminateUndefined: Self = StObject.set(x, "circleIndeterminate", js.undefined)
+    inline def setCircleIndeterminateUndefined: Self = StObject.set(x, "circleIndeterminate", js.undefined)
     
-    @scala.inline
-    def setCircleStatic(value: String): Self = StObject.set(x, "circleStatic", value.asInstanceOf[js.Any])
+    inline def setCircleStatic(value: String): Self = StObject.set(x, "circleStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircleStaticUndefined: Self = StObject.set(x, "circleStatic", js.undefined)
+    inline def setCircleStaticUndefined: Self = StObject.set(x, "circleStatic", js.undefined)
     
-    @scala.inline
-    def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
+    inline def setCircleUndefined: Self = StObject.set(x, "circle", js.undefined)
     
-    @scala.inline
-    def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+    inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
+    inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
-    @scala.inline
-    def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
+    inline def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
+    inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
     
-    @scala.inline
-    def setIndeterminate(value: String): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+    inline def setIndeterminate(value: String): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
+    inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+    inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
-    @scala.inline
-    def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    inline def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+    inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
   }
 }

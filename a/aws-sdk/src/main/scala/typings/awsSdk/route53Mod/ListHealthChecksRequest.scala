@@ -18,25 +18,19 @@ trait ListHealthChecksRequest extends StObject {
 }
 object ListHealthChecksRequest {
   
-  @scala.inline
-  def apply(): ListHealthChecksRequest = {
+  inline def apply(): ListHealthChecksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListHealthChecksRequest]
   }
   
-  @scala.inline
-  implicit class ListHealthChecksRequestMutableBuilder[Self <: ListHealthChecksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListHealthChecksRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
   }
 }

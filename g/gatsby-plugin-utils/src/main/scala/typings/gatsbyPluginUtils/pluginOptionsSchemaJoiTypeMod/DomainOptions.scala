@@ -30,31 +30,23 @@ trait DomainOptions extends StObject {
 }
 object DomainOptions {
   
-  @scala.inline
-  def apply(): DomainOptions = {
+  inline def apply(): DomainOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainOptions]
   }
   
-  @scala.inline
-  implicit class DomainOptionsMutableBuilder[Self <: DomainOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DomainOptions](x: Self) {
     
-    @scala.inline
-    def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
+    inline def setAllowUnicode(value: Boolean): Self = StObject.set(x, "allowUnicode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnicodeUndefined: Self = StObject.set(x, "allowUnicode", js.undefined)
+    inline def setAllowUnicodeUndefined: Self = StObject.set(x, "allowUnicode", js.undefined)
     
-    @scala.inline
-    def setMinDomainSegments(value: Double): Self = StObject.set(x, "minDomainSegments", value.asInstanceOf[js.Any])
+    inline def setMinDomainSegments(value: Double): Self = StObject.set(x, "minDomainSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinDomainSegmentsUndefined: Self = StObject.set(x, "minDomainSegments", js.undefined)
+    inline def setMinDomainSegmentsUndefined: Self = StObject.set(x, "minDomainSegments", js.undefined)
     
-    @scala.inline
-    def setTlds(value: TopLevelDomainOptions | `false`): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
+    inline def setTlds(value: TopLevelDomainOptions | `false`): Self = StObject.set(x, "tlds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
+    inline def setTldsUndefined: Self = StObject.set(x, "tlds", js.undefined)
   }
 }

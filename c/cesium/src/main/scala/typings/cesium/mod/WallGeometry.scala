@@ -17,39 +17,26 @@ object WallGeometry {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createGeometry(wallGeometry: WallGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(wallGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def createGeometry(wallGeometry: WallGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(wallGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
   /* static member */
-  @scala.inline
-  def fromConstantHeights(positions: js.Array[Cartesian3]): WallGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any]).asInstanceOf[WallGeometry]
-  @scala.inline
-  def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Double): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
-  @scala.inline
-  def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Double, minimumHeight: Double): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
-  @scala.inline
-  def fromConstantHeights(
+  inline def fromConstantHeights(positions: js.Array[Cartesian3]): WallGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any]).asInstanceOf[WallGeometry]
+  inline def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Double): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
+  inline def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Double, minimumHeight: Double): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
+  inline def fromConstantHeights(
     positions: js.Array[Cartesian3],
     maximumHeight: Double,
     minimumHeight: Double,
     ellipsoid: Ellipsoid
   ): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
-  @scala.inline
-  def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Double, minimumHeight: Unit, ellipsoid: Ellipsoid): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
-  @scala.inline
-  def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Unit, minimumHeight: Double): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
-  @scala.inline
-  def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Unit, minimumHeight: Double, ellipsoid: Ellipsoid): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
-  @scala.inline
-  def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Unit, minimumHeight: Unit, ellipsoid: Ellipsoid): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
+  inline def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Double, minimumHeight: Unit, ellipsoid: Ellipsoid): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
+  inline def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Unit, minimumHeight: Double): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
+  inline def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Unit, minimumHeight: Double, ellipsoid: Ellipsoid): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
+  inline def fromConstantHeights(positions: js.Array[Cartesian3], maximumHeight: Unit, minimumHeight: Unit, ellipsoid: Ellipsoid): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConstantHeights")(positions.asInstanceOf[js.Any], maximumHeight.asInstanceOf[js.Any], minimumHeight.asInstanceOf[js.Any], ellipsoid.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
   
   /* static member */
-  @scala.inline
-  def unpack(array: js.Array[Double]): WallGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[WallGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double, result: WallGeometry): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Unit, result: WallGeometry): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
+  inline def unpack(array: js.Array[Double]): WallGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[WallGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: WallGeometry): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Unit, result: WallGeometry): WallGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[WallGeometry]
 }

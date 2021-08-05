@@ -7,17 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Caseless = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Caseless]
-  @scala.inline
-  def apply(dict: RawDict): Caseless = ^.asInstanceOf[js.Dynamic].apply(dict.asInstanceOf[js.Any]).asInstanceOf[Caseless]
+  inline def apply(): Caseless = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Caseless]
+  inline def apply(dict: RawDict): Caseless = ^.asInstanceOf[js.Dynamic].apply(dict.asInstanceOf[js.Any]).asInstanceOf[Caseless]
   
   @JSImport("caseless", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def httpify(resp: js.Object, headers: RawDict): Caseless = (^.asInstanceOf[js.Dynamic].applyDynamic("httpify")(resp.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Caseless]
+  inline def httpify(resp: js.Object, headers: RawDict): Caseless = (^.asInstanceOf[js.Dynamic].applyDynamic("httpify")(resp.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[Caseless]
   
   @js.native
   trait Caseless extends StObject {

@@ -18,11 +18,9 @@ object usageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapUsage(http: AxiosInstance, data: UsageProps): Usage = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUsage")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Usage]
+  inline def wrapUsage(http: AxiosInstance, data: UsageProps): Usage = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUsage")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Usage]
   
-  @scala.inline
-  def wrapUsageCollection(http: AxiosInstance, data: CollectionProp[UsageProps]): Collection[Usage, UsageProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUsageCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Usage, UsageProps]]
+  inline def wrapUsageCollection(http: AxiosInstance, data: CollectionProp[UsageProps]): Collection[Usage, UsageProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUsageCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Usage, UsageProps]]
   
   trait Usage
     extends StObject
@@ -30,8 +28,7 @@ object usageMod {
        with DefaultElements[UsageProps]
   object Usage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dateRange: EndAt,
       metric: UsageMetricEnum,
       sys: MetaSysPropsorganizations,
@@ -54,17 +51,13 @@ object usageMod {
   trait UsageMetricEnum extends StObject
   object UsageMetricEnum {
     
-    @scala.inline
-    def cda: typings.contentfulManagement.contentfulManagementStrings.cda = "cda".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.cda]
+    inline def cda: typings.contentfulManagement.contentfulManagementStrings.cda = "cda".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.cda]
     
-    @scala.inline
-    def cma: typings.contentfulManagement.contentfulManagementStrings.cma = "cma".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.cma]
+    inline def cma: typings.contentfulManagement.contentfulManagementStrings.cma = "cma".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.cma]
     
-    @scala.inline
-    def cpa: typings.contentfulManagement.contentfulManagementStrings.cpa = "cpa".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.cpa]
+    inline def cpa: typings.contentfulManagement.contentfulManagementStrings.cpa = "cpa".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.cpa]
     
-    @scala.inline
-    def gql: typings.contentfulManagement.contentfulManagementStrings.gql = "gql".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.gql]
+    inline def gql: typings.contentfulManagement.contentfulManagementStrings.gql = "gql".asInstanceOf[typings.contentfulManagement.contentfulManagementStrings.gql]
   }
   
   trait UsageProps extends StObject {
@@ -101,8 +94,7 @@ object usageMod {
   }
   object UsageProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dateRange: EndAt,
       metric: UsageMetricEnum,
       sys: MetaSysPropsorganizations,
@@ -114,26 +106,19 @@ object usageMod {
       __obj.asInstanceOf[UsageProps]
     }
     
-    @scala.inline
-    implicit class UsagePropsMutableBuilder[Self <: UsageProps] (val x: Self) extends AnyVal {
+    extension [Self <: UsageProps](x: Self) {
       
-      @scala.inline
-      def setDateRange(value: EndAt): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+      inline def setDateRange(value: EndAt): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetric(value: UsageMetricEnum): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+      inline def setMetric(value: UsageMetricEnum): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysPropsorganizations): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysPropsorganizations): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitOfMeasure(value: String): Self = StObject.set(x, "unitOfMeasure", value.asInstanceOf[js.Any])
+      inline def setUnitOfMeasure(value: String): Self = StObject.set(x, "unitOfMeasure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+      inline def setUsage(value: Double): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsagePerDay(value: StringDictionary[Double]): Self = StObject.set(x, "usagePerDay", value.asInstanceOf[js.Any])
+      inline def setUsagePerDay(value: StringDictionary[Double]): Self = StObject.set(x, "usagePerDay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,32 +136,24 @@ object usageMod {
   }
   object UsageQuery {
     
-    @scala.inline
-    def apply(): UsageQuery = {
+    inline def apply(): UsageQuery = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UsageQuery]
     }
     
-    @scala.inline
-    implicit class UsageQueryMutableBuilder[Self <: UsageQuery] (val x: Self) extends AnyVal {
+    extension [Self <: UsageQuery](x: Self) {
       
-      @scala.inline
-      def setDateRangeDotendAt(value: String): Self = StObject.set(x, "dateRange.endAt", value.asInstanceOf[js.Any])
+      inline def setDateRangeDotendAt(value: String): Self = StObject.set(x, "dateRange.endAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateRangeDotendAtUndefined: Self = StObject.set(x, "dateRange.endAt", js.undefined)
+      inline def setDateRangeDotendAtUndefined: Self = StObject.set(x, "dateRange.endAt", js.undefined)
       
-      @scala.inline
-      def setDateRangeDotstartAt(value: String): Self = StObject.set(x, "dateRange.startAt", value.asInstanceOf[js.Any])
+      inline def setDateRangeDotstartAt(value: String): Self = StObject.set(x, "dateRange.startAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateRangeDotstartAtUndefined: Self = StObject.set(x, "dateRange.startAt", js.undefined)
+      inline def setDateRangeDotstartAtUndefined: Self = StObject.set(x, "dateRange.startAt", js.undefined)
       
-      @scala.inline
-      def `setMetric[in]`(value: String): Self = StObject.set(x, "metric[in]", value.asInstanceOf[js.Any])
+      inline def `setMetric[in]`(value: String): Self = StObject.set(x, "metric[in]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMetric[in]Undefined`: Self = StObject.set(x, "metric[in]", js.undefined)
+      inline def `setMetric[in]Undefined`: Self = StObject.set(x, "metric[in]", js.undefined)
     }
   }
 }

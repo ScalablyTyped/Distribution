@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def autosuggester(lexerCtr: Constructor[Lexer], parserCtr: Constructor[Parser]): AutoSuggester_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autosuggester")(lexerCtr.asInstanceOf[js.Any], parserCtr.asInstanceOf[js.Any])).asInstanceOf[AutoSuggester_]
-  @scala.inline
-  def autosuggester(lexerCtr: Constructor[Lexer], parserCtr: Constructor[Parser], casePref: CasePreference): AutoSuggester_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autosuggester")(lexerCtr.asInstanceOf[js.Any], parserCtr.asInstanceOf[js.Any], casePref.asInstanceOf[js.Any])).asInstanceOf[AutoSuggester_]
+  inline def autosuggester(lexerCtr: Constructor[Lexer], parserCtr: Constructor[Parser]): AutoSuggester_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autosuggester")(lexerCtr.asInstanceOf[js.Any], parserCtr.asInstanceOf[js.Any])).asInstanceOf[AutoSuggester_]
+  inline def autosuggester(lexerCtr: Constructor[Lexer], parserCtr: Constructor[Parser], casePref: CasePreference): AutoSuggester_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autosuggester")(lexerCtr.asInstanceOf[js.Any], parserCtr.asInstanceOf[js.Any], casePref.asInstanceOf[js.Any])).asInstanceOf[AutoSuggester_]
   
   trait AutoSuggester_ extends StObject {
     
@@ -24,17 +22,14 @@ object mod {
   }
   object AutoSuggester_ {
     
-    @scala.inline
-    def apply(autosuggest: String => js.Array[String]): AutoSuggester_ = {
+    inline def apply(autosuggest: String => js.Array[String]): AutoSuggester_ = {
       val __obj = js.Dynamic.literal(autosuggest = js.Any.fromFunction1(autosuggest))
       __obj.asInstanceOf[AutoSuggester_]
     }
     
-    @scala.inline
-    implicit class AutoSuggester_MutableBuilder[Self <: AutoSuggester_] (val x: Self) extends AnyVal {
+    extension [Self <: AutoSuggester_](x: Self) {
       
-      @scala.inline
-      def setAutosuggest(value: String => js.Array[String]): Self = StObject.set(x, "autosuggest", js.Any.fromFunction1(value))
+      inline def setAutosuggest(value: String => js.Array[String]): Self = StObject.set(x, "autosuggest", js.Any.fromFunction1(value))
     }
   }
   
@@ -46,14 +41,11 @@ object mod {
   trait CasePreference extends StObject
   object CasePreference {
     
-    @scala.inline
-    def BOTH: typings.antlr4Autosuggest.antlr4AutosuggestStrings.BOTH = "BOTH".asInstanceOf[typings.antlr4Autosuggest.antlr4AutosuggestStrings.BOTH]
+    inline def BOTH: typings.antlr4Autosuggest.antlr4AutosuggestStrings.BOTH = "BOTH".asInstanceOf[typings.antlr4Autosuggest.antlr4AutosuggestStrings.BOTH]
     
-    @scala.inline
-    def LOWER: typings.antlr4Autosuggest.antlr4AutosuggestStrings.LOWER = "LOWER".asInstanceOf[typings.antlr4Autosuggest.antlr4AutosuggestStrings.LOWER]
+    inline def LOWER: typings.antlr4Autosuggest.antlr4AutosuggestStrings.LOWER = "LOWER".asInstanceOf[typings.antlr4Autosuggest.antlr4AutosuggestStrings.LOWER]
     
-    @scala.inline
-    def UPPER: typings.antlr4Autosuggest.antlr4AutosuggestStrings.UPPER = "UPPER".asInstanceOf[typings.antlr4Autosuggest.antlr4AutosuggestStrings.UPPER]
+    inline def UPPER: typings.antlr4Autosuggest.antlr4AutosuggestStrings.UPPER = "UPPER".asInstanceOf[typings.antlr4Autosuggest.antlr4AutosuggestStrings.UPPER]
   }
   
   @js.native

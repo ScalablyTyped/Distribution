@@ -23,28 +23,21 @@ trait EnterAction extends StObject {
 }
 object EnterAction {
   
-  @scala.inline
-  def apply(indentAction: IndentAction): EnterAction = {
+  inline def apply(indentAction: IndentAction): EnterAction = {
     val __obj = js.Dynamic.literal(indentAction = indentAction.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterAction]
   }
   
-  @scala.inline
-  implicit class EnterActionMutableBuilder[Self <: EnterAction] (val x: Self) extends AnyVal {
+  extension [Self <: EnterAction](x: Self) {
     
-    @scala.inline
-    def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
+    inline def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendTextUndefined: Self = StObject.set(x, "appendText", js.undefined)
+    inline def setAppendTextUndefined: Self = StObject.set(x, "appendText", js.undefined)
     
-    @scala.inline
-    def setIndentAction(value: IndentAction): Self = StObject.set(x, "indentAction", value.asInstanceOf[js.Any])
+    inline def setIndentAction(value: IndentAction): Self = StObject.set(x, "indentAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveText(value: Double): Self = StObject.set(x, "removeText", value.asInstanceOf[js.Any])
+    inline def setRemoveText(value: Double): Self = StObject.set(x, "removeText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveTextUndefined: Self = StObject.set(x, "removeText", js.undefined)
+    inline def setRemoveTextUndefined: Self = StObject.set(x, "removeText", js.undefined)
   }
 }

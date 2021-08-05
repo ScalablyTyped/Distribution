@@ -18,22 +18,17 @@ trait GetHistogramRequest extends StObject {
 }
 object GetHistogramRequest {
   
-  @scala.inline
-  def apply(name: String): GetHistogramRequest = {
+  inline def apply(name: String): GetHistogramRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHistogramRequest]
   }
   
-  @scala.inline
-  implicit class GetHistogramRequestMutableBuilder[Self <: GetHistogramRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetHistogramRequest](x: Self) {
     
-    @scala.inline
-    def setDelta(value: Boolean): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    inline def setDelta(value: Boolean): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

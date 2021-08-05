@@ -75,109 +75,75 @@ trait DashPackage extends StObject {
 }
 object DashPackage {
   
-  @scala.inline
-  def apply(): DashPackage = {
+  inline def apply(): DashPackage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashPackage]
   }
   
-  @scala.inline
-  implicit class DashPackageMutableBuilder[Self <: DashPackage] (val x: Self) extends AnyVal {
+  extension [Self <: DashPackage](x: Self) {
     
-    @scala.inline
-    def setAdTriggers(value: AdTriggers): Self = StObject.set(x, "AdTriggers", value.asInstanceOf[js.Any])
+    inline def setAdTriggers(value: AdTriggers): Self = StObject.set(x, "AdTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdTriggersUndefined: Self = StObject.set(x, "AdTriggers", js.undefined)
+    inline def setAdTriggersUndefined: Self = StObject.set(x, "AdTriggers", js.undefined)
     
-    @scala.inline
-    def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value :_*))
+    inline def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value :_*))
     
-    @scala.inline
-    def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = StObject.set(x, "AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
+    inline def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = StObject.set(x, "AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdsOnDeliveryRestrictionsUndefined: Self = StObject.set(x, "AdsOnDeliveryRestrictions", js.undefined)
+    inline def setAdsOnDeliveryRestrictionsUndefined: Self = StObject.set(x, "AdsOnDeliveryRestrictions", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: DashEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: DashEncryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "Encryption", js.undefined)
     
-    @scala.inline
-    def setManifestLayout(value: ManifestLayout): Self = StObject.set(x, "ManifestLayout", value.asInstanceOf[js.Any])
+    inline def setManifestLayout(value: ManifestLayout): Self = StObject.set(x, "ManifestLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestLayoutUndefined: Self = StObject.set(x, "ManifestLayout", js.undefined)
+    inline def setManifestLayoutUndefined: Self = StObject.set(x, "ManifestLayout", js.undefined)
     
-    @scala.inline
-    def setManifestWindowSeconds(value: integer): Self = StObject.set(x, "ManifestWindowSeconds", value.asInstanceOf[js.Any])
+    inline def setManifestWindowSeconds(value: integer): Self = StObject.set(x, "ManifestWindowSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestWindowSecondsUndefined: Self = StObject.set(x, "ManifestWindowSeconds", js.undefined)
+    inline def setManifestWindowSecondsUndefined: Self = StObject.set(x, "ManifestWindowSeconds", js.undefined)
     
-    @scala.inline
-    def setMinBufferTimeSeconds(value: integer): Self = StObject.set(x, "MinBufferTimeSeconds", value.asInstanceOf[js.Any])
+    inline def setMinBufferTimeSeconds(value: integer): Self = StObject.set(x, "MinBufferTimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinBufferTimeSecondsUndefined: Self = StObject.set(x, "MinBufferTimeSeconds", js.undefined)
+    inline def setMinBufferTimeSecondsUndefined: Self = StObject.set(x, "MinBufferTimeSeconds", js.undefined)
     
-    @scala.inline
-    def setMinUpdatePeriodSeconds(value: integer): Self = StObject.set(x, "MinUpdatePeriodSeconds", value.asInstanceOf[js.Any])
+    inline def setMinUpdatePeriodSeconds(value: integer): Self = StObject.set(x, "MinUpdatePeriodSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUpdatePeriodSecondsUndefined: Self = StObject.set(x, "MinUpdatePeriodSeconds", js.undefined)
+    inline def setMinUpdatePeriodSecondsUndefined: Self = StObject.set(x, "MinUpdatePeriodSeconds", js.undefined)
     
-    @scala.inline
-    def setPeriodTriggers(value: listOfPeriodTriggersElement): Self = StObject.set(x, "PeriodTriggers", value.asInstanceOf[js.Any])
+    inline def setPeriodTriggers(value: listOfPeriodTriggersElement): Self = StObject.set(x, "PeriodTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodTriggersUndefined: Self = StObject.set(x, "PeriodTriggers", js.undefined)
+    inline def setPeriodTriggersUndefined: Self = StObject.set(x, "PeriodTriggers", js.undefined)
     
-    @scala.inline
-    def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = StObject.set(x, "PeriodTriggers", js.Array(value :_*))
+    inline def setPeriodTriggersVarargs(value: PeriodTriggersElement*): Self = StObject.set(x, "PeriodTriggers", js.Array(value :_*))
     
-    @scala.inline
-    def setProfile(value: Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
     
-    @scala.inline
-    def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setSegmentDurationSeconds(value: integer): Self = StObject.set(x, "SegmentDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
+    inline def setSegmentDurationSecondsUndefined: Self = StObject.set(x, "SegmentDurationSeconds", js.undefined)
     
-    @scala.inline
-    def setSegmentTemplateFormat(value: SegmentTemplateFormat): Self = StObject.set(x, "SegmentTemplateFormat", value.asInstanceOf[js.Any])
+    inline def setSegmentTemplateFormat(value: SegmentTemplateFormat): Self = StObject.set(x, "SegmentTemplateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentTemplateFormatUndefined: Self = StObject.set(x, "SegmentTemplateFormat", js.undefined)
+    inline def setSegmentTemplateFormatUndefined: Self = StObject.set(x, "SegmentTemplateFormat", js.undefined)
     
-    @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
+    inline def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
+    inline def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
     
-    @scala.inline
-    def setSuggestedPresentationDelaySeconds(value: integer): Self = StObject.set(x, "SuggestedPresentationDelaySeconds", value.asInstanceOf[js.Any])
+    inline def setSuggestedPresentationDelaySeconds(value: integer): Self = StObject.set(x, "SuggestedPresentationDelaySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedPresentationDelaySecondsUndefined: Self = StObject.set(x, "SuggestedPresentationDelaySeconds", js.undefined)
+    inline def setSuggestedPresentationDelaySecondsUndefined: Self = StObject.set(x, "SuggestedPresentationDelaySeconds", js.undefined)
     
-    @scala.inline
-    def setUtcTiming(value: UtcTiming): Self = StObject.set(x, "UtcTiming", value.asInstanceOf[js.Any])
+    inline def setUtcTiming(value: UtcTiming): Self = StObject.set(x, "UtcTiming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcTimingUndefined: Self = StObject.set(x, "UtcTiming", js.undefined)
+    inline def setUtcTimingUndefined: Self = StObject.set(x, "UtcTiming", js.undefined)
     
-    @scala.inline
-    def setUtcTimingUri(value: string): Self = StObject.set(x, "UtcTimingUri", value.asInstanceOf[js.Any])
+    inline def setUtcTimingUri(value: string): Self = StObject.set(x, "UtcTimingUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtcTimingUriUndefined: Self = StObject.set(x, "UtcTimingUri", js.undefined)
+    inline def setUtcTimingUriUndefined: Self = StObject.set(x, "UtcTimingUri", js.undefined)
   }
 }

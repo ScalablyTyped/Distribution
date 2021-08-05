@@ -23,31 +23,23 @@ trait ResourceTargetDefinition extends StObject {
 }
 object ResourceTargetDefinition {
   
-  @scala.inline
-  def apply(): ResourceTargetDefinition = {
+  inline def apply(): ResourceTargetDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceTargetDefinition]
   }
   
-  @scala.inline
-  implicit class ResourceTargetDefinitionMutableBuilder[Self <: ResourceTargetDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceTargetDefinition](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: ResourceAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: ResourceAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
-    @scala.inline
-    def setName(value: PropertyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: PropertyName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRequiresRecreation(value: RequiresRecreation): Self = StObject.set(x, "RequiresRecreation", value.asInstanceOf[js.Any])
+    inline def setRequiresRecreation(value: RequiresRecreation): Self = StObject.set(x, "RequiresRecreation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresRecreationUndefined: Self = StObject.set(x, "RequiresRecreation", js.undefined)
+    inline def setRequiresRecreationUndefined: Self = StObject.set(x, "RequiresRecreation", js.undefined)
   }
 }

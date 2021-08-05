@@ -25,25 +25,19 @@ trait SchemaDependencyEdge extends StObject {
 }
 object SchemaDependencyEdge {
   
-  @scala.inline
-  def apply(): SchemaDependencyEdge = {
+  inline def apply(): SchemaDependencyEdge = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDependencyEdge]
   }
   
-  @scala.inline
-  implicit class SchemaDependencyEdgeMutableBuilder[Self <: SchemaDependencyEdge] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDependencyEdge](x: Self) {
     
-    @scala.inline
-    def setHeadTokenIndex(value: Double): Self = StObject.set(x, "headTokenIndex", value.asInstanceOf[js.Any])
+    inline def setHeadTokenIndex(value: Double): Self = StObject.set(x, "headTokenIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadTokenIndexUndefined: Self = StObject.set(x, "headTokenIndex", js.undefined)
+    inline def setHeadTokenIndexUndefined: Self = StObject.set(x, "headTokenIndex", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

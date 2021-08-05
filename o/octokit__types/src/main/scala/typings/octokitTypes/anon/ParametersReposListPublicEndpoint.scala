@@ -18,8 +18,7 @@ trait ParametersReposListPublicEndpoint extends StObject {
 }
 object ParametersReposListPublicEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReposListPublicEndpoint,
     request: ReposListPublicRequestOptions,
     response: OctokitResponse[ReposListPublicResponseData]
@@ -28,16 +27,12 @@ object ParametersReposListPublicEndpoint {
     __obj.asInstanceOf[ParametersReposListPublicEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReposListPublicEndpointMutableBuilder[Self <: ParametersReposListPublicEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReposListPublicEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReposListPublicEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReposListPublicEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReposListPublicRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReposListPublicRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposListPublicResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposListPublicResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait ProcessType extends StObject {
 }
 object ProcessType {
   
-  @scala.inline
-  def apply(ProcessName: XmlStringMaxLen255): ProcessType = {
+  inline def apply(ProcessName: XmlStringMaxLen255): ProcessType = {
     val __obj = js.Dynamic.literal(ProcessName = ProcessName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessType]
   }
   
-  @scala.inline
-  implicit class ProcessTypeMutableBuilder[Self <: ProcessType] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessType](x: Self) {
     
-    @scala.inline
-    def setProcessName(value: XmlStringMaxLen255): Self = StObject.set(x, "ProcessName", value.asInstanceOf[js.Any])
+    inline def setProcessName(value: XmlStringMaxLen255): Self = StObject.set(x, "ProcessName", value.asInstanceOf[js.Any])
   }
 }

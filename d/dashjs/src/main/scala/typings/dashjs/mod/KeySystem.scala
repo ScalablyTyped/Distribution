@@ -28,8 +28,7 @@ trait KeySystem extends StObject {
 }
 object KeySystem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCDMData: () => ArrayBuffer | Null,
     getInitData: js.Object => ArrayBuffer,
     getLicenseRequestFromMessage: ArrayBuffer => Uint8Array,
@@ -44,34 +43,24 @@ object KeySystem {
     __obj.asInstanceOf[KeySystem]
   }
   
-  @scala.inline
-  implicit class KeySystemMutableBuilder[Self <: KeySystem] (val x: Self) extends AnyVal {
+  extension [Self <: KeySystem](x: Self) {
     
-    @scala.inline
-    def setGetCDMData(value: () => ArrayBuffer | Null): Self = StObject.set(x, "getCDMData", js.Any.fromFunction0(value))
+    inline def setGetCDMData(value: () => ArrayBuffer | Null): Self = StObject.set(x, "getCDMData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInitData(value: js.Object => ArrayBuffer): Self = StObject.set(x, "getInitData", js.Any.fromFunction1(value))
+    inline def setGetInitData(value: js.Object => ArrayBuffer): Self = StObject.set(x, "getInitData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLicenseRequestFromMessage(value: ArrayBuffer => Uint8Array): Self = StObject.set(x, "getLicenseRequestFromMessage", js.Any.fromFunction1(value))
+    inline def setGetLicenseRequestFromMessage(value: ArrayBuffer => Uint8Array): Self = StObject.set(x, "getLicenseRequestFromMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLicenseServerURLFromInitData(value: ArrayBuffer => String | Null): Self = StObject.set(x, "getLicenseServerURLFromInitData", js.Any.fromFunction1(value))
+    inline def setGetLicenseServerURLFromInitData(value: ArrayBuffer => String | Null): Self = StObject.set(x, "getLicenseServerURLFromInitData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetRequestHeadersFromMessage(value: ArrayBuffer => js.Object | Null): Self = StObject.set(x, "getRequestHeadersFromMessage", js.Any.fromFunction1(value))
+    inline def setGetRequestHeadersFromMessage(value: ArrayBuffer => js.Object | Null): Self = StObject.set(x, "getRequestHeadersFromMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSessionId(value: () => String | Null): Self = StObject.set(x, "getSessionId", js.Any.fromFunction0(value))
+    inline def setGetSessionId(value: () => String | Null): Self = StObject.set(x, "getSessionId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSchemeIdURI(value: String): Self = StObject.set(x, "schemeIdURI", value.asInstanceOf[js.Any])
+    inline def setSchemeIdURI(value: String): Self = StObject.set(x, "schemeIdURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemString(value: String): Self = StObject.set(x, "systemString", value.asInstanceOf[js.Any])
+    inline def setSystemString(value: String): Self = StObject.set(x, "systemString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

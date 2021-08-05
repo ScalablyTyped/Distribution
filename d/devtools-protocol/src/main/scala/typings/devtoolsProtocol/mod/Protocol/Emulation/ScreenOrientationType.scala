@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScreenOrientationType extends StObject
 object ScreenOrientationType {
   
-  @scala.inline
-  def LandscapePrimary: landscapePrimary = "landscapePrimary".asInstanceOf[landscapePrimary]
+  inline def LandscapePrimary: landscapePrimary = "landscapePrimary".asInstanceOf[landscapePrimary]
   
-  @scala.inline
-  def LandscapeSecondary: landscapeSecondary = "landscapeSecondary".asInstanceOf[landscapeSecondary]
+  inline def LandscapeSecondary: landscapeSecondary = "landscapeSecondary".asInstanceOf[landscapeSecondary]
   
-  @scala.inline
-  def PortraitPrimary: portraitPrimary = "portraitPrimary".asInstanceOf[portraitPrimary]
+  inline def PortraitPrimary: portraitPrimary = "portraitPrimary".asInstanceOf[portraitPrimary]
   
-  @scala.inline
-  def PortraitSecondary: portraitSecondary = "portraitSecondary".asInstanceOf[portraitSecondary]
+  inline def PortraitSecondary: portraitSecondary = "portraitSecondary".asInstanceOf[portraitSecondary]
 }

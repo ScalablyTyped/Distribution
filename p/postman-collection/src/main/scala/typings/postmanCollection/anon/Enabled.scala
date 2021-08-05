@@ -12,25 +12,19 @@ trait Enabled extends StObject {
 }
 object Enabled {
   
-  @scala.inline
-  def apply(): Enabled = {
+  inline def apply(): Enabled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Enabled]
   }
   
-  @scala.inline
-  implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+  extension [Self <: Enabled](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
   }
 }

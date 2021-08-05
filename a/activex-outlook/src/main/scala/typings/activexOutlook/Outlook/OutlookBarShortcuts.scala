@@ -18,7 +18,7 @@ trait OutlookBarShortcuts extends StObject {
   
   def Item(Index: js.Any): OutlookBarShortcut = js.native
   
-  @JSName("Outlook.OutlookBarShortcuts_typekey")
+  /* private */ @JSName("Outlook.OutlookBarShortcuts_typekey")
   var OutlookDotOutlookBarShortcuts_typekey: OutlookBarShortcuts = js.native
   
   val Parent: js.Any = js.native

@@ -12,22 +12,17 @@ trait ScaleMultiFieldsRef extends StObject {
 }
 object ScaleMultiFieldsRef {
   
-  @scala.inline
-  def apply(data: String, fields: js.Array[ScaleField]): ScaleMultiFieldsRef = {
+  inline def apply(data: String, fields: js.Array[ScaleField]): ScaleMultiFieldsRef = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleMultiFieldsRef]
   }
   
-  @scala.inline
-  implicit class ScaleMultiFieldsRefMutableBuilder[Self <: ScaleMultiFieldsRef] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleMultiFieldsRef](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: js.Array[ScaleField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[ScaleField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsVarargs(value: ScaleField*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: ScaleField*): Self = StObject.set(x, "fields", js.Array(value :_*))
   }
 }

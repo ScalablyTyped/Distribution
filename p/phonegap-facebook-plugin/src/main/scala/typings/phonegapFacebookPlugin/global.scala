@@ -10,6 +10,5 @@ object global {
   @JSGlobal("facebookConnectPlugin")
   @js.native
   def facebookConnectPlugin: FacebookConnectPluginStatic = js.native
-  @scala.inline
-  def facebookConnectPlugin_=(x: FacebookConnectPluginStatic): Unit = js.Dynamic.global.updateDynamic("facebookConnectPlugin")(x.asInstanceOf[js.Any])
+  inline def facebookConnectPlugin_=(x: FacebookConnectPluginStatic): Unit = js.Dynamic.global.updateDynamic("facebookConnectPlugin")(x.asInstanceOf[js.Any])
 }

@@ -19,25 +19,19 @@ trait MultiplexProgramChannelDestinationSettings extends StObject {
 }
 object MultiplexProgramChannelDestinationSettings {
   
-  @scala.inline
-  def apply(): MultiplexProgramChannelDestinationSettings = {
+  inline def apply(): MultiplexProgramChannelDestinationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiplexProgramChannelDestinationSettings]
   }
   
-  @scala.inline
-  implicit class MultiplexProgramChannelDestinationSettingsMutableBuilder[Self <: MultiplexProgramChannelDestinationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexProgramChannelDestinationSettings](x: Self) {
     
-    @scala.inline
-    def setMultiplexId(value: stringMin1): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
+    inline def setMultiplexId(value: stringMin1): Self = StObject.set(x, "MultiplexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplexIdUndefined: Self = StObject.set(x, "MultiplexId", js.undefined)
+    inline def setMultiplexIdUndefined: Self = StObject.set(x, "MultiplexId", js.undefined)
     
-    @scala.inline
-    def setProgramName(value: stringMin1): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
+    inline def setProgramName(value: stringMin1): Self = StObject.set(x, "ProgramName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramNameUndefined: Self = StObject.set(x, "ProgramName", js.undefined)
+    inline def setProgramNameUndefined: Self = StObject.set(x, "ProgramName", js.undefined)
   }
 }

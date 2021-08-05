@@ -32,6 +32,5 @@ object Collection {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isCollection(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCollection(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollection")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

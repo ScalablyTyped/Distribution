@@ -72,139 +72,95 @@ trait DialogNode extends StObject {
 }
 object DialogNode {
   
-  @scala.inline
-  def apply(dialog_node: String): DialogNode = {
+  inline def apply(dialog_node: String): DialogNode = {
     val __obj = js.Dynamic.literal(dialog_node = dialog_node.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNode]
   }
   
-  @scala.inline
-  implicit class DialogNodeMutableBuilder[Self <: DialogNode] (val x: Self) extends AnyVal {
+  extension [Self <: DialogNode](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[DialogNodeAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[DialogNodeAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: DialogNodeAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: DialogNodeAction*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setConditions(value: String): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: String): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
     
-    @scala.inline
-    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
+    inline def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigress_in(value: String): Self = StObject.set(x, "digress_in", value.asInstanceOf[js.Any])
+    inline def setDigress_in(value: String): Self = StObject.set(x, "digress_in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigress_inUndefined: Self = StObject.set(x, "digress_in", js.undefined)
+    inline def setDigress_inUndefined: Self = StObject.set(x, "digress_in", js.undefined)
     
-    @scala.inline
-    def setDigress_out(value: String): Self = StObject.set(x, "digress_out", value.asInstanceOf[js.Any])
+    inline def setDigress_out(value: String): Self = StObject.set(x, "digress_out", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigress_outUndefined: Self = StObject.set(x, "digress_out", js.undefined)
+    inline def setDigress_outUndefined: Self = StObject.set(x, "digress_out", js.undefined)
     
-    @scala.inline
-    def setDigress_out_slots(value: String): Self = StObject.set(x, "digress_out_slots", value.asInstanceOf[js.Any])
+    inline def setDigress_out_slots(value: String): Self = StObject.set(x, "digress_out_slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigress_out_slotsUndefined: Self = StObject.set(x, "digress_out_slots", js.undefined)
+    inline def setDigress_out_slotsUndefined: Self = StObject.set(x, "digress_out_slots", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setEvent_name(value: String): Self = StObject.set(x, "event_name", value.asInstanceOf[js.Any])
+    inline def setEvent_name(value: String): Self = StObject.set(x, "event_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_nameUndefined: Self = StObject.set(x, "event_name", js.undefined)
+    inline def setEvent_nameUndefined: Self = StObject.set(x, "event_name", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setNext_step(value: DialogNodeNextStep): Self = StObject.set(x, "next_step", value.asInstanceOf[js.Any])
+    inline def setNext_step(value: DialogNodeNextStep): Self = StObject.set(x, "next_step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_stepUndefined: Self = StObject.set(x, "next_step", js.undefined)
+    inline def setNext_stepUndefined: Self = StObject.set(x, "next_step", js.undefined)
     
-    @scala.inline
-    def setNode_type(value: String): Self = StObject.set(x, "node_type", value.asInstanceOf[js.Any])
+    inline def setNode_type(value: String): Self = StObject.set(x, "node_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_typeUndefined: Self = StObject.set(x, "node_type", js.undefined)
+    inline def setNode_typeUndefined: Self = StObject.set(x, "node_type", js.undefined)
     
-    @scala.inline
-    def setOutput(value: DialogNodeOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: DialogNodeOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setPrevious_sibling(value: String): Self = StObject.set(x, "previous_sibling", value.asInstanceOf[js.Any])
+    inline def setPrevious_sibling(value: String): Self = StObject.set(x, "previous_sibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevious_siblingUndefined: Self = StObject.set(x, "previous_sibling", js.undefined)
+    inline def setPrevious_siblingUndefined: Self = StObject.set(x, "previous_sibling", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setUser_label(value: String): Self = StObject.set(x, "user_label", value.asInstanceOf[js.Any])
+    inline def setUser_label(value: String): Self = StObject.set(x, "user_label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_labelUndefined: Self = StObject.set(x, "user_label", js.undefined)
+    inline def setUser_labelUndefined: Self = StObject.set(x, "user_label", js.undefined)
     
-    @scala.inline
-    def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+    inline def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
+    inline def setVariableUndefined: Self = StObject.set(x, "variable", js.undefined)
   }
 }

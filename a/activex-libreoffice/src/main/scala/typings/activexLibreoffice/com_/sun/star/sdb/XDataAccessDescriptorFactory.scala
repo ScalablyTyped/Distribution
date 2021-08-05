@@ -19,16 +19,13 @@ trait XDataAccessDescriptorFactory extends StObject {
 }
 object XDataAccessDescriptorFactory {
   
-  @scala.inline
-  def apply(createDataAccessDescriptor: () => XPropertySet): XDataAccessDescriptorFactory = {
+  inline def apply(createDataAccessDescriptor: () => XPropertySet): XDataAccessDescriptorFactory = {
     val __obj = js.Dynamic.literal(createDataAccessDescriptor = js.Any.fromFunction0(createDataAccessDescriptor))
     __obj.asInstanceOf[XDataAccessDescriptorFactory]
   }
   
-  @scala.inline
-  implicit class XDataAccessDescriptorFactoryMutableBuilder[Self <: XDataAccessDescriptorFactory] (val x: Self) extends AnyVal {
+  extension [Self <: XDataAccessDescriptorFactory](x: Self) {
     
-    @scala.inline
-    def setCreateDataAccessDescriptor(value: () => XPropertySet): Self = StObject.set(x, "createDataAccessDescriptor", js.Any.fromFunction0(value))
+    inline def setCreateDataAccessDescriptor(value: () => XPropertySet): Self = StObject.set(x, "createDataAccessDescriptor", js.Any.fromFunction0(value))
   }
 }

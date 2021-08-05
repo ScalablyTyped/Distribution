@@ -33,79 +33,55 @@ trait DefaultsOptions extends StObject {
 }
 object DefaultsOptions {
   
-  @scala.inline
-  def apply(): DefaultsOptions = {
+  inline def apply(): DefaultsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DefaultsOptions]
   }
   
-  @scala.inline
-  implicit class DefaultsOptionsMutableBuilder[Self <: DefaultsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultsOptions](x: Self) {
     
-    @scala.inline
-    def setAltShiftDragRotate(value: Boolean): Self = StObject.set(x, "altShiftDragRotate", value.asInstanceOf[js.Any])
+    inline def setAltShiftDragRotate(value: Boolean): Self = StObject.set(x, "altShiftDragRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltShiftDragRotateUndefined: Self = StObject.set(x, "altShiftDragRotate", js.undefined)
+    inline def setAltShiftDragRotateUndefined: Self = StObject.set(x, "altShiftDragRotate", js.undefined)
     
-    @scala.inline
-    def setConstrainResolution(value: Boolean): Self = StObject.set(x, "constrainResolution", value.asInstanceOf[js.Any])
+    inline def setConstrainResolution(value: Boolean): Self = StObject.set(x, "constrainResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainResolutionUndefined: Self = StObject.set(x, "constrainResolution", js.undefined)
+    inline def setConstrainResolutionUndefined: Self = StObject.set(x, "constrainResolution", js.undefined)
     
-    @scala.inline
-    def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
+    inline def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
+    inline def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
     
-    @scala.inline
-    def setDragPan(value: Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
+    inline def setDragPan(value: Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
+    inline def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
     
-    @scala.inline
-    def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
     
-    @scala.inline
-    def setMouseWheelZoom(value: Boolean): Self = StObject.set(x, "mouseWheelZoom", value.asInstanceOf[js.Any])
+    inline def setMouseWheelZoom(value: Boolean): Self = StObject.set(x, "mouseWheelZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseWheelZoomUndefined: Self = StObject.set(x, "mouseWheelZoom", js.undefined)
+    inline def setMouseWheelZoomUndefined: Self = StObject.set(x, "mouseWheelZoom", js.undefined)
     
-    @scala.inline
-    def setPinchRotate(value: Boolean): Self = StObject.set(x, "pinchRotate", value.asInstanceOf[js.Any])
+    inline def setPinchRotate(value: Boolean): Self = StObject.set(x, "pinchRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinchRotateUndefined: Self = StObject.set(x, "pinchRotate", js.undefined)
+    inline def setPinchRotateUndefined: Self = StObject.set(x, "pinchRotate", js.undefined)
     
-    @scala.inline
-    def setPinchZoom(value: Boolean): Self = StObject.set(x, "pinchZoom", value.asInstanceOf[js.Any])
+    inline def setPinchZoom(value: Boolean): Self = StObject.set(x, "pinchZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinchZoomUndefined: Self = StObject.set(x, "pinchZoom", js.undefined)
+    inline def setPinchZoomUndefined: Self = StObject.set(x, "pinchZoom", js.undefined)
     
-    @scala.inline
-    def setShiftDragZoom(value: Boolean): Self = StObject.set(x, "shiftDragZoom", value.asInstanceOf[js.Any])
+    inline def setShiftDragZoom(value: Boolean): Self = StObject.set(x, "shiftDragZoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShiftDragZoomUndefined: Self = StObject.set(x, "shiftDragZoom", js.undefined)
+    inline def setShiftDragZoomUndefined: Self = StObject.set(x, "shiftDragZoom", js.undefined)
     
-    @scala.inline
-    def setZoomDelta(value: Double): Self = StObject.set(x, "zoomDelta", value.asInstanceOf[js.Any])
+    inline def setZoomDelta(value: Double): Self = StObject.set(x, "zoomDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomDeltaUndefined: Self = StObject.set(x, "zoomDelta", js.undefined)
+    inline def setZoomDeltaUndefined: Self = StObject.set(x, "zoomDelta", js.undefined)
     
-    @scala.inline
-    def setZoomDuration(value: Double): Self = StObject.set(x, "zoomDuration", value.asInstanceOf[js.Any])
+    inline def setZoomDuration(value: Double): Self = StObject.set(x, "zoomDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomDurationUndefined: Self = StObject.set(x, "zoomDuration", js.undefined)
+    inline def setZoomDurationUndefined: Self = StObject.set(x, "zoomDuration", js.undefined)
   }
 }

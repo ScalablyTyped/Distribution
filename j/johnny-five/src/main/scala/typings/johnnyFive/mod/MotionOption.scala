@@ -10,16 +10,13 @@ trait MotionOption extends StObject {
 }
 object MotionOption {
   
-  @scala.inline
-  def apply(pin: Double | String): MotionOption = {
+  inline def apply(pin: Double | String): MotionOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotionOption]
   }
   
-  @scala.inline
-  implicit class MotionOptionMutableBuilder[Self <: MotionOption] (val x: Self) extends AnyVal {
+  extension [Self <: MotionOption](x: Self) {
     
-    @scala.inline
-    def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     account_id: Double,
     body: String,
     conversation_id: Double,
@@ -36,28 +35,20 @@ object Message {
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
+    inline def setAccount_id(value: Double): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversation_id(value: Double): Self = StObject.set(x, "conversation_id", value.asInstanceOf[js.Any])
+    inline def setConversation_id(value: Double): Self = StObject.set(x, "conversation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    inline def setDatetime(value: Double): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender_id(value: Double): Self = StObject.set(x, "sender_id", value.asInstanceOf[js.Any])
+    inline def setSender_id(value: Double): Self = StObject.set(x, "sender_id", value.asInstanceOf[js.Any])
   }
 }

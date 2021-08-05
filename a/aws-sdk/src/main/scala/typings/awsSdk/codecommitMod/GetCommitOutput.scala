@@ -13,16 +13,13 @@ trait GetCommitOutput extends StObject {
 }
 object GetCommitOutput {
   
-  @scala.inline
-  def apply(commit: Commit): GetCommitOutput = {
+  inline def apply(commit: Commit): GetCommitOutput = {
     val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommitOutput]
   }
   
-  @scala.inline
-  implicit class GetCommitOutputMutableBuilder[Self <: GetCommitOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCommitOutput](x: Self) {
     
-    @scala.inline
-    def setCommit(value: Commit): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Commit): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
   }
 }

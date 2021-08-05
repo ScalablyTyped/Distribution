@@ -18,43 +18,31 @@ trait ThumbsOptions extends StObject {
 }
 object ThumbsOptions {
   
-  @scala.inline
-  def apply(): ThumbsOptions = {
+  inline def apply(): ThumbsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThumbsOptions]
   }
   
-  @scala.inline
-  implicit class ThumbsOptionsMutableBuilder[Self <: ThumbsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ThumbsOptions](x: Self) {
     
-    @scala.inline
-    def setAutoScrollOffset(value: Double): Self = StObject.set(x, "autoScrollOffset", value.asInstanceOf[js.Any])
+    inline def setAutoScrollOffset(value: Double): Self = StObject.set(x, "autoScrollOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScrollOffsetUndefined: Self = StObject.set(x, "autoScrollOffset", js.undefined)
+    inline def setAutoScrollOffsetUndefined: Self = StObject.set(x, "autoScrollOffset", js.undefined)
     
-    @scala.inline
-    def setMultipleActiveThumbs(value: Boolean): Self = StObject.set(x, "multipleActiveThumbs", value.asInstanceOf[js.Any])
+    inline def setMultipleActiveThumbs(value: Boolean): Self = StObject.set(x, "multipleActiveThumbs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleActiveThumbsUndefined: Self = StObject.set(x, "multipleActiveThumbs", js.undefined)
+    inline def setMultipleActiveThumbsUndefined: Self = StObject.set(x, "multipleActiveThumbs", js.undefined)
     
-    @scala.inline
-    def setSlideThumbActiveClass(value: String): Self = StObject.set(x, "slideThumbActiveClass", value.asInstanceOf[js.Any])
+    inline def setSlideThumbActiveClass(value: String): Self = StObject.set(x, "slideThumbActiveClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideThumbActiveClassUndefined: Self = StObject.set(x, "slideThumbActiveClass", js.undefined)
+    inline def setSlideThumbActiveClassUndefined: Self = StObject.set(x, "slideThumbActiveClass", js.undefined)
     
-    @scala.inline
-    def setSwiper(value: Swiper): Self = StObject.set(x, "swiper", value.asInstanceOf[js.Any])
+    inline def setSwiper(value: Swiper): Self = StObject.set(x, "swiper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwiperUndefined: Self = StObject.set(x, "swiper", js.undefined)
+    inline def setSwiperUndefined: Self = StObject.set(x, "swiper", js.undefined)
     
-    @scala.inline
-    def setThumbsContainerClass(value: String): Self = StObject.set(x, "thumbsContainerClass", value.asInstanceOf[js.Any])
+    inline def setThumbsContainerClass(value: String): Self = StObject.set(x, "thumbsContainerClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbsContainerClassUndefined: Self = StObject.set(x, "thumbsContainerClass", js.undefined)
+    inline def setThumbsContainerClassUndefined: Self = StObject.set(x, "thumbsContainerClass", js.undefined)
   }
 }

@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoPickerField extends StObject
 object MsoPickerField {
   
-  @scala.inline
-  def msoPickerFieldDateTime: `1` = 1.asInstanceOf[`1`]
+  inline def msoPickerFieldDateTime: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoPickerFieldMax: `5` = 5.asInstanceOf[`5`]
+  inline def msoPickerFieldMax: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoPickerFieldNumber: `2` = 2.asInstanceOf[`2`]
+  inline def msoPickerFieldNumber: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoPickerFieldText: `3` = 3.asInstanceOf[`3`]
+  inline def msoPickerFieldText: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoPickerFieldUnknown: `0` = 0.asInstanceOf[`0`]
+  inline def msoPickerFieldUnknown: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoPickerFieldUser: `4` = 4.asInstanceOf[`4`]
+  inline def msoPickerFieldUser: `4` = 4.asInstanceOf[`4`]
 }

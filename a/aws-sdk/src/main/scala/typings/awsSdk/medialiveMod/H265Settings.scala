@@ -168,181 +168,123 @@ trait H265Settings extends StObject {
 }
 object H265Settings {
   
-  @scala.inline
-  def apply(FramerateDenominator: integerMin1Max3003, FramerateNumerator: integerMin1): H265Settings = {
+  inline def apply(FramerateDenominator: integerMin1Max3003, FramerateNumerator: integerMin1): H265Settings = {
     val __obj = js.Dynamic.literal(FramerateDenominator = FramerateDenominator.asInstanceOf[js.Any], FramerateNumerator = FramerateNumerator.asInstanceOf[js.Any])
     __obj.asInstanceOf[H265Settings]
   }
   
-  @scala.inline
-  implicit class H265SettingsMutableBuilder[Self <: H265Settings] (val x: Self) extends AnyVal {
+  extension [Self <: H265Settings](x: Self) {
     
-    @scala.inline
-    def setAdaptiveQuantization(value: H265AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
+    inline def setAdaptiveQuantization(value: H265AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdaptiveQuantizationUndefined: Self = StObject.set(x, "AdaptiveQuantization", js.undefined)
+    inline def setAdaptiveQuantizationUndefined: Self = StObject.set(x, "AdaptiveQuantization", js.undefined)
     
-    @scala.inline
-    def setAfdSignaling(value: AfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
+    inline def setAfdSignaling(value: AfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfdSignalingUndefined: Self = StObject.set(x, "AfdSignaling", js.undefined)
+    inline def setAfdSignalingUndefined: Self = StObject.set(x, "AfdSignaling", js.undefined)
     
-    @scala.inline
-    def setAlternativeTransferFunction(value: H265AlternativeTransferFunction): Self = StObject.set(x, "AlternativeTransferFunction", value.asInstanceOf[js.Any])
+    inline def setAlternativeTransferFunction(value: H265AlternativeTransferFunction): Self = StObject.set(x, "AlternativeTransferFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativeTransferFunctionUndefined: Self = StObject.set(x, "AlternativeTransferFunction", js.undefined)
+    inline def setAlternativeTransferFunctionUndefined: Self = StObject.set(x, "AlternativeTransferFunction", js.undefined)
     
-    @scala.inline
-    def setBitrate(value: integerMin100000Max40000000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: integerMin100000Max40000000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
-    @scala.inline
-    def setBufSize(value: integerMin100000Max80000000): Self = StObject.set(x, "BufSize", value.asInstanceOf[js.Any])
+    inline def setBufSize(value: integerMin100000Max80000000): Self = StObject.set(x, "BufSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufSizeUndefined: Self = StObject.set(x, "BufSize", js.undefined)
+    inline def setBufSizeUndefined: Self = StObject.set(x, "BufSize", js.undefined)
     
-    @scala.inline
-    def setColorMetadata(value: H265ColorMetadata): Self = StObject.set(x, "ColorMetadata", value.asInstanceOf[js.Any])
+    inline def setColorMetadata(value: H265ColorMetadata): Self = StObject.set(x, "ColorMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorMetadataUndefined: Self = StObject.set(x, "ColorMetadata", js.undefined)
+    inline def setColorMetadataUndefined: Self = StObject.set(x, "ColorMetadata", js.undefined)
     
-    @scala.inline
-    def setColorSpaceSettings(value: H265ColorSpaceSettings): Self = StObject.set(x, "ColorSpaceSettings", value.asInstanceOf[js.Any])
+    inline def setColorSpaceSettings(value: H265ColorSpaceSettings): Self = StObject.set(x, "ColorSpaceSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpaceSettingsUndefined: Self = StObject.set(x, "ColorSpaceSettings", js.undefined)
+    inline def setColorSpaceSettingsUndefined: Self = StObject.set(x, "ColorSpaceSettings", js.undefined)
     
-    @scala.inline
-    def setFilterSettings(value: H265FilterSettings): Self = StObject.set(x, "FilterSettings", value.asInstanceOf[js.Any])
+    inline def setFilterSettings(value: H265FilterSettings): Self = StObject.set(x, "FilterSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterSettingsUndefined: Self = StObject.set(x, "FilterSettings", js.undefined)
+    inline def setFilterSettingsUndefined: Self = StObject.set(x, "FilterSettings", js.undefined)
     
-    @scala.inline
-    def setFixedAfd(value: FixedAfd): Self = StObject.set(x, "FixedAfd", value.asInstanceOf[js.Any])
+    inline def setFixedAfd(value: FixedAfd): Self = StObject.set(x, "FixedAfd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedAfdUndefined: Self = StObject.set(x, "FixedAfd", js.undefined)
+    inline def setFixedAfdUndefined: Self = StObject.set(x, "FixedAfd", js.undefined)
     
-    @scala.inline
-    def setFlickerAq(value: H265FlickerAq): Self = StObject.set(x, "FlickerAq", value.asInstanceOf[js.Any])
+    inline def setFlickerAq(value: H265FlickerAq): Self = StObject.set(x, "FlickerAq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlickerAqUndefined: Self = StObject.set(x, "FlickerAq", js.undefined)
+    inline def setFlickerAqUndefined: Self = StObject.set(x, "FlickerAq", js.undefined)
     
-    @scala.inline
-    def setFramerateDenominator(value: integerMin1Max3003): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
+    inline def setFramerateDenominator(value: integerMin1Max3003): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateNumerator(value: integerMin1): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
+    inline def setFramerateNumerator(value: integerMin1): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopClosedCadence(value: integerMin0): Self = StObject.set(x, "GopClosedCadence", value.asInstanceOf[js.Any])
+    inline def setGopClosedCadence(value: integerMin0): Self = StObject.set(x, "GopClosedCadence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopClosedCadenceUndefined: Self = StObject.set(x, "GopClosedCadence", js.undefined)
+    inline def setGopClosedCadenceUndefined: Self = StObject.set(x, "GopClosedCadence", js.undefined)
     
-    @scala.inline
-    def setGopSize(value: double): Self = StObject.set(x, "GopSize", value.asInstanceOf[js.Any])
+    inline def setGopSize(value: double): Self = StObject.set(x, "GopSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopSizeUndefined: Self = StObject.set(x, "GopSize", js.undefined)
+    inline def setGopSizeUndefined: Self = StObject.set(x, "GopSize", js.undefined)
     
-    @scala.inline
-    def setGopSizeUnits(value: H265GopSizeUnits): Self = StObject.set(x, "GopSizeUnits", value.asInstanceOf[js.Any])
+    inline def setGopSizeUnits(value: H265GopSizeUnits): Self = StObject.set(x, "GopSizeUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopSizeUnitsUndefined: Self = StObject.set(x, "GopSizeUnits", js.undefined)
+    inline def setGopSizeUnitsUndefined: Self = StObject.set(x, "GopSizeUnits", js.undefined)
     
-    @scala.inline
-    def setLevel(value: H265Level): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: H265Level): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "Level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "Level", js.undefined)
     
-    @scala.inline
-    def setLookAheadRateControl(value: H265LookAheadRateControl): Self = StObject.set(x, "LookAheadRateControl", value.asInstanceOf[js.Any])
+    inline def setLookAheadRateControl(value: H265LookAheadRateControl): Self = StObject.set(x, "LookAheadRateControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookAheadRateControlUndefined: Self = StObject.set(x, "LookAheadRateControl", js.undefined)
+    inline def setLookAheadRateControlUndefined: Self = StObject.set(x, "LookAheadRateControl", js.undefined)
     
-    @scala.inline
-    def setMaxBitrate(value: integerMin100000Max40000000): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxBitrate(value: integerMin100000Max40000000): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
+    inline def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
     
-    @scala.inline
-    def setMinIInterval(value: integerMin0Max30): Self = StObject.set(x, "MinIInterval", value.asInstanceOf[js.Any])
+    inline def setMinIInterval(value: integerMin0Max30): Self = StObject.set(x, "MinIInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinIIntervalUndefined: Self = StObject.set(x, "MinIInterval", js.undefined)
+    inline def setMinIIntervalUndefined: Self = StObject.set(x, "MinIInterval", js.undefined)
     
-    @scala.inline
-    def setParDenominator(value: integerMin1): Self = StObject.set(x, "ParDenominator", value.asInstanceOf[js.Any])
+    inline def setParDenominator(value: integerMin1): Self = StObject.set(x, "ParDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParDenominatorUndefined: Self = StObject.set(x, "ParDenominator", js.undefined)
+    inline def setParDenominatorUndefined: Self = StObject.set(x, "ParDenominator", js.undefined)
     
-    @scala.inline
-    def setParNumerator(value: integerMin1): Self = StObject.set(x, "ParNumerator", value.asInstanceOf[js.Any])
+    inline def setParNumerator(value: integerMin1): Self = StObject.set(x, "ParNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParNumeratorUndefined: Self = StObject.set(x, "ParNumerator", js.undefined)
+    inline def setParNumeratorUndefined: Self = StObject.set(x, "ParNumerator", js.undefined)
     
-    @scala.inline
-    def setProfile(value: H265Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: H265Profile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
     
-    @scala.inline
-    def setQvbrQualityLevel(value: integerMin1Max10): Self = StObject.set(x, "QvbrQualityLevel", value.asInstanceOf[js.Any])
+    inline def setQvbrQualityLevel(value: integerMin1Max10): Self = StObject.set(x, "QvbrQualityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQvbrQualityLevelUndefined: Self = StObject.set(x, "QvbrQualityLevel", js.undefined)
+    inline def setQvbrQualityLevelUndefined: Self = StObject.set(x, "QvbrQualityLevel", js.undefined)
     
-    @scala.inline
-    def setRateControlMode(value: H265RateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
+    inline def setRateControlMode(value: H265RateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
+    inline def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
     
-    @scala.inline
-    def setScanType(value: H265ScanType): Self = StObject.set(x, "ScanType", value.asInstanceOf[js.Any])
+    inline def setScanType(value: H265ScanType): Self = StObject.set(x, "ScanType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanTypeUndefined: Self = StObject.set(x, "ScanType", js.undefined)
+    inline def setScanTypeUndefined: Self = StObject.set(x, "ScanType", js.undefined)
     
-    @scala.inline
-    def setSceneChangeDetect(value: H265SceneChangeDetect): Self = StObject.set(x, "SceneChangeDetect", value.asInstanceOf[js.Any])
+    inline def setSceneChangeDetect(value: H265SceneChangeDetect): Self = StObject.set(x, "SceneChangeDetect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSceneChangeDetectUndefined: Self = StObject.set(x, "SceneChangeDetect", js.undefined)
+    inline def setSceneChangeDetectUndefined: Self = StObject.set(x, "SceneChangeDetect", js.undefined)
     
-    @scala.inline
-    def setSlices(value: integerMin1Max16): Self = StObject.set(x, "Slices", value.asInstanceOf[js.Any])
+    inline def setSlices(value: integerMin1Max16): Self = StObject.set(x, "Slices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicesUndefined: Self = StObject.set(x, "Slices", js.undefined)
+    inline def setSlicesUndefined: Self = StObject.set(x, "Slices", js.undefined)
     
-    @scala.inline
-    def setTier(value: H265Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: H265Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
     
-    @scala.inline
-    def setTimecodeInsertion(value: H265TimecodeInsertionBehavior): Self = StObject.set(x, "TimecodeInsertion", value.asInstanceOf[js.Any])
+    inline def setTimecodeInsertion(value: H265TimecodeInsertionBehavior): Self = StObject.set(x, "TimecodeInsertion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimecodeInsertionUndefined: Self = StObject.set(x, "TimecodeInsertion", js.undefined)
+    inline def setTimecodeInsertionUndefined: Self = StObject.set(x, "TimecodeInsertion", js.undefined)
   }
 }

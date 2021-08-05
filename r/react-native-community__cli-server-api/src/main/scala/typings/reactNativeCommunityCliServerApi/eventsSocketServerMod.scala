@@ -17,8 +17,7 @@ object eventsSocketServerMod {
     @JSImport("@react-native-community/cli-server-api/build/websocket/eventsSocketServer", "default.attachToServer")
     @js.native
     def attachToServer: js.Function3[/* server */ Server, /* path */ String, /* messageSocket */ MessageSocket, ReportEvent] = js.native
-    @scala.inline
-    def attachToServer_=(
+    inline def attachToServer_=(
       x: js.Function3[/* server */ Server, /* path */ String, /* messageSocket */ MessageSocket, ReportEvent]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attachToServer")(x.asInstanceOf[js.Any])
   }

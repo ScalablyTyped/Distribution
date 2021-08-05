@@ -17,25 +17,19 @@ trait ContactUsOptions extends StObject {
 }
 object ContactUsOptions {
   
-  @scala.inline
-  def apply(): ContactUsOptions = {
+  inline def apply(): ContactUsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactUsOptions]
   }
   
-  @scala.inline
-  implicit class ContactUsOptionsMutableBuilder[Self <: ContactUsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContactUsOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait SmbMountOptions extends StObject {
 }
 object SmbMountOptions {
   
-  @scala.inline
-  def apply(): SmbMountOptions = {
+  inline def apply(): SmbMountOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SmbMountOptions]
   }
   
-  @scala.inline
-  implicit class SmbMountOptionsMutableBuilder[Self <: SmbMountOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SmbMountOptions](x: Self) {
     
-    @scala.inline
-    def setVersion(value: SmbVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: SmbVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "Version", js.undefined)
   }
 }

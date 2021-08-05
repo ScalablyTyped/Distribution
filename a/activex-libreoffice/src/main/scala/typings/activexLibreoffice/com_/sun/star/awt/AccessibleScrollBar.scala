@@ -30,8 +30,7 @@ trait AccessibleScrollBar
      with XAccessibleValue
 object AccessibleScrollBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleActionCount: Double,
     AccessibleChildCount: Double,
     AccessibleDescription: String,

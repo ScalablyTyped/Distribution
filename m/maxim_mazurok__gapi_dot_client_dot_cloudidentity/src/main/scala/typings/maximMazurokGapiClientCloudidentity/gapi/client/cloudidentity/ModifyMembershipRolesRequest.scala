@@ -17,31 +17,23 @@ trait ModifyMembershipRolesRequest extends StObject {
 }
 object ModifyMembershipRolesRequest {
   
-  @scala.inline
-  def apply(): ModifyMembershipRolesRequest = {
+  inline def apply(): ModifyMembershipRolesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyMembershipRolesRequest]
   }
   
-  @scala.inline
-  implicit class ModifyMembershipRolesRequestMutableBuilder[Self <: ModifyMembershipRolesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyMembershipRolesRequest](x: Self) {
     
-    @scala.inline
-    def setAddRoles(value: js.Array[MembershipRole]): Self = StObject.set(x, "addRoles", value.asInstanceOf[js.Any])
+    inline def setAddRoles(value: js.Array[MembershipRole]): Self = StObject.set(x, "addRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddRolesUndefined: Self = StObject.set(x, "addRoles", js.undefined)
+    inline def setAddRolesUndefined: Self = StObject.set(x, "addRoles", js.undefined)
     
-    @scala.inline
-    def setAddRolesVarargs(value: MembershipRole*): Self = StObject.set(x, "addRoles", js.Array(value :_*))
+    inline def setAddRolesVarargs(value: MembershipRole*): Self = StObject.set(x, "addRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoveRoles(value: js.Array[String]): Self = StObject.set(x, "removeRoles", value.asInstanceOf[js.Any])
+    inline def setRemoveRoles(value: js.Array[String]): Self = StObject.set(x, "removeRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRolesUndefined: Self = StObject.set(x, "removeRoles", js.undefined)
+    inline def setRemoveRolesUndefined: Self = StObject.set(x, "removeRoles", js.undefined)
     
-    @scala.inline
-    def setRemoveRolesVarargs(value: String*): Self = StObject.set(x, "removeRoles", js.Array(value :_*))
+    inline def setRemoveRolesVarargs(value: String*): Self = StObject.set(x, "removeRoles", js.Array(value :_*))
   }
 }

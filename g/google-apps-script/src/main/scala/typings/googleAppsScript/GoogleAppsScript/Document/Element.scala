@@ -121,8 +121,7 @@ trait Element extends StObject {
 }
 object Element {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBody: () => Body,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,
@@ -158,97 +157,66 @@ object Element {
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def setAsBody(value: () => Body): Self = StObject.set(x, "asBody", js.Any.fromFunction0(value))
+    inline def setAsBody(value: () => Body): Self = StObject.set(x, "asBody", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsEquation(value: () => Equation): Self = StObject.set(x, "asEquation", js.Any.fromFunction0(value))
+    inline def setAsEquation(value: () => Equation): Self = StObject.set(x, "asEquation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsEquationFunction(value: () => EquationFunction): Self = StObject.set(x, "asEquationFunction", js.Any.fromFunction0(value))
+    inline def setAsEquationFunction(value: () => EquationFunction): Self = StObject.set(x, "asEquationFunction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsEquationFunctionArgumentSeparator(value: () => EquationFunctionArgumentSeparator): Self = StObject.set(x, "asEquationFunctionArgumentSeparator", js.Any.fromFunction0(value))
+    inline def setAsEquationFunctionArgumentSeparator(value: () => EquationFunctionArgumentSeparator): Self = StObject.set(x, "asEquationFunctionArgumentSeparator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsEquationSymbol(value: () => EquationSymbol): Self = StObject.set(x, "asEquationSymbol", js.Any.fromFunction0(value))
+    inline def setAsEquationSymbol(value: () => EquationSymbol): Self = StObject.set(x, "asEquationSymbol", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsFooterSection(value: () => FooterSection): Self = StObject.set(x, "asFooterSection", js.Any.fromFunction0(value))
+    inline def setAsFooterSection(value: () => FooterSection): Self = StObject.set(x, "asFooterSection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsFootnote(value: () => Footnote): Self = StObject.set(x, "asFootnote", js.Any.fromFunction0(value))
+    inline def setAsFootnote(value: () => Footnote): Self = StObject.set(x, "asFootnote", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsFootnoteSection(value: () => FootnoteSection): Self = StObject.set(x, "asFootnoteSection", js.Any.fromFunction0(value))
+    inline def setAsFootnoteSection(value: () => FootnoteSection): Self = StObject.set(x, "asFootnoteSection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsHeaderSection(value: () => HeaderSection): Self = StObject.set(x, "asHeaderSection", js.Any.fromFunction0(value))
+    inline def setAsHeaderSection(value: () => HeaderSection): Self = StObject.set(x, "asHeaderSection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsHorizontalRule(value: () => HorizontalRule): Self = StObject.set(x, "asHorizontalRule", js.Any.fromFunction0(value))
+    inline def setAsHorizontalRule(value: () => HorizontalRule): Self = StObject.set(x, "asHorizontalRule", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsInlineDrawing(value: () => InlineDrawing): Self = StObject.set(x, "asInlineDrawing", js.Any.fromFunction0(value))
+    inline def setAsInlineDrawing(value: () => InlineDrawing): Self = StObject.set(x, "asInlineDrawing", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsInlineImage(value: () => InlineImage): Self = StObject.set(x, "asInlineImage", js.Any.fromFunction0(value))
+    inline def setAsInlineImage(value: () => InlineImage): Self = StObject.set(x, "asInlineImage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsListItem(value: () => ListItem): Self = StObject.set(x, "asListItem", js.Any.fromFunction0(value))
+    inline def setAsListItem(value: () => ListItem): Self = StObject.set(x, "asListItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsPageBreak(value: () => PageBreak): Self = StObject.set(x, "asPageBreak", js.Any.fromFunction0(value))
+    inline def setAsPageBreak(value: () => PageBreak): Self = StObject.set(x, "asPageBreak", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsParagraph(value: () => Paragraph): Self = StObject.set(x, "asParagraph", js.Any.fromFunction0(value))
+    inline def setAsParagraph(value: () => Paragraph): Self = StObject.set(x, "asParagraph", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsTable(value: () => Table): Self = StObject.set(x, "asTable", js.Any.fromFunction0(value))
+    inline def setAsTable(value: () => Table): Self = StObject.set(x, "asTable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsTableCell(value: () => TableCell): Self = StObject.set(x, "asTableCell", js.Any.fromFunction0(value))
+    inline def setAsTableCell(value: () => TableCell): Self = StObject.set(x, "asTableCell", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsTableOfContents(value: () => TableOfContents): Self = StObject.set(x, "asTableOfContents", js.Any.fromFunction0(value))
+    inline def setAsTableOfContents(value: () => TableOfContents): Self = StObject.set(x, "asTableOfContents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsTableRow(value: () => TableRow): Self = StObject.set(x, "asTableRow", js.Any.fromFunction0(value))
+    inline def setAsTableRow(value: () => TableRow): Self = StObject.set(x, "asTableRow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAsText(value: () => Text): Self = StObject.set(x, "asText", js.Any.fromFunction0(value))
+    inline def setAsText(value: () => Text): Self = StObject.set(x, "asText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopy(value: () => Element): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => Element): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAttributes(value: () => js.Any): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
+    inline def setGetAttributes(value: () => js.Any): Self = StObject.set(x, "getAttributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNextSibling(value: () => Element): Self = StObject.set(x, "getNextSibling", js.Any.fromFunction0(value))
+    inline def setGetNextSibling(value: () => Element): Self = StObject.set(x, "getNextSibling", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParent(value: () => ContainerElement): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    inline def setGetParent(value: () => ContainerElement): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreviousSibling(value: () => Element): Self = StObject.set(x, "getPreviousSibling", js.Any.fromFunction0(value))
+    inline def setGetPreviousSibling(value: () => Element): Self = StObject.set(x, "getPreviousSibling", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => ElementType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => ElementType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAtDocumentEnd(value: () => Boolean): Self = StObject.set(x, "isAtDocumentEnd", js.Any.fromFunction0(value))
+    inline def setIsAtDocumentEnd(value: () => Boolean): Self = StObject.set(x, "isAtDocumentEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMerge(value: () => Element): Self = StObject.set(x, "merge", js.Any.fromFunction0(value))
+    inline def setMerge(value: () => Element): Self = StObject.set(x, "merge", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveFromParent(value: () => Element): Self = StObject.set(x, "removeFromParent", js.Any.fromFunction0(value))
+    inline def setRemoveFromParent(value: () => Element): Self = StObject.set(x, "removeFromParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAttributes(value: js.Any => Element): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
+    inline def setSetAttributes(value: js.Any => Element): Self = StObject.set(x, "setAttributes", js.Any.fromFunction1(value))
   }
 }

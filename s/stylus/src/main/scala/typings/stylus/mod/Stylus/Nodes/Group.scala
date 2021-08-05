@@ -22,8 +22,7 @@ trait Group
 }
 object Group {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     block: Block,
     coerce: Node => Node,
     column: Double,
@@ -46,22 +45,16 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasOnlyPlaceholders(value: scala.Boolean): Self = StObject.set(x, "hasOnlyPlaceholders", value.asInstanceOf[js.Any])
+    inline def setHasOnlyPlaceholders(value: scala.Boolean): Self = StObject.set(x, "hasOnlyPlaceholders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setPush(value: Node => scala.Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: Node => scala.Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
   }
 }

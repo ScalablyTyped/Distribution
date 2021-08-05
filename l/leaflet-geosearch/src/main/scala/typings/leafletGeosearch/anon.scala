@@ -18,17 +18,14 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(address: City): Address = {
+    inline def apply(address: City): Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: City): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: City): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,8 +47,7 @@ object anon {
   }
   object AdminDistrict {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adminDistrict: String,
       adminDistrict2: String,
       countryRegion: String,
@@ -64,29 +60,21 @@ object anon {
       __obj.asInstanceOf[AdminDistrict]
     }
     
-    @scala.inline
-    implicit class AdminDistrictMutableBuilder[Self <: AdminDistrict] (val x: Self) extends AnyVal {
+    extension [Self <: AdminDistrict](x: Self) {
       
-      @scala.inline
-      def setAdminDistrict(value: String): Self = StObject.set(x, "adminDistrict", value.asInstanceOf[js.Any])
+      inline def setAdminDistrict(value: String): Self = StObject.set(x, "adminDistrict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdminDistrict2(value: String): Self = StObject.set(x, "adminDistrict2", value.asInstanceOf[js.Any])
+      inline def setAdminDistrict2(value: String): Self = StObject.set(x, "adminDistrict2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryRegion(value: String): Self = StObject.set(x, "countryRegion", value.asInstanceOf[js.Any])
+      inline def setCountryRegion(value: String): Self = StObject.set(x, "countryRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
+      inline def setFormattedAddress(value: String): Self = StObject.set(x, "formattedAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLandmark(value: String): Self = StObject.set(x, "landmark", value.asInstanceOf[js.Any])
+      inline def setLandmark(value: String): Self = StObject.set(x, "landmark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+      inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeighborhood(value: String): Self = StObject.set(x, "neighborhood", value.asInstanceOf[js.Any])
+      inline def setNeighborhood(value: String): Self = StObject.set(x, "neighborhood", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,30 +91,23 @@ object anon {
   }
   object BingProviderResultPointca {
     
-    @scala.inline
-    def apply(calculationMethod: String, coordinates: PointTuple, `type`: String, usageTypes: js.Array[String]): BingProviderResultPointca = {
+    inline def apply(calculationMethod: String, coordinates: PointTuple, `type`: String, usageTypes: js.Array[String]): BingProviderResultPointca = {
       val __obj = js.Dynamic.literal(calculationMethod = calculationMethod.asInstanceOf[js.Any], coordinates = coordinates.asInstanceOf[js.Any], usageTypes = usageTypes.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BingProviderResultPointca]
     }
     
-    @scala.inline
-    implicit class BingProviderResultPointcaMutableBuilder[Self <: BingProviderResultPointca] (val x: Self) extends AnyVal {
+    extension [Self <: BingProviderResultPointca](x: Self) {
       
-      @scala.inline
-      def setCalculationMethod(value: String): Self = StObject.set(x, "calculationMethod", value.asInstanceOf[js.Any])
+      inline def setCalculationMethod(value: String): Self = StObject.set(x, "calculationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinates(value: PointTuple): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+      inline def setCoordinates(value: PointTuple): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageTypes(value: js.Array[String]): Self = StObject.set(x, "usageTypes", value.asInstanceOf[js.Any])
+      inline def setUsageTypes(value: js.Array[String]): Self = StObject.set(x, "usageTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsageTypesVarargs(value: String*): Self = StObject.set(x, "usageTypes", js.Array(value :_*))
+      inline def setUsageTypesVarargs(value: String*): Self = StObject.set(x, "usageTypes", js.Array(value :_*))
     }
   }
   
@@ -146,50 +127,36 @@ object anon {
   }
   object Button {
     
-    @scala.inline
-    def apply(): Button = {
+    inline def apply(): Button = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Button]
     }
     
-    @scala.inline
-    implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+    extension [Self <: Button](x: Self) {
       
-      @scala.inline
-      def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+      inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setMsgbox(value: String): Self = StObject.set(x, "msgbox", value.asInstanceOf[js.Any])
+      inline def setMsgbox(value: String): Self = StObject.set(x, "msgbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgboxUndefined: Self = StObject.set(x, "msgbox", js.undefined)
+      inline def setMsgboxUndefined: Self = StObject.set(x, "msgbox", js.undefined)
       
-      @scala.inline
-      def setResetButton(value: String): Self = StObject.set(x, "resetButton", value.asInstanceOf[js.Any])
+      inline def setResetButton(value: String): Self = StObject.set(x, "resetButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetButtonUndefined: Self = StObject.set(x, "resetButton", js.undefined)
+      inline def setResetButtonUndefined: Self = StObject.set(x, "resetButton", js.undefined)
     }
   }
   
@@ -217,8 +184,7 @@ object anon {
   }
   object City {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       city: String,
       country: String,
       country_code: String,
@@ -234,38 +200,27 @@ object anon {
       __obj.asInstanceOf[City]
     }
     
-    @scala.inline
-    implicit class CityMutableBuilder[Self <: City] (val x: Self) extends AnyVal {
+    extension [Self <: City](x: Self) {
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
+      inline def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounty(value: String): Self = StObject.set(x, "county", value.asInstanceOf[js.Any])
+      inline def setCounty(value: String): Self = StObject.set(x, "county", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHouse_number(value: String): Self = StObject.set(x, "house_number", value.asInstanceOf[js.Any])
+      inline def setHouse_number(value: String): Self = StObject.set(x, "house_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
+      inline def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
+      inline def setRoad(value: String): Self = StObject.set(x, "road", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState_district(value: String): Self = StObject.set(x, "state_district", value.asInstanceOf[js.Any])
+      inline def setState_district(value: String): Self = StObject.set(x, "state_district", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTown(value: String): Self = StObject.set(x, "town", value.asInstanceOf[js.Any])
+      inline def setTown(value: String): Self = StObject.set(x, "town", value.asInstanceOf[js.Any])
     }
   }
   
@@ -279,23 +234,18 @@ object anon {
   }
   object Location {
     
-    @scala.inline
-    def apply(location: LatLngLiteral, location_type: String, viewport: Northeast): Location = {
+    inline def apply(location: LatLngLiteral, location_type: String, viewport: Northeast): Location = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], location_type = location_type.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
       __obj.asInstanceOf[Location]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+    extension [Self <: Location](x: Self) {
       
-      @scala.inline
-      def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation_type(value: String): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
+      inline def setLocation_type(value: String): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewport(value: Northeast): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+      inline def setViewport(value: Northeast): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     }
   }
   
@@ -307,20 +257,16 @@ object anon {
   }
   object Northeast {
     
-    @scala.inline
-    def apply(northeast: LatLngLiteral, southwest: LatLngLiteral): Northeast = {
+    inline def apply(northeast: LatLngLiteral, southwest: LatLngLiteral): Northeast = {
       val __obj = js.Dynamic.literal(northeast = northeast.asInstanceOf[js.Any], southwest = southwest.asInstanceOf[js.Any])
       __obj.asInstanceOf[Northeast]
     }
     
-    @scala.inline
-    implicit class NortheastMutableBuilder[Self <: Northeast] (val x: Self) extends AnyVal {
+    extension [Self <: Northeast](x: Self) {
       
-      @scala.inline
-      def setNortheast(value: LatLngLiteral): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
+      inline def setNortheast(value: LatLngLiteral): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSouthwest(value: LatLngLiteral): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
+      inline def setSouthwest(value: LatLngLiteral): Self = StObject.set(x, "southwest", value.asInstanceOf[js.Any])
     }
   }
   
@@ -332,26 +278,20 @@ object anon {
   }
   object Osmid {
     
-    @scala.inline
-    def apply(): Osmid = {
+    inline def apply(): Osmid = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Osmid]
     }
     
-    @scala.inline
-    implicit class OsmidMutableBuilder[Self <: Osmid] (val x: Self) extends AnyVal {
+    extension [Self <: Osmid](x: Self) {
       
-      @scala.inline
-      def setOsm_id(value: Double): Self = StObject.set(x, "osm_id", value.asInstanceOf[js.Any])
+      inline def setOsm_id(value: Double): Self = StObject.set(x, "osm_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOsm_idUndefined: Self = StObject.set(x, "osm_id", js.undefined)
+      inline def setOsm_idUndefined: Self = StObject.set(x, "osm_id", js.undefined)
       
-      @scala.inline
-      def setOsm_type(value: node | way | relation): Self = StObject.set(x, "osm_type", value.asInstanceOf[js.Any])
+      inline def setOsm_type(value: node | way | relation): Self = StObject.set(x, "osm_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOsm_typeUndefined: Self = StObject.set(x, "osm_type", js.undefined)
+      inline def setOsm_typeUndefined: Self = StObject.set(x, "osm_type", js.undefined)
     }
   }
   
@@ -363,20 +303,16 @@ object anon {
   }
   object Query {
     
-    @scala.inline
-    def apply(query: String, result: SearchResult[js.Object]): Query = {
+    inline def apply(query: String, result: SearchResult[js.Object]): Query = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Query]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+    extension [Self <: Query](x: Self) {
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: SearchResult[js.Object]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: SearchResult[js.Object]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -386,17 +322,14 @@ object anon {
   }
   object Raw {
     
-    @scala.inline
-    def apply(raw: Osmid): Raw = {
+    inline def apply(raw: Osmid): Raw = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[Raw]
     }
     
-    @scala.inline
-    implicit class RawMutableBuilder[Self <: Raw] (val x: Self) extends AnyVal {
+    extension [Self <: Raw](x: Self) {
       
-      @scala.inline
-      def setRaw(value: Osmid): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Osmid): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
 }

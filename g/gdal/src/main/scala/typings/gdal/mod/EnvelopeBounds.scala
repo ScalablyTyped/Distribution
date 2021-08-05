@@ -16,25 +16,19 @@ trait EnvelopeBounds extends StObject {
 }
 object EnvelopeBounds {
   
-  @scala.inline
-  def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): EnvelopeBounds = {
+  inline def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): EnvelopeBounds = {
     val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvelopeBounds]
   }
   
-  @scala.inline
-  implicit class EnvelopeBoundsMutableBuilder[Self <: EnvelopeBounds] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeBounds](x: Self) {
     
-    @scala.inline
-    def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
+    inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
+    inline def setMaxY(value: Double): Self = StObject.set(x, "maxY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
+    inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+    inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
   }
 }

@@ -19,13 +19,13 @@ object jsonmodelMod {
       */
     def this(options: IOptions) = this()
     
-    var _bodyFields: js.Any = js.native
+    /* private */ var _bodyFields: js.Any = js.native
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
-    var _headerFields: js.Any = js.native
+    /* private */ var _headerFields: js.Any = js.native
     
-    var _missingValues: js.Any = js.native
+    /* private */ var _missingValues: js.Any = js.native
   }
   object JSONModel {
     
@@ -75,35 +75,26 @@ object jsonmodelMod {
     }
     object Field {
       
-      @scala.inline
-      def apply(name: String): Field = {
+      inline def apply(name: String): Field = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[Field]
       }
       
-      @scala.inline
-      implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+      extension [Self <: Field](x: Self) {
         
-        @scala.inline
-        def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+        inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       }
     }
     
@@ -128,23 +119,18 @@ object jsonmodelMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(data: DataSource, schema: Schema): IOptions = {
+      inline def apply(data: DataSource, schema: Schema): IOptions = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setData(value: DataSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: DataSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataVarargs(value: ReadonlyJSONObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+        inline def setDataVarargs(value: ReadonlyJSONObject*): Self = StObject.set(x, "data", js.Array(value :_*))
         
-        @scala.inline
-        def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+        inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       }
     }
     
@@ -180,38 +166,28 @@ object jsonmodelMod {
     }
     object Schema {
       
-      @scala.inline
-      def apply(fields: js.Array[Field]): Schema = {
+      inline def apply(fields: js.Array[Field]): Schema = {
         val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
         __obj.asInstanceOf[Schema]
       }
       
-      @scala.inline
-      implicit class SchemaMutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
+      extension [Self <: Schema](x: Self) {
         
-        @scala.inline
-        def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: js.Array[Field]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
+        inline def setFieldsVarargs(value: Field*): Self = StObject.set(x, "fields", js.Array(value :_*))
         
-        @scala.inline
-        def setMissingValues(value: js.Array[String]): Self = StObject.set(x, "missingValues", value.asInstanceOf[js.Any])
+        inline def setMissingValues(value: js.Array[String]): Self = StObject.set(x, "missingValues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMissingValuesUndefined: Self = StObject.set(x, "missingValues", js.undefined)
+        inline def setMissingValuesUndefined: Self = StObject.set(x, "missingValues", js.undefined)
         
-        @scala.inline
-        def setMissingValuesVarargs(value: String*): Self = StObject.set(x, "missingValues", js.Array(value :_*))
+        inline def setMissingValuesVarargs(value: String*): Self = StObject.set(x, "missingValues", js.Array(value :_*))
         
-        @scala.inline
-        def setPrimaryKey(value: String | js.Array[String]): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+        inline def setPrimaryKey(value: String | js.Array[String]): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+        inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
         
-        @scala.inline
-        def setPrimaryKeyVarargs(value: String*): Self = StObject.set(x, "primaryKey", js.Array(value :_*))
+        inline def setPrimaryKeyVarargs(value: String*): Self = StObject.set(x, "primaryKey", js.Array(value :_*))
       }
     }
   }

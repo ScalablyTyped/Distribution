@@ -24,31 +24,23 @@ trait Metric extends StObject {
 }
 object Metric {
   
-  @scala.inline
-  def apply(): Metric = {
+  inline def apply(): Metric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Metric]
   }
   
-  @scala.inline
-  implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+  extension [Self <: Metric](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+    inline def setInvisible(value: Boolean): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+    inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

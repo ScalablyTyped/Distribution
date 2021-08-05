@@ -10,16 +10,13 @@ trait PDFLoadingTask[T] extends StObject {
 }
 object PDFLoadingTask {
   
-  @scala.inline
-  def apply[T](promise: PDFPromise[T]): PDFLoadingTask[T] = {
+  inline def apply[T](promise: PDFPromise[T]): PDFLoadingTask[T] = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFLoadingTask[T]]
   }
   
-  @scala.inline
-  implicit class PDFLoadingTaskMutableBuilder[Self <: PDFLoadingTask[?], T] (val x: Self & PDFLoadingTask[T]) extends AnyVal {
+  extension [Self <: PDFLoadingTask[?], T](x: Self & PDFLoadingTask[T]) {
     
-    @scala.inline
-    def setPromise(value: PDFPromise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: PDFPromise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }
 }

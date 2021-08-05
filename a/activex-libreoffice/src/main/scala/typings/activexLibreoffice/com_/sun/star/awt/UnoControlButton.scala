@@ -16,8 +16,7 @@ trait UnoControlButton
      with XLayoutConstrains
 object UnoControlButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Graphics: XGraphics,

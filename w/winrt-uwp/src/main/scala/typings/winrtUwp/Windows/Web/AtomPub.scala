@@ -139,8 +139,7 @@ object AtomPub {
   }
   object AtomPubClient {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bypassCacheOnRetrieve: Boolean,
       cancelAsyncOperations: () => Unit,
       createMediaResourceAsync: (Uri, String, String, IInputStream) => IPromiseWithIAsyncOperationWithProgress[SyndicationItem, TransferProgress],
@@ -164,66 +163,47 @@ object AtomPub {
       __obj.asInstanceOf[AtomPubClient]
     }
     
-    @scala.inline
-    implicit class AtomPubClientMutableBuilder[Self <: AtomPubClient] (val x: Self) extends AnyVal {
+    extension [Self <: AtomPubClient](x: Self) {
       
-      @scala.inline
-      def setBypassCacheOnRetrieve(value: Boolean): Self = StObject.set(x, "bypassCacheOnRetrieve", value.asInstanceOf[js.Any])
+      inline def setBypassCacheOnRetrieve(value: Boolean): Self = StObject.set(x, "bypassCacheOnRetrieve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelAsyncOperations(value: () => Unit): Self = StObject.set(x, "cancelAsyncOperations", js.Any.fromFunction0(value))
+      inline def setCancelAsyncOperations(value: () => Unit): Self = StObject.set(x, "cancelAsyncOperations", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreateMediaResourceAsync(
+      inline def setCreateMediaResourceAsync(
         value: (Uri, String, String, IInputStream) => IPromiseWithIAsyncOperationWithProgress[SyndicationItem, TransferProgress]
       ): Self = StObject.set(x, "createMediaResourceAsync", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCreateResourceAsync(
+      inline def setCreateResourceAsync(
         value: (Uri, String, SyndicationItem) => IPromiseWithIAsyncOperationWithProgress[SyndicationItem, TransferProgress]
       ): Self = StObject.set(x, "createResourceAsync", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDeleteResourceAsync(value: Uri => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "deleteResourceAsync", js.Any.fromFunction1(value))
+      inline def setDeleteResourceAsync(value: Uri => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "deleteResourceAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteResourceItemAsync(value: SyndicationItem => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "deleteResourceItemAsync", js.Any.fromFunction1(value))
+      inline def setDeleteResourceItemAsync(value: SyndicationItem => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "deleteResourceItemAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaxResponseBufferSize(value: Double): Self = StObject.set(x, "maxResponseBufferSize", value.asInstanceOf[js.Any])
+      inline def setMaxResponseBufferSize(value: Double): Self = StObject.set(x, "maxResponseBufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
+      inline def setProxyCredential(value: PasswordCredential): Self = StObject.set(x, "proxyCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetrieveFeedAsync(value: Uri => IPromiseWithIAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress]): Self = StObject.set(x, "retrieveFeedAsync", js.Any.fromFunction1(value))
+      inline def setRetrieveFeedAsync(value: Uri => IPromiseWithIAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress]): Self = StObject.set(x, "retrieveFeedAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRetrieveMediaResourceAsync(value: Uri => IPromiseWithIAsyncOperationWithProgress[IInputStream, RetrievalProgress]): Self = StObject.set(x, "retrieveMediaResourceAsync", js.Any.fromFunction1(value))
+      inline def setRetrieveMediaResourceAsync(value: Uri => IPromiseWithIAsyncOperationWithProgress[IInputStream, RetrievalProgress]): Self = StObject.set(x, "retrieveMediaResourceAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRetrieveResourceAsync(value: Uri => IPromiseWithIAsyncOperationWithProgress[SyndicationItem, RetrievalProgress]): Self = StObject.set(x, "retrieveResourceAsync", js.Any.fromFunction1(value))
+      inline def setRetrieveResourceAsync(value: Uri => IPromiseWithIAsyncOperationWithProgress[SyndicationItem, RetrievalProgress]): Self = StObject.set(x, "retrieveResourceAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRetrieveServiceDocumentAsync(value: Uri => IPromiseWithIAsyncOperationWithProgress[ServiceDocument, RetrievalProgress]): Self = StObject.set(x, "retrieveServiceDocumentAsync", js.Any.fromFunction1(value))
+      inline def setRetrieveServiceDocumentAsync(value: Uri => IPromiseWithIAsyncOperationWithProgress[ServiceDocument, RetrievalProgress]): Self = StObject.set(x, "retrieveServiceDocumentAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
+      inline def setServerCredential(value: PasswordCredential): Self = StObject.set(x, "serverCredential", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
+      inline def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateMediaResourceAsync(value: (Uri, String, IInputStream) => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "updateMediaResourceAsync", js.Any.fromFunction3(value))
+      inline def setUpdateMediaResourceAsync(value: (Uri, String, IInputStream) => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "updateMediaResourceAsync", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpdateResourceAsync(value: (Uri, SyndicationItem) => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "updateResourceAsync", js.Any.fromFunction2(value))
+      inline def setUpdateResourceAsync(value: (Uri, SyndicationItem) => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "updateResourceAsync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateResourceItemAsync(value: SyndicationItem => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "updateResourceItemAsync", js.Any.fromFunction1(value))
+      inline def setUpdateResourceItemAsync(value: SyndicationItem => IPromiseWithIAsyncActionWithProgress[TransferProgress]): Self = StObject.set(x, "updateResourceItemAsync", js.Any.fromFunction1(value))
     }
   }
   
@@ -272,8 +252,7 @@ object AtomPub {
   }
   object ResourceCollection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accepts: IVectorView[String],
       attributeExtensions: IVector[SyndicationAttribute],
       baseUri: Uri,
@@ -291,44 +270,31 @@ object AtomPub {
       __obj.asInstanceOf[ResourceCollection]
     }
     
-    @scala.inline
-    implicit class ResourceCollectionMutableBuilder[Self <: ResourceCollection] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceCollection](x: Self) {
       
-      @scala.inline
-      def setAccepts(value: IVectorView[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
+      inline def setAccepts(value: IVectorView[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = StObject.set(x, "attributeExtensions", value.asInstanceOf[js.Any])
+      inline def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = StObject.set(x, "attributeExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUri(value: Uri): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
+      inline def setBaseUri(value: Uri): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategories(value: IVectorView[SyndicationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: IVectorView[SyndicationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementExtensions(value: IVector[ISyndicationNode]): Self = StObject.set(x, "elementExtensions", value.asInstanceOf[js.Any])
+      inline def setElementExtensions(value: IVector[ISyndicationNode]): Self = StObject.set(x, "elementExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetXmlDocument(value: SyndicationFormat => XmlDocument): Self = StObject.set(x, "getXmlDocument", js.Any.fromFunction1(value))
+      inline def setGetXmlDocument(value: SyndicationFormat => XmlDocument): Self = StObject.set(x, "getXmlDocument", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeNamespace(value: String): Self = StObject.set(x, "nodeNamespace", value.asInstanceOf[js.Any])
+      inline def setNodeNamespace(value: String): Self = StObject.set(x, "nodeNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+      inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: ISyndicationText): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ISyndicationText): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
   
@@ -368,8 +334,7 @@ object AtomPub {
   }
   object ServiceDocument {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributeExtensions: IVector[SyndicationAttribute],
       baseUri: Uri,
       elementExtensions: IVector[ISyndicationNode],
@@ -384,35 +349,25 @@ object AtomPub {
       __obj.asInstanceOf[ServiceDocument]
     }
     
-    @scala.inline
-    implicit class ServiceDocumentMutableBuilder[Self <: ServiceDocument] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceDocument](x: Self) {
       
-      @scala.inline
-      def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = StObject.set(x, "attributeExtensions", value.asInstanceOf[js.Any])
+      inline def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = StObject.set(x, "attributeExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUri(value: Uri): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
+      inline def setBaseUri(value: Uri): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementExtensions(value: IVector[ISyndicationNode]): Self = StObject.set(x, "elementExtensions", value.asInstanceOf[js.Any])
+      inline def setElementExtensions(value: IVector[ISyndicationNode]): Self = StObject.set(x, "elementExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetXmlDocument(value: SyndicationFormat => XmlDocument): Self = StObject.set(x, "getXmlDocument", js.Any.fromFunction1(value))
+      inline def setGetXmlDocument(value: SyndicationFormat => XmlDocument): Self = StObject.set(x, "getXmlDocument", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeNamespace(value: String): Self = StObject.set(x, "nodeNamespace", value.asInstanceOf[js.Any])
+      inline def setNodeNamespace(value: String): Self = StObject.set(x, "nodeNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+      inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaces(value: IVectorView[Workspace]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+      inline def setWorkspaces(value: IVectorView[Workspace]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
     }
   }
   
@@ -455,8 +410,7 @@ object AtomPub {
   }
   object Workspace {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributeExtensions: IVector[SyndicationAttribute],
       baseUri: Uri,
       collections: IVectorView[ResourceCollection],
@@ -472,38 +426,27 @@ object AtomPub {
       __obj.asInstanceOf[Workspace]
     }
     
-    @scala.inline
-    implicit class WorkspaceMutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
+    extension [Self <: Workspace](x: Self) {
       
-      @scala.inline
-      def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = StObject.set(x, "attributeExtensions", value.asInstanceOf[js.Any])
+      inline def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = StObject.set(x, "attributeExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUri(value: Uri): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
+      inline def setBaseUri(value: Uri): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollections(value: IVectorView[ResourceCollection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+      inline def setCollections(value: IVectorView[ResourceCollection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementExtensions(value: IVector[ISyndicationNode]): Self = StObject.set(x, "elementExtensions", value.asInstanceOf[js.Any])
+      inline def setElementExtensions(value: IVector[ISyndicationNode]): Self = StObject.set(x, "elementExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetXmlDocument(value: SyndicationFormat => XmlDocument): Self = StObject.set(x, "getXmlDocument", js.Any.fromFunction1(value))
+      inline def setGetXmlDocument(value: SyndicationFormat => XmlDocument): Self = StObject.set(x, "getXmlDocument", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeNamespace(value: String): Self = StObject.set(x, "nodeNamespace", value.asInstanceOf[js.Any])
+      inline def setNodeNamespace(value: String): Self = StObject.set(x, "nodeNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+      inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: ISyndicationText): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ISyndicationText): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

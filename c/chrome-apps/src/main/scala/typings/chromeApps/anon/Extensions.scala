@@ -14,31 +14,23 @@ trait Extensions extends StObject {
 }
 object Extensions {
   
-  @scala.inline
-  def apply(): Extensions = {
+  inline def apply(): Extensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Extensions]
   }
   
-  @scala.inline
-  implicit class ExtensionsMutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
+  extension [Self <: Extensions](x: Self) {
     
-    @scala.inline
-    def setExtensions(value: js.Array[Asterisk | String | Includedirectories]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[Asterisk | String | Includedirectories]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: (Asterisk | String | Includedirectories)*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: (Asterisk | String | Includedirectories)*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setTypes(value: js.Array[Asterisk | String | Includedirectories]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[Asterisk | String | Includedirectories]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setTypesVarargs(value: (Asterisk | String | Includedirectories)*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: (Asterisk | String | Includedirectories)*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

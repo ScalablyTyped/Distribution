@@ -13,22 +13,17 @@ trait RemoteLockActionResult
 }
 object RemoteLockActionResult {
   
-  @scala.inline
-  def apply(): RemoteLockActionResult = {
+  inline def apply(): RemoteLockActionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoteLockActionResult]
   }
   
-  @scala.inline
-  implicit class RemoteLockActionResultMutableBuilder[Self <: RemoteLockActionResult] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteLockActionResult](x: Self) {
     
-    @scala.inline
-    def setUnlockPin(value: NullableOption[String]): Self = StObject.set(x, "unlockPin", value.asInstanceOf[js.Any])
+    inline def setUnlockPin(value: NullableOption[String]): Self = StObject.set(x, "unlockPin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlockPinNull: Self = StObject.set(x, "unlockPin", null)
+    inline def setUnlockPinNull: Self = StObject.set(x, "unlockPin", null)
     
-    @scala.inline
-    def setUnlockPinUndefined: Self = StObject.set(x, "unlockPin", js.undefined)
+    inline def setUnlockPinUndefined: Self = StObject.set(x, "unlockPin", js.undefined)
   }
 }

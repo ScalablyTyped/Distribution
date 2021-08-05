@@ -14,19 +14,15 @@ trait RequestSubscribeMessageFailCallbackResult extends StObject {
 }
 object RequestSubscribeMessageFailCallbackResult {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String): RequestSubscribeMessageFailCallbackResult = {
+  inline def apply(errCode: Double, errMsg: String): RequestSubscribeMessageFailCallbackResult = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSubscribeMessageFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class RequestSubscribeMessageFailCallbackResultMutableBuilder[Self <: RequestSubscribeMessageFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSubscribeMessageFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

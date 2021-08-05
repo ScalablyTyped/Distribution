@@ -23,43 +23,31 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(): Action = {
+  inline def apply(): Action = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setActor(value: Actor): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: Actor): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
+    inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
-    @scala.inline
-    def setDetail(value: ActionDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: ActionDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Target): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
+    inline def setTimeRange(value: TimeRange): Self = StObject.set(x, "timeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
+    inline def setTimeRangeUndefined: Self = StObject.set(x, "timeRange", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

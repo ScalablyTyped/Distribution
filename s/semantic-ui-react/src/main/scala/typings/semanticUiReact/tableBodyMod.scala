@@ -27,32 +27,24 @@ object tableBodyMod extends Shortcut {
   }
   object StrictTableBodyProps {
     
-    @scala.inline
-    def apply(): StrictTableBodyProps = {
+    inline def apply(): StrictTableBodyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTableBodyProps]
     }
     
-    @scala.inline
-    implicit class StrictTableBodyPropsMutableBuilder[Self <: StrictTableBodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTableBodyProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   
@@ -62,8 +54,7 @@ object tableBodyMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object TableBodyProps {
     
-    @scala.inline
-    def apply(): TableBodyProps = {
+    inline def apply(): TableBodyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableBodyProps]
     }

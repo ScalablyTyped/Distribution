@@ -18,19 +18,15 @@ trait IsPrimary extends StObject {
 }
 object IsPrimary {
   
-  @scala.inline
-  def apply(isPrimary: Boolean, serviceId: String): IsPrimary = {
+  inline def apply(isPrimary: Boolean, serviceId: String): IsPrimary = {
     val __obj = js.Dynamic.literal(isPrimary = isPrimary.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsPrimary]
   }
   
-  @scala.inline
-  implicit class IsPrimaryMutableBuilder[Self <: IsPrimary] (val x: Self) extends AnyVal {
+  extension [Self <: IsPrimary](x: Self) {
     
-    @scala.inline
-    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+    inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
   }
 }

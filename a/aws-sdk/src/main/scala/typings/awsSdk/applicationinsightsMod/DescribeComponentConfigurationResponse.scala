@@ -23,31 +23,23 @@ trait DescribeComponentConfigurationResponse extends StObject {
 }
 object DescribeComponentConfigurationResponse {
   
-  @scala.inline
-  def apply(): DescribeComponentConfigurationResponse = {
+  inline def apply(): DescribeComponentConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeComponentConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeComponentConfigurationResponseMutableBuilder[Self <: DescribeComponentConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeComponentConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setComponentConfiguration(value: ComponentConfiguration): Self = StObject.set(x, "ComponentConfiguration", value.asInstanceOf[js.Any])
+    inline def setComponentConfiguration(value: ComponentConfiguration): Self = StObject.set(x, "ComponentConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentConfigurationUndefined: Self = StObject.set(x, "ComponentConfiguration", js.undefined)
+    inline def setComponentConfigurationUndefined: Self = StObject.set(x, "ComponentConfiguration", js.undefined)
     
-    @scala.inline
-    def setMonitor(value: Monitor): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
+    inline def setMonitor(value: Monitor): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorUndefined: Self = StObject.set(x, "Monitor", js.undefined)
+    inline def setMonitorUndefined: Self = StObject.set(x, "Monitor", js.undefined)
     
-    @scala.inline
-    def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
   }
 }

@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnnotOptionsIcon extends StObject
 object AnnotOptionsIcon {
   
-  @scala.inline
-  def Comment: typings.hummusRecipe.hummusRecipeStrings.Comment = "Comment".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Comment]
+  inline def Comment: typings.hummusRecipe.hummusRecipeStrings.Comment = "Comment".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Comment]
   
-  @scala.inline
-  def Help: typings.hummusRecipe.hummusRecipeStrings.Help = "Help".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Help]
+  inline def Help: typings.hummusRecipe.hummusRecipeStrings.Help = "Help".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Help]
   
-  @scala.inline
-  def Insert: typings.hummusRecipe.hummusRecipeStrings.Insert = "Insert".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Insert]
+  inline def Insert: typings.hummusRecipe.hummusRecipeStrings.Insert = "Insert".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Insert]
   
-  @scala.inline
-  def Key: typings.hummusRecipe.hummusRecipeStrings.Key = "Key".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Key]
+  inline def Key: typings.hummusRecipe.hummusRecipeStrings.Key = "Key".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Key]
   
-  @scala.inline
-  def NewParagraph: typings.hummusRecipe.hummusRecipeStrings.NewParagraph = "NewParagraph".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.NewParagraph]
+  inline def NewParagraph: typings.hummusRecipe.hummusRecipeStrings.NewParagraph = "NewParagraph".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.NewParagraph]
   
-  @scala.inline
-  def Note: typings.hummusRecipe.hummusRecipeStrings.Note = "Note".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Note]
+  inline def Note: typings.hummusRecipe.hummusRecipeStrings.Note = "Note".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Note]
   
-  @scala.inline
-  def Paragraph: typings.hummusRecipe.hummusRecipeStrings.Paragraph = "Paragraph".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Paragraph]
+  inline def Paragraph: typings.hummusRecipe.hummusRecipeStrings.Paragraph = "Paragraph".asInstanceOf[typings.hummusRecipe.hummusRecipeStrings.Paragraph]
 }

@@ -56,8 +56,7 @@ trait PropertyPreview extends StObject {
 }
 object PropertyPreview {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     `type`: `object` | function | undefined | string | number | boolean | symbol | accessor | bigint
   ): PropertyPreview = {
@@ -66,33 +65,24 @@ object PropertyPreview {
     __obj.asInstanceOf[PropertyPreview]
   }
   
-  @scala.inline
-  implicit class PropertyPreviewMutableBuilder[Self <: PropertyPreview] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyPreview](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtype(
+    inline def setSubtype(
       value: array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error
     ): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
-    @scala.inline
-    def setType(value: `object` | function | undefined | string | number | boolean | symbol | accessor | bigint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `object` | function | undefined | string | number | boolean | symbol | accessor | bigint): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuePreview(value: ObjectPreview): Self = StObject.set(x, "valuePreview", value.asInstanceOf[js.Any])
+    inline def setValuePreview(value: ObjectPreview): Self = StObject.set(x, "valuePreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuePreviewUndefined: Self = StObject.set(x, "valuePreview", js.undefined)
+    inline def setValuePreviewUndefined: Self = StObject.set(x, "valuePreview", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

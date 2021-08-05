@@ -27,31 +27,23 @@ trait SchemaCutoffTime extends StObject {
 }
 object SchemaCutoffTime {
   
-  @scala.inline
-  def apply(): SchemaCutoffTime = {
+  inline def apply(): SchemaCutoffTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCutoffTime]
   }
   
-  @scala.inline
-  implicit class SchemaCutoffTimeMutableBuilder[Self <: SchemaCutoffTime] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCutoffTime](x: Self) {
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+    inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
     
-    @scala.inline
-    def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+    inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

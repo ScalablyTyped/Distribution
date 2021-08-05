@@ -13,19 +13,15 @@ trait Position1 extends StObject {
 }
 object Position1 {
   
-  @scala.inline
-  def apply(position1: Cartesian2, position2: Cartesian2): Position1 = {
+  inline def apply(position1: Cartesian2, position2: Cartesian2): Position1 = {
     val __obj = js.Dynamic.literal(position1 = position1.asInstanceOf[js.Any], position2 = position2.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position1]
   }
   
-  @scala.inline
-  implicit class Position1MutableBuilder[Self <: Position1] (val x: Self) extends AnyVal {
+  extension [Self <: Position1](x: Self) {
     
-    @scala.inline
-    def setPosition1(value: Cartesian2): Self = StObject.set(x, "position1", value.asInstanceOf[js.Any])
+    inline def setPosition1(value: Cartesian2): Self = StObject.set(x, "position1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition2(value: Cartesian2): Self = StObject.set(x, "position2", value.asInstanceOf[js.Any])
+    inline def setPosition2(value: Cartesian2): Self = StObject.set(x, "position2", value.asInstanceOf[js.Any])
   }
 }

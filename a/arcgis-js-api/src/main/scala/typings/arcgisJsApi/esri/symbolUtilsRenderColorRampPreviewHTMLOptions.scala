@@ -42,8 +42,7 @@ trait symbolUtilsRenderColorRampPreviewHTMLOptions
 }
 object symbolUtilsRenderColorRampPreviewHTMLOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -52,31 +51,22 @@ object symbolUtilsRenderColorRampPreviewHTMLOptions {
     __obj.asInstanceOf[symbolUtilsRenderColorRampPreviewHTMLOptions]
   }
   
-  @scala.inline
-  implicit class symbolUtilsRenderColorRampPreviewHTMLOptionsMutableBuilder[Self <: symbolUtilsRenderColorRampPreviewHTMLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: symbolUtilsRenderColorRampPreviewHTMLOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: horizontal | vertical): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: horizontal | vertical): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setGradient(value: Boolean): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: Boolean): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

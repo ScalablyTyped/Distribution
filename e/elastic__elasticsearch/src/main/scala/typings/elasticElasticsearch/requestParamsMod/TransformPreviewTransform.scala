@@ -12,16 +12,13 @@ trait TransformPreviewTransform[T]
 }
 object TransformPreviewTransform {
   
-  @scala.inline
-  def apply[T](body: T): TransformPreviewTransform[T] = {
+  inline def apply[T](body: T): TransformPreviewTransform[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransformPreviewTransform[T]]
   }
   
-  @scala.inline
-  implicit class TransformPreviewTransformMutableBuilder[Self <: TransformPreviewTransform[?], T] (val x: Self & TransformPreviewTransform[T]) extends AnyVal {
+  extension [Self <: TransformPreviewTransform[?], T](x: Self & TransformPreviewTransform[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

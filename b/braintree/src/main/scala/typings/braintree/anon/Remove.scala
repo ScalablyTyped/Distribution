@@ -16,40 +16,29 @@ trait Remove extends StObject {
 }
 object Remove {
   
-  @scala.inline
-  def apply(): Remove = {
+  inline def apply(): Remove = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Remove]
   }
   
-  @scala.inline
-  implicit class RemoveMutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
+  extension [Self <: Remove](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Array[DiscountAddRequest]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: js.Array[DiscountAddRequest]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setAddVarargs(value: DiscountAddRequest*): Self = StObject.set(x, "add", js.Array(value :_*))
+    inline def setAddVarargs(value: DiscountAddRequest*): Self = StObject.set(x, "add", js.Array(value :_*))
     
-    @scala.inline
-    def setRemove(value: js.Array[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: js.Array[String]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value :_*))
+    inline def setRemoveVarargs(value: String*): Self = StObject.set(x, "remove", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdate(value: js.Array[DiscountUpdateRequest]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: js.Array[DiscountUpdateRequest]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     
-    @scala.inline
-    def setUpdateVarargs(value: DiscountUpdateRequest*): Self = StObject.set(x, "update", js.Array(value :_*))
+    inline def setUpdateVarargs(value: DiscountUpdateRequest*): Self = StObject.set(x, "update", js.Array(value :_*))
   }
 }

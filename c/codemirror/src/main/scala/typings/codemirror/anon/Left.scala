@@ -14,22 +14,17 @@ trait Left extends StObject {
 }
 object Left {
   
-  @scala.inline
-  def apply(bottom: Double, left: Double, top: Double): Left = {
+  inline def apply(bottom: Double, left: Double, top: Double): Left = {
     val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Left]
   }
   
-  @scala.inline
-  implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+  extension [Self <: Left](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

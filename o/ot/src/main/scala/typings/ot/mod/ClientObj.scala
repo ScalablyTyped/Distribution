@@ -14,25 +14,19 @@ trait ClientObj extends StObject {
 }
 object ClientObj {
   
-  @scala.inline
-  def apply(clientId: String, selection: String): ClientObj = {
+  inline def apply(clientId: String, selection: String): ClientObj = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientObj]
   }
   
-  @scala.inline
-  implicit class ClientObjMutableBuilder[Self <: ClientObj] (val x: Self) extends AnyVal {
+  extension [Self <: ClientObj](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

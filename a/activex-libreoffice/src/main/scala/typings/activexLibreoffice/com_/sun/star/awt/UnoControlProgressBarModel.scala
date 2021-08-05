@@ -72,8 +72,7 @@ trait UnoControlProgressBarModel
 }
 object UnoControlProgressBarModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackgroundColor: Color,
     Border: Double,
     BorderColor: Double,
@@ -123,43 +122,30 @@ object UnoControlProgressBarModel {
     __obj.asInstanceOf[UnoControlProgressBarModel]
   }
   
-  @scala.inline
-  implicit class UnoControlProgressBarModelMutableBuilder[Self <: UnoControlProgressBarModel] (val x: Self) extends AnyVal {
+  extension [Self <: UnoControlProgressBarModel](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColor(value: Color): Self = StObject.set(x, "FillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: Color): Self = StObject.set(x, "FillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
+    inline def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
+    inline def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressValue(value: Double): Self = StObject.set(x, "ProgressValue", value.asInstanceOf[js.Any])
+    inline def setProgressValue(value: Double): Self = StObject.set(x, "ProgressValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressValueMax(value: Double): Self = StObject.set(x, "ProgressValueMax", value.asInstanceOf[js.Any])
+    inline def setProgressValueMax(value: Double): Self = StObject.set(x, "ProgressValueMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressValueMin(value: Double): Self = StObject.set(x, "ProgressValueMin", value.asInstanceOf[js.Any])
+    inline def setProgressValueMin(value: Double): Self = StObject.set(x, "ProgressValueMin", value.asInstanceOf[js.Any])
   }
 }

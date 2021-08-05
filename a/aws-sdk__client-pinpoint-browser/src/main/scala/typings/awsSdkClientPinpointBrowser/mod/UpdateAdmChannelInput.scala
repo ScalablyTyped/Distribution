@@ -10,8 +10,7 @@ trait UpdateAdmChannelInput
      with typings.awsSdkClientPinpointBrowser.typesUpdateAdmChannelInputMod.UpdateAdmChannelInput
 object UpdateAdmChannelInput {
   
-  @scala.inline
-  def apply(ADMChannelRequest: ADMChannelRequest, ApplicationId: String): UpdateAdmChannelInput = {
+  inline def apply(ADMChannelRequest: ADMChannelRequest, ApplicationId: String): UpdateAdmChannelInput = {
     val __obj = js.Dynamic.literal(ADMChannelRequest = ADMChannelRequest.asInstanceOf[js.Any], ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAdmChannelInput]
   }

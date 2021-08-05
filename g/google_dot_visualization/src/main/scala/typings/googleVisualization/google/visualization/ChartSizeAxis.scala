@@ -16,37 +16,27 @@ trait ChartSizeAxis extends StObject {
 }
 object ChartSizeAxis {
   
-  @scala.inline
-  def apply(): ChartSizeAxis = {
+  inline def apply(): ChartSizeAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartSizeAxis]
   }
   
-  @scala.inline
-  implicit class ChartSizeAxisMutableBuilder[Self <: ChartSizeAxis] (val x: Self) extends AnyVal {
+  extension [Self <: ChartSizeAxis](x: Self) {
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

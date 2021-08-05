@@ -29,49 +29,35 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(): Filter = {
+  inline def apply(): Filter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setBetweenFilter(value: BetweenFilter): Self = StObject.set(x, "betweenFilter", value.asInstanceOf[js.Any])
+    inline def setBetweenFilter(value: BetweenFilter): Self = StObject.set(x, "betweenFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetweenFilterUndefined: Self = StObject.set(x, "betweenFilter", js.undefined)
+    inline def setBetweenFilterUndefined: Self = StObject.set(x, "betweenFilter", js.undefined)
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
-    @scala.inline
-    def setInListFilter(value: InListFilter): Self = StObject.set(x, "inListFilter", value.asInstanceOf[js.Any])
+    inline def setInListFilter(value: InListFilter): Self = StObject.set(x, "inListFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInListFilterUndefined: Self = StObject.set(x, "inListFilter", js.undefined)
+    inline def setInListFilterUndefined: Self = StObject.set(x, "inListFilter", js.undefined)
     
-    @scala.inline
-    def setNullFilter(value: Boolean): Self = StObject.set(x, "nullFilter", value.asInstanceOf[js.Any])
+    inline def setNullFilter(value: Boolean): Self = StObject.set(x, "nullFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullFilterUndefined: Self = StObject.set(x, "nullFilter", js.undefined)
+    inline def setNullFilterUndefined: Self = StObject.set(x, "nullFilter", js.undefined)
     
-    @scala.inline
-    def setNumericFilter(value: NumericFilter): Self = StObject.set(x, "numericFilter", value.asInstanceOf[js.Any])
+    inline def setNumericFilter(value: NumericFilter): Self = StObject.set(x, "numericFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericFilterUndefined: Self = StObject.set(x, "numericFilter", js.undefined)
+    inline def setNumericFilterUndefined: Self = StObject.set(x, "numericFilter", js.undefined)
     
-    @scala.inline
-    def setStringFilter(value: StringFilter): Self = StObject.set(x, "stringFilter", value.asInstanceOf[js.Any])
+    inline def setStringFilter(value: StringFilter): Self = StObject.set(x, "stringFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringFilterUndefined: Self = StObject.set(x, "stringFilter", js.undefined)
+    inline def setStringFilterUndefined: Self = StObject.set(x, "stringFilter", js.undefined)
   }
 }

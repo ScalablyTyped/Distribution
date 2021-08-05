@@ -11,19 +11,15 @@ trait GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction exte
 }
 object GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriActionMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageBasicCardButtonOpenUriAction](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait CurPercent extends StObject {
 }
 object CurPercent {
   
-  @scala.inline
-  def apply(curPercent: Double): CurPercent = {
+  inline def apply(curPercent: Double): CurPercent = {
     val __obj = js.Dynamic.literal(curPercent = curPercent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurPercent]
   }
   
-  @scala.inline
-  implicit class CurPercentMutableBuilder[Self <: CurPercent] (val x: Self) extends AnyVal {
+  extension [Self <: CurPercent](x: Self) {
     
-    @scala.inline
-    def setCurPercent(value: Double): Self = StObject.set(x, "curPercent", value.asInstanceOf[js.Any])
+    inline def setCurPercent(value: Double): Self = StObject.set(x, "curPercent", value.asInstanceOf[js.Any])
   }
 }

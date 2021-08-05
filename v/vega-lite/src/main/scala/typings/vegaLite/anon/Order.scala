@@ -24,8 +24,7 @@ trait Order extends StObject {
 }
 object Order {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size,
     order: String
   ): Order = {
@@ -33,15 +32,12 @@ object Order {
     __obj.asInstanceOf[Order]
   }
   
-  @scala.inline
-  implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
+  extension [Self <: Order](x: Self) {
     
-    @scala.inline
-    def setEncoding(
+    inline def setEncoding(
       value: text | fill | stroke | color | shape | typings.vegaLite.vegaLiteStrings.x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size
     ): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }
 }

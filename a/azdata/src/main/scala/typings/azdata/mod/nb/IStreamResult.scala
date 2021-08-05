@@ -25,25 +25,19 @@ trait IStreamResult
 }
 object IStreamResult {
   
-  @scala.inline
-  def apply(name: StreamType, text: MultilineString): IStreamResult = {
+  inline def apply(name: StreamType, text: MultilineString): IStreamResult = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], output_type = "stream", text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStreamResult]
   }
   
-  @scala.inline
-  implicit class IStreamResultMutableBuilder[Self <: IStreamResult] (val x: Self) extends AnyVal {
+  extension [Self <: IStreamResult](x: Self) {
     
-    @scala.inline
-    def setName(value: StreamType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: StreamType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_type(value: stream): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+    inline def setOutput_type(value: stream): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: MultilineString): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: MultilineString): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: String*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

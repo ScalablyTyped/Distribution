@@ -22,55 +22,39 @@ trait UploadProgress extends StObject {
 }
 object UploadProgress {
   
-  @scala.inline
-  def apply(): UploadProgress = {
+  inline def apply(): UploadProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadProgress]
   }
   
-  @scala.inline
-  implicit class UploadProgressMutableBuilder[Self <: UploadProgress] (val x: Self) extends AnyVal {
+  extension [Self <: UploadProgress](x: Self) {
     
-    @scala.inline
-    def setBytesPerSec(value: Double): Self = StObject.set(x, "bytesPerSec", value.asInstanceOf[js.Any])
+    inline def setBytesPerSec(value: Double): Self = StObject.set(x, "bytesPerSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesPerSecUndefined: Self = StObject.set(x, "bytesPerSec", js.undefined)
+    inline def setBytesPerSecUndefined: Self = StObject.set(x, "bytesPerSec", js.undefined)
     
-    @scala.inline
-    def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
+    inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
-    @scala.inline
-    def setQueued(value: Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+    inline def setQueued(value: Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuedUndefined: Self = StObject.set(x, "queued", js.undefined)
+    inline def setQueuedUndefined: Self = StObject.set(x, "queued", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setUploaded(value: Double): Self = StObject.set(x, "uploaded", value.asInstanceOf[js.Any])
+    inline def setUploaded(value: Double): Self = StObject.set(x, "uploaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadedUndefined: Self = StObject.set(x, "uploaded", js.undefined)
+    inline def setUploadedUndefined: Self = StObject.set(x, "uploaded", js.undefined)
   }
 }

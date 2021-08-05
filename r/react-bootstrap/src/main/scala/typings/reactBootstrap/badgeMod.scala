@@ -27,26 +27,20 @@ object badgeMod {
   }
   object BadgeProps {
     
-    @scala.inline
-    def apply(): BadgeProps = {
+    inline def apply(): BadgeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BadgeProps]
     }
     
-    @scala.inline
-    implicit class BadgePropsMutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setPullRight(value: Boolean): Self = StObject.set(x, "pullRight", value.asInstanceOf[js.Any])
+      inline def setPullRight(value: Boolean): Self = StObject.set(x, "pullRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRightUndefined: Self = StObject.set(x, "pullRight", js.undefined)
+      inline def setPullRightUndefined: Self = StObject.set(x, "pullRight", js.undefined)
     }
   }
 }

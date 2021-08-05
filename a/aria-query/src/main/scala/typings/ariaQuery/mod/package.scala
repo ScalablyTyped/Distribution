@@ -5,28 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def aria: typings.std.Map[typings.ariaQuery.mod.ARIAProperty, typings.ariaQuery.mod.ARIAPropertyDefinition] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("aria").asInstanceOf[typings.std.Map[typings.ariaQuery.mod.ARIAProperty, typings.ariaQuery.mod.ARIAPropertyDefinition]]
+inline def aria: typings.std.Map[typings.ariaQuery.mod.ARIAProperty, typings.ariaQuery.mod.ARIAPropertyDefinition] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("aria").asInstanceOf[typings.std.Map[typings.ariaQuery.mod.ARIAProperty, typings.ariaQuery.mod.ARIAPropertyDefinition]]
 
-@scala.inline
-def dom: typings.std.Map[java.lang.String, typings.ariaQuery.mod.DOMDefinition] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("dom").asInstanceOf[typings.std.Map[java.lang.String, typings.ariaQuery.mod.DOMDefinition]]
+inline def dom: typings.std.Map[java.lang.String, typings.ariaQuery.mod.DOMDefinition] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("dom").asInstanceOf[typings.std.Map[java.lang.String, typings.ariaQuery.mod.DOMDefinition]]
 
-@scala.inline
-def elementRoles: typings.std.Map[
+inline def elementRoles: typings.std.Map[
 typings.ariaQuery.mod.ARIARoleRelationConcept, 
 typings.std.Set[typings.ariaQuery.mod.ARIARoleDefintionKey]] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("elementRoles").asInstanceOf[typings.std.Map[
 typings.ariaQuery.mod.ARIARoleRelationConcept, 
 typings.std.Set[typings.ariaQuery.mod.ARIARoleDefintionKey]]]
 
-@scala.inline
-def roleElements: typings.std.Map[
+inline def roleElements: typings.std.Map[
 typings.ariaQuery.mod.ARIARoleDefintionKey, 
 typings.std.Set[typings.ariaQuery.mod.ARIARoleRelationConcept]] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("roleElements").asInstanceOf[typings.std.Map[
 typings.ariaQuery.mod.ARIARoleDefintionKey, 
 typings.std.Set[typings.ariaQuery.mod.ARIARoleRelationConcept]]]
 
-@scala.inline
-def roles: typings.std.Map[
+inline def roles: typings.std.Map[
 typings.ariaQuery.mod.ARIARoleDefintionKey, 
 typings.ariaQuery.mod.ARIARoleDefinition] = typings.ariaQuery.mod.^.asInstanceOf[js.Dynamic].selectDynamic("roles").asInstanceOf[typings.std.Map[
 typings.ariaQuery.mod.ARIARoleDefintionKey, 

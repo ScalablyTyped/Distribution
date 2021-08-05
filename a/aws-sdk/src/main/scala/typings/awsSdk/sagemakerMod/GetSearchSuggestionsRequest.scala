@@ -18,22 +18,17 @@ trait GetSearchSuggestionsRequest extends StObject {
 }
 object GetSearchSuggestionsRequest {
   
-  @scala.inline
-  def apply(Resource: ResourceType): GetSearchSuggestionsRequest = {
+  inline def apply(Resource: ResourceType): GetSearchSuggestionsRequest = {
     val __obj = js.Dynamic.literal(Resource = Resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSearchSuggestionsRequest]
   }
   
-  @scala.inline
-  implicit class GetSearchSuggestionsRequestMutableBuilder[Self <: GetSearchSuggestionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSearchSuggestionsRequest](x: Self) {
     
-    @scala.inline
-    def setResource(value: ResourceType): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: ResourceType): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionQuery(value: SuggestionQuery): Self = StObject.set(x, "SuggestionQuery", value.asInstanceOf[js.Any])
+    inline def setSuggestionQuery(value: SuggestionQuery): Self = StObject.set(x, "SuggestionQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionQueryUndefined: Self = StObject.set(x, "SuggestionQuery", js.undefined)
+    inline def setSuggestionQueryUndefined: Self = StObject.set(x, "SuggestionQuery", js.undefined)
   }
 }

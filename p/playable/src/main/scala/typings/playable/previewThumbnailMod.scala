@@ -17,13 +17,13 @@ object previewThumbnailMod {
        with PreviewThumbnail {
     def this(hasPreviewService: PreviewServiceIPreviewService) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _currentFrames: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initUI: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _previewService: js.Any = js.native
     
     /* CompleteClass */
@@ -51,38 +51,34 @@ object previewThumbnailMod {
     @JSImport("playable/dist/src/modules/ui/preview-thumbnail/preview-thumbnail", "default.View")
     @js.native
     def View: Instantiable0[typings.playable.previewThumbnailViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable0[typings.playable.previewThumbnailViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable0[typings.playable.previewThumbnailViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/preview-thumbnail/preview-thumbnail", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/preview-thumbnail/preview-thumbnail", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   trait PreviewThumbnail
     extends StObject
        with IPreviewThumbnail {
     
-    var _currentFrames: js.Any
+    /* private */ var _currentFrames: js.Any
     
-    var _initUI: js.Any
+    /* private */ var _initUI: js.Any
     
-    var _previewService: js.Any
+    /* private */ var _previewService: js.Any
     
     var view: typings.playable.previewThumbnailViewMod.default
   }
   object PreviewThumbnail {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _currentFrames: js.Any,
       _initUI: js.Any,
       _previewService: js.Any,
@@ -96,20 +92,15 @@ object previewThumbnailMod {
       __obj.asInstanceOf[PreviewThumbnail]
     }
     
-    @scala.inline
-    implicit class PreviewThumbnailMutableBuilder[Self <: PreviewThumbnail] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewThumbnail](x: Self) {
       
-      @scala.inline
-      def setView(value: typings.playable.previewThumbnailViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.playable.previewThumbnailViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_currentFrames(value: js.Any): Self = StObject.set(x, "_currentFrames", value.asInstanceOf[js.Any])
+      inline def set_currentFrames(value: js.Any): Self = StObject.set(x, "_currentFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_previewService(value: js.Any): Self = StObject.set(x, "_previewService", value.asInstanceOf[js.Any])
+      inline def set_previewService(value: js.Any): Self = StObject.set(x, "_previewService", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,34 +15,25 @@ trait GooglePrivacyDlpV2RecordKey extends StObject {
 }
 object GooglePrivacyDlpV2RecordKey {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2RecordKey = {
+  inline def apply(): GooglePrivacyDlpV2RecordKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2RecordKey]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2RecordKeyMutableBuilder[Self <: GooglePrivacyDlpV2RecordKey] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2RecordKey](x: Self) {
     
-    @scala.inline
-    def setBigQueryKey(value: GooglePrivacyDlpV2BigQueryKey): Self = StObject.set(x, "bigQueryKey", value.asInstanceOf[js.Any])
+    inline def setBigQueryKey(value: GooglePrivacyDlpV2BigQueryKey): Self = StObject.set(x, "bigQueryKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigQueryKeyUndefined: Self = StObject.set(x, "bigQueryKey", js.undefined)
+    inline def setBigQueryKeyUndefined: Self = StObject.set(x, "bigQueryKey", js.undefined)
     
-    @scala.inline
-    def setDatastoreKey(value: GooglePrivacyDlpV2DatastoreKey): Self = StObject.set(x, "datastoreKey", value.asInstanceOf[js.Any])
+    inline def setDatastoreKey(value: GooglePrivacyDlpV2DatastoreKey): Self = StObject.set(x, "datastoreKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreKeyUndefined: Self = StObject.set(x, "datastoreKey", js.undefined)
+    inline def setDatastoreKeyUndefined: Self = StObject.set(x, "datastoreKey", js.undefined)
     
-    @scala.inline
-    def setIdValues(value: js.Array[String]): Self = StObject.set(x, "idValues", value.asInstanceOf[js.Any])
+    inline def setIdValues(value: js.Array[String]): Self = StObject.set(x, "idValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdValuesUndefined: Self = StObject.set(x, "idValues", js.undefined)
+    inline def setIdValuesUndefined: Self = StObject.set(x, "idValues", js.undefined)
     
-    @scala.inline
-    def setIdValuesVarargs(value: String*): Self = StObject.set(x, "idValues", js.Array(value :_*))
+    inline def setIdValuesVarargs(value: String*): Self = StObject.set(x, "idValues", js.Array(value :_*))
   }
 }

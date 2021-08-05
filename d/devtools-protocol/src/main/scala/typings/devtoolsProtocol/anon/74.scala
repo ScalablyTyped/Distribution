@@ -13,22 +13,17 @@ trait `74` extends StObject {
 }
 object `74` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetFocusEmulationEnabledRequest], returnType: Unit): `74` = {
+  inline def apply(paramsType: js.Array[SetFocusEmulationEnabledRequest], returnType: Unit): `74` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`74`]
   }
   
-  @scala.inline
-  implicit class `74MutableBuilder`[Self <: `74`] (val x: Self) extends AnyVal {
+  extension [Self <: `74`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetFocusEmulationEnabledRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetFocusEmulationEnabledRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetFocusEmulationEnabledRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetFocusEmulationEnabledRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

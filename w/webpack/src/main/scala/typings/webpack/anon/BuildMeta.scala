@@ -25,31 +25,23 @@ trait BuildMeta extends StObject {
 }
 object BuildMeta {
   
-  @scala.inline
-  def apply(id: Double | String): BuildMeta = {
+  inline def apply(id: Double | String): BuildMeta = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildMeta]
   }
   
-  @scala.inline
-  implicit class BuildMetaMutableBuilder[Self <: BuildMeta] (val x: Self) extends AnyVal {
+  extension [Self <: BuildMeta](x: Self) {
     
-    @scala.inline
-    def setBuildMeta(value: StringDictionary[js.Any]): Self = StObject.set(x, "buildMeta", value.asInstanceOf[js.Any])
+    inline def setBuildMeta(value: StringDictionary[js.Any]): Self = StObject.set(x, "buildMeta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildMetaUndefined: Self = StObject.set(x, "buildMeta", js.undefined)
+    inline def setBuildMetaUndefined: Self = StObject.set(x, "buildMeta", js.undefined)
     
-    @scala.inline
-    def setExports(value: `true` | js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: `true` | js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
+    inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
-    @scala.inline
-    def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

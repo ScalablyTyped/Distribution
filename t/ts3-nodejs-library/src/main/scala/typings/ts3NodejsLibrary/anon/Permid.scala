@@ -14,28 +14,21 @@ trait Permid extends StObject {
 }
 object Permid {
   
-  @scala.inline
-  def apply(permvalue: Double): Permid = {
+  inline def apply(permvalue: Double): Permid = {
     val __obj = js.Dynamic.literal(permvalue = permvalue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permid]
   }
   
-  @scala.inline
-  implicit class PermidMutableBuilder[Self <: Permid] (val x: Self) extends AnyVal {
+  extension [Self <: Permid](x: Self) {
     
-    @scala.inline
-    def setPermid(value: Double): Self = StObject.set(x, "permid", value.asInstanceOf[js.Any])
+    inline def setPermid(value: Double): Self = StObject.set(x, "permid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermidUndefined: Self = StObject.set(x, "permid", js.undefined)
+    inline def setPermidUndefined: Self = StObject.set(x, "permid", js.undefined)
     
-    @scala.inline
-    def setPermsid(value: String): Self = StObject.set(x, "permsid", value.asInstanceOf[js.Any])
+    inline def setPermsid(value: String): Self = StObject.set(x, "permsid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermsidUndefined: Self = StObject.set(x, "permsid", js.undefined)
+    inline def setPermsidUndefined: Self = StObject.set(x, "permsid", js.undefined)
     
-    @scala.inline
-    def setPermvalue(value: Double): Self = StObject.set(x, "permvalue", value.asInstanceOf[js.Any])
+    inline def setPermvalue(value: Double): Self = StObject.set(x, "permvalue", value.asInstanceOf[js.Any])
   }
 }

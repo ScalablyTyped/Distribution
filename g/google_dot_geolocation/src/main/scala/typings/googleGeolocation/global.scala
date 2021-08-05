@@ -10,6 +10,5 @@ object global {
   @js.native
   def geoPositionJs: GeolocationStatic = js.native
   
-  @scala.inline
-  def geoPositionJs_=(x: GeolocationStatic): Unit = js.Dynamic.global.updateDynamic("geo_position_js")(x.asInstanceOf[js.Any])
+  inline def geoPositionJs_=(x: GeolocationStatic): Unit = js.Dynamic.global.updateDynamic("geo_position_js")(x.asInstanceOf[js.Any])
 }

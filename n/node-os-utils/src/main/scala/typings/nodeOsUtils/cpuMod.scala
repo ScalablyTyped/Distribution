@@ -45,26 +45,20 @@ object cpuMod {
   }
   object CpuAverageInfo {
     
-    @scala.inline
-    def apply(avgIdle: Double, avgTotal: Double, totalIdle: Double, totalTick: Double): CpuAverageInfo = {
+    inline def apply(avgIdle: Double, avgTotal: Double, totalIdle: Double, totalTick: Double): CpuAverageInfo = {
       val __obj = js.Dynamic.literal(avgIdle = avgIdle.asInstanceOf[js.Any], avgTotal = avgTotal.asInstanceOf[js.Any], totalIdle = totalIdle.asInstanceOf[js.Any], totalTick = totalTick.asInstanceOf[js.Any])
       __obj.asInstanceOf[CpuAverageInfo]
     }
     
-    @scala.inline
-    implicit class CpuAverageInfoMutableBuilder[Self <: CpuAverageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CpuAverageInfo](x: Self) {
       
-      @scala.inline
-      def setAvgIdle(value: Double): Self = StObject.set(x, "avgIdle", value.asInstanceOf[js.Any])
+      inline def setAvgIdle(value: Double): Self = StObject.set(x, "avgIdle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvgTotal(value: Double): Self = StObject.set(x, "avgTotal", value.asInstanceOf[js.Any])
+      inline def setAvgTotal(value: Double): Self = StObject.set(x, "avgTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalIdle(value: Double): Self = StObject.set(x, "totalIdle", value.asInstanceOf[js.Any])
+      inline def setTotalIdle(value: Double): Self = StObject.set(x, "totalIdle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalTick(value: Double): Self = StObject.set(x, "totalTick", value.asInstanceOf[js.Any])
+      inline def setTotalTick(value: Double): Self = StObject.set(x, "totalTick", value.asInstanceOf[js.Any])
     }
   }
 }

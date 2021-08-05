@@ -19,31 +19,23 @@ trait IHBox
 }
 object IHBox {
   
-  @scala.inline
-  def apply(): IHBox = {
+  inline def apply(): IHBox = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHBox]
   }
   
-  @scala.inline
-  implicit class IHBoxMutableBuilder[Self <: IHBox] (val x: Self) extends AnyVal {
+  extension [Self <: IHBox](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignRoundingMethod(value: js.Any): Self = StObject.set(x, "alignRoundingMethod", value.asInstanceOf[js.Any])
+    inline def setAlignRoundingMethod(value: js.Any): Self = StObject.set(x, "alignRoundingMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignRoundingMethodUndefined: Self = StObject.set(x, "alignRoundingMethod", js.undefined)
+    inline def setAlignRoundingMethodUndefined: Self = StObject.set(x, "alignRoundingMethod", js.undefined)
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setConstrainAlign(value: Boolean): Self = StObject.set(x, "constrainAlign", value.asInstanceOf[js.Any])
+    inline def setConstrainAlign(value: Boolean): Self = StObject.set(x, "constrainAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstrainAlignUndefined: Self = StObject.set(x, "constrainAlign", js.undefined)
+    inline def setConstrainAlignUndefined: Self = StObject.set(x, "constrainAlign", js.undefined)
   }
 }

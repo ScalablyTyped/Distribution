@@ -26,38 +26,28 @@ object mod {
   }
   object ImageZoomDefaultStyles {
     
-    @scala.inline
-    def apply(): ImageZoomDefaultStyles = {
+    inline def apply(): ImageZoomDefaultStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageZoomDefaultStyles]
     }
     
-    @scala.inline
-    implicit class ImageZoomDefaultStylesMutableBuilder[Self <: ImageZoomDefaultStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ImageZoomDefaultStyles](x: Self) {
       
-      @scala.inline
-      def setImage(value: js.Object): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: js.Object): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setOverlay(value: js.Object): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+      inline def setOverlay(value: js.Object): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+      inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
       
-      @scala.inline
-      def setZoomContainer(value: js.Object): Self = StObject.set(x, "zoomContainer", value.asInstanceOf[js.Any])
+      inline def setZoomContainer(value: js.Object): Self = StObject.set(x, "zoomContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomContainerUndefined: Self = StObject.set(x, "zoomContainer", js.undefined)
+      inline def setZoomContainerUndefined: Self = StObject.set(x, "zoomContainer", js.undefined)
       
-      @scala.inline
-      def setZoomImage(value: js.Object): Self = StObject.set(x, "zoomImage", value.asInstanceOf[js.Any])
+      inline def setZoomImage(value: js.Object): Self = StObject.set(x, "zoomImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomImageUndefined: Self = StObject.set(x, "zoomImage", js.undefined)
+      inline def setZoomImageUndefined: Self = StObject.set(x, "zoomImage", js.undefined)
     }
   }
   
@@ -73,35 +63,26 @@ object mod {
   }
   object ImageZoomImage {
     
-    @scala.inline
-    def apply(src: String): ImageZoomImage = {
+    inline def apply(src: String): ImageZoomImage = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageZoomImage]
     }
     
-    @scala.inline
-    implicit class ImageZoomImageMutableBuilder[Self <: ImageZoomImage] (val x: Self) extends AnyVal {
+    extension [Self <: ImageZoomImage](x: Self) {
       
-      @scala.inline
-      def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -129,71 +110,50 @@ object mod {
   }
   object ImageZoomProps {
     
-    @scala.inline
-    def apply(image: ImageZoomImage): ImageZoomProps = {
+    inline def apply(image: ImageZoomImage): ImageZoomProps = {
       val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageZoomProps]
     }
     
-    @scala.inline
-    implicit class ImageZoomPropsMutableBuilder[Self <: ImageZoomProps] (val x: Self) extends AnyVal {
+    extension [Self <: ImageZoomProps](x: Self) {
       
-      @scala.inline
-      def setDefaultStyles(value: ImageZoomDefaultStyles): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
+      inline def setDefaultStyles(value: ImageZoomDefaultStyles): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultStylesUndefined: Self = StObject.set(x, "defaultStyles", js.undefined)
+      inline def setDefaultStylesUndefined: Self = StObject.set(x, "defaultStyles", js.undefined)
       
-      @scala.inline
-      def setImage(value: ImageZoomImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: ImageZoomImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsZoomed(value: Boolean): Self = StObject.set(x, "isZoomed", value.asInstanceOf[js.Any])
+      inline def setIsZoomed(value: Boolean): Self = StObject.set(x, "isZoomed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsZoomedUndefined: Self = StObject.set(x, "isZoomed", js.undefined)
+      inline def setIsZoomedUndefined: Self = StObject.set(x, "isZoomed", js.undefined)
       
-      @scala.inline
-      def setOnUnzoom(value: () => js.Object): Self = StObject.set(x, "onUnzoom", js.Any.fromFunction0(value))
+      inline def setOnUnzoom(value: () => js.Object): Self = StObject.set(x, "onUnzoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnzoomUndefined: Self = StObject.set(x, "onUnzoom", js.undefined)
+      inline def setOnUnzoomUndefined: Self = StObject.set(x, "onUnzoom", js.undefined)
       
-      @scala.inline
-      def setOnZoom(value: () => js.Object): Self = StObject.set(x, "onZoom", js.Any.fromFunction0(value))
+      inline def setOnZoom(value: () => js.Object): Self = StObject.set(x, "onZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnZoomUndefined: Self = StObject.set(x, "onZoom", js.undefined)
+      inline def setOnZoomUndefined: Self = StObject.set(x, "onZoom", js.undefined)
       
-      @scala.inline
-      def setShouldHandleZoom(value: () => Boolean): Self = StObject.set(x, "shouldHandleZoom", js.Any.fromFunction0(value))
+      inline def setShouldHandleZoom(value: () => Boolean): Self = StObject.set(x, "shouldHandleZoom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldHandleZoomUndefined: Self = StObject.set(x, "shouldHandleZoom", js.undefined)
+      inline def setShouldHandleZoomUndefined: Self = StObject.set(x, "shouldHandleZoom", js.undefined)
       
-      @scala.inline
-      def setShouldReplaceImage(value: Boolean): Self = StObject.set(x, "shouldReplaceImage", value.asInstanceOf[js.Any])
+      inline def setShouldReplaceImage(value: Boolean): Self = StObject.set(x, "shouldReplaceImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldReplaceImageUndefined: Self = StObject.set(x, "shouldReplaceImage", js.undefined)
+      inline def setShouldReplaceImageUndefined: Self = StObject.set(x, "shouldReplaceImage", js.undefined)
       
-      @scala.inline
-      def setShouldRespectMaxDimension(value: Boolean): Self = StObject.set(x, "shouldRespectMaxDimension", value.asInstanceOf[js.Any])
+      inline def setShouldRespectMaxDimension(value: Boolean): Self = StObject.set(x, "shouldRespectMaxDimension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRespectMaxDimensionUndefined: Self = StObject.set(x, "shouldRespectMaxDimension", js.undefined)
+      inline def setShouldRespectMaxDimensionUndefined: Self = StObject.set(x, "shouldRespectMaxDimension", js.undefined)
       
-      @scala.inline
-      def setZoomImage(value: ImageZoomZoomImage): Self = StObject.set(x, "zoomImage", value.asInstanceOf[js.Any])
+      inline def setZoomImage(value: ImageZoomZoomImage): Self = StObject.set(x, "zoomImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomImageUndefined: Self = StObject.set(x, "zoomImage", js.undefined)
+      inline def setZoomImageUndefined: Self = StObject.set(x, "zoomImage", js.undefined)
       
-      @scala.inline
-      def setZoomMargin(value: Double): Self = StObject.set(x, "zoomMargin", value.asInstanceOf[js.Any])
+      inline def setZoomMargin(value: Double): Self = StObject.set(x, "zoomMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
+      inline def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
     }
   }
   
@@ -209,38 +169,28 @@ object mod {
   }
   object ImageZoomZoomImage {
     
-    @scala.inline
-    def apply(): ImageZoomZoomImage = {
+    inline def apply(): ImageZoomZoomImage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageZoomZoomImage]
     }
     
-    @scala.inline
-    implicit class ImageZoomZoomImageMutableBuilder[Self <: ImageZoomZoomImage] (val x: Self) extends AnyVal {
+    extension [Self <: ImageZoomZoomImage](x: Self) {
       
-      @scala.inline
-      def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+      inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

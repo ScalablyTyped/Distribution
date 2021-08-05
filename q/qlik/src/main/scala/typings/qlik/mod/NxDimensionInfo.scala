@@ -40,8 +40,7 @@ trait NxDimensionInfo
 }
 object NxDimensionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qApprMaxGlyphCount: Double,
     qAttrDimInfo: js.Array[NxAttrDimInfo],
     qAttrExprInfo: js.Array[NxAttrExprInfo],
@@ -71,52 +70,36 @@ object NxDimensionInfo {
     __obj.asInstanceOf[NxDimensionInfo]
   }
   
-  @scala.inline
-  implicit class NxDimensionInfoMutableBuilder[Self <: NxDimensionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NxDimensionInfo](x: Self) {
     
-    @scala.inline
-    def setQContinuousAxes(value: Boolean): Self = StObject.set(x, "qContinuousAxes", value.asInstanceOf[js.Any])
+    inline def setQContinuousAxes(value: Boolean): Self = StObject.set(x, "qContinuousAxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDerivedField(value: Boolean): Self = StObject.set(x, "qDerivedField", value.asInstanceOf[js.Any])
+    inline def setQDerivedField(value: Boolean): Self = StObject.set(x, "qDerivedField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDimensionType(value: D | N | T): Self = StObject.set(x, "qDimensionType", value.asInstanceOf[js.Any])
+    inline def setQDimensionType(value: D | N | T): Self = StObject.set(x, "qDimensionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupFallbackTitles(value: js.Array[String]): Self = StObject.set(x, "qGroupFallbackTitles", value.asInstanceOf[js.Any])
+    inline def setQGroupFallbackTitles(value: js.Array[String]): Self = StObject.set(x, "qGroupFallbackTitles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupFallbackTitlesVarargs(value: String*): Self = StObject.set(x, "qGroupFallbackTitles", js.Array(value :_*))
+    inline def setQGroupFallbackTitlesVarargs(value: String*): Self = StObject.set(x, "qGroupFallbackTitles", js.Array(value :_*))
     
-    @scala.inline
-    def setQGroupFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qGroupFieldDefs", value.asInstanceOf[js.Any])
+    inline def setQGroupFieldDefs(value: js.Array[String]): Self = StObject.set(x, "qGroupFieldDefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGroupFieldDefsVarargs(value: String*): Self = StObject.set(x, "qGroupFieldDefs", js.Array(value :_*))
+    inline def setQGroupFieldDefsVarargs(value: String*): Self = StObject.set(x, "qGroupFieldDefs", js.Array(value :_*))
     
-    @scala.inline
-    def setQGroupPos(value: Double): Self = StObject.set(x, "qGroupPos", value.asInstanceOf[js.Any])
+    inline def setQGroupPos(value: Double): Self = StObject.set(x, "qGroupPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQGrouping(value: N | H | C): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
+    inline def setQGrouping(value: N | H | C): Self = StObject.set(x, "qGrouping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsCyclic(value: Boolean): Self = StObject.set(x, "qIsCyclic", value.asInstanceOf[js.Any])
+    inline def setQIsCyclic(value: Boolean): Self = StObject.set(x, "qIsCyclic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsSemantic(value: Boolean): Self = StObject.set(x, "qIsSemantic", value.asInstanceOf[js.Any])
+    inline def setQIsSemantic(value: Boolean): Self = StObject.set(x, "qIsSemantic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLocker(value: String): Self = StObject.set(x, "qLocker", value.asInstanceOf[js.Any])
+    inline def setQLocker(value: String): Self = StObject.set(x, "qLocker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQStateCounts(value: NxStateCounts): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
+    inline def setQStateCounts(value: NxStateCounts): Self = StObject.set(x, "qStateCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
+    inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
   }
 }

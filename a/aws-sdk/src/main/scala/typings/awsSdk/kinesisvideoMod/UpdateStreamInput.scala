@@ -33,40 +33,29 @@ trait UpdateStreamInput extends StObject {
 }
 object UpdateStreamInput {
   
-  @scala.inline
-  def apply(CurrentVersion: Version): UpdateStreamInput = {
+  inline def apply(CurrentVersion: Version): UpdateStreamInput = {
     val __obj = js.Dynamic.literal(CurrentVersion = CurrentVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateStreamInput]
   }
   
-  @scala.inline
-  implicit class UpdateStreamInputMutableBuilder[Self <: UpdateStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateStreamInput](x: Self) {
     
-    @scala.inline
-    def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Version): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceName(value: DeviceName): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: DeviceName): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "DeviceName", js.undefined)
     
-    @scala.inline
-    def setMediaType(value: MediaType): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: MediaType): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "MediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "MediaType", js.undefined)
     
-    @scala.inline
-    def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    inline def setStreamARN(value: ResourceARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

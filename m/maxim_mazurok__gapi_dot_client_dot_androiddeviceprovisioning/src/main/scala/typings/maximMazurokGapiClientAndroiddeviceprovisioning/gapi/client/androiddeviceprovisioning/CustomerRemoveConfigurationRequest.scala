@@ -11,19 +11,15 @@ trait CustomerRemoveConfigurationRequest extends StObject {
 }
 object CustomerRemoveConfigurationRequest {
   
-  @scala.inline
-  def apply(): CustomerRemoveConfigurationRequest = {
+  inline def apply(): CustomerRemoveConfigurationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomerRemoveConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class CustomerRemoveConfigurationRequestMutableBuilder[Self <: CustomerRemoveConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerRemoveConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setDevice(value: DeviceReference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: DeviceReference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
   }
 }

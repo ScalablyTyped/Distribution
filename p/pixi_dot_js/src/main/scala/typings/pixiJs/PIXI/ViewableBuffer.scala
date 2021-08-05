@@ -95,8 +95,7 @@ trait ViewableBuffer extends StObject {
 }
 object ViewableBuffer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     float32View: Float32Array,
     int16View: Int16Array,
@@ -112,37 +111,26 @@ object ViewableBuffer {
     __obj.asInstanceOf[ViewableBuffer]
   }
   
-  @scala.inline
-  implicit class ViewableBufferMutableBuilder[Self <: ViewableBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: ViewableBuffer](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFloat32View(value: Float32Array): Self = StObject.set(x, "float32View", value.asInstanceOf[js.Any])
+    inline def setFloat32View(value: Float32Array): Self = StObject.set(x, "float32View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInt16View(value: Int16Array): Self = StObject.set(x, "int16View", value.asInstanceOf[js.Any])
+    inline def setInt16View(value: Int16Array): Self = StObject.set(x, "int16View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInt32View(value: Int32Array): Self = StObject.set(x, "int32View", value.asInstanceOf[js.Any])
+    inline def setInt32View(value: Int32Array): Self = StObject.set(x, "int32View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInt8View(value: Int8Array): Self = StObject.set(x, "int8View", value.asInstanceOf[js.Any])
+    inline def setInt8View(value: Int8Array): Self = StObject.set(x, "int8View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawBinaryData(value: ArrayBuffer): Self = StObject.set(x, "rawBinaryData", value.asInstanceOf[js.Any])
+    inline def setRawBinaryData(value: ArrayBuffer): Self = StObject.set(x, "rawBinaryData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUint16View(value: Uint16Array): Self = StObject.set(x, "uint16View", value.asInstanceOf[js.Any])
+    inline def setUint16View(value: Uint16Array): Self = StObject.set(x, "uint16View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUint32View(value: Uint32Array): Self = StObject.set(x, "uint32View", value.asInstanceOf[js.Any])
+    inline def setUint32View(value: Uint32Array): Self = StObject.set(x, "uint32View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUint8View(value: Uint8Array): Self = StObject.set(x, "uint8View", value.asInstanceOf[js.Any])
+    inline def setUint8View(value: Uint8Array): Self = StObject.set(x, "uint8View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: String => js.Any): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+    inline def setView(value: String => js.Any): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
   }
 }

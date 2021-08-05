@@ -11,16 +11,13 @@ trait TypeofpageCapture extends StObject {
 }
 object TypeofpageCapture {
   
-  @scala.inline
-  def apply(saveAsMHTML: (SaveDetails, js.Function1[/* mhtmlData */ js.Any, Unit]) => Unit): TypeofpageCapture = {
+  inline def apply(saveAsMHTML: (SaveDetails, js.Function1[/* mhtmlData */ js.Any, Unit]) => Unit): TypeofpageCapture = {
     val __obj = js.Dynamic.literal(saveAsMHTML = js.Any.fromFunction2(saveAsMHTML))
     __obj.asInstanceOf[TypeofpageCapture]
   }
   
-  @scala.inline
-  implicit class TypeofpageCaptureMutableBuilder[Self <: TypeofpageCapture] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofpageCapture](x: Self) {
     
-    @scala.inline
-    def setSaveAsMHTML(value: (SaveDetails, js.Function1[/* mhtmlData */ js.Any, Unit]) => Unit): Self = StObject.set(x, "saveAsMHTML", js.Any.fromFunction2(value))
+    inline def setSaveAsMHTML(value: (SaveDetails, js.Function1[/* mhtmlData */ js.Any, Unit]) => Unit): Self = StObject.set(x, "saveAsMHTML", js.Any.fromFunction2(value))
   }
 }

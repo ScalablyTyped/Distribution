@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomDomainType extends StObject
 object CustomDomainType {
   
-  @scala.inline
-  def auth0_managed_certs: typings.auth0.auth0Strings.auth0_managed_certs = "auth0_managed_certs".asInstanceOf[typings.auth0.auth0Strings.auth0_managed_certs]
+  inline def auth0_managed_certs: typings.auth0.auth0Strings.auth0_managed_certs = "auth0_managed_certs".asInstanceOf[typings.auth0.auth0Strings.auth0_managed_certs]
   
-  @scala.inline
-  def self_managed_certs: typings.auth0.auth0Strings.self_managed_certs = "self_managed_certs".asInstanceOf[typings.auth0.auth0Strings.self_managed_certs]
+  inline def self_managed_certs: typings.auth0.auth0Strings.self_managed_certs = "self_managed_certs".asInstanceOf[typings.auth0.auth0Strings.self_managed_certs]
 }

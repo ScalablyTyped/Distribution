@@ -16,25 +16,19 @@ trait Set extends StObject {
 }
 object Set {
   
-  @scala.inline
-  def apply(configurable: Boolean, enumerable: Boolean, get: () => Unit, set: js.Any => Unit): Set = {
+  inline def apply(configurable: Boolean, enumerable: Boolean, get: () => Unit, set: js.Any => Unit): Set = {
     val __obj = js.Dynamic.literal(configurable = configurable.asInstanceOf[js.Any], enumerable = enumerable.asInstanceOf[js.Any], get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
     __obj.asInstanceOf[Set]
   }
   
-  @scala.inline
-  implicit class SetMutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
+  extension [Self <: Set](x: Self) {
     
-    @scala.inline
-    def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
+    inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
+    inline def setEnumerable(value: Boolean): Self = StObject.set(x, "enumerable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: () => Unit): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => Unit): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: js.Any => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

@@ -23,22 +23,17 @@ trait DeleteSshPublicKeyRequest extends StObject {
 }
 object DeleteSshPublicKeyRequest {
   
-  @scala.inline
-  def apply(ServerId: ServerId, SshPublicKeyId: SshPublicKeyId, UserName: UserName): DeleteSshPublicKeyRequest = {
+  inline def apply(ServerId: ServerId, SshPublicKeyId: SshPublicKeyId, UserName: UserName): DeleteSshPublicKeyRequest = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any], SshPublicKeyId = SshPublicKeyId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSshPublicKeyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSshPublicKeyRequestMutableBuilder[Self <: DeleteSshPublicKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSshPublicKeyRequest](x: Self) {
     
-    @scala.inline
-    def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKeyId(value: SshPublicKeyId): Self = StObject.set(x, "SshPublicKeyId", value.asInstanceOf[js.Any])
+    inline def setSshPublicKeyId(value: SshPublicKeyId): Self = StObject.set(x, "SshPublicKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: UserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

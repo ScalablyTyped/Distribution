@@ -17,40 +17,29 @@ trait GeoCoordinates extends StObject {
 }
 object GeoCoordinates {
   
-  @scala.inline
-  def apply(): GeoCoordinates = {
+  inline def apply(): GeoCoordinates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeoCoordinates]
   }
   
-  @scala.inline
-  implicit class GeoCoordinatesMutableBuilder[Self <: GeoCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: GeoCoordinates](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: NullableOption[Double]): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: NullableOption[Double]): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeNull: Self = StObject.set(x, "altitude", null)
+    inline def setAltitudeNull: Self = StObject.set(x, "altitude", null)
     
-    @scala.inline
-    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
-    @scala.inline
-    def setLatitude(value: NullableOption[Double]): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: NullableOption[Double]): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeNull: Self = StObject.set(x, "latitude", null)
+    inline def setLatitudeNull: Self = StObject.set(x, "latitude", null)
     
-    @scala.inline
-    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    @scala.inline
-    def setLongitude(value: NullableOption[Double]): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: NullableOption[Double]): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeNull: Self = StObject.set(x, "longitude", null)
+    inline def setLongitudeNull: Self = StObject.set(x, "longitude", null)
     
-    @scala.inline
-    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
   }
 }

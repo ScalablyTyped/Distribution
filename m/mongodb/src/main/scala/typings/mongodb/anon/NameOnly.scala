@@ -13,25 +13,19 @@ trait NameOnly extends StObject {
 }
 object NameOnly {
   
-  @scala.inline
-  def apply(): NameOnly = {
+  inline def apply(): NameOnly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NameOnly]
   }
   
-  @scala.inline
-  implicit class NameOnlyMutableBuilder[Self <: NameOnly] (val x: Self) extends AnyVal {
+  extension [Self <: NameOnly](x: Self) {
     
-    @scala.inline
-    def setNameOnly(value: Boolean): Self = StObject.set(x, "nameOnly", value.asInstanceOf[js.Any])
+    inline def setNameOnly(value: Boolean): Self = StObject.set(x, "nameOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameOnlyUndefined: Self = StObject.set(x, "nameOnly", js.undefined)
+    inline def setNameOnlyUndefined: Self = StObject.set(x, "nameOnly", js.undefined)
     
-    @scala.inline
-    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

@@ -28,25 +28,19 @@ trait RoadmapItem extends StObject {
 }
 object RoadmapItem {
   
-  @scala.inline
-  def apply(Enabled: Boolean, ID: Double, Interactive: Boolean, Label: String): RoadmapItem = {
+  inline def apply(Enabled: Boolean, ID: Double, Interactive: Boolean, Label: String): RoadmapItem = {
     val __obj = js.Dynamic.literal(Enabled = Enabled.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], Interactive = Interactive.asInstanceOf[js.Any], Label = Label.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoadmapItem]
   }
   
-  @scala.inline
-  implicit class RoadmapItemMutableBuilder[Self <: RoadmapItem] (val x: Self) extends AnyVal {
+  extension [Self <: RoadmapItem](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractive(value: Boolean): Self = StObject.set(x, "Interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "Interactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
   }
 }

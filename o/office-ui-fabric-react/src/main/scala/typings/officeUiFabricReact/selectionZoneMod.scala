@@ -19,13 +19,13 @@ object selectionZoneMod {
     extends Component[ISelectionZoneProps, ISelectionZoneState, js.Any] {
     def this(props: ISelectionZoneProps) = this()
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _clearAndSelectIndex: js.Any = js.native
+    /* private */ var _clearAndSelectIndex: js.Any = js.native
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var _findItemRoot: js.Any = js.native
+    /* private */ var _findItemRoot: js.Any = js.native
     
     /**
       * To avoid high startup cost of traversing the DOM on component mount,
@@ -34,90 +34,90 @@ object selectionZoneMod {
       * The styles will probably already calculated since we're running in a click handler,
       * so this is less likely to cause layout thrashing then doing it in mount.
       */
-    var _findScrollParentAndTryClearOnEmptyClick: js.Any = js.native
+    /* private */ var _findScrollParentAndTryClearOnEmptyClick: js.Any = js.native
     
-    var _getItemIndex: js.Any = js.native
+    /* private */ var _getItemIndex: js.Any = js.native
     
-    var _getSelectionMode: js.Any = js.native
+    /* private */ var _getSelectionMode: js.Any = js.native
     
-    var _handleNextFocus: js.Any = js.native
+    /* private */ var _handleNextFocus: js.Any = js.native
     
-    var _hasAttribute: js.Any = js.native
+    /* private */ var _hasAttribute: js.Any = js.native
     
-    var _isCtrlPressed: js.Any = js.native
+    /* private */ var _isCtrlPressed: js.Any = js.native
     
-    var _isInputElement: js.Any = js.native
+    /* private */ var _isInputElement: js.Any = js.native
     
-    var _isMetaPressed: js.Any = js.native
+    /* private */ var _isMetaPressed: js.Any = js.native
     
-    var _isNonHandledClick: js.Any = js.native
+    /* private */ var _isNonHandledClick: js.Any = js.native
     
-    var _isSelectionDisabled: js.Any = js.native
+    /* private */ var _isSelectionDisabled: js.Any = js.native
     
-    var _isShiftPressed: js.Any = js.native
+    /* private */ var _isShiftPressed: js.Any = js.native
     
-    var _isTabPressed: js.Any = js.native
+    /* private */ var _isTabPressed: js.Any = js.native
     
-    var _isTouch: js.Any = js.native
+    /* private */ var _isTouch: js.Any = js.native
     
-    var _isTouchTimeoutId: js.Any = js.native
+    /* private */ var _isTouchTimeoutId: js.Any = js.native
     
-    var _onClick: js.Any = js.native
+    /* private */ var _onClick: js.Any = js.native
     
-    var _onContextMenu: js.Any = js.native
+    /* private */ var _onContextMenu: js.Any = js.native
     
     /**
       * In multi selection, if you double click within an item's root (but not within the invoke element or
       * input elements), we should execute the invoke handler.
       */
-    var _onDoubleClick: js.Any = js.native
+    /* private */ var _onDoubleClick: js.Any = js.native
     
     /**
       * When we focus an item, for single/multi select scenarios, we should try to select it immediately
       * as long as the focus did not originate from a mouse down/touch event. For those cases, we handle them
       * specially.
       */
-    var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: js.Any = js.native
     
-    var _onInvokeClick: js.Any = js.native
+    /* private */ var _onInvokeClick: js.Any = js.native
     
-    var _onInvokeMouseDown: js.Any = js.native
+    /* private */ var _onInvokeMouseDown: js.Any = js.native
     
-    var _onItemSurfaceClick: js.Any = js.native
+    /* private */ var _onItemSurfaceClick: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _onKeyDownCapture: js.Any = js.native
+    /* private */ var _onKeyDownCapture: js.Any = js.native
     
-    var _onMouseDown: js.Any = js.native
+    /* private */ var _onMouseDown: js.Any = js.native
     
-    var _onMouseDownCapture: js.Any = js.native
+    /* private */ var _onMouseDownCapture: js.Any = js.native
     
-    var _onSelectionChange: js.Any = js.native
+    /* private */ var _onSelectionChange: js.Any = js.native
     
-    var _onToggleAllClick: js.Any = js.native
+    /* private */ var _onToggleAllClick: js.Any = js.native
     
-    var _onToggleClick: js.Any = js.native
+    /* private */ var _onToggleClick: js.Any = js.native
     
-    var _onTouchStartCapture: js.Any = js.native
+    /* private */ var _onTouchStartCapture: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
-    var _setIsTouch: js.Any = js.native
+    /* private */ var _setIsTouch: js.Any = js.native
     
-    var _shouldAutoSelect: js.Any = js.native
+    /* private */ var _shouldAutoSelect: js.Any = js.native
     
-    var _shouldHandleFocus: js.Any = js.native
+    /* private */ var _shouldHandleFocus: js.Any = js.native
     
-    var _shouldHandleFocusTimeoutId: js.Any = js.native
+    /* private */ var _shouldHandleFocusTimeoutId: js.Any = js.native
     
-    var _tryClearOnEmptyClick: js.Any = js.native
+    /* private */ var _tryClearOnEmptyClick: js.Any = js.native
     
     /**
       * We need to track the modifier key states so that when focus events occur, which do not contain
       * modifier states in the Event object, we know how to behave.
       */
-    var _updateModifiers: js.Any = js.native
+    /* private */ var _updateModifiers: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MSelectionZone(): Unit = js.native
@@ -146,11 +146,9 @@ object selectionZoneMod {
     @JSImport("office-ui-fabric-react/lib/utilities/selection/SelectionZone", "SelectionZone.defaultProps")
     @js.native
     def defaultProps: IsSelectedOnFocus = js.native
-    @scala.inline
-    def defaultProps_=(x: IsSelectedOnFocus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IsSelectedOnFocus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[ISelectionZoneState]
+    inline def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[ISelectionZoneState]
   }
   
   trait ISelectionZone extends StObject {
@@ -162,17 +160,14 @@ object selectionZoneMod {
   }
   object ISelectionZone {
     
-    @scala.inline
-    def apply(ignoreNextFocus: () => Unit): ISelectionZone = {
+    inline def apply(ignoreNextFocus: () => Unit): ISelectionZone = {
       val __obj = js.Dynamic.literal(ignoreNextFocus = js.Any.fromFunction0(ignoreNextFocus))
       __obj.asInstanceOf[ISelectionZone]
     }
     
-    @scala.inline
-    implicit class ISelectionZoneMutableBuilder[Self <: ISelectionZone] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectionZone](x: Self) {
       
-      @scala.inline
-      def setIgnoreNextFocus(value: () => Unit): Self = StObject.set(x, "ignoreNextFocus", js.Any.fromFunction0(value))
+      inline def setIgnoreNextFocus(value: () => Unit): Self = StObject.set(x, "ignoreNextFocus", js.Any.fromFunction0(value))
     }
   }
   
@@ -266,87 +261,62 @@ object selectionZoneMod {
   }
   object ISelectionZoneProps {
     
-    @scala.inline
-    def apply(selection: ISelection[IObjectWithKey]): ISelectionZoneProps = {
+    inline def apply(selection: ISelection[IObjectWithKey]): ISelectionZoneProps = {
       val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISelectionZoneProps]
     }
     
-    @scala.inline
-    implicit class ISelectionZonePropsMutableBuilder[Self <: ISelectionZoneProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectionZoneProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: () => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction0(value))
+      inline def setComponentRef(value: () => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDisableAutoSelectOnInputElements(value: Boolean): Self = StObject.set(x, "disableAutoSelectOnInputElements", value.asInstanceOf[js.Any])
+      inline def setDisableAutoSelectOnInputElements(value: Boolean): Self = StObject.set(x, "disableAutoSelectOnInputElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableAutoSelectOnInputElementsUndefined: Self = StObject.set(x, "disableAutoSelectOnInputElements", js.undefined)
+      inline def setDisableAutoSelectOnInputElementsUndefined: Self = StObject.set(x, "disableAutoSelectOnInputElements", js.undefined)
       
-      @scala.inline
-      def setEnableTouchInvocationTarget(value: Boolean): Self = StObject.set(x, "enableTouchInvocationTarget", value.asInstanceOf[js.Any])
+      inline def setEnableTouchInvocationTarget(value: Boolean): Self = StObject.set(x, "enableTouchInvocationTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTouchInvocationTargetUndefined: Self = StObject.set(x, "enableTouchInvocationTarget", js.undefined)
+      inline def setEnableTouchInvocationTargetUndefined: Self = StObject.set(x, "enableTouchInvocationTarget", js.undefined)
       
-      @scala.inline
-      def setEnterModalOnTouch(value: Boolean): Self = StObject.set(x, "enterModalOnTouch", value.asInstanceOf[js.Any])
+      inline def setEnterModalOnTouch(value: Boolean): Self = StObject.set(x, "enterModalOnTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterModalOnTouchUndefined: Self = StObject.set(x, "enterModalOnTouch", js.undefined)
+      inline def setEnterModalOnTouchUndefined: Self = StObject.set(x, "enterModalOnTouch", js.undefined)
       
-      @scala.inline
-      def setIsSelectedOnFocus(value: Boolean): Self = StObject.set(x, "isSelectedOnFocus", value.asInstanceOf[js.Any])
+      inline def setIsSelectedOnFocus(value: Boolean): Self = StObject.set(x, "isSelectedOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedOnFocusUndefined: Self = StObject.set(x, "isSelectedOnFocus", js.undefined)
+      inline def setIsSelectedOnFocusUndefined: Self = StObject.set(x, "isSelectedOnFocus", js.undefined)
       
-      @scala.inline
-      def setLayout(value: js.Object): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: js.Object): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setOnItemContextMenu(
+      inline def setOnItemContextMenu(
         value: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit | Boolean
       ): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnItemContextMenuUndefined: Self = StObject.set(x, "onItemContextMenu", js.undefined)
+      inline def setOnItemContextMenuUndefined: Self = StObject.set(x, "onItemContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnItemInvoked(
+      inline def setOnItemInvoked(
         value: (/* item */ js.UndefOr[IObjectWithKey], /* index */ js.UndefOr[Double], /* ev */ js.UndefOr[Event]) => Unit
       ): Self = StObject.set(x, "onItemInvoked", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnItemInvokedUndefined: Self = StObject.set(x, "onItemInvoked", js.undefined)
+      inline def setOnItemInvokedUndefined: Self = StObject.set(x, "onItemInvoked", js.undefined)
       
-      @scala.inline
-      def setSelection(value: ISelection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: ISelection[IObjectWithKey]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+      inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       
-      @scala.inline
-      def setSelectionPreservedOnEmptyClick(value: Boolean): Self = StObject.set(x, "selectionPreservedOnEmptyClick", value.asInstanceOf[js.Any])
+      inline def setSelectionPreservedOnEmptyClick(value: Boolean): Self = StObject.set(x, "selectionPreservedOnEmptyClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionPreservedOnEmptyClickUndefined: Self = StObject.set(x, "selectionPreservedOnEmptyClick", js.undefined)
+      inline def setSelectionPreservedOnEmptyClickUndefined: Self = StObject.set(x, "selectionPreservedOnEmptyClick", js.undefined)
     }
   }
   
@@ -356,20 +326,16 @@ object selectionZoneMod {
   }
   object ISelectionZoneState {
     
-    @scala.inline
-    def apply(): ISelectionZoneState = {
+    inline def apply(): ISelectionZoneState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISelectionZoneState]
     }
     
-    @scala.inline
-    implicit class ISelectionZoneStateMutableBuilder[Self <: ISelectionZoneState] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectionZoneState](x: Self) {
       
-      @scala.inline
-      def setIsModal(value: Boolean): Self = StObject.set(x, "isModal", value.asInstanceOf[js.Any])
+      inline def setIsModal(value: Boolean): Self = StObject.set(x, "isModal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsModalUndefined: Self = StObject.set(x, "isModal", js.undefined)
+      inline def setIsModalUndefined: Self = StObject.set(x, "isModal", js.undefined)
     }
   }
 }

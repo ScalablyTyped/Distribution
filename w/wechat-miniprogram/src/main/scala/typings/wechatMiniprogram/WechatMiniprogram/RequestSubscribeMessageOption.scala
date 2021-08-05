@@ -20,37 +20,27 @@ trait RequestSubscribeMessageOption extends StObject {
 }
 object RequestSubscribeMessageOption {
   
-  @scala.inline
-  def apply(tmplIds: js.Array[js.Any]): RequestSubscribeMessageOption = {
+  inline def apply(tmplIds: js.Array[js.Any]): RequestSubscribeMessageOption = {
     val __obj = js.Dynamic.literal(tmplIds = tmplIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSubscribeMessageOption]
   }
   
-  @scala.inline
-  implicit class RequestSubscribeMessageOptionMutableBuilder[Self <: RequestSubscribeMessageOption] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSubscribeMessageOption](x: Self) {
     
-    @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* result */ RequestSubscribeMessageFailCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* result */ RequestSubscribeMessageFailCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* result */ RequestSubscribeMessageSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* result */ RequestSubscribeMessageSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setTmplIds(value: js.Array[js.Any]): Self = StObject.set(x, "tmplIds", value.asInstanceOf[js.Any])
+    inline def setTmplIds(value: js.Array[js.Any]): Self = StObject.set(x, "tmplIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTmplIdsVarargs(value: js.Any*): Self = StObject.set(x, "tmplIds", js.Array(value :_*))
+    inline def setTmplIdsVarargs(value: js.Any*): Self = StObject.set(x, "tmplIds", js.Array(value :_*))
   }
 }

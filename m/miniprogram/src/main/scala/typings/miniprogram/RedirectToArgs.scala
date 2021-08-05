@@ -20,16 +20,13 @@ trait RedirectToArgs
 }
 object RedirectToArgs {
   
-  @scala.inline
-  def apply(url: String): RedirectToArgs = {
+  inline def apply(url: String): RedirectToArgs = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectToArgs]
   }
   
-  @scala.inline
-  implicit class RedirectToArgsMutableBuilder[Self <: RedirectToArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectToArgs](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

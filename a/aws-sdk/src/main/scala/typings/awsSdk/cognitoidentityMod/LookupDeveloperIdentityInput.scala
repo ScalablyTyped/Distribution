@@ -33,40 +33,29 @@ trait LookupDeveloperIdentityInput extends StObject {
 }
 object LookupDeveloperIdentityInput {
   
-  @scala.inline
-  def apply(IdentityPoolId: IdentityPoolId): LookupDeveloperIdentityInput = {
+  inline def apply(IdentityPoolId: IdentityPoolId): LookupDeveloperIdentityInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupDeveloperIdentityInput]
   }
   
-  @scala.inline
-  implicit class LookupDeveloperIdentityInputMutableBuilder[Self <: LookupDeveloperIdentityInput] (val x: Self) extends AnyVal {
+  extension [Self <: LookupDeveloperIdentityInput](x: Self) {
     
-    @scala.inline
-    def setDeveloperUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "DeveloperUserIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeveloperUserIdentifier(value: DeveloperUserIdentifier): Self = StObject.set(x, "DeveloperUserIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperUserIdentifierUndefined: Self = StObject.set(x, "DeveloperUserIdentifier", js.undefined)
+    inline def setDeveloperUserIdentifierUndefined: Self = StObject.set(x, "DeveloperUserIdentifier", js.undefined)
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: QueryLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: QueryLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

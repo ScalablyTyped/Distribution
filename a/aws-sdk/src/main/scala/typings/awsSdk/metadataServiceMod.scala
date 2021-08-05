@@ -46,8 +46,7 @@ object metadataServiceMod {
     @JSImport("aws-sdk/lib/metadata_service", "MetadataService.host")
     @js.native
     def host: String = js.native
-    @scala.inline
-    def host_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("host")(x.asInstanceOf[js.Any])
+    inline def host_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("host")(x.asInstanceOf[js.Any])
   }
   
   trait MetadataServiceOptions extends StObject {
@@ -74,38 +73,28 @@ object metadataServiceMod {
   }
   object MetadataServiceOptions {
     
-    @scala.inline
-    def apply(): MetadataServiceOptions = {
+    inline def apply(): MetadataServiceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetadataServiceOptions]
     }
     
-    @scala.inline
-    implicit class MetadataServiceOptionsMutableBuilder[Self <: MetadataServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetadataServiceOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setHttpOptions(value: Timeout): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
+      inline def setHttpOptions(value: Timeout): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
+      inline def setHttpOptionsUndefined: Self = StObject.set(x, "httpOptions", js.undefined)
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setRetryDelayOptions(value: js.Any): Self = StObject.set(x, "retryDelayOptions", value.asInstanceOf[js.Any])
+      inline def setRetryDelayOptions(value: js.Any): Self = StObject.set(x, "retryDelayOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelayOptionsUndefined: Self = StObject.set(x, "retryDelayOptions", js.undefined)
+      inline def setRetryDelayOptionsUndefined: Self = StObject.set(x, "retryDelayOptions", js.undefined)
     }
   }
 }

@@ -34,8 +34,7 @@ object colorPickerUniDriverMod {
   }
   object ColorPickerUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancel: () => js.Promise[Unit],
       click: () => js.Promise[Unit],
       clickAddColor: () => js.Promise[Unit],
@@ -54,38 +53,27 @@ object colorPickerUniDriverMod {
       __obj.asInstanceOf[ColorPickerUniDriver]
     }
     
-    @scala.inline
-    implicit class ColorPickerUniDriverMutableBuilder[Self <: ColorPickerUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ColorPickerUniDriver](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickAddColor(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickAddColor", js.Any.fromFunction0(value))
+      inline def setClickAddColor(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickAddColor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnPreviousColor(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnPreviousColor", js.Any.fromFunction0(value))
+      inline def setClickOnPreviousColor(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnPreviousColor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConfirm(value: () => js.Promise[Unit]): Self = StObject.set(x, "confirm", js.Any.fromFunction0(value))
+      inline def setConfirm(value: () => js.Promise[Unit]): Self = StObject.set(x, "confirm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChildren(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
+      inline def setGetChildren(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHistoryCurrentColor(value: () => js.Promise[String]): Self = StObject.set(x, "historyCurrentColor", js.Any.fromFunction0(value))
+      inline def setHistoryCurrentColor(value: () => js.Promise[String]): Self = StObject.set(x, "historyCurrentColor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHistoryPanelExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "historyPanelExists", js.Any.fromFunction0(value))
+      inline def setHistoryPanelExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "historyPanelExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHistoryPreviousColor(value: () => js.Promise[String]): Self = StObject.set(x, "historyPreviousColor", js.Any.fromFunction0(value))
+      inline def setHistoryPreviousColor(value: () => js.Promise[String]): Self = StObject.set(x, "historyPreviousColor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelectHsbTab(value: () => js.Promise[Unit]): Self = StObject.set(x, "selectHsbTab", js.Any.fromFunction0(value))
+      inline def setSelectHsbTab(value: () => js.Promise[Unit]): Self = StObject.set(x, "selectHsbTab", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSelectRgbTab(value: () => js.Promise[Unit]): Self = StObject.set(x, "selectRgbTab", js.Any.fromFunction0(value))
+      inline def setSelectRgbTab(value: () => js.Promise[Unit]): Self = StObject.set(x, "selectRgbTab", js.Any.fromFunction0(value))
     }
   }
 }

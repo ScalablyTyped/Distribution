@@ -10,19 +10,15 @@ trait UseDataChannels extends StObject {
 }
 object UseDataChannels {
   
-  @scala.inline
-  def apply(): UseDataChannels = {
+  inline def apply(): UseDataChannels = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseDataChannels]
   }
   
-  @scala.inline
-  implicit class UseDataChannelsMutableBuilder[Self <: UseDataChannels] (val x: Self) extends AnyVal {
+  extension [Self <: UseDataChannels](x: Self) {
     
-    @scala.inline
-    def setUseDataChannels(value: Boolean): Self = StObject.set(x, "useDataChannels", value.asInstanceOf[js.Any])
+    inline def setUseDataChannels(value: Boolean): Self = StObject.set(x, "useDataChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDataChannelsUndefined: Self = StObject.set(x, "useDataChannels", js.undefined)
+    inline def setUseDataChannelsUndefined: Self = StObject.set(x, "useDataChannels", js.undefined)
   }
 }

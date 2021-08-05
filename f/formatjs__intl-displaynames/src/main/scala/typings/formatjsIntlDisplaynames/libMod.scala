@@ -42,49 +42,38 @@ object libMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def __addLocaleData(data: DisplayNamesLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def __addLocaleData(data: DisplayNamesLocaleData*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("__addLocaleData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@formatjs/intl-displaynames/lib", "DisplayNames.__defaultLocale")
     @js.native
     def __defaultLocale: js.Any = js.native
-    @scala.inline
-    def __defaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
+    inline def __defaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__defaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-displaynames/lib", "DisplayNames.availableLocales")
     @js.native
     def availableLocales: js.Any = js.native
-    @scala.inline
-    def availableLocales_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
+    inline def availableLocales_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("availableLocales")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-displaynames/lib", "DisplayNames.getDefaultLocale")
     @js.native
     def getDefaultLocale: js.Any = js.native
-    @scala.inline
-    def getDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
+    inline def getDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultLocale")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-displaynames/lib", "DisplayNames.localeData")
     @js.native
     def localeData: Record[String, js.UndefOr[DisplayNamesData]] = js.native
-    @scala.inline
-    def localeData_=(x: Record[String, js.UndefOr[DisplayNamesData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localeData")(x.asInstanceOf[js.Any])
+    inline def localeData_=(x: Record[String, js.UndefOr[DisplayNamesData]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localeData")(x.asInstanceOf[js.Any])
     
     @JSImport("@formatjs/intl-displaynames/lib", "DisplayNames.polyfilled")
     @js.native
     val polyfilled: /* true */ Boolean = js.native
     
-    @scala.inline
-    def supportedLocalesOf(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")().asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: String, options: PickDisplayNamesOptionslo): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: js.Array[String], options: PickDisplayNamesOptionslo): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def supportedLocalesOf(locales: Unit, options: PickDisplayNamesOptionslo): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")().asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: String, options: PickDisplayNamesOptionslo): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: js.Array[String], options: PickDisplayNamesOptionslo): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def supportedLocalesOf(locales: Unit, options: PickDisplayNamesOptionslo): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("supportedLocalesOf")(locales.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
   trait DisplayNamesOptions extends StObject {
@@ -99,36 +88,27 @@ object libMod {
   }
   object DisplayNamesOptions {
     
-    @scala.inline
-    def apply(`type`: language | region | script | currency): DisplayNamesOptions = {
+    inline def apply(`type`: language | region | script | currency): DisplayNamesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayNamesOptions]
     }
     
-    @scala.inline
-    implicit class DisplayNamesOptionsMutableBuilder[Self <: DisplayNamesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayNamesOptions](x: Self) {
       
-      @scala.inline
-      def setFallback(value: code | none): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: code | none): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
       
-      @scala.inline
-      def setStyle(value: narrow | short | long): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: narrow | short | long): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setType(value: language | region | script | currency): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: language | region | script | currency): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -144,33 +124,25 @@ object libMod {
   }
   object DisplayNamesResolvedOptions {
     
-    @scala.inline
-    def apply(locale: String, `type`: NonNullable[language | region | script | currency]): DisplayNamesResolvedOptions = {
+    inline def apply(locale: String, `type`: NonNullable[language | region | script | currency]): DisplayNamesResolvedOptions = {
       val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayNamesResolvedOptions]
     }
     
-    @scala.inline
-    implicit class DisplayNamesResolvedOptionsMutableBuilder[Self <: DisplayNamesResolvedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayNamesResolvedOptions](x: Self) {
       
-      @scala.inline
-      def setFallback(value: NonNullable[js.UndefOr[code | none]]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: NonNullable[js.UndefOr[code | none]]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: NonNullable[js.UndefOr[narrow | short | long]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: NonNullable[js.UndefOr[narrow | short | long]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setType(value: NonNullable[language | region | script | currency]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: NonNullable[language | region | script | currency]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

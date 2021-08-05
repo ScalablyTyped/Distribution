@@ -70,8 +70,7 @@ object headerAssembleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assembleHeaderGroup(
+  inline def assembleHeaderGroup(
     model: Model,
     channel: HeaderChannel,
     headerType: HeaderType,
@@ -79,11 +78,9 @@ object headerAssembleMod {
     headerComponent: HeaderComponent
   ): Axes | From = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleHeaderGroup")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], headerType.asInstanceOf[js.Any], layoutHeader.asInstanceOf[js.Any], headerComponent.asInstanceOf[js.Any])).asInstanceOf[Axes | From]
   
-  @scala.inline
-  def assembleHeaderGroups(model: Model, channel: HeaderChannel): js.Array[VgMarkGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleHeaderGroups")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[js.Array[VgMarkGroup]]
+  inline def assembleHeaderGroups(model: Model, channel: HeaderChannel): js.Array[VgMarkGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleHeaderGroups")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[js.Array[VgMarkGroup]]
   
-  @scala.inline
-  def assembleHeaderProperties(
+  inline def assembleHeaderProperties(
     config: Config[SignalRef],
     facetFieldDef: FacetFieldDef[String, SignalRef],
     channel: FacetChannel,
@@ -93,23 +90,16 @@ object headerAssembleMod {
     propertiesMap: PartialRecordkeyofCoreHea
   ): PartialVgTitle = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleHeaderProperties")(config.asInstanceOf[js.Any], facetFieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], propertiesMap.asInstanceOf[js.Any])).asInstanceOf[PartialVgTitle]
   
-  @scala.inline
-  def assembleLabelTitle(facetFieldDef: FacetFieldDef[String, SignalRef], channel: FacetChannel, config: Config[SignalRef]): Dx | Dy | Encode | Font | FontSize | FontStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLabelTitle")(facetFieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Dx | Dy | Encode | Font | FontSize | FontStyle]
+  inline def assembleLabelTitle(facetFieldDef: FacetFieldDef[String, SignalRef], channel: FacetChannel, config: Config[SignalRef]): Dx | Dy | Encode | Font | FontSize | FontStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLabelTitle")(facetFieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Dx | Dy | Encode | Font | FontSize | FontStyle]
   
-  @scala.inline
-  def assembleLayoutTitleBand(headerComponentIndex: LayoutHeaderComponentIndex, config: Config[SignalRef]): RowCol[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLayoutTitleBand")(headerComponentIndex.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[RowCol[Double]]
+  inline def assembleLayoutTitleBand(headerComponentIndex: LayoutHeaderComponentIndex, config: Config[SignalRef]): RowCol[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleLayoutTitleBand")(headerComponentIndex.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[RowCol[Double]]
   
-  @scala.inline
-  def assembleTitleGroup(model: Model, channel: FacetChannel): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleTitleGroup")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Name]
+  inline def assembleTitleGroup(model: Model, channel: FacetChannel): Name = (^.asInstanceOf[js.Dynamic].applyDynamic("assembleTitleGroup")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Name]
   
-  @scala.inline
-  def defaultHeaderGuideAlign(headerChannel: HeaderChannel, angle: Double): AlignString | `1` | AlignUndefined = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderGuideAlign")(headerChannel.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[AlignString | `1` | AlignUndefined]
-  @scala.inline
-  def defaultHeaderGuideAlign(headerChannel: HeaderChannel, angle: Double, anchor: TitleAnchor): AlignString | `1` | AlignUndefined = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderGuideAlign")(headerChannel.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[AlignString | `1` | AlignUndefined]
+  inline def defaultHeaderGuideAlign(headerChannel: HeaderChannel, angle: Double): AlignString | `1` | AlignUndefined = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderGuideAlign")(headerChannel.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[AlignString | `1` | AlignUndefined]
+  inline def defaultHeaderGuideAlign(headerChannel: HeaderChannel, angle: Double, anchor: TitleAnchor): AlignString | `1` | AlignUndefined = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderGuideAlign")(headerChannel.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[AlignString | `1` | AlignUndefined]
   
-  @scala.inline
-  def defaultHeaderGuideBaseline(angle: Double, channel: FacetChannel): `2` | BaselineUndefined = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderGuideBaseline")(angle.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[`2` | BaselineUndefined]
+  inline def defaultHeaderGuideBaseline(angle: Double, channel: FacetChannel): `2` | BaselineUndefined = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderGuideBaseline")(angle.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[`2` | BaselineUndefined]
   
-  @scala.inline
-  def getLayoutTitleBand(titleAnchor: TitleAnchor, headerChannel: HeaderChannel): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutTitleBand")(titleAnchor.asInstanceOf[js.Any], headerChannel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getLayoutTitleBand(titleAnchor: TitleAnchor, headerChannel: HeaderChannel): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutTitleBand")(titleAnchor.asInstanceOf[js.Any], headerChannel.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

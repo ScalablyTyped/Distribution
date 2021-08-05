@@ -10,16 +10,13 @@ trait EnumValuesCustomerContactNotification extends StObject {
 }
 object EnumValuesCustomerContactNotification {
   
-  @scala.inline
-  def apply(enumValues: CustomerContactNotification): EnumValuesCustomerContactNotification = {
+  inline def apply(enumValues: CustomerContactNotification): EnumValuesCustomerContactNotification = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesCustomerContactNotification]
   }
   
-  @scala.inline
-  implicit class EnumValuesCustomerContactNotificationMutableBuilder[Self <: EnumValuesCustomerContactNotification] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesCustomerContactNotification](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: CustomerContactNotification): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: CustomerContactNotification): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -72,8 +72,7 @@ object mod {
   @JSImport("reconnectingwebsocket", "CLOSED")
   @js.native
   def CLOSED: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['CLOSED'] */ js.Any = js.native
-  @scala.inline
-  def CLOSED_=(
+  inline def CLOSED_=(
     x: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['CLOSED'] */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED")(x.asInstanceOf[js.Any])
   
@@ -81,8 +80,7 @@ object mod {
   @JSImport("reconnectingwebsocket", "CLOSING")
   @js.native
   def CLOSING: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['CLOSING'] */ js.Any = js.native
-  @scala.inline
-  def CLOSING_=(
+  inline def CLOSING_=(
     x: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['CLOSING'] */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSING")(x.asInstanceOf[js.Any])
   
@@ -90,8 +88,7 @@ object mod {
   @JSImport("reconnectingwebsocket", "CONNECTING")
   @js.native
   def CONNECTING: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['CONNECTING'] */ js.Any = js.native
-  @scala.inline
-  def CONNECTING_=(
+  inline def CONNECTING_=(
     x: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['CONNECTING'] */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
   
@@ -99,8 +96,7 @@ object mod {
   @JSImport("reconnectingwebsocket", "OPEN")
   @js.native
   def OPEN: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['OPEN'] */ js.Any = js.native
-  @scala.inline
-  def OPEN_=(
+  inline def OPEN_=(
     x: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['OPEN'] */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN")(x.asInstanceOf[js.Any])
   
@@ -112,8 +108,7 @@ object mod {
   @JSImport("reconnectingwebsocket", "debugAll")
   @js.native
   def debugAll: Boolean = js.native
-  @scala.inline
-  def debugAll_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debugAll")(x.asInstanceOf[js.Any])
+  inline def debugAll_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debugAll")(x.asInstanceOf[js.Any])
   
   @js.native
   trait CloseEvent
@@ -162,8 +157,7 @@ object mod {
   }
   object EventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: CloseEvent,
       connecting: ConnectingEvent,
       error: ErrorEvent,
@@ -174,23 +168,17 @@ object mod {
       __obj.asInstanceOf[EventMap]
     }
     
-    @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+    extension [Self <: EventMap](x: Self) {
       
-      @scala.inline
-      def setClose(value: CloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: CloseEvent): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnecting(value: ConnectingEvent): Self = StObject.set(x, "connecting", value.asInstanceOf[js.Any])
+      inline def setConnecting(value: ConnectingEvent): Self = StObject.set(x, "connecting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: MessageEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: MessageEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: OpenEvent): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: OpenEvent): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     }
   }
   
@@ -275,67 +263,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAutomaticOpen(value: Boolean): Self = StObject.set(x, "automaticOpen", value.asInstanceOf[js.Any])
+      inline def setAutomaticOpen(value: Boolean): Self = StObject.set(x, "automaticOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticOpenUndefined: Self = StObject.set(x, "automaticOpen", js.undefined)
+      inline def setAutomaticOpenUndefined: Self = StObject.set(x, "automaticOpen", js.undefined)
       
-      @scala.inline
-      def setBinaryType(
+      inline def setBinaryType(
         value: /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.WebSocket * / any['binaryType'] */ js.Any
       ): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
+      inline def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setMaxReconnectAttempts(value: Double): Self = StObject.set(x, "maxReconnectAttempts", value.asInstanceOf[js.Any])
+      inline def setMaxReconnectAttempts(value: Double): Self = StObject.set(x, "maxReconnectAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReconnectAttemptsNull: Self = StObject.set(x, "maxReconnectAttempts", null)
+      inline def setMaxReconnectAttemptsNull: Self = StObject.set(x, "maxReconnectAttempts", null)
       
-      @scala.inline
-      def setMaxReconnectAttemptsUndefined: Self = StObject.set(x, "maxReconnectAttempts", js.undefined)
+      inline def setMaxReconnectAttemptsUndefined: Self = StObject.set(x, "maxReconnectAttempts", js.undefined)
       
-      @scala.inline
-      def setMaxReconnectInterval(value: Double): Self = StObject.set(x, "maxReconnectInterval", value.asInstanceOf[js.Any])
+      inline def setMaxReconnectInterval(value: Double): Self = StObject.set(x, "maxReconnectInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxReconnectIntervalUndefined: Self = StObject.set(x, "maxReconnectInterval", js.undefined)
+      inline def setMaxReconnectIntervalUndefined: Self = StObject.set(x, "maxReconnectInterval", js.undefined)
       
-      @scala.inline
-      def setReconnectDecay(value: Double): Self = StObject.set(x, "reconnectDecay", value.asInstanceOf[js.Any])
+      inline def setReconnectDecay(value: Double): Self = StObject.set(x, "reconnectDecay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectDecayUndefined: Self = StObject.set(x, "reconnectDecay", js.undefined)
+      inline def setReconnectDecayUndefined: Self = StObject.set(x, "reconnectDecay", js.undefined)
       
-      @scala.inline
-      def setReconnectInterval(value: Double): Self = StObject.set(x, "reconnectInterval", value.asInstanceOf[js.Any])
+      inline def setReconnectInterval(value: Double): Self = StObject.set(x, "reconnectInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconnectIntervalUndefined: Self = StObject.set(x, "reconnectInterval", js.undefined)
+      inline def setReconnectIntervalUndefined: Self = StObject.set(x, "reconnectInterval", js.undefined)
       
-      @scala.inline
-      def setTimeoutInterval(value: Double): Self = StObject.set(x, "timeoutInterval", value.asInstanceOf[js.Any])
+      inline def setTimeoutInterval(value: Double): Self = StObject.set(x, "timeoutInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutIntervalUndefined: Self = StObject.set(x, "timeoutInterval", js.undefined)
+      inline def setTimeoutIntervalUndefined: Self = StObject.set(x, "timeoutInterval", js.undefined)
     }
   }
   

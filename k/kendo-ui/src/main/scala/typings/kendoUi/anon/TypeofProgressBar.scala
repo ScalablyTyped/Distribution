@@ -15,19 +15,15 @@ trait TypeofProgressBar extends StObject {
 }
 object TypeofProgressBar {
   
-  @scala.inline
-  def apply(extend: js.Object => ProgressBar, fn: ProgressBar): TypeofProgressBar = {
+  inline def apply(extend: js.Object => ProgressBar, fn: ProgressBar): TypeofProgressBar = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofProgressBar]
   }
   
-  @scala.inline
-  implicit class TypeofProgressBarMutableBuilder[Self <: TypeofProgressBar] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofProgressBar](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => ProgressBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => ProgressBar): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: ProgressBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: ProgressBar): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

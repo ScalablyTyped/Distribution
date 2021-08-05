@@ -16,26 +16,20 @@ trait ChooseMediaSuccessCallbackResult extends StObject {
 }
 object ChooseMediaSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, tempFiles: js.Array[MediaFile], `type`: String): ChooseMediaSuccessCallbackResult = {
+  inline def apply(errMsg: String, tempFiles: js.Array[MediaFile], `type`: String): ChooseMediaSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], tempFiles = tempFiles.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseMediaSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ChooseMediaSuccessCallbackResultMutableBuilder[Self <: ChooseMediaSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseMediaSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFiles(value: js.Array[MediaFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
+    inline def setTempFiles(value: js.Array[MediaFile]): Self = StObject.set(x, "tempFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilesVarargs(value: MediaFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
+    inline def setTempFilesVarargs(value: MediaFile*): Self = StObject.set(x, "tempFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

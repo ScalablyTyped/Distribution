@@ -13,8 +13,6 @@ object writeRequestBodyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def writeRequestBody(httpRequest: ClientHttp2Stream, request: HttpRequest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeRequestBody")(httpRequest.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def writeRequestBody(httpRequest: ClientRequest, request: HttpRequest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeRequestBody")(httpRequest.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeRequestBody(httpRequest: ClientHttp2Stream, request: HttpRequest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeRequestBody")(httpRequest.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeRequestBody(httpRequest: ClientRequest, request: HttpRequest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeRequestBody")(httpRequest.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -12,34 +12,29 @@ object geodesyStrings {
   sealed trait N
     extends StObject
        with Hemisphere
-  @scala.inline
-  def N: N = "N".asInstanceOf[N]
+  inline def N: N = "N".asInstanceOf[N]
   
   @js.native
   sealed trait S
     extends StObject
        with Hemisphere
-  @scala.inline
-  def S: S = "S".asInstanceOf[S]
+  inline def S: S = "S".asInstanceOf[S]
   
   @js.native
   sealed trait d
     extends StObject
        with Format
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
+  inline def d: d = "d".asInstanceOf[d]
   
   @js.native
   sealed trait dm
     extends StObject
        with Format
-  @scala.inline
-  def dm: dm = "dm".asInstanceOf[dm]
+  inline def dm: dm = "dm".asInstanceOf[dm]
   
   @js.native
   sealed trait dms
     extends StObject
        with Format
-  @scala.inline
-  def dms: dms = "dms".asInstanceOf[dms]
+  inline def dms: dms = "dms".asInstanceOf[dms]
 }

@@ -22,25 +22,19 @@ trait PlayToSource extends StObject {
 }
 object PlayToSource {
   
-  @scala.inline
-  def apply(connection: PlayToConnection, next: PlayToSource, playNext: () => Unit, preferredSourceUri: Uri): PlayToSource = {
+  inline def apply(connection: PlayToConnection, next: PlayToSource, playNext: () => Unit, preferredSourceUri: Uri): PlayToSource = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], playNext = js.Any.fromFunction0(playNext), preferredSourceUri = preferredSourceUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayToSource]
   }
   
-  @scala.inline
-  implicit class PlayToSourceMutableBuilder[Self <: PlayToSource] (val x: Self) extends AnyVal {
+  extension [Self <: PlayToSource](x: Self) {
     
-    @scala.inline
-    def setConnection(value: PlayToConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: PlayToConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: PlayToSource): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: PlayToSource): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayNext(value: () => Unit): Self = StObject.set(x, "playNext", js.Any.fromFunction0(value))
+    inline def setPlayNext(value: () => Unit): Self = StObject.set(x, "playNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreferredSourceUri(value: Uri): Self = StObject.set(x, "preferredSourceUri", value.asInstanceOf[js.Any])
+    inline def setPreferredSourceUri(value: Uri): Self = StObject.set(x, "preferredSourceUri", value.asInstanceOf[js.Any])
   }
 }

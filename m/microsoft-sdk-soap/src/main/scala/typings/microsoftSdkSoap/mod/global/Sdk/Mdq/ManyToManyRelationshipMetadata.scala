@@ -42,8 +42,7 @@ trait ManyToManyRelationshipMetadata extends StObject {
 }
 object ManyToManyRelationshipMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Entity1AssociatedMenuConfiguration: AssociatedMenuConfiguration,
     Entity1IntersectAttribute: String,
     Entity1LogicalName: String,
@@ -66,58 +65,40 @@ object ManyToManyRelationshipMetadata {
     __obj.asInstanceOf[ManyToManyRelationshipMetadata]
   }
   
-  @scala.inline
-  implicit class ManyToManyRelationshipMetadataMutableBuilder[Self <: ManyToManyRelationshipMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ManyToManyRelationshipMetadata](x: Self) {
     
-    @scala.inline
-    def setEntity1AssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = StObject.set(x, "Entity1AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
+    inline def setEntity1AssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = StObject.set(x, "Entity1AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity1IntersectAttribute(value: String): Self = StObject.set(x, "Entity1IntersectAttribute", value.asInstanceOf[js.Any])
+    inline def setEntity1IntersectAttribute(value: String): Self = StObject.set(x, "Entity1IntersectAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity1LogicalName(value: String): Self = StObject.set(x, "Entity1LogicalName", value.asInstanceOf[js.Any])
+    inline def setEntity1LogicalName(value: String): Self = StObject.set(x, "Entity1LogicalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity2AssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = StObject.set(x, "Entity2AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
+    inline def setEntity2AssociatedMenuConfiguration(value: AssociatedMenuConfiguration): Self = StObject.set(x, "Entity2AssociatedMenuConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity2IntersectAttribute(value: String): Self = StObject.set(x, "Entity2IntersectAttribute", value.asInstanceOf[js.Any])
+    inline def setEntity2IntersectAttribute(value: String): Self = StObject.set(x, "Entity2IntersectAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntity2LogicalName(value: String): Self = StObject.set(x, "Entity2LogicalName", value.asInstanceOf[js.Any])
+    inline def setEntity2LogicalName(value: String): Self = StObject.set(x, "Entity2LogicalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasChanged(value: Boolean): Self = StObject.set(x, "HasChanged", value.asInstanceOf[js.Any])
+    inline def setHasChanged(value: Boolean): Self = StObject.set(x, "HasChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectEntityName(value: String): Self = StObject.set(x, "IntersectEntityName", value.asInstanceOf[js.Any])
+    inline def setIntersectEntityName(value: String): Self = StObject.set(x, "IntersectEntityName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
+    inline def setIntroducedVersion(value: js.Any): Self = StObject.set(x, "IntroducedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCustomRelationship(value: Boolean): Self = StObject.set(x, "IsCustomRelationship", value.asInstanceOf[js.Any])
+    inline def setIsCustomRelationship(value: Boolean): Self = StObject.set(x, "IsCustomRelationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCustomizable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsCustomizable", value.asInstanceOf[js.Any])
+    inline def setIsCustomizable(value: ManagedProperty[Boolean]): Self = StObject.set(x, "IsCustomizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsManaged(value: Boolean): Self = StObject.set(x, "IsManaged", value.asInstanceOf[js.Any])
+    inline def setIsManaged(value: Boolean): Self = StObject.set(x, "IsManaged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValidForAdvancedFind(value: Boolean): Self = StObject.set(x, "IsValidForAdvancedFind", value.asInstanceOf[js.Any])
+    inline def setIsValidForAdvancedFind(value: Boolean): Self = StObject.set(x, "IsValidForAdvancedFind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataId(value: String): Self = StObject.set(x, "MetadataId", value.asInstanceOf[js.Any])
+    inline def setMetadataId(value: String): Self = StObject.set(x, "MetadataId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipType(value: RelationshipType): Self = StObject.set(x, "RelationshipType", value.asInstanceOf[js.Any])
+    inline def setRelationshipType(value: RelationshipType): Self = StObject.set(x, "RelationshipType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityTypes(value: SecurityType): Self = StObject.set(x, "SecurityTypes", value.asInstanceOf[js.Any])
+    inline def setSecurityTypes(value: SecurityType): Self = StObject.set(x, "SecurityTypes", value.asInstanceOf[js.Any])
   }
 }

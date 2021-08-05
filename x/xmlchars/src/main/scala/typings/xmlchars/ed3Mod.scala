@@ -31,9 +31,7 @@ object ed3Mod {
   @js.native
   val NC_NAME_START_CHAR_RE: RegExp = js.native
   
-  @scala.inline
-  def isNCNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNCNameChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNCNameStartChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameStartChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNCNameStartChar(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNCNameStartChar")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

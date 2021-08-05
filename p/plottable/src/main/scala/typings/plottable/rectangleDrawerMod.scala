@@ -25,6 +25,6 @@ object rectangleDrawerMod {
   class RectangleSVGDrawer () extends SVGDrawer {
     def this(_rootClassName: String) = this()
     
-    var _rootClassName: js.Any = js.native
+    /* private */ var _rootClassName: js.Any = js.native
   }
 }

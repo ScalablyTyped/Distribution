@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoi
 }
 object ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint,
     request: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupRequestOptions,
     response: OctokitResponse[EnterpriseAdminSetInformationForProvisionedEnterpriseGroupResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpo
     __obj.asInstanceOf[ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpointMutableBuilder[Self <: ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminSetInformationForProvisionedEnterpriseGroupRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminSetInformationForProvisionedEnterpriseGroupResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminSetInformationForProvisionedEnterpriseGroupResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

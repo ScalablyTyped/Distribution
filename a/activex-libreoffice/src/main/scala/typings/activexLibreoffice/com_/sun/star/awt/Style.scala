@@ -15,10 +15,8 @@ object Style {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DIALOG: `1` = 1.asInstanceOf[`1`]
+    inline def DIALOG: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def FRAME: `0` = 0.asInstanceOf[`0`]
+    inline def FRAME: `0` = 0.asInstanceOf[`0`]
   }
 }

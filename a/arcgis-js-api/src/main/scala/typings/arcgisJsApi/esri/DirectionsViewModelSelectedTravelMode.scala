@@ -51,8 +51,7 @@ trait DirectionsViewModelSelectedTravelMode
 }
 object DirectionsViewModelSelectedTravelMode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     description: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -66,22 +65,16 @@ object DirectionsViewModelSelectedTravelMode {
     __obj.asInstanceOf[DirectionsViewModelSelectedTravelMode]
   }
   
-  @scala.inline
-  implicit class DirectionsViewModelSelectedTravelModeMutableBuilder[Self <: DirectionsViewModelSelectedTravelMode] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsViewModelSelectedTravelMode](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpedanceAttributeName(value: String): Self = StObject.set(x, "impedanceAttributeName", value.asInstanceOf[js.Any])
+    inline def setImpedanceAttributeName(value: String): Self = StObject.set(x, "impedanceAttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeAttributeName(value: String): Self = StObject.set(x, "timeAttributeName", value.asInstanceOf[js.Any])
+    inline def setTimeAttributeName(value: String): Self = StObject.set(x, "timeAttributeName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait JSONEditorNodeType extends StObject {
 }
 object JSONEditorNodeType {
   
-  @scala.inline
-  def apply(className: String, title: String, value: String): JSONEditorNodeType = {
+  inline def apply(className: String, title: String, value: String): JSONEditorNodeType = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorNodeType]
   }
   
-  @scala.inline
-  implicit class JSONEditorNodeTypeMutableBuilder[Self <: JSONEditorNodeType] (val x: Self) extends AnyVal {
+  extension [Self <: JSONEditorNodeType](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

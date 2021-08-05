@@ -23,31 +23,23 @@ trait OpenXJsonSerDe extends StObject {
 }
 object OpenXJsonSerDe {
   
-  @scala.inline
-  def apply(): OpenXJsonSerDe = {
+  inline def apply(): OpenXJsonSerDe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenXJsonSerDe]
   }
   
-  @scala.inline
-  implicit class OpenXJsonSerDeMutableBuilder[Self <: OpenXJsonSerDe] (val x: Self) extends AnyVal {
+  extension [Self <: OpenXJsonSerDe](x: Self) {
     
-    @scala.inline
-    def setCaseInsensitive(value: BooleanObject): Self = StObject.set(x, "CaseInsensitive", value.asInstanceOf[js.Any])
+    inline def setCaseInsensitive(value: BooleanObject): Self = StObject.set(x, "CaseInsensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseInsensitiveUndefined: Self = StObject.set(x, "CaseInsensitive", js.undefined)
+    inline def setCaseInsensitiveUndefined: Self = StObject.set(x, "CaseInsensitive", js.undefined)
     
-    @scala.inline
-    def setColumnToJsonKeyMappings(value: ColumnToJsonKeyMappings): Self = StObject.set(x, "ColumnToJsonKeyMappings", value.asInstanceOf[js.Any])
+    inline def setColumnToJsonKeyMappings(value: ColumnToJsonKeyMappings): Self = StObject.set(x, "ColumnToJsonKeyMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnToJsonKeyMappingsUndefined: Self = StObject.set(x, "ColumnToJsonKeyMappings", js.undefined)
+    inline def setColumnToJsonKeyMappingsUndefined: Self = StObject.set(x, "ColumnToJsonKeyMappings", js.undefined)
     
-    @scala.inline
-    def setConvertDotsInJsonKeysToUnderscores(value: BooleanObject): Self = StObject.set(x, "ConvertDotsInJsonKeysToUnderscores", value.asInstanceOf[js.Any])
+    inline def setConvertDotsInJsonKeysToUnderscores(value: BooleanObject): Self = StObject.set(x, "ConvertDotsInJsonKeysToUnderscores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertDotsInJsonKeysToUnderscoresUndefined: Self = StObject.set(x, "ConvertDotsInJsonKeysToUnderscores", js.undefined)
+    inline def setConvertDotsInJsonKeysToUnderscoresUndefined: Self = StObject.set(x, "ConvertDotsInJsonKeysToUnderscores", js.undefined)
   }
 }

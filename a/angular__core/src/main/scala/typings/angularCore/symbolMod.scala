@@ -14,9 +14,7 @@ object symbolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getValueSymbolOfDeclaration(node: Node, typeChecker: TypeChecker): js.UndefOr[Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueSymbolOfDeclaration")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Symbol]]
+  inline def getValueSymbolOfDeclaration(node: Node, typeChecker: TypeChecker): js.UndefOr[Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueSymbolOfDeclaration")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Symbol]]
   
-  @scala.inline
-  def isReferenceToImport(typeChecker: TypeChecker, node: Node, importSpecifier: ImportSpecifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferenceToImport")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any], importSpecifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isReferenceToImport(typeChecker: TypeChecker, node: Node, importSpecifier: ImportSpecifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferenceToImport")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any], importSpecifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -45,8 +45,7 @@ object EventHelperTypes {
   }
   object FaxAccountInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -60,32 +59,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[FaxAccountInvokeParameter]
     }
     
-    @scala.inline
-    implicit class FaxAccountInvokeParameterMutableBuilder[Self <: FaxAccountInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: FaxAccountInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,8 +101,7 @@ object EventHelperTypes {
   }
   object FaxServerInvokeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispidMember: Double,
       lcid: Double,
       pdispparams: DISPPARAMS,
@@ -126,32 +115,23 @@ object EventHelperTypes {
       __obj.asInstanceOf[FaxServerInvokeParameter]
     }
     
-    @scala.inline
-    implicit class FaxServerInvokeParameterMutableBuilder[Self <: FaxServerInvokeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: FaxServerInvokeParameter](x: Self) {
       
-      @scala.inline
-      def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
+      inline def setDispidMember(value: Double): Self = StObject.set(x, "dispidMember", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
+      inline def setLcid(value: Double): Self = StObject.set(x, "lcid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
+      inline def setPdispparams(value: DISPPARAMS): Self = StObject.set(x, "pdispparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
+      inline def setPexcepinfo(value: EXCEPINFO): Self = StObject.set(x, "pexcepinfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
+      inline def setPuArgErr(value: Double): Self = StObject.set(x, "puArgErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
+      inline def setPvarResult(value: js.Any): Self = StObject.set(x, "pvarResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
+      inline def setRiid(value: GUID): Self = StObject.set(x, "riid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
+      inline def setWFlags(value: Double): Self = StObject.set(x, "wFlags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,8 +153,7 @@ object EventHelperTypes {
   }
   object FaxServerOnDeviceStatusChangeParameter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bPoweredOff: Boolean,
       bReceiving: Boolean,
       bRinging: Boolean,
@@ -186,26 +165,19 @@ object EventHelperTypes {
       __obj.asInstanceOf[FaxServerOnDeviceStatusChangeParameter]
     }
     
-    @scala.inline
-    implicit class FaxServerOnDeviceStatusChangeParameterMutableBuilder[Self <: FaxServerOnDeviceStatusChangeParameter] (val x: Self) extends AnyVal {
+    extension [Self <: FaxServerOnDeviceStatusChangeParameter](x: Self) {
       
-      @scala.inline
-      def setBPoweredOff(value: Boolean): Self = StObject.set(x, "bPoweredOff", value.asInstanceOf[js.Any])
+      inline def setBPoweredOff(value: Boolean): Self = StObject.set(x, "bPoweredOff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBReceiving(value: Boolean): Self = StObject.set(x, "bReceiving", value.asInstanceOf[js.Any])
+      inline def setBReceiving(value: Boolean): Self = StObject.set(x, "bReceiving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBRinging(value: Boolean): Self = StObject.set(x, "bRinging", value.asInstanceOf[js.Any])
+      inline def setBRinging(value: Boolean): Self = StObject.set(x, "bRinging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBSending(value: Boolean): Self = StObject.set(x, "bSending", value.asInstanceOf[js.Any])
+      inline def setBSending(value: Boolean): Self = StObject.set(x, "bSending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLDeviceId(value: Double): Self = StObject.set(x, "lDeviceId", value.asInstanceOf[js.Any])
+      inline def setLDeviceId(value: Double): Self = StObject.set(x, "lDeviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
+      inline def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
     }
   }
 }

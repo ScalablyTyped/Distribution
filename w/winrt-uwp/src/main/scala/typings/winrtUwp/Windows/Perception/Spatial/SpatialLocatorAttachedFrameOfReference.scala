@@ -22,8 +22,7 @@ trait SpatialLocatorAttachedFrameOfReference extends StObject {
 }
 object SpatialLocatorAttachedFrameOfReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adjustHeading: js.Any,
     getStationaryCoordinateSystemAtTimestamp: js.Any,
     relativeOrientation: js.Any,
@@ -34,22 +33,16 @@ object SpatialLocatorAttachedFrameOfReference {
     __obj.asInstanceOf[SpatialLocatorAttachedFrameOfReference]
   }
   
-  @scala.inline
-  implicit class SpatialLocatorAttachedFrameOfReferenceMutableBuilder[Self <: SpatialLocatorAttachedFrameOfReference] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialLocatorAttachedFrameOfReference](x: Self) {
     
-    @scala.inline
-    def setAdjustHeading(value: js.Any): Self = StObject.set(x, "adjustHeading", value.asInstanceOf[js.Any])
+    inline def setAdjustHeading(value: js.Any): Self = StObject.set(x, "adjustHeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetStationaryCoordinateSystemAtTimestamp(value: js.Any): Self = StObject.set(x, "getStationaryCoordinateSystemAtTimestamp", value.asInstanceOf[js.Any])
+    inline def setGetStationaryCoordinateSystemAtTimestamp(value: js.Any): Self = StObject.set(x, "getStationaryCoordinateSystemAtTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeOrientation(value: js.Any): Self = StObject.set(x, "relativeOrientation", value.asInstanceOf[js.Any])
+    inline def setRelativeOrientation(value: js.Any): Self = StObject.set(x, "relativeOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativePosition(value: js.Any): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
+    inline def setRelativePosition(value: js.Any): Self = StObject.set(x, "relativePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryGetRelativeHeadingAtTimestamp(value: js.Any): Self = StObject.set(x, "tryGetRelativeHeadingAtTimestamp", value.asInstanceOf[js.Any])
+    inline def setTryGetRelativeHeadingAtTimestamp(value: js.Any): Self = StObject.set(x, "tryGetRelativeHeadingAtTimestamp", value.asInstanceOf[js.Any])
   }
 }

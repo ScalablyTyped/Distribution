@@ -26,8 +26,7 @@ trait InternalErrorException
 }
 object InternalErrorException {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): InternalErrorException = {
+  inline def apply($metadata: ResponseMetadata): InternalErrorException = {
     val __obj = js.Dynamic.literal($fault = "server", $metadata = $metadata.asInstanceOf[js.Any], name = "InternalErrorException")
     __obj.asInstanceOf[InternalErrorException]
   }
@@ -36,23 +35,17 @@ object InternalErrorException {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: InternalErrorException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: InternalErrorException): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class InternalErrorExceptionMutableBuilder[Self <: InternalErrorException] (val x: Self) extends AnyVal {
+  extension [Self <: InternalErrorException](x: Self) {
     
-    @scala.inline
-    def set$fault(value: server): Self = StObject.set(x, "$fault", value.asInstanceOf[js.Any])
+    inline def set$fault(value: server): Self = StObject.set(x, "$fault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(
+    inline def setName(
       value: typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.InternalErrorException
     ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

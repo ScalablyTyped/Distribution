@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: Options): Result = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def apply(opts: Options): Result = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   @JSImport("ffmpeg.js", JSImport.Namespace)
   @js.native
@@ -37,21 +36,17 @@ object mod {
     }
     object Data {
       
-      @scala.inline
-      def apply(data: String, `type`: String): Data = {
+      inline def apply(data: String, `type`: String): Data = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Data]
       }
       
-      @scala.inline
-      implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+      extension [Self <: Data](x: Self) {
         
-        @scala.inline
-        def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -61,17 +56,14 @@ object mod {
     }
     object OnMessageOptions {
       
-      @scala.inline
-      def apply(data: Data): OnMessageOptions = {
+      inline def apply(data: Data): OnMessageOptions = {
         val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
         __obj.asInstanceOf[OnMessageOptions]
       }
       
-      @scala.inline
-      implicit class OnMessageOptionsMutableBuilder[Self <: OnMessageOptions] (val x: Self) extends AnyVal {
+      extension [Self <: OnMessageOptions](x: Self) {
         
-        @scala.inline
-        def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       }
     }
     
@@ -83,30 +75,24 @@ object mod {
     }
     object PostMessageOptions {
       
-      @scala.inline
-      def apply(arguments: js.Array[String], `type`: String): PostMessageOptions = {
+      inline def apply(arguments: js.Array[String], `type`: String): PostMessageOptions = {
         val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[PostMessageOptions]
       }
       
-      @scala.inline
-      implicit class PostMessageOptionsMutableBuilder[Self <: PostMessageOptions] (val x: Self) extends AnyVal {
+      extension [Self <: PostMessageOptions](x: Self) {
         
-        @scala.inline
-        def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+        inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+        inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
   }
   
-  @scala.inline
-  def ffmpeg(opts: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("ffmpeg")(opts.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def ffmpeg(opts: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("ffmpeg")(opts.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   trait Mount extends StObject {
     
@@ -118,24 +104,19 @@ object mod {
   }
   object Mount {
     
-    @scala.inline
-    def apply(mountpoint: String, opts: Opts, `type`: String): Mount = {
+    inline def apply(mountpoint: String, opts: Opts, `type`: String): Mount = {
       val __obj = js.Dynamic.literal(mountpoint = mountpoint.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mount]
     }
     
-    @scala.inline
-    implicit class MountMutableBuilder[Self <: Mount] (val x: Self) extends AnyVal {
+    extension [Self <: Mount](x: Self) {
       
-      @scala.inline
-      def setMountpoint(value: String): Self = StObject.set(x, "mountpoint", value.asInstanceOf[js.Any])
+      inline def setMountpoint(value: String): Self = StObject.set(x, "mountpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpts(value: Opts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: Opts): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,68 +140,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(arguments: js.Array[String]): Options = {
+    inline def apply(arguments: js.Array[String]): Options = {
       val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setMEMFS(value: js.Array[Video]): Self = StObject.set(x, "MEMFS", value.asInstanceOf[js.Any])
+      inline def setMEMFS(value: js.Array[Video]): Self = StObject.set(x, "MEMFS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMEMFSUndefined: Self = StObject.set(x, "MEMFS", js.undefined)
+      inline def setMEMFSUndefined: Self = StObject.set(x, "MEMFS", js.undefined)
       
-      @scala.inline
-      def setMEMFSVarargs(value: Video*): Self = StObject.set(x, "MEMFS", js.Array(value :_*))
+      inline def setMEMFSVarargs(value: Video*): Self = StObject.set(x, "MEMFS", js.Array(value :_*))
       
-      @scala.inline
-      def setMounts(value: js.Array[Mount]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
+      inline def setMounts(value: js.Array[Mount]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountsUndefined: Self = StObject.set(x, "mounts", js.undefined)
+      inline def setMountsUndefined: Self = StObject.set(x, "mounts", js.undefined)
       
-      @scala.inline
-      def setMountsVarargs(value: Mount*): Self = StObject.set(x, "mounts", js.Array(value :_*))
+      inline def setMountsVarargs(value: Mount*): Self = StObject.set(x, "mounts", js.Array(value :_*))
       
-      @scala.inline
-      def setOnExit(value: /* code */ js.Any => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
+      inline def setOnExit(value: /* code */ js.Any => Unit): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+      inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
       
-      @scala.inline
-      def setPrint(value: /* data */ js.Any => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
+      inline def setPrint(value: /* data */ js.Any => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrintErr(value: /* data */ js.Any => Unit): Self = StObject.set(x, "printErr", js.Any.fromFunction1(value))
+      inline def setPrintErr(value: /* data */ js.Any => Unit): Self = StObject.set(x, "printErr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrintErrUndefined: Self = StObject.set(x, "printErr", js.undefined)
+      inline def setPrintErrUndefined: Self = StObject.set(x, "printErr", js.undefined)
       
-      @scala.inline
-      def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
+      inline def setPrintUndefined: Self = StObject.set(x, "print", js.undefined)
       
-      @scala.inline
-      def setStdin(value: /* data */ js.Any => Unit): Self = StObject.set(x, "stdin", js.Any.fromFunction1(value))
+      inline def setStdin(value: /* data */ js.Any => Unit): Self = StObject.set(x, "stdin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
       
-      @scala.inline
-      def setTOTAL_MEMORY(value: Double): Self = StObject.set(x, "TOTAL_MEMORY", value.asInstanceOf[js.Any])
+      inline def setTOTAL_MEMORY(value: Double): Self = StObject.set(x, "TOTAL_MEMORY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTOTAL_MEMORYUndefined: Self = StObject.set(x, "TOTAL_MEMORY", js.undefined)
+      inline def setTOTAL_MEMORYUndefined: Self = StObject.set(x, "TOTAL_MEMORY", js.undefined)
     }
   }
   
@@ -230,17 +191,14 @@ object mod {
   }
   object Opts {
     
-    @scala.inline
-    def apply(root: String): Opts = {
+    inline def apply(root: String): Opts = {
       val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[Opts]
     }
     
-    @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+    extension [Self <: Opts](x: Self) {
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -250,20 +208,16 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(MEMFS: js.Array[Video]): Result = {
+    inline def apply(MEMFS: js.Array[Video]): Result = {
       val __obj = js.Dynamic.literal(MEMFS = MEMFS.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setMEMFS(value: js.Array[Video]): Self = StObject.set(x, "MEMFS", value.asInstanceOf[js.Any])
+      inline def setMEMFS(value: js.Array[Video]): Self = StObject.set(x, "MEMFS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMEMFSVarargs(value: Video*): Self = StObject.set(x, "MEMFS", js.Array(value :_*))
+      inline def setMEMFSVarargs(value: Video*): Self = StObject.set(x, "MEMFS", js.Array(value :_*))
     }
   }
   
@@ -275,20 +229,16 @@ object mod {
   }
   object Video {
     
-    @scala.inline
-    def apply(data: Uint8Array, name: String): Video = {
+    inline def apply(data: Uint8Array, name: String): Video = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Video]
     }
     
-    @scala.inline
-    implicit class VideoMutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
+    extension [Self <: Video](x: Self) {
       
-      @scala.inline
-      def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

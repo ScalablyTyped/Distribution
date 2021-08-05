@@ -62,145 +62,99 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IconButtonProps {
   
-  @scala.inline
-  def apply(): IconButtonProps = {
+  inline def apply(): IconButtonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IconButtonProps]
   }
   
-  @scala.inline
-  implicit class IconButtonPropsMutableBuilder[Self <: IconButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: IconButtonProps](x: Self) {
     
-    @scala.inline
-    def setCenterRipple(value: Boolean): Self = StObject.set(x, "centerRipple", value.asInstanceOf[js.Any])
+    inline def setCenterRipple(value: Boolean): Self = StObject.set(x, "centerRipple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterRippleUndefined: Self = StObject.set(x, "centerRipple", js.undefined)
+    inline def setCenterRippleUndefined: Self = StObject.set(x, "centerRipple", js.undefined)
     
-    @scala.inline
-    def setContainerElement(value: ReactNode | String): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
+    inline def setContainerElement(value: ReactNode | String): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerElementUndefined: Self = StObject.set(x, "containerElement", js.undefined)
+    inline def setContainerElementUndefined: Self = StObject.set(x, "containerElement", js.undefined)
     
-    @scala.inline
-    def setDisableFocusRipple(value: Boolean): Self = StObject.set(x, "disableFocusRipple", value.asInstanceOf[js.Any])
+    inline def setDisableFocusRipple(value: Boolean): Self = StObject.set(x, "disableFocusRipple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableFocusRippleUndefined: Self = StObject.set(x, "disableFocusRipple", js.undefined)
+    inline def setDisableFocusRippleUndefined: Self = StObject.set(x, "disableFocusRipple", js.undefined)
     
-    @scala.inline
-    def setDisableKeyboardFocus(value: Boolean): Self = StObject.set(x, "disableKeyboardFocus", value.asInstanceOf[js.Any])
+    inline def setDisableKeyboardFocus(value: Boolean): Self = StObject.set(x, "disableKeyboardFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableKeyboardFocusUndefined: Self = StObject.set(x, "disableKeyboardFocus", js.undefined)
+    inline def setDisableKeyboardFocusUndefined: Self = StObject.set(x, "disableKeyboardFocus", js.undefined)
     
-    @scala.inline
-    def setDisableTouchRipple(value: Boolean): Self = StObject.set(x, "disableTouchRipple", value.asInstanceOf[js.Any])
+    inline def setDisableTouchRipple(value: Boolean): Self = StObject.set(x, "disableTouchRipple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableTouchRippleUndefined: Self = StObject.set(x, "disableTouchRipple", js.undefined)
+    inline def setDisableTouchRippleUndefined: Self = StObject.set(x, "disableTouchRipple", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setFocusRippleColor(value: String): Self = StObject.set(x, "focusRippleColor", value.asInstanceOf[js.Any])
+    inline def setFocusRippleColor(value: String): Self = StObject.set(x, "focusRippleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusRippleColorUndefined: Self = StObject.set(x, "focusRippleColor", js.undefined)
+    inline def setFocusRippleColorUndefined: Self = StObject.set(x, "focusRippleColor", js.undefined)
     
-    @scala.inline
-    def setFocusRippleOpacity(value: Double): Self = StObject.set(x, "focusRippleOpacity", value.asInstanceOf[js.Any])
+    inline def setFocusRippleOpacity(value: Double): Self = StObject.set(x, "focusRippleOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusRippleOpacityUndefined: Self = StObject.set(x, "focusRippleOpacity", js.undefined)
+    inline def setFocusRippleOpacityUndefined: Self = StObject.set(x, "focusRippleOpacity", js.undefined)
     
-    @scala.inline
-    def setHoveredStyle(value: CSSProperties): Self = StObject.set(x, "hoveredStyle", value.asInstanceOf[js.Any])
+    inline def setHoveredStyle(value: CSSProperties): Self = StObject.set(x, "hoveredStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoveredStyleUndefined: Self = StObject.set(x, "hoveredStyle", js.undefined)
+    inline def setHoveredStyleUndefined: Self = StObject.set(x, "hoveredStyle", js.undefined)
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
+    inline def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
+    inline def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
     
-    @scala.inline
-    def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
+    inline def setIconStyle(value: CSSProperties): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
+    inline def setIconStyleUndefined: Self = StObject.set(x, "iconStyle", js.undefined)
     
-    @scala.inline
-    def setKeyboardFocused(value: Boolean): Self = StObject.set(x, "keyboardFocused", value.asInstanceOf[js.Any])
+    inline def setKeyboardFocused(value: Boolean): Self = StObject.set(x, "keyboardFocused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardFocusedUndefined: Self = StObject.set(x, "keyboardFocused", js.undefined)
+    inline def setKeyboardFocusedUndefined: Self = StObject.set(x, "keyboardFocused", js.undefined)
     
-    @scala.inline
-    def setOnKeyboardFocus(value: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit): Self = StObject.set(x, "onKeyboardFocus", js.Any.fromFunction2(value))
+    inline def setOnKeyboardFocus(value: (/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean) => Unit): Self = StObject.set(x, "onKeyboardFocus", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnKeyboardFocusUndefined: Self = StObject.set(x, "onKeyboardFocus", js.undefined)
+    inline def setOnKeyboardFocusUndefined: Self = StObject.set(x, "onKeyboardFocus", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: ReactNode | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: ReactNode | String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPosition(value: cornersAndCenter): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
+    inline def setTooltipPosition(value: cornersAndCenter): Self = StObject.set(x, "tooltipPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
+    inline def setTooltipPositionUndefined: Self = StObject.set(x, "tooltipPosition", js.undefined)
     
-    @scala.inline
-    def setTooltipStyles(value: CSSProperties): Self = StObject.set(x, "tooltipStyles", value.asInstanceOf[js.Any])
+    inline def setTooltipStyles(value: CSSProperties): Self = StObject.set(x, "tooltipStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipStylesUndefined: Self = StObject.set(x, "tooltipStyles", js.undefined)
+    inline def setTooltipStylesUndefined: Self = StObject.set(x, "tooltipStyles", js.undefined)
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    @scala.inline
-    def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+    inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchRippleColor(value: String): Self = StObject.set(x, "touchRippleColor", value.asInstanceOf[js.Any])
+    inline def setTouchRippleColor(value: String): Self = StObject.set(x, "touchRippleColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchRippleColorUndefined: Self = StObject.set(x, "touchRippleColor", js.undefined)
+    inline def setTouchRippleColorUndefined: Self = StObject.set(x, "touchRippleColor", js.undefined)
     
-    @scala.inline
-    def setTouchRippleOpacity(value: Double): Self = StObject.set(x, "touchRippleOpacity", value.asInstanceOf[js.Any])
+    inline def setTouchRippleOpacity(value: Double): Self = StObject.set(x, "touchRippleOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchRippleOpacityUndefined: Self = StObject.set(x, "touchRippleOpacity", js.undefined)
+    inline def setTouchRippleOpacityUndefined: Self = StObject.set(x, "touchRippleOpacity", js.undefined)
     
-    @scala.inline
-    def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+    inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

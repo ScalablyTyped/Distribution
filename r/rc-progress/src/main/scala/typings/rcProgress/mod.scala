@@ -17,14 +17,12 @@ object mod {
     @JSImport("rc-progress", "default.Circle")
     @js.native
     def Circle: FC[ProgressProps] = js.native
-    @scala.inline
-    def Circle_=(x: FC[ProgressProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
+    inline def Circle_=(x: FC[ProgressProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Circle")(x.asInstanceOf[js.Any])
     
     @JSImport("rc-progress", "default.Line")
     @js.native
     def Line: FC[ProgressProps] = js.native
-    @scala.inline
-    def Line_=(x: FC[ProgressProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
+    inline def Line_=(x: FC[ProgressProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Line")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rc-progress", "Circle")

@@ -14,22 +14,17 @@ trait LiftEffect extends StObject {
 }
 object LiftEffect {
   
-  @scala.inline
-  def apply(displacedBy: DisplacedBy, effected: DraggableIdMap, inVirtualList: Boolean): LiftEffect = {
+  inline def apply(displacedBy: DisplacedBy, effected: DraggableIdMap, inVirtualList: Boolean): LiftEffect = {
     val __obj = js.Dynamic.literal(displacedBy = displacedBy.asInstanceOf[js.Any], effected = effected.asInstanceOf[js.Any], inVirtualList = inVirtualList.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiftEffect]
   }
   
-  @scala.inline
-  implicit class LiftEffectMutableBuilder[Self <: LiftEffect] (val x: Self) extends AnyVal {
+  extension [Self <: LiftEffect](x: Self) {
     
-    @scala.inline
-    def setDisplacedBy(value: DisplacedBy): Self = StObject.set(x, "displacedBy", value.asInstanceOf[js.Any])
+    inline def setDisplacedBy(value: DisplacedBy): Self = StObject.set(x, "displacedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffected(value: DraggableIdMap): Self = StObject.set(x, "effected", value.asInstanceOf[js.Any])
+    inline def setEffected(value: DraggableIdMap): Self = StObject.set(x, "effected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInVirtualList(value: Boolean): Self = StObject.set(x, "inVirtualList", value.asInstanceOf[js.Any])
+    inline def setInVirtualList(value: Boolean): Self = StObject.set(x, "inVirtualList", value.asInstanceOf[js.Any])
   }
 }

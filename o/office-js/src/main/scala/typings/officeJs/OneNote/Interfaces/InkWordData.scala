@@ -33,34 +33,25 @@ trait InkWordData extends StObject {
 }
 object InkWordData {
   
-  @scala.inline
-  def apply(): InkWordData = {
+  inline def apply(): InkWordData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkWordData]
   }
   
-  @scala.inline
-  implicit class InkWordDataMutableBuilder[Self <: InkWordData] (val x: Self) extends AnyVal {
+  extension [Self <: InkWordData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLanguageId(value: String): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
+    inline def setLanguageId(value: String): Self = StObject.set(x, "languageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
+    inline def setLanguageIdUndefined: Self = StObject.set(x, "languageId", js.undefined)
     
-    @scala.inline
-    def setWordAlternates(value: js.Array[String]): Self = StObject.set(x, "wordAlternates", value.asInstanceOf[js.Any])
+    inline def setWordAlternates(value: js.Array[String]): Self = StObject.set(x, "wordAlternates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordAlternatesUndefined: Self = StObject.set(x, "wordAlternates", js.undefined)
+    inline def setWordAlternatesUndefined: Self = StObject.set(x, "wordAlternates", js.undefined)
     
-    @scala.inline
-    def setWordAlternatesVarargs(value: String*): Self = StObject.set(x, "wordAlternates", js.Array(value :_*))
+    inline def setWordAlternatesVarargs(value: String*): Self = StObject.set(x, "wordAlternates", js.Array(value :_*))
   }
 }

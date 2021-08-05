@@ -20,49 +20,35 @@ trait ParsedDiff extends StObject {
 }
 object ParsedDiff {
   
-  @scala.inline
-  def apply(hunks: js.Array[Hunk]): ParsedDiff = {
+  inline def apply(hunks: js.Array[Hunk]): ParsedDiff = {
     val __obj = js.Dynamic.literal(hunks = hunks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedDiff]
   }
   
-  @scala.inline
-  implicit class ParsedDiffMutableBuilder[Self <: ParsedDiff] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedDiff](x: Self) {
     
-    @scala.inline
-    def setHunks(value: js.Array[Hunk]): Self = StObject.set(x, "hunks", value.asInstanceOf[js.Any])
+    inline def setHunks(value: js.Array[Hunk]): Self = StObject.set(x, "hunks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHunksVarargs(value: Hunk*): Self = StObject.set(x, "hunks", js.Array(value :_*))
+    inline def setHunksVarargs(value: Hunk*): Self = StObject.set(x, "hunks", js.Array(value :_*))
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setNewFileName(value: String): Self = StObject.set(x, "newFileName", value.asInstanceOf[js.Any])
+    inline def setNewFileName(value: String): Self = StObject.set(x, "newFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewFileNameUndefined: Self = StObject.set(x, "newFileName", js.undefined)
+    inline def setNewFileNameUndefined: Self = StObject.set(x, "newFileName", js.undefined)
     
-    @scala.inline
-    def setNewHeader(value: String): Self = StObject.set(x, "newHeader", value.asInstanceOf[js.Any])
+    inline def setNewHeader(value: String): Self = StObject.set(x, "newHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewHeaderUndefined: Self = StObject.set(x, "newHeader", js.undefined)
+    inline def setNewHeaderUndefined: Self = StObject.set(x, "newHeader", js.undefined)
     
-    @scala.inline
-    def setOldFileName(value: String): Self = StObject.set(x, "oldFileName", value.asInstanceOf[js.Any])
+    inline def setOldFileName(value: String): Self = StObject.set(x, "oldFileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldFileNameUndefined: Self = StObject.set(x, "oldFileName", js.undefined)
+    inline def setOldFileNameUndefined: Self = StObject.set(x, "oldFileName", js.undefined)
     
-    @scala.inline
-    def setOldHeader(value: String): Self = StObject.set(x, "oldHeader", value.asInstanceOf[js.Any])
+    inline def setOldHeader(value: String): Self = StObject.set(x, "oldHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldHeaderUndefined: Self = StObject.set(x, "oldHeader", js.undefined)
+    inline def setOldHeaderUndefined: Self = StObject.set(x, "oldHeader", js.undefined)
   }
 }

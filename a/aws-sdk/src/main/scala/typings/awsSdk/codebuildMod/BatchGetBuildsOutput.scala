@@ -18,31 +18,23 @@ trait BatchGetBuildsOutput extends StObject {
 }
 object BatchGetBuildsOutput {
   
-  @scala.inline
-  def apply(): BatchGetBuildsOutput = {
+  inline def apply(): BatchGetBuildsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetBuildsOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetBuildsOutputMutableBuilder[Self <: BatchGetBuildsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetBuildsOutput](x: Self) {
     
-    @scala.inline
-    def setBuilds(value: Builds): Self = StObject.set(x, "builds", value.asInstanceOf[js.Any])
+    inline def setBuilds(value: Builds): Self = StObject.set(x, "builds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildsNotFound(value: BuildIds): Self = StObject.set(x, "buildsNotFound", value.asInstanceOf[js.Any])
+    inline def setBuildsNotFound(value: BuildIds): Self = StObject.set(x, "buildsNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildsNotFoundUndefined: Self = StObject.set(x, "buildsNotFound", js.undefined)
+    inline def setBuildsNotFoundUndefined: Self = StObject.set(x, "buildsNotFound", js.undefined)
     
-    @scala.inline
-    def setBuildsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "buildsNotFound", js.Array(value :_*))
+    inline def setBuildsNotFoundVarargs(value: NonEmptyString*): Self = StObject.set(x, "buildsNotFound", js.Array(value :_*))
     
-    @scala.inline
-    def setBuildsUndefined: Self = StObject.set(x, "builds", js.undefined)
+    inline def setBuildsUndefined: Self = StObject.set(x, "builds", js.undefined)
     
-    @scala.inline
-    def setBuildsVarargs(value: Build*): Self = StObject.set(x, "builds", js.Array(value :_*))
+    inline def setBuildsVarargs(value: Build*): Self = StObject.set(x, "builds", js.Array(value :_*))
   }
 }

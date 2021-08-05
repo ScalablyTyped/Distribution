@@ -16,7 +16,7 @@ object okResultMod {
        with OkResult {
     def this(apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
     /* CompleteClass */
@@ -27,21 +27,18 @@ object okResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
   }
   object OkResult {
     
-    @scala.inline
-    def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): OkResult = {
+    inline def apply(apiController: js.Any, executeAsync: () => js.Promise[HttpResponseMessage]): OkResult = {
       val __obj = js.Dynamic.literal(apiController = apiController.asInstanceOf[js.Any], executeAsync = js.Any.fromFunction0(executeAsync))
       __obj.asInstanceOf[OkResult]
     }
     
-    @scala.inline
-    implicit class OkResultMutableBuilder[Self <: OkResult] (val x: Self) extends AnyVal {
+    extension [Self <: OkResult](x: Self) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
     }
   }
 }

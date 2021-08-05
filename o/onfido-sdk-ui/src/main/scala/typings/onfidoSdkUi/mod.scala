@@ -13,8 +13,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(e: js.Any): OnfidoHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(e.asInstanceOf[js.Any]).asInstanceOf[OnfidoHandle]
+  inline def init(e: js.Any): OnfidoHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(e.asInstanceOf[js.Any]).asInstanceOf[OnfidoHandle]
   
   trait OnfidoConfig extends StObject {
     
@@ -34,59 +33,42 @@ object mod {
   }
   object OnfidoConfig {
     
-    @scala.inline
-    def apply(): OnfidoConfig = {
+    inline def apply(): OnfidoConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnfidoConfig]
     }
     
-    @scala.inline
-    implicit class OnfidoConfigMutableBuilder[Self <: OnfidoConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OnfidoConfig](x: Self) {
       
-      @scala.inline
-      def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+      inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+      inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
       
-      @scala.inline
-      def setIsModalOpen(value: Boolean): Self = StObject.set(x, "isModalOpen", value.asInstanceOf[js.Any])
+      inline def setIsModalOpen(value: Boolean): Self = StObject.set(x, "isModalOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsModalOpenUndefined: Self = StObject.set(x, "isModalOpen", js.undefined)
+      inline def setIsModalOpenUndefined: Self = StObject.set(x, "isModalOpen", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: /* data */ OnfidoResponse => Null): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* data */ OnfidoResponse => Null): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setOnModalRequestClose(value: () => Null): Self = StObject.set(x, "onModalRequestClose", js.Any.fromFunction0(value))
+      inline def setOnModalRequestClose(value: () => Null): Self = StObject.set(x, "onModalRequestClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnModalRequestCloseUndefined: Self = StObject.set(x, "onModalRequestClose", js.undefined)
+      inline def setOnModalRequestCloseUndefined: Self = StObject.set(x, "onModalRequestClose", js.undefined)
       
-      @scala.inline
-      def setSteps(value: js.Array[String | Options]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: js.Array[String | Options]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+      inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
       
-      @scala.inline
-      def setStepsVarargs(value: (String | Options)*): Self = StObject.set(x, "steps", js.Array(value :_*))
+      inline def setStepsVarargs(value: (String | Options)*): Self = StObject.set(x, "steps", js.Array(value :_*))
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
-      @scala.inline
-      def setUseModal(value: Boolean): Self = StObject.set(x, "useModal", value.asInstanceOf[js.Any])
+      inline def setUseModal(value: Boolean): Self = StObject.set(x, "useModal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseModalUndefined: Self = StObject.set(x, "useModal", js.undefined)
+      inline def setUseModalUndefined: Self = StObject.set(x, "useModal", js.undefined)
     }
   }
   
@@ -98,20 +80,16 @@ object mod {
   }
   object OnfidoHandle {
     
-    @scala.inline
-    def apply(setOptions: OnfidoConfig => Null, tearDown: () => Null): OnfidoHandle = {
+    inline def apply(setOptions: OnfidoConfig => Null, tearDown: () => Null): OnfidoHandle = {
       val __obj = js.Dynamic.literal(setOptions = js.Any.fromFunction1(setOptions), tearDown = js.Any.fromFunction0(tearDown))
       __obj.asInstanceOf[OnfidoHandle]
     }
     
-    @scala.inline
-    implicit class OnfidoHandleMutableBuilder[Self <: OnfidoHandle] (val x: Self) extends AnyVal {
+    extension [Self <: OnfidoHandle](x: Self) {
       
-      @scala.inline
-      def setSetOptions(value: OnfidoConfig => Null): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+      inline def setSetOptions(value: OnfidoConfig => Null): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTearDown(value: () => Null): Self = StObject.set(x, "tearDown", js.Any.fromFunction0(value))
+      inline def setTearDown(value: () => Null): Self = StObject.set(x, "tearDown", js.Any.fromFunction0(value))
     }
   }
   
@@ -123,20 +101,16 @@ object mod {
   }
   object OnfidoResponse {
     
-    @scala.inline
-    def apply(document_front: Id, face: Variant): OnfidoResponse = {
+    inline def apply(document_front: Id, face: Variant): OnfidoResponse = {
       val __obj = js.Dynamic.literal(document_front = document_front.asInstanceOf[js.Any], face = face.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnfidoResponse]
     }
     
-    @scala.inline
-    implicit class OnfidoResponseMutableBuilder[Self <: OnfidoResponse] (val x: Self) extends AnyVal {
+    extension [Self <: OnfidoResponse](x: Self) {
       
-      @scala.inline
-      def setDocument_front(value: Id): Self = StObject.set(x, "document_front", value.asInstanceOf[js.Any])
+      inline def setDocument_front(value: Id): Self = StObject.set(x, "document_front", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFace(value: Variant): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+      inline def setFace(value: Variant): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     }
   }
 }

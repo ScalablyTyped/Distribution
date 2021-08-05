@@ -19,43 +19,31 @@ trait ClassName extends StObject {
 }
 object ClassName {
   
-  @scala.inline
-  def apply(): ClassName = {
+  inline def apply(): ClassName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassName]
   }
   
-  @scala.inline
-  implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+  extension [Self <: ClassName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setContentHeight(value: Double | String): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
+    inline def setContentHeight(value: Double | String): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
+    inline def setContentHeightUndefined: Self = StObject.set(x, "contentHeight", js.undefined)
     
-    @scala.inline
-    def setIsChildrenLayout(value: Boolean): Self = StObject.set(x, "isChildrenLayout", value.asInstanceOf[js.Any])
+    inline def setIsChildrenLayout(value: Boolean): Self = StObject.set(x, "isChildrenLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsChildrenLayoutUndefined: Self = StObject.set(x, "isChildrenLayout", js.undefined)
+    inline def setIsChildrenLayoutUndefined: Self = StObject.set(x, "isChildrenLayout", js.undefined)
     
-    @scala.inline
-    def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

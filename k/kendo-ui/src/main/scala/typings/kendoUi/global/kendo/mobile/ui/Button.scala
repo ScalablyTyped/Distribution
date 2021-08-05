@@ -21,13 +21,11 @@ object Button {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Button = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.Button]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.mobile.ui.Button = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.mobile.ui.Button]
   
   /* static member */
   @JSGlobal("kendo.mobile.ui.Button.fn")
   @js.native
   def fn: typings.kendoUi.kendo.mobile.ui.Button = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.mobile.ui.Button): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.mobile.ui.Button): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

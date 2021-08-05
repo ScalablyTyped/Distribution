@@ -19,8 +19,7 @@ object wrapper {
        with XInitialization
   object XMLDocumentWrapper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentElement: XXMLElementWrapper,
       acquire: () => Unit,
       clearUselessData: (XXMLElementWrapper, SeqEquiv[XXMLElementWrapper], XXMLElementWrapper) => Unit,
@@ -50,8 +49,7 @@ object wrapper {
        with XInitialization
   object XMLElementWrapper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       getSomething: SeqEquiv[Double] => Double,
       initialize: SeqEquiv[js.Any] => Unit,
@@ -172,8 +170,7 @@ object wrapper {
   }
   object XXMLDocumentWrapper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentElement: XXMLElementWrapper,
       acquire: () => Unit,
       clearUselessData: (XXMLElementWrapper, SeqEquiv[XXMLElementWrapper], XXMLElementWrapper) => Unit,
@@ -194,44 +191,31 @@ object wrapper {
       __obj.asInstanceOf[XXMLDocumentWrapper]
     }
     
-    @scala.inline
-    implicit class XXMLDocumentWrapperMutableBuilder[Self <: XXMLDocumentWrapper] (val x: Self) extends AnyVal {
+    extension [Self <: XXMLDocumentWrapper](x: Self) {
       
-      @scala.inline
-      def setClearUselessData(value: (XXMLElementWrapper, SeqEquiv[XXMLElementWrapper], XXMLElementWrapper) => Unit): Self = StObject.set(x, "clearUselessData", js.Any.fromFunction3(value))
+      inline def setClearUselessData(value: (XXMLElementWrapper, SeqEquiv[XXMLElementWrapper], XXMLElementWrapper) => Unit): Self = StObject.set(x, "clearUselessData", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCollapse(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
+      inline def setCollapse(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCurrentElement(value: XXMLElementWrapper): Self = StObject.set(x, "CurrentElement", value.asInstanceOf[js.Any])
+      inline def setCurrentElement(value: XXMLElementWrapper): Self = StObject.set(x, "CurrentElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateSAXEvents(value: (XDocumentHandler, XDocumentHandler, XXMLElementWrapper, XXMLElementWrapper) => Unit): Self = StObject.set(x, "generateSAXEvents", js.Any.fromFunction4(value))
+      inline def setGenerateSAXEvents(value: (XDocumentHandler, XDocumentHandler, XXMLElementWrapper, XXMLElementWrapper) => Unit): Self = StObject.set(x, "generateSAXEvents", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetCurrentElement(value: () => XXMLElementWrapper): Self = StObject.set(x, "getCurrentElement", js.Any.fromFunction0(value))
+      inline def setGetCurrentElement(value: () => XXMLElementWrapper): Self = StObject.set(x, "getCurrentElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNodeName(value: XXMLElementWrapper => String): Self = StObject.set(x, "getNodeName", js.Any.fromFunction1(value))
+      inline def setGetNodeName(value: XXMLElementWrapper => String): Self = StObject.set(x, "getNodeName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTree(value: XDocumentHandler => Unit): Self = StObject.set(x, "getTree", js.Any.fromFunction1(value))
+      inline def setGetTree(value: XDocumentHandler => Unit): Self = StObject.set(x, "getTree", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsCurrent(value: XXMLElementWrapper => Boolean): Self = StObject.set(x, "isCurrent", js.Any.fromFunction1(value))
+      inline def setIsCurrent(value: XXMLElementWrapper => Boolean): Self = StObject.set(x, "isCurrent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsCurrentElementEmpty(value: () => Boolean): Self = StObject.set(x, "isCurrentElementEmpty", js.Any.fromFunction0(value))
+      inline def setIsCurrentElementEmpty(value: () => Boolean): Self = StObject.set(x, "isCurrentElementEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRebuildIDLink(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "rebuildIDLink", js.Any.fromFunction1(value))
+      inline def setRebuildIDLink(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "rebuildIDLink", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveCurrentElement(value: () => Unit): Self = StObject.set(x, "removeCurrentElement", js.Any.fromFunction0(value))
+      inline def setRemoveCurrentElement(value: () => Unit): Self = StObject.set(x, "removeCurrentElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetCurrentElement(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "setCurrentElement", js.Any.fromFunction1(value))
+      inline def setSetCurrentElement(value: XXMLElementWrapper => Unit): Self = StObject.set(x, "setCurrentElement", js.Any.fromFunction1(value))
     }
   }
   

@@ -26,8 +26,7 @@ trait WebSceneUpdateFromOptionsThumbnailSize
 }
 object WebSceneUpdateFromOptionsThumbnailSize {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     height: Double,
@@ -38,13 +37,10 @@ object WebSceneUpdateFromOptionsThumbnailSize {
     __obj.asInstanceOf[WebSceneUpdateFromOptionsThumbnailSize]
   }
   
-  @scala.inline
-  implicit class WebSceneUpdateFromOptionsThumbnailSizeMutableBuilder[Self <: WebSceneUpdateFromOptionsThumbnailSize] (val x: Self) extends AnyVal {
+  extension [Self <: WebSceneUpdateFromOptionsThumbnailSize](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

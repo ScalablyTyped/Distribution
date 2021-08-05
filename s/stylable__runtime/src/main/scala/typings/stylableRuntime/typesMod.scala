@@ -17,20 +17,16 @@ object typesMod {
   }
   object AttributeMap {
     
-    @scala.inline
-    def apply(): AttributeMap = {
+    inline def apply(): AttributeMap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttributeMap]
     }
     
-    @scala.inline
-    implicit class AttributeMapMutableBuilder[Self <: AttributeMap] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeMap](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   
@@ -42,20 +38,16 @@ object typesMod {
   }
   object InheritedAttributes {
     
-    @scala.inline
-    def apply(): InheritedAttributes = {
+    inline def apply(): InheritedAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InheritedAttributes]
     }
     
-    @scala.inline
-    implicit class InheritedAttributesMutableBuilder[Self <: InheritedAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: InheritedAttributes](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   
@@ -85,26 +77,20 @@ object typesMod {
   }
   object RenderableStylesheet {
     
-    @scala.inline
-    def apply($depth: Double, $id: String | Double): RenderableStylesheet = {
+    inline def apply($depth: Double, $id: String | Double): RenderableStylesheet = {
       val __obj = js.Dynamic.literal($depth = $depth.asInstanceOf[js.Any], $id = $id.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderableStylesheet]
     }
     
-    @scala.inline
-    implicit class RenderableStylesheetMutableBuilder[Self <: RenderableStylesheet] (val x: Self) extends AnyVal {
+    extension [Self <: RenderableStylesheet](x: Self) {
       
-      @scala.inline
-      def set$css(value: String): Self = StObject.set(x, "$css", value.asInstanceOf[js.Any])
+      inline def set$css(value: String): Self = StObject.set(x, "$css", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$cssUndefined: Self = StObject.set(x, "$css", js.undefined)
+      inline def set$cssUndefined: Self = StObject.set(x, "$css", js.undefined)
       
-      @scala.inline
-      def set$depth(value: Double): Self = StObject.set(x, "$depth", value.asInstanceOf[js.Any])
+      inline def set$depth(value: Double): Self = StObject.set(x, "$depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$id(value: String | Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
+      inline def set$id(value: String | Double): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,8 +117,7 @@ object typesMod {
   }
   object RuntimeStylesheet {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $depth: Double,
       $id: String | Double,
       classes: Record[String, String],
@@ -148,20 +133,15 @@ object typesMod {
       __obj.asInstanceOf[RuntimeStylesheet]
     }
     
-    @scala.inline
-    implicit class RuntimeStylesheetMutableBuilder[Self <: RuntimeStylesheet] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeStylesheet](x: Self) {
       
-      @scala.inline
-      def setCssStates(value: StateMap => String): Self = StObject.set(x, "cssStates", js.Any.fromFunction1(value))
+      inline def setCssStates(value: StateMap => String): Self = StObject.set(x, "cssStates", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSt(value: STFunction): Self = StObject.set(x, "st", value.asInstanceOf[js.Any])
+      inline def setSt(value: STFunction): Self = StObject.set(x, "st", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: STFunction): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: STFunction): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -189,8 +169,7 @@ object typesMod {
   }
   object StylableExports {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       classes: Record[String, String],
       keyframes: Record[String, String],
       stVars: Record[String, String],
@@ -200,20 +179,15 @@ object typesMod {
       __obj.asInstanceOf[StylableExports]
     }
     
-    @scala.inline
-    implicit class StylableExportsMutableBuilder[Self <: StylableExports] (val x: Self) extends AnyVal {
+    extension [Self <: StylableExports](x: Self) {
       
-      @scala.inline
-      def setClasses(value: Record[String, String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      inline def setClasses(value: Record[String, String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyframes(value: Record[String, String]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+      inline def setKeyframes(value: Record[String, String]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStVars(value: Record[String, String]): Self = StObject.set(x, "stVars", value.asInstanceOf[js.Any])
+      inline def setStVars(value: Record[String, String]): Self = StObject.set(x, "stVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVars(value: Record[String, String]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+      inline def setVars(value: Record[String, String]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -28,8 +28,7 @@ trait AcquisitionOperation extends StObject {
 }
 object AcquisitionOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     operationState: AcquisitionOperationState,
     operationType: AcquisitionOperationType,
     reason: String,
@@ -39,22 +38,16 @@ object AcquisitionOperation {
     __obj.asInstanceOf[AcquisitionOperation]
   }
   
-  @scala.inline
-  implicit class AcquisitionOperationMutableBuilder[Self <: AcquisitionOperation] (val x: Self) extends AnyVal {
+  extension [Self <: AcquisitionOperation](x: Self) {
     
-    @scala.inline
-    def setOperationState(value: AcquisitionOperationState): Self = StObject.set(x, "operationState", value.asInstanceOf[js.Any])
+    inline def setOperationState(value: AcquisitionOperationState): Self = StObject.set(x, "operationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationType(value: AcquisitionOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: AcquisitionOperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasons(value: js.Array[AcquisitionOperationDisallowReason]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
+    inline def setReasons(value: js.Array[AcquisitionOperationDisallowReason]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonsVarargs(value: AcquisitionOperationDisallowReason*): Self = StObject.set(x, "reasons", js.Array(value :_*))
+    inline def setReasonsVarargs(value: AcquisitionOperationDisallowReason*): Self = StObject.set(x, "reasons", js.Array(value :_*))
   }
 }

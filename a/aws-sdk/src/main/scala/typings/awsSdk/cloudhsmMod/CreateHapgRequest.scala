@@ -13,16 +13,13 @@ trait CreateHapgRequest extends StObject {
 }
 object CreateHapgRequest {
   
-  @scala.inline
-  def apply(Label: Label): CreateHapgRequest = {
+  inline def apply(Label: Label): CreateHapgRequest = {
     val __obj = js.Dynamic.literal(Label = Label.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHapgRequest]
   }
   
-  @scala.inline
-  implicit class CreateHapgRequestMutableBuilder[Self <: CreateHapgRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHapgRequest](x: Self) {
     
-    @scala.inline
-    def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
   }
 }

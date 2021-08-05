@@ -18,22 +18,17 @@ trait AssociationOutputLocation extends StObject {
 }
 object AssociationOutputLocation {
   
-  @scala.inline
-  def apply(s3BucketName: String): AssociationOutputLocation = {
+  inline def apply(s3BucketName: String): AssociationOutputLocation = {
     val __obj = js.Dynamic.literal(s3BucketName = s3BucketName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociationOutputLocation]
   }
   
-  @scala.inline
-  implicit class AssociationOutputLocationMutableBuilder[Self <: AssociationOutputLocation] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationOutputLocation](x: Self) {
     
-    @scala.inline
-    def setS3BucketName(value: String): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+    inline def setS3BucketName(value: String): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefix(value: String): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setS3KeyPrefix(value: String): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+    inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
   }
 }

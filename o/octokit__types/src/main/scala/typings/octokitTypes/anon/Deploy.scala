@@ -10,16 +10,13 @@ trait Deploy extends StObject {
 }
 object Deploy {
   
-  @scala.inline
-  def apply(deploy: String): Deploy = {
+  inline def apply(deploy: String): Deploy = {
     val __obj = js.Dynamic.literal(deploy = deploy.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deploy]
   }
   
-  @scala.inline
-  implicit class DeployMutableBuilder[Self <: Deploy] (val x: Self) extends AnyVal {
+  extension [Self <: Deploy](x: Self) {
     
-    @scala.inline
-    def setDeploy(value: String): Self = StObject.set(x, "deploy", value.asInstanceOf[js.Any])
+    inline def setDeploy(value: String): Self = StObject.set(x, "deploy", value.asInstanceOf[js.Any])
   }
 }

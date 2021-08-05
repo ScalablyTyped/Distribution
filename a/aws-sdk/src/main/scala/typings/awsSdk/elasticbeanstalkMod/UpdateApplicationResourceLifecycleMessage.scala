@@ -18,19 +18,15 @@ trait UpdateApplicationResourceLifecycleMessage extends StObject {
 }
 object UpdateApplicationResourceLifecycleMessage {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, ResourceLifecycleConfig: ApplicationResourceLifecycleConfig): UpdateApplicationResourceLifecycleMessage = {
+  inline def apply(ApplicationName: ApplicationName, ResourceLifecycleConfig: ApplicationResourceLifecycleConfig): UpdateApplicationResourceLifecycleMessage = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], ResourceLifecycleConfig = ResourceLifecycleConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApplicationResourceLifecycleMessage]
   }
   
-  @scala.inline
-  implicit class UpdateApplicationResourceLifecycleMessageMutableBuilder[Self <: UpdateApplicationResourceLifecycleMessage] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApplicationResourceLifecycleMessage](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = StObject.set(x, "ResourceLifecycleConfig", value.asInstanceOf[js.Any])
+    inline def setResourceLifecycleConfig(value: ApplicationResourceLifecycleConfig): Self = StObject.set(x, "ResourceLifecycleConfig", value.asInstanceOf[js.Any])
   }
 }

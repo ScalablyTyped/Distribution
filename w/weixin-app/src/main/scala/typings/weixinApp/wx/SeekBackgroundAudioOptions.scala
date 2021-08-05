@@ -13,16 +13,13 @@ trait SeekBackgroundAudioOptions
 }
 object SeekBackgroundAudioOptions {
   
-  @scala.inline
-  def apply(position: Double): SeekBackgroundAudioOptions = {
+  inline def apply(position: Double): SeekBackgroundAudioOptions = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeekBackgroundAudioOptions]
   }
   
-  @scala.inline
-  implicit class SeekBackgroundAudioOptionsMutableBuilder[Self <: SeekBackgroundAudioOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SeekBackgroundAudioOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

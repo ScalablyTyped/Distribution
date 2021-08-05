@@ -26,67 +26,47 @@ trait EducationStudent extends StObject {
 }
 object EducationStudent {
   
-  @scala.inline
-  def apply(): EducationStudent = {
+  inline def apply(): EducationStudent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EducationStudent]
   }
   
-  @scala.inline
-  implicit class EducationStudentMutableBuilder[Self <: EducationStudent] (val x: Self) extends AnyVal {
+  extension [Self <: EducationStudent](x: Self) {
     
-    @scala.inline
-    def setBirthDate(value: NullableOption[String]): Self = StObject.set(x, "birthDate", value.asInstanceOf[js.Any])
+    inline def setBirthDate(value: NullableOption[String]): Self = StObject.set(x, "birthDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirthDateNull: Self = StObject.set(x, "birthDate", null)
+    inline def setBirthDateNull: Self = StObject.set(x, "birthDate", null)
     
-    @scala.inline
-    def setBirthDateUndefined: Self = StObject.set(x, "birthDate", js.undefined)
+    inline def setBirthDateUndefined: Self = StObject.set(x, "birthDate", js.undefined)
     
-    @scala.inline
-    def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdNull: Self = StObject.set(x, "externalId", null)
+    inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
     
-    @scala.inline
-    def setGender(value: NullableOption[EducationGender]): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: NullableOption[EducationGender]): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderNull: Self = StObject.set(x, "gender", null)
+    inline def setGenderNull: Self = StObject.set(x, "gender", null)
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
-    @scala.inline
-    def setGrade(value: NullableOption[String]): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
+    inline def setGrade(value: NullableOption[String]): Self = StObject.set(x, "grade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradeNull: Self = StObject.set(x, "grade", null)
+    inline def setGradeNull: Self = StObject.set(x, "grade", null)
     
-    @scala.inline
-    def setGradeUndefined: Self = StObject.set(x, "grade", js.undefined)
+    inline def setGradeUndefined: Self = StObject.set(x, "grade", js.undefined)
     
-    @scala.inline
-    def setGraduationYear(value: NullableOption[String]): Self = StObject.set(x, "graduationYear", value.asInstanceOf[js.Any])
+    inline def setGraduationYear(value: NullableOption[String]): Self = StObject.set(x, "graduationYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraduationYearNull: Self = StObject.set(x, "graduationYear", null)
+    inline def setGraduationYearNull: Self = StObject.set(x, "graduationYear", null)
     
-    @scala.inline
-    def setGraduationYearUndefined: Self = StObject.set(x, "graduationYear", js.undefined)
+    inline def setGraduationYearUndefined: Self = StObject.set(x, "graduationYear", js.undefined)
     
-    @scala.inline
-    def setStudentNumber(value: NullableOption[String]): Self = StObject.set(x, "studentNumber", value.asInstanceOf[js.Any])
+    inline def setStudentNumber(value: NullableOption[String]): Self = StObject.set(x, "studentNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStudentNumberNull: Self = StObject.set(x, "studentNumber", null)
+    inline def setStudentNumberNull: Self = StObject.set(x, "studentNumber", null)
     
-    @scala.inline
-    def setStudentNumberUndefined: Self = StObject.set(x, "studentNumber", js.undefined)
+    inline def setStudentNumberUndefined: Self = StObject.set(x, "studentNumber", js.undefined)
   }
 }

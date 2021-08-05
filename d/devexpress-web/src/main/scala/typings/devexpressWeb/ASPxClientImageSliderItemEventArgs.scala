@@ -18,16 +18,13 @@ trait ASPxClientImageSliderItemEventArgs
 }
 object ASPxClientImageSliderItemEventArgs {
   
-  @scala.inline
-  def apply(item: ASPxClientImageSliderItem): ASPxClientImageSliderItemEventArgs = {
+  inline def apply(item: ASPxClientImageSliderItem): ASPxClientImageSliderItemEventArgs = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientImageSliderItemEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientImageSliderItemEventArgsMutableBuilder[Self <: ASPxClientImageSliderItemEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientImageSliderItemEventArgs](x: Self) {
     
-    @scala.inline
-    def setItem(value: ASPxClientImageSliderItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ASPxClientImageSliderItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

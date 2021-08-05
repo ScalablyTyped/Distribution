@@ -23,28 +23,21 @@ trait DetectedProviderIds extends StObject {
 }
 object DetectedProviderIds {
   
-  @scala.inline
-  def apply(): DetectedProviderIds = {
+  inline def apply(): DetectedProviderIds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectedProviderIds]
   }
   
-  @scala.inline
-  implicit class DetectedProviderIdsMutableBuilder[Self <: DetectedProviderIds] (val x: Self) extends AnyVal {
+  extension [Self <: DetectedProviderIds](x: Self) {
     
-    @scala.inline
-    def setDetectedProviderIds(value: js.Array[String]): Self = StObject.set(x, "detectedProviderIds", value.asInstanceOf[js.Any])
+    inline def setDetectedProviderIds(value: js.Array[String]): Self = StObject.set(x, "detectedProviderIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectedProviderIdsUndefined: Self = StObject.set(x, "detectedProviderIds", js.undefined)
+    inline def setDetectedProviderIdsUndefined: Self = StObject.set(x, "detectedProviderIds", js.undefined)
     
-    @scala.inline
-    def setDetectedProviderIdsVarargs(value: String*): Self = StObject.set(x, "detectedProviderIds", js.Array(value :_*))
+    inline def setDetectedProviderIdsVarargs(value: String*): Self = StObject.set(x, "detectedProviderIds", js.Array(value :_*))
     
-    @scala.inline
-    def setHasUnidentifiedProvider(value: Boolean): Self = StObject.set(x, "hasUnidentifiedProvider", value.asInstanceOf[js.Any])
+    inline def setHasUnidentifiedProvider(value: Boolean): Self = StObject.set(x, "hasUnidentifiedProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasUnidentifiedProviderUndefined: Self = StObject.set(x, "hasUnidentifiedProvider", js.undefined)
+    inline def setHasUnidentifiedProviderUndefined: Self = StObject.set(x, "hasUnidentifiedProvider", js.undefined)
   }
 }

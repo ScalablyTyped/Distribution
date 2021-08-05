@@ -21,31 +21,23 @@ trait CollectionInsertOneOptions
 }
 object CollectionInsertOneOptions {
   
-  @scala.inline
-  def apply(): CollectionInsertOneOptions = {
+  inline def apply(): CollectionInsertOneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionInsertOneOptions]
   }
   
-  @scala.inline
-  implicit class CollectionInsertOneOptionsMutableBuilder[Self <: CollectionInsertOneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionInsertOneOptions](x: Self) {
     
-    @scala.inline
-    def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
+    inline def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
+    inline def setBypassDocumentValidationUndefined: Self = StObject.set(x, "bypassDocumentValidation", js.undefined)
     
-    @scala.inline
-    def setForceServerObjectId(value: Boolean): Self = StObject.set(x, "forceServerObjectId", value.asInstanceOf[js.Any])
+    inline def setForceServerObjectId(value: Boolean): Self = StObject.set(x, "forceServerObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceServerObjectIdUndefined: Self = StObject.set(x, "forceServerObjectId", js.undefined)
+    inline def setForceServerObjectIdUndefined: Self = StObject.set(x, "forceServerObjectId", js.undefined)
     
-    @scala.inline
-    def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
+    inline def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
+    inline def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
   }
 }

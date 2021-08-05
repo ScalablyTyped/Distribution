@@ -16,17 +16,14 @@ object IO {
   }
   object CloseRequest {
     
-    @scala.inline
-    def apply(handle: StreamHandle): CloseRequest = {
+    inline def apply(handle: StreamHandle): CloseRequest = {
       val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloseRequest]
     }
     
-    @scala.inline
-    implicit class CloseRequestMutableBuilder[Self <: CloseRequest] (val x: Self) extends AnyVal {
+    extension [Self <: CloseRequest](x: Self) {
       
-      @scala.inline
-      def setHandle(value: StreamHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: StreamHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,29 +47,22 @@ object IO {
   }
   object ReadRequest {
     
-    @scala.inline
-    def apply(handle: StreamHandle): ReadRequest = {
+    inline def apply(handle: StreamHandle): ReadRequest = {
       val __obj = js.Dynamic.literal(handle = handle.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadRequest]
     }
     
-    @scala.inline
-    implicit class ReadRequestMutableBuilder[Self <: ReadRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ReadRequest](x: Self) {
       
-      @scala.inline
-      def setHandle(value: StreamHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: StreamHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: integer): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -95,26 +85,20 @@ object IO {
   }
   object ReadResponse {
     
-    @scala.inline
-    def apply(data: String, eof: Boolean): ReadResponse = {
+    inline def apply(data: String, eof: Boolean): ReadResponse = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], eof = eof.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadResponse]
     }
     
-    @scala.inline
-    implicit class ReadResponseMutableBuilder[Self <: ReadResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ReadResponse](x: Self) {
       
-      @scala.inline
-      def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
+      inline def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64EncodedUndefined: Self = StObject.set(x, "base64Encoded", js.undefined)
+      inline def setBase64EncodedUndefined: Self = StObject.set(x, "base64Encoded", js.undefined)
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEof(value: Boolean): Self = StObject.set(x, "eof", value.asInstanceOf[js.Any])
+      inline def setEof(value: Boolean): Self = StObject.set(x, "eof", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,17 +111,14 @@ object IO {
   }
   object ResolveBlobRequest {
     
-    @scala.inline
-    def apply(objectId: RemoteObjectId): ResolveBlobRequest = {
+    inline def apply(objectId: RemoteObjectId): ResolveBlobRequest = {
       val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveBlobRequest]
     }
     
-    @scala.inline
-    implicit class ResolveBlobRequestMutableBuilder[Self <: ResolveBlobRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveBlobRequest](x: Self) {
       
-      @scala.inline
-      def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+      inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,17 +131,14 @@ object IO {
   }
   object ResolveBlobResponse {
     
-    @scala.inline
-    def apply(uuid: String): ResolveBlobResponse = {
+    inline def apply(uuid: String): ResolveBlobResponse = {
       val __obj = js.Dynamic.literal(uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveBlobResponse]
     }
     
-    @scala.inline
-    implicit class ResolveBlobResponseMutableBuilder[Self <: ResolveBlobResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveBlobResponse](x: Self) {
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   

@@ -29,31 +29,23 @@ trait CreateWorkflowDataProperties extends StObject {
 }
 object CreateWorkflowDataProperties {
   
-  @scala.inline
-  def apply(): CreateWorkflowDataProperties = {
+  inline def apply(): CreateWorkflowDataProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateWorkflowDataProperties]
   }
   
-  @scala.inline
-  implicit class CreateWorkflowDataPropertiesMutableBuilder[Self <: CreateWorkflowDataProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorkflowDataProperties](x: Self) {
     
-    @scala.inline
-    def setCreationInfo(value: CreationInfo): Self = StObject.set(x, "creationInfo", value.asInstanceOf[js.Any])
+    inline def setCreationInfo(value: CreationInfo): Self = StObject.set(x, "creationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationInfoUndefined: Self = StObject.set(x, "creationInfo", js.undefined)
+    inline def setCreationInfoUndefined: Self = StObject.set(x, "creationInfo", js.undefined)
     
-    @scala.inline
-    def setEdits(value: EditsProperties): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
+    inline def setEdits(value: EditsProperties): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditsUndefined: Self = StObject.set(x, "edits", js.undefined)
+    inline def setEditsUndefined: Self = StObject.set(x, "edits", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: EditorViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: EditorViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

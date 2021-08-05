@@ -20,10 +20,8 @@ object stylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: SdkConfig): StylesService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StylesService]
-  @scala.inline
-  def default(config: typings.mapboxMapboxSdk.mod.default): StylesService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StylesService]
+  inline def default(config: SdkConfig): StylesService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StylesService]
+  inline def default(config: typings.mapboxMapboxSdk.mod.default): StylesService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StylesService]
   
   trait Style extends StObject {
     
@@ -77,8 +75,7 @@ object stylesMod {
   }
   object Style {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created: String,
       draft: Boolean,
       glyphs: String,
@@ -97,50 +94,35 @@ object stylesMod {
       __obj.asInstanceOf[Style]
     }
     
-    @scala.inline
-    implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+    extension [Self <: Style](x: Self) {
       
-      @scala.inline
-      def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
+      inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlyphs(value: String): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
+      inline def setGlyphs(value: String): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSources(value: js.Any): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Any): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSprite(value: String): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
+      inline def setSprite(value: String): Self = StObject.set(x, "sprite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+      inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,8 +214,7 @@ object stylesMod {
   }
   object StylesService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createStyle: typings.mapboxMapboxSdk.anon.Style => MapiRequest,
       deleteStyle: typings.mapboxMapboxSdk.anon.Style => MapiRequest,
       deleteStyleIcon: IconId => Unit,
@@ -249,38 +230,27 @@ object stylesMod {
       __obj.asInstanceOf[StylesService]
     }
     
-    @scala.inline
-    implicit class StylesServiceMutableBuilder[Self <: StylesService] (val x: Self) extends AnyVal {
+    extension [Self <: StylesService](x: Self) {
       
-      @scala.inline
-      def setCreateStyle(value: typings.mapboxMapboxSdk.anon.Style => MapiRequest): Self = StObject.set(x, "createStyle", js.Any.fromFunction1(value))
+      inline def setCreateStyle(value: typings.mapboxMapboxSdk.anon.Style => MapiRequest): Self = StObject.set(x, "createStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteStyle(value: typings.mapboxMapboxSdk.anon.Style => MapiRequest): Self = StObject.set(x, "deleteStyle", js.Any.fromFunction1(value))
+      inline def setDeleteStyle(value: typings.mapboxMapboxSdk.anon.Style => MapiRequest): Self = StObject.set(x, "deleteStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteStyleIcon(value: IconId => Unit): Self = StObject.set(x, "deleteStyleIcon", js.Any.fromFunction1(value))
+      inline def setDeleteStyleIcon(value: IconId => Unit): Self = StObject.set(x, "deleteStyleIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEmbeddableHtml(value: Config => MapiRequest): Self = StObject.set(x, "getEmbeddableHtml", js.Any.fromFunction1(value))
+      inline def setGetEmbeddableHtml(value: Config => MapiRequest): Self = StObject.set(x, "getEmbeddableHtml", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFontGlyphRange(value: End => MapiRequest): Self = StObject.set(x, "getFontGlyphRange", js.Any.fromFunction1(value))
+      inline def setGetFontGlyphRange(value: End => MapiRequest): Self = StObject.set(x, "getFontGlyphRange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStyle(value: OwnerId => MapiRequest): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
+      inline def setGetStyle(value: OwnerId => MapiRequest): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStyleSprite(value: Format => MapiRequest): Self = StObject.set(x, "getStyleSprite", js.Any.fromFunction1(value))
+      inline def setGetStyleSprite(value: Format => MapiRequest): Self = StObject.set(x, "getStyleSprite", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListStyles(value: Start => MapiRequest): Self = StObject.set(x, "listStyles", js.Any.fromFunction1(value))
+      inline def setListStyles(value: Start => MapiRequest): Self = StObject.set(x, "listStyles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPutStyleIcon(value: File => MapiRequest): Self = StObject.set(x, "putStyleIcon", js.Any.fromFunction1(value))
+      inline def setPutStyleIcon(value: File => MapiRequest): Self = StObject.set(x, "putStyleIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateStyle(value: LastKnownModification => Unit): Self = StObject.set(x, "updateStyle", js.Any.fromFunction1(value))
+      inline def setUpdateStyle(value: LastKnownModification => Unit): Self = StObject.set(x, "updateStyle", js.Any.fromFunction1(value))
     }
   }
 }

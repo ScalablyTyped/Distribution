@@ -19,7 +19,7 @@ object byeMod {
     def accept(): js.Promise[Unit] = js.native
     def accept(options: ResponseOptions): js.Promise[Unit] = js.native
     
-    var incomingByeRequest: js.Any = js.native
+    /* private */ var incomingByeRequest: js.Any = js.native
     
     /** Reject the request. */
     def reject(): js.Promise[Unit] = js.native

@@ -19,28 +19,21 @@ trait SchemaCustomGroup extends StObject {
 }
 object SchemaCustomGroup {
   
-  @scala.inline
-  def apply(): SchemaCustomGroup = {
+  inline def apply(): SchemaCustomGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomGroup]
   }
   
-  @scala.inline
-  implicit class SchemaCustomGroupMutableBuilder[Self <: SchemaCustomGroup] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomGroup](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Array[SchemaCustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[SchemaCustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: SchemaCustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: SchemaCustomAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

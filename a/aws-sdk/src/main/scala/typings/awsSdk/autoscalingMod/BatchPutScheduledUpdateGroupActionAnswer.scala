@@ -13,22 +13,17 @@ trait BatchPutScheduledUpdateGroupActionAnswer extends StObject {
 }
 object BatchPutScheduledUpdateGroupActionAnswer {
   
-  @scala.inline
-  def apply(): BatchPutScheduledUpdateGroupActionAnswer = {
+  inline def apply(): BatchPutScheduledUpdateGroupActionAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchPutScheduledUpdateGroupActionAnswer]
   }
   
-  @scala.inline
-  implicit class BatchPutScheduledUpdateGroupActionAnswerMutableBuilder[Self <: BatchPutScheduledUpdateGroupActionAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPutScheduledUpdateGroupActionAnswer](x: Self) {
     
-    @scala.inline
-    def setFailedScheduledUpdateGroupActions(value: FailedScheduledUpdateGroupActionRequests): Self = StObject.set(x, "FailedScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
+    inline def setFailedScheduledUpdateGroupActions(value: FailedScheduledUpdateGroupActionRequests): Self = StObject.set(x, "FailedScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedScheduledUpdateGroupActionsUndefined: Self = StObject.set(x, "FailedScheduledUpdateGroupActions", js.undefined)
+    inline def setFailedScheduledUpdateGroupActionsUndefined: Self = StObject.set(x, "FailedScheduledUpdateGroupActions", js.undefined)
     
-    @scala.inline
-    def setFailedScheduledUpdateGroupActionsVarargs(value: FailedScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "FailedScheduledUpdateGroupActions", js.Array(value :_*))
+    inline def setFailedScheduledUpdateGroupActionsVarargs(value: FailedScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "FailedScheduledUpdateGroupActions", js.Array(value :_*))
   }
 }

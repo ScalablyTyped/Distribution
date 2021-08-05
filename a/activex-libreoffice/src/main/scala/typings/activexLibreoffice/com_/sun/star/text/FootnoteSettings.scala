@@ -65,8 +65,7 @@ trait FootnoteSettings extends StObject {
 }
 object FootnoteSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AnchorCharStyleName: String,
     BeginNotice: String,
     CharStyleName: String,
@@ -84,43 +83,30 @@ object FootnoteSettings {
     __obj.asInstanceOf[FootnoteSettings]
   }
   
-  @scala.inline
-  implicit class FootnoteSettingsMutableBuilder[Self <: FootnoteSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FootnoteSettings](x: Self) {
     
-    @scala.inline
-    def setAnchorCharStyleName(value: String): Self = StObject.set(x, "AnchorCharStyleName", value.asInstanceOf[js.Any])
+    inline def setAnchorCharStyleName(value: String): Self = StObject.set(x, "AnchorCharStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginNotice(value: String): Self = StObject.set(x, "BeginNotice", value.asInstanceOf[js.Any])
+    inline def setBeginNotice(value: String): Self = StObject.set(x, "BeginNotice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharStyleName(value: String): Self = StObject.set(x, "CharStyleName", value.asInstanceOf[js.Any])
+    inline def setCharStyleName(value: String): Self = StObject.set(x, "CharStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndNotice(value: String): Self = StObject.set(x, "EndNotice", value.asInstanceOf[js.Any])
+    inline def setEndNotice(value: String): Self = StObject.set(x, "EndNotice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteCounting(value: Double): Self = StObject.set(x, "FootnoteCounting", value.asInstanceOf[js.Any])
+    inline def setFootnoteCounting(value: Double): Self = StObject.set(x, "FootnoteCounting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
+    inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageStyleName(value: String): Self = StObject.set(x, "PageStyleName", value.asInstanceOf[js.Any])
+    inline def setPageStyleName(value: String): Self = StObject.set(x, "PageStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParaStyleName(value: String): Self = StObject.set(x, "ParaStyleName", value.asInstanceOf[js.Any])
+    inline def setParaStyleName(value: String): Self = StObject.set(x, "ParaStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionEndOfDoc(value: Boolean): Self = StObject.set(x, "PositionEndOfDoc", value.asInstanceOf[js.Any])
+    inline def setPositionEndOfDoc(value: Boolean): Self = StObject.set(x, "PositionEndOfDoc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAt(value: Double): Self = StObject.set(x, "StartAt", value.asInstanceOf[js.Any])
+    inline def setStartAt(value: Double): Self = StObject.set(x, "StartAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
   }
 }

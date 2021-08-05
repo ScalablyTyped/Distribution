@@ -73,13 +73,13 @@ object bridgeMod {
     
     def appService: js.UndefOr[AppService] = js.native
     
-    var appServiceBot: js.Any = js.native
+    /* private */ var appServiceBot: js.Any = js.native
     
-    var appservice: js.Any = js.native
+    /* private */ var appservice: js.Any = js.native
     
-    var botClient: js.Any = js.native
+    /* private */ var botClient: js.Any = js.native
     
-    var botIntent: js.Any = js.native
+    /* private */ var botIntent: js.Any = js.native
     
     def botUserId: String = js.native
     
@@ -97,7 +97,7 @@ object bridgeMod {
     
     def checkHomeserverSupport(): js.Promise[Unit] = js.native
     
-    var clientFactory: js.Any = js.native
+    /* private */ var clientFactory: js.Any = js.native
     
     /**
       * Close the appservice HTTP listener, and clear all timeouts.
@@ -108,20 +108,20 @@ object bridgeMod {
     /**
       * Apply any customisations required on the appService object.
       */
-    var customiseAppservice: js.Any = js.native
+    /* private */ var customiseAppservice: js.Any = js.native
     
-    var customiseAppserviceThirdPartyLookup: js.Any = js.native
+    /* private */ var customiseAppserviceThirdPartyLookup: js.Any = js.native
     
-    var eeEventBroker: js.Any = js.native
+    /* private */ var eeEventBroker: js.Any = js.native
     
-    var eventStore: js.Any = js.native
+    /* private */ var eventStore: js.Any = js.native
     
     /**
       * Get the AS bot instance.
       */
     def getBot(): AppServiceBot = js.native
     
-    var getBridgeContext: js.Any = js.native
+    /* private */ var getBridgeContext: js.Any = js.native
     
     /**
       * Retrieve the matrix client factory used when sending matrix requests.
@@ -157,7 +157,7 @@ object bridgeMod {
     def getIntentFromLocalpart(localpart: String): Intent = js.native
     def getIntentFromLocalpart(localpart: String, request: Request[js.Any]): Intent = js.native
     
-    var getPowerLevelEntry: js.Any = js.native
+    /* private */ var getPowerLevelEntry: js.Any = js.native
     
     /**
       * Returns a PrometheusMetrics instance stored on the bridge, creating it first
@@ -189,20 +189,20 @@ object bridgeMod {
       * Returns a regex matching all users of the bridge.
       * @return Super regex composed of all user regexes.
       */
-    var getUserRegex: js.Any = js.native
+    /* private */ var getUserRegex: js.Any = js.native
     
     /**
       * Retrieve the connected user store instance.
       */
     def getUserStore(): js.UndefOr[UserBridgeStore] = js.native
     
-    var handleEventError: js.Any = js.native
+    /* private */ var handleEventError: js.Any = js.native
     
-    var intentBackingStore: js.Any = js.native
+    /* private */ var intentBackingStore: js.Any = js.native
     
-    var intentLastAccessedTimeout: js.Any = js.native
+    /* private */ var intentLastAccessedTimeout: js.Any = js.native
     
-    var intents: js.Any = js.native
+    /* private */ var intents: js.Any = js.native
     
     /**
       * Restricts the promise according to the bridges `perRequest` setting.
@@ -213,28 +213,28 @@ object bridgeMod {
       * `perRequest` disabled:
       *     Returns the promise unchanged.
       */
-    var limited: js.Any = js.native
+    /* private */ var limited: js.Any = js.native
     
     /**
       * Load the user and room databases. Access them via getUserStore() and getRoomStore().
       */
     def loadDatabases(): js.Promise[Unit] = js.native
     
-    var membershipCache: js.Any = js.native
+    /* private */ var membershipCache: js.Any = js.native
     
-    var metrics: js.Any = js.native
+    /* private */ var metrics: js.Any = js.native
     
-    var onAliasQuery: js.Any = js.native
+    /* private */ var onAliasQuery: js.Any = js.native
     
-    var onConsume: js.Any = js.native
+    /* private */ var onConsume: js.Any = js.native
     
-    var onEphemeralEvent: js.Any = js.native
+    /* private */ var onEphemeralEvent: js.Any = js.native
     
-    var onEvent: js.Any = js.native
+    /* private */ var onEvent: js.Any = js.native
     
-    val onLog: js.Any = js.native
+    /* private */ val onLog: js.Any = js.native
     
-    var onUserQuery: js.Any = js.native
+    /* private */ var onUserQuery: js.Any = js.native
     
     val opts: VettedBridgeOpts = js.native
     
@@ -249,9 +249,9 @@ object bridgeMod {
     def pingAppserviceRoute(roomId: String): js.Promise[Double] = js.native
     def pingAppserviceRoute(roomId: String, timeoutMs: Double): js.Promise[Double] = js.native
     
-    var powerlevelMap: js.Any = js.native
+    /* private */ var powerlevelMap: js.Any = js.native
     
-    var prevRequestPromise: js.Any = js.native
+    /* private */ var prevRequestPromise: js.Any = js.native
     
     /**
       * Provision a user on the homeserver.
@@ -262,7 +262,7 @@ object bridgeMod {
     def provisionUser(matrixUser: MatrixUser): js.Promise[Unit] = js.native
     def provisionUser(matrixUser: MatrixUser, provisionedUser: Name): js.Promise[Unit] = js.native
     
-    var queue: js.Any = js.native
+    /* private */ var queue: js.Any = js.native
     
     /**
       * A convenient shortcut to calling registerBridgeGauges() on the
@@ -286,7 +286,7 @@ object bridgeMod {
       */
     def registerBridgeGauges(counterFunc: js.Function0[BridgeGaugesCounts]): Unit = js.native
     
-    var registration: js.Any = js.native
+    /* private */ var registration: js.Any = js.native
     
     /**
       * Check a express Request to see if it's correctly
@@ -296,13 +296,13 @@ object bridgeMod {
       */
     def requestCheckToken(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Boolean = js.native
     
-    var requestFactory: js.Any = js.native
+    /* private */ var requestFactory: js.Any = js.native
     
-    var roomLinkValidator: js.Any = js.native
+    /* private */ var roomLinkValidator: js.Any = js.native
     
-    var roomStore: js.Any = js.native
+    /* private */ var roomStore: js.Any = js.native
     
-    var roomUpgradeHandler: js.Any = js.native
+    /* private */ var roomUpgradeHandler: js.Any = js.native
     
     /**
       * Run the bridge (start listening)
@@ -322,15 +322,15 @@ object bridgeMod {
     def run[T](port: Double, config: T, appServiceInstance: AppService, hostname: String, backlog: Double): js.Promise[Unit] = js.native
     def run[T](port: Double, config: T, appServiceInstance: AppService, hostname: Unit, backlog: Double): js.Promise[Unit] = js.native
     
-    var selfPingDeferred: js.Any = js.native
+    /* private */ var selfPingDeferred: js.Any = js.native
     
-    var setPowerLevelEntry: js.Any = js.native
+    /* private */ var setPowerLevelEntry: js.Any = js.native
     
-    var setupIntentCulling: js.Any = js.native
+    /* private */ var setupIntentCulling: js.Any = js.native
     
-    var updateIntents: js.Any = js.native
+    /* private */ var updateIntents: js.Any = js.native
     
-    var userStore: js.Any = js.native
+    /* private */ var userStore: js.Any = js.native
   }
   
   @js.native
@@ -508,8 +508,7 @@ object bridgeMod {
   }
   object BridgeOpts {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       controller: BridgeController,
       domain: String,
       homeserverUrl: String,
@@ -519,122 +518,83 @@ object bridgeMod {
       __obj.asInstanceOf[BridgeOpts]
     }
     
-    @scala.inline
-    implicit class BridgeOptsMutableBuilder[Self <: BridgeOpts] (val x: Self) extends AnyVal {
+    extension [Self <: BridgeOpts](x: Self) {
       
-      @scala.inline
-      def setAuthenticateThirdpartyEndpoints(value: Boolean): Self = StObject.set(x, "authenticateThirdpartyEndpoints", value.asInstanceOf[js.Any])
+      inline def setAuthenticateThirdpartyEndpoints(value: Boolean): Self = StObject.set(x, "authenticateThirdpartyEndpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticateThirdpartyEndpointsUndefined: Self = StObject.set(x, "authenticateThirdpartyEndpoints", js.undefined)
+      inline def setAuthenticateThirdpartyEndpointsUndefined: Self = StObject.set(x, "authenticateThirdpartyEndpoints", js.undefined)
       
-      @scala.inline
-      def setBridgeEncryption(value: HomeserverUrl): Self = StObject.set(x, "bridgeEncryption", value.asInstanceOf[js.Any])
+      inline def setBridgeEncryption(value: HomeserverUrl): Self = StObject.set(x, "bridgeEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBridgeEncryptionUndefined: Self = StObject.set(x, "bridgeEncryption", js.undefined)
+      inline def setBridgeEncryptionUndefined: Self = StObject.set(x, "bridgeEncryption", js.undefined)
       
-      @scala.inline
-      def setClientFactory(value: ClientFactory): Self = StObject.set(x, "clientFactory", value.asInstanceOf[js.Any])
+      inline def setClientFactory(value: ClientFactory): Self = StObject.set(x, "clientFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientFactoryUndefined: Self = StObject.set(x, "clientFactory", js.undefined)
+      inline def setClientFactoryUndefined: Self = StObject.set(x, "clientFactory", js.undefined)
       
-      @scala.inline
-      def setController(value: BridgeController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: BridgeController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableContext(value: Boolean): Self = StObject.set(x, "disableContext", value.asInstanceOf[js.Any])
+      inline def setDisableContext(value: Boolean): Self = StObject.set(x, "disableContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableContextUndefined: Self = StObject.set(x, "disableContext", js.undefined)
+      inline def setDisableContextUndefined: Self = StObject.set(x, "disableContext", js.undefined)
       
-      @scala.inline
-      def setDisableStores(value: Boolean): Self = StObject.set(x, "disableStores", value.asInstanceOf[js.Any])
+      inline def setDisableStores(value: Boolean): Self = StObject.set(x, "disableStores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStoresUndefined: Self = StObject.set(x, "disableStores", js.undefined)
+      inline def setDisableStoresUndefined: Self = StObject.set(x, "disableStores", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUserIds(value: Boolean): Self = StObject.set(x, "escapeUserIds", value.asInstanceOf[js.Any])
+      inline def setEscapeUserIds(value: Boolean): Self = StObject.set(x, "escapeUserIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUserIdsUndefined: Self = StObject.set(x, "escapeUserIds", js.undefined)
+      inline def setEscapeUserIdsUndefined: Self = StObject.set(x, "escapeUserIds", js.undefined)
       
-      @scala.inline
-      def setEventStore(value: EventBridgeStore | String): Self = StObject.set(x, "eventStore", value.asInstanceOf[js.Any])
+      inline def setEventStore(value: EventBridgeStore | String): Self = StObject.set(x, "eventStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventStoreUndefined: Self = StObject.set(x, "eventStore", js.undefined)
+      inline def setEventStoreUndefined: Self = StObject.set(x, "eventStore", js.undefined)
       
-      @scala.inline
-      def setHomeserverUrl(value: String): Self = StObject.set(x, "homeserverUrl", value.asInstanceOf[js.Any])
+      inline def setHomeserverUrl(value: String): Self = StObject.set(x, "homeserverUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntentOptions(value: Bot): Self = StObject.set(x, "intentOptions", value.asInstanceOf[js.Any])
+      inline def setIntentOptions(value: Bot): Self = StObject.set(x, "intentOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntentOptionsUndefined: Self = StObject.set(x, "intentOptions", js.undefined)
+      inline def setIntentOptionsUndefined: Self = StObject.set(x, "intentOptions", js.undefined)
       
-      @scala.inline
-      def setLogRequestOutcome(value: Boolean): Self = StObject.set(x, "logRequestOutcome", value.asInstanceOf[js.Any])
+      inline def setLogRequestOutcome(value: Boolean): Self = StObject.set(x, "logRequestOutcome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogRequestOutcomeUndefined: Self = StObject.set(x, "logRequestOutcome", js.undefined)
+      inline def setLogRequestOutcomeUndefined: Self = StObject.set(x, "logRequestOutcome", js.undefined)
       
-      @scala.inline
-      def setMembershipCache(value: MembershipCache): Self = StObject.set(x, "membershipCache", value.asInstanceOf[js.Any])
+      inline def setMembershipCache(value: MembershipCache): Self = StObject.set(x, "membershipCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembershipCacheUndefined: Self = StObject.set(x, "membershipCache", js.undefined)
+      inline def setMembershipCacheUndefined: Self = StObject.set(x, "membershipCache", js.undefined)
       
-      @scala.inline
-      def setNetworkName(value: String): Self = StObject.set(x, "networkName", value.asInstanceOf[js.Any])
+      inline def setNetworkName(value: String): Self = StObject.set(x, "networkName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkNameUndefined: Self = StObject.set(x, "networkName", js.undefined)
+      inline def setNetworkNameUndefined: Self = StObject.set(x, "networkName", js.undefined)
       
-      @scala.inline
-      def setQueue(value: PerRequest): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: PerRequest): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+      inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
       
-      @scala.inline
-      def setRegistration(value: AppServiceRegistration | String): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
+      inline def setRegistration(value: AppServiceRegistration | String): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomLinkValidation(value: RuleFile): Self = StObject.set(x, "roomLinkValidation", value.asInstanceOf[js.Any])
+      inline def setRoomLinkValidation(value: RuleFile): Self = StObject.set(x, "roomLinkValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomLinkValidationUndefined: Self = StObject.set(x, "roomLinkValidation", js.undefined)
+      inline def setRoomLinkValidationUndefined: Self = StObject.set(x, "roomLinkValidation", js.undefined)
       
-      @scala.inline
-      def setRoomStore(value: RoomBridgeStore | String): Self = StObject.set(x, "roomStore", value.asInstanceOf[js.Any])
+      inline def setRoomStore(value: RoomBridgeStore | String): Self = StObject.set(x, "roomStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomStoreUndefined: Self = StObject.set(x, "roomStore", js.undefined)
+      inline def setRoomStoreUndefined: Self = StObject.set(x, "roomStore", js.undefined)
       
-      @scala.inline
-      def setRoomUpgradeOpts(value: RoomUpgradeHandlerOpts): Self = StObject.set(x, "roomUpgradeOpts", value.asInstanceOf[js.Any])
+      inline def setRoomUpgradeOpts(value: RoomUpgradeHandlerOpts): Self = StObject.set(x, "roomUpgradeOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomUpgradeOptsUndefined: Self = StObject.set(x, "roomUpgradeOpts", js.undefined)
+      inline def setRoomUpgradeOptsUndefined: Self = StObject.set(x, "roomUpgradeOpts", js.undefined)
       
-      @scala.inline
-      def setSuppressEcho(value: Boolean): Self = StObject.set(x, "suppressEcho", value.asInstanceOf[js.Any])
+      inline def setSuppressEcho(value: Boolean): Self = StObject.set(x, "suppressEcho", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressEchoUndefined: Self = StObject.set(x, "suppressEcho", js.undefined)
+      inline def setSuppressEchoUndefined: Self = StObject.set(x, "suppressEcho", js.undefined)
       
-      @scala.inline
-      def setUserStore(value: UserBridgeStore | String): Self = StObject.set(x, "userStore", value.asInstanceOf[js.Any])
+      inline def setUserStore(value: UserBridgeStore | String): Self = StObject.set(x, "userStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserStoreUndefined: Self = StObject.set(x, "userStore", js.undefined)
+      inline def setUserStoreUndefined: Self = StObject.set(x, "userStore", js.undefined)
     }
   }
   
@@ -753,8 +713,7 @@ object bridgeMod {
   }
   object VettedBridgeOpts {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authenticateThirdpartyEndpoints: Boolean,
       controller: BridgeController,
       disableContext: Boolean,
@@ -773,89 +732,61 @@ object bridgeMod {
       __obj.asInstanceOf[VettedBridgeOpts]
     }
     
-    @scala.inline
-    implicit class VettedBridgeOptsMutableBuilder[Self <: VettedBridgeOpts] (val x: Self) extends AnyVal {
+    extension [Self <: VettedBridgeOpts](x: Self) {
       
-      @scala.inline
-      def setAuthenticateThirdpartyEndpoints(value: Boolean): Self = StObject.set(x, "authenticateThirdpartyEndpoints", value.asInstanceOf[js.Any])
+      inline def setAuthenticateThirdpartyEndpoints(value: Boolean): Self = StObject.set(x, "authenticateThirdpartyEndpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBridgeEncryption(value: HomeserverUrl): Self = StObject.set(x, "bridgeEncryption", value.asInstanceOf[js.Any])
+      inline def setBridgeEncryption(value: HomeserverUrl): Self = StObject.set(x, "bridgeEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBridgeEncryptionUndefined: Self = StObject.set(x, "bridgeEncryption", js.undefined)
+      inline def setBridgeEncryptionUndefined: Self = StObject.set(x, "bridgeEncryption", js.undefined)
       
-      @scala.inline
-      def setClientFactory(value: ClientFactory): Self = StObject.set(x, "clientFactory", value.asInstanceOf[js.Any])
+      inline def setClientFactory(value: ClientFactory): Self = StObject.set(x, "clientFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientFactoryUndefined: Self = StObject.set(x, "clientFactory", js.undefined)
+      inline def setClientFactoryUndefined: Self = StObject.set(x, "clientFactory", js.undefined)
       
-      @scala.inline
-      def setController(value: BridgeController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: BridgeController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableContext(value: Boolean): Self = StObject.set(x, "disableContext", value.asInstanceOf[js.Any])
+      inline def setDisableContext(value: Boolean): Self = StObject.set(x, "disableContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStores(value: Boolean): Self = StObject.set(x, "disableStores", value.asInstanceOf[js.Any])
+      inline def setDisableStores(value: Boolean): Self = StObject.set(x, "disableStores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUserIds(value: Boolean): Self = StObject.set(x, "escapeUserIds", value.asInstanceOf[js.Any])
+      inline def setEscapeUserIds(value: Boolean): Self = StObject.set(x, "escapeUserIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeUserIdsUndefined: Self = StObject.set(x, "escapeUserIds", js.undefined)
+      inline def setEscapeUserIdsUndefined: Self = StObject.set(x, "escapeUserIds", js.undefined)
       
-      @scala.inline
-      def setEventStore(value: EventBridgeStore | String): Self = StObject.set(x, "eventStore", value.asInstanceOf[js.Any])
+      inline def setEventStore(value: EventBridgeStore | String): Self = StObject.set(x, "eventStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventStoreUndefined: Self = StObject.set(x, "eventStore", js.undefined)
+      inline def setEventStoreUndefined: Self = StObject.set(x, "eventStore", js.undefined)
       
-      @scala.inline
-      def setHomeserverUrl(value: String): Self = StObject.set(x, "homeserverUrl", value.asInstanceOf[js.Any])
+      inline def setHomeserverUrl(value: String): Self = StObject.set(x, "homeserverUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntentOptions(value: Bot): Self = StObject.set(x, "intentOptions", value.asInstanceOf[js.Any])
+      inline def setIntentOptions(value: Bot): Self = StObject.set(x, "intentOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogRequestOutcome(value: Boolean): Self = StObject.set(x, "logRequestOutcome", value.asInstanceOf[js.Any])
+      inline def setLogRequestOutcome(value: Boolean): Self = StObject.set(x, "logRequestOutcome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkName(value: String): Self = StObject.set(x, "networkName", value.asInstanceOf[js.Any])
+      inline def setNetworkName(value: String): Self = StObject.set(x, "networkName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkNameUndefined: Self = StObject.set(x, "networkName", js.undefined)
+      inline def setNetworkNameUndefined: Self = StObject.set(x, "networkName", js.undefined)
       
-      @scala.inline
-      def setQueue(value: Type): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: Type): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistration(value: AppServiceRegistration | String): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
+      inline def setRegistration(value: AppServiceRegistration | String): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomLinkValidation(value: RuleFile): Self = StObject.set(x, "roomLinkValidation", value.asInstanceOf[js.Any])
+      inline def setRoomLinkValidation(value: RuleFile): Self = StObject.set(x, "roomLinkValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomLinkValidationUndefined: Self = StObject.set(x, "roomLinkValidation", js.undefined)
+      inline def setRoomLinkValidationUndefined: Self = StObject.set(x, "roomLinkValidation", js.undefined)
       
-      @scala.inline
-      def setRoomStore(value: RoomBridgeStore | String): Self = StObject.set(x, "roomStore", value.asInstanceOf[js.Any])
+      inline def setRoomStore(value: RoomBridgeStore | String): Self = StObject.set(x, "roomStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomUpgradeOpts(value: RoomUpgradeHandlerOpts): Self = StObject.set(x, "roomUpgradeOpts", value.asInstanceOf[js.Any])
+      inline def setRoomUpgradeOpts(value: RoomUpgradeHandlerOpts): Self = StObject.set(x, "roomUpgradeOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomUpgradeOptsUndefined: Self = StObject.set(x, "roomUpgradeOpts", js.undefined)
+      inline def setRoomUpgradeOptsUndefined: Self = StObject.set(x, "roomUpgradeOpts", js.undefined)
       
-      @scala.inline
-      def setSuppressEcho(value: Boolean): Self = StObject.set(x, "suppressEcho", value.asInstanceOf[js.Any])
+      inline def setSuppressEcho(value: Boolean): Self = StObject.set(x, "suppressEcho", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserStore(value: UserBridgeStore | String): Self = StObject.set(x, "userStore", value.asInstanceOf[js.Any])
+      inline def setUserStore(value: UserBridgeStore | String): Self = StObject.set(x, "userStore", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -32,34 +32,25 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(networkType: NetworkType): Filter = {
+  inline def apply(networkType: NetworkType): Filter = {
     val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setConfigured(value: Boolean): Self = StObject.set(x, "configured", value.asInstanceOf[js.Any])
+    inline def setConfigured(value: Boolean): Self = StObject.set(x, "configured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguredUndefined: Self = StObject.set(x, "configured", js.undefined)
+    inline def setConfiguredUndefined: Self = StObject.set(x, "configured", js.undefined)
     
-    @scala.inline
-    def setLimit(value: integer): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: integer): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setNetworkType(value: NetworkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    inline def setNetworkType(value: NetworkType): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -35,29 +35,22 @@ object mdns {
   }
   object Service {
     
-    @scala.inline
-    def apply(ipAddress: String, serviceData: js.Array[String], serviceHostPort: String, serviceName: String): Service = {
+    inline def apply(ipAddress: String, serviceData: js.Array[String], serviceHostPort: String, serviceName: String): Service = {
       val __obj = js.Dynamic.literal(ipAddress = ipAddress.asInstanceOf[js.Any], serviceData = serviceData.asInstanceOf[js.Any], serviceHostPort = serviceHostPort.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any])
       __obj.asInstanceOf[Service]
     }
     
-    @scala.inline
-    implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+    extension [Self <: Service](x: Self) {
       
-      @scala.inline
-      def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceData(value: js.Array[String]): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
+      inline def setServiceData(value: js.Array[String]): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceDataVarargs(value: String*): Self = StObject.set(x, "serviceData", js.Array(value :_*))
+      inline def setServiceDataVarargs(value: String*): Self = StObject.set(x, "serviceData", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceHostPort(value: String): Self = StObject.set(x, "serviceHostPort", value.asInstanceOf[js.Any])
+      inline def setServiceHostPort(value: String): Self = StObject.set(x, "serviceHostPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,17 +65,14 @@ object mdns {
   }
   object ServiceTypes {
     
-    @scala.inline
-    def apply(serviceType: String): ServiceTypes = {
+    inline def apply(serviceType: String): ServiceTypes = {
       val __obj = js.Dynamic.literal(serviceType = serviceType.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceTypes]
     }
     
-    @scala.inline
-    implicit class ServiceTypesMutableBuilder[Self <: ServiceTypes] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceTypes](x: Self) {
       
-      @scala.inline
-      def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+      inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     }
   }
   

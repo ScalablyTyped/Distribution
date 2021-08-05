@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(input: HTMLInputElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(input: HTMLTextAreaElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: HTMLInputElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(input: HTMLTextAreaElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("insert-text-at-cursor", JSImport.Namespace)
   @js.native

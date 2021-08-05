@@ -15,8 +15,7 @@ trait ConfigurationRegistry
      with XFlushable
 object ConfigurationRegistry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     RootKey: XRegistryKey,
     URL: String,
     acquire: () => Unit,

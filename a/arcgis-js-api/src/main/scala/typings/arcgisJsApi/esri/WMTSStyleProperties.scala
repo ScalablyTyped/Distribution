@@ -36,37 +36,27 @@ trait WMTSStyleProperties extends StObject {
 }
 object WMTSStyleProperties {
   
-  @scala.inline
-  def apply(): WMTSStyleProperties = {
+  inline def apply(): WMTSStyleProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WMTSStyleProperties]
   }
   
-  @scala.inline
-  implicit class WMTSStylePropertiesMutableBuilder[Self <: WMTSStyleProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WMTSStyleProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLegendUrl(value: String): Self = StObject.set(x, "legendUrl", value.asInstanceOf[js.Any])
+    inline def setLegendUrl(value: String): Self = StObject.set(x, "legendUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendUrlUndefined: Self = StObject.set(x, "legendUrl", js.undefined)
+    inline def setLegendUrlUndefined: Self = StObject.set(x, "legendUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

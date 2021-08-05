@@ -23,34 +23,25 @@ trait GetPropertiesReturnType extends StObject {
 }
 object GetPropertiesReturnType {
   
-  @scala.inline
-  def apply(result: js.Array[PropertyDescriptor]): GetPropertiesReturnType = {
+  inline def apply(result: js.Array[PropertyDescriptor]): GetPropertiesReturnType = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPropertiesReturnType]
   }
   
-  @scala.inline
-  implicit class GetPropertiesReturnTypeMutableBuilder[Self <: GetPropertiesReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: GetPropertiesReturnType](x: Self) {
     
-    @scala.inline
-    def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
+    inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
+    inline def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
     
-    @scala.inline
-    def setInternalProperties(value: js.Array[InternalPropertyDescriptor]): Self = StObject.set(x, "internalProperties", value.asInstanceOf[js.Any])
+    inline def setInternalProperties(value: js.Array[InternalPropertyDescriptor]): Self = StObject.set(x, "internalProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalPropertiesUndefined: Self = StObject.set(x, "internalProperties", js.undefined)
+    inline def setInternalPropertiesUndefined: Self = StObject.set(x, "internalProperties", js.undefined)
     
-    @scala.inline
-    def setInternalPropertiesVarargs(value: InternalPropertyDescriptor*): Self = StObject.set(x, "internalProperties", js.Array(value :_*))
+    inline def setInternalPropertiesVarargs(value: InternalPropertyDescriptor*): Self = StObject.set(x, "internalProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setResult(value: js.Array[PropertyDescriptor]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[PropertyDescriptor]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: PropertyDescriptor*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: PropertyDescriptor*): Self = StObject.set(x, "result", js.Array(value :_*))
   }
 }

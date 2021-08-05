@@ -18,22 +18,17 @@ trait GetAssessmentReportResponse extends StObject {
 }
 object GetAssessmentReportResponse {
   
-  @scala.inline
-  def apply(status: ReportStatus): GetAssessmentReportResponse = {
+  inline def apply(status: ReportStatus): GetAssessmentReportResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssessmentReportResponse]
   }
   
-  @scala.inline
-  implicit class GetAssessmentReportResponseMutableBuilder[Self <: GetAssessmentReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAssessmentReportResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ReportStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReportStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

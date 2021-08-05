@@ -13,16 +13,13 @@ trait CreateIdentityProviderResponse extends StObject {
 }
 object CreateIdentityProviderResponse {
   
-  @scala.inline
-  def apply(IdentityProvider: IdentityProviderType): CreateIdentityProviderResponse = {
+  inline def apply(IdentityProvider: IdentityProviderType): CreateIdentityProviderResponse = {
     val __obj = js.Dynamic.literal(IdentityProvider = IdentityProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIdentityProviderResponse]
   }
   
-  @scala.inline
-  implicit class CreateIdentityProviderResponseMutableBuilder[Self <: CreateIdentityProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIdentityProviderResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityProvider(value: IdentityProviderType): Self = StObject.set(x, "IdentityProvider", value.asInstanceOf[js.Any])
+    inline def setIdentityProvider(value: IdentityProviderType): Self = StObject.set(x, "IdentityProvider", value.asInstanceOf[js.Any])
   }
 }

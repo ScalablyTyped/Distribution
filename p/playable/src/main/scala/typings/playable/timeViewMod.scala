@@ -19,26 +19,26 @@ object timeViewMod {
   trait TimeView
     extends typings.playable.viewMod.default[ITimeViewStyles] {
     
-    @JSName("_$currentTime")
+    /* private */ @JSName("_$currentTime")
     var _$currentTime: js.Any = js.native
     
-    @JSName("_$durationTime")
+    /* private */ @JSName("_$durationTime")
     var _$durationTime: js.Any = js.native
     
-    @JSName("_$rootElement")
+    /* private */ @JSName("_$rootElement")
     var _$rootElement: js.Any = js.native
     
-    var _current: js.Any = js.native
+    /* private */ var _current: js.Any = js.native
     
-    var _duration: js.Any = js.native
+    /* private */ var _duration: js.Any = js.native
     
-    var _initDOM: js.Any = js.native
+    /* private */ var _initDOM: js.Any = js.native
     
-    var _isBackward: js.Any = js.native
+    /* private */ var _isBackward: js.Any = js.native
     
-    var _updateCurrentTime: js.Any = js.native
+    /* private */ var _updateCurrentTime: js.Any = js.native
     
-    var _updateDurationTime: js.Any = js.native
+    /* private */ var _updateDurationTime: js.Any = js.native
     
     def destroy(): Unit = js.native
     

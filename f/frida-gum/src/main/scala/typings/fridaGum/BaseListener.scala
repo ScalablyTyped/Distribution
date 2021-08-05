@@ -19,19 +19,15 @@ trait BaseListener extends StObject {
 }
 object BaseListener {
   
-  @scala.inline
-  def apply(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit]): BaseListener = {
+  inline def apply(accept: () => js.Promise[SocketConnection], close: () => js.Promise[Unit]): BaseListener = {
     val __obj = js.Dynamic.literal(accept = js.Any.fromFunction0(accept), close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[BaseListener]
   }
   
-  @scala.inline
-  implicit class BaseListenerMutableBuilder[Self <: BaseListener] (val x: Self) extends AnyVal {
+  extension [Self <: BaseListener](x: Self) {
     
-    @scala.inline
-    def setAccept(value: () => js.Promise[SocketConnection]): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
+    inline def setAccept(value: () => js.Promise[SocketConnection]): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

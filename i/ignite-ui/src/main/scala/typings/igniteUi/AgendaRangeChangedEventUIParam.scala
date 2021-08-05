@@ -23,31 +23,23 @@ trait AgendaRangeChangedEventUIParam extends StObject {
 }
 object AgendaRangeChangedEventUIParam {
   
-  @scala.inline
-  def apply(): AgendaRangeChangedEventUIParam = {
+  inline def apply(): AgendaRangeChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AgendaRangeChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class AgendaRangeChangedEventUIParamMutableBuilder[Self <: AgendaRangeChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: AgendaRangeChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDateRangeInterval(value: Double): Self = StObject.set(x, "dateRangeInterval", value.asInstanceOf[js.Any])
+    inline def setDateRangeInterval(value: Double): Self = StObject.set(x, "dateRangeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeIntervalUndefined: Self = StObject.set(x, "dateRangeInterval", js.undefined)
+    inline def setDateRangeIntervalUndefined: Self = StObject.set(x, "dateRangeInterval", js.undefined)
     
-    @scala.inline
-    def setNewAgendaRangeStartDate(value: js.Any): Self = StObject.set(x, "newAgendaRangeStartDate", value.asInstanceOf[js.Any])
+    inline def setNewAgendaRangeStartDate(value: js.Any): Self = StObject.set(x, "newAgendaRangeStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewAgendaRangeStartDateUndefined: Self = StObject.set(x, "newAgendaRangeStartDate", js.undefined)
+    inline def setNewAgendaRangeStartDateUndefined: Self = StObject.set(x, "newAgendaRangeStartDate", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

@@ -32,40 +32,29 @@ trait SchemaGuaranteedFixedPriceTerms extends StObject {
 }
 object SchemaGuaranteedFixedPriceTerms {
   
-  @scala.inline
-  def apply(): SchemaGuaranteedFixedPriceTerms = {
+  inline def apply(): SchemaGuaranteedFixedPriceTerms = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGuaranteedFixedPriceTerms]
   }
   
-  @scala.inline
-  implicit class SchemaGuaranteedFixedPriceTermsMutableBuilder[Self <: SchemaGuaranteedFixedPriceTerms] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGuaranteedFixedPriceTerms](x: Self) {
     
-    @scala.inline
-    def setFixedPrices(value: js.Array[SchemaPricePerBuyer]): Self = StObject.set(x, "fixedPrices", value.asInstanceOf[js.Any])
+    inline def setFixedPrices(value: js.Array[SchemaPricePerBuyer]): Self = StObject.set(x, "fixedPrices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedPricesUndefined: Self = StObject.set(x, "fixedPrices", js.undefined)
+    inline def setFixedPricesUndefined: Self = StObject.set(x, "fixedPrices", js.undefined)
     
-    @scala.inline
-    def setFixedPricesVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "fixedPrices", js.Array(value :_*))
+    inline def setFixedPricesVarargs(value: SchemaPricePerBuyer*): Self = StObject.set(x, "fixedPrices", js.Array(value :_*))
     
-    @scala.inline
-    def setGuaranteedImpressions(value: String): Self = StObject.set(x, "guaranteedImpressions", value.asInstanceOf[js.Any])
+    inline def setGuaranteedImpressions(value: String): Self = StObject.set(x, "guaranteedImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuaranteedImpressionsUndefined: Self = StObject.set(x, "guaranteedImpressions", js.undefined)
+    inline def setGuaranteedImpressionsUndefined: Self = StObject.set(x, "guaranteedImpressions", js.undefined)
     
-    @scala.inline
-    def setGuaranteedLooks(value: String): Self = StObject.set(x, "guaranteedLooks", value.asInstanceOf[js.Any])
+    inline def setGuaranteedLooks(value: String): Self = StObject.set(x, "guaranteedLooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuaranteedLooksUndefined: Self = StObject.set(x, "guaranteedLooks", js.undefined)
+    inline def setGuaranteedLooksUndefined: Self = StObject.set(x, "guaranteedLooks", js.undefined)
     
-    @scala.inline
-    def setMinimumDailyLooks(value: String): Self = StObject.set(x, "minimumDailyLooks", value.asInstanceOf[js.Any])
+    inline def setMinimumDailyLooks(value: String): Self = StObject.set(x, "minimumDailyLooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumDailyLooksUndefined: Self = StObject.set(x, "minimumDailyLooks", js.undefined)
+    inline def setMinimumDailyLooksUndefined: Self = StObject.set(x, "minimumDailyLooks", js.undefined)
   }
 }

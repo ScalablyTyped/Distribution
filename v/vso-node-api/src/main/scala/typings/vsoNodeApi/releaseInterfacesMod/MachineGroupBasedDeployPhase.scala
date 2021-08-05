@@ -12,8 +12,7 @@ trait MachineGroupBasedDeployPhase
 }
 object MachineGroupBasedDeployPhase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deploymentInput: MachineGroupDeploymentInput,
     name: String,
     phaseType: DeployPhaseTypes,
@@ -24,10 +23,8 @@ object MachineGroupBasedDeployPhase {
     __obj.asInstanceOf[MachineGroupBasedDeployPhase]
   }
   
-  @scala.inline
-  implicit class MachineGroupBasedDeployPhaseMutableBuilder[Self <: MachineGroupBasedDeployPhase] (val x: Self) extends AnyVal {
+  extension [Self <: MachineGroupBasedDeployPhase](x: Self) {
     
-    @scala.inline
-    def setDeploymentInput(value: MachineGroupDeploymentInput): Self = StObject.set(x, "deploymentInput", value.asInstanceOf[js.Any])
+    inline def setDeploymentInput(value: MachineGroupDeploymentInput): Self = StObject.set(x, "deploymentInput", value.asInstanceOf[js.Any])
   }
 }

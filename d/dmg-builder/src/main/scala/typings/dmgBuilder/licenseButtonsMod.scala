@@ -11,11 +11,9 @@ object licenseButtonsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLicenseButtons(licenseButtonFiles: js.Array[LicenseButtonsFile], langWithRegion: String, id: Double, name: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseButtons")(licenseButtonFiles.asInstanceOf[js.Any], langWithRegion.asInstanceOf[js.Any], id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getLicenseButtons(licenseButtonFiles: js.Array[LicenseButtonsFile], langWithRegion: String, id: Double, name: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseButtons")(licenseButtonFiles.asInstanceOf[js.Any], langWithRegion.asInstanceOf[js.Any], id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getLicenseButtonsFile(packager: PlatformPackager[js.Any]): js.Promise[js.Array[LicenseButtonsFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseButtonsFile")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LicenseButtonsFile]]]
+  inline def getLicenseButtonsFile(packager: PlatformPackager[js.Any]): js.Promise[js.Array[LicenseButtonsFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLicenseButtonsFile")(packager.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[LicenseButtonsFile]]]
   
   trait LicenseButtonsFile extends StObject {
     
@@ -29,26 +27,20 @@ object licenseButtonsMod {
   }
   object LicenseButtonsFile {
     
-    @scala.inline
-    def apply(file: String, lang: String, langName: String, langWithRegion: String): LicenseButtonsFile = {
+    inline def apply(file: String, lang: String, langName: String, langWithRegion: String): LicenseButtonsFile = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], langName = langName.asInstanceOf[js.Any], langWithRegion = langWithRegion.asInstanceOf[js.Any])
       __obj.asInstanceOf[LicenseButtonsFile]
     }
     
-    @scala.inline
-    implicit class LicenseButtonsFileMutableBuilder[Self <: LicenseButtonsFile] (val x: Self) extends AnyVal {
+    extension [Self <: LicenseButtonsFile](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangName(value: String): Self = StObject.set(x, "langName", value.asInstanceOf[js.Any])
+      inline def setLangName(value: String): Self = StObject.set(x, "langName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangWithRegion(value: String): Self = StObject.set(x, "langWithRegion", value.asInstanceOf[js.Any])
+      inline def setLangWithRegion(value: String): Self = StObject.set(x, "langWithRegion", value.asInstanceOf[js.Any])
     }
   }
 }

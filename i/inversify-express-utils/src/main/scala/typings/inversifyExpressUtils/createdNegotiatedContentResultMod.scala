@@ -18,16 +18,16 @@ object createdNegotiatedContentResultMod {
     def this(location: String, content: T, apiController: BaseHttpController) = this()
     def this(location: URL_, content: T, apiController: BaseHttpController) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var apiController: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var content: js.Any = js.native
     
     /* CompleteClass */
     override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var location: js.Any = js.native
   }
   
@@ -35,16 +35,15 @@ object createdNegotiatedContentResultMod {
     extends StObject
        with IHttpActionResult {
     
-    var apiController: js.Any
+    /* private */ var apiController: js.Any
     
-    var content: js.Any
+    /* private */ var content: js.Any
     
-    var location: js.Any
+    /* private */ var location: js.Any
   }
   object CreatedNegotiatedContentResult {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       apiController: js.Any,
       content: js.Any,
       executeAsync: () => js.Promise[HttpResponseMessage],
@@ -54,17 +53,13 @@ object createdNegotiatedContentResultMod {
       __obj.asInstanceOf[CreatedNegotiatedContentResult[T]]
     }
     
-    @scala.inline
-    implicit class CreatedNegotiatedContentResultMutableBuilder[Self <: CreatedNegotiatedContentResult[?], T] (val x: Self & CreatedNegotiatedContentResult[T]) extends AnyVal {
+    extension [Self <: CreatedNegotiatedContentResult[?], T](x: Self & CreatedNegotiatedContentResult[T]) {
       
-      @scala.inline
-      def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
+      inline def setApiController(value: js.Any): Self = StObject.set(x, "apiController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
 }

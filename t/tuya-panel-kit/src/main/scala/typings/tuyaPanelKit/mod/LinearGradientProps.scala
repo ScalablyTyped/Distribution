@@ -20,34 +20,25 @@ trait LinearGradientProps
 }
 object LinearGradientProps {
   
-  @scala.inline
-  def apply(): LinearGradientProps = {
+  inline def apply(): LinearGradientProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinearGradientProps]
   }
   
-  @scala.inline
-  implicit class LinearGradientPropsMutableBuilder[Self <: LinearGradientProps] (val x: Self) extends AnyVal {
+  extension [Self <: LinearGradientProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setGradientId(value: String): Self = StObject.set(x, "gradientId", value.asInstanceOf[js.Any])
+    inline def setGradientId(value: String): Self = StObject.set(x, "gradientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientIdUndefined: Self = StObject.set(x, "gradientId", js.undefined)
+    inline def setGradientIdUndefined: Self = StObject.set(x, "gradientId", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

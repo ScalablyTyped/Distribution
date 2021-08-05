@@ -14,25 +14,19 @@ trait IKmlScreenOverlayOptions extends StObject {
 }
 object IKmlScreenOverlayOptions {
   
-  @scala.inline
-  def apply(): IKmlScreenOverlayOptions = {
+  inline def apply(): IKmlScreenOverlayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IKmlScreenOverlayOptions]
   }
   
-  @scala.inline
-  implicit class IKmlScreenOverlayOptionsMutableBuilder[Self <: IKmlScreenOverlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IKmlScreenOverlayOptions](x: Self) {
     
-    @scala.inline
-    def setBelowNavigationBar(value: Boolean): Self = StObject.set(x, "belowNavigationBar", value.asInstanceOf[js.Any])
+    inline def setBelowNavigationBar(value: Boolean): Self = StObject.set(x, "belowNavigationBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBelowNavigationBarUndefined: Self = StObject.set(x, "belowNavigationBar", js.undefined)
+    inline def setBelowNavigationBarUndefined: Self = StObject.set(x, "belowNavigationBar", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -11,22 +11,17 @@ trait Thresholds extends StObject {
 }
 object Thresholds {
   
-  @scala.inline
-  def apply(): Thresholds = {
+  inline def apply(): Thresholds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Thresholds]
   }
   
-  @scala.inline
-  implicit class ThresholdsMutableBuilder[Self <: Thresholds] (val x: Self) extends AnyVal {
+  extension [Self <: Thresholds](x: Self) {
     
-    @scala.inline
-    def setThresholds(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+    inline def setThresholds(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
+    inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
     
-    @scala.inline
-    def setThresholdsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+    inline def setThresholdsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
   }
 }

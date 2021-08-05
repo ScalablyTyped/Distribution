@@ -16,19 +16,15 @@ trait CodesOfConductGetForRepoEndpoint
 }
 object CodesOfConductGetForRepoEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[`scarlet-witch`], owner: String, repo: String): CodesOfConductGetForRepoEndpoint = {
+  inline def apply(mediaType: `0`[`scarlet-witch`], owner: String, repo: String): CodesOfConductGetForRepoEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodesOfConductGetForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class CodesOfConductGetForRepoEndpointMutableBuilder[Self <: CodesOfConductGetForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: CodesOfConductGetForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

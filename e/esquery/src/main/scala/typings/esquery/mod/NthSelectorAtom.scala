@@ -12,17 +12,14 @@ trait NthSelectorAtom
 }
 object NthSelectorAtom {
   
-  @scala.inline
-  def apply(index: NumericLiteral, `type`: String): NthSelectorAtom = {
+  inline def apply(index: NumericLiteral, `type`: String): NthSelectorAtom = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NthSelectorAtom]
   }
   
-  @scala.inline
-  implicit class NthSelectorAtomMutableBuilder[Self <: NthSelectorAtom] (val x: Self) extends AnyVal {
+  extension [Self <: NthSelectorAtom](x: Self) {
     
-    @scala.inline
-    def setIndex(value: NumericLiteral): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: NumericLiteral): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

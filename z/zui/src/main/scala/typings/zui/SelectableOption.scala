@@ -28,73 +28,51 @@ trait SelectableOption extends StObject {
 }
 object SelectableOption {
   
-  @scala.inline
-  def apply(): SelectableOption = {
+  inline def apply(): SelectableOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectableOption]
   }
   
-  @scala.inline
-  implicit class SelectableOptionMutableBuilder[Self <: SelectableOption] (val x: Self) extends AnyVal {
+  extension [Self <: SelectableOption](x: Self) {
     
-    @scala.inline
-    def setClickBehavior(value: String): Self = StObject.set(x, "clickBehavior", value.asInstanceOf[js.Any])
+    inline def setClickBehavior(value: String): Self = StObject.set(x, "clickBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickBehaviorUndefined: Self = StObject.set(x, "clickBehavior", js.undefined)
+    inline def setClickBehaviorUndefined: Self = StObject.set(x, "clickBehavior", js.undefined)
     
-    @scala.inline
-    def setFinish(value: /* e */ js.UndefOr[SelectableEvent] => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
+    inline def setFinish(value: /* e */ js.UndefOr[SelectableEvent] => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
+    inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
     
-    @scala.inline
-    def setIgnoreVal(value: Double): Self = StObject.set(x, "ignoreVal", value.asInstanceOf[js.Any])
+    inline def setIgnoreVal(value: Double): Self = StObject.set(x, "ignoreVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreValUndefined: Self = StObject.set(x, "ignoreVal", js.undefined)
+    inline def setIgnoreValUndefined: Self = StObject.set(x, "ignoreVal", js.undefined)
     
-    @scala.inline
-    def setMouseButton(value: String): Self = StObject.set(x, "mouseButton", value.asInstanceOf[js.Any])
+    inline def setMouseButton(value: String): Self = StObject.set(x, "mouseButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseButtonUndefined: Self = StObject.set(x, "mouseButton", js.undefined)
+    inline def setMouseButtonUndefined: Self = StObject.set(x, "mouseButton", js.undefined)
     
-    @scala.inline
-    def setRangeStyle(value: String | js.Object): Self = StObject.set(x, "rangeStyle", value.asInstanceOf[js.Any])
+    inline def setRangeStyle(value: String | js.Object): Self = StObject.set(x, "rangeStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeStyleUndefined: Self = StObject.set(x, "rangeStyle", js.undefined)
+    inline def setRangeStyleUndefined: Self = StObject.set(x, "rangeStyle", js.undefined)
     
-    @scala.inline
-    def setSelect(value: /* e */ js.UndefOr[SelectableEvent] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: /* e */ js.UndefOr[SelectableEvent] => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setStart(value: /* e */ js.UndefOr[SelectableEvent] => Boolean): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+    inline def setStart(value: /* e */ js.UndefOr[SelectableEvent] => Boolean): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
-    @scala.inline
-    def setUnselect(value: /* e */ js.UndefOr[SelectableEvent] => Unit): Self = StObject.set(x, "unselect", js.Any.fromFunction1(value))
+    inline def setUnselect(value: /* e */ js.UndefOr[SelectableEvent] => Unit): Self = StObject.set(x, "unselect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnselectUndefined: Self = StObject.set(x, "unselect", js.undefined)
+    inline def setUnselectUndefined: Self = StObject.set(x, "unselect", js.undefined)
   }
 }

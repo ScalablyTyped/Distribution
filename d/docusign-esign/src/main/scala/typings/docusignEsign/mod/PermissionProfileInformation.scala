@@ -17,27 +17,22 @@ trait PermissionProfileInformation extends StObject {
 }
 object PermissionProfileInformation {
   
-  @scala.inline
-  def apply(): PermissionProfileInformation = {
+  inline def apply(): PermissionProfileInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PermissionProfileInformation]
   }
   
-  @scala.inline
-  implicit class PermissionProfileInformationMutableBuilder[Self <: PermissionProfileInformation] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionProfileInformation](x: Self) {
     
-    @scala.inline
-    def setPermissionProfiles(
+    inline def setPermissionProfiles(
       value: js.Array[
           /* This object defines the account permissions for a profile that you can apply to a group of users. */ PermissionProfile
         ]
     ): Self = StObject.set(x, "permissionProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionProfilesUndefined: Self = StObject.set(x, "permissionProfiles", js.undefined)
+    inline def setPermissionProfilesUndefined: Self = StObject.set(x, "permissionProfiles", js.undefined)
     
-    @scala.inline
-    def setPermissionProfilesVarargs(
+    inline def setPermissionProfilesVarargs(
       value: (/* This object defines the account permissions for a profile that you can apply to a group of users. */ PermissionProfile)*
     ): Self = StObject.set(x, "permissionProfiles", js.Array(value :_*))
   }

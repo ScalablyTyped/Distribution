@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @example `AgoraRTC.VERSION`
   */
-@scala.inline
-def VERSION: java.lang.String = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION: java.lang.String = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
 
 /**
   * Checks the Web Browser Compatibility
@@ -27,8 +26,7 @@ def VERSION: java.lang.String = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynami
   * @returns - true: The Web SDK is compatible with the current web browser.
   * - false: The Web SDK is not compatible with the current web browser.
   */
-@scala.inline
-def checkSystemRequirements(): scala.Boolean = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkSystemRequirements")().asInstanceOf[scala.Boolean]
+inline def checkSystemRequirements(): scala.Boolean = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("checkSystemRequirements")().asInstanceOf[scala.Boolean]
 
 /**
   * Creates a Client Object
@@ -37,8 +35,7 @@ def checkSystemRequirements(): scala.Boolean = typings.agoraRtcSdk.mod.^.asInsta
   * @example `AgoraRTC.createClient(config)`
   * @param config Defines the property of the client, see {@link ClientConfig} for details.
   */
-@scala.inline
-def createClient(config: typings.agoraRtcSdk.mod.ClientConfig): typings.agoraRtcSdk.mod.Client = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(config.asInstanceOf[js.Any]).asInstanceOf[typings.agoraRtcSdk.mod.Client]
+inline def createClient(config: typings.agoraRtcSdk.mod.ClientConfig): typings.agoraRtcSdk.mod.Client = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(config.asInstanceOf[js.Any]).asInstanceOf[typings.agoraRtcSdk.mod.Client]
 
 /**
   * Creates a Stream Object
@@ -47,8 +44,7 @@ def createClient(config: typings.agoraRtcSdk.mod.ClientConfig): typings.agoraRtc
   * @example `AgoraRTC.createStream(spec)`
   * @param spec Defines the properties of the stream, see {@link StreamSpec} for details.
   */
-@scala.inline
-def createStream(spec: typings.agoraRtcSdk.mod.StreamSpec): typings.agoraRtcSdk.mod.Stream = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(spec.asInstanceOf[js.Any]).asInstanceOf[typings.agoraRtcSdk.mod.Stream]
+inline def createStream(spec: typings.agoraRtcSdk.mod.StreamSpec): typings.agoraRtcSdk.mod.Stream = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(spec.asInstanceOf[js.Any]).asInstanceOf[typings.agoraRtcSdk.mod.Stream]
 
 /**
   * Enumerates the media devices
@@ -71,8 +67,7 @@ def createStream(spec: typings.agoraRtcSdk.mod.StreamSpec): typings.agoraRtcSdk.
   * });
   * ```
   */
-@scala.inline
-def getDevices(
+inline def getDevices(
   callback: js.Function1[/* devices */ js.Array[typings.agoraRtcSdk.mod.MediaDeviceInfo], scala.Unit]
 ): scala.Unit = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
@@ -89,8 +84,7 @@ def getDevices(
   * }
   * ```
   */
-@scala.inline
-def getScreenSources(
+inline def getScreenSources(
   callback: js.Function1[/* sources */ js.Array[typings.agoraRtcSdk.mod.DesktopCapturerSource], scala.Unit]
 ): scala.Unit = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getScreenSources")(callback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
@@ -131,10 +125,8 @@ def getScreenSources(
   *  });
   * ```
   */
-@scala.inline
-def getSupportedCodec(): js.Promise[typings.agoraRtcSdk.anon.Audio] = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedCodec")().asInstanceOf[js.Promise[typings.agoraRtcSdk.anon.Audio]]
-@scala.inline
-def getSupportedCodec(supportedCodecOptions: typings.agoraRtcSdk.anon.Stream): js.Promise[typings.agoraRtcSdk.anon.Audio] = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedCodec")(supportedCodecOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.agoraRtcSdk.anon.Audio]]
+inline def getSupportedCodec(): js.Promise[typings.agoraRtcSdk.anon.Audio] = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedCodec")().asInstanceOf[js.Promise[typings.agoraRtcSdk.anon.Audio]]
+inline def getSupportedCodec(supportedCodecOptions: typings.agoraRtcSdk.anon.Stream): js.Promise[typings.agoraRtcSdk.anon.Audio] = typings.agoraRtcSdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedCodec")(supportedCodecOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.agoraRtcSdk.anon.Audio]]
 
 /**
   * A list of `LocalAudioStats` objects, one per uid.

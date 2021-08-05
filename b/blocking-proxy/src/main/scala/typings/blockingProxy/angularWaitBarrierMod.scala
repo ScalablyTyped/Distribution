@@ -17,7 +17,7 @@ object angularWaitBarrierMod {
        with WebDriverBarrier {
     def this(client: SimpleWebDriverClient) = this()
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
     /**
       * Turn on WebDriver logging.

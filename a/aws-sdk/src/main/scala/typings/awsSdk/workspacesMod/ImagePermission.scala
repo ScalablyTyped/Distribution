@@ -13,19 +13,15 @@ trait ImagePermission extends StObject {
 }
 object ImagePermission {
   
-  @scala.inline
-  def apply(): ImagePermission = {
+  inline def apply(): ImagePermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImagePermission]
   }
   
-  @scala.inline
-  implicit class ImagePermissionMutableBuilder[Self <: ImagePermission] (val x: Self) extends AnyVal {
+  extension [Self <: ImagePermission](x: Self) {
     
-    @scala.inline
-    def setSharedAccountId(value: AwsAccount): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
+    inline def setSharedAccountId(value: AwsAccount): Self = StObject.set(x, "SharedAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedAccountIdUndefined: Self = StObject.set(x, "SharedAccountId", js.undefined)
+    inline def setSharedAccountIdUndefined: Self = StObject.set(x, "SharedAccountId", js.undefined)
   }
 }

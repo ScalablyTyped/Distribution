@@ -29,71 +29,50 @@ object MetaGraphDef {
   }
   object IMetaInfoDef {
     
-    @scala.inline
-    def apply(): IMetaInfoDef = {
+    inline def apply(): IMetaInfoDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMetaInfoDef]
     }
     
-    @scala.inline
-    implicit class IMetaInfoDefMutableBuilder[Self <: IMetaInfoDef] (val x: Self) extends AnyVal {
+    extension [Self <: IMetaInfoDef](x: Self) {
       
-      @scala.inline
-      def setAnyInfo(value: IAny): Self = StObject.set(x, "anyInfo", value.asInstanceOf[js.Any])
+      inline def setAnyInfo(value: IAny): Self = StObject.set(x, "anyInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnyInfoNull: Self = StObject.set(x, "anyInfo", null)
+      inline def setAnyInfoNull: Self = StObject.set(x, "anyInfo", null)
       
-      @scala.inline
-      def setAnyInfoUndefined: Self = StObject.set(x, "anyInfo", js.undefined)
+      inline def setAnyInfoUndefined: Self = StObject.set(x, "anyInfo", js.undefined)
       
-      @scala.inline
-      def setMetaGraphVersion(value: String): Self = StObject.set(x, "metaGraphVersion", value.asInstanceOf[js.Any])
+      inline def setMetaGraphVersion(value: String): Self = StObject.set(x, "metaGraphVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaGraphVersionNull: Self = StObject.set(x, "metaGraphVersion", null)
+      inline def setMetaGraphVersionNull: Self = StObject.set(x, "metaGraphVersion", null)
       
-      @scala.inline
-      def setMetaGraphVersionUndefined: Self = StObject.set(x, "metaGraphVersion", js.undefined)
+      inline def setMetaGraphVersionUndefined: Self = StObject.set(x, "metaGraphVersion", js.undefined)
       
-      @scala.inline
-      def setStrippedOpList(value: IOpList): Self = StObject.set(x, "strippedOpList", value.asInstanceOf[js.Any])
+      inline def setStrippedOpList(value: IOpList): Self = StObject.set(x, "strippedOpList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrippedOpListNull: Self = StObject.set(x, "strippedOpList", null)
+      inline def setStrippedOpListNull: Self = StObject.set(x, "strippedOpList", null)
       
-      @scala.inline
-      def setStrippedOpListUndefined: Self = StObject.set(x, "strippedOpList", js.undefined)
+      inline def setStrippedOpListUndefined: Self = StObject.set(x, "strippedOpList", js.undefined)
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsNull: Self = StObject.set(x, "tags", null)
+      inline def setTagsNull: Self = StObject.set(x, "tags", null)
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTensorflowGitVersion(value: String): Self = StObject.set(x, "tensorflowGitVersion", value.asInstanceOf[js.Any])
+      inline def setTensorflowGitVersion(value: String): Self = StObject.set(x, "tensorflowGitVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTensorflowGitVersionNull: Self = StObject.set(x, "tensorflowGitVersion", null)
+      inline def setTensorflowGitVersionNull: Self = StObject.set(x, "tensorflowGitVersion", null)
       
-      @scala.inline
-      def setTensorflowGitVersionUndefined: Self = StObject.set(x, "tensorflowGitVersion", js.undefined)
+      inline def setTensorflowGitVersionUndefined: Self = StObject.set(x, "tensorflowGitVersion", js.undefined)
       
-      @scala.inline
-      def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
+      inline def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTensorflowVersionNull: Self = StObject.set(x, "tensorflowVersion", null)
+      inline def setTensorflowVersionNull: Self = StObject.set(x, "tensorflowVersion", null)
       
-      @scala.inline
-      def setTensorflowVersionUndefined: Self = StObject.set(x, "tensorflowVersion", js.undefined)
+      inline def setTensorflowVersionUndefined: Self = StObject.set(x, "tensorflowVersion", js.undefined)
     }
   }
 }

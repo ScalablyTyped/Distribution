@@ -20,8 +20,7 @@ trait ContentProviderProxy
      with XParameterizedContentProvider
 object ContentProviderProxy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentProvider: XContentProvider,
     acquire: () => Unit,
     compareContentIds: (XContentIdentifier, XContentIdentifier) => Double,

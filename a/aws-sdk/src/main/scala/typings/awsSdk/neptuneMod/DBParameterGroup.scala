@@ -28,37 +28,27 @@ trait DBParameterGroup extends StObject {
 }
 object DBParameterGroup {
   
-  @scala.inline
-  def apply(): DBParameterGroup = {
+  inline def apply(): DBParameterGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBParameterGroup]
   }
   
-  @scala.inline
-  implicit class DBParameterGroupMutableBuilder[Self <: DBParameterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DBParameterGroup](x: Self) {
     
-    @scala.inline
-    def setDBParameterGroupArn(value: String): Self = StObject.set(x, "DBParameterGroupArn", value.asInstanceOf[js.Any])
+    inline def setDBParameterGroupArn(value: String): Self = StObject.set(x, "DBParameterGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBParameterGroupArnUndefined: Self = StObject.set(x, "DBParameterGroupArn", js.undefined)
+    inline def setDBParameterGroupArnUndefined: Self = StObject.set(x, "DBParameterGroupArn", js.undefined)
     
-    @scala.inline
-    def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
+    inline def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBParameterGroupFamilyUndefined: Self = StObject.set(x, "DBParameterGroupFamily", js.undefined)
+    inline def setDBParameterGroupFamilyUndefined: Self = StObject.set(x, "DBParameterGroupFamily", js.undefined)
     
-    @scala.inline
-    def setDBParameterGroupName(value: String): Self = StObject.set(x, "DBParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setDBParameterGroupName(value: String): Self = StObject.set(x, "DBParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBParameterGroupNameUndefined: Self = StObject.set(x, "DBParameterGroupName", js.undefined)
+    inline def setDBParameterGroupNameUndefined: Self = StObject.set(x, "DBParameterGroupName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

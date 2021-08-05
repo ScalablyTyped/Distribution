@@ -30,25 +30,19 @@ trait EncryptionInTransit extends StObject {
 }
 object EncryptionInTransit {
   
-  @scala.inline
-  def apply(): EncryptionInTransit = {
+  inline def apply(): EncryptionInTransit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptionInTransit]
   }
   
-  @scala.inline
-  implicit class EncryptionInTransitMutableBuilder[Self <: EncryptionInTransit] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionInTransit](x: Self) {
     
-    @scala.inline
-    def setClientBroker(value: ClientBroker): Self = StObject.set(x, "ClientBroker", value.asInstanceOf[js.Any])
+    inline def setClientBroker(value: ClientBroker): Self = StObject.set(x, "ClientBroker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientBrokerUndefined: Self = StObject.set(x, "ClientBroker", js.undefined)
+    inline def setClientBrokerUndefined: Self = StObject.set(x, "ClientBroker", js.undefined)
     
-    @scala.inline
-    def setInCluster(value: boolean): Self = StObject.set(x, "InCluster", value.asInstanceOf[js.Any])
+    inline def setInCluster(value: boolean): Self = StObject.set(x, "InCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInClusterUndefined: Self = StObject.set(x, "InCluster", js.undefined)
+    inline def setInClusterUndefined: Self = StObject.set(x, "InCluster", js.undefined)
   }
 }

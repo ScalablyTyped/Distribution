@@ -70,85 +70,59 @@ trait MongodbIndexOptions extends StObject {
 }
 object MongodbIndexOptions {
   
-  @scala.inline
-  def apply(): MongodbIndexOptions = {
+  inline def apply(): MongodbIndexOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MongodbIndexOptions]
   }
   
-  @scala.inline
-  implicit class MongodbIndexOptionsMutableBuilder[Self <: MongodbIndexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MongodbIndexOptions](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setDropDups(value: Boolean): Self = StObject.set(x, "dropDups", value.asInstanceOf[js.Any])
+    inline def setDropDups(value: Boolean): Self = StObject.set(x, "dropDups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDupsUndefined: Self = StObject.set(x, "dropDups", js.undefined)
+    inline def setDropDupsUndefined: Self = StObject.set(x, "dropDups", js.undefined)
     
-    @scala.inline
-    def setExpireAfterSeconds(value: scala.Double): Self = StObject.set(x, "expireAfterSeconds", value.asInstanceOf[js.Any])
+    inline def setExpireAfterSeconds(value: scala.Double): Self = StObject.set(x, "expireAfterSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireAfterSecondsUndefined: Self = StObject.set(x, "expireAfterSeconds", js.undefined)
+    inline def setExpireAfterSecondsUndefined: Self = StObject.set(x, "expireAfterSeconds", js.undefined)
     
-    @scala.inline
-    def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+    inline def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
+    inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
-    @scala.inline
-    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: scala.Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
+    inline def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
+    inline def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
     
-    @scala.inline
-    def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
     
-    @scala.inline
-    def setV(value: scala.Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: scala.Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
     
-    @scala.inline
-    def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
+    inline def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
+    inline def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

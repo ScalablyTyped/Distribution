@@ -10,20 +10,12 @@ object readableColorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(color: String, lightReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(color: String, lightReturnColor: String, darkReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(color: String, lightReturnColor: String, darkReturnColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(color: String, lightReturnColor: String, darkReturnColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(color: String, lightReturnColor: Unit, darkReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(color: String, lightReturnColor: Unit, darkReturnColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(color: String, lightReturnColor: Unit, darkReturnColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(color: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(color: String, lightReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(color: String, lightReturnColor: String, darkReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(color: String, lightReturnColor: String, darkReturnColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(color: String, lightReturnColor: String, darkReturnColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(color: String, lightReturnColor: Unit, darkReturnColor: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(color: String, lightReturnColor: Unit, darkReturnColor: String, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(color: String, lightReturnColor: Unit, darkReturnColor: Unit, strict: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any], lightReturnColor.asInstanceOf[js.Any], darkReturnColor.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[String]
 }

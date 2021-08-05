@@ -50,8 +50,7 @@ trait cimSymbolUtils extends StObject {
 }
 object cimSymbolUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     applyCIMSymbolColor: (CIMSymbol, Color_) => Unit,
     applyCIMSymbolRotation: (CIMSymbol, Double) => Unit,
     getCIMSymbolColor: CIMSymbol => Color_,
@@ -63,25 +62,18 @@ object cimSymbolUtils {
     __obj.asInstanceOf[cimSymbolUtils]
   }
   
-  @scala.inline
-  implicit class cimSymbolUtilsMutableBuilder[Self <: cimSymbolUtils] (val x: Self) extends AnyVal {
+  extension [Self <: cimSymbolUtils](x: Self) {
     
-    @scala.inline
-    def setApplyCIMSymbolColor(value: (CIMSymbol, Color_) => Unit): Self = StObject.set(x, "applyCIMSymbolColor", js.Any.fromFunction2(value))
+    inline def setApplyCIMSymbolColor(value: (CIMSymbol, Color_) => Unit): Self = StObject.set(x, "applyCIMSymbolColor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApplyCIMSymbolRotation(value: (CIMSymbol, Double) => Unit): Self = StObject.set(x, "applyCIMSymbolRotation", js.Any.fromFunction2(value))
+    inline def setApplyCIMSymbolRotation(value: (CIMSymbol, Double) => Unit): Self = StObject.set(x, "applyCIMSymbolRotation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCIMSymbolColor(value: CIMSymbol => Color_): Self = StObject.set(x, "getCIMSymbolColor", js.Any.fromFunction1(value))
+    inline def setGetCIMSymbolColor(value: CIMSymbol => Color_): Self = StObject.set(x, "getCIMSymbolColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCIMSymbolRotation(value: CIMSymbol => Double): Self = StObject.set(x, "getCIMSymbolRotation", js.Any.fromFunction1(value))
+    inline def setGetCIMSymbolRotation(value: CIMSymbol => Double): Self = StObject.set(x, "getCIMSymbolRotation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCIMSymbolSize(value: CIMSymbol => Double): Self = StObject.set(x, "getCIMSymbolSize", js.Any.fromFunction1(value))
+    inline def setGetCIMSymbolSize(value: CIMSymbol => Double): Self = StObject.set(x, "getCIMSymbolSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScaleCIMSymbolTo(value: (CIMSymbol, Double) => Unit): Self = StObject.set(x, "scaleCIMSymbolTo", js.Any.fromFunction2(value))
+    inline def setScaleCIMSymbolTo(value: (CIMSymbol, Double) => Unit): Self = StObject.set(x, "scaleCIMSymbolTo", js.Any.fromFunction2(value))
   }
 }

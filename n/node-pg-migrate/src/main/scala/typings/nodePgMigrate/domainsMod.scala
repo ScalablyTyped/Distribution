@@ -15,15 +15,11 @@ object domainsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def alterDomain(mOptions: MigrationOptions): AlterDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("alterDomain")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterDomain]
+  inline def alterDomain(mOptions: MigrationOptions): AlterDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("alterDomain")(mOptions.asInstanceOf[js.Any]).asInstanceOf[AlterDomain]
   
-  @scala.inline
-  def createDomain(mOptions: MigrationOptions): CreateDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("createDomain")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateDomain]
+  inline def createDomain(mOptions: MigrationOptions): CreateDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("createDomain")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateDomain]
   
-  @scala.inline
-  def dropDomain(mOptions: MigrationOptions): DropDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("dropDomain")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropDomain]
+  inline def dropDomain(mOptions: MigrationOptions): DropDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("dropDomain")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropDomain]
   
-  @scala.inline
-  def renameDomain(mOptions: MigrationOptions): RenameDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("renameDomain")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameDomain]
+  inline def renameDomain(mOptions: MigrationOptions): RenameDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("renameDomain")(mOptions.asInstanceOf[js.Any]).asInstanceOf[RenameDomain]
 }

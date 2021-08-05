@@ -13,19 +13,15 @@ trait ListDistributionsResult extends StObject {
 }
 object ListDistributionsResult {
   
-  @scala.inline
-  def apply(): ListDistributionsResult = {
+  inline def apply(): ListDistributionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDistributionsResult]
   }
   
-  @scala.inline
-  implicit class ListDistributionsResultMutableBuilder[Self <: ListDistributionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDistributionsResult](x: Self) {
     
-    @scala.inline
-    def setDistributionList(value: DistributionList): Self = StObject.set(x, "DistributionList", value.asInstanceOf[js.Any])
+    inline def setDistributionList(value: DistributionList): Self = StObject.set(x, "DistributionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionListUndefined: Self = StObject.set(x, "DistributionList", js.undefined)
+    inline def setDistributionListUndefined: Self = StObject.set(x, "DistributionList", js.undefined)
   }
 }

@@ -36,43 +36,31 @@ trait SchemaOrderCancellation extends StObject {
 }
 object SchemaOrderCancellation {
   
-  @scala.inline
-  def apply(): SchemaOrderCancellation = {
+  inline def apply(): SchemaOrderCancellation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderCancellation]
   }
   
-  @scala.inline
-  implicit class SchemaOrderCancellationMutableBuilder[Self <: SchemaOrderCancellation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderCancellation](x: Self) {
     
-    @scala.inline
-    def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: String): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
+    inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
+    inline def setReasonText(value: String): Self = StObject.set(x, "reasonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
+    inline def setReasonTextUndefined: Self = StObject.set(x, "reasonText", js.undefined)
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

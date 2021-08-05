@@ -31,8 +31,7 @@ trait XRFrame extends StObject {
 }
 object XRFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createAnchor: (XRRigidTransform, XRSpace) => js.Promise[XRAnchor],
     getHitTestResults: XRHitTestSource => js.Array[XRHitTestResult],
     getHitTestResultsForTransientInput: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult],
@@ -46,37 +45,26 @@ object XRFrame {
     __obj.asInstanceOf[XRFrame]
   }
   
-  @scala.inline
-  implicit class XRFrameMutableBuilder[Self <: XRFrame] (val x: Self) extends AnyVal {
+  extension [Self <: XRFrame](x: Self) {
     
-    @scala.inline
-    def setCreateAnchor(value: (XRRigidTransform, XRSpace) => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction2(value))
+    inline def setCreateAnchor(value: (XRRigidTransform, XRSpace) => js.Promise[XRAnchor]): Self = StObject.set(x, "createAnchor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetHitTestResults(value: XRHitTestSource => js.Array[XRHitTestResult]): Self = StObject.set(x, "getHitTestResults", js.Any.fromFunction1(value))
+    inline def setGetHitTestResults(value: XRHitTestSource => js.Array[XRHitTestResult]): Self = StObject.set(x, "getHitTestResults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHitTestResultsForTransientInput(value: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult]): Self = StObject.set(x, "getHitTestResultsForTransientInput", js.Any.fromFunction1(value))
+    inline def setGetHitTestResultsForTransientInput(value: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult]): Self = StObject.set(x, "getHitTestResultsForTransientInput", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetJointPose(value: (XRJointSpace, XRSpace) => XRJointPose): Self = StObject.set(x, "getJointPose", js.Any.fromFunction2(value))
+    inline def setGetJointPose(value: (XRJointSpace, XRSpace) => XRJointPose): Self = StObject.set(x, "getJointPose", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetPose(value: (XRSpace, XRSpace) => js.UndefOr[XRPose]): Self = StObject.set(x, "getPose", js.Any.fromFunction2(value))
+    inline def setGetPose(value: (XRSpace, XRSpace) => js.UndefOr[XRPose]): Self = StObject.set(x, "getPose", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetViewerPose(value: XRReferenceSpace => js.UndefOr[XRViewerPose]): Self = StObject.set(x, "getViewerPose", js.Any.fromFunction1(value))
+    inline def setGetViewerPose(value: XRReferenceSpace => js.UndefOr[XRViewerPose]): Self = StObject.set(x, "getViewerPose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSession(value: XRSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: XRSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackedAnchors(value: XRAnchorSet): Self = StObject.set(x, "trackedAnchors", value.asInstanceOf[js.Any])
+    inline def setTrackedAnchors(value: XRAnchorSet): Self = StObject.set(x, "trackedAnchors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackedAnchorsUndefined: Self = StObject.set(x, "trackedAnchors", js.undefined)
+    inline def setTrackedAnchorsUndefined: Self = StObject.set(x, "trackedAnchors", js.undefined)
     
-    @scala.inline
-    def setWorldInformation(value: DetectedPlanes): Self = StObject.set(x, "worldInformation", value.asInstanceOf[js.Any])
+    inline def setWorldInformation(value: DetectedPlanes): Self = StObject.set(x, "worldInformation", value.asInstanceOf[js.Any])
   }
 }

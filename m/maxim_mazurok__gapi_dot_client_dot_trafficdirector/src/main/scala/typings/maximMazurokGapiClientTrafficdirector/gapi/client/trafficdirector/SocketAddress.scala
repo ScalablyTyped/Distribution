@@ -36,49 +36,35 @@ trait SocketAddress extends StObject {
 }
 object SocketAddress {
   
-  @scala.inline
-  def apply(): SocketAddress = {
+  inline def apply(): SocketAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SocketAddress]
   }
   
-  @scala.inline
-  implicit class SocketAddressMutableBuilder[Self <: SocketAddress] (val x: Self) extends AnyVal {
+  extension [Self <: SocketAddress](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setIpv4Compat(value: Boolean): Self = StObject.set(x, "ipv4Compat", value.asInstanceOf[js.Any])
+    inline def setIpv4Compat(value: Boolean): Self = StObject.set(x, "ipv4Compat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv4CompatUndefined: Self = StObject.set(x, "ipv4Compat", js.undefined)
+    inline def setIpv4CompatUndefined: Self = StObject.set(x, "ipv4Compat", js.undefined)
     
-    @scala.inline
-    def setNamedPort(value: String): Self = StObject.set(x, "namedPort", value.asInstanceOf[js.Any])
+    inline def setNamedPort(value: String): Self = StObject.set(x, "namedPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedPortUndefined: Self = StObject.set(x, "namedPort", js.undefined)
+    inline def setNamedPortUndefined: Self = StObject.set(x, "namedPort", js.undefined)
     
-    @scala.inline
-    def setPortValue(value: Double): Self = StObject.set(x, "portValue", value.asInstanceOf[js.Any])
+    inline def setPortValue(value: Double): Self = StObject.set(x, "portValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortValueUndefined: Self = StObject.set(x, "portValue", js.undefined)
+    inline def setPortValueUndefined: Self = StObject.set(x, "portValue", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setResolverName(value: String): Self = StObject.set(x, "resolverName", value.asInstanceOf[js.Any])
+    inline def setResolverName(value: String): Self = StObject.set(x, "resolverName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverNameUndefined: Self = StObject.set(x, "resolverName", js.undefined)
+    inline def setResolverNameUndefined: Self = StObject.set(x, "resolverName", js.undefined)
   }
 }

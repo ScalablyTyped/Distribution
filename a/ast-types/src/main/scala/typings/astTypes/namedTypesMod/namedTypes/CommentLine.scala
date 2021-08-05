@@ -22,10 +22,8 @@ object CommentLine {
   @js.native
   val ^ : Type[CommentLine] = js.native
   
-  @scala.inline
-  implicit class CommentLineMutableBuilder[Self <: CommentLine] (val x: Self) extends AnyVal {
+  extension [Self <: CommentLine](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.CommentLine): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.CommentLine): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

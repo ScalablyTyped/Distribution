@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoGradientColorType extends StObject
 object MsoGradientColorType {
   
-  @scala.inline
-  def msoGradientColorMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoGradientColorMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoGradientMultiColor: `4` = 4.asInstanceOf[`4`]
+  inline def msoGradientMultiColor: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoGradientOneColor: `1` = 1.asInstanceOf[`1`]
+  inline def msoGradientOneColor: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoGradientPresetColors: `3` = 3.asInstanceOf[`3`]
+  inline def msoGradientPresetColors: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoGradientTwoColors: `2` = 2.asInstanceOf[`2`]
+  inline def msoGradientTwoColors: `2` = 2.asInstanceOf[`2`]
 }

@@ -15,8 +15,7 @@ trait UnaryOp
 }
 object UnaryOp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -37,13 +36,10 @@ object UnaryOp {
     __obj.asInstanceOf[UnaryOp]
   }
   
-  @scala.inline
-  implicit class UnaryOpMutableBuilder[Self <: UnaryOp] (val x: Self) extends AnyVal {
+  extension [Self <: UnaryOp](x: Self) {
     
-    @scala.inline
-    def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
+    inline def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOp(value: java.lang.String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: java.lang.String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
   }
 }

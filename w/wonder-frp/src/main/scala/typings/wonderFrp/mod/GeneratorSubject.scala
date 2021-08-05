@@ -15,6 +15,5 @@ object GeneratorSubject {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderFrp.generatorSubjectMod.GeneratorSubject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.generatorSubjectMod.GeneratorSubject]
+  inline def create(): typings.wonderFrp.generatorSubjectMod.GeneratorSubject = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderFrp.generatorSubjectMod.GeneratorSubject]
 }

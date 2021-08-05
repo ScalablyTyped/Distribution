@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Units extends StObject
 object Units {
   
-  @scala.inline
-  def objectBoundingBox: typings.reactNativeSvg.reactNativeSvgStrings.objectBoundingBox = "objectBoundingBox".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.objectBoundingBox]
+  inline def objectBoundingBox: typings.reactNativeSvg.reactNativeSvgStrings.objectBoundingBox = "objectBoundingBox".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.objectBoundingBox]
   
-  @scala.inline
-  def userSpaceOnUse: typings.reactNativeSvg.reactNativeSvgStrings.userSpaceOnUse = "userSpaceOnUse".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.userSpaceOnUse]
+  inline def userSpaceOnUse: typings.reactNativeSvg.reactNativeSvgStrings.userSpaceOnUse = "userSpaceOnUse".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.userSpaceOnUse]
 }

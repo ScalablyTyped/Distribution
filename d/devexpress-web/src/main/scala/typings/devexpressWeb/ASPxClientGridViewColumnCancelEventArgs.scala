@@ -18,16 +18,13 @@ trait ASPxClientGridViewColumnCancelEventArgs
 }
 object ASPxClientGridViewColumnCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, column: ASPxClientGridViewColumn): ASPxClientGridViewColumnCancelEventArgs = {
+  inline def apply(cancel: Boolean, column: ASPxClientGridViewColumn): ASPxClientGridViewColumnCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientGridViewColumnCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridViewColumnCancelEventArgsMutableBuilder[Self <: ASPxClientGridViewColumnCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridViewColumnCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }
 }

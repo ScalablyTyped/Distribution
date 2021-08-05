@@ -18,8 +18,7 @@ trait FileTreeNode extends StObject {
 }
 object FileTreeNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[FileTreeNode],
     fullPath: String,
     isExpanded: Boolean,
@@ -30,25 +29,18 @@ object FileTreeNode {
     __obj.asInstanceOf[FileTreeNode]
   }
   
-  @scala.inline
-  implicit class FileTreeNodeMutableBuilder[Self <: FileTreeNode] (val x: Self) extends AnyVal {
+  extension [Self <: FileTreeNode](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[FileTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[FileTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: FileTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: FileTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
+    inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
+    inline def setIsFile(value: Boolean): Self = StObject.set(x, "isFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait RecommendedDto extends StObject {
 }
 object RecommendedDto {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     block: js.Array[BlockDto],
     champion: String,
     map: String,
@@ -37,31 +36,22 @@ object RecommendedDto {
     __obj.asInstanceOf[RecommendedDto]
   }
   
-  @scala.inline
-  implicit class RecommendedDtoMutableBuilder[Self <: RecommendedDto] (val x: Self) extends AnyVal {
+  extension [Self <: RecommendedDto](x: Self) {
     
-    @scala.inline
-    def setBlock(value: js.Array[BlockDto]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: js.Array[BlockDto]): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockVarargs(value: BlockDto*): Self = StObject.set(x, "block", js.Array(value :_*))
+    inline def setBlockVarargs(value: BlockDto*): Self = StObject.set(x, "block", js.Array(value :_*))
     
-    @scala.inline
-    def setChampion(value: String): Self = StObject.set(x, "champion", value.asInstanceOf[js.Any])
+    inline def setChampion(value: String): Self = StObject.set(x, "champion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Boolean): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

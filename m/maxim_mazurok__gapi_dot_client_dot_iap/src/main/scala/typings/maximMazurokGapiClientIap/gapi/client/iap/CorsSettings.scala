@@ -11,19 +11,15 @@ trait CorsSettings extends StObject {
 }
 object CorsSettings {
   
-  @scala.inline
-  def apply(): CorsSettings = {
+  inline def apply(): CorsSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CorsSettings]
   }
   
-  @scala.inline
-  implicit class CorsSettingsMutableBuilder[Self <: CorsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CorsSettings](x: Self) {
     
-    @scala.inline
-    def setAllowHttpOptions(value: Boolean): Self = StObject.set(x, "allowHttpOptions", value.asInstanceOf[js.Any])
+    inline def setAllowHttpOptions(value: Boolean): Self = StObject.set(x, "allowHttpOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowHttpOptionsUndefined: Self = StObject.set(x, "allowHttpOptions", js.undefined)
+    inline def setAllowHttpOptionsUndefined: Self = StObject.set(x, "allowHttpOptions", js.undefined)
   }
 }

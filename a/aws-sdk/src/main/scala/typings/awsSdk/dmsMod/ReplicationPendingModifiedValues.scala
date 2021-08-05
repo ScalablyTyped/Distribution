@@ -28,37 +28,27 @@ trait ReplicationPendingModifiedValues extends StObject {
 }
 object ReplicationPendingModifiedValues {
   
-  @scala.inline
-  def apply(): ReplicationPendingModifiedValues = {
+  inline def apply(): ReplicationPendingModifiedValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationPendingModifiedValues]
   }
   
-  @scala.inline
-  implicit class ReplicationPendingModifiedValuesMutableBuilder[Self <: ReplicationPendingModifiedValues] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationPendingModifiedValues](x: Self) {
     
-    @scala.inline
-    def setAllocatedStorage(value: IntegerOptional): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
+    inline def setAllocatedStorage(value: IntegerOptional): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocatedStorageUndefined: Self = StObject.set(x, "AllocatedStorage", js.undefined)
+    inline def setAllocatedStorageUndefined: Self = StObject.set(x, "AllocatedStorage", js.undefined)
     
-    @scala.inline
-    def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
+    inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
+    inline def setEngineVersionUndefined: Self = StObject.set(x, "EngineVersion", js.undefined)
     
-    @scala.inline
-    def setMultiAZ(value: BooleanOptional): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
+    inline def setMultiAZ(value: BooleanOptional): Self = StObject.set(x, "MultiAZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
+    inline def setMultiAZUndefined: Self = StObject.set(x, "MultiAZ", js.undefined)
     
-    @scala.inline
-    def setReplicationInstanceClass(value: String): Self = StObject.set(x, "ReplicationInstanceClass", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceClass(value: String): Self = StObject.set(x, "ReplicationInstanceClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceClassUndefined: Self = StObject.set(x, "ReplicationInstanceClass", js.undefined)
+    inline def setReplicationInstanceClassUndefined: Self = StObject.set(x, "ReplicationInstanceClass", js.undefined)
   }
 }

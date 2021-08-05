@@ -39,24 +39,21 @@ object Provider {
     @JSGlobal("Windows.Devices.Perception.Provider.KnownPerceptionFrameKind.color")
     @js.native
     def color: String = js.native
-    @scala.inline
-    def color_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
+    inline def color_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
     
     /** Gets the string representing the Depth FrameKind of a PerceptionFrameProviderInfo. */
     /* static member */
     @JSGlobal("Windows.Devices.Perception.Provider.KnownPerceptionFrameKind.depth")
     @js.native
     def depth: String = js.native
-    @scala.inline
-    def depth_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("depth")(x.asInstanceOf[js.Any])
+    inline def depth_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("depth")(x.asInstanceOf[js.Any])
     
     /** Gets the string representing the Infrared FrameKind of a PerceptionFrameProviderInfo. */
     /* static member */
     @JSGlobal("Windows.Devices.Perception.Provider.KnownPerceptionFrameKind.infrared")
     @js.native
     def infrared: String = js.native
-    @scala.inline
-    def infrared_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("infrared")(x.asInstanceOf[js.Any])
+    inline def infrared_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("infrared")(x.asInstanceOf[js.Any])
   }
   
   /** A group of IPerceptionFrameProvider identifiers to be controlled together. */
@@ -210,8 +207,7 @@ object Provider {
       * @param frame The PerceptionFrame that was produced and should be sent to apps.
       */
     /* static member */
-    @scala.inline
-    def publishFrameForProvider(
+    inline def publishFrameForProvider(
       provider: IPerceptionFrameProvider,
       frame: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrame
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("publishFrameForProvider")(provider.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -222,8 +218,7 @@ object Provider {
       * @param controlGroup The group of IPerceptionFrameProvider(s) to control atomically.
       */
     /* static member */
-    @scala.inline
-    def registerControlGroup(
+    inline def registerControlGroup(
       manager: IPerceptionFrameProviderManager,
       controlGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerControlGroup")(manager.asInstanceOf[js.Any], controlGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -234,8 +229,7 @@ object Provider {
       * @param correlationGroup The group of PerceptionCorrelations(s) to control atomically.
       */
     /* static member */
-    @scala.inline
-    def registerCorrelationGroup(
+    inline def registerCorrelationGroup(
       manager: IPerceptionFrameProviderManager,
       correlationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCorrelationGroup")(manager.asInstanceOf[js.Any], correlationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -246,8 +240,7 @@ object Provider {
       * @param faceAuthenticationGroup The group of IPerceptionFrameProvider(s) to atomically control.
       */
     /* static member */
-    @scala.inline
-    def registerFaceAuthenticationGroup(
+    inline def registerFaceAuthenticationGroup(
       manager: IPerceptionFrameProviderManager,
       faceAuthenticationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFaceAuthenticationGroup")(manager.asInstanceOf[js.Any], faceAuthenticationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -258,8 +251,7 @@ object Provider {
       * @param frameProviderInfo The PerceptionFrameProviderInfo which identifies the available IPerceptionFrameProvider.
       */
     /* static member */
-    @scala.inline
-    def registerFrameProviderInfo(
+    inline def registerFrameProviderInfo(
       manager: IPerceptionFrameProviderManager,
       frameProviderInfo: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFrameProviderInfo")(manager.asInstanceOf[js.Any], frameProviderInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -270,8 +262,7 @@ object Provider {
       * @param controlGroup The group of IPerceptionFrameProvider(s) to prevent from being controlled.
       */
     /* static member */
-    @scala.inline
-    def unregisterControlGroup(
+    inline def unregisterControlGroup(
       manager: IPerceptionFrameProviderManager,
       controlGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionControlGroup
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterControlGroup")(manager.asInstanceOf[js.Any], controlGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -282,8 +273,7 @@ object Provider {
       * @param correlationGroup The PerceptionCorrelationGroup to unregister.
       */
     /* static member */
-    @scala.inline
-    def unregisterCorrelationGroup(
+    inline def unregisterCorrelationGroup(
       manager: IPerceptionFrameProviderManager,
       correlationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionCorrelationGroup
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterCorrelationGroup")(manager.asInstanceOf[js.Any], correlationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -294,8 +284,7 @@ object Provider {
       * @param faceAuthenticationGroup The PerceptionFaceAuthenticationGroup to unregister.
       */
     /* static member */
-    @scala.inline
-    def unregisterFaceAuthenticationGroup(
+    inline def unregisterFaceAuthenticationGroup(
       manager: IPerceptionFrameProviderManager,
       faceAuthenticationGroup: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFaceAuthenticationGroup
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterFaceAuthenticationGroup")(manager.asInstanceOf[js.Any], faceAuthenticationGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -306,8 +295,7 @@ object Provider {
       * @param frameProviderInfo The PerceptionFrameProviderInfo which identifies the IPerceptionFrameProvider.
       */
     /* static member */
-    @scala.inline
-    def unregisterFrameProviderInfo(
+    inline def unregisterFrameProviderInfo(
       manager: IPerceptionFrameProviderManager,
       frameProviderInfo: typings.winrtUwp.Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unregisterFrameProviderInfo")(manager.asInstanceOf[js.Any], frameProviderInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -318,8 +306,7 @@ object Provider {
       * @param available Whether or not the provider is available.
       */
     /* static member */
-    @scala.inline
-    def updateAvailabilityForProvider(provider: IPerceptionFrameProvider, available: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAvailabilityForProvider")(provider.asInstanceOf[js.Any], available.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def updateAvailabilityForProvider(provider: IPerceptionFrameProvider, available: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateAvailabilityForProvider")(provider.asInstanceOf[js.Any], available.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /** A request from an app that's in control of this IPerceptionFrameProvider to update a property. */

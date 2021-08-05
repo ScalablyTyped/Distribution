@@ -8,11 +8,9 @@ object jwkToPemStrings {
   
   @js.native
   sealed trait EC extends StObject
-  @scala.inline
-  def EC: EC = "EC".asInstanceOf[EC]
+  inline def EC: EC = "EC".asInstanceOf[EC]
   
   @js.native
   sealed trait RSA extends StObject
-  @scala.inline
-  def RSA: RSA = "RSA".asInstanceOf[RSA]
+  inline def RSA: RSA = "RSA".asInstanceOf[RSA]
 }

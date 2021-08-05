@@ -13,22 +13,17 @@ trait ImageSystemSource extends StObject {
 }
 object ImageSystemSource {
   
-  @scala.inline
-  def apply(system: String): ImageSystemSource = {
+  inline def apply(system: String): ImageSystemSource = {
     val __obj = js.Dynamic.literal(system = system.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageSystemSource]
   }
   
-  @scala.inline
-  implicit class ImageSystemSourceMutableBuilder[Self <: ImageSystemSource] (val x: Self) extends AnyVal {
+  extension [Self <: ImageSystemSource](x: Self) {
     
-    @scala.inline
-    def setFallback(value: ImageRequireSource | String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallback(value: ImageRequireSource | String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
-    @scala.inline
-    def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
   }
 }

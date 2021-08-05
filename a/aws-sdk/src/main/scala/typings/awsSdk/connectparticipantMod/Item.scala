@@ -48,61 +48,43 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(): Item = {
+  inline def apply(): Item = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setAbsoluteTime(value: Instant): Self = StObject.set(x, "AbsoluteTime", value.asInstanceOf[js.Any])
+    inline def setAbsoluteTime(value: Instant): Self = StObject.set(x, "AbsoluteTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteTimeUndefined: Self = StObject.set(x, "AbsoluteTime", js.undefined)
+    inline def setAbsoluteTimeUndefined: Self = StObject.set(x, "AbsoluteTime", js.undefined)
     
-    @scala.inline
-    def setContent(value: ChatContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ChatContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: ChatContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ChatContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setId(value: ChatItemId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ChatItemId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setParticipantId(value: ParticipantId): Self = StObject.set(x, "ParticipantId", value.asInstanceOf[js.Any])
+    inline def setParticipantId(value: ParticipantId): Self = StObject.set(x, "ParticipantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantIdUndefined: Self = StObject.set(x, "ParticipantId", js.undefined)
+    inline def setParticipantIdUndefined: Self = StObject.set(x, "ParticipantId", js.undefined)
     
-    @scala.inline
-    def setParticipantRole(value: ParticipantRole): Self = StObject.set(x, "ParticipantRole", value.asInstanceOf[js.Any])
+    inline def setParticipantRole(value: ParticipantRole): Self = StObject.set(x, "ParticipantRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticipantRoleUndefined: Self = StObject.set(x, "ParticipantRole", js.undefined)
+    inline def setParticipantRoleUndefined: Self = StObject.set(x, "ParticipantRole", js.undefined)
     
-    @scala.inline
-    def setType(value: ChatItemType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChatItemType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

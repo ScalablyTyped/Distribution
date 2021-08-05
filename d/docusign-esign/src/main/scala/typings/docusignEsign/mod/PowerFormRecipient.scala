@@ -111,91 +111,63 @@ trait PowerFormRecipient extends StObject {
 }
 object PowerFormRecipient {
   
-  @scala.inline
-  def apply(): PowerFormRecipient = {
+  inline def apply(): PowerFormRecipient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PowerFormRecipient]
   }
   
-  @scala.inline
-  implicit class PowerFormRecipientMutableBuilder[Self <: PowerFormRecipient] (val x: Self) extends AnyVal {
+  extension [Self <: PowerFormRecipient](x: Self) {
     
-    @scala.inline
-    def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
+    inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessCodeLocked(value: String): Self = StObject.set(x, "accessCodeLocked", value.asInstanceOf[js.Any])
+    inline def setAccessCodeLocked(value: String): Self = StObject.set(x, "accessCodeLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessCodeLockedUndefined: Self = StObject.set(x, "accessCodeLocked", js.undefined)
+    inline def setAccessCodeLockedUndefined: Self = StObject.set(x, "accessCodeLocked", js.undefined)
     
-    @scala.inline
-    def setAccessCodeRequired(value: String): Self = StObject.set(x, "accessCodeRequired", value.asInstanceOf[js.Any])
+    inline def setAccessCodeRequired(value: String): Self = StObject.set(x, "accessCodeRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessCodeRequiredUndefined: Self = StObject.set(x, "accessCodeRequired", js.undefined)
+    inline def setAccessCodeRequiredUndefined: Self = StObject.set(x, "accessCodeRequired", js.undefined)
     
-    @scala.inline
-    def setAccessCodeUndefined: Self = StObject.set(x, "accessCode", js.undefined)
+    inline def setAccessCodeUndefined: Self = StObject.set(x, "accessCode", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailLocked(value: String): Self = StObject.set(x, "emailLocked", value.asInstanceOf[js.Any])
+    inline def setEmailLocked(value: String): Self = StObject.set(x, "emailLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailLockedUndefined: Self = StObject.set(x, "emailLocked", js.undefined)
+    inline def setEmailLockedUndefined: Self = StObject.set(x, "emailLocked", js.undefined)
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setIdCheckConfigurationName(value: String): Self = StObject.set(x, "idCheckConfigurationName", value.asInstanceOf[js.Any])
+    inline def setIdCheckConfigurationName(value: String): Self = StObject.set(x, "idCheckConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdCheckConfigurationNameUndefined: Self = StObject.set(x, "idCheckConfigurationName", js.undefined)
+    inline def setIdCheckConfigurationNameUndefined: Self = StObject.set(x, "idCheckConfigurationName", js.undefined)
     
-    @scala.inline
-    def setIdCheckRequired(value: String): Self = StObject.set(x, "idCheckRequired", value.asInstanceOf[js.Any])
+    inline def setIdCheckRequired(value: String): Self = StObject.set(x, "idCheckRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdCheckRequiredUndefined: Self = StObject.set(x, "idCheckRequired", js.undefined)
+    inline def setIdCheckRequiredUndefined: Self = StObject.set(x, "idCheckRequired", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRecipientType(value: String): Self = StObject.set(x, "recipientType", value.asInstanceOf[js.Any])
+    inline def setRecipientType(value: String): Self = StObject.set(x, "recipientType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientTypeUndefined: Self = StObject.set(x, "recipientType", js.undefined)
+    inline def setRecipientTypeUndefined: Self = StObject.set(x, "recipientType", js.undefined)
     
-    @scala.inline
-    def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: String): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
+    inline def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     
-    @scala.inline
-    def setRoutingOrder(value: String): Self = StObject.set(x, "routingOrder", value.asInstanceOf[js.Any])
+    inline def setRoutingOrder(value: String): Self = StObject.set(x, "routingOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingOrderUndefined: Self = StObject.set(x, "routingOrder", js.undefined)
+    inline def setRoutingOrderUndefined: Self = StObject.set(x, "routingOrder", js.undefined)
     
-    @scala.inline
-    def setTemplateRequiresIdLookup(value: String): Self = StObject.set(x, "templateRequiresIdLookup", value.asInstanceOf[js.Any])
+    inline def setTemplateRequiresIdLookup(value: String): Self = StObject.set(x, "templateRequiresIdLookup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateRequiresIdLookupUndefined: Self = StObject.set(x, "templateRequiresIdLookup", js.undefined)
+    inline def setTemplateRequiresIdLookupUndefined: Self = StObject.set(x, "templateRequiresIdLookup", js.undefined)
     
-    @scala.inline
-    def setUserNameLocked(value: String): Self = StObject.set(x, "userNameLocked", value.asInstanceOf[js.Any])
+    inline def setUserNameLocked(value: String): Self = StObject.set(x, "userNameLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameLockedUndefined: Self = StObject.set(x, "userNameLocked", js.undefined)
+    inline def setUserNameLockedUndefined: Self = StObject.set(x, "userNameLocked", js.undefined)
   }
 }

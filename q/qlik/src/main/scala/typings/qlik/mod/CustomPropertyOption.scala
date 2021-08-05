@@ -12,19 +12,15 @@ trait CustomPropertyOption extends StObject {
 }
 object CustomPropertyOption {
   
-  @scala.inline
-  def apply(label: String, value: String): CustomPropertyOption = {
+  inline def apply(label: String, value: String): CustomPropertyOption = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyOption]
   }
   
-  @scala.inline
-  implicit class CustomPropertyOptionMutableBuilder[Self <: CustomPropertyOption] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyOption](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

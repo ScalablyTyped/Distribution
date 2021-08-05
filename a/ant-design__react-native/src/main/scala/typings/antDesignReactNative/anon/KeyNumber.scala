@@ -16,20 +16,16 @@ trait KeyNumber
 }
 object KeyNumber {
   
-  @scala.inline
-  def apply(key: Double): KeyNumber = {
+  inline def apply(key: Double): KeyNumber = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("unmount")
     __obj.asInstanceOf[KeyNumber]
   }
   
-  @scala.inline
-  implicit class KeyNumberMutableBuilder[Self <: KeyNumber] (val x: Self) extends AnyVal {
+  extension [Self <: KeyNumber](x: Self) {
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: unmount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: unmount): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

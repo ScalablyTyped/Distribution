@@ -15,11 +15,11 @@ object dataflowMod {
     def this(parent: DataFlowNode) = this()
     def this(parent: DataFlowNode, debugName: String) = this()
     
-    var _children: js.Any = js.native
+    /* private */ var _children: js.Any = js.native
     
-    var _hash: String | Double = js.native
+    /* protected */ var _hash: String | Double = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
     def addChild(child: DataFlowNode): Unit = js.native
     def addChild(child: DataFlowNode, loc: Double): Unit = js.native
@@ -76,9 +76,9 @@ object dataflowMod {
       */
     def this(parent: DataFlowNode, source: String, `type`: DataSourceType, refCounts: Dict[Double]) = this()
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Request the datasource name and increase the ref counter.
@@ -93,7 +93,7 @@ object dataflowMod {
     
     def isRequired(): Boolean = js.native
     
-    val refCounts: js.Any = js.native
+    /* private */ val refCounts: js.Any = js.native
     
     def setSource(source: String): Unit = js.native
     

@@ -32,8 +32,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def download(blob: Blob, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(blob.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def download(blob: Blob, filename: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(blob.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type OnAnalysedHandler = js.Function2[/* data */ js.Array[Double], /* lastNonZero */ Double, Unit]
   
@@ -47,8 +46,7 @@ object mod {
   }
   object Recorder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       init: MediaStream => js.Promise[Unit],
       start: () => js.Promise[js.UndefOr[MediaStream]],
       stop: () => js.Promise[RecorderResult]
@@ -57,17 +55,13 @@ object mod {
       __obj.asInstanceOf[Recorder]
     }
     
-    @scala.inline
-    implicit class RecorderMutableBuilder[Self <: Recorder] (val x: Self) extends AnyVal {
+    extension [Self <: Recorder](x: Self) {
       
-      @scala.inline
-      def setInit(value: MediaStream => js.Promise[Unit]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: MediaStream => js.Promise[Unit]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStart(value: () => js.Promise[js.UndefOr[MediaStream]]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => js.Promise[js.UndefOr[MediaStream]]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => js.Promise[RecorderResult]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Promise[RecorderResult]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -77,20 +71,16 @@ object mod {
   }
   object RecorderConfig {
     
-    @scala.inline
-    def apply(): RecorderConfig = {
+    inline def apply(): RecorderConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RecorderConfig]
     }
     
-    @scala.inline
-    implicit class RecorderConfigMutableBuilder[Self <: RecorderConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RecorderConfig](x: Self) {
       
-      @scala.inline
-      def setOnAnalysed(value: (/* data */ js.Array[Double], /* lastNonZero */ Double) => Unit): Self = StObject.set(x, "onAnalysed", js.Any.fromFunction2(value))
+      inline def setOnAnalysed(value: (/* data */ js.Array[Double], /* lastNonZero */ Double) => Unit): Self = StObject.set(x, "onAnalysed", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAnalysedUndefined: Self = StObject.set(x, "onAnalysed", js.undefined)
+      inline def setOnAnalysedUndefined: Self = StObject.set(x, "onAnalysed", js.undefined)
     }
   }
   
@@ -102,23 +92,18 @@ object mod {
   }
   object RecorderResult {
     
-    @scala.inline
-    def apply(blob: Blob, buffer: js.Array[Float32Array]): RecorderResult = {
+    inline def apply(blob: Blob, buffer: js.Array[Float32Array]): RecorderResult = {
       val __obj = js.Dynamic.literal(blob = blob.asInstanceOf[js.Any], buffer = buffer.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecorderResult]
     }
     
-    @scala.inline
-    implicit class RecorderResultMutableBuilder[Self <: RecorderResult] (val x: Self) extends AnyVal {
+    extension [Self <: RecorderResult](x: Self) {
       
-      @scala.inline
-      def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+      inline def setBlob(value: Blob): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuffer(value: js.Array[Float32Array]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: js.Array[Float32Array]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferVarargs(value: Float32Array*): Self = StObject.set(x, "buffer", js.Array(value :_*))
+      inline def setBufferVarargs(value: Float32Array*): Self = StObject.set(x, "buffer", js.Array(value :_*))
     }
   }
 }

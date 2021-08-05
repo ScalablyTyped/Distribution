@@ -10,19 +10,15 @@ trait LetterSpacingsCSSProperties extends StObject {
 }
 object LetterSpacingsCSSProperties {
   
-  @scala.inline
-  def apply(): LetterSpacingsCSSProperties = {
+  inline def apply(): LetterSpacingsCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LetterSpacingsCSSProperties]
   }
   
-  @scala.inline
-  implicit class LetterSpacingsCSSPropertiesMutableBuilder[Self <: LetterSpacingsCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LetterSpacingsCSSProperties](x: Self) {
     
-    @scala.inline
-    def setLetterSpacing(value: LetterSpacings): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: LetterSpacings): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
   }
 }

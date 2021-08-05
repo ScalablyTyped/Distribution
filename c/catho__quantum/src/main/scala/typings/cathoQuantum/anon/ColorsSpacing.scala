@@ -12,25 +12,19 @@ trait ColorsSpacing extends StObject {
 }
 object ColorsSpacing {
   
-  @scala.inline
-  def apply(): ColorsSpacing = {
+  inline def apply(): ColorsSpacing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorsSpacing]
   }
   
-  @scala.inline
-  implicit class ColorsSpacingMutableBuilder[Self <: ColorsSpacing] (val x: Self) extends AnyVal {
+  extension [Self <: ColorsSpacing](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

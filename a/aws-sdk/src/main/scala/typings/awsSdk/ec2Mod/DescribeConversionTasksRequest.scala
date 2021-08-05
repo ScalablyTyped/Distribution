@@ -18,28 +18,21 @@ trait DescribeConversionTasksRequest extends StObject {
 }
 object DescribeConversionTasksRequest {
   
-  @scala.inline
-  def apply(): DescribeConversionTasksRequest = {
+  inline def apply(): DescribeConversionTasksRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConversionTasksRequest]
   }
   
-  @scala.inline
-  implicit class DescribeConversionTasksRequestMutableBuilder[Self <: DescribeConversionTasksRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConversionTasksRequest](x: Self) {
     
-    @scala.inline
-    def setConversionTaskIds(value: ConversionIdStringList): Self = StObject.set(x, "ConversionTaskIds", value.asInstanceOf[js.Any])
+    inline def setConversionTaskIds(value: ConversionIdStringList): Self = StObject.set(x, "ConversionTaskIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionTaskIdsUndefined: Self = StObject.set(x, "ConversionTaskIds", js.undefined)
+    inline def setConversionTaskIdsUndefined: Self = StObject.set(x, "ConversionTaskIds", js.undefined)
     
-    @scala.inline
-    def setConversionTaskIdsVarargs(value: ConversionTaskId*): Self = StObject.set(x, "ConversionTaskIds", js.Array(value :_*))
+    inline def setConversionTaskIdsVarargs(value: ConversionTaskId*): Self = StObject.set(x, "ConversionTaskIds", js.Array(value :_*))
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

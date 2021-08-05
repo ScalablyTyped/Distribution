@@ -22,11 +22,9 @@ object snackbarMod {
   trait SnackbarPosition extends StObject
   object SnackbarPosition {
     
-    @scala.inline
-    def bottom: typings.reactMdAlert.reactMdAlertStrings.bottom = "bottom".asInstanceOf[typings.reactMdAlert.reactMdAlertStrings.bottom]
+    inline def bottom: typings.reactMdAlert.reactMdAlertStrings.bottom = "bottom".asInstanceOf[typings.reactMdAlert.reactMdAlertStrings.bottom]
     
-    @scala.inline
-    def top: typings.reactMdAlert.reactMdAlertStrings.top = "top".asInstanceOf[typings.reactMdAlert.reactMdAlertStrings.top]
+    inline def top: typings.reactMdAlert.reactMdAlertStrings.top = "top".asInstanceOf[typings.reactMdAlert.reactMdAlertStrings.top]
   }
   
   trait SnackbarProps
@@ -48,23 +46,18 @@ object snackbarMod {
   }
   object SnackbarProps {
     
-    @scala.inline
-    def apply(id: String): SnackbarProps = {
+    inline def apply(id: String): SnackbarProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[SnackbarProps]
     }
     
-    @scala.inline
-    implicit class SnackbarPropsMutableBuilder[Self <: SnackbarProps] (val x: Self) extends AnyVal {
+    extension [Self <: SnackbarProps](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: SnackbarPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: SnackbarPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
 }

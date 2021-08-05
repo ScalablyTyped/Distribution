@@ -13,22 +13,17 @@ trait IPasteEvent extends StObject {
 }
 object IPasteEvent {
   
-  @scala.inline
-  def apply(range: Range): IPasteEvent = {
+  inline def apply(range: Range): IPasteEvent = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], mode = null)
     __obj.asInstanceOf[IPasteEvent]
   }
   
-  @scala.inline
-  implicit class IPasteEventMutableBuilder[Self <: IPasteEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IPasteEvent](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeNull: Self = StObject.set(x, "mode", null)
+    inline def setModeNull: Self = StObject.set(x, "mode", null)
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
   }
 }

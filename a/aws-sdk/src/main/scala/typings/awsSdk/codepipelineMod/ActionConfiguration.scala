@@ -13,19 +13,15 @@ trait ActionConfiguration extends StObject {
 }
 object ActionConfiguration {
   
-  @scala.inline
-  def apply(): ActionConfiguration = {
+  inline def apply(): ActionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionConfiguration]
   }
   
-  @scala.inline
-  implicit class ActionConfigurationMutableBuilder[Self <: ActionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ActionConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: ActionConfigurationMap): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ActionConfigurationMap): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
   }
 }

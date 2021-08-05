@@ -63,79 +63,55 @@ trait DominantLanguageDetectionJobProperties extends StObject {
 }
 object DominantLanguageDetectionJobProperties {
   
-  @scala.inline
-  def apply(): DominantLanguageDetectionJobProperties = {
+  inline def apply(): DominantLanguageDetectionJobProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DominantLanguageDetectionJobProperties]
   }
   
-  @scala.inline
-  implicit class DominantLanguageDetectionJobPropertiesMutableBuilder[Self <: DominantLanguageDetectionJobProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DominantLanguageDetectionJobProperties](x: Self) {
     
-    @scala.inline
-    def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAccessRoleArnUndefined: Self = StObject.set(x, "DataAccessRoleArn", js.undefined)
+    inline def setDataAccessRoleArnUndefined: Self = StObject.set(x, "DataAccessRoleArn", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
+    inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
+    inline def setInputDataConfigUndefined: Self = StObject.set(x, "InputDataConfig", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
-    @scala.inline
-    def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "JobName", js.undefined)
     
-    @scala.inline
-    def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: JobStatus): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
+    inline def setJobStatusUndefined: Self = StObject.set(x, "JobStatus", js.undefined)
     
-    @scala.inline
-    def setMessage(value: AnyLengthString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: AnyLengthString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
+    inline def setOutputDataConfig(value: OutputDataConfig): Self = StObject.set(x, "OutputDataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDataConfigUndefined: Self = StObject.set(x, "OutputDataConfig", js.undefined)
+    inline def setOutputDataConfigUndefined: Self = StObject.set(x, "OutputDataConfig", js.undefined)
     
-    @scala.inline
-    def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
+    inline def setSubmitTime(value: Timestamp): Self = StObject.set(x, "SubmitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
+    inline def setSubmitTimeUndefined: Self = StObject.set(x, "SubmitTime", js.undefined)
     
-    @scala.inline
-    def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
+    inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
+    inline def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
     
-    @scala.inline
-    def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+    inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

@@ -53,8 +53,7 @@ object httpMod {
       * };
       * let responses = http.batch([req1, req2]);
       */
-    @scala.inline
-    def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("batch")(requests.asInstanceOf[js.Any]).asInstanceOf[BatchResponses[Q]]
+    inline def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("batch")(requests.asInstanceOf[js.Any]).asInstanceOf[BatchResponses[Q]]
     
     /**
       * Get active cookie jar.
@@ -63,8 +62,7 @@ object httpMod {
       * @example
       * let jar = http.cookieJar();
       */
-    @scala.inline
-    def cookieJar(): CookieJar_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cookieJar")().asInstanceOf[CookieJar_]
+    inline def cookieJar(): CookieJar_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cookieJar")().asInstanceOf[CookieJar_]
     
     /**
       * Make DELETE  request.
@@ -74,16 +72,11 @@ object httpMod {
       * @param params - Request parameters.
       * @returns Resulting response.
       */
-    @scala.inline
-    def del[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Create a file object used for building multipart requests (file uploads).
@@ -102,22 +95,14 @@ object httpMod {
       *   console.log(f.content_type);
       * }
       */
-    @scala.inline
-    def file(data: String): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
-    @scala.inline
-    def file(data: String, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
-    @scala.inline
-    def file(data: String, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
-    @scala.inline
-    def file(data: String, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
-    @scala.inline
-    def file(data: bytes): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
-    @scala.inline
-    def file(data: bytes, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
-    @scala.inline
-    def file(data: bytes, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
-    @scala.inline
-    def file(data: bytes, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    inline def file(data: String): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
+    inline def file(data: String, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    inline def file(data: String, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    inline def file(data: String, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    inline def file(data: bytes): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
+    inline def file(data: bytes, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    inline def file(data: bytes, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    inline def file(data: bytes, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
     
     /**
       * Make GET request.
@@ -128,10 +113,8 @@ object httpMod {
       * @example
       * http.get('https://k6.io')
       */
-    @scala.inline
-    def get[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def get[RT /* <: js.UndefOr[ResponseType] */](url: String, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def get[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    inline def get[RT /* <: js.UndefOr[ResponseType] */](url: String, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make OPTIONS request.
@@ -141,16 +124,11 @@ object httpMod {
       * @param params - Request parameters.
       * @returns Resulting response.
       */
-    @scala.inline
-    def options[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make PATCH request.
@@ -160,16 +138,11 @@ object httpMod {
       * @param params - Request parameters.
       * @returns Resulting response.
       */
-    @scala.inline
-    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make POST request.
@@ -183,16 +156,11 @@ object httpMod {
       * let headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
       * http.post(url, formData, { headers: headers });
       */
-    @scala.inline
-    def post[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make PUT request.
@@ -202,16 +170,11 @@ object httpMod {
       * @param params - Request parameters.
       * @returns Resulting response.
       */
-    @scala.inline
-    def put[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make request.
@@ -226,16 +189,11 @@ object httpMod {
       * let headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
       * http.request('POST', url, formData, { headers: headers });
       */
-    @scala.inline
-    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-    @scala.inline
-    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   }
   
   @JSImport("k6/http", "CookieJar")
@@ -351,99 +309,57 @@ object httpMod {
   @js.native
   val TLS_1_3: /* "tls1.3" */ String = js.native
   
-  @scala.inline
-  def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("batch")(requests.asInstanceOf[js.Any]).asInstanceOf[BatchResponses[Q]]
+  inline def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("batch")(requests.asInstanceOf[js.Any]).asInstanceOf[BatchResponses[Q]]
   
-  @scala.inline
-  def cookieJar(): CookieJar_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cookieJar")().asInstanceOf[CookieJar_]
+  inline def cookieJar(): CookieJar_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cookieJar")().asInstanceOf[CookieJar_]
   
-  @scala.inline
-  def del[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @scala.inline
-  def file(data: String): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
-  @scala.inline
-  def file(data: String, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
-  @scala.inline
-  def file(data: String, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
-  @scala.inline
-  def file(data: String, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
-  @scala.inline
-  def file(data: bytes): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
-  @scala.inline
-  def file(data: bytes, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
-  @scala.inline
-  def file(data: bytes, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
-  @scala.inline
-  def file(data: bytes, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  inline def file(data: String): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
+  inline def file(data: String, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  inline def file(data: String, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  inline def file(data: String, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  inline def file(data: bytes): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
+  inline def file(data: bytes, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  inline def file(data: bytes, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  inline def file(data: bytes, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
   
-  @scala.inline
-  def get[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def get[RT /* <: js.UndefOr[ResponseType] */](url: String, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def get[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  inline def get[RT /* <: js.UndefOr[ResponseType] */](url: String, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @scala.inline
-  def options[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @scala.inline
-  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @scala.inline
-  def post[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @scala.inline
-  def put[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @scala.inline
-  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
-  @scala.inline
-  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  inline def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
   type ArrayBatchRequest = js.Tuple4[String, String, js.UndefOr[RequestBody | Null], js.UndefOr[Params | Null]]
   
@@ -457,14 +373,11 @@ object httpMod {
   trait AuthMethod extends StObject
   object AuthMethod {
     
-    @scala.inline
-    def basic: typings.k6.k6Strings.basic = "basic".asInstanceOf[typings.k6.k6Strings.basic]
+    inline def basic: typings.k6.k6Strings.basic = "basic".asInstanceOf[typings.k6.k6Strings.basic]
     
-    @scala.inline
-    def digest: typings.k6.k6Strings.digest = "digest".asInstanceOf[typings.k6.k6Strings.digest]
+    inline def digest: typings.k6.k6Strings.digest = "digest".asInstanceOf[typings.k6.k6Strings.digest]
     
-    @scala.inline
-    def ntlm: typings.k6.k6Strings.ntlm = "ntlm".asInstanceOf[typings.k6.k6Strings.ntlm]
+    inline def ntlm: typings.k6.k6Strings.ntlm = "ntlm".asInstanceOf[typings.k6.k6Strings.ntlm]
   }
   
   type BatchRequest = String | ArrayBatchRequest | ObjectBatchRequest
@@ -505,80 +418,55 @@ object httpMod {
   trait CipherSuite extends StObject
   object CipherSuite {
     
-    @scala.inline
-    def TLS_AES_128_GCM_SHA256: typings.k6.k6Strings.TLS_AES_128_GCM_SHA256 = "TLS_AES_128_GCM_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_AES_128_GCM_SHA256]
+    inline def TLS_AES_128_GCM_SHA256: typings.k6.k6Strings.TLS_AES_128_GCM_SHA256 = "TLS_AES_128_GCM_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_AES_128_GCM_SHA256]
     
-    @scala.inline
-    def TLS_AES_256_GCM_SHA384: typings.k6.k6Strings.TLS_AES_256_GCM_SHA384 = "TLS_AES_256_GCM_SHA384".asInstanceOf[typings.k6.k6Strings.TLS_AES_256_GCM_SHA384]
+    inline def TLS_AES_256_GCM_SHA384: typings.k6.k6Strings.TLS_AES_256_GCM_SHA384 = "TLS_AES_256_GCM_SHA384".asInstanceOf[typings.k6.k6Strings.TLS_AES_256_GCM_SHA384]
     
-    @scala.inline
-    def TLS_CHACHA20_POLY1305_SHA256: typings.k6.k6Strings.TLS_CHACHA20_POLY1305_SHA256 = "TLS_CHACHA20_POLY1305_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_CHACHA20_POLY1305_SHA256]
+    inline def TLS_CHACHA20_POLY1305_SHA256: typings.k6.k6Strings.TLS_CHACHA20_POLY1305_SHA256 = "TLS_CHACHA20_POLY1305_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_CHACHA20_POLY1305_SHA256]
     
-    @scala.inline
-    def TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA]
+    inline def TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA]
     
-    @scala.inline
-    def TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256]
+    inline def TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256]
     
-    @scala.inline
-    def TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 = "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256]
+    inline def TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 = "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256]
     
-    @scala.inline
-    def TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA = "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA]
+    inline def TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA = "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA]
     
-    @scala.inline
-    def TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 = "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384]
+    inline def TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 = "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384]
     
-    @scala.inline
-    def TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305 = "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305]
+    inline def TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305 = "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305]
     
-    @scala.inline
-    def TLS_ECDHE_ECDSA_WITH_RC4_128_SHA: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_RC4_128_SHA = "TLS_ECDHE_ECDSA_WITH_RC4_128_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_RC4_128_SHA]
+    inline def TLS_ECDHE_ECDSA_WITH_RC4_128_SHA: typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_RC4_128_SHA = "TLS_ECDHE_ECDSA_WITH_RC4_128_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_ECDSA_WITH_RC4_128_SHA]
     
-    @scala.inline
-    def TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA = "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA]
+    inline def TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA = "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA]
     
-    @scala.inline
-    def TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA = "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]
+    inline def TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA = "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA]
     
-    @scala.inline
-    def TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 = "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]
+    inline def TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 = "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256]
     
-    @scala.inline
-    def TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 = "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256]
+    inline def TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 = "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256]
     
-    @scala.inline
-    def TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA = "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]
+    inline def TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA = "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]
     
-    @scala.inline
-    def TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 = "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384]
+    inline def TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 = "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384]
     
-    @scala.inline
-    def TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305 = "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305]
+    inline def TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305 = "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305]
     
-    @scala.inline
-    def TLS_ECDHE_RSA_WITH_RC4_128_SHA: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_RC4_128_SHA = "TLS_ECDHE_RSA_WITH_RC4_128_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_RC4_128_SHA]
+    inline def TLS_ECDHE_RSA_WITH_RC4_128_SHA: typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_RC4_128_SHA = "TLS_ECDHE_RSA_WITH_RC4_128_SHA".asInstanceOf[typings.k6.k6Strings.TLS_ECDHE_RSA_WITH_RC4_128_SHA]
     
-    @scala.inline
-    def TLS_RSA_WITH_3DES_EDE_CBC_SHA: typings.k6.k6Strings.TLS_RSA_WITH_3DES_EDE_CBC_SHA = "TLS_RSA_WITH_3DES_EDE_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_3DES_EDE_CBC_SHA]
+    inline def TLS_RSA_WITH_3DES_EDE_CBC_SHA: typings.k6.k6Strings.TLS_RSA_WITH_3DES_EDE_CBC_SHA = "TLS_RSA_WITH_3DES_EDE_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_3DES_EDE_CBC_SHA]
     
-    @scala.inline
-    def TLS_RSA_WITH_AES_128_CBC_SHA: typings.k6.k6Strings.TLS_RSA_WITH_AES_128_CBC_SHA = "TLS_RSA_WITH_AES_128_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_128_CBC_SHA]
+    inline def TLS_RSA_WITH_AES_128_CBC_SHA: typings.k6.k6Strings.TLS_RSA_WITH_AES_128_CBC_SHA = "TLS_RSA_WITH_AES_128_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_128_CBC_SHA]
     
-    @scala.inline
-    def TLS_RSA_WITH_AES_128_CBC_SHA256: typings.k6.k6Strings.TLS_RSA_WITH_AES_128_CBC_SHA256 = "TLS_RSA_WITH_AES_128_CBC_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_128_CBC_SHA256]
+    inline def TLS_RSA_WITH_AES_128_CBC_SHA256: typings.k6.k6Strings.TLS_RSA_WITH_AES_128_CBC_SHA256 = "TLS_RSA_WITH_AES_128_CBC_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_128_CBC_SHA256]
     
-    @scala.inline
-    def TLS_RSA_WITH_AES_128_GCM_SHA256: typings.k6.k6Strings.TLS_RSA_WITH_AES_128_GCM_SHA256 = "TLS_RSA_WITH_AES_128_GCM_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_128_GCM_SHA256]
+    inline def TLS_RSA_WITH_AES_128_GCM_SHA256: typings.k6.k6Strings.TLS_RSA_WITH_AES_128_GCM_SHA256 = "TLS_RSA_WITH_AES_128_GCM_SHA256".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_128_GCM_SHA256]
     
-    @scala.inline
-    def TLS_RSA_WITH_AES_256_CBC_SHA: typings.k6.k6Strings.TLS_RSA_WITH_AES_256_CBC_SHA = "TLS_RSA_WITH_AES_256_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_256_CBC_SHA]
+    inline def TLS_RSA_WITH_AES_256_CBC_SHA: typings.k6.k6Strings.TLS_RSA_WITH_AES_256_CBC_SHA = "TLS_RSA_WITH_AES_256_CBC_SHA".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_256_CBC_SHA]
     
-    @scala.inline
-    def TLS_RSA_WITH_AES_256_GCM_SHA384: typings.k6.k6Strings.TLS_RSA_WITH_AES_256_GCM_SHA384 = "TLS_RSA_WITH_AES_256_GCM_SHA384".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_256_GCM_SHA384]
+    inline def TLS_RSA_WITH_AES_256_GCM_SHA384: typings.k6.k6Strings.TLS_RSA_WITH_AES_256_GCM_SHA384 = "TLS_RSA_WITH_AES_256_GCM_SHA384".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_AES_256_GCM_SHA384]
     
-    @scala.inline
-    def TLS_RSA_WITH_RC4_128_SHA: typings.k6.k6Strings.TLS_RSA_WITH_RC4_128_SHA = "TLS_RSA_WITH_RC4_128_SHA".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_RC4_128_SHA]
+    inline def TLS_RSA_WITH_RC4_128_SHA: typings.k6.k6Strings.TLS_RSA_WITH_RC4_128_SHA = "TLS_RSA_WITH_RC4_128_SHA".asInstanceOf[typings.k6.k6Strings.TLS_RSA_WITH_RC4_128_SHA]
   }
   
   type CookieJarCookies = StringDictionary[js.Array[String]]
@@ -605,50 +493,36 @@ object httpMod {
   }
   object CookieOptions {
     
-    @scala.inline
-    def apply(): CookieOptions = {
+    inline def apply(): CookieOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CookieOptions]
     }
     
-    @scala.inline
-    implicit class CookieOptionsMutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CookieOptions](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setHttp_only(value: Boolean): Self = StObject.set(x, "http_only", value.asInstanceOf[js.Any])
+      inline def setHttp_only(value: Boolean): Self = StObject.set(x, "http_only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttp_onlyUndefined: Self = StObject.set(x, "http_only", js.undefined)
+      inline def setHttp_onlyUndefined: Self = StObject.set(x, "http_only", js.undefined)
       
-      @scala.inline
-      def setMax_age(value: Double): Self = StObject.set(x, "max_age", value.asInstanceOf[js.Any])
+      inline def setMax_age(value: Double): Self = StObject.set(x, "max_age", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_ageUndefined: Self = StObject.set(x, "max_age", js.undefined)
+      inline def setMax_ageUndefined: Self = StObject.set(x, "max_age", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     }
   }
   
@@ -668,38 +542,28 @@ object httpMod {
   }
   object ObjectBatchRequest {
     
-    @scala.inline
-    def apply(method: String, url: String): ObjectBatchRequest = {
+    inline def apply(method: String, url: String): ObjectBatchRequest = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectBatchRequest]
     }
     
-    @scala.inline
-    implicit class ObjectBatchRequestMutableBuilder[Self <: ObjectBatchRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectBatchRequest](x: Self) {
       
-      @scala.inline
-      def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsNull: Self = StObject.set(x, "params", null)
+      inline def setParamsNull: Self = StObject.set(x, "params", null)
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -715,38 +579,28 @@ object httpMod {
   }
   object ObjectRefinedBatchRequest {
     
-    @scala.inline
-    def apply[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): ObjectRefinedBatchRequest[RT] = {
+    inline def apply[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): ObjectRefinedBatchRequest[RT] = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjectRefinedBatchRequest[RT]]
     }
     
-    @scala.inline
-    implicit class ObjectRefinedBatchRequestMutableBuilder[Self <: ObjectRefinedBatchRequest[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & ObjectRefinedBatchRequest[RT]) extends AnyVal {
+    extension [Self <: ObjectRefinedBatchRequest[?], RT /* <: js.UndefOr[ResponseType] */](x: Self & ObjectRefinedBatchRequest[RT]) {
       
-      @scala.inline
-      def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: RefinedParams[RT]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: RefinedParams[RT]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsNull: Self = StObject.set(x, "params", null)
+      inline def setParamsNull: Self = StObject.set(x, "params", null)
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -781,68 +635,48 @@ object httpMod {
   }
   object Params {
     
-    @scala.inline
-    def apply(): Params = {
+    inline def apply(): Params = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setAuth(value: AuthMethod): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: AuthMethod): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setCookies(value: StringDictionary[ParamsCookieValue]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: StringDictionary[ParamsCookieValue]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setJar(value: CookieJar_): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
+      inline def setJar(value: CookieJar_): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJarUndefined: Self = StObject.set(x, "jar", js.undefined)
+      inline def setJarUndefined: Self = StObject.set(x, "jar", js.undefined)
       
-      @scala.inline
-      def setRedirects(value: Double): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
+      inline def setRedirects(value: Double): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
+      inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: ResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: ResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -856,14 +690,11 @@ object httpMod {
   trait Protocol extends StObject
   object Protocol {
     
-    @scala.inline
-    def HTTPSlash1Dot0: typings.k6.k6Strings.HTTPSlash1Dot0 = "HTTP/1.0".asInstanceOf[typings.k6.k6Strings.HTTPSlash1Dot0]
+    inline def HTTPSlash1Dot0: typings.k6.k6Strings.HTTPSlash1Dot0 = "HTTP/1.0".asInstanceOf[typings.k6.k6Strings.HTTPSlash1Dot0]
     
-    @scala.inline
-    def HTTPSlash1Dot1: typings.k6.k6Strings.HTTPSlash1Dot1 = "HTTP/1.1".asInstanceOf[typings.k6.k6Strings.HTTPSlash1Dot1]
+    inline def HTTPSlash1Dot1: typings.k6.k6Strings.HTTPSlash1Dot1 = "HTTP/1.1".asInstanceOf[typings.k6.k6Strings.HTTPSlash1Dot1]
     
-    @scala.inline
-    def HTTPSlash2Dot0: typings.k6.k6Strings.HTTPSlash2Dot0 = "HTTP/2.0".asInstanceOf[typings.k6.k6Strings.HTTPSlash2Dot0]
+    inline def HTTPSlash2Dot0: typings.k6.k6Strings.HTTPSlash2Dot0 = "HTTP/2.0".asInstanceOf[typings.k6.k6Strings.HTTPSlash2Dot0]
   }
   
   type RefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] = String | ArrayRefinedBatchRequest[RT] | ObjectRefinedBatchRequest[RT]
@@ -877,20 +708,16 @@ object httpMod {
   }
   object RefinedParams {
     
-    @scala.inline
-    def apply[RT /* <: js.UndefOr[ResponseType] */](): RefinedParams[RT] = {
+    inline def apply[RT /* <: js.UndefOr[ResponseType] */](): RefinedParams[RT] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefinedParams[RT]]
     }
     
-    @scala.inline
-    implicit class RefinedParamsMutableBuilder[Self <: RefinedParams[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & RefinedParams[RT]) extends AnyVal {
+    extension [Self <: RefinedParams[?], RT /* <: js.UndefOr[ResponseType] */](x: Self & RefinedParams[RT]) {
       
-      @scala.inline
-      def setResponseType(value: RT): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: RT): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     }
   }
   
@@ -920,23 +747,18 @@ object httpMod {
   }
   object RequestCookie {
     
-    @scala.inline
-    def apply(name: String, replace: Boolean, value: String): RequestCookie = {
+    inline def apply(name: String, replace: Boolean, value: String): RequestCookie = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], replace = replace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestCookie]
     }
     
-    @scala.inline
-    implicit class RequestCookieMutableBuilder[Self <: RequestCookie] (val x: Self) extends AnyVal {
+    extension [Self <: RequestCookie](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1065,8 +887,7 @@ object httpMod {
   }
   object ResponseCookie {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domain: String,
       expires: Double,
       httpOnly: Boolean,
@@ -1080,32 +901,23 @@ object httpMod {
       __obj.asInstanceOf[ResponseCookie]
     }
     
-    @scala.inline
-    implicit class ResponseCookieMutableBuilder[Self <: ResponseCookie] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseCookie](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1117,14 +929,11 @@ object httpMod {
   trait ResponseType extends StObject
   object ResponseType {
     
-    @scala.inline
-    def binary: typings.k6.k6Strings.binary = "binary".asInstanceOf[typings.k6.k6Strings.binary]
+    inline def binary: typings.k6.k6Strings.binary = "binary".asInstanceOf[typings.k6.k6Strings.binary]
     
-    @scala.inline
-    def none: typings.k6.k6Strings.none = "none".asInstanceOf[typings.k6.k6Strings.none]
+    inline def none: typings.k6.k6Strings.none = "none".asInstanceOf[typings.k6.k6Strings.none]
     
-    @scala.inline
-    def text: typings.k6.k6Strings.text = "text".asInstanceOf[typings.k6.k6Strings.text]
+    inline def text: typings.k6.k6Strings.text = "text".asInstanceOf[typings.k6.k6Strings.text]
   }
   
   type StructuredRequestBody = StringDictionary[String | FileData]

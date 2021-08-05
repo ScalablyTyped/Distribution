@@ -21,18 +21,14 @@ object Quaternion {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def axisAngle(x: Double, y: Double, z: Double, angleRads: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("axisAngle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], angleRads.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+  inline def axisAngle(x: Double, y: Double, z: Double, angleRads: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("axisAngle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], angleRads.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
   
   @JSImport("seen", "Quaternion.pixelsPerRadian")
   @js.native
   def pixelsPerRadian: Double = js.native
-  @scala.inline
-  def pixelsPerRadian_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pixelsPerRadian")(x.asInstanceOf[js.Any])
+  inline def pixelsPerRadian_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pixelsPerRadian")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def pointAngle(p: Point, angleRads: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAngle")(p.asInstanceOf[js.Any], angleRads.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
+  inline def pointAngle(p: Point, angleRads: Double): Quaternion = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAngle")(p.asInstanceOf[js.Any], angleRads.asInstanceOf[js.Any])).asInstanceOf[Quaternion]
   
-  @scala.inline
-  def xyToTransform(x: Double, y: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("xyToTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def xyToTransform(x: Double, y: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("xyToTransform")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

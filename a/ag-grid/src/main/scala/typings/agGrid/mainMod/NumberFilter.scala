@@ -20,6 +20,5 @@ object NumberFilter {
   @JSImport("ag-grid/dist/lib/main", "NumberFilter.LESS_THAN")
   @js.native
   def LESS_THAN: String = js.native
-  @scala.inline
-  def LESS_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN")(x.asInstanceOf[js.Any])
+  inline def LESS_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN")(x.asInstanceOf[js.Any])
 }

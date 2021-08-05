@@ -33,8 +33,7 @@ trait GetSampledRequestsRequest extends StObject {
 }
 object GetSampledRequestsRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MaxItems: ListMaxItems,
     RuleMetricName: MetricName,
     Scope: Scope,
@@ -45,22 +44,16 @@ object GetSampledRequestsRequest {
     __obj.asInstanceOf[GetSampledRequestsRequest]
   }
   
-  @scala.inline
-  implicit class GetSampledRequestsRequestMutableBuilder[Self <: GetSampledRequestsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSampledRequestsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxItems(value: ListMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: ListMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleMetricName(value: MetricName): Self = StObject.set(x, "RuleMetricName", value.asInstanceOf[js.Any])
+    inline def setRuleMetricName(value: MetricName): Self = StObject.set(x, "RuleMetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
+    inline def setTimeWindow(value: TimeWindow): Self = StObject.set(x, "TimeWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAclArn(value: ResourceArn): Self = StObject.set(x, "WebAclArn", value.asInstanceOf[js.Any])
+    inline def setWebAclArn(value: ResourceArn): Self = StObject.set(x, "WebAclArn", value.asInstanceOf[js.Any])
   }
 }

@@ -23,46 +23,33 @@ trait WorkflowNode extends StObject {
 }
 object WorkflowNode {
   
-  @scala.inline
-  def apply(): WorkflowNode = {
+  inline def apply(): WorkflowNode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkflowNode]
   }
   
-  @scala.inline
-  implicit class WorkflowNodeMutableBuilder[Self <: WorkflowNode] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowNode](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setPrerequisiteStepIds(value: js.Array[String]): Self = StObject.set(x, "prerequisiteStepIds", value.asInstanceOf[js.Any])
+    inline def setPrerequisiteStepIds(value: js.Array[String]): Self = StObject.set(x, "prerequisiteStepIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrerequisiteStepIdsUndefined: Self = StObject.set(x, "prerequisiteStepIds", js.undefined)
+    inline def setPrerequisiteStepIdsUndefined: Self = StObject.set(x, "prerequisiteStepIds", js.undefined)
     
-    @scala.inline
-    def setPrerequisiteStepIdsVarargs(value: String*): Self = StObject.set(x, "prerequisiteStepIds", js.Array(value :_*))
+    inline def setPrerequisiteStepIdsVarargs(value: String*): Self = StObject.set(x, "prerequisiteStepIds", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
+    inline def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
+    inline def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
   }
 }

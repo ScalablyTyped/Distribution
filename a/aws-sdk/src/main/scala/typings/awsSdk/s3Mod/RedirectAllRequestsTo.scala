@@ -18,22 +18,17 @@ trait RedirectAllRequestsTo extends StObject {
 }
 object RedirectAllRequestsTo {
   
-  @scala.inline
-  def apply(HostName: HostName): RedirectAllRequestsTo = {
+  inline def apply(HostName: HostName): RedirectAllRequestsTo = {
     val __obj = js.Dynamic.literal(HostName = HostName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectAllRequestsTo]
   }
   
-  @scala.inline
-  implicit class RedirectAllRequestsToMutableBuilder[Self <: RedirectAllRequestsTo] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectAllRequestsTo](x: Self) {
     
-    @scala.inline
-    def setHostName(value: HostName): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
+    inline def setHostName(value: HostName): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: Protocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "Protocol", js.undefined)
   }
 }

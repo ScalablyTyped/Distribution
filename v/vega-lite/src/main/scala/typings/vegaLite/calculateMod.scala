@@ -24,11 +24,11 @@ object calculateMod {
   class CalculateNode protected () extends DataFlowNode {
     def this(parent: DataFlowNode, transform: CalculateTransform) = this()
     
-    var _dependentFields: js.Any = js.native
+    /* private */ var _dependentFields: js.Any = js.native
     
     def assemble(): FormulaTransform = js.native
     
-    val transform: js.Any = js.native
+    /* private */ val transform: js.Any = js.native
   }
   /* static members */
   object CalculateNode {
@@ -37,17 +37,14 @@ object calculateMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def parseAllForSortIndex(parent: DataFlowNode, model: ModelWithField): DataFlowNode = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllForSortIndex")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[DataFlowNode]
+    inline def parseAllForSortIndex(parent: DataFlowNode, model: ModelWithField): DataFlowNode = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAllForSortIndex")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[DataFlowNode]
   }
   
-  @scala.inline
-  def sortArrayIndexField_binned(
+  inline def sortArrayIndexField_binned(
     fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
     channel: SingleDefChannel
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sortArrayIndexField")(fieldDef.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sortArrayIndexField_binned(
+  inline def sortArrayIndexField_binned(
     fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
     channel: SingleDefChannel,
     opt: FieldRefOption

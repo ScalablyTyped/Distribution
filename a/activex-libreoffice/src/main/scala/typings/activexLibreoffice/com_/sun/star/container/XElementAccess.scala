@@ -22,8 +22,7 @@ trait XElementAccess
 }
 object XElementAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     acquire: () => Unit,
     getElementType: () => `type`,
@@ -35,16 +34,12 @@ object XElementAccess {
     __obj.asInstanceOf[XElementAccess]
   }
   
-  @scala.inline
-  implicit class XElementAccessMutableBuilder[Self <: XElementAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XElementAccess](x: Self) {
     
-    @scala.inline
-    def setElementType(value: `type`): Self = StObject.set(x, "ElementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: `type`): Self = StObject.set(x, "ElementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetElementType(value: () => `type`): Self = StObject.set(x, "getElementType", js.Any.fromFunction0(value))
+    inline def setGetElementType(value: () => `type`): Self = StObject.set(x, "getElementType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasElements(value: () => Boolean): Self = StObject.set(x, "hasElements", js.Any.fromFunction0(value))
+    inline def setHasElements(value: () => Boolean): Self = StObject.set(x, "hasElements", js.Any.fromFunction0(value))
   }
 }

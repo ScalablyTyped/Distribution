@@ -11,6 +11,5 @@ object sortChildrenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(children: js.Array[RouteNode]): js.Array[RouteNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteNode]]
+  inline def default(children: js.Array[RouteNode]): js.Array[RouteNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteNode]]
 }

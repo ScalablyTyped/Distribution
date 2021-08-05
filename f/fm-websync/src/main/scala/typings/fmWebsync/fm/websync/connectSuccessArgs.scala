@@ -16,16 +16,13 @@ trait connectSuccessArgs
 }
 object connectSuccessArgs {
   
-  @scala.inline
-  def apply(client: client, clientId: String, isReconnect: Boolean, meta: js.Any, timestamp: Date): connectSuccessArgs = {
+  inline def apply(client: client, clientId: String, isReconnect: Boolean, meta: js.Any, timestamp: Date): connectSuccessArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], isReconnect = isReconnect.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[connectSuccessArgs]
   }
   
-  @scala.inline
-  implicit class connectSuccessArgsMutableBuilder[Self <: connectSuccessArgs] (val x: Self) extends AnyVal {
+  extension [Self <: connectSuccessArgs](x: Self) {
     
-    @scala.inline
-    def setIsReconnect(value: Boolean): Self = StObject.set(x, "isReconnect", value.asInstanceOf[js.Any])
+    inline def setIsReconnect(value: Boolean): Self = StObject.set(x, "isReconnect", value.asInstanceOf[js.Any])
   }
 }

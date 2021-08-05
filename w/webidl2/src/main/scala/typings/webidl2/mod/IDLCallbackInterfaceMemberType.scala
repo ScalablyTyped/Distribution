@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IDLCallbackInterfaceMemberType extends StObject
 object IDLCallbackInterfaceMemberType {
   
-  @scala.inline
-  def ConstantMemberType(
+  inline def ConstantMemberType(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
@@ -25,8 +24,7 @@ object IDLCallbackInterfaceMemberType {
     __obj.asInstanceOf[typings.webidl2.mod.ConstantMemberType]
   }
   
-  @scala.inline
-  def OperationMemberType(
+  inline def OperationMemberType(
     arguments: js.Array[Argument],
     extAttrs: js.Array[ExtendedAttribute],
     parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType

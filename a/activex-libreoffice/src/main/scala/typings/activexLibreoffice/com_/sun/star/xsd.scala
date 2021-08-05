@@ -60,62 +60,43 @@ object xsd {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def BOOLEAN: `2` = 2.asInstanceOf[`2`]
+      inline def BOOLEAN: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def DATE: `9` = 9.asInstanceOf[`9`]
+      inline def DATE: `9` = 9.asInstanceOf[`9`]
       
-      @scala.inline
-      def DATETIME: `7` = 7.asInstanceOf[`7`]
+      inline def DATETIME: `7` = 7.asInstanceOf[`7`]
       
-      @scala.inline
-      def DECIMAL: `3` = 3.asInstanceOf[`3`]
+      inline def DECIMAL: `3` = 3.asInstanceOf[`3`]
       
-      @scala.inline
-      def DOUBLE: `5` = 5.asInstanceOf[`5`]
+      inline def DOUBLE: `5` = 5.asInstanceOf[`5`]
       
-      @scala.inline
-      def DURATION: `6` = 6.asInstanceOf[`6`]
+      inline def DURATION: `6` = 6.asInstanceOf[`6`]
       
-      @scala.inline
-      def FLOAT: `4` = 4.asInstanceOf[`4`]
+      inline def FLOAT: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def NOTATION: `19` = 19.asInstanceOf[`19`]
+      inline def NOTATION: `19` = 19.asInstanceOf[`19`]
       
-      @scala.inline
-      def QName: `18` = 18.asInstanceOf[`18`]
+      inline def QName: `18` = 18.asInstanceOf[`18`]
       
-      @scala.inline
-      def STRING: `1` = 1.asInstanceOf[`1`]
+      inline def STRING: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def TIME: `8` = 8.asInstanceOf[`8`]
+      inline def TIME: `8` = 8.asInstanceOf[`8`]
       
-      @scala.inline
-      def anyURI: `17` = 17.asInstanceOf[`17`]
+      inline def anyURI: `17` = 17.asInstanceOf[`17`]
       
-      @scala.inline
-      def base64Binary: `16` = 16.asInstanceOf[`16`]
+      inline def base64Binary: `16` = 16.asInstanceOf[`16`]
       
-      @scala.inline
-      def gDay: `13` = 13.asInstanceOf[`13`]
+      inline def gDay: `13` = 13.asInstanceOf[`13`]
       
-      @scala.inline
-      def gMonth: `14` = 14.asInstanceOf[`14`]
+      inline def gMonth: `14` = 14.asInstanceOf[`14`]
       
-      @scala.inline
-      def gMonthDay: `12` = 12.asInstanceOf[`12`]
+      inline def gMonthDay: `12` = 12.asInstanceOf[`12`]
       
-      @scala.inline
-      def gYear: `11` = 11.asInstanceOf[`11`]
+      inline def gYear: `11` = 11.asInstanceOf[`11`]
       
-      @scala.inline
-      def gYearMonth: `10` = 10.asInstanceOf[`10`]
+      inline def gYearMonth: `10` = 10.asInstanceOf[`10`]
       
-      @scala.inline
-      def hexBinary: `15` = 15.asInstanceOf[`15`]
+      inline def hexBinary: `15` = 15.asInstanceOf[`15`]
     }
   }
   
@@ -150,8 +131,7 @@ object xsd {
   }
   object Date {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IsBasic: scala.Boolean,
       MaxExclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date,
       MaxInclusiveDate: typings.activexLibreoffice.com_.sun.star.util.Date,
@@ -179,20 +159,15 @@ object xsd {
       __obj.asInstanceOf[Date]
     }
     
-    @scala.inline
-    implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+    extension [Self <: Date](x: Self) {
       
-      @scala.inline
-      def setMaxExclusiveDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "MaxExclusiveDate", value.asInstanceOf[js.Any])
+      inline def setMaxExclusiveDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "MaxExclusiveDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInclusiveDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "MaxInclusiveDate", value.asInstanceOf[js.Any])
+      inline def setMaxInclusiveDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "MaxInclusiveDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinExclusiveDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "MinExclusiveDate", value.asInstanceOf[js.Any])
+      inline def setMinExclusiveDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "MinExclusiveDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinInclusiveDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "MinInclusiveDate", value.asInstanceOf[js.Any])
+      inline def setMinInclusiveDate(value: typings.activexLibreoffice.com_.sun.star.util.Date): Self = StObject.set(x, "MinInclusiveDate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,8 +202,7 @@ object xsd {
   }
   object DateTime {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IsBasic: scala.Boolean,
       MaxExclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime,
       MaxInclusiveDateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime,
@@ -256,20 +230,15 @@ object xsd {
       __obj.asInstanceOf[DateTime]
     }
     
-    @scala.inline
-    implicit class DateTimeMutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
+    extension [Self <: DateTime](x: Self) {
       
-      @scala.inline
-      def setMaxExclusiveDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "MaxExclusiveDateTime", value.asInstanceOf[js.Any])
+      inline def setMaxExclusiveDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "MaxExclusiveDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInclusiveDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "MaxInclusiveDateTime", value.asInstanceOf[js.Any])
+      inline def setMaxInclusiveDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "MaxInclusiveDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinExclusiveDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "MinExclusiveDateTime", value.asInstanceOf[js.Any])
+      inline def setMinExclusiveDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "MinExclusiveDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinInclusiveDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "MinInclusiveDateTime", value.asInstanceOf[js.Any])
+      inline def setMinInclusiveDateTime(value: typings.activexLibreoffice.com_.sun.star.util.DateTime): Self = StObject.set(x, "MinInclusiveDateTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,8 +273,7 @@ object xsd {
   }
   object Day {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IsBasic: scala.Boolean,
       MaxExclusiveInt: Double,
       MaxInclusiveInt: Double,
@@ -333,20 +301,15 @@ object xsd {
       __obj.asInstanceOf[Day]
     }
     
-    @scala.inline
-    implicit class DayMutableBuilder[Self <: Day] (val x: Self) extends AnyVal {
+    extension [Self <: Day](x: Self) {
       
-      @scala.inline
-      def setMaxExclusiveInt(value: Double): Self = StObject.set(x, "MaxExclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMaxExclusiveInt(value: Double): Self = StObject.set(x, "MaxExclusiveInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInclusiveInt(value: Double): Self = StObject.set(x, "MaxInclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMaxInclusiveInt(value: Double): Self = StObject.set(x, "MaxInclusiveInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinExclusiveInt(value: Double): Self = StObject.set(x, "MinExclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMinExclusiveInt(value: Double): Self = StObject.set(x, "MinExclusiveInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinInclusiveInt(value: Double): Self = StObject.set(x, "MinInclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMinInclusiveInt(value: Double): Self = StObject.set(x, "MinInclusiveInt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -399,8 +362,7 @@ object xsd {
   }
   object Decimal {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FractionDigits: Double,
       IsBasic: scala.Boolean,
       MaxExclusiveDouble: Double,
@@ -430,26 +392,19 @@ object xsd {
       __obj.asInstanceOf[Decimal]
     }
     
-    @scala.inline
-    implicit class DecimalMutableBuilder[Self <: Decimal] (val x: Self) extends AnyVal {
+    extension [Self <: Decimal](x: Self) {
       
-      @scala.inline
-      def setFractionDigits(value: Double): Self = StObject.set(x, "FractionDigits", value.asInstanceOf[js.Any])
+      inline def setFractionDigits(value: Double): Self = StObject.set(x, "FractionDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxExclusiveDouble(value: Double): Self = StObject.set(x, "MaxExclusiveDouble", value.asInstanceOf[js.Any])
+      inline def setMaxExclusiveDouble(value: Double): Self = StObject.set(x, "MaxExclusiveDouble", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInclusiveDouble(value: Double): Self = StObject.set(x, "MaxInclusiveDouble", value.asInstanceOf[js.Any])
+      inline def setMaxInclusiveDouble(value: Double): Self = StObject.set(x, "MaxInclusiveDouble", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinExclusiveDouble(value: Double): Self = StObject.set(x, "MinExclusiveDouble", value.asInstanceOf[js.Any])
+      inline def setMinExclusiveDouble(value: Double): Self = StObject.set(x, "MinExclusiveDouble", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinInclusiveDouble(value: Double): Self = StObject.set(x, "MinInclusiveDouble", value.asInstanceOf[js.Any])
+      inline def setMinInclusiveDouble(value: Double): Self = StObject.set(x, "MinInclusiveDouble", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDigits(value: Double): Self = StObject.set(x, "TotalDigits", value.asInstanceOf[js.Any])
+      inline def setTotalDigits(value: Double): Self = StObject.set(x, "TotalDigits", value.asInstanceOf[js.Any])
     }
   }
   
@@ -484,8 +439,7 @@ object xsd {
   }
   object Month {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IsBasic: scala.Boolean,
       MaxExclusiveInt: Double,
       MaxInclusiveInt: Double,
@@ -513,20 +467,15 @@ object xsd {
       __obj.asInstanceOf[Month]
     }
     
-    @scala.inline
-    implicit class MonthMutableBuilder[Self <: Month] (val x: Self) extends AnyVal {
+    extension [Self <: Month](x: Self) {
       
-      @scala.inline
-      def setMaxExclusiveInt(value: Double): Self = StObject.set(x, "MaxExclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMaxExclusiveInt(value: Double): Self = StObject.set(x, "MaxExclusiveInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInclusiveInt(value: Double): Self = StObject.set(x, "MaxInclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMaxInclusiveInt(value: Double): Self = StObject.set(x, "MaxInclusiveInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinExclusiveInt(value: Double): Self = StObject.set(x, "MinExclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMinExclusiveInt(value: Double): Self = StObject.set(x, "MinExclusiveInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinInclusiveInt(value: Double): Self = StObject.set(x, "MinInclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMinInclusiveInt(value: Double): Self = StObject.set(x, "MinInclusiveInt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -558,8 +507,7 @@ object xsd {
   }
   object String {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IsBasic: scala.Boolean,
       Length: Double,
       MaxLength: Double,
@@ -586,17 +534,13 @@ object xsd {
       __obj.asInstanceOf[String]
     }
     
-    @scala.inline
-    implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+    extension [Self <: String](x: Self) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "MinLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "MinLength", value.asInstanceOf[js.Any])
     }
   }
   
@@ -631,8 +575,7 @@ object xsd {
   }
   object Time {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IsBasic: scala.Boolean,
       MaxExclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time,
       MaxInclusiveTime: typings.activexLibreoffice.com_.sun.star.util.Time,
@@ -660,20 +603,15 @@ object xsd {
       __obj.asInstanceOf[Time]
     }
     
-    @scala.inline
-    implicit class TimeMutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
+    extension [Self <: Time](x: Self) {
       
-      @scala.inline
-      def setMaxExclusiveTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "MaxExclusiveTime", value.asInstanceOf[js.Any])
+      inline def setMaxExclusiveTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "MaxExclusiveTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInclusiveTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "MaxInclusiveTime", value.asInstanceOf[js.Any])
+      inline def setMaxInclusiveTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "MaxInclusiveTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinExclusiveTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "MinExclusiveTime", value.asInstanceOf[js.Any])
+      inline def setMinExclusiveTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "MinExclusiveTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinInclusiveTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "MinInclusiveTime", value.asInstanceOf[js.Any])
+      inline def setMinInclusiveTime(value: typings.activexLibreoffice.com_.sun.star.util.Time): Self = StObject.set(x, "MinInclusiveTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -687,14 +625,11 @@ object xsd {
     trait Constants extends StObject
     object Constants {
       
-      @scala.inline
-      def Collapse: `2` = 2.asInstanceOf[`2`]
+      inline def Collapse: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def Preserve: `0` = 0.asInstanceOf[`0`]
+      inline def Preserve: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def Replace: `1` = 1.asInstanceOf[`1`]
+      inline def Replace: `1` = 1.asInstanceOf[`1`]
     }
   }
   
@@ -739,8 +674,7 @@ object xsd {
   }
   object XDataType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IsBasic: scala.Boolean,
       Name: java.lang.String,
       Pattern: java.lang.String,
@@ -764,29 +698,21 @@ object xsd {
       __obj.asInstanceOf[XDataType]
     }
     
-    @scala.inline
-    implicit class XDataTypeMutableBuilder[Self <: XDataType] (val x: Self) extends AnyVal {
+    extension [Self <: XDataType](x: Self) {
       
-      @scala.inline
-      def setExplainInvalid(value: java.lang.String => java.lang.String): Self = StObject.set(x, "explainInvalid", js.Any.fromFunction1(value))
+      inline def setExplainInvalid(value: java.lang.String => java.lang.String): Self = StObject.set(x, "explainInvalid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsBasic(value: scala.Boolean): Self = StObject.set(x, "IsBasic", value.asInstanceOf[js.Any])
+      inline def setIsBasic(value: scala.Boolean): Self = StObject.set(x, "IsBasic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: java.lang.String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: java.lang.String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPattern(value: java.lang.String): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: java.lang.String): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeClass(value: Double): Self = StObject.set(x, "TypeClass", value.asInstanceOf[js.Any])
+      inline def setTypeClass(value: Double): Self = StObject.set(x, "TypeClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidate(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      inline def setValidate(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWhiteSpaceTreatment(value: Double): Self = StObject.set(x, "WhiteSpaceTreatment", value.asInstanceOf[js.Any])
+      inline def setWhiteSpaceTreatment(value: Double): Self = StObject.set(x, "WhiteSpaceTreatment", value.asInstanceOf[js.Any])
     }
   }
   
@@ -821,8 +747,7 @@ object xsd {
   }
   object Year {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IsBasic: scala.Boolean,
       MaxExclusiveInt: Double,
       MaxInclusiveInt: Double,
@@ -850,20 +775,15 @@ object xsd {
       __obj.asInstanceOf[Year]
     }
     
-    @scala.inline
-    implicit class YearMutableBuilder[Self <: Year] (val x: Self) extends AnyVal {
+    extension [Self <: Year](x: Self) {
       
-      @scala.inline
-      def setMaxExclusiveInt(value: Double): Self = StObject.set(x, "MaxExclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMaxExclusiveInt(value: Double): Self = StObject.set(x, "MaxExclusiveInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxInclusiveInt(value: Double): Self = StObject.set(x, "MaxInclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMaxInclusiveInt(value: Double): Self = StObject.set(x, "MaxInclusiveInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinExclusiveInt(value: Double): Self = StObject.set(x, "MinExclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMinExclusiveInt(value: Double): Self = StObject.set(x, "MinExclusiveInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinInclusiveInt(value: Double): Self = StObject.set(x, "MinInclusiveInt", value.asInstanceOf[js.Any])
+      inline def setMinInclusiveInt(value: Double): Self = StObject.set(x, "MinInclusiveInt", value.asInstanceOf[js.Any])
     }
   }
 }

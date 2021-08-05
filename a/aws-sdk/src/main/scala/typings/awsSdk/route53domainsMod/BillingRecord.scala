@@ -33,43 +33,31 @@ trait BillingRecord extends StObject {
 }
 object BillingRecord {
   
-  @scala.inline
-  def apply(): BillingRecord = {
+  inline def apply(): BillingRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingRecord]
   }
   
-  @scala.inline
-  implicit class BillingRecordMutableBuilder[Self <: BillingRecord] (val x: Self) extends AnyVal {
+  extension [Self <: BillingRecord](x: Self) {
     
-    @scala.inline
-    def setBillDate(value: Timestamp): Self = StObject.set(x, "BillDate", value.asInstanceOf[js.Any])
+    inline def setBillDate(value: Timestamp): Self = StObject.set(x, "BillDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillDateUndefined: Self = StObject.set(x, "BillDate", js.undefined)
+    inline def setBillDateUndefined: Self = StObject.set(x, "BillDate", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setInvoiceId(value: InvoiceId): Self = StObject.set(x, "InvoiceId", value.asInstanceOf[js.Any])
+    inline def setInvoiceId(value: InvoiceId): Self = StObject.set(x, "InvoiceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceIdUndefined: Self = StObject.set(x, "InvoiceId", js.undefined)
+    inline def setInvoiceIdUndefined: Self = StObject.set(x, "InvoiceId", js.undefined)
     
-    @scala.inline
-    def setOperation(value: OperationType): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: OperationType): Self = StObject.set(x, "Operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "Operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "Operation", js.undefined)
     
-    @scala.inline
-    def setPrice(value: Price): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Price): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "Price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "Price", js.undefined)
   }
 }

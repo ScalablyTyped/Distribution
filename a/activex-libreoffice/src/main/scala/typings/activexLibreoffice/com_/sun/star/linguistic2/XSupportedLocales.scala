@@ -34,8 +34,7 @@ trait XSupportedLocales
 }
 object XSupportedLocales {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Locales: SafeArray[Locale],
     acquire: () => Unit,
     getLocales: () => SafeArray[Locale],
@@ -47,16 +46,12 @@ object XSupportedLocales {
     __obj.asInstanceOf[XSupportedLocales]
   }
   
-  @scala.inline
-  implicit class XSupportedLocalesMutableBuilder[Self <: XSupportedLocales] (val x: Self) extends AnyVal {
+  extension [Self <: XSupportedLocales](x: Self) {
     
-    @scala.inline
-    def setGetLocales(value: () => SafeArray[Locale]): Self = StObject.set(x, "getLocales", js.Any.fromFunction0(value))
+    inline def setGetLocales(value: () => SafeArray[Locale]): Self = StObject.set(x, "getLocales", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasLocale(value: Locale => Boolean): Self = StObject.set(x, "hasLocale", js.Any.fromFunction1(value))
+    inline def setHasLocale(value: Locale => Boolean): Self = StObject.set(x, "hasLocale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocales(value: SafeArray[Locale]): Self = StObject.set(x, "Locales", value.asInstanceOf[js.Any])
+    inline def setLocales(value: SafeArray[Locale]): Self = StObject.set(x, "Locales", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait ListResourceDataSyncResult extends StObject {
 }
 object ListResourceDataSyncResult {
   
-  @scala.inline
-  def apply(): ListResourceDataSyncResult = {
+  inline def apply(): ListResourceDataSyncResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResourceDataSyncResult]
   }
   
-  @scala.inline
-  implicit class ListResourceDataSyncResultMutableBuilder[Self <: ListResourceDataSyncResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourceDataSyncResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceDataSyncItems(value: ResourceDataSyncItemList): Self = StObject.set(x, "ResourceDataSyncItems", value.asInstanceOf[js.Any])
+    inline def setResourceDataSyncItems(value: ResourceDataSyncItemList): Self = StObject.set(x, "ResourceDataSyncItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceDataSyncItemsUndefined: Self = StObject.set(x, "ResourceDataSyncItems", js.undefined)
+    inline def setResourceDataSyncItemsUndefined: Self = StObject.set(x, "ResourceDataSyncItems", js.undefined)
     
-    @scala.inline
-    def setResourceDataSyncItemsVarargs(value: ResourceDataSyncItem*): Self = StObject.set(x, "ResourceDataSyncItems", js.Array(value :_*))
+    inline def setResourceDataSyncItemsVarargs(value: ResourceDataSyncItem*): Self = StObject.set(x, "ResourceDataSyncItems", js.Array(value :_*))
   }
 }

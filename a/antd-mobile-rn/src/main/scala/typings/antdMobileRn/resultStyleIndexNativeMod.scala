@@ -29,11 +29,9 @@ object resultStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/result/style/index.native", "default.buttonWrap")
     @js.native
     def buttonWrap: FlexDirectionMarginTopPaddingHorizontal = js.native
-    @scala.inline
-    def buttonWrap_=(x: FlexDirectionMarginTopPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonWrap")(x.asInstanceOf[js.Any])
+    inline def buttonWrap_=(x: FlexDirectionMarginTopPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buttonWrap")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def button_=(x: FlexNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("button")(x.asInstanceOf[js.Any])
+    inline def button_=(x: FlexNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("button")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/result/style/index.native", "default.img")
     @js.native
@@ -42,11 +40,9 @@ object resultStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/result/style/index.native", "default.imgWrap")
     @js.native
     def imgWrap: Margin = js.native
-    @scala.inline
-    def imgWrap_=(x: Margin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imgWrap")(x.asInstanceOf[js.Any])
+    inline def imgWrap_=(x: Margin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imgWrap")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def img_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("img")(x.asInstanceOf[js.Any])
+    inline def img_=(x: HeightWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("img")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/result/style/index.native", "default.message")
     @js.native
@@ -55,17 +51,14 @@ object resultStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/result/style/index.native", "default.messageText")
     @js.native
     def messageText: ColorStringFontSizeNumber = js.native
-    @scala.inline
-    def messageText_=(x: ColorStringFontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messageText")(x.asInstanceOf[js.Any])
+    inline def messageText_=(x: ColorStringFontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("messageText")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def message_=(x: MarginTopPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
+    inline def message_=(x: MarginTopPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("message")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/result/style/index.native", "default.result")
     @js.native
     def result: BackgroundColorBorderBottomColor = js.native
-    @scala.inline
-    def result_=(x: BackgroundColorBorderBottomColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("result")(x.asInstanceOf[js.Any])
+    inline def result_=(x: BackgroundColorBorderBottomColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("result")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/result/style/index.native", "default.title")
     @js.native
@@ -74,11 +67,9 @@ object resultStyleIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/result/style/index.native", "default.titleText")
     @js.native
     def titleText: ColorStringFontSizeNumber = js.native
-    @scala.inline
-    def titleText_=(x: ColorStringFontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("titleText")(x.asInstanceOf[js.Any])
+    inline def titleText_=(x: ColorStringFontSizeNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("titleText")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def title_=(x: MarginTopPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: MarginTopPaddingHorizontal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
   trait IResultStyle extends StObject {
@@ -103,8 +94,7 @@ object resultStyleIndexNativeMod {
   }
   object IResultStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       button: ViewStyle,
       buttonWrap: ViewStyle,
       img: ImageStyle,
@@ -119,35 +109,25 @@ object resultStyleIndexNativeMod {
       __obj.asInstanceOf[IResultStyle]
     }
     
-    @scala.inline
-    implicit class IResultStyleMutableBuilder[Self <: IResultStyle] (val x: Self) extends AnyVal {
+    extension [Self <: IResultStyle](x: Self) {
       
-      @scala.inline
-      def setButton(value: ViewStyle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+      inline def setButton(value: ViewStyle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonWrap(value: ViewStyle): Self = StObject.set(x, "buttonWrap", value.asInstanceOf[js.Any])
+      inline def setButtonWrap(value: ViewStyle): Self = StObject.set(x, "buttonWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImg(value: ImageStyle): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: ImageStyle): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgWrap(value: ViewStyle): Self = StObject.set(x, "imgWrap", value.asInstanceOf[js.Any])
+      inline def setImgWrap(value: ViewStyle): Self = StObject.set(x, "imgWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: ViewStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ViewStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageText(value: TextStyle): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+      inline def setMessageText(value: TextStyle): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: ViewStyle): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: ViewStyle): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: ViewStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ViewStyle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleText(value: TextStyle): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
+      inline def setTitleText(value: TextStyle): Self = StObject.set(x, "titleText", value.asInstanceOf[js.Any])
     }
   }
 }

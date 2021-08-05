@@ -10,6 +10,5 @@ object routerStateReducerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(state: js.Any, action: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(state: js.Any, action: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

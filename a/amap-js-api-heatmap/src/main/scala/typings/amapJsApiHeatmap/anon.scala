@@ -15,23 +15,18 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: String): Data = {
+    inline def apply(data: String): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataParser(value: /* data */ js.Any => DataSet): Self = StObject.set(x, "dataParser", js.Any.fromFunction1(value))
+      inline def setDataParser(value: /* data */ js.Any => DataSet): Self = StObject.set(x, "dataParser", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDataParserUndefined: Self = StObject.set(x, "dataParser", js.undefined)
+      inline def setDataParserUndefined: Self = StObject.set(x, "dataParser", js.undefined)
     }
   }
   
@@ -47,41 +42,30 @@ object anon {
   }
   object DrawGridLine {
     
-    @scala.inline
-    def apply(): DrawGridLine = {
+    inline def apply(): DrawGridLine = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawGridLine]
     }
     
-    @scala.inline
-    implicit class DrawGridLineMutableBuilder[Self <: DrawGridLine] (val x: Self) extends AnyVal {
+    extension [Self <: DrawGridLine](x: Self) {
       
-      @scala.inline
-      def setDrawGridLine(value: Boolean): Self = StObject.set(x, "drawGridLine", value.asInstanceOf[js.Any])
+      inline def setDrawGridLine(value: Boolean): Self = StObject.set(x, "drawGridLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawGridLineUndefined: Self = StObject.set(x, "drawGridLine", js.undefined)
+      inline def setDrawGridLineUndefined: Self = StObject.set(x, "drawGridLine", js.undefined)
       
-      @scala.inline
-      def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
+      inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
+      inline def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
       
-      @scala.inline
-      def setHeightBezier(value: js.Array[Double]): Self = StObject.set(x, "heightBezier", value.asInstanceOf[js.Any])
+      inline def setHeightBezier(value: js.Array[Double]): Self = StObject.set(x, "heightBezier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightBezierUndefined: Self = StObject.set(x, "heightBezier", js.undefined)
+      inline def setHeightBezierUndefined: Self = StObject.set(x, "heightBezier", js.undefined)
       
-      @scala.inline
-      def setHeightBezierVarargs(value: Double*): Self = StObject.set(x, "heightBezier", js.Array(value :_*))
+      inline def setHeightBezierVarargs(value: Double*): Self = StObject.set(x, "heightBezier", js.Array(value :_*))
       
-      @scala.inline
-      def setHeightScale(value: Double): Self = StObject.set(x, "heightScale", value.asInstanceOf[js.Any])
+      inline def setHeightScale(value: Double): Self = StObject.set(x, "heightScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightScaleUndefined: Self = StObject.set(x, "heightScale", js.undefined)
+      inline def setHeightScaleUndefined: Self = StObject.set(x, "heightScale", js.undefined)
     }
   }
 }

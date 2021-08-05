@@ -23,19 +23,15 @@ trait MapExportOptions extends StObject {
 }
 object MapExportOptions {
   
-  @scala.inline
-  def apply(AutomaticPageLayout: Boolean, SizeMode: String): MapExportOptions = {
+  inline def apply(AutomaticPageLayout: Boolean, SizeMode: String): MapExportOptions = {
     val __obj = js.Dynamic.literal(AutomaticPageLayout = AutomaticPageLayout.asInstanceOf[js.Any], SizeMode = SizeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapExportOptions]
   }
   
-  @scala.inline
-  implicit class MapExportOptionsMutableBuilder[Self <: MapExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapExportOptions](x: Self) {
     
-    @scala.inline
-    def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
+    inline def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeMode(value: String): Self = StObject.set(x, "SizeMode", value.asInstanceOf[js.Any])
+    inline def setSizeMode(value: String): Self = StObject.set(x, "SizeMode", value.asInstanceOf[js.Any])
   }
 }

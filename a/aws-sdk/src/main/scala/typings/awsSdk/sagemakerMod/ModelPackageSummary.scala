@@ -33,8 +33,7 @@ trait ModelPackageSummary extends StObject {
 }
 object ModelPackageSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationTime: CreationTime,
     ModelPackageArn: ModelPackageArn,
     ModelPackageName: EntityName,
@@ -44,25 +43,18 @@ object ModelPackageSummary {
     __obj.asInstanceOf[ModelPackageSummary]
   }
   
-  @scala.inline
-  implicit class ModelPackageSummaryMutableBuilder[Self <: ModelPackageSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ModelPackageSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelPackageArn(value: ModelPackageArn): Self = StObject.set(x, "ModelPackageArn", value.asInstanceOf[js.Any])
+    inline def setModelPackageArn(value: ModelPackageArn): Self = StObject.set(x, "ModelPackageArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelPackageDescription(value: EntityDescription): Self = StObject.set(x, "ModelPackageDescription", value.asInstanceOf[js.Any])
+    inline def setModelPackageDescription(value: EntityDescription): Self = StObject.set(x, "ModelPackageDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelPackageDescriptionUndefined: Self = StObject.set(x, "ModelPackageDescription", js.undefined)
+    inline def setModelPackageDescriptionUndefined: Self = StObject.set(x, "ModelPackageDescription", js.undefined)
     
-    @scala.inline
-    def setModelPackageName(value: EntityName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
+    inline def setModelPackageName(value: EntityName): Self = StObject.set(x, "ModelPackageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelPackageStatus(value: ModelPackageStatus): Self = StObject.set(x, "ModelPackageStatus", value.asInstanceOf[js.Any])
+    inline def setModelPackageStatus(value: ModelPackageStatus): Self = StObject.set(x, "ModelPackageStatus", value.asInstanceOf[js.Any])
   }
 }

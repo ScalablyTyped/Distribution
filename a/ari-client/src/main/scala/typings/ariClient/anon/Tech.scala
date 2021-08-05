@@ -10,16 +10,13 @@ trait Tech extends StObject {
 }
 object Tech {
   
-  @scala.inline
-  def apply(tech: String): Tech = {
+  inline def apply(tech: String): Tech = {
     val __obj = js.Dynamic.literal(tech = tech.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tech]
   }
   
-  @scala.inline
-  implicit class TechMutableBuilder[Self <: Tech] (val x: Self) extends AnyVal {
+  extension [Self <: Tech](x: Self) {
     
-    @scala.inline
-    def setTech(value: String): Self = StObject.set(x, "tech", value.asInstanceOf[js.Any])
+    inline def setTech(value: String): Self = StObject.set(x, "tech", value.asInstanceOf[js.Any])
   }
 }

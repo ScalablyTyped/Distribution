@@ -23,19 +23,15 @@ trait SchemaHint extends StObject {
 }
 object SchemaHint {
   
-  @scala.inline
-  def apply(): SchemaHint = {
+  inline def apply(): SchemaHint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHint]
   }
   
-  @scala.inline
-  implicit class SchemaHintMutableBuilder[Self <: SchemaHint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHint](x: Self) {
     
-    @scala.inline
-    def setHumanReadableName(value: String): Self = StObject.set(x, "humanReadableName", value.asInstanceOf[js.Any])
+    inline def setHumanReadableName(value: String): Self = StObject.set(x, "humanReadableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanReadableNameUndefined: Self = StObject.set(x, "humanReadableName", js.undefined)
+    inline def setHumanReadableNameUndefined: Self = StObject.set(x, "humanReadableName", js.undefined)
   }
 }

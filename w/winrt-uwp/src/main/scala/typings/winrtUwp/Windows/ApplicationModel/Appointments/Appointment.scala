@@ -96,8 +96,7 @@ trait Appointment extends StObject {
 }
 object Appointment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allDay: Boolean,
     allowNewTimeProposal: Boolean,
     busyStatus: AppointmentBusyStatus,
@@ -131,91 +130,62 @@ object Appointment {
     __obj.asInstanceOf[Appointment]
   }
   
-  @scala.inline
-  implicit class AppointmentMutableBuilder[Self <: Appointment] (val x: Self) extends AnyVal {
+  extension [Self <: Appointment](x: Self) {
     
-    @scala.inline
-    def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
+    inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowNewTimeProposal(value: Boolean): Self = StObject.set(x, "allowNewTimeProposal", value.asInstanceOf[js.Any])
+    inline def setAllowNewTimeProposal(value: Boolean): Self = StObject.set(x, "allowNewTimeProposal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusyStatus(value: AppointmentBusyStatus): Self = StObject.set(x, "busyStatus", value.asInstanceOf[js.Any])
+    inline def setBusyStatus(value: AppointmentBusyStatus): Self = StObject.set(x, "busyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
+    inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeNumber(value: Double): Self = StObject.set(x, "changeNumber", value.asInstanceOf[js.Any])
+    inline def setChangeNumber(value: Double): Self = StObject.set(x, "changeNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsKind(value: AppointmentDetailsKind): Self = StObject.set(x, "detailsKind", value.asInstanceOf[js.Any])
+    inline def setDetailsKind(value: AppointmentDetailsKind): Self = StObject.set(x, "detailsKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasInvitees(value: Boolean): Self = StObject.set(x, "hasInvitees", value.asInstanceOf[js.Any])
+    inline def setHasInvitees(value: Boolean): Self = StObject.set(x, "hasInvitees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitees(value: IVector[AppointmentInvitee]): Self = StObject.set(x, "invitees", value.asInstanceOf[js.Any])
+    inline def setInvitees(value: IVector[AppointmentInvitee]): Self = StObject.set(x, "invitees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCanceledMeeting(value: Boolean): Self = StObject.set(x, "isCanceledMeeting", value.asInstanceOf[js.Any])
+    inline def setIsCanceledMeeting(value: Boolean): Self = StObject.set(x, "isCanceledMeeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOrganizedByUser(value: Boolean): Self = StObject.set(x, "isOrganizedByUser", value.asInstanceOf[js.Any])
+    inline def setIsOrganizedByUser(value: Boolean): Self = StObject.set(x, "isOrganizedByUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsResponseRequested(value: Boolean): Self = StObject.set(x, "isResponseRequested", value.asInstanceOf[js.Any])
+    inline def setIsResponseRequested(value: Boolean): Self = StObject.set(x, "isResponseRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
+    inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlineMeetingLink(value: String): Self = StObject.set(x, "onlineMeetingLink", value.asInstanceOf[js.Any])
+    inline def setOnlineMeetingLink(value: String): Self = StObject.set(x, "onlineMeetingLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizer(value: AppointmentOrganizer): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
+    inline def setOrganizer(value: AppointmentOrganizer): Self = StObject.set(x, "organizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalStartTime(value: Date): Self = StObject.set(x, "originalStartTime", value.asInstanceOf[js.Any])
+    inline def setOriginalStartTime(value: Date): Self = StObject.set(x, "originalStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrence(value: AppointmentRecurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
+    inline def setRecurrence(value: AppointmentRecurrence): Self = StObject.set(x, "recurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReminder(value: Double): Self = StObject.set(x, "reminder", value.asInstanceOf[js.Any])
+    inline def setReminder(value: Double): Self = StObject.set(x, "reminder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteChangeNumber(value: Double): Self = StObject.set(x, "remoteChangeNumber", value.asInstanceOf[js.Any])
+    inline def setRemoteChangeNumber(value: Double): Self = StObject.set(x, "remoteChangeNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyTime(value: Date): Self = StObject.set(x, "replyTime", value.asInstanceOf[js.Any])
+    inline def setReplyTime(value: Date): Self = StObject.set(x, "replyTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoamingId(value: String): Self = StObject.set(x, "roamingId", value.asInstanceOf[js.Any])
+    inline def setRoamingId(value: String): Self = StObject.set(x, "roamingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitivity(value: AppointmentSensitivity): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+    inline def setSensitivity(value: AppointmentSensitivity): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserResponse(value: AppointmentParticipantResponse): Self = StObject.set(x, "userResponse", value.asInstanceOf[js.Any])
+    inline def setUserResponse(value: AppointmentParticipantResponse): Self = StObject.set(x, "userResponse", value.asInstanceOf[js.Any])
   }
 }

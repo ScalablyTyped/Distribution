@@ -16,23 +16,18 @@ trait PlaybackPlayingEvent
 }
 object PlaybackPlayingEvent {
   
-  @scala.inline
-  def apply(): PlaybackPlayingEvent = {
+  inline def apply(): PlaybackPlayingEvent = {
     val __obj = js.Dynamic.literal(playingTime = null)
     __obj.updateDynamic("type")("playbackPlaying")
     __obj.asInstanceOf[PlaybackPlayingEvent]
   }
   
-  @scala.inline
-  implicit class PlaybackPlayingEventMutableBuilder[Self <: PlaybackPlayingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackPlayingEvent](x: Self) {
     
-    @scala.inline
-    def setPlayingTime(value: Double): Self = StObject.set(x, "playingTime", value.asInstanceOf[js.Any])
+    inline def setPlayingTime(value: Double): Self = StObject.set(x, "playingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayingTimeNull: Self = StObject.set(x, "playingTime", null)
+    inline def setPlayingTimeNull: Self = StObject.set(x, "playingTime", null)
     
-    @scala.inline
-    def setType(value: playbackPlaying): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: playbackPlaying): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

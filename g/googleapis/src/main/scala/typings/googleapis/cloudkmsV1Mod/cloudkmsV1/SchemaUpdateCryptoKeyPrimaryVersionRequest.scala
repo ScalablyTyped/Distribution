@@ -16,19 +16,15 @@ trait SchemaUpdateCryptoKeyPrimaryVersionRequest extends StObject {
 }
 object SchemaUpdateCryptoKeyPrimaryVersionRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateCryptoKeyPrimaryVersionRequest = {
+  inline def apply(): SchemaUpdateCryptoKeyPrimaryVersionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateCryptoKeyPrimaryVersionRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateCryptoKeyPrimaryVersionRequestMutableBuilder[Self <: SchemaUpdateCryptoKeyPrimaryVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateCryptoKeyPrimaryVersionRequest](x: Self) {
     
-    @scala.inline
-    def setCryptoKeyVersionId(value: String): Self = StObject.set(x, "cryptoKeyVersionId", value.asInstanceOf[js.Any])
+    inline def setCryptoKeyVersionId(value: String): Self = StObject.set(x, "cryptoKeyVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoKeyVersionIdUndefined: Self = StObject.set(x, "cryptoKeyVersionId", js.undefined)
+    inline def setCryptoKeyVersionIdUndefined: Self = StObject.set(x, "cryptoKeyVersionId", js.undefined)
   }
 }

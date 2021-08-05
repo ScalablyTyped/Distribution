@@ -13,16 +13,13 @@ trait Scte35Descriptor extends StObject {
 }
 object Scte35Descriptor {
   
-  @scala.inline
-  def apply(Scte35DescriptorSettings: Scte35DescriptorSettings): Scte35Descriptor = {
+  inline def apply(Scte35DescriptorSettings: Scte35DescriptorSettings): Scte35Descriptor = {
     val __obj = js.Dynamic.literal(Scte35DescriptorSettings = Scte35DescriptorSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35Descriptor]
   }
   
-  @scala.inline
-  implicit class Scte35DescriptorMutableBuilder[Self <: Scte35Descriptor] (val x: Self) extends AnyVal {
+  extension [Self <: Scte35Descriptor](x: Self) {
     
-    @scala.inline
-    def setScte35DescriptorSettings(value: Scte35DescriptorSettings): Self = StObject.set(x, "Scte35DescriptorSettings", value.asInstanceOf[js.Any])
+    inline def setScte35DescriptorSettings(value: Scte35DescriptorSettings): Self = StObject.set(x, "Scte35DescriptorSettings", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait RevokeFlowEntitlementRequest extends StObject {
 }
 object RevokeFlowEntitlementRequest {
   
-  @scala.inline
-  def apply(EntitlementArn: string, FlowArn: string): RevokeFlowEntitlementRequest = {
+  inline def apply(EntitlementArn: string, FlowArn: string): RevokeFlowEntitlementRequest = {
     val __obj = js.Dynamic.literal(EntitlementArn = EntitlementArn.asInstanceOf[js.Any], FlowArn = FlowArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeFlowEntitlementRequest]
   }
   
-  @scala.inline
-  implicit class RevokeFlowEntitlementRequestMutableBuilder[Self <: RevokeFlowEntitlementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeFlowEntitlementRequest](x: Self) {
     
-    @scala.inline
-    def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
+    inline def setEntitlementArn(value: string): Self = StObject.set(x, "EntitlementArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
+    inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
   }
 }

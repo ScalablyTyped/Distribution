@@ -27,8 +27,7 @@ trait RcsTransportConfiguration extends StObject {
 }
 object RcsTransportConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     maxAttachmentCount: Double,
     maxFileSizeInKilobytes: Double,
     maxGroupMessageSizeInKilobytes: Double,
@@ -40,25 +39,18 @@ object RcsTransportConfiguration {
     __obj.asInstanceOf[RcsTransportConfiguration]
   }
   
-  @scala.inline
-  implicit class RcsTransportConfigurationMutableBuilder[Self <: RcsTransportConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RcsTransportConfiguration](x: Self) {
     
-    @scala.inline
-    def setMaxAttachmentCount(value: Double): Self = StObject.set(x, "maxAttachmentCount", value.asInstanceOf[js.Any])
+    inline def setMaxAttachmentCount(value: Double): Self = StObject.set(x, "maxAttachmentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileSizeInKilobytes(value: Double): Self = StObject.set(x, "maxFileSizeInKilobytes", value.asInstanceOf[js.Any])
+    inline def setMaxFileSizeInKilobytes(value: Double): Self = StObject.set(x, "maxFileSizeInKilobytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxGroupMessageSizeInKilobytes(value: Double): Self = StObject.set(x, "maxGroupMessageSizeInKilobytes", value.asInstanceOf[js.Any])
+    inline def setMaxGroupMessageSizeInKilobytes(value: Double): Self = StObject.set(x, "maxGroupMessageSizeInKilobytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMessageSizeInKilobytes(value: Double): Self = StObject.set(x, "maxMessageSizeInKilobytes", value.asInstanceOf[js.Any])
+    inline def setMaxMessageSizeInKilobytes(value: Double): Self = StObject.set(x, "maxMessageSizeInKilobytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecipientCount(value: Double): Self = StObject.set(x, "maxRecipientCount", value.asInstanceOf[js.Any])
+    inline def setMaxRecipientCount(value: Double): Self = StObject.set(x, "maxRecipientCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningFileSizeInKilobytes(value: Double): Self = StObject.set(x, "warningFileSizeInKilobytes", value.asInstanceOf[js.Any])
+    inline def setWarningFileSizeInKilobytes(value: Double): Self = StObject.set(x, "warningFileSizeInKilobytes", value.asInstanceOf[js.Any])
   }
 }

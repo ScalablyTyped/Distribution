@@ -43,49 +43,35 @@ trait UpdateNodegroupVersionRequest extends StObject {
 }
 object UpdateNodegroupVersionRequest {
   
-  @scala.inline
-  def apply(clusterName: String, nodegroupName: String): UpdateNodegroupVersionRequest = {
+  inline def apply(clusterName: String, nodegroupName: String): UpdateNodegroupVersionRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], nodegroupName = nodegroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNodegroupVersionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateNodegroupVersionRequestMutableBuilder[Self <: UpdateNodegroupVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNodegroupVersionRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplate(value: LaunchTemplateSpecification): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
+    inline def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
     
-    @scala.inline
-    def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
+    inline def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseVersion(value: String): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
+    inline def setReleaseVersion(value: String): Self = StObject.set(x, "releaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
+    inline def setReleaseVersionUndefined: Self = StObject.set(x, "releaseVersion", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

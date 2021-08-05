@@ -28,34 +28,25 @@ trait DeleteDBInstanceMessage extends StObject {
 }
 object DeleteDBInstanceMessage {
   
-  @scala.inline
-  def apply(DBInstanceIdentifier: String): DeleteDBInstanceMessage = {
+  inline def apply(DBInstanceIdentifier: String): DeleteDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBInstanceMessage]
   }
   
-  @scala.inline
-  implicit class DeleteDBInstanceMessageMutableBuilder[Self <: DeleteDBInstanceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBInstanceMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAutomatedBackups(value: BooleanOptional): Self = StObject.set(x, "DeleteAutomatedBackups", value.asInstanceOf[js.Any])
+    inline def setDeleteAutomatedBackups(value: BooleanOptional): Self = StObject.set(x, "DeleteAutomatedBackups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteAutomatedBackupsUndefined: Self = StObject.set(x, "DeleteAutomatedBackups", js.undefined)
+    inline def setDeleteAutomatedBackupsUndefined: Self = StObject.set(x, "DeleteAutomatedBackups", js.undefined)
     
-    @scala.inline
-    def setFinalDBSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalDBSnapshotIdentifier", value.asInstanceOf[js.Any])
+    inline def setFinalDBSnapshotIdentifier(value: String): Self = StObject.set(x, "FinalDBSnapshotIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalDBSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalDBSnapshotIdentifier", js.undefined)
+    inline def setFinalDBSnapshotIdentifierUndefined: Self = StObject.set(x, "FinalDBSnapshotIdentifier", js.undefined)
     
-    @scala.inline
-    def setSkipFinalSnapshot(value: Boolean): Self = StObject.set(x, "SkipFinalSnapshot", value.asInstanceOf[js.Any])
+    inline def setSkipFinalSnapshot(value: Boolean): Self = StObject.set(x, "SkipFinalSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipFinalSnapshotUndefined: Self = StObject.set(x, "SkipFinalSnapshot", js.undefined)
+    inline def setSkipFinalSnapshotUndefined: Self = StObject.set(x, "SkipFinalSnapshot", js.undefined)
   }
 }

@@ -24,25 +24,19 @@ trait ParamsResourceEnterprisesList
 }
 object ParamsResourceEnterprisesList {
   
-  @scala.inline
-  def apply(): ParamsResourceEnterprisesList = {
+  inline def apply(): ParamsResourceEnterprisesList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEnterprisesList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEnterprisesListMutableBuilder[Self <: ParamsResourceEnterprisesList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEnterprisesList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
   }
 }

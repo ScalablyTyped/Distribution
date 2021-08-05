@@ -20,43 +20,43 @@ object selectionSelectionMod {
       */
     def this(/* import warning: parser.TsParser#functionParam Dropping repeated marker of param options because its type TItem extends IObjectWithKey ? [] | [ISelectionOptions<TItem>] : [ISelectionOptionsWithRequiredGetKey<TItem>] is not an array type */ options: js.Array[js.Any | ISelectionOptions[TItem] | ISelectionOptionsWithRequiredGetKey[TItem]]) = this()
     
-    var _anchoredIndex: js.Any = js.native
+    /* private */ var _anchoredIndex: js.Any = js.native
     
-    var _canSelectItem: js.Any = js.native
+    /* private */ var _canSelectItem: js.Any = js.native
     
-    var _change: js.Any = js.native
+    /* private */ var _change: js.Any = js.native
     
-    var _changeEventSuppressionCount: js.Any = js.native
+    /* private */ var _changeEventSuppressionCount: js.Any = js.native
     
-    var _exemptedCount: js.Any = js.native
+    /* private */ var _exemptedCount: js.Any = js.native
     
-    var _exemptedIndices: js.Any = js.native
+    /* private */ var _exemptedIndices: js.Any = js.native
     
-    var _getKey: js.Any = js.native
+    /* private */ var _getKey: js.Any = js.native
     
-    var _hasChanged: js.Any = js.native
+    /* private */ var _hasChanged: js.Any = js.native
     
-    var _isAllSelected: js.Any = js.native
+    /* private */ var _isAllSelected: js.Any = js.native
     
-    var _isModal: js.Any = js.native
+    /* private */ var _isModal: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
-    var _keyToIndexMap: js.Any = js.native
+    /* private */ var _keyToIndexMap: js.Any = js.native
     
-    var _onSelectionChanged: js.Any = js.native
+    /* private */ var _onSelectionChanged: js.Any = js.native
     
-    var _selectedIndices: js.Any = js.native
+    /* private */ var _selectedIndices: js.Any = js.native
     
-    var _selectedItems: js.Any = js.native
+    /* private */ var _selectedItems: js.Any = js.native
     
-    var _setAllSelected: js.Any = js.native
+    /* private */ var _setAllSelected: js.Any = js.native
     
-    var _unselectableCount: js.Any = js.native
+    /* private */ var _unselectableCount: js.Any = js.native
     
-    var _unselectableIndices: js.Any = js.native
+    /* private */ var _unselectableIndices: js.Any = js.native
     
-    var _updateCount: js.Any = js.native
+    /* private */ var _updateCount: js.Any = js.native
     
     def getKey(item: TItem): String = js.native
     def getKey(item: TItem, index: Double): String = js.native
@@ -91,47 +91,34 @@ object selectionSelectionMod {
   }
   object ISelectionOptions {
     
-    @scala.inline
-    def apply[TItem](): ISelectionOptions[TItem] = {
+    inline def apply[TItem](): ISelectionOptions[TItem] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISelectionOptions[TItem]]
     }
     
-    @scala.inline
-    implicit class ISelectionOptionsMutableBuilder[Self <: ISelectionOptions[?], TItem] (val x: Self & ISelectionOptions[TItem]) extends AnyVal {
+    extension [Self <: ISelectionOptions[?], TItem](x: Self & ISelectionOptions[TItem]) {
       
-      @scala.inline
-      def setCanSelectItem(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "canSelectItem", js.Any.fromFunction2(value))
+      inline def setCanSelectItem(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "canSelectItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanSelectItemUndefined: Self = StObject.set(x, "canSelectItem", js.undefined)
+      inline def setCanSelectItemUndefined: Self = StObject.set(x, "canSelectItem", js.undefined)
       
-      @scala.inline
-      def setGetKey(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => String | Double): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
+      inline def setGetKey(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => String | Double): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
+      inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[TItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[TItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOnSelectionChanged(value: () => Unit): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction0(value))
+      inline def setOnSelectionChanged(value: () => Unit): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
+      inline def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
       
-      @scala.inline
-      def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+      inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     }
   }
   
@@ -151,48 +138,36 @@ object selectionSelectionMod {
   }
   object ISelectionOptionsWithRequiredGetKey {
     
-    @scala.inline
-    def apply[TItem](
+    inline def apply[TItem](
       getKey: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) & (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
     ): ISelectionOptionsWithRequiredGetKey[TItem] = {
       val __obj = js.Dynamic.literal(getKey = getKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISelectionOptionsWithRequiredGetKey[TItem]]
     }
     
-    @scala.inline
-    implicit class ISelectionOptionsWithRequiredGetKeyMutableBuilder[Self <: ISelectionOptionsWithRequiredGetKey[?], TItem] (val x: Self & ISelectionOptionsWithRequiredGetKey[TItem]) extends AnyVal {
+    extension [Self <: ISelectionOptionsWithRequiredGetKey[?], TItem](x: Self & ISelectionOptionsWithRequiredGetKey[TItem]) {
       
-      @scala.inline
-      def setCanSelectItem(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "canSelectItem", js.Any.fromFunction2(value))
+      inline def setCanSelectItem(value: (/* item */ TItem, /* index */ js.UndefOr[Double]) => Boolean): Self = StObject.set(x, "canSelectItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCanSelectItemUndefined: Self = StObject.set(x, "canSelectItem", js.undefined)
+      inline def setCanSelectItemUndefined: Self = StObject.set(x, "canSelectItem", js.undefined)
       
-      @scala.inline
-      def setGetKey(
+      inline def setGetKey(
         value: (js.UndefOr[js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double]]) & (js.Function2[/* item */ TItem, /* index */ js.UndefOr[Double], String | Double])
       ): Self = StObject.set(x, "getKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[TItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[TItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOnSelectionChanged(value: () => Unit): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction0(value))
+      inline def setOnSelectionChanged(value: () => Unit): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
+      inline def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
       
-      @scala.inline
-      def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: SelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+      inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     }
   }
 }

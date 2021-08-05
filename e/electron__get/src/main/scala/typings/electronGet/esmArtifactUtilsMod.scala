@@ -11,9 +11,7 @@ object esmArtifactUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getArtifactFileName(details: ElectronArtifactDetails): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArtifactFileName")(details.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getArtifactFileName(details: ElectronArtifactDetails): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArtifactFileName")(details.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getArtifactRemoteURL(details: ElectronArtifactDetails): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArtifactRemoteURL")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getArtifactRemoteURL(details: ElectronArtifactDetails): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArtifactRemoteURL")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

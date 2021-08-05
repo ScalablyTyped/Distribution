@@ -101,8 +101,7 @@ object containerMod {
     @JSImport("@wordpress/customize-browser/Container", "Container.instanceCounter")
     @js.native
     def instanceCounter: js.UndefOr[Double] = js.native
-    @scala.inline
-    def instanceCounter_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instanceCounter")(x.asInstanceOf[js.Any])
+    inline def instanceCounter_=(x: js.UndefOr[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instanceCounter")(x.asInstanceOf[js.Any])
   }
   
   trait ContainerArguments extends StObject {
@@ -115,32 +114,24 @@ object containerMod {
   }
   object ContainerArguments {
     
-    @scala.inline
-    def apply(): ContainerArguments = {
+    inline def apply(): ContainerArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerArguments]
     }
     
-    @scala.inline
-    implicit class ContainerArgumentsMutableBuilder[Self <: ContainerArguments] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerArguments](x: Self) {
       
-      @scala.inline
-      def setCompleteCallback(value: () => Unit): Self = StObject.set(x, "completeCallback", js.Any.fromFunction0(value))
+      inline def setCompleteCallback(value: () => Unit): Self = StObject.set(x, "completeCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompleteCallbackUndefined: Self = StObject.set(x, "completeCallback", js.undefined)
+      inline def setCompleteCallbackUndefined: Self = StObject.set(x, "completeCallback", js.undefined)
       
-      @scala.inline
-      def setDuration(value: String | Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: String | Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setUnchanged(value: Boolean): Self = StObject.set(x, "unchanged", value.asInstanceOf[js.Any])
+      inline def setUnchanged(value: Boolean): Self = StObject.set(x, "unchanged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnchangedUndefined: Self = StObject.set(x, "unchanged", js.undefined)
+      inline def setUnchangedUndefined: Self = StObject.set(x, "unchanged", js.undefined)
     }
   }
   
@@ -150,17 +141,14 @@ object containerMod {
   }
   object ContainerDeferred {
     
-    @scala.inline
-    def apply(embedded: Deferred[js.Any, js.Any, js.Any]): ContainerDeferred = {
+    inline def apply(embedded: Deferred[js.Any, js.Any, js.Any]): ContainerDeferred = {
       val __obj = js.Dynamic.literal(embedded = embedded.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContainerDeferred]
     }
     
-    @scala.inline
-    implicit class ContainerDeferredMutableBuilder[Self <: ContainerDeferred] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerDeferred](x: Self) {
       
-      @scala.inline
-      def setEmbedded(value: Deferred[js.Any, js.Any, js.Any]): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
+      inline def setEmbedded(value: Deferred[js.Any, js.Any, js.Any]): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,65 +172,46 @@ object containerMod {
   }
   object ContainerParams {
     
-    @scala.inline
-    def apply(title: String): ContainerParams = {
+    inline def apply(title: String): ContainerParams = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContainerParams]
     }
     
-    @scala.inline
-    implicit class ContainerParamsMutableBuilder[Self <: ContainerParams] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerParams](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentNull: Self = StObject.set(x, "content", null)
+      inline def setContentNull: Self = StObject.set(x, "content", null)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setInstanceNumber(value: Double): Self = StObject.set(x, "instanceNumber", value.asInstanceOf[js.Any])
+      inline def setInstanceNumber(value: Double): Self = StObject.set(x, "instanceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceNumberNull: Self = StObject.set(x, "instanceNumber", null)
+      inline def setInstanceNumberNull: Self = StObject.set(x, "instanceNumber", null)
       
-      @scala.inline
-      def setInstanceNumberUndefined: Self = StObject.set(x, "instanceNumber", js.undefined)
+      inline def setInstanceNumberUndefined: Self = StObject.set(x, "instanceNumber", js.undefined)
       
-      @scala.inline
-      def setParams(value: ContainerParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: ContainerParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

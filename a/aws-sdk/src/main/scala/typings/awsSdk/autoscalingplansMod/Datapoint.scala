@@ -18,25 +18,19 @@ trait Datapoint extends StObject {
 }
 object Datapoint {
   
-  @scala.inline
-  def apply(): Datapoint = {
+  inline def apply(): Datapoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Datapoint]
   }
   
-  @scala.inline
-  implicit class DatapointMutableBuilder[Self <: Datapoint] (val x: Self) extends AnyVal {
+  extension [Self <: Datapoint](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: TimestampType): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: TimestampType): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
-    @scala.inline
-    def setValue(value: MetricScale): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: MetricScale): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

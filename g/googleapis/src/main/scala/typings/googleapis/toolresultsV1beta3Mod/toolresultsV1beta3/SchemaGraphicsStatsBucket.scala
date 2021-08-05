@@ -18,25 +18,19 @@ trait SchemaGraphicsStatsBucket extends StObject {
 }
 object SchemaGraphicsStatsBucket {
   
-  @scala.inline
-  def apply(): SchemaGraphicsStatsBucket = {
+  inline def apply(): SchemaGraphicsStatsBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGraphicsStatsBucket]
   }
   
-  @scala.inline
-  implicit class SchemaGraphicsStatsBucketMutableBuilder[Self <: SchemaGraphicsStatsBucket] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGraphicsStatsBucket](x: Self) {
     
-    @scala.inline
-    def setFrameCount(value: String): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
+    inline def setFrameCount(value: String): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameCountUndefined: Self = StObject.set(x, "frameCount", js.undefined)
+    inline def setFrameCountUndefined: Self = StObject.set(x, "frameCount", js.undefined)
     
-    @scala.inline
-    def setRenderMillis(value: String): Self = StObject.set(x, "renderMillis", value.asInstanceOf[js.Any])
+    inline def setRenderMillis(value: String): Self = StObject.set(x, "renderMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderMillisUndefined: Self = StObject.set(x, "renderMillis", js.undefined)
+    inline def setRenderMillisUndefined: Self = StObject.set(x, "renderMillis", js.undefined)
   }
 }

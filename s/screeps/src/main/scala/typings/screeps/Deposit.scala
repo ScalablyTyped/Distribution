@@ -41,8 +41,7 @@ trait Deposit
 }
 object Deposit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cooldown: Double,
     depositType: DepositConstant,
     effects: js.Array[RoomObjectEffect],
@@ -55,22 +54,16 @@ object Deposit {
     __obj.asInstanceOf[Deposit]
   }
   
-  @scala.inline
-  implicit class DepositMutableBuilder[Self <: Deposit] (val x: Self) extends AnyVal {
+  extension [Self <: Deposit](x: Self) {
     
-    @scala.inline
-    def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepositType(value: DepositConstant): Self = StObject.set(x, "depositType", value.asInstanceOf[js.Any])
+    inline def setDepositType(value: DepositConstant): Self = StObject.set(x, "depositType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Id[Deposit]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id[Deposit]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastCooldown(value: Double): Self = StObject.set(x, "lastCooldown", value.asInstanceOf[js.Any])
+    inline def setLastCooldown(value: Double): Self = StObject.set(x, "lastCooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
+    inline def setTicksToDecay(value: Double): Self = StObject.set(x, "ticksToDecay", value.asInstanceOf[js.Any])
   }
 }

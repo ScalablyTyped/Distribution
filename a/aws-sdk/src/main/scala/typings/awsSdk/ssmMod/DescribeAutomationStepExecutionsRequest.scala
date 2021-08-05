@@ -33,43 +33,31 @@ trait DescribeAutomationStepExecutionsRequest extends StObject {
 }
 object DescribeAutomationStepExecutionsRequest {
   
-  @scala.inline
-  def apply(AutomationExecutionId: AutomationExecutionId): DescribeAutomationStepExecutionsRequest = {
+  inline def apply(AutomationExecutionId: AutomationExecutionId): DescribeAutomationStepExecutionsRequest = {
     val __obj = js.Dynamic.literal(AutomationExecutionId = AutomationExecutionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAutomationStepExecutionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAutomationStepExecutionsRequestMutableBuilder[Self <: DescribeAutomationStepExecutionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAutomationStepExecutionsRequest](x: Self) {
     
-    @scala.inline
-    def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
+    inline def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: StepExecutionFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: StepExecutionFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: StepExecutionFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: StepExecutionFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setReverseOrder(value: Boolean): Self = StObject.set(x, "ReverseOrder", value.asInstanceOf[js.Any])
+    inline def setReverseOrder(value: Boolean): Self = StObject.set(x, "ReverseOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseOrderUndefined: Self = StObject.set(x, "ReverseOrder", js.undefined)
+    inline def setReverseOrderUndefined: Self = StObject.set(x, "ReverseOrder", js.undefined)
   }
 }

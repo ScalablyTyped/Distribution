@@ -96,21 +96,16 @@ object stackSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): StackSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StackSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StackSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StackSetState): StackSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StackSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: StackSetState, opts: CustomResourceOptions): StackSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSet]
+    inline def get(name: String, id: Input[ID]): StackSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StackSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StackSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSet]
+    inline def get(name: String, id: Input[ID], state: StackSetState): StackSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StackSet]
+    inline def get(name: String, id: Input[ID], state: StackSetState, opts: CustomResourceOptions): StackSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StackSet]
     
     /**
       * Returns true if the given object is an instance of StackSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stackSet.StackSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudformation/stackSet.StackSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudformation/stackSet.StackSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudformation/stackSet.StackSet */ Boolean]
   }
   
   trait StackSetArgs extends StObject {
@@ -162,68 +157,48 @@ object stackSetMod {
   }
   object StackSetArgs {
     
-    @scala.inline
-    def apply(administrationRoleArn: Input[String]): StackSetArgs = {
+    inline def apply(administrationRoleArn: Input[String]): StackSetArgs = {
       val __obj = js.Dynamic.literal(administrationRoleArn = administrationRoleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackSetArgs]
     }
     
-    @scala.inline
-    implicit class StackSetArgsMutableBuilder[Self <: StackSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StackSetArgs](x: Self) {
       
-      @scala.inline
-      def setAdministrationRoleArn(value: Input[String]): Self = StObject.set(x, "administrationRoleArn", value.asInstanceOf[js.Any])
+      inline def setAdministrationRoleArn(value: Input[String]): Self = StObject.set(x, "administrationRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+      inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
       
-      @scala.inline
-      def setCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExecutionRoleName(value: Input[String]): Self = StObject.set(x, "executionRoleName", value.asInstanceOf[js.Any])
+      inline def setExecutionRoleName(value: Input[String]): Self = StObject.set(x, "executionRoleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionRoleNameUndefined: Self = StObject.set(x, "executionRoleName", js.undefined)
+      inline def setExecutionRoleNameUndefined: Self = StObject.set(x, "executionRoleName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTemplateBody(value: Input[String]): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+      inline def setTemplateBody(value: Input[String]): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+      inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
       
-      @scala.inline
-      def setTemplateUrl(value: Input[String]): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: Input[String]): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+      inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     }
   }
   
@@ -286,83 +261,58 @@ object stackSetMod {
   }
   object StackSetState {
     
-    @scala.inline
-    def apply(): StackSetState = {
+    inline def apply(): StackSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackSetState]
     }
     
-    @scala.inline
-    implicit class StackSetStateMutableBuilder[Self <: StackSetState] (val x: Self) extends AnyVal {
+    extension [Self <: StackSetState](x: Self) {
       
-      @scala.inline
-      def setAdministrationRoleArn(value: Input[String]): Self = StObject.set(x, "administrationRoleArn", value.asInstanceOf[js.Any])
+      inline def setAdministrationRoleArn(value: Input[String]): Self = StObject.set(x, "administrationRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdministrationRoleArnUndefined: Self = StObject.set(x, "administrationRoleArn", js.undefined)
+      inline def setAdministrationRoleArnUndefined: Self = StObject.set(x, "administrationRoleArn", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+      inline def setCapabilities(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
+      inline def setCapabilitiesUndefined: Self = StObject.set(x, "capabilities", js.undefined)
       
-      @scala.inline
-      def setCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+      inline def setCapabilitiesVarargs(value: Input[String]*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setExecutionRoleName(value: Input[String]): Self = StObject.set(x, "executionRoleName", value.asInstanceOf[js.Any])
+      inline def setExecutionRoleName(value: Input[String]): Self = StObject.set(x, "executionRoleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionRoleNameUndefined: Self = StObject.set(x, "executionRoleName", js.undefined)
+      inline def setExecutionRoleNameUndefined: Self = StObject.set(x, "executionRoleName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setStackSetId(value: Input[String]): Self = StObject.set(x, "stackSetId", value.asInstanceOf[js.Any])
+      inline def setStackSetId(value: Input[String]): Self = StObject.set(x, "stackSetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackSetIdUndefined: Self = StObject.set(x, "stackSetId", js.undefined)
+      inline def setStackSetIdUndefined: Self = StObject.set(x, "stackSetId", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTemplateBody(value: Input[String]): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+      inline def setTemplateBody(value: Input[String]): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+      inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
       
-      @scala.inline
-      def setTemplateUrl(value: Input[String]): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: Input[String]): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+      inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     }
   }
 }

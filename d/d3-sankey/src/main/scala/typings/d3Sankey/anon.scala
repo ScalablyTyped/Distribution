@@ -58,8 +58,7 @@ object anon {
   }
   object SankeyLink {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       source: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object]),
       target: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object]),
       value: Double
@@ -68,41 +67,29 @@ object anon {
       __obj.asInstanceOf[SankeyLink]
     }
     
-    @scala.inline
-    implicit class SankeyLinkMutableBuilder[Self <: SankeyLink] (val x: Self) extends AnyVal {
+    extension [Self <: SankeyLink](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setSource(value: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object])): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object])): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+      inline def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+      inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     }
   }
   
@@ -158,8 +145,7 @@ object anon {
   }
   object SankeyLinkIndex {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       source: Double | String | SankeyNodeDepth,
       target: Double | String | SankeyNodeDepth,
       value: Double
@@ -168,41 +154,29 @@ object anon {
       __obj.asInstanceOf[SankeyLinkIndex]
     }
     
-    @scala.inline
-    implicit class SankeyLinkIndexMutableBuilder[Self <: SankeyLinkIndex] (val x: Self) extends AnyVal {
+    extension [Self <: SankeyLinkIndex](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setSource(value: Double | String | SankeyNodeDepth): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Double | String | SankeyNodeDepth): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Double | String | SankeyNodeDepth): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Double | String | SankeyNodeDepth): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+      inline def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+      inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     }
   }
   
@@ -264,80 +238,56 @@ object anon {
   }
   object SankeyNode {
     
-    @scala.inline
-    def apply(): SankeyNode = {
+    inline def apply(): SankeyNode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SankeyNode]
     }
     
-    @scala.inline
-    implicit class SankeyNodeMutableBuilder[Self <: SankeyNode] (val x: Self) extends AnyVal {
+    extension [Self <: SankeyNode](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setSourceLinks(value: js.Array[SankeyLink]): Self = StObject.set(x, "sourceLinks", value.asInstanceOf[js.Any])
+      inline def setSourceLinks(value: js.Array[SankeyLink]): Self = StObject.set(x, "sourceLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLinksUndefined: Self = StObject.set(x, "sourceLinks", js.undefined)
+      inline def setSourceLinksUndefined: Self = StObject.set(x, "sourceLinks", js.undefined)
       
-      @scala.inline
-      def setSourceLinksVarargs(value: SankeyLink*): Self = StObject.set(x, "sourceLinks", js.Array(value :_*))
+      inline def setSourceLinksVarargs(value: SankeyLink*): Self = StObject.set(x, "sourceLinks", js.Array(value :_*))
       
-      @scala.inline
-      def setTargetLinks(value: js.Array[SankeyLink]): Self = StObject.set(x, "targetLinks", value.asInstanceOf[js.Any])
+      inline def setTargetLinks(value: js.Array[SankeyLink]): Self = StObject.set(x, "targetLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetLinksUndefined: Self = StObject.set(x, "targetLinks", js.undefined)
+      inline def setTargetLinksUndefined: Self = StObject.set(x, "targetLinks", js.undefined)
       
-      @scala.inline
-      def setTargetLinksVarargs(value: SankeyLink*): Self = StObject.set(x, "targetLinks", js.Array(value :_*))
+      inline def setTargetLinksVarargs(value: SankeyLink*): Self = StObject.set(x, "targetLinks", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+      inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
+      inline def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
       
-      @scala.inline
-      def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
+      inline def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
       
-      @scala.inline
-      def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+      inline def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+      inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     }
   }
   
@@ -399,80 +349,56 @@ object anon {
   }
   object SankeyNodeDepth {
     
-    @scala.inline
-    def apply(): SankeyNodeDepth = {
+    inline def apply(): SankeyNodeDepth = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SankeyNodeDepth]
     }
     
-    @scala.inline
-    implicit class SankeyNodeDepthMutableBuilder[Self <: SankeyNodeDepth] (val x: Self) extends AnyVal {
+    extension [Self <: SankeyNodeDepth](x: Self) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setSourceLinks(value: js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]): Self = StObject.set(x, "sourceLinks", value.asInstanceOf[js.Any])
+      inline def setSourceLinks(value: js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]): Self = StObject.set(x, "sourceLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLinksUndefined: Self = StObject.set(x, "sourceLinks", js.undefined)
+      inline def setSourceLinksUndefined: Self = StObject.set(x, "sourceLinks", js.undefined)
       
-      @scala.inline
-      def setSourceLinksVarargs(value: (typings.d3Sankey.mod.SankeyLink[js.Object, js.Object])*): Self = StObject.set(x, "sourceLinks", js.Array(value :_*))
+      inline def setSourceLinksVarargs(value: (typings.d3Sankey.mod.SankeyLink[js.Object, js.Object])*): Self = StObject.set(x, "sourceLinks", js.Array(value :_*))
       
-      @scala.inline
-      def setTargetLinks(value: js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]): Self = StObject.set(x, "targetLinks", value.asInstanceOf[js.Any])
+      inline def setTargetLinks(value: js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]): Self = StObject.set(x, "targetLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetLinksUndefined: Self = StObject.set(x, "targetLinks", js.undefined)
+      inline def setTargetLinksUndefined: Self = StObject.set(x, "targetLinks", js.undefined)
       
-      @scala.inline
-      def setTargetLinksVarargs(value: (typings.d3Sankey.mod.SankeyLink[js.Object, js.Object])*): Self = StObject.set(x, "targetLinks", js.Array(value :_*))
+      inline def setTargetLinksVarargs(value: (typings.d3Sankey.mod.SankeyLink[js.Object, js.Object])*): Self = StObject.set(x, "targetLinks", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+      inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
+      inline def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
       
-      @scala.inline
-      def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
+      inline def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
       
-      @scala.inline
-      def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+      inline def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+      inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     }
   }
 }

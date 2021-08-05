@@ -18,25 +18,19 @@ trait UserSummary extends StObject {
 }
 object UserSummary {
   
-  @scala.inline
-  def apply(): UserSummary = {
+  inline def apply(): UserSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserSummary]
   }
   
-  @scala.inline
-  implicit class UserSummaryMutableBuilder[Self <: UserSummary] (val x: Self) extends AnyVal {
+  extension [Self <: UserSummary](x: Self) {
     
-    @scala.inline
-    def setPendingChange(value: ChangeType): Self = StObject.set(x, "PendingChange", value.asInstanceOf[js.Any])
+    inline def setPendingChange(value: ChangeType): Self = StObject.set(x, "PendingChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingChangeUndefined: Self = StObject.set(x, "PendingChange", js.undefined)
+    inline def setPendingChangeUndefined: Self = StObject.set(x, "PendingChange", js.undefined)
     
-    @scala.inline
-    def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: string): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

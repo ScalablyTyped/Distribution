@@ -23,40 +23,29 @@ trait UpdateCellsRequest extends StObject {
 }
 object UpdateCellsRequest {
   
-  @scala.inline
-  def apply(): UpdateCellsRequest = {
+  inline def apply(): UpdateCellsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateCellsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateCellsRequestMutableBuilder[Self <: UpdateCellsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCellsRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[RowData]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[RowData]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: RowData*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: GridCoordinate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: GridCoordinate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

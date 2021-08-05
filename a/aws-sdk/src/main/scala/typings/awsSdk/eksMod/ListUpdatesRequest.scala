@@ -28,34 +28,25 @@ trait ListUpdatesRequest extends StObject {
 }
 object ListUpdatesRequest {
   
-  @scala.inline
-  def apply(name: String): ListUpdatesRequest = {
+  inline def apply(name: String): ListUpdatesRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUpdatesRequest]
   }
   
-  @scala.inline
-  implicit class ListUpdatesRequestMutableBuilder[Self <: ListUpdatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListUpdatesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ListUpdatesRequestMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListUpdatesRequestMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
+    inline def setNodegroupName(value: String): Self = StObject.set(x, "nodegroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodegroupNameUndefined: Self = StObject.set(x, "nodegroupName", js.undefined)
+    inline def setNodegroupNameUndefined: Self = StObject.set(x, "nodegroupName", js.undefined)
   }
 }

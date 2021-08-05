@@ -16,19 +16,15 @@ trait AttributeSpec extends StObject {
 }
 object AttributeSpec {
   
-  @scala.inline
-  def apply(): AttributeSpec = {
+  inline def apply(): AttributeSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeSpec]
   }
   
-  @scala.inline
-  implicit class AttributeSpecMutableBuilder[Self <: AttributeSpec] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeSpec](x: Self) {
     
-    @scala.inline
-    def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

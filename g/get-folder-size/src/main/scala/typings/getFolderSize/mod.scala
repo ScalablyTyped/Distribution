@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(folder: String, callback: js.Function2[/* err */ Error | Null, /* size */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(folder.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(
+  inline def apply(folder: String, callback: js.Function2[/* err */ Error | Null, /* size */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(folder.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     folder: String,
     regexIgnorePattern: RegExp,
     callback: js.Function2[/* err */ Error | Null, /* size */ Double, Unit]

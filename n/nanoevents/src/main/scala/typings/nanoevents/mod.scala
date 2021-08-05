@@ -45,8 +45,7 @@ object mod {
   }
   object NanoEvents {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](
+    inline def apply[T /* <: js.Object */](
       emit: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any) => Unit,
       on: (js.Any, js.Function1[
           /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
@@ -57,16 +56,13 @@ object mod {
       __obj.asInstanceOf[NanoEvents[T]]
     }
     
-    @scala.inline
-    implicit class NanoEventsMutableBuilder[Self <: NanoEvents[?], T /* <: js.Object */] (val x: Self & NanoEvents[T]) extends AnyVal {
+    extension [Self <: NanoEvents[?], T /* <: js.Object */](x: Self & NanoEvents[T]) {
       
-      @scala.inline
-      def setEmit(
+      inline def setEmit(
         value: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ js.Any) => Unit
       ): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(
+      inline def setOn(
         value: (js.Any, js.Function1[
               /* import warning: importer.ImportType#apply Failed type conversion: T[U] */ /* arg */ js.Any, 
               js.Any

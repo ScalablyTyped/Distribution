@@ -14,25 +14,19 @@ trait ReviewReplyResult extends StObject {
 }
 object ReviewReplyResult {
   
-  @scala.inline
-  def apply(): ReviewReplyResult = {
+  inline def apply(): ReviewReplyResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReviewReplyResult]
   }
   
-  @scala.inline
-  implicit class ReviewReplyResultMutableBuilder[Self <: ReviewReplyResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewReplyResult](x: Self) {
     
-    @scala.inline
-    def setLastEdited(value: Timestamp): Self = StObject.set(x, "lastEdited", value.asInstanceOf[js.Any])
+    inline def setLastEdited(value: Timestamp): Self = StObject.set(x, "lastEdited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastEditedUndefined: Self = StObject.set(x, "lastEdited", js.undefined)
+    inline def setLastEditedUndefined: Self = StObject.set(x, "lastEdited", js.undefined)
     
-    @scala.inline
-    def setReplyText(value: String): Self = StObject.set(x, "replyText", value.asInstanceOf[js.Any])
+    inline def setReplyText(value: String): Self = StObject.set(x, "replyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyTextUndefined: Self = StObject.set(x, "replyText", js.undefined)
+    inline def setReplyTextUndefined: Self = StObject.set(x, "replyText", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait UpdateSecurityGroupRuleDescriptionsEgressRequest extends StObject {
 }
 object UpdateSecurityGroupRuleDescriptionsEgressRequest {
   
-  @scala.inline
-  def apply(IpPermissions: IpPermissionList): UpdateSecurityGroupRuleDescriptionsEgressRequest = {
+  inline def apply(IpPermissions: IpPermissionList): UpdateSecurityGroupRuleDescriptionsEgressRequest = {
     val __obj = js.Dynamic.literal(IpPermissions = IpPermissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateSecurityGroupRuleDescriptionsEgressRequest]
   }
   
-  @scala.inline
-  implicit class UpdateSecurityGroupRuleDescriptionsEgressRequestMutableBuilder[Self <: UpdateSecurityGroupRuleDescriptionsEgressRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSecurityGroupRuleDescriptionsEgressRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: SecurityGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: SecurityGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: SecurityGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: SecurityGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setIpPermissions(value: IpPermissionList): Self = StObject.set(x, "IpPermissions", value.asInstanceOf[js.Any])
+    inline def setIpPermissions(value: IpPermissionList): Self = StObject.set(x, "IpPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
+    inline def setIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "IpPermissions", js.Array(value :_*))
   }
 }

@@ -18,19 +18,15 @@ trait NotificationSubscriberUpdateParameters extends StObject {
 }
 object NotificationSubscriberUpdateParameters {
   
-  @scala.inline
-  def apply(deliveryPreference: NotificationSubscriberDeliveryPreference, preferredEmailAddress: String): NotificationSubscriberUpdateParameters = {
+  inline def apply(deliveryPreference: NotificationSubscriberDeliveryPreference, preferredEmailAddress: String): NotificationSubscriberUpdateParameters = {
     val __obj = js.Dynamic.literal(deliveryPreference = deliveryPreference.asInstanceOf[js.Any], preferredEmailAddress = preferredEmailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationSubscriberUpdateParameters]
   }
   
-  @scala.inline
-  implicit class NotificationSubscriberUpdateParametersMutableBuilder[Self <: NotificationSubscriberUpdateParameters] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationSubscriberUpdateParameters](x: Self) {
     
-    @scala.inline
-    def setDeliveryPreference(value: NotificationSubscriberDeliveryPreference): Self = StObject.set(x, "deliveryPreference", value.asInstanceOf[js.Any])
+    inline def setDeliveryPreference(value: NotificationSubscriberDeliveryPreference): Self = StObject.set(x, "deliveryPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredEmailAddress(value: String): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
+    inline def setPreferredEmailAddress(value: String): Self = StObject.set(x, "preferredEmailAddress", value.asInstanceOf[js.Any])
   }
 }

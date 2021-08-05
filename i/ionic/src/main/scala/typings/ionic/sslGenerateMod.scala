@@ -19,11 +19,11 @@ object sslGenerateMod {
   class SSLGenerateCommand protected () extends SSLBaseCommand {
     def this(namespace: INamespace) = this()
     
-    var checkExistingFile: js.Any = js.native
+    /* private */ var checkExistingFile: js.Any = js.native
     
-    var ensureDirectory: js.Any = js.native
+    /* private */ var ensureDirectory: js.Any = js.native
     
-    var formatSubj: js.Any = js.native
+    /* private */ var formatSubj: js.Any = js.native
     
     def getDefaultCertPath(): String = js.native
     
@@ -32,6 +32,6 @@ object sslGenerateMod {
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions, metadata: CommandInstanceInfo): js.Promise[Unit] = js.native
     
-    var writeConfig: js.Any = js.native
+    /* private */ var writeConfig: js.Any = js.native
   }
 }

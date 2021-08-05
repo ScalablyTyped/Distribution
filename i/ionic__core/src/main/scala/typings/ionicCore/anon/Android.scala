@@ -37,8 +37,7 @@ trait Android extends StObject {
 }
 object Android {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     android: Window => Boolean,
     capacitor: js.Any => Boolean,
     cordova: js.Any => Boolean,
@@ -58,49 +57,34 @@ object Android {
     __obj.asInstanceOf[Android]
   }
   
-  @scala.inline
-  implicit class AndroidMutableBuilder[Self <: Android] (val x: Self) extends AnyVal {
+  extension [Self <: Android](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: Window => Boolean): Self = StObject.set(x, "android", js.Any.fromFunction1(value))
+    inline def setAndroid(value: Window => Boolean): Self = StObject.set(x, "android", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCapacitor(value: js.Any => Boolean): Self = StObject.set(x, "capacitor", js.Any.fromFunction1(value))
+    inline def setCapacitor(value: js.Any => Boolean): Self = StObject.set(x, "capacitor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCordova(value: js.Any => Boolean): Self = StObject.set(x, "cordova", js.Any.fromFunction1(value))
+    inline def setCordova(value: js.Any => Boolean): Self = StObject.set(x, "cordova", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDesktop(value: Window => Boolean): Self = StObject.set(x, "desktop", js.Any.fromFunction1(value))
+    inline def setDesktop(value: Window => Boolean): Self = StObject.set(x, "desktop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setElectron(value: Window => Boolean): Self = StObject.set(x, "electron", js.Any.fromFunction1(value))
+    inline def setElectron(value: Window => Boolean): Self = StObject.set(x, "electron", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHybrid(value: Window => Boolean): Self = StObject.set(x, "hybrid", js.Any.fromFunction1(value))
+    inline def setHybrid(value: Window => Boolean): Self = StObject.set(x, "hybrid", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIos(value: Window => Boolean): Self = StObject.set(x, "ios", js.Any.fromFunction1(value))
+    inline def setIos(value: Window => Boolean): Self = StObject.set(x, "ios", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIpad(value: Window => Boolean): Self = StObject.set(x, "ipad", js.Any.fromFunction1(value))
+    inline def setIpad(value: Window => Boolean): Self = StObject.set(x, "ipad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIphone(value: Window => Boolean): Self = StObject.set(x, "iphone", js.Any.fromFunction1(value))
+    inline def setIphone(value: Window => Boolean): Self = StObject.set(x, "iphone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMobile(value: Window => Boolean): Self = StObject.set(x, "mobile", js.Any.fromFunction1(value))
+    inline def setMobile(value: Window => Boolean): Self = StObject.set(x, "mobile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMobileweb(value: Window => Boolean): Self = StObject.set(x, "mobileweb", js.Any.fromFunction1(value))
+    inline def setMobileweb(value: Window => Boolean): Self = StObject.set(x, "mobileweb", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPhablet(value: Window => Boolean): Self = StObject.set(x, "phablet", js.Any.fromFunction1(value))
+    inline def setPhablet(value: Window => Boolean): Self = StObject.set(x, "phablet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPwa(value: Window => Boolean): Self = StObject.set(x, "pwa", js.Any.fromFunction1(value))
+    inline def setPwa(value: Window => Boolean): Self = StObject.set(x, "pwa", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTablet(value: Window => Boolean): Self = StObject.set(x, "tablet", js.Any.fromFunction1(value))
+    inline def setTablet(value: Window => Boolean): Self = StObject.set(x, "tablet", js.Any.fromFunction1(value))
   }
 }

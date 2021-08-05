@@ -48,7 +48,6 @@ object constantsMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def withConfig(config: TBTCConfig): js.Promise[Constants] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Constants]]
+    inline def withConfig(config: TBTCConfig): js.Promise[Constants] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Constants]]
   }
 }

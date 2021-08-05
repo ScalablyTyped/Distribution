@@ -12,19 +12,15 @@ trait Count extends StObject {
 }
 object Count {
   
-  @scala.inline
-  def apply(Count: Double, Page: Boolean): Count = {
+  inline def apply(Count: Double, Page: Boolean): Count = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Page = Page.asInstanceOf[js.Any])
     __obj.asInstanceOf[Count]
   }
   
-  @scala.inline
-  implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+  extension [Self <: Count](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Boolean): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Boolean): Self = StObject.set(x, "Page", value.asInstanceOf[js.Any])
   }
 }

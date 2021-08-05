@@ -43,9 +43,7 @@ object mod {
     def has(key: Buffer): Boolean = js.native
   }
   
-  @scala.inline
-  def calculateSize(capacity: Double, error_rate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSize")(capacity.asInstanceOf[js.Any], error_rate.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def calculateSize(capacity: Double, error_rate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSize")(capacity.asInstanceOf[js.Any], error_rate.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def calculateSlices(size: Double, capacity: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSlices")(size.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def calculateSlices(size: Double, capacity: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSlices")(size.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

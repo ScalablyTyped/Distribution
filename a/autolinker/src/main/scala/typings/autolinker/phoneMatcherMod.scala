@@ -37,7 +37,7 @@ object phoneMatcherMod {
       * @protected
       * @property {RegExp} matcherRegex
       */
-    var matcherRegex: RegExp = js.native
+    /* protected */ var matcherRegex: RegExp = js.native
     
     /* protected */ def testMatch(text: String): Boolean = js.native
   }

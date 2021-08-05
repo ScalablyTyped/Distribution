@@ -11,14 +11,10 @@ object stepGenerationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateStepCode(steps: js.Array[ParsedStep], stepPosition: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStepCode")(steps.asInstanceOf[js.Any], stepPosition.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def generateStepCode(steps: js.Array[ParsedStep], stepPosition: Double, generateWrapperFunction: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStepCode")(steps.asInstanceOf[js.Any], stepPosition.asInstanceOf[js.Any], generateWrapperFunction.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateStepCode(steps: js.Array[ParsedStep], stepPosition: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStepCode")(steps.asInstanceOf[js.Any], stepPosition.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateStepCode(steps: js.Array[ParsedStep], stepPosition: Double, generateWrapperFunction: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStepCode")(steps.asInstanceOf[js.Any], stepPosition.asInstanceOf[js.Any], generateWrapperFunction.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def generateStepFunctionCall(steps: js.Array[ParsedStep], stepPosition: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStepFunctionCall")(steps.asInstanceOf[js.Any], stepPosition.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generateStepFunctionCall(steps: js.Array[ParsedStep], stepPosition: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateStepFunctionCall")(steps.asInstanceOf[js.Any], stepPosition.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getStepKeyword(steps: js.Array[ParsedStep], stepPosition: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStepKeyword")(steps.asInstanceOf[js.Any], stepPosition.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getStepKeyword(steps: js.Array[ParsedStep], stepPosition: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStepKeyword")(steps.asInstanceOf[js.Any], stepPosition.asInstanceOf[js.Any])).asInstanceOf[String]
 }

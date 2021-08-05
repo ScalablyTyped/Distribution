@@ -27,8 +27,7 @@ trait StoreProductPagedQueryResult extends StObject {
 }
 object StoreProductPagedQueryResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extendedError: WinRTError,
     getNextAsync: () => IPromiseWithIAsyncOperation[StoreProductPagedQueryResult],
     hasMoreResults: Boolean,
@@ -38,19 +37,14 @@ object StoreProductPagedQueryResult {
     __obj.asInstanceOf[StoreProductPagedQueryResult]
   }
   
-  @scala.inline
-  implicit class StoreProductPagedQueryResultMutableBuilder[Self <: StoreProductPagedQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: StoreProductPagedQueryResult](x: Self) {
     
-    @scala.inline
-    def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
+    inline def setExtendedError(value: WinRTError): Self = StObject.set(x, "extendedError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetNextAsync(value: () => IPromiseWithIAsyncOperation[StoreProductPagedQueryResult]): Self = StObject.set(x, "getNextAsync", js.Any.fromFunction0(value))
+    inline def setGetNextAsync(value: () => IPromiseWithIAsyncOperation[StoreProductPagedQueryResult]): Self = StObject.set(x, "getNextAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
+    inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducts(value: IMapView[String, StoreProduct]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
+    inline def setProducts(value: IMapView[String, StoreProduct]): Self = StObject.set(x, "products", value.asInstanceOf[js.Any])
   }
 }

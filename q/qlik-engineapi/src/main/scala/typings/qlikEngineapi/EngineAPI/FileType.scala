@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileType extends StObject
 object FileType {
   
-  @scala.inline
-  def CSV_C: typings.qlikEngineapi.qlikEngineapiStrings.CSV_C = "CSV_C".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CSV_C]
+  inline def CSV_C: typings.qlikEngineapi.qlikEngineapiStrings.CSV_C = "CSV_C".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CSV_C]
   
-  @scala.inline
-  def CSV_T: typings.qlikEngineapi.qlikEngineapiStrings.CSV_T = "CSV_T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CSV_T]
+  inline def CSV_T: typings.qlikEngineapi.qlikEngineapiStrings.CSV_T = "CSV_T".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.CSV_T]
   
-  @scala.inline
-  def OOXML: typings.qlikEngineapi.qlikEngineapiStrings.OOXML = "OOXML".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OOXML]
+  inline def OOXML: typings.qlikEngineapi.qlikEngineapiStrings.OOXML = "OOXML".asInstanceOf[typings.qlikEngineapi.qlikEngineapiStrings.OOXML]
 }

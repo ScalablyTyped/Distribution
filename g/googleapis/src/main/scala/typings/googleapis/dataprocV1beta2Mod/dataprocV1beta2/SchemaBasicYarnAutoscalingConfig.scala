@@ -58,43 +58,31 @@ trait SchemaBasicYarnAutoscalingConfig extends StObject {
 }
 object SchemaBasicYarnAutoscalingConfig {
   
-  @scala.inline
-  def apply(): SchemaBasicYarnAutoscalingConfig = {
+  inline def apply(): SchemaBasicYarnAutoscalingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBasicYarnAutoscalingConfig]
   }
   
-  @scala.inline
-  implicit class SchemaBasicYarnAutoscalingConfigMutableBuilder[Self <: SchemaBasicYarnAutoscalingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBasicYarnAutoscalingConfig](x: Self) {
     
-    @scala.inline
-    def setGracefulDecommissionTimeout(value: String): Self = StObject.set(x, "gracefulDecommissionTimeout", value.asInstanceOf[js.Any])
+    inline def setGracefulDecommissionTimeout(value: String): Self = StObject.set(x, "gracefulDecommissionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGracefulDecommissionTimeoutUndefined: Self = StObject.set(x, "gracefulDecommissionTimeout", js.undefined)
+    inline def setGracefulDecommissionTimeoutUndefined: Self = StObject.set(x, "gracefulDecommissionTimeout", js.undefined)
     
-    @scala.inline
-    def setScaleDownFactor(value: Double): Self = StObject.set(x, "scaleDownFactor", value.asInstanceOf[js.Any])
+    inline def setScaleDownFactor(value: Double): Self = StObject.set(x, "scaleDownFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDownFactorUndefined: Self = StObject.set(x, "scaleDownFactor", js.undefined)
+    inline def setScaleDownFactorUndefined: Self = StObject.set(x, "scaleDownFactor", js.undefined)
     
-    @scala.inline
-    def setScaleDownMinWorkerFraction(value: Double): Self = StObject.set(x, "scaleDownMinWorkerFraction", value.asInstanceOf[js.Any])
+    inline def setScaleDownMinWorkerFraction(value: Double): Self = StObject.set(x, "scaleDownMinWorkerFraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDownMinWorkerFractionUndefined: Self = StObject.set(x, "scaleDownMinWorkerFraction", js.undefined)
+    inline def setScaleDownMinWorkerFractionUndefined: Self = StObject.set(x, "scaleDownMinWorkerFraction", js.undefined)
     
-    @scala.inline
-    def setScaleUpFactor(value: Double): Self = StObject.set(x, "scaleUpFactor", value.asInstanceOf[js.Any])
+    inline def setScaleUpFactor(value: Double): Self = StObject.set(x, "scaleUpFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUpFactorUndefined: Self = StObject.set(x, "scaleUpFactor", js.undefined)
+    inline def setScaleUpFactorUndefined: Self = StObject.set(x, "scaleUpFactor", js.undefined)
     
-    @scala.inline
-    def setScaleUpMinWorkerFraction(value: Double): Self = StObject.set(x, "scaleUpMinWorkerFraction", value.asInstanceOf[js.Any])
+    inline def setScaleUpMinWorkerFraction(value: Double): Self = StObject.set(x, "scaleUpMinWorkerFraction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUpMinWorkerFractionUndefined: Self = StObject.set(x, "scaleUpMinWorkerFraction", js.undefined)
+    inline def setScaleUpMinWorkerFractionUndefined: Self = StObject.set(x, "scaleUpMinWorkerFraction", js.undefined)
   }
 }

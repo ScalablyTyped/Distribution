@@ -31,6 +31,5 @@ object Description {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isDescription(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDescription")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDescription(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDescription")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

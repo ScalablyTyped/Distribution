@@ -29,8 +29,7 @@ trait FlashHalfEdge extends StObject {
 }
 object FlashHalfEdge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEdge: () => FlashEdge,
     getNext: () => FlashHalfEdge,
     getOppositeHalfEdge: () => FlashHalfEdge,
@@ -43,28 +42,20 @@ object FlashHalfEdge {
     __obj.asInstanceOf[FlashHalfEdge]
   }
   
-  @scala.inline
-  implicit class FlashHalfEdgeMutableBuilder[Self <: FlashHalfEdge] (val x: Self) extends AnyVal {
+  extension [Self <: FlashHalfEdge](x: Self) {
     
-    @scala.inline
-    def setGetEdge(value: () => FlashEdge): Self = StObject.set(x, "getEdge", js.Any.fromFunction0(value))
+    inline def setGetEdge(value: () => FlashEdge): Self = StObject.set(x, "getEdge", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNext(value: () => FlashHalfEdge): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
+    inline def setGetNext(value: () => FlashHalfEdge): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOppositeHalfEdge(value: () => FlashHalfEdge): Self = StObject.set(x, "getOppositeHalfEdge", js.Any.fromFunction0(value))
+    inline def setGetOppositeHalfEdge(value: () => FlashHalfEdge): Self = StObject.set(x, "getOppositeHalfEdge", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrev(value: () => FlashHalfEdge): Self = StObject.set(x, "getPrev", js.Any.fromFunction0(value))
+    inline def setGetPrev(value: () => FlashHalfEdge): Self = StObject.set(x, "getPrev", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetVertex(value: () => FlashVertex): Self = StObject.set(x, "getVertex", js.Any.fromFunction0(value))
+    inline def setGetVertex(value: () => FlashVertex): Self = StObject.set(x, "getVertex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

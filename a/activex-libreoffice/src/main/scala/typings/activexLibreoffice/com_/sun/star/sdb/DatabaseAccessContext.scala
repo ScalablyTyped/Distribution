@@ -34,8 +34,7 @@ trait DatabaseAccessContext
      with XLocalizable
 object DatabaseAccessContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     Locale: Locale,

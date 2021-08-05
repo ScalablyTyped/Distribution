@@ -13,22 +13,17 @@ trait SuccessResp extends StObject {
 }
 object SuccessResp {
   
-  @scala.inline
-  def apply(email_id_list: js.Array[String]): SuccessResp = {
+  inline def apply(email_id_list: js.Array[String]): SuccessResp = {
     val __obj = js.Dynamic.literal(email_id_list = email_id_list.asInstanceOf[js.Any], message = "success")
     __obj.asInstanceOf[SuccessResp]
   }
   
-  @scala.inline
-  implicit class SuccessRespMutableBuilder[Self <: SuccessResp] (val x: Self) extends AnyVal {
+  extension [Self <: SuccessResp](x: Self) {
     
-    @scala.inline
-    def setEmail_id_list(value: js.Array[String]): Self = StObject.set(x, "email_id_list", value.asInstanceOf[js.Any])
+    inline def setEmail_id_list(value: js.Array[String]): Self = StObject.set(x, "email_id_list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_id_listVarargs(value: String*): Self = StObject.set(x, "email_id_list", js.Array(value :_*))
+    inline def setEmail_id_listVarargs(value: String*): Self = StObject.set(x, "email_id_list", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: success): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

@@ -21,19 +21,15 @@ trait CalculateTransform
 }
 object CalculateTransform {
   
-  @scala.inline
-  def apply(as: FieldName, calculate: String): CalculateTransform = {
+  inline def apply(as: FieldName, calculate: String): CalculateTransform = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], calculate = calculate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalculateTransform]
   }
   
-  @scala.inline
-  implicit class CalculateTransformMutableBuilder[Self <: CalculateTransform] (val x: Self) extends AnyVal {
+  extension [Self <: CalculateTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculate(value: String): Self = StObject.set(x, "calculate", value.asInstanceOf[js.Any])
+    inline def setCalculate(value: String): Self = StObject.set(x, "calculate", value.asInstanceOf[js.Any])
   }
 }

@@ -67,8 +67,7 @@ object Geolocation {
        with ICivicAddress
   object CivicAddress {
     
-    @scala.inline
-    def apply(city: String, country: String, postalCode: String, state: String, timestamp: Date): CivicAddress = {
+    inline def apply(city: String, country: String, postalCode: String, state: String, timestamp: Date): CivicAddress = {
       val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CivicAddress]
     }
@@ -79,8 +78,7 @@ object Geolocation {
        with IGeocoordinate
   object Geocoordinate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accuracy: Double,
       altitude: Double,
       altitudeAccuracy: Double,
@@ -105,8 +103,7 @@ object Geolocation {
        with IGeoposition
   object Geoposition {
     
-    @scala.inline
-    def apply(civicAddress: CivicAddress, coordinate: Geocoordinate): Geoposition = {
+    inline def apply(civicAddress: CivicAddress, coordinate: Geocoordinate): Geoposition = {
       val __obj = js.Dynamic.literal(civicAddress = civicAddress.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any])
       __obj.asInstanceOf[Geoposition]
     }
@@ -126,29 +123,22 @@ object Geolocation {
   }
   object ICivicAddress {
     
-    @scala.inline
-    def apply(city: String, country: String, postalCode: String, state: String, timestamp: Date): ICivicAddress = {
+    inline def apply(city: String, country: String, postalCode: String, state: String, timestamp: Date): ICivicAddress = {
       val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICivicAddress]
     }
     
-    @scala.inline
-    implicit class ICivicAddressMutableBuilder[Self <: ICivicAddress] (val x: Self) extends AnyVal {
+    extension [Self <: ICivicAddress](x: Self) {
       
-      @scala.inline
-      def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -172,8 +162,7 @@ object Geolocation {
   }
   object IGeocoordinate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accuracy: Double,
       altitude: Double,
       altitudeAccuracy: Double,
@@ -187,32 +176,23 @@ object Geolocation {
       __obj.asInstanceOf[IGeocoordinate]
     }
     
-    @scala.inline
-    implicit class IGeocoordinateMutableBuilder[Self <: IGeocoordinate] (val x: Self) extends AnyVal {
+    extension [Self <: IGeocoordinate](x: Self) {
       
-      @scala.inline
-      def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+      inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+      inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltitudeAccuracy(value: Double): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
+      inline def setAltitudeAccuracy(value: Double): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+      inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,20 +223,16 @@ object Geolocation {
   }
   object IGeoposition {
     
-    @scala.inline
-    def apply(civicAddress: CivicAddress, coordinate: Geocoordinate): IGeoposition = {
+    inline def apply(civicAddress: CivicAddress, coordinate: Geocoordinate): IGeoposition = {
       val __obj = js.Dynamic.literal(civicAddress = civicAddress.asInstanceOf[js.Any], coordinate = coordinate.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGeoposition]
     }
     
-    @scala.inline
-    implicit class IGeopositionMutableBuilder[Self <: IGeoposition] (val x: Self) extends AnyVal {
+    extension [Self <: IGeoposition](x: Self) {
       
-      @scala.inline
-      def setCivicAddress(value: CivicAddress): Self = StObject.set(x, "civicAddress", value.asInstanceOf[js.Any])
+      inline def setCivicAddress(value: CivicAddress): Self = StObject.set(x, "civicAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinate(value: Geocoordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+      inline def setCoordinate(value: Geocoordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,17 +242,14 @@ object Geolocation {
   }
   object IPositionChangedEventArgs {
     
-    @scala.inline
-    def apply(position: Geoposition): IPositionChangedEventArgs = {
+    inline def apply(position: Geoposition): IPositionChangedEventArgs = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPositionChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class IPositionChangedEventArgsMutableBuilder[Self <: IPositionChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IPositionChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setPosition(value: Geoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Geoposition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -286,17 +259,14 @@ object Geolocation {
   }
   object IStatusChangedEventArgs {
     
-    @scala.inline
-    def apply(status: PositionStatus): IStatusChangedEventArgs = {
+    inline def apply(status: PositionStatus): IStatusChangedEventArgs = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStatusChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class IStatusChangedEventArgsMutableBuilder[Self <: IStatusChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IStatusChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setStatus(value: PositionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: PositionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -305,8 +275,7 @@ object Geolocation {
        with IPositionChangedEventArgs
   object PositionChangedEventArgs {
     
-    @scala.inline
-    def apply(position: Geoposition): PositionChangedEventArgs = {
+    inline def apply(position: Geoposition): PositionChangedEventArgs = {
       val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[PositionChangedEventArgs]
     }
@@ -317,8 +286,7 @@ object Geolocation {
        with IStatusChangedEventArgs
   object StatusChangedEventArgs {
     
-    @scala.inline
-    def apply(status: PositionStatus): StatusChangedEventArgs = {
+    inline def apply(status: PositionStatus): StatusChangedEventArgs = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatusChangedEventArgs]
     }

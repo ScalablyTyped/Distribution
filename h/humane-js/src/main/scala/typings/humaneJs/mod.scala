@@ -60,38 +60,28 @@ object mod extends Shortcut {
   }
   object HumaneMessageOptions {
     
-    @scala.inline
-    def apply(): HumaneMessageOptions = {
+    inline def apply(): HumaneMessageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HumaneMessageOptions]
     }
     
-    @scala.inline
-    implicit class HumaneMessageOptionsMutableBuilder[Self <: HumaneMessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HumaneMessageOptions](x: Self) {
       
-      @scala.inline
-      def setAddnCls(value: String): Self = StObject.set(x, "addnCls", value.asInstanceOf[js.Any])
+      inline def setAddnCls(value: String): Self = StObject.set(x, "addnCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddnClsUndefined: Self = StObject.set(x, "addnCls", js.undefined)
+      inline def setAddnClsUndefined: Self = StObject.set(x, "addnCls", js.undefined)
       
-      @scala.inline
-      def setClickToClose(value: Boolean): Self = StObject.set(x, "clickToClose", value.asInstanceOf[js.Any])
+      inline def setClickToClose(value: Boolean): Self = StObject.set(x, "clickToClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickToCloseUndefined: Self = StObject.set(x, "clickToClose", js.undefined)
+      inline def setClickToCloseUndefined: Self = StObject.set(x, "clickToClose", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setWaitForMove(value: Boolean): Self = StObject.set(x, "waitForMove", value.asInstanceOf[js.Any])
+      inline def setWaitForMove(value: Boolean): Self = StObject.set(x, "waitForMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForMoveUndefined: Self = StObject.set(x, "waitForMove", js.undefined)
+      inline def setWaitForMoveUndefined: Self = StObject.set(x, "waitForMove", js.undefined)
     }
   }
   
@@ -105,26 +95,20 @@ object mod extends Shortcut {
   }
   object HumaneOptions {
     
-    @scala.inline
-    def apply(): HumaneOptions = {
+    inline def apply(): HumaneOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HumaneOptions]
     }
     
-    @scala.inline
-    implicit class HumaneOptionsMutableBuilder[Self <: HumaneOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HumaneOptions](x: Self) {
       
-      @scala.inline
-      def setBaseCls(value: String): Self = StObject.set(x, "baseCls", value.asInstanceOf[js.Any])
+      inline def setBaseCls(value: String): Self = StObject.set(x, "baseCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseClsUndefined: Self = StObject.set(x, "baseCls", js.undefined)
+      inline def setBaseClsUndefined: Self = StObject.set(x, "baseCls", js.undefined)
       
-      @scala.inline
-      def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     }
   }
   

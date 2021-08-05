@@ -49,8 +49,7 @@ trait IView extends StObject {
 }
 object IView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessControlList: IAccessControlList,
     Clone: () => IView,
     CloneFrom: IView => Unit,
@@ -75,64 +74,44 @@ object IView {
     __obj.asInstanceOf[IView]
   }
   
-  @scala.inline
-  implicit class IViewMutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
+  extension [Self <: IView](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IView): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IView): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloneFrom(value: IView => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: IView => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommon(value: Boolean): Self = StObject.set(x, "Common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: Boolean): Self = StObject.set(x, "Common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+    inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasParent(value: Boolean): Self = StObject.set(x, "HasParent", value.asInstanceOf[js.Any])
+    inline def setHasParent(value: Boolean): Self = StObject.set(x, "HasParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevels(value: IExpressionExs): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: IExpressionExs): Self = StObject.set(x, "Levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookInAllVersions(value: Boolean): Self = StObject.set(x, "LookInAllVersions", value.asInstanceOf[js.Any])
+    inline def setLookInAllVersions(value: Boolean): Self = StObject.set(x, "LookInAllVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Double): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Double): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnLatestVisibleVersion(value: Boolean): Self = StObject.set(x, "ReturnLatestVisibleVersion", value.asInstanceOf[js.Any])
+    inline def setReturnLatestVisibleVersion(value: Boolean): Self = StObject.set(x, "ReturnLatestVisibleVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchConditions(value: ISearchConditions): Self = StObject.set(x, "SearchConditions", value.asInstanceOf[js.Any])
+    inline def setSearchConditions(value: ISearchConditions): Self = StObject.set(x, "SearchConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchDef(value: ISearchDef): Self = StObject.set(x, "SearchDef", value.asInstanceOf[js.Any])
+    inline def setSearchDef(value: ISearchDef): Self = StObject.set(x, "SearchDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFlags(value: MFSearchFlags): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
+    inline def setSearchFlags(value: MFSearchFlags): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewFlags(value: MFViewFlag): Self = StObject.set(x, "ViewFlags", value.asInstanceOf[js.Any])
+    inline def setViewFlags(value: MFViewFlag): Self = StObject.set(x, "ViewFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewLocation(value: IViewLocation): Self = StObject.set(x, "ViewLocation", value.asInstanceOf[js.Any])
+    inline def setViewLocation(value: IViewLocation): Self = StObject.set(x, "ViewLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewType(value: MFViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: MFViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

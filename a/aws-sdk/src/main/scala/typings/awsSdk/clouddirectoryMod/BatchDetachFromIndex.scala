@@ -18,19 +18,15 @@ trait BatchDetachFromIndex extends StObject {
 }
 object BatchDetachFromIndex {
   
-  @scala.inline
-  def apply(IndexReference: ObjectReference, TargetReference: ObjectReference): BatchDetachFromIndex = {
+  inline def apply(IndexReference: ObjectReference, TargetReference: ObjectReference): BatchDetachFromIndex = {
     val __obj = js.Dynamic.literal(IndexReference = IndexReference.asInstanceOf[js.Any], TargetReference = TargetReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDetachFromIndex]
   }
   
-  @scala.inline
-  implicit class BatchDetachFromIndexMutableBuilder[Self <: BatchDetachFromIndex] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDetachFromIndex](x: Self) {
     
-    @scala.inline
-    def setIndexReference(value: ObjectReference): Self = StObject.set(x, "IndexReference", value.asInstanceOf[js.Any])
+    inline def setIndexReference(value: ObjectReference): Self = StObject.set(x, "IndexReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetReference(value: ObjectReference): Self = StObject.set(x, "TargetReference", value.asInstanceOf[js.Any])
+    inline def setTargetReference(value: ObjectReference): Self = StObject.set(x, "TargetReference", value.asInstanceOf[js.Any])
   }
 }

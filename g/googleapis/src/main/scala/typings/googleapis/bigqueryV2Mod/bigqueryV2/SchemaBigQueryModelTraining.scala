@@ -22,25 +22,19 @@ trait SchemaBigQueryModelTraining extends StObject {
 }
 object SchemaBigQueryModelTraining {
   
-  @scala.inline
-  def apply(): SchemaBigQueryModelTraining = {
+  inline def apply(): SchemaBigQueryModelTraining = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBigQueryModelTraining]
   }
   
-  @scala.inline
-  implicit class SchemaBigQueryModelTrainingMutableBuilder[Self <: SchemaBigQueryModelTraining] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBigQueryModelTraining](x: Self) {
     
-    @scala.inline
-    def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
+    inline def setCurrentIteration(value: Double): Self = StObject.set(x, "currentIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
+    inline def setCurrentIterationUndefined: Self = StObject.set(x, "currentIteration", js.undefined)
     
-    @scala.inline
-    def setExpectedTotalIterations(value: String): Self = StObject.set(x, "expectedTotalIterations", value.asInstanceOf[js.Any])
+    inline def setExpectedTotalIterations(value: String): Self = StObject.set(x, "expectedTotalIterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedTotalIterationsUndefined: Self = StObject.set(x, "expectedTotalIterations", js.undefined)
+    inline def setExpectedTotalIterationsUndefined: Self = StObject.set(x, "expectedTotalIterations", js.undefined)
   }
 }

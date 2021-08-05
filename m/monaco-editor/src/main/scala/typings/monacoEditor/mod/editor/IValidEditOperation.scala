@@ -19,19 +19,15 @@ trait IValidEditOperation extends StObject {
 }
 object IValidEditOperation {
   
-  @scala.inline
-  def apply(range: Range, text: String): IValidEditOperation = {
+  inline def apply(range: Range, text: String): IValidEditOperation = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValidEditOperation]
   }
   
-  @scala.inline
-  implicit class IValidEditOperationMutableBuilder[Self <: IValidEditOperation] (val x: Self) extends AnyVal {
+  extension [Self <: IValidEditOperation](x: Self) {
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

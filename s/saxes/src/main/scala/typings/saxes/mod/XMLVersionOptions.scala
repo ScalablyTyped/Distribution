@@ -24,25 +24,19 @@ trait XMLVersionOptions extends StObject {
 }
 object XMLVersionOptions {
   
-  @scala.inline
-  def apply(): XMLVersionOptions = {
+  inline def apply(): XMLVersionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XMLVersionOptions]
   }
   
-  @scala.inline
-  implicit class XMLVersionOptionsMutableBuilder[Self <: XMLVersionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: XMLVersionOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultXMLVersion(value: `1Dot0` | `1Dot1`): Self = StObject.set(x, "defaultXMLVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultXMLVersion(value: `1Dot0` | `1Dot1`): Self = StObject.set(x, "defaultXMLVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultXMLVersionUndefined: Self = StObject.set(x, "defaultXMLVersion", js.undefined)
+    inline def setDefaultXMLVersionUndefined: Self = StObject.set(x, "defaultXMLVersion", js.undefined)
     
-    @scala.inline
-    def setForceXMLVersion(value: Boolean): Self = StObject.set(x, "forceXMLVersion", value.asInstanceOf[js.Any])
+    inline def setForceXMLVersion(value: Boolean): Self = StObject.set(x, "forceXMLVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceXMLVersionUndefined: Self = StObject.set(x, "forceXMLVersion", js.undefined)
+    inline def setForceXMLVersionUndefined: Self = StObject.set(x, "forceXMLVersion", js.undefined)
   }
 }

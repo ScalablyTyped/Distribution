@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XAxisType extends StObject
 object XAxisType {
   
-  @scala.inline
-  def category: typings.c3.c3Strings.category = "category".asInstanceOf[typings.c3.c3Strings.category]
+  inline def category: typings.c3.c3Strings.category = "category".asInstanceOf[typings.c3.c3Strings.category]
   
-  @scala.inline
-  def indexed: typings.c3.c3Strings.indexed = "indexed".asInstanceOf[typings.c3.c3Strings.indexed]
+  inline def indexed: typings.c3.c3Strings.indexed = "indexed".asInstanceOf[typings.c3.c3Strings.indexed]
   
-  @scala.inline
-  def timeseries: typings.c3.c3Strings.timeseries = "timeseries".asInstanceOf[typings.c3.c3Strings.timeseries]
+  inline def timeseries: typings.c3.c3Strings.timeseries = "timeseries".asInstanceOf[typings.c3.c3Strings.timeseries]
 }

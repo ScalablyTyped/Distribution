@@ -33,38 +33,33 @@ object xmlAttributeMod {
   }
   object IXmlAttributeOptions {
     
-    @scala.inline
-    def apply(name: String): IXmlAttributeOptions = {
+    inline def apply(name: String): IXmlAttributeOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IXmlAttributeOptions]
     }
     
-    @scala.inline
-    implicit class IXmlAttributeOptionsMutableBuilder[Self <: IXmlAttributeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlAttributeOptions](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceInvalidCharsInName(value: Boolean): Self = StObject.set(x, "replaceInvalidCharsInName", value.asInstanceOf[js.Any])
+      inline def setReplaceInvalidCharsInName(value: Boolean): Self = StObject.set(x, "replaceInvalidCharsInName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceInvalidCharsInNameUndefined: Self = StObject.set(x, "replaceInvalidCharsInName", js.undefined)
+      inline def setReplaceInvalidCharsInNameUndefined: Self = StObject.set(x, "replaceInvalidCharsInName", js.undefined)
     }
   }
   
   @js.native
   trait XmlAttribute[Parent] extends StObject {
     
-    val _children: js.Any = js.native
+    /* private */ val _children: js.Any = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
-    val _parent: js.Any = js.native
+    /* private */ val _parent: js.Any = js.native
     
-    val _replaceInvalidCharsInName: js.Any = js.native
+    /* private */ val _replaceInvalidCharsInName: js.Any = js.native
     
-    val _validation: js.Any = js.native
+    /* private */ val _validation: js.Any = js.native
     
     /**
       * Adds a character reference to this attribute and returns the new

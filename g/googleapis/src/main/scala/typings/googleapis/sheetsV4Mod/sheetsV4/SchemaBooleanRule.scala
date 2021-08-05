@@ -24,25 +24,19 @@ trait SchemaBooleanRule extends StObject {
 }
 object SchemaBooleanRule {
   
-  @scala.inline
-  def apply(): SchemaBooleanRule = {
+  inline def apply(): SchemaBooleanRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBooleanRule]
   }
   
-  @scala.inline
-  implicit class SchemaBooleanRuleMutableBuilder[Self <: SchemaBooleanRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBooleanRule](x: Self) {
     
-    @scala.inline
-    def setCondition(value: SchemaBooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: SchemaBooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setFormat(value: SchemaCellFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: SchemaCellFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait DeliveryTimelineView extends StObject {
 }
 object DeliveryTimelineView {
   
-  @scala.inline
-  def apply(deliveryTimelineView: scala.Double): DeliveryTimelineView = {
+  inline def apply(deliveryTimelineView: scala.Double): DeliveryTimelineView = {
     val __obj = js.Dynamic.literal(deliveryTimelineView = deliveryTimelineView.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeliveryTimelineView]
   }
   
-  @scala.inline
-  implicit class DeliveryTimelineViewMutableBuilder[Self <: DeliveryTimelineView] (val x: Self) extends AnyVal {
+  extension [Self <: DeliveryTimelineView](x: Self) {
     
-    @scala.inline
-    def setDeliveryTimelineView(value: scala.Double): Self = StObject.set(x, "deliveryTimelineView", value.asInstanceOf[js.Any])
+    inline def setDeliveryTimelineView(value: scala.Double): Self = StObject.set(x, "deliveryTimelineView", value.asInstanceOf[js.Any])
   }
 }

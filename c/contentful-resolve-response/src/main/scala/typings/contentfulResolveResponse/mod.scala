@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(response: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(response.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(response: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(response.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("contentful-resolve-response", JSImport.Namespace)
   @js.native

@@ -18,34 +18,25 @@ trait BuyTradeResponse extends StObject {
 }
 object BuyTradeResponse {
   
-  @scala.inline
-  def apply(trade: BuyTrade): BuyTradeResponse = {
+  inline def apply(trade: BuyTrade): BuyTradeResponse = {
     val __obj = js.Dynamic.literal(trade = trade.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuyTradeResponse]
   }
   
-  @scala.inline
-  implicit class BuyTradeResponseMutableBuilder[Self <: BuyTradeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BuyTradeResponse](x: Self) {
     
-    @scala.inline
-    def setNewQuote(value: BuyTrade): Self = StObject.set(x, "newQuote", value.asInstanceOf[js.Any])
+    inline def setNewQuote(value: BuyTrade): Self = StObject.set(x, "newQuote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewQuoteUndefined: Self = StObject.set(x, "newQuote", js.undefined)
+    inline def setNewQuoteUndefined: Self = StObject.set(x, "newQuote", js.undefined)
     
-    @scala.inline
-    def setRequestTradeErrorType(value: QUOTE_TIMEOUT | UNKNOWN): Self = StObject.set(x, "requestTradeErrorType", value.asInstanceOf[js.Any])
+    inline def setRequestTradeErrorType(value: QUOTE_TIMEOUT | UNKNOWN): Self = StObject.set(x, "requestTradeErrorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTradeErrorTypeUndefined: Self = StObject.set(x, "requestTradeErrorType", js.undefined)
+    inline def setRequestTradeErrorTypeUndefined: Self = StObject.set(x, "requestTradeErrorType", js.undefined)
     
-    @scala.inline
-    def setTrade(value: BuyTrade): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
+    inline def setTrade(value: BuyTrade): Self = StObject.set(x, "trade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTradeForm(value: BuyTradeFormResponse): Self = StObject.set(x, "tradeForm", value.asInstanceOf[js.Any])
+    inline def setTradeForm(value: BuyTradeFormResponse): Self = StObject.set(x, "tradeForm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTradeFormUndefined: Self = StObject.set(x, "tradeForm", js.undefined)
+    inline def setTradeFormUndefined: Self = StObject.set(x, "tradeForm", js.undefined)
   }
 }

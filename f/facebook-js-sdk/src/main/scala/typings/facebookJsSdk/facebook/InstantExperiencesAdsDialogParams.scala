@@ -23,31 +23,23 @@ trait InstantExperiencesAdsDialogParams
 }
 object InstantExperiencesAdsDialogParams {
   
-  @scala.inline
-  def apply(business_id: String, page_id: String): InstantExperiencesAdsDialogParams = {
+  inline def apply(business_id: String, page_id: String): InstantExperiencesAdsDialogParams = {
     val __obj = js.Dynamic.literal(business_id = business_id.asInstanceOf[js.Any], display = "popup", method = "canvas_editor", page_id = page_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantExperiencesAdsDialogParams]
   }
   
-  @scala.inline
-  implicit class InstantExperiencesAdsDialogParamsMutableBuilder[Self <: InstantExperiencesAdsDialogParams] (val x: Self) extends AnyVal {
+  extension [Self <: InstantExperiencesAdsDialogParams](x: Self) {
     
-    @scala.inline
-    def setBusiness_id(value: String): Self = StObject.set(x, "business_id", value.asInstanceOf[js.Any])
+    inline def setBusiness_id(value: String): Self = StObject.set(x, "business_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvas_id(value: String): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
+    inline def setCanvas_id(value: String): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvas_idUndefined: Self = StObject.set(x, "canvas_id", js.undefined)
+    inline def setCanvas_idUndefined: Self = StObject.set(x, "canvas_id", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: canvas_editor): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: canvas_editor): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_id(value: String): Self = StObject.set(x, "page_id", value.asInstanceOf[js.Any])
+    inline def setPage_id(value: String): Self = StObject.set(x, "page_id", value.asInstanceOf[js.Any])
   }
 }

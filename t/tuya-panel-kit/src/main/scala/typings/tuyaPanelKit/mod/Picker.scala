@@ -27,6 +27,5 @@ object Picker {
   @JSImport("tuya-panel-kit", "Picker.Item")
   @js.native
   def Item: ElementType[js.Any] = js.native
-  @scala.inline
-  def Item_=(x: ElementType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: ElementType[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

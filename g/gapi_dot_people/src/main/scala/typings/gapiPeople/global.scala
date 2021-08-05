@@ -31,15 +31,12 @@ object global {
             @js.native
             val ^ : js.Any = js.native
             
-            @scala.inline
-            def list(parameters: ListParameters): HttpRequest[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Response]]
+            inline def list(parameters: ListParameters): HttpRequest[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Response]]
           }
           
-          @scala.inline
-          def get(parameters: GetParameters): HttpRequest[Person] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Person]]
+          inline def get(parameters: GetParameters): HttpRequest[Person] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Person]]
           
-          @scala.inline
-          def getBatchGet(parameters: GetBatchGetParameters): HttpRequest[BatchGetResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBatchGet")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[BatchGetResponse]]
+          inline def getBatchGet(parameters: GetBatchGetParameters): HttpRequest[BatchGetResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBatchGet")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[BatchGetResponse]]
         }
       }
     }

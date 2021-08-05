@@ -14,19 +14,15 @@ trait MlPutTrainedModel[T]
 }
 object MlPutTrainedModel {
   
-  @scala.inline
-  def apply[T](body: T, model_id: String): MlPutTrainedModel[T] = {
+  inline def apply[T](body: T, model_id: String): MlPutTrainedModel[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], model_id = model_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlPutTrainedModel[T]]
   }
   
-  @scala.inline
-  implicit class MlPutTrainedModelMutableBuilder[Self <: MlPutTrainedModel[?], T] (val x: Self & MlPutTrainedModel[T]) extends AnyVal {
+  extension [Self <: MlPutTrainedModel[?], T](x: Self & MlPutTrainedModel[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
+    inline def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
   }
 }

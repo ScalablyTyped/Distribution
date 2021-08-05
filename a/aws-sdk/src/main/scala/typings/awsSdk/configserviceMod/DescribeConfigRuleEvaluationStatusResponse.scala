@@ -18,28 +18,21 @@ trait DescribeConfigRuleEvaluationStatusResponse extends StObject {
 }
 object DescribeConfigRuleEvaluationStatusResponse {
   
-  @scala.inline
-  def apply(): DescribeConfigRuleEvaluationStatusResponse = {
+  inline def apply(): DescribeConfigRuleEvaluationStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConfigRuleEvaluationStatusResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConfigRuleEvaluationStatusResponseMutableBuilder[Self <: DescribeConfigRuleEvaluationStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConfigRuleEvaluationStatusResponse](x: Self) {
     
-    @scala.inline
-    def setConfigRulesEvaluationStatus(value: ConfigRuleEvaluationStatusList): Self = StObject.set(x, "ConfigRulesEvaluationStatus", value.asInstanceOf[js.Any])
+    inline def setConfigRulesEvaluationStatus(value: ConfigRuleEvaluationStatusList): Self = StObject.set(x, "ConfigRulesEvaluationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRulesEvaluationStatusUndefined: Self = StObject.set(x, "ConfigRulesEvaluationStatus", js.undefined)
+    inline def setConfigRulesEvaluationStatusUndefined: Self = StObject.set(x, "ConfigRulesEvaluationStatus", js.undefined)
     
-    @scala.inline
-    def setConfigRulesEvaluationStatusVarargs(value: ConfigRuleEvaluationStatus*): Self = StObject.set(x, "ConfigRulesEvaluationStatus", js.Array(value :_*))
+    inline def setConfigRulesEvaluationStatusVarargs(value: ConfigRuleEvaluationStatus*): Self = StObject.set(x, "ConfigRulesEvaluationStatus", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

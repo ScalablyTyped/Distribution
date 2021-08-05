@@ -28,7 +28,6 @@ object personaCoinMod {
     @JSImport("office-ui-fabric-react/lib/components/Persona/PersonaCoin", "PersonaCoinBase.defaultProps")
     @js.native
     def defaultProps: IPersonaCoinProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IPersonaCoinProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IPersonaCoinProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

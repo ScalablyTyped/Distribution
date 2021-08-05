@@ -13,19 +13,15 @@ trait MetricWindow extends StObject {
 }
 object MetricWindow {
   
-  @scala.inline
-  def apply(): MetricWindow = {
+  inline def apply(): MetricWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricWindow]
   }
   
-  @scala.inline
-  implicit class MetricWindowMutableBuilder[Self <: MetricWindow] (val x: Self) extends AnyVal {
+  extension [Self <: MetricWindow](x: Self) {
     
-    @scala.inline
-    def setTumbling(value: TumblingWindow): Self = StObject.set(x, "tumbling", value.asInstanceOf[js.Any])
+    inline def setTumbling(value: TumblingWindow): Self = StObject.set(x, "tumbling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTumblingUndefined: Self = StObject.set(x, "tumbling", js.undefined)
+    inline def setTumblingUndefined: Self = StObject.set(x, "tumbling", js.undefined)
   }
 }

@@ -19,13 +19,13 @@ object componentToggleMod {
        with ControlValueAccessor {
     def this(renderer: Renderer2, changeDetectorRef: ChangeDetectorRef, elementRef: ElementRef[js.Any]) = this()
     
-    @JSName("$element")
+    /* private */ @JSName("$element")
     var $element: js.Any = js.native
     
-    @JSName("$toggle")
+    /* private */ @JSName("$toggle")
     var $toggle: js.Any = js.native
     
-    var changeDetectorRef: js.Any = js.native
+    /* private */ var changeDetectorRef: js.Any = js.native
     
     var checked: js.Any = js.native
     
@@ -35,23 +35,23 @@ object componentToggleMod {
     
     var disabled: js.Any = js.native
     
-    var elementRef: js.Any = js.native
+    /* private */ var elementRef: js.Any = js.native
     
     var id: String = js.native
     
-    var m_checked: js.Any = js.native
+    /* private */ var m_checked: js.Any = js.native
     
-    var m_color: js.Any = js.native
+    /* private */ var m_color: js.Any = js.native
     
-    var m_disabled: js.Any = js.native
+    /* private */ var m_disabled: js.Any = js.native
     
-    var m_model: js.Any = js.native
+    /* private */ var m_model: js.Any = js.native
     
-    var m_placeholder: js.Any = js.native
+    /* private */ var m_placeholder: js.Any = js.native
     
-    var m_readonly: js.Any = js.native
+    /* private */ var m_readonly: js.Any = js.native
     
-    var m_required: js.Any = js.native
+    /* private */ var m_required: js.Any = js.native
     
     var model: js.Any = js.native
     
@@ -65,9 +65,9 @@ object componentToggleMod {
     
     var placeholder: js.Any = js.native
     
-    var propagateChange: js.Any = js.native
+    /* private */ var propagateChange: js.Any = js.native
     
-    var propagateTouch: js.Any = js.native
+    /* private */ var propagateTouch: js.Any = js.native
     
     var readonly: js.Any = js.native
     

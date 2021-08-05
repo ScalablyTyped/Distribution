@@ -112,14 +112,12 @@ object libDetailsListMod {
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DEFAULT_ROW_HEIGHTS.compactRowHeight")
     @js.native
     def compactRowHeight: Double = js.native
-    @scala.inline
-    def compactRowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compactRowHeight")(x.asInstanceOf[js.Any])
+    inline def compactRowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compactRowHeight")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DEFAULT_ROW_HEIGHTS.rowHeight")
     @js.native
     def rowHeight: Double = js.native
-    @scala.inline
-    def rowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowHeight")(x.asInstanceOf[js.Any])
+    inline def rowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowHeight")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsColumnBase")
@@ -149,8 +147,7 @@ object libDetailsListMod {
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsHeaderBase.defaultProps")
     @js.native
     def defaultProps: CollapseAllVisibility = js.native
-    @scala.inline
-    def defaultProps_=(x: CollapseAllVisibility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CollapseAllVisibility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsList")
@@ -173,11 +170,9 @@ object libDetailsListMod {
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsListBase.defaultProps")
     @js.native
     def defaultProps: CheckboxVisibility = js.native
-    @scala.inline
-    def defaultProps_=(x: CheckboxVisibility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CheckboxVisibility): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState): IDetailsListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsListState]
+    inline def getDerivedStateFromProps(nextProps: IDetailsListProps, previousState: IDetailsListState): IDetailsListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsListState]
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsListLayoutMode")
@@ -209,8 +204,7 @@ object libDetailsListMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: IDetailsRowBaseProps, previousState: IDetailsRowState): IDetailsRowState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsRowState]
+    inline def getDerivedStateFromProps(nextProps: IDetailsRowBaseProps, previousState: IDetailsRowState): IDetailsRowState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsRowState]
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowCheck")
@@ -234,77 +228,64 @@ object libDetailsListMod {
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.cellAnimation")
     @js.native
     def cellAnimation: String = js.native
-    @scala.inline
-    def cellAnimation_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellAnimation")(x.asInstanceOf[js.Any])
+    inline def cellAnimation_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellAnimation")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.cellCheck")
     @js.native
     def cellCheck: String = js.native
-    @scala.inline
-    def cellCheck_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellCheck")(x.asInstanceOf[js.Any])
+    inline def cellCheck_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellCheck")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.cellMeasurer")
     @js.native
     def cellMeasurer: String = js.native
-    @scala.inline
-    def cellMeasurer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellMeasurer")(x.asInstanceOf[js.Any])
+    inline def cellMeasurer_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cellMeasurer")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def cell_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cell")(x.asInstanceOf[js.Any])
+    inline def cell_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cell")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.check")
     @js.native
     def check: String = js.native
-    @scala.inline
-    def check_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
+    inline def check_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("check")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.compact")
     @js.native
     def compact: String = js.native
-    @scala.inline
-    def compact_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compact")(x.asInstanceOf[js.Any])
+    inline def compact_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compact")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.fields")
     @js.native
     def fields: String = js.native
-    @scala.inline
-    def fields_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fields")(x.asInstanceOf[js.Any])
+    inline def fields_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fields")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.isCheckVisible")
     @js.native
     def isCheckVisible: String = js.native
-    @scala.inline
-    def isCheckVisible_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isCheckVisible")(x.asInstanceOf[js.Any])
+    inline def isCheckVisible_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isCheckVisible")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.isContentUnselectable")
     @js.native
     def isContentUnselectable: String = js.native
-    @scala.inline
-    def isContentUnselectable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isContentUnselectable")(x.asInstanceOf[js.Any])
+    inline def isContentUnselectable_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isContentUnselectable")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.isRowHeader")
     @js.native
     def isRowHeader: String = js.native
-    @scala.inline
-    def isRowHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isRowHeader")(x.asInstanceOf[js.Any])
+    inline def isRowHeader_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isRowHeader")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.isSelected")
     @js.native
     def isSelected: String = js.native
-    @scala.inline
-    def isSelected_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSelected")(x.asInstanceOf[js.Any])
+    inline def isSelected_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSelected")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.listCellFirstChild")
     @js.native
     def listCellFirstChild: String = js.native
-    @scala.inline
-    def listCellFirstChild_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("listCellFirstChild")(x.asInstanceOf[js.Any])
+    inline def listCellFirstChild_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("listCellFirstChild")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/DetailsList", "DetailsRowGlobalClassNames.root")
     @js.native
     def root: String = js.native
-    @scala.inline
-    def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
+    inline def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/DetailsList", "SELECTION_CHANGE")
@@ -379,15 +360,12 @@ object libDetailsListMod {
     @JSImport("office-ui-fabric-react/lib/DetailsList", "SelectionZone.defaultProps")
     @js.native
     def defaultProps: IsSelectedOnFocus = js.native
-    @scala.inline
-    def defaultProps_=(x: IsSelectedOnFocus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IsSelectedOnFocus): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[ISelectionZoneState]
+    inline def getDerivedStateFromProps(nextProps: ISelectionZoneProps, prevState: ISelectionZoneState): ISelectionZoneState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[ISelectionZoneState]
   }
   
-  @scala.inline
-  def buildColumns(
+  inline def buildColumns(
     items: js.Array[js.Any],
     canResizeColumns: js.UndefOr[Boolean],
     onColumnClick: js.UndefOr[
@@ -399,6 +377,5 @@ object libDetailsListMod {
     isMultiline: js.UndefOr[Boolean]
   ): js.Array[IColumn] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildColumns")(items.asInstanceOf[js.Any], canResizeColumns.asInstanceOf[js.Any], onColumnClick.asInstanceOf[js.Any], sortedColumnKey.asInstanceOf[js.Any], isSortedDescending.asInstanceOf[js.Any], groupedColumnKey.asInstanceOf[js.Any], isMultiline.asInstanceOf[js.Any])).asInstanceOf[js.Array[IColumn]]
   
-  @scala.inline
-  def getDetailsRowStyles(props: IDetailsRowStyleProps): IDetailsRowStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsRowStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowStyles]
+  inline def getDetailsRowStyles(props: IDetailsRowStyleProps): IDetailsRowStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetailsRowStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDetailsRowStyles]
 }

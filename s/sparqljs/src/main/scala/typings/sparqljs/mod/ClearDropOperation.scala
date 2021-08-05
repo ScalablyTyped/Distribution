@@ -18,23 +18,18 @@ trait ClearDropOperation
 }
 object ClearDropOperation {
   
-  @scala.inline
-  def apply(graph: GraphReference, silent: Boolean, `type`: clear | drop): ClearDropOperation = {
+  inline def apply(graph: GraphReference, silent: Boolean, `type`: clear | drop): ClearDropOperation = {
     val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearDropOperation]
   }
   
-  @scala.inline
-  implicit class ClearDropOperationMutableBuilder[Self <: ClearDropOperation] (val x: Self) extends AnyVal {
+  extension [Self <: ClearDropOperation](x: Self) {
     
-    @scala.inline
-    def setGraph(value: GraphReference): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: GraphReference): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: clear | drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: clear | drop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

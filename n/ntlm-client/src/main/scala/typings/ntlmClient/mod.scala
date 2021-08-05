@@ -11,14 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createType1Message(workstation: String, domain: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createType1Message")(workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createType1Message(workstation: String, domain: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createType1Message")(workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createType3Message(type2Message: NtlmType2, username: String, password: String, workstation: String, domain: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createType3Message")(type2Message.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createType3Message(type2Message: NtlmType2, username: String, password: String, workstation: String, domain: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createType3Message")(type2Message.asInstanceOf[js.Any], username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def decodeType2Message(type1Message: String): NtlmType2 = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeType2Message")(type1Message.asInstanceOf[js.Any]).asInstanceOf[NtlmType2]
+  inline def decodeType2Message(type1Message: String): NtlmType2 = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeType2Message")(type1Message.asInstanceOf[js.Any]).asInstanceOf[NtlmType2]
   
   trait NtlmType2 extends StObject {
     
@@ -36,8 +33,7 @@ object mod {
   }
   object NtlmType2 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       challenge: Buffer,
       encoding: String,
       flags: Double,
@@ -49,26 +45,19 @@ object mod {
       __obj.asInstanceOf[NtlmType2]
     }
     
-    @scala.inline
-    implicit class NtlmType2MutableBuilder[Self <: NtlmType2] (val x: Self) extends AnyVal {
+    extension [Self <: NtlmType2](x: Self) {
       
-      @scala.inline
-      def setChallenge(value: Buffer): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
+      inline def setChallenge(value: Buffer): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetInfo(value: typings.ntlmClient.anon.Buffer): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
+      inline def setTargetInfo(value: typings.ntlmClient.anon.Buffer): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
+      inline def setTargetName(value: String): Self = StObject.set(x, "targetName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

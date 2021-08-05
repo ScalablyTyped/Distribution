@@ -139,14 +139,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def extend(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Any]
-    @scala.inline
-    def extend(instanceProps: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def extend(instanceProps: js.Any, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def extend(instanceProps: Unit, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Any]
+    inline def extend(instanceProps: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def extend(instanceProps: js.Any, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(instanceProps: Unit, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("js-data", "Container")
@@ -472,8 +468,7 @@ object mod {
     @JSImport("js-data", "Query.ops")
     @js.native
     def ops: _empty = js.native
-    @scala.inline
-    def ops_=(x: _empty): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ops")(x.asInstanceOf[js.Any])
+    inline def ops_=(x: _empty): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ops")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("js-data", "Record")
@@ -555,8 +550,7 @@ object mod {
     @JSImport("js-data", "Record.mapper")
     @js.native
     def mapper: Mapper = js.native
-    @scala.inline
-    def mapper_=(x: Mapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapper")(x.asInstanceOf[js.Any])
+    inline def mapper_=(x: Mapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mapper")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("js-data", "Schema")
@@ -591,23 +585,19 @@ object mod {
     @JSImport("js-data", "Schema.typeGroupValidators")
     @js.native
     def typeGroupValidators: Integer = js.native
-    @scala.inline
-    def typeGroupValidators_=(x: Integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeGroupValidators")(x.asInstanceOf[js.Any])
+    inline def typeGroupValidators_=(x: Integer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("typeGroupValidators")(x.asInstanceOf[js.Any])
     
     @JSImport("js-data", "Schema.types")
     @js.native
     def types: Array = js.native
-    @scala.inline
-    def types_=(x: Array): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
+    inline def types_=(x: Array): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("types")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def validate(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[SchemaValidationError]]
+    inline def validate(value: js.Any, schema: js.Any, opts: js.Any): js.Array[SchemaValidationError] = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[SchemaValidationError]]
     
     @JSImport("js-data", "Schema.validationKeywords")
     @js.native
     def validationKeywords: AllOf = js.native
-    @scala.inline
-    def validationKeywords_=(x: AllOf): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validationKeywords")(x.asInstanceOf[js.Any])
+    inline def validationKeywords_=(x: AllOf): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validationKeywords")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("js-data", "Settable")
@@ -620,14 +610,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def extend(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Any]
-    @scala.inline
-    def extend(instanceProps: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def extend(instanceProps: js.Any, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def extend(instanceProps: Unit, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Any]
+    inline def extend(instanceProps: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def extend(instanceProps: js.Any, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def extend(instanceProps: Unit, classProps: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("js-data", "SimpleStore")
@@ -747,22 +733,19 @@ object mod {
     var usePendingFindAll: Boolean = js.native
   }
   
-  @scala.inline
-  def belongsTo(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("belongsTo")(related.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
+  inline def belongsTo(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("belongsTo")(related.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
   
   @JSImport("js-data", "belongsToType")
   @js.native
   val belongsToType: String = js.native
   
-  @scala.inline
-  def hasMany(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMany")(related.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
+  inline def hasMany(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("hasMany")(related.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
   
   @JSImport("js-data", "hasManyType")
   @js.native
   val hasManyType: String = js.native
   
-  @scala.inline
-  def hasOne(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOne")(related.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
+  inline def hasOne(related: js.Any, opts: js.Any): js.Function1[/* target */ js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOne")(related.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
   
   @JSImport("js-data", "hasOneType")
   @js.native
@@ -795,33 +778,22 @@ object mod {
     @JSImport("js-data", "utils.Promise")
     @js.native
     def Promise: PromiseConstructor = js.native
-    @scala.inline
-    def Promise_=(x: PromiseConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
+    inline def Promise_=(x: PromiseConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def _underscore(dest: js.Any, src: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _underscore(dest: js.Any, src: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def addHiddenPropsToTarget(target: js.Object, props: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHiddenPropsToTarget")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addHiddenPropsToTarget(target: js.Object, props: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHiddenPropsToTarget")(target.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def areDifferent(a: js.Object, b: js.Object, opts: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areDifferent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def areDifferent(a: js.Object, b: js.Object, opts: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areDifferent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def classCallCheck(instance: js.Object, ctor: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("classCallCheck")(instance.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def classCallCheck(instance: js.Object, ctor: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("classCallCheck")(instance.asInstanceOf[js.Any], ctor.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def copy(from: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(
+    inline def copy(from: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: js.Any, stackFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(
       from: js.Any,
       to: js.Any,
       stackFrom: js.Any,
@@ -829,12 +801,9 @@ object mod {
       blacklist: js.Array[js.Any],
       plain: Boolean
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(
+    inline def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(
       from: js.Any,
       to: js.Any,
       stackFrom: js.Any,
@@ -842,14 +811,10 @@ object mod {
       blacklist: js.Array[js.Any],
       plain: Boolean
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(
+    inline def copy(from: js.Any, to: js.Any, stackFrom: js.Any, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(
       from: js.Any,
       to: js.Any,
       stackFrom: Unit,
@@ -857,12 +822,9 @@ object mod {
       blacklist: js.Array[js.Any],
       plain: Boolean
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(
+    inline def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(
       from: js.Any,
       to: js.Any,
       stackFrom: Unit,
@@ -870,16 +832,11 @@ object mod {
       blacklist: js.Array[js.Any],
       plain: Boolean
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(
+    inline def copy(from: js.Any, to: js.Any, stackFrom: Unit, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: Unit, stackFrom: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(
       from: js.Any,
       to: Unit,
       stackFrom: js.Any,
@@ -887,12 +844,9 @@ object mod {
       blacklist: js.Array[js.Any],
       plain: Boolean
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(
+    inline def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(
       from: js.Any,
       to: Unit,
       stackFrom: js.Any,
@@ -900,14 +854,10 @@ object mod {
       blacklist: js.Array[js.Any],
       plain: Boolean
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(
+    inline def copy(from: js.Any, to: Unit, stackFrom: js.Any, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: js.Any, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(
       from: js.Any,
       to: Unit,
       stackFrom: Unit,
@@ -915,12 +865,9 @@ object mod {
       blacklist: js.Array[js.Any],
       plain: Boolean
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(
+    inline def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: js.Any, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: Unit, blacklist: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(
       from: js.Any,
       to: Unit,
       stackFrom: Unit,
@@ -928,161 +875,106 @@ object mod {
       blacklist: js.Array[js.Any],
       plain: Boolean
     ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def copy(from: js.Any, to: Unit, stackFrom: Unit, stackTo: Unit, blacklist: Unit, plain: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], stackFrom.asInstanceOf[js.Any], stackTo.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any], plain.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def deepEqual(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def deepEqual(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def deepFillIn(dest: js.Object, source: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("deepFillIn")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def deepFillIn(dest: js.Object, source: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("deepFillIn")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @scala.inline
-    def deepMixIn(dest: js.Object, source: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMixIn")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def deepMixIn(dest: js.Object, source: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMixIn")(dest.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @scala.inline
-    def diffObjects(a: js.Any, b: js.Any, opts: js.Any): Diff = (^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Diff]
+    inline def diffObjects(a: js.Any, b: js.Any, opts: js.Any): Diff = (^.asInstanceOf[js.Dynamic].applyDynamic("diffObjects")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Diff]
     
-    @scala.inline
-    def equal(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def equal(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def eventify(target: js.Any, getter: js.Function, setter: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventify")(target.asInstanceOf[js.Any], getter.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def eventify(target: js.Any, getter: js.Function, setter: js.Function, enumerable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventify")(target.asInstanceOf[js.Any], getter.asInstanceOf[js.Any], setter.asInstanceOf[js.Any], enumerable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def eventify(target: js.Any, getter: js.Function, setter: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventify")(target.asInstanceOf[js.Any], getter.asInstanceOf[js.Any], setter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def eventify(target: js.Any, getter: js.Function, setter: js.Function, enumerable: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eventify")(target.asInstanceOf[js.Any], getter.asInstanceOf[js.Any], setter.asInstanceOf[js.Any], enumerable.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def extend(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Function]
-    @scala.inline
-    def extend(props: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-    @scala.inline
-    def extend(props: js.Any, classProps: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-    @scala.inline
-    def extend(props: Unit, classProps: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    inline def extend(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[js.Function]
+    inline def extend(props: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def extend(props: js.Any, classProps: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    inline def extend(props: Unit, classProps: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
-    @scala.inline
-    def fillIn(dest: js.Object, src: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillIn")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def fillIn(dest: js.Object, src: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillIn")(dest.asInstanceOf[js.Any], src.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def findIndex(array: js.Array[js.Any], fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def findIndex(array: js.Array[js.Any], fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def forEachRelation(mapper: js.Any, opts: js.Any, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachRelation")(mapper.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def forEachRelation(mapper: js.Any, opts: js.Any, fn: js.Function, ctx: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachRelation")(mapper.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forEachRelation(mapper: js.Any, opts: js.Any, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachRelation")(mapper.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forEachRelation(mapper: js.Any, opts: js.Any, fn: js.Function, ctx: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachRelation")(mapper.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def forOwn(obj: js.Any, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def forOwn(obj: js.Any, fn: js.Function, thisArg: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forOwn(obj: js.Any, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forOwn(obj: js.Any, fn: js.Function, thisArg: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forOwn")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def forRelation(opts: js.Any, `def`: js.Any, fn: js.Function, ctx: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_forRelation")(opts.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def forRelation(opts: js.Any, `def`: js.Any, fn: js.Function, ctx: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_forRelation")(opts.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def fromJson(json: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(json.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def fromJson(json: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJson")(json.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def get(`object`: js.Object, prop: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def get(`object`: js.Object, prop: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def getIndex(list: js.Array[js.Any], relation: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("_getIndex")(list.asInstanceOf[js.Any], relation.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def getIndex(list: js.Array[js.Any], relation: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("_getIndex")(list.asInstanceOf[js.Any], relation.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def getSuper(instance: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuper")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-    @scala.inline
-    def getSuper(instance: js.Any, isCtor: Boolean): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuper")(instance.asInstanceOf[js.Any], isCtor.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    inline def getSuper(instance: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuper")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def getSuper(instance: js.Any, isCtor: Boolean): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuper")(instance.asInstanceOf[js.Any], isCtor.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
-    @scala.inline
-    def intersection(array1: js.Array[js.Any], array2: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def intersection(array1: js.Array[js.Any], array2: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(array1.asInstanceOf[js.Any], array2.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
-    @scala.inline
-    def isArray(arg: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isArray(arg: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isBlacklisted(prop: String, bl: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBlacklisted")(prop.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isBlacklisted(prop: String, bl: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBlacklisted")(prop.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isBoolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBoolean(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     @JSImport("js-data", "utils.isBrowser")
     @js.native
     def isBrowser: Boolean = js.native
-    @scala.inline
-    def isBrowser_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isBrowser")(x.asInstanceOf[js.Any])
+    inline def isBrowser_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isBrowser")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def isDate(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDate(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isFunction(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isInteger(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isInteger(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isNull(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNull(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isNumber(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNumber(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isObject(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isRegExp(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isRegExp(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isSorN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSorN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isSorN(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSorN")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isUndefined(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def logify(target: js.Any, defaultNamespace: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logify")(target.asInstanceOf[js.Any], defaultNamespace.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def logify(target: js.Any, defaultNamespace: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logify")(target.asInstanceOf[js.Any], defaultNamespace.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def noDupeAdd(array: js.Array[js.Any], record: js.Any, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noDupeAdd")(array.asInstanceOf[js.Any], record.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def noDupeAdd(array: js.Array[js.Any], record: js.Any, fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noDupeAdd")(array.asInstanceOf[js.Any], record.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def omit(props: js.Object, keys: js.Array[String]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(props.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def omit(props: js.Object, keys: js.Array[String]): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(props.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @scala.inline
-    def plainCopy(from: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("plainCopy")(from.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def plainCopy(from: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("plainCopy")(from.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def possibleConstructorReturn(self: js.Object, call: js.Function): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("possibleConstructorReturn")(self.asInstanceOf[js.Any], call.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-    @scala.inline
-    def possibleConstructorReturn(self: js.Object, call: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("possibleConstructorReturn")(self.asInstanceOf[js.Any], call.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def possibleConstructorReturn(self: js.Object, call: js.Function): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("possibleConstructorReturn")(self.asInstanceOf[js.Any], call.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    inline def possibleConstructorReturn(self: js.Object, call: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("possibleConstructorReturn")(self.asInstanceOf[js.Any], call.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
-    @scala.inline
-    def reject(value: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def reject(value: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("reject")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @scala.inline
-    def remove(array: js.Array[js.Any], fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def remove(array: js.Array[js.Any], fn: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(array.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def resolve(value: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    inline def resolve(value: js.Any): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     
-    @scala.inline
-    def set(`object`: js.Object, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def set(`object`: js.Object, path: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(`object`: js.Object, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def set(`object`: js.Object, path: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toJson(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def toJson(value: js.Any, replacer: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toJson(value: js.Any, replacer: js.Function, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toJson(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toJson(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toJson(value: js.Any, replacer: js.Function): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toJson(value: js.Any, replacer: js.Function, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toJson(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def unset(`object`: js.Object, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unset")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def unset(`object`: js.Object, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unset")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object version {
@@ -1094,38 +986,32 @@ object mod {
     @JSImport("js-data", "version.alpha")
     @js.native
     def alpha: String | Boolean = js.native
-    @scala.inline
-    def alpha_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alpha")(x.asInstanceOf[js.Any])
+    inline def alpha_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alpha")(x.asInstanceOf[js.Any])
     
     @JSImport("js-data", "version.beta")
     @js.native
     def beta: String | Boolean = js.native
-    @scala.inline
-    def beta_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beta")(x.asInstanceOf[js.Any])
+    inline def beta_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beta")(x.asInstanceOf[js.Any])
     
     @JSImport("js-data", "version.full")
     @js.native
     def full: String = js.native
-    @scala.inline
-    def full_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
+    inline def full_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("full")(x.asInstanceOf[js.Any])
     
     @JSImport("js-data", "version.major")
     @js.native
     def major: Double = js.native
-    @scala.inline
-    def major_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("major")(x.asInstanceOf[js.Any])
+    inline def major_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("major")(x.asInstanceOf[js.Any])
     
     @JSImport("js-data", "version.minor")
     @js.native
     def minor: Double = js.native
-    @scala.inline
-    def minor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minor")(x.asInstanceOf[js.Any])
+    inline def minor_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minor")(x.asInstanceOf[js.Any])
     
     @JSImport("js-data", "version.patch")
     @js.native
     def patch: Double = js.native
-    @scala.inline
-    def patch_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("patch")(x.asInstanceOf[js.Any])
+    inline def patch_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("patch")(x.asInstanceOf[js.Any])
   }
   
   trait Diff extends StObject {
@@ -1138,23 +1024,18 @@ object mod {
   }
   object Diff {
     
-    @scala.inline
-    def apply(added: js.Any, changed: js.Any, removed: js.Any): Diff = {
+    inline def apply(added: js.Any, changed: js.Any, removed: js.Any): Diff = {
       val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], changed = changed.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Diff]
     }
     
-    @scala.inline
-    implicit class DiffMutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
+    extension [Self <: Diff](x: Self) {
       
-      @scala.inline
-      def setAdded(value: js.Any): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+      inline def setAdded(value: js.Any): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChanged(value: js.Any): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+      inline def setChanged(value: js.Any): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoved(value: js.Any): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      inline def setRemoved(value: js.Any): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1168,23 +1049,18 @@ object mod {
   }
   object SchemaValidationError {
     
-    @scala.inline
-    def apply(actual: String, expected: js.Any, path: String): SchemaValidationError = {
+    inline def apply(actual: String, expected: js.Any, path: String): SchemaValidationError = {
       val __obj = js.Dynamic.literal(actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaValidationError]
     }
     
-    @scala.inline
-    implicit class SchemaValidationErrorMutableBuilder[Self <: SchemaValidationError] (val x: Self) extends AnyVal {
+    extension [Self <: SchemaValidationError](x: Self) {
       
-      @scala.inline
-      def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: js.Any): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

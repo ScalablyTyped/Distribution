@@ -11,19 +11,15 @@ trait UpdateContactGroupRequest extends StObject {
 }
 object UpdateContactGroupRequest {
   
-  @scala.inline
-  def apply(): UpdateContactGroupRequest = {
+  inline def apply(): UpdateContactGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateContactGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateContactGroupRequestMutableBuilder[Self <: UpdateContactGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateContactGroupRequest](x: Self) {
     
-    @scala.inline
-    def setContactGroup(value: ContactGroup): Self = StObject.set(x, "contactGroup", value.asInstanceOf[js.Any])
+    inline def setContactGroup(value: ContactGroup): Self = StObject.set(x, "contactGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactGroupUndefined: Self = StObject.set(x, "contactGroup", js.undefined)
+    inline def setContactGroupUndefined: Self = StObject.set(x, "contactGroup", js.undefined)
   }
 }

@@ -16,25 +16,19 @@ trait MenuItem extends StObject {
 }
 object MenuItem {
   
-  @scala.inline
-  def apply(disable: () => Unit, enable: () => Unit, setIcon: String => Unit, setText: String => Unit): MenuItem = {
+  inline def apply(disable: () => Unit, enable: () => Unit, setIcon: String => Unit, setText: String => Unit): MenuItem = {
     val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), setIcon = js.Any.fromFunction1(setIcon), setText = js.Any.fromFunction1(setText))
     __obj.asInstanceOf[MenuItem]
   }
   
-  @scala.inline
-  implicit class MenuItemMutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
+  extension [Self <: MenuItem](x: Self) {
     
-    @scala.inline
-    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetIcon(value: String => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
+    inline def setSetIcon(value: String => Unit): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

@@ -14,25 +14,19 @@ trait GoogleCloudMlV1MetricSpec extends StObject {
 }
 object GoogleCloudMlV1MetricSpec {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1MetricSpec = {
+  inline def apply(): GoogleCloudMlV1MetricSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1MetricSpec]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1MetricSpecMutableBuilder[Self <: GoogleCloudMlV1MetricSpec] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1MetricSpec](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

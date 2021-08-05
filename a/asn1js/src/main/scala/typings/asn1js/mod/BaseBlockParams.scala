@@ -16,31 +16,23 @@ trait BaseBlockParams
 }
 object BaseBlockParams {
   
-  @scala.inline
-  def apply(): BaseBlockParams = {
+  inline def apply(): BaseBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseBlockParams]
   }
   
-  @scala.inline
-  implicit class BaseBlockParamsMutableBuilder[Self <: BaseBlockParams] (val x: Self) extends AnyVal {
+  extension [Self <: BaseBlockParams](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptional(value: scala.Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: scala.Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    @scala.inline
-    def setPrimitiveSchema(value: js.Object): Self = StObject.set(x, "primitiveSchema", value.asInstanceOf[js.Any])
+    inline def setPrimitiveSchema(value: js.Object): Self = StObject.set(x, "primitiveSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitiveSchemaUndefined: Self = StObject.set(x, "primitiveSchema", js.undefined)
+    inline def setPrimitiveSchemaUndefined: Self = StObject.set(x, "primitiveSchema", js.undefined)
   }
 }

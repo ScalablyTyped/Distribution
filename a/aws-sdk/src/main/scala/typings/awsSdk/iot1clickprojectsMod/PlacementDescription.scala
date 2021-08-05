@@ -33,8 +33,7 @@ trait PlacementDescription extends StObject {
 }
 object PlacementDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributes: PlacementAttributeMap,
     createdDate: Time,
     placementName: PlacementName,
@@ -45,22 +44,16 @@ object PlacementDescription {
     __obj.asInstanceOf[PlacementDescription]
   }
   
-  @scala.inline
-  implicit class PlacementDescriptionMutableBuilder[Self <: PlacementDescription] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementDescription](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: PlacementAttributeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: PlacementAttributeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDate(value: Time): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Time): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
+    inline def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedDate(value: Time): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: Time): Self = StObject.set(x, "updatedDate", value.asInstanceOf[js.Any])
   }
 }

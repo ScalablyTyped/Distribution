@@ -15,9 +15,9 @@ object keyComboMod {
     def this(props: IKeyComboProps) = this()
     def this(props: IKeyComboProps, context: js.Any) = this()
     
-    var renderKey: js.Any = js.native
+    /* private */ var renderKey: js.Any = js.native
     
-    var renderMinimalKey: js.Any = js.native
+    /* private */ var renderMinimalKey: js.Any = js.native
   }
   /* static members */
   object KeyCombo {
@@ -29,8 +29,7 @@ object keyComboMod {
     @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/keyCombo", "KeyCombo.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IKeyComboProps
@@ -50,23 +49,18 @@ object keyComboMod {
   }
   object IKeyComboProps {
     
-    @scala.inline
-    def apply(combo: String): IKeyComboProps = {
+    inline def apply(combo: String): IKeyComboProps = {
       val __obj = js.Dynamic.literal(combo = combo.asInstanceOf[js.Any])
       __obj.asInstanceOf[IKeyComboProps]
     }
     
-    @scala.inline
-    implicit class IKeyComboPropsMutableBuilder[Self <: IKeyComboProps] (val x: Self) extends AnyVal {
+    extension [Self <: IKeyComboProps](x: Self) {
       
-      @scala.inline
-      def setCombo(value: String): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
+      inline def setCombo(value: String): Self = StObject.set(x, "combo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
+      inline def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
+      inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
     }
   }
 }

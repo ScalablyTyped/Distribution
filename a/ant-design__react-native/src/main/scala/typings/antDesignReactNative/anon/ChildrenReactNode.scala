@@ -13,22 +13,17 @@ trait ChildrenReactNode extends StObject {
 }
 object ChildrenReactNode {
   
-  @scala.inline
-  def apply(key: Double): ChildrenReactNode = {
+  inline def apply(key: Double): ChildrenReactNode = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildrenReactNode]
   }
   
-  @scala.inline
-  implicit class ChildrenReactNodeMutableBuilder[Self <: ChildrenReactNode] (val x: Self) extends AnyVal {
+  extension [Self <: ChildrenReactNode](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

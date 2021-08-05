@@ -29,34 +29,25 @@ trait Edges3DProperties extends StObject {
 }
 object Edges3DProperties {
   
-  @scala.inline
-  def apply(): Edges3DProperties = {
+  inline def apply(): Edges3DProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Edges3DProperties]
   }
   
-  @scala.inline
-  implicit class Edges3DPropertiesMutableBuilder[Self <: Edges3DProperties] (val x: Self) extends AnyVal {
+  extension [Self <: Edges3DProperties](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setExtensionLength(value: Double | String): Self = StObject.set(x, "extensionLength", value.asInstanceOf[js.Any])
+    inline def setExtensionLength(value: Double | String): Self = StObject.set(x, "extensionLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionLengthUndefined: Self = StObject.set(x, "extensionLength", js.undefined)
+    inline def setExtensionLengthUndefined: Self = StObject.set(x, "extensionLength", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

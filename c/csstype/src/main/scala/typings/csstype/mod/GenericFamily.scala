@@ -16,18 +16,13 @@ trait GenericFamily
      with _FontFamilyProperty
 object GenericFamily {
   
-  @scala.inline
-  def cursive: typings.csstype.csstypeStrings.cursive = "cursive".asInstanceOf[typings.csstype.csstypeStrings.cursive]
+  inline def cursive: typings.csstype.csstypeStrings.cursive = "cursive".asInstanceOf[typings.csstype.csstypeStrings.cursive]
   
-  @scala.inline
-  def fantasy: typings.csstype.csstypeStrings.fantasy = "fantasy".asInstanceOf[typings.csstype.csstypeStrings.fantasy]
+  inline def fantasy: typings.csstype.csstypeStrings.fantasy = "fantasy".asInstanceOf[typings.csstype.csstypeStrings.fantasy]
   
-  @scala.inline
-  def monospace: typings.csstype.csstypeStrings.monospace = "monospace".asInstanceOf[typings.csstype.csstypeStrings.monospace]
+  inline def monospace: typings.csstype.csstypeStrings.monospace = "monospace".asInstanceOf[typings.csstype.csstypeStrings.monospace]
   
-  @scala.inline
-  def `sans-serif`: typings.csstype.csstypeStrings.`sans-serif` = "sans-serif".asInstanceOf[typings.csstype.csstypeStrings.`sans-serif`]
+  inline def `sans-serif`: typings.csstype.csstypeStrings.`sans-serif` = "sans-serif".asInstanceOf[typings.csstype.csstypeStrings.`sans-serif`]
   
-  @scala.inline
-  def serif: typings.csstype.csstypeStrings.serif = "serif".asInstanceOf[typings.csstype.csstypeStrings.serif]
+  inline def serif: typings.csstype.csstypeStrings.serif = "serif".asInstanceOf[typings.csstype.csstypeStrings.serif]
 }

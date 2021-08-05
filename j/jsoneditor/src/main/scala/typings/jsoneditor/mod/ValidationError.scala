@@ -12,22 +12,17 @@ trait ValidationError extends StObject {
 }
 object ValidationError {
   
-  @scala.inline
-  def apply(message: String, path: JSONPath): ValidationError = {
+  inline def apply(message: String, path: JSONPath): ValidationError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationError]
   }
   
-  @scala.inline
-  implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationError](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: JSONPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: JSONPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

@@ -13,20 +13,16 @@ trait ActionsListSelectedReposForOrgSecretEndpoint extends StObject {
 }
 object ActionsListSelectedReposForOrgSecretEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, secret_name: String): ActionsListSelectedReposForOrgSecretEndpoint = {
+  inline def apply(org_ : String, secret_name: String): ActionsListSelectedReposForOrgSecretEndpoint = {
     val __obj = js.Dynamic.literal(secret_name = secret_name.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsListSelectedReposForOrgSecretEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsListSelectedReposForOrgSecretEndpointMutableBuilder[Self <: ActionsListSelectedReposForOrgSecretEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsListSelectedReposForOrgSecretEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
+    inline def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
   }
 }

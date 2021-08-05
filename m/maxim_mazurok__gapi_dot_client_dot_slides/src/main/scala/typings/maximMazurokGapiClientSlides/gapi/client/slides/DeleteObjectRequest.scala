@@ -14,19 +14,15 @@ trait DeleteObjectRequest extends StObject {
 }
 object DeleteObjectRequest {
   
-  @scala.inline
-  def apply(): DeleteObjectRequest = {
+  inline def apply(): DeleteObjectRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteObjectRequest]
   }
   
-  @scala.inline
-  implicit class DeleteObjectRequestMutableBuilder[Self <: DeleteObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteObjectRequest](x: Self) {
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
   }
 }

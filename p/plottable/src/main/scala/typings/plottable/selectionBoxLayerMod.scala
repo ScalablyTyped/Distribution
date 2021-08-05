@@ -37,15 +37,15 @@ object selectionBoxLayerMod {
   @js.native
   class SelectionBoxLayer () extends Component {
     
-    var _adjustBoundsCallback: js.Any = js.native
+    /* private */ var _adjustBoundsCallback: js.Any = js.native
     
-    var _box: SimpleSelection[Unit] = js.native
+    /* protected */ var _box: SimpleSelection[Unit] = js.native
     
-    var _boxArea: js.Any = js.native
+    /* private */ var _boxArea: js.Any = js.native
     
-    var _boxBounds: js.Any = js.native
+    /* private */ var _boxBounds: js.Any = js.native
     
-    var _boxVisible: js.Any = js.native
+    /* private */ var _boxVisible: js.Any = js.native
     
     /* private */ def _getBounds(): js.Any = js.native
     
@@ -59,17 +59,17 @@ object selectionBoxLayerMod {
     
     /* protected */ def _setYExtent(yExtent: js.Array[Double | ValueOf]): Unit = js.native
     
-    var _xBoundsMode: PropertyMode = js.native
+    /* protected */ var _xBoundsMode: PropertyMode = js.native
     
-    var _xExtent: js.Any = js.native
+    /* private */ var _xExtent: js.Any = js.native
     
-    var _xScale: js.Any = js.native
+    /* private */ var _xScale: js.Any = js.native
     
-    var _yBoundsMode: PropertyMode = js.native
+    /* protected */ var _yBoundsMode: PropertyMode = js.native
     
-    var _yExtent: js.Any = js.native
+    /* private */ var _yExtent: js.Any = js.native
     
-    var _yScale: js.Any = js.native
+    /* private */ var _yScale: js.Any = js.native
     
     /**
       * Sets the Bounds of the box.

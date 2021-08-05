@@ -20,37 +20,27 @@ trait BuildBazelRemoteExecutionV2RequestMetadata extends StObject {
 }
 object BuildBazelRemoteExecutionV2RequestMetadata {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2RequestMetadata = {
+  inline def apply(): BuildBazelRemoteExecutionV2RequestMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2RequestMetadata]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2RequestMetadataMutableBuilder[Self <: BuildBazelRemoteExecutionV2RequestMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2RequestMetadata](x: Self) {
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
-    @scala.inline
-    def setCorrelatedInvocationsId(value: String): Self = StObject.set(x, "correlatedInvocationsId", value.asInstanceOf[js.Any])
+    inline def setCorrelatedInvocationsId(value: String): Self = StObject.set(x, "correlatedInvocationsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelatedInvocationsIdUndefined: Self = StObject.set(x, "correlatedInvocationsId", js.undefined)
+    inline def setCorrelatedInvocationsIdUndefined: Self = StObject.set(x, "correlatedInvocationsId", js.undefined)
     
-    @scala.inline
-    def setToolDetails(value: BuildBazelRemoteExecutionV2ToolDetails): Self = StObject.set(x, "toolDetails", value.asInstanceOf[js.Any])
+    inline def setToolDetails(value: BuildBazelRemoteExecutionV2ToolDetails): Self = StObject.set(x, "toolDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolDetailsUndefined: Self = StObject.set(x, "toolDetails", js.undefined)
+    inline def setToolDetailsUndefined: Self = StObject.set(x, "toolDetails", js.undefined)
     
-    @scala.inline
-    def setToolInvocationId(value: String): Self = StObject.set(x, "toolInvocationId", value.asInstanceOf[js.Any])
+    inline def setToolInvocationId(value: String): Self = StObject.set(x, "toolInvocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolInvocationIdUndefined: Self = StObject.set(x, "toolInvocationId", js.undefined)
+    inline def setToolInvocationIdUndefined: Self = StObject.set(x, "toolInvocationId", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait ExtensionUrls extends StObject {
 }
 object ExtensionUrls {
   
-  @scala.inline
-  def apply(extensionIcon: String, extensionPage: String): ExtensionUrls = {
+  inline def apply(extensionIcon: String, extensionPage: String): ExtensionUrls = {
     val __obj = js.Dynamic.literal(extensionIcon = extensionIcon.asInstanceOf[js.Any], extensionPage = extensionPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionUrls]
   }
   
-  @scala.inline
-  implicit class ExtensionUrlsMutableBuilder[Self <: ExtensionUrls] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionUrls](x: Self) {
     
-    @scala.inline
-    def setExtensionIcon(value: String): Self = StObject.set(x, "extensionIcon", value.asInstanceOf[js.Any])
+    inline def setExtensionIcon(value: String): Self = StObject.set(x, "extensionIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionPage(value: String): Self = StObject.set(x, "extensionPage", value.asInstanceOf[js.Any])
+    inline def setExtensionPage(value: String): Self = StObject.set(x, "extensionPage", value.asInstanceOf[js.Any])
   }
 }

@@ -90,8 +90,7 @@ trait XChartTypeTemplate
 }
 object XChartTypeTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataInterpreter: XDataInterpreter,
     acquire: () => Unit,
     applyStyle: (XDataSeries, Double, Double, Double) => Unit,
@@ -110,37 +109,26 @@ object XChartTypeTemplate {
     __obj.asInstanceOf[XChartTypeTemplate]
   }
   
-  @scala.inline
-  implicit class XChartTypeTemplateMutableBuilder[Self <: XChartTypeTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: XChartTypeTemplate](x: Self) {
     
-    @scala.inline
-    def setApplyStyle(value: (XDataSeries, Double, Double, Double) => Unit): Self = StObject.set(x, "applyStyle", js.Any.fromFunction4(value))
+    inline def setApplyStyle(value: (XDataSeries, Double, Double, Double) => Unit): Self = StObject.set(x, "applyStyle", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setChangeDiagram(value: XDiagram => Unit): Self = StObject.set(x, "changeDiagram", js.Any.fromFunction1(value))
+    inline def setChangeDiagram(value: XDiagram => Unit): Self = StObject.set(x, "changeDiagram", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeDiagramData(value: (XDiagram, XDataSource, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeDiagramData", js.Any.fromFunction3(value))
+    inline def setChangeDiagramData(value: (XDiagram, XDataSource, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "changeDiagramData", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateDiagramByDataSource(value: (XDataSource, SeqEquiv[PropertyValue]) => XDiagram): Self = StObject.set(x, "createDiagramByDataSource", js.Any.fromFunction2(value))
+    inline def setCreateDiagramByDataSource(value: (XDataSource, SeqEquiv[PropertyValue]) => XDiagram): Self = StObject.set(x, "createDiagramByDataSource", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDataInterpreter(value: XDataInterpreter): Self = StObject.set(x, "DataInterpreter", value.asInstanceOf[js.Any])
+    inline def setDataInterpreter(value: XDataInterpreter): Self = StObject.set(x, "DataInterpreter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetChartTypeForNewSeries(value: SeqEquiv[XChartType] => XChartType): Self = StObject.set(x, "getChartTypeForNewSeries", js.Any.fromFunction1(value))
+    inline def setGetChartTypeForNewSeries(value: SeqEquiv[XChartType] => XChartType): Self = StObject.set(x, "getChartTypeForNewSeries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDataInterpreter(value: () => XDataInterpreter): Self = StObject.set(x, "getDataInterpreter", js.Any.fromFunction0(value))
+    inline def setGetDataInterpreter(value: () => XDataInterpreter): Self = StObject.set(x, "getDataInterpreter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMatchesTemplate(value: (XDiagram, Boolean) => Boolean): Self = StObject.set(x, "matchesTemplate", js.Any.fromFunction2(value))
+    inline def setMatchesTemplate(value: (XDiagram, Boolean) => Boolean): Self = StObject.set(x, "matchesTemplate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResetStyles(value: XDiagram => Unit): Self = StObject.set(x, "resetStyles", js.Any.fromFunction1(value))
+    inline def setResetStyles(value: XDiagram => Unit): Self = StObject.set(x, "resetStyles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportsCategories(value: () => Boolean): Self = StObject.set(x, "supportsCategories", js.Any.fromFunction0(value))
+    inline def setSupportsCategories(value: () => Boolean): Self = StObject.set(x, "supportsCategories", js.Any.fromFunction0(value))
   }
 }

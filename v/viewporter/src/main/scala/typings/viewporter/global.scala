@@ -9,6 +9,5 @@ object global {
   @JSGlobal("viewporter")
   @js.native
   def viewporter: Viewporter = js.native
-  @scala.inline
-  def viewporter_=(x: Viewporter): Unit = js.Dynamic.global.updateDynamic("viewporter")(x.asInstanceOf[js.Any])
+  inline def viewporter_=(x: Viewporter): Unit = js.Dynamic.global.updateDynamic("viewporter")(x.asInstanceOf[js.Any])
 }

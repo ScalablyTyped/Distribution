@@ -11,19 +11,15 @@ trait GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaUpdateUserLinkRequestMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaUpdateUserLinkRequest](x: Self) {
     
-    @scala.inline
-    def setUserLink(value: GoogleAnalyticsAdminV1alphaUserLink): Self = StObject.set(x, "userLink", value.asInstanceOf[js.Any])
+    inline def setUserLink(value: GoogleAnalyticsAdminV1alphaUserLink): Self = StObject.set(x, "userLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLinkUndefined: Self = StObject.set(x, "userLink", js.undefined)
+    inline def setUserLinkUndefined: Self = StObject.set(x, "userLink", js.undefined)
   }
 }

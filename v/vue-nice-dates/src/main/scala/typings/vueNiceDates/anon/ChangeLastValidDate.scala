@@ -17,8 +17,7 @@ trait ChangeLastValidDate extends StObject {
 }
 object ChangeLastValidDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeLastValidDate: String => Unit,
     handleClickDate: (typings.std.Date, String) => Unit,
     handleFocusIn: MouseEvent => Unit,
@@ -28,19 +27,14 @@ object ChangeLastValidDate {
     __obj.asInstanceOf[ChangeLastValidDate]
   }
   
-  @scala.inline
-  implicit class ChangeLastValidDateMutableBuilder[Self <: ChangeLastValidDate] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeLastValidDate](x: Self) {
     
-    @scala.inline
-    def setChangeLastValidDate(value: String => Unit): Self = StObject.set(x, "changeLastValidDate", js.Any.fromFunction1(value))
+    inline def setChangeLastValidDate(value: String => Unit): Self = StObject.set(x, "changeLastValidDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
+    inline def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHandleFocusIn(value: MouseEvent => Unit): Self = StObject.set(x, "handleFocusIn", js.Any.fromFunction1(value))
+    inline def setHandleFocusIn(value: MouseEvent => Unit): Self = StObject.set(x, "handleFocusIn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleOutsideClick(value: MouseEvent => Unit): Self = StObject.set(x, "handleOutsideClick", js.Any.fromFunction1(value))
+    inline def setHandleOutsideClick(value: MouseEvent => Unit): Self = StObject.set(x, "handleOutsideClick", js.Any.fromFunction1(value))
   }
 }

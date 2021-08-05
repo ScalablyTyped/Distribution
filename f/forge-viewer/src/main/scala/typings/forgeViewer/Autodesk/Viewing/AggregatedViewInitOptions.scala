@@ -14,31 +14,23 @@ trait AggregatedViewInitOptions extends StObject {
 }
 object AggregatedViewInitOptions {
   
-  @scala.inline
-  def apply(): AggregatedViewInitOptions = {
+  inline def apply(): AggregatedViewInitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregatedViewInitOptions]
   }
   
-  @scala.inline
-  implicit class AggregatedViewInitOptionsMutableBuilder[Self <: AggregatedViewInitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AggregatedViewInitOptions](x: Self) {
     
-    @scala.inline
-    def setHeadlessViewer(value: Boolean): Self = StObject.set(x, "headlessViewer", value.asInstanceOf[js.Any])
+    inline def setHeadlessViewer(value: Boolean): Self = StObject.set(x, "headlessViewer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadlessViewerUndefined: Self = StObject.set(x, "headlessViewer", js.undefined)
+    inline def setHeadlessViewerUndefined: Self = StObject.set(x, "headlessViewer", js.undefined)
     
-    @scala.inline
-    def setIgnoreGlobalOffset(value: Boolean): Self = StObject.set(x, "ignoreGlobalOffset", value.asInstanceOf[js.Any])
+    inline def setIgnoreGlobalOffset(value: Boolean): Self = StObject.set(x, "ignoreGlobalOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreGlobalOffsetUndefined: Self = StObject.set(x, "ignoreGlobalOffset", js.undefined)
+    inline def setIgnoreGlobalOffsetUndefined: Self = StObject.set(x, "ignoreGlobalOffset", js.undefined)
     
-    @scala.inline
-    def setUseDynamicGlobalOffset(value: Boolean): Self = StObject.set(x, "useDynamicGlobalOffset", value.asInstanceOf[js.Any])
+    inline def setUseDynamicGlobalOffset(value: Boolean): Self = StObject.set(x, "useDynamicGlobalOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDynamicGlobalOffsetUndefined: Self = StObject.set(x, "useDynamicGlobalOffset", js.undefined)
+    inline def setUseDynamicGlobalOffsetUndefined: Self = StObject.set(x, "useDynamicGlobalOffset", js.undefined)
   }
 }

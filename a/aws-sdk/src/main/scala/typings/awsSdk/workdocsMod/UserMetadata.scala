@@ -33,43 +33,31 @@ trait UserMetadata extends StObject {
 }
 object UserMetadata {
   
-  @scala.inline
-  def apply(): UserMetadata = {
+  inline def apply(): UserMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserMetadata]
   }
   
-  @scala.inline
-  implicit class UserMetadataMutableBuilder[Self <: UserMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: UserMetadata](x: Self) {
     
-    @scala.inline
-    def setEmailAddress(value: EmailAddressType): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: EmailAddressType): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
     
-    @scala.inline
-    def setGivenName(value: UserAttributeValueType): Self = StObject.set(x, "GivenName", value.asInstanceOf[js.Any])
+    inline def setGivenName(value: UserAttributeValueType): Self = StObject.set(x, "GivenName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGivenNameUndefined: Self = StObject.set(x, "GivenName", js.undefined)
+    inline def setGivenNameUndefined: Self = StObject.set(x, "GivenName", js.undefined)
     
-    @scala.inline
-    def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setSurname(value: UserAttributeValueType): Self = StObject.set(x, "Surname", value.asInstanceOf[js.Any])
+    inline def setSurname(value: UserAttributeValueType): Self = StObject.set(x, "Surname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurnameUndefined: Self = StObject.set(x, "Surname", js.undefined)
+    inline def setSurnameUndefined: Self = StObject.set(x, "Surname", js.undefined)
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

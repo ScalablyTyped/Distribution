@@ -42,66 +42,47 @@ object tabContentMod {
   }
   object TabContentProps {
     
-    @scala.inline
-    def apply(`for`: String | Double): TabContentProps = {
+    inline def apply(`for`: String | Double): TabContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabContentProps]
     }
     
-    @scala.inline
-    implicit class TabContentPropsMutableBuilder[Self <: TabContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabContentProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisableInlineStyles(value: Boolean): Self = StObject.set(x, "disableInlineStyles", value.asInstanceOf[js.Any])
+      inline def setDisableInlineStyles(value: Boolean): Self = StObject.set(x, "disableInlineStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableInlineStylesUndefined: Self = StObject.set(x, "disableInlineStyles", js.undefined)
+      inline def setDisableInlineStylesUndefined: Self = StObject.set(x, "disableInlineStyles", js.undefined)
       
-      @scala.inline
-      def setFor(value: String | Double): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
+      inline def setFor(value: String | Double): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
+      inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
       
-      @scala.inline
-      def setRenderActiveTabContentOnly(value: Boolean): Self = StObject.set(x, "renderActiveTabContentOnly", value.asInstanceOf[js.Any])
+      inline def setRenderActiveTabContentOnly(value: Boolean): Self = StObject.set(x, "renderActiveTabContentOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderActiveTabContentOnlyUndefined: Self = StObject.set(x, "renderActiveTabContentOnly", js.undefined)
+      inline def setRenderActiveTabContentOnlyUndefined: Self = StObject.set(x, "renderActiveTabContentOnly", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setVisibleClassName(value: String): Self = StObject.set(x, "visibleClassName", value.asInstanceOf[js.Any])
+      inline def setVisibleClassName(value: String): Self = StObject.set(x, "visibleClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleClassNameUndefined: Self = StObject.set(x, "visibleClassName", js.undefined)
+      inline def setVisibleClassNameUndefined: Self = StObject.set(x, "visibleClassName", js.undefined)
       
-      @scala.inline
-      def setVisibleStyle(value: js.Object): Self = StObject.set(x, "visibleStyle", value.asInstanceOf[js.Any])
+      inline def setVisibleStyle(value: js.Object): Self = StObject.set(x, "visibleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleStyleUndefined: Self = StObject.set(x, "visibleStyle", js.undefined)
+      inline def setVisibleStyleUndefined: Self = StObject.set(x, "visibleStyle", js.undefined)
     }
   }
 }

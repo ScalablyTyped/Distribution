@@ -19,6 +19,5 @@ class DropdownHeader protected ()
 }
 object DropdownHeader {
   
-  @scala.inline
-  def apply: ComponentClass[DropdownHeaderProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("DropdownHeader").asInstanceOf[ComponentClass[DropdownHeaderProps, ComponentState]]
+  inline def apply: ComponentClass[DropdownHeaderProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("DropdownHeader").asInstanceOf[ComponentClass[DropdownHeaderProps, ComponentState]]
 }

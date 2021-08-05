@@ -20,25 +20,19 @@ trait StartCoverageOptions extends StObject {
 }
 object StartCoverageOptions {
   
-  @scala.inline
-  def apply(): StartCoverageOptions = {
+  inline def apply(): StartCoverageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartCoverageOptions]
   }
   
-  @scala.inline
-  implicit class StartCoverageOptionsMutableBuilder[Self <: StartCoverageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartCoverageOptions](x: Self) {
     
-    @scala.inline
-    def setReportAnonymousScripts(value: Boolean): Self = StObject.set(x, "reportAnonymousScripts", value.asInstanceOf[js.Any])
+    inline def setReportAnonymousScripts(value: Boolean): Self = StObject.set(x, "reportAnonymousScripts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportAnonymousScriptsUndefined: Self = StObject.set(x, "reportAnonymousScripts", js.undefined)
+    inline def setReportAnonymousScriptsUndefined: Self = StObject.set(x, "reportAnonymousScripts", js.undefined)
     
-    @scala.inline
-    def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
+    inline def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
+    inline def setResetOnNavigationUndefined: Self = StObject.set(x, "resetOnNavigation", js.undefined)
   }
 }

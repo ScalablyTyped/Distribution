@@ -16,31 +16,26 @@ object validateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](formData: T, schema: JSONSchema6Definition): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](formData: T, schema: JSONSchema6Definition): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
     transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
     transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]],
     additionalMetaSchemas: js.UndefOr[js.Array[js.Object]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
@@ -48,8 +43,7 @@ object validateMod {
     additionalMetaSchemas: js.UndefOr[js.Array[js.Object]],
     customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any], customFormats.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
@@ -57,16 +51,14 @@ object validateMod {
     additionalMetaSchemas: Unit,
     customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any], customFormats.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
     transformErrors: Unit,
     additionalMetaSchemas: js.UndefOr[js.Array[js.Object]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
@@ -74,8 +66,7 @@ object validateMod {
     additionalMetaSchemas: js.UndefOr[js.Array[js.Object]],
     customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any], customFormats.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: js.UndefOr[js.Function2[/* formData */ T, /* errors */ FormValidation, FormValidation]],
@@ -83,23 +74,20 @@ object validateMod {
     additionalMetaSchemas: Unit,
     customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any], customFormats.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: Unit,
     transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: Unit,
     transformErrors: js.UndefOr[js.Function1[/* errors */ js.Array[AjvError], js.Array[AjvError]]],
     additionalMetaSchemas: js.UndefOr[js.Array[js.Object]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: Unit,
@@ -107,8 +95,7 @@ object validateMod {
     additionalMetaSchemas: js.UndefOr[js.Array[js.Object]],
     customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any], customFormats.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: Unit,
@@ -116,16 +103,14 @@ object validateMod {
     additionalMetaSchemas: Unit,
     customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any], customFormats.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: Unit,
     transformErrors: Unit,
     additionalMetaSchemas: js.UndefOr[js.Array[js.Object]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: Unit,
@@ -133,8 +118,7 @@ object validateMod {
     additionalMetaSchemas: js.UndefOr[js.Array[js.Object]],
     customFormats: js.UndefOr[StringDictionary[String | RegExp | (js.Function1[/* data */ String, Boolean])]]
   ): ErrorSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(formData.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], customValidate.asInstanceOf[js.Any], transformErrors.asInstanceOf[js.Any], additionalMetaSchemas.asInstanceOf[js.Any], customFormats.asInstanceOf[js.Any])).asInstanceOf[ErrorSchema]
-  @scala.inline
-  def default[T](
+  inline def default[T](
     formData: T,
     schema: JSONSchema6Definition,
     customValidate: Unit,

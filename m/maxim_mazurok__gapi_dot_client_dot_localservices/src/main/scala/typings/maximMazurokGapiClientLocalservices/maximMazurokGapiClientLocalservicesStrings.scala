@@ -8,11 +8,9 @@ object maximMazurokGapiClientLocalservicesStrings {
   
   @js.native
   sealed trait localservices extends StObject
-  @scala.inline
-  def localservices: localservices = "localservices".asInstanceOf[localservices]
+  inline def localservices: localservices = "localservices".asInstanceOf[localservices]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

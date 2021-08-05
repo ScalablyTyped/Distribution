@@ -18,19 +18,15 @@ trait RefreshSchemasMessage extends StObject {
 }
 object RefreshSchemasMessage {
   
-  @scala.inline
-  def apply(EndpointArn: String, ReplicationInstanceArn: String): RefreshSchemasMessage = {
+  inline def apply(EndpointArn: String, ReplicationInstanceArn: String): RefreshSchemasMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any], ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshSchemasMessage]
   }
   
-  @scala.inline
-  implicit class RefreshSchemasMessageMutableBuilder[Self <: RefreshSchemasMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshSchemasMessage](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait WebGLFramebuffer extends StObject {
 }
 object WebGLFramebuffer {
   
-  @scala.inline
-  def apply(__WebGLFramebuffer: Unit): WebGLFramebuffer = {
+  inline def apply(__WebGLFramebuffer: Unit): WebGLFramebuffer = {
     val __obj = js.Dynamic.literal(__WebGLFramebuffer = __WebGLFramebuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLFramebuffer]
   }
   
-  @scala.inline
-  implicit class WebGLFramebufferMutableBuilder[Self <: WebGLFramebuffer] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLFramebuffer](x: Self) {
     
-    @scala.inline
-    def set__WebGLFramebuffer(value: Unit): Self = StObject.set(x, "__WebGLFramebuffer", value.asInstanceOf[js.Any])
+    inline def set__WebGLFramebuffer(value: Unit): Self = StObject.set(x, "__WebGLFramebuffer", value.asInstanceOf[js.Any])
   }
 }

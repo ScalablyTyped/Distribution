@@ -15,20 +15,14 @@ object domMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def readNavState(): js.Promise[Ids] = ^.asInstanceOf[js.Dynamic].applyDynamic("readNavState")().asInstanceOf[js.Promise[Ids]]
-  @scala.inline
-  def readNavState(root: HTMLElement): js.Promise[Ids] = ^.asInstanceOf[js.Dynamic].applyDynamic("readNavState")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ids]]
+  inline def readNavState(): js.Promise[Ids] = ^.asInstanceOf[js.Dynamic].applyDynamic("readNavState")().asInstanceOf[js.Promise[Ids]]
+  inline def readNavState(root: HTMLElement): js.Promise[Ids] = ^.asInstanceOf[js.Dynamic].applyDynamic("readNavState")(root.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Ids]]
   
-  @scala.inline
-  def waitUntilNavNode(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilNavNode")().asInstanceOf[js.Promise[js.Any]]
+  inline def waitUntilNavNode(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitUntilNavNode")().asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def writeNavState(root: Unit, chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def writeNavState(root: Unit, chain: RouteChain, direction: RouterDirection, index: Double, changed: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def writeNavState(
+  inline def writeNavState(root: Unit, chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def writeNavState(root: Unit, chain: RouteChain, direction: RouterDirection, index: Double, changed: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def writeNavState(
     root: Unit,
     chain: RouteChain,
     direction: RouterDirection,
@@ -36,8 +30,7 @@ object domMod {
     changed: Boolean,
     animation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def writeNavState(
+  inline def writeNavState(
     root: Unit,
     chain: RouteChain,
     direction: RouterDirection,
@@ -45,12 +38,9 @@ object domMod {
     changed: Unit,
     animation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double, changed: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def writeNavState(
+  inline def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def writeNavState(root: HTMLElement, chain: RouteChain, direction: RouterDirection, index: Double, changed: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def writeNavState(
     root: HTMLElement,
     chain: RouteChain,
     direction: RouterDirection,
@@ -58,8 +48,7 @@ object domMod {
     changed: Boolean,
     animation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeNavState")(root.asInstanceOf[js.Any], chain.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], index.asInstanceOf[js.Any], changed.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def writeNavState(
+  inline def writeNavState(
     root: HTMLElement,
     chain: RouteChain,
     direction: RouterDirection,

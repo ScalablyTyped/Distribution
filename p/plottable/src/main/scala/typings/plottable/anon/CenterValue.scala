@@ -12,19 +12,15 @@ trait CenterValue extends StObject {
 }
 object CenterValue {
   
-  @scala.inline
-  def apply(centerValue: CenterX, zoomAmount: Double): CenterValue = {
+  inline def apply(centerValue: CenterX, zoomAmount: Double): CenterValue = {
     val __obj = js.Dynamic.literal(centerValue = centerValue.asInstanceOf[js.Any], zoomAmount = zoomAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[CenterValue]
   }
   
-  @scala.inline
-  implicit class CenterValueMutableBuilder[Self <: CenterValue] (val x: Self) extends AnyVal {
+  extension [Self <: CenterValue](x: Self) {
     
-    @scala.inline
-    def setCenterValue(value: CenterX): Self = StObject.set(x, "centerValue", value.asInstanceOf[js.Any])
+    inline def setCenterValue(value: CenterX): Self = StObject.set(x, "centerValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomAmount(value: Double): Self = StObject.set(x, "zoomAmount", value.asInstanceOf[js.Any])
+    inline def setZoomAmount(value: Double): Self = StObject.set(x, "zoomAmount", value.asInstanceOf[js.Any])
   }
 }

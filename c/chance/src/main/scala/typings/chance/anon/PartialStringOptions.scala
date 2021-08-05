@@ -23,49 +23,35 @@ trait PartialStringOptions extends StObject {
 }
 object PartialStringOptions {
   
-  @scala.inline
-  def apply(): PartialStringOptions = {
+  inline def apply(): PartialStringOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStringOptions]
   }
   
-  @scala.inline
-  implicit class PartialStringOptionsMutableBuilder[Self <: PartialStringOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStringOptions](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setCasing(value: upper | lower): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
+    inline def setCasing(value: upper | lower): Self = StObject.set(x, "casing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCasingUndefined: Self = StObject.set(x, "casing", js.undefined)
+    inline def setCasingUndefined: Self = StObject.set(x, "casing", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+    inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+    inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
     
-    @scala.inline
-    def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
+    inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
     
-    @scala.inline
-    def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+    inline def setSymbols(value: Boolean): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
+    inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
   }
 }

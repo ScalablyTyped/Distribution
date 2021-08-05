@@ -16,19 +16,15 @@ trait SchemaDuplicateFilterViewRequest extends StObject {
 }
 object SchemaDuplicateFilterViewRequest {
   
-  @scala.inline
-  def apply(): SchemaDuplicateFilterViewRequest = {
+  inline def apply(): SchemaDuplicateFilterViewRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDuplicateFilterViewRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDuplicateFilterViewRequestMutableBuilder[Self <: SchemaDuplicateFilterViewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDuplicateFilterViewRequest](x: Self) {
     
-    @scala.inline
-    def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
+    inline def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
+    inline def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
   }
 }

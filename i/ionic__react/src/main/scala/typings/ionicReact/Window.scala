@@ -12,19 +12,15 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(Ionic: js.Any, cordova: js.Any): Window = {
+  inline def apply(Ionic: js.Any, cordova: js.Any): Window = {
     val __obj = js.Dynamic.literal(Ionic = Ionic.asInstanceOf[js.Any], cordova = cordova.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setCordova(value: js.Any): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
+    inline def setCordova(value: js.Any): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIonic(value: js.Any): Self = StObject.set(x, "Ionic", value.asInstanceOf[js.Any])
+    inline def setIonic(value: js.Any): Self = StObject.set(x, "Ionic", value.asInstanceOf[js.Any])
   }
 }

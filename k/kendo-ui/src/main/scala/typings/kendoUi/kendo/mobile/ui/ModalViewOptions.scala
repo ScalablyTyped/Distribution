@@ -24,61 +24,43 @@ trait ModalViewOptions extends StObject {
 }
 object ModalViewOptions {
   
-  @scala.inline
-  def apply(): ModalViewOptions = {
+  inline def apply(): ModalViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalViewOptions]
   }
   
-  @scala.inline
-  implicit class ModalViewOptionsMutableBuilder[Self <: ModalViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ModalViewOptions](x: Self) {
     
-    @scala.inline
-    def setBeforeOpen(value: /* e */ ModalViewBeforeOpenEvent => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
+    inline def setBeforeOpen(value: /* e */ ModalViewBeforeOpenEvent => Unit): Self = StObject.set(x, "beforeOpen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
+    inline def setBeforeOpenUndefined: Self = StObject.set(x, "beforeOpen", js.undefined)
     
-    @scala.inline
-    def setClose(value: /* e */ ModalViewCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: /* e */ ModalViewCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setInit(value: /* e */ ModalViewInitEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* e */ ModalViewInitEvent => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+    inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOpen(value: /* e */ ModalViewOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: /* e */ ModalViewOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

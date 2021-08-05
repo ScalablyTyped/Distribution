@@ -31,35 +31,27 @@ trait DestinationTableProperties extends StObject {
 }
 object DestinationTableProperties {
   
-  @scala.inline
-  def apply(): DestinationTableProperties = {
+  inline def apply(): DestinationTableProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DestinationTableProperties]
   }
   
-  @scala.inline
-  implicit class DestinationTablePropertiesMutableBuilder[Self <: DestinationTableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationTableProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+    inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DestinationTableProperties & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

@@ -35,8 +35,7 @@ trait DragonLevel extends StObject {
 }
 object DragonLevel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: String,
     buy: () => Unit,
     cost: () => Boolean,
@@ -48,25 +47,18 @@ object DragonLevel {
     __obj.asInstanceOf[DragonLevel]
   }
   
-  @scala.inline
-  implicit class DragonLevelMutableBuilder[Self <: DragonLevel] (val x: Self) extends AnyVal {
+  extension [Self <: DragonLevel](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuy(value: () => Unit): Self = StObject.set(x, "buy", js.Any.fromFunction0(value))
+    inline def setBuy(value: () => Unit): Self = StObject.set(x, "buy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCost(value: () => Boolean): Self = StObject.set(x, "cost", js.Any.fromFunction0(value))
+    inline def setCost(value: () => Boolean): Self = StObject.set(x, "cost", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCostStr(value: () => String): Self = StObject.set(x, "costStr", js.Any.fromFunction0(value))
+    inline def setCostStr(value: () => String): Self = StObject.set(x, "costStr", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPic(value: Double): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
+    inline def setPic(value: Double): Self = StObject.set(x, "pic", value.asInstanceOf[js.Any])
   }
 }

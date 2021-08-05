@@ -20,25 +20,19 @@ trait ActionsDeleteSelfHostedRunnerFromRepoRequestOptions extends StObject {
 }
 object ActionsDeleteSelfHostedRunnerFromRepoRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsDeleteSelfHostedRunnerFromRepoRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ActionsDeleteSelfHostedRunnerFromRepoRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/actions/runners/:runner_id")
     __obj.asInstanceOf[ActionsDeleteSelfHostedRunnerFromRepoRequestOptions]
   }
   
-  @scala.inline
-  implicit class ActionsDeleteSelfHostedRunnerFromRepoRequestOptionsMutableBuilder[Self <: ActionsDeleteSelfHostedRunnerFromRepoRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsDeleteSelfHostedRunnerFromRepoRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

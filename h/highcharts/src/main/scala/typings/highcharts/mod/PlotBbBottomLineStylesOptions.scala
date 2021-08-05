@@ -19,25 +19,19 @@ trait PlotBbBottomLineStylesOptions extends StObject {
 }
 object PlotBbBottomLineStylesOptions {
   
-  @scala.inline
-  def apply(): PlotBbBottomLineStylesOptions = {
+  inline def apply(): PlotBbBottomLineStylesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotBbBottomLineStylesOptions]
   }
   
-  @scala.inline
-  implicit class PlotBbBottomLineStylesOptionsMutableBuilder[Self <: PlotBbBottomLineStylesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotBbBottomLineStylesOptions](x: Self) {
     
-    @scala.inline
-    def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    inline def setLineColor(value: ColorString): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait Cross extends StObject {
 }
 object Cross {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     direction: String,
     distance: Double,
     first_id: String,
@@ -36,28 +35,20 @@ object Cross {
     __obj.asInstanceOf[Cross]
   }
   
-  @scala.inline
-  implicit class CrossMutableBuilder[Self <: Cross] (val x: Self) extends AnyVal {
+  extension [Self <: Cross](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_id(value: String): Self = StObject.set(x, "first_id", value.asInstanceOf[js.Any])
+    inline def setFirst_id(value: String): Self = StObject.set(x, "first_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond_id(value: String): Self = StObject.set(x, "second_id", value.asInstanceOf[js.Any])
+    inline def setSecond_id(value: String): Self = StObject.set(x, "second_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond_name(value: String): Self = StObject.set(x, "second_name", value.asInstanceOf[js.Any])
+    inline def setSecond_name(value: String): Self = StObject.set(x, "second_name", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait UnmappedIdentity extends StObject {
 }
 object UnmappedIdentity {
   
-  @scala.inline
-  def apply(): UnmappedIdentity = {
+  inline def apply(): UnmappedIdentity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnmappedIdentity]
   }
   
-  @scala.inline
-  implicit class UnmappedIdentityMutableBuilder[Self <: UnmappedIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: UnmappedIdentity](x: Self) {
     
-    @scala.inline
-    def setExternalIdentity(value: Principal): Self = StObject.set(x, "externalIdentity", value.asInstanceOf[js.Any])
+    inline def setExternalIdentity(value: Principal): Self = StObject.set(x, "externalIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdentityUndefined: Self = StObject.set(x, "externalIdentity", js.undefined)
+    inline def setExternalIdentityUndefined: Self = StObject.set(x, "externalIdentity", js.undefined)
     
-    @scala.inline
-    def setResolutionStatusCode(value: String): Self = StObject.set(x, "resolutionStatusCode", value.asInstanceOf[js.Any])
+    inline def setResolutionStatusCode(value: String): Self = StObject.set(x, "resolutionStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolutionStatusCodeUndefined: Self = StObject.set(x, "resolutionStatusCode", js.undefined)
+    inline def setResolutionStatusCodeUndefined: Self = StObject.set(x, "resolutionStatusCode", js.undefined)
   }
 }

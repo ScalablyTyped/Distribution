@@ -28,37 +28,27 @@ trait ConditionalSplitActivity extends StObject {
 }
 object ConditionalSplitActivity {
   
-  @scala.inline
-  def apply(): ConditionalSplitActivity = {
+  inline def apply(): ConditionalSplitActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalSplitActivity]
   }
   
-  @scala.inline
-  implicit class ConditionalSplitActivityMutableBuilder[Self <: ConditionalSplitActivity] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalSplitActivity](x: Self) {
     
-    @scala.inline
-    def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "Condition", js.undefined)
     
-    @scala.inline
-    def setEvaluationWaitTime(value: WaitTime): Self = StObject.set(x, "EvaluationWaitTime", value.asInstanceOf[js.Any])
+    inline def setEvaluationWaitTime(value: WaitTime): Self = StObject.set(x, "EvaluationWaitTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationWaitTimeUndefined: Self = StObject.set(x, "EvaluationWaitTime", js.undefined)
+    inline def setEvaluationWaitTimeUndefined: Self = StObject.set(x, "EvaluationWaitTime", js.undefined)
     
-    @scala.inline
-    def setFalseActivity(value: string): Self = StObject.set(x, "FalseActivity", value.asInstanceOf[js.Any])
+    inline def setFalseActivity(value: string): Self = StObject.set(x, "FalseActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalseActivityUndefined: Self = StObject.set(x, "FalseActivity", js.undefined)
+    inline def setFalseActivityUndefined: Self = StObject.set(x, "FalseActivity", js.undefined)
     
-    @scala.inline
-    def setTrueActivity(value: string): Self = StObject.set(x, "TrueActivity", value.asInstanceOf[js.Any])
+    inline def setTrueActivity(value: string): Self = StObject.set(x, "TrueActivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueActivityUndefined: Self = StObject.set(x, "TrueActivity", js.undefined)
+    inline def setTrueActivityUndefined: Self = StObject.set(x, "TrueActivity", js.undefined)
   }
 }

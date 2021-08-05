@@ -10,16 +10,13 @@ trait RouteSelectedEvent extends StObject {
 }
 object RouteSelectedEvent {
   
-  @scala.inline
-  def apply(route: IRoute): RouteSelectedEvent = {
+  inline def apply(route: IRoute): RouteSelectedEvent = {
     val __obj = js.Dynamic.literal(route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSelectedEvent]
   }
   
-  @scala.inline
-  implicit class RouteSelectedEventMutableBuilder[Self <: RouteSelectedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSelectedEvent](x: Self) {
     
-    @scala.inline
-    def setRoute(value: IRoute): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: IRoute): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
   }
 }

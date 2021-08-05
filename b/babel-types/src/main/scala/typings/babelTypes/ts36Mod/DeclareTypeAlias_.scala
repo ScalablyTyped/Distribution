@@ -24,8 +24,7 @@ trait DeclareTypeAlias_
 }
 object DeclareTypeAlias_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     id: Identifier_,
     loc: SourceLocation,
@@ -38,19 +37,14 @@ object DeclareTypeAlias_ {
     __obj.asInstanceOf[DeclareTypeAlias_]
   }
   
-  @scala.inline
-  implicit class DeclareTypeAlias_MutableBuilder[Self <: DeclareTypeAlias_] (val x: Self) extends AnyVal {
+  extension [Self <: DeclareTypeAlias_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: FlowTypeAnnotation): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: FlowTypeAnnotation): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DeclareTypeAlias): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DeclareTypeAlias): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait SpeechRecognizerStateChangedEventArgs extends StObject {
 }
 object SpeechRecognizerStateChangedEventArgs {
   
-  @scala.inline
-  def apply(state: SpeechRecognizerState): SpeechRecognizerStateChangedEventArgs = {
+  inline def apply(state: SpeechRecognizerState): SpeechRecognizerStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognizerStateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpeechRecognizerStateChangedEventArgsMutableBuilder[Self <: SpeechRecognizerStateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognizerStateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setState(value: SpeechRecognizerState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: SpeechRecognizerState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

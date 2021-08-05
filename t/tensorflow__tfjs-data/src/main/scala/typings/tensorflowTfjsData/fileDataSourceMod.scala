@@ -25,8 +25,8 @@ object fileDataSourceMod {
     def this(input: String, options: FileChunkIteratorOptions) = this()
     def this(input: FileElement, options: FileChunkIteratorOptions) = this()
     
-    var input: FileElement | String = js.native
+    /* protected */ var input: FileElement | String = js.native
     
-    val options: FileChunkIteratorOptions = js.native
+    /* protected */ val options: FileChunkIteratorOptions = js.native
   }
 }

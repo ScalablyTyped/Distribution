@@ -13,19 +13,15 @@ trait GetQueryExecutionOutput extends StObject {
 }
 object GetQueryExecutionOutput {
   
-  @scala.inline
-  def apply(): GetQueryExecutionOutput = {
+  inline def apply(): GetQueryExecutionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetQueryExecutionOutput]
   }
   
-  @scala.inline
-  implicit class GetQueryExecutionOutputMutableBuilder[Self <: GetQueryExecutionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetQueryExecutionOutput](x: Self) {
     
-    @scala.inline
-    def setQueryExecution(value: QueryExecution): Self = StObject.set(x, "QueryExecution", value.asInstanceOf[js.Any])
+    inline def setQueryExecution(value: QueryExecution): Self = StObject.set(x, "QueryExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryExecutionUndefined: Self = StObject.set(x, "QueryExecution", js.undefined)
+    inline def setQueryExecutionUndefined: Self = StObject.set(x, "QueryExecution", js.undefined)
   }
 }

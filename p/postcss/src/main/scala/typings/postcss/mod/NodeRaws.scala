@@ -51,61 +51,43 @@ trait NodeRaws extends StObject {
 }
 object NodeRaws {
   
-  @scala.inline
-  def apply(): NodeRaws = {
+  inline def apply(): NodeRaws = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeRaws]
   }
   
-  @scala.inline
-  implicit class NodeRawsMutableBuilder[Self <: NodeRaws] (val x: Self) extends AnyVal {
+  extension [Self <: NodeRaws](x: Self) {
     
-    @scala.inline
-    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterName(value: String): Self = StObject.set(x, "afterName", value.asInstanceOf[js.Any])
+    inline def setAfterName(value: String): Self = StObject.set(x, "afterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterNameUndefined: Self = StObject.set(x, "afterName", js.undefined)
+    inline def setAfterNameUndefined: Self = StObject.set(x, "afterName", js.undefined)
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     
-    @scala.inline
-    def setBetween(value: String): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
+    inline def setBetween(value: String): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
+    inline def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
     
-    @scala.inline
-    def setImportant(value: String): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
+    inline def setImportant(value: String): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
+    inline def setImportantUndefined: Self = StObject.set(x, "important", js.undefined)
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setSemicolon(value: Boolean): Self = StObject.set(x, "semicolon", value.asInstanceOf[js.Any])
+    inline def setSemicolon(value: Boolean): Self = StObject.set(x, "semicolon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemicolonUndefined: Self = StObject.set(x, "semicolon", js.undefined)
+    inline def setSemicolonUndefined: Self = StObject.set(x, "semicolon", js.undefined)
   }
 }

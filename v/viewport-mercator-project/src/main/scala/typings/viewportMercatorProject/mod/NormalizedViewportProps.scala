@@ -14,8 +14,7 @@ trait NormalizedViewportProps
 }
 object NormalizedViewportProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bearing: Double,
     height: Double,
     latitude: Double,
@@ -28,13 +27,10 @@ object NormalizedViewportProps {
     __obj.asInstanceOf[NormalizedViewportProps]
   }
   
-  @scala.inline
-  implicit class NormalizedViewportPropsMutableBuilder[Self <: NormalizedViewportProps] (val x: Self) extends AnyVal {
+  extension [Self <: NormalizedViewportProps](x: Self) {
     
-    @scala.inline
-    def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
+    inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
   }
 }

@@ -584,7 +584,7 @@ object sqlServerQueryRunnerMod {
       *
       * @see https://github.com/patriksimek/node-mssql/issues/491
       */
-    var queryResponsibilityChain: js.Array[js.Promise[js.Any]] = js.native
+    /* protected */ var queryResponsibilityChain: js.Array[js.Promise[js.Any]] = js.native
     
     /**
       * Releases used database connection.

@@ -13,17 +13,14 @@ object anon {
   }
   object GenerateTestHook {
     
-    @scala.inline
-    def apply(generateTestHook: TestHookGenerator): GenerateTestHook = {
+    inline def apply(generateTestHook: TestHookGenerator): GenerateTestHook = {
       val __obj = js.Dynamic.literal(generateTestHook = generateTestHook.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenerateTestHook]
     }
     
-    @scala.inline
-    implicit class GenerateTestHookMutableBuilder[Self <: GenerateTestHook] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateTestHook](x: Self) {
       
-      @scala.inline
-      def setGenerateTestHook(value: TestHookGenerator): Self = StObject.set(x, "generateTestHook", value.asInstanceOf[js.Any])
+      inline def setGenerateTestHook(value: TestHookGenerator): Self = StObject.set(x, "generateTestHook", value.asInstanceOf[js.Any])
     }
   }
 }

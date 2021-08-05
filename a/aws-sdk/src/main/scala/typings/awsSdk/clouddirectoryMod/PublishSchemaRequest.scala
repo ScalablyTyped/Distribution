@@ -28,31 +28,23 @@ trait PublishSchemaRequest extends StObject {
 }
 object PublishSchemaRequest {
   
-  @scala.inline
-  def apply(DevelopmentSchemaArn: Arn, Version: Version): PublishSchemaRequest = {
+  inline def apply(DevelopmentSchemaArn: Arn, Version: Version): PublishSchemaRequest = {
     val __obj = js.Dynamic.literal(DevelopmentSchemaArn = DevelopmentSchemaArn.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishSchemaRequest]
   }
   
-  @scala.inline
-  implicit class PublishSchemaRequestMutableBuilder[Self <: PublishSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PublishSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setDevelopmentSchemaArn(value: Arn): Self = StObject.set(x, "DevelopmentSchemaArn", value.asInstanceOf[js.Any])
+    inline def setDevelopmentSchemaArn(value: Arn): Self = StObject.set(x, "DevelopmentSchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorVersion(value: Version): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
+    inline def setMinorVersion(value: Version): Self = StObject.set(x, "MinorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorVersionUndefined: Self = StObject.set(x, "MinorVersion", js.undefined)
+    inline def setMinorVersionUndefined: Self = StObject.set(x, "MinorVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Version): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

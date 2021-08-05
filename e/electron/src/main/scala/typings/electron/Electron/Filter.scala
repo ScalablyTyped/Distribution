@@ -14,19 +14,15 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(urls: js.Array[String]): Filter = {
+  inline def apply(urls: js.Array[String]): Filter = {
     val __obj = js.Dynamic.literal(urls = urls.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value :_*))
   }
 }

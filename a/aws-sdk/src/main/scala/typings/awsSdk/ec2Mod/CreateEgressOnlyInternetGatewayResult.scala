@@ -18,25 +18,19 @@ trait CreateEgressOnlyInternetGatewayResult extends StObject {
 }
 object CreateEgressOnlyInternetGatewayResult {
   
-  @scala.inline
-  def apply(): CreateEgressOnlyInternetGatewayResult = {
+  inline def apply(): CreateEgressOnlyInternetGatewayResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateEgressOnlyInternetGatewayResult]
   }
   
-  @scala.inline
-  implicit class CreateEgressOnlyInternetGatewayResultMutableBuilder[Self <: CreateEgressOnlyInternetGatewayResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEgressOnlyInternetGatewayResult](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setEgressOnlyInternetGateway(value: EgressOnlyInternetGateway): Self = StObject.set(x, "EgressOnlyInternetGateway", value.asInstanceOf[js.Any])
+    inline def setEgressOnlyInternetGateway(value: EgressOnlyInternetGateway): Self = StObject.set(x, "EgressOnlyInternetGateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEgressOnlyInternetGatewayUndefined: Self = StObject.set(x, "EgressOnlyInternetGateway", js.undefined)
+    inline def setEgressOnlyInternetGatewayUndefined: Self = StObject.set(x, "EgressOnlyInternetGateway", js.undefined)
   }
 }

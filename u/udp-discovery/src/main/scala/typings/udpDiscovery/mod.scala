@@ -91,32 +91,24 @@ object mod {
   }
   object DiscoveryConstructorOptions {
     
-    @scala.inline
-    def apply(): DiscoveryConstructorOptions = {
+    inline def apply(): DiscoveryConstructorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiscoveryConstructorOptions]
     }
     
-    @scala.inline
-    implicit class DiscoveryConstructorOptionsMutableBuilder[Self <: DiscoveryConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DiscoveryConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setBindAddr(value: String): Self = StObject.set(x, "bindAddr", value.asInstanceOf[js.Any])
+      inline def setBindAddr(value: String): Self = StObject.set(x, "bindAddr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBindAddrUndefined: Self = StObject.set(x, "bindAddr", js.undefined)
+      inline def setBindAddrUndefined: Self = StObject.set(x, "bindAddr", js.undefined)
       
-      @scala.inline
-      def setDgramType(value: String): Self = StObject.set(x, "dgramType", value.asInstanceOf[js.Any])
+      inline def setDgramType(value: String): Self = StObject.set(x, "dgramType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDgramTypeUndefined: Self = StObject.set(x, "dgramType", js.undefined)
+      inline def setDgramTypeUndefined: Self = StObject.set(x, "dgramType", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -153,26 +145,20 @@ object mod {
   }
   object DiscoveryEvents {
     
-    @scala.inline
-    def apply(available: (String, js.Any, ReasonType) => Unit, unavailable: (String, js.Any, ReasonType) => Unit): DiscoveryEvents = {
+    inline def apply(available: (String, js.Any, ReasonType) => Unit, unavailable: (String, js.Any, ReasonType) => Unit): DiscoveryEvents = {
       val __obj = js.Dynamic.literal(available = js.Any.fromFunction3(available), unavailable = js.Any.fromFunction3(unavailable))
       __obj.asInstanceOf[DiscoveryEvents]
     }
     
-    @scala.inline
-    implicit class DiscoveryEventsMutableBuilder[Self <: DiscoveryEvents] (val x: Self) extends AnyVal {
+    extension [Self <: DiscoveryEvents](x: Self) {
       
-      @scala.inline
-      def setAvailable(value: (String, js.Any, ReasonType) => Unit): Self = StObject.set(x, "available", js.Any.fromFunction3(value))
+      inline def setAvailable(value: (String, js.Any, ReasonType) => Unit): Self = StObject.set(x, "available", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMessageBus(value: (/* eventName */ String, /* data */ js.Any) => Unit): Self = StObject.set(x, "MessageBus", js.Any.fromFunction2(value))
+      inline def setMessageBus(value: (/* eventName */ String, /* data */ js.Any) => Unit): Self = StObject.set(x, "MessageBus", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMessageBusUndefined: Self = StObject.set(x, "MessageBus", js.undefined)
+      inline def setMessageBusUndefined: Self = StObject.set(x, "MessageBus", js.undefined)
       
-      @scala.inline
-      def setUnavailable(value: (String, js.Any, ReasonType) => Unit): Self = StObject.set(x, "unavailable", js.Any.fromFunction3(value))
+      inline def setUnavailable(value: (String, js.Any, ReasonType) => Unit): Self = StObject.set(x, "unavailable", js.Any.fromFunction3(value))
     }
   }
   
@@ -184,13 +170,10 @@ object mod {
   trait ReasonType extends StObject
   object ReasonType {
     
-    @scala.inline
-    def availabilityChange: typings.udpDiscovery.udpDiscoveryStrings.availabilityChange = "availabilityChange".asInstanceOf[typings.udpDiscovery.udpDiscoveryStrings.availabilityChange]
+    inline def availabilityChange: typings.udpDiscovery.udpDiscoveryStrings.availabilityChange = "availabilityChange".asInstanceOf[typings.udpDiscovery.udpDiscoveryStrings.availabilityChange]
     
-    @scala.inline
-    def `new`: typings.udpDiscovery.udpDiscoveryStrings.`new` = "new".asInstanceOf[typings.udpDiscovery.udpDiscoveryStrings.`new`]
+    inline def `new`: typings.udpDiscovery.udpDiscoveryStrings.`new` = "new".asInstanceOf[typings.udpDiscovery.udpDiscoveryStrings.`new`]
     
-    @scala.inline
-    def timedOut: typings.udpDiscovery.udpDiscoveryStrings.timedOut = "timedOut".asInstanceOf[typings.udpDiscovery.udpDiscoveryStrings.timedOut]
+    inline def timedOut: typings.udpDiscovery.udpDiscoveryStrings.timedOut = "timedOut".asInstanceOf[typings.udpDiscovery.udpDiscoveryStrings.timedOut]
   }
 }

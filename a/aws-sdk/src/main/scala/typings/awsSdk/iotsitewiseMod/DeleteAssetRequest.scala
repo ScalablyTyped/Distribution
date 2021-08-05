@@ -18,22 +18,17 @@ trait DeleteAssetRequest extends StObject {
 }
 object DeleteAssetRequest {
   
-  @scala.inline
-  def apply(assetId: ID): DeleteAssetRequest = {
+  inline def apply(assetId: ID): DeleteAssetRequest = {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAssetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAssetRequestMutableBuilder[Self <: DeleteAssetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAssetRequest](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
   }
 }

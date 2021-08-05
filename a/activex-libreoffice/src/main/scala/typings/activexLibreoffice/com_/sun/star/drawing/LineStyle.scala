@@ -17,8 +17,7 @@ trait LineStyle extends StObject
 object LineStyle {
   
   /** the line use dashes. */
-  @scala.inline
-  def DASH: `2` = 2.asInstanceOf[`2`]
+  inline def DASH: `2` = 2.asInstanceOf[`2`]
   
   /**
     * the area is not filled.
@@ -33,14 +32,12 @@ object LineStyle {
     *
     * the text size is only defined by the font properties
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * use a solid color to fill the area.
     *
     * the line is solid.
     */
-  @scala.inline
-  def SOLID: `1` = 1.asInstanceOf[`1`]
+  inline def SOLID: `1` = 1.asInstanceOf[`1`]
 }

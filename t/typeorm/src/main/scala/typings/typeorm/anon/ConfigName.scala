@@ -19,25 +19,19 @@ trait ConfigName extends StObject {
 }
 object ConfigName {
   
-  @scala.inline
-  def apply(): ConfigName = {
+  inline def apply(): ConfigName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigName]
   }
   
-  @scala.inline
-  implicit class ConfigNameMutableBuilder[Self <: ConfigName] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigName](x: Self) {
     
-    @scala.inline
-    def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
+    inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigNameUndefined: Self = StObject.set(x, "configName", js.undefined)
+    inline def setConfigNameUndefined: Self = StObject.set(x, "configName", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

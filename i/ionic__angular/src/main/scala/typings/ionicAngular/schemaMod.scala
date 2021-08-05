@@ -12,20 +12,16 @@ object schemaMod {
   }
   object Schema {
     
-    @scala.inline
-    def apply(): Schema = {
+    inline def apply(): Schema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Schema]
     }
     
-    @scala.inline
-    implicit class SchemaMutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
+    extension [Self <: Schema](x: Self) {
       
-      @scala.inline
-      def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     }
   }
 }

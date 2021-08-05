@@ -60,8 +60,7 @@ object interfacesIssueMod {
   }
   object Issue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       age: Duration_,
       assignees: js.Array[UserSummary],
       body: String,
@@ -86,86 +85,59 @@ object interfacesIssueMod {
       __obj.asInstanceOf[Issue]
     }
     
-    @scala.inline
-    implicit class IssueMutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
+    extension [Self <: Issue](x: Self) {
       
-      @scala.inline
-      def setAge(value: Duration_): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+      inline def setAge(value: Duration_): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssignee(value: UserSummary): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
+      inline def setAssignee(value: UserSummary): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
+      inline def setAssigneeUndefined: Self = StObject.set(x, "assignee", js.undefined)
       
-      @scala.inline
-      def setAssignees(value: js.Array[UserSummary]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
+      inline def setAssignees(value: js.Array[UserSummary]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value :_*))
+      inline def setAssigneesVarargs(value: UserSummary*): Self = StObject.set(x, "assignees", js.Array(value :_*))
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosed(value: Moment): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+      inline def setClosed(value: Moment): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosedBy(value: UserSummary): Self = StObject.set(x, "closedBy", value.asInstanceOf[js.Any])
+      inline def setClosedBy(value: UserSummary): Self = StObject.set(x, "closedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClosedByUndefined: Self = StObject.set(x, "closedBy", js.undefined)
+      inline def setClosedByUndefined: Self = StObject.set(x, "closedBy", js.undefined)
       
-      @scala.inline
-      def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
+      inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
       
-      @scala.inline
-      def setComments(value: Double): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+      inline def setComments(value: Double): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Moment): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Moment): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedBy(value: UserSummary): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: UserSummary): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUri(value: String): Self = StObject.set(x, "htmlUri", value.asInstanceOf[js.Any])
+      inline def setHtmlUri(value: String): Self = StObject.set(x, "htmlUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPullRequest(value: Boolean): Self = StObject.set(x, "isPullRequest", value.asInstanceOf[js.Any])
+      inline def setIsPullRequest(value: Boolean): Self = StObject.set(x, "isPullRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value :_*))
+      inline def setLabelsVarargs(value: Label*): Self = StObject.set(x, "labels", js.Array(value :_*))
       
-      @scala.inline
-      def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+      inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilestone(value: Milestone): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+      inline def setMilestone(value: Milestone): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMilestoneUndefined: Self = StObject.set(x, "milestone", js.undefined)
+      inline def setMilestoneUndefined: Self = StObject.set(x, "milestone", js.undefined)
       
-      @scala.inline
-      def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdated(value: Moment): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: Moment): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWasOpen(value: Moment => Boolean): Self = StObject.set(x, "wasOpen", js.Any.fromFunction1(value))
+      inline def setWasOpen(value: Moment => Boolean): Self = StObject.set(x, "wasOpen", js.Any.fromFunction1(value))
     }
   }
   
@@ -185,8 +157,7 @@ object interfacesIssueMod {
   }
   object IssueComment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: String,
       createdAt: Moment,
       createdBy: UserSummary,
@@ -198,26 +169,19 @@ object interfacesIssueMod {
       __obj.asInstanceOf[IssueComment]
     }
     
-    @scala.inline
-    implicit class IssueCommentMutableBuilder[Self <: IssueComment] (val x: Self) extends AnyVal {
+    extension [Self <: IssueComment](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedAt(value: Moment): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: Moment): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedBy(value: UserSummary): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: UserSummary): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUri(value: String): Self = StObject.set(x, "htmlUri", value.asInstanceOf[js.Any])
+      inline def setHtmlUri(value: String): Self = StObject.set(x, "htmlUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedAt(value: Moment): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+      inline def setUpdatedAt(value: Moment): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,8 +195,7 @@ object interfacesIssueMod {
   }
   object IssueRef {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       loadAsync: () => js.Promise[Issue | Null],
       loadRepositoryAsync: () => js.Promise[Repository],
       number: Double
@@ -241,17 +204,13 @@ object interfacesIssueMod {
       __obj.asInstanceOf[IssueRef]
     }
     
-    @scala.inline
-    implicit class IssueRefMutableBuilder[Self <: IssueRef] (val x: Self) extends AnyVal {
+    extension [Self <: IssueRef](x: Self) {
       
-      @scala.inline
-      def setLoadAsync(value: () => js.Promise[Issue | Null]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
+      inline def setLoadAsync(value: () => js.Promise[Issue | Null]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadRepositoryAsync(value: () => js.Promise[Repository]): Self = StObject.set(x, "loadRepositoryAsync", js.Any.fromFunction0(value))
+      inline def setLoadRepositoryAsync(value: () => js.Promise[Repository]): Self = StObject.set(x, "loadRepositoryAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     }
   }
 }

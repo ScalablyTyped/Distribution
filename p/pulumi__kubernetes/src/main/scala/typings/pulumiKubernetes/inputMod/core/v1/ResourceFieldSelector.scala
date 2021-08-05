@@ -27,28 +27,21 @@ trait ResourceFieldSelector extends StObject {
 }
 object ResourceFieldSelector {
   
-  @scala.inline
-  def apply(resource: Input[String]): ResourceFieldSelector = {
+  inline def apply(resource: Input[String]): ResourceFieldSelector = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceFieldSelector]
   }
   
-  @scala.inline
-  implicit class ResourceFieldSelectorMutableBuilder[Self <: ResourceFieldSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceFieldSelector](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: Input[String]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: Input[String]): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
-    @scala.inline
-    def setDivisor(value: Input[String]): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
+    inline def setDivisor(value: Input[String]): Self = StObject.set(x, "divisor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivisorUndefined: Self = StObject.set(x, "divisor", js.undefined)
+    inline def setDivisorUndefined: Self = StObject.set(x, "divisor", js.undefined)
     
-    @scala.inline
-    def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Input[String]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

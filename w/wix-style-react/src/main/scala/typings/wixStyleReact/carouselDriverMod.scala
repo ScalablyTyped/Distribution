@@ -21,8 +21,7 @@ object carouselDriverMod {
   }
   object CarouselDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exists: () => Boolean,
       getChildren: () => NodeListOf[HTMLElement],
       getImages: () => js.Array[String],
@@ -32,17 +31,13 @@ object carouselDriverMod {
       __obj.asInstanceOf[CarouselDriver]
     }
     
-    @scala.inline
-    implicit class CarouselDriverMutableBuilder[Self <: CarouselDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselDriver](x: Self) {
       
-      @scala.inline
-      def setGetChildren(value: () => NodeListOf[HTMLElement]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
+      inline def setGetChildren(value: () => NodeListOf[HTMLElement]): Self = StObject.set(x, "getChildren", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImages(value: () => js.Array[String]): Self = StObject.set(x, "getImages", js.Any.fromFunction0(value))
+      inline def setGetImages(value: () => js.Array[String]): Self = StObject.set(x, "getImages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
+      inline def setIsLoading(value: () => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction0(value))
     }
   }
 }

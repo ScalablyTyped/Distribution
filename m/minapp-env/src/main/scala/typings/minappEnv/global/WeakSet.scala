@@ -17,6 +17,5 @@ class WeakSet[T /* <: js.Object */] ()
 }
 object WeakSet {
   
-  @scala.inline
-  def apply: WeakSetConstructor = js.Dynamic.global.selectDynamic("WeakSet").asInstanceOf[WeakSetConstructor]
+  inline def apply: WeakSetConstructor = js.Dynamic.global.selectDynamic("WeakSet").asInstanceOf[WeakSetConstructor]
 }

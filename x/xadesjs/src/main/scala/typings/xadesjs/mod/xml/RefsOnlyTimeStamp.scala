@@ -13,6 +13,5 @@ class RefsOnlyTimeStamp ()
   extends typings.xadesjs.xmlMod.RefsOnlyTimeStamp
 object RefsOnlyTimeStamp {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.RefsOnlyTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("RefsOnlyTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.RefsOnlyTimeStamp]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.RefsOnlyTimeStamp] = ^.asInstanceOf[js.Dynamic].selectDynamic("RefsOnlyTimeStamp").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.RefsOnlyTimeStamp]]
 }

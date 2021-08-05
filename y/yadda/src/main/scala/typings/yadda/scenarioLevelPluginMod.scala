@@ -10,6 +10,5 @@ object scenarioLevelPluginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def init(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(options: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

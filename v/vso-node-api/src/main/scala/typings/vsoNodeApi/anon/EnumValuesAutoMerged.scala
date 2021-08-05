@@ -10,16 +10,13 @@ trait EnumValuesAutoMerged extends StObject {
 }
 object EnumValuesAutoMerged {
   
-  @scala.inline
-  def apply(enumValues: AutoMerged): EnumValuesAutoMerged = {
+  inline def apply(enumValues: AutoMerged): EnumValuesAutoMerged = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAutoMerged]
   }
   
-  @scala.inline
-  implicit class EnumValuesAutoMergedMutableBuilder[Self <: EnumValuesAutoMerged] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAutoMerged](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AutoMerged): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AutoMerged): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

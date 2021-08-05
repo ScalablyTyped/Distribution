@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SameSiteCookieExclusionReason extends StObject
 object SameSiteCookieExclusionReason {
   
-  @scala.inline
-  def ExcludeSameSiteLax: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteLax = "ExcludeSameSiteLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteLax]
+  inline def ExcludeSameSiteLax: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteLax = "ExcludeSameSiteLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteLax]
   
-  @scala.inline
-  def ExcludeSameSiteNoneInsecure: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteNoneInsecure = "ExcludeSameSiteNoneInsecure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteNoneInsecure]
+  inline def ExcludeSameSiteNoneInsecure: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteNoneInsecure = "ExcludeSameSiteNoneInsecure".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteNoneInsecure]
   
-  @scala.inline
-  def ExcludeSameSiteStrict: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteStrict = "ExcludeSameSiteStrict".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteStrict]
+  inline def ExcludeSameSiteStrict: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteStrict = "ExcludeSameSiteStrict".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteStrict]
   
-  @scala.inline
-  def ExcludeSameSiteUnspecifiedTreatedAsLax: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteUnspecifiedTreatedAsLax = "ExcludeSameSiteUnspecifiedTreatedAsLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteUnspecifiedTreatedAsLax]
+  inline def ExcludeSameSiteUnspecifiedTreatedAsLax: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteUnspecifiedTreatedAsLax = "ExcludeSameSiteUnspecifiedTreatedAsLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteUnspecifiedTreatedAsLax]
 }

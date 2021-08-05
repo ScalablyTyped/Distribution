@@ -15,17 +15,14 @@ object ackMod {
   }
   object IncomingAckRequest {
     
-    @scala.inline
-    def apply(message: IncomingRequestMessage): IncomingAckRequest = {
+    inline def apply(message: IncomingRequestMessage): IncomingAckRequest = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[IncomingAckRequest]
     }
     
-    @scala.inline
-    implicit class IncomingAckRequestMutableBuilder[Self <: IncomingAckRequest] (val x: Self) extends AnyVal {
+    extension [Self <: IncomingAckRequest](x: Self) {
       
-      @scala.inline
-      def setMessage(value: IncomingRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: IncomingRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,17 +33,14 @@ object ackMod {
   }
   object OutgoingAckRequest {
     
-    @scala.inline
-    def apply(message: OutgoingRequestMessage): OutgoingAckRequest = {
+    inline def apply(message: OutgoingRequestMessage): OutgoingAckRequest = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutgoingAckRequest]
     }
     
-    @scala.inline
-    implicit class OutgoingAckRequestMutableBuilder[Self <: OutgoingAckRequest] (val x: Self) extends AnyVal {
+    extension [Self <: OutgoingAckRequest](x: Self) {
       
-      @scala.inline
-      def setMessage(value: OutgoingRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: OutgoingRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

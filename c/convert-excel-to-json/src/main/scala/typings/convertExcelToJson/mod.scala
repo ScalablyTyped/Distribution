@@ -11,18 +11,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(config: (SourceFile | Source) & Sheets & SheetConfig): StringDictionary[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[js.Any]]]
-  @scala.inline
-  def apply(
+  inline def apply(config: (SourceFile | Source) & Sheets & SheetConfig): StringDictionary[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[js.Any]]]
+  inline def apply(
     config: (SourceFile | Source) & Sheets & SheetConfig,
     // Input can also be a json-string (for cli)
   sourceFile: String
   ): StringDictionary[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[js.Any]]]
-  @scala.inline
-  def apply(config: String): StringDictionary[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[js.Any]]]
-  @scala.inline
-  def apply(config: String, // Input can also be a json-string (for cli)
+  inline def apply(config: String): StringDictionary[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[js.Any]]]
+  inline def apply(config: String, // Input can also be a json-string (for cli)
   sourceFile: String): StringDictionary[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Array[js.Any]]]
   
   @JSImport("convert-excel-to-json", JSImport.Namespace)
@@ -43,44 +39,32 @@ object mod {
   }
   object SheetConfig {
     
-    @scala.inline
-    def apply(): SheetConfig = {
+    inline def apply(): SheetConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SheetConfig]
     }
     
-    @scala.inline
-    implicit class SheetConfigMutableBuilder[Self <: SheetConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SheetConfig](x: Self) {
       
-      @scala.inline
-      def setColumnToKey(value: StringDictionary[String]): Self = StObject.set(x, "columnToKey", value.asInstanceOf[js.Any])
+      inline def setColumnToKey(value: StringDictionary[String]): Self = StObject.set(x, "columnToKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnToKeyUndefined: Self = StObject.set(x, "columnToKey", js.undefined)
+      inline def setColumnToKeyUndefined: Self = StObject.set(x, "columnToKey", js.undefined)
       
-      @scala.inline
-      def setHeader(value: Rows): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Rows): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setIncludeEmptyLines(value: Boolean): Self = StObject.set(x, "includeEmptyLines", value.asInstanceOf[js.Any])
+      inline def setIncludeEmptyLines(value: Boolean): Self = StObject.set(x, "includeEmptyLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeEmptyLinesUndefined: Self = StObject.set(x, "includeEmptyLines", js.undefined)
+      inline def setIncludeEmptyLinesUndefined: Self = StObject.set(x, "includeEmptyLines", js.undefined)
       
-      @scala.inline
-      def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setSheetStubs(value: Boolean): Self = StObject.set(x, "sheetStubs", value.asInstanceOf[js.Any])
+      inline def setSheetStubs(value: Boolean): Self = StObject.set(x, "sheetStubs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetStubsUndefined: Self = StObject.set(x, "sheetStubs", js.undefined)
+      inline def setSheetStubsUndefined: Self = StObject.set(x, "sheetStubs", js.undefined)
     }
   }
 }

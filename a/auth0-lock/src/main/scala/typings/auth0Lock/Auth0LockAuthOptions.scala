@@ -24,61 +24,43 @@ trait Auth0LockAuthOptions extends StObject {
 }
 object Auth0LockAuthOptions {
   
-  @scala.inline
-  def apply(): Auth0LockAuthOptions = {
+  inline def apply(): Auth0LockAuthOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Auth0LockAuthOptions]
   }
   
-  @scala.inline
-  implicit class Auth0LockAuthOptionsMutableBuilder[Self <: Auth0LockAuthOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0LockAuthOptions](x: Self) {
     
-    @scala.inline
-    def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
     
-    @scala.inline
-    def setAutoParseHash(value: Boolean): Self = StObject.set(x, "autoParseHash", value.asInstanceOf[js.Any])
+    inline def setAutoParseHash(value: Boolean): Self = StObject.set(x, "autoParseHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoParseHashUndefined: Self = StObject.set(x, "autoParseHash", js.undefined)
+    inline def setAutoParseHashUndefined: Self = StObject.set(x, "autoParseHash", js.undefined)
     
-    @scala.inline
-    def setParams(value: Auth0LockAuthParamsOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: Auth0LockAuthParamsOptions): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: Boolean): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     
-    @scala.inline
-    def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+    inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
+    inline def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
     
-    @scala.inline
-    def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
+    inline def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
+    inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setSso(value: Boolean): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
+    inline def setSso(value: Boolean): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsoUndefined: Self = StObject.set(x, "sso", js.undefined)
+    inline def setSsoUndefined: Self = StObject.set(x, "sso", js.undefined)
   }
 }

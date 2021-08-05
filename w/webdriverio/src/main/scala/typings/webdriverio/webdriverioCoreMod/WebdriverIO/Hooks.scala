@@ -10,8 +10,7 @@ trait Hooks
      with _Hooks
 object Hooks {
   
-  @scala.inline
-  def apply(): Hooks = {
+  inline def apply(): Hooks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hooks]
   }

@@ -42,8 +42,7 @@ trait InsightsServicePostResponseMedia extends StObject {
 }
 object InsightsServicePostResponseMedia {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ad_media: Null,
     comment_count: Double,
     creation_time: Double,
@@ -66,58 +65,40 @@ object InsightsServicePostResponseMedia {
     __obj.asInstanceOf[InsightsServicePostResponseMedia]
   }
   
-  @scala.inline
-  implicit class InsightsServicePostResponseMediaMutableBuilder[Self <: InsightsServicePostResponseMedia] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServicePostResponseMedia](x: Self) {
     
-    @scala.inline
-    def setAd_media(value: Null): Self = StObject.set(x, "ad_media", value.asInstanceOf[js.Any])
+    inline def setAd_media(value: Null): Self = StObject.set(x, "ad_media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
+    inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreation_time(value: Double): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
+    inline def setCreation_time(value: Double): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
+    inline def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_product_tags(value: Boolean): Self = StObject.set(x, "has_product_tags", value.asInstanceOf[js.Any])
+    inline def setHas_product_tags(value: Boolean): Self = StObject.set(x, "has_product_tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: InsightsServicePostResponseImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: InsightsServicePostResponseImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInline_insights_node(value: InsightsServicePostResponseInlineInsightsNode): Self = StObject.set(x, "inline_insights_node", value.asInstanceOf[js.Any])
+    inline def setInline_insights_node(value: InsightsServicePostResponseInlineInsightsNode): Self = StObject.set(x, "inline_insights_node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstagram_actor(value: InsightsServicePostResponseInstagramActor): Self = StObject.set(x, "instagram_actor", value.asInstanceOf[js.Any])
+    inline def setInstagram_actor(value: InsightsServicePostResponseInstagramActor): Self = StObject.set(x, "instagram_actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstagram_media_id(value: String): Self = StObject.set(x, "instagram_media_id", value.asInstanceOf[js.Any])
+    inline def setInstagram_media_id(value: String): Self = StObject.set(x, "instagram_media_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstagram_media_owner_id(value: String): Self = StObject.set(x, "instagram_media_owner_id", value.asInstanceOf[js.Any])
+    inline def setInstagram_media_owner_id(value: String): Self = StObject.set(x, "instagram_media_owner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstagram_media_type(value: String): Self = StObject.set(x, "instagram_media_type", value.asInstanceOf[js.Any])
+    inline def setInstagram_media_type(value: String): Self = StObject.set(x, "instagram_media_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLike_count(value: Double): Self = StObject.set(x, "like_count", value.asInstanceOf[js.Any])
+    inline def setLike_count(value: Double): Self = StObject.set(x, "like_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganic_instagram_media_id(value: String): Self = StObject.set(x, "organic_instagram_media_id", value.asInstanceOf[js.Any])
+    inline def setOrganic_instagram_media_id(value: String): Self = StObject.set(x, "organic_instagram_media_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSave_count(value: Double): Self = StObject.set(x, "save_count", value.asInstanceOf[js.Any])
+    inline def setSave_count(value: Double): Self = StObject.set(x, "save_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShopping_outbound_click_count(value: Double): Self = StObject.set(x, "shopping_outbound_click_count", value.asInstanceOf[js.Any])
+    inline def setShopping_outbound_click_count(value: Double): Self = StObject.set(x, "shopping_outbound_click_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShopping_product_click_count(value: Double): Self = StObject.set(x, "shopping_product_click_count", value.asInstanceOf[js.Any])
+    inline def setShopping_product_click_count(value: Double): Self = StObject.set(x, "shopping_product_click_count", value.asInstanceOf[js.Any])
   }
 }

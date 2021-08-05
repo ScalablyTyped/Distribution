@@ -38,8 +38,7 @@ trait XRecordableDispatch
 }
 object XRecordableDispatch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     dispatchAndRecord: (URL, SeqEquiv[PropertyValue], XDispatchRecorder) => Unit,
     queryInterface: `type` => js.Any,
@@ -49,10 +48,8 @@ object XRecordableDispatch {
     __obj.asInstanceOf[XRecordableDispatch]
   }
   
-  @scala.inline
-  implicit class XRecordableDispatchMutableBuilder[Self <: XRecordableDispatch] (val x: Self) extends AnyVal {
+  extension [Self <: XRecordableDispatch](x: Self) {
     
-    @scala.inline
-    def setDispatchAndRecord(value: (URL, SeqEquiv[PropertyValue], XDispatchRecorder) => Unit): Self = StObject.set(x, "dispatchAndRecord", js.Any.fromFunction3(value))
+    inline def setDispatchAndRecord(value: (URL, SeqEquiv[PropertyValue], XDispatchRecorder) => Unit): Self = StObject.set(x, "dispatchAndRecord", js.Any.fromFunction3(value))
   }
 }

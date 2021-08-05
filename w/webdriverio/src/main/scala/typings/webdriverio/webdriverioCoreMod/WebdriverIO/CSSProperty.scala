@@ -15,25 +15,19 @@ trait CSSProperty extends StObject {
 }
 object CSSProperty {
   
-  @scala.inline
-  def apply(property: String, value: js.Any): CSSProperty = {
+  inline def apply(property: String, value: js.Any): CSSProperty = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CSSProperty]
   }
   
-  @scala.inline
-  implicit class CSSPropertyMutableBuilder[Self <: CSSProperty] (val x: Self) extends AnyVal {
+  extension [Self <: CSSProperty](x: Self) {
     
-    @scala.inline
-    def setParsed(value: Alpha): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+    inline def setParsed(value: Alpha): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
+    inline def setParsedUndefined: Self = StObject.set(x, "parsed", js.undefined)
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -17,28 +17,21 @@ trait StartEnvironmentRequest extends StObject {
 }
 object StartEnvironmentRequest {
   
-  @scala.inline
-  def apply(): StartEnvironmentRequest = {
+  inline def apply(): StartEnvironmentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartEnvironmentRequest]
   }
   
-  @scala.inline
-  implicit class StartEnvironmentRequestMutableBuilder[Self <: StartEnvironmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartEnvironmentRequest](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
     
-    @scala.inline
-    def setPublicKeys(value: js.Array[String]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
+    inline def setPublicKeys(value: js.Array[String]): Self = StObject.set(x, "publicKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
+    inline def setPublicKeysUndefined: Self = StObject.set(x, "publicKeys", js.undefined)
     
-    @scala.inline
-    def setPublicKeysVarargs(value: String*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
+    inline def setPublicKeysVarargs(value: String*): Self = StObject.set(x, "publicKeys", js.Array(value :_*))
   }
 }

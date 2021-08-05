@@ -16,22 +16,17 @@ trait SchemaAppContext extends StObject {
 }
 object SchemaAppContext {
   
-  @scala.inline
-  def apply(): SchemaAppContext = {
+  inline def apply(): SchemaAppContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAppContext]
   }
   
-  @scala.inline
-  implicit class SchemaAppContextMutableBuilder[Self <: SchemaAppContext] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAppContext](x: Self) {
     
-    @scala.inline
-    def setAppTypes(value: js.Array[String]): Self = StObject.set(x, "appTypes", value.asInstanceOf[js.Any])
+    inline def setAppTypes(value: js.Array[String]): Self = StObject.set(x, "appTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppTypesUndefined: Self = StObject.set(x, "appTypes", js.undefined)
+    inline def setAppTypesUndefined: Self = StObject.set(x, "appTypes", js.undefined)
     
-    @scala.inline
-    def setAppTypesVarargs(value: String*): Self = StObject.set(x, "appTypes", js.Array(value :_*))
+    inline def setAppTypesVarargs(value: String*): Self = StObject.set(x, "appTypes", js.Array(value :_*))
   }
 }

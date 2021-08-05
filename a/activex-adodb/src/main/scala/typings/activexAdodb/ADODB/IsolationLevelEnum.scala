@@ -21,30 +21,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IsolationLevelEnum extends StObject
 object IsolationLevelEnum {
   
-  @scala.inline
-  def adXactBrowse: `256` = 256.asInstanceOf[`256`]
+  inline def adXactBrowse: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def adXactChaos: `16` = 16.asInstanceOf[`16`]
+  inline def adXactChaos: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def adXactCursorStability: `4096` = 4096.asInstanceOf[`4096`]
+  inline def adXactCursorStability: `4096` = 4096.asInstanceOf[`4096`]
   
-  @scala.inline
-  def adXactIsolated: `1048576` = 1048576.asInstanceOf[`1048576`]
+  inline def adXactIsolated: `1048576` = 1048576.asInstanceOf[`1048576`]
   
-  @scala.inline
-  def adXactReadCommitted: `4096` = 4096.asInstanceOf[`4096`]
+  inline def adXactReadCommitted: `4096` = 4096.asInstanceOf[`4096`]
   
-  @scala.inline
-  def adXactReadUncommitted: `256` = 256.asInstanceOf[`256`]
+  inline def adXactReadUncommitted: `256` = 256.asInstanceOf[`256`]
   
-  @scala.inline
-  def adXactRepeatableRead: `65536` = 65536.asInstanceOf[`65536`]
+  inline def adXactRepeatableRead: `65536` = 65536.asInstanceOf[`65536`]
   
-  @scala.inline
-  def adXactSerializable: `1048576` = 1048576.asInstanceOf[`1048576`]
+  inline def adXactSerializable: `1048576` = 1048576.asInstanceOf[`1048576`]
   
-  @scala.inline
-  def adXactUnspecified: `-1` = -1.asInstanceOf[`-1`]
+  inline def adXactUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }

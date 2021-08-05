@@ -17,19 +17,15 @@ trait SchemaMobileApplicationTargeting extends StObject {
 }
 object SchemaMobileApplicationTargeting {
   
-  @scala.inline
-  def apply(): SchemaMobileApplicationTargeting = {
+  inline def apply(): SchemaMobileApplicationTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMobileApplicationTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaMobileApplicationTargetingMutableBuilder[Self <: SchemaMobileApplicationTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMobileApplicationTargeting](x: Self) {
     
-    @scala.inline
-    def setFirstPartyTargeting(value: SchemaFirstPartyMobileApplicationTargeting): Self = StObject.set(x, "firstPartyTargeting", value.asInstanceOf[js.Any])
+    inline def setFirstPartyTargeting(value: SchemaFirstPartyMobileApplicationTargeting): Self = StObject.set(x, "firstPartyTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstPartyTargetingUndefined: Self = StObject.set(x, "firstPartyTargeting", js.undefined)
+    inline def setFirstPartyTargetingUndefined: Self = StObject.set(x, "firstPartyTargeting", js.undefined)
   }
 }

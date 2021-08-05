@@ -17,22 +17,17 @@ trait SpatialDropout1DLayerConfig
 }
 object SpatialDropout1DLayerConfig {
   
-  @scala.inline
-  def apply(rate: Double): SpatialDropout1DLayerConfig = {
+  inline def apply(rate: Double): SpatialDropout1DLayerConfig = {
     val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialDropout1DLayerConfig]
   }
   
-  @scala.inline
-  implicit class SpatialDropout1DLayerConfigMutableBuilder[Self <: SpatialDropout1DLayerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialDropout1DLayerConfig](x: Self) {
     
-    @scala.inline
-    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait SetActiveReceiptRuleSetRequest extends StObject {
 }
 object SetActiveReceiptRuleSetRequest {
   
-  @scala.inline
-  def apply(): SetActiveReceiptRuleSetRequest = {
+  inline def apply(): SetActiveReceiptRuleSetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetActiveReceiptRuleSetRequest]
   }
   
-  @scala.inline
-  implicit class SetActiveReceiptRuleSetRequestMutableBuilder[Self <: SetActiveReceiptRuleSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetActiveReceiptRuleSetRequest](x: Self) {
     
-    @scala.inline
-    def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
+    inline def setRuleSetName(value: ReceiptRuleSetName): Self = StObject.set(x, "RuleSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleSetNameUndefined: Self = StObject.set(x, "RuleSetName", js.undefined)
+    inline def setRuleSetNameUndefined: Self = StObject.set(x, "RuleSetName", js.undefined)
   }
 }

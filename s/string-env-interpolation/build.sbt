@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "string-env-interpolation"
-version := "1.0.1-521ab1"
+version := "1.0.1-ed4212"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

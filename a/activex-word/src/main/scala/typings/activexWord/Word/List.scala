@@ -71,6 +71,6 @@ trait List extends StObject {
   
   val StyleName: String = js.native
   
-  @JSName("Word.List_typekey")
+  /* private */ @JSName("Word.List_typekey")
   var WordDotList_typekey: List = js.native
 }

@@ -22,29 +22,22 @@ object typesMod {
   }
   object Colors {
     
-    @scala.inline
-    def apply(comment: Close, content: Close, prop: Close, tag: Close, value: Close): Colors = {
+    inline def apply(comment: Close, content: Close, prop: Close, tag: Close, value: Close): Colors = {
       val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Colors]
     }
     
-    @scala.inline
-    implicit class ColorsMutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
+    extension [Self <: Colors](x: Self) {
       
-      @scala.inline
-      def setComment(value: Close): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: Close): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: Close): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Close): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProp(value: Close): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: Close): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: Close): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Close): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Close): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Close): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,8 +67,7 @@ object typesMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callToJSON: Boolean,
       colors: Colors,
       escapeRegex: Boolean,
@@ -92,41 +84,29 @@ object typesMod {
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setCallToJSON(value: Boolean): Self = StObject.set(x, "callToJSON", value.asInstanceOf[js.Any])
+      inline def setCallToJSON(value: Boolean): Self = StObject.set(x, "callToJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeRegex(value: Boolean): Self = StObject.set(x, "escapeRegex", value.asInstanceOf[js.Any])
+      inline def setEscapeRegex(value: Boolean): Self = StObject.set(x, "escapeRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeString(value: Boolean): Self = StObject.set(x, "escapeString", value.asInstanceOf[js.Any])
+      inline def setEscapeString(value: Boolean): Self = StObject.set(x, "escapeString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+      inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintFunctionName(value: Boolean): Self = StObject.set(x, "printFunctionName", value.asInstanceOf[js.Any])
+      inline def setPrintFunctionName(value: Boolean): Self = StObject.set(x, "printFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingInner(value: String): Self = StObject.set(x, "spacingInner", value.asInstanceOf[js.Any])
+      inline def setSpacingInner(value: String): Self = StObject.set(x, "spacingInner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacingOuter(value: String): Self = StObject.set(x, "spacingOuter", value.asInstanceOf[js.Any])
+      inline def setSpacingOuter(value: String): Self = StObject.set(x, "spacingOuter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,8 +122,7 @@ object typesMod {
   }
   object NewPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       serialize: (js.Any, Config, String, Double, Refs, Printer) => String,
       test: /* arg0 */ js.Any => Boolean
     ): NewPlugin = {
@@ -151,14 +130,11 @@ object typesMod {
       __obj.asInstanceOf[NewPlugin]
     }
     
-    @scala.inline
-    implicit class NewPluginMutableBuilder[Self <: NewPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: NewPlugin](x: Self) {
       
-      @scala.inline
-      def setSerialize(value: (js.Any, Config, String, Double, Refs, Printer) => String): Self = StObject.set(x, "serialize", js.Any.fromFunction6(value))
+      inline def setSerialize(value: (js.Any, Config, String, Double, Refs, Printer) => String): Self = StObject.set(x, "serialize", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setTest(value: /* arg0 */ js.Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: /* arg0 */ js.Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }
   }
   
@@ -172,8 +148,7 @@ object typesMod {
   }
   object OldPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       print: (js.Any, Print, Indent, PluginOptions, Colors) => String,
       test: /* arg0 */ js.Any => Boolean
     ): OldPlugin = {
@@ -181,14 +156,11 @@ object typesMod {
       __obj.asInstanceOf[OldPlugin]
     }
     
-    @scala.inline
-    implicit class OldPluginMutableBuilder[Self <: OldPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: OldPlugin](x: Self) {
       
-      @scala.inline
-      def setPrint(value: (js.Any, Print, Indent, PluginOptions, Colors) => String): Self = StObject.set(x, "print", js.Any.fromFunction5(value))
+      inline def setPrint(value: (js.Any, Print, Indent, PluginOptions, Colors) => String): Self = StObject.set(x, "print", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setTest(value: /* arg0 */ js.Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+      inline def setTest(value: /* arg0 */ js.Any => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }
   }
   
@@ -216,8 +188,7 @@ object typesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callToJSON: Boolean,
       escapeRegex: Boolean,
       escapeString: Boolean,
@@ -233,38 +204,27 @@ object typesMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCallToJSON(value: Boolean): Self = StObject.set(x, "callToJSON", value.asInstanceOf[js.Any])
+      inline def setCallToJSON(value: Boolean): Self = StObject.set(x, "callToJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeRegex(value: Boolean): Self = StObject.set(x, "escapeRegex", value.asInstanceOf[js.Any])
+      inline def setEscapeRegex(value: Boolean): Self = StObject.set(x, "escapeRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeString(value: Boolean): Self = StObject.set(x, "escapeString", value.asInstanceOf[js.Any])
+      inline def setEscapeString(value: Boolean): Self = StObject.set(x, "escapeString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+      inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintFunctionName(value: Boolean): Self = StObject.set(x, "printFunctionName", value.asInstanceOf[js.Any])
+      inline def setPrintFunctionName(value: Boolean): Self = StObject.set(x, "printFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,74 +252,52 @@ object typesMod {
   }
   object OptionsReceived {
     
-    @scala.inline
-    def apply(): OptionsReceived = {
+    inline def apply(): OptionsReceived = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsReceived]
     }
     
-    @scala.inline
-    implicit class OptionsReceivedMutableBuilder[Self <: OptionsReceived] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsReceived](x: Self) {
       
-      @scala.inline
-      def setCallToJSON(value: Boolean): Self = StObject.set(x, "callToJSON", value.asInstanceOf[js.Any])
+      inline def setCallToJSON(value: Boolean): Self = StObject.set(x, "callToJSON", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallToJSONUndefined: Self = StObject.set(x, "callToJSON", js.undefined)
+      inline def setCallToJSONUndefined: Self = StObject.set(x, "callToJSON", js.undefined)
       
-      @scala.inline
-      def setEscapeRegex(value: Boolean): Self = StObject.set(x, "escapeRegex", value.asInstanceOf[js.Any])
+      inline def setEscapeRegex(value: Boolean): Self = StObject.set(x, "escapeRegex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeRegexUndefined: Self = StObject.set(x, "escapeRegex", js.undefined)
+      inline def setEscapeRegexUndefined: Self = StObject.set(x, "escapeRegex", js.undefined)
       
-      @scala.inline
-      def setEscapeString(value: Boolean): Self = StObject.set(x, "escapeString", value.asInstanceOf[js.Any])
+      inline def setEscapeString(value: Boolean): Self = StObject.set(x, "escapeString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeStringUndefined: Self = StObject.set(x, "escapeString", js.undefined)
+      inline def setEscapeStringUndefined: Self = StObject.set(x, "escapeString", js.undefined)
       
-      @scala.inline
-      def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+      inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
       
-      @scala.inline
-      def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+      inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+      inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
       
-      @scala.inline
-      def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: Plugins): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPrintFunctionName(value: Boolean): Self = StObject.set(x, "printFunctionName", value.asInstanceOf[js.Any])
+      inline def setPrintFunctionName(value: Boolean): Self = StObject.set(x, "printFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintFunctionNameUndefined: Self = StObject.set(x, "printFunctionName", js.undefined)
+      inline def setPrintFunctionNameUndefined: Self = StObject.set(x, "printFunctionName", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ThemeReceived): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ThemeReceived): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -370,8 +308,7 @@ object typesMod {
   trait Plugin extends StObject
   object Plugin {
     
-    @scala.inline
-    def NewPlugin(
+    inline def NewPlugin(
       serialize: (js.Any, Config, String, Double, Refs, Printer) => String,
       test: /* arg0 */ js.Any => Boolean
     ): typings.prettyFormat.typesMod.NewPlugin = {
@@ -379,8 +316,7 @@ object typesMod {
       __obj.asInstanceOf[typings.prettyFormat.typesMod.NewPlugin]
     }
     
-    @scala.inline
-    def OldPlugin(
+    inline def OldPlugin(
       print: (js.Any, Print, Indent, PluginOptions, Colors) => String,
       test: /* arg0 */ js.Any => Boolean
     ): typings.prettyFormat.typesMod.OldPlugin = {
@@ -399,23 +335,18 @@ object typesMod {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(edgeSpacing: String, min: Boolean, spacing: String): PluginOptions = {
+    inline def apply(edgeSpacing: String, min: Boolean, spacing: String): PluginOptions = {
       val __obj = js.Dynamic.literal(edgeSpacing = edgeSpacing.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], spacing = spacing.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setEdgeSpacing(value: String): Self = StObject.set(x, "edgeSpacing", value.asInstanceOf[js.Any])
+      inline def setEdgeSpacing(value: String): Self = StObject.set(x, "edgeSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacing(value: String): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+      inline def setSpacing(value: String): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     }
   }
   
@@ -454,29 +385,22 @@ object typesMod {
   }
   object Theme {
     
-    @scala.inline
-    def apply(comment: String, content: String, prop: String, tag: String, value: String): Theme = {
+    inline def apply(comment: String, content: String, prop: String, tag: String, value: String): Theme = {
       val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Theme]
     }
     
-    @scala.inline
-    implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
+    extension [Self <: Theme](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -494,44 +418,32 @@ object typesMod {
   }
   object ThemeReceived {
     
-    @scala.inline
-    def apply(): ThemeReceived = {
+    inline def apply(): ThemeReceived = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThemeReceived]
     }
     
-    @scala.inline
-    implicit class ThemeReceivedMutableBuilder[Self <: ThemeReceived] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeReceived](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
+      inline def setPropUndefined: Self = StObject.set(x, "prop", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

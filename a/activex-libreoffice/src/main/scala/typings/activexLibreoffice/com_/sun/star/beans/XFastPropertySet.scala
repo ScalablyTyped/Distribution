@@ -37,8 +37,7 @@ trait XFastPropertySet
 }
 object XFastPropertySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getFastPropertyValue: Double => js.Any,
     queryInterface: `type` => js.Any,
@@ -49,13 +48,10 @@ object XFastPropertySet {
     __obj.asInstanceOf[XFastPropertySet]
   }
   
-  @scala.inline
-  implicit class XFastPropertySetMutableBuilder[Self <: XFastPropertySet] (val x: Self) extends AnyVal {
+  extension [Self <: XFastPropertySet](x: Self) {
     
-    @scala.inline
-    def setGetFastPropertyValue(value: Double => js.Any): Self = StObject.set(x, "getFastPropertyValue", js.Any.fromFunction1(value))
+    inline def setGetFastPropertyValue(value: Double => js.Any): Self = StObject.set(x, "getFastPropertyValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFastPropertyValue(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setFastPropertyValue", js.Any.fromFunction2(value))
+    inline def setSetFastPropertyValue(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setFastPropertyValue", js.Any.fromFunction2(value))
   }
 }

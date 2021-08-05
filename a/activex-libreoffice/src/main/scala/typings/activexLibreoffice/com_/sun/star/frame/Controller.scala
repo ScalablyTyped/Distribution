@@ -35,8 +35,7 @@ trait Controller
      with XTransferableSupplier
 object Controller {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     Model: XModel,
     Selection: js.Any,

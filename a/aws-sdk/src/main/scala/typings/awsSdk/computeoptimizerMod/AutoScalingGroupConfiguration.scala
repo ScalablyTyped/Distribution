@@ -28,37 +28,27 @@ trait AutoScalingGroupConfiguration extends StObject {
 }
 object AutoScalingGroupConfiguration {
   
-  @scala.inline
-  def apply(): AutoScalingGroupConfiguration = {
+  inline def apply(): AutoScalingGroupConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoScalingGroupConfiguration]
   }
   
-  @scala.inline
-  implicit class AutoScalingGroupConfigurationMutableBuilder[Self <: AutoScalingGroupConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScalingGroupConfiguration](x: Self) {
     
-    @scala.inline
-    def setDesiredCapacity(value: DesiredCapacity): Self = StObject.set(x, "desiredCapacity", value.asInstanceOf[js.Any])
+    inline def setDesiredCapacity(value: DesiredCapacity): Self = StObject.set(x, "desiredCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredCapacityUndefined: Self = StObject.set(x, "desiredCapacity", js.undefined)
+    inline def setDesiredCapacityUndefined: Self = StObject.set(x, "desiredCapacity", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: MaxSize): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: MaxSize): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setMinSize(value: MinSize): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: MinSize): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
   }
 }

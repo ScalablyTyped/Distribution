@@ -16,26 +16,20 @@ object anon {
   }
   object BaseURL {
     
-    @scala.inline
-    def apply(): BaseURL = {
+    inline def apply(): BaseURL = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseURL]
     }
     
-    @scala.inline
-    implicit class BaseURLMutableBuilder[Self <: BaseURL] (val x: Self) extends AnyVal {
+    extension [Self <: BaseURL](x: Self) {
       
-      @scala.inline
-      def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+      inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+      inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
       
-      @scala.inline
-      def setEncodingOverride(value: String): Self = StObject.set(x, "encodingOverride", value.asInstanceOf[js.Any])
+      inline def setEncodingOverride(value: String): Self = StObject.set(x, "encodingOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingOverrideUndefined: Self = StObject.set(x, "encodingOverride", js.undefined)
+      inline def setEncodingOverrideUndefined: Self = StObject.set(x, "encodingOverride", js.undefined)
     }
   }
   
@@ -45,20 +39,16 @@ object anon {
   }
   object DoNotStripQMark {
     
-    @scala.inline
-    def apply(): DoNotStripQMark = {
+    inline def apply(): DoNotStripQMark = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DoNotStripQMark]
     }
     
-    @scala.inline
-    implicit class DoNotStripQMarkMutableBuilder[Self <: DoNotStripQMark] (val x: Self) extends AnyVal {
+    extension [Self <: DoNotStripQMark](x: Self) {
       
-      @scala.inline
-      def setDoNotStripQMark(value: Boolean): Self = StObject.set(x, "doNotStripQMark", value.asInstanceOf[js.Any])
+      inline def setDoNotStripQMark(value: Boolean): Self = StObject.set(x, "doNotStripQMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoNotStripQMarkUndefined: Self = StObject.set(x, "doNotStripQMark", js.undefined)
+      inline def setDoNotStripQMarkUndefined: Self = StObject.set(x, "doNotStripQMark", js.undefined)
     }
   }
   
@@ -74,38 +64,28 @@ object anon {
   }
   object EncodingOverride {
     
-    @scala.inline
-    def apply(): EncodingOverride = {
+    inline def apply(): EncodingOverride = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncodingOverride]
     }
     
-    @scala.inline
-    implicit class EncodingOverrideMutableBuilder[Self <: EncodingOverride] (val x: Self) extends AnyVal {
+    extension [Self <: EncodingOverride](x: Self) {
       
-      @scala.inline
-      def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+      inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+      inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
       
-      @scala.inline
-      def setEncodingOverride(value: String): Self = StObject.set(x, "encodingOverride", value.asInstanceOf[js.Any])
+      inline def setEncodingOverride(value: String): Self = StObject.set(x, "encodingOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingOverrideUndefined: Self = StObject.set(x, "encodingOverride", js.undefined)
+      inline def setEncodingOverrideUndefined: Self = StObject.set(x, "encodingOverride", js.undefined)
       
-      @scala.inline
-      def setStateOverride(value: StateOverride): Self = StObject.set(x, "stateOverride", value.asInstanceOf[js.Any])
+      inline def setStateOverride(value: StateOverride): Self = StObject.set(x, "stateOverride", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateOverrideUndefined: Self = StObject.set(x, "stateOverride", js.undefined)
+      inline def setStateOverrideUndefined: Self = StObject.set(x, "stateOverride", js.undefined)
       
-      @scala.inline
-      def setUrl(value: URLRecord): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: URLRecord): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

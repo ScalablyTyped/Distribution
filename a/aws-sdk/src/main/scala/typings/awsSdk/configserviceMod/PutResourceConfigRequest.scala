@@ -38,8 +38,7 @@ trait PutResourceConfigRequest extends StObject {
 }
 object PutResourceConfigRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Configuration: Configuration,
     ResourceId: ResourceId,
     ResourceType: ResourceTypeString,
@@ -49,31 +48,22 @@ object PutResourceConfigRequest {
     __obj.asInstanceOf[PutResourceConfigRequest]
   }
   
-  @scala.inline
-  implicit class PutResourceConfigRequestMutableBuilder[Self <: PutResourceConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutResourceConfigRequest](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: Configuration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: Configuration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceTypeString): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceTypeString): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionId(value: SchemaVersionId): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
+    inline def setSchemaVersionId(value: SchemaVersionId): Self = StObject.set(x, "SchemaVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

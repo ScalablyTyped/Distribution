@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait NavigationControl extends StObject {
   
-  @JSName("Access.NavigationControl_typekey")
+  /* private */ @JSName("Access.NavigationControl_typekey")
   var AccessDotNavigationControl_typekey: NavigationControl = js.native
   
   var AllowedText: Double = js.native

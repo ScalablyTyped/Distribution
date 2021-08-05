@@ -30,31 +30,23 @@ trait ParamsResourceAspsGet
 }
 object ParamsResourceAspsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceAspsGet = {
+  inline def apply(): ParamsResourceAspsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAspsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAspsGetMutableBuilder[Self <: ParamsResourceAspsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAspsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCodeId(value: Double): Self = StObject.set(x, "codeId", value.asInstanceOf[js.Any])
+    inline def setCodeId(value: Double): Self = StObject.set(x, "codeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeIdUndefined: Self = StObject.set(x, "codeId", js.undefined)
+    inline def setCodeIdUndefined: Self = StObject.set(x, "codeId", js.undefined)
     
-    @scala.inline
-    def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
+    inline def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
+    inline def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
   }
 }

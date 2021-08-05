@@ -23,8 +23,7 @@ trait CopyAssets[ProjectConfig, DependencyConfig] extends StObject {
 }
 object CopyAssets {
   
-  @scala.inline
-  def apply[ProjectConfig, DependencyConfig](
+  inline def apply[ProjectConfig, DependencyConfig](
     copyAssets: (js.Array[String], ProjectConfig) => Unit,
     isInstalled: (ProjectConfig, String, DependencyConfig) => Boolean,
     register: (String, DependencyConfig, js.Object, ProjectConfig) => Unit,
@@ -35,22 +34,16 @@ object CopyAssets {
     __obj.asInstanceOf[CopyAssets[ProjectConfig, DependencyConfig]]
   }
   
-  @scala.inline
-  implicit class CopyAssetsMutableBuilder[Self <: CopyAssets[?, ?], ProjectConfig, DependencyConfig] (val x: Self & (CopyAssets[ProjectConfig, DependencyConfig])) extends AnyVal {
+  extension [Self <: CopyAssets[?, ?], ProjectConfig, DependencyConfig](x: Self & (CopyAssets[ProjectConfig, DependencyConfig])) {
     
-    @scala.inline
-    def setCopyAssets(value: (js.Array[String], ProjectConfig) => Unit): Self = StObject.set(x, "copyAssets", js.Any.fromFunction2(value))
+    inline def setCopyAssets(value: (js.Array[String], ProjectConfig) => Unit): Self = StObject.set(x, "copyAssets", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsInstalled(value: (ProjectConfig, String, DependencyConfig) => Boolean): Self = StObject.set(x, "isInstalled", js.Any.fromFunction3(value))
+    inline def setIsInstalled(value: (ProjectConfig, String, DependencyConfig) => Boolean): Self = StObject.set(x, "isInstalled", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRegister(value: (String, DependencyConfig, js.Object, ProjectConfig) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction4(value))
+    inline def setRegister(value: (String, DependencyConfig, js.Object, ProjectConfig) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setUnlinkAssets(value: (js.Array[String], ProjectConfig) => Unit): Self = StObject.set(x, "unlinkAssets", js.Any.fromFunction2(value))
+    inline def setUnlinkAssets(value: (js.Array[String], ProjectConfig) => Unit): Self = StObject.set(x, "unlinkAssets", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnregister(value: (String, DependencyConfig, ProjectConfig, js.Array[DependencyConfig]) => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction4(value))
+    inline def setUnregister(value: (String, DependencyConfig, ProjectConfig, js.Array[DependencyConfig]) => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction4(value))
   }
 }

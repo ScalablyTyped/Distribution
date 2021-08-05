@@ -29,8 +29,7 @@ trait Language extends StObject {
 }
 object Language {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     getExtensionSubtags: String => IVectorView[String],
     languageTag: String,
@@ -41,22 +40,16 @@ object Language {
     __obj.asInstanceOf[Language]
   }
   
-  @scala.inline
-  implicit class LanguageMutableBuilder[Self <: Language] (val x: Self) extends AnyVal {
+  extension [Self <: Language](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExtensionSubtags(value: String => IVectorView[String]): Self = StObject.set(x, "getExtensionSubtags", js.Any.fromFunction1(value))
+    inline def setGetExtensionSubtags(value: String => IVectorView[String]): Self = StObject.set(x, "getExtensionSubtags", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLanguageTag(value: String): Self = StObject.set(x, "languageTag", value.asInstanceOf[js.Any])
+    inline def setLanguageTag(value: String): Self = StObject.set(x, "languageTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeName(value: String): Self = StObject.set(x, "nativeName", value.asInstanceOf[js.Any])
+    inline def setNativeName(value: String): Self = StObject.set(x, "nativeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
   }
 }

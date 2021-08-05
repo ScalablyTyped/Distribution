@@ -32,64 +32,45 @@ trait WebPropertySummary extends StObject {
 }
 object WebPropertySummary {
   
-  @scala.inline
-  def apply(): WebPropertySummary = {
+  inline def apply(): WebPropertySummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebPropertySummary]
   }
   
-  @scala.inline
-  implicit class WebPropertySummaryMutableBuilder[Self <: WebPropertySummary] (val x: Self) extends AnyVal {
+  extension [Self <: WebPropertySummary](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
+    inline def setInternalWebPropertyId(value: String): Self = StObject.set(x, "internalWebPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
+    inline def setInternalWebPropertyIdUndefined: Self = StObject.set(x, "internalWebPropertyId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProfiles(value: js.Array[ProfileSummary]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
+    inline def setProfiles(value: js.Array[ProfileSummary]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
+    inline def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
     
-    @scala.inline
-    def setProfilesVarargs(value: ProfileSummary*): Self = StObject.set(x, "profiles", js.Array(value :_*))
+    inline def setProfilesVarargs(value: ProfileSummary*): Self = StObject.set(x, "profiles", js.Array(value :_*))
     
-    @scala.inline
-    def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
+    inline def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarredUndefined: Self = StObject.set(x, "starred", js.undefined)
+    inline def setStarredUndefined: Self = StObject.set(x, "starred", js.undefined)
     
-    @scala.inline
-    def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
+    inline def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
+    inline def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
   }
 }

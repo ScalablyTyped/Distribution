@@ -23,25 +23,19 @@ trait UpdateBillingGroupRequest extends StObject {
 }
 object UpdateBillingGroupRequest {
   
-  @scala.inline
-  def apply(billingGroupName: BillingGroupName, billingGroupProperties: BillingGroupProperties): UpdateBillingGroupRequest = {
+  inline def apply(billingGroupName: BillingGroupName, billingGroupProperties: BillingGroupProperties): UpdateBillingGroupRequest = {
     val __obj = js.Dynamic.literal(billingGroupName = billingGroupName.asInstanceOf[js.Any], billingGroupProperties = billingGroupProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBillingGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateBillingGroupRequestMutableBuilder[Self <: UpdateBillingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBillingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
+    inline def setBillingGroupName(value: BillingGroupName): Self = StObject.set(x, "billingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingGroupProperties(value: BillingGroupProperties): Self = StObject.set(x, "billingGroupProperties", value.asInstanceOf[js.Any])
+    inline def setBillingGroupProperties(value: BillingGroupProperties): Self = StObject.set(x, "billingGroupProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
+    inline def setExpectedVersion(value: OptionalVersion): Self = StObject.set(x, "expectedVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
+    inline def setExpectedVersionUndefined: Self = StObject.set(x, "expectedVersion", js.undefined)
   }
 }

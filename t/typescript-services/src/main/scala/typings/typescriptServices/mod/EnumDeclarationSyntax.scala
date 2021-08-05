@@ -99,8 +99,7 @@ object EnumDeclarationSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     enumKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
     openBraceToken: ISyntaxToken,
@@ -108,6 +107,5 @@ object EnumDeclarationSyntax {
   ): typings.typescriptServices.TypeScript.EnumDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(enumKeyword.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], openBraceToken.asInstanceOf[js.Any], closeBraceToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.EnumDeclarationSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.EnumDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.EnumDeclarationSyntax]
+  inline def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.EnumDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.EnumDeclarationSyntax]
 }

@@ -18,8 +18,7 @@ trait PageRequestFailedEventArgs
 }
 object PageRequestFailedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Empty: EventArgs,
     get_errorMessage: () => String,
     get_executor: () => WebRequestExecutor,
@@ -29,16 +28,12 @@ object PageRequestFailedEventArgs {
     __obj.asInstanceOf[PageRequestFailedEventArgs]
   }
   
-  @scala.inline
-  implicit class PageRequestFailedEventArgsMutableBuilder[Self <: PageRequestFailedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PageRequestFailedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
+    inline def setGet_errorMessage(value: () => String): Self = StObject.set(x, "get_errorMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_executor(value: () => WebRequestExecutor): Self = StObject.set(x, "get_executor", js.Any.fromFunction0(value))
+    inline def setGet_executor(value: () => WebRequestExecutor): Self = StObject.set(x, "get_executor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_isErrorPage(value: () => Boolean): Self = StObject.set(x, "get_isErrorPage", js.Any.fromFunction0(value))
+    inline def setGet_isErrorPage(value: () => Boolean): Self = StObject.set(x, "get_isErrorPage", js.Any.fromFunction0(value))
   }
 }

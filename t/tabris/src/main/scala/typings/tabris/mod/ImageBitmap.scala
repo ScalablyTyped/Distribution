@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "ImageBitmap")
 @js.native
-class ImageBitmap protected ()
+/* private */ class ImageBitmap ()
   extends StObject
      with _ImageValue {
   
@@ -42,10 +42,8 @@ object ImageBitmap {
     * @param imageSource The data source to create an ImageBitmap instance from.
     * @param options Options for resizing the image.
     */
-  @scala.inline
-  def createImageBitmap(imageSource: Blob): js.Promise[ImageBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: Blob, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: Blob): js.Promise[ImageBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: Blob, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
   /**
     * Creates a promise that resolves to a new instance of ImageBitmap. Also available in global scope.
     * @param imageSource The data source to create an ImageBitmap instance from.
@@ -55,18 +53,12 @@ object ImageBitmap {
     * @param sh The height of the rectangle from which the ImageBitmap will be extracted.
     * @param options Options for resizing the image.
     */
-  @scala.inline
-  def createImageBitmap(imageSource: Blob, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: Blob, sx: Double, sy: Double, sw: Double, sh: Double, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: typings.tabris.ImageData): js.Promise[ImageBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: typings.tabris.ImageData, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: typings.tabris.ImageData, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(
+  inline def createImageBitmap(imageSource: Blob, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: Blob, sx: Double, sy: Double, sw: Double, sh: Double, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: typings.tabris.ImageData): js.Promise[ImageBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: typings.tabris.ImageData, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: typings.tabris.ImageData, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(
     imageSource: typings.tabris.ImageData,
     sx: Double,
     sy: Double,
@@ -74,14 +66,10 @@ object ImageBitmap {
     sh: Double,
     options: ResizeHeight
   ): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: typings.tabris.mod.Canvas): js.Promise[ImageBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: typings.tabris.mod.Canvas, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: typings.tabris.mod.Canvas, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(
+  inline def createImageBitmap(imageSource: typings.tabris.mod.Canvas): js.Promise[ImageBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: typings.tabris.mod.Canvas, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: typings.tabris.mod.Canvas, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(
     imageSource: typings.tabris.mod.Canvas,
     sx: Double,
     sy: Double,
@@ -89,12 +77,8 @@ object ImageBitmap {
     sh: Double,
     options: ResizeHeight
   ): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: ImageBitmap): js.Promise[ImageBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: ImageBitmap, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: ImageBitmap, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
-  @scala.inline
-  def createImageBitmap(imageSource: ImageBitmap, sx: Double, sy: Double, sw: Double, sh: Double, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: ImageBitmap): js.Promise[ImageBitmap] = ^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: ImageBitmap, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: ImageBitmap, sx: Double, sy: Double, sw: Double, sh: Double): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
+  inline def createImageBitmap(imageSource: ImageBitmap, sx: Double, sy: Double, sw: Double, sh: Double, options: ResizeHeight): js.Promise[ImageBitmap] = (^.asInstanceOf[js.Dynamic].applyDynamic("createImageBitmap")(imageSource.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageBitmap]]
 }

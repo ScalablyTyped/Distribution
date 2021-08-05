@@ -28,43 +28,31 @@ trait DescribePublicIpv4PoolsRequest extends StObject {
 }
 object DescribePublicIpv4PoolsRequest {
   
-  @scala.inline
-  def apply(): DescribePublicIpv4PoolsRequest = {
+  inline def apply(): DescribePublicIpv4PoolsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePublicIpv4PoolsRequest]
   }
   
-  @scala.inline
-  implicit class DescribePublicIpv4PoolsRequestMutableBuilder[Self <: DescribePublicIpv4PoolsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePublicIpv4PoolsRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: PoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPoolIds(value: PublicIpv4PoolIdStringList): Self = StObject.set(x, "PoolIds", value.asInstanceOf[js.Any])
+    inline def setPoolIds(value: PublicIpv4PoolIdStringList): Self = StObject.set(x, "PoolIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolIdsUndefined: Self = StObject.set(x, "PoolIds", js.undefined)
+    inline def setPoolIdsUndefined: Self = StObject.set(x, "PoolIds", js.undefined)
     
-    @scala.inline
-    def setPoolIdsVarargs(value: Ipv4PoolEc2Id*): Self = StObject.set(x, "PoolIds", js.Array(value :_*))
+    inline def setPoolIdsVarargs(value: Ipv4PoolEc2Id*): Self = StObject.set(x, "PoolIds", js.Array(value :_*))
   }
 }

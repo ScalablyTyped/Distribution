@@ -13,19 +13,15 @@ trait MetadataRemovedEventUIParam extends StObject {
 }
 object MetadataRemovedEventUIParam {
   
-  @scala.inline
-  def apply(): MetadataRemovedEventUIParam = {
+  inline def apply(): MetadataRemovedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetadataRemovedEventUIParam]
   }
   
-  @scala.inline
-  implicit class MetadataRemovedEventUIParamMutableBuilder[Self <: MetadataRemovedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: MetadataRemovedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

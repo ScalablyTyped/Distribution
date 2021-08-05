@@ -87,55 +87,39 @@ trait LatLongFieldDef[F /* <: Field */] extends StObject {
 }
 object LatLongFieldDef {
   
-  @scala.inline
-  def apply[F /* <: Field */](): LatLongFieldDef[F] = {
+  inline def apply[F /* <: Field */](): LatLongFieldDef[F] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LatLongFieldDef[F]]
   }
   
-  @scala.inline
-  implicit class LatLongFieldDefMutableBuilder[Self <: LatLongFieldDef[?], F /* <: Field */] (val x: Self & LatLongFieldDef[F]) extends AnyVal {
+  extension [Self <: LatLongFieldDef[?], F /* <: Field */](x: Self & LatLongFieldDef[F]) {
     
-    @scala.inline
-    def setAggregate(value: Aggregate | HiddenCompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: Aggregate | HiddenCompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
-    @scala.inline
-    def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
+    inline def setBand(value: Double): Self = StObject.set(x, "band", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
+    inline def setBandUndefined: Self = StObject.set(x, "band", js.undefined)
     
-    @scala.inline
-    def setField(value: F): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: F): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setTimeUnit(value: TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+    inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
     
-    @scala.inline
-    def setTitle(value: Text | SignalRef): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: Text | SignalRef): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleNull: Self = StObject.set(x, "title", null)
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
+    inline def setTitleVarargs(value: String*): Self = StObject.set(x, "title", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: quantitative): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: quantitative): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

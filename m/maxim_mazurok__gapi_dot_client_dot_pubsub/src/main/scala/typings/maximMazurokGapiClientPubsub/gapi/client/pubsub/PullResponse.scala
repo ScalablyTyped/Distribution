@@ -14,22 +14,17 @@ trait PullResponse extends StObject {
 }
 object PullResponse {
   
-  @scala.inline
-  def apply(): PullResponse = {
+  inline def apply(): PullResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PullResponse]
   }
   
-  @scala.inline
-  implicit class PullResponseMutableBuilder[Self <: PullResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PullResponse](x: Self) {
     
-    @scala.inline
-    def setReceivedMessages(value: js.Array[ReceivedMessage]): Self = StObject.set(x, "receivedMessages", value.asInstanceOf[js.Any])
+    inline def setReceivedMessages(value: js.Array[ReceivedMessage]): Self = StObject.set(x, "receivedMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedMessagesUndefined: Self = StObject.set(x, "receivedMessages", js.undefined)
+    inline def setReceivedMessagesUndefined: Self = StObject.set(x, "receivedMessages", js.undefined)
     
-    @scala.inline
-    def setReceivedMessagesVarargs(value: ReceivedMessage*): Self = StObject.set(x, "receivedMessages", js.Array(value :_*))
+    inline def setReceivedMessagesVarargs(value: ReceivedMessage*): Self = StObject.set(x, "receivedMessages", js.Array(value :_*))
   }
 }

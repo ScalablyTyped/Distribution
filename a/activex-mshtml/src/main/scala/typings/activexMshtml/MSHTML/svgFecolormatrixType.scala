@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait svgFecolormatrixType extends StObject
 object svgFecolormatrixType {
   
-  @scala.inline
-  def SVG_FECOLORMATRIX_TYPE_HUEROTATE: `3` = 3.asInstanceOf[`3`]
+  inline def SVG_FECOLORMATRIX_TYPE_HUEROTATE: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA: `4` = 4.asInstanceOf[`4`]
+  inline def SVG_FECOLORMATRIX_TYPE_LUMINANCETOALPHA: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def SVG_FECOLORMATRIX_TYPE_MATRIX: `1` = 1.asInstanceOf[`1`]
+  inline def SVG_FECOLORMATRIX_TYPE_MATRIX: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def SVG_FECOLORMATRIX_TYPE_SATURATE: `2` = 2.asInstanceOf[`2`]
+  inline def SVG_FECOLORMATRIX_TYPE_SATURATE: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SVG_FECOLORMATRIX_TYPE_UNKNOWN: `0` = 0.asInstanceOf[`0`]
+  inline def SVG_FECOLORMATRIX_TYPE_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def svgFecolormatrixType_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def svgFecolormatrixType_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

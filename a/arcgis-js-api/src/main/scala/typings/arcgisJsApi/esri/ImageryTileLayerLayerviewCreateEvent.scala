@@ -12,19 +12,15 @@ trait ImageryTileLayerLayerviewCreateEvent extends StObject {
 }
 object ImageryTileLayerLayerviewCreateEvent {
   
-  @scala.inline
-  def apply(layerView: LayerView, view: View): ImageryTileLayerLayerviewCreateEvent = {
+  inline def apply(layerView: LayerView, view: View): ImageryTileLayerLayerviewCreateEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageryTileLayerLayerviewCreateEvent]
   }
   
-  @scala.inline
-  implicit class ImageryTileLayerLayerviewCreateEventMutableBuilder[Self <: ImageryTileLayerLayerviewCreateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ImageryTileLayerLayerviewCreateEvent](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

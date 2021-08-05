@@ -13,18 +13,13 @@ object codecsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseCfb(file: CFBContainer): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_cfb")(file.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
+  inline def parseCfb(file: CFBContainer): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_cfb")(file.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
   
-  @scala.inline
-  def parseZip(file: CFBContainer): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_zip")(file.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
+  inline def parseZip(file: CFBContainer): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_zip")(file.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
   
-  @scala.inline
-  def read(data: Buffer): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
+  inline def read(data: Buffer): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(data.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
   
-  @scala.inline
-  def readFile(path: String): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
+  inline def readFile(path: String): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
   
-  @scala.inline
-  def readStr(data: String): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("read_str")(data.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
+  inline def readStr(data: String): WJSDoc = ^.asInstanceOf[js.Dynamic].applyDynamic("read_str")(data.asInstanceOf[js.Any]).asInstanceOf[WJSDoc]
 }

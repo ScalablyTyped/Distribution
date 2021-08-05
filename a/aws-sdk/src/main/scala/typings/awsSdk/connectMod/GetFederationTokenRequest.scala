@@ -13,16 +13,13 @@ trait GetFederationTokenRequest extends StObject {
 }
 object GetFederationTokenRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId): GetFederationTokenRequest = {
+  inline def apply(InstanceId: InstanceId): GetFederationTokenRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFederationTokenRequest]
   }
   
-  @scala.inline
-  implicit class GetFederationTokenRequestMutableBuilder[Self <: GetFederationTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFederationTokenRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

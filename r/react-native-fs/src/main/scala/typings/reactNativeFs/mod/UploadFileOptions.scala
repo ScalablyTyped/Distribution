@@ -36,70 +36,49 @@ trait UploadFileOptions extends StObject {
 }
 object UploadFileOptions {
   
-  @scala.inline
-  def apply(files: js.Array[UploadFileItem], toUrl: String): UploadFileOptions = {
+  inline def apply(files: js.Array[UploadFileItem], toUrl: String): UploadFileOptions = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], toUrl = toUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadFileOptions]
   }
   
-  @scala.inline
-  implicit class UploadFileOptionsMutableBuilder[Self <: UploadFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UploadFileOptions](x: Self) {
     
-    @scala.inline
-    def setBegin(value: /* res */ UploadBeginCallbackResult => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
+    inline def setBegin(value: /* res */ UploadBeginCallbackResult => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginCallback(value: /* res */ UploadBeginCallbackResult => Unit): Self = StObject.set(x, "beginCallback", js.Any.fromFunction1(value))
+    inline def setBeginCallback(value: /* res */ UploadBeginCallbackResult => Unit): Self = StObject.set(x, "beginCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginCallbackUndefined: Self = StObject.set(x, "beginCallback", js.undefined)
+    inline def setBeginCallbackUndefined: Self = StObject.set(x, "beginCallback", js.undefined)
     
-    @scala.inline
-    def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+    inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
     
-    @scala.inline
-    def setBinaryStreamOnly(value: Boolean): Self = StObject.set(x, "binaryStreamOnly", value.asInstanceOf[js.Any])
+    inline def setBinaryStreamOnly(value: Boolean): Self = StObject.set(x, "binaryStreamOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryStreamOnlyUndefined: Self = StObject.set(x, "binaryStreamOnly", js.undefined)
+    inline def setBinaryStreamOnlyUndefined: Self = StObject.set(x, "binaryStreamOnly", js.undefined)
     
-    @scala.inline
-    def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFiles(value: js.Array[UploadFileItem]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[UploadFileItem]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: UploadFileItem*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: UploadFileItem*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setProgress(value: /* res */ UploadProgressCallbackResult => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
+    inline def setProgress(value: /* res */ UploadProgressCallbackResult => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProgressCallback(value: /* res */ UploadProgressCallbackResult => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction1(value))
+    inline def setProgressCallback(value: /* res */ UploadProgressCallbackResult => Unit): Self = StObject.set(x, "progressCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
+    inline def setProgressCallbackUndefined: Self = StObject.set(x, "progressCallback", js.undefined)
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setToUrl(value: String): Self = StObject.set(x, "toUrl", value.asInstanceOf[js.Any])
+    inline def setToUrl(value: String): Self = StObject.set(x, "toUrl", value.asInstanceOf[js.Any])
   }
 }

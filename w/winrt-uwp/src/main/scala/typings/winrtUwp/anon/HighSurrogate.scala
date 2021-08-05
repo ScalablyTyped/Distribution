@@ -12,19 +12,15 @@ trait HighSurrogate extends StObject {
 }
 object HighSurrogate {
   
-  @scala.inline
-  def apply(highSurrogate: String, lowSurrogate: String): HighSurrogate = {
+  inline def apply(highSurrogate: String, lowSurrogate: String): HighSurrogate = {
     val __obj = js.Dynamic.literal(highSurrogate = highSurrogate.asInstanceOf[js.Any], lowSurrogate = lowSurrogate.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighSurrogate]
   }
   
-  @scala.inline
-  implicit class HighSurrogateMutableBuilder[Self <: HighSurrogate] (val x: Self) extends AnyVal {
+  extension [Self <: HighSurrogate](x: Self) {
     
-    @scala.inline
-    def setHighSurrogate(value: String): Self = StObject.set(x, "highSurrogate", value.asInstanceOf[js.Any])
+    inline def setHighSurrogate(value: String): Self = StObject.set(x, "highSurrogate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowSurrogate(value: String): Self = StObject.set(x, "lowSurrogate", value.asInstanceOf[js.Any])
+    inline def setLowSurrogate(value: String): Self = StObject.set(x, "lowSurrogate", value.asInstanceOf[js.Any])
   }
 }

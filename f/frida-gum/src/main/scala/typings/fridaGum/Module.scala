@@ -68,8 +68,7 @@ trait Module extends StObject {
 }
 object Module {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     base: NativePointer,
     enumerateExports: () => js.Array[ModuleExportDetails],
     enumerateImports: () => js.Array[ModuleImportDetails],
@@ -85,37 +84,26 @@ object Module {
     __obj.asInstanceOf[Module]
   }
   
-  @scala.inline
-  implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+  extension [Self <: Module](x: Self) {
     
-    @scala.inline
-    def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumerateExports(value: () => js.Array[ModuleExportDetails]): Self = StObject.set(x, "enumerateExports", js.Any.fromFunction0(value))
+    inline def setEnumerateExports(value: () => js.Array[ModuleExportDetails]): Self = StObject.set(x, "enumerateExports", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnumerateImports(value: () => js.Array[ModuleImportDetails]): Self = StObject.set(x, "enumerateImports", js.Any.fromFunction0(value))
+    inline def setEnumerateImports(value: () => js.Array[ModuleImportDetails]): Self = StObject.set(x, "enumerateImports", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnumerateRanges(value: PageProtection => js.Array[RangeDetails]): Self = StObject.set(x, "enumerateRanges", js.Any.fromFunction1(value))
+    inline def setEnumerateRanges(value: PageProtection => js.Array[RangeDetails]): Self = StObject.set(x, "enumerateRanges", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnumerateSymbols(value: () => js.Array[ModuleSymbolDetails]): Self = StObject.set(x, "enumerateSymbols", js.Any.fromFunction0(value))
+    inline def setEnumerateSymbols(value: () => js.Array[ModuleSymbolDetails]): Self = StObject.set(x, "enumerateSymbols", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindExportByName(value: String => NativePointer | Null): Self = StObject.set(x, "findExportByName", js.Any.fromFunction1(value))
+    inline def setFindExportByName(value: String => NativePointer | Null): Self = StObject.set(x, "findExportByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetExportByName(value: String => NativePointer): Self = StObject.set(x, "getExportByName", js.Any.fromFunction1(value))
+    inline def setGetExportByName(value: String => NativePointer): Self = StObject.set(x, "getExportByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

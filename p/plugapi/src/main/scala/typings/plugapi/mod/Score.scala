@@ -18,28 +18,21 @@ trait Score extends StObject {
 }
 object Score {
   
-  @scala.inline
-  def apply(grabs: Double, listeners: Double, negative: Double, positive: Double, skipped: Double): Score = {
+  inline def apply(grabs: Double, listeners: Double, negative: Double, positive: Double, skipped: Double): Score = {
     val __obj = js.Dynamic.literal(grabs = grabs.asInstanceOf[js.Any], listeners = listeners.asInstanceOf[js.Any], negative = negative.asInstanceOf[js.Any], positive = positive.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any])
     __obj.asInstanceOf[Score]
   }
   
-  @scala.inline
-  implicit class ScoreMutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
+  extension [Self <: Score](x: Self) {
     
-    @scala.inline
-    def setGrabs(value: Double): Self = StObject.set(x, "grabs", value.asInstanceOf[js.Any])
+    inline def setGrabs(value: Double): Self = StObject.set(x, "grabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListeners(value: Double): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: Double): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegative(value: Double): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+    inline def setNegative(value: Double): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositive(value: Double): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
+    inline def setPositive(value: Double): Self = StObject.set(x, "positive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipped(value: Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
+    inline def setSkipped(value: Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
   }
 }

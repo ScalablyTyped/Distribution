@@ -9,8 +9,7 @@ trait IGroupRenderProps
      with typings.officeUiFabricReact.groupedListTypesMod.IGroupRenderProps
 object IGroupRenderProps {
   
-  @scala.inline
-  def apply(): IGroupRenderProps = {
+  inline def apply(): IGroupRenderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGroupRenderProps]
   }

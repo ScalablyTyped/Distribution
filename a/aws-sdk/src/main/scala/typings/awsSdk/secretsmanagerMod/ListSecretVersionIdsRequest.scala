@@ -28,34 +28,25 @@ trait ListSecretVersionIdsRequest extends StObject {
 }
 object ListSecretVersionIdsRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): ListSecretVersionIdsRequest = {
+  inline def apply(SecretId: SecretIdType): ListSecretVersionIdsRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSecretVersionIdsRequest]
   }
   
-  @scala.inline
-  implicit class ListSecretVersionIdsRequestMutableBuilder[Self <: ListSecretVersionIdsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSecretVersionIdsRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeDeprecated(value: BooleanType): Self = StObject.set(x, "IncludeDeprecated", value.asInstanceOf[js.Any])
+    inline def setIncludeDeprecated(value: BooleanType): Self = StObject.set(x, "IncludeDeprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDeprecatedUndefined: Self = StObject.set(x, "IncludeDeprecated", js.undefined)
+    inline def setIncludeDeprecatedUndefined: Self = StObject.set(x, "IncludeDeprecated", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResultsType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextTokenType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextTokenType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

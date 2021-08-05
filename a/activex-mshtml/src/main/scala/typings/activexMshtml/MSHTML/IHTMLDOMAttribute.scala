@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IHTMLDOMAttribute extends StObject {
   
-  @JSName("MSHTML.IHTMLDOMAttribute_typekey")
+  /* private */ @JSName("MSHTML.IHTMLDOMAttribute_typekey")
   var MSHTMLDotIHTMLDOMAttribute_typekey: IHTMLDOMAttribute
   
   val nodeName: String
@@ -17,8 +17,7 @@ trait IHTMLDOMAttribute extends StObject {
 }
 object IHTMLDOMAttribute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIHTMLDOMAttribute_typekey: IHTMLDOMAttribute,
     nodeName: String,
     nodeValue: js.Any,
@@ -29,19 +28,14 @@ object IHTMLDOMAttribute {
     __obj.asInstanceOf[IHTMLDOMAttribute]
   }
   
-  @scala.inline
-  implicit class IHTMLDOMAttributeMutableBuilder[Self <: IHTMLDOMAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: IHTMLDOMAttribute](x: Self) {
     
-    @scala.inline
-    def setMSHTMLDotIHTMLDOMAttribute_typekey(value: IHTMLDOMAttribute): Self = StObject.set(x, "MSHTML.IHTMLDOMAttribute_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIHTMLDOMAttribute_typekey(value: IHTMLDOMAttribute): Self = StObject.set(x, "MSHTML.IHTMLDOMAttribute_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+    inline def setNodeName(value: String): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+    inline def setNodeValue(value: js.Any): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecified(value: Boolean): Self = StObject.set(x, "specified", value.asInstanceOf[js.Any])
+    inline def setSpecified(value: Boolean): Self = StObject.set(x, "specified", value.asInstanceOf[js.Any])
   }
 }

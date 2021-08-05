@@ -17,8 +17,7 @@ trait CredentialProvider extends StObject {
 }
 object CredentialProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteCredential: String => Thenable[Boolean],
     handle: Double,
     readCredential: String => Thenable[Credential],
@@ -28,19 +27,14 @@ object CredentialProvider {
     __obj.asInstanceOf[CredentialProvider]
   }
   
-  @scala.inline
-  implicit class CredentialProviderMutableBuilder[Self <: CredentialProvider] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialProvider](x: Self) {
     
-    @scala.inline
-    def setDeleteCredential(value: String => Thenable[Boolean]): Self = StObject.set(x, "deleteCredential", js.Any.fromFunction1(value))
+    inline def setDeleteCredential(value: String => Thenable[Boolean]): Self = StObject.set(x, "deleteCredential", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandle(value: Double): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: Double): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadCredential(value: String => Thenable[Credential]): Self = StObject.set(x, "readCredential", js.Any.fromFunction1(value))
+    inline def setReadCredential(value: String => Thenable[Credential]): Self = StObject.set(x, "readCredential", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveCredential(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "saveCredential", js.Any.fromFunction2(value))
+    inline def setSaveCredential(value: (String, String) => Thenable[Boolean]): Self = StObject.set(x, "saveCredential", js.Any.fromFunction2(value))
   }
 }

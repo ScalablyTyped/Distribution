@@ -8,21 +8,17 @@ object jqueryColorpickerStrings {
   
   @js.native
   sealed trait close extends StObject
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait destroy extends StObject
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
   sealed trait open extends StObject
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
   sealed trait setColor extends StObject
-  @scala.inline
-  def setColor: setColor = "setColor".asInstanceOf[setColor]
+  inline def setColor: setColor = "setColor".asInstanceOf[setColor]
 }

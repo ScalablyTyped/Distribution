@@ -15,34 +15,25 @@ trait ItemsSelfLink extends StObject {
 }
 object ItemsSelfLink {
   
-  @scala.inline
-  def apply(): ItemsSelfLink = {
+  inline def apply(): ItemsSelfLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemsSelfLink]
   }
   
-  @scala.inline
-  implicit class ItemsSelfLinkMutableBuilder[Self <: ItemsSelfLink] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsSelfLink](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaComment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaComment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaComment*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaComment*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setTotalItems(value: String): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    inline def setTotalItems(value: String): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
+    inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

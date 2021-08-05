@@ -19,46 +19,33 @@ trait PluginSpec extends StObject {
 }
 object PluginSpec {
   
-  @scala.inline
-  def apply(): PluginSpec = {
+  inline def apply(): PluginSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PluginSpec]
   }
   
-  @scala.inline
-  implicit class PluginSpecMutableBuilder[Self <: PluginSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PluginSpec](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "Disabled", js.undefined)
     
-    @scala.inline
-    def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: js.Array[String]): Self = StObject.set(x, "Env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "Env", js.undefined)
     
-    @scala.inline
-    def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
+    inline def setEnvVarargs(value: String*): Self = StObject.set(x, "Env", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPrivileges(value: Description): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
+    inline def setPrivileges(value: Description): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegesUndefined: Self = StObject.set(x, "Privileges", js.undefined)
+    inline def setPrivilegesUndefined: Self = StObject.set(x, "Privileges", js.undefined)
     
-    @scala.inline
-    def setRemote(value: String): Self = StObject.set(x, "Remote", value.asInstanceOf[js.Any])
+    inline def setRemote(value: String): Self = StObject.set(x, "Remote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteUndefined: Self = StObject.set(x, "Remote", js.undefined)
+    inline def setRemoteUndefined: Self = StObject.set(x, "Remote", js.undefined)
   }
 }

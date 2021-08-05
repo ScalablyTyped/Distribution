@@ -29,46 +29,33 @@ trait Criterion extends StObject {
 }
 object Criterion {
   
-  @scala.inline
-  def apply(): Criterion = {
+  inline def apply(): Criterion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Criterion]
   }
   
-  @scala.inline
-  implicit class CriterionMutableBuilder[Self <: Criterion] (val x: Self) extends AnyVal {
+  extension [Self <: Criterion](x: Self) {
     
-    @scala.inline
-    def setContains(value: ValueList): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: ValueList): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+    inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    @scala.inline
-    def setContainsVarargs(value: String*): Self = StObject.set(x, "contains", js.Array(value :_*))
+    inline def setContainsVarargs(value: String*): Self = StObject.set(x, "contains", js.Array(value :_*))
     
-    @scala.inline
-    def setEq_(value: ValueList): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
+    inline def setEq_(value: ValueList): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
+    inline def setEq_Undefined: Self = StObject.set(x, "eq", js.undefined)
     
-    @scala.inline
-    def setEq_Varargs(value: String*): Self = StObject.set(x, "eq", js.Array(value :_*))
+    inline def setEq_Varargs(value: String*): Self = StObject.set(x, "eq", js.Array(value :_*))
     
-    @scala.inline
-    def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+    inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
+    inline def setExistsUndefined: Self = StObject.set(x, "exists", js.undefined)
     
-    @scala.inline
-    def setNeq(value: ValueList): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
+    inline def setNeq(value: ValueList): Self = StObject.set(x, "neq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
+    inline def setNeqUndefined: Self = StObject.set(x, "neq", js.undefined)
     
-    @scala.inline
-    def setNeqVarargs(value: String*): Self = StObject.set(x, "neq", js.Array(value :_*))
+    inline def setNeqVarargs(value: String*): Self = StObject.set(x, "neq", js.Array(value :_*))
   }
 }

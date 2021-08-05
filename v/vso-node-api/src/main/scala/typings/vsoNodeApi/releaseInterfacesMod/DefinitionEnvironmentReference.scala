@@ -16,8 +16,7 @@ trait DefinitionEnvironmentReference extends StObject {
 }
 object DefinitionEnvironmentReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     definitionEnvironmentId: Double,
     definitionEnvironmentName: String,
     releaseDefinitionId: Double,
@@ -27,19 +26,14 @@ object DefinitionEnvironmentReference {
     __obj.asInstanceOf[DefinitionEnvironmentReference]
   }
   
-  @scala.inline
-  implicit class DefinitionEnvironmentReferenceMutableBuilder[Self <: DefinitionEnvironmentReference] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionEnvironmentReference](x: Self) {
     
-    @scala.inline
-    def setDefinitionEnvironmentId(value: Double): Self = StObject.set(x, "definitionEnvironmentId", value.asInstanceOf[js.Any])
+    inline def setDefinitionEnvironmentId(value: Double): Self = StObject.set(x, "definitionEnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionEnvironmentName(value: String): Self = StObject.set(x, "definitionEnvironmentName", value.asInstanceOf[js.Any])
+    inline def setDefinitionEnvironmentName(value: String): Self = StObject.set(x, "definitionEnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDefinitionId(value: Double): Self = StObject.set(x, "releaseDefinitionId", value.asInstanceOf[js.Any])
+    inline def setReleaseDefinitionId(value: Double): Self = StObject.set(x, "releaseDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseDefinitionName(value: String): Self = StObject.set(x, "releaseDefinitionName", value.asInstanceOf[js.Any])
+    inline def setReleaseDefinitionName(value: String): Self = StObject.set(x, "releaseDefinitionName", value.asInstanceOf[js.Any])
   }
 }

@@ -30,8 +30,7 @@ trait ExternalTfsBuild extends StObject {
 }
 object ExternalTfsBuild {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: scala.Double,
     custom: scala.Double,
     externalTfsBuild: scala.Double,
@@ -48,40 +47,28 @@ object ExternalTfsBuild {
     __obj.asInstanceOf[ExternalTfsBuild]
   }
   
-  @scala.inline
-  implicit class ExternalTfsBuildMutableBuilder[Self <: ExternalTfsBuild] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalTfsBuild](x: Self) {
     
-    @scala.inline
-    def setBuild(value: scala.Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: scala.Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalTfsBuild(value: scala.Double): Self = StObject.set(x, "externalTfsBuild", value.asInstanceOf[js.Any])
+    inline def setExternalTfsBuild(value: scala.Double): Self = StObject.set(x, "externalTfsBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileShare(value: scala.Double): Self = StObject.set(x, "fileShare", value.asInstanceOf[js.Any])
+    inline def setFileShare(value: scala.Double): Self = StObject.set(x, "fileShare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitHub(value: scala.Double): Self = StObject.set(x, "gitHub", value.asInstanceOf[js.Any])
+    inline def setGitHub(value: scala.Double): Self = StObject.set(x, "gitHub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJenkins(value: scala.Double): Self = StObject.set(x, "jenkins", value.asInstanceOf[js.Any])
+    inline def setJenkins(value: scala.Double): Self = StObject.set(x, "jenkins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNuget(value: scala.Double): Self = StObject.set(x, "nuget", value.asInstanceOf[js.Any])
+    inline def setNuget(value: scala.Double): Self = StObject.set(x, "nuget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTFGit(value: scala.Double): Self = StObject.set(x, "tFGit", value.asInstanceOf[js.Any])
+    inline def setTFGit(value: scala.Double): Self = StObject.set(x, "tFGit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfsOnPrem(value: scala.Double): Self = StObject.set(x, "tfsOnPrem", value.asInstanceOf[js.Any])
+    inline def setTfsOnPrem(value: scala.Double): Self = StObject.set(x, "tfsOnPrem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfvc(value: scala.Double): Self = StObject.set(x, "tfvc", value.asInstanceOf[js.Any])
+    inline def setTfvc(value: scala.Double): Self = StObject.set(x, "tfvc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXamlBuild(value: scala.Double): Self = StObject.set(x, "xamlBuild", value.asInstanceOf[js.Any])
+    inline def setXamlBuild(value: scala.Double): Self = StObject.set(x, "xamlBuild", value.asInstanceOf[js.Any])
   }
 }

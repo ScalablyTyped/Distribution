@@ -36,8 +36,7 @@ trait FlashControl extends StObject {
 }
 object FlashControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assistantLightEnabled: Boolean,
     assistantLightSupported: Boolean,
     auto: Boolean,
@@ -52,34 +51,24 @@ object FlashControl {
     __obj.asInstanceOf[FlashControl]
   }
   
-  @scala.inline
-  implicit class FlashControlMutableBuilder[Self <: FlashControl] (val x: Self) extends AnyVal {
+  extension [Self <: FlashControl](x: Self) {
     
-    @scala.inline
-    def setAssistantLightEnabled(value: Boolean): Self = StObject.set(x, "assistantLightEnabled", value.asInstanceOf[js.Any])
+    inline def setAssistantLightEnabled(value: Boolean): Self = StObject.set(x, "assistantLightEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssistantLightSupported(value: Boolean): Self = StObject.set(x, "assistantLightSupported", value.asInstanceOf[js.Any])
+    inline def setAssistantLightSupported(value: Boolean): Self = StObject.set(x, "assistantLightSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+    inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPercent(value: Double): Self = StObject.set(x, "powerPercent", value.asInstanceOf[js.Any])
+    inline def setPowerPercent(value: Double): Self = StObject.set(x, "powerPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerSupported(value: Boolean): Self = StObject.set(x, "powerSupported", value.asInstanceOf[js.Any])
+    inline def setPowerSupported(value: Boolean): Self = StObject.set(x, "powerSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedEyeReduction(value: Boolean): Self = StObject.set(x, "redEyeReduction", value.asInstanceOf[js.Any])
+    inline def setRedEyeReduction(value: Boolean): Self = StObject.set(x, "redEyeReduction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedEyeReductionSupported(value: Boolean): Self = StObject.set(x, "redEyeReductionSupported", value.asInstanceOf[js.Any])
+    inline def setRedEyeReductionSupported(value: Boolean): Self = StObject.set(x, "redEyeReductionSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
   }
 }

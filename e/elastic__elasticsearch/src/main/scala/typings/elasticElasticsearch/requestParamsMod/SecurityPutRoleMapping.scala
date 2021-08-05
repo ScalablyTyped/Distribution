@@ -17,25 +17,19 @@ trait SecurityPutRoleMapping[T]
 }
 object SecurityPutRoleMapping {
   
-  @scala.inline
-  def apply[T](body: T, name: String): SecurityPutRoleMapping[T] = {
+  inline def apply[T](body: T, name: String): SecurityPutRoleMapping[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityPutRoleMapping[T]]
   }
   
-  @scala.inline
-  implicit class SecurityPutRoleMappingMutableBuilder[Self <: SecurityPutRoleMapping[?], T] (val x: Self & SecurityPutRoleMapping[T]) extends AnyVal {
+  extension [Self <: SecurityPutRoleMapping[?], T](x: Self & SecurityPutRoleMapping[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
   }
 }

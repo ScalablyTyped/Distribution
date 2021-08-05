@@ -12,22 +12,17 @@ trait MetricNames extends StObject {
 }
 object MetricNames {
   
-  @scala.inline
-  def apply(metricNames: js.Array[String], orderIndex: Double): MetricNames = {
+  inline def apply(metricNames: js.Array[String], orderIndex: Double): MetricNames = {
     val __obj = js.Dynamic.literal(metricNames = metricNames.asInstanceOf[js.Any], orderIndex = orderIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetricNames]
   }
   
-  @scala.inline
-  implicit class MetricNamesMutableBuilder[Self <: MetricNames] (val x: Self) extends AnyVal {
+  extension [Self <: MetricNames](x: Self) {
     
-    @scala.inline
-    def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
+    inline def setMetricNames(value: js.Array[String]): Self = StObject.set(x, "metricNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
+    inline def setMetricNamesVarargs(value: String*): Self = StObject.set(x, "metricNames", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderIndex(value: Double): Self = StObject.set(x, "orderIndex", value.asInstanceOf[js.Any])
+    inline def setOrderIndex(value: Double): Self = StObject.set(x, "orderIndex", value.asInstanceOf[js.Any])
   }
 }

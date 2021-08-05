@@ -23,43 +23,31 @@ trait Partialfilenamestringscal extends StObject {
 }
 object Partialfilenamestringscal {
   
-  @scala.inline
-  def apply(): Partialfilenamestringscal = {
+  inline def apply(): Partialfilenamestringscal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Partialfilenamestringscal]
   }
   
-  @scala.inline
-  implicit class PartialfilenamestringscalMutableBuilder[Self <: Partialfilenamestringscal] (val x: Self) extends AnyVal {
+  extension [Self <: Partialfilenamestringscal](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setFormat(value: png | svg | jpeg | webp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: png | svg | jpeg | webp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

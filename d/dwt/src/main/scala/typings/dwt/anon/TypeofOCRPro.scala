@@ -11,16 +11,13 @@ trait TypeofOCRPro extends StObject {
 }
 object TypeofOCRPro {
   
-  @scala.inline
-  def apply(NewSettings: () => Settings): TypeofOCRPro = {
+  inline def apply(NewSettings: () => Settings): TypeofOCRPro = {
     val __obj = js.Dynamic.literal(NewSettings = js.Any.fromFunction0(NewSettings))
     __obj.asInstanceOf[TypeofOCRPro]
   }
   
-  @scala.inline
-  implicit class TypeofOCRProMutableBuilder[Self <: TypeofOCRPro] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofOCRPro](x: Self) {
     
-    @scala.inline
-    def setNewSettings(value: () => Settings): Self = StObject.set(x, "NewSettings", js.Any.fromFunction0(value))
+    inline def setNewSettings(value: () => Settings): Self = StObject.set(x, "NewSettings", js.Any.fromFunction0(value))
   }
 }

@@ -53,8 +53,7 @@ trait MediaContainer extends StObject {
 }
 object MediaContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addTrack: MediaTrack => Unit,
     destroy: () => Unit,
     `export`: () => Unit,
@@ -66,22 +65,16 @@ object MediaContainer {
     __obj.asInstanceOf[MediaContainer]
   }
   
-  @scala.inline
-  implicit class MediaContainerMutableBuilder[Self <: MediaContainer] (val x: Self) extends AnyVal {
+  extension [Self <: MediaContainer](x: Self) {
     
-    @scala.inline
-    def setAddTrack(value: MediaTrack => Unit): Self = StObject.set(x, "addTrack", js.Any.fromFunction1(value))
+    inline def setAddTrack(value: MediaTrack => Unit): Self = StObject.set(x, "addTrack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExport(value: () => Unit): Self = StObject.set(x, "export", js.Any.fromFunction0(value))
+    inline def setExport(value: () => Unit): Self = StObject.set(x, "export", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExtractDataSource(value: ExtractDataSourceOption => Unit): Self = StObject.set(x, "extractDataSource", js.Any.fromFunction1(value))
+    inline def setExtractDataSource(value: ExtractDataSourceOption => Unit): Self = StObject.set(x, "extractDataSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveTrack(value: MediaTrack => Unit): Self = StObject.set(x, "removeTrack", js.Any.fromFunction1(value))
+    inline def setRemoveTrack(value: MediaTrack => Unit): Self = StObject.set(x, "removeTrack", js.Any.fromFunction1(value))
   }
 }

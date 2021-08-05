@@ -12,25 +12,19 @@ trait PivotTransport extends StObject {
 }
 object PivotTransport {
   
-  @scala.inline
-  def apply(): PivotTransport = {
+  inline def apply(): PivotTransport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotTransport]
   }
   
-  @scala.inline
-  implicit class PivotTransportMutableBuilder[Self <: PivotTransport] (val x: Self) extends AnyVal {
+  extension [Self <: PivotTransport](x: Self) {
     
-    @scala.inline
-    def setDiscover(value: js.Any): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
+    inline def setDiscover(value: js.Any): Self = StObject.set(x, "discover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoverUndefined: Self = StObject.set(x, "discover", js.undefined)
+    inline def setDiscoverUndefined: Self = StObject.set(x, "discover", js.undefined)
     
-    @scala.inline
-    def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
   }
 }

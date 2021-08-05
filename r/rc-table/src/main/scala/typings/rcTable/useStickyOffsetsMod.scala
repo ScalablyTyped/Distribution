@@ -16,9 +16,7 @@ object useStickyOffsetsMod {
   /**
     * Get sticky column offset width
     */
-  @scala.inline
-  def default_ltr(colWidths: js.Array[Double], columCount: Double, direction: ltr): StickyOffsets = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(colWidths.asInstanceOf[js.Any], columCount.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[StickyOffsets]
+  inline def default_ltr(colWidths: js.Array[Double], columCount: Double, direction: ltr): StickyOffsets = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(colWidths.asInstanceOf[js.Any], columCount.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[StickyOffsets]
   
-  @scala.inline
-  def default_rtl(colWidths: js.Array[Double], columCount: Double, direction: rtl): StickyOffsets = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(colWidths.asInstanceOf[js.Any], columCount.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[StickyOffsets]
+  inline def default_rtl(colWidths: js.Array[Double], columCount: Double, direction: rtl): StickyOffsets = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(colWidths.asInstanceOf[js.Any], columCount.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[StickyOffsets]
 }

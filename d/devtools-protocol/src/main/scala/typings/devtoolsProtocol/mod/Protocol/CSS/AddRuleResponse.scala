@@ -13,16 +13,13 @@ trait AddRuleResponse extends StObject {
 }
 object AddRuleResponse {
   
-  @scala.inline
-  def apply(rule: CSSRule): AddRuleResponse = {
+  inline def apply(rule: CSSRule): AddRuleResponse = {
     val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddRuleResponse]
   }
   
-  @scala.inline
-  implicit class AddRuleResponseMutableBuilder[Self <: AddRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddRuleResponse](x: Self) {
     
-    @scala.inline
-    def setRule(value: CSSRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: CSSRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }
 }

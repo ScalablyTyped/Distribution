@@ -54,8 +54,7 @@ trait XView
 }
 object XView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Graphics: XGraphics,
     Size: Size,
     acquire: () => Unit,
@@ -71,28 +70,20 @@ object XView {
     __obj.asInstanceOf[XView]
   }
   
-  @scala.inline
-  implicit class XViewMutableBuilder[Self <: XView] (val x: Self) extends AnyVal {
+  extension [Self <: XView](x: Self) {
     
-    @scala.inline
-    def setDraw(value: (Double, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
+    inline def setDraw(value: (Double, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetGraphics(value: () => XGraphics): Self = StObject.set(x, "getGraphics", js.Any.fromFunction0(value))
+    inline def setGetGraphics(value: () => XGraphics): Self = StObject.set(x, "getGraphics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+    inline def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGraphics(value: XGraphics): Self = StObject.set(x, "Graphics", value.asInstanceOf[js.Any])
+    inline def setGraphics(value: XGraphics): Self = StObject.set(x, "Graphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetGraphics(value: XGraphics => Boolean): Self = StObject.set(x, "setGraphics", js.Any.fromFunction1(value))
+    inline def setSetGraphics(value: XGraphics => Boolean): Self = StObject.set(x, "setGraphics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetZoom(value: (Double, Double) => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction2(value))
+    inline def setSetZoom(value: (Double, Double) => Unit): Self = StObject.set(x, "setZoom", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

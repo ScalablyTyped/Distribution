@@ -16,10 +16,8 @@ object throttleMod {
   @js.native
   val defaultThrottleConfig: ThrottleConfig = js.native
   
-  @scala.inline
-  def throttle[T](durationSelector: js.Function1[/* value */ T, SubscribableOrPromise[js.Any]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(durationSelector.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
-  @scala.inline
-  def throttle[T](
+  inline def throttle[T](durationSelector: js.Function1[/* value */ T, SubscribableOrPromise[js.Any]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(durationSelector.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
+  inline def throttle[T](
     durationSelector: js.Function1[/* value */ T, SubscribableOrPromise[js.Any]],
     config: ThrottleConfig
   ): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(durationSelector.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
@@ -32,26 +30,20 @@ object throttleMod {
   }
   object ThrottleConfig {
     
-    @scala.inline
-    def apply(): ThrottleConfig = {
+    inline def apply(): ThrottleConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThrottleConfig]
     }
     
-    @scala.inline
-    implicit class ThrottleConfigMutableBuilder[Self <: ThrottleConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ThrottleConfig](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
 }

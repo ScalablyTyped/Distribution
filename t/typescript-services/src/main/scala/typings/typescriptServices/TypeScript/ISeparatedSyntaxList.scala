@@ -24,8 +24,7 @@ trait ISeparatedSyntaxList
 }
 object ISeparatedSyntaxList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
     collectTextElements: js.Array[String] => Unit,
@@ -57,28 +56,20 @@ object ISeparatedSyntaxList {
     __obj.asInstanceOf[ISeparatedSyntaxList]
   }
   
-  @scala.inline
-  implicit class ISeparatedSyntaxListMutableBuilder[Self <: ISeparatedSyntaxList] (val x: Self) extends AnyVal {
+  extension [Self <: ISeparatedSyntaxList](x: Self) {
     
-    @scala.inline
-    def setInsertChildrenInto(value: (js.Array[ISyntaxElement], Double) => Unit): Self = StObject.set(x, "insertChildrenInto", js.Any.fromFunction2(value))
+    inline def setInsertChildrenInto(value: (js.Array[ISyntaxElement], Double) => Unit): Self = StObject.set(x, "insertChildrenInto", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNonSeparatorAt(value: Double => ISyntaxNodeOrToken): Self = StObject.set(x, "nonSeparatorAt", js.Any.fromFunction1(value))
+    inline def setNonSeparatorAt(value: Double => ISyntaxNodeOrToken): Self = StObject.set(x, "nonSeparatorAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNonSeparatorCount(value: () => Double): Self = StObject.set(x, "nonSeparatorCount", js.Any.fromFunction0(value))
+    inline def setNonSeparatorCount(value: () => Double): Self = StObject.set(x, "nonSeparatorCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSeparatorAt(value: Double => ISyntaxToken): Self = StObject.set(x, "separatorAt", js.Any.fromFunction1(value))
+    inline def setSeparatorAt(value: Double => ISyntaxToken): Self = StObject.set(x, "separatorAt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparatorCount(value: () => Double): Self = StObject.set(x, "separatorCount", js.Any.fromFunction0(value))
+    inline def setSeparatorCount(value: () => Double): Self = StObject.set(x, "separatorCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToArray(value: () => js.Array[ISyntaxNodeOrToken]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => js.Array[ISyntaxNodeOrToken]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToNonSeparatorArray(value: () => js.Array[ISyntaxNodeOrToken]): Self = StObject.set(x, "toNonSeparatorArray", js.Any.fromFunction0(value))
+    inline def setToNonSeparatorArray(value: () => js.Array[ISyntaxNodeOrToken]): Self = StObject.set(x, "toNonSeparatorArray", js.Any.fromFunction0(value))
   }
 }

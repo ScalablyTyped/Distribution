@@ -23,8 +23,7 @@ trait XEventListener
 }
 object XEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     queryInterface: `type` => js.Any,
@@ -34,10 +33,8 @@ object XEventListener {
     __obj.asInstanceOf[XEventListener]
   }
   
-  @scala.inline
-  implicit class XEventListenerMutableBuilder[Self <: XEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XEventListener](x: Self) {
     
-    @scala.inline
-    def setDisposing(value: EventObject => Unit): Self = StObject.set(x, "disposing", js.Any.fromFunction1(value))
+    inline def setDisposing(value: EventObject => Unit): Self = StObject.set(x, "disposing", js.Any.fromFunction1(value))
   }
 }

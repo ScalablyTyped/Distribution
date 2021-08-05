@@ -11,16 +11,13 @@ trait Mtime extends StObject {
 }
 object Mtime {
   
-  @scala.inline
-  def apply(mtime: Date): Mtime = {
+  inline def apply(mtime: Date): Mtime = {
     val __obj = js.Dynamic.literal(mtime = mtime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mtime]
   }
   
-  @scala.inline
-  implicit class MtimeMutableBuilder[Self <: Mtime] (val x: Self) extends AnyVal {
+  extension [Self <: Mtime](x: Self) {
     
-    @scala.inline
-    def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+    inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
   }
 }

@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(variables: VariableDefinitions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(variables.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(variables: VariableDefinitions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(variables.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-sass-variables", JSImport.Namespace)
   @js.native

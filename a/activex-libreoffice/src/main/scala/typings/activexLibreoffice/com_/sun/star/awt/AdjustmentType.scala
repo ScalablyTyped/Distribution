@@ -17,16 +17,14 @@ trait AdjustmentType extends StObject
 object AdjustmentType {
   
   /** adjustment is originated by dragging the thumb. */
-  @scala.inline
-  def ADJUST_ABS: `2` = 2.asInstanceOf[`2`]
+  inline def ADJUST_ABS: `2` = 2.asInstanceOf[`2`]
   
   /**
     * adjustment is originated by a line jump. <p>A line jump can, for example, be caused by a click on
     *
     * one of the pointer buttons.</p>
     */
-  @scala.inline
-  def ADJUST_LINE: `0` = 0.asInstanceOf[`0`]
+  inline def ADJUST_LINE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * adjustment is originated by a page jump. <p>A page jump can, for example, be caused by a click in the
@@ -35,6 +33,5 @@ object AdjustmentType {
     *
     * buttons, nor the thumb).</p>
     */
-  @scala.inline
-  def ADJUST_PAGE: `1` = 1.asInstanceOf[`1`]
+  inline def ADJUST_PAGE: `1` = 1.asInstanceOf[`1`]
 }

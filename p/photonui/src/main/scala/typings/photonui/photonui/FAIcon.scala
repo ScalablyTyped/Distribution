@@ -19,8 +19,7 @@ trait FAIcon
 }
 object FAIcon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     color: String,
@@ -49,16 +48,12 @@ object FAIcon {
     __obj.asInstanceOf[FAIcon]
   }
   
-  @scala.inline
-  implicit class FAIconMutableBuilder[Self <: FAIcon] (val x: Self) extends AnyVal {
+  extension [Self <: FAIcon](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
+    inline def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

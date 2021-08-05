@@ -12,7 +12,7 @@ object verboseFormatterMod {
   @js.native
   class Formatter () extends AbstractFormatter {
     
-    var mapToMessages: js.Any = js.native
+    /* private */ var mapToMessages: js.Any = js.native
   }
   /* static members */
   object Formatter {
@@ -24,7 +24,6 @@ object verboseFormatterMod {
     @JSImport("tslint/lib/formatters/verboseFormatter", "Formatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

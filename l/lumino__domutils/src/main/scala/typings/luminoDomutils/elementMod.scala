@@ -20,8 +20,7 @@ object elementMod {
       *
       * @returns The box sizing data for the specified element.
       */
-    @scala.inline
-    def boxSizing(element: Element): IBoxSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("boxSizing")(element.asInstanceOf[js.Any]).asInstanceOf[IBoxSizing]
+    inline def boxSizing(element: Element): IBoxSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("boxSizing")(element.asInstanceOf[js.Any]).asInstanceOf[IBoxSizing]
     
     /**
       * Test whether a client position lies within an element.
@@ -34,8 +33,7 @@ object elementMod {
       *
       * @returns Whether the point is within the given element.
       */
-    @scala.inline
-    def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hitTest")(element.asInstanceOf[js.Any], clientX.asInstanceOf[js.Any], clientY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def hitTest(element: Element, clientX: Double, clientY: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hitTest")(element.asInstanceOf[js.Any], clientX.asInstanceOf[js.Any], clientY.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Vertically scroll an element into view if needed.
@@ -53,8 +51,7 @@ object elementMod {
       * within the visible area, no scrolling will take place. Otherwise,
       * the nearest edges of the area and element are aligned.
       */
-    @scala.inline
-    def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoViewIfNeeded")(area.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def scrollIntoViewIfNeeded(area: Element, element: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scrollIntoViewIfNeeded")(area.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Compute the size limits for an element.
@@ -63,8 +60,7 @@ object elementMod {
       *
       * @returns The size limit data for the specified element.
       */
-    @scala.inline
-    def sizeLimits(element: Element): ISizeLimits = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeLimits")(element.asInstanceOf[js.Any]).asInstanceOf[ISizeLimits]
+    inline def sizeLimits(element: Element): ISizeLimits = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeLimits")(element.asInstanceOf[js.Any]).asInstanceOf[ISizeLimits]
     
     /**
       * An object which holds the border and padding data for an element.
@@ -123,8 +119,7 @@ object elementMod {
     }
     object IBoxSizing {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         borderBottom: Double,
         borderLeft: Double,
         borderRight: Double,
@@ -140,38 +135,27 @@ object elementMod {
         __obj.asInstanceOf[IBoxSizing]
       }
       
-      @scala.inline
-      implicit class IBoxSizingMutableBuilder[Self <: IBoxSizing] (val x: Self) extends AnyVal {
+      extension [Self <: IBoxSizing](x: Self) {
         
-        @scala.inline
-        def setBorderBottom(value: Double): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+        inline def setBorderBottom(value: Double): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderLeft(value: Double): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+        inline def setBorderLeft(value: Double): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderRight(value: Double): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+        inline def setBorderRight(value: Double): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBorderTop(value: Double): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+        inline def setBorderTop(value: Double): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHorizontalSum(value: Double): Self = StObject.set(x, "horizontalSum", value.asInstanceOf[js.Any])
+        inline def setHorizontalSum(value: Double): Self = StObject.set(x, "horizontalSum", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+        inline def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+        inline def setPaddingLeft(value: Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+        inline def setPaddingRight(value: Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingTop(value: Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+        inline def setPaddingTop(value: Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalSum(value: Double): Self = StObject.set(x, "verticalSum", value.asInstanceOf[js.Any])
+        inline def setVerticalSum(value: Double): Self = StObject.set(x, "verticalSum", value.asInstanceOf[js.Any])
       }
     }
     
@@ -202,26 +186,20 @@ object elementMod {
     }
     object ISizeLimits {
       
-      @scala.inline
-      def apply(maxHeight: Double, maxWidth: Double, minHeight: Double, minWidth: Double): ISizeLimits = {
+      inline def apply(maxHeight: Double, maxWidth: Double, minHeight: Double, minWidth: Double): ISizeLimits = {
         val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], minWidth = minWidth.asInstanceOf[js.Any])
         __obj.asInstanceOf[ISizeLimits]
       }
       
-      @scala.inline
-      implicit class ISizeLimitsMutableBuilder[Self <: ISizeLimits] (val x: Self) extends AnyVal {
+      extension [Self <: ISizeLimits](x: Self) {
         
-        @scala.inline
-        def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+        inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+        inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+        inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+        inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       }
     }
   }

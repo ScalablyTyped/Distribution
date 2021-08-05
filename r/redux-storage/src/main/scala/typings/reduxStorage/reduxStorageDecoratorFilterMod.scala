@@ -12,14 +12,10 @@ object reduxStorageDecoratorFilterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(engine: StorageEngine): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any]).asInstanceOf[StorageEngine]
-  @scala.inline
-  def default(engine: StorageEngine, whitelist: Unit, blacklist: FilterList): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
-  @scala.inline
-  def default(engine: StorageEngine, whitelist: FilterList): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
-  @scala.inline
-  def default(engine: StorageEngine, whitelist: FilterList, blacklist: FilterList): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
+  inline def default(engine: StorageEngine): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any]).asInstanceOf[StorageEngine]
+  inline def default(engine: StorageEngine, whitelist: Unit, blacklist: FilterList): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
+  inline def default(engine: StorageEngine, whitelist: FilterList): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
+  inline def default(engine: StorageEngine, whitelist: FilterList, blacklist: FilterList): StorageEngine = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(engine.asInstanceOf[js.Any], whitelist.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[StorageEngine]
   
   type FilterList = NumberDictionary[String | js.Array[String]]
 }

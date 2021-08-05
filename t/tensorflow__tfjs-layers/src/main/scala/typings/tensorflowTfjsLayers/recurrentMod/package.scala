@@ -5,13 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def generateDropoutMask(args: typings.tensorflowTfjsLayers.anon.Count): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | (js.Array[
+inline def generateDropoutMask(args: typings.tensorflowTfjsLayers.anon.Count): typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | (js.Array[
 typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]) = typings.tensorflowTfjsLayers.recurrentMod.^.asInstanceOf[js.Dynamic].applyDynamic("generateDropoutMask")(args.asInstanceOf[js.Any]).asInstanceOf[typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | (js.Array[
 typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]])]
 
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -28,8 +26,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -47,8 +44,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -70,8 +66,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -94,8 +89,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -119,8 +113,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -144,8 +137,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -166,8 +158,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -189,8 +180,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -212,8 +202,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -232,8 +221,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -255,8 +243,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -279,8 +266,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -304,8 +290,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -329,8 +314,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -351,8 +335,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -374,8 +357,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -397,8 +379,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -420,8 +401,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -444,8 +424,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -469,8 +448,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -494,8 +472,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -516,8 +493,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -539,8 +515,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -562,8 +537,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -582,8 +556,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -605,8 +578,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -629,8 +601,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -654,8 +625,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -679,8 +649,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -701,8 +670,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -724,8 +692,7 @@ typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distT
 js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
-@scala.inline
-def rnn(
+inline def rnn(
   stepFunction: typings.tensorflowTfjsLayers.distTypesMod.RnnStepFunction,
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
   initialStates: js.Array[
@@ -748,8 +715,7 @@ js.Array[
   typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]]]
 
-@scala.inline
-def standardizeArgs(
+inline def standardizeArgs(
   inputs: typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] | (js.Array[
   typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor | typings.tensorflowTfjsCore.distTensorMod.Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]
 ]) | typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor,

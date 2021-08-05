@@ -15,20 +15,16 @@ trait NumericLiteral
 }
 object NumericLiteral {
   
-  @scala.inline
-  def apply(raw: String, value: Double): NumericLiteral = {
+  inline def apply(raw: String, value: Double): NumericLiteral = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumericLiteral")
     __obj.asInstanceOf[NumericLiteral]
   }
   
-  @scala.inline
-  implicit class NumericLiteralMutableBuilder[Self <: NumericLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: NumericLiteral](x: Self) {
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

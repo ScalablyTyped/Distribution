@@ -9,8 +9,7 @@ trait ProvisionFromXmlDocumentResults
      with IProvisionFromXmlDocumentResults
 object ProvisionFromXmlDocumentResults {
   
-  @scala.inline
-  def apply(allElementsProvisioned: Boolean, provisionResultsXml: String): ProvisionFromXmlDocumentResults = {
+  inline def apply(allElementsProvisioned: Boolean, provisionResultsXml: String): ProvisionFromXmlDocumentResults = {
     val __obj = js.Dynamic.literal(allElementsProvisioned = allElementsProvisioned.asInstanceOf[js.Any], provisionResultsXml = provisionResultsXml.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionFromXmlDocumentResults]
   }

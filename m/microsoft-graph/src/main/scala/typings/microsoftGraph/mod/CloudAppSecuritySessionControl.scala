@@ -16,22 +16,17 @@ trait CloudAppSecuritySessionControl
 }
 object CloudAppSecuritySessionControl {
   
-  @scala.inline
-  def apply(): CloudAppSecuritySessionControl = {
+  inline def apply(): CloudAppSecuritySessionControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudAppSecuritySessionControl]
   }
   
-  @scala.inline
-  implicit class CloudAppSecuritySessionControlMutableBuilder[Self <: CloudAppSecuritySessionControl] (val x: Self) extends AnyVal {
+  extension [Self <: CloudAppSecuritySessionControl](x: Self) {
     
-    @scala.inline
-    def setCloudAppSecurityType(value: NullableOption[CloudAppSecuritySessionControlType]): Self = StObject.set(x, "cloudAppSecurityType", value.asInstanceOf[js.Any])
+    inline def setCloudAppSecurityType(value: NullableOption[CloudAppSecuritySessionControlType]): Self = StObject.set(x, "cloudAppSecurityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudAppSecurityTypeNull: Self = StObject.set(x, "cloudAppSecurityType", null)
+    inline def setCloudAppSecurityTypeNull: Self = StObject.set(x, "cloudAppSecurityType", null)
     
-    @scala.inline
-    def setCloudAppSecurityTypeUndefined: Self = StObject.set(x, "cloudAppSecurityType", js.undefined)
+    inline def setCloudAppSecurityTypeUndefined: Self = StObject.set(x, "cloudAppSecurityType", js.undefined)
   }
 }

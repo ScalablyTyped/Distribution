@@ -17,34 +17,25 @@ trait ListSecretsResponse extends StObject {
 }
 object ListSecretsResponse {
   
-  @scala.inline
-  def apply(): ListSecretsResponse = {
+  inline def apply(): ListSecretsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSecretsResponse]
   }
   
-  @scala.inline
-  implicit class ListSecretsResponseMutableBuilder[Self <: ListSecretsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSecretsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setSecrets(value: js.Array[Secret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
+    inline def setSecrets(value: js.Array[Secret]): Self = StObject.set(x, "secrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
+    inline def setSecretsUndefined: Self = StObject.set(x, "secrets", js.undefined)
     
-    @scala.inline
-    def setSecretsVarargs(value: Secret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
+    inline def setSecretsVarargs(value: Secret*): Self = StObject.set(x, "secrets", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
   }
 }

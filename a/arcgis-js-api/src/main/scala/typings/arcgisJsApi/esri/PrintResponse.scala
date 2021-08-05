@@ -19,8 +19,7 @@ trait PrintResponse
 }
 object PrintResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object PrintResponse {
     __obj.asInstanceOf[PrintResponse]
   }
   
-  @scala.inline
-  implicit class PrintResponseMutableBuilder[Self <: PrintResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PrintResponse](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

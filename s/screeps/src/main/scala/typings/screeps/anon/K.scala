@@ -16,22 +16,17 @@ trait K extends StObject {
 }
 object K {
   
-  @scala.inline
-  def apply(): K = {
+  inline def apply(): K = {
     val __obj = js.Dynamic.literal(H = "ZH", K = "ZK", O = "ZO")
     __obj.asInstanceOf[K]
   }
   
-  @scala.inline
-  implicit class KMutableBuilder[Self <: K] (val x: Self) extends AnyVal {
+  extension [Self <: K](x: Self) {
     
-    @scala.inline
-    def setH(value: ZH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
+    inline def setH(value: ZH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setK(value: typings.screeps.screepsStrings.ZK): Self = StObject.set(x, "K", value.asInstanceOf[js.Any])
+    inline def setK(value: typings.screeps.screepsStrings.ZK): Self = StObject.set(x, "K", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setO(value: ZO): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
+    inline def setO(value: ZO): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
   }
 }

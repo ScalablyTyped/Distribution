@@ -80,8 +80,7 @@ trait XGroup
 }
 object XGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Expression: String,
     Footer: XSection,
     FooterOn: Boolean,
@@ -117,43 +116,30 @@ object XGroup {
     __obj.asInstanceOf[XGroup]
   }
   
-  @scala.inline
-  implicit class XGroupMutableBuilder[Self <: XGroup] (val x: Self) extends AnyVal {
+  extension [Self <: XGroup](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooter(value: XSection): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: XSection): Self = StObject.set(x, "Footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterOn(value: Boolean): Self = StObject.set(x, "FooterOn", value.asInstanceOf[js.Any])
+    inline def setFooterOn(value: Boolean): Self = StObject.set(x, "FooterOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupInterval(value: Double): Self = StObject.set(x, "GroupInterval", value.asInstanceOf[js.Any])
+    inline def setGroupInterval(value: Double): Self = StObject.set(x, "GroupInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupOn(value: Double): Self = StObject.set(x, "GroupOn", value.asInstanceOf[js.Any])
+    inline def setGroupOn(value: Double): Self = StObject.set(x, "GroupOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: XGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: XGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: XSection): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: XSection): Self = StObject.set(x, "Header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderOn(value: Boolean): Self = StObject.set(x, "HeaderOn", value.asInstanceOf[js.Any])
+    inline def setHeaderOn(value: Boolean): Self = StObject.set(x, "HeaderOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepTogether(value: Double): Self = StObject.set(x, "KeepTogether", value.asInstanceOf[js.Any])
+    inline def setKeepTogether(value: Double): Self = StObject.set(x, "KeepTogether", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetPageNumber(value: Boolean): Self = StObject.set(x, "ResetPageNumber", value.asInstanceOf[js.Any])
+    inline def setResetPageNumber(value: Boolean): Self = StObject.set(x, "ResetPageNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
+    inline def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartNewColumn(value: Boolean): Self = StObject.set(x, "StartNewColumn", value.asInstanceOf[js.Any])
+    inline def setStartNewColumn(value: Boolean): Self = StObject.set(x, "StartNewColumn", value.asInstanceOf[js.Any])
   }
 }

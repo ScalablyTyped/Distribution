@@ -8,6 +8,5 @@ object reduxSagaTypesStrings {
   
   @js.native
   sealed trait `@@redux-sagaSlashCHANNEL_END` extends StObject
-  @scala.inline
-  def `@@redux-sagaSlashCHANNEL_END`: `@@redux-sagaSlashCHANNEL_END` = "@@redux-saga/CHANNEL_END".asInstanceOf[`@@redux-sagaSlashCHANNEL_END`]
+  inline def `@@redux-sagaSlashCHANNEL_END`: `@@redux-sagaSlashCHANNEL_END` = "@@redux-saga/CHANNEL_END".asInstanceOf[`@@redux-sagaSlashCHANNEL_END`]
 }

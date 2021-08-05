@@ -49,79 +49,55 @@ trait TransferJob extends StObject {
 }
 object TransferJob {
   
-  @scala.inline
-  def apply(): TransferJob = {
+  inline def apply(): TransferJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransferJob]
   }
   
-  @scala.inline
-  implicit class TransferJobMutableBuilder[Self <: TransferJob] (val x: Self) extends AnyVal {
+  extension [Self <: TransferJob](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDeletionTime(value: String): Self = StObject.set(x, "deletionTime", value.asInstanceOf[js.Any])
+    inline def setDeletionTime(value: String): Self = StObject.set(x, "deletionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionTimeUndefined: Self = StObject.set(x, "deletionTime", js.undefined)
+    inline def setDeletionTimeUndefined: Self = StObject.set(x, "deletionTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLastModificationTime(value: String): Self = StObject.set(x, "lastModificationTime", value.asInstanceOf[js.Any])
+    inline def setLastModificationTime(value: String): Self = StObject.set(x, "lastModificationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModificationTimeUndefined: Self = StObject.set(x, "lastModificationTime", js.undefined)
+    inline def setLastModificationTimeUndefined: Self = StObject.set(x, "lastModificationTime", js.undefined)
     
-    @scala.inline
-    def setLatestOperationName(value: String): Self = StObject.set(x, "latestOperationName", value.asInstanceOf[js.Any])
+    inline def setLatestOperationName(value: String): Self = StObject.set(x, "latestOperationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestOperationNameUndefined: Self = StObject.set(x, "latestOperationName", js.undefined)
+    inline def setLatestOperationNameUndefined: Self = StObject.set(x, "latestOperationName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNotificationConfig(value: NotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
+    inline def setNotificationConfig(value: NotificationConfig): Self = StObject.set(x, "notificationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
+    inline def setNotificationConfigUndefined: Self = StObject.set(x, "notificationConfig", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: Schedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTransferSpec(value: TransferSpec): Self = StObject.set(x, "transferSpec", value.asInstanceOf[js.Any])
+    inline def setTransferSpec(value: TransferSpec): Self = StObject.set(x, "transferSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferSpecUndefined: Self = StObject.set(x, "transferSpec", js.undefined)
+    inline def setTransferSpecUndefined: Self = StObject.set(x, "transferSpec", js.undefined)
   }
 }

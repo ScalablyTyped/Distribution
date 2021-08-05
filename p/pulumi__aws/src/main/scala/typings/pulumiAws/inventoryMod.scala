@@ -84,21 +84,16 @@ object inventoryMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Inventory]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Inventory]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InventoryState): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Inventory]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InventoryState, opts: CustomResourceOptions): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Inventory]
+    inline def get(name: String, id: Input[ID]): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Inventory]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Inventory]
+    inline def get(name: String, id: Input[ID], state: InventoryState): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Inventory]
+    inline def get(name: String, id: Input[ID], state: InventoryState, opts: CustomResourceOptions): Inventory = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Inventory]
     
     /**
       * Returns true if the given object is an instance of Inventory.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/inventory.Inventory */ Boolean]
   }
   
   trait InventoryArgs extends StObject {
@@ -146,8 +141,7 @@ object inventoryMod {
   }
   object InventoryArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bucket: Input[String],
       destination: Input[typings.pulumiAws.inputMod.s3.InventoryDestination],
       includedObjectVersions: Input[String],
@@ -157,47 +151,33 @@ object inventoryMod {
       __obj.asInstanceOf[InventoryArgs]
     }
     
-    @scala.inline
-    implicit class InventoryArgsMutableBuilder[Self <: InventoryArgs] (val x: Self) extends AnyVal {
+    extension [Self <: InventoryArgs](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestination(value: Input[typings.pulumiAws.inputMod.s3.InventoryDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Input[typings.pulumiAws.inputMod.s3.InventoryDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFilter(value: Input[typings.pulumiAws.inputMod.s3.InventoryFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Input[typings.pulumiAws.inputMod.s3.InventoryFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setIncludedObjectVersions(value: Input[String]): Self = StObject.set(x, "includedObjectVersions", value.asInstanceOf[js.Any])
+      inline def setIncludedObjectVersions(value: Input[String]): Self = StObject.set(x, "includedObjectVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOptionalFields(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "optionalFields", value.asInstanceOf[js.Any])
+      inline def setOptionalFields(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "optionalFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalFieldsUndefined: Self = StObject.set(x, "optionalFields", js.undefined)
+      inline def setOptionalFieldsUndefined: Self = StObject.set(x, "optionalFields", js.undefined)
       
-      @scala.inline
-      def setOptionalFieldsVarargs(value: Input[String]*): Self = StObject.set(x, "optionalFields", js.Array(value :_*))
+      inline def setOptionalFieldsVarargs(value: Input[String]*): Self = StObject.set(x, "optionalFields", js.Array(value :_*))
       
-      @scala.inline
-      def setSchedule(value: Input[typings.pulumiAws.inputMod.s3.InventorySchedule]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[typings.pulumiAws.inputMod.s3.InventorySchedule]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     }
   }
   
@@ -246,65 +226,46 @@ object inventoryMod {
   }
   object InventoryState {
     
-    @scala.inline
-    def apply(): InventoryState = {
+    inline def apply(): InventoryState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InventoryState]
     }
     
-    @scala.inline
-    implicit class InventoryStateMutableBuilder[Self <: InventoryState] (val x: Self) extends AnyVal {
+    extension [Self <: InventoryState](x: Self) {
       
-      @scala.inline
-      def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: Input[String]): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+      inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
       
-      @scala.inline
-      def setDestination(value: Input[typings.pulumiAws.inputMod.s3.InventoryDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: Input[typings.pulumiAws.inputMod.s3.InventoryDestination]): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setFilter(value: Input[typings.pulumiAws.inputMod.s3.InventoryFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: Input[typings.pulumiAws.inputMod.s3.InventoryFilter]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setIncludedObjectVersions(value: Input[String]): Self = StObject.set(x, "includedObjectVersions", value.asInstanceOf[js.Any])
+      inline def setIncludedObjectVersions(value: Input[String]): Self = StObject.set(x, "includedObjectVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludedObjectVersionsUndefined: Self = StObject.set(x, "includedObjectVersions", js.undefined)
+      inline def setIncludedObjectVersionsUndefined: Self = StObject.set(x, "includedObjectVersions", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOptionalFields(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "optionalFields", value.asInstanceOf[js.Any])
+      inline def setOptionalFields(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "optionalFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalFieldsUndefined: Self = StObject.set(x, "optionalFields", js.undefined)
+      inline def setOptionalFieldsUndefined: Self = StObject.set(x, "optionalFields", js.undefined)
       
-      @scala.inline
-      def setOptionalFieldsVarargs(value: Input[String]*): Self = StObject.set(x, "optionalFields", js.Array(value :_*))
+      inline def setOptionalFieldsVarargs(value: Input[String]*): Self = StObject.set(x, "optionalFields", js.Array(value :_*))
       
-      @scala.inline
-      def setSchedule(value: Input[typings.pulumiAws.inputMod.s3.InventorySchedule]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+      inline def setSchedule(value: Input[typings.pulumiAws.inputMod.s3.InventorySchedule]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+      inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     }
   }
 }

@@ -28,37 +28,27 @@ trait ListTaskDefinitionFamiliesRequest extends StObject {
 }
 object ListTaskDefinitionFamiliesRequest {
   
-  @scala.inline
-  def apply(): ListTaskDefinitionFamiliesRequest = {
+  inline def apply(): ListTaskDefinitionFamiliesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTaskDefinitionFamiliesRequest]
   }
   
-  @scala.inline
-  implicit class ListTaskDefinitionFamiliesRequestMutableBuilder[Self <: ListTaskDefinitionFamiliesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTaskDefinitionFamiliesRequest](x: Self) {
     
-    @scala.inline
-    def setFamilyPrefix(value: String): Self = StObject.set(x, "familyPrefix", value.asInstanceOf[js.Any])
+    inline def setFamilyPrefix(value: String): Self = StObject.set(x, "familyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyPrefixUndefined: Self = StObject.set(x, "familyPrefix", js.undefined)
+    inline def setFamilyPrefixUndefined: Self = StObject.set(x, "familyPrefix", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TaskDefinitionFamilyStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TaskDefinitionFamilyStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

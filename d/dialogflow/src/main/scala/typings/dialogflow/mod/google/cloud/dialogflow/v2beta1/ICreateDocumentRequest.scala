@@ -15,31 +15,23 @@ trait ICreateDocumentRequest extends StObject {
 }
 object ICreateDocumentRequest {
   
-  @scala.inline
-  def apply(): ICreateDocumentRequest = {
+  inline def apply(): ICreateDocumentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICreateDocumentRequest]
   }
   
-  @scala.inline
-  implicit class ICreateDocumentRequestMutableBuilder[Self <: ICreateDocumentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ICreateDocumentRequest](x: Self) {
     
-    @scala.inline
-    def setDocument(value: IDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: IDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentNull: Self = StObject.set(x, "document", null)
+    inline def setDocumentNull: Self = StObject.set(x, "document", null)
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

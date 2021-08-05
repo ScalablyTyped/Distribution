@@ -24,25 +24,19 @@ trait SchemaClusterSelector extends StObject {
 }
 object SchemaClusterSelector {
   
-  @scala.inline
-  def apply(): SchemaClusterSelector = {
+  inline def apply(): SchemaClusterSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClusterSelector]
   }
   
-  @scala.inline
-  implicit class SchemaClusterSelectorMutableBuilder[Self <: SchemaClusterSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClusterSelector](x: Self) {
     
-    @scala.inline
-    def setClusterLabels(value: StringDictionary[String]): Self = StObject.set(x, "clusterLabels", value.asInstanceOf[js.Any])
+    inline def setClusterLabels(value: StringDictionary[String]): Self = StObject.set(x, "clusterLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterLabelsUndefined: Self = StObject.set(x, "clusterLabels", js.undefined)
+    inline def setClusterLabelsUndefined: Self = StObject.set(x, "clusterLabels", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

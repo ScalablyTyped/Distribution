@@ -74,61 +74,43 @@ trait FieldInfoProperties extends StObject {
 }
 object FieldInfoProperties {
   
-  @scala.inline
-  def apply(): FieldInfoProperties = {
+  inline def apply(): FieldInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldInfoProperties]
   }
   
-  @scala.inline
-  implicit class FieldInfoPropertiesMutableBuilder[Self <: FieldInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FieldInfoProperties](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
-    @scala.inline
-    def setFormat(value: FieldInfoFormatProperties): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: FieldInfoFormatProperties): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
+    inline def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEditableUndefined: Self = StObject.set(x, "isEditable", js.undefined)
+    inline def setIsEditableUndefined: Self = StObject.set(x, "isEditable", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setStatisticType(value: count | sum | min | max | avg | stddev | `var`): Self = StObject.set(x, "statisticType", value.asInstanceOf[js.Any])
+    inline def setStatisticType(value: count | sum | min | max | avg | stddev | `var`): Self = StObject.set(x, "statisticType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticTypeUndefined: Self = StObject.set(x, "statisticType", js.undefined)
+    inline def setStatisticTypeUndefined: Self = StObject.set(x, "statisticType", js.undefined)
     
-    @scala.inline
-    def setStringFieldOption(value: `rich-text` | `text-area` | `text-box`): Self = StObject.set(x, "stringFieldOption", value.asInstanceOf[js.Any])
+    inline def setStringFieldOption(value: `rich-text` | `text-area` | `text-box`): Self = StObject.set(x, "stringFieldOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringFieldOptionUndefined: Self = StObject.set(x, "stringFieldOption", js.undefined)
+    inline def setStringFieldOptionUndefined: Self = StObject.set(x, "stringFieldOption", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

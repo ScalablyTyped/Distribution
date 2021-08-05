@@ -19,23 +19,23 @@ object mod {
       */
     def this(options: IOptions) = this()
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
     /**
       * Initialize MathJax.
       */
-    var _init: js.Any = js.native
+    /* private */ var _init: js.Any = js.native
     
-    var _initPromise: js.Any = js.native
+    /* private */ var _initPromise: js.Any = js.native
     
-    var _initialized: js.Any = js.native
+    /* private */ var _initialized: js.Any = js.native
     
     /**
       * Handle MathJax loading.
       */
-    var _onLoad: js.Any = js.native
+    /* private */ var _onLoad: js.Any = js.native
     
-    var _url: js.Any = js.native
+    /* private */ var _url: js.Any = js.native
     
     /**
       * Typeset a DOM element.
@@ -71,20 +71,16 @@ object mod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(config: String, url: String): IOptions = {
+      inline def apply(config: String, url: String): IOptions = {
         val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+        inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
   }

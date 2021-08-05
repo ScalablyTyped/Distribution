@@ -12,8 +12,6 @@ object tensorFormatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tensorToString(vals: js.Array[String], shape: js.Array[Double], dtype: DataType, verbose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorToString")(vals.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def tensorToString(vals: TypedArray, shape: js.Array[Double], dtype: DataType, verbose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorToString")(vals.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def tensorToString(vals: js.Array[String], shape: js.Array[Double], dtype: DataType, verbose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorToString")(vals.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def tensorToString(vals: TypedArray, shape: js.Array[Double], dtype: DataType, verbose: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorToString")(vals.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[String]
 }

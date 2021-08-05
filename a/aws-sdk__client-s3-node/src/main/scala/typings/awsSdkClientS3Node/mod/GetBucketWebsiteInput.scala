@@ -9,8 +9,7 @@ trait GetBucketWebsiteInput
      with typings.awsSdkClientS3Node.typesGetBucketWebsiteInputMod.GetBucketWebsiteInput
 object GetBucketWebsiteInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketWebsiteInput = {
+  inline def apply(Bucket: String): GetBucketWebsiteInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketWebsiteInput]
   }

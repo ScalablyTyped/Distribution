@@ -31,8 +31,7 @@ trait PerformanceNavigationTiming
 }
 object PerformanceNavigationTiming {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectEnd: Double,
     connectStart: Double,
     decodedBodySize: Double,
@@ -71,37 +70,26 @@ object PerformanceNavigationTiming {
     __obj.asInstanceOf[PerformanceNavigationTiming]
   }
   
-  @scala.inline
-  implicit class PerformanceNavigationTimingMutableBuilder[Self <: PerformanceNavigationTiming] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceNavigationTiming](x: Self) {
     
-    @scala.inline
-    def setDomComplete(value: Double): Self = StObject.set(x, "domComplete", value.asInstanceOf[js.Any])
+    inline def setDomComplete(value: Double): Self = StObject.set(x, "domComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomContentLoadedEventEnd(value: Double): Self = StObject.set(x, "domContentLoadedEventEnd", value.asInstanceOf[js.Any])
+    inline def setDomContentLoadedEventEnd(value: Double): Self = StObject.set(x, "domContentLoadedEventEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomContentLoadedEventStart(value: Double): Self = StObject.set(x, "domContentLoadedEventStart", value.asInstanceOf[js.Any])
+    inline def setDomContentLoadedEventStart(value: Double): Self = StObject.set(x, "domContentLoadedEventStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomInteractive(value: Double): Self = StObject.set(x, "domInteractive", value.asInstanceOf[js.Any])
+    inline def setDomInteractive(value: Double): Self = StObject.set(x, "domInteractive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadEventEnd(value: Double): Self = StObject.set(x, "loadEventEnd", value.asInstanceOf[js.Any])
+    inline def setLoadEventEnd(value: Double): Self = StObject.set(x, "loadEventEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadEventStart(value: Double): Self = StObject.set(x, "loadEventStart", value.asInstanceOf[js.Any])
+    inline def setLoadEventStart(value: Double): Self = StObject.set(x, "loadEventStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
+    inline def setRedirectCount(value: Double): Self = StObject.set(x, "redirectCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NavigationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NavigationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnloadEventEnd(value: Double): Self = StObject.set(x, "unloadEventEnd", value.asInstanceOf[js.Any])
+    inline def setUnloadEventEnd(value: Double): Self = StObject.set(x, "unloadEventEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnloadEventStart(value: Double): Self = StObject.set(x, "unloadEventStart", value.asInstanceOf[js.Any])
+    inline def setUnloadEventStart(value: Double): Self = StObject.set(x, "unloadEventStart", value.asInstanceOf[js.Any])
   }
 }

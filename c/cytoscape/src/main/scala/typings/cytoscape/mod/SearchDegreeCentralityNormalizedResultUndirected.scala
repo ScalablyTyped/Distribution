@@ -14,16 +14,13 @@ trait SearchDegreeCentralityNormalizedResultUndirected extends StObject {
 }
 object SearchDegreeCentralityNormalizedResultUndirected {
   
-  @scala.inline
-  def apply(degree: NodeSingular => js.Any): SearchDegreeCentralityNormalizedResultUndirected = {
+  inline def apply(degree: NodeSingular => js.Any): SearchDegreeCentralityNormalizedResultUndirected = {
     val __obj = js.Dynamic.literal(degree = js.Any.fromFunction1(degree))
     __obj.asInstanceOf[SearchDegreeCentralityNormalizedResultUndirected]
   }
   
-  @scala.inline
-  implicit class SearchDegreeCentralityNormalizedResultUndirectedMutableBuilder[Self <: SearchDegreeCentralityNormalizedResultUndirected] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDegreeCentralityNormalizedResultUndirected](x: Self) {
     
-    @scala.inline
-    def setDegree(value: NodeSingular => js.Any): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
+    inline def setDegree(value: NodeSingular => js.Any): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
   }
 }

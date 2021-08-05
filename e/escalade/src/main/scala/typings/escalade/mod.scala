@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(directory: String, callback: Callback): js.Promise[String | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(directory.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Unit]]
+  inline def default(directory: String, callback: Callback): js.Promise[String | Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(directory.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Unit]]
   
   type Callback = js.Function2[
     /* directory */ String, 

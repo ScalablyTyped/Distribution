@@ -13,19 +13,15 @@ trait AdHocFilteringOption extends StObject {
 }
 object AdHocFilteringOption {
   
-  @scala.inline
-  def apply(): AdHocFilteringOption = {
+  inline def apply(): AdHocFilteringOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdHocFilteringOption]
   }
   
-  @scala.inline
-  implicit class AdHocFilteringOptionMutableBuilder[Self <: AdHocFilteringOption] (val x: Self) extends AnyVal {
+  extension [Self <: AdHocFilteringOption](x: Self) {
     
-    @scala.inline
-    def setAvailabilityStatus(value: DashboardBehavior): Self = StObject.set(x, "AvailabilityStatus", value.asInstanceOf[js.Any])
+    inline def setAvailabilityStatus(value: DashboardBehavior): Self = StObject.set(x, "AvailabilityStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityStatusUndefined: Self = StObject.set(x, "AvailabilityStatus", js.undefined)
+    inline def setAvailabilityStatusUndefined: Self = StObject.set(x, "AvailabilityStatus", js.undefined)
   }
 }

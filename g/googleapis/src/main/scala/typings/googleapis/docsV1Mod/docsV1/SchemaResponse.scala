@@ -31,37 +31,27 @@ trait SchemaResponse extends StObject {
 }
 object SchemaResponse {
   
-  @scala.inline
-  def apply(): SchemaResponse = {
+  inline def apply(): SchemaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResponse]
   }
   
-  @scala.inline
-  implicit class SchemaResponseMutableBuilder[Self <: SchemaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResponse](x: Self) {
     
-    @scala.inline
-    def setCreateNamedRange(value: SchemaCreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
+    inline def setCreateNamedRange(value: SchemaCreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
+    inline def setCreateNamedRangeUndefined: Self = StObject.set(x, "createNamedRange", js.undefined)
     
-    @scala.inline
-    def setInsertInlineImage(value: SchemaInsertInlineImageResponse): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
+    inline def setInsertInlineImage(value: SchemaInsertInlineImageResponse): Self = StObject.set(x, "insertInlineImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
+    inline def setInsertInlineImageUndefined: Self = StObject.set(x, "insertInlineImage", js.undefined)
     
-    @scala.inline
-    def setInsertInlineSheetsChart(value: SchemaInsertInlineSheetsChartResponse): Self = StObject.set(x, "insertInlineSheetsChart", value.asInstanceOf[js.Any])
+    inline def setInsertInlineSheetsChart(value: SchemaInsertInlineSheetsChartResponse): Self = StObject.set(x, "insertInlineSheetsChart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertInlineSheetsChartUndefined: Self = StObject.set(x, "insertInlineSheetsChart", js.undefined)
+    inline def setInsertInlineSheetsChartUndefined: Self = StObject.set(x, "insertInlineSheetsChart", js.undefined)
     
-    @scala.inline
-    def setReplaceAllText(value: SchemaReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
+    inline def setReplaceAllText(value: SchemaReplaceAllTextResponse): Self = StObject.set(x, "replaceAllText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
+    inline def setReplaceAllTextUndefined: Self = StObject.set(x, "replaceAllText", js.undefined)
   }
 }

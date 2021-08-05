@@ -13,16 +13,13 @@ trait DeleteLogGroupRequest extends StObject {
 }
 object DeleteLogGroupRequest {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName): DeleteLogGroupRequest = {
+  inline def apply(logGroupName: LogGroupName): DeleteLogGroupRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLogGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteLogGroupRequestMutableBuilder[Self <: DeleteLogGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteLogGroupRequest](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }
 }

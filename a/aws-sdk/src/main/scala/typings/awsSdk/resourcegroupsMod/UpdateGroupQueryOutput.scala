@@ -13,19 +13,15 @@ trait UpdateGroupQueryOutput extends StObject {
 }
 object UpdateGroupQueryOutput {
   
-  @scala.inline
-  def apply(): UpdateGroupQueryOutput = {
+  inline def apply(): UpdateGroupQueryOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateGroupQueryOutput]
   }
   
-  @scala.inline
-  implicit class UpdateGroupQueryOutputMutableBuilder[Self <: UpdateGroupQueryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGroupQueryOutput](x: Self) {
     
-    @scala.inline
-    def setGroupQuery(value: GroupQuery): Self = StObject.set(x, "GroupQuery", value.asInstanceOf[js.Any])
+    inline def setGroupQuery(value: GroupQuery): Self = StObject.set(x, "GroupQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupQueryUndefined: Self = StObject.set(x, "GroupQuery", js.undefined)
+    inline def setGroupQueryUndefined: Self = StObject.set(x, "GroupQuery", js.undefined)
   }
 }

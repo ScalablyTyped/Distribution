@@ -18,43 +18,31 @@ trait WizardStepButton extends StObject {
 }
 object WizardStepButton {
   
-  @scala.inline
-  def apply(): WizardStepButton = {
+  inline def apply(): WizardStepButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WizardStepButton]
   }
   
-  @scala.inline
-  implicit class WizardStepButtonMutableBuilder[Self <: WizardStepButton] (val x: Self) extends AnyVal {
+  extension [Self <: WizardStepButton](x: Self) {
     
-    @scala.inline
-    def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait ClusterPushpin
 }
 object ClusterPushpin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containedPushpins: js.Array[Pushpin],
     getAnchor: () => Point,
     getClickedStyleEnabled: () => Boolean,
@@ -44,16 +43,12 @@ object ClusterPushpin {
     __obj.asInstanceOf[ClusterPushpin]
   }
   
-  @scala.inline
-  implicit class ClusterPushpinMutableBuilder[Self <: ClusterPushpin] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterPushpin](x: Self) {
     
-    @scala.inline
-    def setContainedPushpins(value: js.Array[Pushpin]): Self = StObject.set(x, "containedPushpins", value.asInstanceOf[js.Any])
+    inline def setContainedPushpins(value: js.Array[Pushpin]): Self = StObject.set(x, "containedPushpins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainedPushpinsVarargs(value: Pushpin*): Self = StObject.set(x, "containedPushpins", js.Array(value :_*))
+    inline def setContainedPushpinsVarargs(value: Pushpin*): Self = StObject.set(x, "containedPushpins", js.Array(value :_*))
     
-    @scala.inline
-    def setGridKey(value: Double): Self = StObject.set(x, "gridKey", value.asInstanceOf[js.Any])
+    inline def setGridKey(value: Double): Self = StObject.set(x, "gridKey", value.asInstanceOf[js.Any])
   }
 }

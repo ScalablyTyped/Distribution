@@ -34,49 +34,35 @@ trait MasterAuth extends StObject {
 }
 object MasterAuth {
   
-  @scala.inline
-  def apply(): MasterAuth = {
+  inline def apply(): MasterAuth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MasterAuth]
   }
   
-  @scala.inline
-  implicit class MasterAuthMutableBuilder[Self <: MasterAuth] (val x: Self) extends AnyVal {
+  extension [Self <: MasterAuth](x: Self) {
     
-    @scala.inline
-    def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
+    inline def setClientCertificate(value: String): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertificateConfig(value: ClientCertificateConfig): Self = StObject.set(x, "clientCertificateConfig", value.asInstanceOf[js.Any])
+    inline def setClientCertificateConfig(value: ClientCertificateConfig): Self = StObject.set(x, "clientCertificateConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientCertificateConfigUndefined: Self = StObject.set(x, "clientCertificateConfig", js.undefined)
+    inline def setClientCertificateConfigUndefined: Self = StObject.set(x, "clientCertificateConfig", js.undefined)
     
-    @scala.inline
-    def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
+    inline def setClientCertificateUndefined: Self = StObject.set(x, "clientCertificate", js.undefined)
     
-    @scala.inline
-    def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
+    inline def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
+    inline def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
     
-    @scala.inline
-    def setClusterCaCertificate(value: String): Self = StObject.set(x, "clusterCaCertificate", value.asInstanceOf[js.Any])
+    inline def setClusterCaCertificate(value: String): Self = StObject.set(x, "clusterCaCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterCaCertificateUndefined: Self = StObject.set(x, "clusterCaCertificate", js.undefined)
+    inline def setClusterCaCertificateUndefined: Self = StObject.set(x, "clusterCaCertificate", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

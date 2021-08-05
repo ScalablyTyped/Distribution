@@ -25,8 +25,7 @@ object serverRouterMod {
     def this(hasBasePathHeadersFsRoutesRewritesRedirectsCatchAllRouteDynamicRoutesPageCheckerUseFileSystemPublicRoutesLocales: CatchAllRoute) = this()
   }
   
-  @scala.inline
-  def route(path: String): js.Function2[/* pathname */ js.UndefOr[String | Null], /* params */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* pathname */ js.UndefOr[String | Null], /* params */ js.UndefOr[js.Any], js.Any]]
+  inline def route(path: String): js.Function2[/* pathname */ js.UndefOr[String | Null], /* params */ js.UndefOr[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("route")(path.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* pathname */ js.UndefOr[String | Null], /* params */ js.UndefOr[js.Any], js.Any]]
   
   type DynamicRoutes = js.Array[Match]
   
@@ -46,29 +45,22 @@ object serverRouterMod {
   }
   object RouteResult {
     
-    @scala.inline
-    def apply(finished: Boolean): RouteResult = {
+    inline def apply(finished: Boolean): RouteResult = {
       val __obj = js.Dynamic.literal(finished = finished.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteResult]
     }
     
-    @scala.inline
-    implicit class RouteResultMutableBuilder[Self <: RouteResult] (val x: Self) extends AnyVal {
+    extension [Self <: RouteResult](x: Self) {
       
-      @scala.inline
-      def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+      inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
       
-      @scala.inline
-      def setQuery(value: StringDictionary[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringDictionary[String]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
@@ -90,8 +82,7 @@ object serverRouterMod {
   }
   object Route_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fn: (IncomingMessage, ServerResponse, Params, UrlWithParsedQuery) => js.Promise[RouteResult] | RouteResult,
       `match`: /* pathname */ js.UndefOr[String | Null] => `false` | Params,
       name: String,
@@ -103,40 +94,29 @@ object serverRouterMod {
       __obj.asInstanceOf[Route_]
     }
     
-    @scala.inline
-    implicit class Route_MutableBuilder[Self <: Route_] (val x: Self) extends AnyVal {
+    extension [Self <: Route_](x: Self) {
       
-      @scala.inline
-      def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setFn(
+      inline def setFn(
         value: (IncomingMessage, ServerResponse, Params, UrlWithParsedQuery) => js.Promise[RouteResult] | RouteResult
       ): Self = StObject.set(x, "fn", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setMatch(value: /* pathname */ js.UndefOr[String | Null] => `false` | Params): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+      inline def setMatch(value: /* pathname */ js.UndefOr[String | Null] => `false` | Params): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireBasePath(value: `false`): Self = StObject.set(x, "requireBasePath", value.asInstanceOf[js.Any])
+      inline def setRequireBasePath(value: `false`): Self = StObject.set(x, "requireBasePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequireBasePathUndefined: Self = StObject.set(x, "requireBasePath", js.undefined)
+      inline def setRequireBasePathUndefined: Self = StObject.set(x, "requireBasePath", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

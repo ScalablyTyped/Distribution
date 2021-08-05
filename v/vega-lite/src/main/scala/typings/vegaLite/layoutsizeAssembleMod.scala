@@ -15,12 +15,9 @@ object layoutsizeAssembleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def assembleLayoutSignals(model: Model): js.Array[NewSignal] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleLayoutSignals")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[NewSignal]]
+  inline def assembleLayoutSignals(model: Model): js.Array[NewSignal] = ^.asInstanceOf[js.Dynamic].applyDynamic("assembleLayoutSignals")(model.asInstanceOf[js.Any]).asInstanceOf[js.Array[NewSignal]]
   
-  @scala.inline
-  def sizeExpr(scaleName: String, scaleComponent: ScaleComponent, cardinality: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sizeExpr")(scaleName.asInstanceOf[js.Any], scaleComponent.asInstanceOf[js.Any], cardinality.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sizeExpr(scaleName: String, scaleComponent: ScaleComponent, cardinality: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sizeExpr")(scaleName.asInstanceOf[js.Any], scaleComponent.asInstanceOf[js.Any], cardinality.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def sizeSignals(model: Model, sizeType: LayoutSizeType): js.Array[NewSignal | InitSignal] = (^.asInstanceOf[js.Dynamic].applyDynamic("sizeSignals")(model.asInstanceOf[js.Any], sizeType.asInstanceOf[js.Any])).asInstanceOf[js.Array[NewSignal | InitSignal]]
+  inline def sizeSignals(model: Model, sizeType: LayoutSizeType): js.Array[NewSignal | InitSignal] = (^.asInstanceOf[js.Dynamic].applyDynamic("sizeSignals")(model.asInstanceOf[js.Any], sizeType.asInstanceOf[js.Any])).asInstanceOf[js.Array[NewSignal | InitSignal]]
 }

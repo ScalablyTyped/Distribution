@@ -18,25 +18,19 @@ trait EffectivePatch extends StObject {
 }
 object EffectivePatch {
   
-  @scala.inline
-  def apply(): EffectivePatch = {
+  inline def apply(): EffectivePatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EffectivePatch]
   }
   
-  @scala.inline
-  implicit class EffectivePatchMutableBuilder[Self <: EffectivePatch] (val x: Self) extends AnyVal {
+  extension [Self <: EffectivePatch](x: Self) {
     
-    @scala.inline
-    def setPatch(value: Patch): Self = StObject.set(x, "Patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Patch): Self = StObject.set(x, "Patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchStatus(value: PatchStatus): Self = StObject.set(x, "PatchStatus", value.asInstanceOf[js.Any])
+    inline def setPatchStatus(value: PatchStatus): Self = StObject.set(x, "PatchStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchStatusUndefined: Self = StObject.set(x, "PatchStatus", js.undefined)
+    inline def setPatchStatusUndefined: Self = StObject.set(x, "PatchStatus", js.undefined)
     
-    @scala.inline
-    def setPatchUndefined: Self = StObject.set(x, "Patch", js.undefined)
+    inline def setPatchUndefined: Self = StObject.set(x, "Patch", js.undefined)
   }
 }

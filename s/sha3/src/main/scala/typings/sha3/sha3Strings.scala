@@ -8,6 +8,5 @@ object sha3Strings {
   
   @js.native
   sealed trait binary extends StObject
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
+  inline def binary: binary = "binary".asInstanceOf[binary]
 }

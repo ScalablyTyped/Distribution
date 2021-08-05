@@ -13,19 +13,15 @@ trait Chromeresources extends StObject {
 }
 object Chromeresources {
   
-  @scala.inline
-  def apply(chrome_resources: UndefinedChromeResources, version: String): Chromeresources = {
+  inline def apply(chrome_resources: UndefinedChromeResources, version: String): Chromeresources = {
     val __obj = js.Dynamic.literal(chrome_resources = chrome_resources.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Chromeresources]
   }
   
-  @scala.inline
-  implicit class ChromeresourcesMutableBuilder[Self <: Chromeresources] (val x: Self) extends AnyVal {
+  extension [Self <: Chromeresources](x: Self) {
     
-    @scala.inline
-    def setChrome_resources(value: UndefinedChromeResources): Self = StObject.set(x, "chrome_resources", value.asInstanceOf[js.Any])
+    inline def setChrome_resources(value: UndefinedChromeResources): Self = StObject.set(x, "chrome_resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

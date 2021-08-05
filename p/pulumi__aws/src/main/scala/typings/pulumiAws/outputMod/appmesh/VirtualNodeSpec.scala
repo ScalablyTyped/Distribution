@@ -33,46 +33,33 @@ trait VirtualNodeSpec extends StObject {
 }
 object VirtualNodeSpec {
   
-  @scala.inline
-  def apply(): VirtualNodeSpec = {
+  inline def apply(): VirtualNodeSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualNodeSpec]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecMutableBuilder[Self <: VirtualNodeSpec] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpec](x: Self) {
     
-    @scala.inline
-    def setBackendDefaults(value: VirtualNodeSpecBackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
+    inline def setBackendDefaults(value: VirtualNodeSpecBackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendDefaultsUndefined: Self = StObject.set(x, "backendDefaults", js.undefined)
+    inline def setBackendDefaultsUndefined: Self = StObject.set(x, "backendDefaults", js.undefined)
     
-    @scala.inline
-    def setBackends(value: js.Array[VirtualNodeSpecBackend]): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
+    inline def setBackends(value: js.Array[VirtualNodeSpecBackend]): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendsUndefined: Self = StObject.set(x, "backends", js.undefined)
+    inline def setBackendsUndefined: Self = StObject.set(x, "backends", js.undefined)
     
-    @scala.inline
-    def setBackendsVarargs(value: VirtualNodeSpecBackend*): Self = StObject.set(x, "backends", js.Array(value :_*))
+    inline def setBackendsVarargs(value: VirtualNodeSpecBackend*): Self = StObject.set(x, "backends", js.Array(value :_*))
     
-    @scala.inline
-    def setListener(value: VirtualNodeSpecListener): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
+    inline def setListener(value: VirtualNodeSpecListener): Self = StObject.set(x, "listener", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
+    inline def setListenerUndefined: Self = StObject.set(x, "listener", js.undefined)
     
-    @scala.inline
-    def setLogging(value: VirtualNodeSpecLogging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: VirtualNodeSpecLogging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setServiceDiscovery(value: VirtualNodeSpecServiceDiscovery): Self = StObject.set(x, "serviceDiscovery", value.asInstanceOf[js.Any])
+    inline def setServiceDiscovery(value: VirtualNodeSpecServiceDiscovery): Self = StObject.set(x, "serviceDiscovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceDiscoveryUndefined: Self = StObject.set(x, "serviceDiscovery", js.undefined)
+    inline def setServiceDiscoveryUndefined: Self = StObject.set(x, "serviceDiscovery", js.undefined)
   }
 }

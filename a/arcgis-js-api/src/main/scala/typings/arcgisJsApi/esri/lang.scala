@@ -15,17 +15,14 @@ trait lang extends StObject {
 }
 object lang {
   
-  @scala.inline
-  def apply(clone_ : js.Any => js.Any): lang = {
+  inline def apply(clone_ : js.Any => js.Any): lang = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
     __obj.asInstanceOf[lang]
   }
   
-  @scala.inline
-  implicit class langMutableBuilder[Self <: lang] (val x: Self) extends AnyVal {
+  extension [Self <: lang](x: Self) {
     
-    @scala.inline
-    def setClone_(value: js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
   }
 }

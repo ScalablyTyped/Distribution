@@ -15,33 +15,25 @@ trait Error[TOperation /* <: OperationType */] extends StObject {
 }
 object Error {
   
-  @scala.inline
-  def apply[TOperation /* <: OperationType */](): Error[TOperation] = {
+  inline def apply[TOperation /* <: OperationType */](): Error[TOperation] = {
     val __obj = js.Dynamic.literal(error = null, props = null, retry = null)
     __obj.asInstanceOf[Error[TOperation]]
   }
   
-  @scala.inline
-  implicit class ErrorMutableBuilder[Self <: Error[?], TOperation /* <: OperationType */] (val x: Self & Error[TOperation]) extends AnyVal {
+  extension [Self <: Error[?], TOperation /* <: OperationType */](x: Self & Error[TOperation]) {
     
-    @scala.inline
-    def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorNull: Self = StObject.set(x, "error", null)
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
     
-    @scala.inline
-    def setProps(
+    inline def setProps(
       value: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
     ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsNull: Self = StObject.set(x, "props", null)
+    inline def setPropsNull: Self = StObject.set(x, "props", null)
     
-    @scala.inline
-    def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
+    inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRetryNull: Self = StObject.set(x, "retry", null)
+    inline def setRetryNull: Self = StObject.set(x, "retry", null)
   }
 }

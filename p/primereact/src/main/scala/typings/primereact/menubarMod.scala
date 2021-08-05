@@ -36,53 +36,38 @@ object menubarMod {
   }
   object MenubarProps {
     
-    @scala.inline
-    def apply(): MenubarProps = {
+    inline def apply(): MenubarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenubarProps]
     }
     
-    @scala.inline
-    implicit class MenubarPropsMutableBuilder[Self <: MenubarProps] (val x: Self) extends AnyVal {
+    extension [Self <: MenubarProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setEnd(value: /* props */ js.Object => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+      inline def setEnd(value: /* props */ js.Object => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Array[MenuItem]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Array[MenuItem]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setModelVarargs(value: MenuItem*): Self = StObject.set(x, "model", js.Array(value :_*))
+      inline def setModelVarargs(value: MenuItem*): Self = StObject.set(x, "model", js.Array(value :_*))
       
-      @scala.inline
-      def setStart(value: /* props */ js.Object => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: /* props */ js.Object => js.Any): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

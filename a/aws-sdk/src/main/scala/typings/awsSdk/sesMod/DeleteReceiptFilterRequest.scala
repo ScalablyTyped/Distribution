@@ -13,16 +13,13 @@ trait DeleteReceiptFilterRequest extends StObject {
 }
 object DeleteReceiptFilterRequest {
   
-  @scala.inline
-  def apply(FilterName: ReceiptFilterName): DeleteReceiptFilterRequest = {
+  inline def apply(FilterName: ReceiptFilterName): DeleteReceiptFilterRequest = {
     val __obj = js.Dynamic.literal(FilterName = FilterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteReceiptFilterRequest]
   }
   
-  @scala.inline
-  implicit class DeleteReceiptFilterRequestMutableBuilder[Self <: DeleteReceiptFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteReceiptFilterRequest](x: Self) {
     
-    @scala.inline
-    def setFilterName(value: ReceiptFilterName): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
+    inline def setFilterName(value: ReceiptFilterName): Self = StObject.set(x, "FilterName", value.asInstanceOf[js.Any])
   }
 }

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcBrowseToObjectType extends StObject
 object AcBrowseToObjectType {
   
-  @scala.inline
-  def acBrowseToForm: `2` = 2.asInstanceOf[`2`]
+  inline def acBrowseToForm: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acBrowseToReport: `3` = 3.asInstanceOf[`3`]
+  inline def acBrowseToReport: `3` = 3.asInstanceOf[`3`]
 }

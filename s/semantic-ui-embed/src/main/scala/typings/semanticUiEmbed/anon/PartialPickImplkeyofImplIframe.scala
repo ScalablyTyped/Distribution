@@ -13,25 +13,19 @@ trait PartialPickImplkeyofImplIframe extends StObject {
 }
 object PartialPickImplkeyofImplIframe {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplIframe = {
+  inline def apply(): PartialPickImplkeyofImplIframe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplIframe]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplIframeMutableBuilder[Self <: PartialPickImplkeyofImplIframe] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplIframe](x: Self) {
     
-    @scala.inline
-    def setIframe(value: (/* url */ String, /* parameters */ String) => String): Self = StObject.set(x, "iframe", js.Any.fromFunction2(value))
+    inline def setIframe(value: (/* url */ String, /* parameters */ String) => String): Self = StObject.set(x, "iframe", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIframeUndefined: Self = StObject.set(x, "iframe", js.undefined)
+    inline def setIframeUndefined: Self = StObject.set(x, "iframe", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: (/* image */ String, /* icon */ String) => String): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
+    inline def setPlaceholder(value: (/* image */ String, /* icon */ String) => String): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
   }
 }

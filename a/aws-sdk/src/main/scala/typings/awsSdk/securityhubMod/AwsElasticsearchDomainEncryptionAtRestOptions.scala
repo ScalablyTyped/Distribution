@@ -18,25 +18,19 @@ trait AwsElasticsearchDomainEncryptionAtRestOptions extends StObject {
 }
 object AwsElasticsearchDomainEncryptionAtRestOptions {
   
-  @scala.inline
-  def apply(): AwsElasticsearchDomainEncryptionAtRestOptions = {
+  inline def apply(): AwsElasticsearchDomainEncryptionAtRestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElasticsearchDomainEncryptionAtRestOptions]
   }
   
-  @scala.inline
-  implicit class AwsElasticsearchDomainEncryptionAtRestOptionsMutableBuilder[Self <: AwsElasticsearchDomainEncryptionAtRestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElasticsearchDomainEncryptionAtRestOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
   }
 }

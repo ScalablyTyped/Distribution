@@ -13,19 +13,15 @@ trait TensorBoardAppSettings extends StObject {
 }
 object TensorBoardAppSettings {
   
-  @scala.inline
-  def apply(): TensorBoardAppSettings = {
+  inline def apply(): TensorBoardAppSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TensorBoardAppSettings]
   }
   
-  @scala.inline
-  implicit class TensorBoardAppSettingsMutableBuilder[Self <: TensorBoardAppSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TensorBoardAppSettings](x: Self) {
     
-    @scala.inline
-    def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
+    inline def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultResourceSpecUndefined: Self = StObject.set(x, "DefaultResourceSpec", js.undefined)
+    inline def setDefaultResourceSpecUndefined: Self = StObject.set(x, "DefaultResourceSpec", js.undefined)
   }
 }

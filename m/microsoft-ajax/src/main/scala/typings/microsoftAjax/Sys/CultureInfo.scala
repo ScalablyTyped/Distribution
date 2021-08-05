@@ -36,28 +36,21 @@ trait CultureInfo extends StObject {
 }
 object CultureInfo {
   
-  @scala.inline
-  def apply(dateTimeFormat: js.Array[String], name: String, numberFormat: js.Array[String]): CultureInfo = {
+  inline def apply(dateTimeFormat: js.Array[String], name: String, numberFormat: js.Array[String]): CultureInfo = {
     val __obj = js.Dynamic.literal(dateTimeFormat = dateTimeFormat.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], numberFormat = numberFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[CultureInfo]
   }
   
-  @scala.inline
-  implicit class CultureInfoMutableBuilder[Self <: CultureInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CultureInfo](x: Self) {
     
-    @scala.inline
-    def setDateTimeFormat(value: js.Array[String]): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
+    inline def setDateTimeFormat(value: js.Array[String]): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeFormatVarargs(value: String*): Self = StObject.set(x, "dateTimeFormat", js.Array(value :_*))
+    inline def setDateTimeFormatVarargs(value: String*): Self = StObject.set(x, "dateTimeFormat", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormat(value: js.Array[String]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: js.Array[String]): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatVarargs(value: String*): Self = StObject.set(x, "numberFormat", js.Array(value :_*))
+    inline def setNumberFormatVarargs(value: String*): Self = StObject.set(x, "numberFormat", js.Array(value :_*))
   }
 }

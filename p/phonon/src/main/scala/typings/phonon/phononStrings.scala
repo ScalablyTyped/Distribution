@@ -13,76 +13,65 @@ object phononStrings {
   sealed trait JSON_MALFORMED
     extends StObject
        with PhononAjaxErrorFlag
-  @scala.inline
-  def JSON_MALFORMED: JSON_MALFORMED = "JSON_MALFORMED".asInstanceOf[JSON_MALFORMED]
+  inline def JSON_MALFORMED: JSON_MALFORMED = "JSON_MALFORMED".asInstanceOf[JSON_MALFORMED]
   
   @js.native
   sealed trait NO_INTERNET_ACCESS
     extends StObject
        with PhononAjaxErrorFlag
-  @scala.inline
-  def NO_INTERNET_ACCESS: NO_INTERNET_ACCESS = "NO_INTERNET_ACCESS".asInstanceOf[NO_INTERNET_ACCESS]
+  inline def NO_INTERNET_ACCESS: NO_INTERNET_ACCESS = "NO_INTERNET_ACCESS".asInstanceOf[NO_INTERNET_ACCESS]
   
   @js.native
   sealed trait REQUEST_CANCELED
     extends StObject
        with PhononAjaxErrorFlag
-  @scala.inline
-  def REQUEST_CANCELED: REQUEST_CANCELED = "REQUEST_CANCELED".asInstanceOf[REQUEST_CANCELED]
+  inline def REQUEST_CANCELED: REQUEST_CANCELED = "REQUEST_CANCELED".asInstanceOf[REQUEST_CANCELED]
   
   @js.native
   sealed trait TIMEOUT_EXCEEDED
     extends StObject
        with PhononAjaxErrorFlag
-  @scala.inline
-  def TIMEOUT_EXCEEDED: TIMEOUT_EXCEEDED = "TIMEOUT_EXCEEDED".asInstanceOf[TIMEOUT_EXCEEDED]
+  inline def TIMEOUT_EXCEEDED: TIMEOUT_EXCEEDED = "TIMEOUT_EXCEEDED".asInstanceOf[TIMEOUT_EXCEEDED]
   
   @js.native
   sealed trait XMLHTTPREQUEST_UNAVAILABLE
     extends StObject
        with PhononAjaxErrorFlag
-  @scala.inline
-  def XMLHTTPREQUEST_UNAVAILABLE: XMLHTTPREQUEST_UNAVAILABLE = "XMLHTTPREQUEST_UNAVAILABLE".asInstanceOf[XMLHTTPREQUEST_UNAVAILABLE]
+  inline def XMLHTTPREQUEST_UNAVAILABLE: XMLHTTPREQUEST_UNAVAILABLE = "XMLHTTPREQUEST_UNAVAILABLE".asInstanceOf[XMLHTTPREQUEST_UNAVAILABLE]
   
   @js.native
   sealed trait left
     extends StObject
        with PhononPopoverDirection
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait negative
     extends StObject
        with PhononColor
-  @scala.inline
-  def negative: negative = "negative".asInstanceOf[negative]
+  inline def negative: negative = "negative".asInstanceOf[negative]
   
   @js.native
   sealed trait positive
     extends StObject
        with PhononColor
-  @scala.inline
-  def positive: positive = "positive".asInstanceOf[positive]
+  inline def positive: positive = "positive".asInstanceOf[positive]
   
   @js.native
   sealed trait right
     extends StObject
        with PhononPopoverDirection
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait title
     extends StObject
        with PhononPopoverDirection
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
+  inline def title: title = "title".asInstanceOf[title]
   
   @js.native
   sealed trait `title-left`
     extends StObject
        with PhononPopoverDirection
-  @scala.inline
-  def `title-left`: `title-left` = "title-left".asInstanceOf[`title-left`]
+  inline def `title-left`: `title-left` = "title-left".asInstanceOf[`title-left`]
 }

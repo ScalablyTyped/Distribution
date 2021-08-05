@@ -14,25 +14,19 @@ trait DealTermsRubiconNonGuaranteedTerms extends StObject {
 }
 object DealTermsRubiconNonGuaranteedTerms {
   
-  @scala.inline
-  def apply(): DealTermsRubiconNonGuaranteedTerms = {
+  inline def apply(): DealTermsRubiconNonGuaranteedTerms = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DealTermsRubiconNonGuaranteedTerms]
   }
   
-  @scala.inline
-  implicit class DealTermsRubiconNonGuaranteedTermsMutableBuilder[Self <: DealTermsRubiconNonGuaranteedTerms] (val x: Self) extends AnyVal {
+  extension [Self <: DealTermsRubiconNonGuaranteedTerms](x: Self) {
     
-    @scala.inline
-    def setPriorityPrice(value: Price): Self = StObject.set(x, "priorityPrice", value.asInstanceOf[js.Any])
+    inline def setPriorityPrice(value: Price): Self = StObject.set(x, "priorityPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityPriceUndefined: Self = StObject.set(x, "priorityPrice", js.undefined)
+    inline def setPriorityPriceUndefined: Self = StObject.set(x, "priorityPrice", js.undefined)
     
-    @scala.inline
-    def setStandardPrice(value: Price): Self = StObject.set(x, "standardPrice", value.asInstanceOf[js.Any])
+    inline def setStandardPrice(value: Price): Self = StObject.set(x, "standardPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardPriceUndefined: Self = StObject.set(x, "standardPrice", js.undefined)
+    inline def setStandardPriceUndefined: Self = StObject.set(x, "standardPrice", js.undefined)
   }
 }

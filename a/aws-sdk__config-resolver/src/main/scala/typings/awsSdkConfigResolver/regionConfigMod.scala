@@ -29,8 +29,7 @@ object regionConfigMod {
   @js.native
   val REGION_INI_NAME: /* "region" */ String = js.native
   
-  @scala.inline
-  def resolveRegionConfig[T](input: T & RegionInputConfig & PreviouslyResolved): T & RegionResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRegionConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RegionResolvedConfig]
+  inline def resolveRegionConfig[T](input: T & RegionInputConfig & PreviouslyResolved): T & RegionResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRegionConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & RegionResolvedConfig]
   
   trait PreviouslyResolved extends StObject
   
@@ -43,23 +42,18 @@ object regionConfigMod {
   }
   object RegionInputConfig {
     
-    @scala.inline
-    def apply(): RegionInputConfig = {
+    inline def apply(): RegionInputConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RegionInputConfig]
     }
     
-    @scala.inline
-    implicit class RegionInputConfigMutableBuilder[Self <: RegionInputConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RegionInputConfig](x: Self) {
       
-      @scala.inline
-      def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String | Provider[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegionFunction0(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     }
   }
   
@@ -71,17 +65,14 @@ object regionConfigMod {
   }
   object RegionResolvedConfig {
     
-    @scala.inline
-    def apply(region: () => js.Promise[String]): RegionResolvedConfig = {
+    inline def apply(region: () => js.Promise[String]): RegionResolvedConfig = {
       val __obj = js.Dynamic.literal(region = js.Any.fromFunction0(region))
       __obj.asInstanceOf[RegionResolvedConfig]
     }
     
-    @scala.inline
-    implicit class RegionResolvedConfigMutableBuilder[Self <: RegionResolvedConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RegionResolvedConfig](x: Self) {
       
-      @scala.inline
-      def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
+      inline def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
     }
   }
 }

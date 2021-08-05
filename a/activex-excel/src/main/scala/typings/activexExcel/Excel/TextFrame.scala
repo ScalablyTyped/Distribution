@@ -21,7 +21,7 @@ trait TextFrame extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.TextFrame_typekey")
+  /* private */ @JSName("Excel.TextFrame_typekey")
   var ExcelDotTextFrame_typekey: TextFrame = js.native
   
   var HorizontalAlignment: XlHAlign = js.native

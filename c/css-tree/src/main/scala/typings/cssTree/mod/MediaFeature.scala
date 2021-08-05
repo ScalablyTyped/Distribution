@@ -19,26 +19,20 @@ trait MediaFeature
 }
 object MediaFeature {
   
-  @scala.inline
-  def apply(name: String): MediaFeature = {
+  inline def apply(name: String): MediaFeature = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = null)
     __obj.updateDynamic("type")("MediaFeature")
     __obj.asInstanceOf[MediaFeature]
   }
   
-  @scala.inline
-  implicit class MediaFeatureMutableBuilder[Self <: MediaFeature] (val x: Self) extends AnyVal {
+  extension [Self <: MediaFeature](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.MediaFeature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.MediaFeature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Identifier | NumberNode | Dimension | Ratio): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Identifier | NumberNode | Dimension | Ratio): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

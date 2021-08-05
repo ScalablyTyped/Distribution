@@ -13,19 +13,15 @@ trait IEncryptedAndAuthenticatedData extends StObject {
 }
 object IEncryptedAndAuthenticatedData {
   
-  @scala.inline
-  def apply(authenticationTag: IBuffer, encryptedData: IBuffer): IEncryptedAndAuthenticatedData = {
+  inline def apply(authenticationTag: IBuffer, encryptedData: IBuffer): IEncryptedAndAuthenticatedData = {
     val __obj = js.Dynamic.literal(authenticationTag = authenticationTag.asInstanceOf[js.Any], encryptedData = encryptedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEncryptedAndAuthenticatedData]
   }
   
-  @scala.inline
-  implicit class IEncryptedAndAuthenticatedDataMutableBuilder[Self <: IEncryptedAndAuthenticatedData] (val x: Self) extends AnyVal {
+  extension [Self <: IEncryptedAndAuthenticatedData](x: Self) {
     
-    @scala.inline
-    def setAuthenticationTag(value: IBuffer): Self = StObject.set(x, "authenticationTag", value.asInstanceOf[js.Any])
+    inline def setAuthenticationTag(value: IBuffer): Self = StObject.set(x, "authenticationTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedData(value: IBuffer): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: IBuffer): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
   }
 }

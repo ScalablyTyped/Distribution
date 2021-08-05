@@ -56,8 +56,7 @@ trait XShape
 }
 object XShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharAutoKerning: Boolean,
     CharCaseMap: Double,
     CharColor: Color,
@@ -182,25 +181,18 @@ object XShape {
     __obj.asInstanceOf[XShape]
   }
   
-  @scala.inline
-  implicit class XShapeMutableBuilder[Self <: XShape] (val x: Self) extends AnyVal {
+  extension [Self <: XShape](x: Self) {
     
-    @scala.inline
-    def setCustomShapeData(value: String): Self = StObject.set(x, "CustomShapeData", value.asInstanceOf[js.Any])
+    inline def setCustomShapeData(value: String): Self = StObject.set(x, "CustomShapeData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomShapeEngine(value: String): Self = StObject.set(x, "CustomShapeEngine", value.asInstanceOf[js.Any])
+    inline def setCustomShapeEngine(value: String): Self = StObject.set(x, "CustomShapeEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomShapeGeometry(value: SafeArray[PropertyValue]): Self = StObject.set(x, "CustomShapeGeometry", value.asInstanceOf[js.Any])
+    inline def setCustomShapeGeometry(value: SafeArray[PropertyValue]): Self = StObject.set(x, "CustomShapeGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpaque(value: Boolean): Self = StObject.set(x, "Opaque", value.asInstanceOf[js.Any])
+    inline def setOpaque(value: Boolean): Self = StObject.set(x, "Opaque", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformation(value: HomogenMatrix3): Self = StObject.set(x, "Transformation", value.asInstanceOf[js.Any])
+    inline def setTransformation(value: HomogenMatrix3): Self = StObject.set(x, "Transformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZOrder(value: Double): Self = StObject.set(x, "ZOrder", value.asInstanceOf[js.Any])
+    inline def setZOrder(value: Double): Self = StObject.set(x, "ZOrder", value.asInstanceOf[js.Any])
   }
 }

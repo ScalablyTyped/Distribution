@@ -203,21 +203,16 @@ object replicationGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReplicationGroupState): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReplicationGroupState, opts: CustomResourceOptions): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
+    inline def get(name: String, id: Input[ID]): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
+    inline def get(name: String, id: Input[ID], state: ReplicationGroupState): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
+    inline def get(name: String, id: Input[ID], state: ReplicationGroupState, opts: CustomResourceOptions): ReplicationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationGroup]
     
     /**
       * Returns true if the given object is an instance of ReplicationGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/replicationGroup.ReplicationGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticache/replicationGroup.ReplicationGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/replicationGroup.ReplicationGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticache/replicationGroup.ReplicationGroup */ Boolean]
   }
   
   trait ReplicationGroupArgs extends StObject {
@@ -370,185 +365,126 @@ object replicationGroupMod {
   }
   object ReplicationGroupArgs {
     
-    @scala.inline
-    def apply(replicationGroupDescription: Input[String]): ReplicationGroupArgs = {
+    inline def apply(replicationGroupDescription: Input[String]): ReplicationGroupArgs = {
       val __obj = js.Dynamic.literal(replicationGroupDescription = replicationGroupDescription.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplicationGroupArgs]
     }
     
-    @scala.inline
-    implicit class ReplicationGroupArgsMutableBuilder[Self <: ReplicationGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationGroupArgs](x: Self) {
       
-      @scala.inline
-      def setApplyImmediately(value: Input[Boolean]): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
+      inline def setApplyImmediately(value: Input[Boolean]): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
+      inline def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
       
-      @scala.inline
-      def setAtRestEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "atRestEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setAtRestEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "atRestEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtRestEncryptionEnabledUndefined: Self = StObject.set(x, "atRestEncryptionEnabled", js.undefined)
+      inline def setAtRestEncryptionEnabledUndefined: Self = StObject.set(x, "atRestEncryptionEnabled", js.undefined)
       
-      @scala.inline
-      def setAuthToken(value: Input[String]): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+      inline def setAuthToken(value: Input[String]): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
+      inline def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
       
-      @scala.inline
-      def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+      inline def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "autoMinorVersionUpgrade", js.undefined)
+      inline def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "autoMinorVersionUpgrade", js.undefined)
       
-      @scala.inline
-      def setAutomaticFailoverEnabled(value: Input[Boolean]): Self = StObject.set(x, "automaticFailoverEnabled", value.asInstanceOf[js.Any])
+      inline def setAutomaticFailoverEnabled(value: Input[Boolean]): Self = StObject.set(x, "automaticFailoverEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticFailoverEnabledUndefined: Self = StObject.set(x, "automaticFailoverEnabled", js.undefined)
+      inline def setAutomaticFailoverEnabledUndefined: Self = StObject.set(x, "automaticFailoverEnabled", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
+      inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setClusterMode(value: Input[typings.pulumiAws.inputMod.elasticache.ReplicationGroupClusterMode]): Self = StObject.set(x, "clusterMode", value.asInstanceOf[js.Any])
+      inline def setClusterMode(value: Input[typings.pulumiAws.inputMod.elasticache.ReplicationGroupClusterMode]): Self = StObject.set(x, "clusterMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterModeUndefined: Self = StObject.set(x, "clusterMode", js.undefined)
+      inline def setClusterModeUndefined: Self = StObject.set(x, "clusterMode", js.undefined)
       
-      @scala.inline
-      def setEngine(value: Input[String]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: Input[String]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
-      @scala.inline
-      def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+      inline def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
+      inline def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setMaintenanceWindow(value: Input[String]): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
+      inline def setMaintenanceWindow(value: Input[String]): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
+      inline def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
       
-      @scala.inline
-      def setNodeType(value: Input[String]): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: Input[String]): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
+      inline def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
       
-      @scala.inline
-      def setNotificationTopicArn(value: Input[String]): Self = StObject.set(x, "notificationTopicArn", value.asInstanceOf[js.Any])
+      inline def setNotificationTopicArn(value: Input[String]): Self = StObject.set(x, "notificationTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationTopicArnUndefined: Self = StObject.set(x, "notificationTopicArn", js.undefined)
+      inline def setNotificationTopicArnUndefined: Self = StObject.set(x, "notificationTopicArn", js.undefined)
       
-      @scala.inline
-      def setNumberCacheClusters(value: Input[Double]): Self = StObject.set(x, "numberCacheClusters", value.asInstanceOf[js.Any])
+      inline def setNumberCacheClusters(value: Input[Double]): Self = StObject.set(x, "numberCacheClusters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberCacheClustersUndefined: Self = StObject.set(x, "numberCacheClusters", js.undefined)
+      inline def setNumberCacheClustersUndefined: Self = StObject.set(x, "numberCacheClusters", js.undefined)
       
-      @scala.inline
-      def setParameterGroupName(value: Input[String]): Self = StObject.set(x, "parameterGroupName", value.asInstanceOf[js.Any])
+      inline def setParameterGroupName(value: Input[String]): Self = StObject.set(x, "parameterGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterGroupNameUndefined: Self = StObject.set(x, "parameterGroupName", js.undefined)
+      inline def setParameterGroupNameUndefined: Self = StObject.set(x, "parameterGroupName", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setReplicationGroupDescription(value: Input[String]): Self = StObject.set(x, "replicationGroupDescription", value.asInstanceOf[js.Any])
+      inline def setReplicationGroupDescription(value: Input[String]): Self = StObject.set(x, "replicationGroupDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupId(value: Input[String]): Self = StObject.set(x, "replicationGroupId", value.asInstanceOf[js.Any])
+      inline def setReplicationGroupId(value: Input[String]): Self = StObject.set(x, "replicationGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupIdUndefined: Self = StObject.set(x, "replicationGroupId", js.undefined)
+      inline def setReplicationGroupIdUndefined: Self = StObject.set(x, "replicationGroupId", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
+      inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupNamesUndefined: Self = StObject.set(x, "securityGroupNames", js.undefined)
+      inline def setSecurityGroupNamesUndefined: Self = StObject.set(x, "securityGroupNames", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
+      inline def setSecurityGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
       
-      @scala.inline
-      def setSnapshotArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "snapshotArns", value.asInstanceOf[js.Any])
+      inline def setSnapshotArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "snapshotArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotArnsUndefined: Self = StObject.set(x, "snapshotArns", js.undefined)
+      inline def setSnapshotArnsUndefined: Self = StObject.set(x, "snapshotArns", js.undefined)
       
-      @scala.inline
-      def setSnapshotArnsVarargs(value: Input[String]*): Self = StObject.set(x, "snapshotArns", js.Array(value :_*))
+      inline def setSnapshotArnsVarargs(value: Input[String]*): Self = StObject.set(x, "snapshotArns", js.Array(value :_*))
       
-      @scala.inline
-      def setSnapshotName(value: Input[String]): Self = StObject.set(x, "snapshotName", value.asInstanceOf[js.Any])
+      inline def setSnapshotName(value: Input[String]): Self = StObject.set(x, "snapshotName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotNameUndefined: Self = StObject.set(x, "snapshotName", js.undefined)
+      inline def setSnapshotNameUndefined: Self = StObject.set(x, "snapshotName", js.undefined)
       
-      @scala.inline
-      def setSnapshotRetentionLimit(value: Input[Double]): Self = StObject.set(x, "snapshotRetentionLimit", value.asInstanceOf[js.Any])
+      inline def setSnapshotRetentionLimit(value: Input[Double]): Self = StObject.set(x, "snapshotRetentionLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotRetentionLimitUndefined: Self = StObject.set(x, "snapshotRetentionLimit", js.undefined)
+      inline def setSnapshotRetentionLimitUndefined: Self = StObject.set(x, "snapshotRetentionLimit", js.undefined)
       
-      @scala.inline
-      def setSnapshotWindow(value: Input[String]): Self = StObject.set(x, "snapshotWindow", value.asInstanceOf[js.Any])
+      inline def setSnapshotWindow(value: Input[String]): Self = StObject.set(x, "snapshotWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotWindowUndefined: Self = StObject.set(x, "snapshotWindow", js.undefined)
+      inline def setSnapshotWindowUndefined: Self = StObject.set(x, "snapshotWindow", js.undefined)
       
-      @scala.inline
-      def setSubnetGroupName(value: Input[String]): Self = StObject.set(x, "subnetGroupName", value.asInstanceOf[js.Any])
+      inline def setSubnetGroupName(value: Input[String]): Self = StObject.set(x, "subnetGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetGroupNameUndefined: Self = StObject.set(x, "subnetGroupName", js.undefined)
+      inline def setSubnetGroupNameUndefined: Self = StObject.set(x, "subnetGroupName", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "transitEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setTransitEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "transitEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "transitEncryptionEnabled", js.undefined)
+      inline def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "transitEncryptionEnabled", js.undefined)
     }
   }
   
@@ -717,209 +653,142 @@ object replicationGroupMod {
   }
   object ReplicationGroupState {
     
-    @scala.inline
-    def apply(): ReplicationGroupState = {
+    inline def apply(): ReplicationGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicationGroupState]
     }
     
-    @scala.inline
-    implicit class ReplicationGroupStateMutableBuilder[Self <: ReplicationGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationGroupState](x: Self) {
       
-      @scala.inline
-      def setApplyImmediately(value: Input[Boolean]): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
+      inline def setApplyImmediately(value: Input[Boolean]): Self = StObject.set(x, "applyImmediately", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
+      inline def setApplyImmediatelyUndefined: Self = StObject.set(x, "applyImmediately", js.undefined)
       
-      @scala.inline
-      def setAtRestEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "atRestEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setAtRestEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "atRestEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtRestEncryptionEnabledUndefined: Self = StObject.set(x, "atRestEncryptionEnabled", js.undefined)
+      inline def setAtRestEncryptionEnabledUndefined: Self = StObject.set(x, "atRestEncryptionEnabled", js.undefined)
       
-      @scala.inline
-      def setAuthToken(value: Input[String]): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+      inline def setAuthToken(value: Input[String]): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
+      inline def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
       
-      @scala.inline
-      def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
+      inline def setAutoMinorVersionUpgrade(value: Input[Boolean]): Self = StObject.set(x, "autoMinorVersionUpgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "autoMinorVersionUpgrade", js.undefined)
+      inline def setAutoMinorVersionUpgradeUndefined: Self = StObject.set(x, "autoMinorVersionUpgrade", js.undefined)
       
-      @scala.inline
-      def setAutomaticFailoverEnabled(value: Input[Boolean]): Self = StObject.set(x, "automaticFailoverEnabled", value.asInstanceOf[js.Any])
+      inline def setAutomaticFailoverEnabled(value: Input[Boolean]): Self = StObject.set(x, "automaticFailoverEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticFailoverEnabledUndefined: Self = StObject.set(x, "automaticFailoverEnabled", js.undefined)
+      inline def setAutomaticFailoverEnabledUndefined: Self = StObject.set(x, "automaticFailoverEnabled", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZones(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "availabilityZones", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
+      inline def setAvailabilityZonesUndefined: Self = StObject.set(x, "availabilityZones", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
+      inline def setAvailabilityZonesVarargs(value: Input[String]*): Self = StObject.set(x, "availabilityZones", js.Array(value :_*))
       
-      @scala.inline
-      def setClusterMode(value: Input[typings.pulumiAws.inputMod.elasticache.ReplicationGroupClusterMode]): Self = StObject.set(x, "clusterMode", value.asInstanceOf[js.Any])
+      inline def setClusterMode(value: Input[typings.pulumiAws.inputMod.elasticache.ReplicationGroupClusterMode]): Self = StObject.set(x, "clusterMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterModeUndefined: Self = StObject.set(x, "clusterMode", js.undefined)
+      inline def setClusterModeUndefined: Self = StObject.set(x, "clusterMode", js.undefined)
       
-      @scala.inline
-      def setConfigurationEndpointAddress(value: Input[String]): Self = StObject.set(x, "configurationEndpointAddress", value.asInstanceOf[js.Any])
+      inline def setConfigurationEndpointAddress(value: Input[String]): Self = StObject.set(x, "configurationEndpointAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigurationEndpointAddressUndefined: Self = StObject.set(x, "configurationEndpointAddress", js.undefined)
+      inline def setConfigurationEndpointAddressUndefined: Self = StObject.set(x, "configurationEndpointAddress", js.undefined)
       
-      @scala.inline
-      def setEngine(value: Input[String]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      inline def setEngine(value: Input[String]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
-      @scala.inline
-      def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
+      inline def setEngineVersion(value: Input[String]): Self = StObject.set(x, "engineVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
+      inline def setEngineVersionUndefined: Self = StObject.set(x, "engineVersion", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setMaintenanceWindow(value: Input[String]): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
+      inline def setMaintenanceWindow(value: Input[String]): Self = StObject.set(x, "maintenanceWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
+      inline def setMaintenanceWindowUndefined: Self = StObject.set(x, "maintenanceWindow", js.undefined)
       
-      @scala.inline
-      def setMemberClusters(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "memberClusters", value.asInstanceOf[js.Any])
+      inline def setMemberClusters(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "memberClusters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberClustersUndefined: Self = StObject.set(x, "memberClusters", js.undefined)
+      inline def setMemberClustersUndefined: Self = StObject.set(x, "memberClusters", js.undefined)
       
-      @scala.inline
-      def setMemberClustersVarargs(value: Input[String]*): Self = StObject.set(x, "memberClusters", js.Array(value :_*))
+      inline def setMemberClustersVarargs(value: Input[String]*): Self = StObject.set(x, "memberClusters", js.Array(value :_*))
       
-      @scala.inline
-      def setNodeType(value: Input[String]): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: Input[String]): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
+      inline def setNodeTypeUndefined: Self = StObject.set(x, "nodeType", js.undefined)
       
-      @scala.inline
-      def setNotificationTopicArn(value: Input[String]): Self = StObject.set(x, "notificationTopicArn", value.asInstanceOf[js.Any])
+      inline def setNotificationTopicArn(value: Input[String]): Self = StObject.set(x, "notificationTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationTopicArnUndefined: Self = StObject.set(x, "notificationTopicArn", js.undefined)
+      inline def setNotificationTopicArnUndefined: Self = StObject.set(x, "notificationTopicArn", js.undefined)
       
-      @scala.inline
-      def setNumberCacheClusters(value: Input[Double]): Self = StObject.set(x, "numberCacheClusters", value.asInstanceOf[js.Any])
+      inline def setNumberCacheClusters(value: Input[Double]): Self = StObject.set(x, "numberCacheClusters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberCacheClustersUndefined: Self = StObject.set(x, "numberCacheClusters", js.undefined)
+      inline def setNumberCacheClustersUndefined: Self = StObject.set(x, "numberCacheClusters", js.undefined)
       
-      @scala.inline
-      def setParameterGroupName(value: Input[String]): Self = StObject.set(x, "parameterGroupName", value.asInstanceOf[js.Any])
+      inline def setParameterGroupName(value: Input[String]): Self = StObject.set(x, "parameterGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParameterGroupNameUndefined: Self = StObject.set(x, "parameterGroupName", js.undefined)
+      inline def setParameterGroupNameUndefined: Self = StObject.set(x, "parameterGroupName", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPrimaryEndpointAddress(value: Input[String]): Self = StObject.set(x, "primaryEndpointAddress", value.asInstanceOf[js.Any])
+      inline def setPrimaryEndpointAddress(value: Input[String]): Self = StObject.set(x, "primaryEndpointAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryEndpointAddressUndefined: Self = StObject.set(x, "primaryEndpointAddress", js.undefined)
+      inline def setPrimaryEndpointAddressUndefined: Self = StObject.set(x, "primaryEndpointAddress", js.undefined)
       
-      @scala.inline
-      def setReplicationGroupDescription(value: Input[String]): Self = StObject.set(x, "replicationGroupDescription", value.asInstanceOf[js.Any])
+      inline def setReplicationGroupDescription(value: Input[String]): Self = StObject.set(x, "replicationGroupDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupDescriptionUndefined: Self = StObject.set(x, "replicationGroupDescription", js.undefined)
+      inline def setReplicationGroupDescriptionUndefined: Self = StObject.set(x, "replicationGroupDescription", js.undefined)
       
-      @scala.inline
-      def setReplicationGroupId(value: Input[String]): Self = StObject.set(x, "replicationGroupId", value.asInstanceOf[js.Any])
+      inline def setReplicationGroupId(value: Input[String]): Self = StObject.set(x, "replicationGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationGroupIdUndefined: Self = StObject.set(x, "replicationGroupId", js.undefined)
+      inline def setReplicationGroupIdUndefined: Self = StObject.set(x, "replicationGroupId", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
+      inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupNamesUndefined: Self = StObject.set(x, "securityGroupNames", js.undefined)
+      inline def setSecurityGroupNamesUndefined: Self = StObject.set(x, "securityGroupNames", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
+      inline def setSecurityGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
       
-      @scala.inline
-      def setSnapshotArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "snapshotArns", value.asInstanceOf[js.Any])
+      inline def setSnapshotArns(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "snapshotArns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotArnsUndefined: Self = StObject.set(x, "snapshotArns", js.undefined)
+      inline def setSnapshotArnsUndefined: Self = StObject.set(x, "snapshotArns", js.undefined)
       
-      @scala.inline
-      def setSnapshotArnsVarargs(value: Input[String]*): Self = StObject.set(x, "snapshotArns", js.Array(value :_*))
+      inline def setSnapshotArnsVarargs(value: Input[String]*): Self = StObject.set(x, "snapshotArns", js.Array(value :_*))
       
-      @scala.inline
-      def setSnapshotName(value: Input[String]): Self = StObject.set(x, "snapshotName", value.asInstanceOf[js.Any])
+      inline def setSnapshotName(value: Input[String]): Self = StObject.set(x, "snapshotName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotNameUndefined: Self = StObject.set(x, "snapshotName", js.undefined)
+      inline def setSnapshotNameUndefined: Self = StObject.set(x, "snapshotName", js.undefined)
       
-      @scala.inline
-      def setSnapshotRetentionLimit(value: Input[Double]): Self = StObject.set(x, "snapshotRetentionLimit", value.asInstanceOf[js.Any])
+      inline def setSnapshotRetentionLimit(value: Input[Double]): Self = StObject.set(x, "snapshotRetentionLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotRetentionLimitUndefined: Self = StObject.set(x, "snapshotRetentionLimit", js.undefined)
+      inline def setSnapshotRetentionLimitUndefined: Self = StObject.set(x, "snapshotRetentionLimit", js.undefined)
       
-      @scala.inline
-      def setSnapshotWindow(value: Input[String]): Self = StObject.set(x, "snapshotWindow", value.asInstanceOf[js.Any])
+      inline def setSnapshotWindow(value: Input[String]): Self = StObject.set(x, "snapshotWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotWindowUndefined: Self = StObject.set(x, "snapshotWindow", js.undefined)
+      inline def setSnapshotWindowUndefined: Self = StObject.set(x, "snapshotWindow", js.undefined)
       
-      @scala.inline
-      def setSubnetGroupName(value: Input[String]): Self = StObject.set(x, "subnetGroupName", value.asInstanceOf[js.Any])
+      inline def setSubnetGroupName(value: Input[String]): Self = StObject.set(x, "subnetGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetGroupNameUndefined: Self = StObject.set(x, "subnetGroupName", js.undefined)
+      inline def setSubnetGroupNameUndefined: Self = StObject.set(x, "subnetGroupName", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "transitEncryptionEnabled", value.asInstanceOf[js.Any])
+      inline def setTransitEncryptionEnabled(value: Input[Boolean]): Self = StObject.set(x, "transitEncryptionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "transitEncryptionEnabled", js.undefined)
+      inline def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "transitEncryptionEnabled", js.undefined)
     }
   }
 }

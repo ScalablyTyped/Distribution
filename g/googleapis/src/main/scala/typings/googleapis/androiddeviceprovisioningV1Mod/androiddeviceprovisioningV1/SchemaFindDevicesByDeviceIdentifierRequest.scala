@@ -27,31 +27,23 @@ trait SchemaFindDevicesByDeviceIdentifierRequest extends StObject {
 }
 object SchemaFindDevicesByDeviceIdentifierRequest {
   
-  @scala.inline
-  def apply(): SchemaFindDevicesByDeviceIdentifierRequest = {
+  inline def apply(): SchemaFindDevicesByDeviceIdentifierRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFindDevicesByDeviceIdentifierRequest]
   }
   
-  @scala.inline
-  implicit class SchemaFindDevicesByDeviceIdentifierRequestMutableBuilder[Self <: SchemaFindDevicesByDeviceIdentifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFindDevicesByDeviceIdentifierRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceIdentifier(value: SchemaDeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeviceIdentifier(value: SchemaDeviceIdentifier): Self = StObject.set(x, "deviceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
+    inline def setDeviceIdentifierUndefined: Self = StObject.set(x, "deviceIdentifier", js.undefined)
     
-    @scala.inline
-    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

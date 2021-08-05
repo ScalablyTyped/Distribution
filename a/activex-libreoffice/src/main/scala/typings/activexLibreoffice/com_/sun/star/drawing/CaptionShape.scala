@@ -84,8 +84,7 @@ trait CaptionShape
 }
 object CaptionShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CaptionAngle: Double,
     CaptionEscapeAbsolute: Double,
     CaptionEscapeDirection: Double,
@@ -196,43 +195,30 @@ object CaptionShape {
     __obj.asInstanceOf[CaptionShape]
   }
   
-  @scala.inline
-  implicit class CaptionShapeMutableBuilder[Self <: CaptionShape] (val x: Self) extends AnyVal {
+  extension [Self <: CaptionShape](x: Self) {
     
-    @scala.inline
-    def setCaptionAngle(value: Double): Self = StObject.set(x, "CaptionAngle", value.asInstanceOf[js.Any])
+    inline def setCaptionAngle(value: Double): Self = StObject.set(x, "CaptionAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionEscapeAbsolute(value: Double): Self = StObject.set(x, "CaptionEscapeAbsolute", value.asInstanceOf[js.Any])
+    inline def setCaptionEscapeAbsolute(value: Double): Self = StObject.set(x, "CaptionEscapeAbsolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionEscapeDirection(value: Double): Self = StObject.set(x, "CaptionEscapeDirection", value.asInstanceOf[js.Any])
+    inline def setCaptionEscapeDirection(value: Double): Self = StObject.set(x, "CaptionEscapeDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionEscapeRelative(value: Double): Self = StObject.set(x, "CaptionEscapeRelative", value.asInstanceOf[js.Any])
+    inline def setCaptionEscapeRelative(value: Double): Self = StObject.set(x, "CaptionEscapeRelative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionGap(value: Double): Self = StObject.set(x, "CaptionGap", value.asInstanceOf[js.Any])
+    inline def setCaptionGap(value: Double): Self = StObject.set(x, "CaptionGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionIsEscapeRelative(value: Boolean): Self = StObject.set(x, "CaptionIsEscapeRelative", value.asInstanceOf[js.Any])
+    inline def setCaptionIsEscapeRelative(value: Boolean): Self = StObject.set(x, "CaptionIsEscapeRelative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionIsFitLineLength(value: Boolean): Self = StObject.set(x, "CaptionIsFitLineLength", value.asInstanceOf[js.Any])
+    inline def setCaptionIsFitLineLength(value: Boolean): Self = StObject.set(x, "CaptionIsFitLineLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionIsFixedAngle(value: Boolean): Self = StObject.set(x, "CaptionIsFixedAngle", value.asInstanceOf[js.Any])
+    inline def setCaptionIsFixedAngle(value: Boolean): Self = StObject.set(x, "CaptionIsFixedAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionLineLength(value: Double): Self = StObject.set(x, "CaptionLineLength", value.asInstanceOf[js.Any])
+    inline def setCaptionLineLength(value: Double): Self = StObject.set(x, "CaptionLineLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionPoint(value: Point): Self = StObject.set(x, "CaptionPoint", value.asInstanceOf[js.Any])
+    inline def setCaptionPoint(value: Point): Self = StObject.set(x, "CaptionPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionType(value: Double): Self = StObject.set(x, "CaptionType", value.asInstanceOf[js.Any])
+    inline def setCaptionType(value: Double): Self = StObject.set(x, "CaptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerRadius(value: Double): Self = StObject.set(x, "CornerRadius", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: Double): Self = StObject.set(x, "CornerRadius", value.asInstanceOf[js.Any])
   }
 }

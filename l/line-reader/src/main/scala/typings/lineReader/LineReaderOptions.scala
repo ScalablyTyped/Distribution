@@ -14,31 +14,23 @@ trait LineReaderOptions extends StObject {
 }
 object LineReaderOptions {
   
-  @scala.inline
-  def apply(): LineReaderOptions = {
+  inline def apply(): LineReaderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineReaderOptions]
   }
   
-  @scala.inline
-  implicit class LineReaderOptionsMutableBuilder[Self <: LineReaderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LineReaderOptions](x: Self) {
     
-    @scala.inline
-    def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+    inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+    inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: js.Any): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: js.Any): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
   }
 }

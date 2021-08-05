@@ -28,8 +28,7 @@ trait PutActionRevisionInput extends StObject {
 }
 object PutActionRevisionInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionName: ActionName,
     actionRevision: ActionRevision,
     pipelineName: PipelineName,
@@ -39,19 +38,14 @@ object PutActionRevisionInput {
     __obj.asInstanceOf[PutActionRevisionInput]
   }
   
-  @scala.inline
-  implicit class PutActionRevisionInputMutableBuilder[Self <: PutActionRevisionInput] (val x: Self) extends AnyVal {
+  extension [Self <: PutActionRevisionInput](x: Self) {
     
-    @scala.inline
-    def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionRevision(value: ActionRevision): Self = StObject.set(x, "actionRevision", value.asInstanceOf[js.Any])
+    inline def setActionRevision(value: ActionRevision): Self = StObject.set(x, "actionRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: StageName): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
   }
 }

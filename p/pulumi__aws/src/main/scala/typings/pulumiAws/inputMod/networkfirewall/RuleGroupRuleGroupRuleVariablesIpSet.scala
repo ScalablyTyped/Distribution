@@ -19,19 +19,15 @@ trait RuleGroupRuleGroupRuleVariablesIpSet extends StObject {
 }
 object RuleGroupRuleGroupRuleVariablesIpSet {
   
-  @scala.inline
-  def apply(ipSet: Input[RuleGroupRuleGroupRuleVariablesIpSetIpSet], key: Input[String]): RuleGroupRuleGroupRuleVariablesIpSet = {
+  inline def apply(ipSet: Input[RuleGroupRuleGroupRuleVariablesIpSetIpSet], key: Input[String]): RuleGroupRuleGroupRuleVariablesIpSet = {
     val __obj = js.Dynamic.literal(ipSet = ipSet.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleGroupRuleVariablesIpSet]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRuleVariablesIpSetMutableBuilder[Self <: RuleGroupRuleGroupRuleVariablesIpSet] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRuleVariablesIpSet](x: Self) {
     
-    @scala.inline
-    def setIpSet(value: Input[RuleGroupRuleGroupRuleVariablesIpSetIpSet]): Self = StObject.set(x, "ipSet", value.asInstanceOf[js.Any])
+    inline def setIpSet(value: Input[RuleGroupRuleGroupRuleVariablesIpSetIpSet]): Self = StObject.set(x, "ipSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

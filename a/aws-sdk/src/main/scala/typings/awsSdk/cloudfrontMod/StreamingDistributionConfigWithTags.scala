@@ -18,19 +18,15 @@ trait StreamingDistributionConfigWithTags extends StObject {
 }
 object StreamingDistributionConfigWithTags {
   
-  @scala.inline
-  def apply(StreamingDistributionConfig: StreamingDistributionConfig, Tags: Tags): StreamingDistributionConfigWithTags = {
+  inline def apply(StreamingDistributionConfig: StreamingDistributionConfig, Tags: Tags): StreamingDistributionConfigWithTags = {
     val __obj = js.Dynamic.literal(StreamingDistributionConfig = StreamingDistributionConfig.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[StreamingDistributionConfigWithTags]
   }
   
-  @scala.inline
-  implicit class StreamingDistributionConfigWithTagsMutableBuilder[Self <: StreamingDistributionConfigWithTags] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingDistributionConfigWithTags](x: Self) {
     
-    @scala.inline
-    def setStreamingDistributionConfig(value: StreamingDistributionConfig): Self = StObject.set(x, "StreamingDistributionConfig", value.asInstanceOf[js.Any])
+    inline def setStreamingDistributionConfig(value: StreamingDistributionConfig): Self = StObject.set(x, "StreamingDistributionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
   }
 }

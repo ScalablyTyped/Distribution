@@ -18,25 +18,19 @@ trait DeviceMethod extends StObject {
 }
 object DeviceMethod {
   
-  @scala.inline
-  def apply(): DeviceMethod = {
+  inline def apply(): DeviceMethod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceMethod]
   }
   
-  @scala.inline
-  implicit class DeviceMethodMutableBuilder[Self <: DeviceMethod] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceMethod](x: Self) {
     
-    @scala.inline
-    def setDeviceType(value: string): Self = StObject.set(x, "DeviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: string): Self = StObject.set(x, "DeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeUndefined: Self = StObject.set(x, "DeviceType", js.undefined)
+    inline def setDeviceTypeUndefined: Self = StObject.set(x, "DeviceType", js.undefined)
     
-    @scala.inline
-    def setMethodName(value: string): Self = StObject.set(x, "MethodName", value.asInstanceOf[js.Any])
+    inline def setMethodName(value: string): Self = StObject.set(x, "MethodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodNameUndefined: Self = StObject.set(x, "MethodName", js.undefined)
+    inline def setMethodNameUndefined: Self = StObject.set(x, "MethodName", js.undefined)
   }
 }

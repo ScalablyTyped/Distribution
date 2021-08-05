@@ -11,55 +11,47 @@ object easystarjsStrings {
   sealed trait BOTTOM
     extends StObject
        with Direction
-  @scala.inline
-  def BOTTOM: BOTTOM = "BOTTOM".asInstanceOf[BOTTOM]
+  inline def BOTTOM: BOTTOM = "BOTTOM".asInstanceOf[BOTTOM]
   
   @js.native
   sealed trait BOTTOM_LEFT
     extends StObject
        with Direction
-  @scala.inline
-  def BOTTOM_LEFT: BOTTOM_LEFT = "BOTTOM_LEFT".asInstanceOf[BOTTOM_LEFT]
+  inline def BOTTOM_LEFT: BOTTOM_LEFT = "BOTTOM_LEFT".asInstanceOf[BOTTOM_LEFT]
   
   @js.native
   sealed trait BOTTOM_RIGHT
     extends StObject
        with Direction
-  @scala.inline
-  def BOTTOM_RIGHT: BOTTOM_RIGHT = "BOTTOM_RIGHT".asInstanceOf[BOTTOM_RIGHT]
+  inline def BOTTOM_RIGHT: BOTTOM_RIGHT = "BOTTOM_RIGHT".asInstanceOf[BOTTOM_RIGHT]
   
   @js.native
   sealed trait LEFT
     extends StObject
        with Direction
-  @scala.inline
-  def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
+  inline def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
   @js.native
   sealed trait RIGHT
     extends StObject
        with Direction
-  @scala.inline
-  def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
+  inline def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
   
   @js.native
   sealed trait TOP
     extends StObject
        with Direction
-  @scala.inline
-  def TOP: TOP = "TOP".asInstanceOf[TOP]
+  inline def TOP: TOP = "TOP".asInstanceOf[TOP]
   
   @js.native
   sealed trait TOP_LEFT
     extends StObject
        with Direction
-  @scala.inline
-  def TOP_LEFT: TOP_LEFT = "TOP_LEFT".asInstanceOf[TOP_LEFT]
+  inline def TOP_LEFT: TOP_LEFT = "TOP_LEFT".asInstanceOf[TOP_LEFT]
   
   @js.native
   sealed trait TOP_RIGHT
     extends StObject
        with Direction
-  @scala.inline
-  def TOP_RIGHT: TOP_RIGHT = "TOP_RIGHT".asInstanceOf[TOP_RIGHT]
+  inline def TOP_RIGHT: TOP_RIGHT = "TOP_RIGHT".asInstanceOf[TOP_RIGHT]
 }

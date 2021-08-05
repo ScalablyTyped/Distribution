@@ -49,8 +49,7 @@ object mod {
     @JSImport("react-router-navigation", "BottomNavigation.defaultProps")
     @js.native
     def defaultProps: Lazy = js.native
-    @scala.inline
-    def defaultProps_=(x: Lazy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Lazy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait Card
@@ -65,11 +64,9 @@ object mod {
     @js.native
     def apply(props: CardProps): ReactElement = js.native
     
-    @scala.inline
-    implicit class CardMutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
+    extension [Self <: Card](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,11 +122,9 @@ object mod {
     @js.native
     def apply(props: TabProps): ReactElement = js.native
     
-    @scala.inline
-    implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
+    extension [Self <: Tab](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,38 +163,28 @@ object mod {
   }
   object BottomNavigationProps {
     
-    @scala.inline
-    def apply(): BottomNavigationProps = {
+    inline def apply(): BottomNavigationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BottomNavigationProps]
     }
     
-    @scala.inline
-    implicit class BottomNavigationPropsMutableBuilder[Self <: BottomNavigationProps] (val x: Self) extends AnyVal {
+    extension [Self <: BottomNavigationProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -209,8 +194,7 @@ object mod {
        with NavBarProps
   object CardProps {
     
-    @scala.inline
-    def apply(): CardProps = {
+    inline def apply(): CardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardProps]
     }
@@ -248,86 +232,60 @@ object mod {
   }
   object NavBarProps {
     
-    @scala.inline
-    def apply(): NavBarProps = {
+    inline def apply(): NavBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavBarProps]
     }
     
-    @scala.inline
-    implicit class NavBarPropsMutableBuilder[Self <: NavBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavBarProps](x: Self) {
       
-      @scala.inline
-      def setBackButtonTintColor(value: String): Self = StObject.set(x, "backButtonTintColor", value.asInstanceOf[js.Any])
+      inline def setBackButtonTintColor(value: String): Self = StObject.set(x, "backButtonTintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackButtonTintColorUndefined: Self = StObject.set(x, "backButtonTintColor", js.undefined)
+      inline def setBackButtonTintColorUndefined: Self = StObject.set(x, "backButtonTintColor", js.undefined)
       
-      @scala.inline
-      def setBackButtonTitle(value: String): Self = StObject.set(x, "backButtonTitle", value.asInstanceOf[js.Any])
+      inline def setBackButtonTitle(value: String): Self = StObject.set(x, "backButtonTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackButtonTitleUndefined: Self = StObject.set(x, "backButtonTitle", js.undefined)
+      inline def setBackButtonTitleUndefined: Self = StObject.set(x, "backButtonTitle", js.undefined)
       
-      @scala.inline
-      def setHideBackButton(value: Boolean): Self = StObject.set(x, "hideBackButton", value.asInstanceOf[js.Any])
+      inline def setHideBackButton(value: Boolean): Self = StObject.set(x, "hideBackButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideBackButtonUndefined: Self = StObject.set(x, "hideBackButton", js.undefined)
+      inline def setHideBackButtonUndefined: Self = StObject.set(x, "hideBackButton", js.undefined)
       
-      @scala.inline
-      def setHideNavBar(value: Boolean): Self = StObject.set(x, "hideNavBar", value.asInstanceOf[js.Any])
+      inline def setHideNavBar(value: Boolean): Self = StObject.set(x, "hideNavBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideNavBarUndefined: Self = StObject.set(x, "hideNavBar", js.undefined)
+      inline def setHideNavBarUndefined: Self = StObject.set(x, "hideNavBar", js.undefined)
       
-      @scala.inline
-      def setNavBarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "navBarStyle", value.asInstanceOf[js.Any])
+      inline def setNavBarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "navBarStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavBarStyleNull: Self = StObject.set(x, "navBarStyle", null)
+      inline def setNavBarStyleNull: Self = StObject.set(x, "navBarStyle", null)
       
-      @scala.inline
-      def setNavBarStyleUndefined: Self = StObject.set(x, "navBarStyle", js.undefined)
+      inline def setNavBarStyleUndefined: Self = StObject.set(x, "navBarStyle", js.undefined)
       
-      @scala.inline
-      def setRenderLeftButton(value: /* props */ CardSubViewProps => ReactNode): Self = StObject.set(x, "renderLeftButton", js.Any.fromFunction1(value))
+      inline def setRenderLeftButton(value: /* props */ CardSubViewProps => ReactNode): Self = StObject.set(x, "renderLeftButton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderLeftButtonUndefined: Self = StObject.set(x, "renderLeftButton", js.undefined)
+      inline def setRenderLeftButtonUndefined: Self = StObject.set(x, "renderLeftButton", js.undefined)
       
-      @scala.inline
-      def setRenderNavBar(value: /* props */ CardSubViewProps => ReactNode): Self = StObject.set(x, "renderNavBar", js.Any.fromFunction1(value))
+      inline def setRenderNavBar(value: /* props */ CardSubViewProps => ReactNode): Self = StObject.set(x, "renderNavBar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderNavBarUndefined: Self = StObject.set(x, "renderNavBar", js.undefined)
+      inline def setRenderNavBarUndefined: Self = StObject.set(x, "renderNavBar", js.undefined)
       
-      @scala.inline
-      def setRenderRightButton(value: /* props */ CardSubViewProps => ReactNode): Self = StObject.set(x, "renderRightButton", js.Any.fromFunction1(value))
+      inline def setRenderRightButton(value: /* props */ CardSubViewProps => ReactNode): Self = StObject.set(x, "renderRightButton", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderRightButtonUndefined: Self = StObject.set(x, "renderRightButton", js.undefined)
+      inline def setRenderRightButtonUndefined: Self = StObject.set(x, "renderRightButton", js.undefined)
       
-      @scala.inline
-      def setRenderTitle(value: /* props */ CardSubViewProps => ReactNode): Self = StObject.set(x, "renderTitle", js.Any.fromFunction1(value))
+      inline def setRenderTitle(value: /* props */ CardSubViewProps => ReactNode): Self = StObject.set(x, "renderTitle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTitleUndefined: Self = StObject.set(x, "renderTitle", js.undefined)
+      inline def setRenderTitleUndefined: Self = StObject.set(x, "renderTitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
+      inline def setTitleStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "titleStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
+      inline def setTitleStyleNull: Self = StObject.set(x, "titleStyle", null)
       
-      @scala.inline
-      def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
+      inline def setTitleStyleUndefined: Self = StObject.set(x, "titleStyle", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -339,23 +297,18 @@ object mod {
   }
   object NavigationComponentProps {
     
-    @scala.inline
-    def apply(): NavigationComponentProps = {
+    inline def apply(): NavigationComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationComponentProps]
     }
     
-    @scala.inline
-    implicit class NavigationComponentPropsMutableBuilder[Self <: NavigationComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationComponentProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
     }
   }
   
@@ -381,45 +334,34 @@ object mod {
   }
   object NavigationProps {
     
-    @scala.inline
-    def apply(): NavigationProps = {
+    inline def apply(): NavigationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigationProps]
     }
     
-    @scala.inline
-    implicit class NavigationPropsMutableBuilder[Self <: NavigationProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationProps](x: Self) {
       
-      @scala.inline
-      def setCardStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
+      inline def setCardStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "cardStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardStyleNull: Self = StObject.set(x, "cardStyle", null)
+      inline def setCardStyleNull: Self = StObject.set(x, "cardStyle", null)
       
-      @scala.inline
-      def setCardStyleUndefined: Self = StObject.set(x, "cardStyle", js.undefined)
+      inline def setCardStyleUndefined: Self = StObject.set(x, "cardStyle", js.undefined)
       
-      @scala.inline
-      def setConfigureTransition(
+      inline def setConfigureTransition(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
             ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ js.Any
       ): Self = StObject.set(x, "configureTransition", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConfigureTransitionUndefined: Self = StObject.set(x, "configureTransition", js.undefined)
+      inline def setConfigureTransitionUndefined: Self = StObject.set(x, "configureTransition", js.undefined)
       
-      @scala.inline
-      def setOnTransitionEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
+      inline def setOnTransitionEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTransitionEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
+      inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      @scala.inline
-      def setOnTransitionStart(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction1(value))
+      inline def setOnTransitionStart(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTransitionStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransitionStartUndefined: Self = StObject.set(x, "onTransitionStart", js.undefined)
+      inline def setOnTransitionStartUndefined: Self = StObject.set(x, "onTransitionStart", js.undefined)
     }
   }
   
@@ -431,23 +373,18 @@ object mod {
   }
   object TabBarComponentProps {
     
-    @scala.inline
-    def apply(): TabBarComponentProps = {
+    inline def apply(): TabBarComponentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabBarComponentProps]
     }
     
-    @scala.inline
-    implicit class TabBarComponentPropsMutableBuilder[Self <: TabBarComponentProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabBarComponentProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
     }
   }
   
@@ -481,98 +418,68 @@ object mod {
   }
   object TabBarProps {
     
-    @scala.inline
-    def apply(): TabBarProps = {
+    inline def apply(): TabBarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabBarProps]
     }
     
-    @scala.inline
-    implicit class TabBarPropsMutableBuilder[Self <: TabBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabBarProps](x: Self) {
       
-      @scala.inline
-      def setHideTabBar(value: Boolean): Self = StObject.set(x, "hideTabBar", value.asInstanceOf[js.Any])
+      inline def setHideTabBar(value: Boolean): Self = StObject.set(x, "hideTabBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideTabBarUndefined: Self = StObject.set(x, "hideTabBar", js.undefined)
+      inline def setHideTabBarUndefined: Self = StObject.set(x, "hideTabBar", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+      inline def setLabelStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
+      inline def setLabelStyleNull: Self = StObject.set(x, "labelStyle", null)
       
-      @scala.inline
-      def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+      inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setRenderLabel(value: /* props */ TabSubViewProps => ReactNode): Self = StObject.set(x, "renderLabel", js.Any.fromFunction1(value))
+      inline def setRenderLabel(value: /* props */ TabSubViewProps => ReactNode): Self = StObject.set(x, "renderLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
+      inline def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
       
-      @scala.inline
-      def setRenderTabBar(value: /* props */ TabSubViewProps => ReactNode): Self = StObject.set(x, "renderTabBar", js.Any.fromFunction1(value))
+      inline def setRenderTabBar(value: /* props */ TabSubViewProps => ReactNode): Self = StObject.set(x, "renderTabBar", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTabBarUndefined: Self = StObject.set(x, "renderTabBar", js.undefined)
+      inline def setRenderTabBarUndefined: Self = StObject.set(x, "renderTabBar", js.undefined)
       
-      @scala.inline
-      def setRenderTabIcon(value: /* props */ TabSubViewProps => ReactNode): Self = StObject.set(x, "renderTabIcon", js.Any.fromFunction1(value))
+      inline def setRenderTabIcon(value: /* props */ TabSubViewProps => ReactNode): Self = StObject.set(x, "renderTabIcon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTabIconUndefined: Self = StObject.set(x, "renderTabIcon", js.undefined)
+      inline def setRenderTabIconUndefined: Self = StObject.set(x, "renderTabIcon", js.undefined)
       
-      @scala.inline
-      def setTabActiveTintColor(value: String): Self = StObject.set(x, "tabActiveTintColor", value.asInstanceOf[js.Any])
+      inline def setTabActiveTintColor(value: String): Self = StObject.set(x, "tabActiveTintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabActiveTintColorUndefined: Self = StObject.set(x, "tabActiveTintColor", js.undefined)
+      inline def setTabActiveTintColorUndefined: Self = StObject.set(x, "tabActiveTintColor", js.undefined)
       
-      @scala.inline
-      def setTabBarIndicatorStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabBarIndicatorStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarIndicatorStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabBarIndicatorStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarIndicatorStyleNull: Self = StObject.set(x, "tabBarIndicatorStyle", null)
+      inline def setTabBarIndicatorStyleNull: Self = StObject.set(x, "tabBarIndicatorStyle", null)
       
-      @scala.inline
-      def setTabBarIndicatorStyleUndefined: Self = StObject.set(x, "tabBarIndicatorStyle", js.undefined)
+      inline def setTabBarIndicatorStyleUndefined: Self = StObject.set(x, "tabBarIndicatorStyle", js.undefined)
       
-      @scala.inline
-      def setTabBarPosition(value: top | bottom): Self = StObject.set(x, "tabBarPosition", value.asInstanceOf[js.Any])
+      inline def setTabBarPosition(value: top | bottom): Self = StObject.set(x, "tabBarPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarPositionUndefined: Self = StObject.set(x, "tabBarPosition", js.undefined)
+      inline def setTabBarPositionUndefined: Self = StObject.set(x, "tabBarPosition", js.undefined)
       
-      @scala.inline
-      def setTabBarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabBarStyle", value.asInstanceOf[js.Any])
+      inline def setTabBarStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabBarStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabBarStyleNull: Self = StObject.set(x, "tabBarStyle", null)
+      inline def setTabBarStyleNull: Self = StObject.set(x, "tabBarStyle", null)
       
-      @scala.inline
-      def setTabBarStyleUndefined: Self = StObject.set(x, "tabBarStyle", js.undefined)
+      inline def setTabBarStyleUndefined: Self = StObject.set(x, "tabBarStyle", js.undefined)
       
-      @scala.inline
-      def setTabStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
+      inline def setTabStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "tabStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabStyleNull: Self = StObject.set(x, "tabStyle", null)
+      inline def setTabStyleNull: Self = StObject.set(x, "tabStyle", null)
       
-      @scala.inline
-      def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
+      inline def setTabStyleUndefined: Self = StObject.set(x, "tabStyle", js.undefined)
       
-      @scala.inline
-      def setTabTintColor(value: String): Self = StObject.set(x, "tabTintColor", value.asInstanceOf[js.Any])
+      inline def setTabTintColor(value: String): Self = StObject.set(x, "tabTintColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabTintColorUndefined: Self = StObject.set(x, "tabTintColor", js.undefined)
+      inline def setTabTintColorUndefined: Self = StObject.set(x, "tabTintColor", js.undefined)
     }
   }
   
@@ -587,26 +494,20 @@ object mod {
   }
   object TabProps {
     
-    @scala.inline
-    def apply(): TabProps = {
+    inline def apply(): TabProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabProps]
     }
     
-    @scala.inline
-    implicit class TabPropsMutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabProps](x: Self) {
       
-      @scala.inline
-      def setOnIndexChange(value: /* index */ Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
+      inline def setOnIndexChange(value: /* index */ Double => Unit): Self = StObject.set(x, "onIndexChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnIndexChangeUndefined: Self = StObject.set(x, "onIndexChange", js.undefined)
+      inline def setOnIndexChangeUndefined: Self = StObject.set(x, "onIndexChange", js.undefined)
       
-      @scala.inline
-      def setOnReset(value: /* props */ TabBarProps & RouteProps => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: /* props */ TabBarProps & RouteProps => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
+      inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     }
   }
   
@@ -631,30 +532,24 @@ object mod {
   }
   object TabsProps {
     
-    @scala.inline
-    def apply(): TabsProps = {
+    inline def apply(): TabsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TabsProps]
     }
     
-    @scala.inline
-    implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabsProps](x: Self) {
       
-      @scala.inline
-      def setConfigureTransition(
+      inline def setConfigureTransition(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ /* transitionProps */ js.Any, /* prevTransitionProps */ js.UndefOr[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionProps */ js.Any
             ]) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NavigationTransitionSpec */ js.Any
       ): Self = StObject.set(x, "configureTransition", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConfigureTransitionUndefined: Self = StObject.set(x, "configureTransition", js.undefined)
+      inline def setConfigureTransitionUndefined: Self = StObject.set(x, "configureTransition", js.undefined)
       
-      @scala.inline
-      def setInitialLayout(value: Height): Self = StObject.set(x, "initialLayout", value.asInstanceOf[js.Any])
+      inline def setInitialLayout(value: Height): Self = StObject.set(x, "initialLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialLayoutUndefined: Self = StObject.set(x, "initialLayout", js.undefined)
+      inline def setInitialLayoutUndefined: Self = StObject.set(x, "initialLayout", js.undefined)
     }
   }
 }

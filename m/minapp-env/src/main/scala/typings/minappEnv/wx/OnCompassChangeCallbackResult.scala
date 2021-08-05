@@ -16,19 +16,15 @@ trait OnCompassChangeCallbackResult extends StObject {
 }
 object OnCompassChangeCallbackResult {
   
-  @scala.inline
-  def apply(accuracy: Double | String, direction: Double): OnCompassChangeCallbackResult = {
+  inline def apply(accuracy: Double | String, direction: Double): OnCompassChangeCallbackResult = {
     val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnCompassChangeCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnCompassChangeCallbackResultMutableBuilder[Self <: OnCompassChangeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnCompassChangeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double | String): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double | String): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }
 }

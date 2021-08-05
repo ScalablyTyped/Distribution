@@ -17,31 +17,23 @@ trait Line extends StObject {
 }
 object Line {
   
-  @scala.inline
-  def apply(): Line = {
+  inline def apply(): Line = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Line]
   }
   
-  @scala.inline
-  implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+  extension [Self <: Line](x: Self) {
     
-    @scala.inline
-    def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
+    inline def setLineCategory(value: String): Self = StObject.set(x, "lineCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
+    inline def setLineCategoryUndefined: Self = StObject.set(x, "lineCategory", js.undefined)
     
-    @scala.inline
-    def setLineProperties(value: LineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
+    inline def setLineProperties(value: LineProperties): Self = StObject.set(x, "lineProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
+    inline def setLinePropertiesUndefined: Self = StObject.set(x, "lineProperties", js.undefined)
     
-    @scala.inline
-    def setLineType(value: String): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
+    inline def setLineType(value: String): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineTypeUndefined: Self = StObject.set(x, "lineType", js.undefined)
+    inline def setLineTypeUndefined: Self = StObject.set(x, "lineType", js.undefined)
   }
 }

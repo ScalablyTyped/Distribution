@@ -16,17 +16,14 @@ object typesInvalidIdentityPoolConfigurationExceptionMod {
   }
   object InvalidIdentityPoolConfigurationException {
     
-    @scala.inline
-    def apply(): InvalidIdentityPoolConfigurationException = {
+    inline def apply(): InvalidIdentityPoolConfigurationException = {
       val __obj = js.Dynamic.literal(name = "InvalidIdentityPoolConfigurationException")
       __obj.asInstanceOf[InvalidIdentityPoolConfigurationException]
     }
     
-    @scala.inline
-    implicit class InvalidIdentityPoolConfigurationExceptionMutableBuilder[Self <: InvalidIdentityPoolConfigurationException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidIdentityPoolConfigurationException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidIdentityPoolConfigurationException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,20 +38,16 @@ object typesInvalidIdentityPoolConfigurationExceptionMod {
   }
   object InvalidIdentityPoolConfigurationExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidIdentityPoolConfigurationExceptionDetails = {
+    inline def apply(): InvalidIdentityPoolConfigurationExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidIdentityPoolConfigurationExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidIdentityPoolConfigurationExceptionDetailsMutableBuilder[Self <: InvalidIdentityPoolConfigurationExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidIdentityPoolConfigurationExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

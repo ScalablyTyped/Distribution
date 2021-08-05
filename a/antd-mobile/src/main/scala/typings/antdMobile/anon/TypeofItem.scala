@@ -11,16 +11,13 @@ trait TypeofItem extends StObject {
 }
 object TypeofItem {
   
-  @scala.inline
-  def apply(defaultProps: PartialListItemProps): TypeofItem = {
+  inline def apply(defaultProps: PartialListItemProps): TypeofItem = {
     val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofItem]
   }
   
-  @scala.inline
-  implicit class TypeofItemMutableBuilder[Self <: TypeofItem] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofItem](x: Self) {
     
-    @scala.inline
-    def setDefaultProps(value: PartialListItemProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+    inline def setDefaultProps(value: PartialListItemProps): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }
 }

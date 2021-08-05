@@ -22,8 +22,7 @@ trait _URI extends StObject {
 }
 object _URI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `extension`: String,
     folder: String,
     name: String,
@@ -38,28 +37,20 @@ object _URI {
     __obj.asInstanceOf[_URI]
   }
   
-  @scala.inline
-  implicit class _URIMutableBuilder[Self <: _URI] (val x: Self) extends AnyVal {
+  extension [Self <: _URI](x: Self) {
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToURI(value: String => String): Self = StObject.set(x, "toURI", js.Any.fromFunction1(value))
+    inline def setToURI(value: String => String): Self = StObject.set(x, "toURI", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

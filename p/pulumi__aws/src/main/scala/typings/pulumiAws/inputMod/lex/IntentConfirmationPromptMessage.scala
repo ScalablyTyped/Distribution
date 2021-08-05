@@ -25,25 +25,19 @@ trait IntentConfirmationPromptMessage extends StObject {
 }
 object IntentConfirmationPromptMessage {
   
-  @scala.inline
-  def apply(content: Input[String], contentType: Input[String]): IntentConfirmationPromptMessage = {
+  inline def apply(content: Input[String], contentType: Input[String]): IntentConfirmationPromptMessage = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentConfirmationPromptMessage]
   }
   
-  @scala.inline
-  implicit class IntentConfirmationPromptMessageMutableBuilder[Self <: IntentConfirmationPromptMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IntentConfirmationPromptMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Input[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: Input[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: Input[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumber(value: Input[Double]): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
+    inline def setGroupNumber(value: Input[Double]): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
+    inline def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
   }
 }

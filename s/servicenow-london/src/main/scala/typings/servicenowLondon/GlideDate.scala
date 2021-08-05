@@ -133,8 +133,7 @@ trait GlideDate extends StObject {
 }
 object GlideDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getByFormat: String => String,
     getDayOfMonthNoTZ: () => Double,
     getDisplayValue: () => String,
@@ -149,34 +148,24 @@ object GlideDate {
     __obj.asInstanceOf[GlideDate]
   }
   
-  @scala.inline
-  implicit class GlideDateMutableBuilder[Self <: GlideDate] (val x: Self) extends AnyVal {
+  extension [Self <: GlideDate](x: Self) {
     
-    @scala.inline
-    def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
+    inline def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDayOfMonthNoTZ(value: () => Double): Self = StObject.set(x, "getDayOfMonthNoTZ", js.Any.fromFunction0(value))
+    inline def setGetDayOfMonthNoTZ(value: () => Double): Self = StObject.set(x, "getDayOfMonthNoTZ", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayValue(value: () => String): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
+    inline def setGetDisplayValue(value: () => String): Self = StObject.set(x, "getDisplayValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDisplayValueInternal(value: () => String): Self = StObject.set(x, "getDisplayValueInternal", js.Any.fromFunction0(value))
+    inline def setGetDisplayValueInternal(value: () => String): Self = StObject.set(x, "getDisplayValueInternal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMonthNoTZ(value: () => Double): Self = StObject.set(x, "getMonthNoTZ", js.Any.fromFunction0(value))
+    inline def setGetMonthNoTZ(value: () => Double): Self = StObject.set(x, "getMonthNoTZ", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetYearNoTZ(value: () => Double): Self = StObject.set(x, "getYearNoTZ", js.Any.fromFunction0(value))
+    inline def setGetYearNoTZ(value: () => Double): Self = StObject.set(x, "getYearNoTZ", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDisplayValue(value: String => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
+    inline def setSetDisplayValue(value: String => Unit): Self = StObject.set(x, "setDisplayValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

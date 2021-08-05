@@ -18,16 +18,13 @@ trait SATFactory extends StObject {
 }
 object SATFactory {
   
-  @scala.inline
-  def apply(collides: (BodyType, BodyType, ICollisionData) => ICollisionData): SATFactory = {
+  inline def apply(collides: (BodyType, BodyType, ICollisionData) => ICollisionData): SATFactory = {
     val __obj = js.Dynamic.literal(collides = js.Any.fromFunction3(collides))
     __obj.asInstanceOf[SATFactory]
   }
   
-  @scala.inline
-  implicit class SATFactoryMutableBuilder[Self <: SATFactory] (val x: Self) extends AnyVal {
+  extension [Self <: SATFactory](x: Self) {
     
-    @scala.inline
-    def setCollides(value: (BodyType, BodyType, ICollisionData) => ICollisionData): Self = StObject.set(x, "collides", js.Any.fromFunction3(value))
+    inline def setCollides(value: (BodyType, BodyType, ICollisionData) => ICollisionData): Self = StObject.set(x, "collides", js.Any.fromFunction3(value))
   }
 }

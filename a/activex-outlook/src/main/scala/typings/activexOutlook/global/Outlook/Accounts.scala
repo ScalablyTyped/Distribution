@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Accounts")
 @js.native
-class Accounts protected ()
+/* private */ class Accounts ()
   extends StObject
      with typings.activexOutlook.Outlook.Accounts {
   
@@ -23,7 +23,7 @@ class Accounts protected ()
   /* CompleteClass */
   override def Item(Index: js.Any): typings.activexOutlook.Outlook.Account = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Accounts_typekey")
   var OutlookDotAccounts_typekey: typings.activexOutlook.Outlook.Accounts = js.native
   

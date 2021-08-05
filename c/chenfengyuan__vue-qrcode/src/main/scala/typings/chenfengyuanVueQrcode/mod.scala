@@ -33,17 +33,14 @@ object mod extends Shortcut {
   }
   object QrCodeMethods {
     
-    @scala.inline
-    def apply(generate: () => Unit): QrCodeMethods = {
+    inline def apply(generate: () => Unit): QrCodeMethods = {
       val __obj = js.Dynamic.literal(generate = js.Any.fromFunction0(generate))
       __obj.asInstanceOf[QrCodeMethods]
     }
     
-    @scala.inline
-    implicit class QrCodeMethodsMutableBuilder[Self <: QrCodeMethods] (val x: Self) extends AnyVal {
+    extension [Self <: QrCodeMethods](x: Self) {
       
-      @scala.inline
-      def setGenerate(value: () => Unit): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
+      inline def setGenerate(value: () => Unit): Self = StObject.set(x, "generate", js.Any.fromFunction0(value))
     }
   }
   
@@ -60,26 +57,20 @@ object mod extends Shortcut {
   }
   object QrCodePorps {
     
-    @scala.inline
-    def apply(options: Color, tag: String): QrCodePorps = {
+    inline def apply(options: Color, tag: String): QrCodePorps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[QrCodePorps]
     }
     
-    @scala.inline
-    implicit class QrCodePorpsMutableBuilder[Self <: QrCodePorps] (val x: Self) extends AnyVal {
+    extension [Self <: QrCodePorps](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Color): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Color): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
     }
   }
   
@@ -90,17 +81,14 @@ object mod extends Shortcut {
   }
   object QrCodeWatch {
     
-    @scala.inline
-    def apply($props: js.Any => Unit): QrCodeWatch = {
+    inline def apply($props: js.Any => Unit): QrCodeWatch = {
       val __obj = js.Dynamic.literal($props = js.Any.fromFunction1($props))
       __obj.asInstanceOf[QrCodeWatch]
     }
     
-    @scala.inline
-    implicit class QrCodeWatchMutableBuilder[Self <: QrCodeWatch] (val x: Self) extends AnyVal {
+    extension [Self <: QrCodeWatch](x: Self) {
       
-      @scala.inline
-      def set$props(value: js.Any => Unit): Self = StObject.set(x, "$props", js.Any.fromFunction1(value))
+      inline def set$props(value: js.Any => Unit): Self = StObject.set(x, "$props", js.Any.fromFunction1(value))
     }
   }
   

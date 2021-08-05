@@ -20,20 +20,16 @@ object pricing {
   }
   object GetProductFilter {
     
-    @scala.inline
-    def apply(field: String, value: String): GetProductFilter = {
+    inline def apply(field: String, value: String): GetProductFilter = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetProductFilter]
     }
     
-    @scala.inline
-    implicit class GetProductFilterMutableBuilder[Self <: GetProductFilter] (val x: Self) extends AnyVal {
+    extension [Self <: GetProductFilter](x: Self) {
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

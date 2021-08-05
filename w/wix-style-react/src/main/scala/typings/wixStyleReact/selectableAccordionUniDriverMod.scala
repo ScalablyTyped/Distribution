@@ -17,8 +17,7 @@ object selectableAccordionUniDriverMod {
   }
   object SelectableAccordionUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickItemAt: Double => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -29,14 +28,11 @@ object selectableAccordionUniDriverMod {
       __obj.asInstanceOf[SelectableAccordionUniDriver]
     }
     
-    @scala.inline
-    implicit class SelectableAccordionUniDriverMutableBuilder[Self <: SelectableAccordionUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SelectableAccordionUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickItemAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickItemAt", js.Any.fromFunction1(value))
+      inline def setClickItemAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickItemAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsItemExpandedAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isItemExpandedAt", js.Any.fromFunction1(value))
+      inline def setIsItemExpandedAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isItemExpandedAt", js.Any.fromFunction1(value))
     }
   }
 }

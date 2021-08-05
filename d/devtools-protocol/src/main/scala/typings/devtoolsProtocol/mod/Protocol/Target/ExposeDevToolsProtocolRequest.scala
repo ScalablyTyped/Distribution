@@ -15,22 +15,17 @@ trait ExposeDevToolsProtocolRequest extends StObject {
 }
 object ExposeDevToolsProtocolRequest {
   
-  @scala.inline
-  def apply(targetId: TargetID): ExposeDevToolsProtocolRequest = {
+  inline def apply(targetId: TargetID): ExposeDevToolsProtocolRequest = {
     val __obj = js.Dynamic.literal(targetId = targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExposeDevToolsProtocolRequest]
   }
   
-  @scala.inline
-  implicit class ExposeDevToolsProtocolRequestMutableBuilder[Self <: ExposeDevToolsProtocolRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExposeDevToolsProtocolRequest](x: Self) {
     
-    @scala.inline
-    def setBindingName(value: String): Self = StObject.set(x, "bindingName", value.asInstanceOf[js.Any])
+    inline def setBindingName(value: String): Self = StObject.set(x, "bindingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingNameUndefined: Self = StObject.set(x, "bindingName", js.undefined)
+    inline def setBindingNameUndefined: Self = StObject.set(x, "bindingName", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

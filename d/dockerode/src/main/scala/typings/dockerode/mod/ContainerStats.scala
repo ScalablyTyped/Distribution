@@ -21,8 +21,7 @@ trait ContainerStats extends StObject {
 }
 object ContainerStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cpu_stats: CPUStats,
     memory_stats: MemoryStats,
     networks: NetworkStats,
@@ -34,25 +33,18 @@ object ContainerStats {
     __obj.asInstanceOf[ContainerStats]
   }
   
-  @scala.inline
-  implicit class ContainerStatsMutableBuilder[Self <: ContainerStats] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerStats](x: Self) {
     
-    @scala.inline
-    def setCpu_stats(value: CPUStats): Self = StObject.set(x, "cpu_stats", value.asInstanceOf[js.Any])
+    inline def setCpu_stats(value: CPUStats): Self = StObject.set(x, "cpu_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory_stats(value: MemoryStats): Self = StObject.set(x, "memory_stats", value.asInstanceOf[js.Any])
+    inline def setMemory_stats(value: MemoryStats): Self = StObject.set(x, "memory_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworks(value: NetworkStats): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
+    inline def setNetworks(value: NetworkStats): Self = StObject.set(x, "networks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid_stats(value: Current): Self = StObject.set(x, "pid_stats", value.asInstanceOf[js.Any])
+    inline def setPid_stats(value: Current): Self = StObject.set(x, "pid_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecpu_stats(value: CPUStats): Self = StObject.set(x, "precpu_stats", value.asInstanceOf[js.Any])
+    inline def setPrecpu_stats(value: CPUStats): Self = StObject.set(x, "precpu_stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: String): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: String): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
   }
 }

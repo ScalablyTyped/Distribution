@@ -16,34 +16,25 @@ trait OnPress[T] extends StObject {
 }
 object OnPress {
   
-  @scala.inline
-  def apply[T](text: String): OnPress[T] = {
+  inline def apply[T](text: String): OnPress[T] = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnPress[T]]
   }
   
-  @scala.inline
-  implicit class OnPressMutableBuilder[Self <: OnPress[?], T] (val x: Self & OnPress[T]) extends AnyVal {
+  extension [Self <: OnPress[?], T](x: Self & OnPress[T]) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+    inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setStyle(value: T): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: T): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

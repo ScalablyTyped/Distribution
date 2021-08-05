@@ -29,25 +29,19 @@ trait RecordsCount extends StObject {
 }
 object RecordsCount {
   
-  @scala.inline
-  def apply(attach: () => Unit, create: () => JQuery, init: () => Unit, initOnLoad: () => Boolean): RecordsCount = {
+  inline def apply(attach: () => Unit, create: () => JQuery, init: () => Unit, initOnLoad: () => Boolean): RecordsCount = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction0(attach), create = js.Any.fromFunction0(create), init = js.Any.fromFunction0(init), initOnLoad = js.Any.fromFunction0(initOnLoad))
     __obj.asInstanceOf[RecordsCount]
   }
   
-  @scala.inline
-  implicit class RecordsCountMutableBuilder[Self <: RecordsCount] (val x: Self) extends AnyVal {
+  extension [Self <: RecordsCount](x: Self) {
     
-    @scala.inline
-    def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
+    inline def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreate(value: () => JQuery): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => JQuery): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
+    inline def setInitOnLoad(value: () => Boolean): Self = StObject.set(x, "initOnLoad", js.Any.fromFunction0(value))
   }
 }

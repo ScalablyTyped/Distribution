@@ -54,8 +54,7 @@ object accountRepositoryLoginResponseMod {
   }
   object AccountRepositoryLoginResponseLoggedInUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       account_type: Double,
       allow_contacts_sync: Boolean,
       allowed_commenter_type: String,
@@ -83,74 +82,51 @@ object accountRepositoryLoginResponseMod {
       __obj.asInstanceOf[AccountRepositoryLoginResponseLoggedInUser]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryLoginResponseLoggedInUserMutableBuilder[Self <: AccountRepositoryLoginResponseLoggedInUser] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryLoginResponseLoggedInUser](x: Self) {
       
-      @scala.inline
-      def setAccount_type(value: Double): Self = StObject.set(x, "account_type", value.asInstanceOf[js.Any])
+      inline def setAccount_type(value: Double): Self = StObject.set(x, "account_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_contacts_sync(value: Boolean): Self = StObject.set(x, "allow_contacts_sync", value.asInstanceOf[js.Any])
+      inline def setAllow_contacts_sync(value: Boolean): Self = StObject.set(x, "allow_contacts_sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
+      inline def setAllowed_commenter_type(value: String): Self = StObject.set(x, "allowed_commenter_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
+      inline def setCan_boost_post(value: Boolean): Self = StObject.set(x, "can_boost_post", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
+      inline def setCan_see_organic_insights(value: Boolean): Self = StObject.set(x, "can_see_organic_insights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry_code(value: Double): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
+      inline def setCountry_code(value: Double): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
+      inline def setHas_anonymous_profile_picture(value: Boolean): Self = StObject.set(x, "has_anonymous_profile_picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_placed_orders(value: Boolean): Self = StObject.set(x, "has_placed_orders", value.asInstanceOf[js.Any])
+      inline def setHas_placed_orders(value: Boolean): Self = StObject.set(x, "has_placed_orders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_business(value: Boolean): Self = StObject.set(x, "is_business", value.asInstanceOf[js.Any])
+      inline def setIs_business(value: Boolean): Self = StObject.set(x, "is_business", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_call_to_action_enabled(value: Null): Self = StObject.set(x, "is_call_to_action_enabled", value.asInstanceOf[js.Any])
+      inline def setIs_call_to_action_enabled(value: Null): Self = StObject.set(x, "is_call_to_action_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNametag(value: AccountRepositoryLoginResponseNametag): Self = StObject.set(x, "nametag", value.asInstanceOf[js.Any])
+      inline def setNametag(value: AccountRepositoryLoginResponseNametag): Self = StObject.set(x, "nametag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNational_number(value: Double): Self = StObject.set(x, "national_number", value.asInstanceOf[js.Any])
+      inline def setNational_number(value: Double): Self = StObject.set(x, "national_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+      inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
+      inline def setReel_auto_archive(value: String): Self = StObject.set(x, "reel_auto_archive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
+      inline def setShow_insights_terms(value: Boolean): Self = StObject.set(x, "show_insights_terms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,26 +142,20 @@ object accountRepositoryLoginResponseMod {
   }
   object AccountRepositoryLoginResponseNametag {
     
-    @scala.inline
-    def apply(emoji: String, gradient: String, mode: Double, selfie_sticker: String): AccountRepositoryLoginResponseNametag = {
+    inline def apply(emoji: String, gradient: String, mode: Double, selfie_sticker: String): AccountRepositoryLoginResponseNametag = {
       val __obj = js.Dynamic.literal(emoji = emoji.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], selfie_sticker = selfie_sticker.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountRepositoryLoginResponseNametag]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryLoginResponseNametagMutableBuilder[Self <: AccountRepositoryLoginResponseNametag] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryLoginResponseNametag](x: Self) {
       
-      @scala.inline
-      def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+      inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+      inline def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfie_sticker(value: String): Self = StObject.set(x, "selfie_sticker", value.asInstanceOf[js.Any])
+      inline def setSelfie_sticker(value: String): Self = StObject.set(x, "selfie_sticker", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,20 +167,16 @@ object accountRepositoryLoginResponseMod {
   }
   object AccountRepositoryLoginResponseRootObject {
     
-    @scala.inline
-    def apply(logged_in_user: AccountRepositoryLoginResponseLoggedInUser, status: String): AccountRepositoryLoginResponseRootObject = {
+    inline def apply(logged_in_user: AccountRepositoryLoginResponseLoggedInUser, status: String): AccountRepositoryLoginResponseRootObject = {
       val __obj = js.Dynamic.literal(logged_in_user = logged_in_user.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountRepositoryLoginResponseRootObject]
     }
     
-    @scala.inline
-    implicit class AccountRepositoryLoginResponseRootObjectMutableBuilder[Self <: AccountRepositoryLoginResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: AccountRepositoryLoginResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setLogged_in_user(value: AccountRepositoryLoginResponseLoggedInUser): Self = StObject.set(x, "logged_in_user", value.asInstanceOf[js.Any])
+      inline def setLogged_in_user(value: AccountRepositoryLoginResponseLoggedInUser): Self = StObject.set(x, "logged_in_user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

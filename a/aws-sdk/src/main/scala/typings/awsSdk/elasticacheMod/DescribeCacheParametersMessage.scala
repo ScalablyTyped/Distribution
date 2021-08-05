@@ -28,34 +28,25 @@ trait DescribeCacheParametersMessage extends StObject {
 }
 object DescribeCacheParametersMessage {
   
-  @scala.inline
-  def apply(CacheParameterGroupName: String): DescribeCacheParametersMessage = {
+  inline def apply(CacheParameterGroupName: String): DescribeCacheParametersMessage = {
     val __obj = js.Dynamic.literal(CacheParameterGroupName = CacheParameterGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeCacheParametersMessage]
   }
   
-  @scala.inline
-  implicit class DescribeCacheParametersMessageMutableBuilder[Self <: DescribeCacheParametersMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCacheParametersMessage](x: Self) {
     
-    @scala.inline
-    def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setCacheParameterGroupName(value: String): Self = StObject.set(x, "CacheParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
   }
 }

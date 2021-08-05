@@ -14,10 +14,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyBodyChecksumMiddleware[StreamType](headerName: String, hashCtor: Instantiable, encoder: Encoder): BuildMiddleware[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBodyChecksumMiddleware")(headerName.asInstanceOf[js.Any], hashCtor.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
-  @scala.inline
-  def applyBodyChecksumMiddleware[StreamType](
+  inline def applyBodyChecksumMiddleware[StreamType](headerName: String, hashCtor: Instantiable, encoder: Encoder): BuildMiddleware[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBodyChecksumMiddleware")(headerName.asInstanceOf[js.Any], hashCtor.asInstanceOf[js.Any], encoder.asInstanceOf[js.Any])).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  inline def applyBodyChecksumMiddleware[StreamType](
     headerName: String,
     hashCtor: Instantiable,
     encoder: Encoder,

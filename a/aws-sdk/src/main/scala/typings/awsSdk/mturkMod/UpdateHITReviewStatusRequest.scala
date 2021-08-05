@@ -18,22 +18,17 @@ trait UpdateHITReviewStatusRequest extends StObject {
 }
 object UpdateHITReviewStatusRequest {
   
-  @scala.inline
-  def apply(HITId: EntityId): UpdateHITReviewStatusRequest = {
+  inline def apply(HITId: EntityId): UpdateHITReviewStatusRequest = {
     val __obj = js.Dynamic.literal(HITId = HITId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateHITReviewStatusRequest]
   }
   
-  @scala.inline
-  implicit class UpdateHITReviewStatusRequestMutableBuilder[Self <: UpdateHITReviewStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateHITReviewStatusRequest](x: Self) {
     
-    @scala.inline
-    def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
+    inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevert(value: Boolean): Self = StObject.set(x, "Revert", value.asInstanceOf[js.Any])
+    inline def setRevert(value: Boolean): Self = StObject.set(x, "Revert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevertUndefined: Self = StObject.set(x, "Revert", js.undefined)
+    inline def setRevertUndefined: Self = StObject.set(x, "Revert", js.undefined)
   }
 }

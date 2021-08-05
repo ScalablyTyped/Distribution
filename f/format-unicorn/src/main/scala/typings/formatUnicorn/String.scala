@@ -10,16 +10,13 @@ trait String extends StObject {
 }
 object String {
   
-  @scala.inline
-  def apply(formatUnicorn: js.Object => java.lang.String): String = {
+  inline def apply(formatUnicorn: js.Object => java.lang.String): String = {
     val __obj = js.Dynamic.literal(formatUnicorn = js.Any.fromFunction1(formatUnicorn))
     __obj.asInstanceOf[String]
   }
   
-  @scala.inline
-  implicit class StringMutableBuilder[Self <: String] (val x: Self) extends AnyVal {
+  extension [Self <: String](x: Self) {
     
-    @scala.inline
-    def setFormatUnicorn(value: js.Object => java.lang.String): Self = StObject.set(x, "formatUnicorn", js.Any.fromFunction1(value))
+    inline def setFormatUnicorn(value: js.Object => java.lang.String): Self = StObject.set(x, "formatUnicorn", js.Any.fromFunction1(value))
   }
 }

@@ -15,16 +15,13 @@ trait TextDocumentChangeRegistrationOptions
 }
 object TextDocumentChangeRegistrationOptions {
   
-  @scala.inline
-  def apply(syncKind: TextDocumentSyncKind): TextDocumentChangeRegistrationOptions = {
+  inline def apply(syncKind: TextDocumentSyncKind): TextDocumentChangeRegistrationOptions = {
     val __obj = js.Dynamic.literal(syncKind = syncKind.asInstanceOf[js.Any], documentSelector = null)
     __obj.asInstanceOf[TextDocumentChangeRegistrationOptions]
   }
   
-  @scala.inline
-  implicit class TextDocumentChangeRegistrationOptionsMutableBuilder[Self <: TextDocumentChangeRegistrationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextDocumentChangeRegistrationOptions](x: Self) {
     
-    @scala.inline
-    def setSyncKind(value: TextDocumentSyncKind): Self = StObject.set(x, "syncKind", value.asInstanceOf[js.Any])
+    inline def setSyncKind(value: TextDocumentSyncKind): Self = StObject.set(x, "syncKind", value.asInstanceOf[js.Any])
   }
 }

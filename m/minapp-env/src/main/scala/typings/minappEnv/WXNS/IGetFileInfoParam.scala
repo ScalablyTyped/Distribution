@@ -14,22 +14,17 @@ trait IGetFileInfoParam
 }
 object IGetFileInfoParam {
   
-  @scala.inline
-  def apply(filePath: String): IGetFileInfoParam = {
+  inline def apply(filePath: String): IGetFileInfoParam = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGetFileInfoParam]
   }
   
-  @scala.inline
-  implicit class IGetFileInfoParamMutableBuilder[Self <: IGetFileInfoParam] (val x: Self) extends AnyVal {
+  extension [Self <: IGetFileInfoParam](x: Self) {
     
-    @scala.inline
-    def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+    inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
+    inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }
 }

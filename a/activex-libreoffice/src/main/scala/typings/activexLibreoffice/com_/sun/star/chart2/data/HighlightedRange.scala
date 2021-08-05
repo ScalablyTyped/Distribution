@@ -23,8 +23,7 @@ trait HighlightedRange extends StObject {
 }
 object HighlightedRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowMerginigWithOtherRanges: Boolean,
     Index: Double,
     PreferredColor: Double,
@@ -34,19 +33,14 @@ object HighlightedRange {
     __obj.asInstanceOf[HighlightedRange]
   }
   
-  @scala.inline
-  implicit class HighlightedRangeMutableBuilder[Self <: HighlightedRange] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightedRange](x: Self) {
     
-    @scala.inline
-    def setAllowMerginigWithOtherRanges(value: Boolean): Self = StObject.set(x, "AllowMerginigWithOtherRanges", value.asInstanceOf[js.Any])
+    inline def setAllowMerginigWithOtherRanges(value: Boolean): Self = StObject.set(x, "AllowMerginigWithOtherRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredColor(value: Double): Self = StObject.set(x, "PreferredColor", value.asInstanceOf[js.Any])
+    inline def setPreferredColor(value: Double): Self = StObject.set(x, "PreferredColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeRepresentation(value: String): Self = StObject.set(x, "RangeRepresentation", value.asInstanceOf[js.Any])
+    inline def setRangeRepresentation(value: String): Self = StObject.set(x, "RangeRepresentation", value.asInstanceOf[js.Any])
   }
 }

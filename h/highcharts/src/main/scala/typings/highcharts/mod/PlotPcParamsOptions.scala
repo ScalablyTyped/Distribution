@@ -15,19 +15,15 @@ trait PlotPcParamsOptions extends StObject {
 }
 object PlotPcParamsOptions {
   
-  @scala.inline
-  def apply(): PlotPcParamsOptions = {
+  inline def apply(): PlotPcParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotPcParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotPcParamsOptionsMutableBuilder[Self <: PlotPcParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotPcParamsOptions](x: Self) {
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

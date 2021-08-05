@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AlignTypes extends StObject
 object AlignTypes {
   
-  @scala.inline
-  def center: typings.reactNativeModals.reactNativeModalsStrings.center = "center".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.center]
+  inline def center: typings.reactNativeModals.reactNativeModalsStrings.center = "center".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.center]
   
-  @scala.inline
-  def `flex-end`: typings.reactNativeModals.reactNativeModalsStrings.`flex-end` = "flex-end".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.`flex-end`]
+  inline def `flex-end`: typings.reactNativeModals.reactNativeModalsStrings.`flex-end` = "flex-end".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.`flex-end`]
   
-  @scala.inline
-  def `flex-start`: typings.reactNativeModals.reactNativeModalsStrings.`flex-start` = "flex-start".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.`flex-start`]
+  inline def `flex-start`: typings.reactNativeModals.reactNativeModalsStrings.`flex-start` = "flex-start".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.`flex-start`]
 }

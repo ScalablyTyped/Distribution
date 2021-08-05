@@ -34,37 +34,27 @@ trait SchemaSecuritySettings extends StObject {
 }
 object SchemaSecuritySettings {
   
-  @scala.inline
-  def apply(): SchemaSecuritySettings = {
+  inline def apply(): SchemaSecuritySettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecuritySettings]
   }
   
-  @scala.inline
-  implicit class SchemaSecuritySettingsMutableBuilder[Self <: SchemaSecuritySettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecuritySettings](x: Self) {
     
-    @scala.inline
-    def setAuthenticationPolicy(value: SchemaAuthenticationPolicy): Self = StObject.set(x, "authenticationPolicy", value.asInstanceOf[js.Any])
+    inline def setAuthenticationPolicy(value: SchemaAuthenticationPolicy): Self = StObject.set(x, "authenticationPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationPolicyUndefined: Self = StObject.set(x, "authenticationPolicy", js.undefined)
+    inline def setAuthenticationPolicyUndefined: Self = StObject.set(x, "authenticationPolicy", js.undefined)
     
-    @scala.inline
-    def setAuthorizationConfig(value: SchemaAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
+    inline def setAuthorizationConfig(value: SchemaAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
+    inline def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
     
-    @scala.inline
-    def setClientTlsSettings(value: SchemaClientTlsSettings): Self = StObject.set(x, "clientTlsSettings", value.asInstanceOf[js.Any])
+    inline def setClientTlsSettings(value: SchemaClientTlsSettings): Self = StObject.set(x, "clientTlsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTlsSettingsUndefined: Self = StObject.set(x, "clientTlsSettings", js.undefined)
+    inline def setClientTlsSettingsUndefined: Self = StObject.set(x, "clientTlsSettings", js.undefined)
     
-    @scala.inline
-    def setServerSettingsSelector(value: SchemaServerSecuritySettingsSelector): Self = StObject.set(x, "serverSettingsSelector", value.asInstanceOf[js.Any])
+    inline def setServerSettingsSelector(value: SchemaServerSecuritySettingsSelector): Self = StObject.set(x, "serverSettingsSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerSettingsSelectorUndefined: Self = StObject.set(x, "serverSettingsSelector", js.undefined)
+    inline def setServerSettingsSelectorUndefined: Self = StObject.set(x, "serverSettingsSelector", js.undefined)
   }
 }

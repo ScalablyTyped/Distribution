@@ -25,37 +25,27 @@ trait MaxEventLoopDelay extends StObject {
 }
 object MaxEventLoopDelay {
   
-  @scala.inline
-  def apply(): MaxEventLoopDelay = {
+  inline def apply(): MaxEventLoopDelay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxEventLoopDelay]
   }
   
-  @scala.inline
-  implicit class MaxEventLoopDelayMutableBuilder[Self <: MaxEventLoopDelay] (val x: Self) extends AnyVal {
+  extension [Self <: MaxEventLoopDelay](x: Self) {
     
-    @scala.inline
-    def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
+    inline def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
+    inline def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
     
-    @scala.inline
-    def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
+    inline def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeapUsedBytesUndefined: Self = StObject.set(x, "maxHeapUsedBytes", js.undefined)
+    inline def setMaxHeapUsedBytesUndefined: Self = StObject.set(x, "maxHeapUsedBytes", js.undefined)
     
-    @scala.inline
-    def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
+    inline def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRssBytesUndefined: Self = StObject.set(x, "maxRssBytes", js.undefined)
+    inline def setMaxRssBytesUndefined: Self = StObject.set(x, "maxRssBytes", js.undefined)
     
-    @scala.inline
-    def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
+    inline def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
+    inline def setSampleIntervalUndefined: Self = StObject.set(x, "sampleInterval", js.undefined)
   }
 }

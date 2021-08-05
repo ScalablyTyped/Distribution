@@ -23,31 +23,23 @@ trait JobExecutionState extends StObject {
 }
 object JobExecutionState {
   
-  @scala.inline
-  def apply(): JobExecutionState = {
+  inline def apply(): JobExecutionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobExecutionState]
   }
   
-  @scala.inline
-  implicit class JobExecutionStateMutableBuilder[Self <: JobExecutionState] (val x: Self) extends AnyVal {
+  extension [Self <: JobExecutionState](x: Self) {
     
-    @scala.inline
-    def setStatus(value: JobExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: JobExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetails(value: DetailsMap): Self = StObject.set(x, "statusDetails", value.asInstanceOf[js.Any])
+    inline def setStatusDetails(value: DetailsMap): Self = StObject.set(x, "statusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailsUndefined: Self = StObject.set(x, "statusDetails", js.undefined)
+    inline def setStatusDetailsUndefined: Self = StObject.set(x, "statusDetails", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
   }
 }

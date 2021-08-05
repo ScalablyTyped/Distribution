@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.WebGeopositionError")
 @js.native
-class WebGeopositionError protected ()
+/* private */ class WebGeopositionError ()
   extends StObject
      with typings.activexMshtml.MSHTML.WebGeopositionError {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.WebGeopositionError_typekey")
   var MSHTMLDotWebGeopositionError_typekey: typings.activexMshtml.MSHTML.WebGeopositionError = js.native
   

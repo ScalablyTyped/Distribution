@@ -40,29 +40,23 @@ trait PaymentDataCallbacks extends StObject {
 }
 object PaymentDataCallbacks {
   
-  @scala.inline
-  def apply(): PaymentDataCallbacks = {
+  inline def apply(): PaymentDataCallbacks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentDataCallbacks]
   }
   
-  @scala.inline
-  implicit class PaymentDataCallbacksMutableBuilder[Self <: PaymentDataCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentDataCallbacks](x: Self) {
     
-    @scala.inline
-    def setOnPaymentAuthorized(
+    inline def setOnPaymentAuthorized(
       value: /* paymentData */ PaymentData => js.Promise[PaymentAuthorizationResult] | PaymentAuthorizationResult
     ): Self = StObject.set(x, "onPaymentAuthorized", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPaymentAuthorizedUndefined: Self = StObject.set(x, "onPaymentAuthorized", js.undefined)
+    inline def setOnPaymentAuthorizedUndefined: Self = StObject.set(x, "onPaymentAuthorized", js.undefined)
     
-    @scala.inline
-    def setOnPaymentDataChanged(
+    inline def setOnPaymentDataChanged(
       value: /* intermediatePaymentData */ IntermediatePaymentData => js.Promise[PaymentDataRequestUpdate] | PaymentDataRequestUpdate
     ): Self = StObject.set(x, "onPaymentDataChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPaymentDataChangedUndefined: Self = StObject.set(x, "onPaymentDataChanged", js.undefined)
+    inline def setOnPaymentDataChangedUndefined: Self = StObject.set(x, "onPaymentDataChanged", js.undefined)
   }
 }

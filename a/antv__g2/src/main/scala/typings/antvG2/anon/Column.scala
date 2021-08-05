@@ -23,22 +23,17 @@ trait Column extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply(column: Double, multiplePie: Double, rose: Double): Column = {
+  inline def apply(column: Double, multiplePie: Double, rose: Double): Column = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], multiplePie = multiplePie.asInstanceOf[js.Any], rose = rose.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+  extension [Self <: Column](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiplePie(value: Double): Self = StObject.set(x, "multiplePie", value.asInstanceOf[js.Any])
+    inline def setMultiplePie(value: Double): Self = StObject.set(x, "multiplePie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRose(value: Double): Self = StObject.set(x, "rose", value.asInstanceOf[js.Any])
+    inline def setRose(value: Double): Self = StObject.set(x, "rose", value.asInstanceOf[js.Any])
   }
 }

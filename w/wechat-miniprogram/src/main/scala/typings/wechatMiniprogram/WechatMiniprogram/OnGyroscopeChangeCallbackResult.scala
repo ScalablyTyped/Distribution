@@ -17,22 +17,17 @@ trait OnGyroscopeChangeCallbackResult extends StObject {
 }
 object OnGyroscopeChangeCallbackResult {
   
-  @scala.inline
-  def apply(x: Double, y: Double, z: Double): OnGyroscopeChangeCallbackResult = {
+  inline def apply(x: Double, y: Double, z: Double): OnGyroscopeChangeCallbackResult = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnGyroscopeChangeCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnGyroscopeChangeCallbackResultMutableBuilder[Self <: OnGyroscopeChangeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnGyroscopeChangeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

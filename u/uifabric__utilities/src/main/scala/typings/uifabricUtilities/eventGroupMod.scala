@@ -14,13 +14,13 @@ object eventGroupMod {
     /** parent: the context in which events attached to non-HTMLElements are called */
     def this(parent: js.Any) = this()
     
-    var _eventRecords: js.Any = js.native
+    /* private */ var _eventRecords: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
     /** Declare an event as being supported by this instance of EventGroup. */
     def declare(event: String): Unit = js.native
@@ -135,21 +135,17 @@ object eventGroupMod {
     @JSImport("@uifabric/utilities/lib/EventGroup", "EventGroup._isElement")
     @js.native
     def _isElement: js.Any = js.native
-    @scala.inline
-    def _isElement_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isElement")(x.asInstanceOf[js.Any])
+    inline def _isElement_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_isElement")(x.asInstanceOf[js.Any])
     
     @JSImport("@uifabric/utilities/lib/EventGroup", "EventGroup._uniqueId")
     @js.native
     def _uniqueId: js.Any = js.native
-    @scala.inline
-    def _uniqueId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueId")(x.asInstanceOf[js.Any])
+    inline def _uniqueId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueId")(x.asInstanceOf[js.Any])
     
     /** Check to see if the target has declared support of the given event. */
-    @scala.inline
-    def isDeclared(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDeclared")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isDeclared(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDeclared")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isObserved(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObserved")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isObserved(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObserved")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** For IE8, bubbleEvent is ignored here and must be dealt with by the handler.
       *  Events raised here by default have bubbling set to false and cancelable set to true.
@@ -157,17 +153,12 @@ object eventGroupMod {
       *  which may lead to unexpected behavior if it differs from the defaults.
       *
       */
-    @scala.inline
-    def raise(target: js.Any, eventName: String): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-    @scala.inline
-    def raise(target: js.Any, eventName: String, eventArgs: js.Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-    @scala.inline
-    def raise(target: js.Any, eventName: String, eventArgs: js.Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
-    @scala.inline
-    def raise(target: js.Any, eventName: String, eventArgs: Unit, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+    inline def raise(target: js.Any, eventName: String): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+    inline def raise(target: js.Any, eventName: String, eventArgs: js.Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+    inline def raise(target: js.Any, eventName: String, eventArgs: js.Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+    inline def raise(target: js.Any, eventName: String, eventArgs: Unit, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
     
-    @scala.inline
-    def stopPropagation(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def stopPropagation(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type IDeclaredEventsByName = StringDictionary[Boolean]
@@ -199,17 +190,14 @@ object eventGroupMod {
   }
   object IEventRecordList {
     
-    @scala.inline
-    def apply(count: Double): IEventRecordList = {
+    inline def apply(count: Double): IEventRecordList = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
       __obj.asInstanceOf[IEventRecordList]
     }
     
-    @scala.inline
-    implicit class IEventRecordListMutableBuilder[Self <: IEventRecordList] (val x: Self) extends AnyVal {
+    extension [Self <: IEventRecordList](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
   }
   

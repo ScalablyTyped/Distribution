@@ -20,8 +20,7 @@ trait TaskAgentQueue extends StObject {
 }
 object TaskAgentQueue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     groupScopeId: String,
     id: Double,
     name: String,
@@ -33,25 +32,18 @@ object TaskAgentQueue {
     __obj.asInstanceOf[TaskAgentQueue]
   }
   
-  @scala.inline
-  implicit class TaskAgentQueueMutableBuilder[Self <: TaskAgentQueue] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentQueue](x: Self) {
     
-    @scala.inline
-    def setGroupScopeId(value: String): Self = StObject.set(x, "groupScopeId", value.asInstanceOf[js.Any])
+    inline def setGroupScopeId(value: String): Self = StObject.set(x, "groupScopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+    inline def setPool(value: TaskAgentPoolReference): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioned(value: Boolean): Self = StObject.set(x, "provisioned", value.asInstanceOf[js.Any])
+    inline def setProvisioned(value: Boolean): Self = StObject.set(x, "provisioned", value.asInstanceOf[js.Any])
   }
 }

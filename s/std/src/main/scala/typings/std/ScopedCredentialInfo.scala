@@ -12,19 +12,15 @@ trait ScopedCredentialInfo extends StObject {
 }
 object ScopedCredentialInfo {
   
-  @scala.inline
-  def apply(credential: ScopedCredential, publicKey: CryptoKey): ScopedCredentialInfo = {
+  inline def apply(credential: ScopedCredential, publicKey: CryptoKey): ScopedCredentialInfo = {
     val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredentialInfo]
   }
   
-  @scala.inline
-  implicit class ScopedCredentialInfoMutableBuilder[Self <: ScopedCredentialInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ScopedCredentialInfo](x: Self) {
     
-    @scala.inline
-    def setCredential(value: ScopedCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: ScopedCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: CryptoKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: CryptoKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
   }
 }

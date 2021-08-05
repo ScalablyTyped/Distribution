@@ -26,34 +26,25 @@ trait SchemaPublisherProvidedForecast extends StObject {
 }
 object SchemaPublisherProvidedForecast {
   
-  @scala.inline
-  def apply(): SchemaPublisherProvidedForecast = {
+  inline def apply(): SchemaPublisherProvidedForecast = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPublisherProvidedForecast]
   }
   
-  @scala.inline
-  implicit class SchemaPublisherProvidedForecastMutableBuilder[Self <: SchemaPublisherProvidedForecast] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPublisherProvidedForecast](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: js.Array[SchemaDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[SchemaDimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: SchemaDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setWeeklyImpressions(value: String): Self = StObject.set(x, "weeklyImpressions", value.asInstanceOf[js.Any])
+    inline def setWeeklyImpressions(value: String): Self = StObject.set(x, "weeklyImpressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeklyImpressionsUndefined: Self = StObject.set(x, "weeklyImpressions", js.undefined)
+    inline def setWeeklyImpressionsUndefined: Self = StObject.set(x, "weeklyImpressions", js.undefined)
     
-    @scala.inline
-    def setWeeklyUniques(value: String): Self = StObject.set(x, "weeklyUniques", value.asInstanceOf[js.Any])
+    inline def setWeeklyUniques(value: String): Self = StObject.set(x, "weeklyUniques", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeeklyUniquesUndefined: Self = StObject.set(x, "weeklyUniques", js.undefined)
+    inline def setWeeklyUniquesUndefined: Self = StObject.set(x, "weeklyUniques", js.undefined)
   }
 }

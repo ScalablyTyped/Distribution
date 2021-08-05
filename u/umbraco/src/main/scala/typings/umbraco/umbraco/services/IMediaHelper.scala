@@ -138,8 +138,7 @@ trait IMediaHelper extends StObject {
 }
 object IMediaHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     detectIfImageByExtension: String => Boolean,
     formatFileTypes: String => String,
     getImagePropertyValue: IMediaOptions => String,
@@ -154,34 +153,24 @@ object IMediaHelper {
     __obj.asInstanceOf[IMediaHelper]
   }
   
-  @scala.inline
-  implicit class IMediaHelperMutableBuilder[Self <: IMediaHelper] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaHelper](x: Self) {
     
-    @scala.inline
-    def setDetectIfImageByExtension(value: String => Boolean): Self = StObject.set(x, "detectIfImageByExtension", js.Any.fromFunction1(value))
+    inline def setDetectIfImageByExtension(value: String => Boolean): Self = StObject.set(x, "detectIfImageByExtension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatFileTypes(value: String => String): Self = StObject.set(x, "formatFileTypes", js.Any.fromFunction1(value))
+    inline def setFormatFileTypes(value: String => String): Self = StObject.set(x, "formatFileTypes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetImagePropertyValue(value: IMediaOptions => String): Self = StObject.set(x, "getImagePropertyValue", js.Any.fromFunction1(value))
+    inline def setGetImagePropertyValue(value: IMediaOptions => String): Self = StObject.set(x, "getImagePropertyValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetMediaPropertyValue(value: IMediaOptions => String): Self = StObject.set(x, "getMediaPropertyValue", js.Any.fromFunction1(value))
+    inline def setGetMediaPropertyValue(value: IMediaOptions => String): Self = StObject.set(x, "getMediaPropertyValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetThumbnail(value: IMediaOptions => String): Self = StObject.set(x, "getThumbnail", js.Any.fromFunction1(value))
+    inline def setGetThumbnail(value: IMediaOptions => String): Self = StObject.set(x, "getThumbnail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetThumbnailFromPath(value: String => String): Self = StObject.set(x, "getThumbnailFromPath", js.Any.fromFunction1(value))
+    inline def setGetThumbnailFromPath(value: String => String): Self = StObject.set(x, "getThumbnailFromPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveFile(value: (IMediaEntity, Boolean) => String): Self = StObject.set(x, "resolveFile", js.Any.fromFunction2(value))
+    inline def setResolveFile(value: (IMediaEntity, Boolean) => String): Self = StObject.set(x, "resolveFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResolveFileFromEntity(value: (IMediaEntity, Boolean) => String): Self = StObject.set(x, "resolveFileFromEntity", js.Any.fromFunction2(value))
+    inline def setResolveFileFromEntity(value: (IMediaEntity, Boolean) => String): Self = StObject.set(x, "resolveFileFromEntity", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScaleToMaxSize(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "scaleToMaxSize", js.Any.fromFunction3(value))
+    inline def setScaleToMaxSize(value: (Double, Double, Double) => js.Any): Self = StObject.set(x, "scaleToMaxSize", js.Any.fromFunction3(value))
   }
 }

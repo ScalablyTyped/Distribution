@@ -22,23 +22,18 @@ object typesMod {
   }
   object PrecompileInput {
     
-    @scala.inline
-    def apply(_common: default, data: Buffer, gasLimit: ^): PrecompileInput = {
+    inline def apply(_common: default, data: Buffer, gasLimit: ^): PrecompileInput = {
       val __obj = js.Dynamic.literal(_common = _common.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], gasLimit = gasLimit.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrecompileInput]
     }
     
-    @scala.inline
-    implicit class PrecompileInputMutableBuilder[Self <: PrecompileInput] (val x: Self) extends AnyVal {
+    extension [Self <: PrecompileInput](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasLimit(value: ^): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
+      inline def setGasLimit(value: ^): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_common(value: default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
+      inline def set_common(value: default): Self = StObject.set(x, "_common", value.asInstanceOf[js.Any])
     }
   }
 }

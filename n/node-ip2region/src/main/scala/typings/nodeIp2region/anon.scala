@@ -14,20 +14,16 @@ object anon {
   }
   object City {
     
-    @scala.inline
-    def apply(city: Double, region: String): City = {
+    inline def apply(city: Double, region: String): City = {
       val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
       __obj.asInstanceOf[City]
     }
     
-    @scala.inline
-    implicit class CityMutableBuilder[Self <: City] (val x: Self) extends AnyVal {
+    extension [Self <: City](x: Self) {
       
-      @scala.inline
-      def setCity(value: Double): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+      inline def setCity(value: Double): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object DbPath {
     
-    @scala.inline
-    def apply(dbPath: String): DbPath = {
+    inline def apply(dbPath: String): DbPath = {
       val __obj = js.Dynamic.literal(dbPath = dbPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[DbPath]
     }
     
-    @scala.inline
-    implicit class DbPathMutableBuilder[Self <: DbPath] (val x: Self) extends AnyVal {
+    extension [Self <: DbPath](x: Self) {
       
-      @scala.inline
-      def setDbPath(value: String): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
+      inline def setDbPath(value: String): Self = StObject.set(x, "dbPath", value.asInstanceOf[js.Any])
     }
   }
 }

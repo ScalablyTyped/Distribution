@@ -12,19 +12,15 @@ trait CloseListbox extends StObject {
 }
 object CloseListbox {
   
-  @scala.inline
-  def apply(closeListbox: () => Unit, value: String): CloseListbox = {
+  inline def apply(closeListbox: () => Unit, value: String): CloseListbox = {
     val __obj = js.Dynamic.literal(closeListbox = js.Any.fromFunction0(closeListbox), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseListbox]
   }
   
-  @scala.inline
-  implicit class CloseListboxMutableBuilder[Self <: CloseListbox] (val x: Self) extends AnyVal {
+  extension [Self <: CloseListbox](x: Self) {
     
-    @scala.inline
-    def setCloseListbox(value: () => Unit): Self = StObject.set(x, "closeListbox", js.Any.fromFunction0(value))
+    inline def setCloseListbox(value: () => Unit): Self = StObject.set(x, "closeListbox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

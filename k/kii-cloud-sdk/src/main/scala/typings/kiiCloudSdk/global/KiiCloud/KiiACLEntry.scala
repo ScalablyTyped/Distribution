@@ -97,6 +97,5 @@ object KiiACLEntry {
     * @throws If the specified action is invalid.
     */
   /* static member */
-  @scala.inline
-  def entryWithSubject(Subject: KiiACLSubject, action: typings.kiiCloudSdk.KiiCloud.KiiACLAction): typings.kiiCloudSdk.KiiCloud.KiiACLEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("entryWithSubject")(Subject.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiACLEntry]
+  inline def entryWithSubject(Subject: KiiACLSubject, action: typings.kiiCloudSdk.KiiCloud.KiiACLAction): typings.kiiCloudSdk.KiiCloud.KiiACLEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("entryWithSubject")(Subject.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiACLEntry]
 }

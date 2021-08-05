@@ -12,19 +12,15 @@ trait Truncated extends StObject {
 }
 object Truncated {
   
-  @scala.inline
-  def apply(truncated: Boolean, wrapText: Boolean): Truncated = {
+  inline def apply(truncated: Boolean, wrapText: Boolean): Truncated = {
     val __obj = js.Dynamic.literal(truncated = truncated.asInstanceOf[js.Any], wrapText = wrapText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Truncated]
   }
   
-  @scala.inline
-  implicit class TruncatedMutableBuilder[Self <: Truncated] (val x: Self) extends AnyVal {
+  extension [Self <: Truncated](x: Self) {
     
-    @scala.inline
-    def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: Boolean): Self = StObject.set(x, "truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapText(value: Boolean): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
+    inline def setWrapText(value: Boolean): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
   }
 }

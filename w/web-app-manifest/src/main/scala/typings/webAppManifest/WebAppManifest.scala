@@ -152,136 +152,93 @@ trait WebAppManifest extends StObject {
 }
 object WebAppManifest {
   
-  @scala.inline
-  def apply(): WebAppManifest = {
+  inline def apply(): WebAppManifest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebAppManifest]
   }
   
-  @scala.inline
-  implicit class WebAppManifestMutableBuilder[Self <: WebAppManifest] (val x: Self) extends AnyVal {
+  extension [Self <: WebAppManifest](x: Self) {
     
-    @scala.inline
-    def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
+    inline def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackground_colorUndefined: Self = StObject.set(x, "background_color", js.undefined)
+    inline def setBackground_colorUndefined: Self = StObject.set(x, "background_color", js.undefined)
     
-    @scala.inline
-    def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDir(value: TextDirectionType): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: TextDirectionType): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    @scala.inline
-    def setDisplay(value: DisplayModeType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: DisplayModeType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
-    @scala.inline
-    def setIarc_rating_id(value: String): Self = StObject.set(x, "iarc_rating_id", value.asInstanceOf[js.Any])
+    inline def setIarc_rating_id(value: String): Self = StObject.set(x, "iarc_rating_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIarc_rating_idUndefined: Self = StObject.set(x, "iarc_rating_id", js.undefined)
+    inline def setIarc_rating_idUndefined: Self = StObject.set(x, "iarc_rating_id", js.undefined)
     
-    @scala.inline
-    def setIcons(value: js.Array[ImageResource]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: js.Array[ImageResource]): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    @scala.inline
-    def setIconsVarargs(value: ImageResource*): Self = StObject.set(x, "icons", js.Array(value :_*))
+    inline def setIconsVarargs(value: ImageResource*): Self = StObject.set(x, "icons", js.Array(value :_*))
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: OrientationLockType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: OrientationLockType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setPrefer_related_applications(value: Boolean): Self = StObject.set(x, "prefer_related_applications", value.asInstanceOf[js.Any])
+    inline def setPrefer_related_applications(value: Boolean): Self = StObject.set(x, "prefer_related_applications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefer_related_applicationsUndefined: Self = StObject.set(x, "prefer_related_applications", js.undefined)
+    inline def setPrefer_related_applicationsUndefined: Self = StObject.set(x, "prefer_related_applications", js.undefined)
     
-    @scala.inline
-    def setRelated_applications(value: js.Array[ExternalApplicationResource]): Self = StObject.set(x, "related_applications", value.asInstanceOf[js.Any])
+    inline def setRelated_applications(value: js.Array[ExternalApplicationResource]): Self = StObject.set(x, "related_applications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelated_applicationsUndefined: Self = StObject.set(x, "related_applications", js.undefined)
+    inline def setRelated_applicationsUndefined: Self = StObject.set(x, "related_applications", js.undefined)
     
-    @scala.inline
-    def setRelated_applicationsVarargs(value: ExternalApplicationResource*): Self = StObject.set(x, "related_applications", js.Array(value :_*))
+    inline def setRelated_applicationsVarargs(value: ExternalApplicationResource*): Self = StObject.set(x, "related_applications", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setScreenshots(value: js.Array[ImageResource]): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
+    inline def setScreenshots(value: js.Array[ImageResource]): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
+    inline def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
     
-    @scala.inline
-    def setScreenshotsVarargs(value: ImageResource*): Self = StObject.set(x, "screenshots", js.Array(value :_*))
+    inline def setScreenshotsVarargs(value: ImageResource*): Self = StObject.set(x, "screenshots", js.Array(value :_*))
     
-    @scala.inline
-    def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
+    inline def setShort_name(value: String): Self = StObject.set(x, "short_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort_nameUndefined: Self = StObject.set(x, "short_name", js.undefined)
+    inline def setShort_nameUndefined: Self = StObject.set(x, "short_name", js.undefined)
     
-    @scala.inline
-    def setShortcuts(value: js.Array[ShortcutItem]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+    inline def setShortcuts(value: js.Array[ShortcutItem]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
+    inline def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
     
-    @scala.inline
-    def setShortcutsVarargs(value: ShortcutItem*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
+    inline def setShortcutsVarargs(value: ShortcutItem*): Self = StObject.set(x, "shortcuts", js.Array(value :_*))
     
-    @scala.inline
-    def setStart_url(value: String): Self = StObject.set(x, "start_url", value.asInstanceOf[js.Any])
+    inline def setStart_url(value: String): Self = StObject.set(x, "start_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_urlUndefined: Self = StObject.set(x, "start_url", js.undefined)
+    inline def setStart_urlUndefined: Self = StObject.set(x, "start_url", js.undefined)
     
-    @scala.inline
-    def setTheme_color(value: String): Self = StObject.set(x, "theme_color", value.asInstanceOf[js.Any])
+    inline def setTheme_color(value: String): Self = StObject.set(x, "theme_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme_colorUndefined: Self = StObject.set(x, "theme_color", js.undefined)
+    inline def setTheme_colorUndefined: Self = StObject.set(x, "theme_color", js.undefined)
   }
 }

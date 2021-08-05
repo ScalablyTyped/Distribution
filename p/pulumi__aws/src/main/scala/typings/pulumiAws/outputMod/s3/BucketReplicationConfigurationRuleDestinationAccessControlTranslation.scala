@@ -13,16 +13,13 @@ trait BucketReplicationConfigurationRuleDestinationAccessControlTranslation exte
 }
 object BucketReplicationConfigurationRuleDestinationAccessControlTranslation {
   
-  @scala.inline
-  def apply(owner: String): BucketReplicationConfigurationRuleDestinationAccessControlTranslation = {
+  inline def apply(owner: String): BucketReplicationConfigurationRuleDestinationAccessControlTranslation = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketReplicationConfigurationRuleDestinationAccessControlTranslation]
   }
   
-  @scala.inline
-  implicit class BucketReplicationConfigurationRuleDestinationAccessControlTranslationMutableBuilder[Self <: BucketReplicationConfigurationRuleDestinationAccessControlTranslation] (val x: Self) extends AnyVal {
+  extension [Self <: BucketReplicationConfigurationRuleDestinationAccessControlTranslation](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait SystemTrigger extends StObject {
 }
 object SystemTrigger {
   
-  @scala.inline
-  def apply(oneShot: Boolean, triggerType: SystemTriggerType): SystemTrigger = {
+  inline def apply(oneShot: Boolean, triggerType: SystemTriggerType): SystemTrigger = {
     val __obj = js.Dynamic.literal(oneShot = oneShot.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemTrigger]
   }
   
-  @scala.inline
-  implicit class SystemTriggerMutableBuilder[Self <: SystemTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: SystemTrigger](x: Self) {
     
-    @scala.inline
-    def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
+    inline def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerType(value: SystemTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: SystemTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }
 }

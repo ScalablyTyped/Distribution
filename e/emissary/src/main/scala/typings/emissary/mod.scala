@@ -16,8 +16,7 @@ object mod {
   @JSImport("emissary", "Behavior")
   @js.native
   def Behavior: js.Function = js.native
-  @scala.inline
-  def Behavior_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Behavior")(x.asInstanceOf[js.Any])
+  inline def Behavior_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Behavior")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("emissary", "Emitter")
@@ -67,14 +66,12 @@ object mod {
   @JSImport("emissary", "Emitter")
   @js.native
   def Emitter: IEmitterStatic = js.native
-  @scala.inline
-  def Emitter_=(x: IEmitterStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Emitter")(x.asInstanceOf[js.Any])
+  inline def Emitter_=(x: IEmitterStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Emitter")(x.asInstanceOf[js.Any])
   
   @JSImport("emissary", "Signal")
   @js.native
   def Signal: js.Function = js.native
-  @scala.inline
-  def Signal_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signal")(x.asInstanceOf[js.Any])
+  inline def Signal_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Signal")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("emissary", "Subscriber")
@@ -85,14 +82,12 @@ object mod {
   @JSImport("emissary", "Subscriber")
   @js.native
   def Subscriber: ISubscriberStatic = js.native
-  @scala.inline
-  def Subscriber_=(x: ISubscriberStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Subscriber")(x.asInstanceOf[js.Any])
+  inline def Subscriber_=(x: ISubscriberStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Subscriber")(x.asInstanceOf[js.Any])
   
   @JSImport("emissary", "combine")
   @js.native
   def combine: js.Function = js.native
-  @scala.inline
-  def combine_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
+  inline def combine_=(x: js.Function): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("combine")(x.asInstanceOf[js.Any])
   
   trait IEmitter extends StObject {
     
@@ -124,8 +119,7 @@ object mod {
   }
   object IEmitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       behavior: (String, js.Any) => Unit,
       decrementSubscriptionCount: String => Double,
       emit: (String, /* repeated */ js.Any) => Unit,
@@ -143,44 +137,31 @@ object mod {
       __obj.asInstanceOf[IEmitter]
     }
     
-    @scala.inline
-    implicit class IEmitterMutableBuilder[Self <: IEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: IEmitter](x: Self) {
       
-      @scala.inline
-      def setBehavior(value: (String, js.Any) => Unit): Self = StObject.set(x, "behavior", js.Any.fromFunction2(value))
+      inline def setBehavior(value: (String, js.Any) => Unit): Self = StObject.set(x, "behavior", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDecrementSubscriptionCount(value: String => Double): Self = StObject.set(x, "decrementSubscriptionCount", js.Any.fromFunction1(value))
+      inline def setDecrementSubscriptionCount(value: String => Double): Self = StObject.set(x, "decrementSubscriptionCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetSubscriptionCount(value: String => Double): Self = StObject.set(x, "getSubscriptionCount", js.Any.fromFunction1(value))
+      inline def setGetSubscriptionCount(value: String => Double): Self = StObject.set(x, "getSubscriptionCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasSubscriptions(value: String => Boolean): Self = StObject.set(x, "hasSubscriptions", js.Any.fromFunction1(value))
+      inline def setHasSubscriptions(value: String => Boolean): Self = StObject.set(x, "hasSubscriptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIncrementSubscriptionCount(value: String => Double): Self = StObject.set(x, "incrementSubscriptionCount", js.Any.fromFunction1(value))
+      inline def setIncrementSubscriptionCount(value: String => Double): Self = StObject.set(x, "incrementSubscriptionCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOff(value: (String, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (String, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnce(value: (String, js.Function) => js.Any): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (String, js.Function) => js.Any): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPauseEvents(value: String => Unit): Self = StObject.set(x, "pauseEvents", js.Any.fromFunction1(value))
+      inline def setPauseEvents(value: String => Unit): Self = StObject.set(x, "pauseEvents", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResumeEvents(value: String => Unit): Self = StObject.set(x, "resumeEvents", js.Any.fromFunction1(value))
+      inline def setResumeEvents(value: String => Unit): Self = StObject.set(x, "resumeEvents", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSignal(value: String => Unit): Self = StObject.set(x, "signal", js.Any.fromFunction1(value))
+      inline def setSignal(value: String => Unit): Self = StObject.set(x, "signal", js.Any.fromFunction1(value))
     }
   }
   
@@ -221,8 +202,7 @@ object mod {
   }
   object ISubscription {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       behavior: (String, js.Any) => Unit,
       cancelled: Boolean,
       decrementSubscriptionCount: String => Double,
@@ -241,14 +221,11 @@ object mod {
       __obj.asInstanceOf[ISubscription]
     }
     
-    @scala.inline
-    implicit class ISubscriptionMutableBuilder[Self <: ISubscription] (val x: Self) extends AnyVal {
+    extension [Self <: ISubscription](x: Self) {
       
-      @scala.inline
-      def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
+      inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOff(value: () => js.Any): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
+      inline def setOff(value: () => js.Any): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
     }
   }
   

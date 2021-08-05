@@ -13,25 +13,19 @@ trait DeleteMultiResult extends StObject {
 }
 object DeleteMultiResult {
   
-  @scala.inline
-  def apply(res: NormalSuccessResponse): DeleteMultiResult = {
+  inline def apply(res: NormalSuccessResponse): DeleteMultiResult = {
     val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMultiResult]
   }
   
-  @scala.inline
-  implicit class DeleteMultiResultMutableBuilder[Self <: DeleteMultiResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMultiResult](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: js.Array[String]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: js.Array[String]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setDeletedVarargs(value: String*): Self = StObject.set(x, "deleted", js.Array(value :_*))
+    inline def setDeletedVarargs(value: String*): Self = StObject.set(x, "deleted", js.Array(value :_*))
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

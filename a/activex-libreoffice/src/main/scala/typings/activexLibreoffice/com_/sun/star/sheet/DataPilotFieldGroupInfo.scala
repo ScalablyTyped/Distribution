@@ -73,8 +73,7 @@ trait DataPilotFieldGroupInfo extends StObject {
 }
 object DataPilotFieldGroupInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     End: Double,
     GroupBy: Double,
     Groups: XNameAccess,
@@ -89,34 +88,24 @@ object DataPilotFieldGroupInfo {
     __obj.asInstanceOf[DataPilotFieldGroupInfo]
   }
   
-  @scala.inline
-  implicit class DataPilotFieldGroupInfoMutableBuilder[Self <: DataPilotFieldGroupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotFieldGroupInfo](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupBy(value: Double): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: Double): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: XNameAccess): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: XNameAccess): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAutoEnd(value: Boolean): Self = StObject.set(x, "HasAutoEnd", value.asInstanceOf[js.Any])
+    inline def setHasAutoEnd(value: Boolean): Self = StObject.set(x, "HasAutoEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAutoStart(value: Boolean): Self = StObject.set(x, "HasAutoStart", value.asInstanceOf[js.Any])
+    inline def setHasAutoStart(value: Boolean): Self = StObject.set(x, "HasAutoStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDateValues(value: Boolean): Self = StObject.set(x, "HasDateValues", value.asInstanceOf[js.Any])
+    inline def setHasDateValues(value: Boolean): Self = StObject.set(x, "HasDateValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceField(value: XDataPilotField): Self = StObject.set(x, "SourceField", value.asInstanceOf[js.Any])
+    inline def setSourceField(value: XDataPilotField): Self = StObject.set(x, "SourceField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
   }
 }

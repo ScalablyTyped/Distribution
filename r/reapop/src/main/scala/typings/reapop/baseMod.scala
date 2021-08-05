@@ -14,8 +14,7 @@ object baseMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def container(position: Position): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(position.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+    inline def container(position: Position): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(position.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   }
   
   object baseTheme {
@@ -24,7 +23,6 @@ object baseMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def container(position: Position): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(position.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+    inline def container(position: Position): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("container")(position.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   }
 }

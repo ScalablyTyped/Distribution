@@ -12,16 +12,13 @@ trait SystemAudioProperties extends StObject {
 }
 object SystemAudioProperties {
   
-  @scala.inline
-  def apply(encodingBitrate: String): SystemAudioProperties = {
+  inline def apply(encodingBitrate: String): SystemAudioProperties = {
     val __obj = js.Dynamic.literal(encodingBitrate = encodingBitrate.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemAudioProperties]
   }
   
-  @scala.inline
-  implicit class SystemAudioPropertiesMutableBuilder[Self <: SystemAudioProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SystemAudioProperties](x: Self) {
     
-    @scala.inline
-    def setEncodingBitrate(value: String): Self = StObject.set(x, "encodingBitrate", value.asInstanceOf[js.Any])
+    inline def setEncodingBitrate(value: String): Self = StObject.set(x, "encodingBitrate", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,16 @@ trait ReferenceProvider extends StObject {
 }
 object ReferenceProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideReferences: (ITextModel, Position, ReferenceContext, CancellationToken) => ProviderResult[js.Array[Location]]
   ): ReferenceProvider = {
     val __obj = js.Dynamic.literal(provideReferences = js.Any.fromFunction4(provideReferences))
     __obj.asInstanceOf[ReferenceProvider]
   }
   
-  @scala.inline
-  implicit class ReferenceProviderMutableBuilder[Self <: ReferenceProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceProvider](x: Self) {
     
-    @scala.inline
-    def setProvideReferences(
+    inline def setProvideReferences(
       value: (ITextModel, Position, ReferenceContext, CancellationToken) => ProviderResult[js.Array[Location]]
     ): Self = StObject.set(x, "provideReferences", js.Any.fromFunction4(value))
   }

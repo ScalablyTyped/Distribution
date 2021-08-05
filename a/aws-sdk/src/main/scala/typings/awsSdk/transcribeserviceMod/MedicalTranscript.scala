@@ -13,19 +13,15 @@ trait MedicalTranscript extends StObject {
 }
 object MedicalTranscript {
   
-  @scala.inline
-  def apply(): MedicalTranscript = {
+  inline def apply(): MedicalTranscript = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MedicalTranscript]
   }
   
-  @scala.inline
-  implicit class MedicalTranscriptMutableBuilder[Self <: MedicalTranscript] (val x: Self) extends AnyVal {
+  extension [Self <: MedicalTranscript](x: Self) {
     
-    @scala.inline
-    def setTranscriptFileUri(value: Uri): Self = StObject.set(x, "TranscriptFileUri", value.asInstanceOf[js.Any])
+    inline def setTranscriptFileUri(value: Uri): Self = StObject.set(x, "TranscriptFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptFileUriUndefined: Self = StObject.set(x, "TranscriptFileUri", js.undefined)
+    inline def setTranscriptFileUriUndefined: Self = StObject.set(x, "TranscriptFileUri", js.undefined)
   }
 }

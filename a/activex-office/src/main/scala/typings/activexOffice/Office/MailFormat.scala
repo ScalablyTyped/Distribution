@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MailFormat extends StObject
 object MailFormat {
   
-  @scala.inline
-  def mfHTML: `2` = 2.asInstanceOf[`2`]
+  inline def mfHTML: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def mfPlainText: `1` = 1.asInstanceOf[`1`]
+  inline def mfPlainText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def mfRTF: `3` = 3.asInstanceOf[`3`]
+  inline def mfRTF: `3` = 3.asInstanceOf[`3`]
 }

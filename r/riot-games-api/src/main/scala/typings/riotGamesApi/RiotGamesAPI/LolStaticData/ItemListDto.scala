@@ -21,8 +21,7 @@ trait ItemListDto extends StObject {
 }
 object ItemListDto {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basic: BasicDataDto,
     data: js.Array[StringDictionary[ItemDto]],
     groups: js.Array[GroupDto],
@@ -35,34 +34,24 @@ object ItemListDto {
     __obj.asInstanceOf[ItemListDto]
   }
   
-  @scala.inline
-  implicit class ItemListDtoMutableBuilder[Self <: ItemListDto] (val x: Self) extends AnyVal {
+  extension [Self <: ItemListDto](x: Self) {
     
-    @scala.inline
-    def setBasic(value: BasicDataDto): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+    inline def setBasic(value: BasicDataDto): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[StringDictionary[ItemDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[StringDictionary[ItemDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: StringDictionary[ItemDto]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: StringDictionary[ItemDto]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setGroups(value: js.Array[GroupDto]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[GroupDto]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: GroupDto*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupDto*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setTree(value: js.Array[ItemTreeDto]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    inline def setTree(value: js.Array[ItemTreeDto]): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeVarargs(value: ItemTreeDto*): Self = StObject.set(x, "tree", js.Array(value :_*))
+    inline def setTreeVarargs(value: ItemTreeDto*): Self = StObject.set(x, "tree", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

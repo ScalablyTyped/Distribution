@@ -17,25 +17,19 @@ trait RestoreDatabaseRequest extends StObject {
 }
 object RestoreDatabaseRequest {
   
-  @scala.inline
-  def apply(): RestoreDatabaseRequest = {
+  inline def apply(): RestoreDatabaseRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestoreDatabaseRequest]
   }
   
-  @scala.inline
-  implicit class RestoreDatabaseRequestMutableBuilder[Self <: RestoreDatabaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RestoreDatabaseRequest](x: Self) {
     
-    @scala.inline
-    def setBackup(value: String): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
+    inline def setBackup(value: String): Self = StObject.set(x, "backup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
+    inline def setBackupUndefined: Self = StObject.set(x, "backup", js.undefined)
     
-    @scala.inline
-    def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
+    inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseIdUndefined: Self = StObject.set(x, "databaseId", js.undefined)
+    inline def setDatabaseIdUndefined: Self = StObject.set(x, "databaseId", js.undefined)
   }
 }

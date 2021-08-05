@@ -34,37 +34,27 @@ trait ParamsResourceAccountsContainersFoldersGet
 }
 object ParamsResourceAccountsContainersFoldersGet {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsContainersFoldersGet = {
+  inline def apply(): ParamsResourceAccountsContainersFoldersGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsContainersFoldersGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsContainersFoldersGetMutableBuilder[Self <: ParamsResourceAccountsContainersFoldersGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsContainersFoldersGet](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
+    inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
+    inline def setContainerIdUndefined: Self = StObject.set(x, "containerId", js.undefined)
     
-    @scala.inline
-    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
+    inline def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
+    inline def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
   }
 }

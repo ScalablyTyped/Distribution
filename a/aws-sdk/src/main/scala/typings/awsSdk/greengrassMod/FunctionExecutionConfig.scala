@@ -12,25 +12,19 @@ trait FunctionExecutionConfig extends StObject {
 }
 object FunctionExecutionConfig {
   
-  @scala.inline
-  def apply(): FunctionExecutionConfig = {
+  inline def apply(): FunctionExecutionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionExecutionConfig]
   }
   
-  @scala.inline
-  implicit class FunctionExecutionConfigMutableBuilder[Self <: FunctionExecutionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionExecutionConfig](x: Self) {
     
-    @scala.inline
-    def setIsolationMode(value: FunctionIsolationMode): Self = StObject.set(x, "IsolationMode", value.asInstanceOf[js.Any])
+    inline def setIsolationMode(value: FunctionIsolationMode): Self = StObject.set(x, "IsolationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsolationModeUndefined: Self = StObject.set(x, "IsolationMode", js.undefined)
+    inline def setIsolationModeUndefined: Self = StObject.set(x, "IsolationMode", js.undefined)
     
-    @scala.inline
-    def setRunAs(value: FunctionRunAsConfig): Self = StObject.set(x, "RunAs", value.asInstanceOf[js.Any])
+    inline def setRunAs(value: FunctionRunAsConfig): Self = StObject.set(x, "RunAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsUndefined: Self = StObject.set(x, "RunAs", js.undefined)
+    inline def setRunAsUndefined: Self = StObject.set(x, "RunAs", js.undefined)
   }
 }

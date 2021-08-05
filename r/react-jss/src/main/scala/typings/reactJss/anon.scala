@@ -34,56 +34,40 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(): Children = {
+    inline def apply(): Children = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassNamePrefix(value: String): Self = StObject.set(x, "classNamePrefix", value.asInstanceOf[js.Any])
+      inline def setClassNamePrefix(value: String): Self = StObject.set(x, "classNamePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamePrefixUndefined: Self = StObject.set(x, "classNamePrefix", js.undefined)
+      inline def setClassNamePrefixUndefined: Self = StObject.set(x, "classNamePrefix", js.undefined)
       
-      @scala.inline
-      def setDisableStylesGeneration(value: Boolean): Self = StObject.set(x, "disableStylesGeneration", value.asInstanceOf[js.Any])
+      inline def setDisableStylesGeneration(value: Boolean): Self = StObject.set(x, "disableStylesGeneration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesGenerationUndefined: Self = StObject.set(x, "disableStylesGeneration", js.undefined)
+      inline def setDisableStylesGenerationUndefined: Self = StObject.set(x, "disableStylesGeneration", js.undefined)
       
-      @scala.inline
-      def setGenerateId(value: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String): Self = StObject.set(x, "generateId", js.Any.fromFunction2(value))
+      inline def setGenerateId(value: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String): Self = StObject.set(x, "generateId", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerateIdUndefined: Self = StObject.set(x, "generateId", js.undefined)
+      inline def setGenerateIdUndefined: Self = StObject.set(x, "generateId", js.undefined)
       
-      @scala.inline
-      def setId(value: CreateGenerateIdOptions): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: CreateGenerateIdOptions): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
+      inline def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJssUndefined: Self = StObject.set(x, "jss", js.undefined)
+      inline def setJssUndefined: Self = StObject.set(x, "jss", js.undefined)
       
-      @scala.inline
-      def setRegistry(value: SheetsRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: SheetsRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
+      inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
     }
   }
   
@@ -101,38 +85,28 @@ object anon {
   }
   object DisableStylesGeneration {
     
-    @scala.inline
-    def apply(disableStylesGeneration: Boolean, sheetOptions: StyleSheetFactoryOptions): DisableStylesGeneration = {
+    inline def apply(disableStylesGeneration: Boolean, sheetOptions: StyleSheetFactoryOptions): DisableStylesGeneration = {
       val __obj = js.Dynamic.literal(disableStylesGeneration = disableStylesGeneration.asInstanceOf[js.Any], sheetOptions = sheetOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisableStylesGeneration]
     }
     
-    @scala.inline
-    implicit class DisableStylesGenerationMutableBuilder[Self <: DisableStylesGeneration] (val x: Self) extends AnyVal {
+    extension [Self <: DisableStylesGeneration](x: Self) {
       
-      @scala.inline
-      def setDisableStylesGeneration(value: Boolean): Self = StObject.set(x, "disableStylesGeneration", value.asInstanceOf[js.Any])
+      inline def setDisableStylesGeneration(value: Boolean): Self = StObject.set(x, "disableStylesGeneration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
+      inline def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJssUndefined: Self = StObject.set(x, "jss", js.undefined)
+      inline def setJssUndefined: Self = StObject.set(x, "jss", js.undefined)
       
-      @scala.inline
-      def setManagers(value: Managers): Self = StObject.set(x, "managers", value.asInstanceOf[js.Any])
+      inline def setManagers(value: Managers): Self = StObject.set(x, "managers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagersUndefined: Self = StObject.set(x, "managers", js.undefined)
+      inline def setManagersUndefined: Self = StObject.set(x, "managers", js.undefined)
       
-      @scala.inline
-      def setRegistry(value: SheetsRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: SheetsRegistry): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
+      inline def setRegistryUndefined: Self = StObject.set(x, "registry", js.undefined)
       
-      @scala.inline
-      def setSheetOptions(value: StyleSheetFactoryOptions): Self = StObject.set(x, "sheetOptions", value.asInstanceOf[js.Any])
+      inline def setSheetOptions(value: StyleSheetFactoryOptions): Self = StObject.set(x, "sheetOptions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,23 +116,18 @@ object anon {
   }
   object InnerRef {
     
-    @scala.inline
-    def apply(): InnerRef = {
+    inline def apply(): InnerRef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InnerRef]
     }
     
-    @scala.inline
-    implicit class InnerRefMutableBuilder[Self <: InnerRef] (val x: Self) extends AnyVal {
+    extension [Self <: InnerRef](x: Self) {
       
-      @scala.inline
-      def setInnerRef(value: RefObject[js.Any] | (js.Function1[/* instance */ js.Any, Unit])): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: RefObject[js.Any] | (js.Function1[/* instance */ js.Any, Unit])): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ js.Any => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ js.Any => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     }
   }
 }

@@ -43,46 +43,33 @@ trait SchemaSecurityCenterProperties extends StObject {
 }
 object SchemaSecurityCenterProperties {
   
-  @scala.inline
-  def apply(): SchemaSecurityCenterProperties = {
+  inline def apply(): SchemaSecurityCenterProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSecurityCenterProperties]
   }
   
-  @scala.inline
-  implicit class SchemaSecurityCenterPropertiesMutableBuilder[Self <: SchemaSecurityCenterProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSecurityCenterProperties](x: Self) {
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceOwners(value: js.Array[String]): Self = StObject.set(x, "resourceOwners", value.asInstanceOf[js.Any])
+    inline def setResourceOwners(value: js.Array[String]): Self = StObject.set(x, "resourceOwners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceOwnersUndefined: Self = StObject.set(x, "resourceOwners", js.undefined)
+    inline def setResourceOwnersUndefined: Self = StObject.set(x, "resourceOwners", js.undefined)
     
-    @scala.inline
-    def setResourceOwnersVarargs(value: String*): Self = StObject.set(x, "resourceOwners", js.Array(value :_*))
+    inline def setResourceOwnersVarargs(value: String*): Self = StObject.set(x, "resourceOwners", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceParent(value: String): Self = StObject.set(x, "resourceParent", value.asInstanceOf[js.Any])
+    inline def setResourceParent(value: String): Self = StObject.set(x, "resourceParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceParentUndefined: Self = StObject.set(x, "resourceParent", js.undefined)
+    inline def setResourceParentUndefined: Self = StObject.set(x, "resourceParent", js.undefined)
     
-    @scala.inline
-    def setResourceProject(value: String): Self = StObject.set(x, "resourceProject", value.asInstanceOf[js.Any])
+    inline def setResourceProject(value: String): Self = StObject.set(x, "resourceProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceProjectUndefined: Self = StObject.set(x, "resourceProject", js.undefined)
+    inline def setResourceProjectUndefined: Self = StObject.set(x, "resourceProject", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

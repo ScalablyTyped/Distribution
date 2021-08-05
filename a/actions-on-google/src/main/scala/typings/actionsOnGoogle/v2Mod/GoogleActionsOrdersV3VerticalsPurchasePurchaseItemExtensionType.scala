@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionType extends StObject
 object GoogleActionsOrdersV3VerticalsPurchasePurchaseItemExtensionType {
   
-  @scala.inline
-  def FOOD: typings.actionsOnGoogle.actionsOnGoogleStrings.FOOD = "FOOD".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FOOD]
+  inline def FOOD: typings.actionsOnGoogle.actionsOnGoogleStrings.FOOD = "FOOD".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.FOOD]
   
-  @scala.inline
-  def GROCERY: typings.actionsOnGoogle.actionsOnGoogleStrings.GROCERY = "GROCERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GROCERY]
+  inline def GROCERY: typings.actionsOnGoogle.actionsOnGoogleStrings.GROCERY = "GROCERY".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GROCERY]
   
-  @scala.inline
-  def PURCHASE_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_TYPE_UNSPECIFIED = "PURCHASE_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_TYPE_UNSPECIFIED]
+  inline def PURCHASE_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_TYPE_UNSPECIFIED = "PURCHASE_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_TYPE_UNSPECIFIED]
   
-  @scala.inline
-  def RETAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.RETAIL = "RETAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RETAIL]
+  inline def RETAIL: typings.actionsOnGoogle.actionsOnGoogleStrings.RETAIL = "RETAIL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RETAIL]
 }

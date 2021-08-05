@@ -38,34 +38,25 @@ trait ListDeviceEventsRequest extends StObject {
 }
 object ListDeviceEventsRequest {
   
-  @scala.inline
-  def apply(DeviceId: string, FromTimeStamp: timestampIso8601, ToTimeStamp: timestampIso8601): ListDeviceEventsRequest = {
+  inline def apply(DeviceId: string, FromTimeStamp: timestampIso8601, ToTimeStamp: timestampIso8601): ListDeviceEventsRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], FromTimeStamp = FromTimeStamp.asInstanceOf[js.Any], ToTimeStamp = ToTimeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDeviceEventsRequest]
   }
   
-  @scala.inline
-  implicit class ListDeviceEventsRequestMutableBuilder[Self <: ListDeviceEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDeviceEventsRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromTimeStamp(value: timestampIso8601): Self = StObject.set(x, "FromTimeStamp", value.asInstanceOf[js.Any])
+    inline def setFromTimeStamp(value: timestampIso8601): Self = StObject.set(x, "FromTimeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setToTimeStamp(value: timestampIso8601): Self = StObject.set(x, "ToTimeStamp", value.asInstanceOf[js.Any])
+    inline def setToTimeStamp(value: timestampIso8601): Self = StObject.set(x, "ToTimeStamp", value.asInstanceOf[js.Any])
   }
 }

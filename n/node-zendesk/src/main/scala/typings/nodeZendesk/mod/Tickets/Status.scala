@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Status extends StObject
 object Status {
   
-  @scala.inline
-  def closed: typings.nodeZendesk.nodeZendeskStrings.closed = "closed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.closed]
+  inline def closed: typings.nodeZendesk.nodeZendeskStrings.closed = "closed".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.closed]
   
-  @scala.inline
-  def hold: typings.nodeZendesk.nodeZendeskStrings.hold = "hold".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.hold]
+  inline def hold: typings.nodeZendesk.nodeZendeskStrings.hold = "hold".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.hold]
   
-  @scala.inline
-  def `new`: typings.nodeZendesk.nodeZendeskStrings.`new` = "new".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.`new`]
+  inline def `new`: typings.nodeZendesk.nodeZendeskStrings.`new` = "new".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.`new`]
   
-  @scala.inline
-  def open: typings.nodeZendesk.nodeZendeskStrings.open = "open".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.open]
+  inline def open: typings.nodeZendesk.nodeZendeskStrings.open = "open".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.open]
   
-  @scala.inline
-  def pending: typings.nodeZendesk.nodeZendeskStrings.pending = "pending".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.pending]
+  inline def pending: typings.nodeZendesk.nodeZendeskStrings.pending = "pending".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.pending]
   
-  @scala.inline
-  def solved: typings.nodeZendesk.nodeZendeskStrings.solved = "solved".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.solved]
+  inline def solved: typings.nodeZendesk.nodeZendeskStrings.solved = "solved".asInstanceOf[typings.nodeZendesk.nodeZendeskStrings.solved]
 }

@@ -22,55 +22,39 @@ trait EditorSettings extends StObject {
 }
 object EditorSettings {
   
-  @scala.inline
-  def apply(): EditorSettings = {
+  inline def apply(): EditorSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorSettings]
   }
   
-  @scala.inline
-  implicit class EditorSettingsMutableBuilder[Self <: EditorSettings] (val x: Self) extends AnyVal {
+  extension [Self <: EditorSettings](x: Self) {
     
-    @scala.inline
-    def setBaseIndentSize(value: Double): Self = StObject.set(x, "baseIndentSize", value.asInstanceOf[js.Any])
+    inline def setBaseIndentSize(value: Double): Self = StObject.set(x, "baseIndentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseIndentSizeUndefined: Self = StObject.set(x, "baseIndentSize", js.undefined)
+    inline def setBaseIndentSizeUndefined: Self = StObject.set(x, "baseIndentSize", js.undefined)
     
-    @scala.inline
-    def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "convertTabsToSpaces", value.asInstanceOf[js.Any])
+    inline def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "convertTabsToSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertTabsToSpacesUndefined: Self = StObject.set(x, "convertTabsToSpaces", js.undefined)
+    inline def setConvertTabsToSpacesUndefined: Self = StObject.set(x, "convertTabsToSpaces", js.undefined)
     
-    @scala.inline
-    def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
+    inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
+    inline def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
     
-    @scala.inline
-    def setIndentStyle(value: IndentStyle): Self = StObject.set(x, "indentStyle", value.asInstanceOf[js.Any])
+    inline def setIndentStyle(value: IndentStyle): Self = StObject.set(x, "indentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentStyleUndefined: Self = StObject.set(x, "indentStyle", js.undefined)
+    inline def setIndentStyleUndefined: Self = StObject.set(x, "indentStyle", js.undefined)
     
-    @scala.inline
-    def setNewLineCharacter(value: java.lang.String): Self = StObject.set(x, "newLineCharacter", value.asInstanceOf[js.Any])
+    inline def setNewLineCharacter(value: java.lang.String): Self = StObject.set(x, "newLineCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewLineCharacterUndefined: Self = StObject.set(x, "newLineCharacter", js.undefined)
+    inline def setNewLineCharacterUndefined: Self = StObject.set(x, "newLineCharacter", js.undefined)
     
-    @scala.inline
-    def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+    inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
+    inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
     
-    @scala.inline
-    def setTrimTrailingWhitespace(value: Boolean): Self = StObject.set(x, "trimTrailingWhitespace", value.asInstanceOf[js.Any])
+    inline def setTrimTrailingWhitespace(value: Boolean): Self = StObject.set(x, "trimTrailingWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimTrailingWhitespaceUndefined: Self = StObject.set(x, "trimTrailingWhitespace", js.undefined)
+    inline def setTrimTrailingWhitespaceUndefined: Self = StObject.set(x, "trimTrailingWhitespace", js.undefined)
   }
 }

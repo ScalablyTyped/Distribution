@@ -40,14 +40,12 @@ object clipboard {
     @JSGlobal("chrome.clipboard.DataItemType.TEXT_HTML")
     @js.native
     def TEXT_HTML: textHtml = js.native
-    @scala.inline
-    def TEXT_HTML_=(x: textHtml): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_HTML")(x.asInstanceOf[js.Any])
+    inline def TEXT_HTML_=(x: textHtml): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_HTML")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.clipboard.DataItemType.TEXT_PLAIN")
     @js.native
     def TEXT_PLAIN: textPlain = js.native
-    @scala.inline
-    def TEXT_PLAIN_=(x: textPlain): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_PLAIN")(x.asInstanceOf[js.Any])
+    inline def TEXT_PLAIN_=(x: textPlain): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_PLAIN")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -72,14 +70,10 @@ object clipboard {
     *      *Since Chrome 71. Warning: this is the current Dev channel.*
     * @param [callback]
     */
-  @scala.inline
-  def setImageData(imageData: ArrayBuffer, `type`: ImageType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], additionalItems.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: AdditionalItems): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], additionalItems.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setImageData(
+  inline def setImageData(imageData: ArrayBuffer, `type`: ImageType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: Unit, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], additionalItems.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setImageData(imageData: ArrayBuffer, `type`: ImageType, additionalItems: AdditionalItems): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setImageData")(imageData.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], additionalItems.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setImageData(
     imageData: ArrayBuffer,
     `type`: ImageType,
     additionalItems: AdditionalItems,

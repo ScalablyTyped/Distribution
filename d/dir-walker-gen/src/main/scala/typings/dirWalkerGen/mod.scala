@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: ExcludeExtensions): IterableIterator[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[String]]
+  inline def apply(options: ExcludeExtensions): IterableIterator[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[String]]
   
   @JSImport("dir-walker-gen", JSImport.Namespace)
   @js.native

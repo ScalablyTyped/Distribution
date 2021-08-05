@@ -24,8 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object GBData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountNumber: String,
     Active: Boolean,
     CreationDate: Double,
@@ -41,13 +40,10 @@ object GBData {
     __obj.asInstanceOf[GBData]
   }
   
-  @scala.inline
-  implicit class GBDataMutableBuilder[Self <: GBData] (val x: Self) extends AnyVal {
+  extension [Self <: GBData](x: Self) {
     
-    @scala.inline
-    def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
+    inline def setAccountNumber(value: String): Self = StObject.set(x, "AccountNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCode(value: String): Self = StObject.set(x, "SortCode", value.asInstanceOf[js.Any])
+    inline def setSortCode(value: String): Self = StObject.set(x, "SortCode", value.asInstanceOf[js.Any])
   }
 }

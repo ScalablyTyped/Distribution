@@ -16,8 +16,7 @@ trait WorkItemTemplate
 }
 object WorkItemTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     description: String,
     fields: StringDictionary[String],
@@ -30,10 +29,8 @@ object WorkItemTemplate {
     __obj.asInstanceOf[WorkItemTemplate]
   }
   
-  @scala.inline
-  implicit class WorkItemTemplateMutableBuilder[Self <: WorkItemTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTemplate](x: Self) {
     
-    @scala.inline
-    def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }
 }

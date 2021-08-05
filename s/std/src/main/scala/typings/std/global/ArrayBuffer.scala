@@ -15,6 +15,5 @@ class ArrayBuffer protected ()
 }
 object ArrayBuffer {
   
-  @scala.inline
-  def apply: ArrayBufferConstructor = js.Dynamic.global.selectDynamic("ArrayBuffer").asInstanceOf[ArrayBufferConstructor]
+  inline def apply: ArrayBufferConstructor = js.Dynamic.global.selectDynamic("ArrayBuffer").asInstanceOf[ArrayBufferConstructor]
 }

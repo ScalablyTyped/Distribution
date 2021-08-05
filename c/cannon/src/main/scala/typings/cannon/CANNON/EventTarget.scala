@@ -16,8 +16,7 @@ trait EventTarget extends StObject {
 }
 object EventTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: (String, js.Function) => EventTarget,
     dispatchEvent: IEvent => IEvent,
     hasEventListener: (String, js.Function) => Boolean,
@@ -27,19 +26,14 @@ object EventTarget {
     __obj.asInstanceOf[EventTarget]
   }
   
-  @scala.inline
-  implicit class EventTargetMutableBuilder[Self <: EventTarget] (val x: Self) extends AnyVal {
+  extension [Self <: EventTarget](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: (String, js.Function) => EventTarget): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+    inline def setAddEventListener(value: (String, js.Function) => EventTarget): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDispatchEvent(value: IEvent => IEvent): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+    inline def setDispatchEvent(value: IEvent => IEvent): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasEventListener(value: (String, js.Function) => Boolean): Self = StObject.set(x, "hasEventListener", js.Any.fromFunction2(value))
+    inline def setHasEventListener(value: (String, js.Function) => Boolean): Self = StObject.set(x, "hasEventListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveEventListener(value: (String, js.Function) => EventTarget): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+    inline def setRemoveEventListener(value: (String, js.Function) => EventTarget): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
   }
 }

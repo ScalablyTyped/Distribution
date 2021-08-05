@@ -18,25 +18,19 @@ trait BatchDeleteConnectionRequest extends StObject {
 }
 object BatchDeleteConnectionRequest {
   
-  @scala.inline
-  def apply(ConnectionNameList: DeleteConnectionNameList): BatchDeleteConnectionRequest = {
+  inline def apply(ConnectionNameList: DeleteConnectionNameList): BatchDeleteConnectionRequest = {
     val __obj = js.Dynamic.literal(ConnectionNameList = ConnectionNameList.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteConnectionRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteConnectionRequestMutableBuilder[Self <: BatchDeleteConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setConnectionNameList(value: DeleteConnectionNameList): Self = StObject.set(x, "ConnectionNameList", value.asInstanceOf[js.Any])
+    inline def setConnectionNameList(value: DeleteConnectionNameList): Self = StObject.set(x, "ConnectionNameList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionNameListVarargs(value: NameString*): Self = StObject.set(x, "ConnectionNameList", js.Array(value :_*))
+    inline def setConnectionNameListVarargs(value: NameString*): Self = StObject.set(x, "ConnectionNameList", js.Array(value :_*))
   }
 }

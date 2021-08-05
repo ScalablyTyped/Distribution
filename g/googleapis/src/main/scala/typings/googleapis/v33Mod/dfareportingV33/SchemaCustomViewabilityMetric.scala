@@ -26,31 +26,23 @@ trait SchemaCustomViewabilityMetric extends StObject {
 }
 object SchemaCustomViewabilityMetric {
   
-  @scala.inline
-  def apply(): SchemaCustomViewabilityMetric = {
+  inline def apply(): SchemaCustomViewabilityMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomViewabilityMetric]
   }
   
-  @scala.inline
-  implicit class SchemaCustomViewabilityMetricMutableBuilder[Self <: SchemaCustomViewabilityMetric] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomViewabilityMetric](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: SchemaCustomViewabilityMetricConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: SchemaCustomViewabilityMetricConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

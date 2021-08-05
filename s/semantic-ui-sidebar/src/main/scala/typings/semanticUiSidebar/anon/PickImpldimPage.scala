@@ -11,16 +11,13 @@ trait PickImpldimPage extends StObject {
 }
 object PickImpldimPage {
   
-  @scala.inline
-  def apply(dimPage: Boolean): PickImpldimPage = {
+  inline def apply(dimPage: Boolean): PickImpldimPage = {
     val __obj = js.Dynamic.literal(dimPage = dimPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldimPage]
   }
   
-  @scala.inline
-  implicit class PickImpldimPageMutableBuilder[Self <: PickImpldimPage] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldimPage](x: Self) {
     
-    @scala.inline
-    def setDimPage(value: Boolean): Self = StObject.set(x, "dimPage", value.asInstanceOf[js.Any])
+    inline def setDimPage(value: Boolean): Self = StObject.set(x, "dimPage", value.asInstanceOf[js.Any])
   }
 }

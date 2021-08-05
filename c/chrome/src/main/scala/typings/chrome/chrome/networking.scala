@@ -42,47 +42,34 @@ object networking {
     }
     object NetworkInfo {
       
-      @scala.inline
-      def apply(Type: String): NetworkInfo = {
+      inline def apply(Type: String): NetworkInfo = {
         val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
         __obj.asInstanceOf[NetworkInfo]
       }
       
-      @scala.inline
-      implicit class NetworkInfoMutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
+      extension [Self <: NetworkInfo](x: Self) {
         
-        @scala.inline
-        def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
+        inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
+        inline def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
         
-        @scala.inline
-        def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+        inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGUIDUndefined: Self = StObject.set(x, "GUID", js.undefined)
+        inline def setGUIDUndefined: Self = StObject.set(x, "GUID", js.undefined)
         
-        @scala.inline
-        def setHexSSID(value: String): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
+        inline def setHexSSID(value: String): Self = StObject.set(x, "HexSSID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHexSSIDUndefined: Self = StObject.set(x, "HexSSID", js.undefined)
+        inline def setHexSSIDUndefined: Self = StObject.set(x, "HexSSID", js.undefined)
         
-        @scala.inline
-        def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
+        inline def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
+        inline def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
         
-        @scala.inline
-        def setSecurity(value: String): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
+        inline def setSecurity(value: String): Self = StObject.set(x, "Security", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecurityUndefined: Self = StObject.set(x, "Security", js.undefined)
+        inline def setSecurityUndefined: Self = StObject.set(x, "Security", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       }
     }
   }

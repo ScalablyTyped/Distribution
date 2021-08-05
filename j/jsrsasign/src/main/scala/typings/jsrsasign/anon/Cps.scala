@@ -14,22 +14,17 @@ trait Cps extends StObject {
 }
 object Cps {
   
-  @scala.inline
-  def apply(cps: String, id: String, unotice: String): Cps = {
+  inline def apply(cps: String, id: String, unotice: String): Cps = {
     val __obj = js.Dynamic.literal(cps = cps.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], unotice = unotice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cps]
   }
   
-  @scala.inline
-  implicit class CpsMutableBuilder[Self <: Cps] (val x: Self) extends AnyVal {
+  extension [Self <: Cps](x: Self) {
     
-    @scala.inline
-    def setCps(value: String): Self = StObject.set(x, "cps", value.asInstanceOf[js.Any])
+    inline def setCps(value: String): Self = StObject.set(x, "cps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnotice(value: String): Self = StObject.set(x, "unotice", value.asInstanceOf[js.Any])
+    inline def setUnotice(value: String): Self = StObject.set(x, "unotice", value.asInstanceOf[js.Any])
   }
 }

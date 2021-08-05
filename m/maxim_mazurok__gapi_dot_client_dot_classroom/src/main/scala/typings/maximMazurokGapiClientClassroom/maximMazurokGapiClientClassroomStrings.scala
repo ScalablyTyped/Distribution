@@ -8,11 +8,9 @@ object maximMazurokGapiClientClassroomStrings {
   
   @js.native
   sealed trait classroom extends StObject
-  @scala.inline
-  def classroom: classroom = "classroom".asInstanceOf[classroom]
+  inline def classroom: classroom = "classroom".asInstanceOf[classroom]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

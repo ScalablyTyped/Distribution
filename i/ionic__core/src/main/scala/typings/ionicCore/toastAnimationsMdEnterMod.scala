@@ -12,6 +12,5 @@ object toastAnimationsMdEnterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mdEnterAnimation(baseEl: ShadowRoot, position: String): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("mdEnterAnimation")(baseEl.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Animation]
+  inline def mdEnterAnimation(baseEl: ShadowRoot, position: String): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("mdEnterAnimation")(baseEl.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Animation]
 }

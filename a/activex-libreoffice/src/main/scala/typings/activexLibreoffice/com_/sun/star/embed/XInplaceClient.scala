@@ -141,8 +141,7 @@ trait XInplaceClient
 }
 object XInplaceClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClipRectangle: Rectangle,
     InplaceDispatchProvider: XDispatchProvider,
     LayoutManager: XLayoutManager,
@@ -167,55 +166,38 @@ object XInplaceClient {
     __obj.asInstanceOf[XInplaceClient]
   }
   
-  @scala.inline
-  implicit class XInplaceClientMutableBuilder[Self <: XInplaceClient] (val x: Self) extends AnyVal {
+  extension [Self <: XInplaceClient](x: Self) {
     
-    @scala.inline
-    def setActivatingInplace(value: () => Unit): Self = StObject.set(x, "activatingInplace", js.Any.fromFunction0(value))
+    inline def setActivatingInplace(value: () => Unit): Self = StObject.set(x, "activatingInplace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivatingUI(value: () => Unit): Self = StObject.set(x, "activatingUI", js.Any.fromFunction0(value))
+    inline def setActivatingUI(value: () => Unit): Self = StObject.set(x, "activatingUI", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCanInplaceActivate(value: () => Boolean): Self = StObject.set(x, "canInplaceActivate", js.Any.fromFunction0(value))
+    inline def setCanInplaceActivate(value: () => Boolean): Self = StObject.set(x, "canInplaceActivate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangedPlacement(value: Rectangle => Unit): Self = StObject.set(x, "changedPlacement", js.Any.fromFunction1(value))
+    inline def setChangedPlacement(value: Rectangle => Unit): Self = StObject.set(x, "changedPlacement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClipRectangle(value: Rectangle): Self = StObject.set(x, "ClipRectangle", value.asInstanceOf[js.Any])
+    inline def setClipRectangle(value: Rectangle): Self = StObject.set(x, "ClipRectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeactivatedInplace(value: () => Unit): Self = StObject.set(x, "deactivatedInplace", js.Any.fromFunction0(value))
+    inline def setDeactivatedInplace(value: () => Unit): Self = StObject.set(x, "deactivatedInplace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeactivatedUI(value: () => Unit): Self = StObject.set(x, "deactivatedUI", js.Any.fromFunction0(value))
+    inline def setDeactivatedUI(value: () => Unit): Self = StObject.set(x, "deactivatedUI", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetClipRectangle(value: () => Rectangle): Self = StObject.set(x, "getClipRectangle", js.Any.fromFunction0(value))
+    inline def setGetClipRectangle(value: () => Rectangle): Self = StObject.set(x, "getClipRectangle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInplaceDispatchProvider(value: () => XDispatchProvider): Self = StObject.set(x, "getInplaceDispatchProvider", js.Any.fromFunction0(value))
+    inline def setGetInplaceDispatchProvider(value: () => XDispatchProvider): Self = StObject.set(x, "getInplaceDispatchProvider", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayoutManager(value: () => XLayoutManager): Self = StObject.set(x, "getLayoutManager", js.Any.fromFunction0(value))
+    inline def setGetLayoutManager(value: () => XLayoutManager): Self = StObject.set(x, "getLayoutManager", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPlacement(value: () => Rectangle): Self = StObject.set(x, "getPlacement", js.Any.fromFunction0(value))
+    inline def setGetPlacement(value: () => Rectangle): Self = StObject.set(x, "getPlacement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInplaceDispatchProvider(value: XDispatchProvider): Self = StObject.set(x, "InplaceDispatchProvider", value.asInstanceOf[js.Any])
+    inline def setInplaceDispatchProvider(value: XDispatchProvider): Self = StObject.set(x, "InplaceDispatchProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutManager(value: XLayoutManager): Self = StObject.set(x, "LayoutManager", value.asInstanceOf[js.Any])
+    inline def setLayoutManager(value: XLayoutManager): Self = StObject.set(x, "LayoutManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacement(value: Rectangle): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: Rectangle): Self = StObject.set(x, "Placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollObject(value: Size => Unit): Self = StObject.set(x, "scrollObject", js.Any.fromFunction1(value))
+    inline def setScrollObject(value: Size => Unit): Self = StObject.set(x, "scrollObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTranslateAccelerators(value: SeqEquiv[KeyEvent] => Unit): Self = StObject.set(x, "translateAccelerators", js.Any.fromFunction1(value))
+    inline def setTranslateAccelerators(value: SeqEquiv[KeyEvent] => Unit): Self = StObject.set(x, "translateAccelerators", js.Any.fromFunction1(value))
   }
 }

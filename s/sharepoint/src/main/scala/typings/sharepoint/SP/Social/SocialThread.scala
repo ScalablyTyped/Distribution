@@ -49,8 +49,7 @@ trait SocialThread
 }
 object SocialThread {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -72,40 +71,28 @@ object SocialThread {
     __obj.asInstanceOf[SocialThread]
   }
   
-  @scala.inline
-  implicit class SocialThreadMutableBuilder[Self <: SocialThread] (val x: Self) extends AnyVal {
+  extension [Self <: SocialThread](x: Self) {
     
-    @scala.inline
-    def setGet_actors(value: () => js.Array[SocialActor]): Self = StObject.set(x, "get_actors", js.Any.fromFunction0(value))
+    inline def setGet_actors(value: () => js.Array[SocialActor]): Self = StObject.set(x, "get_actors", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_attributes(value: () => SocialThreadAttributes): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
+    inline def setGet_attributes(value: () => SocialThreadAttributes): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
+    inline def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_ownerIndex(value: () => Double): Self = StObject.set(x, "get_ownerIndex", js.Any.fromFunction0(value))
+    inline def setGet_ownerIndex(value: () => Double): Self = StObject.set(x, "get_ownerIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_permalink(value: () => String): Self = StObject.set(x, "get_permalink", js.Any.fromFunction0(value))
+    inline def setGet_permalink(value: () => String): Self = StObject.set(x, "get_permalink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_postReference(value: () => SocialPostReference): Self = StObject.set(x, "get_postReference", js.Any.fromFunction0(value))
+    inline def setGet_postReference(value: () => SocialPostReference): Self = StObject.set(x, "get_postReference", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_replies(value: () => js.Array[SocialPost]): Self = StObject.set(x, "get_replies", js.Any.fromFunction0(value))
+    inline def setGet_replies(value: () => js.Array[SocialPost]): Self = StObject.set(x, "get_replies", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_rootPost(value: () => SocialPost): Self = StObject.set(x, "get_rootPost", js.Any.fromFunction0(value))
+    inline def setGet_rootPost(value: () => SocialPost): Self = StObject.set(x, "get_rootPost", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_status(value: () => SocialStatusCode): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
+    inline def setGet_status(value: () => SocialStatusCode): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_threadType(value: () => SocialThreadType): Self = StObject.set(x, "get_threadType", js.Any.fromFunction0(value))
+    inline def setGet_threadType(value: () => SocialThreadType): Self = StObject.set(x, "get_threadType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_totalReplyCount(value: () => Double): Self = StObject.set(x, "get_totalReplyCount", js.Any.fromFunction0(value))
+    inline def setGet_totalReplyCount(value: () => Double): Self = StObject.set(x, "get_totalReplyCount", js.Any.fromFunction0(value))
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSpanishSpeller extends StObject
 object WdSpanishSpeller {
   
-  @scala.inline
-  def wdSpanishTuteoAndVoseo: `1` = 1.asInstanceOf[`1`]
+  inline def wdSpanishTuteoAndVoseo: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdSpanishTuteoOnly: `0` = 0.asInstanceOf[`0`]
+  inline def wdSpanishTuteoOnly: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdSpanishVoseoOnly: `2` = 2.asInstanceOf[`2`]
+  inline def wdSpanishVoseoOnly: `2` = 2.asInstanceOf[`2`]
 }

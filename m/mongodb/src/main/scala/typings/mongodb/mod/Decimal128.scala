@@ -22,6 +22,5 @@ object Decimal128 {
   val ^ : js.Any = js.native
   
   /** Create a Decimal128 instance from a string representation. */
-  @scala.inline
-  def fromString(s: String): typings.bson.mod.Decimal128 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Decimal128]
+  inline def fromString(s: String): typings.bson.mod.Decimal128 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(s.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Decimal128]
 }

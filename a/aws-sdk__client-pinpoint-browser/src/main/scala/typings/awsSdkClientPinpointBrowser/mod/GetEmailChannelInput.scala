@@ -9,8 +9,7 @@ trait GetEmailChannelInput
      with typings.awsSdkClientPinpointBrowser.typesGetEmailChannelInputMod.GetEmailChannelInput
 object GetEmailChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): GetEmailChannelInput = {
+  inline def apply(ApplicationId: String): GetEmailChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEmailChannelInput]
   }

@@ -18,19 +18,15 @@ trait SchemaResponseMetadata extends StObject {
 }
 object SchemaResponseMetadata {
   
-  @scala.inline
-  def apply(): SchemaResponseMetadata = {
+  inline def apply(): SchemaResponseMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResponseMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaResponseMetadataMutableBuilder[Self <: SchemaResponseMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResponseMetadata](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

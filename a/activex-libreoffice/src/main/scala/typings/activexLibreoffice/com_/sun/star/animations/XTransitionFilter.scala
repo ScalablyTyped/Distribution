@@ -51,8 +51,7 @@ trait XTransitionFilter
 }
 object XTransitionFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     Accumulate: Boolean,
     Additive: Double,
@@ -98,22 +97,16 @@ object XTransitionFilter {
     __obj.asInstanceOf[XTransitionFilter]
   }
   
-  @scala.inline
-  implicit class XTransitionFilterMutableBuilder[Self <: XTransitionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: XTransitionFilter](x: Self) {
     
-    @scala.inline
-    def setDirection(value: Boolean): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Boolean): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFadeColor(value: Double): Self = StObject.set(x, "FadeColor", value.asInstanceOf[js.Any])
+    inline def setFadeColor(value: Double): Self = StObject.set(x, "FadeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Boolean): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Boolean): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtype(value: Double): Self = StObject.set(x, "Subtype", value.asInstanceOf[js.Any])
+    inline def setSubtype(value: Double): Self = StObject.set(x, "Subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransition(value: Double): Self = StObject.set(x, "Transition", value.asInstanceOf[js.Any])
+    inline def setTransition(value: Double): Self = StObject.set(x, "Transition", value.asInstanceOf[js.Any])
   }
 }

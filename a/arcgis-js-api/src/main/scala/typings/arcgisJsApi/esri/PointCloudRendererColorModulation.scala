@@ -33,8 +33,7 @@ trait PointCloudRendererColorModulation
 }
 object PointCloudRendererColorModulation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     field: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -44,22 +43,16 @@ object PointCloudRendererColorModulation {
     __obj.asInstanceOf[PointCloudRendererColorModulation]
   }
   
-  @scala.inline
-  implicit class PointCloudRendererColorModulationMutableBuilder[Self <: PointCloudRendererColorModulation] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudRendererColorModulation](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait Emailaddresses extends StObject {
 }
 object Emailaddresses {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     email_addresses: js.Array[String],
     first_name: String,
     last_name: String,
@@ -27,25 +26,18 @@ object Emailaddresses {
     __obj.asInstanceOf[Emailaddresses]
   }
   
-  @scala.inline
-  implicit class EmailaddressesMutableBuilder[Self <: Emailaddresses] (val x: Self) extends AnyVal {
+  extension [Self <: Emailaddresses](x: Self) {
     
-    @scala.inline
-    def setEmail_addresses(value: js.Array[String]): Self = StObject.set(x, "email_addresses", value.asInstanceOf[js.Any])
+    inline def setEmail_addresses(value: js.Array[String]): Self = StObject.set(x, "email_addresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail_addressesVarargs(value: String*): Self = StObject.set(x, "email_addresses", js.Array(value :_*))
+    inline def setEmail_addressesVarargs(value: String*): Self = StObject.set(x, "email_addresses", js.Array(value :_*))
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone_numbers(value: js.Array[String]): Self = StObject.set(x, "phone_numbers", value.asInstanceOf[js.Any])
+    inline def setPhone_numbers(value: js.Array[String]): Self = StObject.set(x, "phone_numbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone_numbersVarargs(value: String*): Self = StObject.set(x, "phone_numbers", js.Array(value :_*))
+    inline def setPhone_numbersVarargs(value: String*): Self = StObject.set(x, "phone_numbers", js.Array(value :_*))
   }
 }

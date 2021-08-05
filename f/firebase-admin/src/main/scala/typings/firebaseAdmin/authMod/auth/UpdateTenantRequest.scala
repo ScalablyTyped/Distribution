@@ -33,40 +33,29 @@ trait UpdateTenantRequest extends StObject {
 }
 object UpdateTenantRequest {
   
-  @scala.inline
-  def apply(): UpdateTenantRequest = {
+  inline def apply(): UpdateTenantRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTenantRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTenantRequestMutableBuilder[Self <: UpdateTenantRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTenantRequest](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEmailSignInConfig(value: EmailSignInProviderConfig): Self = StObject.set(x, "emailSignInConfig", value.asInstanceOf[js.Any])
+    inline def setEmailSignInConfig(value: EmailSignInProviderConfig): Self = StObject.set(x, "emailSignInConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSignInConfigUndefined: Self = StObject.set(x, "emailSignInConfig", js.undefined)
+    inline def setEmailSignInConfigUndefined: Self = StObject.set(x, "emailSignInConfig", js.undefined)
     
-    @scala.inline
-    def setMultiFactorConfig(value: MultiFactorConfig): Self = StObject.set(x, "multiFactorConfig", value.asInstanceOf[js.Any])
+    inline def setMultiFactorConfig(value: MultiFactorConfig): Self = StObject.set(x, "multiFactorConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiFactorConfigUndefined: Self = StObject.set(x, "multiFactorConfig", js.undefined)
+    inline def setMultiFactorConfigUndefined: Self = StObject.set(x, "multiFactorConfig", js.undefined)
     
-    @scala.inline
-    def setTestPhoneNumbers(value: StringDictionary[String]): Self = StObject.set(x, "testPhoneNumbers", value.asInstanceOf[js.Any])
+    inline def setTestPhoneNumbers(value: StringDictionary[String]): Self = StObject.set(x, "testPhoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPhoneNumbersNull: Self = StObject.set(x, "testPhoneNumbers", null)
+    inline def setTestPhoneNumbersNull: Self = StObject.set(x, "testPhoneNumbers", null)
     
-    @scala.inline
-    def setTestPhoneNumbersUndefined: Self = StObject.set(x, "testPhoneNumbers", js.undefined)
+    inline def setTestPhoneNumbersUndefined: Self = StObject.set(x, "testPhoneNumbers", js.undefined)
   }
 }

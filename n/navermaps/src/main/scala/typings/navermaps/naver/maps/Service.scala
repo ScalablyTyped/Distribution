@@ -68,20 +68,16 @@ object Service {
   }
   object AddressItem {
     
-    @scala.inline
-    def apply(addrdetail: Country, address: String): AddressItem = {
+    inline def apply(addrdetail: Country, address: String): AddressItem = {
       val __obj = js.Dynamic.literal(addrdetail = addrdetail.asInstanceOf[js.Any], address = address.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddressItem]
     }
     
-    @scala.inline
-    implicit class AddressItemMutableBuilder[Self <: AddressItem] (val x: Self) extends AnyVal {
+    extension [Self <: AddressItem](x: Self) {
       
-      @scala.inline
-      def setAddrdetail(value: Country): Self = StObject.set(x, "addrdetail", value.asInstanceOf[js.Any])
+      inline def setAddrdetail(value: Country): Self = StObject.set(x, "addrdetail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,17 +87,14 @@ object Service {
   }
   object GeocodeResponse {
     
-    @scala.inline
-    def apply(result: Items): GeocodeResponse = {
+    inline def apply(result: Items): GeocodeResponse = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeocodeResponse]
     }
     
-    @scala.inline
-    implicit class GeocodeResponseMutableBuilder[Self <: GeocodeResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GeocodeResponse](x: Self) {
       
-      @scala.inline
-      def setResult(value: Items): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Items): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,20 +106,16 @@ object Service {
   }
   object GeocodeServiceOptions {
     
-    @scala.inline
-    def apply(): GeocodeServiceOptions = {
+    inline def apply(): GeocodeServiceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GeocodeServiceOptions]
     }
     
-    @scala.inline
-    implicit class GeocodeServiceOptionsMutableBuilder[Self <: GeocodeServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GeocodeServiceOptions](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+      inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     }
   }
   
@@ -136,17 +125,14 @@ object Service {
   }
   object ReverseGeocodeResponse {
     
-    @scala.inline
-    def apply(result: Total): ReverseGeocodeResponse = {
+    inline def apply(result: Total): ReverseGeocodeResponse = {
       val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReverseGeocodeResponse]
     }
     
-    @scala.inline
-    implicit class ReverseGeocodeResponseMutableBuilder[Self <: ReverseGeocodeResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ReverseGeocodeResponse](x: Self) {
       
-      @scala.inline
-      def setResult(value: Total): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Total): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,20 +144,16 @@ object Service {
   }
   object ReverseServiceOptions {
     
-    @scala.inline
-    def apply(): ReverseServiceOptions = {
+    inline def apply(): ReverseServiceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReverseServiceOptions]
     }
     
-    @scala.inline
-    implicit class ReverseServiceOptionsMutableBuilder[Self <: ReverseServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReverseServiceOptions](x: Self) {
       
-      @scala.inline
-      def setLocation(value: Coord | CoordLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Coord | CoordLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     }
   }
   
@@ -183,26 +165,20 @@ object Service {
   }
   object ServiceOptions {
     
-    @scala.inline
-    def apply(): ServiceOptions = {
+    inline def apply(): ServiceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    @scala.inline
-    implicit class ServiceOptionsMutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceOptions](x: Self) {
       
-      @scala.inline
-      def setCoordType(value: js.Any): Self = StObject.set(x, "coordType", value.asInstanceOf[js.Any])
+      inline def setCoordType(value: js.Any): Self = StObject.set(x, "coordType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordTypeUndefined: Self = StObject.set(x, "coordType", js.undefined)
+      inline def setCoordTypeUndefined: Self = StObject.set(x, "coordType", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: js.Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: js.Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
 }

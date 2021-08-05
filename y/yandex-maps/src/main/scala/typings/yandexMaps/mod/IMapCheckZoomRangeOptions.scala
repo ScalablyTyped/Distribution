@@ -10,19 +10,15 @@ trait IMapCheckZoomRangeOptions extends StObject {
 }
 object IMapCheckZoomRangeOptions {
   
-  @scala.inline
-  def apply(): IMapCheckZoomRangeOptions = {
+  inline def apply(): IMapCheckZoomRangeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMapCheckZoomRangeOptions]
   }
   
-  @scala.inline
-  implicit class IMapCheckZoomRangeOptionsMutableBuilder[Self <: IMapCheckZoomRangeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IMapCheckZoomRangeOptions](x: Self) {
     
-    @scala.inline
-    def setCheckZoomRange(value: Boolean): Self = StObject.set(x, "checkZoomRange", value.asInstanceOf[js.Any])
+    inline def setCheckZoomRange(value: Boolean): Self = StObject.set(x, "checkZoomRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckZoomRangeUndefined: Self = StObject.set(x, "checkZoomRange", js.undefined)
+    inline def setCheckZoomRangeUndefined: Self = StObject.set(x, "checkZoomRange", js.undefined)
   }
 }

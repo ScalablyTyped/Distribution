@@ -11,16 +11,13 @@ trait IAppAvailabilityService extends StObject {
 }
 object IAppAvailabilityService {
   
-  @scala.inline
-  def apply(check: String => IPromise[js.Any]): IAppAvailabilityService = {
+  inline def apply(check: String => IPromise[js.Any]): IAppAvailabilityService = {
     val __obj = js.Dynamic.literal(check = js.Any.fromFunction1(check))
     __obj.asInstanceOf[IAppAvailabilityService]
   }
   
-  @scala.inline
-  implicit class IAppAvailabilityServiceMutableBuilder[Self <: IAppAvailabilityService] (val x: Self) extends AnyVal {
+  extension [Self <: IAppAvailabilityService](x: Self) {
     
-    @scala.inline
-    def setCheck(value: String => IPromise[js.Any]): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: String => IPromise[js.Any]): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
   }
 }

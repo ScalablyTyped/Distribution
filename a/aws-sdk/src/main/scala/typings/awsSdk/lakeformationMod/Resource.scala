@@ -33,43 +33,31 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply(): Resource = {
+  inline def apply(): Resource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Resource]
   }
   
-  @scala.inline
-  implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+  extension [Self <: Resource](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: CatalogResource): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: CatalogResource): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogUndefined: Self = StObject.set(x, "Catalog", js.undefined)
+    inline def setCatalogUndefined: Self = StObject.set(x, "Catalog", js.undefined)
     
-    @scala.inline
-    def setDataLocation(value: DataLocationResource): Self = StObject.set(x, "DataLocation", value.asInstanceOf[js.Any])
+    inline def setDataLocation(value: DataLocationResource): Self = StObject.set(x, "DataLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLocationUndefined: Self = StObject.set(x, "DataLocation", js.undefined)
+    inline def setDataLocationUndefined: Self = StObject.set(x, "DataLocation", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: DatabaseResource): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: DatabaseResource): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
     
-    @scala.inline
-    def setTable(value: TableResource): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
+    inline def setTable(value: TableResource): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     
-    @scala.inline
-    def setTableWithColumns(value: TableWithColumnsResource): Self = StObject.set(x, "TableWithColumns", value.asInstanceOf[js.Any])
+    inline def setTableWithColumns(value: TableWithColumnsResource): Self = StObject.set(x, "TableWithColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableWithColumnsUndefined: Self = StObject.set(x, "TableWithColumns", js.undefined)
+    inline def setTableWithColumnsUndefined: Self = StObject.set(x, "TableWithColumns", js.undefined)
   }
 }

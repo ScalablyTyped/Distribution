@@ -62,8 +62,7 @@ object jsonstructuresMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @scala.inline
-      def create(model: IModel): JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[JsonElement]
+      inline def create(model: IModel): JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[JsonElement]
       
       /**
         * Creates and returns a new JsonElement instance in the SDK and on the server.
@@ -74,8 +73,7 @@ object jsonstructuresMod {
         *  6.6.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInElementUnderChildren(container: Element): JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[JsonElement]
+      inline def createInElementUnderChildren(container: Element): JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[JsonElement]
       
       /**
         * Creates and returns a new JsonElement instance in the SDK and on the server.
@@ -86,22 +84,19 @@ object jsonstructuresMod {
         *  6.6.0 and higher
         */
       /* static member */
-      @scala.inline
-      def createInJsonStructureUnderElements(container: JsonStructure): JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[JsonElement]
+      inline def createInJsonStructureUnderElements(container: JsonStructure): JsonElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[JsonElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonElement.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonElement.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -153,22 +148,19 @@ object jsonstructuresMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @scala.inline
-      def createIn(container: IFolderBase): JsonStructure = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[JsonStructure]
+      inline def createIn(container: IFolderBase): JsonStructure = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[JsonStructure]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonStructure.structureTypeName")
       @js.native
       def structureTypeName: String = js.native
-      @scala.inline
-      def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/jsonstructures", "jsonstructures.JsonStructure.versionInfo")
       @js.native
       def versionInfo: StructureVersionInfo = js.native
-      @scala.inline
-      def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
     }
     
     /**

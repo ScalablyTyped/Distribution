@@ -24,30 +24,24 @@ trait InjectorTypeWithProviders[T] extends StObject {
 }
 object InjectorTypeWithProviders {
   
-  @scala.inline
-  def apply[T](ngModule: InjectorType[T]): InjectorTypeWithProviders[T] = {
+  inline def apply[T](ngModule: InjectorType[T]): InjectorTypeWithProviders[T] = {
     val __obj = js.Dynamic.literal(ngModule = ngModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectorTypeWithProviders[T]]
   }
   
-  @scala.inline
-  implicit class InjectorTypeWithProvidersMutableBuilder[Self <: InjectorTypeWithProviders[?], T] (val x: Self & InjectorTypeWithProviders[T]) extends AnyVal {
+  extension [Self <: InjectorTypeWithProviders[?], T](x: Self & InjectorTypeWithProviders[T]) {
     
-    @scala.inline
-    def setNgModule(value: InjectorType[T]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
+    inline def setNgModule(value: InjectorType[T]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviders(
+    inline def setProviders(
       value: js.Array[
           Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any]
         ]
     ): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    @scala.inline
-    def setProvidersVarargs(
+    inline def setProvidersVarargs(
       value: (Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any])*
     ): Self = StObject.set(x, "providers", js.Array(value :_*))
   }

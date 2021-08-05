@@ -45,8 +45,7 @@ object ConditionalVisibilitySettings {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
+  inline def create(model: IModel): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -54,8 +53,7 @@ object ConditionalVisibilitySettings {
     * of the parent ConditionallyVisibleWidget element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings(container: ConditionallyVisibleWidget): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
+  inline def createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings(container: ConditionallyVisibleWidget): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionallyVisibleWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -63,8 +61,7 @@ object ConditionalVisibilitySettings {
     * of the parent ControlBarButton element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInControlBarButtonUnderConditionalVisibilitySettings(container: ControlBarButton): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
+  inline def createInControlBarButtonUnderConditionalVisibilitySettings(container: ControlBarButton): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -75,8 +72,7 @@ object ConditionalVisibilitySettings {
     *  8.1.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCustomWidgetUnderConditionalVisibilitySettings(container: CustomWidget): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
+  inline def createInCustomWidgetUnderConditionalVisibilitySettings(container: CustomWidget): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCustomWidgetUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -84,8 +80,7 @@ object ConditionalVisibilitySettings {
     * of the parent LayoutGridRow element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridRowUnderConditionalVisibilitySettings(container: LayoutGridRow): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
+  inline def createInLayoutGridRowUnderConditionalVisibilitySettings(container: LayoutGridRow): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -93,8 +88,7 @@ object ConditionalVisibilitySettings {
     * of the parent NavigationListItem element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderConditionalVisibilitySettings(container: NavigationListItem): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
+  inline def createInNavigationListItemUnderConditionalVisibilitySettings(container: NavigationListItem): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -102,8 +96,7 @@ object ConditionalVisibilitySettings {
     * of the parent TabPage element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderConditionalVisibilitySettings(container: TabPage): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
+  inline def createInTabPageUnderConditionalVisibilitySettings(container: TabPage): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
   
   /**
     * Creates and returns a new ConditionalVisibilitySettings instance in the SDK and on the server.
@@ -111,20 +104,17 @@ object ConditionalVisibilitySettings {
     * of the parent TableRow element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInTableRowUnderConditionalVisibilitySettings(container: TableRow): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
+  inline def createInTableRowUnderConditionalVisibilitySettings(container: TableRow): ConditionalVisibilitySettings = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableRowUnderConditionalVisibilitySettings")(container.asInstanceOf[js.Any]).asInstanceOf[ConditionalVisibilitySettings]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalVisibilitySettings.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.ConditionalVisibilitySettings.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

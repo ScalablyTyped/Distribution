@@ -18,32 +18,24 @@ object anon {
   }
   object PartialResponse {
     
-    @scala.inline
-    def apply(): PartialResponse = {
+    inline def apply(): PartialResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialResponse]
     }
     
-    @scala.inline
-    implicit class PartialResponseMutableBuilder[Self <: PartialResponse] (val x: Self) extends AnyVal {
+    extension [Self <: PartialResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeader(value: Record[String, String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Record[String, String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
     }
   }
 }

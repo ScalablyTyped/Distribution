@@ -25,61 +25,43 @@ trait DropdownOptions extends StObject {
 }
 object DropdownOptions {
   
-  @scala.inline
-  def apply(): DropdownOptions = {
+  inline def apply(): DropdownOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DropdownOptions]
   }
   
-  @scala.inline
-  implicit class DropdownOptionsMutableBuilder[Self <: DropdownOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DropdownOptions](x: Self) {
     
-    @scala.inline
-    def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
+    inline def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
+    inline def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setClosed(value: () => js.Any): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
+    inline def setClosed(value: () => js.Any): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
+    inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
     
-    @scala.inline
-    def setDisabled_class(value: String): Self = StObject.set(x, "disabled_class", value.asInstanceOf[js.Any])
+    inline def setDisabled_class(value: String): Self = StObject.set(x, "disabled_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled_classUndefined: Self = StObject.set(x, "disabled_class", js.undefined)
+    inline def setDisabled_classUndefined: Self = StObject.set(x, "disabled_class", js.undefined)
     
-    @scala.inline
-    def setHover_timeout(value: Double): Self = StObject.set(x, "hover_timeout", value.asInstanceOf[js.Any])
+    inline def setHover_timeout(value: Double): Self = StObject.set(x, "hover_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHover_timeoutUndefined: Self = StObject.set(x, "hover_timeout", js.undefined)
+    inline def setHover_timeoutUndefined: Self = StObject.set(x, "hover_timeout", js.undefined)
     
-    @scala.inline
-    def setIs_hover(value: Boolean): Self = StObject.set(x, "is_hover", value.asInstanceOf[js.Any])
+    inline def setIs_hover(value: Boolean): Self = StObject.set(x, "is_hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_hoverUndefined: Self = StObject.set(x, "is_hover", js.undefined)
+    inline def setIs_hoverUndefined: Self = StObject.set(x, "is_hover", js.undefined)
     
-    @scala.inline
-    def setMega_class(value: String): Self = StObject.set(x, "mega_class", value.asInstanceOf[js.Any])
+    inline def setMega_class(value: String): Self = StObject.set(x, "mega_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMega_classUndefined: Self = StObject.set(x, "mega_class", js.undefined)
+    inline def setMega_classUndefined: Self = StObject.set(x, "mega_class", js.undefined)
     
-    @scala.inline
-    def setOpened(value: () => js.Any): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
+    inline def setOpened(value: () => js.Any): Self = StObject.set(x, "opened", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
+    inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
   }
 }

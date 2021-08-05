@@ -8,11 +8,9 @@ object resizeObserverBrowserStrings {
   
   @js.native
   sealed trait `border-box` extends StObject
-  @scala.inline
-  def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
+  inline def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
   
   @js.native
   sealed trait `content-box` extends StObject
-  @scala.inline
-  def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
+  inline def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
 }

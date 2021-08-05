@@ -22,9 +22,9 @@ object lockedFsMod {
     extends StObject
        with FileSystem {
     
-    var _fs: js.Any = js.native
+    /* private */ var _fs: js.Any = js.native
     
-    var _mu: js.Any = js.native
+    /* private */ var _mu: js.Any = js.native
     
     def appendFile(fname: String, data: js.Any, encoding: String, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
     

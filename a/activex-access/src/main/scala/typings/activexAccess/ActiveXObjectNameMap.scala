@@ -23,8 +23,7 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ACCWIZDotFieldListCtrl: FieldList,
     ACCWIZDotImexGridCtrl: ImexGrid,
     AccessDotApplication: Application,
@@ -37,19 +36,14 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setACCWIZDotFieldListCtrl(value: FieldList): Self = StObject.set(x, "ACCWIZ.FieldListCtrl", value.asInstanceOf[js.Any])
+    inline def setACCWIZDotFieldListCtrl(value: FieldList): Self = StObject.set(x, "ACCWIZ.FieldListCtrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setACCWIZDotImexGridCtrl(value: ImexGrid): Self = StObject.set(x, "ACCWIZ.ImexGridCtrl", value.asInstanceOf[js.Any])
+    inline def setACCWIZDotImexGridCtrl(value: ImexGrid): Self = StObject.set(x, "ACCWIZ.ImexGridCtrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessDotApplication(value: Application): Self = StObject.set(x, "Access.Application", value.asInstanceOf[js.Any])
+    inline def setAccessDotApplication(value: Application): Self = StObject.set(x, "Access.Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLnkfile(value: WizShellLinkA): Self = StObject.set(x, "lnkfile", value.asInstanceOf[js.Any])
+    inline def setLnkfile(value: WizShellLinkA): Self = StObject.set(x, "lnkfile", value.asInstanceOf[js.Any])
   }
 }

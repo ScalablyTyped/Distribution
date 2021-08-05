@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CampaignType extends StObject
 object CampaignType {
   
-  @scala.inline
-  def SEARCH_OR_DISPLAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SEARCH_OR_DISPLAY = "SEARCH_OR_DISPLAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SEARCH_OR_DISPLAY]
+  inline def SEARCH_OR_DISPLAY: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SEARCH_OR_DISPLAY = "SEARCH_OR_DISPLAY".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SEARCH_OR_DISPLAY]
   
-  @scala.inline
-  def SHOPPING: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SHOPPING = "SHOPPING".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SHOPPING]
+  inline def SHOPPING: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SHOPPING = "SHOPPING".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.SHOPPING]
   
-  @scala.inline
-  def VIDEO: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.VIDEO = "VIDEO".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.VIDEO]
+  inline def VIDEO: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.VIDEO = "VIDEO".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.VIDEO]
 }

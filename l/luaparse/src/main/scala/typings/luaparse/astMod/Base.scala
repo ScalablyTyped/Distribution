@@ -13,23 +13,18 @@ trait Base[TType /* <: String */] extends StObject {
 }
 object Base {
   
-  @scala.inline
-  def apply[TType /* <: String */](`type`: TType): Base[TType] = {
+  inline def apply[TType /* <: String */](`type`: TType): Base[TType] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Base[TType]]
   }
   
-  @scala.inline
-  implicit class BaseMutableBuilder[Self <: Base[?], TType /* <: String */] (val x: Self & Base[TType]) extends AnyVal {
+  extension [Self <: Base[?], TType /* <: String */](x: Self & Base[TType]) {
     
-    @scala.inline
-    def setLoc(value: End): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: End): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait AqlLiteral extends StObject {
 }
 object AqlLiteral {
   
-  @scala.inline
-  def apply(toAQL: () => String): AqlLiteral = {
+  inline def apply(toAQL: () => String): AqlLiteral = {
     val __obj = js.Dynamic.literal(toAQL = js.Any.fromFunction0(toAQL))
     __obj.asInstanceOf[AqlLiteral]
   }
   
-  @scala.inline
-  implicit class AqlLiteralMutableBuilder[Self <: AqlLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: AqlLiteral](x: Self) {
     
-    @scala.inline
-    def setToAQL(value: () => String): Self = StObject.set(x, "toAQL", js.Any.fromFunction0(value))
+    inline def setToAQL(value: () => String): Self = StObject.set(x, "toAQL", js.Any.fromFunction0(value))
   }
 }

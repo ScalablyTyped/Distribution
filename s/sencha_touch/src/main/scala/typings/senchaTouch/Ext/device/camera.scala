@@ -34,22 +34,18 @@ object camera {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setCapture(
+      inline def setCapture(
         value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* destination */ js.UndefOr[String], /* encoding */ js.UndefOr[String], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
       ): Self = StObject.set(x, "capture", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     }
   }
   
@@ -65,20 +61,16 @@ object camera {
   }
   object ICordova {
     
-    @scala.inline
-    def apply(): ICordova = {
+    inline def apply(): ICordova = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICordova]
     }
     
-    @scala.inline
-    implicit class ICordovaMutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
+    extension [Self <: ICordova](x: Self) {
       
-      @scala.inline
-      def setCapture(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
+      inline def setCapture(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     }
   }
   
@@ -94,20 +86,16 @@ object camera {
   }
   object IPhoneGap {
     
-    @scala.inline
-    def apply(): IPhoneGap = {
+    inline def apply(): IPhoneGap = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPhoneGap]
     }
     
-    @scala.inline
-    implicit class IPhoneGapMutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
+    extension [Self <: IPhoneGap](x: Self) {
       
-      @scala.inline
-      def setCapture(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
+      inline def setCapture(value: /* args */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     }
   }
   
@@ -123,20 +111,16 @@ object camera {
   }
   object ISencha {
     
-    @scala.inline
-    def apply(): ISencha = {
+    inline def apply(): ISencha = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISencha]
     }
     
-    @scala.inline
-    implicit class ISenchaMutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
+    extension [Self <: ISencha](x: Self) {
       
-      @scala.inline
-      def setCapture(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
+      inline def setCapture(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     }
   }
   
@@ -162,32 +146,24 @@ object camera {
   }
   object ISimulator {
     
-    @scala.inline
-    def apply(): ISimulator = {
+    inline def apply(): ISimulator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISimulator]
     }
     
-    @scala.inline
-    implicit class ISimulatorMutableBuilder[Self <: ISimulator] (val x: Self) extends AnyVal {
+    extension [Self <: ISimulator](x: Self) {
       
-      @scala.inline
-      def setCapture(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
+      inline def setCapture(value: /* options */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "capture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      @scala.inline
-      def setGetSamples(value: () => Array): Self = StObject.set(x, "getSamples", js.Any.fromFunction0(value))
+      inline def setGetSamples(value: () => Array): Self = StObject.set(x, "getSamples", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSamplesUndefined: Self = StObject.set(x, "getSamples", js.undefined)
+      inline def setGetSamplesUndefined: Self = StObject.set(x, "getSamples", js.undefined)
       
-      @scala.inline
-      def setSetSamples(value: /* samples */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setSamples", js.Any.fromFunction1(value))
+      inline def setSetSamples(value: /* samples */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setSamples", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSamplesUndefined: Self = StObject.set(x, "setSamples", js.undefined)
+      inline def setSetSamplesUndefined: Self = StObject.set(x, "setSamples", js.undefined)
     }
   }
 }

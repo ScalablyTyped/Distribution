@@ -58,79 +58,55 @@ trait GetDocumentResult extends StObject {
 }
 object GetDocumentResult {
   
-  @scala.inline
-  def apply(): GetDocumentResult = {
+  inline def apply(): GetDocumentResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDocumentResult]
   }
   
-  @scala.inline
-  implicit class GetDocumentResultMutableBuilder[Self <: GetDocumentResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetDocumentResult](x: Self) {
     
-    @scala.inline
-    def setAttachmentsContent(value: AttachmentContentList): Self = StObject.set(x, "AttachmentsContent", value.asInstanceOf[js.Any])
+    inline def setAttachmentsContent(value: AttachmentContentList): Self = StObject.set(x, "AttachmentsContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsContentUndefined: Self = StObject.set(x, "AttachmentsContent", js.undefined)
+    inline def setAttachmentsContentUndefined: Self = StObject.set(x, "AttachmentsContent", js.undefined)
     
-    @scala.inline
-    def setAttachmentsContentVarargs(value: AttachmentContent*): Self = StObject.set(x, "AttachmentsContent", js.Array(value :_*))
+    inline def setAttachmentsContentVarargs(value: AttachmentContent*): Self = StObject.set(x, "AttachmentsContent", js.Array(value :_*))
     
-    @scala.inline
-    def setContent(value: DocumentContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: DocumentContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "DocumentFormat", value.asInstanceOf[js.Any])
+    inline def setDocumentFormat(value: DocumentFormat): Self = StObject.set(x, "DocumentFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentFormatUndefined: Self = StObject.set(x, "DocumentFormat", js.undefined)
+    inline def setDocumentFormatUndefined: Self = StObject.set(x, "DocumentFormat", js.undefined)
     
-    @scala.inline
-    def setDocumentType(value: DocumentType): Self = StObject.set(x, "DocumentType", value.asInstanceOf[js.Any])
+    inline def setDocumentType(value: DocumentType): Self = StObject.set(x, "DocumentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentTypeUndefined: Self = StObject.set(x, "DocumentType", js.undefined)
+    inline def setDocumentTypeUndefined: Self = StObject.set(x, "DocumentType", js.undefined)
     
-    @scala.inline
-    def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
+    inline def setDocumentVersionUndefined: Self = StObject.set(x, "DocumentVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: DocumentARN): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DocumentARN): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRequires(value: DocumentRequiresList): Self = StObject.set(x, "Requires", value.asInstanceOf[js.Any])
+    inline def setRequires(value: DocumentRequiresList): Self = StObject.set(x, "Requires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiresUndefined: Self = StObject.set(x, "Requires", js.undefined)
+    inline def setRequiresUndefined: Self = StObject.set(x, "Requires", js.undefined)
     
-    @scala.inline
-    def setRequiresVarargs(value: DocumentRequires*): Self = StObject.set(x, "Requires", js.Array(value :_*))
+    inline def setRequiresVarargs(value: DocumentRequires*): Self = StObject.set(x, "Requires", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: DocumentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DocumentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusInformation(value: DocumentStatusInformation): Self = StObject.set(x, "StatusInformation", value.asInstanceOf[js.Any])
+    inline def setStatusInformation(value: DocumentStatusInformation): Self = StObject.set(x, "StatusInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusInformationUndefined: Self = StObject.set(x, "StatusInformation", js.undefined)
+    inline def setStatusInformationUndefined: Self = StObject.set(x, "StatusInformation", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVersionName(value: DocumentVersionName): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
+    inline def setVersionName(value: DocumentVersionName): Self = StObject.set(x, "VersionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNameUndefined: Self = StObject.set(x, "VersionName", js.undefined)
+    inline def setVersionNameUndefined: Self = StObject.set(x, "VersionName", js.undefined)
   }
 }

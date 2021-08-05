@@ -30,8 +30,7 @@ trait GlobalizationDate extends StObject {
 }
 object GlobalizationDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     day: Double,
     hour: Double,
     millisecond: Double,
@@ -44,28 +43,20 @@ object GlobalizationDate {
     __obj.asInstanceOf[GlobalizationDate]
   }
   
-  @scala.inline
-  implicit class GlobalizationDateMutableBuilder[Self <: GlobalizationDate] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalizationDate](x: Self) {
     
-    @scala.inline
-    def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+    inline def setHour(value: Double): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMillisecond(value: Double): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
+    inline def setMillisecond(value: Double): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+    inline def setMinute(value: Double): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: Double): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
   }
 }

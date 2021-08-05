@@ -18,23 +18,18 @@ trait Nick
 }
 object Nick {
   
-  @scala.inline
-  def apply(nick: String, queue_position: Double): Nick = {
+  inline def apply(nick: String, queue_position: Double): Nick = {
     val __obj = js.Dynamic.literal(nick = nick.asInstanceOf[js.Any], queue_position = queue_position.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("chat.queue_position")
     __obj.asInstanceOf[Nick]
   }
   
-  @scala.inline
-  implicit class NickMutableBuilder[Self <: Nick] (val x: Self) extends AnyVal {
+  extension [Self <: Nick](x: Self) {
     
-    @scala.inline
-    def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
+    inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueue_position(value: Double): Self = StObject.set(x, "queue_position", value.asInstanceOf[js.Any])
+    inline def setQueue_position(value: Double): Self = StObject.set(x, "queue_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: chatDotqueue_position): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: chatDotqueue_position): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -19,8 +19,7 @@ trait ColIndex extends StObject {
 }
 object ColIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     colIndex: Double,
     dataIndex: Double,
     event: MouseEvent[Element, NativeMouseEvent],
@@ -30,19 +29,14 @@ object ColIndex {
     __obj.asInstanceOf[ColIndex]
   }
   
-  @scala.inline
-  implicit class ColIndexMutableBuilder[Self <: ColIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ColIndex](x: Self) {
     
-    @scala.inline
-    def setColIndex(value: Double): Self = StObject.set(x, "colIndex", value.asInstanceOf[js.Any])
+    inline def setColIndex(value: Double): Self = StObject.set(x, "colIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
+    inline def setDataIndex(value: Double): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: MouseEvent[Element, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent[Element, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
   }
 }

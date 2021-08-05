@@ -17,19 +17,19 @@ object observableobjectMod {
   class ObservableObject protected () extends StObject {
     def this(target: js.Any, context: IContextInfoStruct, mode: ValueMode) = this()
     
-    var _events: js.Any = js.native
+    /* private */ var _events: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def defineReactiveProperty(propName: js.Any, value: js.Any): js.Any = js.native
     
-    var mode: js.Any = js.native
+    /* private */ var mode: js.Any = js.native
     
     def observe(callback: js.Function1[/* changes */ IObjectChange[js.Any, js.Any], Unit]): Lambda = js.native
     
     def set(propName: js.Any, value: js.Any): Unit = js.native
     
-    var target: js.Any = js.native
+    /* private */ var target: js.Any = js.native
     
     var values: StringDictionary[DataNode] = js.native
   }
@@ -40,7 +40,6 @@ object observableobjectMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def asReactive(target: js.Any, context: IContextInfoStruct, mode: ValueMode): ObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("asReactive")(target.asInstanceOf[js.Any], context.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[ObservableObject]
+    inline def asReactive(target: js.Any, context: IContextInfoStruct, mode: ValueMode): ObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("asReactive")(target.asInstanceOf[js.Any], context.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[ObservableObject]
   }
 }

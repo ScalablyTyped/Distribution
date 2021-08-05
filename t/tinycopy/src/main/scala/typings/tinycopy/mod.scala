@@ -27,8 +27,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def exec(
+    inline def exec(
       value: String,
       callback: js.Function2[/* err */ js.UndefOr[Error], /* data */ js.UndefOr[String], Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

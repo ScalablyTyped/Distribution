@@ -14,20 +14,16 @@ object Lights {
   }
   object AmbientLight {
     
-    @scala.inline
-    def apply(setColor: js.Tuple3[Double, Double, Double] => Unit, setIntensity: Double => Unit): AmbientLight = {
+    inline def apply(setColor: js.Tuple3[Double, Double, Double] => Unit, setIntensity: Double => Unit): AmbientLight = {
       val __obj = js.Dynamic.literal(setColor = js.Any.fromFunction1(setColor), setIntensity = js.Any.fromFunction1(setIntensity))
       __obj.asInstanceOf[AmbientLight]
     }
     
-    @scala.inline
-    implicit class AmbientLightMutableBuilder[Self <: AmbientLight] (val x: Self) extends AnyVal {
+    extension [Self <: AmbientLight](x: Self) {
       
-      @scala.inline
-      def setSetColor(value: js.Tuple3[Double, Double, Double] => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+      inline def setSetColor(value: js.Tuple3[Double, Double, Double] => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIntensity(value: Double => Unit): Self = StObject.set(x, "setIntensity", js.Any.fromFunction1(value))
+      inline def setSetIntensity(value: Double => Unit): Self = StObject.set(x, "setIntensity", js.Any.fromFunction1(value))
     }
   }
   
@@ -43,8 +39,7 @@ object Lights {
   }
   object DirectionLight {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       setColor: js.Tuple3[Double, Double, Double] => Unit,
       setDirection: js.Tuple3[Double, Double, Double] => Unit,
       setIntensity: Double => Unit,
@@ -54,20 +49,15 @@ object Lights {
       __obj.asInstanceOf[DirectionLight]
     }
     
-    @scala.inline
-    implicit class DirectionLightMutableBuilder[Self <: DirectionLight] (val x: Self) extends AnyVal {
+    extension [Self <: DirectionLight](x: Self) {
       
-      @scala.inline
-      def setSetColor(value: js.Tuple3[Double, Double, Double] => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+      inline def setSetColor(value: js.Tuple3[Double, Double, Double] => Unit): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDirection(value: js.Tuple3[Double, Double, Double] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
+      inline def setSetDirection(value: js.Tuple3[Double, Double, Double] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIntensity(value: Double => Unit): Self = StObject.set(x, "setIntensity", js.Any.fromFunction1(value))
+      inline def setSetIntensity(value: Double => Unit): Self = StObject.set(x, "setIntensity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
 }

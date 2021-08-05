@@ -14,10 +14,10 @@ object componentDropdownMod {
   class WorksDropdown protected () extends HomeworksManager {
     def this(renderer: Renderer2, elementRef: ElementRef[js.Any]) = this()
     
-    @JSName("$dropdown")
+    /* private */ @JSName("$dropdown")
     var $dropdown: js.Any = js.native
     
-    @JSName("$element")
+    /* private */ @JSName("$element")
     var $element: js.Any = js.native
     
     var `class`: String = js.native
@@ -26,7 +26,7 @@ object componentDropdownMod {
     
     var dropdownChild: ElementRef[js.Any] = js.native
     
-    var elementRef: js.Any = js.native
+    /* private */ var elementRef: js.Any = js.native
     
     def ngAfterViewInit(): Unit = js.native
     

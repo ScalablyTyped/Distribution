@@ -18,20 +18,16 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(`type`: String, videoId: String): Type = {
+  inline def apply(`type`: String, videoId: String): Type = {
     val __obj = js.Dynamic.literal(videoId = videoId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
   }
 }

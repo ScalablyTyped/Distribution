@@ -12,25 +12,19 @@ trait BarWidth extends StObject {
 }
 object BarWidth {
   
-  @scala.inline
-  def apply(): BarWidth = {
+  inline def apply(): BarWidth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarWidth]
   }
   
-  @scala.inline
-  implicit class BarWidthMutableBuilder[Self <: BarWidth] (val x: Self) extends AnyVal {
+  extension [Self <: BarWidth](x: Self) {
     
-    @scala.inline
-    def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
+    inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
+    inline def setBarWidthUndefined: Self = StObject.set(x, "barWidth", js.undefined)
     
-    @scala.inline
-    def setGroup(value: BarSpace): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: BarSpace): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
   }
 }

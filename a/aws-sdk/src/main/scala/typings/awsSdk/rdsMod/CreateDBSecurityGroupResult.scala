@@ -10,19 +10,15 @@ trait CreateDBSecurityGroupResult extends StObject {
 }
 object CreateDBSecurityGroupResult {
   
-  @scala.inline
-  def apply(): CreateDBSecurityGroupResult = {
+  inline def apply(): CreateDBSecurityGroupResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDBSecurityGroupResult]
   }
   
-  @scala.inline
-  implicit class CreateDBSecurityGroupResultMutableBuilder[Self <: CreateDBSecurityGroupResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDBSecurityGroupResult](x: Self) {
     
-    @scala.inline
-    def setDBSecurityGroup(value: DBSecurityGroup): Self = StObject.set(x, "DBSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroup(value: DBSecurityGroup): Self = StObject.set(x, "DBSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSecurityGroupUndefined: Self = StObject.set(x, "DBSecurityGroup", js.undefined)
+    inline def setDBSecurityGroupUndefined: Self = StObject.set(x, "DBSecurityGroup", js.undefined)
   }
 }

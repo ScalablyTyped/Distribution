@@ -35,67 +35,47 @@ trait PopupWindowProperties extends StObject {
 }
 object PopupWindowProperties {
   
-  @scala.inline
-  def apply(): PopupWindowProperties = {
+  inline def apply(): PopupWindowProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopupWindowProperties]
   }
   
-  @scala.inline
-  implicit class PopupWindowPropertiesMutableBuilder[Self <: PopupWindowProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PopupWindowProperties](x: Self) {
     
-    @scala.inline
-    def setDimension(value: Size): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: Size): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
+    inline def setDimensionUndefined: Self = StObject.set(x, "dimension", js.undefined)
     
-    @scala.inline
-    def setOffset(value: OffsetPosition): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: OffsetPosition): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPositionType(value: String): Self = StObject.set(x, "positionType", value.asInstanceOf[js.Any])
+    inline def setPositionType(value: String): Self = StObject.set(x, "positionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionTypeUndefined: Self = StObject.set(x, "positionType", js.undefined)
+    inline def setPositionTypeUndefined: Self = StObject.set(x, "positionType", js.undefined)
     
-    @scala.inline
-    def setShowAddressBar(value: Boolean): Self = StObject.set(x, "showAddressBar", value.asInstanceOf[js.Any])
+    inline def setShowAddressBar(value: Boolean): Self = StObject.set(x, "showAddressBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAddressBarUndefined: Self = StObject.set(x, "showAddressBar", js.undefined)
+    inline def setShowAddressBarUndefined: Self = StObject.set(x, "showAddressBar", js.undefined)
     
-    @scala.inline
-    def setShowMenuBar(value: Boolean): Self = StObject.set(x, "showMenuBar", value.asInstanceOf[js.Any])
+    inline def setShowMenuBar(value: Boolean): Self = StObject.set(x, "showMenuBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMenuBarUndefined: Self = StObject.set(x, "showMenuBar", js.undefined)
+    inline def setShowMenuBarUndefined: Self = StObject.set(x, "showMenuBar", js.undefined)
     
-    @scala.inline
-    def setShowScrollBar(value: Boolean): Self = StObject.set(x, "showScrollBar", value.asInstanceOf[js.Any])
+    inline def setShowScrollBar(value: Boolean): Self = StObject.set(x, "showScrollBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowScrollBarUndefined: Self = StObject.set(x, "showScrollBar", js.undefined)
+    inline def setShowScrollBarUndefined: Self = StObject.set(x, "showScrollBar", js.undefined)
     
-    @scala.inline
-    def setShowStatusBar(value: Boolean): Self = StObject.set(x, "showStatusBar", value.asInstanceOf[js.Any])
+    inline def setShowStatusBar(value: Boolean): Self = StObject.set(x, "showStatusBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowStatusBarUndefined: Self = StObject.set(x, "showStatusBar", js.undefined)
+    inline def setShowStatusBarUndefined: Self = StObject.set(x, "showStatusBar", js.undefined)
     
-    @scala.inline
-    def setShowToolBar(value: Boolean): Self = StObject.set(x, "showToolBar", value.asInstanceOf[js.Any])
+    inline def setShowToolBar(value: Boolean): Self = StObject.set(x, "showToolBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowToolBarUndefined: Self = StObject.set(x, "showToolBar", js.undefined)
+    inline def setShowToolBarUndefined: Self = StObject.set(x, "showToolBar", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

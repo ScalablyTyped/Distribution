@@ -138,15 +138,13 @@ object mod {
   @js.native
   val UnorderedList: FC[TypographyProps] = js.native
   
-  @scala.inline
-  def isolateNotes(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isolateNotes")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def isolateNotes(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isolateNotes")(content.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("spectacle", "mdxComponentMap")
   @js.native
   val mdxComponentMap: Record[String, Element] = js.native
   
-  @scala.inline
-  def remoteNotes(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("remoteNotes")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def remoteNotes(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("remoteNotes")(content.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait BoxProps
     extends StObject
@@ -163,20 +161,16 @@ object mod {
   }
   object BoxProps {
     
-    @scala.inline
-    def apply(): BoxProps = {
+    inline def apply(): BoxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BoxProps]
     }
     
-    @scala.inline
-    implicit class BoxPropsMutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
+    extension [Self <: BoxProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -200,20 +194,16 @@ object mod {
   }
   object TypographyProps {
     
-    @scala.inline
-    def apply(): TypographyProps = {
+    inline def apply(): TypographyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypographyProps]
     }
     
-    @scala.inline
-    implicit class TypographyPropsMutableBuilder[Self <: TypographyProps] (val x: Self) extends AnyVal {
+    extension [Self <: TypographyProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

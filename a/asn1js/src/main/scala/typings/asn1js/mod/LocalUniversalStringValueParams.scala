@@ -9,8 +9,7 @@ trait LocalUniversalStringValueParams
      with LocalHexBlockParams
 object LocalUniversalStringValueParams {
   
-  @scala.inline
-  def apply(): LocalUniversalStringValueParams = {
+  inline def apply(): LocalUniversalStringValueParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalUniversalStringValueParams]
   }

@@ -18,43 +18,31 @@ trait MUIDataTableResize extends StObject {
 }
 object MUIDataTableResize {
   
-  @scala.inline
-  def apply(): MUIDataTableResize = {
+  inline def apply(): MUIDataTableResize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MUIDataTableResize]
   }
   
-  @scala.inline
-  implicit class MUIDataTableResizeMutableBuilder[Self <: MUIDataTableResize] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableResize](x: Self) {
     
-    @scala.inline
-    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setRowSelected(value: Boolean): Self = StObject.set(x, "rowSelected", value.asInstanceOf[js.Any])
+    inline def setRowSelected(value: Boolean): Self = StObject.set(x, "rowSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSelectedUndefined: Self = StObject.set(x, "rowSelected", js.undefined)
+    inline def setRowSelectedUndefined: Self = StObject.set(x, "rowSelected", js.undefined)
     
-    @scala.inline
-    def setSetResizeable(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "setResizeable", js.Any.fromFunction1(value))
+    inline def setSetResizeable(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "setResizeable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetResizeableUndefined: Self = StObject.set(x, "setResizeable", js.undefined)
+    inline def setSetResizeableUndefined: Self = StObject.set(x, "setResizeable", js.undefined)
     
-    @scala.inline
-    def setUpdateDividers(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "updateDividers", js.Any.fromFunction1(value))
+    inline def setUpdateDividers(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "updateDividers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateDividersUndefined: Self = StObject.set(x, "updateDividers", js.undefined)
+    inline def setUpdateDividersUndefined: Self = StObject.set(x, "updateDividers", js.undefined)
   }
 }

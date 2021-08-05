@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmDisplayStyle extends StObject
 object fmDisplayStyle {
   
-  @scala.inline
-  def fmDisplayStyleCheckBox: `4` = 4.asInstanceOf[`4`]
+  inline def fmDisplayStyleCheckBox: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def fmDisplayStyleCombo: `3` = 3.asInstanceOf[`3`]
+  inline def fmDisplayStyleCombo: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def fmDisplayStyleDropList: `7` = 7.asInstanceOf[`7`]
+  inline def fmDisplayStyleDropList: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def fmDisplayStyleList: `2` = 2.asInstanceOf[`2`]
+  inline def fmDisplayStyleList: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def fmDisplayStyleOptionButton: `5` = 5.asInstanceOf[`5`]
+  inline def fmDisplayStyleOptionButton: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def fmDisplayStyleText: `1` = 1.asInstanceOf[`1`]
+  inline def fmDisplayStyleText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmDisplayStyleToggle: `6` = 6.asInstanceOf[`6`]
+  inline def fmDisplayStyleToggle: `6` = 6.asInstanceOf[`6`]
 }

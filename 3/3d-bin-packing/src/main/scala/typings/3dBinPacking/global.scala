@@ -66,11 +66,11 @@ object global {
       /* CompleteClass */
       override def hit_test(obj: typings.`3dBinPacking`.boxologic.Box): Boolean = js.native
       
-      /* CompleteClass */
-      /* private */ override def hit_test_point(x: js.Any, y: js.Any, z: js.Any): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def hit_test_point(x: js.Any, y: js.Any, z: js.Any): js.Any = js.native
       
-      /* CompleteClass */
-      /* private */ override def hit_test_single(obj: js.Any): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def hit_test_single(obj: js.Any): js.Any = js.native
       
       /**
         * Whether the {@link Box} is packed into a {@link Pallet}.
@@ -160,8 +160,8 @@ object global {
         * @param dim2 Y-dimension of the orientation of the box being examined.
         * @param dim3 Z-dimension of the orientation of the box being examined.
         */
-      /* CompleteClass */
-      /* private */ override def analyze_box(
+      /* private */ /* CompleteClass */
+      override def analyze_box(
         index: js.Any,
         hmx: js.Any,
         hy: js.Any,
@@ -173,117 +173,117 @@ object global {
         dim3: js.Any
       ): js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bbfx: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bbfy: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bbfz: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bboxi: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bboxx: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bboxy: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bboxz: js.Any = js.native
       
       /**
         * The best layer, which can deduct the {@link best_solution_volume}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var best_layer: js.Any = js.native
       
       /**
         * The best orientation of the pallet, which can deduct the {@link best_solution_volume}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var best_orientation: js.Any = js.native
       
       /**
         * The best volume, fit the best utilization degree of the pallet space.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var best_solution_volume: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bfx: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bfy: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var bfz: js.Any = js.native
       
       /**
         * Boxes, trying to pack into the {@link pallet}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var box_array: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var boxi: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var boxx: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var boxy: js.Any = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var boxz: js.Any = js.native
       
       /**
         * Candidate {@link Box.layout_height layout_height} of the {@link cboxi current box}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var cbox_layout_height: js.Any = js.native
       
       /**
         * Candidate {@link Box.layout_length layout_length} of the {@link cboxi current box}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var cbox_layout_length: js.Any = js.native
       
       /**
         * Candidate {@link Box.layout_width layout_width} of the {@link cboxi current box}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var cbox_layout_width: js.Any = js.native
       
       /**
         * Index of the current {@link box}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var cboxi: js.Any = js.native
       
       /**
         * After finding each box, the candidate boxes and the condition of the layer are examined.
         */
-      /* CompleteClass */
-      /* private */ override def check_found(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def check_found(): js.Any = js.native
       
       /**
         * <p> Construct layers. </p>
         *
         * <p> Creates all possible layer heights by giving a weight value to each of them. </p>
         */
-      /* CompleteClass */
-      /* private */ override def construct_layers(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def construct_layers(): js.Any = js.native
       
       /**
         * <p> Decode data </p>
         *
         * <p> Decodes the Boxologic's optimization result data to be suitable for the Packer's own. </p>
         */
-      /* CompleteClass */
-      /* private */ override def decode(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def decode(): js.Any = js.native
       
       /**
         * <p> Encode data </p>
@@ -291,13 +291,13 @@ object global {
         * <p> Encodes {@link bws.packer Packer}'s data to be suitable for the
         * {@link boxologic Boxologic}'s parametric data. </p>
         */
-      /* CompleteClass */
-      /* private */ override def encode(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def encode(): js.Any = js.native
       
       /**
         * Whether the current packing layer is evened.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var evened: js.Any = js.native
       
       /**
@@ -312,37 +312,37 @@ object global {
         * @param hz Z-dimension of the current gap to be filled.
         * @param hmz Maximum available z-dimension to the current gap to be filled.
         */
-      /* CompleteClass */
-      /* private */ override def find_box(hmx: js.Any, hy: js.Any, hmy: js.Any, hz: js.Any, hmz: js.Any): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def find_box(hmx: js.Any, hy: js.Any, hmy: js.Any, hz: js.Any, hmz: js.Any): js.Any = js.native
       
       /**
         * Find the most proper layer height by looking at the unpacked boxes and
         * the remaining empty space available.
         */
-      /* CompleteClass */
-      /* private */ override def find_layer(thickness: js.Any): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def find_layer(thickness: js.Any): js.Any = js.native
       
       /**
         * <p> Find the first to be packed gap in the layer edge. </p>
         *
         * <p> Determine the gap with the {@link scrap_min_z smallest z} value in the current layer. </p>
         */
-      /* CompleteClass */
-      /* private */ override def find_smallest_z(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def find_smallest_z(): js.Any = js.native
       
       /**
         * Whether the utilization degree of pallet space is 100%.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var hundred_percent: js.Any = js.native
       
-      /* CompleteClass */
-      /* private */ override def inspect_validity(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def inspect_validity(): js.Any = js.native
       
       /**
         * Instances trying to put into the wrapper.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var instanceArray: js.Any = js.native
       
       /**
@@ -350,27 +350,27 @@ object global {
         *
         * @param thickness Thickness of the iterating layer.
         */
-      /* CompleteClass */
-      /* private */ override def iterate_layer(thickness: js.Any): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def iterate_layer(thickness: js.Any): js.Any = js.native
       
       /**
         * <p> Execute iterations by calling proper functions. </p>
         *
         * <p> Iterations are done and parameters of the best solution are found. </p>
         */
-      /* CompleteClass */
-      /* private */ override def iterate_orientations(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def iterate_orientations(): js.Any = js.native
       
       /**
         * Whether packing a layer is done.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var layer_done: js.Any = js.native
       
       /**
         * Key of the unevened layer in the current packing layer.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var layer_in_layer: js.Any = js.native
       
       /**
@@ -402,25 +402,25 @@ object global {
         *	<li> value: Evaluation weight value for the corresponding key. </li>
         * </ul>
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var layer_map: js.Any = js.native
       
       /**
         * Current layer's key on iteration.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var layer_thickness: js.Any = js.native
       
       /**
         * Instances failed to pack by overloading.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var leftInstances: js.Any = js.native
       
       /**
         * Little Z, gotten from {@link Scrapped.cumz cumz} in {@link min_scrap_z}
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var lilz: js.Any = js.native
       
       /**
@@ -447,19 +447,19 @@ object global {
         *
         * <p> Update the linked list and the Boxlist[] array as a box is packed. </p>
         */
-      /* CompleteClass */
-      /* private */ override def pack_layer(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def pack_layer(): js.Any = js.native
       
       /**
         * Packed (filled) {@link Pallet.layout_height layout_height} of the {@link pallet}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var packed_layout_height: js.Any = js.native
       
       /**
         * Packed {@link Pallet.vo1lume volume} of the {@lnk pallet}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var packed_volume: js.Any = js.native
       
       /**
@@ -468,13 +468,13 @@ object global {
         * <p> The {@link packing} is a flag variable for terminating iterations in
         * {@link iterate_orientations iterate_orientations()}, who deducts the best packing solution. </p>
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var packing: js.Any = js.native
       
       /**
         * Whether the best solution is deducted.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var packing_best: js.Any = js.native
       
       /**
@@ -482,25 +482,25 @@ object global {
         *
         * @see Wrapper
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var pallet: js.Any = js.native
       
       /**
         * Previous layer's key had iterated.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var pre_layer: js.Any = js.native
       
       /**
         * Remained (unfilled) {@link Pallet.layout_height layout_height} of the {@link pallet}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var remain_layout_height: js.Any = js.native
       
       /**
         * Remained (unfilled) {@link Pallet.layout_length layout_length} of the {@link pallet}.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var remain_layout_length: js.Any = js.native
       
       /**
@@ -508,8 +508,8 @@ object global {
         *
         * <p> Using the parameters found, packs the best solution found and reports. </p>
         */
-      /* CompleteClass */
-      /* private */ override def report_results(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def report_results(): js.Any = js.native
       
       /**
         * {@link List} of {@link Scrapped} instances, edges of layers under construction.
@@ -517,7 +517,7 @@ object global {
         * @see Scrapped
         * @see scrap_min_z
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var scrap_list: js.Any = js.native
       
       /**
@@ -526,25 +526,25 @@ object global {
         * @see Scrapped
         * @see scrap_list
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var scrap_min_z: js.Any = js.native
       
       /**
         * Sum of all boxes' volume.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var total_box_volume: js.Any = js.native
       
       /**
         * After packing of each box, 100% packing condition is checked.
         */
-      /* CompleteClass */
-      /* private */ override def volume_check(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def volume_check(): js.Any = js.native
       
       /**
         * A Wrapper to pack instances.
         */
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       var wrapper: js.Any = js.native
       
       /**
@@ -553,8 +553,8 @@ object global {
         * <p> Transforms the found co-ordinate system to the one entered by the user and write them to the
         * report. </p>
         */
-      /* CompleteClass */
-      /* private */ override def write_box_file(): js.Any = js.native
+      /* private */ /* CompleteClass */
+      override def write_box_file(): js.Any = js.native
     }
     
     /**
@@ -762,8 +762,8 @@ object global {
         /* CompleteClass */
         override def TAG(): String = js.native
         
-        /* CompleteClass */
-        /* private */ override def constructResult(): js.Any = js.native
+        /* private */ /* CompleteClass */
+        override def constructResult(): js.Any = js.native
         
         /**
           * @inheritdoc
@@ -793,22 +793,22 @@ object global {
         /* CompleteClass */
         override def getUtilization(): Double = js.native
         
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var instanceArray: typings.`3dBinPacking`.bws.packer.InstanceArray = js.native
         
         /* CompleteClass */
         override def less(obj: typings.`3dBinPacking`.bws.packer.GAWrapperArray): Boolean = js.native
         
-        /* CompleteClass */
+        /* private */ /* CompleteClass */
         var price: js.Any = js.native
         
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any = js.native
         
         /**
           * @brief Validity of this sequence list.
           */
-        /* CompleteClass */
+        /* private */ /* CompleteClass */
         var valid: js.Any = js.native
       }
       
@@ -904,11 +904,11 @@ object global {
         /**
           * Repeated count of the {@link instance}.
           */
-        /* CompleteClass */
+        /* private */ /* CompleteClass */
         var count: js.Any = js.native
         
-        /* CompleteClass */
-        /* private */ override def createInstance(xml: js.Any): js.Any = js.native
+        /* private */ /* CompleteClass */
+        override def createInstance(xml: js.Any): js.Any = js.native
         
         /* CompleteClass */
         override def getCount(): Double = js.native
@@ -919,7 +919,7 @@ object global {
         /**
           * A duplicated Instance.
           */
-        /* CompleteClass */
+        /* private */ /* CompleteClass */
         var instance: js.Any = js.native
         
         /* CompleteClass */
@@ -1071,13 +1071,13 @@ object global {
           *
           * @return Initial sequence list.
           */
-        /* CompleteClass */
-        /* protected */ override def initGenes(): typings.`3dBinPacking`.bws.packer.GAWrapperArray = js.native
+        /* protected */ /* CompleteClass */
+        override def initGenes(): typings.`3dBinPacking`.bws.packer.GAWrapperArray = js.native
         
         /**
           * Instances trying to pack into the wrapper.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var instanceArray: typings.`3dBinPacking`.bws.packer.InstanceArray = js.native
         
         /**
@@ -1093,8 +1093,8 @@ object global {
           * @param $wrappers Wrappers to repack.
           * @return Re-packed wrappers.
           */
-        /* CompleteClass */
-        /* protected */ override def repack($wrappers: typings.`3dBinPacking`.bws.packer.WrapperArray): typings.`3dBinPacking`.bws.packer.WrapperArray = js.native
+        /* protected */ /* CompleteClass */
+        override def repack($wrappers: typings.`3dBinPacking`.bws.packer.WrapperArray): typings.`3dBinPacking`.bws.packer.WrapperArray = js.native
         
         /**
           * @inheritdoc
@@ -1105,7 +1105,7 @@ object global {
         /**
           * Candidate wrappers who can contain instances.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var wrapperArray: typings.`3dBinPacking`.bws.packer.WrapperArray = js.native
       }
       
@@ -1150,7 +1150,7 @@ object global {
         /**
           * Form of Instances to pack.
           */
-        /* CompleteClass */
+        /* private */ /* CompleteClass */
         var instanceFormArray: js.Any = js.native
         
         /* CompleteClass */
@@ -1165,7 +1165,7 @@ object global {
         /**
           * Type of Wrappers to be used.
           */
-        /* CompleteClass */
+        /* private */ /* CompleteClass */
         var wrapperArray: js.Any = js.native
       }
       
@@ -1245,7 +1245,7 @@ object global {
         /**
           * Height of the Product, length on the Y-axis in 3D.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var height: Double = js.native
         
         /**
@@ -1257,7 +1257,7 @@ object global {
         /**
           * Length of the Product, length on the Z-axis in 3D.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var length: Double = js.native
         
         /**
@@ -1265,7 +1265,7 @@ object global {
           *
           * <p> The name must be unique because a name identifies a {@link Product}. </p>
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var name: String = js.native
         
         /**
@@ -1301,12 +1301,11 @@ object global {
         /**
           * Width of the Product, length on the X-axis in 3D.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var width: Double = js.native
       }
       
-      @scala.inline
-      def Test(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_Test")().asInstanceOf[Unit]
+      inline def Test(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_Test")().asInstanceOf[Unit]
       
       /**
         * <p> Wrap represents an act wrap(ping). </p>
@@ -1405,8 +1404,8 @@ object global {
           *
           * @param type Type of contained Instance's type.
           */
-        /* CompleteClass */
-        /* protected */ override def createInstance(`type`: String): Instance = js.native
+        /* protected */ /* CompleteClass */
+        override def createInstance(`type`: String): Instance = js.native
         
         /**
           * @brief Estimate orientation by given size.
@@ -1481,13 +1480,13 @@ object global {
         /**
           * An instance wrapped into the {@link wrapper}.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var instance: Instance = js.native
         
         /**
           * Placement orientation of wrapped {@link instance}.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var orientation: Double = js.native
         
         /**
@@ -1517,25 +1516,25 @@ object global {
         /**
           * A wrapper wrapping the {@link instance}.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var wrapper: typings.`3dBinPacking`.bws.packer.Wrapper = js.native
         
         /**
           * Coordinate-X of the instance placement in the wrapper.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var x: Double = js.native
         
         /**
           * Coordinate-Y of the instance placement in the wrapper.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var y: Double = js.native
         
         /**
           * Coordinate-Z of the instance placement in the wrapper.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var z: Double = js.native
       }
       
@@ -1741,7 +1740,7 @@ object global {
         /**
           * Height of the Wrapper, length on the Y-axis in 3D.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var height: Double = js.native
         
         /**
@@ -1753,7 +1752,7 @@ object global {
         /**
           * Length of the Wrapper, length on the Z-axis in 3D.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var length: Double = js.native
         
         /**
@@ -1761,13 +1760,13 @@ object global {
           *
           * <p> The name represents a type of Wrapper and identifies the Wrapper. </p>
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var name: String = js.native
         
         /**
           * Price, cost of using an Wrapper.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var price: Double = js.native
         
         /**
@@ -1812,7 +1811,7 @@ object global {
           * <p> The thickness reduces each dimension's containable size (dimension - 2*thickness),
           * so finally, it reduces total containable volume (-8 * thickness^3). </p>
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var thickness: Double = js.native
         
         /**
@@ -1824,7 +1823,7 @@ object global {
         /**
           * Width of the Wrapper, length on the X-axis in 3D.
           */
-        /* CompleteClass */
+        /* protected */ /* CompleteClass */
         var width: Double = js.native
       }
       

@@ -25,25 +25,19 @@ trait NumberFormatInfoData extends StObject {
 }
 object NumberFormatInfoData {
   
-  @scala.inline
-  def apply(): NumberFormatInfoData = {
+  inline def apply(): NumberFormatInfoData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumberFormatInfoData]
   }
   
-  @scala.inline
-  implicit class NumberFormatInfoDataMutableBuilder[Self <: NumberFormatInfoData] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormatInfoData](x: Self) {
     
-    @scala.inline
-    def setNumberDecimalSeparator(value: String): Self = StObject.set(x, "numberDecimalSeparator", value.asInstanceOf[js.Any])
+    inline def setNumberDecimalSeparator(value: String): Self = StObject.set(x, "numberDecimalSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberDecimalSeparatorUndefined: Self = StObject.set(x, "numberDecimalSeparator", js.undefined)
+    inline def setNumberDecimalSeparatorUndefined: Self = StObject.set(x, "numberDecimalSeparator", js.undefined)
     
-    @scala.inline
-    def setNumberGroupSeparator(value: String): Self = StObject.set(x, "numberGroupSeparator", value.asInstanceOf[js.Any])
+    inline def setNumberGroupSeparator(value: String): Self = StObject.set(x, "numberGroupSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberGroupSeparatorUndefined: Self = StObject.set(x, "numberGroupSeparator", js.undefined)
+    inline def setNumberGroupSeparatorUndefined: Self = StObject.set(x, "numberGroupSeparator", js.undefined)
   }
 }

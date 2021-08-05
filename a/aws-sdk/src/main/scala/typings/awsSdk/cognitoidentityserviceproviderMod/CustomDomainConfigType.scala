@@ -13,16 +13,13 @@ trait CustomDomainConfigType extends StObject {
 }
 object CustomDomainConfigType {
   
-  @scala.inline
-  def apply(CertificateArn: ArnType): CustomDomainConfigType = {
+  inline def apply(CertificateArn: ArnType): CustomDomainConfigType = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDomainConfigType]
   }
   
-  @scala.inline
-  implicit class CustomDomainConfigTypeMutableBuilder[Self <: CustomDomainConfigType] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDomainConfigType](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: ArnType): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: ArnType): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
   }
 }

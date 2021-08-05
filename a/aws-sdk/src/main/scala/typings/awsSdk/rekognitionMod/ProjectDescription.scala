@@ -23,31 +23,23 @@ trait ProjectDescription extends StObject {
 }
 object ProjectDescription {
   
-  @scala.inline
-  def apply(): ProjectDescription = {
+  inline def apply(): ProjectDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectDescription]
   }
   
-  @scala.inline
-  implicit class ProjectDescriptionMutableBuilder[Self <: ProjectDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectDescription](x: Self) {
     
-    @scala.inline
-    def setCreationTimestamp(value: DateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: DateTime): Self = StObject.set(x, "CreationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "CreationTimestamp", js.undefined)
     
-    @scala.inline
-    def setProjectArn(value: ProjectArn): Self = StObject.set(x, "ProjectArn", value.asInstanceOf[js.Any])
+    inline def setProjectArn(value: ProjectArn): Self = StObject.set(x, "ProjectArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectArnUndefined: Self = StObject.set(x, "ProjectArn", js.undefined)
+    inline def setProjectArnUndefined: Self = StObject.set(x, "ProjectArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ProjectStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ProjectStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

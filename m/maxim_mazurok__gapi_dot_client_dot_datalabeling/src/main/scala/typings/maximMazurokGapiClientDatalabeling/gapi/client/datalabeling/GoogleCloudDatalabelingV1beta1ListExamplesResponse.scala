@@ -14,28 +14,21 @@ trait GoogleCloudDatalabelingV1beta1ListExamplesResponse extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ListExamplesResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ListExamplesResponse = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ListExamplesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ListExamplesResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ListExamplesResponseMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ListExamplesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ListExamplesResponse](x: Self) {
     
-    @scala.inline
-    def setExamples(value: js.Array[GoogleCloudDatalabelingV1beta1Example]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    inline def setExamples(value: js.Array[GoogleCloudDatalabelingV1beta1Example]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    @scala.inline
-    def setExamplesVarargs(value: GoogleCloudDatalabelingV1beta1Example*): Self = StObject.set(x, "examples", js.Array(value :_*))
+    inline def setExamplesVarargs(value: GoogleCloudDatalabelingV1beta1Example*): Self = StObject.set(x, "examples", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

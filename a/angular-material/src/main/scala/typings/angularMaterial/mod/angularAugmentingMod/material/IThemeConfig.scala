@@ -20,8 +20,7 @@ trait IThemeConfig extends StObject {
 }
 object IThemeConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alwaysWatchTheme: Boolean,
     defaultTheme: String,
     disableTheming: Boolean,
@@ -33,28 +32,20 @@ object IThemeConfig {
     __obj.asInstanceOf[IThemeConfig]
   }
   
-  @scala.inline
-  implicit class IThemeConfigMutableBuilder[Self <: IThemeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IThemeConfig](x: Self) {
     
-    @scala.inline
-    def setAlwaysWatchTheme(value: Boolean): Self = StObject.set(x, "alwaysWatchTheme", value.asInstanceOf[js.Any])
+    inline def setAlwaysWatchTheme(value: Boolean): Self = StObject.set(x, "alwaysWatchTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTheme(value: String): Self = StObject.set(x, "defaultTheme", value.asInstanceOf[js.Any])
+    inline def setDefaultTheme(value: String): Self = StObject.set(x, "defaultTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableTheming(value: Boolean): Self = StObject.set(x, "disableTheming", value.asInstanceOf[js.Any])
+    inline def setDisableTheming(value: Boolean): Self = StObject.set(x, "disableTheming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerateOnDemand(value: Boolean): Self = StObject.set(x, "generateOnDemand", value.asInstanceOf[js.Any])
+    inline def setGenerateOnDemand(value: Boolean): Self = StObject.set(x, "generateOnDemand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredStyles(value: js.Array[String]): Self = StObject.set(x, "registeredStyles", value.asInstanceOf[js.Any])
+    inline def setRegisteredStyles(value: js.Array[String]): Self = StObject.set(x, "registeredStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredStylesVarargs(value: String*): Self = StObject.set(x, "registeredStyles", js.Array(value :_*))
+    inline def setRegisteredStylesVarargs(value: String*): Self = StObject.set(x, "registeredStyles", js.Array(value :_*))
   }
 }

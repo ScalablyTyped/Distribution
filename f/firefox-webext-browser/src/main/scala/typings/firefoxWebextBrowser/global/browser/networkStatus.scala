@@ -21,8 +21,7 @@ object networkStatus {
   
   /* networkStatus functions */
   /** Returns the $(ref:NetworkLinkInfo} of the current network connection. */
-  @scala.inline
-  def getLinkInfo(): js.Promise[NetworkLinkInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkInfo")().asInstanceOf[js.Promise[NetworkLinkInfo]]
+  inline def getLinkInfo(): js.Promise[NetworkLinkInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkInfo")().asInstanceOf[js.Promise[NetworkLinkInfo]]
   
   /* networkStatus events */
   /** Fired when the network connection state changes. */

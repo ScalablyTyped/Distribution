@@ -12,22 +12,15 @@ object isMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isDefined[T](): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")().asInstanceOf[/* is T */ Boolean]
-  @scala.inline
-  def isDefined[T](x: T): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(x.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
+  inline def isDefined[T](): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")().asInstanceOf[/* is T */ Boolean]
+  inline def isDefined[T](x: T): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(x.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
   
-  @scala.inline
-  def isGuard(node: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGuard")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isGuard(node: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGuard")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNotAGuard(node: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotAGuard")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNotAGuard(node: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotAGuard")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")().asInstanceOf[Boolean]
-  @scala.inline
-  def isVisible(node: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isVisible(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")().asInstanceOf[Boolean]
+  inline def isVisible(node: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisible")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def notHiddenInput(node: HTMLInputElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("notHiddenInput")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def notHiddenInput(node: HTMLInputElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("notHiddenInput")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

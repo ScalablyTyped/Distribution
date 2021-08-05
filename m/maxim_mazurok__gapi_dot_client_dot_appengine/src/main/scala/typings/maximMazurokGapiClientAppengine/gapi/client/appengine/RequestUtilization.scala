@@ -14,25 +14,19 @@ trait RequestUtilization extends StObject {
 }
 object RequestUtilization {
   
-  @scala.inline
-  def apply(): RequestUtilization = {
+  inline def apply(): RequestUtilization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestUtilization]
   }
   
-  @scala.inline
-  implicit class RequestUtilizationMutableBuilder[Self <: RequestUtilization] (val x: Self) extends AnyVal {
+  extension [Self <: RequestUtilization](x: Self) {
     
-    @scala.inline
-    def setTargetConcurrentRequests(value: Double): Self = StObject.set(x, "targetConcurrentRequests", value.asInstanceOf[js.Any])
+    inline def setTargetConcurrentRequests(value: Double): Self = StObject.set(x, "targetConcurrentRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetConcurrentRequestsUndefined: Self = StObject.set(x, "targetConcurrentRequests", js.undefined)
+    inline def setTargetConcurrentRequestsUndefined: Self = StObject.set(x, "targetConcurrentRequests", js.undefined)
     
-    @scala.inline
-    def setTargetRequestCountPerSecond(value: Double): Self = StObject.set(x, "targetRequestCountPerSecond", value.asInstanceOf[js.Any])
+    inline def setTargetRequestCountPerSecond(value: Double): Self = StObject.set(x, "targetRequestCountPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRequestCountPerSecondUndefined: Self = StObject.set(x, "targetRequestCountPerSecond", js.undefined)
+    inline def setTargetRequestCountPerSecondUndefined: Self = StObject.set(x, "targetRequestCountPerSecond", js.undefined)
   }
 }

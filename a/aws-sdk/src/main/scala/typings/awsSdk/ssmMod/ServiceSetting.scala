@@ -38,49 +38,35 @@ trait ServiceSetting extends StObject {
 }
 object ServiceSetting {
   
-  @scala.inline
-  def apply(): ServiceSetting = {
+  inline def apply(): ServiceSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceSetting]
   }
   
-  @scala.inline
-  implicit class ServiceSettingMutableBuilder[Self <: ServiceSetting] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceSetting](x: Self) {
     
-    @scala.inline
-    def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: DateTime): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: DateTime): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setLastModifiedUser(value: String): Self = StObject.set(x, "LastModifiedUser", value.asInstanceOf[js.Any])
+    inline def setLastModifiedUser(value: String): Self = StObject.set(x, "LastModifiedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUserUndefined: Self = StObject.set(x, "LastModifiedUser", js.undefined)
+    inline def setLastModifiedUserUndefined: Self = StObject.set(x, "LastModifiedUser", js.undefined)
     
-    @scala.inline
-    def setSettingId(value: ServiceSettingId): Self = StObject.set(x, "SettingId", value.asInstanceOf[js.Any])
+    inline def setSettingId(value: ServiceSettingId): Self = StObject.set(x, "SettingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingIdUndefined: Self = StObject.set(x, "SettingId", js.undefined)
+    inline def setSettingIdUndefined: Self = StObject.set(x, "SettingId", js.undefined)
     
-    @scala.inline
-    def setSettingValue(value: ServiceSettingValue): Self = StObject.set(x, "SettingValue", value.asInstanceOf[js.Any])
+    inline def setSettingValue(value: ServiceSettingValue): Self = StObject.set(x, "SettingValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingValueUndefined: Self = StObject.set(x, "SettingValue", js.undefined)
+    inline def setSettingValueUndefined: Self = StObject.set(x, "SettingValue", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

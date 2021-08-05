@@ -35,83 +35,58 @@ object anon {
   }
   object Autofocus {
     
-    @scala.inline
-    def apply(handleNewUserMessage: String => Unit): Autofocus = {
+    inline def apply(handleNewUserMessage: String => Unit): Autofocus = {
       val __obj = js.Dynamic.literal(handleNewUserMessage = js.Any.fromFunction1(handleNewUserMessage))
       __obj.asInstanceOf[Autofocus]
     }
     
-    @scala.inline
-    implicit class AutofocusMutableBuilder[Self <: Autofocus] (val x: Self) extends AnyVal {
+    extension [Self <: Autofocus](x: Self) {
       
-      @scala.inline
-      def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
+      inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
+      inline def setAutofocusUndefined: Self = StObject.set(x, "autofocus", js.undefined)
       
-      @scala.inline
-      def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setCustomLauncher(value: ComponentType[js.Function0[Unit]]): Self = StObject.set(x, "customLauncher", value.asInstanceOf[js.Any])
+      inline def setCustomLauncher(value: ComponentType[js.Function0[Unit]]): Self = StObject.set(x, "customLauncher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomLauncherUndefined: Self = StObject.set(x, "customLauncher", js.undefined)
+      inline def setCustomLauncherUndefined: Self = StObject.set(x, "customLauncher", js.undefined)
       
-      @scala.inline
-      def setFullScreenMode(value: Boolean): Self = StObject.set(x, "fullScreenMode", value.asInstanceOf[js.Any])
+      inline def setFullScreenMode(value: Boolean): Self = StObject.set(x, "fullScreenMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullScreenModeUndefined: Self = StObject.set(x, "fullScreenMode", js.undefined)
+      inline def setFullScreenModeUndefined: Self = StObject.set(x, "fullScreenMode", js.undefined)
       
-      @scala.inline
-      def setHandleNewUserMessage(value: String => Unit): Self = StObject.set(x, "handleNewUserMessage", js.Any.fromFunction1(value))
+      inline def setHandleNewUserMessage(value: String => Unit): Self = StObject.set(x, "handleNewUserMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleQuickButtonClicked(value: /* value */ String => Unit): Self = StObject.set(x, "handleQuickButtonClicked", js.Any.fromFunction1(value))
+      inline def setHandleQuickButtonClicked(value: /* value */ String => Unit): Self = StObject.set(x, "handleQuickButtonClicked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleQuickButtonClickedUndefined: Self = StObject.set(x, "handleQuickButtonClicked", js.undefined)
+      inline def setHandleQuickButtonClickedUndefined: Self = StObject.set(x, "handleQuickButtonClicked", js.undefined)
       
-      @scala.inline
-      def setProfileAvatar(value: String): Self = StObject.set(x, "profileAvatar", value.asInstanceOf[js.Any])
+      inline def setProfileAvatar(value: String): Self = StObject.set(x, "profileAvatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileAvatarUndefined: Self = StObject.set(x, "profileAvatar", js.undefined)
+      inline def setProfileAvatarUndefined: Self = StObject.set(x, "profileAvatar", js.undefined)
       
-      @scala.inline
-      def setSenderPlaceHolder(value: String): Self = StObject.set(x, "senderPlaceHolder", value.asInstanceOf[js.Any])
+      inline def setSenderPlaceHolder(value: String): Self = StObject.set(x, "senderPlaceHolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderPlaceHolderUndefined: Self = StObject.set(x, "senderPlaceHolder", js.undefined)
+      inline def setSenderPlaceHolderUndefined: Self = StObject.set(x, "senderPlaceHolder", js.undefined)
       
-      @scala.inline
-      def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+      inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+      inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAvatar(value: String): Self = StObject.set(x, "titleAvatar", value.asInstanceOf[js.Any])
+      inline def setTitleAvatar(value: String): Self = StObject.set(x, "titleAvatar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleAvatarUndefined: Self = StObject.set(x, "titleAvatar", js.undefined)
+      inline def setTitleAvatarUndefined: Self = StObject.set(x, "titleAvatar", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -123,20 +98,16 @@ object anon {
   }
   object Label {
     
-    @scala.inline
-    def apply(label: String, value: String): Label = {
+    inline def apply(label: String, value: String): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

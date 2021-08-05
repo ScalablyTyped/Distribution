@@ -48,64 +48,45 @@ trait IdentityProviderType extends StObject {
 }
 object IdentityProviderType {
   
-  @scala.inline
-  def apply(): IdentityProviderType = {
+  inline def apply(): IdentityProviderType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentityProviderType]
   }
   
-  @scala.inline
-  implicit class IdentityProviderTypeMutableBuilder[Self <: IdentityProviderType] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityProviderType](x: Self) {
     
-    @scala.inline
-    def setAttributeMapping(value: AttributeMappingType): Self = StObject.set(x, "AttributeMapping", value.asInstanceOf[js.Any])
+    inline def setAttributeMapping(value: AttributeMappingType): Self = StObject.set(x, "AttributeMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeMappingUndefined: Self = StObject.set(x, "AttributeMapping", js.undefined)
+    inline def setAttributeMappingUndefined: Self = StObject.set(x, "AttributeMapping", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setIdpIdentifiers(value: IdpIdentifiersListType): Self = StObject.set(x, "IdpIdentifiers", value.asInstanceOf[js.Any])
+    inline def setIdpIdentifiers(value: IdpIdentifiersListType): Self = StObject.set(x, "IdpIdentifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdpIdentifiersUndefined: Self = StObject.set(x, "IdpIdentifiers", js.undefined)
+    inline def setIdpIdentifiersUndefined: Self = StObject.set(x, "IdpIdentifiers", js.undefined)
     
-    @scala.inline
-    def setIdpIdentifiersVarargs(value: IdpIdentifierType*): Self = StObject.set(x, "IdpIdentifiers", js.Array(value :_*))
+    inline def setIdpIdentifiersVarargs(value: IdpIdentifierType*): Self = StObject.set(x, "IdpIdentifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setProviderDetails(value: ProviderDetailsType): Self = StObject.set(x, "ProviderDetails", value.asInstanceOf[js.Any])
+    inline def setProviderDetails(value: ProviderDetailsType): Self = StObject.set(x, "ProviderDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderDetailsUndefined: Self = StObject.set(x, "ProviderDetails", js.undefined)
+    inline def setProviderDetailsUndefined: Self = StObject.set(x, "ProviderDetails", js.undefined)
     
-    @scala.inline
-    def setProviderName(value: ProviderNameType): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
+    inline def setProviderName(value: ProviderNameType): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
+    inline def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
     
-    @scala.inline
-    def setProviderType(value: IdentityProviderTypeType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
+    inline def setProviderType(value: IdentityProviderTypeType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
+    inline def setProviderTypeUndefined: Self = StObject.set(x, "ProviderType", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
+    inline def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
   }
 }

@@ -151,73 +151,51 @@ trait BorderColor0 extends StObject {
 }
 object BorderColor0 {
   
-  @scala.inline
-  def apply(): BorderColor0 = {
+  inline def apply(): BorderColor0 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderColor0]
   }
   
-  @scala.inline
-  implicit class BorderColor0MutableBuilder[Self <: BorderColor0] (val x: Self) extends AnyVal {
+  extension [Self <: BorderColor0](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor0(value: String): Self = StObject.set(x, "borderColor0", value.asInstanceOf[js.Any])
+    inline def setBorderColor0(value: String): Self = StObject.set(x, "borderColor0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor0Undefined: Self = StObject.set(x, "borderColor0", js.undefined)
+    inline def setBorderColor0Undefined: Self = StObject.set(x, "borderColor0", js.undefined)
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
-    @scala.inline
-    def setColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor0(value: String): Self = StObject.set(x, "color0", value.asInstanceOf[js.Any])
+    inline def setColor0(value: String): Self = StObject.set(x, "color0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor0Undefined: Self = StObject.set(x, "color0", js.undefined)
+    inline def setColor0Undefined: Self = StObject.set(x, "color0", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
+    inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
+    inline def setShadowBlurUndefined: Self = StObject.set(x, "shadowBlur", js.undefined)
     
-    @scala.inline
-    def setShadowColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
-    @scala.inline
-    def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
+    inline def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
+    inline def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
     
-    @scala.inline
-    def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
+    inline def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
+    inline def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
   }
 }

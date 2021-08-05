@@ -13,25 +13,19 @@ trait OffCanvasOptions extends StObject {
 }
 object OffCanvasOptions {
   
-  @scala.inline
-  def apply(): OffCanvasOptions = {
+  inline def apply(): OffCanvasOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OffCanvasOptions]
   }
   
-  @scala.inline
-  implicit class OffCanvasOptionsMutableBuilder[Self <: OffCanvasOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OffCanvasOptions](x: Self) {
     
-    @scala.inline
-    def setClose_on_click(value: Boolean): Self = StObject.set(x, "close_on_click", value.asInstanceOf[js.Any])
+    inline def setClose_on_click(value: Boolean): Self = StObject.set(x, "close_on_click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose_on_clickUndefined: Self = StObject.set(x, "close_on_click", js.undefined)
+    inline def setClose_on_clickUndefined: Self = StObject.set(x, "close_on_click", js.undefined)
     
-    @scala.inline
-    def setOpen_method(value: String): Self = StObject.set(x, "open_method", value.asInstanceOf[js.Any])
+    inline def setOpen_method(value: String): Self = StObject.set(x, "open_method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen_methodUndefined: Self = StObject.set(x, "open_method", js.undefined)
+    inline def setOpen_methodUndefined: Self = StObject.set(x, "open_method", js.undefined)
   }
 }

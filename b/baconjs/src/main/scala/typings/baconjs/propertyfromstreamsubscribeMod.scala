@@ -13,6 +13,5 @@ object propertyfromstreamsubscribeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](desc: Desc, subscribe: Subscribe[V]): Property[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(desc.asInstanceOf[js.Any], subscribe.asInstanceOf[js.Any])).asInstanceOf[Property[V]]
+  inline def default[V](desc: Desc, subscribe: Subscribe[V]): Property[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(desc.asInstanceOf[js.Any], subscribe.asInstanceOf[js.Any])).asInstanceOf[Property[V]]
 }

@@ -36,35 +36,26 @@ object panelPropsMod {
   }
   object IPanel {
     
-    @scala.inline
-    def apply[P](component: ComponentType[P & IPanelProps]): IPanel[P] = {
+    inline def apply[P](component: ComponentType[P & IPanelProps]): IPanel[P] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPanel[P]]
     }
     
-    @scala.inline
-    implicit class IPanelMutableBuilder[Self <: IPanel[?], P] (val x: Self & IPanel[P]) extends AnyVal {
+    extension [Self <: IPanel[?], P](x: Self & IPanel[P]) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[P & IPanelProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[P & IPanelProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
+      inline def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
+      inline def setHtmlTitleUndefined: Self = StObject.set(x, "htmlTitle", js.undefined)
       
-      @scala.inline
-      def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -86,20 +77,16 @@ object panelPropsMod {
   }
   object IPanelProps {
     
-    @scala.inline
-    def apply(closePanel: () => Unit, openPanel: IPanel[js.Any] => Unit): IPanelProps = {
+    inline def apply(closePanel: () => Unit, openPanel: IPanel[js.Any] => Unit): IPanelProps = {
       val __obj = js.Dynamic.literal(closePanel = js.Any.fromFunction0(closePanel), openPanel = js.Any.fromFunction1(openPanel))
       __obj.asInstanceOf[IPanelProps]
     }
     
-    @scala.inline
-    implicit class IPanelPropsMutableBuilder[Self <: IPanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: IPanelProps](x: Self) {
       
-      @scala.inline
-      def setClosePanel(value: () => Unit): Self = StObject.set(x, "closePanel", js.Any.fromFunction0(value))
+      inline def setClosePanel(value: () => Unit): Self = StObject.set(x, "closePanel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpenPanel(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "openPanel", js.Any.fromFunction1(value))
+      inline def setOpenPanel(value: IPanel[js.Any] => Unit): Self = StObject.set(x, "openPanel", js.Any.fromFunction1(value))
     }
   }
 }

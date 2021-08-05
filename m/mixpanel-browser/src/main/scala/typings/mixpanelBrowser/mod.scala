@@ -24,176 +24,106 @@ object mod {
   @js.native
   val default: Mixpanel = js.native
   
-  @scala.inline
-  def addGroup(group_key: String, group_id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_group")(group_key.asInstanceOf[js.Any], group_id.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addGroup(group_key: String, group_id: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_group")(group_key.asInstanceOf[js.Any], group_id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addGroup(group_key: String, group_id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_group")(group_key.asInstanceOf[js.Any], group_id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addGroup(group_key: String, group_id: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add_group")(group_key.asInstanceOf[js.Any], group_id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def alias(alias: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def alias(alias: String, original: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alias")(alias.asInstanceOf[js.Any], original.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def alias(alias: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alias")(alias.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def alias(alias: String, original: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alias")(alias.asInstanceOf[js.Any], original.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearOptInOutTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear_opt_in_out_tracking")().asInstanceOf[Unit]
-  @scala.inline
-  def clearOptInOutTracking(options: PartialClearOptOutInOutOp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear_opt_in_out_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearOptInOutTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear_opt_in_out_tracking")().asInstanceOf[Unit]
+  inline def clearOptInOutTracking(options: PartialClearOptOutInOutOp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear_opt_in_out_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
-  @scala.inline
-  def disable(events: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")(events.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
+  inline def disable(events: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")(events.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_config")().asInstanceOf[js.Any]
-  @scala.inline
-  def getConfig(prop_name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_config")(prop_name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_config")().asInstanceOf[js.Any]
+  inline def getConfig(prop_name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_config")(prop_name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getDistinctId(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_distinct_id")().asInstanceOf[js.Any]
+  inline def getDistinctId(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_distinct_id")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def getGroup(group_key: String, group_id: String): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get_group")(group_key.asInstanceOf[js.Any], group_id.asInstanceOf[js.Any])).asInstanceOf[Group]
+  inline def getGroup(group_key: String, group_id: String): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get_group")(group_key.asInstanceOf[js.Any], group_id.asInstanceOf[js.Any])).asInstanceOf[Group]
   
-  @scala.inline
-  def getProperty(property_name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property")(property_name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getProperty(property_name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_property")(property_name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def hasOptedInTracking(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_in_tracking")().asInstanceOf[Boolean]
-  @scala.inline
-  def hasOptedInTracking(options: PartialHasOptedInOutOptio): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_in_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasOptedInTracking(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_in_tracking")().asInstanceOf[Boolean]
+  inline def hasOptedInTracking(options: PartialHasOptedInOutOptio): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_in_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def hasOptedOutTracking(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_out_tracking")().asInstanceOf[Boolean]
-  @scala.inline
-  def hasOptedOutTracking(options: PartialHasOptedInOutOptio): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_out_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasOptedOutTracking(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_out_tracking")().asInstanceOf[Boolean]
+  inline def hasOptedOutTracking(options: PartialHasOptedInOutOptio): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has_opted_out_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def identify(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")().asInstanceOf[js.Any]
-  @scala.inline
-  def identify(unique_id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(unique_id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def identify(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")().asInstanceOf[js.Any]
+  inline def identify(unique_id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(unique_id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def init(token: String): Mixpanel = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any]).asInstanceOf[Mixpanel]
-  @scala.inline
-  def init(token: String, config: Unit, name: String): Mixpanel = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any], config.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Mixpanel]
-  @scala.inline
-  def init(token: String, config: PartialConfigApihost): Mixpanel = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Mixpanel]
-  @scala.inline
-  def init(token: String, config: PartialConfigApihost, name: String): Mixpanel = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any], config.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Mixpanel]
+  inline def init(token: String): Mixpanel = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any]).asInstanceOf[Mixpanel]
+  inline def init(token: String, config: Unit, name: String): Mixpanel = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any], config.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Mixpanel]
+  inline def init(token: String, config: PartialConfigApihost): Mixpanel = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Mixpanel]
+  inline def init(token: String, config: PartialConfigApihost, name: String): Mixpanel = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(token.asInstanceOf[js.Any], config.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Mixpanel]
   
-  @scala.inline
-  def optInTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_in_tracking")().asInstanceOf[Unit]
-  @scala.inline
-  def optInTracking(options: PartialInTrackingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_in_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def optInTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_in_tracking")().asInstanceOf[Unit]
+  inline def optInTracking(options: PartialInTrackingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_in_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def optOutTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_out_tracking")().asInstanceOf[Unit]
-  @scala.inline
-  def optOutTracking(options: PartialOutTrackingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_out_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def optOutTracking(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_out_tracking")().asInstanceOf[Unit]
+  inline def optOutTracking(options: PartialOutTrackingOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("opt_out_tracking")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("mixpanel-browser", "people")
   @js.native
   val people: People_ = js.native
   
-  @scala.inline
-  def push(item: PushItem): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def push(item: PushItem): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def register(props: Dict): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def register(props: Dict, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(props: Dict): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def register(props: Dict, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(props.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerOnce(props: Dict): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def registerOnce(props: Dict, default_value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def registerOnce(props: Dict, default_value: js.Any, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def registerOnce(props: Dict, default_value: Unit, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerOnce(props: Dict): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerOnce(props: Dict, default_value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerOnce(props: Dict, default_value: js.Any, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerOnce(props: Dict, default_value: Unit, days: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register_once")(props.asInstanceOf[js.Any], default_value.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeGroup(group_key: String, group_ids: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeGroup(group_key: String, group_ids: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeGroup(group_key: String, group_ids: js.Array[Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeGroup(group_key: String, group_ids: js.Array[Double | String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeGroup(group_key: String, group_ids: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def removeGroup(group_key: String, group_ids: Double, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeGroup(group_key: String, group_ids: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeGroup(group_key: String, group_ids: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeGroup(group_key: String, group_ids: js.Array[Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeGroup(group_key: String, group_ids: js.Array[Double | String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeGroup(group_key: String, group_ids: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def removeGroup(group_key: String, group_ids: Double, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
   
-  @scala.inline
-  def setConfig(config: PartialConfigApihost): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_config")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setConfig(config: PartialConfigApihost): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set_config")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setGroup(group_key: String, group_ids: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setGroup(group_key: String, group_ids: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setGroup(group_key: String, group_ids: js.Array[Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setGroup(group_key: String, group_ids: js.Array[Double | String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setGroup(group_key: String, group_ids: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def setGroup(group_key: String, group_ids: Double, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setGroup(group_key: String, group_ids: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setGroup(group_key: String, group_ids: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setGroup(group_key: String, group_ids: js.Array[Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setGroup(group_key: String, group_ids: js.Array[Double | String], callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setGroup(group_key: String, group_ids: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setGroup(group_key: String, group_ids: Double, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_group")(group_key.asInstanceOf[js.Any], group_ids.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def timeEvent(event_name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("time_event")(event_name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def timeEvent(event_name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("time_event")(event_name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def track(event_name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Unit, optionsOrCallback: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Unit, optionsOrCallback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Unit, optionsOrCallback: Callback, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Unit, optionsOrCallback: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Unit, optionsOrCallback: RequestOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Dict, optionsOrCallback: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Dict, optionsOrCallback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Dict, optionsOrCallback: Callback, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Unit, optionsOrCallback: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Unit, optionsOrCallback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Unit, optionsOrCallback: Callback, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Unit, optionsOrCallback: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Unit, optionsOrCallback: RequestOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Dict, optionsOrCallback: Unit, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Dict, optionsOrCallback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Dict, optionsOrCallback: Callback, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def track(event_name: String, properties: Dict, optionsOrCallback: RequestOptions, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], optionsOrCallback.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def trackForms(query: Query, event_name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_forms")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def trackForms(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_forms")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def trackForms(query: Query, event_name: String, properties: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_forms")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackForms(query: Query, event_name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_forms")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackForms(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_forms")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackForms(query: Query, event_name: String, properties: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_forms")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def trackLinks(query: Query, event_name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_links")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def trackLinks(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_links")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def trackLinks(query: Query, event_name: String, properties: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_links")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackLinks(query: Query, event_name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_links")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackLinks(query: Query, event_name: String, properties: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_links")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackLinks(query: Query, event_name: String, properties: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_links")(query.asInstanceOf[js.Any], event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def trackWithGroups(event_name: String, properties: Dict, groups: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_with_groups")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def trackWithGroups(event_name: String, properties: Dict, groups: Dict, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_with_groups")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackWithGroups(event_name: String, properties: Dict, groups: Dict): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_with_groups")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def trackWithGroups(event_name: String, properties: Dict, groups: Dict, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("track_with_groups")(event_name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def unregister(property: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(property.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unregister(property: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(property.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Callback = js.Function1[/* response */ Response, Unit]
   
@@ -209,8 +139,7 @@ object mod {
   }
   object ClearOptOutInOutOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cookie_expiration: Double,
       cookie_prefix: String,
       cross_subdomain_cookie: Boolean,
@@ -221,17 +150,13 @@ object mod {
       __obj.asInstanceOf[ClearOptOutInOutOptions]
     }
     
-    @scala.inline
-    implicit class ClearOptOutInOutOptionsMutableBuilder[Self <: ClearOptOutInOutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClearOptOutInOutOptions](x: Self) {
       
-      @scala.inline
-      def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
+      inline def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCross_subdomain_cookie(value: Boolean): Self = StObject.set(x, "cross_subdomain_cookie", value.asInstanceOf[js.Any])
+      inline def setCross_subdomain_cookie(value: Boolean): Self = StObject.set(x, "cross_subdomain_cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure_cookie(value: Boolean): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
+      inline def setSecure_cookie(value: Boolean): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
     }
   }
   
@@ -321,8 +246,7 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       api_host: String,
       api_method: String,
       api_transport: String,
@@ -369,134 +293,91 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setApi_host(value: String): Self = StObject.set(x, "api_host", value.asInstanceOf[js.Any])
+      inline def setApi_host(value: String): Self = StObject.set(x, "api_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_method(value: String): Self = StObject.set(x, "api_method", value.asInstanceOf[js.Any])
+      inline def setApi_method(value: String): Self = StObject.set(x, "api_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_transport(value: String): Self = StObject.set(x, "api_transport", value.asInstanceOf[js.Any])
+      inline def setApi_transport(value: String): Self = StObject.set(x, "api_transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApp_host(value: String): Self = StObject.set(x, "app_host", value.asInstanceOf[js.Any])
+      inline def setApp_host(value: String): Self = StObject.set(x, "app_host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutotrack(value: Boolean): Self = StObject.set(x, "autotrack", value.asInstanceOf[js.Any])
+      inline def setAutotrack(value: Boolean): Self = StObject.set(x, "autotrack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatch_flush_interval_ms(value: Double): Self = StObject.set(x, "batch_flush_interval_ms", value.asInstanceOf[js.Any])
+      inline def setBatch_flush_interval_ms(value: Double): Self = StObject.set(x, "batch_flush_interval_ms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatch_request_timeout_ms(value: Double): Self = StObject.set(x, "batch_request_timeout_ms", value.asInstanceOf[js.Any])
+      inline def setBatch_request_timeout_ms(value: Double): Self = StObject.set(x, "batch_request_timeout_ms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatch_requests(value: Boolean): Self = StObject.set(x, "batch_requests", value.asInstanceOf[js.Any])
+      inline def setBatch_requests(value: Boolean): Self = StObject.set(x, "batch_requests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatch_size(value: Double): Self = StObject.set(x, "batch_size", value.asInstanceOf[js.Any])
+      inline def setBatch_size(value: Double): Self = StObject.set(x, "batch_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCdn(value: String): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
+      inline def setCdn(value: String): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookie_domain(value: String): Self = StObject.set(x, "cookie_domain", value.asInstanceOf[js.Any])
+      inline def setCookie_domain(value: String): Self = StObject.set(x, "cookie_domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
+      inline def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookie_name(value: String): Self = StObject.set(x, "cookie_name", value.asInstanceOf[js.Any])
+      inline def setCookie_name(value: String): Self = StObject.set(x, "cookie_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCross_site_cookie(value: Boolean): Self = StObject.set(x, "cross_site_cookie", value.asInstanceOf[js.Any])
+      inline def setCross_site_cookie(value: Boolean): Self = StObject.set(x, "cross_site_cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCross_subdomain_cookie(value: Boolean): Self = StObject.set(x, "cross_subdomain_cookie", value.asInstanceOf[js.Any])
+      inline def setCross_subdomain_cookie(value: Boolean): Self = StObject.set(x, "cross_subdomain_cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_cookie(value: Boolean): Self = StObject.set(x, "disable_cookie", value.asInstanceOf[js.Any])
+      inline def setDisable_cookie(value: Boolean): Self = StObject.set(x, "disable_cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_notifications(value: Boolean): Self = StObject.set(x, "disable_notifications", value.asInstanceOf[js.Any])
+      inline def setDisable_notifications(value: Boolean): Self = StObject.set(x, "disable_notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_persistence(value: Boolean): Self = StObject.set(x, "disable_persistence", value.asInstanceOf[js.Any])
+      inline def setDisable_persistence(value: Boolean): Self = StObject.set(x, "disable_persistence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnore_dnt(value: Boolean): Self = StObject.set(x, "ignore_dnt", value.asInstanceOf[js.Any])
+      inline def setIgnore_dnt(value: Boolean): Self = StObject.set(x, "ignore_dnt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImg(value: Boolean): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+      inline def setImg(value: Boolean): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInapp_link_new_window(value: Boolean): Self = StObject.set(x, "inapp_link_new_window", value.asInstanceOf[js.Any])
+      inline def setInapp_link_new_window(value: Boolean): Self = StObject.set(x, "inapp_link_new_window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInapp_protocol(value: String): Self = StObject.set(x, "inapp_protocol", value.asInstanceOf[js.Any])
+      inline def setInapp_protocol(value: String): Self = StObject.set(x, "inapp_protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp(value: Boolean): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      inline def setIp(value: Boolean): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaded(value: Mixpanel => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
+      inline def setLoaded(value: Mixpanel => Unit): Self = StObject.set(x, "loaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOpt_out_persistence_by_default(value: Boolean): Self = StObject.set(x, "opt_out_persistence_by_default", value.asInstanceOf[js.Any])
+      inline def setOpt_out_persistence_by_default(value: Boolean): Self = StObject.set(x, "opt_out_persistence_by_default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpt_out_tracking_by_default(value: Boolean): Self = StObject.set(x, "opt_out_tracking_by_default", value.asInstanceOf[js.Any])
+      inline def setOpt_out_tracking_by_default(value: Boolean): Self = StObject.set(x, "opt_out_tracking_by_default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpt_out_tracking_cookie_prefix(value: String): Self = StObject.set(x, "opt_out_tracking_cookie_prefix", value.asInstanceOf[js.Any])
+      inline def setOpt_out_tracking_cookie_prefix(value: String): Self = StObject.set(x, "opt_out_tracking_cookie_prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpt_out_tracking_persistence_type(value: Persistence): Self = StObject.set(x, "opt_out_tracking_persistence_type", value.asInstanceOf[js.Any])
+      inline def setOpt_out_tracking_persistence_type(value: Persistence): Self = StObject.set(x, "opt_out_tracking_persistence_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistence(value: Persistence): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
+      inline def setPersistence(value: Persistence): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistence_name(value: String): Self = StObject.set(x, "persistence_name", value.asInstanceOf[js.Any])
+      inline def setPersistence_name(value: String): Self = StObject.set(x, "persistence_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty_blacklist(value: js.Array[String]): Self = StObject.set(x, "property_blacklist", value.asInstanceOf[js.Any])
+      inline def setProperty_blacklist(value: js.Array[String]): Self = StObject.set(x, "property_blacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value :_*))
+      inline def setProperty_blacklistVarargs(value: String*): Self = StObject.set(x, "property_blacklist", js.Array(value :_*))
       
-      @scala.inline
-      def setSave_referrer(value: Boolean): Self = StObject.set(x, "save_referrer", value.asInstanceOf[js.Any])
+      inline def setSave_referrer(value: Boolean): Self = StObject.set(x, "save_referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure_cookie(value: Boolean): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
+      inline def setSecure_cookie(value: Boolean): Self = StObject.set(x, "secure_cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore_google(value: Boolean): Self = StObject.set(x, "store_google", value.asInstanceOf[js.Any])
+      inline def setStore_google(value: Boolean): Self = StObject.set(x, "store_google", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_links_timeout(value: Double): Self = StObject.set(x, "track_links_timeout", value.asInstanceOf[js.Any])
+      inline def setTrack_links_timeout(value: Double): Self = StObject.set(x, "track_links_timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_pageview(value: Boolean): Self = StObject.set(x, "track_pageview", value.asInstanceOf[js.Any])
+      inline def setTrack_pageview(value: Boolean): Self = StObject.set(x, "track_pageview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
+      inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhr_headers(value: XhrHeadersDef): Self = StObject.set(x, "xhr_headers", value.asInstanceOf[js.Any])
+      inline def setXhr_headers(value: XhrHeadersDef): Self = StObject.set(x, "xhr_headers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -541,20 +422,16 @@ object mod {
   }
   object HasOptedInOutOptions {
     
-    @scala.inline
-    def apply(cookie_prefix: String, persistence_type: Persistence): HasOptedInOutOptions = {
+    inline def apply(cookie_prefix: String, persistence_type: Persistence): HasOptedInOutOptions = {
       val __obj = js.Dynamic.literal(cookie_prefix = cookie_prefix.asInstanceOf[js.Any], persistence_type = persistence_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[HasOptedInOutOptions]
     }
     
-    @scala.inline
-    implicit class HasOptedInOutOptionsMutableBuilder[Self <: HasOptedInOutOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HasOptedInOutOptions](x: Self) {
       
-      @scala.inline
-      def setCookie_prefix(value: String): Self = StObject.set(x, "cookie_prefix", value.asInstanceOf[js.Any])
+      inline def setCookie_prefix(value: String): Self = StObject.set(x, "cookie_prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistence_type(value: Persistence): Self = StObject.set(x, "persistence_type", value.asInstanceOf[js.Any])
+      inline def setPersistence_type(value: Persistence): Self = StObject.set(x, "persistence_type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -570,8 +447,7 @@ object mod {
   }
   object InTrackingOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cookie_expiration: Double,
       cookie_prefix: String,
       cross_subdomain_cookie: Boolean,
@@ -585,17 +461,13 @@ object mod {
       __obj.asInstanceOf[InTrackingOptions]
     }
     
-    @scala.inline
-    implicit class InTrackingOptionsMutableBuilder[Self <: InTrackingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: InTrackingOptions](x: Self) {
       
-      @scala.inline
-      def setTrack(value: () => Unit): Self = StObject.set(x, "track", js.Any.fromFunction0(value))
+      inline def setTrack(value: () => Unit): Self = StObject.set(x, "track", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTrack_event_name(value: String): Self = StObject.set(x, "track_event_name", value.asInstanceOf[js.Any])
+      inline def setTrack_event_name(value: String): Self = StObject.set(x, "track_event_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack_event_properties(value: Dict): Self = StObject.set(x, "track_event_properties", value.asInstanceOf[js.Any])
+      inline def setTrack_event_properties(value: Dict): Self = StObject.set(x, "track_event_properties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -711,11 +583,9 @@ object mod {
        with Response
   object NormalResponse {
     
-    @scala.inline
-    def `0`: typings.mixpanelBrowser.mixpanelBrowserNumbers.`0` = 0.asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserNumbers.`0`]
+    inline def `0`: typings.mixpanelBrowser.mixpanelBrowserNumbers.`0` = 0.asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.mixpanelBrowser.mixpanelBrowserNumbers.`1` = 1.asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserNumbers.`1`]
+    inline def `1`: typings.mixpanelBrowser.mixpanelBrowserNumbers.`1` = 1.asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserNumbers.`1`]
   }
   
   trait OutTrackingOptions
@@ -726,8 +596,7 @@ object mod {
   }
   object OutTrackingOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cookie_expiration: Double,
       cookie_prefix: String,
       cross_subdomain_cookie: Boolean,
@@ -739,11 +608,9 @@ object mod {
       __obj.asInstanceOf[OutTrackingOptions]
     }
     
-    @scala.inline
-    implicit class OutTrackingOptionsMutableBuilder[Self <: OutTrackingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OutTrackingOptions](x: Self) {
       
-      @scala.inline
-      def setDelete_user(value: Boolean): Self = StObject.set(x, "delete_user", value.asInstanceOf[js.Any])
+      inline def setDelete_user(value: Boolean): Self = StObject.set(x, "delete_user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -807,11 +674,9 @@ object mod {
   trait Persistence extends StObject
   object Persistence {
     
-    @scala.inline
-    def cookie: typings.mixpanelBrowser.mixpanelBrowserStrings.cookie = "cookie".asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserStrings.cookie]
+    inline def cookie: typings.mixpanelBrowser.mixpanelBrowserStrings.cookie = "cookie".asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserStrings.cookie]
     
-    @scala.inline
-    def localStorage: typings.mixpanelBrowser.mixpanelBrowserStrings.localStorage = "localStorage".asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserStrings.localStorage]
+    inline def localStorage: typings.mixpanelBrowser.mixpanelBrowserStrings.localStorage = "localStorage".asInstanceOf[typings.mixpanelBrowser.mixpanelBrowserStrings.localStorage]
   }
   
   type PushItem = js.Array[String | Dict]
@@ -824,20 +689,16 @@ object mod {
   }
   object RequestOptions {
     
-    @scala.inline
-    def apply(): RequestOptions = {
+    inline def apply(): RequestOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestOptions]
     }
     
-    @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestOptions](x: Self) {
       
-      @scala.inline
-      def setTransport(value: xhr | sendBeacon): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: xhr | sendBeacon): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
   
@@ -856,14 +717,12 @@ object mod {
        with Response
   object VerboseResponse {
     
-    @scala.inline
-    def Error(error: Null): typings.mixpanelBrowser.anon.Error = {
+    inline def Error(error: Null): typings.mixpanelBrowser.anon.Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = 1)
       __obj.asInstanceOf[typings.mixpanelBrowser.anon.Error]
     }
     
-    @scala.inline
-    def Status(error: String): typings.mixpanelBrowser.anon.Status = {
+    inline def Status(error: String): typings.mixpanelBrowser.anon.Status = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], status = 0)
       __obj.asInstanceOf[typings.mixpanelBrowser.anon.Status]
     }

@@ -93,121 +93,83 @@ trait Disk extends StObject {
 }
 object Disk {
   
-  @scala.inline
-  def apply(): Disk = {
+  inline def apply(): Disk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Disk]
   }
   
-  @scala.inline
-  implicit class DiskMutableBuilder[Self <: Disk] (val x: Self) extends AnyVal {
+  extension [Self <: Disk](x: Self) {
     
-    @scala.inline
-    def setAddOns(value: AddOnList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
+    inline def setAddOns(value: AddOnList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
+    inline def setAddOnsUndefined: Self = StObject.set(x, "addOns", js.undefined)
     
-    @scala.inline
-    def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value :_*))
+    inline def setAddOnsVarargs(value: AddOn*): Self = StObject.set(x, "addOns", js.Array(value :_*))
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setAttachedTo(value: ResourceName): Self = StObject.set(x, "attachedTo", value.asInstanceOf[js.Any])
+    inline def setAttachedTo(value: ResourceName): Self = StObject.set(x, "attachedTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedToUndefined: Self = StObject.set(x, "attachedTo", js.undefined)
+    inline def setAttachedToUndefined: Self = StObject.set(x, "attachedTo", js.undefined)
     
-    @scala.inline
-    def setAttachmentState(value: String): Self = StObject.set(x, "attachmentState", value.asInstanceOf[js.Any])
+    inline def setAttachmentState(value: String): Self = StObject.set(x, "attachmentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentStateUndefined: Self = StObject.set(x, "attachmentState", js.undefined)
+    inline def setAttachmentStateUndefined: Self = StObject.set(x, "attachmentState", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setGbInUse(value: integer): Self = StObject.set(x, "gbInUse", value.asInstanceOf[js.Any])
+    inline def setGbInUse(value: integer): Self = StObject.set(x, "gbInUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGbInUseUndefined: Self = StObject.set(x, "gbInUse", js.undefined)
+    inline def setGbInUseUndefined: Self = StObject.set(x, "gbInUse", js.undefined)
     
-    @scala.inline
-    def setIops(value: integer): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
+    inline def setIops(value: integer): Self = StObject.set(x, "iops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
+    inline def setIopsUndefined: Self = StObject.set(x, "iops", js.undefined)
     
-    @scala.inline
-    def setIsAttached(value: Boolean): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
+    inline def setIsAttached(value: Boolean): Self = StObject.set(x, "isAttached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAttachedUndefined: Self = StObject.set(x, "isAttached", js.undefined)
+    inline def setIsAttachedUndefined: Self = StObject.set(x, "isAttached", js.undefined)
     
-    @scala.inline
-    def setIsSystemDisk(value: Boolean): Self = StObject.set(x, "isSystemDisk", value.asInstanceOf[js.Any])
+    inline def setIsSystemDisk(value: Boolean): Self = StObject.set(x, "isSystemDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSystemDiskUndefined: Self = StObject.set(x, "isSystemDisk", js.undefined)
+    inline def setIsSystemDiskUndefined: Self = StObject.set(x, "isSystemDisk", js.undefined)
     
-    @scala.inline
-    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
+    inline def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInGbUndefined: Self = StObject.set(x, "sizeInGb", js.undefined)
+    inline def setSizeInGbUndefined: Self = StObject.set(x, "sizeInGb", js.undefined)
     
-    @scala.inline
-    def setState(value: DiskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: DiskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
+    inline def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
+    inline def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait DescribeRulesPackagesRequest extends StObject {
 }
 object DescribeRulesPackagesRequest {
   
-  @scala.inline
-  def apply(rulesPackageArns: BatchDescribeArnList): DescribeRulesPackagesRequest = {
+  inline def apply(rulesPackageArns: BatchDescribeArnList): DescribeRulesPackagesRequest = {
     val __obj = js.Dynamic.literal(rulesPackageArns = rulesPackageArns.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRulesPackagesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRulesPackagesRequestMutableBuilder[Self <: DescribeRulesPackagesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRulesPackagesRequest](x: Self) {
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setRulesPackageArns(value: BatchDescribeArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
+    inline def setRulesPackageArns(value: BatchDescribeArnList): Self = StObject.set(x, "rulesPackageArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
+    inline def setRulesPackageArnsVarargs(value: Arn*): Self = StObject.set(x, "rulesPackageArns", js.Array(value :_*))
   }
 }

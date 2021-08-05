@@ -22,49 +22,35 @@ trait ManagedAndroidLobApp
 }
 object ManagedAndroidLobApp {
   
-  @scala.inline
-  def apply(): ManagedAndroidLobApp = {
+  inline def apply(): ManagedAndroidLobApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedAndroidLobApp]
   }
   
-  @scala.inline
-  implicit class ManagedAndroidLobAppMutableBuilder[Self <: ManagedAndroidLobApp] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedAndroidLobApp](x: Self) {
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystem(value: NullableOption[AndroidMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
+    inline def setMinimumSupportedOperatingSystem(value: NullableOption[AndroidMinimumOperatingSystem]): Self = StObject.set(x, "minimumSupportedOperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystemNull: Self = StObject.set(x, "minimumSupportedOperatingSystem", null)
+    inline def setMinimumSupportedOperatingSystemNull: Self = StObject.set(x, "minimumSupportedOperatingSystem", null)
     
-    @scala.inline
-    def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
+    inline def setMinimumSupportedOperatingSystemUndefined: Self = StObject.set(x, "minimumSupportedOperatingSystem", js.undefined)
     
-    @scala.inline
-    def setPackageId(value: NullableOption[String]): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
+    inline def setPackageId(value: NullableOption[String]): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageIdNull: Self = StObject.set(x, "packageId", null)
+    inline def setPackageIdNull: Self = StObject.set(x, "packageId", null)
     
-    @scala.inline
-    def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
+    inline def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
     
-    @scala.inline
-    def setVersionCode(value: NullableOption[String]): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: NullableOption[String]): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeNull: Self = StObject.set(x, "versionCode", null)
+    inline def setVersionCodeNull: Self = StObject.set(x, "versionCode", null)
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
     
-    @scala.inline
-    def setVersionName(value: NullableOption[String]): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
+    inline def setVersionName(value: NullableOption[String]): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNameNull: Self = StObject.set(x, "versionName", null)
+    inline def setVersionNameNull: Self = StObject.set(x, "versionName", null)
     
-    @scala.inline
-    def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
+    inline def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
   }
 }

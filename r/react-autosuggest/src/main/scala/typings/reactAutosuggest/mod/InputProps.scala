@@ -27,37 +27,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object InputProps {
   
-  @scala.inline
-  def apply[TSuggestion](onChange: (FormEvent[js.Any], ChangeEvent) => Unit, value: String): InputProps[TSuggestion] = {
+  inline def apply[TSuggestion](onChange: (FormEvent[js.Any], ChangeEvent) => Unit, value: String): InputProps[TSuggestion] = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputProps[TSuggestion]]
   }
   
-  @scala.inline
-  implicit class InputPropsMutableBuilder[Self <: InputProps[?], TSuggestion] (val x: Self & InputProps[TSuggestion]) extends AnyVal {
+  extension [Self <: InputProps[?], TSuggestion](x: Self & InputProps[TSuggestion]) {
     
-    @scala.inline
-    def setOnBlur(value: (/* event */ FocusEvent[js.Any], /* params */ js.UndefOr[BlurEvent[TSuggestion]]) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
+    inline def setOnBlur(value: (/* event */ FocusEvent[js.Any], /* params */ js.UndefOr[BlurEvent[TSuggestion]]) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: (FormEvent[js.Any], ChangeEvent) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+    inline def setOnChange(value: (FormEvent[js.Any], ChangeEvent) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ HTMLInputElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefNull: Self = StObject.set(x, "ref", null)
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -21,19 +21,15 @@ trait TapTargetOptions extends StObject {
 }
 object TapTargetOptions {
   
-  @scala.inline
-  def apply(onClose: Element => Unit, onOpen: Element => Unit): TapTargetOptions = {
+  inline def apply(onClose: Element => Unit, onOpen: Element => Unit): TapTargetOptions = {
     val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction1(onClose), onOpen = js.Any.fromFunction1(onOpen))
     __obj.asInstanceOf[TapTargetOptions]
   }
   
-  @scala.inline
-  implicit class TapTargetOptionsMutableBuilder[Self <: TapTargetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TapTargetOptions](x: Self) {
     
-    @scala.inline
-    def setOnClose(value: Element => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+    inline def setOnClose(value: Element => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOpen(value: Element => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+    inline def setOnOpen(value: Element => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
   }
 }

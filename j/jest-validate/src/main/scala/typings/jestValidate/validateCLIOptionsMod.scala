@@ -12,10 +12,8 @@ object validateCLIOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(argv: Argv, options: Dicts): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def default(argv: Argv, options: Dicts, rawArgv: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any], rawArgv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(argv: Argv, options: Dicts): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(argv: Argv, options: Dicts, rawArgv: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any], rawArgv.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("jest-validate/build/validateCLIOptions", "DOCUMENTATION_NOTE")
   @js.native

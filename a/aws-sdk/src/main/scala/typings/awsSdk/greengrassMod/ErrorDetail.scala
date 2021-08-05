@@ -18,25 +18,19 @@ trait ErrorDetail extends StObject {
 }
 object ErrorDetail {
   
-  @scala.inline
-  def apply(): ErrorDetail = {
+  inline def apply(): ErrorDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorDetail]
   }
   
-  @scala.inline
-  implicit class ErrorDetailMutableBuilder[Self <: ErrorDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorDetail](x: Self) {
     
-    @scala.inline
-    def setDetailedErrorCode(value: string): Self = StObject.set(x, "DetailedErrorCode", value.asInstanceOf[js.Any])
+    inline def setDetailedErrorCode(value: string): Self = StObject.set(x, "DetailedErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedErrorCodeUndefined: Self = StObject.set(x, "DetailedErrorCode", js.undefined)
+    inline def setDetailedErrorCodeUndefined: Self = StObject.set(x, "DetailedErrorCode", js.undefined)
     
-    @scala.inline
-    def setDetailedErrorMessage(value: string): Self = StObject.set(x, "DetailedErrorMessage", value.asInstanceOf[js.Any])
+    inline def setDetailedErrorMessage(value: string): Self = StObject.set(x, "DetailedErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedErrorMessageUndefined: Self = StObject.set(x, "DetailedErrorMessage", js.undefined)
+    inline def setDetailedErrorMessageUndefined: Self = StObject.set(x, "DetailedErrorMessage", js.undefined)
   }
 }

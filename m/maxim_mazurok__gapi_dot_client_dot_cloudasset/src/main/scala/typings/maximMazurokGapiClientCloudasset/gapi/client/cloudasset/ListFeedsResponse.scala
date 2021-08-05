@@ -11,22 +11,17 @@ trait ListFeedsResponse extends StObject {
 }
 object ListFeedsResponse {
   
-  @scala.inline
-  def apply(): ListFeedsResponse = {
+  inline def apply(): ListFeedsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFeedsResponse]
   }
   
-  @scala.inline
-  implicit class ListFeedsResponseMutableBuilder[Self <: ListFeedsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListFeedsResponse](x: Self) {
     
-    @scala.inline
-    def setFeeds(value: js.Array[Feed]): Self = StObject.set(x, "feeds", value.asInstanceOf[js.Any])
+    inline def setFeeds(value: js.Array[Feed]): Self = StObject.set(x, "feeds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedsUndefined: Self = StObject.set(x, "feeds", js.undefined)
+    inline def setFeedsUndefined: Self = StObject.set(x, "feeds", js.undefined)
     
-    @scala.inline
-    def setFeedsVarargs(value: Feed*): Self = StObject.set(x, "feeds", js.Array(value :_*))
+    inline def setFeedsVarargs(value: Feed*): Self = StObject.set(x, "feeds", js.Array(value :_*))
   }
 }

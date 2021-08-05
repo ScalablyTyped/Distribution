@@ -18,25 +18,19 @@ trait ParameterGroup extends StObject {
 }
 object ParameterGroup {
   
-  @scala.inline
-  def apply(): ParameterGroup = {
+  inline def apply(): ParameterGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterGroup]
   }
   
-  @scala.inline
-  implicit class ParameterGroupMutableBuilder[Self <: ParameterGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterGroup](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterGroupNameUndefined: Self = StObject.set(x, "ParameterGroupName", js.undefined)
+    inline def setParameterGroupNameUndefined: Self = StObject.set(x, "ParameterGroupName", js.undefined)
   }
 }

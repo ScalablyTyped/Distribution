@@ -28,64 +28,45 @@ trait DirectoryRole
 }
 object DirectoryRole {
   
-  @scala.inline
-  def apply(): DirectoryRole = {
+  inline def apply(): DirectoryRole = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectoryRole]
   }
   
-  @scala.inline
-  implicit class DirectoryRoleMutableBuilder[Self <: DirectoryRole] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryRole](x: Self) {
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersNull: Self = StObject.set(x, "members", null)
+    inline def setMembersNull: Self = StObject.set(x, "members", null)
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: DirectoryObject*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setRoleTemplateId(value: NullableOption[String]): Self = StObject.set(x, "roleTemplateId", value.asInstanceOf[js.Any])
+    inline def setRoleTemplateId(value: NullableOption[String]): Self = StObject.set(x, "roleTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleTemplateIdNull: Self = StObject.set(x, "roleTemplateId", null)
+    inline def setRoleTemplateIdNull: Self = StObject.set(x, "roleTemplateId", null)
     
-    @scala.inline
-    def setRoleTemplateIdUndefined: Self = StObject.set(x, "roleTemplateId", js.undefined)
+    inline def setRoleTemplateIdUndefined: Self = StObject.set(x, "roleTemplateId", js.undefined)
     
-    @scala.inline
-    def setScopedMembers(value: NullableOption[js.Array[ScopedRoleMembership]]): Self = StObject.set(x, "scopedMembers", value.asInstanceOf[js.Any])
+    inline def setScopedMembers(value: NullableOption[js.Array[ScopedRoleMembership]]): Self = StObject.set(x, "scopedMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopedMembersNull: Self = StObject.set(x, "scopedMembers", null)
+    inline def setScopedMembersNull: Self = StObject.set(x, "scopedMembers", null)
     
-    @scala.inline
-    def setScopedMembersUndefined: Self = StObject.set(x, "scopedMembers", js.undefined)
+    inline def setScopedMembersUndefined: Self = StObject.set(x, "scopedMembers", js.undefined)
     
-    @scala.inline
-    def setScopedMembersVarargs(value: ScopedRoleMembership*): Self = StObject.set(x, "scopedMembers", js.Array(value :_*))
+    inline def setScopedMembersVarargs(value: ScopedRoleMembership*): Self = StObject.set(x, "scopedMembers", js.Array(value :_*))
   }
 }

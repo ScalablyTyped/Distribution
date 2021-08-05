@@ -16,22 +16,17 @@ trait SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse extends StObject
 }
 object SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponseMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2FindMissingBlobsResponse](x: Self) {
     
-    @scala.inline
-    def setMissingBlobDigests(value: js.Array[SchemaBuildBazelRemoteExecutionV2Digest]): Self = StObject.set(x, "missingBlobDigests", value.asInstanceOf[js.Any])
+    inline def setMissingBlobDigests(value: js.Array[SchemaBuildBazelRemoteExecutionV2Digest]): Self = StObject.set(x, "missingBlobDigests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingBlobDigestsUndefined: Self = StObject.set(x, "missingBlobDigests", js.undefined)
+    inline def setMissingBlobDigestsUndefined: Self = StObject.set(x, "missingBlobDigests", js.undefined)
     
-    @scala.inline
-    def setMissingBlobDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "missingBlobDigests", js.Array(value :_*))
+    inline def setMissingBlobDigestsVarargs(value: SchemaBuildBazelRemoteExecutionV2Digest*): Self = StObject.set(x, "missingBlobDigests", js.Array(value :_*))
   }
 }

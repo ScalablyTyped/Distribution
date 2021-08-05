@@ -175,187 +175,137 @@ trait HooksDefineOptions[TInstance] extends StObject {
 }
 object HooksDefineOptions {
   
-  @scala.inline
-  def apply[TInstance](): HooksDefineOptions[TInstance] = {
+  inline def apply[TInstance](): HooksDefineOptions[TInstance] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HooksDefineOptions[TInstance]]
   }
   
-  @scala.inline
-  implicit class HooksDefineOptionsMutableBuilder[Self <: HooksDefineOptions[?], TInstance] (val x: Self & HooksDefineOptions[TInstance]) extends AnyVal {
+  extension [Self <: HooksDefineOptions[?], TInstance](x: Self & HooksDefineOptions[TInstance]) {
     
-    @scala.inline
-    def setAfterBulkCreate(
+    inline def setAfterBulkCreate(
       value: (/* instances */ js.Array[TInstance], /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "afterBulkCreate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterBulkCreateUndefined: Self = StObject.set(x, "afterBulkCreate", js.undefined)
+    inline def setAfterBulkCreateUndefined: Self = StObject.set(x, "afterBulkCreate", js.undefined)
     
-    @scala.inline
-    def setAfterBulkDelete(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "afterBulkDelete", js.Any.fromFunction2(value))
+    inline def setAfterBulkDelete(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "afterBulkDelete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterBulkDeleteUndefined: Self = StObject.set(x, "afterBulkDelete", js.undefined)
+    inline def setAfterBulkDeleteUndefined: Self = StObject.set(x, "afterBulkDelete", js.undefined)
     
-    @scala.inline
-    def setAfterBulkDestroy(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "afterBulkDestroy", js.Any.fromFunction2(value))
+    inline def setAfterBulkDestroy(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "afterBulkDestroy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterBulkDestroyUndefined: Self = StObject.set(x, "afterBulkDestroy", js.undefined)
+    inline def setAfterBulkDestroyUndefined: Self = StObject.set(x, "afterBulkDestroy", js.undefined)
     
-    @scala.inline
-    def setAfterBulkUpdate(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "afterBulkUpdate", js.Any.fromFunction2(value))
+    inline def setAfterBulkUpdate(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "afterBulkUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterBulkUpdateUndefined: Self = StObject.set(x, "afterBulkUpdate", js.undefined)
+    inline def setAfterBulkUpdateUndefined: Self = StObject.set(x, "afterBulkUpdate", js.undefined)
     
-    @scala.inline
-    def setAfterCreate(
+    inline def setAfterCreate(
       value: (/* attributes */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "afterCreate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterCreateUndefined: Self = StObject.set(x, "afterCreate", js.undefined)
+    inline def setAfterCreateUndefined: Self = StObject.set(x, "afterCreate", js.undefined)
     
-    @scala.inline
-    def setAfterDelete(
+    inline def setAfterDelete(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "afterDelete", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterDeleteUndefined: Self = StObject.set(x, "afterDelete", js.undefined)
+    inline def setAfterDeleteUndefined: Self = StObject.set(x, "afterDelete", js.undefined)
     
-    @scala.inline
-    def setAfterDestroy(
+    inline def setAfterDestroy(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "afterDestroy", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterDestroyUndefined: Self = StObject.set(x, "afterDestroy", js.undefined)
+    inline def setAfterDestroyUndefined: Self = StObject.set(x, "afterDestroy", js.undefined)
     
-    @scala.inline
-    def setAfterFind(
+    inline def setAfterFind(
       value: (/* instancesOrInstance */ js.Array[TInstance] | TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "afterFind", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterFindUndefined: Self = StObject.set(x, "afterFind", js.undefined)
+    inline def setAfterFindUndefined: Self = StObject.set(x, "afterFind", js.undefined)
     
-    @scala.inline
-    def setAfterSave(
+    inline def setAfterSave(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "afterSave", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterSaveUndefined: Self = StObject.set(x, "afterSave", js.undefined)
+    inline def setAfterSaveUndefined: Self = StObject.set(x, "afterSave", js.undefined)
     
-    @scala.inline
-    def setAfterUpdate(
+    inline def setAfterUpdate(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
+    inline def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
     
-    @scala.inline
-    def setAfterValidate(
+    inline def setAfterValidate(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "afterValidate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAfterValidateUndefined: Self = StObject.set(x, "afterValidate", js.undefined)
+    inline def setAfterValidateUndefined: Self = StObject.set(x, "afterValidate", js.undefined)
     
-    @scala.inline
-    def setBeforeBulkCreate(
+    inline def setBeforeBulkCreate(
       value: (/* instances */ js.Array[TInstance], /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "beforeBulkCreate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeBulkCreateUndefined: Self = StObject.set(x, "beforeBulkCreate", js.undefined)
+    inline def setBeforeBulkCreateUndefined: Self = StObject.set(x, "beforeBulkCreate", js.undefined)
     
-    @scala.inline
-    def setBeforeBulkDelete(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeBulkDelete", js.Any.fromFunction2(value))
+    inline def setBeforeBulkDelete(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeBulkDelete", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeBulkDeleteUndefined: Self = StObject.set(x, "beforeBulkDelete", js.undefined)
+    inline def setBeforeBulkDeleteUndefined: Self = StObject.set(x, "beforeBulkDelete", js.undefined)
     
-    @scala.inline
-    def setBeforeBulkDestroy(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeBulkDestroy", js.Any.fromFunction2(value))
+    inline def setBeforeBulkDestroy(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeBulkDestroy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeBulkDestroyUndefined: Self = StObject.set(x, "beforeBulkDestroy", js.undefined)
+    inline def setBeforeBulkDestroyUndefined: Self = StObject.set(x, "beforeBulkDestroy", js.undefined)
     
-    @scala.inline
-    def setBeforeBulkUpdate(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeBulkUpdate", js.Any.fromFunction2(value))
+    inline def setBeforeBulkUpdate(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeBulkUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeBulkUpdateUndefined: Self = StObject.set(x, "beforeBulkUpdate", js.undefined)
+    inline def setBeforeBulkUpdateUndefined: Self = StObject.set(x, "beforeBulkUpdate", js.undefined)
     
-    @scala.inline
-    def setBeforeCreate(
+    inline def setBeforeCreate(
       value: (/* attributes */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "beforeCreate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
+    inline def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
     
-    @scala.inline
-    def setBeforeDelete(
+    inline def setBeforeDelete(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "beforeDelete", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeDeleteUndefined: Self = StObject.set(x, "beforeDelete", js.undefined)
+    inline def setBeforeDeleteUndefined: Self = StObject.set(x, "beforeDelete", js.undefined)
     
-    @scala.inline
-    def setBeforeDestroy(
+    inline def setBeforeDestroy(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "beforeDestroy", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
+    inline def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
     
-    @scala.inline
-    def setBeforeFind(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeFind", js.Any.fromFunction2(value))
+    inline def setBeforeFind(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeFind", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeFindAfterExpandIncludeAll(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeFindAfterExpandIncludeAll", js.Any.fromFunction2(value))
+    inline def setBeforeFindAfterExpandIncludeAll(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeFindAfterExpandIncludeAll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeFindAfterExpandIncludeAllUndefined: Self = StObject.set(x, "beforeFindAfterExpandIncludeAll", js.undefined)
+    inline def setBeforeFindAfterExpandIncludeAllUndefined: Self = StObject.set(x, "beforeFindAfterExpandIncludeAll", js.undefined)
     
-    @scala.inline
-    def setBeforeFindAfterOptions(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeFindAfterOptions", js.Any.fromFunction2(value))
+    inline def setBeforeFindAfterOptions(value: (/* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any): Self = StObject.set(x, "beforeFindAfterOptions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforeFindAfterOptionsUndefined: Self = StObject.set(x, "beforeFindAfterOptions", js.undefined)
+    inline def setBeforeFindAfterOptionsUndefined: Self = StObject.set(x, "beforeFindAfterOptions", js.undefined)
     
-    @scala.inline
-    def setBeforeFindUndefined: Self = StObject.set(x, "beforeFind", js.undefined)
+    inline def setBeforeFindUndefined: Self = StObject.set(x, "beforeFind", js.undefined)
     
-    @scala.inline
-    def setBeforeSave(
+    inline def setBeforeSave(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "beforeSave", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
+    inline def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
     
-    @scala.inline
-    def setBeforeUpdate(
+    inline def setBeforeUpdate(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
+    inline def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
     
-    @scala.inline
-    def setBeforeValidate(
+    inline def setBeforeValidate(
       value: (/* instance */ TInstance, /* options */ js.Object, /* fn */ js.UndefOr[js.Function]) => js.Any
     ): Self = StObject.set(x, "beforeValidate", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setBeforeValidateUndefined: Self = StObject.set(x, "beforeValidate", js.undefined)
+    inline def setBeforeValidateUndefined: Self = StObject.set(x, "beforeValidate", js.undefined)
   }
 }

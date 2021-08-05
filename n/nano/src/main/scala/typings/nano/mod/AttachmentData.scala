@@ -14,22 +14,17 @@ trait AttachmentData extends StObject {
 }
 object AttachmentData {
   
-  @scala.inline
-  def apply(content_type: js.Any, data: js.Any, name: String): AttachmentData = {
+  inline def apply(content_type: js.Any, data: js.Any, name: String): AttachmentData = {
     val __obj = js.Dynamic.literal(content_type = content_type.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentData]
   }
   
-  @scala.inline
-  implicit class AttachmentDataMutableBuilder[Self <: AttachmentData] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentData](x: Self) {
     
-    @scala.inline
-    def setContent_type(value: js.Any): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: js.Any): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

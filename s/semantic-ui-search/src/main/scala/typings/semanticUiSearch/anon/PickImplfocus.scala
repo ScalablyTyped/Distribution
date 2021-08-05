@@ -11,16 +11,13 @@ trait PickImplfocus extends StObject {
 }
 object PickImplfocus {
   
-  @scala.inline
-  def apply(focus: String): PickImplfocus = {
+  inline def apply(focus: String): PickImplfocus = {
     val __obj = js.Dynamic.literal(focus = focus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfocus]
   }
   
-  @scala.inline
-  implicit class PickImplfocusMutableBuilder[Self <: PickImplfocus] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplfocus](x: Self) {
     
-    @scala.inline
-    def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: String): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
   }
 }

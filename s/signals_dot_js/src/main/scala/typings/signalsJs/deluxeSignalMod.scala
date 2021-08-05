@@ -25,7 +25,7 @@ object deluxeSignalMod {
     def this(target: js.Object, valueClasses: js.Any*) = this()
     def this(target: Unit, valueClasses: js.Any*) = this()
     
-    var _target: js.Object = js.native
+    /* protected */ var _target: js.Object = js.native
     
     /** @inheritDoc */
     var target: js.Object = js.native

@@ -22,17 +22,14 @@ object toHaveWholeNumberMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toHaveWholeNumber: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
+        inline def apply[T](toHaveWholeNumber: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toHaveWholeNumber = js.Any.fromFunction2(toHaveWholeNumber))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToHaveWholeNumber(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveWholeNumber", js.Any.fromFunction2(value))
+          inline def setToHaveWholeNumber(value: (/* key */ String, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toHaveWholeNumber", js.Any.fromFunction2(value))
         }
       }
     }

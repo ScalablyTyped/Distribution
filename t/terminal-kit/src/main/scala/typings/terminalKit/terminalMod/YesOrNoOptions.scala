@@ -16,37 +16,27 @@ trait YesOrNoOptions extends StObject {
 }
 object YesOrNoOptions {
   
-  @scala.inline
-  def apply(no: String | js.Array[String], yes: String | js.Array[String]): YesOrNoOptions = {
+  inline def apply(no: String | js.Array[String], yes: String | js.Array[String]): YesOrNoOptions = {
     val __obj = js.Dynamic.literal(no = no.asInstanceOf[js.Any], yes = yes.asInstanceOf[js.Any])
     __obj.asInstanceOf[YesOrNoOptions]
   }
   
-  @scala.inline
-  implicit class YesOrNoOptionsMutableBuilder[Self <: YesOrNoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: YesOrNoOptions](x: Self) {
     
-    @scala.inline
-    def setEchoNo(value: String): Self = StObject.set(x, "echoNo", value.asInstanceOf[js.Any])
+    inline def setEchoNo(value: String): Self = StObject.set(x, "echoNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEchoNoUndefined: Self = StObject.set(x, "echoNo", js.undefined)
+    inline def setEchoNoUndefined: Self = StObject.set(x, "echoNo", js.undefined)
     
-    @scala.inline
-    def setEchoYes(value: String): Self = StObject.set(x, "echoYes", value.asInstanceOf[js.Any])
+    inline def setEchoYes(value: String): Self = StObject.set(x, "echoYes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEchoYesUndefined: Self = StObject.set(x, "echoYes", js.undefined)
+    inline def setEchoYesUndefined: Self = StObject.set(x, "echoYes", js.undefined)
     
-    @scala.inline
-    def setNo(value: String | js.Array[String]): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
+    inline def setNo(value: String | js.Array[String]): Self = StObject.set(x, "no", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoVarargs(value: String*): Self = StObject.set(x, "no", js.Array(value :_*))
+    inline def setNoVarargs(value: String*): Self = StObject.set(x, "no", js.Array(value :_*))
     
-    @scala.inline
-    def setYes(value: String | js.Array[String]): Self = StObject.set(x, "yes", value.asInstanceOf[js.Any])
+    inline def setYes(value: String | js.Array[String]): Self = StObject.set(x, "yes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYesVarargs(value: String*): Self = StObject.set(x, "yes", js.Array(value :_*))
+    inline def setYesVarargs(value: String*): Self = StObject.set(x, "yes", js.Array(value :_*))
   }
 }

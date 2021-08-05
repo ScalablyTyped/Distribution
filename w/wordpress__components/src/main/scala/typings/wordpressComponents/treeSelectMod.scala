@@ -41,35 +41,26 @@ object treeSelectMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setNoOptionLabel(value: String): Self = StObject.set(x, "noOptionLabel", value.asInstanceOf[js.Any])
+        inline def setNoOptionLabel(value: String): Self = StObject.set(x, "noOptionLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoOptionLabelUndefined: Self = StObject.set(x, "noOptionLabel", js.undefined)
+        inline def setNoOptionLabelUndefined: Self = StObject.set(x, "noOptionLabel", js.undefined)
         
-        @scala.inline
-        def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
+        inline def setSelectedId(value: String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
+        inline def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
         
-        @scala.inline
-        def setTree(value: Tree): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+        inline def setTree(value: Tree): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
+        inline def setTreeUndefined: Self = StObject.set(x, "tree", js.undefined)
         
-        @scala.inline
-        def setTreeVarargs(value: TreeNode*): Self = StObject.set(x, "tree", js.Array(value :_*))
+        inline def setTreeVarargs(value: TreeNode*): Self = StObject.set(x, "tree", js.Array(value :_*))
       }
     }
     
@@ -91,29 +82,22 @@ object treeSelectMod {
     }
     object TreeNode {
       
-      @scala.inline
-      def apply(id: String, name: String): TreeNode = {
+      inline def apply(id: String, name: String): TreeNode = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[TreeNode]
       }
       
-      @scala.inline
-      implicit class TreeNodeMutableBuilder[Self <: TreeNode] (val x: Self) extends AnyVal {
+      extension [Self <: TreeNode](x: Self) {
         
-        @scala.inline
-        def setChildren(value: js.Array[TreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: js.Array[TreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setChildrenVarargs(value: TreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: TreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -19,43 +19,31 @@ trait IEvent extends StObject {
 }
 object IEvent {
   
-  @scala.inline
-  def apply(): IEvent = {
+  inline def apply(): IEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEvent]
   }
   
-  @scala.inline
-  implicit class IEventMutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IEvent](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Array[IAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Array[IAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesNull: Self = StObject.set(x, "attributes", null)
+    inline def setAttributesNull: Self = StObject.set(x, "attributes", null)
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: IAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: IAttribute*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNull: Self = StObject.set(x, "data", null)
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeNull: Self = StObject.set(x, "eventType", null)
+    inline def setEventTypeNull: Self = StObject.set(x, "eventType", null)
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
   }
 }

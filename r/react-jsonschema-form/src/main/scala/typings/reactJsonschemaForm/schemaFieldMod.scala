@@ -38,8 +38,7 @@ object schemaFieldMod {
   }
   object SchemaFieldProps {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       errorSchema: ErrorSchema,
       formContext: js.Any,
       formData: T,
@@ -52,29 +51,21 @@ object schemaFieldMod {
       __obj.asInstanceOf[SchemaFieldProps[T]]
     }
     
-    @scala.inline
-    implicit class SchemaFieldPropsMutableBuilder[Self <: SchemaFieldProps[?], T] (val x: Self & SchemaFieldProps[T]) extends AnyVal {
+    extension [Self <: SchemaFieldProps[?], T](x: Self & SchemaFieldProps[T]) {
       
-      @scala.inline
-      def setErrorSchema(value: ErrorSchema): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
+      inline def setErrorSchema(value: ErrorSchema): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
+      inline def setFormContext(value: js.Any): Self = StObject.set(x, "formContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+      inline def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+      inline def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistry(value: Definitions): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+      inline def setRegistry(value: Definitions): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: JSONSchema6): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+      inline def setUiSchema(value: UiSchema): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
     }
   }
 }

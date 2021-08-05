@@ -9,8 +9,7 @@ trait CachedFileUpdaterUI
      with ICachedFileUpdaterUI
 object CachedFileUpdaterUI {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onfileupdaterequested: js.Any,
     onuirequested: js.Any,
     title: String,

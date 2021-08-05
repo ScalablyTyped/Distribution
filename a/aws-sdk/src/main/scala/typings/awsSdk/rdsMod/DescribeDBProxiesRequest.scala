@@ -28,40 +28,29 @@ trait DescribeDBProxiesRequest extends StObject {
 }
 object DescribeDBProxiesRequest {
   
-  @scala.inline
-  def apply(): DescribeDBProxiesRequest = {
+  inline def apply(): DescribeDBProxiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDBProxiesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDBProxiesRequestMutableBuilder[Self <: DescribeDBProxiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDBProxiesRequest](x: Self) {
     
-    @scala.inline
-    def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
+    inline def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBProxyNameUndefined: Self = StObject.set(x, "DBProxyName", js.undefined)
+    inline def setDBProxyNameUndefined: Self = StObject.set(x, "DBProxyName", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
   }
 }

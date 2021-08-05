@@ -16,8 +16,7 @@ trait LinkEventDefinition
 }
 object LinkEventDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -29,16 +28,12 @@ object LinkEventDefinition {
     __obj.asInstanceOf[LinkEventDefinition]
   }
   
-  @scala.inline
-  implicit class LinkEventDefinitionMutableBuilder[Self <: LinkEventDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: LinkEventDefinition](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: LinkEventDefinition): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: LinkEventDefinition): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: LinkEventDefinition): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: LinkEventDefinition): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

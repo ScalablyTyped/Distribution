@@ -18,19 +18,15 @@ trait AssociatePackageRequest extends StObject {
 }
 object AssociatePackageRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName, PackageID: PackageID): AssociatePackageRequest = {
+  inline def apply(DomainName: DomainName, PackageID: PackageID): AssociatePackageRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any], PackageID = PackageID.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociatePackageRequest]
   }
   
-  @scala.inline
-  implicit class AssociatePackageRequestMutableBuilder[Self <: AssociatePackageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociatePackageRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
+    inline def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
   }
 }

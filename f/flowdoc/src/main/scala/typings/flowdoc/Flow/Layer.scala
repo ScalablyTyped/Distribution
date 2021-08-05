@@ -22,32 +22,24 @@ trait Layer
 }
 object Layer {
   
-  @scala.inline
-  def apply(id: String, name: String, position: Point, size: Size, `type`: LAYER | HOTSPOT): Layer = {
+  inline def apply(id: String, name: String, position: Point, size: Size, `type`: LAYER | HOTSPOT): Layer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layer]
   }
   
-  @scala.inline
-  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+  extension [Self <: Layer](x: Self) {
     
-    @scala.inline
-    def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
+    inline def setConnections(value: js.Array[Connection]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
+    inline def setConnectionsUndefined: Self = StObject.set(x, "connections", js.undefined)
     
-    @scala.inline
-    def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "connections", js.Array(value :_*))
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LAYER | HOTSPOT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LAYER | HOTSPOT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

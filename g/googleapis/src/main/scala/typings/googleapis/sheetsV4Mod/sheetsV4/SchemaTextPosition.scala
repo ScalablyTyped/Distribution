@@ -16,19 +16,15 @@ trait SchemaTextPosition extends StObject {
 }
 object SchemaTextPosition {
   
-  @scala.inline
-  def apply(): SchemaTextPosition = {
+  inline def apply(): SchemaTextPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextPosition]
   }
   
-  @scala.inline
-  implicit class SchemaTextPositionMutableBuilder[Self <: SchemaTextPosition] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextPosition](x: Self) {
     
-    @scala.inline
-    def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
   }
 }

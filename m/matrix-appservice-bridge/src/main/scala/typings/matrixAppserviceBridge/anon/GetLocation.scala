@@ -41,53 +41,39 @@ trait GetLocation extends StObject {
 }
 object GetLocation {
   
-  @scala.inline
-  def apply(protocols: js.Array[String]): GetLocation = {
+  inline def apply(protocols: js.Array[String]): GetLocation = {
     val __obj = js.Dynamic.literal(protocols = protocols.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLocation]
   }
   
-  @scala.inline
-  implicit class GetLocationMutableBuilder[Self <: GetLocation] (val x: Self) extends AnyVal {
+  extension [Self <: GetLocation](x: Self) {
     
-    @scala.inline
-    def setGetLocation(
+    inline def setGetLocation(
       value: (/* protocol */ String, /* fields */ Record[String, js.Array[String] | String]) => PossiblePromise[js.Array[ThirdpartyLocationResponse]]
     ): Self = StObject.set(x, "getLocation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLocationUndefined: Self = StObject.set(x, "getLocation", js.undefined)
+    inline def setGetLocationUndefined: Self = StObject.set(x, "getLocation", js.undefined)
     
-    @scala.inline
-    def setGetProtocol(value: /* protocol */ String => PossiblePromise[ThirdpartyProtocolResponse]): Self = StObject.set(x, "getProtocol", js.Any.fromFunction1(value))
+    inline def setGetProtocol(value: /* protocol */ String => PossiblePromise[ThirdpartyProtocolResponse]): Self = StObject.set(x, "getProtocol", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProtocolUndefined: Self = StObject.set(x, "getProtocol", js.undefined)
+    inline def setGetProtocolUndefined: Self = StObject.set(x, "getProtocol", js.undefined)
     
-    @scala.inline
-    def setGetUser(
+    inline def setGetUser(
       value: (/* protocol */ String, /* fields */ Record[String, js.Array[String] | String]) => PossiblePromise[js.Array[ThirdpartyUserResponse]]
     ): Self = StObject.set(x, "getUser", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUserUndefined: Self = StObject.set(x, "getUser", js.undefined)
+    inline def setGetUserUndefined: Self = StObject.set(x, "getUser", js.undefined)
     
-    @scala.inline
-    def setParseLocation(value: /* alias */ String => PossiblePromise[js.Array[ThirdpartyLocationResponse]]): Self = StObject.set(x, "parseLocation", js.Any.fromFunction1(value))
+    inline def setParseLocation(value: /* alias */ String => PossiblePromise[js.Array[ThirdpartyLocationResponse]]): Self = StObject.set(x, "parseLocation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseLocationUndefined: Self = StObject.set(x, "parseLocation", js.undefined)
+    inline def setParseLocationUndefined: Self = StObject.set(x, "parseLocation", js.undefined)
     
-    @scala.inline
-    def setParseUser(value: /* userid */ String => PossiblePromise[js.Array[ThirdpartyLocationResponse]]): Self = StObject.set(x, "parseUser", js.Any.fromFunction1(value))
+    inline def setParseUser(value: /* userid */ String => PossiblePromise[js.Array[ThirdpartyLocationResponse]]): Self = StObject.set(x, "parseUser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseUserUndefined: Self = StObject.set(x, "parseUser", js.undefined)
+    inline def setParseUserUndefined: Self = StObject.set(x, "parseUser", js.undefined)
     
-    @scala.inline
-    def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value :_*))
   }
 }

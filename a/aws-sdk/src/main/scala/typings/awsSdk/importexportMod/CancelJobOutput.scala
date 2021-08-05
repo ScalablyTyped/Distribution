@@ -10,19 +10,15 @@ trait CancelJobOutput extends StObject {
 }
 object CancelJobOutput {
   
-  @scala.inline
-  def apply(): CancelJobOutput = {
+  inline def apply(): CancelJobOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelJobOutput]
   }
   
-  @scala.inline
-  implicit class CancelJobOutputMutableBuilder[Self <: CancelJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CancelJobOutput](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "Success", js.undefined)
   }
 }

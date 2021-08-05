@@ -18,22 +18,17 @@ trait StartApplicationRequest extends StObject {
 }
 object StartApplicationRequest {
   
-  @scala.inline
-  def apply(ApplicationName: ApplicationName, InputConfigurations: InputConfigurations): StartApplicationRequest = {
+  inline def apply(ApplicationName: ApplicationName, InputConfigurations: InputConfigurations): StartApplicationRequest = {
     val __obj = js.Dynamic.literal(ApplicationName = ApplicationName.asInstanceOf[js.Any], InputConfigurations = InputConfigurations.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartApplicationRequest]
   }
   
-  @scala.inline
-  implicit class StartApplicationRequestMutableBuilder[Self <: StartApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigurations(value: InputConfigurations): Self = StObject.set(x, "InputConfigurations", value.asInstanceOf[js.Any])
+    inline def setInputConfigurations(value: InputConfigurations): Self = StObject.set(x, "InputConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigurationsVarargs(value: InputConfiguration*): Self = StObject.set(x, "InputConfigurations", js.Array(value :_*))
+    inline def setInputConfigurationsVarargs(value: InputConfiguration*): Self = StObject.set(x, "InputConfigurations", js.Array(value :_*))
   }
 }

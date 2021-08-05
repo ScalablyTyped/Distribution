@@ -78,8 +78,7 @@ trait IInteractComponent extends StObject {
 }
 object IInteractComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add_items: Table,
     cooldown: Double,
     hurt_item: Double,
@@ -96,52 +95,36 @@ object IInteractComponent {
     __obj.asInstanceOf[IInteractComponent]
   }
   
-  @scala.inline
-  implicit class IInteractComponentMutableBuilder[Self <: IInteractComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IInteractComponent](x: Self) {
     
-    @scala.inline
-    def setAdd_items(value: Table): Self = StObject.set(x, "add_items", value.asInstanceOf[js.Any])
+    inline def setAdd_items(value: Table): Self = StObject.set(x, "add_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+    inline def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHurt_item(value: Double): Self = StObject.set(x, "hurt_item", value.asInstanceOf[js.Any])
+    inline def setHurt_item(value: Double): Self = StObject.set(x, "hurt_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteract_text(value: String): Self = StObject.set(x, "interact_text", value.asInstanceOf[js.Any])
+    inline def setInteract_text(value: String): Self = StObject.set(x, "interact_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOn_interact(value: MinecraftTrigger | String): Self = StObject.set(x, "on_interact", value.asInstanceOf[js.Any])
+    inline def setOn_interact(value: MinecraftTrigger | String): Self = StObject.set(x, "on_interact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParticle_on_start(value: Particleoffsettowardsinteractor): Self = StObject.set(x, "particle_on_start", value.asInstanceOf[js.Any])
+    inline def setParticle_on_start(value: Particleoffsettowardsinteractor): Self = StObject.set(x, "particle_on_start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlay_sounds(value: js.Array[String]): Self = StObject.set(x, "play_sounds", value.asInstanceOf[js.Any])
+    inline def setPlay_sounds(value: js.Array[String]): Self = StObject.set(x, "play_sounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlay_soundsVarargs(value: String*): Self = StObject.set(x, "play_sounds", js.Array(value :_*))
+    inline def setPlay_soundsVarargs(value: String*): Self = StObject.set(x, "play_sounds", js.Array(value :_*))
     
-    @scala.inline
-    def setSpawn_entities(value: js.Array[String]): Self = StObject.set(x, "spawn_entities", value.asInstanceOf[js.Any])
+    inline def setSpawn_entities(value: js.Array[String]): Self = StObject.set(x, "spawn_entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpawn_entitiesVarargs(value: String*): Self = StObject.set(x, "spawn_entities", js.Array(value :_*))
+    inline def setSpawn_entitiesVarargs(value: String*): Self = StObject.set(x, "spawn_entities", js.Array(value :_*))
     
-    @scala.inline
-    def setSpawn_items(value: Table): Self = StObject.set(x, "spawn_items", value.asInstanceOf[js.Any])
+    inline def setSpawn_items(value: Table): Self = StObject.set(x, "spawn_items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwing(value: Boolean): Self = StObject.set(x, "swing", value.asInstanceOf[js.Any])
+    inline def setSwing(value: Boolean): Self = StObject.set(x, "swing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransform_to_item(value: String): Self = StObject.set(x, "transform_to_item", value.asInstanceOf[js.Any])
+    inline def setTransform_to_item(value: String): Self = StObject.set(x, "transform_to_item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransform_to_itemUndefined: Self = StObject.set(x, "transform_to_item", js.undefined)
+    inline def setTransform_to_itemUndefined: Self = StObject.set(x, "transform_to_item", js.undefined)
     
-    @scala.inline
-    def setUse_item(value: Boolean): Self = StObject.set(x, "use_item", value.asInstanceOf[js.Any])
+    inline def setUse_item(value: Boolean): Self = StObject.set(x, "use_item", value.asInstanceOf[js.Any])
   }
 }

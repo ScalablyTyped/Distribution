@@ -11,19 +11,15 @@ trait PartialRenderOptions extends StObject {
 }
 object PartialRenderOptions {
   
-  @scala.inline
-  def apply(): PartialRenderOptions = {
+  inline def apply(): PartialRenderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialRenderOptions]
   }
   
-  @scala.inline
-  implicit class PartialRenderOptionsMutableBuilder[Self <: PartialRenderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialRenderOptions](x: Self) {
     
-    @scala.inline
-    def setRender(value: Fn0): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: Fn0): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
   }
 }

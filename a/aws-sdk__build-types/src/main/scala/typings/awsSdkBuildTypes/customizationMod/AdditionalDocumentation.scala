@@ -14,19 +14,15 @@ trait AdditionalDocumentation extends StObject {
 }
 object AdditionalDocumentation {
   
-  @scala.inline
-  def apply(): AdditionalDocumentation = {
+  inline def apply(): AdditionalDocumentation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdditionalDocumentation]
   }
   
-  @scala.inline
-  implicit class AdditionalDocumentationMutableBuilder[Self <: AdditionalDocumentation] (val x: Self) extends AnyVal {
+  extension [Self <: AdditionalDocumentation](x: Self) {
     
-    @scala.inline
-    def setAdditionalDocumentation(value: String): Self = StObject.set(x, "additionalDocumentation", value.asInstanceOf[js.Any])
+    inline def setAdditionalDocumentation(value: String): Self = StObject.set(x, "additionalDocumentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalDocumentationUndefined: Self = StObject.set(x, "additionalDocumentation", js.undefined)
+    inline def setAdditionalDocumentationUndefined: Self = StObject.set(x, "additionalDocumentation", js.undefined)
   }
 }

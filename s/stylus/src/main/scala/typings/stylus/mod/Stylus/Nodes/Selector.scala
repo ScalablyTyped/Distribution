@@ -15,8 +15,7 @@ trait Selector
 }
 object Selector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -37,16 +36,12 @@ object Selector {
     __obj.asInstanceOf[Selector]
   }
   
-  @scala.inline
-  implicit class SelectorMutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
+  extension [Self <: Selector](x: Self) {
     
-    @scala.inline
-    def setInherits(value: scala.Boolean): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
+    inline def setInherits(value: scala.Boolean): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegments(value: js.Array[Node]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[Node]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Node*): Self = StObject.set(x, "segments", js.Array(value :_*))
   }
 }

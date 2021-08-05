@@ -13,19 +13,15 @@ trait GetInstanceResponse extends StObject {
 }
 object GetInstanceResponse {
   
-  @scala.inline
-  def apply(): GetInstanceResponse = {
+  inline def apply(): GetInstanceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInstanceResponse]
   }
   
-  @scala.inline
-  implicit class GetInstanceResponseMutableBuilder[Self <: GetInstanceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstanceResponse](x: Self) {
     
-    @scala.inline
-    def setInstance(value: Instance): Self = StObject.set(x, "Instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Instance): Self = StObject.set(x, "Instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "Instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "Instance", js.undefined)
   }
 }

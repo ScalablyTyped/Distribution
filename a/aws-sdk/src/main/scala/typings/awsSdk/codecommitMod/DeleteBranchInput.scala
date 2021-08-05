@@ -18,19 +18,15 @@ trait DeleteBranchInput extends StObject {
 }
 object DeleteBranchInput {
   
-  @scala.inline
-  def apply(branchName: BranchName, repositoryName: RepositoryName): DeleteBranchInput = {
+  inline def apply(branchName: BranchName, repositoryName: RepositoryName): DeleteBranchInput = {
     val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], repositoryName = repositoryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBranchInput]
   }
   
-  @scala.inline
-  implicit class DeleteBranchInputMutableBuilder[Self <: DeleteBranchInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBranchInput](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
   }
 }

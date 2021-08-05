@@ -15,8 +15,7 @@ trait ParametersOrgsListForAuthenticatedUserEndpoint extends StObject {
 }
 object ParametersOrgsListForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: OrgsListForAuthenticatedUserEndpoint,
     response: OctokitResponse[OrgsListForAuthenticatedUserResponseData]
   ): ParametersOrgsListForAuthenticatedUserEndpoint = {
@@ -24,13 +23,10 @@ object ParametersOrgsListForAuthenticatedUserEndpoint {
     __obj.asInstanceOf[ParametersOrgsListForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersOrgsListForAuthenticatedUserEndpointMutableBuilder[Self <: ParametersOrgsListForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersOrgsListForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: OrgsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: OrgsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[OrgsListForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[OrgsListForAuthenticatedUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

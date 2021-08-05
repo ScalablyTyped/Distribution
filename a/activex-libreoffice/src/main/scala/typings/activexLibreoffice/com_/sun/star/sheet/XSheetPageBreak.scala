@@ -56,8 +56,7 @@ trait XSheetPageBreak
 }
 object XSheetPageBreak {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnPageBreaks: SafeArray[TablePageBreakData],
     RowPageBreaks: SafeArray[TablePageBreakData],
     acquire: () => Unit,
@@ -71,22 +70,16 @@ object XSheetPageBreak {
     __obj.asInstanceOf[XSheetPageBreak]
   }
   
-  @scala.inline
-  implicit class XSheetPageBreakMutableBuilder[Self <: XSheetPageBreak] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetPageBreak](x: Self) {
     
-    @scala.inline
-    def setColumnPageBreaks(value: SafeArray[TablePageBreakData]): Self = StObject.set(x, "ColumnPageBreaks", value.asInstanceOf[js.Any])
+    inline def setColumnPageBreaks(value: SafeArray[TablePageBreakData]): Self = StObject.set(x, "ColumnPageBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumnPageBreaks(value: () => SafeArray[TablePageBreakData]): Self = StObject.set(x, "getColumnPageBreaks", js.Any.fromFunction0(value))
+    inline def setGetColumnPageBreaks(value: () => SafeArray[TablePageBreakData]): Self = StObject.set(x, "getColumnPageBreaks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRowPageBreaks(value: () => SafeArray[TablePageBreakData]): Self = StObject.set(x, "getRowPageBreaks", js.Any.fromFunction0(value))
+    inline def setGetRowPageBreaks(value: () => SafeArray[TablePageBreakData]): Self = StObject.set(x, "getRowPageBreaks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAllManualPageBreaks(value: () => Unit): Self = StObject.set(x, "removeAllManualPageBreaks", js.Any.fromFunction0(value))
+    inline def setRemoveAllManualPageBreaks(value: () => Unit): Self = StObject.set(x, "removeAllManualPageBreaks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRowPageBreaks(value: SafeArray[TablePageBreakData]): Self = StObject.set(x, "RowPageBreaks", value.asInstanceOf[js.Any])
+    inline def setRowPageBreaks(value: SafeArray[TablePageBreakData]): Self = StObject.set(x, "RowPageBreaks", value.asInstanceOf[js.Any])
   }
 }

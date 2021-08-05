@@ -12,9 +12,7 @@ object credentials {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProvider(namespaceId: String): Thenable[CredentialProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProvider")(namespaceId.asInstanceOf[js.Any]).asInstanceOf[Thenable[CredentialProvider]]
+  inline def getProvider(namespaceId: String): Thenable[CredentialProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProvider")(namespaceId.asInstanceOf[js.Any]).asInstanceOf[Thenable[CredentialProvider]]
   
-  @scala.inline
-  def registerProvider(provider: CredentialProvider): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[Disposable]
+  inline def registerProvider(provider: CredentialProvider): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[Disposable]
 }

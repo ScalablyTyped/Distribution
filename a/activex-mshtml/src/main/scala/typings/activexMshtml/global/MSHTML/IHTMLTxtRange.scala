@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLTxtRange")
 @js.native
-class IHTMLTxtRange protected ()
+/* private */ class IHTMLTxtRange ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLTxtRange

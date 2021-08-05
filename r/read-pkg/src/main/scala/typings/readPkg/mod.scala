@@ -20,12 +20,9 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply(): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[NormalizedPackageJson]]
-  @scala.inline
-  def apply(options: NormalizeOptions): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NormalizedPackageJson]]
-  @scala.inline
-  def apply(options: Options): js.Promise[PackageJson] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageJson]]
+  inline def apply(): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[NormalizedPackageJson]]
+  inline def apply(options: NormalizeOptions): js.Promise[NormalizedPackageJson] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NormalizedPackageJson]]
+  inline def apply(options: Options): js.Promise[PackageJson] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageJson]]
   
   @JSImport("read-pkg", JSImport.Namespace)
   @js.native
@@ -42,12 +39,9 @@ object mod {
   	//=> {name: 'unicorn', …}
   	```
   	*/
-  @scala.inline
-  def sync(): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[NormalizedPackageJson]
-  @scala.inline
-  def sync(options: NormalizeOptions): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizedPackageJson]
-  @scala.inline
-  def sync(options: Options): PackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[PackageJson]
+  inline def sync(): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[NormalizedPackageJson]
+  inline def sync(options: NormalizeOptions): NormalizedPackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizedPackageJson]
+  inline def sync(options: Options): PackageJson = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[PackageJson]
   
   trait NormalizeOptions
     extends StObject
@@ -58,20 +52,16 @@ object mod {
   }
   object NormalizeOptions {
     
-    @scala.inline
-    def apply(): NormalizeOptions = {
+    inline def apply(): NormalizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NormalizeOptions]
     }
     
-    @scala.inline
-    implicit class NormalizeOptionsMutableBuilder[Self <: NormalizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizeOptions](x: Self) {
       
-      @scala.inline
-      def setNormalize(value: `true`): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+      inline def setNormalize(value: `true`): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     }
   }
   
@@ -88,20 +78,16 @@ object mod {
   }
   object NormalizedPackageJson {
     
-    @scala.inline
-    def apply(_id: String, readme: String): NormalizedPackageJson = {
+    inline def apply(_id: String, readme: String): NormalizedPackageJson = {
       val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], readme = readme.asInstanceOf[js.Any])
       __obj.asInstanceOf[NormalizedPackageJson]
     }
     
-    @scala.inline
-    implicit class NormalizedPackageJsonMutableBuilder[Self <: NormalizedPackageJson] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizedPackageJson](x: Self) {
       
-      @scala.inline
-      def setReadme(value: String): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
+      inline def setReadme(value: String): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,26 +107,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+      inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     }
   }
   

@@ -46,8 +46,7 @@ trait XSlideShowListener
 }
 object XSlideShowListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     beginEvent: XAnimationNode => Unit,
     disposing: EventObject => Unit,
@@ -67,28 +66,20 @@ object XSlideShowListener {
     __obj.asInstanceOf[XSlideShowListener]
   }
   
-  @scala.inline
-  implicit class XSlideShowListenerMutableBuilder[Self <: XSlideShowListener] (val x: Self) extends AnyVal {
+  extension [Self <: XSlideShowListener](x: Self) {
     
-    @scala.inline
-    def setHyperLinkClicked(value: String => Unit): Self = StObject.set(x, "hyperLinkClicked", js.Any.fromFunction1(value))
+    inline def setHyperLinkClicked(value: String => Unit): Self = StObject.set(x, "hyperLinkClicked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPaused(value: () => Unit): Self = StObject.set(x, "paused", js.Any.fromFunction0(value))
+    inline def setPaused(value: () => Unit): Self = StObject.set(x, "paused", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResumed(value: () => Unit): Self = StObject.set(x, "resumed", js.Any.fromFunction0(value))
+    inline def setResumed(value: () => Unit): Self = StObject.set(x, "resumed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSlideAnimationsEnded(value: () => Unit): Self = StObject.set(x, "slideAnimationsEnded", js.Any.fromFunction0(value))
+    inline def setSlideAnimationsEnded(value: () => Unit): Self = StObject.set(x, "slideAnimationsEnded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSlideEnded(value: Boolean => Unit): Self = StObject.set(x, "slideEnded", js.Any.fromFunction1(value))
+    inline def setSlideEnded(value: Boolean => Unit): Self = StObject.set(x, "slideEnded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSlideTransitionEnded(value: () => Unit): Self = StObject.set(x, "slideTransitionEnded", js.Any.fromFunction0(value))
+    inline def setSlideTransitionEnded(value: () => Unit): Self = StObject.set(x, "slideTransitionEnded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSlideTransitionStarted(value: () => Unit): Self = StObject.set(x, "slideTransitionStarted", js.Any.fromFunction0(value))
+    inline def setSlideTransitionStarted(value: () => Unit): Self = StObject.set(x, "slideTransitionStarted", js.Any.fromFunction0(value))
   }
 }

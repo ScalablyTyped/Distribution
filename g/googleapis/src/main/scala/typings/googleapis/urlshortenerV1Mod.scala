@@ -142,17 +142,14 @@ object urlshortenerV1Mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -177,32 +174,24 @@ object urlshortenerV1Mod {
     }
     object ParamsResourceUrlGet {
       
-      @scala.inline
-      def apply(): ParamsResourceUrlGet = {
+      inline def apply(): ParamsResourceUrlGet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceUrlGet]
       }
       
-      @scala.inline
-      implicit class ParamsResourceUrlGetMutableBuilder[Self <: ParamsResourceUrlGet] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceUrlGet](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+        inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+        inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
         
-        @scala.inline
-        def setShortUrl(value: String): Self = StObject.set(x, "shortUrl", value.asInstanceOf[js.Any])
+        inline def setShortUrl(value: String): Self = StObject.set(x, "shortUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShortUrlUndefined: Self = StObject.set(x, "shortUrl", js.undefined)
+        inline def setShortUrlUndefined: Self = StObject.set(x, "shortUrl", js.undefined)
       }
     }
     
@@ -222,26 +211,20 @@ object urlshortenerV1Mod {
     }
     object ParamsResourceUrlInsert {
       
-      @scala.inline
-      def apply(): ParamsResourceUrlInsert = {
+      inline def apply(): ParamsResourceUrlInsert = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceUrlInsert]
       }
       
-      @scala.inline
-      implicit class ParamsResourceUrlInsertMutableBuilder[Self <: ParamsResourceUrlInsert] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceUrlInsert](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setRequestBody(value: SchemaUrl): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+        inline def setRequestBody(value: SchemaUrl): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+        inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
       }
     }
     
@@ -266,32 +249,24 @@ object urlshortenerV1Mod {
     }
     object ParamsResourceUrlList {
       
-      @scala.inline
-      def apply(): ParamsResourceUrlList = {
+      inline def apply(): ParamsResourceUrlList = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceUrlList]
       }
       
-      @scala.inline
-      implicit class ParamsResourceUrlListMutableBuilder[Self <: ParamsResourceUrlList] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceUrlList](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+        inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+        inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
         
-        @scala.inline
-        def `setStart-token`(value: String): Self = StObject.set(x, "start-token", value.asInstanceOf[js.Any])
+        inline def `setStart-token`(value: String): Self = StObject.set(x, "start-token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setStart-tokenUndefined`: Self = StObject.set(x, "start-token", js.undefined)
+        inline def `setStart-tokenUndefined`: Self = StObject.set(x, "start-token", js.undefined)
       }
     }
     
@@ -334,62 +309,44 @@ object urlshortenerV1Mod {
     }
     object SchemaAnalyticsSnapshot {
       
-      @scala.inline
-      def apply(): SchemaAnalyticsSnapshot = {
+      inline def apply(): SchemaAnalyticsSnapshot = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaAnalyticsSnapshot]
       }
       
-      @scala.inline
-      implicit class SchemaAnalyticsSnapshotMutableBuilder[Self <: SchemaAnalyticsSnapshot] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaAnalyticsSnapshot](x: Self) {
         
-        @scala.inline
-        def setBrowsers(value: js.Array[SchemaStringCount]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+        inline def setBrowsers(value: js.Array[SchemaStringCount]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
+        inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
         
-        @scala.inline
-        def setBrowsersVarargs(value: SchemaStringCount*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+        inline def setBrowsersVarargs(value: SchemaStringCount*): Self = StObject.set(x, "browsers", js.Array(value :_*))
         
-        @scala.inline
-        def setCountries(value: js.Array[SchemaStringCount]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+        inline def setCountries(value: js.Array[SchemaStringCount]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
+        inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
         
-        @scala.inline
-        def setCountriesVarargs(value: SchemaStringCount*): Self = StObject.set(x, "countries", js.Array(value :_*))
+        inline def setCountriesVarargs(value: SchemaStringCount*): Self = StObject.set(x, "countries", js.Array(value :_*))
         
-        @scala.inline
-        def setLongUrlClicks(value: String): Self = StObject.set(x, "longUrlClicks", value.asInstanceOf[js.Any])
+        inline def setLongUrlClicks(value: String): Self = StObject.set(x, "longUrlClicks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLongUrlClicksUndefined: Self = StObject.set(x, "longUrlClicks", js.undefined)
+        inline def setLongUrlClicksUndefined: Self = StObject.set(x, "longUrlClicks", js.undefined)
         
-        @scala.inline
-        def setPlatforms(value: js.Array[SchemaStringCount]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
+        inline def setPlatforms(value: js.Array[SchemaStringCount]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
+        inline def setPlatformsUndefined: Self = StObject.set(x, "platforms", js.undefined)
         
-        @scala.inline
-        def setPlatformsVarargs(value: SchemaStringCount*): Self = StObject.set(x, "platforms", js.Array(value :_*))
+        inline def setPlatformsVarargs(value: SchemaStringCount*): Self = StObject.set(x, "platforms", js.Array(value :_*))
         
-        @scala.inline
-        def setReferrers(value: js.Array[SchemaStringCount]): Self = StObject.set(x, "referrers", value.asInstanceOf[js.Any])
+        inline def setReferrers(value: js.Array[SchemaStringCount]): Self = StObject.set(x, "referrers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReferrersUndefined: Self = StObject.set(x, "referrers", js.undefined)
+        inline def setReferrersUndefined: Self = StObject.set(x, "referrers", js.undefined)
         
-        @scala.inline
-        def setReferrersVarargs(value: SchemaStringCount*): Self = StObject.set(x, "referrers", js.Array(value :_*))
+        inline def setReferrersVarargs(value: SchemaStringCount*): Self = StObject.set(x, "referrers", js.Array(value :_*))
         
-        @scala.inline
-        def setShortUrlClicks(value: String): Self = StObject.set(x, "shortUrlClicks", value.asInstanceOf[js.Any])
+        inline def setShortUrlClicks(value: String): Self = StObject.set(x, "shortUrlClicks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShortUrlClicksUndefined: Self = StObject.set(x, "shortUrlClicks", js.undefined)
+        inline def setShortUrlClicksUndefined: Self = StObject.set(x, "shortUrlClicks", js.undefined)
       }
     }
     
@@ -422,44 +379,32 @@ object urlshortenerV1Mod {
     }
     object SchemaAnalyticsSummary {
       
-      @scala.inline
-      def apply(): SchemaAnalyticsSummary = {
+      inline def apply(): SchemaAnalyticsSummary = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaAnalyticsSummary]
       }
       
-      @scala.inline
-      implicit class SchemaAnalyticsSummaryMutableBuilder[Self <: SchemaAnalyticsSummary] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaAnalyticsSummary](x: Self) {
         
-        @scala.inline
-        def setAllTime(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "allTime", value.asInstanceOf[js.Any])
+        inline def setAllTime(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "allTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllTimeUndefined: Self = StObject.set(x, "allTime", js.undefined)
+        inline def setAllTimeUndefined: Self = StObject.set(x, "allTime", js.undefined)
         
-        @scala.inline
-        def setDay(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+        inline def setDay(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+        inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
         
-        @scala.inline
-        def setMonth(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+        inline def setMonth(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+        inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
         
-        @scala.inline
-        def setTwoHours(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "twoHours", value.asInstanceOf[js.Any])
+        inline def setTwoHours(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "twoHours", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTwoHoursUndefined: Self = StObject.set(x, "twoHours", js.undefined)
+        inline def setTwoHoursUndefined: Self = StObject.set(x, "twoHours", js.undefined)
         
-        @scala.inline
-        def setWeek(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+        inline def setWeek(value: SchemaAnalyticsSnapshot): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
+        inline def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
       }
     }
     
@@ -479,26 +424,20 @@ object urlshortenerV1Mod {
     }
     object SchemaStringCount {
       
-      @scala.inline
-      def apply(): SchemaStringCount = {
+      inline def apply(): SchemaStringCount = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaStringCount]
       }
       
-      @scala.inline
-      implicit class SchemaStringCountMutableBuilder[Self <: SchemaStringCount] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaStringCount](x: Self) {
         
-        @scala.inline
-        def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+        inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       }
     }
     
@@ -543,50 +482,36 @@ object urlshortenerV1Mod {
     }
     object SchemaUrl {
       
-      @scala.inline
-      def apply(): SchemaUrl = {
+      inline def apply(): SchemaUrl = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaUrl]
       }
       
-      @scala.inline
-      implicit class SchemaUrlMutableBuilder[Self <: SchemaUrl] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaUrl](x: Self) {
         
-        @scala.inline
-        def setAnalytics(value: SchemaAnalyticsSummary): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
+        inline def setAnalytics(value: SchemaAnalyticsSummary): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
+        inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
         
-        @scala.inline
-        def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+        inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+        inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+        inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setLongUrl(value: String): Self = StObject.set(x, "longUrl", value.asInstanceOf[js.Any])
+        inline def setLongUrl(value: String): Self = StObject.set(x, "longUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLongUrlUndefined: Self = StObject.set(x, "longUrl", js.undefined)
+        inline def setLongUrlUndefined: Self = StObject.set(x, "longUrl", js.undefined)
         
-        @scala.inline
-        def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+        inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       }
     }
     
@@ -622,47 +547,34 @@ object urlshortenerV1Mod {
     }
     object SchemaUrlHistory {
       
-      @scala.inline
-      def apply(): SchemaUrlHistory = {
+      inline def apply(): SchemaUrlHistory = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaUrlHistory]
       }
       
-      @scala.inline
-      implicit class SchemaUrlHistoryMutableBuilder[Self <: SchemaUrlHistory] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaUrlHistory](x: Self) {
         
-        @scala.inline
-        def setItems(value: js.Array[SchemaUrl]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[SchemaUrl]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+        inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
+        inline def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
         
-        @scala.inline
-        def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+        inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
         
-        @scala.inline
-        def setItemsVarargs(value: SchemaUrl*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: SchemaUrl*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+        inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
+        inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
       }
     }
     
@@ -708,56 +620,40 @@ object urlshortenerV1Mod {
     }
     object StandardParameters {
       
-      @scala.inline
-      def apply(): StandardParameters = {
+      inline def apply(): StandardParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StandardParameters]
       }
       
-      @scala.inline
-      implicit class StandardParametersMutableBuilder[Self <: StandardParameters] (val x: Self) extends AnyVal {
+      extension [Self <: StandardParameters](x: Self) {
         
-        @scala.inline
-        def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+        inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+        inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+        inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
         
-        @scala.inline
-        def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+        inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+        inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
         
-        @scala.inline
-        def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+        inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+        inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
         
-        @scala.inline
-        def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
+        inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
+        inline def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
       }
     }
   }

@@ -22,20 +22,16 @@ object emailClickMod extends Shortcut {
   }
   object EmailClickProps {
     
-    @scala.inline
-    def apply(): EmailClickProps = {
+    inline def apply(): EmailClickProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EmailClickProps]
     }
     
-    @scala.inline
-    implicit class EmailClickPropsMutableBuilder[Self <: EmailClickProps] (val x: Self) extends AnyVal {
+    extension [Self <: EmailClickProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

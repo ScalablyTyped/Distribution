@@ -12,25 +12,19 @@ trait SendMediaGroupOptions extends StObject {
 }
 object SendMediaGroupOptions {
   
-  @scala.inline
-  def apply(): SendMediaGroupOptions = {
+  inline def apply(): SendMediaGroupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendMediaGroupOptions]
   }
   
-  @scala.inline
-  implicit class SendMediaGroupOptionsMutableBuilder[Self <: SendMediaGroupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendMediaGroupOptions](x: Self) {
     
-    @scala.inline
-    def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
+    inline def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable_notificationUndefined: Self = StObject.set(x, "disable_notification", js.undefined)
+    inline def setDisable_notificationUndefined: Self = StObject.set(x, "disable_notification", js.undefined)
     
-    @scala.inline
-    def setReply_to_message_id(value: Double): Self = StObject.set(x, "reply_to_message_id", value.asInstanceOf[js.Any])
+    inline def setReply_to_message_id(value: Double): Self = StObject.set(x, "reply_to_message_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply_to_message_idUndefined: Self = StObject.set(x, "reply_to_message_id", js.undefined)
+    inline def setReply_to_message_idUndefined: Self = StObject.set(x, "reply_to_message_id", js.undefined)
   }
 }

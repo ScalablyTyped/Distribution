@@ -18,46 +18,33 @@ trait CompilerOptions extends StObject {
 }
 object CompilerOptions {
   
-  @scala.inline
-  def apply(): CompilerOptions = {
+  inline def apply(): CompilerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompilerOptions]
   }
   
-  @scala.inline
-  implicit class CompilerOptionsMutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CompilerOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
+    inline def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEncapsulationUndefined: Self = StObject.set(x, "defaultEncapsulation", js.undefined)
+    inline def setDefaultEncapsulationUndefined: Self = StObject.set(x, "defaultEncapsulation", js.undefined)
     
-    @scala.inline
-    def setMissingTranslation(value: MissingTranslationStrategy): Self = StObject.set(x, "missingTranslation", value.asInstanceOf[js.Any])
+    inline def setMissingTranslation(value: MissingTranslationStrategy): Self = StObject.set(x, "missingTranslation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingTranslationUndefined: Self = StObject.set(x, "missingTranslation", js.undefined)
+    inline def setMissingTranslationUndefined: Self = StObject.set(x, "missingTranslation", js.undefined)
     
-    @scala.inline
-    def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
+    inline def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
+    inline def setPreserveWhitespacesUndefined: Self = StObject.set(x, "preserveWhitespaces", js.undefined)
     
-    @scala.inline
-    def setProviders(value: js.Array[StaticProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[StaticProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    @scala.inline
-    def setProvidersVarargs(value: StaticProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: StaticProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
-    @scala.inline
-    def setUseJit(value: Boolean): Self = StObject.set(x, "useJit", value.asInstanceOf[js.Any])
+    inline def setUseJit(value: Boolean): Self = StObject.set(x, "useJit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseJitUndefined: Self = StObject.set(x, "useJit", js.undefined)
+    inline def setUseJitUndefined: Self = StObject.set(x, "useJit", js.undefined)
   }
 }

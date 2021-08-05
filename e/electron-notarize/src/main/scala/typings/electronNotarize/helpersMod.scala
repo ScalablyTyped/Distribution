@@ -16,17 +16,13 @@ object helpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isSecret(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSecret")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSecret(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSecret")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def makeSecret(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSecret")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def makeSecret(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("makeSecret")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parseNotarizationInfo(info: String): NotarizationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNotarizationInfo")(info.asInstanceOf[js.Any]).asInstanceOf[NotarizationInfo]
+  inline def parseNotarizationInfo(info: String): NotarizationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("parseNotarizationInfo")(info.asInstanceOf[js.Any]).asInstanceOf[NotarizationInfo]
   
-  @scala.inline
-  def withTempDir[T](fn: js.Function1[/* dir */ String, js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTempDir")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def withTempDir[T](fn: js.Function1[/* dir */ String, js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTempDir")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   trait NotarizationInfo extends StObject {
     
@@ -44,41 +40,30 @@ object helpersMod {
   }
   object NotarizationInfo {
     
-    @scala.inline
-    def apply(date: Date, status: invalid | (`in progress`) | success, uuid: String): NotarizationInfo = {
+    inline def apply(date: Date, status: invalid | (`in progress`) | success, uuid: String): NotarizationInfo = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], logFileUrl = null)
       __obj.asInstanceOf[NotarizationInfo]
     }
     
-    @scala.inline
-    implicit class NotarizationInfoMutableBuilder[Self <: NotarizationInfo] (val x: Self) extends AnyVal {
+    extension [Self <: NotarizationInfo](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogFileUrl(value: String): Self = StObject.set(x, "logFileUrl", value.asInstanceOf[js.Any])
+      inline def setLogFileUrl(value: String): Self = StObject.set(x, "logFileUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogFileUrlNull: Self = StObject.set(x, "logFileUrl", null)
+      inline def setLogFileUrlNull: Self = StObject.set(x, "logFileUrl", null)
       
-      @scala.inline
-      def setStatus(value: invalid | (`in progress`) | success): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: invalid | (`in progress`) | success): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: `0` | `2`): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: `0` | `2`): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+      inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+      inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,19 +18,15 @@ trait StepDetail extends StObject {
 }
 object StepDetail {
   
-  @scala.inline
-  def apply(ExecutionStatusDetail: StepExecutionStatusDetail, StepConfig: StepConfig): StepDetail = {
+  inline def apply(ExecutionStatusDetail: StepExecutionStatusDetail, StepConfig: StepConfig): StepDetail = {
     val __obj = js.Dynamic.literal(ExecutionStatusDetail = ExecutionStatusDetail.asInstanceOf[js.Any], StepConfig = StepConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepDetail]
   }
   
-  @scala.inline
-  implicit class StepDetailMutableBuilder[Self <: StepDetail] (val x: Self) extends AnyVal {
+  extension [Self <: StepDetail](x: Self) {
     
-    @scala.inline
-    def setExecutionStatusDetail(value: StepExecutionStatusDetail): Self = StObject.set(x, "ExecutionStatusDetail", value.asInstanceOf[js.Any])
+    inline def setExecutionStatusDetail(value: StepExecutionStatusDetail): Self = StObject.set(x, "ExecutionStatusDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepConfig(value: StepConfig): Self = StObject.set(x, "StepConfig", value.asInstanceOf[js.Any])
+    inline def setStepConfig(value: StepConfig): Self = StObject.set(x, "StepConfig", value.asInstanceOf[js.Any])
   }
 }

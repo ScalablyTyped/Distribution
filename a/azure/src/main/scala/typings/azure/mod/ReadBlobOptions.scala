@@ -18,37 +18,27 @@ trait ReadBlobOptions
 }
 object ReadBlobOptions {
   
-  @scala.inline
-  def apply(): ReadBlobOptions = {
+  inline def apply(): ReadBlobOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadBlobOptions]
   }
   
-  @scala.inline
-  implicit class ReadBlobOptionsMutableBuilder[Self <: ReadBlobOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadBlobOptions](x: Self) {
     
-    @scala.inline
-    def setDisableContentMD5Validation(value: Boolean): Self = StObject.set(x, "disableContentMD5Validation", value.asInstanceOf[js.Any])
+    inline def setDisableContentMD5Validation(value: Boolean): Self = StObject.set(x, "disableContentMD5Validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableContentMD5ValidationUndefined: Self = StObject.set(x, "disableContentMD5Validation", js.undefined)
+    inline def setDisableContentMD5ValidationUndefined: Self = StObject.set(x, "disableContentMD5Validation", js.undefined)
     
-    @scala.inline
-    def setRangeEnd(value: String): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
+    inline def setRangeEnd(value: String): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
+    inline def setRangeEndUndefined: Self = StObject.set(x, "rangeEnd", js.undefined)
     
-    @scala.inline
-    def setRangeStart(value: String): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
+    inline def setRangeStart(value: String): Self = StObject.set(x, "rangeStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
+    inline def setRangeStartUndefined: Self = StObject.set(x, "rangeStart", js.undefined)
     
-    @scala.inline
-    def setUseTransactionalMD5(value: Boolean): Self = StObject.set(x, "useTransactionalMD5", value.asInstanceOf[js.Any])
+    inline def setUseTransactionalMD5(value: Boolean): Self = StObject.set(x, "useTransactionalMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTransactionalMD5Undefined: Self = StObject.set(x, "useTransactionalMD5", js.undefined)
+    inline def setUseTransactionalMD5Undefined: Self = StObject.set(x, "useTransactionalMD5", js.undefined)
   }
 }

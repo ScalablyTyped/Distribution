@@ -10,19 +10,15 @@ trait PurchaseReservedNodeOfferingResult extends StObject {
 }
 object PurchaseReservedNodeOfferingResult {
   
-  @scala.inline
-  def apply(): PurchaseReservedNodeOfferingResult = {
+  inline def apply(): PurchaseReservedNodeOfferingResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PurchaseReservedNodeOfferingResult]
   }
   
-  @scala.inline
-  implicit class PurchaseReservedNodeOfferingResultMutableBuilder[Self <: PurchaseReservedNodeOfferingResult] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseReservedNodeOfferingResult](x: Self) {
     
-    @scala.inline
-    def setReservedNode(value: ReservedNode): Self = StObject.set(x, "ReservedNode", value.asInstanceOf[js.Any])
+    inline def setReservedNode(value: ReservedNode): Self = StObject.set(x, "ReservedNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedNodeUndefined: Self = StObject.set(x, "ReservedNode", js.undefined)
+    inline def setReservedNodeUndefined: Self = StObject.set(x, "ReservedNode", js.undefined)
   }
 }

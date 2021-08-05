@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Stage extends StObject
 object Stage {
   
-  @scala.inline
-  def onAuthRequired: typings.chromeApps.chromeAppsStrings.onAuthRequired = "onAuthRequired".asInstanceOf[typings.chromeApps.chromeAppsStrings.onAuthRequired]
+  inline def onAuthRequired: typings.chromeApps.chromeAppsStrings.onAuthRequired = "onAuthRequired".asInstanceOf[typings.chromeApps.chromeAppsStrings.onAuthRequired]
   
-  @scala.inline
-  def onBeforeRequest: typings.chromeApps.chromeAppsStrings.onBeforeRequest = "onBeforeRequest".asInstanceOf[typings.chromeApps.chromeAppsStrings.onBeforeRequest]
+  inline def onBeforeRequest: typings.chromeApps.chromeAppsStrings.onBeforeRequest = "onBeforeRequest".asInstanceOf[typings.chromeApps.chromeAppsStrings.onBeforeRequest]
   
-  @scala.inline
-  def onBeforeSendHeaders: typings.chromeApps.chromeAppsStrings.onBeforeSendHeaders = "onBeforeSendHeaders".asInstanceOf[typings.chromeApps.chromeAppsStrings.onBeforeSendHeaders]
+  inline def onBeforeSendHeaders: typings.chromeApps.chromeAppsStrings.onBeforeSendHeaders = "onBeforeSendHeaders".asInstanceOf[typings.chromeApps.chromeAppsStrings.onBeforeSendHeaders]
   
-  @scala.inline
-  def onHeadersReceived: typings.chromeApps.chromeAppsStrings.onHeadersReceived = "onHeadersReceived".asInstanceOf[typings.chromeApps.chromeAppsStrings.onHeadersReceived]
+  inline def onHeadersReceived: typings.chromeApps.chromeAppsStrings.onHeadersReceived = "onHeadersReceived".asInstanceOf[typings.chromeApps.chromeAppsStrings.onHeadersReceived]
 }

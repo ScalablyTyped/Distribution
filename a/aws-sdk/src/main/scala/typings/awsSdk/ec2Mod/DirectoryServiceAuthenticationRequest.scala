@@ -13,19 +13,15 @@ trait DirectoryServiceAuthenticationRequest extends StObject {
 }
 object DirectoryServiceAuthenticationRequest {
   
-  @scala.inline
-  def apply(): DirectoryServiceAuthenticationRequest = {
+  inline def apply(): DirectoryServiceAuthenticationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectoryServiceAuthenticationRequest]
   }
   
-  @scala.inline
-  implicit class DirectoryServiceAuthenticationRequestMutableBuilder[Self <: DirectoryServiceAuthenticationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DirectoryServiceAuthenticationRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: String): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: String): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
   }
 }

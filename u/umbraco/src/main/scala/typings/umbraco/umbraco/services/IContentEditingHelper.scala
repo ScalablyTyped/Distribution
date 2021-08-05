@@ -97,8 +97,7 @@ trait IContentEditingHelper extends StObject {
 }
 object IContentEditingHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAllProps: js.Any => js.Any,
     getAllowedActions: (js.Any, js.Any) => js.Array[String],
     getButtonFromAction: String => js.Any,
@@ -111,28 +110,20 @@ object IContentEditingHelper {
     __obj.asInstanceOf[IContentEditingHelper]
   }
   
-  @scala.inline
-  implicit class IContentEditingHelperMutableBuilder[Self <: IContentEditingHelper] (val x: Self) extends AnyVal {
+  extension [Self <: IContentEditingHelper](x: Self) {
     
-    @scala.inline
-    def setGetAllProps(value: js.Any => js.Any): Self = StObject.set(x, "getAllProps", js.Any.fromFunction1(value))
+    inline def setGetAllProps(value: js.Any => js.Any): Self = StObject.set(x, "getAllProps", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllowedActions(value: (js.Any, js.Any) => js.Array[String]): Self = StObject.set(x, "getAllowedActions", js.Any.fromFunction2(value))
+    inline def setGetAllowedActions(value: (js.Any, js.Any) => js.Array[String]): Self = StObject.set(x, "getAllowedActions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetButtonFromAction(value: String => js.Any): Self = StObject.set(x, "getButtonFromAction", js.Any.fromFunction1(value))
+    inline def setGetButtonFromAction(value: String => js.Any): Self = StObject.set(x, "getButtonFromAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleSaveError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "handleSaveError", js.Any.fromFunction1(value))
+    inline def setHandleSaveError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "handleSaveError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleSuccessfulSave(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "handleSuccessfulSave", js.Any.fromFunction1(value))
+    inline def setHandleSuccessfulSave(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "handleSuccessfulSave", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReBindChangedProperties(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "reBindChangedProperties", js.Any.fromFunction2(value))
+    inline def setReBindChangedProperties(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "reBindChangedProperties", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRedirectToCreatedContent(value: (Double, js.Any) => Unit): Self = StObject.set(x, "redirectToCreatedContent", js.Any.fromFunction2(value))
+    inline def setRedirectToCreatedContent(value: (Double, js.Any) => Unit): Self = StObject.set(x, "redirectToCreatedContent", js.Any.fromFunction2(value))
   }
 }

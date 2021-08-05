@@ -12,19 +12,15 @@ trait FileSize extends StObject {
 }
 object FileSize {
   
-  @scala.inline
-  def apply(count: Double, fileSize: Double): FileSize = {
+  inline def apply(count: Double, fileSize: Double): FileSize = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], fileSize = fileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSize]
   }
   
-  @scala.inline
-  implicit class FileSizeMutableBuilder[Self <: FileSize] (val x: Self) extends AnyVal {
+  extension [Self <: FileSize](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
   }
 }

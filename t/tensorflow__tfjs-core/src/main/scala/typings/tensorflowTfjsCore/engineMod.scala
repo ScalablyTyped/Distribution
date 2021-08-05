@@ -48,17 +48,17 @@ object engineMod {
     
     var ENV: Environment = js.native
     
-    var addTapeNode: js.Any = js.native
+    /* private */ var addTapeNode: js.Any = js.native
     
     val backend: KernelBackend = js.native
     
-    var backendInstance: js.Any = js.native
+    /* private */ var backendInstance: js.Any = js.native
     
     var backendName: String = js.native
     
     def backendNames(): js.Array[String] = js.native
     
-    var checkKernelForMemLeak: js.Any = js.native
+    /* private */ var checkKernelForMemLeak: js.Any = js.native
     
     /**
       * This method is called instead of the public-facing tensor.clone() when
@@ -69,12 +69,12 @@ object engineMod {
       * This method will go away once all kernels are modularized since we won't
       * need to turn off the tape inside runKernel().
       */
-    @JSName("clone")
+    /* private */ @JSName("clone")
     var clone_FEngine: js.Any = js.native
     
     def customGrad[T /* <: Tensor[Rank] */](f: CustomGradientFunc[T]): js.Function1[/* repeated */ Tensor[Rank] | GradSaveFunc, T] = js.native
     
-    var disposeRegisteredKernels: js.Any = js.native
+    /* private */ var disposeRegisteredKernels: js.Any = js.native
     
     def disposeVariables(): Unit = js.native
     
@@ -85,13 +85,13 @@ object engineMod {
     def endScope(): Unit = js.native
     def endScope(result: TensorContainer): Unit = js.native
     
-    var endTape: js.Any = js.native
+    /* private */ var endTape: js.Any = js.native
     
     def findBackend(backendName: String): KernelBackend = js.native
     
     def findBackendFactory(backendName: String): js.Function0[KernelBackend | js.Promise[KernelBackend]] = js.native
     
-    var getSortedBackends: js.Any = js.native
+    /* private */ var getSortedBackends: js.Any = js.native
     
     /**
       * Returns a list of tensors to save for a given gradient calculation.
@@ -103,7 +103,7 @@ object engineMod {
       * @param inputs a map of input tensors.
       * @param outputs an array of output tensors from forward mode of kernel.
       */
-    var getTensorsForGradient: js.Any = js.native
+    /* private */ var getTensorsForGradient: js.Any = js.native
     
     /**
       * Returns gradients of `f` with respect to each of the `xs`. The gradients
@@ -124,9 +124,9 @@ object engineMod {
       * whether the initialization of the backend suceeded. Throws an error if
       * there is no backend in the factory registry.
       */
-    var initializeBackend: js.Any = js.native
+    /* private */ var initializeBackend: js.Any = js.native
     
-    var initializeBackendsAndReturnBest: js.Any = js.native
+    /* private */ var initializeBackendsAndReturnBest: js.Any = js.native
     
     def isTapeOn(): Boolean = js.native
     
@@ -152,17 +152,17 @@ object engineMod {
     /* CompleteClass */
     override def moveData(backend: KernelBackend, dataId: DataId): Unit = js.native
     
-    var nextTensorId: js.Any = js.native
+    /* private */ var nextTensorId: js.Any = js.native
     
-    var nextVariableId: js.Any = js.native
+    /* private */ var nextVariableId: js.Any = js.native
     
-    var pendingBackendInit: js.Any = js.native
+    /* private */ var pendingBackendInit: js.Any = js.native
     
-    var pendingBackendInitId: js.Any = js.native
+    /* private */ var pendingBackendInitId: js.Any = js.native
     
     def profile(query: js.Function0[TensorContainer | js.Promise[TensorContainer]]): js.Promise[ProfileInfo] = js.native
     
-    var profiler: js.Any = js.native
+    /* private */ var profiler: js.Any = js.native
     
     def ready(): js.Promise[Unit] = js.native
     
@@ -571,15 +571,15 @@ object engineMod {
       *
       * @param tensors the list of tensors to save.
       */
-    var saveTensorsForBackwardMode: js.Any = js.native
+    /* private */ var saveTensorsForBackwardMode: js.Any = js.native
     
-    var scopedRun: js.Any = js.native
+    /* private */ var scopedRun: js.Any = js.native
     
     def setBackend(backendName: String): js.Promise[Boolean] = js.native
     
-    var setupRegisteredKernels: js.Any = js.native
+    /* private */ var setupRegisteredKernels: js.Any = js.native
     
-    var shouldCheckForMemLeaks: js.Any = js.native
+    /* private */ var shouldCheckForMemLeaks: js.Any = js.native
     
     /**
       * Start a scope. Use this with endScope() to achieve the same functionality
@@ -588,7 +588,7 @@ object engineMod {
     def startScope(): Unit = js.native
     def startScope(name: String): Unit = js.native
     
-    var startTape: js.Any = js.native
+    /* private */ var startTape: js.Any = js.native
     
     var state: EngineState = js.native
     
@@ -605,7 +605,7 @@ object engineMod {
       *
       * @param result The Tensor to track in the current scope.
       */
-    var track: js.Any = js.native
+    /* private */ var track: js.Any = js.native
   }
   /* static members */
   object Engine {
@@ -617,21 +617,17 @@ object engineMod {
     @JSImport("@tensorflow/tfjs-core/dist/engine", "Engine.nextTensorId")
     @js.native
     def nextTensorId: js.Any = js.native
-    @scala.inline
-    def nextTensorId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextTensorId")(x.asInstanceOf[js.Any])
+    inline def nextTensorId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextTensorId")(x.asInstanceOf[js.Any])
     
     @JSImport("@tensorflow/tfjs-core/dist/engine", "Engine.nextVariableId")
     @js.native
     def nextVariableId: js.Any = js.native
-    @scala.inline
-    def nextVariableId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextVariableId")(x.asInstanceOf[js.Any])
+    inline def nextVariableId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextVariableId")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def add(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def add(a: Tensor[Rank], b: Tensor[Rank]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def getOrMakeEngine(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrMakeEngine")().asInstanceOf[Engine]
+  inline def getOrMakeEngine(): Engine = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrMakeEngine")().asInstanceOf[Engine]
   
   @js.native
   trait CustomGradientFunc[T /* <: Tensor[Rank] */] extends StObject {
@@ -681,8 +677,7 @@ object engineMod {
   }
   object EngineState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activeProfile: ProfileInfo,
       activeScope: ScopeState,
       activeTape: js.Array[TapeNode],
@@ -705,68 +700,47 @@ object engineMod {
       __obj.asInstanceOf[EngineState]
     }
     
-    @scala.inline
-    implicit class EngineStateMutableBuilder[Self <: EngineState] (val x: Self) extends AnyVal {
+    extension [Self <: EngineState](x: Self) {
       
-      @scala.inline
-      def setActiveProfile(value: ProfileInfo): Self = StObject.set(x, "activeProfile", value.asInstanceOf[js.Any])
+      inline def setActiveProfile(value: ProfileInfo): Self = StObject.set(x, "activeProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveScope(value: ScopeState): Self = StObject.set(x, "activeScope", value.asInstanceOf[js.Any])
+      inline def setActiveScope(value: ScopeState): Self = StObject.set(x, "activeScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTape(value: js.Array[TapeNode]): Self = StObject.set(x, "activeTape", value.asInstanceOf[js.Any])
+      inline def setActiveTape(value: js.Array[TapeNode]): Self = StObject.set(x, "activeTape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveTapeVarargs(value: TapeNode*): Self = StObject.set(x, "activeTape", js.Array(value :_*))
+      inline def setActiveTapeVarargs(value: TapeNode*): Self = StObject.set(x, "activeTape", js.Array(value :_*))
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGradientDepth(value: Double): Self = StObject.set(x, "gradientDepth", value.asInstanceOf[js.Any])
+      inline def setGradientDepth(value: Double): Self = StObject.set(x, "gradientDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelDepth(value: Double): Self = StObject.set(x, "kernelDepth", value.asInstanceOf[js.Any])
+      inline def setKernelDepth(value: Double): Self = StObject.set(x, "kernelDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextScopeId(value: Double): Self = StObject.set(x, "nextScopeId", value.asInstanceOf[js.Any])
+      inline def setNextScopeId(value: Double): Self = StObject.set(x, "nextScopeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTapeNodeId(value: Double): Self = StObject.set(x, "nextTapeNodeId", value.asInstanceOf[js.Any])
+      inline def setNextTapeNodeId(value: Double): Self = StObject.set(x, "nextTapeNodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumBytes(value: Double): Self = StObject.set(x, "numBytes", value.asInstanceOf[js.Any])
+      inline def setNumBytes(value: Double): Self = StObject.set(x, "numBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumDataBuffers(value: Double): Self = StObject.set(x, "numDataBuffers", value.asInstanceOf[js.Any])
+      inline def setNumDataBuffers(value: Double): Self = StObject.set(x, "numDataBuffers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumDataMovesStack(value: js.Array[Double]): Self = StObject.set(x, "numDataMovesStack", value.asInstanceOf[js.Any])
+      inline def setNumDataMovesStack(value: js.Array[Double]): Self = StObject.set(x, "numDataMovesStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumDataMovesStackVarargs(value: Double*): Self = StObject.set(x, "numDataMovesStack", js.Array(value :_*))
+      inline def setNumDataMovesStackVarargs(value: Double*): Self = StObject.set(x, "numDataMovesStack", js.Array(value :_*))
       
-      @scala.inline
-      def setNumStringTensors(value: Double): Self = StObject.set(x, "numStringTensors", value.asInstanceOf[js.Any])
+      inline def setNumStringTensors(value: Double): Self = StObject.set(x, "numStringTensors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumTensors(value: Double): Self = StObject.set(x, "numTensors", value.asInstanceOf[js.Any])
+      inline def setNumTensors(value: Double): Self = StObject.set(x, "numTensors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfiling(value: Boolean): Self = StObject.set(x, "profiling", value.asInstanceOf[js.Any])
+      inline def setProfiling(value: Boolean): Self = StObject.set(x, "profiling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisteredVariables(value: NamedVariableMap): Self = StObject.set(x, "registeredVariables", value.asInstanceOf[js.Any])
+      inline def setRegisteredVariables(value: NamedVariableMap): Self = StObject.set(x, "registeredVariables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeStack(value: js.Array[ScopeState]): Self = StObject.set(x, "scopeStack", value.asInstanceOf[js.Any])
+      inline def setScopeStack(value: js.Array[ScopeState]): Self = StObject.set(x, "scopeStack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeStackVarargs(value: ScopeState*): Self = StObject.set(x, "scopeStack", js.Array(value :_*))
+      inline def setScopeStackVarargs(value: ScopeState*): Self = StObject.set(x, "scopeStack", js.Array(value :_*))
       
-      @scala.inline
-      def setTensorInfo(value: WeakMap[js.Object, Backend]): Self = StObject.set(x, "tensorInfo", value.asInstanceOf[js.Any])
+      inline def setTensorInfo(value: WeakMap[js.Object, Backend]): Self = StObject.set(x, "tensorInfo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -794,8 +768,7 @@ object engineMod {
   }
   object KernelInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytesAdded: Double,
       extraInfo: String | js.Promise[String],
       inputShapes: js.Array[js.Array[Double]],
@@ -810,41 +783,29 @@ object engineMod {
       __obj.asInstanceOf[KernelInfo]
     }
     
-    @scala.inline
-    implicit class KernelInfoMutableBuilder[Self <: KernelInfo] (val x: Self) extends AnyVal {
+    extension [Self <: KernelInfo](x: Self) {
       
-      @scala.inline
-      def setBytesAdded(value: Double): Self = StObject.set(x, "bytesAdded", value.asInstanceOf[js.Any])
+      inline def setBytesAdded(value: Double): Self = StObject.set(x, "bytesAdded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraInfo(value: String | js.Promise[String]): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
+      inline def setExtraInfo(value: String | js.Promise[String]): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputShapes(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "inputShapes", value.asInstanceOf[js.Any])
+      inline def setInputShapes(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "inputShapes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputShapesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "inputShapes", js.Array(value :_*))
+      inline def setInputShapesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "inputShapes", js.Array(value :_*))
       
-      @scala.inline
-      def setKernelTimeMs(value: Double | Error | (js.Promise[Double | Error])): Self = StObject.set(x, "kernelTimeMs", value.asInstanceOf[js.Any])
+      inline def setKernelTimeMs(value: Double | Error | (js.Promise[Double | Error])): Self = StObject.set(x, "kernelTimeMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputShapes(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "outputShapes", value.asInstanceOf[js.Any])
+      inline def setOutputShapes(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "outputShapes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputShapesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "outputShapes", js.Array(value :_*))
+      inline def setOutputShapesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "outputShapes", js.Array(value :_*))
       
-      @scala.inline
-      def setTensorsAdded(value: Double): Self = StObject.set(x, "tensorsAdded", value.asInstanceOf[js.Any])
+      inline def setTensorsAdded(value: Double): Self = StObject.set(x, "tensorsAdded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalBytesSnapshot(value: Double): Self = StObject.set(x, "totalBytesSnapshot", value.asInstanceOf[js.Any])
+      inline def setTotalBytesSnapshot(value: Double): Self = StObject.set(x, "totalBytesSnapshot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalTensorsSnapshot(value: Double): Self = StObject.set(x, "totalTensorsSnapshot", value.asInstanceOf[js.Any])
+      inline def setTotalTensorsSnapshot(value: Double): Self = StObject.set(x, "totalTensorsSnapshot", value.asInstanceOf[js.Any])
     }
   }
   
@@ -862,35 +823,26 @@ object engineMod {
   }
   object MemoryInfo {
     
-    @scala.inline
-    def apply(numBytes: Double, numDataBuffers: Double, numTensors: Double, reasons: js.Array[String]): MemoryInfo = {
+    inline def apply(numBytes: Double, numDataBuffers: Double, numTensors: Double, reasons: js.Array[String]): MemoryInfo = {
       val __obj = js.Dynamic.literal(numBytes = numBytes.asInstanceOf[js.Any], numDataBuffers = numDataBuffers.asInstanceOf[js.Any], numTensors = numTensors.asInstanceOf[js.Any], reasons = reasons.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemoryInfo]
     }
     
-    @scala.inline
-    implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MemoryInfo](x: Self) {
       
-      @scala.inline
-      def setNumBytes(value: Double): Self = StObject.set(x, "numBytes", value.asInstanceOf[js.Any])
+      inline def setNumBytes(value: Double): Self = StObject.set(x, "numBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumDataBuffers(value: Double): Self = StObject.set(x, "numDataBuffers", value.asInstanceOf[js.Any])
+      inline def setNumDataBuffers(value: Double): Self = StObject.set(x, "numDataBuffers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumTensors(value: Double): Self = StObject.set(x, "numTensors", value.asInstanceOf[js.Any])
+      inline def setNumTensors(value: Double): Self = StObject.set(x, "numTensors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasons(value: js.Array[String]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
+      inline def setReasons(value: js.Array[String]): Self = StObject.set(x, "reasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
+      inline def setReasonsVarargs(value: String*): Self = StObject.set(x, "reasons", js.Array(value :_*))
       
-      @scala.inline
-      def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
+      inline def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnreliableUndefined: Self = StObject.set(x, "unreliable", js.undefined)
+      inline def setUnreliableUndefined: Self = StObject.set(x, "unreliable", js.undefined)
     }
   }
   
@@ -908,8 +860,7 @@ object engineMod {
   }
   object ProfileInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       kernels: js.Array[KernelInfo],
       newBytes: Double,
       newTensors: Double,
@@ -920,26 +871,19 @@ object engineMod {
       __obj.asInstanceOf[ProfileInfo]
     }
     
-    @scala.inline
-    implicit class ProfileInfoMutableBuilder[Self <: ProfileInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ProfileInfo](x: Self) {
       
-      @scala.inline
-      def setKernels(value: js.Array[KernelInfo]): Self = StObject.set(x, "kernels", value.asInstanceOf[js.Any])
+      inline def setKernels(value: js.Array[KernelInfo]): Self = StObject.set(x, "kernels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelsVarargs(value: KernelInfo*): Self = StObject.set(x, "kernels", js.Array(value :_*))
+      inline def setKernelsVarargs(value: KernelInfo*): Self = StObject.set(x, "kernels", js.Array(value :_*))
       
-      @scala.inline
-      def setNewBytes(value: Double): Self = StObject.set(x, "newBytes", value.asInstanceOf[js.Any])
+      inline def setNewBytes(value: Double): Self = StObject.set(x, "newBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewTensors(value: Double): Self = StObject.set(x, "newTensors", value.asInstanceOf[js.Any])
+      inline def setNewTensors(value: Double): Self = StObject.set(x, "newTensors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakBytes(value: Double): Self = StObject.set(x, "peakBytes", value.asInstanceOf[js.Any])
+      inline def setPeakBytes(value: Double): Self = StObject.set(x, "peakBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: TensorContainer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: TensorContainer): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -955,26 +899,20 @@ object engineMod {
   }
   object ScopeState {
     
-    @scala.inline
-    def apply(id: Double, name: String, track: js.Array[Tensor[Rank]]): ScopeState = {
+    inline def apply(id: Double, name: String, track: js.Array[Tensor[Rank]]): ScopeState = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], track = track.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScopeState]
     }
     
-    @scala.inline
-    implicit class ScopeStateMutableBuilder[Self <: ScopeState] (val x: Self) extends AnyVal {
+    extension [Self <: ScopeState](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrack(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "track", js.Array(value :_*))
+      inline def setTrackVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "track", js.Array(value :_*))
     }
   }
   
@@ -986,17 +924,14 @@ object engineMod {
   }
   object TimingInfo {
     
-    @scala.inline
-    def apply(kernelMs: Double | Error, wallMs: Double): TimingInfo = {
+    inline def apply(kernelMs: Double | Error, wallMs: Double): TimingInfo = {
       val __obj = js.Dynamic.literal(kernelMs = kernelMs.asInstanceOf[js.Any], wallMs = wallMs.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimingInfo]
     }
     
-    @scala.inline
-    implicit class TimingInfoMutableBuilder[Self <: TimingInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TimingInfo](x: Self) {
       
-      @scala.inline
-      def setWallMs(value: Double): Self = StObject.set(x, "wallMs", value.asInstanceOf[js.Any])
+      inline def setWallMs(value: Double): Self = StObject.set(x, "wallMs", value.asInstanceOf[js.Any])
     }
   }
 }

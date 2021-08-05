@@ -20,7 +20,7 @@ object componentMod {
     
     def initialize(): Unit = js.native
     
-    var root_ : HTMLElement = js.native
+    /* protected */ var root_ : HTMLElement = js.native
   }
   /* static members */
   object MDCToolbar {
@@ -29,7 +29,6 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCToolbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCToolbar]
+    inline def attachTo(root: Element): MDCToolbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCToolbar]
   }
 }

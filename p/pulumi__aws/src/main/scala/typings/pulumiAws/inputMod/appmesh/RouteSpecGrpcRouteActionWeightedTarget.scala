@@ -19,19 +19,15 @@ trait RouteSpecGrpcRouteActionWeightedTarget extends StObject {
 }
 object RouteSpecGrpcRouteActionWeightedTarget {
   
-  @scala.inline
-  def apply(virtualNode: Input[String], weight: Input[Double]): RouteSpecGrpcRouteActionWeightedTarget = {
+  inline def apply(virtualNode: Input[String], weight: Input[Double]): RouteSpecGrpcRouteActionWeightedTarget = {
     val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecGrpcRouteActionWeightedTarget]
   }
   
-  @scala.inline
-  implicit class RouteSpecGrpcRouteActionWeightedTargetMutableBuilder[Self <: RouteSpecGrpcRouteActionWeightedTarget] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecGrpcRouteActionWeightedTarget](x: Self) {
     
-    @scala.inline
-    def setVirtualNode(value: Input[String]): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
+    inline def setVirtualNode(value: Input[String]): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Input[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Input[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

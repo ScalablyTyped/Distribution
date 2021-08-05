@@ -72,8 +72,7 @@ trait ProcessMetric extends StObject {
 }
 object ProcessMetric {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cpu: CPUUsage,
     creationTime: Double,
     memory: MemoryInfo,
@@ -85,41 +84,29 @@ object ProcessMetric {
     __obj.asInstanceOf[ProcessMetric]
   }
   
-  @scala.inline
-  implicit class ProcessMetricMutableBuilder[Self <: ProcessMetric] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessMetric](x: Self) {
     
-    @scala.inline
-    def setCpu(value: CPUUsage): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: CPUUsage): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Double): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrityLevel(value: untrusted | low | medium | high | unknown_): Self = StObject.set(x, "integrityLevel", value.asInstanceOf[js.Any])
+    inline def setIntegrityLevel(value: untrusted | low | medium | high | unknown_): Self = StObject.set(x, "integrityLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrityLevelUndefined: Self = StObject.set(x, "integrityLevel", js.undefined)
+    inline def setIntegrityLevelUndefined: Self = StObject.set(x, "integrityLevel", js.undefined)
     
-    @scala.inline
-    def setMemory(value: MemoryInfo): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: MemoryInfo): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxed(value: Boolean): Self = StObject.set(x, "sandboxed", value.asInstanceOf[js.Any])
+    inline def setSandboxed(value: Boolean): Self = StObject.set(x, "sandboxed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxedUndefined: Self = StObject.set(x, "sandboxed", js.undefined)
+    inline def setSandboxedUndefined: Self = StObject.set(x, "sandboxed", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: Browser | Tab | Utility | Zygote | (`Sandbox helper`) | GPU | (`Pepper Plugin`) | (`Pepper Plugin Broker`) | Unknown
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

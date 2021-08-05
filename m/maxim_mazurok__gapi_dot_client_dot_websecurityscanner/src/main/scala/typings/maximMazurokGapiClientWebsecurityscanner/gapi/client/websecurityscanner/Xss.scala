@@ -20,40 +20,29 @@ trait Xss extends StObject {
 }
 object Xss {
   
-  @scala.inline
-  def apply(): Xss = {
+  inline def apply(): Xss = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Xss]
   }
   
-  @scala.inline
-  implicit class XssMutableBuilder[Self <: Xss] (val x: Self) extends AnyVal {
+  extension [Self <: Xss](x: Self) {
     
-    @scala.inline
-    def setAttackVector(value: String): Self = StObject.set(x, "attackVector", value.asInstanceOf[js.Any])
+    inline def setAttackVector(value: String): Self = StObject.set(x, "attackVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackVectorUndefined: Self = StObject.set(x, "attackVector", js.undefined)
+    inline def setAttackVectorUndefined: Self = StObject.set(x, "attackVector", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setStackTraces(value: js.Array[String]): Self = StObject.set(x, "stackTraces", value.asInstanceOf[js.Any])
+    inline def setStackTraces(value: js.Array[String]): Self = StObject.set(x, "stackTraces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTracesUndefined: Self = StObject.set(x, "stackTraces", js.undefined)
+    inline def setStackTracesUndefined: Self = StObject.set(x, "stackTraces", js.undefined)
     
-    @scala.inline
-    def setStackTracesVarargs(value: String*): Self = StObject.set(x, "stackTraces", js.Array(value :_*))
+    inline def setStackTracesVarargs(value: String*): Self = StObject.set(x, "stackTraces", js.Array(value :_*))
     
-    @scala.inline
-    def setStoredXssSeedingUrl(value: String): Self = StObject.set(x, "storedXssSeedingUrl", value.asInstanceOf[js.Any])
+    inline def setStoredXssSeedingUrl(value: String): Self = StObject.set(x, "storedXssSeedingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoredXssSeedingUrlUndefined: Self = StObject.set(x, "storedXssSeedingUrl", js.undefined)
+    inline def setStoredXssSeedingUrlUndefined: Self = StObject.set(x, "storedXssSeedingUrl", js.undefined)
   }
 }

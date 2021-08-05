@@ -13,16 +13,13 @@ trait CancelSimulationJobRequest extends StObject {
 }
 object CancelSimulationJobRequest {
   
-  @scala.inline
-  def apply(job: Arn): CancelSimulationJobRequest = {
+  inline def apply(job: Arn): CancelSimulationJobRequest = {
     val __obj = js.Dynamic.literal(job = job.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelSimulationJobRequest]
   }
   
-  @scala.inline
-  implicit class CancelSimulationJobRequestMutableBuilder[Self <: CancelSimulationJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSimulationJobRequest](x: Self) {
     
-    @scala.inline
-    def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
+    inline def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }
 }

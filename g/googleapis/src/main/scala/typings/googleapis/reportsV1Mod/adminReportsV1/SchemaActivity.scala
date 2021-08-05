@@ -49,58 +49,41 @@ trait SchemaActivity extends StObject {
 }
 object SchemaActivity {
   
-  @scala.inline
-  def apply(): SchemaActivity = {
+  inline def apply(): SchemaActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaActivity]
   }
   
-  @scala.inline
-  implicit class SchemaActivityMutableBuilder[Self <: SchemaActivity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaActivity](x: Self) {
     
-    @scala.inline
-    def setActor(value: CallerType): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: CallerType): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
+    inline def setActorUndefined: Self = StObject.set(x, "actor", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[Name]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[Name]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: Name*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Name*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: ApplicationName): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ApplicationName): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOwnerDomain(value: String): Self = StObject.set(x, "ownerDomain", value.asInstanceOf[js.Any])
+    inline def setOwnerDomain(value: String): Self = StObject.set(x, "ownerDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerDomainUndefined: Self = StObject.set(x, "ownerDomain", js.undefined)
+    inline def setOwnerDomainUndefined: Self = StObject.set(x, "ownerDomain", js.undefined)
   }
 }

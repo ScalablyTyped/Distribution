@@ -18,25 +18,19 @@ trait ClientSendOptions extends StObject {
 }
 object ClientSendOptions {
   
-  @scala.inline
-  def apply(): ClientSendOptions = {
+  inline def apply(): ClientSendOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientSendOptions]
   }
   
-  @scala.inline
-  implicit class ClientSendOptionsMutableBuilder[Self <: ClientSendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientSendOptions](x: Self) {
     
-    @scala.inline
-    def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait GetSecurityConfigurationsResponse extends StObject {
 }
 object GetSecurityConfigurationsResponse {
   
-  @scala.inline
-  def apply(): GetSecurityConfigurationsResponse = {
+  inline def apply(): GetSecurityConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSecurityConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class GetSecurityConfigurationsResponseMutableBuilder[Self <: GetSecurityConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSecurityConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSecurityConfigurations(value: SecurityConfigurationList): Self = StObject.set(x, "SecurityConfigurations", value.asInstanceOf[js.Any])
+    inline def setSecurityConfigurations(value: SecurityConfigurationList): Self = StObject.set(x, "SecurityConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityConfigurationsUndefined: Self = StObject.set(x, "SecurityConfigurations", js.undefined)
+    inline def setSecurityConfigurationsUndefined: Self = StObject.set(x, "SecurityConfigurations", js.undefined)
     
-    @scala.inline
-    def setSecurityConfigurationsVarargs(value: SecurityConfiguration*): Self = StObject.set(x, "SecurityConfigurations", js.Array(value :_*))
+    inline def setSecurityConfigurationsVarargs(value: SecurityConfiguration*): Self = StObject.set(x, "SecurityConfigurations", js.Array(value :_*))
   }
 }

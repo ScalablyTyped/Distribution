@@ -13,25 +13,19 @@ trait Private extends StObject {
 }
 object Private {
   
-  @scala.inline
-  def apply(): Private = {
+  inline def apply(): Private = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Private]
   }
   
-  @scala.inline
-  implicit class PrivateMutableBuilder[Self <: Private] (val x: Self) extends AnyVal {
+  extension [Self <: Private](x: Self) {
     
-    @scala.inline
-    def setPrivate(value: StringDictionary[String]): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: StringDictionary[String]): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+    inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
-    @scala.inline
-    def setShared(value: StringDictionary[String]): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+    inline def setShared(value: StringDictionary[String]): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
+    inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
   }
 }

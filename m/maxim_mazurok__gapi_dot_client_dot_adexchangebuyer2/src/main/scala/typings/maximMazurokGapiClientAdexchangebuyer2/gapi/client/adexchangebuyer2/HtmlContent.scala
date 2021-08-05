@@ -17,31 +17,23 @@ trait HtmlContent extends StObject {
 }
 object HtmlContent {
   
-  @scala.inline
-  def apply(): HtmlContent = {
+  inline def apply(): HtmlContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlContent]
   }
   
-  @scala.inline
-  implicit class HtmlContentMutableBuilder[Self <: HtmlContent] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlContent](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

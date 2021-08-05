@@ -17,37 +17,27 @@ trait Standards extends StObject {
 }
 object Standards {
   
-  @scala.inline
-  def apply(): Standards = {
+  inline def apply(): Standards = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Standards]
   }
   
-  @scala.inline
-  implicit class StandardsMutableBuilder[Self <: Standards] (val x: Self) extends AnyVal {
+  extension [Self <: Standards](x: Self) {
     
-    @scala.inline
-    def setAriaAttrs(value: StringDictionary[AriaAttrs]): Self = StObject.set(x, "ariaAttrs", value.asInstanceOf[js.Any])
+    inline def setAriaAttrs(value: StringDictionary[AriaAttrs]): Self = StObject.set(x, "ariaAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaAttrsUndefined: Self = StObject.set(x, "ariaAttrs", js.undefined)
+    inline def setAriaAttrsUndefined: Self = StObject.set(x, "ariaAttrs", js.undefined)
     
-    @scala.inline
-    def setAriaRoles(value: StringDictionary[AriaRoles]): Self = StObject.set(x, "ariaRoles", value.asInstanceOf[js.Any])
+    inline def setAriaRoles(value: StringDictionary[AriaRoles]): Self = StObject.set(x, "ariaRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAriaRolesUndefined: Self = StObject.set(x, "ariaRoles", js.undefined)
+    inline def setAriaRolesUndefined: Self = StObject.set(x, "ariaRoles", js.undefined)
     
-    @scala.inline
-    def setCssColors(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "cssColors", value.asInstanceOf[js.Any])
+    inline def setCssColors(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "cssColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssColorsUndefined: Self = StObject.set(x, "cssColors", js.undefined)
+    inline def setCssColorsUndefined: Self = StObject.set(x, "cssColors", js.undefined)
     
-    @scala.inline
-    def setHtmlElms(value: StringDictionary[HtmlElms]): Self = StObject.set(x, "htmlElms", value.asInstanceOf[js.Any])
+    inline def setHtmlElms(value: StringDictionary[HtmlElms]): Self = StObject.set(x, "htmlElms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlElmsUndefined: Self = StObject.set(x, "htmlElms", js.undefined)
+    inline def setHtmlElmsUndefined: Self = StObject.set(x, "htmlElms", js.undefined)
   }
 }

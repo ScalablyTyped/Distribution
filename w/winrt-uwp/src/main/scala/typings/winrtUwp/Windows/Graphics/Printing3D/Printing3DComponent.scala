@@ -28,8 +28,7 @@ trait Printing3DComponent extends StObject {
 }
 object Printing3DComponent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     components: IVector[Printing3DComponentWithMatrix],
     mesh: Printing3DMesh,
     name: String,
@@ -42,25 +41,18 @@ object Printing3DComponent {
     __obj.asInstanceOf[Printing3DComponent]
   }
   
-  @scala.inline
-  implicit class Printing3DComponentMutableBuilder[Self <: Printing3DComponent] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DComponent](x: Self) {
     
-    @scala.inline
-    def setComponents(value: IVector[Printing3DComponentWithMatrix]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: IVector[Printing3DComponentWithMatrix]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMesh(value: Printing3DMesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
+    inline def setMesh(value: Printing3DMesh): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartNumber(value: String): Self = StObject.set(x, "partNumber", value.asInstanceOf[js.Any])
+    inline def setPartNumber(value: String): Self = StObject.set(x, "partNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: Printing3DTextureResource): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: Printing3DTextureResource): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Printing3DObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Printing3DObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

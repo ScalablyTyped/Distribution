@@ -37,85 +37,59 @@ trait BrokerPropertiesResponse extends StObject {
 }
 object BrokerPropertiesResponse {
   
-  @scala.inline
-  def apply(DeliveryCount: Double, LockToken: String, LockedUntil: DateString, SequenceNumber: Double): BrokerPropertiesResponse = {
+  inline def apply(DeliveryCount: Double, LockToken: String, LockedUntil: DateString, SequenceNumber: Double): BrokerPropertiesResponse = {
     val __obj = js.Dynamic.literal(DeliveryCount = DeliveryCount.asInstanceOf[js.Any], LockToken = LockToken.asInstanceOf[js.Any], LockedUntil = LockedUntil.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrokerPropertiesResponse]
   }
   
-  @scala.inline
-  implicit class BrokerPropertiesResponseMutableBuilder[Self <: BrokerPropertiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BrokerPropertiesResponse](x: Self) {
     
-    @scala.inline
-    def setCorrelationId(value: String): Self = StObject.set(x, "CorrelationId", value.asInstanceOf[js.Any])
+    inline def setCorrelationId(value: String): Self = StObject.set(x, "CorrelationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationIdUndefined: Self = StObject.set(x, "CorrelationId", js.undefined)
+    inline def setCorrelationIdUndefined: Self = StObject.set(x, "CorrelationId", js.undefined)
     
-    @scala.inline
-    def setDeliveryCount(value: Double): Self = StObject.set(x, "DeliveryCount", value.asInstanceOf[js.Any])
+    inline def setDeliveryCount(value: Double): Self = StObject.set(x, "DeliveryCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
-    @scala.inline
-    def setLockToken(value: String): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
+    inline def setLockToken(value: String): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUntil(value: DateString): Self = StObject.set(x, "LockedUntil", value.asInstanceOf[js.Any])
+    inline def setLockedUntil(value: DateString): Self = StObject.set(x, "LockedUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
     
-    @scala.inline
-    def setPartitionKey(value: String): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
+    inline def setPartitionKey(value: String): Self = StObject.set(x, "PartitionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionKeyUndefined: Self = StObject.set(x, "PartitionKey", js.undefined)
+    inline def setPartitionKeyUndefined: Self = StObject.set(x, "PartitionKey", js.undefined)
     
-    @scala.inline
-    def setReplyTo(value: String): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
+    inline def setReplyTo(value: String): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToSessionId(value: String): Self = StObject.set(x, "ReplyToSessionId", value.asInstanceOf[js.Any])
+    inline def setReplyToSessionId(value: String): Self = StObject.set(x, "ReplyToSessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyToSessionIdUndefined: Self = StObject.set(x, "ReplyToSessionId", js.undefined)
+    inline def setReplyToSessionIdUndefined: Self = StObject.set(x, "ReplyToSessionId", js.undefined)
     
-    @scala.inline
-    def setReplyToUndefined: Self = StObject.set(x, "ReplyTo", js.undefined)
+    inline def setReplyToUndefined: Self = StObject.set(x, "ReplyTo", js.undefined)
     
-    @scala.inline
-    def setScheduledEnqueueTimeUtc(value: String): Self = StObject.set(x, "ScheduledEnqueueTimeUtc", value.asInstanceOf[js.Any])
+    inline def setScheduledEnqueueTimeUtc(value: String): Self = StObject.set(x, "ScheduledEnqueueTimeUtc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledEnqueueTimeUtcUndefined: Self = StObject.set(x, "ScheduledEnqueueTimeUtc", js.undefined)
+    inline def setScheduledEnqueueTimeUtcUndefined: Self = StObject.set(x, "ScheduledEnqueueTimeUtc", js.undefined)
     
-    @scala.inline
-    def setSequenceNumber(value: Double): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+    inline def setSequenceNumber(value: Double): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "SessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "SessionId", js.undefined)
     
-    @scala.inline
-    def setTimeToLive(value: String): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
+    inline def setTimeToLive(value: String): Self = StObject.set(x, "TimeToLive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
+    inline def setTimeToLiveUndefined: Self = StObject.set(x, "TimeToLive", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "To", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "To", js.undefined)
   }
 }

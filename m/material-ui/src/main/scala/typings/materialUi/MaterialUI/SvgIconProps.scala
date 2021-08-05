@@ -20,37 +20,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SvgIconProps {
   
-  @scala.inline
-  def apply(): SvgIconProps = {
+  inline def apply(): SvgIconProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SvgIconProps]
   }
   
-  @scala.inline
-  implicit class SvgIconPropsMutableBuilder[Self <: SvgIconProps] (val x: Self) extends AnyVal {
+  extension [Self <: SvgIconProps](x: Self) {
     
-    @scala.inline
-    def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
+    inline def setHoverColor(value: String): Self = StObject.set(x, "hoverColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
+    inline def setHoverColorUndefined: Self = StObject.set(x, "hoverColor", js.undefined)
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setRef(value: LegacyRef[SvgIcon]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: LegacyRef[SvgIcon]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefFunction1(value: /* instance */ SvgIcon | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    inline def setRefFunction1(value: /* instance */ SvgIcon | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefNull: Self = StObject.set(x, "ref", null)
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

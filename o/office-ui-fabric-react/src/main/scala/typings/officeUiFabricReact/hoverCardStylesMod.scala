@@ -12,6 +12,5 @@ object hoverCardStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IHoverCardStyleProps): IHoverCardStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IHoverCardStyles]
+  inline def getStyles(props: IHoverCardStyleProps): IHoverCardStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IHoverCardStyles]
 }

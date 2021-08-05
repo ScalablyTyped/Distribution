@@ -8,6 +8,5 @@ object styledReactModalStrings {
   
   @js.native
   sealed trait div extends StObject
-  @scala.inline
-  def div: div = "div".asInstanceOf[div]
+  inline def div: div = "div".asInstanceOf[div]
 }

@@ -25,8 +25,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("react-syntax-highlighter", "LightAsync")
@@ -40,8 +39,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("react-syntax-highlighter", "Prism")
@@ -65,8 +63,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("react-syntax-highlighter", "PrismLight")
@@ -80,8 +77,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerLanguage(name: String, func: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   trait SyntaxHighlighterProps
@@ -108,71 +104,50 @@ object mod {
   }
   object SyntaxHighlighterProps {
     
-    @scala.inline
-    def apply(): SyntaxHighlighterProps = {
+    inline def apply(): SyntaxHighlighterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SyntaxHighlighterProps]
     }
     
-    @scala.inline
-    implicit class SyntaxHighlighterPropsMutableBuilder[Self <: SyntaxHighlighterProps] (val x: Self) extends AnyVal {
+    extension [Self <: SyntaxHighlighterProps](x: Self) {
       
-      @scala.inline
-      def setCodeTagProps(value: HTMLProps[HTMLElement]): Self = StObject.set(x, "codeTagProps", value.asInstanceOf[js.Any])
+      inline def setCodeTagProps(value: HTMLProps[HTMLElement]): Self = StObject.set(x, "codeTagProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeTagPropsUndefined: Self = StObject.set(x, "codeTagProps", js.undefined)
+      inline def setCodeTagPropsUndefined: Self = StObject.set(x, "codeTagProps", js.undefined)
       
-      @scala.inline
-      def setCustomStyle(value: js.Any): Self = StObject.set(x, "customStyle", value.asInstanceOf[js.Any])
+      inline def setCustomStyle(value: js.Any): Self = StObject.set(x, "customStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomStyleUndefined: Self = StObject.set(x, "customStyle", js.undefined)
+      inline def setCustomStyleUndefined: Self = StObject.set(x, "customStyle", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLineNumberStyle(value: js.Any): Self = StObject.set(x, "lineNumberStyle", value.asInstanceOf[js.Any])
+      inline def setLineNumberStyle(value: js.Any): Self = StObject.set(x, "lineNumberStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberStyleUndefined: Self = StObject.set(x, "lineNumberStyle", js.undefined)
+      inline def setLineNumberStyleUndefined: Self = StObject.set(x, "lineNumberStyle", js.undefined)
       
-      @scala.inline
-      def setLineProps(value: lineTagPropsFunction | HTMLProps[HTMLElement]): Self = StObject.set(x, "lineProps", value.asInstanceOf[js.Any])
+      inline def setLineProps(value: lineTagPropsFunction | HTMLProps[HTMLElement]): Self = StObject.set(x, "lineProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinePropsFunction1(value: /* lineNumber */ Double => HTMLProps[HTMLElement]): Self = StObject.set(x, "lineProps", js.Any.fromFunction1(value))
+      inline def setLinePropsFunction1(value: /* lineNumber */ Double => HTMLProps[HTMLElement]): Self = StObject.set(x, "lineProps", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLinePropsUndefined: Self = StObject.set(x, "lineProps", js.undefined)
+      inline def setLinePropsUndefined: Self = StObject.set(x, "lineProps", js.undefined)
       
-      @scala.inline
-      def setShowLineNumbers(value: Boolean): Self = StObject.set(x, "showLineNumbers", value.asInstanceOf[js.Any])
+      inline def setShowLineNumbers(value: Boolean): Self = StObject.set(x, "showLineNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLineNumbersUndefined: Self = StObject.set(x, "showLineNumbers", js.undefined)
+      inline def setShowLineNumbersUndefined: Self = StObject.set(x, "showLineNumbers", js.undefined)
       
-      @scala.inline
-      def setStartingLineNumber(value: Double): Self = StObject.set(x, "startingLineNumber", value.asInstanceOf[js.Any])
+      inline def setStartingLineNumber(value: Double): Self = StObject.set(x, "startingLineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartingLineNumberUndefined: Self = StObject.set(x, "startingLineNumber", js.undefined)
+      inline def setStartingLineNumberUndefined: Self = StObject.set(x, "startingLineNumber", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setUseInlineStyles(value: Boolean): Self = StObject.set(x, "useInlineStyles", value.asInstanceOf[js.Any])
+      inline def setUseInlineStyles(value: Boolean): Self = StObject.set(x, "useInlineStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseInlineStylesUndefined: Self = StObject.set(x, "useInlineStyles", js.undefined)
+      inline def setUseInlineStylesUndefined: Self = StObject.set(x, "useInlineStyles", js.undefined)
     }
   }
 }

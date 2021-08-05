@@ -16,20 +16,16 @@ object anon {
   }
   object Hide {
     
-    @scala.inline
-    def apply(hide: () => Unit, show: () => Unit): Hide = {
+    inline def apply(hide: () => Unit, show: () => Unit): Hide = {
       val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show))
       __obj.asInstanceOf[Hide]
     }
     
-    @scala.inline
-    implicit class HideMutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
+    extension [Self <: Hide](x: Self) {
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
 }

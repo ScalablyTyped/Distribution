@@ -20,8 +20,7 @@ trait IObjectFiles extends StObject {
 }
 object IObjectFiles {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     GetObjectFileByNameForFileSystem: String => IObjectFile,
     GetObjectFileIndexByNameForFileSystem: String => Double,
@@ -33,25 +32,18 @@ object IObjectFiles {
     __obj.asInstanceOf[IObjectFiles]
   }
   
-  @scala.inline
-  implicit class IObjectFilesMutableBuilder[Self <: IObjectFiles] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectFiles](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetObjectFileByNameForFileSystem(value: String => IObjectFile): Self = StObject.set(x, "GetObjectFileByNameForFileSystem", js.Any.fromFunction1(value))
+    inline def setGetObjectFileByNameForFileSystem(value: String => IObjectFile): Self = StObject.set(x, "GetObjectFileByNameForFileSystem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetObjectFileIndexByNameForFileSystem(value: String => Double): Self = StObject.set(x, "GetObjectFileIndexByNameForFileSystem", js.Any.fromFunction1(value))
+    inline def setGetObjectFileIndexByNameForFileSystem(value: String => Double): Self = StObject.set(x, "GetObjectFileIndexByNameForFileSystem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => IObjectFile): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IObjectFile): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSort(value: IObjectFileComparer => Unit): Self = StObject.set(x, "Sort", js.Any.fromFunction1(value))
+    inline def setSort(value: IObjectFileComparer => Unit): Self = StObject.set(x, "Sort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
   }
 }

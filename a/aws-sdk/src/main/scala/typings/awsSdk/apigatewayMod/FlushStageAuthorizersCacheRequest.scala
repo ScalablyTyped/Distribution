@@ -18,19 +18,15 @@ trait FlushStageAuthorizersCacheRequest extends StObject {
 }
 object FlushStageAuthorizersCacheRequest {
   
-  @scala.inline
-  def apply(restApiId: String, stageName: String): FlushStageAuthorizersCacheRequest = {
+  inline def apply(restApiId: String, stageName: String): FlushStageAuthorizersCacheRequest = {
     val __obj = js.Dynamic.literal(restApiId = restApiId.asInstanceOf[js.Any], stageName = stageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlushStageAuthorizersCacheRequest]
   }
   
-  @scala.inline
-  implicit class FlushStageAuthorizersCacheRequestMutableBuilder[Self <: FlushStageAuthorizersCacheRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FlushStageAuthorizersCacheRequest](x: Self) {
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: String): Self = StObject.set(x, "stageName", value.asInstanceOf[js.Any])
   }
 }

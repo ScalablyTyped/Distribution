@@ -38,8 +38,7 @@ trait OnBeforeRedirectListenerDetails extends StObject {
 }
 object OnBeforeRedirectListenerDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromCache: Boolean,
     id: Double,
     method: String,
@@ -55,55 +54,38 @@ object OnBeforeRedirectListenerDetails {
     __obj.asInstanceOf[OnBeforeRedirectListenerDetails]
   }
   
-  @scala.inline
-  implicit class OnBeforeRedirectListenerDetailsMutableBuilder[Self <: OnBeforeRedirectListenerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnBeforeRedirectListenerDetails](x: Self) {
     
-    @scala.inline
-    def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+    inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+    inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectURL(value: String): Self = StObject.set(x, "redirectURL", value.asInstanceOf[js.Any])
+    inline def setRedirectURL(value: String): Self = StObject.set(x, "redirectURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeaders(value: Record[String, js.Array[String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: Record[String, js.Array[String]]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusLine(value: String): Self = StObject.set(x, "statusLine", value.asInstanceOf[js.Any])
+    inline def setStatusLine(value: String): Self = StObject.set(x, "statusLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebContentsId(value: Double): Self = StObject.set(x, "webContentsId", value.asInstanceOf[js.Any])
+    inline def setWebContentsId(value: Double): Self = StObject.set(x, "webContentsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebContentsIdUndefined: Self = StObject.set(x, "webContentsId", js.undefined)
+    inline def setWebContentsIdUndefined: Self = StObject.set(x, "webContentsId", js.undefined)
   }
 }

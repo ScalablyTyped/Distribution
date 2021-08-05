@@ -26,31 +26,23 @@ trait SchemaGdataDiffUploadRequest extends StObject {
 }
 object SchemaGdataDiffUploadRequest {
   
-  @scala.inline
-  def apply(): SchemaGdataDiffUploadRequest = {
+  inline def apply(): SchemaGdataDiffUploadRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGdataDiffUploadRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGdataDiffUploadRequestMutableBuilder[Self <: SchemaGdataDiffUploadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGdataDiffUploadRequest](x: Self) {
     
-    @scala.inline
-    def setChecksumsInfo(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "checksumsInfo", value.asInstanceOf[js.Any])
+    inline def setChecksumsInfo(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "checksumsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumsInfoUndefined: Self = StObject.set(x, "checksumsInfo", js.undefined)
+    inline def setChecksumsInfoUndefined: Self = StObject.set(x, "checksumsInfo", js.undefined)
     
-    @scala.inline
-    def setObjectInfo(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "objectInfo", value.asInstanceOf[js.Any])
+    inline def setObjectInfo(value: SchemaGdataCompositeMedia): Self = StObject.set(x, "objectInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectInfoUndefined: Self = StObject.set(x, "objectInfo", js.undefined)
+    inline def setObjectInfoUndefined: Self = StObject.set(x, "objectInfo", js.undefined)
     
-    @scala.inline
-    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
+    inline def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
+    inline def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
   }
 }

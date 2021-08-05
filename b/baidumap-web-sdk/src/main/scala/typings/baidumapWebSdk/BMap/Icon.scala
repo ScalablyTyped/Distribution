@@ -38,8 +38,7 @@ trait Icon
 }
 object Icon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     anchor: Size,
     imageOffset: Size,
     imageSize: Size,
@@ -59,49 +58,34 @@ object Icon {
     __obj.asInstanceOf[Icon]
   }
   
-  @scala.inline
-  implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
+  extension [Self <: Icon](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Size): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Size): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageOffset(value: Size): Self = StObject.set(x, "imageOffset", value.asInstanceOf[js.Any])
+    inline def setImageOffset(value: Size): Self = StObject.set(x, "imageOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageSize(value: Size): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
+    inline def setImageSize(value: Size): Self = StObject.set(x, "imageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrl(value: Size): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: Size): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoWindowAnchor(value: Size): Self = StObject.set(x, "infoWindowAnchor", value.asInstanceOf[js.Any])
+    inline def setInfoWindowAnchor(value: Size): Self = StObject.set(x, "infoWindowAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintImageUrl(value: String): Self = StObject.set(x, "printImageUrl", value.asInstanceOf[js.Any])
+    inline def setPrintImageUrl(value: String): Self = StObject.set(x, "printImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetAnchor(value: Size => Unit): Self = StObject.set(x, "setAnchor", js.Any.fromFunction1(value))
+    inline def setSetAnchor(value: Size => Unit): Self = StObject.set(x, "setAnchor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImageOffset(value: Size => Unit): Self = StObject.set(x, "setImageOffset", js.Any.fromFunction1(value))
+    inline def setSetImageOffset(value: Size => Unit): Self = StObject.set(x, "setImageOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImageSize(value: Size => Unit): Self = StObject.set(x, "setImageSize", js.Any.fromFunction1(value))
+    inline def setSetImageSize(value: Size => Unit): Self = StObject.set(x, "setImageSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
+    inline def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInfoWindowAnchor(value: Size => Unit): Self = StObject.set(x, "setInfoWindowAnchor", js.Any.fromFunction1(value))
+    inline def setSetInfoWindowAnchor(value: Size => Unit): Self = StObject.set(x, "setInfoWindowAnchor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPrintImageUrl(value: String => Unit): Self = StObject.set(x, "setPrintImageUrl", js.Any.fromFunction1(value))
+    inline def setSetPrintImageUrl(value: String => Unit): Self = StObject.set(x, "setPrintImageUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSize(value: Size => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
+    inline def setSetSize(value: Size => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

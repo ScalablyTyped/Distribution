@@ -19,8 +19,7 @@ trait ProfilingOnlyFiberRootProperties extends StObject {
 }
 object ProfilingOnlyFiberRootProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     interactionThreadID: Double,
     memoizedInteractions: Set[Interaction],
     pendingInteractionMap: PendingInteractionMap
@@ -29,16 +28,12 @@ object ProfilingOnlyFiberRootProperties {
     __obj.asInstanceOf[ProfilingOnlyFiberRootProperties]
   }
   
-  @scala.inline
-  implicit class ProfilingOnlyFiberRootPropertiesMutableBuilder[Self <: ProfilingOnlyFiberRootProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ProfilingOnlyFiberRootProperties](x: Self) {
     
-    @scala.inline
-    def setInteractionThreadID(value: Double): Self = StObject.set(x, "interactionThreadID", value.asInstanceOf[js.Any])
+    inline def setInteractionThreadID(value: Double): Self = StObject.set(x, "interactionThreadID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoizedInteractions(value: Set[Interaction]): Self = StObject.set(x, "memoizedInteractions", value.asInstanceOf[js.Any])
+    inline def setMemoizedInteractions(value: Set[Interaction]): Self = StObject.set(x, "memoizedInteractions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingInteractionMap(value: PendingInteractionMap): Self = StObject.set(x, "pendingInteractionMap", value.asInstanceOf[js.Any])
+    inline def setPendingInteractionMap(value: PendingInteractionMap): Self = StObject.set(x, "pendingInteractionMap", value.asInstanceOf[js.Any])
   }
 }

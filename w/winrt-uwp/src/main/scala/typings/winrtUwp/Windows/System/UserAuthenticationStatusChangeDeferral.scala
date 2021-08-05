@@ -12,16 +12,13 @@ trait UserAuthenticationStatusChangeDeferral extends StObject {
 }
 object UserAuthenticationStatusChangeDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): UserAuthenticationStatusChangeDeferral = {
+  inline def apply(complete: () => Unit): UserAuthenticationStatusChangeDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[UserAuthenticationStatusChangeDeferral]
   }
   
-  @scala.inline
-  implicit class UserAuthenticationStatusChangeDeferralMutableBuilder[Self <: UserAuthenticationStatusChangeDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: UserAuthenticationStatusChangeDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

@@ -19,8 +19,7 @@ trait OptionList[OptionsType /* <: js.Array[js.Object] */] extends StObject {
 }
 object OptionList {
   
-  @scala.inline
-  def apply[OptionsType /* <: js.Array[js.Object] */](
+  inline def apply[OptionsType /* <: js.Array[js.Object] */](
     optionList: ForwardRefExoticComponent[
       (PropsWithoutRef[(Omit[OptionListProps[OptionsType], options]) & Options[OptionsType]]) & RefAttributes[RefOptionListProps]
     ]
@@ -29,11 +28,9 @@ object OptionList {
     __obj.asInstanceOf[OptionList[OptionsType]]
   }
   
-  @scala.inline
-  implicit class OptionListMutableBuilder[Self <: OptionList[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & OptionList[OptionsType]) extends AnyVal {
+  extension [Self <: OptionList[?], OptionsType /* <: js.Array[js.Object] */](x: Self & OptionList[OptionsType]) {
     
-    @scala.inline
-    def setOptionList(
+    inline def setOptionList(
       value: ForwardRefExoticComponent[
           (PropsWithoutRef[(Omit[OptionListProps[OptionsType], options]) & Options[OptionsType]]) & RefAttributes[RefOptionListProps]
         ]

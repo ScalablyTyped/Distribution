@@ -75,21 +75,16 @@ object accessPointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccessPointState): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    inline def get(name: String, id: Input[ID]): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    inline def get(name: String, id: Input[ID], state: AccessPointState): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
+    inline def get(name: String, id: Input[ID], state: AccessPointState, opts: CustomResourceOptions): AccessPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccessPoint]
     
     /**
       * Returns true if the given object is an instance of AccessPoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/efs/accessPoint.AccessPoint */ Boolean]
   }
   
   trait AccessPointArgs extends StObject {
@@ -116,35 +111,26 @@ object accessPointMod {
   }
   object AccessPointArgs {
     
-    @scala.inline
-    def apply(fileSystemId: Input[String]): AccessPointArgs = {
+    inline def apply(fileSystemId: Input[String]): AccessPointArgs = {
       val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessPointArgs]
     }
     
-    @scala.inline
-    implicit class AccessPointArgsMutableBuilder[Self <: AccessPointArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AccessPointArgs](x: Self) {
       
-      @scala.inline
-      def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+      inline def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosixUser(value: Input[typings.pulumiAws.inputMod.efs.AccessPointPosixUser]): Self = StObject.set(x, "posixUser", value.asInstanceOf[js.Any])
+      inline def setPosixUser(value: Input[typings.pulumiAws.inputMod.efs.AccessPointPosixUser]): Self = StObject.set(x, "posixUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosixUserUndefined: Self = StObject.set(x, "posixUser", js.undefined)
+      inline def setPosixUserUndefined: Self = StObject.set(x, "posixUser", js.undefined)
       
-      @scala.inline
-      def setRootDirectory(value: Input[typings.pulumiAws.inputMod.efs.AccessPointRootDirectory]): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
+      inline def setRootDirectory(value: Input[typings.pulumiAws.inputMod.efs.AccessPointRootDirectory]): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
+      inline def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -184,56 +170,40 @@ object accessPointMod {
   }
   object AccessPointState {
     
-    @scala.inline
-    def apply(): AccessPointState = {
+    inline def apply(): AccessPointState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccessPointState]
     }
     
-    @scala.inline
-    implicit class AccessPointStateMutableBuilder[Self <: AccessPointState] (val x: Self) extends AnyVal {
+    extension [Self <: AccessPointState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setFileSystemArn(value: Input[String]): Self = StObject.set(x, "fileSystemArn", value.asInstanceOf[js.Any])
+      inline def setFileSystemArn(value: Input[String]): Self = StObject.set(x, "fileSystemArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemArnUndefined: Self = StObject.set(x, "fileSystemArn", js.undefined)
+      inline def setFileSystemArnUndefined: Self = StObject.set(x, "fileSystemArn", js.undefined)
       
-      @scala.inline
-      def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+      inline def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSystemIdUndefined: Self = StObject.set(x, "fileSystemId", js.undefined)
+      inline def setFileSystemIdUndefined: Self = StObject.set(x, "fileSystemId", js.undefined)
       
-      @scala.inline
-      def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+      inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
       
-      @scala.inline
-      def setPosixUser(value: Input[typings.pulumiAws.inputMod.efs.AccessPointPosixUser]): Self = StObject.set(x, "posixUser", value.asInstanceOf[js.Any])
+      inline def setPosixUser(value: Input[typings.pulumiAws.inputMod.efs.AccessPointPosixUser]): Self = StObject.set(x, "posixUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosixUserUndefined: Self = StObject.set(x, "posixUser", js.undefined)
+      inline def setPosixUserUndefined: Self = StObject.set(x, "posixUser", js.undefined)
       
-      @scala.inline
-      def setRootDirectory(value: Input[typings.pulumiAws.inputMod.efs.AccessPointRootDirectory]): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
+      inline def setRootDirectory(value: Input[typings.pulumiAws.inputMod.efs.AccessPointRootDirectory]): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
+      inline def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

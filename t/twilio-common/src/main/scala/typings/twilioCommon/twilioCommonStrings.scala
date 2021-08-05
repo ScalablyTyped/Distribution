@@ -8,21 +8,17 @@ object twilioCommonStrings {
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait tokenExpired extends StObject
-  @scala.inline
-  def tokenExpired: tokenExpired = "tokenExpired".asInstanceOf[tokenExpired]
+  inline def tokenExpired: tokenExpired = "tokenExpired".asInstanceOf[tokenExpired]
   
   @js.native
   sealed trait tokenUpdated extends StObject
-  @scala.inline
-  def tokenUpdated: tokenUpdated = "tokenUpdated".asInstanceOf[tokenUpdated]
+  inline def tokenUpdated: tokenUpdated = "tokenUpdated".asInstanceOf[tokenUpdated]
   
   @js.native
   sealed trait tokenWillExpire extends StObject
-  @scala.inline
-  def tokenWillExpire: tokenWillExpire = "tokenWillExpire".asInstanceOf[tokenWillExpire]
+  inline def tokenWillExpire: tokenWillExpire = "tokenWillExpire".asInstanceOf[tokenWillExpire]
 }

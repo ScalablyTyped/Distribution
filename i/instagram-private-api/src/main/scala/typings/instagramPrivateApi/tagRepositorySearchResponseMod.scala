@@ -44,8 +44,7 @@ object tagRepositorySearchResponseMod {
   }
   object TagRepositorySearchResponseResultsItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allow_following: Null,
       allow_muting_story: Null,
       debug_info: Null,
@@ -68,59 +67,41 @@ object tagRepositorySearchResponseMod {
       __obj.asInstanceOf[TagRepositorySearchResponseResultsItem]
     }
     
-    @scala.inline
-    implicit class TagRepositorySearchResponseResultsItemMutableBuilder[Self <: TagRepositorySearchResponseResultsItem] (val x: Self) extends AnyVal {
+    extension [Self <: TagRepositorySearchResponseResultsItem](x: Self) {
       
-      @scala.inline
-      def setAllow_following(value: Null): Self = StObject.set(x, "allow_following", value.asInstanceOf[js.Any])
+      inline def setAllow_following(value: Null): Self = StObject.set(x, "allow_following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_muting_story(value: Null): Self = StObject.set(x, "allow_muting_story", value.asInstanceOf[js.Any])
+      inline def setAllow_muting_story(value: Null): Self = StObject.set(x, "allow_muting_story", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug_info(value: Null): Self = StObject.set(x, "debug_info", value.asInstanceOf[js.Any])
+      inline def setDebug_info(value: Null): Self = StObject.set(x, "debug_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollow_button_text(value: Null): Self = StObject.set(x, "follow_button_text", value.asInstanceOf[js.Any])
+      inline def setFollow_button_text(value: Null): Self = StObject.set(x, "follow_button_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollow_status(value: Null): Self = StObject.set(x, "follow_status", value.asInstanceOf[js.Any])
+      inline def setFollow_status(value: Null): Self = StObject.set(x, "follow_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowing(value: Null): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+      inline def setFollowing(value: Null): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
+      inline def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNon_violating(value: Null): Self = StObject.set(x, "non_violating", value.asInstanceOf[js.Any])
+      inline def setNon_violating(value: Null): Self = StObject.set(x, "non_violating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelated_tags(value: Null): Self = StObject.set(x, "related_tags", value.asInstanceOf[js.Any])
+      inline def setRelated_tags(value: Null): Self = StObject.set(x, "related_tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch_result_subtitle(value: String): Self = StObject.set(x, "search_result_subtitle", value.asInstanceOf[js.Any])
+      inline def setSearch_result_subtitle(value: String): Self = StObject.set(x, "search_result_subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow_follow_drop_down(value: Null): Self = StObject.set(x, "show_follow_drop_down", value.asInstanceOf[js.Any])
+      inline def setShow_follow_drop_down(value: Null): Self = StObject.set(x, "show_follow_drop_down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocial_context(value: Null): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
+      inline def setSocial_context(value: Null): Self = StObject.set(x, "social_context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocial_context_profile_links(value: Null): Self = StObject.set(x, "social_context_profile_links", value.asInstanceOf[js.Any])
+      inline def setSocial_context_profile_links(value: Null): Self = StObject.set(x, "social_context_profile_links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitle(value: Null): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: Null): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,8 +117,7 @@ object tagRepositorySearchResponseMod {
   }
   object TagRepositorySearchResponseRootObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       has_more: Boolean,
       rank_token: String,
       results: js.Array[TagRepositorySearchResponseResultsItem],
@@ -147,23 +127,17 @@ object tagRepositorySearchResponseMod {
       __obj.asInstanceOf[TagRepositorySearchResponseRootObject]
     }
     
-    @scala.inline
-    implicit class TagRepositorySearchResponseRootObjectMutableBuilder[Self <: TagRepositorySearchResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: TagRepositorySearchResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
+      inline def setHas_more(value: Boolean): Self = StObject.set(x, "has_more", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
+      inline def setRank_token(value: String): Self = StObject.set(x, "rank_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResults(value: js.Array[TagRepositorySearchResponseResultsItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: js.Array[TagRepositorySearchResponseResultsItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultsVarargs(value: TagRepositorySearchResponseResultsItem*): Self = StObject.set(x, "results", js.Array(value :_*))
+      inline def setResultsVarargs(value: TagRepositorySearchResponseResultsItem*): Self = StObject.set(x, "results", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

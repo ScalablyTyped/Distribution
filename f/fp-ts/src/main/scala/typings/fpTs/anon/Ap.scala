@@ -19,8 +19,7 @@ trait Ap[E, M] extends StObject {
 }
 object Ap {
   
-  @scala.inline
-  def apply[E, M](
+  inline def apply[E, M](
     _E: E,
     ap: (TheseT[M, E, js.Function1[js.Any, js.Any]], TheseT[M, E, js.Any]) => TheseT[M, E, js.Any],
     chain: (TheseT[M, E, js.Any], js.Function1[js.Any, TheseT[M, E, js.Any]]) => TheseT[M, E, js.Any],
@@ -31,22 +30,16 @@ object Ap {
     __obj.asInstanceOf[Ap[E, M]]
   }
   
-  @scala.inline
-  implicit class ApMutableBuilder[Self <: Ap[?, ?], E, M] (val x: Self & (Ap[E, M])) extends AnyVal {
+  extension [Self <: Ap[?, ?], E, M](x: Self & (Ap[E, M])) {
     
-    @scala.inline
-    def setAp(value: (TheseT[M, E, js.Function1[js.Any, js.Any]], TheseT[M, E, js.Any]) => TheseT[M, E, js.Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
+    inline def setAp(value: (TheseT[M, E, js.Function1[js.Any, js.Any]], TheseT[M, E, js.Any]) => TheseT[M, E, js.Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChain(value: (TheseT[M, E, js.Any], js.Function1[js.Any, TheseT[M, E, js.Any]]) => TheseT[M, E, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
+    inline def setChain(value: (TheseT[M, E, js.Any], js.Function1[js.Any, TheseT[M, E, js.Any]]) => TheseT[M, E, js.Any]): Self = StObject.set(x, "chain", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMap(value: (TheseT[M, E, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, E, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (TheseT[M, E, js.Any], js.Function1[js.Any, js.Any]) => TheseT[M, E, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOf(value: js.Any => TheseT[M, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
+    inline def setOf(value: js.Any => TheseT[M, E, js.Any]): Self = StObject.set(x, "of", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
+    inline def set_E(value: E): Self = StObject.set(x, "_E", value.asInstanceOf[js.Any])
   }
 }

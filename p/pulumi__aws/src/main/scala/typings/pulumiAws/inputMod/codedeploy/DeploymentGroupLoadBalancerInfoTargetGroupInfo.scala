@@ -14,19 +14,15 @@ trait DeploymentGroupLoadBalancerInfoTargetGroupInfo extends StObject {
 }
 object DeploymentGroupLoadBalancerInfoTargetGroupInfo {
   
-  @scala.inline
-  def apply(): DeploymentGroupLoadBalancerInfoTargetGroupInfo = {
+  inline def apply(): DeploymentGroupLoadBalancerInfoTargetGroupInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentGroupLoadBalancerInfoTargetGroupInfo]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupLoadBalancerInfoTargetGroupInfoMutableBuilder[Self <: DeploymentGroupLoadBalancerInfoTargetGroupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupLoadBalancerInfoTargetGroupInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

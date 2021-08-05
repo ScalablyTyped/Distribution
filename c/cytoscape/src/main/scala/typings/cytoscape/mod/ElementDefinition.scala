@@ -64,82 +64,57 @@ trait ElementDefinition extends StObject {
 }
 object ElementDefinition {
   
-  @scala.inline
-  def apply(data: NodeDataDefinition | EdgeDataDefinition): ElementDefinition = {
+  inline def apply(data: NodeDataDefinition | EdgeDataDefinition): ElementDefinition = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinition]
   }
   
-  @scala.inline
-  implicit class ElementDefinitionMutableBuilder[Self <: ElementDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ElementDefinition](x: Self) {
     
-    @scala.inline
-    def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setCss(value: Node | Edge): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Node | Edge): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    @scala.inline
-    def setData(value: NodeDataDefinition | EdgeDataDefinition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: NodeDataDefinition | EdgeDataDefinition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrabbable(value: Boolean): Self = StObject.set(x, "grabbable", value.asInstanceOf[js.Any])
+    inline def setGrabbable(value: Boolean): Self = StObject.set(x, "grabbable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrabbableUndefined: Self = StObject.set(x, "grabbable", js.undefined)
+    inline def setGrabbableUndefined: Self = StObject.set(x, "grabbable", js.undefined)
     
-    @scala.inline
-    def setGroup(value: ElementGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: ElementGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
+    inline def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderedPositionUndefined: Self = StObject.set(x, "renderedPosition", js.undefined)
+    inline def setRenderedPositionUndefined: Self = StObject.set(x, "renderedPosition", js.undefined)
     
-    @scala.inline
-    def setScratch(value: Scratchpad): Self = StObject.set(x, "scratch", value.asInstanceOf[js.Any])
+    inline def setScratch(value: Scratchpad): Self = StObject.set(x, "scratch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScratchUndefined: Self = StObject.set(x, "scratch", js.undefined)
+    inline def setScratchUndefined: Self = StObject.set(x, "scratch", js.undefined)
     
-    @scala.inline
-    def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CssStyleDeclaration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CssStyleDeclaration): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

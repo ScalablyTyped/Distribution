@@ -13,19 +13,15 @@ trait UpdateRegionSettingsInput extends StObject {
 }
 object UpdateRegionSettingsInput {
   
-  @scala.inline
-  def apply(): UpdateRegionSettingsInput = {
+  inline def apply(): UpdateRegionSettingsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRegionSettingsInput]
   }
   
-  @scala.inline
-  implicit class UpdateRegionSettingsInputMutableBuilder[Self <: UpdateRegionSettingsInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRegionSettingsInput](x: Self) {
     
-    @scala.inline
-    def setResourceTypeOptInPreference(value: ResourceTypeOptInPreference): Self = StObject.set(x, "ResourceTypeOptInPreference", value.asInstanceOf[js.Any])
+    inline def setResourceTypeOptInPreference(value: ResourceTypeOptInPreference): Self = StObject.set(x, "ResourceTypeOptInPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeOptInPreferenceUndefined: Self = StObject.set(x, "ResourceTypeOptInPreference", js.undefined)
+    inline def setResourceTypeOptInPreferenceUndefined: Self = StObject.set(x, "ResourceTypeOptInPreference", js.undefined)
   }
 }

@@ -15,23 +15,18 @@ trait TeamsRemoveProjectInOrgEndpoint extends StObject {
 }
 object TeamsRemoveProjectInOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, project_id: Double, team_slug: String): TeamsRemoveProjectInOrgEndpoint = {
+  inline def apply(org_ : String, project_id: Double, team_slug: String): TeamsRemoveProjectInOrgEndpoint = {
     val __obj = js.Dynamic.literal(project_id = project_id.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsRemoveProjectInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsRemoveProjectInOrgEndpointMutableBuilder[Self <: TeamsRemoveProjectInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsRemoveProjectInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

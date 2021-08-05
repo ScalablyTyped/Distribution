@@ -20,7 +20,7 @@ trait BootstrapPopupWindow extends StObject {
   
   val index: Double
   
-  val instance: js.Any
+  /* protected */ val instance: js.Any
   
   val name: String
   
@@ -40,8 +40,7 @@ trait BootstrapPopupWindow extends StObject {
 }
 object BootstrapPopupWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFooterImageUrl: () => String,
     getFooterNavigateUrl: () => String,
     getFooterText: () => String,
@@ -62,58 +61,40 @@ object BootstrapPopupWindow {
     __obj.asInstanceOf[BootstrapPopupWindow]
   }
   
-  @scala.inline
-  implicit class BootstrapPopupWindowMutableBuilder[Self <: BootstrapPopupWindow] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapPopupWindow](x: Self) {
     
-    @scala.inline
-    def setGetFooterImageUrl(value: () => String): Self = StObject.set(x, "getFooterImageUrl", js.Any.fromFunction0(value))
+    inline def setGetFooterImageUrl(value: () => String): Self = StObject.set(x, "getFooterImageUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFooterNavigateUrl(value: () => String): Self = StObject.set(x, "getFooterNavigateUrl", js.Any.fromFunction0(value))
+    inline def setGetFooterNavigateUrl(value: () => String): Self = StObject.set(x, "getFooterNavigateUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFooterText(value: () => String): Self = StObject.set(x, "getFooterText", js.Any.fromFunction0(value))
+    inline def setGetFooterText(value: () => String): Self = StObject.set(x, "getFooterText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeaderImageUrl(value: () => String): Self = StObject.set(x, "getHeaderImageUrl", js.Any.fromFunction0(value))
+    inline def setGetHeaderImageUrl(value: () => String): Self = StObject.set(x, "getHeaderImageUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeaderNavigateUrl(value: () => String): Self = StObject.set(x, "getHeaderNavigateUrl", js.Any.fromFunction0(value))
+    inline def setGetHeaderNavigateUrl(value: () => String): Self = StObject.set(x, "getHeaderNavigateUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHeaderText(value: () => String): Self = StObject.set(x, "getHeaderText", js.Any.fromFunction0(value))
+    inline def setGetHeaderText(value: () => String): Self = StObject.set(x, "getHeaderText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupControl(value: BootstrapPopupControl): Self = StObject.set(x, "popupControl", value.asInstanceOf[js.Any])
+    inline def setPopupControl(value: BootstrapPopupControl): Self = StObject.set(x, "popupControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupControlNull: Self = StObject.set(x, "popupControl", null)
+    inline def setPopupControlNull: Self = StObject.set(x, "popupControl", null)
     
-    @scala.inline
-    def setSetFooterImageUrl(value: String => Unit): Self = StObject.set(x, "setFooterImageUrl", js.Any.fromFunction1(value))
+    inline def setSetFooterImageUrl(value: String => Unit): Self = StObject.set(x, "setFooterImageUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFooterNavigateUrl(value: String => Unit): Self = StObject.set(x, "setFooterNavigateUrl", js.Any.fromFunction1(value))
+    inline def setSetFooterNavigateUrl(value: String => Unit): Self = StObject.set(x, "setFooterNavigateUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFooterText(value: String => Unit): Self = StObject.set(x, "setFooterText", js.Any.fromFunction1(value))
+    inline def setSetFooterText(value: String => Unit): Self = StObject.set(x, "setFooterText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeaderImageUrl(value: String => Unit): Self = StObject.set(x, "setHeaderImageUrl", js.Any.fromFunction1(value))
+    inline def setSetHeaderImageUrl(value: String => Unit): Self = StObject.set(x, "setHeaderImageUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeaderNavigateUrl(value: String => Unit): Self = StObject.set(x, "setHeaderNavigateUrl", js.Any.fromFunction1(value))
+    inline def setSetHeaderNavigateUrl(value: String => Unit): Self = StObject.set(x, "setHeaderNavigateUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeaderText(value: String => Unit): Self = StObject.set(x, "setHeaderText", js.Any.fromFunction1(value))
+    inline def setSetHeaderText(value: String => Unit): Self = StObject.set(x, "setHeaderText", js.Any.fromFunction1(value))
   }
 }

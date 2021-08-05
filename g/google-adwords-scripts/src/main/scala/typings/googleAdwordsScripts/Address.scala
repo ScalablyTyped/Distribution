@@ -22,8 +22,7 @@ trait Address extends StObject {
 }
 object Address {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCityName: () => String,
     getCountryCode: () => String,
     getPostalCode: () => String,
@@ -36,28 +35,20 @@ object Address {
     __obj.asInstanceOf[Address]
   }
   
-  @scala.inline
-  implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+  extension [Self <: Address](x: Self) {
     
-    @scala.inline
-    def setGetCityName(value: () => String): Self = StObject.set(x, "getCityName", js.Any.fromFunction0(value))
+    inline def setGetCityName(value: () => String): Self = StObject.set(x, "getCityName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCountryCode(value: () => String): Self = StObject.set(x, "getCountryCode", js.Any.fromFunction0(value))
+    inline def setGetCountryCode(value: () => String): Self = StObject.set(x, "getCountryCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPostalCode(value: () => String): Self = StObject.set(x, "getPostalCode", js.Any.fromFunction0(value))
+    inline def setGetPostalCode(value: () => String): Self = StObject.set(x, "getPostalCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProvinceCode(value: () => String): Self = StObject.set(x, "getProvinceCode", js.Any.fromFunction0(value))
+    inline def setGetProvinceCode(value: () => String): Self = StObject.set(x, "getProvinceCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProvinceName(value: () => String): Self = StObject.set(x, "getProvinceName", js.Any.fromFunction0(value))
+    inline def setGetProvinceName(value: () => String): Self = StObject.set(x, "getProvinceName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStreetAddress(value: () => String): Self = StObject.set(x, "getStreetAddress", js.Any.fromFunction0(value))
+    inline def setGetStreetAddress(value: () => String): Self = StObject.set(x, "getStreetAddress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStreetAddress2(value: () => String): Self = StObject.set(x, "getStreetAddress2", js.Any.fromFunction0(value))
+    inline def setGetStreetAddress2(value: () => String): Self = StObject.set(x, "getStreetAddress2", js.Any.fromFunction0(value))
   }
 }

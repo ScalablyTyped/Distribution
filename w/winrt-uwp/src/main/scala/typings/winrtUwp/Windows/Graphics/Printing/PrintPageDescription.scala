@@ -23,25 +23,19 @@ trait PrintPageDescription extends StObject {
 }
 object PrintPageDescription {
   
-  @scala.inline
-  def apply(dpiX: Double, dpiY: Double, imageableRect: Rect, pageSize: Size): PrintPageDescription = {
+  inline def apply(dpiX: Double, dpiY: Double, imageableRect: Rect, pageSize: Size): PrintPageDescription = {
     val __obj = js.Dynamic.literal(dpiX = dpiX.asInstanceOf[js.Any], dpiY = dpiY.asInstanceOf[js.Any], imageableRect = imageableRect.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintPageDescription]
   }
   
-  @scala.inline
-  implicit class PrintPageDescriptionMutableBuilder[Self <: PrintPageDescription] (val x: Self) extends AnyVal {
+  extension [Self <: PrintPageDescription](x: Self) {
     
-    @scala.inline
-    def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
+    inline def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiY(value: Double): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
+    inline def setDpiY(value: Double): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageableRect(value: Rect): Self = StObject.set(x, "imageableRect", value.asInstanceOf[js.Any])
+    inline def setImageableRect(value: Rect): Self = StObject.set(x, "imageableRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
   }
 }

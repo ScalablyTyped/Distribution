@@ -31,8 +31,7 @@ trait RowDescriptor extends StObject {
 }
 object RowDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: String,
     isRead: String,
     labels: js.Array[LabelDescriptor],
@@ -43,64 +42,44 @@ object RowDescriptor {
     __obj.asInstanceOf[RowDescriptor]
   }
   
-  @scala.inline
-  implicit class RowDescriptorMutableBuilder[Self <: RowDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: RowDescriptor](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
+    inline def setIconHtml(value: String): Self = StObject.set(x, "iconHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconHtmlUndefined: Self = StObject.set(x, "iconHtml", js.undefined)
+    inline def setIconHtmlUndefined: Self = StObject.set(x, "iconHtml", js.undefined)
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+    inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
-    @scala.inline
-    def setIsRead(value: String): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
+    inline def setIsRead(value: String): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: js.Array[LabelDescriptor]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[LabelDescriptor]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: LabelDescriptor*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+    inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    @scala.inline
-    def setRouteID(value: String): Self = StObject.set(x, "routeID", value.asInstanceOf[js.Any])
+    inline def setRouteID(value: String): Self = StObject.set(x, "routeID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteIDUndefined: Self = StObject.set(x, "routeID", js.undefined)
+    inline def setRouteIDUndefined: Self = StObject.set(x, "routeID", js.undefined)
     
-    @scala.inline
-    def setRouteParams(value: js.Array[String]): Self = StObject.set(x, "routeParams", value.asInstanceOf[js.Any])
+    inline def setRouteParams(value: js.Array[String]): Self = StObject.set(x, "routeParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteParamsUndefined: Self = StObject.set(x, "routeParams", js.undefined)
+    inline def setRouteParamsUndefined: Self = StObject.set(x, "routeParams", js.undefined)
     
-    @scala.inline
-    def setRouteParamsVarargs(value: String*): Self = StObject.set(x, "routeParams", js.Array(value :_*))
+    inline def setRouteParamsVarargs(value: String*): Self = StObject.set(x, "routeParams", js.Array(value :_*))
     
-    @scala.inline
-    def setShortDetailText(value: String): Self = StObject.set(x, "shortDetailText", value.asInstanceOf[js.Any])
+    inline def setShortDetailText(value: String): Self = StObject.set(x, "shortDetailText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

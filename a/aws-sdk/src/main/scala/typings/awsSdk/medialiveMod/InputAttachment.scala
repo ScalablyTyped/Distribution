@@ -28,37 +28,27 @@ trait InputAttachment extends StObject {
 }
 object InputAttachment {
   
-  @scala.inline
-  def apply(): InputAttachment = {
+  inline def apply(): InputAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputAttachment]
   }
   
-  @scala.inline
-  implicit class InputAttachmentMutableBuilder[Self <: InputAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: InputAttachment](x: Self) {
     
-    @scala.inline
-    def setAutomaticInputFailoverSettings(value: AutomaticInputFailoverSettings): Self = StObject.set(x, "AutomaticInputFailoverSettings", value.asInstanceOf[js.Any])
+    inline def setAutomaticInputFailoverSettings(value: AutomaticInputFailoverSettings): Self = StObject.set(x, "AutomaticInputFailoverSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticInputFailoverSettingsUndefined: Self = StObject.set(x, "AutomaticInputFailoverSettings", js.undefined)
+    inline def setAutomaticInputFailoverSettingsUndefined: Self = StObject.set(x, "AutomaticInputFailoverSettings", js.undefined)
     
-    @scala.inline
-    def setInputAttachmentName(value: string): Self = StObject.set(x, "InputAttachmentName", value.asInstanceOf[js.Any])
+    inline def setInputAttachmentName(value: string): Self = StObject.set(x, "InputAttachmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputAttachmentNameUndefined: Self = StObject.set(x, "InputAttachmentName", js.undefined)
+    inline def setInputAttachmentNameUndefined: Self = StObject.set(x, "InputAttachmentName", js.undefined)
     
-    @scala.inline
-    def setInputId(value: string): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: string): Self = StObject.set(x, "InputId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputIdUndefined: Self = StObject.set(x, "InputId", js.undefined)
+    inline def setInputIdUndefined: Self = StObject.set(x, "InputId", js.undefined)
     
-    @scala.inline
-    def setInputSettings(value: InputSettings): Self = StObject.set(x, "InputSettings", value.asInstanceOf[js.Any])
+    inline def setInputSettings(value: InputSettings): Self = StObject.set(x, "InputSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSettingsUndefined: Self = StObject.set(x, "InputSettings", js.undefined)
+    inline def setInputSettingsUndefined: Self = StObject.set(x, "InputSettings", js.undefined)
   }
 }

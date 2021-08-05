@@ -13,19 +13,15 @@ trait CreatePermissionSetResponse extends StObject {
 }
 object CreatePermissionSetResponse {
   
-  @scala.inline
-  def apply(): CreatePermissionSetResponse = {
+  inline def apply(): CreatePermissionSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreatePermissionSetResponse]
   }
   
-  @scala.inline
-  implicit class CreatePermissionSetResponseMutableBuilder[Self <: CreatePermissionSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePermissionSetResponse](x: Self) {
     
-    @scala.inline
-    def setPermissionSet(value: PermissionSet): Self = StObject.set(x, "PermissionSet", value.asInstanceOf[js.Any])
+    inline def setPermissionSet(value: PermissionSet): Self = StObject.set(x, "PermissionSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetUndefined: Self = StObject.set(x, "PermissionSet", js.undefined)
+    inline def setPermissionSetUndefined: Self = StObject.set(x, "PermissionSet", js.undefined)
   }
 }

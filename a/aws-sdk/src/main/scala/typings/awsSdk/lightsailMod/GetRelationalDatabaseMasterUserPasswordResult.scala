@@ -18,25 +18,19 @@ trait GetRelationalDatabaseMasterUserPasswordResult extends StObject {
 }
 object GetRelationalDatabaseMasterUserPasswordResult {
   
-  @scala.inline
-  def apply(): GetRelationalDatabaseMasterUserPasswordResult = {
+  inline def apply(): GetRelationalDatabaseMasterUserPasswordResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRelationalDatabaseMasterUserPasswordResult]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseMasterUserPasswordResultMutableBuilder[Self <: GetRelationalDatabaseMasterUserPasswordResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseMasterUserPasswordResult](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setMasterUserPassword(value: SensitiveString): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
+    inline def setMasterUserPassword(value: SensitiveString): Self = StObject.set(x, "masterUserPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
+    inline def setMasterUserPasswordUndefined: Self = StObject.set(x, "masterUserPassword", js.undefined)
   }
 }

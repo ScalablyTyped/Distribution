@@ -20,19 +20,15 @@ trait VideoOptions
 }
 object VideoOptions {
   
-  @scala.inline
-  def apply(file: String, start: Double): VideoOptions = {
+  inline def apply(file: String, start: Double): VideoOptions = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoOptions]
   }
   
-  @scala.inline
-  implicit class VideoOptionsMutableBuilder[Self <: VideoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VideoOptions](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

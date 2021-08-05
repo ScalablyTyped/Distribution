@@ -13,19 +13,15 @@ trait ItemsHttpConnectionOptionHeaderValue extends StObject {
 }
 object ItemsHttpConnectionOptionHeaderValue {
   
-  @scala.inline
-  def apply(items: HttpConnectionOptionHeaderValue, returnValue: Double): ItemsHttpConnectionOptionHeaderValue = {
+  inline def apply(items: HttpConnectionOptionHeaderValue, returnValue: Double): ItemsHttpConnectionOptionHeaderValue = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsHttpConnectionOptionHeaderValue]
   }
   
-  @scala.inline
-  implicit class ItemsHttpConnectionOptionHeaderValueMutableBuilder[Self <: ItemsHttpConnectionOptionHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsHttpConnectionOptionHeaderValue](x: Self) {
     
-    @scala.inline
-    def setItems(value: HttpConnectionOptionHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: HttpConnectionOptionHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

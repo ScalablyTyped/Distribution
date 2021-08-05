@@ -10,19 +10,15 @@ trait ForwardMessageOptions extends StObject {
 }
 object ForwardMessageOptions {
   
-  @scala.inline
-  def apply(): ForwardMessageOptions = {
+  inline def apply(): ForwardMessageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForwardMessageOptions]
   }
   
-  @scala.inline
-  implicit class ForwardMessageOptionsMutableBuilder[Self <: ForwardMessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ForwardMessageOptions](x: Self) {
     
-    @scala.inline
-    def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
+    inline def setDisable_notification(value: Boolean): Self = StObject.set(x, "disable_notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable_notificationUndefined: Self = StObject.set(x, "disable_notification", js.undefined)
+    inline def setDisable_notificationUndefined: Self = StObject.set(x, "disable_notification", js.undefined)
   }
 }

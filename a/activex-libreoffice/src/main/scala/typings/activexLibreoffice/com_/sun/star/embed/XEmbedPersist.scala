@@ -114,8 +114,7 @@ trait XEmbedPersist
 }
 object XEmbedPersist {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EntryName: String,
     acquire: () => Unit,
     getEntryName: () => String,
@@ -134,28 +133,20 @@ object XEmbedPersist {
     __obj.asInstanceOf[XEmbedPersist]
   }
   
-  @scala.inline
-  implicit class XEmbedPersistMutableBuilder[Self <: XEmbedPersist] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbedPersist](x: Self) {
     
-    @scala.inline
-    def setEntryName(value: String): Self = StObject.set(x, "EntryName", value.asInstanceOf[js.Any])
+    inline def setEntryName(value: String): Self = StObject.set(x, "EntryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEntryName(value: () => String): Self = StObject.set(x, "getEntryName", js.Any.fromFunction0(value))
+    inline def setGetEntryName(value: () => String): Self = StObject.set(x, "getEntryName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasEntry(value: () => Boolean): Self = StObject.set(x, "hasEntry", js.Any.fromFunction0(value))
+    inline def setHasEntry(value: () => Boolean): Self = StObject.set(x, "hasEntry", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveCompleted(value: Boolean => Unit): Self = StObject.set(x, "saveCompleted", js.Any.fromFunction1(value))
+    inline def setSaveCompleted(value: Boolean => Unit): Self = StObject.set(x, "saveCompleted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPersistentEntry(value: (XStorage, String, Double, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "setPersistentEntry", js.Any.fromFunction5(value))
+    inline def setSetPersistentEntry(value: (XStorage, String, Double, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "setPersistentEntry", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setStoreAsEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeAsEntry", js.Any.fromFunction4(value))
+    inline def setStoreAsEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeAsEntry", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStoreToEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToEntry", js.Any.fromFunction4(value))
+    inline def setStoreToEntry(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToEntry", js.Any.fromFunction4(value))
   }
 }

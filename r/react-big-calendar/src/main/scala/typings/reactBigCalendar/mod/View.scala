@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait View extends StObject
 object View {
   
-  @scala.inline
-  def agenda: agenda_ = "agenda".asInstanceOf[agenda_]
+  inline def agenda: agenda_ = "agenda".asInstanceOf[agenda_]
   
-  @scala.inline
-  def day: day_ = "day".asInstanceOf[day_]
+  inline def day: day_ = "day".asInstanceOf[day_]
   
-  @scala.inline
-  def month: month_ = "month".asInstanceOf[month_]
+  inline def month: month_ = "month".asInstanceOf[month_]
   
-  @scala.inline
-  def week: week_ = "week".asInstanceOf[week_]
+  inline def week: week_ = "week".asInstanceOf[week_]
   
-  @scala.inline
-  def work_week: work_week_ = "work_week".asInstanceOf[work_week_]
+  inline def work_week: work_week_ = "work_week".asInstanceOf[work_week_]
 }

@@ -51,8 +51,7 @@ object inboundMessageMod {
   }
   object InboundMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Attachments: js.Array[Attachment],
       Bcc: String,
       BccFull: js.Array[InboundRecipient],
@@ -76,80 +75,55 @@ object inboundMessageMod {
       __obj.asInstanceOf[InboundMessage]
     }
     
-    @scala.inline
-    implicit class InboundMessageMutableBuilder[Self <: InboundMessage] (val x: Self) extends AnyVal {
+    extension [Self <: InboundMessage](x: Self) {
       
-      @scala.inline
-      def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setBcc(value: String): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
+      inline def setBcc(value: String): Self = StObject.set(x, "Bcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBccFull(value: js.Array[InboundRecipient]): Self = StObject.set(x, "BccFull", value.asInstanceOf[js.Any])
+      inline def setBccFull(value: js.Array[InboundRecipient]): Self = StObject.set(x, "BccFull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBccFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "BccFull", js.Array(value :_*))
+      inline def setBccFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "BccFull", js.Array(value :_*))
       
-      @scala.inline
-      def setCc(value: String): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
+      inline def setCc(value: String): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcFull(value: js.Array[InboundRecipient]): Self = StObject.set(x, "CcFull", value.asInstanceOf[js.Any])
+      inline def setCcFull(value: js.Array[InboundRecipient]): Self = StObject.set(x, "CcFull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "CcFull", js.Array(value :_*))
+      inline def setCcFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "CcFull", js.Array(value :_*))
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromFull(value: InboundRecipient): Self = StObject.set(x, "FromFull", value.asInstanceOf[js.Any])
+      inline def setFromFull(value: InboundRecipient): Self = StObject.set(x, "FromFull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromName(value: String): Self = StObject.set(x, "FromName", value.asInstanceOf[js.Any])
+      inline def setFromName(value: String): Self = StObject.set(x, "FromName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMailboxHash(value: String): Self = StObject.set(x, "MailboxHash", value.asInstanceOf[js.Any])
+      inline def setMailboxHash(value: String): Self = StObject.set(x, "MailboxHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
+      inline def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
+      inline def setMessageStream(value: String): Self = StObject.set(x, "MessageStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalRecipient(value: String): Self = StObject.set(x, "OriginalRecipient", value.asInstanceOf[js.Any])
+      inline def setOriginalRecipient(value: String): Self = StObject.set(x, "OriginalRecipient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplyTo(value: String): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
+      inline def setReplyTo(value: String): Self = StObject.set(x, "ReplyTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFull(value: js.Array[InboundRecipient]): Self = StObject.set(x, "ToFull", value.asInstanceOf[js.Any])
+      inline def setToFull(value: js.Array[InboundRecipient]): Self = StObject.set(x, "ToFull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "ToFull", js.Array(value :_*))
+      inline def setToFullVarargs(value: InboundRecipient*): Self = StObject.set(x, "ToFull", js.Array(value :_*))
     }
   }
   
@@ -169,8 +143,7 @@ object inboundMessageMod {
   }
   object InboundMessageDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Attachments: js.Array[Attachment],
       Bcc: String,
       BccFull: js.Array[InboundRecipient],
@@ -199,26 +172,19 @@ object inboundMessageMod {
       __obj.asInstanceOf[InboundMessageDetails]
     }
     
-    @scala.inline
-    implicit class InboundMessageDetailsMutableBuilder[Self <: InboundMessageDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InboundMessageDetails](x: Self) {
       
-      @scala.inline
-      def setBlockedReason(value: String): Self = StObject.set(x, "BlockedReason", value.asInstanceOf[js.Any])
+      inline def setBlockedReason(value: String): Self = StObject.set(x, "BlockedReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Array[Header]): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Array[Header]): Self = StObject.set(x, "Headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersVarargs(value: Header*): Self = StObject.set(x, "Headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "Headers", js.Array(value :_*))
       
-      @scala.inline
-      def setHtmlBody(value: String): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
+      inline def setHtmlBody(value: String): Self = StObject.set(x, "HtmlBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrippedTextReply(value: String): Self = StObject.set(x, "StrippedTextReply", value.asInstanceOf[js.Any])
+      inline def setStrippedTextReply(value: String): Self = StObject.set(x, "StrippedTextReply", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextBody(value: String): Self = StObject.set(x, "TextBody", value.asInstanceOf[js.Any])
+      inline def setTextBody(value: String): Self = StObject.set(x, "TextBody", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,23 +196,18 @@ object inboundMessageMod {
   }
   object InboundMessages {
     
-    @scala.inline
-    def apply(InboundMessages: js.Array[InboundMessage], TotalCount: String): InboundMessages = {
+    inline def apply(InboundMessages: js.Array[InboundMessage], TotalCount: String): InboundMessages = {
       val __obj = js.Dynamic.literal(InboundMessages = InboundMessages.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[InboundMessages]
     }
     
-    @scala.inline
-    implicit class InboundMessagesMutableBuilder[Self <: InboundMessages] (val x: Self) extends AnyVal {
+    extension [Self <: InboundMessages](x: Self) {
       
-      @scala.inline
-      def setInboundMessages(value: js.Array[InboundMessage]): Self = StObject.set(x, "InboundMessages", value.asInstanceOf[js.Any])
+      inline def setInboundMessages(value: js.Array[InboundMessage]): Self = StObject.set(x, "InboundMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundMessagesVarargs(value: InboundMessage*): Self = StObject.set(x, "InboundMessages", js.Array(value :_*))
+      inline def setInboundMessagesVarargs(value: InboundMessage*): Self = StObject.set(x, "InboundMessages", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: String): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: String): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -258,17 +219,14 @@ object inboundMessageMod {
   }
   object InboundRecipient {
     
-    @scala.inline
-    def apply(Email: String, MailboxHash: String, Name: String): InboundRecipient = {
+    inline def apply(Email: String, MailboxHash: String, Name: String): InboundRecipient = {
       val __obj = js.Dynamic.literal(Email = Email.asInstanceOf[js.Any], MailboxHash = MailboxHash.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
       __obj.asInstanceOf[InboundRecipient]
     }
     
-    @scala.inline
-    implicit class InboundRecipientMutableBuilder[Self <: InboundRecipient] (val x: Self) extends AnyVal {
+    extension [Self <: InboundRecipient](x: Self) {
       
-      @scala.inline
-      def setMailboxHash(value: String): Self = StObject.set(x, "MailboxHash", value.asInstanceOf[js.Any])
+      inline def setMailboxHash(value: String): Self = StObject.set(x, "MailboxHash", value.asInstanceOf[js.Any])
     }
   }
 }

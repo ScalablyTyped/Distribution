@@ -23,25 +23,19 @@ trait GetBucketInventoryConfigurationRequest extends StObject {
 }
 object GetBucketInventoryConfigurationRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, Id: InventoryId): GetBucketInventoryConfigurationRequest = {
+  inline def apply(Bucket: BucketName, Id: InventoryId): GetBucketInventoryConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketInventoryConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetBucketInventoryConfigurationRequestMutableBuilder[Self <: GetBucketInventoryConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketInventoryConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
-    @scala.inline
-    def setId(value: InventoryId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: InventoryId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

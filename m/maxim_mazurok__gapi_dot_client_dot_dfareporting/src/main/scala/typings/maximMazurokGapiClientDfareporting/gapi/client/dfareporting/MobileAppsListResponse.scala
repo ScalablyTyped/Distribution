@@ -17,34 +17,25 @@ trait MobileAppsListResponse extends StObject {
 }
 object MobileAppsListResponse {
   
-  @scala.inline
-  def apply(): MobileAppsListResponse = {
+  inline def apply(): MobileAppsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MobileAppsListResponse]
   }
   
-  @scala.inline
-  implicit class MobileAppsListResponseMutableBuilder[Self <: MobileAppsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MobileAppsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMobileApps(value: js.Array[MobileApp]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
+    inline def setMobileApps(value: js.Array[MobileApp]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
+    inline def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
     
-    @scala.inline
-    def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
+    inline def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

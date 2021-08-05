@@ -54,55 +54,39 @@ trait ExceptionDetails extends StObject {
 }
 object ExceptionDetails {
   
-  @scala.inline
-  def apply(columnNumber: integer, exceptionId: integer, lineNumber: integer, text: String): ExceptionDetails = {
+  inline def apply(columnNumber: integer, exceptionId: integer, lineNumber: integer, text: String): ExceptionDetails = {
     val __obj = js.Dynamic.literal(columnNumber = columnNumber.asInstanceOf[js.Any], exceptionId = exceptionId.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExceptionDetails]
   }
   
-  @scala.inline
-  implicit class ExceptionDetailsMutableBuilder[Self <: ExceptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ExceptionDetails](x: Self) {
     
-    @scala.inline
-    def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    inline def setColumnNumber(value: integer): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setException(value: RemoteObject): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+    inline def setException(value: RemoteObject): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionId(value: integer): Self = StObject.set(x, "exceptionId", value.asInstanceOf[js.Any])
+    inline def setExceptionId(value: integer): Self = StObject.set(x, "exceptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
+    inline def setExceptionUndefined: Self = StObject.set(x, "exception", js.undefined)
     
-    @scala.inline
-    def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
+    inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
+    inline def setExecutionContextIdUndefined: Self = StObject.set(x, "executionContextId", js.undefined)
     
-    @scala.inline
-    def setLineNumber(value: integer): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: integer): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
+    inline def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
     
-    @scala.inline
-    def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+    inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
+    inline def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

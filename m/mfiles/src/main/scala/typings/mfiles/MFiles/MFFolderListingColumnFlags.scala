@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MFFolderListingColumnFlags extends StObject
 object MFFolderListingColumnFlags {
   
-  @scala.inline
-  def HideColumnText: `2` = 2.asInstanceOf[`2`]
+  inline def HideColumnText: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def SelectIfLeftOfSelectedMainColumn: `1` = 1.asInstanceOf[`1`]
+  inline def SelectIfLeftOfSelectedMainColumn: `1` = 1.asInstanceOf[`1`]
 }

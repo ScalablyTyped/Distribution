@@ -10,19 +10,15 @@ trait MoveOptions extends StObject {
 }
 object MoveOptions {
   
-  @scala.inline
-  def apply(): MoveOptions = {
+  inline def apply(): MoveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveOptions]
   }
   
-  @scala.inline
-  implicit class MoveOptionsMutableBuilder[Self <: MoveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MoveOptions](x: Self) {
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

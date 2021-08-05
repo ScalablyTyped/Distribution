@@ -13,16 +13,13 @@ trait CopyToResponse extends StObject {
 }
 object CopyToResponse {
   
-  @scala.inline
-  def apply(nodeId: NodeId): CopyToResponse = {
+  inline def apply(nodeId: NodeId): CopyToResponse = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopyToResponse]
   }
   
-  @scala.inline
-  implicit class CopyToResponseMutableBuilder[Self <: CopyToResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CopyToResponse](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

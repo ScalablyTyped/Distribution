@@ -13,25 +13,19 @@ trait GreaterEqualInputs extends StObject {
 }
 object GreaterEqualInputs {
   
-  @scala.inline
-  def apply(): GreaterEqualInputs = {
+  inline def apply(): GreaterEqualInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GreaterEqualInputs]
   }
   
-  @scala.inline
-  implicit class GreaterEqualInputsMutableBuilder[Self <: GreaterEqualInputs] (val x: Self) extends AnyVal {
+  extension [Self <: GreaterEqualInputs](x: Self) {
     
-    @scala.inline
-    def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: js.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+    inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
     
-    @scala.inline
-    def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: js.Any): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
   }
 }

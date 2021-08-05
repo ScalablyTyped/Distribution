@@ -23,31 +23,23 @@ trait RequestSuccessCallbackResult extends StObject {
 }
 object RequestSuccessCallbackResult {
   
-  @scala.inline
-  def apply(): RequestSuccessCallbackResult = {
+  inline def apply(): RequestSuccessCallbackResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class RequestSuccessCallbackResultMutableBuilder[Self <: RequestSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: RequestSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

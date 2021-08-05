@@ -14,20 +14,16 @@ trait GoAction
 }
 object GoAction {
   
-  @scala.inline
-  def apply(payload: Double, `type`: /* "ROUTER_GO" */ String): GoAction = {
+  inline def apply(payload: Double, `type`: /* "ROUTER_GO" */ String): GoAction = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GoAction]
   }
   
-  @scala.inline
-  implicit class GoActionMutableBuilder[Self <: GoAction] (val x: Self) extends AnyVal {
+  extension [Self <: GoAction](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Double): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: /* "ROUTER_GO" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: /* "ROUTER_GO" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

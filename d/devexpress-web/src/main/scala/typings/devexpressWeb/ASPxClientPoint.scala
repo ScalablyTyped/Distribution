@@ -21,19 +21,15 @@ trait ASPxClientPoint extends StObject {
 }
 object ASPxClientPoint {
   
-  @scala.inline
-  def apply(GetX: () => Double, GetY: () => Double): ASPxClientPoint = {
+  inline def apply(GetX: () => Double, GetY: () => Double): ASPxClientPoint = {
     val __obj = js.Dynamic.literal(GetX = js.Any.fromFunction0(GetX), GetY = js.Any.fromFunction0(GetY))
     __obj.asInstanceOf[ASPxClientPoint]
   }
   
-  @scala.inline
-  implicit class ASPxClientPointMutableBuilder[Self <: ASPxClientPoint] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPoint](x: Self) {
     
-    @scala.inline
-    def setGetX(value: () => Double): Self = StObject.set(x, "GetX", js.Any.fromFunction0(value))
+    inline def setGetX(value: () => Double): Self = StObject.set(x, "GetX", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetY(value: () => Double): Self = StObject.set(x, "GetY", js.Any.fromFunction0(value))
+    inline def setGetY(value: () => Double): Self = StObject.set(x, "GetY", js.Any.fromFunction0(value))
   }
 }

@@ -15,10 +15,10 @@ class SyntaxTokenReplacer protected ()
      with typings.typescriptServices.TypeScript.SyntaxTokenReplacer {
   def this(token1: ISyntaxToken, token2: ISyntaxToken) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var token1: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var token2: js.Any = js.native
   
   /* CompleteClass */

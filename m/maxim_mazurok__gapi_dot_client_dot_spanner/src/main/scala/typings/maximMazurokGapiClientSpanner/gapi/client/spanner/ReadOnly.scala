@@ -42,49 +42,35 @@ trait ReadOnly extends StObject {
 }
 object ReadOnly {
   
-  @scala.inline
-  def apply(): ReadOnly = {
+  inline def apply(): ReadOnly = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadOnly]
   }
   
-  @scala.inline
-  implicit class ReadOnlyMutableBuilder[Self <: ReadOnly] (val x: Self) extends AnyVal {
+  extension [Self <: ReadOnly](x: Self) {
     
-    @scala.inline
-    def setExactStaleness(value: String): Self = StObject.set(x, "exactStaleness", value.asInstanceOf[js.Any])
+    inline def setExactStaleness(value: String): Self = StObject.set(x, "exactStaleness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactStalenessUndefined: Self = StObject.set(x, "exactStaleness", js.undefined)
+    inline def setExactStalenessUndefined: Self = StObject.set(x, "exactStaleness", js.undefined)
     
-    @scala.inline
-    def setMaxStaleness(value: String): Self = StObject.set(x, "maxStaleness", value.asInstanceOf[js.Any])
+    inline def setMaxStaleness(value: String): Self = StObject.set(x, "maxStaleness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxStalenessUndefined: Self = StObject.set(x, "maxStaleness", js.undefined)
+    inline def setMaxStalenessUndefined: Self = StObject.set(x, "maxStaleness", js.undefined)
     
-    @scala.inline
-    def setMinReadTimestamp(value: String): Self = StObject.set(x, "minReadTimestamp", value.asInstanceOf[js.Any])
+    inline def setMinReadTimestamp(value: String): Self = StObject.set(x, "minReadTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinReadTimestampUndefined: Self = StObject.set(x, "minReadTimestamp", js.undefined)
+    inline def setMinReadTimestampUndefined: Self = StObject.set(x, "minReadTimestamp", js.undefined)
     
-    @scala.inline
-    def setReadTimestamp(value: String): Self = StObject.set(x, "readTimestamp", value.asInstanceOf[js.Any])
+    inline def setReadTimestamp(value: String): Self = StObject.set(x, "readTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimestampUndefined: Self = StObject.set(x, "readTimestamp", js.undefined)
+    inline def setReadTimestampUndefined: Self = StObject.set(x, "readTimestamp", js.undefined)
     
-    @scala.inline
-    def setReturnReadTimestamp(value: Boolean): Self = StObject.set(x, "returnReadTimestamp", value.asInstanceOf[js.Any])
+    inline def setReturnReadTimestamp(value: Boolean): Self = StObject.set(x, "returnReadTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnReadTimestampUndefined: Self = StObject.set(x, "returnReadTimestamp", js.undefined)
+    inline def setReturnReadTimestampUndefined: Self = StObject.set(x, "returnReadTimestamp", js.undefined)
     
-    @scala.inline
-    def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+    inline def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
+    inline def setStrongUndefined: Self = StObject.set(x, "strong", js.undefined)
   }
 }

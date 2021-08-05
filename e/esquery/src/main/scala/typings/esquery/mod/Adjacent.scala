@@ -16,17 +16,14 @@ trait Adjacent
 }
 object Adjacent {
   
-  @scala.inline
-  def apply(left: SubjectSelector, right: SubjectSelector): Adjacent = {
+  inline def apply(left: SubjectSelector, right: SubjectSelector): Adjacent = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("adjacent")
     __obj.asInstanceOf[Adjacent]
   }
   
-  @scala.inline
-  implicit class AdjacentMutableBuilder[Self <: Adjacent] (val x: Self) extends AnyVal {
+  extension [Self <: Adjacent](x: Self) {
     
-    @scala.inline
-    def setType(value: adjacent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: adjacent): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -19,16 +19,12 @@ object KeyModifier {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def MOD1: `2` = 2.asInstanceOf[`2`]
+    inline def MOD1: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MOD2: `4` = 4.asInstanceOf[`4`]
+    inline def MOD2: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def MOD3: `8` = 8.asInstanceOf[`8`]
+    inline def MOD3: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def SHIFT: `1` = 1.asInstanceOf[`1`]
+    inline def SHIFT: `1` = 1.asInstanceOf[`1`]
   }
 }

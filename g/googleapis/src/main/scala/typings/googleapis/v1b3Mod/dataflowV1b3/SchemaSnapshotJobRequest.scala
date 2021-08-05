@@ -21,25 +21,19 @@ trait SchemaSnapshotJobRequest extends StObject {
 }
 object SchemaSnapshotJobRequest {
   
-  @scala.inline
-  def apply(): SchemaSnapshotJobRequest = {
+  inline def apply(): SchemaSnapshotJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSnapshotJobRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSnapshotJobRequestMutableBuilder[Self <: SchemaSnapshotJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSnapshotJobRequest](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

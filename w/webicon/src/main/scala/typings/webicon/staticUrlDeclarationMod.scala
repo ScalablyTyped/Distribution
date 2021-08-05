@@ -16,20 +16,16 @@ object staticUrlDeclarationMod {
   }
   object StaticUrlDeclaration {
     
-    @scala.inline
-    def apply(): StaticUrlDeclaration = {
+    inline def apply(): StaticUrlDeclaration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StaticUrlDeclaration]
     }
     
-    @scala.inline
-    implicit class StaticUrlDeclarationMutableBuilder[Self <: StaticUrlDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: StaticUrlDeclaration](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

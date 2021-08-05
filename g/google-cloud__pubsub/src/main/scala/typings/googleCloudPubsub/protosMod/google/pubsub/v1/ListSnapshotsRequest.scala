@@ -51,10 +51,8 @@ object ListSnapshotsRequest {
     * @returns ListSnapshotsRequest instance
     */
   /* static member */
-  @scala.inline
-  def create(): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListSnapshotsRequest]
-  @scala.inline
-  def create(properties: IListSnapshotsRequest): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
+  inline def create(): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ListSnapshotsRequest]
+  inline def create(properties: IListSnapshotsRequest): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
   
   /**
     * Decodes a ListSnapshotsRequest message from the specified reader or buffer.
@@ -65,14 +63,10 @@ object ListSnapshotsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
-  @scala.inline
-  def decode(reader: Reader, length: Double): ListSnapshotsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSnapshotsRequest]
-  @scala.inline
-  def decode(reader: Uint8Array): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): ListSnapshotsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSnapshotsRequest]
+  inline def decode(reader: Reader): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
+  inline def decode(reader: Reader, length: Double): ListSnapshotsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSnapshotsRequest]
+  inline def decode(reader: Uint8Array): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
+  inline def decode(reader: Uint8Array, length: Double): ListSnapshotsRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ListSnapshotsRequest]
   
   /**
     * Decodes a ListSnapshotsRequest message from the specified reader or buffer, length delimited.
@@ -82,10 +76,8 @@ object ListSnapshotsRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
+  inline def decodeDelimited(reader: Reader): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
+  inline def decodeDelimited(reader: Uint8Array): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
   
   /**
     * Encodes the specified ListSnapshotsRequest message. Does not implicitly {@link google.pubsub.v1.ListSnapshotsRequest.verify|verify} messages.
@@ -94,10 +86,8 @@ object ListSnapshotsRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: IListSnapshotsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IListSnapshotsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IListSnapshotsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IListSnapshotsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ListSnapshotsRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.ListSnapshotsRequest.verify|verify} messages.
@@ -106,10 +96,8 @@ object ListSnapshotsRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: IListSnapshotsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IListSnapshotsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IListSnapshotsRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IListSnapshotsRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ListSnapshotsRequest message from a plain object. Also converts values to their respective internal types.
@@ -117,8 +105,7 @@ object ListSnapshotsRequest {
     * @returns ListSnapshotsRequest
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
+  inline def fromObject(`object`: StringDictionary[js.Any]): ListSnapshotsRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ListSnapshotsRequest]
   
   /**
     * Creates a plain object from a ListSnapshotsRequest message. Also converts values to other types if specified.
@@ -127,10 +114,8 @@ object ListSnapshotsRequest {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: ListSnapshotsRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: ListSnapshotsRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListSnapshotsRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: ListSnapshotsRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ListSnapshotsRequest message.
@@ -138,6 +123,5 @@ object ListSnapshotsRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

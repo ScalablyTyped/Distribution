@@ -14,31 +14,23 @@ trait ServerOptions extends StObject {
 }
 object ServerOptions {
   
-  @scala.inline
-  def apply(): ServerOptions = {
+  inline def apply(): ServerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerOptions]
   }
   
-  @scala.inline
-  implicit class ServerOptionsMutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerOptions](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: js.Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: js.Any): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: js.Any): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
   }
 }

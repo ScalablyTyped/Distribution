@@ -12,28 +12,21 @@ trait ErrorMessage extends StObject {
 }
 object ErrorMessage {
   
-  @scala.inline
-  def apply(): ErrorMessage = {
+  inline def apply(): ErrorMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorMessage]
   }
   
-  @scala.inline
-  implicit class ErrorMessageMutableBuilder[Self <: ErrorMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorMessage](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setShippingOptions(value: js.Array[js.Any]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
+    inline def setShippingOptions(value: js.Array[js.Any]): Self = StObject.set(x, "shippingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)
+    inline def setShippingOptionsUndefined: Self = StObject.set(x, "shippingOptions", js.undefined)
     
-    @scala.inline
-    def setShippingOptionsVarargs(value: js.Any*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
+    inline def setShippingOptionsVarargs(value: js.Any*): Self = StObject.set(x, "shippingOptions", js.Array(value :_*))
   }
 }

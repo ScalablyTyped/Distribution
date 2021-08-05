@@ -23,29 +23,22 @@ trait TargetGroupStickiness extends StObject {
 }
 object TargetGroupStickiness {
   
-  @scala.inline
-  def apply(`type`: String): TargetGroupStickiness = {
+  inline def apply(`type`: String): TargetGroupStickiness = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetGroupStickiness]
   }
   
-  @scala.inline
-  implicit class TargetGroupStickinessMutableBuilder[Self <: TargetGroupStickiness] (val x: Self) extends AnyVal {
+  extension [Self <: TargetGroupStickiness](x: Self) {
     
-    @scala.inline
-    def setCookieDuration(value: Double): Self = StObject.set(x, "cookieDuration", value.asInstanceOf[js.Any])
+    inline def setCookieDuration(value: Double): Self = StObject.set(x, "cookieDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieDurationUndefined: Self = StObject.set(x, "cookieDuration", js.undefined)
+    inline def setCookieDurationUndefined: Self = StObject.set(x, "cookieDuration", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

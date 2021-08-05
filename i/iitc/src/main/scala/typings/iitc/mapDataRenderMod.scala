@@ -21,7 +21,7 @@ object mapDataRenderMod {
     /** add the portal to the visible map layer */
     def addPortalToMapLayer(portal: Portal): Unit = js.native
     
-    var bounds: LatLngBounds_ = js.native
+    /* private */ var bounds: LatLngBounds_ = js.native
     
     def bringPortalsToFront(): Unit = js.native
     
@@ -63,9 +63,9 @@ object mapDataRenderMod {
       */
     def endRenderPass(): Unit = js.native
     
-    var isRendering: Boolean = js.native
+    /* private */ var isRendering: Boolean = js.native
     
-    var level: Double = js.native
+    /* private */ var level: Double = js.native
     
     var portalMarkerScale: js.UndefOr[Double] = js.native
     

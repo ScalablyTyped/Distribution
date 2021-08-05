@@ -23,6 +23,5 @@ object NormalPeoplePickerBase {
   @JSImport("office-ui-fabric-react", "NormalPeoplePickerBase.defaultProps")
   @js.native
   def defaultProps: CreateGenericItem = js.native
-  @scala.inline
-  def defaultProps_=(x: CreateGenericItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: CreateGenericItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

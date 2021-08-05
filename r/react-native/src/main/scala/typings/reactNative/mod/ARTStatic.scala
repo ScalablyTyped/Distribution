@@ -19,8 +19,7 @@ trait ARTStatic extends StObject {
 }
 object ARTStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClippingRectangle: Instantiable0[ClippingRectangle],
     Group: Instantiable0[Group],
     Shape: Instantiable0[Shape],
@@ -31,22 +30,16 @@ object ARTStatic {
     __obj.asInstanceOf[ARTStatic]
   }
   
-  @scala.inline
-  implicit class ARTStaticMutableBuilder[Self <: ARTStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ARTStatic](x: Self) {
     
-    @scala.inline
-    def setClippingRectangle(value: Instantiable0[ClippingRectangle]): Self = StObject.set(x, "ClippingRectangle", value.asInstanceOf[js.Any])
+    inline def setClippingRectangle(value: Instantiable0[ClippingRectangle]): Self = StObject.set(x, "ClippingRectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: Instantiable0[Group]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Instantiable0[Group]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: Instantiable0[Shape]): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Instantiable0[Shape]): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurface(value: Instantiable0[Surface]): Self = StObject.set(x, "Surface", value.asInstanceOf[js.Any])
+    inline def setSurface(value: Instantiable0[Surface]): Self = StObject.set(x, "Surface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: Instantiable0[ARTText]): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: Instantiable0[ARTText]): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

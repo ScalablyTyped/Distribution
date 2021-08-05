@@ -34,8 +34,7 @@ trait PreparedStatement
      with XColumnsSupplier
 object PreparedStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: XNameAccess,
     Connection: XConnection,
     CursorName: String,

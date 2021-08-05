@@ -33,46 +33,33 @@ trait ListConfigurationsRequest extends StObject {
 }
 object ListConfigurationsRequest {
   
-  @scala.inline
-  def apply(configurationType: ConfigurationItemType): ListConfigurationsRequest = {
+  inline def apply(configurationType: ConfigurationItemType): ListConfigurationsRequest = {
     val __obj = js.Dynamic.literal(configurationType = configurationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class ListConfigurationsRequestMutableBuilder[Self <: ListConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationType(value: ConfigurationItemType): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
+    inline def setConfigurationType(value: ConfigurationItemType): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: OrderByList): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: OrderByList): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setOrderByVarargs(value: OrderByElement*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
+    inline def setOrderByVarargs(value: OrderByElement*): Self = StObject.set(x, "orderBy", js.Array(value :_*))
   }
 }

@@ -13,9 +13,7 @@ object dictUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calcRangeKeys(hasTreeDataExpandedKeysStartKeyEndKey: EndKey): js.Array[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcRangeKeys")(hasTreeDataExpandedKeysStartKeyEndKey.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key]]
+  inline def calcRangeKeys(hasTreeDataExpandedKeysStartKeyEndKey: EndKey): js.Array[Key] = ^.asInstanceOf[js.Dynamic].applyDynamic("calcRangeKeys")(hasTreeDataExpandedKeysStartKeyEndKey.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key]]
   
-  @scala.inline
-  def convertDirectoryKeysToNodes(treeData: js.Array[DataNode], keys: js.Array[Key]): js.Array[DataNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDirectoryKeysToNodes")(treeData.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[DataNode]]
+  inline def convertDirectoryKeysToNodes(treeData: js.Array[DataNode], keys: js.Array[Key]): js.Array[DataNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDirectoryKeysToNodes")(treeData.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[DataNode]]
 }

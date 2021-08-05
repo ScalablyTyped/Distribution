@@ -23,28 +23,21 @@ trait DescribeAffectedAccountsForOrganizationRequest extends StObject {
 }
 object DescribeAffectedAccountsForOrganizationRequest {
   
-  @scala.inline
-  def apply(eventArn: eventArn): DescribeAffectedAccountsForOrganizationRequest = {
+  inline def apply(eventArn: eventArn): DescribeAffectedAccountsForOrganizationRequest = {
     val __obj = js.Dynamic.literal(eventArn = eventArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAffectedAccountsForOrganizationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAffectedAccountsForOrganizationRequestMutableBuilder[Self <: DescribeAffectedAccountsForOrganizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAffectedAccountsForOrganizationRequest](x: Self) {
     
-    @scala.inline
-    def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
+    inline def setEventArn(value: eventArn): Self = StObject.set(x, "eventArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -13,20 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object EBMLBinaryTagSchema {
   
-  @scala.inline
-  def apply(description: String, level: Double, name: String, `type`: TagType): EBMLBinaryTagSchema = {
+  inline def apply(description: String, level: Double, name: String, `type`: TagType): EBMLBinaryTagSchema = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBMLBinaryTagSchema]
   }
   
-  @scala.inline
-  implicit class EBMLBinaryTagSchemaMutableBuilder[Self <: EBMLBinaryTagSchema] (val x: Self) extends AnyVal {
+  extension [Self <: EBMLBinaryTagSchema](x: Self) {
     
-    @scala.inline
-    def setBytesize(value: Double): Self = StObject.set(x, "bytesize", value.asInstanceOf[js.Any])
+    inline def setBytesize(value: Double): Self = StObject.set(x, "bytesize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesizeUndefined: Self = StObject.set(x, "bytesize", js.undefined)
+    inline def setBytesizeUndefined: Self = StObject.set(x, "bytesize", js.undefined)
   }
 }

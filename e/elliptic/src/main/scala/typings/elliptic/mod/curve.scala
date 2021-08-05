@@ -122,52 +122,40 @@ object curve {
     }
     object BaseCurveOptions {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         p: Double | String | js.Array[Double] | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any)
       ): BaseCurveOptions = {
         val __obj = js.Dynamic.literal(p = p.asInstanceOf[js.Any])
         __obj.asInstanceOf[BaseCurveOptions]
       }
       
-      @scala.inline
-      implicit class BaseCurveOptionsMutableBuilder[Self <: BaseCurveOptions] (val x: Self) extends AnyVal {
+      extension [Self <: BaseCurveOptions](x: Self) {
         
-        @scala.inline
-        def setG(value: BasePoint): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+        inline def setG(value: BasePoint): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGRed(value: js.Any): Self = StObject.set(x, "gRed", value.asInstanceOf[js.Any])
+        inline def setGRed(value: js.Any): Self = StObject.set(x, "gRed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGRedUndefined: Self = StObject.set(x, "gRed", js.undefined)
+        inline def setGRedUndefined: Self = StObject.set(x, "gRed", js.undefined)
         
-        @scala.inline
-        def setGUndefined: Self = StObject.set(x, "g", js.undefined)
+        inline def setGUndefined: Self = StObject.set(x, "g", js.undefined)
         
-        @scala.inline
-        def setN(
+        inline def setN(
           value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Buffer
         ): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNUndefined: Self = StObject.set(x, "n", js.undefined)
+        inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
         
-        @scala.inline
-        def setP(
+        inline def setP(
           value: Double | String | js.Array[Double] | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any)
         ): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPVarargs(value: Double*): Self = StObject.set(x, "p", js.Array(value :_*))
+        inline def setPVarargs(value: Double*): Self = StObject.set(x, "p", js.Array(value :_*))
         
-        @scala.inline
-        def setPrime(
+        inline def setPrime(
           value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | String
         ): Self = StObject.set(x, "prime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrimeUndefined: Self = StObject.set(x, "prime", js.undefined)
+        inline def setPrimeUndefined: Self = StObject.set(x, "prime", js.undefined)
       }
     }
     
@@ -183,23 +171,18 @@ object curve {
     }
     object PrecomputedValues {
       
-      @scala.inline
-      def apply(beta: js.Any, doubles: js.Any, naf: js.Any): PrecomputedValues = {
+      inline def apply(beta: js.Any, doubles: js.Any, naf: js.Any): PrecomputedValues = {
         val __obj = js.Dynamic.literal(beta = beta.asInstanceOf[js.Any], doubles = doubles.asInstanceOf[js.Any], naf = naf.asInstanceOf[js.Any])
         __obj.asInstanceOf[PrecomputedValues]
       }
       
-      @scala.inline
-      implicit class PrecomputedValuesMutableBuilder[Self <: PrecomputedValues] (val x: Self) extends AnyVal {
+      extension [Self <: PrecomputedValues](x: Self) {
         
-        @scala.inline
-        def setBeta(value: js.Any): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+        inline def setBeta(value: js.Any): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDoubles(value: js.Any): Self = StObject.set(x, "doubles", value.asInstanceOf[js.Any])
+        inline def setDoubles(value: js.Any): Self = StObject.set(x, "doubles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNaf(value: js.Any): Self = StObject.set(x, "naf", value.asInstanceOf[js.Any])
+        inline def setNaf(value: js.Any): Self = StObject.set(x, "naf", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -266,8 +249,7 @@ object curve {
     }
     object EdwardsConf {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         a: BNInput,
         c: BNInput,
         d: BNInput,
@@ -277,26 +259,19 @@ object curve {
         __obj.asInstanceOf[EdwardsConf]
       }
       
-      @scala.inline
-      implicit class EdwardsConfMutableBuilder[Self <: EdwardsConf] (val x: Self) extends AnyVal {
+      extension [Self <: EdwardsConf](x: Self) {
         
-        @scala.inline
-        def setA(value: BNInput): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+        inline def setA(value: BNInput): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAVarargs(value: Double*): Self = StObject.set(x, "a", js.Array(value :_*))
+        inline def setAVarargs(value: Double*): Self = StObject.set(x, "a", js.Array(value :_*))
         
-        @scala.inline
-        def setC(value: BNInput): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+        inline def setC(value: BNInput): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCVarargs(value: Double*): Self = StObject.set(x, "c", js.Array(value :_*))
+        inline def setCVarargs(value: Double*): Self = StObject.set(x, "c", js.Array(value :_*))
         
-        @scala.inline
-        def setD(value: BNInput): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+        inline def setD(value: BNInput): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDVarargs(value: Double*): Self = StObject.set(x, "d", js.Array(value :_*))
+        inline def setDVarargs(value: Double*): Self = StObject.set(x, "d", js.Array(value :_*))
       }
     }
   }
@@ -351,8 +326,7 @@ object curve {
     }
     object ShortConf {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         a: BNInput,
         b: BNInput,
         p: Double | String | js.Array[Double] | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any)
@@ -361,38 +335,27 @@ object curve {
         __obj.asInstanceOf[ShortConf]
       }
       
-      @scala.inline
-      implicit class ShortConfMutableBuilder[Self <: ShortConf] (val x: Self) extends AnyVal {
+      extension [Self <: ShortConf](x: Self) {
         
-        @scala.inline
-        def setA(value: BNInput): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+        inline def setA(value: BNInput): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAVarargs(value: Double*): Self = StObject.set(x, "a", js.Array(value :_*))
+        inline def setAVarargs(value: Double*): Self = StObject.set(x, "a", js.Array(value :_*))
         
-        @scala.inline
-        def setB(value: BNInput): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+        inline def setB(value: BNInput): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBVarargs(value: Double*): Self = StObject.set(x, "b", js.Array(value :_*))
+        inline def setBVarargs(value: Double*): Self = StObject.set(x, "b", js.Array(value :_*))
         
-        @scala.inline
-        def setBeta(value: BNInput): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+        inline def setBeta(value: BNInput): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
+        inline def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
         
-        @scala.inline
-        def setBetaVarargs(value: Double*): Self = StObject.set(x, "beta", js.Array(value :_*))
+        inline def setBetaVarargs(value: Double*): Self = StObject.set(x, "beta", js.Array(value :_*))
         
-        @scala.inline
-        def setLambda(value: BNInput): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+        inline def setLambda(value: BNInput): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
+        inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
         
-        @scala.inline
-        def setLambdaVarargs(value: Double*): Self = StObject.set(x, "lambda", js.Array(value :_*))
+        inline def setLambdaVarargs(value: Double*): Self = StObject.set(x, "lambda", js.Array(value :_*))
       }
     }
   }

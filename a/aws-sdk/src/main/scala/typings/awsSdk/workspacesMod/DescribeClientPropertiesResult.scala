@@ -13,22 +13,17 @@ trait DescribeClientPropertiesResult extends StObject {
 }
 object DescribeClientPropertiesResult {
   
-  @scala.inline
-  def apply(): DescribeClientPropertiesResult = {
+  inline def apply(): DescribeClientPropertiesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeClientPropertiesResult]
   }
   
-  @scala.inline
-  implicit class DescribeClientPropertiesResultMutableBuilder[Self <: DescribeClientPropertiesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeClientPropertiesResult](x: Self) {
     
-    @scala.inline
-    def setClientPropertiesList(value: ClientPropertiesList): Self = StObject.set(x, "ClientPropertiesList", value.asInstanceOf[js.Any])
+    inline def setClientPropertiesList(value: ClientPropertiesList): Self = StObject.set(x, "ClientPropertiesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientPropertiesListUndefined: Self = StObject.set(x, "ClientPropertiesList", js.undefined)
+    inline def setClientPropertiesListUndefined: Self = StObject.set(x, "ClientPropertiesList", js.undefined)
     
-    @scala.inline
-    def setClientPropertiesListVarargs(value: ClientPropertiesResult*): Self = StObject.set(x, "ClientPropertiesList", js.Array(value :_*))
+    inline def setClientPropertiesListVarargs(value: ClientPropertiesResult*): Self = StObject.set(x, "ClientPropertiesList", js.Array(value :_*))
   }
 }

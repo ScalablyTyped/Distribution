@@ -12,19 +12,15 @@ trait RowHeaderTexts extends StObject {
 }
 object RowHeaderTexts {
   
-  @scala.inline
-  def apply(): RowHeaderTexts = {
+  inline def apply(): RowHeaderTexts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowHeaderTexts]
   }
   
-  @scala.inline
-  implicit class RowHeaderTextsMutableBuilder[Self <: RowHeaderTexts] (val x: Self) extends AnyVal {
+  extension [Self <: RowHeaderTexts](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

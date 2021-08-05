@@ -15,22 +15,17 @@ trait ChannelHistory extends StObject {
 }
 object ChannelHistory {
   
-  @scala.inline
-  def apply(EndTime: String, RemoteAddr: String, StartTime: String): ChannelHistory = {
+  inline def apply(EndTime: String, RemoteAddr: String, StartTime: String): ChannelHistory = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], RemoteAddr = RemoteAddr.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelHistory]
   }
   
-  @scala.inline
-  implicit class ChannelHistoryMutableBuilder[Self <: ChannelHistory] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelHistory](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteAddr(value: String): Self = StObject.set(x, "RemoteAddr", value.asInstanceOf[js.Any])
+    inline def setRemoteAddr(value: String): Self = StObject.set(x, "RemoteAddr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

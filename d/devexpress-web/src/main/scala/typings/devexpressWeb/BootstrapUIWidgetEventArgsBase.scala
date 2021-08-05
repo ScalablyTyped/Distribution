@@ -23,19 +23,15 @@ trait BootstrapUIWidgetEventArgsBase
 }
 object BootstrapUIWidgetEventArgsBase {
   
-  @scala.inline
-  def apply(component: js.Any, element: js.Any): BootstrapUIWidgetEventArgsBase = {
+  inline def apply(component: js.Any, element: js.Any): BootstrapUIWidgetEventArgsBase = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapUIWidgetEventArgsBase]
   }
   
-  @scala.inline
-  implicit class BootstrapUIWidgetEventArgsBaseMutableBuilder[Self <: BootstrapUIWidgetEventArgsBase] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapUIWidgetEventArgsBase](x: Self) {
     
-    @scala.inline
-    def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: js.Any): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

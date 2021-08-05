@@ -23,22 +23,17 @@ trait IncludeSubDomains extends StObject {
 }
 object IncludeSubDomains {
   
-  @scala.inline
-  def apply(includeSubDomains: Boolean, maxAge: Double, preload: Boolean): IncludeSubDomains = {
+  inline def apply(includeSubDomains: Boolean, maxAge: Double, preload: Boolean): IncludeSubDomains = {
     val __obj = js.Dynamic.literal(includeSubDomains = includeSubDomains.asInstanceOf[js.Any], maxAge = maxAge.asInstanceOf[js.Any], preload = preload.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeSubDomains]
   }
   
-  @scala.inline
-  implicit class IncludeSubDomainsMutableBuilder[Self <: IncludeSubDomains] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeSubDomains](x: Self) {
     
-    @scala.inline
-    def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
+    inline def setIncludeSubDomains(value: Boolean): Self = StObject.set(x, "includeSubDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
   }
 }

@@ -39,37 +39,27 @@ trait SchemaPubsubMessage extends StObject {
 }
 object SchemaPubsubMessage {
   
-  @scala.inline
-  def apply(): SchemaPubsubMessage = {
+  inline def apply(): SchemaPubsubMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPubsubMessage]
   }
   
-  @scala.inline
-  implicit class SchemaPubsubMessageMutableBuilder[Self <: SchemaPubsubMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPubsubMessage](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setPublishTime(value: String): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
+    inline def setPublishTime(value: String): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
+    inline def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
   }
 }

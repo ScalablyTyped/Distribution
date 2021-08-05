@@ -27,8 +27,7 @@ trait EventLog extends StObject {
 }
 object EventLog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: String,
     blockHash: String,
     blockNumber: Double,
@@ -42,37 +41,26 @@ object EventLog {
     __obj.asInstanceOf[EventLog]
   }
   
-  @scala.inline
-  implicit class EventLogMutableBuilder[Self <: EventLog] (val x: Self) extends AnyVal {
+  extension [Self <: EventLog](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
+    inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
+    inline def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogIndex(value: Double): Self = StObject.set(x, "logIndex", value.asInstanceOf[js.Any])
+    inline def setLogIndex(value: Double): Self = StObject.set(x, "logIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaw(value: Data): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Data): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setReturnValues(value: js.Any): Self = StObject.set(x, "returnValues", value.asInstanceOf[js.Any])
+    inline def setReturnValues(value: js.Any): Self = StObject.set(x, "returnValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
+    inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
+    inline def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
   }
 }

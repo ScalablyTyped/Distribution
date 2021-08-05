@@ -38,52 +38,37 @@ trait DescribeLocationFsxWindowsResponse extends StObject {
 }
 object DescribeLocationFsxWindowsResponse {
   
-  @scala.inline
-  def apply(): DescribeLocationFsxWindowsResponse = {
+  inline def apply(): DescribeLocationFsxWindowsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLocationFsxWindowsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeLocationFsxWindowsResponseMutableBuilder[Self <: DescribeLocationFsxWindowsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocationFsxWindowsResponse](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Time): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
+    inline def setLocationArnUndefined: Self = StObject.set(x, "LocationArn", js.undefined)
     
-    @scala.inline
-    def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
+    inline def setLocationUri(value: LocationUri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
+    inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupArns(value: Ec2SecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupArns(value: Ec2SecurityGroupArnList): Self = StObject.set(x, "SecurityGroupArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupArnsUndefined: Self = StObject.set(x, "SecurityGroupArns", js.undefined)
+    inline def setSecurityGroupArnsUndefined: Self = StObject.set(x, "SecurityGroupArns", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
+    inline def setSecurityGroupArnsVarargs(value: Ec2SecurityGroupArn*): Self = StObject.set(x, "SecurityGroupArns", js.Array(value :_*))
     
-    @scala.inline
-    def setUser(value: SmbUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: SmbUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

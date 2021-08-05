@@ -10,16 +10,13 @@ trait ToJSON extends StObject {
 }
 object ToJSON {
   
-  @scala.inline
-  def apply(toJSON: () => js.Any): ToJSON = {
+  inline def apply(toJSON: () => js.Any): ToJSON = {
     val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[ToJSON]
   }
   
-  @scala.inline
-  implicit class ToJSONMutableBuilder[Self <: ToJSON] (val x: Self) extends AnyVal {
+  extension [Self <: ToJSON](x: Self) {
     
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

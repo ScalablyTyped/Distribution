@@ -165,128 +165,88 @@ object anon {
   }
   object Optionsasyncfalse {
     
-    @scala.inline
-    def apply(async: js.UndefOr[Boolean] & `false`): Optionsasyncfalse = {
+    inline def apply(async: js.UndefOr[Boolean] & `false`): Optionsasyncfalse = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasyncfalse]
     }
     
-    @scala.inline
-    implicit class OptionsasyncfalseMutableBuilder[Self <: Optionsasyncfalse] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsasyncfalse](x: Self) {
       
-      @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
+      inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
+      inline def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
+      inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
+      inline def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
       
-      @scala.inline
-      def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
+      inline def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
+      inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
+      inline def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
+      inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
       
-      @scala.inline
-      def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
+      inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
+      inline def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
       
-      @scala.inline
-      def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
+      inline def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
+      inline def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
       
-      @scala.inline
-      def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
+      inline def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
+      inline def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
       
-      @scala.inline
-      def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
+      inline def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
+      inline def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
+      inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
+      inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
     }
   }
   
@@ -446,8 +406,7 @@ object anon {
   }
   object Optionsasyncfalseundefine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       async: js.UndefOr[Boolean] & js.UndefOr[`false`],
       client: js.UndefOr[Boolean] & js.UndefOr[`false`]
     ): Optionsasyncfalseundefine = {
@@ -455,119 +414,81 @@ object anon {
       __obj.asInstanceOf[Optionsasyncfalseundefine]
     }
     
-    @scala.inline
-    implicit class OptionsasyncfalseundefineMutableBuilder[Self <: Optionsasyncfalseundefine] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsasyncfalseundefine](x: Self) {
       
-      @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
+      inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
+      inline def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setClient(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
+      inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
+      inline def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
       
-      @scala.inline
-      def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
+      inline def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
+      inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
+      inline def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
+      inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
       
-      @scala.inline
-      def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
+      inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
+      inline def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
       
-      @scala.inline
-      def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
+      inline def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
+      inline def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
       
-      @scala.inline
-      def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
+      inline def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
+      inline def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
       
-      @scala.inline
-      def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
+      inline def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
+      inline def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
+      inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
+      inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
     }
   }
   
@@ -727,125 +648,86 @@ object anon {
   }
   object OptionsasyncfalseundefineAsync {
     
-    @scala.inline
-    def apply(async: js.UndefOr[Boolean] & js.UndefOr[`false`], client: js.UndefOr[Boolean] & `true`): OptionsasyncfalseundefineAsync = {
+    inline def apply(async: js.UndefOr[Boolean] & js.UndefOr[`false`], client: js.UndefOr[Boolean] & `true`): OptionsasyncfalseundefineAsync = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsasyncfalseundefineAsync]
     }
     
-    @scala.inline
-    implicit class OptionsasyncfalseundefineAsyncMutableBuilder[Self <: OptionsasyncfalseundefineAsync] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsasyncfalseundefineAsync](x: Self) {
       
-      @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
+      inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
+      inline def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setClient(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
+      inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
+      inline def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
       
-      @scala.inline
-      def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
+      inline def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
+      inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
+      inline def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
+      inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
       
-      @scala.inline
-      def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
+      inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
+      inline def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
       
-      @scala.inline
-      def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
+      inline def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
+      inline def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
       
-      @scala.inline
-      def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
+      inline def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
+      inline def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
       
-      @scala.inline
-      def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
+      inline def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
+      inline def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
+      inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
+      inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
     }
   }
   
@@ -1005,128 +887,88 @@ object anon {
   }
   object Optionsasyncneverundefine {
     
-    @scala.inline
-    def apply(async: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]): Optionsasyncneverundefine = {
+    inline def apply(async: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]): Optionsasyncneverundefine = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasyncneverundefine]
     }
     
-    @scala.inline
-    implicit class OptionsasyncneverundefineMutableBuilder[Self <: Optionsasyncneverundefine] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsasyncneverundefine](x: Self) {
       
-      @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: js.UndefOr[Boolean] & js.UndefOr[scala.Nothing]): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
+      inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
+      inline def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
+      inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
+      inline def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
       
-      @scala.inline
-      def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
+      inline def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
+      inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
+      inline def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
+      inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
       
-      @scala.inline
-      def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
+      inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
+      inline def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
       
-      @scala.inline
-      def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
+      inline def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
+      inline def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
       
-      @scala.inline
-      def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
+      inline def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
+      inline def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
       
-      @scala.inline
-      def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
+      inline def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
+      inline def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
+      inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
+      inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
     }
   }
   
@@ -1286,128 +1128,88 @@ object anon {
   }
   object Optionsasynctrue {
     
-    @scala.inline
-    def apply(async: js.UndefOr[Boolean] & `true`): Optionsasynctrue = {
+    inline def apply(async: js.UndefOr[Boolean] & `true`): Optionsasynctrue = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasynctrue]
     }
     
-    @scala.inline
-    implicit class OptionsasynctrueMutableBuilder[Self <: Optionsasynctrue] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsasynctrue](x: Self) {
       
-      @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
+      inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
+      inline def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Boolean): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
+      inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
+      inline def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
       
-      @scala.inline
-      def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
+      inline def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
+      inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
+      inline def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
+      inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
       
-      @scala.inline
-      def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
+      inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
+      inline def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
       
-      @scala.inline
-      def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
+      inline def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
+      inline def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
       
-      @scala.inline
-      def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
+      inline def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
+      inline def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
       
-      @scala.inline
-      def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
+      inline def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
+      inline def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
+      inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
+      inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
     }
   }
   
@@ -1567,125 +1369,86 @@ object anon {
   }
   object Optionsasynctrueclientfal {
     
-    @scala.inline
-    def apply(async: js.UndefOr[Boolean] & `true`, client: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsasynctrueclientfal = {
+    inline def apply(async: js.UndefOr[Boolean] & `true`, client: js.UndefOr[Boolean] & js.UndefOr[`false`]): Optionsasynctrueclientfal = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasynctrueclientfal]
     }
     
-    @scala.inline
-    implicit class OptionsasynctrueclientfalMutableBuilder[Self <: Optionsasynctrueclientfal] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsasynctrueclientfal](x: Self) {
       
-      @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
+      inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
+      inline def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setClient(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
+      inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
+      inline def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
       
-      @scala.inline
-      def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
+      inline def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
+      inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
+      inline def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
+      inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
       
-      @scala.inline
-      def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
+      inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
+      inline def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
       
-      @scala.inline
-      def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
+      inline def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
+      inline def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
       
-      @scala.inline
-      def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
+      inline def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
+      inline def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
       
-      @scala.inline
-      def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
+      inline def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
+      inline def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
+      inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
+      inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
     }
   }
   
@@ -1845,125 +1608,86 @@ object anon {
   }
   object Optionsasynctrueclienttru {
     
-    @scala.inline
-    def apply(async: js.UndefOr[Boolean] & `true`, client: js.UndefOr[Boolean] & `true`): Optionsasynctrueclienttru = {
+    inline def apply(async: js.UndefOr[Boolean] & `true`, client: js.UndefOr[Boolean] & `true`): Optionsasynctrueclienttru = {
       val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsasynctrueclienttru]
     }
     
-    @scala.inline
-    implicit class OptionsasynctrueclienttruMutableBuilder[Self <: Optionsasynctrueclienttru] (val x: Self) extends AnyVal {
+    extension [Self <: Optionsasynctrueclienttru](x: Self) {
       
-      @scala.inline
-      def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
+      inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
+      inline def setBeautifyUndefined: Self = StObject.set(x, "beautify", js.undefined)
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setClient(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
+      inline def setCloseDelimiter(value: String): Self = StObject.set(x, "closeDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
+      inline def setCloseDelimiterUndefined: Self = StObject.set(x, "closeDelimiter", js.undefined)
       
-      @scala.inline
-      def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
+      inline def setCompileDebug(value: Boolean): Self = StObject.set(x, "compileDebug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
+      inline def setCompileDebugUndefined: Self = StObject.set(x, "compileDebug", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
+      inline def setDestructuredLocals(value: js.Array[String]): Self = StObject.set(x, "destructuredLocals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
+      inline def setDestructuredLocalsUndefined: Self = StObject.set(x, "destructuredLocals", js.undefined)
       
-      @scala.inline
-      def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
+      inline def setDestructuredLocalsVarargs(value: String*): Self = StObject.set(x, "destructuredLocals", js.Array(value :_*))
       
-      @scala.inline
-      def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: /* markup */ js.UndefOr[js.Any] => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+      inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
+      inline def setLocalsName(value: String): Self = StObject.set(x, "localsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
+      inline def setLocalsNameUndefined: Self = StObject.set(x, "localsName", js.undefined)
       
-      @scala.inline
-      def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
+      inline def setOpenDelimiter(value: String): Self = StObject.set(x, "openDelimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
+      inline def setOpenDelimiterUndefined: Self = StObject.set(x, "openDelimiter", js.undefined)
       
-      @scala.inline
-      def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
+      inline def setOutputFunctionName(value: String): Self = StObject.set(x, "outputFunctionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
+      inline def setOutputFunctionNameUndefined: Self = StObject.set(x, "outputFunctionName", js.undefined)
       
-      @scala.inline
-      def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
+      inline def setRmWhitespace(value: Boolean): Self = StObject.set(x, "rmWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
+      inline def setRmWhitespaceUndefined: Self = StObject.set(x, "rmWhitespace", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
+      inline def set_with(value: Boolean): Self = StObject.set(x, "_with", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
+      inline def set_withUndefined: Self = StObject.set(x, "_with", js.undefined)
     }
   }
   

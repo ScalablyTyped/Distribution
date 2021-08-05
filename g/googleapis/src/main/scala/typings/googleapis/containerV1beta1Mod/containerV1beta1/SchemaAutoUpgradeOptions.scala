@@ -25,25 +25,19 @@ trait SchemaAutoUpgradeOptions extends StObject {
 }
 object SchemaAutoUpgradeOptions {
   
-  @scala.inline
-  def apply(): SchemaAutoUpgradeOptions = {
+  inline def apply(): SchemaAutoUpgradeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAutoUpgradeOptions]
   }
   
-  @scala.inline
-  implicit class SchemaAutoUpgradeOptionsMutableBuilder[Self <: SchemaAutoUpgradeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAutoUpgradeOptions](x: Self) {
     
-    @scala.inline
-    def setAutoUpgradeStartTime(value: String): Self = StObject.set(x, "autoUpgradeStartTime", value.asInstanceOf[js.Any])
+    inline def setAutoUpgradeStartTime(value: String): Self = StObject.set(x, "autoUpgradeStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpgradeStartTimeUndefined: Self = StObject.set(x, "autoUpgradeStartTime", js.undefined)
+    inline def setAutoUpgradeStartTimeUndefined: Self = StObject.set(x, "autoUpgradeStartTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

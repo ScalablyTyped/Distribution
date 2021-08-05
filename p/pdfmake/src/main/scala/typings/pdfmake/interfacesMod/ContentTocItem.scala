@@ -21,46 +21,33 @@ trait ContentTocItem
 }
 object ContentTocItem {
   
-  @scala.inline
-  def apply(text: String | ContentTocItem, tocItem: Boolean | String | js.Array[String]): ContentTocItem = {
+  inline def apply(text: String | ContentTocItem, tocItem: Boolean | String | js.Array[String]): ContentTocItem = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], tocItem = tocItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentTocItem]
   }
   
-  @scala.inline
-  implicit class ContentTocItemMutableBuilder[Self <: ContentTocItem] (val x: Self) extends AnyVal {
+  extension [Self <: ContentTocItem](x: Self) {
     
-    @scala.inline
-    def setText(value: String | ContentTocItem): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String | ContentTocItem): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocItem(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "tocItem", value.asInstanceOf[js.Any])
+    inline def setTocItem(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "tocItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocItemVarargs(value: String*): Self = StObject.set(x, "tocItem", js.Array(value :_*))
+    inline def setTocItemVarargs(value: String*): Self = StObject.set(x, "tocItem", js.Array(value :_*))
     
-    @scala.inline
-    def setTocMargin(value: Margins): Self = StObject.set(x, "tocMargin", value.asInstanceOf[js.Any])
+    inline def setTocMargin(value: Margins): Self = StObject.set(x, "tocMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocMarginUndefined: Self = StObject.set(x, "tocMargin", js.undefined)
+    inline def setTocMarginUndefined: Self = StObject.set(x, "tocMargin", js.undefined)
     
-    @scala.inline
-    def setTocNumberStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "tocNumberStyle", value.asInstanceOf[js.Any])
+    inline def setTocNumberStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "tocNumberStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocNumberStyleUndefined: Self = StObject.set(x, "tocNumberStyle", js.undefined)
+    inline def setTocNumberStyleUndefined: Self = StObject.set(x, "tocNumberStyle", js.undefined)
     
-    @scala.inline
-    def setTocNumberStyleVarargs(value: String*): Self = StObject.set(x, "tocNumberStyle", js.Array(value :_*))
+    inline def setTocNumberStyleVarargs(value: String*): Self = StObject.set(x, "tocNumberStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setTocStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "tocStyle", value.asInstanceOf[js.Any])
+    inline def setTocStyle(value: String | js.Array[String] | Style): Self = StObject.set(x, "tocStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTocStyleUndefined: Self = StObject.set(x, "tocStyle", js.undefined)
+    inline def setTocStyleUndefined: Self = StObject.set(x, "tocStyle", js.undefined)
     
-    @scala.inline
-    def setTocStyleVarargs(value: String*): Self = StObject.set(x, "tocStyle", js.Array(value :_*))
+    inline def setTocStyleVarargs(value: String*): Self = StObject.set(x, "tocStyle", js.Array(value :_*))
   }
 }

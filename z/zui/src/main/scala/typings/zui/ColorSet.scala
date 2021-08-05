@@ -10,16 +10,13 @@ trait ColorSet extends StObject {
 }
 object ColorSet {
   
-  @scala.inline
-  def apply(get: String => Color): ColorSet = {
+  inline def apply(get: String => Color): ColorSet = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[ColorSet]
   }
   
-  @scala.inline
-  implicit class ColorSetMutableBuilder[Self <: ColorSet] (val x: Self) extends AnyVal {
+  extension [Self <: ColorSet](x: Self) {
     
-    @scala.inline
-    def setGet(value: String => Color): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => Color): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

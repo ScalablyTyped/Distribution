@@ -42,43 +42,31 @@ trait ParamsResourceAdunitsList
 }
 object ParamsResourceAdunitsList {
   
-  @scala.inline
-  def apply(): ParamsResourceAdunitsList = {
+  inline def apply(): ParamsResourceAdunitsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAdunitsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAdunitsListMutableBuilder[Self <: ParamsResourceAdunitsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAdunitsList](x: Self) {
     
-    @scala.inline
-    def setAdClientId(value: String): Self = StObject.set(x, "adClientId", value.asInstanceOf[js.Any])
+    inline def setAdClientId(value: String): Self = StObject.set(x, "adClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdClientIdUndefined: Self = StObject.set(x, "adClientId", js.undefined)
+    inline def setAdClientIdUndefined: Self = StObject.set(x, "adClientId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
+    inline def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeInactiveUndefined: Self = StObject.set(x, "includeInactive", js.undefined)
+    inline def setIncludeInactiveUndefined: Self = StObject.set(x, "includeInactive", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

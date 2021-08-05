@@ -13,19 +13,15 @@ trait AssessmentTargetFilter extends StObject {
 }
 object AssessmentTargetFilter {
   
-  @scala.inline
-  def apply(): AssessmentTargetFilter = {
+  inline def apply(): AssessmentTargetFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssessmentTargetFilter]
   }
   
-  @scala.inline
-  implicit class AssessmentTargetFilterMutableBuilder[Self <: AssessmentTargetFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AssessmentTargetFilter](x: Self) {
     
-    @scala.inline
-    def setAssessmentTargetNamePattern(value: NamePattern): Self = StObject.set(x, "assessmentTargetNamePattern", value.asInstanceOf[js.Any])
+    inline def setAssessmentTargetNamePattern(value: NamePattern): Self = StObject.set(x, "assessmentTargetNamePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentTargetNamePatternUndefined: Self = StObject.set(x, "assessmentTargetNamePattern", js.undefined)
+    inline def setAssessmentTargetNamePatternUndefined: Self = StObject.set(x, "assessmentTargetNamePattern", js.undefined)
   }
 }

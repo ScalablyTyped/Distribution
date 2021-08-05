@@ -39,8 +39,7 @@ trait SizePerPageFunctionProps extends StObject {
 }
 object SizePerPageFunctionProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeSizePerPage: Double => Unit,
     currSizePerPage: String,
     hideSizePerPage: Boolean,
@@ -52,28 +51,20 @@ object SizePerPageFunctionProps {
     __obj.asInstanceOf[SizePerPageFunctionProps]
   }
   
-  @scala.inline
-  implicit class SizePerPageFunctionPropsMutableBuilder[Self <: SizePerPageFunctionProps] (val x: Self) extends AnyVal {
+  extension [Self <: SizePerPageFunctionProps](x: Self) {
     
-    @scala.inline
-    def setChangeSizePerPage(value: Double => Unit): Self = StObject.set(x, "changeSizePerPage", js.Any.fromFunction1(value))
+    inline def setChangeSizePerPage(value: Double => Unit): Self = StObject.set(x, "changeSizePerPage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrSizePerPage(value: String): Self = StObject.set(x, "currSizePerPage", value.asInstanceOf[js.Any])
+    inline def setCurrSizePerPage(value: String): Self = StObject.set(x, "currSizePerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSizePerPage(value: Boolean): Self = StObject.set(x, "hideSizePerPage", value.asInstanceOf[js.Any])
+    inline def setHideSizePerPage(value: Boolean): Self = StObject.set(x, "hideSizePerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizePerPageList(value: SizePerPageList): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
+    inline def setSizePerPageList(value: SizePerPageList): Self = StObject.set(x, "sizePerPageList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
+    inline def setSizePerPageListVarargs(value: (Double | Text)*): Self = StObject.set(x, "sizePerPageList", js.Array(value :_*))
     
-    @scala.inline
-    def setToggleDropDown(value: () => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction0(value))
+    inline def setToggleDropDown(value: () => Unit): Self = StObject.set(x, "toggleDropDown", js.Any.fromFunction0(value))
   }
 }

@@ -10,19 +10,15 @@ trait Bookmarksui extends StObject {
 }
 object Bookmarksui {
   
-  @scala.inline
-  def apply(): Bookmarksui = {
+  inline def apply(): Bookmarksui = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bookmarksui]
   }
   
-  @scala.inline
-  implicit class BookmarksuiMutableBuilder[Self <: Bookmarksui] (val x: Self) extends AnyVal {
+  extension [Self <: Bookmarksui](x: Self) {
     
-    @scala.inline
-    def setBookmarks_ui(value: Removebookmarkshortcut): Self = StObject.set(x, "bookmarks_ui", value.asInstanceOf[js.Any])
+    inline def setBookmarks_ui(value: Removebookmarkshortcut): Self = StObject.set(x, "bookmarks_ui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarks_uiUndefined: Self = StObject.set(x, "bookmarks_ui", js.undefined)
+    inline def setBookmarks_uiUndefined: Self = StObject.set(x, "bookmarks_ui", js.undefined)
   }
 }

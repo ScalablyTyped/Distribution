@@ -37,8 +37,7 @@ object Protection {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def renewSystemComponentsAsync(information: typings.winrt.Windows.Media.Protection.RevocationAndRenewalInformation): IAsyncOperationWithProgress[RenewalStatus, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("renewSystemComponentsAsync")(information.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperationWithProgress[RenewalStatus, Double]]
+    inline def renewSystemComponentsAsync(information: typings.winrt.Windows.Media.Protection.RevocationAndRenewalInformation): IAsyncOperationWithProgress[RenewalStatus, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("renewSystemComponentsAsync")(information.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperationWithProgress[RenewalStatus, Double]]
   }
   
   @JSGlobal("Windows.Media.Protection.MediaProtectionManager")

@@ -22,55 +22,39 @@ trait ColumnSpec extends StObject {
 }
 object ColumnSpec {
   
-  @scala.inline
-  def apply(): ColumnSpec = {
+  inline def apply(): ColumnSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnSpec]
   }
   
-  @scala.inline
-  implicit class ColumnSpecMutableBuilder[Self <: ColumnSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnSpec](x: Self) {
     
-    @scala.inline
-    def setCalc(value: (/* data */ DataTable, /* row */ Double) => js.Any): Self = StObject.set(x, "calc", js.Any.fromFunction2(value))
+    inline def setCalc(value: (/* data */ DataTable, /* row */ Double) => js.Any): Self = StObject.set(x, "calc", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCalcUndefined: Self = StObject.set(x, "calc", js.undefined)
+    inline def setCalcUndefined: Self = StObject.set(x, "calc", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
+    inline def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceColumnUndefined: Self = StObject.set(x, "sourceColumn", js.undefined)
+    inline def setSourceColumnUndefined: Self = StObject.set(x, "sourceColumn", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

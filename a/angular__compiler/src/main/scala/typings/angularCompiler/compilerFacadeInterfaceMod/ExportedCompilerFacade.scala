@@ -10,16 +10,13 @@ trait ExportedCompilerFacade extends StObject {
 }
 object ExportedCompilerFacade {
   
-  @scala.inline
-  def apply(ɵcompilerFacade: CompilerFacade): ExportedCompilerFacade = {
+  inline def apply(ɵcompilerFacade: CompilerFacade): ExportedCompilerFacade = {
     val __obj = js.Dynamic.literal(ɵcompilerFacade = ɵcompilerFacade.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportedCompilerFacade]
   }
   
-  @scala.inline
-  implicit class ExportedCompilerFacadeMutableBuilder[Self <: ExportedCompilerFacade] (val x: Self) extends AnyVal {
+  extension [Self <: ExportedCompilerFacade](x: Self) {
     
-    @scala.inline
-    def setƟcompilerFacade(value: CompilerFacade): Self = StObject.set(x, "\u0275compilerFacade", value.asInstanceOf[js.Any])
+    inline def setƟcompilerFacade(value: CompilerFacade): Self = StObject.set(x, "\u0275compilerFacade", value.asInstanceOf[js.Any])
   }
 }

@@ -16,25 +16,19 @@ trait UserAgentDisconnectedEvent extends StObject {
 }
 object UserAgentDisconnectedEvent {
   
-  @scala.inline
-  def apply(code: Double, error: Boolean, reason: String, socket: Socket): UserAgentDisconnectedEvent = {
+  inline def apply(code: Double, error: Boolean, reason: String, socket: Socket): UserAgentDisconnectedEvent = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserAgentDisconnectedEvent]
   }
   
-  @scala.inline
-  implicit class UserAgentDisconnectedEventMutableBuilder[Self <: UserAgentDisconnectedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UserAgentDisconnectedEvent](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }
 }

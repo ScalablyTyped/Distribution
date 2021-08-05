@@ -14,9 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceLocalMemType extends StObject
 object DeviceLocalMemType {
   
-  @scala.inline
-  def GLOBAL: `0x2` = 0x2.asInstanceOf[`0x2`]
+  inline def GLOBAL: `0x2` = 0x2.asInstanceOf[`0x2`]
   
-  @scala.inline
-  def LOCAL: `0x1` = 0x1.asInstanceOf[`0x1`]
+  inline def LOCAL: `0x1` = 0x1.asInstanceOf[`0x1`]
 }

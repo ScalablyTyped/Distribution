@@ -10,8 +10,6 @@ object esmNormalizeColorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalizeColor(color: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
-  @scala.inline
-  def normalizeColor(color: Double): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  inline def normalizeColor(color: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  inline def normalizeColor(color: Double): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
 }

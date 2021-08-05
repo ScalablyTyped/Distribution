@@ -43,61 +43,43 @@ trait GetResourcesInput extends StObject {
 }
 object GetResourcesInput {
   
-  @scala.inline
-  def apply(): GetResourcesInput = {
+  inline def apply(): GetResourcesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourcesInput]
   }
   
-  @scala.inline
-  implicit class GetResourcesInputMutableBuilder[Self <: GetResourcesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourcesInput](x: Self) {
     
-    @scala.inline
-    def setExcludeCompliantResources(value: ExcludeCompliantResources): Self = StObject.set(x, "ExcludeCompliantResources", value.asInstanceOf[js.Any])
+    inline def setExcludeCompliantResources(value: ExcludeCompliantResources): Self = StObject.set(x, "ExcludeCompliantResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeCompliantResourcesUndefined: Self = StObject.set(x, "ExcludeCompliantResources", js.undefined)
+    inline def setExcludeCompliantResourcesUndefined: Self = StObject.set(x, "ExcludeCompliantResources", js.undefined)
     
-    @scala.inline
-    def setIncludeComplianceDetails(value: IncludeComplianceDetails): Self = StObject.set(x, "IncludeComplianceDetails", value.asInstanceOf[js.Any])
+    inline def setIncludeComplianceDetails(value: IncludeComplianceDetails): Self = StObject.set(x, "IncludeComplianceDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeComplianceDetailsUndefined: Self = StObject.set(x, "IncludeComplianceDetails", js.undefined)
+    inline def setIncludeComplianceDetailsUndefined: Self = StObject.set(x, "IncludeComplianceDetails", js.undefined)
     
-    @scala.inline
-    def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
+    inline def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
+    inline def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
     
-    @scala.inline
-    def setResourceTypeFilters(value: ResourceTypeFilterList): Self = StObject.set(x, "ResourceTypeFilters", value.asInstanceOf[js.Any])
+    inline def setResourceTypeFilters(value: ResourceTypeFilterList): Self = StObject.set(x, "ResourceTypeFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeFiltersUndefined: Self = StObject.set(x, "ResourceTypeFilters", js.undefined)
+    inline def setResourceTypeFiltersUndefined: Self = StObject.set(x, "ResourceTypeFilters", js.undefined)
     
-    @scala.inline
-    def setResourceTypeFiltersVarargs(value: AmazonResourceType*): Self = StObject.set(x, "ResourceTypeFilters", js.Array(value :_*))
+    inline def setResourceTypeFiltersVarargs(value: AmazonResourceType*): Self = StObject.set(x, "ResourceTypeFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setResourcesPerPage(value: ResourcesPerPage): Self = StObject.set(x, "ResourcesPerPage", value.asInstanceOf[js.Any])
+    inline def setResourcesPerPage(value: ResourcesPerPage): Self = StObject.set(x, "ResourcesPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesPerPageUndefined: Self = StObject.set(x, "ResourcesPerPage", js.undefined)
+    inline def setResourcesPerPageUndefined: Self = StObject.set(x, "ResourcesPerPage", js.undefined)
     
-    @scala.inline
-    def setTagFilters(value: TagFilterList): Self = StObject.set(x, "TagFilters", value.asInstanceOf[js.Any])
+    inline def setTagFilters(value: TagFilterList): Self = StObject.set(x, "TagFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFiltersUndefined: Self = StObject.set(x, "TagFilters", js.undefined)
+    inline def setTagFiltersUndefined: Self = StObject.set(x, "TagFilters", js.undefined)
     
-    @scala.inline
-    def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "TagFilters", js.Array(value :_*))
+    inline def setTagFiltersVarargs(value: TagFilter*): Self = StObject.set(x, "TagFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setTagsPerPage(value: TagsPerPage): Self = StObject.set(x, "TagsPerPage", value.asInstanceOf[js.Any])
+    inline def setTagsPerPage(value: TagsPerPage): Self = StObject.set(x, "TagsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsPerPageUndefined: Self = StObject.set(x, "TagsPerPage", js.undefined)
+    inline def setTagsPerPageUndefined: Self = StObject.set(x, "TagsPerPage", js.undefined)
   }
 }

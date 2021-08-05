@@ -21,37 +21,27 @@ trait Metadata extends StObject {
 }
 object Metadata {
   
-  @scala.inline
-  def apply(metadata: GoogleEarthEnterpriseMetadata, url: Resource | String): Metadata = {
+  inline def apply(metadata: GoogleEarthEnterpriseMetadata, url: Resource | String): Metadata = {
     val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
   
-  @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: Metadata](x: Self) {
     
-    @scala.inline
-    def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+    inline def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
+    inline def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
     
-    @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+    inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+    inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: GoogleEarthEnterpriseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: GoogleEarthEnterpriseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
+    inline def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
+    inline def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
     
-    @scala.inline
-    def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

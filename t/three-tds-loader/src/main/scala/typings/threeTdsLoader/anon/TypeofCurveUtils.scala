@@ -16,8 +16,7 @@ trait TypeofCurveUtils extends StObject {
 }
 object TypeofCurveUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     interpolate: (Double, Double, Double, Double, Double) => Double,
     tangentCubicBezier: (Double, Double, Double, Double, Double) => Double,
     tangentQuadraticBezier: (Double, Double, Double, Double) => Double,
@@ -27,19 +26,14 @@ object TypeofCurveUtils {
     __obj.asInstanceOf[TypeofCurveUtils]
   }
   
-  @scala.inline
-  implicit class TypeofCurveUtilsMutableBuilder[Self <: TypeofCurveUtils] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofCurveUtils](x: Self) {
     
-    @scala.inline
-    def setInterpolate(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "interpolate", js.Any.fromFunction5(value))
+    inline def setInterpolate(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "interpolate", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTangentCubicBezier(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "tangentCubicBezier", js.Any.fromFunction5(value))
+    inline def setTangentCubicBezier(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "tangentCubicBezier", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setTangentQuadraticBezier(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "tangentQuadraticBezier", js.Any.fromFunction4(value))
+    inline def setTangentQuadraticBezier(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "tangentQuadraticBezier", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setTangentSpline(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "tangentSpline", js.Any.fromFunction5(value))
+    inline def setTangentSpline(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "tangentSpline", js.Any.fromFunction5(value))
   }
 }

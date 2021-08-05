@@ -22,19 +22,15 @@ trait VolumeDevice extends StObject {
 }
 object VolumeDevice {
   
-  @scala.inline
-  def apply(devicePath: Input[String], name: Input[String]): VolumeDevice = {
+  inline def apply(devicePath: Input[String], name: Input[String]): VolumeDevice = {
     val __obj = js.Dynamic.literal(devicePath = devicePath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeDevice]
   }
   
-  @scala.inline
-  implicit class VolumeDeviceMutableBuilder[Self <: VolumeDevice] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeDevice](x: Self) {
     
-    @scala.inline
-    def setDevicePath(value: Input[String]): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
+    inline def setDevicePath(value: Input[String]): Self = StObject.set(x, "devicePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

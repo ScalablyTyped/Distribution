@@ -13,19 +13,15 @@ trait OmitTeamMembershipPropssy extends StObject {
 }
 object OmitTeamMembershipPropssy {
   
-  @scala.inline
-  def apply(admin: Boolean, organizationMembershipId: String): OmitTeamMembershipPropssy = {
+  inline def apply(admin: Boolean, organizationMembershipId: String): OmitTeamMembershipPropssy = {
     val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], organizationMembershipId = organizationMembershipId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitTeamMembershipPropssy]
   }
   
-  @scala.inline
-  implicit class OmitTeamMembershipPropssyMutableBuilder[Self <: OmitTeamMembershipPropssy] (val x: Self) extends AnyVal {
+  extension [Self <: OmitTeamMembershipPropssy](x: Self) {
     
-    @scala.inline
-    def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+    inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationMembershipId(value: String): Self = StObject.set(x, "organizationMembershipId", value.asInstanceOf[js.Any])
+    inline def setOrganizationMembershipId(value: String): Self = StObject.set(x, "organizationMembershipId", value.asInstanceOf[js.Any])
   }
 }

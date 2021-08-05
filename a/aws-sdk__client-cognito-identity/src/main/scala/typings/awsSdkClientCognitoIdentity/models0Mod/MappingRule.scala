@@ -30,8 +30,7 @@ trait MappingRule extends StObject {
 }
 object MappingRule {
   
-  @scala.inline
-  def apply(): MappingRule = {
+  inline def apply(): MappingRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MappingRule]
   }
@@ -40,34 +39,24 @@ object MappingRule {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: MappingRule): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: MappingRule): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class MappingRuleMutableBuilder[Self <: MappingRule] (val x: Self) extends AnyVal {
+  extension [Self <: MappingRule](x: Self) {
     
-    @scala.inline
-    def setClaim(value: String): Self = StObject.set(x, "Claim", value.asInstanceOf[js.Any])
+    inline def setClaim(value: String): Self = StObject.set(x, "Claim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClaimUndefined: Self = StObject.set(x, "Claim", js.undefined)
+    inline def setClaimUndefined: Self = StObject.set(x, "Claim", js.undefined)
     
-    @scala.inline
-    def setMatchType(value: MappingRuleMatchType | String): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
+    inline def setMatchType(value: MappingRuleMatchType | String): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchTypeUndefined: Self = StObject.set(x, "MatchType", js.undefined)
+    inline def setMatchTypeUndefined: Self = StObject.set(x, "MatchType", js.undefined)
     
-    @scala.inline
-    def setRoleARN(value: String): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+    inline def setRoleARN(value: String): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
+    inline def setRoleARNUndefined: Self = StObject.set(x, "RoleARN", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

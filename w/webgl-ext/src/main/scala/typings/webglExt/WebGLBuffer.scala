@@ -10,16 +10,13 @@ trait WebGLBuffer extends StObject {
 }
 object WebGLBuffer {
   
-  @scala.inline
-  def apply(__WebGLBuffer: Unit): WebGLBuffer = {
+  inline def apply(__WebGLBuffer: Unit): WebGLBuffer = {
     val __obj = js.Dynamic.literal(__WebGLBuffer = __WebGLBuffer.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebGLBuffer]
   }
   
-  @scala.inline
-  implicit class WebGLBufferMutableBuilder[Self <: WebGLBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: WebGLBuffer](x: Self) {
     
-    @scala.inline
-    def set__WebGLBuffer(value: Unit): Self = StObject.set(x, "__WebGLBuffer", value.asInstanceOf[js.Any])
+    inline def set__WebGLBuffer(value: Unit): Self = StObject.set(x, "__WebGLBuffer", value.asInstanceOf[js.Any])
   }
 }

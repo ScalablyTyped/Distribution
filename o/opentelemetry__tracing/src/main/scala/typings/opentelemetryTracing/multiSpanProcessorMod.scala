@@ -15,7 +15,7 @@ object multiSpanProcessorMod {
        with SpanProcessor {
     def this(_spanProcessors: js.Array[SpanProcessor]) = this()
     
-    val _spanProcessors: js.Any = js.native
+    /* private */ val _spanProcessors: js.Any = js.native
     
     def forceFlush(): Unit = js.native
     /**

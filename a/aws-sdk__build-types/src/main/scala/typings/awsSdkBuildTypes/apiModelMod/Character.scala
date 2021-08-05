@@ -15,17 +15,14 @@ trait Character
 }
 object Character {
   
-  @scala.inline
-  def apply(): Character = {
+  inline def apply(): Character = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("character")
     __obj.asInstanceOf[Character]
   }
   
-  @scala.inline
-  implicit class CharacterMutableBuilder[Self <: Character] (val x: Self) extends AnyVal {
+  extension [Self <: Character](x: Self) {
     
-    @scala.inline
-    def setType(value: character): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: character): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

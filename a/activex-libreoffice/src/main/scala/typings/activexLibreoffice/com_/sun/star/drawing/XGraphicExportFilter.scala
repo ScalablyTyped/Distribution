@@ -20,8 +20,7 @@ trait XGraphicExportFilter
      with XMimeTypeInfo
 object XGraphicExportFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedMimeTypeNames: SafeArray[String],
     acquire: () => Unit,
     cancel: () => Unit,

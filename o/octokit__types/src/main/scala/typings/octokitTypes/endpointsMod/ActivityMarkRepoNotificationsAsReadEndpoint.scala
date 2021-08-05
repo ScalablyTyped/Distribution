@@ -17,25 +17,19 @@ trait ActivityMarkRepoNotificationsAsReadEndpoint extends StObject {
 }
 object ActivityMarkRepoNotificationsAsReadEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ActivityMarkRepoNotificationsAsReadEndpoint = {
+  inline def apply(owner: String, repo: String): ActivityMarkRepoNotificationsAsReadEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityMarkRepoNotificationsAsReadEndpoint]
   }
   
-  @scala.inline
-  implicit class ActivityMarkRepoNotificationsAsReadEndpointMutableBuilder[Self <: ActivityMarkRepoNotificationsAsReadEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityMarkRepoNotificationsAsReadEndpoint](x: Self) {
     
-    @scala.inline
-    def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
+    inline def setLast_read_at(value: String): Self = StObject.set(x, "last_read_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_read_atUndefined: Self = StObject.set(x, "last_read_at", js.undefined)
+    inline def setLast_read_atUndefined: Self = StObject.set(x, "last_read_at", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

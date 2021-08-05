@@ -13,8 +13,7 @@ trait AudioDeviceController
      with IAudioDeviceController
 object AudioDeviceController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAvailableMediaStreamProperties: MediaStreamType => IVectorView[IMediaEncodingProperties],
     getMediaStreamProperties: MediaStreamType => IMediaEncodingProperties,
     muted: Boolean,

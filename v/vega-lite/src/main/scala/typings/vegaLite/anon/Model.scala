@@ -25,8 +25,7 @@ trait Model extends StObject {
 }
 object Model {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: PositionChannel | PolarPositionChannel,
     model: UnitModel,
     scale: ScaleComponent,
@@ -36,25 +35,18 @@ object Model {
     __obj.asInstanceOf[Model]
   }
   
-  @scala.inline
-  implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
+  extension [Self <: Model](x: Self) {
     
-    @scala.inline
-    def setChannel(value: PositionChannel | PolarPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: PositionChannel | PolarPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPos(value: mid | zeroOrMin | zeroOrMax): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
+    inline def setDefaultPos(value: mid | zeroOrMin | zeroOrMax): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPosNull: Self = StObject.set(x, "defaultPos", null)
+    inline def setDefaultPosNull: Self = StObject.set(x, "defaultPos", null)
     
-    @scala.inline
-    def setModel(value: UnitModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: UnitModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: ScaleComponent): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: ScaleComponent): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleName(value: String): Self = StObject.set(x, "scaleName", value.asInstanceOf[js.Any])
+    inline def setScaleName(value: String): Self = StObject.set(x, "scaleName", value.asInstanceOf[js.Any])
   }
 }

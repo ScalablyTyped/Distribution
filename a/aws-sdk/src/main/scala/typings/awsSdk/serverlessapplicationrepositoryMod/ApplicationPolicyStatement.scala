@@ -29,40 +29,29 @@ trait ApplicationPolicyStatement extends StObject {
 }
 object ApplicationPolicyStatement {
   
-  @scala.inline
-  def apply(Actions: listOfString, Principals: listOfString): ApplicationPolicyStatement = {
+  inline def apply(Actions: listOfString, Principals: listOfString): ApplicationPolicyStatement = {
     val __obj = js.Dynamic.literal(Actions = Actions.asInstanceOf[js.Any], Principals = Principals.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationPolicyStatement]
   }
   
-  @scala.inline
-  implicit class ApplicationPolicyStatementMutableBuilder[Self <: ApplicationPolicyStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationPolicyStatement](x: Self) {
     
-    @scala.inline
-    def setActions(value: listOfString): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: listOfString): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: string*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: string*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setPrincipalOrgIDs(value: listOfString): Self = StObject.set(x, "PrincipalOrgIDs", value.asInstanceOf[js.Any])
+    inline def setPrincipalOrgIDs(value: listOfString): Self = StObject.set(x, "PrincipalOrgIDs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalOrgIDsUndefined: Self = StObject.set(x, "PrincipalOrgIDs", js.undefined)
+    inline def setPrincipalOrgIDsUndefined: Self = StObject.set(x, "PrincipalOrgIDs", js.undefined)
     
-    @scala.inline
-    def setPrincipalOrgIDsVarargs(value: string*): Self = StObject.set(x, "PrincipalOrgIDs", js.Array(value :_*))
+    inline def setPrincipalOrgIDsVarargs(value: string*): Self = StObject.set(x, "PrincipalOrgIDs", js.Array(value :_*))
     
-    @scala.inline
-    def setPrincipals(value: listOfString): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: listOfString): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsVarargs(value: string*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: string*): Self = StObject.set(x, "Principals", js.Array(value :_*))
     
-    @scala.inline
-    def setStatementId(value: string): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
+    inline def setStatementId(value: string): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementIdUndefined: Self = StObject.set(x, "StatementId", js.undefined)
+    inline def setStatementIdUndefined: Self = StObject.set(x, "StatementId", js.undefined)
   }
 }

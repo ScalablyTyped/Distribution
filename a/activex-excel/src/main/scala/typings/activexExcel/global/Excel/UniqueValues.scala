@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.UniqueValues")
 @js.native
-class UniqueValues protected ()
+/* private */ class UniqueValues ()
   extends StObject
      with typings.activexExcel.Excel.UniqueValues {
   
@@ -45,7 +45,7 @@ class UniqueValues protected ()
   /* CompleteClass */
   var DupeUnique: XlDupeUnique = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.UniqueValues_typekey")
   var ExcelDotUniqueValues_typekey: typings.activexExcel.Excel.UniqueValues = js.native
   

@@ -12,36 +12,27 @@ object ecpairMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromPrivateKey(buffer: Buffer): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[ECPair]
-  @scala.inline
-  def fromPrivateKey(buffer: Buffer, options: ECPairOptions): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ECPair]
+  inline def fromPrivateKey(buffer: Buffer): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[ECPair]
+  inline def fromPrivateKey(buffer: Buffer, options: ECPairOptions): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivateKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ECPair]
   
-  @scala.inline
-  def fromPublicKey(buffer: Buffer): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[ECPair]
-  @scala.inline
-  def fromPublicKey(buffer: Buffer, options: ECPairOptions): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ECPair]
+  inline def fromPublicKey(buffer: Buffer): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any]).asInstanceOf[ECPair]
+  inline def fromPublicKey(buffer: Buffer, options: ECPairOptions): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublicKey")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ECPair]
   
-  @scala.inline
-  def fromWIF(wifString: String): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any]).asInstanceOf[ECPair]
-  @scala.inline
-  def fromWIF(wifString: String, network: js.Array[Network]): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[ECPair]
-  @scala.inline
-  def fromWIF(wifString: String, network: Network): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[ECPair]
+  inline def fromWIF(wifString: String): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any]).asInstanceOf[ECPair]
+  inline def fromWIF(wifString: String, network: js.Array[Network]): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[ECPair]
+  inline def fromWIF(wifString: String, network: Network): ECPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWIF")(wifString.asInstanceOf[js.Any], network.asInstanceOf[js.Any])).asInstanceOf[ECPair]
   
-  @scala.inline
-  def makeRandom(): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")().asInstanceOf[ECPair]
-  @scala.inline
-  def makeRandom(options: ECPairOptions): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")(options.asInstanceOf[js.Any]).asInstanceOf[ECPair]
+  inline def makeRandom(): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")().asInstanceOf[ECPair]
+  inline def makeRandom(options: ECPairOptions): ECPair = ^.asInstanceOf[js.Dynamic].applyDynamic("makeRandom")(options.asInstanceOf[js.Any]).asInstanceOf[ECPair]
   
   @js.native
   trait ECPair
     extends StObject
        with ECPairInterface {
     
-    var __D: js.Any = js.native
+    /* private */ var __D: js.Any = js.native
     
-    var __Q: js.Any = js.native
+    /* private */ var __Q: js.Any = js.native
   }
   
   @js.native
@@ -73,32 +64,24 @@ object ecpairMod {
   }
   object ECPairOptions {
     
-    @scala.inline
-    def apply(): ECPairOptions = {
+    inline def apply(): ECPairOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ECPairOptions]
     }
     
-    @scala.inline
-    implicit class ECPairOptionsMutableBuilder[Self <: ECPairOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ECPairOptions](x: Self) {
       
-      @scala.inline
-      def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
+      inline def setCompressed(value: Boolean): Self = StObject.set(x, "compressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressedUndefined: Self = StObject.set(x, "compressed", js.undefined)
+      inline def setCompressedUndefined: Self = StObject.set(x, "compressed", js.undefined)
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+      inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
       
-      @scala.inline
-      def setRng(value: /* arg0 */ Double => Buffer): Self = StObject.set(x, "rng", js.Any.fromFunction1(value))
+      inline def setRng(value: /* arg0 */ Double => Buffer): Self = StObject.set(x, "rng", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
+      inline def setRngUndefined: Self = StObject.set(x, "rng", js.undefined)
     }
   }
   

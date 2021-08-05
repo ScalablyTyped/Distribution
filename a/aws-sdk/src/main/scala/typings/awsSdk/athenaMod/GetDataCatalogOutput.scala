@@ -13,19 +13,15 @@ trait GetDataCatalogOutput extends StObject {
 }
 object GetDataCatalogOutput {
   
-  @scala.inline
-  def apply(): GetDataCatalogOutput = {
+  inline def apply(): GetDataCatalogOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDataCatalogOutput]
   }
   
-  @scala.inline
-  implicit class GetDataCatalogOutputMutableBuilder[Self <: GetDataCatalogOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetDataCatalogOutput](x: Self) {
     
-    @scala.inline
-    def setDataCatalog(value: DataCatalog): Self = StObject.set(x, "DataCatalog", value.asInstanceOf[js.Any])
+    inline def setDataCatalog(value: DataCatalog): Self = StObject.set(x, "DataCatalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCatalogUndefined: Self = StObject.set(x, "DataCatalog", js.undefined)
+    inline def setDataCatalogUndefined: Self = StObject.set(x, "DataCatalog", js.undefined)
   }
 }

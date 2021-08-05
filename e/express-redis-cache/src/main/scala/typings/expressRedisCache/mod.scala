@@ -14,10 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExpressRedisCache]
-  @scala.inline
-  def apply(options: Options): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExpressRedisCache]
+  inline def apply(): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExpressRedisCache]
+  inline def apply(options: Options): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ExpressRedisCache]
   
   @JSImport("express-redis-cache", JSImport.Namespace)
   @js.native
@@ -75,10 +73,8 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def init(): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[ExpressRedisCache]
-    @scala.inline
-    def init(options: Options): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[ExpressRedisCache]
+    inline def init(): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[ExpressRedisCache]
+    inline def init(options: Options): ExpressRedisCache = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[ExpressRedisCache]
   }
   
   trait AddOptions extends StObject {
@@ -89,26 +85,20 @@ object mod {
   }
   object AddOptions {
     
-    @scala.inline
-    def apply(): AddOptions = {
+    inline def apply(): AddOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddOptions]
     }
     
-    @scala.inline
-    implicit class AddOptionsMutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AddOptions](x: Self) {
       
-      @scala.inline
-      def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+      inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
+      inline def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -124,27 +114,21 @@ object mod {
   }
   object Entry {
     
-    @scala.inline
-    def apply(body: String, expire: Double, touched: Double, `type`: String): Entry = {
+    inline def apply(body: String, expire: Double, touched: Double, `type`: String): Entry = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], expire = expire.asInstanceOf[js.Any], touched = touched.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entry]
     }
     
-    @scala.inline
-    implicit class EntryMutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
+    extension [Self <: Entry](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+      inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouched(value: Double): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: Double): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,50 +158,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAuth_pass(value: String): Self = StObject.set(x, "auth_pass", value.asInstanceOf[js.Any])
+      inline def setAuth_pass(value: String): Self = StObject.set(x, "auth_pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuth_passUndefined: Self = StObject.set(x, "auth_pass", js.undefined)
+      inline def setAuth_passUndefined: Self = StObject.set(x, "auth_pass", js.undefined)
       
-      @scala.inline
-      def setClient(value: RedisClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: RedisClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+      inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
+      inline def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -231,37 +201,28 @@ object mod {
   }
   object RouteOptions {
     
-    @scala.inline
-    def apply(): RouteOptions = {
+    inline def apply(): RouteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteOptions]
     }
     
-    @scala.inline
-    implicit class RouteOptionsMutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouteOptions](x: Self) {
       
-      @scala.inline
-      def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      @scala.inline
-      def setExpire(value: ExpireOption | ExpirationPolicy): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+      inline def setExpire(value: ExpireOption | ExpirationPolicy): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpireFunction2(
+      inline def setExpireFunction2(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Double
       ): Self = StObject.set(x, "expire", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
+      inline def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -275,26 +236,20 @@ object mod {
     }
     object Response {
       
-      @scala.inline
-      def apply(): Response = {
+      inline def apply(): Response = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Response]
       }
       
-      @scala.inline
-      implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+      extension [Self <: Response](x: Self) {
         
-        @scala.inline
-        def setExpress_redis_cache_name(value: String): Self = StObject.set(x, "express_redis_cache_name", value.asInstanceOf[js.Any])
+        inline def setExpress_redis_cache_name(value: String): Self = StObject.set(x, "express_redis_cache_name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpress_redis_cache_nameUndefined: Self = StObject.set(x, "express_redis_cache_name", js.undefined)
+        inline def setExpress_redis_cache_nameUndefined: Self = StObject.set(x, "express_redis_cache_name", js.undefined)
         
-        @scala.inline
-        def setUse_express_redis_cache(value: Boolean): Self = StObject.set(x, "use_express_redis_cache", value.asInstanceOf[js.Any])
+        inline def setUse_express_redis_cache(value: Boolean): Self = StObject.set(x, "use_express_redis_cache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUse_express_redis_cacheUndefined: Self = StObject.set(x, "use_express_redis_cache", js.undefined)
+        inline def setUse_express_redis_cacheUndefined: Self = StObject.set(x, "use_express_redis_cache", js.undefined)
       }
     }
   }

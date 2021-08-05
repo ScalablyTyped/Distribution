@@ -39,14 +39,14 @@ object splitPaneMod {
       */
     var ionSplitPaneVisible: EventEmitter[Visible] = js.native
     
-    var isPane: js.Any = js.native
+    /* private */ var isPane: js.Any = js.native
     
     @JSName("render")
     def render_MSplitPane(): js.Any = js.native
     
-    var rmL: js.Any = js.native
+    /* private */ var rmL: js.Any = js.native
     
-    var styleChildren: js.Any = js.native
+    /* private */ var styleChildren: js.Any = js.native
     
     /* protected */ def updateState(): Unit = js.native
     

@@ -13,8 +13,7 @@ trait Media
 }
 object Media {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -35,10 +34,8 @@ object Media {
     __obj.asInstanceOf[Media]
   }
   
-  @scala.inline
-  implicit class MediaMutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
+  extension [Self <: Media](x: Self) {
     
-    @scala.inline
-    def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }
 }

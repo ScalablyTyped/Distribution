@@ -10,19 +10,15 @@ trait TabId extends StObject {
 }
 object TabId {
   
-  @scala.inline
-  def apply(): TabId = {
+  inline def apply(): TabId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TabId]
   }
   
-  @scala.inline
-  implicit class TabIdMutableBuilder[Self <: TabId] (val x: Self) extends AnyVal {
+  extension [Self <: TabId](x: Self) {
     
-    @scala.inline
-    def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+    inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
   }
 }

@@ -47,8 +47,7 @@ trait TravelMode
 }
 object TravelMode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -57,37 +56,26 @@ object TravelMode {
     __obj.asInstanceOf[TravelMode]
   }
   
-  @scala.inline
-  implicit class TravelModeMutableBuilder[Self <: TravelMode] (val x: Self) extends AnyVal {
+  extension [Self <: TravelMode](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setImpedanceAttributeName(value: String): Self = StObject.set(x, "impedanceAttributeName", value.asInstanceOf[js.Any])
+    inline def setImpedanceAttributeName(value: String): Self = StObject.set(x, "impedanceAttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpedanceAttributeNameUndefined: Self = StObject.set(x, "impedanceAttributeName", js.undefined)
+    inline def setImpedanceAttributeNameUndefined: Self = StObject.set(x, "impedanceAttributeName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTimeAttributeName(value: String): Self = StObject.set(x, "timeAttributeName", value.asInstanceOf[js.Any])
+    inline def setTimeAttributeName(value: String): Self = StObject.set(x, "timeAttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeAttributeNameUndefined: Self = StObject.set(x, "timeAttributeName", js.undefined)
+    inline def setTimeAttributeNameUndefined: Self = StObject.set(x, "timeAttributeName", js.undefined)
   }
 }

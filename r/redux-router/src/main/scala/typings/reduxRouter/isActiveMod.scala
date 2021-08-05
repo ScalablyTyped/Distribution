@@ -11,19 +11,15 @@ object isActiveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(pathname: Pathname): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def default(
+  inline def default(pathname: Pathname): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(
     pathname: Pathname,
     query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def default(
+  inline def default(
     pathname: Pathname,
     query: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.Query */ js.Any,
     indexOnly: Boolean
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], indexOnly.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def default(pathname: Pathname, query: Unit, indexOnly: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], indexOnly.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(pathname: Pathname, query: Unit, indexOnly: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(pathname.asInstanceOf[js.Any], query.asInstanceOf[js.Any], indexOnly.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

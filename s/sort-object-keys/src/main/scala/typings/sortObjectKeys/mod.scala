@@ -6,12 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def apply[T](`object`: T, sortWith: js.Array[/* keyof T */ String]): T = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], sortWith.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def apply[T](
+  inline def apply[T](`object`: T): T = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def apply[T](`object`: T, sortWith: js.Array[/* keyof T */ String]): T = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], sortWith.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def apply[T](
     `object`: T,
     sortWith: js.Function2[/* keyof T */ /* a */ String, /* keyof T */ /* b */ String, Double]
   ): T = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], sortWith.asInstanceOf[js.Any])).asInstanceOf[T]

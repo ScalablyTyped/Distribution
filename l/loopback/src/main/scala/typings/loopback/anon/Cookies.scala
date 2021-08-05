@@ -24,70 +24,49 @@ trait Cookies extends StObject {
 }
 object Cookies {
   
-  @scala.inline
-  def apply(): Cookies = {
+  inline def apply(): Cookies = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cookies]
   }
   
-  @scala.inline
-  implicit class CookiesMutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
+  extension [Self <: Cookies](x: Self) {
     
-    @scala.inline
-    def setCookies(value: js.Array[js.Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: js.Array[js.Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+    inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
     
-    @scala.inline
-    def setCookiesVarargs(value: js.Any*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+    inline def setCookiesVarargs(value: js.Any*): Self = StObject.set(x, "cookies", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentUserLiteral(value: String): Self = StObject.set(x, "currentUserLiteral", value.asInstanceOf[js.Any])
+    inline def setCurrentUserLiteral(value: String): Self = StObject.set(x, "currentUserLiteral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUserLiteralUndefined: Self = StObject.set(x, "currentUserLiteral", js.undefined)
+    inline def setCurrentUserLiteralUndefined: Self = StObject.set(x, "currentUserLiteral", js.undefined)
     
-    @scala.inline
-    def setEnableDoublecheck(value: Boolean): Self = StObject.set(x, "enableDoublecheck", value.asInstanceOf[js.Any])
+    inline def setEnableDoublecheck(value: Boolean): Self = StObject.set(x, "enableDoublecheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDoublecheckUndefined: Self = StObject.set(x, "enableDoublecheck", js.undefined)
+    inline def setEnableDoublecheckUndefined: Self = StObject.set(x, "enableDoublecheck", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setModel(value: () => Unit | String): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
+    inline def setModel(value: () => Unit | String): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setOverwriteExistingToken(value: Boolean): Self = StObject.set(x, "overwriteExistingToken", value.asInstanceOf[js.Any])
+    inline def setOverwriteExistingToken(value: Boolean): Self = StObject.set(x, "overwriteExistingToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteExistingTokenUndefined: Self = StObject.set(x, "overwriteExistingToken", js.undefined)
+    inline def setOverwriteExistingTokenUndefined: Self = StObject.set(x, "overwriteExistingToken", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setSearchDefaultTokenKeys(value: Boolean): Self = StObject.set(x, "searchDefaultTokenKeys", value.asInstanceOf[js.Any])
+    inline def setSearchDefaultTokenKeys(value: Boolean): Self = StObject.set(x, "searchDefaultTokenKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchDefaultTokenKeysUndefined: Self = StObject.set(x, "searchDefaultTokenKeys", js.undefined)
+    inline def setSearchDefaultTokenKeysUndefined: Self = StObject.set(x, "searchDefaultTokenKeys", js.undefined)
   }
 }

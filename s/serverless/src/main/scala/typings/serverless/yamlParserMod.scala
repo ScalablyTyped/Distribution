@@ -23,17 +23,14 @@ object yamlParserMod {
   }
   object YamlParser {
     
-    @scala.inline
-    def apply(parse: String => js.Promise[js.Any]): YamlParser = {
+    inline def apply(parse: String => js.Promise[js.Any]): YamlParser = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
       __obj.asInstanceOf[YamlParser]
     }
     
-    @scala.inline
-    implicit class YamlParserMutableBuilder[Self <: YamlParser] (val x: Self) extends AnyVal {
+    extension [Self <: YamlParser](x: Self) {
       
-      @scala.inline
-      def setParse(value: String => js.Promise[js.Any]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => js.Promise[js.Any]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }
   }
 }

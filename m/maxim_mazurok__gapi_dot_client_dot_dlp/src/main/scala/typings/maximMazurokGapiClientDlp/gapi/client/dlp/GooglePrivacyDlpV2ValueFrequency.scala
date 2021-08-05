@@ -14,25 +14,19 @@ trait GooglePrivacyDlpV2ValueFrequency extends StObject {
 }
 object GooglePrivacyDlpV2ValueFrequency {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ValueFrequency = {
+  inline def apply(): GooglePrivacyDlpV2ValueFrequency = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ValueFrequency]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ValueFrequencyMutableBuilder[Self <: GooglePrivacyDlpV2ValueFrequency] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ValueFrequency](x: Self) {
     
-    @scala.inline
-    def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setValue(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

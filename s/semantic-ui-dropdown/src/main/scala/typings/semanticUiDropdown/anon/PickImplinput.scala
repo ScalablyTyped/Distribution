@@ -11,16 +11,13 @@ trait PickImplinput extends StObject {
 }
 object PickImplinput {
   
-  @scala.inline
-  def apply(input: String): PickImplinput = {
+  inline def apply(input: String): PickImplinput = {
     val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplinput]
   }
   
-  @scala.inline
-  implicit class PickImplinputMutableBuilder[Self <: PickImplinput] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplinput](x: Self) {
     
-    @scala.inline
-    def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
   }
 }

@@ -35,40 +35,29 @@ trait IWebWorkerOptions extends StObject {
 }
 object IWebWorkerOptions {
   
-  @scala.inline
-  def apply(moduleId: String): IWebWorkerOptions = {
+  inline def apply(moduleId: String): IWebWorkerOptions = {
     val __obj = js.Dynamic.literal(moduleId = moduleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWebWorkerOptions]
   }
   
-  @scala.inline
-  implicit class IWebWorkerOptionsMutableBuilder[Self <: IWebWorkerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IWebWorkerOptions](x: Self) {
     
-    @scala.inline
-    def setCreateData(value: js.Any): Self = StObject.set(x, "createData", value.asInstanceOf[js.Any])
+    inline def setCreateData(value: js.Any): Self = StObject.set(x, "createData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDataUndefined: Self = StObject.set(x, "createData", js.undefined)
+    inline def setCreateDataUndefined: Self = StObject.set(x, "createData", js.undefined)
     
-    @scala.inline
-    def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setKeepIdleModels(value: Boolean): Self = StObject.set(x, "keepIdleModels", value.asInstanceOf[js.Any])
+    inline def setKeepIdleModels(value: Boolean): Self = StObject.set(x, "keepIdleModels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepIdleModelsUndefined: Self = StObject.set(x, "keepIdleModels", js.undefined)
+    inline def setKeepIdleModelsUndefined: Self = StObject.set(x, "keepIdleModels", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+    inline def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
   }
 }

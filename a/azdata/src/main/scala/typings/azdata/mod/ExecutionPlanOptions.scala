@@ -12,25 +12,19 @@ trait ExecutionPlanOptions extends StObject {
 }
 object ExecutionPlanOptions {
   
-  @scala.inline
-  def apply(): ExecutionPlanOptions = {
+  inline def apply(): ExecutionPlanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionPlanOptions]
   }
   
-  @scala.inline
-  implicit class ExecutionPlanOptionsMutableBuilder[Self <: ExecutionPlanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionPlanOptions](x: Self) {
     
-    @scala.inline
-    def setDisplayActualQueryPlan(value: Boolean): Self = StObject.set(x, "displayActualQueryPlan", value.asInstanceOf[js.Any])
+    inline def setDisplayActualQueryPlan(value: Boolean): Self = StObject.set(x, "displayActualQueryPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayActualQueryPlanUndefined: Self = StObject.set(x, "displayActualQueryPlan", js.undefined)
+    inline def setDisplayActualQueryPlanUndefined: Self = StObject.set(x, "displayActualQueryPlan", js.undefined)
     
-    @scala.inline
-    def setDisplayEstimatedQueryPlan(value: Boolean): Self = StObject.set(x, "displayEstimatedQueryPlan", value.asInstanceOf[js.Any])
+    inline def setDisplayEstimatedQueryPlan(value: Boolean): Self = StObject.set(x, "displayEstimatedQueryPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayEstimatedQueryPlanUndefined: Self = StObject.set(x, "displayEstimatedQueryPlan", js.undefined)
+    inline def setDisplayEstimatedQueryPlanUndefined: Self = StObject.set(x, "displayEstimatedQueryPlan", js.undefined)
   }
 }

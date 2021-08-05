@@ -16,19 +16,15 @@ trait SchemaUpdateDeploymentRequest extends StObject {
 }
 object SchemaUpdateDeploymentRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateDeploymentRequest = {
+  inline def apply(): SchemaUpdateDeploymentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateDeploymentRequestMutableBuilder[Self <: SchemaUpdateDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setDeploymentConfig(value: SchemaDeploymentConfig): Self = StObject.set(x, "deploymentConfig", value.asInstanceOf[js.Any])
+    inline def setDeploymentConfig(value: SchemaDeploymentConfig): Self = StObject.set(x, "deploymentConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentConfigUndefined: Self = StObject.set(x, "deploymentConfig", js.undefined)
+    inline def setDeploymentConfigUndefined: Self = StObject.set(x, "deploymentConfig", js.undefined)
   }
 }

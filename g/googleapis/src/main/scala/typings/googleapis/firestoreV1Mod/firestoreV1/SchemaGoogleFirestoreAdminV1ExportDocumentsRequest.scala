@@ -28,28 +28,21 @@ trait SchemaGoogleFirestoreAdminV1ExportDocumentsRequest extends StObject {
 }
 object SchemaGoogleFirestoreAdminV1ExportDocumentsRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleFirestoreAdminV1ExportDocumentsRequest = {
+  inline def apply(): SchemaGoogleFirestoreAdminV1ExportDocumentsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1ExportDocumentsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1ExportDocumentsRequestMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1ExportDocumentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFirestoreAdminV1ExportDocumentsRequest](x: Self) {
     
-    @scala.inline
-    def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
+    inline def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionIdsUndefined: Self = StObject.set(x, "collectionIds", js.undefined)
+    inline def setCollectionIdsUndefined: Self = StObject.set(x, "collectionIds", js.undefined)
     
-    @scala.inline
-    def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value :_*))
+    inline def setCollectionIdsVarargs(value: String*): Self = StObject.set(x, "collectionIds", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUriPrefixUndefined: Self = StObject.set(x, "outputUriPrefix", js.undefined)
+    inline def setOutputUriPrefixUndefined: Self = StObject.set(x, "outputUriPrefix", js.undefined)
   }
 }

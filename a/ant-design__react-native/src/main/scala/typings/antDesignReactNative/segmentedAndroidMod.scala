@@ -28,8 +28,7 @@ object segmentedAndroidMod {
     @JSImport("@ant-design/react-native/lib/segmented-control/segmented.android", "default.defaultProps")
     @js.native
     def defaultProps: OnChange = js.native
-    @scala.inline
-    def defaultProps_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait SegmentControlProps
@@ -41,23 +40,18 @@ object segmentedAndroidMod {
   }
   object SegmentControlProps {
     
-    @scala.inline
-    def apply(): SegmentControlProps = {
+    inline def apply(): SegmentControlProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SegmentControlProps]
     }
     
-    @scala.inline
-    implicit class SegmentControlPropsMutableBuilder[Self <: SegmentControlProps] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentControlProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

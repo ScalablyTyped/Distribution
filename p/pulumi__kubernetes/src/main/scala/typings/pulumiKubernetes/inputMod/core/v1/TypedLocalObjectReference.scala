@@ -27,25 +27,19 @@ trait TypedLocalObjectReference extends StObject {
 }
 object TypedLocalObjectReference {
   
-  @scala.inline
-  def apply(kind: Input[String], name: Input[String]): TypedLocalObjectReference = {
+  inline def apply(kind: Input[String], name: Input[String]): TypedLocalObjectReference = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedLocalObjectReference]
   }
   
-  @scala.inline
-  implicit class TypedLocalObjectReferenceMutableBuilder[Self <: TypedLocalObjectReference] (val x: Self) extends AnyVal {
+  extension [Self <: TypedLocalObjectReference](x: Self) {
     
-    @scala.inline
-    def setApiGroup(value: Input[String]): Self = StObject.set(x, "apiGroup", value.asInstanceOf[js.Any])
+    inline def setApiGroup(value: Input[String]): Self = StObject.set(x, "apiGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiGroupUndefined: Self = StObject.set(x, "apiGroup", js.undefined)
+    inline def setApiGroupUndefined: Self = StObject.set(x, "apiGroup", js.undefined)
     
-    @scala.inline
-    def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Input[String]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

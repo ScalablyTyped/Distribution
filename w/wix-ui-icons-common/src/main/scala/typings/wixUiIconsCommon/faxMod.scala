@@ -22,20 +22,16 @@ object faxMod extends Shortcut {
   }
   object FaxProps {
     
-    @scala.inline
-    def apply(): FaxProps = {
+    inline def apply(): FaxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FaxProps]
     }
     
-    @scala.inline
-    implicit class FaxPropsMutableBuilder[Self <: FaxProps] (val x: Self) extends AnyVal {
+    extension [Self <: FaxProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

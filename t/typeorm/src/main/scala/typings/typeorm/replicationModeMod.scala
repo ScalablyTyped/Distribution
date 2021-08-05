@@ -13,10 +13,8 @@ object replicationModeMod {
   trait ReplicationMode extends StObject
   object ReplicationMode {
     
-    @scala.inline
-    def master: typings.typeorm.typeormStrings.master = "master".asInstanceOf[typings.typeorm.typeormStrings.master]
+    inline def master: typings.typeorm.typeormStrings.master = "master".asInstanceOf[typings.typeorm.typeormStrings.master]
     
-    @scala.inline
-    def slave: typings.typeorm.typeormStrings.slave = "slave".asInstanceOf[typings.typeorm.typeormStrings.slave]
+    inline def slave: typings.typeorm.typeormStrings.slave = "slave".asInstanceOf[typings.typeorm.typeormStrings.slave]
   }
 }

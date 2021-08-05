@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdLinkType extends StObject
 object WdLinkType {
   
-  @scala.inline
-  def wdLinkTypeChart: `8` = 8.asInstanceOf[`8`]
+  inline def wdLinkTypeChart: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdLinkTypeDDE: `6` = 6.asInstanceOf[`6`]
+  inline def wdLinkTypeDDE: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdLinkTypeDDEAuto: `7` = 7.asInstanceOf[`7`]
+  inline def wdLinkTypeDDEAuto: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdLinkTypeImport: `5` = 5.asInstanceOf[`5`]
+  inline def wdLinkTypeImport: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdLinkTypeInclude: `4` = 4.asInstanceOf[`4`]
+  inline def wdLinkTypeInclude: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdLinkTypeOLE: `0` = 0.asInstanceOf[`0`]
+  inline def wdLinkTypeOLE: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdLinkTypePicture: `1` = 1.asInstanceOf[`1`]
+  inline def wdLinkTypePicture: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdLinkTypeReference: `3` = 3.asInstanceOf[`3`]
+  inline def wdLinkTypeReference: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdLinkTypeText: `2` = 2.asInstanceOf[`2`]
+  inline def wdLinkTypeText: `2` = 2.asInstanceOf[`2`]
 }

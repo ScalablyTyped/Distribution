@@ -35,43 +35,31 @@ trait EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint extends St
 }
 object EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(enterprise: String, name: String): EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint = {
+  inline def apply(enterprise: String, name: String): EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(enterprise = enterprise.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpointMutableBuilder[Self <: EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunners(value: js.Array[Double]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
+    inline def setRunners(value: js.Array[Double]): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
+    inline def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
     
-    @scala.inline
-    def setRunnersVarargs(value: Double*): Self = StObject.set(x, "runners", js.Array(value :_*))
+    inline def setRunnersVarargs(value: Double*): Self = StObject.set(x, "runners", js.Array(value :_*))
     
-    @scala.inline
-    def setSelected_organization_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_organization_ids", value.asInstanceOf[js.Any])
+    inline def setSelected_organization_ids(value: js.Array[Double]): Self = StObject.set(x, "selected_organization_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_organization_idsUndefined: Self = StObject.set(x, "selected_organization_ids", js.undefined)
+    inline def setSelected_organization_idsUndefined: Self = StObject.set(x, "selected_organization_ids", js.undefined)
     
-    @scala.inline
-    def setSelected_organization_idsVarargs(value: Double*): Self = StObject.set(x, "selected_organization_ids", js.Array(value :_*))
+    inline def setSelected_organization_idsVarargs(value: Double*): Self = StObject.set(x, "selected_organization_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibility(value: selected | all): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: selected | all): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

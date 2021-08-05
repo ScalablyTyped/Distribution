@@ -23,22 +23,17 @@ trait PictureTile extends StObject {
 }
 object PictureTile {
   
-  @scala.inline
-  def apply(picture: String, x: Double, y: Double): PictureTile = {
+  inline def apply(picture: String, x: Double, y: Double): PictureTile = {
     val __obj = js.Dynamic.literal(picture = picture.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PictureTile]
   }
   
-  @scala.inline
-  implicit class PictureTileMutableBuilder[Self <: PictureTile] (val x: Self) extends AnyVal {
+  extension [Self <: PictureTile](x: Self) {
     
-    @scala.inline
-    def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+    inline def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

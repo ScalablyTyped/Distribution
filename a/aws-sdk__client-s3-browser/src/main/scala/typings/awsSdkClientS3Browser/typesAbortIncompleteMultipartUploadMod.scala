@@ -15,20 +15,16 @@ object typesAbortIncompleteMultipartUploadMod {
   }
   object AbortIncompleteMultipartUpload {
     
-    @scala.inline
-    def apply(): AbortIncompleteMultipartUpload = {
+    inline def apply(): AbortIncompleteMultipartUpload = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AbortIncompleteMultipartUpload]
     }
     
-    @scala.inline
-    implicit class AbortIncompleteMultipartUploadMutableBuilder[Self <: AbortIncompleteMultipartUpload] (val x: Self) extends AnyVal {
+    extension [Self <: AbortIncompleteMultipartUpload](x: Self) {
       
-      @scala.inline
-      def setDaysAfterInitiation(value: Double): Self = StObject.set(x, "DaysAfterInitiation", value.asInstanceOf[js.Any])
+      inline def setDaysAfterInitiation(value: Double): Self = StObject.set(x, "DaysAfterInitiation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysAfterInitiationUndefined: Self = StObject.set(x, "DaysAfterInitiation", js.undefined)
+      inline def setDaysAfterInitiationUndefined: Self = StObject.set(x, "DaysAfterInitiation", js.undefined)
     }
   }
   

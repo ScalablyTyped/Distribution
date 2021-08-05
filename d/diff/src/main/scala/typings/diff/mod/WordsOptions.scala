@@ -15,19 +15,15 @@ trait WordsOptions
 }
 object WordsOptions {
   
-  @scala.inline
-  def apply(): WordsOptions = {
+  inline def apply(): WordsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WordsOptions]
   }
   
-  @scala.inline
-  implicit class WordsOptionsMutableBuilder[Self <: WordsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WordsOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
+    inline def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
+    inline def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
   }
 }

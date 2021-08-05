@@ -10,19 +10,15 @@ trait DeleteTaskSetResponse extends StObject {
 }
 object DeleteTaskSetResponse {
   
-  @scala.inline
-  def apply(): DeleteTaskSetResponse = {
+  inline def apply(): DeleteTaskSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteTaskSetResponse]
   }
   
-  @scala.inline
-  implicit class DeleteTaskSetResponseMutableBuilder[Self <: DeleteTaskSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTaskSetResponse](x: Self) {
     
-    @scala.inline
-    def setTaskSet(value: TaskSet): Self = StObject.set(x, "taskSet", value.asInstanceOf[js.Any])
+    inline def setTaskSet(value: TaskSet): Self = StObject.set(x, "taskSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskSetUndefined: Self = StObject.set(x, "taskSet", js.undefined)
+    inline def setTaskSetUndefined: Self = StObject.set(x, "taskSet", js.undefined)
   }
 }

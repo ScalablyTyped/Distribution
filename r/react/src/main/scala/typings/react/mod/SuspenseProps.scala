@@ -21,34 +21,25 @@ trait SuspenseProps extends StObject {
 }
 object SuspenseProps {
   
-  @scala.inline
-  def apply(): SuspenseProps = {
+  inline def apply(): SuspenseProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuspenseProps]
   }
   
-  @scala.inline
-  implicit class SuspensePropsMutableBuilder[Self <: SuspenseProps] (val x: Self) extends AnyVal {
+  extension [Self <: SuspenseProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setFallback(value: NonNullable[ReactNode]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallback(value: NonNullable[ReactNode]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackNull: Self = StObject.set(x, "fallback", null)
+    inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
     
-    @scala.inline
-    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
-    @scala.inline
-    def setUnstable_expectedLoadTime(value: Double): Self = StObject.set(x, "unstable_expectedLoadTime", value.asInstanceOf[js.Any])
+    inline def setUnstable_expectedLoadTime(value: Double): Self = StObject.set(x, "unstable_expectedLoadTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnstable_expectedLoadTimeUndefined: Self = StObject.set(x, "unstable_expectedLoadTime", js.undefined)
+    inline def setUnstable_expectedLoadTimeUndefined: Self = StObject.set(x, "unstable_expectedLoadTime", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait AttributeKeyAndValue extends StObject {
 }
 object AttributeKeyAndValue {
   
-  @scala.inline
-  def apply(Key: AttributeKey, Value: TypedAttributeValue): AttributeKeyAndValue = {
+  inline def apply(Key: AttributeKey, Value: TypedAttributeValue): AttributeKeyAndValue = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttributeKeyAndValue]
   }
   
-  @scala.inline
-  implicit class AttributeKeyAndValueMutableBuilder[Self <: AttributeKeyAndValue] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeKeyAndValue](x: Self) {
     
-    @scala.inline
-    def setKey(value: AttributeKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: AttributeKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: TypedAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TypedAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

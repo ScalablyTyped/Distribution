@@ -14,28 +14,21 @@ trait ZoneTypeRestriction extends StObject {
 }
 object ZoneTypeRestriction {
   
-  @scala.inline
-  def apply(): ZoneTypeRestriction = {
+  inline def apply(): ZoneTypeRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoneTypeRestriction]
   }
   
-  @scala.inline
-  implicit class ZoneTypeRestrictionMutableBuilder[Self <: ZoneTypeRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneTypeRestriction](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setWhitelistedTypeId(value: js.Array[String]): Self = StObject.set(x, "whitelistedTypeId", value.asInstanceOf[js.Any])
+    inline def setWhitelistedTypeId(value: js.Array[String]): Self = StObject.set(x, "whitelistedTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistedTypeIdUndefined: Self = StObject.set(x, "whitelistedTypeId", js.undefined)
+    inline def setWhitelistedTypeIdUndefined: Self = StObject.set(x, "whitelistedTypeId", js.undefined)
     
-    @scala.inline
-    def setWhitelistedTypeIdVarargs(value: String*): Self = StObject.set(x, "whitelistedTypeId", js.Array(value :_*))
+    inline def setWhitelistedTypeIdVarargs(value: String*): Self = StObject.set(x, "whitelistedTypeId", js.Array(value :_*))
   }
 }

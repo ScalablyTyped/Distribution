@@ -14,28 +14,21 @@ trait DownloadAccesses extends StObject {
 }
 object DownloadAccesses {
   
-  @scala.inline
-  def apply(): DownloadAccesses = {
+  inline def apply(): DownloadAccesses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DownloadAccesses]
   }
   
-  @scala.inline
-  implicit class DownloadAccessesMutableBuilder[Self <: DownloadAccesses] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadAccesses](x: Self) {
     
-    @scala.inline
-    def setDownloadAccessList(value: js.Array[DownloadAccessRestriction]): Self = StObject.set(x, "downloadAccessList", value.asInstanceOf[js.Any])
+    inline def setDownloadAccessList(value: js.Array[DownloadAccessRestriction]): Self = StObject.set(x, "downloadAccessList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadAccessListUndefined: Self = StObject.set(x, "downloadAccessList", js.undefined)
+    inline def setDownloadAccessListUndefined: Self = StObject.set(x, "downloadAccessList", js.undefined)
     
-    @scala.inline
-    def setDownloadAccessListVarargs(value: DownloadAccessRestriction*): Self = StObject.set(x, "downloadAccessList", js.Array(value :_*))
+    inline def setDownloadAccessListVarargs(value: DownloadAccessRestriction*): Self = StObject.set(x, "downloadAccessList", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

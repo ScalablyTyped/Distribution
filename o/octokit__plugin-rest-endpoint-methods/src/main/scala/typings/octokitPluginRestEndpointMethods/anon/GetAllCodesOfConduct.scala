@@ -61,22 +61,17 @@ trait GetAllCodesOfConduct extends StObject {
 }
 object GetAllCodesOfConduct {
   
-  @scala.inline
-  def apply(getAllCodesOfConduct: `120`, getConductCode: `121`, getForRepo: `122`): GetAllCodesOfConduct = {
+  inline def apply(getAllCodesOfConduct: `120`, getConductCode: `121`, getForRepo: `122`): GetAllCodesOfConduct = {
     val __obj = js.Dynamic.literal(getAllCodesOfConduct = getAllCodesOfConduct.asInstanceOf[js.Any], getConductCode = getConductCode.asInstanceOf[js.Any], getForRepo = getForRepo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAllCodesOfConduct]
   }
   
-  @scala.inline
-  implicit class GetAllCodesOfConductMutableBuilder[Self <: GetAllCodesOfConduct] (val x: Self) extends AnyVal {
+  extension [Self <: GetAllCodesOfConduct](x: Self) {
     
-    @scala.inline
-    def setGetAllCodesOfConduct(value: `120`): Self = StObject.set(x, "getAllCodesOfConduct", value.asInstanceOf[js.Any])
+    inline def setGetAllCodesOfConduct(value: `120`): Self = StObject.set(x, "getAllCodesOfConduct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConductCode(value: `121`): Self = StObject.set(x, "getConductCode", value.asInstanceOf[js.Any])
+    inline def setGetConductCode(value: `121`): Self = StObject.set(x, "getConductCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetForRepo(value: `122`): Self = StObject.set(x, "getForRepo", value.asInstanceOf[js.Any])
+    inline def setGetForRepo(value: `122`): Self = StObject.set(x, "getForRepo", value.asInstanceOf[js.Any])
   }
 }

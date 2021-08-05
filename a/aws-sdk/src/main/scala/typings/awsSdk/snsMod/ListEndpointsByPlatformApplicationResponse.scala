@@ -18,28 +18,21 @@ trait ListEndpointsByPlatformApplicationResponse extends StObject {
 }
 object ListEndpointsByPlatformApplicationResponse {
   
-  @scala.inline
-  def apply(): ListEndpointsByPlatformApplicationResponse = {
+  inline def apply(): ListEndpointsByPlatformApplicationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEndpointsByPlatformApplicationResponse]
   }
   
-  @scala.inline
-  implicit class ListEndpointsByPlatformApplicationResponseMutableBuilder[Self <: ListEndpointsByPlatformApplicationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEndpointsByPlatformApplicationResponse](x: Self) {
     
-    @scala.inline
-    def setEndpoints(value: ListOfEndpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: ListOfEndpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
+    inline def setEndpointsUndefined: Self = StObject.set(x, "Endpoints", js.undefined)
     
-    @scala.inline
-    def setEndpointsVarargs(value: Endpoint_ *): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
+    inline def setEndpointsVarargs(value: Endpoint_ *): Self = StObject.set(x, "Endpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

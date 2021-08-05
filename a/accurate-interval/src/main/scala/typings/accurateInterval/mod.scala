@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(func: js.Function1[/* scheduledTime */ Double, Unit], interval: Double, opts: Opts): AccurateInterval = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccurateInterval]
+  inline def apply(func: js.Function1[/* scheduledTime */ Double, Unit], interval: Double, opts: Opts): AccurateInterval = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AccurateInterval]
   
   @JSImport("accurate-interval", JSImport.Namespace)
   @js.native
@@ -19,17 +18,14 @@ object mod {
   }
   object AccurateInterval {
     
-    @scala.inline
-    def apply(clear: () => Unit): AccurateInterval = {
+    inline def apply(clear: () => Unit): AccurateInterval = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
       __obj.asInstanceOf[AccurateInterval]
     }
     
-    @scala.inline
-    implicit class AccurateIntervalMutableBuilder[Self <: AccurateInterval] (val x: Self) extends AnyVal {
+    extension [Self <: AccurateInterval](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
   }
   
@@ -41,20 +37,16 @@ object mod {
   }
   object Opts {
     
-    @scala.inline
-    def apply(aligned: Boolean, immediate: Boolean): Opts = {
+    inline def apply(aligned: Boolean, immediate: Boolean): Opts = {
       val __obj = js.Dynamic.literal(aligned = aligned.asInstanceOf[js.Any], immediate = immediate.asInstanceOf[js.Any])
       __obj.asInstanceOf[Opts]
     }
     
-    @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+    extension [Self <: Opts](x: Self) {
       
-      @scala.inline
-      def setAligned(value: Boolean): Self = StObject.set(x, "aligned", value.asInstanceOf[js.Any])
+      inline def setAligned(value: Boolean): Self = StObject.set(x, "aligned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+      inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
     }
   }
 }

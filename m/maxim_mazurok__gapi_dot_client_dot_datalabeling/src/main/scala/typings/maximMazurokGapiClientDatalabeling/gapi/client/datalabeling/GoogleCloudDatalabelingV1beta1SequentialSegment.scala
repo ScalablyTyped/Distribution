@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1SequentialSegment extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1SequentialSegment {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1SequentialSegment = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1SequentialSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1SequentialSegment]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1SequentialSegmentMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1SequentialSegment] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1SequentialSegment](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

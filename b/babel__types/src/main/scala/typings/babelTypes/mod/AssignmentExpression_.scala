@@ -22,26 +22,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object AssignmentExpression_ {
   
-  @scala.inline
-  def apply(left: LVal, operator: String, right: Expression): AssignmentExpression_ = {
+  inline def apply(left: LVal, operator: String, right: Expression): AssignmentExpression_ = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("AssignmentExpression")
     __obj.asInstanceOf[AssignmentExpression_]
   }
   
-  @scala.inline
-  implicit class AssignmentExpression_MutableBuilder[Self <: AssignmentExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: AssignmentExpression_](x: Self) {
     
-    @scala.inline
-    def setLeft(value: LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AssignmentExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AssignmentExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

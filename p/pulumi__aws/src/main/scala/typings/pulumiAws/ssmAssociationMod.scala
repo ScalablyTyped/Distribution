@@ -110,21 +110,16 @@ object ssmAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Association]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AssociationState): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Association]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
+    inline def get(name: String, id: Input[ID]): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Association]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
+    inline def get(name: String, id: Input[ID], state: AssociationState): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Association]
+    inline def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
     
     /**
       * Returns true if the given object is an instance of Association.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/association.Association */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/association.Association */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/association.Association */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/association.Association */ Boolean]
   }
   
   trait AssociationArgs extends StObject {
@@ -191,89 +186,62 @@ object ssmAssociationMod {
   }
   object AssociationArgs {
     
-    @scala.inline
-    def apply(): AssociationArgs = {
+    inline def apply(): AssociationArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AssociationArgs]
     }
     
-    @scala.inline
-    implicit class AssociationArgsMutableBuilder[Self <: AssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AssociationArgs](x: Self) {
       
-      @scala.inline
-      def setAssociationName(value: Input[String]): Self = StObject.set(x, "associationName", value.asInstanceOf[js.Any])
+      inline def setAssociationName(value: Input[String]): Self = StObject.set(x, "associationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociationNameUndefined: Self = StObject.set(x, "associationName", js.undefined)
+      inline def setAssociationNameUndefined: Self = StObject.set(x, "associationName", js.undefined)
       
-      @scala.inline
-      def setAutomationTargetParameterName(value: Input[String]): Self = StObject.set(x, "automationTargetParameterName", value.asInstanceOf[js.Any])
+      inline def setAutomationTargetParameterName(value: Input[String]): Self = StObject.set(x, "automationTargetParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomationTargetParameterNameUndefined: Self = StObject.set(x, "automationTargetParameterName", js.undefined)
+      inline def setAutomationTargetParameterNameUndefined: Self = StObject.set(x, "automationTargetParameterName", js.undefined)
       
-      @scala.inline
-      def setComplianceSeverity(value: Input[String]): Self = StObject.set(x, "complianceSeverity", value.asInstanceOf[js.Any])
+      inline def setComplianceSeverity(value: Input[String]): Self = StObject.set(x, "complianceSeverity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplianceSeverityUndefined: Self = StObject.set(x, "complianceSeverity", js.undefined)
+      inline def setComplianceSeverityUndefined: Self = StObject.set(x, "complianceSeverity", js.undefined)
       
-      @scala.inline
-      def setDocumentVersion(value: Input[String]): Self = StObject.set(x, "documentVersion", value.asInstanceOf[js.Any])
+      inline def setDocumentVersion(value: Input[String]): Self = StObject.set(x, "documentVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentVersionUndefined: Self = StObject.set(x, "documentVersion", js.undefined)
+      inline def setDocumentVersionUndefined: Self = StObject.set(x, "documentVersion", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrency(value: Input[String]): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrency(value: Input[String]): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
+      inline def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
       
-      @scala.inline
-      def setMaxErrors(value: Input[String]): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
+      inline def setMaxErrors(value: Input[String]): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxErrorsUndefined: Self = StObject.set(x, "maxErrors", js.undefined)
+      inline def setMaxErrorsUndefined: Self = StObject.set(x, "maxErrors", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutputLocation(value: Input[typings.pulumiAws.inputMod.ssm.AssociationOutputLocation]): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
+      inline def setOutputLocation(value: Input[typings.pulumiAws.inputMod.ssm.AssociationOutputLocation]): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
+      inline def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setScheduleExpression(value: Input[String]): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
+      inline def setScheduleExpression(value: Input[String]): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
+      inline def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
       
-      @scala.inline
-      def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
     }
   }
   
@@ -346,95 +314,66 @@ object ssmAssociationMod {
   }
   object AssociationState {
     
-    @scala.inline
-    def apply(): AssociationState = {
+    inline def apply(): AssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AssociationState]
     }
     
-    @scala.inline
-    implicit class AssociationStateMutableBuilder[Self <: AssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: AssociationState](x: Self) {
       
-      @scala.inline
-      def setAssociationId(value: Input[String]): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
+      inline def setAssociationId(value: Input[String]): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociationIdUndefined: Self = StObject.set(x, "associationId", js.undefined)
+      inline def setAssociationIdUndefined: Self = StObject.set(x, "associationId", js.undefined)
       
-      @scala.inline
-      def setAssociationName(value: Input[String]): Self = StObject.set(x, "associationName", value.asInstanceOf[js.Any])
+      inline def setAssociationName(value: Input[String]): Self = StObject.set(x, "associationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociationNameUndefined: Self = StObject.set(x, "associationName", js.undefined)
+      inline def setAssociationNameUndefined: Self = StObject.set(x, "associationName", js.undefined)
       
-      @scala.inline
-      def setAutomationTargetParameterName(value: Input[String]): Self = StObject.set(x, "automationTargetParameterName", value.asInstanceOf[js.Any])
+      inline def setAutomationTargetParameterName(value: Input[String]): Self = StObject.set(x, "automationTargetParameterName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomationTargetParameterNameUndefined: Self = StObject.set(x, "automationTargetParameterName", js.undefined)
+      inline def setAutomationTargetParameterNameUndefined: Self = StObject.set(x, "automationTargetParameterName", js.undefined)
       
-      @scala.inline
-      def setComplianceSeverity(value: Input[String]): Self = StObject.set(x, "complianceSeverity", value.asInstanceOf[js.Any])
+      inline def setComplianceSeverity(value: Input[String]): Self = StObject.set(x, "complianceSeverity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplianceSeverityUndefined: Self = StObject.set(x, "complianceSeverity", js.undefined)
+      inline def setComplianceSeverityUndefined: Self = StObject.set(x, "complianceSeverity", js.undefined)
       
-      @scala.inline
-      def setDocumentVersion(value: Input[String]): Self = StObject.set(x, "documentVersion", value.asInstanceOf[js.Any])
+      inline def setDocumentVersion(value: Input[String]): Self = StObject.set(x, "documentVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentVersionUndefined: Self = StObject.set(x, "documentVersion", js.undefined)
+      inline def setDocumentVersionUndefined: Self = StObject.set(x, "documentVersion", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Input[String]): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrency(value: Input[String]): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrency(value: Input[String]): Self = StObject.set(x, "maxConcurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
+      inline def setMaxConcurrencyUndefined: Self = StObject.set(x, "maxConcurrency", js.undefined)
       
-      @scala.inline
-      def setMaxErrors(value: Input[String]): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
+      inline def setMaxErrors(value: Input[String]): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxErrorsUndefined: Self = StObject.set(x, "maxErrors", js.undefined)
+      inline def setMaxErrorsUndefined: Self = StObject.set(x, "maxErrors", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutputLocation(value: Input[typings.pulumiAws.inputMod.ssm.AssociationOutputLocation]): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
+      inline def setOutputLocation(value: Input[typings.pulumiAws.inputMod.ssm.AssociationOutputLocation]): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
+      inline def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setScheduleExpression(value: Input[String]): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
+      inline def setScheduleExpression(value: Input[String]): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
+      inline def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
       
-      @scala.inline
-      def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]]]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
       
-      @scala.inline
-      def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
+      inline def setTargetsVarargs(value: Input[typings.pulumiAws.inputMod.ssm.AssociationTarget]*): Self = StObject.set(x, "targets", js.Array(value :_*))
     }
   }
 }

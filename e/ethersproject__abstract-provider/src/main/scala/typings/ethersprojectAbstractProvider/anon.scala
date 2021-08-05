@@ -29,62 +29,44 @@ object anon {
   }
   object DeferrableTransactionRequ {
     
-    @scala.inline
-    def apply(): DeferrableTransactionRequ = {
+    inline def apply(): DeferrableTransactionRequ = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeferrableTransactionRequ]
     }
     
-    @scala.inline
-    implicit class DeferrableTransactionRequMutableBuilder[Self <: DeferrableTransactionRequ] (val x: Self) extends AnyVal {
+    extension [Self <: DeferrableTransactionRequ](x: Self) {
       
-      @scala.inline
-      def setChainId(value: Double | js.Promise[js.UndefOr[Double]]): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
+      inline def setChainId(value: Double | js.Promise[js.UndefOr[Double]]): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChainIdUndefined: Self = StObject.set(x, "chainId", js.undefined)
+      inline def setChainIdUndefined: Self = StObject.set(x, "chainId", js.undefined)
       
-      @scala.inline
-      def setData(value: BytesLike | js.Promise[js.UndefOr[BytesLike]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: BytesLike | js.Promise[js.UndefOr[BytesLike]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFrom(value: String | js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String | js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setGasLimit(value: BigNumberish | js.Promise[js.UndefOr[BigNumberish]]): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
+      inline def setGasLimit(value: BigNumberish | js.Promise[js.UndefOr[BigNumberish]]): Self = StObject.set(x, "gasLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasLimitUndefined: Self = StObject.set(x, "gasLimit", js.undefined)
+      inline def setGasLimitUndefined: Self = StObject.set(x, "gasLimit", js.undefined)
       
-      @scala.inline
-      def setGasPrice(value: BigNumberish | js.Promise[js.UndefOr[BigNumberish]]): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      inline def setGasPrice(value: BigNumberish | js.Promise[js.UndefOr[BigNumberish]]): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
+      inline def setGasPriceUndefined: Self = StObject.set(x, "gasPrice", js.undefined)
       
-      @scala.inline
-      def setNonce(value: BigNumberish | js.Promise[js.UndefOr[BigNumberish]]): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: BigNumberish | js.Promise[js.UndefOr[BigNumberish]]): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setTo(value: String | js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String | js.Promise[js.UndefOr[String]]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      @scala.inline
-      def setValue(value: BigNumberish | js.Promise[js.UndefOr[BigNumberish]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: BigNumberish | js.Promise[js.UndefOr[BigNumberish]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

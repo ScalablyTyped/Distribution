@@ -22,8 +22,7 @@ trait Bubbles extends StObject {
 }
 object Bubbles {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bubbles: Circles,
     circles: Circles,
     circular: Dur,
@@ -37,28 +36,20 @@ object Bubbles {
     __obj.asInstanceOf[Bubbles]
   }
   
-  @scala.inline
-  implicit class BubblesMutableBuilder[Self <: Bubbles] (val x: Self) extends AnyVal {
+  extension [Self <: Bubbles](x: Self) {
     
-    @scala.inline
-    def setBubbles(value: Circles): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    inline def setBubbles(value: Circles): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircles(value: Circles): Self = StObject.set(x, "circles", value.asInstanceOf[js.Any])
+    inline def setCircles(value: Circles): Self = StObject.set(x, "circles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircular(value: Dur): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
+    inline def setCircular(value: Dur): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrescent(value: Fn): Self = StObject.set(x, "crescent", value.asInstanceOf[js.Any])
+    inline def setCrescent(value: Fn): Self = StObject.set(x, "crescent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDots(value: CirclesDur): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+    inline def setDots(value: CirclesDur): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLines(value: Lines): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: Lines): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLines-small`(value: Lines): Self = StObject.set(x, "lines-small", value.asInstanceOf[js.Any])
+    inline def `setLines-small`(value: Lines): Self = StObject.set(x, "lines-small", value.asInstanceOf[js.Any])
   }
 }

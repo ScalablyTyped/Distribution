@@ -16,26 +16,26 @@ object wssecuritycertMod {
     def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any) = this()
     def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
     
-    var additionalReferences: js.Any = js.native
+    /* private */ var additionalReferences: js.Any = js.native
     
-    var created: js.Any = js.native
+    /* private */ var created: js.Any = js.native
     
-    var expires: js.Any = js.native
+    /* private */ var expires: js.Any = js.native
     
-    var hasTimeStamp: js.Any = js.native
+    /* private */ var hasTimeStamp: js.Any = js.native
     
     @JSName("postProcess")
     def postProcess_MWSSecurityCert(xml: js.Any, envelopeKey: js.Any): String = js.native
     
-    var publicP12PEM: js.Any = js.native
+    /* private */ var publicP12PEM: js.Any = js.native
     
-    var signatureTransformations: js.Any = js.native
+    /* private */ var signatureTransformations: js.Any = js.native
     
-    var signer: js.Any = js.native
+    /* private */ var signer: js.Any = js.native
     
-    var signerOptions: js.Any = js.native
+    /* private */ var signerOptions: js.Any = js.native
     
-    var x509Id: js.Any = js.native
+    /* private */ var x509Id: js.Any = js.native
   }
   
   trait IWSSecurityCertOptions extends StObject {
@@ -52,50 +52,36 @@ object wssecuritycertMod {
   }
   object IWSSecurityCertOptions {
     
-    @scala.inline
-    def apply(): IWSSecurityCertOptions = {
+    inline def apply(): IWSSecurityCertOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IWSSecurityCertOptions]
     }
     
-    @scala.inline
-    implicit class IWSSecurityCertOptionsMutableBuilder[Self <: IWSSecurityCertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IWSSecurityCertOptions](x: Self) {
       
-      @scala.inline
-      def setAdditionalReferences(value: js.Array[String]): Self = StObject.set(x, "additionalReferences", value.asInstanceOf[js.Any])
+      inline def setAdditionalReferences(value: js.Array[String]): Self = StObject.set(x, "additionalReferences", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalReferencesUndefined: Self = StObject.set(x, "additionalReferences", js.undefined)
+      inline def setAdditionalReferencesUndefined: Self = StObject.set(x, "additionalReferences", js.undefined)
       
-      @scala.inline
-      def setAdditionalReferencesVarargs(value: String*): Self = StObject.set(x, "additionalReferences", js.Array(value :_*))
+      inline def setAdditionalReferencesVarargs(value: String*): Self = StObject.set(x, "additionalReferences", js.Array(value :_*))
       
-      @scala.inline
-      def setHasTimeStamp(value: Boolean): Self = StObject.set(x, "hasTimeStamp", value.asInstanceOf[js.Any])
+      inline def setHasTimeStamp(value: Boolean): Self = StObject.set(x, "hasTimeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasTimeStampUndefined: Self = StObject.set(x, "hasTimeStamp", js.undefined)
+      inline def setHasTimeStampUndefined: Self = StObject.set(x, "hasTimeStamp", js.undefined)
       
-      @scala.inline
-      def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
+      inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
+      inline def setSignatureAlgorithmUndefined: Self = StObject.set(x, "signatureAlgorithm", js.undefined)
       
-      @scala.inline
-      def setSignatureTransformations(value: js.Array[String]): Self = StObject.set(x, "signatureTransformations", value.asInstanceOf[js.Any])
+      inline def setSignatureTransformations(value: js.Array[String]): Self = StObject.set(x, "signatureTransformations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureTransformationsUndefined: Self = StObject.set(x, "signatureTransformations", js.undefined)
+      inline def setSignatureTransformationsUndefined: Self = StObject.set(x, "signatureTransformations", js.undefined)
       
-      @scala.inline
-      def setSignatureTransformationsVarargs(value: String*): Self = StObject.set(x, "signatureTransformations", js.Array(value :_*))
+      inline def setSignatureTransformationsVarargs(value: String*): Self = StObject.set(x, "signatureTransformations", js.Array(value :_*))
       
-      @scala.inline
-      def setSignerOptions(value: IXmlSignerOptions): Self = StObject.set(x, "signerOptions", value.asInstanceOf[js.Any])
+      inline def setSignerOptions(value: IXmlSignerOptions): Self = StObject.set(x, "signerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerOptionsUndefined: Self = StObject.set(x, "signerOptions", js.undefined)
+      inline def setSignerOptionsUndefined: Self = StObject.set(x, "signerOptions", js.undefined)
     }
   }
   
@@ -109,32 +95,24 @@ object wssecuritycertMod {
   }
   object IXmlSignerOptions {
     
-    @scala.inline
-    def apply(): IXmlSignerOptions = {
+    inline def apply(): IXmlSignerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IXmlSignerOptions]
     }
     
-    @scala.inline
-    implicit class IXmlSignerOptionsMutableBuilder[Self <: IXmlSignerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IXmlSignerOptions](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setExistingPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "existingPrefixes", value.asInstanceOf[js.Any])
+      inline def setExistingPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "existingPrefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExistingPrefixesUndefined: Self = StObject.set(x, "existingPrefixes", js.undefined)
+      inline def setExistingPrefixesUndefined: Self = StObject.set(x, "existingPrefixes", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

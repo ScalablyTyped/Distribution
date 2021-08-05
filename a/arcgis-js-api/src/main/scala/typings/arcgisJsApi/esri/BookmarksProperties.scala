@@ -67,64 +67,45 @@ trait BookmarksProperties
 }
 object BookmarksProperties {
   
-  @scala.inline
-  def apply(): BookmarksProperties = {
+  inline def apply(): BookmarksProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BookmarksProperties]
   }
   
-  @scala.inline
-  implicit class BookmarksPropertiesMutableBuilder[Self <: BookmarksProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BookmarksProperties](x: Self) {
     
-    @scala.inline
-    def setBookmarkCreationOptions(value: BookmarkCreationOptions): Self = StObject.set(x, "bookmarkCreationOptions", value.asInstanceOf[js.Any])
+    inline def setBookmarkCreationOptions(value: BookmarkCreationOptions): Self = StObject.set(x, "bookmarkCreationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarkCreationOptionsUndefined: Self = StObject.set(x, "bookmarkCreationOptions", js.undefined)
+    inline def setBookmarkCreationOptionsUndefined: Self = StObject.set(x, "bookmarkCreationOptions", js.undefined)
     
-    @scala.inline
-    def setBookmarks(value: CollectionProperties[BookmarkProperties]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: CollectionProperties[BookmarkProperties]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
+    inline def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
-    @scala.inline
-    def setBookmarksVarargs(value: BookmarkProperties*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
+    inline def setBookmarksVarargs(value: BookmarkProperties*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setEditingEnabled(value: Boolean): Self = StObject.set(x, "editingEnabled", value.asInstanceOf[js.Any])
+    inline def setEditingEnabled(value: Boolean): Self = StObject.set(x, "editingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditingEnabledUndefined: Self = StObject.set(x, "editingEnabled", js.undefined)
+    inline def setEditingEnabledUndefined: Self = StObject.set(x, "editingEnabled", js.undefined)
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: BookmarksViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: BookmarksViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     
-    @scala.inline
-    def setVisibleElements(value: BookmarksVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    inline def setVisibleElements(value: BookmarksVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
   }
 }

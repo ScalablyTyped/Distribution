@@ -24,19 +24,15 @@ trait LabelSetBuilder extends StObject {
 }
 object LabelSetBuilder {
   
-  @scala.inline
-  def apply(addRecord: () => ILabelSetRecord, getRecords: () => js.Array[ILabelSetRecord]): LabelSetBuilder = {
+  inline def apply(addRecord: () => ILabelSetRecord, getRecords: () => js.Array[ILabelSetRecord]): LabelSetBuilder = {
     val __obj = js.Dynamic.literal(addRecord = js.Any.fromFunction0(addRecord), getRecords = js.Any.fromFunction0(getRecords))
     __obj.asInstanceOf[LabelSetBuilder]
   }
   
-  @scala.inline
-  implicit class LabelSetBuilderMutableBuilder[Self <: LabelSetBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: LabelSetBuilder](x: Self) {
     
-    @scala.inline
-    def setAddRecord(value: () => ILabelSetRecord): Self = StObject.set(x, "addRecord", js.Any.fromFunction0(value))
+    inline def setAddRecord(value: () => ILabelSetRecord): Self = StObject.set(x, "addRecord", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecords(value: () => js.Array[ILabelSetRecord]): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
+    inline def setGetRecords(value: () => js.Array[ILabelSetRecord]): Self = StObject.set(x, "getRecords", js.Any.fromFunction0(value))
   }
 }

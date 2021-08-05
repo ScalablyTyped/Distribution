@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalAccessClientApp extends StObject
 object ConditionalAccessClientApp {
   
-  @scala.inline
-  def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
+  inline def all: typings.microsoftGraph.microsoftGraphStrings.all = "all".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.all]
   
-  @scala.inline
-  def browser: typings.microsoftGraph.microsoftGraphStrings.browser = "browser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.browser]
+  inline def browser: typings.microsoftGraph.microsoftGraphStrings.browser = "browser".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.browser]
   
-  @scala.inline
-  def easSupported: typings.microsoftGraph.microsoftGraphStrings.easSupported = "easSupported".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.easSupported]
+  inline def easSupported: typings.microsoftGraph.microsoftGraphStrings.easSupported = "easSupported".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.easSupported]
   
-  @scala.inline
-  def exchangeActiveSync: typings.microsoftGraph.microsoftGraphStrings.exchangeActiveSync = "exchangeActiveSync".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exchangeActiveSync]
+  inline def exchangeActiveSync: typings.microsoftGraph.microsoftGraphStrings.exchangeActiveSync = "exchangeActiveSync".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exchangeActiveSync]
   
-  @scala.inline
-  def mobileAppsAndDesktopClients: typings.microsoftGraph.microsoftGraphStrings.mobileAppsAndDesktopClients = "mobileAppsAndDesktopClients".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mobileAppsAndDesktopClients]
+  inline def mobileAppsAndDesktopClients: typings.microsoftGraph.microsoftGraphStrings.mobileAppsAndDesktopClients = "mobileAppsAndDesktopClients".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mobileAppsAndDesktopClients]
   
-  @scala.inline
-  def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
+  inline def other: typings.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.other]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

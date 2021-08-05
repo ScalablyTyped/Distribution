@@ -13,19 +13,16 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputPr
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inputLambdaProcessor: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor
   ): ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration = {
     val __obj = js.Dynamic.literal(inputLambdaProcessor = inputLambdaProcessor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration](x: Self) {
     
-    @scala.inline
-    def setInputLambdaProcessor(
+    inline def setInputLambdaProcessor(
       value: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor
     ): Self = StObject.set(x, "inputLambdaProcessor", value.asInstanceOf[js.Any])
   }

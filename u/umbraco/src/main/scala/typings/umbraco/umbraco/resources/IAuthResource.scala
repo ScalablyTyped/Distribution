@@ -122,8 +122,7 @@ trait IAuthResource extends StObject {
 }
 object IAuthResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentUser: () => IPromise[IResourcePromise],
     getRemainingTimeoutSeconds: () => IPromise[IResourcePromise],
     isAuthenticated: () => IPromise[IResourcePromise],
@@ -134,22 +133,16 @@ object IAuthResource {
     __obj.asInstanceOf[IAuthResource]
   }
   
-  @scala.inline
-  implicit class IAuthResourceMutableBuilder[Self <: IAuthResource] (val x: Self) extends AnyVal {
+  extension [Self <: IAuthResource](x: Self) {
     
-    @scala.inline
-    def setGetCurrentUser(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getCurrentUser", js.Any.fromFunction0(value))
+    inline def setGetCurrentUser(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getCurrentUser", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRemainingTimeoutSeconds(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getRemainingTimeoutSeconds", js.Any.fromFunction0(value))
+    inline def setGetRemainingTimeoutSeconds(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getRemainingTimeoutSeconds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsAuthenticated(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "isAuthenticated", js.Any.fromFunction0(value))
+    inline def setIsAuthenticated(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "isAuthenticated", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPerformLogin(value: (String, String) => IPromise[IResourcePromise]): Self = StObject.set(x, "performLogin", js.Any.fromFunction2(value))
+    inline def setPerformLogin(value: (String, String) => IPromise[IResourcePromise]): Self = StObject.set(x, "performLogin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPerformLogout(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "performLogout", js.Any.fromFunction0(value))
+    inline def setPerformLogout(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "performLogout", js.Any.fromFunction0(value))
   }
 }

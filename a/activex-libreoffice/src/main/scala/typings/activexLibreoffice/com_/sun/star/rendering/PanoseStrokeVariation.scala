@@ -29,31 +29,22 @@ object PanoseStrokeVariation {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ANYTHING: `0` = 0.asInstanceOf[`0`]
+    inline def ANYTHING: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def GRADUAL_DIAGONAL: `2` = 2.asInstanceOf[`2`]
+    inline def GRADUAL_DIAGONAL: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def GRADUAL_HORIZONTAL: `5` = 5.asInstanceOf[`5`]
+    inline def GRADUAL_HORIZONTAL: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def GRADUAL_TRANSITIONAL: `3` = 3.asInstanceOf[`3`]
+    inline def GRADUAL_TRANSITIONAL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def GRADUAL_VERTICAL: `4` = 4.asInstanceOf[`4`]
+    inline def GRADUAL_VERTICAL: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def INSTANT_VERTICAL: `8` = 8.asInstanceOf[`8`]
+    inline def INSTANT_VERTICAL: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def NO_FIT: `1` = 1.asInstanceOf[`1`]
+    inline def NO_FIT: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def RAPID_HORIZONTAL: `7` = 7.asInstanceOf[`7`]
+    inline def RAPID_HORIZONTAL: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def RAPID_VERTICAL: `6` = 6.asInstanceOf[`6`]
+    inline def RAPID_VERTICAL: `6` = 6.asInstanceOf[`6`]
   }
 }

@@ -12,23 +12,18 @@ trait DescribeSObjectOptions extends StObject {
 }
 object DescribeSObjectOptions {
   
-  @scala.inline
-  def apply(`type`: String): DescribeSObjectOptions = {
+  inline def apply(`type`: String): DescribeSObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeSObjectOptions]
   }
   
-  @scala.inline
-  implicit class DescribeSObjectOptionsMutableBuilder[Self <: DescribeSObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSObjectOptions](x: Self) {
     
-    @scala.inline
-    def setIfModifiedSince(value: String): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
+    inline def setIfModifiedSince(value: String): Self = StObject.set(x, "ifModifiedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
+    inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "ifModifiedSince", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

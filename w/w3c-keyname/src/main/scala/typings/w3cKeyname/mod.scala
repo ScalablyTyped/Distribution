@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def keyName(event: Event): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyName")(event.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def keyName(event: Event): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyName")(event.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -12,19 +12,15 @@ trait FileDownloadOptions extends StObject {
 }
 object FileDownloadOptions {
   
-  @scala.inline
-  def apply(): FileDownloadOptions = {
+  inline def apply(): FileDownloadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileDownloadOptions]
   }
   
-  @scala.inline
-  implicit class FileDownloadOptionsMutableBuilder[Self <: FileDownloadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileDownloadOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
   }
 }

@@ -33,52 +33,37 @@ trait FirewallPolicy extends StObject {
 }
 object FirewallPolicy {
   
-  @scala.inline
-  def apply(StatelessDefaultActions: StatelessActions, StatelessFragmentDefaultActions: StatelessActions): FirewallPolicy = {
+  inline def apply(StatelessDefaultActions: StatelessActions, StatelessFragmentDefaultActions: StatelessActions): FirewallPolicy = {
     val __obj = js.Dynamic.literal(StatelessDefaultActions = StatelessDefaultActions.asInstanceOf[js.Any], StatelessFragmentDefaultActions = StatelessFragmentDefaultActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallPolicy]
   }
   
-  @scala.inline
-  implicit class FirewallPolicyMutableBuilder[Self <: FirewallPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallPolicy](x: Self) {
     
-    @scala.inline
-    def setStatefulRuleGroupReferences(value: StatefulRuleGroupReferences): Self = StObject.set(x, "StatefulRuleGroupReferences", value.asInstanceOf[js.Any])
+    inline def setStatefulRuleGroupReferences(value: StatefulRuleGroupReferences): Self = StObject.set(x, "StatefulRuleGroupReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatefulRuleGroupReferencesUndefined: Self = StObject.set(x, "StatefulRuleGroupReferences", js.undefined)
+    inline def setStatefulRuleGroupReferencesUndefined: Self = StObject.set(x, "StatefulRuleGroupReferences", js.undefined)
     
-    @scala.inline
-    def setStatefulRuleGroupReferencesVarargs(value: StatefulRuleGroupReference*): Self = StObject.set(x, "StatefulRuleGroupReferences", js.Array(value :_*))
+    inline def setStatefulRuleGroupReferencesVarargs(value: StatefulRuleGroupReference*): Self = StObject.set(x, "StatefulRuleGroupReferences", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessCustomActions(value: CustomActions): Self = StObject.set(x, "StatelessCustomActions", value.asInstanceOf[js.Any])
+    inline def setStatelessCustomActions(value: CustomActions): Self = StObject.set(x, "StatelessCustomActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessCustomActionsUndefined: Self = StObject.set(x, "StatelessCustomActions", js.undefined)
+    inline def setStatelessCustomActionsUndefined: Self = StObject.set(x, "StatelessCustomActions", js.undefined)
     
-    @scala.inline
-    def setStatelessCustomActionsVarargs(value: CustomAction*): Self = StObject.set(x, "StatelessCustomActions", js.Array(value :_*))
+    inline def setStatelessCustomActionsVarargs(value: CustomAction*): Self = StObject.set(x, "StatelessCustomActions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessDefaultActions(value: StatelessActions): Self = StObject.set(x, "StatelessDefaultActions", value.asInstanceOf[js.Any])
+    inline def setStatelessDefaultActions(value: StatelessActions): Self = StObject.set(x, "StatelessDefaultActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessDefaultActionsVarargs(value: CollectionMemberString*): Self = StObject.set(x, "StatelessDefaultActions", js.Array(value :_*))
+    inline def setStatelessDefaultActionsVarargs(value: CollectionMemberString*): Self = StObject.set(x, "StatelessDefaultActions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessFragmentDefaultActions(value: StatelessActions): Self = StObject.set(x, "StatelessFragmentDefaultActions", value.asInstanceOf[js.Any])
+    inline def setStatelessFragmentDefaultActions(value: StatelessActions): Self = StObject.set(x, "StatelessFragmentDefaultActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessFragmentDefaultActionsVarargs(value: CollectionMemberString*): Self = StObject.set(x, "StatelessFragmentDefaultActions", js.Array(value :_*))
+    inline def setStatelessFragmentDefaultActionsVarargs(value: CollectionMemberString*): Self = StObject.set(x, "StatelessFragmentDefaultActions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessRuleGroupReferences(value: StatelessRuleGroupReferences): Self = StObject.set(x, "StatelessRuleGroupReferences", value.asInstanceOf[js.Any])
+    inline def setStatelessRuleGroupReferences(value: StatelessRuleGroupReferences): Self = StObject.set(x, "StatelessRuleGroupReferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessRuleGroupReferencesUndefined: Self = StObject.set(x, "StatelessRuleGroupReferences", js.undefined)
+    inline def setStatelessRuleGroupReferencesUndefined: Self = StObject.set(x, "StatelessRuleGroupReferences", js.undefined)
     
-    @scala.inline
-    def setStatelessRuleGroupReferencesVarargs(value: StatelessRuleGroupReference*): Self = StObject.set(x, "StatelessRuleGroupReferences", js.Array(value :_*))
+    inline def setStatelessRuleGroupReferencesVarargs(value: StatelessRuleGroupReference*): Self = StObject.set(x, "StatelessRuleGroupReferences", js.Array(value :_*))
   }
 }

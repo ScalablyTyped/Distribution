@@ -14,16 +14,13 @@ trait CreateOpts extends StObject {
 }
 object CreateOpts {
   
-  @scala.inline
-  def apply(domain: String): CreateOpts = {
+  inline def apply(domain: String): CreateOpts = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateOpts]
   }
   
-  @scala.inline
-  implicit class CreateOptsMutableBuilder[Self <: CreateOpts] (val x: Self) extends AnyVal {
+  extension [Self <: CreateOpts](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
   }
 }

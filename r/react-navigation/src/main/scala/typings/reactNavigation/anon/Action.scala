@@ -18,34 +18,25 @@ trait Action[T /* <: NavigationParams */] extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply[T /* <: NavigationParams */](routeName: String): Action[T] = {
+  inline def apply[T /* <: NavigationParams */](routeName: String): Action[T] = {
     val __obj = js.Dynamic.literal(routeName = routeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action[T]]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action[?], T /* <: NavigationParams */] (val x: Self & Action[T]) extends AnyVal {
+  extension [Self <: Action[?], T /* <: NavigationParams */](x: Self & Action[T]) {
     
-    @scala.inline
-    def setAction(value: NavigationNavigateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: NavigationNavigateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
+    inline def setRouteName(value: String): Self = StObject.set(x, "routeName", value.asInstanceOf[js.Any])
   }
 }

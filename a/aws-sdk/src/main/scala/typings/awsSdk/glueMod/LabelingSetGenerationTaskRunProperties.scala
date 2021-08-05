@@ -13,19 +13,15 @@ trait LabelingSetGenerationTaskRunProperties extends StObject {
 }
 object LabelingSetGenerationTaskRunProperties {
   
-  @scala.inline
-  def apply(): LabelingSetGenerationTaskRunProperties = {
+  inline def apply(): LabelingSetGenerationTaskRunProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelingSetGenerationTaskRunProperties]
   }
   
-  @scala.inline
-  implicit class LabelingSetGenerationTaskRunPropertiesMutableBuilder[Self <: LabelingSetGenerationTaskRunProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LabelingSetGenerationTaskRunProperties](x: Self) {
     
-    @scala.inline
-    def setOutputS3Path(value: UriString): Self = StObject.set(x, "OutputS3Path", value.asInstanceOf[js.Any])
+    inline def setOutputS3Path(value: UriString): Self = StObject.set(x, "OutputS3Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3PathUndefined: Self = StObject.set(x, "OutputS3Path", js.undefined)
+    inline def setOutputS3PathUndefined: Self = StObject.set(x, "OutputS3Path", js.undefined)
   }
 }

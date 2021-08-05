@@ -17,7 +17,7 @@ object chainConditionMod {
        with ContextItem {
     def this(chain: ValidationChain) = this()
     
-    val chain: js.Any = js.native
+    /* private */ val chain: js.Any = js.native
     
     /* CompleteClass */
     override def run(context: Context, value: js.Any, meta: Meta): js.Promise[Unit] = js.native

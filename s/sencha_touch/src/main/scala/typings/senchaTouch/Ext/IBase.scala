@@ -46,55 +46,39 @@ trait IBase
 }
 object IBase {
   
-  @scala.inline
-  def apply(): IBase = {
+  inline def apply(): IBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBase]
   }
   
-  @scala.inline
-  implicit class IBaseMutableBuilder[Self <: IBase] (val x: Self) extends AnyVal {
+  extension [Self <: IBase](x: Self) {
     
-    @scala.inline
-    def setCallOverridden(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callOverridden", js.Any.fromFunction1(value))
+    inline def setCallOverridden(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callOverridden", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallOverriddenUndefined: Self = StObject.set(x, "callOverridden", js.undefined)
+    inline def setCallOverriddenUndefined: Self = StObject.set(x, "callOverridden", js.undefined)
     
-    @scala.inline
-    def setCallParent(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callParent", js.Any.fromFunction1(value))
+    inline def setCallParent(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callParent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallParentUndefined: Self = StObject.set(x, "callParent", js.undefined)
+    inline def setCallParentUndefined: Self = StObject.set(x, "callParent", js.undefined)
     
-    @scala.inline
-    def setCallSuper(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callSuper", js.Any.fromFunction1(value))
+    inline def setCallSuper(value: /* args */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "callSuper", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallSuperUndefined: Self = StObject.set(x, "callSuper", js.undefined)
+    inline def setCallSuperUndefined: Self = StObject.set(x, "callSuper", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setGetInitialConfig(value: /* name */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "getInitialConfig", js.Any.fromFunction1(value))
+    inline def setGetInitialConfig(value: /* name */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "getInitialConfig", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInitialConfigUndefined: Self = StObject.set(x, "getInitialConfig", js.undefined)
+    inline def setGetInitialConfigUndefined: Self = StObject.set(x, "getInitialConfig", js.undefined)
     
-    @scala.inline
-    def setInitConfig(value: /* instanceConfig */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "initConfig", js.Any.fromFunction1(value))
+    inline def setInitConfig(value: /* instanceConfig */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "initConfig", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitConfigUndefined: Self = StObject.set(x, "initConfig", js.undefined)
+    inline def setInitConfigUndefined: Self = StObject.set(x, "initConfig", js.undefined)
     
-    @scala.inline
-    def setSelf(value: IClass): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: IClass): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
+    inline def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
   }
 }

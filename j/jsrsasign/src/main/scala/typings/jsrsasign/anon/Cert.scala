@@ -12,19 +12,15 @@ trait Cert extends StObject {
 }
 object Cert {
   
-  @scala.inline
-  def apply(cert: String, hasis: Boolean): Cert = {
+  inline def apply(cert: String, hasis: Boolean): Cert = {
     val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], hasis = hasis.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cert]
   }
   
-  @scala.inline
-  implicit class CertMutableBuilder[Self <: Cert] (val x: Self) extends AnyVal {
+  extension [Self <: Cert](x: Self) {
     
-    @scala.inline
-    def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasis(value: Boolean): Self = StObject.set(x, "hasis", value.asInstanceOf[js.Any])
+    inline def setHasis(value: Boolean): Self = StObject.set(x, "hasis", value.asInstanceOf[js.Any])
   }
 }

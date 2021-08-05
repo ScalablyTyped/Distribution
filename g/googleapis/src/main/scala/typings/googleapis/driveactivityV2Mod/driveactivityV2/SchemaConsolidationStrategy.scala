@@ -25,25 +25,19 @@ trait SchemaConsolidationStrategy extends StObject {
 }
 object SchemaConsolidationStrategy {
   
-  @scala.inline
-  def apply(): SchemaConsolidationStrategy = {
+  inline def apply(): SchemaConsolidationStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConsolidationStrategy]
   }
   
-  @scala.inline
-  implicit class SchemaConsolidationStrategyMutableBuilder[Self <: SchemaConsolidationStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConsolidationStrategy](x: Self) {
     
-    @scala.inline
-    def setLegacy(value: SchemaLegacy): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
+    inline def setLegacy(value: SchemaLegacy): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
+    inline def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
     
-    @scala.inline
-    def setNone(value: SchemaNoConsolidation): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: SchemaNoConsolidation): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
+    inline def setNoneUndefined: Self = StObject.set(x, "none", js.undefined)
   }
 }

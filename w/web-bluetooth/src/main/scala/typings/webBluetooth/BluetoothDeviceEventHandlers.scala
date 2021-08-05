@@ -13,19 +13,15 @@ trait BluetoothDeviceEventHandlers extends StObject {
 }
 object BluetoothDeviceEventHandlers {
   
-  @scala.inline
-  def apply(onadvertisementreceived: Event => js.Any, ongattserverdisconnected: Event => js.Any): BluetoothDeviceEventHandlers = {
+  inline def apply(onadvertisementreceived: Event => js.Any, ongattserverdisconnected: Event => js.Any): BluetoothDeviceEventHandlers = {
     val __obj = js.Dynamic.literal(onadvertisementreceived = js.Any.fromFunction1(onadvertisementreceived), ongattserverdisconnected = js.Any.fromFunction1(ongattserverdisconnected))
     __obj.asInstanceOf[BluetoothDeviceEventHandlers]
   }
   
-  @scala.inline
-  implicit class BluetoothDeviceEventHandlersMutableBuilder[Self <: BluetoothDeviceEventHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothDeviceEventHandlers](x: Self) {
     
-    @scala.inline
-    def setOnadvertisementreceived(value: Event => js.Any): Self = StObject.set(x, "onadvertisementreceived", js.Any.fromFunction1(value))
+    inline def setOnadvertisementreceived(value: Event => js.Any): Self = StObject.set(x, "onadvertisementreceived", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOngattserverdisconnected(value: Event => js.Any): Self = StObject.set(x, "ongattserverdisconnected", js.Any.fromFunction1(value))
+    inline def setOngattserverdisconnected(value: Event => js.Any): Self = StObject.set(x, "ongattserverdisconnected", js.Any.fromFunction1(value))
   }
 }

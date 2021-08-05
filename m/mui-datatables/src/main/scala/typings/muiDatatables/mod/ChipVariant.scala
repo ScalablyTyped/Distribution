@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChipVariant extends StObject
 object ChipVariant {
   
-  @scala.inline
-  def default: typings.muiDatatables.muiDatatablesStrings.default = "default".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.default]
+  inline def default: typings.muiDatatables.muiDatatablesStrings.default = "default".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.default]
   
-  @scala.inline
-  def outlined: typings.muiDatatables.muiDatatablesStrings.outlined = "outlined".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.outlined]
+  inline def outlined: typings.muiDatatables.muiDatatablesStrings.outlined = "outlined".asInstanceOf[typings.muiDatatables.muiDatatablesStrings.outlined]
 }

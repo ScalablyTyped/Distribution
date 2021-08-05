@@ -14,20 +14,16 @@ object CountrySelectJs {
   }
   object CountryData {
     
-    @scala.inline
-    def apply(iso2: String, name: String): CountryData = {
+    inline def apply(iso2: String, name: String): CountryData = {
       val __obj = js.Dynamic.literal(iso2 = iso2.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CountryData]
     }
     
-    @scala.inline
-    implicit class CountryDataMutableBuilder[Self <: CountryData] (val x: Self) extends AnyVal {
+    extension [Self <: CountryData](x: Self) {
       
-      @scala.inline
-      def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
+      inline def setIso2(value: String): Self = StObject.set(x, "iso2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,44 +54,32 @@ object CountrySelectJs {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefaultCountry(value: String): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
+      inline def setDefaultCountry(value: String): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
+      inline def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
       
-      @scala.inline
-      def setOnlyCountries(value: js.Array[String]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
+      inline def setOnlyCountries(value: js.Array[String]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyCountriesUndefined: Self = StObject.set(x, "onlyCountries", js.undefined)
+      inline def setOnlyCountriesUndefined: Self = StObject.set(x, "onlyCountries", js.undefined)
       
-      @scala.inline
-      def setOnlyCountriesVarargs(value: String*): Self = StObject.set(x, "onlyCountries", js.Array(value :_*))
+      inline def setOnlyCountriesVarargs(value: String*): Self = StObject.set(x, "onlyCountries", js.Array(value :_*))
       
-      @scala.inline
-      def setPreferredCountries(value: js.Array[String]): Self = StObject.set(x, "preferredCountries", value.asInstanceOf[js.Any])
+      inline def setPreferredCountries(value: js.Array[String]): Self = StObject.set(x, "preferredCountries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredCountriesUndefined: Self = StObject.set(x, "preferredCountries", js.undefined)
+      inline def setPreferredCountriesUndefined: Self = StObject.set(x, "preferredCountries", js.undefined)
       
-      @scala.inline
-      def setPreferredCountriesVarargs(value: String*): Self = StObject.set(x, "preferredCountries", js.Array(value :_*))
+      inline def setPreferredCountriesVarargs(value: String*): Self = StObject.set(x, "preferredCountries", js.Array(value :_*))
       
-      @scala.inline
-      def setResponsiveDropdown(value: Boolean): Self = StObject.set(x, "responsiveDropdown", value.asInstanceOf[js.Any])
+      inline def setResponsiveDropdown(value: Boolean): Self = StObject.set(x, "responsiveDropdown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsiveDropdownUndefined: Self = StObject.set(x, "responsiveDropdown", js.undefined)
+      inline def setResponsiveDropdownUndefined: Self = StObject.set(x, "responsiveDropdown", js.undefined)
     }
   }
 }

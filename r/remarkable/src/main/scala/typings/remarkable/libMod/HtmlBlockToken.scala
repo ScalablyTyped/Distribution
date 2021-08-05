@@ -22,23 +22,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object HtmlBlockToken {
   
-  @scala.inline
-  def apply(content: String, level: Double): HtmlBlockToken = {
+  inline def apply(content: String, level: Double): HtmlBlockToken = {
     val __obj = js.Dynamic.literal(block = false, content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("htmlblock")
     __obj.asInstanceOf[HtmlBlockToken]
   }
   
-  @scala.inline
-  implicit class HtmlBlockTokenMutableBuilder[Self <: HtmlBlockToken] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlBlockToken](x: Self) {
     
-    @scala.inline
-    def setBlock(value: `false`): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: `false`): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: htmlblock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: htmlblock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

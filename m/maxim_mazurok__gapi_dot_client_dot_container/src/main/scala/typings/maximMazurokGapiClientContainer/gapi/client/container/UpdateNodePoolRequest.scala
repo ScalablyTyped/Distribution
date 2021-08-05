@@ -51,76 +51,53 @@ trait UpdateNodePoolRequest extends StObject {
 }
 object UpdateNodePoolRequest {
   
-  @scala.inline
-  def apply(): UpdateNodePoolRequest = {
+  inline def apply(): UpdateNodePoolRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateNodePoolRequest]
   }
   
-  @scala.inline
-  implicit class UpdateNodePoolRequestMutableBuilder[Self <: UpdateNodePoolRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNodePoolRequest](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
-    @scala.inline
-    def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
+    inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
+    inline def setImageTypeUndefined: Self = StObject.set(x, "imageType", js.undefined)
     
-    @scala.inline
-    def setLocations(value: js.Array[String]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[String]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: String*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNodePoolId(value: String): Self = StObject.set(x, "nodePoolId", value.asInstanceOf[js.Any])
+    inline def setNodePoolId(value: String): Self = StObject.set(x, "nodePoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodePoolIdUndefined: Self = StObject.set(x, "nodePoolId", js.undefined)
+    inline def setNodePoolIdUndefined: Self = StObject.set(x, "nodePoolId", js.undefined)
     
-    @scala.inline
-    def setNodeVersion(value: String): Self = StObject.set(x, "nodeVersion", value.asInstanceOf[js.Any])
+    inline def setNodeVersion(value: String): Self = StObject.set(x, "nodeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeVersionUndefined: Self = StObject.set(x, "nodeVersion", js.undefined)
+    inline def setNodeVersionUndefined: Self = StObject.set(x, "nodeVersion", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setUpgradeSettings(value: UpgradeSettings): Self = StObject.set(x, "upgradeSettings", value.asInstanceOf[js.Any])
+    inline def setUpgradeSettings(value: UpgradeSettings): Self = StObject.set(x, "upgradeSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeSettingsUndefined: Self = StObject.set(x, "upgradeSettings", js.undefined)
+    inline def setUpgradeSettingsUndefined: Self = StObject.set(x, "upgradeSettings", js.undefined)
     
-    @scala.inline
-    def setWorkloadMetadataConfig(value: WorkloadMetadataConfig): Self = StObject.set(x, "workloadMetadataConfig", value.asInstanceOf[js.Any])
+    inline def setWorkloadMetadataConfig(value: WorkloadMetadataConfig): Self = StObject.set(x, "workloadMetadataConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkloadMetadataConfigUndefined: Self = StObject.set(x, "workloadMetadataConfig", js.undefined)
+    inline def setWorkloadMetadataConfigUndefined: Self = StObject.set(x, "workloadMetadataConfig", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

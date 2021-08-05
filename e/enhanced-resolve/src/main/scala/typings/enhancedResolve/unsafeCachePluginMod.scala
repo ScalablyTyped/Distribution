@@ -52,8 +52,7 @@ object unsafeCachePluginMod {
   }
   object UnsafeCachePlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: typings.enhancedResolve.resolverMod.^ => Unit,
       cache: Dictionary[js.Any],
       filterPredicate: ResolverRequest => Boolean,
@@ -64,23 +63,17 @@ object unsafeCachePluginMod {
       __obj.asInstanceOf[UnsafeCachePlugin]
     }
     
-    @scala.inline
-    implicit class UnsafeCachePluginMutableBuilder[Self <: UnsafeCachePlugin] (val x: Self) extends AnyVal {
+    extension [Self <: UnsafeCachePlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCache(value: Dictionary[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Dictionary[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterPredicate(value: ResolverRequest => Boolean): Self = StObject.set(x, "filterPredicate", js.Any.fromFunction1(value))
+      inline def setFilterPredicate(value: ResolverRequest => Boolean): Self = StObject.set(x, "filterPredicate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

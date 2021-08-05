@@ -13,16 +13,13 @@ trait RefreshTrustedAdvisorCheckRequest extends StObject {
 }
 object RefreshTrustedAdvisorCheckRequest {
   
-  @scala.inline
-  def apply(checkId: String): RefreshTrustedAdvisorCheckRequest = {
+  inline def apply(checkId: String): RefreshTrustedAdvisorCheckRequest = {
     val __obj = js.Dynamic.literal(checkId = checkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshTrustedAdvisorCheckRequest]
   }
   
-  @scala.inline
-  implicit class RefreshTrustedAdvisorCheckRequestMutableBuilder[Self <: RefreshTrustedAdvisorCheckRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshTrustedAdvisorCheckRequest](x: Self) {
     
-    @scala.inline
-    def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
+    inline def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
   }
 }

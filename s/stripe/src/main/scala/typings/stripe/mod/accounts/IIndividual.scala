@@ -20,19 +20,15 @@ trait IIndividual
 }
 object IIndividual {
   
-  @scala.inline
-  def apply(id_number_provided: Boolean, ssn_last_4_provided: Boolean): IIndividual = {
+  inline def apply(id_number_provided: Boolean, ssn_last_4_provided: Boolean): IIndividual = {
     val __obj = js.Dynamic.literal(id_number_provided = id_number_provided.asInstanceOf[js.Any], ssn_last_4_provided = ssn_last_4_provided.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIndividual]
   }
   
-  @scala.inline
-  implicit class IIndividualMutableBuilder[Self <: IIndividual] (val x: Self) extends AnyVal {
+  extension [Self <: IIndividual](x: Self) {
     
-    @scala.inline
-    def setId_number_provided(value: Boolean): Self = StObject.set(x, "id_number_provided", value.asInstanceOf[js.Any])
+    inline def setId_number_provided(value: Boolean): Self = StObject.set(x, "id_number_provided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsn_last_4_provided(value: Boolean): Self = StObject.set(x, "ssn_last_4_provided", value.asInstanceOf[js.Any])
+    inline def setSsn_last_4_provided(value: Boolean): Self = StObject.set(x, "ssn_last_4_provided", value.asInstanceOf[js.Any])
   }
 }

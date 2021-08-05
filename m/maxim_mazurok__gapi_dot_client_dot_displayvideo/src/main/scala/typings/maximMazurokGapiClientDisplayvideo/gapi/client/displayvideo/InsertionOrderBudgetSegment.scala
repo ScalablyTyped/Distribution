@@ -30,37 +30,27 @@ trait InsertionOrderBudgetSegment extends StObject {
 }
 object InsertionOrderBudgetSegment {
   
-  @scala.inline
-  def apply(): InsertionOrderBudgetSegment = {
+  inline def apply(): InsertionOrderBudgetSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertionOrderBudgetSegment]
   }
   
-  @scala.inline
-  implicit class InsertionOrderBudgetSegmentMutableBuilder[Self <: InsertionOrderBudgetSegment] (val x: Self) extends AnyVal {
+  extension [Self <: InsertionOrderBudgetSegment](x: Self) {
     
-    @scala.inline
-    def setBudgetAmountMicros(value: String): Self = StObject.set(x, "budgetAmountMicros", value.asInstanceOf[js.Any])
+    inline def setBudgetAmountMicros(value: String): Self = StObject.set(x, "budgetAmountMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetAmountMicrosUndefined: Self = StObject.set(x, "budgetAmountMicros", js.undefined)
+    inline def setBudgetAmountMicrosUndefined: Self = StObject.set(x, "budgetAmountMicros", js.undefined)
     
-    @scala.inline
-    def setCampaignBudgetId(value: String): Self = StObject.set(x, "campaignBudgetId", value.asInstanceOf[js.Any])
+    inline def setCampaignBudgetId(value: String): Self = StObject.set(x, "campaignBudgetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignBudgetIdUndefined: Self = StObject.set(x, "campaignBudgetId", js.undefined)
+    inline def setCampaignBudgetIdUndefined: Self = StObject.set(x, "campaignBudgetId", js.undefined)
     
-    @scala.inline
-    def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
+    inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
+    inline def setDateRangeUndefined: Self = StObject.set(x, "dateRange", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

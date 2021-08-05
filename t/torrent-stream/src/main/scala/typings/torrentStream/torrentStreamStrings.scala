@@ -8,26 +8,21 @@ object torrentStreamStrings {
   
   @js.native
   sealed trait download extends StObject
-  @scala.inline
-  def download: download = "download".asInstanceOf[download]
+  inline def download: download = "download".asInstanceOf[download]
   
   @js.native
   sealed trait idle extends StObject
-  @scala.inline
-  def idle: idle = "idle".asInstanceOf[idle]
+  inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
   sealed trait ready extends StObject
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
   sealed trait torrent extends StObject
-  @scala.inline
-  def torrent: torrent = "torrent".asInstanceOf[torrent]
+  inline def torrent: torrent = "torrent".asInstanceOf[torrent]
   
   @js.native
   sealed trait upload extends StObject
-  @scala.inline
-  def upload: upload = "upload".asInstanceOf[upload]
+  inline def upload: upload = "upload".asInstanceOf[upload]
 }

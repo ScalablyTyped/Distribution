@@ -14,31 +14,23 @@ trait AnimationPlaybackEventInit
 }
 object AnimationPlaybackEventInit {
   
-  @scala.inline
-  def apply(): AnimationPlaybackEventInit = {
+  inline def apply(): AnimationPlaybackEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationPlaybackEventInit]
   }
   
-  @scala.inline
-  implicit class AnimationPlaybackEventInitMutableBuilder[Self <: AnimationPlaybackEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationPlaybackEventInit](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
+    inline def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
     
-    @scala.inline
-    def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
+    inline def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
     
-    @scala.inline
-    def setTimelineTime(value: Double): Self = StObject.set(x, "timelineTime", value.asInstanceOf[js.Any])
+    inline def setTimelineTime(value: Double): Self = StObject.set(x, "timelineTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineTimeNull: Self = StObject.set(x, "timelineTime", null)
+    inline def setTimelineTimeNull: Self = StObject.set(x, "timelineTime", null)
     
-    @scala.inline
-    def setTimelineTimeUndefined: Self = StObject.set(x, "timelineTime", js.undefined)
+    inline def setTimelineTimeUndefined: Self = StObject.set(x, "timelineTime", js.undefined)
   }
 }

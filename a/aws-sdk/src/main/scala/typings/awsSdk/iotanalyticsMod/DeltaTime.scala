@@ -18,19 +18,15 @@ trait DeltaTime extends StObject {
 }
 object DeltaTime {
   
-  @scala.inline
-  def apply(offsetSeconds: OffsetSeconds, timeExpression: TimeExpression): DeltaTime = {
+  inline def apply(offsetSeconds: OffsetSeconds, timeExpression: TimeExpression): DeltaTime = {
     val __obj = js.Dynamic.literal(offsetSeconds = offsetSeconds.asInstanceOf[js.Any], timeExpression = timeExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeltaTime]
   }
   
-  @scala.inline
-  implicit class DeltaTimeMutableBuilder[Self <: DeltaTime] (val x: Self) extends AnyVal {
+  extension [Self <: DeltaTime](x: Self) {
     
-    @scala.inline
-    def setOffsetSeconds(value: OffsetSeconds): Self = StObject.set(x, "offsetSeconds", value.asInstanceOf[js.Any])
+    inline def setOffsetSeconds(value: OffsetSeconds): Self = StObject.set(x, "offsetSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExpression(value: TimeExpression): Self = StObject.set(x, "timeExpression", value.asInstanceOf[js.Any])
+    inline def setTimeExpression(value: TimeExpression): Self = StObject.set(x, "timeExpression", value.asInstanceOf[js.Any])
   }
 }

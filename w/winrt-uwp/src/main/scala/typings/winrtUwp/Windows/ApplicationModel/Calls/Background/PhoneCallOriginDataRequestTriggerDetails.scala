@@ -15,19 +15,15 @@ trait PhoneCallOriginDataRequestTriggerDetails extends StObject {
 }
 object PhoneCallOriginDataRequestTriggerDetails {
   
-  @scala.inline
-  def apply(phoneNumber: String, requestId: String): PhoneCallOriginDataRequestTriggerDetails = {
+  inline def apply(phoneNumber: String, requestId: String): PhoneCallOriginDataRequestTriggerDetails = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneCallOriginDataRequestTriggerDetails]
   }
   
-  @scala.inline
-  implicit class PhoneCallOriginDataRequestTriggerDetailsMutableBuilder[Self <: PhoneCallOriginDataRequestTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneCallOriginDataRequestTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

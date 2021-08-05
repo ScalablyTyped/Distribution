@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSortOrientation extends StObject
 object XlSortOrientation {
   
-  @scala.inline
-  def xlSortColumns: `1` = 1.asInstanceOf[`1`]
+  inline def xlSortColumns: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlSortRows: `2` = 2.asInstanceOf[`2`]
+  inline def xlSortRows: `2` = 2.asInstanceOf[`2`]
 }

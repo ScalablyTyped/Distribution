@@ -17,8 +17,7 @@ trait AddListener extends StObject {
 }
 object AddListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addListener: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.ListenerMap[T] */ js.Any) => js.Function0[Unit],
     listeners: Focus
   ): AddListener = {
@@ -26,15 +25,12 @@ object AddListener {
     __obj.asInstanceOf[AddListener]
   }
   
-  @scala.inline
-  implicit class AddListenerMutableBuilder[Self <: AddListener] (val x: Self) extends AnyVal {
+  extension [Self <: AddListener](x: Self) {
     
-    @scala.inline
-    def setAddListener(
+    inline def setAddListener(
       value: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.ListenerMap[T] */ js.Any) => js.Function0[Unit]
     ): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setListeners(value: Focus): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: Focus): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
   }
 }

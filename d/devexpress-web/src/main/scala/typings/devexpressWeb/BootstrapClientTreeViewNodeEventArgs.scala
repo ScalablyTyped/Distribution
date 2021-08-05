@@ -18,16 +18,13 @@ trait BootstrapClientTreeViewNodeEventArgs
 }
 object BootstrapClientTreeViewNodeEventArgs {
   
-  @scala.inline
-  def apply(node: BootstrapClientTreeViewNode): BootstrapClientTreeViewNodeEventArgs = {
+  inline def apply(node: BootstrapClientTreeViewNode): BootstrapClientTreeViewNodeEventArgs = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapClientTreeViewNodeEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientTreeViewNodeEventArgsMutableBuilder[Self <: BootstrapClientTreeViewNodeEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientTreeViewNodeEventArgs](x: Self) {
     
-    @scala.inline
-    def setNode(value: BootstrapClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: BootstrapClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

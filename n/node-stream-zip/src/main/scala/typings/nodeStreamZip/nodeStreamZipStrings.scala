@@ -8,21 +8,17 @@ object nodeStreamZipStrings {
   
   @js.native
   sealed trait entry extends StObject
-  @scala.inline
-  def entry: entry = "entry".asInstanceOf[entry]
+  inline def entry: entry = "entry".asInstanceOf[entry]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait extract extends StObject
-  @scala.inline
-  def extract: extract = "extract".asInstanceOf[extract]
+  inline def extract: extract = "extract".asInstanceOf[extract]
   
   @js.native
   sealed trait ready extends StObject
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
+  inline def ready: ready = "ready".asInstanceOf[ready]
 }

@@ -40,8 +40,7 @@ trait XXMLSignatureTemplate
 }
 object XXMLSignatureTemplate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Binding: XUriBinding,
     Status: SecurityOperationStatus,
     Targets: SafeArray[XXMLElementWrapper],
@@ -62,22 +61,16 @@ object XXMLSignatureTemplate {
     __obj.asInstanceOf[XXMLSignatureTemplate]
   }
   
-  @scala.inline
-  implicit class XXMLSignatureTemplateMutableBuilder[Self <: XXMLSignatureTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: XXMLSignatureTemplate](x: Self) {
     
-    @scala.inline
-    def setBinding(value: XUriBinding): Self = StObject.set(x, "Binding", value.asInstanceOf[js.Any])
+    inline def setBinding(value: XUriBinding): Self = StObject.set(x, "Binding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBinding(value: () => XUriBinding): Self = StObject.set(x, "getBinding", js.Any.fromFunction0(value))
+    inline def setGetBinding(value: () => XUriBinding): Self = StObject.set(x, "getBinding", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargets(value: () => SafeArray[XXMLElementWrapper]): Self = StObject.set(x, "getTargets", js.Any.fromFunction0(value))
+    inline def setGetTargets(value: () => SafeArray[XXMLElementWrapper]): Self = StObject.set(x, "getTargets", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetBinding(value: XUriBinding => Unit): Self = StObject.set(x, "setBinding", js.Any.fromFunction1(value))
+    inline def setSetBinding(value: XUriBinding => Unit): Self = StObject.set(x, "setBinding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTargets(value: SafeArray[XXMLElementWrapper]): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: SafeArray[XXMLElementWrapper]): Self = StObject.set(x, "Targets", value.asInstanceOf[js.Any])
   }
 }

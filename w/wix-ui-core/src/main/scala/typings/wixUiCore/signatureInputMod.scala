@@ -31,25 +31,21 @@ object signatureInputMod {
     @JSImport("wix-ui-core/dist/src/components/signature-input", "SignatureInput.ClearButton")
     @js.native
     def ClearButton: FunctionComponent[PickClearButtonPropschild] = js.native
-    @scala.inline
-    def ClearButton_=(x: FunctionComponent[PickClearButtonPropschild]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearButton")(x.asInstanceOf[js.Any])
+    inline def ClearButton_=(x: FunctionComponent[PickClearButtonPropschild]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearButton")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/signature-input", "SignatureInput.SigningPad")
     @js.native
     def SigningPad: FunctionComponent[PickSigningPadPropsrequir] = js.native
-    @scala.inline
-    def SigningPad_=(x: FunctionComponent[PickSigningPadPropsrequir]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SigningPad")(x.asInstanceOf[js.Any])
+    inline def SigningPad_=(x: FunctionComponent[PickSigningPadPropsrequir]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SigningPad")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/signature-input", "SignatureInput.Title")
     @js.native
     def Title: FunctionComponent[PickTitlePropschildren] = js.native
-    @scala.inline
-    def Title_=(x: FunctionComponent[PickTitlePropschildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+    inline def Title_=(x: FunctionComponent[PickTitlePropschildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/dist/src/components/signature-input", "SignatureInput.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
 }

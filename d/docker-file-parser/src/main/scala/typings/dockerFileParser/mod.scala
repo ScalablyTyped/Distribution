@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(contents: String): js.Array[CommandEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(contents.asInstanceOf[js.Any]).asInstanceOf[js.Array[CommandEntry]]
-  @scala.inline
-  def parse(contents: String, options: ParseOptions): js.Array[CommandEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(contents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[CommandEntry]]
+  inline def parse(contents: String): js.Array[CommandEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(contents.asInstanceOf[js.Any]).asInstanceOf[js.Array[CommandEntry]]
+  inline def parse(contents: String, options: ParseOptions): js.Array[CommandEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(contents.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[CommandEntry]]
   
   trait CommandEntry extends StObject {
     
@@ -30,8 +28,7 @@ object mod {
   }
   object CommandEntry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       args: String | js.Array[String] | StringDictionary[String],
       lineno: Double,
       name: String,
@@ -41,29 +38,21 @@ object mod {
       __obj.asInstanceOf[CommandEntry]
     }
     
-    @scala.inline
-    implicit class CommandEntryMutableBuilder[Self <: CommandEntry] (val x: Self) extends AnyVal {
+    extension [Self <: CommandEntry](x: Self) {
       
-      @scala.inline
-      def setArgs(value: String | js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: String | js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+      inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,17 +62,14 @@ object mod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(includeComments: Boolean): ParseOptions = {
+    inline def apply(includeComments: Boolean): ParseOptions = {
       val __obj = js.Dynamic.literal(includeComments = includeComments.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeComments(value: Boolean): Self = StObject.set(x, "includeComments", value.asInstanceOf[js.Any])
+      inline def setIncludeComments(value: Boolean): Self = StObject.set(x, "includeComments", value.asInstanceOf[js.Any])
     }
   }
 }

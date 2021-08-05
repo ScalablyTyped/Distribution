@@ -28,31 +28,23 @@ trait SecondaryStatusTransition extends StObject {
 }
 object SecondaryStatusTransition {
   
-  @scala.inline
-  def apply(StartTime: Timestamp, Status: SecondaryStatus): SecondaryStatusTransition = {
+  inline def apply(StartTime: Timestamp, Status: SecondaryStatus): SecondaryStatusTransition = {
     val __obj = js.Dynamic.literal(StartTime = StartTime.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecondaryStatusTransition]
   }
   
-  @scala.inline
-  implicit class SecondaryStatusTransitionMutableBuilder[Self <: SecondaryStatusTransition] (val x: Self) extends AnyVal {
+  extension [Self <: SecondaryStatusTransition](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: SecondaryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SecondaryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
   }
 }

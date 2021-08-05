@@ -51,8 +51,7 @@ trait DataSequence
 }
 object DataSequence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     Data: SafeArray[js.Any],
     ElementType: `type`,
@@ -92,16 +91,12 @@ object DataSequence {
     __obj.asInstanceOf[DataSequence]
   }
   
-  @scala.inline
-  implicit class DataSequenceMutableBuilder[Self <: DataSequence] (val x: Self) extends AnyVal {
+  extension [Self <: DataSequence](x: Self) {
     
-    @scala.inline
-    def setHiddenValues(value: SafeArray[Double]): Self = StObject.set(x, "HiddenValues", value.asInstanceOf[js.Any])
+    inline def setHiddenValues(value: SafeArray[Double]): Self = StObject.set(x, "HiddenValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeHiddenCells(value: Boolean): Self = StObject.set(x, "IncludeHiddenCells", value.asInstanceOf[js.Any])
+    inline def setIncludeHiddenCells(value: Boolean): Self = StObject.set(x, "IncludeHiddenCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: DataSequenceRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: DataSequenceRole): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
   }
 }

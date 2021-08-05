@@ -18,28 +18,21 @@ trait DescribeMaintenanceWindowExecutionsResult extends StObject {
 }
 object DescribeMaintenanceWindowExecutionsResult {
   
-  @scala.inline
-  def apply(): DescribeMaintenanceWindowExecutionsResult = {
+  inline def apply(): DescribeMaintenanceWindowExecutionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMaintenanceWindowExecutionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeMaintenanceWindowExecutionsResultMutableBuilder[Self <: DescribeMaintenanceWindowExecutionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMaintenanceWindowExecutionsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWindowExecutions(value: MaintenanceWindowExecutionList): Self = StObject.set(x, "WindowExecutions", value.asInstanceOf[js.Any])
+    inline def setWindowExecutions(value: MaintenanceWindowExecutionList): Self = StObject.set(x, "WindowExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowExecutionsUndefined: Self = StObject.set(x, "WindowExecutions", js.undefined)
+    inline def setWindowExecutionsUndefined: Self = StObject.set(x, "WindowExecutions", js.undefined)
     
-    @scala.inline
-    def setWindowExecutionsVarargs(value: MaintenanceWindowExecution*): Self = StObject.set(x, "WindowExecutions", js.Array(value :_*))
+    inline def setWindowExecutionsVarargs(value: MaintenanceWindowExecution*): Self = StObject.set(x, "WindowExecutions", js.Array(value :_*))
   }
 }

@@ -13,19 +13,15 @@ trait DialogInputResult extends StObject {
 }
 object DialogInputResult {
   
-  @scala.inline
-  def apply(buttonType: buttonType, text: String): DialogInputResult = {
+  inline def apply(buttonType: buttonType, text: String): DialogInputResult = {
     val __obj = js.Dynamic.literal(buttonType = buttonType.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogInputResult]
   }
   
-  @scala.inline
-  implicit class DialogInputResultMutableBuilder[Self <: DialogInputResult] (val x: Self) extends AnyVal {
+  extension [Self <: DialogInputResult](x: Self) {
     
-    @scala.inline
-    def setButtonType(value: buttonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+    inline def setButtonType(value: buttonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

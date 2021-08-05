@@ -22,20 +22,16 @@ object tableRowMod extends Shortcut {
   }
   object TableRowProps {
     
-    @scala.inline
-    def apply(): TableRowProps = {
+    inline def apply(): TableRowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableRowProps]
     }
     
-    @scala.inline
-    implicit class TableRowPropsMutableBuilder[Self <: TableRowProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableRowProps](x: Self) {
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
     }
   }
   

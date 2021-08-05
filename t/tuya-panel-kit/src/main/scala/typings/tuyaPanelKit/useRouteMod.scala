@@ -12,6 +12,5 @@ object useRouteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: RouteProp[ParamListBase, String] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[T]
+  inline def default[T /* <: RouteProp[ParamListBase, String] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[T]
 }

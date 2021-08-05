@@ -15,16 +15,13 @@ trait AgentPoolQueueReference
 }
 object AgentPoolQueueReference {
   
-  @scala.inline
-  def apply(alias: String, id: Double): AgentPoolQueueReference = {
+  inline def apply(alias: String, id: Double): AgentPoolQueueReference = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentPoolQueueReference]
   }
   
-  @scala.inline
-  implicit class AgentPoolQueueReferenceMutableBuilder[Self <: AgentPoolQueueReference] (val x: Self) extends AnyVal {
+  extension [Self <: AgentPoolQueueReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

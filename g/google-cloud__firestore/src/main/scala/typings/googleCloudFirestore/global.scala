@@ -21,7 +21,7 @@ object global {
     
     @JSGlobal("FirebaseFirestore.BulkWriter")
     @js.native
-    class BulkWriter protected ()
+    /* private */ class BulkWriter ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.BulkWriter
     
@@ -56,25 +56,25 @@ object global {
     
     @JSGlobal("FirebaseFirestore.CollectionGroup")
     @js.native
-    class CollectionGroup[T] protected ()
+    /* private */ class CollectionGroup[T] ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.CollectionGroup[T]
     
     @JSGlobal("FirebaseFirestore.CollectionReference")
     @js.native
-    class CollectionReference[T] protected ()
+    /* private */ class CollectionReference[T] ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.CollectionReference[T]
     
     @JSGlobal("FirebaseFirestore.DocumentReference")
     @js.native
-    class DocumentReference[T] protected ()
+    /* private */ class DocumentReference[T] ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.DocumentReference[T]
     
     @JSGlobal("FirebaseFirestore.DocumentSnapshot")
     @js.native
-    class DocumentSnapshot[T] protected ()
+    /* protected */ class DocumentSnapshot[T] ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.DocumentSnapshot[T]
     
@@ -111,13 +111,12 @@ object global {
         * Returns a special sentinel FieldPath to refer to the ID of a document.
         * It can be used in queries to sort or filter by the document ID.
         */
-      @scala.inline
-      def documentId(): typings.googleCloudFirestore.FirebaseFirestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldPath]
+      inline def documentId(): typings.googleCloudFirestore.FirebaseFirestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldPath]
     }
     
     @JSGlobal("FirebaseFirestore.FieldValue")
     @js.native
-    class FieldValue protected ()
+    /* private */ class FieldValue ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.FieldValue {
       
@@ -148,8 +147,7 @@ object global {
         * @return The FieldValue sentinel for use in a call to set(), create() or
         * update().
         */
-      @scala.inline
-      def arrayRemove(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def arrayRemove(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
       
       /**
         * Returns a special value that can be used with set(), create() or update()
@@ -163,8 +161,7 @@ object global {
         * @return The FieldValue sentinel for use in a call to set(), create() or
         * update().
         */
-      @scala.inline
-      def arrayUnion(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def arrayUnion(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
       
       /**
         * Returns a sentinel for use with update() or set() with {merge:true} to
@@ -172,8 +169,7 @@ object global {
         *
         * @return The FieldValue sentinel for use in a call to set() or update().
         */
-      @scala.inline
-      def delete(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def delete(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
       
       /**
         * Returns a special value that can be used with set(), create() or update()
@@ -192,8 +188,7 @@ object global {
         * @return The FieldValue sentinel for use in a call to set(), create() or
         * update().
         */
-      @scala.inline
-      def increment(n: Double): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def increment(n: Double): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
       
       /**
         * Returns a sentinel used with set(), create() or update() to include a
@@ -202,8 +197,7 @@ object global {
         * @return The FieldValue sentinel for use in a call to set(), create() or
         * update().
         */
-      @scala.inline
-      def serverTimestamp(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+      inline def serverTimestamp(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
     }
     
     @JSGlobal("FirebaseFirestore.Firestore")
@@ -291,25 +285,25 @@ object global {
     
     @JSGlobal("FirebaseFirestore.Query")
     @js.native
-    class Query[T] protected ()
+    /* protected */ class Query[T] ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.Query[T]
     
     @JSGlobal("FirebaseFirestore.QueryDocumentSnapshot")
     @js.native
-    class QueryDocumentSnapshot[T] protected ()
+    /* private */ class QueryDocumentSnapshot[T] ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.QueryDocumentSnapshot[T]
     
     @JSGlobal("FirebaseFirestore.QueryPartition")
     @js.native
-    class QueryPartition[T] protected ()
+    /* private */ class QueryPartition[T] ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.QueryPartition[T]
     
     @JSGlobal("FirebaseFirestore.QuerySnapshot")
     @js.native
-    class QuerySnapshot[T] protected ()
+    /* private */ class QuerySnapshot[T] ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.QuerySnapshot[T]
     
@@ -383,8 +377,7 @@ object global {
         * @return A new `Timestamp` representing the same point in time as the
         * given date.
         */
-      @scala.inline
-      def fromDate(date: Date): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
+      inline def fromDate(date: Date): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
       
       /**
         * Creates a new timestamp from the given number of milliseconds.
@@ -394,33 +387,31 @@ object global {
         * @return A new `Timestamp` representing the same point in time as the
         * given number of milliseconds.
         */
-      @scala.inline
-      def fromMillis(milliseconds: Double): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
+      inline def fromMillis(milliseconds: Double): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
       
       /**
         * Creates a new timestamp with the current date, with millisecond precision.
         *
         * @return A new `Timestamp` representing the current date.
         */
-      @scala.inline
-      def now(): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
+      inline def now(): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
     }
     
     @JSGlobal("FirebaseFirestore.Transaction")
     @js.native
-    class Transaction protected ()
+    /* private */ class Transaction ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.Transaction
     
     @JSGlobal("FirebaseFirestore.WriteBatch")
     @js.native
-    class WriteBatch protected ()
+    /* private */ class WriteBatch ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.WriteBatch
     
     @JSGlobal("FirebaseFirestore.WriteResult")
     @js.native
-    class WriteResult protected ()
+    /* private */ class WriteResult ()
       extends StObject
          with typings.googleCloudFirestore.FirebaseFirestore.WriteResult {
       
@@ -446,10 +437,8 @@ object global {
       * @param logger A log function that takes a message (such as `console.log`) or
       * `null` to turn off logging.
       */
-    @scala.inline
-    def setLogFunction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")().asInstanceOf[Unit]
-    @scala.inline
-    def setLogFunction(logger: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setLogFunction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")().asInstanceOf[Unit]
+    inline def setLogFunction(logger: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     object v1 {
       
@@ -460,14 +449,12 @@ object global {
       @JSGlobal("FirebaseFirestore.v1.FirestoreAdminClient")
       @js.native
       def FirestoreAdminClient: js.Any = js.native
-      @scala.inline
-      def FirestoreAdminClient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreAdminClient")(x.asInstanceOf[js.Any])
+      inline def FirestoreAdminClient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreAdminClient")(x.asInstanceOf[js.Any])
       
       @JSGlobal("FirebaseFirestore.v1.FirestoreClient")
       @js.native
       def FirestoreClient: js.Any = js.native
-      @scala.inline
-      def FirestoreClient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
+      inline def FirestoreClient_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FirestoreClient")(x.asInstanceOf[js.Any])
     }
     
     @JSGlobal("FirebaseFirestore.v1beta1")

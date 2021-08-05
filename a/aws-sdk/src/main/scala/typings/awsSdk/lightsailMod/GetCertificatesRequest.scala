@@ -23,34 +23,25 @@ trait GetCertificatesRequest extends StObject {
 }
 object GetCertificatesRequest {
   
-  @scala.inline
-  def apply(): GetCertificatesRequest = {
+  inline def apply(): GetCertificatesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCertificatesRequest]
   }
   
-  @scala.inline
-  implicit class GetCertificatesRequestMutableBuilder[Self <: GetCertificatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCertificatesRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateName(value: CertificateName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
+    inline def setCertificateName(value: CertificateName): Self = StObject.set(x, "certificateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateNameUndefined: Self = StObject.set(x, "certificateName", js.undefined)
+    inline def setCertificateNameUndefined: Self = StObject.set(x, "certificateName", js.undefined)
     
-    @scala.inline
-    def setCertificateStatuses(value: CertificateStatusList): Self = StObject.set(x, "certificateStatuses", value.asInstanceOf[js.Any])
+    inline def setCertificateStatuses(value: CertificateStatusList): Self = StObject.set(x, "certificateStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateStatusesUndefined: Self = StObject.set(x, "certificateStatuses", js.undefined)
+    inline def setCertificateStatusesUndefined: Self = StObject.set(x, "certificateStatuses", js.undefined)
     
-    @scala.inline
-    def setCertificateStatusesVarargs(value: CertificateStatus*): Self = StObject.set(x, "certificateStatuses", js.Array(value :_*))
+    inline def setCertificateStatusesVarargs(value: CertificateStatus*): Self = StObject.set(x, "certificateStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeCertificateDetails(value: IncludeCertificateDetails): Self = StObject.set(x, "includeCertificateDetails", value.asInstanceOf[js.Any])
+    inline def setIncludeCertificateDetails(value: IncludeCertificateDetails): Self = StObject.set(x, "includeCertificateDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCertificateDetailsUndefined: Self = StObject.set(x, "includeCertificateDetails", js.undefined)
+    inline def setIncludeCertificateDetailsUndefined: Self = StObject.set(x, "includeCertificateDetails", js.undefined)
   }
 }

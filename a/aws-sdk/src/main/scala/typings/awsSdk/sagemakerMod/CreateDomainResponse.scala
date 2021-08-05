@@ -18,25 +18,19 @@ trait CreateDomainResponse extends StObject {
 }
 object CreateDomainResponse {
   
-  @scala.inline
-  def apply(): CreateDomainResponse = {
+  inline def apply(): CreateDomainResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDomainResponse]
   }
   
-  @scala.inline
-  implicit class CreateDomainResponseMutableBuilder[Self <: CreateDomainResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDomainResponse](x: Self) {
     
-    @scala.inline
-    def setDomainArn(value: DomainArn): Self = StObject.set(x, "DomainArn", value.asInstanceOf[js.Any])
+    inline def setDomainArn(value: DomainArn): Self = StObject.set(x, "DomainArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainArnUndefined: Self = StObject.set(x, "DomainArn", js.undefined)
+    inline def setDomainArnUndefined: Self = StObject.set(x, "DomainArn", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String1024): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String1024): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

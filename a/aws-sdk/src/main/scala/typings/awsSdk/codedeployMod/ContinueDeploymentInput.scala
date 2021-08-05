@@ -18,25 +18,19 @@ trait ContinueDeploymentInput extends StObject {
 }
 object ContinueDeploymentInput {
   
-  @scala.inline
-  def apply(): ContinueDeploymentInput = {
+  inline def apply(): ContinueDeploymentInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContinueDeploymentInput]
   }
   
-  @scala.inline
-  implicit class ContinueDeploymentInputMutableBuilder[Self <: ContinueDeploymentInput] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueDeploymentInput](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "deploymentId", js.undefined)
     
-    @scala.inline
-    def setDeploymentWaitType(value: DeploymentWaitType): Self = StObject.set(x, "deploymentWaitType", value.asInstanceOf[js.Any])
+    inline def setDeploymentWaitType(value: DeploymentWaitType): Self = StObject.set(x, "deploymentWaitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentWaitTypeUndefined: Self = StObject.set(x, "deploymentWaitType", js.undefined)
+    inline def setDeploymentWaitTypeUndefined: Self = StObject.set(x, "deploymentWaitType", js.undefined)
   }
 }

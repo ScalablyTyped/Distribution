@@ -51,61 +51,43 @@ trait SchemaUserProfile extends StObject {
 }
 object SchemaUserProfile {
   
-  @scala.inline
-  def apply(): SchemaUserProfile = {
+  inline def apply(): SchemaUserProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserProfile]
   }
   
-  @scala.inline
-  implicit class SchemaUserProfileMutableBuilder[Self <: SchemaUserProfile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserProfile](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
+    inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
-    @scala.inline
-    def setSubAccountId(value: String): Self = StObject.set(x, "subAccountId", value.asInstanceOf[js.Any])
+    inline def setSubAccountId(value: String): Self = StObject.set(x, "subAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubAccountIdUndefined: Self = StObject.set(x, "subAccountId", js.undefined)
+    inline def setSubAccountIdUndefined: Self = StObject.set(x, "subAccountId", js.undefined)
     
-    @scala.inline
-    def setSubAccountName(value: String): Self = StObject.set(x, "subAccountName", value.asInstanceOf[js.Any])
+    inline def setSubAccountName(value: String): Self = StObject.set(x, "subAccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubAccountNameUndefined: Self = StObject.set(x, "subAccountName", js.undefined)
+    inline def setSubAccountNameUndefined: Self = StObject.set(x, "subAccountName", js.undefined)
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

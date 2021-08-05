@@ -13,16 +13,13 @@ trait JQueryEventInterface extends StObject {
 }
 object JQueryEventInterface {
   
-  @scala.inline
-  def apply(Event: JQueryEventConstructor): JQueryEventInterface = {
+  inline def apply(Event: JQueryEventConstructor): JQueryEventInterface = {
     val __obj = js.Dynamic.literal(Event = Event.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryEventInterface]
   }
   
-  @scala.inline
-  implicit class JQueryEventInterfaceMutableBuilder[Self <: JQueryEventInterface] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryEventInterface](x: Self) {
     
-    @scala.inline
-    def setEvent(value: JQueryEventConstructor): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: JQueryEventConstructor): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
   }
 }

@@ -13,12 +13,10 @@ object DEFAULT_ROW_HEIGHTS {
   @JSImport("office-ui-fabric-react", "DEFAULT_ROW_HEIGHTS.compactRowHeight")
   @js.native
   def compactRowHeight: Double = js.native
-  @scala.inline
-  def compactRowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compactRowHeight")(x.asInstanceOf[js.Any])
+  inline def compactRowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compactRowHeight")(x.asInstanceOf[js.Any])
   
   @JSImport("office-ui-fabric-react", "DEFAULT_ROW_HEIGHTS.rowHeight")
   @js.native
   def rowHeight: Double = js.native
-  @scala.inline
-  def rowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowHeight")(x.asInstanceOf[js.Any])
+  inline def rowHeight_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowHeight")(x.asInstanceOf[js.Any])
 }

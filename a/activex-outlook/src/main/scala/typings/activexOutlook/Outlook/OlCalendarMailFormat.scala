@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlCalendarMailFormat extends StObject
 object OlCalendarMailFormat {
   
-  @scala.inline
-  def olCalendarMailFormatDailySchedule: `0` = 0.asInstanceOf[`0`]
+  inline def olCalendarMailFormatDailySchedule: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olCalendarMailFormatEventList: `1` = 1.asInstanceOf[`1`]
+  inline def olCalendarMailFormatEventList: `1` = 1.asInstanceOf[`1`]
 }

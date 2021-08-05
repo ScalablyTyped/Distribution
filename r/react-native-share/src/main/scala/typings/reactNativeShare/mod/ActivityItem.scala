@@ -14,20 +14,16 @@ trait ActivityItem extends StObject {
 }
 object ActivityItem {
   
-  @scala.inline
-  def apply(content: String, `type`: text | url): ActivityItem = {
+  inline def apply(content: String, `type`: text | url): ActivityItem = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivityItem]
   }
   
-  @scala.inline
-  implicit class ActivityItemMutableBuilder[Self <: ActivityItem] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityItem](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: text | url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: text | url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

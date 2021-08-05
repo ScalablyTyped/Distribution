@@ -14,37 +14,27 @@ trait ResourceAction extends StObject {
 }
 object ResourceAction {
   
-  @scala.inline
-  def apply(): ResourceAction = {
+  inline def apply(): ResourceAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceAction]
   }
   
-  @scala.inline
-  implicit class ResourceActionMutableBuilder[Self <: ResourceAction] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceAction](x: Self) {
     
-    @scala.inline
-    def setAllowedResourceActions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "allowedResourceActions", value.asInstanceOf[js.Any])
+    inline def setAllowedResourceActions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "allowedResourceActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedResourceActionsNull: Self = StObject.set(x, "allowedResourceActions", null)
+    inline def setAllowedResourceActionsNull: Self = StObject.set(x, "allowedResourceActions", null)
     
-    @scala.inline
-    def setAllowedResourceActionsUndefined: Self = StObject.set(x, "allowedResourceActions", js.undefined)
+    inline def setAllowedResourceActionsUndefined: Self = StObject.set(x, "allowedResourceActions", js.undefined)
     
-    @scala.inline
-    def setAllowedResourceActionsVarargs(value: String*): Self = StObject.set(x, "allowedResourceActions", js.Array(value :_*))
+    inline def setAllowedResourceActionsVarargs(value: String*): Self = StObject.set(x, "allowedResourceActions", js.Array(value :_*))
     
-    @scala.inline
-    def setNotAllowedResourceActions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "notAllowedResourceActions", value.asInstanceOf[js.Any])
+    inline def setNotAllowedResourceActions(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "notAllowedResourceActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotAllowedResourceActionsNull: Self = StObject.set(x, "notAllowedResourceActions", null)
+    inline def setNotAllowedResourceActionsNull: Self = StObject.set(x, "notAllowedResourceActions", null)
     
-    @scala.inline
-    def setNotAllowedResourceActionsUndefined: Self = StObject.set(x, "notAllowedResourceActions", js.undefined)
+    inline def setNotAllowedResourceActionsUndefined: Self = StObject.set(x, "notAllowedResourceActions", js.undefined)
     
-    @scala.inline
-    def setNotAllowedResourceActionsVarargs(value: String*): Self = StObject.set(x, "notAllowedResourceActions", js.Array(value :_*))
+    inline def setNotAllowedResourceActionsVarargs(value: String*): Self = StObject.set(x, "notAllowedResourceActions", js.Array(value :_*))
   }
 }

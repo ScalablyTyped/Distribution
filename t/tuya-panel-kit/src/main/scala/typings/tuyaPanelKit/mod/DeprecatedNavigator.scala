@@ -34,8 +34,7 @@ trait DeprecatedNavigator extends StObject {
 }
 object DeprecatedNavigator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentRoutes: () => js.Array[DeprecatedNavigatorRoute],
     immediatelyResetRouteStack: js.Array[DeprecatedNavigatorRoute] => Unit,
     jumpBack: () => Unit,
@@ -54,46 +53,32 @@ object DeprecatedNavigator {
     __obj.asInstanceOf[DeprecatedNavigator]
   }
   
-  @scala.inline
-  implicit class DeprecatedNavigatorMutableBuilder[Self <: DeprecatedNavigator] (val x: Self) extends AnyVal {
+  extension [Self <: DeprecatedNavigator](x: Self) {
     
-    @scala.inline
-    def setGetCurrentRoutes(value: () => js.Array[DeprecatedNavigatorRoute]): Self = StObject.set(x, "getCurrentRoutes", js.Any.fromFunction0(value))
+    inline def setGetCurrentRoutes(value: () => js.Array[DeprecatedNavigatorRoute]): Self = StObject.set(x, "getCurrentRoutes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImmediatelyResetRouteStack(value: js.Array[DeprecatedNavigatorRoute] => Unit): Self = StObject.set(x, "immediatelyResetRouteStack", js.Any.fromFunction1(value))
+    inline def setImmediatelyResetRouteStack(value: js.Array[DeprecatedNavigatorRoute] => Unit): Self = StObject.set(x, "immediatelyResetRouteStack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJumpBack(value: () => Unit): Self = StObject.set(x, "jumpBack", js.Any.fromFunction0(value))
+    inline def setJumpBack(value: () => Unit): Self = StObject.set(x, "jumpBack", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJumpForward(value: () => Unit): Self = StObject.set(x, "jumpForward", js.Any.fromFunction0(value))
+    inline def setJumpForward(value: () => Unit): Self = StObject.set(x, "jumpForward", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setJumpTo(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
+    inline def setJumpTo(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+    inline def setPop(value: () => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPopN(value: Double => Unit): Self = StObject.set(x, "popN", js.Any.fromFunction1(value))
+    inline def setPopN(value: Double => Unit): Self = StObject.set(x, "popN", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPopToRoute(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "popToRoute", js.Any.fromFunction1(value))
+    inline def setPopToRoute(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "popToRoute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPopToTop(value: () => Unit): Self = StObject.set(x, "popToTop", js.Any.fromFunction0(value))
+    inline def setPopToTop(value: () => Unit): Self = StObject.set(x, "popToTop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPush(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    inline def setPush(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplace(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+    inline def setReplace(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceAtIndex(value: (DeprecatedNavigatorRoute, Double) => Unit): Self = StObject.set(x, "replaceAtIndex", js.Any.fromFunction2(value))
+    inline def setReplaceAtIndex(value: (DeprecatedNavigatorRoute, Double) => Unit): Self = StObject.set(x, "replaceAtIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReplacePrevious(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "replacePrevious", js.Any.fromFunction1(value))
+    inline def setReplacePrevious(value: DeprecatedNavigatorRoute => Unit): Self = StObject.set(x, "replacePrevious", js.Any.fromFunction1(value))
   }
 }

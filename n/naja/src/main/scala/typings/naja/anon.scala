@@ -21,8 +21,7 @@ object anon {
   }
   object AbortController {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       abortController: typings.std.AbortController,
       options: typings.naja.najaMod.Options,
       promise: js.Promise[Response],
@@ -32,20 +31,15 @@ object anon {
       __obj.asInstanceOf[AbortController]
     }
     
-    @scala.inline
-    implicit class AbortControllerMutableBuilder[Self <: AbortController] (val x: Self) extends AnyVal {
+    extension [Self <: AbortController](x: Self) {
       
-      @scala.inline
-      def setAbortController(value: typings.std.AbortController): Self = StObject.set(x, "abortController", value.asInstanceOf[js.Any])
+      inline def setAbortController(value: typings.std.AbortController): Self = StObject.set(x, "abortController", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromise(value: js.Promise[Response]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[Response]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,8 +59,7 @@ object anon {
   }
   object Append {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       append: (/* snippet */ typings.std.Element, /* content */ String) => Unit,
       prepend: (/* snippet */ typings.std.Element, /* content */ String) => Unit,
       replace: (/* snippet */ typings.std.Element, /* content */ String) => Unit
@@ -75,17 +68,13 @@ object anon {
       __obj.asInstanceOf[Append]
     }
     
-    @scala.inline
-    implicit class AppendMutableBuilder[Self <: Append] (val x: Self) extends AnyVal {
+    extension [Self <: Append](x: Self) {
       
-      @scala.inline
-      def setAppend(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
+      inline def setAppend(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrepend(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction2(value))
+      inline def setPrepend(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "prepend", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReplace(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+      inline def setReplace(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
     }
   }
   
@@ -107,8 +96,7 @@ object anon {
   }
   object ChangeOperation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changeOperation: SnippetUpdateOperation => Unit,
       content: String,
       fromCache: Boolean,
@@ -120,26 +108,19 @@ object anon {
       __obj.asInstanceOf[ChangeOperation]
     }
     
-    @scala.inline
-    implicit class ChangeOperationMutableBuilder[Self <: ChangeOperation] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeOperation](x: Self) {
       
-      @scala.inline
-      def setChangeOperation(value: SnippetUpdateOperation => Unit): Self = StObject.set(x, "changeOperation", js.Any.fromFunction1(value))
+      inline def setChangeOperation(value: SnippetUpdateOperation => Unit): Self = StObject.set(x, "changeOperation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+      inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperation(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
+      inline def setOperation(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnippet(value: typings.std.Element): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+      inline def setSnippet(value: typings.std.Element): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,8 +140,7 @@ object anon {
   }
   object Content {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       content: String,
       fromCache: Boolean,
       operation: (/* snippet */ typings.std.Element, /* content */ String) => Unit,
@@ -171,23 +151,17 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    @scala.inline
-    implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+    extension [Self <: Content](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+      inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperation(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
+      inline def setOperation(value: (/* snippet */ typings.std.Element, /* content */ String) => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnippet(value: typings.std.Element): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+      inline def setSnippet(value: typings.std.Element): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     }
   }
   
@@ -205,8 +179,7 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: js.Any,
       method: String,
       options: typings.naja.najaMod.Options,
@@ -217,23 +190,17 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,17 +210,14 @@ object anon {
   }
   object DefaultOptions {
     
-    @scala.inline
-    def apply(defaultOptions: typings.naja.najaMod.Options): DefaultOptions = {
+    inline def apply(defaultOptions: typings.naja.najaMod.Options): DefaultOptions = {
       val __obj = js.Dynamic.literal(defaultOptions = defaultOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    @scala.inline
-    implicit class DefaultOptionsMutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+      inline def setDefaultOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,26 +231,20 @@ object anon {
   }
   object Element {
     
-    @scala.inline
-    def apply(element: typings.std.Element, options: typings.naja.najaMod.Options): Element = {
+    inline def apply(element: typings.std.Element, options: typings.naja.najaMod.Options): Element = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: typings.std.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+      inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
     }
   }
   
@@ -300,23 +258,18 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: typings.std.Error, options: typings.naja.najaMod.Options, request: typings.std.Request): Error = {
+    inline def apply(error: typings.std.Error, options: typings.naja.najaMod.Options, request: typings.std.Request): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -332,8 +285,7 @@ object anon {
   }
   object IsHardRedirect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       isHardRedirect: Boolean,
       options: typings.naja.najaMod.Options,
       setHardRedirect: Boolean => Unit,
@@ -343,20 +295,15 @@ object anon {
       __obj.asInstanceOf[IsHardRedirect]
     }
     
-    @scala.inline
-    implicit class IsHardRedirectMutableBuilder[Self <: IsHardRedirect] (val x: Self) extends AnyVal {
+    extension [Self <: IsHardRedirect](x: Self) {
       
-      @scala.inline
-      def setIsHardRedirect(value: Boolean): Self = StObject.set(x, "isHardRedirect", value.asInstanceOf[js.Any])
+      inline def setIsHardRedirect(value: Boolean): Self = StObject.set(x, "isHardRedirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetHardRedirect(value: Boolean => Unit): Self = StObject.set(x, "setHardRedirect", js.Any.fromFunction1(value))
+      inline def setSetHardRedirect(value: Boolean => Unit): Self = StObject.set(x, "setHardRedirect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -372,8 +319,7 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       options: typings.naja.najaMod.Options,
       payload: typings.naja.najaMod.Payload,
       request: typings.std.Request,
@@ -383,20 +329,15 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: typings.naja.najaMod.Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: typings.naja.najaMod.Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -414,38 +355,28 @@ object anon {
   }
   object Payload {
     
-    @scala.inline
-    def apply(options: typings.naja.najaMod.Options, request: typings.std.Request): Payload = {
+    inline def apply(options: typings.naja.najaMod.Options, request: typings.std.Request): Payload = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[Payload]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+    extension [Self <: Payload](x: Self) {
       
-      @scala.inline
-      def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: typings.naja.najaMod.Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: typings.naja.najaMod.Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   
@@ -461,29 +392,22 @@ object anon {
   }
   object Request {
     
-    @scala.inline
-    def apply(error: typings.std.Error, options: typings.naja.najaMod.Options, request: typings.std.Request): Request = {
+    inline def apply(error: typings.std.Error, options: typings.naja.najaMod.Options, request: typings.std.Request): Request = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: typings.std.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: typings.naja.najaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: typings.std.Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
 }

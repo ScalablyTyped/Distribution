@@ -18,28 +18,21 @@ trait ListDocumentClassificationJobsResponse extends StObject {
 }
 object ListDocumentClassificationJobsResponse {
   
-  @scala.inline
-  def apply(): ListDocumentClassificationJobsResponse = {
+  inline def apply(): ListDocumentClassificationJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDocumentClassificationJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListDocumentClassificationJobsResponseMutableBuilder[Self <: ListDocumentClassificationJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDocumentClassificationJobsResponse](x: Self) {
     
-    @scala.inline
-    def setDocumentClassificationJobPropertiesList(value: DocumentClassificationJobPropertiesList): Self = StObject.set(x, "DocumentClassificationJobPropertiesList", value.asInstanceOf[js.Any])
+    inline def setDocumentClassificationJobPropertiesList(value: DocumentClassificationJobPropertiesList): Self = StObject.set(x, "DocumentClassificationJobPropertiesList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentClassificationJobPropertiesListUndefined: Self = StObject.set(x, "DocumentClassificationJobPropertiesList", js.undefined)
+    inline def setDocumentClassificationJobPropertiesListUndefined: Self = StObject.set(x, "DocumentClassificationJobPropertiesList", js.undefined)
     
-    @scala.inline
-    def setDocumentClassificationJobPropertiesListVarargs(value: DocumentClassificationJobProperties*): Self = StObject.set(x, "DocumentClassificationJobPropertiesList", js.Array(value :_*))
+    inline def setDocumentClassificationJobPropertiesListVarargs(value: DocumentClassificationJobProperties*): Self = StObject.set(x, "DocumentClassificationJobPropertiesList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

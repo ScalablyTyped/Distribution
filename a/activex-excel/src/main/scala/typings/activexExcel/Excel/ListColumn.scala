@@ -18,7 +18,7 @@ trait ListColumn extends StObject {
   
   def Delete(): Unit
   
-  @JSName("Excel.ListColumn_typekey")
+  /* private */ @JSName("Excel.ListColumn_typekey")
   var ExcelDotListColumn_typekey: ListColumn
   
   val Index: Double
@@ -51,8 +51,7 @@ trait ListColumn extends StObject {
 }
 object ListColumn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     DataBodyRange: Range,
@@ -74,52 +73,36 @@ object ListColumn {
     __obj.asInstanceOf[ListColumn]
   }
   
-  @scala.inline
-  implicit class ListColumnMutableBuilder[Self <: ListColumn] (val x: Self) extends AnyVal {
+  extension [Self <: ListColumn](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataBodyRange(value: Range): Self = StObject.set(x, "DataBodyRange", value.asInstanceOf[js.Any])
+    inline def setDataBodyRange(value: Range): Self = StObject.set(x, "DataBodyRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotListColumn_typekey(value: ListColumn): Self = StObject.set(x, "Excel.ListColumn_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotListColumn_typekey(value: ListColumn): Self = StObject.set(x, "Excel.ListColumn_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListDataFormat(value: ListDataFormat): Self = StObject.set(x, "ListDataFormat", value.asInstanceOf[js.Any])
+    inline def setListDataFormat(value: ListDataFormat): Self = StObject.set(x, "ListDataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharePointFormula(value: String): Self = StObject.set(x, "SharePointFormula", value.asInstanceOf[js.Any])
+    inline def setSharePointFormula(value: String): Self = StObject.set(x, "SharePointFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Range): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Range): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsCalculation(value: XlTotalsCalculation): Self = StObject.set(x, "TotalsCalculation", value.asInstanceOf[js.Any])
+    inline def setTotalsCalculation(value: XlTotalsCalculation): Self = StObject.set(x, "TotalsCalculation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXPath(value: XPath): Self = StObject.set(x, "XPath", value.asInstanceOf[js.Any])
+    inline def setXPath(value: XPath): Self = StObject.set(x, "XPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

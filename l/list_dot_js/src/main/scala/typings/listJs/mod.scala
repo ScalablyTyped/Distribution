@@ -34,26 +34,19 @@ object mod {
   trait Event extends StObject
   object Event {
     
-    @scala.inline
-    def filterComplete: typings.listJs.listJsStrings.filterComplete = "filterComplete".asInstanceOf[typings.listJs.listJsStrings.filterComplete]
+    inline def filterComplete: typings.listJs.listJsStrings.filterComplete = "filterComplete".asInstanceOf[typings.listJs.listJsStrings.filterComplete]
     
-    @scala.inline
-    def filterStart: typings.listJs.listJsStrings.filterStart = "filterStart".asInstanceOf[typings.listJs.listJsStrings.filterStart]
+    inline def filterStart: typings.listJs.listJsStrings.filterStart = "filterStart".asInstanceOf[typings.listJs.listJsStrings.filterStart]
     
-    @scala.inline
-    def searchComplete: typings.listJs.listJsStrings.searchComplete = "searchComplete".asInstanceOf[typings.listJs.listJsStrings.searchComplete]
+    inline def searchComplete: typings.listJs.listJsStrings.searchComplete = "searchComplete".asInstanceOf[typings.listJs.listJsStrings.searchComplete]
     
-    @scala.inline
-    def searchStart: typings.listJs.listJsStrings.searchStart = "searchStart".asInstanceOf[typings.listJs.listJsStrings.searchStart]
+    inline def searchStart: typings.listJs.listJsStrings.searchStart = "searchStart".asInstanceOf[typings.listJs.listJsStrings.searchStart]
     
-    @scala.inline
-    def sortComplete: typings.listJs.listJsStrings.sortComplete = "sortComplete".asInstanceOf[typings.listJs.listJsStrings.sortComplete]
+    inline def sortComplete: typings.listJs.listJsStrings.sortComplete = "sortComplete".asInstanceOf[typings.listJs.listJsStrings.sortComplete]
     
-    @scala.inline
-    def sortStart: typings.listJs.listJsStrings.sortStart = "sortStart".asInstanceOf[typings.listJs.listJsStrings.sortStart]
+    inline def sortStart: typings.listJs.listJsStrings.sortStart = "sortStart".asInstanceOf[typings.listJs.listJsStrings.sortStart]
     
-    @scala.inline
-    def updated: typings.listJs.listJsStrings.updated = "updated".asInstanceOf[typings.listJs.listJsStrings.updated]
+    inline def updated: typings.listJs.listJsStrings.updated = "updated".asInstanceOf[typings.listJs.listJsStrings.updated]
   }
   
   trait FuzzySearchOptions extends StObject {
@@ -70,44 +63,32 @@ object mod {
   }
   object FuzzySearchOptions {
     
-    @scala.inline
-    def apply(): FuzzySearchOptions = {
+    inline def apply(): FuzzySearchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FuzzySearchOptions]
     }
     
-    @scala.inline
-    implicit class FuzzySearchOptionsMutableBuilder[Self <: FuzzySearchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FuzzySearchOptions](x: Self) {
       
-      @scala.inline
-      def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+      inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+      inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setMultiSearch(value: Boolean): Self = StObject.set(x, "multiSearch", value.asInstanceOf[js.Any])
+      inline def setMultiSearch(value: Boolean): Self = StObject.set(x, "multiSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSearchUndefined: Self = StObject.set(x, "multiSearch", js.undefined)
+      inline def setMultiSearchUndefined: Self = StObject.set(x, "multiSearch", js.undefined)
       
-      @scala.inline
-      def setSearchClass(value: String): Self = StObject.set(x, "searchClass", value.asInstanceOf[js.Any])
+      inline def setSearchClass(value: String): Self = StObject.set(x, "searchClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchClassUndefined: Self = StObject.set(x, "searchClass", js.undefined)
+      inline def setSearchClassUndefined: Self = StObject.set(x, "searchClass", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
   
@@ -202,77 +183,54 @@ object mod {
   }
   object ListOptions {
     
-    @scala.inline
-    def apply(): ListOptions = {
+    inline def apply(): ListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListOptions]
     }
     
-    @scala.inline
-    implicit class ListOptionsMutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ListOptions](x: Self) {
       
-      @scala.inline
-      def setFuzzySearch(value: FuzzySearchOptions): Self = StObject.set(x, "fuzzySearch", value.asInstanceOf[js.Any])
+      inline def setFuzzySearch(value: FuzzySearchOptions): Self = StObject.set(x, "fuzzySearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFuzzySearchUndefined: Self = StObject.set(x, "fuzzySearch", js.undefined)
+      inline def setFuzzySearchUndefined: Self = StObject.set(x, "fuzzySearch", js.undefined)
       
-      @scala.inline
-      def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+      inline def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIUndefined: Self = StObject.set(x, "i", js.undefined)
+      inline def setIUndefined: Self = StObject.set(x, "i", js.undefined)
       
-      @scala.inline
-      def setIndexAsync(value: Boolean): Self = StObject.set(x, "indexAsync", value.asInstanceOf[js.Any])
+      inline def setIndexAsync(value: Boolean): Self = StObject.set(x, "indexAsync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexAsyncUndefined: Self = StObject.set(x, "indexAsync", js.undefined)
+      inline def setIndexAsyncUndefined: Self = StObject.set(x, "indexAsync", js.undefined)
       
-      @scala.inline
-      def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
       
-      @scala.inline
-      def setListClass(value: String): Self = StObject.set(x, "listClass", value.asInstanceOf[js.Any])
+      inline def setListClass(value: String): Self = StObject.set(x, "listClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListClassUndefined: Self = StObject.set(x, "listClass", js.undefined)
+      inline def setListClassUndefined: Self = StObject.set(x, "listClass", js.undefined)
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      @scala.inline
-      def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+      inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
-      @scala.inline
-      def setSearchClass(value: String): Self = StObject.set(x, "searchClass", value.asInstanceOf[js.Any])
+      inline def setSearchClass(value: String): Self = StObject.set(x, "searchClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchClassUndefined: Self = StObject.set(x, "searchClass", js.undefined)
+      inline def setSearchClassUndefined: Self = StObject.set(x, "searchClass", js.undefined)
       
-      @scala.inline
-      def setSortClass(value: String): Self = StObject.set(x, "sortClass", value.asInstanceOf[js.Any])
+      inline def setSortClass(value: String): Self = StObject.set(x, "sortClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortClassUndefined: Self = StObject.set(x, "sortClass", js.undefined)
+      inline def setSortClassUndefined: Self = StObject.set(x, "sortClass", js.undefined)
       
-      @scala.inline
-      def setValueNames(value: js.Array[String]): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
+      inline def setValueNames(value: js.Array[String]): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNamesUndefined: Self = StObject.set(x, "valueNames", js.undefined)
+      inline def setValueNamesUndefined: Self = StObject.set(x, "valueNames", js.undefined)
       
-      @scala.inline
-      def setValueNamesVarargs(value: String*): Self = StObject.set(x, "valueNames", js.Array(value :_*))
+      inline def setValueNamesVarargs(value: String*): Self = StObject.set(x, "valueNames", js.Array(value :_*))
     }
   }
   
@@ -288,38 +246,28 @@ object mod {
   }
   object SortOptions {
     
-    @scala.inline
-    def apply(): SortOptions = {
+    inline def apply(): SortOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SortOptions]
     }
     
-    @scala.inline
-    implicit class SortOptionsMutableBuilder[Self <: SortOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SortOptions](x: Self) {
       
-      @scala.inline
-      def setAlphabet(value: String): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
+      inline def setAlphabet(value: String): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphabetUndefined: Self = StObject.set(x, "alphabet", js.undefined)
+      inline def setAlphabetUndefined: Self = StObject.set(x, "alphabet", js.undefined)
       
-      @scala.inline
-      def setInsensitive(value: Boolean): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
+      inline def setInsensitive(value: Boolean): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
+      inline def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
       
-      @scala.inline
-      def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setSortFunction(value: (/* a */ js.Object, /* b */ js.Object) => js.UndefOr[Double]): Self = StObject.set(x, "sortFunction", js.Any.fromFunction2(value))
+      inline def setSortFunction(value: (/* a */ js.Object, /* b */ js.Object) => js.UndefOr[Double]): Self = StObject.set(x, "sortFunction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSortFunctionUndefined: Self = StObject.set(x, "sortFunction", js.undefined)
+      inline def setSortFunctionUndefined: Self = StObject.set(x, "sortFunction", js.undefined)
     }
   }
 }

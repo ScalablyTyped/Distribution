@@ -13,19 +13,15 @@ trait UserRecord extends StObject {
 }
 object UserRecord {
   
-  @scala.inline
-  def apply(Passwords: SafeArray[String], UserName: String): UserRecord = {
+  inline def apply(Passwords: SafeArray[String], UserName: String): UserRecord = {
     val __obj = js.Dynamic.literal(Passwords = Passwords.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserRecord]
   }
   
-  @scala.inline
-  implicit class UserRecordMutableBuilder[Self <: UserRecord] (val x: Self) extends AnyVal {
+  extension [Self <: UserRecord](x: Self) {
     
-    @scala.inline
-    def setPasswords(value: SafeArray[String]): Self = StObject.set(x, "Passwords", value.asInstanceOf[js.Any])
+    inline def setPasswords(value: SafeArray[String]): Self = StObject.set(x, "Passwords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

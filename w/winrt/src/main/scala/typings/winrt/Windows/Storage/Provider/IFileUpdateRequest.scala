@@ -20,8 +20,7 @@ trait IFileUpdateRequest extends StObject {
 }
 object IFileUpdateRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentId: String,
     file: StorageFile,
     getDeferral: () => FileUpdateRequestDeferral,
@@ -32,22 +31,16 @@ object IFileUpdateRequest {
     __obj.asInstanceOf[IFileUpdateRequest]
   }
   
-  @scala.inline
-  implicit class IFileUpdateRequestMutableBuilder[Self <: IFileUpdateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IFileUpdateRequest](x: Self) {
     
-    @scala.inline
-    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+    inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDeferral(value: () => FileUpdateRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => FileUpdateRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStatus(value: FileUpdateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FileUpdateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateLocalFile(value: IStorageFile => Unit): Self = StObject.set(x, "updateLocalFile", js.Any.fromFunction1(value))
+    inline def setUpdateLocalFile(value: IStorageFile => Unit): Self = StObject.set(x, "updateLocalFile", js.Any.fromFunction1(value))
   }
 }

@@ -44,20 +44,16 @@ object photoswipeUiDefaultMod {
   }
   object Item {
     
-    @scala.inline
-    def apply(): Item = {
+    inline def apply(): Item = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -293,158 +289,108 @@ object photoswipeUiDefaultMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAddCaptionHTMLFn(value: (/* item */ Item, /* captionEl */ HTMLElement, /* isFake */ Boolean) => Boolean): Self = StObject.set(x, "addCaptionHTMLFn", js.Any.fromFunction3(value))
+      inline def setAddCaptionHTMLFn(value: (/* item */ Item, /* captionEl */ HTMLElement, /* isFake */ Boolean) => Boolean): Self = StObject.set(x, "addCaptionHTMLFn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAddCaptionHTMLFnUndefined: Self = StObject.set(x, "addCaptionHTMLFn", js.undefined)
+      inline def setAddCaptionHTMLFnUndefined: Self = StObject.set(x, "addCaptionHTMLFn", js.undefined)
       
-      @scala.inline
-      def setArrowEl(value: Boolean): Self = StObject.set(x, "arrowEl", value.asInstanceOf[js.Any])
+      inline def setArrowEl(value: Boolean): Self = StObject.set(x, "arrowEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrowElUndefined: Self = StObject.set(x, "arrowEl", js.undefined)
+      inline def setArrowElUndefined: Self = StObject.set(x, "arrowEl", js.undefined)
       
-      @scala.inline
-      def setBarsSize(value: Bottom): Self = StObject.set(x, "barsSize", value.asInstanceOf[js.Any])
+      inline def setBarsSize(value: Bottom): Self = StObject.set(x, "barsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarsSizeUndefined: Self = StObject.set(x, "barsSize", js.undefined)
+      inline def setBarsSizeUndefined: Self = StObject.set(x, "barsSize", js.undefined)
       
-      @scala.inline
-      def setCaptionEl(value: Boolean): Self = StObject.set(x, "captionEl", value.asInstanceOf[js.Any])
+      inline def setCaptionEl(value: Boolean): Self = StObject.set(x, "captionEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionElUndefined: Self = StObject.set(x, "captionEl", js.undefined)
+      inline def setCaptionElUndefined: Self = StObject.set(x, "captionEl", js.undefined)
       
-      @scala.inline
-      def setClickToCloseNonZoomable(value: Boolean): Self = StObject.set(x, "clickToCloseNonZoomable", value.asInstanceOf[js.Any])
+      inline def setClickToCloseNonZoomable(value: Boolean): Self = StObject.set(x, "clickToCloseNonZoomable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickToCloseNonZoomableUndefined: Self = StObject.set(x, "clickToCloseNonZoomable", js.undefined)
+      inline def setClickToCloseNonZoomableUndefined: Self = StObject.set(x, "clickToCloseNonZoomable", js.undefined)
       
-      @scala.inline
-      def setCloseEl(value: Boolean): Self = StObject.set(x, "closeEl", value.asInstanceOf[js.Any])
+      inline def setCloseEl(value: Boolean): Self = StObject.set(x, "closeEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseElClasses(value: js.Array[String]): Self = StObject.set(x, "closeElClasses", value.asInstanceOf[js.Any])
+      inline def setCloseElClasses(value: js.Array[String]): Self = StObject.set(x, "closeElClasses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseElClassesUndefined: Self = StObject.set(x, "closeElClasses", js.undefined)
+      inline def setCloseElClassesUndefined: Self = StObject.set(x, "closeElClasses", js.undefined)
       
-      @scala.inline
-      def setCloseElClassesVarargs(value: String*): Self = StObject.set(x, "closeElClasses", js.Array(value :_*))
+      inline def setCloseElClassesVarargs(value: String*): Self = StObject.set(x, "closeElClasses", js.Array(value :_*))
       
-      @scala.inline
-      def setCloseElUndefined: Self = StObject.set(x, "closeEl", js.undefined)
+      inline def setCloseElUndefined: Self = StObject.set(x, "closeEl", js.undefined)
       
-      @scala.inline
-      def setCounterEl(value: Boolean): Self = StObject.set(x, "counterEl", value.asInstanceOf[js.Any])
+      inline def setCounterEl(value: Boolean): Self = StObject.set(x, "counterEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterElUndefined: Self = StObject.set(x, "counterEl", js.undefined)
+      inline def setCounterElUndefined: Self = StObject.set(x, "counterEl", js.undefined)
       
-      @scala.inline
-      def setFullscreenEl(value: Boolean): Self = StObject.set(x, "fullscreenEl", value.asInstanceOf[js.Any])
+      inline def setFullscreenEl(value: Boolean): Self = StObject.set(x, "fullscreenEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullscreenElUndefined: Self = StObject.set(x, "fullscreenEl", js.undefined)
+      inline def setFullscreenElUndefined: Self = StObject.set(x, "fullscreenEl", js.undefined)
       
-      @scala.inline
-      def setGetImageURLForShare(value: /* shareButtonData */ ShareButtonData => String): Self = StObject.set(x, "getImageURLForShare", js.Any.fromFunction1(value))
+      inline def setGetImageURLForShare(value: /* shareButtonData */ ShareButtonData => String): Self = StObject.set(x, "getImageURLForShare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetImageURLForShareUndefined: Self = StObject.set(x, "getImageURLForShare", js.undefined)
+      inline def setGetImageURLForShareUndefined: Self = StObject.set(x, "getImageURLForShare", js.undefined)
       
-      @scala.inline
-      def setGetPageURLForShare(value: /* shareButtonData */ ShareButtonData => String): Self = StObject.set(x, "getPageURLForShare", js.Any.fromFunction1(value))
+      inline def setGetPageURLForShare(value: /* shareButtonData */ ShareButtonData => String): Self = StObject.set(x, "getPageURLForShare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageURLForShareUndefined: Self = StObject.set(x, "getPageURLForShare", js.undefined)
+      inline def setGetPageURLForShareUndefined: Self = StObject.set(x, "getPageURLForShare", js.undefined)
       
-      @scala.inline
-      def setGetTextForShare(value: /* shareButtonData */ ShareButtonData => String): Self = StObject.set(x, "getTextForShare", js.Any.fromFunction1(value))
+      inline def setGetTextForShare(value: /* shareButtonData */ ShareButtonData => String): Self = StObject.set(x, "getTextForShare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTextForShareUndefined: Self = StObject.set(x, "getTextForShare", js.undefined)
+      inline def setGetTextForShareUndefined: Self = StObject.set(x, "getTextForShare", js.undefined)
       
-      @scala.inline
-      def setIndexIndicatorSep(value: String): Self = StObject.set(x, "indexIndicatorSep", value.asInstanceOf[js.Any])
+      inline def setIndexIndicatorSep(value: String): Self = StObject.set(x, "indexIndicatorSep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexIndicatorSepUndefined: Self = StObject.set(x, "indexIndicatorSep", js.undefined)
+      inline def setIndexIndicatorSepUndefined: Self = StObject.set(x, "indexIndicatorSep", js.undefined)
       
-      @scala.inline
-      def setLoadingIndicatorDelay(value: Double): Self = StObject.set(x, "loadingIndicatorDelay", value.asInstanceOf[js.Any])
+      inline def setLoadingIndicatorDelay(value: Double): Self = StObject.set(x, "loadingIndicatorDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingIndicatorDelayUndefined: Self = StObject.set(x, "loadingIndicatorDelay", js.undefined)
+      inline def setLoadingIndicatorDelayUndefined: Self = StObject.set(x, "loadingIndicatorDelay", js.undefined)
       
-      @scala.inline
-      def setParseShareButtonOut(value: (/* shareButtonData */ ShareButtonData, /* shareButtonOut */ String) => String): Self = StObject.set(x, "parseShareButtonOut", js.Any.fromFunction2(value))
+      inline def setParseShareButtonOut(value: (/* shareButtonData */ ShareButtonData, /* shareButtonOut */ String) => String): Self = StObject.set(x, "parseShareButtonOut", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParseShareButtonOutUndefined: Self = StObject.set(x, "parseShareButtonOut", js.undefined)
+      inline def setParseShareButtonOutUndefined: Self = StObject.set(x, "parseShareButtonOut", js.undefined)
       
-      @scala.inline
-      def setPreloaderEl(value: Boolean): Self = StObject.set(x, "preloaderEl", value.asInstanceOf[js.Any])
+      inline def setPreloaderEl(value: Boolean): Self = StObject.set(x, "preloaderEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloaderElUndefined: Self = StObject.set(x, "preloaderEl", js.undefined)
+      inline def setPreloaderElUndefined: Self = StObject.set(x, "preloaderEl", js.undefined)
       
-      @scala.inline
-      def setShareButtons(value: js.Array[ShareButtonData]): Self = StObject.set(x, "shareButtons", value.asInstanceOf[js.Any])
+      inline def setShareButtons(value: js.Array[ShareButtonData]): Self = StObject.set(x, "shareButtons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareButtonsUndefined: Self = StObject.set(x, "shareButtons", js.undefined)
+      inline def setShareButtonsUndefined: Self = StObject.set(x, "shareButtons", js.undefined)
       
-      @scala.inline
-      def setShareButtonsVarargs(value: ShareButtonData*): Self = StObject.set(x, "shareButtons", js.Array(value :_*))
+      inline def setShareButtonsVarargs(value: ShareButtonData*): Self = StObject.set(x, "shareButtons", js.Array(value :_*))
       
-      @scala.inline
-      def setShareEl(value: Boolean): Self = StObject.set(x, "shareEl", value.asInstanceOf[js.Any])
+      inline def setShareEl(value: Boolean): Self = StObject.set(x, "shareEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShareElUndefined: Self = StObject.set(x, "shareEl", js.undefined)
+      inline def setShareElUndefined: Self = StObject.set(x, "shareEl", js.undefined)
       
-      @scala.inline
-      def setTapToClose(value: Boolean): Self = StObject.set(x, "tapToClose", value.asInstanceOf[js.Any])
+      inline def setTapToClose(value: Boolean): Self = StObject.set(x, "tapToClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTapToCloseUndefined: Self = StObject.set(x, "tapToClose", js.undefined)
+      inline def setTapToCloseUndefined: Self = StObject.set(x, "tapToClose", js.undefined)
       
-      @scala.inline
-      def setTapToToggleControls(value: Boolean): Self = StObject.set(x, "tapToToggleControls", value.asInstanceOf[js.Any])
+      inline def setTapToToggleControls(value: Boolean): Self = StObject.set(x, "tapToToggleControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTapToToggleControlsUndefined: Self = StObject.set(x, "tapToToggleControls", js.undefined)
+      inline def setTapToToggleControlsUndefined: Self = StObject.set(x, "tapToToggleControls", js.undefined)
       
-      @scala.inline
-      def setTimeToIdle(value: Double): Self = StObject.set(x, "timeToIdle", value.asInstanceOf[js.Any])
+      inline def setTimeToIdle(value: Double): Self = StObject.set(x, "timeToIdle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToIdleOutside(value: Double): Self = StObject.set(x, "timeToIdleOutside", value.asInstanceOf[js.Any])
+      inline def setTimeToIdleOutside(value: Double): Self = StObject.set(x, "timeToIdleOutside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeToIdleOutsideUndefined: Self = StObject.set(x, "timeToIdleOutside", js.undefined)
+      inline def setTimeToIdleOutsideUndefined: Self = StObject.set(x, "timeToIdleOutside", js.undefined)
       
-      @scala.inline
-      def setTimeToIdleUndefined: Self = StObject.set(x, "timeToIdle", js.undefined)
+      inline def setTimeToIdleUndefined: Self = StObject.set(x, "timeToIdle", js.undefined)
       
-      @scala.inline
-      def setZoomEl(value: Boolean): Self = StObject.set(x, "zoomEl", value.asInstanceOf[js.Any])
+      inline def setZoomEl(value: Boolean): Self = StObject.set(x, "zoomEl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomElUndefined: Self = StObject.set(x, "zoomEl", js.undefined)
+      inline def setZoomElUndefined: Self = StObject.set(x, "zoomEl", js.undefined)
     }
   }
   
@@ -462,17 +408,14 @@ object photoswipeUiDefaultMod {
   }
   object PhotoSwipeUIDefault {
     
-    @scala.inline
-    def apply(init: () => Unit, update: () => Unit): PhotoSwipeUIDefault = {
+    inline def apply(init: () => Unit, update: () => Unit): PhotoSwipeUIDefault = {
       val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), update = js.Any.fromFunction0(update))
       __obj.asInstanceOf[PhotoSwipeUIDefault]
     }
     
-    @scala.inline
-    implicit class PhotoSwipeUIDefaultMutableBuilder[Self <: PhotoSwipeUIDefault] (val x: Self) extends AnyVal {
+    extension [Self <: PhotoSwipeUIDefault](x: Self) {
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -510,29 +453,22 @@ object photoswipeUiDefaultMod {
   }
   object ShareButtonData {
     
-    @scala.inline
-    def apply(id: String, label: String, url: String): ShareButtonData = {
+    inline def apply(id: String, label: String, url: String): ShareButtonData = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShareButtonData]
     }
     
-    @scala.inline
-    implicit class ShareButtonDataMutableBuilder[Self <: ShareButtonData] (val x: Self) extends AnyVal {
+    extension [Self <: ShareButtonData](x: Self) {
       
-      @scala.inline
-      def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+      inline def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+      inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTTPMethods extends StObject
 object HTTPMethods {
   
-  @scala.inline
-  def DELETE: typings.aliOss.aliOssStrings.DELETE = "DELETE".asInstanceOf[typings.aliOss.aliOssStrings.DELETE]
+  inline def DELETE: typings.aliOss.aliOssStrings.DELETE = "DELETE".asInstanceOf[typings.aliOss.aliOssStrings.DELETE]
   
-  @scala.inline
-  def GET: typings.aliOss.aliOssStrings.GET = "GET".asInstanceOf[typings.aliOss.aliOssStrings.GET]
+  inline def GET: typings.aliOss.aliOssStrings.GET = "GET".asInstanceOf[typings.aliOss.aliOssStrings.GET]
   
-  @scala.inline
-  def POST: typings.aliOss.aliOssStrings.POST = "POST".asInstanceOf[typings.aliOss.aliOssStrings.POST]
+  inline def POST: typings.aliOss.aliOssStrings.POST = "POST".asInstanceOf[typings.aliOss.aliOssStrings.POST]
   
-  @scala.inline
-  def PUT: typings.aliOss.aliOssStrings.PUT = "PUT".asInstanceOf[typings.aliOss.aliOssStrings.PUT]
+  inline def PUT: typings.aliOss.aliOssStrings.PUT = "PUT".asInstanceOf[typings.aliOss.aliOssStrings.PUT]
 }

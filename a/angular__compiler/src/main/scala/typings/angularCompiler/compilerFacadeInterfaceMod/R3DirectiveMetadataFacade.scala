@@ -42,8 +42,7 @@ trait R3DirectiveMetadataFacade extends StObject {
 }
 object R3DirectiveMetadataFacade {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     host: StringDictionary[String],
     inputs: js.Array[String],
     lifecycle: UsesOnChanges,
@@ -62,88 +61,60 @@ object R3DirectiveMetadataFacade {
     __obj.asInstanceOf[R3DirectiveMetadataFacade]
   }
   
-  @scala.inline
-  implicit class R3DirectiveMetadataFacadeMutableBuilder[Self <: R3DirectiveMetadataFacade] (val x: Self) extends AnyVal {
+  extension [Self <: R3DirectiveMetadataFacade](x: Self) {
     
-    @scala.inline
-    def setDeps(value: js.Array[R3DependencyMetadataFacade]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[R3DependencyMetadataFacade]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsNull: Self = StObject.set(x, "deps", null)
+    inline def setDepsNull: Self = StObject.set(x, "deps", null)
     
-    @scala.inline
-    def setDepsVarargs(value: R3DependencyMetadataFacade*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: R3DependencyMetadataFacade*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
+    inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportAsNull: Self = StObject.set(x, "exportAs", null)
+    inline def setExportAsNull: Self = StObject.set(x, "exportAs", null)
     
-    @scala.inline
-    def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
+    inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
     
-    @scala.inline
-    def setHost(value: StringDictionary[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: StringDictionary[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: String*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setLifecycle(value: UsesOnChanges): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: UsesOnChanges): Self = StObject.set(x, "lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: js.Array[String]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: String*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
-    @scala.inline
-    def setPropMetadata(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "propMetadata", value.asInstanceOf[js.Any])
+    inline def setPropMetadata(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "propMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersNull: Self = StObject.set(x, "providers", null)
+    inline def setProvidersNull: Self = StObject.set(x, "providers", null)
     
-    @scala.inline
-    def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
-    @scala.inline
-    def setQueries(value: js.Array[R3QueryMetadataFacade]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[R3QueryMetadataFacade]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesVarargs(value: R3QueryMetadataFacade*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: R3QueryMetadataFacade*): Self = StObject.set(x, "queries", js.Array(value :_*))
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorNull: Self = StObject.set(x, "selector", null)
+    inline def setSelectorNull: Self = StObject.set(x, "selector", null)
     
-    @scala.inline
-    def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
+    inline def setTypeArgumentCount(value: Double): Self = StObject.set(x, "typeArgumentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "typeSourceSpan", value.asInstanceOf[js.Any])
+    inline def setTypeSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "typeSourceSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsesInheritance(value: Boolean): Self = StObject.set(x, "usesInheritance", value.asInstanceOf[js.Any])
+    inline def setUsesInheritance(value: Boolean): Self = StObject.set(x, "usesInheritance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewQueries(value: js.Array[R3QueryMetadataFacade]): Self = StObject.set(x, "viewQueries", value.asInstanceOf[js.Any])
+    inline def setViewQueries(value: js.Array[R3QueryMetadataFacade]): Self = StObject.set(x, "viewQueries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewQueriesVarargs(value: R3QueryMetadataFacade*): Self = StObject.set(x, "viewQueries", js.Array(value :_*))
+    inline def setViewQueriesVarargs(value: R3QueryMetadataFacade*): Self = StObject.set(x, "viewQueries", js.Array(value :_*))
   }
 }

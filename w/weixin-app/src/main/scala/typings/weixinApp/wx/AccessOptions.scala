@@ -13,16 +13,13 @@ trait AccessOptions
 }
 object AccessOptions {
   
-  @scala.inline
-  def apply(path: String): AccessOptions = {
+  inline def apply(path: String): AccessOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessOptions]
   }
   
-  @scala.inline
-  implicit class AccessOptionsMutableBuilder[Self <: AccessOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccessOptions](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

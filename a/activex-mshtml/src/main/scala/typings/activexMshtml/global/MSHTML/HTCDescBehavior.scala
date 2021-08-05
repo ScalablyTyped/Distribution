@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTCDescBehavior")
 @js.native
-class HTCDescBehavior protected ()
+/* private */ class HTCDescBehavior ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTCDescBehavior {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTCDescBehavior_typekey")
   var MSHTMLDotHTCDescBehavior_typekey: typings.activexMshtml.MSHTML.HTCDescBehavior = js.native
   

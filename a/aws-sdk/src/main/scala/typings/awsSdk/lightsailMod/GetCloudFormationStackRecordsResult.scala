@@ -18,28 +18,21 @@ trait GetCloudFormationStackRecordsResult extends StObject {
 }
 object GetCloudFormationStackRecordsResult {
   
-  @scala.inline
-  def apply(): GetCloudFormationStackRecordsResult = {
+  inline def apply(): GetCloudFormationStackRecordsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCloudFormationStackRecordsResult]
   }
   
-  @scala.inline
-  implicit class GetCloudFormationStackRecordsResultMutableBuilder[Self <: GetCloudFormationStackRecordsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetCloudFormationStackRecordsResult](x: Self) {
     
-    @scala.inline
-    def setCloudFormationStackRecords(value: CloudFormationStackRecordList): Self = StObject.set(x, "cloudFormationStackRecords", value.asInstanceOf[js.Any])
+    inline def setCloudFormationStackRecords(value: CloudFormationStackRecordList): Self = StObject.set(x, "cloudFormationStackRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudFormationStackRecordsUndefined: Self = StObject.set(x, "cloudFormationStackRecords", js.undefined)
+    inline def setCloudFormationStackRecordsUndefined: Self = StObject.set(x, "cloudFormationStackRecords", js.undefined)
     
-    @scala.inline
-    def setCloudFormationStackRecordsVarargs(value: CloudFormationStackRecord*): Self = StObject.set(x, "cloudFormationStackRecords", js.Array(value :_*))
+    inline def setCloudFormationStackRecordsVarargs(value: CloudFormationStackRecord*): Self = StObject.set(x, "cloudFormationStackRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

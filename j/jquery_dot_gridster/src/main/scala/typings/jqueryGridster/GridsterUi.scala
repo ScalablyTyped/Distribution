@@ -11,16 +11,13 @@ trait GridsterUi extends StObject {
 }
 object GridsterUi {
   
-  @scala.inline
-  def apply(position: Left): GridsterUi = {
+  inline def apply(position: Left): GridsterUi = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridsterUi]
   }
   
-  @scala.inline
-  implicit class GridsterUiMutableBuilder[Self <: GridsterUi] (val x: Self) extends AnyVal {
+  extension [Self <: GridsterUi](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

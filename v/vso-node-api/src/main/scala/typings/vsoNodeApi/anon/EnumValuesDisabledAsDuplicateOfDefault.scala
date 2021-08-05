@@ -10,16 +10,13 @@ trait EnumValuesDisabledAsDuplicateOfDefault extends StObject {
 }
 object EnumValuesDisabledAsDuplicateOfDefault {
   
-  @scala.inline
-  def apply(enumValues: DisabledAsDuplicateOfDefault): EnumValuesDisabledAsDuplicateOfDefault = {
+  inline def apply(enumValues: DisabledAsDuplicateOfDefault): EnumValuesDisabledAsDuplicateOfDefault = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesDisabledAsDuplicateOfDefault]
   }
   
-  @scala.inline
-  implicit class EnumValuesDisabledAsDuplicateOfDefaultMutableBuilder[Self <: EnumValuesDisabledAsDuplicateOfDefault] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesDisabledAsDuplicateOfDefault](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: DisabledAsDuplicateOfDefault): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: DisabledAsDuplicateOfDefault): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

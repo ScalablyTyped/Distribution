@@ -13,19 +13,15 @@ trait GetSelectionTextSuccessCallbackResult extends StObject {
 }
 object GetSelectionTextSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, text: String): GetSelectionTextSuccessCallbackResult = {
+  inline def apply(errMsg: String, text: String): GetSelectionTextSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSelectionTextSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetSelectionTextSuccessCallbackResultMutableBuilder[Self <: GetSelectionTextSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSelectionTextSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

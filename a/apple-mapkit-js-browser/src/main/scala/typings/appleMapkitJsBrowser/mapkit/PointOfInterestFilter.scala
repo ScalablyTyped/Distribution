@@ -21,8 +21,7 @@ trait PointOfInterestFilter extends StObject {
 }
 object PointOfInterestFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     excludesCategory: PointOfInterestCategory => Boolean,
     includesCategory: PointOfInterestCategory => Boolean
   ): PointOfInterestFilter = {
@@ -30,13 +29,10 @@ object PointOfInterestFilter {
     __obj.asInstanceOf[PointOfInterestFilter]
   }
   
-  @scala.inline
-  implicit class PointOfInterestFilterMutableBuilder[Self <: PointOfInterestFilter] (val x: Self) extends AnyVal {
+  extension [Self <: PointOfInterestFilter](x: Self) {
     
-    @scala.inline
-    def setExcludesCategory(value: PointOfInterestCategory => Boolean): Self = StObject.set(x, "excludesCategory", js.Any.fromFunction1(value))
+    inline def setExcludesCategory(value: PointOfInterestCategory => Boolean): Self = StObject.set(x, "excludesCategory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIncludesCategory(value: PointOfInterestCategory => Boolean): Self = StObject.set(x, "includesCategory", js.Any.fromFunction1(value))
+    inline def setIncludesCategory(value: PointOfInterestCategory => Boolean): Self = StObject.set(x, "includesCategory", js.Any.fromFunction1(value))
   }
 }

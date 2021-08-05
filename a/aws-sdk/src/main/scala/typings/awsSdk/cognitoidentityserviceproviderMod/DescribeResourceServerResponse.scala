@@ -13,16 +13,13 @@ trait DescribeResourceServerResponse extends StObject {
 }
 object DescribeResourceServerResponse {
   
-  @scala.inline
-  def apply(ResourceServer: ResourceServerType): DescribeResourceServerResponse = {
+  inline def apply(ResourceServer: ResourceServerType): DescribeResourceServerResponse = {
     val __obj = js.Dynamic.literal(ResourceServer = ResourceServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeResourceServerResponse]
   }
   
-  @scala.inline
-  implicit class DescribeResourceServerResponseMutableBuilder[Self <: DescribeResourceServerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResourceServerResponse](x: Self) {
     
-    @scala.inline
-    def setResourceServer(value: ResourceServerType): Self = StObject.set(x, "ResourceServer", value.asInstanceOf[js.Any])
+    inline def setResourceServer(value: ResourceServerType): Self = StObject.set(x, "ResourceServer", value.asInstanceOf[js.Any])
   }
 }

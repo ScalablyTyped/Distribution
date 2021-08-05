@@ -10,19 +10,15 @@ trait LangStockToolsOptions extends StObject {
 }
 object LangStockToolsOptions {
   
-  @scala.inline
-  def apply(): LangStockToolsOptions = {
+  inline def apply(): LangStockToolsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangStockToolsOptions]
   }
   
-  @scala.inline
-  implicit class LangStockToolsOptionsMutableBuilder[Self <: LangStockToolsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangStockToolsOptions](x: Self) {
     
-    @scala.inline
-    def setGui(value: LangStockToolsGuiOptions): Self = StObject.set(x, "gui", value.asInstanceOf[js.Any])
+    inline def setGui(value: LangStockToolsGuiOptions): Self = StObject.set(x, "gui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuiUndefined: Self = StObject.set(x, "gui", js.undefined)
+    inline def setGuiUndefined: Self = StObject.set(x, "gui", js.undefined)
   }
 }

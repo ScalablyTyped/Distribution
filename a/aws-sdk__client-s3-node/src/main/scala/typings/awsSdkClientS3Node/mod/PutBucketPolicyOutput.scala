@@ -10,8 +10,7 @@ trait PutBucketPolicyOutput
      with typings.awsSdkClientS3Node.typesPutBucketPolicyOutputMod.PutBucketPolicyOutput
 object PutBucketPolicyOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): PutBucketPolicyOutput = {
+  inline def apply($metadata: ResponseMetadata): PutBucketPolicyOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketPolicyOutput]
   }

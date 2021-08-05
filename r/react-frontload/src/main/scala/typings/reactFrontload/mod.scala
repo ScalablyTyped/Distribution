@@ -26,15 +26,11 @@ object mod {
   @js.native
   val Frontload: ComponentClass[FrontloadProps, ComponentState] = js.native
   
-  @scala.inline
-  def frontloadConnect(frontload: js.Function1[/* props */ js.Any, js.Promise[Unit]]): js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("frontloadConnect")(frontload.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]]]
-  @scala.inline
-  def frontloadConnect(frontload: js.Function1[/* props */ js.Any, js.Promise[Unit]], options: FrontloadConnectOptions): js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("frontloadConnect")(frontload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]]]
+  inline def frontloadConnect(frontload: js.Function1[/* props */ js.Any, js.Promise[Unit]]): js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("frontloadConnect")(frontload.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]]]
+  inline def frontloadConnect(frontload: js.Function1[/* props */ js.Any, js.Promise[Unit]], options: FrontloadConnectOptions): js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]] = (^.asInstanceOf[js.Dynamic].applyDynamic("frontloadConnect")(frontload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* Component */ ComponentType[js.Object], ComponentType[js.Object]]]
   
-  @scala.inline
-  def frontloadServerRender(renderMarkup: js.Function1[/* dryRun */ js.UndefOr[Boolean], String]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("frontloadServerRender")(renderMarkup.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def frontloadServerRender(renderMarkup: js.Function1[/* dryRun */ js.UndefOr[Boolean], String], withLogging: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("frontloadServerRender")(renderMarkup.asInstanceOf[js.Any], withLogging.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def frontloadServerRender(renderMarkup: js.Function1[/* dryRun */ js.UndefOr[Boolean], String]): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("frontloadServerRender")(renderMarkup.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def frontloadServerRender(renderMarkup: js.Function1[/* dryRun */ js.UndefOr[Boolean], String], withLogging: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("frontloadServerRender")(renderMarkup.asInstanceOf[js.Any], withLogging.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   trait FrontloadConnectOptions extends StObject {
     
@@ -46,32 +42,24 @@ object mod {
   }
   object FrontloadConnectOptions {
     
-    @scala.inline
-    def apply(): FrontloadConnectOptions = {
+    inline def apply(): FrontloadConnectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FrontloadConnectOptions]
     }
     
-    @scala.inline
-    implicit class FrontloadConnectOptionsMutableBuilder[Self <: FrontloadConnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FrontloadConnectOptions](x: Self) {
       
-      @scala.inline
-      def setNoServerRender(value: Boolean): Self = StObject.set(x, "noServerRender", value.asInstanceOf[js.Any])
+      inline def setNoServerRender(value: Boolean): Self = StObject.set(x, "noServerRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoServerRenderUndefined: Self = StObject.set(x, "noServerRender", js.undefined)
+      inline def setNoServerRenderUndefined: Self = StObject.set(x, "noServerRender", js.undefined)
       
-      @scala.inline
-      def setOnMount(value: Boolean): Self = StObject.set(x, "onMount", value.asInstanceOf[js.Any])
+      inline def setOnMount(value: Boolean): Self = StObject.set(x, "onMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
+      inline def setOnMountUndefined: Self = StObject.set(x, "onMount", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: Boolean): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: Boolean): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
     }
   }
   
@@ -81,20 +69,16 @@ object mod {
   }
   object FrontloadProps {
     
-    @scala.inline
-    def apply(): FrontloadProps = {
+    inline def apply(): FrontloadProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FrontloadProps]
     }
     
-    @scala.inline
-    implicit class FrontloadPropsMutableBuilder[Self <: FrontloadProps] (val x: Self) extends AnyVal {
+    extension [Self <: FrontloadProps](x: Self) {
       
-      @scala.inline
-      def setNoServerRender(value: Boolean): Self = StObject.set(x, "noServerRender", value.asInstanceOf[js.Any])
+      inline def setNoServerRender(value: Boolean): Self = StObject.set(x, "noServerRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoServerRenderUndefined: Self = StObject.set(x, "noServerRender", js.undefined)
+      inline def setNoServerRenderUndefined: Self = StObject.set(x, "noServerRender", js.undefined)
     }
   }
 }

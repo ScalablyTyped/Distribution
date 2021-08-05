@@ -18,20 +18,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setJasmineHtmlReporter(value: JasmineHtmlReporterOptions): Self = StObject.set(x, "jasmineHtmlReporter", value.asInstanceOf[js.Any])
+      inline def setJasmineHtmlReporter(value: JasmineHtmlReporterOptions): Self = StObject.set(x, "jasmineHtmlReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJasmineHtmlReporterUndefined: Self = StObject.set(x, "jasmineHtmlReporter", js.undefined)
+      inline def setJasmineHtmlReporterUndefined: Self = StObject.set(x, "jasmineHtmlReporter", js.undefined)
     }
   }
   
@@ -47,26 +43,20 @@ object mod {
   }
   object JasmineHtmlReporterOptions {
     
-    @scala.inline
-    def apply(): JasmineHtmlReporterOptions = {
+    inline def apply(): JasmineHtmlReporterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JasmineHtmlReporterOptions]
     }
     
-    @scala.inline
-    implicit class JasmineHtmlReporterOptionsMutableBuilder[Self <: JasmineHtmlReporterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JasmineHtmlReporterOptions](x: Self) {
       
-      @scala.inline
-      def setSuppressAll(value: Boolean): Self = StObject.set(x, "suppressAll", value.asInstanceOf[js.Any])
+      inline def setSuppressAll(value: Boolean): Self = StObject.set(x, "suppressAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressAllUndefined: Self = StObject.set(x, "suppressAll", js.undefined)
+      inline def setSuppressAllUndefined: Self = StObject.set(x, "suppressAll", js.undefined)
       
-      @scala.inline
-      def setSuppressFailed(value: Boolean): Self = StObject.set(x, "suppressFailed", value.asInstanceOf[js.Any])
+      inline def setSuppressFailed(value: Boolean): Self = StObject.set(x, "suppressFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressFailedUndefined: Self = StObject.set(x, "suppressFailed", js.undefined)
+      inline def setSuppressFailedUndefined: Self = StObject.set(x, "suppressFailed", js.undefined)
     }
   }
 }

@@ -63,6 +63,5 @@ object ClientRequest {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getNextSequenceId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get_nextSequenceId")().asInstanceOf[Double]
+  inline def getNextSequenceId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get_nextSequenceId")().asInstanceOf[Double]
 }

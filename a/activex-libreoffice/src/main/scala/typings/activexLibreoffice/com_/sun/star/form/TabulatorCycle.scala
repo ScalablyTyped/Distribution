@@ -35,14 +35,11 @@ object TabulatorCycle {
     *
     * pressing the TAB key from the last control moves the focus to the first control in the tab order of the same record.
     */
-  @scala.inline
-  def CURRENT: `1` = 1.asInstanceOf[`1`]
+  inline def CURRENT: `1` = 1.asInstanceOf[`1`]
   
   /** pressing the TAB key from the last control of a form moves the focus to the first control of the next form in the tab order. */
-  @scala.inline
-  def PAGE: `2` = 2.asInstanceOf[`2`]
+  inline def PAGE: `2` = 2.asInstanceOf[`2`]
   
   /** pressing the TAB key from the last control moves the focus to the first control in the tab order of the next record. */
-  @scala.inline
-  def RECORDS: `0` = 0.asInstanceOf[`0`]
+  inline def RECORDS: `0` = 0.asInstanceOf[`0`]
 }

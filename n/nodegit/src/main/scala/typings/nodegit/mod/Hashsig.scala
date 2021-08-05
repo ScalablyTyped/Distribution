@@ -15,9 +15,7 @@ object Hashsig {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(buf: String, buflen: Double, opts: Double): js.Promise[typings.nodegit.hashSigMod.Hashsig] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(buf.asInstanceOf[js.Any], buflen.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.hashSigMod.Hashsig]]
+  inline def create(buf: String, buflen: Double, opts: Double): js.Promise[typings.nodegit.hashSigMod.Hashsig] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(buf.asInstanceOf[js.Any], buflen.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.hashSigMod.Hashsig]]
   
-  @scala.inline
-  def createFromFile(path: String, opts: Double): js.Promise[typings.nodegit.hashSigMod.Hashsig] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.hashSigMod.Hashsig]]
+  inline def createFromFile(path: String, opts: Double): js.Promise[typings.nodegit.hashSigMod.Hashsig] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodegit.hashSigMod.Hashsig]]
 }

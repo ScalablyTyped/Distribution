@@ -29,15 +29,11 @@ object registryMod {
   @js.native
   val REMOVE_TARGET: /* "dnd-core/REMOVE_TARGET" */ String = js.native
   
-  @scala.inline
-  def addSource(sourceId: String): Action[SourceIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("addSource")(sourceId.asInstanceOf[js.Any]).asInstanceOf[Action[SourceIdPayload]]
+  inline def addSource(sourceId: String): Action[SourceIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("addSource")(sourceId.asInstanceOf[js.Any]).asInstanceOf[Action[SourceIdPayload]]
   
-  @scala.inline
-  def addTarget(targetId: String): Action[TargetIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("addTarget")(targetId.asInstanceOf[js.Any]).asInstanceOf[Action[TargetIdPayload]]
+  inline def addTarget(targetId: String): Action[TargetIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("addTarget")(targetId.asInstanceOf[js.Any]).asInstanceOf[Action[TargetIdPayload]]
   
-  @scala.inline
-  def removeSource(sourceId: String): Action[SourceIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSource")(sourceId.asInstanceOf[js.Any]).asInstanceOf[Action[SourceIdPayload]]
+  inline def removeSource(sourceId: String): Action[SourceIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSource")(sourceId.asInstanceOf[js.Any]).asInstanceOf[Action[SourceIdPayload]]
   
-  @scala.inline
-  def removeTarget(targetId: String): Action[TargetIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTarget")(targetId.asInstanceOf[js.Any]).asInstanceOf[Action[TargetIdPayload]]
+  inline def removeTarget(targetId: String): Action[TargetIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTarget")(targetId.asInstanceOf[js.Any]).asInstanceOf[Action[TargetIdPayload]]
 }

@@ -14,22 +14,17 @@ trait ClipboardContent extends StObject {
 }
 object ClipboardContent {
   
-  @scala.inline
-  def apply(Cancel: Boolean, ClipboardContent: js.Any, Target: typings.activexOutlook.Outlook.Folder): ClipboardContent = {
+  inline def apply(Cancel: Boolean, ClipboardContent: js.Any, Target: typings.activexOutlook.Outlook.Folder): ClipboardContent = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], ClipboardContent = ClipboardContent.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipboardContent]
   }
   
-  @scala.inline
-  implicit class ClipboardContentMutableBuilder[Self <: ClipboardContent] (val x: Self) extends AnyVal {
+  extension [Self <: ClipboardContent](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipboardContent(value: js.Any): Self = StObject.set(x, "ClipboardContent", value.asInstanceOf[js.Any])
+    inline def setClipboardContent(value: js.Any): Self = StObject.set(x, "ClipboardContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

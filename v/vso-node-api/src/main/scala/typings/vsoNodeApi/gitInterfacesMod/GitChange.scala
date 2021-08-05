@@ -25,8 +25,7 @@ trait GitChange
 }
 object GitChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeId: Double,
     changeType: VersionControlChangeType,
     item: GitItem,
@@ -40,16 +39,12 @@ object GitChange {
     __obj.asInstanceOf[GitChange]
   }
   
-  @scala.inline
-  implicit class GitChangeMutableBuilder[Self <: GitChange] (val x: Self) extends AnyVal {
+  extension [Self <: GitChange](x: Self) {
     
-    @scala.inline
-    def setChangeId(value: Double): Self = StObject.set(x, "changeId", value.asInstanceOf[js.Any])
+    inline def setChangeId(value: Double): Self = StObject.set(x, "changeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewContentTemplate(value: GitTemplate): Self = StObject.set(x, "newContentTemplate", value.asInstanceOf[js.Any])
+    inline def setNewContentTemplate(value: GitTemplate): Self = StObject.set(x, "newContentTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPath(value: String): Self = StObject.set(x, "originalPath", value.asInstanceOf[js.Any])
+    inline def setOriginalPath(value: String): Self = StObject.set(x, "originalPath", value.asInstanceOf[js.Any])
   }
 }

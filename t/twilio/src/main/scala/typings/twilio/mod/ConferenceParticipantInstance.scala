@@ -17,16 +17,13 @@ trait ConferenceParticipantInstance
 }
 object ConferenceParticipantInstance {
   
-  @scala.inline
-  def apply(delete: RestMethod, get: RestMethod, kick: RestMethod, post: RestMethod, update: RestMethod): ConferenceParticipantInstance = {
+  inline def apply(delete: RestMethod, get: RestMethod, kick: RestMethod, post: RestMethod, update: RestMethod): ConferenceParticipantInstance = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], kick = kick.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConferenceParticipantInstance]
   }
   
-  @scala.inline
-  implicit class ConferenceParticipantInstanceMutableBuilder[Self <: ConferenceParticipantInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ConferenceParticipantInstance](x: Self) {
     
-    @scala.inline
-    def setKick(value: RestMethod): Self = StObject.set(x, "kick", value.asInstanceOf[js.Any])
+    inline def setKick(value: RestMethod): Self = StObject.set(x, "kick", value.asInstanceOf[js.Any])
   }
 }

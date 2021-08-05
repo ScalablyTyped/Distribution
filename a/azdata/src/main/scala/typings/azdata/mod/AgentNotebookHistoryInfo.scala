@@ -20,8 +20,7 @@ trait AgentNotebookHistoryInfo
 }
 object AgentNotebookHistoryInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     instanceId: Double,
     jobId: String,
     jobName: String,
@@ -49,22 +48,16 @@ object AgentNotebookHistoryInfo {
     __obj.asInstanceOf[AgentNotebookHistoryInfo]
   }
   
-  @scala.inline
-  implicit class AgentNotebookHistoryInfoMutableBuilder[Self <: AgentNotebookHistoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AgentNotebookHistoryInfo](x: Self) {
     
-    @scala.inline
-    def setMaterializedNotebookDeleted(value: Boolean): Self = StObject.set(x, "materializedNotebookDeleted", value.asInstanceOf[js.Any])
+    inline def setMaterializedNotebookDeleted(value: Boolean): Self = StObject.set(x, "materializedNotebookDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterializedNotebookErrorInfo(value: String): Self = StObject.set(x, "materializedNotebookErrorInfo", value.asInstanceOf[js.Any])
+    inline def setMaterializedNotebookErrorInfo(value: String): Self = StObject.set(x, "materializedNotebookErrorInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterializedNotebookId(value: Double): Self = StObject.set(x, "materializedNotebookId", value.asInstanceOf[js.Any])
+    inline def setMaterializedNotebookId(value: Double): Self = StObject.set(x, "materializedNotebookId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterializedNotebookName(value: String): Self = StObject.set(x, "materializedNotebookName", value.asInstanceOf[js.Any])
+    inline def setMaterializedNotebookName(value: String): Self = StObject.set(x, "materializedNotebookName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterializedNotebookPin(value: Boolean): Self = StObject.set(x, "materializedNotebookPin", value.asInstanceOf[js.Any])
+    inline def setMaterializedNotebookPin(value: Boolean): Self = StObject.set(x, "materializedNotebookPin", value.asInstanceOf[js.Any])
   }
 }

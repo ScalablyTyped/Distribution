@@ -18,31 +18,23 @@ trait SDKError extends StObject {
 }
 object SDKError {
   
-  @scala.inline
-  def apply(httpStatusCode: Double, message: String, response: PayPalError, stack: String): SDKError = {
+  inline def apply(httpStatusCode: Double, message: String, response: PayPalError, stack: String): SDKError = {
     val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDKError]
   }
   
-  @scala.inline
-  implicit class SDKErrorMutableBuilder[Self <: SDKError] (val x: Self) extends AnyVal {
+  extension [Self <: SDKError](x: Self) {
     
-    @scala.inline
-    def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
+    inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: PayPalError): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: PayPalError): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_stringified(value: String): Self = StObject.set(x, "response_stringified", value.asInstanceOf[js.Any])
+    inline def setResponse_stringified(value: String): Self = StObject.set(x, "response_stringified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_stringifiedUndefined: Self = StObject.set(x, "response_stringified", js.undefined)
+    inline def setResponse_stringifiedUndefined: Self = StObject.set(x, "response_stringified", js.undefined)
     
-    @scala.inline
-    def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
   }
 }

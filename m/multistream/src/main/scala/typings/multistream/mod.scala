@@ -9,15 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(streams: Streams): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def apply(streams: Streams): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(streams.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
   @JSImport("multistream", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def obj(streams: Streams): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(streams.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  inline def obj(streams: Streams): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(streams.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
   type FactoryStream = js.Function1[/* cb */ FactoryStreamCallback, Unit]
   

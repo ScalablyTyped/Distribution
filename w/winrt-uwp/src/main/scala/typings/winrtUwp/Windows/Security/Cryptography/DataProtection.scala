@@ -47,8 +47,7 @@ object DataProtection {
   }
   object DataProtectionProvider {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       protectAsync: IBuffer => IPromiseWithIAsyncOperation[IBuffer],
       protectStreamAsync: (IInputStream, IOutputStream) => IPromiseWithIAsyncAction,
       unprotectAsync: IBuffer => IPromiseWithIAsyncOperation[IBuffer],
@@ -58,20 +57,15 @@ object DataProtection {
       __obj.asInstanceOf[DataProtectionProvider]
     }
     
-    @scala.inline
-    implicit class DataProtectionProviderMutableBuilder[Self <: DataProtectionProvider] (val x: Self) extends AnyVal {
+    extension [Self <: DataProtectionProvider](x: Self) {
       
-      @scala.inline
-      def setProtectAsync(value: IBuffer => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "protectAsync", js.Any.fromFunction1(value))
+      inline def setProtectAsync(value: IBuffer => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "protectAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProtectStreamAsync(value: (IInputStream, IOutputStream) => IPromiseWithIAsyncAction): Self = StObject.set(x, "protectStreamAsync", js.Any.fromFunction2(value))
+      inline def setProtectStreamAsync(value: (IInputStream, IOutputStream) => IPromiseWithIAsyncAction): Self = StObject.set(x, "protectStreamAsync", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnprotectAsync(value: IBuffer => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "unprotectAsync", js.Any.fromFunction1(value))
+      inline def setUnprotectAsync(value: IBuffer => IPromiseWithIAsyncOperation[IBuffer]): Self = StObject.set(x, "unprotectAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnprotectStreamAsync(value: (IInputStream, IOutputStream) => IPromiseWithIAsyncAction): Self = StObject.set(x, "unprotectStreamAsync", js.Any.fromFunction2(value))
+      inline def setUnprotectStreamAsync(value: (IInputStream, IOutputStream) => IPromiseWithIAsyncAction): Self = StObject.set(x, "unprotectStreamAsync", js.Any.fromFunction2(value))
     }
   }
 }

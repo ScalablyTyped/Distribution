@@ -18,34 +18,25 @@ trait FunctionRequest[T /* <: Params */] extends StObject {
 }
 object FunctionRequest {
   
-  @scala.inline
-  def apply[T /* <: Params */](params: T): FunctionRequest[T] = {
+  inline def apply[T /* <: Params */](params: T): FunctionRequest[T] = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunctionRequest[T]]
   }
   
-  @scala.inline
-  implicit class FunctionRequestMutableBuilder[Self <: FunctionRequest[?], T /* <: Params */] (val x: Self & FunctionRequest[T]) extends AnyVal {
+  extension [Self <: FunctionRequest[?], T /* <: Params */](x: Self & FunctionRequest[T]) {
     
-    @scala.inline
-    def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
+    inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
+    inline def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
     
-    @scala.inline
-    def setMaster(value: Boolean): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
+    inline def setMaster(value: Boolean): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
+    inline def setMasterUndefined: Self = StObject.set(x, "master", js.undefined)
     
-    @scala.inline
-    def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: User[Attributes]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User[Attributes]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

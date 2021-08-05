@@ -58,10 +58,8 @@ object mod {
     /* "unknown_orientation" */ val unknown_orientation: typings.jpegAutorotate.mod.errors.unknown_orientation & String = js.native
   }
   
-  @scala.inline
-  def rotate(path_or_buffer: String, options: RotateOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def rotate(
+  inline def rotate(path_or_buffer: String, options: RotateOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rotate(
     path_or_buffer: String,
     options: RotateOptions,
     module_callback: js.Function5[
@@ -73,10 +71,8 @@ object mod {
       Unit
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], module_callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def rotate(path_or_buffer: Buffer, options: RotateOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def rotate(
+  inline def rotate(path_or_buffer: Buffer, options: RotateOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def rotate(
     path_or_buffer: Buffer,
     options: RotateOptions,
     module_callback: js.Function5[
@@ -89,10 +85,8 @@ object mod {
     ]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any], module_callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def rotate_Promise(path_or_buffer: String, options: RotateOptions): js.Promise[typings.jpegAutorotate.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jpegAutorotate.anon.Buffer]]
-  @scala.inline
-  def rotate_Promise(path_or_buffer: Buffer, options: RotateOptions): js.Promise[typings.jpegAutorotate.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jpegAutorotate.anon.Buffer]]
+  inline def rotate_Promise(path_or_buffer: String, options: RotateOptions): js.Promise[typings.jpegAutorotate.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jpegAutorotate.anon.Buffer]]
+  inline def rotate_Promise(path_or_buffer: Buffer, options: RotateOptions): js.Promise[typings.jpegAutorotate.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(path_or_buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.jpegAutorotate.anon.Buffer]]
   
   trait CustomError
     extends StObject
@@ -102,17 +96,14 @@ object mod {
   }
   object CustomError {
     
-    @scala.inline
-    def apply(code: errors, message: String, name: String): CustomError = {
+    inline def apply(code: errors, message: String, name: String): CustomError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomError]
     }
     
-    @scala.inline
-    implicit class CustomErrorMutableBuilder[Self <: CustomError] (val x: Self) extends AnyVal {
+    extension [Self <: CustomError](x: Self) {
       
-      @scala.inline
-      def setCode(value: errors): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: errors): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,20 +115,16 @@ object mod {
   }
   object RotateDimensions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): RotateDimensions = {
+    inline def apply(height: Double, width: Double): RotateDimensions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[RotateDimensions]
     }
     
-    @scala.inline
-    implicit class RotateDimensionsMutableBuilder[Self <: RotateDimensions] (val x: Self) extends AnyVal {
+    extension [Self <: RotateDimensions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,20 +134,16 @@ object mod {
   }
   object RotateOptions {
     
-    @scala.inline
-    def apply(): RotateOptions = {
+    inline def apply(): RotateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RotateOptions]
     }
     
-    @scala.inline
-    implicit class RotateOptionsMutableBuilder[Self <: RotateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RotateOptions](x: Self) {
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     }
   }
 }

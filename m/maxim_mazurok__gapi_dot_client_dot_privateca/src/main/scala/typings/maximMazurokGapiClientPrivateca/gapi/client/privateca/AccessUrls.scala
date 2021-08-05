@@ -14,25 +14,19 @@ trait AccessUrls extends StObject {
 }
 object AccessUrls {
   
-  @scala.inline
-  def apply(): AccessUrls = {
+  inline def apply(): AccessUrls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessUrls]
   }
   
-  @scala.inline
-  implicit class AccessUrlsMutableBuilder[Self <: AccessUrls] (val x: Self) extends AnyVal {
+  extension [Self <: AccessUrls](x: Self) {
     
-    @scala.inline
-    def setCaCertificateAccessUrl(value: String): Self = StObject.set(x, "caCertificateAccessUrl", value.asInstanceOf[js.Any])
+    inline def setCaCertificateAccessUrl(value: String): Self = StObject.set(x, "caCertificateAccessUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaCertificateAccessUrlUndefined: Self = StObject.set(x, "caCertificateAccessUrl", js.undefined)
+    inline def setCaCertificateAccessUrlUndefined: Self = StObject.set(x, "caCertificateAccessUrl", js.undefined)
     
-    @scala.inline
-    def setCrlAccessUrl(value: String): Self = StObject.set(x, "crlAccessUrl", value.asInstanceOf[js.Any])
+    inline def setCrlAccessUrl(value: String): Self = StObject.set(x, "crlAccessUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrlAccessUrlUndefined: Self = StObject.set(x, "crlAccessUrl", js.undefined)
+    inline def setCrlAccessUrlUndefined: Self = StObject.set(x, "crlAccessUrl", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait DestinationFlowConfig extends StObject {
 }
 object DestinationFlowConfig {
   
-  @scala.inline
-  def apply(connectorType: ConnectorType, destinationConnectorProperties: DestinationConnectorProperties): DestinationFlowConfig = {
+  inline def apply(connectorType: ConnectorType, destinationConnectorProperties: DestinationConnectorProperties): DestinationFlowConfig = {
     val __obj = js.Dynamic.literal(connectorType = connectorType.asInstanceOf[js.Any], destinationConnectorProperties = destinationConnectorProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationFlowConfig]
   }
   
-  @scala.inline
-  implicit class DestinationFlowConfigMutableBuilder[Self <: DestinationFlowConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationFlowConfig](x: Self) {
     
-    @scala.inline
-    def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileName(value: ConnectorProfileName): Self = StObject.set(x, "connectorProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
+    inline def setConnectorProfileNameUndefined: Self = StObject.set(x, "connectorProfileName", js.undefined)
     
-    @scala.inline
-    def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
+    inline def setConnectorType(value: ConnectorType): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationConnectorProperties(value: DestinationConnectorProperties): Self = StObject.set(x, "destinationConnectorProperties", value.asInstanceOf[js.Any])
+    inline def setDestinationConnectorProperties(value: DestinationConnectorProperties): Self = StObject.set(x, "destinationConnectorProperties", value.asInstanceOf[js.Any])
   }
 }

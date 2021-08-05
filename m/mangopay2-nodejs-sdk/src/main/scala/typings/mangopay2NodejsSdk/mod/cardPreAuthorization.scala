@@ -95,8 +95,7 @@ object cardPreAuthorization {
   }
   object CardPreAuthorizationData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AuthorId: String,
       Billing: BillingData,
       CardId: String,
@@ -121,56 +120,39 @@ object cardPreAuthorization {
       __obj.asInstanceOf[CardPreAuthorizationData]
     }
     
-    @scala.inline
-    implicit class CardPreAuthorizationDataMutableBuilder[Self <: CardPreAuthorizationData] (val x: Self) extends AnyVal {
+    extension [Self <: CardPreAuthorizationData](x: Self) {
       
-      @scala.inline
-      def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
+      inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBilling(value: BillingData): Self = StObject.set(x, "Billing", value.asInstanceOf[js.Any])
+      inline def setBilling(value: BillingData): Self = StObject.set(x, "Billing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardId(value: String): Self = StObject.set(x, "CardId", value.asInstanceOf[js.Any])
+      inline def setCardId(value: String): Self = StObject.set(x, "CardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
+      inline def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecutionType(value: PreAuthorizationExecutionType): Self = StObject.set(x, "ExecutionType", value.asInstanceOf[js.Any])
+      inline def setExecutionType(value: PreAuthorizationExecutionType): Self = StObject.set(x, "ExecutionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayInId(value: String): Self = StObject.set(x, "PayInId", value.asInstanceOf[js.Any])
+      inline def setPayInId(value: String): Self = StObject.set(x, "PayInId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaymentStatus(value: PaymentStatus): Self = StObject.set(x, "PaymentStatus", value.asInstanceOf[js.Any])
+      inline def setPaymentStatus(value: PaymentStatus): Self = StObject.set(x, "PaymentStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
+      inline def setResultCode(value: String): Self = StObject.set(x, "ResultCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
+      inline def setResultMessage(value: String): Self = StObject.set(x, "ResultMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureMode(value: SecureMode): Self = StObject.set(x, "SecureMode", value.asInstanceOf[js.Any])
+      inline def setSecureMode(value: SecureMode): Self = StObject.set(x, "SecureMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureModeNeeded(value: Boolean): Self = StObject.set(x, "SecureModeNeeded", value.asInstanceOf[js.Any])
+      inline def setSecureModeNeeded(value: Boolean): Self = StObject.set(x, "SecureModeNeeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureModeRedirectURL(value: String): Self = StObject.set(x, "SecureModeRedirectURL", value.asInstanceOf[js.Any])
+      inline def setSecureModeRedirectURL(value: String): Self = StObject.set(x, "SecureModeRedirectURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureModeReturnURL(value: String): Self = StObject.set(x, "SecureModeReturnURL", value.asInstanceOf[js.Any])
+      inline def setSecureModeReturnURL(value: String): Self = StObject.set(x, "SecureModeReturnURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityInfo(value: SecurityInfoData): Self = StObject.set(x, "SecurityInfo", value.asInstanceOf[js.Any])
+      inline def setSecurityInfo(value: SecurityInfoData): Self = StObject.set(x, "SecurityInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: PreAuthorizationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: PreAuthorizationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,44 +175,32 @@ object cardPreAuthorization {
   }
   object CreateCardPreAuthorization {
     
-    @scala.inline
-    def apply(AuthorId: String, CardId: String, DebitedFunds: MoneyData, SecureModeReturnURL: String): CreateCardPreAuthorization = {
+    inline def apply(AuthorId: String, CardId: String, DebitedFunds: MoneyData, SecureModeReturnURL: String): CreateCardPreAuthorization = {
       val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CardId = CardId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], SecureModeReturnURL = SecureModeReturnURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateCardPreAuthorization]
     }
     
-    @scala.inline
-    implicit class CreateCardPreAuthorizationMutableBuilder[Self <: CreateCardPreAuthorization] (val x: Self) extends AnyVal {
+    extension [Self <: CreateCardPreAuthorization](x: Self) {
       
-      @scala.inline
-      def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
+      inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBilling(value: BillingData): Self = StObject.set(x, "Billing", value.asInstanceOf[js.Any])
+      inline def setBilling(value: BillingData): Self = StObject.set(x, "Billing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingUndefined: Self = StObject.set(x, "Billing", js.undefined)
+      inline def setBillingUndefined: Self = StObject.set(x, "Billing", js.undefined)
       
-      @scala.inline
-      def setCardId(value: String): Self = StObject.set(x, "CardId", value.asInstanceOf[js.Any])
+      inline def setCardId(value: String): Self = StObject.set(x, "CardId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
+      inline def setDebitedFunds(value: MoneyData): Self = StObject.set(x, "DebitedFunds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureMode(value: SecureMode): Self = StObject.set(x, "SecureMode", value.asInstanceOf[js.Any])
+      inline def setSecureMode(value: SecureMode): Self = StObject.set(x, "SecureMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureModeReturnURL(value: String): Self = StObject.set(x, "SecureModeReturnURL", value.asInstanceOf[js.Any])
+      inline def setSecureModeReturnURL(value: String): Self = StObject.set(x, "SecureModeReturnURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureModeUndefined: Self = StObject.set(x, "SecureMode", js.undefined)
+      inline def setSecureModeUndefined: Self = StObject.set(x, "SecureMode", js.undefined)
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
   
@@ -245,26 +215,20 @@ object cardPreAuthorization {
   }
   object UpdateCardPreAuthorization {
     
-    @scala.inline
-    def apply(Id: String, PaymentStatus: PaymentStatus): UpdateCardPreAuthorization = {
+    inline def apply(Id: String, PaymentStatus: PaymentStatus): UpdateCardPreAuthorization = {
       val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PaymentStatus = PaymentStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateCardPreAuthorization]
     }
     
-    @scala.inline
-    implicit class UpdateCardPreAuthorizationMutableBuilder[Self <: UpdateCardPreAuthorization] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateCardPreAuthorization](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaymentStatus(value: PaymentStatus): Self = StObject.set(x, "PaymentStatus", value.asInstanceOf[js.Any])
+      inline def setPaymentStatus(value: PaymentStatus): Self = StObject.set(x, "PaymentStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     }
   }
 }

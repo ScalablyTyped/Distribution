@@ -13,19 +13,15 @@ trait IROOM_NAME_CHANGE extends StObject {
 }
 object IROOM_NAME_CHANGE {
   
-  @scala.inline
-  def apply(oldName: String, room: SFSRoom): IROOM_NAME_CHANGE = {
+  inline def apply(oldName: String, room: SFSRoom): IROOM_NAME_CHANGE = {
     val __obj = js.Dynamic.literal(oldName = oldName.asInstanceOf[js.Any], room = room.asInstanceOf[js.Any])
     __obj.asInstanceOf[IROOM_NAME_CHANGE]
   }
   
-  @scala.inline
-  implicit class IROOM_NAME_CHANGEMutableBuilder[Self <: IROOM_NAME_CHANGE] (val x: Self) extends AnyVal {
+  extension [Self <: IROOM_NAME_CHANGE](x: Self) {
     
-    @scala.inline
-    def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
+    inline def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
+    inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }
 }

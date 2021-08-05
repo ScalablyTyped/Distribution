@@ -17,8 +17,7 @@ object cardFolderTabsUniDriverMod {
   }
   object CardFolderTabsUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object cardFolderTabsUniDriverMod {
       __obj.asInstanceOf[CardFolderTabsUniDriver]
     }
     
-    @scala.inline
-    implicit class CardFolderTabsUniDriverMutableBuilder[Self <: CardFolderTabsUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CardFolderTabsUniDriver](x: Self) {
       
-      @scala.inline
-      def setIsTabDisabledById(value: String => js.Promise[Boolean]): Self = StObject.set(x, "isTabDisabledById", js.Any.fromFunction1(value))
+      inline def setIsTabDisabledById(value: String => js.Promise[Boolean]): Self = StObject.set(x, "isTabDisabledById", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSelectTabById(value: String => js.Promise[Unit]): Self = StObject.set(x, "selectTabById", js.Any.fromFunction1(value))
+      inline def setSelectTabById(value: String => js.Promise[Unit]): Self = StObject.set(x, "selectTabById", js.Any.fromFunction1(value))
     }
   }
 }

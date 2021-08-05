@@ -30,8 +30,7 @@ trait RenderProperties extends StObject {
 }
 object RenderProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedQuery: () => String,
     getListControl: () => js.Any,
     getParameterValue: String => String,
@@ -48,40 +47,28 @@ object RenderProperties {
     __obj.asInstanceOf[RenderProperties]
   }
   
-  @scala.inline
-  implicit class RenderPropertiesMutableBuilder[Self <: RenderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RenderProperties](x: Self) {
     
-    @scala.inline
-    def setGetEncodedQuery(value: () => String): Self = StObject.set(x, "getEncodedQuery", js.Any.fromFunction0(value))
+    inline def setGetEncodedQuery(value: () => String): Self = StObject.set(x, "getEncodedQuery", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetListControl(value: () => js.Any): Self = StObject.set(x, "getListControl", js.Any.fromFunction0(value))
+    inline def setGetListControl(value: () => js.Any): Self = StObject.set(x, "getListControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameterValue(value: String => String): Self = StObject.set(x, "getParameterValue", js.Any.fromFunction1(value))
+    inline def setGetParameterValue(value: String => String): Self = StObject.set(x, "getParameterValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameters(value: () => js.Array[String]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => js.Array[String]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReferringURL(value: () => String): Self = StObject.set(x, "getReferringURL", js.Any.fromFunction0(value))
+    inline def setGetReferringURL(value: () => String): Self = StObject.set(x, "getReferringURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetViewName(value: () => String): Self = StObject.set(x, "getViewName", js.Any.fromFunction0(value))
+    inline def setGetViewName(value: () => String): Self = StObject.set(x, "getViewName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWindowProperties(value: () => js.Any): Self = StObject.set(x, "getWindowProperties", js.Any.fromFunction0(value))
+    inline def setGetWindowProperties(value: () => js.Any): Self = StObject.set(x, "getWindowProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsInDevStudio(value: () => Boolean): Self = StObject.set(x, "isInDevStudio", js.Any.fromFunction0(value))
+    inline def setIsInDevStudio(value: () => Boolean): Self = StObject.set(x, "isInDevStudio", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsInteractive(value: () => Boolean): Self = StObject.set(x, "isInteractive", js.Any.fromFunction0(value))
+    inline def setIsInteractive(value: () => Boolean): Self = StObject.set(x, "isInteractive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsManyToMany(value: () => Boolean): Self = StObject.set(x, "isManyToMany", js.Any.fromFunction0(value))
+    inline def setIsManyToMany(value: () => Boolean): Self = StObject.set(x, "isManyToMany", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRelatedList(value: () => Boolean): Self = StObject.set(x, "isRelatedList", js.Any.fromFunction0(value))
+    inline def setIsRelatedList(value: () => Boolean): Self = StObject.set(x, "isRelatedList", js.Any.fromFunction0(value))
   }
 }

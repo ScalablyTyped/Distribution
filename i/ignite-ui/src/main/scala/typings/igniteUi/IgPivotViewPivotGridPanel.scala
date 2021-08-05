@@ -39,37 +39,27 @@ trait IgPivotViewPivotGridPanel
 }
 object IgPivotViewPivotGridPanel {
   
-  @scala.inline
-  def apply(): IgPivotViewPivotGridPanel = {
+  inline def apply(): IgPivotViewPivotGridPanel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotViewPivotGridPanel]
   }
   
-  @scala.inline
-  implicit class IgPivotViewPivotGridPanelMutableBuilder[Self <: IgPivotViewPivotGridPanel] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotViewPivotGridPanel](x: Self) {
     
-    @scala.inline
-    def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
     
-    @scala.inline
-    def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
     
-    @scala.inline
-    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
-    @scala.inline
-    def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

@@ -16,31 +16,23 @@ trait OnenoteResource
 }
 object OnenoteResource {
   
-  @scala.inline
-  def apply(): OnenoteResource = {
+  inline def apply(): OnenoteResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenoteResource]
   }
   
-  @scala.inline
-  implicit class OnenoteResourceMutableBuilder[Self <: OnenoteResource] (val x: Self) extends AnyVal {
+  extension [Self <: OnenoteResource](x: Self) {
     
-    @scala.inline
-    def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentUrl(value: NullableOption[String]): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: NullableOption[String]): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
+    inline def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
     
-    @scala.inline
-    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
   }
 }

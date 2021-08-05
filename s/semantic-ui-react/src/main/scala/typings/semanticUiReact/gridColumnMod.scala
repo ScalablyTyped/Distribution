@@ -25,8 +25,7 @@ object gridColumnMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object GridColumnProps {
     
-    @scala.inline
-    def apply(): GridColumnProps = {
+    inline def apply(): GridColumnProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GridColumnProps]
     }
@@ -92,104 +91,72 @@ object gridColumnMod extends Shortcut {
   }
   object StrictGridColumnProps {
     
-    @scala.inline
-    def apply(): StrictGridColumnProps = {
+    inline def apply(): StrictGridColumnProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictGridColumnProps]
     }
     
-    @scala.inline
-    implicit class StrictGridColumnPropsMutableBuilder[Self <: StrictGridColumnProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictGridColumnProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColor(value: SemanticCOLORS): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: SemanticCOLORS): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setComputer(value: SemanticWIDTHS): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
+      inline def setComputer(value: SemanticWIDTHS): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputerUndefined: Self = StObject.set(x, "computer", js.undefined)
+      inline def setComputerUndefined: Self = StObject.set(x, "computer", js.undefined)
       
-      @scala.inline
-      def setFloated(value: SemanticFLOATS): Self = StObject.set(x, "floated", value.asInstanceOf[js.Any])
+      inline def setFloated(value: SemanticFLOATS): Self = StObject.set(x, "floated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatedUndefined: Self = StObject.set(x, "floated", js.undefined)
+      inline def setFloatedUndefined: Self = StObject.set(x, "floated", js.undefined)
       
-      @scala.inline
-      def setLargeScreen(value: SemanticWIDTHS): Self = StObject.set(x, "largeScreen", value.asInstanceOf[js.Any])
+      inline def setLargeScreen(value: SemanticWIDTHS): Self = StObject.set(x, "largeScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeScreenUndefined: Self = StObject.set(x, "largeScreen", js.undefined)
+      inline def setLargeScreenUndefined: Self = StObject.set(x, "largeScreen", js.undefined)
       
-      @scala.inline
-      def setMobile(value: SemanticWIDTHS): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+      inline def setMobile(value: SemanticWIDTHS): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
+      inline def setMobileUndefined: Self = StObject.set(x, "mobile", js.undefined)
       
-      @scala.inline
-      def setOnly(value: GridOnlyProp): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: GridOnlyProp): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+      inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
       
-      @scala.inline
-      def setStretched(value: Boolean): Self = StObject.set(x, "stretched", value.asInstanceOf[js.Any])
+      inline def setStretched(value: Boolean): Self = StObject.set(x, "stretched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchedUndefined: Self = StObject.set(x, "stretched", js.undefined)
+      inline def setStretchedUndefined: Self = StObject.set(x, "stretched", js.undefined)
       
-      @scala.inline
-      def setTablet(value: SemanticWIDTHS): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+      inline def setTablet(value: SemanticWIDTHS): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
+      inline def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: SemanticTEXTALIGNMENTS): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: SemanticTEXTALIGNMENTS): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: SemanticVERTICALALIGNMENTS): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      @scala.inline
-      def setWidescreen(value: SemanticWIDTHS): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
+      inline def setWidescreen(value: SemanticWIDTHS): Self = StObject.set(x, "widescreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
+      inline def setWidescreenUndefined: Self = StObject.set(x, "widescreen", js.undefined)
       
-      @scala.inline
-      def setWidth(value: SemanticWIDTHS): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: SemanticWIDTHS): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

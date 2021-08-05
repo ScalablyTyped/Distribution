@@ -13,16 +13,13 @@ trait StopTransformJobRequest extends StObject {
 }
 object StopTransformJobRequest {
   
-  @scala.inline
-  def apply(TransformJobName: TransformJobName): StopTransformJobRequest = {
+  inline def apply(TransformJobName: TransformJobName): StopTransformJobRequest = {
     val __obj = js.Dynamic.literal(TransformJobName = TransformJobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopTransformJobRequest]
   }
   
-  @scala.inline
-  implicit class StopTransformJobRequestMutableBuilder[Self <: StopTransformJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopTransformJobRequest](x: Self) {
     
-    @scala.inline
-    def setTransformJobName(value: TransformJobName): Self = StObject.set(x, "TransformJobName", value.asInstanceOf[js.Any])
+    inline def setTransformJobName(value: TransformJobName): Self = StObject.set(x, "TransformJobName", value.asInstanceOf[js.Any])
   }
 }

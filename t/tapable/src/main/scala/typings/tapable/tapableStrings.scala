@@ -11,20 +11,17 @@ object tapableStrings {
   sealed trait async
     extends StObject
        with TapType
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
+  inline def async: async = "async".asInstanceOf[async]
   
   @js.native
   sealed trait promise
     extends StObject
        with TapType
-  @scala.inline
-  def promise: promise = "promise".asInstanceOf[promise]
+  inline def promise: promise = "promise".asInstanceOf[promise]
   
   @js.native
   sealed trait sync
     extends StObject
        with TapType
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
+  inline def sync: sync = "sync".asInstanceOf[sync]
 }

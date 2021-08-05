@@ -32,58 +32,41 @@ trait Role extends StObject {
 }
 object Role {
   
-  @scala.inline
-  def apply(): Role = {
+  inline def apply(): Role = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Role]
   }
   
-  @scala.inline
-  implicit class RoleMutableBuilder[Self <: Role] (val x: Self) extends AnyVal {
+  extension [Self <: Role](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setIncludedPermissions(value: js.Array[String]): Self = StObject.set(x, "includedPermissions", value.asInstanceOf[js.Any])
+    inline def setIncludedPermissions(value: js.Array[String]): Self = StObject.set(x, "includedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedPermissionsUndefined: Self = StObject.set(x, "includedPermissions", js.undefined)
+    inline def setIncludedPermissionsUndefined: Self = StObject.set(x, "includedPermissions", js.undefined)
     
-    @scala.inline
-    def setIncludedPermissionsVarargs(value: String*): Self = StObject.set(x, "includedPermissions", js.Array(value :_*))
+    inline def setIncludedPermissionsVarargs(value: String*): Self = StObject.set(x, "includedPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

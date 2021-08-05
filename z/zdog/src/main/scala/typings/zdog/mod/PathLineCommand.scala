@@ -13,16 +13,13 @@ trait PathLineCommand
 }
 object PathLineCommand {
   
-  @scala.inline
-  def apply(line: VectorOptions): PathLineCommand = {
+  inline def apply(line: VectorOptions): PathLineCommand = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathLineCommand]
   }
   
-  @scala.inline
-  implicit class PathLineCommandMutableBuilder[Self <: PathLineCommand] (val x: Self) extends AnyVal {
+  extension [Self <: PathLineCommand](x: Self) {
     
-    @scala.inline
-    def setLine(value: VectorOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: VectorOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

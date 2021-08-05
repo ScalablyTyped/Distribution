@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createHttpTerminator(config: HttpTerminatorConfig): HttpTerminator = ^.asInstanceOf[js.Dynamic].applyDynamic("createHttpTerminator")(config.asInstanceOf[js.Any]).asInstanceOf[HttpTerminator]
+  inline def createHttpTerminator(config: HttpTerminatorConfig): HttpTerminator = ^.asInstanceOf[js.Dynamic].applyDynamic("createHttpTerminator")(config.asInstanceOf[js.Any]).asInstanceOf[HttpTerminator]
   
   trait HttpTerminator extends StObject {
     
@@ -23,17 +22,14 @@ object mod {
   }
   object HttpTerminator {
     
-    @scala.inline
-    def apply(terminate: () => js.Promise[Unit]): HttpTerminator = {
+    inline def apply(terminate: () => js.Promise[Unit]): HttpTerminator = {
       val __obj = js.Dynamic.literal(terminate = js.Any.fromFunction0(terminate))
       __obj.asInstanceOf[HttpTerminator]
     }
     
-    @scala.inline
-    implicit class HttpTerminatorMutableBuilder[Self <: HttpTerminator] (val x: Self) extends AnyVal {
+    extension [Self <: HttpTerminator](x: Self) {
       
-      @scala.inline
-      def setTerminate(value: () => js.Promise[Unit]): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
+      inline def setTerminate(value: () => js.Promise[Unit]): Self = StObject.set(x, "terminate", js.Any.fromFunction0(value))
     }
   }
   
@@ -52,23 +48,18 @@ object mod {
   }
   object HttpTerminatorConfig {
     
-    @scala.inline
-    def apply(server: Server | typings.node.httpsMod.Server): HttpTerminatorConfig = {
+    inline def apply(server: Server | typings.node.httpsMod.Server): HttpTerminatorConfig = {
       val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[HttpTerminatorConfig]
     }
     
-    @scala.inline
-    implicit class HttpTerminatorConfigMutableBuilder[Self <: HttpTerminatorConfig] (val x: Self) extends AnyVal {
+    extension [Self <: HttpTerminatorConfig](x: Self) {
       
-      @scala.inline
-      def setGracefulTerminationTimeout(value: Double): Self = StObject.set(x, "gracefulTerminationTimeout", value.asInstanceOf[js.Any])
+      inline def setGracefulTerminationTimeout(value: Double): Self = StObject.set(x, "gracefulTerminationTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGracefulTerminationTimeoutUndefined: Self = StObject.set(x, "gracefulTerminationTimeout", js.undefined)
+      inline def setGracefulTerminationTimeoutUndefined: Self = StObject.set(x, "gracefulTerminationTimeout", js.undefined)
       
-      @scala.inline
-      def setServer(value: Server | typings.node.httpsMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Server | typings.node.httpsMod.Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -115,20 +115,14 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def marshall(command: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def marshall(command: String, headers: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def marshall(command: String, headers: js.Object, body: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def marshall(command: String, headers: Unit, body: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def marshall(command: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def marshall(command: String, headers: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def marshall(command: String, headers: js.Object, body: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def marshall(command: String, headers: Unit, body: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(command.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def sizeOfUTF8(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeOfUTF8")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def sizeOfUTF8(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeOfUTF8")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def unmarshall(datas: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshall")(datas.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def unmarshall(datas: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshall")(datas.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   object VERSIONS {
@@ -140,46 +134,34 @@ object mod {
     @JSImport("stompjs", "VERSIONS.V1_0")
     @js.native
     def V1_0: String = js.native
-    @scala.inline
-    def V1_0_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V1_0")(x.asInstanceOf[js.Any])
+    inline def V1_0_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V1_0")(x.asInstanceOf[js.Any])
     
     @JSImport("stompjs", "VERSIONS.V1_1")
     @js.native
     def V1_1: String = js.native
-    @scala.inline
-    def V1_1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V1_1")(x.asInstanceOf[js.Any])
+    inline def V1_1_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V1_1")(x.asInstanceOf[js.Any])
     
     @JSImport("stompjs", "VERSIONS.V1_2")
     @js.native
     def V1_2: String = js.native
-    @scala.inline
-    def V1_2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V1_2")(x.asInstanceOf[js.Any])
+    inline def V1_2_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("V1_2")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def supportedVersions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedVersions")().asInstanceOf[js.Array[String]]
+    inline def supportedVersions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportedVersions")().asInstanceOf[js.Array[String]]
   }
   
-  @scala.inline
-  def clearInterval(id: Timer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearInterval(id: Timer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearInterval")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def client(url: String): Client_ = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(url.asInstanceOf[js.Any]).asInstanceOf[Client_]
-  @scala.inline
-  def client(url: String, protocols: String): Client_ = (^.asInstanceOf[js.Dynamic].applyDynamic("client")(url.asInstanceOf[js.Any], protocols.asInstanceOf[js.Any])).asInstanceOf[Client_]
-  @scala.inline
-  def client(url: String, protocols: js.Array[String]): Client_ = (^.asInstanceOf[js.Dynamic].applyDynamic("client")(url.asInstanceOf[js.Any], protocols.asInstanceOf[js.Any])).asInstanceOf[Client_]
+  inline def client(url: String): Client_ = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(url.asInstanceOf[js.Any]).asInstanceOf[Client_]
+  inline def client(url: String, protocols: String): Client_ = (^.asInstanceOf[js.Dynamic].applyDynamic("client")(url.asInstanceOf[js.Any], protocols.asInstanceOf[js.Any])).asInstanceOf[Client_]
+  inline def client(url: String, protocols: js.Array[String]): Client_ = (^.asInstanceOf[js.Dynamic].applyDynamic("client")(url.asInstanceOf[js.Any], protocols.asInstanceOf[js.Any])).asInstanceOf[Client_]
   
-  @scala.inline
-  def over(ws: WebSocket): Client_ = ^.asInstanceOf[js.Dynamic].applyDynamic("over")(ws.asInstanceOf[js.Any]).asInstanceOf[Client_]
+  inline def over(ws: WebSocket): Client_ = ^.asInstanceOf[js.Dynamic].applyDynamic("over")(ws.asInstanceOf[js.Any]).asInstanceOf[Client_]
   
-  @scala.inline
-  def overTCP(host: String, port: Double): Client_ = (^.asInstanceOf[js.Dynamic].applyDynamic("overTCP")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Client_]
+  inline def overTCP(host: String, port: Double): Client_ = (^.asInstanceOf[js.Dynamic].applyDynamic("overTCP")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Client_]
   
-  @scala.inline
-  def overWS(url: String): Client_ = ^.asInstanceOf[js.Dynamic].applyDynamic("overWS")(url.asInstanceOf[js.Any]).asInstanceOf[Client_]
+  inline def overWS(url: String): Client_ = ^.asInstanceOf[js.Dynamic].applyDynamic("overWS")(url.asInstanceOf[js.Any]).asInstanceOf[Client_]
   
-  @scala.inline
-  def setInterval(interval: Double, f: js.Function1[/* repeated */ js.Any, Unit]): Timer = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(interval.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Timer]
+  inline def setInterval(interval: Double, f: js.Function1[/* repeated */ js.Any, Unit]): Timer = (^.asInstanceOf[js.Dynamic].applyDynamic("setInterval")(interval.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Timer]
   
   @js.native
   trait Message extends Frame {
@@ -199,20 +181,16 @@ object mod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(id: String, unsubscribe: () => Unit): Subscription = {
+    inline def apply(id: String, unsubscribe: () => Unit): Subscription = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
 }

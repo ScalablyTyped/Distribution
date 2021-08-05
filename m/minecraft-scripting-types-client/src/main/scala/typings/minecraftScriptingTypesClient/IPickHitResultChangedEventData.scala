@@ -23,22 +23,17 @@ trait IPickHitResultChangedEventData extends StObject {
 }
 object IPickHitResultChangedEventData {
   
-  @scala.inline
-  def apply(entity: IEntity): IPickHitResultChangedEventData = {
+  inline def apply(entity: IEntity): IPickHitResultChangedEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], position = null)
     __obj.asInstanceOf[IPickHitResultChangedEventData]
   }
   
-  @scala.inline
-  implicit class IPickHitResultChangedEventDataMutableBuilder[Self <: IPickHitResultChangedEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IPickHitResultChangedEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: VectorXYZ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: VectorXYZ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionNull: Self = StObject.set(x, "position", null)
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
   }
 }

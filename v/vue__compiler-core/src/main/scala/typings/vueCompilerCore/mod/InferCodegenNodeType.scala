@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InferCodegenNodeType[T] extends StObject
 object InferCodegenNodeType {
   
-  @scala.inline
-  def CallExpression(
+  inline def CallExpression(
     arguments: js.Array[
       String | js.Symbol | JSChildNode | SSRCodegenNode | TemplateChildNode | js.Array[TemplateChildNode]
     ],
@@ -25,8 +24,7 @@ object InferCodegenNodeType {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.CallExpression]
   }
   
-  @scala.inline
-  def RenderSlotCall(
+  inline def RenderSlotCall(
     arguments: (js.Tuple2[String, String | ExpressionNode]) | (js.Tuple3[String, String | ExpressionNode, PropsExpression]) | (js.Tuple4[
       String, 
       String | ExpressionNode, 

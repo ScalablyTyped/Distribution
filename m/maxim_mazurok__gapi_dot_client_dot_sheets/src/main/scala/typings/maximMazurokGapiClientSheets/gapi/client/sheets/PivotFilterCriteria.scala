@@ -26,34 +26,25 @@ trait PivotFilterCriteria extends StObject {
 }
 object PivotFilterCriteria {
   
-  @scala.inline
-  def apply(): PivotFilterCriteria = {
+  inline def apply(): PivotFilterCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotFilterCriteria]
   }
   
-  @scala.inline
-  implicit class PivotFilterCriteriaMutableBuilder[Self <: PivotFilterCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: PivotFilterCriteria](x: Self) {
     
-    @scala.inline
-    def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setVisibleByDefault(value: Boolean): Self = StObject.set(x, "visibleByDefault", value.asInstanceOf[js.Any])
+    inline def setVisibleByDefault(value: Boolean): Self = StObject.set(x, "visibleByDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleByDefaultUndefined: Self = StObject.set(x, "visibleByDefault", js.undefined)
+    inline def setVisibleByDefaultUndefined: Self = StObject.set(x, "visibleByDefault", js.undefined)
     
-    @scala.inline
-    def setVisibleValues(value: js.Array[String]): Self = StObject.set(x, "visibleValues", value.asInstanceOf[js.Any])
+    inline def setVisibleValues(value: js.Array[String]): Self = StObject.set(x, "visibleValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleValuesUndefined: Self = StObject.set(x, "visibleValues", js.undefined)
+    inline def setVisibleValuesUndefined: Self = StObject.set(x, "visibleValues", js.undefined)
     
-    @scala.inline
-    def setVisibleValuesVarargs(value: String*): Self = StObject.set(x, "visibleValues", js.Array(value :_*))
+    inline def setVisibleValuesVarargs(value: String*): Self = StObject.set(x, "visibleValues", js.Array(value :_*))
   }
 }

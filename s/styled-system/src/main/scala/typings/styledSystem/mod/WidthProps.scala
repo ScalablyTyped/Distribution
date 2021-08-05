@@ -18,25 +18,19 @@ trait WidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends St
 }
 object WidthProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): WidthProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): WidthProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WidthProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class WidthPropsMutableBuilder[Self <: WidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (WidthProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: WidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (WidthProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthNull: Self = StObject.set(x, "width", null)
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "width", js.Array(value :_*))
+    inline def setWidthVarargs(value: (TVal | Null)*): Self = StObject.set(x, "width", js.Array(value :_*))
   }
 }

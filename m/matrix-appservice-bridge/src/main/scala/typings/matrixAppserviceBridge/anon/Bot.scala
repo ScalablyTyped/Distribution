@@ -19,25 +19,19 @@ trait Bot extends StObject {
 }
 object Bot {
   
-  @scala.inline
-  def apply(): Bot = {
+  inline def apply(): Bot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bot]
   }
   
-  @scala.inline
-  implicit class BotMutableBuilder[Self <: Bot] (val x: Self) extends AnyVal {
+  extension [Self <: Bot](x: Self) {
     
-    @scala.inline
-    def setBot(value: IntentOpts): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
+    inline def setBot(value: IntentOpts): Self = StObject.set(x, "bot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotUndefined: Self = StObject.set(x, "bot", js.undefined)
+    inline def setBotUndefined: Self = StObject.set(x, "bot", js.undefined)
     
-    @scala.inline
-    def setClients(value: IntentOpts): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
+    inline def setClients(value: IntentOpts): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientsUndefined: Self = StObject.set(x, "clients", js.undefined)
+    inline def setClientsUndefined: Self = StObject.set(x, "clients", js.undefined)
   }
 }

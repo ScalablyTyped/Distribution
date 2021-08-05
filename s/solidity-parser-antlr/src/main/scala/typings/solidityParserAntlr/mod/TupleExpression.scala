@@ -20,26 +20,20 @@ trait TupleExpression
 }
 object TupleExpression {
   
-  @scala.inline
-  def apply(components: js.Array[Expression], isArray: Boolean): TupleExpression = {
+  inline def apply(components: js.Array[Expression], isArray: Boolean): TupleExpression = {
     val __obj = js.Dynamic.literal(components = components.asInstanceOf[js.Any], isArray = isArray.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TupleExpression")
     __obj.asInstanceOf[TupleExpression]
   }
   
-  @scala.inline
-  implicit class TupleExpressionMutableBuilder[Self <: TupleExpression] (val x: Self) extends AnyVal {
+  extension [Self <: TupleExpression](x: Self) {
     
-    @scala.inline
-    def setComponents(value: js.Array[Expression]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    inline def setComponents(value: js.Array[Expression]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentsVarargs(value: Expression*): Self = StObject.set(x, "components", js.Array(value :_*))
+    inline def setComponentsVarargs(value: Expression*): Self = StObject.set(x, "components", js.Array(value :_*))
     
-    @scala.inline
-    def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
+    inline def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.TupleExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

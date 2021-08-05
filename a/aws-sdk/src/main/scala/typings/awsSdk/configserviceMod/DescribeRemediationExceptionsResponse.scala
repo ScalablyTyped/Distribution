@@ -18,28 +18,21 @@ trait DescribeRemediationExceptionsResponse extends StObject {
 }
 object DescribeRemediationExceptionsResponse {
   
-  @scala.inline
-  def apply(): DescribeRemediationExceptionsResponse = {
+  inline def apply(): DescribeRemediationExceptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRemediationExceptionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRemediationExceptionsResponseMutableBuilder[Self <: DescribeRemediationExceptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRemediationExceptionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRemediationExceptions(value: RemediationExceptions): Self = StObject.set(x, "RemediationExceptions", value.asInstanceOf[js.Any])
+    inline def setRemediationExceptions(value: RemediationExceptions): Self = StObject.set(x, "RemediationExceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemediationExceptionsUndefined: Self = StObject.set(x, "RemediationExceptions", js.undefined)
+    inline def setRemediationExceptionsUndefined: Self = StObject.set(x, "RemediationExceptions", js.undefined)
     
-    @scala.inline
-    def setRemediationExceptionsVarargs(value: RemediationException*): Self = StObject.set(x, "RemediationExceptions", js.Array(value :_*))
+    inline def setRemediationExceptionsVarargs(value: RemediationException*): Self = StObject.set(x, "RemediationExceptions", js.Array(value :_*))
   }
 }

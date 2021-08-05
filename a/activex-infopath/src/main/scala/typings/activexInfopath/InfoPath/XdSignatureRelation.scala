@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XdSignatureRelation extends StObject
 object XdSignatureRelation {
   
-  @scala.inline
-  def xdSignatureRelationCoSign: `2` = 2.asInstanceOf[`2`]
+  inline def xdSignatureRelationCoSign: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xdSignatureRelationCounterSign: `3` = 3.asInstanceOf[`3`]
+  inline def xdSignatureRelationCounterSign: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xdSignatureRelationSingle: `1` = 1.asInstanceOf[`1`]
+  inline def xdSignatureRelationSingle: `1` = 1.asInstanceOf[`1`]
 }

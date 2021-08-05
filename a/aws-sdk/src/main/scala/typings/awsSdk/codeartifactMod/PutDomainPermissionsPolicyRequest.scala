@@ -28,31 +28,23 @@ trait PutDomainPermissionsPolicyRequest extends StObject {
 }
 object PutDomainPermissionsPolicyRequest {
   
-  @scala.inline
-  def apply(domain: DomainName, policyDocument: PolicyDocument): PutDomainPermissionsPolicyRequest = {
+  inline def apply(domain: DomainName, policyDocument: PolicyDocument): PutDomainPermissionsPolicyRequest = {
     val __obj = js.Dynamic.literal(domain = domain.asInstanceOf[js.Any], policyDocument = policyDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDomainPermissionsPolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutDomainPermissionsPolicyRequestMutableBuilder[Self <: PutDomainPermissionsPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutDomainPermissionsPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
+    inline def setDomainOwner(value: AccountId): Self = StObject.set(x, "domainOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
+    inline def setDomainOwnerUndefined: Self = StObject.set(x, "domainOwner", js.undefined)
     
-    @scala.inline
-    def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+    inline def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyRevision(value: PolicyRevision): Self = StObject.set(x, "policyRevision", value.asInstanceOf[js.Any])
+    inline def setPolicyRevision(value: PolicyRevision): Self = StObject.set(x, "policyRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyRevisionUndefined: Self = StObject.set(x, "policyRevision", js.undefined)
+    inline def setPolicyRevisionUndefined: Self = StObject.set(x, "policyRevision", js.undefined)
   }
 }

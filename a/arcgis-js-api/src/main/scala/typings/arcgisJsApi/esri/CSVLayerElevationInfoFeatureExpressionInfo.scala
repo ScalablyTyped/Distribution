@@ -19,8 +19,7 @@ trait CSVLayerElevationInfoFeatureExpressionInfo
 }
 object CSVLayerElevationInfoFeatureExpressionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object CSVLayerElevationInfoFeatureExpressionInfo {
     __obj.asInstanceOf[CSVLayerElevationInfoFeatureExpressionInfo]
   }
   
-  @scala.inline
-  implicit class CSVLayerElevationInfoFeatureExpressionInfoMutableBuilder[Self <: CSVLayerElevationInfoFeatureExpressionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CSVLayerElevationInfoFeatureExpressionInfo](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
   }
 }

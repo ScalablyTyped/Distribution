@@ -78,73 +78,51 @@ trait SchemaPipelineResources extends StObject {
 }
 object SchemaPipelineResources {
   
-  @scala.inline
-  def apply(): SchemaPipelineResources = {
+  inline def apply(): SchemaPipelineResources = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPipelineResources]
   }
   
-  @scala.inline
-  implicit class SchemaPipelineResourcesMutableBuilder[Self <: SchemaPipelineResources] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPipelineResources](x: Self) {
     
-    @scala.inline
-    def setAcceleratorCount(value: String): Self = StObject.set(x, "acceleratorCount", value.asInstanceOf[js.Any])
+    inline def setAcceleratorCount(value: String): Self = StObject.set(x, "acceleratorCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorCountUndefined: Self = StObject.set(x, "acceleratorCount", js.undefined)
+    inline def setAcceleratorCountUndefined: Self = StObject.set(x, "acceleratorCount", js.undefined)
     
-    @scala.inline
-    def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
+    inline def setAcceleratorType(value: String): Self = StObject.set(x, "acceleratorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
+    inline def setAcceleratorTypeUndefined: Self = StObject.set(x, "acceleratorType", js.undefined)
     
-    @scala.inline
-    def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
+    inline def setBootDiskSizeGb(value: Double): Self = StObject.set(x, "bootDiskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDiskSizeGbUndefined: Self = StObject.set(x, "bootDiskSizeGb", js.undefined)
+    inline def setBootDiskSizeGbUndefined: Self = StObject.set(x, "bootDiskSizeGb", js.undefined)
     
-    @scala.inline
-    def setDisks(value: js.Array[SchemaDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
+    inline def setDisks(value: js.Array[SchemaDisk]): Self = StObject.set(x, "disks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
+    inline def setDisksUndefined: Self = StObject.set(x, "disks", js.undefined)
     
-    @scala.inline
-    def setDisksVarargs(value: SchemaDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
+    inline def setDisksVarargs(value: SchemaDisk*): Self = StObject.set(x, "disks", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimumCpuCores(value: Double): Self = StObject.set(x, "minimumCpuCores", value.asInstanceOf[js.Any])
+    inline def setMinimumCpuCores(value: Double): Self = StObject.set(x, "minimumCpuCores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumCpuCoresUndefined: Self = StObject.set(x, "minimumCpuCores", js.undefined)
+    inline def setMinimumCpuCoresUndefined: Self = StObject.set(x, "minimumCpuCores", js.undefined)
     
-    @scala.inline
-    def setMinimumRamGb(value: Double): Self = StObject.set(x, "minimumRamGb", value.asInstanceOf[js.Any])
+    inline def setMinimumRamGb(value: Double): Self = StObject.set(x, "minimumRamGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumRamGbUndefined: Self = StObject.set(x, "minimumRamGb", js.undefined)
+    inline def setMinimumRamGbUndefined: Self = StObject.set(x, "minimumRamGb", js.undefined)
     
-    @scala.inline
-    def setNoAddress(value: Boolean): Self = StObject.set(x, "noAddress", value.asInstanceOf[js.Any])
+    inline def setNoAddress(value: Boolean): Self = StObject.set(x, "noAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoAddressUndefined: Self = StObject.set(x, "noAddress", js.undefined)
+    inline def setNoAddressUndefined: Self = StObject.set(x, "noAddress", js.undefined)
     
-    @scala.inline
-    def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
+    inline def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
+    inline def setPreemptibleUndefined: Self = StObject.set(x, "preemptible", js.undefined)
     
-    @scala.inline
-    def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    inline def setZones(value: js.Array[String]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
     
-    @scala.inline
-    def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
+    inline def setZonesVarargs(value: String*): Self = StObject.set(x, "zones", js.Array(value :_*))
   }
 }

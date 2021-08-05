@@ -80,6 +80,5 @@ object Grid {
   @JSImport("react-virtualized/dist/es/Grid", "Grid.defaultProps")
   @js.native
   def defaultProps: Ariareadonly = js.native
-  @scala.inline
-  def defaultProps_=(x: Ariareadonly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Ariareadonly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

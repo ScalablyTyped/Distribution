@@ -38,49 +38,35 @@ trait UserData extends StObject {
 }
 object UserData {
   
-  @scala.inline
-  def apply(): UserData = {
+  inline def apply(): UserData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserData]
   }
   
-  @scala.inline
-  implicit class UserDataMutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
+  extension [Self <: UserData](x: Self) {
     
-    @scala.inline
-    def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: Email): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    @scala.inline
-    def setEnrollmentId(value: EnrollmentId): Self = StObject.set(x, "EnrollmentId", value.asInstanceOf[js.Any])
+    inline def setEnrollmentId(value: EnrollmentId): Self = StObject.set(x, "EnrollmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrollmentIdUndefined: Self = StObject.set(x, "EnrollmentId", js.undefined)
+    inline def setEnrollmentIdUndefined: Self = StObject.set(x, "EnrollmentId", js.undefined)
     
-    @scala.inline
-    def setEnrollmentStatus(value: EnrollmentStatus): Self = StObject.set(x, "EnrollmentStatus", value.asInstanceOf[js.Any])
+    inline def setEnrollmentStatus(value: EnrollmentStatus): Self = StObject.set(x, "EnrollmentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnrollmentStatusUndefined: Self = StObject.set(x, "EnrollmentStatus", js.undefined)
+    inline def setEnrollmentStatusUndefined: Self = StObject.set(x, "EnrollmentStatus", js.undefined)
     
-    @scala.inline
-    def setFirstName(value: userFirstName): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: userFirstName): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
+    inline def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
     
-    @scala.inline
-    def setLastName(value: userLastName): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: userLastName): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastNameUndefined: Self = StObject.set(x, "LastName", js.undefined)
+    inline def setLastNameUndefined: Self = StObject.set(x, "LastName", js.undefined)
     
-    @scala.inline
-    def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
+    inline def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
   }
 }

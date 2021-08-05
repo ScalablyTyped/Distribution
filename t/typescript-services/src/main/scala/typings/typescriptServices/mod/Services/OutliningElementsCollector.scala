@@ -102,22 +102,22 @@ class OutliningElementsCollector ()
   extends StObject
      with typings.typescriptServices.TypeScript.Services.OutliningElementsCollector {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _depth: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _maximumDepth: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _position: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def addOutlineRange(node: js.Any, startElement: js.Any, endElement: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def addOutlineRange(node: js.Any, startElement: js.Any, endElement: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var elements: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var inObjectLiteralExpression: js.Any = js.native
   
   /* CompleteClass */
@@ -312,8 +312,8 @@ class OutliningElementsCollector ()
   /* CompleteClass */
   override def visitOptionalNodeOrToken(nodeOrToken: ISyntaxNodeOrToken): Unit = js.native
   
-  /* CompleteClass */
-  /* private */ override def visitOptionalToken(token: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def visitOptionalToken(token: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def visitParameter(node: ParameterSyntax): js.Any = js.native
@@ -415,10 +415,8 @@ object OutliningElementsCollector {
   @JSImport("typescript-services", "Services.OutliningElementsCollector.MaximumDepth")
   @js.native
   def MaximumDepth: js.Any = js.native
-  @scala.inline
-  def MaximumDepth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaximumDepth")(x.asInstanceOf[js.Any])
+  inline def MaximumDepth_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaximumDepth")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def collectElements(node: SourceUnitSyntax): js.Array[TextSpan] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectElements")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[TextSpan]]
+  inline def collectElements(node: SourceUnitSyntax): js.Array[TextSpan] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectElements")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[TextSpan]]
 }

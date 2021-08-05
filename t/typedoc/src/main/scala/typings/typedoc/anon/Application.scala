@@ -10,16 +10,13 @@ trait Application extends StObject {
 }
 object Application {
   
-  @scala.inline
-  def apply(application: typings.typedoc.mod.Application): Application = {
+  inline def apply(application: typings.typedoc.mod.Application): Application = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
     __obj.asInstanceOf[Application]
   }
   
-  @scala.inline
-  implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+  extension [Self <: Application](x: Self) {
     
-    @scala.inline
-    def setApplication(value: typings.typedoc.mod.Application): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: typings.typedoc.mod.Application): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
   }
 }

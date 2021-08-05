@@ -27,31 +27,23 @@ trait SchemaGoogleCloudVideointelligenceV1beta2Entity extends StObject {
 }
 object SchemaGoogleCloudVideointelligenceV1beta2Entity {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1beta2Entity = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1beta2Entity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1beta2Entity]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1beta2EntityMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1beta2Entity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1beta2Entity](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
+    inline def setEntityId(value: String): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
+    inline def setEntityIdUndefined: Self = StObject.set(x, "entityId", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

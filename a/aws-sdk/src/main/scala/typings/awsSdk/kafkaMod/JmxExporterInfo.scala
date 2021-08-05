@@ -15,16 +15,13 @@ trait JmxExporterInfo extends StObject {
 }
 object JmxExporterInfo {
   
-  @scala.inline
-  def apply(EnabledInBroker: boolean): JmxExporterInfo = {
+  inline def apply(EnabledInBroker: boolean): JmxExporterInfo = {
     val __obj = js.Dynamic.literal(EnabledInBroker = EnabledInBroker.asInstanceOf[js.Any])
     __obj.asInstanceOf[JmxExporterInfo]
   }
   
-  @scala.inline
-  implicit class JmxExporterInfoMutableBuilder[Self <: JmxExporterInfo] (val x: Self) extends AnyVal {
+  extension [Self <: JmxExporterInfo](x: Self) {
     
-    @scala.inline
-    def setEnabledInBroker(value: boolean): Self = StObject.set(x, "EnabledInBroker", value.asInstanceOf[js.Any])
+    inline def setEnabledInBroker(value: boolean): Self = StObject.set(x, "EnabledInBroker", value.asInstanceOf[js.Any])
   }
 }

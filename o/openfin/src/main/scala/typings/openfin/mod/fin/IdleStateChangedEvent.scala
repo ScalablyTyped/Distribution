@@ -24,26 +24,20 @@ trait IdleStateChangedEvent extends StObject {
 }
 object IdleStateChangedEvent {
   
-  @scala.inline
-  def apply(elapsedTime: Double, isIdle: Boolean): IdleStateChangedEvent = {
+  inline def apply(elapsedTime: Double, isIdle: Boolean): IdleStateChangedEvent = {
     val __obj = js.Dynamic.literal(elapsedTime = elapsedTime.asInstanceOf[js.Any], isIdle = isIdle.asInstanceOf[js.Any], topic = "system")
     __obj.updateDynamic("type")("idle-state-changed")
     __obj.asInstanceOf[IdleStateChangedEvent]
   }
   
-  @scala.inline
-  implicit class IdleStateChangedEventMutableBuilder[Self <: IdleStateChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IdleStateChangedEvent](x: Self) {
     
-    @scala.inline
-    def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+    inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIdle(value: Boolean): Self = StObject.set(x, "isIdle", value.asInstanceOf[js.Any])
+    inline def setIsIdle(value: Boolean): Self = StObject.set(x, "isIdle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: system): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `idle-state-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `idle-state-changed`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

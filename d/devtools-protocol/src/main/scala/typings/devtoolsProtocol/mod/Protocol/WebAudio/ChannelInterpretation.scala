@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChannelInterpretation extends StObject
 object ChannelInterpretation {
   
-  @scala.inline
-  def discrete: typings.devtoolsProtocol.devtoolsProtocolStrings.discrete = "discrete".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.discrete]
+  inline def discrete: typings.devtoolsProtocol.devtoolsProtocolStrings.discrete = "discrete".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.discrete]
   
-  @scala.inline
-  def speakers: typings.devtoolsProtocol.devtoolsProtocolStrings.speakers = "speakers".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.speakers]
+  inline def speakers: typings.devtoolsProtocol.devtoolsProtocolStrings.speakers = "speakers".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.speakers]
 }

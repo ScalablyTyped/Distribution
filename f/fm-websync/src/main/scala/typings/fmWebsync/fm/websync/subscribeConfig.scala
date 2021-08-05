@@ -46,58 +46,41 @@ trait subscribeConfig
 }
 object subscribeConfig {
   
-  @scala.inline
-  def apply(): subscribeConfig = {
+  inline def apply(): subscribeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[subscribeConfig]
   }
   
-  @scala.inline
-  implicit class subscribeConfigMutableBuilder[Self <: subscribeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: subscribeConfig](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setOnComplete(value: /* args */ subscribeCompleteArgs => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    inline def setOnComplete(value: /* args */ subscribeCompleteArgs => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    @scala.inline
-    def setOnFailure(value: /* args */ subscribeFailureArgs => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
+    inline def setOnFailure(value: /* args */ subscribeFailureArgs => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
     
-    @scala.inline
-    def setOnReceive(value: /* args */ receiveArgs => Unit): Self = StObject.set(x, "onReceive", js.Any.fromFunction1(value))
+    inline def setOnReceive(value: /* args */ receiveArgs => Unit): Self = StObject.set(x, "onReceive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnReceiveUndefined: Self = StObject.set(x, "onReceive", js.undefined)
+    inline def setOnReceiveUndefined: Self = StObject.set(x, "onReceive", js.undefined)
     
-    @scala.inline
-    def setOnSubscribersChange(value: /* args */ subscribersChangeArgs => Unit): Self = StObject.set(x, "onSubscribersChange", js.Any.fromFunction1(value))
+    inline def setOnSubscribersChange(value: /* args */ subscribersChangeArgs => Unit): Self = StObject.set(x, "onSubscribersChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSubscribersChangeUndefined: Self = StObject.set(x, "onSubscribersChange", js.undefined)
+    inline def setOnSubscribersChangeUndefined: Self = StObject.set(x, "onSubscribersChange", js.undefined)
     
-    @scala.inline
-    def setOnSuccess(value: /* args */ subscribeSuccessArgs => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
+    inline def setOnSuccess(value: /* args */ subscribeSuccessArgs => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
   }
 }

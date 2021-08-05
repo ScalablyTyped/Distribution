@@ -15,8 +15,7 @@ trait DelayedTransitionDefinition[TContext, TEvent /* <: EventObject */]
 }
 object DelayedTransitionDefinition {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     actions: js.Array[ActionObject[TContext, TEvent]],
     delay: Double | String | (DelayExpr[TContext, TEvent]),
     eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | typings.xstate.typesMod.ActionTypes.NullEvent | Asterisk,
@@ -27,13 +26,10 @@ object DelayedTransitionDefinition {
     __obj.asInstanceOf[DelayedTransitionDefinition[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class DelayedTransitionDefinitionMutableBuilder[Self <: DelayedTransitionDefinition[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (DelayedTransitionDefinition[TContext, TEvent])) extends AnyVal {
+  extension [Self <: DelayedTransitionDefinition[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (DelayedTransitionDefinition[TContext, TEvent])) {
     
-    @scala.inline
-    def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
+    inline def setDelayFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
   }
 }

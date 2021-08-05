@@ -24,8 +24,7 @@ trait TerminalLinkProvider[T /* <: TerminalLink */] extends StObject {
 }
 object TerminalLinkProvider {
   
-  @scala.inline
-  def apply[T /* <: TerminalLink */](
+  inline def apply[T /* <: TerminalLink */](
     handleTerminalLink: T => ProviderResult[Unit],
     provideTerminalLinks: (TerminalLinkContext, CancellationToken) => ProviderResult[js.Array[T]]
   ): TerminalLinkProvider[T] = {
@@ -33,13 +32,10 @@ object TerminalLinkProvider {
     __obj.asInstanceOf[TerminalLinkProvider[T]]
   }
   
-  @scala.inline
-  implicit class TerminalLinkProviderMutableBuilder[Self <: TerminalLinkProvider[?], T /* <: TerminalLink */] (val x: Self & TerminalLinkProvider[T]) extends AnyVal {
+  extension [Self <: TerminalLinkProvider[?], T /* <: TerminalLink */](x: Self & TerminalLinkProvider[T]) {
     
-    @scala.inline
-    def setHandleTerminalLink(value: T => ProviderResult[Unit]): Self = StObject.set(x, "handleTerminalLink", js.Any.fromFunction1(value))
+    inline def setHandleTerminalLink(value: T => ProviderResult[Unit]): Self = StObject.set(x, "handleTerminalLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProvideTerminalLinks(value: (TerminalLinkContext, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideTerminalLinks", js.Any.fromFunction2(value))
+    inline def setProvideTerminalLinks(value: (TerminalLinkContext, CancellationToken) => ProviderResult[js.Array[T]]): Self = StObject.set(x, "provideTerminalLinks", js.Any.fromFunction2(value))
   }
 }

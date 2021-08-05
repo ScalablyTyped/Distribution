@@ -14,16 +14,13 @@ trait PickImplonTopPassed extends StObject {
 }
 object PickImplonTopPassed {
   
-  @scala.inline
-  def apply(onTopPassed: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonTopPassed = {
+  inline def apply(onTopPassed: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonTopPassed = {
     val __obj = js.Dynamic.literal(onTopPassed = onTopPassed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonTopPassed]
   }
   
-  @scala.inline
-  implicit class PickImplonTopPassedMutableBuilder[Self <: PickImplonTopPassed] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonTopPassed](x: Self) {
     
-    @scala.inline
-    def setOnTopPassed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopPassed", value.asInstanceOf[js.Any])
+    inline def setOnTopPassed(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onTopPassed", value.asInstanceOf[js.Any])
   }
 }

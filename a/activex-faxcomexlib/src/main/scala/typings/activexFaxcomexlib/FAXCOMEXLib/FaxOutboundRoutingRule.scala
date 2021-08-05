@@ -16,7 +16,7 @@ trait FaxOutboundRoutingRule extends StObject {
   /** Destination device */
   var DeviceId: Double
   
-  @JSName("FAXCOMEXLib.FaxOutboundRoutingRule_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxOutboundRoutingRule_typekey")
   var FAXCOMEXLibDotFaxOutboundRoutingRule_typekey: FaxOutboundRoutingRule
   
   /** Group name */
@@ -36,8 +36,7 @@ trait FaxOutboundRoutingRule extends StObject {
 }
 object FaxOutboundRoutingRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AreaCode: Double,
     CountryCode: Double,
     DeviceId: Double,
@@ -53,34 +52,24 @@ object FaxOutboundRoutingRule {
     __obj.asInstanceOf[FaxOutboundRoutingRule]
   }
   
-  @scala.inline
-  implicit class FaxOutboundRoutingRuleMutableBuilder[Self <: FaxOutboundRoutingRule] (val x: Self) extends AnyVal {
+  extension [Self <: FaxOutboundRoutingRule](x: Self) {
     
-    @scala.inline
-    def setAreaCode(value: Double): Self = StObject.set(x, "AreaCode", value.asInstanceOf[js.Any])
+    inline def setAreaCode(value: Double): Self = StObject.set(x, "AreaCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCode(value: Double): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: Double): Self = StObject.set(x, "CountryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: Double): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: Double): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxOutboundRoutingRule_typekey(value: FaxOutboundRoutingRule): Self = StObject.set(x, "FAXCOMEXLib.FaxOutboundRoutingRule_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxOutboundRoutingRule_typekey(value: FaxOutboundRoutingRule): Self = StObject.set(x, "FAXCOMEXLib.FaxOutboundRoutingRule_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStatus(value: FAX_RULE_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FAX_RULE_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseDevice(value: Boolean): Self = StObject.set(x, "UseDevice", value.asInstanceOf[js.Any])
+    inline def setUseDevice(value: Boolean): Self = StObject.set(x, "UseDevice", value.asInstanceOf[js.Any])
   }
 }

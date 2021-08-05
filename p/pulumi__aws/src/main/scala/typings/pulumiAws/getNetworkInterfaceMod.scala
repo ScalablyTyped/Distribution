@@ -15,14 +15,10 @@ object getNetworkInterfaceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getNetworkInterface(): js.Promise[GetNetworkInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")().asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
-  @scala.inline
-  def getNetworkInterface(args: Unit, opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
-  @scala.inline
-  def getNetworkInterface(args: GetNetworkInterfaceArgs): js.Promise[GetNetworkInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
-  @scala.inline
-  def getNetworkInterface(args: GetNetworkInterfaceArgs, opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
+  inline def getNetworkInterface(): js.Promise[GetNetworkInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")().asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
+  inline def getNetworkInterface(args: Unit, opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
+  inline def getNetworkInterface(args: GetNetworkInterfaceArgs): js.Promise[GetNetworkInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
+  inline def getNetworkInterface(args: GetNetworkInterfaceArgs, opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
   
   trait GetNetworkInterfaceArgs extends StObject {
     
@@ -43,35 +39,26 @@ object getNetworkInterfaceMod {
   }
   object GetNetworkInterfaceArgs {
     
-    @scala.inline
-    def apply(): GetNetworkInterfaceArgs = {
+    inline def apply(): GetNetworkInterfaceArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetNetworkInterfaceArgs]
     }
     
-    @scala.inline
-    implicit class GetNetworkInterfaceArgsMutableBuilder[Self <: GetNetworkInterfaceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetNetworkInterfaceArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetNetworkInterfaceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetNetworkInterfaceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetNetworkInterfaceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetNetworkInterfaceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -165,8 +152,7 @@ object getNetworkInterfaceMod {
   }
   object GetNetworkInterfaceResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       associations: js.Array[GetNetworkInterfaceAssociation],
       attachments: js.Array[GetNetworkInterfaceAttachment],
       availabilityZone: String,
@@ -190,86 +176,59 @@ object getNetworkInterfaceMod {
       __obj.asInstanceOf[GetNetworkInterfaceResult]
     }
     
-    @scala.inline
-    implicit class GetNetworkInterfaceResultMutableBuilder[Self <: GetNetworkInterfaceResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetNetworkInterfaceResult](x: Self) {
       
-      @scala.inline
-      def setAssociations(value: js.Array[GetNetworkInterfaceAssociation]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
+      inline def setAssociations(value: js.Array[GetNetworkInterfaceAssociation]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssociationsVarargs(value: GetNetworkInterfaceAssociation*): Self = StObject.set(x, "associations", js.Array(value :_*))
+      inline def setAssociationsVarargs(value: GetNetworkInterfaceAssociation*): Self = StObject.set(x, "associations", js.Array(value :_*))
       
-      @scala.inline
-      def setAttachments(value: js.Array[GetNetworkInterfaceAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[GetNetworkInterfaceAttachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsVarargs(value: GetNetworkInterfaceAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: GetNetworkInterfaceAttachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetNetworkInterfaceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetNetworkInterfaceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetNetworkInterfaceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetNetworkInterfaceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterfaceType(value: String): Self = StObject.set(x, "interfaceType", value.asInstanceOf[js.Any])
+      inline def setInterfaceType(value: String): Self = StObject.set(x, "interfaceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6Addresses(value: js.Array[String]): Self = StObject.set(x, "ipv6Addresses", value.asInstanceOf[js.Any])
+      inline def setIpv6Addresses(value: js.Array[String]): Self = StObject.set(x, "ipv6Addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "ipv6Addresses", js.Array(value :_*))
+      inline def setIpv6AddressesVarargs(value: String*): Self = StObject.set(x, "ipv6Addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+      inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
+      inline def setOutpostArn(value: String): Self = StObject.set(x, "outpostArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateDnsName(value: String): Self = StObject.set(x, "privateDnsName", value.asInstanceOf[js.Any])
+      inline def setPrivateDnsName(value: String): Self = StObject.set(x, "privateDnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIp(value: String): Self = StObject.set(x, "privateIp", value.asInstanceOf[js.Any])
+      inline def setPrivateIp(value: String): Self = StObject.set(x, "privateIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIps(value: js.Array[String]): Self = StObject.set(x, "privateIps", value.asInstanceOf[js.Any])
+      inline def setPrivateIps(value: js.Array[String]): Self = StObject.set(x, "privateIps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIpsVarargs(value: String*): Self = StObject.set(x, "privateIps", js.Array(value :_*))
+      inline def setPrivateIpsVarargs(value: String*): Self = StObject.set(x, "privateIps", js.Array(value :_*))
       
-      @scala.inline
-      def setRequesterId(value: String): Self = StObject.set(x, "requesterId", value.asInstanceOf[js.Any])
+      inline def setRequesterId(value: String): Self = StObject.set(x, "requesterId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
+      inline def setSecurityGroups(value: js.Array[String]): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
+      inline def setSecurityGroupsVarargs(value: String*): Self = StObject.set(x, "securityGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
+      inline def setSubnetId(value: String): Self = StObject.set(x, "subnetId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
 }

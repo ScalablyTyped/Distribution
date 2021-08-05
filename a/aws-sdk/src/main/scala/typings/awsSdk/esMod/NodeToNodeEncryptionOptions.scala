@@ -13,19 +13,15 @@ trait NodeToNodeEncryptionOptions extends StObject {
 }
 object NodeToNodeEncryptionOptions {
   
-  @scala.inline
-  def apply(): NodeToNodeEncryptionOptions = {
+  inline def apply(): NodeToNodeEncryptionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeToNodeEncryptionOptions]
   }
   
-  @scala.inline
-  implicit class NodeToNodeEncryptionOptionsMutableBuilder[Self <: NodeToNodeEncryptionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NodeToNodeEncryptionOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
   }
 }

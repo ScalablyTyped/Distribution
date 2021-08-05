@@ -20,8 +20,7 @@ trait ResizeConstraints extends StObject {
 }
 object ResizeConstraints {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottom: Boolean,
     fixedHeight: Boolean,
     fixedWidth: Boolean,
@@ -33,25 +32,18 @@ object ResizeConstraints {
     __obj.asInstanceOf[ResizeConstraints]
   }
   
-  @scala.inline
-  implicit class ResizeConstraintsMutableBuilder[Self <: ResizeConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeConstraints](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedHeight(value: Boolean): Self = StObject.set(x, "fixedHeight", value.asInstanceOf[js.Any])
+    inline def setFixedHeight(value: Boolean): Self = StObject.set(x, "fixedHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedWidth(value: Boolean): Self = StObject.set(x, "fixedWidth", value.asInstanceOf[js.Any])
+    inline def setFixedWidth(value: Boolean): Self = StObject.set(x, "fixedWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Boolean): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

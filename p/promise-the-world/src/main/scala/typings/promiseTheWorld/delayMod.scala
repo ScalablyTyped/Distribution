@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object delayMod {
   
-  @scala.inline
-  def apply(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("promise-the-world/delay", JSImport.Namespace)
   @js.native

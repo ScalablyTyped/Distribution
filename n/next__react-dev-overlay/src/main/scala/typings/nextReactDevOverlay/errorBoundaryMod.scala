@@ -42,20 +42,16 @@ object errorBoundaryMod {
   }
   object ErrorBoundaryState {
     
-    @scala.inline
-    def apply(): ErrorBoundaryState = {
+    inline def apply(): ErrorBoundaryState = {
       val __obj = js.Dynamic.literal(error = null)
       __obj.asInstanceOf[ErrorBoundaryState]
     }
     
-    @scala.inline
-    implicit class ErrorBoundaryStateMutableBuilder[Self <: ErrorBoundaryState] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorBoundaryState](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorNull: Self = StObject.set(x, "error", null)
+      inline def setErrorNull: Self = StObject.set(x, "error", null)
     }
   }
 }

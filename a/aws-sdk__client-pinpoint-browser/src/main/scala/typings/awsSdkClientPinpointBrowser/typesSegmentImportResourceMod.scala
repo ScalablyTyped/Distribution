@@ -45,50 +45,36 @@ object typesSegmentImportResourceMod {
   }
   object SegmentImportResource {
     
-    @scala.inline
-    def apply(): SegmentImportResource = {
+    inline def apply(): SegmentImportResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SegmentImportResource]
     }
     
-    @scala.inline
-    implicit class SegmentImportResourceMutableBuilder[Self <: SegmentImportResource] (val x: Self) extends AnyVal {
+    extension [Self <: SegmentImportResource](x: Self) {
       
-      @scala.inline
-      def setChannelCounts(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
+      inline def setChannelCounts(value: StringDictionary[Double] | (Iterable[js.Tuple2[String, Double]])): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelCountsUndefined: Self = StObject.set(x, "ChannelCounts", js.undefined)
+      inline def setChannelCountsUndefined: Self = StObject.set(x, "ChannelCounts", js.undefined)
       
-      @scala.inline
-      def setExternalId(value: String): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
+      inline def setExternalId(value: String): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
+      inline def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
       
-      @scala.inline
-      def setFormat(value: CSV | JSON | String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: CSV | JSON | String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
       
-      @scala.inline
-      def setS3Url(value: String): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
+      inline def setS3Url(value: String): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3UrlUndefined: Self = StObject.set(x, "S3Url", js.undefined)
+      inline def setS3UrlUndefined: Self = StObject.set(x, "S3Url", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "Size", js.undefined)
     }
   }
   
@@ -104,20 +90,16 @@ object typesSegmentImportResourceMod {
   }
   object UnmarshalledSegmentImportResource {
     
-    @scala.inline
-    def apply(): UnmarshalledSegmentImportResource = {
+    inline def apply(): UnmarshalledSegmentImportResource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledSegmentImportResource]
     }
     
-    @scala.inline
-    implicit class UnmarshalledSegmentImportResourceMutableBuilder[Self <: UnmarshalledSegmentImportResource] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledSegmentImportResource](x: Self) {
       
-      @scala.inline
-      def setChannelCounts(value: StringDictionary[Double]): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
+      inline def setChannelCounts(value: StringDictionary[Double]): Self = StObject.set(x, "ChannelCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelCountsUndefined: Self = StObject.set(x, "ChannelCounts", js.undefined)
+      inline def setChannelCountsUndefined: Self = StObject.set(x, "ChannelCounts", js.undefined)
     }
   }
 }

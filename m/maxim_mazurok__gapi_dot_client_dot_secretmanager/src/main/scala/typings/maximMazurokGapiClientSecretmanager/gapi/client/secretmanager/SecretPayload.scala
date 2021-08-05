@@ -11,19 +11,15 @@ trait SecretPayload extends StObject {
 }
 object SecretPayload {
   
-  @scala.inline
-  def apply(): SecretPayload = {
+  inline def apply(): SecretPayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecretPayload]
   }
   
-  @scala.inline
-  implicit class SecretPayloadMutableBuilder[Self <: SecretPayload] (val x: Self) extends AnyVal {
+  extension [Self <: SecretPayload](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

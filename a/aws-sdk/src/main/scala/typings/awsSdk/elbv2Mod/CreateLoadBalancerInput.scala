@@ -53,76 +53,53 @@ trait CreateLoadBalancerInput extends StObject {
 }
 object CreateLoadBalancerInput {
   
-  @scala.inline
-  def apply(Name: LoadBalancerName): CreateLoadBalancerInput = {
+  inline def apply(Name: LoadBalancerName): CreateLoadBalancerInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLoadBalancerInput]
   }
   
-  @scala.inline
-  implicit class CreateLoadBalancerInputMutableBuilder[Self <: CreateLoadBalancerInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLoadBalancerInput](x: Self) {
     
-    @scala.inline
-    def setCustomerOwnedIpv4Pool(value: CustomerOwnedIpv4Pool): Self = StObject.set(x, "CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
+    inline def setCustomerOwnedIpv4Pool(value: CustomerOwnedIpv4Pool): Self = StObject.set(x, "CustomerOwnedIpv4Pool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "CustomerOwnedIpv4Pool", js.undefined)
+    inline def setCustomerOwnedIpv4PoolUndefined: Self = StObject.set(x, "CustomerOwnedIpv4Pool", js.undefined)
     
-    @scala.inline
-    def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
     
-    @scala.inline
-    def setName(value: LoadBalancerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: LoadBalancerName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: LoadBalancerSchemeEnum): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: LoadBalancerSchemeEnum): Self = StObject.set(x, "Scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeUndefined: Self = StObject.set(x, "Scheme", js.undefined)
+    inline def setSchemeUndefined: Self = StObject.set(x, "Scheme", js.undefined)
     
-    @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetMappings(value: SubnetMappings): Self = StObject.set(x, "SubnetMappings", value.asInstanceOf[js.Any])
+    inline def setSubnetMappings(value: SubnetMappings): Self = StObject.set(x, "SubnetMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetMappingsUndefined: Self = StObject.set(x, "SubnetMappings", js.undefined)
+    inline def setSubnetMappingsUndefined: Self = StObject.set(x, "SubnetMappings", js.undefined)
     
-    @scala.inline
-    def setSubnetMappingsVarargs(value: SubnetMapping*): Self = StObject.set(x, "SubnetMappings", js.Array(value :_*))
+    inline def setSubnetMappingsVarargs(value: SubnetMapping*): Self = StObject.set(x, "SubnetMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnets(value: Subnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
+    inline def setSubnets(value: Subnets): Self = StObject.set(x, "Subnets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
+    inline def setSubnetsUndefined: Self = StObject.set(x, "Subnets", js.undefined)
     
-    @scala.inline
-    def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
+    inline def setSubnetsVarargs(value: SubnetId*): Self = StObject.set(x, "Subnets", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: LoadBalancerTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: LoadBalancerTypeEnum): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

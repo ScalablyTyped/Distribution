@@ -10,23 +10,23 @@ object hilbertCurveMod {
   @js.native
   class HilbertCurveBase () extends StObject {
     
-    var _callback: js.Any = js.native
+    /* private */ var _callback: js.Any = js.native
     
-    var _d: js.Any = js.native
+    /* private */ var _d: js.Any = js.native
     
-    var _height: js.Any = js.native
+    /* private */ var _height: js.Any = js.native
     
-    var _level: js.Any = js.native
+    /* private */ var _level: js.Any = js.native
     
     /* private */ def _visit(direction: js.Any): js.Any = js.native
     
     /* private */ def _walkHilbert(direction: js.Any): js.Any = js.native
     
-    var _width: js.Any = js.native
+    /* private */ var _width: js.Any = js.native
     
-    var _x: js.Any = js.native
+    /* private */ var _x: js.Any = js.native
     
-    var _y: js.Any = js.native
+    /* private */ var _y: js.Any = js.native
     
     def walk(
       width: Double,

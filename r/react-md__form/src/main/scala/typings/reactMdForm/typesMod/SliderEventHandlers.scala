@@ -25,37 +25,27 @@ trait SliderEventHandlers extends StObject {
 }
 object SliderEventHandlers {
   
-  @scala.inline
-  def apply(): SliderEventHandlers = {
+  inline def apply(): SliderEventHandlers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliderEventHandlers]
   }
   
-  @scala.inline
-  implicit class SliderEventHandlersMutableBuilder[Self <: SliderEventHandlers] (val x: Self) extends AnyVal {
+  extension [Self <: SliderEventHandlers](x: Self) {
     
-    @scala.inline
-    def setOnKeyDown(value: KeyboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: KeyboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+    inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     
-    @scala.inline
-    def setOnKeyUp(value: KeyboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+    inline def setOnKeyUp(value: KeyboardEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+    inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
     
-    @scala.inline
-    def setOnMouseDown(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    inline def setOnMouseDown(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+    inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
-    @scala.inline
-    def setOnTouchStart(value: TouchEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+    inline def setOnTouchStart(value: TouchEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
   }
 }

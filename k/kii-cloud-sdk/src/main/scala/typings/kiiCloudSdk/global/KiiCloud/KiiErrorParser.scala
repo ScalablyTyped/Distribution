@@ -44,8 +44,6 @@ object KiiErrorParser {
     *     var errorMessage = err.message;
     */
   /* static member */
-  @scala.inline
-  def parse(error: String): KiiError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(error.asInstanceOf[js.Any]).asInstanceOf[KiiError]
-  @scala.inline
-  def parse(error: Error): KiiError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(error.asInstanceOf[js.Any]).asInstanceOf[KiiError]
+  inline def parse(error: String): KiiError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(error.asInstanceOf[js.Any]).asInstanceOf[KiiError]
+  inline def parse(error: Error): KiiError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(error.asInstanceOf[js.Any]).asInstanceOf[KiiError]
 }

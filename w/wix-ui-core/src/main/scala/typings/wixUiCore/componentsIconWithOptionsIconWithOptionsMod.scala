@@ -53,86 +53,60 @@ object componentsIconWithOptionsIconWithOptionsMod {
   }
   object IconWithOptionsProps {
     
-    @scala.inline
-    def apply(iconUrl: String, options: js.Array[Option]): IconWithOptionsProps = {
+    inline def apply(iconUrl: String, options: js.Array[Option]): IconWithOptionsProps = {
       val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconWithOptionsProps]
     }
     
-    @scala.inline
-    implicit class IconWithOptionsPropsMutableBuilder[Self <: IconWithOptionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconWithOptionsProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setFixedFooter(value: ReactNode): Self = StObject.set(x, "fixedFooter", value.asInstanceOf[js.Any])
+      inline def setFixedFooter(value: ReactNode): Self = StObject.set(x, "fixedFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedFooterUndefined: Self = StObject.set(x, "fixedFooter", js.undefined)
+      inline def setFixedFooterUndefined: Self = StObject.set(x, "fixedFooter", js.undefined)
       
-      @scala.inline
-      def setFixedHeader(value: ReactNode): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+      inline def setFixedHeader(value: ReactNode): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+      inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
       
-      @scala.inline
-      def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+      inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSelectedIds(value: js.Array[String | Double]): Self = StObject.set(x, "initialSelectedIds", value.asInstanceOf[js.Any])
+      inline def setInitialSelectedIds(value: js.Array[String | Double]): Self = StObject.set(x, "initialSelectedIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSelectedIdsUndefined: Self = StObject.set(x, "initialSelectedIds", js.undefined)
+      inline def setInitialSelectedIdsUndefined: Self = StObject.set(x, "initialSelectedIds", js.undefined)
       
-      @scala.inline
-      def setInitialSelectedIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "initialSelectedIds", js.Array(value :_*))
+      inline def setInitialSelectedIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "initialSelectedIds", js.Array(value :_*))
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
       
-      @scala.inline
-      def setOnDeselect(value: /* option */ Option => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
+      inline def setOnDeselect(value: /* option */ Option => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
+      inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* option */ Option => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* option */ Option => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOpenTrigger(value: OPEN_TRIGGER_TYPE): Self = StObject.set(x, "openTrigger", value.asInstanceOf[js.Any])
+      inline def setOpenTrigger(value: OPEN_TRIGGER_TYPE): Self = StObject.set(x, "openTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenTriggerUndefined: Self = StObject.set(x, "openTrigger", js.undefined)
+      inline def setOpenTriggerUndefined: Self = StObject.set(x, "openTrigger", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     }
   }
 }

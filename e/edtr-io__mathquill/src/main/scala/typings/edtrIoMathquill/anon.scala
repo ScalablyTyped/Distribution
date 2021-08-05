@@ -19,38 +19,28 @@ object anon {
   }
   object Edit {
     
-    @scala.inline
-    def apply(): Edit = {
+    inline def apply(): Edit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Edit]
     }
     
-    @scala.inline
-    implicit class EditMutableBuilder[Self <: Edit] (val x: Self) extends AnyVal {
+    extension [Self <: Edit](x: Self) {
       
-      @scala.inline
-      def setEdit(value: /* mathField */ MQ => js.Any): Self = StObject.set(x, "edit", js.Any.fromFunction1(value))
+      inline def setEdit(value: /* mathField */ MQ => js.Any): Self = StObject.set(x, "edit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+      inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
       
-      @scala.inline
-      def setEnter(value: /* mathField */ MQ => js.Any): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+      inline def setEnter(value: /* mathField */ MQ => js.Any): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+      inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
       
-      @scala.inline
-      def setMoveOutOf(value: (/* direction */ Double, /* mathField */ MQ) => js.Any): Self = StObject.set(x, "moveOutOf", js.Any.fromFunction2(value))
+      inline def setMoveOutOf(value: (/* direction */ Double, /* mathField */ MQ) => js.Any): Self = StObject.set(x, "moveOutOf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMoveOutOfUndefined: Self = StObject.set(x, "moveOutOf", js.undefined)
+      inline def setMoveOutOfUndefined: Self = StObject.set(x, "moveOutOf", js.undefined)
       
-      @scala.inline
-      def setUpOutOf(value: /* mathField */ MQ => js.Any): Self = StObject.set(x, "upOutOf", js.Any.fromFunction1(value))
+      inline def setUpOutOf(value: /* mathField */ MQ => js.Any): Self = StObject.set(x, "upOutOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpOutOfUndefined: Self = StObject.set(x, "upOutOf", js.undefined)
+      inline def setUpOutOfUndefined: Self = StObject.set(x, "upOutOf", js.undefined)
     }
   }
 }

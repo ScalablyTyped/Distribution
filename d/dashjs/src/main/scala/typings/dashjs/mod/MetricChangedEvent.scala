@@ -19,20 +19,16 @@ trait MetricChangedEvent
 }
 object MetricChangedEvent {
   
-  @scala.inline
-  def apply(mediaType: video | audio | fragmentedText): MetricChangedEvent = {
+  inline def apply(mediaType: video | audio | fragmentedText): MetricChangedEvent = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("metricChanged")
     __obj.asInstanceOf[MetricChangedEvent]
   }
   
-  @scala.inline
-  implicit class MetricChangedEventMutableBuilder[Self <: MetricChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MetricChangedEvent](x: Self) {
     
-    @scala.inline
-    def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: video | audio | fragmentedText): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: metricChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: metricChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

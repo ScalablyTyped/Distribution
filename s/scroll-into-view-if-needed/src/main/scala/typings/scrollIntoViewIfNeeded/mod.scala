@@ -14,14 +14,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(target: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default(target: Element, options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default(target: Element, options: Options[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def default[T](target: Element, options: CustomBehaviorOptions[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default(target: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(target: Element, options: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(target: Element, options: Options[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default[T](target: Element, options: CustomBehaviorOptions[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   trait CustomBehaviorOptions[T]
     extends StObject
@@ -33,17 +29,14 @@ object mod {
   }
   object CustomBehaviorOptions {
     
-    @scala.inline
-    def apply[T](behavior: /* actions */ js.Array[CustomScrollAction] => T): CustomBehaviorOptions[T] = {
+    inline def apply[T](behavior: /* actions */ js.Array[CustomScrollAction] => T): CustomBehaviorOptions[T] = {
       val __obj = js.Dynamic.literal(behavior = js.Any.fromFunction1(behavior))
       __obj.asInstanceOf[CustomBehaviorOptions[T]]
     }
     
-    @scala.inline
-    implicit class CustomBehaviorOptionsMutableBuilder[Self <: CustomBehaviorOptions[?], T] (val x: Self & CustomBehaviorOptions[T]) extends AnyVal {
+    extension [Self <: CustomBehaviorOptions[?], T](x: Self & CustomBehaviorOptions[T]) {
       
-      @scala.inline
-      def setBehavior(value: /* actions */ js.Array[CustomScrollAction] => T): Self = StObject.set(x, "behavior", js.Any.fromFunction1(value))
+      inline def setBehavior(value: /* actions */ js.Array[CustomScrollAction] => T): Self = StObject.set(x, "behavior", js.Any.fromFunction1(value))
     }
   }
   
@@ -55,23 +48,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[T](): Options[T] = {
+    inline def apply[T](): Options[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[T]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
+    extension [Self <: Options[?], T](x: Self & Options[T]) {
       
-      @scala.inline
-      def setBehavior(value: ScrollBehavior | CustomScrollBehaviorCallback[T]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: ScrollBehavior | CustomScrollBehaviorCallback[T]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorFunction1(value: /* actions */ js.Array[CustomScrollAction] => T): Self = StObject.set(x, "behavior", js.Any.fromFunction1(value))
+      inline def setBehaviorFunction1(value: /* actions */ js.Array[CustomScrollAction] => T): Self = StObject.set(x, "behavior", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+      inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     }
   }
   
@@ -83,20 +71,16 @@ object mod {
   }
   object StandardBehaviorOptions {
     
-    @scala.inline
-    def apply(): StandardBehaviorOptions = {
+    inline def apply(): StandardBehaviorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StandardBehaviorOptions]
     }
     
-    @scala.inline
-    implicit class StandardBehaviorOptionsMutableBuilder[Self <: StandardBehaviorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StandardBehaviorOptions](x: Self) {
       
-      @scala.inline
-      def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+      inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
     }
   }
 }

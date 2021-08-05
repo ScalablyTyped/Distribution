@@ -16,14 +16,10 @@ object addonsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ensurePanel(panels: Panels): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def ensurePanel(panels: Panels, selectedPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def ensurePanel(panels: Panels, selectedPanel: String, currentPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any], currentPanel.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def ensurePanel(panels: Panels, selectedPanel: Unit, currentPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any], currentPanel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ensurePanel(panels: Panels): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def ensurePanel(panels: Panels, selectedPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ensurePanel(panels: Panels, selectedPanel: String, currentPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any], currentPanel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ensurePanel(panels: Panels, selectedPanel: Unit, currentPanel: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePanel")(panels.asInstanceOf[js.Any], selectedPanel.asInstanceOf[js.Any], currentPanel.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@storybook/api/dist/modules/addons", "init")
   @js.native
@@ -91,62 +87,44 @@ object addonsMod {
   }
   object Addon {
     
-    @scala.inline
-    def apply(render: RenderOptions => ReactElement, title: String): Addon = {
+    inline def apply(render: RenderOptions => ReactElement, title: String): Addon = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render), title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[Addon]
     }
     
-    @scala.inline
-    implicit class AddonMutableBuilder[Self <: Addon] (val x: Self) extends AnyVal {
+    extension [Self <: Addon](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMatch(value: /* matchOptions */ MatchOptions => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
+      inline def setMatch(value: /* matchOptions */ MatchOptions => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+      inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
       
-      @scala.inline
-      def setParamKey(value: String): Self = StObject.set(x, "paramKey", value.asInstanceOf[js.Any])
+      inline def setParamKey(value: String): Self = StObject.set(x, "paramKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamKeyUndefined: Self = StObject.set(x, "paramKey", js.undefined)
+      inline def setParamKeyUndefined: Self = StObject.set(x, "paramKey", js.undefined)
       
-      @scala.inline
-      def setRender(value: RenderOptions => ReactElement): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: RenderOptions => ReactElement): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRoute(value: /* routeOptions */ RouteOptions => String): Self = StObject.set(x, "route", js.Any.fromFunction1(value))
+      inline def setRoute(value: /* routeOptions */ RouteOptions => String): Self = StObject.set(x, "route", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+      inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Types_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Types_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -164,29 +142,22 @@ object addonsMod {
   }
   object MatchOptions {
     
-    @scala.inline
-    def apply(location: WindowLocation[LocationState], path: String, storyId: String): MatchOptions = {
+    inline def apply(location: WindowLocation[LocationState], path: String, storyId: String): MatchOptions = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchOptions]
     }
     
-    @scala.inline
-    implicit class MatchOptionsMutableBuilder[Self <: MatchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MatchOptions](x: Self) {
       
-      @scala.inline
-      def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+      inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+      inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
     }
   }
   
@@ -200,20 +171,16 @@ object addonsMod {
   }
   object RenderOptions {
     
-    @scala.inline
-    def apply(active: Boolean, key: String): RenderOptions = {
+    inline def apply(active: Boolean, key: String): RenderOptions = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderOptions]
     }
     
-    @scala.inline
-    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenderOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,29 +196,22 @@ object addonsMod {
   }
   object RouteOptions {
     
-    @scala.inline
-    def apply(location: WindowLocation[LocationState], path: String, storyId: String): RouteOptions = {
+    inline def apply(location: WindowLocation[LocationState], path: String, storyId: String): RouteOptions = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteOptions]
     }
     
-    @scala.inline
-    implicit class RouteOptionsMutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouteOptions](x: Self) {
       
-      @scala.inline
-      def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
+      inline def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      inline def setViewMode(value: ViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+      inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
     }
   }
   

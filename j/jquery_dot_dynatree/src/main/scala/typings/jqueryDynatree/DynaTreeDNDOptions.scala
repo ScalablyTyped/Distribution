@@ -40,64 +40,45 @@ trait DynaTreeDNDOptions extends StObject {
 }
 object DynaTreeDNDOptions {
   
-  @scala.inline
-  def apply(revert: Boolean): DynaTreeDNDOptions = {
+  inline def apply(revert: Boolean): DynaTreeDNDOptions = {
     val __obj = js.Dynamic.literal(revert = revert.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeDNDOptions]
   }
   
-  @scala.inline
-  implicit class DynaTreeDNDOptionsMutableBuilder[Self <: DynaTreeDNDOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DynaTreeDNDOptions](x: Self) {
     
-    @scala.inline
-    def setAutoExpandMS(value: Double): Self = StObject.set(x, "autoExpandMS", value.asInstanceOf[js.Any])
+    inline def setAutoExpandMS(value: Double): Self = StObject.set(x, "autoExpandMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoExpandMSUndefined: Self = StObject.set(x, "autoExpandMS", js.undefined)
+    inline def setAutoExpandMSUndefined: Self = StObject.set(x, "autoExpandMS", js.undefined)
     
-    @scala.inline
-    def setOnDragEnter(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction2(value))
+    inline def setOnDragEnter(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit): Self = StObject.set(x, "onDragEnter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
+    inline def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
     
-    @scala.inline
-    def setOnDragLeave(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction2(value))
+    inline def setOnDragLeave(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any) => Unit): Self = StObject.set(x, "onDragLeave", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
+    inline def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
     
-    @scala.inline
-    def setOnDragOver(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction3(value))
+    inline def setOnDragOver(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String) => Unit): Self = StObject.set(x, "onDragOver", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
+    inline def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
     
-    @scala.inline
-    def setOnDragStart(value: /* sourceNode */ js.Any => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    inline def setOnDragStart(value: /* sourceNode */ js.Any => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+    inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
-    @scala.inline
-    def setOnDragStop(value: /* sourceNode */ js.Any => Unit): Self = StObject.set(x, "onDragStop", js.Any.fromFunction1(value))
+    inline def setOnDragStop(value: /* sourceNode */ js.Any => Unit): Self = StObject.set(x, "onDragStop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragStopUndefined: Self = StObject.set(x, "onDragStop", js.undefined)
+    inline def setOnDragStopUndefined: Self = StObject.set(x, "onDragStop", js.undefined)
     
-    @scala.inline
-    def setOnDrop(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction3(value))
+    inline def setOnDrop(value: (/* targetNode */ js.Any, /* sourceNode */ js.Any, /* hitMode */ String) => Unit): Self = StObject.set(x, "onDrop", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
+    inline def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
     
-    @scala.inline
-    def setPreventVoidMoves(value: Boolean): Self = StObject.set(x, "preventVoidMoves", value.asInstanceOf[js.Any])
+    inline def setPreventVoidMoves(value: Boolean): Self = StObject.set(x, "preventVoidMoves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventVoidMovesUndefined: Self = StObject.set(x, "preventVoidMoves", js.undefined)
+    inline def setPreventVoidMovesUndefined: Self = StObject.set(x, "preventVoidMoves", js.undefined)
     
-    @scala.inline
-    def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+    inline def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
   }
 }

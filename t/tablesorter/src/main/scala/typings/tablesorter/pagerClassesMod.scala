@@ -25,32 +25,24 @@ object pagerClassesMod {
   }
   object PagerClasses {
     
-    @scala.inline
-    def apply(): PagerClasses = {
+    inline def apply(): PagerClasses = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PagerClasses]
     }
     
-    @scala.inline
-    implicit class PagerClassesMutableBuilder[Self <: PagerClasses] (val x: Self) extends AnyVal {
+    extension [Self <: PagerClasses](x: Self) {
       
-      @scala.inline
-      def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setErrorRow(value: String): Self = StObject.set(x, "errorRow", value.asInstanceOf[js.Any])
+      inline def setErrorRow(value: String): Self = StObject.set(x, "errorRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorRowUndefined: Self = StObject.set(x, "errorRow", js.undefined)
+      inline def setErrorRowUndefined: Self = StObject.set(x, "errorRow", js.undefined)
     }
   }
 }

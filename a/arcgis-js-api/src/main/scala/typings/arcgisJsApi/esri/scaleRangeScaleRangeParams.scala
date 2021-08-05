@@ -41,8 +41,7 @@ trait scaleRangeScaleRangeParams
 }
 object scaleRangeScaleRangeParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer,
@@ -53,25 +52,18 @@ object scaleRangeScaleRangeParams {
     __obj.asInstanceOf[scaleRangeScaleRangeParams]
   }
   
-  @scala.inline
-  implicit class scaleRangeScaleRangeParamsMutableBuilder[Self <: scaleRangeScaleRangeParams] (val x: Self) extends AnyVal {
+  extension [Self <: scaleRangeScaleRangeParams](x: Self) {
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
+    inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
+    inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

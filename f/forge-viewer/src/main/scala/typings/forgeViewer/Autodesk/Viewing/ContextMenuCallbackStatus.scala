@@ -16,25 +16,19 @@ trait ContextMenuCallbackStatus extends StObject {
 }
 object ContextMenuCallbackStatus {
   
-  @scala.inline
-  def apply(hasHidden: Boolean, hasSelected: Boolean, hasVisible: Boolean, numSelected: Double): ContextMenuCallbackStatus = {
+  inline def apply(hasHidden: Boolean, hasSelected: Boolean, hasVisible: Boolean, numSelected: Double): ContextMenuCallbackStatus = {
     val __obj = js.Dynamic.literal(hasHidden = hasHidden.asInstanceOf[js.Any], hasSelected = hasSelected.asInstanceOf[js.Any], hasVisible = hasVisible.asInstanceOf[js.Any], numSelected = numSelected.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuCallbackStatus]
   }
   
-  @scala.inline
-  implicit class ContextMenuCallbackStatusMutableBuilder[Self <: ContextMenuCallbackStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ContextMenuCallbackStatus](x: Self) {
     
-    @scala.inline
-    def setHasHidden(value: Boolean): Self = StObject.set(x, "hasHidden", value.asInstanceOf[js.Any])
+    inline def setHasHidden(value: Boolean): Self = StObject.set(x, "hasHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasSelected(value: Boolean): Self = StObject.set(x, "hasSelected", value.asInstanceOf[js.Any])
+    inline def setHasSelected(value: Boolean): Self = StObject.set(x, "hasSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasVisible(value: Boolean): Self = StObject.set(x, "hasVisible", value.asInstanceOf[js.Any])
+    inline def setHasVisible(value: Boolean): Self = StObject.set(x, "hasVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumSelected(value: Double): Self = StObject.set(x, "numSelected", value.asInstanceOf[js.Any])
+    inline def setNumSelected(value: Double): Self = StObject.set(x, "numSelected", value.asInstanceOf[js.Any])
   }
 }

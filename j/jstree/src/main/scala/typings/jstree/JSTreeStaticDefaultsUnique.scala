@@ -31,22 +31,17 @@ trait JSTreeStaticDefaultsUnique extends StObject {
 }
 object JSTreeStaticDefaultsUnique {
   
-  @scala.inline
-  def apply(case_sensitive: Boolean, duplicate: (String, Double) => String, trim_whitespace: Boolean): JSTreeStaticDefaultsUnique = {
+  inline def apply(case_sensitive: Boolean, duplicate: (String, Double) => String, trim_whitespace: Boolean): JSTreeStaticDefaultsUnique = {
     val __obj = js.Dynamic.literal(case_sensitive = case_sensitive.asInstanceOf[js.Any], duplicate = js.Any.fromFunction2(duplicate), trim_whitespace = trim_whitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsUnique]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsUniqueMutableBuilder[Self <: JSTreeStaticDefaultsUnique] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaultsUnique](x: Self) {
     
-    @scala.inline
-    def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
+    inline def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplicate(value: (String, Double) => String): Self = StObject.set(x, "duplicate", js.Any.fromFunction2(value))
+    inline def setDuplicate(value: (String, Double) => String): Self = StObject.set(x, "duplicate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTrim_whitespace(value: Boolean): Self = StObject.set(x, "trim_whitespace", value.asInstanceOf[js.Any])
+    inline def setTrim_whitespace(value: Boolean): Self = StObject.set(x, "trim_whitespace", value.asInstanceOf[js.Any])
   }
 }

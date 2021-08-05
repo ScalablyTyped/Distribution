@@ -11,16 +11,13 @@ trait FusionTablesMarkerOptions extends StObject {
 }
 object FusionTablesMarkerOptions {
   
-  @scala.inline
-  def apply(iconName: String): FusionTablesMarkerOptions = {
+  inline def apply(iconName: String): FusionTablesMarkerOptions = {
     val __obj = js.Dynamic.literal(iconName = iconName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusionTablesMarkerOptions]
   }
   
-  @scala.inline
-  implicit class FusionTablesMarkerOptionsMutableBuilder[Self <: FusionTablesMarkerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FusionTablesMarkerOptions](x: Self) {
     
-    @scala.inline
-    def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
+    inline def setIconName(value: String): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
   }
 }

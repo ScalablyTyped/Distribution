@@ -13,20 +13,16 @@ object anon {
   }
   object DetectedPlanes {
     
-    @scala.inline
-    def apply(): DetectedPlanes = {
+    inline def apply(): DetectedPlanes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DetectedPlanes]
     }
     
-    @scala.inline
-    implicit class DetectedPlanesMutableBuilder[Self <: DetectedPlanes] (val x: Self) extends AnyVal {
+    extension [Self <: DetectedPlanes](x: Self) {
       
-      @scala.inline
-      def setDetectedPlanes(value: XRPlaneSet): Self = StObject.set(x, "detectedPlanes", value.asInstanceOf[js.Any])
+      inline def setDetectedPlanes(value: XRPlaneSet): Self = StObject.set(x, "detectedPlanes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectedPlanesUndefined: Self = StObject.set(x, "detectedPlanes", js.undefined)
+      inline def setDetectedPlanesUndefined: Self = StObject.set(x, "detectedPlanes", js.undefined)
     }
   }
   
@@ -36,17 +32,14 @@ object anon {
   }
   object Enabled {
     
-    @scala.inline
-    def apply(enabled: Boolean): Enabled = {
+    inline def apply(enabled: Boolean): Enabled = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Enabled]
     }
     
-    @scala.inline
-    implicit class EnabledMutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
+    extension [Self <: Enabled](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,20 +49,16 @@ object anon {
   }
   object PlaneDetectionState {
     
-    @scala.inline
-    def apply(): PlaneDetectionState = {
+    inline def apply(): PlaneDetectionState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PlaneDetectionState]
     }
     
-    @scala.inline
-    implicit class PlaneDetectionStateMutableBuilder[Self <: PlaneDetectionState] (val x: Self) extends AnyVal {
+    extension [Self <: PlaneDetectionState](x: Self) {
       
-      @scala.inline
-      def setPlaneDetectionState(value: Enabled): Self = StObject.set(x, "planeDetectionState", value.asInstanceOf[js.Any])
+      inline def setPlaneDetectionState(value: Enabled): Self = StObject.set(x, "planeDetectionState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaneDetectionStateUndefined: Self = StObject.set(x, "planeDetectionState", js.undefined)
+      inline def setPlaneDetectionStateUndefined: Self = StObject.set(x, "planeDetectionState", js.undefined)
     }
   }
 }

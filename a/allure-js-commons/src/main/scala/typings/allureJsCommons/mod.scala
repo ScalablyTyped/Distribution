@@ -164,17 +164,14 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(targetDir: String): Options = {
+    inline def apply(targetDir: String): Options = {
       val __obj = js.Dynamic.literal(targetDir = targetDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setTargetDir(value: String): Self = StObject.set(x, "targetDir", value.asInstanceOf[js.Any])
+      inline def setTargetDir(value: String): Self = StObject.set(x, "targetDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -188,19 +185,14 @@ object mod {
   trait Status extends StObject
   object Status {
     
-    @scala.inline
-    def broken: typings.allureJsCommons.allureJsCommonsStrings.broken = "broken".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.broken]
+    inline def broken: typings.allureJsCommons.allureJsCommonsStrings.broken = "broken".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.broken]
     
-    @scala.inline
-    def failed: typings.allureJsCommons.allureJsCommonsStrings.failed = "failed".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.failed]
+    inline def failed: typings.allureJsCommons.allureJsCommonsStrings.failed = "failed".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.failed]
     
-    @scala.inline
-    def passed: typings.allureJsCommons.allureJsCommonsStrings.passed = "passed".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.passed]
+    inline def passed: typings.allureJsCommons.allureJsCommonsStrings.passed = "passed".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.passed]
     
-    @scala.inline
-    def pending: typings.allureJsCommons.allureJsCommonsStrings.pending = "pending".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.pending]
+    inline def pending: typings.allureJsCommons.allureJsCommonsStrings.pending = "pending".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.pending]
     
-    @scala.inline
-    def skipped: typings.allureJsCommons.allureJsCommonsStrings.skipped = "skipped".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.skipped]
+    inline def skipped: typings.allureJsCommons.allureJsCommonsStrings.skipped = "skipped".asInstanceOf[typings.allureJsCommons.allureJsCommonsStrings.skipped]
   }
 }

@@ -12,58 +12,49 @@ object draggabillyStrings {
   sealed trait dragEnd
     extends StObject
        with DraggabillyClickEventName
-  @scala.inline
-  def dragEnd: dragEnd = "dragEnd".asInstanceOf[dragEnd]
+  inline def dragEnd: dragEnd = "dragEnd".asInstanceOf[dragEnd]
   
   @js.native
   sealed trait dragMove
     extends StObject
        with DraggabillyMoveEventName
-  @scala.inline
-  def dragMove: dragMove = "dragMove".asInstanceOf[dragMove]
+  inline def dragMove: dragMove = "dragMove".asInstanceOf[dragMove]
   
   @js.native
   sealed trait dragStart
     extends StObject
        with DraggabillyClickEventName
-  @scala.inline
-  def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
+  inline def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
   
   @js.native
   sealed trait pointerDown
     extends StObject
        with DraggabillyClickEventName
-  @scala.inline
-  def pointerDown: pointerDown = "pointerDown".asInstanceOf[pointerDown]
+  inline def pointerDown: pointerDown = "pointerDown".asInstanceOf[pointerDown]
   
   @js.native
   sealed trait pointerMove
     extends StObject
        with DraggabillyMoveEventName
-  @scala.inline
-  def pointerMove: pointerMove = "pointerMove".asInstanceOf[pointerMove]
+  inline def pointerMove: pointerMove = "pointerMove".asInstanceOf[pointerMove]
   
   @js.native
   sealed trait pointerUp
     extends StObject
        with DraggabillyClickEventName
-  @scala.inline
-  def pointerUp: pointerUp = "pointerUp".asInstanceOf[pointerUp]
+  inline def pointerUp: pointerUp = "pointerUp".asInstanceOf[pointerUp]
   
   @js.native
   sealed trait staticClick
     extends StObject
        with DraggabillyClickEventName
-  @scala.inline
-  def staticClick: staticClick = "staticClick".asInstanceOf[staticClick]
+  inline def staticClick: staticClick = "staticClick".asInstanceOf[staticClick]
   
   @js.native
   sealed trait x extends StObject
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
   sealed trait y extends StObject
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  inline def y: y = "y".asInstanceOf[y]
 }

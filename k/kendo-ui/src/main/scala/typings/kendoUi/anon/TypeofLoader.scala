@@ -15,19 +15,15 @@ trait TypeofLoader extends StObject {
 }
 object TypeofLoader {
   
-  @scala.inline
-  def apply(extend: js.Object => Loader, fn: Loader): TypeofLoader = {
+  inline def apply(extend: js.Object => Loader, fn: Loader): TypeofLoader = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofLoader]
   }
   
-  @scala.inline
-  implicit class TypeofLoaderMutableBuilder[Self <: TypeofLoader] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofLoader](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Loader): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Loader): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Loader): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Loader): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

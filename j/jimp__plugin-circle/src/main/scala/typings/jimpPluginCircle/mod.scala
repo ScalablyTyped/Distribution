@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Circle]
+  inline def default(): Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Circle]
   
   @js.native
   trait Circle extends StObject {

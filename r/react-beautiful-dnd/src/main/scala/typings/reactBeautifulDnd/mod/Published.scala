@@ -14,8 +14,7 @@ trait Published extends StObject {
 }
 object Published {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     additions: js.Array[DraggableDimension],
     modified: js.Array[DroppablePublish],
     removals: js.Array[DraggableId]
@@ -24,25 +23,18 @@ object Published {
     __obj.asInstanceOf[Published]
   }
   
-  @scala.inline
-  implicit class PublishedMutableBuilder[Self <: Published] (val x: Self) extends AnyVal {
+  extension [Self <: Published](x: Self) {
     
-    @scala.inline
-    def setAdditions(value: js.Array[DraggableDimension]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
+    inline def setAdditions(value: js.Array[DraggableDimension]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionsVarargs(value: DraggableDimension*): Self = StObject.set(x, "additions", js.Array(value :_*))
+    inline def setAdditionsVarargs(value: DraggableDimension*): Self = StObject.set(x, "additions", js.Array(value :_*))
     
-    @scala.inline
-    def setModified(value: js.Array[DroppablePublish]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: js.Array[DroppablePublish]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedVarargs(value: DroppablePublish*): Self = StObject.set(x, "modified", js.Array(value :_*))
+    inline def setModifiedVarargs(value: DroppablePublish*): Self = StObject.set(x, "modified", js.Array(value :_*))
     
-    @scala.inline
-    def setRemovals(value: js.Array[DraggableId]): Self = StObject.set(x, "removals", value.asInstanceOf[js.Any])
+    inline def setRemovals(value: js.Array[DraggableId]): Self = StObject.set(x, "removals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovalsVarargs(value: DraggableId*): Self = StObject.set(x, "removals", js.Array(value :_*))
+    inline def setRemovalsVarargs(value: DraggableId*): Self = StObject.set(x, "removals", js.Array(value :_*))
   }
 }

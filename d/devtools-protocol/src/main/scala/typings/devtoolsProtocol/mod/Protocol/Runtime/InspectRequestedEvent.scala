@@ -12,20 +12,16 @@ trait InspectRequestedEvent extends StObject {
 }
 object InspectRequestedEvent {
   
-  @scala.inline
-  def apply(hints: js.Any, `object`: RemoteObject): InspectRequestedEvent = {
+  inline def apply(hints: js.Any, `object`: RemoteObject): InspectRequestedEvent = {
     val __obj = js.Dynamic.literal(hints = hints.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InspectRequestedEvent]
   }
   
-  @scala.inline
-  implicit class InspectRequestedEventMutableBuilder[Self <: InspectRequestedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InspectRequestedEvent](x: Self) {
     
-    @scala.inline
-    def setHints(value: js.Any): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+    inline def setHints(value: js.Any): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

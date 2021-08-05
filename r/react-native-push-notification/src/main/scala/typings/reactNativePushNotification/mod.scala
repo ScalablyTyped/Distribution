@@ -278,62 +278,44 @@ object mod extends Shortcut {
   }
   object PushNotificationOptions {
     
-    @scala.inline
-    def apply(): PushNotificationOptions = {
+    inline def apply(): PushNotificationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PushNotificationOptions]
     }
     
-    @scala.inline
-    implicit class PushNotificationOptionsMutableBuilder[Self <: PushNotificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PushNotificationOptions](x: Self) {
       
-      @scala.inline
-      def setOnAction(value: /* notification */ PushNotification => Unit): Self = StObject.set(x, "onAction", js.Any.fromFunction1(value))
+      inline def setOnAction(value: /* notification */ PushNotification => Unit): Self = StObject.set(x, "onAction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnActionUndefined: Self = StObject.set(x, "onAction", js.undefined)
+      inline def setOnActionUndefined: Self = StObject.set(x, "onAction", js.undefined)
       
-      @scala.inline
-      def setOnNotification(value: /* notification */ PushNotification => Unit): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
+      inline def setOnNotification(value: /* notification */ PushNotification => Unit): Self = StObject.set(x, "onNotification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNotificationUndefined: Self = StObject.set(x, "onNotification", js.undefined)
+      inline def setOnNotificationUndefined: Self = StObject.set(x, "onNotification", js.undefined)
       
-      @scala.inline
-      def setOnRegister(value: /* token */ Os => Unit): Self = StObject.set(x, "onRegister", js.Any.fromFunction1(value))
+      inline def setOnRegister(value: /* token */ Os => Unit): Self = StObject.set(x, "onRegister", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRegisterUndefined: Self = StObject.set(x, "onRegister", js.undefined)
+      inline def setOnRegisterUndefined: Self = StObject.set(x, "onRegister", js.undefined)
       
-      @scala.inline
-      def setOnRegistrationError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onRegistrationError", js.Any.fromFunction1(value))
+      inline def setOnRegistrationError(value: /* error */ js.Any => Unit): Self = StObject.set(x, "onRegistrationError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRegistrationErrorUndefined: Self = StObject.set(x, "onRegistrationError", js.undefined)
+      inline def setOnRegistrationErrorUndefined: Self = StObject.set(x, "onRegistrationError", js.undefined)
       
-      @scala.inline
-      def setOnRemoteFetch(value: /* notificationData */ js.Any => Unit): Self = StObject.set(x, "onRemoteFetch", js.Any.fromFunction1(value))
+      inline def setOnRemoteFetch(value: /* notificationData */ js.Any => Unit): Self = StObject.set(x, "onRemoteFetch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRemoteFetchUndefined: Self = StObject.set(x, "onRemoteFetch", js.undefined)
+      inline def setOnRemoteFetchUndefined: Self = StObject.set(x, "onRemoteFetch", js.undefined)
       
-      @scala.inline
-      def setPermissions(value: PushNotificationPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      inline def setPermissions(value: PushNotificationPermissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+      inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
       
-      @scala.inline
-      def setPopInitialNotification(value: Boolean): Self = StObject.set(x, "popInitialNotification", value.asInstanceOf[js.Any])
+      inline def setPopInitialNotification(value: Boolean): Self = StObject.set(x, "popInitialNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopInitialNotificationUndefined: Self = StObject.set(x, "popInitialNotification", js.undefined)
+      inline def setPopInitialNotificationUndefined: Self = StObject.set(x, "popInitialNotification", js.undefined)
       
-      @scala.inline
-      def setRequestPermissions(value: Boolean): Self = StObject.set(x, "requestPermissions", value.asInstanceOf[js.Any])
+      inline def setRequestPermissions(value: Boolean): Self = StObject.set(x, "requestPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
+      inline def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
     }
   }
   
@@ -347,32 +329,24 @@ object mod extends Shortcut {
   }
   object PushNotificationPermissions {
     
-    @scala.inline
-    def apply(): PushNotificationPermissions = {
+    inline def apply(): PushNotificationPermissions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PushNotificationPermissions]
     }
     
-    @scala.inline
-    implicit class PushNotificationPermissionsMutableBuilder[Self <: PushNotificationPermissions] (val x: Self) extends AnyVal {
+    extension [Self <: PushNotificationPermissions](x: Self) {
       
-      @scala.inline
-      def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
+      inline def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
       
-      @scala.inline
-      def setBadge(value: Boolean): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Boolean): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+      inline def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+      inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     }
   }
   

@@ -19,29 +19,23 @@ trait StaticCluster extends StObject {
 }
 object StaticCluster {
   
-  @scala.inline
-  def apply(): StaticCluster = {
+  inline def apply(): StaticCluster = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StaticCluster]
   }
   
-  @scala.inline
-  implicit class StaticClusterMutableBuilder[Self <: StaticCluster] (val x: Self) extends AnyVal {
+  extension [Self <: StaticCluster](x: Self) {
     
-    @scala.inline
-    def setCluster(
+    inline def setCluster(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientTrafficdirector.maximMazurokGapiClientTrafficdirectorStrings.StaticCluster & TopLevel[js.Any]
     ): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "lastUpdated", js.undefined)
   }
 }

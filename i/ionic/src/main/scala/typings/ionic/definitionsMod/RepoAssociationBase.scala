@@ -14,22 +14,17 @@ trait RepoAssociationBase extends StObject {
 }
 object RepoAssociationBase {
   
-  @scala.inline
-  def apply(clone_url: String, full_name: String, html_url: String): RepoAssociationBase = {
+  inline def apply(clone_url: String, full_name: String, html_url: String): RepoAssociationBase = {
     val __obj = js.Dynamic.literal(clone_url = clone_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepoAssociationBase]
   }
   
-  @scala.inline
-  implicit class RepoAssociationBaseMutableBuilder[Self <: RepoAssociationBase] (val x: Self) extends AnyVal {
+  extension [Self <: RepoAssociationBase](x: Self) {
     
-    @scala.inline
-    def setClone_url(value: String): Self = StObject.set(x, "clone_url", value.asInstanceOf[js.Any])
+    inline def setClone_url(value: String): Self = StObject.set(x, "clone_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+    inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
   }
 }

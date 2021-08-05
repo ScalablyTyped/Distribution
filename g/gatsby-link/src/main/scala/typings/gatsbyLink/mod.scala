@@ -25,20 +25,15 @@ object mod {
   @js.native
   val navigate: NavigateFn = js.native
   
-  @scala.inline
-  def navigateTo(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def navigateTo(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("navigateTo")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def push(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def push(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def replace(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def replace(to: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(to.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def withAssetPrefix(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withAssetPrefix")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def withAssetPrefix(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withAssetPrefix")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def withPrefix(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withPrefix")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def withPrefix(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("withPrefix")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type GatsbyLink[TState] = Component[GatsbyLinkProps[TState], js.Any, js.Any]
   
@@ -60,38 +55,28 @@ object mod {
   }
   object GatsbyLinkProps {
     
-    @scala.inline
-    def apply[TState](to: String): GatsbyLinkProps[TState] = {
+    inline def apply[TState](to: String): GatsbyLinkProps[TState] = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[GatsbyLinkProps[TState]]
     }
     
-    @scala.inline
-    implicit class GatsbyLinkPropsMutableBuilder[Self <: GatsbyLinkProps[?], TState] (val x: Self & GatsbyLinkProps[TState]) extends AnyVal {
+    extension [Self <: GatsbyLinkProps[?], TState](x: Self & GatsbyLinkProps[TState]) {
       
-      @scala.inline
-      def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
+      inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
+      inline def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
       
-      @scala.inline
-      def setActiveStyle(value: js.Object): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
+      inline def setActiveStyle(value: js.Object): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
+      inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setPartiallyActive(value: Boolean): Self = StObject.set(x, "partiallyActive", value.asInstanceOf[js.Any])
+      inline def setPartiallyActive(value: Boolean): Self = StObject.set(x, "partiallyActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartiallyActiveUndefined: Self = StObject.set(x, "partiallyActive", js.undefined)
+      inline def setPartiallyActiveUndefined: Self = StObject.set(x, "partiallyActive", js.undefined)
     }
   }
 }

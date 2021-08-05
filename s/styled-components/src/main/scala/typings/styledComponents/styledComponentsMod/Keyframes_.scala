@@ -12,16 +12,13 @@ trait Keyframes_
 }
 object Keyframes_ {
   
-  @scala.inline
-  def apply(getName: () => String): Keyframes_ = {
+  inline def apply(getName: () => String): Keyframes_ = {
     val __obj = js.Dynamic.literal(getName = js.Any.fromFunction0(getName))
     __obj.asInstanceOf[Keyframes_]
   }
   
-  @scala.inline
-  implicit class Keyframes_MutableBuilder[Self <: Keyframes_] (val x: Self) extends AnyVal {
+  extension [Self <: Keyframes_](x: Self) {
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
   }
 }

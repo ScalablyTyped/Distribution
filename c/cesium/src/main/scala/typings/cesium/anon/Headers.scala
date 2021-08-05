@@ -14,31 +14,23 @@ trait Headers extends StObject {
 }
 object Headers {
   
-  @scala.inline
-  def apply(): Headers = {
+  inline def apply(): Headers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Headers]
   }
   
-  @scala.inline
-  implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+  extension [Self <: Headers](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setOverrideMimeType(value: String): Self = StObject.set(x, "overrideMimeType", value.asInstanceOf[js.Any])
+    inline def setOverrideMimeType(value: String): Self = StObject.set(x, "overrideMimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
+    inline def setOverrideMimeTypeUndefined: Self = StObject.set(x, "overrideMimeType", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
   }
 }

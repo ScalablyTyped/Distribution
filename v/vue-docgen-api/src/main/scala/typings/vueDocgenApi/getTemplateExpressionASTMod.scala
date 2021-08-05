@@ -11,6 +11,5 @@ object getTemplateExpressionASTMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(expression: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(expression.asInstanceOf[js.Any]).asInstanceOf[File_]
+  inline def default(expression: String): File_ = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(expression.asInstanceOf[js.Any]).asInstanceOf[File_]
 }

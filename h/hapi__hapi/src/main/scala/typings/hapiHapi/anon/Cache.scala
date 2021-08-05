@@ -15,25 +15,19 @@ trait Cache extends StObject {
 }
 object Cache {
   
-  @scala.inline
-  def apply(): Cache = {
+  inline def apply(): Cache = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cache]
   }
   
-  @scala.inline
-  implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+  extension [Self <: Cache](x: Self) {
     
-    @scala.inline
-    def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: String): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
   }
 }

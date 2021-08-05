@@ -28,37 +28,27 @@ trait DataTransfer extends StObject {
 }
 object DataTransfer {
   
-  @scala.inline
-  def apply(): DataTransfer = {
+  inline def apply(): DataTransfer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataTransfer]
   }
   
-  @scala.inline
-  implicit class DataTransferMutableBuilder[Self <: DataTransfer] (val x: Self) extends AnyVal {
+  extension [Self <: DataTransfer](x: Self) {
     
-    @scala.inline
-    def setBytesTransferred(value: Long): Self = StObject.set(x, "BytesTransferred", value.asInstanceOf[js.Any])
+    inline def setBytesTransferred(value: Long): Self = StObject.set(x, "BytesTransferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesTransferredUndefined: Self = StObject.set(x, "BytesTransferred", js.undefined)
+    inline def setBytesTransferredUndefined: Self = StObject.set(x, "BytesTransferred", js.undefined)
     
-    @scala.inline
-    def setObjectsTransferred(value: Long): Self = StObject.set(x, "ObjectsTransferred", value.asInstanceOf[js.Any])
+    inline def setObjectsTransferred(value: Long): Self = StObject.set(x, "ObjectsTransferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectsTransferredUndefined: Self = StObject.set(x, "ObjectsTransferred", js.undefined)
+    inline def setObjectsTransferredUndefined: Self = StObject.set(x, "ObjectsTransferred", js.undefined)
     
-    @scala.inline
-    def setTotalBytes(value: Long): Self = StObject.set(x, "TotalBytes", value.asInstanceOf[js.Any])
+    inline def setTotalBytes(value: Long): Self = StObject.set(x, "TotalBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesUndefined: Self = StObject.set(x, "TotalBytes", js.undefined)
+    inline def setTotalBytesUndefined: Self = StObject.set(x, "TotalBytes", js.undefined)
     
-    @scala.inline
-    def setTotalObjects(value: Long): Self = StObject.set(x, "TotalObjects", value.asInstanceOf[js.Any])
+    inline def setTotalObjects(value: Long): Self = StObject.set(x, "TotalObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalObjectsUndefined: Self = StObject.set(x, "TotalObjects", js.undefined)
+    inline def setTotalObjectsUndefined: Self = StObject.set(x, "TotalObjects", js.undefined)
   }
 }

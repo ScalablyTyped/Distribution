@@ -19,22 +19,17 @@ trait GetPolicyRequestwaiterWai extends StObject {
 }
 object GetPolicyRequestwaiterWai {
   
-  @scala.inline
-  def apply(PolicyArn: arnType): GetPolicyRequestwaiterWai = {
+  inline def apply(PolicyArn: arnType): GetPolicyRequestwaiterWai = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPolicyRequestwaiterWai]
   }
   
-  @scala.inline
-  implicit class GetPolicyRequestwaiterWaiMutableBuilder[Self <: GetPolicyRequestwaiterWai] (val x: Self) extends AnyVal {
+  extension [Self <: GetPolicyRequestwaiterWai](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: arnType): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait IsOriginMatch extends StObject {
 }
 object IsOriginMatch {
   
-  @scala.inline
-  def apply(): IsOriginMatch = {
+  inline def apply(): IsOriginMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsOriginMatch]
   }
   
-  @scala.inline
-  implicit class IsOriginMatchMutableBuilder[Self <: IsOriginMatch] (val x: Self) extends AnyVal {
+  extension [Self <: IsOriginMatch](x: Self) {
     
-    @scala.inline
-    def setIsOriginMatch(value: Boolean): Self = StObject.set(x, "isOriginMatch", value.asInstanceOf[js.Any])
+    inline def setIsOriginMatch(value: Boolean): Self = StObject.set(x, "isOriginMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOriginMatchUndefined: Self = StObject.set(x, "isOriginMatch", js.undefined)
+    inline def setIsOriginMatchUndefined: Self = StObject.set(x, "isOriginMatch", js.undefined)
   }
 }

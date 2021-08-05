@@ -48,61 +48,43 @@ trait AwsSecretsManagerSecretDetails extends StObject {
 }
 object AwsSecretsManagerSecretDetails {
   
-  @scala.inline
-  def apply(): AwsSecretsManagerSecretDetails = {
+  inline def apply(): AwsSecretsManagerSecretDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsSecretsManagerSecretDetails]
   }
   
-  @scala.inline
-  implicit class AwsSecretsManagerSecretDetailsMutableBuilder[Self <: AwsSecretsManagerSecretDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsSecretsManagerSecretDetails](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: NonEmptyString): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRotationEnabled(value: Boolean): Self = StObject.set(x, "RotationEnabled", value.asInstanceOf[js.Any])
+    inline def setRotationEnabled(value: Boolean): Self = StObject.set(x, "RotationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationEnabledUndefined: Self = StObject.set(x, "RotationEnabled", js.undefined)
+    inline def setRotationEnabledUndefined: Self = StObject.set(x, "RotationEnabled", js.undefined)
     
-    @scala.inline
-    def setRotationLambdaArn(value: NonEmptyString): Self = StObject.set(x, "RotationLambdaArn", value.asInstanceOf[js.Any])
+    inline def setRotationLambdaArn(value: NonEmptyString): Self = StObject.set(x, "RotationLambdaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationLambdaArnUndefined: Self = StObject.set(x, "RotationLambdaArn", js.undefined)
+    inline def setRotationLambdaArnUndefined: Self = StObject.set(x, "RotationLambdaArn", js.undefined)
     
-    @scala.inline
-    def setRotationOccurredWithinFrequency(value: Boolean): Self = StObject.set(x, "RotationOccurredWithinFrequency", value.asInstanceOf[js.Any])
+    inline def setRotationOccurredWithinFrequency(value: Boolean): Self = StObject.set(x, "RotationOccurredWithinFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationOccurredWithinFrequencyUndefined: Self = StObject.set(x, "RotationOccurredWithinFrequency", js.undefined)
+    inline def setRotationOccurredWithinFrequencyUndefined: Self = StObject.set(x, "RotationOccurredWithinFrequency", js.undefined)
     
-    @scala.inline
-    def setRotationRules(value: AwsSecretsManagerSecretRotationRules): Self = StObject.set(x, "RotationRules", value.asInstanceOf[js.Any])
+    inline def setRotationRules(value: AwsSecretsManagerSecretRotationRules): Self = StObject.set(x, "RotationRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationRulesUndefined: Self = StObject.set(x, "RotationRules", js.undefined)
+    inline def setRotationRulesUndefined: Self = StObject.set(x, "RotationRules", js.undefined)
   }
 }

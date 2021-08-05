@@ -32,19 +32,15 @@ trait JSTreeStaticDefaultsMassload extends StObject {
 }
 object JSTreeStaticDefaultsMassload {
   
-  @scala.inline
-  def apply(data: js.Any, url: js.Any): JSTreeStaticDefaultsMassload = {
+  inline def apply(data: js.Any, url: js.Any): JSTreeStaticDefaultsMassload = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsMassload]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsMassloadMutableBuilder[Self <: JSTreeStaticDefaultsMassload] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaultsMassload](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

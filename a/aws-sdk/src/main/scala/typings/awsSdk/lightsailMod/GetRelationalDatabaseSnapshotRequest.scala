@@ -13,16 +13,13 @@ trait GetRelationalDatabaseSnapshotRequest extends StObject {
 }
 object GetRelationalDatabaseSnapshotRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseSnapshotName: ResourceName): GetRelationalDatabaseSnapshotRequest = {
+  inline def apply(relationalDatabaseSnapshotName: ResourceName): GetRelationalDatabaseSnapshotRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseSnapshotName = relationalDatabaseSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseSnapshotRequestMutableBuilder[Self <: GetRelationalDatabaseSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,17 @@ trait GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse extends StObject {
 }
 object GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponseMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaBatchCreateUserLinksResponse](x: Self) {
     
-    @scala.inline
-    def setUserLinks(value: js.Array[GoogleAnalyticsAdminV1alphaUserLink]): Self = StObject.set(x, "userLinks", value.asInstanceOf[js.Any])
+    inline def setUserLinks(value: js.Array[GoogleAnalyticsAdminV1alphaUserLink]): Self = StObject.set(x, "userLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLinksUndefined: Self = StObject.set(x, "userLinks", js.undefined)
+    inline def setUserLinksUndefined: Self = StObject.set(x, "userLinks", js.undefined)
     
-    @scala.inline
-    def setUserLinksVarargs(value: GoogleAnalyticsAdminV1alphaUserLink*): Self = StObject.set(x, "userLinks", js.Array(value :_*))
+    inline def setUserLinksVarargs(value: GoogleAnalyticsAdminV1alphaUserLink*): Self = StObject.set(x, "userLinks", js.Array(value :_*))
   }
 }

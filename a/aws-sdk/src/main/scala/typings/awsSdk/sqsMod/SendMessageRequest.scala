@@ -43,49 +43,35 @@ trait SendMessageRequest extends StObject {
 }
 object SendMessageRequest {
   
-  @scala.inline
-  def apply(MessageBody: String, QueueUrl: String): SendMessageRequest = {
+  inline def apply(MessageBody: String, QueueUrl: String): SendMessageRequest = {
     val __obj = js.Dynamic.literal(MessageBody = MessageBody.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendMessageRequest]
   }
   
-  @scala.inline
-  implicit class SendMessageRequestMutableBuilder[Self <: SendMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendMessageRequest](x: Self) {
     
-    @scala.inline
-    def setDelaySeconds(value: Integer): Self = StObject.set(x, "DelaySeconds", value.asInstanceOf[js.Any])
+    inline def setDelaySeconds(value: Integer): Self = StObject.set(x, "DelaySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelaySecondsUndefined: Self = StObject.set(x, "DelaySeconds", js.undefined)
+    inline def setDelaySecondsUndefined: Self = StObject.set(x, "DelaySeconds", js.undefined)
     
-    @scala.inline
-    def setMessageAttributes(value: MessageBodyAttributeMap): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
+    inline def setMessageAttributes(value: MessageBodyAttributeMap): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
+    inline def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
     
-    @scala.inline
-    def setMessageBody(value: String): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
+    inline def setMessageBody(value: String): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
+    inline def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageDeduplicationIdUndefined: Self = StObject.set(x, "MessageDeduplicationId", js.undefined)
+    inline def setMessageDeduplicationIdUndefined: Self = StObject.set(x, "MessageDeduplicationId", js.undefined)
     
-    @scala.inline
-    def setMessageGroupId(value: String): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
+    inline def setMessageGroupId(value: String): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
+    inline def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
     
-    @scala.inline
-    def setMessageSystemAttributes(value: MessageBodySystemAttributeMap): Self = StObject.set(x, "MessageSystemAttributes", value.asInstanceOf[js.Any])
+    inline def setMessageSystemAttributes(value: MessageBodySystemAttributeMap): Self = StObject.set(x, "MessageSystemAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageSystemAttributesUndefined: Self = StObject.set(x, "MessageSystemAttributes", js.undefined)
+    inline def setMessageSystemAttributesUndefined: Self = StObject.set(x, "MessageSystemAttributes", js.undefined)
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
   }
 }

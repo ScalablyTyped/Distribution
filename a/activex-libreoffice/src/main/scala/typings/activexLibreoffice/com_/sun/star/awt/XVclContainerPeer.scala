@@ -26,8 +26,7 @@ trait XVclContainerPeer
 }
 object XVclContainerPeer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     enableDialogControl: Boolean => Unit,
     queryInterface: `type` => js.Any,
@@ -39,16 +38,12 @@ object XVclContainerPeer {
     __obj.asInstanceOf[XVclContainerPeer]
   }
   
-  @scala.inline
-  implicit class XVclContainerPeerMutableBuilder[Self <: XVclContainerPeer] (val x: Self) extends AnyVal {
+  extension [Self <: XVclContainerPeer](x: Self) {
     
-    @scala.inline
-    def setEnableDialogControl(value: Boolean => Unit): Self = StObject.set(x, "enableDialogControl", js.Any.fromFunction1(value))
+    inline def setEnableDialogControl(value: Boolean => Unit): Self = StObject.set(x, "enableDialogControl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGroup(value: SeqEquiv[XWindow] => Unit): Self = StObject.set(x, "setGroup", js.Any.fromFunction1(value))
+    inline def setSetGroup(value: SeqEquiv[XWindow] => Unit): Self = StObject.set(x, "setGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTabOrder(value: (SeqEquiv[XWindow], SeqEquiv[js.Any], Boolean) => Unit): Self = StObject.set(x, "setTabOrder", js.Any.fromFunction3(value))
+    inline def setSetTabOrder(value: (SeqEquiv[XWindow], SeqEquiv[js.Any], Boolean) => Unit): Self = StObject.set(x, "setTabOrder", js.Any.fromFunction3(value))
   }
 }

@@ -33,26 +33,20 @@ object postSavedStateMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setForceIsDirty(value: Boolean): Self = StObject.set(x, "forceIsDirty", value.asInstanceOf[js.Any])
+        inline def setForceIsDirty(value: Boolean): Self = StObject.set(x, "forceIsDirty", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceIsDirtyUndefined: Self = StObject.set(x, "forceIsDirty", js.undefined)
+        inline def setForceIsDirtyUndefined: Self = StObject.set(x, "forceIsDirty", js.undefined)
         
-        @scala.inline
-        def setForceIsSaving(value: Boolean): Self = StObject.set(x, "forceIsSaving", value.asInstanceOf[js.Any])
+        inline def setForceIsSaving(value: Boolean): Self = StObject.set(x, "forceIsSaving", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceIsSavingUndefined: Self = StObject.set(x, "forceIsSaving", js.undefined)
+        inline def setForceIsSavingUndefined: Self = StObject.set(x, "forceIsSaving", js.undefined)
       }
     }
   }

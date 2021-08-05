@@ -58,8 +58,7 @@ trait PixelRatioStatic extends StObject {
 }
 object PixelRatioStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     get: () => Double,
     getFontScale: () => Double,
     getPixelSizeForLayoutSize: Double => Double,
@@ -70,22 +69,16 @@ object PixelRatioStatic {
     __obj.asInstanceOf[PixelRatioStatic]
   }
   
-  @scala.inline
-  implicit class PixelRatioStaticMutableBuilder[Self <: PixelRatioStatic] (val x: Self) extends AnyVal {
+  extension [Self <: PixelRatioStatic](x: Self) {
     
-    @scala.inline
-    def setGet(value: () => Double): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => Double): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFontScale(value: () => Double): Self = StObject.set(x, "getFontScale", js.Any.fromFunction0(value))
+    inline def setGetFontScale(value: () => Double): Self = StObject.set(x, "getFontScale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPixelSizeForLayoutSize(value: Double => Double): Self = StObject.set(x, "getPixelSizeForLayoutSize", js.Any.fromFunction1(value))
+    inline def setGetPixelSizeForLayoutSize(value: Double => Double): Self = StObject.set(x, "getPixelSizeForLayoutSize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoundToNearestPixel(value: Double => Double): Self = StObject.set(x, "roundToNearestPixel", js.Any.fromFunction1(value))
+    inline def setRoundToNearestPixel(value: Double => Double): Self = StObject.set(x, "roundToNearestPixel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartDetecting(value: () => Unit): Self = StObject.set(x, "startDetecting", js.Any.fromFunction0(value))
+    inline def setStartDetecting(value: () => Unit): Self = StObject.set(x, "startDetecting", js.Any.fromFunction0(value))
   }
 }

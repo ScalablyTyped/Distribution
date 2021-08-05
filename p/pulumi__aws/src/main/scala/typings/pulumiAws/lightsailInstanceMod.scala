@@ -107,21 +107,16 @@ object lightsailInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Instance]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InstanceState): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Instance]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    inline def get(name: String, id: Input[ID]): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    inline def get(name: String, id: Input[ID], state: InstanceState): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Instance]
+    inline def get(name: String, id: Input[ID], state: InstanceState, opts: CustomResourceOptions): Instance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Instance]
     
     /**
       * Returns true if the given object is an instance of Instance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lightsail/instance.Instance */ Boolean]
   }
   
   trait InstanceArgs extends StObject {
@@ -165,47 +160,34 @@ object lightsailInstanceMod {
   }
   object InstanceArgs {
     
-    @scala.inline
-    def apply(availabilityZone: Input[String], blueprintId: Input[String], bundleId: Input[String]): InstanceArgs = {
+    inline def apply(availabilityZone: Input[String], blueprintId: Input[String], bundleId: Input[String]): InstanceArgs = {
       val __obj = js.Dynamic.literal(availabilityZone = availabilityZone.asInstanceOf[js.Any], blueprintId = blueprintId.asInstanceOf[js.Any], bundleId = bundleId.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstanceArgs]
     }
     
-    @scala.inline
-    implicit class InstanceArgsMutableBuilder[Self <: InstanceArgs] (val x: Self) extends AnyVal {
+    extension [Self <: InstanceArgs](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueprintId(value: Input[String]): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
+      inline def setBlueprintId(value: Input[String]): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPairName(value: Input[String]): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
+      inline def setKeyPairName(value: Input[String]): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPairNameUndefined: Self = StObject.set(x, "keyPairName", js.undefined)
+      inline def setKeyPairNameUndefined: Self = StObject.set(x, "keyPairName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserData(value: Input[String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: Input[String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+      inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
     }
   }
   
@@ -279,110 +261,76 @@ object lightsailInstanceMod {
   }
   object InstanceState {
     
-    @scala.inline
-    def apply(): InstanceState = {
+    inline def apply(): InstanceState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InstanceState]
     }
     
-    @scala.inline
-    implicit class InstanceStateMutableBuilder[Self <: InstanceState] (val x: Self) extends AnyVal {
+    extension [Self <: InstanceState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: Input[String]): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setBlueprintId(value: Input[String]): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
+      inline def setBlueprintId(value: Input[String]): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueprintIdUndefined: Self = StObject.set(x, "blueprintId", js.undefined)
+      inline def setBlueprintIdUndefined: Self = StObject.set(x, "blueprintId", js.undefined)
       
-      @scala.inline
-      def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+      inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
       
-      @scala.inline
-      def setCpuCount(value: Input[Double]): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
+      inline def setCpuCount(value: Input[Double]): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
+      inline def setCpuCountUndefined: Self = StObject.set(x, "cpuCount", js.undefined)
       
-      @scala.inline
-      def setCreatedAt(value: Input[String]): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: Input[String]): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+      inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
       
-      @scala.inline
-      def setIpv6Address(value: Input[String]): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
+      inline def setIpv6Address(value: Input[String]): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
+      inline def setIpv6AddressUndefined: Self = StObject.set(x, "ipv6Address", js.undefined)
       
-      @scala.inline
-      def setIsStaticIp(value: Input[Boolean]): Self = StObject.set(x, "isStaticIp", value.asInstanceOf[js.Any])
+      inline def setIsStaticIp(value: Input[Boolean]): Self = StObject.set(x, "isStaticIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStaticIpUndefined: Self = StObject.set(x, "isStaticIp", js.undefined)
+      inline def setIsStaticIpUndefined: Self = StObject.set(x, "isStaticIp", js.undefined)
       
-      @scala.inline
-      def setKeyPairName(value: Input[String]): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
+      inline def setKeyPairName(value: Input[String]): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyPairNameUndefined: Self = StObject.set(x, "keyPairName", js.undefined)
+      inline def setKeyPairNameUndefined: Self = StObject.set(x, "keyPairName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPrivateIpAddress(value: Input[String]): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
+      inline def setPrivateIpAddress(value: Input[String]): Self = StObject.set(x, "privateIpAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
+      inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "privateIpAddress", js.undefined)
       
-      @scala.inline
-      def setPublicIpAddress(value: Input[String]): Self = StObject.set(x, "publicIpAddress", value.asInstanceOf[js.Any])
+      inline def setPublicIpAddress(value: Input[String]): Self = StObject.set(x, "publicIpAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicIpAddressUndefined: Self = StObject.set(x, "publicIpAddress", js.undefined)
+      inline def setPublicIpAddressUndefined: Self = StObject.set(x, "publicIpAddress", js.undefined)
       
-      @scala.inline
-      def setRamSize(value: Input[Double]): Self = StObject.set(x, "ramSize", value.asInstanceOf[js.Any])
+      inline def setRamSize(value: Input[Double]): Self = StObject.set(x, "ramSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRamSizeUndefined: Self = StObject.set(x, "ramSize", js.undefined)
+      inline def setRamSizeUndefined: Self = StObject.set(x, "ramSize", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUserData(value: Input[String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: Input[String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+      inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
       
-      @scala.inline
-      def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: Input[String]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
 }

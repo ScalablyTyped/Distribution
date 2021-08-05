@@ -70,208 +70,141 @@ trait DeviceAppManagement
 }
 object DeviceAppManagement {
   
-  @scala.inline
-  def apply(): DeviceAppManagement = {
+  inline def apply(): DeviceAppManagement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceAppManagement]
   }
   
-  @scala.inline
-  implicit class DeviceAppManagementMutableBuilder[Self <: DeviceAppManagement] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceAppManagement](x: Self) {
     
-    @scala.inline
-    def setAndroidManagedAppProtections(value: NullableOption[js.Array[AndroidManagedAppProtection]]): Self = StObject.set(x, "androidManagedAppProtections", value.asInstanceOf[js.Any])
+    inline def setAndroidManagedAppProtections(value: NullableOption[js.Array[AndroidManagedAppProtection]]): Self = StObject.set(x, "androidManagedAppProtections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidManagedAppProtectionsNull: Self = StObject.set(x, "androidManagedAppProtections", null)
+    inline def setAndroidManagedAppProtectionsNull: Self = StObject.set(x, "androidManagedAppProtections", null)
     
-    @scala.inline
-    def setAndroidManagedAppProtectionsUndefined: Self = StObject.set(x, "androidManagedAppProtections", js.undefined)
+    inline def setAndroidManagedAppProtectionsUndefined: Self = StObject.set(x, "androidManagedAppProtections", js.undefined)
     
-    @scala.inline
-    def setAndroidManagedAppProtectionsVarargs(value: AndroidManagedAppProtection*): Self = StObject.set(x, "androidManagedAppProtections", js.Array(value :_*))
+    inline def setAndroidManagedAppProtectionsVarargs(value: AndroidManagedAppProtection*): Self = StObject.set(x, "androidManagedAppProtections", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultManagedAppProtections(value: NullableOption[js.Array[DefaultManagedAppProtection]]): Self = StObject.set(x, "defaultManagedAppProtections", value.asInstanceOf[js.Any])
+    inline def setDefaultManagedAppProtections(value: NullableOption[js.Array[DefaultManagedAppProtection]]): Self = StObject.set(x, "defaultManagedAppProtections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultManagedAppProtectionsNull: Self = StObject.set(x, "defaultManagedAppProtections", null)
+    inline def setDefaultManagedAppProtectionsNull: Self = StObject.set(x, "defaultManagedAppProtections", null)
     
-    @scala.inline
-    def setDefaultManagedAppProtectionsUndefined: Self = StObject.set(x, "defaultManagedAppProtections", js.undefined)
+    inline def setDefaultManagedAppProtectionsUndefined: Self = StObject.set(x, "defaultManagedAppProtections", js.undefined)
     
-    @scala.inline
-    def setDefaultManagedAppProtectionsVarargs(value: DefaultManagedAppProtection*): Self = StObject.set(x, "defaultManagedAppProtections", js.Array(value :_*))
+    inline def setDefaultManagedAppProtectionsVarargs(value: DefaultManagedAppProtection*): Self = StObject.set(x, "defaultManagedAppProtections", js.Array(value :_*))
     
-    @scala.inline
-    def setIosManagedAppProtections(value: NullableOption[js.Array[IosManagedAppProtection]]): Self = StObject.set(x, "iosManagedAppProtections", value.asInstanceOf[js.Any])
+    inline def setIosManagedAppProtections(value: NullableOption[js.Array[IosManagedAppProtection]]): Self = StObject.set(x, "iosManagedAppProtections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosManagedAppProtectionsNull: Self = StObject.set(x, "iosManagedAppProtections", null)
+    inline def setIosManagedAppProtectionsNull: Self = StObject.set(x, "iosManagedAppProtections", null)
     
-    @scala.inline
-    def setIosManagedAppProtectionsUndefined: Self = StObject.set(x, "iosManagedAppProtections", js.undefined)
+    inline def setIosManagedAppProtectionsUndefined: Self = StObject.set(x, "iosManagedAppProtections", js.undefined)
     
-    @scala.inline
-    def setIosManagedAppProtectionsVarargs(value: IosManagedAppProtection*): Self = StObject.set(x, "iosManagedAppProtections", js.Array(value :_*))
+    inline def setIosManagedAppProtectionsVarargs(value: IosManagedAppProtection*): Self = StObject.set(x, "iosManagedAppProtections", js.Array(value :_*))
     
-    @scala.inline
-    def setIsEnabledForMicrosoftStoreForBusiness(value: Boolean): Self = StObject.set(x, "isEnabledForMicrosoftStoreForBusiness", value.asInstanceOf[js.Any])
+    inline def setIsEnabledForMicrosoftStoreForBusiness(value: Boolean): Self = StObject.set(x, "isEnabledForMicrosoftStoreForBusiness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledForMicrosoftStoreForBusinessUndefined: Self = StObject.set(x, "isEnabledForMicrosoftStoreForBusiness", js.undefined)
+    inline def setIsEnabledForMicrosoftStoreForBusinessUndefined: Self = StObject.set(x, "isEnabledForMicrosoftStoreForBusiness", js.undefined)
     
-    @scala.inline
-    def setManagedAppPolicies(value: NullableOption[js.Array[ManagedAppPolicy]]): Self = StObject.set(x, "managedAppPolicies", value.asInstanceOf[js.Any])
+    inline def setManagedAppPolicies(value: NullableOption[js.Array[ManagedAppPolicy]]): Self = StObject.set(x, "managedAppPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedAppPoliciesNull: Self = StObject.set(x, "managedAppPolicies", null)
+    inline def setManagedAppPoliciesNull: Self = StObject.set(x, "managedAppPolicies", null)
     
-    @scala.inline
-    def setManagedAppPoliciesUndefined: Self = StObject.set(x, "managedAppPolicies", js.undefined)
+    inline def setManagedAppPoliciesUndefined: Self = StObject.set(x, "managedAppPolicies", js.undefined)
     
-    @scala.inline
-    def setManagedAppPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "managedAppPolicies", js.Array(value :_*))
+    inline def setManagedAppPoliciesVarargs(value: ManagedAppPolicy*): Self = StObject.set(x, "managedAppPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setManagedAppRegistrations(value: NullableOption[js.Array[ManagedAppRegistration]]): Self = StObject.set(x, "managedAppRegistrations", value.asInstanceOf[js.Any])
+    inline def setManagedAppRegistrations(value: NullableOption[js.Array[ManagedAppRegistration]]): Self = StObject.set(x, "managedAppRegistrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedAppRegistrationsNull: Self = StObject.set(x, "managedAppRegistrations", null)
+    inline def setManagedAppRegistrationsNull: Self = StObject.set(x, "managedAppRegistrations", null)
     
-    @scala.inline
-    def setManagedAppRegistrationsUndefined: Self = StObject.set(x, "managedAppRegistrations", js.undefined)
+    inline def setManagedAppRegistrationsUndefined: Self = StObject.set(x, "managedAppRegistrations", js.undefined)
     
-    @scala.inline
-    def setManagedAppRegistrationsVarargs(value: ManagedAppRegistration*): Self = StObject.set(x, "managedAppRegistrations", js.Array(value :_*))
+    inline def setManagedAppRegistrationsVarargs(value: ManagedAppRegistration*): Self = StObject.set(x, "managedAppRegistrations", js.Array(value :_*))
     
-    @scala.inline
-    def setManagedAppStatuses(value: NullableOption[js.Array[ManagedAppStatus]]): Self = StObject.set(x, "managedAppStatuses", value.asInstanceOf[js.Any])
+    inline def setManagedAppStatuses(value: NullableOption[js.Array[ManagedAppStatus]]): Self = StObject.set(x, "managedAppStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedAppStatusesNull: Self = StObject.set(x, "managedAppStatuses", null)
+    inline def setManagedAppStatusesNull: Self = StObject.set(x, "managedAppStatuses", null)
     
-    @scala.inline
-    def setManagedAppStatusesUndefined: Self = StObject.set(x, "managedAppStatuses", js.undefined)
+    inline def setManagedAppStatusesUndefined: Self = StObject.set(x, "managedAppStatuses", js.undefined)
     
-    @scala.inline
-    def setManagedAppStatusesVarargs(value: ManagedAppStatus*): Self = StObject.set(x, "managedAppStatuses", js.Array(value :_*))
+    inline def setManagedAppStatusesVarargs(value: ManagedAppStatus*): Self = StObject.set(x, "managedAppStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setManagedEBooks(value: NullableOption[js.Array[ManagedEBook]]): Self = StObject.set(x, "managedEBooks", value.asInstanceOf[js.Any])
+    inline def setManagedEBooks(value: NullableOption[js.Array[ManagedEBook]]): Self = StObject.set(x, "managedEBooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedEBooksNull: Self = StObject.set(x, "managedEBooks", null)
+    inline def setManagedEBooksNull: Self = StObject.set(x, "managedEBooks", null)
     
-    @scala.inline
-    def setManagedEBooksUndefined: Self = StObject.set(x, "managedEBooks", js.undefined)
+    inline def setManagedEBooksUndefined: Self = StObject.set(x, "managedEBooks", js.undefined)
     
-    @scala.inline
-    def setManagedEBooksVarargs(value: ManagedEBook*): Self = StObject.set(x, "managedEBooks", js.Array(value :_*))
+    inline def setManagedEBooksVarargs(value: ManagedEBook*): Self = StObject.set(x, "managedEBooks", js.Array(value :_*))
     
-    @scala.inline
-    def setMdmWindowsInformationProtectionPolicies(value: NullableOption[js.Array[MdmWindowsInformationProtectionPolicy]]): Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", value.asInstanceOf[js.Any])
+    inline def setMdmWindowsInformationProtectionPolicies(value: NullableOption[js.Array[MdmWindowsInformationProtectionPolicy]]): Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdmWindowsInformationProtectionPoliciesNull: Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", null)
+    inline def setMdmWindowsInformationProtectionPoliciesNull: Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", null)
     
-    @scala.inline
-    def setMdmWindowsInformationProtectionPoliciesUndefined: Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", js.undefined)
+    inline def setMdmWindowsInformationProtectionPoliciesUndefined: Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", js.undefined)
     
-    @scala.inline
-    def setMdmWindowsInformationProtectionPoliciesVarargs(value: MdmWindowsInformationProtectionPolicy*): Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", js.Array(value :_*))
+    inline def setMdmWindowsInformationProtectionPoliciesVarargs(value: MdmWindowsInformationProtectionPolicy*): Self = StObject.set(x, "mdmWindowsInformationProtectionPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setMicrosoftStoreForBusinessLanguage(value: NullableOption[String]): Self = StObject.set(x, "microsoftStoreForBusinessLanguage", value.asInstanceOf[js.Any])
+    inline def setMicrosoftStoreForBusinessLanguage(value: NullableOption[String]): Self = StObject.set(x, "microsoftStoreForBusinessLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrosoftStoreForBusinessLanguageNull: Self = StObject.set(x, "microsoftStoreForBusinessLanguage", null)
+    inline def setMicrosoftStoreForBusinessLanguageNull: Self = StObject.set(x, "microsoftStoreForBusinessLanguage", null)
     
-    @scala.inline
-    def setMicrosoftStoreForBusinessLanguageUndefined: Self = StObject.set(x, "microsoftStoreForBusinessLanguage", js.undefined)
+    inline def setMicrosoftStoreForBusinessLanguageUndefined: Self = StObject.set(x, "microsoftStoreForBusinessLanguage", js.undefined)
     
-    @scala.inline
-    def setMicrosoftStoreForBusinessLastCompletedApplicationSyncTime(value: String): Self = StObject.set(x, "microsoftStoreForBusinessLastCompletedApplicationSyncTime", value.asInstanceOf[js.Any])
+    inline def setMicrosoftStoreForBusinessLastCompletedApplicationSyncTime(value: String): Self = StObject.set(x, "microsoftStoreForBusinessLastCompletedApplicationSyncTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrosoftStoreForBusinessLastCompletedApplicationSyncTimeUndefined: Self = StObject.set(x, "microsoftStoreForBusinessLastCompletedApplicationSyncTime", js.undefined)
+    inline def setMicrosoftStoreForBusinessLastCompletedApplicationSyncTimeUndefined: Self = StObject.set(x, "microsoftStoreForBusinessLastCompletedApplicationSyncTime", js.undefined)
     
-    @scala.inline
-    def setMicrosoftStoreForBusinessLastSuccessfulSyncDateTime(value: String): Self = StObject.set(x, "microsoftStoreForBusinessLastSuccessfulSyncDateTime", value.asInstanceOf[js.Any])
+    inline def setMicrosoftStoreForBusinessLastSuccessfulSyncDateTime(value: String): Self = StObject.set(x, "microsoftStoreForBusinessLastSuccessfulSyncDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrosoftStoreForBusinessLastSuccessfulSyncDateTimeUndefined: Self = StObject.set(x, "microsoftStoreForBusinessLastSuccessfulSyncDateTime", js.undefined)
+    inline def setMicrosoftStoreForBusinessLastSuccessfulSyncDateTimeUndefined: Self = StObject.set(x, "microsoftStoreForBusinessLastSuccessfulSyncDateTime", js.undefined)
     
-    @scala.inline
-    def setMobileAppCategories(value: NullableOption[js.Array[MobileAppCategory]]): Self = StObject.set(x, "mobileAppCategories", value.asInstanceOf[js.Any])
+    inline def setMobileAppCategories(value: NullableOption[js.Array[MobileAppCategory]]): Self = StObject.set(x, "mobileAppCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppCategoriesNull: Self = StObject.set(x, "mobileAppCategories", null)
+    inline def setMobileAppCategoriesNull: Self = StObject.set(x, "mobileAppCategories", null)
     
-    @scala.inline
-    def setMobileAppCategoriesUndefined: Self = StObject.set(x, "mobileAppCategories", js.undefined)
+    inline def setMobileAppCategoriesUndefined: Self = StObject.set(x, "mobileAppCategories", js.undefined)
     
-    @scala.inline
-    def setMobileAppCategoriesVarargs(value: MobileAppCategory*): Self = StObject.set(x, "mobileAppCategories", js.Array(value :_*))
+    inline def setMobileAppCategoriesVarargs(value: MobileAppCategory*): Self = StObject.set(x, "mobileAppCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setMobileAppConfigurations(value: NullableOption[js.Array[ManagedDeviceMobileAppConfiguration]]): Self = StObject.set(x, "mobileAppConfigurations", value.asInstanceOf[js.Any])
+    inline def setMobileAppConfigurations(value: NullableOption[js.Array[ManagedDeviceMobileAppConfiguration]]): Self = StObject.set(x, "mobileAppConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppConfigurationsNull: Self = StObject.set(x, "mobileAppConfigurations", null)
+    inline def setMobileAppConfigurationsNull: Self = StObject.set(x, "mobileAppConfigurations", null)
     
-    @scala.inline
-    def setMobileAppConfigurationsUndefined: Self = StObject.set(x, "mobileAppConfigurations", js.undefined)
+    inline def setMobileAppConfigurationsUndefined: Self = StObject.set(x, "mobileAppConfigurations", js.undefined)
     
-    @scala.inline
-    def setMobileAppConfigurationsVarargs(value: ManagedDeviceMobileAppConfiguration*): Self = StObject.set(x, "mobileAppConfigurations", js.Array(value :_*))
+    inline def setMobileAppConfigurationsVarargs(value: ManagedDeviceMobileAppConfiguration*): Self = StObject.set(x, "mobileAppConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setMobileApps(value: NullableOption[js.Array[MobileApp]]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
+    inline def setMobileApps(value: NullableOption[js.Array[MobileApp]]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppsNull: Self = StObject.set(x, "mobileApps", null)
+    inline def setMobileAppsNull: Self = StObject.set(x, "mobileApps", null)
     
-    @scala.inline
-    def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
+    inline def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
     
-    @scala.inline
-    def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
+    inline def setMobileAppsVarargs(value: MobileApp*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetedManagedAppConfigurations(value: NullableOption[js.Array[TargetedManagedAppConfiguration]]): Self = StObject.set(x, "targetedManagedAppConfigurations", value.asInstanceOf[js.Any])
+    inline def setTargetedManagedAppConfigurations(value: NullableOption[js.Array[TargetedManagedAppConfiguration]]): Self = StObject.set(x, "targetedManagedAppConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetedManagedAppConfigurationsNull: Self = StObject.set(x, "targetedManagedAppConfigurations", null)
+    inline def setTargetedManagedAppConfigurationsNull: Self = StObject.set(x, "targetedManagedAppConfigurations", null)
     
-    @scala.inline
-    def setTargetedManagedAppConfigurationsUndefined: Self = StObject.set(x, "targetedManagedAppConfigurations", js.undefined)
+    inline def setTargetedManagedAppConfigurationsUndefined: Self = StObject.set(x, "targetedManagedAppConfigurations", js.undefined)
     
-    @scala.inline
-    def setTargetedManagedAppConfigurationsVarargs(value: TargetedManagedAppConfiguration*): Self = StObject.set(x, "targetedManagedAppConfigurations", js.Array(value :_*))
+    inline def setTargetedManagedAppConfigurationsVarargs(value: TargetedManagedAppConfiguration*): Self = StObject.set(x, "targetedManagedAppConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setVppTokens(value: NullableOption[js.Array[VppToken]]): Self = StObject.set(x, "vppTokens", value.asInstanceOf[js.Any])
+    inline def setVppTokens(value: NullableOption[js.Array[VppToken]]): Self = StObject.set(x, "vppTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVppTokensNull: Self = StObject.set(x, "vppTokens", null)
+    inline def setVppTokensNull: Self = StObject.set(x, "vppTokens", null)
     
-    @scala.inline
-    def setVppTokensUndefined: Self = StObject.set(x, "vppTokens", js.undefined)
+    inline def setVppTokensUndefined: Self = StObject.set(x, "vppTokens", js.undefined)
     
-    @scala.inline
-    def setVppTokensVarargs(value: VppToken*): Self = StObject.set(x, "vppTokens", js.Array(value :_*))
+    inline def setVppTokensVarargs(value: VppToken*): Self = StObject.set(x, "vppTokens", js.Array(value :_*))
     
-    @scala.inline
-    def setWindowsInformationProtectionPolicies(value: NullableOption[js.Array[WindowsInformationProtectionPolicy]]): Self = StObject.set(x, "windowsInformationProtectionPolicies", value.asInstanceOf[js.Any])
+    inline def setWindowsInformationProtectionPolicies(value: NullableOption[js.Array[WindowsInformationProtectionPolicy]]): Self = StObject.set(x, "windowsInformationProtectionPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsInformationProtectionPoliciesNull: Self = StObject.set(x, "windowsInformationProtectionPolicies", null)
+    inline def setWindowsInformationProtectionPoliciesNull: Self = StObject.set(x, "windowsInformationProtectionPolicies", null)
     
-    @scala.inline
-    def setWindowsInformationProtectionPoliciesUndefined: Self = StObject.set(x, "windowsInformationProtectionPolicies", js.undefined)
+    inline def setWindowsInformationProtectionPoliciesUndefined: Self = StObject.set(x, "windowsInformationProtectionPolicies", js.undefined)
     
-    @scala.inline
-    def setWindowsInformationProtectionPoliciesVarargs(value: WindowsInformationProtectionPolicy*): Self = StObject.set(x, "windowsInformationProtectionPolicies", js.Array(value :_*))
+    inline def setWindowsInformationProtectionPoliciesVarargs(value: WindowsInformationProtectionPolicy*): Self = StObject.set(x, "windowsInformationProtectionPolicies", js.Array(value :_*))
   }
 }

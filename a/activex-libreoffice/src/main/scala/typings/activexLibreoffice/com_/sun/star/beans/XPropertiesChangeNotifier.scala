@@ -23,8 +23,7 @@ trait XPropertiesChangeNotifier
 }
 object XPropertiesChangeNotifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addPropertiesChangeListener: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     queryInterface: `type` => js.Any,
@@ -35,13 +34,10 @@ object XPropertiesChangeNotifier {
     __obj.asInstanceOf[XPropertiesChangeNotifier]
   }
   
-  @scala.inline
-  implicit class XPropertiesChangeNotifierMutableBuilder[Self <: XPropertiesChangeNotifier] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertiesChangeNotifier](x: Self) {
     
-    @scala.inline
-    def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "addPropertiesChangeListener", js.Any.fromFunction2(value))
+    inline def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "addPropertiesChangeListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemovePropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "removePropertiesChangeListener", js.Any.fromFunction2(value))
+    inline def setRemovePropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "removePropertiesChangeListener", js.Any.fromFunction2(value))
   }
 }

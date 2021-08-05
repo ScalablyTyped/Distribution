@@ -21,10 +21,8 @@ object mod {
     *
     * @see {@link https://github.com/expressjs/compression#compressionoptions|`compression([options]) documentation`}
     */
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: CompressionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: CompressionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("compression", JSImport.Namespace)
   @js.native
@@ -53,8 +51,7 @@ object mod {
     *
     * @see {@link https://github.com/expressjs/compression#filter-1|`.filter` documentation}
     */
-  @scala.inline
-  def filter(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def filter(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * A function to decide if the response should be considered for compression.
@@ -172,58 +169,42 @@ object mod {
   }
   object CompressionOptions {
     
-    @scala.inline
-    def apply(): CompressionOptions = {
+    inline def apply(): CompressionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompressionOptions]
     }
     
-    @scala.inline
-    implicit class CompressionOptionsMutableBuilder[Self <: CompressionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompressionOptions](x: Self) {
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setFilter(
+      inline def setFilter(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
       ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
+      inline def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemLevelUndefined: Self = StObject.set(x, "memLevel", js.undefined)
+      inline def setMemLevelUndefined: Self = StObject.set(x, "memLevel", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: Double): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+      inline def setStrategy(value: Double): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double | String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double | String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
+      inline def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
+      inline def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
     }
   }
   
@@ -241,17 +222,14 @@ object mod {
       }
       object Response {
         
-        @scala.inline
-        def apply(flush: () => Unit): Response = {
+        inline def apply(flush: () => Unit): Response = {
           val __obj = js.Dynamic.literal(flush = js.Any.fromFunction0(flush))
           __obj.asInstanceOf[Response]
         }
         
-        @scala.inline
-        implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+        extension [Self <: Response](x: Self) {
           
-          @scala.inline
-          def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+          inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
         }
       }
     }

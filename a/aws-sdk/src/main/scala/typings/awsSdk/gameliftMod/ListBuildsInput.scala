@@ -23,31 +23,23 @@ trait ListBuildsInput extends StObject {
 }
 object ListBuildsInput {
   
-  @scala.inline
-  def apply(): ListBuildsInput = {
+  inline def apply(): ListBuildsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBuildsInput]
   }
   
-  @scala.inline
-  implicit class ListBuildsInputMutableBuilder[Self <: ListBuildsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBuildsInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatus(value: BuildStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BuildStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

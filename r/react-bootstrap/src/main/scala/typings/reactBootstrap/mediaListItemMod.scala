@@ -26,20 +26,16 @@ object mediaListItemMod {
   }
   object MediaListItemProps {
     
-    @scala.inline
-    def apply(): MediaListItemProps = {
+    inline def apply(): MediaListItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MediaListItemProps]
     }
     
-    @scala.inline
-    implicit class MediaListItemPropsMutableBuilder[Self <: MediaListItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: MediaListItemProps](x: Self) {
       
-      @scala.inline
-      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
+      inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
     }
   }
 }

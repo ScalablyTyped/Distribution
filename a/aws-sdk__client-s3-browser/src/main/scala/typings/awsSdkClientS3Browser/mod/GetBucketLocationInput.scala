@@ -9,8 +9,7 @@ trait GetBucketLocationInput
      with typings.awsSdkClientS3Browser.typesGetBucketLocationInputMod.GetBucketLocationInput
 object GetBucketLocationInput {
   
-  @scala.inline
-  def apply(Bucket: String): GetBucketLocationInput = {
+  inline def apply(Bucket: String): GetBucketLocationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketLocationInput]
   }

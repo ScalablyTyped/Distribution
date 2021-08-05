@@ -14,28 +14,21 @@ trait ModalFooterProps extends StObject {
 }
 object ModalFooterProps {
   
-  @scala.inline
-  def apply(): ModalFooterProps = {
+  inline def apply(): ModalFooterProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalFooterProps]
   }
   
-  @scala.inline
-  implicit class ModalFooterPropsMutableBuilder[Self <: ModalFooterProps] (val x: Self) extends AnyVal {
+  extension [Self <: ModalFooterProps](x: Self) {
     
-    @scala.inline
-    def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+    inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+    inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

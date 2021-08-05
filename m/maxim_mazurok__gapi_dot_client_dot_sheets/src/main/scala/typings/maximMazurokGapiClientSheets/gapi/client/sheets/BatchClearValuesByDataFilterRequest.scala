@@ -11,22 +11,17 @@ trait BatchClearValuesByDataFilterRequest extends StObject {
 }
 object BatchClearValuesByDataFilterRequest {
   
-  @scala.inline
-  def apply(): BatchClearValuesByDataFilterRequest = {
+  inline def apply(): BatchClearValuesByDataFilterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchClearValuesByDataFilterRequest]
   }
   
-  @scala.inline
-  implicit class BatchClearValuesByDataFilterRequestMutableBuilder[Self <: BatchClearValuesByDataFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchClearValuesByDataFilterRequest](x: Self) {
     
-    @scala.inline
-    def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
+    inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
+    inline def setDataFiltersUndefined: Self = StObject.set(x, "dataFilters", js.undefined)
     
-    @scala.inline
-    def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
+    inline def setDataFiltersVarargs(value: DataFilter*): Self = StObject.set(x, "dataFilters", js.Array(value :_*))
   }
 }

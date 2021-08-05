@@ -13,19 +13,15 @@ trait DeletePlatformVersionResult extends StObject {
 }
 object DeletePlatformVersionResult {
   
-  @scala.inline
-  def apply(): DeletePlatformVersionResult = {
+  inline def apply(): DeletePlatformVersionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeletePlatformVersionResult]
   }
   
-  @scala.inline
-  implicit class DeletePlatformVersionResultMutableBuilder[Self <: DeletePlatformVersionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePlatformVersionResult](x: Self) {
     
-    @scala.inline
-    def setPlatformSummary(value: PlatformSummary): Self = StObject.set(x, "PlatformSummary", value.asInstanceOf[js.Any])
+    inline def setPlatformSummary(value: PlatformSummary): Self = StObject.set(x, "PlatformSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformSummaryUndefined: Self = StObject.set(x, "PlatformSummary", js.undefined)
+    inline def setPlatformSummaryUndefined: Self = StObject.set(x, "PlatformSummary", js.undefined)
   }
 }

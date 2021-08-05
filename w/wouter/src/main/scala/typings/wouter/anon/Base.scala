@@ -11,19 +11,15 @@ trait Base extends StObject {
 }
 object Base {
   
-  @scala.inline
-  def apply(): Base = {
+  inline def apply(): Base = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Base]
   }
   
-  @scala.inline
-  implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+  extension [Self <: Base](x: Self) {
     
-    @scala.inline
-    def setBase(value: Path): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Path): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
   }
 }

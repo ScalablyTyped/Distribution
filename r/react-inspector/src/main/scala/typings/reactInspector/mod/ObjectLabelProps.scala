@@ -14,31 +14,23 @@ trait ObjectLabelProps extends StObject {
 }
 object ObjectLabelProps {
   
-  @scala.inline
-  def apply(): ObjectLabelProps = {
+  inline def apply(): ObjectLabelProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectLabelProps]
   }
   
-  @scala.inline
-  implicit class ObjectLabelPropsMutableBuilder[Self <: ObjectLabelProps] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectLabelProps](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setIsNonenumerable(value: Boolean): Self = StObject.set(x, "isNonenumerable", value.asInstanceOf[js.Any])
+    inline def setIsNonenumerable(value: Boolean): Self = StObject.set(x, "isNonenumerable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNonenumerableUndefined: Self = StObject.set(x, "isNonenumerable", js.undefined)
+    inline def setIsNonenumerableUndefined: Self = StObject.set(x, "isNonenumerable", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

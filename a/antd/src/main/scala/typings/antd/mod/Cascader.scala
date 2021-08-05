@@ -29,35 +29,29 @@ object Cascader {
     @JSImport("antd", "Cascader.defaultProps.allowClear")
     @js.native
     def allowClear: Boolean = js.native
-    @scala.inline
-    def allowClear_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowClear")(x.asInstanceOf[js.Any])
+    inline def allowClear_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowClear")(x.asInstanceOf[js.Any])
     
     @JSImport("antd", "Cascader.defaultProps.bordered")
     @js.native
     def bordered: Boolean = js.native
-    @scala.inline
-    def bordered_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bordered")(x.asInstanceOf[js.Any])
+    inline def bordered_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bordered")(x.asInstanceOf[js.Any])
     
     @JSImport("antd", "Cascader.defaultProps.disabled")
     @js.native
     def disabled: Boolean = js.native
-    @scala.inline
-    def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
+    inline def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
     
     @JSImport("antd", "Cascader.defaultProps.options")
     @js.native
     def options: js.Array[scala.Nothing] = js.native
-    @scala.inline
-    def options_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+    inline def options_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
     
     @JSImport("antd", "Cascader.defaultProps.transitionName")
     @js.native
     def transitionName: String = js.native
-    @scala.inline
-    def transitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionName")(x.asInstanceOf[js.Any])
+    inline def transitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transitionName")(x.asInstanceOf[js.Any])
   }
   
   /* static member */
-  @scala.inline
-  def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], hasPrevProps.asInstanceOf[js.Any])).asInstanceOf[PartialCascaderState]
+  inline def getDerivedStateFromProps(nextProps: CascaderProps, hasPrevProps: CascaderState): PartialCascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], hasPrevProps.asInstanceOf[js.Any])).asInstanceOf[PartialCascaderState]
 }

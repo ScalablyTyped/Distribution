@@ -12,19 +12,15 @@ trait ISessionChannel extends StObject {
 }
 object ISessionChannel {
   
-  @scala.inline
-  def apply(onSession: Session => js.Any, sendSession: Session => Unit): ISessionChannel = {
+  inline def apply(onSession: Session => js.Any, sendSession: Session => Unit): ISessionChannel = {
     val __obj = js.Dynamic.literal(onSession = js.Any.fromFunction1(onSession), sendSession = js.Any.fromFunction1(sendSession))
     __obj.asInstanceOf[ISessionChannel]
   }
   
-  @scala.inline
-  implicit class ISessionChannelMutableBuilder[Self <: ISessionChannel] (val x: Self) extends AnyVal {
+  extension [Self <: ISessionChannel](x: Self) {
     
-    @scala.inline
-    def setOnSession(value: Session => js.Any): Self = StObject.set(x, "onSession", js.Any.fromFunction1(value))
+    inline def setOnSession(value: Session => js.Any): Self = StObject.set(x, "onSession", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendSession(value: Session => Unit): Self = StObject.set(x, "sendSession", js.Any.fromFunction1(value))
+    inline def setSendSession(value: Session => Unit): Self = StObject.set(x, "sendSession", js.Any.fromFunction1(value))
   }
 }

@@ -28,8 +28,7 @@ trait UpdateModelVersionStatusRequest extends StObject {
 }
 object UpdateModelVersionStatusRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     modelId: modelIdentifier,
     modelType: ModelTypeEnum,
     modelVersionNumber: floatVersionString,
@@ -39,19 +38,14 @@ object UpdateModelVersionStatusRequest {
     __obj.asInstanceOf[UpdateModelVersionStatusRequest]
   }
   
-  @scala.inline
-  implicit class UpdateModelVersionStatusRequestMutableBuilder[Self <: UpdateModelVersionStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateModelVersionStatusRequest](x: Self) {
     
-    @scala.inline
-    def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
+    inline def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelType(value: ModelTypeEnum): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
+    inline def setModelType(value: ModelTypeEnum): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionNumber(value: floatVersionString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
+    inline def setModelVersionNumber(value: floatVersionString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ModelVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ModelVersionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

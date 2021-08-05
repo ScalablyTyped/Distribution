@@ -21,19 +21,15 @@ trait PhotonPersistentDiskVolumeSource extends StObject {
 }
 object PhotonPersistentDiskVolumeSource {
   
-  @scala.inline
-  def apply(fsType: String, pdID: String): PhotonPersistentDiskVolumeSource = {
+  inline def apply(fsType: String, pdID: String): PhotonPersistentDiskVolumeSource = {
     val __obj = js.Dynamic.literal(fsType = fsType.asInstanceOf[js.Any], pdID = pdID.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhotonPersistentDiskVolumeSource]
   }
   
-  @scala.inline
-  implicit class PhotonPersistentDiskVolumeSourceMutableBuilder[Self <: PhotonPersistentDiskVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: PhotonPersistentDiskVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdID(value: String): Self = StObject.set(x, "pdID", value.asInstanceOf[js.Any])
+    inline def setPdID(value: String): Self = StObject.set(x, "pdID", value.asInstanceOf[js.Any])
   }
 }

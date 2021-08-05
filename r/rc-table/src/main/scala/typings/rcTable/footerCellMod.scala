@@ -13,8 +13,7 @@ object footerCellMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasClassNameIndexChildrenColSpanRowSpanAlign: SummaryCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameIndexChildrenColSpanRowSpanAlign.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(hasClassNameIndexChildrenColSpanRowSpanAlign: SummaryCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasClassNameIndexChildrenColSpanRowSpanAlign.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait SummaryCellProps extends StObject {
     
@@ -32,47 +31,34 @@ object footerCellMod {
   }
   object SummaryCellProps {
     
-    @scala.inline
-    def apply(index: Double): SummaryCellProps = {
+    inline def apply(index: Double): SummaryCellProps = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[SummaryCellProps]
     }
     
-    @scala.inline
-    implicit class SummaryCellPropsMutableBuilder[Self <: SummaryCellProps] (val x: Self) extends AnyVal {
+    extension [Self <: SummaryCellProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+      inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+      inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+      inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+      inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     }
   }
 }

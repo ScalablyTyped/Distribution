@@ -16,22 +16,17 @@ trait SchemaDeleteDeveloperMetadataResponse extends StObject {
 }
 object SchemaDeleteDeveloperMetadataResponse {
   
-  @scala.inline
-  def apply(): SchemaDeleteDeveloperMetadataResponse = {
+  inline def apply(): SchemaDeleteDeveloperMetadataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteDeveloperMetadataResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteDeveloperMetadataResponseMutableBuilder[Self <: SchemaDeleteDeveloperMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteDeveloperMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setDeletedDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = StObject.set(x, "deletedDeveloperMetadata", value.asInstanceOf[js.Any])
+    inline def setDeletedDeveloperMetadata(value: js.Array[SchemaDeveloperMetadata]): Self = StObject.set(x, "deletedDeveloperMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedDeveloperMetadataUndefined: Self = StObject.set(x, "deletedDeveloperMetadata", js.undefined)
+    inline def setDeletedDeveloperMetadataUndefined: Self = StObject.set(x, "deletedDeveloperMetadata", js.undefined)
     
-    @scala.inline
-    def setDeletedDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "deletedDeveloperMetadata", js.Array(value :_*))
+    inline def setDeletedDeveloperMetadataVarargs(value: SchemaDeveloperMetadata*): Self = StObject.set(x, "deletedDeveloperMetadata", js.Array(value :_*))
   }
 }

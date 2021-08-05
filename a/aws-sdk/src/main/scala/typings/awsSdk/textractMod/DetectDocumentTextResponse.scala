@@ -23,34 +23,25 @@ trait DetectDocumentTextResponse extends StObject {
 }
 object DetectDocumentTextResponse {
   
-  @scala.inline
-  def apply(): DetectDocumentTextResponse = {
+  inline def apply(): DetectDocumentTextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectDocumentTextResponse]
   }
   
-  @scala.inline
-  implicit class DetectDocumentTextResponseMutableBuilder[Self <: DetectDocumentTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectDocumentTextResponse](x: Self) {
     
-    @scala.inline
-    def setBlocks(value: BlockList): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: BlockList): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
+    inline def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
     
-    @scala.inline
-    def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
     
-    @scala.inline
-    def setDetectDocumentTextModelVersion(value: String): Self = StObject.set(x, "DetectDocumentTextModelVersion", value.asInstanceOf[js.Any])
+    inline def setDetectDocumentTextModelVersion(value: String): Self = StObject.set(x, "DetectDocumentTextModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetectDocumentTextModelVersionUndefined: Self = StObject.set(x, "DetectDocumentTextModelVersion", js.undefined)
+    inline def setDetectDocumentTextModelVersionUndefined: Self = StObject.set(x, "DetectDocumentTextModelVersion", js.undefined)
     
-    @scala.inline
-    def setDocumentMetadata(value: DocumentMetadata): Self = StObject.set(x, "DocumentMetadata", value.asInstanceOf[js.Any])
+    inline def setDocumentMetadata(value: DocumentMetadata): Self = StObject.set(x, "DocumentMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentMetadataUndefined: Self = StObject.set(x, "DocumentMetadata", js.undefined)
+    inline def setDocumentMetadataUndefined: Self = StObject.set(x, "DocumentMetadata", js.undefined)
   }
 }

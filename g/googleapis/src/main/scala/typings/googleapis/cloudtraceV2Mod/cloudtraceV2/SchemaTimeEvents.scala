@@ -30,34 +30,25 @@ trait SchemaTimeEvents extends StObject {
 }
 object SchemaTimeEvents {
   
-  @scala.inline
-  def apply(): SchemaTimeEvents = {
+  inline def apply(): SchemaTimeEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTimeEvents]
   }
   
-  @scala.inline
-  implicit class SchemaTimeEventsMutableBuilder[Self <: SchemaTimeEvents] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTimeEvents](x: Self) {
     
-    @scala.inline
-    def setDroppedAnnotationsCount(value: Double): Self = StObject.set(x, "droppedAnnotationsCount", value.asInstanceOf[js.Any])
+    inline def setDroppedAnnotationsCount(value: Double): Self = StObject.set(x, "droppedAnnotationsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppedAnnotationsCountUndefined: Self = StObject.set(x, "droppedAnnotationsCount", js.undefined)
+    inline def setDroppedAnnotationsCountUndefined: Self = StObject.set(x, "droppedAnnotationsCount", js.undefined)
     
-    @scala.inline
-    def setDroppedMessageEventsCount(value: Double): Self = StObject.set(x, "droppedMessageEventsCount", value.asInstanceOf[js.Any])
+    inline def setDroppedMessageEventsCount(value: Double): Self = StObject.set(x, "droppedMessageEventsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDroppedMessageEventsCountUndefined: Self = StObject.set(x, "droppedMessageEventsCount", js.undefined)
+    inline def setDroppedMessageEventsCountUndefined: Self = StObject.set(x, "droppedMessageEventsCount", js.undefined)
     
-    @scala.inline
-    def setTimeEvent(value: js.Array[SchemaTimeEvent]): Self = StObject.set(x, "timeEvent", value.asInstanceOf[js.Any])
+    inline def setTimeEvent(value: js.Array[SchemaTimeEvent]): Self = StObject.set(x, "timeEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeEventUndefined: Self = StObject.set(x, "timeEvent", js.undefined)
+    inline def setTimeEventUndefined: Self = StObject.set(x, "timeEvent", js.undefined)
     
-    @scala.inline
-    def setTimeEventVarargs(value: SchemaTimeEvent*): Self = StObject.set(x, "timeEvent", js.Array(value :_*))
+    inline def setTimeEventVarargs(value: SchemaTimeEvent*): Self = StObject.set(x, "timeEvent", js.Array(value :_*))
   }
 }

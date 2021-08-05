@@ -14,8 +14,7 @@ trait FileOpenPicker
      with IFileOpenPicker
 object FileOpenPicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitButtonText: String,
     continuationData: ValueSet,
     fileTypeFilter: IVector[String],

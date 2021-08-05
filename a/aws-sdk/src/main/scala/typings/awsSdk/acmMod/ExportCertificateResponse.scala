@@ -23,31 +23,23 @@ trait ExportCertificateResponse extends StObject {
 }
 object ExportCertificateResponse {
   
-  @scala.inline
-  def apply(): ExportCertificateResponse = {
+  inline def apply(): ExportCertificateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportCertificateResponse]
   }
   
-  @scala.inline
-  implicit class ExportCertificateResponseMutableBuilder[Self <: ExportCertificateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ExportCertificateResponse](x: Self) {
     
-    @scala.inline
-    def setCertificate(value: CertificateBody): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: CertificateBody): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateChain(value: CertificateChain): Self = StObject.set(x, "CertificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: CertificateChain): Self = StObject.set(x, "CertificateChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
+    inline def setCertificateChainUndefined: Self = StObject.set(x, "CertificateChain", js.undefined)
     
-    @scala.inline
-    def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
+    inline def setCertificateUndefined: Self = StObject.set(x, "Certificate", js.undefined)
     
-    @scala.inline
-    def setPrivateKey(value: PrivateKey): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: PrivateKey): Self = StObject.set(x, "PrivateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKeyUndefined: Self = StObject.set(x, "PrivateKey", js.undefined)
+    inline def setPrivateKeyUndefined: Self = StObject.set(x, "PrivateKey", js.undefined)
   }
 }

@@ -18,28 +18,21 @@ trait IpOptions extends StObject {
 }
 object IpOptions {
   
-  @scala.inline
-  def apply(): IpOptions = {
+  inline def apply(): IpOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpOptions]
   }
   
-  @scala.inline
-  implicit class IpOptionsMutableBuilder[Self <: IpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IpOptions](x: Self) {
     
-    @scala.inline
-    def setCidr(value: PresenceMode): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: PresenceMode): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
+    inline def setCidrUndefined: Self = StObject.set(x, "cidr", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String | js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String | js.Array[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
+    inline def setVersionVarargs(value: String*): Self = StObject.set(x, "version", js.Array(value :_*))
   }
 }

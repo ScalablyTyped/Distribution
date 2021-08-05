@@ -12,25 +12,19 @@ trait WindowAnimation extends StObject {
 }
 object WindowAnimation {
   
-  @scala.inline
-  def apply(): WindowAnimation = {
+  inline def apply(): WindowAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowAnimation]
   }
   
-  @scala.inline
-  implicit class WindowAnimationMutableBuilder[Self <: WindowAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: WindowAnimation](x: Self) {
     
-    @scala.inline
-    def setClose(value: WindowAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: WindowAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: WindowAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: WindowAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

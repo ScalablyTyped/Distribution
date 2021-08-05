@@ -18,25 +18,19 @@ trait GetDomainNamesRequest extends StObject {
 }
 object GetDomainNamesRequest {
   
-  @scala.inline
-  def apply(): GetDomainNamesRequest = {
+  inline def apply(): GetDomainNamesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDomainNamesRequest]
   }
   
-  @scala.inline
-  implicit class GetDomainNamesRequestMutableBuilder[Self <: GetDomainNamesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainNamesRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

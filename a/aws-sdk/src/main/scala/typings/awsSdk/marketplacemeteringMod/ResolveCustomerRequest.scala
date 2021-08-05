@@ -13,16 +13,13 @@ trait ResolveCustomerRequest extends StObject {
 }
 object ResolveCustomerRequest {
   
-  @scala.inline
-  def apply(RegistrationToken: NonEmptyString): ResolveCustomerRequest = {
+  inline def apply(RegistrationToken: NonEmptyString): ResolveCustomerRequest = {
     val __obj = js.Dynamic.literal(RegistrationToken = RegistrationToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolveCustomerRequest]
   }
   
-  @scala.inline
-  implicit class ResolveCustomerRequestMutableBuilder[Self <: ResolveCustomerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveCustomerRequest](x: Self) {
     
-    @scala.inline
-    def setRegistrationToken(value: NonEmptyString): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
+    inline def setRegistrationToken(value: NonEmptyString): Self = StObject.set(x, "RegistrationToken", value.asInstanceOf[js.Any])
   }
 }

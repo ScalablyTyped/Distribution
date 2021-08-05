@@ -34,38 +34,28 @@ object utilMod {
   }
   object RegionInfo {
     
-    @scala.inline
-    def apply(hostname: String, partition: String): RegionInfo = {
+    inline def apply(hostname: String, partition: String): RegionInfo = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], partition = partition.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegionInfo]
     }
     
-    @scala.inline
-    implicit class RegionInfoMutableBuilder[Self <: RegionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: RegionInfo](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+      inline def setPartition(value: String): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
+      inline def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
+      inline def setSigningRegionUndefined: Self = StObject.set(x, "signingRegion", js.undefined)
       
-      @scala.inline
-      def setSigningService(value: String): Self = StObject.set(x, "signingService", value.asInstanceOf[js.Any])
+      inline def setSigningService(value: String): Self = StObject.set(x, "signingService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSigningServiceUndefined: Self = StObject.set(x, "signingService", js.undefined)
+      inline def setSigningServiceUndefined: Self = StObject.set(x, "signingService", js.undefined)
     }
   }
   
@@ -86,19 +76,16 @@ object utilMod {
   }
   object RetryStrategy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       retry: (FinalizeHandler[js.Any, js.Any], FinalizeHandlerArguments[js.Any]) => js.Promise[FinalizeHandlerOutput[js.Any]]
     ): RetryStrategy = {
       val __obj = js.Dynamic.literal(retry = js.Any.fromFunction2(retry))
       __obj.asInstanceOf[RetryStrategy]
     }
     
-    @scala.inline
-    implicit class RetryStrategyMutableBuilder[Self <: RetryStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: RetryStrategy](x: Self) {
       
-      @scala.inline
-      def setRetry(
+      inline def setRetry(
         value: (FinalizeHandler[js.Any, js.Any], FinalizeHandlerArguments[js.Any]) => js.Promise[FinalizeHandlerOutput[js.Any]]
       ): Self = StObject.set(x, "retry", js.Any.fromFunction2(value))
     }

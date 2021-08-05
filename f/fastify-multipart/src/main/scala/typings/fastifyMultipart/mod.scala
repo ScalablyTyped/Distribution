@@ -39,29 +39,22 @@ object mod extends Shortcut {
   }
   object BodyEntry {
     
-    @scala.inline
-    def apply(data: Buffer, encoding: String, filename: String, mimetype: String): BodyEntry = {
+    inline def apply(data: Buffer, encoding: String, filename: String, mimetype: String): BodyEntry = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], limit = false, mimetype = mimetype.asInstanceOf[js.Any])
       __obj.asInstanceOf[BodyEntry]
     }
     
-    @scala.inline
-    implicit class BodyEntryMutableBuilder[Self <: BodyEntry] (val x: Self) extends AnyVal {
+    extension [Self <: BodyEntry](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit(value: `false`): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: `false`): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+      inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,46 +94,34 @@ object mod extends Shortcut {
   }
   object FastifyMultipartOptions {
     
-    @scala.inline
-    def apply(): FastifyMultipartOptions = {
+    inline def apply(): FastifyMultipartOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FastifyMultipartOptions]
     }
     
-    @scala.inline
-    implicit class FastifyMultipartOptionsMutableBuilder[Self <: FastifyMultipartOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FastifyMultipartOptions](x: Self) {
       
-      @scala.inline
-      def setAddToBody(value: Boolean): Self = StObject.set(x, "addToBody", value.asInstanceOf[js.Any])
+      inline def setAddToBody(value: Boolean): Self = StObject.set(x, "addToBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddToBodyUndefined: Self = StObject.set(x, "addToBody", js.undefined)
+      inline def setAddToBodyUndefined: Self = StObject.set(x, "addToBody", js.undefined)
       
-      @scala.inline
-      def setAttachFieldsToBody(value: Boolean): Self = StObject.set(x, "attachFieldsToBody", value.asInstanceOf[js.Any])
+      inline def setAttachFieldsToBody(value: Boolean): Self = StObject.set(x, "attachFieldsToBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachFieldsToBodyUndefined: Self = StObject.set(x, "attachFieldsToBody", js.undefined)
+      inline def setAttachFieldsToBodyUndefined: Self = StObject.set(x, "attachFieldsToBody", js.undefined)
       
-      @scala.inline
-      def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
       
-      @scala.inline
-      def setOnFile(
+      inline def setOnFile(
         value: (/* fieldName */ String, /* stream */ Readable, /* filename */ String, /* encoding */ String, /* mimetype */ String, /* body */ Record[String, BodyEntry]) => Unit | js.Promise[Unit]
       ): Self = StObject.set(x, "onFile", js.Any.fromFunction6(value))
       
-      @scala.inline
-      def setOnFileUndefined: Self = StObject.set(x, "onFile", js.undefined)
+      inline def setOnFileUndefined: Self = StObject.set(x, "onFile", js.undefined)
       
-      @scala.inline
-      def setSharedSchemaId(value: String): Self = StObject.set(x, "sharedSchemaId", value.asInstanceOf[js.Any])
+      inline def setSharedSchemaId(value: String): Self = StObject.set(x, "sharedSchemaId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedSchemaIdUndefined: Self = StObject.set(x, "sharedSchemaId", js.undefined)
+      inline def setSharedSchemaIdUndefined: Self = StObject.set(x, "sharedSchemaId", js.undefined)
     }
   }
   
@@ -151,8 +132,7 @@ object mod extends Shortcut {
   trait Multipart[T] extends StObject
   object Multipart {
     
-    @scala.inline
-    def MultipartFile(
+    inline def MultipartFile(
       encoding: String,
       fieldname: String,
       fields: MultipartFields,
@@ -166,8 +146,7 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.fastifyMultipart.mod.MultipartFile]
     }
     
-    @scala.inline
-    def MultipartValue[T](value: T): typings.fastifyMultipart.mod.MultipartValue[T] = {
+    inline def MultipartValue[T](value: T): typings.fastifyMultipart.mod.MultipartValue[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.fastifyMultipart.mod.MultipartValue[T]]
     }
@@ -189,8 +168,7 @@ object mod extends Shortcut {
   }
   object MultipartErrors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       FieldsLimitError: FastifyError,
       FilesLimitError: FastifyError,
       InvalidMultipartContentTypeError: FastifyError,
@@ -202,26 +180,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MultipartErrors]
     }
     
-    @scala.inline
-    implicit class MultipartErrorsMutableBuilder[Self <: MultipartErrors] (val x: Self) extends AnyVal {
+    extension [Self <: MultipartErrors](x: Self) {
       
-      @scala.inline
-      def setFieldsLimitError(value: FastifyError): Self = StObject.set(x, "FieldsLimitError", value.asInstanceOf[js.Any])
+      inline def setFieldsLimitError(value: FastifyError): Self = StObject.set(x, "FieldsLimitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesLimitError(value: FastifyError): Self = StObject.set(x, "FilesLimitError", value.asInstanceOf[js.Any])
+      inline def setFilesLimitError(value: FastifyError): Self = StObject.set(x, "FilesLimitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidMultipartContentTypeError(value: FastifyError): Self = StObject.set(x, "InvalidMultipartContentTypeError", value.asInstanceOf[js.Any])
+      inline def setInvalidMultipartContentTypeError(value: FastifyError): Self = StObject.set(x, "InvalidMultipartContentTypeError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartsLimitError(value: FastifyError): Self = StObject.set(x, "PartsLimitError", value.asInstanceOf[js.Any])
+      inline def setPartsLimitError(value: FastifyError): Self = StObject.set(x, "PartsLimitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrototypeViolationError(value: FastifyError): Self = StObject.set(x, "PrototypeViolationError", value.asInstanceOf[js.Any])
+      inline def setPrototypeViolationError(value: FastifyError): Self = StObject.set(x, "PrototypeViolationError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestFileTooLargeError(value: FastifyError): Self = StObject.set(x, "RequestFileTooLargeError", value.asInstanceOf[js.Any])
+      inline def setRequestFileTooLargeError(value: FastifyError): Self = StObject.set(x, "RequestFileTooLargeError", value.asInstanceOf[js.Any])
     }
   }
   
@@ -249,8 +220,7 @@ object mod extends Shortcut {
   }
   object MultipartFile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       encoding: String,
       fieldname: String,
       fields: MultipartFields,
@@ -264,32 +234,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MultipartFile]
     }
     
-    @scala.inline
-    implicit class MultipartFileMutableBuilder[Self <: MultipartFile] (val x: Self) extends AnyVal {
+    extension [Self <: MultipartFile](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldname(value: String): Self = StObject.set(x, "fieldname", value.asInstanceOf[js.Any])
+      inline def setFieldname(value: String): Self = StObject.set(x, "fieldname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(value: MultipartFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: MultipartFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: ReadableStream): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: ReadableStream): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
+      inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+      inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToBuffer(value: () => js.Promise[Buffer]): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
+      inline def setToBuffer(value: () => js.Promise[Buffer]): Self = StObject.set(x, "toBuffer", js.Any.fromFunction0(value))
     }
   }
   
@@ -310,17 +271,14 @@ object mod extends Shortcut {
   }
   object MultipartValue {
     
-    @scala.inline
-    def apply[T](value: T): MultipartValue[T] = {
+    inline def apply[T](value: T): MultipartValue[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultipartValue[T]]
     }
     
-    @scala.inline
-    implicit class MultipartValueMutableBuilder[Self <: MultipartValue[?], T] (val x: Self & MultipartValue[T]) extends AnyVal {
+    extension [Self <: MultipartValue[?], T](x: Self & MultipartValue[T]) {
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -338,17 +296,14 @@ object mod extends Shortcut {
     }
     object FastifyInstance {
       
-      @scala.inline
-      def apply(multipartErrors: MultipartErrors): FastifyInstance = {
+      inline def apply(multipartErrors: MultipartErrors): FastifyInstance = {
         val __obj = js.Dynamic.literal(multipartErrors = multipartErrors.asInstanceOf[js.Any])
         __obj.asInstanceOf[FastifyInstance]
       }
       
-      @scala.inline
-      implicit class FastifyInstanceMutableBuilder[Self <: FastifyInstance] (val x: Self) extends AnyVal {
+      extension [Self <: FastifyInstance](x: Self) {
         
-        @scala.inline
-        def setMultipartErrors(value: MultipartErrors): Self = StObject.set(x, "multipartErrors", value.asInstanceOf[js.Any])
+        inline def setMultipartErrors(value: MultipartErrors): Self = StObject.set(x, "multipartErrors", value.asInstanceOf[js.Any])
       }
     }
     

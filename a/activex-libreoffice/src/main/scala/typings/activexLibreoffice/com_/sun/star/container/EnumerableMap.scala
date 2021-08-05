@@ -58,8 +58,7 @@ trait EnumerableMap
 }
 object EnumerableMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     KeyType: `type`,
     ValueType: `type`,
@@ -84,13 +83,10 @@ object EnumerableMap {
     __obj.asInstanceOf[EnumerableMap]
   }
   
-  @scala.inline
-  implicit class EnumerableMapMutableBuilder[Self <: EnumerableMap] (val x: Self) extends AnyVal {
+  extension [Self <: EnumerableMap](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (`type`, `type`) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (`type`, `type`) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateImmutable(value: (`type`, `type`, SeqEquiv[Pair[js.Any, js.Any]]) => Unit): Self = StObject.set(x, "createImmutable", js.Any.fromFunction3(value))
+    inline def setCreateImmutable(value: (`type`, `type`, SeqEquiv[Pair[js.Any, js.Any]]) => Unit): Self = StObject.set(x, "createImmutable", js.Any.fromFunction3(value))
   }
 }

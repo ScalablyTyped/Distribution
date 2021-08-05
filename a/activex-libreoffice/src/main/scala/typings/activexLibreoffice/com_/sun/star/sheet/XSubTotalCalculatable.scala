@@ -35,8 +35,7 @@ trait XSubTotalCalculatable
 }
 object XSubTotalCalculatable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     applySubTotals: (XSubTotalDescriptor, Boolean) => Unit,
     createSubTotalDescriptor: Boolean => XSubTotalDescriptor,
@@ -48,16 +47,12 @@ object XSubTotalCalculatable {
     __obj.asInstanceOf[XSubTotalCalculatable]
   }
   
-  @scala.inline
-  implicit class XSubTotalCalculatableMutableBuilder[Self <: XSubTotalCalculatable] (val x: Self) extends AnyVal {
+  extension [Self <: XSubTotalCalculatable](x: Self) {
     
-    @scala.inline
-    def setApplySubTotals(value: (XSubTotalDescriptor, Boolean) => Unit): Self = StObject.set(x, "applySubTotals", js.Any.fromFunction2(value))
+    inline def setApplySubTotals(value: (XSubTotalDescriptor, Boolean) => Unit): Self = StObject.set(x, "applySubTotals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateSubTotalDescriptor(value: Boolean => XSubTotalDescriptor): Self = StObject.set(x, "createSubTotalDescriptor", js.Any.fromFunction1(value))
+    inline def setCreateSubTotalDescriptor(value: Boolean => XSubTotalDescriptor): Self = StObject.set(x, "createSubTotalDescriptor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSubTotals(value: () => Unit): Self = StObject.set(x, "removeSubTotals", js.Any.fromFunction0(value))
+    inline def setRemoveSubTotals(value: () => Unit): Self = StObject.set(x, "removeSubTotals", js.Any.fromFunction0(value))
   }
 }

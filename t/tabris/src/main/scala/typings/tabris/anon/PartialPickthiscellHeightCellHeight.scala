@@ -17,37 +17,27 @@ trait PartialPickthiscellHeightCellHeight extends StObject {
 }
 object PartialPickthiscellHeightCellHeight {
   
-  @scala.inline
-  def apply(): PartialPickthiscellHeightCellHeight = {
+  inline def apply(): PartialPickthiscellHeightCellHeight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickthiscellHeightCellHeight]
   }
   
-  @scala.inline
-  implicit class PartialPickthiscellHeightCellHeightMutableBuilder[Self <: PartialPickthiscellHeightCellHeight] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickthiscellHeightCellHeight](x: Self) {
     
-    @scala.inline
-    def setCellHeight(value: js.Any): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+    inline def setCellHeight(value: js.Any): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
+    inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
     
-    @scala.inline
-    def setCellType(value: js.Any): Self = StObject.set(x, "cellType", value.asInstanceOf[js.Any])
+    inline def setCellType(value: js.Any): Self = StObject.set(x, "cellType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellTypeUndefined: Self = StObject.set(x, "cellType", js.undefined)
+    inline def setCellTypeUndefined: Self = StObject.set(x, "cellType", js.undefined)
     
-    @scala.inline
-    def setCreateCell(value: js.Any): Self = StObject.set(x, "createCell", value.asInstanceOf[js.Any])
+    inline def setCreateCell(value: js.Any): Self = StObject.set(x, "createCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCellUndefined: Self = StObject.set(x, "createCell", js.undefined)
+    inline def setCreateCellUndefined: Self = StObject.set(x, "createCell", js.undefined)
     
-    @scala.inline
-    def setUpdateCell(value: js.Any): Self = StObject.set(x, "updateCell", value.asInstanceOf[js.Any])
+    inline def setUpdateCell(value: js.Any): Self = StObject.set(x, "updateCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateCellUndefined: Self = StObject.set(x, "updateCell", js.undefined)
+    inline def setUpdateCellUndefined: Self = StObject.set(x, "updateCell", js.undefined)
   }
 }

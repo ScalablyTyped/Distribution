@@ -18,19 +18,15 @@ trait RejectAssignmentRequest extends StObject {
 }
 object RejectAssignmentRequest {
   
-  @scala.inline
-  def apply(AssignmentId: EntityId, RequesterFeedback: String): RejectAssignmentRequest = {
+  inline def apply(AssignmentId: EntityId, RequesterFeedback: String): RejectAssignmentRequest = {
     val __obj = js.Dynamic.literal(AssignmentId = AssignmentId.asInstanceOf[js.Any], RequesterFeedback = RequesterFeedback.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectAssignmentRequest]
   }
   
-  @scala.inline
-  implicit class RejectAssignmentRequestMutableBuilder[Self <: RejectAssignmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RejectAssignmentRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
+    inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterFeedback(value: String): Self = StObject.set(x, "RequesterFeedback", value.asInstanceOf[js.Any])
+    inline def setRequesterFeedback(value: String): Self = StObject.set(x, "RequesterFeedback", value.asInstanceOf[js.Any])
   }
 }

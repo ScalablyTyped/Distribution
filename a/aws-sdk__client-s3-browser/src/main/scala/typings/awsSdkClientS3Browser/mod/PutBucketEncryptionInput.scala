@@ -10,8 +10,7 @@ trait PutBucketEncryptionInput
      with typings.awsSdkClientS3Browser.typesPutBucketEncryptionInputMod.PutBucketEncryptionInput
 object PutBucketEncryptionInput {
   
-  @scala.inline
-  def apply(Bucket: String, ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration): PutBucketEncryptionInput = {
+  inline def apply(Bucket: String, ServerSideEncryptionConfiguration: ServerSideEncryptionConfiguration): PutBucketEncryptionInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], ServerSideEncryptionConfiguration = ServerSideEncryptionConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketEncryptionInput]
   }

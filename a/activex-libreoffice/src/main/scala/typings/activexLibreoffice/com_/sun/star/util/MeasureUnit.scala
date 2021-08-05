@@ -49,61 +49,42 @@ object MeasureUnit {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def APPFONT: `17` = 17.asInstanceOf[`17`]
+    inline def APPFONT: `17` = 17.asInstanceOf[`17`]
     
-    @scala.inline
-    def CM: `3` = 3.asInstanceOf[`3`]
+    inline def CM: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def FOOT: `13` = 13.asInstanceOf[`13`]
+    inline def FOOT: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def INCH: `7` = 7.asInstanceOf[`7`]
+    inline def INCH: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def INCH_1000TH: `4` = 4.asInstanceOf[`4`]
+    inline def INCH_1000TH: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def INCH_100TH: `5` = 5.asInstanceOf[`5`]
+    inline def INCH_100TH: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def INCH_10TH: `6` = 6.asInstanceOf[`6`]
+    inline def INCH_10TH: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def KM: `11` = 11.asInstanceOf[`11`]
+    inline def KM: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def M: `10` = 10.asInstanceOf[`10`]
+    inline def M: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def MILE: `14` = 14.asInstanceOf[`14`]
+    inline def MILE: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def MM: `2` = 2.asInstanceOf[`2`]
+    inline def MM: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def MM_100TH: `0` = 0.asInstanceOf[`0`]
+    inline def MM_100TH: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def MM_10TH: `1` = 1.asInstanceOf[`1`]
+    inline def MM_10TH: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def PERCENT: `15` = 15.asInstanceOf[`15`]
+    inline def PERCENT: `15` = 15.asInstanceOf[`15`]
     
-    @scala.inline
-    def PICA: `12` = 12.asInstanceOf[`12`]
+    inline def PICA: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def PIXEL: `16` = 16.asInstanceOf[`16`]
+    inline def PIXEL: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def POINT: `8` = 8.asInstanceOf[`8`]
+    inline def POINT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def SYSFONT: `18` = 18.asInstanceOf[`18`]
+    inline def SYSFONT: `18` = 18.asInstanceOf[`18`]
     
-    @scala.inline
-    def TWIP: `9` = 9.asInstanceOf[`9`]
+    inline def TWIP: `9` = 9.asInstanceOf[`9`]
   }
 }

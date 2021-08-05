@@ -37,31 +37,23 @@ trait ImageryLayerProperties
 }
 object ImageryLayerProperties {
   
-  @scala.inline
-  def apply(): ImageryLayerProperties = {
+  inline def apply(): ImageryLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageryLayerProperties]
   }
   
-  @scala.inline
-  implicit class ImageryLayerPropertiesMutableBuilder[Self <: ImageryLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageryLayerProperties](x: Self) {
     
-    @scala.inline
-    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
-    @scala.inline
-    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
-    @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
+    inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
   }
 }

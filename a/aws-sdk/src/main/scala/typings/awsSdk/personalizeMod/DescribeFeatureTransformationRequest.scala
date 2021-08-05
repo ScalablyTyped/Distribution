@@ -13,16 +13,13 @@ trait DescribeFeatureTransformationRequest extends StObject {
 }
 object DescribeFeatureTransformationRequest {
   
-  @scala.inline
-  def apply(featureTransformationArn: Arn): DescribeFeatureTransformationRequest = {
+  inline def apply(featureTransformationArn: Arn): DescribeFeatureTransformationRequest = {
     val __obj = js.Dynamic.literal(featureTransformationArn = featureTransformationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFeatureTransformationRequest]
   }
   
-  @scala.inline
-  implicit class DescribeFeatureTransformationRequestMutableBuilder[Self <: DescribeFeatureTransformationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFeatureTransformationRequest](x: Self) {
     
-    @scala.inline
-    def setFeatureTransformationArn(value: Arn): Self = StObject.set(x, "featureTransformationArn", value.asInstanceOf[js.Any])
+    inline def setFeatureTransformationArn(value: Arn): Self = StObject.set(x, "featureTransformationArn", value.asInstanceOf[js.Any])
   }
 }

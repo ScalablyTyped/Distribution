@@ -56,44 +56,32 @@ object mod {
   }
   object SequenceOptions {
     
-    @scala.inline
-    def apply(inc_field: String): SequenceOptions = {
+    inline def apply(inc_field: String): SequenceOptions = {
       val __obj = js.Dynamic.literal(inc_field = inc_field.asInstanceOf[js.Any])
       __obj.asInstanceOf[SequenceOptions]
     }
     
-    @scala.inline
-    implicit class SequenceOptionsMutableBuilder[Self <: SequenceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SequenceOptions](x: Self) {
       
-      @scala.inline
-      def setCollection_name(value: String): Self = StObject.set(x, "collection_name", value.asInstanceOf[js.Any])
+      inline def setCollection_name(value: String): Self = StObject.set(x, "collection_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollection_nameUndefined: Self = StObject.set(x, "collection_name", js.undefined)
+      inline def setCollection_nameUndefined: Self = StObject.set(x, "collection_name", js.undefined)
       
-      @scala.inline
-      def setDisable_hooks(value: Boolean): Self = StObject.set(x, "disable_hooks", value.asInstanceOf[js.Any])
+      inline def setDisable_hooks(value: Boolean): Self = StObject.set(x, "disable_hooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_hooksUndefined: Self = StObject.set(x, "disable_hooks", js.undefined)
+      inline def setDisable_hooksUndefined: Self = StObject.set(x, "disable_hooks", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInc_field(value: String): Self = StObject.set(x, "inc_field", value.asInstanceOf[js.Any])
+      inline def setInc_field(value: String): Self = StObject.set(x, "inc_field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReference_fields(value: js.Array[String]): Self = StObject.set(x, "reference_fields", value.asInstanceOf[js.Any])
+      inline def setReference_fields(value: js.Array[String]): Self = StObject.set(x, "reference_fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReference_fieldsUndefined: Self = StObject.set(x, "reference_fields", js.undefined)
+      inline def setReference_fieldsUndefined: Self = StObject.set(x, "reference_fields", js.undefined)
       
-      @scala.inline
-      def setReference_fieldsVarargs(value: String*): Self = StObject.set(x, "reference_fields", js.Array(value :_*))
+      inline def setReference_fieldsVarargs(value: String*): Self = StObject.set(x, "reference_fields", js.Array(value :_*))
     }
   }
   

@@ -55,21 +55,16 @@ object vaultPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VaultPolicyState): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VaultPolicyState, opts: CustomResourceOptions): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
+    inline def get(name: String, id: Input[ID]): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
+    inline def get(name: String, id: Input[ID], state: VaultPolicyState): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
+    inline def get(name: String, id: Input[ID], state: VaultPolicyState, opts: CustomResourceOptions): VaultPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VaultPolicy]
     
     /**
       * Returns true if the given object is an instance of VaultPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vaultPolicy.VaultPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/vaultPolicy.VaultPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/vaultPolicy.VaultPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/vaultPolicy.VaultPolicy */ Boolean]
   }
   
   trait VaultPolicyArgs extends StObject {
@@ -86,20 +81,16 @@ object vaultPolicyMod {
   }
   object VaultPolicyArgs {
     
-    @scala.inline
-    def apply(backupVaultName: Input[String], policy: Input[String]): VaultPolicyArgs = {
+    inline def apply(backupVaultName: Input[String], policy: Input[String]): VaultPolicyArgs = {
       val __obj = js.Dynamic.literal(backupVaultName = backupVaultName.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
       __obj.asInstanceOf[VaultPolicyArgs]
     }
     
-    @scala.inline
-    implicit class VaultPolicyArgsMutableBuilder[Self <: VaultPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VaultPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setBackupVaultName(value: Input[String]): Self = StObject.set(x, "backupVaultName", value.asInstanceOf[js.Any])
+      inline def setBackupVaultName(value: Input[String]): Self = StObject.set(x, "backupVaultName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,32 +113,24 @@ object vaultPolicyMod {
   }
   object VaultPolicyState {
     
-    @scala.inline
-    def apply(): VaultPolicyState = {
+    inline def apply(): VaultPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VaultPolicyState]
     }
     
-    @scala.inline
-    implicit class VaultPolicyStateMutableBuilder[Self <: VaultPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: VaultPolicyState](x: Self) {
       
-      @scala.inline
-      def setBackupVaultArn(value: Input[String]): Self = StObject.set(x, "backupVaultArn", value.asInstanceOf[js.Any])
+      inline def setBackupVaultArn(value: Input[String]): Self = StObject.set(x, "backupVaultArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupVaultArnUndefined: Self = StObject.set(x, "backupVaultArn", js.undefined)
+      inline def setBackupVaultArnUndefined: Self = StObject.set(x, "backupVaultArn", js.undefined)
       
-      @scala.inline
-      def setBackupVaultName(value: Input[String]): Self = StObject.set(x, "backupVaultName", value.asInstanceOf[js.Any])
+      inline def setBackupVaultName(value: Input[String]): Self = StObject.set(x, "backupVaultName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackupVaultNameUndefined: Self = StObject.set(x, "backupVaultName", js.undefined)
+      inline def setBackupVaultNameUndefined: Self = StObject.set(x, "backupVaultName", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     }
   }
 }

@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(dir: String, pattern: String): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
-  @scala.inline
-  def apply(dir: String, pattern: String, options: OptionsExt & IOptions): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
+  inline def apply(dir: String, pattern: String): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
+  inline def apply(dir: String, pattern: String, options: OptionsExt & IOptions): AsyncIterable[String] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[String]]
   
   @JSImport("it-glob/dist", JSImport.Namespace)
   @js.native
@@ -25,8 +23,7 @@ object mod {
        with IOptions
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
@@ -53,41 +50,30 @@ object mod {
   }
   object OptionsExt {
     
-    @scala.inline
-    def apply(): OptionsExt = {
+    inline def apply(): OptionsExt = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsExt]
     }
     
-    @scala.inline
-    implicit class OptionsExtMutableBuilder[Self <: OptionsExt] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsExt](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+      inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setNodir(value: Boolean): Self = StObject.set(x, "nodir", value.asInstanceOf[js.Any])
+      inline def setNodir(value: Boolean): Self = StObject.set(x, "nodir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodirUndefined: Self = StObject.set(x, "nodir", js.undefined)
+      inline def setNodirUndefined: Self = StObject.set(x, "nodir", js.undefined)
     }
   }
 }

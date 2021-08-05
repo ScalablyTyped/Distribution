@@ -58,8 +58,7 @@ trait AssetEntry extends StObject {
 }
 object AssetEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Arn: Arn,
     AssetDetails: AssetDetails,
     AssetType: AssetType,
@@ -74,40 +73,28 @@ object AssetEntry {
     __obj.asInstanceOf[AssetEntry]
   }
   
-  @scala.inline
-  implicit class AssetEntryMutableBuilder[Self <: AssetEntry] (val x: Self) extends AnyVal {
+  extension [Self <: AssetEntry](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetDetails(value: AssetDetails): Self = StObject.set(x, "AssetDetails", value.asInstanceOf[js.Any])
+    inline def setAssetDetails(value: AssetDetails): Self = StObject.set(x, "AssetDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetType(value: AssetType): Self = StObject.set(x, "AssetType", value.asInstanceOf[js.Any])
+    inline def setAssetType(value: AssetType): Self = StObject.set(x, "AssetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: Id): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: AssetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AssetName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceId(value: Id): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: Id): Self = StObject.set(x, "SourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
+    inline def setSourceIdUndefined: Self = StObject.set(x, "SourceId", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

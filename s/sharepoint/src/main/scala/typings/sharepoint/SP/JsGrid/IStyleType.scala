@@ -34,8 +34,7 @@ object IStyleType {
   }
   object Cell {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundColor: js.Any,
       font: js.Any,
       fontSize: js.Any,
@@ -48,29 +47,21 @@ object IStyleType {
       __obj.asInstanceOf[Cell]
     }
     
-    @scala.inline
-    implicit class CellMutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
+    extension [Self <: Cell](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: js.Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: js.Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyle(value: js.Any): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: js.Any): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeight(value: js.Any): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: js.Any): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlign(value: js.Any): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: js.Any): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,8 +105,7 @@ object IStyleType {
   }
   object GridPane {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundColor: js.Any,
       changeHighlightCellBgColor: js.Any,
       columnDropIndicatorColor: js.Any,
@@ -139,62 +129,43 @@ object IStyleType {
       __obj.asInstanceOf[GridPane]
     }
     
-    @scala.inline
-    implicit class GridPaneMutableBuilder[Self <: GridPane] (val x: Self) extends AnyVal {
+    extension [Self <: GridPane](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeHighlightCellBgColor(value: js.Any): Self = StObject.set(x, "changeHighlightCellBgColor", value.asInstanceOf[js.Any])
+      inline def setChangeHighlightCellBgColor(value: js.Any): Self = StObject.set(x, "changeHighlightCellBgColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnDropIndicatorColor(value: js.Any): Self = StObject.set(x, "columnDropIndicatorColor", value.asInstanceOf[js.Any])
+      inline def setColumnDropIndicatorColor(value: js.Any): Self = StObject.set(x, "columnDropIndicatorColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyRectBackBorderColor(value: js.Any): Self = StObject.set(x, "copyRectBackBorderColor", value.asInstanceOf[js.Any])
+      inline def setCopyRectBackBorderColor(value: js.Any): Self = StObject.set(x, "copyRectBackBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyRectForeBorderColor(value: js.Any): Self = StObject.set(x, "copyRectForeBorderColor", value.asInstanceOf[js.Any])
+      inline def setCopyRectForeBorderColor(value: js.Any): Self = StObject.set(x, "copyRectForeBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorRectBorderColor(value: js.Any): Self = StObject.set(x, "errorRectBorderColor", value.asInstanceOf[js.Any])
+      inline def setErrorRectBorderColor(value: js.Any): Self = StObject.set(x, "errorRectBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillRectBorderColor(value: js.Any): Self = StObject.set(x, "fillRectBorderColor", value.asInstanceOf[js.Any])
+      inline def setFillRectBorderColor(value: js.Any): Self = StObject.set(x, "fillRectBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusRectBorderColor(value: js.Any): Self = StObject.set(x, "focusRectBorderColor", value.asInstanceOf[js.Any])
+      inline def setFocusRectBorderColor(value: js.Any): Self = StObject.set(x, "focusRectBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalBorderColor(value: js.Any): Self = StObject.set(x, "horizontalBorderColor", value.asInstanceOf[js.Any])
+      inline def setHorizontalBorderColor(value: js.Any): Self = StObject.set(x, "horizontalBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalBorderStyle(value: js.Any): Self = StObject.set(x, "horizontalBorderStyle", value.asInstanceOf[js.Any])
+      inline def setHorizontalBorderStyle(value: js.Any): Self = StObject.set(x, "horizontalBorderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkColor(value: js.Any): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
+      inline def setLinkColor(value: js.Any): Self = StObject.set(x, "linkColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadonlySelectionRectBorderColor(value: js.Any): Self = StObject.set(x, "readonlySelectionRectBorderColor", value.asInstanceOf[js.Any])
+      inline def setReadonlySelectionRectBorderColor(value: js.Any): Self = StObject.set(x, "readonlySelectionRectBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowDropIndicatorColor(value: js.Any): Self = StObject.set(x, "rowDropIndicatorColor", value.asInstanceOf[js.Any])
+      inline def setRowDropIndicatorColor(value: js.Any): Self = StObject.set(x, "rowDropIndicatorColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedCellBgColor(value: js.Any): Self = StObject.set(x, "selectedCellBgColor", value.asInstanceOf[js.Any])
+      inline def setSelectedCellBgColor(value: js.Any): Self = StObject.set(x, "selectedCellBgColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionRectBorderColor(value: js.Any): Self = StObject.set(x, "selectionRectBorderColor", value.asInstanceOf[js.Any])
+      inline def setSelectionRectBorderColor(value: js.Any): Self = StObject.set(x, "selectionRectBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalBorderColor(value: js.Any): Self = StObject.set(x, "verticalBorderColor", value.asInstanceOf[js.Any])
+      inline def setVerticalBorderColor(value: js.Any): Self = StObject.set(x, "verticalBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalBorderStyle(value: js.Any): Self = StObject.set(x, "verticalBorderStyle", value.asInstanceOf[js.Any])
+      inline def setVerticalBorderStyle(value: js.Any): Self = StObject.set(x, "verticalBorderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitedLinkColor(value: js.Any): Self = StObject.set(x, "visitedLinkColor", value.asInstanceOf[js.Any])
+      inline def setVisitedLinkColor(value: js.Any): Self = StObject.set(x, "visitedLinkColor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,8 +215,7 @@ object IStyleType {
   }
   object Header {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundColor: js.Any,
       elementClickBorderColor: js.Any,
       elementClickColor: js.Any,
@@ -272,71 +242,49 @@ object IStyleType {
       __obj.asInstanceOf[Header]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+    extension [Self <: Header](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementClickBorderColor(value: js.Any): Self = StObject.set(x, "elementClickBorderColor", value.asInstanceOf[js.Any])
+      inline def setElementClickBorderColor(value: js.Any): Self = StObject.set(x, "elementClickBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementClickColor(value: js.Any): Self = StObject.set(x, "elementClickColor", value.asInstanceOf[js.Any])
+      inline def setElementClickColor(value: js.Any): Self = StObject.set(x, "elementClickColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEyeBrowBorderColor(value: js.Any): Self = StObject.set(x, "eyeBrowBorderColor", value.asInstanceOf[js.Any])
+      inline def setEyeBrowBorderColor(value: js.Any): Self = StObject.set(x, "eyeBrowBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEyeBrowColor(value: js.Any): Self = StObject.set(x, "eyeBrowColor", value.asInstanceOf[js.Any])
+      inline def setEyeBrowColor(value: js.Any): Self = StObject.set(x, "eyeBrowColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEyeBrowHoverBorderColor(value: js.Any): Self = StObject.set(x, "eyeBrowHoverBorderColor", value.asInstanceOf[js.Any])
+      inline def setEyeBrowHoverBorderColor(value: js.Any): Self = StObject.set(x, "eyeBrowHoverBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEyeBrowHoverColor(value: js.Any): Self = StObject.set(x, "eyeBrowHoverColor", value.asInstanceOf[js.Any])
+      inline def setEyeBrowHoverColor(value: js.Any): Self = StObject.set(x, "eyeBrowHoverColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: js.Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: js.Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeight(value: js.Any): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: js.Any): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerBorderColor(value: js.Any): Self = StObject.set(x, "innerBorderColor", value.asInstanceOf[js.Any])
+      inline def setInnerBorderColor(value: js.Any): Self = StObject.set(x, "innerBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuBorderColor(value: js.Any): Self = StObject.set(x, "menuBorderColor", value.asInstanceOf[js.Any])
+      inline def setMenuBorderColor(value: js.Any): Self = StObject.set(x, "menuBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuColor(value: js.Any): Self = StObject.set(x, "menuColor", value.asInstanceOf[js.Any])
+      inline def setMenuColor(value: js.Any): Self = StObject.set(x, "menuColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuHoverBorderColor(value: js.Any): Self = StObject.set(x, "menuHoverBorderColor", value.asInstanceOf[js.Any])
+      inline def setMenuHoverBorderColor(value: js.Any): Self = StObject.set(x, "menuHoverBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuHoverColor(value: js.Any): Self = StObject.set(x, "menuHoverColor", value.asInstanceOf[js.Any])
+      inline def setMenuHoverColor(value: js.Any): Self = StObject.set(x, "menuHoverColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
+      inline def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeBorderColor(value: js.Any): Self = StObject.set(x, "resizeBorderColor", value.asInstanceOf[js.Any])
+      inline def setResizeBorderColor(value: js.Any): Self = StObject.set(x, "resizeBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeColor(value: js.Any): Self = StObject.set(x, "resizeColor", value.asInstanceOf[js.Any])
+      inline def setResizeColor(value: js.Any): Self = StObject.set(x, "resizeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeHoverBorderColor(value: js.Any): Self = StObject.set(x, "resizeHoverBorderColor", value.asInstanceOf[js.Any])
+      inline def setResizeHoverBorderColor(value: js.Any): Self = StObject.set(x, "resizeHoverBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeHoverColor(value: js.Any): Self = StObject.set(x, "resizeHoverColor", value.asInstanceOf[js.Any])
+      inline def setResizeHoverColor(value: js.Any): Self = StObject.set(x, "resizeHoverColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,23 +298,18 @@ object IStyleType {
   }
   object RowHeaderStyle {
     
-    @scala.inline
-    def apply(backgroundColor: js.Any, innerBorderColor: js.Any, outerBorderColor: js.Any): RowHeaderStyle = {
+    inline def apply(backgroundColor: js.Any, innerBorderColor: js.Any, outerBorderColor: js.Any): RowHeaderStyle = {
       val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], innerBorderColor = innerBorderColor.asInstanceOf[js.Any], outerBorderColor = outerBorderColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowHeaderStyle]
     }
     
-    @scala.inline
-    implicit class RowHeaderStyleMutableBuilder[Self <: RowHeaderStyle] (val x: Self) extends AnyVal {
+    extension [Self <: RowHeaderStyle](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerBorderColor(value: js.Any): Self = StObject.set(x, "innerBorderColor", value.asInstanceOf[js.Any])
+      inline def setInnerBorderColor(value: js.Any): Self = StObject.set(x, "innerBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
+      inline def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -384,8 +327,7 @@ object IStyleType {
   }
   object Splitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundColor: js.Any,
       innerBorderColor: js.Any,
       leftInnerBorderColor: js.Any,
@@ -395,20 +337,15 @@ object IStyleType {
       __obj.asInstanceOf[Splitter]
     }
     
-    @scala.inline
-    implicit class SplitterMutableBuilder[Self <: Splitter] (val x: Self) extends AnyVal {
+    extension [Self <: Splitter](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerBorderColor(value: js.Any): Self = StObject.set(x, "innerBorderColor", value.asInstanceOf[js.Any])
+      inline def setInnerBorderColor(value: js.Any): Self = StObject.set(x, "innerBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftInnerBorderColor(value: js.Any): Self = StObject.set(x, "leftInnerBorderColor", value.asInstanceOf[js.Any])
+      inline def setLeftInnerBorderColor(value: js.Any): Self = StObject.set(x, "leftInnerBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
+      inline def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -430,8 +367,7 @@ object IStyleType {
   }
   object SplitterHandle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundColor: js.Any,
       gripLowerColor: js.Any,
       gripUpperColor: js.Any,
@@ -443,26 +379,19 @@ object IStyleType {
       __obj.asInstanceOf[SplitterHandle]
     }
     
-    @scala.inline
-    implicit class SplitterHandleMutableBuilder[Self <: SplitterHandle] (val x: Self) extends AnyVal {
+    extension [Self <: SplitterHandle](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGripLowerColor(value: js.Any): Self = StObject.set(x, "gripLowerColor", value.asInstanceOf[js.Any])
+      inline def setGripLowerColor(value: js.Any): Self = StObject.set(x, "gripLowerColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGripUpperColor(value: js.Any): Self = StObject.set(x, "gripUpperColor", value.asInstanceOf[js.Any])
+      inline def setGripUpperColor(value: js.Any): Self = StObject.set(x, "gripUpperColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerBorderColor(value: js.Any): Self = StObject.set(x, "innerBorderColor", value.asInstanceOf[js.Any])
+      inline def setInnerBorderColor(value: js.Any): Self = StObject.set(x, "innerBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftInnerBorderColor(value: js.Any): Self = StObject.set(x, "leftInnerBorderColor", value.asInstanceOf[js.Any])
+      inline def setLeftInnerBorderColor(value: js.Any): Self = StObject.set(x, "leftInnerBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
+      inline def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -492,8 +421,7 @@ object IStyleType {
   }
   object TimescaleTier {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundColor: js.Any,
       font: js.Any,
       fontSize: js.Any,
@@ -510,41 +438,29 @@ object IStyleType {
       __obj.asInstanceOf[TimescaleTier]
     }
     
-    @scala.inline
-    implicit class TimescaleTierMutableBuilder[Self <: TimescaleTier] (val x: Self) extends AnyVal {
+    extension [Self <: TimescaleTier](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: js.Any): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: js.Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: js.Any): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeight(value: js.Any): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+      inline def setFontWeight(value: js.Any): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalBorderColor(value: js.Any): Self = StObject.set(x, "horizontalBorderColor", value.asInstanceOf[js.Any])
+      inline def setHorizontalBorderColor(value: js.Any): Self = StObject.set(x, "horizontalBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalBorderStyle(value: js.Any): Self = StObject.set(x, "horizontalBorderStyle", value.asInstanceOf[js.Any])
+      inline def setHorizontalBorderStyle(value: js.Any): Self = StObject.set(x, "horizontalBorderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
+      inline def setOuterBorderColor(value: js.Any): Self = StObject.set(x, "outerBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: js.Any): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayLineColor(value: js.Any): Self = StObject.set(x, "todayLineColor", value.asInstanceOf[js.Any])
+      inline def setTodayLineColor(value: js.Any): Self = StObject.set(x, "todayLineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalBorderColor(value: js.Any): Self = StObject.set(x, "verticalBorderColor", value.asInstanceOf[js.Any])
+      inline def setVerticalBorderColor(value: js.Any): Self = StObject.set(x, "verticalBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalBorderStyle(value: js.Any): Self = StObject.set(x, "verticalBorderStyle", value.asInstanceOf[js.Any])
+      inline def setVerticalBorderStyle(value: js.Any): Self = StObject.set(x, "verticalBorderStyle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -556,20 +472,16 @@ object IStyleType {
   }
   object Widget {
     
-    @scala.inline
-    def apply(backgroundColor: js.Any, borderColor: js.Any): Widget = {
+    inline def apply(backgroundColor: js.Any, borderColor: js.Any): Widget = {
       val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderColor = borderColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[Widget]
     }
     
-    @scala.inline
-    implicit class WidgetMutableBuilder[Self <: Widget] (val x: Self) extends AnyVal {
+    extension [Self <: Widget](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: js.Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColor(value: js.Any): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: js.Any): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     }
   }
 }

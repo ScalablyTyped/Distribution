@@ -29,8 +29,7 @@ trait XUIConfigurationStorage
 }
 object XUIConfigurationStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     hasStorage: () => Boolean,
     queryInterface: `type` => js.Any,
@@ -41,13 +40,10 @@ object XUIConfigurationStorage {
     __obj.asInstanceOf[XUIConfigurationStorage]
   }
   
-  @scala.inline
-  implicit class XUIConfigurationStorageMutableBuilder[Self <: XUIConfigurationStorage] (val x: Self) extends AnyVal {
+  extension [Self <: XUIConfigurationStorage](x: Self) {
     
-    @scala.inline
-    def setHasStorage(value: () => Boolean): Self = StObject.set(x, "hasStorage", js.Any.fromFunction0(value))
+    inline def setHasStorage(value: () => Boolean): Self = StObject.set(x, "hasStorage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetStorage(value: XStorage => Unit): Self = StObject.set(x, "setStorage", js.Any.fromFunction1(value))
+    inline def setSetStorage(value: XStorage => Unit): Self = StObject.set(x, "setStorage", js.Any.fromFunction1(value))
   }
 }

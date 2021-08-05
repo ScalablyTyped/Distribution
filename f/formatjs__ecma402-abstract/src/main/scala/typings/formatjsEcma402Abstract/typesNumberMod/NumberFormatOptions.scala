@@ -13,19 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object NumberFormatOptions {
   
-  @scala.inline
-  def apply(): NumberFormatOptions = {
+  inline def apply(): NumberFormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumberFormatOptions]
   }
   
-  @scala.inline
-  implicit class NumberFormatOptionsMutableBuilder[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NumberFormatOptions](x: Self) {
     
-    @scala.inline
-    def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
+    inline def setNumberingSystem(value: String): Self = StObject.set(x, "numberingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
+    inline def setNumberingSystemUndefined: Self = StObject.set(x, "numberingSystem", js.undefined)
   }
 }

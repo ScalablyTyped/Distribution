@@ -13,25 +13,19 @@ trait FreedomInCoreEnvOptions extends StObject {
 }
 object FreedomInCoreEnvOptions {
   
-  @scala.inline
-  def apply(): FreedomInCoreEnvOptions = {
+  inline def apply(): FreedomInCoreEnvOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FreedomInCoreEnvOptions]
   }
   
-  @scala.inline
-  implicit class FreedomInCoreEnvOptionsMutableBuilder[Self <: FreedomInCoreEnvOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FreedomInCoreEnvOptions](x: Self) {
     
-    @scala.inline
-    def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setLogger(value: String): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: String): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
   }
 }

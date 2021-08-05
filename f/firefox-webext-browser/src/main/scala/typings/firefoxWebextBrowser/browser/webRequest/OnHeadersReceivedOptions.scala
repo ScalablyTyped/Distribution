@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnHeadersReceivedOptions extends StObject
 object OnHeadersReceivedOptions {
   
-  @scala.inline
-  def blocking: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking = "blocking".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking]
+  inline def blocking: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking = "blocking".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking]
   
-  @scala.inline
-  def responseHeaders: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders = "responseHeaders".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders]
+  inline def responseHeaders: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders = "responseHeaders".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders]
 }

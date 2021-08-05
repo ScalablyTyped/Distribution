@@ -92,6 +92,5 @@ object DebuggerStatementSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.DebuggerStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.DebuggerStatementSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.DebuggerStatementSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.DebuggerStatementSyntax]
 }

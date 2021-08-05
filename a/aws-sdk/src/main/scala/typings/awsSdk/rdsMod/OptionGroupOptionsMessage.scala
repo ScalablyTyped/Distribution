@@ -15,28 +15,21 @@ trait OptionGroupOptionsMessage extends StObject {
 }
 object OptionGroupOptionsMessage {
   
-  @scala.inline
-  def apply(): OptionGroupOptionsMessage = {
+  inline def apply(): OptionGroupOptionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionGroupOptionsMessage]
   }
   
-  @scala.inline
-  implicit class OptionGroupOptionsMessageMutableBuilder[Self <: OptionGroupOptionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: OptionGroupOptionsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setOptionGroupOptions(value: OptionGroupOptionsList): Self = StObject.set(x, "OptionGroupOptions", value.asInstanceOf[js.Any])
+    inline def setOptionGroupOptions(value: OptionGroupOptionsList): Self = StObject.set(x, "OptionGroupOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionGroupOptionsUndefined: Self = StObject.set(x, "OptionGroupOptions", js.undefined)
+    inline def setOptionGroupOptionsUndefined: Self = StObject.set(x, "OptionGroupOptions", js.undefined)
     
-    @scala.inline
-    def setOptionGroupOptionsVarargs(value: OptionGroupOption*): Self = StObject.set(x, "OptionGroupOptions", js.Array(value :_*))
+    inline def setOptionGroupOptionsVarargs(value: OptionGroupOption*): Self = StObject.set(x, "OptionGroupOptions", js.Array(value :_*))
   }
 }

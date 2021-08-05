@@ -50,8 +50,7 @@ trait OGCFeatureLayerElevationInfo
 }
 object OGCFeatureLayerElevationInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     mode: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`,
@@ -61,28 +60,20 @@ object OGCFeatureLayerElevationInfo {
     __obj.asInstanceOf[OGCFeatureLayerElevationInfo]
   }
   
-  @scala.inline
-  implicit class OGCFeatureLayerElevationInfoMutableBuilder[Self <: OGCFeatureLayerElevationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OGCFeatureLayerElevationInfo](x: Self) {
     
-    @scala.inline
-    def setFeatureExpressionInfo(value: OGCFeatureLayerElevationInfoFeatureExpressionInfo): Self = StObject.set(x, "featureExpressionInfo", value.asInstanceOf[js.Any])
+    inline def setFeatureExpressionInfo(value: OGCFeatureLayerElevationInfoFeatureExpressionInfo): Self = StObject.set(x, "featureExpressionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureExpressionInfoUndefined: Self = StObject.set(x, "featureExpressionInfo", js.undefined)
+    inline def setFeatureExpressionInfoUndefined: Self = StObject.set(x, "featureExpressionInfo", js.undefined)
     
-    @scala.inline
-    def setMode(value: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: `on-the-ground` | `relative-to-ground` | `absolute-height` | `relative-to-scene`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setUnit(value: feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
   }
 }

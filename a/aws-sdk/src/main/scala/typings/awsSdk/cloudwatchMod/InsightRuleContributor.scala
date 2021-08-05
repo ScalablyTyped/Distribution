@@ -23,8 +23,7 @@ trait InsightRuleContributor extends StObject {
 }
 object InsightRuleContributor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApproximateAggregateValue: InsightRuleUnboundDouble,
     Datapoints: InsightRuleContributorDatapoints,
     Keys: InsightRuleContributorKeys
@@ -33,22 +32,16 @@ object InsightRuleContributor {
     __obj.asInstanceOf[InsightRuleContributor]
   }
   
-  @scala.inline
-  implicit class InsightRuleContributorMutableBuilder[Self <: InsightRuleContributor] (val x: Self) extends AnyVal {
+  extension [Self <: InsightRuleContributor](x: Self) {
     
-    @scala.inline
-    def setApproximateAggregateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "ApproximateAggregateValue", value.asInstanceOf[js.Any])
+    inline def setApproximateAggregateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "ApproximateAggregateValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatapoints(value: InsightRuleContributorDatapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
+    inline def setDatapoints(value: InsightRuleContributorDatapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatapointsVarargs(value: InsightRuleContributorDatapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
+    inline def setDatapointsVarargs(value: InsightRuleContributorDatapoint*): Self = StObject.set(x, "Datapoints", js.Array(value :_*))
     
-    @scala.inline
-    def setKeys(value: InsightRuleContributorKeys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: InsightRuleContributorKeys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: InsightRuleContributorKey*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: InsightRuleContributorKey*): Self = StObject.set(x, "Keys", js.Array(value :_*))
   }
 }

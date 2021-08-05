@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AnchorOrientationHint extends StObject
 object AnchorOrientationHint {
   
-  @scala.inline
-  def `-1`: typings.jsplumb.jsplumbNumbers.`-1` = -1.asInstanceOf[typings.jsplumb.jsplumbNumbers.`-1`]
+  inline def `-1`: typings.jsplumb.jsplumbNumbers.`-1` = -1.asInstanceOf[typings.jsplumb.jsplumbNumbers.`-1`]
   
-  @scala.inline
-  def `0`: typings.jsplumb.jsplumbNumbers.`0` = 0.asInstanceOf[typings.jsplumb.jsplumbNumbers.`0`]
+  inline def `0`: typings.jsplumb.jsplumbNumbers.`0` = 0.asInstanceOf[typings.jsplumb.jsplumbNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.jsplumb.jsplumbNumbers.`1` = 1.asInstanceOf[typings.jsplumb.jsplumbNumbers.`1`]
+  inline def `1`: typings.jsplumb.jsplumbNumbers.`1` = 1.asInstanceOf[typings.jsplumb.jsplumbNumbers.`1`]
 }

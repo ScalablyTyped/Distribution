@@ -40,34 +40,25 @@ trait SchemaCreateTableRequest extends StObject {
 }
 object SchemaCreateTableRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateTableRequest = {
+  inline def apply(): SchemaCreateTableRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateTableRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateTableRequestMutableBuilder[Self <: SchemaCreateTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateTableRequest](x: Self) {
     
-    @scala.inline
-    def setInitialSplits(value: js.Array[SchemaSplit]): Self = StObject.set(x, "initialSplits", value.asInstanceOf[js.Any])
+    inline def setInitialSplits(value: js.Array[SchemaSplit]): Self = StObject.set(x, "initialSplits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialSplitsUndefined: Self = StObject.set(x, "initialSplits", js.undefined)
+    inline def setInitialSplitsUndefined: Self = StObject.set(x, "initialSplits", js.undefined)
     
-    @scala.inline
-    def setInitialSplitsVarargs(value: SchemaSplit*): Self = StObject.set(x, "initialSplits", js.Array(value :_*))
+    inline def setInitialSplitsVarargs(value: SchemaSplit*): Self = StObject.set(x, "initialSplits", js.Array(value :_*))
     
-    @scala.inline
-    def setTable(value: SchemaTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: SchemaTable): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

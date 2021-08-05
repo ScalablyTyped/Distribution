@@ -31,40 +31,25 @@ object mod {
     var path: String = js.native
   }
   
-  @scala.inline
-  def appendRelayToken(uri: String, key_name: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendRelayToken")(uri.asInstanceOf[js.Any], key_name.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def appendRelayToken(uri: String, key_name: String, key: String, expiry: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendRelayToken")(uri.asInstanceOf[js.Any], key_name.asInstanceOf[js.Any], key.asInstanceOf[js.Any], expiry.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def appendRelayToken(uri: String, key_name: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendRelayToken")(uri.asInstanceOf[js.Any], key_name.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def appendRelayToken(uri: String, key_name: String, key: String, expiry: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendRelayToken")(uri.asInstanceOf[js.Any], key_name.asInstanceOf[js.Any], key.asInstanceOf[js.Any], expiry.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createRelayBaseUri(serviceBusNamespace: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayBaseUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelayBaseUri(serviceBusNamespace: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayBaseUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createRelayListenUri(serviceBusNamespace: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayListenUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createRelayListenUri(serviceBusNamespace: String, path: String, token: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayListenUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createRelayListenUri(serviceBusNamespace: String, path: String, token: js.Any, id: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayListenUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createRelayListenUri(serviceBusNamespace: String, path: String, token: Unit, id: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayListenUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelayListenUri(serviceBusNamespace: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayListenUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelayListenUri(serviceBusNamespace: String, path: String, token: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayListenUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelayListenUri(serviceBusNamespace: String, path: String, token: js.Any, id: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayListenUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelayListenUri(serviceBusNamespace: String, path: String, token: Unit, id: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayListenUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createRelaySendUri(serviceBusNamespace: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelaySendUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createRelaySendUri(serviceBusNamespace: String, path: String, token: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelaySendUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createRelaySendUri(serviceBusNamespace: String, path: String, token: js.Any, id: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelaySendUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createRelaySendUri(serviceBusNamespace: String, path: String, token: Unit, id: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelaySendUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelaySendUri(serviceBusNamespace: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelaySendUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelaySendUri(serviceBusNamespace: String, path: String, token: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelaySendUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelaySendUri(serviceBusNamespace: String, path: String, token: js.Any, id: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelaySendUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelaySendUri(serviceBusNamespace: String, path: String, token: Unit, id: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelaySendUri")(serviceBusNamespace.asInstanceOf[js.Any], path.asInstanceOf[js.Any], token.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createRelayToken(uri: String, key_name: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayToken")(uri.asInstanceOf[js.Any], key_name.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def createRelayToken(uri: String, key_name: String, key: String, expiry: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayToken")(uri.asInstanceOf[js.Any], key_name.asInstanceOf[js.Any], key.asInstanceOf[js.Any], expiry.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelayToken(uri: String, key_name: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayToken")(uri.asInstanceOf[js.Any], key_name.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def createRelayToken(uri: String, key_name: String, key: String, expiry: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayToken")(uri.asInstanceOf[js.Any], key_name.asInstanceOf[js.Any], key.asInstanceOf[js.Any], expiry.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def createRelayedServer(options: js.Any, fn: js.Function1[/* ws */ typings.ws.mod.^, Unit]): HybridConnectionWebSocketServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayedServer")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[HybridConnectionWebSocketServer]
+  inline def createRelayedServer(options: js.Any, fn: js.Function1[/* ws */ typings.ws.mod.^, Unit]): HybridConnectionWebSocketServer = (^.asInstanceOf[js.Dynamic].applyDynamic("createRelayedServer")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[HybridConnectionWebSocketServer]
   
-  @scala.inline
-  def relayedConnect(address: String, fn: js.Function0[Unit]): typings.ws.mod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("relayedConnect")(address.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.ws.mod.^]
+  inline def relayedConnect(address: String, fn: js.Function0[Unit]): typings.ws.mod.^ = (^.asInstanceOf[js.Dynamic].applyDynamic("relayedConnect")(address.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.ws.mod.^]
 }

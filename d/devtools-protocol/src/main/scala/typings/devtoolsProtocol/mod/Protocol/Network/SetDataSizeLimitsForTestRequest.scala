@@ -19,19 +19,15 @@ trait SetDataSizeLimitsForTestRequest extends StObject {
 }
 object SetDataSizeLimitsForTestRequest {
   
-  @scala.inline
-  def apply(maxResourceSize: integer, maxTotalSize: integer): SetDataSizeLimitsForTestRequest = {
+  inline def apply(maxResourceSize: integer, maxTotalSize: integer): SetDataSizeLimitsForTestRequest = {
     val __obj = js.Dynamic.literal(maxResourceSize = maxResourceSize.asInstanceOf[js.Any], maxTotalSize = maxTotalSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDataSizeLimitsForTestRequest]
   }
   
-  @scala.inline
-  implicit class SetDataSizeLimitsForTestRequestMutableBuilder[Self <: SetDataSizeLimitsForTestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDataSizeLimitsForTestRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResourceSize(value: integer): Self = StObject.set(x, "maxResourceSize", value.asInstanceOf[js.Any])
+    inline def setMaxResourceSize(value: integer): Self = StObject.set(x, "maxResourceSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTotalSize(value: integer): Self = StObject.set(x, "maxTotalSize", value.asInstanceOf[js.Any])
+    inline def setMaxTotalSize(value: integer): Self = StObject.set(x, "maxTotalSize", value.asInstanceOf[js.Any])
   }
 }

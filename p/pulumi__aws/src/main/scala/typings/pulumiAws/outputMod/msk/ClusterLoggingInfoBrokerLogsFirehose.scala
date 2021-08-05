@@ -18,22 +18,17 @@ trait ClusterLoggingInfoBrokerLogsFirehose extends StObject {
 }
 object ClusterLoggingInfoBrokerLogsFirehose {
   
-  @scala.inline
-  def apply(enabled: Boolean): ClusterLoggingInfoBrokerLogsFirehose = {
+  inline def apply(enabled: Boolean): ClusterLoggingInfoBrokerLogsFirehose = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterLoggingInfoBrokerLogsFirehose]
   }
   
-  @scala.inline
-  implicit class ClusterLoggingInfoBrokerLogsFirehoseMutableBuilder[Self <: ClusterLoggingInfoBrokerLogsFirehose] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterLoggingInfoBrokerLogsFirehose](x: Self) {
     
-    @scala.inline
-    def setDeliveryStream(value: String): Self = StObject.set(x, "deliveryStream", value.asInstanceOf[js.Any])
+    inline def setDeliveryStream(value: String): Self = StObject.set(x, "deliveryStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamUndefined: Self = StObject.set(x, "deliveryStream", js.undefined)
+    inline def setDeliveryStreamUndefined: Self = StObject.set(x, "deliveryStream", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

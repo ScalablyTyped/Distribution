@@ -28,25 +28,19 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(cancel: () => Unit, hide: () => Unit, show: () => Unit, update: MessageOptions => Unit): Message = {
+  inline def apply(cancel: () => Unit, hide: () => Unit, show: () => Unit, update: MessageOptions => Unit): Message = {
     val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), hide = js.Any.fromFunction0(hide), show = js.Any.fromFunction0(show), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: MessageOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    inline def setUpdate(value: MessageOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

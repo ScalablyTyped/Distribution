@@ -12,20 +12,16 @@ object cleanupResultMod {
   }
   object CleanupResult {
     
-    @scala.inline
-    def apply(deletedCacheRequests: js.Array[String]): CleanupResult = {
+    inline def apply(deletedCacheRequests: js.Array[String]): CleanupResult = {
       val __obj = js.Dynamic.literal(deletedCacheRequests = deletedCacheRequests.asInstanceOf[js.Any])
       __obj.asInstanceOf[CleanupResult]
     }
     
-    @scala.inline
-    implicit class CleanupResultMutableBuilder[Self <: CleanupResult] (val x: Self) extends AnyVal {
+    extension [Self <: CleanupResult](x: Self) {
       
-      @scala.inline
-      def setDeletedCacheRequests(value: js.Array[String]): Self = StObject.set(x, "deletedCacheRequests", value.asInstanceOf[js.Any])
+      inline def setDeletedCacheRequests(value: js.Array[String]): Self = StObject.set(x, "deletedCacheRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletedCacheRequestsVarargs(value: String*): Self = StObject.set(x, "deletedCacheRequests", js.Array(value :_*))
+      inline def setDeletedCacheRequestsVarargs(value: String*): Self = StObject.set(x, "deletedCacheRequests", js.Array(value :_*))
     }
   }
 }

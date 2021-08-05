@@ -18,19 +18,15 @@ trait FrequencyBandwidth extends StObject {
 }
 object FrequencyBandwidth {
   
-  @scala.inline
-  def apply(units: BandwidthUnits, value: Double): FrequencyBandwidth = {
+  inline def apply(units: BandwidthUnits, value: Double): FrequencyBandwidth = {
     val __obj = js.Dynamic.literal(units = units.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrequencyBandwidth]
   }
   
-  @scala.inline
-  implicit class FrequencyBandwidthMutableBuilder[Self <: FrequencyBandwidth] (val x: Self) extends AnyVal {
+  extension [Self <: FrequencyBandwidth](x: Self) {
     
-    @scala.inline
-    def setUnits(value: BandwidthUnits): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: BandwidthUnits): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

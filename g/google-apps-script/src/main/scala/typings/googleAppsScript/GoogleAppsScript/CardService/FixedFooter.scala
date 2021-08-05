@@ -15,19 +15,15 @@ trait FixedFooter extends StObject {
 }
 object FixedFooter {
   
-  @scala.inline
-  def apply(setPrimaryButton: TextButton => FixedFooter, setSecondaryButton: TextButton => FixedFooter): FixedFooter = {
+  inline def apply(setPrimaryButton: TextButton => FixedFooter, setSecondaryButton: TextButton => FixedFooter): FixedFooter = {
     val __obj = js.Dynamic.literal(setPrimaryButton = js.Any.fromFunction1(setPrimaryButton), setSecondaryButton = js.Any.fromFunction1(setSecondaryButton))
     __obj.asInstanceOf[FixedFooter]
   }
   
-  @scala.inline
-  implicit class FixedFooterMutableBuilder[Self <: FixedFooter] (val x: Self) extends AnyVal {
+  extension [Self <: FixedFooter](x: Self) {
     
-    @scala.inline
-    def setSetPrimaryButton(value: TextButton => FixedFooter): Self = StObject.set(x, "setPrimaryButton", js.Any.fromFunction1(value))
+    inline def setSetPrimaryButton(value: TextButton => FixedFooter): Self = StObject.set(x, "setPrimaryButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSecondaryButton(value: TextButton => FixedFooter): Self = StObject.set(x, "setSecondaryButton", js.Any.fromFunction1(value))
+    inline def setSetSecondaryButton(value: TextButton => FixedFooter): Self = StObject.set(x, "setSecondaryButton", js.Any.fromFunction1(value))
   }
 }

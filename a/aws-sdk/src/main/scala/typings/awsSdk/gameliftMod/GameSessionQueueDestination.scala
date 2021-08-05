@@ -13,19 +13,15 @@ trait GameSessionQueueDestination extends StObject {
 }
 object GameSessionQueueDestination {
   
-  @scala.inline
-  def apply(): GameSessionQueueDestination = {
+  inline def apply(): GameSessionQueueDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameSessionQueueDestination]
   }
   
-  @scala.inline
-  implicit class GameSessionQueueDestinationMutableBuilder[Self <: GameSessionQueueDestination] (val x: Self) extends AnyVal {
+  extension [Self <: GameSessionQueueDestination](x: Self) {
     
-    @scala.inline
-    def setDestinationArn(value: ArnStringModel): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
+    inline def setDestinationArn(value: ArnStringModel): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationArnUndefined: Self = StObject.set(x, "DestinationArn", js.undefined)
+    inline def setDestinationArnUndefined: Self = StObject.set(x, "DestinationArn", js.undefined)
   }
 }

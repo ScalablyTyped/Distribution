@@ -39,31 +39,23 @@ trait SchemaBucketOptions extends StObject {
 }
 object SchemaBucketOptions {
   
-  @scala.inline
-  def apply(): SchemaBucketOptions = {
+  inline def apply(): SchemaBucketOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBucketOptions]
   }
   
-  @scala.inline
-  implicit class SchemaBucketOptionsMutableBuilder[Self <: SchemaBucketOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBucketOptions](x: Self) {
     
-    @scala.inline
-    def setExplicitBuckets(value: SchemaExplicit): Self = StObject.set(x, "explicitBuckets", value.asInstanceOf[js.Any])
+    inline def setExplicitBuckets(value: SchemaExplicit): Self = StObject.set(x, "explicitBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitBucketsUndefined: Self = StObject.set(x, "explicitBuckets", js.undefined)
+    inline def setExplicitBucketsUndefined: Self = StObject.set(x, "explicitBuckets", js.undefined)
     
-    @scala.inline
-    def setExponentialBuckets(value: SchemaExponential): Self = StObject.set(x, "exponentialBuckets", value.asInstanceOf[js.Any])
+    inline def setExponentialBuckets(value: SchemaExponential): Self = StObject.set(x, "exponentialBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExponentialBucketsUndefined: Self = StObject.set(x, "exponentialBuckets", js.undefined)
+    inline def setExponentialBucketsUndefined: Self = StObject.set(x, "exponentialBuckets", js.undefined)
     
-    @scala.inline
-    def setLinearBuckets(value: SchemaLinear): Self = StObject.set(x, "linearBuckets", value.asInstanceOf[js.Any])
+    inline def setLinearBuckets(value: SchemaLinear): Self = StObject.set(x, "linearBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearBucketsUndefined: Self = StObject.set(x, "linearBuckets", js.undefined)
+    inline def setLinearBucketsUndefined: Self = StObject.set(x, "linearBuckets", js.undefined)
   }
 }

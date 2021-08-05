@@ -31,31 +31,23 @@ trait ParamsResourceResourcesCalendarsGet
 }
 object ParamsResourceResourcesCalendarsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceResourcesCalendarsGet = {
+  inline def apply(): ParamsResourceResourcesCalendarsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceResourcesCalendarsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceResourcesCalendarsGetMutableBuilder[Self <: ParamsResourceResourcesCalendarsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceResourcesCalendarsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCalendarResourceId(value: String): Self = StObject.set(x, "calendarResourceId", value.asInstanceOf[js.Any])
+    inline def setCalendarResourceId(value: String): Self = StObject.set(x, "calendarResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarResourceIdUndefined: Self = StObject.set(x, "calendarResourceId", js.undefined)
+    inline def setCalendarResourceIdUndefined: Self = StObject.set(x, "calendarResourceId", js.undefined)
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
   }
 }

@@ -10,34 +10,27 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AND(filters: js.Array[Filter]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("AND")(filters.asInstanceOf[js.Any]).asInstanceOf[Group]
+  inline def AND(filters: js.Array[Filter]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("AND")(filters.asInstanceOf[js.Any]).asInstanceOf[Group]
   
-  @scala.inline
-  def NOT(filter: Filter): GroupNot = ^.asInstanceOf[js.Dynamic].applyDynamic("NOT")(filter.asInstanceOf[js.Any]).asInstanceOf[GroupNot]
+  inline def NOT(filter: Filter): GroupNot = ^.asInstanceOf[js.Dynamic].applyDynamic("NOT")(filter.asInstanceOf[js.Any]).asInstanceOf[GroupNot]
   
-  @scala.inline
-  def OR(filters: js.Array[Filter]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("OR")(filters.asInstanceOf[js.Any]).asInstanceOf[Group]
+  inline def OR(filters: js.Array[Filter]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("OR")(filters.asInstanceOf[js.Any]).asInstanceOf[Group]
   
-  @scala.inline
-  def attribute(name: String): Attribute_ = ^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(name.asInstanceOf[js.Any]).asInstanceOf[Attribute_]
+  inline def attribute(name: String): Attribute_ = ^.asInstanceOf[js.Dynamic].applyDynamic("attribute")(name.asInstanceOf[js.Any]).asInstanceOf[Attribute_]
   
   @JSImport("ldap-filters", "collapse_not")
   @js.native
   def collapseNot: Boolean = js.native
   
-  @scala.inline
-  def collapseNot_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collapse_not")(x.asInstanceOf[js.Any])
+  inline def collapseNot_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collapse_not")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def escape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ldap-filters", "escape_chars")
   @js.native
   def escapeChars: js.Array[String] = js.native
   
-  @scala.inline
-  def escapeChars_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("escape_chars")(x.asInstanceOf[js.Any])
+  inline def escapeChars_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("escape_chars")(x.asInstanceOf[js.Any])
   
   @JSImport("ldap-filters", "indent")
   @js.native
@@ -47,42 +40,28 @@ object mod {
   @js.native
   def indentChar: String = js.native
   
-  @scala.inline
-  def indentChar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indent_char")(x.asInstanceOf[js.Any])
+  inline def indentChar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indent_char")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def indent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indent")(x.asInstanceOf[js.Any])
+  inline def indent_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indent")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def matchApprox(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchApprox")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def matchApprox(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchApprox")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchApprox(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchApprox")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchApprox(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchApprox")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matchGTE(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchGTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def matchGTE(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchGTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchGTE(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchGTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchGTE(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchGTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matchLTE(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def matchLTE(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchLTE(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchLTE(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchLTE")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matchString(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchString")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def matchString(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchString")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchString(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchString")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchString(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchString")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matchSubstring(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSubstring")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def matchSubstring(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSubstring")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchSubstring(data: String, filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSubstring")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchSubstring(data: js.Array[String], filter: Filter): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchSubstring")(data.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parse(input: String): Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Filter]
+  inline def parse(input: String): Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Filter]
   
-  @scala.inline
-  def unescape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Attribute_ extends StObject {
     
@@ -112,8 +91,7 @@ object mod {
   }
   object Attribute_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       approx: String => Filter,
       contains: String => Filter,
       endsWith: String => Filter,
@@ -131,47 +109,33 @@ object mod {
       __obj.asInstanceOf[Attribute_]
     }
     
-    @scala.inline
-    implicit class Attribute_MutableBuilder[Self <: Attribute_] (val x: Self) extends AnyVal {
+    extension [Self <: Attribute_](x: Self) {
       
-      @scala.inline
-      def setApprox(value: String => Filter): Self = StObject.set(x, "approx", js.Any.fromFunction1(value))
+      inline def setApprox(value: String => Filter): Self = StObject.set(x, "approx", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContains(value: String => Filter): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: String => Filter): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEndsWith(value: String => Filter): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
+      inline def setEndsWith(value: String => Filter): Self = StObject.set(x, "endsWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEqualTo(value: String => Filter): Self = StObject.set(x, "equalTo", js.Any.fromFunction1(value))
+      inline def setEqualTo(value: String => Filter): Self = StObject.set(x, "equalTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscape(value: String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscapeChars(value: js.Array[String]): Self = StObject.set(x, "escapeChars", value.asInstanceOf[js.Any])
+      inline def setEscapeChars(value: js.Array[String]): Self = StObject.set(x, "escapeChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeCharsVarargs(value: String*): Self = StObject.set(x, "escapeChars", js.Array(value :_*))
+      inline def setEscapeCharsVarargs(value: String*): Self = StObject.set(x, "escapeChars", js.Array(value :_*))
       
-      @scala.inline
-      def setGte(value: String => Filter): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
+      inline def setGte(value: String => Filter): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLte(value: String => Filter): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
+      inline def setLte(value: String => Filter): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresent(value: () => Filter): Self = StObject.set(x, "present", js.Any.fromFunction0(value))
+      inline def setPresent(value: () => Filter): Self = StObject.set(x, "present", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRaw(value: String => Filter): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
+      inline def setRaw(value: String => Filter): Self = StObject.set(x, "raw", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartsWith(value: String => Filter): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
+      inline def setStartsWith(value: String => Filter): Self = StObject.set(x, "startsWith", js.Any.fromFunction1(value))
     }
   }
   

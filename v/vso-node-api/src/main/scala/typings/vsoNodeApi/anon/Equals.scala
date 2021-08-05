@@ -13,20 +13,16 @@ trait Equals extends StObject {
 }
 object Equals {
   
-  @scala.inline
-  def apply(equals_ : scala.Double, notEquals: scala.Double): Equals = {
+  inline def apply(equals_ : scala.Double, notEquals: scala.Double): Equals = {
     val __obj = js.Dynamic.literal(notEquals = notEquals.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(equals_.asInstanceOf[js.Any])
     __obj.asInstanceOf[Equals]
   }
   
-  @scala.inline
-  implicit class EqualsMutableBuilder[Self <: Equals] (val x: Self) extends AnyVal {
+  extension [Self <: Equals](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: scala.Double): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+    inline def setEquals_(value: scala.Double): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotEquals(value: scala.Double): Self = StObject.set(x, "notEquals", value.asInstanceOf[js.Any])
+    inline def setNotEquals(value: scala.Double): Self = StObject.set(x, "notEquals", value.asInstanceOf[js.Any])
   }
 }

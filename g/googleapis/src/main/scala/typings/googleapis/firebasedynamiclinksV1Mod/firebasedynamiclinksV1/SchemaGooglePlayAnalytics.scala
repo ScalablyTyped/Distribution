@@ -49,49 +49,35 @@ trait SchemaGooglePlayAnalytics extends StObject {
 }
 object SchemaGooglePlayAnalytics {
   
-  @scala.inline
-  def apply(): SchemaGooglePlayAnalytics = {
+  inline def apply(): SchemaGooglePlayAnalytics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePlayAnalytics]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePlayAnalyticsMutableBuilder[Self <: SchemaGooglePlayAnalytics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePlayAnalytics](x: Self) {
     
-    @scala.inline
-    def setGclid(value: String): Self = StObject.set(x, "gclid", value.asInstanceOf[js.Any])
+    inline def setGclid(value: String): Self = StObject.set(x, "gclid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGclidUndefined: Self = StObject.set(x, "gclid", js.undefined)
+    inline def setGclidUndefined: Self = StObject.set(x, "gclid", js.undefined)
     
-    @scala.inline
-    def setUtmCampaign(value: String): Self = StObject.set(x, "utmCampaign", value.asInstanceOf[js.Any])
+    inline def setUtmCampaign(value: String): Self = StObject.set(x, "utmCampaign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtmCampaignUndefined: Self = StObject.set(x, "utmCampaign", js.undefined)
+    inline def setUtmCampaignUndefined: Self = StObject.set(x, "utmCampaign", js.undefined)
     
-    @scala.inline
-    def setUtmContent(value: String): Self = StObject.set(x, "utmContent", value.asInstanceOf[js.Any])
+    inline def setUtmContent(value: String): Self = StObject.set(x, "utmContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtmContentUndefined: Self = StObject.set(x, "utmContent", js.undefined)
+    inline def setUtmContentUndefined: Self = StObject.set(x, "utmContent", js.undefined)
     
-    @scala.inline
-    def setUtmMedium(value: String): Self = StObject.set(x, "utmMedium", value.asInstanceOf[js.Any])
+    inline def setUtmMedium(value: String): Self = StObject.set(x, "utmMedium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtmMediumUndefined: Self = StObject.set(x, "utmMedium", js.undefined)
+    inline def setUtmMediumUndefined: Self = StObject.set(x, "utmMedium", js.undefined)
     
-    @scala.inline
-    def setUtmSource(value: String): Self = StObject.set(x, "utmSource", value.asInstanceOf[js.Any])
+    inline def setUtmSource(value: String): Self = StObject.set(x, "utmSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtmSourceUndefined: Self = StObject.set(x, "utmSource", js.undefined)
+    inline def setUtmSourceUndefined: Self = StObject.set(x, "utmSource", js.undefined)
     
-    @scala.inline
-    def setUtmTerm(value: String): Self = StObject.set(x, "utmTerm", value.asInstanceOf[js.Any])
+    inline def setUtmTerm(value: String): Self = StObject.set(x, "utmTerm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtmTermUndefined: Self = StObject.set(x, "utmTerm", js.undefined)
+    inline def setUtmTermUndefined: Self = StObject.set(x, "utmTerm", js.undefined)
   }
 }

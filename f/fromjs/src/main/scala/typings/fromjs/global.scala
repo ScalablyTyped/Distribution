@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object global {
   
-  @scala.inline
-  def from[T](results: js.Any): IQueryable[js.Any] = js.Dynamic.global.applyDynamic("from")(results.asInstanceOf[js.Any]).asInstanceOf[IQueryable[js.Any]]
-  @scala.inline
-  def from[T](results: js.Array[T]): IQueryable[T] = js.Dynamic.global.applyDynamic("from")(results.asInstanceOf[js.Any]).asInstanceOf[IQueryable[T]]
+  inline def from[T](results: js.Any): IQueryable[js.Any] = js.Dynamic.global.applyDynamic("from")(results.asInstanceOf[js.Any]).asInstanceOf[IQueryable[js.Any]]
+  inline def from[T](results: js.Array[T]): IQueryable[T] = js.Dynamic.global.applyDynamic("from")(results.asInstanceOf[js.Any]).asInstanceOf[IQueryable[T]]
 }

@@ -11,6 +11,5 @@ object isElementSelectedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasElementId: ElementId): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def default(hasElementId: ElementId): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasElementId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
 }

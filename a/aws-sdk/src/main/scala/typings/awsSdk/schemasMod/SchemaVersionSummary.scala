@@ -28,37 +28,27 @@ trait SchemaVersionSummary extends StObject {
 }
 object SchemaVersionSummary {
   
-  @scala.inline
-  def apply(): SchemaVersionSummary = {
+  inline def apply(): SchemaVersionSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVersionSummary]
   }
   
-  @scala.inline
-  implicit class SchemaVersionSummaryMutableBuilder[Self <: SchemaVersionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVersionSummary](x: Self) {
     
-    @scala.inline
-    def setSchemaArn(value: string): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: string): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
+    inline def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
     
-    @scala.inline
-    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
+    inline def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
     
-    @scala.inline
-    def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
+    inline def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

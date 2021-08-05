@@ -28,8 +28,7 @@ object facepileMod {
     @JSImport("office-ui-fabric-react/lib/components/Facepile", "FacepileBase.defaultProps")
     @js.native
     def defaultProps: IFacepileProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IFacepileProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IFacepileProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Facepile", "OverflowButtonType")

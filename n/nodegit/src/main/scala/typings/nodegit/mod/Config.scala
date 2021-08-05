@@ -15,22 +15,16 @@ object Config {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findGlobal(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findGlobal")().asInstanceOf[js.Promise[String]]
+  inline def findGlobal(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findGlobal")().asInstanceOf[js.Promise[String]]
   
   // the docs says it's a buff but it's actually a string
-  @scala.inline
-  def findProgramdata(): js.Promise[typings.nodegit.bufMod.Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findProgramdata")().asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
+  inline def findProgramdata(): js.Promise[typings.nodegit.bufMod.Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findProgramdata")().asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
   
-  @scala.inline
-  def findSystem(): js.Promise[typings.nodegit.bufMod.Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSystem")().asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
+  inline def findSystem(): js.Promise[typings.nodegit.bufMod.Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSystem")().asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
   
-  @scala.inline
-  def findXdg(): js.Promise[typings.nodegit.bufMod.Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findXdg")().asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
+  inline def findXdg(): js.Promise[typings.nodegit.bufMod.Buf] = ^.asInstanceOf[js.Dynamic].applyDynamic("findXdg")().asInstanceOf[js.Promise[typings.nodegit.bufMod.Buf]]
   
-  @scala.inline
-  def openDefault(): js.Promise[typings.nodegit.configMod.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDefault")().asInstanceOf[js.Promise[typings.nodegit.configMod.Config]]
+  inline def openDefault(): js.Promise[typings.nodegit.configMod.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDefault")().asInstanceOf[js.Promise[typings.nodegit.configMod.Config]]
   
-  @scala.inline
-  def openOndisk(path: String): js.Promise[typings.nodegit.configMod.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openOndisk")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.configMod.Config]]
+  inline def openOndisk(path: String): js.Promise[typings.nodegit.configMod.Config] = ^.asInstanceOf[js.Dynamic].applyDynamic("openOndisk")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodegit.configMod.Config]]
 }

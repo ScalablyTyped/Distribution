@@ -18,18 +18,18 @@ object linuxMod {
     extends StObject
        with Platform {
     
-    var CHROME_BIN_PATH: js.Any = js.native
+    /* private */ var CHROME_BIN_PATH: js.Any = js.native
     
-    var CHROME_NSS_DIR: js.Any = js.native
+    /* private */ var CHROME_NSS_DIR: js.Any = js.native
     
-    var FIREFOX_BIN_PATH: js.Any = js.native
+    /* private */ var FIREFOX_BIN_PATH: js.Any = js.native
     
-    var FIREFOX_NSS_DIR: js.Any = js.native
+    /* private */ var FIREFOX_NSS_DIR: js.Any = js.native
     
-    var HOST_FILE_PATH: js.Any = js.native
+    /* private */ var HOST_FILE_PATH: js.Any = js.native
     
-    var isChromeInstalled: js.Any = js.native
+    /* private */ var isChromeInstalled: js.Any = js.native
     
-    var isFirefoxInstalled: js.Any = js.native
+    /* private */ var isFirefoxInstalled: js.Any = js.native
   }
 }

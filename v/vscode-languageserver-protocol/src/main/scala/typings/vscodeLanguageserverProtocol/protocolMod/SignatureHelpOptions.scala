@@ -25,31 +25,23 @@ trait SignatureHelpOptions
 }
 object SignatureHelpOptions {
   
-  @scala.inline
-  def apply(): SignatureHelpOptions = {
+  inline def apply(): SignatureHelpOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignatureHelpOptions]
   }
   
-  @scala.inline
-  implicit class SignatureHelpOptionsMutableBuilder[Self <: SignatureHelpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureHelpOptions](x: Self) {
     
-    @scala.inline
-    def setRetriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "retriggerCharacters", value.asInstanceOf[js.Any])
+    inline def setRetriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "retriggerCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetriggerCharactersUndefined: Self = StObject.set(x, "retriggerCharacters", js.undefined)
+    inline def setRetriggerCharactersUndefined: Self = StObject.set(x, "retriggerCharacters", js.undefined)
     
-    @scala.inline
-    def setRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "retriggerCharacters", js.Array(value :_*))
+    inline def setRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "retriggerCharacters", js.Array(value :_*))
     
-    @scala.inline
-    def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
+    inline def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
+    inline def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
     
-    @scala.inline
-    def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
+    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value :_*))
   }
 }

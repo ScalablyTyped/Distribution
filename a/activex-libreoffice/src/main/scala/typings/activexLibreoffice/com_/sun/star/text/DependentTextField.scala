@@ -21,8 +21,7 @@ trait DependentTextField
      with XDependentTextField
 object DependentTextField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],

@@ -12,9 +12,7 @@ object eitherMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def left[E, A](): Prism_[Either_[E, A], E] = ^.asInstanceOf[js.Dynamic].applyDynamic("_left")().asInstanceOf[Prism_[Either_[E, A], E]]
+  inline def left[E, A](): Prism_[Either_[E, A], E] = ^.asInstanceOf[js.Dynamic].applyDynamic("_left")().asInstanceOf[Prism_[Either_[E, A], E]]
   
-  @scala.inline
-  def right[E, A](): Prism_[Either_[E, A], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("_right")().asInstanceOf[Prism_[Either_[E, A], A]]
+  inline def right[E, A](): Prism_[Either_[E, A], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("_right")().asInstanceOf[Prism_[Either_[E, A], A]]
 }

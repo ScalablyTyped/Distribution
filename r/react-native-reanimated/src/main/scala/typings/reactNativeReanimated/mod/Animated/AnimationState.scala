@@ -14,22 +14,17 @@ trait AnimationState extends StObject {
 }
 object AnimationState {
   
-  @scala.inline
-  def apply(finished: AnimatedValue[Double], position: AnimatedValue[Double], time: AnimatedValue[Double]): AnimationState = {
+  inline def apply(finished: AnimatedValue[Double], position: AnimatedValue[Double], time: AnimatedValue[Double]): AnimationState = {
     val __obj = js.Dynamic.literal(finished = finished.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationState]
   }
   
-  @scala.inline
-  implicit class AnimationStateMutableBuilder[Self <: AnimationState] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationState](x: Self) {
     
-    @scala.inline
-    def setFinished(value: AnimatedValue[Double]): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+    inline def setFinished(value: AnimatedValue[Double]): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: AnimatedValue[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: AnimatedValue[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: AnimatedValue[Double]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: AnimatedValue[Double]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

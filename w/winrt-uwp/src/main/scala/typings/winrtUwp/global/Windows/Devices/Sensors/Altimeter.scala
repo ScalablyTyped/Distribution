@@ -21,6 +21,5 @@ object Altimeter {
     * @return The default altimeter.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Altimeter = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Altimeter]
+  inline def getDefault(): typings.winrtUwp.Windows.Devices.Sensors.Altimeter = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Devices.Sensors.Altimeter]
 }

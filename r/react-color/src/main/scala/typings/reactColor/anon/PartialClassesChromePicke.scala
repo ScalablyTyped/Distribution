@@ -11,19 +11,15 @@ trait PartialClassesChromePicke extends StObject {
 }
 object PartialClassesChromePicke {
   
-  @scala.inline
-  def apply(): PartialClassesChromePicke = {
+  inline def apply(): PartialClassesChromePicke = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesChromePicke]
   }
   
-  @scala.inline
-  implicit class PartialClassesChromePickeMutableBuilder[Self <: PartialClassesChromePicke] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesChromePicke](x: Self) {
     
-    @scala.inline
-    def setDefault(value: PartialChromePickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: PartialChromePickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

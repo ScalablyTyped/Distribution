@@ -22,20 +22,16 @@ trait NodeAddress extends StObject {
 }
 object NodeAddress {
   
-  @scala.inline
-  def apply(address: Input[String], `type`: Input[String]): NodeAddress = {
+  inline def apply(address: Input[String], `type`: Input[String]): NodeAddress = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeAddress]
   }
   
-  @scala.inline
-  implicit class NodeAddressMutableBuilder[Self <: NodeAddress] (val x: Self) extends AnyVal {
+  extension [Self <: NodeAddress](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Input[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Input[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait SchemaSpellResult extends StObject {
 }
 object SchemaSpellResult {
   
-  @scala.inline
-  def apply(): SchemaSpellResult = {
+  inline def apply(): SchemaSpellResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSpellResult]
   }
   
-  @scala.inline
-  implicit class SchemaSpellResultMutableBuilder[Self <: SchemaSpellResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSpellResult](x: Self) {
     
-    @scala.inline
-    def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
+    inline def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedQueryUndefined: Self = StObject.set(x, "suggestedQuery", js.undefined)
+    inline def setSuggestedQueryUndefined: Self = StObject.set(x, "suggestedQuery", js.undefined)
   }
 }

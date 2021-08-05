@@ -23,8 +23,7 @@ object zoomMod {
     @JSImport("@storybook/components/dist/Zoom/Zoom", "Zoom.Element")
     @js.native
     def Element: js.Function1[/* hasScaleChildren */ ZoomProps, typings.react.mod.global.JSX.Element] = js.native
-    @scala.inline
-    def Element_=(x: js.Function1[/* hasScaleChildren */ ZoomProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
+    inline def Element_=(x: js.Function1[/* hasScaleChildren */ ZoomProps, Element]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Element")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("@storybook/components/dist/Zoom/Zoom", "Zoom.IFrame")
@@ -33,10 +32,8 @@ object zoomMod {
     @JSImport("@storybook/components/dist/Zoom/Zoom", "Zoom.IFrame")
     @js.native
     def IFrame: Instantiable0[ZoomIFrame] = js.native
-    @scala.inline
-    def IFrame_=(x: Instantiable0[ZoomIFrame]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IFrame")(x.asInstanceOf[js.Any])
+    inline def IFrame_=(x: Instantiable0[ZoomIFrame]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IFrame")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def browserSupportsCssZoom(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("browserSupportsCssZoom")().asInstanceOf[Boolean]
+  inline def browserSupportsCssZoom(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("browserSupportsCssZoom")().asInstanceOf[Boolean]
 }

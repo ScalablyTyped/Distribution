@@ -28,8 +28,7 @@ trait TransmissionSummary extends StObject {
 }
 object TransmissionSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     campaign_id: String,
     content: TemplateidString,
     description: String,
@@ -40,22 +39,16 @@ object TransmissionSummary {
     __obj.asInstanceOf[TransmissionSummary]
   }
   
-  @scala.inline
-  implicit class TransmissionSummaryMutableBuilder[Self <: TransmissionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TransmissionSummary](x: Self) {
     
-    @scala.inline
-    def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
+    inline def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: TemplateidString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: TemplateidString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: submitted | Generating | Success | Canceled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: submitted | Generating | Success | Canceled): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

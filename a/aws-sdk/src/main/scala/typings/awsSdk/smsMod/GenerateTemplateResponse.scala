@@ -13,19 +13,15 @@ trait GenerateTemplateResponse extends StObject {
 }
 object GenerateTemplateResponse {
   
-  @scala.inline
-  def apply(): GenerateTemplateResponse = {
+  inline def apply(): GenerateTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateTemplateResponse]
   }
   
-  @scala.inline
-  implicit class GenerateTemplateResponseMutableBuilder[Self <: GenerateTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
+    inline def setS3Location(value: S3Location): Self = StObject.set(x, "s3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
+    inline def setS3LocationUndefined: Self = StObject.set(x, "s3Location", js.undefined)
   }
 }

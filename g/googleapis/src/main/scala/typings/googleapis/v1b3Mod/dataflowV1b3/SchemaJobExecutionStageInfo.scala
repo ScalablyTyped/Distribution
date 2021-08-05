@@ -18,22 +18,17 @@ trait SchemaJobExecutionStageInfo extends StObject {
 }
 object SchemaJobExecutionStageInfo {
   
-  @scala.inline
-  def apply(): SchemaJobExecutionStageInfo = {
+  inline def apply(): SchemaJobExecutionStageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobExecutionStageInfo]
   }
   
-  @scala.inline
-  implicit class SchemaJobExecutionStageInfoMutableBuilder[Self <: SchemaJobExecutionStageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobExecutionStageInfo](x: Self) {
     
-    @scala.inline
-    def setStepName(value: js.Array[String]): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
+    inline def setStepName(value: js.Array[String]): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepNameUndefined: Self = StObject.set(x, "stepName", js.undefined)
+    inline def setStepNameUndefined: Self = StObject.set(x, "stepName", js.undefined)
     
-    @scala.inline
-    def setStepNameVarargs(value: String*): Self = StObject.set(x, "stepName", js.Array(value :_*))
+    inline def setStepNameVarargs(value: String*): Self = StObject.set(x, "stepName", js.Array(value :_*))
   }
 }

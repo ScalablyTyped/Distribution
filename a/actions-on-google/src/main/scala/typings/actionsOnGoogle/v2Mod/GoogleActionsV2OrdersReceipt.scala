@@ -29,25 +29,19 @@ trait GoogleActionsV2OrdersReceipt extends StObject {
 }
 object GoogleActionsV2OrdersReceipt {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersReceipt = {
+  inline def apply(): GoogleActionsV2OrdersReceipt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersReceipt]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersReceiptMutableBuilder[Self <: GoogleActionsV2OrdersReceipt] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersReceipt](x: Self) {
     
-    @scala.inline
-    def setConfirmedActionOrderId(value: String): Self = StObject.set(x, "confirmedActionOrderId", value.asInstanceOf[js.Any])
+    inline def setConfirmedActionOrderId(value: String): Self = StObject.set(x, "confirmedActionOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmedActionOrderIdUndefined: Self = StObject.set(x, "confirmedActionOrderId", js.undefined)
+    inline def setConfirmedActionOrderIdUndefined: Self = StObject.set(x, "confirmedActionOrderId", js.undefined)
     
-    @scala.inline
-    def setUserVisibleOrderId(value: String): Self = StObject.set(x, "userVisibleOrderId", value.asInstanceOf[js.Any])
+    inline def setUserVisibleOrderId(value: String): Self = StObject.set(x, "userVisibleOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVisibleOrderIdUndefined: Self = StObject.set(x, "userVisibleOrderId", js.undefined)
+    inline def setUserVisibleOrderIdUndefined: Self = StObject.set(x, "userVisibleOrderId", js.undefined)
   }
 }

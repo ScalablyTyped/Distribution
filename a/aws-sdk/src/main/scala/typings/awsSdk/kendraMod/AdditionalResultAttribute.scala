@@ -23,22 +23,17 @@ trait AdditionalResultAttribute extends StObject {
 }
 object AdditionalResultAttribute {
   
-  @scala.inline
-  def apply(Key: String, Value: AdditionalResultAttributeValue, ValueType: AdditionalResultAttributeValueType): AdditionalResultAttribute = {
+  inline def apply(Key: String, Value: AdditionalResultAttributeValue, ValueType: AdditionalResultAttributeValueType): AdditionalResultAttribute = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any], ValueType = ValueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalResultAttribute]
   }
   
-  @scala.inline
-  implicit class AdditionalResultAttributeMutableBuilder[Self <: AdditionalResultAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: AdditionalResultAttribute](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: AdditionalResultAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AdditionalResultAttributeValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueType(value: AdditionalResultAttributeValueType): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: AdditionalResultAttributeValueType): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
   }
 }

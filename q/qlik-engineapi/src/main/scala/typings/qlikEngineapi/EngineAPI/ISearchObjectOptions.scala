@@ -27,22 +27,17 @@ trait ISearchObjectOptions extends StObject {
 }
 object ISearchObjectOptions {
   
-  @scala.inline
-  def apply(qAttributes: js.Array[String], qCharEncoding: String): ISearchObjectOptions = {
+  inline def apply(qAttributes: js.Array[String], qCharEncoding: String): ISearchObjectOptions = {
     val __obj = js.Dynamic.literal(qAttributes = qAttributes.asInstanceOf[js.Any], qCharEncoding = qCharEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchObjectOptions]
   }
   
-  @scala.inline
-  implicit class ISearchObjectOptionsMutableBuilder[Self <: ISearchObjectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchObjectOptions](x: Self) {
     
-    @scala.inline
-    def setQAttributes(value: js.Array[String]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
+    inline def setQAttributes(value: js.Array[String]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value :_*))
+    inline def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setQCharEncoding(value: String): Self = StObject.set(x, "qCharEncoding", value.asInstanceOf[js.Any])
+    inline def setQCharEncoding(value: String): Self = StObject.set(x, "qCharEncoding", value.asInstanceOf[js.Any])
   }
 }

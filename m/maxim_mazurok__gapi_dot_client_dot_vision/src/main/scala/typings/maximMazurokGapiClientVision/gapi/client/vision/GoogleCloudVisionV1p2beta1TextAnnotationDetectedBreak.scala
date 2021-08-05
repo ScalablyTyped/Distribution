@@ -14,25 +14,19 @@ trait GoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak extends StObject {
 }
 object GoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak = {
+  inline def apply(): GoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p2beta1TextAnnotationDetectedBreakMutableBuilder[Self <: GoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p2beta1TextAnnotationDetectedBreak](x: Self) {
     
-    @scala.inline
-    def setIsPrefix(value: Boolean): Self = StObject.set(x, "isPrefix", value.asInstanceOf[js.Any])
+    inline def setIsPrefix(value: Boolean): Self = StObject.set(x, "isPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrefixUndefined: Self = StObject.set(x, "isPrefix", js.undefined)
+    inline def setIsPrefixUndefined: Self = StObject.set(x, "isPrefix", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -11,6 +11,5 @@ object scrollPluginMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[js.Object]]
+  inline def default(): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[js.Object]]
 }

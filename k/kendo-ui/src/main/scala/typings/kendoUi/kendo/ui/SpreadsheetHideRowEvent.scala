@@ -15,25 +15,19 @@ trait SpreadsheetHideRowEvent
 }
 object SpreadsheetHideRowEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetHideRowEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetHideRowEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetHideRowEvent]
   }
   
-  @scala.inline
-  implicit class SpreadsheetHideRowEventMutableBuilder[Self <: SpreadsheetHideRowEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetHideRowEvent](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+    inline def setSheet(value: Sheet): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
+    inline def setSheetUndefined: Self = StObject.set(x, "sheet", js.undefined)
   }
 }

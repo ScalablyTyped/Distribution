@@ -13,19 +13,15 @@ trait ReplacementEmailContent extends StObject {
 }
 object ReplacementEmailContent {
   
-  @scala.inline
-  def apply(): ReplacementEmailContent = {
+  inline def apply(): ReplacementEmailContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplacementEmailContent]
   }
   
-  @scala.inline
-  implicit class ReplacementEmailContentMutableBuilder[Self <: ReplacementEmailContent] (val x: Self) extends AnyVal {
+  extension [Self <: ReplacementEmailContent](x: Self) {
     
-    @scala.inline
-    def setReplacementTemplate(value: ReplacementTemplate): Self = StObject.set(x, "ReplacementTemplate", value.asInstanceOf[js.Any])
+    inline def setReplacementTemplate(value: ReplacementTemplate): Self = StObject.set(x, "ReplacementTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementTemplateUndefined: Self = StObject.set(x, "ReplacementTemplate", js.undefined)
+    inline def setReplacementTemplateUndefined: Self = StObject.set(x, "ReplacementTemplate", js.undefined)
   }
 }

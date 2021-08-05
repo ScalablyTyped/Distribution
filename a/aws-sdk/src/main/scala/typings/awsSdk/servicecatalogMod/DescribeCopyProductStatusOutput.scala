@@ -23,31 +23,23 @@ trait DescribeCopyProductStatusOutput extends StObject {
 }
 object DescribeCopyProductStatusOutput {
   
-  @scala.inline
-  def apply(): DescribeCopyProductStatusOutput = {
+  inline def apply(): DescribeCopyProductStatusOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCopyProductStatusOutput]
   }
   
-  @scala.inline
-  implicit class DescribeCopyProductStatusOutputMutableBuilder[Self <: DescribeCopyProductStatusOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCopyProductStatusOutput](x: Self) {
     
-    @scala.inline
-    def setCopyProductStatus(value: CopyProductStatus): Self = StObject.set(x, "CopyProductStatus", value.asInstanceOf[js.Any])
+    inline def setCopyProductStatus(value: CopyProductStatus): Self = StObject.set(x, "CopyProductStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyProductStatusUndefined: Self = StObject.set(x, "CopyProductStatus", js.undefined)
+    inline def setCopyProductStatusUndefined: Self = StObject.set(x, "CopyProductStatus", js.undefined)
     
-    @scala.inline
-    def setStatusDetail(value: StatusDetail): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
+    inline def setStatusDetail(value: StatusDetail): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
+    inline def setStatusDetailUndefined: Self = StObject.set(x, "StatusDetail", js.undefined)
     
-    @scala.inline
-    def setTargetProductId(value: Id): Self = StObject.set(x, "TargetProductId", value.asInstanceOf[js.Any])
+    inline def setTargetProductId(value: Id): Self = StObject.set(x, "TargetProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetProductIdUndefined: Self = StObject.set(x, "TargetProductId", js.undefined)
+    inline def setTargetProductIdUndefined: Self = StObject.set(x, "TargetProductId", js.undefined)
   }
 }

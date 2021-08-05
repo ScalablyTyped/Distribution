@@ -23,22 +23,18 @@ object settingsFooterStoriesMod {
     @JSImport("@storybook/ui/dist/settings/SettingsFooter.stories", "default.component")
     @js.native
     def component: FunctionComponent[js.Any] = js.native
-    @scala.inline
-    def component_=(x: FunctionComponent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    inline def component_=(x: FunctionComponent[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/settings/SettingsFooter.stories", "default.decorators")
     @js.native
     def decorators: js.Array[DecoratorFunction[StoryFnReactReturnType]] = js.native
-    @scala.inline
-    def decorators_=(x: js.Array[DecoratorFunction[StoryFnReactReturnType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
+    inline def decorators_=(x: js.Array[DecoratorFunction[StoryFnReactReturnType]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/settings/SettingsFooter.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def basic(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("basic")().asInstanceOf[Element]
+  inline def basic(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("basic")().asInstanceOf[Element]
 }

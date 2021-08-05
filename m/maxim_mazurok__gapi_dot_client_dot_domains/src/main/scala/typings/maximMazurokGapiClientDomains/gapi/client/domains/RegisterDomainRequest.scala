@@ -23,49 +23,35 @@ trait RegisterDomainRequest extends StObject {
 }
 object RegisterDomainRequest {
   
-  @scala.inline
-  def apply(): RegisterDomainRequest = {
+  inline def apply(): RegisterDomainRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterDomainRequest]
   }
   
-  @scala.inline
-  implicit class RegisterDomainRequestMutableBuilder[Self <: RegisterDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterDomainRequest](x: Self) {
     
-    @scala.inline
-    def setContactNotices(value: js.Array[String]): Self = StObject.set(x, "contactNotices", value.asInstanceOf[js.Any])
+    inline def setContactNotices(value: js.Array[String]): Self = StObject.set(x, "contactNotices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactNoticesUndefined: Self = StObject.set(x, "contactNotices", js.undefined)
+    inline def setContactNoticesUndefined: Self = StObject.set(x, "contactNotices", js.undefined)
     
-    @scala.inline
-    def setContactNoticesVarargs(value: String*): Self = StObject.set(x, "contactNotices", js.Array(value :_*))
+    inline def setContactNoticesVarargs(value: String*): Self = StObject.set(x, "contactNotices", js.Array(value :_*))
     
-    @scala.inline
-    def setDomainNotices(value: js.Array[String]): Self = StObject.set(x, "domainNotices", value.asInstanceOf[js.Any])
+    inline def setDomainNotices(value: js.Array[String]): Self = StObject.set(x, "domainNotices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNoticesUndefined: Self = StObject.set(x, "domainNotices", js.undefined)
+    inline def setDomainNoticesUndefined: Self = StObject.set(x, "domainNotices", js.undefined)
     
-    @scala.inline
-    def setDomainNoticesVarargs(value: String*): Self = StObject.set(x, "domainNotices", js.Array(value :_*))
+    inline def setDomainNoticesVarargs(value: String*): Self = StObject.set(x, "domainNotices", js.Array(value :_*))
     
-    @scala.inline
-    def setRegistration(value: Registration): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
+    inline def setRegistration(value: Registration): Self = StObject.set(x, "registration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationUndefined: Self = StObject.set(x, "registration", js.undefined)
+    inline def setRegistrationUndefined: Self = StObject.set(x, "registration", js.undefined)
     
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
     
-    @scala.inline
-    def setYearlyPrice(value: Money): Self = StObject.set(x, "yearlyPrice", value.asInstanceOf[js.Any])
+    inline def setYearlyPrice(value: Money): Self = StObject.set(x, "yearlyPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearlyPriceUndefined: Self = StObject.set(x, "yearlyPrice", js.undefined)
+    inline def setYearlyPriceUndefined: Self = StObject.set(x, "yearlyPrice", js.undefined)
   }
 }

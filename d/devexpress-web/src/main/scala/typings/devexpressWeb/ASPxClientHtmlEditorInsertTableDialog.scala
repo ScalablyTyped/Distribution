@@ -28,8 +28,7 @@ trait ASPxClientHtmlEditorInsertTableDialog
 }
 object ASPxClientHtmlEditorInsertTableDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAccessibilityCheckBox: () => ASPxClientCheckBox,
     GetAlignmentComboBox: () => ASPxClientComboBox,
     GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
@@ -57,16 +56,12 @@ object ASPxClientHtmlEditorInsertTableDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertTableDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorInsertTableDialogMutableBuilder[Self <: ASPxClientHtmlEditorInsertTableDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorInsertTableDialog](x: Self) {
     
-    @scala.inline
-    def setGetColumnCountSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetColumnCountSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetColumnCountSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetColumnCountSpinEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEqualWidthCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetEqualWidthCheckBox", js.Any.fromFunction0(value))
+    inline def setGetEqualWidthCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetEqualWidthCheckBox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRowCountSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetRowCountSpinEdit", js.Any.fromFunction0(value))
+    inline def setGetRowCountSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetRowCountSpinEdit", js.Any.fromFunction0(value))
   }
 }

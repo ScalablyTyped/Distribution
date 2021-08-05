@@ -10,6 +10,5 @@ object extractUrlVariableNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extractUrlVariableNames(url: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlVariableNames")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def extractUrlVariableNames(url: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractUrlVariableNames")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

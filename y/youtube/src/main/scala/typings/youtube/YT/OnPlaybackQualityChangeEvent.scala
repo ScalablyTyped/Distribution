@@ -15,16 +15,13 @@ trait OnPlaybackQualityChangeEvent
 }
 object OnPlaybackQualityChangeEvent {
   
-  @scala.inline
-  def apply(data: String, target: Player): OnPlaybackQualityChangeEvent = {
+  inline def apply(data: String, target: Player): OnPlaybackQualityChangeEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnPlaybackQualityChangeEvent]
   }
   
-  @scala.inline
-  implicit class OnPlaybackQualityChangeEventMutableBuilder[Self <: OnPlaybackQualityChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: OnPlaybackQualityChangeEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

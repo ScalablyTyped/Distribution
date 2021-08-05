@@ -32,45 +32,34 @@ trait Rules[P /* <: js.Object */] extends StObject {
 }
 object Rules {
   
-  @scala.inline
-  def apply[P /* <: js.Object */](name: String): Rules[P] = {
+  inline def apply[P /* <: js.Object */](name: String): Rules[P] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Rules[P]]
   }
   
-  @scala.inline
-  implicit class RulesMutableBuilder[Self <: Rules[?], P /* <: js.Object */] (val x: Self & Rules[P]) extends AnyVal {
+  extension [Self <: Rules[?], P /* <: js.Object */](x: Self & Rules[P]) {
     
-    @scala.inline
-    def setDescription(value: String | (js.Function1[/* params */ P, String])): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String | (js.Function1[/* params */ P, String])): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionFunction1(value: /* params */ P => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
+    inline def setDescriptionFunction1(value: /* params */ P => String): Self = StObject.set(x, "description", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(
+    inline def setParams(
       value: ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
       */ typings.reactNativeJoi.reactNativeJoiStrings.Rules & TopLevel[js.Any])
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setSetup(value: js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit]): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
+    inline def setSetup(value: js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit]): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+    inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     
-    @scala.inline
-    def setValidate(
+    inline def setValidate(
       value: js.ThisFunction4[
           /* this */ ExtensionBoundSchema, 
           /* params */ P, 
@@ -81,7 +70,6 @@ object Rules {
         ]
     ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

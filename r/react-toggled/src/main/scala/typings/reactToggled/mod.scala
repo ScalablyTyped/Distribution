@@ -49,35 +49,26 @@ object mod extends Shortcut {
   }
   object ReactToggledProps {
     
-    @scala.inline
-    def apply(children: /* options */ TogglerStateAndHelpers => ReactNode): ReactToggledProps = {
+    inline def apply(children: /* options */ TogglerStateAndHelpers => ReactNode): ReactToggledProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[ReactToggledProps]
     }
     
-    @scala.inline
-    implicit class ReactToggledPropsMutableBuilder[Self <: ReactToggledProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactToggledProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: /* options */ TogglerStateAndHelpers => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* options */ TogglerStateAndHelpers => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultOn(value: Boolean): Self = StObject.set(x, "defaultOn", value.asInstanceOf[js.Any])
+      inline def setDefaultOn(value: Boolean): Self = StObject.set(x, "defaultOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultOnUndefined: Self = StObject.set(x, "defaultOn", js.undefined)
+      inline def setDefaultOnUndefined: Self = StObject.set(x, "defaultOn", js.undefined)
       
-      @scala.inline
-      def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnToggle(value: (/* on */ Boolean, /* object */ TogglerStateAndHelpers) => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction2(value))
+      inline def setOnToggle(value: (/* on */ Boolean, /* object */ TogglerStateAndHelpers) => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
+      inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
       
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     }
   }
   

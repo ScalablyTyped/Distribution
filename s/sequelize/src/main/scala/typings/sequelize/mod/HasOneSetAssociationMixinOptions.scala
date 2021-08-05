@@ -17,19 +17,15 @@ trait HasOneSetAssociationMixinOptions extends StObject {
 }
 object HasOneSetAssociationMixinOptions {
   
-  @scala.inline
-  def apply(): HasOneSetAssociationMixinOptions = {
+  inline def apply(): HasOneSetAssociationMixinOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HasOneSetAssociationMixinOptions]
   }
   
-  @scala.inline
-  implicit class HasOneSetAssociationMixinOptionsMutableBuilder[Self <: HasOneSetAssociationMixinOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HasOneSetAssociationMixinOptions](x: Self) {
     
-    @scala.inline
-    def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+    inline def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
   }
 }

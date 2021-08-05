@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaperSize extends StObject
 object PaperSize {
   
-  @scala.inline
-  def A4: `9` = 9.asInstanceOf[`9`]
+  inline def A4: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def A5: `11` = 11.asInstanceOf[`11`]
+  inline def A5: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def B5: `13` = 13.asInstanceOf[`13`]
+  inline def B5: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def Double_Japan_Postcard_Rotated: `82` = 82.asInstanceOf[`82`]
+  inline def Double_Japan_Postcard_Rotated: `82` = 82.asInstanceOf[`82`]
   
-  @scala.inline
-  def Envelope_10: `20` = 20.asInstanceOf[`20`]
+  inline def Envelope_10: `20` = 20.asInstanceOf[`20`]
   
-  @scala.inline
-  def Envelope_B5: `34` = 34.asInstanceOf[`34`]
+  inline def Envelope_B5: `34` = 34.asInstanceOf[`34`]
   
-  @scala.inline
-  def Envelope_C5: `28` = 28.asInstanceOf[`28`]
+  inline def Envelope_C5: `28` = 28.asInstanceOf[`28`]
   
-  @scala.inline
-  def Envelope_DL: `27` = 27.asInstanceOf[`27`]
+  inline def Envelope_DL: `27` = 27.asInstanceOf[`27`]
   
-  @scala.inline
-  def Envelope_Monarch: `37` = 37.asInstanceOf[`37`]
+  inline def Envelope_Monarch: `37` = 37.asInstanceOf[`37`]
   
-  @scala.inline
-  def Executive: `7` = 7.asInstanceOf[`7`]
+  inline def Executive: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def K16_197x273_mm: `119` = 119.asInstanceOf[`119`]
+  inline def K16_197x273_mm: `119` = 119.asInstanceOf[`119`]
   
-  @scala.inline
-  def Legal: `5` = 5.asInstanceOf[`5`]
+  inline def Legal: `5` = 5.asInstanceOf[`5`]
 }

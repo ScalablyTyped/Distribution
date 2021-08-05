@@ -28,31 +28,23 @@ trait GenerateAccessLogsRequest extends StObject {
 }
 object GenerateAccessLogsRequest {
   
-  @scala.inline
-  def apply(appId: AppId, domainName: DomainName): GenerateAccessLogsRequest = {
+  inline def apply(appId: AppId, domainName: DomainName): GenerateAccessLogsRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], domainName = domainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateAccessLogsRequest]
   }
   
-  @scala.inline
-  implicit class GenerateAccessLogsRequestMutableBuilder[Self <: GenerateAccessLogsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateAccessLogsRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

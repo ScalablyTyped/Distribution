@@ -15,26 +15,20 @@ object anon {
   }
   object FinalScriptSig {
     
-    @scala.inline
-    def apply(): FinalScriptSig = {
+    inline def apply(): FinalScriptSig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FinalScriptSig]
     }
     
-    @scala.inline
-    implicit class FinalScriptSigMutableBuilder[Self <: FinalScriptSig] (val x: Self) extends AnyVal {
+    extension [Self <: FinalScriptSig](x: Self) {
       
-      @scala.inline
-      def setFinalScriptSig(value: Buffer): Self = StObject.set(x, "finalScriptSig", value.asInstanceOf[js.Any])
+      inline def setFinalScriptSig(value: Buffer): Self = StObject.set(x, "finalScriptSig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalScriptSigUndefined: Self = StObject.set(x, "finalScriptSig", js.undefined)
+      inline def setFinalScriptSigUndefined: Self = StObject.set(x, "finalScriptSig", js.undefined)
       
-      @scala.inline
-      def setFinalScriptWitness(value: Buffer): Self = StObject.set(x, "finalScriptWitness", value.asInstanceOf[js.Any])
+      inline def setFinalScriptWitness(value: Buffer): Self = StObject.set(x, "finalScriptWitness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalScriptWitnessUndefined: Self = StObject.set(x, "finalScriptWitness", js.undefined)
+      inline def setFinalScriptWitnessUndefined: Self = StObject.set(x, "finalScriptWitness", js.undefined)
     }
   }
 }

@@ -18,8 +18,7 @@ trait ParametersActionsGetSelfHostedRunnerGroupForOrgEndpoint extends StObject {
 }
 object ParametersActionsGetSelfHostedRunnerGroupForOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsGetSelfHostedRunnerGroupForOrgEndpoint,
     request: ActionsGetSelfHostedRunnerGroupForOrgRequestOptions,
     response: OctokitResponse[ActionsGetSelfHostedRunnerGroupForOrgResponseData]
@@ -28,16 +27,12 @@ object ParametersActionsGetSelfHostedRunnerGroupForOrgEndpoint {
     __obj.asInstanceOf[ParametersActionsGetSelfHostedRunnerGroupForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsGetSelfHostedRunnerGroupForOrgEndpointMutableBuilder[Self <: ParametersActionsGetSelfHostedRunnerGroupForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsGetSelfHostedRunnerGroupForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsGetSelfHostedRunnerGroupForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsGetSelfHostedRunnerGroupForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsGetSelfHostedRunnerGroupForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsGetSelfHostedRunnerGroupForOrgRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsGetSelfHostedRunnerGroupForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsGetSelfHostedRunnerGroupForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

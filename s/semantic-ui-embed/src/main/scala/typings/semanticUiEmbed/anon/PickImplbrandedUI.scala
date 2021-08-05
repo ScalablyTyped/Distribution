@@ -11,16 +11,13 @@ trait PickImplbrandedUI extends StObject {
 }
 object PickImplbrandedUI {
   
-  @scala.inline
-  def apply(brandedUI: Boolean): PickImplbrandedUI = {
+  inline def apply(brandedUI: Boolean): PickImplbrandedUI = {
     val __obj = js.Dynamic.literal(brandedUI = brandedUI.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplbrandedUI]
   }
   
-  @scala.inline
-  implicit class PickImplbrandedUIMutableBuilder[Self <: PickImplbrandedUI] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplbrandedUI](x: Self) {
     
-    @scala.inline
-    def setBrandedUI(value: Boolean): Self = StObject.set(x, "brandedUI", value.asInstanceOf[js.Any])
+    inline def setBrandedUI(value: Boolean): Self = StObject.set(x, "brandedUI", value.asInstanceOf[js.Any])
   }
 }

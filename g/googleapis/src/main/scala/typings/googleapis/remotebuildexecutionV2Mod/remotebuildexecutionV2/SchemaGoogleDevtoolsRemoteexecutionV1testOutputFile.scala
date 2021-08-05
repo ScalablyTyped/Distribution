@@ -41,37 +41,27 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile extends StObject {
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testOutputFileMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteexecutionV1testOutputFile](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: SchemaGoogleDevtoolsRemoteexecutionV1testDigest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setIsExecutable(value: Boolean): Self = StObject.set(x, "isExecutable", value.asInstanceOf[js.Any])
+    inline def setIsExecutable(value: Boolean): Self = StObject.set(x, "isExecutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExecutableUndefined: Self = StObject.set(x, "isExecutable", js.undefined)
+    inline def setIsExecutableUndefined: Self = StObject.set(x, "isExecutable", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

@@ -19,16 +19,13 @@ trait DataTransferEvent
 }
 object DataTransferEvent {
   
-  @scala.inline
-  def apply(Source: XInterface, aException: js.Any): DataTransferEvent = {
+  inline def apply(Source: XInterface, aException: js.Any): DataTransferEvent = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any], aException = aException.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTransferEvent]
   }
   
-  @scala.inline
-  implicit class DataTransferEventMutableBuilder[Self <: DataTransferEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DataTransferEvent](x: Self) {
     
-    @scala.inline
-    def setAException(value: js.Any): Self = StObject.set(x, "aException", value.asInstanceOf[js.Any])
+    inline def setAException(value: js.Any): Self = StObject.set(x, "aException", value.asInstanceOf[js.Any])
   }
 }

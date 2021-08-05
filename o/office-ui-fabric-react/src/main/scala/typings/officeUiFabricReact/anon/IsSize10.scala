@@ -32,8 +32,7 @@ trait IsSize10 extends StObject {
 }
 object IsSize10 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isSize10: Boolean,
     isSize100: Boolean,
     isSize120: Boolean,
@@ -51,43 +50,30 @@ object IsSize10 {
     __obj.asInstanceOf[IsSize10]
   }
   
-  @scala.inline
-  implicit class IsSize10MutableBuilder[Self <: IsSize10] (val x: Self) extends AnyVal {
+  extension [Self <: IsSize10](x: Self) {
     
-    @scala.inline
-    def setIsSize10(value: Boolean): Self = StObject.set(x, "isSize10", value.asInstanceOf[js.Any])
+    inline def setIsSize10(value: Boolean): Self = StObject.set(x, "isSize10", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize100(value: Boolean): Self = StObject.set(x, "isSize100", value.asInstanceOf[js.Any])
+    inline def setIsSize100(value: Boolean): Self = StObject.set(x, "isSize100", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize120(value: Boolean): Self = StObject.set(x, "isSize120", value.asInstanceOf[js.Any])
+    inline def setIsSize120(value: Boolean): Self = StObject.set(x, "isSize120", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize16(value: Boolean): Self = StObject.set(x, "isSize16", value.asInstanceOf[js.Any])
+    inline def setIsSize16(value: Boolean): Self = StObject.set(x, "isSize16", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize24(value: Boolean): Self = StObject.set(x, "isSize24", value.asInstanceOf[js.Any])
+    inline def setIsSize24(value: Boolean): Self = StObject.set(x, "isSize24", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize28(value: Boolean): Self = StObject.set(x, "isSize28", value.asInstanceOf[js.Any])
+    inline def setIsSize28(value: Boolean): Self = StObject.set(x, "isSize28", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize32(value: Boolean): Self = StObject.set(x, "isSize32", value.asInstanceOf[js.Any])
+    inline def setIsSize32(value: Boolean): Self = StObject.set(x, "isSize32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize40(value: Boolean): Self = StObject.set(x, "isSize40", value.asInstanceOf[js.Any])
+    inline def setIsSize40(value: Boolean): Self = StObject.set(x, "isSize40", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize48(value: Boolean): Self = StObject.set(x, "isSize48", value.asInstanceOf[js.Any])
+    inline def setIsSize48(value: Boolean): Self = StObject.set(x, "isSize48", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize56(value: Boolean): Self = StObject.set(x, "isSize56", value.asInstanceOf[js.Any])
+    inline def setIsSize56(value: Boolean): Self = StObject.set(x, "isSize56", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize72(value: Boolean): Self = StObject.set(x, "isSize72", value.asInstanceOf[js.Any])
+    inline def setIsSize72(value: Boolean): Self = StObject.set(x, "isSize72", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSize8(value: Boolean): Self = StObject.set(x, "isSize8", value.asInstanceOf[js.Any])
+    inline def setIsSize8(value: Boolean): Self = StObject.set(x, "isSize8", value.asInstanceOf[js.Any])
   }
 }

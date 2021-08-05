@@ -26,8 +26,7 @@ trait MetaData extends StObject {
 }
 object MetaData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _chart: Chart,
     _datasetIndex: Double,
     _index: Double,
@@ -40,40 +39,28 @@ object MetaData {
     __obj.asInstanceOf[MetaData]
   }
   
-  @scala.inline
-  implicit class MetaDataMutableBuilder[Self <: MetaData] (val x: Self) extends AnyVal {
+  extension [Self <: MetaData](x: Self) {
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def set_chart(value: Chart): Self = StObject.set(x, "_chart", value.asInstanceOf[js.Any])
+    inline def set_chart(value: Chart): Self = StObject.set(x, "_chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_datasetIndex(value: Double): Self = StObject.set(x, "_datasetIndex", value.asInstanceOf[js.Any])
+    inline def set_datasetIndex(value: Double): Self = StObject.set(x, "_datasetIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
+    inline def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_model(value: Model): Self = StObject.set(x, "_model", value.asInstanceOf[js.Any])
+    inline def set_model(value: Model): Self = StObject.set(x, "_model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
+    inline def set_start(value: js.Any): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_startUndefined: Self = StObject.set(x, "_start", js.undefined)
+    inline def set_startUndefined: Self = StObject.set(x, "_start", js.undefined)
     
-    @scala.inline
-    def set_view(value: Model): Self = StObject.set(x, "_view", value.asInstanceOf[js.Any])
+    inline def set_view(value: Model): Self = StObject.set(x, "_view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_xScale(value: ChartScales): Self = StObject.set(x, "_xScale", value.asInstanceOf[js.Any])
+    inline def set_xScale(value: ChartScales): Self = StObject.set(x, "_xScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_yScale(value: ChartScales): Self = StObject.set(x, "_yScale", value.asInstanceOf[js.Any])
+    inline def set_yScale(value: ChartScales): Self = StObject.set(x, "_yScale", value.asInstanceOf[js.Any])
   }
 }

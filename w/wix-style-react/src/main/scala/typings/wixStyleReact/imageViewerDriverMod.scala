@@ -61,8 +61,7 @@ object imageViewerDriverMod {
   }
   object ImageViewerDriver {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       clickAdd: () => Unit,
       clickRemove: () => Unit,
       clickUpdate: () => Unit,
@@ -92,77 +91,53 @@ object imageViewerDriverMod {
       __obj.asInstanceOf[ImageViewerDriver[T]]
     }
     
-    @scala.inline
-    implicit class ImageViewerDriverMutableBuilder[Self <: ImageViewerDriver[?], T] (val x: Self & ImageViewerDriver[T]) extends AnyVal {
+    extension [Self <: ImageViewerDriver[?], T](x: Self & ImageViewerDriver[T]) {
       
-      @scala.inline
-      def setClickAdd(value: () => Unit): Self = StObject.set(x, "clickAdd", js.Any.fromFunction0(value))
+      inline def setClickAdd(value: () => Unit): Self = StObject.set(x, "clickAdd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickRemove(value: () => Unit): Self = StObject.set(x, "clickRemove", js.Any.fromFunction0(value))
+      inline def setClickRemove(value: () => Unit): Self = StObject.set(x, "clickRemove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickUpdate(value: () => Unit): Self = StObject.set(x, "clickUpdate", js.Any.fromFunction0(value))
+      inline def setClickUpdate(value: () => Unit): Self = StObject.set(x, "clickUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setElement(value: () => T): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+      inline def setElement(value: () => T): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAddTooltipContent(value: () => String): Self = StObject.set(x, "getAddTooltipContent", js.Any.fromFunction0(value))
+      inline def setGetAddTooltipContent(value: () => String): Self = StObject.set(x, "getAddTooltipContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContainerStyles(value: () => String | Null): Self = StObject.set(x, "getContainerStyles", js.Any.fromFunction0(value))
+      inline def setGetContainerStyles(value: () => String | Null): Self = StObject.set(x, "getContainerStyles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => T): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => T): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetImageUrl(value: () => String | Null): Self = StObject.set(x, "getImageUrl", js.Any.fromFunction0(value))
+      inline def setGetImageUrl(value: () => String | Null): Self = StObject.set(x, "getImageUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPreviousImageUrl(value: () => String | Null): Self = StObject.set(x, "getPreviousImageUrl", js.Any.fromFunction0(value))
+      inline def setGetPreviousImageUrl(value: () => String | Null): Self = StObject.set(x, "getPreviousImageUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRemoveTooltipContent(value: () => String): Self = StObject.set(x, "getRemoveTooltipContent", js.Any.fromFunction0(value))
+      inline def setGetRemoveTooltipContent(value: () => String): Self = StObject.set(x, "getRemoveTooltipContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusMessage(value: () => String | Null): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
+      inline def setGetStatusMessage(value: () => String | Null): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUpdateTooltipContent(value: () => String): Self = StObject.set(x, "getUpdateTooltipContent", js.Any.fromFunction0(value))
+      inline def setGetUpdateTooltipContent(value: () => String): Self = StObject.set(x, "getUpdateTooltipContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasStatus(value: StatusIndications => Boolean): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
+      inline def setHasStatus(value: StatusIndications => Boolean): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHover(value: () => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
+      inline def setHover(value: () => Unit): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsAddItemVisible(value: () => Boolean): Self = StObject.set(x, "isAddItemVisible", js.Any.fromFunction0(value))
+      inline def setIsAddItemVisible(value: () => Boolean): Self = StObject.set(x, "isAddItemVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImageLoaded(value: () => Boolean): Self = StObject.set(x, "isImageLoaded", js.Any.fromFunction0(value))
+      inline def setIsImageLoaded(value: () => Boolean): Self = StObject.set(x, "isImageLoaded", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImageVisible(value: () => Boolean): Self = StObject.set(x, "isImageVisible", js.Any.fromFunction0(value))
+      inline def setIsImageVisible(value: () => Boolean): Self = StObject.set(x, "isImageVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLoaderVisible(value: () => Boolean): Self = StObject.set(x, "isLoaderVisible", js.Any.fromFunction0(value))
+      inline def setIsLoaderVisible(value: () => Boolean): Self = StObject.set(x, "isLoaderVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPreviousImageVisible(value: () => Boolean): Self = StObject.set(x, "isPreviousImageVisible", js.Any.fromFunction0(value))
+      inline def setIsPreviousImageVisible(value: () => Boolean): Self = StObject.set(x, "isPreviousImageVisible", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveButtonExists(value: () => Boolean): Self = StObject.set(x, "removeButtonExists", js.Any.fromFunction0(value))
+      inline def setRemoveButtonExists(value: () => Boolean): Self = StObject.set(x, "removeButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateButtonExists(value: () => Boolean): Self = StObject.set(x, "updateButtonExists", js.Any.fromFunction0(value))
+      inline def setUpdateButtonExists(value: () => Boolean): Self = StObject.set(x, "updateButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdateExists(value: () => Boolean): Self = StObject.set(x, "updateExists", js.Any.fromFunction0(value))
+      inline def setUpdateExists(value: () => Boolean): Self = StObject.set(x, "updateExists", js.Any.fromFunction0(value))
     }
   }
 }

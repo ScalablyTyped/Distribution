@@ -15,31 +15,23 @@ trait PartialPickthiscellHeight extends StObject {
 }
 object PartialPickthiscellHeight {
   
-  @scala.inline
-  def apply(): PartialPickthiscellHeight = {
+  inline def apply(): PartialPickthiscellHeight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickthiscellHeight]
   }
   
-  @scala.inline
-  implicit class PartialPickthiscellHeightMutableBuilder[Self <: PartialPickthiscellHeight] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickthiscellHeight](x: Self) {
     
-    @scala.inline
-    def setCellHeight(value: js.Any): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+    inline def setCellHeight(value: js.Any): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
+    inline def setCellHeightUndefined: Self = StObject.set(x, "cellHeight", js.undefined)
     
-    @scala.inline
-    def setCellType(value: js.Any): Self = StObject.set(x, "cellType", value.asInstanceOf[js.Any])
+    inline def setCellType(value: js.Any): Self = StObject.set(x, "cellType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellTypeUndefined: Self = StObject.set(x, "cellType", js.undefined)
+    inline def setCellTypeUndefined: Self = StObject.set(x, "cellType", js.undefined)
     
-    @scala.inline
-    def setCreateCell(value: js.Any): Self = StObject.set(x, "createCell", value.asInstanceOf[js.Any])
+    inline def setCreateCell(value: js.Any): Self = StObject.set(x, "createCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateCellUndefined: Self = StObject.set(x, "createCell", js.undefined)
+    inline def setCreateCellUndefined: Self = StObject.set(x, "createCell", js.undefined)
   }
 }

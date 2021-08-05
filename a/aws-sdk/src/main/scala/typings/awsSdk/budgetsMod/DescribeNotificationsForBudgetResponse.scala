@@ -18,28 +18,21 @@ trait DescribeNotificationsForBudgetResponse extends StObject {
 }
 object DescribeNotificationsForBudgetResponse {
   
-  @scala.inline
-  def apply(): DescribeNotificationsForBudgetResponse = {
+  inline def apply(): DescribeNotificationsForBudgetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNotificationsForBudgetResponse]
   }
   
-  @scala.inline
-  implicit class DescribeNotificationsForBudgetResponseMutableBuilder[Self <: DescribeNotificationsForBudgetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNotificationsForBudgetResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setNotifications(value: Notifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
+    inline def setNotifications(value: Notifications): Self = StObject.set(x, "Notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
+    inline def setNotificationsUndefined: Self = StObject.set(x, "Notifications", js.undefined)
     
-    @scala.inline
-    def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "Notifications", js.Array(value :_*))
+    inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "Notifications", js.Array(value :_*))
   }
 }

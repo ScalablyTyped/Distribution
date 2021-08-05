@@ -20,8 +20,7 @@ trait FinishTimeAscending extends StObject {
 }
 object FinishTimeAscending {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     finishTimeAscending: scala.Double,
     finishTimeDescending: scala.Double,
     queueTimeAscending: scala.Double,
@@ -33,25 +32,18 @@ object FinishTimeAscending {
     __obj.asInstanceOf[FinishTimeAscending]
   }
   
-  @scala.inline
-  implicit class FinishTimeAscendingMutableBuilder[Self <: FinishTimeAscending] (val x: Self) extends AnyVal {
+  extension [Self <: FinishTimeAscending](x: Self) {
     
-    @scala.inline
-    def setFinishTimeAscending(value: scala.Double): Self = StObject.set(x, "finishTimeAscending", value.asInstanceOf[js.Any])
+    inline def setFinishTimeAscending(value: scala.Double): Self = StObject.set(x, "finishTimeAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTimeDescending(value: scala.Double): Self = StObject.set(x, "finishTimeDescending", value.asInstanceOf[js.Any])
+    inline def setFinishTimeDescending(value: scala.Double): Self = StObject.set(x, "finishTimeDescending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueTimeAscending(value: scala.Double): Self = StObject.set(x, "queueTimeAscending", value.asInstanceOf[js.Any])
+    inline def setQueueTimeAscending(value: scala.Double): Self = StObject.set(x, "queueTimeAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueTimeDescending(value: scala.Double): Self = StObject.set(x, "queueTimeDescending", value.asInstanceOf[js.Any])
+    inline def setQueueTimeDescending(value: scala.Double): Self = StObject.set(x, "queueTimeDescending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeAscending(value: scala.Double): Self = StObject.set(x, "startTimeAscending", value.asInstanceOf[js.Any])
+    inline def setStartTimeAscending(value: scala.Double): Self = StObject.set(x, "startTimeAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeDescending(value: scala.Double): Self = StObject.set(x, "startTimeDescending", value.asInstanceOf[js.Any])
+    inline def setStartTimeDescending(value: scala.Double): Self = StObject.set(x, "startTimeDescending", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait DataSource extends StObject {
 }
 object DataSource {
   
-  @scala.inline
-  def apply(getSpec: () => DataSourceSpec, updateSpec: DataSourceSpec => DataSource): DataSource = {
+  inline def apply(getSpec: () => DataSourceSpec, updateSpec: DataSourceSpec => DataSource): DataSource = {
     val __obj = js.Dynamic.literal(getSpec = js.Any.fromFunction0(getSpec), updateSpec = js.Any.fromFunction1(updateSpec))
     __obj.asInstanceOf[DataSource]
   }
   
-  @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataSource](x: Self) {
     
-    @scala.inline
-    def setGetSpec(value: () => DataSourceSpec): Self = StObject.set(x, "getSpec", js.Any.fromFunction0(value))
+    inline def setGetSpec(value: () => DataSourceSpec): Self = StObject.set(x, "getSpec", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateSpec(value: DataSourceSpec => DataSource): Self = StObject.set(x, "updateSpec", js.Any.fromFunction1(value))
+    inline def setUpdateSpec(value: DataSourceSpec => DataSource): Self = StObject.set(x, "updateSpec", js.Any.fromFunction1(value))
   }
 }

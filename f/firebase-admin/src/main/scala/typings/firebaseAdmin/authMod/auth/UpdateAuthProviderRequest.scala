@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateAuthProviderRequest extends StObject
 object UpdateAuthProviderRequest {
   
-  @scala.inline
-  def OIDCUpdateAuthProviderRequest(): typings.firebaseAdmin.authMod.auth.OIDCUpdateAuthProviderRequest = {
+  inline def OIDCUpdateAuthProviderRequest(): typings.firebaseAdmin.authMod.auth.OIDCUpdateAuthProviderRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.firebaseAdmin.authMod.auth.OIDCUpdateAuthProviderRequest]
   }
   
-  @scala.inline
-  def SAMLUpdateAuthProviderRequest(): typings.firebaseAdmin.authMod.auth.SAMLUpdateAuthProviderRequest = {
+  inline def SAMLUpdateAuthProviderRequest(): typings.firebaseAdmin.authMod.auth.SAMLUpdateAuthProviderRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.firebaseAdmin.authMod.auth.SAMLUpdateAuthProviderRequest]
   }

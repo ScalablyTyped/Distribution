@@ -23,16 +23,13 @@ trait SubscribableMixin extends StObject {
 }
 object SubscribableMixin {
   
-  @scala.inline
-  def apply(addListenerOn: (js.Any, String, js.Function0[js.Any], js.Any) => Unit): SubscribableMixin = {
+  inline def apply(addListenerOn: (js.Any, String, js.Function0[js.Any], js.Any) => Unit): SubscribableMixin = {
     val __obj = js.Dynamic.literal(addListenerOn = js.Any.fromFunction4(addListenerOn))
     __obj.asInstanceOf[SubscribableMixin]
   }
   
-  @scala.inline
-  implicit class SubscribableMixinMutableBuilder[Self <: SubscribableMixin] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribableMixin](x: Self) {
     
-    @scala.inline
-    def setAddListenerOn(value: (js.Any, String, js.Function0[js.Any], js.Any) => Unit): Self = StObject.set(x, "addListenerOn", js.Any.fromFunction4(value))
+    inline def setAddListenerOn(value: (js.Any, String, js.Function0[js.Any], js.Any) => Unit): Self = StObject.set(x, "addListenerOn", js.Any.fromFunction4(value))
   }
 }

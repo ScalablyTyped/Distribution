@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSearchIn extends StObject
 object MsoSearchIn {
   
-  @scala.inline
-  def msoSearchInCustom: `3` = 3.asInstanceOf[`3`]
+  inline def msoSearchInCustom: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoSearchInMyComputer: `0` = 0.asInstanceOf[`0`]
+  inline def msoSearchInMyComputer: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoSearchInMyNetworkPlaces: `2` = 2.asInstanceOf[`2`]
+  inline def msoSearchInMyNetworkPlaces: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoSearchInOutlook: `1` = 1.asInstanceOf[`1`]
+  inline def msoSearchInOutlook: `1` = 1.asInstanceOf[`1`]
 }

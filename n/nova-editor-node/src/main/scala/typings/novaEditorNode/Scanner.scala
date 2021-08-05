@@ -35,8 +35,7 @@ trait Scanner extends StObject {
 }
 object Scanner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     atEnd: Boolean,
     caseSensitive: Boolean,
     location: Double,
@@ -55,46 +54,32 @@ object Scanner {
     __obj.asInstanceOf[Scanner]
   }
   
-  @scala.inline
-  implicit class ScannerMutableBuilder[Self <: Scanner] (val x: Self) extends AnyVal {
+  extension [Self <: Scanner](x: Self) {
     
-    @scala.inline
-    def setAtEnd(value: Boolean): Self = StObject.set(x, "atEnd", value.asInstanceOf[js.Any])
+    inline def setAtEnd(value: Boolean): Self = StObject.set(x, "atEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanChars(value: Charset => String | Null): Self = StObject.set(x, "scanChars", js.Any.fromFunction1(value))
+    inline def setScanChars(value: Charset => String | Null): Self = StObject.set(x, "scanChars", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanFloat(value: () => Double | Null): Self = StObject.set(x, "scanFloat", js.Any.fromFunction0(value))
+    inline def setScanFloat(value: () => Double | Null): Self = StObject.set(x, "scanFloat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanHexFloat(value: () => Double | Null): Self = StObject.set(x, "scanHexFloat", js.Any.fromFunction0(value))
+    inline def setScanHexFloat(value: () => Double | Null): Self = StObject.set(x, "scanHexFloat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanHexInt(value: () => Double | Null): Self = StObject.set(x, "scanHexInt", js.Any.fromFunction0(value))
+    inline def setScanHexInt(value: () => Double | Null): Self = StObject.set(x, "scanHexInt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanInt(value: () => Double | Null): Self = StObject.set(x, "scanInt", js.Any.fromFunction0(value))
+    inline def setScanInt(value: () => Double | Null): Self = StObject.set(x, "scanInt", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanString(value: String => String | Null): Self = StObject.set(x, "scanString", js.Any.fromFunction1(value))
+    inline def setScanString(value: String => String | Null): Self = StObject.set(x, "scanString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanUpToChars(value: Charset => String | Null): Self = StObject.set(x, "scanUpToChars", js.Any.fromFunction1(value))
+    inline def setScanUpToChars(value: Charset => String | Null): Self = StObject.set(x, "scanUpToChars", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanUpToString(value: String => String | Null): Self = StObject.set(x, "scanUpToString", js.Any.fromFunction1(value))
+    inline def setScanUpToString(value: String => String | Null): Self = StObject.set(x, "scanUpToString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkipChars(value: Charset): Self = StObject.set(x, "skipChars", value.asInstanceOf[js.Any])
+    inline def setSkipChars(value: Charset): Self = StObject.set(x, "skipChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
   }
 }

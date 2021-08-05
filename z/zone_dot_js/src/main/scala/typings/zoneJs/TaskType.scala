@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskType extends StObject
 object TaskType {
   
-  @scala.inline
-  def eventTask: typings.zoneJs.zoneJsStrings.eventTask = "eventTask".asInstanceOf[typings.zoneJs.zoneJsStrings.eventTask]
+  inline def eventTask: typings.zoneJs.zoneJsStrings.eventTask = "eventTask".asInstanceOf[typings.zoneJs.zoneJsStrings.eventTask]
   
-  @scala.inline
-  def macroTask: typings.zoneJs.zoneJsStrings.macroTask = "macroTask".asInstanceOf[typings.zoneJs.zoneJsStrings.macroTask]
+  inline def macroTask: typings.zoneJs.zoneJsStrings.macroTask = "macroTask".asInstanceOf[typings.zoneJs.zoneJsStrings.macroTask]
   
-  @scala.inline
-  def microTask: typings.zoneJs.zoneJsStrings.microTask = "microTask".asInstanceOf[typings.zoneJs.zoneJsStrings.microTask]
+  inline def microTask: typings.zoneJs.zoneJsStrings.microTask = "microTask".asInstanceOf[typings.zoneJs.zoneJsStrings.microTask]
 }

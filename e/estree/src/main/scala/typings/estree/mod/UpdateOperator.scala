@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateOperator extends StObject
 object UpdateOperator {
   
-  @scala.inline
-  def `--`: typings.estree.estreeStrings.`--` = "--".asInstanceOf[typings.estree.estreeStrings.`--`]
+  inline def `--`: typings.estree.estreeStrings.`--` = "--".asInstanceOf[typings.estree.estreeStrings.`--`]
   
-  @scala.inline
-  def PlussignPlussign: typings.estree.estreeStrings.PlussignPlussign = "++".asInstanceOf[typings.estree.estreeStrings.PlussignPlussign]
+  inline def PlussignPlussign: typings.estree.estreeStrings.PlussignPlussign = "++".asInstanceOf[typings.estree.estreeStrings.PlussignPlussign]
 }

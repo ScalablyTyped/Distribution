@@ -23,8 +23,7 @@ trait AssociateTransitGatewayRouteTableRequest extends StObject {
 }
 object AssociateTransitGatewayRouteTableRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TransitGatewayAttachmentId: TransitGatewayAttachmentId,
     TransitGatewayRouteTableId: TransitGatewayRouteTableId
   ): AssociateTransitGatewayRouteTableRequest = {
@@ -32,19 +31,14 @@ object AssociateTransitGatewayRouteTableRequest {
     __obj.asInstanceOf[AssociateTransitGatewayRouteTableRequest]
   }
   
-  @scala.inline
-  implicit class AssociateTransitGatewayRouteTableRequestMutableBuilder[Self <: AssociateTransitGatewayRouteTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateTransitGatewayRouteTableRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRouteTableId(value: TransitGatewayRouteTableId): Self = StObject.set(x, "TransitGatewayRouteTableId", value.asInstanceOf[js.Any])
   }
 }

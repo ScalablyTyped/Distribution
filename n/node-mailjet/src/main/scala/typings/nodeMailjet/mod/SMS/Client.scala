@@ -12,19 +12,15 @@ trait Client extends StObject {
 }
 object Client {
   
-  @scala.inline
-  def apply(get: String => GetResource, post: String => PostResource): Client = {
+  inline def apply(get: String => GetResource, post: String => PostResource): Client = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), post = js.Any.fromFunction1(post))
     __obj.asInstanceOf[Client]
   }
   
-  @scala.inline
-  implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+  extension [Self <: Client](x: Self) {
     
-    @scala.inline
-    def setGet(value: String => GetResource): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => GetResource): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPost(value: String => PostResource): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
+    inline def setPost(value: String => PostResource): Self = StObject.set(x, "post", js.Any.fromFunction1(value))
   }
 }

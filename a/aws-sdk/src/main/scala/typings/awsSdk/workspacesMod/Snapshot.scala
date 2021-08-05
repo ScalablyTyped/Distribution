@@ -13,19 +13,15 @@ trait Snapshot extends StObject {
 }
 object Snapshot {
   
-  @scala.inline
-  def apply(): Snapshot = {
+  inline def apply(): Snapshot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Snapshot]
   }
   
-  @scala.inline
-  implicit class SnapshotMutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
+  extension [Self <: Snapshot](x: Self) {
     
-    @scala.inline
-    def setSnapshotTime(value: Timestamp): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotTime(value: Timestamp): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotTimeUndefined: Self = StObject.set(x, "SnapshotTime", js.undefined)
+    inline def setSnapshotTimeUndefined: Self = StObject.set(x, "SnapshotTime", js.undefined)
   }
 }

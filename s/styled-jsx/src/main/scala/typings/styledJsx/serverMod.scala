@@ -12,13 +12,9 @@ object serverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[ReactElement]]
-  @scala.inline
-  def default[T](opts: Nonce): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactElement]]
+  inline def default[T](): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[ReactElement]]
+  inline def default[T](opts: Nonce): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactElement]]
   
-  @scala.inline
-  def flushToHTML(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flushToHTML")().asInstanceOf[String]
-  @scala.inline
-  def flushToHTML(opts: Nonce): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flushToHTML")(opts.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def flushToHTML(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flushToHTML")().asInstanceOf[String]
+  inline def flushToHTML(opts: Nonce): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flushToHTML")(opts.asInstanceOf[js.Any]).asInstanceOf[String]
 }

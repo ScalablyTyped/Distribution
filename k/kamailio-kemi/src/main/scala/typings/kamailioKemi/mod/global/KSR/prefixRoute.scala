@@ -10,9 +10,7 @@ object prefixRoute {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def prefixRoute(ruser: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix_route")(ruser.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def prefixRoute(ruser: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix_route")(ruser.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def prefixRouteUri(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix_route_uri")().asInstanceOf[Double]
+  inline def prefixRouteUri(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix_route_uri")().asInstanceOf[Double]
 }

@@ -38,6 +38,6 @@ trait Task extends StObject {
   
   var WindowState: WdWindowState = js.native
   
-  @JSName("Word.Task_typekey")
+  /* private */ @JSName("Word.Task_typekey")
   var WordDotTask_typekey: Task = js.native
 }

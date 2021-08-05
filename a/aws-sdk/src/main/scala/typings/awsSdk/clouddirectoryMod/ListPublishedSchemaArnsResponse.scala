@@ -18,28 +18,21 @@ trait ListPublishedSchemaArnsResponse extends StObject {
 }
 object ListPublishedSchemaArnsResponse {
   
-  @scala.inline
-  def apply(): ListPublishedSchemaArnsResponse = {
+  inline def apply(): ListPublishedSchemaArnsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPublishedSchemaArnsResponse]
   }
   
-  @scala.inline
-  implicit class ListPublishedSchemaArnsResponseMutableBuilder[Self <: ListPublishedSchemaArnsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPublishedSchemaArnsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchemaArns(value: Arns): Self = StObject.set(x, "SchemaArns", value.asInstanceOf[js.Any])
+    inline def setSchemaArns(value: Arns): Self = StObject.set(x, "SchemaArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArnsUndefined: Self = StObject.set(x, "SchemaArns", js.undefined)
+    inline def setSchemaArnsUndefined: Self = StObject.set(x, "SchemaArns", js.undefined)
     
-    @scala.inline
-    def setSchemaArnsVarargs(value: Arn*): Self = StObject.set(x, "SchemaArns", js.Array(value :_*))
+    inline def setSchemaArnsVarargs(value: Arn*): Self = StObject.set(x, "SchemaArns", js.Array(value :_*))
   }
 }

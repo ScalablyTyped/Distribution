@@ -44,8 +44,7 @@ object trieNodeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromArray(arr: js.Array[Buffer]): BranchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(arr.asInstanceOf[js.Any]).asInstanceOf[BranchNode]
+    inline def fromArray(arr: js.Array[Buffer]): BranchNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(arr.asInstanceOf[js.Any]).asInstanceOf[BranchNode]
   }
   
   @JSImport("merkle-patricia-tree/dist/trieNode", "ExtensionNode")
@@ -80,11 +79,9 @@ object trieNodeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decodeKey(key: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeKey")(key.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
+    inline def decodeKey(key: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeKey")(key.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
     
-    @scala.inline
-    def encodeKey(key: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeKey")(key.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
+    inline def encodeKey(key: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeKey")(key.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
   }
   
   @JSImport("merkle-patricia-tree/dist/trieNode", "LeafNode")
@@ -119,21 +116,16 @@ object trieNodeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decodeKey(encodedKey: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeKey")(encodedKey.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
+    inline def decodeKey(encodedKey: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeKey")(encodedKey.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
     
-    @scala.inline
-    def encodeKey(key: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeKey")(key.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
+    inline def encodeKey(key: Nibbles): Nibbles = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeKey")(key.asInstanceOf[js.Any]).asInstanceOf[Nibbles]
   }
   
-  @scala.inline
-  def decodeNode(raw: Buffer): TrieNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeNode")(raw.asInstanceOf[js.Any]).asInstanceOf[TrieNode]
+  inline def decodeNode(raw: Buffer): TrieNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeNode")(raw.asInstanceOf[js.Any]).asInstanceOf[TrieNode]
   
-  @scala.inline
-  def decodeRawNode(raw: js.Array[Buffer]): TrieNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeRawNode")(raw.asInstanceOf[js.Any]).asInstanceOf[TrieNode]
+  inline def decodeRawNode(raw: js.Array[Buffer]): TrieNode = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeRawNode")(raw.asInstanceOf[js.Any]).asInstanceOf[TrieNode]
   
-  @scala.inline
-  def isRawNode(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRawNode")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRawNode(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRawNode")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type EmbeddedNode = Buffer | js.Array[Buffer]
   

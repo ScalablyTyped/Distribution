@@ -18,28 +18,21 @@ trait ListDevicesResult extends StObject {
 }
 object ListDevicesResult {
   
-  @scala.inline
-  def apply(): ListDevicesResult = {
+  inline def apply(): ListDevicesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDevicesResult]
   }
   
-  @scala.inline
-  implicit class ListDevicesResultMutableBuilder[Self <: ListDevicesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDevicesResult](x: Self) {
     
-    @scala.inline
-    def setDevices(value: Devices): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: Devices): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: Device*): Self = StObject.set(x, "devices", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait MathMLInputProcessor extends StObject {
 }
 object MathMLInputProcessor {
   
-  @scala.inline
-  def apply(): MathMLInputProcessor = {
+  inline def apply(): MathMLInputProcessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MathMLInputProcessor]
   }
   
-  @scala.inline
-  implicit class MathMLInputProcessorMutableBuilder[Self <: MathMLInputProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: MathMLInputProcessor](x: Self) {
     
-    @scala.inline
-    def setUseMathMLspacing(value: Boolean): Self = StObject.set(x, "useMathMLspacing", value.asInstanceOf[js.Any])
+    inline def setUseMathMLspacing(value: Boolean): Self = StObject.set(x, "useMathMLspacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMathMLspacingUndefined: Self = StObject.set(x, "useMathMLspacing", js.undefined)
+    inline def setUseMathMLspacingUndefined: Self = StObject.set(x, "useMathMLspacing", js.undefined)
   }
 }

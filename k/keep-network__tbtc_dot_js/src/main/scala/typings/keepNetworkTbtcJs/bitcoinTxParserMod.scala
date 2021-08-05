@@ -13,7 +13,6 @@ object bitcoinTxParserMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def parse(rawTx: js.Any): Locktime = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(rawTx.asInstanceOf[js.Any]).asInstanceOf[Locktime]
+    inline def parse(rawTx: js.Any): Locktime = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(rawTx.asInstanceOf[js.Any]).asInstanceOf[Locktime]
   }
 }

@@ -19,37 +19,27 @@ trait Up extends StObject {
 }
 object Up {
   
-  @scala.inline
-  def apply(): Up = {
+  inline def apply(): Up = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Up]
   }
   
-  @scala.inline
-  implicit class UpMutableBuilder[Self <: Up] (val x: Self) extends AnyVal {
+  extension [Self <: Up](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDown(value: ReactNode): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
+    inline def setDown(value: ReactNode): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+    inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
     
-    @scala.inline
-    def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setUp(value: ReactNode): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
+    inline def setUp(value: ReactNode): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+    inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
   }
 }

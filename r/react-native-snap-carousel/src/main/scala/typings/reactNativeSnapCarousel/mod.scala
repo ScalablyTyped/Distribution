@@ -67,8 +67,7 @@ object mod {
     def this(props: ParallaxImageProperties, context: js.Any) = this()
   }
   
-  @scala.inline
-  def getInputRangeFromIndexes(range: js.Array[Double], index: Double, carouselProps: CarouselProps[js.Any]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputRangeFromIndexes")(range.asInstanceOf[js.Any], index.asInstanceOf[js.Any], carouselProps.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def getInputRangeFromIndexes(range: js.Array[Double], index: Double, carouselProps: CarouselProps[js.Any]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInputRangeFromIndexes")(range.asInstanceOf[js.Any], index.asInstanceOf[js.Any], carouselProps.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   trait AdditionalParallaxProps extends StObject {
     
@@ -88,56 +87,40 @@ object mod {
   }
   object AdditionalParallaxProps {
     
-    @scala.inline
-    def apply(): AdditionalParallaxProps = {
+    inline def apply(): AdditionalParallaxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdditionalParallaxProps]
     }
     
-    @scala.inline
-    implicit class AdditionalParallaxPropsMutableBuilder[Self <: AdditionalParallaxProps] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalParallaxProps](x: Self) {
       
-      @scala.inline
-      def setCarouselRef(value: Component[FlatListProps[js.Any], js.Object, js.Any]): Self = StObject.set(x, "carouselRef", value.asInstanceOf[js.Any])
+      inline def setCarouselRef(value: Component[FlatListProps[js.Any], js.Object, js.Any]): Self = StObject.set(x, "carouselRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarouselRefUndefined: Self = StObject.set(x, "carouselRef", js.undefined)
+      inline def setCarouselRefUndefined: Self = StObject.set(x, "carouselRef", js.undefined)
       
-      @scala.inline
-      def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+      inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
+      inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
       
-      @scala.inline
-      def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
+      inline def setItemWidth(value: Double): Self = StObject.set(x, "itemWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
+      inline def setItemWidthUndefined: Self = StObject.set(x, "itemWidth", js.undefined)
       
-      @scala.inline
-      def setScrollPosition(value: Value): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
+      inline def setScrollPosition(value: Value): Self = StObject.set(x, "scrollPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPositionUndefined: Self = StObject.set(x, "scrollPosition", js.undefined)
+      inline def setScrollPositionUndefined: Self = StObject.set(x, "scrollPosition", js.undefined)
       
-      @scala.inline
-      def setSliderHeight(value: Double): Self = StObject.set(x, "sliderHeight", value.asInstanceOf[js.Any])
+      inline def setSliderHeight(value: Double): Self = StObject.set(x, "sliderHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderHeightUndefined: Self = StObject.set(x, "sliderHeight", js.undefined)
+      inline def setSliderHeightUndefined: Self = StObject.set(x, "sliderHeight", js.undefined)
       
-      @scala.inline
-      def setSliderWidth(value: Double): Self = StObject.set(x, "sliderWidth", value.asInstanceOf[js.Any])
+      inline def setSliderWidth(value: Double): Self = StObject.set(x, "sliderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderWidthUndefined: Self = StObject.set(x, "sliderWidth", js.undefined)
+      inline def setSliderWidthUndefined: Self = StObject.set(x, "sliderWidth", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -718,8 +701,7 @@ object mod {
        with Props[PaginationStatic]
   object PaginationProperties {
     
-    @scala.inline
-    def apply(activeDotIndex: Double, dotsLength: Double): PaginationProperties = {
+    inline def apply(activeDotIndex: Double, dotsLength: Double): PaginationProperties = {
       val __obj = js.Dynamic.literal(activeDotIndex = activeDotIndex.asInstanceOf[js.Any], dotsLength = dotsLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProperties]
     }
@@ -846,146 +828,100 @@ object mod {
   }
   object PaginationProps {
     
-    @scala.inline
-    def apply(activeDotIndex: Double, dotsLength: Double): PaginationProps = {
+    inline def apply(activeDotIndex: Double, dotsLength: Double): PaginationProps = {
       val __obj = js.Dynamic.literal(activeDotIndex = activeDotIndex.asInstanceOf[js.Any], dotsLength = dotsLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProps]
     }
     
-    @scala.inline
-    implicit class PaginationPropsMutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationProps](x: Self) {
       
-      @scala.inline
-      def setActiveDotIndex(value: Double): Self = StObject.set(x, "activeDotIndex", value.asInstanceOf[js.Any])
+      inline def setActiveDotIndex(value: Double): Self = StObject.set(x, "activeDotIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+      inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
+      inline def setActiveOpacityUndefined: Self = StObject.set(x, "activeOpacity", js.undefined)
       
-      @scala.inline
-      def setAnimatedDuration(value: Double): Self = StObject.set(x, "animatedDuration", value.asInstanceOf[js.Any])
+      inline def setAnimatedDuration(value: Double): Self = StObject.set(x, "animatedDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedDurationUndefined: Self = StObject.set(x, "animatedDuration", js.undefined)
+      inline def setAnimatedDurationUndefined: Self = StObject.set(x, "animatedDuration", js.undefined)
       
-      @scala.inline
-      def setAnimatedFriction(value: Double): Self = StObject.set(x, "animatedFriction", value.asInstanceOf[js.Any])
+      inline def setAnimatedFriction(value: Double): Self = StObject.set(x, "animatedFriction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedFrictionUndefined: Self = StObject.set(x, "animatedFriction", js.undefined)
+      inline def setAnimatedFrictionUndefined: Self = StObject.set(x, "animatedFriction", js.undefined)
       
-      @scala.inline
-      def setAnimatedTension(value: Double): Self = StObject.set(x, "animatedTension", value.asInstanceOf[js.Any])
+      inline def setAnimatedTension(value: Double): Self = StObject.set(x, "animatedTension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedTensionUndefined: Self = StObject.set(x, "animatedTension", js.undefined)
+      inline def setAnimatedTensionUndefined: Self = StObject.set(x, "animatedTension", js.undefined)
       
-      @scala.inline
-      def setCarouselRef(value: Component[FlatListProps[js.Any], js.Object, js.Any]): Self = StObject.set(x, "carouselRef", value.asInstanceOf[js.Any])
+      inline def setCarouselRef(value: Component[FlatListProps[js.Any], js.Object, js.Any]): Self = StObject.set(x, "carouselRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarouselRefUndefined: Self = StObject.set(x, "carouselRef", js.undefined)
+      inline def setCarouselRefUndefined: Self = StObject.set(x, "carouselRef", js.undefined)
       
-      @scala.inline
-      def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+      inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setDelayPressInDot(value: Double): Self = StObject.set(x, "delayPressInDot", value.asInstanceOf[js.Any])
+      inline def setDelayPressInDot(value: Double): Self = StObject.set(x, "delayPressInDot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayPressInDotUndefined: Self = StObject.set(x, "delayPressInDot", js.undefined)
+      inline def setDelayPressInDotUndefined: Self = StObject.set(x, "delayPressInDot", js.undefined)
       
-      @scala.inline
-      def setDotColor(value: String): Self = StObject.set(x, "dotColor", value.asInstanceOf[js.Any])
+      inline def setDotColor(value: String): Self = StObject.set(x, "dotColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotColorUndefined: Self = StObject.set(x, "dotColor", js.undefined)
+      inline def setDotColorUndefined: Self = StObject.set(x, "dotColor", js.undefined)
       
-      @scala.inline
-      def setDotContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotContainerStyle", value.asInstanceOf[js.Any])
+      inline def setDotContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotContainerStyleNull: Self = StObject.set(x, "dotContainerStyle", null)
+      inline def setDotContainerStyleNull: Self = StObject.set(x, "dotContainerStyle", null)
       
-      @scala.inline
-      def setDotContainerStyleUndefined: Self = StObject.set(x, "dotContainerStyle", js.undefined)
+      inline def setDotContainerStyleUndefined: Self = StObject.set(x, "dotContainerStyle", js.undefined)
       
-      @scala.inline
-      def setDotElement(value: ReactNode): Self = StObject.set(x, "dotElement", value.asInstanceOf[js.Any])
+      inline def setDotElement(value: ReactNode): Self = StObject.set(x, "dotElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotElementUndefined: Self = StObject.set(x, "dotElement", js.undefined)
+      inline def setDotElementUndefined: Self = StObject.set(x, "dotElement", js.undefined)
       
-      @scala.inline
-      def setDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
+      inline def setDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotStyleNull: Self = StObject.set(x, "dotStyle", null)
+      inline def setDotStyleNull: Self = StObject.set(x, "dotStyle", null)
       
-      @scala.inline
-      def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
+      inline def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
       
-      @scala.inline
-      def setDotsLength(value: Double): Self = StObject.set(x, "dotsLength", value.asInstanceOf[js.Any])
+      inline def setDotsLength(value: Double): Self = StObject.set(x, "dotsLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveDotColor(value: String): Self = StObject.set(x, "inactiveDotColor", value.asInstanceOf[js.Any])
+      inline def setInactiveDotColor(value: String): Self = StObject.set(x, "inactiveDotColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveDotColorUndefined: Self = StObject.set(x, "inactiveDotColor", js.undefined)
+      inline def setInactiveDotColorUndefined: Self = StObject.set(x, "inactiveDotColor", js.undefined)
       
-      @scala.inline
-      def setInactiveDotElement(value: ReactNode): Self = StObject.set(x, "inactiveDotElement", value.asInstanceOf[js.Any])
+      inline def setInactiveDotElement(value: ReactNode): Self = StObject.set(x, "inactiveDotElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveDotElementUndefined: Self = StObject.set(x, "inactiveDotElement", js.undefined)
+      inline def setInactiveDotElementUndefined: Self = StObject.set(x, "inactiveDotElement", js.undefined)
       
-      @scala.inline
-      def setInactiveDotOpacity(value: Double): Self = StObject.set(x, "inactiveDotOpacity", value.asInstanceOf[js.Any])
+      inline def setInactiveDotOpacity(value: Double): Self = StObject.set(x, "inactiveDotOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveDotOpacityUndefined: Self = StObject.set(x, "inactiveDotOpacity", js.undefined)
+      inline def setInactiveDotOpacityUndefined: Self = StObject.set(x, "inactiveDotOpacity", js.undefined)
       
-      @scala.inline
-      def setInactiveDotScale(value: Double): Self = StObject.set(x, "inactiveDotScale", value.asInstanceOf[js.Any])
+      inline def setInactiveDotScale(value: Double): Self = StObject.set(x, "inactiveDotScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveDotScaleUndefined: Self = StObject.set(x, "inactiveDotScale", js.undefined)
+      inline def setInactiveDotScaleUndefined: Self = StObject.set(x, "inactiveDotScale", js.undefined)
       
-      @scala.inline
-      def setInactiveDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "inactiveDotStyle", value.asInstanceOf[js.Any])
+      inline def setInactiveDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "inactiveDotStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInactiveDotStyleNull: Self = StObject.set(x, "inactiveDotStyle", null)
+      inline def setInactiveDotStyleNull: Self = StObject.set(x, "inactiveDotStyle", null)
       
-      @scala.inline
-      def setInactiveDotStyleUndefined: Self = StObject.set(x, "inactiveDotStyle", js.undefined)
+      inline def setInactiveDotStyleUndefined: Self = StObject.set(x, "inactiveDotStyle", js.undefined)
       
-      @scala.inline
-      def setRenderDots(value: (/* activeIndex */ Double, /* total */ Double, /* context */ js.Any) => ReactNode): Self = StObject.set(x, "renderDots", js.Any.fromFunction3(value))
+      inline def setRenderDots(value: (/* activeIndex */ Double, /* total */ Double, /* context */ js.Any) => ReactNode): Self = StObject.set(x, "renderDots", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderDotsUndefined: Self = StObject.set(x, "renderDots", js.undefined)
+      inline def setRenderDotsUndefined: Self = StObject.set(x, "renderDots", js.undefined)
       
-      @scala.inline
-      def setTappableDots(value: Boolean): Self = StObject.set(x, "tappableDots", value.asInstanceOf[js.Any])
+      inline def setTappableDots(value: Boolean): Self = StObject.set(x, "tappableDots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTappableDotsUndefined: Self = StObject.set(x, "tappableDots", js.undefined)
+      inline def setTappableDotsUndefined: Self = StObject.set(x, "tappableDots", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -997,8 +933,7 @@ object mod {
        with Props[ParallaxImageStatic]
   object ParallaxImageProperties {
     
-    @scala.inline
-    def apply(source: ImageSourcePropType): ParallaxImageProperties = {
+    inline def apply(source: ImageSourcePropType): ParallaxImageProperties = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParallaxImageProperties]
     }
@@ -1036,47 +971,34 @@ object mod {
   }
   object ParallaxImageProps {
     
-    @scala.inline
-    def apply(source: ImageSourcePropType): ParallaxImageProps = {
+    inline def apply(source: ImageSourcePropType): ParallaxImageProps = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParallaxImageProps]
     }
     
-    @scala.inline
-    implicit class ParallaxImagePropsMutableBuilder[Self <: ParallaxImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: ParallaxImageProps](x: Self) {
       
-      @scala.inline
-      def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
+      inline def setContainerStyleNull: Self = StObject.set(x, "containerStyle", null)
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setDimensions(value: Height): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+      inline def setDimensions(value: Height): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      @scala.inline
-      def setParallaxFactor(value: Double): Self = StObject.set(x, "parallaxFactor", value.asInstanceOf[js.Any])
+      inline def setParallaxFactor(value: Double): Self = StObject.set(x, "parallaxFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallaxFactorUndefined: Self = StObject.set(x, "parallaxFactor", js.undefined)
+      inline def setParallaxFactorUndefined: Self = StObject.set(x, "parallaxFactor", js.undefined)
       
-      @scala.inline
-      def setShowSpinner(value: Boolean): Self = StObject.set(x, "showSpinner", value.asInstanceOf[js.Any])
+      inline def setShowSpinner(value: Boolean): Self = StObject.set(x, "showSpinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSpinnerUndefined: Self = StObject.set(x, "showSpinner", js.undefined)
+      inline def setShowSpinnerUndefined: Self = StObject.set(x, "showSpinner", js.undefined)
       
-      @scala.inline
-      def setSpinnerColor(value: String): Self = StObject.set(x, "spinnerColor", value.asInstanceOf[js.Any])
+      inline def setSpinnerColor(value: String): Self = StObject.set(x, "spinnerColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnerColorUndefined: Self = StObject.set(x, "spinnerColor", js.undefined)
+      inline def setSpinnerColorUndefined: Self = StObject.set(x, "spinnerColor", js.undefined)
     }
   }
   

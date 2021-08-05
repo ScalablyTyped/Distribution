@@ -65,7 +65,7 @@ object iterinfoMod {
     
     def nwdaymask: js.Array[Double] = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     def rebuild(year: Double, month: Double): Unit = js.native
     

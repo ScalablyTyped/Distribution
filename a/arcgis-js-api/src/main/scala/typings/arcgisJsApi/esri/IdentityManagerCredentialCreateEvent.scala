@@ -10,16 +10,13 @@ trait IdentityManagerCredentialCreateEvent extends StObject {
 }
 object IdentityManagerCredentialCreateEvent {
   
-  @scala.inline
-  def apply(credential: Credential): IdentityManagerCredentialCreateEvent = {
+  inline def apply(credential: Credential): IdentityManagerCredentialCreateEvent = {
     val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityManagerCredentialCreateEvent]
   }
   
-  @scala.inline
-  implicit class IdentityManagerCredentialCreateEventMutableBuilder[Self <: IdentityManagerCredentialCreateEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityManagerCredentialCreateEvent](x: Self) {
     
-    @scala.inline
-    def setCredential(value: Credential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: Credential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
   }
 }

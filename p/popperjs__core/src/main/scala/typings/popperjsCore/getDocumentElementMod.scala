@@ -13,8 +13,6 @@ object getDocumentElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: Window): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
-  @scala.inline
-  def default(element: Element): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def default(element: Window): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def default(element: Element): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 }

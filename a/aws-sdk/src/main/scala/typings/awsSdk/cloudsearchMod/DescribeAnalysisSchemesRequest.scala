@@ -23,31 +23,23 @@ trait DescribeAnalysisSchemesRequest extends StObject {
 }
 object DescribeAnalysisSchemesRequest {
   
-  @scala.inline
-  def apply(DomainName: DomainName): DescribeAnalysisSchemesRequest = {
+  inline def apply(DomainName: DomainName): DescribeAnalysisSchemesRequest = {
     val __obj = js.Dynamic.literal(DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAnalysisSchemesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAnalysisSchemesRequestMutableBuilder[Self <: DescribeAnalysisSchemesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAnalysisSchemesRequest](x: Self) {
     
-    @scala.inline
-    def setAnalysisSchemeNames(value: StandardNameList): Self = StObject.set(x, "AnalysisSchemeNames", value.asInstanceOf[js.Any])
+    inline def setAnalysisSchemeNames(value: StandardNameList): Self = StObject.set(x, "AnalysisSchemeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisSchemeNamesUndefined: Self = StObject.set(x, "AnalysisSchemeNames", js.undefined)
+    inline def setAnalysisSchemeNamesUndefined: Self = StObject.set(x, "AnalysisSchemeNames", js.undefined)
     
-    @scala.inline
-    def setAnalysisSchemeNamesVarargs(value: StandardName*): Self = StObject.set(x, "AnalysisSchemeNames", js.Array(value :_*))
+    inline def setAnalysisSchemeNamesVarargs(value: StandardName*): Self = StObject.set(x, "AnalysisSchemeNames", js.Array(value :_*))
     
-    @scala.inline
-    def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
+    inline def setDeployed(value: Boolean): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
+    inline def setDeployedUndefined: Self = StObject.set(x, "Deployed", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

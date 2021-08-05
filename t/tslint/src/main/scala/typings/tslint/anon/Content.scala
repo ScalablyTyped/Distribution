@@ -13,22 +13,17 @@ trait Content extends StObject {
 }
 object Content {
   
-  @scala.inline
-  def apply(content: IContentTags, existence: js.Array[String]): Content = {
+  inline def apply(content: IContentTags, existence: js.Array[String]): Content = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], existence = existence.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
   
-  @scala.inline
-  implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+  extension [Self <: Content](x: Self) {
     
-    @scala.inline
-    def setContent(value: IContentTags): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: IContentTags): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistence(value: js.Array[String]): Self = StObject.set(x, "existence", value.asInstanceOf[js.Any])
+    inline def setExistence(value: js.Array[String]): Self = StObject.set(x, "existence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistenceVarargs(value: String*): Self = StObject.set(x, "existence", js.Array(value :_*))
+    inline def setExistenceVarargs(value: String*): Self = StObject.set(x, "existence", js.Array(value :_*))
   }
 }

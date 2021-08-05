@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TimeLine")
 @js.native
-class TimeLine protected ()
+/* private */ class TimeLine ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TimeLine {
   
@@ -22,7 +22,7 @@ class TimeLine protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.TimeLine_typekey")
   var PowerPointDotTimeLine_typekey: typings.activexPowerpoint.PowerPoint.TimeLine = js.native
 }

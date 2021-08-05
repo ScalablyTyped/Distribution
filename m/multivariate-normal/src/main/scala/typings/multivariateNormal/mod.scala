@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(mean: js.Array[Double], cov: js.Array[js.Array[Double]]): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mean.asInstanceOf[js.Any], cov.asInstanceOf[js.Any])).asInstanceOf[Distribution]
+  inline def default(mean: js.Array[Double], cov: js.Array[js.Array[Double]]): Distribution = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mean.asInstanceOf[js.Any], cov.asInstanceOf[js.Any])).asInstanceOf[Distribution]
   
   trait Distribution extends StObject {
     
@@ -27,8 +26,7 @@ object mod {
   }
   object Distribution {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCov: () => js.Array[js.Array[Double]],
       getMean: () => js.Array[Double],
       sample: () => js.Array[Double],
@@ -39,23 +37,17 @@ object mod {
       __obj.asInstanceOf[Distribution]
     }
     
-    @scala.inline
-    implicit class DistributionMutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
+    extension [Self <: Distribution](x: Self) {
       
-      @scala.inline
-      def setGetCov(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCov", js.Any.fromFunction0(value))
+      inline def setGetCov(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCov", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMean(value: () => js.Array[Double]): Self = StObject.set(x, "getMean", js.Any.fromFunction0(value))
+      inline def setGetMean(value: () => js.Array[Double]): Self = StObject.set(x, "getMean", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSample(value: () => js.Array[Double]): Self = StObject.set(x, "sample", js.Any.fromFunction0(value))
+      inline def setSample(value: () => js.Array[Double]): Self = StObject.set(x, "sample", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetCov(value: js.Array[js.Array[Double]] => Distribution): Self = StObject.set(x, "setCov", js.Any.fromFunction1(value))
+      inline def setSetCov(value: js.Array[js.Array[Double]] => Distribution): Self = StObject.set(x, "setCov", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMean(value: js.Array[Double] => Distribution): Self = StObject.set(x, "setMean", js.Any.fromFunction1(value))
+      inline def setSetMean(value: js.Array[Double] => Distribution): Self = StObject.set(x, "setMean", js.Any.fromFunction1(value))
     }
   }
 }

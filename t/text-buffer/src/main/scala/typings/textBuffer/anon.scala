@@ -26,17 +26,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(clipDirection: backward | forward | closest): `0` = {
+    inline def apply(clipDirection: backward | forward | closest): `0` = {
       val __obj = js.Dynamic.literal(clipDirection = clipDirection.asInstanceOf[js.Any])
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
+      inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,26 +45,20 @@ object anon {
   }
   object ClipDirection {
     
-    @scala.inline
-    def apply(): ClipDirection = {
+    inline def apply(): ClipDirection = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClipDirection]
     }
     
-    @scala.inline
-    implicit class ClipDirectionMutableBuilder[Self <: ClipDirection] (val x: Self) extends AnyVal {
+    extension [Self <: ClipDirection](x: Self) {
       
-      @scala.inline
-      def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
+      inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
+      inline def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     }
   }
   
@@ -83,38 +74,28 @@ object anon {
   }
   object ClipDirectionExclusive {
     
-    @scala.inline
-    def apply(): ClipDirectionExclusive = {
+    inline def apply(): ClipDirectionExclusive = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClipDirectionExclusive]
     }
     
-    @scala.inline
-    implicit class ClipDirectionExclusiveMutableBuilder[Self <: ClipDirectionExclusive] (val x: Self) extends AnyVal {
+    extension [Self <: ClipDirectionExclusive](x: Self) {
       
-      @scala.inline
-      def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
+      inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
+      inline def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
       
-      @scala.inline
-      def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+      inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+      inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     }
   }
   
@@ -128,32 +109,24 @@ object anon {
   }
   object ClipDirectionExclusiveInvalidate {
     
-    @scala.inline
-    def apply(): ClipDirectionExclusiveInvalidate = {
+    inline def apply(): ClipDirectionExclusiveInvalidate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClipDirectionExclusiveInvalidate]
     }
     
-    @scala.inline
-    implicit class ClipDirectionExclusiveInvalidateMutableBuilder[Self <: ClipDirectionExclusiveInvalidate] (val x: Self) extends AnyVal {
+    extension [Self <: ClipDirectionExclusiveInvalidate](x: Self) {
       
-      @scala.inline
-      def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
+      inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
+      inline def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
       
-      @scala.inline
-      def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+      inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+      inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     }
   }
   
@@ -165,26 +138,20 @@ object anon {
   }
   object Exclusive {
     
-    @scala.inline
-    def apply(): Exclusive = {
+    inline def apply(): Exclusive = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Exclusive]
     }
     
-    @scala.inline
-    implicit class ExclusiveMutableBuilder[Self <: Exclusive] (val x: Self) extends AnyVal {
+    extension [Self <: Exclusive](x: Self) {
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     }
   }
   
@@ -196,26 +163,20 @@ object anon {
   }
   object ExclusiveInvalidate {
     
-    @scala.inline
-    def apply(): ExclusiveInvalidate = {
+    inline def apply(): ExclusiveInvalidate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExclusiveInvalidate]
     }
     
-    @scala.inline
-    implicit class ExclusiveInvalidateMutableBuilder[Self <: ExclusiveInvalidate] (val x: Self) extends AnyVal {
+    extension [Self <: ExclusiveInvalidate](x: Self) {
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
       
-      @scala.inline
-      def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+      inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+      inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     }
   }
   
@@ -229,32 +190,24 @@ object anon {
   }
   object Invalidate {
     
-    @scala.inline
-    def apply(): Invalidate = {
+    inline def apply(): Invalidate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Invalidate]
     }
     
-    @scala.inline
-    implicit class InvalidateMutableBuilder[Self <: Invalidate] (val x: Self) extends AnyVal {
+    extension [Self <: Invalidate](x: Self) {
       
-      @scala.inline
-      def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+      inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+      inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
       
-      @scala.inline
-      def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+      inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+      inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+      inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     }
   }
   
@@ -266,26 +219,20 @@ object anon {
   }
   object MaintainHistory {
     
-    @scala.inline
-    def apply(): MaintainHistory = {
+    inline def apply(): MaintainHistory = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MaintainHistory]
     }
     
-    @scala.inline
-    implicit class MaintainHistoryMutableBuilder[Self <: MaintainHistory] (val x: Self) extends AnyVal {
+    extension [Self <: MaintainHistory](x: Self) {
       
-      @scala.inline
-      def setMaintainHistory(value: Boolean): Self = StObject.set(x, "maintainHistory", value.asInstanceOf[js.Any])
+      inline def setMaintainHistory(value: Boolean): Self = StObject.set(x, "maintainHistory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaintainHistoryUndefined: Self = StObject.set(x, "maintainHistory", js.undefined)
+      inline def setMaintainHistoryUndefined: Self = StObject.set(x, "maintainHistory", js.undefined)
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+      inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     }
   }
   
@@ -305,26 +252,20 @@ object anon {
   }
   object NewExtent {
     
-    @scala.inline
-    def apply(newExtent: Point, newText: String, oldExtent: Point, start: Point): NewExtent = {
+    inline def apply(newExtent: Point, newText: String, oldExtent: Point, start: Point): NewExtent = {
       val __obj = js.Dynamic.literal(newExtent = newExtent.asInstanceOf[js.Any], newText = newText.asInstanceOf[js.Any], oldExtent = oldExtent.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewExtent]
     }
     
-    @scala.inline
-    implicit class NewExtentMutableBuilder[Self <: NewExtent] (val x: Self) extends AnyVal {
+    extension [Self <: NewExtent](x: Self) {
       
-      @scala.inline
-      def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
+      inline def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
+      inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
+      inline def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -336,26 +277,20 @@ object anon {
   }
   object NormalizeLineEndings {
     
-    @scala.inline
-    def apply(): NormalizeLineEndings = {
+    inline def apply(): NormalizeLineEndings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NormalizeLineEndings]
     }
     
-    @scala.inline
-    implicit class NormalizeLineEndingsMutableBuilder[Self <: NormalizeLineEndings] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizeLineEndings](x: Self) {
       
-      @scala.inline
-      def setNormalizeLineEndings(value: Boolean): Self = StObject.set(x, "normalizeLineEndings", value.asInstanceOf[js.Any])
+      inline def setNormalizeLineEndings(value: Boolean): Self = StObject.set(x, "normalizeLineEndings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeLineEndingsUndefined: Self = StObject.set(x, "normalizeLineEndings", js.undefined)
+      inline def setNormalizeLineEndingsUndefined: Self = StObject.set(x, "normalizeLineEndings", js.undefined)
       
-      @scala.inline
-      def setUndo(value: skip): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+      inline def setUndo(value: skip): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
+      inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
     }
   }
   
@@ -394,8 +329,7 @@ object anon {
   }
   object ReadonlyPoint {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       column: Double,
       compare: PointCompatible => Double,
       copy: () => ReadonlyPoint,
@@ -416,53 +350,37 @@ object anon {
       __obj.asInstanceOf[ReadonlyPoint]
     }
     
-    @scala.inline
-    implicit class ReadonlyPointMutableBuilder[Self <: ReadonlyPoint] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPoint](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompare(value: PointCompatible => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
+      inline def setCompare(value: PointCompatible => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCopy(value: () => ReadonlyPoint): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+      inline def setCopy(value: () => ReadonlyPoint): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFreeze(value: () => ReadonlyPoint): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
+      inline def setFreeze(value: () => ReadonlyPoint): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEqual(value: PointCompatible => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+      inline def setIsEqual(value: PointCompatible => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsGreaterThan(value: PointCompatible => Boolean): Self = StObject.set(x, "isGreaterThan", js.Any.fromFunction1(value))
+      inline def setIsGreaterThan(value: PointCompatible => Boolean): Self = StObject.set(x, "isGreaterThan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsGreaterThanOrEqual(value: PointCompatible => Boolean): Self = StObject.set(x, "isGreaterThanOrEqual", js.Any.fromFunction1(value))
+      inline def setIsGreaterThanOrEqual(value: PointCompatible => Boolean): Self = StObject.set(x, "isGreaterThanOrEqual", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsLessThan(value: PointCompatible => Boolean): Self = StObject.set(x, "isLessThan", js.Any.fromFunction1(value))
+      inline def setIsLessThan(value: PointCompatible => Boolean): Self = StObject.set(x, "isLessThan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsLessThanOrEqual(value: PointCompatible => Boolean): Self = StObject.set(x, "isLessThanOrEqual", js.Any.fromFunction1(value))
+      inline def setIsLessThanOrEqual(value: PointCompatible => Boolean): Self = StObject.set(x, "isLessThanOrEqual", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNegate(value: () => ReadonlyPoint): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
+      inline def setNegate(value: () => ReadonlyPoint): Self = StObject.set(x, "negate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialize(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
+      inline def setSerialize(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToArray(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTranslate(value: PointCompatible => ReadonlyPoint): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
+      inline def setTranslate(value: PointCompatible => ReadonlyPoint): Self = StObject.set(x, "translate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTraverse(value: PointCompatible => ReadonlyPoint): Self = StObject.set(x, "traverse", js.Any.fromFunction1(value))
+      inline def setTraverse(value: PointCompatible => ReadonlyPoint): Self = StObject.set(x, "traverse", js.Any.fromFunction1(value))
     }
   }
   
@@ -523,17 +441,14 @@ object anon {
   }
   object Reversed {
     
-    @scala.inline
-    def apply(reversed: Boolean): Reversed = {
+    inline def apply(reversed: Boolean): Reversed = {
       val __obj = js.Dynamic.literal(reversed = reversed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Reversed]
     }
     
-    @scala.inline
-    implicit class ReversedMutableBuilder[Self <: Reversed] (val x: Self) extends AnyVal {
+    extension [Self <: Reversed](x: Self) {
       
-      @scala.inline
-      def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+      inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -550,26 +465,20 @@ object anon {
   }
   object ShouldDestroyOnFileDelete {
     
-    @scala.inline
-    def apply(): ShouldDestroyOnFileDelete = {
+    inline def apply(): ShouldDestroyOnFileDelete = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ShouldDestroyOnFileDelete]
     }
     
-    @scala.inline
-    implicit class ShouldDestroyOnFileDeleteMutableBuilder[Self <: ShouldDestroyOnFileDelete] (val x: Self) extends AnyVal {
+    extension [Self <: ShouldDestroyOnFileDelete](x: Self) {
       
-      @scala.inline
-      def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
+      inline def setShouldDestroyOnFileDelete(value: () => Boolean): Self = StObject.set(x, "shouldDestroyOnFileDelete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShouldDestroyOnFileDeleteUndefined: Self = StObject.set(x, "shouldDestroyOnFileDelete", js.undefined)
+      inline def setShouldDestroyOnFileDeleteUndefined: Self = StObject.set(x, "shouldDestroyOnFileDelete", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

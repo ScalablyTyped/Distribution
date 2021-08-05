@@ -28,44 +28,37 @@ object putMod {
     @js.native
     def cidBase: Choices = js.native
     
-    @scala.inline
-    def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/block/put", "builder.format")
     @js.native
     def format: AliasDefault = js.native
-    @scala.inline
-    def format_=(x: AliasDefault): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
+    inline def format_=(x: AliasDefault): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/block/put", "builder.mhlen")
     @js.native
     def mhlen: DefaultUndefined = js.native
-    @scala.inline
-    def mhlen_=(x: DefaultUndefined): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mhlen")(x.asInstanceOf[js.Any])
+    inline def mhlen_=(x: DefaultUndefined): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mhlen")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/block/put", "builder.mhtype")
     @js.native
     def mhtype: DefaultString = js.native
-    @scala.inline
-    def mhtype_=(x: DefaultString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mhtype")(x.asInstanceOf[js.Any])
+    inline def mhtype_=(x: DefaultString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mhtype")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/block/put", "builder.pin")
     @js.native
     def pin: DescribeString = js.native
-    @scala.inline
-    def pin_=(x: DescribeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pin")(x.asInstanceOf[js.Any])
+    inline def pin_=(x: DescribeString): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pin")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/block/put", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/block/put", "builder.version")
     @js.native
     def version: DefaultNumber = js.native
-    @scala.inline
-    def version_=(x: DefaultNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+    inline def version_=(x: DefaultNumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/block/put", "command")
@@ -76,6 +69,5 @@ object putMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintGetStdinBlockTimeoutFormatMhtypeMhlenVersionCidBasePin: Block): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintGetStdinBlockTimeoutFormatMhtypeMhlenVersionCidBasePin.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintGetStdinBlockTimeoutFormatMhtypeMhlenVersionCidBasePin: Block): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintGetStdinBlockTimeoutFormatMhtypeMhlenVersionCidBasePin.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

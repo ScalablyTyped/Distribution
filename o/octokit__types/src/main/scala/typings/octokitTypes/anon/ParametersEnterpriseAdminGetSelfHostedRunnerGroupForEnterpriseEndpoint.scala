@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint ext
 }
 object ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint,
     request: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseRequestOptions,
     response: OctokitResponse[EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpointMutableBuilder[Self <: ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

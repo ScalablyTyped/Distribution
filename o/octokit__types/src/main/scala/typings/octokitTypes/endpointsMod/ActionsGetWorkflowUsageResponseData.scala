@@ -11,16 +11,13 @@ trait ActionsGetWorkflowUsageResponseData extends StObject {
 }
 object ActionsGetWorkflowUsageResponseData {
   
-  @scala.inline
-  def apply(billable: UBUNTU): ActionsGetWorkflowUsageResponseData = {
+  inline def apply(billable: UBUNTU): ActionsGetWorkflowUsageResponseData = {
     val __obj = js.Dynamic.literal(billable = billable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsGetWorkflowUsageResponseData]
   }
   
-  @scala.inline
-  implicit class ActionsGetWorkflowUsageResponseDataMutableBuilder[Self <: ActionsGetWorkflowUsageResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsGetWorkflowUsageResponseData](x: Self) {
     
-    @scala.inline
-    def setBillable(value: UBUNTU): Self = StObject.set(x, "billable", value.asInstanceOf[js.Any])
+    inline def setBillable(value: UBUNTU): Self = StObject.set(x, "billable", value.asInstanceOf[js.Any])
   }
 }

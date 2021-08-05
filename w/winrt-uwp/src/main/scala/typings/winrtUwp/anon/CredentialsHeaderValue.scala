@@ -13,19 +13,15 @@ trait CredentialsHeaderValue extends StObject {
 }
 object CredentialsHeaderValue {
   
-  @scala.inline
-  def apply(credentialsHeaderValue: HttpCredentialsHeaderValue, returnValue: Boolean): CredentialsHeaderValue = {
+  inline def apply(credentialsHeaderValue: HttpCredentialsHeaderValue, returnValue: Boolean): CredentialsHeaderValue = {
     val __obj = js.Dynamic.literal(credentialsHeaderValue = credentialsHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[CredentialsHeaderValue]
   }
   
-  @scala.inline
-  implicit class CredentialsHeaderValueMutableBuilder[Self <: CredentialsHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialsHeaderValue](x: Self) {
     
-    @scala.inline
-    def setCredentialsHeaderValue(value: HttpCredentialsHeaderValue): Self = StObject.set(x, "credentialsHeaderValue", value.asInstanceOf[js.Any])
+    inline def setCredentialsHeaderValue(value: HttpCredentialsHeaderValue): Self = StObject.set(x, "credentialsHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

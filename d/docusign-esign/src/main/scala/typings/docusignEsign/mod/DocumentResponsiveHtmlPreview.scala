@@ -13,22 +13,17 @@ trait DocumentResponsiveHtmlPreview extends StObject {
 }
 object DocumentResponsiveHtmlPreview {
   
-  @scala.inline
-  def apply(): DocumentResponsiveHtmlPreview = {
+  inline def apply(): DocumentResponsiveHtmlPreview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentResponsiveHtmlPreview]
   }
   
-  @scala.inline
-  implicit class DocumentResponsiveHtmlPreviewMutableBuilder[Self <: DocumentResponsiveHtmlPreview] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentResponsiveHtmlPreview](x: Self) {
     
-    @scala.inline
-    def setHtmlDefinitions(value: js.Array[String]): Self = StObject.set(x, "htmlDefinitions", value.asInstanceOf[js.Any])
+    inline def setHtmlDefinitions(value: js.Array[String]): Self = StObject.set(x, "htmlDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlDefinitionsUndefined: Self = StObject.set(x, "htmlDefinitions", js.undefined)
+    inline def setHtmlDefinitionsUndefined: Self = StObject.set(x, "htmlDefinitions", js.undefined)
     
-    @scala.inline
-    def setHtmlDefinitionsVarargs(value: String*): Self = StObject.set(x, "htmlDefinitions", js.Array(value :_*))
+    inline def setHtmlDefinitionsVarargs(value: String*): Self = StObject.set(x, "htmlDefinitions", js.Array(value :_*))
   }
 }

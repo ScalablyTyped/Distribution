@@ -13,22 +13,17 @@ trait NewUsersSummary extends StObject {
 }
 object NewUsersSummary {
   
-  @scala.inline
-  def apply(): NewUsersSummary = {
+  inline def apply(): NewUsersSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NewUsersSummary]
   }
   
-  @scala.inline
-  implicit class NewUsersSummaryMutableBuilder[Self <: NewUsersSummary] (val x: Self) extends AnyVal {
+  extension [Self <: NewUsersSummary](x: Self) {
     
-    @scala.inline
-    def setNewUsers(value: js.Array[/* object representing a new user. */ NewUser]): Self = StObject.set(x, "newUsers", value.asInstanceOf[js.Any])
+    inline def setNewUsers(value: js.Array[/* object representing a new user. */ NewUser]): Self = StObject.set(x, "newUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewUsersUndefined: Self = StObject.set(x, "newUsers", js.undefined)
+    inline def setNewUsersUndefined: Self = StObject.set(x, "newUsers", js.undefined)
     
-    @scala.inline
-    def setNewUsersVarargs(value: (/* object representing a new user. */ NewUser)*): Self = StObject.set(x, "newUsers", js.Array(value :_*))
+    inline def setNewUsersVarargs(value: (/* object representing a new user. */ NewUser)*): Self = StObject.set(x, "newUsers", js.Array(value :_*))
   }
 }

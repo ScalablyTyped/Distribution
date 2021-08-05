@@ -16,8 +16,7 @@ trait IDateTimeFormatterStatics extends StObject {
 }
 object IDateTimeFormatterStatics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     longDate: DateTimeFormatter,
     longTime: DateTimeFormatter,
     shortDate: DateTimeFormatter,
@@ -27,19 +26,14 @@ object IDateTimeFormatterStatics {
     __obj.asInstanceOf[IDateTimeFormatterStatics]
   }
   
-  @scala.inline
-  implicit class IDateTimeFormatterStaticsMutableBuilder[Self <: IDateTimeFormatterStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IDateTimeFormatterStatics](x: Self) {
     
-    @scala.inline
-    def setLongDate(value: DateTimeFormatter): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
+    inline def setLongDate(value: DateTimeFormatter): Self = StObject.set(x, "longDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongTime(value: DateTimeFormatter): Self = StObject.set(x, "longTime", value.asInstanceOf[js.Any])
+    inline def setLongTime(value: DateTimeFormatter): Self = StObject.set(x, "longTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDate(value: DateTimeFormatter): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
+    inline def setShortDate(value: DateTimeFormatter): Self = StObject.set(x, "shortDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortTime(value: DateTimeFormatter): Self = StObject.set(x, "shortTime", value.asInstanceOf[js.Any])
+    inline def setShortTime(value: DateTimeFormatter): Self = StObject.set(x, "shortTime", value.asInstanceOf[js.Any])
   }
 }

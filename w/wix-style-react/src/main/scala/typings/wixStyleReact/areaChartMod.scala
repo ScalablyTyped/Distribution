@@ -32,50 +32,36 @@ object areaChartMod {
   }
   object AreaChartProps {
     
-    @scala.inline
-    def apply(data: js.Array[IDatasetItem]): AreaChartProps = {
+    inline def apply(data: js.Array[IDatasetItem]): AreaChartProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[AreaChartProps]
     }
     
-    @scala.inline
-    implicit class AreaChartPropsMutableBuilder[Self <: AreaChartProps] (val x: Self) extends AnyVal {
+    extension [Self <: AreaChartProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[IDatasetItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[IDatasetItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: IDatasetItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: IDatasetItem*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxYTicksLimit(value: Double): Self = StObject.set(x, "maxYTicksLimit", value.asInstanceOf[js.Any])
+      inline def setMaxYTicksLimit(value: Double): Self = StObject.set(x, "maxYTicksLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxYTicksLimitUndefined: Self = StObject.set(x, "maxYTicksLimit", js.undefined)
+      inline def setMaxYTicksLimitUndefined: Self = StObject.set(x, "maxYTicksLimit", js.undefined)
       
-      @scala.inline
-      def setOnTooltipShow(value: /* item */ IDatasetItem => Unit): Self = StObject.set(x, "onTooltipShow", js.Any.fromFunction1(value))
+      inline def setOnTooltipShow(value: /* item */ IDatasetItem => Unit): Self = StObject.set(x, "onTooltipShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTooltipShowUndefined: Self = StObject.set(x, "onTooltipShow", js.undefined)
+      inline def setOnTooltipShowUndefined: Self = StObject.set(x, "onTooltipShow", js.undefined)
       
-      @scala.inline
-      def setTooltipContent(value: (/* item */ IDatasetItem, /* index */ Double) => String | js.Array[String]): Self = StObject.set(x, "tooltipContent", js.Any.fromFunction2(value))
+      inline def setTooltipContent(value: (/* item */ IDatasetItem, /* index */ Double) => String | js.Array[String]): Self = StObject.set(x, "tooltipContent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTooltipContentUndefined: Self = StObject.set(x, "tooltipContent", js.undefined)
+      inline def setTooltipContentUndefined: Self = StObject.set(x, "tooltipContent", js.undefined)
     }
   }
   
@@ -87,20 +73,16 @@ object areaChartMod {
   }
   object IDatasetItem {
     
-    @scala.inline
-    def apply(label: String, value: Double): IDatasetItem = {
+    inline def apply(label: String, value: Double): IDatasetItem = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDatasetItem]
     }
     
-    @scala.inline
-    implicit class IDatasetItemMutableBuilder[Self <: IDatasetItem] (val x: Self) extends AnyVal {
+    extension [Self <: IDatasetItem](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

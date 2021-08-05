@@ -21,24 +21,19 @@ object elementsMod {
   }
   object ElementsProps {
     
-    @scala.inline
-    def apply(elements: js.Array[NodeResult], `type`: RuleType): ElementsProps = {
+    inline def apply(elements: js.Array[NodeResult], `type`: RuleType): ElementsProps = {
       val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementsProps]
     }
     
-    @scala.inline
-    implicit class ElementsPropsMutableBuilder[Self <: ElementsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ElementsProps](x: Self) {
       
-      @scala.inline
-      def setElements(value: js.Array[NodeResult]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: js.Array[NodeResult]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: NodeResult*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: NodeResult*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

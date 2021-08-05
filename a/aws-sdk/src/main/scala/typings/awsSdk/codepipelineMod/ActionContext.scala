@@ -18,25 +18,19 @@ trait ActionContext extends StObject {
 }
 object ActionContext {
   
-  @scala.inline
-  def apply(): ActionContext = {
+  inline def apply(): ActionContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionContext]
   }
   
-  @scala.inline
-  implicit class ActionContextMutableBuilder[Self <: ActionContext] (val x: Self) extends AnyVal {
+  extension [Self <: ActionContext](x: Self) {
     
-    @scala.inline
-    def setActionExecutionId(value: ActionExecutionId): Self = StObject.set(x, "actionExecutionId", value.asInstanceOf[js.Any])
+    inline def setActionExecutionId(value: ActionExecutionId): Self = StObject.set(x, "actionExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionExecutionIdUndefined: Self = StObject.set(x, "actionExecutionId", js.undefined)
+    inline def setActionExecutionIdUndefined: Self = StObject.set(x, "actionExecutionId", js.undefined)
     
-    @scala.inline
-    def setName(value: ActionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ActionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

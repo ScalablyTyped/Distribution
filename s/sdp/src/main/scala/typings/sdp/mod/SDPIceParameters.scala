@@ -14,25 +14,19 @@ trait SDPIceParameters extends StObject {
 }
 object SDPIceParameters {
   
-  @scala.inline
-  def apply(password: String, usernameFragment: String): SDPIceParameters = {
+  inline def apply(password: String, usernameFragment: String): SDPIceParameters = {
     val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], usernameFragment = usernameFragment.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPIceParameters]
   }
   
-  @scala.inline
-  implicit class SDPIceParametersMutableBuilder[Self <: SDPIceParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SDPIceParameters](x: Self) {
     
-    @scala.inline
-    def setIceLite(value: Boolean): Self = StObject.set(x, "iceLite", value.asInstanceOf[js.Any])
+    inline def setIceLite(value: Boolean): Self = StObject.set(x, "iceLite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIceLiteUndefined: Self = StObject.set(x, "iceLite", js.undefined)
+    inline def setIceLiteUndefined: Self = StObject.set(x, "iceLite", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameFragment(value: String): Self = StObject.set(x, "usernameFragment", value.asInstanceOf[js.Any])
+    inline def setUsernameFragment(value: String): Self = StObject.set(x, "usernameFragment", value.asInstanceOf[js.Any])
   }
 }

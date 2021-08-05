@@ -25,20 +25,17 @@ object listViewMod {
     @JSImport("antd-mobile/lib/list-view", "default.DataSource")
     @js.native
     def DataSource: js.Any = js.native
-    @scala.inline
-    def DataSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSource")(x.asInstanceOf[js.Any])
+    inline def DataSource_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSource")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/list-view", "default.IndexedList")
     @js.native
     def IndexedList: TypeofIndexedList = js.native
-    @scala.inline
-    def IndexedList_=(x: TypeofIndexedList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexedList")(x.asInstanceOf[js.Any])
+    inline def IndexedList_=(x: TypeofIndexedList): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IndexedList")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/list-view", "default.defaultProps")
     @js.native
     def defaultProps: ListPrefixCls = js.native
-    @scala.inline
-    def defaultProps_=(x: ListPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ListPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

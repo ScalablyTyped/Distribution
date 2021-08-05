@@ -33,33 +33,27 @@ object ReadPreference {
   @JSImport("mongodb", "ReadPreference.NEAREST")
   @js.native
   def NEAREST: nearest = js.native
-  @scala.inline
-  def NEAREST_=(x: nearest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEAREST")(x.asInstanceOf[js.Any])
+  inline def NEAREST_=(x: nearest): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NEAREST")(x.asInstanceOf[js.Any])
   
   @JSImport("mongodb", "ReadPreference.PRIMARY")
   @js.native
   def PRIMARY: primary = js.native
-  @scala.inline
-  def PRIMARY_=(x: primary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY")(x.asInstanceOf[js.Any])
+  inline def PRIMARY_=(x: primary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY")(x.asInstanceOf[js.Any])
   
   @JSImport("mongodb", "ReadPreference.PRIMARY_PREFERRED")
   @js.native
   def PRIMARY_PREFERRED: primaryPreferred = js.native
-  @scala.inline
-  def PRIMARY_PREFERRED_=(x: primaryPreferred): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY_PREFERRED")(x.asInstanceOf[js.Any])
+  inline def PRIMARY_PREFERRED_=(x: primaryPreferred): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY_PREFERRED")(x.asInstanceOf[js.Any])
   
   @JSImport("mongodb", "ReadPreference.SECONDARY")
   @js.native
   def SECONDARY: secondary = js.native
-  @scala.inline
-  def SECONDARY_=(x: secondary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY")(x.asInstanceOf[js.Any])
+  inline def SECONDARY_=(x: secondary): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY")(x.asInstanceOf[js.Any])
   
   @JSImport("mongodb", "ReadPreference.SECONDARY_PREFERRED")
   @js.native
   def SECONDARY_PREFERRED: secondaryPreferred = js.native
-  @scala.inline
-  def SECONDARY_PREFERRED_=(x: secondaryPreferred): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY_PREFERRED")(x.asInstanceOf[js.Any])
+  inline def SECONDARY_PREFERRED_=(x: secondaryPreferred): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY_PREFERRED")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isValid(mode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(mode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

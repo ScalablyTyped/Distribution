@@ -13,19 +13,15 @@ trait AwsElbLoadBalancerInstance extends StObject {
 }
 object AwsElbLoadBalancerInstance {
   
-  @scala.inline
-  def apply(): AwsElbLoadBalancerInstance = {
+  inline def apply(): AwsElbLoadBalancerInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElbLoadBalancerInstance]
   }
   
-  @scala.inline
-  implicit class AwsElbLoadBalancerInstanceMutableBuilder[Self <: AwsElbLoadBalancerInstance] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElbLoadBalancerInstance](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: NonEmptyString): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: NonEmptyString): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

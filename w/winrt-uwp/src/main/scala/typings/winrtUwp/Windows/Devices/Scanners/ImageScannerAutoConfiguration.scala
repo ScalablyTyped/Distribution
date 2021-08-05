@@ -22,8 +22,7 @@ trait ImageScannerAutoConfiguration extends StObject {
 }
 object ImageScannerAutoConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultFormat: ImageScannerFormat,
     format: ImageScannerFormat,
     isFormatSupported: ImageScannerFormat => Boolean
@@ -32,16 +31,12 @@ object ImageScannerAutoConfiguration {
     __obj.asInstanceOf[ImageScannerAutoConfiguration]
   }
   
-  @scala.inline
-  implicit class ImageScannerAutoConfigurationMutableBuilder[Self <: ImageScannerAutoConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ImageScannerAutoConfiguration](x: Self) {
     
-    @scala.inline
-    def setDefaultFormat(value: ImageScannerFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
+    inline def setDefaultFormat(value: ImageScannerFormat): Self = StObject.set(x, "defaultFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: ImageScannerFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ImageScannerFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFormatSupported(value: ImageScannerFormat => Boolean): Self = StObject.set(x, "isFormatSupported", js.Any.fromFunction1(value))
+    inline def setIsFormatSupported(value: ImageScannerFormat => Boolean): Self = StObject.set(x, "isFormatSupported", js.Any.fromFunction1(value))
   }
 }

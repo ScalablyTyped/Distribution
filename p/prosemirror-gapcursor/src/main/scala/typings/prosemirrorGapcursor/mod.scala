@@ -27,6 +27,5 @@ object mod {
     def this($anchor: ResolvedPos[js.Any], $head: ResolvedPos[js.Any], ranges: js.Array[SelectionRange[js.Any]]) = this()
   }
   
-  @scala.inline
-  def gapCursor(): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("gapCursor")().asInstanceOf[Plugin[js.Any, js.Any]]
+  inline def gapCursor(): Plugin[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("gapCursor")().asInstanceOf[Plugin[js.Any, js.Any]]
 }

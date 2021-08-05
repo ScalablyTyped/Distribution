@@ -18,43 +18,31 @@ trait Disable extends StObject {
 }
 object Disable {
   
-  @scala.inline
-  def apply(): Disable = {
+  inline def apply(): Disable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Disable]
   }
   
-  @scala.inline
-  implicit class DisableMutableBuilder[Self <: Disable] (val x: Self) extends AnyVal {
+  extension [Self <: Disable](x: Self) {
     
-    @scala.inline
-    def setDisable(value: Boolean): Self = StObject.set(x, "Disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: Boolean): Self = StObject.set(x, "Disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "Disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "Disable", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "Level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "Level", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "Role", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

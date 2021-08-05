@@ -12,69 +12,59 @@ object swPrecacheStrings {
   sealed trait cacheFirst
     extends StObject
        with _Handler
-  @scala.inline
-  def cacheFirst: cacheFirst = "cacheFirst".asInstanceOf[cacheFirst]
+  inline def cacheFirst: cacheFirst = "cacheFirst".asInstanceOf[cacheFirst]
   
   @js.native
   sealed trait cacheOnly
     extends StObject
        with _Handler
-  @scala.inline
-  def cacheOnly: cacheOnly = "cacheOnly".asInstanceOf[cacheOnly]
+  inline def cacheOnly: cacheOnly = "cacheOnly".asInstanceOf[cacheOnly]
   
   @js.native
   sealed trait delete
     extends StObject
        with Method
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
   sealed trait fastest
     extends StObject
        with _Handler
-  @scala.inline
-  def fastest: fastest = "fastest".asInstanceOf[fastest]
+  inline def fastest: fastest = "fastest".asInstanceOf[fastest]
   
   @js.native
   sealed trait get
     extends StObject
        with Method
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
   sealed trait head
     extends StObject
        with Method
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
   sealed trait networkFirst
     extends StObject
        with _Handler
-  @scala.inline
-  def networkFirst: networkFirst = "networkFirst".asInstanceOf[networkFirst]
+  inline def networkFirst: networkFirst = "networkFirst".asInstanceOf[networkFirst]
   
   @js.native
   sealed trait networkOnly
     extends StObject
        with _Handler
-  @scala.inline
-  def networkOnly: networkOnly = "networkOnly".asInstanceOf[networkOnly]
+  inline def networkOnly: networkOnly = "networkOnly".asInstanceOf[networkOnly]
   
   @js.native
   sealed trait post
     extends StObject
        with Method
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
   sealed trait put
     extends StObject
        with Method
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  inline def put: put = "put".asInstanceOf[put]
 }

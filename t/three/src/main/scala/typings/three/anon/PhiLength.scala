@@ -17,28 +17,21 @@ trait PhiLength extends StObject {
 }
 object PhiLength {
   
-  @scala.inline
-  def apply(phiLength: Double, phiStart: Double, points: js.Array[Vector2], segments: Double): PhiLength = {
+  inline def apply(phiLength: Double, phiStart: Double, points: js.Array[Vector2], segments: Double): PhiLength = {
     val __obj = js.Dynamic.literal(phiLength = phiLength.asInstanceOf[js.Any], phiStart = phiStart.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhiLength]
   }
   
-  @scala.inline
-  implicit class PhiLengthMutableBuilder[Self <: PhiLength] (val x: Self) extends AnyVal {
+  extension [Self <: PhiLength](x: Self) {
     
-    @scala.inline
-    def setPhiLength(value: Double): Self = StObject.set(x, "phiLength", value.asInstanceOf[js.Any])
+    inline def setPhiLength(value: Double): Self = StObject.set(x, "phiLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhiStart(value: Double): Self = StObject.set(x, "phiStart", value.asInstanceOf[js.Any])
+    inline def setPhiStart(value: Double): Self = StObject.set(x, "phiStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: js.Array[Vector2]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Vector2]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: Vector2*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Vector2*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: Double): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
   }
 }

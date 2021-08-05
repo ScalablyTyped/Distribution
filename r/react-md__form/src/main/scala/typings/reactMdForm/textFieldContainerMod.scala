@@ -68,56 +68,40 @@ object textFieldContainerMod {
   }
   object TextFieldContainerOptions {
     
-    @scala.inline
-    def apply(): TextFieldContainerOptions = {
+    inline def apply(): TextFieldContainerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextFieldContainerOptions]
     }
     
-    @scala.inline
-    implicit class TextFieldContainerOptionsMutableBuilder[Self <: TextFieldContainerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TextFieldContainerOptions](x: Self) {
       
-      @scala.inline
-      def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+      inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+      inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setIsLeftAddon(value: Boolean): Self = StObject.set(x, "isLeftAddon", value.asInstanceOf[js.Any])
+      inline def setIsLeftAddon(value: Boolean): Self = StObject.set(x, "isLeftAddon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLeftAddonUndefined: Self = StObject.set(x, "isLeftAddon", js.undefined)
+      inline def setIsLeftAddonUndefined: Self = StObject.set(x, "isLeftAddon", js.undefined)
       
-      @scala.inline
-      def setIsRightAddon(value: Boolean): Self = StObject.set(x, "isRightAddon", value.asInstanceOf[js.Any])
+      inline def setIsRightAddon(value: Boolean): Self = StObject.set(x, "isRightAddon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRightAddonUndefined: Self = StObject.set(x, "isRightAddon", js.undefined)
+      inline def setIsRightAddonUndefined: Self = StObject.set(x, "isRightAddon", js.undefined)
       
-      @scala.inline
-      def setLeftChildren(value: ReactNode): Self = StObject.set(x, "leftChildren", value.asInstanceOf[js.Any])
+      inline def setLeftChildren(value: ReactNode): Self = StObject.set(x, "leftChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftChildrenUndefined: Self = StObject.set(x, "leftChildren", js.undefined)
+      inline def setLeftChildrenUndefined: Self = StObject.set(x, "leftChildren", js.undefined)
       
-      @scala.inline
-      def setRightChildren(value: ReactNode): Self = StObject.set(x, "rightChildren", value.asInstanceOf[js.Any])
+      inline def setRightChildren(value: ReactNode): Self = StObject.set(x, "rightChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightChildrenUndefined: Self = StObject.set(x, "rightChildren", js.undefined)
+      inline def setRightChildrenUndefined: Self = StObject.set(x, "rightChildren", js.undefined)
     }
   }
   
@@ -144,32 +128,24 @@ object textFieldContainerMod {
   }
   object TextFieldContainerProps {
     
-    @scala.inline
-    def apply(): TextFieldContainerProps = {
+    inline def apply(): TextFieldContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextFieldContainerProps]
     }
     
-    @scala.inline
-    implicit class TextFieldContainerPropsMutableBuilder[Self <: TextFieldContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextFieldContainerProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabel(value: Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: Boolean): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     }
   }
 }

@@ -33,8 +33,7 @@ object listItemEditableUniDriverMod {
   }
   object ListItemEditableUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickApprove: () => js.Promise[Unit],
       clickCancel: () => js.Promise[Unit],
@@ -52,35 +51,25 @@ object listItemEditableUniDriverMod {
       __obj.asInstanceOf[ListItemEditableUniDriver]
     }
     
-    @scala.inline
-    implicit class ListItemEditableUniDriverMutableBuilder[Self <: ListItemEditableUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemEditableUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickApprove(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickApprove", js.Any.fromFunction0(value))
+      inline def setClickApprove(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickApprove", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCancel", js.Any.fromFunction0(value))
+      inline def setClickCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => js.Promise[Unit]): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetApproveButtonTooltipText(value: () => js.Promise[String]): Self = StObject.set(x, "getApproveButtonTooltipText", js.Any.fromFunction0(value))
+      inline def setGetApproveButtonTooltipText(value: () => js.Promise[String]): Self = StObject.set(x, "getApproveButtonTooltipText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCancelButtonTooltipText(value: () => js.Promise[String]): Self = StObject.set(x, "getCancelButtonTooltipText", js.Any.fromFunction0(value))
+      inline def setGetCancelButtonTooltipText(value: () => js.Promise[String]): Self = StObject.set(x, "getCancelButtonTooltipText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPlaceholder(value: () => js.Promise[String]): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
+      inline def setGetPlaceholder(value: () => js.Promise[String]): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
+      inline def setGetStatusMessage(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
+      inline def setHasStatus(value: StatusIndications => js.Promise[Boolean]): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsApproveButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isApproveButtonDisabled", js.Any.fromFunction0(value))
+      inline def setIsApproveButtonDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isApproveButtonDisabled", js.Any.fromFunction0(value))
     }
   }
 }

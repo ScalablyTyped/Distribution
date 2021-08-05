@@ -18,25 +18,19 @@ trait SchemaTimePeriod extends StObject {
 }
 object SchemaTimePeriod {
   
-  @scala.inline
-  def apply(): SchemaTimePeriod = {
+  inline def apply(): SchemaTimePeriod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTimePeriod]
   }
   
-  @scala.inline
-  implicit class SchemaTimePeriodMutableBuilder[Self <: SchemaTimePeriod] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTimePeriod](x: Self) {
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

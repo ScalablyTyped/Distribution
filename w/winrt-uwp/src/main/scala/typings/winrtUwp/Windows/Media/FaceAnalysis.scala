@@ -20,17 +20,14 @@ object FaceAnalysis {
   }
   object DetectedFace {
     
-    @scala.inline
-    def apply(faceBox: BitmapBounds): DetectedFace = {
+    inline def apply(faceBox: BitmapBounds): DetectedFace = {
       val __obj = js.Dynamic.literal(faceBox = faceBox.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetectedFace]
     }
     
-    @scala.inline
-    implicit class DetectedFaceMutableBuilder[Self <: DetectedFace] (val x: Self) extends AnyVal {
+    extension [Self <: DetectedFace](x: Self) {
       
-      @scala.inline
-      def setFaceBox(value: BitmapBounds): Self = StObject.set(x, "faceBox", value.asInstanceOf[js.Any])
+      inline def setFaceBox(value: BitmapBounds): Self = StObject.set(x, "faceBox", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,8 +74,7 @@ object FaceAnalysis {
   }
   object FaceTracker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       maxDetectableFaceSize: BitmapSize,
       minDetectableFaceSize: BitmapSize,
       processNextFrameAsync: VideoFrame => IPromiseWithIAsyncOperation[IVector[js.Any]]
@@ -87,17 +83,13 @@ object FaceAnalysis {
       __obj.asInstanceOf[FaceTracker]
     }
     
-    @scala.inline
-    implicit class FaceTrackerMutableBuilder[Self <: FaceTracker] (val x: Self) extends AnyVal {
+    extension [Self <: FaceTracker](x: Self) {
       
-      @scala.inline
-      def setMaxDetectableFaceSize(value: BitmapSize): Self = StObject.set(x, "maxDetectableFaceSize", value.asInstanceOf[js.Any])
+      inline def setMaxDetectableFaceSize(value: BitmapSize): Self = StObject.set(x, "maxDetectableFaceSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDetectableFaceSize(value: BitmapSize): Self = StObject.set(x, "minDetectableFaceSize", value.asInstanceOf[js.Any])
+      inline def setMinDetectableFaceSize(value: BitmapSize): Self = StObject.set(x, "minDetectableFaceSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessNextFrameAsync(value: VideoFrame => IPromiseWithIAsyncOperation[IVector[js.Any]]): Self = StObject.set(x, "processNextFrameAsync", js.Any.fromFunction1(value))
+      inline def setProcessNextFrameAsync(value: VideoFrame => IPromiseWithIAsyncOperation[IVector[js.Any]]): Self = StObject.set(x, "processNextFrameAsync", js.Any.fromFunction1(value))
     }
   }
 }

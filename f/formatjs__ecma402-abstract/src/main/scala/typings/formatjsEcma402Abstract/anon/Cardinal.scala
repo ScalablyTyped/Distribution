@@ -12,25 +12,19 @@ trait Cardinal extends StObject {
 }
 object Cardinal {
   
-  @scala.inline
-  def apply(cardinal: js.Array[String], ordinal: js.Array[String]): Cardinal = {
+  inline def apply(cardinal: js.Array[String], ordinal: js.Array[String]): Cardinal = {
     val __obj = js.Dynamic.literal(cardinal = cardinal.asInstanceOf[js.Any], ordinal = ordinal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cardinal]
   }
   
-  @scala.inline
-  implicit class CardinalMutableBuilder[Self <: Cardinal] (val x: Self) extends AnyVal {
+  extension [Self <: Cardinal](x: Self) {
     
-    @scala.inline
-    def setCardinal(value: js.Array[String]): Self = StObject.set(x, "cardinal", value.asInstanceOf[js.Any])
+    inline def setCardinal(value: js.Array[String]): Self = StObject.set(x, "cardinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardinalVarargs(value: String*): Self = StObject.set(x, "cardinal", js.Array(value :_*))
+    inline def setCardinalVarargs(value: String*): Self = StObject.set(x, "cardinal", js.Array(value :_*))
     
-    @scala.inline
-    def setOrdinal(value: js.Array[String]): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
+    inline def setOrdinal(value: js.Array[String]): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrdinalVarargs(value: String*): Self = StObject.set(x, "ordinal", js.Array(value :_*))
+    inline def setOrdinalVarargs(value: String*): Self = StObject.set(x, "ordinal", js.Array(value :_*))
   }
 }

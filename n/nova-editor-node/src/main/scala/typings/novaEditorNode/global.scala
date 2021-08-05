@@ -35,50 +35,43 @@ object global {
     @JSGlobal("Charset.alphanumeric")
     @js.native
     def alphanumeric: typings.novaEditorNode.Charset = js.native
-    @scala.inline
-    def alphanumeric_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphanumeric")(x.asInstanceOf[js.Any])
+    inline def alphanumeric_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphanumeric")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Charset.digits")
     @js.native
     def digits: typings.novaEditorNode.Charset = js.native
-    @scala.inline
-    def digits_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("digits")(x.asInstanceOf[js.Any])
+    inline def digits_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("digits")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Charset.letters")
     @js.native
     def letters: typings.novaEditorNode.Charset = js.native
-    @scala.inline
-    def letters_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letters")(x.asInstanceOf[js.Any])
+    inline def letters_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letters")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Charset.lower")
     @js.native
     def lower: typings.novaEditorNode.Charset = js.native
-    @scala.inline
-    def lower_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lower")(x.asInstanceOf[js.Any])
+    inline def lower_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lower")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Charset.newlines")
     @js.native
     def newlines: typings.novaEditorNode.Charset = js.native
-    @scala.inline
-    def newlines_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newlines")(x.asInstanceOf[js.Any])
+    inline def newlines_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newlines")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Charset.symbols")
     @js.native
     def symbols: typings.novaEditorNode.Charset = js.native
-    @scala.inline
-    def symbols_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symbols")(x.asInstanceOf[js.Any])
+    inline def symbols_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symbols")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Charset.upper")
     @js.native
     def upper: typings.novaEditorNode.Charset = js.native
-    @scala.inline
-    def upper_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("upper")(x.asInstanceOf[js.Any])
+    inline def upper_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("upper")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSGlobal("Charset.whitespace")
@@ -89,11 +82,9 @@ object global {
     @JSGlobal("Charset.whitespaceAndNewlines")
     @js.native
     def whitespaceAndNewlines: typings.novaEditorNode.Charset = js.native
-    @scala.inline
-    def whitespaceAndNewlines_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("whitespaceAndNewlines")(x.asInstanceOf[js.Any])
+    inline def whitespaceAndNewlines_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("whitespaceAndNewlines")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def whitespace_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("whitespace")(x.asInstanceOf[js.Any])
+    inline def whitespace_=(x: typings.novaEditorNode.Charset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("whitespace")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Color")
@@ -241,8 +232,7 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def isDisposable(x: js.Any): /* is nova-editor-node.Disposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(x.asInstanceOf[js.Any]).asInstanceOf[/* is nova-editor-node.Disposable */ Boolean]
+    inline def isDisposable(x: js.Any): /* is nova-editor-node.Disposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(x.asInstanceOf[js.Any]).asInstanceOf[/* is nova-editor-node.Disposable */ Boolean]
   }
   
   /// https://novadocs.panic.com/api-reference/emitter/
@@ -258,7 +248,7 @@ object global {
   
   @JSGlobal("FileSystem")
   @js.native
-  class FileSystem protected ()
+  /* private */ class FileSystem ()
     extends StObject
        with typings.novaEditorNode.FileSystem
   
@@ -542,22 +532,19 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def delete(range: typings.novaEditorNode.Range): typings.novaEditorNode.TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(range.asInstanceOf[js.Any]).asInstanceOf[typings.novaEditorNode.TextEdit]
+    inline def delete(range: typings.novaEditorNode.Range): typings.novaEditorNode.TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(range.asInstanceOf[js.Any]).asInstanceOf[typings.novaEditorNode.TextEdit]
     
     /* static member */
-    @scala.inline
-    def insert(position: Double, newText: String): typings.novaEditorNode.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(position.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typings.novaEditorNode.TextEdit]
+    inline def insert(position: Double, newText: String): typings.novaEditorNode.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(position.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typings.novaEditorNode.TextEdit]
     
     /* static member */
-    @scala.inline
-    def replace(range: typings.novaEditorNode.Range, newText: String): typings.novaEditorNode.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(range.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typings.novaEditorNode.TextEdit]
+    inline def replace(range: typings.novaEditorNode.Range, newText: String): typings.novaEditorNode.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(range.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typings.novaEditorNode.TextEdit]
   }
   
   /// https://novadocs.panic.com/api-reference/text-editor/
   @JSGlobal("TextEditor")
   @js.native
-  class TextEditor protected ()
+  /* private */ class TextEditor ()
     extends StObject
        with typings.novaEditorNode.TextEditor
   object TextEditor {
@@ -567,8 +554,7 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def isTextEditor(`object`: js.Any): /* is nova-editor-node.TextEditor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextEditor")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is nova-editor-node.TextEditor */ Boolean]
+    inline def isTextEditor(`object`: js.Any): /* is nova-editor-node.TextEditor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextEditor")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is nova-editor-node.TextEditor */ Boolean]
   }
   
   /// https://novadocs.panic.com/api-reference/tree-item/
@@ -615,33 +601,23 @@ object global {
   }
   
   /// https://novadocs.panic.com/api-reference/
-  @scala.inline
-  def atob(data: String): String = js.Dynamic.global.applyDynamic("atob")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def atob(data: String): String = js.Dynamic.global.applyDynamic("atob")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def btoa(data: String): String = js.Dynamic.global.applyDynamic("btoa")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def btoa(data: String): String = js.Dynamic.global.applyDynamic("btoa")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def clearInterval(): Unit = js.Dynamic.global.applyDynamic("clearInterval")().asInstanceOf[Unit]
-  @scala.inline
-  def clearInterval(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearInterval")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearInterval(): Unit = js.Dynamic.global.applyDynamic("clearInterval")().asInstanceOf[Unit]
+  inline def clearInterval(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearInterval")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clearTimeout(): Unit = js.Dynamic.global.applyDynamic("clearTimeout")().asInstanceOf[Unit]
-  @scala.inline
-  def clearTimeout(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearTimeout(): Unit = js.Dynamic.global.applyDynamic("clearTimeout")().asInstanceOf[Unit]
+  inline def clearTimeout(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("nova")
   @js.native
   val nova: Environment = js.native
   
-  @scala.inline
-  def setInterval(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setInterval(handler: TimerHandler, timeout: Unit, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setInterval(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setInterval(handler: TimerHandler, timeout: Unit, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def setTimeout(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def setTimeout(handler: TimerHandler, timeout: Unit, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setTimeout(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def setTimeout(handler: TimerHandler, timeout: Unit, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

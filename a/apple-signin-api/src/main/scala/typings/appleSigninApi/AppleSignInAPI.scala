@@ -12,17 +12,14 @@ object AppleSignInAPI {
   }
   object AppleID {
     
-    @scala.inline
-    def apply(auth: AuthI): AppleID = {
+    inline def apply(auth: AuthI): AppleID = {
       val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppleID]
     }
     
-    @scala.inline
-    implicit class AppleIDMutableBuilder[Self <: AppleID] (val x: Self) extends AnyVal {
+    extension [Self <: AppleID](x: Self) {
       
-      @scala.inline
-      def setAuth(value: AuthI): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: AuthI): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,29 +48,22 @@ object AppleSignInAPI {
   }
   object AuthorizationI {
     
-    @scala.inline
-    def apply(code: String, id_token: String, state: String): AuthorizationI = {
+    inline def apply(code: String, id_token: String, state: String): AuthorizationI = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], id_token = id_token.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizationI]
     }
     
-    @scala.inline
-    implicit class AuthorizationIMutableBuilder[Self <: AuthorizationI] (val x: Self) extends AnyVal {
+    extension [Self <: AuthorizationI](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
+      inline def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,50 +84,36 @@ object AppleSignInAPI {
   }
   object ClientConfigI {
     
-    @scala.inline
-    def apply(): ClientConfigI = {
+    inline def apply(): ClientConfigI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientConfigI]
     }
     
-    @scala.inline
-    implicit class ClientConfigIMutableBuilder[Self <: ClientConfigI] (val x: Self) extends AnyVal {
+    extension [Self <: ClientConfigI](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setRedirectURI(value: String): Self = StObject.set(x, "redirectURI", value.asInstanceOf[js.Any])
+      inline def setRedirectURI(value: String): Self = StObject.set(x, "redirectURI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectURIUndefined: Self = StObject.set(x, "redirectURI", js.undefined)
+      inline def setRedirectURIUndefined: Self = StObject.set(x, "redirectURI", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setUsePopup(value: Boolean): Self = StObject.set(x, "usePopup", value.asInstanceOf[js.Any])
+      inline def setUsePopup(value: Boolean): Self = StObject.set(x, "usePopup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePopupUndefined: Self = StObject.set(x, "usePopup", js.undefined)
+      inline def setUsePopupUndefined: Self = StObject.set(x, "usePopup", js.undefined)
     }
   }
   
@@ -150,20 +126,16 @@ object AppleSignInAPI {
   }
   object NameI {
     
-    @scala.inline
-    def apply(firstName: String, lastName: String): NameI = {
+    inline def apply(firstName: String, lastName: String): NameI = {
       val __obj = js.Dynamic.literal(firstName = firstName.asInstanceOf[js.Any], lastName = lastName.asInstanceOf[js.Any])
       __obj.asInstanceOf[NameI]
     }
     
-    @scala.inline
-    implicit class NameIMutableBuilder[Self <: NameI] (val x: Self) extends AnyVal {
+    extension [Self <: NameI](x: Self) {
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,17 +146,14 @@ object AppleSignInAPI {
   }
   object SignInErrorI {
     
-    @scala.inline
-    def apply(error: String): SignInErrorI = {
+    inline def apply(error: String): SignInErrorI = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignInErrorI]
     }
     
-    @scala.inline
-    implicit class SignInErrorIMutableBuilder[Self <: SignInErrorI] (val x: Self) extends AnyVal {
+    extension [Self <: SignInErrorI](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -197,23 +166,18 @@ object AppleSignInAPI {
   }
   object SignInResponseI {
     
-    @scala.inline
-    def apply(authorization: AuthorizationI): SignInResponseI = {
+    inline def apply(authorization: AuthorizationI): SignInResponseI = {
       val __obj = js.Dynamic.literal(authorization = authorization.asInstanceOf[js.Any])
       __obj.asInstanceOf[SignInResponseI]
     }
     
-    @scala.inline
-    implicit class SignInResponseIMutableBuilder[Self <: SignInResponseI] (val x: Self) extends AnyVal {
+    extension [Self <: SignInResponseI](x: Self) {
       
-      @scala.inline
-      def setAuthorization(value: AuthorizationI): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
+      inline def setAuthorization(value: AuthorizationI): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: UserI): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: UserI): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   
@@ -226,20 +190,16 @@ object AppleSignInAPI {
   }
   object UserI {
     
-    @scala.inline
-    def apply(email: String, name: NameI): UserI = {
+    inline def apply(email: String, name: NameI): UserI = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserI]
     }
     
-    @scala.inline
-    implicit class UserIMutableBuilder[Self <: UserI] (val x: Self) extends AnyVal {
+    extension [Self <: UserI](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: NameI): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: NameI): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

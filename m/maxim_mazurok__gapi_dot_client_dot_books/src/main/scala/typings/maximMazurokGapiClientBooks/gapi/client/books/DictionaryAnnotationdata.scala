@@ -35,67 +35,47 @@ trait DictionaryAnnotationdata extends StObject {
 }
 object DictionaryAnnotationdata {
   
-  @scala.inline
-  def apply(): DictionaryAnnotationdata = {
+  inline def apply(): DictionaryAnnotationdata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DictionaryAnnotationdata]
   }
   
-  @scala.inline
-  implicit class DictionaryAnnotationdataMutableBuilder[Self <: DictionaryAnnotationdata] (val x: Self) extends AnyVal {
+  extension [Self <: DictionaryAnnotationdata](x: Self) {
     
-    @scala.inline
-    def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
+    inline def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
+    inline def setAnnotationTypeUndefined: Self = StObject.set(x, "annotationType", js.undefined)
     
-    @scala.inline
-    def setData(value: Dictlayerdata): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Dictlayerdata): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEncodedData(value: String): Self = StObject.set(x, "encodedData", value.asInstanceOf[js.Any])
+    inline def setEncodedData(value: String): Self = StObject.set(x, "encodedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedDataUndefined: Self = StObject.set(x, "encodedData", js.undefined)
+    inline def setEncodedDataUndefined: Self = StObject.set(x, "encodedData", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

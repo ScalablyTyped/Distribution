@@ -15,19 +15,15 @@ trait TypeofEditor_ extends StObject {
 }
 object TypeofEditor_ {
   
-  @scala.inline
-  def apply(extend: js.Object => Editor_, fn: Editor_): TypeofEditor_ = {
+  inline def apply(extend: js.Object => Editor_, fn: Editor_): TypeofEditor_ = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofEditor_]
   }
   
-  @scala.inline
-  implicit class TypeofEditor_MutableBuilder[Self <: TypeofEditor_] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofEditor_](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Editor_): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Editor_): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Editor_): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Editor_): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

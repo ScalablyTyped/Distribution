@@ -19,8 +19,7 @@ trait OverView
 }
 object OverView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     getTileLayer: () => TileLayer,
     hide: () => Unit,
@@ -34,19 +33,14 @@ object OverView {
     __obj.asInstanceOf[OverView]
   }
   
-  @scala.inline
-  implicit class OverViewMutableBuilder[Self <: OverView] (val x: Self) extends AnyVal {
+  extension [Self <: OverView](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTileLayer(value: () => TileLayer): Self = StObject.set(x, "getTileLayer", js.Any.fromFunction0(value))
+    inline def setGetTileLayer(value: () => TileLayer): Self = StObject.set(x, "getTileLayer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTileLayer(value: TileLayer => Unit): Self = StObject.set(x, "setTileLayer", js.Any.fromFunction1(value))
+    inline def setSetTileLayer(value: TileLayer => Unit): Self = StObject.set(x, "setTileLayer", js.Any.fromFunction1(value))
   }
 }

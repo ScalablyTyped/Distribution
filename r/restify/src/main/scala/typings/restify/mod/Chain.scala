@@ -26,8 +26,7 @@ trait Chain extends StObject {
 }
 object Chain {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: RequestHandler => Unit,
     count: () => Double,
     getHandlers: () => js.Array[RequestHandler],
@@ -39,25 +38,18 @@ object Chain {
     __obj.asInstanceOf[Chain]
   }
   
-  @scala.inline
-  implicit class ChainMutableBuilder[Self <: Chain] (val x: Self) extends AnyVal {
+  extension [Self <: Chain](x: Self) {
     
-    @scala.inline
-    def setAdd(value: RequestHandler => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: RequestHandler => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+    inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHandlers(value: () => js.Array[RequestHandler]): Self = StObject.set(x, "getHandlers", js.Any.fromFunction0(value))
+    inline def setGetHandlers(value: () => js.Array[RequestHandler]): Self = StObject.set(x, "getHandlers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
+    inline def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun(value: (Request, Response, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
+    inline def setRun(value: (Request, Response, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])
+    inline def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])
   }
 }

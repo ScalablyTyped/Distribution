@@ -29,31 +29,23 @@ trait SchemaType extends StObject {
 }
 object SchemaType {
   
-  @scala.inline
-  def apply(): SchemaType = {
+  inline def apply(): SchemaType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaType]
   }
   
-  @scala.inline
-  implicit class SchemaTypeMutableBuilder[Self <: SchemaType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaType](x: Self) {
     
-    @scala.inline
-    def setArrayElementType(value: SchemaType): Self = StObject.set(x, "arrayElementType", value.asInstanceOf[js.Any])
+    inline def setArrayElementType(value: SchemaType): Self = StObject.set(x, "arrayElementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayElementTypeUndefined: Self = StObject.set(x, "arrayElementType", js.undefined)
+    inline def setArrayElementTypeUndefined: Self = StObject.set(x, "arrayElementType", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setStructType(value: SchemaStructType): Self = StObject.set(x, "structType", value.asInstanceOf[js.Any])
+    inline def setStructType(value: SchemaStructType): Self = StObject.set(x, "structType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructTypeUndefined: Self = StObject.set(x, "structType", js.undefined)
+    inline def setStructTypeUndefined: Self = StObject.set(x, "structType", js.undefined)
   }
 }

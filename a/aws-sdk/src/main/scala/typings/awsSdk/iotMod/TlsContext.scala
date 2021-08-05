@@ -13,19 +13,15 @@ trait TlsContext extends StObject {
 }
 object TlsContext {
   
-  @scala.inline
-  def apply(): TlsContext = {
+  inline def apply(): TlsContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TlsContext]
   }
   
-  @scala.inline
-  implicit class TlsContextMutableBuilder[Self <: TlsContext] (val x: Self) extends AnyVal {
+  extension [Self <: TlsContext](x: Self) {
     
-    @scala.inline
-    def setServerName(value: ServerName): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: ServerName): Self = StObject.set(x, "serverName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
+    inline def setServerNameUndefined: Self = StObject.set(x, "serverName", js.undefined)
   }
 }

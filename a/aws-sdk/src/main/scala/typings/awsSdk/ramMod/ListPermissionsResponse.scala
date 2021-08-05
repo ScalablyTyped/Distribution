@@ -18,28 +18,21 @@ trait ListPermissionsResponse extends StObject {
 }
 object ListPermissionsResponse {
   
-  @scala.inline
-  def apply(): ListPermissionsResponse = {
+  inline def apply(): ListPermissionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPermissionsResponse]
   }
   
-  @scala.inline
-  implicit class ListPermissionsResponseMutableBuilder[Self <: ListPermissionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPermissionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: ResourceSharePermissionList): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: ResourceSharePermissionList): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: ResourceSharePermissionSummary*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: ResourceSharePermissionSummary*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait RevokeDBSecurityGroupIngressResult extends StObject {
 }
 object RevokeDBSecurityGroupIngressResult {
   
-  @scala.inline
-  def apply(): RevokeDBSecurityGroupIngressResult = {
+  inline def apply(): RevokeDBSecurityGroupIngressResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevokeDBSecurityGroupIngressResult]
   }
   
-  @scala.inline
-  implicit class RevokeDBSecurityGroupIngressResultMutableBuilder[Self <: RevokeDBSecurityGroupIngressResult] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeDBSecurityGroupIngressResult](x: Self) {
     
-    @scala.inline
-    def setDBSecurityGroup(value: DBSecurityGroup): Self = StObject.set(x, "DBSecurityGroup", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroup(value: DBSecurityGroup): Self = StObject.set(x, "DBSecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSecurityGroupUndefined: Self = StObject.set(x, "DBSecurityGroup", js.undefined)
+    inline def setDBSecurityGroupUndefined: Self = StObject.set(x, "DBSecurityGroup", js.undefined)
   }
 }

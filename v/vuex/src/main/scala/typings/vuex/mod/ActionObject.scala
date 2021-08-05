@@ -15,22 +15,17 @@ trait ActionObject[S, R] extends StObject {
 }
 object ActionObject {
   
-  @scala.inline
-  def apply[S, R](handler: ActionHandler[S, R]): ActionObject[S, R] = {
+  inline def apply[S, R](handler: ActionHandler[S, R]): ActionObject[S, R] = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionObject[S, R]]
   }
   
-  @scala.inline
-  implicit class ActionObjectMutableBuilder[Self <: ActionObject[?, ?], S, R] (val x: Self & (ActionObject[S, R])) extends AnyVal {
+  extension [Self <: ActionObject[?, ?], S, R](x: Self & (ActionObject[S, R])) {
     
-    @scala.inline
-    def setHandler(value: ActionHandler[S, R]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: ActionHandler[S, R]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

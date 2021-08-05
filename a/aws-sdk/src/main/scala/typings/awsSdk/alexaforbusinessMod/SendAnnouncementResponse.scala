@@ -13,19 +13,15 @@ trait SendAnnouncementResponse extends StObject {
 }
 object SendAnnouncementResponse {
   
-  @scala.inline
-  def apply(): SendAnnouncementResponse = {
+  inline def apply(): SendAnnouncementResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendAnnouncementResponse]
   }
   
-  @scala.inline
-  implicit class SendAnnouncementResponseMutableBuilder[Self <: SendAnnouncementResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendAnnouncementResponse](x: Self) {
     
-    @scala.inline
-    def setAnnouncementArn(value: Arn): Self = StObject.set(x, "AnnouncementArn", value.asInstanceOf[js.Any])
+    inline def setAnnouncementArn(value: Arn): Self = StObject.set(x, "AnnouncementArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnouncementArnUndefined: Self = StObject.set(x, "AnnouncementArn", js.undefined)
+    inline def setAnnouncementArnUndefined: Self = StObject.set(x, "AnnouncementArn", js.undefined)
   }
 }

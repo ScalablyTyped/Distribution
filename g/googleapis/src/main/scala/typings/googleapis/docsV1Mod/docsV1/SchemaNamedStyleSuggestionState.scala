@@ -30,31 +30,23 @@ trait SchemaNamedStyleSuggestionState extends StObject {
 }
 object SchemaNamedStyleSuggestionState {
   
-  @scala.inline
-  def apply(): SchemaNamedStyleSuggestionState = {
+  inline def apply(): SchemaNamedStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNamedStyleSuggestionState]
   }
   
-  @scala.inline
-  implicit class SchemaNamedStyleSuggestionStateMutableBuilder[Self <: SchemaNamedStyleSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNamedStyleSuggestionState](x: Self) {
     
-    @scala.inline
-    def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
+    inline def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
+    inline def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
     
-    @scala.inline
-    def setParagraphStyleSuggestionState(value: SchemaParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
+    inline def setParagraphStyleSuggestionState(value: SchemaParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
+    inline def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
     
-    @scala.inline
-    def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
+    inline def setTextStyleSuggestionState(value: SchemaTextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
+    inline def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
   }
 }

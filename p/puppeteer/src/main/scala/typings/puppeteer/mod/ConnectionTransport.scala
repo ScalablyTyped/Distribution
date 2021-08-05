@@ -16,31 +16,23 @@ trait ConnectionTransport extends StObject {
 }
 object ConnectionTransport {
   
-  @scala.inline
-  def apply(close: () => Unit, send: String => Unit): ConnectionTransport = {
+  inline def apply(close: () => Unit, send: String => Unit): ConnectionTransport = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), send = js.Any.fromFunction1(send))
     __obj.asInstanceOf[ConnectionTransport]
   }
   
-  @scala.inline
-  implicit class ConnectionTransportMutableBuilder[Self <: ConnectionTransport] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionTransport](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
+    inline def setOnclose(value: () => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
+    inline def setOncloseUndefined: Self = StObject.set(x, "onclose", js.undefined)
     
-    @scala.inline
-    def setOnmessage(value: /* message */ String => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
+    inline def setOnmessage(value: /* message */ String => Unit): Self = StObject.set(x, "onmessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)
+    inline def setOnmessageUndefined: Self = StObject.set(x, "onmessage", js.undefined)
     
-    @scala.inline
-    def setSend(value: String => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+    inline def setSend(value: String => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }
 }

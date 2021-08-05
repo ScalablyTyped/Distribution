@@ -8,11 +8,9 @@ object materialUiDatatablesStrings {
   
   @js.native
   sealed trait default extends StObject
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait filter extends StObject
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
+  inline def filter: filter = "filter".asInstanceOf[filter]
 }

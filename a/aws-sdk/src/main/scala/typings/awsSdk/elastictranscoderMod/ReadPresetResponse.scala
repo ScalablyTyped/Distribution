@@ -13,19 +13,15 @@ trait ReadPresetResponse extends StObject {
 }
 object ReadPresetResponse {
   
-  @scala.inline
-  def apply(): ReadPresetResponse = {
+  inline def apply(): ReadPresetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadPresetResponse]
   }
   
-  @scala.inline
-  implicit class ReadPresetResponseMutableBuilder[Self <: ReadPresetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReadPresetResponse](x: Self) {
     
-    @scala.inline
-    def setPreset(value: Preset): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
+    inline def setPreset(value: Preset): Self = StObject.set(x, "Preset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
+    inline def setPresetUndefined: Self = StObject.set(x, "Preset", js.undefined)
   }
 }

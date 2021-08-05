@@ -36,20 +36,16 @@ object mod {
   }
   object Cryptr {
     
-    @scala.inline
-    def apply(decrypt: String => String, encrypt: String => String): Cryptr = {
+    inline def apply(decrypt: String => String, encrypt: String => String): Cryptr = {
       val __obj = js.Dynamic.literal(decrypt = js.Any.fromFunction1(decrypt), encrypt = js.Any.fromFunction1(encrypt))
       __obj.asInstanceOf[Cryptr]
     }
     
-    @scala.inline
-    implicit class CryptrMutableBuilder[Self <: Cryptr] (val x: Self) extends AnyVal {
+    extension [Self <: Cryptr](x: Self) {
       
-      @scala.inline
-      def setDecrypt(value: String => String): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
+      inline def setDecrypt(value: String => String): Self = StObject.set(x, "decrypt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncrypt(value: String => String): Self = StObject.set(x, "encrypt", js.Any.fromFunction1(value))
+      inline def setEncrypt(value: String => String): Self = StObject.set(x, "encrypt", js.Any.fromFunction1(value))
     }
   }
 }

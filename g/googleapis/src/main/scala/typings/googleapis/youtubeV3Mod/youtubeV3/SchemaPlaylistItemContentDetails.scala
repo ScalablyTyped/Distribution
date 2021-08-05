@@ -43,43 +43,31 @@ trait SchemaPlaylistItemContentDetails extends StObject {
 }
 object SchemaPlaylistItemContentDetails {
   
-  @scala.inline
-  def apply(): SchemaPlaylistItemContentDetails = {
+  inline def apply(): SchemaPlaylistItemContentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlaylistItemContentDetails]
   }
   
-  @scala.inline
-  implicit class SchemaPlaylistItemContentDetailsMutableBuilder[Self <: SchemaPlaylistItemContentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlaylistItemContentDetails](x: Self) {
     
-    @scala.inline
-    def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
+    inline def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAtUndefined: Self = StObject.set(x, "endAt", js.undefined)
+    inline def setEndAtUndefined: Self = StObject.set(x, "endAt", js.undefined)
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
-    @scala.inline
-    def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+    inline def setStartAt(value: String): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
+    inline def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
     
-    @scala.inline
-    def setVideoPublishedAt(value: String): Self = StObject.set(x, "videoPublishedAt", value.asInstanceOf[js.Any])
+    inline def setVideoPublishedAt(value: String): Self = StObject.set(x, "videoPublishedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoPublishedAtUndefined: Self = StObject.set(x, "videoPublishedAt", js.undefined)
+    inline def setVideoPublishedAtUndefined: Self = StObject.set(x, "videoPublishedAt", js.undefined)
   }
 }

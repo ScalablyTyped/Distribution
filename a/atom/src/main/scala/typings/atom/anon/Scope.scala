@@ -10,19 +10,15 @@ trait Scope extends StObject {
 }
 object Scope {
   
-  @scala.inline
-  def apply(scope: js.Array[String] | typings.atom.mod.ScopeDescriptor): Scope = {
+  inline def apply(scope: js.Array[String] | typings.atom.mod.ScopeDescriptor): Scope = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
   
-  @scala.inline
-  implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+  extension [Self <: Scope](x: Self) {
     
-    @scala.inline
-    def setScope(value: js.Array[String] | typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Array[String] | typings.atom.mod.ScopeDescriptor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value :_*))
   }
 }

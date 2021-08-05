@@ -15,16 +15,13 @@ trait ActivatedOperation extends StObject {
 }
 object ActivatedOperation {
   
-  @scala.inline
-  def apply(getDeferral: () => ActivatedDeferral): ActivatedOperation = {
+  inline def apply(getDeferral: () => ActivatedDeferral): ActivatedOperation = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[ActivatedOperation]
   }
   
-  @scala.inline
-  implicit class ActivatedOperationMutableBuilder[Self <: ActivatedOperation] (val x: Self) extends AnyVal {
+  extension [Self <: ActivatedOperation](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => ActivatedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => ActivatedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

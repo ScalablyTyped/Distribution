@@ -18,31 +18,23 @@ trait GetObjectViewParams extends StObject {
 }
 object GetObjectViewParams {
   
-  @scala.inline
-  def apply(): GetObjectViewParams = {
+  inline def apply(): GetObjectViewParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetObjectViewParams]
   }
   
-  @scala.inline
-  implicit class GetObjectViewParamsMutableBuilder[Self <: GetObjectViewParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectViewParams](x: Self) {
     
-    @scala.inline
-    def setEndkey(value: String): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
+    inline def setEndkey(value: String): Self = StObject.set(x, "endkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndkeyUndefined: Self = StObject.set(x, "endkey", js.undefined)
+    inline def setEndkeyUndefined: Self = StObject.set(x, "endkey", js.undefined)
     
-    @scala.inline
-    def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
+    inline def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
+    inline def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
     
-    @scala.inline
-    def setStartkey(value: String): Self = StObject.set(x, "startkey", value.asInstanceOf[js.Any])
+    inline def setStartkey(value: String): Self = StObject.set(x, "startkey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartkeyUndefined: Self = StObject.set(x, "startkey", js.undefined)
+    inline def setStartkeyUndefined: Self = StObject.set(x, "startkey", js.undefined)
   }
 }

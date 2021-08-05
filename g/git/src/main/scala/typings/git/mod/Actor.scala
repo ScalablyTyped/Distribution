@@ -20,6 +20,5 @@ object Actor {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def from_string(str: String): Actor = ^.asInstanceOf[js.Dynamic].applyDynamic("from_string")(str.asInstanceOf[js.Any]).asInstanceOf[Actor]
+  inline def from_string(str: String): Actor = ^.asInstanceOf[js.Dynamic].applyDynamic("from_string")(str.asInstanceOf[js.Any]).asInstanceOf[Actor]
 }

@@ -20,49 +20,35 @@ trait ExtraState extends StObject {
 }
 object ExtraState {
   
-  @scala.inline
-  def apply(): ExtraState = {
+  inline def apply(): ExtraState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtraState]
   }
   
-  @scala.inline
-  implicit class ExtraStateMutableBuilder[Self <: ExtraState] (val x: Self) extends AnyVal {
+  extension [Self <: ExtraState](x: Self) {
     
-    @scala.inline
-    def setInTransition(value: Boolean): Self = StObject.set(x, "inTransition", value.asInstanceOf[js.Any])
+    inline def setInTransition(value: Boolean): Self = StObject.set(x, "inTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInTransitionUndefined: Self = StObject.set(x, "inTransition", js.undefined)
+    inline def setInTransitionUndefined: Self = StObject.set(x, "inTransition", js.undefined)
     
-    @scala.inline
-    def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+    inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDraggingUndefined: Self = StObject.set(x, "isDragging", js.undefined)
+    inline def setIsDraggingUndefined: Self = StObject.set(x, "isDragging", js.undefined)
     
-    @scala.inline
-    def setIsHovering(value: Boolean): Self = StObject.set(x, "isHovering", value.asInstanceOf[js.Any])
+    inline def setIsHovering(value: Boolean): Self = StObject.set(x, "isHovering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHoveringUndefined: Self = StObject.set(x, "isHovering", js.undefined)
+    inline def setIsHoveringUndefined: Self = StObject.set(x, "isHovering", js.undefined)
     
-    @scala.inline
-    def setIsPanning(value: Boolean): Self = StObject.set(x, "isPanning", value.asInstanceOf[js.Any])
+    inline def setIsPanning(value: Boolean): Self = StObject.set(x, "isPanning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPanningUndefined: Self = StObject.set(x, "isPanning", js.undefined)
+    inline def setIsPanningUndefined: Self = StObject.set(x, "isPanning", js.undefined)
     
-    @scala.inline
-    def setIsRotating(value: Boolean): Self = StObject.set(x, "isRotating", value.asInstanceOf[js.Any])
+    inline def setIsRotating(value: Boolean): Self = StObject.set(x, "isRotating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRotatingUndefined: Self = StObject.set(x, "isRotating", js.undefined)
+    inline def setIsRotatingUndefined: Self = StObject.set(x, "isRotating", js.undefined)
     
-    @scala.inline
-    def setIsZooming(value: Boolean): Self = StObject.set(x, "isZooming", value.asInstanceOf[js.Any])
+    inline def setIsZooming(value: Boolean): Self = StObject.set(x, "isZooming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsZoomingUndefined: Self = StObject.set(x, "isZooming", js.undefined)
+    inline def setIsZoomingUndefined: Self = StObject.set(x, "isZooming", js.undefined)
   }
 }

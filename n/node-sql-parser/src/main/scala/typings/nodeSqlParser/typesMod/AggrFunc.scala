@@ -15,26 +15,20 @@ trait AggrFunc extends StObject {
 }
 object AggrFunc {
   
-  @scala.inline
-  def apply(name: String): AggrFunc = {
+  inline def apply(name: String): AggrFunc = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], args = null)
     __obj.updateDynamic("type")("aggr_func")
     __obj.asInstanceOf[AggrFunc]
   }
   
-  @scala.inline
-  implicit class AggrFuncMutableBuilder[Self <: AggrFunc] (val x: Self) extends AnyVal {
+  extension [Self <: AggrFunc](x: Self) {
     
-    @scala.inline
-    def setArgs(value: ColumnRef | AggrFunc | Star): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: ColumnRef | AggrFunc | Star): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsNull: Self = StObject.set(x, "args", null)
+    inline def setArgsNull: Self = StObject.set(x, "args", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: aggr_func): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: aggr_func): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

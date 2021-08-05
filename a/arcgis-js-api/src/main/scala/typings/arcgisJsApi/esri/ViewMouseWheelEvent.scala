@@ -23,8 +23,7 @@ trait ViewMouseWheelEvent extends StObject {
 }
 object ViewMouseWheelEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deltaY: Double,
     native: js.Any,
     stopPropagation: js.Function,
@@ -37,28 +36,20 @@ object ViewMouseWheelEvent {
     __obj.asInstanceOf[ViewMouseWheelEvent]
   }
   
-  @scala.inline
-  implicit class ViewMouseWheelEventMutableBuilder[Self <: ViewMouseWheelEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ViewMouseWheelEvent](x: Self) {
     
-    @scala.inline
-    def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+    inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    inline def setNative(value: js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: js.Function): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `mouse-wheel`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `mouse-wheel`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

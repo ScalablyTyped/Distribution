@@ -37,22 +37,17 @@ trait InterShardMemory extends StObject {
 }
 object InterShardMemory {
   
-  @scala.inline
-  def apply(getLocal: () => String, getRemote: String => String | Null, setLocal: String => Unit): InterShardMemory = {
+  inline def apply(getLocal: () => String, getRemote: String => String | Null, setLocal: String => Unit): InterShardMemory = {
     val __obj = js.Dynamic.literal(getLocal = js.Any.fromFunction0(getLocal), getRemote = js.Any.fromFunction1(getRemote), setLocal = js.Any.fromFunction1(setLocal))
     __obj.asInstanceOf[InterShardMemory]
   }
   
-  @scala.inline
-  implicit class InterShardMemoryMutableBuilder[Self <: InterShardMemory] (val x: Self) extends AnyVal {
+  extension [Self <: InterShardMemory](x: Self) {
     
-    @scala.inline
-    def setGetLocal(value: () => String): Self = StObject.set(x, "getLocal", js.Any.fromFunction0(value))
+    inline def setGetLocal(value: () => String): Self = StObject.set(x, "getLocal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRemote(value: String => String | Null): Self = StObject.set(x, "getRemote", js.Any.fromFunction1(value))
+    inline def setGetRemote(value: String => String | Null): Self = StObject.set(x, "getRemote", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLocal(value: String => Unit): Self = StObject.set(x, "setLocal", js.Any.fromFunction1(value))
+    inline def setSetLocal(value: String => Unit): Self = StObject.set(x, "setLocal", js.Any.fromFunction1(value))
   }
 }

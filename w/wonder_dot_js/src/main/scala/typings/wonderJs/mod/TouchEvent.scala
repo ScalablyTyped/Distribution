@@ -18,6 +18,5 @@ object TouchEvent {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(event: ITouchEventData, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.touchEventMod.TouchEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.touchEventMod.TouchEvent]
+  inline def create(event: ITouchEventData, eventName: typings.wonderJs.eventNameHandlerMod.EEventName): typings.wonderJs.touchEventMod.TouchEvent = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(event.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.touchEventMod.TouchEvent]
 }

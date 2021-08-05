@@ -25,19 +25,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any
     ): `0` = {
       val __obj = js.Dynamic.literal(defaultProps = defaultProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setDefaultProps(value: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+      inline def setDefaultProps(value: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,20 +44,16 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(): `1` = {
+    inline def apply(): `1` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setRef(value: Exclude[js.Any, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Exclude[js.Any, String]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
@@ -70,20 +63,16 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(): Children = {
+    inline def apply(): Children = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -93,17 +82,14 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply[T /* <: ComponentType[js.Any] */](default: T): Default[T] = {
+    inline def apply[T /* <: ComponentType[js.Any] */](default: T): Default[T] = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default[T]]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default[?], T /* <: ComponentType[js.Any] */] (val x: Self & Default[T]) extends AnyVal {
+    extension [Self <: Default[?], T /* <: ComponentType[js.Any] */](x: Self & Default[T]) {
       
-      @scala.inline
-      def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
   
@@ -115,8 +101,7 @@ object anon {
   }
   object DefaultProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultProps: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any,
       propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
     ): DefaultProps = {
@@ -124,14 +109,11 @@ object anon {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    @scala.inline
-    implicit class DefaultPropsMutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultProps](x: Self) {
       
-      @scala.inline
-      def setDefaultProps(value: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
+      inline def setDefaultProps(value: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropTypes(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+      inline def setPropTypes(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,17 +169,14 @@ object anon {
   }
   object Html {
     
-    @scala.inline
-    def apply(__html: String): Html = {
+    inline def apply(__html: String): Html = {
       val __obj = js.Dynamic.literal(__html = __html.asInstanceOf[js.Any])
       __obj.asInstanceOf[Html]
     }
     
-    @scala.inline
-    implicit class HtmlMutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
+    extension [Self <: Html](x: Self) {
       
-      @scala.inline
-      def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
+      inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,17 +191,14 @@ object anon {
   }
   object PropTypes {
     
-    @scala.inline
-    def apply(propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): PropTypes = {
+    inline def apply(propTypes: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): PropTypes = {
       val __obj = js.Dynamic.literal(propTypes = propTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropTypes]
     }
     
-    @scala.inline
-    implicit class PropTypesMutableBuilder[Self <: PropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: PropTypes](x: Self) {
       
-      @scala.inline
-      def setPropTypes(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
+      inline def setPropTypes(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "propTypes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,20 +210,16 @@ object anon {
   }
   object Ref {
     
-    @scala.inline
-    def apply(): Ref = {
+    inline def apply(): Ref = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ref]
     }
     
-    @scala.inline
-    implicit class RefMutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
+    extension [Self <: Ref](x: Self) {
       
-      @scala.inline
-      def setRef(value: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: /* import warning: importer.ImportType#apply Failed type conversion: infer R */ js.Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
 }

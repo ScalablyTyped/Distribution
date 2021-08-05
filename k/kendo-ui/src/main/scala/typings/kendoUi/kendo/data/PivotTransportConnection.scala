@@ -12,25 +12,19 @@ trait PivotTransportConnection extends StObject {
 }
 object PivotTransportConnection {
   
-  @scala.inline
-  def apply(): PivotTransportConnection = {
+  inline def apply(): PivotTransportConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotTransportConnection]
   }
   
-  @scala.inline
-  implicit class PivotTransportConnectionMutableBuilder[Self <: PivotTransportConnection] (val x: Self) extends AnyVal {
+  extension [Self <: PivotTransportConnection](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
+    inline def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
     
-    @scala.inline
-    def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    inline def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
   }
 }

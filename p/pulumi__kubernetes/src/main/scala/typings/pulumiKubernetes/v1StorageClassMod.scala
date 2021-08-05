@@ -95,17 +95,14 @@ object v1StorageClassMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): StorageClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StorageClass]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): StorageClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StorageClass]
+    inline def get(name: String, id: Input[ID]): StorageClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StorageClass]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): StorageClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StorageClass]
     
     /**
       * Returns true if the given object is an instance of StorageClass.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/storageClass.StorageClass */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/storageClass.StorageClass */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/storageClass.StorageClass */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/storageClass.StorageClass */ Boolean]
   }
   
   trait StorageClassArgs extends StObject {
@@ -164,77 +161,54 @@ object v1StorageClassMod {
   }
   object StorageClassArgs {
     
-    @scala.inline
-    def apply(provisioner: Input[String]): StorageClassArgs = {
+    inline def apply(provisioner: Input[String]): StorageClassArgs = {
       val __obj = js.Dynamic.literal(provisioner = provisioner.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageClassArgs]
     }
     
-    @scala.inline
-    implicit class StorageClassArgsMutableBuilder[Self <: StorageClassArgs] (val x: Self) extends AnyVal {
+    extension [Self <: StorageClassArgs](x: Self) {
       
-      @scala.inline
-      def setAllowVolumeExpansion(value: Input[Boolean]): Self = StObject.set(x, "allowVolumeExpansion", value.asInstanceOf[js.Any])
+      inline def setAllowVolumeExpansion(value: Input[Boolean]): Self = StObject.set(x, "allowVolumeExpansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowVolumeExpansionUndefined: Self = StObject.set(x, "allowVolumeExpansion", js.undefined)
+      inline def setAllowVolumeExpansionUndefined: Self = StObject.set(x, "allowVolumeExpansion", js.undefined)
       
-      @scala.inline
-      def setAllowedTopologies(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.TopologySelectorTerm]]]): Self = StObject.set(x, "allowedTopologies", value.asInstanceOf[js.Any])
+      inline def setAllowedTopologies(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.TopologySelectorTerm]]]): Self = StObject.set(x, "allowedTopologies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedTopologiesUndefined: Self = StObject.set(x, "allowedTopologies", js.undefined)
+      inline def setAllowedTopologiesUndefined: Self = StObject.set(x, "allowedTopologies", js.undefined)
       
-      @scala.inline
-      def setAllowedTopologiesVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.TopologySelectorTerm]*): Self = StObject.set(x, "allowedTopologies", js.Array(value :_*))
+      inline def setAllowedTopologiesVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.TopologySelectorTerm]*): Self = StObject.set(x, "allowedTopologies", js.Array(value :_*))
       
-      @scala.inline
-      def setApiVersion(value: Input[storageDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[storageDotk8sDotioSlashv1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.StorageClass]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.StorageClass]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setMountOptions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
+      inline def setMountOptions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "mountOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
+      inline def setMountOptionsUndefined: Self = StObject.set(x, "mountOptions", js.undefined)
       
-      @scala.inline
-      def setMountOptionsVarargs(value: Input[String]*): Self = StObject.set(x, "mountOptions", js.Array(value :_*))
+      inline def setMountOptionsVarargs(value: Input[String]*): Self = StObject.set(x, "mountOptions", js.Array(value :_*))
       
-      @scala.inline
-      def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setProvisioner(value: Input[String]): Self = StObject.set(x, "provisioner", value.asInstanceOf[js.Any])
+      inline def setProvisioner(value: Input[String]): Self = StObject.set(x, "provisioner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReclaimPolicy(value: Input[String]): Self = StObject.set(x, "reclaimPolicy", value.asInstanceOf[js.Any])
+      inline def setReclaimPolicy(value: Input[String]): Self = StObject.set(x, "reclaimPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReclaimPolicyUndefined: Self = StObject.set(x, "reclaimPolicy", js.undefined)
+      inline def setReclaimPolicyUndefined: Self = StObject.set(x, "reclaimPolicy", js.undefined)
       
-      @scala.inline
-      def setVolumeBindingMode(value: Input[String]): Self = StObject.set(x, "volumeBindingMode", value.asInstanceOf[js.Any])
+      inline def setVolumeBindingMode(value: Input[String]): Self = StObject.set(x, "volumeBindingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeBindingModeUndefined: Self = StObject.set(x, "volumeBindingMode", js.undefined)
+      inline def setVolumeBindingModeUndefined: Self = StObject.set(x, "volumeBindingMode", js.undefined)
     }
   }
 }

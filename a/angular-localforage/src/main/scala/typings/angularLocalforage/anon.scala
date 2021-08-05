@@ -18,35 +18,26 @@ object anon {
   }
   object DefaultValue {
     
-    @scala.inline
-    def apply(key: String): DefaultValue = {
+    inline def apply(key: String): DefaultValue = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultValue]
     }
     
-    @scala.inline
-    implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultValue](x: Self) {
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setScopeKey(value: String): Self = StObject.set(x, "scopeKey", value.asInstanceOf[js.Any])
+      inline def setScopeKey(value: String): Self = StObject.set(x, "scopeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeKeyUndefined: Self = StObject.set(x, "scopeKey", js.undefined)
+      inline def setScopeKeyUndefined: Self = StObject.set(x, "scopeKey", js.undefined)
     }
   }
 }

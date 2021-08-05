@@ -18,25 +18,19 @@ trait NetworkAccessConfiguration extends StObject {
 }
 object NetworkAccessConfiguration {
   
-  @scala.inline
-  def apply(): NetworkAccessConfiguration = {
+  inline def apply(): NetworkAccessConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkAccessConfiguration]
   }
   
-  @scala.inline
-  implicit class NetworkAccessConfigurationMutableBuilder[Self <: NetworkAccessConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkAccessConfiguration](x: Self) {
     
-    @scala.inline
-    def setEniId(value: String): Self = StObject.set(x, "EniId", value.asInstanceOf[js.Any])
+    inline def setEniId(value: String): Self = StObject.set(x, "EniId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEniIdUndefined: Self = StObject.set(x, "EniId", js.undefined)
+    inline def setEniIdUndefined: Self = StObject.set(x, "EniId", js.undefined)
     
-    @scala.inline
-    def setEniPrivateIpAddress(value: String): Self = StObject.set(x, "EniPrivateIpAddress", value.asInstanceOf[js.Any])
+    inline def setEniPrivateIpAddress(value: String): Self = StObject.set(x, "EniPrivateIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEniPrivateIpAddressUndefined: Self = StObject.set(x, "EniPrivateIpAddress", js.undefined)
+    inline def setEniPrivateIpAddressUndefined: Self = StObject.set(x, "EniPrivateIpAddress", js.undefined)
   }
 }

@@ -21,13 +21,11 @@ object SelectionType {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SelectionType.SelectAll")
   @js.native
   def SelectAll: typings.mendixmodelsdk.pagesMod.pages.SelectionType = js.native
-  @scala.inline
-  def SelectAll_=(x: typings.mendixmodelsdk.pagesMod.pages.SelectionType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectAll")(x.asInstanceOf[js.Any])
+  inline def SelectAll_=(x: typings.mendixmodelsdk.pagesMod.pages.SelectionType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectAll")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.SelectionType.SelectPage")
   @js.native
   def SelectPage: typings.mendixmodelsdk.pagesMod.pages.SelectionType = js.native
-  @scala.inline
-  def SelectPage_=(x: typings.mendixmodelsdk.pagesMod.pages.SelectionType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectPage")(x.asInstanceOf[js.Any])
+  inline def SelectPage_=(x: typings.mendixmodelsdk.pagesMod.pages.SelectionType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SelectPage")(x.asInstanceOf[js.Any])
 }

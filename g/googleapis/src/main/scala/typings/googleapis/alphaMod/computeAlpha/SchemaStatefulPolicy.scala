@@ -12,25 +12,19 @@ trait SchemaStatefulPolicy extends StObject {
 }
 object SchemaStatefulPolicy {
   
-  @scala.inline
-  def apply(): SchemaStatefulPolicy = {
+  inline def apply(): SchemaStatefulPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStatefulPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaStatefulPolicyMutableBuilder[Self <: SchemaStatefulPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStatefulPolicy](x: Self) {
     
-    @scala.inline
-    def setPreservedResources(value: SchemaStatefulPolicyPreservedResources): Self = StObject.set(x, "preservedResources", value.asInstanceOf[js.Any])
+    inline def setPreservedResources(value: SchemaStatefulPolicyPreservedResources): Self = StObject.set(x, "preservedResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreservedResourcesUndefined: Self = StObject.set(x, "preservedResources", js.undefined)
+    inline def setPreservedResourcesUndefined: Self = StObject.set(x, "preservedResources", js.undefined)
     
-    @scala.inline
-    def setPreservedState(value: SchemaStatefulPolicyPreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
+    inline def setPreservedState(value: SchemaStatefulPolicyPreservedState): Self = StObject.set(x, "preservedState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreservedStateUndefined: Self = StObject.set(x, "preservedState", js.undefined)
+    inline def setPreservedStateUndefined: Self = StObject.set(x, "preservedState", js.undefined)
   }
 }

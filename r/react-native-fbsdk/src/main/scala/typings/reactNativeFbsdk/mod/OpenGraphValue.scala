@@ -12,20 +12,16 @@ trait OpenGraphValue extends StObject {
 }
 object OpenGraphValue {
   
-  @scala.inline
-  def apply(`type`: OpenGraphValueType, value: js.Any): OpenGraphValue = {
+  inline def apply(`type`: OpenGraphValueType, value: js.Any): OpenGraphValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenGraphValue]
   }
   
-  @scala.inline
-  implicit class OpenGraphValueMutableBuilder[Self <: OpenGraphValue] (val x: Self) extends AnyVal {
+  extension [Self <: OpenGraphValue](x: Self) {
     
-    @scala.inline
-    def setType(value: OpenGraphValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OpenGraphValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

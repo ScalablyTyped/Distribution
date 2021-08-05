@@ -18,19 +18,15 @@ trait VirtualGatewaySpecListenerTlsCertificateFile extends StObject {
 }
 object VirtualGatewaySpecListenerTlsCertificateFile {
   
-  @scala.inline
-  def apply(certificateChain: String, privateKey: String): VirtualGatewaySpecListenerTlsCertificateFile = {
+  inline def apply(certificateChain: String, privateKey: String): VirtualGatewaySpecListenerTlsCertificateFile = {
     val __obj = js.Dynamic.literal(certificateChain = certificateChain.asInstanceOf[js.Any], privateKey = privateKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewaySpecListenerTlsCertificateFile]
   }
   
-  @scala.inline
-  implicit class VirtualGatewaySpecListenerTlsCertificateFileMutableBuilder[Self <: VirtualGatewaySpecListenerTlsCertificateFile] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewaySpecListenerTlsCertificateFile](x: Self) {
     
-    @scala.inline
-    def setCertificateChain(value: String): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
+    inline def setCertificateChain(value: String): Self = StObject.set(x, "certificateChain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+    inline def setPrivateKey(value: String): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DataAccessPage extends StObject {
   
-  @JSName("Access.DataAccessPage_typekey")
+  /* private */ @JSName("Access.DataAccessPage_typekey")
   var AccessDotDataAccessPage_typekey: DataAccessPage
   
   val Application: typings.activexAccess.Access.Application
@@ -50,8 +50,7 @@ trait DataAccessPage extends StObject {
 }
 object DataAccessPage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDotDataAccessPage_typekey: DataAccessPage,
     Application: Application,
     ApplyTheme: String => Unit,
@@ -78,67 +77,46 @@ object DataAccessPage {
     __obj.asInstanceOf[DataAccessPage]
   }
   
-  @scala.inline
-  implicit class DataAccessPageMutableBuilder[Self <: DataAccessPage] (val x: Self) extends AnyVal {
+  extension [Self <: DataAccessPage](x: Self) {
     
-    @scala.inline
-    def setAccessDotDataAccessPage_typekey(value: DataAccessPage): Self = StObject.set(x, "Access.DataAccessPage_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDotDataAccessPage_typekey(value: DataAccessPage): Self = StObject.set(x, "Access.DataAccessPage_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplyTheme(value: String => Unit): Self = StObject.set(x, "ApplyTheme", js.Any.fromFunction1(value))
+    inline def setApplyTheme(value: String => Unit): Self = StObject.set(x, "ApplyTheme", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConnectionString(value: String): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
+    inline def setConnectionString(value: String): Self = StObject.set(x, "ConnectionString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSelection(value: js.Any): Self = StObject.set(x, "CurrentSelection", value.asInstanceOf[js.Any])
+    inline def setCurrentSelection(value: js.Any): Self = StObject.set(x, "CurrentSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentView(value: Double): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
+    inline def setCurrentView(value: Double): Self = StObject.set(x, "CurrentView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument(value: js.Any): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: js.Any): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldListConnection(value: js.Any): Self = StObject.set(x, "FieldListConnection", value.asInstanceOf[js.Any])
+    inline def setFieldListConnection(value: js.Any): Self = StObject.set(x, "FieldListConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMSODSC(value: js.Any): Self = StObject.set(x, "MSODSC", value.asInstanceOf[js.Any])
+    inline def setMSODSC(value: js.Any): Self = StObject.set(x, "MSODSC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailEnvelope(value: MsoEnvelope): Self = StObject.set(x, "MailEnvelope", value.asInstanceOf[js.Any])
+    inline def setMailEnvelope(value: MsoEnvelope): Self = StObject.set(x, "MailEnvelope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovePersonalInformation(value: Boolean): Self = StObject.set(x, "RemovePersonalInformation", value.asInstanceOf[js.Any])
+    inline def setRemovePersonalInformation(value: Boolean): Self = StObject.set(x, "RemovePersonalInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebOptions(value: WebOptions): Self = StObject.set(x, "WebOptions", value.asInstanceOf[js.Any])
+    inline def setWebOptions(value: WebOptions): Self = StObject.set(x, "WebOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowHeight(value: Double): Self = StObject.set(x, "WindowHeight", value.asInstanceOf[js.Any])
+    inline def setWindowHeight(value: Double): Self = StObject.set(x, "WindowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowWidth(value: Double): Self = StObject.set(x, "WindowWidth", value.asInstanceOf[js.Any])
+    inline def setWindowWidth(value: Double): Self = StObject.set(x, "WindowWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Name(value: String): Self = StObject.set(x, "_Name", value.asInstanceOf[js.Any])
+    inline def set_Name(value: String): Self = StObject.set(x, "_Name", value.asInstanceOf[js.Any])
   }
 }

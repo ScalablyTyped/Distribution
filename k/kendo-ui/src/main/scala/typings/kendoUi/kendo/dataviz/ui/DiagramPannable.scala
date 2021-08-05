@@ -10,19 +10,15 @@ trait DiagramPannable extends StObject {
 }
 object DiagramPannable {
   
-  @scala.inline
-  def apply(): DiagramPannable = {
+  inline def apply(): DiagramPannable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramPannable]
   }
   
-  @scala.inline
-  implicit class DiagramPannableMutableBuilder[Self <: DiagramPannable] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramPannable](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

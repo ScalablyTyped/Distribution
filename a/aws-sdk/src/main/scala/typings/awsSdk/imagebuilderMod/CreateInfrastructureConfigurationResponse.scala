@@ -23,31 +23,23 @@ trait CreateInfrastructureConfigurationResponse extends StObject {
 }
 object CreateInfrastructureConfigurationResponse {
   
-  @scala.inline
-  def apply(): CreateInfrastructureConfigurationResponse = {
+  inline def apply(): CreateInfrastructureConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateInfrastructureConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class CreateInfrastructureConfigurationResponseMutableBuilder[Self <: CreateInfrastructureConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInfrastructureConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setInfrastructureConfigurationArn(value: InfrastructureConfigurationArn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setInfrastructureConfigurationArn(value: InfrastructureConfigurationArn): Self = StObject.set(x, "infrastructureConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfrastructureConfigurationArnUndefined: Self = StObject.set(x, "infrastructureConfigurationArn", js.undefined)
+    inline def setInfrastructureConfigurationArnUndefined: Self = StObject.set(x, "infrastructureConfigurationArn", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: NonEmptyString): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

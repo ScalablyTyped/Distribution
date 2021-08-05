@@ -20,49 +20,35 @@ trait MUIDataTableFilter extends StObject {
 }
 object MUIDataTableFilter {
   
-  @scala.inline
-  def apply(filterData: js.Array[js.Any], options: MUIDataTableOptions): MUIDataTableFilter = {
+  inline def apply(filterData: js.Array[js.Any], options: MUIDataTableOptions): MUIDataTableFilter = {
     val __obj = js.Dynamic.literal(filterData = filterData.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableFilter]
   }
   
-  @scala.inline
-  implicit class MUIDataTableFilterMutableBuilder[Self <: MUIDataTableFilter] (val x: Self) extends AnyVal {
+  extension [Self <: MUIDataTableFilter](x: Self) {
     
-    @scala.inline
-    def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setFilterData(value: js.Array[js.Any]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
+    inline def setFilterData(value: js.Array[js.Any]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterDataVarargs(value: js.Any*): Self = StObject.set(x, "filterData", js.Array(value :_*))
+    inline def setFilterDataVarargs(value: js.Any*): Self = StObject.set(x, "filterData", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
+    inline def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
+    inline def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
     
-    @scala.inline
-    def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
+    inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
     
-    @scala.inline
-    def setOnFilterReset(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onFilterReset", js.Any.fromFunction1(value))
+    inline def setOnFilterReset(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onFilterReset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFilterResetUndefined: Self = StObject.set(x, "onFilterReset", js.undefined)
+    inline def setOnFilterResetUndefined: Self = StObject.set(x, "onFilterReset", js.undefined)
     
-    @scala.inline
-    def setOnFilterUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onFilterUpdate", js.Any.fromFunction1(value))
+    inline def setOnFilterUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "onFilterUpdate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFilterUpdateUndefined: Self = StObject.set(x, "onFilterUpdate", js.undefined)
+    inline def setOnFilterUpdateUndefined: Self = StObject.set(x, "onFilterUpdate", js.undefined)
     
-    @scala.inline
-    def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

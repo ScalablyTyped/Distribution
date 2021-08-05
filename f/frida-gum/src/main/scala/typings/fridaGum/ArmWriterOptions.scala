@@ -17,19 +17,15 @@ trait ArmWriterOptions extends StObject {
 }
 object ArmWriterOptions {
   
-  @scala.inline
-  def apply(): ArmWriterOptions = {
+  inline def apply(): ArmWriterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArmWriterOptions]
   }
   
-  @scala.inline
-  implicit class ArmWriterOptionsMutableBuilder[Self <: ArmWriterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ArmWriterOptions](x: Self) {
     
-    @scala.inline
-    def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+    inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+    inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
   }
 }

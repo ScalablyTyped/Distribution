@@ -11,10 +11,8 @@ object getDelegationSetMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDelegationSet(args: GetDelegationSetArgs): js.Promise[GetDelegationSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDelegationSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDelegationSetResult]]
-  @scala.inline
-  def getDelegationSet(args: GetDelegationSetArgs, opts: InvokeOptions): js.Promise[GetDelegationSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDelegationSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDelegationSetResult]]
+  inline def getDelegationSet(args: GetDelegationSetArgs): js.Promise[GetDelegationSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDelegationSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDelegationSetResult]]
+  inline def getDelegationSet(args: GetDelegationSetArgs, opts: InvokeOptions): js.Promise[GetDelegationSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDelegationSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDelegationSetResult]]
   
   trait GetDelegationSetArgs extends StObject {
     
@@ -25,17 +23,14 @@ object getDelegationSetMod {
   }
   object GetDelegationSetArgs {
     
-    @scala.inline
-    def apply(id: String): GetDelegationSetArgs = {
+    inline def apply(id: String): GetDelegationSetArgs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDelegationSetArgs]
     }
     
-    @scala.inline
-    implicit class GetDelegationSetArgsMutableBuilder[Self <: GetDelegationSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetDelegationSetArgs](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,26 +44,20 @@ object getDelegationSetMod {
   }
   object GetDelegationSetResult {
     
-    @scala.inline
-    def apply(callerReference: String, id: String, nameServers: js.Array[String]): GetDelegationSetResult = {
+    inline def apply(callerReference: String, id: String, nameServers: js.Array[String]): GetDelegationSetResult = {
       val __obj = js.Dynamic.literal(callerReference = callerReference.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], nameServers = nameServers.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDelegationSetResult]
     }
     
-    @scala.inline
-    implicit class GetDelegationSetResultMutableBuilder[Self <: GetDelegationSetResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetDelegationSetResult](x: Self) {
       
-      @scala.inline
-      def setCallerReference(value: String): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
+      inline def setCallerReference(value: String): Self = StObject.set(x, "callerReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
+      inline def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+      inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
     }
   }
 }

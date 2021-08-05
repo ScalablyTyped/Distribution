@@ -115,8 +115,7 @@ trait Text
 }
 object Text {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     End: XTextRange,
     EndRedline: PropertyValues,
@@ -150,19 +149,14 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setEndRedline(value: PropertyValues): Self = StObject.set(x, "EndRedline", value.asInstanceOf[js.Any])
+    inline def setEndRedline(value: PropertyValues): Self = StObject.set(x, "EndRedline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "EndRedline", js.Array(value :_*))
+    inline def setEndRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "EndRedline", js.Array(value :_*))
     
-    @scala.inline
-    def setStartRedline(value: PropertyValues): Self = StObject.set(x, "StartRedline", value.asInstanceOf[js.Any])
+    inline def setStartRedline(value: PropertyValues): Self = StObject.set(x, "StartRedline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "StartRedline", js.Array(value :_*))
+    inline def setStartRedlineVarargs(value: PropertyValue*): Self = StObject.set(x, "StartRedline", js.Array(value :_*))
   }
 }

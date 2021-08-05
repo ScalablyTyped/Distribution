@@ -12,8 +12,7 @@ trait InsightsServiceAccountResponseHashtagsImpressions extends StObject {
 }
 object InsightsServiceAccountResponseHashtagsImpressions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     account_hashtags: InsightsServiceAccountResponseAccountHashtags,
     organic: InsightsServiceAccountResponseOrganic
   ): InsightsServiceAccountResponseHashtagsImpressions = {
@@ -21,13 +20,10 @@ object InsightsServiceAccountResponseHashtagsImpressions {
     __obj.asInstanceOf[InsightsServiceAccountResponseHashtagsImpressions]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseHashtagsImpressionsMutableBuilder[Self <: InsightsServiceAccountResponseHashtagsImpressions] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseHashtagsImpressions](x: Self) {
     
-    @scala.inline
-    def setAccount_hashtags(value: InsightsServiceAccountResponseAccountHashtags): Self = StObject.set(x, "account_hashtags", value.asInstanceOf[js.Any])
+    inline def setAccount_hashtags(value: InsightsServiceAccountResponseAccountHashtags): Self = StObject.set(x, "account_hashtags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganic(value: InsightsServiceAccountResponseOrganic): Self = StObject.set(x, "organic", value.asInstanceOf[js.Any])
+    inline def setOrganic(value: InsightsServiceAccountResponseOrganic): Self = StObject.set(x, "organic", value.asInstanceOf[js.Any])
   }
 }

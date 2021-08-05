@@ -18,16 +18,13 @@ trait Set[TElement]
 }
 object Set {
   
-  @scala.inline
-  def apply[TElement](set: Tween[TElement] => Unit): Set[TElement] = {
+  inline def apply[TElement](set: Tween[TElement] => Unit): Set[TElement] = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction1(set))
     __obj.asInstanceOf[Set[TElement]]
   }
   
-  @scala.inline
-  implicit class SetMutableBuilder[Self <: Set[?], TElement] (val x: Self & Set[TElement]) extends AnyVal {
+  extension [Self <: Set[?], TElement](x: Self & Set[TElement]) {
     
-    @scala.inline
-    def setSet(value: Tween[TElement] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: Tween[TElement] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

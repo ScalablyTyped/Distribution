@@ -25,8 +25,7 @@ object anon {
   }
   object TypeofCharacteristic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RESULT_ATTR_NOT_LONG: Double,
       RESULT_INVALID_ATTRIBUTE_LENGTH: Double,
       RESULT_INVALID_OFFSET: Double,
@@ -37,23 +36,17 @@ object anon {
       __obj.asInstanceOf[TypeofCharacteristic]
     }
     
-    @scala.inline
-    implicit class TypeofCharacteristicMutableBuilder[Self <: TypeofCharacteristic] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofCharacteristic](x: Self) {
       
-      @scala.inline
-      def setRESULT_ATTR_NOT_LONG(value: Double): Self = StObject.set(x, "RESULT_ATTR_NOT_LONG", value.asInstanceOf[js.Any])
+      inline def setRESULT_ATTR_NOT_LONG(value: Double): Self = StObject.set(x, "RESULT_ATTR_NOT_LONG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESULT_INVALID_ATTRIBUTE_LENGTH(value: Double): Self = StObject.set(x, "RESULT_INVALID_ATTRIBUTE_LENGTH", value.asInstanceOf[js.Any])
+      inline def setRESULT_INVALID_ATTRIBUTE_LENGTH(value: Double): Self = StObject.set(x, "RESULT_INVALID_ATTRIBUTE_LENGTH", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESULT_INVALID_OFFSET(value: Double): Self = StObject.set(x, "RESULT_INVALID_OFFSET", value.asInstanceOf[js.Any])
+      inline def setRESULT_INVALID_OFFSET(value: Double): Self = StObject.set(x, "RESULT_INVALID_OFFSET", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESULT_SUCCESS(value: Double): Self = StObject.set(x, "RESULT_SUCCESS", value.asInstanceOf[js.Any])
+      inline def setRESULT_SUCCESS(value: Double): Self = StObject.set(x, "RESULT_SUCCESS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRESULT_UNLIKELY_ERROR(value: Double): Self = StObject.set(x, "RESULT_UNLIKELY_ERROR", value.asInstanceOf[js.Any])
+      inline def setRESULT_UNLIKELY_ERROR(value: Double): Self = StObject.set(x, "RESULT_UNLIKELY_ERROR", value.asInstanceOf[js.Any])
     }
   }
 }

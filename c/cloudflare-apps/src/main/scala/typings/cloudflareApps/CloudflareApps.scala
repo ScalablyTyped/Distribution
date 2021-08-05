@@ -25,23 +25,18 @@ object CloudflareApps {
   }
   object App {
     
-    @scala.inline
-    def apply(appId: String, options: InstallOptions, scope: InstallScope): App = {
+    inline def apply(appId: String, options: InstallOptions, scope: InstallScope): App = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
       __obj.asInstanceOf[App]
     }
     
-    @scala.inline
-    implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+    extension [Self <: App](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: InstallOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: InstallOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: InstallScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: InstallScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,23 +74,18 @@ object CloudflareApps {
   }
   object CloudflareAppsProxy {
     
-    @scala.inline
-    def apply(embedSiteId: String, hasRocketEmbed: Boolean, originalURL: OriginalURL): CloudflareAppsProxy = {
+    inline def apply(embedSiteId: String, hasRocketEmbed: Boolean, originalURL: OriginalURL): CloudflareAppsProxy = {
       val __obj = js.Dynamic.literal(embedSiteId = embedSiteId.asInstanceOf[js.Any], hasRocketEmbed = hasRocketEmbed.asInstanceOf[js.Any], originalURL = originalURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudflareAppsProxy]
     }
     
-    @scala.inline
-    implicit class CloudflareAppsProxyMutableBuilder[Self <: CloudflareAppsProxy] (val x: Self) extends AnyVal {
+    extension [Self <: CloudflareAppsProxy](x: Self) {
       
-      @scala.inline
-      def setEmbedSiteId(value: String): Self = StObject.set(x, "embedSiteId", value.asInstanceOf[js.Any])
+      inline def setEmbedSiteId(value: String): Self = StObject.set(x, "embedSiteId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasRocketEmbed(value: Boolean): Self = StObject.set(x, "hasRocketEmbed", value.asInstanceOf[js.Any])
+      inline def setHasRocketEmbed(value: Boolean): Self = StObject.set(x, "hasRocketEmbed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalURL(value: OriginalURL): Self = StObject.set(x, "originalURL", value.asInstanceOf[js.Any])
+      inline def setOriginalURL(value: OriginalURL): Self = StObject.set(x, "originalURL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,20 +97,16 @@ object CloudflareApps {
   }
   object ElementLocation {
     
-    @scala.inline
-    def apply(method: before | prepend | append | after | replace, selector: String): ElementLocation = {
+    inline def apply(method: before | prepend | append | after | replace, selector: String): ElementLocation = {
       val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementLocation]
     }
     
-    @scala.inline
-    implicit class ElementLocationMutableBuilder[Self <: ElementLocation] (val x: Self) extends AnyVal {
+    extension [Self <: ElementLocation](x: Self) {
       
-      @scala.inline
-      def setMethod(value: before | prepend | append | after | replace): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: before | prepend | append | after | replace): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,17 +118,14 @@ object CloudflareApps {
   }
   object InstallProduct {
     
-    @scala.inline
-    def apply(id: String): InstallProduct = {
+    inline def apply(id: String): InstallProduct = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[InstallProduct]
     }
     
-    @scala.inline
-    implicit class InstallProductMutableBuilder[Self <: InstallProduct] (val x: Self) extends AnyVal {
+    extension [Self <: InstallProduct](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,20 +139,16 @@ object CloudflareApps {
   }
   object OriginalURL {
     
-    @scala.inline
-    def apply(parsed: OriginalURLParsed, raw: String): OriginalURL = {
+    inline def apply(parsed: OriginalURLParsed, raw: String): OriginalURL = {
       val __obj = js.Dynamic.literal(parsed = parsed.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
       __obj.asInstanceOf[OriginalURL]
     }
     
-    @scala.inline
-    implicit class OriginalURLMutableBuilder[Self <: OriginalURL] (val x: Self) extends AnyVal {
+    extension [Self <: OriginalURL](x: Self) {
       
-      @scala.inline
-      def setParsed(value: OriginalURLParsed): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
+      inline def setParsed(value: OriginalURLParsed): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,29 +166,22 @@ object CloudflareApps {
   }
   object OriginalURLParsed {
     
-    @scala.inline
-    def apply(fragment: String, host: String, path: String, query: URLQuery, scheme: https | http): OriginalURLParsed = {
+    inline def apply(fragment: String, host: String, path: String, query: URLQuery, scheme: https | http): OriginalURLParsed = {
       val __obj = js.Dynamic.literal(fragment = fragment.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
       __obj.asInstanceOf[OriginalURLParsed]
     }
     
-    @scala.inline
-    implicit class OriginalURLParsedMutableBuilder[Self <: OriginalURLParsed] (val x: Self) extends AnyVal {
+    extension [Self <: OriginalURLParsed](x: Self) {
       
-      @scala.inline
-      def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+      inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: URLQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: URLQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheme(value: https | http): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: https | http): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     }
   }
   

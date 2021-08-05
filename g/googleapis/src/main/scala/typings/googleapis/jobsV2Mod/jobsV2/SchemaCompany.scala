@@ -142,130 +142,89 @@ trait SchemaCompany extends StObject {
 }
 object SchemaCompany {
   
-  @scala.inline
-  def apply(): SchemaCompany = {
+  inline def apply(): SchemaCompany = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompany]
   }
   
-  @scala.inline
-  implicit class SchemaCompanyMutableBuilder[Self <: SchemaCompany] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompany](x: Self) {
     
-    @scala.inline
-    def setCareerPageLink(value: String): Self = StObject.set(x, "careerPageLink", value.asInstanceOf[js.Any])
+    inline def setCareerPageLink(value: String): Self = StObject.set(x, "careerPageLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCareerPageLinkUndefined: Self = StObject.set(x, "careerPageLink", js.undefined)
+    inline def setCareerPageLinkUndefined: Self = StObject.set(x, "careerPageLink", js.undefined)
     
-    @scala.inline
-    def setCompanyInfoSources(value: js.Array[SchemaCompanyInfoSource]): Self = StObject.set(x, "companyInfoSources", value.asInstanceOf[js.Any])
+    inline def setCompanyInfoSources(value: js.Array[SchemaCompanyInfoSource]): Self = StObject.set(x, "companyInfoSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyInfoSourcesUndefined: Self = StObject.set(x, "companyInfoSources", js.undefined)
+    inline def setCompanyInfoSourcesUndefined: Self = StObject.set(x, "companyInfoSources", js.undefined)
     
-    @scala.inline
-    def setCompanyInfoSourcesVarargs(value: SchemaCompanyInfoSource*): Self = StObject.set(x, "companyInfoSources", js.Array(value :_*))
+    inline def setCompanyInfoSourcesVarargs(value: SchemaCompanyInfoSource*): Self = StObject.set(x, "companyInfoSources", js.Array(value :_*))
     
-    @scala.inline
-    def setCompanySize(value: String): Self = StObject.set(x, "companySize", value.asInstanceOf[js.Any])
+    inline def setCompanySize(value: String): Self = StObject.set(x, "companySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanySizeUndefined: Self = StObject.set(x, "companySize", js.undefined)
+    inline def setCompanySizeUndefined: Self = StObject.set(x, "companySize", js.undefined)
     
-    @scala.inline
-    def setDisableLocationOptimization(value: Boolean): Self = StObject.set(x, "disableLocationOptimization", value.asInstanceOf[js.Any])
+    inline def setDisableLocationOptimization(value: Boolean): Self = StObject.set(x, "disableLocationOptimization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableLocationOptimizationUndefined: Self = StObject.set(x, "disableLocationOptimization", js.undefined)
+    inline def setDisableLocationOptimizationUndefined: Self = StObject.set(x, "disableLocationOptimization", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setDistributorBillingCompanyId(value: String): Self = StObject.set(x, "distributorBillingCompanyId", value.asInstanceOf[js.Any])
+    inline def setDistributorBillingCompanyId(value: String): Self = StObject.set(x, "distributorBillingCompanyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributorBillingCompanyIdUndefined: Self = StObject.set(x, "distributorBillingCompanyId", js.undefined)
+    inline def setDistributorBillingCompanyIdUndefined: Self = StObject.set(x, "distributorBillingCompanyId", js.undefined)
     
-    @scala.inline
-    def setDistributorCompanyId(value: String): Self = StObject.set(x, "distributorCompanyId", value.asInstanceOf[js.Any])
+    inline def setDistributorCompanyId(value: String): Self = StObject.set(x, "distributorCompanyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributorCompanyIdUndefined: Self = StObject.set(x, "distributorCompanyId", js.undefined)
+    inline def setDistributorCompanyIdUndefined: Self = StObject.set(x, "distributorCompanyId", js.undefined)
     
-    @scala.inline
-    def setEeoText(value: String): Self = StObject.set(x, "eeoText", value.asInstanceOf[js.Any])
+    inline def setEeoText(value: String): Self = StObject.set(x, "eeoText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEeoTextUndefined: Self = StObject.set(x, "eeoText", js.undefined)
+    inline def setEeoTextUndefined: Self = StObject.set(x, "eeoText", js.undefined)
     
-    @scala.inline
-    def setHiringAgency(value: Boolean): Self = StObject.set(x, "hiringAgency", value.asInstanceOf[js.Any])
+    inline def setHiringAgency(value: Boolean): Self = StObject.set(x, "hiringAgency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiringAgencyUndefined: Self = StObject.set(x, "hiringAgency", js.undefined)
+    inline def setHiringAgencyUndefined: Self = StObject.set(x, "hiringAgency", js.undefined)
     
-    @scala.inline
-    def setHqLocation(value: String): Self = StObject.set(x, "hqLocation", value.asInstanceOf[js.Any])
+    inline def setHqLocation(value: String): Self = StObject.set(x, "hqLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHqLocationUndefined: Self = StObject.set(x, "hqLocation", js.undefined)
+    inline def setHqLocationUndefined: Self = StObject.set(x, "hqLocation", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setKeywordSearchableCustomAttributes(value: js.Array[String]): Self = StObject.set(x, "keywordSearchableCustomAttributes", value.asInstanceOf[js.Any])
+    inline def setKeywordSearchableCustomAttributes(value: js.Array[String]): Self = StObject.set(x, "keywordSearchableCustomAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordSearchableCustomAttributesUndefined: Self = StObject.set(x, "keywordSearchableCustomAttributes", js.undefined)
+    inline def setKeywordSearchableCustomAttributesUndefined: Self = StObject.set(x, "keywordSearchableCustomAttributes", js.undefined)
     
-    @scala.inline
-    def setKeywordSearchableCustomAttributesVarargs(value: String*): Self = StObject.set(x, "keywordSearchableCustomAttributes", js.Array(value :_*))
+    inline def setKeywordSearchableCustomAttributesVarargs(value: String*): Self = StObject.set(x, "keywordSearchableCustomAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setKeywordSearchableCustomFields(value: js.Array[Double]): Self = StObject.set(x, "keywordSearchableCustomFields", value.asInstanceOf[js.Any])
+    inline def setKeywordSearchableCustomFields(value: js.Array[Double]): Self = StObject.set(x, "keywordSearchableCustomFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordSearchableCustomFieldsUndefined: Self = StObject.set(x, "keywordSearchableCustomFields", js.undefined)
+    inline def setKeywordSearchableCustomFieldsUndefined: Self = StObject.set(x, "keywordSearchableCustomFields", js.undefined)
     
-    @scala.inline
-    def setKeywordSearchableCustomFieldsVarargs(value: Double*): Self = StObject.set(x, "keywordSearchableCustomFields", js.Array(value :_*))
+    inline def setKeywordSearchableCustomFieldsVarargs(value: Double*): Self = StObject.set(x, "keywordSearchableCustomFields", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStructuredCompanyHqLocation(value: SchemaJobLocation): Self = StObject.set(x, "structuredCompanyHqLocation", value.asInstanceOf[js.Any])
+    inline def setStructuredCompanyHqLocation(value: SchemaJobLocation): Self = StObject.set(x, "structuredCompanyHqLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuredCompanyHqLocationUndefined: Self = StObject.set(x, "structuredCompanyHqLocation", js.undefined)
+    inline def setStructuredCompanyHqLocationUndefined: Self = StObject.set(x, "structuredCompanyHqLocation", js.undefined)
     
-    @scala.inline
-    def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
+    inline def setSuspended(value: Boolean): Self = StObject.set(x, "suspended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendedUndefined: Self = StObject.set(x, "suspended", js.undefined)
+    inline def setSuspendedUndefined: Self = StObject.set(x, "suspended", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+    inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+    inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait LabelStringValue extends StObject {
 }
 object LabelStringValue {
   
-  @scala.inline
-  def apply(label: String, value: Window & (/* globalThis */ js.Any)): LabelStringValue = {
+  inline def apply(label: String, value: Window & (/* globalThis */ js.Any)): LabelStringValue = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelStringValue]
   }
   
-  @scala.inline
-  implicit class LabelStringValueMutableBuilder[Self <: LabelStringValue] (val x: Self) extends AnyVal {
+  extension [Self <: LabelStringValue](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Window & (/* globalThis */ js.Any)): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Window & (/* globalThis */ js.Any)): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

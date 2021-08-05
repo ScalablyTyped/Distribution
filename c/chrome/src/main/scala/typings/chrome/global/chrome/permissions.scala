@@ -20,31 +20,23 @@ object permissions {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def contains(permissions: Permissions, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def contains(permissions: Permissions, callback: js.Function1[/* result */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getAll(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAll(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.permissions.onAdded")
   @js.native
   def onAdded: PermissionsAddedEvent = js.native
-  @scala.inline
-  def onAdded_=(x: PermissionsAddedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onAdded")(x.asInstanceOf[js.Any])
+  inline def onAdded_=(x: PermissionsAddedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onAdded")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.permissions.onRemoved")
   @js.native
   def onRemoved: PermissionsRemovedEvent = js.native
-  @scala.inline
-  def onRemoved_=(x: PermissionsRemovedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRemoved")(x.asInstanceOf[js.Any])
+  inline def onRemoved_=(x: PermissionsRemovedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRemoved")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def remove(permissions: Permissions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def remove(permissions: Permissions, callback: js.Function1[/* removed */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remove(permissions: Permissions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(permissions: Permissions, callback: js.Function1[/* removed */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def request(permissions: Permissions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def request(permissions: Permissions, callback: js.Function1[/* granted */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def request(permissions: Permissions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def request(permissions: Permissions, callback: js.Function1[/* granted */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(permissions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

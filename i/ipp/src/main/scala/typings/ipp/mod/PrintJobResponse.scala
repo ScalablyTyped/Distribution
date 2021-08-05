@@ -22,8 +22,7 @@ trait PrintJobResponse extends StObject {
 }
 object PrintJobResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: Double,
     `job-attributes-tag`: Jobid,
     `operation-attributes-tag`: Attributesnaturallanguage,
@@ -36,31 +35,22 @@ object PrintJobResponse {
     __obj.asInstanceOf[PrintJobResponse]
   }
   
-  @scala.inline
-  implicit class PrintJobResponseMutableBuilder[Self <: PrintJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PrintJobResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-attributes-tag`(value: Jobid): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setJob-attributes-tag`(value: Jobid): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Attributesnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Attributesnaturallanguage): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: StatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUnsupported-attributes`(value: js.Array[String]): Self = StObject.set(x, "unsupported-attributes", value.asInstanceOf[js.Any])
+    inline def `setUnsupported-attributes`(value: js.Array[String]): Self = StObject.set(x, "unsupported-attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUnsupported-attributesUndefined`: Self = StObject.set(x, "unsupported-attributes", js.undefined)
+    inline def `setUnsupported-attributesUndefined`: Self = StObject.set(x, "unsupported-attributes", js.undefined)
     
-    @scala.inline
-    def `setUnsupported-attributesVarargs`(value: String*): Self = StObject.set(x, "unsupported-attributes", js.Array(value :_*))
+    inline def `setUnsupported-attributesVarargs`(value: String*): Self = StObject.set(x, "unsupported-attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: IPPVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: IPPVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

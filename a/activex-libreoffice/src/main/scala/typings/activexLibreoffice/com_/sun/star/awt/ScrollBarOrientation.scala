@@ -15,10 +15,8 @@ object ScrollBarOrientation {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def HORIZONTAL: `0` = 0.asInstanceOf[`0`]
+    inline def HORIZONTAL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def VERTICAL: `1` = 1.asInstanceOf[`1`]
+    inline def VERTICAL: `1` = 1.asInstanceOf[`1`]
   }
 }

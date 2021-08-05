@@ -12,19 +12,15 @@ trait ChartBarColumnAnnotations
 }
 object ChartBarColumnAnnotations {
   
-  @scala.inline
-  def apply(): ChartBarColumnAnnotations = {
+  inline def apply(): ChartBarColumnAnnotations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartBarColumnAnnotations]
   }
   
-  @scala.inline
-  implicit class ChartBarColumnAnnotationsMutableBuilder[Self <: ChartBarColumnAnnotations] (val x: Self) extends AnyVal {
+  extension [Self <: ChartBarColumnAnnotations](x: Self) {
     
-    @scala.inline
-    def setAlwaysOutside(value: Boolean): Self = StObject.set(x, "alwaysOutside", value.asInstanceOf[js.Any])
+    inline def setAlwaysOutside(value: Boolean): Self = StObject.set(x, "alwaysOutside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysOutsideUndefined: Self = StObject.set(x, "alwaysOutside", js.undefined)
+    inline def setAlwaysOutsideUndefined: Self = StObject.set(x, "alwaysOutside", js.undefined)
   }
 }

@@ -61,73 +61,51 @@ trait SchemaBookshelf extends StObject {
 }
 object SchemaBookshelf {
   
-  @scala.inline
-  def apply(): SchemaBookshelf = {
+  inline def apply(): SchemaBookshelf = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBookshelf]
   }
   
-  @scala.inline
-  implicit class SchemaBookshelfMutableBuilder[Self <: SchemaBookshelf] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBookshelf](x: Self) {
     
-    @scala.inline
-    def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setVolumeCount(value: Double): Self = StObject.set(x, "volumeCount", value.asInstanceOf[js.Any])
+    inline def setVolumeCount(value: Double): Self = StObject.set(x, "volumeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeCountUndefined: Self = StObject.set(x, "volumeCount", js.undefined)
+    inline def setVolumeCountUndefined: Self = StObject.set(x, "volumeCount", js.undefined)
     
-    @scala.inline
-    def setVolumesLastUpdated(value: String): Self = StObject.set(x, "volumesLastUpdated", value.asInstanceOf[js.Any])
+    inline def setVolumesLastUpdated(value: String): Self = StObject.set(x, "volumesLastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumesLastUpdatedUndefined: Self = StObject.set(x, "volumesLastUpdated", js.undefined)
+    inline def setVolumesLastUpdatedUndefined: Self = StObject.set(x, "volumesLastUpdated", js.undefined)
   }
 }

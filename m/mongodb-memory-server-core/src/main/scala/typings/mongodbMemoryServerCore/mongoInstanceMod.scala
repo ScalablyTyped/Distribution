@@ -31,15 +31,13 @@ object mongoInstanceMod {
     @JSImport("mongodb-memory-server-core/lib/util/MongoInstance", "default.childProcessList")
     @js.native
     def childProcessList: js.Array[ChildProcess] = js.native
-    @scala.inline
-    def childProcessList_=(x: js.Array[ChildProcess]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childProcessList")(x.asInstanceOf[js.Any])
+    inline def childProcessList_=(x: js.Array[ChildProcess]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childProcessList")(x.asInstanceOf[js.Any])
     
     /**
       * Create an new instance an call method "run"
       * @param opts Options passed to the new instance
       */
-    @scala.inline
-    def run(opts: MongodOps): js.Promise[MongoInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MongoInstance]]
+    inline def run(opts: MongodOps): js.Promise[MongoInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MongoInstance]]
   }
   
   @js.native
@@ -137,29 +135,22 @@ object mongoInstanceMod {
   }
   object MongodOps {
     
-    @scala.inline
-    def apply(instance: Args): MongodOps = {
+    inline def apply(instance: Args): MongodOps = {
       val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
       __obj.asInstanceOf[MongodOps]
     }
     
-    @scala.inline
-    implicit class MongodOpsMutableBuilder[Self <: MongodOps] (val x: Self) extends AnyVal {
+    extension [Self <: MongodOps](x: Self) {
       
-      @scala.inline
-      def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      @scala.inline
-      def setInstance(value: Args): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Args): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpawn(value: SpawnOptions): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
+      inline def setSpawn(value: SpawnOptions): Self = StObject.set(x, "spawn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpawnUndefined: Self = StObject.set(x, "spawn", js.undefined)
+      inline def setSpawnUndefined: Self = StObject.set(x, "spawn", js.undefined)
     }
   }
 }

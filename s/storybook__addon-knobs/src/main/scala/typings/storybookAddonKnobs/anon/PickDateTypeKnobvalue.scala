@@ -12,16 +12,13 @@ trait PickDateTypeKnobvalue extends StObject {
 }
 object PickDateTypeKnobvalue {
   
-  @scala.inline
-  def apply(value: DateTypeKnobValue): PickDateTypeKnobvalue = {
+  inline def apply(value: DateTypeKnobValue): PickDateTypeKnobvalue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickDateTypeKnobvalue]
   }
   
-  @scala.inline
-  implicit class PickDateTypeKnobvalueMutableBuilder[Self <: PickDateTypeKnobvalue] (val x: Self) extends AnyVal {
+  extension [Self <: PickDateTypeKnobvalue](x: Self) {
     
-    @scala.inline
-    def setValue(value: DateTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DateTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

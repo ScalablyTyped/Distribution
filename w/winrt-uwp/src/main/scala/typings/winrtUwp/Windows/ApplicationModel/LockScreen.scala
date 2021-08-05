@@ -60,8 +60,7 @@ object LockScreen {
   }
   object LockScreenBadge {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       automationName: String,
       glyph: IRandomAccessStream,
       launchApp: () => Unit,
@@ -72,23 +71,17 @@ object LockScreen {
       __obj.asInstanceOf[LockScreenBadge]
     }
     
-    @scala.inline
-    implicit class LockScreenBadgeMutableBuilder[Self <: LockScreenBadge] (val x: Self) extends AnyVal {
+    extension [Self <: LockScreenBadge](x: Self) {
       
-      @scala.inline
-      def setAutomationName(value: String): Self = StObject.set(x, "automationName", value.asInstanceOf[js.Any])
+      inline def setAutomationName(value: String): Self = StObject.set(x, "automationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlyph(value: IRandomAccessStream): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+      inline def setGlyph(value: IRandomAccessStream): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchApp(value: () => Unit): Self = StObject.set(x, "launchApp", js.Any.fromFunction0(value))
+      inline def setLaunchApp(value: () => Unit): Self = StObject.set(x, "launchApp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLogo(value: IRandomAccessStream): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: IRandomAccessStream): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,17 +154,14 @@ object LockScreen {
   }
   object LockScreenUnlockingDeferral {
     
-    @scala.inline
-    def apply(complete: () => Unit): LockScreenUnlockingDeferral = {
+    inline def apply(complete: () => Unit): LockScreenUnlockingDeferral = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
       __obj.asInstanceOf[LockScreenUnlockingDeferral]
     }
     
-    @scala.inline
-    implicit class LockScreenUnlockingDeferralMutableBuilder[Self <: LockScreenUnlockingDeferral] (val x: Self) extends AnyVal {
+    extension [Self <: LockScreenUnlockingDeferral](x: Self) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
   }
   
@@ -189,20 +179,16 @@ object LockScreen {
   }
   object LockScreenUnlockingEventArgs {
     
-    @scala.inline
-    def apply(deadline: Date, getDeferral: () => LockScreenUnlockingDeferral): LockScreenUnlockingEventArgs = {
+    inline def apply(deadline: Date, getDeferral: () => LockScreenUnlockingDeferral): LockScreenUnlockingEventArgs = {
       val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
       __obj.asInstanceOf[LockScreenUnlockingEventArgs]
     }
     
-    @scala.inline
-    implicit class LockScreenUnlockingEventArgsMutableBuilder[Self <: LockScreenUnlockingEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LockScreenUnlockingEventArgs](x: Self) {
       
-      @scala.inline
-      def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+      inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDeferral(value: () => LockScreenUnlockingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+      inline def setGetDeferral(value: () => LockScreenUnlockingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     }
   }
 }

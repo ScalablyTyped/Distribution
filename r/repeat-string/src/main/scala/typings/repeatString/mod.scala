@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: String, num: Double): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(str: String, num: Double): String = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("repeat-string", JSImport.Namespace)
   @js.native

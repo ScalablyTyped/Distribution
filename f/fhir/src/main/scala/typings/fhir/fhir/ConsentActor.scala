@@ -23,19 +23,15 @@ trait ConsentActor
 }
 object ConsentActor {
   
-  @scala.inline
-  def apply(reference: Reference, role: CodeableConcept): ConsentActor = {
+  inline def apply(reference: Reference, role: CodeableConcept): ConsentActor = {
     val __obj = js.Dynamic.literal(reference = reference.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsentActor]
   }
   
-  @scala.inline
-  implicit class ConsentActorMutableBuilder[Self <: ConsentActor] (val x: Self) extends AnyVal {
+  extension [Self <: ConsentActor](x: Self) {
     
-    @scala.inline
-    def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

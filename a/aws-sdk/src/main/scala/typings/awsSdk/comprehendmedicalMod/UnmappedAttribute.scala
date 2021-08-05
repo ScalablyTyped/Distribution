@@ -18,25 +18,19 @@ trait UnmappedAttribute extends StObject {
 }
 object UnmappedAttribute {
   
-  @scala.inline
-  def apply(): UnmappedAttribute = {
+  inline def apply(): UnmappedAttribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnmappedAttribute]
   }
   
-  @scala.inline
-  implicit class UnmappedAttributeMutableBuilder[Self <: UnmappedAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: UnmappedAttribute](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: Attribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: Attribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
-    @scala.inline
-    def setType(value: EntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: EntityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

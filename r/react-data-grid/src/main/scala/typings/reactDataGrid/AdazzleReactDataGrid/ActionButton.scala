@@ -12,19 +12,15 @@ trait ActionButton extends StObject {
 }
 object ActionButton {
   
-  @scala.inline
-  def apply(callback: () => Unit, icon: String): ActionButton = {
+  inline def apply(callback: () => Unit, icon: String): ActionButton = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction0(callback), icon = icon.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionButton]
   }
   
-  @scala.inline
-  implicit class ActionButtonMutableBuilder[Self <: ActionButton] (val x: Self) extends AnyVal {
+  extension [Self <: ActionButton](x: Self) {
     
-    @scala.inline
-    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
   }
 }

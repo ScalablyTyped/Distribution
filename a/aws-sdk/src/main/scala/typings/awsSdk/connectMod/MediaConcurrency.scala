@@ -18,19 +18,15 @@ trait MediaConcurrency extends StObject {
 }
 object MediaConcurrency {
   
-  @scala.inline
-  def apply(Channel: Channel, Concurrency: Concurrency): MediaConcurrency = {
+  inline def apply(Channel: Channel, Concurrency: Concurrency): MediaConcurrency = {
     val __obj = js.Dynamic.literal(Channel = Channel.asInstanceOf[js.Any], Concurrency = Concurrency.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaConcurrency]
   }
   
-  @scala.inline
-  implicit class MediaConcurrencyMutableBuilder[Self <: MediaConcurrency] (val x: Self) extends AnyVal {
+  extension [Self <: MediaConcurrency](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcurrency(value: Concurrency): Self = StObject.set(x, "Concurrency", value.asInstanceOf[js.Any])
+    inline def setConcurrency(value: Concurrency): Self = StObject.set(x, "Concurrency", value.asInstanceOf[js.Any])
   }
 }

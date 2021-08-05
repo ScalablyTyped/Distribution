@@ -31,32 +31,24 @@ object managementModelsMod {
   }
   object ErrorDetails {
     
-    @scala.inline
-    def apply(): ErrorDetails = {
+    inline def apply(): ErrorDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorDetails]
     }
     
-    @scala.inline
-    implicit class ErrorDetailsMutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorDetails](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -66,20 +58,16 @@ object managementModelsMod {
   }
   object ErrorResponse {
     
-    @scala.inline
-    def apply(): ErrorResponse = {
+    inline def apply(): ErrorResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    @scala.inline
-    implicit class ErrorResponseMutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorResponse](x: Self) {
       
-      @scala.inline
-      def setError(value: ErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ErrorDetails): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     }
   }
   
@@ -99,50 +87,36 @@ object managementModelsMod {
   }
   object ManagementGroup {
     
-    @scala.inline
-    def apply(): ManagementGroup = {
+    inline def apply(): ManagementGroup = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagementGroup]
     }
     
-    @scala.inline
-    implicit class ManagementGroupMutableBuilder[Self <: ManagementGroup] (val x: Self) extends AnyVal {
+    extension [Self <: ManagementGroup](x: Self) {
       
-      @scala.inline
-      def setDetails(value: ManagementGroupDetailsProperties): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: ManagementGroupDetailsProperties): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+      inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+      inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -158,38 +132,28 @@ object managementModelsMod {
   }
   object ManagementGroupChildInfo {
     
-    @scala.inline
-    def apply(): ManagementGroupChildInfo = {
+    inline def apply(): ManagementGroupChildInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagementGroupChildInfo]
     }
     
-    @scala.inline
-    implicit class ManagementGroupChildInfoMutableBuilder[Self <: ManagementGroupChildInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ManagementGroupChildInfo](x: Self) {
       
-      @scala.inline
-      def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
+      inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
+      inline def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
       
-      @scala.inline
-      def setChildType(value: String): Self = StObject.set(x, "childType", value.asInstanceOf[js.Any])
+      inline def setChildType(value: String): Self = StObject.set(x, "childType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildTypeUndefined: Self = StObject.set(x, "childType", js.undefined)
+      inline def setChildTypeUndefined: Self = StObject.set(x, "childType", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+      inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+      inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     }
   }
   
@@ -207,44 +171,32 @@ object managementModelsMod {
   }
   object ManagementGroupDetailsProperties {
     
-    @scala.inline
-    def apply(): ManagementGroupDetailsProperties = {
+    inline def apply(): ManagementGroupDetailsProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagementGroupDetailsProperties]
     }
     
-    @scala.inline
-    implicit class ManagementGroupDetailsPropertiesMutableBuilder[Self <: ManagementGroupDetailsProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ManagementGroupDetailsProperties](x: Self) {
       
-      @scala.inline
-      def setManagementGroupType(value: String): Self = StObject.set(x, "managementGroupType", value.asInstanceOf[js.Any])
+      inline def setManagementGroupType(value: String): Self = StObject.set(x, "managementGroupType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManagementGroupTypeUndefined: Self = StObject.set(x, "managementGroupType", js.undefined)
+      inline def setManagementGroupTypeUndefined: Self = StObject.set(x, "managementGroupType", js.undefined)
       
-      @scala.inline
-      def setParent(value: ParentGroupInfo): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ParentGroupInfo): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setUpdatedBy(value: String): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
+      inline def setUpdatedBy(value: String): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
+      inline def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
       
-      @scala.inline
-      def setUpdatedTime(value: Date): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
+      inline def setUpdatedTime(value: Date): Self = StObject.set(x, "updatedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedTimeUndefined: Self = StObject.set(x, "updatedTime", js.undefined)
+      inline def setUpdatedTimeUndefined: Self = StObject.set(x, "updatedTime", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -262,44 +214,32 @@ object managementModelsMod {
   }
   object ManagementGroupInfo {
     
-    @scala.inline
-    def apply(): ManagementGroupInfo = {
+    inline def apply(): ManagementGroupInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagementGroupInfo]
     }
     
-    @scala.inline
-    implicit class ManagementGroupInfoMutableBuilder[Self <: ManagementGroupInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ManagementGroupInfo](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+      inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+      inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -325,47 +265,34 @@ object managementModelsMod {
   }
   object ManagementGroupRecursiveChildInfo {
     
-    @scala.inline
-    def apply(): ManagementGroupRecursiveChildInfo = {
+    inline def apply(): ManagementGroupRecursiveChildInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagementGroupRecursiveChildInfo]
     }
     
-    @scala.inline
-    implicit class ManagementGroupRecursiveChildInfoMutableBuilder[Self <: ManagementGroupRecursiveChildInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ManagementGroupRecursiveChildInfo](x: Self) {
       
-      @scala.inline
-      def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
+      inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
+      inline def setChildIdUndefined: Self = StObject.set(x, "childId", js.undefined)
       
-      @scala.inline
-      def setChildType(value: String): Self = StObject.set(x, "childType", value.asInstanceOf[js.Any])
+      inline def setChildType(value: String): Self = StObject.set(x, "childType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildTypeUndefined: Self = StObject.set(x, "childType", js.undefined)
+      inline def setChildTypeUndefined: Self = StObject.set(x, "childType", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[ManagementGroupRecursiveChildInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ManagementGroupRecursiveChildInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ManagementGroupRecursiveChildInfo*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ManagementGroupRecursiveChildInfo*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+      inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+      inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
     }
   }
   
@@ -387,59 +314,42 @@ object managementModelsMod {
   }
   object ManagementGroupWithChildren {
     
-    @scala.inline
-    def apply(): ManagementGroupWithChildren = {
+    inline def apply(): ManagementGroupWithChildren = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagementGroupWithChildren]
     }
     
-    @scala.inline
-    implicit class ManagementGroupWithChildrenMutableBuilder[Self <: ManagementGroupWithChildren] (val x: Self) extends AnyVal {
+    extension [Self <: ManagementGroupWithChildren](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ManagementGroupChildInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ManagementGroupChildInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ManagementGroupChildInfo*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ManagementGroupChildInfo*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDetails(value: ManagementGroupDetailsProperties): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: ManagementGroupDetailsProperties): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+      inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+      inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -461,59 +371,42 @@ object managementModelsMod {
   }
   object ManagementGroupWithHierarchy {
     
-    @scala.inline
-    def apply(): ManagementGroupWithHierarchy = {
+    inline def apply(): ManagementGroupWithHierarchy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ManagementGroupWithHierarchy]
     }
     
-    @scala.inline
-    implicit class ManagementGroupWithHierarchyMutableBuilder[Self <: ManagementGroupWithHierarchy] (val x: Self) extends AnyVal {
+    extension [Self <: ManagementGroupWithHierarchy](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ManagementGroupRecursiveChildInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ManagementGroupRecursiveChildInfo]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ManagementGroupRecursiveChildInfo*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ManagementGroupRecursiveChildInfo*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDetails(value: ManagementGroupDetailsProperties): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: ManagementGroupDetailsProperties): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+      inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+      inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -525,26 +418,20 @@ object managementModelsMod {
   }
   object Operation {
     
-    @scala.inline
-    def apply(): Operation = {
+    inline def apply(): Operation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Operation]
     }
     
-    @scala.inline
-    implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
+    extension [Self <: Operation](x: Self) {
       
-      @scala.inline
-      def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: OperationDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -558,32 +445,24 @@ object managementModelsMod {
   }
   object OperationDisplay {
     
-    @scala.inline
-    def apply(): OperationDisplay = {
+    inline def apply(): OperationDisplay = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OperationDisplay]
     }
     
-    @scala.inline
-    implicit class OperationDisplayMutableBuilder[Self <: OperationDisplay] (val x: Self) extends AnyVal {
+    extension [Self <: OperationDisplay](x: Self) {
       
-      @scala.inline
-      def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+      inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+      inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     }
   }
   
@@ -603,26 +482,20 @@ object managementModelsMod {
   }
   object ParentGroupInfo {
     
-    @scala.inline
-    def apply(): ParentGroupInfo = {
+    inline def apply(): ParentGroupInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParentGroupInfo]
     }
     
-    @scala.inline
-    implicit class ParentGroupInfoMutableBuilder[Self <: ParentGroupInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ParentGroupInfo](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     }
   }
 }

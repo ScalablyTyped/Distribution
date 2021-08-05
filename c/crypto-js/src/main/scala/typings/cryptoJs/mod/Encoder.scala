@@ -37,19 +37,15 @@ trait Encoder extends StObject {
 }
 object Encoder {
   
-  @scala.inline
-  def apply(parse: String => WordArray, stringify: WordArray => String): Encoder = {
+  inline def apply(parse: String => WordArray, stringify: WordArray => String): Encoder = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
     __obj.asInstanceOf[Encoder]
   }
   
-  @scala.inline
-  implicit class EncoderMutableBuilder[Self <: Encoder] (val x: Self) extends AnyVal {
+  extension [Self <: Encoder](x: Self) {
     
-    @scala.inline
-    def setParse(value: String => WordArray): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => WordArray): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStringify(value: WordArray => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+    inline def setStringify(value: WordArray => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
   }
 }

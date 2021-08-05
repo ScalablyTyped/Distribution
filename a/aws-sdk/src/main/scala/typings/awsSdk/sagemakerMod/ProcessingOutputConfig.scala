@@ -18,25 +18,19 @@ trait ProcessingOutputConfig extends StObject {
 }
 object ProcessingOutputConfig {
   
-  @scala.inline
-  def apply(Outputs: ProcessingOutputs): ProcessingOutputConfig = {
+  inline def apply(Outputs: ProcessingOutputs): ProcessingOutputConfig = {
     val __obj = js.Dynamic.literal(Outputs = Outputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessingOutputConfig]
   }
   
-  @scala.inline
-  implicit class ProcessingOutputConfigMutableBuilder[Self <: ProcessingOutputConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingOutputConfig](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: ProcessingOutputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: ProcessingOutputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsVarargs(value: ProcessingOutput*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: ProcessingOutput*): Self = StObject.set(x, "Outputs", js.Array(value :_*))
   }
 }

@@ -17,7 +17,7 @@ object foundationMod {
   class MDCFoundation[AdapterType /* <: js.Object */] () extends StObject {
     def this(adapter: AdapterType) = this()
     
-    var adapter: AdapterType = js.native
+    /* protected */ var adapter: AdapterType = js.native
     
     def destroy(): Unit = js.native
     

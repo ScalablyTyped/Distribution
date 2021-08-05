@@ -23,22 +23,17 @@ trait TaskAgentPoolReference extends StObject {
 }
 object TaskAgentPoolReference {
   
-  @scala.inline
-  def apply(id: Double, isHosted: Boolean, name: String): TaskAgentPoolReference = {
+  inline def apply(id: Double, isHosted: Boolean, name: String): TaskAgentPoolReference = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isHosted = isHosted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskAgentPoolReference]
   }
   
-  @scala.inline
-  implicit class TaskAgentPoolReferenceMutableBuilder[Self <: TaskAgentPoolReference] (val x: Self) extends AnyVal {
+  extension [Self <: TaskAgentPoolReference](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHosted(value: Boolean): Self = StObject.set(x, "isHosted", value.asInstanceOf[js.Any])
+    inline def setIsHosted(value: Boolean): Self = StObject.set(x, "isHosted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

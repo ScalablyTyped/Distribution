@@ -24,8 +24,7 @@ trait ASPxClientWeekDaysCheckEdit
 }
 object ASPxClientWeekDaysCheckEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -48,13 +47,10 @@ object ASPxClientWeekDaysCheckEdit {
     __obj.asInstanceOf[ASPxClientWeekDaysCheckEdit]
   }
   
-  @scala.inline
-  implicit class ASPxClientWeekDaysCheckEditMutableBuilder[Self <: ASPxClientWeekDaysCheckEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientWeekDaysCheckEdit](x: Self) {
     
-    @scala.inline
-    def setGetValue(value: () => ASPxClientWeekDays): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => ASPxClientWeekDays): Self = StObject.set(x, "GetValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValue(value: ASPxClientWeekDays => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: ASPxClientWeekDays => Unit): Self = StObject.set(x, "SetValue", js.Any.fromFunction1(value))
   }
 }

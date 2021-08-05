@@ -35,47 +35,34 @@ object appautoscaling {
   }
   object PolicyStepScalingPolicyConfiguration {
     
-    @scala.inline
-    def apply(): PolicyStepScalingPolicyConfiguration = {
+    inline def apply(): PolicyStepScalingPolicyConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolicyStepScalingPolicyConfiguration]
     }
     
-    @scala.inline
-    implicit class PolicyStepScalingPolicyConfigurationMutableBuilder[Self <: PolicyStepScalingPolicyConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyStepScalingPolicyConfiguration](x: Self) {
       
-      @scala.inline
-      def setAdjustmentType(value: String): Self = StObject.set(x, "adjustmentType", value.asInstanceOf[js.Any])
+      inline def setAdjustmentType(value: String): Self = StObject.set(x, "adjustmentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdjustmentTypeUndefined: Self = StObject.set(x, "adjustmentType", js.undefined)
+      inline def setAdjustmentTypeUndefined: Self = StObject.set(x, "adjustmentType", js.undefined)
       
-      @scala.inline
-      def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
+      inline def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCooldownUndefined: Self = StObject.set(x, "cooldown", js.undefined)
+      inline def setCooldownUndefined: Self = StObject.set(x, "cooldown", js.undefined)
       
-      @scala.inline
-      def setMetricAggregationType(value: String): Self = StObject.set(x, "metricAggregationType", value.asInstanceOf[js.Any])
+      inline def setMetricAggregationType(value: String): Self = StObject.set(x, "metricAggregationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricAggregationTypeUndefined: Self = StObject.set(x, "metricAggregationType", js.undefined)
+      inline def setMetricAggregationTypeUndefined: Self = StObject.set(x, "metricAggregationType", js.undefined)
       
-      @scala.inline
-      def setMinAdjustmentMagnitude(value: Double): Self = StObject.set(x, "minAdjustmentMagnitude", value.asInstanceOf[js.Any])
+      inline def setMinAdjustmentMagnitude(value: Double): Self = StObject.set(x, "minAdjustmentMagnitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinAdjustmentMagnitudeUndefined: Self = StObject.set(x, "minAdjustmentMagnitude", js.undefined)
+      inline def setMinAdjustmentMagnitudeUndefined: Self = StObject.set(x, "minAdjustmentMagnitude", js.undefined)
       
-      @scala.inline
-      def setStepAdjustments(value: js.Array[PolicyStepScalingPolicyConfigurationStepAdjustment]): Self = StObject.set(x, "stepAdjustments", value.asInstanceOf[js.Any])
+      inline def setStepAdjustments(value: js.Array[PolicyStepScalingPolicyConfigurationStepAdjustment]): Self = StObject.set(x, "stepAdjustments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepAdjustmentsUndefined: Self = StObject.set(x, "stepAdjustments", js.undefined)
+      inline def setStepAdjustmentsUndefined: Self = StObject.set(x, "stepAdjustments", js.undefined)
       
-      @scala.inline
-      def setStepAdjustmentsVarargs(value: PolicyStepScalingPolicyConfigurationStepAdjustment*): Self = StObject.set(x, "stepAdjustments", js.Array(value :_*))
+      inline def setStepAdjustmentsVarargs(value: PolicyStepScalingPolicyConfigurationStepAdjustment*): Self = StObject.set(x, "stepAdjustments", js.Array(value :_*))
     }
   }
   
@@ -98,29 +85,22 @@ object appautoscaling {
   }
   object PolicyStepScalingPolicyConfigurationStepAdjustment {
     
-    @scala.inline
-    def apply(scalingAdjustment: Double): PolicyStepScalingPolicyConfigurationStepAdjustment = {
+    inline def apply(scalingAdjustment: Double): PolicyStepScalingPolicyConfigurationStepAdjustment = {
       val __obj = js.Dynamic.literal(scalingAdjustment = scalingAdjustment.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyStepScalingPolicyConfigurationStepAdjustment]
     }
     
-    @scala.inline
-    implicit class PolicyStepScalingPolicyConfigurationStepAdjustmentMutableBuilder[Self <: PolicyStepScalingPolicyConfigurationStepAdjustment] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyStepScalingPolicyConfigurationStepAdjustment](x: Self) {
       
-      @scala.inline
-      def setMetricIntervalLowerBound(value: String): Self = StObject.set(x, "metricIntervalLowerBound", value.asInstanceOf[js.Any])
+      inline def setMetricIntervalLowerBound(value: String): Self = StObject.set(x, "metricIntervalLowerBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricIntervalLowerBoundUndefined: Self = StObject.set(x, "metricIntervalLowerBound", js.undefined)
+      inline def setMetricIntervalLowerBoundUndefined: Self = StObject.set(x, "metricIntervalLowerBound", js.undefined)
       
-      @scala.inline
-      def setMetricIntervalUpperBound(value: String): Self = StObject.set(x, "metricIntervalUpperBound", value.asInstanceOf[js.Any])
+      inline def setMetricIntervalUpperBound(value: String): Self = StObject.set(x, "metricIntervalUpperBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricIntervalUpperBoundUndefined: Self = StObject.set(x, "metricIntervalUpperBound", js.undefined)
+      inline def setMetricIntervalUpperBoundUndefined: Self = StObject.set(x, "metricIntervalUpperBound", js.undefined)
       
-      @scala.inline
-      def setScalingAdjustment(value: Double): Self = StObject.set(x, "scalingAdjustment", value.asInstanceOf[js.Any])
+      inline def setScalingAdjustment(value: Double): Self = StObject.set(x, "scalingAdjustment", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,47 +138,34 @@ object appautoscaling {
   }
   object PolicyTargetTrackingScalingPolicyConfiguration {
     
-    @scala.inline
-    def apply(targetValue: Double): PolicyTargetTrackingScalingPolicyConfiguration = {
+    inline def apply(targetValue: Double): PolicyTargetTrackingScalingPolicyConfiguration = {
       val __obj = js.Dynamic.literal(targetValue = targetValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyTargetTrackingScalingPolicyConfiguration]
     }
     
-    @scala.inline
-    implicit class PolicyTargetTrackingScalingPolicyConfigurationMutableBuilder[Self <: PolicyTargetTrackingScalingPolicyConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyTargetTrackingScalingPolicyConfiguration](x: Self) {
       
-      @scala.inline
-      def setCustomizedMetricSpecification(value: PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification): Self = StObject.set(x, "customizedMetricSpecification", value.asInstanceOf[js.Any])
+      inline def setCustomizedMetricSpecification(value: PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification): Self = StObject.set(x, "customizedMetricSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomizedMetricSpecificationUndefined: Self = StObject.set(x, "customizedMetricSpecification", js.undefined)
+      inline def setCustomizedMetricSpecificationUndefined: Self = StObject.set(x, "customizedMetricSpecification", js.undefined)
       
-      @scala.inline
-      def setDisableScaleIn(value: Boolean): Self = StObject.set(x, "disableScaleIn", value.asInstanceOf[js.Any])
+      inline def setDisableScaleIn(value: Boolean): Self = StObject.set(x, "disableScaleIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScaleInUndefined: Self = StObject.set(x, "disableScaleIn", js.undefined)
+      inline def setDisableScaleInUndefined: Self = StObject.set(x, "disableScaleIn", js.undefined)
       
-      @scala.inline
-      def setPredefinedMetricSpecification(value: PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification): Self = StObject.set(x, "predefinedMetricSpecification", value.asInstanceOf[js.Any])
+      inline def setPredefinedMetricSpecification(value: PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification): Self = StObject.set(x, "predefinedMetricSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredefinedMetricSpecificationUndefined: Self = StObject.set(x, "predefinedMetricSpecification", js.undefined)
+      inline def setPredefinedMetricSpecificationUndefined: Self = StObject.set(x, "predefinedMetricSpecification", js.undefined)
       
-      @scala.inline
-      def setScaleInCooldown(value: Double): Self = StObject.set(x, "scaleInCooldown", value.asInstanceOf[js.Any])
+      inline def setScaleInCooldown(value: Double): Self = StObject.set(x, "scaleInCooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleInCooldownUndefined: Self = StObject.set(x, "scaleInCooldown", js.undefined)
+      inline def setScaleInCooldownUndefined: Self = StObject.set(x, "scaleInCooldown", js.undefined)
       
-      @scala.inline
-      def setScaleOutCooldown(value: Double): Self = StObject.set(x, "scaleOutCooldown", value.asInstanceOf[js.Any])
+      inline def setScaleOutCooldown(value: Double): Self = StObject.set(x, "scaleOutCooldown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleOutCooldownUndefined: Self = StObject.set(x, "scaleOutCooldown", js.undefined)
+      inline def setScaleOutCooldownUndefined: Self = StObject.set(x, "scaleOutCooldown", js.undefined)
       
-      @scala.inline
-      def setTargetValue(value: Double): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
+      inline def setTargetValue(value: Double): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -235,42 +202,32 @@ object appautoscaling {
   }
   object PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification {
     
-    @scala.inline
-    def apply(metricName: String, namespace: String, statistic: String): PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification = {
+    inline def apply(metricName: String, namespace: String, statistic: String): PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification = {
       val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], statistic = statistic.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification]
     }
     
-    @scala.inline
-    implicit class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationMutableBuilder[Self <: PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification](x: Self) {
       
-      @scala.inline
-      def setDimensions(
+      inline def setDimensions(
         value: js.Array[
               PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension
             ]
       ): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+      inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
       
-      @scala.inline
-      def setDimensionsVarargs(value: PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+      inline def setDimensionsVarargs(value: PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
       
-      @scala.inline
-      def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+      inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatistic(value: String): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
+      inline def setStatistic(value: String): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
   
@@ -288,20 +245,16 @@ object appautoscaling {
   }
   object PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension {
     
-    @scala.inline
-    def apply(name: String, value: String): PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension = {
+    inline def apply(name: String, value: String): PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension]
     }
     
-    @scala.inline
-    implicit class PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionMutableBuilder[Self <: PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -319,23 +272,18 @@ object appautoscaling {
   }
   object PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification {
     
-    @scala.inline
-    def apply(predefinedMetricType: String): PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification = {
+    inline def apply(predefinedMetricType: String): PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification = {
       val __obj = js.Dynamic.literal(predefinedMetricType = predefinedMetricType.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification]
     }
     
-    @scala.inline
-    implicit class PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecificationMutableBuilder[Self <: PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification](x: Self) {
       
-      @scala.inline
-      def setPredefinedMetricType(value: String): Self = StObject.set(x, "predefinedMetricType", value.asInstanceOf[js.Any])
+      inline def setPredefinedMetricType(value: String): Self = StObject.set(x, "predefinedMetricType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceLabel(value: String): Self = StObject.set(x, "resourceLabel", value.asInstanceOf[js.Any])
+      inline def setResourceLabel(value: String): Self = StObject.set(x, "resourceLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceLabelUndefined: Self = StObject.set(x, "resourceLabel", js.undefined)
+      inline def setResourceLabelUndefined: Self = StObject.set(x, "resourceLabel", js.undefined)
     }
   }
   
@@ -353,26 +301,20 @@ object appautoscaling {
   }
   object ScheduledActionScalableTargetAction {
     
-    @scala.inline
-    def apply(): ScheduledActionScalableTargetAction = {
+    inline def apply(): ScheduledActionScalableTargetAction = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScheduledActionScalableTargetAction]
     }
     
-    @scala.inline
-    implicit class ScheduledActionScalableTargetActionMutableBuilder[Self <: ScheduledActionScalableTargetAction] (val x: Self) extends AnyVal {
+    extension [Self <: ScheduledActionScalableTargetAction](x: Self) {
       
-      @scala.inline
-      def setMaxCapacity(value: Double): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
+      inline def setMaxCapacity(value: Double): Self = StObject.set(x, "maxCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
+      inline def setMaxCapacityUndefined: Self = StObject.set(x, "maxCapacity", js.undefined)
       
-      @scala.inline
-      def setMinCapacity(value: Double): Self = StObject.set(x, "minCapacity", value.asInstanceOf[js.Any])
+      inline def setMinCapacity(value: Double): Self = StObject.set(x, "minCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCapacityUndefined: Self = StObject.set(x, "minCapacity", js.undefined)
+      inline def setMinCapacityUndefined: Self = StObject.set(x, "minCapacity", js.undefined)
     }
   }
 }

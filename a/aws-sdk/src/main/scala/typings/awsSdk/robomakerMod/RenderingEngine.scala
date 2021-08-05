@@ -18,25 +18,19 @@ trait RenderingEngine extends StObject {
 }
 object RenderingEngine {
   
-  @scala.inline
-  def apply(): RenderingEngine = {
+  inline def apply(): RenderingEngine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RenderingEngine]
   }
   
-  @scala.inline
-  implicit class RenderingEngineMutableBuilder[Self <: RenderingEngine] (val x: Self) extends AnyVal {
+  extension [Self <: RenderingEngine](x: Self) {
     
-    @scala.inline
-    def setName(value: RenderingEngineType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RenderingEngineType): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setVersion(value: RenderingEngineVersionType): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: RenderingEngineVersionType): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

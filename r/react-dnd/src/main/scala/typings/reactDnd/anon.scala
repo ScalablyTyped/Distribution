@@ -17,20 +17,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+      inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
+      inline def setShallowUndefined: Self = StObject.set(x, "shallow", js.undefined)
     }
   }
   
@@ -48,39 +44,30 @@ object anon {
   }
   object Backend {
     
-    @scala.inline
-    def apply[BackendContext, BackendOptions](
+    inline def apply[BackendContext, BackendOptions](
       backend: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[js.Any], /* configuration */ js.UndefOr[js.Any]) => typings.dndCore.interfacesMod.Backend
     ): Backend[BackendContext, BackendOptions] = {
       val __obj = js.Dynamic.literal(backend = js.Any.fromFunction3(backend))
       __obj.asInstanceOf[Backend[BackendContext, BackendOptions]]
     }
     
-    @scala.inline
-    implicit class BackendMutableBuilder[Self <: Backend[?, ?], BackendContext, BackendOptions] (val x: Self & (Backend[BackendContext, BackendOptions])) extends AnyVal {
+    extension [Self <: Backend[?, ?], BackendContext, BackendOptions](x: Self & (Backend[BackendContext, BackendOptions])) {
       
-      @scala.inline
-      def setBackend(
+      inline def setBackend(
         value: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[js.Any], /* configuration */ js.UndefOr[js.Any]) => typings.dndCore.interfacesMod.Backend
       ): Self = StObject.set(x, "backend", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setContext(value: BackendContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: BackendContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
+      inline def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
+      inline def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
       
-      @scala.inline
-      def setOptions(value: BackendOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: BackendOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -90,17 +77,14 @@ object anon {
   }
   object DecoratedComponent {
     
-    @scala.inline
-    def apply[C /* <: ComponentType[js.Any] */](DecoratedComponent: C): DecoratedComponent[C] = {
+    inline def apply[C /* <: ComponentType[js.Any] */](DecoratedComponent: C): DecoratedComponent[C] = {
       val __obj = js.Dynamic.literal(DecoratedComponent = DecoratedComponent.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecoratedComponent[C]]
     }
     
-    @scala.inline
-    implicit class DecoratedComponentMutableBuilder[Self <: DecoratedComponent[?], C /* <: ComponentType[js.Any] */] (val x: Self & DecoratedComponent[C]) extends AnyVal {
+    extension [Self <: DecoratedComponent[?], C /* <: ComponentType[js.Any] */](x: Self & DecoratedComponent[C]) {
       
-      @scala.inline
-      def setDecoratedComponent(value: C): Self = StObject.set(x, "DecoratedComponent", value.asInstanceOf[js.Any])
+      inline def setDecoratedComponent(value: C): Self = StObject.set(x, "DecoratedComponent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,17 +94,14 @@ object anon {
   }
   object Dispose {
     
-    @scala.inline
-    def apply(dispose: () => Unit): Dispose = {
+    inline def apply(dispose: () => Unit): Dispose = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
       __obj.asInstanceOf[Dispose]
     }
     
-    @scala.inline
-    implicit class DisposeMutableBuilder[Self <: Dispose] (val x: Self) extends AnyVal {
+    extension [Self <: Dispose](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
   }
   
@@ -130,23 +111,18 @@ object anon {
   }
   object HandlerIds {
     
-    @scala.inline
-    def apply(): HandlerIds = {
+    inline def apply(): HandlerIds = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HandlerIds]
     }
     
-    @scala.inline
-    implicit class HandlerIdsMutableBuilder[Self <: HandlerIds] (val x: Self) extends AnyVal {
+    extension [Self <: HandlerIds](x: Self) {
       
-      @scala.inline
-      def setHandlerIds(value: js.Array[Identifier]): Self = StObject.set(x, "handlerIds", value.asInstanceOf[js.Any])
+      inline def setHandlerIds(value: js.Array[Identifier]): Self = StObject.set(x, "handlerIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerIdsUndefined: Self = StObject.set(x, "handlerIds", js.undefined)
+      inline def setHandlerIdsUndefined: Self = StObject.set(x, "handlerIds", js.undefined)
       
-      @scala.inline
-      def setHandlerIdsVarargs(value: Identifier*): Self = StObject.set(x, "handlerIds", js.Array(value :_*))
+      inline def setHandlerIdsVarargs(value: Identifier*): Self = StObject.set(x, "handlerIds", js.Array(value :_*))
     }
   }
   
@@ -158,17 +134,14 @@ object anon {
   }
   object Manager {
     
-    @scala.inline
-    def apply(manager: DragDropManager): Manager = {
+    inline def apply(manager: DragDropManager): Manager = {
       val __obj = js.Dynamic.literal(manager = manager.asInstanceOf[js.Any])
       __obj.asInstanceOf[Manager]
     }
     
-    @scala.inline
-    implicit class ManagerMutableBuilder[Self <: Manager] (val x: Self) extends AnyVal {
+    extension [Self <: Manager](x: Self) {
       
-      @scala.inline
-      def setManager(value: DragDropManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+      inline def setManager(value: DragDropManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,17 +151,14 @@ object anon {
   }
   object Shallow {
     
-    @scala.inline
-    def apply(shallow: Boolean): Shallow = {
+    inline def apply(shallow: Boolean): Shallow = {
       val __obj = js.Dynamic.literal(shallow = shallow.asInstanceOf[js.Any])
       __obj.asInstanceOf[Shallow]
     }
     
-    @scala.inline
-    implicit class ShallowMutableBuilder[Self <: Shallow] (val x: Self) extends AnyVal {
+    extension [Self <: Shallow](x: Self) {
       
-      @scala.inline
-      def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
+      inline def setShallow(value: Boolean): Self = StObject.set(x, "shallow", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -8,8 +8,7 @@ object global {
   
   // ElementSelector
   // http://www.xjsfl.com/support/api/elements/ItemSelector
-  @scala.inline
-  def $(selector: String): ItemCollection = js.Dynamic.global.applyDynamic("$$")(selector.asInstanceOf[js.Any]).asInstanceOf[ItemCollection]
+  inline def $(selector: String): ItemCollection = js.Dynamic.global.applyDynamic("$$")(selector.asInstanceOf[js.Any]).asInstanceOf[ItemCollection]
   
   @JSGlobal("_Context")
   @js.native
@@ -45,19 +44,16 @@ object global {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def create(): typings.jsfl.Context = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.jsfl.Context]
+    inline def create(): typings.jsfl.Context = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.jsfl.Context]
     
     /* static member */
-    @scala.inline
-    def from(frame: FlashFrame): typings.jsfl.Context = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(frame.asInstanceOf[js.Any]).asInstanceOf[typings.jsfl.Context]
+    inline def from(frame: FlashFrame): typings.jsfl.Context = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(frame.asInstanceOf[js.Any]).asInstanceOf[typings.jsfl.Context]
   }
   
   @JSGlobal("FLfile")
   @js.native
   def FLfile: FlashFLfile = js.native
-  @scala.inline
-  def FLfile_=(x: FlashFLfile): Unit = js.Dynamic.global.updateDynamic("FLfile")(x.asInstanceOf[js.Any])
+  inline def FLfile_=(x: FlashFLfile): Unit = js.Dynamic.global.updateDynamic("FLfile")(x.asInstanceOf[js.Any])
   
   @JSGlobal("_File")
   @js.native
@@ -124,93 +120,72 @@ object global {
   
   // http://www.xjsfl.com/support/guides/working-with-flash/introduction-to-selectors
   // http://www.xjsfl.com/support/api/elements/ElementSelector
-  @scala.inline
-  def _empty(selector: String): ElementCollection = js.Dynamic.global.applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[ElementCollection]
+  inline def _empty(selector: String): ElementCollection = js.Dynamic.global.applyDynamic("$")(selector.asInstanceOf[js.Any]).asInstanceOf[ElementCollection]
   
-  @scala.inline
-  def alert(alertText: String): Unit = js.Dynamic.global.applyDynamic("alert")(alertText.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def alert(alertText: String): Unit = js.Dynamic.global.applyDynamic("alert")(alertText.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def clear(): Unit = js.Dynamic.global.applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(): Unit = js.Dynamic.global.applyDynamic("clear")().asInstanceOf[Unit]
   
-  @scala.inline
-  def confirm(strAlert: String): Boolean = js.Dynamic.global.applyDynamic("confirm")(strAlert.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def confirm(strAlert: String): Boolean = js.Dynamic.global.applyDynamic("confirm")(strAlert.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def debug(item: js.Any): Unit = js.Dynamic.global.applyDynamic("debug")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def debug(item: js.Any): Unit = js.Dynamic.global.applyDynamic("debug")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Global variables
   @JSGlobal("$dom")
   @js.native
   def dom: FlashDocument = js.native
   
-  @scala.inline
-  def dom_=(x: FlashDocument): Unit = js.Dynamic.global.updateDynamic("$dom")(x.asInstanceOf[js.Any])
+  inline def dom_=(x: FlashDocument): Unit = js.Dynamic.global.updateDynamic("$dom")(x.asInstanceOf[js.Any])
   
   @JSGlobal("fl")
   @js.native
   def fl: FlashFL = js.native
-  @scala.inline
-  def fl_=(x: FlashFL): Unit = js.Dynamic.global.updateDynamic("fl")(x.asInstanceOf[js.Any])
+  inline def fl_=(x: FlashFL): Unit = js.Dynamic.global.updateDynamic("fl")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def format(format: String, params: js.Any*): Unit = (js.Dynamic.global.applyDynamic("format")(format.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def format(format: String, params: js.Any*): Unit = (js.Dynamic.global.applyDynamic("format")(format.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // Library / class loading
-  @scala.inline
-  def include(className: String): Unit = js.Dynamic.global.applyDynamic("include")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def include(className: String): Unit = js.Dynamic.global.applyDynamic("include")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Inspection and debugging
-  @scala.inline
-  def inspect(item: js.Any): Unit = js.Dynamic.global.applyDynamic("inspect")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def inspect(item: js.Any): Unit = js.Dynamic.global.applyDynamic("inspect")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("$library")
   @js.native
   def library: FlashLibrary = js.native
   
-  @scala.inline
-  def library_=(x: FlashLibrary): Unit = js.Dynamic.global.updateDynamic("$library")(x.asInstanceOf[js.Any])
+  inline def library_=(x: FlashLibrary): Unit = js.Dynamic.global.updateDynamic("$library")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def list(item: js.Any): Unit = js.Dynamic.global.applyDynamic("list")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def list(item: js.Any): Unit = js.Dynamic.global.applyDynamic("list")(item.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // File
-  @scala.inline
-  def load(filePath: String): String = js.Dynamic.global.applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def load(filePath: String): String = js.Dynamic.global.applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def prompt(promptMsg: String): String = js.Dynamic.global.applyDynamic("prompt")(promptMsg.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def prompt(promptMsg: String, text: String): String = (js.Dynamic.global.applyDynamic("prompt")(promptMsg.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def prompt(promptMsg: String): String = js.Dynamic.global.applyDynamic("prompt")(promptMsg.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def prompt(promptMsg: String, text: String): String = (js.Dynamic.global.applyDynamic("prompt")(promptMsg.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def require(className: String): Unit = js.Dynamic.global.applyDynamic("require")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def require(className: String): Unit = js.Dynamic.global.applyDynamic("require")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def save(filePath: String, data: String): Unit = (js.Dynamic.global.applyDynamic("save")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def save(filePath: String, data: String): Unit = (js.Dynamic.global.applyDynamic("save")(filePath.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("$selection")
   @js.native
   def selection: js.Array[FlashElement] = js.native
   
-  @scala.inline
-  def selection_=(x: js.Array[FlashElement]): Unit = js.Dynamic.global.updateDynamic("$selection")(x.asInstanceOf[js.Any])
+  inline def selection_=(x: js.Array[FlashElement]): Unit = js.Dynamic.global.updateDynamic("$selection")(x.asInstanceOf[js.Any])
   
   @JSGlobal("$timeline")
   @js.native
   def timeline: FlashTimeline = js.native
   
-  @scala.inline
-  def timeline_=(x: FlashTimeline): Unit = js.Dynamic.global.updateDynamic("$timeline")(x.asInstanceOf[js.Any])
+  inline def timeline_=(x: FlashTimeline): Unit = js.Dynamic.global.updateDynamic("$timeline")(x.asInstanceOf[js.Any])
   
   // Global functions
   // Output
-  @scala.inline
-  def trace(args: js.Any*): Unit = js.Dynamic.global.applyDynamic("trace")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def trace(args: js.Any*): Unit = js.Dynamic.global.applyDynamic("trace")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("xjsfl")
   @js.native
   def xjsfl: typings.jsfl.xjsfl = js.native
-  @scala.inline
-  def xjsfl_=(x: xjsfl): Unit = js.Dynamic.global.updateDynamic("xjsfl")(x.asInstanceOf[js.Any])
+  inline def xjsfl_=(x: xjsfl): Unit = js.Dynamic.global.updateDynamic("xjsfl")(x.asInstanceOf[js.Any])
 }

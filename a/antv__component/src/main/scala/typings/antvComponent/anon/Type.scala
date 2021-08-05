@@ -12,20 +12,16 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(style: Stroke, `type`: String): Type = {
+  inline def apply(style: Stroke, `type`: String): Type = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setStyle(value: Stroke): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Stroke): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

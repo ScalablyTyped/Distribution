@@ -32,8 +32,7 @@ trait Classifier extends StObject {
 }
 object Classifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getClassificationsForLine: (java.lang.String, EndOfLineState, Boolean) => ClassificationResult,
     getEncodedLexicalClassifications: (java.lang.String, EndOfLineState, Boolean) => Classifications
   ): Classifier = {
@@ -41,13 +40,10 @@ object Classifier {
     __obj.asInstanceOf[Classifier]
   }
   
-  @scala.inline
-  implicit class ClassifierMutableBuilder[Self <: Classifier] (val x: Self) extends AnyVal {
+  extension [Self <: Classifier](x: Self) {
     
-    @scala.inline
-    def setGetClassificationsForLine(value: (java.lang.String, EndOfLineState, Boolean) => ClassificationResult): Self = StObject.set(x, "getClassificationsForLine", js.Any.fromFunction3(value))
+    inline def setGetClassificationsForLine(value: (java.lang.String, EndOfLineState, Boolean) => ClassificationResult): Self = StObject.set(x, "getClassificationsForLine", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetEncodedLexicalClassifications(value: (java.lang.String, EndOfLineState, Boolean) => Classifications): Self = StObject.set(x, "getEncodedLexicalClassifications", js.Any.fromFunction3(value))
+    inline def setGetEncodedLexicalClassifications(value: (java.lang.String, EndOfLineState, Boolean) => Classifications): Self = StObject.set(x, "getEncodedLexicalClassifications", js.Any.fromFunction3(value))
   }
 }

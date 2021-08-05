@@ -28,8 +28,7 @@ trait AtlasJSONFile
 }
 object AtlasJSONFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     addToMultiFile: File => MultiFile,
     baseURL: String,
@@ -52,10 +51,8 @@ object AtlasJSONFile {
     __obj.asInstanceOf[AtlasJSONFile]
   }
   
-  @scala.inline
-  implicit class AtlasJSONFileMutableBuilder[Self <: AtlasJSONFile] (val x: Self) extends AnyVal {
+  extension [Self <: AtlasJSONFile](x: Self) {
     
-    @scala.inline
-    def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
+    inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }
 }

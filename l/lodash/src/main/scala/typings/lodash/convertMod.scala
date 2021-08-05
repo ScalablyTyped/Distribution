@@ -34,44 +34,32 @@ object convertMod extends Shortcut {
   }
   object ConvertOptions {
     
-    @scala.inline
-    def apply(): ConvertOptions = {
+    inline def apply(): ConvertOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConvertOptions]
     }
     
-    @scala.inline
-    implicit class ConvertOptionsMutableBuilder[Self <: ConvertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConvertOptions](x: Self) {
       
-      @scala.inline
-      def setCap(value: Boolean): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
+      inline def setCap(value: Boolean): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
+      inline def setCapUndefined: Self = StObject.set(x, "cap", js.undefined)
       
-      @scala.inline
-      def setCurry(value: Boolean): Self = StObject.set(x, "curry", value.asInstanceOf[js.Any])
+      inline def setCurry(value: Boolean): Self = StObject.set(x, "curry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurryUndefined: Self = StObject.set(x, "curry", js.undefined)
+      inline def setCurryUndefined: Self = StObject.set(x, "curry", js.undefined)
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+      inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
+      inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
       
-      @scala.inline
-      def setRearg(value: Boolean): Self = StObject.set(x, "rearg", value.asInstanceOf[js.Any])
+      inline def setRearg(value: Boolean): Self = StObject.set(x, "rearg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReargUndefined: Self = StObject.set(x, "rearg", js.undefined)
+      inline def setReargUndefined: Self = StObject.set(x, "rearg", js.undefined)
     }
   }
   

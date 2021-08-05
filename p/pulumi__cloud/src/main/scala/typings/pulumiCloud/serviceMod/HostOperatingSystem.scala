@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HostOperatingSystem extends StObject
 object HostOperatingSystem {
   
-  @scala.inline
-  def linux: typings.pulumiCloud.pulumiCloudStrings.linux = "linux".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.linux]
+  inline def linux: typings.pulumiCloud.pulumiCloudStrings.linux = "linux".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.linux]
   
-  @scala.inline
-  def windows: typings.pulumiCloud.pulumiCloudStrings.windows = "windows".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.windows]
+  inline def windows: typings.pulumiCloud.pulumiCloudStrings.windows = "windows".asInstanceOf[typings.pulumiCloud.pulumiCloudStrings.windows]
 }

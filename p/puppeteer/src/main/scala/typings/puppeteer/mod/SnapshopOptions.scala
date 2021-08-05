@@ -21,25 +21,19 @@ trait SnapshopOptions extends StObject {
 }
 object SnapshopOptions {
   
-  @scala.inline
-  def apply(): SnapshopOptions = {
+  inline def apply(): SnapshopOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshopOptions]
   }
   
-  @scala.inline
-  implicit class SnapshopOptionsMutableBuilder[Self <: SnapshopOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshopOptions](x: Self) {
     
-    @scala.inline
-    def setInterestingOnly(value: Boolean): Self = StObject.set(x, "interestingOnly", value.asInstanceOf[js.Any])
+    inline def setInterestingOnly(value: Boolean): Self = StObject.set(x, "interestingOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterestingOnlyUndefined: Self = StObject.set(x, "interestingOnly", js.undefined)
+    inline def setInterestingOnlyUndefined: Self = StObject.set(x, "interestingOnly", js.undefined)
     
-    @scala.inline
-    def setRoot(value: ElementHandle[Element]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: ElementHandle[Element]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

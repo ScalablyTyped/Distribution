@@ -40,20 +40,16 @@ object mod {
   }
   object BaseOptions {
     
-    @scala.inline
-    def apply(): BaseOptions = {
+    inline def apply(): BaseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseOptions]
     }
     
-    @scala.inline
-    implicit class BaseOptionsMutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseOptions](x: Self) {
       
-      @scala.inline
-      def setInitMethod(value: String): Self = StObject.set(x, "initMethod", value.asInstanceOf[js.Any])
+      inline def setInitMethod(value: String): Self = StObject.set(x, "initMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitMethodUndefined: Self = StObject.set(x, "initMethod", js.undefined)
+      inline def setInitMethodUndefined: Self = StObject.set(x, "initMethod", js.undefined)
     }
   }
 }

@@ -90,62 +90,44 @@ object focusContainerMod {
   }
   object FocusContainerOptionsProps {
     
-    @scala.inline
-    def apply(): FocusContainerOptionsProps = {
+    inline def apply(): FocusContainerOptionsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusContainerOptionsProps]
     }
     
-    @scala.inline
-    implicit class FocusContainerOptionsPropsMutableBuilder[Self <: FocusContainerOptionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: FocusContainerOptionsProps](x: Self) {
       
-      @scala.inline
-      def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: first | last | String): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
+      inline def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
       
-      @scala.inline
-      def setDisableFocusCache(value: Boolean): Self = StObject.set(x, "disableFocusCache", value.asInstanceOf[js.Any])
+      inline def setDisableFocusCache(value: Boolean): Self = StObject.set(x, "disableFocusCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFocusCacheUndefined: Self = StObject.set(x, "disableFocusCache", js.undefined)
+      inline def setDisableFocusCacheUndefined: Self = StObject.set(x, "disableFocusCache", js.undefined)
       
-      @scala.inline
-      def setDisableFocusOnMount(value: Boolean): Self = StObject.set(x, "disableFocusOnMount", value.asInstanceOf[js.Any])
+      inline def setDisableFocusOnMount(value: Boolean): Self = StObject.set(x, "disableFocusOnMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFocusOnMountScroll(value: Boolean): Self = StObject.set(x, "disableFocusOnMountScroll", value.asInstanceOf[js.Any])
+      inline def setDisableFocusOnMountScroll(value: Boolean): Self = StObject.set(x, "disableFocusOnMountScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFocusOnMountScrollUndefined: Self = StObject.set(x, "disableFocusOnMountScroll", js.undefined)
+      inline def setDisableFocusOnMountScrollUndefined: Self = StObject.set(x, "disableFocusOnMountScroll", js.undefined)
       
-      @scala.inline
-      def setDisableFocusOnMountUndefined: Self = StObject.set(x, "disableFocusOnMount", js.undefined)
+      inline def setDisableFocusOnMountUndefined: Self = StObject.set(x, "disableFocusOnMount", js.undefined)
       
-      @scala.inline
-      def setDisableFocusOnUnmount(value: Boolean): Self = StObject.set(x, "disableFocusOnUnmount", value.asInstanceOf[js.Any])
+      inline def setDisableFocusOnUnmount(value: Boolean): Self = StObject.set(x, "disableFocusOnUnmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFocusOnUnmountUndefined: Self = StObject.set(x, "disableFocusOnUnmount", js.undefined)
+      inline def setDisableFocusOnUnmountUndefined: Self = StObject.set(x, "disableFocusOnUnmount", js.undefined)
       
-      @scala.inline
-      def setDisableTabFocusWrap(value: Boolean): Self = StObject.set(x, "disableTabFocusWrap", value.asInstanceOf[js.Any])
+      inline def setDisableTabFocusWrap(value: Boolean): Self = StObject.set(x, "disableTabFocusWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTabFocusWrapUndefined: Self = StObject.set(x, "disableTabFocusWrap", js.undefined)
+      inline def setDisableTabFocusWrapUndefined: Self = StObject.set(x, "disableTabFocusWrap", js.undefined)
       
-      @scala.inline
-      def setUnmountFocusFallback(value: FocusFallback): Self = StObject.set(x, "unmountFocusFallback", value.asInstanceOf[js.Any])
+      inline def setUnmountFocusFallback(value: FocusFallback): Self = StObject.set(x, "unmountFocusFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmountFocusFallbackFunction0(value: () => HTMLElement | Null): Self = StObject.set(x, "unmountFocusFallback", js.Any.fromFunction0(value))
+      inline def setUnmountFocusFallbackFunction0(value: () => HTMLElement | Null): Self = StObject.set(x, "unmountFocusFallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnmountFocusFallbackNull: Self = StObject.set(x, "unmountFocusFallback", null)
+      inline def setUnmountFocusFallbackNull: Self = StObject.set(x, "unmountFocusFallback", null)
       
-      @scala.inline
-      def setUnmountFocusFallbackUndefined: Self = StObject.set(x, "unmountFocusFallback", js.undefined)
+      inline def setUnmountFocusFallbackUndefined: Self = StObject.set(x, "unmountFocusFallback", js.undefined)
     }
   }
   
@@ -164,20 +146,16 @@ object focusContainerMod {
   }
   object FocusContainerProps {
     
-    @scala.inline
-    def apply(): FocusContainerProps = {
+    inline def apply(): FocusContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FocusContainerProps]
     }
     
-    @scala.inline
-    implicit class FocusContainerPropsMutableBuilder[Self <: FocusContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: FocusContainerProps](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ElementType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     }
   }
 }

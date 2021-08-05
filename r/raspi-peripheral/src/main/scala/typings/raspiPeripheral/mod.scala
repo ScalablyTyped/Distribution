@@ -14,9 +14,9 @@ object mod {
     def this(pins: js.Array[String | Double]) = this()
     def this(pins: Double) = this()
     
-    var _alive: js.Any = js.native
+    /* private */ var _alive: js.Any = js.native
     
-    var _pins: js.Any = js.native
+    /* private */ var _pins: js.Any = js.native
     
     val alive: Boolean = js.native
     

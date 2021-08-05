@@ -71,65 +71,46 @@ object selectMod {
   }
   object PluralPropsWithoutI18n {
     
-    @scala.inline
-    def apply(value: Double | String): PluralPropsWithoutI18n = {
+    inline def apply(value: Double | String): PluralPropsWithoutI18n = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluralPropsWithoutI18n]
     }
     
-    @scala.inline
-    implicit class PluralPropsWithoutI18nMutableBuilder[Self <: PluralPropsWithoutI18n] (val x: Self) extends AnyVal {
+    extension [Self <: PluralPropsWithoutI18n](x: Self) {
       
-      @scala.inline
-      def setFew(value: ReactNode): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
+      inline def setFew(value: ReactNode): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
+      inline def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMany(value: ReactNode): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
+      inline def setMany(value: ReactNode): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
+      inline def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOne(value: ReactNode): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+      inline def setOne(value: ReactNode): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
+      inline def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
       
-      @scala.inline
-      def setOther(value: ReactNode): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: ReactNode): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
       
-      @scala.inline
-      def setTwo(value: ReactNode): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
+      inline def setTwo(value: ReactNode): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
+      inline def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZero(value: ReactNode): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+      inline def setZero(value: ReactNode): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+      inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
     }
   }
   
@@ -146,29 +127,22 @@ object selectMod {
   }
   object SelectPropsWithoutI18n {
     
-    @scala.inline
-    def apply(value: String): SelectPropsWithoutI18n = {
+    inline def apply(value: String): SelectPropsWithoutI18n = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectPropsWithoutI18n]
     }
     
-    @scala.inline
-    implicit class SelectPropsWithoutI18nMutableBuilder[Self <: SelectPropsWithoutI18n] (val x: Self) extends AnyVal {
+    extension [Self <: SelectPropsWithoutI18n](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOther(value: ReactNode): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: ReactNode): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
+      inline def setOtherUndefined: Self = StObject.set(x, "other", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

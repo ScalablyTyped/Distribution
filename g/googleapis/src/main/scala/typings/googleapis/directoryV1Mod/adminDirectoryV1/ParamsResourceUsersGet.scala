@@ -40,43 +40,31 @@ trait ParamsResourceUsersGet
 }
 object ParamsResourceUsersGet {
   
-  @scala.inline
-  def apply(): ParamsResourceUsersGet = {
+  inline def apply(): ParamsResourceUsersGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceUsersGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceUsersGetMutableBuilder[Self <: ParamsResourceUsersGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceUsersGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCustomFieldMask(value: String): Self = StObject.set(x, "customFieldMask", value.asInstanceOf[js.Any])
+    inline def setCustomFieldMask(value: String): Self = StObject.set(x, "customFieldMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFieldMaskUndefined: Self = StObject.set(x, "customFieldMask", js.undefined)
+    inline def setCustomFieldMaskUndefined: Self = StObject.set(x, "customFieldMask", js.undefined)
     
-    @scala.inline
-    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
+    inline def setUserKey(value: String): Self = StObject.set(x, "userKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
+    inline def setUserKeyUndefined: Self = StObject.set(x, "userKey", js.undefined)
     
-    @scala.inline
-    def setViewType(value: String): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: String): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
+    inline def setViewTypeUndefined: Self = StObject.set(x, "viewType", js.undefined)
   }
 }

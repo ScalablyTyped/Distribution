@@ -16,20 +16,16 @@ trait CellGroupRenderer extends StObject {
 }
 object CellGroupRenderer {
   
-  @scala.inline
-  def apply(cellGroupRenderer: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]): CellGroupRenderer = {
+  inline def apply(cellGroupRenderer: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]): CellGroupRenderer = {
     val __obj = js.Dynamic.literal(cellGroupRenderer = js.Any.fromFunction1(cellGroupRenderer))
     __obj.updateDynamic("aria-label")("grid")
     __obj.asInstanceOf[CellGroupRenderer]
   }
   
-  @scala.inline
-  implicit class CellGroupRendererMutableBuilder[Self <: CellGroupRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: CellGroupRenderer](x: Self) {
     
-    @scala.inline
-    def `setAria-label`(value: grid): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+    inline def `setAria-label`(value: grid): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellGroupRenderer(value: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]): Self = StObject.set(x, "cellGroupRenderer", js.Any.fromFunction1(value))
+    inline def setCellGroupRenderer(value: /* params */ CollectionCellGroupRendererParams => js.Array[ReactNode]): Self = StObject.set(x, "cellGroupRenderer", js.Any.fromFunction1(value))
   }
 }

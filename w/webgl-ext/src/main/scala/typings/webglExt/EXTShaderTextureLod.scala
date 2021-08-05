@@ -10,16 +10,13 @@ trait EXTShaderTextureLod extends StObject {
 }
 object EXTShaderTextureLod {
   
-  @scala.inline
-  def apply(__EXT_shader_texture_lod: Unit): EXTShaderTextureLod = {
+  inline def apply(__EXT_shader_texture_lod: Unit): EXTShaderTextureLod = {
     val __obj = js.Dynamic.literal(__EXT_shader_texture_lod = __EXT_shader_texture_lod.asInstanceOf[js.Any])
     __obj.asInstanceOf[EXTShaderTextureLod]
   }
   
-  @scala.inline
-  implicit class EXTShaderTextureLodMutableBuilder[Self <: EXTShaderTextureLod] (val x: Self) extends AnyVal {
+  extension [Self <: EXTShaderTextureLod](x: Self) {
     
-    @scala.inline
-    def set__EXT_shader_texture_lod(value: Unit): Self = StObject.set(x, "__EXT_shader_texture_lod", value.asInstanceOf[js.Any])
+    inline def set__EXT_shader_texture_lod(value: Unit): Self = StObject.set(x, "__EXT_shader_texture_lod", value.asInstanceOf[js.Any])
   }
 }

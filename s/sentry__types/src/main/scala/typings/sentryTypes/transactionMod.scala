@@ -47,35 +47,26 @@ object transactionMod {
   }
   object SamplingContext {
     
-    @scala.inline
-    def apply(transactionContext: TransactionContext): SamplingContext = {
+    inline def apply(transactionContext: TransactionContext): SamplingContext = {
       val __obj = js.Dynamic.literal(transactionContext = transactionContext.asInstanceOf[js.Any])
       __obj.asInstanceOf[SamplingContext]
     }
     
-    @scala.inline
-    implicit class SamplingContextMutableBuilder[Self <: SamplingContext] (val x: Self) extends AnyVal {
+    extension [Self <: SamplingContext](x: Self) {
       
-      @scala.inline
-      def setLocation(value: WorkerLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: WorkerLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setParentSampled(value: Boolean): Self = StObject.set(x, "parentSampled", value.asInstanceOf[js.Any])
+      inline def setParentSampled(value: Boolean): Self = StObject.set(x, "parentSampled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentSampledUndefined: Self = StObject.set(x, "parentSampled", js.undefined)
+      inline def setParentSampledUndefined: Self = StObject.set(x, "parentSampled", js.undefined)
       
-      @scala.inline
-      def setRequest(value: ExtractedNodeRequestData): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: ExtractedNodeRequestData): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setTransactionContext(value: TransactionContext): Self = StObject.set(x, "transactionContext", value.asInstanceOf[js.Any])
+      inline def setTransactionContext(value: TransactionContext): Self = StObject.set(x, "transactionContext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,32 +81,24 @@ object transactionMod {
   }
   object TraceparentData {
     
-    @scala.inline
-    def apply(): TraceparentData = {
+    inline def apply(): TraceparentData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TraceparentData]
     }
     
-    @scala.inline
-    implicit class TraceparentDataMutableBuilder[Self <: TraceparentData] (val x: Self) extends AnyVal {
+    extension [Self <: TraceparentData](x: Self) {
       
-      @scala.inline
-      def setParentSampled(value: Boolean): Self = StObject.set(x, "parentSampled", value.asInstanceOf[js.Any])
+      inline def setParentSampled(value: Boolean): Self = StObject.set(x, "parentSampled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentSampledUndefined: Self = StObject.set(x, "parentSampled", js.undefined)
+      inline def setParentSampledUndefined: Self = StObject.set(x, "parentSampled", js.undefined)
       
-      @scala.inline
-      def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
+      inline def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
+      inline def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
       
-      @scala.inline
-      def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+      inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
+      inline def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
     }
   }
   
@@ -253,29 +236,22 @@ object transactionMod {
   }
   object TransactionContext {
     
-    @scala.inline
-    def apply(name: String): TransactionContext = {
+    inline def apply(name: String): TransactionContext = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionContext]
     }
     
-    @scala.inline
-    implicit class TransactionContextMutableBuilder[Self <: TransactionContext] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionContext](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentSampled(value: Boolean): Self = StObject.set(x, "parentSampled", value.asInstanceOf[js.Any])
+      inline def setParentSampled(value: Boolean): Self = StObject.set(x, "parentSampled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentSampledUndefined: Self = StObject.set(x, "parentSampled", js.undefined)
+      inline def setParentSampledUndefined: Self = StObject.set(x, "parentSampled", js.undefined)
       
-      @scala.inline
-      def setTrimEnd(value: Boolean): Self = StObject.set(x, "trimEnd", value.asInstanceOf[js.Any])
+      inline def setTrimEnd(value: Boolean): Self = StObject.set(x, "trimEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimEndUndefined: Self = StObject.set(x, "trimEnd", js.undefined)
+      inline def setTrimEndUndefined: Self = StObject.set(x, "trimEnd", js.undefined)
     }
   }
 }

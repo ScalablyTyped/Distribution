@@ -23,26 +23,17 @@ object mod {
   @js.native
   val SAVE: String = js.native
   
-  @scala.inline
-  def createLoader[TState](engine: StorageEngine): Loader[TState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoader")(engine.asInstanceOf[js.Any]).asInstanceOf[Loader[TState]]
+  inline def createLoader[TState](engine: StorageEngine): Loader[TState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLoader")(engine.asInstanceOf[js.Any]).asInstanceOf[Loader[TState]]
   
-  @scala.inline
-  def createMiddleware(engine: StorageEngine): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  @scala.inline
-  def createMiddleware(engine: StorageEngine, actionBlacklist: js.Array[String]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  @scala.inline
-  def createMiddleware(engine: StorageEngine, actionBlacklist: js.Array[String], actionWhitelist: js.Array[String]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any], actionWhitelist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  @scala.inline
-  def createMiddleware(engine: StorageEngine, actionBlacklist: js.Array[String], actionWhitelist: ActionTypeCheckCallback): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any], actionWhitelist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  @scala.inline
-  def createMiddleware(engine: StorageEngine, actionBlacklist: Unit, actionWhitelist: js.Array[String]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any], actionWhitelist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
-  @scala.inline
-  def createMiddleware(engine: StorageEngine, actionBlacklist: Unit, actionWhitelist: ActionTypeCheckCallback): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any], actionWhitelist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(engine: StorageEngine): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(engine: StorageEngine, actionBlacklist: js.Array[String]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(engine: StorageEngine, actionBlacklist: js.Array[String], actionWhitelist: js.Array[String]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any], actionWhitelist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(engine: StorageEngine, actionBlacklist: js.Array[String], actionWhitelist: ActionTypeCheckCallback): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any], actionWhitelist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(engine: StorageEngine, actionBlacklist: Unit, actionWhitelist: js.Array[String]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any], actionWhitelist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  inline def createMiddleware(engine: StorageEngine, actionBlacklist: Unit, actionWhitelist: ActionTypeCheckCallback): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMiddleware")(engine.asInstanceOf[js.Any], actionBlacklist.asInstanceOf[js.Any], actionWhitelist.asInstanceOf[js.Any])).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
   
-  @scala.inline
-  def reducer[TState](reducer: Reducer[TState, AnyAction]): Reducer[TState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(reducer.asInstanceOf[js.Any]).asInstanceOf[Reducer[TState, AnyAction]]
-  @scala.inline
-  def reducer[TState](reducer: Reducer[TState, AnyAction], merger: StateMerger): Reducer[TState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(reducer.asInstanceOf[js.Any], merger.asInstanceOf[js.Any])).asInstanceOf[Reducer[TState, AnyAction]]
+  inline def reducer[TState](reducer: Reducer[TState, AnyAction]): Reducer[TState, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(reducer.asInstanceOf[js.Any]).asInstanceOf[Reducer[TState, AnyAction]]
+  inline def reducer[TState](reducer: Reducer[TState, AnyAction], merger: StateMerger): Reducer[TState, AnyAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("reducer")(reducer.asInstanceOf[js.Any], merger.asInstanceOf[js.Any])).asInstanceOf[Reducer[TState, AnyAction]]
   
   type ActionTypeCheckCallback = js.Function1[/* type */ String, Boolean]
   
@@ -68,20 +59,16 @@ object mod {
   }
   object StorageEngine {
     
-    @scala.inline
-    def apply(load: () => js.Thenable[js.Any], save: js.Any => js.Thenable[js.Any]): StorageEngine = {
+    inline def apply(load: () => js.Thenable[js.Any], save: js.Any => js.Thenable[js.Any]): StorageEngine = {
       val __obj = js.Dynamic.literal(load = js.Any.fromFunction0(load), save = js.Any.fromFunction1(save))
       __obj.asInstanceOf[StorageEngine]
     }
     
-    @scala.inline
-    implicit class StorageEngineMutableBuilder[Self <: StorageEngine] (val x: Self) extends AnyVal {
+    extension [Self <: StorageEngine](x: Self) {
       
-      @scala.inline
-      def setLoad(value: () => js.Thenable[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => js.Thenable[js.Any]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSave(value: js.Any => js.Thenable[js.Any]): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+      inline def setSave(value: js.Any => js.Thenable[js.Any]): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
     }
   }
 }

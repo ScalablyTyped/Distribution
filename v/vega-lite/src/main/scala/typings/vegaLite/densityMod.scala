@@ -16,6 +16,6 @@ object densityMod {
     
     def assemble(): KDETransform = js.native
     
-    var transform: js.Any = js.native
+    /* private */ var transform: js.Any = js.native
   }
 }

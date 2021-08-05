@@ -13,16 +13,13 @@ trait SlackConnectorProfileProperties extends StObject {
 }
 object SlackConnectorProfileProperties {
   
-  @scala.inline
-  def apply(instanceUrl: InstanceUrl): SlackConnectorProfileProperties = {
+  inline def apply(instanceUrl: InstanceUrl): SlackConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(instanceUrl = instanceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlackConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class SlackConnectorProfilePropertiesMutableBuilder[Self <: SlackConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SlackConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
+    inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }
 }

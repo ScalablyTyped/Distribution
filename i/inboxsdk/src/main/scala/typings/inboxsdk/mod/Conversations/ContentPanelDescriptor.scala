@@ -25,52 +25,37 @@ trait ContentPanelDescriptor extends StObject {
 }
 object ContentPanelDescriptor {
   
-  @scala.inline
-  def apply(el: HTMLElement, iconUrl: String, title: String): ContentPanelDescriptor = {
+  inline def apply(el: HTMLElement, iconUrl: String, title: String): ContentPanelDescriptor = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], iconUrl = iconUrl.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentPanelDescriptor]
   }
   
-  @scala.inline
-  implicit class ContentPanelDescriptorMutableBuilder[Self <: ContentPanelDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ContentPanelDescriptor](x: Self) {
     
-    @scala.inline
-    def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
+    inline def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIconUrlUndefined: Self = StObject.set(x, "appIconUrl", js.undefined)
+    inline def setAppIconUrlUndefined: Self = StObject.set(x, "appIconUrl", js.undefined)
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
-    @scala.inline
-    def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideTitleBar(value: Boolean): Self = StObject.set(x, "hideTitleBar", value.asInstanceOf[js.Any])
+    inline def setHideTitleBar(value: Boolean): Self = StObject.set(x, "hideTitleBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideTitleBarUndefined: Self = StObject.set(x, "hideTitleBar", js.undefined)
+    inline def setHideTitleBarUndefined: Self = StObject.set(x, "hideTitleBar", js.undefined)
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+    inline def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+    inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

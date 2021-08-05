@@ -39,63 +39,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SVGPathCommand extends StObject
 object SVGPathCommand {
   
-  @scala.inline
-  def A: typings.highcharts.highchartsStrings.A = "A".asInstanceOf[typings.highcharts.highchartsStrings.A]
+  inline def A: typings.highcharts.highchartsStrings.A = "A".asInstanceOf[typings.highcharts.highchartsStrings.A]
   
-  @scala.inline
-  def C: typings.highcharts.highchartsStrings.C = "C".asInstanceOf[typings.highcharts.highchartsStrings.C]
+  inline def C: typings.highcharts.highchartsStrings.C = "C".asInstanceOf[typings.highcharts.highchartsStrings.C]
   
-  @scala.inline
-  def H: typings.highcharts.highchartsStrings.H = "H".asInstanceOf[typings.highcharts.highchartsStrings.H]
+  inline def H: typings.highcharts.highchartsStrings.H = "H".asInstanceOf[typings.highcharts.highchartsStrings.H]
   
-  @scala.inline
-  def L: typings.highcharts.highchartsStrings.L = "L".asInstanceOf[typings.highcharts.highchartsStrings.L]
+  inline def L: typings.highcharts.highchartsStrings.L = "L".asInstanceOf[typings.highcharts.highchartsStrings.L]
   
-  @scala.inline
-  def M: typings.highcharts.highchartsStrings.M = "M".asInstanceOf[typings.highcharts.highchartsStrings.M]
+  inline def M: typings.highcharts.highchartsStrings.M = "M".asInstanceOf[typings.highcharts.highchartsStrings.M]
   
-  @scala.inline
-  def Q: typings.highcharts.highchartsStrings.Q = "Q".asInstanceOf[typings.highcharts.highchartsStrings.Q]
+  inline def Q: typings.highcharts.highchartsStrings.Q = "Q".asInstanceOf[typings.highcharts.highchartsStrings.Q]
   
-  @scala.inline
-  def S: typings.highcharts.highchartsStrings.S = "S".asInstanceOf[typings.highcharts.highchartsStrings.S]
+  inline def S: typings.highcharts.highchartsStrings.S = "S".asInstanceOf[typings.highcharts.highchartsStrings.S]
   
-  @scala.inline
-  def T: typings.highcharts.highchartsStrings.T = "T".asInstanceOf[typings.highcharts.highchartsStrings.T]
+  inline def T: typings.highcharts.highchartsStrings.T = "T".asInstanceOf[typings.highcharts.highchartsStrings.T]
   
-  @scala.inline
-  def V: typings.highcharts.highchartsStrings.V = "V".asInstanceOf[typings.highcharts.highchartsStrings.V]
+  inline def V: typings.highcharts.highchartsStrings.V = "V".asInstanceOf[typings.highcharts.highchartsStrings.V]
   
-  @scala.inline
-  def Z: typings.highcharts.highchartsStrings.Z = "Z".asInstanceOf[typings.highcharts.highchartsStrings.Z]
+  inline def Z: typings.highcharts.highchartsStrings.Z = "Z".asInstanceOf[typings.highcharts.highchartsStrings.Z]
   
-  @scala.inline
-  def a: a_ = "a".asInstanceOf[a_]
+  inline def a: a_ = "a".asInstanceOf[a_]
   
-  @scala.inline
-  def c: c_ = "c".asInstanceOf[c_]
+  inline def c: c_ = "c".asInstanceOf[c_]
   
-  @scala.inline
-  def h: h_ = "h".asInstanceOf[h_]
+  inline def h: h_ = "h".asInstanceOf[h_]
   
-  @scala.inline
-  def l: l_ = "l".asInstanceOf[l_]
+  inline def l: l_ = "l".asInstanceOf[l_]
   
-  @scala.inline
-  def m: m_ = "m".asInstanceOf[m_]
+  inline def m: m_ = "m".asInstanceOf[m_]
   
-  @scala.inline
-  def q: q_ = "q".asInstanceOf[q_]
+  inline def q: q_ = "q".asInstanceOf[q_]
   
-  @scala.inline
-  def s: s_ = "s".asInstanceOf[s_]
+  inline def s: s_ = "s".asInstanceOf[s_]
   
-  @scala.inline
-  def t: t_ = "t".asInstanceOf[t_]
+  inline def t: t_ = "t".asInstanceOf[t_]
   
-  @scala.inline
-  def v: v_ = "v".asInstanceOf[v_]
+  inline def v: v_ = "v".asInstanceOf[v_]
   
-  @scala.inline
-  def z: z_ = "z".asInstanceOf[z_]
+  inline def z: z_ = "z".asInstanceOf[z_]
 }

@@ -30,8 +30,7 @@ trait ClassName extends StObject {
 }
 object ClassName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     className: () => js.Any,
     click: () => js.Any,
     exists: () => Boolean,
@@ -48,40 +47,28 @@ object ClassName {
     __obj.asInstanceOf[ClassName]
   }
   
-  @scala.inline
-  implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+  extension [Self <: ClassName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: () => js.Any): Self = StObject.set(x, "className", js.Any.fromFunction0(value))
+    inline def setClassName(value: () => js.Any): Self = StObject.set(x, "className", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHighlightedStrings(value: () => js.Array[String]): Self = StObject.set(x, "getHighlightedStrings", js.Any.fromFunction0(value))
+    inline def setGetHighlightedStrings(value: () => js.Array[String]): Self = StObject.set(x, "getHighlightedStrings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => js.Any): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => js.Any): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsHovered(value: () => Boolean): Self = StObject.set(x, "isHovered", js.Any.fromFunction0(value))
+    inline def setIsHovered(value: () => Boolean): Self = StObject.set(x, "isHovered", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSelectable(value: () => Boolean): Self = StObject.set(x, "isSelectable", js.Any.fromFunction0(value))
+    inline def setIsSelectable(value: () => Boolean): Self = StObject.set(x, "isSelectable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSelected(value: () => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
+    inline def setIsSelected(value: () => Boolean): Self = StObject.set(x, "isSelected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseEnter(value: () => js.Any): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+    inline def setMouseEnter(value: () => js.Any): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
   }
 }

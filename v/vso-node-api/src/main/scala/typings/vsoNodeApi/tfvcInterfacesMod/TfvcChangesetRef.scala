@@ -50,8 +50,7 @@ trait TfvcChangesetRef extends StObject {
 }
 object TfvcChangesetRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     author: IdentityRef,
     changesetId: Double,
@@ -65,31 +64,22 @@ object TfvcChangesetRef {
     __obj.asInstanceOf[TfvcChangesetRef]
   }
   
-  @scala.inline
-  implicit class TfvcChangesetRefMutableBuilder[Self <: TfvcChangesetRef] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcChangesetRef](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: IdentityRef): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: IdentityRef): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesetId(value: Double): Self = StObject.set(x, "changesetId", value.asInstanceOf[js.Any])
+    inline def setChangesetId(value: Double): Self = StObject.set(x, "changesetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedInBy(value: IdentityRef): Self = StObject.set(x, "checkedInBy", value.asInstanceOf[js.Any])
+    inline def setCheckedInBy(value: IdentityRef): Self = StObject.set(x, "checkedInBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentTruncated(value: Boolean): Self = StObject.set(x, "commentTruncated", value.asInstanceOf[js.Any])
+    inline def setCommentTruncated(value: Boolean): Self = StObject.set(x, "commentTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

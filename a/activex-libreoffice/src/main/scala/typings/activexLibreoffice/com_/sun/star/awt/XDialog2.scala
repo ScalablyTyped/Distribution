@@ -21,8 +21,7 @@ trait XDialog2
 }
 object XDialog2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Title: String,
     acquire: () => Unit,
     endDialog: Double => Unit,
@@ -38,13 +37,10 @@ object XDialog2 {
     __obj.asInstanceOf[XDialog2]
   }
   
-  @scala.inline
-  implicit class XDialog2MutableBuilder[Self <: XDialog2] (val x: Self) extends AnyVal {
+  extension [Self <: XDialog2](x: Self) {
     
-    @scala.inline
-    def setEndDialog(value: Double => Unit): Self = StObject.set(x, "endDialog", js.Any.fromFunction1(value))
+    inline def setEndDialog(value: Double => Unit): Self = StObject.set(x, "endDialog", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHelpId(value: String => Unit): Self = StObject.set(x, "setHelpId", js.Any.fromFunction1(value))
+    inline def setSetHelpId(value: String => Unit): Self = StObject.set(x, "setHelpId", js.Any.fromFunction1(value))
   }
 }

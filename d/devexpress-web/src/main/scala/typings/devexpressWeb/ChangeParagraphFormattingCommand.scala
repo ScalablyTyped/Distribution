@@ -24,8 +24,7 @@ trait ChangeParagraphFormattingCommand
 }
 object ChangeParagraphFormattingCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: ParagraphFormattingSettings => Boolean,
     getState: () => CommandState[ParagraphFormattingSettings]
   ): ChangeParagraphFormattingCommand = {
@@ -33,13 +32,10 @@ object ChangeParagraphFormattingCommand {
     __obj.asInstanceOf[ChangeParagraphFormattingCommand]
   }
   
-  @scala.inline
-  implicit class ChangeParagraphFormattingCommandMutableBuilder[Self <: ChangeParagraphFormattingCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeParagraphFormattingCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: ParagraphFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: ParagraphFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[ParagraphFormattingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[ParagraphFormattingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

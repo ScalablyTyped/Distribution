@@ -17,8 +17,7 @@ trait ObjectExpression_
 }
 object ObjectExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     loc: SourceLocation,
     properties: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadProperty_],
@@ -29,16 +28,12 @@ object ObjectExpression_ {
     __obj.asInstanceOf[ObjectExpression_]
   }
   
-  @scala.inline
-  implicit class ObjectExpression_MutableBuilder[Self <: ObjectExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectExpression_](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[ObjectProperty_ | ObjectMethod_ | SpreadProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: (ObjectProperty_ | ObjectMethod_ | SpreadProperty_)*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: (ObjectProperty_ | ObjectMethod_ | SpreadProperty_)*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ObjectExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

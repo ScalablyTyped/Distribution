@@ -18,28 +18,21 @@ trait ListEmailIdentitiesResponse extends StObject {
 }
 object ListEmailIdentitiesResponse {
   
-  @scala.inline
-  def apply(): ListEmailIdentitiesResponse = {
+  inline def apply(): ListEmailIdentitiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEmailIdentitiesResponse]
   }
   
-  @scala.inline
-  implicit class ListEmailIdentitiesResponseMutableBuilder[Self <: ListEmailIdentitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEmailIdentitiesResponse](x: Self) {
     
-    @scala.inline
-    def setEmailIdentities(value: IdentityInfoList): Self = StObject.set(x, "EmailIdentities", value.asInstanceOf[js.Any])
+    inline def setEmailIdentities(value: IdentityInfoList): Self = StObject.set(x, "EmailIdentities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailIdentitiesUndefined: Self = StObject.set(x, "EmailIdentities", js.undefined)
+    inline def setEmailIdentitiesUndefined: Self = StObject.set(x, "EmailIdentities", js.undefined)
     
-    @scala.inline
-    def setEmailIdentitiesVarargs(value: IdentityInfo*): Self = StObject.set(x, "EmailIdentities", js.Array(value :_*))
+    inline def setEmailIdentitiesVarargs(value: IdentityInfo*): Self = StObject.set(x, "EmailIdentities", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

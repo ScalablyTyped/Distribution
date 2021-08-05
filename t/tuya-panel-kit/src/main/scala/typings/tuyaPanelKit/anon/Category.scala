@@ -15,25 +15,19 @@ trait Category extends StObject {
 }
 object Category {
   
-  @scala.inline
-  def apply(category: String, data: GotoDpAlarmData, repeat: Double): Category = {
+  inline def apply(category: String, data: GotoDpAlarmData, repeat: Double): Category = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any])
     __obj.asInstanceOf[Category]
   }
   
-  @scala.inline
-  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+  extension [Self <: Category](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: GotoDpAlarmData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: GotoDpAlarmData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: DpId*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: DpId*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
   }
 }

@@ -44,15 +44,12 @@ object FeatureRequests {
     /* 2 */ val requestNewFeature: typings.instabugReactnative.mod.FeatureRequests.actionTypes.requestNewFeature & Double = js.native
   }
   
-  @scala.inline
-  def setEmailFieldRequired(
+  inline def setEmailFieldRequired(
     isEmailFieldRequired: Boolean,
     actionTypes: js.Array[typings.instabugReactnative.mod.FeatureRequests.actionTypes]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEmailFieldRequired")(isEmailFieldRequired.asInstanceOf[js.Any], actionTypes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+  inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
 }

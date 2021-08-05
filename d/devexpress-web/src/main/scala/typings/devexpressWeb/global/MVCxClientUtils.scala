@@ -22,8 +22,7 @@ object MVCxClientUtils {
     * Loads service resources (such as scripts, CSS files, etc.) required for DevExpress functionality to work properly after a non DevExpress callback has been processed on the server and returned back to the client.
     */
   /* static member */
-  @scala.inline
-  def FinalizeCallback(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FinalizeCallback")().asInstanceOf[Unit]
+  inline def FinalizeCallback(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FinalizeCallback")().asInstanceOf[Unit]
   
   /**
     * Returns values of editors placed in the specified container. An object containing pairs of editor names and values.
@@ -31,10 +30,8 @@ object MVCxClientUtils {
     * @param processInvisibleEditors true to process both visible and invisible editors that belong to the specified container; false to process only visible editors.
     */
   /* static member */
-  @scala.inline
-  def GetSerializedEditorValuesInContainer(containerOrId: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSerializedEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def GetSerializedEditorValuesInContainer(containerOrId: js.Any, processInvisibleEditors: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetSerializedEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any], processInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def GetSerializedEditorValuesInContainer(containerOrId: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSerializedEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def GetSerializedEditorValuesInContainer(containerOrId: js.Any, processInvisibleEditors: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetSerializedEditorValuesInContainer")(containerOrId.asInstanceOf[js.Any], processInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Performs unobtrusive validation for editors in the specified container. true, if editors in the container pass the validation' otherwise, false.
@@ -42,10 +39,8 @@ object MVCxClientUtils {
     * @param validateInvisibleEditors true, to validate visible and invisible DevExpress editors in the container; otherwise, to validate only visible editors.
     */
   /* static member */
-  @scala.inline
-  def PerformValidationInContainer(container: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("PerformValidationInContainer")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def PerformValidationInContainer(container: js.Any, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PerformValidationInContainer")(container.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def PerformValidationInContainer(container: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("PerformValidationInContainer")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def PerformValidationInContainer(container: js.Any, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PerformValidationInContainer")(container.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Performs unobtrusive validation for editors in the specified container. true, if editors in the container pass the validation' otherwise, false.
@@ -53,8 +48,6 @@ object MVCxClientUtils {
     * @param validateInvisibleEditors true, to validate visible and invisible DevExpress editors in the container; otherwise, to validate only visible editors.
     */
   /* static member */
-  @scala.inline
-  def PerformValidationInContainerById(containerId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("PerformValidationInContainerById")(containerId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def PerformValidationInContainerById(containerId: String, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PerformValidationInContainerById")(containerId.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def PerformValidationInContainerById(containerId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("PerformValidationInContainerById")(containerId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def PerformValidationInContainerById(containerId: String, validateInvisibleEditors: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PerformValidationInContainerById")(containerId.asInstanceOf[js.Any], validateInvisibleEditors.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

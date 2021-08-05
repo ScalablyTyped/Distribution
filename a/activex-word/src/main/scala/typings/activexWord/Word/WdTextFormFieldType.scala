@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdTextFormFieldType extends StObject
 object WdTextFormFieldType {
   
-  @scala.inline
-  def wdCalculationText: `5` = 5.asInstanceOf[`5`]
+  inline def wdCalculationText: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdCurrentDateText: `3` = 3.asInstanceOf[`3`]
+  inline def wdCurrentDateText: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdCurrentTimeText: `4` = 4.asInstanceOf[`4`]
+  inline def wdCurrentTimeText: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdDateText: `2` = 2.asInstanceOf[`2`]
+  inline def wdDateText: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdNumberText: `1` = 1.asInstanceOf[`1`]
+  inline def wdNumberText: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdRegularText: `0` = 0.asInstanceOf[`0`]
+  inline def wdRegularText: `0` = 0.asInstanceOf[`0`]
 }

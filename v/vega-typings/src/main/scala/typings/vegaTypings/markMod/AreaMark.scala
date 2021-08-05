@@ -17,17 +17,14 @@ trait AreaMark
 }
 object AreaMark {
   
-  @scala.inline
-  def apply(): AreaMark = {
+  inline def apply(): AreaMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("area")
     __obj.asInstanceOf[AreaMark]
   }
   
-  @scala.inline
-  implicit class AreaMarkMutableBuilder[Self <: AreaMark] (val x: Self) extends AnyVal {
+  extension [Self <: AreaMark](x: Self) {
     
-    @scala.inline
-    def setType(value: area): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: area): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

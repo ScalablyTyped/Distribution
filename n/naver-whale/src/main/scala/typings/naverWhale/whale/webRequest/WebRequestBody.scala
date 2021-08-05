@@ -24,34 +24,25 @@ trait WebRequestBody extends StObject {
 }
 object WebRequestBody {
   
-  @scala.inline
-  def apply(): WebRequestBody = {
+  inline def apply(): WebRequestBody = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebRequestBody]
   }
   
-  @scala.inline
-  implicit class WebRequestBodyMutableBuilder[Self <: WebRequestBody] (val x: Self) extends AnyVal {
+  extension [Self <: WebRequestBody](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFormData(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    @scala.inline
-    def setRaw(value: js.Array[typings.chrome.chrome.webRequest.UploadData]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: js.Array[typings.chrome.chrome.webRequest.UploadData]): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setRawVarargs(value: typings.chrome.chrome.webRequest.UploadData*): Self = StObject.set(x, "raw", js.Array(value :_*))
+    inline def setRawVarargs(value: typings.chrome.chrome.webRequest.UploadData*): Self = StObject.set(x, "raw", js.Array(value :_*))
   }
 }

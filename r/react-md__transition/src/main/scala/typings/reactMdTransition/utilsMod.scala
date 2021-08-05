@@ -13,8 +13,7 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getClassNames(
+  inline def getClassNames(
     classNames: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionClassNames */ js.Any,
     timeout: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionStageTimeouts */ js.Any,
     disableAppearAsEnter: Boolean
@@ -24,16 +23,12 @@ object utilsMod {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionStageClassNames */ js.Any
   ]]
   
-  @scala.inline
-  def getElementSizing(): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")().asInstanceOf[CollapseSizing]
-  @scala.inline
-  def getElementSizing(element: HTMLElement): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")(element.asInstanceOf[js.Any]).asInstanceOf[CollapseSizing]
+  inline def getElementSizing(): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")().asInstanceOf[CollapseSizing]
+  inline def getElementSizing(element: HTMLElement): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")(element.asInstanceOf[js.Any]).asInstanceOf[CollapseSizing]
   
-  @scala.inline
-  def getNextStage(stage: TransitionStage, transitionIn: Boolean): TransitionStage = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextStage")(stage.asInstanceOf[js.Any], transitionIn.asInstanceOf[js.Any])).asInstanceOf[TransitionStage]
+  inline def getNextStage(stage: TransitionStage, transitionIn: Boolean): TransitionStage = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextStage")(stage.asInstanceOf[js.Any], transitionIn.asInstanceOf[js.Any])).asInstanceOf[TransitionStage]
   
-  @scala.inline
-  def getTimeoutDuration(
+  inline def getTimeoutDuration(
     timeout: Required[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionStageTimeouts */ js.Any
     ],
@@ -41,23 +36,17 @@ object utilsMod {
     stage: TransitionStage
   ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeoutDuration")(timeout.asInstanceOf[js.Any], appearing.asInstanceOf[js.Any], stage.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def isEnter(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnter")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEnter(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnter")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEntered(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntered")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEntered(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntered")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isEntering(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntering")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEntering(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntering")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isExit(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExit")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExit(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExit")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isExited(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExited")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExited(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExited")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isExiting(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExiting")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isExiting(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExiting")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** @private */
   trait CollapseSizing extends StObject {
@@ -70,32 +59,24 @@ object utilsMod {
   }
   object CollapseSizing {
     
-    @scala.inline
-    def apply(): CollapseSizing = {
+    inline def apply(): CollapseSizing = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollapseSizing]
     }
     
-    @scala.inline
-    implicit class CollapseSizingMutableBuilder[Self <: CollapseSizing] (val x: Self) extends AnyVal {
+    extension [Self <: CollapseSizing](x: Self) {
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+      inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      @scala.inline
-      def setPaddingTop(value: Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+      inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     }
   }
 }

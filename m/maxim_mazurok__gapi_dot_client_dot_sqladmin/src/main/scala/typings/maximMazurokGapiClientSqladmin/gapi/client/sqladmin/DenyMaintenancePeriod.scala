@@ -23,31 +23,23 @@ trait DenyMaintenancePeriod extends StObject {
 }
 object DenyMaintenancePeriod {
   
-  @scala.inline
-  def apply(): DenyMaintenancePeriod = {
+  inline def apply(): DenyMaintenancePeriod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DenyMaintenancePeriod]
   }
   
-  @scala.inline
-  implicit class DenyMaintenancePeriodMutableBuilder[Self <: DenyMaintenancePeriod] (val x: Self) extends AnyVal {
+  extension [Self <: DenyMaintenancePeriod](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

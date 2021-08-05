@@ -47,8 +47,7 @@ object igetlistrequestMod {
   }
   object IGetListRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       additionalSelectFields: String,
       contextSiteUrl: String,
       expandFields: String,
@@ -67,77 +66,53 @@ object igetlistrequestMod {
       __obj.asInstanceOf[IGetListRequest]
     }
     
-    @scala.inline
-    implicit class IGetListRequestMutableBuilder[Self <: IGetListRequest] (val x: Self) extends AnyVal {
+    extension [Self <: IGetListRequest](x: Self) {
       
-      @scala.inline
-      def setAdditionalSelectFields(value: String): Self = StObject.set(x, "additionalSelectFields", value.asInstanceOf[js.Any])
+      inline def setAdditionalSelectFields(value: String): Self = StObject.set(x, "additionalSelectFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextSiteUrl(value: String): Self = StObject.set(x, "contextSiteUrl", value.asInstanceOf[js.Any])
+      inline def setContextSiteUrl(value: String): Self = StObject.set(x, "contextSiteUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandFields(value: String): Self = StObject.set(x, "expandFields", value.asInstanceOf[js.Any])
+      inline def setExpandFields(value: String): Self = StObject.set(x, "expandFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUrl(value: String): Self = StObject.set(x, "hostUrl", value.asInstanceOf[js.Any])
+      inline def setHostUrl(value: String): Self = StObject.set(x, "hostUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHosted(value: Boolean): Self = StObject.set(x, "isHosted", value.asInstanceOf[js.Any])
+      inline def setIsHosted(value: Boolean): Self = StObject.set(x, "isHosted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPagedResult(value: Boolean): Self = StObject.set(x, "isPagedResult", value.asInstanceOf[js.Any])
+      inline def setIsPagedResult(value: Boolean): Self = StObject.set(x, "isPagedResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
+      inline def setIsRoot(value: Boolean): Self = StObject.set(x, "isRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: ILanguageRequest): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: ILanguageRequest): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setListName(value: String): Self = StObject.set(x, "listName", value.asInstanceOf[js.Any])
+      inline def setListName(value: String): Self = StObject.set(x, "listName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderBy(value: js.Any): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+      inline def setOrderBy(value: js.Any): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+      inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
       
-      @scala.inline
-      def setPageManager(value: js.Any): Self = StObject.set(x, "PageManager", value.asInstanceOf[js.Any])
+      inline def setPageManager(value: js.Any): Self = StObject.set(x, "PageManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageManagerUndefined: Self = StObject.set(x, "PageManager", js.undefined)
+      inline def setPageManagerUndefined: Self = StObject.set(x, "PageManager", js.undefined)
       
-      @scala.inline
-      def setPersonaCheckRequired(value: Boolean): Self = StObject.set(x, "personaCheckRequired", value.asInstanceOf[js.Any])
+      inline def setPersonaCheckRequired(value: Boolean): Self = StObject.set(x, "personaCheckRequired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostData(value: js.Object): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+      inline def setPostData(value: js.Object): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadCallback(value: js.Any): Self = StObject.set(x, "preloadCallback", value.asInstanceOf[js.Any])
+      inline def setPreloadCallback(value: js.Any): Self = StObject.set(x, "preloadCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadCallbackUndefined: Self = StObject.set(x, "preloadCallback", js.undefined)
+      inline def setPreloadCallbackUndefined: Self = StObject.set(x, "preloadCallback", js.undefined)
       
-      @scala.inline
-      def setQueryFilter(value: js.Any): Self = StObject.set(x, "queryFilter", value.asInstanceOf[js.Any])
+      inline def setQueryFilter(value: js.Any): Self = StObject.set(x, "queryFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryFilterUndefined: Self = StObject.set(x, "queryFilter", js.undefined)
+      inline def setQueryFilterUndefined: Self = StObject.set(x, "queryFilter", js.undefined)
       
-      @scala.inline
-      def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
+      inline def setRowLimit(value: Double): Self = StObject.set(x, "rowLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectFields(value: String): Self = StObject.set(x, "selectFields", value.asInstanceOf[js.Any])
+      inline def setSelectFields(value: String): Self = StObject.set(x, "selectFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewXml(value: String): Self = StObject.set(x, "viewXml", value.asInstanceOf[js.Any])
+      inline def setViewXml(value: String): Self = StObject.set(x, "viewXml", value.asInstanceOf[js.Any])
     }
   }
 }

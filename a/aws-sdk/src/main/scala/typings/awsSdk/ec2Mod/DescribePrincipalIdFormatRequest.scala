@@ -28,40 +28,29 @@ trait DescribePrincipalIdFormatRequest extends StObject {
 }
 object DescribePrincipalIdFormatRequest {
   
-  @scala.inline
-  def apply(): DescribePrincipalIdFormatRequest = {
+  inline def apply(): DescribePrincipalIdFormatRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePrincipalIdFormatRequest]
   }
   
-  @scala.inline
-  implicit class DescribePrincipalIdFormatRequestMutableBuilder[Self <: DescribePrincipalIdFormatRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePrincipalIdFormatRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: DescribePrincipalIdFormatMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: DescribePrincipalIdFormatMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "Resources", js.Array(value :_*))
   }
 }

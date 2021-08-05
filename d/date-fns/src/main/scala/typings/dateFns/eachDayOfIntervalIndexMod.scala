@@ -10,10 +10,8 @@ object eachDayOfIntervalIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
-    @scala.inline
-    def apply(interval: typings.dateFns.mod.Interval, options: Step): js.Array[Date] = (^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+    inline def apply(interval: typings.dateFns.mod.Interval): js.Array[Date] = ^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any]).asInstanceOf[js.Array[Date]]
+    inline def apply(interval: typings.dateFns.mod.Interval, options: Step): js.Array[Date] = (^.asInstanceOf[js.Dynamic].apply(interval.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
     
     @JSImport("date-fns/eachDayOfInterval/index", JSImport.Default)
     @js.native

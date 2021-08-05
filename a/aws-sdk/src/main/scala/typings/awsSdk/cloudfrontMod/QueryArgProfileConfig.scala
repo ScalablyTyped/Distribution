@@ -18,22 +18,17 @@ trait QueryArgProfileConfig extends StObject {
 }
 object QueryArgProfileConfig {
   
-  @scala.inline
-  def apply(ForwardWhenQueryArgProfileIsUnknown: Boolean): QueryArgProfileConfig = {
+  inline def apply(ForwardWhenQueryArgProfileIsUnknown: Boolean): QueryArgProfileConfig = {
     val __obj = js.Dynamic.literal(ForwardWhenQueryArgProfileIsUnknown = ForwardWhenQueryArgProfileIsUnknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryArgProfileConfig]
   }
   
-  @scala.inline
-  implicit class QueryArgProfileConfigMutableBuilder[Self <: QueryArgProfileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: QueryArgProfileConfig](x: Self) {
     
-    @scala.inline
-    def setForwardWhenQueryArgProfileIsUnknown(value: Boolean): Self = StObject.set(x, "ForwardWhenQueryArgProfileIsUnknown", value.asInstanceOf[js.Any])
+    inline def setForwardWhenQueryArgProfileIsUnknown(value: Boolean): Self = StObject.set(x, "ForwardWhenQueryArgProfileIsUnknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryArgProfiles(value: QueryArgProfiles): Self = StObject.set(x, "QueryArgProfiles", value.asInstanceOf[js.Any])
+    inline def setQueryArgProfiles(value: QueryArgProfiles): Self = StObject.set(x, "QueryArgProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryArgProfilesUndefined: Self = StObject.set(x, "QueryArgProfiles", js.undefined)
+    inline def setQueryArgProfilesUndefined: Self = StObject.set(x, "QueryArgProfiles", js.undefined)
   }
 }

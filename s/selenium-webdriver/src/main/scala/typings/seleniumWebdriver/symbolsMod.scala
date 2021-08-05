@@ -27,17 +27,14 @@ object symbolsMod extends Shortcut {
   }
   object ISymbols {
     
-    @scala.inline
-    def apply(serialize: js.Symbol): ISymbols = {
+    inline def apply(serialize: js.Symbol): ISymbols = {
       val __obj = js.Dynamic.literal(serialize = serialize.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISymbols]
     }
     
-    @scala.inline
-    implicit class ISymbolsMutableBuilder[Self <: ISymbols] (val x: Self) extends AnyVal {
+    extension [Self <: ISymbols](x: Self) {
       
-      @scala.inline
-      def setSerialize(value: js.Symbol): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
+      inline def setSerialize(value: js.Symbol): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
     }
   }
   

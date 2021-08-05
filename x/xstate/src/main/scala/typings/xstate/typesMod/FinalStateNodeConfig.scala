@@ -14,17 +14,14 @@ trait FinalStateNodeConfig[TContext, TEvent /* <: EventObject */]
 }
 object FinalStateNodeConfig {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](initial: Unit, onDone: Unit, states: Unit): FinalStateNodeConfig[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](initial: Unit, onDone: Unit, states: Unit): FinalStateNodeConfig[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any], onDone = onDone.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("final")
     __obj.asInstanceOf[FinalStateNodeConfig[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class FinalStateNodeConfigMutableBuilder[Self <: FinalStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (FinalStateNodeConfig[TContext, TEvent])) extends AnyVal {
+  extension [Self <: FinalStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (FinalStateNodeConfig[TContext, TEvent])) {
     
-    @scala.inline
-    def setType(value: `final`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `final`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

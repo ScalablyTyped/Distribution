@@ -10,6 +10,5 @@ object useOriginScrollMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(isScrollAtTop: Boolean, isScrollAtBottom: Boolean): js.Function2[/* deltaY */ Double, /* smoothOffset */ js.UndefOr[Boolean], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(isScrollAtTop.asInstanceOf[js.Any], isScrollAtBottom.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* deltaY */ Double, /* smoothOffset */ js.UndefOr[Boolean], Boolean]]
+  inline def default(isScrollAtTop: Boolean, isScrollAtBottom: Boolean): js.Function2[/* deltaY */ Double, /* smoothOffset */ js.UndefOr[Boolean], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(isScrollAtTop.asInstanceOf[js.Any], isScrollAtBottom.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* deltaY */ Double, /* smoothOffset */ js.UndefOr[Boolean], Boolean]]
 }

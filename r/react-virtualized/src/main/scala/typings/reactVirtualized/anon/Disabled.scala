@@ -21,28 +21,21 @@ trait Disabled extends StObject {
 }
 object Disabled {
   
-  @scala.inline
-  def apply(): Disabled = {
+  inline def apply(): Disabled = {
     val __obj = js.Dynamic.literal(disabled = false, isControlled = false, mode = "edges", scrollToColumn = 0, scrollToRow = 0)
     __obj.asInstanceOf[Disabled]
   }
   
-  @scala.inline
-  implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+  extension [Self <: Disabled](x: Self) {
     
-    @scala.inline
-    def setDisabled(value: `false`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: `false`): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsControlled(value: `false`): Self = StObject.set(x, "isControlled", value.asInstanceOf[js.Any])
+    inline def setIsControlled(value: `false`): Self = StObject.set(x, "isControlled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: edges): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: edges): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToColumn(value: `0`): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
+    inline def setScrollToColumn(value: `0`): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToRow(value: `0`): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
+    inline def setScrollToRow(value: `0`): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
   }
 }

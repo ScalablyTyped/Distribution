@@ -18,28 +18,21 @@ trait ListAliasesOutput extends StObject {
 }
 object ListAliasesOutput {
   
-  @scala.inline
-  def apply(): ListAliasesOutput = {
+  inline def apply(): ListAliasesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAliasesOutput]
   }
   
-  @scala.inline
-  implicit class ListAliasesOutputMutableBuilder[Self <: ListAliasesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListAliasesOutput](x: Self) {
     
-    @scala.inline
-    def setAliases(value: AliasList): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: AliasList): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "Aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: Alias*): Self = StObject.set(x, "Aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonEmptyString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait StreamLayerElevationInfoFeatureExpressionInfo
 }
 object StreamLayerElevationInfoFeatureExpressionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object StreamLayerElevationInfoFeatureExpressionInfo {
     __obj.asInstanceOf[StreamLayerElevationInfoFeatureExpressionInfo]
   }
   
-  @scala.inline
-  implicit class StreamLayerElevationInfoFeatureExpressionInfoMutableBuilder[Self <: StreamLayerElevationInfoFeatureExpressionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: StreamLayerElevationInfoFeatureExpressionInfo](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
   }
 }

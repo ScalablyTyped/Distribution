@@ -83,57 +83,41 @@ trait InlinePictureData extends StObject {
 }
 object InlinePictureData {
   
-  @scala.inline
-  def apply(): InlinePictureData = {
+  inline def apply(): InlinePictureData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InlinePictureData]
   }
   
-  @scala.inline
-  implicit class InlinePictureDataMutableBuilder[Self <: InlinePictureData] (val x: Self) extends AnyVal {
+  extension [Self <: InlinePictureData](x: Self) {
     
-    @scala.inline
-    def setAltTextDescription(value: String): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
+    inline def setAltTextDescription(value: String): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltTextDescriptionUndefined: Self = StObject.set(x, "altTextDescription", js.undefined)
+    inline def setAltTextDescriptionUndefined: Self = StObject.set(x, "altTextDescription", js.undefined)
     
-    @scala.inline
-    def setAltTextTitle(value: String): Self = StObject.set(x, "altTextTitle", value.asInstanceOf[js.Any])
+    inline def setAltTextTitle(value: String): Self = StObject.set(x, "altTextTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltTextTitleUndefined: Self = StObject.set(x, "altTextTitle", js.undefined)
+    inline def setAltTextTitleUndefined: Self = StObject.set(x, "altTextTitle", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
+    inline def setHyperlink(value: String): Self = StObject.set(x, "hyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
+    inline def setHyperlinkUndefined: Self = StObject.set(x, "hyperlink", js.undefined)
     
-    @scala.inline
-    def setImageFormat(
+    inline def setImageFormat(
       value: ImageFormat | Unsupported | Undefined | Bmp_ | Jpeg_ | Gif_ | Tiff | Png_ | Icon | Exif | Wmf | Emf | Pict | Pdf | Svg_
     ): Self = StObject.set(x, "imageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageFormatUndefined: Self = StObject.set(x, "imageFormat", js.undefined)
+    inline def setImageFormatUndefined: Self = StObject.set(x, "imageFormat", js.undefined)
     
-    @scala.inline
-    def setLockAspectRatio(value: Boolean): Self = StObject.set(x, "lockAspectRatio", value.asInstanceOf[js.Any])
+    inline def setLockAspectRatio(value: Boolean): Self = StObject.set(x, "lockAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
+    inline def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

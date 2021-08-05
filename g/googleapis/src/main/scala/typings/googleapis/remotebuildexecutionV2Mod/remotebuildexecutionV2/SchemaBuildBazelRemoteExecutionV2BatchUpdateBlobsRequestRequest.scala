@@ -21,25 +21,19 @@ trait SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest extends St
 }
 object SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequestMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2BatchUpdateBlobsRequestRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
   }
 }

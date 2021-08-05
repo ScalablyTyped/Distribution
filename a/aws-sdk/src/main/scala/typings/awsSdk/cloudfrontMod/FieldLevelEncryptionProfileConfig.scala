@@ -28,28 +28,21 @@ trait FieldLevelEncryptionProfileConfig extends StObject {
 }
 object FieldLevelEncryptionProfileConfig {
   
-  @scala.inline
-  def apply(CallerReference: String, EncryptionEntities: EncryptionEntities, Name: String): FieldLevelEncryptionProfileConfig = {
+  inline def apply(CallerReference: String, EncryptionEntities: EncryptionEntities, Name: String): FieldLevelEncryptionProfileConfig = {
     val __obj = js.Dynamic.literal(CallerReference = CallerReference.asInstanceOf[js.Any], EncryptionEntities = EncryptionEntities.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldLevelEncryptionProfileConfig]
   }
   
-  @scala.inline
-  implicit class FieldLevelEncryptionProfileConfigMutableBuilder[Self <: FieldLevelEncryptionProfileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FieldLevelEncryptionProfileConfig](x: Self) {
     
-    @scala.inline
-    def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "Comment", js.undefined)
     
-    @scala.inline
-    def setEncryptionEntities(value: EncryptionEntities): Self = StObject.set(x, "EncryptionEntities", value.asInstanceOf[js.Any])
+    inline def setEncryptionEntities(value: EncryptionEntities): Self = StObject.set(x, "EncryptionEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

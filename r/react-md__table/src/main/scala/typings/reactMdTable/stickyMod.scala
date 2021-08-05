@@ -15,10 +15,7 @@ object stickyMod {
   @js.native
   val StickyTableProvider: Provider[Boolean] = js.native
   
-  @scala.inline
-  def useSticky(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useSticky")().asInstanceOf[Boolean]
-  @scala.inline
-  def useSticky(sticky: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useSticky")(sticky.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def useSticky(sticky: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useSticky")(sticky.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def useSticky(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useSticky")().asInstanceOf[Boolean]
+  inline def useSticky(sticky: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useSticky")(sticky.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def useSticky(sticky: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useSticky")(sticky.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

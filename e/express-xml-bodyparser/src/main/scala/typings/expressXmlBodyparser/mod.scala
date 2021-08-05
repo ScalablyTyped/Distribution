@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Handler = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Handler]
-  @scala.inline
-  def apply(options: ParserOptions): Handler = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  inline def apply(): Handler = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Handler]
+  inline def apply(options: ParserOptions): Handler = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
   
   @JSImport("express-xml-bodyparser", JSImport.Namespace)
   @js.native
@@ -22,6 +20,5 @@ object mod {
   @JSImport("express-xml-bodyparser", "regexp")
   @js.native
   def regexp: RegExp = js.native
-  @scala.inline
-  def regexp_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
+  inline def regexp_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("regexp")(x.asInstanceOf[js.Any])
 }

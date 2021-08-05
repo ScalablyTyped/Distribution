@@ -13,20 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageDescriptor extends StObject
 object MessageDescriptor {
   
-  @scala.inline
-  def MessageDescriptorHtml(html: String): typings.inboxsdk.mod.ButterBar.MessageDescriptorHtml = {
+  inline def MessageDescriptorHtml(html: String): typings.inboxsdk.mod.ButterBar.MessageDescriptorHtml = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.ButterBar.MessageDescriptorHtml]
   }
   
-  @scala.inline
-  def MessageDescriptorHtmlElement(el: HTMLElement): typings.inboxsdk.mod.ButterBar.MessageDescriptorHtmlElement = {
+  inline def MessageDescriptorHtmlElement(el: HTMLElement): typings.inboxsdk.mod.ButterBar.MessageDescriptorHtmlElement = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.ButterBar.MessageDescriptorHtmlElement]
   }
   
-  @scala.inline
-  def MessageDescriptorText(text: String): typings.inboxsdk.mod.ButterBar.MessageDescriptorText = {
+  inline def MessageDescriptorText(text: String): typings.inboxsdk.mod.ButterBar.MessageDescriptorText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.ButterBar.MessageDescriptorText]
   }

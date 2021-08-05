@@ -10,16 +10,13 @@ trait AddResponseCookie extends StObject {
 }
 object AddResponseCookie {
   
-  @scala.inline
-  def apply(cookie: ResponseCookie): AddResponseCookie = {
+  inline def apply(cookie: ResponseCookie): AddResponseCookie = {
     val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddResponseCookie]
   }
   
-  @scala.inline
-  implicit class AddResponseCookieMutableBuilder[Self <: AddResponseCookie] (val x: Self) extends AnyVal {
+  extension [Self <: AddResponseCookie](x: Self) {
     
-    @scala.inline
-    def setCookie(value: ResponseCookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: ResponseCookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
   }
 }

@@ -25,39 +25,29 @@ trait IHttpInterceptor extends StObject {
 }
 object IHttpInterceptor {
   
-  @scala.inline
-  def apply(): IHttpInterceptor = {
+  inline def apply(): IHttpInterceptor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHttpInterceptor]
   }
   
-  @scala.inline
-  implicit class IHttpInterceptorMutableBuilder[Self <: IHttpInterceptor] (val x: Self) extends AnyVal {
+  extension [Self <: IHttpInterceptor](x: Self) {
     
-    @scala.inline
-    def setRequest(value: /* config */ IRequestConfig => IRequestConfig | IPromise[IRequestConfig]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: /* config */ IRequestConfig => IRequestConfig | IPromise[IRequestConfig]): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestError(value: /* rejection */ js.Any => IRequestConfig | IPromise[IRequestConfig]): Self = StObject.set(x, "requestError", js.Any.fromFunction1(value))
+    inline def setRequestError(value: /* rejection */ js.Any => IRequestConfig | IPromise[IRequestConfig]): Self = StObject.set(x, "requestError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestErrorUndefined: Self = StObject.set(x, "requestError", js.undefined)
+    inline def setRequestErrorUndefined: Self = StObject.set(x, "requestError", js.undefined)
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: /* response */ IHttpResponse[js.Any] => IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]
     ): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResponseError(value: /* rejection */ js.Any => IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
+    inline def setResponseError(value: /* rejection */ js.Any => IPromise[IHttpResponse[js.Any]] | IHttpResponse[js.Any]): Self = StObject.set(x, "responseError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
+    inline def setResponseErrorUndefined: Self = StObject.set(x, "responseError", js.undefined)
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

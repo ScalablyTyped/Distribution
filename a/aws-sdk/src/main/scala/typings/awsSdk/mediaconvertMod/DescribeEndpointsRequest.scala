@@ -23,31 +23,23 @@ trait DescribeEndpointsRequest extends StObject {
 }
 object DescribeEndpointsRequest {
   
-  @scala.inline
-  def apply(): DescribeEndpointsRequest = {
+  inline def apply(): DescribeEndpointsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEndpointsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEndpointsRequestMutableBuilder[Self <: DescribeEndpointsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEndpointsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMode(value: DescribeEndpointsMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: DescribeEndpointsMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "Mode", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

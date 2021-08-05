@@ -13,19 +13,15 @@ trait VirtualNodeSpecListenerTimeoutTcp extends StObject {
 }
 object VirtualNodeSpecListenerTimeoutTcp {
   
-  @scala.inline
-  def apply(): VirtualNodeSpecListenerTimeoutTcp = {
+  inline def apply(): VirtualNodeSpecListenerTimeoutTcp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualNodeSpecListenerTimeoutTcp]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecListenerTimeoutTcpMutableBuilder[Self <: VirtualNodeSpecListenerTimeoutTcp] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecListenerTimeoutTcp](x: Self) {
     
-    @scala.inline
-    def setIdle(value: VirtualNodeSpecListenerTimeoutTcpIdle): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: VirtualNodeSpecListenerTimeoutTcpIdle): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+    inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
   }
 }

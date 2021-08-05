@@ -13,8 +13,7 @@ object global {
   @JSGlobal("App")
   @js.native
   def App: typings.appletvjs.AppleTVJS.App = js.native
-  @scala.inline
-  def App_=(x: App): Unit = js.Dynamic.global.updateDynamic("App")(x.asInstanceOf[js.Any])
+  inline def App_=(x: App): Unit = js.Dynamic.global.updateDynamic("App")(x.asInstanceOf[js.Any])
   
   object AppleTVJS {
     
@@ -257,21 +256,17 @@ object global {
   @JSGlobal("Device")
   @js.native
   def Device: typings.appletvjs.AppleTVJS.Device = js.native
-  @scala.inline
-  def Device_=(x: Device): Unit = js.Dynamic.global.updateDynamic("Device")(x.asInstanceOf[js.Any])
+  inline def Device_=(x: Device): Unit = js.Dynamic.global.updateDynamic("Device")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Settings")
   @js.native
   def Settings: typings.appletvjs.AppleTVJS.Settings = js.native
-  @scala.inline
-  def Settings_=(x: Settings): Unit = js.Dynamic.global.updateDynamic("Settings")(x.asInstanceOf[js.Any])
+  inline def Settings_=(x: Settings): Unit = js.Dynamic.global.updateDynamic("Settings")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def evaluateScripts(scripts: js.Array[String], complete: js.Function1[/* success */ Boolean, Unit]): Unit = (js.Dynamic.global.applyDynamic("evaluateScripts")(scripts.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def evaluateScripts(scripts: js.Array[String], complete: js.Function1[/* success */ Boolean, Unit]): Unit = (js.Dynamic.global.applyDynamic("evaluateScripts")(scripts.asInstanceOf[js.Any], complete.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("navigationDocument")
   @js.native
   def navigationDocument: NavigationDocument = js.native
-  @scala.inline
-  def navigationDocument_=(x: NavigationDocument): Unit = js.Dynamic.global.updateDynamic("navigationDocument")(x.asInstanceOf[js.Any])
+  inline def navigationDocument_=(x: NavigationDocument): Unit = js.Dynamic.global.updateDynamic("navigationDocument")(x.asInstanceOf[js.Any])
 }

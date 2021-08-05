@@ -19,19 +19,15 @@ trait UserDefinedFunctionResourceUri extends StObject {
 }
 object UserDefinedFunctionResourceUri {
   
-  @scala.inline
-  def apply(resourceType: Input[String], uri: Input[String]): UserDefinedFunctionResourceUri = {
+  inline def apply(resourceType: Input[String], uri: Input[String]): UserDefinedFunctionResourceUri = {
     val __obj = js.Dynamic.literal(resourceType = resourceType.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefinedFunctionResourceUri]
   }
   
-  @scala.inline
-  implicit class UserDefinedFunctionResourceUriMutableBuilder[Self <: UserDefinedFunctionResourceUri] (val x: Self) extends AnyVal {
+  extension [Self <: UserDefinedFunctionResourceUri](x: Self) {
     
-    @scala.inline
-    def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: Input[String]): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: Input[String]): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

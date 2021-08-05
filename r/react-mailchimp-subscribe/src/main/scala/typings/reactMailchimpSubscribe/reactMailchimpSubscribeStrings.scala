@@ -8,16 +8,13 @@ object reactMailchimpSubscribeStrings {
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait sending extends StObject
-  @scala.inline
-  def sending: sending = "sending".asInstanceOf[sending]
+  inline def sending: sending = "sending".asInstanceOf[sending]
   
   @js.native
   sealed trait success extends StObject
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
 }

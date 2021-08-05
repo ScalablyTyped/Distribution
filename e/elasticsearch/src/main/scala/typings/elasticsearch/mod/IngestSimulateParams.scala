@@ -14,22 +14,17 @@ trait IngestSimulateParams
 }
 object IngestSimulateParams {
   
-  @scala.inline
-  def apply(id: String): IngestSimulateParams = {
+  inline def apply(id: String): IngestSimulateParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestSimulateParams]
   }
   
-  @scala.inline
-  implicit class IngestSimulateParamsMutableBuilder[Self <: IngestSimulateParams] (val x: Self) extends AnyVal {
+  extension [Self <: IngestSimulateParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

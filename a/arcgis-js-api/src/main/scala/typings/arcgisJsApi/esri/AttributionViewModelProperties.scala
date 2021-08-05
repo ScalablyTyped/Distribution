@@ -15,19 +15,15 @@ trait AttributionViewModelProperties extends StObject {
 }
 object AttributionViewModelProperties {
   
-  @scala.inline
-  def apply(): AttributionViewModelProperties = {
+  inline def apply(): AttributionViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributionViewModelProperties]
   }
   
-  @scala.inline
-  implicit class AttributionViewModelPropertiesMutableBuilder[Self <: AttributionViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AttributionViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

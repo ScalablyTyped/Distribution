@@ -32,14 +32,12 @@ object Registerer {
   @JSImport("sip.js", "Registerer.defaultOptions")
   @js.native
   def defaultOptions: js.Any = js.native
-  @scala.inline
-  def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+  inline def defaultOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   
   @JSImport("sip.js", "Registerer.newUUID")
   @js.native
   def newUUID: js.Any = js.native
-  @scala.inline
-  def newUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
+  inline def newUUID_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("newUUID")(x.asInstanceOf[js.Any])
   
   /**
     * Strip properties with undefined values from options.
@@ -50,6 +48,5 @@ object Registerer {
   @JSImport("sip.js", "Registerer.stripUndefinedProperties")
   @js.native
   def stripUndefinedProperties: js.Any = js.native
-  @scala.inline
-  def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
+  inline def stripUndefinedProperties_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stripUndefinedProperties")(x.asInstanceOf[js.Any])
 }

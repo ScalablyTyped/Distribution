@@ -37,28 +37,23 @@ object eqMod {
   @js.native
   val WithUnknownContainers: WithUnknownContainers1[typings.fpTs.eqMod.URI] = js.native
   
-  @scala.inline
-  def array[A](eq: Eq[A]): Eq[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(eq.asInstanceOf[js.Any]).asInstanceOf[Eq[js.Array[A]]]
+  inline def array[A](eq: Eq[A]): Eq[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(eq.asInstanceOf[js.Any]).asInstanceOf[Eq[js.Array[A]]]
   
   @JSImport("io-ts/lib/Eq", "boolean")
   @js.native
   val boolean: Eq[Boolean] = js.native
   
-  @scala.inline
-  def intersect[B](right: Eq[B]): js.Function1[/* left */ Eq[js.Any], Eq[js.Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ Eq[js.Any], Eq[js.Any & B]]]
+  inline def intersect[B](right: Eq[B]): js.Function1[/* left */ Eq[js.Any], Eq[js.Any & B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(right.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* left */ Eq[js.Any], Eq[js.Any & B]]]
   
-  @scala.inline
-  def `lazy`[A](f: js.Function0[Eq[A]]): Eq[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(f.asInstanceOf[js.Any]).asInstanceOf[Eq[A]]
+  inline def `lazy`[A](f: js.Function0[Eq[A]]): Eq[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(f.asInstanceOf[js.Any]).asInstanceOf[Eq[A]]
   
-  @scala.inline
-  def nullable[A](or: Eq[A]): Eq[Null | A] = ^.asInstanceOf[js.Dynamic].applyDynamic("nullable")(or.asInstanceOf[js.Any]).asInstanceOf[Eq[Null | A]]
+  inline def nullable[A](or: Eq[A]): Eq[Null | A] = ^.asInstanceOf[js.Dynamic].applyDynamic("nullable")(or.asInstanceOf[js.Any]).asInstanceOf[Eq[Null | A]]
   
   @JSImport("io-ts/lib/Eq", "number")
   @js.native
   val number: Eq[Double] = js.native
   
-  @scala.inline
-  def partial[A](
+  inline def partial[A](
     properties: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: fp-ts.fp-ts/lib/Eq.Eq<A[K]>}
     */ typings.ioTs.ioTsStrings.partial & TopLevel[A]
@@ -76,15 +71,13 @@ object eqMod {
     ]
   ]]
   
-  @scala.inline
-  def record[A](codomain: Eq[A]): Eq[Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("record")(codomain.asInstanceOf[js.Any]).asInstanceOf[Eq[Record[String, A]]]
+  inline def record[A](codomain: Eq[A]): Eq[Record[String, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("record")(codomain.asInstanceOf[js.Any]).asInstanceOf[Eq[Record[String, A]]]
   
   @JSImport("io-ts/lib/Eq", "string")
   @js.native
   val string: Eq[String] = js.native
   
-  @scala.inline
-  def sum[T /* <: String */](tag: T): js.Function1[
+  inline def sum[T /* <: String */](tag: T): js.Function1[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: fp-ts.fp-ts/lib/Eq.Eq<any[K] & std.Record<T, K>>}
     */ /* members */ typings.ioTs.ioTsStrings.sum & TopLevel[js.Any], 
@@ -100,15 +93,13 @@ object eqMod {
     ]
   ]]
   
-  @scala.inline
-  def tuple[A /* <: js.Array[js.Any] */](
+  inline def tuple[A /* <: js.Array[js.Any] */](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param components because its type {[ K in keyof A ]: Eq<A[K]>} is not an array type */ components: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: fp-ts.fp-ts/lib/Eq.Eq<A[K]>}
     */ typings.ioTs.ioTsStrings.tuple & TopLevel[A]
   ): Eq[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tuple")(components.asInstanceOf[js.Any]).asInstanceOf[Eq[A]]
   
-  @scala.inline
-  def `type`[A](
+  inline def `type`[A](
     eqs: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof A ]: fp-ts.fp-ts/lib/Eq.Eq<A[K]>}
     */ typings.ioTs.ioTsStrings.`type` & TopLevel[A]

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ChartFont")
 @js.native
-class ChartFont protected ()
+/* private */ class ChartFont ()
   extends StObject
      with typings.activexOffice.Office.ChartFont {
   
@@ -37,7 +37,7 @@ class ChartFont protected ()
   /* CompleteClass */
   var Name: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ChartFont_typekey")
   var OfficeDotChartFont_typekey: typings.activexOffice.Office.ChartFont = js.native
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IHTMLPluginsCollection extends StObject {
   
-  @JSName("MSHTML.IHTMLPluginsCollection_typekey")
+  /* private */ @JSName("MSHTML.IHTMLPluginsCollection_typekey")
   var MSHTMLDotIHTMLPluginsCollection_typekey: IHTMLPluginsCollection = js.native
   
   val length: Double = js.native

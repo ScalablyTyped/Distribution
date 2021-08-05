@@ -37,8 +37,7 @@ trait ScrollBar extends StObject {
 }
 object ScrollBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getWidth: () => Double,
     onScroll: js.Any => Unit,
     setHeight: Double => Unit,
@@ -49,22 +48,16 @@ object ScrollBar {
     __obj.asInstanceOf[ScrollBar]
   }
   
-  @scala.inline
-  implicit class ScrollBarMutableBuilder[Self <: ScrollBar] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollBar](x: Self) {
     
-    @scala.inline
-    def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+    inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnScroll(value: js.Any => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: js.Any => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+    inline def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetInnerHeight(value: Double => Unit): Self = StObject.set(x, "setInnerHeight", js.Any.fromFunction1(value))
+    inline def setSetInnerHeight(value: Double => Unit): Self = StObject.set(x, "setInnerHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScrollTop(value: Double => Unit): Self = StObject.set(x, "setScrollTop", js.Any.fromFunction1(value))
+    inline def setSetScrollTop(value: Double => Unit): Self = StObject.set(x, "setScrollTop", js.Any.fromFunction1(value))
   }
 }

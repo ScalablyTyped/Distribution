@@ -15,31 +15,23 @@ trait CollapsibleEvents extends StObject {
 }
 object CollapsibleEvents {
   
-  @scala.inline
-  def apply(): CollapsibleEvents = {
+  inline def apply(): CollapsibleEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollapsibleEvents]
   }
   
-  @scala.inline
-  implicit class CollapsibleEventsMutableBuilder[Self <: CollapsibleEvents] (val x: Self) extends AnyVal {
+  extension [Self <: CollapsibleEvents](x: Self) {
     
-    @scala.inline
-    def setCollapse(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
+    inline def setCollapse(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
     
-    @scala.inline
-    def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setExpand(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction2(value))
+    inline def setExpand(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "expand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait StockChartLegendInactiveItems extends StObject {
 }
 object StockChartLegendInactiveItems {
   
-  @scala.inline
-  def apply(): StockChartLegendInactiveItems = {
+  inline def apply(): StockChartLegendInactiveItems = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockChartLegendInactiveItems]
   }
   
-  @scala.inline
-  implicit class StockChartLegendInactiveItemsMutableBuilder[Self <: StockChartLegendInactiveItems] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartLegendInactiveItems](x: Self) {
     
-    @scala.inline
-    def setLabels(value: StockChartLegendInactiveItemsLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StockChartLegendInactiveItemsLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMarkers(value: StockChartLegendInactiveItemsMarkers): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: StockChartLegendInactiveItemsMarkers): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
+    inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
   }
 }

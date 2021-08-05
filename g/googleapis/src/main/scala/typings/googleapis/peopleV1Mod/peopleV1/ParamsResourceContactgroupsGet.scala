@@ -29,31 +29,23 @@ trait ParamsResourceContactgroupsGet
 }
 object ParamsResourceContactgroupsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceContactgroupsGet = {
+  inline def apply(): ParamsResourceContactgroupsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceContactgroupsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceContactgroupsGetMutableBuilder[Self <: ParamsResourceContactgroupsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceContactgroupsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setMaxMembers(value: Double): Self = StObject.set(x, "maxMembers", value.asInstanceOf[js.Any])
+    inline def setMaxMembers(value: Double): Self = StObject.set(x, "maxMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMembersUndefined: Self = StObject.set(x, "maxMembers", js.undefined)
+    inline def setMaxMembersUndefined: Self = StObject.set(x, "maxMembers", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

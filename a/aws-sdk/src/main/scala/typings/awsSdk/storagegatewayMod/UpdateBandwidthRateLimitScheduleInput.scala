@@ -15,22 +15,17 @@ trait UpdateBandwidthRateLimitScheduleInput extends StObject {
 }
 object UpdateBandwidthRateLimitScheduleInput {
   
-  @scala.inline
-  def apply(BandwidthRateLimitIntervals: BandwidthRateLimitIntervals, GatewayARN: GatewayARN): UpdateBandwidthRateLimitScheduleInput = {
+  inline def apply(BandwidthRateLimitIntervals: BandwidthRateLimitIntervals, GatewayARN: GatewayARN): UpdateBandwidthRateLimitScheduleInput = {
     val __obj = js.Dynamic.literal(BandwidthRateLimitIntervals = BandwidthRateLimitIntervals.asInstanceOf[js.Any], GatewayARN = GatewayARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateBandwidthRateLimitScheduleInput]
   }
   
-  @scala.inline
-  implicit class UpdateBandwidthRateLimitScheduleInputMutableBuilder[Self <: UpdateBandwidthRateLimitScheduleInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateBandwidthRateLimitScheduleInput](x: Self) {
     
-    @scala.inline
-    def setBandwidthRateLimitIntervals(value: BandwidthRateLimitIntervals): Self = StObject.set(x, "BandwidthRateLimitIntervals", value.asInstanceOf[js.Any])
+    inline def setBandwidthRateLimitIntervals(value: BandwidthRateLimitIntervals): Self = StObject.set(x, "BandwidthRateLimitIntervals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthRateLimitIntervalsVarargs(value: BandwidthRateLimitInterval*): Self = StObject.set(x, "BandwidthRateLimitIntervals", js.Array(value :_*))
+    inline def setBandwidthRateLimitIntervalsVarargs(value: BandwidthRateLimitInterval*): Self = StObject.set(x, "BandwidthRateLimitIntervals", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }
 }

@@ -66,65 +66,46 @@ object mod {
   }
   object DomElement {
     
-    @scala.inline
-    def apply(): DomElement = {
+    inline def apply(): DomElement = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomElement]
     }
     
-    @scala.inline
-    implicit class DomElementMutableBuilder[Self <: DomElement] (val x: Self) extends AnyVal {
+    extension [Self <: DomElement](x: Self) {
       
-      @scala.inline
-      def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
+      inline def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttribsUndefined: Self = StObject.set(x, "attribs", js.undefined)
+      inline def setAttribsUndefined: Self = StObject.set(x, "attribs", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[DomElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[DomElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: DomElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: DomElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNext(value: DomElement): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: DomElement): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setParent(value: DomElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: DomElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setPrev(value: DomElement): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: DomElement): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -159,38 +140,28 @@ object mod {
   }
   object DomHandlerOptions {
     
-    @scala.inline
-    def apply(): DomHandlerOptions = {
+    inline def apply(): DomHandlerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DomHandlerOptions]
     }
     
-    @scala.inline
-    implicit class DomHandlerOptionsMutableBuilder[Self <: DomHandlerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DomHandlerOptions](x: Self) {
       
-      @scala.inline
-      def setNormalizeWhitespace(value: Boolean): Self = StObject.set(x, "normalizeWhitespace", value.asInstanceOf[js.Any])
+      inline def setNormalizeWhitespace(value: Boolean): Self = StObject.set(x, "normalizeWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeWhitespaceUndefined: Self = StObject.set(x, "normalizeWhitespace", js.undefined)
+      inline def setNormalizeWhitespaceUndefined: Self = StObject.set(x, "normalizeWhitespace", js.undefined)
       
-      @scala.inline
-      def setWithDomLvl1(value: Boolean): Self = StObject.set(x, "withDomLvl1", value.asInstanceOf[js.Any])
+      inline def setWithDomLvl1(value: Boolean): Self = StObject.set(x, "withDomLvl1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithDomLvl1Undefined: Self = StObject.set(x, "withDomLvl1", js.undefined)
+      inline def setWithDomLvl1Undefined: Self = StObject.set(x, "withDomLvl1", js.undefined)
       
-      @scala.inline
-      def setWithEndIndices(value: Boolean): Self = StObject.set(x, "withEndIndices", value.asInstanceOf[js.Any])
+      inline def setWithEndIndices(value: Boolean): Self = StObject.set(x, "withEndIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithEndIndicesUndefined: Self = StObject.set(x, "withEndIndices", js.undefined)
+      inline def setWithEndIndicesUndefined: Self = StObject.set(x, "withEndIndices", js.undefined)
       
-      @scala.inline
-      def setWithStartIndices(value: Boolean): Self = StObject.set(x, "withStartIndices", value.asInstanceOf[js.Any])
+      inline def setWithStartIndices(value: Boolean): Self = StObject.set(x, "withStartIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithStartIndicesUndefined: Self = StObject.set(x, "withStartIndices", js.undefined)
+      inline def setWithStartIndicesUndefined: Self = StObject.set(x, "withStartIndices", js.undefined)
     }
   }
   
@@ -203,17 +174,14 @@ object mod {
   }
   object Element {
     
-    @scala.inline
-    def apply(name: String): Element = {
+    inline def apply(name: String): Element = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,23 +197,18 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply(firstChild: DomElement, lastChild: DomElement, nodeType: Double): Node = {
+    inline def apply(firstChild: DomElement, lastChild: DomElement, nodeType: Double): Node = {
       val __obj = js.Dynamic.literal(firstChild = firstChild.asInstanceOf[js.Any], lastChild = lastChild.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setFirstChild(value: DomElement): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+      inline def setFirstChild(value: DomElement): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastChild(value: DomElement): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
+      inline def setLastChild(value: DomElement): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeType(value: Double): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: Double): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
     }
   }
 }

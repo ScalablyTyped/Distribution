@@ -51,8 +51,7 @@ trait TableCellFormattingSettings extends StObject {
 }
 object TableCellFormattingSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     marginBottom: Double,
     marginLeft: Double,
     marginRight: Double,
@@ -66,31 +65,22 @@ object TableCellFormattingSettings {
     __obj.asInstanceOf[TableCellFormattingSettings]
   }
   
-  @scala.inline
-  implicit class TableCellFormattingSettingsMutableBuilder[Self <: TableCellFormattingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TableCellFormattingSettings](x: Self) {
     
-    @scala.inline
-    def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginsSameAsTable(value: Boolean): Self = StObject.set(x, "marginsSameAsTable", value.asInstanceOf[js.Any])
+    inline def setMarginsSameAsTable(value: Boolean): Self = StObject.set(x, "marginsSameAsTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+    inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredWidth(value: TableWidthUnit): Self = StObject.set(x, "preferredWidth", value.asInstanceOf[js.Any])
+    inline def setPreferredWidth(value: TableWidthUnit): Self = StObject.set(x, "preferredWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignment(value: TableCellVerticalAlignment): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: TableCellVerticalAlignment): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
   }
 }

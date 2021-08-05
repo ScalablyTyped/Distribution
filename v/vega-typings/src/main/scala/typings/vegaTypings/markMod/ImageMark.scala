@@ -17,17 +17,14 @@ trait ImageMark
 }
 object ImageMark {
   
-  @scala.inline
-  def apply(): ImageMark = {
+  inline def apply(): ImageMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[ImageMark]
   }
   
-  @scala.inline
-  implicit class ImageMarkMutableBuilder[Self <: ImageMark] (val x: Self) extends AnyVal {
+  extension [Self <: ImageMark](x: Self) {
     
-    @scala.inline
-    def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

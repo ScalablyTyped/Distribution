@@ -13,16 +13,13 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestin
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema {
   
-  @scala.inline
-  def apply(recordFormatType: String): ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema = {
+  inline def apply(recordFormatType: String): ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema = {
     val __obj = js.Dynamic.literal(recordFormatType = recordFormatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchemaMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema](x: Self) {
     
-    @scala.inline
-    def setRecordFormatType(value: String): Self = StObject.set(x, "recordFormatType", value.asInstanceOf[js.Any])
+    inline def setRecordFormatType(value: String): Self = StObject.set(x, "recordFormatType", value.asInstanceOf[js.Any])
   }
 }

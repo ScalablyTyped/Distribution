@@ -27,35 +27,26 @@ object notificationsMod {
   }
   object Notification {
     
-    @scala.inline
-    def apply(content: Headline, id: String, link: String): Notification = {
+    inline def apply(content: Headline, id: String, link: String): Notification = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
       __obj.asInstanceOf[Notification]
     }
     
-    @scala.inline
-    implicit class NotificationMutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
+    extension [Self <: Notification](x: Self) {
       
-      @scala.inline
-      def setContent(value: Headline): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Headline): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: Color): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Color): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
+      inline def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
+      inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
     }
   }
   
@@ -67,20 +58,16 @@ object notificationsMod {
   }
   object SubAPI {
     
-    @scala.inline
-    def apply(addNotification: Notification => Unit, clearNotification: String => Unit): SubAPI = {
+    inline def apply(addNotification: Notification => Unit, clearNotification: String => Unit): SubAPI = {
       val __obj = js.Dynamic.literal(addNotification = js.Any.fromFunction1(addNotification), clearNotification = js.Any.fromFunction1(clearNotification))
       __obj.asInstanceOf[SubAPI]
     }
     
-    @scala.inline
-    implicit class SubAPIMutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
+    extension [Self <: SubAPI](x: Self) {
       
-      @scala.inline
-      def setAddNotification(value: Notification => Unit): Self = StObject.set(x, "addNotification", js.Any.fromFunction1(value))
+      inline def setAddNotification(value: Notification => Unit): Self = StObject.set(x, "addNotification", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearNotification(value: String => Unit): Self = StObject.set(x, "clearNotification", js.Any.fromFunction1(value))
+      inline def setClearNotification(value: String => Unit): Self = StObject.set(x, "clearNotification", js.Any.fromFunction1(value))
     }
   }
   
@@ -90,20 +77,16 @@ object notificationsMod {
   }
   object SubState {
     
-    @scala.inline
-    def apply(notifications: js.Array[Notification]): SubState = {
+    inline def apply(notifications: js.Array[Notification]): SubState = {
       val __obj = js.Dynamic.literal(notifications = notifications.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubState]
     }
     
-    @scala.inline
-    implicit class SubStateMutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
+    extension [Self <: SubState](x: Self) {
       
-      @scala.inline
-      def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
     }
   }
 }

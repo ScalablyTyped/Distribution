@@ -14,11 +14,11 @@ class ɵCodegenComponentFactoryResolver protected () extends ComponentFactoryRes
     _ngModule: NgModuleRef[js.Any]
   ) = this()
   
-  var _factories: js.Any = js.native
+  /* private */ var _factories: js.Any = js.native
   
-  var _ngModule: js.Any = js.native
+  /* private */ var _ngModule: js.Any = js.native
   
-  var _parent: js.Any = js.native
+  /* private */ var _parent: js.Any = js.native
   
   def resolveComponentFactory[T](component: Instantiable[T]): ComponentFactory[T] = js.native
 }

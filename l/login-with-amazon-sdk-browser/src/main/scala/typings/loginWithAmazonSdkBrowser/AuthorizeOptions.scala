@@ -45,49 +45,35 @@ trait AuthorizeOptions extends StObject {
 }
 object AuthorizeOptions {
   
-  @scala.inline
-  def apply(scope: AuthorizeScope): AuthorizeOptions = {
+  inline def apply(scope: AuthorizeScope): AuthorizeOptions = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeOptions]
   }
   
-  @scala.inline
-  implicit class AuthorizeOptionsMutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeOptions](x: Self) {
     
-    @scala.inline
-    def setInteractive(value: AuthorizeInteractiveOption): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: AuthorizeInteractiveOption): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
-    @scala.inline
-    def setPopup(value: Boolean): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: Boolean): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
-    @scala.inline
-    def setResponse_type(value: AuthorizeResponseType): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+    inline def setResponse_type(value: AuthorizeResponseType): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
+    inline def setResponse_typeUndefined: Self = StObject.set(x, "response_type", js.undefined)
     
-    @scala.inline
-    def setScope(value: AuthorizeScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: AuthorizeScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeVarargs(value: AuthorizationScopeOptions*): Self = StObject.set(x, "scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: AuthorizationScopeOptions*): Self = StObject.set(x, "scope", js.Array(value :_*))
     
-    @scala.inline
-    def setScope_data(value: AuthorizeScopeData): Self = StObject.set(x, "scope_data", value.asInstanceOf[js.Any])
+    inline def setScope_data(value: AuthorizeScopeData): Self = StObject.set(x, "scope_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope_dataUndefined: Self = StObject.set(x, "scope_data", js.undefined)
+    inline def setScope_dataUndefined: Self = StObject.set(x, "scope_data", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

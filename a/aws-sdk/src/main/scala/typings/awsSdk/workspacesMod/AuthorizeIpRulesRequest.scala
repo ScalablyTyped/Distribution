@@ -18,22 +18,17 @@ trait AuthorizeIpRulesRequest extends StObject {
 }
 object AuthorizeIpRulesRequest {
   
-  @scala.inline
-  def apply(GroupId: IpGroupId, UserRules: IpRuleList): AuthorizeIpRulesRequest = {
+  inline def apply(GroupId: IpGroupId, UserRules: IpRuleList): AuthorizeIpRulesRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any], UserRules = UserRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizeIpRulesRequest]
   }
   
-  @scala.inline
-  implicit class AuthorizeIpRulesRequestMutableBuilder[Self <: AuthorizeIpRulesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizeIpRulesRequest](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: IpGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: IpGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRules(value: IpRuleList): Self = StObject.set(x, "UserRules", value.asInstanceOf[js.Any])
+    inline def setUserRules(value: IpRuleList): Self = StObject.set(x, "UserRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRulesVarargs(value: IpRuleItem*): Self = StObject.set(x, "UserRules", js.Array(value :_*))
+    inline def setUserRulesVarargs(value: IpRuleItem*): Self = StObject.set(x, "UserRules", js.Array(value :_*))
   }
 }

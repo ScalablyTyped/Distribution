@@ -50,55 +50,39 @@ trait Arc extends StObject {
 }
 object Arc {
   
-  @scala.inline
-  def apply(): Arc = {
+  inline def apply(): Arc = {
     val __obj = js.Dynamic.literal(arc = "arc", area = "area", bar = "bar", circle = "circle", geoshape = "geoshape", image = "image", line = "line", point = "point", rect = "rect", rule = "rule", square = "square", text = "text", tick = "tick", trail = "trail")
     __obj.asInstanceOf[Arc]
   }
   
-  @scala.inline
-  implicit class ArcMutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
+  extension [Self <: Arc](x: Self) {
     
-    @scala.inline
-    def setArc(value: arc): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
+    inline def setArc(value: arc): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArea(value: area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBar(value: bar): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: bar): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircle(value: circle): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: circle): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoshape(value: geoshape): Self = StObject.set(x, "geoshape", value.asInstanceOf[js.Any])
+    inline def setGeoshape(value: geoshape): Self = StObject.set(x, "geoshape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: line): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRect(value: rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRule(value: rule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: rule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquare(value: square): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+    inline def setSquare(value: square): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: text): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: text): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTick(value: tick): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    inline def setTick(value: tick): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrail(value: trail): Self = StObject.set(x, "trail", value.asInstanceOf[js.Any])
+    inline def setTrail(value: trail): Self = StObject.set(x, "trail", value.asInstanceOf[js.Any])
   }
 }

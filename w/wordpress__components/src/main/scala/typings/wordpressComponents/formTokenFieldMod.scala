@@ -106,92 +106,64 @@ object formTokenFieldMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
-        @scala.inline
-        def setDisplayTransform(value: /* token */ String => String): Self = StObject.set(x, "displayTransform", js.Any.fromFunction1(value))
+        inline def setDisplayTransform(value: /* token */ String => String): Self = StObject.set(x, "displayTransform", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDisplayTransformUndefined: Self = StObject.set(x, "displayTransform", js.undefined)
+        inline def setDisplayTransformUndefined: Self = StObject.set(x, "displayTransform", js.undefined)
         
-        @scala.inline
-        def setIsBorderless(value: Boolean): Self = StObject.set(x, "isBorderless", value.asInstanceOf[js.Any])
+        inline def setIsBorderless(value: Boolean): Self = StObject.set(x, "isBorderless", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsBorderlessUndefined: Self = StObject.set(x, "isBorderless", js.undefined)
+        inline def setIsBorderlessUndefined: Self = StObject.set(x, "isBorderless", js.undefined)
         
-        @scala.inline
-        def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+        inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+        inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
         
-        @scala.inline
-        def setMaxSuggestions(value: Double): Self = StObject.set(x, "maxSuggestions", value.asInstanceOf[js.Any])
+        inline def setMaxSuggestions(value: Double): Self = StObject.set(x, "maxSuggestions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxSuggestionsUndefined: Self = StObject.set(x, "maxSuggestions", js.undefined)
+        inline def setMaxSuggestionsUndefined: Self = StObject.set(x, "maxSuggestions", js.undefined)
         
-        @scala.inline
-        def setOnChange(value: /* value */ js.Array[Value] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: /* value */ js.Array[Value] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+        inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
         
-        @scala.inline
-        def setOnFocus(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+        inline def setOnFocus(value: FocusEvent[Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+        inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
         
-        @scala.inline
-        def setOnInputChange(value: /* token */ String => Unit): Self = StObject.set(x, "onInputChange", js.Any.fromFunction1(value))
+        inline def setOnInputChange(value: /* token */ String => Unit): Self = StObject.set(x, "onInputChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
+        inline def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
         
-        @scala.inline
-        def setSaveTransform(value: /* token */ String => String): Self = StObject.set(x, "saveTransform", js.Any.fromFunction1(value))
+        inline def setSaveTransform(value: /* token */ String => String): Self = StObject.set(x, "saveTransform", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSaveTransformUndefined: Self = StObject.set(x, "saveTransform", js.undefined)
+        inline def setSaveTransformUndefined: Self = StObject.set(x, "saveTransform", js.undefined)
         
-        @scala.inline
-        def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
+        inline def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
+        inline def setSuggestionsUndefined: Self = StObject.set(x, "suggestions", js.undefined)
         
-        @scala.inline
-        def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
+        inline def setSuggestionsVarargs(value: String*): Self = StObject.set(x, "suggestions", js.Array(value :_*))
         
-        @scala.inline
-        def setTokenizeOnSpace(value: Boolean): Self = StObject.set(x, "tokenizeOnSpace", value.asInstanceOf[js.Any])
+        inline def setTokenizeOnSpace(value: Boolean): Self = StObject.set(x, "tokenizeOnSpace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTokenizeOnSpaceUndefined: Self = StObject.set(x, "tokenizeOnSpace", js.undefined)
+        inline def setTokenizeOnSpaceUndefined: Self = StObject.set(x, "tokenizeOnSpace", js.undefined)
         
-        @scala.inline
-        def setValue(value: js.Array[Value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: js.Array[Value]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
         
-        @scala.inline
-        def setValueVarargs(value: Value*): Self = StObject.set(x, "value", js.Array(value :_*))
+        inline def setValueVarargs(value: Value*): Self = StObject.set(x, "value", js.Array(value :_*))
       }
     }
     

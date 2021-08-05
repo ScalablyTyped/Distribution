@@ -12,22 +12,17 @@ trait ValueArray extends StObject {
 }
 object ValueArray {
   
-  @scala.inline
-  def apply(label: String, value: js.Array[typings.react.mod.global.JSX.Element]): ValueArray = {
+  inline def apply(label: String, value: js.Array[typings.react.mod.global.JSX.Element]): ValueArray = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueArray]
   }
   
-  @scala.inline
-  implicit class ValueArrayMutableBuilder[Self <: ValueArray] (val x: Self) extends AnyVal {
+  extension [Self <: ValueArray](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[typings.react.mod.global.JSX.Element]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[typings.react.mod.global.JSX.Element]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: typings.react.mod.global.JSX.Element*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: typings.react.mod.global.JSX.Element*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

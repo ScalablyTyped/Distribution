@@ -14,20 +14,16 @@ object packageMod {
   }
   object Package {
     
-    @scala.inline
-    def apply(name: String, version: String): Package = {
+    inline def apply(name: String, version: String): Package = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Package]
     }
     
-    @scala.inline
-    implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
+    extension [Self <: Package](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

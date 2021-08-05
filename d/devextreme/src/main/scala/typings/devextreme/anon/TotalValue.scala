@@ -21,49 +21,35 @@ trait TotalValue extends StObject {
 }
 object TotalValue {
   
-  @scala.inline
-  def apply(): TotalValue = {
+  inline def apply(): TotalValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TotalValue]
   }
   
-  @scala.inline
-  implicit class TotalValueMutableBuilder[Self <: TotalValue] (val x: Self) extends AnyVal {
+  extension [Self <: TotalValue](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxDataGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
+    inline def setGroupIndex(value: Double): Self = StObject.set(x, "groupIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
+    inline def setGroupIndexUndefined: Self = StObject.set(x, "groupIndex", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSummaryProcess(value: String): Self = StObject.set(x, "summaryProcess", value.asInstanceOf[js.Any])
+    inline def setSummaryProcess(value: String): Self = StObject.set(x, "summaryProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryProcessUndefined: Self = StObject.set(x, "summaryProcess", js.undefined)
+    inline def setSummaryProcessUndefined: Self = StObject.set(x, "summaryProcess", js.undefined)
     
-    @scala.inline
-    def setTotalValue(value: js.Any): Self = StObject.set(x, "totalValue", value.asInstanceOf[js.Any])
+    inline def setTotalValue(value: js.Any): Self = StObject.set(x, "totalValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalValueUndefined: Self = StObject.set(x, "totalValue", js.undefined)
+    inline def setTotalValueUndefined: Self = StObject.set(x, "totalValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -60,21 +60,16 @@ object publishingDestinationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PublishingDestination]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublishingDestination]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PublishingDestinationState): PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PublishingDestination]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PublishingDestinationState, opts: CustomResourceOptions): PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublishingDestination]
+    inline def get(name: String, id: Input[ID]): PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PublishingDestination]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublishingDestination]
+    inline def get(name: String, id: Input[ID], state: PublishingDestinationState): PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PublishingDestination]
+    inline def get(name: String, id: Input[ID], state: PublishingDestinationState, opts: CustomResourceOptions): PublishingDestination = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PublishingDestination]
     
     /**
       * Returns true if the given object is an instance of PublishingDestination.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/publishingDestination.PublishingDestination */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/publishingDestination.PublishingDestination */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/publishingDestination.PublishingDestination */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/publishingDestination.PublishingDestination */ Boolean]
   }
   
   trait PublishingDestinationArgs extends StObject {
@@ -101,29 +96,22 @@ object publishingDestinationMod {
   }
   object PublishingDestinationArgs {
     
-    @scala.inline
-    def apply(destinationArn: Input[String], detectorId: Input[String], kmsKeyArn: Input[String]): PublishingDestinationArgs = {
+    inline def apply(destinationArn: Input[String], detectorId: Input[String], kmsKeyArn: Input[String]): PublishingDestinationArgs = {
       val __obj = js.Dynamic.literal(destinationArn = destinationArn.asInstanceOf[js.Any], detectorId = detectorId.asInstanceOf[js.Any], kmsKeyArn = kmsKeyArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishingDestinationArgs]
     }
     
-    @scala.inline
-    implicit class PublishingDestinationArgsMutableBuilder[Self <: PublishingDestinationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PublishingDestinationArgs](x: Self) {
       
-      @scala.inline
-      def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationType(value: Input[String]): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
+      inline def setDestinationType(value: Input[String]): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
+      inline def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,38 +139,28 @@ object publishingDestinationMod {
   }
   object PublishingDestinationState {
     
-    @scala.inline
-    def apply(): PublishingDestinationState = {
+    inline def apply(): PublishingDestinationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PublishingDestinationState]
     }
     
-    @scala.inline
-    implicit class PublishingDestinationStateMutableBuilder[Self <: PublishingDestinationState] (val x: Self) extends AnyVal {
+    extension [Self <: PublishingDestinationState](x: Self) {
       
-      @scala.inline
-      def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
+      inline def setDestinationArn(value: Input[String]): Self = StObject.set(x, "destinationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationArnUndefined: Self = StObject.set(x, "destinationArn", js.undefined)
+      inline def setDestinationArnUndefined: Self = StObject.set(x, "destinationArn", js.undefined)
       
-      @scala.inline
-      def setDestinationType(value: Input[String]): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
+      inline def setDestinationType(value: Input[String]): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
+      inline def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
+      inline def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
       
-      @scala.inline
-      def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     }
   }
 }

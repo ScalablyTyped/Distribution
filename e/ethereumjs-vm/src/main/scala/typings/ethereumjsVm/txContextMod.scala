@@ -29,20 +29,16 @@ object txContextMod {
   }
   object TxContext {
     
-    @scala.inline
-    def apply(gasPrice: Buffer, origin: Buffer): TxContext = {
+    inline def apply(gasPrice: Buffer, origin: Buffer): TxContext = {
       val __obj = js.Dynamic.literal(gasPrice = gasPrice.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
       __obj.asInstanceOf[TxContext]
     }
     
-    @scala.inline
-    implicit class TxContextMutableBuilder[Self <: TxContext] (val x: Self) extends AnyVal {
+    extension [Self <: TxContext](x: Self) {
       
-      @scala.inline
-      def setGasPrice(value: Buffer): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      inline def setGasPrice(value: Buffer): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: Buffer): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: Buffer): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }
   }
 }

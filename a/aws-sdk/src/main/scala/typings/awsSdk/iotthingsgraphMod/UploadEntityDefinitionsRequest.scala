@@ -23,31 +23,23 @@ trait UploadEntityDefinitionsRequest extends StObject {
 }
 object UploadEntityDefinitionsRequest {
   
-  @scala.inline
-  def apply(): UploadEntityDefinitionsRequest = {
+  inline def apply(): UploadEntityDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UploadEntityDefinitionsRequest]
   }
   
-  @scala.inline
-  implicit class UploadEntityDefinitionsRequestMutableBuilder[Self <: UploadEntityDefinitionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UploadEntityDefinitionsRequest](x: Self) {
     
-    @scala.inline
-    def setDeprecateExistingEntities(value: DeprecateExistingEntities): Self = StObject.set(x, "deprecateExistingEntities", value.asInstanceOf[js.Any])
+    inline def setDeprecateExistingEntities(value: DeprecateExistingEntities): Self = StObject.set(x, "deprecateExistingEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecateExistingEntitiesUndefined: Self = StObject.set(x, "deprecateExistingEntities", js.undefined)
+    inline def setDeprecateExistingEntitiesUndefined: Self = StObject.set(x, "deprecateExistingEntities", js.undefined)
     
-    @scala.inline
-    def setDocument(value: DefinitionDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: DefinitionDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setSyncWithPublicNamespace(value: SyncWithPublicNamespace): Self = StObject.set(x, "syncWithPublicNamespace", value.asInstanceOf[js.Any])
+    inline def setSyncWithPublicNamespace(value: SyncWithPublicNamespace): Self = StObject.set(x, "syncWithPublicNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncWithPublicNamespaceUndefined: Self = StObject.set(x, "syncWithPublicNamespace", js.undefined)
+    inline def setSyncWithPublicNamespaceUndefined: Self = StObject.set(x, "syncWithPublicNamespace", js.undefined)
   }
 }

@@ -47,14 +47,12 @@ object tableMod {
     @JSImport("react-virtualized/dist/commonjs/Table", "Column.defaultProps")
     @js.native
     def defaultProps: CellRenderer = js.native
-    @scala.inline
-    def defaultProps_=(x: CellRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CellRenderer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-virtualized/dist/commonjs/Table", "Column.propTypes")
     @js.native
     def propTypes: CellDataGetter = js.native
-    @scala.inline
-    def propTypes_=(x: CellDataGetter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: CellDataGetter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-virtualized/dist/commonjs/Table", "SortDirection")
@@ -86,20 +84,16 @@ object tableMod {
     @JSImport("react-virtualized/dist/commonjs/Table", "Table.defaultProps")
     @js.native
     def defaultProps: DisableHeader = js.native
-    @scala.inline
-    def defaultProps_=(x: DisableHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DisableHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-virtualized/dist/commonjs/Table", "Table.propTypes")
     @js.native
     def propTypes: ClassName = js.native
-    @scala.inline
-    def propTypes_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit]): MultiSortReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiSort")(sortCallback.asInstanceOf[js.Any]).asInstanceOf[MultiSortReturn]
-  @scala.inline
-  def createMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit], options: MultiSortOptions): MultiSortReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiSort")(sortCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MultiSortReturn]
+  inline def createMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit]): MultiSortReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiSort")(sortCallback.asInstanceOf[js.Any]).asInstanceOf[MultiSortReturn]
+  inline def createMultiSort(sortCallback: js.Function1[/* params */ SortBy, Unit], options: MultiSortOptions): MultiSortReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiSort")(sortCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MultiSortReturn]
   
   @JSImport("react-virtualized/dist/commonjs/Table", "defaultCellDataGetter")
   @js.native
@@ -109,8 +103,7 @@ object tableMod {
   @js.native
   val defaultCellRenderer: TableCellRenderer = js.native
   
-  @scala.inline
-  def defaultHeaderRenderer(): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderRenderer")().asInstanceOf[js.Array[ReactElement]]
+  inline def defaultHeaderRenderer(): js.Array[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultHeaderRenderer")().asInstanceOf[js.Array[ReactElement]]
   
   @JSImport("react-virtualized/dist/commonjs/Table", "defaultHeaderRowRenderer")
   @js.native

@@ -12,22 +12,17 @@ trait Strings extends StObject {
 }
 object Strings {
   
-  @scala.inline
-  def apply(value: js.Any): Strings = {
+  inline def apply(value: js.Any): Strings = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Strings]
   }
   
-  @scala.inline
-  implicit class StringsMutableBuilder[Self <: Strings] (val x: Self) extends AnyVal {
+  extension [Self <: Strings](x: Self) {
     
-    @scala.inline
-    def setStrings(value: Am): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    inline def setStrings(value: Am): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+    inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

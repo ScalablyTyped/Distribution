@@ -13,7 +13,7 @@ trait OLEFormat extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.OLEFormat_typekey")
+  /* private */ @JSName("Excel.OLEFormat_typekey")
   var ExcelDotOLEFormat_typekey: OLEFormat = js.native
   
   val Object: js.Any = js.native

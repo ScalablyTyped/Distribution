@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(dir: String): js.Array[FsRoute] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Array[FsRoute]]
-  @scala.inline
-  def default(dir: String, options: FsRoutesOptions): js.Array[FsRoute] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[FsRoute]]
+  inline def default(dir: String): js.Array[FsRoute] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Array[FsRoute]]
+  inline def default(dir: String, options: FsRoutesOptions): js.Array[FsRoute] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[FsRoute]]
   
   trait FsRoute extends StObject {
     
@@ -24,20 +22,16 @@ object mod {
   }
   object FsRoute {
     
-    @scala.inline
-    def apply(path: String, route: String): FsRoute = {
+    inline def apply(path: String, route: String): FsRoute = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[FsRoute]
     }
     
-    @scala.inline
-    implicit class FsRouteMutableBuilder[Self <: FsRoute] (val x: Self) extends AnyVal {
+    extension [Self <: FsRoute](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,26 +43,20 @@ object mod {
   }
   object FsRoutesOptions {
     
-    @scala.inline
-    def apply(): FsRoutesOptions = {
+    inline def apply(): FsRoutesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FsRoutesOptions]
     }
     
-    @scala.inline
-    implicit class FsRoutesOptionsMutableBuilder[Self <: FsRoutesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FsRoutesOptions](x: Self) {
       
-      @scala.inline
-      def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
+      inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       
-      @scala.inline
-      def setIndexFileRegExp(value: RegExp): Self = StObject.set(x, "indexFileRegExp", value.asInstanceOf[js.Any])
+      inline def setIndexFileRegExp(value: RegExp): Self = StObject.set(x, "indexFileRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexFileRegExpUndefined: Self = StObject.set(x, "indexFileRegExp", js.undefined)
+      inline def setIndexFileRegExpUndefined: Self = StObject.set(x, "indexFileRegExp", js.undefined)
     }
   }
 }

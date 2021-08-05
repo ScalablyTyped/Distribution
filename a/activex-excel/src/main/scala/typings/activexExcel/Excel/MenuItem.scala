@@ -18,7 +18,7 @@ trait MenuItem extends StObject {
   
   var Enabled: Boolean
   
-  @JSName("Excel.MenuItem_typekey")
+  /* private */ @JSName("Excel.MenuItem_typekey")
   var ExcelDotMenuItem_typekey: MenuItem
   
   var HelpContextID: Double
@@ -35,8 +35,7 @@ trait MenuItem extends StObject {
 }
 object MenuItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Caption: String,
     Checked: Boolean,
@@ -56,46 +55,32 @@ object MenuItem {
     __obj.asInstanceOf[MenuItem]
   }
   
-  @scala.inline
-  implicit class MenuItemMutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
+  extension [Self <: MenuItem](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotMenuItem_typekey(value: MenuItem): Self = StObject.set(x, "Excel.MenuItem_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotMenuItem_typekey(value: MenuItem): Self = StObject.set(x, "Excel.MenuItem_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpContextID(value: Double): Self = StObject.set(x, "HelpContextID", value.asInstanceOf[js.Any])
+    inline def setHelpContextID(value: Double): Self = StObject.set(x, "HelpContextID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpFile(value: String): Self = StObject.set(x, "HelpFile", value.asInstanceOf[js.Any])
+    inline def setHelpFile(value: String): Self = StObject.set(x, "HelpFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnAction(value: String): Self = StObject.set(x, "OnAction", value.asInstanceOf[js.Any])
+    inline def setOnAction(value: String): Self = StObject.set(x, "OnAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBar(value: String): Self = StObject.set(x, "StatusBar", value.asInstanceOf[js.Any])
+    inline def setStatusBar(value: String): Self = StObject.set(x, "StatusBar", value.asInstanceOf[js.Any])
   }
 }

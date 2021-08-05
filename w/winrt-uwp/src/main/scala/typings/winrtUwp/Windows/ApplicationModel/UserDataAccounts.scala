@@ -93,8 +93,7 @@ object UserDataAccounts {
     }
     object DeviceAccountConfiguration {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accountName: String,
         calendarSyncEnabled: Boolean,
         contactsSyncEnabled: Boolean,
@@ -116,56 +115,39 @@ object UserDataAccounts {
         __obj.asInstanceOf[DeviceAccountConfiguration]
       }
       
-      @scala.inline
-      implicit class DeviceAccountConfigurationMutableBuilder[Self <: DeviceAccountConfiguration] (val x: Self) extends AnyVal {
+      extension [Self <: DeviceAccountConfiguration](x: Self) {
         
-        @scala.inline
-        def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+        inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCalendarSyncEnabled(value: Boolean): Self = StObject.set(x, "calendarSyncEnabled", value.asInstanceOf[js.Any])
+        inline def setCalendarSyncEnabled(value: Boolean): Self = StObject.set(x, "calendarSyncEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContactsSyncEnabled(value: Boolean): Self = StObject.set(x, "contactsSyncEnabled", value.asInstanceOf[js.Any])
+        inline def setContactsSyncEnabled(value: Boolean): Self = StObject.set(x, "contactsSyncEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeviceAccountTypeId(value: String): Self = StObject.set(x, "deviceAccountTypeId", value.asInstanceOf[js.Any])
+        inline def setDeviceAccountTypeId(value: String): Self = StObject.set(x, "deviceAccountTypeId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+        inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+        inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmailSyncEnabled(value: Boolean): Self = StObject.set(x, "emailSyncEnabled", value.asInstanceOf[js.Any])
+        inline def setEmailSyncEnabled(value: Boolean): Self = StObject.set(x, "emailSyncEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncomingServerAddress(value: String): Self = StObject.set(x, "incomingServerAddress", value.asInstanceOf[js.Any])
+        inline def setIncomingServerAddress(value: String): Self = StObject.set(x, "incomingServerAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncomingServerPort(value: Double): Self = StObject.set(x, "incomingServerPort", value.asInstanceOf[js.Any])
+        inline def setIncomingServerPort(value: Double): Self = StObject.set(x, "incomingServerPort", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncomingServerRequiresSsl(value: Boolean): Self = StObject.set(x, "incomingServerRequiresSsl", value.asInstanceOf[js.Any])
+        inline def setIncomingServerRequiresSsl(value: Boolean): Self = StObject.set(x, "incomingServerRequiresSsl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncomingServerUsername(value: String): Self = StObject.set(x, "incomingServerUsername", value.asInstanceOf[js.Any])
+        inline def setIncomingServerUsername(value: String): Self = StObject.set(x, "incomingServerUsername", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutgoingServerAddress(value: String): Self = StObject.set(x, "outgoingServerAddress", value.asInstanceOf[js.Any])
+        inline def setOutgoingServerAddress(value: String): Self = StObject.set(x, "outgoingServerAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutgoingServerPort(value: Double): Self = StObject.set(x, "outgoingServerPort", value.asInstanceOf[js.Any])
+        inline def setOutgoingServerPort(value: Double): Self = StObject.set(x, "outgoingServerPort", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutgoingServerRequiresSsl(value: Boolean): Self = StObject.set(x, "outgoingServerRequiresSsl", value.asInstanceOf[js.Any])
+        inline def setOutgoingServerRequiresSsl(value: Boolean): Self = StObject.set(x, "outgoingServerRequiresSsl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutgoingServerUsername(value: String): Self = StObject.set(x, "outgoingServerUsername", value.asInstanceOf[js.Any])
+        inline def setOutgoingServerUsername(value: String): Self = StObject.set(x, "outgoingServerUsername", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setServerType(value: DeviceAccountServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
+        inline def setServerType(value: DeviceAccountServerType): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
       }
     }
     
@@ -304,8 +286,7 @@ object UserDataAccounts {
   }
   object UserDataAccount {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deleteAsync: () => IPromiseWithIAsyncAction,
       deviceAccountTypeId: String,
       enterpriseId: String,
@@ -325,50 +306,35 @@ object UserDataAccounts {
       __obj.asInstanceOf[UserDataAccount]
     }
     
-    @scala.inline
-    implicit class UserDataAccountMutableBuilder[Self <: UserDataAccount] (val x: Self) extends AnyVal {
+    extension [Self <: UserDataAccount](x: Self) {
       
-      @scala.inline
-      def setDeleteAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteAsync", js.Any.fromFunction0(value))
+      inline def setDeleteAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeviceAccountTypeId(value: String): Self = StObject.set(x, "deviceAccountTypeId", value.asInstanceOf[js.Any])
+      inline def setDeviceAccountTypeId(value: String): Self = StObject.set(x, "deviceAccountTypeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
+      inline def setEnterpriseId(value: String): Self = StObject.set(x, "enterpriseId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindAppointmentCalendarsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAppointmentCalendarsAsync", js.Any.fromFunction0(value))
+      inline def setFindAppointmentCalendarsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAppointmentCalendarsAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindContactAnnotationListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findContactAnnotationListsAsync", js.Any.fromFunction0(value))
+      inline def setFindContactAnnotationListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findContactAnnotationListsAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindContactListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findContactListsAsync", js.Any.fromFunction0(value))
+      inline def setFindContactListsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findContactListsAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFindEmailMailboxesAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findEmailMailboxesAsync", js.Any.fromFunction0(value))
+      inline def setFindEmailMailboxesAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findEmailMailboxesAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIcon(value: IRandomAccessStreamReference): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IRandomAccessStreamReference): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsProtectedUnderLock(value: Boolean): Self = StObject.set(x, "isProtectedUnderLock", value.asInstanceOf[js.Any])
+      inline def setIsProtectedUnderLock(value: Boolean): Self = StObject.set(x, "isProtectedUnderLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOtherAppReadAccess(value: UserDataAccountOtherAppReadAccess): Self = StObject.set(x, "otherAppReadAccess", value.asInstanceOf[js.Any])
+      inline def setOtherAppReadAccess(value: UserDataAccountOtherAppReadAccess): Self = StObject.set(x, "otherAppReadAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageFamilyName(value: String): Self = StObject.set(x, "packageFamilyName", value.asInstanceOf[js.Any])
+      inline def setPackageFamilyName(value: String): Self = StObject.set(x, "packageFamilyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
+      inline def setSaveAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUserDisplayName(value: String): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
+      inline def setUserDisplayName(value: String): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,8 +366,7 @@ object UserDataAccounts {
   }
   object UserDataAccountStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createAccountAsync: String => IPromiseWithIAsyncOperation[UserDataAccount],
       findAccountsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
       getAccountAsync: String => IPromiseWithIAsyncOperation[UserDataAccount]
@@ -410,17 +375,13 @@ object UserDataAccounts {
       __obj.asInstanceOf[UserDataAccountStore]
     }
     
-    @scala.inline
-    implicit class UserDataAccountStoreMutableBuilder[Self <: UserDataAccountStore] (val x: Self) extends AnyVal {
+    extension [Self <: UserDataAccountStore](x: Self) {
       
-      @scala.inline
-      def setCreateAccountAsync(value: String => IPromiseWithIAsyncOperation[UserDataAccount]): Self = StObject.set(x, "createAccountAsync", js.Any.fromFunction1(value))
+      inline def setCreateAccountAsync(value: String => IPromiseWithIAsyncOperation[UserDataAccount]): Self = StObject.set(x, "createAccountAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindAccountsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAccountsAsync", js.Any.fromFunction0(value))
+      inline def setFindAccountsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAccountsAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAccountAsync(value: String => IPromiseWithIAsyncOperation[UserDataAccount]): Self = StObject.set(x, "getAccountAsync", js.Any.fromFunction1(value))
+      inline def setGetAccountAsync(value: String => IPromiseWithIAsyncOperation[UserDataAccount]): Self = StObject.set(x, "getAccountAsync", js.Any.fromFunction1(value))
     }
   }
 }

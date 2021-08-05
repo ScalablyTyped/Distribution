@@ -13,22 +13,17 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe {
   
-  @scala.inline
-  def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe = {
+  inline def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDeMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfigurationDeserializerHiveJsonSerDe](x: Self) {
     
-    @scala.inline
-    def setTimestampFormats(value: js.Array[String]): Self = StObject.set(x, "timestampFormats", value.asInstanceOf[js.Any])
+    inline def setTimestampFormats(value: js.Array[String]): Self = StObject.set(x, "timestampFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampFormatsUndefined: Self = StObject.set(x, "timestampFormats", js.undefined)
+    inline def setTimestampFormatsUndefined: Self = StObject.set(x, "timestampFormats", js.undefined)
     
-    @scala.inline
-    def setTimestampFormatsVarargs(value: String*): Self = StObject.set(x, "timestampFormats", js.Array(value :_*))
+    inline def setTimestampFormatsVarargs(value: String*): Self = StObject.set(x, "timestampFormats", js.Array(value :_*))
   }
 }

@@ -13,22 +13,17 @@ trait QueryStringConditionConfig extends StObject {
 }
 object QueryStringConditionConfig {
   
-  @scala.inline
-  def apply(): QueryStringConditionConfig = {
+  inline def apply(): QueryStringConditionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryStringConditionConfig]
   }
   
-  @scala.inline
-  implicit class QueryStringConditionConfigMutableBuilder[Self <: QueryStringConditionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: QueryStringConditionConfig](x: Self) {
     
-    @scala.inline
-    def setValues(value: QueryStringKeyValuePairList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: QueryStringKeyValuePairList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: QueryStringKeyValuePair*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: QueryStringKeyValuePair*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

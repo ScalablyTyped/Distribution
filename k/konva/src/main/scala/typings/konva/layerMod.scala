@@ -105,26 +105,20 @@ object layerMod {
   }
   object LayerConfig {
     
-    @scala.inline
-    def apply(): LayerConfig = {
+    inline def apply(): LayerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayerConfig]
     }
     
-    @scala.inline
-    implicit class LayerConfigMutableBuilder[Self <: LayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: LayerConfig](x: Self) {
       
-      @scala.inline
-      def setHitGraphEnabled(value: Boolean): Self = StObject.set(x, "hitGraphEnabled", value.asInstanceOf[js.Any])
+      inline def setHitGraphEnabled(value: Boolean): Self = StObject.set(x, "hitGraphEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitGraphEnabledUndefined: Self = StObject.set(x, "hitGraphEnabled", js.undefined)
+      inline def setHitGraphEnabledUndefined: Self = StObject.set(x, "hitGraphEnabled", js.undefined)
       
-      @scala.inline
-      def setImageSmoothingEnabled(value: Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
+      inline def setImageSmoothingEnabled(value: Boolean): Self = StObject.set(x, "imageSmoothingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSmoothingEnabledUndefined: Self = StObject.set(x, "imageSmoothingEnabled", js.undefined)
+      inline def setImageSmoothingEnabledUndefined: Self = StObject.set(x, "imageSmoothingEnabled", js.undefined)
     }
   }
 }

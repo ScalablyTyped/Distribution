@@ -13,19 +13,15 @@ trait LayoutInitEvent
 }
 object LayoutInitEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Layout): LayoutInitEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Layout): LayoutInitEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutInitEvent]
   }
   
-  @scala.inline
-  implicit class LayoutInitEventMutableBuilder[Self <: LayoutInitEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutInitEvent](x: Self) {
     
-    @scala.inline
-    def setLayout(value: JQuery): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: JQuery): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
   }
 }

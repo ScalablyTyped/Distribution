@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdFramesetNewFrameLocation extends StObject
 object WdFramesetNewFrameLocation {
   
-  @scala.inline
-  def wdFramesetNewFrameAbove: `0` = 0.asInstanceOf[`0`]
+  inline def wdFramesetNewFrameAbove: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdFramesetNewFrameBelow: `1` = 1.asInstanceOf[`1`]
+  inline def wdFramesetNewFrameBelow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdFramesetNewFrameLeft: `3` = 3.asInstanceOf[`3`]
+  inline def wdFramesetNewFrameLeft: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdFramesetNewFrameRight: `2` = 2.asInstanceOf[`2`]
+  inline def wdFramesetNewFrameRight: `2` = 2.asInstanceOf[`2`]
 }

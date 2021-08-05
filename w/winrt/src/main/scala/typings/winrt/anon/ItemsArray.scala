@@ -14,22 +14,17 @@ trait ItemsArray extends StObject {
 }
 object ItemsArray {
   
-  @scala.inline
-  def apply(items: js.Array[IKeyValuePair[String, ResourceMap]], returnValue: Double): ItemsArray = {
+  inline def apply(items: js.Array[IKeyValuePair[String, ResourceMap]], returnValue: Double): ItemsArray = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsArray]
   }
   
-  @scala.inline
-  implicit class ItemsArrayMutableBuilder[Self <: ItemsArray] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsArray](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[IKeyValuePair[String, ResourceMap]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[IKeyValuePair[String, ResourceMap]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: (IKeyValuePair[String, ResourceMap])*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: (IKeyValuePair[String, ResourceMap])*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

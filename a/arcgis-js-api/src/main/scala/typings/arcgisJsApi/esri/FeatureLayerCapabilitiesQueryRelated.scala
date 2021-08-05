@@ -33,8 +33,7 @@ trait FeatureLayerCapabilitiesQueryRelated
 }
 object FeatureLayerCapabilitiesQueryRelated {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object FeatureLayerCapabilitiesQueryRelated {
     __obj.asInstanceOf[FeatureLayerCapabilitiesQueryRelated]
   }
   
-  @scala.inline
-  implicit class FeatureLayerCapabilitiesQueryRelatedMutableBuilder[Self <: FeatureLayerCapabilitiesQueryRelated] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureLayerCapabilitiesQueryRelated](x: Self) {
     
-    @scala.inline
-    def setSupportsCount(value: Boolean): Self = StObject.set(x, "supportsCount", value.asInstanceOf[js.Any])
+    inline def setSupportsCount(value: Boolean): Self = StObject.set(x, "supportsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsOrderBy(value: Boolean): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
+    inline def setSupportsOrderBy(value: Boolean): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsPagination(value: Boolean): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
+    inline def setSupportsPagination(value: Boolean): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
   }
 }

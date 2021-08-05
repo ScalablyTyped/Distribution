@@ -14,16 +14,13 @@ trait ShapeAnnotationCfg
 }
 object ShapeAnnotationCfg {
   
-  @scala.inline
-  def apply(container: IGroup, render: IGroup => Unit): ShapeAnnotationCfg = {
+  inline def apply(container: IGroup, render: IGroup => Unit): ShapeAnnotationCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], render = js.Any.fromFunction1(render))
     __obj.asInstanceOf[ShapeAnnotationCfg]
   }
   
-  @scala.inline
-  implicit class ShapeAnnotationCfgMutableBuilder[Self <: ShapeAnnotationCfg] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeAnnotationCfg](x: Self) {
     
-    @scala.inline
-    def setRender(value: IGroup => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: IGroup => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
   }
 }

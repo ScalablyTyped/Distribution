@@ -11,25 +11,19 @@ trait IBatchList extends StObject {
 }
 object IBatchList {
   
-  @scala.inline
-  def apply(): IBatchList = {
+  inline def apply(): IBatchList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBatchList]
   }
   
-  @scala.inline
-  implicit class IBatchListMutableBuilder[Self <: IBatchList] (val x: Self) extends AnyVal {
+  extension [Self <: IBatchList](x: Self) {
     
-    @scala.inline
-    def setBatches(value: js.Array[IBatch]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
+    inline def setBatches(value: js.Array[IBatch]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchesNull: Self = StObject.set(x, "batches", null)
+    inline def setBatchesNull: Self = StObject.set(x, "batches", null)
     
-    @scala.inline
-    def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
+    inline def setBatchesUndefined: Self = StObject.set(x, "batches", js.undefined)
     
-    @scala.inline
-    def setBatchesVarargs(value: IBatch*): Self = StObject.set(x, "batches", js.Array(value :_*))
+    inline def setBatchesVarargs(value: IBatch*): Self = StObject.set(x, "batches", js.Array(value :_*))
   }
 }

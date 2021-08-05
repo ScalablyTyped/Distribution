@@ -12,19 +12,15 @@ trait FillStroke extends StObject {
 }
 object FillStroke {
   
-  @scala.inline
-  def apply(fill: String, stroke: String): FillStroke = {
+  inline def apply(fill: String, stroke: String): FillStroke = {
     val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], stroke = stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[FillStroke]
   }
   
-  @scala.inline
-  implicit class FillStrokeMutableBuilder[Self <: FillStroke] (val x: Self) extends AnyVal {
+  extension [Self <: FillStroke](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
   }
 }

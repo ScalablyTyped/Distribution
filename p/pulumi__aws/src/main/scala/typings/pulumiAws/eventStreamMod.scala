@@ -55,21 +55,16 @@ object eventStreamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventStreamState): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventStream]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventStreamState, opts: CustomResourceOptions): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventStream]
+    inline def get(name: String, id: Input[ID]): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventStream]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventStream]
+    inline def get(name: String, id: Input[ID], state: EventStreamState): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventStream]
+    inline def get(name: String, id: Input[ID], state: EventStreamState, opts: CustomResourceOptions): EventStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventStream]
     
     /**
       * Returns true if the given object is an instance of EventStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/eventStream.EventStream */ Boolean]
   }
   
   trait EventStreamArgs extends StObject {
@@ -91,23 +86,18 @@ object eventStreamMod {
   }
   object EventStreamArgs {
     
-    @scala.inline
-    def apply(applicationId: Input[String], destinationStreamArn: Input[String], roleArn: Input[String]): EventStreamArgs = {
+    inline def apply(applicationId: Input[String], destinationStreamArn: Input[String], roleArn: Input[String]): EventStreamArgs = {
       val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any], destinationStreamArn = destinationStreamArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventStreamArgs]
     }
     
-    @scala.inline
-    implicit class EventStreamArgsMutableBuilder[Self <: EventStreamArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EventStreamArgs](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationStreamArn(value: Input[String]): Self = StObject.set(x, "destinationStreamArn", value.asInstanceOf[js.Any])
+      inline def setDestinationStreamArn(value: Input[String]): Self = StObject.set(x, "destinationStreamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,32 +120,24 @@ object eventStreamMod {
   }
   object EventStreamState {
     
-    @scala.inline
-    def apply(): EventStreamState = {
+    inline def apply(): EventStreamState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventStreamState]
     }
     
-    @scala.inline
-    implicit class EventStreamStateMutableBuilder[Self <: EventStreamState] (val x: Self) extends AnyVal {
+    extension [Self <: EventStreamState](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
       
-      @scala.inline
-      def setDestinationStreamArn(value: Input[String]): Self = StObject.set(x, "destinationStreamArn", value.asInstanceOf[js.Any])
+      inline def setDestinationStreamArn(value: Input[String]): Self = StObject.set(x, "destinationStreamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationStreamArnUndefined: Self = StObject.set(x, "destinationStreamArn", js.undefined)
+      inline def setDestinationStreamArnUndefined: Self = StObject.set(x, "destinationStreamArn", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     }
   }
 }

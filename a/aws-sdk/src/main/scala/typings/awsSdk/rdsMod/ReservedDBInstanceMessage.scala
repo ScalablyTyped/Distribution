@@ -18,28 +18,21 @@ trait ReservedDBInstanceMessage extends StObject {
 }
 object ReservedDBInstanceMessage {
   
-  @scala.inline
-  def apply(): ReservedDBInstanceMessage = {
+  inline def apply(): ReservedDBInstanceMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservedDBInstanceMessage]
   }
   
-  @scala.inline
-  implicit class ReservedDBInstanceMessageMutableBuilder[Self <: ReservedDBInstanceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ReservedDBInstanceMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setReservedDBInstances(value: ReservedDBInstanceList): Self = StObject.set(x, "ReservedDBInstances", value.asInstanceOf[js.Any])
+    inline def setReservedDBInstances(value: ReservedDBInstanceList): Self = StObject.set(x, "ReservedDBInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedDBInstancesUndefined: Self = StObject.set(x, "ReservedDBInstances", js.undefined)
+    inline def setReservedDBInstancesUndefined: Self = StObject.set(x, "ReservedDBInstances", js.undefined)
     
-    @scala.inline
-    def setReservedDBInstancesVarargs(value: ReservedDBInstance*): Self = StObject.set(x, "ReservedDBInstances", js.Array(value :_*))
+    inline def setReservedDBInstancesVarargs(value: ReservedDBInstance*): Self = StObject.set(x, "ReservedDBInstances", js.Array(value :_*))
   }
 }

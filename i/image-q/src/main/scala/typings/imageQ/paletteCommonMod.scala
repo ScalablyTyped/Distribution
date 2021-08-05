@@ -16,20 +16,16 @@ object paletteCommonMod {
   }
   object IPaletteQuantizer {
     
-    @scala.inline
-    def apply(quantize: () => Palette, sample: PointContainer => Unit): IPaletteQuantizer = {
+    inline def apply(quantize: () => Palette, sample: PointContainer => Unit): IPaletteQuantizer = {
       val __obj = js.Dynamic.literal(quantize = js.Any.fromFunction0(quantize), sample = js.Any.fromFunction1(sample))
       __obj.asInstanceOf[IPaletteQuantizer]
     }
     
-    @scala.inline
-    implicit class IPaletteQuantizerMutableBuilder[Self <: IPaletteQuantizer] (val x: Self) extends AnyVal {
+    extension [Self <: IPaletteQuantizer](x: Self) {
       
-      @scala.inline
-      def setQuantize(value: () => Palette): Self = StObject.set(x, "quantize", js.Any.fromFunction0(value))
+      inline def setQuantize(value: () => Palette): Self = StObject.set(x, "quantize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSample(value: PointContainer => Unit): Self = StObject.set(x, "sample", js.Any.fromFunction1(value))
+      inline def setSample(value: PointContainer => Unit): Self = StObject.set(x, "sample", js.Any.fromFunction1(value))
     }
   }
 }

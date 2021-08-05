@@ -15,17 +15,14 @@ object anon {
   }
   object Env {
     
-    @scala.inline
-    def apply(env: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Env = {
+    inline def apply(env: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Env = {
       val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any])
       __obj.asInstanceOf[Env]
     }
     
-    @scala.inline
-    implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
+    extension [Self <: Env](x: Self) {
       
-      @scala.inline
-      def setEnv(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,19 +41,16 @@ object anon {
   }
   object PostMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       postMessage: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any) => js.Any
     ): PostMessage = {
       val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction2(postMessage))
       __obj.asInstanceOf[PostMessage]
     }
     
-    @scala.inline
-    implicit class PostMessageMutableBuilder[Self <: PostMessage] (val x: Self) extends AnyVal {
+    extension [Self <: PostMessage](x: Self) {
       
-      @scala.inline
-      def setPostMessage(
+      inline def setPostMessage(
         value: (js.Any, /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any) => js.Any
       ): Self = StObject.set(x, "postMessage", js.Any.fromFunction2(value))
     }
@@ -70,20 +64,16 @@ object anon {
   }
   object ResourceLimits {
     
-    @scala.inline
-    def apply(): ResourceLimits = {
+    inline def apply(): ResourceLimits = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceLimits]
     }
     
-    @scala.inline
-    implicit class ResourceLimitsMutableBuilder[Self <: ResourceLimits] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceLimits](x: Self) {
       
-      @scala.inline
-      def setResourceLimits(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
+      inline def setResourceLimits(value: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
+      inline def setResourceLimitsUndefined: Self = StObject.set(x, "resourceLimits", js.undefined)
     }
   }
 }

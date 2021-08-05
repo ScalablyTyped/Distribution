@@ -18,31 +18,23 @@ trait CoverUploadId extends StObject {
 }
 object CoverUploadId {
   
-  @scala.inline
-  def apply(broadcastId: String, coverUploadId: String, description: String, title: String): CoverUploadId = {
+  inline def apply(broadcastId: String, coverUploadId: String, description: String, title: String): CoverUploadId = {
     val __obj = js.Dynamic.literal(broadcastId = broadcastId.asInstanceOf[js.Any], coverUploadId = coverUploadId.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverUploadId]
   }
   
-  @scala.inline
-  implicit class CoverUploadIdMutableBuilder[Self <: CoverUploadId] (val x: Self) extends AnyVal {
+  extension [Self <: CoverUploadId](x: Self) {
     
-    @scala.inline
-    def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
+    inline def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverUploadId(value: String): Self = StObject.set(x, "coverUploadId", value.asInstanceOf[js.Any])
+    inline def setCoverUploadId(value: String): Self = StObject.set(x, "coverUploadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgtvSharePreviewToFeed(value: Boolean): Self = StObject.set(x, "igtvSharePreviewToFeed", value.asInstanceOf[js.Any])
+    inline def setIgtvSharePreviewToFeed(value: Boolean): Self = StObject.set(x, "igtvSharePreviewToFeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgtvSharePreviewToFeedUndefined: Self = StObject.set(x, "igtvSharePreviewToFeed", js.undefined)
+    inline def setIgtvSharePreviewToFeedUndefined: Self = StObject.set(x, "igtvSharePreviewToFeed", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

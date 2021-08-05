@@ -49,31 +49,23 @@ trait SchemaHistogramRule extends StObject {
 }
 object SchemaHistogramRule {
   
-  @scala.inline
-  def apply(): SchemaHistogramRule = {
+  inline def apply(): SchemaHistogramRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHistogramRule]
   }
   
-  @scala.inline
-  implicit class SchemaHistogramRuleMutableBuilder[Self <: SchemaHistogramRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHistogramRule](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

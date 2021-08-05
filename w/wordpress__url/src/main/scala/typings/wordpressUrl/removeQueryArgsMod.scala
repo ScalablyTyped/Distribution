@@ -10,6 +10,5 @@ object removeQueryArgsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def removeQueryArgs(url: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeQueryArgs")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def removeQueryArgs(url: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeQueryArgs")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
 }

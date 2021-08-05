@@ -66,20 +66,16 @@ object selectionTypesMod {
   }
   object IObjectWithKey {
     
-    @scala.inline
-    def apply(): IObjectWithKey = {
+    inline def apply(): IObjectWithKey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IObjectWithKey]
     }
     
-    @scala.inline
-    implicit class IObjectWithKeyMutableBuilder[Self <: IObjectWithKey] (val x: Self) extends AnyVal {
+    extension [Self <: IObjectWithKey](x: Self) {
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   

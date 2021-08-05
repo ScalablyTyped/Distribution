@@ -40,8 +40,7 @@ object checkboxDriverMod {
   }
   object CheckboxDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blur: () => Unit,
       click: () => Unit,
       exists: () => Boolean,
@@ -59,41 +58,29 @@ object checkboxDriverMod {
       __obj.asInstanceOf[CheckboxDriver]
     }
     
-    @scala.inline
-    implicit class CheckboxDriverMutableBuilder[Self <: CheckboxDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CheckboxDriver](x: Self) {
       
-      @scala.inline
-      def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+      inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+      inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetErrorMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
+      inline def setGetErrorMessage(value: () => js.Promise[String]): Self = StObject.set(x, "getErrorMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabelSize(value: () => CheckboxLabelSize): Self = StObject.set(x, "getLabelSize", js.Any.fromFunction0(value))
+      inline def setGetLabelSize(value: () => CheckboxLabelSize): Self = StObject.set(x, "getLabelSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
+      inline def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasFocusState(value: () => String | Null): Self = StObject.set(x, "hasFocusState", js.Any.fromFunction0(value))
+      inline def setHasFocusState(value: () => String | Null): Self = StObject.set(x, "hasFocusState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+      inline def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsIndeterminate(value: () => Boolean): Self = StObject.set(x, "isIndeterminate", js.Any.fromFunction0(value))
+      inline def setIsIndeterminate(value: () => Boolean): Self = StObject.set(x, "isIndeterminate", js.Any.fromFunction0(value))
     }
   }
 }

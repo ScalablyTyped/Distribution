@@ -18,22 +18,17 @@ trait KernelSpec extends StObject {
 }
 object KernelSpec {
   
-  @scala.inline
-  def apply(Name: KernelName): KernelSpec = {
+  inline def apply(Name: KernelName): KernelSpec = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[KernelSpec]
   }
   
-  @scala.inline
-  implicit class KernelSpecMutableBuilder[Self <: KernelSpec] (val x: Self) extends AnyVal {
+  extension [Self <: KernelSpec](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: KernelDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: KernelDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setName(value: KernelName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: KernelName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

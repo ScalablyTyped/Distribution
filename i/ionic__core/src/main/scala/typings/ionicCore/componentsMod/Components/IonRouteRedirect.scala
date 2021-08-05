@@ -18,25 +18,19 @@ trait IonRouteRedirect extends StObject {
 }
 object IonRouteRedirect {
   
-  @scala.inline
-  def apply(from: String): IonRouteRedirect = {
+  inline def apply(from: String): IonRouteRedirect = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonRouteRedirect]
   }
   
-  @scala.inline
-  implicit class IonRouteRedirectMutableBuilder[Self <: IonRouteRedirect] (val x: Self) extends AnyVal {
+  extension [Self <: IonRouteRedirect](x: Self) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToNull: Self = StObject.set(x, "to", null)
+    inline def setToNull: Self = StObject.set(x, "to", null)
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

@@ -12,14 +12,9 @@ object entityEntityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Entity(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Entity")().asInstanceOf[ClassDecorator]
-  @scala.inline
-  def Entity(name: String): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(name.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
-  @scala.inline
-  def Entity(name: String, options: EntityOptions): ClassDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator]
-  @scala.inline
-  def Entity(name: Unit, options: EntityOptions): ClassDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator]
-  @scala.inline
-  def Entity(options: EntityOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def Entity(): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Entity")().asInstanceOf[ClassDecorator]
+  inline def Entity(name: String): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(name.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def Entity(name: String, options: EntityOptions): ClassDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator]
+  inline def Entity(name: Unit, options: EntityOptions): ClassDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator]
+  inline def Entity(options: EntityOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Entity")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
 }

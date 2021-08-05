@@ -11,19 +11,15 @@ trait AuthorizationLoggingOptions extends StObject {
 }
 object AuthorizationLoggingOptions {
   
-  @scala.inline
-  def apply(): AuthorizationLoggingOptions = {
+  inline def apply(): AuthorizationLoggingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizationLoggingOptions]
   }
   
-  @scala.inline
-  implicit class AuthorizationLoggingOptionsMutableBuilder[Self <: AuthorizationLoggingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationLoggingOptions](x: Self) {
     
-    @scala.inline
-    def setPermissionType(value: String): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
+    inline def setPermissionType(value: String): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
+    inline def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
   }
 }

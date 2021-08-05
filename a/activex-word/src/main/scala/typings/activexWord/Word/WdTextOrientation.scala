@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdTextOrientation extends StObject
 object WdTextOrientation {
   
-  @scala.inline
-  def wdTextOrientationDownward: `3` = 3.asInstanceOf[`3`]
+  inline def wdTextOrientationDownward: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdTextOrientationHorizontal: `0` = 0.asInstanceOf[`0`]
+  inline def wdTextOrientationHorizontal: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdTextOrientationHorizontalRotatedFarEast: `4` = 4.asInstanceOf[`4`]
+  inline def wdTextOrientationHorizontalRotatedFarEast: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdTextOrientationUpward: `2` = 2.asInstanceOf[`2`]
+  inline def wdTextOrientationUpward: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdTextOrientationVertical: `5` = 5.asInstanceOf[`5`]
+  inline def wdTextOrientationVertical: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdTextOrientationVerticalFarEast: `1` = 1.asInstanceOf[`1`]
+  inline def wdTextOrientationVerticalFarEast: `1` = 1.asInstanceOf[`1`]
 }

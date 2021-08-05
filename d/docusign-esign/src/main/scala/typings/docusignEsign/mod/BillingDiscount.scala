@@ -17,31 +17,23 @@ trait BillingDiscount extends StObject {
 }
 object BillingDiscount {
   
-  @scala.inline
-  def apply(): BillingDiscount = {
+  inline def apply(): BillingDiscount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingDiscount]
   }
   
-  @scala.inline
-  implicit class BillingDiscountMutableBuilder[Self <: BillingDiscount] (val x: Self) extends AnyVal {
+  extension [Self <: BillingDiscount](x: Self) {
     
-    @scala.inline
-    def setBeginQuantity(value: String): Self = StObject.set(x, "beginQuantity", value.asInstanceOf[js.Any])
+    inline def setBeginQuantity(value: String): Self = StObject.set(x, "beginQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginQuantityUndefined: Self = StObject.set(x, "beginQuantity", js.undefined)
+    inline def setBeginQuantityUndefined: Self = StObject.set(x, "beginQuantity", js.undefined)
     
-    @scala.inline
-    def setDiscount(value: String): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
+    inline def setDiscount(value: String): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscountUndefined: Self = StObject.set(x, "discount", js.undefined)
+    inline def setDiscountUndefined: Self = StObject.set(x, "discount", js.undefined)
     
-    @scala.inline
-    def setEndQuantity(value: String): Self = StObject.set(x, "endQuantity", value.asInstanceOf[js.Any])
+    inline def setEndQuantity(value: String): Self = StObject.set(x, "endQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndQuantityUndefined: Self = StObject.set(x, "endQuantity", js.undefined)
+    inline def setEndQuantityUndefined: Self = StObject.set(x, "endQuantity", js.undefined)
   }
 }

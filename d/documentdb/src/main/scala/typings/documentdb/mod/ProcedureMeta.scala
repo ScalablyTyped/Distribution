@@ -12,16 +12,13 @@ trait ProcedureMeta
 }
 object ProcedureMeta {
   
-  @scala.inline
-  def apply(_self: String, _ts: Double, body: String, id: String): ProcedureMeta = {
+  inline def apply(_self: String, _ts: Double, body: String, id: String): ProcedureMeta = {
     val __obj = js.Dynamic.literal(_self = _self.asInstanceOf[js.Any], _ts = _ts.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcedureMeta]
   }
   
-  @scala.inline
-  implicit class ProcedureMetaMutableBuilder[Self <: ProcedureMeta] (val x: Self) extends AnyVal {
+  extension [Self <: ProcedureMeta](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

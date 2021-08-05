@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.UserPermission")
 @js.native
-class UserPermission protected ()
+/* private */ class UserPermission ()
   extends StObject
      with typings.activexOffice.Office.UserPermission {
   
@@ -20,7 +20,7 @@ class UserPermission protected ()
   /* CompleteClass */
   var ExpirationDate: VarDate = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.UserPermission_typekey")
   var OfficeDotUserPermission_typekey: typings.activexOffice.Office.UserPermission = js.native
   

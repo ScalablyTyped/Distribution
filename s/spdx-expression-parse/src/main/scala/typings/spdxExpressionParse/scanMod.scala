@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object scanMod {
   
-  @scala.inline
-  def apply(source: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  inline def apply(source: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
   
   @JSImport("spdx-expression-parse/scan", JSImport.Namespace)
   @js.native

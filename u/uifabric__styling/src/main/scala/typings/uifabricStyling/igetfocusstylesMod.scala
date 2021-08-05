@@ -55,56 +55,40 @@ object igetfocusstylesMod {
   }
   object IGetFocusStylesOptions {
     
-    @scala.inline
-    def apply(): IGetFocusStylesOptions = {
+    inline def apply(): IGetFocusStylesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IGetFocusStylesOptions]
     }
     
-    @scala.inline
-    implicit class IGetFocusStylesOptionsMutableBuilder[Self <: IGetFocusStylesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IGetFocusStylesOptions](x: Self) {
       
-      @scala.inline
-      def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+      inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      @scala.inline
-      def setHighContrastStyle(value: IRawStyle): Self = StObject.set(x, "highContrastStyle", value.asInstanceOf[js.Any])
+      inline def setHighContrastStyle(value: IRawStyle): Self = StObject.set(x, "highContrastStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighContrastStyleUndefined: Self = StObject.set(x, "highContrastStyle", js.undefined)
+      inline def setHighContrastStyleUndefined: Self = StObject.set(x, "highContrastStyle", js.undefined)
       
-      @scala.inline
-      def setInset(value: Double): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+      inline def setInset(value: Double): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+      inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
       
-      @scala.inline
-      def setIsFocusedOnly(value: Boolean): Self = StObject.set(x, "isFocusedOnly", value.asInstanceOf[js.Any])
+      inline def setIsFocusedOnly(value: Boolean): Self = StObject.set(x, "isFocusedOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocusedOnlyUndefined: Self = StObject.set(x, "isFocusedOnly", js.undefined)
+      inline def setIsFocusedOnlyUndefined: Self = StObject.set(x, "isFocusedOnly", js.undefined)
       
-      @scala.inline
-      def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+      inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+      inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
       
-      @scala.inline
-      def setPosition(value: relative | absolute): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: relative | absolute): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

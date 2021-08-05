@@ -94,26 +94,20 @@ object stylableMetaMod {
   }
   object CSSVarSymbol {
     
-    @scala.inline
-    def apply(name: String): CSSVarSymbol = {
+    inline def apply(name: String): CSSVarSymbol = {
       val __obj = js.Dynamic.literal(_kind = "cssVar", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CSSVarSymbol]
     }
     
-    @scala.inline
-    implicit class CSSVarSymbolMutableBuilder[Self <: CSSVarSymbol] (val x: Self) extends AnyVal {
+    extension [Self <: CSSVarSymbol](x: Self) {
       
-      @scala.inline
-      def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+      inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+      inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_kind(value: cssVar): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+      inline def set_kind(value: cssVar): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,32 +126,24 @@ object stylableMetaMod {
   }
   object ClassSymbol {
     
-    @scala.inline
-    def apply(name: String): ClassSymbol = {
+    inline def apply(name: String): ClassSymbol = {
       val __obj = js.Dynamic.literal(_kind = "class", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassSymbol]
     }
     
-    @scala.inline
-    implicit class ClassSymbolMutableBuilder[Self <: ClassSymbol] (val x: Self) extends AnyVal {
+    extension [Self <: ClassSymbol](x: Self) {
       
-      @scala.inline
-      def setAlias(value: ImportSymbol): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: ImportSymbol): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScoped(value: String): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+      inline def setScoped(value: String): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
+      inline def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
       
-      @scala.inline
-      def set_kind(value: `class`): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+      inline def set_kind(value: `class`): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,26 +160,20 @@ object stylableMetaMod {
   }
   object ElementSymbol {
     
-    @scala.inline
-    def apply(name: String): ElementSymbol = {
+    inline def apply(name: String): ElementSymbol = {
       val __obj = js.Dynamic.literal(_kind = "element", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementSymbol]
     }
     
-    @scala.inline
-    implicit class ElementSymbolMutableBuilder[Self <: ElementSymbol] (val x: Self) extends AnyVal {
+    extension [Self <: ElementSymbol](x: Self) {
       
-      @scala.inline
-      def setAlias(value: ImportSymbol): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: ImportSymbol): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_kind(value: element): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+      inline def set_kind(value: element): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,31 +193,24 @@ object stylableMetaMod {
   }
   object ImportSymbol {
     
-    @scala.inline
-    def apply(context: String, `import`: Imported, name: String, `type`: named | default): ImportSymbol = {
+    inline def apply(context: String, `import`: Imported, name: String, `type`: named | default): ImportSymbol = {
       val __obj = js.Dynamic.literal(_kind = "import", context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImportSymbol]
     }
     
-    @scala.inline
-    implicit class ImportSymbolMutableBuilder[Self <: ImportSymbol] (val x: Self) extends AnyVal {
+    extension [Self <: ImportSymbol](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImport(value: Imported): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+      inline def setImport(value: Imported): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: named | default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: named | default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_kind(value: `import`): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+      inline def set_kind(value: `import`): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
     }
   }
   
@@ -259,8 +232,7 @@ object stylableMetaMod {
   }
   object Imported {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       context: String,
       defaultExport: String,
       from: String,
@@ -273,29 +245,21 @@ object stylableMetaMod {
       __obj.asInstanceOf[Imported]
     }
     
-    @scala.inline
-    implicit class ImportedMutableBuilder[Self <: Imported] (val x: Self) extends AnyVal {
+    extension [Self <: Imported](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExport(value: String): Self = StObject.set(x, "defaultExport", value.asInstanceOf[js.Any])
+      inline def setDefaultExport(value: String): Self = StObject.set(x, "defaultExport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromRelative(value: String): Self = StObject.set(x, "fromRelative", value.asInstanceOf[js.Any])
+      inline def setFromRelative(value: String): Self = StObject.set(x, "fromRelative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyframes(value: Record[String, String]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
+      inline def setKeyframes(value: Record[String, String]): Self = StObject.set(x, "keyframes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamed(value: Record[String, String]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+      inline def setNamed(value: Record[String, String]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRule(value: Rule_): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: Rule_): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     }
   }
   
@@ -313,29 +277,22 @@ object stylableMetaMod {
   }
   object KeyframesSymbol {
     
-    @scala.inline
-    def apply(alias: String, name: String): KeyframesSymbol = {
+    inline def apply(alias: String, name: String): KeyframesSymbol = {
       val __obj = js.Dynamic.literal(_kind = "keyframes", alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyframesSymbol]
     }
     
-    @scala.inline
-    implicit class KeyframesSymbolMutableBuilder[Self <: KeyframesSymbol] (val x: Self) extends AnyVal {
+    extension [Self <: KeyframesSymbol](x: Self) {
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImport(value: Imported): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+      inline def setImport(value: Imported): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
+      inline def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_kind(value: keyframes): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+      inline def set_kind(value: keyframes): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
     }
   }
   
@@ -347,20 +304,16 @@ object stylableMetaMod {
   }
   object RefedMixin {
     
-    @scala.inline
-    def apply(mixin: MixinValue, ref: ImportSymbol | ClassSymbol): RefedMixin = {
+    inline def apply(mixin: MixinValue, ref: ImportSymbol | ClassSymbol): RefedMixin = {
       val __obj = js.Dynamic.literal(mixin = mixin.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefedMixin]
     }
     
-    @scala.inline
-    implicit class RefedMixinMutableBuilder[Self <: RefedMixin] (val x: Self) extends AnyVal {
+    extension [Self <: RefedMixin](x: Self) {
       
-      @scala.inline
-      def setMixin(value: MixinValue): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
+      inline def setMixin(value: MixinValue): Self = StObject.set(x, "mixin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: ImportSymbol | ClassSymbol): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: ImportSymbol | ClassSymbol): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   
@@ -372,20 +325,16 @@ object stylableMetaMod {
   }
   object SimpleSelector {
     
-    @scala.inline
-    def apply(node: Rule_ | Root_, symbol: ClassSymbol | ElementSymbol): SimpleSelector = {
+    inline def apply(node: Rule_ | Root_, symbol: ClassSymbol | ElementSymbol): SimpleSelector = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimpleSelector]
     }
     
-    @scala.inline
-    implicit class SimpleSelectorMutableBuilder[Self <: SimpleSelector] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleSelector](x: Self) {
       
-      @scala.inline
-      def setNode(value: Rule_ | Root_): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Rule_ | Root_): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: ClassSymbol | ElementSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: ClassSymbol | ElementSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -401,41 +350,30 @@ object stylableMetaMod {
   }
   object StylableDirectives {
     
-    @scala.inline
-    def apply(): StylableDirectives = {
+    inline def apply(): StylableDirectives = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StylableDirectives]
     }
     
-    @scala.inline
-    implicit class StylableDirectivesMutableBuilder[Self <: StylableDirectives] (val x: Self) extends AnyVal {
+    extension [Self <: StylableDirectives](x: Self) {
       
-      @scala.inline
-      def `set-st-extends`(value: ImportSymbol | ClassSymbol | ElementSymbol): Self = StObject.set(x, "-st-extends", value.asInstanceOf[js.Any])
+      inline def `set-st-extends`(value: ImportSymbol | ClassSymbol | ElementSymbol): Self = StObject.set(x, "-st-extends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set-st-extendsUndefined`: Self = StObject.set(x, "-st-extends", js.undefined)
+      inline def `set-st-extendsUndefined`: Self = StObject.set(x, "-st-extends", js.undefined)
       
-      @scala.inline
-      def `set-st-global`(value: js.Array[SelectorAstNode]): Self = StObject.set(x, "-st-global", value.asInstanceOf[js.Any])
+      inline def `set-st-global`(value: js.Array[SelectorAstNode]): Self = StObject.set(x, "-st-global", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set-st-globalUndefined`: Self = StObject.set(x, "-st-global", js.undefined)
+      inline def `set-st-globalUndefined`: Self = StObject.set(x, "-st-global", js.undefined)
       
-      @scala.inline
-      def `set-st-globalVarargs`(value: SelectorAstNode*): Self = StObject.set(x, "-st-global", js.Array(value :_*))
+      inline def `set-st-globalVarargs`(value: SelectorAstNode*): Self = StObject.set(x, "-st-global", js.Array(value :_*))
       
-      @scala.inline
-      def `set-st-root`(value: Boolean): Self = StObject.set(x, "-st-root", value.asInstanceOf[js.Any])
+      inline def `set-st-root`(value: Boolean): Self = StObject.set(x, "-st-root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set-st-rootUndefined`: Self = StObject.set(x, "-st-root", js.undefined)
+      inline def `set-st-rootUndefined`: Self = StObject.set(x, "-st-root", js.undefined)
       
-      @scala.inline
-      def `set-st-states`(value: MappedStates): Self = StObject.set(x, "-st-states", value.asInstanceOf[js.Any])
+      inline def `set-st-states`(value: MappedStates): Self = StObject.set(x, "-st-states", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set-st-statesUndefined`: Self = StObject.set(x, "-st-states", js.undefined)
+      inline def `set-st-statesUndefined`: Self = StObject.set(x, "-st-states", js.undefined)
     }
   }
   
@@ -450,40 +388,34 @@ object stylableMetaMod {
   trait StylableSymbol extends StObject
   object StylableSymbol {
     
-    @scala.inline
-    def CSSVarSymbol(name: String): typings.stylableCore.stylableMetaMod.CSSVarSymbol = {
+    inline def CSSVarSymbol(name: String): typings.stylableCore.stylableMetaMod.CSSVarSymbol = {
       val __obj = js.Dynamic.literal(_kind = "cssVar", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.CSSVarSymbol]
     }
     
-    @scala.inline
-    def ClassSymbol(name: String): typings.stylableCore.stylableMetaMod.ClassSymbol = {
+    inline def ClassSymbol(name: String): typings.stylableCore.stylableMetaMod.ClassSymbol = {
       val __obj = js.Dynamic.literal(_kind = "class", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.ClassSymbol]
     }
     
-    @scala.inline
-    def ElementSymbol(name: String): typings.stylableCore.stylableMetaMod.ElementSymbol = {
+    inline def ElementSymbol(name: String): typings.stylableCore.stylableMetaMod.ElementSymbol = {
       val __obj = js.Dynamic.literal(_kind = "element", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.ElementSymbol]
     }
     
-    @scala.inline
-    def ImportSymbol(context: String, `import`: Imported, name: String, `type`: named | default): typings.stylableCore.stylableMetaMod.ImportSymbol = {
+    inline def ImportSymbol(context: String, `import`: Imported, name: String, `type`: named | default): typings.stylableCore.stylableMetaMod.ImportSymbol = {
       val __obj = js.Dynamic.literal(_kind = "import", context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.ImportSymbol]
     }
     
-    @scala.inline
-    def KeyframesSymbol(alias: String, name: String): typings.stylableCore.stylableMetaMod.KeyframesSymbol = {
+    inline def KeyframesSymbol(alias: String, name: String): typings.stylableCore.stylableMetaMod.KeyframesSymbol = {
       val __obj = js.Dynamic.literal(_kind = "keyframes", alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.KeyframesSymbol]
     }
     
-    @scala.inline
-    def VarSymbol(name: String, node: Node, text: String, value: String): typings.stylableCore.stylableMetaMod.VarSymbol = {
+    inline def VarSymbol(name: String, node: Node, text: String, value: String): typings.stylableCore.stylableMetaMod.VarSymbol = {
       val __obj = js.Dynamic.literal(_kind = "var", name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = null)
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.VarSymbol]
     }
@@ -507,35 +439,26 @@ object stylableMetaMod {
   }
   object VarSymbol {
     
-    @scala.inline
-    def apply(name: String, node: Node, text: String, value: String): VarSymbol = {
+    inline def apply(name: String, node: Node, text: String, value: String): VarSymbol = {
       val __obj = js.Dynamic.literal(_kind = "var", name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = null)
       __obj.asInstanceOf[VarSymbol]
     }
     
-    @scala.inline
-    implicit class VarSymbolMutableBuilder[Self <: VarSymbol] (val x: Self) extends AnyVal {
+    extension [Self <: VarSymbol](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+      inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueTypeNull: Self = StObject.set(x, "valueType", null)
+      inline def setValueTypeNull: Self = StObject.set(x, "valueType", null)
       
-      @scala.inline
-      def set_kind(value: `var`): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
+      inline def set_kind(value: `var`): Self = StObject.set(x, "_kind", value.asInstanceOf[js.Any])
     }
   }
 }

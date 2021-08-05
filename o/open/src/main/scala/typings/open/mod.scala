@@ -29,10 +29,8 @@ object mod {
   })();
   ```
   */
-  @scala.inline
-  def apply(target: String): js.Promise[ChildProcess] = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ChildProcess]]
-  @scala.inline
-  def apply(target: String, options: Options): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
+  inline def apply(target: String): js.Promise[ChildProcess] = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ChildProcess]]
+  inline def apply(target: String, options: Options): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
   
   @JSImport("open", JSImport.Namespace)
   @js.native
@@ -79,47 +77,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowNonzeroExitCode(value: Boolean): Self = StObject.set(x, "allowNonzeroExitCode", value.asInstanceOf[js.Any])
+      inline def setAllowNonzeroExitCode(value: Boolean): Self = StObject.set(x, "allowNonzeroExitCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowNonzeroExitCodeUndefined: Self = StObject.set(x, "allowNonzeroExitCode", js.undefined)
+      inline def setAllowNonzeroExitCodeUndefined: Self = StObject.set(x, "allowNonzeroExitCode", js.undefined)
       
-      @scala.inline
-      def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+      inline def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+      inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
       
-      @scala.inline
-      def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
+      inline def setAppVarargs(value: String*): Self = StObject.set(x, "app", js.Array(value :_*))
       
-      @scala.inline
-      def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
 }

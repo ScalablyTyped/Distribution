@@ -15,8 +15,7 @@ object r3ModuleFactoryCompilerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compileModuleFactory(
+  inline def compileModuleFactory(
     outputCtx: OutputContext,
     module: CompileNgModuleMetadata,
     backPatchReferenceOf: js.Function1[/* module */ CompileTypeMetadata, Expression],

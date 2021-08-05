@@ -16,8 +16,7 @@ trait IPropertyDefOrObjectType extends StObject {
 }
 object IPropertyDefOrObjectType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IPropertyDefOrObjectType,
     GetAsExpression: () => IExpression,
     ID: Double,
@@ -27,19 +26,14 @@ object IPropertyDefOrObjectType {
     __obj.asInstanceOf[IPropertyDefOrObjectType]
   }
   
-  @scala.inline
-  implicit class IPropertyDefOrObjectTypeMutableBuilder[Self <: IPropertyDefOrObjectType] (val x: Self) extends AnyVal {
+  extension [Self <: IPropertyDefOrObjectType](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IPropertyDefOrObjectType): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IPropertyDefOrObjectType): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAsExpression(value: () => IExpression): Self = StObject.set(x, "GetAsExpression", js.Any.fromFunction0(value))
+    inline def setGetAsExpression(value: () => IExpression): Self = StObject.set(x, "GetAsExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDef(value: Boolean): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
+    inline def setPropertyDef(value: Boolean): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
   }
 }

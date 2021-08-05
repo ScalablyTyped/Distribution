@@ -18,19 +18,15 @@ trait DescribeRoutingProfileRequest extends StObject {
 }
 object DescribeRoutingProfileRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, RoutingProfileId: RoutingProfileId): DescribeRoutingProfileRequest = {
+  inline def apply(InstanceId: InstanceId, RoutingProfileId: RoutingProfileId): DescribeRoutingProfileRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], RoutingProfileId = RoutingProfileId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRoutingProfileRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRoutingProfileRequestMutableBuilder[Self <: DescribeRoutingProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRoutingProfileRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
+    inline def setRoutingProfileId(value: RoutingProfileId): Self = StObject.set(x, "RoutingProfileId", value.asInstanceOf[js.Any])
   }
 }

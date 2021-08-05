@@ -17,19 +17,15 @@ trait SchemaGuestOsFeature extends StObject {
 }
 object SchemaGuestOsFeature {
   
-  @scala.inline
-  def apply(): SchemaGuestOsFeature = {
+  inline def apply(): SchemaGuestOsFeature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGuestOsFeature]
   }
   
-  @scala.inline
-  implicit class SchemaGuestOsFeatureMutableBuilder[Self <: SchemaGuestOsFeature] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGuestOsFeature](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

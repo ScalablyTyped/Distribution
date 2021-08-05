@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("@webpack-blocks/uglify", JSImport.Namespace)
   @js.native
@@ -30,41 +28,30 @@ object mod {
   }
   object ExtractCommentsObject {
     
-    @scala.inline
-    def apply(): ExtractCommentsObject = {
+    inline def apply(): ExtractCommentsObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExtractCommentsObject]
     }
     
-    @scala.inline
-    implicit class ExtractCommentsObjectMutableBuilder[Self <: ExtractCommentsObject] (val x: Self) extends AnyVal {
+    extension [Self <: ExtractCommentsObject](x: Self) {
       
-      @scala.inline
-      def setBanner(value: Boolean | String | FileNameFunction): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+      inline def setBanner(value: Boolean | String | FileNameFunction): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBannerFunction1(value: /* file */ String => String): Self = StObject.set(x, "banner", js.Any.fromFunction1(value))
+      inline def setBannerFunction1(value: /* file */ String => String): Self = StObject.set(x, "banner", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
+      inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
       
-      @scala.inline
-      def setCondition(value: Boolean | String | RegExp | ExtractCommentsFunction): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Boolean | String | RegExp | ExtractCommentsFunction): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionFunction2(value: (/* node */ js.Any, /* comment */ js.Any) => Boolean | ExtractCommentsObject): Self = StObject.set(x, "condition", js.Any.fromFunction2(value))
+      inline def setConditionFunction2(value: (/* node */ js.Any, /* comment */ js.Any) => Boolean | ExtractCommentsObject): Self = StObject.set(x, "condition", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setFilename(value: RegExp | FileNameFunction): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: RegExp | FileNameFunction): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameFunction1(value: /* file */ String => String): Self = StObject.set(x, "filename", js.Any.fromFunction1(value))
+      inline def setFilenameFunction1(value: /* file */ String => String): Self = StObject.set(x, "filename", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     }
   }
   
@@ -98,98 +85,68 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCache(value: String | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: String | Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheKeys(value: (/* defaultCacheKeys */ js.Any, /* file */ js.Any) => js.Object): Self = StObject.set(x, "cacheKeys", js.Any.fromFunction2(value))
+      inline def setCacheKeys(value: (/* defaultCacheKeys */ js.Any, /* file */ js.Any) => js.Object): Self = StObject.set(x, "cacheKeys", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCacheKeysUndefined: Self = StObject.set(x, "cacheKeys", js.undefined)
+      inline def setCacheKeysUndefined: Self = StObject.set(x, "cacheKeys", js.undefined)
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setChunkFilter(value: /* chunk */ js.Any => Boolean): Self = StObject.set(x, "chunkFilter", js.Any.fromFunction1(value))
+      inline def setChunkFilter(value: /* chunk */ js.Any => Boolean): Self = StObject.set(x, "chunkFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChunkFilterUndefined: Self = StObject.set(x, "chunkFilter", js.undefined)
+      inline def setChunkFilterUndefined: Self = StObject.set(x, "chunkFilter", js.undefined)
       
-      @scala.inline
-      def setExclude(value: TestType | js.Array[TestType]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: TestType | js.Array[TestType]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+      inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
       
-      @scala.inline
-      def setExcludeVarargs(value: TestType*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: TestType*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setExtractComments(value: Boolean | String | RegExp | ExtractCommentsFunction): Self = StObject.set(x, "extractComments", value.asInstanceOf[js.Any])
+      inline def setExtractComments(value: Boolean | String | RegExp | ExtractCommentsFunction): Self = StObject.set(x, "extractComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractCommentsFunction2(value: (/* node */ js.Any, /* comment */ js.Any) => Boolean | ExtractCommentsObject): Self = StObject.set(x, "extractComments", js.Any.fromFunction2(value))
+      inline def setExtractCommentsFunction2(value: (/* node */ js.Any, /* comment */ js.Any) => Boolean | ExtractCommentsObject): Self = StObject.set(x, "extractComments", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExtractCommentsUndefined: Self = StObject.set(x, "extractComments", js.undefined)
+      inline def setExtractCommentsUndefined: Self = StObject.set(x, "extractComments", js.undefined)
       
-      @scala.inline
-      def setInclude(value: TestType | js.Array[TestType]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: TestType | js.Array[TestType]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: TestType*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: TestType*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setMinify(value: (/* file */ js.Any, /* sourceMap */ js.Any) => Code): Self = StObject.set(x, "minify", js.Any.fromFunction2(value))
+      inline def setMinify(value: (/* file */ js.Any, /* sourceMap */ js.Any) => Code): Self = StObject.set(x, "minify", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      @scala.inline
-      def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
+      inline def setParallel(value: Boolean | Double): Self = StObject.set(x, "parallel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
+      inline def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
       
-      @scala.inline
-      def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
       
-      @scala.inline
-      def setTest(value: TestType | js.Array[TestType]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: TestType | js.Array[TestType]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      @scala.inline
-      def setTestVarargs(value: TestType*): Self = StObject.set(x, "test", js.Array(value :_*))
+      inline def setTestVarargs(value: TestType*): Self = StObject.set(x, "test", js.Array(value :_*))
       
-      @scala.inline
-      def setUglifyOptions(value: MinifyOptions): Self = StObject.set(x, "uglifyOptions", value.asInstanceOf[js.Any])
+      inline def setUglifyOptions(value: MinifyOptions): Self = StObject.set(x, "uglifyOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUglifyOptionsUndefined: Self = StObject.set(x, "uglifyOptions", js.undefined)
+      inline def setUglifyOptionsUndefined: Self = StObject.set(x, "uglifyOptions", js.undefined)
       
-      @scala.inline
-      def setWarningsFilter(value: (/* warning */ js.Any, /* source */ js.Any) => Boolean): Self = StObject.set(x, "warningsFilter", js.Any.fromFunction2(value))
+      inline def setWarningsFilter(value: (/* warning */ js.Any, /* source */ js.Any) => Boolean): Self = StObject.set(x, "warningsFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
+      inline def setWarningsFilterUndefined: Self = StObject.set(x, "warningsFilter", js.undefined)
     }
   }
   

@@ -11,22 +11,17 @@ trait AddRolesResponse extends StObject {
 }
 object AddRolesResponse {
   
-  @scala.inline
-  def apply(): AddRolesResponse = {
+  inline def apply(): AddRolesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddRolesResponse]
   }
   
-  @scala.inline
-  implicit class AddRolesResponseMutableBuilder[Self <: AddRolesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AddRolesResponse](x: Self) {
     
-    @scala.inline
-    def setPolicyBinding(value: js.Array[PolicyBinding]): Self = StObject.set(x, "policyBinding", value.asInstanceOf[js.Any])
+    inline def setPolicyBinding(value: js.Array[PolicyBinding]): Self = StObject.set(x, "policyBinding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyBindingUndefined: Self = StObject.set(x, "policyBinding", js.undefined)
+    inline def setPolicyBindingUndefined: Self = StObject.set(x, "policyBinding", js.undefined)
     
-    @scala.inline
-    def setPolicyBindingVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBinding", js.Array(value :_*))
+    inline def setPolicyBindingVarargs(value: PolicyBinding*): Self = StObject.set(x, "policyBinding", js.Array(value :_*))
   }
 }

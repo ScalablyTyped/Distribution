@@ -14,22 +14,17 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(mesh: String): Filter = {
+  inline def apply(mesh: String): Filter = {
     val __obj = js.Dynamic.literal(mesh = mesh.asInstanceOf[js.Any], filter = null)
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setFilter(value: interior | exterior): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: interior | exterior): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterNull: Self = StObject.set(x, "filter", null)
+    inline def setFilterNull: Self = StObject.set(x, "filter", null)
     
-    @scala.inline
-    def setMesh(value: String): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
+    inline def setMesh(value: String): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
   }
 }

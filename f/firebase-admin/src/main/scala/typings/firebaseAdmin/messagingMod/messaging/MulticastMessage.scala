@@ -12,19 +12,15 @@ trait MulticastMessage
 }
 object MulticastMessage {
   
-  @scala.inline
-  def apply(tokens: js.Array[String]): MulticastMessage = {
+  inline def apply(tokens: js.Array[String]): MulticastMessage = {
     val __obj = js.Dynamic.literal(tokens = tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[MulticastMessage]
   }
   
-  @scala.inline
-  implicit class MulticastMessageMutableBuilder[Self <: MulticastMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MulticastMessage](x: Self) {
     
-    @scala.inline
-    def setTokens(value: js.Array[String]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[String]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensVarargs(value: String*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: String*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

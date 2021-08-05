@@ -21,25 +21,19 @@ trait IPlanListOptions
 }
 object IPlanListOptions {
   
-  @scala.inline
-  def apply(): IPlanListOptions = {
+  inline def apply(): IPlanListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPlanListOptions]
   }
   
-  @scala.inline
-  implicit class IPlanListOptionsMutableBuilder[Self <: IPlanListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IPlanListOptions](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
   }
 }

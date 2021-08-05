@@ -13,19 +13,15 @@ trait TreeViewCollapseEvent
 }
 object TreeViewCollapseEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeView): TreeViewCollapseEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeView): TreeViewCollapseEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewCollapseEvent]
   }
   
-  @scala.inline
-  implicit class TreeViewCollapseEventMutableBuilder[Self <: TreeViewCollapseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TreeViewCollapseEvent](x: Self) {
     
-    @scala.inline
-    def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
   }
 }

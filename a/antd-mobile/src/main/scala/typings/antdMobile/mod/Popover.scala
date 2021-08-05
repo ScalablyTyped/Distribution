@@ -20,12 +20,10 @@ object Popover {
   @JSImport("antd-mobile", "Popover.Item")
   @js.native
   def Item: TypeofItemInstantiable = js.native
-  @scala.inline
-  def Item_=(x: TypeofItemInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: TypeofItemInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile", "Popover.defaultProps")
   @js.native
   def defaultProps: Placement = js.native
-  @scala.inline
-  def defaultProps_=(x: Placement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Placement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

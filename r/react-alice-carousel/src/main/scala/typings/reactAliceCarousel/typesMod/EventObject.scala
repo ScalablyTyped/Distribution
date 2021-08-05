@@ -18,8 +18,7 @@ trait EventObject extends StObject {
 }
 object EventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isNextSlideDisabled: Boolean,
     isPrevSlideDisabled: Boolean,
     item: Double,
@@ -30,22 +29,16 @@ object EventObject {
     __obj.asInstanceOf[EventObject]
   }
   
-  @scala.inline
-  implicit class EventObjectMutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
+  extension [Self <: EventObject](x: Self) {
     
-    @scala.inline
-    def setIsNextSlideDisabled(value: Boolean): Self = StObject.set(x, "isNextSlideDisabled", value.asInstanceOf[js.Any])
+    inline def setIsNextSlideDisabled(value: Boolean): Self = StObject.set(x, "isNextSlideDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrevSlideDisabled(value: Boolean): Self = StObject.set(x, "isPrevSlideDisabled", value.asInstanceOf[js.Any])
+    inline def setIsPrevSlideDisabled(value: Boolean): Self = StObject.set(x, "isPrevSlideDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Double): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsInSlide(value: Double): Self = StObject.set(x, "itemsInSlide", value.asInstanceOf[js.Any])
+    inline def setItemsInSlide(value: Double): Self = StObject.set(x, "itemsInSlide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlide(value: Double): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
+    inline def setSlide(value: Double): Self = StObject.set(x, "slide", value.asInstanceOf[js.Any])
   }
 }

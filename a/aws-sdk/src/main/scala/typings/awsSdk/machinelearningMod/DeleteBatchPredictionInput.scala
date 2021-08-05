@@ -13,16 +13,13 @@ trait DeleteBatchPredictionInput extends StObject {
 }
 object DeleteBatchPredictionInput {
   
-  @scala.inline
-  def apply(BatchPredictionId: EntityId): DeleteBatchPredictionInput = {
+  inline def apply(BatchPredictionId: EntityId): DeleteBatchPredictionInput = {
     val __obj = js.Dynamic.literal(BatchPredictionId = BatchPredictionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBatchPredictionInput]
   }
   
-  @scala.inline
-  implicit class DeleteBatchPredictionInputMutableBuilder[Self <: DeleteBatchPredictionInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBatchPredictionInput](x: Self) {
     
-    @scala.inline
-    def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
+    inline def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
   }
 }

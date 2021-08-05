@@ -14,25 +14,19 @@ trait AddHeldAccountResult extends StObject {
 }
 object AddHeldAccountResult {
   
-  @scala.inline
-  def apply(): AddHeldAccountResult = {
+  inline def apply(): AddHeldAccountResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddHeldAccountResult]
   }
   
-  @scala.inline
-  implicit class AddHeldAccountResultMutableBuilder[Self <: AddHeldAccountResult] (val x: Self) extends AnyVal {
+  extension [Self <: AddHeldAccountResult](x: Self) {
     
-    @scala.inline
-    def setAccount(value: HeldAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: HeldAccount): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "account", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -10,8 +10,7 @@ trait PrintTaskSourceRequestedArgs
      with IPrintTaskSourceRequestedArgs
 object PrintTaskSourceRequestedArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deadline: Date,
     getDeferral: () => PrintTaskSourceRequestedDeferral,
     setSource: IPrintDocumentSource => Unit

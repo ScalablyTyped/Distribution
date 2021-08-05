@@ -18,16 +18,13 @@ trait GoToFooterCommand
 }
 object GoToFooterCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): GoToFooterCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): GoToFooterCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[GoToFooterCommand]
   }
   
-  @scala.inline
-  implicit class GoToFooterCommandMutableBuilder[Self <: GoToFooterCommand] (val x: Self) extends AnyVal {
+  extension [Self <: GoToFooterCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

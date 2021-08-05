@@ -33,8 +33,7 @@ trait OrganizationConfigRuleStatus extends StObject {
 }
 object OrganizationConfigRuleStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OrganizationConfigRuleName: OrganizationConfigRuleName,
     OrganizationRuleStatus: OrganizationRuleStatus
   ): OrganizationConfigRuleStatus = {
@@ -42,31 +41,22 @@ object OrganizationConfigRuleStatus {
     __obj.asInstanceOf[OrganizationConfigRuleStatus]
   }
   
-  @scala.inline
-  implicit class OrganizationConfigRuleStatusMutableBuilder[Self <: OrganizationConfigRuleStatus] (val x: Self) extends AnyVal {
+  extension [Self <: OrganizationConfigRuleStatus](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfigRuleName(value: OrganizationConfigRuleName): Self = StObject.set(x, "OrganizationConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setOrganizationConfigRuleName(value: OrganizationConfigRuleName): Self = StObject.set(x, "OrganizationConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationRuleStatus(value: OrganizationRuleStatus): Self = StObject.set(x, "OrganizationRuleStatus", value.asInstanceOf[js.Any])
+    inline def setOrganizationRuleStatus(value: OrganizationRuleStatus): Self = StObject.set(x, "OrganizationRuleStatus", value.asInstanceOf[js.Any])
   }
 }

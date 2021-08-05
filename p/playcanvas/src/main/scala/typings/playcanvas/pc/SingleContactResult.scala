@@ -56,8 +56,7 @@ trait SingleContactResult extends StObject {
 }
 object SingleContactResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     a: Entity,
     b: Entity,
     localPointA: Vec3,
@@ -70,28 +69,20 @@ object SingleContactResult {
     __obj.asInstanceOf[SingleContactResult]
   }
   
-  @scala.inline
-  implicit class SingleContactResultMutableBuilder[Self <: SingleContactResult] (val x: Self) extends AnyVal {
+  extension [Self <: SingleContactResult](x: Self) {
     
-    @scala.inline
-    def setA(value: Entity): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: Entity): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setB(value: Entity): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Entity): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPointA(value: Vec3): Self = StObject.set(x, "localPointA", value.asInstanceOf[js.Any])
+    inline def setLocalPointA(value: Vec3): Self = StObject.set(x, "localPointA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalPointB(value: Vec3): Self = StObject.set(x, "localPointB", value.asInstanceOf[js.Any])
+    inline def setLocalPointB(value: Vec3): Self = StObject.set(x, "localPointB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: Vec3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Vec3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointA(value: Vec3): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
+    inline def setPointA(value: Vec3): Self = StObject.set(x, "pointA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointB(value: Vec3): Self = StObject.set(x, "pointB", value.asInstanceOf[js.Any])
+    inline def setPointB(value: Vec3): Self = StObject.set(x, "pointB", value.asInstanceOf[js.Any])
   }
 }

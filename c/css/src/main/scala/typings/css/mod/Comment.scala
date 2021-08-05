@@ -12,19 +12,15 @@ trait Comment
 }
 object Comment {
   
-  @scala.inline
-  def apply(): Comment = {
+  inline def apply(): Comment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait Role extends StObject {
 }
 object Role {
   
-  @scala.inline
-  def apply(): Role = {
+  inline def apply(): Role = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Role]
   }
   
-  @scala.inline
-  implicit class RoleMutableBuilder[Self <: Role] (val x: Self) extends AnyVal {
+  extension [Self <: Role](x: Self) {
     
-    @scala.inline
-    def setMaintainHistory(value: Boolean): Self = StObject.set(x, "maintainHistory", value.asInstanceOf[js.Any])
+    inline def setMaintainHistory(value: Boolean): Self = StObject.set(x, "maintainHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintainHistoryUndefined: Self = StObject.set(x, "maintainHistory", js.undefined)
+    inline def setMaintainHistoryUndefined: Self = StObject.set(x, "maintainHistory", js.undefined)
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

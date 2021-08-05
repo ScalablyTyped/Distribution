@@ -17,8 +17,7 @@ object useFlattenedTreeListMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useFlattenedTreeList(hasIdItemsRootIdExpandedIdsValueKeyGetItemValue: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useFlattenedTreeList")(hasIdItemsRootIdExpandedIdsValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def useFlattenedTreeList(hasIdItemsRootIdExpandedIdsValueKeyGetItemValue: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useFlattenedTreeList")(hasIdItemsRootIdExpandedIdsValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   trait ItemMetadata extends StObject {
     
@@ -30,23 +29,18 @@ object useFlattenedTreeListMod {
   }
   object ItemMetadata {
     
-    @scala.inline
-    def apply(id: String, ref: TreeItemRef, visibleIndex: Double): ItemMetadata = {
+    inline def apply(id: String, ref: TreeItemRef, visibleIndex: Double): ItemMetadata = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemMetadata]
     }
     
-    @scala.inline
-    implicit class ItemMetadataMutableBuilder[Self <: ItemMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: ItemMetadata](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: TreeItemRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: TreeItemRef): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+      inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,8 +60,7 @@ object useFlattenedTreeListMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expandedIds: ExpandedIds,
       getItemValue: (/* item */ UnknownTreeItem, /* valueKey */ String) => String,
       id: String,
@@ -78,29 +71,21 @@ object useFlattenedTreeListMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setExpandedIds(value: ExpandedIds): Self = StObject.set(x, "expandedIds", value.asInstanceOf[js.Any])
+      inline def setExpandedIds(value: ExpandedIds): Self = StObject.set(x, "expandedIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "expandedIds", js.Array(value :_*))
+      inline def setExpandedIdsVarargs(value: TreeItemId*): Self = StObject.set(x, "expandedIds", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: js.Array[NestedTreeItemUnknownTree]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[NestedTreeItemUnknownTree]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: NestedTreeItemUnknownTree*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: NestedTreeItemUnknownTree*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setRootId(value: TreeItemId): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
+      inline def setRootId(value: TreeItemId): Self = StObject.set(x, "rootId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootIdNull: Self = StObject.set(x, "rootId", null)
+      inline def setRootIdNull: Self = StObject.set(x, "rootId", null)
     }
   }
   
@@ -126,32 +111,24 @@ object useFlattenedTreeListMod {
   }
   object SearchableTreeItem {
     
-    @scala.inline
-    def apply(id: String, isParent: Boolean, itemId: TreeItemId, value: String): SearchableTreeItem = {
+    inline def apply(id: String, isParent: Boolean, itemId: TreeItemId, value: String): SearchableTreeItem = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isParent = isParent.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], parentId = null)
       __obj.asInstanceOf[SearchableTreeItem]
     }
     
-    @scala.inline
-    implicit class SearchableTreeItemMutableBuilder[Self <: SearchableTreeItem] (val x: Self) extends AnyVal {
+    extension [Self <: SearchableTreeItem](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsParent(value: Boolean): Self = StObject.set(x, "isParent", value.asInstanceOf[js.Any])
+      inline def setIsParent(value: Boolean): Self = StObject.set(x, "isParent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemId(value: TreeItemId): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+      inline def setItemId(value: TreeItemId): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentId(value: TreeItemId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: TreeItemId): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdNull: Self = StObject.set(x, "parentId", null)
+      inline def setParentIdNull: Self = StObject.set(x, "parentId", null)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,20 +141,16 @@ object useFlattenedTreeListMod {
   }
   object TreeConfig {
     
-    @scala.inline
-    def apply(getItemValue: (/* item */ UnknownTreeItem, /* valueKey */ String) => String, valueKey: String): TreeConfig = {
+    inline def apply(getItemValue: (/* item */ UnknownTreeItem, /* valueKey */ String) => String, valueKey: String): TreeConfig = {
       val __obj = js.Dynamic.literal(getItemValue = js.Any.fromFunction2(getItemValue), valueKey = valueKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeConfig]
     }
     
-    @scala.inline
-    implicit class TreeConfigMutableBuilder[Self <: TreeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TreeConfig](x: Self) {
       
-      @scala.inline
-      def setGetItemValue(value: (/* item */ UnknownTreeItem, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
+      inline def setGetItemValue(value: (/* item */ UnknownTreeItem, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+      inline def setValueKey(value: String): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
     }
   }
   

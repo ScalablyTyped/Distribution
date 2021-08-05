@@ -32,32 +32,24 @@ object expansionPanelMod {
   }
   object ConfigurableCardContentProps {
     
-    @scala.inline
-    def apply(): ConfigurableCardContentProps = {
+    inline def apply(): ConfigurableCardContentProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurableCardContentProps]
     }
     
-    @scala.inline
-    implicit class ConfigurableCardContentPropsMutableBuilder[Self <: ConfigurableCardContentProps] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurableCardContentProps](x: Self) {
       
-      @scala.inline
-      def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
+      inline def setDisablePadding(value: Boolean): Self = StObject.set(x, "disablePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePaddingUndefined: Self = StObject.set(x, "disablePadding", js.undefined)
+      inline def setDisablePaddingUndefined: Self = StObject.set(x, "disablePadding", js.undefined)
       
-      @scala.inline
-      def setDisableParagraphMargin(value: Boolean): Self = StObject.set(x, "disableParagraphMargin", value.asInstanceOf[js.Any])
+      inline def setDisableParagraphMargin(value: Boolean): Self = StObject.set(x, "disableParagraphMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableParagraphMarginUndefined: Self = StObject.set(x, "disableParagraphMargin", js.undefined)
+      inline def setDisableParagraphMarginUndefined: Self = StObject.set(x, "disableParagraphMargin", js.undefined)
       
-      @scala.inline
-      def setDisableSecondaryColor(value: Boolean): Self = StObject.set(x, "disableSecondaryColor", value.asInstanceOf[js.Any])
+      inline def setDisableSecondaryColor(value: Boolean): Self = StObject.set(x, "disableSecondaryColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSecondaryColorUndefined: Self = StObject.set(x, "disableSecondaryColor", js.undefined)
+      inline def setDisableSecondaryColorUndefined: Self = StObject.set(x, "disableSecondaryColor", js.undefined)
     }
   }
   
@@ -164,8 +156,7 @@ object expansionPanelMod {
   }
   object ExpansionPanelProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       expanded: Boolean,
       id: String,
       onExpandClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit
@@ -174,95 +165,65 @@ object expansionPanelMod {
       __obj.asInstanceOf[ExpansionPanelProps]
     }
     
-    @scala.inline
-    implicit class ExpansionPanelPropsMutableBuilder[Self <: ExpansionPanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExpansionPanelProps](x: Self) {
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+      inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
-      @scala.inline
-      def setCustomHeader(value: ReactNode): Self = StObject.set(x, "customHeader", value.asInstanceOf[js.Any])
+      inline def setCustomHeader(value: ReactNode): Self = StObject.set(x, "customHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomHeaderUndefined: Self = StObject.set(x, "customHeader", js.undefined)
+      inline def setCustomHeaderUndefined: Self = StObject.set(x, "customHeader", js.undefined)
       
-      @scala.inline
-      def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
+      inline def setDisableTransition(value: Boolean): Self = StObject.set(x, "disableTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
+      inline def setDisableTransitionUndefined: Self = StObject.set(x, "disableTransition", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+      inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanderIcon(value: ReactNode): Self = StObject.set(x, "expanderIcon", value.asInstanceOf[js.Any])
+      inline def setExpanderIcon(value: ReactNode): Self = StObject.set(x, "expanderIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpanderIconUndefined: Self = StObject.set(x, "expanderIcon", js.undefined)
+      inline def setExpanderIconUndefined: Self = StObject.set(x, "expanderIcon", js.undefined)
       
-      @scala.inline
-      def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
+      inline def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
+      inline def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
       
-      @scala.inline
-      def setHeaderRef(value: Ref[HTMLButtonElement]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
+      inline def setHeaderRef(value: Ref[HTMLButtonElement]): Self = StObject.set(x, "headerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderRefFunction1(value: /* instance */ HTMLButtonElement | Null => Unit): Self = StObject.set(x, "headerRef", js.Any.fromFunction1(value))
+      inline def setHeaderRefFunction1(value: /* instance */ HTMLButtonElement | Null => Unit): Self = StObject.set(x, "headerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeaderRefNull: Self = StObject.set(x, "headerRef", null)
+      inline def setHeaderRefNull: Self = StObject.set(x, "headerRef", null)
       
-      @scala.inline
-      def setHeaderRefUndefined: Self = StObject.set(x, "headerRef", js.undefined)
+      inline def setHeaderRefUndefined: Self = StObject.set(x, "headerRef", js.undefined)
       
-      @scala.inline
-      def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+      inline def setHeaderStyle(value: CSSProperties): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
+      inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTop(value: Boolean): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: Boolean): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      @scala.inline
-      def setOnExpandClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onExpandClick", js.Any.fromFunction1(value))
+      inline def setOnExpandClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onExpandClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+      inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     }
   }
 }

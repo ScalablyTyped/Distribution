@@ -14,22 +14,17 @@ trait ReturnTypeGetManifestForFrameResponse extends StObject {
 }
 object ReturnTypeGetManifestForFrameResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetManifestForFrameRequest], returnType: GetManifestForFrameResponse): ReturnTypeGetManifestForFrameResponse = {
+  inline def apply(paramsType: js.Array[GetManifestForFrameRequest], returnType: GetManifestForFrameResponse): ReturnTypeGetManifestForFrameResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetManifestForFrameResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetManifestForFrameResponseMutableBuilder[Self <: ReturnTypeGetManifestForFrameResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetManifestForFrameResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetManifestForFrameRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetManifestForFrameRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetManifestForFrameRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetManifestForFrameRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetManifestForFrameResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetManifestForFrameResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

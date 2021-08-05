@@ -17,13 +17,11 @@ object SessionCompression {
   @JSImport("lime-js", "SessionCompression.gzip")
   @js.native
   def gzip: String = js.native
-  @scala.inline
-  def gzip_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gzip")(x.asInstanceOf[js.Any])
+  inline def gzip_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gzip")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("lime-js", "SessionCompression.none")
   @js.native
   def none: String = js.native
-  @scala.inline
-  def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+  inline def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
 }

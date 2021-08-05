@@ -58,19 +58,16 @@ object Stepper {
     @JSImport("johnny-five", "Stepper.TYPE.DRIVER")
     @js.native
     def DRIVER: Double = js.native
-    @scala.inline
-    def DRIVER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRIVER")(x.asInstanceOf[js.Any])
+    inline def DRIVER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRIVER")(x.asInstanceOf[js.Any])
     
     @JSImport("johnny-five", "Stepper.TYPE.FOUR_WIRE")
     @js.native
     def FOUR_WIRE: Double = js.native
-    @scala.inline
-    def FOUR_WIRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR_WIRE")(x.asInstanceOf[js.Any])
+    inline def FOUR_WIRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR_WIRE")(x.asInstanceOf[js.Any])
     
     @JSImport("johnny-five", "Stepper.TYPE.TWO_WIRE")
     @js.native
     def TWO_WIRE: Double = js.native
-    @scala.inline
-    def TWO_WIRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO_WIRE")(x.asInstanceOf[js.Any])
+    inline def TWO_WIRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO_WIRE")(x.asInstanceOf[js.Any])
   }
 }

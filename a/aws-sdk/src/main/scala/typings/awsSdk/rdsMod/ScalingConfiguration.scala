@@ -33,43 +33,31 @@ trait ScalingConfiguration extends StObject {
 }
 object ScalingConfiguration {
   
-  @scala.inline
-  def apply(): ScalingConfiguration = {
+  inline def apply(): ScalingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScalingConfiguration]
   }
   
-  @scala.inline
-  implicit class ScalingConfigurationMutableBuilder[Self <: ScalingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ScalingConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutoPause(value: BooleanOptional): Self = StObject.set(x, "AutoPause", value.asInstanceOf[js.Any])
+    inline def setAutoPause(value: BooleanOptional): Self = StObject.set(x, "AutoPause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPauseUndefined: Self = StObject.set(x, "AutoPause", js.undefined)
+    inline def setAutoPauseUndefined: Self = StObject.set(x, "AutoPause", js.undefined)
     
-    @scala.inline
-    def setMaxCapacity(value: IntegerOptional): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
+    inline def setMaxCapacity(value: IntegerOptional): Self = StObject.set(x, "MaxCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
+    inline def setMaxCapacityUndefined: Self = StObject.set(x, "MaxCapacity", js.undefined)
     
-    @scala.inline
-    def setMinCapacity(value: IntegerOptional): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
+    inline def setMinCapacity(value: IntegerOptional): Self = StObject.set(x, "MinCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCapacityUndefined: Self = StObject.set(x, "MinCapacity", js.undefined)
+    inline def setMinCapacityUndefined: Self = StObject.set(x, "MinCapacity", js.undefined)
     
-    @scala.inline
-    def setSecondsUntilAutoPause(value: IntegerOptional): Self = StObject.set(x, "SecondsUntilAutoPause", value.asInstanceOf[js.Any])
+    inline def setSecondsUntilAutoPause(value: IntegerOptional): Self = StObject.set(x, "SecondsUntilAutoPause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsUntilAutoPauseUndefined: Self = StObject.set(x, "SecondsUntilAutoPause", js.undefined)
+    inline def setSecondsUntilAutoPauseUndefined: Self = StObject.set(x, "SecondsUntilAutoPause", js.undefined)
     
-    @scala.inline
-    def setTimeoutAction(value: String): Self = StObject.set(x, "TimeoutAction", value.asInstanceOf[js.Any])
+    inline def setTimeoutAction(value: String): Self = StObject.set(x, "TimeoutAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutActionUndefined: Self = StObject.set(x, "TimeoutAction", js.undefined)
+    inline def setTimeoutActionUndefined: Self = StObject.set(x, "TimeoutAction", js.undefined)
   }
 }

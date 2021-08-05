@@ -14,25 +14,19 @@ trait MKSliderProperties
 }
 object MKSliderProperties {
   
-  @scala.inline
-  def apply(): MKSliderProperties = {
+  inline def apply(): MKSliderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MKSliderProperties]
   }
   
-  @scala.inline
-  implicit class MKSliderPropertiesMutableBuilder[Self <: MKSliderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MKSliderProperties](x: Self) {
     
-    @scala.inline
-    def setOnChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* value */ Double => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setOnConfirm(value: () => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction0(value))
+    inline def setOnConfirm(value: () => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+    inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
   }
 }

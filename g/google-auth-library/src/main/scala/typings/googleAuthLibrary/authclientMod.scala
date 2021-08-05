@@ -34,7 +34,7 @@ object authclientMod {
     @JSName("on")
     def on_tokens(event: tokens, listener: js.Function1[/* tokens */ Credentials, Unit]): this.type = js.native
     
-    var quotaProjectId: js.UndefOr[String] = js.native
+    /* protected */ var quotaProjectId: js.UndefOr[String] = js.native
     
     /**
       * Provides an alternative Gaxios request implementation with auth credentials

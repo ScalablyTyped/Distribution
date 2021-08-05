@@ -18,9 +18,7 @@ object domMod {
   @JSImport("material-ui/utils/dom", "Dom")
   @js.native
   def Dom: typings.materialUi.MaterialUI.Utils.Dom = js.native
-  @scala.inline
-  def Dom_=(x: Dom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dom")(x.asInstanceOf[js.Any])
+  inline def Dom_=(x: Dom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dom")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def default_=(x: Dom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Dom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

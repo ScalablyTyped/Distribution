@@ -11,55 +11,47 @@ object reactPopoverStrings {
   sealed trait above
     extends StObject
        with PopoverPlace
-  @scala.inline
-  def above: above = "above".asInstanceOf[above]
+  inline def above: above = "above".asInstanceOf[above]
   
   @js.native
   sealed trait below
     extends StObject
        with PopoverPlace
-  @scala.inline
-  def below: below = "below".asInstanceOf[below]
+  inline def below: below = "below".asInstanceOf[below]
   
   @js.native
   sealed trait column
     extends StObject
        with PopoverPlace
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
+  inline def column: column = "column".asInstanceOf[column]
   
   @js.native
   sealed trait end
     extends StObject
        with PopoverPlace
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait left
     extends StObject
        with PopoverPlace
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait right
     extends StObject
        with PopoverPlace
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait row
     extends StObject
        with PopoverPlace
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
+  inline def row: row = "row".asInstanceOf[row]
   
   @js.native
   sealed trait start
     extends StObject
        with PopoverPlace
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
 }

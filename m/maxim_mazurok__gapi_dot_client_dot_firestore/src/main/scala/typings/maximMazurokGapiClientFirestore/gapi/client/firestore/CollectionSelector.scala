@@ -14,25 +14,19 @@ trait CollectionSelector extends StObject {
 }
 object CollectionSelector {
   
-  @scala.inline
-  def apply(): CollectionSelector = {
+  inline def apply(): CollectionSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionSelector]
   }
   
-  @scala.inline
-  implicit class CollectionSelectorMutableBuilder[Self <: CollectionSelector] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionSelector](x: Self) {
     
-    @scala.inline
-    def setAllDescendants(value: Boolean): Self = StObject.set(x, "allDescendants", value.asInstanceOf[js.Any])
+    inline def setAllDescendants(value: Boolean): Self = StObject.set(x, "allDescendants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllDescendantsUndefined: Self = StObject.set(x, "allDescendants", js.undefined)
+    inline def setAllDescendantsUndefined: Self = StObject.set(x, "allDescendants", js.undefined)
     
-    @scala.inline
-    def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
+    inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionIdUndefined: Self = StObject.set(x, "collectionId", js.undefined)
+    inline def setCollectionIdUndefined: Self = StObject.set(x, "collectionId", js.undefined)
   }
 }

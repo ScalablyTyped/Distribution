@@ -21,20 +21,16 @@ object mod {
     }
     object ILocalForageProvider {
       
-      @scala.inline
-      def apply(config: LocalForageConfig => Unit, setNotify: (Boolean, Boolean) => Unit): ILocalForageProvider = {
+      inline def apply(config: LocalForageConfig => Unit, setNotify: (Boolean, Boolean) => Unit): ILocalForageProvider = {
         val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config), setNotify = js.Any.fromFunction2(setNotify))
         __obj.asInstanceOf[ILocalForageProvider]
       }
       
-      @scala.inline
-      implicit class ILocalForageProviderMutableBuilder[Self <: ILocalForageProvider] (val x: Self) extends AnyVal {
+      extension [Self <: ILocalForageProvider](x: Self) {
         
-        @scala.inline
-        def setConfig(value: LocalForageConfig => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
+        inline def setConfig(value: LocalForageConfig => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetNotify(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "setNotify", js.Any.fromFunction2(value))
+        inline def setSetNotify(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "setNotify", js.Any.fromFunction2(value))
       }
     }
     
@@ -93,44 +89,32 @@ object mod {
     }
     object LocalForageConfig {
       
-      @scala.inline
-      def apply(): LocalForageConfig = {
+      inline def apply(): LocalForageConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LocalForageConfig]
       }
       
-      @scala.inline
-      implicit class LocalForageConfigMutableBuilder[Self <: LocalForageConfig] (val x: Self) extends AnyVal {
+      extension [Self <: LocalForageConfig](x: Self) {
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+        inline def setDriver(value: String): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
+        inline def setDriverUndefined: Self = StObject.set(x, "driver", js.undefined)
         
-        @scala.inline
-        def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+        inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
+        inline def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
         
-        @scala.inline
-        def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       }
     }
   }

@@ -18,25 +18,19 @@ trait DBSecurityGroupMembership extends StObject {
 }
 object DBSecurityGroupMembership {
   
-  @scala.inline
-  def apply(): DBSecurityGroupMembership = {
+  inline def apply(): DBSecurityGroupMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBSecurityGroupMembership]
   }
   
-  @scala.inline
-  implicit class DBSecurityGroupMembershipMutableBuilder[Self <: DBSecurityGroupMembership] (val x: Self) extends AnyVal {
+  extension [Self <: DBSecurityGroupMembership](x: Self) {
     
-    @scala.inline
-    def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
+    inline def setDBSecurityGroupName(value: String): Self = StObject.set(x, "DBSecurityGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBSecurityGroupNameUndefined: Self = StObject.set(x, "DBSecurityGroupName", js.undefined)
+    inline def setDBSecurityGroupNameUndefined: Self = StObject.set(x, "DBSecurityGroupName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -41,8 +41,7 @@ trait WebApiConnectedService
 }
 object WebApiConnectedService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticatedBy: IdentityRef,
     description: String,
     friendlyName: String,
@@ -56,25 +55,18 @@ object WebApiConnectedService {
     __obj.asInstanceOf[WebApiConnectedService]
   }
   
-  @scala.inline
-  implicit class WebApiConnectedServiceMutableBuilder[Self <: WebApiConnectedService] (val x: Self) extends AnyVal {
+  extension [Self <: WebApiConnectedService](x: Self) {
     
-    @scala.inline
-    def setAuthenticatedBy(value: IdentityRef): Self = StObject.set(x, "authenticatedBy", value.asInstanceOf[js.Any])
+    inline def setAuthenticatedBy(value: IdentityRef): Self = StObject.set(x, "authenticatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: TeamProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUri(value: String): Self = StObject.set(x, "serviceUri", value.asInstanceOf[js.Any])
+    inline def setServiceUri(value: String): Self = StObject.set(x, "serviceUri", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait ActiveLink extends StObject {
 }
 object ActiveLink {
   
-  @scala.inline
-  def apply(activeLink: Null): ActiveLink = {
+  inline def apply(activeLink: Null): ActiveLink = {
     val __obj = js.Dynamic.literal(activeLink = activeLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveLink]
   }
   
-  @scala.inline
-  implicit class ActiveLinkMutableBuilder[Self <: ActiveLink] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveLink](x: Self) {
     
-    @scala.inline
-    def setActiveLink(value: Null): Self = StObject.set(x, "activeLink", value.asInstanceOf[js.Any])
+    inline def setActiveLink(value: Null): Self = StObject.set(x, "activeLink", value.asInstanceOf[js.Any])
   }
 }

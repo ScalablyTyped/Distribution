@@ -45,26 +45,20 @@ object parserMod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setEcmaVersion(value: EcmaVersion): Self = StObject.set(x, "ecmaVersion", value.asInstanceOf[js.Any])
+        inline def setEcmaVersion(value: EcmaVersion): Self = StObject.set(x, "ecmaVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEcmaVersionUndefined: Self = StObject.set(x, "ecmaVersion", js.undefined)
+        inline def setEcmaVersionUndefined: Self = StObject.set(x, "ecmaVersion", js.undefined)
         
-        @scala.inline
-        def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+        inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+        inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       }
     }
   }

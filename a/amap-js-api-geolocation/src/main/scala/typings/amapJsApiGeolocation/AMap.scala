@@ -72,17 +72,13 @@ object AMap {
     trait ButtonPosition extends StObject
     object ButtonPosition {
       
-      @scala.inline
-      def LB: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LB = "LB".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LB]
+      inline def LB: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LB = "LB".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LB]
       
-      @scala.inline
-      def LT: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LT = "LT".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LT]
+      inline def LT: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LT = "LT".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.LT]
       
-      @scala.inline
-      def RB: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RB = "RB".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RB]
+      inline def RB: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RB = "RB".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RB]
       
-      @scala.inline
-      def RT: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RT = "RT".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RT]
+      inline def RT: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RT = "RT".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.RT]
     }
     
     trait CityResult extends StObject {
@@ -144,8 +140,7 @@ object AMap {
     }
     object CityResult {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         adcode: String,
         bounds: js.Array[Double],
         center: js.Tuple2[Double, Double],
@@ -161,44 +156,31 @@ object AMap {
         __obj.asInstanceOf[CityResult]
       }
       
-      @scala.inline
-      implicit class CityResultMutableBuilder[Self <: CityResult] (val x: Self) extends AnyVal {
+      extension [Self <: CityResult](x: Self) {
         
-        @scala.inline
-        def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
+        inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: Double*): Self = StObject.set(x, "bounds", js.Array(value :_*))
         
-        @scala.inline
-        def setCenter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+        inline def setCenter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+        inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
+        inline def setCitycode(value: String): Self = StObject.set(x, "citycode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+        inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsConverted(value: Boolean): Self = StObject.set(x, "isConverted", value.asInstanceOf[js.Any])
+        inline def setIsConverted(value: Boolean): Self = StObject.set(x, "isConverted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+        inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
     
@@ -221,23 +203,18 @@ object AMap {
     }
     object ErrorStatus {
       
-      @scala.inline
-      def apply(info: String, message: String): ErrorStatus = {
+      inline def apply(info: String, message: String): ErrorStatus = {
         val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = 0)
         __obj.asInstanceOf[ErrorStatus]
       }
       
-      @scala.inline
-      implicit class ErrorStatusMutableBuilder[Self <: ErrorStatus] (val x: Self) extends AnyVal {
+      extension [Self <: ErrorStatus](x: Self) {
         
-        @scala.inline
-        def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: `0`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: `0`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
     
@@ -252,20 +229,16 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(complete: Event_[complete, GeolocationResult], error: Event_[error, ErrorStatus]): EventMap = {
+      inline def apply(complete: Event_[complete, GeolocationResult], error: Event_[error, ErrorStatus]): EventMap = {
         val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setComplete(value: Event_[complete, GeolocationResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+        inline def setComplete(value: Event_[complete, GeolocationResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setError(value: Event_[error, ErrorStatus]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Event_[error, ErrorStatus]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       }
     }
     
@@ -310,8 +283,7 @@ object AMap {
     }
     object GeolocationResult {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addressComponent: ReGeocodeAddressComponent,
         crosses: js.Array[Cross],
         formattedAddress: String,
@@ -327,32 +299,23 @@ object AMap {
         __obj.asInstanceOf[GeolocationResult]
       }
       
-      @scala.inline
-      implicit class GeolocationResultMutableBuilder[Self <: GeolocationResult] (val x: Self) extends AnyVal {
+      extension [Self <: GeolocationResult](x: Self) {
         
-        @scala.inline
-        def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+        inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccuracyNull: Self = StObject.set(x, "accuracy", null)
+        inline def setAccuracyNull: Self = StObject.set(x, "accuracy", null)
         
-        @scala.inline
-        def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+        inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsConverted(value: Boolean): Self = StObject.set(x, "isConverted", value.asInstanceOf[js.Any])
+        inline def setIsConverted(value: Boolean): Self = StObject.set(x, "isConverted", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocation_type(value: LocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
+        inline def setLocation_type(value: LocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: `1`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       }
     }
     
@@ -364,14 +327,11 @@ object AMap {
     trait LocationType extends StObject
     object LocationType {
       
-      @scala.inline
-      def html5: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.html5 = "html5".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.html5]
+      inline def html5: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.html5 = "html5".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.html5]
       
-      @scala.inline
-      def ip: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.ip = "ip".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.ip]
+      inline def ip: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.ip = "ip".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.ip]
       
-      @scala.inline
-      def sdk: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.sdk = "sdk".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.sdk]
+      inline def sdk: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.sdk = "sdk".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.sdk]
     }
     
     trait Options extends StObject {
@@ -490,140 +450,96 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setButtonDom(value: String | HTMLElement): Self = StObject.set(x, "buttonDom", value.asInstanceOf[js.Any])
+        inline def setButtonDom(value: String | HTMLElement): Self = StObject.set(x, "buttonDom", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonDomUndefined: Self = StObject.set(x, "buttonDom", js.undefined)
+        inline def setButtonDomUndefined: Self = StObject.set(x, "buttonDom", js.undefined)
         
-        @scala.inline
-        def setButtonOffset(value: Pixel): Self = StObject.set(x, "buttonOffset", value.asInstanceOf[js.Any])
+        inline def setButtonOffset(value: Pixel): Self = StObject.set(x, "buttonOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonOffsetUndefined: Self = StObject.set(x, "buttonOffset", js.undefined)
+        inline def setButtonOffsetUndefined: Self = StObject.set(x, "buttonOffset", js.undefined)
         
-        @scala.inline
-        def setButtonPosition(value: ButtonPosition): Self = StObject.set(x, "buttonPosition", value.asInstanceOf[js.Any])
+        inline def setButtonPosition(value: ButtonPosition): Self = StObject.set(x, "buttonPosition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setButtonPositionUndefined: Self = StObject.set(x, "buttonPosition", js.undefined)
+        inline def setButtonPositionUndefined: Self = StObject.set(x, "buttonPosition", js.undefined)
         
-        @scala.inline
-        def setCircleOptions(value: typings.amapJsApi.AMap.Circle.Options[js.Any]): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
+        inline def setCircleOptions(value: typings.amapJsApi.AMap.Circle.Options[js.Any]): Self = StObject.set(x, "circleOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCircleOptionsUndefined: Self = StObject.set(x, "circleOptions", js.undefined)
+        inline def setCircleOptionsUndefined: Self = StObject.set(x, "circleOptions", js.undefined)
         
-        @scala.inline
-        def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+        inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
+        inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
         
-        @scala.inline
-        def setConvertUrl(value: String): Self = StObject.set(x, "convertUrl", value.asInstanceOf[js.Any])
+        inline def setConvertUrl(value: String): Self = StObject.set(x, "convertUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConvertUrlUndefined: Self = StObject.set(x, "convertUrl", js.undefined)
+        inline def setConvertUrlUndefined: Self = StObject.set(x, "convertUrl", js.undefined)
         
-        @scala.inline
-        def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
+        inline def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
+        inline def setEnableHighAccuracyUndefined: Self = StObject.set(x, "enableHighAccuracy", js.undefined)
         
-        @scala.inline
-        def setExtensions(value: all | base): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+        inline def setExtensions(value: all | base): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+        inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
         
-        @scala.inline
-        def setGeoLocationFirst(value: Boolean): Self = StObject.set(x, "GeoLocationFirst", value.asInstanceOf[js.Any])
+        inline def setGeoLocationFirst(value: Boolean): Self = StObject.set(x, "GeoLocationFirst", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGeoLocationFirstUndefined: Self = StObject.set(x, "GeoLocationFirst", js.undefined)
+        inline def setGeoLocationFirstUndefined: Self = StObject.set(x, "GeoLocationFirst", js.undefined)
         
-        @scala.inline
-        def setMarkerOptions(value: typings.amapJsApi.AMap.Marker.Options[js.Any]): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
+        inline def setMarkerOptions(value: typings.amapJsApi.AMap.Marker.Options[js.Any]): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
+        inline def setMarkerOptionsUndefined: Self = StObject.set(x, "markerOptions", js.undefined)
         
-        @scala.inline
-        def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
+        inline def setMaximumAge(value: Double): Self = StObject.set(x, "maximumAge", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
+        inline def setMaximumAgeUndefined: Self = StObject.set(x, "maximumAge", js.undefined)
         
-        @scala.inline
-        def setNoGeoLocation(value: Double): Self = StObject.set(x, "noGeoLocation", value.asInstanceOf[js.Any])
+        inline def setNoGeoLocation(value: Double): Self = StObject.set(x, "noGeoLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoGeoLocationUndefined: Self = StObject.set(x, "noGeoLocation", js.undefined)
+        inline def setNoGeoLocationUndefined: Self = StObject.set(x, "noGeoLocation", js.undefined)
         
-        @scala.inline
-        def setNoIpLocate(value: Double): Self = StObject.set(x, "noIpLocate", value.asInstanceOf[js.Any])
+        inline def setNoIpLocate(value: Double): Self = StObject.set(x, "noIpLocate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoIpLocateUndefined: Self = StObject.set(x, "noIpLocate", js.undefined)
+        inline def setNoIpLocateUndefined: Self = StObject.set(x, "noIpLocate", js.undefined)
         
-        @scala.inline
-        def setPanToLocation(value: Boolean): Self = StObject.set(x, "panToLocation", value.asInstanceOf[js.Any])
+        inline def setPanToLocation(value: Boolean): Self = StObject.set(x, "panToLocation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPanToLocationUndefined: Self = StObject.set(x, "panToLocation", js.undefined)
+        inline def setPanToLocationUndefined: Self = StObject.set(x, "panToLocation", js.undefined)
         
-        @scala.inline
-        def setShowButton(value: Boolean): Self = StObject.set(x, "showButton", value.asInstanceOf[js.Any])
+        inline def setShowButton(value: Boolean): Self = StObject.set(x, "showButton", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowButtonUndefined: Self = StObject.set(x, "showButton", js.undefined)
+        inline def setShowButtonUndefined: Self = StObject.set(x, "showButton", js.undefined)
         
-        @scala.inline
-        def setShowCircle(value: Boolean): Self = StObject.set(x, "showCircle", value.asInstanceOf[js.Any])
+        inline def setShowCircle(value: Boolean): Self = StObject.set(x, "showCircle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowCircleUndefined: Self = StObject.set(x, "showCircle", js.undefined)
+        inline def setShowCircleUndefined: Self = StObject.set(x, "showCircle", js.undefined)
         
-        @scala.inline
-        def setShowMarker(value: Boolean): Self = StObject.set(x, "showMarker", value.asInstanceOf[js.Any])
+        inline def setShowMarker(value: Boolean): Self = StObject.set(x, "showMarker", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowMarkerUndefined: Self = StObject.set(x, "showMarker", js.undefined)
+        inline def setShowMarkerUndefined: Self = StObject.set(x, "showMarker", js.undefined)
         
-        @scala.inline
-        def setStopWhenPermissionDenied(value: Boolean): Self = StObject.set(x, "stopWhenPermissionDenied", value.asInstanceOf[js.Any])
+        inline def setStopWhenPermissionDenied(value: Boolean): Self = StObject.set(x, "stopWhenPermissionDenied", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStopWhenPermissionDeniedUndefined: Self = StObject.set(x, "stopWhenPermissionDenied", js.undefined)
+        inline def setStopWhenPermissionDeniedUndefined: Self = StObject.set(x, "stopWhenPermissionDenied", js.undefined)
         
-        @scala.inline
-        def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+        inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+        inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
         
-        @scala.inline
-        def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
+        inline def setUseNative(value: Boolean): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
+        inline def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
         
-        @scala.inline
-        def setZoomToAccuracy(value: Boolean): Self = StObject.set(x, "zoomToAccuracy", value.asInstanceOf[js.Any])
+        inline def setZoomToAccuracy(value: Boolean): Self = StObject.set(x, "zoomToAccuracy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoomToAccuracyUndefined: Self = StObject.set(x, "zoomToAccuracy", js.undefined)
+        inline def setZoomToAccuracyUndefined: Self = StObject.set(x, "zoomToAccuracy", js.undefined)
       }
     }
     
@@ -634,11 +550,9 @@ object AMap {
     trait SearchStatus extends StObject
     object SearchStatus {
       
-      @scala.inline
-      def complete: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.complete = "complete".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.complete]
+      inline def complete: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.complete = "complete".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.complete]
       
-      @scala.inline
-      def error: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error = "error".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error]
+      inline def error: typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error = "error".asInstanceOf[typings.amapJsApiGeolocation.amapJsApiGeolocationStrings.error]
     }
   }
 }

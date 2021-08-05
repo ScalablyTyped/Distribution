@@ -13,19 +13,15 @@ trait CreateMeetingDialOutResponse extends StObject {
 }
 object CreateMeetingDialOutResponse {
   
-  @scala.inline
-  def apply(): CreateMeetingDialOutResponse = {
+  inline def apply(): CreateMeetingDialOutResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateMeetingDialOutResponse]
   }
   
-  @scala.inline
-  implicit class CreateMeetingDialOutResponseMutableBuilder[Self <: CreateMeetingDialOutResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMeetingDialOutResponse](x: Self) {
     
-    @scala.inline
-    def setTransactionId(value: GuidString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: GuidString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
   }
 }

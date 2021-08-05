@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TextProxy protected ()
   extends StObject
      with Item {
-  protected def this(textNode: Text, offsetInText: Double, length: Double) = this()
+  /* protected */ def this(textNode: Text, offsetInText: Double, length: Double) = this()
   
   val data: String = js.native
   

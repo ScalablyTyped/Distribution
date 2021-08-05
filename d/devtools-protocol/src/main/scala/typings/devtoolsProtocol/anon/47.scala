@@ -13,22 +13,17 @@ trait `47` extends StObject {
 }
 object `47` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[StartTabMirroringRequest], returnType: Unit): `47` = {
+  inline def apply(paramsType: js.Array[StartTabMirroringRequest], returnType: Unit): `47` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`47`]
   }
   
-  @scala.inline
-  implicit class `47MutableBuilder`[Self <: `47`] (val x: Self) extends AnyVal {
+  extension [Self <: `47`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[StartTabMirroringRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[StartTabMirroringRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: StartTabMirroringRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: StartTabMirroringRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

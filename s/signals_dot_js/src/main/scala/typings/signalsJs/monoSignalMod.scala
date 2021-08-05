@@ -27,7 +27,7 @@ object monoSignalMod {
       */
     def this(valueClasses: js.Any*) = this()
     
-    var _valueClasses: js.Array[js.Any] = js.native
+    /* protected */ var _valueClasses: js.Array[js.Any] = js.native
     
     /**
       * Subscribes a listener for the signal.
@@ -80,7 +80,7 @@ object monoSignalMod {
     /* CompleteClass */
     override def removeAll(): Unit = js.native
     
-    var slot: Slot = js.native
+    /* protected */ var slot: Slot = js.native
     
     /**
       * An optional array of classes defining the types of parameters sent to listeners.

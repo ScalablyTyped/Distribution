@@ -12,8 +12,7 @@ trait WorkspaceTaskInstance
 }
 object WorkspaceTaskInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     delete: RestMethod,
     get: RestMethod,
     post: RestMethod,
@@ -24,10 +23,8 @@ object WorkspaceTaskInstance {
     __obj.asInstanceOf[WorkspaceTaskInstance]
   }
   
-  @scala.inline
-  implicit class WorkspaceTaskInstanceMutableBuilder[Self <: WorkspaceTaskInstance] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceTaskInstance](x: Self) {
     
-    @scala.inline
-    def setReservations(value: WorkspaceTaskReservationResource): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
+    inline def setReservations(value: WorkspaceTaskReservationResource): Self = StObject.set(x, "reservations", value.asInstanceOf[js.Any])
   }
 }

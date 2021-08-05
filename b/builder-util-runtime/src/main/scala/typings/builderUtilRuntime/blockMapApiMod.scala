@@ -16,23 +16,18 @@ object blockMapApiMod {
   }
   object BlockMap {
     
-    @scala.inline
-    def apply(files: js.Array[BlockMapFile], version: `1` | `2`): BlockMap = {
+    inline def apply(files: js.Array[BlockMapFile], version: `1` | `2`): BlockMap = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockMap]
     }
     
-    @scala.inline
-    implicit class BlockMapMutableBuilder[Self <: BlockMap] (val x: Self) extends AnyVal {
+    extension [Self <: BlockMap](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[BlockMapFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[BlockMapFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: BlockMapFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: BlockMapFile*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: `1` | `2`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: `1` | `2`): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,20 +41,16 @@ object blockMapApiMod {
   }
   object BlockMapFile {
     
-    @scala.inline
-    def apply(checksums: js.Array[String], name: String, offset: Double, sizes: js.Array[Double]): BlockMapFile = {
+    inline def apply(checksums: js.Array[String], name: String, offset: Double, sizes: js.Array[Double]): BlockMapFile = {
       val __obj = js.Dynamic.literal(checksums = checksums.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[BlockMapFile]
     }
     
-    @scala.inline
-    implicit class BlockMapFileMutableBuilder[Self <: BlockMapFile] (val x: Self) extends AnyVal {
+    extension [Self <: BlockMapFile](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,26 +62,20 @@ object blockMapApiMod {
   }
   object FileChunks {
     
-    @scala.inline
-    def apply(checksums: js.Array[String], sizes: js.Array[Double]): FileChunks = {
+    inline def apply(checksums: js.Array[String], sizes: js.Array[Double]): FileChunks = {
       val __obj = js.Dynamic.literal(checksums = checksums.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileChunks]
     }
     
-    @scala.inline
-    implicit class FileChunksMutableBuilder[Self <: FileChunks] (val x: Self) extends AnyVal {
+    extension [Self <: FileChunks](x: Self) {
       
-      @scala.inline
-      def setChecksums(value: js.Array[String]): Self = StObject.set(x, "checksums", value.asInstanceOf[js.Any])
+      inline def setChecksums(value: js.Array[String]): Self = StObject.set(x, "checksums", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksumsVarargs(value: String*): Self = StObject.set(x, "checksums", js.Array(value :_*))
+      inline def setChecksumsVarargs(value: String*): Self = StObject.set(x, "checksums", js.Array(value :_*))
       
-      @scala.inline
-      def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: js.Array[Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value :_*))
     }
   }
 }

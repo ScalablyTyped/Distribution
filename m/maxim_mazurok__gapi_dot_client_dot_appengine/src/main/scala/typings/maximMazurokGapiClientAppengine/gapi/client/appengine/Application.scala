@@ -58,100 +58,69 @@ trait Application extends StObject {
 }
 object Application {
   
-  @scala.inline
-  def apply(): Application = {
+  inline def apply(): Application = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Application]
   }
   
-  @scala.inline
-  implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+  extension [Self <: Application](x: Self) {
     
-    @scala.inline
-    def setAuthDomain(value: String): Self = StObject.set(x, "authDomain", value.asInstanceOf[js.Any])
+    inline def setAuthDomain(value: String): Self = StObject.set(x, "authDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthDomainUndefined: Self = StObject.set(x, "authDomain", js.undefined)
+    inline def setAuthDomainUndefined: Self = StObject.set(x, "authDomain", js.undefined)
     
-    @scala.inline
-    def setCodeBucket(value: String): Self = StObject.set(x, "codeBucket", value.asInstanceOf[js.Any])
+    inline def setCodeBucket(value: String): Self = StObject.set(x, "codeBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeBucketUndefined: Self = StObject.set(x, "codeBucket", js.undefined)
+    inline def setCodeBucketUndefined: Self = StObject.set(x, "codeBucket", js.undefined)
     
-    @scala.inline
-    def setDatabaseType(value: String): Self = StObject.set(x, "databaseType", value.asInstanceOf[js.Any])
+    inline def setDatabaseType(value: String): Self = StObject.set(x, "databaseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseTypeUndefined: Self = StObject.set(x, "databaseType", js.undefined)
+    inline def setDatabaseTypeUndefined: Self = StObject.set(x, "databaseType", js.undefined)
     
-    @scala.inline
-    def setDefaultBucket(value: String): Self = StObject.set(x, "defaultBucket", value.asInstanceOf[js.Any])
+    inline def setDefaultBucket(value: String): Self = StObject.set(x, "defaultBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultBucketUndefined: Self = StObject.set(x, "defaultBucket", js.undefined)
+    inline def setDefaultBucketUndefined: Self = StObject.set(x, "defaultBucket", js.undefined)
     
-    @scala.inline
-    def setDefaultCookieExpiration(value: String): Self = StObject.set(x, "defaultCookieExpiration", value.asInstanceOf[js.Any])
+    inline def setDefaultCookieExpiration(value: String): Self = StObject.set(x, "defaultCookieExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCookieExpirationUndefined: Self = StObject.set(x, "defaultCookieExpiration", js.undefined)
+    inline def setDefaultCookieExpirationUndefined: Self = StObject.set(x, "defaultCookieExpiration", js.undefined)
     
-    @scala.inline
-    def setDefaultHostname(value: String): Self = StObject.set(x, "defaultHostname", value.asInstanceOf[js.Any])
+    inline def setDefaultHostname(value: String): Self = StObject.set(x, "defaultHostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultHostnameUndefined: Self = StObject.set(x, "defaultHostname", js.undefined)
+    inline def setDefaultHostnameUndefined: Self = StObject.set(x, "defaultHostname", js.undefined)
     
-    @scala.inline
-    def setDispatchRules(value: js.Array[UrlDispatchRule]): Self = StObject.set(x, "dispatchRules", value.asInstanceOf[js.Any])
+    inline def setDispatchRules(value: js.Array[UrlDispatchRule]): Self = StObject.set(x, "dispatchRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispatchRulesUndefined: Self = StObject.set(x, "dispatchRules", js.undefined)
+    inline def setDispatchRulesUndefined: Self = StObject.set(x, "dispatchRules", js.undefined)
     
-    @scala.inline
-    def setDispatchRulesVarargs(value: UrlDispatchRule*): Self = StObject.set(x, "dispatchRules", js.Array(value :_*))
+    inline def setDispatchRulesVarargs(value: UrlDispatchRule*): Self = StObject.set(x, "dispatchRules", js.Array(value :_*))
     
-    @scala.inline
-    def setFeatureSettings(value: FeatureSettings): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
+    inline def setFeatureSettings(value: FeatureSettings): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureSettingsUndefined: Self = StObject.set(x, "featureSettings", js.undefined)
+    inline def setFeatureSettingsUndefined: Self = StObject.set(x, "featureSettings", js.undefined)
     
-    @scala.inline
-    def setGcrDomain(value: String): Self = StObject.set(x, "gcrDomain", value.asInstanceOf[js.Any])
+    inline def setGcrDomain(value: String): Self = StObject.set(x, "gcrDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcrDomainUndefined: Self = StObject.set(x, "gcrDomain", js.undefined)
+    inline def setGcrDomainUndefined: Self = StObject.set(x, "gcrDomain", js.undefined)
     
-    @scala.inline
-    def setIap(value: IdentityAwareProxy): Self = StObject.set(x, "iap", value.asInstanceOf[js.Any])
+    inline def setIap(value: IdentityAwareProxy): Self = StObject.set(x, "iap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIapUndefined: Self = StObject.set(x, "iap", js.undefined)
+    inline def setIapUndefined: Self = StObject.set(x, "iap", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setServingStatus(value: String): Self = StObject.set(x, "servingStatus", value.asInstanceOf[js.Any])
+    inline def setServingStatus(value: String): Self = StObject.set(x, "servingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServingStatusUndefined: Self = StObject.set(x, "servingStatus", js.undefined)
+    inline def setServingStatusUndefined: Self = StObject.set(x, "servingStatus", js.undefined)
   }
 }

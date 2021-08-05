@@ -22,8 +22,7 @@ trait ChangeTableCellFormattingCommand extends StObject {
 }
 object ChangeTableCellFormattingCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: TableCellFormattingSettings => Boolean,
     getState: () => CommandState[TableCellFormattingSettings]
   ): ChangeTableCellFormattingCommand = {
@@ -31,13 +30,10 @@ object ChangeTableCellFormattingCommand {
     __obj.asInstanceOf[ChangeTableCellFormattingCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTableCellFormattingCommandMutableBuilder[Self <: ChangeTableCellFormattingCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTableCellFormattingCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: TableCellFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: TableCellFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[TableCellFormattingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[TableCellFormattingSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

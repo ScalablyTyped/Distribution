@@ -73,8 +73,7 @@ trait XControl
 }
 object XControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XInterface,
     Model: XControlModel,
     Peer: XWindowPeer,
@@ -100,49 +99,34 @@ object XControl {
     __obj.asInstanceOf[XControl]
   }
   
-  @scala.inline
-  implicit class XControlMutableBuilder[Self <: XControl] (val x: Self) extends AnyVal {
+  extension [Self <: XControl](x: Self) {
     
-    @scala.inline
-    def setContext(value: XInterface): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
+    inline def setContext(value: XInterface): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatePeer(value: (XToolkit, XWindowPeer) => Unit): Self = StObject.set(x, "createPeer", js.Any.fromFunction2(value))
+    inline def setCreatePeer(value: (XToolkit, XWindowPeer) => Unit): Self = StObject.set(x, "createPeer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetContext(value: () => XInterface): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+    inline def setGetContext(value: () => XInterface): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModel(value: () => XControlModel): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
+    inline def setGetModel(value: () => XControlModel): Self = StObject.set(x, "getModel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPeer(value: () => XWindowPeer): Self = StObject.set(x, "getPeer", js.Any.fromFunction0(value))
+    inline def setGetPeer(value: () => XWindowPeer): Self = StObject.set(x, "getPeer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetView(value: () => XView): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
+    inline def setGetView(value: () => XView): Self = StObject.set(x, "getView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDesignMode(value: () => Boolean): Self = StObject.set(x, "isDesignMode", js.Any.fromFunction0(value))
+    inline def setIsDesignMode(value: () => Boolean): Self = StObject.set(x, "isDesignMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTransparent(value: () => Boolean): Self = StObject.set(x, "isTransparent", js.Any.fromFunction0(value))
+    inline def setIsTransparent(value: () => Boolean): Self = StObject.set(x, "isTransparent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModel(value: XControlModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: XControlModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeer(value: XWindowPeer): Self = StObject.set(x, "Peer", value.asInstanceOf[js.Any])
+    inline def setPeer(value: XWindowPeer): Self = StObject.set(x, "Peer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetContext(value: XInterface => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
+    inline def setSetContext(value: XInterface => Unit): Self = StObject.set(x, "setContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDesignMode(value: Boolean => Unit): Self = StObject.set(x, "setDesignMode", js.Any.fromFunction1(value))
+    inline def setSetDesignMode(value: Boolean => Unit): Self = StObject.set(x, "setDesignMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetModel(value: XControlModel => Boolean): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
+    inline def setSetModel(value: XControlModel => Boolean): Self = StObject.set(x, "setModel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setView(value: XView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+    inline def setView(value: XView): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
   }
 }

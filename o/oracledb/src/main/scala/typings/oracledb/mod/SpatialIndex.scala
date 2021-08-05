@@ -25,31 +25,23 @@ trait SpatialIndex extends StObject {
 }
 object SpatialIndex {
   
-  @scala.inline
-  def apply(name: String, spatial: String): SpatialIndex = {
+  inline def apply(name: String, spatial: String): SpatialIndex = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], spatial = spatial.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialIndex]
   }
   
-  @scala.inline
-  implicit class SpatialIndexMutableBuilder[Self <: SpatialIndex] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialIndex](x: Self) {
     
-    @scala.inline
-    def setLax(value: Boolean): Self = StObject.set(x, "lax", value.asInstanceOf[js.Any])
+    inline def setLax(value: Boolean): Self = StObject.set(x, "lax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaxUndefined: Self = StObject.set(x, "lax", js.undefined)
+    inline def setLaxUndefined: Self = StObject.set(x, "lax", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalarRequired(value: Boolean): Self = StObject.set(x, "scalarRequired", value.asInstanceOf[js.Any])
+    inline def setScalarRequired(value: Boolean): Self = StObject.set(x, "scalarRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalarRequiredUndefined: Self = StObject.set(x, "scalarRequired", js.undefined)
+    inline def setScalarRequiredUndefined: Self = StObject.set(x, "scalarRequired", js.undefined)
     
-    @scala.inline
-    def setSpatial(value: String): Self = StObject.set(x, "spatial", value.asInstanceOf[js.Any])
+    inline def setSpatial(value: String): Self = StObject.set(x, "spatial", value.asInstanceOf[js.Any])
   }
 }

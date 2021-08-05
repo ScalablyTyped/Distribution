@@ -38,49 +38,35 @@ trait GetOperationDetailResponse extends StObject {
 }
 object GetOperationDetailResponse {
   
-  @scala.inline
-  def apply(): GetOperationDetailResponse = {
+  inline def apply(): GetOperationDetailResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOperationDetailResponse]
   }
   
-  @scala.inline
-  implicit class GetOperationDetailResponseMutableBuilder[Self <: GetOperationDetailResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetOperationDetailResponse](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: OperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OperationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setSubmittedDate(value: Timestamp): Self = StObject.set(x, "SubmittedDate", value.asInstanceOf[js.Any])
+    inline def setSubmittedDate(value: Timestamp): Self = StObject.set(x, "SubmittedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedDateUndefined: Self = StObject.set(x, "SubmittedDate", js.undefined)
+    inline def setSubmittedDateUndefined: Self = StObject.set(x, "SubmittedDate", js.undefined)
     
-    @scala.inline
-    def setType(value: OperationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: OperationType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

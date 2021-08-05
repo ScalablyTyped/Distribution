@@ -10,16 +10,13 @@ trait GetLaunchTemplateMonitoring extends StObject {
 }
 object GetLaunchTemplateMonitoring {
   
-  @scala.inline
-  def apply(enabled: Boolean): GetLaunchTemplateMonitoring = {
+  inline def apply(enabled: Boolean): GetLaunchTemplateMonitoring = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLaunchTemplateMonitoring]
   }
   
-  @scala.inline
-  implicit class GetLaunchTemplateMonitoringMutableBuilder[Self <: GetLaunchTemplateMonitoring] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchTemplateMonitoring](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

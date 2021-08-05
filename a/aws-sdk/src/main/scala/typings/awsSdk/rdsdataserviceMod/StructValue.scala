@@ -13,22 +13,17 @@ trait StructValue extends StObject {
 }
 object StructValue {
   
-  @scala.inline
-  def apply(): StructValue = {
+  inline def apply(): StructValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StructValue]
   }
   
-  @scala.inline
-  implicit class StructValueMutableBuilder[Self <: StructValue] (val x: Self) extends AnyVal {
+  extension [Self <: StructValue](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: ArrayValueList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: ArrayValueList): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: Value*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: Value*): Self = StObject.set(x, "attributes", js.Array(value :_*))
   }
 }

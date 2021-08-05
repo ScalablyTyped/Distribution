@@ -48,61 +48,43 @@ trait DBProxyTargetGroup extends StObject {
 }
 object DBProxyTargetGroup {
   
-  @scala.inline
-  def apply(): DBProxyTargetGroup = {
+  inline def apply(): DBProxyTargetGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBProxyTargetGroup]
   }
   
-  @scala.inline
-  implicit class DBProxyTargetGroupMutableBuilder[Self <: DBProxyTargetGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DBProxyTargetGroup](x: Self) {
     
-    @scala.inline
-    def setConnectionPoolConfig(value: ConnectionPoolConfigurationInfo): Self = StObject.set(x, "ConnectionPoolConfig", value.asInstanceOf[js.Any])
+    inline def setConnectionPoolConfig(value: ConnectionPoolConfigurationInfo): Self = StObject.set(x, "ConnectionPoolConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionPoolConfigUndefined: Self = StObject.set(x, "ConnectionPoolConfig", js.undefined)
+    inline def setConnectionPoolConfigUndefined: Self = StObject.set(x, "ConnectionPoolConfig", js.undefined)
     
-    @scala.inline
-    def setCreatedDate(value: TStamp): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: TStamp): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
+    inline def setDBProxyName(value: String): Self = StObject.set(x, "DBProxyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBProxyNameUndefined: Self = StObject.set(x, "DBProxyName", js.undefined)
+    inline def setDBProxyNameUndefined: Self = StObject.set(x, "DBProxyName", js.undefined)
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTargetGroupArn(value: String): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: String): Self = StObject.set(x, "TargetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupArnUndefined: Self = StObject.set(x, "TargetGroupArn", js.undefined)
+    inline def setTargetGroupArnUndefined: Self = StObject.set(x, "TargetGroupArn", js.undefined)
     
-    @scala.inline
-    def setTargetGroupName(value: String): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
+    inline def setTargetGroupName(value: String): Self = StObject.set(x, "TargetGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupNameUndefined: Self = StObject.set(x, "TargetGroupName", js.undefined)
+    inline def setTargetGroupNameUndefined: Self = StObject.set(x, "TargetGroupName", js.undefined)
     
-    @scala.inline
-    def setUpdatedDate(value: TStamp): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
+    inline def setUpdatedDate(value: TStamp): Self = StObject.set(x, "UpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedDateUndefined: Self = StObject.set(x, "UpdatedDate", js.undefined)
+    inline def setUpdatedDateUndefined: Self = StObject.set(x, "UpdatedDate", js.undefined)
   }
 }

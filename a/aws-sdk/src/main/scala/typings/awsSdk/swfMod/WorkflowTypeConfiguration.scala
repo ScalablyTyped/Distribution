@@ -38,49 +38,35 @@ trait WorkflowTypeConfiguration extends StObject {
 }
 object WorkflowTypeConfiguration {
   
-  @scala.inline
-  def apply(): WorkflowTypeConfiguration = {
+  inline def apply(): WorkflowTypeConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkflowTypeConfiguration]
   }
   
-  @scala.inline
-  implicit class WorkflowTypeConfigurationMutableBuilder[Self <: WorkflowTypeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowTypeConfiguration](x: Self) {
     
-    @scala.inline
-    def setDefaultChildPolicy(value: ChildPolicy): Self = StObject.set(x, "defaultChildPolicy", value.asInstanceOf[js.Any])
+    inline def setDefaultChildPolicy(value: ChildPolicy): Self = StObject.set(x, "defaultChildPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultChildPolicyUndefined: Self = StObject.set(x, "defaultChildPolicy", js.undefined)
+    inline def setDefaultChildPolicyUndefined: Self = StObject.set(x, "defaultChildPolicy", js.undefined)
     
-    @scala.inline
-    def setDefaultExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setDefaultExecutionStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultExecutionStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", js.undefined)
+    inline def setDefaultExecutionStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultExecutionStartToCloseTimeout", js.undefined)
     
-    @scala.inline
-    def setDefaultLambdaRole(value: Arn): Self = StObject.set(x, "defaultLambdaRole", value.asInstanceOf[js.Any])
+    inline def setDefaultLambdaRole(value: Arn): Self = StObject.set(x, "defaultLambdaRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLambdaRoleUndefined: Self = StObject.set(x, "defaultLambdaRole", js.undefined)
+    inline def setDefaultLambdaRoleUndefined: Self = StObject.set(x, "defaultLambdaRole", js.undefined)
     
-    @scala.inline
-    def setDefaultTaskList(value: TaskList): Self = StObject.set(x, "defaultTaskList", value.asInstanceOf[js.Any])
+    inline def setDefaultTaskList(value: TaskList): Self = StObject.set(x, "defaultTaskList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTaskListUndefined: Self = StObject.set(x, "defaultTaskList", js.undefined)
+    inline def setDefaultTaskListUndefined: Self = StObject.set(x, "defaultTaskList", js.undefined)
     
-    @scala.inline
-    def setDefaultTaskPriority(value: TaskPriority): Self = StObject.set(x, "defaultTaskPriority", value.asInstanceOf[js.Any])
+    inline def setDefaultTaskPriority(value: TaskPriority): Self = StObject.set(x, "defaultTaskPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTaskPriorityUndefined: Self = StObject.set(x, "defaultTaskPriority", js.undefined)
+    inline def setDefaultTaskPriorityUndefined: Self = StObject.set(x, "defaultTaskPriority", js.undefined)
     
-    @scala.inline
-    def setDefaultTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskStartToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setDefaultTaskStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "defaultTaskStartToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultTaskStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultTaskStartToCloseTimeout", js.undefined)
+    inline def setDefaultTaskStartToCloseTimeoutUndefined: Self = StObject.set(x, "defaultTaskStartToCloseTimeout", js.undefined)
   }
 }

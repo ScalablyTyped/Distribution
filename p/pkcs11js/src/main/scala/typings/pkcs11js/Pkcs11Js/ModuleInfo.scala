@@ -18,8 +18,7 @@ trait ModuleInfo extends StObject {
 }
 object ModuleInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cryptokiVersion: Version,
     flags: Double,
     libraryDescription: String,
@@ -30,22 +29,16 @@ object ModuleInfo {
     __obj.asInstanceOf[ModuleInfo]
   }
   
-  @scala.inline
-  implicit class ModuleInfoMutableBuilder[Self <: ModuleInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleInfo](x: Self) {
     
-    @scala.inline
-    def setCryptokiVersion(value: Version): Self = StObject.set(x, "cryptokiVersion", value.asInstanceOf[js.Any])
+    inline def setCryptokiVersion(value: Version): Self = StObject.set(x, "cryptokiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibraryDescription(value: String): Self = StObject.set(x, "libraryDescription", value.asInstanceOf[js.Any])
+    inline def setLibraryDescription(value: String): Self = StObject.set(x, "libraryDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibraryVersion(value: Version): Self = StObject.set(x, "libraryVersion", value.asInstanceOf[js.Any])
+    inline def setLibraryVersion(value: Version): Self = StObject.set(x, "libraryVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerID(value: String): Self = StObject.set(x, "manufacturerID", value.asInstanceOf[js.Any])
+    inline def setManufacturerID(value: String): Self = StObject.set(x, "manufacturerID", value.asInstanceOf[js.Any])
   }
 }

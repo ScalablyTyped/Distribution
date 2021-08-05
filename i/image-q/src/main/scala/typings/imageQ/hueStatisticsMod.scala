@@ -12,13 +12,13 @@ object hueStatisticsMod {
   class HueStatistics protected () extends StObject {
     def this(numGroups: Double, minCols: Double) = this()
     
-    var _groupsFull: js.Any = js.native
+    /* private */ var _groupsFull: js.Any = js.native
     
-    var _minCols: js.Any = js.native
+    /* private */ var _minCols: js.Any = js.native
     
-    var _numGroups: js.Any = js.native
+    /* private */ var _numGroups: js.Any = js.native
     
-    var _stats: js.Any = js.native
+    /* private */ var _stats: js.Any = js.native
     
     def check(i32: Double): Unit = js.native
     

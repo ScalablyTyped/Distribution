@@ -68,79 +68,55 @@ trait SchemaWorkflowMetadata extends StObject {
 }
 object SchemaWorkflowMetadata {
   
-  @scala.inline
-  def apply(): SchemaWorkflowMetadata = {
+  inline def apply(): SchemaWorkflowMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkflowMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaWorkflowMetadataMutableBuilder[Self <: SchemaWorkflowMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkflowMetadata](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    @scala.inline
-    def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
+    inline def setClusterUuid(value: String): Self = StObject.set(x, "clusterUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
+    inline def setClusterUuidUndefined: Self = StObject.set(x, "clusterUuid", js.undefined)
     
-    @scala.inline
-    def setCreateCluster(value: SchemaClusterOperation): Self = StObject.set(x, "createCluster", value.asInstanceOf[js.Any])
+    inline def setCreateCluster(value: SchemaClusterOperation): Self = StObject.set(x, "createCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateClusterUndefined: Self = StObject.set(x, "createCluster", js.undefined)
+    inline def setCreateClusterUndefined: Self = StObject.set(x, "createCluster", js.undefined)
     
-    @scala.inline
-    def setDeleteCluster(value: SchemaClusterOperation): Self = StObject.set(x, "deleteCluster", value.asInstanceOf[js.Any])
+    inline def setDeleteCluster(value: SchemaClusterOperation): Self = StObject.set(x, "deleteCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteClusterUndefined: Self = StObject.set(x, "deleteCluster", js.undefined)
+    inline def setDeleteClusterUndefined: Self = StObject.set(x, "deleteCluster", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setGraph(value: SchemaWorkflowGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: SchemaWorkflowGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+    inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
     
-    @scala.inline
-    def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

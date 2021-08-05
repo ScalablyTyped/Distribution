@@ -10,16 +10,13 @@ trait UserDeletionResource extends StObject {
 }
 object UserDeletionResource {
   
-  @scala.inline
-  def apply(userDeletionRequest: UserDeletionRequestResource): UserDeletionResource = {
+  inline def apply(userDeletionRequest: UserDeletionRequestResource): UserDeletionResource = {
     val __obj = js.Dynamic.literal(userDeletionRequest = userDeletionRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDeletionResource]
   }
   
-  @scala.inline
-  implicit class UserDeletionResourceMutableBuilder[Self <: UserDeletionResource] (val x: Self) extends AnyVal {
+  extension [Self <: UserDeletionResource](x: Self) {
     
-    @scala.inline
-    def setUserDeletionRequest(value: UserDeletionRequestResource): Self = StObject.set(x, "userDeletionRequest", value.asInstanceOf[js.Any])
+    inline def setUserDeletionRequest(value: UserDeletionRequestResource): Self = StObject.set(x, "userDeletionRequest", value.asInstanceOf[js.Any])
   }
 }

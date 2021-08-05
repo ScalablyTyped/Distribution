@@ -68,70 +68,49 @@ trait BuildBazelRemoteExecutionV2Command extends StObject {
 }
 object BuildBazelRemoteExecutionV2Command {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2Command = {
+  inline def apply(): BuildBazelRemoteExecutionV2Command = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2Command]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2CommandMutableBuilder[Self <: BuildBazelRemoteExecutionV2Command] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2Command](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironmentVariables(value: js.Array[BuildBazelRemoteExecutionV2CommandEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
+    inline def setEnvironmentVariables(value: js.Array[BuildBazelRemoteExecutionV2CommandEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
-    @scala.inline
-    def setEnvironmentVariablesVarargs(value: BuildBazelRemoteExecutionV2CommandEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
+    inline def setEnvironmentVariablesVarargs(value: BuildBazelRemoteExecutionV2CommandEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputDirectories(value: js.Array[String]): Self = StObject.set(x, "outputDirectories", value.asInstanceOf[js.Any])
+    inline def setOutputDirectories(value: js.Array[String]): Self = StObject.set(x, "outputDirectories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDirectoriesUndefined: Self = StObject.set(x, "outputDirectories", js.undefined)
+    inline def setOutputDirectoriesUndefined: Self = StObject.set(x, "outputDirectories", js.undefined)
     
-    @scala.inline
-    def setOutputDirectoriesVarargs(value: String*): Self = StObject.set(x, "outputDirectories", js.Array(value :_*))
+    inline def setOutputDirectoriesVarargs(value: String*): Self = StObject.set(x, "outputDirectories", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputFiles(value: js.Array[String]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
+    inline def setOutputFiles(value: js.Array[String]): Self = StObject.set(x, "outputFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFilesUndefined: Self = StObject.set(x, "outputFiles", js.undefined)
+    inline def setOutputFilesUndefined: Self = StObject.set(x, "outputFiles", js.undefined)
     
-    @scala.inline
-    def setOutputFilesVarargs(value: String*): Self = StObject.set(x, "outputFiles", js.Array(value :_*))
+    inline def setOutputFilesVarargs(value: String*): Self = StObject.set(x, "outputFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputPaths(value: js.Array[String]): Self = StObject.set(x, "outputPaths", value.asInstanceOf[js.Any])
+    inline def setOutputPaths(value: js.Array[String]): Self = StObject.set(x, "outputPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputPathsUndefined: Self = StObject.set(x, "outputPaths", js.undefined)
+    inline def setOutputPathsUndefined: Self = StObject.set(x, "outputPaths", js.undefined)
     
-    @scala.inline
-    def setOutputPathsVarargs(value: String*): Self = StObject.set(x, "outputPaths", js.Array(value :_*))
+    inline def setOutputPathsVarargs(value: String*): Self = StObject.set(x, "outputPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setPlatform(value: BuildBazelRemoteExecutionV2Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: BuildBazelRemoteExecutionV2Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
+    inline def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
+    inline def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ object tagIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/tag/index.native", "default.defaultProps")
     @js.native
     def defaultProps: AfterClose = js.native
-    @scala.inline
-    def defaultProps_=(x: AfterClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: AfterClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -62,29 +61,22 @@ object tagIndexNativeMod {
   }
   object TagNativeProps {
     
-    @scala.inline
-    def apply(): TagNativeProps = {
+    inline def apply(): TagNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TagNativeProps]
     }
     
-    @scala.inline
-    implicit class TagNativePropsMutableBuilder[Self <: TagNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: TagNativeProps](x: Self) {
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: ITagStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: ITagStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
 }

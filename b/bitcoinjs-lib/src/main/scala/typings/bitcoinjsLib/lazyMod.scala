@@ -10,9 +10,7 @@ object lazyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def prop(`object`: js.Object, name: String, f: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prop")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def prop(`object`: js.Object, name: String, f: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prop")(`object`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def value[T](f: js.Function0[T]): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
+  inline def value[T](f: js.Function0[T]): js.Function0[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("value")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function0[T]]
 }

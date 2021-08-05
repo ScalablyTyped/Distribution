@@ -8,11 +8,9 @@ object emberUtilsStrings {
   
   @js.native
   sealed trait `object` extends StObject
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
   sealed trait undefined extends StObject
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
 }

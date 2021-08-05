@@ -19,24 +19,19 @@ trait MediaContentProperties
 }
 object MediaContentProperties {
   
-  @scala.inline
-  def apply(): MediaContentProperties = {
+  inline def apply(): MediaContentProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MediaContentProperties]
   }
   
-  @scala.inline
-  implicit class MediaContentPropertiesMutableBuilder[Self <: MediaContentProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MediaContentProperties](x: Self) {
     
-    @scala.inline
-    def setMediaInfos(
+    inline def setMediaInfos(
       value: BarChartMediaInfoProperties | ColumnChartMediaInfoProperties | ImageMediaInfoProperties | LineChartMediaInfoProperties | PieChartMediaInfoProperties | js.Array[js.Any]
     ): Self = StObject.set(x, "mediaInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaInfosUndefined: Self = StObject.set(x, "mediaInfos", js.undefined)
+    inline def setMediaInfosUndefined: Self = StObject.set(x, "mediaInfos", js.undefined)
     
-    @scala.inline
-    def setMediaInfosVarargs(value: js.Any*): Self = StObject.set(x, "mediaInfos", js.Array(value :_*))
+    inline def setMediaInfosVarargs(value: js.Any*): Self = StObject.set(x, "mediaInfos", js.Array(value :_*))
   }
 }

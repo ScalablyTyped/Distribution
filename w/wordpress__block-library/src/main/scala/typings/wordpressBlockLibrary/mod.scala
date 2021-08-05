@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerCoreBlocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerCoreBlocks")().asInstanceOf[Unit]
+  inline def registerCoreBlocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerCoreBlocks")().asInstanceOf[Unit]
 }

@@ -93,23 +93,18 @@ object Core {
   }
   object WebProviderError {
     
-    @scala.inline
-    def apply(errorCode: Double, errorMessage: String, properties: IMap[String, String]): WebProviderError = {
+    inline def apply(errorCode: Double, errorMessage: String, properties: IMap[String, String]): WebProviderError = {
       val __obj = js.Dynamic.literal(errorCode = errorCode.asInstanceOf[js.Any], errorMessage = errorMessage.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebProviderError]
     }
     
-    @scala.inline
-    implicit class WebProviderErrorMutableBuilder[Self <: WebProviderError] (val x: Self) extends AnyVal {
+    extension [Self <: WebProviderError](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: IMap[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMap[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -136,8 +131,7 @@ object Core {
   }
   object WebTokenRequest {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       appProperties: js.Any,
       clientId: String,
       promptType: WebTokenRequestPromptType,
@@ -149,26 +143,19 @@ object Core {
       __obj.asInstanceOf[WebTokenRequest]
     }
     
-    @scala.inline
-    implicit class WebTokenRequestMutableBuilder[Self <: WebTokenRequest] (val x: Self) extends AnyVal {
+    extension [Self <: WebTokenRequest](x: Self) {
       
-      @scala.inline
-      def setAppProperties(value: js.Any): Self = StObject.set(x, "appProperties", value.asInstanceOf[js.Any])
+      inline def setAppProperties(value: js.Any): Self = StObject.set(x, "appProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptType(value: WebTokenRequestPromptType): Self = StObject.set(x, "promptType", value.asInstanceOf[js.Any])
+      inline def setPromptType(value: WebTokenRequestPromptType): Self = StObject.set(x, "promptType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: IMap[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMap[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebAccountProvider(value: WebAccountProvider): Self = StObject.set(x, "webAccountProvider", value.asInstanceOf[js.Any])
+      inline def setWebAccountProvider(value: WebAccountProvider): Self = StObject.set(x, "webAccountProvider", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,8 +179,7 @@ object Core {
   }
   object WebTokenRequestResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       invalidateCacheAsync: () => IPromiseWithIAsyncAction,
       responseData: IVectorView[WebTokenResponse],
       responseError: WebProviderError,
@@ -203,20 +189,15 @@ object Core {
       __obj.asInstanceOf[WebTokenRequestResult]
     }
     
-    @scala.inline
-    implicit class WebTokenRequestResultMutableBuilder[Self <: WebTokenRequestResult] (val x: Self) extends AnyVal {
+    extension [Self <: WebTokenRequestResult](x: Self) {
       
-      @scala.inline
-      def setInvalidateCacheAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "invalidateCacheAsync", js.Any.fromFunction0(value))
+      inline def setInvalidateCacheAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "invalidateCacheAsync", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResponseData(value: IVectorView[WebTokenResponse]): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
+      inline def setResponseData(value: IVectorView[WebTokenResponse]): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseError(value: WebProviderError): Self = StObject.set(x, "responseError", value.asInstanceOf[js.Any])
+      inline def setResponseError(value: WebProviderError): Self = StObject.set(x, "responseError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseStatus(value: WebTokenRequestStatus): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
+      inline def setResponseStatus(value: WebTokenRequestStatus): Self = StObject.set(x, "responseStatus", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,8 +218,7 @@ object Core {
   }
   object WebTokenResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       properties: IMap[String, String],
       providerError: WebProviderError,
       token: String,
@@ -248,20 +228,15 @@ object Core {
       __obj.asInstanceOf[WebTokenResponse]
     }
     
-    @scala.inline
-    implicit class WebTokenResponseMutableBuilder[Self <: WebTokenResponse] (val x: Self) extends AnyVal {
+    extension [Self <: WebTokenResponse](x: Self) {
       
-      @scala.inline
-      def setProperties(value: IMap[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMap[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderError(value: WebProviderError): Self = StObject.set(x, "providerError", value.asInstanceOf[js.Any])
+      inline def setProviderError(value: WebProviderError): Self = StObject.set(x, "providerError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
+      inline def setWebAccount(value: WebAccount): Self = StObject.set(x, "webAccount", value.asInstanceOf[js.Any])
     }
   }
 }

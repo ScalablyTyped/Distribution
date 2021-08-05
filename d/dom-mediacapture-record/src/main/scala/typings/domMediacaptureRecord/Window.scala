@@ -29,8 +29,7 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BlobEvent: Instantiable2[/* type */ String, /* eventInitDict */ BlobEventInit, BlobEvent],
     MediaRecorder: TypeofMediaRecorder & (Instantiable2[
       /* stream */ MediaStream, 
@@ -47,14 +46,11 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setBlobEvent(value: Instantiable2[/* type */ String, /* eventInitDict */ BlobEventInit, BlobEvent]): Self = StObject.set(x, "BlobEvent", value.asInstanceOf[js.Any])
+    inline def setBlobEvent(value: Instantiable2[/* type */ String, /* eventInitDict */ BlobEventInit, BlobEvent]): Self = StObject.set(x, "BlobEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaRecorder(
+    inline def setMediaRecorder(
       value: TypeofMediaRecorder & (Instantiable2[
           /* stream */ MediaStream, 
           /* options */ js.UndefOr[MediaRecorderOptions], 
@@ -62,8 +58,7 @@ object Window {
         ])
     ): Self = StObject.set(x, "MediaRecorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaRecorderErrorEvent(
+    inline def setMediaRecorderErrorEvent(
       value: Instantiable2[
           /* type */ String, 
           /* eventInitDict */ MediaRecorderErrorEventInit, 

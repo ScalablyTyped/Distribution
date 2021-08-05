@@ -13,19 +13,15 @@ trait DescribeComponentConfigurationRecommendationResponse extends StObject {
 }
 object DescribeComponentConfigurationRecommendationResponse {
   
-  @scala.inline
-  def apply(): DescribeComponentConfigurationRecommendationResponse = {
+  inline def apply(): DescribeComponentConfigurationRecommendationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeComponentConfigurationRecommendationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeComponentConfigurationRecommendationResponseMutableBuilder[Self <: DescribeComponentConfigurationRecommendationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeComponentConfigurationRecommendationResponse](x: Self) {
     
-    @scala.inline
-    def setComponentConfiguration(value: ComponentConfiguration): Self = StObject.set(x, "ComponentConfiguration", value.asInstanceOf[js.Any])
+    inline def setComponentConfiguration(value: ComponentConfiguration): Self = StObject.set(x, "ComponentConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentConfigurationUndefined: Self = StObject.set(x, "ComponentConfiguration", js.undefined)
+    inline def setComponentConfigurationUndefined: Self = StObject.set(x, "ComponentConfiguration", js.undefined)
   }
 }

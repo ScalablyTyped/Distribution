@@ -18,31 +18,23 @@ trait DescribeDocumentPermissionResponse extends StObject {
 }
 object DescribeDocumentPermissionResponse {
   
-  @scala.inline
-  def apply(): DescribeDocumentPermissionResponse = {
+  inline def apply(): DescribeDocumentPermissionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDocumentPermissionResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDocumentPermissionResponseMutableBuilder[Self <: DescribeDocumentPermissionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDocumentPermissionResponse](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
+    inline def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
     
-    @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setAccountSharingInfoList(value: AccountSharingInfoList): Self = StObject.set(x, "AccountSharingInfoList", value.asInstanceOf[js.Any])
+    inline def setAccountSharingInfoList(value: AccountSharingInfoList): Self = StObject.set(x, "AccountSharingInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountSharingInfoListUndefined: Self = StObject.set(x, "AccountSharingInfoList", js.undefined)
+    inline def setAccountSharingInfoListUndefined: Self = StObject.set(x, "AccountSharingInfoList", js.undefined)
     
-    @scala.inline
-    def setAccountSharingInfoListVarargs(value: AccountSharingInfo*): Self = StObject.set(x, "AccountSharingInfoList", js.Array(value :_*))
+    inline def setAccountSharingInfoListVarargs(value: AccountSharingInfo*): Self = StObject.set(x, "AccountSharingInfoList", js.Array(value :_*))
   }
 }

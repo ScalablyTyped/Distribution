@@ -18,17 +18,14 @@ object typesInvalidRequestContentExceptionMod {
   }
   object InvalidRequestContentException {
     
-    @scala.inline
-    def apply(): InvalidRequestContentException = {
+    inline def apply(): InvalidRequestContentException = {
       val __obj = js.Dynamic.literal(name = "InvalidRequestContentException")
       __obj.asInstanceOf[InvalidRequestContentException]
     }
     
-    @scala.inline
-    implicit class InvalidRequestContentExceptionMutableBuilder[Self <: InvalidRequestContentException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRequestContentException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRequestContentException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRequestContentException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,26 +43,20 @@ object typesInvalidRequestContentExceptionMod {
   }
   object InvalidRequestContentExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidRequestContentExceptionDetails = {
+    inline def apply(): InvalidRequestContentExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidRequestContentExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidRequestContentExceptionDetailsMutableBuilder[Self <: InvalidRequestContentExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRequestContentExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

@@ -18,43 +18,31 @@ trait Metadata extends StObject {
 }
 object Metadata {
   
-  @scala.inline
-  def apply(name: String, summary: String): Metadata = {
+  inline def apply(name: String, summary: String): Metadata = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
   
-  @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: Metadata](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFootnotes(value: js.Array[Footnote]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
+    inline def setFootnotes(value: js.Array[Footnote]): Self = StObject.set(x, "footnotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
+    inline def setFootnotesUndefined: Self = StObject.set(x, "footnotes", js.undefined)
     
-    @scala.inline
-    def setFootnotesVarargs(value: Footnote*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
+    inline def setFootnotesVarargs(value: Footnote*): Self = StObject.set(x, "footnotes", js.Array(value :_*))
     
-    @scala.inline
-    def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

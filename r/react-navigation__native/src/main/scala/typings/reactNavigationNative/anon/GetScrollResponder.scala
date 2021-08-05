@@ -14,16 +14,13 @@ trait GetScrollResponder
 }
 object GetScrollResponder {
   
-  @scala.inline
-  def apply(getScrollResponder: () => ReactNode): GetScrollResponder = {
+  inline def apply(getScrollResponder: () => ReactNode): GetScrollResponder = {
     val __obj = js.Dynamic.literal(getScrollResponder = js.Any.fromFunction0(getScrollResponder))
     __obj.asInstanceOf[GetScrollResponder]
   }
   
-  @scala.inline
-  implicit class GetScrollResponderMutableBuilder[Self <: GetScrollResponder] (val x: Self) extends AnyVal {
+  extension [Self <: GetScrollResponder](x: Self) {
     
-    @scala.inline
-    def setGetScrollResponder(value: () => ReactNode): Self = StObject.set(x, "getScrollResponder", js.Any.fromFunction0(value))
+    inline def setGetScrollResponder(value: () => ReactNode): Self = StObject.set(x, "getScrollResponder", js.Any.fromFunction0(value))
   }
 }

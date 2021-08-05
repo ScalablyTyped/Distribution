@@ -11,11 +11,11 @@ object rawSha256Mod {
   @js.native
   class RawSha256 () extends StObject {
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
-    var bufferLength: js.Any = js.native
+    /* private */ var bufferLength: js.Any = js.native
     
-    var bytesHashed: js.Any = js.native
+    /* private */ var bytesHashed: js.Any = js.native
     
     def digest(): Uint8Array = js.native
     
@@ -24,11 +24,11 @@ object rawSha256Mod {
       */
     var finished: Boolean = js.native
     
-    var hashBuffer: js.Any = js.native
+    /* private */ var hashBuffer: js.Any = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
     
-    var temp: js.Any = js.native
+    /* private */ var temp: js.Any = js.native
     
     def update(data: Uint8Array): Unit = js.native
   }

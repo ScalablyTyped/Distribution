@@ -18,19 +18,15 @@ trait DeleteTableRequest extends StObject {
 }
 object DeleteTableRequest {
   
-  @scala.inline
-  def apply(DatabaseName: ResourceName, TableName: ResourceName): DeleteTableRequest = {
+  inline def apply(DatabaseName: ResourceName, TableName: ResourceName): DeleteTableRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTableRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTableRequestMutableBuilder[Self <: DeleteTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTableRequest](x: Self) {
     
-    @scala.inline
-    def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: ResourceName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: ResourceName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait UpdateClusterMetadata extends StObject {
 }
 object UpdateClusterMetadata {
   
-  @scala.inline
-  def apply(): UpdateClusterMetadata = {
+  inline def apply(): UpdateClusterMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateClusterMetadata]
   }
   
-  @scala.inline
-  implicit class UpdateClusterMetadataMutableBuilder[Self <: UpdateClusterMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateClusterMetadata](x: Self) {
     
-    @scala.inline
-    def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: String): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
+    inline def setFinishTimeUndefined: Self = StObject.set(x, "finishTime", js.undefined)
     
-    @scala.inline
-    def setOriginalRequest(value: Cluster): Self = StObject.set(x, "originalRequest", value.asInstanceOf[js.Any])
+    inline def setOriginalRequest(value: Cluster): Self = StObject.set(x, "originalRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalRequestUndefined: Self = StObject.set(x, "originalRequest", js.undefined)
+    inline def setOriginalRequestUndefined: Self = StObject.set(x, "originalRequest", js.undefined)
     
-    @scala.inline
-    def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
+    inline def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
+    inline def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
   }
 }

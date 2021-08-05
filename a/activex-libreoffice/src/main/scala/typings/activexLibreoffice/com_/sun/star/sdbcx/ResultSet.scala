@@ -42,8 +42,7 @@ trait ResultSet
 }
 object ResultSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: js.Any,
     CanUpdateInsertedRows: Boolean,
     CursorName: String,
@@ -149,13 +148,10 @@ object ResultSet {
     __obj.asInstanceOf[ResultSet]
   }
   
-  @scala.inline
-  implicit class ResultSetMutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: ResultSet](x: Self) {
     
-    @scala.inline
-    def setCanUpdateInsertedRows(value: Boolean): Self = StObject.set(x, "CanUpdateInsertedRows", value.asInstanceOf[js.Any])
+    inline def setCanUpdateInsertedRows(value: Boolean): Self = StObject.set(x, "CanUpdateInsertedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBookmarkable(value: Boolean): Self = StObject.set(x, "IsBookmarkable", value.asInstanceOf[js.Any])
+    inline def setIsBookmarkable(value: Boolean): Self = StObject.set(x, "IsBookmarkable", value.asInstanceOf[js.Any])
   }
 }

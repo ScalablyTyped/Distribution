@@ -15,31 +15,23 @@ trait IOneofDescriptorProto extends StObject {
 }
 object IOneofDescriptorProto {
   
-  @scala.inline
-  def apply(): IOneofDescriptorProto = {
+  inline def apply(): IOneofDescriptorProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IOneofDescriptorProto]
   }
   
-  @scala.inline
-  implicit class IOneofDescriptorProtoMutableBuilder[Self <: IOneofDescriptorProto] (val x: Self) extends AnyVal {
+  extension [Self <: IOneofDescriptorProto](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: IOneofOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IOneofOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

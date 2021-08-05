@@ -18,25 +18,19 @@ trait GetConsoleScreenshotResult extends StObject {
 }
 object GetConsoleScreenshotResult {
   
-  @scala.inline
-  def apply(): GetConsoleScreenshotResult = {
+  inline def apply(): GetConsoleScreenshotResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConsoleScreenshotResult]
   }
   
-  @scala.inline
-  implicit class GetConsoleScreenshotResultMutableBuilder[Self <: GetConsoleScreenshotResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetConsoleScreenshotResult](x: Self) {
     
-    @scala.inline
-    def setImageData(value: String): Self = StObject.set(x, "ImageData", value.asInstanceOf[js.Any])
+    inline def setImageData(value: String): Self = StObject.set(x, "ImageData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDataUndefined: Self = StObject.set(x, "ImageData", js.undefined)
+    inline def setImageDataUndefined: Self = StObject.set(x, "ImageData", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

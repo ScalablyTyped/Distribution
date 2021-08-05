@@ -20,40 +20,29 @@ trait Thread extends StObject {
 }
 object Thread {
   
-  @scala.inline
-  def apply(): Thread = {
+  inline def apply(): Thread = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Thread]
   }
   
-  @scala.inline
-  implicit class ThreadMutableBuilder[Self <: Thread] (val x: Self) extends AnyVal {
+  extension [Self <: Thread](x: Self) {
     
-    @scala.inline
-    def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
+    inline def setHistoryId(value: String): Self = StObject.set(x, "historyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
+    inline def setHistoryIdUndefined: Self = StObject.set(x, "historyId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }
 }

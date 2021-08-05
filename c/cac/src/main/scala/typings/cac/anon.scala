@@ -12,20 +12,16 @@ object anon {
   }
   object Run {
     
-    @scala.inline
-    def apply(): Run = {
+    inline def apply(): Run = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Run]
     }
     
-    @scala.inline
-    implicit class RunMutableBuilder[Self <: Run] (val x: Self) extends AnyVal {
+    extension [Self <: Run](x: Self) {
       
-      @scala.inline
-      def setRun(value: Boolean): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+      inline def setRun(value: Boolean): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+      inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     }
   }
 }

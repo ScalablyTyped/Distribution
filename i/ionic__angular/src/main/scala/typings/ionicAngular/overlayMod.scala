@@ -18,7 +18,7 @@ object overlayMod {
       */
     def create(): js.Promise[Overlay] = js.native
     
-    var ctrl: js.Any = js.native
+    /* private */ var ctrl: js.Any = js.native
   }
   
   @js.native

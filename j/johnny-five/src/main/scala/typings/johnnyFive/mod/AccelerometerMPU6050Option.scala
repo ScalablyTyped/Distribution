@@ -12,19 +12,15 @@ trait AccelerometerMPU6050Option
 }
 object AccelerometerMPU6050Option {
   
-  @scala.inline
-  def apply(): AccelerometerMPU6050Option = {
+  inline def apply(): AccelerometerMPU6050Option = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccelerometerMPU6050Option]
   }
   
-  @scala.inline
-  implicit class AccelerometerMPU6050OptionMutableBuilder[Self <: AccelerometerMPU6050Option] (val x: Self) extends AnyVal {
+  extension [Self <: AccelerometerMPU6050Option](x: Self) {
     
-    @scala.inline
-    def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
+    inline def setSensitivity(value: Double): Self = StObject.set(x, "sensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
+    inline def setSensitivityUndefined: Self = StObject.set(x, "sensitivity", js.undefined)
   }
 }

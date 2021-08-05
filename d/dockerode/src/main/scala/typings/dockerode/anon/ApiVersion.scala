@@ -25,8 +25,7 @@ trait ApiVersion extends StObject {
 }
 object ApiVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApiVersion: String,
     Arch: String,
     BuildTime: Date,
@@ -40,31 +39,22 @@ object ApiVersion {
     __obj.asInstanceOf[ApiVersion]
   }
   
-  @scala.inline
-  implicit class ApiVersionMutableBuilder[Self <: ApiVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ApiVersion](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: String): Self = StObject.set(x, "ApiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: String): Self = StObject.set(x, "ApiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArch(value: String): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
+    inline def setArch(value: String): Self = StObject.set(x, "Arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildTime(value: Date): Self = StObject.set(x, "BuildTime", value.asInstanceOf[js.Any])
+    inline def setBuildTime(value: Date): Self = StObject.set(x, "BuildTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimental(value: String): Self = StObject.set(x, "Experimental", value.asInstanceOf[js.Any])
+    inline def setExperimental(value: String): Self = StObject.set(x, "Experimental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitCommit(value: String): Self = StObject.set(x, "GitCommit", value.asInstanceOf[js.Any])
+    inline def setGitCommit(value: String): Self = StObject.set(x, "GitCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoVersion(value: String): Self = StObject.set(x, "GoVersion", value.asInstanceOf[js.Any])
+    inline def setGoVersion(value: String): Self = StObject.set(x, "GoVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelVersion(value: String): Self = StObject.set(x, "KernelVersion", value.asInstanceOf[js.Any])
+    inline def setKernelVersion(value: String): Self = StObject.set(x, "KernelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: String): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
+    inline def setOs(value: String): Self = StObject.set(x, "Os", value.asInstanceOf[js.Any])
   }
 }

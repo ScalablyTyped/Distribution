@@ -15,22 +15,17 @@ trait NormalizationClientExtension
 }
 object NormalizationClientExtension {
   
-  @scala.inline
-  def apply(kind: String, selections: js.Array[NormalizationSelection]): NormalizationClientExtension = {
+  inline def apply(kind: String, selections: js.Array[NormalizationSelection]): NormalizationClientExtension = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationClientExtension]
   }
   
-  @scala.inline
-  implicit class NormalizationClientExtensionMutableBuilder[Self <: NormalizationClientExtension] (val x: Self) extends AnyVal {
+  extension [Self <: NormalizationClientExtension](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
+    inline def setSelections(value: js.Array[NormalizationSelection]): Self = StObject.set(x, "selections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
+    inline def setSelectionsVarargs(value: NormalizationSelection*): Self = StObject.set(x, "selections", js.Array(value :_*))
   }
 }

@@ -61,8 +61,7 @@ trait ContactAnnotationList extends StObject {
 }
 object ContactAnnotationList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteAnnotationAsync: ContactAnnotation => IPromiseWithIAsyncAction,
     deleteAsync: () => IPromiseWithIAsyncAction,
     findAnnotationsAsync: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]],
@@ -77,34 +76,24 @@ object ContactAnnotationList {
     __obj.asInstanceOf[ContactAnnotationList]
   }
   
-  @scala.inline
-  implicit class ContactAnnotationListMutableBuilder[Self <: ContactAnnotationList] (val x: Self) extends AnyVal {
+  extension [Self <: ContactAnnotationList](x: Self) {
     
-    @scala.inline
-    def setDeleteAnnotationAsync(value: ContactAnnotation => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteAnnotationAsync", js.Any.fromFunction1(value))
+    inline def setDeleteAnnotationAsync(value: ContactAnnotation => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteAnnotationAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteAsync", js.Any.fromFunction0(value))
+    inline def setDeleteAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindAnnotationsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAnnotationsAsync", js.Any.fromFunction0(value))
+    inline def setFindAnnotationsAsync(value: () => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAnnotationsAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindAnnotationsByRemoteIdAsync(value: String => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAnnotationsByRemoteIdAsync", js.Any.fromFunction1(value))
+    inline def setFindAnnotationsByRemoteIdAsync(value: String => IPromiseWithIAsyncOperation[IVectorView[js.Any]]): Self = StObject.set(x, "findAnnotationsByRemoteIdAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAnnotationAsync(value: String => IPromiseWithIAsyncOperation[ContactAnnotation]): Self = StObject.set(x, "getAnnotationAsync", js.Any.fromFunction1(value))
+    inline def setGetAnnotationAsync(value: String => IPromiseWithIAsyncOperation[ContactAnnotation]): Self = StObject.set(x, "getAnnotationAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderPackageFamilyName(value: String): Self = StObject.set(x, "providerPackageFamilyName", value.asInstanceOf[js.Any])
+    inline def setProviderPackageFamilyName(value: String): Self = StObject.set(x, "providerPackageFamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrySaveAnnotationAsync(value: ContactAnnotation => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySaveAnnotationAsync", js.Any.fromFunction1(value))
+    inline def setTrySaveAnnotationAsync(value: ContactAnnotation => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "trySaveAnnotationAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUserDataAccountId(value: String): Self = StObject.set(x, "userDataAccountId", value.asInstanceOf[js.Any])
+    inline def setUserDataAccountId(value: String): Self = StObject.set(x, "userDataAccountId", value.asInstanceOf[js.Any])
   }
 }

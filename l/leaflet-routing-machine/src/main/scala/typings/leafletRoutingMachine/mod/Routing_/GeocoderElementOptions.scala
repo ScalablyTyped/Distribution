@@ -30,57 +30,41 @@ trait GeocoderElementOptions extends StObject {
 }
 object GeocoderElementOptions {
   
-  @scala.inline
-  def apply(): GeocoderElementOptions = {
+  inline def apply(): GeocoderElementOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeocoderElementOptions]
   }
   
-  @scala.inline
-  implicit class GeocoderElementOptionsMutableBuilder[Self <: GeocoderElementOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeocoderElementOptions](x: Self) {
     
-    @scala.inline
-    def setAutocompleteOptions(value: js.Object): Self = StObject.set(x, "autocompleteOptions", value.asInstanceOf[js.Any])
+    inline def setAutocompleteOptions(value: js.Object): Self = StObject.set(x, "autocompleteOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutocompleteOptionsUndefined: Self = StObject.set(x, "autocompleteOptions", js.undefined)
+    inline def setAutocompleteOptionsUndefined: Self = StObject.set(x, "autocompleteOptions", js.undefined)
     
-    @scala.inline
-    def setCreateGeocoder(value: (/* i */ Double, /* nWps */ Double, GeocoderElementOptions) => js.Any): Self = StObject.set(x, "createGeocoder", js.Any.fromFunction3(value))
+    inline def setCreateGeocoder(value: (/* i */ Double, /* nWps */ Double, GeocoderElementOptions) => js.Any): Self = StObject.set(x, "createGeocoder", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateGeocoderUndefined: Self = StObject.set(x, "createGeocoder", js.undefined)
+    inline def setCreateGeocoderUndefined: Self = StObject.set(x, "createGeocoder", js.undefined)
     
-    @scala.inline
-    def setGeocoderClass(value: () => String): Self = StObject.set(x, "geocoderClass", js.Any.fromFunction0(value))
+    inline def setGeocoderClass(value: () => String): Self = StObject.set(x, "geocoderClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGeocoderClassUndefined: Self = StObject.set(x, "geocoderClass", js.undefined)
+    inline def setGeocoderClassUndefined: Self = StObject.set(x, "geocoderClass", js.undefined)
     
-    @scala.inline
-    def setGeocoderPlaceholder(
+    inline def setGeocoderPlaceholder(
       value: (/* i */ Double, /* numberWaypoints */ Double, /* geocoderElement */ GeocoderElement_) => String
     ): Self = StObject.set(x, "geocoderPlaceholder", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGeocoderPlaceholderUndefined: Self = StObject.set(x, "geocoderPlaceholder", js.undefined)
+    inline def setGeocoderPlaceholderUndefined: Self = StObject.set(x, "geocoderPlaceholder", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setMaxGeocoderTolerance(value: Double): Self = StObject.set(x, "maxGeocoderTolerance", value.asInstanceOf[js.Any])
+    inline def setMaxGeocoderTolerance(value: Double): Self = StObject.set(x, "maxGeocoderTolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxGeocoderToleranceUndefined: Self = StObject.set(x, "maxGeocoderTolerance", js.undefined)
+    inline def setMaxGeocoderToleranceUndefined: Self = StObject.set(x, "maxGeocoderTolerance", js.undefined)
     
-    @scala.inline
-    def setWaypointNameFallback(value: /* latLng */ LatLng_ => String): Self = StObject.set(x, "waypointNameFallback", js.Any.fromFunction1(value))
+    inline def setWaypointNameFallback(value: /* latLng */ LatLng_ => String): Self = StObject.set(x, "waypointNameFallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWaypointNameFallbackUndefined: Self = StObject.set(x, "waypointNameFallback", js.undefined)
+    inline def setWaypointNameFallbackUndefined: Self = StObject.set(x, "waypointNameFallback", js.undefined)
   }
 }

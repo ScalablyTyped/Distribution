@@ -11,7 +11,7 @@ object platformLoggerServiceMod {
   class PlatformLoggerService protected () extends StObject {
     def this(container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentContainer */ js.Any) = this()
     
-    val container: js.Any = js.native
+    /* private */ val container: js.Any = js.native
     
     def getPlatformInfoString(): String = js.native
   }

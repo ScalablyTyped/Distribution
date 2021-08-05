@@ -18,40 +18,29 @@ trait WFSOptions extends StObject {
 }
 object WFSOptions {
   
-  @scala.inline
-  def apply(): WFSOptions = {
+  inline def apply(): WFSOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WFSOptions]
   }
   
-  @scala.inline
-  implicit class WFSOptionsMutableBuilder[Self <: WFSOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WFSOptions](x: Self) {
     
-    @scala.inline
-    def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
+    inline def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureNSUndefined: Self = StObject.set(x, "featureNS", js.undefined)
+    inline def setFeatureNSUndefined: Self = StObject.set(x, "featureNS", js.undefined)
     
-    @scala.inline
-    def setFeatureType(value: js.Array[String] | String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+    inline def setFeatureType(value: js.Array[String] | String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
+    inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
     
-    @scala.inline
-    def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
+    inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
     
-    @scala.inline
-    def setGmlFormat(value: GMLBase): Self = StObject.set(x, "gmlFormat", value.asInstanceOf[js.Any])
+    inline def setGmlFormat(value: GMLBase): Self = StObject.set(x, "gmlFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmlFormatUndefined: Self = StObject.set(x, "gmlFormat", js.undefined)
+    inline def setGmlFormatUndefined: Self = StObject.set(x, "gmlFormat", js.undefined)
     
-    @scala.inline
-    def setSchemaLocation(value: String): Self = StObject.set(x, "schemaLocation", value.asInstanceOf[js.Any])
+    inline def setSchemaLocation(value: String): Self = StObject.set(x, "schemaLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaLocationUndefined: Self = StObject.set(x, "schemaLocation", js.undefined)
+    inline def setSchemaLocationUndefined: Self = StObject.set(x, "schemaLocation", js.undefined)
   }
 }

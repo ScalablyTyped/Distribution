@@ -18,16 +18,13 @@ trait ToggleTableAutoFitContentsCommand
 }
 object ToggleTableAutoFitContentsCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): ToggleTableAutoFitContentsCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): ToggleTableAutoFitContentsCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ToggleTableAutoFitContentsCommand]
   }
   
-  @scala.inline
-  implicit class ToggleTableAutoFitContentsCommandMutableBuilder[Self <: ToggleTableAutoFitContentsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ToggleTableAutoFitContentsCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

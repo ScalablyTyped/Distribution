@@ -22,17 +22,14 @@ object numberMod extends Shortcut {
   }
   object NumberProps {
     
-    @scala.inline
-    def apply(value: valueType): NumberProps = {
+    inline def apply(value: valueType): NumberProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[NumberProps]
     }
     
-    @scala.inline
-    implicit class NumberPropsMutableBuilder[Self <: NumberProps] (val x: Self) extends AnyVal {
+    extension [Self <: NumberProps](x: Self) {
       
-      @scala.inline
-      def setValue(value: valueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: valueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

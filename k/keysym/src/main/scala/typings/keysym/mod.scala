@@ -10,16 +10,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromKeysym(keysym: Double): js.UndefOr[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKeysym")(keysym.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Record]]
+  inline def fromKeysym(keysym: Double): js.UndefOr[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKeysym")(keysym.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Record]]
   
-  @scala.inline
-  def fromName(name: String): js.UndefOr[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Record]]
+  inline def fromName(name: String): js.UndefOr[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Record]]
   
-  @scala.inline
-  def fromUnicode(code: String): js.Array[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnicode")(code.asInstanceOf[js.Any]).asInstanceOf[js.Array[Record]]
-  @scala.inline
-  def fromUnicode(code: Double): js.Array[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnicode")(code.asInstanceOf[js.Any]).asInstanceOf[js.Array[Record]]
+  inline def fromUnicode(code: String): js.Array[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnicode")(code.asInstanceOf[js.Any]).asInstanceOf[js.Array[Record]]
+  inline def fromUnicode(code: Double): js.Array[Record] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnicode")(code.asInstanceOf[js.Any]).asInstanceOf[js.Array[Record]]
   
   @JSImport("keysym", "records")
   @js.native
@@ -37,29 +33,22 @@ object mod {
   }
   object Record {
     
-    @scala.inline
-    def apply(keysym: Double, names: js.Array[String], status: String, unicode: Double): Record = {
+    inline def apply(keysym: Double, names: js.Array[String], status: String, unicode: Double): Record = {
       val __obj = js.Dynamic.literal(keysym = keysym.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any])
       __obj.asInstanceOf[Record]
     }
     
-    @scala.inline
-    implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+    extension [Self <: Record](x: Self) {
       
-      @scala.inline
-      def setKeysym(value: Double): Self = StObject.set(x, "keysym", value.asInstanceOf[js.Any])
+      inline def setKeysym(value: Double): Self = StObject.set(x, "keysym", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicode(value: Double): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+      inline def setUnicode(value: Double): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     }
   }
 }

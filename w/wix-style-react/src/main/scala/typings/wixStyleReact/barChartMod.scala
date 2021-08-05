@@ -31,47 +31,34 @@ object barChartMod {
   }
   object BarChartItem {
     
-    @scala.inline
-    def apply(value: Double): BarChartItem = {
+    inline def apply(value: Double): BarChartItem = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[BarChartItem]
     }
     
-    @scala.inline
-    implicit class BarChartItemMutableBuilder[Self <: BarChartItem] (val x: Self) extends AnyVal {
+    extension [Self <: BarChartItem](x: Self) {
       
-      @scala.inline
-      def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionInfo(value: ReactNode): Self = StObject.set(x, "descriptionInfo", value.asInstanceOf[js.Any])
+      inline def setDescriptionInfo(value: ReactNode): Self = StObject.set(x, "descriptionInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionInfoUndefined: Self = StObject.set(x, "descriptionInfo", js.undefined)
+      inline def setDescriptionInfoUndefined: Self = StObject.set(x, "descriptionInfo", js.undefined)
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelShort(value: ReactNode): Self = StObject.set(x, "labelShort", value.asInstanceOf[js.Any])
+      inline def setLabelShort(value: ReactNode): Self = StObject.set(x, "labelShort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelShortUndefined: Self = StObject.set(x, "labelShort", js.undefined)
+      inline def setLabelShortUndefined: Self = StObject.set(x, "labelShort", js.undefined)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOnDescriptionInfoShown(value: () => Unit): Self = StObject.set(x, "onDescriptionInfoShown", js.Any.fromFunction0(value))
+      inline def setOnDescriptionInfoShown(value: () => Unit): Self = StObject.set(x, "onDescriptionInfoShown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDescriptionInfoShownUndefined: Self = StObject.set(x, "onDescriptionInfoShown", js.undefined)
+      inline def setOnDescriptionInfoShownUndefined: Self = StObject.set(x, "onDescriptionInfoShown", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,38 +74,28 @@ object barChartMod {
   }
   object BarChartProps {
     
-    @scala.inline
-    def apply(items: js.Array[BarChartItem]): BarChartProps = {
+    inline def apply(items: js.Array[BarChartItem]): BarChartProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[BarChartProps]
     }
     
-    @scala.inline
-    implicit class BarChartPropsMutableBuilder[Self <: BarChartProps] (val x: Self) extends AnyVal {
+    extension [Self <: BarChartProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[BarChartItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[BarChartItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: BarChartItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: BarChartItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOnDescriptionInfoShown(value: () => Unit): Self = StObject.set(x, "onDescriptionInfoShown", js.Any.fromFunction0(value))
+      inline def setOnDescriptionInfoShown(value: () => Unit): Self = StObject.set(x, "onDescriptionInfoShown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDescriptionInfoShownUndefined: Self = StObject.set(x, "onDescriptionInfoShown", js.undefined)
+      inline def setOnDescriptionInfoShownUndefined: Self = StObject.set(x, "onDescriptionInfoShown", js.undefined)
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     }
   }
   
@@ -128,17 +105,14 @@ object barChartMod {
   }
   object BarChartState {
     
-    @scala.inline
-    def apply(width: Double): BarChartState = {
+    inline def apply(width: Double): BarChartState = {
       val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[BarChartState]
     }
     
-    @scala.inline
-    implicit class BarChartStateMutableBuilder[Self <: BarChartState] (val x: Self) extends AnyVal {
+    extension [Self <: BarChartState](x: Self) {
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

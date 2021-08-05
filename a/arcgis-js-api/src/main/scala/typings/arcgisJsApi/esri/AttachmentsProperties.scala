@@ -33,31 +33,23 @@ trait AttachmentsProperties
 }
 object AttachmentsProperties {
   
-  @scala.inline
-  def apply(): AttachmentsProperties = {
+  inline def apply(): AttachmentsProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachmentsProperties]
   }
   
-  @scala.inline
-  implicit class AttachmentsPropertiesMutableBuilder[Self <: AttachmentsProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentsProperties](x: Self) {
     
-    @scala.inline
-    def setDisplayType(value: preview | list): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
+    inline def setDisplayType(value: preview | list): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
+    inline def setDisplayTypeUndefined: Self = StObject.set(x, "displayType", js.undefined)
     
-    @scala.inline
-    def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
+    inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: AttachmentsViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: AttachmentsViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait RTCDTMFSenderEventMap_ extends StObject {
 }
 object RTCDTMFSenderEventMap_ {
   
-  @scala.inline
-  def apply(tonechange: RTCDTMFToneChangeEvent): RTCDTMFSenderEventMap_ = {
+  inline def apply(tonechange: RTCDTMFToneChangeEvent): RTCDTMFSenderEventMap_ = {
     val __obj = js.Dynamic.literal(tonechange = tonechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCDTMFSenderEventMap_]
   }
   
-  @scala.inline
-  implicit class RTCDTMFSenderEventMap_MutableBuilder[Self <: RTCDTMFSenderEventMap_] (val x: Self) extends AnyVal {
+  extension [Self <: RTCDTMFSenderEventMap_](x: Self) {
     
-    @scala.inline
-    def setTonechange(value: RTCDTMFToneChangeEvent): Self = StObject.set(x, "tonechange", value.asInstanceOf[js.Any])
+    inline def setTonechange(value: RTCDTMFToneChangeEvent): Self = StObject.set(x, "tonechange", value.asInstanceOf[js.Any])
   }
 }

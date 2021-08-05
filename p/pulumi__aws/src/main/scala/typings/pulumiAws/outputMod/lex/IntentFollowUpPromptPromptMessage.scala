@@ -24,25 +24,19 @@ trait IntentFollowUpPromptPromptMessage extends StObject {
 }
 object IntentFollowUpPromptPromptMessage {
   
-  @scala.inline
-  def apply(content: String, contentType: String): IntentFollowUpPromptPromptMessage = {
+  inline def apply(content: String, contentType: String): IntentFollowUpPromptPromptMessage = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], contentType = contentType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentFollowUpPromptPromptMessage]
   }
   
-  @scala.inline
-  implicit class IntentFollowUpPromptPromptMessageMutableBuilder[Self <: IntentFollowUpPromptPromptMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IntentFollowUpPromptPromptMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumber(value: Double): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
+    inline def setGroupNumber(value: Double): Self = StObject.set(x, "groupNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
+    inline def setGroupNumberUndefined: Self = StObject.set(x, "groupNumber", js.undefined)
   }
 }

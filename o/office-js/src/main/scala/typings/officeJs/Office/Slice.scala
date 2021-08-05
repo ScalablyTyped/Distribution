@@ -31,22 +31,17 @@ trait Slice extends StObject {
 }
 object Slice {
   
-  @scala.inline
-  def apply(data: js.Any, index: Double, size: Double): Slice = {
+  inline def apply(data: js.Any, index: Double, size: Double): Slice = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[Slice]
   }
   
-  @scala.inline
-  implicit class SliceMutableBuilder[Self <: Slice] (val x: Self) extends AnyVal {
+  extension [Self <: Slice](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

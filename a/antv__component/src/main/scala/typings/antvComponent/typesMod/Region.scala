@@ -21,19 +21,15 @@ trait Region extends StObject {
 }
 object Region {
   
-  @scala.inline
-  def apply(end: Point, start: Point): Region = {
+  inline def apply(end: Point, start: Point): Region = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Region]
   }
   
-  @scala.inline
-  implicit class RegionMutableBuilder[Self <: Region] (val x: Self) extends AnyVal {
+  extension [Self <: Region](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

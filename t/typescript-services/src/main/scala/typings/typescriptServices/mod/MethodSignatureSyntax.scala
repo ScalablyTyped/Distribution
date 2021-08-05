@@ -94,13 +94,11 @@ object MethodSignatureSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     propertyName: ISyntaxToken,
     callSignature: typings.typescriptServices.TypeScript.CallSignatureSyntax
   ): typings.typescriptServices.TypeScript.MethodSignatureSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyName.asInstanceOf[js.Any], callSignature.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.MethodSignatureSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.MethodSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.MethodSignatureSyntax]
+  inline def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.MethodSignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.MethodSignatureSyntax]
 }

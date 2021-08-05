@@ -18,25 +18,19 @@ trait EnvironmentError extends StObject {
 }
 object EnvironmentError {
   
-  @scala.inline
-  def apply(): EnvironmentError = {
+  inline def apply(): EnvironmentError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentError]
   }
   
-  @scala.inline
-  implicit class EnvironmentErrorMutableBuilder[Self <: EnvironmentError] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setMessage(value: SensitiveString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: SensitiveString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

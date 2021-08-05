@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogLevel extends StObject
 object LogLevel {
   
-  @scala.inline
-  def debug: typings.elasticApmNode.elasticApmNodeStrings.debug = "debug".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.debug]
+  inline def debug: typings.elasticApmNode.elasticApmNodeStrings.debug = "debug".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.debug]
   
-  @scala.inline
-  def error: typings.elasticApmNode.elasticApmNodeStrings.error = "error".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.error]
+  inline def error: typings.elasticApmNode.elasticApmNodeStrings.error = "error".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.error]
   
-  @scala.inline
-  def fatal: typings.elasticApmNode.elasticApmNodeStrings.fatal = "fatal".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.fatal]
+  inline def fatal: typings.elasticApmNode.elasticApmNodeStrings.fatal = "fatal".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.fatal]
   
-  @scala.inline
-  def info: typings.elasticApmNode.elasticApmNodeStrings.info = "info".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.info]
+  inline def info: typings.elasticApmNode.elasticApmNodeStrings.info = "info".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.info]
   
-  @scala.inline
-  def trace: typings.elasticApmNode.elasticApmNodeStrings.trace = "trace".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.trace]
+  inline def trace: typings.elasticApmNode.elasticApmNodeStrings.trace = "trace".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.trace]
   
-  @scala.inline
-  def warn: typings.elasticApmNode.elasticApmNodeStrings.warn = "warn".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.warn]
+  inline def warn: typings.elasticApmNode.elasticApmNodeStrings.warn = "warn".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.warn]
 }

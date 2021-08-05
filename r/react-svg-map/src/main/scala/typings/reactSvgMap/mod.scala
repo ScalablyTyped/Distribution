@@ -61,74 +61,52 @@ object mod {
   }
   object BaseMapProps {
     
-    @scala.inline
-    def apply(map: Map): BaseMapProps = {
+    inline def apply(map: Map): BaseMapProps = {
       val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseMapProps]
     }
     
-    @scala.inline
-    implicit class BaseMapPropsMutableBuilder[Self <: BaseMapProps] (val x: Self) extends AnyVal {
+    extension [Self <: BaseMapProps](x: Self) {
       
-      @scala.inline
-      def setChildrenAfter(value: ReactElement): Self = StObject.set(x, "childrenAfter", value.asInstanceOf[js.Any])
+      inline def setChildrenAfter(value: ReactElement): Self = StObject.set(x, "childrenAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenAfterUndefined: Self = StObject.set(x, "childrenAfter", js.undefined)
+      inline def setChildrenAfterUndefined: Self = StObject.set(x, "childrenAfter", js.undefined)
       
-      @scala.inline
-      def setChildrenBefore(value: ReactElement): Self = StObject.set(x, "childrenBefore", value.asInstanceOf[js.Any])
+      inline def setChildrenBefore(value: ReactElement): Self = StObject.set(x, "childrenBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenBeforeUndefined: Self = StObject.set(x, "childrenBefore", js.undefined)
+      inline def setChildrenBeforeUndefined: Self = StObject.set(x, "childrenBefore", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setLocationClassName(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "locationClassName", value.asInstanceOf[js.Any])
+      inline def setLocationClassName(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "locationClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationClassNameFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "locationClassName", js.Any.fromFunction1(value))
+      inline def setLocationClassNameFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "locationClassName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocationClassNameUndefined: Self = StObject.set(x, "locationClassName", js.undefined)
+      inline def setLocationClassNameUndefined: Self = StObject.set(x, "locationClassName", js.undefined)
       
-      @scala.inline
-      def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnLocationBlur(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationBlur", js.Any.fromFunction1(value))
+      inline def setOnLocationBlur(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLocationBlurUndefined: Self = StObject.set(x, "onLocationBlur", js.undefined)
+      inline def setOnLocationBlurUndefined: Self = StObject.set(x, "onLocationBlur", js.undefined)
       
-      @scala.inline
-      def setOnLocationFocus(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationFocus", js.Any.fromFunction1(value))
+      inline def setOnLocationFocus(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLocationFocusUndefined: Self = StObject.set(x, "onLocationFocus", js.undefined)
+      inline def setOnLocationFocusUndefined: Self = StObject.set(x, "onLocationFocus", js.undefined)
       
-      @scala.inline
-      def setOnLocationMouseMove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationMouseMove", js.Any.fromFunction1(value))
+      inline def setOnLocationMouseMove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationMouseMove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLocationMouseMoveUndefined: Self = StObject.set(x, "onLocationMouseMove", js.undefined)
+      inline def setOnLocationMouseMoveUndefined: Self = StObject.set(x, "onLocationMouseMove", js.undefined)
       
-      @scala.inline
-      def setOnLocationMouseOut(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationMouseOut", js.Any.fromFunction1(value))
+      inline def setOnLocationMouseOut(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationMouseOut", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLocationMouseOutUndefined: Self = StObject.set(x, "onLocationMouseOut", js.undefined)
+      inline def setOnLocationMouseOutUndefined: Self = StObject.set(x, "onLocationMouseOut", js.undefined)
       
-      @scala.inline
-      def setOnLocationMouseOver(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationMouseOver", js.Any.fromFunction1(value))
+      inline def setOnLocationMouseOver(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationMouseOver", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLocationMouseOverUndefined: Self = StObject.set(x, "onLocationMouseOver", js.undefined)
+      inline def setOnLocationMouseOverUndefined: Self = StObject.set(x, "onLocationMouseOver", js.undefined)
     }
   }
   
@@ -142,26 +120,20 @@ object mod {
   }
   object Location {
     
-    @scala.inline
-    def apply(id: String, path: String): Location = {
+    inline def apply(id: String, path: String): Location = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Location]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+    extension [Self <: Location](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,29 +147,22 @@ object mod {
   }
   object Map {
     
-    @scala.inline
-    def apply(locations: js.Array[Location], viewBox: String): Map = {
+    inline def apply(locations: js.Array[Location], viewBox: String): Map = {
       val __obj = js.Dynamic.literal(locations = locations.asInstanceOf[js.Any], viewBox = viewBox.asInstanceOf[js.Any])
       __obj.asInstanceOf[Map]
     }
     
-    @scala.inline
-    implicit class MapMutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
+    extension [Self <: Map](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+      inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,20 +174,16 @@ object mod {
   }
   object OnChangeMapProps {
     
-    @scala.inline
-    def apply(map: Map): OnChangeMapProps = {
+    inline def apply(map: Map): OnChangeMapProps = {
       val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnChangeMapProps]
     }
     
-    @scala.inline
-    implicit class OnChangeMapPropsMutableBuilder[Self <: OnChangeMapProps] (val x: Self) extends AnyVal {
+    extension [Self <: OnChangeMapProps](x: Self) {
       
-      @scala.inline
-      def setOnChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }
   }
   
@@ -244,53 +205,38 @@ object mod {
   }
   object SVGMapProps {
     
-    @scala.inline
-    def apply(map: Map): SVGMapProps = {
+    inline def apply(map: Map): SVGMapProps = {
       val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any])
       __obj.asInstanceOf[SVGMapProps]
     }
     
-    @scala.inline
-    implicit class SVGMapPropsMutableBuilder[Self <: SVGMapProps] (val x: Self) extends AnyVal {
+    extension [Self <: SVGMapProps](x: Self) {
       
-      @scala.inline
-      def setIsLocationSelected(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "isLocationSelected", js.Any.fromFunction1(value))
+      inline def setIsLocationSelected(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "isLocationSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsLocationSelectedUndefined: Self = StObject.set(x, "isLocationSelected", js.undefined)
+      inline def setIsLocationSelectedUndefined: Self = StObject.set(x, "isLocationSelected", js.undefined)
       
-      @scala.inline
-      def setLocationRole(value: String): Self = StObject.set(x, "locationRole", value.asInstanceOf[js.Any])
+      inline def setLocationRole(value: String): Self = StObject.set(x, "locationRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationRoleUndefined: Self = StObject.set(x, "locationRole", js.undefined)
+      inline def setLocationRoleUndefined: Self = StObject.set(x, "locationRole", js.undefined)
       
-      @scala.inline
-      def setLocationTabIndex(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "locationTabIndex", value.asInstanceOf[js.Any])
+      inline def setLocationTabIndex(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "locationTabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationTabIndexFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "locationTabIndex", js.Any.fromFunction1(value))
+      inline def setLocationTabIndexFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "locationTabIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocationTabIndexUndefined: Self = StObject.set(x, "locationTabIndex", js.undefined)
+      inline def setLocationTabIndexUndefined: Self = StObject.set(x, "locationTabIndex", js.undefined)
       
-      @scala.inline
-      def setOnLocationClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationClick", js.Any.fromFunction1(value))
+      inline def setOnLocationClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLocationClickUndefined: Self = StObject.set(x, "onLocationClick", js.undefined)
+      inline def setOnLocationClickUndefined: Self = StObject.set(x, "onLocationClick", js.undefined)
       
-      @scala.inline
-      def setOnLocationKeyDown(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationKeyDown", js.Any.fromFunction1(value))
+      inline def setOnLocationKeyDown(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onLocationKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLocationKeyDownUndefined: Self = StObject.set(x, "onLocationKeyDown", js.undefined)
+      inline def setOnLocationKeyDownUndefined: Self = StObject.set(x, "onLocationKeyDown", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
 }

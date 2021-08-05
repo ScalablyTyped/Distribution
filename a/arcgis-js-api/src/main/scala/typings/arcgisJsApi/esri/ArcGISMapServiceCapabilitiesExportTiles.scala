@@ -19,8 +19,7 @@ trait ArcGISMapServiceCapabilitiesExportTiles
 }
 object ArcGISMapServiceCapabilitiesExportTiles {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     maxExportTilesCount: Double,
@@ -30,10 +29,8 @@ object ArcGISMapServiceCapabilitiesExportTiles {
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportTiles]
   }
   
-  @scala.inline
-  implicit class ArcGISMapServiceCapabilitiesExportTilesMutableBuilder[Self <: ArcGISMapServiceCapabilitiesExportTiles] (val x: Self) extends AnyVal {
+  extension [Self <: ArcGISMapServiceCapabilitiesExportTiles](x: Self) {
     
-    @scala.inline
-    def setMaxExportTilesCount(value: Double): Self = StObject.set(x, "maxExportTilesCount", value.asInstanceOf[js.Any])
+    inline def setMaxExportTilesCount(value: Double): Self = StObject.set(x, "maxExportTilesCount", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait TimeHTMLAttributes[T]
 }
 object TimeHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): TimeHTMLAttributes[T] = {
+  inline def apply[T](): TimeHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class TimeHTMLAttributesMutableBuilder[Self <: TimeHTMLAttributes[?], T] (val x: Self & TimeHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: TimeHTMLAttributes[?], T](x: Self & TimeHTMLAttributes[T]) {
     
-    @scala.inline
-    def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
+    inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
   }
 }

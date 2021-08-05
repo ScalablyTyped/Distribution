@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HistoryAction extends StObject
 object HistoryAction {
   
-  @scala.inline
-  def POP: typings.reduxLittleRouter.reduxLittleRouterStrings.POP = "POP".asInstanceOf[typings.reduxLittleRouter.reduxLittleRouterStrings.POP]
+  inline def POP: typings.reduxLittleRouter.reduxLittleRouterStrings.POP = "POP".asInstanceOf[typings.reduxLittleRouter.reduxLittleRouterStrings.POP]
   
-  @scala.inline
-  def PUSH: typings.reduxLittleRouter.reduxLittleRouterStrings.PUSH = "PUSH".asInstanceOf[typings.reduxLittleRouter.reduxLittleRouterStrings.PUSH]
+  inline def PUSH: typings.reduxLittleRouter.reduxLittleRouterStrings.PUSH = "PUSH".asInstanceOf[typings.reduxLittleRouter.reduxLittleRouterStrings.PUSH]
   
-  @scala.inline
-  def REPLACE: typings.reduxLittleRouter.reduxLittleRouterStrings.REPLACE = "REPLACE".asInstanceOf[typings.reduxLittleRouter.reduxLittleRouterStrings.REPLACE]
+  inline def REPLACE: typings.reduxLittleRouter.reduxLittleRouterStrings.REPLACE = "REPLACE".asInstanceOf[typings.reduxLittleRouter.reduxLittleRouterStrings.REPLACE]
 }

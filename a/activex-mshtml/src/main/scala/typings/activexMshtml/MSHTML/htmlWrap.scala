@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlWrap extends StObject
 object htmlWrap {
   
-  @scala.inline
-  def htmlWrapHard: `3` = 3.asInstanceOf[`3`]
+  inline def htmlWrapHard: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def htmlWrapOff: `1` = 1.asInstanceOf[`1`]
+  inline def htmlWrapOff: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlWrapSoft: `2` = 2.asInstanceOf[`2`]
+  inline def htmlWrapSoft: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def htmlWrap_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlWrap_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

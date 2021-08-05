@@ -11,6 +11,5 @@ object usePatchElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Tuple2[js.Array[ReactElement], js.Function1[/* element */ ReactElement, js.Function]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[js.Array[ReactElement], js.Function1[/* element */ ReactElement, js.Function]]]
+  inline def default(): js.Tuple2[js.Array[ReactElement], js.Function1[/* element */ ReactElement, js.Function]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[js.Array[ReactElement], js.Function1[/* element */ ReactElement, js.Function]]]
 }

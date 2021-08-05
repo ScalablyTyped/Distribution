@@ -10,16 +10,13 @@ trait StoreStore extends StObject {
 }
 object StoreStore {
   
-  @scala.inline
-  def apply(Store: typings.activexOutlook.Outlook.Store): StoreStore = {
+  inline def apply(Store: typings.activexOutlook.Outlook.Store): StoreStore = {
     val __obj = js.Dynamic.literal(Store = Store.asInstanceOf[js.Any])
     __obj.asInstanceOf[StoreStore]
   }
   
-  @scala.inline
-  implicit class StoreStoreMutableBuilder[Self <: StoreStore] (val x: Self) extends AnyVal {
+  extension [Self <: StoreStore](x: Self) {
     
-    @scala.inline
-    def setStore(value: typings.activexOutlook.Outlook.Store): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
+    inline def setStore(value: typings.activexOutlook.Outlook.Store): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
   }
 }

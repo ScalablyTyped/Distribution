@@ -31,8 +31,7 @@ object ngSignalr {
   }
   object Hub {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connect: () => JQueryPromise[js.Any],
       connection: Connection,
       disconnect: () => Unit,
@@ -45,29 +44,21 @@ object ngSignalr {
       __obj.asInstanceOf[Hub]
     }
     
-    @scala.inline
-    implicit class HubMutableBuilder[Self <: Hub] (val x: Self) extends AnyVal {
+    extension [Self <: Hub](x: Self) {
       
-      @scala.inline
-      def setConnect(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => JQueryPromise[js.Any]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHubName(value: String): Self = StObject.set(x, "hubName", value.asInstanceOf[js.Any])
+      inline def setHubName(value: String): Self = StObject.set(x, "hubName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvoke(value: (String, /* repeated */ js.Any) => JQueryDeferred[js.Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+      inline def setInvoke(value: (String, /* repeated */ js.Any) => JQueryDeferred[js.Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function1[/* repeated */ js.Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setProxy(value: Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Proxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,71 +119,50 @@ object ngSignalr {
   }
   object HubOptions {
     
-    @scala.inline
-    def apply(): HubOptions = {
+    inline def apply(): HubOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HubOptions]
     }
     
-    @scala.inline
-    implicit class HubOptionsMutableBuilder[Self <: HubOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HubOptions](x: Self) {
       
-      @scala.inline
-      def setErrorHandler(value: /* error */ String => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+      inline def setErrorHandler(value: /* error */ String => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+      inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
       
-      @scala.inline
-      def setListeners(value: StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: StringDictionary[js.Function1[/* repeated */ js.Any, Unit]]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
       
-      @scala.inline
-      def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+      inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+      inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
       
-      @scala.inline
-      def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setQueryParams(value: StringDictionary[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: StringDictionary[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
+      inline def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootPathUndefined: Self = StObject.set(x, "rootPath", js.undefined)
+      inline def setRootPathUndefined: Self = StObject.set(x, "rootPath", js.undefined)
       
-      @scala.inline
-      def setStateChanged(value: /* state */ StateChanged => Unit): Self = StObject.set(x, "stateChanged", js.Any.fromFunction1(value))
+      inline def setStateChanged(value: /* state */ StateChanged => Unit): Self = StObject.set(x, "stateChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStateChangedUndefined: Self = StObject.set(x, "stateChanged", js.undefined)
+      inline def setStateChangedUndefined: Self = StObject.set(x, "stateChanged", js.undefined)
       
-      @scala.inline
-      def setTransport(value: js.Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: js.Any): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
-      @scala.inline
-      def setUseSharedConnection(value: Boolean): Self = StObject.set(x, "useSharedConnection", value.asInstanceOf[js.Any])
+      inline def setUseSharedConnection(value: Boolean): Self = StObject.set(x, "useSharedConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSharedConnectionUndefined: Self = StObject.set(x, "useSharedConnection", js.undefined)
+      inline def setUseSharedConnectionUndefined: Self = StObject.set(x, "useSharedConnection", js.undefined)
     }
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextAlignment extends StObject
 object TextAlignment {
   
-  @scala.inline
-  def center: typings.chartJs.chartJsStrings.center = "center".asInstanceOf[typings.chartJs.chartJsStrings.center]
+  inline def center: typings.chartJs.chartJsStrings.center = "center".asInstanceOf[typings.chartJs.chartJsStrings.center]
   
-  @scala.inline
-  def left: typings.chartJs.chartJsStrings.left = "left".asInstanceOf[typings.chartJs.chartJsStrings.left]
+  inline def left: typings.chartJs.chartJsStrings.left = "left".asInstanceOf[typings.chartJs.chartJsStrings.left]
   
-  @scala.inline
-  def right: typings.chartJs.chartJsStrings.right = "right".asInstanceOf[typings.chartJs.chartJsStrings.right]
+  inline def right: typings.chartJs.chartJsStrings.right = "right".asInstanceOf[typings.chartJs.chartJsStrings.right]
 }

@@ -13,16 +13,13 @@ trait GetSpeechSynthesisTaskInput extends StObject {
 }
 object GetSpeechSynthesisTaskInput {
   
-  @scala.inline
-  def apply(TaskId: TaskId): GetSpeechSynthesisTaskInput = {
+  inline def apply(TaskId: TaskId): GetSpeechSynthesisTaskInput = {
     val __obj = js.Dynamic.literal(TaskId = TaskId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSpeechSynthesisTaskInput]
   }
   
-  @scala.inline
-  implicit class GetSpeechSynthesisTaskInputMutableBuilder[Self <: GetSpeechSynthesisTaskInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetSpeechSynthesisTaskInput](x: Self) {
     
-    @scala.inline
-    def setTaskId(value: TaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: TaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
   }
 }

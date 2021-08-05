@@ -53,8 +53,7 @@ trait GetIdInput extends StObject {
 }
 object GetIdInput {
   
-  @scala.inline
-  def apply(): GetIdInput = {
+  inline def apply(): GetIdInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetIdInput]
   }
@@ -63,28 +62,20 @@ object GetIdInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: GetIdInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: GetIdInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class GetIdInputMutableBuilder[Self <: GetIdInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdInput](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
     
-    @scala.inline
-    def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+    inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
   }
 }

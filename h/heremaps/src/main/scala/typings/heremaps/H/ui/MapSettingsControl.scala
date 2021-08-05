@@ -35,20 +35,16 @@ object MapSettingsControl {
   }
   object Entry {
     
-    @scala.inline
-    def apply(mapType: MapType, name: String): Entry = {
+    inline def apply(mapType: MapType, name: String): Entry = {
       val __obj = js.Dynamic.literal(mapType = mapType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Entry]
     }
     
-    @scala.inline
-    implicit class EntryMutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
+    extension [Self <: Entry](x: Self) {
       
-      @scala.inline
-      def setMapType(value: MapType): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
+      inline def setMapType(value: MapType): Self = StObject.set(x, "mapType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -68,38 +64,28 @@ object MapSettingsControl {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlignment(value: LayoutAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: LayoutAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+      inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
       
-      @scala.inline
-      def setBaseLayers(value: js.Array[Entry]): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
+      inline def setBaseLayers(value: js.Array[Entry]): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
+      inline def setBaseLayersUndefined: Self = StObject.set(x, "baseLayers", js.undefined)
       
-      @scala.inline
-      def setBaseLayersVarargs(value: Entry*): Self = StObject.set(x, "baseLayers", js.Array(value :_*))
+      inline def setBaseLayersVarargs(value: Entry*): Self = StObject.set(x, "baseLayers", js.Array(value :_*))
       
-      @scala.inline
-      def setLayers(value: js.Array[Entry]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: js.Array[Entry]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+      inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      @scala.inline
-      def setLayersVarargs(value: Entry*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: Entry*): Self = StObject.set(x, "layers", js.Array(value :_*))
     }
   }
 }

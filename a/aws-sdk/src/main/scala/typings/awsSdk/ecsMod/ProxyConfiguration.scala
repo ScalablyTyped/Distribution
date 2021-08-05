@@ -23,31 +23,23 @@ trait ProxyConfiguration extends StObject {
 }
 object ProxyConfiguration {
   
-  @scala.inline
-  def apply(containerName: String): ProxyConfiguration = {
+  inline def apply(containerName: String): ProxyConfiguration = {
     val __obj = js.Dynamic.literal(containerName = containerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyConfiguration]
   }
   
-  @scala.inline
-  implicit class ProxyConfigurationMutableBuilder[Self <: ProxyConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyConfiguration](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: ProxyConfigurationProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ProxyConfigurationProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: KeyValuePair*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: KeyValuePair*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ProxyConfigurationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ProxyConfigurationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

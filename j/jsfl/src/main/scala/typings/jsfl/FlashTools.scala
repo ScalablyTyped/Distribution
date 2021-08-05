@@ -34,8 +34,7 @@ trait FlashTools extends StObject {
 }
 object FlashTools {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeTool: js.Any,
     altIsDown: js.Any,
     constraintPoint: () => js.Any,
@@ -54,46 +53,32 @@ object FlashTools {
     __obj.asInstanceOf[FlashTools]
   }
   
-  @scala.inline
-  implicit class FlashToolsMutableBuilder[Self <: FlashTools] (val x: Self) extends AnyVal {
+  extension [Self <: FlashTools](x: Self) {
     
-    @scala.inline
-    def setActiveTool(value: js.Any): Self = StObject.set(x, "activeTool", value.asInstanceOf[js.Any])
+    inline def setActiveTool(value: js.Any): Self = StObject.set(x, "activeTool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltIsDown(value: js.Any): Self = StObject.set(x, "altIsDown", value.asInstanceOf[js.Any])
+    inline def setAltIsDown(value: js.Any): Self = StObject.set(x, "altIsDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintPoint(value: () => js.Any): Self = StObject.set(x, "constraintPoint", js.Any.fromFunction0(value))
+    inline def setConstraintPoint(value: () => js.Any): Self = StObject.set(x, "constraintPoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCtlIsDown(value: js.Any): Self = StObject.set(x, "ctlIsDown", value.asInstanceOf[js.Any])
+    inline def setCtlIsDown(value: js.Any): Self = StObject.set(x, "ctlIsDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKeyDown(value: () => js.Any): Self = StObject.set(x, "getKeyDown", js.Any.fromFunction0(value))
+    inline def setGetKeyDown(value: () => js.Any): Self = StObject.set(x, "getKeyDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseIsDown(value: js.Any): Self = StObject.set(x, "mouseIsDown", value.asInstanceOf[js.Any])
+    inline def setMouseIsDown(value: js.Any): Self = StObject.set(x, "mouseIsDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPenDownLoc(value: js.Any): Self = StObject.set(x, "penDownLoc", value.asInstanceOf[js.Any])
+    inline def setPenDownLoc(value: js.Any): Self = StObject.set(x, "penDownLoc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPenLoc(value: js.Any): Self = StObject.set(x, "penLoc", value.asInstanceOf[js.Any])
+    inline def setPenLoc(value: js.Any): Self = StObject.set(x, "penLoc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetCreatingBbox(value: () => js.Any): Self = StObject.set(x, "setCreatingBbox", js.Any.fromFunction0(value))
+    inline def setSetCreatingBbox(value: () => js.Any): Self = StObject.set(x, "setCreatingBbox", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCursor(value: () => js.Any): Self = StObject.set(x, "setCursor", js.Any.fromFunction0(value))
+    inline def setSetCursor(value: () => js.Any): Self = StObject.set(x, "setCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShiftIsDown(value: js.Any): Self = StObject.set(x, "shiftIsDown", value.asInstanceOf[js.Any])
+    inline def setShiftIsDown(value: js.Any): Self = StObject.set(x, "shiftIsDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapPoint(value: () => js.Any): Self = StObject.set(x, "snapPoint", js.Any.fromFunction0(value))
+    inline def setSnapPoint(value: () => js.Any): Self = StObject.set(x, "snapPoint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToolObjs(value: js.Any): Self = StObject.set(x, "toolObjs", value.asInstanceOf[js.Any])
+    inline def setToolObjs(value: js.Any): Self = StObject.set(x, "toolObjs", value.asInstanceOf[js.Any])
   }
 }

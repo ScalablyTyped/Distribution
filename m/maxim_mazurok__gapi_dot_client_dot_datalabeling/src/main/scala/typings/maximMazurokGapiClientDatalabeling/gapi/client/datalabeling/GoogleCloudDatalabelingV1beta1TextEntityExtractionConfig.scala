@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig extends StObject 
 }
 object GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1TextEntityExtractionConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1TextEntityExtractionConfig](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
+    inline def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
   }
 }

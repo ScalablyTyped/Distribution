@@ -32,8 +32,7 @@ trait RenameFile
 }
 object RenameFile {
   
-  @scala.inline
-  def apply(newUri: DocumentUri, oldUri: DocumentUri): RenameFile = {
+  inline def apply(newUri: DocumentUri, oldUri: DocumentUri): RenameFile = {
     val __obj = js.Dynamic.literal(kind = "rename", newUri = newUri.asInstanceOf[js.Any], oldUri = oldUri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameFile]
   }
@@ -42,30 +41,21 @@ object RenameFile {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(oldUri: DocumentUri, newUri: DocumentUri): RenameFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(oldUri.asInstanceOf[js.Any], newUri.asInstanceOf[js.Any])).asInstanceOf[RenameFile]
-  @scala.inline
-  def create(oldUri: DocumentUri, newUri: DocumentUri, options: RenameFileOptions): RenameFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(oldUri.asInstanceOf[js.Any], newUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenameFile]
+  inline def create(oldUri: DocumentUri, newUri: DocumentUri): RenameFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(oldUri.asInstanceOf[js.Any], newUri.asInstanceOf[js.Any])).asInstanceOf[RenameFile]
+  inline def create(oldUri: DocumentUri, newUri: DocumentUri, options: RenameFileOptions): RenameFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(oldUri.asInstanceOf[js.Any], newUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RenameFile]
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ Boolean]
   
-  @scala.inline
-  implicit class RenameFileMutableBuilder[Self <: RenameFile] (val x: Self) extends AnyVal {
+  extension [Self <: RenameFile](x: Self) {
     
-    @scala.inline
-    def setKind(value: rename): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: rename): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewUri(value: DocumentUri): Self = StObject.set(x, "newUri", value.asInstanceOf[js.Any])
+    inline def setNewUri(value: DocumentUri): Self = StObject.set(x, "newUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldUri(value: DocumentUri): Self = StObject.set(x, "oldUri", value.asInstanceOf[js.Any])
+    inline def setOldUri(value: DocumentUri): Self = StObject.set(x, "oldUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: RenameFileOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: RenameFileOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

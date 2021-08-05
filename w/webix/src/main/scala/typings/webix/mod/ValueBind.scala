@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ValueBind extends StObject
 object ValueBind {
   
-  @scala.inline
-  def apply: ValueBind = ^.asInstanceOf[js.Dynamic].selectDynamic("ValueBind").asInstanceOf[ValueBind]
+  inline def apply: ValueBind = ^.asInstanceOf[js.Dynamic].selectDynamic("ValueBind").asInstanceOf[ValueBind]
 }

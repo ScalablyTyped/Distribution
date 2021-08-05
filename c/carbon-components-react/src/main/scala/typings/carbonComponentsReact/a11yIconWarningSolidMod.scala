@@ -11,6 +11,5 @@ object a11yIconWarningSolidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(prefix: String, notificationType: String): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(prefix.asInstanceOf[js.Any], notificationType.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def default(prefix: String, notificationType: String): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(prefix.asInstanceOf[js.Any], notificationType.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
 }

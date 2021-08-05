@@ -13,19 +13,15 @@ trait CloneStackResult extends StObject {
 }
 object CloneStackResult {
   
-  @scala.inline
-  def apply(): CloneStackResult = {
+  inline def apply(): CloneStackResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloneStackResult]
   }
   
-  @scala.inline
-  implicit class CloneStackResultMutableBuilder[Self <: CloneStackResult] (val x: Self) extends AnyVal {
+  extension [Self <: CloneStackResult](x: Self) {
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

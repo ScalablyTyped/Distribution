@@ -28,34 +28,25 @@ trait VpcConfiguration extends StObject {
 }
 object VpcConfiguration {
   
-  @scala.inline
-  def apply(SecurityGroupIds: SecurityGroupIds, SubnetIds: SubnetIds, VpcId: VpcId): VpcConfiguration = {
+  inline def apply(SecurityGroupIds: SecurityGroupIds, SubnetIds: SubnetIds, VpcId: VpcId): VpcConfiguration = {
     val __obj = js.Dynamic.literal(SecurityGroupIds = SecurityGroupIds.asInstanceOf[js.Any], SubnetIds = SubnetIds.asInstanceOf[js.Any], VpcId = VpcId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VpcConfiguration]
   }
   
-  @scala.inline
-  implicit class VpcConfigurationMutableBuilder[Self <: VpcConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: VpcConfiguration](x: Self) {
     
-    @scala.inline
-    def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
+    inline def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
+    inline def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
+    inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setTlsCertificate(value: TlsCertificate): Self = StObject.set(x, "TlsCertificate", value.asInstanceOf[js.Any])
+    inline def setTlsCertificate(value: TlsCertificate): Self = StObject.set(x, "TlsCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsCertificateUndefined: Self = StObject.set(x, "TlsCertificate", js.undefined)
+    inline def setTlsCertificateUndefined: Self = StObject.set(x, "TlsCertificate", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: VpcId): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
   }
 }

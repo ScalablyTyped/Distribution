@@ -16,19 +16,15 @@ trait GetInitialProps[C /* <: BaseContext */, IP] extends StObject {
 }
 object GetInitialProps {
   
-  @scala.inline
-  def apply[C /* <: BaseContext */, IP](): GetInitialProps[C, IP] = {
+  inline def apply[C /* <: BaseContext */, IP](): GetInitialProps[C, IP] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInitialProps[C, IP]]
   }
   
-  @scala.inline
-  implicit class GetInitialPropsMutableBuilder[Self <: GetInitialProps[?, ?], C /* <: BaseContext */, IP] (val x: Self & (GetInitialProps[C, IP])) extends AnyVal {
+  extension [Self <: GetInitialProps[?, ?], C /* <: BaseContext */, IP](x: Self & (GetInitialProps[C, IP])) {
     
-    @scala.inline
-    def setGetInitialProps(value: /* context */ C => IP | js.Promise[IP]): Self = StObject.set(x, "getInitialProps", js.Any.fromFunction1(value))
+    inline def setGetInitialProps(value: /* context */ C => IP | js.Promise[IP]): Self = StObject.set(x, "getInitialProps", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInitialPropsUndefined: Self = StObject.set(x, "getInitialProps", js.undefined)
+    inline def setGetInitialPropsUndefined: Self = StObject.set(x, "getInitialProps", js.undefined)
   }
 }

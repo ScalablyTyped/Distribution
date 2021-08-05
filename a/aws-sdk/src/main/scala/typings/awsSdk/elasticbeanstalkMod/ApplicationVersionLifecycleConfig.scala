@@ -18,25 +18,19 @@ trait ApplicationVersionLifecycleConfig extends StObject {
 }
 object ApplicationVersionLifecycleConfig {
   
-  @scala.inline
-  def apply(): ApplicationVersionLifecycleConfig = {
+  inline def apply(): ApplicationVersionLifecycleConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationVersionLifecycleConfig]
   }
   
-  @scala.inline
-  implicit class ApplicationVersionLifecycleConfigMutableBuilder[Self <: ApplicationVersionLifecycleConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationVersionLifecycleConfig](x: Self) {
     
-    @scala.inline
-    def setMaxAgeRule(value: MaxAgeRule): Self = StObject.set(x, "MaxAgeRule", value.asInstanceOf[js.Any])
+    inline def setMaxAgeRule(value: MaxAgeRule): Self = StObject.set(x, "MaxAgeRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeRuleUndefined: Self = StObject.set(x, "MaxAgeRule", js.undefined)
+    inline def setMaxAgeRuleUndefined: Self = StObject.set(x, "MaxAgeRule", js.undefined)
     
-    @scala.inline
-    def setMaxCountRule(value: MaxCountRule): Self = StObject.set(x, "MaxCountRule", value.asInstanceOf[js.Any])
+    inline def setMaxCountRule(value: MaxCountRule): Self = StObject.set(x, "MaxCountRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCountRuleUndefined: Self = StObject.set(x, "MaxCountRule", js.undefined)
+    inline def setMaxCountRuleUndefined: Self = StObject.set(x, "MaxCountRule", js.undefined)
   }
 }

@@ -15,16 +15,13 @@ trait SetInstrumentationBreakpointRequest extends StObject {
 }
 object SetInstrumentationBreakpointRequest {
   
-  @scala.inline
-  def apply(instrumentation: beforeScriptExecution | beforeScriptWithSourceMapExecution): SetInstrumentationBreakpointRequest = {
+  inline def apply(instrumentation: beforeScriptExecution | beforeScriptWithSourceMapExecution): SetInstrumentationBreakpointRequest = {
     val __obj = js.Dynamic.literal(instrumentation = instrumentation.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetInstrumentationBreakpointRequest]
   }
   
-  @scala.inline
-  implicit class SetInstrumentationBreakpointRequestMutableBuilder[Self <: SetInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetInstrumentationBreakpointRequest](x: Self) {
     
-    @scala.inline
-    def setInstrumentation(value: beforeScriptExecution | beforeScriptWithSourceMapExecution): Self = StObject.set(x, "instrumentation", value.asInstanceOf[js.Any])
+    inline def setInstrumentation(value: beforeScriptExecution | beforeScriptWithSourceMapExecution): Self = StObject.set(x, "instrumentation", value.asInstanceOf[js.Any])
   }
 }

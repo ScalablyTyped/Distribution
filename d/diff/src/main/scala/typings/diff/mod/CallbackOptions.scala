@@ -19,16 +19,13 @@ trait CallbackOptions extends StObject {
 }
 object CallbackOptions {
   
-  @scala.inline
-  def apply(callback: (/* err */ Unit, /* value */ js.UndefOr[js.Array[Change]]) => Unit): CallbackOptions = {
+  inline def apply(callback: (/* err */ Unit, /* value */ js.UndefOr[js.Array[Change]]) => Unit): CallbackOptions = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback))
     __obj.asInstanceOf[CallbackOptions]
   }
   
-  @scala.inline
-  implicit class CallbackOptionsMutableBuilder[Self <: CallbackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackOptions](x: Self) {
     
-    @scala.inline
-    def setCallback(value: (/* err */ Unit, /* value */ js.UndefOr[js.Array[Change]]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (/* err */ Unit, /* value */ js.UndefOr[js.Array[Change]]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
   }
 }

@@ -37,29 +37,22 @@ object typesPutRecordOutputMod {
   }
   object PutRecordOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, SequenceNumber: String, ShardId: String): PutRecordOutput = {
+    inline def apply($metadata: ResponseMetadata, SequenceNumber: String, ShardId: String): PutRecordOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], SequenceNumber = SequenceNumber.asInstanceOf[js.Any], ShardId = ShardId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PutRecordOutput]
     }
     
-    @scala.inline
-    implicit class PutRecordOutputMutableBuilder[Self <: PutRecordOutput] (val x: Self) extends AnyVal {
+    extension [Self <: PutRecordOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionType(value: NONE | KMS | String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
+      inline def setEncryptionType(value: NONE | KMS | String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
+      inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShardId(value: String): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
+      inline def setShardId(value: String): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
     }
   }
 }

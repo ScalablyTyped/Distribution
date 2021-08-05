@@ -16,13 +16,12 @@ trait Break extends StObject {
   
   val Range: typings.activexWord.Word.Range
   
-  @JSName("Word.Break_typekey")
+  /* private */ @JSName("Word.Break_typekey")
   var WordDotBreak_typekey: Break
 }
 object Break {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     PageIndex: Double,
@@ -35,25 +34,18 @@ object Break {
     __obj.asInstanceOf[Break]
   }
   
-  @scala.inline
-  implicit class BreakMutableBuilder[Self <: Break] (val x: Self) extends AnyVal {
+  extension [Self <: Break](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIndex(value: Double): Self = StObject.set(x, "PageIndex", value.asInstanceOf[js.Any])
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "PageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotBreak_typekey(value: Break): Self = StObject.set(x, "Word.Break_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotBreak_typekey(value: Break): Self = StObject.set(x, "Word.Break_typekey", value.asInstanceOf[js.Any])
   }
 }

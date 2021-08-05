@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.BoundObjectFrame")
 @js.native
-class BoundObjectFrame protected ()
+/* private */ class BoundObjectFrame ()
   extends StObject
      with typings.activexAccess.Access.BoundObjectFrame

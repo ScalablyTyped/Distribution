@@ -645,8 +645,7 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         active: String,
         addition: String,
         animating: String,
@@ -671,65 +670,45 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
+        inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAnimating(value: String): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
+        inline def setAnimating(value: String): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+        inline def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFiltered(value: String): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
+        inline def setFiltered(value: String): Self = StObject.set(x, "filtered", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+        inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+        inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+        inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+        inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+        inline def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+        inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+        inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+        inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+        inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpward(value: String): Self = StObject.set(x, "upward", value.asInstanceOf[js.Any])
+        inline def setUpward(value: String): Self = StObject.set(x, "upward", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+        inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       }
     }
     
@@ -763,26 +742,20 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(hide: Double, search: Double, show: Double, touch: Double): Impl = {
+      inline def apply(hide: Double, search: Double, show: Double, touch: Double): Impl = {
         val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any], touch = touch.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearch(value: Double): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+        inline def setSearch(value: Double): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        inline def setShow(value: Double): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTouch(value: Double): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+        inline def setTouch(value: Double): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       }
     }
     
@@ -821,29 +794,22 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(action: String, alreadySetup: String, labels: String, method: String, noTransition: String): Impl = {
+      inline def apply(action: String, alreadySetup: String, labels: String, method: String, noTransition: String): Impl = {
         val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], alreadySetup = alreadySetup.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], noTransition = noTransition.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlreadySetup(value: String): Self = StObject.set(x, "alreadySetup", value.asInstanceOf[js.Any])
+        inline def setAlreadySetup(value: String): Self = StObject.set(x, "alreadySetup", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+        inline def setLabels(value: String): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoTransition(value: String): Self = StObject.set(x, "noTransition", value.asInstanceOf[js.Any])
+        inline def setNoTransition(value: String): Self = StObject.set(x, "noTransition", value.asInstanceOf[js.Any])
       }
     }
     
@@ -885,26 +851,20 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(name: String, remoteValues: String, value: String, values: String): Impl = {
+      inline def apply(name: String, remoteValues: String, value: String, values: String): Impl = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], remoteValues = remoteValues.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoteValues(value: String): Self = StObject.set(x, "remoteValues", value.asInstanceOf[js.Any])
+        inline def setRemoteValues(value: String): Self = StObject.set(x, "remoteValues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValues(value: String): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+        inline def setValues(value: String): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       }
     }
     
@@ -973,8 +933,7 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         backspace: Double,
         deleteKey: Double,
         delimiter: Double | `false`,
@@ -991,41 +950,29 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setBackspace(value: Double): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
+        inline def setBackspace(value: Double): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDeleteKey(value: Double): Self = StObject.set(x, "deleteKey", value.asInstanceOf[js.Any])
+        inline def setDeleteKey(value: Double): Self = StObject.set(x, "deleteKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelimiter(value: Double | `false`): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+        inline def setDelimiter(value: Double | `false`): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDownArrow(value: Double): Self = StObject.set(x, "downArrow", value.asInstanceOf[js.Any])
+        inline def setDownArrow(value: Double): Self = StObject.set(x, "downArrow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
+        inline def setEnter(value: Double): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEscape(value: Double): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+        inline def setEscape(value: Double): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftArrow(value: Double): Self = StObject.set(x, "leftArrow", value.asInstanceOf[js.Any])
+        inline def setLeftArrow(value: Double): Self = StObject.set(x, "leftArrow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageDown(value: Double): Self = StObject.set(x, "pageDown", value.asInstanceOf[js.Any])
+        inline def setPageDown(value: Double): Self = StObject.set(x, "pageDown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageUp(value: Double): Self = StObject.set(x, "pageUp", value.asInstanceOf[js.Any])
+        inline def setPageUp(value: Double): Self = StObject.set(x, "pageUp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRightArrow(value: Double): Self = StObject.set(x, "rightArrow", value.asInstanceOf[js.Any])
+        inline def setRightArrow(value: Double): Self = StObject.set(x, "rightArrow", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpArrow(value: Double): Self = StObject.set(x, "upArrow", value.asInstanceOf[js.Any])
+        inline def setUpArrow(value: Double): Self = StObject.set(x, "upArrow", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1054,23 +1001,18 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(duration: Double, transition: String, variation: `false` | String): Impl = {
+      inline def apply(duration: Double, transition: String, variation: `false` | String): Impl = {
         val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], variation = variation.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+        inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+        inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVariation(value: `false` | String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
+        inline def setVariation(value: `false` | String): Self = StObject.set(x, "variation", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1104,26 +1046,20 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(addResult: String, count: String, maxSelections: String, noResults: String): Impl = {
+      inline def apply(addResult: String, count: String, maxSelections: String, noResults: String): Impl = {
         val __obj = js.Dynamic.literal(addResult = addResult.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any], maxSelections = maxSelections.asInstanceOf[js.Any], noResults = noResults.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setAddResult(value: String): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
+        inline def setAddResult(value: String): Self = StObject.set(x, "addResult", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxSelections(value: String): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
+        inline def setMaxSelections(value: String): Self = StObject.set(x, "maxSelections", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNoResults(value: String): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
+        inline def setNoResults(value: String): Self = StObject.set(x, "noResults", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1162,29 +1098,22 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(defaultText: String, defaultValue: String, placeholderText: String, text: String, value: String): Impl = {
+      inline def apply(defaultText: String, defaultValue: String, placeholderText: String, text: String, value: String): Impl = {
         val __obj = js.Dynamic.literal(defaultText = defaultText.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], placeholderText = placeholderText.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setDefaultText(value: String): Self = StObject.set(x, "defaultText", value.asInstanceOf[js.Any])
+        inline def setDefaultText(value: String): Self = StObject.set(x, "defaultText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+        inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
+        inline def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1199,8 +1128,7 @@ object Dropdown {
   }
   object RegExpSettings {
     
-    @scala.inline
-    def apply(escape: RegExp & js.UndefOr[RegExp]): RegExpSettings = {
+    inline def apply(escape: RegExp & js.UndefOr[RegExp]): RegExpSettings = {
       val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
       __obj.asInstanceOf[RegExpSettings]
     }
@@ -1214,17 +1142,14 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(escape: RegExp): Impl = {
+      inline def apply(escape: RegExp): Impl = {
         val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+        inline def setEscape(value: RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1235,25 +1160,20 @@ object Dropdown {
     }
     object Param {
       
-      @scala.inline
-      def apply(escape: RegExp & js.UndefOr[RegExp]): typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param = {
+      inline def apply(escape: RegExp & js.UndefOr[RegExp]): typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param = {
         val __obj = js.Dynamic.literal(escape = escape.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param]
       }
       
-      @scala.inline
-      implicit class ParamMutableBuilder[Self <: typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param] (val x: Self) extends AnyVal {
+      extension [Self <: typings.semanticUiDropdown.SemanticUI.Dropdown.RegExpSettings.Param](x: Self) {
         
-        @scala.inline
-        def setEscape(value: RegExp & js.UndefOr[RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+        inline def setEscape(value: RegExp & js.UndefOr[RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class RegExpSettingsMutableBuilder[Self <: RegExpSettings] (val x: Self) extends AnyVal {
+    extension [Self <: RegExpSettings](x: Self) {
       
-      @scala.inline
-      def setEscape(value: RegExp & js.UndefOr[RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: RegExp & js.UndefOr[RegExp]): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1328,8 +1248,7 @@ object Dropdown {
     }
     object Impl {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addition: String,
         dropdown: String,
         icon: String,
@@ -1348,47 +1267,33 @@ object Dropdown {
         __obj.asInstanceOf[Impl]
       }
       
-      @scala.inline
-      implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
+      extension [Self <: Impl](x: Self) {
         
-        @scala.inline
-        def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
+        inline def setAddition(value: String): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+        inline def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+        inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+        inline def setItem(value: String): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+        inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMenuIcon(value: String): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
+        inline def setMenuIcon(value: String): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+        inline def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+        inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSiblingLabel(value: String): Self = StObject.set(x, "siblingLabel", value.asInstanceOf[js.Any])
+        inline def setSiblingLabel(value: String): Self = StObject.set(x, "siblingLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+        inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       }
     }
     

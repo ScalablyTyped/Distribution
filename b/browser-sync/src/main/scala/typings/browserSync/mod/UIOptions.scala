@@ -15,25 +15,19 @@ trait UIOptions extends StObject {
 }
 object UIOptions {
   
-  @scala.inline
-  def apply(): UIOptions = {
+  inline def apply(): UIOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIOptions]
   }
   
-  @scala.inline
-  implicit class UIOptionsMutableBuilder[Self <: UIOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIOptions](x: Self) {
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setWeinre(value: Port): Self = StObject.set(x, "weinre", value.asInstanceOf[js.Any])
+    inline def setWeinre(value: Port): Self = StObject.set(x, "weinre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeinreUndefined: Self = StObject.set(x, "weinre", js.undefined)
+    inline def setWeinreUndefined: Self = StObject.set(x, "weinre", js.undefined)
   }
 }

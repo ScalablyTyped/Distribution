@@ -14,26 +14,20 @@ object anon {
   }
   object Inline {
     
-    @scala.inline
-    def apply(): Inline = {
+    inline def apply(): Inline = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Inline]
     }
     
-    @scala.inline
-    implicit class InlineMutableBuilder[Self <: Inline] (val x: Self) extends AnyVal {
+    extension [Self <: Inline](x: Self) {
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setPrev(value: String | js.Object): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: String | js.Object): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+      inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     }
   }
 }

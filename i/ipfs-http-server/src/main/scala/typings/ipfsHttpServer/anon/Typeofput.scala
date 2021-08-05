@@ -12,19 +12,15 @@ trait Typeofput extends StObject {
 }
 object Typeofput {
   
-  @scala.inline
-  def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_4: Typeofoptions4Payload): Typeofput = {
+  inline def apply(handler: (js.Any, js.Any) => js.Promise[js.Any], options_4: Typeofoptions4Payload): Typeofput = {
     val __obj = js.Dynamic.literal(handler = js.Any.fromFunction2(handler), options_4 = options_4.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typeofput]
   }
   
-  @scala.inline
-  implicit class TypeofputMutableBuilder[Self <: Typeofput] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofput](x: Self) {
     
-    @scala.inline
-    def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
+    inline def setHandler(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_4(value: Typeofoptions4Payload): Self = StObject.set(x, "options_4", value.asInstanceOf[js.Any])
+    inline def setOptions_4(value: Typeofoptions4Payload): Self = StObject.set(x, "options_4", value.asInstanceOf[js.Any])
   }
 }

@@ -30,79 +30,55 @@ trait FileExtension extends StObject {
 }
 object FileExtension {
   
-  @scala.inline
-  def apply(): FileExtension = {
+  inline def apply(): FileExtension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileExtension]
   }
   
-  @scala.inline
-  implicit class FileExtensionMutableBuilder[Self <: FileExtension] (val x: Self) extends AnyVal {
+  extension [Self <: FileExtension](x: Self) {
     
-    @scala.inline
-    def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+    inline def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
+    inline def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
     
-    @scala.inline
-    def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+    inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+    inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
     
-    @scala.inline
-    def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
+    inline def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
+    inline def setFileExtensionUndefined: Self = StObject.set(x, "fileExtension", js.undefined)
     
-    @scala.inline
-    def setMaximumLevel(value: Double): Self = StObject.set(x, "maximumLevel", value.asInstanceOf[js.Any])
+    inline def setMaximumLevel(value: Double): Self = StObject.set(x, "maximumLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumLevelUndefined: Self = StObject.set(x, "maximumLevel", js.undefined)
+    inline def setMaximumLevelUndefined: Self = StObject.set(x, "maximumLevel", js.undefined)
     
-    @scala.inline
-    def setMinimumLevel(value: Double): Self = StObject.set(x, "minimumLevel", value.asInstanceOf[js.Any])
+    inline def setMinimumLevel(value: Double): Self = StObject.set(x, "minimumLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumLevelUndefined: Self = StObject.set(x, "minimumLevel", js.undefined)
+    inline def setMinimumLevelUndefined: Self = StObject.set(x, "minimumLevel", js.undefined)
     
-    @scala.inline
-    def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: js.Any): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     
-    @scala.inline
-    def setRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+    inline def setRectangle(value: typings.cesium.mod.Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+    inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
     
-    @scala.inline
-    def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
+    inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
+    inline def setTileHeightUndefined: Self = StObject.set(x, "tileHeight", js.undefined)
     
-    @scala.inline
-    def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
+    inline def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
+    inline def setTileWidthUndefined: Self = StObject.set(x, "tileWidth", js.undefined)
     
-    @scala.inline
-    def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = StObject.set(x, "tilingScheme", value.asInstanceOf[js.Any])
+    inline def setTilingScheme(value: typings.cesium.mod.TilingScheme): Self = StObject.set(x, "tilingScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilingSchemeUndefined: Self = StObject.set(x, "tilingScheme", js.undefined)
+    inline def setTilingSchemeUndefined: Self = StObject.set(x, "tilingScheme", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

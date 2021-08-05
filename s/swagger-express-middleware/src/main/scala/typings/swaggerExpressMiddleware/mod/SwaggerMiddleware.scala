@@ -208,8 +208,7 @@ trait SwaggerMiddleware extends StObject {
 }
 object SwaggerMiddleware {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CORS: () => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
     files: FilesSignature,
     metadata: /* router */ js.UndefOr[Application_ | Router] => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
@@ -221,29 +220,22 @@ object SwaggerMiddleware {
     __obj.asInstanceOf[SwaggerMiddleware]
   }
   
-  @scala.inline
-  implicit class SwaggerMiddlewareMutableBuilder[Self <: SwaggerMiddleware] (val x: Self) extends AnyVal {
+  extension [Self <: SwaggerMiddleware](x: Self) {
     
-    @scala.inline
-    def setCORS(value: () => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "CORS", js.Any.fromFunction0(value))
+    inline def setCORS(value: () => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "CORS", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFiles(value: FilesSignature): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: FilesSignature): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(
+    inline def setMetadata(
       value: /* router */ js.UndefOr[Application_ | Router] => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
     ): Self = StObject.set(x, "metadata", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMock(
+    inline def setMock(
       value: (/* router */ js.UndefOr[Application_ | Router], /* datastore */ js.UndefOr[js.Any]) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
     ): Self = StObject.set(x, "mock", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseRequest(value: ParseRequestSignature): Self = StObject.set(x, "parseRequest", value.asInstanceOf[js.Any])
+    inline def setParseRequest(value: ParseRequestSignature): Self = StObject.set(x, "parseRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateRequest(value: () => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "validateRequest", js.Any.fromFunction0(value))
+    inline def setValidateRequest(value: () => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "validateRequest", js.Any.fromFunction0(value))
   }
 }

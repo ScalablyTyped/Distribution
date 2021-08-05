@@ -18,5 +18,5 @@ class WebElementCondition protected () extends Condition[WebElement] {
   
   // add an unused private member so the compiler treats this
   // class distinct from other Conditions
-  var _nominal: Unit = js.native
+  /* private */ var _nominal: Unit = js.native
 }

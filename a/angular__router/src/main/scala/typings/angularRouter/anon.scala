@@ -23,26 +23,20 @@ object anon {
   }
   object AnchorScrolling {
     
-    @scala.inline
-    def apply(): AnchorScrolling = {
+    inline def apply(): AnchorScrolling = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnchorScrolling]
     }
     
-    @scala.inline
-    implicit class AnchorScrollingMutableBuilder[Self <: AnchorScrolling] (val x: Self) extends AnyVal {
+    extension [Self <: AnchorScrolling](x: Self) {
       
-      @scala.inline
-      def setAnchorScrolling(value: disabled | enabled): Self = StObject.set(x, "anchorScrolling", value.asInstanceOf[js.Any])
+      inline def setAnchorScrolling(value: disabled | enabled): Self = StObject.set(x, "anchorScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorScrollingUndefined: Self = StObject.set(x, "anchorScrolling", js.undefined)
+      inline def setAnchorScrollingUndefined: Self = StObject.set(x, "anchorScrolling", js.undefined)
       
-      @scala.inline
-      def setScrollPositionRestoration(value: disabled | enabled | top): Self = StObject.set(x, "scrollPositionRestoration", value.asInstanceOf[js.Any])
+      inline def setScrollPositionRestoration(value: disabled | enabled | top): Self = StObject.set(x, "scrollPositionRestoration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPositionRestorationUndefined: Self = StObject.set(x, "scrollPositionRestoration", js.undefined)
+      inline def setScrollPositionRestorationUndefined: Self = StObject.set(x, "scrollPositionRestoration", js.undefined)
     }
   }
   
@@ -62,8 +56,7 @@ object anon {
   }
   object Deps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deps: js.Array[Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH]],
       multi: Boolean,
       provide: InjectionToken[js.Array[js.Function0[Unit]]],
@@ -74,26 +67,19 @@ object anon {
       __obj.asInstanceOf[Deps]
     }
     
-    @scala.inline
-    implicit class DepsMutableBuilder[Self <: Deps] (val x: Self) extends AnyVal {
+    extension [Self <: Deps](x: Self) {
       
-      @scala.inline
-      def setDeps(value: js.Array[Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH]]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH]]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepsVarargs(value: (Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH])*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: (Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH])*): Self = StObject.set(x, "deps", js.Array(value :_*))
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvide(value: InjectionToken[js.Array[js.Function0[Unit]]]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+      inline def setProvide(value: InjectionToken[js.Array[js.Function0[Unit]]]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseExisting(value: Unit): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+      inline def setUseExisting(value: Unit): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFactory(value: /* r */ ɵangularPackagesRouterRouterH => js.Function0[js.Promise[js.Any]]): Self = StObject.set(x, "useFactory", js.Any.fromFunction1(value))
+      inline def setUseFactory(value: /* r */ ɵangularPackagesRouterRouterH => js.Function0[js.Promise[js.Any]]): Self = StObject.set(x, "useFactory", js.Any.fromFunction1(value))
     }
   }
   
@@ -105,17 +91,14 @@ object anon {
   }
   object Dictk {
     
-    @scala.inline
-    def apply(navigationId: Double): Dictk = {
+    inline def apply(navigationId: Double): Dictk = {
       val __obj = js.Dynamic.literal(navigationId = navigationId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictk]
     }
     
-    @scala.inline
-    implicit class DictkMutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
+    extension [Self <: Dictk](x: Self) {
       
-      @scala.inline
-      def setNavigationId(value: Double): Self = StObject.set(x, "navigationId", value.asInstanceOf[js.Any])
+      inline def setNavigationId(value: Double): Self = StObject.set(x, "navigationId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,17 +108,14 @@ object anon {
   }
   object Exact {
     
-    @scala.inline
-    def apply(exact: Boolean): Exact = {
+    inline def apply(exact: Boolean): Exact = {
       val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any])
       __obj.asInstanceOf[Exact]
     }
     
-    @scala.inline
-    implicit class ExactMutableBuilder[Self <: Exact] (val x: Self) extends AnyVal {
+    extension [Self <: Exact](x: Self) {
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,8 +138,7 @@ object anon {
   }
   object Multi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deps: js.Array[Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH]],
       multi: Unit,
       provide: InjectionToken[js.Function1[/* compRef */ ComponentRef[js.Any], Unit]],
@@ -170,26 +149,19 @@ object anon {
       __obj.asInstanceOf[Multi]
     }
     
-    @scala.inline
-    implicit class MultiMutableBuilder[Self <: Multi] (val x: Self) extends AnyVal {
+    extension [Self <: Multi](x: Self) {
       
-      @scala.inline
-      def setDeps(value: js.Array[Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH]]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: js.Array[Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH]]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepsVarargs(value: (Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH])*): Self = StObject.set(x, "deps", js.Array(value :_*))
+      inline def setDepsVarargs(value: (Instantiable1[/* injector */ Injector, ɵangularPackagesRouterRouterH])*): Self = StObject.set(x, "deps", js.Array(value :_*))
       
-      @scala.inline
-      def setMulti(value: Unit): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Unit): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvide(value: InjectionToken[js.Function1[/* compRef */ ComponentRef[js.Any], Unit]]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+      inline def setProvide(value: InjectionToken[js.Function1[/* compRef */ ComponentRef[js.Any], Unit]]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseExisting(value: Unit): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+      inline def setUseExisting(value: Unit): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFactory(
+      inline def setUseFactory(
         value: /* r */ ɵangularPackagesRouterRouterH => js.Function1[/* bootstrappedComponentRef */ ComponentRef[js.Any], Unit]
       ): Self = StObject.set(x, "useFactory", js.Any.fromFunction1(value))
     }
@@ -209,8 +181,7 @@ object anon {
   }
   object Provide {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       deps: Unit,
       multi: Boolean,
       provide: InjectionToken[js.Array[js.Function1[/* compRef */ ComponentRef[js.Any], Unit]]],
@@ -221,23 +192,17 @@ object anon {
       __obj.asInstanceOf[Provide]
     }
     
-    @scala.inline
-    implicit class ProvideMutableBuilder[Self <: Provide] (val x: Self) extends AnyVal {
+    extension [Self <: Provide](x: Self) {
       
-      @scala.inline
-      def setDeps(value: Unit): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+      inline def setDeps(value: Unit): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvide(value: InjectionToken[js.Array[js.Function1[/* compRef */ ComponentRef[js.Any], Unit]]]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+      inline def setProvide(value: InjectionToken[js.Array[js.Function1[/* compRef */ ComponentRef[js.Any], Unit]]]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseExisting(value: InjectionToken[js.Function1[/* compRef */ ComponentRef[js.Any], Unit]]): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
+      inline def setUseExisting(value: InjectionToken[js.Function1[/* compRef */ ComponentRef[js.Any], Unit]]): Self = StObject.set(x, "useExisting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFactory(value: Unit): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
+      inline def setUseFactory(value: Unit): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
     }
   }
 }

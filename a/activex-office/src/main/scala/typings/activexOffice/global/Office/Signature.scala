@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Signature")
 @js.native
-class Signature protected ()
+/* private */ class Signature ()
   extends StObject
      with typings.activexOffice.Office.Signature

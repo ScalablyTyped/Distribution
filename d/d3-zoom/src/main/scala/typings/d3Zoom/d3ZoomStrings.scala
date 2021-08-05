@@ -8,16 +8,13 @@ object d3ZoomStrings {
   
   @js.native
   sealed trait end extends StObject
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait start extends StObject
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait zoom extends StObject
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ObjectVerbs")
 @js.native
-class ObjectVerbs protected ()
+/* private */ class ObjectVerbs ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ObjectVerbs {
   
@@ -22,7 +22,7 @@ class ObjectVerbs protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ObjectVerbs_typekey")
   var PowerPointDotObjectVerbs_typekey: typings.activexPowerpoint.PowerPoint.ObjectVerbs = js.native
 }

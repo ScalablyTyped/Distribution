@@ -24,8 +24,7 @@ trait InlineDrawing
 }
 object InlineDrawing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBody: () => Body,
     asEquation: () => Equation,
     asEquationFunction: () => EquationFunction,
@@ -65,19 +64,14 @@ object InlineDrawing {
     __obj.asInstanceOf[InlineDrawing]
   }
   
-  @scala.inline
-  implicit class InlineDrawingMutableBuilder[Self <: InlineDrawing] (val x: Self) extends AnyVal {
+  extension [Self <: InlineDrawing](x: Self) {
     
-    @scala.inline
-    def setGetAltDescription(value: () => String): Self = StObject.set(x, "getAltDescription", js.Any.fromFunction0(value))
+    inline def setGetAltDescription(value: () => String): Self = StObject.set(x, "getAltDescription", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAltTitle(value: () => String): Self = StObject.set(x, "getAltTitle", js.Any.fromFunction0(value))
+    inline def setGetAltTitle(value: () => String): Self = StObject.set(x, "getAltTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAltDescription(value: String => InlineDrawing): Self = StObject.set(x, "setAltDescription", js.Any.fromFunction1(value))
+    inline def setSetAltDescription(value: String => InlineDrawing): Self = StObject.set(x, "setAltDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAltTitle(value: String => InlineDrawing): Self = StObject.set(x, "setAltTitle", js.Any.fromFunction1(value))
+    inline def setSetAltTitle(value: String => InlineDrawing): Self = StObject.set(x, "setAltTitle", js.Any.fromFunction1(value))
   }
 }

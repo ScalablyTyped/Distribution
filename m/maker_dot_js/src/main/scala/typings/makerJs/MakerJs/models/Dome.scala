@@ -15,16 +15,13 @@ trait Dome
 }
 object Dome {
   
-  @scala.inline
-  def apply(paths: IPathMap): Dome = {
+  inline def apply(paths: IPathMap): Dome = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dome]
   }
   
-  @scala.inline
-  implicit class DomeMutableBuilder[Self <: Dome] (val x: Self) extends AnyVal {
+  extension [Self <: Dome](x: Self) {
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

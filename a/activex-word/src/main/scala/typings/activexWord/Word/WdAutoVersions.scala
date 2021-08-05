@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdAutoVersions extends StObject
 object WdAutoVersions {
   
-  @scala.inline
-  def wdAutoVersionOff: `0` = 0.asInstanceOf[`0`]
+  inline def wdAutoVersionOff: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdAutoVersionOnClose: `1` = 1.asInstanceOf[`1`]
+  inline def wdAutoVersionOnClose: `1` = 1.asInstanceOf[`1`]
 }

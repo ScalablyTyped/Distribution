@@ -10,16 +10,13 @@ trait IRequestTask extends StObject {
 }
 object IRequestTask {
   
-  @scala.inline
-  def apply(abort: () => Unit): IRequestTask = {
+  inline def apply(abort: () => Unit): IRequestTask = {
     val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort))
     __obj.asInstanceOf[IRequestTask]
   }
   
-  @scala.inline
-  implicit class IRequestTaskMutableBuilder[Self <: IRequestTask] (val x: Self) extends AnyVal {
+  extension [Self <: IRequestTask](x: Self) {
     
-    @scala.inline
-    def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+    inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }
 }

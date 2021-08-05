@@ -32,80 +32,56 @@ object fullScreenManagerTypesMod {
   }
   object IFullScreenAPI {
     
-    @scala.inline
-    def apply(): IFullScreenAPI = {
+    inline def apply(): IFullScreenAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFullScreenAPI]
     }
     
-    @scala.inline
-    implicit class IFullScreenAPIMutableBuilder[Self <: IFullScreenAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IFullScreenAPI](x: Self) {
       
-      @scala.inline
-      def setDisableEnterFullScreenOnPlay(value: () => Unit): Self = StObject.set(x, "disableEnterFullScreenOnPlay", js.Any.fromFunction0(value))
+      inline def setDisableEnterFullScreenOnPlay(value: () => Unit): Self = StObject.set(x, "disableEnterFullScreenOnPlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableEnterFullScreenOnPlayUndefined: Self = StObject.set(x, "disableEnterFullScreenOnPlay", js.undefined)
+      inline def setDisableEnterFullScreenOnPlayUndefined: Self = StObject.set(x, "disableEnterFullScreenOnPlay", js.undefined)
       
-      @scala.inline
-      def setDisableExitFullScreenOnEnd(value: () => Unit): Self = StObject.set(x, "disableExitFullScreenOnEnd", js.Any.fromFunction0(value))
+      inline def setDisableExitFullScreenOnEnd(value: () => Unit): Self = StObject.set(x, "disableExitFullScreenOnEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableExitFullScreenOnEndUndefined: Self = StObject.set(x, "disableExitFullScreenOnEnd", js.undefined)
+      inline def setDisableExitFullScreenOnEndUndefined: Self = StObject.set(x, "disableExitFullScreenOnEnd", js.undefined)
       
-      @scala.inline
-      def setDisableExitFullScreenOnPause(value: () => Unit): Self = StObject.set(x, "disableExitFullScreenOnPause", js.Any.fromFunction0(value))
+      inline def setDisableExitFullScreenOnPause(value: () => Unit): Self = StObject.set(x, "disableExitFullScreenOnPause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableExitFullScreenOnPauseUndefined: Self = StObject.set(x, "disableExitFullScreenOnPause", js.undefined)
+      inline def setDisableExitFullScreenOnPauseUndefined: Self = StObject.set(x, "disableExitFullScreenOnPause", js.undefined)
       
-      @scala.inline
-      def setDisablePauseVideoOnFullScreenExit(value: () => Unit): Self = StObject.set(x, "disablePauseVideoOnFullScreenExit", js.Any.fromFunction0(value))
+      inline def setDisablePauseVideoOnFullScreenExit(value: () => Unit): Self = StObject.set(x, "disablePauseVideoOnFullScreenExit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisablePauseVideoOnFullScreenExitUndefined: Self = StObject.set(x, "disablePauseVideoOnFullScreenExit", js.undefined)
+      inline def setDisablePauseVideoOnFullScreenExitUndefined: Self = StObject.set(x, "disablePauseVideoOnFullScreenExit", js.undefined)
       
-      @scala.inline
-      def setEnableEnterFullScreenOnPlay(value: () => Unit): Self = StObject.set(x, "enableEnterFullScreenOnPlay", js.Any.fromFunction0(value))
+      inline def setEnableEnterFullScreenOnPlay(value: () => Unit): Self = StObject.set(x, "enableEnterFullScreenOnPlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableEnterFullScreenOnPlayUndefined: Self = StObject.set(x, "enableEnterFullScreenOnPlay", js.undefined)
+      inline def setEnableEnterFullScreenOnPlayUndefined: Self = StObject.set(x, "enableEnterFullScreenOnPlay", js.undefined)
       
-      @scala.inline
-      def setEnableExitFullScreenOnEnd(value: () => Unit): Self = StObject.set(x, "enableExitFullScreenOnEnd", js.Any.fromFunction0(value))
+      inline def setEnableExitFullScreenOnEnd(value: () => Unit): Self = StObject.set(x, "enableExitFullScreenOnEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableExitFullScreenOnEndUndefined: Self = StObject.set(x, "enableExitFullScreenOnEnd", js.undefined)
+      inline def setEnableExitFullScreenOnEndUndefined: Self = StObject.set(x, "enableExitFullScreenOnEnd", js.undefined)
       
-      @scala.inline
-      def setEnableExitFullScreenOnPause(value: () => Unit): Self = StObject.set(x, "enableExitFullScreenOnPause", js.Any.fromFunction0(value))
+      inline def setEnableExitFullScreenOnPause(value: () => Unit): Self = StObject.set(x, "enableExitFullScreenOnPause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableExitFullScreenOnPauseUndefined: Self = StObject.set(x, "enableExitFullScreenOnPause", js.undefined)
+      inline def setEnableExitFullScreenOnPauseUndefined: Self = StObject.set(x, "enableExitFullScreenOnPause", js.undefined)
       
-      @scala.inline
-      def setEnablePauseVideoOnFullScreenExit(value: () => Unit): Self = StObject.set(x, "enablePauseVideoOnFullScreenExit", js.Any.fromFunction0(value))
+      inline def setEnablePauseVideoOnFullScreenExit(value: () => Unit): Self = StObject.set(x, "enablePauseVideoOnFullScreenExit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnablePauseVideoOnFullScreenExitUndefined: Self = StObject.set(x, "enablePauseVideoOnFullScreenExit", js.undefined)
+      inline def setEnablePauseVideoOnFullScreenExitUndefined: Self = StObject.set(x, "enablePauseVideoOnFullScreenExit", js.undefined)
       
-      @scala.inline
-      def setEnterFullScreen(value: () => Unit): Self = StObject.set(x, "enterFullScreen", js.Any.fromFunction0(value))
+      inline def setEnterFullScreen(value: () => Unit): Self = StObject.set(x, "enterFullScreen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnterFullScreenUndefined: Self = StObject.set(x, "enterFullScreen", js.undefined)
+      inline def setEnterFullScreenUndefined: Self = StObject.set(x, "enterFullScreen", js.undefined)
       
-      @scala.inline
-      def setExitFullScreen(value: () => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction0(value))
+      inline def setExitFullScreen(value: () => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExitFullScreenUndefined: Self = StObject.set(x, "exitFullScreen", js.undefined)
+      inline def setExitFullScreenUndefined: Self = StObject.set(x, "exitFullScreen", js.undefined)
       
-      @scala.inline
-      def setIsInFullScreen(value: Boolean): Self = StObject.set(x, "isInFullScreen", value.asInstanceOf[js.Any])
+      inline def setIsInFullScreen(value: Boolean): Self = StObject.set(x, "isInFullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInFullScreenUndefined: Self = StObject.set(x, "isInFullScreen", js.undefined)
+      inline def setIsInFullScreenUndefined: Self = StObject.set(x, "isInFullScreen", js.undefined)
     }
   }
   
@@ -121,38 +97,28 @@ object fullScreenManagerTypesMod {
   }
   object IFullScreenConfig {
     
-    @scala.inline
-    def apply(): IFullScreenConfig = {
+    inline def apply(): IFullScreenConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFullScreenConfig]
     }
     
-    @scala.inline
-    implicit class IFullScreenConfigMutableBuilder[Self <: IFullScreenConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IFullScreenConfig](x: Self) {
       
-      @scala.inline
-      def setEnterFullScreenOnPlay(value: Boolean): Self = StObject.set(x, "enterFullScreenOnPlay", value.asInstanceOf[js.Any])
+      inline def setEnterFullScreenOnPlay(value: Boolean): Self = StObject.set(x, "enterFullScreenOnPlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterFullScreenOnPlayUndefined: Self = StObject.set(x, "enterFullScreenOnPlay", js.undefined)
+      inline def setEnterFullScreenOnPlayUndefined: Self = StObject.set(x, "enterFullScreenOnPlay", js.undefined)
       
-      @scala.inline
-      def setExitFullScreenOnEnd(value: Boolean): Self = StObject.set(x, "exitFullScreenOnEnd", value.asInstanceOf[js.Any])
+      inline def setExitFullScreenOnEnd(value: Boolean): Self = StObject.set(x, "exitFullScreenOnEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitFullScreenOnEndUndefined: Self = StObject.set(x, "exitFullScreenOnEnd", js.undefined)
+      inline def setExitFullScreenOnEndUndefined: Self = StObject.set(x, "exitFullScreenOnEnd", js.undefined)
       
-      @scala.inline
-      def setExitFullScreenOnPause(value: Boolean): Self = StObject.set(x, "exitFullScreenOnPause", value.asInstanceOf[js.Any])
+      inline def setExitFullScreenOnPause(value: Boolean): Self = StObject.set(x, "exitFullScreenOnPause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitFullScreenOnPauseUndefined: Self = StObject.set(x, "exitFullScreenOnPause", js.undefined)
+      inline def setExitFullScreenOnPauseUndefined: Self = StObject.set(x, "exitFullScreenOnPause", js.undefined)
       
-      @scala.inline
-      def setPauseVideoOnFullScreenExit(value: Boolean): Self = StObject.set(x, "pauseVideoOnFullScreenExit", value.asInstanceOf[js.Any])
+      inline def setPauseVideoOnFullScreenExit(value: Boolean): Self = StObject.set(x, "pauseVideoOnFullScreenExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseVideoOnFullScreenExitUndefined: Self = StObject.set(x, "pauseVideoOnFullScreenExit", js.undefined)
+      inline def setPauseVideoOnFullScreenExitUndefined: Self = StObject.set(x, "pauseVideoOnFullScreenExit", js.undefined)
     }
   }
   
@@ -172,8 +138,7 @@ object fullScreenManagerTypesMod {
   }
   object IFullScreenHelper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       exit: () => Unit,
       isAPIExist: Boolean,
@@ -185,26 +150,19 @@ object fullScreenManagerTypesMod {
       __obj.asInstanceOf[IFullScreenHelper]
     }
     
-    @scala.inline
-    implicit class IFullScreenHelperMutableBuilder[Self <: IFullScreenHelper] (val x: Self) extends AnyVal {
+    extension [Self <: IFullScreenHelper](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
+      inline def setExit(value: () => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsAPIExist(value: Boolean): Self = StObject.set(x, "isAPIExist", value.asInstanceOf[js.Any])
+      inline def setIsAPIExist(value: Boolean): Self = StObject.set(x, "isAPIExist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInFullScreen(value: Boolean): Self = StObject.set(x, "isInFullScreen", value.asInstanceOf[js.Any])
+      inline def setIsInFullScreen(value: Boolean): Self = StObject.set(x, "isInFullScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: () => Unit): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
+      inline def setRequest(value: () => Unit): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
     }
   }
   
@@ -238,8 +196,7 @@ object fullScreenManagerTypesMod {
   }
   object IFullScreenManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       disableEnterFullScreenOnPlay: () => Unit,
       disableExitFullScreenOnEnd: () => Unit,
@@ -258,47 +215,33 @@ object fullScreenManagerTypesMod {
       __obj.asInstanceOf[IFullScreenManager]
     }
     
-    @scala.inline
-    implicit class IFullScreenManagerMutableBuilder[Self <: IFullScreenManager] (val x: Self) extends AnyVal {
+    extension [Self <: IFullScreenManager](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableEnterFullScreenOnPlay(value: () => Unit): Self = StObject.set(x, "disableEnterFullScreenOnPlay", js.Any.fromFunction0(value))
+      inline def setDisableEnterFullScreenOnPlay(value: () => Unit): Self = StObject.set(x, "disableEnterFullScreenOnPlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableExitFullScreenOnEnd(value: () => Unit): Self = StObject.set(x, "disableExitFullScreenOnEnd", js.Any.fromFunction0(value))
+      inline def setDisableExitFullScreenOnEnd(value: () => Unit): Self = StObject.set(x, "disableExitFullScreenOnEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisableExitFullScreenOnPause(value: () => Unit): Self = StObject.set(x, "disableExitFullScreenOnPause", js.Any.fromFunction0(value))
+      inline def setDisableExitFullScreenOnPause(value: () => Unit): Self = StObject.set(x, "disableExitFullScreenOnPause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisablePauseVideoOnFullScreenExit(value: () => Unit): Self = StObject.set(x, "disablePauseVideoOnFullScreenExit", js.Any.fromFunction0(value))
+      inline def setDisablePauseVideoOnFullScreenExit(value: () => Unit): Self = StObject.set(x, "disablePauseVideoOnFullScreenExit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableEnterFullScreenOnPlay(value: () => Unit): Self = StObject.set(x, "enableEnterFullScreenOnPlay", js.Any.fromFunction0(value))
+      inline def setEnableEnterFullScreenOnPlay(value: () => Unit): Self = StObject.set(x, "enableEnterFullScreenOnPlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableExitFullScreenOnEnd(value: () => Unit): Self = StObject.set(x, "enableExitFullScreenOnEnd", js.Any.fromFunction0(value))
+      inline def setEnableExitFullScreenOnEnd(value: () => Unit): Self = StObject.set(x, "enableExitFullScreenOnEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnableExitFullScreenOnPause(value: () => Unit): Self = StObject.set(x, "enableExitFullScreenOnPause", js.Any.fromFunction0(value))
+      inline def setEnableExitFullScreenOnPause(value: () => Unit): Self = StObject.set(x, "enableExitFullScreenOnPause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnablePauseVideoOnFullScreenExit(value: () => Unit): Self = StObject.set(x, "enablePauseVideoOnFullScreenExit", js.Any.fromFunction0(value))
+      inline def setEnablePauseVideoOnFullScreenExit(value: () => Unit): Self = StObject.set(x, "enablePauseVideoOnFullScreenExit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnterFullScreen(value: () => Unit): Self = StObject.set(x, "enterFullScreen", js.Any.fromFunction0(value))
+      inline def setEnterFullScreen(value: () => Unit): Self = StObject.set(x, "enterFullScreen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExitFullScreen(value: () => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction0(value))
+      inline def setExitFullScreen(value: () => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInFullScreen(value: Boolean): Self = StObject.set(x, "isInFullScreen", value.asInstanceOf[js.Any])
+      inline def setIsInFullScreen(value: Boolean): Self = StObject.set(x, "isInFullScreen", value.asInstanceOf[js.Any])
     }
   }
 }

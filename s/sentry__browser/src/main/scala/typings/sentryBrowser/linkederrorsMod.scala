@@ -23,22 +23,22 @@ object linkederrorsMod {
     /**
       * @inheritDoc
       */
-    var _handler: js.Any = js.native
+    /* private */ var _handler: js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    val _key: js.Any = js.native
+    /* private */ val _key: js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    val _limit: js.Any = js.native
+    /* private */ val _limit: js.Any = js.native
     
     /**
       * @inheritDoc
       */
-    var _walkErrorTree: js.Any = js.native
+    /* private */ var _walkErrorTree: js.Any = js.native
     
     /**
       * Returns {@link IntegrationClass.id}
@@ -73,7 +73,6 @@ object linkederrorsMod {
     @JSImport("@sentry/browser/dist/integrations/linkederrors", "LinkedErrors.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
 }

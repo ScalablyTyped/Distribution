@@ -14,19 +14,15 @@ trait AutoscalingPutAutoscalingPolicy[T]
 }
 object AutoscalingPutAutoscalingPolicy {
   
-  @scala.inline
-  def apply[T](body: T, name: String): AutoscalingPutAutoscalingPolicy[T] = {
+  inline def apply[T](body: T, name: String): AutoscalingPutAutoscalingPolicy[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoscalingPutAutoscalingPolicy[T]]
   }
   
-  @scala.inline
-  implicit class AutoscalingPutAutoscalingPolicyMutableBuilder[Self <: AutoscalingPutAutoscalingPolicy[?], T] (val x: Self & AutoscalingPutAutoscalingPolicy[T]) extends AnyVal {
+  extension [Self <: AutoscalingPutAutoscalingPolicy[?], T](x: Self & AutoscalingPutAutoscalingPolicy[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

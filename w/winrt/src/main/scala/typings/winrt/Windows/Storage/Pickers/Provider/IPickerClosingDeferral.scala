@@ -10,16 +10,13 @@ trait IPickerClosingDeferral extends StObject {
 }
 object IPickerClosingDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): IPickerClosingDeferral = {
+  inline def apply(complete: () => Unit): IPickerClosingDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[IPickerClosingDeferral]
   }
   
-  @scala.inline
-  implicit class IPickerClosingDeferralMutableBuilder[Self <: IPickerClosingDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: IPickerClosingDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

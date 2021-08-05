@@ -107,88 +107,61 @@ trait JSTreeStaticDefaults extends StObject {
 }
 object JSTreeStaticDefaults {
   
-  @scala.inline
-  def apply(core: JSTreeStaticDefaultsCore, plugins: js.Array[String]): JSTreeStaticDefaults = {
+  inline def apply(core: JSTreeStaticDefaultsCore, plugins: js.Array[String]): JSTreeStaticDefaults = {
     val __obj = js.Dynamic.literal(core = core.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaults]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsMutableBuilder[Self <: JSTreeStaticDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaults](x: Self) {
     
-    @scala.inline
-    def setCheckbox(value: JSTreeStaticDefaultsCheckbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+    inline def setCheckbox(value: JSTreeStaticDefaultsCheckbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
+    inline def setCheckboxUndefined: Self = StObject.set(x, "checkbox", js.undefined)
     
-    @scala.inline
-    def setConditionalclose(value: () => Boolean): Self = StObject.set(x, "conditionalclose", js.Any.fromFunction0(value))
+    inline def setConditionalclose(value: () => Boolean): Self = StObject.set(x, "conditionalclose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConditionalcloseUndefined: Self = StObject.set(x, "conditionalclose", js.undefined)
+    inline def setConditionalcloseUndefined: Self = StObject.set(x, "conditionalclose", js.undefined)
     
-    @scala.inline
-    def setConditionalselect(value: () => Boolean): Self = StObject.set(x, "conditionalselect", js.Any.fromFunction0(value))
+    inline def setConditionalselect(value: () => Boolean): Self = StObject.set(x, "conditionalselect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConditionalselectUndefined: Self = StObject.set(x, "conditionalselect", js.undefined)
+    inline def setConditionalselectUndefined: Self = StObject.set(x, "conditionalselect", js.undefined)
     
-    @scala.inline
-    def setContextmenu(value: JSTreeStaticDefaultsContextMenu): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
+    inline def setContextmenu(value: JSTreeStaticDefaultsContextMenu): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
+    inline def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
     
-    @scala.inline
-    def setCore(value: JSTreeStaticDefaultsCore): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
+    inline def setCore(value: JSTreeStaticDefaultsCore): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnd(value: JSTreeStaticDefaultsDragNDrop): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
+    inline def setDnd(value: JSTreeStaticDefaultsDragNDrop): Self = StObject.set(x, "dnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
+    inline def setDndUndefined: Self = StObject.set(x, "dnd", js.undefined)
     
-    @scala.inline
-    def setMassload(value: JSTreeStaticDefaultsMassload): Self = StObject.set(x, "massload", value.asInstanceOf[js.Any])
+    inline def setMassload(value: JSTreeStaticDefaultsMassload): Self = StObject.set(x, "massload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMassloadUndefined: Self = StObject.set(x, "massload", js.undefined)
+    inline def setMassloadUndefined: Self = StObject.set(x, "massload", js.undefined)
     
-    @scala.inline
-    def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
-    @scala.inline
-    def setSearch(value: JSTreeStaticDefaultsSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: JSTreeStaticDefaultsSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def setSort(value: (/* x */ js.Any, /* y */ js.Any) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
+    inline def setSort(value: (/* x */ js.Any, /* y */ js.Any) => Double): Self = StObject.set(x, "sort", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setState(value: JSTreeStaticDefaultsState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: JSTreeStaticDefaultsState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setUnique(value: JSTreeStaticDefaultsUnique): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+    inline def setUnique(value: JSTreeStaticDefaultsUnique): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+    inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
   }
 }

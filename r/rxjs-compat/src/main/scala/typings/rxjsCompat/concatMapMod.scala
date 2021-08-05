@@ -10,8 +10,7 @@ object concatMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def concatMap[T, R](
+  inline def concatMap[T, R](
     project: js.Function2[
       /* value */ T, 
       /* index */ Double, 

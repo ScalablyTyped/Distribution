@@ -29,58 +29,41 @@ trait WorkItemDetails extends StObject {
 }
 object WorkItemDetails {
   
-  @scala.inline
-  def apply(): WorkItemDetails = {
+  inline def apply(): WorkItemDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkItemDetails]
   }
   
-  @scala.inline
-  implicit class WorkItemDetailsMutableBuilder[Self <: WorkItemDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemDetails](x: Self) {
     
-    @scala.inline
-    def setAttemptId(value: String): Self = StObject.set(x, "attemptId", value.asInstanceOf[js.Any])
+    inline def setAttemptId(value: String): Self = StObject.set(x, "attemptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttemptIdUndefined: Self = StObject.set(x, "attemptId", js.undefined)
+    inline def setAttemptIdUndefined: Self = StObject.set(x, "attemptId", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[MetricUpdate]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[MetricUpdate]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: MetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: MetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setProgress(value: ProgressTimeseries): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: ProgressTimeseries): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
   }
 }

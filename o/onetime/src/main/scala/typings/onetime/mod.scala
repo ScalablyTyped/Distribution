@@ -21,10 +21,8 @@ object mod {
   	onetime.callCount(foo); //=> 3
   	```
   	*/
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, ReturnType]]
-  @scala.inline
-  def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): js.Function1[/* arguments */ ArgumentsType, ReturnType] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, ReturnType]]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType]): js.Function1[/* arguments */ ArgumentsType, ReturnType] = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, ReturnType]]
+  inline def apply[ArgumentsType /* <: js.Array[js.Any] */, ReturnType](fn: js.Function1[/* arguments */ ArgumentsType, ReturnType], options: Options): js.Function1[/* arguments */ ArgumentsType, ReturnType] = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* arguments */ ArgumentsType, ReturnType]]
   
   @JSImport("onetime", JSImport.Namespace)
   @js.native
@@ -50,11 +48,9 @@ object mod {
   	//=> 3
   	```
   	*/
-  @scala.inline
-  def callCount(fn: js.Function1[/* repeated */ js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("callCount")(fn.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def callCount(fn: js.Function1[/* repeated */ js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("callCount")(fn.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof onetime */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof onetime */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait Options extends StObject {
     
@@ -66,20 +62,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setThrow(value: Boolean): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
+      inline def setThrow(value: Boolean): Self = StObject.set(x, "throw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowUndefined: Self = StObject.set(x, "throw", js.undefined)
+      inline def setThrowUndefined: Self = StObject.set(x, "throw", js.undefined)
     }
   }
 }

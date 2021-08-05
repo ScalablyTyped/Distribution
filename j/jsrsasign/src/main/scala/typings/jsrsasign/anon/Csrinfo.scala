@@ -11,16 +11,13 @@ trait Csrinfo extends StObject {
 }
 object Csrinfo {
   
-  @scala.inline
-  def apply(csrinfo: CertificationRequestInfo): Csrinfo = {
+  inline def apply(csrinfo: CertificationRequestInfo): Csrinfo = {
     val __obj = js.Dynamic.literal(csrinfo = csrinfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[Csrinfo]
   }
   
-  @scala.inline
-  implicit class CsrinfoMutableBuilder[Self <: Csrinfo] (val x: Self) extends AnyVal {
+  extension [Self <: Csrinfo](x: Self) {
     
-    @scala.inline
-    def setCsrinfo(value: CertificationRequestInfo): Self = StObject.set(x, "csrinfo", value.asInstanceOf[js.Any])
+    inline def setCsrinfo(value: CertificationRequestInfo): Self = StObject.set(x, "csrinfo", value.asInstanceOf[js.Any])
   }
 }

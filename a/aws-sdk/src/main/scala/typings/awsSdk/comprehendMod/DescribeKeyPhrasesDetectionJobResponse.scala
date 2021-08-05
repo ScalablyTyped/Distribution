@@ -13,19 +13,15 @@ trait DescribeKeyPhrasesDetectionJobResponse extends StObject {
 }
 object DescribeKeyPhrasesDetectionJobResponse {
   
-  @scala.inline
-  def apply(): DescribeKeyPhrasesDetectionJobResponse = {
+  inline def apply(): DescribeKeyPhrasesDetectionJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeKeyPhrasesDetectionJobResponse]
   }
   
-  @scala.inline
-  implicit class DescribeKeyPhrasesDetectionJobResponseMutableBuilder[Self <: DescribeKeyPhrasesDetectionJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeKeyPhrasesDetectionJobResponse](x: Self) {
     
-    @scala.inline
-    def setKeyPhrasesDetectionJobProperties(value: KeyPhrasesDetectionJobProperties): Self = StObject.set(x, "KeyPhrasesDetectionJobProperties", value.asInstanceOf[js.Any])
+    inline def setKeyPhrasesDetectionJobProperties(value: KeyPhrasesDetectionJobProperties): Self = StObject.set(x, "KeyPhrasesDetectionJobProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPhrasesDetectionJobPropertiesUndefined: Self = StObject.set(x, "KeyPhrasesDetectionJobProperties", js.undefined)
+    inline def setKeyPhrasesDetectionJobPropertiesUndefined: Self = StObject.set(x, "KeyPhrasesDetectionJobProperties", js.undefined)
   }
 }

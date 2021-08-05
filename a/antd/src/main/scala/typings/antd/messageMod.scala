@@ -20,14 +20,11 @@ object messageMod {
   @js.native
   val default: MessageApi = js.native
   
-  @scala.inline
-  def attachTypeApi(originalApi: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTypeApi")(originalApi.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attachTypeApi(originalApi: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTypeApi")(originalApi.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getInstance(): NotificationInstance | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[NotificationInstance | Null]
+  inline def getInstance(): NotificationInstance | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[NotificationInstance | Null]
   
-  @scala.inline
-  def getKeyThenIncreaseKey(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyThenIncreaseKey")().asInstanceOf[Double]
+  inline def getKeyThenIncreaseKey(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyThenIncreaseKey")().asInstanceOf[Double]
   
   trait ArgsProps extends StObject {
     
@@ -51,66 +48,47 @@ object messageMod {
   }
   object ArgsProps {
     
-    @scala.inline
-    def apply(`type`: NoticeType): ArgsProps = {
+    inline def apply(`type`: NoticeType): ArgsProps = {
       val __obj = js.Dynamic.literal(duration = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgsProps]
     }
     
-    @scala.inline
-    implicit class ArgsPropsMutableBuilder[Self <: ArgsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ArgsProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationNull: Self = StObject.set(x, "duration", null)
+      inline def setDurationNull: Self = StObject.set(x, "duration", null)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setType(value: NoticeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: NoticeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,56 +116,40 @@ object messageMod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      inline def setGetContainer(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+      inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
-      @scala.inline
-      def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+      inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
+      inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+      inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
+      inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
     }
   }
   
@@ -262,20 +224,15 @@ object messageMod {
   trait NoticeType extends StObject
   object NoticeType {
     
-    @scala.inline
-    def error: typings.antd.antdStrings.error = "error".asInstanceOf[typings.antd.antdStrings.error]
+    inline def error: typings.antd.antdStrings.error = "error".asInstanceOf[typings.antd.antdStrings.error]
     
-    @scala.inline
-    def info: typings.antd.antdStrings.info = "info".asInstanceOf[typings.antd.antdStrings.info]
+    inline def info: typings.antd.antdStrings.info = "info".asInstanceOf[typings.antd.antdStrings.info]
     
-    @scala.inline
-    def loading: typings.antd.antdStrings.loading = "loading".asInstanceOf[typings.antd.antdStrings.loading]
+    inline def loading: typings.antd.antdStrings.loading = "loading".asInstanceOf[typings.antd.antdStrings.loading]
     
-    @scala.inline
-    def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
+    inline def success: typings.antd.antdStrings.success = "success".asInstanceOf[typings.antd.antdStrings.success]
     
-    @scala.inline
-    def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
+    inline def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
   }
   
   type ThenableArgument = js.Function1[/* val */ js.Any, Unit]

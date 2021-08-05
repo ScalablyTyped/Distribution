@@ -29,8 +29,7 @@ object google {
     }
     object WebfontFamily {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         family: String,
         files: StringDictionary[String],
         kind: String,
@@ -43,41 +42,29 @@ object google {
         __obj.asInstanceOf[WebfontFamily]
       }
       
-      @scala.inline
-      implicit class WebfontFamilyMutableBuilder[Self <: WebfontFamily] (val x: Self) extends AnyVal {
+      extension [Self <: WebfontFamily](x: Self) {
         
-        @scala.inline
-        def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+        inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+        inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
         
-        @scala.inline
-        def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+        inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFiles(value: StringDictionary[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+        inline def setFiles(value: StringDictionary[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+        inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubsets(value: js.Array[String]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
+        inline def setSubsets(value: js.Array[String]): Self = StObject.set(x, "subsets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubsetsVarargs(value: String*): Self = StObject.set(x, "subsets", js.Array(value :_*))
+        inline def setSubsetsVarargs(value: String*): Self = StObject.set(x, "subsets", js.Array(value :_*))
         
-        @scala.inline
-        def setVariants(value: js.Array[String]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
+        inline def setVariants(value: js.Array[String]): Self = StObject.set(x, "variants", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value :_*))
+        inline def setVariantsVarargs(value: String*): Self = StObject.set(x, "variants", js.Array(value :_*))
         
-        @scala.inline
-        def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -89,23 +76,18 @@ object google {
     }
     object WebfontList {
       
-      @scala.inline
-      def apply(items: js.Array[WebfontFamily], kind: String): WebfontList = {
+      inline def apply(items: js.Array[WebfontFamily], kind: String): WebfontList = {
         val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
         __obj.asInstanceOf[WebfontList]
       }
       
-      @scala.inline
-      implicit class WebfontListMutableBuilder[Self <: WebfontList] (val x: Self) extends AnyVal {
+      extension [Self <: WebfontList](x: Self) {
         
-        @scala.inline
-        def setItems(value: js.Array[WebfontFamily]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+        inline def setItems(value: js.Array[WebfontFamily]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setItemsVarargs(value: WebfontFamily*): Self = StObject.set(x, "items", js.Array(value :_*))
+        inline def setItemsVarargs(value: WebfontFamily*): Self = StObject.set(x, "items", js.Array(value :_*))
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       }
     }
   }

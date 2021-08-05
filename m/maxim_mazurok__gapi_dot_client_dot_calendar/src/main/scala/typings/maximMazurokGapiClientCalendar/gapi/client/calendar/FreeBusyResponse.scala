@@ -32,51 +32,39 @@ trait FreeBusyResponse extends StObject {
 }
 object FreeBusyResponse {
   
-  @scala.inline
-  def apply(): FreeBusyResponse = {
+  inline def apply(): FreeBusyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FreeBusyResponse]
   }
   
-  @scala.inline
-  implicit class FreeBusyResponseMutableBuilder[Self <: FreeBusyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FreeBusyResponse](x: Self) {
     
-    @scala.inline
-    def setCalendars(
+    inline def setCalendars(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyCalendar}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
+    inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
-    @scala.inline
-    def setGroups(
+    inline def setGroups(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.calendar.gapi.client.calendar.FreeBusyGroup}
       */ typings.maximMazurokGapiClientCalendar.maximMazurokGapiClientCalendarStrings.FreeBusyResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
+    inline def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
+    inline def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
     
-    @scala.inline
-    def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
+    inline def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
+    inline def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
   }
 }

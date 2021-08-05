@@ -18,25 +18,19 @@ trait ModelEndpointDataBlob extends StObject {
 }
 object ModelEndpointDataBlob {
   
-  @scala.inline
-  def apply(): ModelEndpointDataBlob = {
+  inline def apply(): ModelEndpointDataBlob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelEndpointDataBlob]
   }
   
-  @scala.inline
-  implicit class ModelEndpointDataBlobMutableBuilder[Self <: ModelEndpointDataBlob] (val x: Self) extends AnyVal {
+  extension [Self <: ModelEndpointDataBlob](x: Self) {
     
-    @scala.inline
-    def setByteBuffer(value: blob): Self = StObject.set(x, "byteBuffer", value.asInstanceOf[js.Any])
+    inline def setByteBuffer(value: blob): Self = StObject.set(x, "byteBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteBufferUndefined: Self = StObject.set(x, "byteBuffer", js.undefined)
+    inline def setByteBufferUndefined: Self = StObject.set(x, "byteBuffer", js.undefined)
     
-    @scala.inline
-    def setContentType(value: contentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: contentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
   }
 }

@@ -30,8 +30,7 @@ trait XLayoutManagerListener
 }
 object XLayoutManagerListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     layoutEvent: (EventObject, Double, js.Any) => Unit,
@@ -42,10 +41,8 @@ object XLayoutManagerListener {
     __obj.asInstanceOf[XLayoutManagerListener]
   }
   
-  @scala.inline
-  implicit class XLayoutManagerListenerMutableBuilder[Self <: XLayoutManagerListener] (val x: Self) extends AnyVal {
+  extension [Self <: XLayoutManagerListener](x: Self) {
     
-    @scala.inline
-    def setLayoutEvent(value: (EventObject, Double, js.Any) => Unit): Self = StObject.set(x, "layoutEvent", js.Any.fromFunction3(value))
+    inline def setLayoutEvent(value: (EventObject, Double, js.Any) => Unit): Self = StObject.set(x, "layoutEvent", js.Any.fromFunction3(value))
   }
 }

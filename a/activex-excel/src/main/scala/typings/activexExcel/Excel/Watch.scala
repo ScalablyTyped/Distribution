@@ -12,7 +12,7 @@ trait Watch extends StObject {
   
   def Delete(): Unit
   
-  @JSName("Excel.Watch_typekey")
+  /* private */ @JSName("Excel.Watch_typekey")
   var ExcelDotWatch_typekey: Watch
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait Watch extends StObject {
 }
 object Watch {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Delete: () => Unit,
@@ -35,25 +34,18 @@ object Watch {
     __obj.asInstanceOf[Watch]
   }
   
-  @scala.inline
-  implicit class WatchMutableBuilder[Self <: Watch] (val x: Self) extends AnyVal {
+  extension [Self <: Watch](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExcelDotWatch_typekey(value: Watch): Self = StObject.set(x, "Excel.Watch_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotWatch_typekey(value: Watch): Self = StObject.set(x, "Excel.Watch_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

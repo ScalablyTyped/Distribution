@@ -434,8 +434,7 @@ object ipv6Mod {
       * address.correctForm(); // '::ffff:c0a8:1'
       * address.to4in6(); // '::ffff:192.168.0.1'
       */
-    @scala.inline
-    def fromAddress4(address: String): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress4")(address.asInstanceOf[js.Any]).asInstanceOf[Address6]
+    inline def fromAddress4(address: String): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress4")(address.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     /**
       * Return an address from ip6.arpa form
@@ -447,8 +446,7 @@ object ipv6Mod {
       * var address = Address6.fromArpa(e.f.f.f.3.c.2.6.f.f.f.e.6.6.8.e.1.0.6.7.9.4.e.c.0.0.0.0.1.0.0.2.ip6.arpa.)
       * address.correctForm(); // '2001:0:ce49:7601:e866:efff:62c3:fffe'
       */
-    @scala.inline
-    def fromArpa(arpaFormAddress: String): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[Address6]
+    inline def fromArpa(arpaFormAddress: String): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArpa")(arpaFormAddress.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     /**
       * Convert a BigInteger to a v6 address object
@@ -461,8 +459,7 @@ object ipv6Mod {
       * var address = Address6.fromBigInteger(bigInteger);
       * address.correctForm(); // '::e8:d4a5:1000'
       */
-    @scala.inline
-    def fromBigInteger(bigInteger: BigInteger): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[Address6]
+    inline def fromBigInteger(bigInteger: BigInteger): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBigInteger")(bigInteger.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     /**
       * Convert a byte array to an Address6 object
@@ -470,8 +467,7 @@ object ipv6Mod {
       * @static
       * @returns {Address6}
       */
-    @scala.inline
-    def fromByteArray(bytes: js.Array[js.Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
+    inline def fromByteArray(bytes: js.Array[js.Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
     /**
       * Convert a URL (with optional port number) to an address object
@@ -483,8 +479,7 @@ object ipv6Mod {
       * addressAndPort.address.correctForm(); // 'ffff::'
       * addressAndPort.port; // 8080
       */
-    @scala.inline
-    def fromURL(url: String): Address | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[Address | Error]
+    inline def fromURL(url: String): Address | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[Address | Error]
     
     /**
       * Convert an unsigned byte array to an Address6 object
@@ -492,11 +487,9 @@ object ipv6Mod {
       * @static
       * @returns {Address6}
       */
-    @scala.inline
-    def fromUnsignedByteArray(bytes: js.Array[js.Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
+    inline def fromUnsignedByteArray(bytes: js.Array[js.Any]): Address6 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUnsignedByteArray")(bytes.asInstanceOf[js.Any]).asInstanceOf[Address6]
     
-    @scala.inline
-    def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isValid(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   trait ReverseFormOptions extends StObject {
@@ -505,20 +498,16 @@ object ipv6Mod {
   }
   object ReverseFormOptions {
     
-    @scala.inline
-    def apply(): ReverseFormOptions = {
+    inline def apply(): ReverseFormOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReverseFormOptions]
     }
     
-    @scala.inline
-    implicit class ReverseFormOptionsMutableBuilder[Self <: ReverseFormOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReverseFormOptions](x: Self) {
       
-      @scala.inline
-      def setOmitSuffix(value: Boolean): Self = StObject.set(x, "omitSuffix", value.asInstanceOf[js.Any])
+      inline def setOmitSuffix(value: Boolean): Self = StObject.set(x, "omitSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitSuffixUndefined: Self = StObject.set(x, "omitSuffix", js.undefined)
+      inline def setOmitSuffixUndefined: Self = StObject.set(x, "omitSuffix", js.undefined)
     }
   }
   
@@ -530,20 +519,16 @@ object ipv6Mod {
   }
   object SixToFourProperties {
     
-    @scala.inline
-    def apply(gateway: String, prefix: String): SixToFourProperties = {
+    inline def apply(gateway: String, prefix: String): SixToFourProperties = {
       val __obj = js.Dynamic.literal(gateway = gateway.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[SixToFourProperties]
     }
     
-    @scala.inline
-    implicit class SixToFourPropertiesMutableBuilder[Self <: SixToFourProperties] (val x: Self) extends AnyVal {
+    extension [Self <: SixToFourProperties](x: Self) {
       
-      @scala.inline
-      def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
+      inline def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -565,8 +550,7 @@ object ipv6Mod {
   }
   object TeredoProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       client4: String,
       coneNat: Boolean,
       flags: String,
@@ -579,29 +563,21 @@ object ipv6Mod {
       __obj.asInstanceOf[TeredoProperties]
     }
     
-    @scala.inline
-    implicit class TeredoPropertiesMutableBuilder[Self <: TeredoProperties] (val x: Self) extends AnyVal {
+    extension [Self <: TeredoProperties](x: Self) {
       
-      @scala.inline
-      def setClient4(value: String): Self = StObject.set(x, "client4", value.asInstanceOf[js.Any])
+      inline def setClient4(value: String): Self = StObject.set(x, "client4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConeNat(value: Boolean): Self = StObject.set(x, "coneNat", value.asInstanceOf[js.Any])
+      inline def setConeNat(value: Boolean): Self = StObject.set(x, "coneNat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMicrosoft(value: GroupIndividual): Self = StObject.set(x, "microsoft", value.asInstanceOf[js.Any])
+      inline def setMicrosoft(value: GroupIndividual): Self = StObject.set(x, "microsoft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer4(value: String): Self = StObject.set(x, "server4", value.asInstanceOf[js.Any])
+      inline def setServer4(value: String): Self = StObject.set(x, "server4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUdpPort(value: String): Self = StObject.set(x, "udpPort", value.asInstanceOf[js.Any])
+      inline def setUdpPort(value: String): Self = StObject.set(x, "udpPort", value.asInstanceOf[js.Any])
     }
   }
 }

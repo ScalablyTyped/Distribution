@@ -10,16 +10,13 @@ trait TrackSnippetParams extends StObject {
 }
 object TrackSnippetParams {
   
-  @scala.inline
-  def apply(track_id: Double): TrackSnippetParams = {
+  inline def apply(track_id: Double): TrackSnippetParams = {
     val __obj = js.Dynamic.literal(track_id = track_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrackSnippetParams]
   }
   
-  @scala.inline
-  implicit class TrackSnippetParamsMutableBuilder[Self <: TrackSnippetParams] (val x: Self) extends AnyVal {
+  extension [Self <: TrackSnippetParams](x: Self) {
     
-    @scala.inline
-    def setTrack_id(value: Double): Self = StObject.set(x, "track_id", value.asInstanceOf[js.Any])
+    inline def setTrack_id(value: Double): Self = StObject.set(x, "track_id", value.asInstanceOf[js.Any])
   }
 }

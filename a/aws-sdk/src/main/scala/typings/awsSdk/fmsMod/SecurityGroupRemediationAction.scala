@@ -28,37 +28,27 @@ trait SecurityGroupRemediationAction extends StObject {
 }
 object SecurityGroupRemediationAction {
   
-  @scala.inline
-  def apply(): SecurityGroupRemediationAction = {
+  inline def apply(): SecurityGroupRemediationAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityGroupRemediationAction]
   }
   
-  @scala.inline
-  implicit class SecurityGroupRemediationActionMutableBuilder[Self <: SecurityGroupRemediationAction] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityGroupRemediationAction](x: Self) {
     
-    @scala.inline
-    def setDescription(value: RemediationActionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: RemediationActionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setIsDefaultAction(value: Boolean): Self = StObject.set(x, "IsDefaultAction", value.asInstanceOf[js.Any])
+    inline def setIsDefaultAction(value: Boolean): Self = StObject.set(x, "IsDefaultAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultActionUndefined: Self = StObject.set(x, "IsDefaultAction", js.undefined)
+    inline def setIsDefaultActionUndefined: Self = StObject.set(x, "IsDefaultAction", js.undefined)
     
-    @scala.inline
-    def setRemediationActionType(value: RemediationActionType): Self = StObject.set(x, "RemediationActionType", value.asInstanceOf[js.Any])
+    inline def setRemediationActionType(value: RemediationActionType): Self = StObject.set(x, "RemediationActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemediationActionTypeUndefined: Self = StObject.set(x, "RemediationActionType", js.undefined)
+    inline def setRemediationActionTypeUndefined: Self = StObject.set(x, "RemediationActionType", js.undefined)
     
-    @scala.inline
-    def setRemediationResult(value: SecurityGroupRuleDescription): Self = StObject.set(x, "RemediationResult", value.asInstanceOf[js.Any])
+    inline def setRemediationResult(value: SecurityGroupRuleDescription): Self = StObject.set(x, "RemediationResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemediationResultUndefined: Self = StObject.set(x, "RemediationResult", js.undefined)
+    inline def setRemediationResultUndefined: Self = StObject.set(x, "RemediationResult", js.undefined)
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConditionalAccessPolicyState extends StObject
 object ConditionalAccessPolicyState {
   
-  @scala.inline
-  def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
+  inline def disabled: typings.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.disabled]
   
-  @scala.inline
-  def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = "enabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabled]
+  inline def enabled: typings.microsoftGraph.microsoftGraphStrings.enabled = "enabled".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabled]
   
-  @scala.inline
-  def enabledForReportingButNotEnforced: typings.microsoftGraph.microsoftGraphStrings.enabledForReportingButNotEnforced = "enabledForReportingButNotEnforced".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabledForReportingButNotEnforced]
+  inline def enabledForReportingButNotEnforced: typings.microsoftGraph.microsoftGraphStrings.enabledForReportingButNotEnforced = "enabledForReportingButNotEnforced".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.enabledForReportingButNotEnforced]
 }

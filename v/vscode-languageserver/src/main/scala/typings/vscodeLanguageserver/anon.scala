@@ -43,8 +43,7 @@ object anon {
   }
   object On {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       on: ServerRequestHandler[SemanticTokensParams, SemanticTokens, SemanticTokensPartialResult, Unit] => Unit,
       onEdits: ServerRequestHandler[
           SemanticTokensEditsParams, 
@@ -58,16 +57,13 @@ object anon {
       __obj.asInstanceOf[On]
     }
     
-    @scala.inline
-    implicit class OnMutableBuilder[Self <: On] (val x: Self) extends AnyVal {
+    extension [Self <: On](x: Self) {
       
-      @scala.inline
-      def setOn(
+      inline def setOn(
         value: ServerRequestHandler[SemanticTokensParams, SemanticTokens, SemanticTokensPartialResult, Unit] => Unit
       ): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEdits(
+      inline def setOnEdits(
         value: ServerRequestHandler[
               SemanticTokensEditsParams, 
               SemanticTokensEdits | SemanticTokens, 
@@ -76,8 +72,7 @@ object anon {
             ] => Unit
       ): Self = StObject.set(x, "onEdits", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRange(
+      inline def setOnRange(
         value: ServerRequestHandler[SemanticTokensRangeParams, SemanticTokens, SemanticTokensPartialResult, Unit] => Unit
       ): Self = StObject.set(x, "onRange", js.Any.fromFunction1(value))
     }
@@ -109,8 +104,7 @@ object anon {
   }
   object OnIncomingCalls {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       onIncomingCalls: ServerRequestHandler[
           CallHierarchyIncomingCallsParams, 
           js.Array[CallHierarchyIncomingCall] | Null, 
@@ -129,11 +123,9 @@ object anon {
       __obj.asInstanceOf[OnIncomingCalls]
     }
     
-    @scala.inline
-    implicit class OnIncomingCallsMutableBuilder[Self <: OnIncomingCalls] (val x: Self) extends AnyVal {
+    extension [Self <: OnIncomingCalls](x: Self) {
       
-      @scala.inline
-      def setOnIncomingCalls(
+      inline def setOnIncomingCalls(
         value: ServerRequestHandler[
               CallHierarchyIncomingCallsParams, 
               js.Array[CallHierarchyIncomingCall] | Null, 
@@ -142,8 +134,7 @@ object anon {
             ] => Unit
       ): Self = StObject.set(x, "onIncomingCalls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOutgoingCalls(
+      inline def setOnOutgoingCalls(
         value: ServerRequestHandler[
               CallHierarchyOutgoingCallsParams, 
               js.Array[CallHierarchyOutgoingCall] | Null, 
@@ -152,8 +143,7 @@ object anon {
             ] => Unit
       ): Self = StObject.set(x, "onOutgoingCalls", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPrepare(
+      inline def setOnPrepare(
         value: ServerRequestHandler[CallHierarchyPrepareParams, js.Array[CallHierarchyItem] | Null, scala.Nothing, Unit] => Unit
       ): Self = StObject.set(x, "onPrepare", js.Any.fromFunction1(value))
     }
@@ -167,20 +157,16 @@ object anon {
   }
   object Placeholder {
     
-    @scala.inline
-    def apply(placeholder: String, range: Range): Placeholder = {
+    inline def apply(placeholder: String, range: Range): Placeholder = {
       val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
       __obj.asInstanceOf[Placeholder]
     }
     
-    @scala.inline
-    implicit class PlaceholderMutableBuilder[Self <: Placeholder] (val x: Self) extends AnyVal {
+    extension [Self <: Placeholder](x: Self) {
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,17 +176,14 @@ object anon {
   }
   object Window {
     
-    @scala.inline
-    def apply(window: RemoteWindow): Window = {
+    inline def apply(window: RemoteWindow): Window = {
       val __obj = js.Dynamic.literal(window = window.asInstanceOf[js.Any])
       __obj.asInstanceOf[Window]
     }
     
-    @scala.inline
-    implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+    extension [Self <: Window](x: Self) {
       
-      @scala.inline
-      def setWindow(value: RemoteWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: RemoteWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     }
   }
 }

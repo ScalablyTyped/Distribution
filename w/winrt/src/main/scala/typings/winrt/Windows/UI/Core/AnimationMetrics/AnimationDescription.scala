@@ -10,8 +10,7 @@ trait AnimationDescription
      with IAnimationDescription
 object AnimationDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animations: IVectorView[IPropertyAnimation],
     delayLimit: Double,
     staggerDelay: Double,

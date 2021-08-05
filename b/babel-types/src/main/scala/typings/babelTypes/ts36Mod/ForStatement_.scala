@@ -27,8 +27,7 @@ trait ForStatement_
 }
 object ForStatement_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: Statement,
     end: Double,
     init: VariableDeclaration_ | Expression,
@@ -42,22 +41,16 @@ object ForStatement_ {
     __obj.asInstanceOf[ForStatement_]
   }
   
-  @scala.inline
-  implicit class ForStatement_MutableBuilder[Self <: ForStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: ForStatement_](x: Self) {
     
-    @scala.inline
-    def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: VariableDeclaration_ | Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: VariableDeclaration_ | Expression): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ForStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: Expression): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Expression): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

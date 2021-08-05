@@ -16,16 +16,13 @@ trait ViewRefTracker extends StObject {
 }
 object ViewRefTracker {
   
-  @scala.inline
-  def apply(detachView: ViewRef => Unit): ViewRefTracker = {
+  inline def apply(detachView: ViewRef => Unit): ViewRefTracker = {
     val __obj = js.Dynamic.literal(detachView = js.Any.fromFunction1(detachView))
     __obj.asInstanceOf[ViewRefTracker]
   }
   
-  @scala.inline
-  implicit class ViewRefTrackerMutableBuilder[Self <: ViewRefTracker] (val x: Self) extends AnyVal {
+  extension [Self <: ViewRefTracker](x: Self) {
     
-    @scala.inline
-    def setDetachView(value: ViewRef => Unit): Self = StObject.set(x, "detachView", js.Any.fromFunction1(value))
+    inline def setDetachView(value: ViewRef => Unit): Self = StObject.set(x, "detachView", js.Any.fromFunction1(value))
   }
 }

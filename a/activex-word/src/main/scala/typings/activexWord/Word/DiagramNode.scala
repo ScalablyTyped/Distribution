@@ -62,6 +62,6 @@ trait DiagramNode extends StObject {
   
   def TransferChildren(ReceivingNode: DiagramNode): Unit = js.native
   
-  @JSName("Word.DiagramNode_typekey")
+  /* private */ @JSName("Word.DiagramNode_typekey")
   var WordDotDiagramNode_typekey: DiagramNode = js.native
 }

@@ -29,8 +29,7 @@ trait DocumentCloser
 }
 object DocumentCloser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentCloserCtor1: XFrame => Unit,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
@@ -43,10 +42,8 @@ object DocumentCloser {
     __obj.asInstanceOf[DocumentCloser]
   }
   
-  @scala.inline
-  implicit class DocumentCloserMutableBuilder[Self <: DocumentCloser] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentCloser](x: Self) {
     
-    @scala.inline
-    def setDocumentCloserCtor1(value: XFrame => Unit): Self = StObject.set(x, "DocumentCloserCtor1", js.Any.fromFunction1(value))
+    inline def setDocumentCloserCtor1(value: XFrame => Unit): Self = StObject.set(x, "DocumentCloserCtor1", js.Any.fromFunction1(value))
   }
 }

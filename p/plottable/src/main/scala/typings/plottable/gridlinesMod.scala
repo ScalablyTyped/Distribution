@@ -20,23 +20,23 @@ object gridlinesMod {
     def this(xScale: Null, yScale: Scale[js.Any, js.Any]) = this()
     def this(xScale: Scale[js.Any, js.Any], yScale: Scale[js.Any, js.Any]) = this()
     
-    var _betweenX: js.Any = js.native
+    /* private */ var _betweenX: js.Any = js.native
     
-    var _betweenY: js.Any = js.native
+    /* private */ var _betweenY: js.Any = js.native
     
     /* private */ def _redrawXLines(): js.Any = js.native
     
     /* private */ def _redrawYLines(): js.Any = js.native
     
-    var _renderCallback: js.Any = js.native
+    /* private */ var _renderCallback: js.Any = js.native
     
-    var _xLinesContainer: js.Any = js.native
+    /* private */ var _xLinesContainer: js.Any = js.native
     
-    var _xScale: js.Any = js.native
+    /* private */ var _xScale: js.Any = js.native
     
-    var _yLinesContainer: js.Any = js.native
+    /* private */ var _yLinesContainer: js.Any = js.native
     
-    var _yScale: js.Any = js.native
+    /* private */ var _yScale: js.Any = js.native
     
     /**
       * Gets the between flag for the x axis.

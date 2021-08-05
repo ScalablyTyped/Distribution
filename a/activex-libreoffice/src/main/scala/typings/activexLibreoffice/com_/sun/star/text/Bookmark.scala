@@ -15,8 +15,7 @@ trait Bookmark
      with XNamed
 object Bookmark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],

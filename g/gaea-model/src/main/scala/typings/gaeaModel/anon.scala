@@ -18,20 +18,16 @@ object anon {
   }
   object BeforeName {
     
-    @scala.inline
-    def apply(beforeName: String, beforeProps: ComponentProps): BeforeName = {
+    inline def apply(beforeName: String, beforeProps: ComponentProps): BeforeName = {
       val __obj = js.Dynamic.literal(beforeName = beforeName.asInstanceOf[js.Any], beforeProps = beforeProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeforeName]
     }
     
-    @scala.inline
-    implicit class BeforeNameMutableBuilder[Self <: BeforeName] (val x: Self) extends AnyVal {
+    extension [Self <: BeforeName](x: Self) {
       
-      @scala.inline
-      def setBeforeName(value: String): Self = StObject.set(x, "beforeName", value.asInstanceOf[js.Any])
+      inline def setBeforeName(value: String): Self = StObject.set(x, "beforeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeProps(value: ComponentProps): Self = StObject.set(x, "beforeProps", value.asInstanceOf[js.Any])
+      inline def setBeforeProps(value: ComponentProps): Self = StObject.set(x, "beforeProps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,23 +44,18 @@ object anon {
   }
   object ComponentInfo {
     
-    @scala.inline
-    def apply(componentInfo: ViewportComponentFullInfo, index: Double, parentMapUniqueKey: String): ComponentInfo = {
+    inline def apply(componentInfo: ViewportComponentFullInfo, index: Double, parentMapUniqueKey: String): ComponentInfo = {
       val __obj = js.Dynamic.literal(componentInfo = componentInfo.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], parentMapUniqueKey = parentMapUniqueKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentInfo]
     }
     
-    @scala.inline
-    implicit class ComponentInfoMutableBuilder[Self <: ComponentInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentInfo](x: Self) {
       
-      @scala.inline
-      def setComponentInfo(value: ViewportComponentFullInfo): Self = StObject.set(x, "componentInfo", value.asInstanceOf[js.Any])
+      inline def setComponentInfo(value: ViewportComponentFullInfo): Self = StObject.set(x, "componentInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
+      inline def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,71 +81,50 @@ object anon {
   }
   object CurrentUnit {
     
-    @scala.inline
-    def apply(currentUnit: String, units: js.Array[Number]): CurrentUnit = {
+    inline def apply(currentUnit: String, units: js.Array[Number]): CurrentUnit = {
       val __obj = js.Dynamic.literal(currentUnit = currentUnit.asInstanceOf[js.Any], units = units.asInstanceOf[js.Any])
       __obj.asInstanceOf[CurrentUnit]
     }
     
-    @scala.inline
-    implicit class CurrentUnitMutableBuilder[Self <: CurrentUnit] (val x: Self) extends AnyVal {
+    extension [Self <: CurrentUnit](x: Self) {
       
-      @scala.inline
-      def setCurrentUnit(value: String): Self = StObject.set(x, "currentUnit", value.asInstanceOf[js.Any])
+      inline def setCurrentUnit(value: String): Self = StObject.set(x, "currentUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRange(value: js.Array[Double]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
+      inline def setInputRange(value: js.Array[Double]): Self = StObject.set(x, "inputRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputRangeUndefined: Self = StObject.set(x, "inputRange", js.undefined)
+      inline def setInputRangeUndefined: Self = StObject.set(x, "inputRange", js.undefined)
       
-      @scala.inline
-      def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value :_*))
+      inline def setInputRangeVarargs(value: Double*): Self = StObject.set(x, "inputRange", js.Array(value :_*))
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOutputRange(value: js.Array[Double]): Self = StObject.set(x, "outputRange", value.asInstanceOf[js.Any])
+      inline def setOutputRange(value: js.Array[Double]): Self = StObject.set(x, "outputRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputRangeUndefined: Self = StObject.set(x, "outputRange", js.undefined)
+      inline def setOutputRangeUndefined: Self = StObject.set(x, "outputRange", js.undefined)
       
-      @scala.inline
-      def setOutputRangeVarargs(value: Double*): Self = StObject.set(x, "outputRange", js.Array(value :_*))
+      inline def setOutputRangeVarargs(value: Double*): Self = StObject.set(x, "outputRange", js.Array(value :_*))
       
-      @scala.inline
-      def setSlider(value: Boolean): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+      inline def setSlider(value: Boolean): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
+      inline def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setUnits(value: js.Array[Number]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: js.Array[Number]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsVarargs(value: Number*): Self = StObject.set(x, "units", js.Array(value :_*))
+      inline def setUnitsVarargs(value: Number*): Self = StObject.set(x, "units", js.Array(value :_*))
     }
   }
   
@@ -171,23 +141,18 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply(index: Double, parentMapUniqueKey: String, uniqueId: String): Index = {
+    inline def apply(index: Double, parentMapUniqueKey: String, uniqueId: String): Index = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], parentMapUniqueKey = parentMapUniqueKey.asInstanceOf[js.Any], uniqueId = uniqueId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+    extension [Self <: Index](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
+      inline def setParentMapUniqueKey(value: String): Self = StObject.set(x, "parentMapUniqueKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
+      inline def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,29 +169,22 @@ object anon {
   }
   object MapUniqueKey {
     
-    @scala.inline
-    def apply(mapUniqueKey: String): MapUniqueKey = {
+    inline def apply(mapUniqueKey: String): MapUniqueKey = {
       val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapUniqueKey]
     }
     
-    @scala.inline
-    implicit class MapUniqueKeyMutableBuilder[Self <: MapUniqueKey] (val x: Self) extends AnyVal {
+    extension [Self <: MapUniqueKey](x: Self) {
       
-      @scala.inline
-      def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
+      inline def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIndex(value: Double): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
+      inline def setTargetIndex(value: Double): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIndexUndefined: Self = StObject.set(x, "targetIndex", js.undefined)
+      inline def setTargetIndexUndefined: Self = StObject.set(x, "targetIndex", js.undefined)
       
-      @scala.inline
-      def setTargetMapUniqueKey(value: String): Self = StObject.set(x, "targetMapUniqueKey", value.asInstanceOf[js.Any])
+      inline def setTargetMapUniqueKey(value: String): Self = StObject.set(x, "targetMapUniqueKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetMapUniqueKeyUndefined: Self = StObject.set(x, "targetMapUniqueKey", js.undefined)
+      inline def setTargetMapUniqueKeyUndefined: Self = StObject.set(x, "targetMapUniqueKey", js.undefined)
     }
   }
   
@@ -238,20 +196,16 @@ object anon {
   }
   object NewIndex {
     
-    @scala.inline
-    def apply(newIndex: Double, oldIndex: Double): NewIndex = {
+    inline def apply(newIndex: Double, oldIndex: Double): NewIndex = {
       val __obj = js.Dynamic.literal(newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewIndex]
     }
     
-    @scala.inline
-    implicit class NewIndexMutableBuilder[Self <: NewIndex] (val x: Self) extends AnyVal {
+    extension [Self <: NewIndex](x: Self) {
       
-      @scala.inline
-      def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+      inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+      inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -263,20 +217,16 @@ object anon {
   }
   object NewValue {
     
-    @scala.inline
-    def apply(newValue: ComponentProps, oldValue: ComponentProps): NewValue = {
+    inline def apply(newValue: ComponentProps, oldValue: ComponentProps): NewValue = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewValue]
     }
     
-    @scala.inline
-    implicit class NewValueMutableBuilder[Self <: NewValue] (val x: Self) extends AnyVal {
+    extension [Self <: NewValue](x: Self) {
       
-      @scala.inline
-      def setNewValue(value: ComponentProps): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: ComponentProps): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldValue(value: ComponentProps): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: ComponentProps): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,17 +237,14 @@ object anon {
   }
   object Source {
     
-    @scala.inline
-    def apply(source: String): Source = {
+    inline def apply(source: String): Source = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Source]
     }
     
-    @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+    extension [Self <: Source](x: Self) {
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,8 +264,7 @@ object anon {
   }
   object SourceIndex {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       sourceIndex: Double,
       sourceParentMapUniqueKey: String,
       targetIndex: Double,
@@ -328,20 +274,15 @@ object anon {
       __obj.asInstanceOf[SourceIndex]
     }
     
-    @scala.inline
-    implicit class SourceIndexMutableBuilder[Self <: SourceIndex] (val x: Self) extends AnyVal {
+    extension [Self <: SourceIndex](x: Self) {
       
-      @scala.inline
-      def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+      inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceParentMapUniqueKey(value: String): Self = StObject.set(x, "sourceParentMapUniqueKey", value.asInstanceOf[js.Any])
+      inline def setSourceParentMapUniqueKey(value: String): Self = StObject.set(x, "sourceParentMapUniqueKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetIndex(value: Double): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
+      inline def setTargetIndex(value: Double): Self = StObject.set(x, "targetIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetParentMapUniqueKey(value: String): Self = StObject.set(x, "targetParentMapUniqueKey", value.asInstanceOf[js.Any])
+      inline def setTargetParentMapUniqueKey(value: String): Self = StObject.set(x, "targetParentMapUniqueKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -352,17 +293,14 @@ object anon {
   }
   object UniqueKey {
     
-    @scala.inline
-    def apply(uniqueKey: String): UniqueKey = {
+    inline def apply(uniqueKey: String): UniqueKey = {
       val __obj = js.Dynamic.literal(uniqueKey = uniqueKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[UniqueKey]
     }
     
-    @scala.inline
-    implicit class UniqueKeyMutableBuilder[Self <: UniqueKey] (val x: Self) extends AnyVal {
+    extension [Self <: UniqueKey](x: Self) {
       
-      @scala.inline
-      def setUniqueKey(value: String): Self = StObject.set(x, "uniqueKey", value.asInstanceOf[js.Any])
+      inline def setUniqueKey(value: String): Self = StObject.set(x, "uniqueKey", value.asInstanceOf[js.Any])
     }
   }
 }

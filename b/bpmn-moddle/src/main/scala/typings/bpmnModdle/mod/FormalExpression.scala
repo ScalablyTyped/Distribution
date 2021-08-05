@@ -14,8 +14,7 @@ trait FormalExpression
 }
 object FormalExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     body: String,
@@ -27,13 +26,10 @@ object FormalExpression {
     __obj.asInstanceOf[FormalExpression]
   }
   
-  @scala.inline
-  implicit class FormalExpressionMutableBuilder[Self <: FormalExpression] (val x: Self) extends AnyVal {
+  extension [Self <: FormalExpression](x: Self) {
     
-    @scala.inline
-    def setEvaluatesToTypeRef(value: ItemDefinition): Self = StObject.set(x, "evaluatesToTypeRef", value.asInstanceOf[js.Any])
+    inline def setEvaluatesToTypeRef(value: ItemDefinition): Self = StObject.set(x, "evaluatesToTypeRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
   }
 }

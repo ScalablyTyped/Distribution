@@ -28,28 +28,21 @@ trait RangeDetails extends StObject {
 }
 object RangeDetails {
   
-  @scala.inline
-  def apply(base: NativePointer, protection: PageProtection, size: Double): RangeDetails = {
+  inline def apply(base: NativePointer, protection: PageProtection, size: Double): RangeDetails = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], protection = protection.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeDetails]
   }
   
-  @scala.inline
-  implicit class RangeDetailsMutableBuilder[Self <: RangeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RangeDetails](x: Self) {
     
-    @scala.inline
-    def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: NativePointer): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: FileMapping): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: FileMapping): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setProtection(value: PageProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    inline def setProtection(value: PageProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

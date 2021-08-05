@@ -10,8 +10,6 @@ object useStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](): js.Tuple2[T, js.Function1[/* next */ T | js.Function0[T], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[T, js.Function1[/* next */ T | js.Function0[T], Unit]]]
-  @scala.inline
-  def default[T](defaultValue: T): js.Tuple2[T, js.Function1[/* next */ T | js.Function0[T], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* next */ T | js.Function0[T], Unit]]]
+  inline def default[T](): js.Tuple2[T, js.Function1[/* next */ T | js.Function0[T], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[T, js.Function1[/* next */ T | js.Function0[T], Unit]]]
+  inline def default[T](defaultValue: T): js.Tuple2[T, js.Function1[/* next */ T | js.Function0[T], Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, js.Function1[/* next */ T | js.Function0[T], Unit]]]
 }

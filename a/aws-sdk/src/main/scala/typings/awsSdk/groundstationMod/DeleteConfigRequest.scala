@@ -18,19 +18,15 @@ trait DeleteConfigRequest extends StObject {
 }
 object DeleteConfigRequest {
   
-  @scala.inline
-  def apply(configId: String, configType: ConfigCapabilityType): DeleteConfigRequest = {
+  inline def apply(configId: String, configType: ConfigCapabilityType): DeleteConfigRequest = {
     val __obj = js.Dynamic.literal(configId = configId.asInstanceOf[js.Any], configType = configType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConfigRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConfigRequestMutableBuilder[Self <: DeleteConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConfigRequest](x: Self) {
     
-    @scala.inline
-    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
+    inline def setConfigType(value: ConfigCapabilityType): Self = StObject.set(x, "configType", value.asInstanceOf[js.Any])
   }
 }

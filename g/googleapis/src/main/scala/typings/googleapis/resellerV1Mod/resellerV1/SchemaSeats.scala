@@ -47,37 +47,27 @@ trait SchemaSeats extends StObject {
 }
 object SchemaSeats {
   
-  @scala.inline
-  def apply(): SchemaSeats = {
+  inline def apply(): SchemaSeats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSeats]
   }
   
-  @scala.inline
-  implicit class SchemaSeatsMutableBuilder[Self <: SchemaSeats] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSeats](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLicensedNumberOfSeats(value: Double): Self = StObject.set(x, "licensedNumberOfSeats", value.asInstanceOf[js.Any])
+    inline def setLicensedNumberOfSeats(value: Double): Self = StObject.set(x, "licensedNumberOfSeats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensedNumberOfSeatsUndefined: Self = StObject.set(x, "licensedNumberOfSeats", js.undefined)
+    inline def setLicensedNumberOfSeatsUndefined: Self = StObject.set(x, "licensedNumberOfSeats", js.undefined)
     
-    @scala.inline
-    def setMaximumNumberOfSeats(value: Double): Self = StObject.set(x, "maximumNumberOfSeats", value.asInstanceOf[js.Any])
+    inline def setMaximumNumberOfSeats(value: Double): Self = StObject.set(x, "maximumNumberOfSeats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumNumberOfSeatsUndefined: Self = StObject.set(x, "maximumNumberOfSeats", js.undefined)
+    inline def setMaximumNumberOfSeatsUndefined: Self = StObject.set(x, "maximumNumberOfSeats", js.undefined)
     
-    @scala.inline
-    def setNumberOfSeats(value: Double): Self = StObject.set(x, "numberOfSeats", value.asInstanceOf[js.Any])
+    inline def setNumberOfSeats(value: Double): Self = StObject.set(x, "numberOfSeats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfSeatsUndefined: Self = StObject.set(x, "numberOfSeats", js.undefined)
+    inline def setNumberOfSeatsUndefined: Self = StObject.set(x, "numberOfSeats", js.undefined)
   }
 }

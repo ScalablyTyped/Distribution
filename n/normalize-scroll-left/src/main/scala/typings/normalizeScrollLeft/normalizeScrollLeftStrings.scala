@@ -11,37 +11,31 @@ object normalizeScrollLeftStrings {
   sealed trait default
     extends StObject
        with ScrollType
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait indeterminate
     extends StObject
        with ScrollType
-  @scala.inline
-  def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
+  inline def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   
   @js.native
   sealed trait ltr extends StObject
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait negative
     extends StObject
        with ScrollType
-  @scala.inline
-  def negative: negative = "negative".asInstanceOf[negative]
+  inline def negative: negative = "negative".asInstanceOf[negative]
   
   @js.native
   sealed trait reverse
     extends StObject
        with ScrollType
-  @scala.inline
-  def reverse: reverse = "reverse".asInstanceOf[reverse]
+  inline def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
   sealed trait rtl extends StObject
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
 }

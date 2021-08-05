@@ -21,6 +21,5 @@ class SyntaxError ()
 }
 object SyntaxError {
   
-  @scala.inline
-  def apply: SyntaxErrorConstructor = js.Dynamic.global.selectDynamic("SyntaxError").asInstanceOf[SyntaxErrorConstructor]
+  inline def apply: SyntaxErrorConstructor = js.Dynamic.global.selectDynamic("SyntaxError").asInstanceOf[SyntaxErrorConstructor]
 }

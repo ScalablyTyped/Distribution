@@ -11,8 +11,6 @@ object useStableMemoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](factory: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(factory.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def default[T](factory: js.Function0[T], deps: DependencyList): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(factory.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](factory: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(factory.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](factory: js.Function0[T], deps: DependencyList): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(factory.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
 }

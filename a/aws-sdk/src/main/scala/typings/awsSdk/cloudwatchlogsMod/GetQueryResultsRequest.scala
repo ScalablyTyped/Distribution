@@ -13,16 +13,13 @@ trait GetQueryResultsRequest extends StObject {
 }
 object GetQueryResultsRequest {
   
-  @scala.inline
-  def apply(queryId: QueryId): GetQueryResultsRequest = {
+  inline def apply(queryId: QueryId): GetQueryResultsRequest = {
     val __obj = js.Dynamic.literal(queryId = queryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetQueryResultsRequest]
   }
   
-  @scala.inline
-  implicit class GetQueryResultsRequestMutableBuilder[Self <: GetQueryResultsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetQueryResultsRequest](x: Self) {
     
-    @scala.inline
-    def setQueryId(value: QueryId): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
+    inline def setQueryId(value: QueryId): Self = StObject.set(x, "queryId", value.asInstanceOf[js.Any])
   }
 }

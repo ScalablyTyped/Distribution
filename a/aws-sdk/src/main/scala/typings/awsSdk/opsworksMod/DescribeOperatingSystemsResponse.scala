@@ -13,22 +13,17 @@ trait DescribeOperatingSystemsResponse extends StObject {
 }
 object DescribeOperatingSystemsResponse {
   
-  @scala.inline
-  def apply(): DescribeOperatingSystemsResponse = {
+  inline def apply(): DescribeOperatingSystemsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOperatingSystemsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOperatingSystemsResponseMutableBuilder[Self <: DescribeOperatingSystemsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOperatingSystemsResponse](x: Self) {
     
-    @scala.inline
-    def setOperatingSystems(value: OperatingSystems): Self = StObject.set(x, "OperatingSystems", value.asInstanceOf[js.Any])
+    inline def setOperatingSystems(value: OperatingSystems): Self = StObject.set(x, "OperatingSystems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemsUndefined: Self = StObject.set(x, "OperatingSystems", js.undefined)
+    inline def setOperatingSystemsUndefined: Self = StObject.set(x, "OperatingSystems", js.undefined)
     
-    @scala.inline
-    def setOperatingSystemsVarargs(value: OperatingSystem*): Self = StObject.set(x, "OperatingSystems", js.Array(value :_*))
+    inline def setOperatingSystemsVarargs(value: OperatingSystem*): Self = StObject.set(x, "OperatingSystems", js.Array(value :_*))
   }
 }

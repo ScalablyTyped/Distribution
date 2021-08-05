@@ -16,25 +16,19 @@ trait Medium extends StObject {
 }
 object Medium {
   
-  @scala.inline
-  def apply(full: String, long: String, medium: String, short: String): Medium = {
+  inline def apply(full: String, long: String, medium: String, short: String): Medium = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], medium = medium.asInstanceOf[js.Any], short = short.asInstanceOf[js.Any])
     __obj.asInstanceOf[Medium]
   }
   
-  @scala.inline
-  implicit class MediumMutableBuilder[Self <: Medium] (val x: Self) extends AnyVal {
+  extension [Self <: Medium](x: Self) {
     
-    @scala.inline
-    def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: String): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

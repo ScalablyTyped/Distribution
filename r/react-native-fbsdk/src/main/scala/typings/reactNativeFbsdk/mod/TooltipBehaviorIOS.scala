@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TooltipBehaviorIOS extends StObject
 object TooltipBehaviorIOS {
   
-  @scala.inline
-  def auto: typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto = "auto".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto]
+  inline def auto: typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto = "auto".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.auto]
   
-  @scala.inline
-  def disable: typings.reactNativeFbsdk.reactNativeFbsdkStrings.disable = "disable".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.disable]
+  inline def disable: typings.reactNativeFbsdk.reactNativeFbsdkStrings.disable = "disable".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.disable]
   
-  @scala.inline
-  def force_display: typings.reactNativeFbsdk.reactNativeFbsdkStrings.force_display = "force_display".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.force_display]
+  inline def force_display: typings.reactNativeFbsdk.reactNativeFbsdkStrings.force_display = "force_display".asInstanceOf[typings.reactNativeFbsdk.reactNativeFbsdkStrings.force_display]
 }

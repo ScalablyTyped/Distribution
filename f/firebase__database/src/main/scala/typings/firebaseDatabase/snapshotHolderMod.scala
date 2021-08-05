@@ -14,7 +14,7 @@ object snapshotHolderMod {
     
     def getNode(path: Path): Node = js.native
     
-    var rootNode_ : js.Any = js.native
+    /* private */ var rootNode_ : js.Any = js.native
     
     def updateSnapshot(path: Path, newSnapshotNode: Node): Unit = js.native
   }

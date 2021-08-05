@@ -13,15 +13,15 @@ abstract class AbstractControlDirective () extends StObject {
     * Contains the result of merging asynchronous validators into a single validator function
     * (combined using `Validators.composeAsync`).
     */
-  var _composedAsyncValidatorFn: js.Any = js.native
+  /* private */ var _composedAsyncValidatorFn: js.Any = js.native
   
   /**
     * Contains the result of merging synchronous validators into a single validator function
     * (combined using `Validators.compose`).
     */
-  var _composedValidatorFn: js.Any = js.native
+  /* private */ var _composedValidatorFn: js.Any = js.native
   
-  var _onDestroyCallbacks: js.Any = js.native
+  /* private */ var _onDestroyCallbacks: js.Any = js.native
   
   /**
     * @description

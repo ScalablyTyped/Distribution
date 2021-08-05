@@ -23,28 +23,21 @@ trait ARM extends StObject {
 }
 object ARM {
   
-  @scala.inline
-  def apply(): ARM = {
+  inline def apply(): ARM = {
     val __obj = js.Dynamic.literal(ARM = "arm", MIPS = "mips", MIPS64 = "mips64", X86_32 = "x86-32", X86_64 = "x86-64")
     __obj.asInstanceOf[ARM]
   }
   
-  @scala.inline
-  implicit class ARMMutableBuilder[Self <: ARM] (val x: Self) extends AnyVal {
+  extension [Self <: ARM](x: Self) {
     
-    @scala.inline
-    def setARM(value: arm_): Self = StObject.set(x, "ARM", value.asInstanceOf[js.Any])
+    inline def setARM(value: arm_): Self = StObject.set(x, "ARM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMIPS(value: mips_): Self = StObject.set(x, "MIPS", value.asInstanceOf[js.Any])
+    inline def setMIPS(value: mips_): Self = StObject.set(x, "MIPS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMIPS64(value: mips64_): Self = StObject.set(x, "MIPS64", value.asInstanceOf[js.Any])
+    inline def setMIPS64(value: mips64_): Self = StObject.set(x, "MIPS64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX86_32(value: `x86-32`): Self = StObject.set(x, "X86_32", value.asInstanceOf[js.Any])
+    inline def setX86_32(value: `x86-32`): Self = StObject.set(x, "X86_32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX86_64(value: `x86-64`): Self = StObject.set(x, "X86_64", value.asInstanceOf[js.Any])
+    inline def setX86_64(value: `x86-64`): Self = StObject.set(x, "X86_64", value.asInstanceOf[js.Any])
   }
 }

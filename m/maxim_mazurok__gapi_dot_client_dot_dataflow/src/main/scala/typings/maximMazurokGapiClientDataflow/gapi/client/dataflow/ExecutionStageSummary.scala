@@ -32,76 +32,53 @@ trait ExecutionStageSummary extends StObject {
 }
 object ExecutionStageSummary {
   
-  @scala.inline
-  def apply(): ExecutionStageSummary = {
+  inline def apply(): ExecutionStageSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionStageSummary]
   }
   
-  @scala.inline
-  implicit class ExecutionStageSummaryMutableBuilder[Self <: ExecutionStageSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionStageSummary](x: Self) {
     
-    @scala.inline
-    def setComponentSource(value: js.Array[ComponentSource]): Self = StObject.set(x, "componentSource", value.asInstanceOf[js.Any])
+    inline def setComponentSource(value: js.Array[ComponentSource]): Self = StObject.set(x, "componentSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentSourceUndefined: Self = StObject.set(x, "componentSource", js.undefined)
+    inline def setComponentSourceUndefined: Self = StObject.set(x, "componentSource", js.undefined)
     
-    @scala.inline
-    def setComponentSourceVarargs(value: ComponentSource*): Self = StObject.set(x, "componentSource", js.Array(value :_*))
+    inline def setComponentSourceVarargs(value: ComponentSource*): Self = StObject.set(x, "componentSource", js.Array(value :_*))
     
-    @scala.inline
-    def setComponentTransform(value: js.Array[ComponentTransform]): Self = StObject.set(x, "componentTransform", value.asInstanceOf[js.Any])
+    inline def setComponentTransform(value: js.Array[ComponentTransform]): Self = StObject.set(x, "componentTransform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentTransformUndefined: Self = StObject.set(x, "componentTransform", js.undefined)
+    inline def setComponentTransformUndefined: Self = StObject.set(x, "componentTransform", js.undefined)
     
-    @scala.inline
-    def setComponentTransformVarargs(value: ComponentTransform*): Self = StObject.set(x, "componentTransform", js.Array(value :_*))
+    inline def setComponentTransformVarargs(value: ComponentTransform*): Self = StObject.set(x, "componentTransform", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInputSource(value: js.Array[StageSource]): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
+    inline def setInputSource(value: js.Array[StageSource]): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSourceUndefined: Self = StObject.set(x, "inputSource", js.undefined)
+    inline def setInputSourceUndefined: Self = StObject.set(x, "inputSource", js.undefined)
     
-    @scala.inline
-    def setInputSourceVarargs(value: StageSource*): Self = StObject.set(x, "inputSource", js.Array(value :_*))
+    inline def setInputSourceVarargs(value: StageSource*): Self = StObject.set(x, "inputSource", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOutputSource(value: js.Array[StageSource]): Self = StObject.set(x, "outputSource", value.asInstanceOf[js.Any])
+    inline def setOutputSource(value: js.Array[StageSource]): Self = StObject.set(x, "outputSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSourceUndefined: Self = StObject.set(x, "outputSource", js.undefined)
+    inline def setOutputSourceUndefined: Self = StObject.set(x, "outputSource", js.undefined)
     
-    @scala.inline
-    def setOutputSourceVarargs(value: StageSource*): Self = StObject.set(x, "outputSource", js.Array(value :_*))
+    inline def setOutputSourceVarargs(value: StageSource*): Self = StObject.set(x, "outputSource", js.Array(value :_*))
     
-    @scala.inline
-    def setPrerequisiteStage(value: js.Array[String]): Self = StObject.set(x, "prerequisiteStage", value.asInstanceOf[js.Any])
+    inline def setPrerequisiteStage(value: js.Array[String]): Self = StObject.set(x, "prerequisiteStage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrerequisiteStageUndefined: Self = StObject.set(x, "prerequisiteStage", js.undefined)
+    inline def setPrerequisiteStageUndefined: Self = StObject.set(x, "prerequisiteStage", js.undefined)
     
-    @scala.inline
-    def setPrerequisiteStageVarargs(value: String*): Self = StObject.set(x, "prerequisiteStage", js.Array(value :_*))
+    inline def setPrerequisiteStageVarargs(value: String*): Self = StObject.set(x, "prerequisiteStage", js.Array(value :_*))
   }
 }

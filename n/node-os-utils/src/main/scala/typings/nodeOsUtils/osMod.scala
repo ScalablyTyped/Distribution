@@ -52,8 +52,7 @@ object osMod {
   }
   object Os {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arch: () => String,
       hostname: () => String,
       ip: () => String,
@@ -67,29 +66,21 @@ object osMod {
       __obj.asInstanceOf[Os]
     }
     
-    @scala.inline
-    implicit class OsMutableBuilder[Self <: Os] (val x: Self) extends AnyVal {
+    extension [Self <: Os](x: Self) {
       
-      @scala.inline
-      def setArch(value: () => String): Self = StObject.set(x, "arch", js.Any.fromFunction0(value))
+      inline def setArch(value: () => String): Self = StObject.set(x, "arch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHostname(value: () => String): Self = StObject.set(x, "hostname", js.Any.fromFunction0(value))
+      inline def setHostname(value: () => String): Self = StObject.set(x, "hostname", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIp(value: () => String): Self = StObject.set(x, "ip", js.Any.fromFunction0(value))
+      inline def setIp(value: () => String): Self = StObject.set(x, "ip", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOos(value: () => js.Function0[js.Promise[String]]): Self = StObject.set(x, "oos", js.Any.fromFunction0(value))
+      inline def setOos(value: () => js.Function0[js.Promise[String]]): Self = StObject.set(x, "oos", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPlatform(value: () => Platform): Self = StObject.set(x, "platform", js.Any.fromFunction0(value))
+      inline def setPlatform(value: () => Platform): Self = StObject.set(x, "platform", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: () => String): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+      inline def setType(value: () => String): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUptime(value: () => Double): Self = StObject.set(x, "uptime", js.Any.fromFunction0(value))
+      inline def setUptime(value: () => Double): Self = StObject.set(x, "uptime", js.Any.fromFunction0(value))
     }
   }
   
@@ -107,31 +98,22 @@ object osMod {
   trait Platform extends StObject
   object Platform {
     
-    @scala.inline
-    def aix: typings.nodeOsUtils.nodeOsUtilsStrings.aix = "aix".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.aix]
+    inline def aix: typings.nodeOsUtils.nodeOsUtilsStrings.aix = "aix".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.aix]
     
-    @scala.inline
-    def android: typings.nodeOsUtils.nodeOsUtilsStrings.android = "android".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.android]
+    inline def android: typings.nodeOsUtils.nodeOsUtilsStrings.android = "android".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.android]
     
-    @scala.inline
-    def cygwin: typings.nodeOsUtils.nodeOsUtilsStrings.cygwin = "cygwin".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.cygwin]
+    inline def cygwin: typings.nodeOsUtils.nodeOsUtilsStrings.cygwin = "cygwin".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.cygwin]
     
-    @scala.inline
-    def darwin: typings.nodeOsUtils.nodeOsUtilsStrings.darwin = "darwin".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.darwin]
+    inline def darwin: typings.nodeOsUtils.nodeOsUtilsStrings.darwin = "darwin".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.darwin]
     
-    @scala.inline
-    def freebsd: typings.nodeOsUtils.nodeOsUtilsStrings.freebsd = "freebsd".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.freebsd]
+    inline def freebsd: typings.nodeOsUtils.nodeOsUtilsStrings.freebsd = "freebsd".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.freebsd]
     
-    @scala.inline
-    def linux: typings.nodeOsUtils.nodeOsUtilsStrings.linux = "linux".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.linux]
+    inline def linux: typings.nodeOsUtils.nodeOsUtilsStrings.linux = "linux".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.linux]
     
-    @scala.inline
-    def openbsd: typings.nodeOsUtils.nodeOsUtilsStrings.openbsd = "openbsd".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.openbsd]
+    inline def openbsd: typings.nodeOsUtils.nodeOsUtilsStrings.openbsd = "openbsd".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.openbsd]
     
-    @scala.inline
-    def sunos: typings.nodeOsUtils.nodeOsUtilsStrings.sunos = "sunos".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.sunos]
+    inline def sunos: typings.nodeOsUtils.nodeOsUtilsStrings.sunos = "sunos".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.sunos]
     
-    @scala.inline
-    def win32: typings.nodeOsUtils.nodeOsUtilsStrings.win32 = "win32".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.win32]
+    inline def win32: typings.nodeOsUtils.nodeOsUtilsStrings.win32 = "win32".asInstanceOf[typings.nodeOsUtils.nodeOsUtilsStrings.win32]
   }
 }

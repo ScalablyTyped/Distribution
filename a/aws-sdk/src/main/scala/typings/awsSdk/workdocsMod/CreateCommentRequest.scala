@@ -48,52 +48,37 @@ trait CreateCommentRequest extends StObject {
 }
 object CreateCommentRequest {
   
-  @scala.inline
-  def apply(DocumentId: ResourceIdType, Text: CommentTextType, VersionId: DocumentVersionIdType): CreateCommentRequest = {
+  inline def apply(DocumentId: ResourceIdType, Text: CommentTextType, VersionId: DocumentVersionIdType): CreateCommentRequest = {
     val __obj = js.Dynamic.literal(DocumentId = DocumentId.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any], VersionId = VersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCommentRequest]
   }
   
-  @scala.inline
-  implicit class CreateCommentRequestMutableBuilder[Self <: CreateCommentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCommentRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
+    inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
+    inline def setAuthenticationTokenUndefined: Self = StObject.set(x, "AuthenticationToken", js.undefined)
     
-    @scala.inline
-    def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
+    inline def setDocumentId(value: ResourceIdType): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyCollaborators(value: BooleanType): Self = StObject.set(x, "NotifyCollaborators", value.asInstanceOf[js.Any])
+    inline def setNotifyCollaborators(value: BooleanType): Self = StObject.set(x, "NotifyCollaborators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyCollaboratorsUndefined: Self = StObject.set(x, "NotifyCollaborators", js.undefined)
+    inline def setNotifyCollaboratorsUndefined: Self = StObject.set(x, "NotifyCollaborators", js.undefined)
     
-    @scala.inline
-    def setParentId(value: CommentIdType): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: CommentIdType): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
     
-    @scala.inline
-    def setText(value: CommentTextType): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: CommentTextType): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadId(value: CommentIdType): Self = StObject.set(x, "ThreadId", value.asInstanceOf[js.Any])
+    inline def setThreadId(value: CommentIdType): Self = StObject.set(x, "ThreadId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreadIdUndefined: Self = StObject.set(x, "ThreadId", js.undefined)
+    inline def setThreadIdUndefined: Self = StObject.set(x, "ThreadId", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: DocumentVersionIdType): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: CommentVisibilityType): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: CommentVisibilityType): Self = StObject.set(x, "Visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "Visibility", js.undefined)
   }
 }

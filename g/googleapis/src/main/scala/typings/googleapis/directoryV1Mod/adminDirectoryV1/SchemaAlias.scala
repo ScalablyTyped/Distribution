@@ -37,43 +37,31 @@ trait SchemaAlias extends StObject {
 }
 object SchemaAlias {
   
-  @scala.inline
-  def apply(): SchemaAlias = {
+  inline def apply(): SchemaAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAlias]
   }
   
-  @scala.inline
-  implicit class SchemaAliasMutableBuilder[Self <: SchemaAlias] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAlias](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPrimaryEmail(value: String): Self = StObject.set(x, "primaryEmail", value.asInstanceOf[js.Any])
+    inline def setPrimaryEmail(value: String): Self = StObject.set(x, "primaryEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryEmailUndefined: Self = StObject.set(x, "primaryEmail", js.undefined)
+    inline def setPrimaryEmailUndefined: Self = StObject.set(x, "primaryEmail", js.undefined)
   }
 }

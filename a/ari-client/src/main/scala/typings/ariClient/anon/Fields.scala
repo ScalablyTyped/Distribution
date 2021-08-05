@@ -17,28 +17,21 @@ trait Fields extends StObject {
 }
 object Fields {
   
-  @scala.inline
-  def apply(configClass: String, id: String, objectType: String): Fields = {
+  inline def apply(configClass: String, id: String, objectType: String): Fields = {
     val __obj = js.Dynamic.literal(configClass = configClass.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
   
-  @scala.inline
-  implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+  extension [Self <: Fields](x: Self) {
     
-    @scala.inline
-    def setConfigClass(value: String): Self = StObject.set(x, "configClass", value.asInstanceOf[js.Any])
+    inline def setConfigClass(value: String): Self = StObject.set(x, "configClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: Containers): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Containers): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait ComputeResourceUpdate extends StObject {
 }
 object ComputeResourceUpdate {
   
-  @scala.inline
-  def apply(): ComputeResourceUpdate = {
+  inline def apply(): ComputeResourceUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComputeResourceUpdate]
   }
   
-  @scala.inline
-  implicit class ComputeResourceUpdateMutableBuilder[Self <: ComputeResourceUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeResourceUpdate](x: Self) {
     
-    @scala.inline
-    def setDesiredvCpus(value: Integer): Self = StObject.set(x, "desiredvCpus", value.asInstanceOf[js.Any])
+    inline def setDesiredvCpus(value: Integer): Self = StObject.set(x, "desiredvCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredvCpusUndefined: Self = StObject.set(x, "desiredvCpus", js.undefined)
+    inline def setDesiredvCpusUndefined: Self = StObject.set(x, "desiredvCpus", js.undefined)
     
-    @scala.inline
-    def setMaxvCpus(value: Integer): Self = StObject.set(x, "maxvCpus", value.asInstanceOf[js.Any])
+    inline def setMaxvCpus(value: Integer): Self = StObject.set(x, "maxvCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxvCpusUndefined: Self = StObject.set(x, "maxvCpus", js.undefined)
+    inline def setMaxvCpusUndefined: Self = StObject.set(x, "maxvCpus", js.undefined)
     
-    @scala.inline
-    def setMinvCpus(value: Integer): Self = StObject.set(x, "minvCpus", value.asInstanceOf[js.Any])
+    inline def setMinvCpus(value: Integer): Self = StObject.set(x, "minvCpus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinvCpusUndefined: Self = StObject.set(x, "minvCpus", js.undefined)
+    inline def setMinvCpusUndefined: Self = StObject.set(x, "minvCpus", js.undefined)
   }
 }

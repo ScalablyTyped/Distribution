@@ -12,22 +12,17 @@ trait RestrictedSignIn
 }
 object RestrictedSignIn {
   
-  @scala.inline
-  def apply(): RestrictedSignIn = {
+  inline def apply(): RestrictedSignIn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestrictedSignIn]
   }
   
-  @scala.inline
-  implicit class RestrictedSignInMutableBuilder[Self <: RestrictedSignIn] (val x: Self) extends AnyVal {
+  extension [Self <: RestrictedSignIn](x: Self) {
     
-    @scala.inline
-    def setTargetTenantId(value: NullableOption[String]): Self = StObject.set(x, "targetTenantId", value.asInstanceOf[js.Any])
+    inline def setTargetTenantId(value: NullableOption[String]): Self = StObject.set(x, "targetTenantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTenantIdNull: Self = StObject.set(x, "targetTenantId", null)
+    inline def setTargetTenantIdNull: Self = StObject.set(x, "targetTenantId", null)
     
-    @scala.inline
-    def setTargetTenantIdUndefined: Self = StObject.set(x, "targetTenantId", js.undefined)
+    inline def setTargetTenantIdUndefined: Self = StObject.set(x, "targetTenantId", js.undefined)
   }
 }

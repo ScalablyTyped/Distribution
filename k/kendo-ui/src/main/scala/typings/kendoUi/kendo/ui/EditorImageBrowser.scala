@@ -18,43 +18,31 @@ trait EditorImageBrowser extends StObject {
 }
 object EditorImageBrowser {
   
-  @scala.inline
-  def apply(): EditorImageBrowser = {
+  inline def apply(): EditorImageBrowser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorImageBrowser]
   }
   
-  @scala.inline
-  implicit class EditorImageBrowserMutableBuilder[Self <: EditorImageBrowser] (val x: Self) extends AnyVal {
+  extension [Self <: EditorImageBrowser](x: Self) {
     
-    @scala.inline
-    def setFileTypes(value: String): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+    inline def setFileTypes(value: String): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
+    inline def setFileTypesUndefined: Self = StObject.set(x, "fileTypes", js.undefined)
     
-    @scala.inline
-    def setMessages(value: EditorImageBrowserMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: EditorImageBrowserMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSchema(value: EditorImageBrowserSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: EditorImageBrowserSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setTransport(value: EditorImageBrowserTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: EditorImageBrowserTransport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+    inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
   }
 }

@@ -22,17 +22,14 @@ object mod extends Shortcut {
   }
   object Cache {
     
-    @scala.inline
-    def apply[K, V](create: () => Get[K, V]): Cache[K, V] = {
+    inline def apply[K, V](create: () => Get[K, V]): Cache[K, V] = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create))
       __obj.asInstanceOf[Cache[K, V]]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache[?, ?], K, V] (val x: Self & (Cache[K, V])) extends AnyVal {
+    extension [Self <: Cache[?, ?], K, V](x: Self & (Cache[K, V])) {
       
-      @scala.inline
-      def setCreate(value: () => Get[K, V]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+      inline def setCreate(value: () => Get[K, V]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     }
   }
   
@@ -62,32 +59,24 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply[F /* <: Func */](): Options[F] = {
+    inline def apply[F /* <: Func */](): Options[F] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[F]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], F /* <: Func */] (val x: Self & Options[F]) extends AnyVal {
+    extension [Self <: Options[?], F /* <: Func */](x: Self & Options[F]) {
       
-      @scala.inline
-      def setCache(value: Cache[String, ReturnType[F]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Cache[String, ReturnType[F]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setSerializer(value: /* args */ js.Array[js.Any] => String): Self = StObject.set(x, "serializer", js.Any.fromFunction1(value))
+      inline def setSerializer(value: /* args */ js.Array[js.Any] => String): Self = StObject.set(x, "serializer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
+      inline def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func): Self = StObject.set(x, "strategy", js.Any.fromFunction2(value))
+      inline def setStrategy(value: (/* fn */ Func, /* options */ js.UndefOr[Options[Func]]) => Func): Self = StObject.set(x, "strategy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
     }
   }
   

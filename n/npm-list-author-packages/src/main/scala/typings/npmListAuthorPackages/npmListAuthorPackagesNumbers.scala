@@ -8,11 +8,9 @@ object npmListAuthorPackagesNumbers {
   
   @js.native
   sealed trait `443` extends StObject
-  @scala.inline
-  def `443`: `443` = 443.asInstanceOf[`443`]
+  inline def `443`: `443` = 443.asInstanceOf[`443`]
   
   @js.native
   sealed trait `80` extends StObject
-  @scala.inline
-  def `80`: `80` = 80.asInstanceOf[`80`]
+  inline def `80`: `80` = 80.asInstanceOf[`80`]
 }

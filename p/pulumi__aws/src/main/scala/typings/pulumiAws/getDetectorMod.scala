@@ -11,14 +11,10 @@ object getDetectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDetector(): js.Promise[GetDetectorResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")().asInstanceOf[js.Promise[GetDetectorResult]]
-  @scala.inline
-  def getDetector(args: Unit, opts: InvokeOptions): js.Promise[GetDetectorResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDetectorResult]]
-  @scala.inline
-  def getDetector(args: GetDetectorArgs): js.Promise[GetDetectorResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDetectorResult]]
-  @scala.inline
-  def getDetector(args: GetDetectorArgs, opts: InvokeOptions): js.Promise[GetDetectorResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDetectorResult]]
+  inline def getDetector(): js.Promise[GetDetectorResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")().asInstanceOf[js.Promise[GetDetectorResult]]
+  inline def getDetector(args: Unit, opts: InvokeOptions): js.Promise[GetDetectorResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDetectorResult]]
+  inline def getDetector(args: GetDetectorArgs): js.Promise[GetDetectorResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDetectorResult]]
+  inline def getDetector(args: GetDetectorArgs, opts: InvokeOptions): js.Promise[GetDetectorResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDetector")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDetectorResult]]
   
   trait GetDetectorArgs extends StObject {
     
@@ -29,20 +25,16 @@ object getDetectorMod {
   }
   object GetDetectorArgs {
     
-    @scala.inline
-    def apply(): GetDetectorArgs = {
+    inline def apply(): GetDetectorArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetDetectorArgs]
     }
     
-    @scala.inline
-    implicit class GetDetectorArgsMutableBuilder[Self <: GetDetectorArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetDetectorArgs](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -67,29 +59,22 @@ object getDetectorMod {
   }
   object GetDetectorResult {
     
-    @scala.inline
-    def apply(findingPublishingFrequency: String, serviceRoleArn: String, status: String): GetDetectorResult = {
+    inline def apply(findingPublishingFrequency: String, serviceRoleArn: String, status: String): GetDetectorResult = {
       val __obj = js.Dynamic.literal(findingPublishingFrequency = findingPublishingFrequency.asInstanceOf[js.Any], serviceRoleArn = serviceRoleArn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDetectorResult]
     }
     
-    @scala.inline
-    implicit class GetDetectorResultMutableBuilder[Self <: GetDetectorResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetDetectorResult](x: Self) {
       
-      @scala.inline
-      def setFindingPublishingFrequency(value: String): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
+      inline def setFindingPublishingFrequency(value: String): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setServiceRoleArn(value: String): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceRoleArn(value: String): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

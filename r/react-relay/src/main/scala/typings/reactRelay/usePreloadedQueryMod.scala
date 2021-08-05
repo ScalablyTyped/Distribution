@@ -16,13 +16,11 @@ object usePreloadedQueryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def usePreloadedQuery[TQuery /* <: OperationType */](
+  inline def usePreloadedQuery[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
     preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, js.Any]]]
   ): /* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("usePreloadedQuery")(gqlQuery.asInstanceOf[js.Any], preloadedQuery.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: TQuery['response'] */ js.Any]
-  @scala.inline
-  def usePreloadedQuery[TQuery /* <: OperationType */](
+  inline def usePreloadedQuery[TQuery /* <: OperationType */](
     gqlQuery: GraphQLTaggedNode,
     preloadedQuery: PreloadedQuery[TQuery, EnvironmentProviderOptions[Record[String, js.Any]]],
     options: UNSTABLErenderPolicy

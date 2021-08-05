@@ -14,8 +14,7 @@ object connectedAuthWrapperMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[OwnProps, State](config: ConnectedAuthWrapperConfig[OwnProps, State]): AuthWrapperDecorator[OwnProps & InjectedAuthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[OwnProps & InjectedAuthProps]]
+  inline def default[OwnProps, State](config: ConnectedAuthWrapperConfig[OwnProps, State]): AuthWrapperDecorator[OwnProps & InjectedAuthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[AuthWrapperDecorator[OwnProps & InjectedAuthProps]]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.reduxAuthWrapper.mod.AuthConfig because Already inherited
@@ -29,23 +28,18 @@ object connectedAuthWrapperMod {
   }
   object ConnectedAuthWrapperConfig {
     
-    @scala.inline
-    def apply[OwnProps, State](authenticatedSelector: (State, OwnProps) => Boolean): ConnectedAuthWrapperConfig[OwnProps, State] = {
+    inline def apply[OwnProps, State](authenticatedSelector: (State, OwnProps) => Boolean): ConnectedAuthWrapperConfig[OwnProps, State] = {
       val __obj = js.Dynamic.literal(authenticatedSelector = js.Any.fromFunction2(authenticatedSelector))
       __obj.asInstanceOf[ConnectedAuthWrapperConfig[OwnProps, State]]
     }
     
-    @scala.inline
-    implicit class ConnectedAuthWrapperConfigMutableBuilder[Self <: ConnectedAuthWrapperConfig[?, ?], OwnProps, State] (val x: Self & (ConnectedAuthWrapperConfig[OwnProps, State])) extends AnyVal {
+    extension [Self <: ConnectedAuthWrapperConfig[?, ?], OwnProps, State](x: Self & (ConnectedAuthWrapperConfig[OwnProps, State])) {
       
-      @scala.inline
-      def setAuthenticatedSelector(value: (State, OwnProps) => Boolean): Self = StObject.set(x, "authenticatedSelector", js.Any.fromFunction2(value))
+      inline def setAuthenticatedSelector(value: (State, OwnProps) => Boolean): Self = StObject.set(x, "authenticatedSelector", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAuthenticatingSelector(value: (State, OwnProps) => Boolean): Self = StObject.set(x, "authenticatingSelector", js.Any.fromFunction2(value))
+      inline def setAuthenticatingSelector(value: (State, OwnProps) => Boolean): Self = StObject.set(x, "authenticatingSelector", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAuthenticatingSelectorUndefined: Self = StObject.set(x, "authenticatingSelector", js.undefined)
+      inline def setAuthenticatingSelectorUndefined: Self = StObject.set(x, "authenticatingSelector", js.undefined)
     }
   }
 }

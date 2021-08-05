@@ -82,73 +82,51 @@ trait ParamsResourceEventsPatch
 }
 object ParamsResourceEventsPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceEventsPatch = {
+  inline def apply(): ParamsResourceEventsPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEventsPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEventsPatchMutableBuilder[Self <: ParamsResourceEventsPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEventsPatch](x: Self) {
     
-    @scala.inline
-    def setAlwaysIncludeEmail(value: Boolean): Self = StObject.set(x, "alwaysIncludeEmail", value.asInstanceOf[js.Any])
+    inline def setAlwaysIncludeEmail(value: Boolean): Self = StObject.set(x, "alwaysIncludeEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysIncludeEmailUndefined: Self = StObject.set(x, "alwaysIncludeEmail", js.undefined)
+    inline def setAlwaysIncludeEmailUndefined: Self = StObject.set(x, "alwaysIncludeEmail", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
+    inline def setCalendarId(value: String): Self = StObject.set(x, "calendarId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
+    inline def setCalendarIdUndefined: Self = StObject.set(x, "calendarId", js.undefined)
     
-    @scala.inline
-    def setConferenceDataVersion(value: Double): Self = StObject.set(x, "conferenceDataVersion", value.asInstanceOf[js.Any])
+    inline def setConferenceDataVersion(value: Double): Self = StObject.set(x, "conferenceDataVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceDataVersionUndefined: Self = StObject.set(x, "conferenceDataVersion", js.undefined)
+    inline def setConferenceDataVersionUndefined: Self = StObject.set(x, "conferenceDataVersion", js.undefined)
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
+    inline def setEventIdUndefined: Self = StObject.set(x, "eventId", js.undefined)
     
-    @scala.inline
-    def setMaxAttendees(value: Double): Self = StObject.set(x, "maxAttendees", value.asInstanceOf[js.Any])
+    inline def setMaxAttendees(value: Double): Self = StObject.set(x, "maxAttendees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAttendeesUndefined: Self = StObject.set(x, "maxAttendees", js.undefined)
+    inline def setMaxAttendeesUndefined: Self = StObject.set(x, "maxAttendees", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaEvent): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaEvent): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSendNotifications(value: Boolean): Self = StObject.set(x, "sendNotifications", value.asInstanceOf[js.Any])
+    inline def setSendNotifications(value: Boolean): Self = StObject.set(x, "sendNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendNotificationsUndefined: Self = StObject.set(x, "sendNotifications", js.undefined)
+    inline def setSendNotificationsUndefined: Self = StObject.set(x, "sendNotifications", js.undefined)
     
-    @scala.inline
-    def setSendUpdates(value: String): Self = StObject.set(x, "sendUpdates", value.asInstanceOf[js.Any])
+    inline def setSendUpdates(value: String): Self = StObject.set(x, "sendUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendUpdatesUndefined: Self = StObject.set(x, "sendUpdates", js.undefined)
+    inline def setSendUpdatesUndefined: Self = StObject.set(x, "sendUpdates", js.undefined)
     
-    @scala.inline
-    def setSupportsAttachments(value: Boolean): Self = StObject.set(x, "supportsAttachments", value.asInstanceOf[js.Any])
+    inline def setSupportsAttachments(value: Boolean): Self = StObject.set(x, "supportsAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsAttachmentsUndefined: Self = StObject.set(x, "supportsAttachments", js.undefined)
+    inline def setSupportsAttachmentsUndefined: Self = StObject.set(x, "supportsAttachments", js.undefined)
   }
 }

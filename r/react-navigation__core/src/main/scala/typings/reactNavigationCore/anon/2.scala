@@ -11,16 +11,13 @@ trait `2` extends StObject {
 }
 object `2` {
   
-  @scala.inline
-  def apply(): `2` = {
+  inline def apply(): `2` = {
     val __obj = js.Dynamic.literal(canPreventDefault = true)
     __obj.asInstanceOf[`2`]
   }
   
-  @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+  extension [Self <: `2`](x: Self) {
     
-    @scala.inline
-    def setCanPreventDefault(value: `true`): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
+    inline def setCanPreventDefault(value: `true`): Self = StObject.set(x, "canPreventDefault", value.asInstanceOf[js.Any])
   }
 }

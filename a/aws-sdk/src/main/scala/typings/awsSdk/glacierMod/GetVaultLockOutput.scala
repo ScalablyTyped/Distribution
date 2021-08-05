@@ -28,37 +28,27 @@ trait GetVaultLockOutput extends StObject {
 }
 object GetVaultLockOutput {
   
-  @scala.inline
-  def apply(): GetVaultLockOutput = {
+  inline def apply(): GetVaultLockOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetVaultLockOutput]
   }
   
-  @scala.inline
-  implicit class GetVaultLockOutputMutableBuilder[Self <: GetVaultLockOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetVaultLockOutput](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: String): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

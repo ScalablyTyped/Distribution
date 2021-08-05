@@ -8,6 +8,5 @@ object nextServerStrings {
   
   @js.native
   sealed trait hybrid extends StObject
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
 }

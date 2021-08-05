@@ -42,8 +42,7 @@ object remotebuildexecutionMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Remotebuildexecution
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -66,8 +65,7 @@ object remotebuildexecutionMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution
       ] = js.native
-    @scala.inline
-    def v1alpha_=(
+    inline def v1alpha_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -90,8 +88,7 @@ object remotebuildexecutionMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -133,8 +130,7 @@ object remotebuildexecutionMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -178,19 +174,13 @@ object remotebuildexecutionMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def remotebuildexecution(options: Options): Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(options.asInstanceOf[js.Any]).asInstanceOf[Remotebuildexecution]
-  @scala.inline
-  def remotebuildexecution(options: typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Options): typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution]
-  @scala.inline
-  def remotebuildexecution(options: typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Options): typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution]
+  inline def remotebuildexecution(options: Options): Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(options.asInstanceOf[js.Any]).asInstanceOf[Remotebuildexecution]
+  inline def remotebuildexecution(options: typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Options): typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution]
+  inline def remotebuildexecution(options: typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Options): typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution]
   
-  @scala.inline
-  def remotebuildexecution_v1(version: v1): Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(version.asInstanceOf[js.Any]).asInstanceOf[Remotebuildexecution]
+  inline def remotebuildexecution_v1(version: v1): Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(version.asInstanceOf[js.Any]).asInstanceOf[Remotebuildexecution]
   
-  @scala.inline
-  def remotebuildexecution_v1alpha(version: v1alpha): typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution]
+  inline def remotebuildexecution_v1alpha(version: v1alpha): typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1alpha.Remotebuildexecution]
   
-  @scala.inline
-  def remotebuildexecution_v2(version: v2): typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution]
+  inline def remotebuildexecution_v2(version: v2): typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution = ^.asInstanceOf[js.Dynamic].applyDynamic("remotebuildexecution")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2.Remotebuildexecution]
 }

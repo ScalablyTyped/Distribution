@@ -14,22 +14,17 @@ trait LocationContext extends StObject {
 }
 object LocationContext {
   
-  @scala.inline
-  def apply(): LocationContext = {
+  inline def apply(): LocationContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationContext]
   }
   
-  @scala.inline
-  implicit class LocationContextMutableBuilder[Self <: LocationContext] (val x: Self) extends AnyVal {
+  extension [Self <: LocationContext](x: Self) {
     
-    @scala.inline
-    def setGeoCriteriaIds(value: js.Array[Double]): Self = StObject.set(x, "geoCriteriaIds", value.asInstanceOf[js.Any])
+    inline def setGeoCriteriaIds(value: js.Array[Double]): Self = StObject.set(x, "geoCriteriaIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoCriteriaIdsUndefined: Self = StObject.set(x, "geoCriteriaIds", js.undefined)
+    inline def setGeoCriteriaIdsUndefined: Self = StObject.set(x, "geoCriteriaIds", js.undefined)
     
-    @scala.inline
-    def setGeoCriteriaIdsVarargs(value: Double*): Self = StObject.set(x, "geoCriteriaIds", js.Array(value :_*))
+    inline def setGeoCriteriaIdsVarargs(value: Double*): Self = StObject.set(x, "geoCriteriaIds", js.Array(value :_*))
   }
 }

@@ -15,10 +15,8 @@ object mod {
   /**
     * Wraps the EditorView instance in the applyDevTools.
     */
-  @scala.inline
-  def default(view: EditorView[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(view.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def default(view: EditorView[js.Any], options: ApplyDevToolsOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(view: EditorView[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(view.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(view: EditorView[js.Any], options: ApplyDevToolsOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(view.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait ApplyDevToolsOptions extends StObject {
     
@@ -35,17 +33,14 @@ object mod {
   }
   object ApplyDevToolsOptions {
     
-    @scala.inline
-    def apply(EditorState: TypeofEditorState): ApplyDevToolsOptions = {
+    inline def apply(EditorState: TypeofEditorState): ApplyDevToolsOptions = {
       val __obj = js.Dynamic.literal(EditorState = EditorState.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplyDevToolsOptions]
     }
     
-    @scala.inline
-    implicit class ApplyDevToolsOptionsMutableBuilder[Self <: ApplyDevToolsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ApplyDevToolsOptions](x: Self) {
       
-      @scala.inline
-      def setEditorState(value: TypeofEditorState): Self = StObject.set(x, "EditorState", value.asInstanceOf[js.Any])
+      inline def setEditorState(value: TypeofEditorState): Self = StObject.set(x, "EditorState", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,8 +12,7 @@ trait IExpressionSyntax
 }
 object IExpressionSyntax {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accept: ISyntaxVisitor => js.Any,
     childAt: Double => ISyntaxElement,
     childCount: () => Double,
@@ -42,10 +41,8 @@ object IExpressionSyntax {
     __obj.asInstanceOf[IExpressionSyntax]
   }
   
-  @scala.inline
-  implicit class IExpressionSyntaxMutableBuilder[Self <: IExpressionSyntax] (val x: Self) extends AnyVal {
+  extension [Self <: IExpressionSyntax](x: Self) {
     
-    @scala.inline
-    def setIsExpression(value: () => Boolean): Self = StObject.set(x, "isExpression", js.Any.fromFunction0(value))
+    inline def setIsExpression(value: () => Boolean): Self = StObject.set(x, "isExpression", js.Any.fromFunction0(value))
   }
 }

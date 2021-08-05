@@ -11,16 +11,13 @@ trait SettlementBatchSummaryGateway extends StObject {
 }
 object SettlementBatchSummaryGateway {
   
-  @scala.inline
-  def apply(generate: GroupByCustomField => js.Promise[SettlementBatchSummary]): SettlementBatchSummaryGateway = {
+  inline def apply(generate: GroupByCustomField => js.Promise[SettlementBatchSummary]): SettlementBatchSummaryGateway = {
     val __obj = js.Dynamic.literal(generate = js.Any.fromFunction1(generate))
     __obj.asInstanceOf[SettlementBatchSummaryGateway]
   }
   
-  @scala.inline
-  implicit class SettlementBatchSummaryGatewayMutableBuilder[Self <: SettlementBatchSummaryGateway] (val x: Self) extends AnyVal {
+  extension [Self <: SettlementBatchSummaryGateway](x: Self) {
     
-    @scala.inline
-    def setGenerate(value: GroupByCustomField => js.Promise[SettlementBatchSummary]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
+    inline def setGenerate(value: GroupByCustomField => js.Promise[SettlementBatchSummary]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
   }
 }

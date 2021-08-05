@@ -14,28 +14,21 @@ trait GoogleCloudRecommendationengineV1beta1ListCatalogsResponse extends StObjec
 }
 object GoogleCloudRecommendationengineV1beta1ListCatalogsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ListCatalogsResponse = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ListCatalogsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ListCatalogsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ListCatalogsResponseMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ListCatalogsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ListCatalogsResponse](x: Self) {
     
-    @scala.inline
-    def setCatalogs(value: js.Array[GoogleCloudRecommendationengineV1beta1Catalog]): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
+    inline def setCatalogs(value: js.Array[GoogleCloudRecommendationengineV1beta1Catalog]): Self = StObject.set(x, "catalogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogsUndefined: Self = StObject.set(x, "catalogs", js.undefined)
+    inline def setCatalogsUndefined: Self = StObject.set(x, "catalogs", js.undefined)
     
-    @scala.inline
-    def setCatalogsVarargs(value: GoogleCloudRecommendationengineV1beta1Catalog*): Self = StObject.set(x, "catalogs", js.Array(value :_*))
+    inline def setCatalogsVarargs(value: GoogleCloudRecommendationengineV1beta1Catalog*): Self = StObject.set(x, "catalogs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

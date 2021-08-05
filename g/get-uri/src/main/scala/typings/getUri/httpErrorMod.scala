@@ -38,20 +38,16 @@ object httpErrorMod {
   }
   object HTTPError {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String, statusCode: Double): HTTPError = {
+    inline def apply(code: String, message: String, name: String, statusCode: Double): HTTPError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[HTTPError]
     }
     
-    @scala.inline
-    implicit class HTTPErrorMutableBuilder[Self <: HTTPError] (val x: Self) extends AnyVal {
+    extension [Self <: HTTPError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
 }

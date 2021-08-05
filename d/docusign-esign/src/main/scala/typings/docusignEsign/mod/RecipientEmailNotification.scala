@@ -48,49 +48,35 @@ trait RecipientEmailNotification extends StObject {
 }
 object RecipientEmailNotification {
   
-  @scala.inline
-  def apply(): RecipientEmailNotification = {
+  inline def apply(): RecipientEmailNotification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientEmailNotification]
   }
   
-  @scala.inline
-  implicit class RecipientEmailNotificationMutableBuilder[Self <: RecipientEmailNotification] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientEmailNotification](x: Self) {
     
-    @scala.inline
-    def setEmailBody(value: String): Self = StObject.set(x, "emailBody", value.asInstanceOf[js.Any])
+    inline def setEmailBody(value: String): Self = StObject.set(x, "emailBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailBodyMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "emailBodyMetadata", value.asInstanceOf[js.Any])
+    inline def setEmailBodyMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "emailBodyMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailBodyMetadataUndefined: Self = StObject.set(x, "emailBodyMetadata", js.undefined)
+    inline def setEmailBodyMetadataUndefined: Self = StObject.set(x, "emailBodyMetadata", js.undefined)
     
-    @scala.inline
-    def setEmailBodyUndefined: Self = StObject.set(x, "emailBody", js.undefined)
+    inline def setEmailBodyUndefined: Self = StObject.set(x, "emailBody", js.undefined)
     
-    @scala.inline
-    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
+    inline def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSubjectMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "emailSubjectMetadata", value.asInstanceOf[js.Any])
+    inline def setEmailSubjectMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "emailSubjectMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSubjectMetadataUndefined: Self = StObject.set(x, "emailSubjectMetadata", js.undefined)
+    inline def setEmailSubjectMetadataUndefined: Self = StObject.set(x, "emailSubjectMetadata", js.undefined)
     
-    @scala.inline
-    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
+    inline def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
-    @scala.inline
-    def setSupportedLanguage(value: String): Self = StObject.set(x, "supportedLanguage", value.asInstanceOf[js.Any])
+    inline def setSupportedLanguage(value: String): Self = StObject.set(x, "supportedLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedLanguageMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "supportedLanguageMetadata", value.asInstanceOf[js.Any])
+    inline def setSupportedLanguageMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "supportedLanguageMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedLanguageMetadataUndefined: Self = StObject.set(x, "supportedLanguageMetadata", js.undefined)
+    inline def setSupportedLanguageMetadataUndefined: Self = StObject.set(x, "supportedLanguageMetadata", js.undefined)
     
-    @scala.inline
-    def setSupportedLanguageUndefined: Self = StObject.set(x, "supportedLanguage", js.undefined)
+    inline def setSupportedLanguageUndefined: Self = StObject.set(x, "supportedLanguage", js.undefined)
   }
 }

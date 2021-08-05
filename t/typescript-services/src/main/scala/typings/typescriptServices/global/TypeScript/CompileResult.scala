@@ -23,10 +23,8 @@ object CompileResult {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromDiagnostics(diagnostics: js.Array[typings.typescriptServices.TypeScript.Diagnostic]): typings.typescriptServices.TypeScript.CompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDiagnostics")(diagnostics.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CompileResult]
+  inline def fromDiagnostics(diagnostics: js.Array[typings.typescriptServices.TypeScript.Diagnostic]): typings.typescriptServices.TypeScript.CompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDiagnostics")(diagnostics.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CompileResult]
   
   /* static member */
-  @scala.inline
-  def fromOutputFiles(outputFiles: js.Array[typings.typescriptServices.TypeScript.OutputFile]): typings.typescriptServices.TypeScript.CompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOutputFiles")(outputFiles.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CompileResult]
+  inline def fromOutputFiles(outputFiles: js.Array[typings.typescriptServices.TypeScript.OutputFile]): typings.typescriptServices.TypeScript.CompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOutputFiles")(outputFiles.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CompileResult]
 }

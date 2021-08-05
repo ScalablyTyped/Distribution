@@ -39,67 +39,47 @@ trait FindReplaceRequest extends StObject {
 }
 object FindReplaceRequest {
   
-  @scala.inline
-  def apply(): FindReplaceRequest = {
+  inline def apply(): FindReplaceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindReplaceRequest]
   }
   
-  @scala.inline
-  implicit class FindReplaceRequestMutableBuilder[Self <: FindReplaceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FindReplaceRequest](x: Self) {
     
-    @scala.inline
-    def setAllSheets(value: Boolean): Self = StObject.set(x, "allSheets", value.asInstanceOf[js.Any])
+    inline def setAllSheets(value: Boolean): Self = StObject.set(x, "allSheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllSheetsUndefined: Self = StObject.set(x, "allSheets", js.undefined)
+    inline def setAllSheetsUndefined: Self = StObject.set(x, "allSheets", js.undefined)
     
-    @scala.inline
-    def setFind(value: String): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+    inline def setFind(value: String): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
+    inline def setFindUndefined: Self = StObject.set(x, "find", js.undefined)
     
-    @scala.inline
-    def setIncludeFormulas(value: Boolean): Self = StObject.set(x, "includeFormulas", value.asInstanceOf[js.Any])
+    inline def setIncludeFormulas(value: Boolean): Self = StObject.set(x, "includeFormulas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFormulasUndefined: Self = StObject.set(x, "includeFormulas", js.undefined)
+    inline def setIncludeFormulasUndefined: Self = StObject.set(x, "includeFormulas", js.undefined)
     
-    @scala.inline
-    def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
+    inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
+    inline def setMatchCaseUndefined: Self = StObject.set(x, "matchCase", js.undefined)
     
-    @scala.inline
-    def setMatchEntireCell(value: Boolean): Self = StObject.set(x, "matchEntireCell", value.asInstanceOf[js.Any])
+    inline def setMatchEntireCell(value: Boolean): Self = StObject.set(x, "matchEntireCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchEntireCellUndefined: Self = StObject.set(x, "matchEntireCell", js.undefined)
+    inline def setMatchEntireCellUndefined: Self = StObject.set(x, "matchEntireCell", js.undefined)
     
-    @scala.inline
-    def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
+    inline def setReplacement(value: String): Self = StObject.set(x, "replacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
+    inline def setReplacementUndefined: Self = StObject.set(x, "replacement", js.undefined)
     
-    @scala.inline
-    def setSearchByRegex(value: Boolean): Self = StObject.set(x, "searchByRegex", value.asInstanceOf[js.Any])
+    inline def setSearchByRegex(value: Boolean): Self = StObject.set(x, "searchByRegex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchByRegexUndefined: Self = StObject.set(x, "searchByRegex", js.undefined)
+    inline def setSearchByRegexUndefined: Self = StObject.set(x, "searchByRegex", js.undefined)
     
-    @scala.inline
-    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "sheetId", js.undefined)
   }
 }

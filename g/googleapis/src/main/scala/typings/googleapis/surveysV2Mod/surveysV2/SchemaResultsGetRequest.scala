@@ -10,19 +10,15 @@ trait SchemaResultsGetRequest extends StObject {
 }
 object SchemaResultsGetRequest {
   
-  @scala.inline
-  def apply(): SchemaResultsGetRequest = {
+  inline def apply(): SchemaResultsGetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResultsGetRequest]
   }
   
-  @scala.inline
-  implicit class SchemaResultsGetRequestMutableBuilder[Self <: SchemaResultsGetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResultsGetRequest](x: Self) {
     
-    @scala.inline
-    def setResultMask(value: SchemaResultsMask): Self = StObject.set(x, "resultMask", value.asInstanceOf[js.Any])
+    inline def setResultMask(value: SchemaResultsMask): Self = StObject.set(x, "resultMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultMaskUndefined: Self = StObject.set(x, "resultMask", js.undefined)
+    inline def setResultMaskUndefined: Self = StObject.set(x, "resultMask", js.undefined)
   }
 }

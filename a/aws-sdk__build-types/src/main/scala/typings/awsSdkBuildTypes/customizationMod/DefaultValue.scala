@@ -20,20 +20,16 @@ trait DefaultValue extends StObject {
 }
 object DefaultValue {
   
-  @scala.inline
-  def apply(expression: String): DefaultValue = {
+  inline def apply(expression: String): DefaultValue = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("value")
     __obj.asInstanceOf[DefaultValue]
   }
   
-  @scala.inline
-  implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultValue](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: value): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: value): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

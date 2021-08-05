@@ -11,6 +11,5 @@ object getLuminanceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLuminance(color: HexString): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLuminance")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getLuminance(color: HexString): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLuminance")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

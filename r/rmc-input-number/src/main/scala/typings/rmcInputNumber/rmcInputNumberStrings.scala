@@ -8,11 +8,9 @@ object rmcInputNumberStrings {
   
   @js.native
   sealed trait down extends StObject
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
   sealed trait up extends StObject
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
+  inline def up: up = "up".asInstanceOf[up]
 }

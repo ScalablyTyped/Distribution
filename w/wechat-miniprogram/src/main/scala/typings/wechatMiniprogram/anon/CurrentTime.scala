@@ -12,19 +12,15 @@ trait CurrentTime extends StObject {
 }
 object CurrentTime {
   
-  @scala.inline
-  def apply(currentTime: Double, duration: Double): CurrentTime = {
+  inline def apply(currentTime: Double, duration: Double): CurrentTime = {
     val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentTime]
   }
   
-  @scala.inline
-  implicit class CurrentTimeMutableBuilder[Self <: CurrentTime] (val x: Self) extends AnyVal {
+  extension [Self <: CurrentTime](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
   }
 }

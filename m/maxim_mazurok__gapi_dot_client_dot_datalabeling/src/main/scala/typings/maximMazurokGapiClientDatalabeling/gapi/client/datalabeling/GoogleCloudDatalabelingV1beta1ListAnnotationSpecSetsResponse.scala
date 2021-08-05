@@ -14,28 +14,21 @@ trait GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse extends StObj
 }
 object GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponseMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ListAnnotationSpecSetsResponse](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpecSets(value: js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpecSet]): Self = StObject.set(x, "annotationSpecSets", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSets(value: js.Array[GoogleCloudDatalabelingV1beta1AnnotationSpecSet]): Self = StObject.set(x, "annotationSpecSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetsUndefined: Self = StObject.set(x, "annotationSpecSets", js.undefined)
+    inline def setAnnotationSpecSetsUndefined: Self = StObject.set(x, "annotationSpecSets", js.undefined)
     
-    @scala.inline
-    def setAnnotationSpecSetsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpecSet*): Self = StObject.set(x, "annotationSpecSets", js.Array(value :_*))
+    inline def setAnnotationSpecSetsVarargs(value: GoogleCloudDatalabelingV1beta1AnnotationSpecSet*): Self = StObject.set(x, "annotationSpecSets", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

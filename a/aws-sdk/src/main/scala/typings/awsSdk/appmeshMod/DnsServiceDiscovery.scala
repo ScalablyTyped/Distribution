@@ -13,16 +13,13 @@ trait DnsServiceDiscovery extends StObject {
 }
 object DnsServiceDiscovery {
   
-  @scala.inline
-  def apply(hostname: Hostname): DnsServiceDiscovery = {
+  inline def apply(hostname: Hostname): DnsServiceDiscovery = {
     val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any])
     __obj.asInstanceOf[DnsServiceDiscovery]
   }
   
-  @scala.inline
-  implicit class DnsServiceDiscoveryMutableBuilder[Self <: DnsServiceDiscovery] (val x: Self) extends AnyVal {
+  extension [Self <: DnsServiceDiscovery](x: Self) {
     
-    @scala.inline
-    def setHostname(value: Hostname): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: Hostname): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
   }
 }

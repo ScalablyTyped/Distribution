@@ -16,12 +16,12 @@ object directPendingFeedMod {
   class DirectPendingInboxFeed protected () extends Feed[DirectInboxFeedResponse, DirectInboxFeedResponseThreadsItem] {
     def this(client: IgApiClient) = this()
     
-    var cursor: js.Any = js.native
+    /* private */ var cursor: js.Any = js.native
     
     def records(): js.Promise[js.Array[DirectThreadEntity]] = js.native
     
     def request(): js.Promise[DirectInboxFeedResponse] = js.native
     
-    var seqId: js.Any = js.native
+    /* private */ var seqId: js.Any = js.native
   }
 }

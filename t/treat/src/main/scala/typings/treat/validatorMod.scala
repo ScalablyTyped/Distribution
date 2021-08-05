@@ -10,9 +10,7 @@ object validatorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validateGlobalStyle(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateGlobalStyle")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateGlobalStyle(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateGlobalStyle")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def validateStyle(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateStyle")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateStyle(value: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateStyle")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

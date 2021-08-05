@@ -8,16 +8,13 @@ object navigationStrings {
   
   @js.native
   sealed trait add extends StObject
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait replace extends StObject
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  inline def replace: replace = "replace".asInstanceOf[replace]
 }

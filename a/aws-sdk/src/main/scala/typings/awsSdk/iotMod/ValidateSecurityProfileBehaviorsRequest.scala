@@ -13,19 +13,15 @@ trait ValidateSecurityProfileBehaviorsRequest extends StObject {
 }
 object ValidateSecurityProfileBehaviorsRequest {
   
-  @scala.inline
-  def apply(behaviors: Behaviors): ValidateSecurityProfileBehaviorsRequest = {
+  inline def apply(behaviors: Behaviors): ValidateSecurityProfileBehaviorsRequest = {
     val __obj = js.Dynamic.literal(behaviors = behaviors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateSecurityProfileBehaviorsRequest]
   }
   
-  @scala.inline
-  implicit class ValidateSecurityProfileBehaviorsRequestMutableBuilder[Self <: ValidateSecurityProfileBehaviorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateSecurityProfileBehaviorsRequest](x: Self) {
     
-    @scala.inline
-    def setBehaviors(value: Behaviors): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
+    inline def setBehaviors(value: Behaviors): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorsVarargs(value: Behavior*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
+    inline def setBehaviorsVarargs(value: Behavior*): Self = StObject.set(x, "behaviors", js.Array(value :_*))
   }
 }

@@ -14,19 +14,15 @@ trait Import
 }
 object Import {
   
-  @scala.inline
-  def apply(): Import = {
+  inline def apply(): Import = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Import]
   }
   
-  @scala.inline
-  implicit class ImportMutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
+  extension [Self <: Import](x: Self) {
     
-    @scala.inline
-    def setImport(value: String): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+    inline def setImport(value: String): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
+    inline def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
   }
 }

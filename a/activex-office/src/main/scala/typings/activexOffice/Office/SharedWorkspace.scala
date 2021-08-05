@@ -43,7 +43,7 @@ trait SharedWorkspace extends StObject {
   
   var Name: String = js.native
   
-  @JSName("Office.SharedWorkspace_typekey")
+  /* private */ @JSName("Office.SharedWorkspace_typekey")
   var OfficeDotSharedWorkspace_typekey: SharedWorkspace = js.native
   
   val Parent: js.Any = js.native

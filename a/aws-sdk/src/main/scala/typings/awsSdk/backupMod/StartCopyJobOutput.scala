@@ -18,25 +18,19 @@ trait StartCopyJobOutput extends StObject {
 }
 object StartCopyJobOutput {
   
-  @scala.inline
-  def apply(): StartCopyJobOutput = {
+  inline def apply(): StartCopyJobOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartCopyJobOutput]
   }
   
-  @scala.inline
-  implicit class StartCopyJobOutputMutableBuilder[Self <: StartCopyJobOutput] (val x: Self) extends AnyVal {
+  extension [Self <: StartCopyJobOutput](x: Self) {
     
-    @scala.inline
-    def setCopyJobId(value: String): Self = StObject.set(x, "CopyJobId", value.asInstanceOf[js.Any])
+    inline def setCopyJobId(value: String): Self = StObject.set(x, "CopyJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyJobIdUndefined: Self = StObject.set(x, "CopyJobId", js.undefined)
+    inline def setCopyJobIdUndefined: Self = StObject.set(x, "CopyJobId", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: timestamp): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
   }
 }

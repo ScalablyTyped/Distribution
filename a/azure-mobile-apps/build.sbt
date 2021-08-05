@@ -1,11 +1,11 @@
 organization := "org.scalablytyped"
 name := "azure-mobile-apps"
-version := "4.0.2-7915f7"
+version := "4.0.2-16cb65"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

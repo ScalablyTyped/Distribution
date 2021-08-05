@@ -17,8 +17,7 @@ object listMod {
   
   object default {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       hasPaginationCustomizePrefixClsBorderedSplitClassNameChildrenItemLayoutLoadMoreGridDataSourceSizeHeaderFooterLoadingRowKeyRenderItemLocaleRest: ListProps[T]
     ): Element = ^.asInstanceOf[js.Dynamic].apply(hasPaginationCustomizePrefixClsBorderedSplitClassNameChildrenItemLayoutLoadMoreGridDataSourceSizeHeaderFooterLoadingRowKeyRenderItemLocaleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -29,8 +28,7 @@ object listMod {
     @JSImport("antd/lib/list", "default.Item")
     @js.native
     def Item: ListItemTypeProps = js.native
-    @scala.inline
-    def Item_=(x: ListItemTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: ListItemTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("antd/lib/list", "ListConsumer")
@@ -56,29 +54,21 @@ object listMod {
   trait ColumnType extends StObject
   object ColumnType {
     
-    @scala.inline
-    def column: typings.antd.antdStrings.column = "column".asInstanceOf[typings.antd.antdStrings.column]
+    inline def column: typings.antd.antdStrings.column = "column".asInstanceOf[typings.antd.antdStrings.column]
     
-    @scala.inline
-    def gutter: typings.antd.antdStrings.gutter = "gutter".asInstanceOf[typings.antd.antdStrings.gutter]
+    inline def gutter: typings.antd.antdStrings.gutter = "gutter".asInstanceOf[typings.antd.antdStrings.gutter]
     
-    @scala.inline
-    def lg: typings.antd.antdStrings.lg = "lg".asInstanceOf[typings.antd.antdStrings.lg]
+    inline def lg: typings.antd.antdStrings.lg = "lg".asInstanceOf[typings.antd.antdStrings.lg]
     
-    @scala.inline
-    def md: typings.antd.antdStrings.md = "md".asInstanceOf[typings.antd.antdStrings.md]
+    inline def md: typings.antd.antdStrings.md = "md".asInstanceOf[typings.antd.antdStrings.md]
     
-    @scala.inline
-    def sm: typings.antd.antdStrings.sm = "sm".asInstanceOf[typings.antd.antdStrings.sm]
+    inline def sm: typings.antd.antdStrings.sm = "sm".asInstanceOf[typings.antd.antdStrings.sm]
     
-    @scala.inline
-    def xl: typings.antd.antdStrings.xl = "xl".asInstanceOf[typings.antd.antdStrings.xl]
+    inline def xl: typings.antd.antdStrings.xl = "xl".asInstanceOf[typings.antd.antdStrings.xl]
     
-    @scala.inline
-    def xs: typings.antd.antdStrings.xs = "xs".asInstanceOf[typings.antd.antdStrings.xs]
+    inline def xs: typings.antd.antdStrings.xs = "xs".asInstanceOf[typings.antd.antdStrings.xs]
     
-    @scala.inline
-    def xxl: typings.antd.antdStrings.xxl = "xxl".asInstanceOf[typings.antd.antdStrings.xxl]
+    inline def xxl: typings.antd.antdStrings.xxl = "xxl".asInstanceOf[typings.antd.antdStrings.xxl]
   }
   
   trait ListConsumerProps extends StObject {
@@ -89,26 +79,20 @@ object listMod {
   }
   object ListConsumerProps {
     
-    @scala.inline
-    def apply(): ListConsumerProps = {
+    inline def apply(): ListConsumerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListConsumerProps]
     }
     
-    @scala.inline
-    implicit class ListConsumerPropsMutableBuilder[Self <: ListConsumerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListConsumerProps](x: Self) {
       
-      @scala.inline
-      def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setItemLayout(value: String): Self = StObject.set(x, "itemLayout", value.asInstanceOf[js.Any])
+      inline def setItemLayout(value: String): Self = StObject.set(x, "itemLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemLayoutUndefined: Self = StObject.set(x, "itemLayout", js.undefined)
+      inline def setItemLayoutUndefined: Self = StObject.set(x, "itemLayout", js.undefined)
     }
   }
   
@@ -132,62 +116,44 @@ object listMod {
   }
   object ListGridType {
     
-    @scala.inline
-    def apply(): ListGridType = {
+    inline def apply(): ListGridType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListGridType]
     }
     
-    @scala.inline
-    implicit class ListGridTypeMutableBuilder[Self <: ListGridType] (val x: Self) extends AnyVal {
+    extension [Self <: ListGridType](x: Self) {
       
-      @scala.inline
-      def setColumn(value: ColumnCount): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: ColumnCount): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
       
-      @scala.inline
-      def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setLg(value: ColumnCount): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: ColumnCount): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+      inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
       
-      @scala.inline
-      def setMd(value: ColumnCount): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: ColumnCount): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+      inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
       
-      @scala.inline
-      def setSm(value: ColumnCount): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      inline def setSm(value: ColumnCount): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+      inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
       
-      @scala.inline
-      def setXl(value: ColumnCount): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      inline def setXl(value: ColumnCount): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
+      inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
       
-      @scala.inline
-      def setXs(value: ColumnCount): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      inline def setXs(value: ColumnCount): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+      inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
       
-      @scala.inline
-      def setXxl(value: ColumnCount): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
+      inline def setXxl(value: ColumnCount): Self = StObject.set(x, "xxl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
+      inline def setXxlUndefined: Self = StObject.set(x, "xxl", js.undefined)
     }
   }
   
@@ -198,11 +164,9 @@ object listMod {
   trait ListItemLayout extends StObject
   object ListItemLayout {
     
-    @scala.inline
-    def horizontal: typings.antd.antdStrings.horizontal = "horizontal".asInstanceOf[typings.antd.antdStrings.horizontal]
+    inline def horizontal: typings.antd.antdStrings.horizontal = "horizontal".asInstanceOf[typings.antd.antdStrings.horizontal]
     
-    @scala.inline
-    def vertical: typings.antd.antdStrings.vertical = "vertical".asInstanceOf[typings.antd.antdStrings.vertical]
+    inline def vertical: typings.antd.antdStrings.vertical = "vertical".asInstanceOf[typings.antd.antdStrings.vertical]
   }
   
   trait ListLocale extends StObject {
@@ -211,23 +175,18 @@ object listMod {
   }
   object ListLocale {
     
-    @scala.inline
-    def apply(): ListLocale = {
+    inline def apply(): ListLocale = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListLocale]
     }
     
-    @scala.inline
-    implicit class ListLocaleMutableBuilder[Self <: ListLocale] (val x: Self) extends AnyVal {
+    extension [Self <: ListLocale](x: Self) {
       
-      @scala.inline
-      def setEmptyText(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
+      inline def setEmptyText(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyTextFunction0(value: () => ReactNode): Self = StObject.set(x, "emptyText", js.Any.fromFunction0(value))
+      inline def setEmptyTextFunction0(value: () => ReactNode): Self = StObject.set(x, "emptyText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmptyTextUndefined: Self = StObject.set(x, "emptyText", js.undefined)
+      inline def setEmptyTextUndefined: Self = StObject.set(x, "emptyText", js.undefined)
     }
   }
   
@@ -275,140 +234,96 @@ object listMod {
   }
   object ListProps {
     
-    @scala.inline
-    def apply[T](): ListProps[T] = {
+    inline def apply[T](): ListProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListProps[T]]
     }
     
-    @scala.inline
-    implicit class ListPropsMutableBuilder[Self <: ListProps[?], T] (val x: Self & ListProps[T]) extends AnyVal {
+    extension [Self <: ListProps[?], T](x: Self & ListProps[T]) {
       
-      @scala.inline
-      def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
+      inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
+      inline def setBorderedUndefined: Self = StObject.set(x, "bordered", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataSource(value: js.Array[T]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      inline def setDataSource(value: js.Array[T]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+      inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
       
-      @scala.inline
-      def setDataSourceVarargs(value: T*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+      inline def setDataSourceVarargs(value: T*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
       
-      @scala.inline
-      def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: ReactNode): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+      inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
       
-      @scala.inline
-      def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setGrid(value: ListGridType): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: ListGridType): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setItemLayout(value: ListItemLayout): Self = StObject.set(x, "itemLayout", value.asInstanceOf[js.Any])
+      inline def setItemLayout(value: ListItemLayout): Self = StObject.set(x, "itemLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemLayoutUndefined: Self = StObject.set(x, "itemLayout", js.undefined)
+      inline def setItemLayoutUndefined: Self = StObject.set(x, "itemLayout", js.undefined)
       
-      @scala.inline
-      def setLoadMore(value: ReactNode): Self = StObject.set(x, "loadMore", value.asInstanceOf[js.Any])
+      inline def setLoadMore(value: ReactNode): Self = StObject.set(x, "loadMore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadMoreUndefined: Self = StObject.set(x, "loadMore", js.undefined)
+      inline def setLoadMoreUndefined: Self = StObject.set(x, "loadMore", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean | SpinProps): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean | SpinProps): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setLocale(value: ListLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: ListLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setPagination(value: PaginationConfig | `false`): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: PaginationConfig | `false`): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+      inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setRenderItem(value: (/* item */ T, /* index */ Double) => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
+      inline def setRenderItem(value: (/* item */ T, /* index */ Double) => ReactNode): Self = StObject.set(x, "renderItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
+      inline def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
       
-      @scala.inline
-      def setRowKey(value: (js.Function1[/* item */ T, String]) | String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+      inline def setRowKey(value: (js.Function1[/* item */ T, String]) | String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowKeyFunction1(value: /* item */ T => String): Self = StObject.set(x, "rowKey", js.Any.fromFunction1(value))
+      inline def setRowKeyFunction1(value: /* item */ T => String): Self = StObject.set(x, "rowKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
+      inline def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
       
-      @scala.inline
-      def setSize(value: ListSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ListSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+      inline def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+      inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -420,13 +335,10 @@ object listMod {
   trait ListSize extends StObject
   object ListSize {
     
-    @scala.inline
-    def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
+    inline def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
     
-    @scala.inline
-    def large: typings.antd.antdStrings.large = "large".asInstanceOf[typings.antd.antdStrings.large]
+    inline def large: typings.antd.antdStrings.large = "large".asInstanceOf[typings.antd.antdStrings.large]
     
-    @scala.inline
-    def small: typings.antd.antdStrings.small = "small".asInstanceOf[typings.antd.antdStrings.small]
+    inline def small: typings.antd.antdStrings.small = "small".asInstanceOf[typings.antd.antdStrings.small]
   }
 }

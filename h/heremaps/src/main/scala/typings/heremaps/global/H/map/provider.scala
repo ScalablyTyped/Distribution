@@ -131,8 +131,7 @@ object provider {
     @JSGlobal("H.map.provider.Invalidations.MARK_INITIAL")
     @js.native
     def MARK_INITIAL: Mark = js.native
-    @scala.inline
-    def MARK_INITIAL_=(x: Mark): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARK_INITIAL")(x.asInstanceOf[js.Any])
+    inline def MARK_INITIAL_=(x: Mark): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MARK_INITIAL")(x.asInstanceOf[js.Any])
   }
   
   /**

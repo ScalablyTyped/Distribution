@@ -18,22 +18,17 @@ trait SchemaBatchDeletePhotosRequest extends StObject {
 }
 object SchemaBatchDeletePhotosRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchDeletePhotosRequest = {
+  inline def apply(): SchemaBatchDeletePhotosRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchDeletePhotosRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchDeletePhotosRequestMutableBuilder[Self <: SchemaBatchDeletePhotosRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchDeletePhotosRequest](x: Self) {
     
-    @scala.inline
-    def setPhotoIds(value: js.Array[String]): Self = StObject.set(x, "photoIds", value.asInstanceOf[js.Any])
+    inline def setPhotoIds(value: js.Array[String]): Self = StObject.set(x, "photoIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoIdsUndefined: Self = StObject.set(x, "photoIds", js.undefined)
+    inline def setPhotoIdsUndefined: Self = StObject.set(x, "photoIds", js.undefined)
     
-    @scala.inline
-    def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value :_*))
+    inline def setPhotoIdsVarargs(value: String*): Self = StObject.set(x, "photoIds", js.Array(value :_*))
   }
 }

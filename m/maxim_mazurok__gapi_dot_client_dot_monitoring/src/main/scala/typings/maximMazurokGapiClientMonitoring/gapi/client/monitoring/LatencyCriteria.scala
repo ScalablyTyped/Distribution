@@ -11,19 +11,15 @@ trait LatencyCriteria extends StObject {
 }
 object LatencyCriteria {
   
-  @scala.inline
-  def apply(): LatencyCriteria = {
+  inline def apply(): LatencyCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LatencyCriteria]
   }
   
-  @scala.inline
-  implicit class LatencyCriteriaMutableBuilder[Self <: LatencyCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: LatencyCriteria](x: Self) {
     
-    @scala.inline
-    def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: String): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

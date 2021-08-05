@@ -18,23 +18,18 @@ object typesDataRetrievalPolicyMod {
   }
   object DataRetrievalPolicy {
     
-    @scala.inline
-    def apply(): DataRetrievalPolicy = {
+    inline def apply(): DataRetrievalPolicy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataRetrievalPolicy]
     }
     
-    @scala.inline
-    implicit class DataRetrievalPolicyMutableBuilder[Self <: DataRetrievalPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: DataRetrievalPolicy](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[DataRetrievalRule] | Iterable[DataRetrievalRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[DataRetrievalRule] | Iterable[DataRetrievalRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: DataRetrievalRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: DataRetrievalRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     }
   }
   
@@ -50,23 +45,18 @@ object typesDataRetrievalPolicyMod {
   }
   object UnmarshalledDataRetrievalPolicy {
     
-    @scala.inline
-    def apply(): UnmarshalledDataRetrievalPolicy = {
+    inline def apply(): UnmarshalledDataRetrievalPolicy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledDataRetrievalPolicy]
     }
     
-    @scala.inline
-    implicit class UnmarshalledDataRetrievalPolicyMutableBuilder[Self <: UnmarshalledDataRetrievalPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledDataRetrievalPolicy](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[UnmarshalledDataRetrievalRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[UnmarshalledDataRetrievalRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: UnmarshalledDataRetrievalRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: UnmarshalledDataRetrievalRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     }
   }
 }

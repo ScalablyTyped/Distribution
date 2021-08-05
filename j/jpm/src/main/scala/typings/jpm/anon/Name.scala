@@ -23,52 +23,37 @@ trait Name extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply(url: String): Name = {
+  inline def apply(url: String): Name = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOnAttach(value: /* event */ FrameEvent => js.Any): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
+    inline def setOnAttach(value: /* event */ FrameEvent => js.Any): Self = StObject.set(x, "onAttach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
+    inline def setOnAttachUndefined: Self = StObject.set(x, "onAttach", js.undefined)
     
-    @scala.inline
-    def setOnDetach(value: /* event */ FrameEvent => js.Any): Self = StObject.set(x, "onDetach", js.Any.fromFunction1(value))
+    inline def setOnDetach(value: /* event */ FrameEvent => js.Any): Self = StObject.set(x, "onDetach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDetachUndefined: Self = StObject.set(x, "onDetach", js.undefined)
+    inline def setOnDetachUndefined: Self = StObject.set(x, "onDetach", js.undefined)
     
-    @scala.inline
-    def setOnLoad(value: /* event */ FrameEvent => js.Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+    inline def setOnLoad(value: /* event */ FrameEvent => js.Any): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
     
-    @scala.inline
-    def setOnMessage(value: /* message */ FrameEvent => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    inline def setOnMessage(value: /* message */ FrameEvent => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
+    inline def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
     
-    @scala.inline
-    def setOnReady(value: /* event */ FrameEvent => js.Any): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
+    inline def setOnReady(value: /* event */ FrameEvent => js.Any): Self = StObject.set(x, "onReady", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+    inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

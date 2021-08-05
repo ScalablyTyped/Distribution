@@ -28,22 +28,17 @@ trait TimeUnitTransform
 }
 object TimeUnitTransform {
   
-  @scala.inline
-  def apply(as: FieldName, field: FieldName, timeUnit: TimeUnit | TimeUnitParams): TimeUnitTransform = {
+  inline def apply(as: FieldName, field: FieldName, timeUnit: TimeUnit | TimeUnitParams): TimeUnitTransform = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], timeUnit = timeUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeUnitTransform]
   }
   
-  @scala.inline
-  implicit class TimeUnitTransformMutableBuilder[Self <: TimeUnitTransform] (val x: Self) extends AnyVal {
+  extension [Self <: TimeUnitTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUnit(value: TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: TimeUnit | TimeUnitParams): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
   }
 }

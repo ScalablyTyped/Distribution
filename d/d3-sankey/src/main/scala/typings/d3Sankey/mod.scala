@@ -13,32 +13,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sankey(): SankeyLayout[SankeyGraph[js.Object, js.Object], js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[SankeyGraph[js.Object, js.Object], js.Object, js.Object]]
+  inline def sankey(): SankeyLayout[SankeyGraph[js.Object, js.Object], js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[SankeyGraph[js.Object, js.Object], js.Object, js.Object]]
   
-  @scala.inline
-  def sankeyCenter(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyCenter")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def sankeyCenter(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyCenter")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def sankeyJustify(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyJustify")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def sankeyJustify(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyJustify")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def sankeyLeft(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLeft")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def sankeyLeft(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLeft")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def sankeyLinkHorizontal(): Link[js.Any, SankeyLinkIndex, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link[js.Any, SankeyLinkIndex, js.Tuple2[Double, Double]]]
+  inline def sankeyLinkHorizontal(): Link[js.Any, SankeyLinkIndex, js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link[js.Any, SankeyLinkIndex, js.Tuple2[Double, Double]]]
   
-  @scala.inline
-  def sankeyLinkHorizontal_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): Link[js.Any, SankeyLink[N, L], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link[js.Any, SankeyLink[N, L], js.Tuple2[Double, Double]]]
+  inline def sankeyLinkHorizontal_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): Link[js.Any, SankeyLink[N, L], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankeyLinkHorizontal")().asInstanceOf[Link[js.Any, SankeyLink[N, L], js.Tuple2[Double, Double]]]
   
-  @scala.inline
-  def sankeyRight(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyRight")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def sankeyRight(node: typings.d3Sankey.anon.SankeyNode, n: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sankeyRight")(node.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def sankey_DataN_SankeyExtraPropertiesL_SankeyExtraProperties[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[Data, N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[Data, N, L]]
+  inline def sankey_DataN_SankeyExtraPropertiesL_SankeyExtraProperties[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[Data, N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[Data, N, L]]
   
-  @scala.inline
-  def sankey_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[SankeyGraph[N, L], N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[SankeyGraph[N, L], N, L]]
+  inline def sankey_N_SankeyExtraPropertiesL_SankeyExtraProperties[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyLayout[SankeyGraph[N, L], N, L] = ^.asInstanceOf[js.Dynamic].applyDynamic("sankey")().asInstanceOf[SankeyLayout[SankeyGraph[N, L], N, L]]
   
   type SankeyExtraProperties = StringDictionary[js.Any]
   
@@ -56,26 +47,20 @@ object mod {
   }
   object SankeyGraph {
     
-    @scala.inline
-    def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](links: js.Array[SankeyLink[N, L]], nodes: js.Array[SankeyNode[N, L]]): SankeyGraph[N, L] = {
+    inline def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](links: js.Array[SankeyLink[N, L]], nodes: js.Array[SankeyNode[N, L]]): SankeyGraph[N, L] = {
       val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[SankeyGraph[N, L]]
     }
     
-    @scala.inline
-    implicit class SankeyGraphMutableBuilder[Self <: SankeyGraph[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self & (SankeyGraph[N, L])) extends AnyVal {
+    extension [Self <: SankeyGraph[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](x: Self & (SankeyGraph[N, L])) {
       
-      @scala.inline
-      def setLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setNodes(value: js.Array[SankeyNode[N, L]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[SankeyNode[N, L]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: (SankeyNode[N, L])*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: (SankeyNode[N, L])*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
   
@@ -292,8 +277,7 @@ object mod {
   }
   object SankeyLinkMinimal {
     
-    @scala.inline
-    def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](
+    inline def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](
       source: Double | String | (SankeyNode[N, L]),
       target: Double | String | (SankeyNode[N, L]),
       value: Double
@@ -302,41 +286,29 @@ object mod {
       __obj.asInstanceOf[SankeyLinkMinimal[N, L]]
     }
     
-    @scala.inline
-    implicit class SankeyLinkMinimalMutableBuilder[Self <: SankeyLinkMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self & (SankeyLinkMinimal[N, L])) extends AnyVal {
+    extension [Self <: SankeyLinkMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](x: Self & (SankeyLinkMinimal[N, L])) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setSource(value: Double | String | (SankeyNode[N, L])): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Double | String | (SankeyNode[N, L])): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Double | String | (SankeyNode[N, L])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Double | String | (SankeyNode[N, L])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+      inline def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+      inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     }
   }
   
@@ -399,80 +371,56 @@ object mod {
   }
   object SankeyNodeMinimal {
     
-    @scala.inline
-    def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyNodeMinimal[N, L] = {
+    inline def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](): SankeyNodeMinimal[N, L] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SankeyNodeMinimal[N, L]]
     }
     
-    @scala.inline
-    implicit class SankeyNodeMinimalMutableBuilder[Self <: SankeyNodeMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */] (val x: Self & (SankeyNodeMinimal[N, L])) extends AnyVal {
+    extension [Self <: SankeyNodeMinimal[?, ?], N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](x: Self & (SankeyNodeMinimal[N, L])) {
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setSourceLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "sourceLinks", value.asInstanceOf[js.Any])
+      inline def setSourceLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "sourceLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceLinksUndefined: Self = StObject.set(x, "sourceLinks", js.undefined)
+      inline def setSourceLinksUndefined: Self = StObject.set(x, "sourceLinks", js.undefined)
       
-      @scala.inline
-      def setSourceLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "sourceLinks", js.Array(value :_*))
+      inline def setSourceLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "sourceLinks", js.Array(value :_*))
       
-      @scala.inline
-      def setTargetLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "targetLinks", value.asInstanceOf[js.Any])
+      inline def setTargetLinks(value: js.Array[SankeyLink[N, L]]): Self = StObject.set(x, "targetLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetLinksUndefined: Self = StObject.set(x, "targetLinks", js.undefined)
+      inline def setTargetLinksUndefined: Self = StObject.set(x, "targetLinks", js.undefined)
       
-      @scala.inline
-      def setTargetLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "targetLinks", js.Array(value :_*))
+      inline def setTargetLinksVarargs(value: (SankeyLink[N, L])*): Self = StObject.set(x, "targetLinks", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
+      inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
+      inline def setX0Undefined: Self = StObject.set(x, "x0", js.undefined)
       
-      @scala.inline
-      def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
+      inline def setX1Undefined: Self = StObject.set(x, "x1", js.undefined)
       
-      @scala.inline
-      def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
+      inline def setY0(value: Double): Self = StObject.set(x, "y0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
+      inline def setY0Undefined: Self = StObject.set(x, "y0", js.undefined)
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
+      inline def setY1Undefined: Self = StObject.set(x, "y1", js.undefined)
     }
   }
 }

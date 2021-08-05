@@ -70,8 +70,7 @@ object Line {
   @JSImport("fabric/fabric-impl", "Line.ATTRIBUTE_NAMES")
   @js.native
   def ATTRIBUTE_NAMES: js.Array[String] = js.native
-  @scala.inline
-  def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
+  inline def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
   
   /**
     * Returns fabric.Line instance from an SVG element
@@ -81,19 +80,14 @@ object Line {
     * @param {Object} [options] Options object
     * @param {Function} [callback] callback function invoked after parsing
     */
-  @scala.inline
-  def fromElement(element: SVGElement): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[Line]
-  @scala.inline
-  def fromElement(element: SVGElement, callback: js.Function): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Line]
-  @scala.inline
-  def fromElement(element: SVGElement, callback: js.Function, options: ILineOptions): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Line]
-  @scala.inline
-  def fromElement(element: SVGElement, callback: Unit, options: ILineOptions): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Line]
+  inline def fromElement(element: SVGElement): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[Line]
+  inline def fromElement(element: SVGElement, callback: js.Function): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Line]
+  inline def fromElement(element: SVGElement, callback: js.Function, options: ILineOptions): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Line]
+  inline def fromElement(element: SVGElement, callback: Unit, options: ILineOptions): Line = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Line]
   
   /**
     * Returns fabric.Line instance from an object representation
     * @param object Object to create an instance from
     */
-  @scala.inline
-  def fromObject(`object`: js.Any): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Line]
+  inline def fromObject(`object`: js.Any): Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Line]
 }

@@ -16,16 +16,13 @@ trait Typeofdns extends StObject {
 }
 object Typeofdns {
   
-  @scala.inline
-  def apply(resolve: (String, js.Function1[/* resolveInfo */ ResolveCallbackResolveInfo, Unit]) => Unit): Typeofdns = {
+  inline def apply(resolve: (String, js.Function1[/* resolveInfo */ ResolveCallbackResolveInfo, Unit]) => Unit): Typeofdns = {
     val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction2(resolve))
     __obj.asInstanceOf[Typeofdns]
   }
   
-  @scala.inline
-  implicit class TypeofdnsMutableBuilder[Self <: Typeofdns] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofdns](x: Self) {
     
-    @scala.inline
-    def setResolve(value: (String, js.Function1[/* resolveInfo */ ResolveCallbackResolveInfo, Unit]) => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
+    inline def setResolve(value: (String, js.Function1[/* resolveInfo */ ResolveCallbackResolveInfo, Unit]) => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
   }
 }

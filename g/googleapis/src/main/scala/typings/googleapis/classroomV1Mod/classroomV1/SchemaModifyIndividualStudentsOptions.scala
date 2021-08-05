@@ -24,31 +24,23 @@ trait SchemaModifyIndividualStudentsOptions extends StObject {
 }
 object SchemaModifyIndividualStudentsOptions {
   
-  @scala.inline
-  def apply(): SchemaModifyIndividualStudentsOptions = {
+  inline def apply(): SchemaModifyIndividualStudentsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModifyIndividualStudentsOptions]
   }
   
-  @scala.inline
-  implicit class SchemaModifyIndividualStudentsOptionsMutableBuilder[Self <: SchemaModifyIndividualStudentsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModifyIndividualStudentsOptions](x: Self) {
     
-    @scala.inline
-    def setAddStudentIds(value: js.Array[String]): Self = StObject.set(x, "addStudentIds", value.asInstanceOf[js.Any])
+    inline def setAddStudentIds(value: js.Array[String]): Self = StObject.set(x, "addStudentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddStudentIdsUndefined: Self = StObject.set(x, "addStudentIds", js.undefined)
+    inline def setAddStudentIdsUndefined: Self = StObject.set(x, "addStudentIds", js.undefined)
     
-    @scala.inline
-    def setAddStudentIdsVarargs(value: String*): Self = StObject.set(x, "addStudentIds", js.Array(value :_*))
+    inline def setAddStudentIdsVarargs(value: String*): Self = StObject.set(x, "addStudentIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRemoveStudentIds(value: js.Array[String]): Self = StObject.set(x, "removeStudentIds", value.asInstanceOf[js.Any])
+    inline def setRemoveStudentIds(value: js.Array[String]): Self = StObject.set(x, "removeStudentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveStudentIdsUndefined: Self = StObject.set(x, "removeStudentIds", js.undefined)
+    inline def setRemoveStudentIdsUndefined: Self = StObject.set(x, "removeStudentIds", js.undefined)
     
-    @scala.inline
-    def setRemoveStudentIdsVarargs(value: String*): Self = StObject.set(x, "removeStudentIds", js.Array(value :_*))
+    inline def setRemoveStudentIdsVarargs(value: String*): Self = StObject.set(x, "removeStudentIds", js.Array(value :_*))
   }
 }

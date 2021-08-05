@@ -11,16 +11,13 @@ trait EventOnConnectionStateChange extends StObject {
 }
 object EventOnConnectionStateChange {
   
-  @scala.inline
-  def apply(target: IceConnectionState): EventOnConnectionStateChange = {
+  inline def apply(target: IceConnectionState): EventOnConnectionStateChange = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventOnConnectionStateChange]
   }
   
-  @scala.inline
-  implicit class EventOnConnectionStateChangeMutableBuilder[Self <: EventOnConnectionStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: EventOnConnectionStateChange](x: Self) {
     
-    @scala.inline
-    def setTarget(value: IceConnectionState): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: IceConnectionState): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

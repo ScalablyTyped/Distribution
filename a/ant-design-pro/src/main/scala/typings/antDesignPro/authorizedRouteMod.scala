@@ -23,23 +23,18 @@ object authorizedRouteMod {
   }
   object IAuthorizedRouteProps {
     
-    @scala.inline
-    def apply(authority: authority): IAuthorizedRouteProps = {
+    inline def apply(authority: authority): IAuthorizedRouteProps = {
       val __obj = js.Dynamic.literal(authority = authority.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAuthorizedRouteProps]
     }
     
-    @scala.inline
-    implicit class IAuthorizedRoutePropsMutableBuilder[Self <: IAuthorizedRouteProps] (val x: Self) extends AnyVal {
+    extension [Self <: IAuthorizedRouteProps](x: Self) {
       
-      @scala.inline
-      def setAuthority(value: authority): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+      inline def setAuthority(value: authority): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorityFunction1(value: /* currentAuthority */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "authority", js.Any.fromFunction1(value))
+      inline def setAuthorityFunction1(value: /* currentAuthority */ js.UndefOr[String] => Boolean): Self = StObject.set(x, "authority", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAuthorityVarargs(value: String*): Self = StObject.set(x, "authority", js.Array(value :_*))
+      inline def setAuthorityVarargs(value: String*): Self = StObject.set(x, "authority", js.Array(value :_*))
     }
   }
   

@@ -35,38 +35,28 @@ object radioMod {
   }
   object RadioProps {
     
-    @scala.inline
-    def apply(): RadioProps = {
+    inline def apply(): RadioProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadioProps]
     }
     
-    @scala.inline
-    implicit class RadioPropsMutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setInputRef(value: /* instance */ HTMLInputElement => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+      inline def setInputRef(value: /* instance */ HTMLInputElement => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
+      inline def setInputRefUndefined: Self = StObject.set(x, "inputRef", js.undefined)
       
-      @scala.inline
-      def setValidationState(value: success | warning | error): Self = StObject.set(x, "validationState", value.asInstanceOf[js.Any])
+      inline def setValidationState(value: success | warning | error): Self = StObject.set(x, "validationState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationStateUndefined: Self = StObject.set(x, "validationState", js.undefined)
+      inline def setValidationStateUndefined: Self = StObject.set(x, "validationState", js.undefined)
     }
   }
 }

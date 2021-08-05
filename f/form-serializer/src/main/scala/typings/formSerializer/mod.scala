@@ -14,6 +14,5 @@ object mod {
   @JSImport("form-serializer", "patterns")
   @js.native
   def patterns: FormSerializerPatterns = js.native
-  @scala.inline
-  def patterns_=(x: FormSerializerPatterns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("patterns")(x.asInstanceOf[js.Any])
+  inline def patterns_=(x: FormSerializerPatterns): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("patterns")(x.asInstanceOf[js.Any])
 }

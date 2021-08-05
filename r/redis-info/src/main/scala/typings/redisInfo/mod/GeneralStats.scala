@@ -16,19 +16,15 @@ trait GeneralStats extends StObject {
 }
 object GeneralStats {
   
-  @scala.inline
-  def apply(commands: StringDictionary[Calls], databases: NumberDictionary[Expires]): GeneralStats = {
+  inline def apply(commands: StringDictionary[Calls], databases: NumberDictionary[Expires]): GeneralStats = {
     val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], databases = databases.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralStats]
   }
   
-  @scala.inline
-  implicit class GeneralStatsMutableBuilder[Self <: GeneralStats] (val x: Self) extends AnyVal {
+  extension [Self <: GeneralStats](x: Self) {
     
-    @scala.inline
-    def setCommands(value: StringDictionary[Calls]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: StringDictionary[Calls]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabases(value: NumberDictionary[Expires]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
+    inline def setDatabases(value: NumberDictionary[Expires]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
   }
 }

@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcSplitFormOrientation extends StObject
 object AcSplitFormOrientation {
   
-  @scala.inline
-  def acDatasheetOnBottom: `1` = 1.asInstanceOf[`1`]
+  inline def acDatasheetOnBottom: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acDatasheetOnLeft: `2` = 2.asInstanceOf[`2`]
+  inline def acDatasheetOnLeft: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acDatasheetOnRight: `3` = 3.asInstanceOf[`3`]
+  inline def acDatasheetOnRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acDatasheetOnTop: `0` = 0.asInstanceOf[`0`]
+  inline def acDatasheetOnTop: `0` = 0.asInstanceOf[`0`]
 }

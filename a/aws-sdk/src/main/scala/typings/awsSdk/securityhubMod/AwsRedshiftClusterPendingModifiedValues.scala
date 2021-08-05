@@ -63,79 +63,55 @@ trait AwsRedshiftClusterPendingModifiedValues extends StObject {
 }
 object AwsRedshiftClusterPendingModifiedValues {
   
-  @scala.inline
-  def apply(): AwsRedshiftClusterPendingModifiedValues = {
+  inline def apply(): AwsRedshiftClusterPendingModifiedValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRedshiftClusterPendingModifiedValues]
   }
   
-  @scala.inline
-  implicit class AwsRedshiftClusterPendingModifiedValuesMutableBuilder[Self <: AwsRedshiftClusterPendingModifiedValues] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRedshiftClusterPendingModifiedValues](x: Self) {
     
-    @scala.inline
-    def setAutomatedSnapshotRetentionPeriod(value: Integer): Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
+    inline def setAutomatedSnapshotRetentionPeriod(value: Integer): Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomatedSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", js.undefined)
+    inline def setAutomatedSnapshotRetentionPeriodUndefined: Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", js.undefined)
     
-    @scala.inline
-    def setClusterIdentifier(value: NonEmptyString): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: NonEmptyString): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setClusterType(value: NonEmptyString): Self = StObject.set(x, "ClusterType", value.asInstanceOf[js.Any])
+    inline def setClusterType(value: NonEmptyString): Self = StObject.set(x, "ClusterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterTypeUndefined: Self = StObject.set(x, "ClusterType", js.undefined)
+    inline def setClusterTypeUndefined: Self = StObject.set(x, "ClusterType", js.undefined)
     
-    @scala.inline
-    def setClusterVersion(value: NonEmptyString): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
+    inline def setClusterVersion(value: NonEmptyString): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
+    inline def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
     
-    @scala.inline
-    def setEncryptionType(value: NonEmptyString): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
+    inline def setEncryptionType(value: NonEmptyString): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
+    inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
     
-    @scala.inline
-    def setEnhancedVpcRouting(value: Boolean): Self = StObject.set(x, "EnhancedVpcRouting", value.asInstanceOf[js.Any])
+    inline def setEnhancedVpcRouting(value: Boolean): Self = StObject.set(x, "EnhancedVpcRouting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnhancedVpcRoutingUndefined: Self = StObject.set(x, "EnhancedVpcRouting", js.undefined)
+    inline def setEnhancedVpcRoutingUndefined: Self = StObject.set(x, "EnhancedVpcRouting", js.undefined)
     
-    @scala.inline
-    def setMaintenanceTrackName(value: NonEmptyString): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
+    inline def setMaintenanceTrackName(value: NonEmptyString): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
+    inline def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
     
-    @scala.inline
-    def setMasterUserPassword(value: NonEmptyString): Self = StObject.set(x, "MasterUserPassword", value.asInstanceOf[js.Any])
+    inline def setMasterUserPassword(value: NonEmptyString): Self = StObject.set(x, "MasterUserPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterUserPasswordUndefined: Self = StObject.set(x, "MasterUserPassword", js.undefined)
+    inline def setMasterUserPasswordUndefined: Self = StObject.set(x, "MasterUserPassword", js.undefined)
     
-    @scala.inline
-    def setNodeType(value: NonEmptyString): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: NonEmptyString): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
+    inline def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
-    @scala.inline
-    def setNumberOfNodes(value: Integer): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
+    inline def setNumberOfNodes(value: Integer): Self = StObject.set(x, "NumberOfNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfNodesUndefined: Self = StObject.set(x, "NumberOfNodes", js.undefined)
+    inline def setNumberOfNodesUndefined: Self = StObject.set(x, "NumberOfNodes", js.undefined)
     
-    @scala.inline
-    def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
+    inline def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "PubliclyAccessible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "PubliclyAccessible", js.undefined)
+    inline def setPubliclyAccessibleUndefined: Self = StObject.set(x, "PubliclyAccessible", js.undefined)
   }
 }

@@ -56,8 +56,7 @@ trait Remote
 }
 object Remote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BrowserView: Instantiable1[/* options */ js.UndefOr[BrowserViewConstructorOptions], BrowserView],
     BrowserWindow: TypeofBrowserWindow & (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]),
     ClientRequest: Instantiable1[/* options */ ClientRequestConstructorOptions | String, ClientRequest],
@@ -118,22 +117,16 @@ object Remote {
     __obj.asInstanceOf[Remote]
   }
   
-  @scala.inline
-  implicit class RemoteMutableBuilder[Self <: Remote] (val x: Self) extends AnyVal {
+  extension [Self <: Remote](x: Self) {
     
-    @scala.inline
-    def setGetCurrentWebContents(value: () => WebContents_): Self = StObject.set(x, "getCurrentWebContents", js.Any.fromFunction0(value))
+    inline def setGetCurrentWebContents(value: () => WebContents_): Self = StObject.set(x, "getCurrentWebContents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentWindow(value: () => BrowserWindow): Self = StObject.set(x, "getCurrentWindow", js.Any.fromFunction0(value))
+    inline def setGetCurrentWindow(value: () => BrowserWindow): Self = StObject.set(x, "getCurrentWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGlobal(value: String => js.Any): Self = StObject.set(x, "getGlobal", js.Any.fromFunction1(value))
+    inline def setGetGlobal(value: String => js.Any): Self = StObject.set(x, "getGlobal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProcess(value: Process): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: Process): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
+    inline def setRequire(value: String => js.Any): Self = StObject.set(x, "require", js.Any.fromFunction1(value))
   }
 }

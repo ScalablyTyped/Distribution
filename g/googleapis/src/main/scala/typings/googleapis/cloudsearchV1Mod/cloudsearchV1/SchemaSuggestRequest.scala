@@ -27,34 +27,25 @@ trait SchemaSuggestRequest extends StObject {
 }
 object SchemaSuggestRequest {
   
-  @scala.inline
-  def apply(): SchemaSuggestRequest = {
+  inline def apply(): SchemaSuggestRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSuggestRequest]
   }
   
-  @scala.inline
-  implicit class SchemaSuggestRequestMutableBuilder[Self <: SchemaSuggestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSuggestRequest](x: Self) {
     
-    @scala.inline
-    def setDataSourceRestrictions(value: js.Array[SchemaDataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
+    inline def setDataSourceRestrictions(value: js.Array[SchemaDataSourceRestriction]): Self = StObject.set(x, "dataSourceRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
+    inline def setDataSourceRestrictionsUndefined: Self = StObject.set(x, "dataSourceRestrictions", js.undefined)
     
-    @scala.inline
-    def setDataSourceRestrictionsVarargs(value: SchemaDataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
+    inline def setDataSourceRestrictionsVarargs(value: SchemaDataSourceRestriction*): Self = StObject.set(x, "dataSourceRestrictions", js.Array(value :_*))
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setRequestOptions(value: SchemaRequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRequestOptions(value: SchemaRequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
   }
 }

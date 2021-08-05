@@ -10,16 +10,13 @@ trait PiiTokenOptions extends StObject {
 }
 object PiiTokenOptions {
   
-  @scala.inline
-  def apply(personal_id_number: String): PiiTokenOptions = {
+  inline def apply(personal_id_number: String): PiiTokenOptions = {
     val __obj = js.Dynamic.literal(personal_id_number = personal_id_number.asInstanceOf[js.Any])
     __obj.asInstanceOf[PiiTokenOptions]
   }
   
-  @scala.inline
-  implicit class PiiTokenOptionsMutableBuilder[Self <: PiiTokenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PiiTokenOptions](x: Self) {
     
-    @scala.inline
-    def setPersonal_id_number(value: String): Self = StObject.set(x, "personal_id_number", value.asInstanceOf[js.Any])
+    inline def setPersonal_id_number(value: String): Self = StObject.set(x, "personal_id_number", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait MlPutCalendarJob
 }
 object MlPutCalendarJob {
   
-  @scala.inline
-  def apply(calendar_id: String, job_id: String): MlPutCalendarJob = {
+  inline def apply(calendar_id: String, job_id: String): MlPutCalendarJob = {
     val __obj = js.Dynamic.literal(calendar_id = calendar_id.asInstanceOf[js.Any], job_id = job_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MlPutCalendarJob]
   }
   
-  @scala.inline
-  implicit class MlPutCalendarJobMutableBuilder[Self <: MlPutCalendarJob] (val x: Self) extends AnyVal {
+  extension [Self <: MlPutCalendarJob](x: Self) {
     
-    @scala.inline
-    def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
+    inline def setCalendar_id(value: String): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
   }
 }

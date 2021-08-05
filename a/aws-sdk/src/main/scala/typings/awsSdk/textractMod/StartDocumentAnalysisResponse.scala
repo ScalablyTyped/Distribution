@@ -13,19 +13,15 @@ trait StartDocumentAnalysisResponse extends StObject {
 }
 object StartDocumentAnalysisResponse {
   
-  @scala.inline
-  def apply(): StartDocumentAnalysisResponse = {
+  inline def apply(): StartDocumentAnalysisResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartDocumentAnalysisResponse]
   }
   
-  @scala.inline
-  implicit class StartDocumentAnalysisResponseMutableBuilder[Self <: StartDocumentAnalysisResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartDocumentAnalysisResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

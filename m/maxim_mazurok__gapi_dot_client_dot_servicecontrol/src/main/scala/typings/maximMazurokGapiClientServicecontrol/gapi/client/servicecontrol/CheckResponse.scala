@@ -19,29 +19,23 @@ trait CheckResponse extends StObject {
 }
 object CheckResponse {
   
-  @scala.inline
-  def apply(): CheckResponse = {
+  inline def apply(): CheckResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckResponse]
   }
   
-  @scala.inline
-  implicit class CheckResponseMutableBuilder[Self <: CheckResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CheckResponse](x: Self) {
     
-    @scala.inline
-    def setHeaders(
+    inline def setHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.CheckResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

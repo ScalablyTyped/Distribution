@@ -17,25 +17,19 @@ trait SessionInfo extends StObject {
 }
 object SessionInfo {
   
-  @scala.inline
-  def apply(deviceError: Double, flags: Double, slotID: Buffer, state: Double): SessionInfo = {
+  inline def apply(deviceError: Double, flags: Double, slotID: Buffer, state: Double): SessionInfo = {
     val __obj = js.Dynamic.literal(deviceError = deviceError.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], slotID = slotID.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionInfo]
   }
   
-  @scala.inline
-  implicit class SessionInfoMutableBuilder[Self <: SessionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SessionInfo](x: Self) {
     
-    @scala.inline
-    def setDeviceError(value: Double): Self = StObject.set(x, "deviceError", value.asInstanceOf[js.Any])
+    inline def setDeviceError(value: Double): Self = StObject.set(x, "deviceError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotID(value: Buffer): Self = StObject.set(x, "slotID", value.asInstanceOf[js.Any])
+    inline def setSlotID(value: Buffer): Self = StObject.set(x, "slotID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

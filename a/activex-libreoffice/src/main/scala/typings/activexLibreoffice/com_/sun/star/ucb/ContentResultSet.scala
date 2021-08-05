@@ -61,8 +61,7 @@ trait ContentResultSet
 }
 object ContentResultSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CursorName: String,
     CursorTravelMode: Double,
     FetchDirection: Double,
@@ -163,16 +162,12 @@ object ContentResultSet {
     __obj.asInstanceOf[ContentResultSet]
   }
   
-  @scala.inline
-  implicit class ContentResultSetMutableBuilder[Self <: ContentResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: ContentResultSet](x: Self) {
     
-    @scala.inline
-    def setCursorTravelMode(value: Double): Self = StObject.set(x, "CursorTravelMode", value.asInstanceOf[js.Any])
+    inline def setCursorTravelMode(value: Double): Self = StObject.set(x, "CursorTravelMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRowCountFinal(value: Boolean): Self = StObject.set(x, "IsRowCountFinal", value.asInstanceOf[js.Any])
+    inline def setIsRowCountFinal(value: Boolean): Self = StObject.set(x, "IsRowCountFinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "RowCount", value.asInstanceOf[js.Any])
   }
 }

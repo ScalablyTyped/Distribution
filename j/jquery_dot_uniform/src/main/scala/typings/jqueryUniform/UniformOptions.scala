@@ -11,8 +11,7 @@ trait UniformOptions
      with /* option */ StringDictionary[js.Any]
 object UniformOptions {
   
-  @scala.inline
-  def apply(): UniformOptions = {
+  inline def apply(): UniformOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UniformOptions]
   }

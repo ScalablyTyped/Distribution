@@ -83,106 +83,73 @@ trait ExportTask extends StObject {
 }
 object ExportTask {
   
-  @scala.inline
-  def apply(): ExportTask = {
+  inline def apply(): ExportTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportTask]
   }
   
-  @scala.inline
-  implicit class ExportTaskMutableBuilder[Self <: ExportTask] (val x: Self) extends AnyVal {
+  extension [Self <: ExportTask](x: Self) {
     
-    @scala.inline
-    def setExportOnly(value: StringList): Self = StObject.set(x, "ExportOnly", value.asInstanceOf[js.Any])
+    inline def setExportOnly(value: StringList): Self = StObject.set(x, "ExportOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportOnlyUndefined: Self = StObject.set(x, "ExportOnly", js.undefined)
+    inline def setExportOnlyUndefined: Self = StObject.set(x, "ExportOnly", js.undefined)
     
-    @scala.inline
-    def setExportOnlyVarargs(value: String*): Self = StObject.set(x, "ExportOnly", js.Array(value :_*))
+    inline def setExportOnlyVarargs(value: String*): Self = StObject.set(x, "ExportOnly", js.Array(value :_*))
     
-    @scala.inline
-    def setExportTaskIdentifier(value: String): Self = StObject.set(x, "ExportTaskIdentifier", value.asInstanceOf[js.Any])
+    inline def setExportTaskIdentifier(value: String): Self = StObject.set(x, "ExportTaskIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportTaskIdentifierUndefined: Self = StObject.set(x, "ExportTaskIdentifier", js.undefined)
+    inline def setExportTaskIdentifierUndefined: Self = StObject.set(x, "ExportTaskIdentifier", js.undefined)
     
-    @scala.inline
-    def setFailureCause(value: String): Self = StObject.set(x, "FailureCause", value.asInstanceOf[js.Any])
+    inline def setFailureCause(value: String): Self = StObject.set(x, "FailureCause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCauseUndefined: Self = StObject.set(x, "FailureCause", js.undefined)
+    inline def setFailureCauseUndefined: Self = StObject.set(x, "FailureCause", js.undefined)
     
-    @scala.inline
-    def setIamRoleArn(value: String): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: String): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
+    inline def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setPercentProgress(value: Integer): Self = StObject.set(x, "PercentProgress", value.asInstanceOf[js.Any])
+    inline def setPercentProgress(value: Integer): Self = StObject.set(x, "PercentProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentProgressUndefined: Self = StObject.set(x, "PercentProgress", js.undefined)
+    inline def setPercentProgressUndefined: Self = StObject.set(x, "PercentProgress", js.undefined)
     
-    @scala.inline
-    def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
-    @scala.inline
-    def setS3Prefix(value: String): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
+    inline def setS3Prefix(value: String): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
+    inline def setS3PrefixUndefined: Self = StObject.set(x, "S3Prefix", js.undefined)
     
-    @scala.inline
-    def setSnapshotTime(value: TStamp): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
+    inline def setSnapshotTime(value: TStamp): Self = StObject.set(x, "SnapshotTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotTimeUndefined: Self = StObject.set(x, "SnapshotTime", js.undefined)
+    inline def setSnapshotTimeUndefined: Self = StObject.set(x, "SnapshotTime", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTaskEndTime(value: TStamp): Self = StObject.set(x, "TaskEndTime", value.asInstanceOf[js.Any])
+    inline def setTaskEndTime(value: TStamp): Self = StObject.set(x, "TaskEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskEndTimeUndefined: Self = StObject.set(x, "TaskEndTime", js.undefined)
+    inline def setTaskEndTimeUndefined: Self = StObject.set(x, "TaskEndTime", js.undefined)
     
-    @scala.inline
-    def setTaskStartTime(value: TStamp): Self = StObject.set(x, "TaskStartTime", value.asInstanceOf[js.Any])
+    inline def setTaskStartTime(value: TStamp): Self = StObject.set(x, "TaskStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskStartTimeUndefined: Self = StObject.set(x, "TaskStartTime", js.undefined)
+    inline def setTaskStartTimeUndefined: Self = StObject.set(x, "TaskStartTime", js.undefined)
     
-    @scala.inline
-    def setTotalExtractedDataInGB(value: Integer): Self = StObject.set(x, "TotalExtractedDataInGB", value.asInstanceOf[js.Any])
+    inline def setTotalExtractedDataInGB(value: Integer): Self = StObject.set(x, "TotalExtractedDataInGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalExtractedDataInGBUndefined: Self = StObject.set(x, "TotalExtractedDataInGB", js.undefined)
+    inline def setTotalExtractedDataInGBUndefined: Self = StObject.set(x, "TotalExtractedDataInGB", js.undefined)
     
-    @scala.inline
-    def setWarningMessage(value: String): Self = StObject.set(x, "WarningMessage", value.asInstanceOf[js.Any])
+    inline def setWarningMessage(value: String): Self = StObject.set(x, "WarningMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningMessageUndefined: Self = StObject.set(x, "WarningMessage", js.undefined)
+    inline def setWarningMessageUndefined: Self = StObject.set(x, "WarningMessage", js.undefined)
   }
 }

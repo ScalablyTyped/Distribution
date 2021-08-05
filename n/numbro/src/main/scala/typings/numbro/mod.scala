@@ -35,71 +35,49 @@ object mod {
   
   object default {
     
-    @scala.inline
-    def apply(): Numbro = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Numbro]
-    @scala.inline
-    def apply(value: js.Any): Numbro = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Numbro]
+    inline def apply(): Numbro = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Numbro]
+    inline def apply(value: js.Any): Numbro = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Numbro]
     
     @JSImport("numbro", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultCurrencyFormat(newFormat: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultCurrencyFormat")(newFormat.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def defaultCurrencyFormat(newFormat: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultCurrencyFormat")(newFormat.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @scala.inline
-    def defaultFormat(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFormat")().asInstanceOf[js.Object]
+    inline def defaultFormat(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFormat")().asInstanceOf[js.Object]
     
-    @scala.inline
-    def isNumbro(value: js.Any): /* is numbro.numbro.numbro.Numbro */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumbro")(value.asInstanceOf[js.Any]).asInstanceOf[/* is numbro.numbro.numbro.Numbro */ Boolean]
+    inline def isNumbro(value: js.Any): /* is numbro.numbro.numbro.Numbro */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumbro")(value.asInstanceOf[js.Any]).asInstanceOf[/* is numbro.numbro.numbro.Numbro */ Boolean]
     
-    @scala.inline
-    def language(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("language")().asInstanceOf[String]
+    inline def language(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("language")().asInstanceOf[String]
     
-    @scala.inline
-    def languageData(): NumbroLanguage = ^.asInstanceOf[js.Dynamic].applyDynamic("languageData")().asInstanceOf[NumbroLanguage]
-    @scala.inline
-    def languageData(tag: String): NumbroLanguage = ^.asInstanceOf[js.Dynamic].applyDynamic("languageData")(tag.asInstanceOf[js.Any]).asInstanceOf[NumbroLanguage]
+    inline def languageData(): NumbroLanguage = ^.asInstanceOf[js.Dynamic].applyDynamic("languageData")().asInstanceOf[NumbroLanguage]
+    inline def languageData(tag: String): NumbroLanguage = ^.asInstanceOf[js.Dynamic].applyDynamic("languageData")(tag.asInstanceOf[js.Any]).asInstanceOf[NumbroLanguage]
     
-    @scala.inline
-    def languages(): StringDictionary[NumbroLanguage] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")().asInstanceOf[StringDictionary[NumbroLanguage]]
+    inline def languages(): StringDictionary[NumbroLanguage] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")().asInstanceOf[StringDictionary[NumbroLanguage]]
     
-    @scala.inline
-    def loadLanguagesInNode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLanguagesInNode")().asInstanceOf[Unit]
+    inline def loadLanguagesInNode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLanguagesInNode")().asInstanceOf[Unit]
     
-    @scala.inline
-    def registerLanguage(tag: NumbroLanguage): String = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def registerLanguage(tag: NumbroLanguage, useLanguage: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(tag.asInstanceOf[js.Any], useLanguage.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def registerLanguage(tag: NumbroLanguage): String = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def registerLanguage(tag: NumbroLanguage, useLanguage: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(tag.asInstanceOf[js.Any], useLanguage.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def setDefaults(format: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(format.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def setDefaults(format: Format): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(format.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaults(format: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(format.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setDefaults(format: Format): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(format.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def setLanguage(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def setLanguage(tag: String, fallbackTag: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(tag.asInstanceOf[js.Any], fallbackTag.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setLanguage(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def setLanguage(tag: String, fallbackTag: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(tag.asInstanceOf[js.Any], fallbackTag.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def unformat(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def unformat(input: String, format: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def unformat(input: String, format: Format): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def unformat(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def unformat(input: String, format: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def unformat(input: String, format: Format): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def validate(value: String, format: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def validate(value: String, format: Format): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def validate(value: String, format: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def validate(value: String, format: Format): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("numbro", "default.version")
     @js.native
     val version: String = js.native
     
-    @scala.inline
-    def zeroFormat(newFormat: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroFormat")(newFormat.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def zeroFormat(newFormat: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroFormat")(newFormat.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object numbro {
@@ -156,158 +134,108 @@ object mod {
     }
     object Format {
       
-      @scala.inline
-      def apply(): Format = {
+      inline def apply(): Format = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Format]
       }
       
-      @scala.inline
-      implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+      extension [Self <: Format](x: Self) {
         
-        @scala.inline
-        def setAbbreviations(value: Billion): Self = StObject.set(x, "abbreviations", value.asInstanceOf[js.Any])
+        inline def setAbbreviations(value: Billion): Self = StObject.set(x, "abbreviations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAbbreviationsUndefined: Self = StObject.set(x, "abbreviations", js.undefined)
+        inline def setAbbreviationsUndefined: Self = StObject.set(x, "abbreviations", js.undefined)
         
-        @scala.inline
-        def setAverage(value: Boolean): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+        inline def setAverage(value: Boolean): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
+        inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
         
-        @scala.inline
-        def setBase(value: decimal | binary | general): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+        inline def setBase(value: decimal | binary | general): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+        inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
         
-        @scala.inline
-        def setCharacteristic(value: Double): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
+        inline def setCharacteristic(value: Double): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCharacteristicUndefined: Self = StObject.set(x, "characteristic", js.undefined)
+        inline def setCharacteristicUndefined: Self = StObject.set(x, "characteristic", js.undefined)
         
-        @scala.inline
-        def setCurrencyPosition(value: prefix | infix | postfix): Self = StObject.set(x, "currencyPosition", value.asInstanceOf[js.Any])
+        inline def setCurrencyPosition(value: prefix | infix | postfix): Self = StObject.set(x, "currencyPosition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyPositionUndefined: Self = StObject.set(x, "currencyPosition", js.undefined)
+        inline def setCurrencyPositionUndefined: Self = StObject.set(x, "currencyPosition", js.undefined)
         
-        @scala.inline
-        def setCurrencySymbol(value: String): Self = StObject.set(x, "currencySymbol", value.asInstanceOf[js.Any])
+        inline def setCurrencySymbol(value: String): Self = StObject.set(x, "currencySymbol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencySymbolUndefined: Self = StObject.set(x, "currencySymbol", js.undefined)
+        inline def setCurrencySymbolUndefined: Self = StObject.set(x, "currencySymbol", js.undefined)
         
-        @scala.inline
-        def setExponential(value: Boolean): Self = StObject.set(x, "exponential", value.asInstanceOf[js.Any])
+        inline def setExponential(value: Boolean): Self = StObject.set(x, "exponential", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExponentialUndefined: Self = StObject.set(x, "exponential", js.undefined)
+        inline def setExponentialUndefined: Self = StObject.set(x, "exponential", js.undefined)
         
-        @scala.inline
-        def setForceAverage(value: trillion | billion | million | thousand): Self = StObject.set(x, "forceAverage", value.asInstanceOf[js.Any])
+        inline def setForceAverage(value: trillion | billion | million | thousand): Self = StObject.set(x, "forceAverage", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceAverageUndefined: Self = StObject.set(x, "forceAverage", js.undefined)
+        inline def setForceAverageUndefined: Self = StObject.set(x, "forceAverage", js.undefined)
         
-        @scala.inline
-        def setForceSign(value: Boolean): Self = StObject.set(x, "forceSign", value.asInstanceOf[js.Any])
+        inline def setForceSign(value: Boolean): Self = StObject.set(x, "forceSign", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceSignUndefined: Self = StObject.set(x, "forceSign", js.undefined)
+        inline def setForceSignUndefined: Self = StObject.set(x, "forceSign", js.undefined)
         
-        @scala.inline
-        def setMantissa(value: Double): Self = StObject.set(x, "mantissa", value.asInstanceOf[js.Any])
+        inline def setMantissa(value: Double): Self = StObject.set(x, "mantissa", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMantissaUndefined: Self = StObject.set(x, "mantissa", js.undefined)
+        inline def setMantissaUndefined: Self = StObject.set(x, "mantissa", js.undefined)
         
-        @scala.inline
-        def setNegative(value: sign | parenthesis): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
+        inline def setNegative(value: sign | parenthesis): Self = StObject.set(x, "negative", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
+        inline def setNegativeUndefined: Self = StObject.set(x, "negative", js.undefined)
         
-        @scala.inline
-        def setOptionalCharacteristic(value: Boolean): Self = StObject.set(x, "optionalCharacteristic", value.asInstanceOf[js.Any])
+        inline def setOptionalCharacteristic(value: Boolean): Self = StObject.set(x, "optionalCharacteristic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionalCharacteristicUndefined: Self = StObject.set(x, "optionalCharacteristic", js.undefined)
+        inline def setOptionalCharacteristicUndefined: Self = StObject.set(x, "optionalCharacteristic", js.undefined)
         
-        @scala.inline
-        def setOptionalMantissa(value: Boolean): Self = StObject.set(x, "optionalMantissa", value.asInstanceOf[js.Any])
+        inline def setOptionalMantissa(value: Boolean): Self = StObject.set(x, "optionalMantissa", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionalMantissaUndefined: Self = StObject.set(x, "optionalMantissa", js.undefined)
+        inline def setOptionalMantissaUndefined: Self = StObject.set(x, "optionalMantissa", js.undefined)
         
-        @scala.inline
-        def setOutput(value: currency | percent | byte | time | ordinal | number): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+        inline def setOutput(value: currency | percent | byte | time | ordinal | number): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+        inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
         
-        @scala.inline
-        def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
+        inline def setPostfix(value: String): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
+        inline def setPostfixUndefined: Self = StObject.set(x, "postfix", js.undefined)
         
-        @scala.inline
-        def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+        inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefixSymbol(value: Boolean): Self = StObject.set(x, "prefixSymbol", value.asInstanceOf[js.Any])
+        inline def setPrefixSymbol(value: Boolean): Self = StObject.set(x, "prefixSymbol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrefixSymbolUndefined: Self = StObject.set(x, "prefixSymbol", js.undefined)
+        inline def setPrefixSymbolUndefined: Self = StObject.set(x, "prefixSymbol", js.undefined)
         
-        @scala.inline
-        def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+        inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
         
-        @scala.inline
-        def setRoundingFunction(value: /* num */ Double => Double): Self = StObject.set(x, "roundingFunction", js.Any.fromFunction1(value))
+        inline def setRoundingFunction(value: /* num */ Double => Double): Self = StObject.set(x, "roundingFunction", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRoundingFunctionUndefined: Self = StObject.set(x, "roundingFunction", js.undefined)
+        inline def setRoundingFunctionUndefined: Self = StObject.set(x, "roundingFunction", js.undefined)
         
-        @scala.inline
-        def setSpaceSeparated(value: Boolean): Self = StObject.set(x, "spaceSeparated", value.asInstanceOf[js.Any])
+        inline def setSpaceSeparated(value: Boolean): Self = StObject.set(x, "spaceSeparated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceSeparatedAbbreviation(value: Boolean): Self = StObject.set(x, "spaceSeparatedAbbreviation", value.asInstanceOf[js.Any])
+        inline def setSpaceSeparatedAbbreviation(value: Boolean): Self = StObject.set(x, "spaceSeparatedAbbreviation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceSeparatedAbbreviationUndefined: Self = StObject.set(x, "spaceSeparatedAbbreviation", js.undefined)
+        inline def setSpaceSeparatedAbbreviationUndefined: Self = StObject.set(x, "spaceSeparatedAbbreviation", js.undefined)
         
-        @scala.inline
-        def setSpaceSeparatedCurrency(value: Boolean): Self = StObject.set(x, "spaceSeparatedCurrency", value.asInstanceOf[js.Any])
+        inline def setSpaceSeparatedCurrency(value: Boolean): Self = StObject.set(x, "spaceSeparatedCurrency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceSeparatedCurrencyUndefined: Self = StObject.set(x, "spaceSeparatedCurrency", js.undefined)
+        inline def setSpaceSeparatedCurrencyUndefined: Self = StObject.set(x, "spaceSeparatedCurrency", js.undefined)
         
-        @scala.inline
-        def setSpaceSeparatedUndefined: Self = StObject.set(x, "spaceSeparated", js.undefined)
+        inline def setSpaceSeparatedUndefined: Self = StObject.set(x, "spaceSeparated", js.undefined)
         
-        @scala.inline
-        def setThousandSeparated(value: Boolean): Self = StObject.set(x, "thousandSeparated", value.asInstanceOf[js.Any])
+        inline def setThousandSeparated(value: Boolean): Self = StObject.set(x, "thousandSeparated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setThousandSeparatedUndefined: Self = StObject.set(x, "thousandSeparated", js.undefined)
+        inline def setThousandSeparatedUndefined: Self = StObject.set(x, "thousandSeparated", js.undefined)
         
-        @scala.inline
-        def setTotalLength(value: Double): Self = StObject.set(x, "totalLength", value.asInstanceOf[js.Any])
+        inline def setTotalLength(value: Double): Self = StObject.set(x, "totalLength", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTotalLengthUndefined: Self = StObject.set(x, "totalLength", js.undefined)
+        inline def setTotalLengthUndefined: Self = StObject.set(x, "totalLength", js.undefined)
         
-        @scala.inline
-        def setTrimMantissa(value: Boolean): Self = StObject.set(x, "trimMantissa", value.asInstanceOf[js.Any])
+        inline def setTrimMantissa(value: Boolean): Self = StObject.set(x, "trimMantissa", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrimMantissaUndefined: Self = StObject.set(x, "trimMantissa", js.undefined)
+        inline def setTrimMantissaUndefined: Self = StObject.set(x, "trimMantissa", js.undefined)
       }
     }
     
@@ -377,8 +305,7 @@ object mod {
     }
     object NumbroLanguage {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         abbreviations: Million,
         currency: Code,
         delimiters: Decimal,
@@ -390,68 +317,47 @@ object mod {
         __obj.asInstanceOf[NumbroLanguage]
       }
       
-      @scala.inline
-      implicit class NumbroLanguageMutableBuilder[Self <: NumbroLanguage] (val x: Self) extends AnyVal {
+      extension [Self <: NumbroLanguage](x: Self) {
         
-        @scala.inline
-        def setAbbreviations(value: Million): Self = StObject.set(x, "abbreviations", value.asInstanceOf[js.Any])
+        inline def setAbbreviations(value: Million): Self = StObject.set(x, "abbreviations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setByteFormat(value: Format): Self = StObject.set(x, "byteFormat", value.asInstanceOf[js.Any])
+        inline def setByteFormat(value: Format): Self = StObject.set(x, "byteFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setByteFormatUndefined: Self = StObject.set(x, "byteFormat", js.undefined)
+        inline def setByteFormatUndefined: Self = StObject.set(x, "byteFormat", js.undefined)
         
-        @scala.inline
-        def setCurrency(value: Code): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+        inline def setCurrency(value: Code): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyFormat(value: Format): Self = StObject.set(x, "currencyFormat", value.asInstanceOf[js.Any])
+        inline def setCurrencyFormat(value: Format): Self = StObject.set(x, "currencyFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrencyFormatUndefined: Self = StObject.set(x, "currencyFormat", js.undefined)
+        inline def setCurrencyFormatUndefined: Self = StObject.set(x, "currencyFormat", js.undefined)
         
-        @scala.inline
-        def setDefaults(value: Format): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+        inline def setDefaults(value: Format): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+        inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
         
-        @scala.inline
-        def setDelimiters(value: Decimal): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
+        inline def setDelimiters(value: Decimal): Self = StObject.set(x, "delimiters", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFormats(value: FourDigits): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+        inline def setFormats(value: FourDigits): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLanguageTag(value: String): Self = StObject.set(x, "languageTag", value.asInstanceOf[js.Any])
+        inline def setLanguageTag(value: String): Self = StObject.set(x, "languageTag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrdinal(value: Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
+        inline def setOrdinal(value: Double => String): Self = StObject.set(x, "ordinal", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOrdinalFormat(value: Format): Self = StObject.set(x, "ordinalFormat", value.asInstanceOf[js.Any])
+        inline def setOrdinalFormat(value: Format): Self = StObject.set(x, "ordinalFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrdinalFormatUndefined: Self = StObject.set(x, "ordinalFormat", js.undefined)
+        inline def setOrdinalFormatUndefined: Self = StObject.set(x, "ordinalFormat", js.undefined)
         
-        @scala.inline
-        def setPercentageFormat(value: Format): Self = StObject.set(x, "percentageFormat", value.asInstanceOf[js.Any])
+        inline def setPercentageFormat(value: Format): Self = StObject.set(x, "percentageFormat", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPercentageFormatUndefined: Self = StObject.set(x, "percentageFormat", js.undefined)
+        inline def setPercentageFormatUndefined: Self = StObject.set(x, "percentageFormat", js.undefined)
         
-        @scala.inline
-        def setSpaceSeparated(value: Boolean): Self = StObject.set(x, "spaceSeparated", value.asInstanceOf[js.Any])
+        inline def setSpaceSeparated(value: Boolean): Self = StObject.set(x, "spaceSeparated", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceSeparatedUndefined: Self = StObject.set(x, "spaceSeparated", js.undefined)
+        inline def setSpaceSeparatedUndefined: Self = StObject.set(x, "spaceSeparated", js.undefined)
         
-        @scala.inline
-        def setTimeDefaults(value: Format): Self = StObject.set(x, "timeDefaults", value.asInstanceOf[js.Any])
+        inline def setTimeDefaults(value: Format): Self = StObject.set(x, "timeDefaults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTimeDefaultsUndefined: Self = StObject.set(x, "timeDefaults", js.undefined)
+        inline def setTimeDefaultsUndefined: Self = StObject.set(x, "timeDefaults", js.undefined)
       }
     }
   }

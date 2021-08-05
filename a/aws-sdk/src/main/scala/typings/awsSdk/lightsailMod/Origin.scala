@@ -28,37 +28,27 @@ trait Origin extends StObject {
 }
 object Origin {
   
-  @scala.inline
-  def apply(): Origin = {
+  inline def apply(): Origin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Origin]
   }
   
-  @scala.inline
-  implicit class OriginMutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
+  extension [Self <: Origin](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProtocolPolicy(value: OriginProtocolPolicyEnum): Self = StObject.set(x, "protocolPolicy", value.asInstanceOf[js.Any])
+    inline def setProtocolPolicy(value: OriginProtocolPolicyEnum): Self = StObject.set(x, "protocolPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolPolicyUndefined: Self = StObject.set(x, "protocolPolicy", js.undefined)
+    inline def setProtocolPolicyUndefined: Self = StObject.set(x, "protocolPolicy", js.undefined)
     
-    @scala.inline
-    def setRegionName(value: RegionName): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: RegionName): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNameUndefined: Self = StObject.set(x, "regionName", js.undefined)
+    inline def setRegionNameUndefined: Self = StObject.set(x, "regionName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

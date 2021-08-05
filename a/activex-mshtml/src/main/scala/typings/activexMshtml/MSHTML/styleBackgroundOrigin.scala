@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleBackgroundOrigin extends StObject
 object styleBackgroundOrigin {
   
-  @scala.inline
-  def styleBackgroundOriginBorderBox: `0` = 0.asInstanceOf[`0`]
+  inline def styleBackgroundOriginBorderBox: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleBackgroundOriginContentBox: `2` = 2.asInstanceOf[`2`]
+  inline def styleBackgroundOriginContentBox: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleBackgroundOriginNotSet: `3` = 3.asInstanceOf[`3`]
+  inline def styleBackgroundOriginNotSet: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleBackgroundOriginPaddingBox: `1` = 1.asInstanceOf[`1`]
+  inline def styleBackgroundOriginPaddingBox: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleBackgroundOrigin_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleBackgroundOrigin_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

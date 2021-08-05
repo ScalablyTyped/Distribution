@@ -55,21 +55,16 @@ object localGatewayRouteMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LocalGatewayRouteState): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LocalGatewayRouteState, opts: CustomResourceOptions): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
+    inline def get(name: String, id: Input[ID]): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
+    inline def get(name: String, id: Input[ID], state: LocalGatewayRouteState): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
+    inline def get(name: String, id: Input[ID], state: LocalGatewayRouteState, opts: CustomResourceOptions): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
     
     /**
       * Returns true if the given object is an instance of LocalGatewayRoute.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRoute.LocalGatewayRoute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRoute.LocalGatewayRoute */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRoute.LocalGatewayRoute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRoute.LocalGatewayRoute */ Boolean]
   }
   
   trait LocalGatewayRouteArgs extends StObject {
@@ -91,8 +86,7 @@ object localGatewayRouteMod {
   }
   object LocalGatewayRouteArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destinationCidrBlock: Input[String],
       localGatewayRouteTableId: Input[String],
       localGatewayVirtualInterfaceGroupId: Input[String]
@@ -101,17 +95,13 @@ object localGatewayRouteMod {
       __obj.asInstanceOf[LocalGatewayRouteArgs]
     }
     
-    @scala.inline
-    implicit class LocalGatewayRouteArgsMutableBuilder[Self <: LocalGatewayRouteArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LocalGatewayRouteArgs](x: Self) {
       
-      @scala.inline
-      def setDestinationCidrBlock(value: Input[String]): Self = StObject.set(x, "destinationCidrBlock", value.asInstanceOf[js.Any])
+      inline def setDestinationCidrBlock(value: Input[String]): Self = StObject.set(x, "destinationCidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayRouteTableId(value: Input[String]): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayRouteTableId(value: Input[String]): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayVirtualInterfaceGroupId(value: Input[String]): Self = StObject.set(x, "localGatewayVirtualInterfaceGroupId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayVirtualInterfaceGroupId(value: Input[String]): Self = StObject.set(x, "localGatewayVirtualInterfaceGroupId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,32 +124,24 @@ object localGatewayRouteMod {
   }
   object LocalGatewayRouteState {
     
-    @scala.inline
-    def apply(): LocalGatewayRouteState = {
+    inline def apply(): LocalGatewayRouteState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocalGatewayRouteState]
     }
     
-    @scala.inline
-    implicit class LocalGatewayRouteStateMutableBuilder[Self <: LocalGatewayRouteState] (val x: Self) extends AnyVal {
+    extension [Self <: LocalGatewayRouteState](x: Self) {
       
-      @scala.inline
-      def setDestinationCidrBlock(value: Input[String]): Self = StObject.set(x, "destinationCidrBlock", value.asInstanceOf[js.Any])
+      inline def setDestinationCidrBlock(value: Input[String]): Self = StObject.set(x, "destinationCidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationCidrBlockUndefined: Self = StObject.set(x, "destinationCidrBlock", js.undefined)
+      inline def setDestinationCidrBlockUndefined: Self = StObject.set(x, "destinationCidrBlock", js.undefined)
       
-      @scala.inline
-      def setLocalGatewayRouteTableId(value: Input[String]): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayRouteTableId(value: Input[String]): Self = StObject.set(x, "localGatewayRouteTableId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "localGatewayRouteTableId", js.undefined)
+      inline def setLocalGatewayRouteTableIdUndefined: Self = StObject.set(x, "localGatewayRouteTableId", js.undefined)
       
-      @scala.inline
-      def setLocalGatewayVirtualInterfaceGroupId(value: Input[String]): Self = StObject.set(x, "localGatewayVirtualInterfaceGroupId", value.asInstanceOf[js.Any])
+      inline def setLocalGatewayVirtualInterfaceGroupId(value: Input[String]): Self = StObject.set(x, "localGatewayVirtualInterfaceGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalGatewayVirtualInterfaceGroupIdUndefined: Self = StObject.set(x, "localGatewayVirtualInterfaceGroupId", js.undefined)
+      inline def setLocalGatewayVirtualInterfaceGroupIdUndefined: Self = StObject.set(x, "localGatewayVirtualInterfaceGroupId", js.undefined)
     }
   }
 }

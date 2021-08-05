@@ -12,19 +12,15 @@ trait Formatted extends StObject {
 }
 object Formatted {
   
-  @scala.inline
-  def apply(formatted: js.Any, location: Latitude): Formatted = {
+  inline def apply(formatted: js.Any, location: Latitude): Formatted = {
     val __obj = js.Dynamic.literal(formatted = formatted.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Formatted]
   }
   
-  @scala.inline
-  implicit class FormattedMutableBuilder[Self <: Formatted] (val x: Self) extends AnyVal {
+  extension [Self <: Formatted](x: Self) {
     
-    @scala.inline
-    def setFormatted(value: js.Any): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
+    inline def setFormatted(value: js.Any): Self = StObject.set(x, "formatted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Latitude): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Latitude): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

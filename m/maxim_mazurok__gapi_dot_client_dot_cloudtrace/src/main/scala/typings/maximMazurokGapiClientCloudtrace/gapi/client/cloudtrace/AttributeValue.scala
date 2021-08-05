@@ -17,31 +17,23 @@ trait AttributeValue extends StObject {
 }
 object AttributeValue {
   
-  @scala.inline
-  def apply(): AttributeValue = {
+  inline def apply(): AttributeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeValue]
   }
   
-  @scala.inline
-  implicit class AttributeValueMutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeValue](x: Self) {
     
-    @scala.inline
-    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
+    inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
+    inline def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
-    @scala.inline
-    def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
+    inline def setIntValue(value: String): Self = StObject.set(x, "intValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
+    inline def setIntValueUndefined: Self = StObject.set(x, "intValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: TruncatableString): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: TruncatableString): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

@@ -21,31 +21,23 @@ trait HighlightResultPrimitive extends StObject {
 }
 object HighlightResultPrimitive {
   
-  @scala.inline
-  def apply(matchLevel: none | partial | full, matchedWords: js.Array[String], value: String): HighlightResultPrimitive = {
+  inline def apply(matchLevel: none | partial | full, matchedWords: js.Array[String], value: String): HighlightResultPrimitive = {
     val __obj = js.Dynamic.literal(matchLevel = matchLevel.asInstanceOf[js.Any], matchedWords = matchedWords.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighlightResultPrimitive]
   }
   
-  @scala.inline
-  implicit class HighlightResultPrimitiveMutableBuilder[Self <: HighlightResultPrimitive] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightResultPrimitive](x: Self) {
     
-    @scala.inline
-    def setFullyHighlighted(value: Boolean): Self = StObject.set(x, "fullyHighlighted", value.asInstanceOf[js.Any])
+    inline def setFullyHighlighted(value: Boolean): Self = StObject.set(x, "fullyHighlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyHighlightedUndefined: Self = StObject.set(x, "fullyHighlighted", js.undefined)
+    inline def setFullyHighlightedUndefined: Self = StObject.set(x, "fullyHighlighted", js.undefined)
     
-    @scala.inline
-    def setMatchLevel(value: none | partial | full): Self = StObject.set(x, "matchLevel", value.asInstanceOf[js.Any])
+    inline def setMatchLevel(value: none | partial | full): Self = StObject.set(x, "matchLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedWords(value: js.Array[String]): Self = StObject.set(x, "matchedWords", value.asInstanceOf[js.Any])
+    inline def setMatchedWords(value: js.Array[String]): Self = StObject.set(x, "matchedWords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedWordsVarargs(value: String*): Self = StObject.set(x, "matchedWords", js.Array(value :_*))
+    inline def setMatchedWordsVarargs(value: String*): Self = StObject.set(x, "matchedWords", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -15,8 +15,7 @@ trait ISyndicationContent
 }
 object ISyndicationContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attributeExtensions: IVector[SyndicationAttribute],
     baseUri: Uri,
     elementExtensions: IVector[ISyndicationNode],
@@ -35,10 +34,8 @@ object ISyndicationContent {
     __obj.asInstanceOf[ISyndicationContent]
   }
   
-  @scala.inline
-  implicit class ISyndicationContentMutableBuilder[Self <: ISyndicationContent] (val x: Self) extends AnyVal {
+  extension [Self <: ISyndicationContent](x: Self) {
     
-    @scala.inline
-    def setSourceUri(value: Uri): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
+    inline def setSourceUri(value: Uri): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object infoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEnvironmentInfo(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentInfo")().asInstanceOf[js.Promise[String]]
+  inline def getEnvironmentInfo(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentInfo")().asInstanceOf[js.Promise[String]]
 }

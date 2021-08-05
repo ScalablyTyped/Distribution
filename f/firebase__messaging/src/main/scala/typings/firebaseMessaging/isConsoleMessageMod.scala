@@ -10,6 +10,5 @@ object isConsoleMessageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isConsoleMessage(data: js.Any): /* is @firebase/messaging.@firebase/messaging/dist/interfaces/internal-message-payload.ConsoleMessageData */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConsoleMessage")(data.asInstanceOf[js.Any]).asInstanceOf[/* is @firebase/messaging.@firebase/messaging/dist/interfaces/internal-message-payload.ConsoleMessageData */ Boolean]
+  inline def isConsoleMessage(data: js.Any): /* is @firebase/messaging.@firebase/messaging/dist/interfaces/internal-message-payload.ConsoleMessageData */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConsoleMessage")(data.asInstanceOf[js.Any]).asInstanceOf[/* is @firebase/messaging.@firebase/messaging/dist/interfaces/internal-message-payload.ConsoleMessageData */ Boolean]
 }

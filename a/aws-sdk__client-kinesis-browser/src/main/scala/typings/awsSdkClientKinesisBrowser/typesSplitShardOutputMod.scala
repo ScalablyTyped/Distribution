@@ -20,17 +20,14 @@ object typesSplitShardOutputMod {
   }
   object SplitShardOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): SplitShardOutput = {
+    inline def apply($metadata: ResponseMetadata): SplitShardOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[SplitShardOutput]
     }
     
-    @scala.inline
-    implicit class SplitShardOutputMutableBuilder[Self <: SplitShardOutput] (val x: Self) extends AnyVal {
+    extension [Self <: SplitShardOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

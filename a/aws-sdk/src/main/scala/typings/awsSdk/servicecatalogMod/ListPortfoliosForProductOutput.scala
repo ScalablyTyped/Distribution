@@ -18,28 +18,21 @@ trait ListPortfoliosForProductOutput extends StObject {
 }
 object ListPortfoliosForProductOutput {
   
-  @scala.inline
-  def apply(): ListPortfoliosForProductOutput = {
+  inline def apply(): ListPortfoliosForProductOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPortfoliosForProductOutput]
   }
   
-  @scala.inline
-  implicit class ListPortfoliosForProductOutputMutableBuilder[Self <: ListPortfoliosForProductOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListPortfoliosForProductOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setPortfolioDetails(value: PortfolioDetails): Self = StObject.set(x, "PortfolioDetails", value.asInstanceOf[js.Any])
+    inline def setPortfolioDetails(value: PortfolioDetails): Self = StObject.set(x, "PortfolioDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioDetailsUndefined: Self = StObject.set(x, "PortfolioDetails", js.undefined)
+    inline def setPortfolioDetailsUndefined: Self = StObject.set(x, "PortfolioDetails", js.undefined)
     
-    @scala.inline
-    def setPortfolioDetailsVarargs(value: PortfolioDetail*): Self = StObject.set(x, "PortfolioDetails", js.Array(value :_*))
+    inline def setPortfolioDetailsVarargs(value: PortfolioDetail*): Self = StObject.set(x, "PortfolioDetails", js.Array(value :_*))
   }
 }

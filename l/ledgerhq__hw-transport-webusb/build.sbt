@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ledgerhq__hw-transport-webusb"
-version := "4.70-dt-20200925Z-4646fe"
+version := "4.70-dt-20200925Z-c98519"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20200925Z-e4b638",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-814aa8",
-  "org.scalablytyped" %%% "std" % "4.1-044efb")
+  "org.scalablytyped" %%% "ledgerhq__hw-transport" % "4.21-dt-20200925Z-90a982",
+  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-e00132",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

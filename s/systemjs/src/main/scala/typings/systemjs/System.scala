@@ -19,8 +19,7 @@ object System {
   }
   object Context {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `import`: (/* moduleId */ String, /* parentUrl */ js.UndefOr[String]) => js.Promise[Module],
       meta: Url
     ): Context = {
@@ -29,14 +28,11 @@ object System {
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setImport(value: (/* moduleId */ String, /* parentUrl */ js.UndefOr[String]) => js.Promise[Module]): Self = StObject.set(x, "import", js.Any.fromFunction2(value))
+      inline def setImport(value: (/* moduleId */ String, /* parentUrl */ js.UndefOr[String]) => js.Promise[Module]): Self = StObject.set(x, "import", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMeta(value: Url): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Url): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,29 +44,22 @@ object System {
   }
   object Declare {
     
-    @scala.inline
-    def apply(): Declare = {
+    inline def apply(): Declare = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Declare]
     }
     
-    @scala.inline
-    implicit class DeclareMutableBuilder[Self <: Declare] (val x: Self) extends AnyVal {
+    extension [Self <: Declare](x: Self) {
       
-      @scala.inline
-      def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => js.Any): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
+      inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
       
-      @scala.inline
-      def setSetters(value: js.Array[SetterFn]): Self = StObject.set(x, "setters", value.asInstanceOf[js.Any])
+      inline def setSetters(value: js.Array[SetterFn]): Self = StObject.set(x, "setters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettersUndefined: Self = StObject.set(x, "setters", js.undefined)
+      inline def setSettersUndefined: Self = StObject.set(x, "setters", js.undefined)
       
-      @scala.inline
-      def setSettersVarargs(value: SetterFn*): Self = StObject.set(x, "setters", js.Array(value :_*))
+      inline def setSettersVarargs(value: SetterFn*): Self = StObject.set(x, "setters", js.Array(value :_*))
     }
   }
   
@@ -103,20 +92,16 @@ object System {
   }
   object Module {
     
-    @scala.inline
-    def apply(): Module = {
+    inline def apply(): Module = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Module]
     }
     
-    @scala.inline
-    implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+    extension [Self <: Module](x: Self) {
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     }
   }
   

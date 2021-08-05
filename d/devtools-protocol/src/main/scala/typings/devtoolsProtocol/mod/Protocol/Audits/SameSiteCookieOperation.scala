@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SameSiteCookieOperation extends StObject
 object SameSiteCookieOperation {
   
-  @scala.inline
-  def ReadCookie: typings.devtoolsProtocol.devtoolsProtocolStrings.ReadCookie = "ReadCookie".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReadCookie]
+  inline def ReadCookie: typings.devtoolsProtocol.devtoolsProtocolStrings.ReadCookie = "ReadCookie".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ReadCookie]
   
-  @scala.inline
-  def SetCookie: typings.devtoolsProtocol.devtoolsProtocolStrings.SetCookie = "SetCookie".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SetCookie]
+  inline def SetCookie: typings.devtoolsProtocol.devtoolsProtocolStrings.SetCookie = "SetCookie".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.SetCookie]
 }

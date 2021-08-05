@@ -20,17 +20,14 @@ object typesBackupInUseExceptionMod {
   }
   object BackupInUseException {
     
-    @scala.inline
-    def apply(): BackupInUseException = {
+    inline def apply(): BackupInUseException = {
       val __obj = js.Dynamic.literal(name = "BackupInUseException")
       __obj.asInstanceOf[BackupInUseException]
     }
     
-    @scala.inline
-    implicit class BackupInUseExceptionMutableBuilder[Self <: BackupInUseException] (val x: Self) extends AnyVal {
+    extension [Self <: BackupInUseException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.BackupInUseException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.BackupInUseException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -43,20 +40,16 @@ object typesBackupInUseExceptionMod {
   }
   object BackupInUseExceptionDetails {
     
-    @scala.inline
-    def apply(): BackupInUseExceptionDetails = {
+    inline def apply(): BackupInUseExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BackupInUseExceptionDetails]
     }
     
-    @scala.inline
-    implicit class BackupInUseExceptionDetailsMutableBuilder[Self <: BackupInUseExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BackupInUseExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

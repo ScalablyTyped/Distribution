@@ -48,55 +48,39 @@ trait ImmunizationRecommendationRecommendationProtocol
 }
 object ImmunizationRecommendationRecommendationProtocol {
   
-  @scala.inline
-  def apply(): ImmunizationRecommendationRecommendationProtocol = {
+  inline def apply(): ImmunizationRecommendationRecommendationProtocol = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImmunizationRecommendationRecommendationProtocol]
   }
   
-  @scala.inline
-  implicit class ImmunizationRecommendationRecommendationProtocolMutableBuilder[Self <: ImmunizationRecommendationRecommendationProtocol] (val x: Self) extends AnyVal {
+  extension [Self <: ImmunizationRecommendationRecommendationProtocol](x: Self) {
     
-    @scala.inline
-    def setAuthority(value: Reference): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+    inline def setAuthority(value: Reference): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
+    inline def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDoseSequence(value: positiveInt): Self = StObject.set(x, "doseSequence", value.asInstanceOf[js.Any])
+    inline def setDoseSequence(value: positiveInt): Self = StObject.set(x, "doseSequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoseSequenceUndefined: Self = StObject.set(x, "doseSequence", js.undefined)
+    inline def setDoseSequenceUndefined: Self = StObject.set(x, "doseSequence", js.undefined)
     
-    @scala.inline
-    def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: String): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_doseSequence(value: Element): Self = StObject.set(x, "_doseSequence", value.asInstanceOf[js.Any])
+    inline def set_doseSequence(value: Element): Self = StObject.set(x, "_doseSequence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_doseSequenceUndefined: Self = StObject.set(x, "_doseSequence", js.undefined)
+    inline def set_doseSequenceUndefined: Self = StObject.set(x, "_doseSequence", js.undefined)
     
-    @scala.inline
-    def set_series(value: Element): Self = StObject.set(x, "_series", value.asInstanceOf[js.Any])
+    inline def set_series(value: Element): Self = StObject.set(x, "_series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_seriesUndefined: Self = StObject.set(x, "_series", js.undefined)
+    inline def set_seriesUndefined: Self = StObject.set(x, "_series", js.undefined)
   }
 }

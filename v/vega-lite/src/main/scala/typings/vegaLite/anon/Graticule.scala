@@ -10,16 +10,13 @@ trait Graticule extends StObject {
 }
 object Graticule {
   
-  @scala.inline
-  def apply(graticule: Boolean): Graticule = {
+  inline def apply(graticule: Boolean): Graticule = {
     val __obj = js.Dynamic.literal(graticule = graticule.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graticule]
   }
   
-  @scala.inline
-  implicit class GraticuleMutableBuilder[Self <: Graticule] (val x: Self) extends AnyVal {
+  extension [Self <: Graticule](x: Self) {
     
-    @scala.inline
-    def setGraticule(value: Boolean): Self = StObject.set(x, "graticule", value.asInstanceOf[js.Any])
+    inline def setGraticule(value: Boolean): Self = StObject.set(x, "graticule", value.asInstanceOf[js.Any])
   }
 }

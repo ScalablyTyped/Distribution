@@ -16,37 +16,27 @@ trait IgnoreExcelErrors extends StObject {
 }
 object IgnoreExcelErrors {
   
-  @scala.inline
-  def apply(): IgnoreExcelErrors = {
+  inline def apply(): IgnoreExcelErrors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreExcelErrors]
   }
   
-  @scala.inline
-  implicit class IgnoreExcelErrorsMutableBuilder[Self <: IgnoreExcelErrors] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreExcelErrors](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setIgnoreExcelErrors(value: Boolean): Self = StObject.set(x, "ignoreExcelErrors", value.asInstanceOf[js.Any])
+    inline def setIgnoreExcelErrors(value: Boolean): Self = StObject.set(x, "ignoreExcelErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreExcelErrorsUndefined: Self = StObject.set(x, "ignoreExcelErrors", js.undefined)
+    inline def setIgnoreExcelErrorsUndefined: Self = StObject.set(x, "ignoreExcelErrors", js.undefined)
     
-    @scala.inline
-    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
+    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
   }
 }

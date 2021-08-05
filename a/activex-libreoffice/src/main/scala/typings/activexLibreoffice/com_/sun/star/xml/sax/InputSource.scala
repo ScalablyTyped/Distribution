@@ -33,25 +33,19 @@ trait InputSource extends StObject {
 }
 object InputSource {
   
-  @scala.inline
-  def apply(aInputStream: XInputStream, sEncoding: String, sPublicId: String, sSystemId: String): InputSource = {
+  inline def apply(aInputStream: XInputStream, sEncoding: String, sPublicId: String, sSystemId: String): InputSource = {
     val __obj = js.Dynamic.literal(aInputStream = aInputStream.asInstanceOf[js.Any], sEncoding = sEncoding.asInstanceOf[js.Any], sPublicId = sPublicId.asInstanceOf[js.Any], sSystemId = sSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputSource]
   }
   
-  @scala.inline
-  implicit class InputSourceMutableBuilder[Self <: InputSource] (val x: Self) extends AnyVal {
+  extension [Self <: InputSource](x: Self) {
     
-    @scala.inline
-    def setAInputStream(value: XInputStream): Self = StObject.set(x, "aInputStream", value.asInstanceOf[js.Any])
+    inline def setAInputStream(value: XInputStream): Self = StObject.set(x, "aInputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSEncoding(value: String): Self = StObject.set(x, "sEncoding", value.asInstanceOf[js.Any])
+    inline def setSEncoding(value: String): Self = StObject.set(x, "sEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSPublicId(value: String): Self = StObject.set(x, "sPublicId", value.asInstanceOf[js.Any])
+    inline def setSPublicId(value: String): Self = StObject.set(x, "sPublicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSystemId(value: String): Self = StObject.set(x, "sSystemId", value.asInstanceOf[js.Any])
+    inline def setSSystemId(value: String): Self = StObject.set(x, "sSystemId", value.asInstanceOf[js.Any])
   }
 }

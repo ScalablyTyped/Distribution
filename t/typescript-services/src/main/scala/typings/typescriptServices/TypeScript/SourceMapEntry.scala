@@ -22,8 +22,7 @@ trait SourceMapEntry extends StObject {
 }
 object SourceMapEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emittedColumn: Double,
     emittedFile: String,
     emittedLine: Double,
@@ -36,28 +35,20 @@ object SourceMapEntry {
     __obj.asInstanceOf[SourceMapEntry]
   }
   
-  @scala.inline
-  implicit class SourceMapEntryMutableBuilder[Self <: SourceMapEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SourceMapEntry](x: Self) {
     
-    @scala.inline
-    def setEmittedColumn(value: Double): Self = StObject.set(x, "emittedColumn", value.asInstanceOf[js.Any])
+    inline def setEmittedColumn(value: Double): Self = StObject.set(x, "emittedColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmittedFile(value: String): Self = StObject.set(x, "emittedFile", value.asInstanceOf[js.Any])
+    inline def setEmittedFile(value: String): Self = StObject.set(x, "emittedFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmittedLine(value: Double): Self = StObject.set(x, "emittedLine", value.asInstanceOf[js.Any])
+    inline def setEmittedLine(value: Double): Self = StObject.set(x, "emittedLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
+    inline def setSourceColumn(value: Double): Self = StObject.set(x, "sourceColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+    inline def setSourceFile(value: String): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLine(value: Double): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
+    inline def setSourceLine(value: Double): Self = StObject.set(x, "sourceLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
   }
 }

@@ -43,49 +43,35 @@ trait Director extends StObject {
 }
 object Director {
   
-  @scala.inline
-  def apply(): Director = {
+  inline def apply(): Director = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Director]
   }
   
-  @scala.inline
-  implicit class DirectorMutableBuilder[Self <: Director] (val x: Self) extends AnyVal {
+  extension [Self <: Director](x: Self) {
     
-    @scala.inline
-    def setDirector(value: Boolean): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
+    inline def setDirector(value: Boolean): Self = StObject.set(x, "director", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
+    inline def setDirectorUndefined: Self = StObject.set(x, "director", js.undefined)
     
-    @scala.inline
-    def setExecutive(value: Boolean): Self = StObject.set(x, "executive", value.asInstanceOf[js.Any])
+    inline def setExecutive(value: Boolean): Self = StObject.set(x, "executive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutiveUndefined: Self = StObject.set(x, "executive", js.undefined)
+    inline def setExecutiveUndefined: Self = StObject.set(x, "executive", js.undefined)
     
-    @scala.inline
-    def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setPercent_ownership(value: Double): Self = StObject.set(x, "percent_ownership", value.asInstanceOf[js.Any])
+    inline def setPercent_ownership(value: Double): Self = StObject.set(x, "percent_ownership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercent_ownershipUndefined: Self = StObject.set(x, "percent_ownership", js.undefined)
+    inline def setPercent_ownershipUndefined: Self = StObject.set(x, "percent_ownership", js.undefined)
     
-    @scala.inline
-    def setRepresentative(value: Boolean): Self = StObject.set(x, "representative", value.asInstanceOf[js.Any])
+    inline def setRepresentative(value: Boolean): Self = StObject.set(x, "representative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepresentativeUndefined: Self = StObject.set(x, "representative", js.undefined)
+    inline def setRepresentativeUndefined: Self = StObject.set(x, "representative", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

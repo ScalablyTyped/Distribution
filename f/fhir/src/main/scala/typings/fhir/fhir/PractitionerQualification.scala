@@ -33,37 +33,27 @@ trait PractitionerQualification
 }
 object PractitionerQualification {
   
-  @scala.inline
-  def apply(code: CodeableConcept): PractitionerQualification = {
+  inline def apply(code: CodeableConcept): PractitionerQualification = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[PractitionerQualification]
   }
   
-  @scala.inline
-  implicit class PractitionerQualificationMutableBuilder[Self <: PractitionerQualification] (val x: Self) extends AnyVal {
+  extension [Self <: PractitionerQualification](x: Self) {
     
-    @scala.inline
-    def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
-    @scala.inline
-    def setIssuer(value: Reference): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: Reference): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

@@ -38,6 +38,6 @@ trait PageNumbers extends StObject {
   
   var StartingNumber: Double = js.native
   
-  @JSName("Word.PageNumbers_typekey")
+  /* private */ @JSName("Word.PageNumbers_typekey")
   var WordDotPageNumbers_typekey: PageNumbers = js.native
 }

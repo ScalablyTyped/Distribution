@@ -16,16 +16,13 @@ trait BinaryFingerprintOptions
 }
 object BinaryFingerprintOptions {
   
-  @scala.inline
-  def apply(): BinaryFingerprintOptions = {
+  inline def apply(): BinaryFingerprintOptions = {
     val __obj = js.Dynamic.literal(encoding = "binary")
     __obj.asInstanceOf[BinaryFingerprintOptions]
   }
   
-  @scala.inline
-  implicit class BinaryFingerprintOptionsMutableBuilder[Self <: BinaryFingerprintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryFingerprintOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
   }
 }

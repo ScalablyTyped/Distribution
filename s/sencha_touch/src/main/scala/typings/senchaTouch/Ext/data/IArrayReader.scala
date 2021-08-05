@@ -23,25 +23,19 @@ trait IArrayReader
 }
 object IArrayReader {
   
-  @scala.inline
-  def apply(): IArrayReader = {
+  inline def apply(): IArrayReader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IArrayReader]
   }
   
-  @scala.inline
-  implicit class IArrayReaderMutableBuilder[Self <: IArrayReader] (val x: Self) extends AnyVal {
+  extension [Self <: IArrayReader](x: Self) {
     
-    @scala.inline
-    def setSetSuccessProperty(value: /* successProperty */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSuccessProperty", js.Any.fromFunction1(value))
+    inline def setSetSuccessProperty(value: /* successProperty */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setSuccessProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSuccessPropertyUndefined: Self = StObject.set(x, "setSuccessProperty", js.undefined)
+    inline def setSetSuccessPropertyUndefined: Self = StObject.set(x, "setSuccessProperty", js.undefined)
     
-    @scala.inline
-    def setSetTotalProperty(value: /* totalProperty */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTotalProperty", js.Any.fromFunction1(value))
+    inline def setSetTotalProperty(value: /* totalProperty */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setTotalProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTotalPropertyUndefined: Self = StObject.set(x, "setTotalProperty", js.undefined)
+    inline def setSetTotalPropertyUndefined: Self = StObject.set(x, "setTotalProperty", js.undefined)
   }
 }

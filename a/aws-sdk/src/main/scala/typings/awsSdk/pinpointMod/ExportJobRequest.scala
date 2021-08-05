@@ -28,31 +28,23 @@ trait ExportJobRequest extends StObject {
 }
 object ExportJobRequest {
   
-  @scala.inline
-  def apply(RoleArn: string, S3UrlPrefix: string): ExportJobRequest = {
+  inline def apply(RoleArn: string, S3UrlPrefix: string): ExportJobRequest = {
     val __obj = js.Dynamic.literal(RoleArn = RoleArn.asInstanceOf[js.Any], S3UrlPrefix = S3UrlPrefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportJobRequest]
   }
   
-  @scala.inline
-  implicit class ExportJobRequestMutableBuilder[Self <: ExportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExportJobRequest](x: Self) {
     
-    @scala.inline
-    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3UrlPrefix(value: string): Self = StObject.set(x, "S3UrlPrefix", value.asInstanceOf[js.Any])
+    inline def setS3UrlPrefix(value: string): Self = StObject.set(x, "S3UrlPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+    inline def setSegmentId(value: string): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
+    inline def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
     
-    @scala.inline
-    def setSegmentVersion(value: integer): Self = StObject.set(x, "SegmentVersion", value.asInstanceOf[js.Any])
+    inline def setSegmentVersion(value: integer): Self = StObject.set(x, "SegmentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentVersionUndefined: Self = StObject.set(x, "SegmentVersion", js.undefined)
+    inline def setSegmentVersionUndefined: Self = StObject.set(x, "SegmentVersion", js.undefined)
   }
 }

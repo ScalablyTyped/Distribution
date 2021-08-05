@@ -36,8 +36,7 @@ trait FCVolumeSource extends StObject {
 }
 object FCVolumeSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fsType: String,
     lun: Double,
     readOnly: Boolean,
@@ -48,28 +47,20 @@ object FCVolumeSource {
     __obj.asInstanceOf[FCVolumeSource]
   }
   
-  @scala.inline
-  implicit class FCVolumeSourceMutableBuilder[Self <: FCVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: FCVolumeSource](x: Self) {
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLun(value: Double): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
+    inline def setLun(value: Double): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetWWNs(value: js.Array[String]): Self = StObject.set(x, "targetWWNs", value.asInstanceOf[js.Any])
+    inline def setTargetWWNs(value: js.Array[String]): Self = StObject.set(x, "targetWWNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetWWNsVarargs(value: String*): Self = StObject.set(x, "targetWWNs", js.Array(value :_*))
+    inline def setTargetWWNsVarargs(value: String*): Self = StObject.set(x, "targetWWNs", js.Array(value :_*))
     
-    @scala.inline
-    def setWwids(value: js.Array[String]): Self = StObject.set(x, "wwids", value.asInstanceOf[js.Any])
+    inline def setWwids(value: js.Array[String]): Self = StObject.set(x, "wwids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWwidsVarargs(value: String*): Self = StObject.set(x, "wwids", js.Array(value :_*))
+    inline def setWwidsVarargs(value: String*): Self = StObject.set(x, "wwids", js.Array(value :_*))
   }
 }

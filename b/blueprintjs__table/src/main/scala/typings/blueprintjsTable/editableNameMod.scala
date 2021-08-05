@@ -19,15 +19,15 @@ object editableNameMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MEditableName(prevProps: IEditableNameProps): Unit = js.native
     
-    var handleCancel: js.Any = js.native
+    /* private */ var handleCancel: js.Any = js.native
     
-    var handleChange: js.Any = js.native
+    /* private */ var handleChange: js.Any = js.native
     
-    var handleConfirm: js.Any = js.native
+    /* private */ var handleConfirm: js.Any = js.native
     
-    var handleEdit: js.Any = js.native
+    /* private */ var handleEdit: js.Any = js.native
     
-    var invokeCallback: js.Any = js.native
+    /* private */ var invokeCallback: js.Any = js.native
   }
   
   trait IEditableNameProps
@@ -68,44 +68,32 @@ object editableNameMod {
   }
   object IEditableNameProps {
     
-    @scala.inline
-    def apply(): IEditableNameProps = {
+    inline def apply(): IEditableNameProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEditableNameProps]
     }
     
-    @scala.inline
-    implicit class IEditableNamePropsMutableBuilder[Self <: IEditableNameProps] (val x: Self) extends AnyVal {
+    extension [Self <: IEditableNameProps](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
+      inline def setOnCancel(value: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnConfirm(value: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
+      inline def setOnConfirm(value: (/* value */ String, /* columnIndex */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+      inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     }
   }
   
@@ -119,32 +107,24 @@ object editableNameMod {
   }
   object IEditableNameState {
     
-    @scala.inline
-    def apply(): IEditableNameState = {
+    inline def apply(): IEditableNameState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEditableNameState]
     }
     
-    @scala.inline
-    implicit class IEditableNameStateMutableBuilder[Self <: IEditableNameState] (val x: Self) extends AnyVal {
+    extension [Self <: IEditableNameState](x: Self) {
       
-      @scala.inline
-      def setDirtyName(value: String): Self = StObject.set(x, "dirtyName", value.asInstanceOf[js.Any])
+      inline def setDirtyName(value: String): Self = StObject.set(x, "dirtyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyNameUndefined: Self = StObject.set(x, "dirtyName", js.undefined)
+      inline def setDirtyNameUndefined: Self = StObject.set(x, "dirtyName", js.undefined)
       
-      @scala.inline
-      def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
+      inline def setIsEditing(value: Boolean): Self = StObject.set(x, "isEditing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
+      inline def setIsEditingUndefined: Self = StObject.set(x, "isEditing", js.undefined)
       
-      @scala.inline
-      def setSavedName(value: String): Self = StObject.set(x, "savedName", value.asInstanceOf[js.Any])
+      inline def setSavedName(value: String): Self = StObject.set(x, "savedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSavedNameUndefined: Self = StObject.set(x, "savedName", js.undefined)
+      inline def setSavedNameUndefined: Self = StObject.set(x, "savedName", js.undefined)
     }
   }
 }

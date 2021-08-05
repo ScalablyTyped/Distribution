@@ -18,22 +18,17 @@ trait CreatePresignedPortalUrlRequest extends StObject {
 }
 object CreatePresignedPortalUrlRequest {
   
-  @scala.inline
-  def apply(portalId: ID): CreatePresignedPortalUrlRequest = {
+  inline def apply(portalId: ID): CreatePresignedPortalUrlRequest = {
     val __obj = js.Dynamic.literal(portalId = portalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePresignedPortalUrlRequest]
   }
   
-  @scala.inline
-  implicit class CreatePresignedPortalUrlRequestMutableBuilder[Self <: CreatePresignedPortalUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePresignedPortalUrlRequest](x: Self) {
     
-    @scala.inline
-    def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
+    inline def setPortalId(value: ID): Self = StObject.set(x, "portalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionDurationSeconds(value: SessionDurationSeconds): Self = StObject.set(x, "sessionDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setSessionDurationSeconds(value: SessionDurationSeconds): Self = StObject.set(x, "sessionDurationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionDurationSecondsUndefined: Self = StObject.set(x, "sessionDurationSeconds", js.undefined)
+    inline def setSessionDurationSecondsUndefined: Self = StObject.set(x, "sessionDurationSeconds", js.undefined)
   }
 }

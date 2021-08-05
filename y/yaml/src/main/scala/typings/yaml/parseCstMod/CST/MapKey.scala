@@ -14,8 +14,7 @@ trait MapKey
 }
 object MapKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -28,10 +27,8 @@ object MapKey {
     __obj.asInstanceOf[MapKey]
   }
   
-  @scala.inline
-  implicit class MapKeyMutableBuilder[Self <: MapKey] (val x: Self) extends AnyVal {
+  extension [Self <: MapKey](x: Self) {
     
-    @scala.inline
-    def setType(value: MAP_KEY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MAP_KEY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

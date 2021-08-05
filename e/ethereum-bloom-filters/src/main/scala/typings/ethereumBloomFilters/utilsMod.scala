@@ -12,19 +12,13 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bytesToHex(bytes: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def bytesToHex(bytes: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToHex")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def keccak256(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(data.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def keccak256(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def keccak256(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def keccak256(data: ArrayLike[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keccak256")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def padLeft(value: String, chars: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], chars.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def padLeft(value: String, chars: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padLeft")(value.asInstanceOf[js.Any], chars.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toByteArray(value: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toByteArray")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
-  @scala.inline
-  def toByteArray(value: ArrayLike[Double]): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toByteArray")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def toByteArray(value: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toByteArray")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  inline def toByteArray(value: ArrayLike[Double]): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toByteArray")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
 }

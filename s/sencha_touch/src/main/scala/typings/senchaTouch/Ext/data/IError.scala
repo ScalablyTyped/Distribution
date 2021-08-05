@@ -37,49 +37,35 @@ trait IError
 }
 object IError {
   
-  @scala.inline
-  def apply(): IError = {
+  inline def apply(): IError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IError]
   }
   
-  @scala.inline
-  implicit class IErrorMutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
+  extension [Self <: IError](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setGetField(value: () => String): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
+    inline def setGetField(value: () => String): Self = StObject.set(x, "getField", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
+    inline def setGetFieldUndefined: Self = StObject.set(x, "getField", js.undefined)
     
-    @scala.inline
-    def setGetMessage(value: () => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
+    inline def setGetMessage(value: () => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMessageUndefined: Self = StObject.set(x, "getMessage", js.undefined)
+    inline def setGetMessageUndefined: Self = StObject.set(x, "getMessage", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
+    inline def setSetField(value: /* field */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setField", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
+    inline def setSetFieldUndefined: Self = StObject.set(x, "setField", js.undefined)
     
-    @scala.inline
-    def setSetMessage(value: /* message */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMessage", js.Any.fromFunction1(value))
+    inline def setSetMessage(value: /* message */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setMessage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetMessageUndefined: Self = StObject.set(x, "setMessage", js.undefined)
+    inline def setSetMessageUndefined: Self = StObject.set(x, "setMessage", js.undefined)
   }
 }

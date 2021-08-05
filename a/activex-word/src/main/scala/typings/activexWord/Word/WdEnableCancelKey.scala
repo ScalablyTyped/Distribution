@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdEnableCancelKey extends StObject
 object WdEnableCancelKey {
   
-  @scala.inline
-  def wdCancelDisabled: `0` = 0.asInstanceOf[`0`]
+  inline def wdCancelDisabled: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdCancelInterrupt: `1` = 1.asInstanceOf[`1`]
+  inline def wdCancelInterrupt: `1` = 1.asInstanceOf[`1`]
 }

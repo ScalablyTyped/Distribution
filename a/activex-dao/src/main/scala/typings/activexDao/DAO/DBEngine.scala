@@ -58,7 +58,7 @@ trait DBEngine extends StObject {
   def CreateWorkspace(Name: String, UserName: String, Password: String): Workspace = js.native
   def CreateWorkspace(Name: String, UserName: String, Password: String, UseType: WorkspaceTypeEnum): Workspace = js.native
   
-  @JSName("DAO.DBEngine_typekey")
+  /* private */ @JSName("DAO.DBEngine_typekey")
   var DAODotDBEngine_typekey: DBEngine = js.native
   
   val DefaultPassword: String = js.native

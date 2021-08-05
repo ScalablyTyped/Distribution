@@ -14,8 +14,7 @@ trait IndexSignature
 }
 object IndexSignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -43,13 +42,10 @@ object IndexSignature {
     __obj.asInstanceOf[IndexSignature]
   }
   
-  @scala.inline
-  implicit class IndexSignatureMutableBuilder[Self <: IndexSignature] (val x: Self) extends AnyVal {
+  extension [Self <: IndexSignature](x: Self) {
     
-    @scala.inline
-    def setParameter(value: Parameter): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: Parameter): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

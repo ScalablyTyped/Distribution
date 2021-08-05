@@ -15,17 +15,14 @@ trait Ellipse
 }
 object Ellipse {
   
-  @scala.inline
-  def apply(id: String, name: String, position: Point, size: Size): Ellipse = {
+  inline def apply(id: String, name: String, position: Point, size: Size): Ellipse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ELLIPSE")
     __obj.asInstanceOf[Ellipse]
   }
   
-  @scala.inline
-  implicit class EllipseMutableBuilder[Self <: Ellipse] (val x: Self) extends AnyVal {
+  extension [Self <: Ellipse](x: Self) {
     
-    @scala.inline
-    def setType(value: ELLIPSE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ELLIPSE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

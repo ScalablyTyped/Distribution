@@ -16,8 +16,7 @@ trait pluploadError
 }
 object pluploadError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: Double,
     file: js.Any,
     message: String,
@@ -29,16 +28,12 @@ object pluploadError {
     __obj.asInstanceOf[pluploadError]
   }
   
-  @scala.inline
-  implicit class pluploadErrorMutableBuilder[Self <: pluploadError] (val x: Self) extends AnyVal {
+  extension [Self <: pluploadError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: js.Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

@@ -19,23 +19,19 @@ trait GoogleCloudDatalabelingV1beta1LabelStats extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1LabelStats {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1LabelStats = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1LabelStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1LabelStats]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1LabelStatsMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1LabelStats] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1LabelStats](x: Self) {
     
-    @scala.inline
-    def setExampleCount(
+    inline def setExampleCount(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDatalabeling.maximMazurokGapiClientDatalabelingStrings.GoogleCloudDatalabelingV1beta1LabelStats & TopLevel[js.Any]
     ): Self = StObject.set(x, "exampleCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExampleCountUndefined: Self = StObject.set(x, "exampleCount", js.undefined)
+    inline def setExampleCountUndefined: Self = StObject.set(x, "exampleCount", js.undefined)
   }
 }

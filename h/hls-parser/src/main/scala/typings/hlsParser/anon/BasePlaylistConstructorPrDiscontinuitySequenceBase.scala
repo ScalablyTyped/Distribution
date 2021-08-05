@@ -36,85 +36,59 @@ trait BasePlaylistConstructorPrDiscontinuitySequenceBase extends StObject {
 }
 object BasePlaylistConstructorPrDiscontinuitySequenceBase {
   
-  @scala.inline
-  def apply(targetDuration: Double): BasePlaylistConstructorPrDiscontinuitySequenceBase = {
+  inline def apply(targetDuration: Double): BasePlaylistConstructorPrDiscontinuitySequenceBase = {
     val __obj = js.Dynamic.literal(targetDuration = targetDuration.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePlaylistConstructorPrDiscontinuitySequenceBase]
   }
   
-  @scala.inline
-  implicit class BasePlaylistConstructorPrDiscontinuitySequenceBaseMutableBuilder[Self <: BasePlaylistConstructorPrDiscontinuitySequenceBase] (val x: Self) extends AnyVal {
+  extension [Self <: BasePlaylistConstructorPrDiscontinuitySequenceBase](x: Self) {
     
-    @scala.inline
-    def setDiscontinuitySequenceBase(value: Double): Self = StObject.set(x, "discontinuitySequenceBase", value.asInstanceOf[js.Any])
+    inline def setDiscontinuitySequenceBase(value: Double): Self = StObject.set(x, "discontinuitySequenceBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscontinuitySequenceBaseUndefined: Self = StObject.set(x, "discontinuitySequenceBase", js.undefined)
+    inline def setDiscontinuitySequenceBaseUndefined: Self = StObject.set(x, "discontinuitySequenceBase", js.undefined)
     
-    @scala.inline
-    def setEndlist(value: Boolean): Self = StObject.set(x, "endlist", value.asInstanceOf[js.Any])
+    inline def setEndlist(value: Boolean): Self = StObject.set(x, "endlist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndlistUndefined: Self = StObject.set(x, "endlist", js.undefined)
+    inline def setEndlistUndefined: Self = StObject.set(x, "endlist", js.undefined)
     
-    @scala.inline
-    def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
+    inline def setIndependentSegments(value: Boolean): Self = StObject.set(x, "independentSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndependentSegmentsUndefined: Self = StObject.set(x, "independentSegments", js.undefined)
+    inline def setIndependentSegmentsUndefined: Self = StObject.set(x, "independentSegments", js.undefined)
     
-    @scala.inline
-    def setIsIFrame(value: Boolean): Self = StObject.set(x, "isIFrame", value.asInstanceOf[js.Any])
+    inline def setIsIFrame(value: Boolean): Self = StObject.set(x, "isIFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIFrameUndefined: Self = StObject.set(x, "isIFrame", js.undefined)
+    inline def setIsIFrameUndefined: Self = StObject.set(x, "isIFrame", js.undefined)
     
-    @scala.inline
-    def setMediaSequenceBase(value: Double): Self = StObject.set(x, "mediaSequenceBase", value.asInstanceOf[js.Any])
+    inline def setMediaSequenceBase(value: Double): Self = StObject.set(x, "mediaSequenceBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaSequenceBaseUndefined: Self = StObject.set(x, "mediaSequenceBase", js.undefined)
+    inline def setMediaSequenceBaseUndefined: Self = StObject.set(x, "mediaSequenceBase", js.undefined)
     
-    @scala.inline
-    def setPlaylistType(value: EVENT | VOD): Self = StObject.set(x, "playlistType", value.asInstanceOf[js.Any])
+    inline def setPlaylistType(value: EVENT | VOD): Self = StObject.set(x, "playlistType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistTypeUndefined: Self = StObject.set(x, "playlistType", js.undefined)
+    inline def setPlaylistTypeUndefined: Self = StObject.set(x, "playlistType", js.undefined)
     
-    @scala.inline
-    def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[Segment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: Segment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setStart(value: Offset): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Offset): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setTargetDuration(value: Double): Self = StObject.set(x, "targetDuration", value.asInstanceOf[js.Any])
+    inline def setTargetDuration(value: Double): Self = StObject.set(x, "targetDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

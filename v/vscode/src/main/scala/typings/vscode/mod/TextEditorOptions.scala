@@ -39,37 +39,27 @@ trait TextEditorOptions extends StObject {
 }
 object TextEditorOptions {
   
-  @scala.inline
-  def apply(): TextEditorOptions = {
+  inline def apply(): TextEditorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextEditorOptions]
   }
   
-  @scala.inline
-  implicit class TextEditorOptionsMutableBuilder[Self <: TextEditorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditorOptions](x: Self) {
     
-    @scala.inline
-    def setCursorStyle(value: TextEditorCursorStyle): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
+    inline def setCursorStyle(value: TextEditorCursorStyle): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorStyleUndefined: Self = StObject.set(x, "cursorStyle", js.undefined)
+    inline def setCursorStyleUndefined: Self = StObject.set(x, "cursorStyle", js.undefined)
     
-    @scala.inline
-    def setInsertSpaces(value: Boolean | String): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
+    inline def setInsertSpaces(value: Boolean | String): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertSpacesUndefined: Self = StObject.set(x, "insertSpaces", js.undefined)
+    inline def setInsertSpacesUndefined: Self = StObject.set(x, "insertSpaces", js.undefined)
     
-    @scala.inline
-    def setLineNumbers(value: TextEditorLineNumbersStyle): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
+    inline def setLineNumbers(value: TextEditorLineNumbersStyle): Self = StObject.set(x, "lineNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
+    inline def setLineNumbersUndefined: Self = StObject.set(x, "lineNumbers", js.undefined)
     
-    @scala.inline
-    def setTabSize(value: Double | String): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+    inline def setTabSize(value: Double | String): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
+    inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
   }
 }

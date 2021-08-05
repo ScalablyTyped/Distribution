@@ -15,25 +15,19 @@ trait DiagramZoomEndEvent
 }
 object DiagramZoomEndEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram): DiagramZoomEndEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram): DiagramZoomEndEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramZoomEndEvent]
   }
   
-  @scala.inline
-  implicit class DiagramZoomEndEventMutableBuilder[Self <: DiagramZoomEndEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramZoomEndEvent](x: Self) {
     
-    @scala.inline
-    def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

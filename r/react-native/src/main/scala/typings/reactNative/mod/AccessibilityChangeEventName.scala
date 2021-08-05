@@ -16,24 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessibilityChangeEventName extends StObject
 object AccessibilityChangeEventName {
   
-  @scala.inline
-  def boldTextChanged: typings.reactNative.reactNativeStrings.boldTextChanged = "boldTextChanged".asInstanceOf[typings.reactNative.reactNativeStrings.boldTextChanged]
+  inline def boldTextChanged: typings.reactNative.reactNativeStrings.boldTextChanged = "boldTextChanged".asInstanceOf[typings.reactNative.reactNativeStrings.boldTextChanged]
   
-  @scala.inline
-  def change: typings.reactNative.reactNativeStrings.change = "change".asInstanceOf[typings.reactNative.reactNativeStrings.change]
+  inline def change: typings.reactNative.reactNativeStrings.change = "change".asInstanceOf[typings.reactNative.reactNativeStrings.change]
   
-  @scala.inline
-  def grayscaleChanged: typings.reactNative.reactNativeStrings.grayscaleChanged = "grayscaleChanged".asInstanceOf[typings.reactNative.reactNativeStrings.grayscaleChanged]
+  inline def grayscaleChanged: typings.reactNative.reactNativeStrings.grayscaleChanged = "grayscaleChanged".asInstanceOf[typings.reactNative.reactNativeStrings.grayscaleChanged]
   
-  @scala.inline
-  def invertColorsChanged: typings.reactNative.reactNativeStrings.invertColorsChanged = "invertColorsChanged".asInstanceOf[typings.reactNative.reactNativeStrings.invertColorsChanged]
+  inline def invertColorsChanged: typings.reactNative.reactNativeStrings.invertColorsChanged = "invertColorsChanged".asInstanceOf[typings.reactNative.reactNativeStrings.invertColorsChanged]
   
-  @scala.inline
-  def reduceMotionChanged: typings.reactNative.reactNativeStrings.reduceMotionChanged = "reduceMotionChanged".asInstanceOf[typings.reactNative.reactNativeStrings.reduceMotionChanged]
+  inline def reduceMotionChanged: typings.reactNative.reactNativeStrings.reduceMotionChanged = "reduceMotionChanged".asInstanceOf[typings.reactNative.reactNativeStrings.reduceMotionChanged]
   
-  @scala.inline
-  def reduceTransparencyChanged: typings.reactNative.reactNativeStrings.reduceTransparencyChanged = "reduceTransparencyChanged".asInstanceOf[typings.reactNative.reactNativeStrings.reduceTransparencyChanged]
+  inline def reduceTransparencyChanged: typings.reactNative.reactNativeStrings.reduceTransparencyChanged = "reduceTransparencyChanged".asInstanceOf[typings.reactNative.reactNativeStrings.reduceTransparencyChanged]
   
-  @scala.inline
-  def screenReaderChanged: typings.reactNative.reactNativeStrings.screenReaderChanged = "screenReaderChanged".asInstanceOf[typings.reactNative.reactNativeStrings.screenReaderChanged]
+  inline def screenReaderChanged: typings.reactNative.reactNativeStrings.screenReaderChanged = "screenReaderChanged".asInstanceOf[typings.reactNative.reactNativeStrings.screenReaderChanged]
 }

@@ -22,16 +22,12 @@ object TSIndexedAccessType {
   @js.native
   def apply(objectType: TSType, indexType: TSType): TSIndexedAccessType = js.native
   
-  @scala.inline
-  implicit class TSIndexedAccessTypeMutableBuilder[Self <: TSIndexedAccessType] (val x: Self) extends AnyVal {
+  extension [Self <: TSIndexedAccessType](x: Self) {
     
-    @scala.inline
-    def setIndexType(value: TSType): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
+    inline def setIndexType(value: TSType): Self = StObject.set(x, "indexType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectType(value: TSType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: TSType): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSIndexedAccessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSIndexedAccessType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

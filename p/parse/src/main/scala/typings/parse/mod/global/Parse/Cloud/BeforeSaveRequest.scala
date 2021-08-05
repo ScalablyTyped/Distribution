@@ -15,8 +15,7 @@ trait BeforeSaveRequest
 }
 object BeforeSaveRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     context: js.Object,
     headers: js.Any,
     ip: String,
@@ -29,10 +28,8 @@ object BeforeSaveRequest {
     __obj.asInstanceOf[BeforeSaveRequest]
   }
   
-  @scala.inline
-  implicit class BeforeSaveRequestMutableBuilder[Self <: BeforeSaveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BeforeSaveRequest](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

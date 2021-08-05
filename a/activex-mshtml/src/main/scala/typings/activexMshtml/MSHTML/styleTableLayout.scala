@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleTableLayout extends StObject
 object styleTableLayout {
   
-  @scala.inline
-  def styleTableLayoutAuto: `1` = 1.asInstanceOf[`1`]
+  inline def styleTableLayoutAuto: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleTableLayoutFixed: `2` = 2.asInstanceOf[`2`]
+  inline def styleTableLayoutFixed: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleTableLayoutNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleTableLayoutNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleTableLayout_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleTableLayout_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

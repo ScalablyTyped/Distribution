@@ -13,21 +13,21 @@ class TextDocuments[T] protected () extends StObject {
     */
   def this(configuration: TextDocumentsConfiguration[T]) = this()
   
-  var _configuration: js.Any = js.native
+  /* private */ var _configuration: js.Any = js.native
   
-  var _documents: js.Any = js.native
+  /* private */ var _documents: js.Any = js.native
   
-  var _onDidChangeContent: js.Any = js.native
+  /* private */ var _onDidChangeContent: js.Any = js.native
   
-  var _onDidClose: js.Any = js.native
+  /* private */ var _onDidClose: js.Any = js.native
   
-  var _onDidOpen: js.Any = js.native
+  /* private */ var _onDidOpen: js.Any = js.native
   
-  var _onDidSave: js.Any = js.native
+  /* private */ var _onDidSave: js.Any = js.native
   
-  var _onWillSave: js.Any = js.native
+  /* private */ var _onWillSave: js.Any = js.native
   
-  var _willSaveWaitUntil: js.Any = js.native
+  /* private */ var _willSaveWaitUntil: js.Any = js.native
   
   /**
     * Returns all text documents managed by this instance.

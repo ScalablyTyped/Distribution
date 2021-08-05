@@ -94,8 +94,7 @@ trait DimensionMemberSetRequest extends StObject {
 }
 object DimensionMemberSetRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getFilterExpression: () => FilterExpression,
     getResultPageBoundaries: () => js.Any,
     getSortExpression: () => SortExpression,
@@ -112,40 +111,28 @@ object DimensionMemberSetRequest {
     __obj.asInstanceOf[DimensionMemberSetRequest]
   }
   
-  @scala.inline
-  implicit class DimensionMemberSetRequestMutableBuilder[Self <: DimensionMemberSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionMemberSetRequest](x: Self) {
     
-    @scala.inline
-    def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
+    inline def setGetFilterExpression(value: () => FilterExpression): Self = StObject.set(x, "getFilterExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetResultPageBoundaries(value: () => js.Any): Self = StObject.set(x, "getResultPageBoundaries", js.Any.fromFunction0(value))
+    inline def setGetResultPageBoundaries(value: () => js.Any): Self = StObject.set(x, "getResultPageBoundaries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSortExpression(value: () => SortExpression): Self = StObject.set(x, "getSortExpression", js.Any.fromFunction0(value))
+    inline def setGetSortExpression(value: () => SortExpression): Self = StObject.set(x, "getSortExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURIQueryOptionValue(value: String => String): Self = StObject.set(x, "getURIQueryOptionValue", js.Any.fromFunction1(value))
+    inline def setGetURIQueryOptionValue(value: String => String): Self = StObject.set(x, "getURIQueryOptionValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetURIToDimensionMemberEntitySet(value: String => String): Self = StObject.set(x, "getURIToDimensionMemberEntitySet", js.Any.fromFunction1(value))
+    inline def setGetURIToDimensionMemberEntitySet(value: String => String): Self = StObject.set(x, "getURIToDimensionMemberEntitySet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetURIToDimensionMemberEntries(value: String => String): Self = StObject.set(x, "getURIToDimensionMemberEntries", js.Any.fromFunction1(value))
+    inline def setGetURIToDimensionMemberEntries(value: String => String): Self = StObject.set(x, "getURIToDimensionMemberEntries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilterExpression(value: FilterExpression => Unit): Self = StObject.set(x, "setFilterExpression", js.Any.fromFunction1(value))
+    inline def setSetFilterExpression(value: FilterExpression => Unit): Self = StObject.set(x, "setFilterExpression", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetParameterizationRequest(value: js.Any => Unit): Self = StObject.set(x, "setParameterizationRequest", js.Any.fromFunction1(value))
+    inline def setSetParameterizationRequest(value: js.Any => Unit): Self = StObject.set(x, "setParameterizationRequest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRequestOptions(value: Boolean => Unit): Self = StObject.set(x, "setRequestOptions", js.Any.fromFunction1(value))
+    inline def setSetRequestOptions(value: Boolean => Unit): Self = StObject.set(x, "setRequestOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetResultPageBoundaries(value: (Number, Number) => Unit): Self = StObject.set(x, "setResultPageBoundaries", js.Any.fromFunction2(value))
+    inline def setSetResultPageBoundaries(value: (Number, Number) => Unit): Self = StObject.set(x, "setResultPageBoundaries", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSortExpression(value: SortExpression => Unit): Self = StObject.set(x, "setSortExpression", js.Any.fromFunction1(value))
+    inline def setSetSortExpression(value: SortExpression => Unit): Self = StObject.set(x, "setSortExpression", js.Any.fromFunction1(value))
   }
 }

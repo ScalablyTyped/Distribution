@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsUnits extends StObject
 object DirectionsUnits {
   
-  @scala.inline
-  def imperial: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.imperial = "imperial".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.imperial]
+  inline def imperial: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.imperial = "imperial".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.imperial]
   
-  @scala.inline
-  def metric: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.metric = "metric".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.metric]
+  inline def metric: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.metric = "metric".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.metric]
 }

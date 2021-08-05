@@ -51,43 +51,31 @@ trait LoadOption extends StObject {
 }
 object LoadOption {
   
-  @scala.inline
-  def apply(): LoadOption = {
+  inline def apply(): LoadOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadOption]
   }
   
-  @scala.inline
-  implicit class LoadOptionMutableBuilder[Self <: LoadOption] (val x: Self) extends AnyVal {
+  extension [Self <: LoadOption](x: Self) {
     
-    @scala.inline
-    def setExpand(value: String | js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: String | js.Array[String]): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
+    inline def setExpandVarargs(value: String*): Self = StObject.set(x, "expand", js.Array(value :_*))
     
-    @scala.inline
-    def setSelect(value: String | js.Array[String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: String | js.Array[String]): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value :_*))
+    inline def setSelectVarargs(value: String*): Self = StObject.set(x, "select", js.Array(value :_*))
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteDatastoreRequest extends StObject {
 }
 object DeleteDatastoreRequest {
   
-  @scala.inline
-  def apply(datastoreName: DatastoreName): DeleteDatastoreRequest = {
+  inline def apply(datastoreName: DatastoreName): DeleteDatastoreRequest = {
     val __obj = js.Dynamic.literal(datastoreName = datastoreName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDatastoreRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDatastoreRequestMutableBuilder[Self <: DeleteDatastoreRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDatastoreRequest](x: Self) {
     
-    @scala.inline
-    def setDatastoreName(value: DatastoreName): Self = StObject.set(x, "datastoreName", value.asInstanceOf[js.Any])
+    inline def setDatastoreName(value: DatastoreName): Self = StObject.set(x, "datastoreName", value.asInstanceOf[js.Any])
   }
 }

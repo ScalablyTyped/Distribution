@@ -29,8 +29,7 @@ object mod {
     @JSImport("route-recognizer", "default.ENCODE_AND_DECODE_PATH_SEGMENTS")
     @js.native
     def ENCODE_AND_DECODE_PATH_SEGMENTS: Boolean = js.native
-    @scala.inline
-    def ENCODE_AND_DECODE_PATH_SEGMENTS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENCODE_AND_DECODE_PATH_SEGMENTS")(x.asInstanceOf[js.Any])
+    inline def ENCODE_AND_DECODE_PATH_SEGMENTS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENCODE_AND_DECODE_PATH_SEGMENTS")(x.asInstanceOf[js.Any])
     
     /* static member */
     object Normalizer {
@@ -39,22 +38,18 @@ object mod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def encodePathSegment(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePathSegment")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def encodePathSegment(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePathSegment")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @scala.inline
-      def normalizePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def normalizePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @scala.inline
-      def normalizeSegment(segment: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def normalizeSegment(segment: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
     /* static member */
     @JSImport("route-recognizer", "default.VERSION")
     @js.native
     def VERSION: String = js.native
-    @scala.inline
-    def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
+    inline def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
   
   trait Params
@@ -66,23 +61,18 @@ object mod {
   }
   object Params {
     
-    @scala.inline
-    def apply(): Params = {
+    inline def apply(): Params = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setQueryParams(value: QueryParams): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: QueryParams): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsNull: Self = StObject.set(x, "queryParams", null)
+      inline def setQueryParamsNull: Self = StObject.set(x, "queryParams", null)
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
     }
   }
   
@@ -98,29 +88,22 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(isDynamic: Boolean, params: Params): Result = {
+    inline def apply(isDynamic: Boolean, params: Params): Result = {
       val __obj = js.Dynamic.literal(isDynamic = isDynamic.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setHandler(value: Opaque): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: Opaque): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerNull: Self = StObject.set(x, "handler", null)
+      inline def setHandlerNull: Self = StObject.set(x, "handler", null)
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setIsDynamic(value: Boolean): Self = StObject.set(x, "isDynamic", value.asInstanceOf[js.Any])
+      inline def setIsDynamic(value: Boolean): Self = StObject.set(x, "isDynamic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   
@@ -164,14 +147,14 @@ object mod {
       addCallback: js.Function2[/* router */ this.type, /* routes */ js.Array[Route], Unit]
     ): Unit = js.native
     
-    var names: js.Any = js.native
+    /* private */ var names: js.Any = js.native
     
     def parseQueryString(queryString: String): QueryParams = js.native
     
     def recognize(path: String): js.UndefOr[Results] = js.native
     
-    var rootState: js.Any = js.native
+    /* private */ var rootState: js.Any = js.native
     
-    var states: js.Any = js.native
+    /* private */ var states: js.Any = js.native
   }
 }

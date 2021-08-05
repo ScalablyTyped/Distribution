@@ -32,56 +32,40 @@ object avatarMod {
   }
   object AvatarProps {
     
-    @scala.inline
-    def apply(): AvatarProps = {
+    inline def apply(): AvatarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AvatarProps]
     }
     
-    @scala.inline
-    implicit class AvatarPropsMutableBuilder[Self <: AvatarProps] (val x: Self) extends AnyVal {
+    extension [Self <: AvatarProps](x: Self) {
       
-      @scala.inline
-      def setHasNotification(value: Boolean): Self = StObject.set(x, "hasNotification", value.asInstanceOf[js.Any])
+      inline def setHasNotification(value: Boolean): Self = StObject.set(x, "hasNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasNotificationUndefined: Self = StObject.set(x, "hasNotification", js.undefined)
+      inline def setHasNotificationUndefined: Self = StObject.set(x, "hasNotification", js.undefined)
       
-      @scala.inline
-      def setHasToggle(value: Boolean): Self = StObject.set(x, "hasToggle", value.asInstanceOf[js.Any])
+      inline def setHasToggle(value: Boolean): Self = StObject.set(x, "hasToggle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasToggleUndefined: Self = StObject.set(x, "hasToggle", js.undefined)
+      inline def setHasToggleUndefined: Self = StObject.set(x, "hasToggle", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: () => js.Object): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      inline def setOnClick(value: () => js.Object): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+      inline def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
+      inline def setPictureUndefined: Self = StObject.set(x, "picture", js.undefined)
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

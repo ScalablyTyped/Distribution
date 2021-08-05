@@ -39,8 +39,7 @@ object analyticsMod {
     @js.native
     def v24: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Analytics] = js.native
     
-    @scala.inline
-    def v24_=(
+    inline def v24_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Analytics]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2.4")(x.asInstanceOf[js.Any])
     
@@ -59,8 +58,7 @@ object analyticsMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v3Mod.analyticsV3.Analytics
       ] = js.native
-    @scala.inline
-    def v3_=(
+    inline def v3_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -69,16 +67,12 @@ object analyticsMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v3")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def analytics(options: Options): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(options.asInstanceOf[js.Any]).asInstanceOf[Analytics]
-  @scala.inline
-  def analytics(options: typings.googleapis.v3Mod.analyticsV3.Options): typings.googleapis.v3Mod.analyticsV3.Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3Mod.analyticsV3.Analytics]
+  inline def analytics(options: Options): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(options.asInstanceOf[js.Any]).asInstanceOf[Analytics]
+  inline def analytics(options: typings.googleapis.v3Mod.analyticsV3.Options): typings.googleapis.v3Mod.analyticsV3.Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3Mod.analyticsV3.Analytics]
   
-  @scala.inline
-  def analytics_v24(version: v2Dot4): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(version.asInstanceOf[js.Any]).asInstanceOf[Analytics]
+  inline def analytics_v24(version: v2Dot4): Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(version.asInstanceOf[js.Any]).asInstanceOf[Analytics]
   
-  @scala.inline
-  def analytics_v3(version: v3): typings.googleapis.v3Mod.analyticsV3.Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3Mod.analyticsV3.Analytics]
+  inline def analytics_v3(version: v3): typings.googleapis.v3Mod.analyticsV3.Analytics = ^.asInstanceOf[js.Dynamic].applyDynamic("analytics")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v3Mod.analyticsV3.Analytics]
   
   object auth extends Shortcut {
     
@@ -113,8 +107,7 @@ object analyticsMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

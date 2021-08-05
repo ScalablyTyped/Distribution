@@ -16,31 +16,23 @@ trait Date[TEvent /* <: js.Object */] extends StObject {
 }
 object Date {
   
-  @scala.inline
-  def apply[TEvent /* <: js.Object */](): Date[TEvent] = {
+  inline def apply[TEvent /* <: js.Object */](): Date[TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Date[TEvent]]
   }
   
-  @scala.inline
-  implicit class DateMutableBuilder[Self <: Date[?], TEvent /* <: js.Object */] (val x: Self & Date[TEvent]) extends AnyVal {
+  extension [Self <: Date[?], TEvent /* <: js.Object */](x: Self & Date[TEvent]) {
     
-    @scala.inline
-    def setDate(value: ComponentType[js.Object]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: ComponentType[js.Object]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setEvent(value: ComponentType[EventProps[TEvent]]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: ComponentType[EventProps[TEvent]]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setTime(value: ComponentType[js.Object]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: ComponentType[js.Object]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

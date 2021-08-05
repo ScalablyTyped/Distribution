@@ -10,16 +10,13 @@ trait Gamepad extends StObject {
 }
 object Gamepad {
   
-  @scala.inline
-  def apply(displayId: Double): Gamepad = {
+  inline def apply(displayId: Double): Gamepad = {
     val __obj = js.Dynamic.literal(displayId = displayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Gamepad]
   }
   
-  @scala.inline
-  implicit class GamepadMutableBuilder[Self <: Gamepad] (val x: Self) extends AnyVal {
+  extension [Self <: Gamepad](x: Self) {
     
-    @scala.inline
-    def setDisplayId(value: Double): Self = StObject.set(x, "displayId", value.asInstanceOf[js.Any])
+    inline def setDisplayId(value: Double): Self = StObject.set(x, "displayId", value.asInstanceOf[js.Any])
   }
 }

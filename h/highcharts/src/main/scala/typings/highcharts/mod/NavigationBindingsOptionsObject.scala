@@ -34,46 +34,33 @@ trait NavigationBindingsOptionsObject extends StObject {
 }
 object NavigationBindingsOptionsObject {
   
-  @scala.inline
-  def apply(): NavigationBindingsOptionsObject = {
+  inline def apply(): NavigationBindingsOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationBindingsOptionsObject]
   }
   
-  @scala.inline
-  implicit class NavigationBindingsOptionsObjectMutableBuilder[Self <: NavigationBindingsOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationBindingsOptionsObject](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setEnd(value: js.Function): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Function): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setStart(value: js.Function): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: js.Function): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setSteps(value: js.Array[js.Function]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[js.Function]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: js.Function*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: js.Function*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

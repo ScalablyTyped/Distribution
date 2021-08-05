@@ -58,7 +58,7 @@ object abstractEmitterMod {
        with ExpressionVisitor {
     def this(_escapeDollarInStrings: Boolean) = this()
     
-    var _escapeDollarInStrings: js.Any = js.native
+    /* private */ var _escapeDollarInStrings: js.Any = js.native
     
     def getBuiltinMethodName(method: BuiltinMethod): String = js.native
     
@@ -215,13 +215,13 @@ object abstractEmitterMod {
   class EmitterVisitorContext protected () extends StObject {
     def this(_indent: Double) = this()
     
-    var _classes: js.Any = js.native
+    /* private */ var _classes: js.Any = js.native
     
-    var _indent: js.Any = js.native
+    /* private */ var _indent: js.Any = js.native
     
-    var _lines: js.Any = js.native
+    /* private */ var _lines: js.Any = js.native
     
-    var _preambleLineCount: js.Any = js.native
+    /* private */ var _preambleLineCount: js.Any = js.native
     
     def currentClass: ClassStmt | Null = js.native
     
@@ -266,14 +266,11 @@ object abstractEmitterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createRoot(): EmitterVisitorContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoot")().asInstanceOf[EmitterVisitorContext]
+    inline def createRoot(): EmitterVisitorContext = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoot")().asInstanceOf[EmitterVisitorContext]
   }
   
-  @scala.inline
-  def escapeIdentifier(input: String, escapeDollar: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeIdentifier")(input.asInstanceOf[js.Any], escapeDollar.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def escapeIdentifier(input: String, escapeDollar: Boolean, alwaysQuote: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeIdentifier")(input.asInstanceOf[js.Any], escapeDollar.asInstanceOf[js.Any], alwaysQuote.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def escapeIdentifier(input: String, escapeDollar: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeIdentifier")(input.asInstanceOf[js.Any], escapeDollar.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def escapeIdentifier(input: String, escapeDollar: Boolean, alwaysQuote: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("escapeIdentifier")(input.asInstanceOf[js.Any], escapeDollar.asInstanceOf[js.Any], alwaysQuote.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @js.native
   trait OutputEmitter extends StObject {

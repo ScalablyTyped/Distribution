@@ -91,8 +91,7 @@ object mod {
     * `policy = CachePolicy.fromObject(obj)` creates an instance from object created by `toObject()`.
     */
   /* static member */
-  @scala.inline
-  def fromObject(obj: CachePolicyObject): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[CachePolicy]
+  inline def fromObject(obj: CachePolicyObject): CachePolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[CachePolicy]
   
   trait CachePolicy extends StObject {
     
@@ -159,8 +158,7 @@ object mod {
   }
   object CachePolicy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       responseHeaders: () => Headers,
       revalidatedPolicy: (Request, Response) => RevalidationPolicy,
       revalidationHeaders: Request => Headers,
@@ -173,29 +171,21 @@ object mod {
       __obj.asInstanceOf[CachePolicy]
     }
     
-    @scala.inline
-    implicit class CachePolicyMutableBuilder[Self <: CachePolicy] (val x: Self) extends AnyVal {
+    extension [Self <: CachePolicy](x: Self) {
       
-      @scala.inline
-      def setResponseHeaders(value: () => Headers): Self = StObject.set(x, "responseHeaders", js.Any.fromFunction0(value))
+      inline def setResponseHeaders(value: () => Headers): Self = StObject.set(x, "responseHeaders", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRevalidatedPolicy(value: (Request, Response) => RevalidationPolicy): Self = StObject.set(x, "revalidatedPolicy", js.Any.fromFunction2(value))
+      inline def setRevalidatedPolicy(value: (Request, Response) => RevalidationPolicy): Self = StObject.set(x, "revalidatedPolicy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRevalidationHeaders(value: Request => Headers): Self = StObject.set(x, "revalidationHeaders", js.Any.fromFunction1(value))
+      inline def setRevalidationHeaders(value: Request => Headers): Self = StObject.set(x, "revalidationHeaders", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSatisfiesWithoutRevalidation(value: Request => Boolean): Self = StObject.set(x, "satisfiesWithoutRevalidation", js.Any.fromFunction1(value))
+      inline def setSatisfiesWithoutRevalidation(value: Request => Boolean): Self = StObject.set(x, "satisfiesWithoutRevalidation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStorable(value: () => Boolean): Self = StObject.set(x, "storable", js.Any.fromFunction0(value))
+      inline def setStorable(value: () => Boolean): Self = StObject.set(x, "storable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimeToLive(value: () => Double): Self = StObject.set(x, "timeToLive", js.Any.fromFunction0(value))
+      inline def setTimeToLive(value: () => Double): Self = StObject.set(x, "timeToLive", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToObject(value: () => CachePolicyObject): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
+      inline def setToObject(value: () => CachePolicyObject): Self = StObject.set(x, "toObject", js.Any.fromFunction0(value))
     }
   }
   
@@ -231,8 +221,7 @@ object mod {
   }
   object CachePolicyObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       a: Boolean,
       ch: Double,
       imm: Double,
@@ -249,59 +238,41 @@ object mod {
       __obj.asInstanceOf[CachePolicyObject]
     }
     
-    @scala.inline
-    implicit class CachePolicyObjectMutableBuilder[Self <: CachePolicyObject] (val x: Self) extends AnyVal {
+    extension [Self <: CachePolicyObject](x: Self) {
       
-      @scala.inline
-      def setA(value: Boolean): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Boolean): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCh(value: Double): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
+      inline def setCh(value: Double): Self = StObject.set(x, "ch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+      inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
       
-      @scala.inline
-      def setImm(value: Double): Self = StObject.set(x, "imm", value.asInstanceOf[js.Any])
+      inline def setImm(value: Double): Self = StObject.set(x, "imm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setM(value: String): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: String): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqcc(value: StringDictionary[String]): Self = StObject.set(x, "reqcc", value.asInstanceOf[js.Any])
+      inline def setReqcc(value: StringDictionary[String]): Self = StObject.set(x, "reqcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqh(value: Headers): Self = StObject.set(x, "reqh", value.asInstanceOf[js.Any])
+      inline def setReqh(value: Headers): Self = StObject.set(x, "reqh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReqhNull: Self = StObject.set(x, "reqh", null)
+      inline def setReqhNull: Self = StObject.set(x, "reqh", null)
       
-      @scala.inline
-      def setRescc(value: StringDictionary[String]): Self = StObject.set(x, "rescc", value.asInstanceOf[js.Any])
+      inline def setRescc(value: StringDictionary[String]): Self = StObject.set(x, "rescc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResh(value: Headers): Self = StObject.set(x, "resh", value.asInstanceOf[js.Any])
+      inline def setResh(value: Headers): Self = StObject.set(x, "resh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSh(value: Boolean): Self = StObject.set(x, "sh", value.asInstanceOf[js.Any])
+      inline def setSh(value: Boolean): Self = StObject.set(x, "sh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSt(value: Double): Self = StObject.set(x, "st", value.asInstanceOf[js.Any])
+      inline def setSt(value: Double): Self = StObject.set(x, "st", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+      inline def setU(value: String): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUUndefined: Self = StObject.set(x, "u", js.undefined)
+      inline def setUUndefined: Self = StObject.set(x, "u", js.undefined)
       
-      @scala.inline
-      def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
@@ -351,44 +322,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCacheHeuristic(value: Double): Self = StObject.set(x, "cacheHeuristic", value.asInstanceOf[js.Any])
+      inline def setCacheHeuristic(value: Double): Self = StObject.set(x, "cacheHeuristic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheHeuristicUndefined: Self = StObject.set(x, "cacheHeuristic", js.undefined)
+      inline def setCacheHeuristicUndefined: Self = StObject.set(x, "cacheHeuristic", js.undefined)
       
-      @scala.inline
-      def setIgnoreCargoCult(value: Boolean): Self = StObject.set(x, "ignoreCargoCult", value.asInstanceOf[js.Any])
+      inline def setIgnoreCargoCult(value: Boolean): Self = StObject.set(x, "ignoreCargoCult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreCargoCultUndefined: Self = StObject.set(x, "ignoreCargoCult", js.undefined)
+      inline def setIgnoreCargoCultUndefined: Self = StObject.set(x, "ignoreCargoCult", js.undefined)
       
-      @scala.inline
-      def setImmutableMinTimeToLive(value: Double): Self = StObject.set(x, "immutableMinTimeToLive", value.asInstanceOf[js.Any])
+      inline def setImmutableMinTimeToLive(value: Double): Self = StObject.set(x, "immutableMinTimeToLive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmutableMinTimeToLiveUndefined: Self = StObject.set(x, "immutableMinTimeToLive", js.undefined)
+      inline def setImmutableMinTimeToLiveUndefined: Self = StObject.set(x, "immutableMinTimeToLive", js.undefined)
       
-      @scala.inline
-      def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+      inline def setShared(value: Boolean): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
+      inline def setSharedUndefined: Self = StObject.set(x, "shared", js.undefined)
       
-      @scala.inline
-      def setTrustServerDate(value: Boolean): Self = StObject.set(x, "trustServerDate", value.asInstanceOf[js.Any])
+      inline def setTrustServerDate(value: Boolean): Self = StObject.set(x, "trustServerDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustServerDateUndefined: Self = StObject.set(x, "trustServerDate", js.undefined)
+      inline def setTrustServerDateUndefined: Self = StObject.set(x, "trustServerDate", js.undefined)
     }
   }
   
@@ -402,29 +361,22 @@ object mod {
   }
   object Request {
     
-    @scala.inline
-    def apply(headers: Headers): Request = {
+    inline def apply(headers: Headers): Request = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -436,23 +388,18 @@ object mod {
   }
   object Response {
     
-    @scala.inline
-    def apply(headers: Headers): Response = {
+    inline def apply(headers: Headers): Response = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -479,23 +426,18 @@ object mod {
   }
   object RevalidationPolicy {
     
-    @scala.inline
-    def apply(matches: Boolean, modified: Boolean, policy: CachePolicy): RevalidationPolicy = {
+    inline def apply(matches: Boolean, modified: Boolean, policy: CachePolicy): RevalidationPolicy = {
       val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
       __obj.asInstanceOf[RevalidationPolicy]
     }
     
-    @scala.inline
-    implicit class RevalidationPolicyMutableBuilder[Self <: RevalidationPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: RevalidationPolicy](x: Self) {
       
-      @scala.inline
-      def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+      inline def setMatches(value: Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: CachePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: CachePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     }
   }
 }

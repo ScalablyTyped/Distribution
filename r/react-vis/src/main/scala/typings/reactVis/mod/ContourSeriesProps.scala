@@ -17,31 +17,23 @@ trait ContourSeriesProps
 }
 object ContourSeriesProps {
   
-  @scala.inline
-  def apply(): ContourSeriesProps = {
+  inline def apply(): ContourSeriesProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContourSeriesProps]
   }
   
-  @scala.inline
-  implicit class ContourSeriesPropsMutableBuilder[Self <: ContourSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: ContourSeriesProps](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+    inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
   }
 }

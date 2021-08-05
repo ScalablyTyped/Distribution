@@ -10,16 +10,13 @@ trait EnumValuesAutoUpgradeError extends StObject {
 }
 object EnumValuesAutoUpgradeError {
   
-  @scala.inline
-  def apply(enumValues: AutoUpgradeError): EnumValuesAutoUpgradeError = {
+  inline def apply(enumValues: AutoUpgradeError): EnumValuesAutoUpgradeError = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAutoUpgradeError]
   }
   
-  @scala.inline
-  implicit class EnumValuesAutoUpgradeErrorMutableBuilder[Self <: EnumValuesAutoUpgradeError] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAutoUpgradeError](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AutoUpgradeError): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AutoUpgradeError): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

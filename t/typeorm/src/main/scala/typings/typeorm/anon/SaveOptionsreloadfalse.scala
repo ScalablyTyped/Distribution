@@ -45,40 +45,29 @@ trait SaveOptionsreloadfalse extends StObject {
 }
 object SaveOptionsreloadfalse {
   
-  @scala.inline
-  def apply(reload: js.UndefOr[Boolean] & `false`): SaveOptionsreloadfalse = {
+  inline def apply(reload: js.UndefOr[Boolean] & `false`): SaveOptionsreloadfalse = {
     val __obj = js.Dynamic.literal(reload = reload.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveOptionsreloadfalse]
   }
   
-  @scala.inline
-  implicit class SaveOptionsreloadfalseMutableBuilder[Self <: SaveOptionsreloadfalse] (val x: Self) extends AnyVal {
+  extension [Self <: SaveOptionsreloadfalse](x: Self) {
     
-    @scala.inline
-    def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+    inline def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
+    inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setListeners(value: Boolean): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: Boolean): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+    inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     
-    @scala.inline
-    def setReload(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
+    inline def setReload(value: js.UndefOr[Boolean] & `false`): Self = StObject.set(x, "reload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransaction(value: Boolean): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    inline def setTransaction(value: Boolean): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
   }
 }

@@ -21,19 +21,15 @@ trait SchemaCryptoHashConfig extends StObject {
 }
 object SchemaCryptoHashConfig {
   
-  @scala.inline
-  def apply(): SchemaCryptoHashConfig = {
+  inline def apply(): SchemaCryptoHashConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCryptoHashConfig]
   }
   
-  @scala.inline
-  implicit class SchemaCryptoHashConfigMutableBuilder[Self <: SchemaCryptoHashConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCryptoHashConfig](x: Self) {
     
-    @scala.inline
-    def setCryptoKey(value: String): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
+    inline def setCryptoKey(value: String): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
+    inline def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
   }
 }

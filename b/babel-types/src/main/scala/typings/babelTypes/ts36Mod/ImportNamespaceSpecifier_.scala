@@ -17,20 +17,16 @@ trait ImportNamespaceSpecifier_
 }
 object ImportNamespaceSpecifier_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, local: Identifier_, start: Double): ImportNamespaceSpecifier_ = {
+  inline def apply(end: Double, loc: SourceLocation, local: Identifier_, start: Double): ImportNamespaceSpecifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ImportNamespaceSpecifier")
     __obj.asInstanceOf[ImportNamespaceSpecifier_]
   }
   
-  @scala.inline
-  implicit class ImportNamespaceSpecifier_MutableBuilder[Self <: ImportNamespaceSpecifier_] (val x: Self) extends AnyVal {
+  extension [Self <: ImportNamespaceSpecifier_](x: Self) {
     
-    @scala.inline
-    def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ImportNamespaceSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ImportNamespaceSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

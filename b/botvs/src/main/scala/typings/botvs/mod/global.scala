@@ -77,8 +77,7 @@ object global {
     *
     * @param {number} delay
     */
-  @scala.inline
-  def CDelay(delay: Double): Unit = js.Dynamic.global.applyDynamic("_CDelay")(delay.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def CDelay(delay: Double): Unit = js.Dynamic.global.applyDynamic("_CDelay")(delay.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 图表绘图函数
@@ -99,8 +98,7 @@ object global {
     * @param {botvs.ChartOptions} options
     * @return {botvs.RChart}
     */
-  @scala.inline
-  def Chart(options: ChartOptions*): RChart = js.Dynamic.global.applyDynamic("Chart")(options.asInstanceOf[js.Any]).asInstanceOf[RChart]
+  inline def Chart(options: ChartOptions*): RChart = js.Dynamic.global.applyDynamic("Chart")(options.asInstanceOf[js.Any]).asInstanceOf[RChart]
   
   /**
     * 原始的Socket访问, 支持tcp, udp, tls, unix 协议
@@ -126,18 +124,15 @@ object global {
     * @param {number} Timeout
     * @return {botvs.Socket}
     */
-  @scala.inline
-  def Dial(Address: String): Socket | Unit = js.Dynamic.global.applyDynamic("Dial")(Address.asInstanceOf[js.Any]).asInstanceOf[Socket | Unit]
-  @scala.inline
-  def Dial(Address: String, Timeout: Double): Socket | Unit = (js.Dynamic.global.applyDynamic("Dial")(Address.asInstanceOf[js.Any], Timeout.asInstanceOf[js.Any])).asInstanceOf[Socket | Unit]
+  inline def Dial(Address: String): Socket | Unit = js.Dynamic.global.applyDynamic("Dial")(Address.asInstanceOf[js.Any]).asInstanceOf[Socket | Unit]
+  inline def Dial(Address: String, Timeout: Double): Socket | Unit = (js.Dynamic.global.applyDynamic("Dial")(Address.asInstanceOf[js.Any], Timeout.asInstanceOf[js.Any])).asInstanceOf[Socket | Unit]
   
   /**
     * 打开或者关闭定单和出错信息的日志记录
     *
     * @param {boolean} IsEnable
     */
-  @scala.inline
-  def EnableLog(IsEnable: Boolean): Unit = js.Dynamic.global.applyDynamic("EnableLog")(IsEnable.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def EnableLog(IsEnable: Boolean): Unit = js.Dynamic.global.applyDynamic("EnableLog")(IsEnable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 获取交互命令(utf-8)
@@ -153,27 +148,23 @@ object global {
     *
     * @return {string}
     */
-  @scala.inline
-  def GetCommand(): String | Null = js.Dynamic.global.applyDynamic("GetCommand")().asInstanceOf[String | Null]
+  inline def GetCommand(): String | Null = js.Dynamic.global.applyDynamic("GetCommand")().asInstanceOf[String | Null]
   
   /**
     * 获取最近一次出错信息,一般无需使用,因为程序会把出错信息自动上传到日志系统
     *
     * @return {string}
     */
-  @scala.inline
-  def GetLastError(): String = js.Dynamic.global.applyDynamic("GetLastError")().asInstanceOf[String]
+  inline def GetLastError(): String = js.Dynamic.global.applyDynamic("GetLastError")().asInstanceOf[String]
   
   /**
     * 返回机器人进程ID
     *
     * @return {number}
     */
-  @scala.inline
-  def GetPid(): Double = js.Dynamic.global.applyDynamic("GetPid")().asInstanceOf[Double]
+  inline def GetPid(): Double = js.Dynamic.global.applyDynamic("GetPid")().asInstanceOf[Double]
   
-  @scala.inline
-  def HMAC(Algo: md5, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: md5, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * 支持 md5/sha256/sha512/sha1 的HMAC加密计算, 只支持实盘
     *
@@ -187,31 +178,19 @@ object global {
     * @param {string} password
     * @return {string}
     */
-  @scala.inline
-  def HMAC(Algo: md5, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: md5, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: sha1, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: sha1, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: sha1, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: sha256, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: sha256, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: sha256, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: sha512, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: sha512, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HMAC(Algo: sha512, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: md5, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: md5, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: sha1, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: sha1, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: sha1, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: sha256, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: sha256, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: sha256, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: sha512, OutputAlgo: base64, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: sha512, OutputAlgo: hex, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HMAC(Algo: sha512, OutputAlgo: raw, Data: String, password: String): String = (js.Dynamic.global.applyDynamic("HMAC")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def Hash(Algo: md5, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: md5, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * 支持 md5/sha256/sha512/sha1 的哈希计算, 只支持实盘
     *
@@ -224,28 +203,17 @@ object global {
     * @param {string} Data
     * @return {string}
     */
-  @scala.inline
-  def Hash(Algo: md5, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: md5, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: sha1, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: sha1, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: sha1, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: sha256, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: sha256, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: sha256, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: sha512, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: sha512, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def Hash(Algo: sha512, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: md5, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: md5, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: sha1, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: sha1, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: sha1, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: sha256, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: sha256, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: sha256, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: sha512, OutputAlgo: base64, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: sha512, OutputAlgo: hex, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def Hash(Algo: sha512, OutputAlgo: raw, Data: String): String = (js.Dynamic.global.applyDynamic("Hash")(Algo.asInstanceOf[js.Any], OutputAlgo.asInstanceOf[js.Any], Data.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * 网络URL访问
@@ -267,19 +235,13 @@ object global {
     * @param {string} Headers
     * @return {string}
     */
-  @scala.inline
-  def HttpQuery(Url: String, PostData: String, Cookies: String, Headers: String): String = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HttpQuery(Url: String, PostData: Null, Cookies: String, Headers: String): String = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def HttpQuery(Url: String, PostData: Data, Cookies: String, Headers: String): String = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HttpQuery(Url: String, PostData: String, Cookies: String, Headers: String): String = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HttpQuery(Url: String, PostData: Null, Cookies: String, Headers: String): String = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def HttpQuery(Url: String, PostData: Data, Cookies: String, Headers: String): String = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def HttpQuery_true(Url: String, PostData: String, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any], IsReturnHeader.asInstanceOf[js.Any])).asInstanceOf[Body]
-  @scala.inline
-  def HttpQuery_true(Url: String, PostData: Null, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any], IsReturnHeader.asInstanceOf[js.Any])).asInstanceOf[Body]
-  @scala.inline
-  def HttpQuery_true(Url: String, PostData: Data, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any], IsReturnHeader.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def HttpQuery_true(Url: String, PostData: String, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any], IsReturnHeader.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def HttpQuery_true(Url: String, PostData: Null, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any], IsReturnHeader.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def HttpQuery_true(Url: String, PostData: Data, Cookies: String, Headers: String, IsReturnHeader: `true`): Body = (js.Dynamic.global.applyDynamic("HttpQuery")(Url.asInstanceOf[js.Any], PostData.asInstanceOf[js.Any], Cookies.asInstanceOf[js.Any], Headers.asInstanceOf[js.Any], IsReturnHeader.asInstanceOf[js.Any])).asInstanceOf[Body]
   
   /**
     * 判断是否是模拟回测
@@ -288,8 +250,7 @@ object global {
     *
     * @return {boolean}
     */
-  @scala.inline
-  def IsVirtual(): Boolean = js.Dynamic.global.applyDynamic("IsVirtual")().asInstanceOf[Boolean]
+  inline def IsVirtual(): Boolean = js.Dynamic.global.applyDynamic("IsVirtual")().asInstanceOf[Boolean]
   
   /**
     * 买单日志
@@ -326,8 +287,7 @@ object global {
     *
     * @param {*[]} arg
     */
-  @scala.inline
-  def Log(arg: js.Any*): Unit = js.Dynamic.global.applyDynamic("Log")(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Log(arg: js.Any*): Unit = js.Dynamic.global.applyDynamic("Log")(arg.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 记录盈利值,这个为总盈利的值,参数类型为浮点数
@@ -335,28 +295,23 @@ object global {
     * @param {number} Profit
     * @param {*[]} args
     */
-  @scala.inline
-  def LogProfit(Profit: Double, args: js.Any*): Unit = (js.Dynamic.global.applyDynamic("LogProfit")(Profit.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def LogProfit(Profit: Double, args: js.Any*): Unit = (js.Dynamic.global.applyDynamic("LogProfit")(Profit.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 清空所有收益日志, 可以带一个数字参数, 指定保留的条数
     *
     * @param {number} reserve
     */
-  @scala.inline
-  def LogProfitReset(): Unit = js.Dynamic.global.applyDynamic("LogProfitReset")().asInstanceOf[Unit]
-  @scala.inline
-  def LogProfitReset(reserve: Double): Unit = js.Dynamic.global.applyDynamic("LogProfitReset")(reserve.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def LogProfitReset(): Unit = js.Dynamic.global.applyDynamic("LogProfitReset")().asInstanceOf[Unit]
+  inline def LogProfitReset(reserve: Double): Unit = js.Dynamic.global.applyDynamic("LogProfitReset")(reserve.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 清空所有日志, 可以带一个数字参数, 指定保留的条数
     *
     * @param {number} reserve
     */
-  @scala.inline
-  def LogReset(): Unit = js.Dynamic.global.applyDynamic("LogReset")().asInstanceOf[Unit]
-  @scala.inline
-  def LogReset(reserve: Double): Unit = js.Dynamic.global.applyDynamic("LogReset")(reserve.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def LogReset(): Unit = js.Dynamic.global.applyDynamic("LogReset")().asInstanceOf[Unit]
+  inline def LogReset(reserve: Double): Unit = js.Dynamic.global.applyDynamic("LogReset")(reserve.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 此信息不保存到日志列表里, 只更新当前机器人的状态信息, 在日志上方显示, 可多次调用, 更新状态
@@ -393,8 +348,7 @@ object global {
     *
     * @param {string} Msg
     */
-  @scala.inline
-  def LogStatus(args: js.Any*): Unit = js.Dynamic.global.applyDynamic("LogStatus")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def LogStatus(args: js.Any*): Unit = js.Dynamic.global.applyDynamic("LogStatus")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 发送邮件函数
@@ -410,8 +364,7 @@ object global {
     * @param {string} body
     * @return {boolean}
     */
-  @scala.inline
-  def Mail(
+  inline def Mail(
     smtpServer: String,
     smtpUsername: String,
     smtpPassword: String,
@@ -534,8 +487,7 @@ object global {
     *
     * @param {string} RegEx
     */
-  @scala.inline
-  def SetErrorFilter(RegEx: String): Unit = js.Dynamic.global.applyDynamic("SetErrorFilter")(RegEx.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def SetErrorFilter(RegEx: String): Unit = js.Dynamic.global.applyDynamic("SetErrorFilter")(RegEx.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * 休眠函数
@@ -544,8 +496,7 @@ object global {
     *
     * @param {number} Millisecond
     */
-  @scala.inline
-  def Sleep(Millisecond: Double): Unit = js.Dynamic.global.applyDynamic("Sleep")(Millisecond.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def Sleep(Millisecond: Double): Unit = js.Dynamic.global.applyDynamic("Sleep")(Millisecond.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object TA {
     
@@ -562,10 +513,8 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @scala.inline
-    def ATR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ATR(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ATR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ATR(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Alligator Indicator
@@ -578,22 +527,14 @@ object global {
       * @param {number} LibsPeriod
       * @return {[number[] , number[] , number[]]}
       */
-    @scala.inline
-    def Alligator(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def Alligator(Records: js.Array[Record], JawPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Unit, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def Alligator(Records: js.Array[Record], JawPeriod: Unit, TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def Alligator(Records: js.Array[Record], JawPeriod: Unit, TeethPeriod: Double, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def Alligator(Records: js.Array[Record], JawPeriod: Unit, TeethPeriod: Unit, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def Alligator(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def Alligator(Records: js.Array[Record], JawPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Double, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def Alligator(Records: js.Array[Record], JawPeriod: Double, TeethPeriod: Unit, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def Alligator(Records: js.Array[Record], JawPeriod: Unit, TeethPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def Alligator(Records: js.Array[Record], JawPeriod: Unit, TeethPeriod: Double, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def Alligator(Records: js.Array[Record], JawPeriod: Unit, TeethPeriod: Unit, LibsPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Alligator")(Records.asInstanceOf[js.Any], JawPeriod.asInstanceOf[js.Any], TeethPeriod.asInstanceOf[js.Any], LibsPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * Chaikin Money Flow
@@ -604,10 +545,8 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @scala.inline
-    def CMF(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CMF")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CMF(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CMF")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CMF(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CMF")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CMF(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CMF")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 指数平均数指标
@@ -617,10 +556,8 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @scala.inline
-    def EMA(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def EMA(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def EMA(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def EMA(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 周期最高价
@@ -634,14 +571,10 @@ object global {
       * @return {number}
       * @constructor
       */
-    @scala.inline
-    def Highest(Records: js.Array[Record]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def Highest(Records: js.Array[Record], Period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def Highest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def Highest(Records: js.Array[Record], Period: Unit, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def Highest(Records: js.Array[Record]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Highest(Records: js.Array[Record], Period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def Highest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def Highest(Records: js.Array[Record], Period: Unit, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Highest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * 随机指标
@@ -654,22 +587,14 @@ object global {
       * @param {number} ThirdPeriod
       * @return {[number[] , number[] , number[]]}
       */
-    @scala.inline
-    def KDJ(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def KDJ(Records: js.Array[Record], FirstPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Unit, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def KDJ(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def KDJ(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def KDJ(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Unit, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def KDJ(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def KDJ(Records: js.Array[Record], FirstPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def KDJ(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Unit, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def KDJ(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def KDJ(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def KDJ(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Unit, ThirdPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("KDJ")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * 周期最低价
@@ -681,14 +606,10 @@ object global {
       * @param {keyof botvs.Record} Property
       * @return {number}
       */
-    @scala.inline
-    def Lowest(Records: js.Array[Record]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def Lowest(Records: js.Array[Record], Period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def Lowest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def Lowest(Records: js.Array[Record], Period: Unit, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def Lowest(Records: js.Array[Record]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def Lowest(Records: js.Array[Record], Period: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def Lowest(Records: js.Array[Record], Period: Double, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def Lowest(Records: js.Array[Record], Period: Unit, Property: Time | Open | High | Low | Close | Volume): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Lowest")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any], Property.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * 移动平均线
@@ -699,10 +620,8 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @scala.inline
-    def MA(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MA(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MA(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MA(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 指数平滑异同平均线
@@ -715,22 +634,14 @@ object global {
       * @param {number} SignalPeriod
       * @return {[number[] , number[] , number[]]}
       */
-    @scala.inline
-    def MACD(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Record], LongPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Record], LongPeriod: Unit, ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Record], LongPeriod: Unit, ShortPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Record], LongPeriod: Unit, ShortPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Record], LongPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Record], LongPeriod: Double, ShortPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Record], LongPeriod: Unit, ShortPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Record], LongPeriod: Unit, ShortPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Record], LongPeriod: Unit, ShortPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], LongPeriod.asInstanceOf[js.Any], ShortPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * 能量潮
@@ -740,8 +651,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {[number[] , number[]]}
       */
-    @scala.inline
-    def OBV(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("OBV")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def OBV(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("OBV")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * 强弱指标
@@ -752,10 +662,8 @@ object global {
       * @param {number} Period
       * @return {number[]}
       */
-    @scala.inline
-    def RSI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def RSI(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def RSI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def RSI(Records: js.Array[Record], Period: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any], Period.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   }
   
   /**
@@ -767,8 +675,7 @@ object global {
     * @param args
     * @return {T}
     */
-  @scala.inline
-  def _C[T](func: js.Function1[/* repeated */ js.Any, T], args: js.Any*): T = (js.Dynamic.global.applyDynamic("_C")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def _C[T](func: js.Function1[/* repeated */ js.Any, T], args: js.Any*): T = (js.Dynamic.global.applyDynamic("_C")(func.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * 返回指定时间戳(ms)字符串, 不传任何参数就返回当前时间,
@@ -778,8 +685,7 @@ object global {
     * @param {string} format
     * @return {string}
     */
-  @scala.inline
-  def _D(timestamp: String, format: String): String = (js.Dynamic.global.applyDynamic("_D")(timestamp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _D(timestamp: String, format: String): String = (js.Dynamic.global.applyDynamic("_D")(timestamp.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * 可保存的全局字典表
@@ -796,8 +702,7 @@ object global {
     * @param {string} K
     * @param {T} V
     */
-  @scala.inline
-  def _G[T](K: String, V: T): Unit = (js.Dynamic.global.applyDynamic("_G")(K.asInstanceOf[js.Any], V.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _G[T](K: String, V: T): Unit = (js.Dynamic.global.applyDynamic("_G")(K.asInstanceOf[js.Any], V.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 格式化一个浮点函数
@@ -806,10 +711,8 @@ object global {
     * @param {number=4} precision
     * @return {string}
     */
-  @scala.inline
-  def _N(num: Double): String = js.Dynamic.global.applyDynamic("_N")(num.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def _N(num: Double, precision: Double): String = (js.Dynamic.global.applyDynamic("_N")(num.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _N(num: Double): String = js.Dynamic.global.applyDynamic("_N")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def _N(num: Double, precision: Double): String = (js.Dynamic.global.applyDynamic("_N")(num.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSGlobal("_")
   @js.native
@@ -843,8 +746,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def ACOS(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ACOS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ACOS(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ACOS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Chaikin A/D Line (线随机指标)
@@ -857,10 +759,8 @@ object global {
       * @param {number[]} Volume
       * @return {number[]}
       */
-    @scala.inline
-    def AD(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AD")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def AD(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AD")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def AD(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AD")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def AD(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AD")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Chaikin A/D Line (线随机指标)
       *
@@ -869,8 +769,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def AD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("AD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def AD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("AD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Chaikin A/D Oscillator (佳庆指标)
@@ -885,8 +784,7 @@ object global {
       * @param {number=10} SlowPeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ADOSC(
+    inline def ADOSC(
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
@@ -904,14 +802,10 @@ object global {
       * @param {number=10} SlowPeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ADOSC(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ADOSC(Records: js.Array[Record], FastPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ADOSC(Records: js.Array[Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ADOSC(Records: js.Array[Record], FastPeriod: Unit, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ADOSC(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ADOSC(Records: js.Array[Record], FastPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ADOSC(Records: js.Array[Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ADOSC(Records: js.Array[Record], FastPeriod: Unit, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADOSC")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Average Directional Movement Index (平均趋向指数)
@@ -924,10 +818,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ADX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ADX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ADX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ADX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Average Directional Movement Index (平均趋向指数)
       *
@@ -937,10 +829,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ADX(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ADX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ADX(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ADX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Average Directional Movement Index Rating (评估指数)
@@ -953,10 +843,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ADXR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ADXR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ADXR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ADXR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Average Directional Movement Index Rating (评估指数)
       *
@@ -966,10 +854,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ADXR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ADXR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ADXR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ADXR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ADXR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Absolute Price Oscillator (绝对价格振荡指数)
@@ -982,22 +868,14 @@ object global {
       * @param {number=0} MAType
       * @return {number[]}
       */
-    @scala.inline
-    def APO(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def APO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def APO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def APO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def APO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def APO(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def APO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def APO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def APO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def APO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def APO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("APO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Aroon (阿隆指标)
@@ -1009,10 +887,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def AROON(High: js.Array[Double], Low: js.Array[Double]): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def AROON(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def AROON(High: js.Array[Double], Low: js.Array[Double]): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def AROON(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     /**
       * Aroon (阿隆指标)
       *
@@ -1022,10 +898,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def AROON(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def AROON(Records: js.Array[Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def AROON(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def AROON(Records: js.Array[Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROON")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Aroon Oscillator (阿隆震荡线)
@@ -1037,10 +911,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def AROONOSC(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def AROONOSC(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def AROONOSC(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def AROONOSC(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Aroon Oscillator (阿隆震荡线)
       *
@@ -1050,10 +922,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def AROONOSC(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def AROONOSC(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def AROONOSC(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def AROONOSC(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AROONOSC")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric ASin (反正弦函数)
@@ -1063,8 +933,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def ASIN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ASIN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ASIN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ASIN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric ATan (反正切函数)
@@ -1074,8 +943,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def ATAN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ATAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ATAN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ATAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Average True Range (平均真实波幅)
@@ -1088,10 +956,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Average True Range (平均真实波幅)
       *
@@ -1101,10 +967,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ATR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ATR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ATR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Average Price (平均价格)
@@ -1117,8 +981,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def AVGPRICE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AVGPRICE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def AVGPRICE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("AVGPRICE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Average Price (平均价格)
       *
@@ -1127,8 +990,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def AVGPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("AVGPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def AVGPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("AVGPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Bollinger Bands (布林带)
@@ -1143,85 +1005,69 @@ object global {
       * @param {number=0} MAType
       * @return {[number[], number[], number[]]}
       */
-    @scala.inline
-    def BBANDS(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double, Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(
+    inline def BBANDS(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double, Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Deviationsup: Double,
       Deviationsdown: Double
     ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(
+    inline def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Deviationsup: Double,
       Deviationsdown: Double,
       MAType: Double
     ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(
+    inline def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Deviationsup: Double,
       Deviationsdown: Unit,
       MAType: Double
     ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double, Deviationsup: Unit, Deviationsdown: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(
+    inline def BBANDS(Records: js.Array[Double | Record], TimePeriod: Double, Deviationsup: Unit, Deviationsdown: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Deviationsup: Unit,
       Deviationsdown: Double,
       MAType: Double
     ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(
+    inline def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Deviationsup: Unit,
       Deviationsdown: Unit,
       MAType: Double
     ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Unit, Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Unit, Deviationsup: Double, Deviationsdown: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(
+    inline def BBANDS(Records: js.Array[Double | Record], TimePeriod: Unit, Deviationsup: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def BBANDS(Records: js.Array[Double | Record], TimePeriod: Unit, Deviationsup: Double, Deviationsdown: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Unit,
       Deviationsup: Double,
       Deviationsdown: Double,
       MAType: Double
     ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(
+    inline def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Unit,
       Deviationsup: Double,
       Deviationsdown: Unit,
       MAType: Double
     ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(Records: js.Array[Double | Record], TimePeriod: Unit, Deviationsup: Unit, Deviationsdown: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(
+    inline def BBANDS(Records: js.Array[Double | Record], TimePeriod: Unit, Deviationsup: Unit, Deviationsdown: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Unit,
       Deviationsup: Unit,
       Deviationsdown: Double,
       MAType: Double
     ): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("BBANDS")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviationsup.asInstanceOf[js.Any], Deviationsdown.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def BBANDS(
+    inline def BBANDS(
       Records: js.Array[Double | Record],
       TimePeriod: Unit,
       Deviationsup: Unit,
@@ -1240,8 +1086,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def BOP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("BOP")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def BOP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("BOP")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Balance Of Power (均势指标)
       *
@@ -1250,8 +1095,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def BOP(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("BOP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def BOP(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("BOP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Commodity Channel Index (顺势指标)
@@ -1264,10 +1108,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def CCI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CCI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CCI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CCI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Commodity Channel Index (顺势指标)
       *
@@ -1277,10 +1119,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def CCI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CCI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CCI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CCI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CCI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Two Crows (K线图--两只乌鸦)
@@ -1293,8 +1133,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDL2CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL2CROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDL2CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL2CROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Two Crows (K线图--两只乌鸦)
       *
@@ -1303,8 +1142,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDL2CROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL2CROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDL2CROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL2CROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Black Crows (K线图--3只黑乌鸦)
@@ -1317,8 +1155,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3BLACKCROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3BLACKCROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDL3BLACKCROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3BLACKCROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Black Crows (K线图--3只黑乌鸦)
       *
@@ -1327,8 +1164,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3BLACKCROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3BLACKCROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDL3BLACKCROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3BLACKCROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Inside Up/Down (K线图:3内上下震荡)
@@ -1341,8 +1177,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3INSIDE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3INSIDE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDL3INSIDE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3INSIDE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Inside Up/Down (K线图:3内上下震荡)
       *
@@ -1351,8 +1186,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3INSIDE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3INSIDE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDL3INSIDE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3INSIDE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three-Line Strike  (K线图:3线震荡)
@@ -1365,8 +1199,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3LINESTRIKE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3LINESTRIKE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDL3LINESTRIKE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3LINESTRIKE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three-Line Strike  (K线图:3线震荡)
       *
@@ -1375,8 +1208,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3LINESTRIKE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3LINESTRIKE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDL3LINESTRIKE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3LINESTRIKE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Outside Up/Down (K线图:3外下震荡)
@@ -1389,8 +1221,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3OUTSIDE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3OUTSIDE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDL3OUTSIDE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3OUTSIDE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Outside Up/Down (K线图:3外下震荡)
       *
@@ -1399,8 +1230,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3OUTSIDE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3OUTSIDE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDL3OUTSIDE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3OUTSIDE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Stars In The South (K线图:南方三星)
@@ -1413,8 +1243,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3STARSINSOUTH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3STARSINSOUTH")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDL3STARSINSOUTH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3STARSINSOUTH")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Stars In The South (K线图:南方三星)
       *
@@ -1423,8 +1252,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3STARSINSOUTH(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3STARSINSOUTH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDL3STARSINSOUTH(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3STARSINSOUTH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Three Advancing White Soldiers (K线图:三白兵)
@@ -1437,8 +1265,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3WHITESOLDIERS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3WHITESOLDIERS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDL3WHITESOLDIERS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDL3WHITESOLDIERS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Three Advancing White Soldiers (K线图:三白兵)
       *
@@ -1447,8 +1274,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDL3WHITESOLDIERS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3WHITESOLDIERS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDL3WHITESOLDIERS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDL3WHITESOLDIERS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Abandoned Baby (K线图:弃婴)
@@ -1462,8 +1288,7 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLABANDONEDBABY(
+    inline def CDLABANDONEDBABY(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -1479,10 +1304,8 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLABANDONEDBABY(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLABANDONEDBABY")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CDLABANDONEDBABY(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLABANDONEDBABY")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLABANDONEDBABY(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLABANDONEDBABY")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLABANDONEDBABY(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLABANDONEDBABY")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Advance Block (K线图:推进)
@@ -1495,8 +1318,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLADVANCEBLOCK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLADVANCEBLOCK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLADVANCEBLOCK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLADVANCEBLOCK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Advance Block (K线图:推进)
       *
@@ -1505,8 +1327,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLADVANCEBLOCK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLADVANCEBLOCK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLADVANCEBLOCK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLADVANCEBLOCK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Belt-hold (K线图:带住)
@@ -1519,8 +1340,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLBELTHOLD(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLBELTHOLD")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLBELTHOLD(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLBELTHOLD")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Belt-hold (K线图:带住)
       *
@@ -1529,8 +1349,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLBELTHOLD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLBELTHOLD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLBELTHOLD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLBELTHOLD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Breakaway (K线图:分离)
@@ -1543,8 +1362,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLBREAKAWAY(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLBREAKAWAY")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLBREAKAWAY(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLBREAKAWAY")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Breakaway (K线图:分离)
       *
@@ -1553,8 +1371,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLBREAKAWAY(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLBREAKAWAY")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLBREAKAWAY(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLBREAKAWAY")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Closing Marubozu (K线图:收盘光头光脚)
@@ -1567,8 +1384,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLCLOSINGMARUBOZU(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLCLOSINGMARUBOZU")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLCLOSINGMARUBOZU(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLCLOSINGMARUBOZU")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Closing Marubozu (K线图:收盘光头光脚)
       *
@@ -1577,8 +1393,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLCLOSINGMARUBOZU(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLCLOSINGMARUBOZU")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLCLOSINGMARUBOZU(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLCLOSINGMARUBOZU")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Concealing Baby Swallow (K线图:藏婴吞没形态)
@@ -1591,8 +1406,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLCONCEALBABYSWALL(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLCONCEALBABYSWALL")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLCONCEALBABYSWALL(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLCONCEALBABYSWALL")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Concealing Baby Swallow (K线图:藏婴吞没形态)
       *
@@ -1601,8 +1415,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLCONCEALBABYSWALL(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLCONCEALBABYSWALL")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLCONCEALBABYSWALL(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLCONCEALBABYSWALL")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Counterattack (K线图:反击)
@@ -1615,8 +1428,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLCOUNTERATTACK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLCOUNTERATTACK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLCOUNTERATTACK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLCOUNTERATTACK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Counterattack (K线图:反击)
       *
@@ -1625,8 +1437,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLCOUNTERATTACK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLCOUNTERATTACK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLCOUNTERATTACK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLCOUNTERATTACK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Dark Cloud Cover (K线图:乌云盖)
@@ -1640,8 +1451,7 @@ object global {
       * @param {number=0.5} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLDARKCLOUDCOVER(
+    inline def CDLDARKCLOUDCOVER(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -1657,10 +1467,8 @@ object global {
       * @param {number=0.5} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLDARKCLOUDCOVER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDARKCLOUDCOVER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CDLDARKCLOUDCOVER(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDARKCLOUDCOVER")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLDARKCLOUDCOVER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDARKCLOUDCOVER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLDARKCLOUDCOVER(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDARKCLOUDCOVER")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Doji (K线图:十字星 )
@@ -1673,8 +1481,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Doji (K线图:十字星 )
       *
@@ -1683,8 +1490,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Doji Star (K线图:十字星)
@@ -1697,8 +1503,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLDOJISTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJISTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLDOJISTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJISTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Doji Star (K线图:十字星)
       *
@@ -1707,8 +1512,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLDOJISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLDOJISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDOJISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Dragonfly Doji (K线图:蜻蜓十字星)
@@ -1721,8 +1525,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLDRAGONFLYDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDRAGONFLYDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLDRAGONFLYDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLDRAGONFLYDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Dragonfly Doji (K线图:蜻蜓十字星)
       *
@@ -1731,8 +1534,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLDRAGONFLYDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDRAGONFLYDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLDRAGONFLYDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLDRAGONFLYDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Engulfing Pattern (K线图:吞没)
@@ -1745,8 +1547,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLENGULFING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLENGULFING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLENGULFING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLENGULFING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Engulfing Pattern (K线图:吞没)
       *
@@ -1755,8 +1556,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLENGULFING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLENGULFING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLENGULFING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLENGULFING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Evening Doji Star (K线图:黄昏十字星)
@@ -1770,8 +1570,7 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLEVENINGDOJISTAR(
+    inline def CDLEVENINGDOJISTAR(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -1787,10 +1586,8 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLEVENINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGDOJISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CDLEVENINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGDOJISTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLEVENINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGDOJISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLEVENINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGDOJISTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Evening Star (K线图:黄昏之星)
@@ -1804,8 +1601,7 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLEVENINGSTAR(
+    inline def CDLEVENINGSTAR(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -1821,10 +1617,8 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLEVENINGSTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGSTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CDLEVENINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGSTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLEVENINGSTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGSTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLEVENINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLEVENINGSTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Up/Down-gap side-by-side white lines (K线图:上/下间隙并排的白色线条)
@@ -1837,8 +1631,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLGAPSIDESIDEWHITE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLGAPSIDESIDEWHITE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLGAPSIDESIDEWHITE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLGAPSIDESIDEWHITE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Up/Down-gap side-by-side white lines (K线图:上/下间隙并排的白色线条)
       *
@@ -1847,8 +1640,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLGAPSIDESIDEWHITE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLGAPSIDESIDEWHITE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLGAPSIDESIDEWHITE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLGAPSIDESIDEWHITE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Gravestone Doji (K线图:墓碑十字线)
@@ -1861,8 +1653,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLGRAVESTONEDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLGRAVESTONEDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLGRAVESTONEDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLGRAVESTONEDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Gravestone Doji (K线图:墓碑十字线)
       *
@@ -1871,8 +1662,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLGRAVESTONEDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLGRAVESTONEDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLGRAVESTONEDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLGRAVESTONEDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hammer (K线图:锤)
@@ -1885,8 +1675,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHAMMER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHAMMER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLHAMMER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHAMMER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Hammer (K线图:锤)
       *
@@ -1895,8 +1684,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHAMMER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHAMMER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLHAMMER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHAMMER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hanging Man (K线图:吊人)
@@ -1909,8 +1697,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHANGINGMAN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHANGINGMAN")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLHANGINGMAN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHANGINGMAN")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Hanging Man (K线图:吊人)
       *
@@ -1919,8 +1706,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHANGINGMAN(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHANGINGMAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLHANGINGMAN(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHANGINGMAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Harami Pattern (K线图:阴阳线)
@@ -1933,8 +1719,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHARAMI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLHARAMI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Harami Pattern (K线图:阴阳线)
       *
@@ -1943,8 +1728,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHARAMI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLHARAMI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Harami Cross Pattern (K线图:交叉阴阳线)
@@ -1957,8 +1741,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHARAMICROSS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMICROSS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLHARAMICROSS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMICROSS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Harami Cross Pattern (K线图:交叉阴阳线)
       *
@@ -1967,8 +1750,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHARAMICROSS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMICROSS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLHARAMICROSS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHARAMICROSS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * High-Wave Candle (K线图:长脚十字线 )
@@ -1981,8 +1763,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHIGHWAVE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIGHWAVE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLHIGHWAVE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIGHWAVE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * High-Wave Candle (K线图:长脚十字线 )
       *
@@ -1991,8 +1772,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHIGHWAVE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIGHWAVE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLHIGHWAVE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIGHWAVE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hikkake Pattern (K线图:陷阱)
@@ -2005,8 +1785,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHIKKAKE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLHIKKAKE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Hikkake Pattern (K线图:陷阱)
       *
@@ -2015,8 +1794,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHIKKAKE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLHIKKAKE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Modified Hikkake Pattern (K线图:改良的陷阱)
@@ -2029,8 +1807,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHIKKAKEMOD(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKEMOD")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLHIKKAKEMOD(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKEMOD")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Modified Hikkake Pattern (K线图:改良的陷阱)
       *
@@ -2039,8 +1816,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHIKKAKEMOD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKEMOD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLHIKKAKEMOD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHIKKAKEMOD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Homing Pigeon (K线图:信鸽)
@@ -2053,8 +1829,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHOMINGPIGEON(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHOMINGPIGEON")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLHOMINGPIGEON(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLHOMINGPIGEON")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Homing Pigeon (K线图:信鸽)
       *
@@ -2063,8 +1838,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLHOMINGPIGEON(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHOMINGPIGEON")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLHOMINGPIGEON(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLHOMINGPIGEON")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Identical Three Crows (K线图:相同的三只乌鸦)
@@ -2077,8 +1851,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLIDENTICAL3CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLIDENTICAL3CROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLIDENTICAL3CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLIDENTICAL3CROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Identical Three Crows (K线图:相同的三只乌鸦)
       *
@@ -2087,8 +1860,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLIDENTICAL3CROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLIDENTICAL3CROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLIDENTICAL3CROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLIDENTICAL3CROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * In-Neck Pattern (K线图:颈纹)
@@ -2101,8 +1873,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLINNECK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLINNECK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLINNECK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLINNECK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * In-Neck Pattern (K线图:颈纹)
       *
@@ -2111,8 +1882,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLINNECK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLINNECK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLINNECK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLINNECK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Inverted Hammer (K线图:倒锤)
@@ -2125,8 +1895,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLINVERTEDHAMMER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLINVERTEDHAMMER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLINVERTEDHAMMER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLINVERTEDHAMMER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Inverted Hammer (K线图:倒锤)
       *
@@ -2135,8 +1904,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLINVERTEDHAMMER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLINVERTEDHAMMER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLINVERTEDHAMMER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLINVERTEDHAMMER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Kicking (K线图:踢)
@@ -2149,8 +1917,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLKICKING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLKICKING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Kicking (K线图:踢)
       *
@@ -2159,8 +1926,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLKICKING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLKICKING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Kicking - bull/bear determined by the longer marubozu (K线图:踢牛/踢熊)
@@ -2173,8 +1939,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLKICKINGBYLENGTH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKINGBYLENGTH")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLKICKINGBYLENGTH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKINGBYLENGTH")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Kicking - bull/bear determined by the longer marubozu (K线图:踢牛/踢熊)
       *
@@ -2183,8 +1948,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLKICKINGBYLENGTH(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKINGBYLENGTH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLKICKINGBYLENGTH(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLKICKINGBYLENGTH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Ladder Bottom (K线图:梯底)
@@ -2197,8 +1961,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLLADDERBOTTOM(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLLADDERBOTTOM")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLLADDERBOTTOM(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLLADDERBOTTOM")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Ladder Bottom (K线图:梯底)
       *
@@ -2207,8 +1970,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLLADDERBOTTOM(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLLADDERBOTTOM")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLLADDERBOTTOM(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLLADDERBOTTOM")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Long Legged Doji (K线图:长腿十字线)
@@ -2221,8 +1983,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLLONGLEGGEDDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLEGGEDDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLLONGLEGGEDDOJI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLEGGEDDOJI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Long Legged Doji (K线图:长腿十字线)
       *
@@ -2231,8 +1992,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLLONGLEGGEDDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLEGGEDDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLLONGLEGGEDDOJI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLEGGEDDOJI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Long Line Candle (K线图:长线)
@@ -2245,8 +2005,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLLONGLINE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLINE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLLONGLINE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLINE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Long Line Candle (K线图:长线)
       *
@@ -2255,8 +2014,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLLONGLINE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLLONGLINE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLLONGLINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Marubozu (K线图:光头光脚 )
@@ -2269,8 +2027,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMARUBOZU(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMARUBOZU")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLMARUBOZU(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMARUBOZU")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Marubozu (K线图:光头光脚 )
       *
@@ -2279,8 +2036,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMARUBOZU(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMARUBOZU")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLMARUBOZU(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMARUBOZU")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Matching Low (K线图:匹配低)
@@ -2293,8 +2049,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMATCHINGLOW(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATCHINGLOW")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLMATCHINGLOW(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATCHINGLOW")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Matching Low (K线图:匹配低)
       *
@@ -2303,8 +2058,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMATCHINGLOW(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATCHINGLOW")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLMATCHINGLOW(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATCHINGLOW")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Mat Hold (K线图:垫住)
@@ -2318,8 +2072,7 @@ object global {
       * @param {number=0.5} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMATHOLD(
+    inline def CDLMATHOLD(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -2335,10 +2088,8 @@ object global {
       * @param {number=0.5} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMATHOLD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATHOLD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CDLMATHOLD(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATHOLD")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLMATHOLD(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATHOLD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLMATHOLD(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMATHOLD")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Morning Doji Star (K线图:早晨十字星)
@@ -2352,8 +2103,7 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMORNINGDOJISTAR(
+    inline def CDLMORNINGDOJISTAR(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -2369,10 +2119,8 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMORNINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGDOJISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CDLMORNINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGDOJISTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLMORNINGDOJISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGDOJISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLMORNINGDOJISTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGDOJISTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Morning Star (K线图:晨星)
@@ -2386,8 +2134,7 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMORNINGSTAR(
+    inline def CDLMORNINGSTAR(
       Open: js.Array[Double],
       High: js.Array[Double],
       Low: js.Array[Double],
@@ -2403,10 +2150,8 @@ object global {
       * @param {number=0.3} Penetration
       * @return {number[]}
       */
-    @scala.inline
-    def CDLMORNINGSTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGSTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CDLMORNINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGSTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLMORNINGSTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGSTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLMORNINGSTAR(Records: js.Array[Record], Penetration: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLMORNINGSTAR")(Records.asInstanceOf[js.Any], Penetration.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * On-Neck Pattern (K线图:颈型)
@@ -2419,8 +2164,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLONNECK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLONNECK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLONNECK(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLONNECK")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * On-Neck Pattern (K线图:颈型)
       *
@@ -2429,8 +2173,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLONNECK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLONNECK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLONNECK(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLONNECK")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Piercing Pattern (K线图:穿孔模式)
@@ -2443,8 +2186,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLPIERCING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLPIERCING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLPIERCING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLPIERCING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Piercing Pattern (K线图:穿孔模式)
       *
@@ -2453,8 +2195,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLPIERCING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLPIERCING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLPIERCING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLPIERCING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Rickshaw Man (K线图:车夫)
@@ -2467,8 +2208,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLRICKSHAWMAN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLRICKSHAWMAN")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLRICKSHAWMAN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLRICKSHAWMAN")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Rickshaw Man (K线图:车夫)
       *
@@ -2477,8 +2217,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLRICKSHAWMAN(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLRICKSHAWMAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLRICKSHAWMAN(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLRICKSHAWMAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Rising/Falling Three Methods (K线图:上升/下降三法)
@@ -2491,8 +2230,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLRISEFALL3METHODS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLRISEFALL3METHODS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLRISEFALL3METHODS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLRISEFALL3METHODS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Rising/Falling Three Methods (K线图:上升/下降三法)
       *
@@ -2501,8 +2239,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLRISEFALL3METHODS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLRISEFALL3METHODS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLRISEFALL3METHODS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLRISEFALL3METHODS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Separating Lines (K线图:分割线)
@@ -2515,8 +2252,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSEPARATINGLINES(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSEPARATINGLINES")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLSEPARATINGLINES(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSEPARATINGLINES")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Separating Lines (K线图:分割线)
       *
@@ -2525,8 +2261,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSEPARATINGLINES(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSEPARATINGLINES")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLSEPARATINGLINES(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSEPARATINGLINES")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Shooting Star (K线图:流星)
@@ -2539,8 +2274,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSHOOTINGSTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHOOTINGSTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLSHOOTINGSTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHOOTINGSTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Shooting Star (K线图:流星)
       *
@@ -2549,8 +2283,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSHOOTINGSTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHOOTINGSTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLSHOOTINGSTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHOOTINGSTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Short Line Candle (K线图:短线)
@@ -2563,8 +2296,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSHORTLINE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHORTLINE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLSHORTLINE(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHORTLINE")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Short Line Candle (K线图:短线)
       *
@@ -2573,8 +2305,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSHORTLINE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHORTLINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLSHORTLINE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSHORTLINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Spinning Top (K线图:陀螺)
@@ -2587,8 +2318,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSPINNINGTOP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSPINNINGTOP")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLSPINNINGTOP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSPINNINGTOP")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Spinning Top (K线图:陀螺)
       *
@@ -2597,8 +2327,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSPINNINGTOP(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSPINNINGTOP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLSPINNINGTOP(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSPINNINGTOP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Stalled Pattern (K线图:停滞模式)
@@ -2611,8 +2340,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSTALLEDPATTERN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTALLEDPATTERN")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLSTALLEDPATTERN(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTALLEDPATTERN")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Stalled Pattern (K线图:停滞模式)
       *
@@ -2621,8 +2349,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSTALLEDPATTERN(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTALLEDPATTERN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLSTALLEDPATTERN(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTALLEDPATTERN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Stick Sandwich (K线图:棍子三明治)
@@ -2635,8 +2362,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSTICKSANDWICH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTICKSANDWICH")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLSTICKSANDWICH(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTICKSANDWICH")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Stick Sandwich (K线图:棍子三明治)
       *
@@ -2645,8 +2371,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLSTICKSANDWICH(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTICKSANDWICH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLSTICKSANDWICH(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLSTICKSANDWICH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Takuri (Dragonfly Doji with very long lower shadow) (K线图:托里)
@@ -2659,8 +2384,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLTAKURI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTAKURI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLTAKURI(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTAKURI")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Takuri (Dragonfly Doji with very long lower shadow) (K线图:托里)
       *
@@ -2669,8 +2393,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLTAKURI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTAKURI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLTAKURI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTAKURI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Tasuki Gap (K线图:翼隙)
@@ -2683,8 +2406,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLTASUKIGAP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTASUKIGAP")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLTASUKIGAP(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTASUKIGAP")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Tasuki Gap (K线图:翼隙)
       *
@@ -2693,8 +2415,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLTASUKIGAP(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTASUKIGAP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLTASUKIGAP(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTASUKIGAP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Thrusting Pattern (K线图:推模式)
@@ -2707,8 +2428,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLTHRUSTING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTHRUSTING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLTHRUSTING(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTHRUSTING")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Thrusting Pattern (K线图:推模式)
       *
@@ -2717,8 +2437,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLTHRUSTING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTHRUSTING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLTHRUSTING(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTHRUSTING")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Tristar Pattern (K线图:三星模式)
@@ -2731,8 +2450,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLTRISTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTRISTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLTRISTAR(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLTRISTAR")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Tristar Pattern (K线图:三星模式)
       *
@@ -2741,8 +2459,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLTRISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTRISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLTRISTAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLTRISTAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Unique 3 River (K线图:独特的3河)
@@ -2755,8 +2472,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLUNIQUE3RIVER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLUNIQUE3RIVER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLUNIQUE3RIVER(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLUNIQUE3RIVER")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Unique 3 River (K线图:独特的3河)
       *
@@ -2765,8 +2481,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLUNIQUE3RIVER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLUNIQUE3RIVER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLUNIQUE3RIVER(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLUNIQUE3RIVER")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Upside Gap Two Crows (K线图:双飞乌鸦)
@@ -2779,8 +2494,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLUPSIDEGAP2CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLUPSIDEGAP2CROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLUPSIDEGAP2CROWS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLUPSIDEGAP2CROWS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Upside Gap Two Crows (K线图:双飞乌鸦)
       *
@@ -2789,8 +2503,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLUPSIDEGAP2CROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLUPSIDEGAP2CROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLUPSIDEGAP2CROWS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLUPSIDEGAP2CROWS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Upside/Downside Gap Three Methods (K线图:上行/下行缺口三方法)
@@ -2803,8 +2516,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def CDLXSIDEGAP3METHODS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLXSIDEGAP3METHODS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CDLXSIDEGAP3METHODS(Open: js.Array[Double], High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CDLXSIDEGAP3METHODS")(Open.asInstanceOf[js.Any], High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Upside/Downside Gap Three Methods (K线图:上行/下行缺口三方法)
       *
@@ -2813,8 +2525,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CDLXSIDEGAP3METHODS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLXSIDEGAP3METHODS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CDLXSIDEGAP3METHODS(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CDLXSIDEGAP3METHODS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Ceil (取整函数)
@@ -2824,8 +2535,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def CEIL(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CEIL")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CEIL(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CEIL")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Chande Momentum Oscillator (钱德动量摆动指标)
@@ -2836,10 +2546,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def CMO(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CMO")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def CMO(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CMO")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def CMO(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("CMO")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def CMO(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("CMO")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Cos (余弦函数)
@@ -2849,8 +2557,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def COS(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("COS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def COS(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("COS")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Cosh (双曲余弦值)
@@ -2860,8 +2567,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def COSH(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("COSH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def COSH(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("COSH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Double Exponential Moving Average (双指数移动平均线)
@@ -2872,10 +2578,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def DEMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("DEMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def DEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DEMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def DEMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("DEMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def DEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DEMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Directional Movement Index (动向指数)
@@ -2888,10 +2592,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def DX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def DX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def DX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def DX(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DX")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Directional Movement Index (动向指数)
       *
@@ -2901,10 +2603,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def DX(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("DX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def DX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def DX(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("DX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def DX(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("DX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Exponential Moving Average (指数移动平均线)
@@ -2915,10 +2615,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def EMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def EMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def EMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def EMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("EMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Arithmetic Exp (指数函数)
@@ -2928,8 +2626,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def EXP(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("EXP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def EXP(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("EXP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Floor (向下取整)
@@ -2939,8 +2636,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def FLOOR(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("FLOOR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def FLOOR(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("FLOOR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hilbert Transform - Dominant Cycle Period (希尔伯特变换, 主周期)
@@ -2950,8 +2646,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def HT_DCPERIOD(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_DCPERIOD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def HT_DCPERIOD(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_DCPERIOD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hilbert Transform - Dominant Cycle Phase (希尔伯特变换,主阶段)
@@ -2961,8 +2656,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def HT_DCPHASE(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_DCPHASE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def HT_DCPHASE(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_DCPHASE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hilbert Transform - Phasor Components (希尔伯特变换,相成分)
@@ -2972,8 +2666,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def HT_PHASOR(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_PHASOR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def HT_PHASOR(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_PHASOR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Hilbert Transform - SineWave (希尔伯特变换,正弦波)
@@ -2983,8 +2676,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def HT_SINE(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_SINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def HT_SINE(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_SINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Hilbert Transform - Instantaneous Trendline (希尔伯特变换,瞬时趋势)
@@ -2994,8 +2686,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def HT_TRENDLINE(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_TRENDLINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def HT_TRENDLINE(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_TRENDLINE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Hilbert Transform - Trend vs Cycle Mode (希尔伯特变换-趋势与周期模式)
@@ -3005,8 +2696,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def HT_TRENDMODE(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_TRENDMODE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def HT_TRENDMODE(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("HT_TRENDMODE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Kaufman Adaptive Moving Average (适应性移动平均线)
@@ -3017,10 +2707,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def KAMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("KAMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def KAMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("KAMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def KAMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("KAMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def KAMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("KAMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Linear Regression (线性回归)
@@ -3031,10 +2719,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def LINEARREG(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def LINEARREG(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def LINEARREG(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def LINEARREG(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Linear Regression Angle (线性回归的角度)
@@ -3045,8 +2731,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def LINEARREG_ANGLE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG_ANGLE")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def LINEARREG_ANGLE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG_ANGLE")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Linear Regression Intercept (线性回归截距)
@@ -3057,8 +2742,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def LINEARREG_INTERCEPT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG_INTERCEPT")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def LINEARREG_INTERCEPT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG_INTERCEPT")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Linear Regression Slope (线性回归斜率)
@@ -3069,8 +2753,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def LINEARREG_SLOPE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG_SLOPE")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def LINEARREG_SLOPE(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("LINEARREG_SLOPE")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Log Natural (自然对数)
@@ -3080,8 +2763,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def LN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("LN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def LN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("LN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Log10 (对数函数)
@@ -3091,8 +2773,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def LOG10(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG10")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def LOG10(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("LOG10")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Moving average (移动平均线)
@@ -3104,14 +2785,10 @@ object global {
       * @param {number=0} MAType
       * @return {number[]}
       */
-    @scala.inline
-    def MA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MA(Records: js.Array[Double | Record], TimePeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MA(Records: js.Array[Double | Record], TimePeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MA(Records: js.Array[Double | Record], TimePeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MA(Records: js.Array[Double | Record], TimePeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Moving Average Convergence/Divergence (指数平滑移动平均线)
@@ -3125,22 +2802,14 @@ object global {
       * @param {number=9} SignalPeriod
       * @return {[number[], number[], number[]]}
       */
-    @scala.inline
-    def MACD(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACD(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Double | Record], FastPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACD(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Unit, SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACD")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * MACD with controllable MA type (MA型可控 MACD)
@@ -3158,8 +2827,7 @@ object global {
       * @param {number=0} SignalMA
       * @return {[number[], number[], number[]]}
       */
-    @scala.inline
-    def MACDEXT(
+    inline def MACDEXT(
       Records: js.Array[Double | Record],
       FastPeriod: js.UndefOr[Double],
       FastMA: js.UndefOr[Double],
@@ -3178,10 +2846,8 @@ object global {
       * @param {number=9} SignalPeriod
       * @return {[number[], number[], number[]]}
       */
-    @scala.inline
-    def MACDFIX(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MACDFIX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MACDFIX(Records: js.Array[Double | Record], SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACDFIX")(Records.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACDFIX(Records: js.Array[Double | Record]): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MACDFIX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
+    inline def MACDFIX(Records: js.Array[Double | Record], SignalPeriod: Double): js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MACDFIX")(Records.asInstanceOf[js.Any], SignalPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], js.Array[Double], js.Array[Double]]]
     
     /**
       * MESA Adaptive Moving Average (MESA 移动平均线)
@@ -3193,14 +2859,10 @@ object global {
       * @param {number=0.05} SlowLimit
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def MAMA(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MAMA(Records: js.Array[Double | Record], FastLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any], FastLimit.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MAMA(Records: js.Array[Double | Record], FastLimit: Double, SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any], FastLimit.asInstanceOf[js.Any], SlowLimit.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MAMA(Records: js.Array[Double | Record], FastLimit: Unit, SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any], FastLimit.asInstanceOf[js.Any], SlowLimit.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def MAMA(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def MAMA(Records: js.Array[Double | Record], FastLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any], FastLimit.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def MAMA(Records: js.Array[Double | Record], FastLimit: Double, SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any], FastLimit.asInstanceOf[js.Any], SlowLimit.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def MAMA(Records: js.Array[Double | Record], FastLimit: Unit, SlowLimit: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAMA")(Records.asInstanceOf[js.Any], FastLimit.asInstanceOf[js.Any], SlowLimit.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Highest value over a specified period (最大值)
@@ -3211,10 +2873,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MAX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MAX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MAX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MAX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Index of highest value over a specified period (最大值索引)
@@ -3225,10 +2885,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MAXINDEX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MAXINDEX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAXINDEX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MAXINDEX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MAXINDEX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MAXINDEX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Median Price (中位数价格)
@@ -3239,8 +2897,7 @@ object global {
       * @param {number[]} Low
       * @return {number[]}
       */
-    @scala.inline
-    def MEDPRICE(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MEDPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MEDPRICE(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MEDPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Median Price (中位数价格)
       *
@@ -3249,8 +2906,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def MEDPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MEDPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MEDPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MEDPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Money Flow Index (货币流量指数)
@@ -3264,10 +2920,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MFI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MFI(
+    inline def MFI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MFI(
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
@@ -3283,10 +2937,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MFI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MFI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MFI(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MFI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MFI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * MidPoint over period (中点)
@@ -3297,10 +2949,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MIDPOINT(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MIDPOINT")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MIDPOINT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPOINT")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MIDPOINT(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MIDPOINT")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MIDPOINT(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPOINT")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Midpoint Price over period (中点价格)
@@ -3312,10 +2962,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MIDPRICE(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MIDPRICE(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MIDPRICE(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MIDPRICE(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Midpoint Price over period (中点价格)
       *
@@ -3325,10 +2973,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MIDPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MIDPRICE(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MIDPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MIDPRICE(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIDPRICE")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Lowest value over a specified period (最小值)
@@ -3339,10 +2985,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MIN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MIN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MIN(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIN")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MIN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MIN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MIN(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MIN")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Index of lowest value over a specified period (最小值索引)
@@ -3353,10 +2997,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MININDEX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MININDEX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MININDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MININDEX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MININDEX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MININDEX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MININDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MININDEX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Lowest and highest values over a specified period (最小最大值)
@@ -3367,10 +3009,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def MINMAX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MINMAX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MINMAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINMAX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def MINMAX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MINMAX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def MINMAX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINMAX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Indexes of lowest and highest values over a specified period (最小最大值索引)
@@ -3381,10 +3021,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def MINMAXINDEX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MINMAXINDEX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def MINMAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINMAXINDEX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def MINMAXINDEX(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("MINMAXINDEX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def MINMAXINDEX(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINMAXINDEX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Minus Directional Indicator (负向指标)
@@ -3397,8 +3035,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MINUS_DI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MINUS_DI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Minus Directional Indicator (负向指标)
       *
@@ -3408,8 +3045,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MINUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MINUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Minus Directional Movement (负向运动)
@@ -3421,8 +3057,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MINUS_DM(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DM")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MINUS_DM(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DM")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Minus Directional Movement (负向运动)
       *
@@ -3432,8 +3067,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MINUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MINUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MINUS_DM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Momentum (动量)
@@ -3444,10 +3078,8 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def MOM(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MOM")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def MOM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MOM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def MOM(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("MOM")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def MOM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("MOM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Normalized Average True Range (归一化平均值范围)
@@ -3460,10 +3092,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def NATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def NATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def NATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def NATR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Normalized Average True Range (归一化平均值范围)
       *
@@ -3473,13 +3103,10 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def NATR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def NATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def NATR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def NATR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("NATR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @scala.inline
-    def OBV(Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("OBV")(Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def OBV(Close: js.Array[Double], Volume: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("OBV")(Close.asInstanceOf[js.Any], Volume.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * On Balance Volume (能量潮)
       *
@@ -3497,8 +3124,7 @@ object global {
       * @param {number[]} Volume
       * @return {number[]}
       */
-    @scala.inline
-    def OBV(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("OBV")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def OBV(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("OBV")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Plus Directional Indicator (更向指示器)
@@ -3511,8 +3137,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def PLUS_DI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PLUS_DI(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DI")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Plus Directional Indicator (更向指示器)
       *
@@ -3522,8 +3147,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def PLUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PLUS_DI(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Plus Directional Movement (定向运动)
@@ -3535,8 +3159,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def PLUS_DM(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DM")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PLUS_DM(High: js.Array[Double], Low: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DM")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Plus Directional Movement (定向运动)
       *
@@ -3546,8 +3169,7 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def PLUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PLUS_DM(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PLUS_DM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Percentage Price Oscillator (价格振荡百分比)
@@ -3560,22 +3182,14 @@ object global {
       * @param {number=0} MAType
       * @return {number[]}
       */
-    @scala.inline
-    def PPO(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def PPO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PPO(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def PPO(Records: js.Array[Double | Record], FastPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PPO(Records: js.Array[Double | Record], FastPeriod: Double, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PPO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PPO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Double, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def PPO(Records: js.Array[Double | Record], FastPeriod: Unit, SlowPeriod: Unit, MAType: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("PPO")(Records.asInstanceOf[js.Any], FastPeriod.asInstanceOf[js.Any], SlowPeriod.asInstanceOf[js.Any], MAType.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Rate of change : ((price/prevPrice)-1)*100 (变动率指标)
@@ -3586,10 +3200,8 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ROC(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ROC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ROC(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROC")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ROC(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ROC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ROC(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROC")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Rate of change Percentage: (price-prevPrice)/prevPrice (价格变化率)
@@ -3600,10 +3212,8 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ROCP(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ROCP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ROCP(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROCP")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ROCP(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ROCP")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ROCP(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROCP")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Rate of change ratio: (price/prevPrice) (价格变化率)
@@ -3614,10 +3224,8 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ROCR(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ROCR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ROCR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROCR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ROCR(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ROCR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ROCR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROCR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Rate of change ratio 100 scale: (price/prevPrice)*100 (价格变化率)
@@ -3628,8 +3236,7 @@ object global {
       * @param {number=10} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ROCR100(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROCR100")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ROCR100(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ROCR100")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Relative Strength Index (相对强弱指标)
@@ -3640,10 +3247,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def RSI(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def RSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def RSI(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def RSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("RSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Parabolic SAR (抛物线转向)
@@ -3656,14 +3261,10 @@ object global {
       * @param {number=0.2} AFMaximum
       * @return {number[]}
       */
-    @scala.inline
-    def SAR(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Unit, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def SAR(High: js.Array[Double], Low: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def SAR(High: js.Array[Double], Low: js.Array[Double], AccelerationFactor: Unit, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Parabolic SAR (抛物线转向)
       *
@@ -3674,14 +3275,10 @@ object global {
       * @param {number=0.2} AFMaximum
       * @return {number[]}
       */
-    @scala.inline
-    def SAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def SAR(Records: js.Array[Record], AccelerationFactor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def SAR(Records: js.Array[Record], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def SAR(Records: js.Array[Record], AccelerationFactor: Unit, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def SAR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def SAR(Records: js.Array[Record], AccelerationFactor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def SAR(Records: js.Array[Record], AccelerationFactor: Double, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def SAR(Records: js.Array[Record], AccelerationFactor: Unit, AFMaximum: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SAR")(Records.asInstanceOf[js.Any], AccelerationFactor.asInstanceOf[js.Any], AFMaximum.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Parabolic SAR - Extended (增强型抛物线转向)
@@ -3702,8 +3299,7 @@ object global {
       * @param {number=0.2} AFMaxShort
       * @return {number[]}
       */
-    @scala.inline
-    def SAREXT(
+    inline def SAREXT(
       High: js.Array[Double],
       Low: js.Array[Double],
       StartValue: Double,
@@ -3733,8 +3329,7 @@ object global {
       * @param {number=0.2} AFMaxShort
       * @return {number[]}
       */
-    @scala.inline
-    def SAREXT(
+    inline def SAREXT(
       Records: js.Array[Record],
       StartValue: js.UndefOr[Double],
       OffsetonReverse: js.UndefOr[Double],
@@ -3754,8 +3349,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def SIN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SIN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def SIN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SIN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Sinh (双曲正弦函数)
@@ -3765,8 +3359,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def SINH(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SINH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def SINH(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SINH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Simple Moving Average (简单移动平均)
@@ -3777,10 +3370,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def SMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def SMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def SMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def SMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Square Root (平方根)
@@ -3790,8 +3381,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def SQRT(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SQRT")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def SQRT(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SQRT")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Standard Deviation (标准偏差)
@@ -3803,14 +3393,10 @@ object global {
       * @param {number=1} Deviations
       * @return {number[]}
       */
-    @scala.inline
-    def STDDEV(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def STDDEV(Records: js.Array[Double | Record], TimePeriod: Unit, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def STDDEV(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def STDDEV(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def STDDEV(Records: js.Array[Double | Record], TimePeriod: Unit, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("STDDEV")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Stochastic (STOCH指标)
@@ -3829,8 +3415,7 @@ object global {
       * @param {number=0} Slow_DMA
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
@@ -3855,24 +3440,18 @@ object global {
       * @param {number=0} Slow_DMA
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def STOCH(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCH(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Double, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Double,
       Slow_KMA: Double,
       Slow_DPeriod: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Double,
@@ -3880,8 +3459,7 @@ object global {
       Slow_DPeriod: Double,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Double,
@@ -3889,16 +3467,14 @@ object global {
       Slow_DPeriod: Unit,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Double,
       Slow_KMA: Unit,
       Slow_DPeriod: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Double,
@@ -3906,8 +3482,7 @@ object global {
       Slow_DPeriod: Double,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Double,
@@ -3915,18 +3490,15 @@ object global {
       Slow_DPeriod: Unit,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Unit, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(Records: js.Array[Record], Fast_KPeriod: Double, Slow_KPeriod: Unit, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Unit,
       Slow_KMA: Double,
       Slow_DPeriod: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Unit,
@@ -3934,8 +3506,7 @@ object global {
       Slow_DPeriod: Double,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Unit,
@@ -3943,16 +3514,14 @@ object global {
       Slow_DPeriod: Unit,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Unit,
       Slow_KMA: Unit,
       Slow_DPeriod: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Unit,
@@ -3960,8 +3529,7 @@ object global {
       Slow_DPeriod: Double,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Double,
       Slow_KPeriod: Unit,
@@ -3969,20 +3537,16 @@ object global {
       Slow_DPeriod: Unit,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Unit, Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Unit, Slow_KPeriod: Double, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(Records: js.Array[Record], Fast_KPeriod: Unit, Slow_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCH(Records: js.Array[Record], Fast_KPeriod: Unit, Slow_KPeriod: Double, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Double,
       Slow_KMA: Double,
       Slow_DPeriod: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Double,
@@ -3990,8 +3554,7 @@ object global {
       Slow_DPeriod: Double,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Double,
@@ -3999,16 +3562,14 @@ object global {
       Slow_DPeriod: Unit,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Double,
       Slow_KMA: Unit,
       Slow_DPeriod: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Double,
@@ -4016,8 +3577,7 @@ object global {
       Slow_DPeriod: Double,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Double,
@@ -4025,18 +3585,15 @@ object global {
       Slow_DPeriod: Unit,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(Records: js.Array[Record], Fast_KPeriod: Unit, Slow_KPeriod: Unit, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(Records: js.Array[Record], Fast_KPeriod: Unit, Slow_KPeriod: Unit, Slow_KMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Unit,
       Slow_KMA: Double,
       Slow_DPeriod: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Unit,
@@ -4044,8 +3601,7 @@ object global {
       Slow_DPeriod: Double,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Unit,
@@ -4053,16 +3609,14 @@ object global {
       Slow_DPeriod: Unit,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Unit,
       Slow_KMA: Unit,
       Slow_DPeriod: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Unit,
@@ -4070,8 +3624,7 @@ object global {
       Slow_DPeriod: Double,
       Slow_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCH")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Slow_KPeriod.asInstanceOf[js.Any], Slow_KMA.asInstanceOf[js.Any], Slow_DPeriod.asInstanceOf[js.Any], Slow_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCH(
+    inline def STOCH(
       Records: js.Array[Record],
       Fast_KPeriod: Unit,
       Slow_KPeriod: Unit,
@@ -4094,8 +3647,7 @@ object global {
       * @param {number=0} Fast_DMA
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def STOCHF(
+    inline def STOCHF(
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
@@ -4115,22 +3667,14 @@ object global {
       * @param {number=0} Fast_DMA
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def STOCHF(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Unit, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Unit, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Unit, Fast_DPeriod: Double, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHF(Records: js.Array[Record], Fast_KPeriod: Unit, Fast_DPeriod: Unit, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHF(Records: js.Array[Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Double, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHF(Records: js.Array[Record], Fast_KPeriod: Double, Fast_DPeriod: Unit, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHF(Records: js.Array[Record], Fast_KPeriod: Unit, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHF(Records: js.Array[Record], Fast_KPeriod: Unit, Fast_DPeriod: Double, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHF(Records: js.Array[Record], Fast_KPeriod: Unit, Fast_DPeriod: Unit, Fast_DMA: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHF")(Records.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
     
     /**
       * Stochastic Relative Strength Index (随机强弱指数)
@@ -4145,80 +3689,64 @@ object global {
       * @param {number=0} Fast_DMA
       * @return {[number[], number[]]}
       */
-    @scala.inline
-    def STOCHRSI(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(
+    inline def STOCHRSI(Records: js.Array[Double | Record]): js.Tuple2[js.Array[Double], js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHRSI(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Fast_KPeriod: Double,
       Fast_DPeriod: Double,
       Fast_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(
+    inline def STOCHRSI(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Fast_KPeriod: Double,
       Fast_DPeriod: Unit,
       Fast_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Unit, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(
+    inline def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Double, Fast_KPeriod: Unit, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHRSI(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Fast_KPeriod: Unit,
       Fast_DPeriod: Double,
       Fast_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(
+    inline def STOCHRSI(
       Records: js.Array[Double | Record],
       TimePeriod: Double,
       Fast_KPeriod: Unit,
       Fast_DPeriod: Unit,
       Fast_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Unit, Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Unit, Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(
+    inline def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Unit, Fast_KPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Unit, Fast_KPeriod: Double, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHRSI(
       Records: js.Array[Double | Record],
       TimePeriod: Unit,
       Fast_KPeriod: Double,
       Fast_DPeriod: Double,
       Fast_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(
+    inline def STOCHRSI(
       Records: js.Array[Double | Record],
       TimePeriod: Unit,
       Fast_KPeriod: Double,
       Fast_DPeriod: Unit,
       Fast_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Unit, Fast_KPeriod: Unit, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(
+    inline def STOCHRSI(Records: js.Array[Double | Record], TimePeriod: Unit, Fast_KPeriod: Unit, Fast_DPeriod: Double): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
+    inline def STOCHRSI(
       Records: js.Array[Double | Record],
       TimePeriod: Unit,
       Fast_KPeriod: Unit,
       Fast_DPeriod: Double,
       Fast_DMA: Double
     ): js.Tuple2[js.Array[Double], js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("STOCHRSI")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Fast_KPeriod.asInstanceOf[js.Any], Fast_DPeriod.asInstanceOf[js.Any], Fast_DMA.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Double], js.Array[Double]]]
-    @scala.inline
-    def STOCHRSI(
+    inline def STOCHRSI(
       Records: js.Array[Double | Record],
       TimePeriod: Unit,
       Fast_KPeriod: Unit,
@@ -4235,10 +3763,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def SUM(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SUM")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def SUM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SUM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def SUM(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("SUM")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def SUM(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("SUM")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Triple Exponential Moving Average (T3) (三指数移动平均)
@@ -4250,8 +3776,7 @@ object global {
       * @param {number=0.7} VolumeFactor
       * @return {number[]}
       */
-    @scala.inline
-    def T3(Records: js.Array[Double | Record], TimePeriod: Double, VolumeFactor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("T3")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], VolumeFactor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def T3(Records: js.Array[Double | Record], TimePeriod: Double, VolumeFactor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("T3")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], VolumeFactor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Tan (正切)
@@ -4261,8 +3786,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def TAN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def TAN(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TAN")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Vector Trigonometric Tanh (双曲正切函数)
@@ -4272,8 +3796,7 @@ object global {
       * @param {botvs.Record[]|number[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def TANH(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TANH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def TANH(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TANH")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Triple Exponential Moving Average (三指数移动平均)
@@ -4284,10 +3807,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def TEMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TEMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def TEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TEMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def TEMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TEMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def TEMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TEMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * True Range (真实范围)
@@ -4299,8 +3820,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def TRANGE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TRANGE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def TRANGE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TRANGE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * True Range (真实范围)
       *
@@ -4309,8 +3829,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def TRANGE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TRANGE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def TRANGE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TRANGE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Triangular Moving Average (三指数移动平均)
@@ -4321,10 +3840,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def TRIMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TRIMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def TRIMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TRIMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def TRIMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TRIMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def TRIMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TRIMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 1-day Rate-Of-Change (ROC) of a Triple Smooth EMA (三重指数平滑平均线)
@@ -4335,10 +3852,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def TRIX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TRIX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def TRIX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TRIX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def TRIX(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TRIX")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def TRIX(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TRIX")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Time Series Forecast (时间序列预测)
@@ -4349,10 +3864,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def TSF(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TSF")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def TSF(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TSF")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def TSF(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TSF")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def TSF(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TSF")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Typical Price (典型价格)
@@ -4364,8 +3877,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def TYPPRICE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TYPPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def TYPPRICE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("TYPPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Typical Price (典型价格)
       *
@@ -4374,8 +3886,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def TYPPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TYPPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def TYPPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("TYPPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Ultimate Oscillator (极限振子)
@@ -4390,8 +3901,7 @@ object global {
       * @param {number=28} ThirdPeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ULTOSC(
+    inline def ULTOSC(
       High: js.Array[Double],
       Low: js.Array[Double],
       Close: js.Array[Double],
@@ -4410,22 +3920,14 @@ object global {
       * @param {number=28} ThirdPeriod
       * @return {number[]}
       */
-    @scala.inline
-    def ULTOSC(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Unit, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def ULTOSC(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Unit, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ULTOSC(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def ULTOSC(Records: js.Array[Record], FirstPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Double, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ULTOSC(Records: js.Array[Record], FirstPeriod: Double, SecondPeriod: Unit, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ULTOSC(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ULTOSC(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Double, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def ULTOSC(Records: js.Array[Record], FirstPeriod: Unit, SecondPeriod: Unit, ThirdPeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ULTOSC")(Records.asInstanceOf[js.Any], FirstPeriod.asInstanceOf[js.Any], SecondPeriod.asInstanceOf[js.Any], ThirdPeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Variance (变量定义)
@@ -4437,14 +3939,10 @@ object global {
       * @param {number=1} Deviations
       * @return {number[]}
       */
-    @scala.inline
-    def VAR(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def VAR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def VAR(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def VAR(Records: js.Array[Double | Record], TimePeriod: Unit, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def VAR(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def VAR(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def VAR(Records: js.Array[Double | Record], TimePeriod: Double, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def VAR(Records: js.Array[Double | Record], TimePeriod: Unit, Deviations: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("VAR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any], Deviations.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Weighted Close Price (加权收盘价)
@@ -4456,8 +3954,7 @@ object global {
       * @param {number[]} Close
       * @return {number[]}
       */
-    @scala.inline
-    def WCLPRICE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WCLPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def WCLPRICE(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WCLPRICE")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Weighted Close Price (加权收盘价)
       *
@@ -4466,8 +3963,7 @@ object global {
       * @param {botvs.Record[]} Records
       * @return {number[]}
       */
-    @scala.inline
-    def WCLPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("WCLPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def WCLPRICE(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("WCLPRICE")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       * Williams' %R (威廉指标)
@@ -4480,10 +3976,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def WILLR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def WILLR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def WILLR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def WILLR(High: js.Array[Double], Low: js.Array[Double], Close: js.Array[Double], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(High.asInstanceOf[js.Any], Low.asInstanceOf[js.Any], Close.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       * Williams' %R (威廉指标)
       *
@@ -4493,10 +3987,8 @@ object global {
       * @param {number=14} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def WILLR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def WILLR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def WILLR(Records: js.Array[Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def WILLR(Records: js.Array[Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WILLR")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * Weighted Moving Average (加权移动平均)
@@ -4507,10 +3999,8 @@ object global {
       * @param {number=30} TimePeriod
       * @return {number[]}
       */
-    @scala.inline
-    def WMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("WMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-    @scala.inline
-    def WMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    inline def WMA(Records: js.Array[Double | Record]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("WMA")(Records.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+    inline def WMA(Records: js.Array[Double | Record], TimePeriod: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("WMA")(Records.asInstanceOf[js.Any], TimePeriod.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
     /**
       * 查询指标调用格式
@@ -4520,8 +4010,7 @@ object global {
       * @param {string} Func
       * @return {string}
       */
-    @scala.inline
-    def help(Func: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("help")(Func.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def help(Func: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("help")(Func.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object botvs {
@@ -4555,26 +4044,20 @@ object global {
     }
     object Account {
       
-      @scala.inline
-      def apply(Balance: Double, FrozenBalance: Double, FrozenStocks: Double, Stocks: Double): Account = {
+      inline def apply(Balance: Double, FrozenBalance: Double, FrozenStocks: Double, Stocks: Double): Account = {
         val __obj = js.Dynamic.literal(Balance = Balance.asInstanceOf[js.Any], FrozenBalance = FrozenBalance.asInstanceOf[js.Any], FrozenStocks = FrozenStocks.asInstanceOf[js.Any], Stocks = Stocks.asInstanceOf[js.Any])
         __obj.asInstanceOf[Account]
       }
       
-      @scala.inline
-      implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+      extension [Self <: Account](x: Self) {
         
-        @scala.inline
-        def setBalance(value: Double): Self = StObject.set(x, "Balance", value.asInstanceOf[js.Any])
+        inline def setBalance(value: Double): Self = StObject.set(x, "Balance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFrozenBalance(value: Double): Self = StObject.set(x, "FrozenBalance", value.asInstanceOf[js.Any])
+        inline def setFrozenBalance(value: Double): Self = StObject.set(x, "FrozenBalance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFrozenStocks(value: Double): Self = StObject.set(x, "FrozenStocks", value.asInstanceOf[js.Any])
+        inline def setFrozenStocks(value: Double): Self = StObject.set(x, "FrozenStocks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStocks(value: Double): Self = StObject.set(x, "Stocks", value.asInstanceOf[js.Any])
+        inline def setStocks(value: Double): Self = StObject.set(x, "Stocks", value.asInstanceOf[js.Any])
       }
     }
     
@@ -4592,20 +4075,16 @@ object global {
     }
     object ChartOptions {
       
-      @scala.inline
-      def apply(): ChartOptions = {
+      inline def apply(): ChartOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ChartOptions]
       }
       
-      @scala.inline
-      implicit class ChartOptionsMutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ChartOptions](x: Self) {
         
-        @scala.inline
-        def set__isStock(value: Boolean): Self = StObject.set(x, "__isStock", value.asInstanceOf[js.Any])
+        inline def set__isStock(value: Boolean): Self = StObject.set(x, "__isStock", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set__isStockUndefined: Self = StObject.set(x, "__isStock", js.undefined)
+        inline def set__isStockUndefined: Self = StObject.set(x, "__isStock", js.undefined)
       }
     }
     
@@ -4617,20 +4096,16 @@ object global {
     }
     object Context {
       
-      @scala.inline
-      def apply(init: () => Unit, main: () => Unit): Context = {
+      inline def apply(init: () => Unit, main: () => Unit): Context = {
         val __obj = js.Dynamic.literal(init = js.Any.fromFunction0(init), main = js.Any.fromFunction0(main))
         __obj.asInstanceOf[Context]
       }
       
-      @scala.inline
-      implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+      extension [Self <: Context](x: Self) {
         
-        @scala.inline
-        def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+        inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setMain(value: () => Unit): Self = StObject.set(x, "main", js.Any.fromFunction0(value))
+        inline def setMain(value: () => Unit): Self = StObject.set(x, "main", js.Any.fromFunction0(value))
       }
     }
     
@@ -4653,29 +4128,22 @@ object global {
     }
     object Depth {
       
-      @scala.inline
-      def apply(Asks: js.Array[MarketOrder], Bids: js.Array[MarketOrder], Time: Double): Depth = {
+      inline def apply(Asks: js.Array[MarketOrder], Bids: js.Array[MarketOrder], Time: Double): Depth = {
         val __obj = js.Dynamic.literal(Asks = Asks.asInstanceOf[js.Any], Bids = Bids.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any])
         __obj.asInstanceOf[Depth]
       }
       
-      @scala.inline
-      implicit class DepthMutableBuilder[Self <: Depth] (val x: Self) extends AnyVal {
+      extension [Self <: Depth](x: Self) {
         
-        @scala.inline
-        def setAsks(value: js.Array[MarketOrder]): Self = StObject.set(x, "Asks", value.asInstanceOf[js.Any])
+        inline def setAsks(value: js.Array[MarketOrder]): Self = StObject.set(x, "Asks", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAsksVarargs(value: MarketOrder*): Self = StObject.set(x, "Asks", js.Array(value :_*))
+        inline def setAsksVarargs(value: MarketOrder*): Self = StObject.set(x, "Asks", js.Array(value :_*))
         
-        @scala.inline
-        def setBids(value: js.Array[MarketOrder]): Self = StObject.set(x, "Bids", value.asInstanceOf[js.Any])
+        inline def setBids(value: js.Array[MarketOrder]): Self = StObject.set(x, "Bids", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBidsVarargs(value: MarketOrder*): Self = StObject.set(x, "Bids", js.Array(value :_*))
+        inline def setBidsVarargs(value: MarketOrder*): Self = StObject.set(x, "Bids", js.Array(value :_*))
         
-        @scala.inline
-        def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+        inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
       }
     }
     
@@ -5110,20 +4578,16 @@ object global {
     }
     object Fee {
       
-      @scala.inline
-      def apply(Buy: Double, Sell: Double): Fee = {
+      inline def apply(Buy: Double, Sell: Double): Fee = {
         val __obj = js.Dynamic.literal(Buy = Buy.asInstanceOf[js.Any], Sell = Sell.asInstanceOf[js.Any])
         __obj.asInstanceOf[Fee]
       }
       
-      @scala.inline
-      implicit class FeeMutableBuilder[Self <: Fee] (val x: Self) extends AnyVal {
+      extension [Self <: Fee](x: Self) {
         
-        @scala.inline
-        def setBuy(value: Double): Self = StObject.set(x, "Buy", value.asInstanceOf[js.Any])
+        inline def setBuy(value: Double): Self = StObject.set(x, "Buy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSell(value: Double): Self = StObject.set(x, "Sell", value.asInstanceOf[js.Any])
+        inline def setSell(value: Double): Self = StObject.set(x, "Sell", value.asInstanceOf[js.Any])
       }
     }
     
@@ -5144,20 +4608,16 @@ object global {
     }
     object MarketOrder {
       
-      @scala.inline
-      def apply(Amount: Double, Price: Double): MarketOrder = {
+      inline def apply(Amount: Double, Price: Double): MarketOrder = {
         val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Price = Price.asInstanceOf[js.Any])
         __obj.asInstanceOf[MarketOrder]
       }
       
-      @scala.inline
-      implicit class MarketOrderMutableBuilder[Self <: MarketOrder] (val x: Self) extends AnyVal {
+      extension [Self <: MarketOrder](x: Self) {
         
-        @scala.inline
-        def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+        inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
+        inline def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
       }
     }
     
@@ -5200,8 +4660,7 @@ object global {
     }
     object Order {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         Amount: Double,
         DealAmount: Double,
         Id: String,
@@ -5214,29 +4673,21 @@ object global {
         __obj.asInstanceOf[Order]
       }
       
-      @scala.inline
-      implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
+      extension [Self <: Order](x: Self) {
         
-        @scala.inline
-        def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+        inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDealAmount(value: Double): Self = StObject.set(x, "DealAmount", value.asInstanceOf[js.Any])
+        inline def setDealAmount(value: Double): Self = StObject.set(x, "DealAmount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
+        inline def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStatus(value: VOrderState): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+        inline def setStatus(value: VOrderState): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+        inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: VOrderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+        inline def setType(value: VOrderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -5291,8 +4742,7 @@ object global {
     }
     object Position {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         Amount: Double,
         CanCover: Double,
         ContractType: String,
@@ -5306,32 +4756,23 @@ object global {
         __obj.asInstanceOf[Position]
       }
       
-      @scala.inline
-      implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+      extension [Self <: Position](x: Self) {
         
-        @scala.inline
-        def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+        inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCanCover(value: Double): Self = StObject.set(x, "CanCover", value.asInstanceOf[js.Any])
+        inline def setCanCover(value: Double): Self = StObject.set(x, "CanCover", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContractType(value: String): Self = StObject.set(x, "ContractType", value.asInstanceOf[js.Any])
+        inline def setContractType(value: String): Self = StObject.set(x, "ContractType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFrozenAmount(value: Double): Self = StObject.set(x, "FrozenAmount", value.asInstanceOf[js.Any])
+        inline def setFrozenAmount(value: Double): Self = StObject.set(x, "FrozenAmount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarginLevel(value: Double): Self = StObject.set(x, "MarginLevel", value.asInstanceOf[js.Any])
+        inline def setMarginLevel(value: Double): Self = StObject.set(x, "MarginLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
+        inline def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProfit(value: Double): Self = StObject.set(x, "Profit", value.asInstanceOf[js.Any])
+        inline def setProfit(value: Double): Self = StObject.set(x, "Profit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: VPositionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+        inline def setType(value: VPositionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -5389,32 +4830,24 @@ object global {
     }
     object Record {
       
-      @scala.inline
-      def apply(Close: Double, High: Double, Low: Double, Open: Double, Time: Double, Volume: Double): Record = {
+      inline def apply(Close: Double, High: Double, Low: Double, Open: Double, Time: Double, Volume: Double): Record = {
         val __obj = js.Dynamic.literal(Close = Close.asInstanceOf[js.Any], High = High.asInstanceOf[js.Any], Low = Low.asInstanceOf[js.Any], Open = Open.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any], Volume = Volume.asInstanceOf[js.Any])
         __obj.asInstanceOf[Record]
       }
       
-      @scala.inline
-      implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+      extension [Self <: Record](x: Self) {
         
-        @scala.inline
-        def setClose(value: Double): Self = StObject.set(x, "Close", value.asInstanceOf[js.Any])
+        inline def setClose(value: Double): Self = StObject.set(x, "Close", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHigh(value: Double): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
+        inline def setHigh(value: Double): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLow(value: Double): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
+        inline def setLow(value: Double): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpen(value: Double): Self = StObject.set(x, "Open", value.asInstanceOf[js.Any])
+        inline def setOpen(value: Double): Self = StObject.set(x, "Open", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+        inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVolume(value: Double): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
+        inline def setVolume(value: Double): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
       }
     }
     
@@ -5469,35 +4902,26 @@ object global {
     }
     object Ticker {
       
-      @scala.inline
-      def apply(Buy: Double, High: Double, Last: Double, Low: Double, Sell: Double, Time: Double, Volume: Double): Ticker = {
+      inline def apply(Buy: Double, High: Double, Last: Double, Low: Double, Sell: Double, Time: Double, Volume: Double): Ticker = {
         val __obj = js.Dynamic.literal(Buy = Buy.asInstanceOf[js.Any], High = High.asInstanceOf[js.Any], Last = Last.asInstanceOf[js.Any], Low = Low.asInstanceOf[js.Any], Sell = Sell.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any], Volume = Volume.asInstanceOf[js.Any])
         __obj.asInstanceOf[Ticker]
       }
       
-      @scala.inline
-      implicit class TickerMutableBuilder[Self <: Ticker] (val x: Self) extends AnyVal {
+      extension [Self <: Ticker](x: Self) {
         
-        @scala.inline
-        def setBuy(value: Double): Self = StObject.set(x, "Buy", value.asInstanceOf[js.Any])
+        inline def setBuy(value: Double): Self = StObject.set(x, "Buy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHigh(value: Double): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
+        inline def setHigh(value: Double): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLast(value: Double): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
+        inline def setLast(value: Double): Self = StObject.set(x, "Last", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLow(value: Double): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
+        inline def setLow(value: Double): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSell(value: Double): Self = StObject.set(x, "Sell", value.asInstanceOf[js.Any])
+        inline def setSell(value: Double): Self = StObject.set(x, "Sell", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+        inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVolume(value: Double): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
+        inline def setVolume(value: Double): Self = StObject.set(x, "Volume", value.asInstanceOf[js.Any])
       }
     }
     
@@ -5533,29 +4957,22 @@ object global {
     }
     object Trade {
       
-      @scala.inline
-      def apply(Amount: Double, Id: String, Price: Double, Time: Double, Type: VOrderType): Trade = {
+      inline def apply(Amount: Double, Id: String, Price: Double, Time: Double, Type: VOrderType): Trade = {
         val __obj = js.Dynamic.literal(Amount = Amount.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Price = Price.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
         __obj.asInstanceOf[Trade]
       }
       
-      @scala.inline
-      implicit class TradeMutableBuilder[Self <: Trade] (val x: Self) extends AnyVal {
+      extension [Self <: Trade](x: Self) {
         
-        @scala.inline
-        def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
+        inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
+        inline def setPrice(value: Double): Self = StObject.set(x, "Price", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+        inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: VOrderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+        inline def setType(value: VOrderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       }
     }
     

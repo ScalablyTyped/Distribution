@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Format extends StObject
 object Format {
   
-  @scala.inline
-  def html: typings.giphyApi.giphyApiStrings.html = "html".asInstanceOf[typings.giphyApi.giphyApiStrings.html]
+  inline def html: typings.giphyApi.giphyApiStrings.html = "html".asInstanceOf[typings.giphyApi.giphyApiStrings.html]
   
-  @scala.inline
-  def json: typings.giphyApi.giphyApiStrings.json = "json".asInstanceOf[typings.giphyApi.giphyApiStrings.json]
+  inline def json: typings.giphyApi.giphyApiStrings.json = "json".asInstanceOf[typings.giphyApi.giphyApiStrings.json]
 }

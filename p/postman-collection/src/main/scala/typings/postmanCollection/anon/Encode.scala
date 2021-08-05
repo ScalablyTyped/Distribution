@@ -12,25 +12,19 @@ trait Encode extends StObject {
 }
 object Encode {
   
-  @scala.inline
-  def apply(): Encode = {
+  inline def apply(): Encode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Encode]
   }
   
-  @scala.inline
-  implicit class EncodeMutableBuilder[Self <: Encode] (val x: Self) extends AnyVal {
+  extension [Self <: Encode](x: Self) {
     
-    @scala.inline
-    def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+    inline def setEncode(value: Boolean): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+    inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
     
-    @scala.inline
-    def setIgnoreDisabled(value: Boolean): Self = StObject.set(x, "ignoreDisabled", value.asInstanceOf[js.Any])
+    inline def setIgnoreDisabled(value: Boolean): Self = StObject.set(x, "ignoreDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreDisabledUndefined: Self = StObject.set(x, "ignoreDisabled", js.undefined)
+    inline def setIgnoreDisabledUndefined: Self = StObject.set(x, "ignoreDisabled", js.undefined)
   }
 }

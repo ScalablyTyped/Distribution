@@ -63,8 +63,7 @@ object componentsPopperMod extends Shortcut {
   }
   object PopperProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       grabScheduleUpdater: /* import warning: importer.ImportType#apply Failed type conversion: react-popper.react-popper.PopperChildrenProps['scheduleUpdate'] */ js.Any => Unit,
       isTestEnv: Boolean,
       placement: Placement,
@@ -74,112 +73,77 @@ object componentsPopperMod extends Shortcut {
       __obj.asInstanceOf[PopperProps]
     }
     
-    @scala.inline
-    implicit class PopperPropsMutableBuilder[Self <: PopperProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopperProps](x: Self) {
       
-      @scala.inline
-      def setAppendTo(value: Boundary | Element): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: Boundary | Element): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+      inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
-      @scala.inline
-      def setContentHook(value: String): Self = StObject.set(x, "contentHook", value.asInstanceOf[js.Any])
+      inline def setContentHook(value: String): Self = StObject.set(x, "contentHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentHookUndefined: Self = StObject.set(x, "contentHook", js.undefined)
+      inline def setContentHookUndefined: Self = StObject.set(x, "contentHook", js.undefined)
       
-      @scala.inline
-      def setCustomArrow(value: (/* placement */ Placement, /* arrowProps */ js.Object) => ReactNode): Self = StObject.set(x, "customArrow", js.Any.fromFunction2(value))
+      inline def setCustomArrow(value: (/* placement */ Placement, /* arrowProps */ js.Object) => ReactNode): Self = StObject.set(x, "customArrow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCustomArrowUndefined: Self = StObject.set(x, "customArrow", js.undefined)
+      inline def setCustomArrowUndefined: Self = StObject.set(x, "customArrow", js.undefined)
       
-      @scala.inline
-      def setDynamicWidth(value: Boolean): Self = StObject.set(x, "dynamicWidth", value.asInstanceOf[js.Any])
+      inline def setDynamicWidth(value: Boolean): Self = StObject.set(x, "dynamicWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDynamicWidthUndefined: Self = StObject.set(x, "dynamicWidth", js.undefined)
+      inline def setDynamicWidthUndefined: Self = StObject.set(x, "dynamicWidth", js.undefined)
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setGrabScheduleUpdater(
+      inline def setGrabScheduleUpdater(
         value: /* import warning: importer.ImportType#apply Failed type conversion: react-popper.react-popper.PopperChildrenProps['scheduleUpdate'] */ js.Any => Unit
       ): Self = StObject.set(x, "grabScheduleUpdater", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsTestEnv(value: Boolean): Self = StObject.set(x, "isTestEnv", value.asInstanceOf[js.Any])
+      inline def setIsTestEnv(value: Boolean): Self = StObject.set(x, "isTestEnv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double | String): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: String | Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: String | Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setMoveArrowTo(value: Double): Self = StObject.set(x, "moveArrowTo", value.asInstanceOf[js.Any])
+      inline def setMoveArrowTo(value: Double): Self = StObject.set(x, "moveArrowTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveArrowToUndefined: Self = StObject.set(x, "moveArrowTo", js.undefined)
+      inline def setMoveArrowToUndefined: Self = StObject.set(x, "moveArrowTo", js.undefined)
       
-      @scala.inline
-      def setMoveBy(value: MoveBy): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
+      inline def setMoveBy(value: MoveBy): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
+      inline def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setShouldAnimate(value: Boolean): Self = StObject.set(x, "shouldAnimate", value.asInstanceOf[js.Any])
+      inline def setShouldAnimate(value: Boolean): Self = StObject.set(x, "shouldAnimate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
+      inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
+      inline def setShowArrowUndefined: Self = StObject.set(x, "showArrow", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   

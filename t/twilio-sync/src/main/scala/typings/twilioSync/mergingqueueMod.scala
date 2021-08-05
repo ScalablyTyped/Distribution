@@ -13,17 +13,17 @@ object mergingqueueMod {
     
     def add(input: InputType, requestFunction: RequestFunction[InputType, ReturnType]): js.Promise[ReturnType] = js.native
     
-    var inputMergingFunction: js.Any = js.native
+    /* private */ var inputMergingFunction: js.Any = js.native
     
     def isEmpty(): Boolean = js.native
     
-    var isRequestInFlight: js.Any = js.native
+    /* private */ var isRequestInFlight: js.Any = js.native
     
-    var queuedRequests: js.Any = js.native
+    /* private */ var queuedRequests: js.Any = js.native
     
     def squashAndAdd(input: InputType, requestFunction: RequestFunction[InputType, ReturnType]): js.Promise[ReturnType] = js.native
     
-    var wakeupQueue: js.Any = js.native
+    /* private */ var wakeupQueue: js.Any = js.native
   }
   
   @JSImport("twilio-sync/lib/mergingqueue", "NamespacedMergingQueue")
@@ -33,14 +33,14 @@ object mergingqueueMod {
     
     def add(namespaceKey: K, input: InputType, requestFunction: RequestFunction[InputType, ReturnType]): js.Promise[ReturnType] = js.native
     
-    var inputReducer: js.Any = js.native
+    /* private */ var inputReducer: js.Any = js.native
     
     def invokeQueueMethod(
       namespaceKey: K,
       queueMethodInvoker: js.Function1[/* queue */ MergingQueue[InputType, ReturnType], js.Promise[ReturnType]]
     ): js.Promise[ReturnType] = js.native
     
-    var queueByNamespaceKey: js.Any = js.native
+    /* private */ var queueByNamespaceKey: js.Any = js.native
     
     def squashAndAdd(namespaceKey: K, input: InputType, requestFunction: RequestFunction[InputType, ReturnType]): js.Promise[ReturnType] = js.native
   }
@@ -61,8 +61,7 @@ object mergingqueueMod {
   }
   object QueuedRequest {
     
-    @scala.inline
-    def apply[InputType, ReturnType](
+    inline def apply[InputType, ReturnType](
       input: InputType,
       reject: js.Any => js.Any,
       requestFunction: InputType => js.Promise[ReturnType],
@@ -72,20 +71,15 @@ object mergingqueueMod {
       __obj.asInstanceOf[QueuedRequest[InputType, ReturnType]]
     }
     
-    @scala.inline
-    implicit class QueuedRequestMutableBuilder[Self <: QueuedRequest[?, ?], InputType, ReturnType] (val x: Self & (QueuedRequest[InputType, ReturnType])) extends AnyVal {
+    extension [Self <: QueuedRequest[?, ?], InputType, ReturnType](x: Self & (QueuedRequest[InputType, ReturnType])) {
       
-      @scala.inline
-      def setInput(value: InputType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: InputType): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReject(value: js.Any => js.Any): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: js.Any => js.Any): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestFunction(value: InputType => js.Promise[ReturnType]): Self = StObject.set(x, "requestFunction", js.Any.fromFunction1(value))
+      inline def setRequestFunction(value: InputType => js.Promise[ReturnType]): Self = StObject.set(x, "requestFunction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolve(value: ReturnType => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: ReturnType => js.Any): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
   

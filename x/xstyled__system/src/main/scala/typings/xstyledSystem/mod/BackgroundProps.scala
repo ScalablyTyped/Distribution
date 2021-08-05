@@ -14,27 +14,22 @@ trait BackgroundProps extends StObject {
 }
 object BackgroundProps {
   
-  @scala.inline
-  def apply(): BackgroundProps = {
+  inline def apply(): BackgroundProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundProps]
   }
   
-  @scala.inline
-  implicit class BackgroundPropsMutableBuilder[Self <: BackgroundProps] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundProps](x: Self) {
     
-    @scala.inline
-    def setBackground(
+    inline def setBackground(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ js.Any
         ]
     ): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBackgroundVarargs(
+    inline def setBackgroundVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Background<string> */ js.Any)*
     ): Self = StObject.set(x, "background", js.Array(value :_*))
   }

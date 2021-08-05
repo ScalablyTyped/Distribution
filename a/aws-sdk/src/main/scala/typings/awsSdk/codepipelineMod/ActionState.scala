@@ -33,43 +33,31 @@ trait ActionState extends StObject {
 }
 object ActionState {
   
-  @scala.inline
-  def apply(): ActionState = {
+  inline def apply(): ActionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionState]
   }
   
-  @scala.inline
-  implicit class ActionStateMutableBuilder[Self <: ActionState] (val x: Self) extends AnyVal {
+  extension [Self <: ActionState](x: Self) {
     
-    @scala.inline
-    def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
+    inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
-    @scala.inline
-    def setCurrentRevision(value: ActionRevision): Self = StObject.set(x, "currentRevision", value.asInstanceOf[js.Any])
+    inline def setCurrentRevision(value: ActionRevision): Self = StObject.set(x, "currentRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentRevisionUndefined: Self = StObject.set(x, "currentRevision", js.undefined)
+    inline def setCurrentRevisionUndefined: Self = StObject.set(x, "currentRevision", js.undefined)
     
-    @scala.inline
-    def setEntityUrl(value: Url): Self = StObject.set(x, "entityUrl", value.asInstanceOf[js.Any])
+    inline def setEntityUrl(value: Url): Self = StObject.set(x, "entityUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUrlUndefined: Self = StObject.set(x, "entityUrl", js.undefined)
+    inline def setEntityUrlUndefined: Self = StObject.set(x, "entityUrl", js.undefined)
     
-    @scala.inline
-    def setLatestExecution(value: ActionExecution): Self = StObject.set(x, "latestExecution", value.asInstanceOf[js.Any])
+    inline def setLatestExecution(value: ActionExecution): Self = StObject.set(x, "latestExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestExecutionUndefined: Self = StObject.set(x, "latestExecution", js.undefined)
+    inline def setLatestExecutionUndefined: Self = StObject.set(x, "latestExecution", js.undefined)
     
-    @scala.inline
-    def setRevisionUrl(value: Url): Self = StObject.set(x, "revisionUrl", value.asInstanceOf[js.Any])
+    inline def setRevisionUrl(value: Url): Self = StObject.set(x, "revisionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUrlUndefined: Self = StObject.set(x, "revisionUrl", js.undefined)
+    inline def setRevisionUrlUndefined: Self = StObject.set(x, "revisionUrl", js.undefined)
   }
 }

@@ -28,37 +28,27 @@ trait SystemTemplateSummary extends StObject {
 }
 object SystemTemplateSummary {
   
-  @scala.inline
-  def apply(): SystemTemplateSummary = {
+  inline def apply(): SystemTemplateSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SystemTemplateSummary]
   }
   
-  @scala.inline
-  implicit class SystemTemplateSummaryMutableBuilder[Self <: SystemTemplateSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SystemTemplateSummary](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setRevisionNumber(value: Version): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
+    inline def setRevisionNumber(value: Version): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
+    inline def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
   }
 }

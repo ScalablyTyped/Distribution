@@ -22,37 +22,27 @@ trait RowInfo extends StObject {
 }
 object RowInfo {
   
-  @scala.inline
-  def apply(): RowInfo = {
+  inline def apply(): RowInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowInfo]
   }
   
-  @scala.inline
-  implicit class RowInfoMutableBuilder[Self <: RowInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RowInfo](x: Self) {
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setHpt(value: Double): Self = StObject.set(x, "hpt", value.asInstanceOf[js.Any])
+    inline def setHpt(value: Double): Self = StObject.set(x, "hpt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHptUndefined: Self = StObject.set(x, "hpt", js.undefined)
+    inline def setHptUndefined: Self = StObject.set(x, "hpt", js.undefined)
     
-    @scala.inline
-    def setHpx(value: Double): Self = StObject.set(x, "hpx", value.asInstanceOf[js.Any])
+    inline def setHpx(value: Double): Self = StObject.set(x, "hpx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHpxUndefined: Self = StObject.set(x, "hpx", js.undefined)
+    inline def setHpxUndefined: Self = StObject.set(x, "hpx", js.undefined)
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

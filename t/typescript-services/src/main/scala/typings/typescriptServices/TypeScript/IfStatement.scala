@@ -18,8 +18,7 @@ trait IfStatement
 }
 object IfStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -48,19 +47,14 @@ object IfStatement {
     __obj.asInstanceOf[IfStatement]
   }
   
-  @scala.inline
-  implicit class IfStatementMutableBuilder[Self <: IfStatement] (val x: Self) extends AnyVal {
+  extension [Self <: IfStatement](x: Self) {
     
-    @scala.inline
-    def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElseClause(value: ElseClause): Self = StObject.set(x, "elseClause", value.asInstanceOf[js.Any])
+    inline def setElseClause(value: ElseClause): Self = StObject.set(x, "elseClause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
+    inline def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (IfStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (IfStatement, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

@@ -28,25 +28,19 @@ trait LoggingConfig extends StObject {
 }
 object LoggingConfig {
   
-  @scala.inline
-  def apply(Bucket: String, Enabled: Boolean, IncludeCookies: Boolean, Prefix: String): LoggingConfig = {
+  inline def apply(Bucket: String, Enabled: Boolean, IncludeCookies: Boolean, Prefix: String): LoggingConfig = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Enabled = Enabled.asInstanceOf[js.Any], IncludeCookies = IncludeCookies.asInstanceOf[js.Any], Prefix = Prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingConfig]
   }
   
-  @scala.inline
-  implicit class LoggingConfigMutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingConfig](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeCookies(value: Boolean): Self = StObject.set(x, "IncludeCookies", value.asInstanceOf[js.Any])
+    inline def setIncludeCookies(value: Boolean): Self = StObject.set(x, "IncludeCookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
   }
 }

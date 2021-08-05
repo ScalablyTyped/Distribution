@@ -14,28 +14,21 @@ trait Border extends StObject {
 }
 object Border {
   
-  @scala.inline
-  def apply(border: String, margin: js.Array[js.Array[Double]], padding: js.Array[js.Array[String]]): Border = {
+  inline def apply(border: String, margin: js.Array[js.Array[Double]], padding: js.Array[js.Array[String]]): Border = {
     val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[Border]
   }
   
-  @scala.inline
-  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+  extension [Self <: Border](x: Self) {
     
-    @scala.inline
-    def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMargin(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginVarargs(value: js.Array[Double]*): Self = StObject.set(x, "margin", js.Array(value :_*))
+    inline def setMarginVarargs(value: js.Array[Double]*): Self = StObject.set(x, "margin", js.Array(value :_*))
     
-    @scala.inline
-    def setPadding(value: js.Array[js.Array[String]]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Array[js.Array[String]]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingVarargs(value: js.Array[String]*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: js.Array[String]*): Self = StObject.set(x, "padding", js.Array(value :_*))
   }
 }

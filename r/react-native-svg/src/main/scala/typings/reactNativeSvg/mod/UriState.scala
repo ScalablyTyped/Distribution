@@ -10,19 +10,15 @@ trait UriState extends StObject {
 }
 object UriState {
   
-  @scala.inline
-  def apply(): UriState = {
+  inline def apply(): UriState = {
     val __obj = js.Dynamic.literal(xml = null)
     __obj.asInstanceOf[UriState]
   }
   
-  @scala.inline
-  implicit class UriStateMutableBuilder[Self <: UriState] (val x: Self) extends AnyVal {
+  extension [Self <: UriState](x: Self) {
     
-    @scala.inline
-    def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    inline def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlNull: Self = StObject.set(x, "xml", null)
+    inline def setXmlNull: Self = StObject.set(x, "xml", null)
   }
 }

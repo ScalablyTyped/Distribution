@@ -36,8 +36,7 @@ trait ClosedBezierShape
      with RotationDescriptor
 object ClosedBezierShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FillBackground: Boolean,
     FillBitmap: XBitmap,
     FillBitmapLogicalSize: Boolean,

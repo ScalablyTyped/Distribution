@@ -28,28 +28,21 @@ trait IntentFollowUpPromptPrompt extends StObject {
 }
 object IntentFollowUpPromptPrompt {
   
-  @scala.inline
-  def apply(maxAttempts: Input[Double], messages: Input[js.Array[Input[IntentFollowUpPromptPromptMessage]]]): IntentFollowUpPromptPrompt = {
+  inline def apply(maxAttempts: Input[Double], messages: Input[js.Array[Input[IntentFollowUpPromptPromptMessage]]]): IntentFollowUpPromptPrompt = {
     val __obj = js.Dynamic.literal(maxAttempts = maxAttempts.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntentFollowUpPromptPrompt]
   }
   
-  @scala.inline
-  implicit class IntentFollowUpPromptPromptMutableBuilder[Self <: IntentFollowUpPromptPrompt] (val x: Self) extends AnyVal {
+  extension [Self <: IntentFollowUpPromptPrompt](x: Self) {
     
-    @scala.inline
-    def setMaxAttempts(value: Input[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+    inline def setMaxAttempts(value: Input[Double]): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: Input[js.Array[Input[IntentFollowUpPromptPromptMessage]]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Input[js.Array[Input[IntentFollowUpPromptPromptMessage]]]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: Input[IntentFollowUpPromptPromptMessage]*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Input[IntentFollowUpPromptPromptMessage]*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseCard(value: Input[String]): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
+    inline def setResponseCard(value: Input[String]): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
+    inline def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
   }
 }

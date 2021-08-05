@@ -10,19 +10,15 @@ trait Override extends StObject {
 }
 object Override {
   
-  @scala.inline
-  def apply(): Override = {
+  inline def apply(): Override = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Override]
   }
   
-  @scala.inline
-  implicit class OverrideMutableBuilder[Self <: Override] (val x: Self) extends AnyVal {
+  extension [Self <: Override](x: Self) {
     
-    @scala.inline
-    def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    inline def setOverride(value: Boolean): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
   }
 }

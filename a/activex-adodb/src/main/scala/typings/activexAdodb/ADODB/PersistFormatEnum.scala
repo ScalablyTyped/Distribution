@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PersistFormatEnum extends StObject
 object PersistFormatEnum {
   
-  @scala.inline
-  def adPersistADTG: `0` = 0.asInstanceOf[`0`]
+  inline def adPersistADTG: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adPersistXML: `1` = 1.asInstanceOf[`1`]
+  inline def adPersistXML: `1` = 1.asInstanceOf[`1`]
 }

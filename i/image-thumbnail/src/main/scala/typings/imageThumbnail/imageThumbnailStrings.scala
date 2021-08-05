@@ -8,11 +8,9 @@ object imageThumbnailStrings {
   
   @js.native
   sealed trait base64 extends StObject
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait buffer extends StObject
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
 }

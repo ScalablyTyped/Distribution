@@ -21,31 +21,25 @@ trait BackgroundRepeatProps[ThemeType /* <: Theme[TLengthStyledSystem] */] exten
 }
 object BackgroundRepeatProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): BackgroundRepeatProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): BackgroundRepeatProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundRepeatProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class BackgroundRepeatPropsMutableBuilder[Self <: BackgroundRepeatProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & BackgroundRepeatProps[ThemeType]) extends AnyVal {
+  extension [Self <: BackgroundRepeatProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & BackgroundRepeatProps[ThemeType]) {
     
-    @scala.inline
-    def setBackgroundRepeat(
+    inline def setBackgroundRepeat(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundRepeatNull: Self = StObject.set(x, "backgroundRepeat", null)
+    inline def setBackgroundRepeatNull: Self = StObject.set(x, "backgroundRepeat", null)
     
-    @scala.inline
-    def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
+    inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
-    @scala.inline
-    def setBackgroundRepeatVarargs(
+    inline def setBackgroundRepeatVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BackgroundRepeat */ js.Any) | Null)*
     ): Self = StObject.set(x, "backgroundRepeat", js.Array(value :_*))
   }

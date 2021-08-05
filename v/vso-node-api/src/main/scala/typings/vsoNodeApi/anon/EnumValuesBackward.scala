@@ -10,16 +10,13 @@ trait EnumValuesBackward extends StObject {
 }
 object EnumValuesBackward {
   
-  @scala.inline
-  def apply(enumValues: Backward): EnumValuesBackward = {
+  inline def apply(enumValues: Backward): EnumValuesBackward = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesBackward]
   }
   
-  @scala.inline
-  implicit class EnumValuesBackwardMutableBuilder[Self <: EnumValuesBackward] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesBackward](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Backward): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Backward): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

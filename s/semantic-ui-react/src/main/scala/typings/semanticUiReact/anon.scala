@@ -23,25 +23,20 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply[TProps /* <: Record[String, js.Any] */](): `0`[TProps] = {
+    inline def apply[TProps /* <: Record[String, js.Any] */](): `0`[TProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`[TProps]]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[?], TProps /* <: Record[String, js.Any] */] (val x: Self & `0`[TProps]) extends AnyVal {
+    extension [Self <: `0`[?], TProps /* <: Record[String, js.Any] */](x: Self & `0`[TProps]) {
       
-      @scala.inline
-      def setChildren(
+      inline def setChildren(
         value: (ShorthandRenderFunction[ElementType[TProps], TProps]) | (/* import warning: importer.ImportType#apply Failed type conversion: TProps['children'] */ js.Any)
       ): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction2(value: (ElementType[TProps], TProps) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildrenFunction2(value: (ElementType[TProps], TProps) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -51,17 +46,14 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(children: js.Any): Children = {
+    inline def apply(children: js.Any): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,37 +67,28 @@ object anon {
   }
   object MenuItem {
     
-    @scala.inline
-    def apply(): MenuItem = {
+    inline def apply(): MenuItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuItem]
     }
     
-    @scala.inline
-    implicit class MenuItemMutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
+    extension [Self <: MenuItem](x: Self) {
       
-      @scala.inline
-      def setMenuItem(value: js.Any): Self = StObject.set(x, "menuItem", value.asInstanceOf[js.Any])
+      inline def setMenuItem(value: js.Any): Self = StObject.set(x, "menuItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuItemUndefined: Self = StObject.set(x, "menuItem", js.undefined)
+      inline def setMenuItemUndefined: Self = StObject.set(x, "menuItem", js.undefined)
       
-      @scala.inline
-      def setPane(value: SemanticShorthandItem[TabPaneProps]): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+      inline def setPane(value: SemanticShorthandItem[TabPaneProps]): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaneFunction3(
+      inline def setPaneFunction3(
         value: (/* component */ ElementType[TabPaneProps], TabPaneProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "pane", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+      inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
       
-      @scala.inline
-      def setRender(value: () => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     }
   }
 }

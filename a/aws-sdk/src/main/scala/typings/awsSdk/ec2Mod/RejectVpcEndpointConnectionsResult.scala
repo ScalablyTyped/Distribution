@@ -13,22 +13,17 @@ trait RejectVpcEndpointConnectionsResult extends StObject {
 }
 object RejectVpcEndpointConnectionsResult {
   
-  @scala.inline
-  def apply(): RejectVpcEndpointConnectionsResult = {
+  inline def apply(): RejectVpcEndpointConnectionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RejectVpcEndpointConnectionsResult]
   }
   
-  @scala.inline
-  implicit class RejectVpcEndpointConnectionsResultMutableBuilder[Self <: RejectVpcEndpointConnectionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: RejectVpcEndpointConnectionsResult](x: Self) {
     
-    @scala.inline
-    def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
+    inline def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
+    inline def setUnsuccessfulUndefined: Self = StObject.set(x, "Unsuccessful", js.undefined)
     
-    @scala.inline
-    def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
+    inline def setUnsuccessfulVarargs(value: UnsuccessfulItem*): Self = StObject.set(x, "Unsuccessful", js.Array(value :_*))
   }
 }

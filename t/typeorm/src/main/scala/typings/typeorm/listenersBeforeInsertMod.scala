@@ -11,6 +11,5 @@ object listenersBeforeInsertMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def BeforeInsert(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BeforeInsert")().asInstanceOf[PropertyDecorator]
+  inline def BeforeInsert(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("BeforeInsert")().asInstanceOf[PropertyDecorator]
 }

@@ -23,31 +23,23 @@ trait TransitGatewayRegistration extends StObject {
 }
 object TransitGatewayRegistration {
   
-  @scala.inline
-  def apply(): TransitGatewayRegistration = {
+  inline def apply(): TransitGatewayRegistration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitGatewayRegistration]
   }
   
-  @scala.inline
-  implicit class TransitGatewayRegistrationMutableBuilder[Self <: TransitGatewayRegistration] (val x: Self) extends AnyVal {
+  extension [Self <: TransitGatewayRegistration](x: Self) {
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
+    inline def setGlobalNetworkIdUndefined: Self = StObject.set(x, "GlobalNetworkId", js.undefined)
     
-    @scala.inline
-    def setState(value: TransitGatewayRegistrationStateReason): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: TransitGatewayRegistrationStateReason): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayArn(value: String): Self = StObject.set(x, "TransitGatewayArn", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayArn(value: String): Self = StObject.set(x, "TransitGatewayArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayArnUndefined: Self = StObject.set(x, "TransitGatewayArn", js.undefined)
+    inline def setTransitGatewayArnUndefined: Self = StObject.set(x, "TransitGatewayArn", js.undefined)
   }
 }

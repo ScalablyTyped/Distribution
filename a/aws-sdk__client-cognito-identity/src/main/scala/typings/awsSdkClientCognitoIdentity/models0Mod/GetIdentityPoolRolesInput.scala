@@ -13,8 +13,7 @@ trait GetIdentityPoolRolesInput extends StObject {
 }
 object GetIdentityPoolRolesInput {
   
-  @scala.inline
-  def apply(): GetIdentityPoolRolesInput = {
+  inline def apply(): GetIdentityPoolRolesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetIdentityPoolRolesInput]
   }
@@ -23,16 +22,12 @@ object GetIdentityPoolRolesInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: GetIdentityPoolRolesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: GetIdentityPoolRolesInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class GetIdentityPoolRolesInputMutableBuilder[Self <: GetIdentityPoolRolesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityPoolRolesInput](x: Self) {
     
-    @scala.inline
-    def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: String): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
+    inline def setIdentityPoolIdUndefined: Self = StObject.set(x, "IdentityPoolId", js.undefined)
   }
 }

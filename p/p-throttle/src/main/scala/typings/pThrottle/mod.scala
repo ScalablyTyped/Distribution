@@ -26,8 +26,7 @@ object mod {
   	}
   	```
   	*/
-  @scala.inline
-  def apply[Arguments /* <: js.Array[js.Any] */, Return](
+  inline def apply[Arguments /* <: js.Array[js.Any] */, Return](
     fn: js.Function1[/* arguments */ Arguments, js.Thenable[Return] | Return],
     limit: Double,
     interval: Double
@@ -67,11 +66,9 @@ object mod {
     override val name_AbortErrorClass: typings.pThrottle.pThrottleStrings.AbortError = js.native
   }
   
-  @scala.inline
-  def AbortError_=(x: Instantiable0[AbortErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbortError")(x.asInstanceOf[js.Any])
+  inline def AbortError_=(x: Instantiable0[AbortErrorClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbortError")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pThrottle */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pThrottle */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait AbortErrorClass
     extends StObject
@@ -82,17 +79,14 @@ object mod {
   }
   object AbortErrorClass {
     
-    @scala.inline
-    def apply(message: String): AbortErrorClass = {
+    inline def apply(message: String): AbortErrorClass = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "AbortError")
       __obj.asInstanceOf[AbortErrorClass]
     }
     
-    @scala.inline
-    implicit class AbortErrorClassMutableBuilder[Self <: AbortErrorClass] (val x: Self) extends AnyVal {
+    extension [Self <: AbortErrorClass](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.pThrottle.pThrottleStrings.AbortError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.pThrottle.pThrottleStrings.AbortError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

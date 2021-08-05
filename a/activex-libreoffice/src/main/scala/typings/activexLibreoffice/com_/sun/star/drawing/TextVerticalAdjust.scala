@@ -27,8 +27,7 @@ object TextVerticalAdjust {
     *
     * The text extends from the top to the bottom edge of the shape.
     */
-  @scala.inline
-  def BLOCK: `3` = 3.asInstanceOf[`3`]
+  inline def BLOCK: `3` = 3.asInstanceOf[`3`]
   
   /**
     * the connection line leaves the connected object from the bottom,
@@ -37,12 +36,10 @@ object TextVerticalAdjust {
     *
     * The text is positioned below the main line.
     */
-  @scala.inline
-  def BOTTOM: `2` = 2.asInstanceOf[`2`]
+  inline def BOTTOM: `2` = 2.asInstanceOf[`2`]
   
   /** The text is centered inside the shape. */
-  @scala.inline
-  def CENTER: `1` = 1.asInstanceOf[`1`]
+  inline def CENTER: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the connection line leaves the connected object from the top,
@@ -51,6 +48,5 @@ object TextVerticalAdjust {
     *
     * The text is positioned above the main line.
     */
-  @scala.inline
-  def TOP: `0` = 0.asInstanceOf[`0`]
+  inline def TOP: `0` = 0.asInstanceOf[`0`]
 }

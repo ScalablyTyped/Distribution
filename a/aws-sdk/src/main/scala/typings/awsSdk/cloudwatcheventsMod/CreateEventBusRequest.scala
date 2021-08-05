@@ -23,31 +23,23 @@ trait CreateEventBusRequest extends StObject {
 }
 object CreateEventBusRequest {
   
-  @scala.inline
-  def apply(Name: EventBusName): CreateEventBusRequest = {
+  inline def apply(Name: EventBusName): CreateEventBusRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEventBusRequest]
   }
   
-  @scala.inline
-  implicit class CreateEventBusRequestMutableBuilder[Self <: CreateEventBusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEventBusRequest](x: Self) {
     
-    @scala.inline
-    def setEventSourceName(value: EventSourceName): Self = StObject.set(x, "EventSourceName", value.asInstanceOf[js.Any])
+    inline def setEventSourceName(value: EventSourceName): Self = StObject.set(x, "EventSourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventSourceNameUndefined: Self = StObject.set(x, "EventSourceName", js.undefined)
+    inline def setEventSourceNameUndefined: Self = StObject.set(x, "EventSourceName", js.undefined)
     
-    @scala.inline
-    def setName(value: EventBusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EventBusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

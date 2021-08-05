@@ -15,19 +15,15 @@ trait PickListStyleBriefBriefTe extends StObject {
 }
 object PickListStyleBriefBriefTe {
   
-  @scala.inline
-  def apply(Brief: ViewStyle, BriefText: TextStyle): PickListStyleBriefBriefTe = {
+  inline def apply(Brief: ViewStyle, BriefText: TextStyle): PickListStyleBriefBriefTe = {
     val __obj = js.Dynamic.literal(Brief = Brief.asInstanceOf[js.Any], BriefText = BriefText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickListStyleBriefBriefTe]
   }
   
-  @scala.inline
-  implicit class PickListStyleBriefBriefTeMutableBuilder[Self <: PickListStyleBriefBriefTe] (val x: Self) extends AnyVal {
+  extension [Self <: PickListStyleBriefBriefTe](x: Self) {
     
-    @scala.inline
-    def setBrief(value: ViewStyle): Self = StObject.set(x, "Brief", value.asInstanceOf[js.Any])
+    inline def setBrief(value: ViewStyle): Self = StObject.set(x, "Brief", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBriefText(value: TextStyle): Self = StObject.set(x, "BriefText", value.asInstanceOf[js.Any])
+    inline def setBriefText(value: TextStyle): Self = StObject.set(x, "BriefText", value.asInstanceOf[js.Any])
   }
 }

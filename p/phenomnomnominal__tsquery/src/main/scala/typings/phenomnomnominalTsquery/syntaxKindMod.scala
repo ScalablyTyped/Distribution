@@ -11,6 +11,5 @@ object syntaxKindMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def syntaxKindName(kind: SyntaxKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("syntaxKindName")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def syntaxKindName(kind: SyntaxKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("syntaxKindName")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -18,19 +18,15 @@ trait SchemaOptions
 }
 object SchemaOptions {
   
-  @scala.inline
-  def apply(): SchemaOptions = {
+  inline def apply(): SchemaOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOptions]
   }
   
-  @scala.inline
-  implicit class SchemaOptionsMutableBuilder[Self <: SchemaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOptions](x: Self) {
     
-    @scala.inline
-    def setSchemaDelimeter(value: String): Self = StObject.set(x, "schemaDelimeter", value.asInstanceOf[js.Any])
+    inline def setSchemaDelimeter(value: String): Self = StObject.set(x, "schemaDelimeter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaDelimeterUndefined: Self = StObject.set(x, "schemaDelimeter", js.undefined)
+    inline def setSchemaDelimeterUndefined: Self = StObject.set(x, "schemaDelimeter", js.undefined)
   }
 }

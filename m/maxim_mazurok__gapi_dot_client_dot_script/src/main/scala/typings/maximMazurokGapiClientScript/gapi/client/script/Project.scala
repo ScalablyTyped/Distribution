@@ -32,55 +32,39 @@ trait Project extends StObject {
 }
 object Project {
   
-  @scala.inline
-  def apply(): Project = {
+  inline def apply(): Project = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Project]
   }
   
-  @scala.inline
-  implicit class ProjectMutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
+  extension [Self <: Project](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setCreator(value: GoogleAppsScriptTypeUser): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: GoogleAppsScriptTypeUser): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
+    inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
     
-    @scala.inline
-    def setLastModifyUser(value: GoogleAppsScriptTypeUser): Self = StObject.set(x, "lastModifyUser", value.asInstanceOf[js.Any])
+    inline def setLastModifyUser(value: GoogleAppsScriptTypeUser): Self = StObject.set(x, "lastModifyUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifyUserUndefined: Self = StObject.set(x, "lastModifyUser", js.undefined)
+    inline def setLastModifyUserUndefined: Self = StObject.set(x, "lastModifyUser", js.undefined)
     
-    @scala.inline
-    def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
-    @scala.inline
-    def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: String): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
+    inline def setScriptIdUndefined: Self = StObject.set(x, "scriptId", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

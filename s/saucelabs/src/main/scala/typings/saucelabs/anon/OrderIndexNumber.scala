@@ -10,16 +10,13 @@ trait OrderIndexNumber extends StObject {
 }
 object OrderIndexNumber {
   
-  @scala.inline
-  def apply(orderIndex: Double): OrderIndexNumber = {
+  inline def apply(orderIndex: Double): OrderIndexNumber = {
     val __obj = js.Dynamic.literal(orderIndex = orderIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderIndexNumber]
   }
   
-  @scala.inline
-  implicit class OrderIndexNumberMutableBuilder[Self <: OrderIndexNumber] (val x: Self) extends AnyVal {
+  extension [Self <: OrderIndexNumber](x: Self) {
     
-    @scala.inline
-    def setOrderIndex(value: Double): Self = StObject.set(x, "orderIndex", value.asInstanceOf[js.Any])
+    inline def setOrderIndex(value: Double): Self = StObject.set(x, "orderIndex", value.asInstanceOf[js.Any])
   }
 }

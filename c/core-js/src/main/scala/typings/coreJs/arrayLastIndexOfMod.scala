@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object arrayLastIndexOfMod {
   
   /* was `typeof core.Array.lastIndexOf` */
-  @scala.inline
-  def apply[T](array: ArrayLike[T], earchElement: T): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], earchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply[T](array: ArrayLike[T], earchElement: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], earchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply[T](array: ArrayLike[T], earchElement: T): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], earchElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply[T](array: ArrayLike[T], earchElement: T, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], earchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("core-js/library/fn/array/last-index-of", JSImport.Namespace)
   @js.native

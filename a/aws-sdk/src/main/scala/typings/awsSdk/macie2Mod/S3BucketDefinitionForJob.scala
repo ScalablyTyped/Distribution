@@ -18,28 +18,21 @@ trait S3BucketDefinitionForJob extends StObject {
 }
 object S3BucketDefinitionForJob {
   
-  @scala.inline
-  def apply(): S3BucketDefinitionForJob = {
+  inline def apply(): S3BucketDefinitionForJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3BucketDefinitionForJob]
   }
   
-  @scala.inline
-  implicit class S3BucketDefinitionForJobMutableBuilder[Self <: S3BucketDefinitionForJob] (val x: Self) extends AnyVal {
+  extension [Self <: S3BucketDefinitionForJob](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setBuckets(value: listOfString): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: listOfString): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    @scala.inline
-    def setBucketsVarargs(value: string*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: string*): Self = StObject.set(x, "buckets", js.Array(value :_*))
   }
 }

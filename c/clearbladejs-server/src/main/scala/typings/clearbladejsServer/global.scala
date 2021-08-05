@@ -18,8 +18,7 @@ object global {
     @JSGlobal("CbServer.ClearBlade")
     @js.native
     def ClearBlade: ClearBladeGlobal = js.native
-    @scala.inline
-    def ClearBlade_=(x: ClearBladeGlobal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
+    inline def ClearBlade_=(x: ClearBladeGlobal): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
     
     @JSGlobal("CbServer.MessagingQOS")
     @js.native
@@ -88,19 +87,16 @@ object global {
     @JSGlobal("CbServer.req")
     @js.native
     def req: ReqTypes = js.native
-    @scala.inline
-    def req_=(x: ReqTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
+    inline def req_=(x: ReqTypes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
     
     @JSGlobal("CbServer.resp")
     @js.native
     def resp: Resp = js.native
-    @scala.inline
-    def resp_=(x: Resp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resp")(x.asInstanceOf[js.Any])
+    inline def resp_=(x: Resp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resp")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("ClearBlade")
   @js.native
   def ClearBlade: ClearBladeGlobal = js.native
-  @scala.inline
-  def ClearBlade_=(x: ClearBladeGlobal): Unit = js.Dynamic.global.updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
+  inline def ClearBlade_=(x: ClearBladeGlobal): Unit = js.Dynamic.global.updateDynamic("ClearBlade")(x.asInstanceOf[js.Any])
 }

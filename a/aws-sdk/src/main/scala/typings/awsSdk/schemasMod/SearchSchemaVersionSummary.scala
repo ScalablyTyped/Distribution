@@ -23,31 +23,23 @@ trait SearchSchemaVersionSummary extends StObject {
 }
 object SearchSchemaVersionSummary {
   
-  @scala.inline
-  def apply(): SearchSchemaVersionSummary = {
+  inline def apply(): SearchSchemaVersionSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchSchemaVersionSummary]
   }
   
-  @scala.inline
-  implicit class SearchSchemaVersionSummaryMutableBuilder[Self <: SearchSchemaVersionSummary] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSchemaVersionSummary](x: Self) {
     
-    @scala.inline
-    def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
+    inline def setCreatedDate(value: timestampIso8601): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
+    inline def setCreatedDateUndefined: Self = StObject.set(x, "CreatedDate", js.undefined)
     
-    @scala.inline
-    def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
+    inline def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

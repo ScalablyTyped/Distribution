@@ -18,20 +18,16 @@ trait ArrayTypeAnnotation_
 }
 object ArrayTypeAnnotation_ {
   
-  @scala.inline
-  def apply(elementType: FlowTypeAnnotation, end: Double, loc: SourceLocation, start: Double): ArrayTypeAnnotation_ = {
+  inline def apply(elementType: FlowTypeAnnotation, end: Double, loc: SourceLocation, start: Double): ArrayTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrayTypeAnnotation")
     __obj.asInstanceOf[ArrayTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class ArrayTypeAnnotation_MutableBuilder[Self <: ArrayTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setElementType(value: FlowTypeAnnotation): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+    inline def setElementType(value: FlowTypeAnnotation): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ArrayTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArrayTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -170,21 +170,16 @@ object tableMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Table]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Table]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TableState): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Table]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TableState, opts: CustomResourceOptions): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Table]
+    inline def get(name: String, id: Input[ID]): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Table]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Table]
+    inline def get(name: String, id: Input[ID], state: TableState): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Table]
+    inline def get(name: String, id: Input[ID], state: TableState, opts: CustomResourceOptions): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Table]
     
     /**
       * Returns true if the given object is an instance of Table.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean]
   }
   
   trait TableArgs extends StObject {
@@ -280,8 +275,7 @@ object tableMod {
   }
   object TableArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]]],
       hashKey: Input[String]
     ): TableArgs = {
@@ -289,110 +283,75 @@ object tableMod {
       __obj.asInstanceOf[TableArgs]
     }
     
-    @scala.inline
-    implicit class TableArgsMutableBuilder[Self <: TableArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TableArgs](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setBillingMode(value: Input[String]): Self = StObject.set(x, "billingMode", value.asInstanceOf[js.Any])
+      inline def setBillingMode(value: Input[String]): Self = StObject.set(x, "billingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeUndefined: Self = StObject.set(x, "billingMode", js.undefined)
+      inline def setBillingModeUndefined: Self = StObject.set(x, "billingMode", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]]]): Self = StObject.set(x, "globalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]]]): Self = StObject.set(x, "globalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "globalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "globalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]*): Self = StObject.set(x, "globalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]*): Self = StObject.set(x, "globalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
+      inline def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]]]): Self = StObject.set(x, "localSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]]]): Self = StObject.set(x, "localSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "localSecondaryIndexes", js.undefined)
+      inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "localSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]*): Self = StObject.set(x, "localSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]*): Self = StObject.set(x, "localSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPointInTimeRecovery(value: Input[typings.pulumiAws.inputMod.dynamodb.TablePointInTimeRecovery]): Self = StObject.set(x, "pointInTimeRecovery", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecovery(value: Input[typings.pulumiAws.inputMod.dynamodb.TablePointInTimeRecovery]): Self = StObject.set(x, "pointInTimeRecovery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointInTimeRecoveryUndefined: Self = StObject.set(x, "pointInTimeRecovery", js.undefined)
+      inline def setPointInTimeRecoveryUndefined: Self = StObject.set(x, "pointInTimeRecovery", js.undefined)
       
-      @scala.inline
-      def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
+      inline def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
+      inline def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
       
-      @scala.inline
-      def setReadCapacity(value: Input[Double]): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
+      inline def setReadCapacity(value: Input[Double]): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadCapacityUndefined: Self = StObject.set(x, "readCapacity", js.undefined)
+      inline def setReadCapacityUndefined: Self = StObject.set(x, "readCapacity", js.undefined)
       
-      @scala.inline
-      def setReplicas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]]]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+      inline def setReplicas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]]]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
+      inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
       
-      @scala.inline
-      def setReplicasVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]*): Self = StObject.set(x, "replicas", js.Array(value :_*))
       
-      @scala.inline
-      def setServerSideEncryption(value: Input[typings.pulumiAws.inputMod.dynamodb.TableServerSideEncryption]): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: Input[typings.pulumiAws.inputMod.dynamodb.TableServerSideEncryption]): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
       
-      @scala.inline
-      def setStreamEnabled(value: Input[Boolean]): Self = StObject.set(x, "streamEnabled", value.asInstanceOf[js.Any])
+      inline def setStreamEnabled(value: Input[Boolean]): Self = StObject.set(x, "streamEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamEnabledUndefined: Self = StObject.set(x, "streamEnabled", js.undefined)
+      inline def setStreamEnabledUndefined: Self = StObject.set(x, "streamEnabled", js.undefined)
       
-      @scala.inline
-      def setStreamViewType(value: Input[String]): Self = StObject.set(x, "streamViewType", value.asInstanceOf[js.Any])
+      inline def setStreamViewType(value: Input[String]): Self = StObject.set(x, "streamViewType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamViewTypeUndefined: Self = StObject.set(x, "streamViewType", js.undefined)
+      inline def setStreamViewTypeUndefined: Self = StObject.set(x, "streamViewType", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Input[typings.pulumiAws.inputMod.dynamodb.TableTtl]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Input[typings.pulumiAws.inputMod.dynamodb.TableTtl]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setWriteCapacity(value: Input[Double]): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
+      inline def setWriteCapacity(value: Input[Double]): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacityUndefined: Self = StObject.set(x, "writeCapacity", js.undefined)
+      inline def setWriteCapacityUndefined: Self = StObject.set(x, "writeCapacity", js.undefined)
     }
   }
   
@@ -507,140 +466,96 @@ object tableMod {
   }
   object TableState {
     
-    @scala.inline
-    def apply(): TableState = {
+    inline def apply(): TableState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableState]
     }
     
-    @scala.inline
-    implicit class TableStateMutableBuilder[Self <: TableState] (val x: Self) extends AnyVal {
+    extension [Self <: TableState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAttributes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setBillingMode(value: Input[String]): Self = StObject.set(x, "billingMode", value.asInstanceOf[js.Any])
+      inline def setBillingMode(value: Input[String]): Self = StObject.set(x, "billingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingModeUndefined: Self = StObject.set(x, "billingMode", js.undefined)
+      inline def setBillingModeUndefined: Self = StObject.set(x, "billingMode", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]]]): Self = StObject.set(x, "globalSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setGlobalSecondaryIndexes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]]]): Self = StObject.set(x, "globalSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "globalSecondaryIndexes", js.undefined)
+      inline def setGlobalSecondaryIndexesUndefined: Self = StObject.set(x, "globalSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setGlobalSecondaryIndexesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]*): Self = StObject.set(x, "globalSecondaryIndexes", js.Array(value :_*))
+      inline def setGlobalSecondaryIndexesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]*): Self = StObject.set(x, "globalSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
+      inline def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashKeyUndefined: Self = StObject.set(x, "hashKey", js.undefined)
+      inline def setHashKeyUndefined: Self = StObject.set(x, "hashKey", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]]]): Self = StObject.set(x, "localSecondaryIndexes", value.asInstanceOf[js.Any])
+      inline def setLocalSecondaryIndexes(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]]]): Self = StObject.set(x, "localSecondaryIndexes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "localSecondaryIndexes", js.undefined)
+      inline def setLocalSecondaryIndexesUndefined: Self = StObject.set(x, "localSecondaryIndexes", js.undefined)
       
-      @scala.inline
-      def setLocalSecondaryIndexesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]*): Self = StObject.set(x, "localSecondaryIndexes", js.Array(value :_*))
+      inline def setLocalSecondaryIndexesVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]*): Self = StObject.set(x, "localSecondaryIndexes", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPointInTimeRecovery(value: Input[typings.pulumiAws.inputMod.dynamodb.TablePointInTimeRecovery]): Self = StObject.set(x, "pointInTimeRecovery", value.asInstanceOf[js.Any])
+      inline def setPointInTimeRecovery(value: Input[typings.pulumiAws.inputMod.dynamodb.TablePointInTimeRecovery]): Self = StObject.set(x, "pointInTimeRecovery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointInTimeRecoveryUndefined: Self = StObject.set(x, "pointInTimeRecovery", js.undefined)
+      inline def setPointInTimeRecoveryUndefined: Self = StObject.set(x, "pointInTimeRecovery", js.undefined)
       
-      @scala.inline
-      def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
+      inline def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
+      inline def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
       
-      @scala.inline
-      def setReadCapacity(value: Input[Double]): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
+      inline def setReadCapacity(value: Input[Double]): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadCapacityUndefined: Self = StObject.set(x, "readCapacity", js.undefined)
+      inline def setReadCapacityUndefined: Self = StObject.set(x, "readCapacity", js.undefined)
       
-      @scala.inline
-      def setReplicas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]]]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
+      inline def setReplicas(value: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]]]): Self = StObject.set(x, "replicas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
+      inline def setReplicasUndefined: Self = StObject.set(x, "replicas", js.undefined)
       
-      @scala.inline
-      def setReplicasVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]*): Self = StObject.set(x, "replicas", js.Array(value :_*))
+      inline def setReplicasVarargs(value: Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]*): Self = StObject.set(x, "replicas", js.Array(value :_*))
       
-      @scala.inline
-      def setServerSideEncryption(value: Input[typings.pulumiAws.inputMod.dynamodb.TableServerSideEncryption]): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+      inline def setServerSideEncryption(value: Input[typings.pulumiAws.inputMod.dynamodb.TableServerSideEncryption]): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
       
-      @scala.inline
-      def setStreamArn(value: Input[String]): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
+      inline def setStreamArn(value: Input[String]): Self = StObject.set(x, "streamArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamArnUndefined: Self = StObject.set(x, "streamArn", js.undefined)
+      inline def setStreamArnUndefined: Self = StObject.set(x, "streamArn", js.undefined)
       
-      @scala.inline
-      def setStreamEnabled(value: Input[Boolean]): Self = StObject.set(x, "streamEnabled", value.asInstanceOf[js.Any])
+      inline def setStreamEnabled(value: Input[Boolean]): Self = StObject.set(x, "streamEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamEnabledUndefined: Self = StObject.set(x, "streamEnabled", js.undefined)
+      inline def setStreamEnabledUndefined: Self = StObject.set(x, "streamEnabled", js.undefined)
       
-      @scala.inline
-      def setStreamLabel(value: Input[String]): Self = StObject.set(x, "streamLabel", value.asInstanceOf[js.Any])
+      inline def setStreamLabel(value: Input[String]): Self = StObject.set(x, "streamLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamLabelUndefined: Self = StObject.set(x, "streamLabel", js.undefined)
+      inline def setStreamLabelUndefined: Self = StObject.set(x, "streamLabel", js.undefined)
       
-      @scala.inline
-      def setStreamViewType(value: Input[String]): Self = StObject.set(x, "streamViewType", value.asInstanceOf[js.Any])
+      inline def setStreamViewType(value: Input[String]): Self = StObject.set(x, "streamViewType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamViewTypeUndefined: Self = StObject.set(x, "streamViewType", js.undefined)
+      inline def setStreamViewTypeUndefined: Self = StObject.set(x, "streamViewType", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Input[typings.pulumiAws.inputMod.dynamodb.TableTtl]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Input[typings.pulumiAws.inputMod.dynamodb.TableTtl]): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setWriteCapacity(value: Input[Double]): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
+      inline def setWriteCapacity(value: Input[Double]): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacityUndefined: Self = StObject.set(x, "writeCapacity", js.undefined)
+      inline def setWriteCapacityUndefined: Self = StObject.set(x, "writeCapacity", js.undefined)
     }
   }
 }

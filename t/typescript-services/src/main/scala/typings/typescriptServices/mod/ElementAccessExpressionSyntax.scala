@@ -108,6 +108,5 @@ object ElementAccessExpressionSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create1(expression: IExpressionSyntax, argumentExpression: IExpressionSyntax): typings.typescriptServices.TypeScript.ElementAccessExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any], argumentExpression.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ElementAccessExpressionSyntax]
+  inline def create1(expression: IExpressionSyntax, argumentExpression: IExpressionSyntax): typings.typescriptServices.TypeScript.ElementAccessExpressionSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(expression.asInstanceOf[js.Any], argumentExpression.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ElementAccessExpressionSyntax]
 }

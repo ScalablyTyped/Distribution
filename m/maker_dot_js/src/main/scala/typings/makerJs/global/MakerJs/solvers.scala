@@ -18,8 +18,7 @@ object solvers {
     * @param otherAngleInDegrees An other angle of the triangle.
     * @returns Length of the side of the triangle which is opposite of the first angle parameter.
     */
-  @scala.inline
-  def solveTriangleASA(oppositeAngleInDegrees: Double, lengthOfSideBetweenAngles: Double, otherAngleInDegrees: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("solveTriangleASA")(oppositeAngleInDegrees.asInstanceOf[js.Any], lengthOfSideBetweenAngles.asInstanceOf[js.Any], otherAngleInDegrees.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def solveTriangleASA(oppositeAngleInDegrees: Double, lengthOfSideBetweenAngles: Double, otherAngleInDegrees: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("solveTriangleASA")(oppositeAngleInDegrees.asInstanceOf[js.Any], lengthOfSideBetweenAngles.asInstanceOf[js.Any], otherAngleInDegrees.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Solves for the angle of a triangle when you know lengths of 3 sides.
@@ -29,6 +28,5 @@ object solvers {
     * @param lengthC Length of the remaining side of the triangle.
     * @returns Angle opposite of the side represented by the first parameter.
     */
-  @scala.inline
-  def solveTriangleSSS(lengthA: Double, lengthB: Double, lengthC: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("solveTriangleSSS")(lengthA.asInstanceOf[js.Any], lengthB.asInstanceOf[js.Any], lengthC.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def solveTriangleSSS(lengthA: Double, lengthB: Double, lengthC: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("solveTriangleSSS")(lengthA.asInstanceOf[js.Any], lengthB.asInstanceOf[js.Any], lengthC.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

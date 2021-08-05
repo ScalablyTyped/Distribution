@@ -20,8 +20,7 @@ trait Html5AdBuilder[Html5Ad]
 }
 object Html5AdBuilder {
   
-  @scala.inline
-  def apply[Html5Ad](
+  inline def apply[Html5Ad](
     build: () => AdWordsOperation[Html5AdBuilder[Html5Ad]],
     withCustomParameters: js.Object => Html5AdBuilder[Html5Ad],
     withDimensions: String => Html5AdBuilder[Html5Ad],
@@ -37,22 +36,16 @@ object Html5AdBuilder {
     __obj.asInstanceOf[Html5AdBuilder[Html5Ad]]
   }
   
-  @scala.inline
-  implicit class Html5AdBuilderMutableBuilder[Self <: Html5AdBuilder[?], Html5Ad] (val x: Self & Html5AdBuilder[Html5Ad]) extends AnyVal {
+  extension [Self <: Html5AdBuilder[?], Html5Ad](x: Self & Html5AdBuilder[Html5Ad]) {
     
-    @scala.inline
-    def setWithDimensions(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withDimensions", js.Any.fromFunction1(value))
+    inline def setWithDimensions(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withDimensions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithDisplayUrl(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
+    inline def setWithDisplayUrl(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withDisplayUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithEntryPoint(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withEntryPoint", js.Any.fromFunction1(value))
+    inline def setWithEntryPoint(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withEntryPoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithMediaBundle(value: Media => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withMediaBundle", js.Any.fromFunction1(value))
+    inline def setWithMediaBundle(value: Media => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withMediaBundle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithName(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+    inline def setWithName(value: String => Html5AdBuilder[Html5Ad]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }
 }

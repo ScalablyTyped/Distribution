@@ -36,8 +36,7 @@ trait DistributionOrderedCacheBehaviorForwardedValues extends StObject {
 }
 object DistributionOrderedCacheBehaviorForwardedValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cookies: Input[DistributionOrderedCacheBehaviorForwardedValuesCookies],
     queryString: Input[Boolean]
   ): DistributionOrderedCacheBehaviorForwardedValues = {
@@ -45,31 +44,22 @@ object DistributionOrderedCacheBehaviorForwardedValues {
     __obj.asInstanceOf[DistributionOrderedCacheBehaviorForwardedValues]
   }
   
-  @scala.inline
-  implicit class DistributionOrderedCacheBehaviorForwardedValuesMutableBuilder[Self <: DistributionOrderedCacheBehaviorForwardedValues] (val x: Self) extends AnyVal {
+  extension [Self <: DistributionOrderedCacheBehaviorForwardedValues](x: Self) {
     
-    @scala.inline
-    def setCookies(value: Input[DistributionOrderedCacheBehaviorForwardedValuesCookies]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: Input[DistributionOrderedCacheBehaviorForwardedValuesCookies]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: Input[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: Input[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryString(value: Input[Boolean]): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: Input[Boolean]): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringCacheKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "queryStringCacheKeys", value.asInstanceOf[js.Any])
+    inline def setQueryStringCacheKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "queryStringCacheKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringCacheKeysUndefined: Self = StObject.set(x, "queryStringCacheKeys", js.undefined)
+    inline def setQueryStringCacheKeysUndefined: Self = StObject.set(x, "queryStringCacheKeys", js.undefined)
     
-    @scala.inline
-    def setQueryStringCacheKeysVarargs(value: Input[String]*): Self = StObject.set(x, "queryStringCacheKeys", js.Array(value :_*))
+    inline def setQueryStringCacheKeysVarargs(value: Input[String]*): Self = StObject.set(x, "queryStringCacheKeys", js.Array(value :_*))
   }
 }

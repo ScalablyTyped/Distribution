@@ -14,19 +14,15 @@ trait CandidateUsage extends StObject {
 }
 object CandidateUsage {
   
-  @scala.inline
-  def apply(body: String, title: String): CandidateUsage = {
+  inline def apply(body: String, title: String): CandidateUsage = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandidateUsage]
   }
   
-  @scala.inline
-  implicit class CandidateUsageMutableBuilder[Self <: CandidateUsage] (val x: Self) extends AnyVal {
+  extension [Self <: CandidateUsage](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

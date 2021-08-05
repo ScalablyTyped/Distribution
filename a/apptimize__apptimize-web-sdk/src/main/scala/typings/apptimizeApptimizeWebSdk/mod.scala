@@ -103,28 +103,22 @@ object mod extends Shortcut {
   }
   object ConfigAttributes {
     
-    @scala.inline
-    def apply(): ConfigAttributes = {
+    inline def apply(): ConfigAttributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigAttributes]
     }
     
-    @scala.inline
-    implicit class ConfigAttributesMutableBuilder[Self <: ConfigAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigAttributes](x: Self) {
       
-      @scala.inline
-      def setLog_level(
+      inline def setLog_level(
         value: LOG_LEVEL_VERBOSE | LOG_LEVEL_DEBUG | LOG_LEVEL_INFO | LOG_LEVEL_WARN | LOG_LEVEL_ERROR | LOG_LEVEL_NONE
       ): Self = StObject.set(x, "log_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog_levelUndefined: Self = StObject.set(x, "log_level", js.undefined)
+      inline def setLog_levelUndefined: Self = StObject.set(x, "log_level", js.undefined)
       
-      @scala.inline
-      def setResult_post_delay_ms(value: Double): Self = StObject.set(x, "result_post_delay_ms", value.asInstanceOf[js.Any])
+      inline def setResult_post_delay_ms(value: Double): Self = StObject.set(x, "result_post_delay_ms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult_post_delay_msUndefined: Self = StObject.set(x, "result_post_delay_ms", js.undefined)
+      inline def setResult_post_delay_msUndefined: Self = StObject.set(x, "result_post_delay_ms", js.undefined)
     }
   }
   
@@ -158,8 +152,7 @@ object mod extends Shortcut {
   }
   object VariantInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getAnonymousUserId: () => String,
       getCurrentPhase: () => Double,
       getCycle: () => Double,
@@ -177,44 +170,31 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VariantInfo]
     }
     
-    @scala.inline
-    implicit class VariantInfoMutableBuilder[Self <: VariantInfo] (val x: Self) extends AnyVal {
+    extension [Self <: VariantInfo](x: Self) {
       
-      @scala.inline
-      def setGetAnonymousUserId(value: () => String): Self = StObject.set(x, "getAnonymousUserId", js.Any.fromFunction0(value))
+      inline def setGetAnonymousUserId(value: () => String): Self = StObject.set(x, "getAnonymousUserId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentPhase(value: () => Double): Self = StObject.set(x, "getCurrentPhase", js.Any.fromFunction0(value))
+      inline def setGetCurrentPhase(value: () => Double): Self = StObject.set(x, "getCurrentPhase", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCycle(value: () => Double): Self = StObject.set(x, "getCycle", js.Any.fromFunction0(value))
+      inline def setGetCycle(value: () => Double): Self = StObject.set(x, "getCycle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExperimentId(value: () => Double): Self = StObject.set(x, "getExperimentId", js.Any.fromFunction0(value))
+      inline def setGetExperimentId(value: () => Double): Self = StObject.set(x, "getExperimentId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExperimentName(value: () => String): Self = StObject.set(x, "getExperimentName", js.Any.fromFunction0(value))
+      inline def setGetExperimentName(value: () => String): Self = StObject.set(x, "getExperimentName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExperimentType(value: () => Double): Self = StObject.set(x, "getExperimentType", js.Any.fromFunction0(value))
+      inline def setGetExperimentType(value: () => Double): Self = StObject.set(x, "getExperimentType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExperimentTypeName(value: () => String): Self = StObject.set(x, "getExperimentTypeName", js.Any.fromFunction0(value))
+      inline def setGetExperimentTypeName(value: () => String): Self = StObject.set(x, "getExperimentTypeName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParticipationPhase(value: () => Double): Self = StObject.set(x, "getParticipationPhase", js.Any.fromFunction0(value))
+      inline def setGetParticipationPhase(value: () => Double): Self = StObject.set(x, "getParticipationPhase", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserHasParticipated(value: () => Boolean): Self = StObject.set(x, "getUserHasParticipated", js.Any.fromFunction0(value))
+      inline def setGetUserHasParticipated(value: () => Boolean): Self = StObject.set(x, "getUserHasParticipated", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserId(value: () => String): Self = StObject.set(x, "getUserId", js.Any.fromFunction0(value))
+      inline def setGetUserId(value: () => String): Self = StObject.set(x, "getUserId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVariantId(value: () => Double): Self = StObject.set(x, "getVariantId", js.Any.fromFunction0(value))
+      inline def setGetVariantId(value: () => Double): Self = StObject.set(x, "getVariantId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVariantName(value: () => String): Self = StObject.set(x, "getVariantName", js.Any.fromFunction0(value))
+      inline def setGetVariantName(value: () => String): Self = StObject.set(x, "getVariantName", js.Any.fromFunction0(value))
     }
   }
   

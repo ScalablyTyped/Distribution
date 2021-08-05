@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecurrenceRangeType extends StObject
 object RecurrenceRangeType {
   
-  @scala.inline
-  def endDate: typings.microsoftGraph.microsoftGraphStrings.endDate = "endDate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.endDate]
+  inline def endDate: typings.microsoftGraph.microsoftGraphStrings.endDate = "endDate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.endDate]
   
-  @scala.inline
-  def noEnd: typings.microsoftGraph.microsoftGraphStrings.noEnd = "noEnd".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noEnd]
+  inline def noEnd: typings.microsoftGraph.microsoftGraphStrings.noEnd = "noEnd".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noEnd]
   
-  @scala.inline
-  def numbered: typings.microsoftGraph.microsoftGraphStrings.numbered = "numbered".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numbered]
+  inline def numbered: typings.microsoftGraph.microsoftGraphStrings.numbered = "numbered".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numbered]
 }

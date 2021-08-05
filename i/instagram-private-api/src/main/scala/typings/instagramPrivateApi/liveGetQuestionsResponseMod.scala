@@ -22,8 +22,7 @@ object liveGetQuestionsResponseMod {
   }
   object LiveGetQuestionsResponseQuestionsItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       qid: String,
       source: String,
       story_sticker_text: String,
@@ -35,26 +34,19 @@ object liveGetQuestionsResponseMod {
       __obj.asInstanceOf[LiveGetQuestionsResponseQuestionsItem]
     }
     
-    @scala.inline
-    implicit class LiveGetQuestionsResponseQuestionsItemMutableBuilder[Self <: LiveGetQuestionsResponseQuestionsItem] (val x: Self) extends AnyVal {
+    extension [Self <: LiveGetQuestionsResponseQuestionsItem](x: Self) {
       
-      @scala.inline
-      def setQid(value: String): Self = StObject.set(x, "qid", value.asInstanceOf[js.Any])
+      inline def setQid(value: String): Self = StObject.set(x, "qid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory_sticker_text(value: String): Self = StObject.set(x, "story_sticker_text", value.asInstanceOf[js.Any])
+      inline def setStory_sticker_text(value: String): Self = StObject.set(x, "story_sticker_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: LiveGetQuestionsResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: LiveGetQuestionsResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,23 +58,18 @@ object liveGetQuestionsResponseMod {
   }
   object LiveGetQuestionsResponseRootObject {
     
-    @scala.inline
-    def apply(questions: js.Array[LiveGetQuestionsResponseQuestionsItem], status: String): LiveGetQuestionsResponseRootObject = {
+    inline def apply(questions: js.Array[LiveGetQuestionsResponseQuestionsItem], status: String): LiveGetQuestionsResponseRootObject = {
       val __obj = js.Dynamic.literal(questions = questions.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[LiveGetQuestionsResponseRootObject]
     }
     
-    @scala.inline
-    implicit class LiveGetQuestionsResponseRootObjectMutableBuilder[Self <: LiveGetQuestionsResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: LiveGetQuestionsResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setQuestions(value: js.Array[LiveGetQuestionsResponseQuestionsItem]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
+      inline def setQuestions(value: js.Array[LiveGetQuestionsResponseQuestionsItem]): Self = StObject.set(x, "questions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuestionsVarargs(value: LiveGetQuestionsResponseQuestionsItem*): Self = StObject.set(x, "questions", js.Array(value :_*))
+      inline def setQuestionsVarargs(value: LiveGetQuestionsResponseQuestionsItem*): Self = StObject.set(x, "questions", js.Array(value :_*))
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,8 +91,7 @@ object liveGetQuestionsResponseMod {
   }
   object LiveGetQuestionsResponseUser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       full_name: String,
       is_private: Boolean,
       is_verified: Boolean,
@@ -118,29 +104,21 @@ object liveGetQuestionsResponseMod {
       __obj.asInstanceOf[LiveGetQuestionsResponseUser]
     }
     
-    @scala.inline
-    implicit class LiveGetQuestionsResponseUserMutableBuilder[Self <: LiveGetQuestionsResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: LiveGetQuestionsResponseUser](x: Self) {
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+      inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+      inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+      inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+      inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

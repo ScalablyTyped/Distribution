@@ -20,22 +20,17 @@ trait GetCoipPoolsFilter extends StObject {
 }
 object GetCoipPoolsFilter {
   
-  @scala.inline
-  def apply(name: String, values: js.Array[String]): GetCoipPoolsFilter = {
+  inline def apply(name: String, values: js.Array[String]): GetCoipPoolsFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCoipPoolsFilter]
   }
   
-  @scala.inline
-  implicit class GetCoipPoolsFilterMutableBuilder[Self <: GetCoipPoolsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GetCoipPoolsFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

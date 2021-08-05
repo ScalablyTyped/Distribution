@@ -18,19 +18,15 @@ trait UpdateConnectionAliasPermissionRequest extends StObject {
 }
 object UpdateConnectionAliasPermissionRequest {
   
-  @scala.inline
-  def apply(AliasId: ConnectionAliasId, ConnectionAliasPermission: ConnectionAliasPermission): UpdateConnectionAliasPermissionRequest = {
+  inline def apply(AliasId: ConnectionAliasId, ConnectionAliasPermission: ConnectionAliasPermission): UpdateConnectionAliasPermissionRequest = {
     val __obj = js.Dynamic.literal(AliasId = AliasId.asInstanceOf[js.Any], ConnectionAliasPermission = ConnectionAliasPermission.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateConnectionAliasPermissionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateConnectionAliasPermissionRequestMutableBuilder[Self <: UpdateConnectionAliasPermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConnectionAliasPermissionRequest](x: Self) {
     
-    @scala.inline
-    def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
+    inline def setAliasId(value: ConnectionAliasId): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionAliasPermission(value: ConnectionAliasPermission): Self = StObject.set(x, "ConnectionAliasPermission", value.asInstanceOf[js.Any])
+    inline def setConnectionAliasPermission(value: ConnectionAliasPermission): Self = StObject.set(x, "ConnectionAliasPermission", value.asInstanceOf[js.Any])
   }
 }

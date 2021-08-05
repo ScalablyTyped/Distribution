@@ -23,8 +23,7 @@ object cardBodyMod {
     @JSImport("antd-mobile/lib/card/CardBody", "default.defaultProps")
     @js.native
     def defaultProps: PrefixCls = js.native
-    @scala.inline
-    def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -39,20 +38,16 @@ object cardBodyMod {
   }
   object CardBodyProps {
     
-    @scala.inline
-    def apply(): CardBodyProps = {
+    inline def apply(): CardBodyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardBodyProps]
     }
     
-    @scala.inline
-    implicit class CardBodyPropsMutableBuilder[Self <: CardBodyProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardBodyProps](x: Self) {
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
 }

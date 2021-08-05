@@ -29,10 +29,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extend(baseDriver: WebDriver): ExtendedWebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(baseDriver.asInstanceOf[js.Any]).asInstanceOf[ExtendedWebDriver]
-  @scala.inline
-  def extend(baseDriver: WebDriver, fallbackGracefully: Boolean): ExtendedWebDriver = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(baseDriver.asInstanceOf[js.Any], fallbackGracefully.asInstanceOf[js.Any])).asInstanceOf[ExtendedWebDriver]
+  inline def extend(baseDriver: WebDriver): ExtendedWebDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(baseDriver.asInstanceOf[js.Any]).asInstanceOf[ExtendedWebDriver]
+  inline def extend(baseDriver: WebDriver, fallbackGracefully: Boolean): ExtendedWebDriver = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(baseDriver.asInstanceOf[js.Any], fallbackGracefully.asInstanceOf[js.Any])).asInstanceOf[ExtendedWebDriver]
   
   @js.native
   trait ExtendedWebDriver extends WebDriver {

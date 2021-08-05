@@ -14,28 +14,21 @@ trait BroadcastId_ extends StObject {
 }
 object BroadcastId_ {
   
-  @scala.inline
-  def apply(broadcastId: String): BroadcastId_ = {
+  inline def apply(broadcastId: String): BroadcastId_ = {
     val __obj = js.Dynamic.literal(broadcastId = broadcastId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BroadcastId_]
   }
   
-  @scala.inline
-  implicit class BroadcastId_MutableBuilder[Self <: BroadcastId_] (val x: Self) extends AnyVal {
+  extension [Self <: BroadcastId_](x: Self) {
     
-    @scala.inline
-    def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
+    inline def setBroadcastId(value: String): Self = StObject.set(x, "broadcastId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsRequested(value: Double): Self = StObject.set(x, "commentsRequested", value.asInstanceOf[js.Any])
+    inline def setCommentsRequested(value: Double): Self = StObject.set(x, "commentsRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsRequestedUndefined: Self = StObject.set(x, "commentsRequested", js.undefined)
+    inline def setCommentsRequestedUndefined: Self = StObject.set(x, "commentsRequested", js.undefined)
     
-    @scala.inline
-    def setLastCommentTs(value: String | Double): Self = StObject.set(x, "lastCommentTs", value.asInstanceOf[js.Any])
+    inline def setLastCommentTs(value: String | Double): Self = StObject.set(x, "lastCommentTs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastCommentTsUndefined: Self = StObject.set(x, "lastCommentTs", js.undefined)
+    inline def setLastCommentTsUndefined: Self = StObject.set(x, "lastCommentTs", js.undefined)
   }
 }

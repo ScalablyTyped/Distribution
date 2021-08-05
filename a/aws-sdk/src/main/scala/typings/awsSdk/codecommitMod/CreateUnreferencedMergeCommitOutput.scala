@@ -18,25 +18,19 @@ trait CreateUnreferencedMergeCommitOutput extends StObject {
 }
 object CreateUnreferencedMergeCommitOutput {
   
-  @scala.inline
-  def apply(): CreateUnreferencedMergeCommitOutput = {
+  inline def apply(): CreateUnreferencedMergeCommitOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateUnreferencedMergeCommitOutput]
   }
   
-  @scala.inline
-  implicit class CreateUnreferencedMergeCommitOutputMutableBuilder[Self <: CreateUnreferencedMergeCommitOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateUnreferencedMergeCommitOutput](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: ObjectId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
+    inline def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
     
-    @scala.inline
-    def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+    inline def setTreeId(value: ObjectId): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
+    inline def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
   }
 }

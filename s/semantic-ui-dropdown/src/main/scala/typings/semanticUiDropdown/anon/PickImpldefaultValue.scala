@@ -11,16 +11,13 @@ trait PickImpldefaultValue extends StObject {
 }
 object PickImpldefaultValue {
   
-  @scala.inline
-  def apply(defaultValue: String): PickImpldefaultValue = {
+  inline def apply(defaultValue: String): PickImpldefaultValue = {
     val __obj = js.Dynamic.literal(defaultValue = defaultValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldefaultValue]
   }
   
-  @scala.inline
-  implicit class PickImpldefaultValueMutableBuilder[Self <: PickImpldefaultValue] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldefaultValue](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }
 }

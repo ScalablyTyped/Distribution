@@ -40,8 +40,7 @@ trait SearchResult
 }
 object SearchResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     extent: Extent,
     feature: Graphic,
@@ -54,19 +53,14 @@ object SearchResult {
     __obj.asInstanceOf[SearchResult]
   }
   
-  @scala.inline
-  implicit class SearchResultMutableBuilder[Self <: SearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResult](x: Self) {
     
-    @scala.inline
-    def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Graphic): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Graphic): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

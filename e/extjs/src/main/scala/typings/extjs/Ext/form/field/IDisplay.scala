@@ -43,55 +43,39 @@ trait IDisplay
 }
 object IDisplay {
   
-  @scala.inline
-  def apply(): IDisplay = {
+  inline def apply(): IDisplay = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDisplay]
   }
   
-  @scala.inline
-  implicit class IDisplayMutableBuilder[Self <: IDisplay] (val x: Self) extends AnyVal {
+  extension [Self <: IDisplay](x: Self) {
     
-    @scala.inline
-    def setGetRawValue(value: () => String): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
+    inline def setGetRawValue(value: () => String): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRawValueUndefined: Self = StObject.set(x, "getRawValue", js.undefined)
+    inline def setGetRawValueUndefined: Self = StObject.set(x, "getRawValue", js.undefined)
     
-    @scala.inline
-    def setHtmlEncode(value: Boolean): Self = StObject.set(x, "htmlEncode", value.asInstanceOf[js.Any])
+    inline def setHtmlEncode(value: Boolean): Self = StObject.set(x, "htmlEncode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEncodeUndefined: Self = StObject.set(x, "htmlEncode", js.undefined)
+    inline def setHtmlEncodeUndefined: Self = StObject.set(x, "htmlEncode", js.undefined)
     
-    @scala.inline
-    def setIsDirty(value: () => Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
+    inline def setIsDirty(value: () => Boolean): Self = StObject.set(x, "isDirty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
+    inline def setIsDirtyUndefined: Self = StObject.set(x, "isDirty", js.undefined)
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
     
-    @scala.inline
-    def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: js.Any): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+    inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
   }
 }

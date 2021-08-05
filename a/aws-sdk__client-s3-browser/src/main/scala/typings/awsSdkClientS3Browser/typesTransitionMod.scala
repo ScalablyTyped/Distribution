@@ -29,32 +29,24 @@ object typesTransitionMod {
   }
   object Transition {
     
-    @scala.inline
-    def apply(): Transition = {
+    inline def apply(): Transition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Transition]
     }
     
-    @scala.inline
-    implicit class TransitionMutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
+    extension [Self <: Transition](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date | String | Double): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date | String | Double): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
       
-      @scala.inline
-      def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+      inline def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysUndefined: Self = StObject.set(x, "Days", js.undefined)
+      inline def setDaysUndefined: Self = StObject.set(x, "Days", js.undefined)
       
-      @scala.inline
-      def setStorageClass(value: GLACIER | STANDARD_IA | ONEZONE_IA | String): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+      inline def setStorageClass(value: GLACIER | STANDARD_IA | ONEZONE_IA | String): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
+      inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
     }
   }
   
@@ -70,20 +62,16 @@ object typesTransitionMod {
   }
   object UnmarshalledTransition {
     
-    @scala.inline
-    def apply(): UnmarshalledTransition = {
+    inline def apply(): UnmarshalledTransition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledTransition]
     }
     
-    @scala.inline
-    implicit class UnmarshalledTransitionMutableBuilder[Self <: UnmarshalledTransition] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledTransition](x: Self) {
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     }
   }
 }

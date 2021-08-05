@@ -25,8 +25,7 @@ trait IMFilesVersion extends StObject {
 }
 object IMFilesVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Build: Double,
     Clone: () => IMFilesVersion,
     CompareTo: IMFilesVersion => Double,
@@ -40,31 +39,22 @@ object IMFilesVersion {
     __obj.asInstanceOf[IMFilesVersion]
   }
   
-  @scala.inline
-  implicit class IMFilesVersionMutableBuilder[Self <: IMFilesVersion] (val x: Self) extends AnyVal {
+  extension [Self <: IMFilesVersion](x: Self) {
     
-    @scala.inline
-    def setBuild(value: Double): Self = StObject.set(x, "Build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Double): Self = StObject.set(x, "Build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IMFilesVersion): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IMFilesVersion): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompareTo(value: IMFilesVersion => Double): Self = StObject.set(x, "CompareTo", js.Any.fromFunction1(value))
+    inline def setCompareTo(value: IMFilesVersion => Double): Self = StObject.set(x, "CompareTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisplay(value: String): Self = StObject.set(x, "Display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: String): Self = StObject.set(x, "Display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajor(value: Double): Self = StObject.set(x, "Major", value.asInstanceOf[js.Any])
+    inline def setMajor(value: Double): Self = StObject.set(x, "Major", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinor(value: Double): Self = StObject.set(x, "Minor", value.asInstanceOf[js.Any])
+    inline def setMinor(value: Double): Self = StObject.set(x, "Minor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatch(value: Double): Self = StObject.set(x, "Patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Double): Self = StObject.set(x, "Patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwarePlatform(value: MFSoftwarePlatformType): Self = StObject.set(x, "SoftwarePlatform", value.asInstanceOf[js.Any])
+    inline def setSoftwarePlatform(value: MFSoftwarePlatformType): Self = StObject.set(x, "SoftwarePlatform", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ object textpathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def drawTextOnPath(
+  inline def drawTextOnPath(
     flatCoordinates: js.Array[Double],
     offset: Double,
     end: Double,

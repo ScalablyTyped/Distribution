@@ -9,8 +9,7 @@ trait GetSegmentVersionInput
      with typings.awsSdkClientPinpointBrowser.typesGetSegmentVersionInputMod.GetSegmentVersionInput
 object GetSegmentVersionInput {
   
-  @scala.inline
-  def apply(ApplicationId: String, SegmentId: String, Version: String): GetSegmentVersionInput = {
+  inline def apply(ApplicationId: String, SegmentId: String, Version: String): GetSegmentVersionInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SegmentId = SegmentId.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSegmentVersionInput]
   }

@@ -15,22 +15,17 @@ trait Name[State /* <: NavigationState[ParamListBase] */] extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply[State /* <: NavigationState[ParamListBase] */](name: String): Name[State] = {
+  inline def apply[State /* <: NavigationState[ParamListBase] */](name: String): Name[State] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name[State]]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Name[State]) extends AnyVal {
+  extension [Self <: Name[?], State /* <: NavigationState[ParamListBase] */](x: Self & Name[State]) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: NavigatorScreenParams[State, NavigationState[ParamListBase]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: NavigatorScreenParams[State, NavigationState[ParamListBase]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

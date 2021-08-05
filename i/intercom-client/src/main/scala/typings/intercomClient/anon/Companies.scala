@@ -14,23 +14,18 @@ trait Companies extends StObject {
 }
 object Companies {
   
-  @scala.inline
-  def apply(companies: js.Array[Company]): Companies = {
+  inline def apply(companies: js.Array[Company]): Companies = {
     val __obj = js.Dynamic.literal(companies = companies.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("company.list")
     __obj.asInstanceOf[Companies]
   }
   
-  @scala.inline
-  implicit class CompaniesMutableBuilder[Self <: Companies] (val x: Self) extends AnyVal {
+  extension [Self <: Companies](x: Self) {
     
-    @scala.inline
-    def setCompanies(value: js.Array[Company]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
+    inline def setCompanies(value: js.Array[Company]): Self = StObject.set(x, "companies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompaniesVarargs(value: Company*): Self = StObject.set(x, "companies", js.Array(value :_*))
+    inline def setCompaniesVarargs(value: Company*): Self = StObject.set(x, "companies", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: companyDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: companyDotlist): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

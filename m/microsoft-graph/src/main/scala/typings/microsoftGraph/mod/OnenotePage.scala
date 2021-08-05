@@ -49,115 +49,79 @@ trait OnenotePage
 }
 object OnenotePage {
   
-  @scala.inline
-  def apply(): OnenotePage = {
+  inline def apply(): OnenotePage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenotePage]
   }
   
-  @scala.inline
-  implicit class OnenotePageMutableBuilder[Self <: OnenotePage] (val x: Self) extends AnyVal {
+  extension [Self <: OnenotePage](x: Self) {
     
-    @scala.inline
-    def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setContentUrl(value: NullableOption[String]): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: NullableOption[String]): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
+    inline def setContentUrlNull: Self = StObject.set(x, "contentUrl", null)
     
-    @scala.inline
-    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
-    @scala.inline
-    def setCreatedByAppId(value: NullableOption[String]): Self = StObject.set(x, "createdByAppId", value.asInstanceOf[js.Any])
+    inline def setCreatedByAppId(value: NullableOption[String]): Self = StObject.set(x, "createdByAppId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByAppIdNull: Self = StObject.set(x, "createdByAppId", null)
+    inline def setCreatedByAppIdNull: Self = StObject.set(x, "createdByAppId", null)
     
-    @scala.inline
-    def setCreatedByAppIdUndefined: Self = StObject.set(x, "createdByAppId", js.undefined)
+    inline def setCreatedByAppIdUndefined: Self = StObject.set(x, "createdByAppId", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
+    inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setLevel(value: NullableOption[Double]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: NullableOption[Double]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelNull: Self = StObject.set(x, "level", null)
+    inline def setLevelNull: Self = StObject.set(x, "level", null)
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setLinks(value: NullableOption[PageLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: NullableOption[PageLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksNull: Self = StObject.set(x, "links", null)
+    inline def setLinksNull: Self = StObject.set(x, "links", null)
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setOrder(value: NullableOption[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: NullableOption[Double]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderNull: Self = StObject.set(x, "order", null)
+    inline def setOrderNull: Self = StObject.set(x, "order", null)
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setParentNotebook(value: NullableOption[Notebook]): Self = StObject.set(x, "parentNotebook", value.asInstanceOf[js.Any])
+    inline def setParentNotebook(value: NullableOption[Notebook]): Self = StObject.set(x, "parentNotebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNotebookNull: Self = StObject.set(x, "parentNotebook", null)
+    inline def setParentNotebookNull: Self = StObject.set(x, "parentNotebook", null)
     
-    @scala.inline
-    def setParentNotebookUndefined: Self = StObject.set(x, "parentNotebook", js.undefined)
+    inline def setParentNotebookUndefined: Self = StObject.set(x, "parentNotebook", js.undefined)
     
-    @scala.inline
-    def setParentSection(value: NullableOption[OnenoteSection]): Self = StObject.set(x, "parentSection", value.asInstanceOf[js.Any])
+    inline def setParentSection(value: NullableOption[OnenoteSection]): Self = StObject.set(x, "parentSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentSectionNull: Self = StObject.set(x, "parentSection", null)
+    inline def setParentSectionNull: Self = StObject.set(x, "parentSection", null)
     
-    @scala.inline
-    def setParentSectionUndefined: Self = StObject.set(x, "parentSection", js.undefined)
+    inline def setParentSectionUndefined: Self = StObject.set(x, "parentSection", js.undefined)
     
-    @scala.inline
-    def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleNull: Self = StObject.set(x, "title", null)
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUserTags(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "userTags", value.asInstanceOf[js.Any])
+    inline def setUserTags(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "userTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTagsNull: Self = StObject.set(x, "userTags", null)
+    inline def setUserTagsNull: Self = StObject.set(x, "userTags", null)
     
-    @scala.inline
-    def setUserTagsUndefined: Self = StObject.set(x, "userTags", js.undefined)
+    inline def setUserTagsUndefined: Self = StObject.set(x, "userTags", js.undefined)
     
-    @scala.inline
-    def setUserTagsVarargs(value: String*): Self = StObject.set(x, "userTags", js.Array(value :_*))
+    inline def setUserTagsVarargs(value: String*): Self = StObject.set(x, "userTags", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait DescribePrincipalIdFormatResult extends StObject {
 }
 object DescribePrincipalIdFormatResult {
   
-  @scala.inline
-  def apply(): DescribePrincipalIdFormatResult = {
+  inline def apply(): DescribePrincipalIdFormatResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePrincipalIdFormatResult]
   }
   
-  @scala.inline
-  implicit class DescribePrincipalIdFormatResultMutableBuilder[Self <: DescribePrincipalIdFormatResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePrincipalIdFormatResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPrincipals(value: PrincipalIdFormatList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
+    inline def setPrincipals(value: PrincipalIdFormatList): Self = StObject.set(x, "Principals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
+    inline def setPrincipalsUndefined: Self = StObject.set(x, "Principals", js.undefined)
     
-    @scala.inline
-    def setPrincipalsVarargs(value: PrincipalIdFormat*): Self = StObject.set(x, "Principals", js.Array(value :_*))
+    inline def setPrincipalsVarargs(value: PrincipalIdFormat*): Self = StObject.set(x, "Principals", js.Array(value :_*))
   }
 }

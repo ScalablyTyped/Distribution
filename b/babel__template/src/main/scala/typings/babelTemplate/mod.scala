@@ -211,50 +211,36 @@ object mod extends Shortcut {
   }
   object TemplateBuilderOptions {
     
-    @scala.inline
-    def apply(): TemplateBuilderOptions = {
+    inline def apply(): TemplateBuilderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TemplateBuilderOptions]
     }
     
-    @scala.inline
-    implicit class TemplateBuilderOptionsMutableBuilder[Self <: TemplateBuilderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TemplateBuilderOptions](x: Self) {
       
-      @scala.inline
-      def setPlaceholderPattern(value: RegExp | `false`): Self = StObject.set(x, "placeholderPattern", value.asInstanceOf[js.Any])
+      inline def setPlaceholderPattern(value: RegExp | `false`): Self = StObject.set(x, "placeholderPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderPatternNull: Self = StObject.set(x, "placeholderPattern", null)
+      inline def setPlaceholderPatternNull: Self = StObject.set(x, "placeholderPattern", null)
       
-      @scala.inline
-      def setPlaceholderPatternUndefined: Self = StObject.set(x, "placeholderPattern", js.undefined)
+      inline def setPlaceholderPatternUndefined: Self = StObject.set(x, "placeholderPattern", js.undefined)
       
-      @scala.inline
-      def setPlaceholderWhitelist(value: Set[String]): Self = StObject.set(x, "placeholderWhitelist", value.asInstanceOf[js.Any])
+      inline def setPlaceholderWhitelist(value: Set[String]): Self = StObject.set(x, "placeholderWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderWhitelistNull: Self = StObject.set(x, "placeholderWhitelist", null)
+      inline def setPlaceholderWhitelistNull: Self = StObject.set(x, "placeholderWhitelist", null)
       
-      @scala.inline
-      def setPlaceholderWhitelistUndefined: Self = StObject.set(x, "placeholderWhitelist", js.undefined)
+      inline def setPlaceholderWhitelistUndefined: Self = StObject.set(x, "placeholderWhitelist", js.undefined)
       
-      @scala.inline
-      def setPreserveComments(value: Boolean): Self = StObject.set(x, "preserveComments", value.asInstanceOf[js.Any])
+      inline def setPreserveComments(value: Boolean): Self = StObject.set(x, "preserveComments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveCommentsNull: Self = StObject.set(x, "preserveComments", null)
+      inline def setPreserveCommentsNull: Self = StObject.set(x, "preserveComments", null)
       
-      @scala.inline
-      def setPreserveCommentsUndefined: Self = StObject.set(x, "preserveComments", js.undefined)
+      inline def setPreserveCommentsUndefined: Self = StObject.set(x, "preserveComments", js.undefined)
       
-      @scala.inline
-      def setSyntacticPlaceholders(value: Boolean): Self = StObject.set(x, "syntacticPlaceholders", value.asInstanceOf[js.Any])
+      inline def setSyntacticPlaceholders(value: Boolean): Self = StObject.set(x, "syntacticPlaceholders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyntacticPlaceholdersNull: Self = StObject.set(x, "syntacticPlaceholders", null)
+      inline def setSyntacticPlaceholdersNull: Self = StObject.set(x, "syntacticPlaceholders", null)
       
-      @scala.inline
-      def setSyntacticPlaceholdersUndefined: Self = StObject.set(x, "syntacticPlaceholders", js.undefined)
+      inline def setSyntacticPlaceholdersUndefined: Self = StObject.set(x, "syntacticPlaceholders", js.undefined)
     }
   }
   

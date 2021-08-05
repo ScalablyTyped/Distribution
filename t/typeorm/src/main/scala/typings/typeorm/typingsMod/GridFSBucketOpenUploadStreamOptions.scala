@@ -28,40 +28,29 @@ trait GridFSBucketOpenUploadStreamOptions extends StObject {
 }
 object GridFSBucketOpenUploadStreamOptions {
   
-  @scala.inline
-  def apply(): GridFSBucketOpenUploadStreamOptions = {
+  inline def apply(): GridFSBucketOpenUploadStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridFSBucketOpenUploadStreamOptions]
   }
   
-  @scala.inline
-  implicit class GridFSBucketOpenUploadStreamOptionsMutableBuilder[Self <: GridFSBucketOpenUploadStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridFSBucketOpenUploadStreamOptions](x: Self) {
     
-    @scala.inline
-    def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
     
-    @scala.inline
-    def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
     
-    @scala.inline
-    def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
+    inline def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
+    inline def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Object): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
   }
 }

@@ -14,31 +14,23 @@ trait JQueryCustomSelectOption extends StObject {
 }
 object JQueryCustomSelectOption {
   
-  @scala.inline
-  def apply(): JQueryCustomSelectOption = {
+  inline def apply(): JQueryCustomSelectOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryCustomSelectOption]
   }
   
-  @scala.inline
-  implicit class JQueryCustomSelectOptionMutableBuilder[Self <: JQueryCustomSelectOption] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryCustomSelectOption](x: Self) {
     
-    @scala.inline
-    def setCustomClass(value: String): Self = StObject.set(x, "customClass", value.asInstanceOf[js.Any])
+    inline def setCustomClass(value: String): Self = StObject.set(x, "customClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomClassUndefined: Self = StObject.set(x, "customClass", js.undefined)
+    inline def setCustomClassUndefined: Self = StObject.set(x, "customClass", js.undefined)
     
-    @scala.inline
-    def setMapClass(value: Boolean): Self = StObject.set(x, "mapClass", value.asInstanceOf[js.Any])
+    inline def setMapClass(value: Boolean): Self = StObject.set(x, "mapClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapClassUndefined: Self = StObject.set(x, "mapClass", js.undefined)
+    inline def setMapClassUndefined: Self = StObject.set(x, "mapClass", js.undefined)
     
-    @scala.inline
-    def setMapStyle(value: Boolean): Self = StObject.set(x, "mapStyle", value.asInstanceOf[js.Any])
+    inline def setMapStyle(value: Boolean): Self = StObject.set(x, "mapStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapStyleUndefined: Self = StObject.set(x, "mapStyle", js.undefined)
+    inline def setMapStyleUndefined: Self = StObject.set(x, "mapStyle", js.undefined)
   }
 }

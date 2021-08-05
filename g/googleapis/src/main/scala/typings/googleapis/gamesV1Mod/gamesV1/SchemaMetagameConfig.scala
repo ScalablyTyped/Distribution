@@ -28,34 +28,25 @@ trait SchemaMetagameConfig extends StObject {
 }
 object SchemaMetagameConfig {
   
-  @scala.inline
-  def apply(): SchemaMetagameConfig = {
+  inline def apply(): SchemaMetagameConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetagameConfig]
   }
   
-  @scala.inline
-  implicit class SchemaMetagameConfigMutableBuilder[Self <: SchemaMetagameConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetagameConfig](x: Self) {
     
-    @scala.inline
-    def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
+    inline def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
+    inline def setCurrentVersionUndefined: Self = StObject.set(x, "currentVersion", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlayerLevels(value: js.Array[SchemaPlayerLevel]): Self = StObject.set(x, "playerLevels", value.asInstanceOf[js.Any])
+    inline def setPlayerLevels(value: js.Array[SchemaPlayerLevel]): Self = StObject.set(x, "playerLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerLevelsUndefined: Self = StObject.set(x, "playerLevels", js.undefined)
+    inline def setPlayerLevelsUndefined: Self = StObject.set(x, "playerLevels", js.undefined)
     
-    @scala.inline
-    def setPlayerLevelsVarargs(value: SchemaPlayerLevel*): Self = StObject.set(x, "playerLevels", js.Array(value :_*))
+    inline def setPlayerLevelsVarargs(value: SchemaPlayerLevel*): Self = StObject.set(x, "playerLevels", js.Array(value :_*))
   }
 }

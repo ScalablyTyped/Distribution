@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceCandidateType extends StObject
 object RTCIceCandidateType {
   
-  @scala.inline
-  def host: typings.std.stdStrings.host = "host".asInstanceOf[typings.std.stdStrings.host]
+  inline def host: typings.std.stdStrings.host = "host".asInstanceOf[typings.std.stdStrings.host]
   
-  @scala.inline
-  def prflx: typings.std.stdStrings.prflx = "prflx".asInstanceOf[typings.std.stdStrings.prflx]
+  inline def prflx: typings.std.stdStrings.prflx = "prflx".asInstanceOf[typings.std.stdStrings.prflx]
   
-  @scala.inline
-  def relay: typings.std.stdStrings.relay = "relay".asInstanceOf[typings.std.stdStrings.relay]
+  inline def relay: typings.std.stdStrings.relay = "relay".asInstanceOf[typings.std.stdStrings.relay]
   
-  @scala.inline
-  def srflx: typings.std.stdStrings.srflx = "srflx".asInstanceOf[typings.std.stdStrings.srflx]
+  inline def srflx: typings.std.stdStrings.srflx = "srflx".asInstanceOf[typings.std.stdStrings.srflx]
 }

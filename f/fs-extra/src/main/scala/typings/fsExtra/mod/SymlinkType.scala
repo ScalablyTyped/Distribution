@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SymlinkType extends StObject
 object SymlinkType {
   
-  @scala.inline
-  def dir: typings.fsExtra.fsExtraStrings.dir = "dir".asInstanceOf[typings.fsExtra.fsExtraStrings.dir]
+  inline def dir: typings.fsExtra.fsExtraStrings.dir = "dir".asInstanceOf[typings.fsExtra.fsExtraStrings.dir]
   
-  @scala.inline
-  def file: typings.fsExtra.fsExtraStrings.file = "file".asInstanceOf[typings.fsExtra.fsExtraStrings.file]
+  inline def file: typings.fsExtra.fsExtraStrings.file = "file".asInstanceOf[typings.fsExtra.fsExtraStrings.file]
   
-  @scala.inline
-  def junction: typings.fsExtra.fsExtraStrings.junction = "junction".asInstanceOf[typings.fsExtra.fsExtraStrings.junction]
+  inline def junction: typings.fsExtra.fsExtraStrings.junction = "junction".asInstanceOf[typings.fsExtra.fsExtraStrings.junction]
 }

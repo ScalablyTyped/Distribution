@@ -52,8 +52,7 @@ object mod {
   }
   object HttpGateway {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _createGatewayServer: (js.Any, js.Any, js.Any) => js.Promise[js.Any],
       _ipfs: js.Any,
       _log: DebuggererrorDebugger,
@@ -64,32 +63,23 @@ object mod {
       __obj.asInstanceOf[HttpGateway]
     }
     
-    @scala.inline
-    implicit class HttpGatewayMutableBuilder[Self <: HttpGateway] (val x: Self) extends AnyVal {
+    extension [Self <: HttpGateway](x: Self) {
       
-      @scala.inline
-      def setStart(value: () => js.Promise[HttpGateway]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => js.Promise[HttpGateway]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => js.Promise[HttpGateway]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Promise[HttpGateway]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_createGatewayServer(value: (js.Any, js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "_createGatewayServer", js.Any.fromFunction3(value))
+      inline def set_createGatewayServer(value: (js.Any, js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "_createGatewayServer", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_gatewayServers(value: js.Array[js.Any]): Self = StObject.set(x, "_gatewayServers", value.asInstanceOf[js.Any])
+      inline def set_gatewayServers(value: js.Array[js.Any]): Self = StObject.set(x, "_gatewayServers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_gatewayServersUndefined: Self = StObject.set(x, "_gatewayServers", js.undefined)
+      inline def set_gatewayServersUndefined: Self = StObject.set(x, "_gatewayServers", js.undefined)
       
-      @scala.inline
-      def set_gatewayServersVarargs(value: js.Any*): Self = StObject.set(x, "_gatewayServers", js.Array(value :_*))
+      inline def set_gatewayServersVarargs(value: js.Any*): Self = StObject.set(x, "_gatewayServers", js.Array(value :_*))
       
-      @scala.inline
-      def set_ipfs(value: js.Any): Self = StObject.set(x, "_ipfs", value.asInstanceOf[js.Any])
+      inline def set_ipfs(value: js.Any): Self = StObject.set(x, "_ipfs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_log(value: DebuggererrorDebugger): Self = StObject.set(x, "_log", value.asInstanceOf[js.Any])
+      inline def set_log(value: DebuggererrorDebugger): Self = StObject.set(x, "_log", value.asInstanceOf[js.Any])
     }
   }
 }

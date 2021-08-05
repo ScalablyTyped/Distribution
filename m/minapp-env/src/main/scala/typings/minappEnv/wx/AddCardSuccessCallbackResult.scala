@@ -11,16 +11,13 @@ trait AddCardSuccessCallbackResult extends StObject {
 }
 object AddCardSuccessCallbackResult {
   
-  @scala.inline
-  def apply(cardList: AddCardResponseInfo): AddCardSuccessCallbackResult = {
+  inline def apply(cardList: AddCardResponseInfo): AddCardSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCardSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class AddCardSuccessCallbackResultMutableBuilder[Self <: AddCardSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: AddCardSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCardList(value: AddCardResponseInfo): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
+    inline def setCardList(value: AddCardResponseInfo): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
   }
 }

@@ -28,31 +28,23 @@ trait ExpansionProfileDesignationExcludeDesignation
 }
 object ExpansionProfileDesignationExcludeDesignation {
   
-  @scala.inline
-  def apply(): ExpansionProfileDesignationExcludeDesignation = {
+  inline def apply(): ExpansionProfileDesignationExcludeDesignation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExpansionProfileDesignationExcludeDesignation]
   }
   
-  @scala.inline
-  implicit class ExpansionProfileDesignationExcludeDesignationMutableBuilder[Self <: ExpansionProfileDesignationExcludeDesignation] (val x: Self) extends AnyVal {
+  extension [Self <: ExpansionProfileDesignationExcludeDesignation](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: code): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setUse(value: Coding): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: Coding): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
-    @scala.inline
-    def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
+    inline def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
+    inline def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
   }
 }

@@ -134,29 +134,22 @@ object pluginsMod {
   }
   object AssertionResult {
     
-    @scala.inline
-    def apply(passed: Boolean): AssertionResult = {
+    inline def apply(passed: Boolean): AssertionResult = {
       val __obj = js.Dynamic.literal(passed = passed.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssertionResult]
     }
     
-    @scala.inline
-    implicit class AssertionResultMutableBuilder[Self <: AssertionResult] (val x: Self) extends AnyVal {
+    extension [Self <: AssertionResult](x: Self) {
       
-      @scala.inline
-      def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
+      inline def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMsgUndefined: Self = StObject.set(x, "errorMsg", js.undefined)
+      inline def setErrorMsgUndefined: Self = StObject.set(x, "errorMsg", js.undefined)
       
-      @scala.inline
-      def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
+      inline def setPassed(value: Boolean): Self = StObject.set(x, "passed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
+      inline def setStackTrace(value: String): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
+      inline def setStackTraceUndefined: Self = StObject.set(x, "stackTrace", js.undefined)
     }
   }
   
@@ -175,38 +168,28 @@ object pluginsMod {
   }
   object PluginConfig {
     
-    @scala.inline
-    def apply(): PluginConfig = {
+    inline def apply(): PluginConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginConfig]
     }
     
-    @scala.inline
-    implicit class PluginConfigMutableBuilder[Self <: PluginConfig] (val x: Self) extends AnyVal {
+    extension [Self <: PluginConfig](x: Self) {
       
-      @scala.inline
-      def setInline(value: ProtractorPlugin): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: ProtractorPlugin): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+      inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+      inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
     }
   }
   
@@ -466,104 +449,72 @@ object pluginsMod {
   }
   object ProtractorPlugin {
     
-    @scala.inline
-    def apply(): ProtractorPlugin = {
+    inline def apply(): ProtractorPlugin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProtractorPlugin]
     }
     
-    @scala.inline
-    implicit class ProtractorPluginMutableBuilder[Self <: ProtractorPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: ProtractorPlugin](x: Self) {
       
-      @scala.inline
-      def setAddFailure(value: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecName]) => Unit): Self = StObject.set(x, "addFailure", js.Any.fromFunction2(value))
+      inline def setAddFailure(value: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecName]) => Unit): Self = StObject.set(x, "addFailure", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddFailureUndefined: Self = StObject.set(x, "addFailure", js.undefined)
+      inline def setAddFailureUndefined: Self = StObject.set(x, "addFailure", js.undefined)
       
-      @scala.inline
-      def setAddSuccess(value: /* info */ js.UndefOr[`0`] => Unit): Self = StObject.set(x, "addSuccess", js.Any.fromFunction1(value))
+      inline def setAddSuccess(value: /* info */ js.UndefOr[`0`] => Unit): Self = StObject.set(x, "addSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddSuccessUndefined: Self = StObject.set(x, "addSuccess", js.undefined)
+      inline def setAddSuccessUndefined: Self = StObject.set(x, "addSuccess", js.undefined)
       
-      @scala.inline
-      def setAddWarning(value: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[`0`]) => Unit): Self = StObject.set(x, "addWarning", js.Any.fromFunction2(value))
+      inline def setAddWarning(value: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[`0`]) => Unit): Self = StObject.set(x, "addWarning", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAddWarningUndefined: Self = StObject.set(x, "addWarning", js.undefined)
+      inline def setAddWarningUndefined: Self = StObject.set(x, "addWarning", js.undefined)
       
-      @scala.inline
-      def setConfig(value: PluginConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: PluginConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnPageLoad(value: /* browser */ ProtractorBrowser => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPageLoad", js.Any.fromFunction1(value))
+      inline def setOnPageLoad(value: /* browser */ ProtractorBrowser => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPageLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageLoadUndefined: Self = StObject.set(x, "onPageLoad", js.undefined)
+      inline def setOnPageLoadUndefined: Self = StObject.set(x, "onPageLoad", js.undefined)
       
-      @scala.inline
-      def setOnPageStable(value: /* browser */ ProtractorBrowser => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPageStable", js.Any.fromFunction1(value))
+      inline def setOnPageStable(value: /* browser */ ProtractorBrowser => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPageStable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageStableUndefined: Self = StObject.set(x, "onPageStable", js.undefined)
+      inline def setOnPageStableUndefined: Self = StObject.set(x, "onPageStable", js.undefined)
       
-      @scala.inline
-      def setOnPrepare(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPrepare", js.Any.fromFunction0(value))
+      inline def setOnPrepare(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "onPrepare", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPrepareUndefined: Self = StObject.set(x, "onPrepare", js.undefined)
+      inline def setOnPrepareUndefined: Self = StObject.set(x, "onPrepare", js.undefined)
       
-      @scala.inline
-      def setPostResults(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "postResults", js.Any.fromFunction0(value))
+      inline def setPostResults(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "postResults", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPostResultsUndefined: Self = StObject.set(x, "postResults", js.undefined)
+      inline def setPostResultsUndefined: Self = StObject.set(x, "postResults", js.undefined)
       
-      @scala.inline
-      def setPostTest(value: (/* passed */ Boolean, /* testInfo */ js.Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "postTest", js.Any.fromFunction2(value))
+      inline def setPostTest(value: (/* passed */ Boolean, /* testInfo */ js.Any) => Unit | js.Promise[Unit]): Self = StObject.set(x, "postTest", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostTestUndefined: Self = StObject.set(x, "postTest", js.undefined)
+      inline def setPostTestUndefined: Self = StObject.set(x, "postTest", js.undefined)
       
-      @scala.inline
-      def setSetup(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
+      inline def setSetup(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "setup", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+      inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
       
-      @scala.inline
-      def setSkipAngularStability(value: Boolean): Self = StObject.set(x, "skipAngularStability", value.asInstanceOf[js.Any])
+      inline def setSkipAngularStability(value: Boolean): Self = StObject.set(x, "skipAngularStability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipAngularStabilityUndefined: Self = StObject.set(x, "skipAngularStability", js.undefined)
+      inline def setSkipAngularStabilityUndefined: Self = StObject.set(x, "skipAngularStability", js.undefined)
       
-      @scala.inline
-      def setTeardown(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
+      inline def setTeardown(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "teardown", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
+      inline def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
       
-      @scala.inline
-      def setWaitForCondition(value: /* browser */ ProtractorBrowser => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "waitForCondition", js.Any.fromFunction1(value))
+      inline def setWaitForCondition(value: /* browser */ ProtractorBrowser => js.Promise[Boolean] | Boolean): Self = StObject.set(x, "waitForCondition", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWaitForConditionUndefined: Self = StObject.set(x, "waitForCondition", js.undefined)
+      inline def setWaitForConditionUndefined: Self = StObject.set(x, "waitForCondition", js.undefined)
       
-      @scala.inline
-      def setWaitForPromise(value: /* browser */ ProtractorBrowser => js.Promise[Unit]): Self = StObject.set(x, "waitForPromise", js.Any.fromFunction1(value))
+      inline def setWaitForPromise(value: /* browser */ ProtractorBrowser => js.Promise[Unit]): Self = StObject.set(x, "waitForPromise", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWaitForPromiseUndefined: Self = StObject.set(x, "waitForPromise", js.undefined)
+      inline def setWaitForPromiseUndefined: Self = StObject.set(x, "waitForPromise", js.undefined)
     }
   }
   
@@ -575,23 +526,18 @@ object pluginsMod {
   }
   object SpecResult {
     
-    @scala.inline
-    def apply(assertions: js.Array[AssertionResult], description: String): SpecResult = {
+    inline def apply(assertions: js.Array[AssertionResult], description: String): SpecResult = {
       val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpecResult]
     }
     
-    @scala.inline
-    implicit class SpecResultMutableBuilder[Self <: SpecResult] (val x: Self) extends AnyVal {
+    extension [Self <: SpecResult](x: Self) {
       
-      @scala.inline
-      def setAssertions(value: js.Array[AssertionResult]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
+      inline def setAssertions(value: js.Array[AssertionResult]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssertionsVarargs(value: AssertionResult*): Self = StObject.set(x, "assertions", js.Array(value :_*))
+      inline def setAssertionsVarargs(value: AssertionResult*): Self = StObject.set(x, "assertions", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -296,32 +296,28 @@ object GraphObject {
   @JSImport("go", "GraphObject.Default")
   @js.native
   def Default: EnumValue = js.native
-  @scala.inline
-  def Default_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
+  inline def Default_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Default")(x.asInstanceOf[js.Any])
   
   /**GraphObjects with this as the value of GraphObject.stretch are scaled in both directions so as to fit exactly in the given bounds; there is no clipping but the aspect ratio may change, causing the object to appear stretched.*/
   /* static member */
   @JSImport("go", "GraphObject.Fill")
   @js.native
   def Fill: EnumValue = js.native
-  @scala.inline
-  def Fill_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Fill")(x.asInstanceOf[js.Any])
+  inline def Fill_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Fill")(x.asInstanceOf[js.Any])
   
   /**GraphObjects with this as the value of GraphObject.stretch are scaled as much as possible in the x-axis*/
   /* static member */
   @JSImport("go", "GraphObject.Horizontal")
   @js.native
   def Horizontal: EnumValue = js.native
-  @scala.inline
-  def Horizontal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
+  inline def Horizontal_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Horizontal")(x.asInstanceOf[js.Any])
   
   /**GraphObjects with this as the value of GraphObject.stretch are not automatically scaled to fit in the given bounds; there may be clipping in one or both directions.*/
   /* static member */
   @JSImport("go", "GraphObject.None")
   @js.native
   def None: EnumValue = js.native
-  @scala.inline
-  def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /**Pictures with this as the value of Picture.imageStretch are drawn with equal scale in both directions to fit the arranged (actual) bounds.*/
   /* static member */
@@ -334,19 +330,16 @@ object GraphObject {
   @JSImport("go", "GraphObject.UniformToFill")
   @js.native
   def UniformToFill: EnumValue = js.native
-  @scala.inline
-  def UniformToFill_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniformToFill")(x.asInstanceOf[js.Any])
+  inline def UniformToFill_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UniformToFill")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Uniform_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uniform")(x.asInstanceOf[js.Any])
+  inline def Uniform_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Uniform")(x.asInstanceOf[js.Any])
   
   /**GraphObjects with this as the value of GraphObject.stretch are scaled as much as possible in the y-axis*/
   /* static member */
   @JSImport("go", "GraphObject.Vertical")
   @js.native
   def Vertical: EnumValue = js.native
-  @scala.inline
-  def Vertical_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
+  inline def Vertical_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Vertical")(x.asInstanceOf[js.Any])
   
   /**
     * This static function defines a named function that GraphObject.make can use to build objects.
@@ -354,16 +347,13 @@ object GraphObject {
     * @param {function(Array<*>):Object} func
     */
   /* static member */
-  @scala.inline
-  def defineBuilder(name: String, func: js.Function1[/* args */ js.Array[js.Any], js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineBuilder")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def defineBuilder(name: String, func: js.Function1[/* args */ js.Array[js.Any], js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defineBuilder")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   // undocumented
   /* static member */
-  @scala.inline
-  def getBuilders(): Map[String, js.Function1[/* args */ js.Array[js.Any], js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBuilders")().asInstanceOf[Map[String, js.Function1[/* args */ js.Array[js.Any], js.Object]]]
+  inline def getBuilders(): Map[String, js.Function1[/* args */ js.Array[js.Any], js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBuilders")().asInstanceOf[Map[String, js.Function1[/* args */ js.Array[js.Any], js.Object]]]
   
-  @scala.inline
-  def make(`type`: String, initializers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(`type`.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def make(`type`: String, initializers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(`type`.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   /**
     * This static function builds an object given its class and additional arguments providing initial properties or GraphObjects that become Panel elements.
     * @param {function()|string} type a class function or the name of a class in the "go" namespace,
@@ -378,8 +368,7 @@ object GraphObject {
     * or a string that is used as the value of a commonly set property.
     */
   /* static member */
-  @scala.inline
-  def make(`type`: Constructor, initializers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(`type`.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def make(`type`: Constructor, initializers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(`type`.asInstanceOf[js.Any], initializers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * This static function returns the first argument from the arguments array passed
@@ -393,12 +382,8 @@ object GraphObject {
     * @return {*}
     */
   /* static member */
-  @scala.inline
-  def takeBuilderArgument(args: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def takeBuilderArgument(args: js.Array[js.Any], defval: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any], defval.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def takeBuilderArgument(args: js.Array[js.Any], defval: js.Any, pred: js.Function1[/* arg */ js.Any, Boolean]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any], defval.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def takeBuilderArgument(args: js.Array[js.Any], defval: Unit, pred: js.Function1[/* arg */ js.Any, Boolean]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any], defval.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def takeBuilderArgument(args: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def takeBuilderArgument(args: js.Array[js.Any], defval: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any], defval.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def takeBuilderArgument(args: js.Array[js.Any], defval: js.Any, pred: js.Function1[/* arg */ js.Any, Boolean]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any], defval.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def takeBuilderArgument(args: js.Array[js.Any], defval: Unit, pred: js.Function1[/* arg */ js.Any, Boolean]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("takeBuilderArgument")(args.asInstanceOf[js.Any], defval.asInstanceOf[js.Any], pred.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

@@ -39,14 +39,10 @@ object VpcEndpointRouteTableAssociation {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @scala.inline
-  def get(name: String, id: Input[ID]): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation]
-  @scala.inline
-  def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation]
-  @scala.inline
-  def get(name: String, id: Input[ID], state: VpcEndpointRouteTableAssociationState): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation]
-  @scala.inline
-  def get(
+  inline def get(name: String, id: Input[ID]): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation]
+  inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation]
+  inline def get(name: String, id: Input[ID], state: VpcEndpointRouteTableAssociationState): typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation]
+  inline def get(
     name: String,
     id: Input[ID],
     state: VpcEndpointRouteTableAssociationState,
@@ -57,6 +53,5 @@ object VpcEndpointRouteTableAssociation {
     * Returns true if the given object is an instance of VpcEndpointRouteTableAssociation.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @scala.inline
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean]
+  inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointRouteTableAssociation.VpcEndpointRouteTableAssociation */ Boolean]
 }

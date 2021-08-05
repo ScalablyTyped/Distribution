@@ -11,23 +11,19 @@ trait RedirectToEmptyDocument
   
   val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument
+  /* protected */ val typeGuard: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument
 }
 object RedirectToEmptyDocument {
   
-  @scala.inline
-  def apply(instanceType: String): RedirectToEmptyDocument = {
+  inline def apply(instanceType: String): RedirectToEmptyDocument = {
     val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "RedirectToEmptyDocument")
     __obj.asInstanceOf[RedirectToEmptyDocument]
   }
   
-  @scala.inline
-  implicit class RedirectToEmptyDocumentMutableBuilder[Self <: RedirectToEmptyDocument] (val x: Self) extends AnyVal {
+  extension [Self <: RedirectToEmptyDocument](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+    inline def setTypeGuard(value: typings.chromeApps.chromeAppsStrings.RedirectToEmptyDocument): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
   }
 }

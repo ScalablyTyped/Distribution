@@ -15,13 +15,9 @@ object spinButtonStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getArrowButtonStyles(theme: ITheme, isUpArrow: Boolean): IButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrowButtonStyles")(theme.asInstanceOf[js.Any], isUpArrow.asInstanceOf[js.Any])).asInstanceOf[IButtonStyles]
-  @scala.inline
-  def getArrowButtonStyles(theme: ITheme, isUpArrow: Boolean, customSpecificArrowStyles: PartialIButtonStyles): IButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrowButtonStyles")(theme.asInstanceOf[js.Any], isUpArrow.asInstanceOf[js.Any], customSpecificArrowStyles.asInstanceOf[js.Any])).asInstanceOf[IButtonStyles]
+  inline def getArrowButtonStyles(theme: ITheme, isUpArrow: Boolean): IButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrowButtonStyles")(theme.asInstanceOf[js.Any], isUpArrow.asInstanceOf[js.Any])).asInstanceOf[IButtonStyles]
+  inline def getArrowButtonStyles(theme: ITheme, isUpArrow: Boolean, customSpecificArrowStyles: PartialIButtonStyles): IButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrowButtonStyles")(theme.asInstanceOf[js.Any], isUpArrow.asInstanceOf[js.Any], customSpecificArrowStyles.asInstanceOf[js.Any])).asInstanceOf[IButtonStyles]
   
-  @scala.inline
-  def getStyles(theme: ITheme): ISpinButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[ISpinButtonStyles]
-  @scala.inline
-  def getStyles(theme: ITheme, customStyles: PartialISpinButtonStyles): ISpinButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any], customStyles.asInstanceOf[js.Any])).asInstanceOf[ISpinButtonStyles]
+  inline def getStyles(theme: ITheme): ISpinButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[ISpinButtonStyles]
+  inline def getStyles(theme: ITheme, customStyles: PartialISpinButtonStyles): ISpinButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any], customStyles.asInstanceOf[js.Any])).asInstanceOf[ISpinButtonStyles]
 }

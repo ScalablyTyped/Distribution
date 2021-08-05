@@ -20,37 +20,27 @@ trait Attestor extends StObject {
 }
 object Attestor {
   
-  @scala.inline
-  def apply(): Attestor = {
+  inline def apply(): Attestor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attestor]
   }
   
-  @scala.inline
-  implicit class AttestorMutableBuilder[Self <: Attestor] (val x: Self) extends AnyVal {
+  extension [Self <: Attestor](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setUserOwnedGrafeasNote(value: UserOwnedGrafeasNote): Self = StObject.set(x, "userOwnedGrafeasNote", value.asInstanceOf[js.Any])
+    inline def setUserOwnedGrafeasNote(value: UserOwnedGrafeasNote): Self = StObject.set(x, "userOwnedGrafeasNote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserOwnedGrafeasNoteUndefined: Self = StObject.set(x, "userOwnedGrafeasNote", js.undefined)
+    inline def setUserOwnedGrafeasNoteUndefined: Self = StObject.set(x, "userOwnedGrafeasNote", js.undefined)
   }
 }

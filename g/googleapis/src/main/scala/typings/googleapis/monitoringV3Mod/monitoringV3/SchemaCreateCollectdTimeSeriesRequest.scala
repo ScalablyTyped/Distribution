@@ -30,34 +30,25 @@ trait SchemaCreateCollectdTimeSeriesRequest extends StObject {
 }
 object SchemaCreateCollectdTimeSeriesRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateCollectdTimeSeriesRequest = {
+  inline def apply(): SchemaCreateCollectdTimeSeriesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateCollectdTimeSeriesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateCollectdTimeSeriesRequestMutableBuilder[Self <: SchemaCreateCollectdTimeSeriesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateCollectdTimeSeriesRequest](x: Self) {
     
-    @scala.inline
-    def setCollectdPayloads(value: js.Array[SchemaCollectdPayload]): Self = StObject.set(x, "collectdPayloads", value.asInstanceOf[js.Any])
+    inline def setCollectdPayloads(value: js.Array[SchemaCollectdPayload]): Self = StObject.set(x, "collectdPayloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectdPayloadsUndefined: Self = StObject.set(x, "collectdPayloads", js.undefined)
+    inline def setCollectdPayloadsUndefined: Self = StObject.set(x, "collectdPayloads", js.undefined)
     
-    @scala.inline
-    def setCollectdPayloadsVarargs(value: SchemaCollectdPayload*): Self = StObject.set(x, "collectdPayloads", js.Array(value :_*))
+    inline def setCollectdPayloadsVarargs(value: SchemaCollectdPayload*): Self = StObject.set(x, "collectdPayloads", js.Array(value :_*))
     
-    @scala.inline
-    def setCollectdVersion(value: String): Self = StObject.set(x, "collectdVersion", value.asInstanceOf[js.Any])
+    inline def setCollectdVersion(value: String): Self = StObject.set(x, "collectdVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectdVersionUndefined: Self = StObject.set(x, "collectdVersion", js.undefined)
+    inline def setCollectdVersionUndefined: Self = StObject.set(x, "collectdVersion", js.undefined)
     
-    @scala.inline
-    def setResource(value: SchemaMonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: SchemaMonitoredResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

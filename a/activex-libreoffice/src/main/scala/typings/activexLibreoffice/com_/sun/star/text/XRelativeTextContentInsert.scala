@@ -30,8 +30,7 @@ trait XRelativeTextContentInsert
 }
 object XRelativeTextContentInsert {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     insertTextContentAfter: (XTextContent, XTextContent) => Unit,
     insertTextContentBefore: (XTextContent, XTextContent) => Unit,
@@ -42,13 +41,10 @@ object XRelativeTextContentInsert {
     __obj.asInstanceOf[XRelativeTextContentInsert]
   }
   
-  @scala.inline
-  implicit class XRelativeTextContentInsertMutableBuilder[Self <: XRelativeTextContentInsert] (val x: Self) extends AnyVal {
+  extension [Self <: XRelativeTextContentInsert](x: Self) {
     
-    @scala.inline
-    def setInsertTextContentAfter(value: (XTextContent, XTextContent) => Unit): Self = StObject.set(x, "insertTextContentAfter", js.Any.fromFunction2(value))
+    inline def setInsertTextContentAfter(value: (XTextContent, XTextContent) => Unit): Self = StObject.set(x, "insertTextContentAfter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInsertTextContentBefore(value: (XTextContent, XTextContent) => Unit): Self = StObject.set(x, "insertTextContentBefore", js.Any.fromFunction2(value))
+    inline def setInsertTextContentBefore(value: (XTextContent, XTextContent) => Unit): Self = StObject.set(x, "insertTextContentBefore", js.Any.fromFunction2(value))
   }
 }

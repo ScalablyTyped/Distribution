@@ -13,19 +13,15 @@ trait SchemaTextParagraph extends StObject {
 }
 object SchemaTextParagraph {
   
-  @scala.inline
-  def apply(): SchemaTextParagraph = {
+  inline def apply(): SchemaTextParagraph = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextParagraph]
   }
   
-  @scala.inline
-  implicit class SchemaTextParagraphMutableBuilder[Self <: SchemaTextParagraph] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextParagraph](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

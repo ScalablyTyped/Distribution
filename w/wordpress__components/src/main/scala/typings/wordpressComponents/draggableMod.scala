@@ -55,35 +55,26 @@ object draggableMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(children: OnDraggableEnd => ReactNode, elementId: String, transferData: js.Any): Props = {
+      inline def apply(children: OnDraggableEnd => ReactNode, elementId: String, transferData: js.Any): Props = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), elementId = elementId.asInstanceOf[js.Any], transferData = transferData.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: OnDraggableEnd => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+        inline def setChildren(value: OnDraggableEnd => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
+        inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
+        inline def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+        inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
         
-        @scala.inline
-        def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
+        inline def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+        inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
         
-        @scala.inline
-        def setTransferData(value: js.Any): Self = StObject.set(x, "transferData", value.asInstanceOf[js.Any])
+        inline def setTransferData(value: js.Any): Self = StObject.set(x, "transferData", value.asInstanceOf[js.Any])
       }
     }
   }

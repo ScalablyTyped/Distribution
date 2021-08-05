@@ -26,8 +26,7 @@ trait TimelineKeys extends StObject {
 }
 object TimelineKeys {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     groupIdKey: String,
     groupRightTitleKey: String,
     groupTitleKey: String,
@@ -42,34 +41,24 @@ object TimelineKeys {
     __obj.asInstanceOf[TimelineKeys]
   }
   
-  @scala.inline
-  implicit class TimelineKeysMutableBuilder[Self <: TimelineKeys] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineKeys](x: Self) {
     
-    @scala.inline
-    def setGroupIdKey(value: String): Self = StObject.set(x, "groupIdKey", value.asInstanceOf[js.Any])
+    inline def setGroupIdKey(value: String): Self = StObject.set(x, "groupIdKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupRightTitleKey(value: String): Self = StObject.set(x, "groupRightTitleKey", value.asInstanceOf[js.Any])
+    inline def setGroupRightTitleKey(value: String): Self = StObject.set(x, "groupRightTitleKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupTitleKey(value: String): Self = StObject.set(x, "groupTitleKey", value.asInstanceOf[js.Any])
+    inline def setGroupTitleKey(value: String): Self = StObject.set(x, "groupTitleKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDivTitleKey(value: String): Self = StObject.set(x, "itemDivTitleKey", value.asInstanceOf[js.Any])
+    inline def setItemDivTitleKey(value: String): Self = StObject.set(x, "itemDivTitleKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemGroupKey(value: String): Self = StObject.set(x, "itemGroupKey", value.asInstanceOf[js.Any])
+    inline def setItemGroupKey(value: String): Self = StObject.set(x, "itemGroupKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemIdKey(value: String): Self = StObject.set(x, "itemIdKey", value.asInstanceOf[js.Any])
+    inline def setItemIdKey(value: String): Self = StObject.set(x, "itemIdKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTimeEndKey(value: String): Self = StObject.set(x, "itemTimeEndKey", value.asInstanceOf[js.Any])
+    inline def setItemTimeEndKey(value: String): Self = StObject.set(x, "itemTimeEndKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTimeStartKey(value: String): Self = StObject.set(x, "itemTimeStartKey", value.asInstanceOf[js.Any])
+    inline def setItemTimeStartKey(value: String): Self = StObject.set(x, "itemTimeStartKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTitleKey(value: String): Self = StObject.set(x, "itemTitleKey", value.asInstanceOf[js.Any])
+    inline def setItemTitleKey(value: String): Self = StObject.set(x, "itemTitleKey", value.asInstanceOf[js.Any])
   }
 }

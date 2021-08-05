@@ -14,36 +14,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toJson(xml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toJson(xml: String, options: objectfalseundefinedJsonO): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toJson(xml: String, options: objecttrueJsonOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toJson(xml: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toJson(xml: Buffer, options: objectfalseundefinedJsonO): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toJson(xml: Buffer, options: objecttrueJsonOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toJson(xml: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toJson(xml: String, options: objectfalseundefinedJsonO): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toJson(xml: String, options: objecttrueJsonOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toJson(xml: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toJson(xml: Buffer, options: objectfalseundefinedJsonO): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toJson(xml: Buffer, options: objecttrueJsonOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
-  @scala.inline
-  def toJson_StringDictionary(xml: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toJson_StringDictionary(xml: Buffer): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toJson_StringDictionary(xml: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toJson_StringDictionary(xml: Buffer): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toJson")(xml.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   
-  @scala.inline
-  def toXml(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toXml(json: String, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toXml(json: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toXml(json: StringDictionary[js.Any], options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toXml(json: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toXml(json: Buffer, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toXml(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toXml(json: String, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toXml(json: StringDictionary[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toXml(json: StringDictionary[js.Any], options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toXml(json: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toXml(json: Buffer, options: XmlOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toXml")(json.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait JsonOptions extends StObject {
     
@@ -101,53 +87,38 @@ object mod {
   }
   object JsonOptions {
     
-    @scala.inline
-    def apply(): JsonOptions = {
+    inline def apply(): JsonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonOptions]
     }
     
-    @scala.inline
-    implicit class JsonOptionsMutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JsonOptions](x: Self) {
       
-      @scala.inline
-      def setAlternateTextNode(value: Boolean | String): Self = StObject.set(x, "alternateTextNode", value.asInstanceOf[js.Any])
+      inline def setAlternateTextNode(value: Boolean | String): Self = StObject.set(x, "alternateTextNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternateTextNodeUndefined: Self = StObject.set(x, "alternateTextNode", js.undefined)
+      inline def setAlternateTextNodeUndefined: Self = StObject.set(x, "alternateTextNode", js.undefined)
       
-      @scala.inline
-      def setArrayNotation(value: Boolean | js.Array[String]): Self = StObject.set(x, "arrayNotation", value.asInstanceOf[js.Any])
+      inline def setArrayNotation(value: Boolean | js.Array[String]): Self = StObject.set(x, "arrayNotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayNotationUndefined: Self = StObject.set(x, "arrayNotation", js.undefined)
+      inline def setArrayNotationUndefined: Self = StObject.set(x, "arrayNotation", js.undefined)
       
-      @scala.inline
-      def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value :_*))
+      inline def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value :_*))
       
-      @scala.inline
-      def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
       
-      @scala.inline
-      def setReversible(value: Boolean): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
+      inline def setReversible(value: Boolean): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversibleUndefined: Self = StObject.set(x, "reversible", js.undefined)
+      inline def setReversibleUndefined: Self = StObject.set(x, "reversible", js.undefined)
       
-      @scala.inline
-      def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+      inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
   
@@ -177,26 +148,20 @@ object mod {
   }
   object XmlOptions {
     
-    @scala.inline
-    def apply(): XmlOptions = {
+    inline def apply(): XmlOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlOptions]
     }
     
-    @scala.inline
-    implicit class XmlOptionsMutableBuilder[Self <: XmlOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XmlOptions](x: Self) {
       
-      @scala.inline
-      def setIgnoreNull(value: Boolean): Self = StObject.set(x, "ignoreNull", value.asInstanceOf[js.Any])
+      inline def setIgnoreNull(value: Boolean): Self = StObject.set(x, "ignoreNull", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNullUndefined: Self = StObject.set(x, "ignoreNull", js.undefined)
+      inline def setIgnoreNullUndefined: Self = StObject.set(x, "ignoreNull", js.undefined)
       
-      @scala.inline
-      def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+      inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
     }
   }
 }

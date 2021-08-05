@@ -19,8 +19,7 @@ trait Widgets
 }
 object Widgets {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TimeSlider: WebMapTimeSlider,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object Widgets {
     __obj.asInstanceOf[Widgets]
   }
   
-  @scala.inline
-  implicit class WidgetsMutableBuilder[Self <: Widgets] (val x: Self) extends AnyVal {
+  extension [Self <: Widgets](x: Self) {
     
-    @scala.inline
-    def setTimeSlider(value: WebMapTimeSlider): Self = StObject.set(x, "TimeSlider", value.asInstanceOf[js.Any])
+    inline def setTimeSlider(value: WebMapTimeSlider): Self = StObject.set(x, "TimeSlider", value.asInstanceOf[js.Any])
   }
 }

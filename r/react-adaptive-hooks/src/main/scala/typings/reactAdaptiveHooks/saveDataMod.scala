@@ -11,8 +11,6 @@ object saveDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useSaveData(): SaveData = ^.asInstanceOf[js.Dynamic].applyDynamic("useSaveData")().asInstanceOf[SaveData]
-  @scala.inline
-  def useSaveData(initialSaveDataStatus: Boolean): SaveData = ^.asInstanceOf[js.Dynamic].applyDynamic("useSaveData")(initialSaveDataStatus.asInstanceOf[js.Any]).asInstanceOf[SaveData]
+  inline def useSaveData(): SaveData = ^.asInstanceOf[js.Dynamic].applyDynamic("useSaveData")().asInstanceOf[SaveData]
+  inline def useSaveData(initialSaveDataStatus: Boolean): SaveData = ^.asInstanceOf[js.Dynamic].applyDynamic("useSaveData")(initialSaveDataStatus.asInstanceOf[js.Any]).asInstanceOf[SaveData]
 }

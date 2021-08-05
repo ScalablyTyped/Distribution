@@ -22,46 +22,33 @@ trait BorderDashes extends StObject {
 }
 object BorderDashes {
   
-  @scala.inline
-  def apply(): BorderDashes = {
+  inline def apply(): BorderDashes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderDashes]
   }
   
-  @scala.inline
-  implicit class BorderDashesMutableBuilder[Self <: BorderDashes] (val x: Self) extends AnyVal {
+  extension [Self <: BorderDashes](x: Self) {
     
-    @scala.inline
-    def setBorderDashes(value: Boolean | js.Array[Double]): Self = StObject.set(x, "borderDashes", value.asInstanceOf[js.Any])
+    inline def setBorderDashes(value: Boolean | js.Array[Double]): Self = StObject.set(x, "borderDashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderDashesUndefined: Self = StObject.set(x, "borderDashes", js.undefined)
+    inline def setBorderDashesUndefined: Self = StObject.set(x, "borderDashes", js.undefined)
     
-    @scala.inline
-    def setBorderDashesVarargs(value: Double*): Self = StObject.set(x, "borderDashes", js.Array(value :_*))
+    inline def setBorderDashesVarargs(value: Double*): Self = StObject.set(x, "borderDashes", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    @scala.inline
-    def setInterpolation(value: Boolean): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: Boolean): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
-    @scala.inline
-    def setUseBorderWithImage(value: Boolean): Self = StObject.set(x, "useBorderWithImage", value.asInstanceOf[js.Any])
+    inline def setUseBorderWithImage(value: Boolean): Self = StObject.set(x, "useBorderWithImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBorderWithImageUndefined: Self = StObject.set(x, "useBorderWithImage", js.undefined)
+    inline def setUseBorderWithImageUndefined: Self = StObject.set(x, "useBorderWithImage", js.undefined)
     
-    @scala.inline
-    def setUseImageSize(value: Boolean): Self = StObject.set(x, "useImageSize", value.asInstanceOf[js.Any])
+    inline def setUseImageSize(value: Boolean): Self = StObject.set(x, "useImageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseImageSizeUndefined: Self = StObject.set(x, "useImageSize", js.undefined)
+    inline def setUseImageSizeUndefined: Self = StObject.set(x, "useImageSize", js.undefined)
   }
 }

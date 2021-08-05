@@ -27,43 +27,31 @@ trait IMethod extends StObject {
 }
 object IMethod {
   
-  @scala.inline
-  def apply(requestType: String, responseType: String): IMethod = {
+  inline def apply(requestType: String, responseType: String): IMethod = {
     val __obj = js.Dynamic.literal(requestType = requestType.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMethod]
   }
   
-  @scala.inline
-  implicit class IMethodMutableBuilder[Self <: IMethod] (val x: Self) extends AnyVal {
+  extension [Self <: IMethod](x: Self) {
     
-    @scala.inline
-    def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[js.UndefOr[js.Any]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
+    inline def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestStreamUndefined: Self = StObject.set(x, "requestStream", js.undefined)
+    inline def setRequestStreamUndefined: Self = StObject.set(x, "requestStream", js.undefined)
     
-    @scala.inline
-    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+    inline def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseStream(value: Boolean): Self = StObject.set(x, "responseStream", value.asInstanceOf[js.Any])
+    inline def setResponseStream(value: Boolean): Self = StObject.set(x, "responseStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseStreamUndefined: Self = StObject.set(x, "responseStream", js.undefined)
+    inline def setResponseStreamUndefined: Self = StObject.set(x, "responseStream", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

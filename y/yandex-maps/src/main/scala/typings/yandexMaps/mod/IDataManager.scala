@@ -12,16 +12,13 @@ trait IDataManager
 }
 object IDataManager {
   
-  @scala.inline
-  def apply(events: IEventManager[js.Object], get: (String, js.Object) => js.Object): IDataManager = {
+  inline def apply(events: IEventManager[js.Object], get: (String, js.Object) => js.Object): IDataManager = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], get = js.Any.fromFunction2(get))
     __obj.asInstanceOf[IDataManager]
   }
   
-  @scala.inline
-  implicit class IDataManagerMutableBuilder[Self <: IDataManager] (val x: Self) extends AnyVal {
+  extension [Self <: IDataManager](x: Self) {
     
-    @scala.inline
-    def setGet(value: (String, js.Object) => js.Object): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (String, js.Object) => js.Object): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
   }
 }

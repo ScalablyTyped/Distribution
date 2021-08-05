@@ -28,27 +28,27 @@ object callbacksMod {
   class EarlyStopping_ () extends Callback {
     def this(args: EarlyStoppingCallbackArgs) = this()
     
-    val baseline: Double = js.native
+    /* protected */ val baseline: Double = js.native
     
-    var best: js.Any = js.native
+    /* private */ var best: js.Any = js.native
     
-    var getMonitorValue: js.Any = js.native
+    /* private */ var getMonitorValue: js.Any = js.native
     
-    val minDelta: Double = js.native
+    /* protected */ val minDelta: Double = js.native
     
-    val mode: auto | min | max = js.native
+    /* protected */ val mode: auto | min | max = js.native
     
-    val monitor: String = js.native
+    /* protected */ val monitor: String = js.native
     
     /* protected */ def monitorFunc(currVal: Double, prevVal: Double): Boolean = js.native
     
-    val patience: Double = js.native
+    /* protected */ val patience: Double = js.native
     
-    var stoppedEpoch: js.Any = js.native
+    /* private */ var stoppedEpoch: js.Any = js.native
     
-    val verbose: Double = js.native
+    /* protected */ val verbose: Double = js.native
     
-    @JSName("wait")
+    /* private */ @JSName("wait")
     var wait_FEarlyStopping_ : js.Any = js.native
   }
   
@@ -58,22 +58,17 @@ object callbacksMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def earlyStopping(): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")().asInstanceOf[EarlyStopping_]
-    @scala.inline
-    def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")(args.asInstanceOf[js.Any]).asInstanceOf[EarlyStopping_]
+    inline def earlyStopping(): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")().asInstanceOf[EarlyStopping_]
+    inline def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")(args.asInstanceOf[js.Any]).asInstanceOf[EarlyStopping_]
     @JSImport("@tensorflow/tfjs-layers/dist/callbacks", "callbacks.earlyStopping")
     @js.native
     def earlyStopping_Fcallbacks: js.Function1[/* args */ js.UndefOr[EarlyStoppingCallbackArgs], EarlyStopping_] = js.native
     
-    @scala.inline
-    def earlyStopping_Fcallbacks_=(x: js.Function1[/* args */ js.UndefOr[EarlyStoppingCallbackArgs], EarlyStopping_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("earlyStopping")(x.asInstanceOf[js.Any])
+    inline def earlyStopping_Fcallbacks_=(x: js.Function1[/* args */ js.UndefOr[EarlyStoppingCallbackArgs], EarlyStopping_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("earlyStopping")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def earlyStopping(): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")().asInstanceOf[EarlyStopping_]
-  @scala.inline
-  def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")(args.asInstanceOf[js.Any]).asInstanceOf[EarlyStopping_]
+  inline def earlyStopping(): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")().asInstanceOf[EarlyStopping_]
+  inline def earlyStopping(args: EarlyStoppingCallbackArgs): EarlyStopping_ = ^.asInstanceOf[js.Dynamic].applyDynamic("earlyStopping")(args.asInstanceOf[js.Any]).asInstanceOf[EarlyStopping_]
   
   trait EarlyStoppingCallbackArgs extends StObject {
     
@@ -135,56 +130,40 @@ object callbacksMod {
   }
   object EarlyStoppingCallbackArgs {
     
-    @scala.inline
-    def apply(): EarlyStoppingCallbackArgs = {
+    inline def apply(): EarlyStoppingCallbackArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EarlyStoppingCallbackArgs]
     }
     
-    @scala.inline
-    implicit class EarlyStoppingCallbackArgsMutableBuilder[Self <: EarlyStoppingCallbackArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EarlyStoppingCallbackArgs](x: Self) {
       
-      @scala.inline
-      def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+      inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
+      inline def setBaselineUndefined: Self = StObject.set(x, "baseline", js.undefined)
       
-      @scala.inline
-      def setMinDelta(value: Double): Self = StObject.set(x, "minDelta", value.asInstanceOf[js.Any])
+      inline def setMinDelta(value: Double): Self = StObject.set(x, "minDelta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinDeltaUndefined: Self = StObject.set(x, "minDelta", js.undefined)
+      inline def setMinDeltaUndefined: Self = StObject.set(x, "minDelta", js.undefined)
       
-      @scala.inline
-      def setMode(value: auto | min | max): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: auto | min | max): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setMonitor(value: String): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
+      inline def setMonitor(value: String): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitorUndefined: Self = StObject.set(x, "monitor", js.undefined)
+      inline def setMonitorUndefined: Self = StObject.set(x, "monitor", js.undefined)
       
-      @scala.inline
-      def setPatience(value: Double): Self = StObject.set(x, "patience", value.asInstanceOf[js.Any])
+      inline def setPatience(value: Double): Self = StObject.set(x, "patience", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatienceUndefined: Self = StObject.set(x, "patience", js.undefined)
+      inline def setPatienceUndefined: Self = StObject.set(x, "patience", js.undefined)
       
-      @scala.inline
-      def setRestoreBestWeights(value: Boolean): Self = StObject.set(x, "restoreBestWeights", value.asInstanceOf[js.Any])
+      inline def setRestoreBestWeights(value: Boolean): Self = StObject.set(x, "restoreBestWeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestoreBestWeightsUndefined: Self = StObject.set(x, "restoreBestWeights", js.undefined)
+      inline def setRestoreBestWeightsUndefined: Self = StObject.set(x, "restoreBestWeights", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Double): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Double): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
 }

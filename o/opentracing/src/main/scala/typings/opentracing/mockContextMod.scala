@@ -18,7 +18,7 @@ object mockContextMod {
   class MockContext protected () extends SpanContext {
     def this(span: typings.opentracing.mockSpanMod.default) = this()
     
-    var _span: js.Any = js.native
+    /* private */ var _span: js.Any = js.native
     
     def span(): typings.opentracing.mockSpanMod.default = js.native
   }

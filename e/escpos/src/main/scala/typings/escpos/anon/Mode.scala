@@ -12,20 +12,16 @@ trait Mode extends StObject {
 }
 object Mode {
   
-  @scala.inline
-  def apply(mode: String, `type`: String): Mode = {
+  inline def apply(mode: String, `type`: String): Mode = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mode]
   }
   
-  @scala.inline
-  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+  extension [Self <: Mode](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

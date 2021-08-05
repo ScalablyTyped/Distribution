@@ -21,13 +21,11 @@ object ToolBar {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ToolBar = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ToolBar]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.ToolBar = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ToolBar]
   
   /* static member */
   @JSGlobal("kendo.ui.ToolBar.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.ToolBar = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.ToolBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.ToolBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

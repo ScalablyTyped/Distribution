@@ -39,35 +39,25 @@ object sharedTypesMod {
   trait BufferEncoding extends StObject
   object BufferEncoding {
     
-    @scala.inline
-    def ascii: typings.micromark.micromarkStrings.ascii = "ascii".asInstanceOf[typings.micromark.micromarkStrings.ascii]
+    inline def ascii: typings.micromark.micromarkStrings.ascii = "ascii".asInstanceOf[typings.micromark.micromarkStrings.ascii]
     
-    @scala.inline
-    def base64: typings.micromark.micromarkStrings.base64 = "base64".asInstanceOf[typings.micromark.micromarkStrings.base64]
+    inline def base64: typings.micromark.micromarkStrings.base64 = "base64".asInstanceOf[typings.micromark.micromarkStrings.base64]
     
-    @scala.inline
-    def binary: typings.micromark.micromarkStrings.binary = "binary".asInstanceOf[typings.micromark.micromarkStrings.binary]
+    inline def binary: typings.micromark.micromarkStrings.binary = "binary".asInstanceOf[typings.micromark.micromarkStrings.binary]
     
-    @scala.inline
-    def hex: typings.micromark.micromarkStrings.hex = "hex".asInstanceOf[typings.micromark.micromarkStrings.hex]
+    inline def hex: typings.micromark.micromarkStrings.hex = "hex".asInstanceOf[typings.micromark.micromarkStrings.hex]
     
-    @scala.inline
-    def latin1: typings.micromark.micromarkStrings.latin1 = "latin1".asInstanceOf[typings.micromark.micromarkStrings.latin1]
+    inline def latin1: typings.micromark.micromarkStrings.latin1 = "latin1".asInstanceOf[typings.micromark.micromarkStrings.latin1]
     
-    @scala.inline
-    def `ucs-2`: typings.micromark.micromarkStrings.`ucs-2` = "ucs-2".asInstanceOf[typings.micromark.micromarkStrings.`ucs-2`]
+    inline def `ucs-2`: typings.micromark.micromarkStrings.`ucs-2` = "ucs-2".asInstanceOf[typings.micromark.micromarkStrings.`ucs-2`]
     
-    @scala.inline
-    def ucs2: typings.micromark.micromarkStrings.ucs2 = "ucs2".asInstanceOf[typings.micromark.micromarkStrings.ucs2]
+    inline def ucs2: typings.micromark.micromarkStrings.ucs2 = "ucs2".asInstanceOf[typings.micromark.micromarkStrings.ucs2]
     
-    @scala.inline
-    def `utf-8`: typings.micromark.micromarkStrings.`utf-8` = "utf-8".asInstanceOf[typings.micromark.micromarkStrings.`utf-8`]
+    inline def `utf-8`: typings.micromark.micromarkStrings.`utf-8` = "utf-8".asInstanceOf[typings.micromark.micromarkStrings.`utf-8`]
     
-    @scala.inline
-    def utf16le: typings.micromark.micromarkStrings.utf16le = "utf16le".asInstanceOf[typings.micromark.micromarkStrings.utf16le]
+    inline def utf16le: typings.micromark.micromarkStrings.utf16le = "utf16le".asInstanceOf[typings.micromark.micromarkStrings.utf16le]
     
-    @scala.inline
-    def utf8: typings.micromark.micromarkStrings.utf8 = "utf8".asInstanceOf[typings.micromark.micromarkStrings.utf8]
+    inline def utf8: typings.micromark.micromarkStrings.utf8 = "utf8".asInstanceOf[typings.micromark.micromarkStrings.utf8]
   }
   
   type Chunk = NonNullable[Code] | String
@@ -109,41 +99,30 @@ object sharedTypesMod {
   }
   object CompileOptions {
     
-    @scala.inline
-    def apply(): CompileOptions = {
+    inline def apply(): CompileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompileOptions]
     }
     
-    @scala.inline
-    implicit class CompileOptionsMutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompileOptions](x: Self) {
       
-      @scala.inline
-      def setAllowDangerousHtml(value: Boolean): Self = StObject.set(x, "allowDangerousHtml", value.asInstanceOf[js.Any])
+      inline def setAllowDangerousHtml(value: Boolean): Self = StObject.set(x, "allowDangerousHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDangerousHtmlUndefined: Self = StObject.set(x, "allowDangerousHtml", js.undefined)
+      inline def setAllowDangerousHtmlUndefined: Self = StObject.set(x, "allowDangerousHtml", js.undefined)
       
-      @scala.inline
-      def setAllowDangerousProtocol(value: Boolean): Self = StObject.set(x, "allowDangerousProtocol", value.asInstanceOf[js.Any])
+      inline def setAllowDangerousProtocol(value: Boolean): Self = StObject.set(x, "allowDangerousProtocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowDangerousProtocolUndefined: Self = StObject.set(x, "allowDangerousProtocol", js.undefined)
+      inline def setAllowDangerousProtocolUndefined: Self = StObject.set(x, "allowDangerousProtocol", js.undefined)
       
-      @scala.inline
-      def setDefaultLineEnding(value: Carriagereturn | Linefeed | CarriagereturnLinefeed): Self = StObject.set(x, "defaultLineEnding", value.asInstanceOf[js.Any])
+      inline def setDefaultLineEnding(value: Carriagereturn | Linefeed | CarriagereturnLinefeed): Self = StObject.set(x, "defaultLineEnding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLineEndingUndefined: Self = StObject.set(x, "defaultLineEnding", js.undefined)
+      inline def setDefaultLineEndingUndefined: Self = StObject.set(x, "defaultLineEnding", js.undefined)
       
-      @scala.inline
-      def setHtmlExtensions(value: js.Array[HtmlExtension]): Self = StObject.set(x, "htmlExtensions", value.asInstanceOf[js.Any])
+      inline def setHtmlExtensions(value: js.Array[HtmlExtension]): Self = StObject.set(x, "htmlExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlExtensionsUndefined: Self = StObject.set(x, "htmlExtensions", js.undefined)
+      inline def setHtmlExtensionsUndefined: Self = StObject.set(x, "htmlExtensions", js.undefined)
       
-      @scala.inline
-      def setHtmlExtensionsVarargs(value: HtmlExtension*): Self = StObject.set(x, "htmlExtensions", js.Array(value :_*))
+      inline def setHtmlExtensionsVarargs(value: HtmlExtension*): Self = StObject.set(x, "htmlExtensions", js.Array(value :_*))
     }
   }
   
@@ -169,59 +148,42 @@ object sharedTypesMod {
   }
   object Construct {
     
-    @scala.inline
-    def apply(tokenize: (/* context */ Tokenizer, /* effects */ Effects) => State): Construct = {
+    inline def apply(tokenize: (/* context */ Tokenizer, /* effects */ Effects) => State): Construct = {
       val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction2(tokenize))
       __obj.asInstanceOf[Construct]
     }
     
-    @scala.inline
-    implicit class ConstructMutableBuilder[Self <: Construct] (val x: Self) extends AnyVal {
+    extension [Self <: Construct](x: Self) {
       
-      @scala.inline
-      def setConcrete(value: Boolean): Self = StObject.set(x, "concrete", value.asInstanceOf[js.Any])
+      inline def setConcrete(value: Boolean): Self = StObject.set(x, "concrete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcreteUndefined: Self = StObject.set(x, "concrete", js.undefined)
+      inline def setConcreteUndefined: Self = StObject.set(x, "concrete", js.undefined)
       
-      @scala.inline
-      def setInterruptible(value: Boolean): Self = StObject.set(x, "interruptible", value.asInstanceOf[js.Any])
+      inline def setInterruptible(value: Boolean): Self = StObject.set(x, "interruptible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterruptibleUndefined: Self = StObject.set(x, "interruptible", js.undefined)
+      inline def setInterruptibleUndefined: Self = StObject.set(x, "interruptible", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
-      @scala.inline
-      def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      inline def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+      inline def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
       
-      @scala.inline
-      def setResolve(value: (/* events */ js.Array[Event], /* context */ Tokenizer) => js.Array[Event]): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
+      inline def setResolve(value: (/* events */ js.Array[Event], /* context */ Tokenizer) => js.Array[Event]): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolveAll(value: (/* events */ js.Array[Event], /* context */ Tokenizer) => js.Array[Event]): Self = StObject.set(x, "resolveAll", js.Any.fromFunction2(value))
+      inline def setResolveAll(value: (/* events */ js.Array[Event], /* context */ Tokenizer) => js.Array[Event]): Self = StObject.set(x, "resolveAll", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolveAllUndefined: Self = StObject.set(x, "resolveAll", js.undefined)
+      inline def setResolveAllUndefined: Self = StObject.set(x, "resolveAll", js.undefined)
       
-      @scala.inline
-      def setResolveTo(value: (/* events */ js.Array[Event], /* context */ Tokenizer) => js.Array[Event]): Self = StObject.set(x, "resolveTo", js.Any.fromFunction2(value))
+      inline def setResolveTo(value: (/* events */ js.Array[Event], /* context */ Tokenizer) => js.Array[Event]): Self = StObject.set(x, "resolveTo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResolveToUndefined: Self = StObject.set(x, "resolveTo", js.undefined)
+      inline def setResolveToUndefined: Self = StObject.set(x, "resolveTo", js.undefined)
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
       
-      @scala.inline
-      def setTokenize(value: (/* context */ Tokenizer, /* effects */ Effects) => State): Self = StObject.set(x, "tokenize", js.Any.fromFunction2(value))
+      inline def setTokenize(value: (/* context */ Tokenizer, /* effects */ Effects) => State): Self = StObject.set(x, "tokenize", js.Any.fromFunction2(value))
     }
   }
   
@@ -298,14 +260,12 @@ object sharedTypesMod {
   trait HtmlExtension extends StObject
   object HtmlExtension {
     
-    @scala.inline
-    def Enter(enter: Record[Type, js.Function0[Unit]]): typings.micromark.anon.Enter = {
+    inline def Enter(enter: Record[Type, js.Function0[Unit]]): typings.micromark.anon.Enter = {
       val __obj = js.Dynamic.literal(enter = enter.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.micromark.anon.Enter]
     }
     
-    @scala.inline
-    def Exit(exit: Record[Type, js.Function0[Unit]]): typings.micromark.anon.Exit = {
+    inline def Exit(exit: Record[Type, js.Function0[Unit]]): typings.micromark.anon.Exit = {
       val __obj = js.Dynamic.literal(exit = exit.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.micromark.anon.Exit]
     }
@@ -321,8 +281,7 @@ object sharedTypesMod {
        with CompileOptions
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
@@ -336,23 +295,18 @@ object sharedTypesMod {
   }
   object ParseOptions {
     
-    @scala.inline
-    def apply(): ParseOptions = {
+    inline def apply(): ParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParseOptions]
     }
     
-    @scala.inline
-    implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParseOptions](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: js.Array[SyntaxExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[SyntaxExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: SyntaxExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: SyntaxExtension*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     }
   }
   
@@ -374,8 +328,7 @@ object sharedTypesMod {
   }
   object Parser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       constructs: Record[CodeAsKey, Construct | js.Array[Construct]],
       content: Point => Tokenizer,
       defined: js.Array[String],
@@ -388,32 +341,23 @@ object sharedTypesMod {
       __obj.asInstanceOf[Parser]
     }
     
-    @scala.inline
-    implicit class ParserMutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
+    extension [Self <: Parser](x: Self) {
       
-      @scala.inline
-      def setConstructs(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "constructs", value.asInstanceOf[js.Any])
+      inline def setConstructs(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "constructs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: Point => Tokenizer): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      inline def setContent(value: Point => Tokenizer): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefined(value: js.Array[String]): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
+      inline def setDefined(value: js.Array[String]): Self = StObject.set(x, "defined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinedVarargs(value: String*): Self = StObject.set(x, "defined", js.Array(value :_*))
+      inline def setDefinedVarargs(value: String*): Self = StObject.set(x, "defined", js.Array(value :_*))
       
-      @scala.inline
-      def setDocument(value: Point => Tokenizer): Self = StObject.set(x, "document", js.Any.fromFunction1(value))
+      inline def setDocument(value: Point => Tokenizer): Self = StObject.set(x, "document", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlow(value: Point => Tokenizer): Self = StObject.set(x, "flow", js.Any.fromFunction1(value))
+      inline def setFlow(value: Point => Tokenizer): Self = StObject.set(x, "flow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setString(value: Point => Tokenizer): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
+      inline def setString(value: Point => Tokenizer): Self = StObject.set(x, "string", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setText(value: Point => Tokenizer): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+      inline def setText(value: Point => Tokenizer): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     }
   }
   
@@ -431,35 +375,26 @@ object sharedTypesMod {
   }
   object Point {
     
-    @scala.inline
-    def apply(column: Double, line: Double, offset: Double): Point = {
+    inline def apply(column: Double, line: Double, offset: Double): Point = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bufferIndex(value: Double): Self = StObject.set(x, "_bufferIndex", value.asInstanceOf[js.Any])
+      inline def set_bufferIndex(value: Double): Self = StObject.set(x, "_bufferIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bufferIndexUndefined: Self = StObject.set(x, "_bufferIndex", js.undefined)
+      inline def set_bufferIndexUndefined: Self = StObject.set(x, "_bufferIndex", js.undefined)
       
-      @scala.inline
-      def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
+      inline def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_indexUndefined: Self = StObject.set(x, "_index", js.undefined)
+      inline def set_indexUndefined: Self = StObject.set(x, "_index", js.undefined)
     }
   }
   
@@ -486,50 +421,36 @@ object sharedTypesMod {
   }
   object SyntaxExtension {
     
-    @scala.inline
-    def apply(): SyntaxExtension = {
+    inline def apply(): SyntaxExtension = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SyntaxExtension]
     }
     
-    @scala.inline
-    implicit class SyntaxExtensionMutableBuilder[Self <: SyntaxExtension] (val x: Self) extends AnyVal {
+    extension [Self <: SyntaxExtension](x: Self) {
       
-      @scala.inline
-      def setContentInitial(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "contentInitial", value.asInstanceOf[js.Any])
+      inline def setContentInitial(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "contentInitial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentInitialUndefined: Self = StObject.set(x, "contentInitial", js.undefined)
+      inline def setContentInitialUndefined: Self = StObject.set(x, "contentInitial", js.undefined)
       
-      @scala.inline
-      def setDocument(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+      inline def setDocument(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+      inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
       
-      @scala.inline
-      def setFlow(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+      inline def setFlow(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowInitial(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "flowInitial", value.asInstanceOf[js.Any])
+      inline def setFlowInitial(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "flowInitial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowInitialUndefined: Self = StObject.set(x, "flowInitial", js.undefined)
+      inline def setFlowInitialUndefined: Self = StObject.set(x, "flowInitial", js.undefined)
       
-      @scala.inline
-      def setFlowUndefined: Self = StObject.set(x, "flow", js.undefined)
+      inline def setFlowUndefined: Self = StObject.set(x, "flow", js.undefined)
       
-      @scala.inline
-      def setString(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      @scala.inline
-      def setText(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Record[CodeAsKey, Construct | js.Array[Construct]]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -573,60 +494,43 @@ object sharedTypesMod {
   }
   object Token {
     
-    @scala.inline
-    def apply(end: Point, start: Point, `type`: Type): Token = {
+    inline def apply(end: Point, start: Point, `type`: Type): Token = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Token]
     }
     
-    @scala.inline
-    implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+    extension [Self <: Token](x: Self) {
       
-      @scala.inline
-      def setContentType(value: flow | content | string | text): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: flow | content | string | text): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: Token): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Token): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: Token): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Token): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
       
-      @scala.inline
-      def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_close(value: Boolean): Self = StObject.set(x, "_close", value.asInstanceOf[js.Any])
+      inline def set_close(value: Boolean): Self = StObject.set(x, "_close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_closeUndefined: Self = StObject.set(x, "_close", js.undefined)
+      inline def set_closeUndefined: Self = StObject.set(x, "_close", js.undefined)
       
-      @scala.inline
-      def set_open(value: Boolean): Self = StObject.set(x, "_open", value.asInstanceOf[js.Any])
+      inline def set_open(value: Boolean): Self = StObject.set(x, "_open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_openUndefined: Self = StObject.set(x, "_open", js.undefined)
+      inline def set_openUndefined: Self = StObject.set(x, "_open", js.undefined)
       
-      @scala.inline
-      def set_tokenizer(value: Tokenizer): Self = StObject.set(x, "_tokenizer", value.asInstanceOf[js.Any])
+      inline def set_tokenizer(value: Tokenizer): Self = StObject.set(x, "_tokenizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_tokenizerUndefined: Self = StObject.set(x, "_tokenizer", js.undefined)
+      inline def set_tokenizerUndefined: Self = StObject.set(x, "_tokenizer", js.undefined)
     }
   }
   
@@ -652,8 +556,7 @@ object sharedTypesMod {
   }
   object Tokenizer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defineSkip: Point => Unit,
       events: js.Array[Event],
       now: () => Point,
@@ -666,38 +569,27 @@ object sharedTypesMod {
       __obj.asInstanceOf[Tokenizer]
     }
     
-    @scala.inline
-    implicit class TokenizerMutableBuilder[Self <: Tokenizer] (val x: Self) extends AnyVal {
+    extension [Self <: Tokenizer](x: Self) {
       
-      @scala.inline
-      def setDefineSkip(value: Point => Unit): Self = StObject.set(x, "defineSkip", js.Any.fromFunction1(value))
+      inline def setDefineSkip(value: Point => Unit): Self = StObject.set(x, "defineSkip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setNow(value: () => Point): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+      inline def setNow(value: () => Point): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setParser(value: Parser): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: Parser): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious(value: Code): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Code): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousNull: Self = StObject.set(x, "previous", null)
+      inline def setPreviousNull: Self = StObject.set(x, "previous", null)
       
-      @scala.inline
-      def setSliceSerialize(value: Token => String): Self = StObject.set(x, "sliceSerialize", js.Any.fromFunction1(value))
+      inline def setSliceSerialize(value: Token => String): Self = StObject.set(x, "sliceSerialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSliceStream(value: Token => js.Array[Chunk]): Self = StObject.set(x, "sliceStream", js.Any.fromFunction1(value))
+      inline def setSliceStream(value: Token => js.Array[Chunk]): Self = StObject.set(x, "sliceStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: js.Array[Chunk] => js.Array[Event]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: js.Array[Chunk] => js.Array[Event]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -713,38 +605,28 @@ object sharedTypesMod {
   }
   object TokenizerThis {
     
-    @scala.inline
-    def apply(events: js.Array[Event]): TokenizerThis = {
+    inline def apply(events: js.Array[Event]): TokenizerThis = {
       val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenizerThis]
     }
     
-    @scala.inline
-    implicit class TokenizerThisMutableBuilder[Self <: TokenizerThis] (val x: Self) extends AnyVal {
+    extension [Self <: TokenizerThis](x: Self) {
       
-      @scala.inline
-      def setContainerState(value: Record[String, js.Any]): Self = StObject.set(x, "containerState", value.asInstanceOf[js.Any])
+      inline def setContainerState(value: Record[String, js.Any]): Self = StObject.set(x, "containerState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStateUndefined: Self = StObject.set(x, "containerState", js.undefined)
+      inline def setContainerStateUndefined: Self = StObject.set(x, "containerState", js.undefined)
       
-      @scala.inline
-      def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setInterrupt(value: Boolean): Self = StObject.set(x, "interrupt", value.asInstanceOf[js.Any])
+      inline def setInterrupt(value: Boolean): Self = StObject.set(x, "interrupt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterruptUndefined: Self = StObject.set(x, "interrupt", js.undefined)
+      inline def setInterruptUndefined: Self = StObject.set(x, "interrupt", js.undefined)
       
-      @scala.inline
-      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
     }
   }
 }

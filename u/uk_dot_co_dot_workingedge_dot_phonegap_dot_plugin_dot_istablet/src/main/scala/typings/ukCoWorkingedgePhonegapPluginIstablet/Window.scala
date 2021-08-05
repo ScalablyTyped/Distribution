@@ -14,16 +14,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(isTablet: Boolean): Window = {
+  inline def apply(isTablet: Boolean): Window = {
     val __obj = js.Dynamic.literal(isTablet = isTablet.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setIsTablet(value: Boolean): Self = StObject.set(x, "isTablet", value.asInstanceOf[js.Any])
+    inline def setIsTablet(value: Boolean): Self = StObject.set(x, "isTablet", value.asInstanceOf[js.Any])
   }
 }

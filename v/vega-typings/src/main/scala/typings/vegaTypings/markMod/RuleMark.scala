@@ -17,17 +17,14 @@ trait RuleMark
 }
 object RuleMark {
   
-  @scala.inline
-  def apply(): RuleMark = {
+  inline def apply(): RuleMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("rule")
     __obj.asInstanceOf[RuleMark]
   }
   
-  @scala.inline
-  implicit class RuleMarkMutableBuilder[Self <: RuleMark] (val x: Self) extends AnyVal {
+  extension [Self <: RuleMark](x: Self) {
     
-    @scala.inline
-    def setType(value: rule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: rule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

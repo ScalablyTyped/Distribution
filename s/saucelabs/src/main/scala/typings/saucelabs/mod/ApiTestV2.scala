@@ -19,37 +19,27 @@ trait ApiTestV2
 }
 object ApiTestV2 {
   
-  @scala.inline
-  def apply(): ApiTestV2 = {
+  inline def apply(): ApiTestV2 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiTestV2]
   }
   
-  @scala.inline
-  implicit class ApiTestV2MutableBuilder[Self <: ApiTestV2] (val x: Self) extends AnyVal {
+  extension [Self <: ApiTestV2](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDataCenterId(value: Id): Self = StObject.set(x, "dataCenterId", value.asInstanceOf[js.Any])
+    inline def setDataCenterId(value: Id): Self = StObject.set(x, "dataCenterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCenterIdUndefined: Self = StObject.set(x, "dataCenterId", js.undefined)
+    inline def setDataCenterIdUndefined: Self = StObject.set(x, "dataCenterId", js.undefined)
     
-    @scala.inline
-    def setDeviceId(value: Id): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: Id): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+    inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+    inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
   }
 }

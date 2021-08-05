@@ -16,8 +16,7 @@ trait ClassifierShim
 }
 object ClassifierShim {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     classifier: Classifier,
     dispose: js.Any => Unit,
     factory: js.Any,
@@ -28,16 +27,12 @@ object ClassifierShim {
     __obj.asInstanceOf[ClassifierShim]
   }
   
-  @scala.inline
-  implicit class ClassifierShimMutableBuilder[Self <: ClassifierShim] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifierShim](x: Self) {
     
-    @scala.inline
-    def setClassifier(value: Classifier): Self = StObject.set(x, "classifier", value.asInstanceOf[js.Any])
+    inline def setClassifier(value: Classifier): Self = StObject.set(x, "classifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetClassificationsForLine(value: (String, EndOfLineState) => String): Self = StObject.set(x, "getClassificationsForLine", js.Any.fromFunction2(value))
+    inline def setGetClassificationsForLine(value: (String, EndOfLineState) => String): Self = StObject.set(x, "getClassificationsForLine", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHost(value: IClassifierHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: IClassifierHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
   }
 }

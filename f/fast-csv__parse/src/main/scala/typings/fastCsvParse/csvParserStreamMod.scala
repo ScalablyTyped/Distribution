@@ -20,47 +20,47 @@ object csvParserStreamMod {
     
     def _transform(data: Buffer, encoding: String, done: TransformCallback): Unit = js.native
     
-    var checkAndEmitHeaders: js.Any = js.native
+    /* private */ var checkAndEmitHeaders: js.Any = js.native
     
-    val decoder: js.Any = js.native
+    /* private */ val decoder: js.Any = js.native
     
-    var endEmitted: js.Any = js.native
+    /* private */ var endEmitted: js.Any = js.native
     
     /* private */ def hasHitRowLimit: js.Any = js.native
     
-    val headerTransformer: js.Any = js.native
+    /* private */ val headerTransformer: js.Any = js.native
     
-    var headersEmitted: js.Any = js.native
+    /* private */ var headersEmitted: js.Any = js.native
     
-    var lines: js.Any = js.native
+    /* private */ var lines: js.Any = js.native
     
-    var parse: js.Any = js.native
+    /* private */ var parse: js.Any = js.native
     
-    var parsedLineCount: js.Any = js.native
+    /* private */ var parsedLineCount: js.Any = js.native
     
-    var parsedRowCount: js.Any = js.native
+    /* private */ var parsedRowCount: js.Any = js.native
     
-    val parser: js.Any = js.native
+    /* private */ val parser: js.Any = js.native
     
-    val parserOptions: js.Any = js.native
+    /* private */ val parserOptions: js.Any = js.native
     
-    var processRows: js.Any = js.native
+    /* private */ var processRows: js.Any = js.native
     
-    var pushRow: js.Any = js.native
+    /* private */ var pushRow: js.Any = js.native
     
-    var rowCount: js.Any = js.native
+    /* private */ var rowCount: js.Any = js.native
     
-    val rowTransformerValidator: js.Any = js.native
+    /* private */ val rowTransformerValidator: js.Any = js.native
     
     /* private */ def shouldEmitRows: js.Any = js.native
     
     /* private */ def shouldSkipLine: js.Any = js.native
     
-    var skipRow: js.Any = js.native
+    /* private */ var skipRow: js.Any = js.native
     
     def transform(transformFunction: RowTransformFunction[I, O]): CsvParserStream[I, O] = js.native
     
-    var transformRow: js.Any = js.native
+    /* private */ var transformRow: js.Any = js.native
     
     def validate(validateFunction: RowValidate[O]): CsvParserStream[I, O] = js.native
   }
@@ -74,7 +74,6 @@ object csvParserStreamMod {
     @JSImport("@fast-csv/parse/build/src/CsvParserStream", "CsvParserStream.wrapDoneCallback")
     @js.native
     def wrapDoneCallback: js.Any = js.native
-    @scala.inline
-    def wrapDoneCallback_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapDoneCallback")(x.asInstanceOf[js.Any])
+    inline def wrapDoneCallback_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapDoneCallback")(x.asInstanceOf[js.Any])
   }
 }

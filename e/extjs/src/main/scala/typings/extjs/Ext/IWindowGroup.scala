@@ -71,79 +71,55 @@ trait IWindowGroup
 }
 object IWindowGroup {
   
-  @scala.inline
-  def apply(): IWindowGroup = {
+  inline def apply(): IWindowGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IWindowGroup]
   }
   
-  @scala.inline
-  implicit class IWindowGroupMutableBuilder[Self <: IWindowGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IWindowGroup](x: Self) {
     
-    @scala.inline
-    def setBringToFront(value: /* comp */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "bringToFront", js.Any.fromFunction1(value))
+    inline def setBringToFront(value: /* comp */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "bringToFront", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBringToFrontUndefined: Self = StObject.set(x, "bringToFront", js.undefined)
+    inline def setBringToFrontUndefined: Self = StObject.set(x, "bringToFront", js.undefined)
     
-    @scala.inline
-    def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
+    inline def setEach(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "each", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachBottomUp(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachBottomUp", js.Any.fromFunction2(value))
+    inline def setEachBottomUp(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachBottomUp", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachBottomUpUndefined: Self = StObject.set(x, "eachBottomUp", js.undefined)
+    inline def setEachBottomUpUndefined: Self = StObject.set(x, "eachBottomUp", js.undefined)
     
-    @scala.inline
-    def setEachTopDown(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachTopDown", js.Any.fromFunction2(value))
+    inline def setEachTopDown(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "eachTopDown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEachTopDownUndefined: Self = StObject.set(x, "eachTopDown", js.undefined)
+    inline def setEachTopDownUndefined: Self = StObject.set(x, "eachTopDown", js.undefined)
     
-    @scala.inline
-    def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+    inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
     
-    @scala.inline
-    def setGet(value: /* id */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: /* id */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetActive(value: () => IComponent): Self = StObject.set(x, "getActive", js.Any.fromFunction0(value))
+    inline def setGetActive(value: () => IComponent): Self = StObject.set(x, "getActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveUndefined: Self = StObject.set(x, "getActive", js.undefined)
+    inline def setGetActiveUndefined: Self = StObject.set(x, "getActive", js.undefined)
     
-    @scala.inline
-    def setGetBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "getBy", js.Any.fromFunction2(value))
+    inline def setGetBy(value: (/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Array): Self = StObject.set(x, "getBy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetByUndefined: Self = StObject.set(x, "getBy", js.undefined)
+    inline def setGetByUndefined: Self = StObject.set(x, "getBy", js.undefined)
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
+    inline def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideAllUndefined: Self = StObject.set(x, "hideAll", js.undefined)
+    inline def setHideAllUndefined: Self = StObject.set(x, "hideAll", js.undefined)
     
-    @scala.inline
-    def setRegister(value: /* comp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    inline def setRegister(value: /* comp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+    inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     
-    @scala.inline
-    def setSendToBack(value: /* comp */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "sendToBack", js.Any.fromFunction1(value))
+    inline def setSendToBack(value: /* comp */ js.UndefOr[js.Any] => IComponent): Self = StObject.set(x, "sendToBack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendToBackUndefined: Self = StObject.set(x, "sendToBack", js.undefined)
+    inline def setSendToBackUndefined: Self = StObject.set(x, "sendToBack", js.undefined)
     
-    @scala.inline
-    def setUnregister(value: /* comp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
+    inline def setUnregister(value: /* comp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnregisterUndefined: Self = StObject.set(x, "unregister", js.undefined)
+    inline def setUnregisterUndefined: Self = StObject.set(x, "unregister", js.undefined)
   }
 }

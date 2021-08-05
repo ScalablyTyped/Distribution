@@ -17,8 +17,7 @@ trait IBitmapCodecInformation extends StObject {
 }
 object IBitmapCodecInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     codecId: String,
     fileExtensions: IVectorView[String],
     friendlyName: String,
@@ -28,19 +27,14 @@ object IBitmapCodecInformation {
     __obj.asInstanceOf[IBitmapCodecInformation]
   }
   
-  @scala.inline
-  implicit class IBitmapCodecInformationMutableBuilder[Self <: IBitmapCodecInformation] (val x: Self) extends AnyVal {
+  extension [Self <: IBitmapCodecInformation](x: Self) {
     
-    @scala.inline
-    def setCodecId(value: String): Self = StObject.set(x, "codecId", value.asInstanceOf[js.Any])
+    inline def setCodecId(value: String): Self = StObject.set(x, "codecId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileExtensions(value: IVectorView[String]): Self = StObject.set(x, "fileExtensions", value.asInstanceOf[js.Any])
+    inline def setFileExtensions(value: IVectorView[String]): Self = StObject.set(x, "fileExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypes(value: IVectorView[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
+    inline def setMimeTypes(value: IVectorView[String]): Self = StObject.set(x, "mimeTypes", value.asInstanceOf[js.Any])
   }
 }

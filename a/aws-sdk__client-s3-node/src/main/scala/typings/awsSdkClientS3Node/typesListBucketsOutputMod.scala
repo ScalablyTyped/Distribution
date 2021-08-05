@@ -28,29 +28,22 @@ object typesListBucketsOutputMod {
   }
   object ListBucketsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): ListBucketsOutput = {
+    inline def apply($metadata: ResponseMetadata): ListBucketsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListBucketsOutput]
     }
     
-    @scala.inline
-    implicit class ListBucketsOutputMutableBuilder[Self <: ListBucketsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListBucketsOutput](x: Self) {
       
-      @scala.inline
-      def setBuckets(value: js.Array[UnmarshalledBucket]): Self = StObject.set(x, "Buckets", value.asInstanceOf[js.Any])
+      inline def setBuckets(value: js.Array[UnmarshalledBucket]): Self = StObject.set(x, "Buckets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketsUndefined: Self = StObject.set(x, "Buckets", js.undefined)
+      inline def setBucketsUndefined: Self = StObject.set(x, "Buckets", js.undefined)
       
-      @scala.inline
-      def setBucketsVarargs(value: UnmarshalledBucket*): Self = StObject.set(x, "Buckets", js.Array(value :_*))
+      inline def setBucketsVarargs(value: UnmarshalledBucket*): Self = StObject.set(x, "Buckets", js.Array(value :_*))
       
-      @scala.inline
-      def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
     }
   }
 }

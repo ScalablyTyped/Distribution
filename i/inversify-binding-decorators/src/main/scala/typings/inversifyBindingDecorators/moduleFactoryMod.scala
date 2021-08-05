@@ -11,6 +11,5 @@ object moduleFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): ContainerModule = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ContainerModule]
+  inline def default(): ContainerModule = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ContainerModule]
 }

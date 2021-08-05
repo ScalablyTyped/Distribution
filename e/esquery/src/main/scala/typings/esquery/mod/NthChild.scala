@@ -16,17 +16,14 @@ trait NthChild
 }
 object NthChild {
   
-  @scala.inline
-  def apply(index: NumericLiteral): NthChild = {
+  inline def apply(index: NumericLiteral): NthChild = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("nth-child")
     __obj.asInstanceOf[NthChild]
   }
   
-  @scala.inline
-  implicit class NthChildMutableBuilder[Self <: NthChild] (val x: Self) extends AnyVal {
+  extension [Self <: NthChild](x: Self) {
     
-    @scala.inline
-    def setType(value: `nth-child`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `nth-child`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

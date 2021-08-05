@@ -52,61 +52,43 @@ trait RecipientSignatureProviderOptions extends StObject {
 }
 object RecipientSignatureProviderOptions {
   
-  @scala.inline
-  def apply(): RecipientSignatureProviderOptions = {
+  inline def apply(): RecipientSignatureProviderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientSignatureProviderOptions]
   }
   
-  @scala.inline
-  implicit class RecipientSignatureProviderOptionsMutableBuilder[Self <: RecipientSignatureProviderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientSignatureProviderOptions](x: Self) {
     
-    @scala.inline
-    def setCpfNumber(value: String): Self = StObject.set(x, "cpfNumber", value.asInstanceOf[js.Any])
+    inline def setCpfNumber(value: String): Self = StObject.set(x, "cpfNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpfNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "cpfNumberMetadata", value.asInstanceOf[js.Any])
+    inline def setCpfNumberMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "cpfNumberMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpfNumberMetadataUndefined: Self = StObject.set(x, "cpfNumberMetadata", js.undefined)
+    inline def setCpfNumberMetadataUndefined: Self = StObject.set(x, "cpfNumberMetadata", js.undefined)
     
-    @scala.inline
-    def setCpfNumberUndefined: Self = StObject.set(x, "cpfNumber", js.undefined)
+    inline def setCpfNumberUndefined: Self = StObject.set(x, "cpfNumber", js.undefined)
     
-    @scala.inline
-    def setOneTimePassword(value: String): Self = StObject.set(x, "oneTimePassword", value.asInstanceOf[js.Any])
+    inline def setOneTimePassword(value: String): Self = StObject.set(x, "oneTimePassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneTimePasswordMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "oneTimePasswordMetadata", value.asInstanceOf[js.Any])
+    inline def setOneTimePasswordMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "oneTimePasswordMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneTimePasswordMetadataUndefined: Self = StObject.set(x, "oneTimePasswordMetadata", js.undefined)
+    inline def setOneTimePasswordMetadataUndefined: Self = StObject.set(x, "oneTimePasswordMetadata", js.undefined)
     
-    @scala.inline
-    def setOneTimePasswordUndefined: Self = StObject.set(x, "oneTimePassword", js.undefined)
+    inline def setOneTimePasswordUndefined: Self = StObject.set(x, "oneTimePassword", js.undefined)
     
-    @scala.inline
-    def setSignerRole(value: String): Self = StObject.set(x, "signerRole", value.asInstanceOf[js.Any])
+    inline def setSignerRole(value: String): Self = StObject.set(x, "signerRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerRoleMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "signerRoleMetadata", value.asInstanceOf[js.Any])
+    inline def setSignerRoleMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "signerRoleMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerRoleMetadataUndefined: Self = StObject.set(x, "signerRoleMetadata", js.undefined)
+    inline def setSignerRoleMetadataUndefined: Self = StObject.set(x, "signerRoleMetadata", js.undefined)
     
-    @scala.inline
-    def setSignerRoleUndefined: Self = StObject.set(x, "signerRole", js.undefined)
+    inline def setSignerRoleUndefined: Self = StObject.set(x, "signerRole", js.undefined)
     
-    @scala.inline
-    def setSms(value: String): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
+    inline def setSms(value: String): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "smsMetadata", value.asInstanceOf[js.Any])
+    inline def setSmsMetadata(value: /* Metadata about a property. */ PropertyMetadata): Self = StObject.set(x, "smsMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsMetadataUndefined: Self = StObject.set(x, "smsMetadata", js.undefined)
+    inline def setSmsMetadataUndefined: Self = StObject.set(x, "smsMetadata", js.undefined)
     
-    @scala.inline
-    def setSmsUndefined: Self = StObject.set(x, "sms", js.undefined)
+    inline def setSmsUndefined: Self = StObject.set(x, "sms", js.undefined)
   }
 }

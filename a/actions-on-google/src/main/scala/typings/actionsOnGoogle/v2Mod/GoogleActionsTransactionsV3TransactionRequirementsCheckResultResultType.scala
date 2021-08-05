@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType extends StObject
 object GoogleActionsTransactionsV3TransactionRequirementsCheckResultResultType {
   
-  @scala.inline
-  def CANNOT_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.CANNOT_TRANSACT = "CANNOT_TRANSACT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANNOT_TRANSACT]
+  inline def CANNOT_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.CANNOT_TRANSACT = "CANNOT_TRANSACT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CANNOT_TRANSACT]
   
-  @scala.inline
-  def CAN_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.CAN_TRANSACT = "CAN_TRANSACT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CAN_TRANSACT]
+  inline def CAN_TRANSACT: typings.actionsOnGoogle.actionsOnGoogleStrings.CAN_TRANSACT = "CAN_TRANSACT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.CAN_TRANSACT]
   
-  @scala.inline
-  def RESULT_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.RESULT_TYPE_UNSPECIFIED = "RESULT_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RESULT_TYPE_UNSPECIFIED]
+  inline def RESULT_TYPE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.RESULT_TYPE_UNSPECIFIED = "RESULT_TYPE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RESULT_TYPE_UNSPECIFIED]
 }

@@ -18,19 +18,15 @@ trait MatchRange extends StObject {
 }
 object MatchRange {
   
-  @scala.inline
-  def apply(end: Long, start: Long): MatchRange = {
+  inline def apply(end: Long, start: Long): MatchRange = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[MatchRange]
   }
   
-  @scala.inline
-  implicit class MatchRangeMutableBuilder[Self <: MatchRange] (val x: Self) extends AnyVal {
+  extension [Self <: MatchRange](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Long): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Long): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Long): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Long): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

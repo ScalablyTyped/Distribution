@@ -11,27 +11,23 @@ object strangeStrings {
   sealed trait LeftparenthesisRightparenthesis
     extends StObject
        with Bounds
-  @scala.inline
-  def LeftparenthesisRightparenthesis: LeftparenthesisRightparenthesis = "()".asInstanceOf[LeftparenthesisRightparenthesis]
+  inline def LeftparenthesisRightparenthesis: LeftparenthesisRightparenthesis = "()".asInstanceOf[LeftparenthesisRightparenthesis]
   
   @js.native
   sealed trait `Leftparenthesis]`
     extends StObject
        with Bounds
-  @scala.inline
-  def `Leftparenthesis]`: `Leftparenthesis]` = "(]".asInstanceOf[`Leftparenthesis]`]
+  inline def `Leftparenthesis]`: `Leftparenthesis]` = "(]".asInstanceOf[`Leftparenthesis]`]
   
   @js.native
   sealed trait `[Rightparenthesis`
     extends StObject
        with Bounds
-  @scala.inline
-  def `[Rightparenthesis`: `[Rightparenthesis` = "[)".asInstanceOf[`[Rightparenthesis`]
+  inline def `[Rightparenthesis`: `[Rightparenthesis` = "[)".asInstanceOf[`[Rightparenthesis`]
   
   @js.native
   sealed trait `[]`
     extends StObject
        with Bounds
-  @scala.inline
-  def `[]`: `[]` = "[]".asInstanceOf[`[]`]
+  inline def `[]`: `[]` = "[]".asInstanceOf[`[]`]
 }

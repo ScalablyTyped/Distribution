@@ -18,19 +18,15 @@ trait ParameterValue extends StObject {
 }
 object ParameterValue {
   
-  @scala.inline
-  def apply(id: fieldNameString, stringValue: fieldStringValue): ParameterValue = {
+  inline def apply(id: fieldNameString, stringValue: fieldStringValue): ParameterValue = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], stringValue = stringValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterValue]
   }
   
-  @scala.inline
-  implicit class ParameterValueMutableBuilder[Self <: ParameterValue] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterValue](x: Self) {
     
-    @scala.inline
-    def setId(value: fieldNameString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: fieldNameString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValue(value: fieldStringValue): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: fieldStringValue): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
   }
 }

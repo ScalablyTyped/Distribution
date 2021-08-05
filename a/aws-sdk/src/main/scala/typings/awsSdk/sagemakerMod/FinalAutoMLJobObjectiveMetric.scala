@@ -23,25 +23,19 @@ trait FinalAutoMLJobObjectiveMetric extends StObject {
 }
 object FinalAutoMLJobObjectiveMetric {
   
-  @scala.inline
-  def apply(MetricName: AutoMLMetricEnum, Value: MetricValue): FinalAutoMLJobObjectiveMetric = {
+  inline def apply(MetricName: AutoMLMetricEnum, Value: MetricValue): FinalAutoMLJobObjectiveMetric = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinalAutoMLJobObjectiveMetric]
   }
   
-  @scala.inline
-  implicit class FinalAutoMLJobObjectiveMetricMutableBuilder[Self <: FinalAutoMLJobObjectiveMetric] (val x: Self) extends AnyVal {
+  extension [Self <: FinalAutoMLJobObjectiveMetric](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: AutoMLMetricEnum): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: AutoMLMetricEnum): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AutoMLJobObjectiveType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: AutoMLJobObjectiveType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValue(value: MetricValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: MetricValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

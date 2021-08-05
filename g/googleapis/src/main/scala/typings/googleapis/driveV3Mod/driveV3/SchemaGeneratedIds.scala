@@ -27,34 +27,25 @@ trait SchemaGeneratedIds extends StObject {
 }
 object SchemaGeneratedIds {
   
-  @scala.inline
-  def apply(): SchemaGeneratedIds = {
+  inline def apply(): SchemaGeneratedIds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGeneratedIds]
   }
   
-  @scala.inline
-  implicit class SchemaGeneratedIdsMutableBuilder[Self <: SchemaGeneratedIds] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGeneratedIds](x: Self) {
     
-    @scala.inline
-    def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
   }
 }

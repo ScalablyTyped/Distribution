@@ -33,46 +33,33 @@ trait ListSnapshotBlocksResponse extends StObject {
 }
 object ListSnapshotBlocksResponse {
   
-  @scala.inline
-  def apply(): ListSnapshotBlocksResponse = {
+  inline def apply(): ListSnapshotBlocksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSnapshotBlocksResponse]
   }
   
-  @scala.inline
-  implicit class ListSnapshotBlocksResponseMutableBuilder[Self <: ListSnapshotBlocksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSnapshotBlocksResponse](x: Self) {
     
-    @scala.inline
-    def setBlockSize(value: BlockSize): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
+    inline def setBlockSize(value: BlockSize): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockSizeUndefined: Self = StObject.set(x, "BlockSize", js.undefined)
+    inline def setBlockSizeUndefined: Self = StObject.set(x, "BlockSize", js.undefined)
     
-    @scala.inline
-    def setBlocks(value: Blocks): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
+    inline def setBlocks(value: Blocks): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
+    inline def setBlocksUndefined: Self = StObject.set(x, "Blocks", js.undefined)
     
-    @scala.inline
-    def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
+    inline def setBlocksVarargs(value: Block*): Self = StObject.set(x, "Blocks", js.Array(value :_*))
     
-    @scala.inline
-    def setExpiryTime(value: TimeStamp): Self = StObject.set(x, "ExpiryTime", value.asInstanceOf[js.Any])
+    inline def setExpiryTime(value: TimeStamp): Self = StObject.set(x, "ExpiryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiryTimeUndefined: Self = StObject.set(x, "ExpiryTime", js.undefined)
+    inline def setExpiryTimeUndefined: Self = StObject.set(x, "ExpiryTime", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVolumeSize(value: VolumeSize): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
+    inline def setVolumeSize(value: VolumeSize): Self = StObject.set(x, "VolumeSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
+    inline def setVolumeSizeUndefined: Self = StObject.set(x, "VolumeSize", js.undefined)
   }
 }

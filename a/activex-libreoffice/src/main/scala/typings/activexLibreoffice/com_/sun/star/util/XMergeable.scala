@@ -22,8 +22,7 @@ trait XMergeable
 }
 object XMergeable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IsMerged: Boolean,
     acquire: () => Unit,
     getIsMerged: () => Boolean,
@@ -35,16 +34,12 @@ object XMergeable {
     __obj.asInstanceOf[XMergeable]
   }
   
-  @scala.inline
-  implicit class XMergeableMutableBuilder[Self <: XMergeable] (val x: Self) extends AnyVal {
+  extension [Self <: XMergeable](x: Self) {
     
-    @scala.inline
-    def setGetIsMerged(value: () => Boolean): Self = StObject.set(x, "getIsMerged", js.Any.fromFunction0(value))
+    inline def setGetIsMerged(value: () => Boolean): Self = StObject.set(x, "getIsMerged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMerged(value: Boolean): Self = StObject.set(x, "IsMerged", value.asInstanceOf[js.Any])
+    inline def setIsMerged(value: Boolean): Self = StObject.set(x, "IsMerged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerge(value: Boolean => Unit): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
+    inline def setMerge(value: Boolean => Unit): Self = StObject.set(x, "merge", js.Any.fromFunction1(value))
   }
 }

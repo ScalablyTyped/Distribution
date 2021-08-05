@@ -18,19 +18,15 @@ trait DkimSigningAttributes extends StObject {
 }
 object DkimSigningAttributes {
   
-  @scala.inline
-  def apply(DomainSigningPrivateKey: PrivateKey, DomainSigningSelector: Selector): DkimSigningAttributes = {
+  inline def apply(DomainSigningPrivateKey: PrivateKey, DomainSigningSelector: Selector): DkimSigningAttributes = {
     val __obj = js.Dynamic.literal(DomainSigningPrivateKey = DomainSigningPrivateKey.asInstanceOf[js.Any], DomainSigningSelector = DomainSigningSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[DkimSigningAttributes]
   }
   
-  @scala.inline
-  implicit class DkimSigningAttributesMutableBuilder[Self <: DkimSigningAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: DkimSigningAttributes](x: Self) {
     
-    @scala.inline
-    def setDomainSigningPrivateKey(value: PrivateKey): Self = StObject.set(x, "DomainSigningPrivateKey", value.asInstanceOf[js.Any])
+    inline def setDomainSigningPrivateKey(value: PrivateKey): Self = StObject.set(x, "DomainSigningPrivateKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainSigningSelector(value: Selector): Self = StObject.set(x, "DomainSigningSelector", value.asInstanceOf[js.Any])
+    inline def setDomainSigningSelector(value: Selector): Self = StObject.set(x, "DomainSigningSelector", value.asInstanceOf[js.Any])
   }
 }

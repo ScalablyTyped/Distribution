@@ -13,19 +13,15 @@ trait CreateNotebookInstanceLifecycleConfigOutput extends StObject {
 }
 object CreateNotebookInstanceLifecycleConfigOutput {
   
-  @scala.inline
-  def apply(): CreateNotebookInstanceLifecycleConfigOutput = {
+  inline def apply(): CreateNotebookInstanceLifecycleConfigOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNotebookInstanceLifecycleConfigOutput]
   }
   
-  @scala.inline
-  implicit class CreateNotebookInstanceLifecycleConfigOutputMutableBuilder[Self <: CreateNotebookInstanceLifecycleConfigOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNotebookInstanceLifecycleConfigOutput](x: Self) {
     
-    @scala.inline
-    def setNotebookInstanceLifecycleConfigArn(value: NotebookInstanceLifecycleConfigArn): Self = StObject.set(x, "NotebookInstanceLifecycleConfigArn", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceLifecycleConfigArn(value: NotebookInstanceLifecycleConfigArn): Self = StObject.set(x, "NotebookInstanceLifecycleConfigArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookInstanceLifecycleConfigArnUndefined: Self = StObject.set(x, "NotebookInstanceLifecycleConfigArn", js.undefined)
+    inline def setNotebookInstanceLifecycleConfigArnUndefined: Self = StObject.set(x, "NotebookInstanceLifecycleConfigArn", js.undefined)
   }
 }

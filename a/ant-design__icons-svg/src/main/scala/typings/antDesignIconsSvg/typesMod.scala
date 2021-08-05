@@ -20,29 +20,22 @@ object typesMod {
   }
   object AbstractNode {
     
-    @scala.inline
-    def apply(attrs: StringDictionary[String], tag: String): AbstractNode = {
+    inline def apply(attrs: StringDictionary[String], tag: String): AbstractNode = {
       val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbstractNode]
     }
     
-    @scala.inline
-    implicit class AbstractNodeMutableBuilder[Self <: AbstractNode] (val x: Self) extends AnyVal {
+    extension [Self <: AbstractNode](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: js.Array[AbstractNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[AbstractNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: AbstractNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: AbstractNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,8 +49,7 @@ object typesMod {
   }
   object IconDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       icon: (js.Function2[/* primaryColor */ String, /* secondaryColor */ String, AbstractNode]) | AbstractNode,
       name: String,
       theme: ThemeType
@@ -66,22 +58,17 @@ object typesMod {
       __obj.asInstanceOf[IconDefinition]
     }
     
-    @scala.inline
-    implicit class IconDefinitionMutableBuilder[Self <: IconDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: IconDefinition](x: Self) {
       
-      @scala.inline
-      def setIcon(
+      inline def setIcon(
         value: (js.Function2[/* primaryColor */ String, /* secondaryColor */ String, AbstractNode]) | AbstractNode
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconFunction2(value: (/* primaryColor */ String, /* secondaryColor */ String) => AbstractNode): Self = StObject.set(x, "icon", js.Any.fromFunction2(value))
+      inline def setIconFunction2(value: (/* primaryColor */ String, /* secondaryColor */ String) => AbstractNode): Self = StObject.set(x, "icon", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: ThemeType): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ThemeType): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,14 +80,11 @@ object typesMod {
   trait ThemeType extends StObject
   object ThemeType {
     
-    @scala.inline
-    def filled: filled_ = "filled".asInstanceOf[filled_]
+    inline def filled: filled_ = "filled".asInstanceOf[filled_]
     
-    @scala.inline
-    def outlined: outlined_ = "outlined".asInstanceOf[outlined_]
+    inline def outlined: outlined_ = "outlined".asInstanceOf[outlined_]
     
-    @scala.inline
-    def twotone: twotone_ = "twotone".asInstanceOf[twotone_]
+    inline def twotone: twotone_ = "twotone".asInstanceOf[twotone_]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -111,13 +95,10 @@ object typesMod {
   trait ThemeTypeUpperCase extends StObject
   object ThemeTypeUpperCase {
     
-    @scala.inline
-    def Filled: typings.antDesignIconsSvg.antDesignIconsSvgStrings.Filled = "Filled".asInstanceOf[typings.antDesignIconsSvg.antDesignIconsSvgStrings.Filled]
+    inline def Filled: typings.antDesignIconsSvg.antDesignIconsSvgStrings.Filled = "Filled".asInstanceOf[typings.antDesignIconsSvg.antDesignIconsSvgStrings.Filled]
     
-    @scala.inline
-    def Outlined: typings.antDesignIconsSvg.antDesignIconsSvgStrings.Outlined = "Outlined".asInstanceOf[typings.antDesignIconsSvg.antDesignIconsSvgStrings.Outlined]
+    inline def Outlined: typings.antDesignIconsSvg.antDesignIconsSvgStrings.Outlined = "Outlined".asInstanceOf[typings.antDesignIconsSvg.antDesignIconsSvgStrings.Outlined]
     
-    @scala.inline
-    def TwoTone: typings.antDesignIconsSvg.antDesignIconsSvgStrings.TwoTone = "TwoTone".asInstanceOf[typings.antDesignIconsSvg.antDesignIconsSvgStrings.TwoTone]
+    inline def TwoTone: typings.antDesignIconsSvg.antDesignIconsSvgStrings.TwoTone = "TwoTone".asInstanceOf[typings.antDesignIconsSvg.antDesignIconsSvgStrings.TwoTone]
   }
 }

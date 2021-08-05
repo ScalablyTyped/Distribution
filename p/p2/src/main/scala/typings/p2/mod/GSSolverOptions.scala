@@ -12,25 +12,19 @@ trait GSSolverOptions extends StObject {
 }
 object GSSolverOptions {
   
-  @scala.inline
-  def apply(): GSSolverOptions = {
+  inline def apply(): GSSolverOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GSSolverOptions]
   }
   
-  @scala.inline
-  implicit class GSSolverOptionsMutableBuilder[Self <: GSSolverOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GSSolverOptions](x: Self) {
     
-    @scala.inline
-    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
-    @scala.inline
-    def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
   }
 }

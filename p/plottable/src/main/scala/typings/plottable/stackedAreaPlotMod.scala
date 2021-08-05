@@ -16,19 +16,19 @@ object stackedAreaPlotMod {
     */
   class StackedArea[X] () extends Area[X] {
     
-    var _baseline: js.Any = js.native
+    /* private */ var _baseline: js.Any = js.native
     
-    var _baselineValue: js.Any = js.native
+    /* private */ var _baselineValue: js.Any = js.native
     
-    var _baselineValueProvider: js.Any = js.native
+    /* private */ var _baselineValueProvider: js.Any = js.native
     
     /* private */ def _checkSameDomain(): js.Any = js.native
     
-    var _stackedExtent: js.Any = js.native
+    /* private */ var _stackedExtent: js.Any = js.native
     
-    var _stackingOrder: js.Any = js.native
+    /* private */ var _stackingOrder: js.Any = js.native
     
-    var _stackingResult: js.Any = js.native
+    /* private */ var _stackingResult: js.Any = js.native
     
     /**
       * Gets the stacking order of the plot.
@@ -70,7 +70,6 @@ object stackedAreaPlotMod {
       * @param {Accessor<any>} keyAccessor The accessor for the key of the data
       * @return {string[]} An array of stringified keys
       */
-    @scala.inline
-    def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_domainKeys")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_domainKeys")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

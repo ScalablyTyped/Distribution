@@ -13,16 +13,13 @@ trait BanAdd
 }
 object BanAdd {
   
-  @scala.inline
-  def apply(banid: String): BanAdd = {
+  inline def apply(banid: String): BanAdd = {
     val __obj = js.Dynamic.literal(banid = banid.asInstanceOf[js.Any])
     __obj.asInstanceOf[BanAdd]
   }
   
-  @scala.inline
-  implicit class BanAddMutableBuilder[Self <: BanAdd] (val x: Self) extends AnyVal {
+  extension [Self <: BanAdd](x: Self) {
     
-    @scala.inline
-    def setBanid(value: String): Self = StObject.set(x, "banid", value.asInstanceOf[js.Any])
+    inline def setBanid(value: String): Self = StObject.set(x, "banid", value.asInstanceOf[js.Any])
   }
 }

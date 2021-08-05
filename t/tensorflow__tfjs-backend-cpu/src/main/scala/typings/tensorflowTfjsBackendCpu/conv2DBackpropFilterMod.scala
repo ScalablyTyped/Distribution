@@ -13,8 +13,7 @@ object conv2DBackpropFilterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def conv2DBackpropFilter(args: AttrsConv2DBackpropFilterAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def conv2DBackpropFilter(args: AttrsConv2DBackpropFilterAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2DBackpropFilter")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Conv2DBackpropFilter", "conv2DBackpropFilterConfig")
   @js.native

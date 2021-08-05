@@ -23,22 +23,17 @@ trait GetDomainStatisticsReportRequest extends StObject {
 }
 object GetDomainStatisticsReportRequest {
   
-  @scala.inline
-  def apply(Domain: Identity, EndDate: Timestamp, StartDate: Timestamp): GetDomainStatisticsReportRequest = {
+  inline def apply(Domain: Identity, EndDate: Timestamp, StartDate: Timestamp): GetDomainStatisticsReportRequest = {
     val __obj = js.Dynamic.literal(Domain = Domain.asInstanceOf[js.Any], EndDate = EndDate.asInstanceOf[js.Any], StartDate = StartDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainStatisticsReportRequest]
   }
   
-  @scala.inline
-  implicit class GetDomainStatisticsReportRequestMutableBuilder[Self <: GetDomainStatisticsReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainStatisticsReportRequest](x: Self) {
     
-    @scala.inline
-    def setDomain(value: Identity): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: Identity): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
   }
 }

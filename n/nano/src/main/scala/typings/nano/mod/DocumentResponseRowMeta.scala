@@ -20,28 +20,21 @@ trait DocumentResponseRowMeta extends StObject {
 }
 object DocumentResponseRowMeta {
   
-  @scala.inline
-  def apply(id: String, key: String, value: Rev): DocumentResponseRowMeta = {
+  inline def apply(id: String, key: String, value: Rev): DocumentResponseRowMeta = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentResponseRowMeta]
   }
   
-  @scala.inline
-  implicit class DocumentResponseRowMetaMutableBuilder[Self <: DocumentResponseRowMeta] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentResponseRowMeta](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Rev): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Rev): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

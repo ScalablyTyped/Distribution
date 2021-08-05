@@ -20,8 +20,7 @@ trait TemplateLiteral_
 }
 object TemplateLiteral_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     expressions: js.Array[Expression],
     loc: SourceLocation,
@@ -33,22 +32,16 @@ object TemplateLiteral_ {
     __obj.asInstanceOf[TemplateLiteral_]
   }
   
-  @scala.inline
-  implicit class TemplateLiteral_MutableBuilder[Self <: TemplateLiteral_] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateLiteral_](x: Self) {
     
-    @scala.inline
-    def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Array[Expression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: Expression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
     
-    @scala.inline
-    def setQuasis(value: js.Array[TemplateElement_]): Self = StObject.set(x, "quasis", value.asInstanceOf[js.Any])
+    inline def setQuasis(value: js.Array[TemplateElement_]): Self = StObject.set(x, "quasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuasisVarargs(value: TemplateElement_ *): Self = StObject.set(x, "quasis", js.Array(value :_*))
+    inline def setQuasisVarargs(value: TemplateElement_ *): Self = StObject.set(x, "quasis", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: TemplateLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TemplateLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

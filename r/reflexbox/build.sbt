@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "reflexbox"
-version := "4.0-dt-20201116Z-902f75"
+version := "4.0-dt-20201116Z-de925c"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-b8d190",
-  "org.scalablytyped" %%% "emotion__serialize" % "0.11.16-1f167e",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.31-139019",
-  "org.scalablytyped" %%% "emotion__utils" % "0.11.3-d9c993",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-a12f9a",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-c80121",
-  "org.scalablytyped" %%% "std" % "4.1-044efb",
-  "org.scalablytyped" %%% "styled-system" % "5.1-dt-20201028Z-23bda0")
+  "org.scalablytyped" %%% "csstype" % "2.6.14-344a29",
+  "org.scalablytyped" %%% "emotion__serialize" % "0.11.16-930fda",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.31-1c0db7",
+  "org.scalablytyped" %%% "emotion__utils" % "0.11.3-2a6db3",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-49dd4c",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-76d083",
+  "org.scalablytyped" %%% "std" % "4.1-2f6855",
+  "org.scalablytyped" %%% "styled-system" % "5.1-dt-20201028Z-ce4884")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

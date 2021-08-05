@@ -154,21 +154,16 @@ object intentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Intent]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Intent]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IntentState): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Intent]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: IntentState, opts: CustomResourceOptions): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Intent]
+    inline def get(name: String, id: Input[ID]): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Intent]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Intent]
+    inline def get(name: String, id: Input[ID], state: IntentState): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Intent]
+    inline def get(name: String, id: Input[ID], state: IntentState, opts: CustomResourceOptions): Intent = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Intent]
     
     /**
       * Returns true if the given object is an instance of Intent.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/intent.Intent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lex/intent.Intent */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/intent.Intent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lex/intent.Intent */ Boolean]
   }
   
   trait IntentArgs extends StObject {
@@ -256,89 +251,62 @@ object intentMod {
   }
   object IntentArgs {
     
-    @scala.inline
-    def apply(fulfillmentActivity: Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity]): IntentArgs = {
+    inline def apply(fulfillmentActivity: Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity]): IntentArgs = {
       val __obj = js.Dynamic.literal(fulfillmentActivity = fulfillmentActivity.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntentArgs]
     }
     
-    @scala.inline
-    implicit class IntentArgsMutableBuilder[Self <: IntentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IntentArgs](x: Self) {
       
-      @scala.inline
-      def setConclusionStatement(value: Input[typings.pulumiAws.inputMod.lex.IntentConclusionStatement]): Self = StObject.set(x, "conclusionStatement", value.asInstanceOf[js.Any])
+      inline def setConclusionStatement(value: Input[typings.pulumiAws.inputMod.lex.IntentConclusionStatement]): Self = StObject.set(x, "conclusionStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConclusionStatementUndefined: Self = StObject.set(x, "conclusionStatement", js.undefined)
+      inline def setConclusionStatementUndefined: Self = StObject.set(x, "conclusionStatement", js.undefined)
       
-      @scala.inline
-      def setConfirmationPrompt(value: Input[typings.pulumiAws.inputMod.lex.IntentConfirmationPrompt]): Self = StObject.set(x, "confirmationPrompt", value.asInstanceOf[js.Any])
+      inline def setConfirmationPrompt(value: Input[typings.pulumiAws.inputMod.lex.IntentConfirmationPrompt]): Self = StObject.set(x, "confirmationPrompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmationPromptUndefined: Self = StObject.set(x, "confirmationPrompt", js.undefined)
+      inline def setConfirmationPromptUndefined: Self = StObject.set(x, "confirmationPrompt", js.undefined)
       
-      @scala.inline
-      def setCreateVersion(value: Input[Boolean]): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
+      inline def setCreateVersion(value: Input[Boolean]): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
+      inline def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDialogCodeHook(value: Input[typings.pulumiAws.inputMod.lex.IntentDialogCodeHook]): Self = StObject.set(x, "dialogCodeHook", value.asInstanceOf[js.Any])
+      inline def setDialogCodeHook(value: Input[typings.pulumiAws.inputMod.lex.IntentDialogCodeHook]): Self = StObject.set(x, "dialogCodeHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogCodeHookUndefined: Self = StObject.set(x, "dialogCodeHook", js.undefined)
+      inline def setDialogCodeHookUndefined: Self = StObject.set(x, "dialogCodeHook", js.undefined)
       
-      @scala.inline
-      def setFollowUpPrompt(value: Input[typings.pulumiAws.inputMod.lex.IntentFollowUpPrompt]): Self = StObject.set(x, "followUpPrompt", value.asInstanceOf[js.Any])
+      inline def setFollowUpPrompt(value: Input[typings.pulumiAws.inputMod.lex.IntentFollowUpPrompt]): Self = StObject.set(x, "followUpPrompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowUpPromptUndefined: Self = StObject.set(x, "followUpPrompt", js.undefined)
+      inline def setFollowUpPromptUndefined: Self = StObject.set(x, "followUpPrompt", js.undefined)
       
-      @scala.inline
-      def setFulfillmentActivity(value: Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity]): Self = StObject.set(x, "fulfillmentActivity", value.asInstanceOf[js.Any])
+      inline def setFulfillmentActivity(value: Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity]): Self = StObject.set(x, "fulfillmentActivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParentIntentSignature(value: Input[String]): Self = StObject.set(x, "parentIntentSignature", value.asInstanceOf[js.Any])
+      inline def setParentIntentSignature(value: Input[String]): Self = StObject.set(x, "parentIntentSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIntentSignatureUndefined: Self = StObject.set(x, "parentIntentSignature", js.undefined)
+      inline def setParentIntentSignatureUndefined: Self = StObject.set(x, "parentIntentSignature", js.undefined)
       
-      @scala.inline
-      def setRejectionStatement(value: Input[typings.pulumiAws.inputMod.lex.IntentRejectionStatement]): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
+      inline def setRejectionStatement(value: Input[typings.pulumiAws.inputMod.lex.IntentRejectionStatement]): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectionStatementUndefined: Self = StObject.set(x, "rejectionStatement", js.undefined)
+      inline def setRejectionStatementUndefined: Self = StObject.set(x, "rejectionStatement", js.undefined)
       
-      @scala.inline
-      def setSampleUtterances(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sampleUtterances", value.asInstanceOf[js.Any])
+      inline def setSampleUtterances(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sampleUtterances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
+      inline def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
       
-      @scala.inline
-      def setSampleUtterancesVarargs(value: Input[String]*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
+      inline def setSampleUtterancesVarargs(value: Input[String]*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
       
-      @scala.inline
-      def setSlots(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.IntentSlot]]]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.IntentSlot]]]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+      inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      @scala.inline
-      def setSlotsVarargs(value: Input[typings.pulumiAws.inputMod.lex.IntentSlot]*): Self = StObject.set(x, "slots", js.Array(value :_*))
+      inline def setSlotsVarargs(value: Input[typings.pulumiAws.inputMod.lex.IntentSlot]*): Self = StObject.set(x, "slots", js.Array(value :_*))
     }
   }
   
@@ -453,122 +421,84 @@ object intentMod {
   }
   object IntentState {
     
-    @scala.inline
-    def apply(): IntentState = {
+    inline def apply(): IntentState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntentState]
     }
     
-    @scala.inline
-    implicit class IntentStateMutableBuilder[Self <: IntentState] (val x: Self) extends AnyVal {
+    extension [Self <: IntentState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setChecksum(value: Input[String]): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      inline def setChecksum(value: Input[String]): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+      inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
       
-      @scala.inline
-      def setConclusionStatement(value: Input[typings.pulumiAws.inputMod.lex.IntentConclusionStatement]): Self = StObject.set(x, "conclusionStatement", value.asInstanceOf[js.Any])
+      inline def setConclusionStatement(value: Input[typings.pulumiAws.inputMod.lex.IntentConclusionStatement]): Self = StObject.set(x, "conclusionStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConclusionStatementUndefined: Self = StObject.set(x, "conclusionStatement", js.undefined)
+      inline def setConclusionStatementUndefined: Self = StObject.set(x, "conclusionStatement", js.undefined)
       
-      @scala.inline
-      def setConfirmationPrompt(value: Input[typings.pulumiAws.inputMod.lex.IntentConfirmationPrompt]): Self = StObject.set(x, "confirmationPrompt", value.asInstanceOf[js.Any])
+      inline def setConfirmationPrompt(value: Input[typings.pulumiAws.inputMod.lex.IntentConfirmationPrompt]): Self = StObject.set(x, "confirmationPrompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfirmationPromptUndefined: Self = StObject.set(x, "confirmationPrompt", js.undefined)
+      inline def setConfirmationPromptUndefined: Self = StObject.set(x, "confirmationPrompt", js.undefined)
       
-      @scala.inline
-      def setCreateVersion(value: Input[Boolean]): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
+      inline def setCreateVersion(value: Input[Boolean]): Self = StObject.set(x, "createVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
+      inline def setCreateVersionUndefined: Self = StObject.set(x, "createVersion", js.undefined)
       
-      @scala.inline
-      def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: Input[String]): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
+      inline def setCreatedDateUndefined: Self = StObject.set(x, "createdDate", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDialogCodeHook(value: Input[typings.pulumiAws.inputMod.lex.IntentDialogCodeHook]): Self = StObject.set(x, "dialogCodeHook", value.asInstanceOf[js.Any])
+      inline def setDialogCodeHook(value: Input[typings.pulumiAws.inputMod.lex.IntentDialogCodeHook]): Self = StObject.set(x, "dialogCodeHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogCodeHookUndefined: Self = StObject.set(x, "dialogCodeHook", js.undefined)
+      inline def setDialogCodeHookUndefined: Self = StObject.set(x, "dialogCodeHook", js.undefined)
       
-      @scala.inline
-      def setFollowUpPrompt(value: Input[typings.pulumiAws.inputMod.lex.IntentFollowUpPrompt]): Self = StObject.set(x, "followUpPrompt", value.asInstanceOf[js.Any])
+      inline def setFollowUpPrompt(value: Input[typings.pulumiAws.inputMod.lex.IntentFollowUpPrompt]): Self = StObject.set(x, "followUpPrompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowUpPromptUndefined: Self = StObject.set(x, "followUpPrompt", js.undefined)
+      inline def setFollowUpPromptUndefined: Self = StObject.set(x, "followUpPrompt", js.undefined)
       
-      @scala.inline
-      def setFulfillmentActivity(value: Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity]): Self = StObject.set(x, "fulfillmentActivity", value.asInstanceOf[js.Any])
+      inline def setFulfillmentActivity(value: Input[typings.pulumiAws.inputMod.lex.IntentFulfillmentActivity]): Self = StObject.set(x, "fulfillmentActivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFulfillmentActivityUndefined: Self = StObject.set(x, "fulfillmentActivity", js.undefined)
+      inline def setFulfillmentActivityUndefined: Self = StObject.set(x, "fulfillmentActivity", js.undefined)
       
-      @scala.inline
-      def setLastUpdatedDate(value: Input[String]): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+      inline def setLastUpdatedDate(value: Input[String]): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
+      inline def setLastUpdatedDateUndefined: Self = StObject.set(x, "lastUpdatedDate", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParentIntentSignature(value: Input[String]): Self = StObject.set(x, "parentIntentSignature", value.asInstanceOf[js.Any])
+      inline def setParentIntentSignature(value: Input[String]): Self = StObject.set(x, "parentIntentSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIntentSignatureUndefined: Self = StObject.set(x, "parentIntentSignature", js.undefined)
+      inline def setParentIntentSignatureUndefined: Self = StObject.set(x, "parentIntentSignature", js.undefined)
       
-      @scala.inline
-      def setRejectionStatement(value: Input[typings.pulumiAws.inputMod.lex.IntentRejectionStatement]): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
+      inline def setRejectionStatement(value: Input[typings.pulumiAws.inputMod.lex.IntentRejectionStatement]): Self = StObject.set(x, "rejectionStatement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectionStatementUndefined: Self = StObject.set(x, "rejectionStatement", js.undefined)
+      inline def setRejectionStatementUndefined: Self = StObject.set(x, "rejectionStatement", js.undefined)
       
-      @scala.inline
-      def setSampleUtterances(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sampleUtterances", value.asInstanceOf[js.Any])
+      inline def setSampleUtterances(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "sampleUtterances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
+      inline def setSampleUtterancesUndefined: Self = StObject.set(x, "sampleUtterances", js.undefined)
       
-      @scala.inline
-      def setSampleUtterancesVarargs(value: Input[String]*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
+      inline def setSampleUtterancesVarargs(value: Input[String]*): Self = StObject.set(x, "sampleUtterances", js.Array(value :_*))
       
-      @scala.inline
-      def setSlots(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.IntentSlot]]]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+      inline def setSlots(value: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.IntentSlot]]]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+      inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
       
-      @scala.inline
-      def setSlotsVarargs(value: Input[typings.pulumiAws.inputMod.lex.IntentSlot]*): Self = StObject.set(x, "slots", js.Array(value :_*))
+      inline def setSlotsVarargs(value: Input[typings.pulumiAws.inputMod.lex.IntentSlot]*): Self = StObject.set(x, "slots", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Input[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

@@ -14,28 +14,21 @@ trait CountriesListResponse extends StObject {
 }
 object CountriesListResponse {
   
-  @scala.inline
-  def apply(): CountriesListResponse = {
+  inline def apply(): CountriesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CountriesListResponse]
   }
   
-  @scala.inline
-  implicit class CountriesListResponseMutableBuilder[Self <: CountriesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CountriesListResponse](x: Self) {
     
-    @scala.inline
-    def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
+    inline def setCountries(value: js.Array[Country]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
+    inline def setCountriesUndefined: Self = StObject.set(x, "countries", js.undefined)
     
-    @scala.inline
-    def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
+    inline def setCountriesVarargs(value: Country*): Self = StObject.set(x, "countries", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

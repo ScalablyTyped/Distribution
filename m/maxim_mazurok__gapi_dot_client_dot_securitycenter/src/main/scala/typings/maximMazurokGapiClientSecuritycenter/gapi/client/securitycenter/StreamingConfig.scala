@@ -17,19 +17,15 @@ trait StreamingConfig extends StObject {
 }
 object StreamingConfig {
   
-  @scala.inline
-  def apply(): StreamingConfig = {
+  inline def apply(): StreamingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamingConfig]
   }
   
-  @scala.inline
-  implicit class StreamingConfigMutableBuilder[Self <: StreamingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingConfig](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

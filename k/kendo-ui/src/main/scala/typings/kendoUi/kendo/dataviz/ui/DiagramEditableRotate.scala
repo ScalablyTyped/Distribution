@@ -12,25 +12,19 @@ trait DiagramEditableRotate extends StObject {
 }
 object DiagramEditableRotate {
   
-  @scala.inline
-  def apply(): DiagramEditableRotate = {
+  inline def apply(): DiagramEditableRotate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramEditableRotate]
   }
   
-  @scala.inline
-  implicit class DiagramEditableRotateMutableBuilder[Self <: DiagramEditableRotate] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramEditableRotate](x: Self) {
     
-    @scala.inline
-    def setFill(value: DiagramEditableRotateFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: DiagramEditableRotateFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setStroke(value: DiagramEditableRotateStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: DiagramEditableRotateStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

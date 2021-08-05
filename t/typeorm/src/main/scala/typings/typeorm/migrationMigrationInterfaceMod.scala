@@ -26,26 +26,20 @@ object migrationMigrationInterfaceMod {
   }
   object MigrationInterface {
     
-    @scala.inline
-    def apply(down: QueryRunner => js.Promise[js.Any], up: QueryRunner => js.Promise[js.Any]): MigrationInterface = {
+    inline def apply(down: QueryRunner => js.Promise[js.Any], up: QueryRunner => js.Promise[js.Any]): MigrationInterface = {
       val __obj = js.Dynamic.literal(down = js.Any.fromFunction1(down), up = js.Any.fromFunction1(up))
       __obj.asInstanceOf[MigrationInterface]
     }
     
-    @scala.inline
-    implicit class MigrationInterfaceMutableBuilder[Self <: MigrationInterface] (val x: Self) extends AnyVal {
+    extension [Self <: MigrationInterface](x: Self) {
       
-      @scala.inline
-      def setDown(value: QueryRunner => js.Promise[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: QueryRunner => js.Promise[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setUp(value: QueryRunner => js.Promise[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+      inline def setUp(value: QueryRunner => js.Promise[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
     }
   }
 }

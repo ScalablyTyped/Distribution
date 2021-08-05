@@ -11,6 +11,5 @@ object getStoredStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: PersistConfig[js.Any, js.Any, js.Any, js.Any]): js.Promise[js.UndefOr[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Object]]]
+  inline def default(config: PersistConfig[js.Any, js.Any, js.Any, js.Any]): js.Promise[js.UndefOr[js.Object]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[js.Object]]]
 }

@@ -54,8 +54,7 @@ trait ASPxClientLayoutItem extends StObject {
 }
 object ASPxClientLayoutItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCaption: () => String,
     GetItemByName: String => ASPxClientLayoutItem,
     GetVisible: () => Boolean,
@@ -69,31 +68,22 @@ object ASPxClientLayoutItem {
     __obj.asInstanceOf[ASPxClientLayoutItem]
   }
   
-  @scala.inline
-  implicit class ASPxClientLayoutItemMutableBuilder[Self <: ASPxClientLayoutItem] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientLayoutItem](x: Self) {
     
-    @scala.inline
-    def setFormLayout(value: ASPxClientFormLayout): Self = StObject.set(x, "formLayout", value.asInstanceOf[js.Any])
+    inline def setFormLayout(value: ASPxClientFormLayout): Self = StObject.set(x, "formLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCaption(value: () => String): Self = StObject.set(x, "GetCaption", js.Any.fromFunction0(value))
+    inline def setGetCaption(value: () => String): Self = StObject.set(x, "GetCaption", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemByName(value: String => ASPxClientLayoutItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
+    inline def setGetItemByName(value: String => ASPxClientLayoutItem): Self = StObject.set(x, "GetItemByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "GetVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: ASPxClientLayoutItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ASPxClientLayoutItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetCaption(value: String => Unit): Self = StObject.set(x, "SetCaption", js.Any.fromFunction1(value))
+    inline def setSetCaption(value: String => Unit): Self = StObject.set(x, "SetCaption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "SetVisible", js.Any.fromFunction1(value))
   }
 }

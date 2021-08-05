@@ -12,8 +12,7 @@ object circularProgressBarDotUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def circularProgressBarUniDriverFactory(base: UniDriver[js.Any]): CircularProgressBarUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("circularProgressBarUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[CircularProgressBarUniDriver]
+  inline def circularProgressBarUniDriverFactory(base: UniDriver[js.Any]): CircularProgressBarUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("circularProgressBarUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[CircularProgressBarUniDriver]
   
   trait CircularProgressBarUniDriver
     extends StObject
@@ -45,8 +44,7 @@ object circularProgressBarDotUniDriverMod {
   }
   object CircularProgressBarUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -63,32 +61,23 @@ object circularProgressBarDotUniDriverMod {
       __obj.asInstanceOf[CircularProgressBarUniDriver]
     }
     
-    @scala.inline
-    implicit class CircularProgressBarUniDriverMutableBuilder[Self <: CircularProgressBarUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CircularProgressBarUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetLabelTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelTextContent", js.Any.fromFunction0(value))
+      inline def setGetLabelTextContent(value: () => js.Promise[String]): Self = StObject.set(x, "getLabelTextContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
+      inline def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCompleted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
+      inline def setIsCompleted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsErrorIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorIconDisplayed", js.Any.fromFunction0(value))
+      inline def setIsErrorIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorIconDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLabelDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLabelDisplayed", js.Any.fromFunction0(value))
+      inline def setIsLabelDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLabelDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPercentagesProgressDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPercentagesProgressDisplayed", js.Any.fromFunction0(value))
+      inline def setIsPercentagesProgressDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPercentagesProgressDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuccessIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSuccessIconDisplayed", js.Any.fromFunction0(value))
+      inline def setIsSuccessIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSuccessIconDisplayed", js.Any.fromFunction0(value))
     }
   }
 }

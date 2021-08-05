@@ -23,31 +23,23 @@ trait AiffSettings extends StObject {
 }
 object AiffSettings {
   
-  @scala.inline
-  def apply(): AiffSettings = {
+  inline def apply(): AiffSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AiffSettings]
   }
   
-  @scala.inline
-  implicit class AiffSettingsMutableBuilder[Self <: AiffSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AiffSettings](x: Self) {
     
-    @scala.inline
-    def setBitDepth(value: integerMin16Max24): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
+    inline def setBitDepth(value: integerMin16Max24): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
+    inline def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
     
-    @scala.inline
-    def setChannels(value: integerMin1Max64): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: integerMin1Max64): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: integerMin8000Max192000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: integerMin8000Max192000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

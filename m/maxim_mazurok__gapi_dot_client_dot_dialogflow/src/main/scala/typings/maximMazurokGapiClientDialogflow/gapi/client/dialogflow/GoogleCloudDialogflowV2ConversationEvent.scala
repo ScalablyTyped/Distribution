@@ -20,37 +20,27 @@ trait GoogleCloudDialogflowV2ConversationEvent extends StObject {
 }
 object GoogleCloudDialogflowV2ConversationEvent {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2ConversationEvent = {
+  inline def apply(): GoogleCloudDialogflowV2ConversationEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2ConversationEvent]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2ConversationEventMutableBuilder[Self <: GoogleCloudDialogflowV2ConversationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2ConversationEvent](x: Self) {
     
-    @scala.inline
-    def setConversation(value: String): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
+    inline def setConversation(value: String): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationUndefined: Self = StObject.set(x, "conversation", js.undefined)
+    inline def setConversationUndefined: Self = StObject.set(x, "conversation", js.undefined)
     
-    @scala.inline
-    def setErrorStatus(value: GoogleRpcStatus): Self = StObject.set(x, "errorStatus", value.asInstanceOf[js.Any])
+    inline def setErrorStatus(value: GoogleRpcStatus): Self = StObject.set(x, "errorStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorStatusUndefined: Self = StObject.set(x, "errorStatus", js.undefined)
+    inline def setErrorStatusUndefined: Self = StObject.set(x, "errorStatus", js.undefined)
     
-    @scala.inline
-    def setNewMessagePayload(value: GoogleCloudDialogflowV2Message): Self = StObject.set(x, "newMessagePayload", value.asInstanceOf[js.Any])
+    inline def setNewMessagePayload(value: GoogleCloudDialogflowV2Message): Self = StObject.set(x, "newMessagePayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewMessagePayloadUndefined: Self = StObject.set(x, "newMessagePayload", js.undefined)
+    inline def setNewMessagePayloadUndefined: Self = StObject.set(x, "newMessagePayload", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ trait XEventListener
 }
 object XEventListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: typings.activexLibreoffice.com_.sun.star.lang.EventObject => Unit,
     notifyEvent: EventObject => Unit,
@@ -36,10 +35,8 @@ object XEventListener {
     __obj.asInstanceOf[XEventListener]
   }
   
-  @scala.inline
-  implicit class XEventListenerMutableBuilder[Self <: XEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: XEventListener](x: Self) {
     
-    @scala.inline
-    def setNotifyEvent(value: EventObject => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
+    inline def setNotifyEvent(value: EventObject => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
   }
 }

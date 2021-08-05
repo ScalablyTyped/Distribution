@@ -20,33 +20,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Scope extends StObject
 object Scope {
   
-  @scala.inline
-  def scopeDotaddress: typings.weixinApp.weixinAppStrings.scopeDotaddress = "scope.address".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotaddress]
+  inline def scopeDotaddress: typings.weixinApp.weixinAppStrings.scopeDotaddress = "scope.address".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotaddress]
   
-  @scala.inline
-  def scopeDotcamera: typings.weixinApp.weixinAppStrings.scopeDotcamera = "scope.camera".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotcamera]
+  inline def scopeDotcamera: typings.weixinApp.weixinAppStrings.scopeDotcamera = "scope.camera".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotcamera]
   
-  @scala.inline
-  def scopeDotinvoice: typings.weixinApp.weixinAppStrings.scopeDotinvoice = "scope.invoice".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotinvoice]
+  inline def scopeDotinvoice: typings.weixinApp.weixinAppStrings.scopeDotinvoice = "scope.invoice".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotinvoice]
   
-  @scala.inline
-  def scopeDotinvoiceTitle: typings.weixinApp.weixinAppStrings.scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotinvoiceTitle]
+  inline def scopeDotinvoiceTitle: typings.weixinApp.weixinAppStrings.scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotinvoiceTitle]
   
-  @scala.inline
-  def scopeDotrecord: typings.weixinApp.weixinAppStrings.scopeDotrecord = "scope.record".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotrecord]
+  inline def scopeDotrecord: typings.weixinApp.weixinAppStrings.scopeDotrecord = "scope.record".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotrecord]
   
-  @scala.inline
-  def scopeDotuserInfo: typings.weixinApp.weixinAppStrings.scopeDotuserInfo = "scope.userInfo".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotuserInfo]
+  inline def scopeDotuserInfo: typings.weixinApp.weixinAppStrings.scopeDotuserInfo = "scope.userInfo".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotuserInfo]
   
-  @scala.inline
-  def scopeDotuserLocation: typings.weixinApp.weixinAppStrings.scopeDotuserLocation = "scope.userLocation".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotuserLocation]
+  inline def scopeDotuserLocation: typings.weixinApp.weixinAppStrings.scopeDotuserLocation = "scope.userLocation".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotuserLocation]
   
-  @scala.inline
-  def scopeDotuserLocationBackground: typings.weixinApp.weixinAppStrings.scopeDotuserLocationBackground = "scope.userLocationBackground".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotuserLocationBackground]
+  inline def scopeDotuserLocationBackground: typings.weixinApp.weixinAppStrings.scopeDotuserLocationBackground = "scope.userLocationBackground".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotuserLocationBackground]
   
-  @scala.inline
-  def scopeDotwerun: typings.weixinApp.weixinAppStrings.scopeDotwerun = "scope.werun".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotwerun]
+  inline def scopeDotwerun: typings.weixinApp.weixinAppStrings.scopeDotwerun = "scope.werun".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotwerun]
   
-  @scala.inline
-  def scopeDotwritePhotosAlbum: typings.weixinApp.weixinAppStrings.scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotwritePhotosAlbum]
+  inline def scopeDotwritePhotosAlbum: typings.weixinApp.weixinAppStrings.scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[typings.weixinApp.weixinAppStrings.scopeDotwritePhotosAlbum]
 }

@@ -23,31 +23,23 @@ trait MaintenanceWindowLambdaParameters extends StObject {
 }
 object MaintenanceWindowLambdaParameters {
   
-  @scala.inline
-  def apply(): MaintenanceWindowLambdaParameters = {
+  inline def apply(): MaintenanceWindowLambdaParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaintenanceWindowLambdaParameters]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowLambdaParametersMutableBuilder[Self <: MaintenanceWindowLambdaParameters] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowLambdaParameters](x: Self) {
     
-    @scala.inline
-    def setClientContext(value: MaintenanceWindowLambdaClientContext): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
+    inline def setClientContext(value: MaintenanceWindowLambdaClientContext): Self = StObject.set(x, "ClientContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientContextUndefined: Self = StObject.set(x, "ClientContext", js.undefined)
+    inline def setClientContextUndefined: Self = StObject.set(x, "ClientContext", js.undefined)
     
-    @scala.inline
-    def setPayload(value: MaintenanceWindowLambdaPayload): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: MaintenanceWindowLambdaPayload): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
-    @scala.inline
-    def setQualifier(value: MaintenanceWindowLambdaQualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
+    inline def setQualifier(value: MaintenanceWindowLambdaQualifier): Self = StObject.set(x, "Qualifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
+    inline def setQualifierUndefined: Self = StObject.set(x, "Qualifier", js.undefined)
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KDEResolve extends StObject
 object KDEResolve {
   
-  @scala.inline
-  def independent: typings.vegaTypings.vegaTypingsStrings.independent = "independent".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.independent]
+  inline def independent: typings.vegaTypings.vegaTypingsStrings.independent = "independent".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.independent]
   
-  @scala.inline
-  def shared: typings.vegaTypings.vegaTypingsStrings.shared = "shared".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.shared]
+  inline def shared: typings.vegaTypings.vegaTypingsStrings.shared = "shared".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.shared]
 }

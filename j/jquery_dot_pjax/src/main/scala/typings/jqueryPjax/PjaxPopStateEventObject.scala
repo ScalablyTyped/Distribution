@@ -19,8 +19,7 @@ trait PjaxPopStateEventObject
 }
 object PjaxPopStateEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     direction: String,
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
@@ -36,10 +35,8 @@ object PjaxPopStateEventObject {
     __obj.asInstanceOf[PjaxPopStateEventObject]
   }
   
-  @scala.inline
-  implicit class PjaxPopStateEventObjectMutableBuilder[Self <: PjaxPopStateEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: PjaxPopStateEventObject](x: Self) {
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }
 }

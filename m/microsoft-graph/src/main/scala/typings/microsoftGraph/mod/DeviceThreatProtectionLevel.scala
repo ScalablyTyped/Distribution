@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceThreatProtectionLevel extends StObject
 object DeviceThreatProtectionLevel {
   
-  @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
+  inline def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   
-  @scala.inline
-  def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
+  inline def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
   
-  @scala.inline
-  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
+  inline def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
   
-  @scala.inline
-  def notSet: typings.microsoftGraph.microsoftGraphStrings.notSet = "notSet".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSet]
+  inline def notSet: typings.microsoftGraph.microsoftGraphStrings.notSet = "notSet".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notSet]
   
-  @scala.inline
-  def secured: typings.microsoftGraph.microsoftGraphStrings.secured = "secured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.secured]
+  inline def secured: typings.microsoftGraph.microsoftGraphStrings.secured = "secured".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.secured]
   
-  @scala.inline
-  def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unavailable]
+  inline def unavailable: typings.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unavailable]
 }

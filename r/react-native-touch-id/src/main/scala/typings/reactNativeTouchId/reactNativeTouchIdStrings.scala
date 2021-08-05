@@ -8,46 +8,37 @@ object reactNativeTouchIdStrings {
   
   @js.native
   sealed trait LAErrorAuthenticationFailed extends StObject
-  @scala.inline
-  def LAErrorAuthenticationFailed: LAErrorAuthenticationFailed = "LAErrorAuthenticationFailed".asInstanceOf[LAErrorAuthenticationFailed]
+  inline def LAErrorAuthenticationFailed: LAErrorAuthenticationFailed = "LAErrorAuthenticationFailed".asInstanceOf[LAErrorAuthenticationFailed]
   
   @js.native
   sealed trait LAErrorPasscodeNotSet extends StObject
-  @scala.inline
-  def LAErrorPasscodeNotSet: LAErrorPasscodeNotSet = "LAErrorPasscodeNotSet".asInstanceOf[LAErrorPasscodeNotSet]
+  inline def LAErrorPasscodeNotSet: LAErrorPasscodeNotSet = "LAErrorPasscodeNotSet".asInstanceOf[LAErrorPasscodeNotSet]
   
   @js.native
   sealed trait LAErrorSystemCancel extends StObject
-  @scala.inline
-  def LAErrorSystemCancel: LAErrorSystemCancel = "LAErrorSystemCancel".asInstanceOf[LAErrorSystemCancel]
+  inline def LAErrorSystemCancel: LAErrorSystemCancel = "LAErrorSystemCancel".asInstanceOf[LAErrorSystemCancel]
   
   @js.native
   sealed trait LAErrorTouchIDNotAvailable extends StObject
-  @scala.inline
-  def LAErrorTouchIDNotAvailable: LAErrorTouchIDNotAvailable = "LAErrorTouchIDNotAvailable".asInstanceOf[LAErrorTouchIDNotAvailable]
+  inline def LAErrorTouchIDNotAvailable: LAErrorTouchIDNotAvailable = "LAErrorTouchIDNotAvailable".asInstanceOf[LAErrorTouchIDNotAvailable]
   
   @js.native
   sealed trait LAErrorTouchIDNotEnrolled extends StObject
-  @scala.inline
-  def LAErrorTouchIDNotEnrolled: LAErrorTouchIDNotEnrolled = "LAErrorTouchIDNotEnrolled".asInstanceOf[LAErrorTouchIDNotEnrolled]
+  inline def LAErrorTouchIDNotEnrolled: LAErrorTouchIDNotEnrolled = "LAErrorTouchIDNotEnrolled".asInstanceOf[LAErrorTouchIDNotEnrolled]
   
   @js.native
   sealed trait LAErrorUserCancel extends StObject
-  @scala.inline
-  def LAErrorUserCancel: LAErrorUserCancel = "LAErrorUserCancel".asInstanceOf[LAErrorUserCancel]
+  inline def LAErrorUserCancel: LAErrorUserCancel = "LAErrorUserCancel".asInstanceOf[LAErrorUserCancel]
   
   @js.native
   sealed trait LAErrorUserFallback extends StObject
-  @scala.inline
-  def LAErrorUserFallback: LAErrorUserFallback = "LAErrorUserFallback".asInstanceOf[LAErrorUserFallback]
+  inline def LAErrorUserFallback: LAErrorUserFallback = "LAErrorUserFallback".asInstanceOf[LAErrorUserFallback]
   
   @js.native
   sealed trait RCTTouchIDNotSupported extends StObject
-  @scala.inline
-  def RCTTouchIDNotSupported: RCTTouchIDNotSupported = "RCTTouchIDNotSupported".asInstanceOf[RCTTouchIDNotSupported]
+  inline def RCTTouchIDNotSupported: RCTTouchIDNotSupported = "RCTTouchIDNotSupported".asInstanceOf[RCTTouchIDNotSupported]
   
   @js.native
   sealed trait RCTTouchIDUnknownError extends StObject
-  @scala.inline
-  def RCTTouchIDUnknownError: RCTTouchIDUnknownError = "RCTTouchIDUnknownError".asInstanceOf[RCTTouchIDUnknownError]
+  inline def RCTTouchIDUnknownError: RCTTouchIDUnknownError = "RCTTouchIDUnknownError".asInstanceOf[RCTTouchIDUnknownError]
 }

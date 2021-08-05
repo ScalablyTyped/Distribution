@@ -749,8 +749,7 @@ object englishMod extends Shortcut {
   }
   object Vocabulary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _steps: js.Array[String],
       background: String,
       examples: String,
@@ -768,35 +767,25 @@ object englishMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    @scala.inline
-    implicit class VocabularyMutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
+    extension [Self <: Vocabulary](x: Self) {
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExamples(value: String): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+      inline def setExamples(value: String): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+      inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGiven(value: String): Self = StObject.set(x, "given", value.asInstanceOf[js.Any])
+      inline def setGiven(value: String): Self = StObject.set(x, "given", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnly(value: String): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: String): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: String): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScenario(value: String): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
+      inline def setScenario(value: String): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThen(value: String): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
+      inline def setThen(value: String): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhen(value: String): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+      inline def setWhen(value: String): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     }
   }
   

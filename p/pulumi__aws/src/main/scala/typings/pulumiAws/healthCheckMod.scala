@@ -145,21 +145,16 @@ object healthCheckMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: HealthCheckState): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: HealthCheckState, opts: CustomResourceOptions): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
+    inline def get(name: String, id: Input[ID]): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
+    inline def get(name: String, id: Input[ID], state: HealthCheckState): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
+    inline def get(name: String, id: Input[ID], state: HealthCheckState, opts: CustomResourceOptions): HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[HealthCheck]
     
     /**
       * Returns true if the given object is an instance of HealthCheck.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean]
   }
   
   trait HealthCheckArgs extends StObject {
@@ -270,138 +265,95 @@ object healthCheckMod {
   }
   object HealthCheckArgs {
     
-    @scala.inline
-    def apply(`type`: Input[String]): HealthCheckArgs = {
+    inline def apply(`type`: Input[String]): HealthCheckArgs = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[HealthCheckArgs]
     }
     
-    @scala.inline
-    implicit class HealthCheckArgsMutableBuilder[Self <: HealthCheckArgs] (val x: Self) extends AnyVal {
+    extension [Self <: HealthCheckArgs](x: Self) {
       
-      @scala.inline
-      def setChildHealthThreshold(value: Input[Double]): Self = StObject.set(x, "childHealthThreshold", value.asInstanceOf[js.Any])
+      inline def setChildHealthThreshold(value: Input[Double]): Self = StObject.set(x, "childHealthThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildHealthThresholdUndefined: Self = StObject.set(x, "childHealthThreshold", js.undefined)
+      inline def setChildHealthThresholdUndefined: Self = StObject.set(x, "childHealthThreshold", js.undefined)
       
-      @scala.inline
-      def setChildHealthchecks(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "childHealthchecks", value.asInstanceOf[js.Any])
+      inline def setChildHealthchecks(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "childHealthchecks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildHealthchecksUndefined: Self = StObject.set(x, "childHealthchecks", js.undefined)
+      inline def setChildHealthchecksUndefined: Self = StObject.set(x, "childHealthchecks", js.undefined)
       
-      @scala.inline
-      def setChildHealthchecksVarargs(value: Input[String]*): Self = StObject.set(x, "childHealthchecks", js.Array(value :_*))
+      inline def setChildHealthchecksVarargs(value: Input[String]*): Self = StObject.set(x, "childHealthchecks", js.Array(value :_*))
       
-      @scala.inline
-      def setCloudwatchAlarmName(value: Input[String]): Self = StObject.set(x, "cloudwatchAlarmName", value.asInstanceOf[js.Any])
+      inline def setCloudwatchAlarmName(value: Input[String]): Self = StObject.set(x, "cloudwatchAlarmName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchAlarmNameUndefined: Self = StObject.set(x, "cloudwatchAlarmName", js.undefined)
+      inline def setCloudwatchAlarmNameUndefined: Self = StObject.set(x, "cloudwatchAlarmName", js.undefined)
       
-      @scala.inline
-      def setCloudwatchAlarmRegion(value: Input[String]): Self = StObject.set(x, "cloudwatchAlarmRegion", value.asInstanceOf[js.Any])
+      inline def setCloudwatchAlarmRegion(value: Input[String]): Self = StObject.set(x, "cloudwatchAlarmRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchAlarmRegionUndefined: Self = StObject.set(x, "cloudwatchAlarmRegion", js.undefined)
+      inline def setCloudwatchAlarmRegionUndefined: Self = StObject.set(x, "cloudwatchAlarmRegion", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Input[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Input[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEnableSni(value: Input[Boolean]): Self = StObject.set(x, "enableSni", value.asInstanceOf[js.Any])
+      inline def setEnableSni(value: Input[Boolean]): Self = StObject.set(x, "enableSni", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSniUndefined: Self = StObject.set(x, "enableSni", js.undefined)
+      inline def setEnableSniUndefined: Self = StObject.set(x, "enableSni", js.undefined)
       
-      @scala.inline
-      def setFailureThreshold(value: Input[Double]): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+      inline def setFailureThreshold(value: Input[Double]): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
+      inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
       
-      @scala.inline
-      def setFqdn(value: Input[String]): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
+      inline def setFqdn(value: Input[String]): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFqdnUndefined: Self = StObject.set(x, "fqdn", js.undefined)
+      inline def setFqdnUndefined: Self = StObject.set(x, "fqdn", js.undefined)
       
-      @scala.inline
-      def setInsufficientDataHealthStatus(value: Input[String]): Self = StObject.set(x, "insufficientDataHealthStatus", value.asInstanceOf[js.Any])
+      inline def setInsufficientDataHealthStatus(value: Input[String]): Self = StObject.set(x, "insufficientDataHealthStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsufficientDataHealthStatusUndefined: Self = StObject.set(x, "insufficientDataHealthStatus", js.undefined)
+      inline def setInsufficientDataHealthStatusUndefined: Self = StObject.set(x, "insufficientDataHealthStatus", js.undefined)
       
-      @scala.inline
-      def setInvertHealthcheck(value: Input[Boolean]): Self = StObject.set(x, "invertHealthcheck", value.asInstanceOf[js.Any])
+      inline def setInvertHealthcheck(value: Input[Boolean]): Self = StObject.set(x, "invertHealthcheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertHealthcheckUndefined: Self = StObject.set(x, "invertHealthcheck", js.undefined)
+      inline def setInvertHealthcheckUndefined: Self = StObject.set(x, "invertHealthcheck", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setMeasureLatency(value: Input[Boolean]): Self = StObject.set(x, "measureLatency", value.asInstanceOf[js.Any])
+      inline def setMeasureLatency(value: Input[Boolean]): Self = StObject.set(x, "measureLatency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeasureLatencyUndefined: Self = StObject.set(x, "measureLatency", js.undefined)
+      inline def setMeasureLatencyUndefined: Self = StObject.set(x, "measureLatency", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setReferenceName(value: Input[String]): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+      inline def setReferenceName(value: Input[String]): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceNameUndefined: Self = StObject.set(x, "referenceName", js.undefined)
+      inline def setReferenceNameUndefined: Self = StObject.set(x, "referenceName", js.undefined)
       
-      @scala.inline
-      def setRegions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+      inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      @scala.inline
-      def setRegionsVarargs(value: Input[String]*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: Input[String]*): Self = StObject.set(x, "regions", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestInterval(value: Input[Double]): Self = StObject.set(x, "requestInterval", value.asInstanceOf[js.Any])
+      inline def setRequestInterval(value: Input[Double]): Self = StObject.set(x, "requestInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIntervalUndefined: Self = StObject.set(x, "requestInterval", js.undefined)
+      inline def setRequestIntervalUndefined: Self = StObject.set(x, "requestInterval", js.undefined)
       
-      @scala.inline
-      def setResourcePath(value: Input[String]): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
+      inline def setResourcePath(value: Input[String]): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePathUndefined: Self = StObject.set(x, "resourcePath", js.undefined)
+      inline def setResourcePathUndefined: Self = StObject.set(x, "resourcePath", js.undefined)
       
-      @scala.inline
-      def setSearchString(value: Input[String]): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
+      inline def setSearchString(value: Input[String]): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
+      inline def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -513,140 +465,96 @@ object healthCheckMod {
   }
   object HealthCheckState {
     
-    @scala.inline
-    def apply(): HealthCheckState = {
+    inline def apply(): HealthCheckState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HealthCheckState]
     }
     
-    @scala.inline
-    implicit class HealthCheckStateMutableBuilder[Self <: HealthCheckState] (val x: Self) extends AnyVal {
+    extension [Self <: HealthCheckState](x: Self) {
       
-      @scala.inline
-      def setChildHealthThreshold(value: Input[Double]): Self = StObject.set(x, "childHealthThreshold", value.asInstanceOf[js.Any])
+      inline def setChildHealthThreshold(value: Input[Double]): Self = StObject.set(x, "childHealthThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildHealthThresholdUndefined: Self = StObject.set(x, "childHealthThreshold", js.undefined)
+      inline def setChildHealthThresholdUndefined: Self = StObject.set(x, "childHealthThreshold", js.undefined)
       
-      @scala.inline
-      def setChildHealthchecks(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "childHealthchecks", value.asInstanceOf[js.Any])
+      inline def setChildHealthchecks(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "childHealthchecks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildHealthchecksUndefined: Self = StObject.set(x, "childHealthchecks", js.undefined)
+      inline def setChildHealthchecksUndefined: Self = StObject.set(x, "childHealthchecks", js.undefined)
       
-      @scala.inline
-      def setChildHealthchecksVarargs(value: Input[String]*): Self = StObject.set(x, "childHealthchecks", js.Array(value :_*))
+      inline def setChildHealthchecksVarargs(value: Input[String]*): Self = StObject.set(x, "childHealthchecks", js.Array(value :_*))
       
-      @scala.inline
-      def setCloudwatchAlarmName(value: Input[String]): Self = StObject.set(x, "cloudwatchAlarmName", value.asInstanceOf[js.Any])
+      inline def setCloudwatchAlarmName(value: Input[String]): Self = StObject.set(x, "cloudwatchAlarmName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchAlarmNameUndefined: Self = StObject.set(x, "cloudwatchAlarmName", js.undefined)
+      inline def setCloudwatchAlarmNameUndefined: Self = StObject.set(x, "cloudwatchAlarmName", js.undefined)
       
-      @scala.inline
-      def setCloudwatchAlarmRegion(value: Input[String]): Self = StObject.set(x, "cloudwatchAlarmRegion", value.asInstanceOf[js.Any])
+      inline def setCloudwatchAlarmRegion(value: Input[String]): Self = StObject.set(x, "cloudwatchAlarmRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudwatchAlarmRegionUndefined: Self = StObject.set(x, "cloudwatchAlarmRegion", js.undefined)
+      inline def setCloudwatchAlarmRegionUndefined: Self = StObject.set(x, "cloudwatchAlarmRegion", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Input[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Input[Boolean]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEnableSni(value: Input[Boolean]): Self = StObject.set(x, "enableSni", value.asInstanceOf[js.Any])
+      inline def setEnableSni(value: Input[Boolean]): Self = StObject.set(x, "enableSni", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableSniUndefined: Self = StObject.set(x, "enableSni", js.undefined)
+      inline def setEnableSniUndefined: Self = StObject.set(x, "enableSni", js.undefined)
       
-      @scala.inline
-      def setFailureThreshold(value: Input[Double]): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+      inline def setFailureThreshold(value: Input[Double]): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
+      inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
       
-      @scala.inline
-      def setFqdn(value: Input[String]): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
+      inline def setFqdn(value: Input[String]): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFqdnUndefined: Self = StObject.set(x, "fqdn", js.undefined)
+      inline def setFqdnUndefined: Self = StObject.set(x, "fqdn", js.undefined)
       
-      @scala.inline
-      def setInsufficientDataHealthStatus(value: Input[String]): Self = StObject.set(x, "insufficientDataHealthStatus", value.asInstanceOf[js.Any])
+      inline def setInsufficientDataHealthStatus(value: Input[String]): Self = StObject.set(x, "insufficientDataHealthStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsufficientDataHealthStatusUndefined: Self = StObject.set(x, "insufficientDataHealthStatus", js.undefined)
+      inline def setInsufficientDataHealthStatusUndefined: Self = StObject.set(x, "insufficientDataHealthStatus", js.undefined)
       
-      @scala.inline
-      def setInvertHealthcheck(value: Input[Boolean]): Self = StObject.set(x, "invertHealthcheck", value.asInstanceOf[js.Any])
+      inline def setInvertHealthcheck(value: Input[Boolean]): Self = StObject.set(x, "invertHealthcheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvertHealthcheckUndefined: Self = StObject.set(x, "invertHealthcheck", js.undefined)
+      inline def setInvertHealthcheckUndefined: Self = StObject.set(x, "invertHealthcheck", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: Input[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setMeasureLatency(value: Input[Boolean]): Self = StObject.set(x, "measureLatency", value.asInstanceOf[js.Any])
+      inline def setMeasureLatency(value: Input[Boolean]): Self = StObject.set(x, "measureLatency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeasureLatencyUndefined: Self = StObject.set(x, "measureLatency", js.undefined)
+      inline def setMeasureLatencyUndefined: Self = StObject.set(x, "measureLatency", js.undefined)
       
-      @scala.inline
-      def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Input[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setReferenceName(value: Input[String]): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+      inline def setReferenceName(value: Input[String]): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferenceNameUndefined: Self = StObject.set(x, "referenceName", js.undefined)
+      inline def setReferenceNameUndefined: Self = StObject.set(x, "referenceName", js.undefined)
       
-      @scala.inline
-      def setRegions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+      inline def setRegions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+      inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
       
-      @scala.inline
-      def setRegionsVarargs(value: Input[String]*): Self = StObject.set(x, "regions", js.Array(value :_*))
+      inline def setRegionsVarargs(value: Input[String]*): Self = StObject.set(x, "regions", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestInterval(value: Input[Double]): Self = StObject.set(x, "requestInterval", value.asInstanceOf[js.Any])
+      inline def setRequestInterval(value: Input[Double]): Self = StObject.set(x, "requestInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIntervalUndefined: Self = StObject.set(x, "requestInterval", js.undefined)
+      inline def setRequestIntervalUndefined: Self = StObject.set(x, "requestInterval", js.undefined)
       
-      @scala.inline
-      def setResourcePath(value: Input[String]): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
+      inline def setResourcePath(value: Input[String]): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePathUndefined: Self = StObject.set(x, "resourcePath", js.undefined)
+      inline def setResourcePathUndefined: Self = StObject.set(x, "resourcePath", js.undefined)
       
-      @scala.inline
-      def setSearchString(value: Input[String]): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
+      inline def setSearchString(value: Input[String]): Self = StObject.set(x, "searchString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
+      inline def setSearchStringUndefined: Self = StObject.set(x, "searchString", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

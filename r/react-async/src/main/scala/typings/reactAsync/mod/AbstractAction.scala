@@ -13,20 +13,16 @@ trait AbstractAction extends StObject {
 }
 object AbstractAction {
   
-  @scala.inline
-  def apply(meta: Dictmeta, `type`: String): AbstractAction = {
+  inline def apply(meta: Dictmeta, `type`: String): AbstractAction = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractAction]
   }
   
-  @scala.inline
-  implicit class AbstractActionMutableBuilder[Self <: AbstractAction] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractAction](x: Self) {
     
-    @scala.inline
-    def setMeta(value: Dictmeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Dictmeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

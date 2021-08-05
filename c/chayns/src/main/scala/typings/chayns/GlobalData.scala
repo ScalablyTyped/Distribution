@@ -10,16 +10,13 @@ trait GlobalData extends StObject {
 }
 object GlobalData {
   
-  @scala.inline
-  def apply(_result: js.Any): GlobalData = {
+  inline def apply(_result: js.Any): GlobalData = {
     val __obj = js.Dynamic.literal(_result = _result.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalData]
   }
   
-  @scala.inline
-  implicit class GlobalDataMutableBuilder[Self <: GlobalData] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalData](x: Self) {
     
-    @scala.inline
-    def set_result(value: js.Any): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
+    inline def set_result(value: js.Any): Self = StObject.set(x, "_result", value.asInstanceOf[js.Any])
   }
 }

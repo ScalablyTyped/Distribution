@@ -20,28 +20,21 @@ trait FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration ex
 }
 object FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration {
   
-  @scala.inline
-  def apply(): FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration = {
+  inline def apply(): FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setProcessors(value: js.Array[FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessor]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
+    inline def setProcessors(value: js.Array[FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessor]): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessorsUndefined: Self = StObject.set(x, "processors", js.undefined)
+    inline def setProcessorsUndefined: Self = StObject.set(x, "processors", js.undefined)
     
-    @scala.inline
-    def setProcessorsVarargs(value: FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessor*): Self = StObject.set(x, "processors", js.Array(value :_*))
+    inline def setProcessorsVarargs(value: FirehoseDeliveryStreamElasticsearchConfigurationProcessingConfigurationProcessor*): Self = StObject.set(x, "processors", js.Array(value :_*))
   }
 }

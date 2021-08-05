@@ -33,8 +33,7 @@ trait NotificationEventField extends StObject {
 }
 object NotificationEventField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fieldType: NotificationEventFieldType,
     id: String,
     name: String,
@@ -45,25 +44,18 @@ object NotificationEventField {
     __obj.asInstanceOf[NotificationEventField]
   }
   
-  @scala.inline
-  implicit class NotificationEventFieldMutableBuilder[Self <: NotificationEventField] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationEventField](x: Self) {
     
-    @scala.inline
-    def setFieldType(value: NotificationEventFieldType): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(value: NotificationEventFieldType): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedScopes(value: js.Array[String]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
+    inline def setSupportedScopes(value: js.Array[String]): Self = StObject.set(x, "supportedScopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedScopesVarargs(value: String*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
+    inline def setSupportedScopesVarargs(value: String*): Self = StObject.set(x, "supportedScopes", js.Array(value :_*))
   }
 }

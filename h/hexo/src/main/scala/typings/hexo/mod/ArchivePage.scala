@@ -16,31 +16,23 @@ trait ArchivePage
 }
 object ArchivePage {
   
-  @scala.inline
-  def apply(): ArchivePage = {
+  inline def apply(): ArchivePage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArchivePage]
   }
   
-  @scala.inline
-  implicit class ArchivePageMutableBuilder[Self <: ArchivePage] (val x: Self) extends AnyVal {
+  extension [Self <: ArchivePage](x: Self) {
     
-    @scala.inline
-    def setArchive(value: Boolean): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
+    inline def setArchive(value: Boolean): Self = StObject.set(x, "archive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveUndefined: Self = StObject.set(x, "archive", js.undefined)
+    inline def setArchiveUndefined: Self = StObject.set(x, "archive", js.undefined)
     
-    @scala.inline
-    def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    inline def setYear(value: Double): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
   }
 }

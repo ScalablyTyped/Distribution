@@ -17,6 +17,5 @@ class Map[K, V] ()
 }
 object Map {
   
-  @scala.inline
-  def apply: MapConstructor = js.Dynamic.global.selectDynamic("Map").asInstanceOf[MapConstructor]
+  inline def apply: MapConstructor = js.Dynamic.global.selectDynamic("Map").asInstanceOf[MapConstructor]
 }

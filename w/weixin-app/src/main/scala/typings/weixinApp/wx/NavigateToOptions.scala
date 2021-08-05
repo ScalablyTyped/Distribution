@@ -14,16 +14,13 @@ trait NavigateToOptions
 }
 object NavigateToOptions {
   
-  @scala.inline
-  def apply(url: String): NavigateToOptions = {
+  inline def apply(url: String): NavigateToOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateToOptions]
   }
   
-  @scala.inline
-  implicit class NavigateToOptionsMutableBuilder[Self <: NavigateToOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigateToOptions](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2QuoteInfo extends StObject {
 }
 object GooglePrivacyDlpV2QuoteInfo {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2QuoteInfo = {
+  inline def apply(): GooglePrivacyDlpV2QuoteInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2QuoteInfo]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2QuoteInfoMutableBuilder[Self <: GooglePrivacyDlpV2QuoteInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2QuoteInfo](x: Self) {
     
-    @scala.inline
-    def setDateTime(value: GooglePrivacyDlpV2DateTime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: GooglePrivacyDlpV2DateTime): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
+    inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
   }
 }

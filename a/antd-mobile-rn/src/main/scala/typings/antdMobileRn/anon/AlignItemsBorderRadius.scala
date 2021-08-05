@@ -16,25 +16,19 @@ trait AlignItemsBorderRadius extends StObject {
 }
 object AlignItemsBorderRadius {
   
-  @scala.inline
-  def apply(alignItems: String, borderRadius: Double, borderWidth: Double, justifyContent: String): AlignItemsBorderRadius = {
+  inline def apply(alignItems: String, borderRadius: Double, borderWidth: Double, justifyContent: String): AlignItemsBorderRadius = {
     val __obj = js.Dynamic.literal(alignItems = alignItems.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], justifyContent = justifyContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignItemsBorderRadius]
   }
   
-  @scala.inline
-  implicit class AlignItemsBorderRadiusMutableBuilder[Self <: AlignItemsBorderRadius] (val x: Self) extends AnyVal {
+  extension [Self <: AlignItemsBorderRadius](x: Self) {
     
-    @scala.inline
-    def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: String): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
   }
 }

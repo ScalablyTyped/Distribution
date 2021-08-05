@@ -23,43 +23,31 @@ trait FsCommand extends StObject {
 }
 object FsCommand {
   
-  @scala.inline
-  def apply(): FsCommand = {
+  inline def apply(): FsCommand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FsCommand]
   }
   
-  @scala.inline
-  implicit class FsCommandMutableBuilder[Self <: FsCommand] (val x: Self) extends AnyVal {
+  extension [Self <: FsCommand](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setPositionOption(value: String): Self = StObject.set(x, "positionOption", value.asInstanceOf[js.Any])
+    inline def setPositionOption(value: String): Self = StObject.set(x, "positionOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionOptionUndefined: Self = StObject.set(x, "positionOption", js.undefined)
+    inline def setPositionOptionUndefined: Self = StObject.set(x, "positionOption", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
+    inline def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
+    inline def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
     
-    @scala.inline
-    def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
+    inline def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
+    inline def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
   }
 }

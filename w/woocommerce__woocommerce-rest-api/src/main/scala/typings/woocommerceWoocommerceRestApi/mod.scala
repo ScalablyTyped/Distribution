@@ -126,11 +126,9 @@ object mod {
   trait WooCommerceRestApiEncoding extends StObject
   object WooCommerceRestApiEncoding {
     
-    @scala.inline
-    def ascii: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.ascii = "ascii".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.ascii]
+    inline def ascii: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.ascii = "ascii".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.ascii]
     
-    @scala.inline
-    def `utf-8`: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`utf-8` = "utf-8".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`utf-8`]
+    inline def `utf-8`: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`utf-8` = "utf-8".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`utf-8`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -143,20 +141,15 @@ object mod {
   trait WooCommerceRestApiMethod extends StObject
   object WooCommerceRestApiMethod {
     
-    @scala.inline
-    def delete: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.delete = "delete".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.delete]
+    inline def delete: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.delete = "delete".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.delete]
     
-    @scala.inline
-    def get: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.get = "get".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.get]
+    inline def get: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.get = "get".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.get]
     
-    @scala.inline
-    def options: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.options = "options".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.options]
+    inline def options: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.options = "options".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.options]
     
-    @scala.inline
-    def post: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.post = "post".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.post]
+    inline def post: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.post = "post".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.post]
     
-    @scala.inline
-    def put: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.put = "put".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.put]
+    inline def put: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.put = "put".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.put]
   }
   
   trait WooCommerceRestApiOptions extends StObject {
@@ -193,65 +186,46 @@ object mod {
   }
   object WooCommerceRestApiOptions {
     
-    @scala.inline
-    def apply(consumerKey: String, consumerSecret: String, url: String): WooCommerceRestApiOptions = {
+    inline def apply(consumerKey: String, consumerSecret: String, url: String): WooCommerceRestApiOptions = {
       val __obj = js.Dynamic.literal(consumerKey = consumerKey.asInstanceOf[js.Any], consumerSecret = consumerSecret.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WooCommerceRestApiOptions]
     }
     
-    @scala.inline
-    implicit class WooCommerceRestApiOptionsMutableBuilder[Self <: WooCommerceRestApiOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WooCommerceRestApiOptions](x: Self) {
       
-      @scala.inline
-      def setAxiosConfig(value: js.Any): Self = StObject.set(x, "axiosConfig", value.asInstanceOf[js.Any])
+      inline def setAxiosConfig(value: js.Any): Self = StObject.set(x, "axiosConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxiosConfigUndefined: Self = StObject.set(x, "axiosConfig", js.undefined)
+      inline def setAxiosConfigUndefined: Self = StObject.set(x, "axiosConfig", js.undefined)
       
-      @scala.inline
-      def setConsumerKey(value: String): Self = StObject.set(x, "consumerKey", value.asInstanceOf[js.Any])
+      inline def setConsumerKey(value: String): Self = StObject.set(x, "consumerKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerSecret(value: String): Self = StObject.set(x, "consumerSecret", value.asInstanceOf[js.Any])
+      inline def setConsumerSecret(value: String): Self = StObject.set(x, "consumerSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: WooCommerceRestApiEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: WooCommerceRestApiEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setQueryStringAuth(value: Boolean): Self = StObject.set(x, "queryStringAuth", value.asInstanceOf[js.Any])
+      inline def setQueryStringAuth(value: Boolean): Self = StObject.set(x, "queryStringAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryStringAuthUndefined: Self = StObject.set(x, "queryStringAuth", js.undefined)
+      inline def setQueryStringAuthUndefined: Self = StObject.set(x, "queryStringAuth", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: WooCommerceRestApiVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: WooCommerceRestApiVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setWpAPIPrefix(value: String): Self = StObject.set(x, "wpAPIPrefix", value.asInstanceOf[js.Any])
+      inline def setWpAPIPrefix(value: String): Self = StObject.set(x, "wpAPIPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWpAPIPrefixUndefined: Self = StObject.set(x, "wpAPIPrefix", js.undefined)
+      inline def setWpAPIPrefixUndefined: Self = StObject.set(x, "wpAPIPrefix", js.undefined)
     }
   }
   
@@ -268,22 +242,16 @@ object mod {
   trait WooCommerceRestApiVersion extends StObject
   object WooCommerceRestApiVersion {
     
-    @scala.inline
-    def `wc-apiSlashv1`: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv1` = "wc-api/v1".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv1`]
+    inline def `wc-apiSlashv1`: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv1` = "wc-api/v1".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv1`]
     
-    @scala.inline
-    def `wc-apiSlashv2`: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv2` = "wc-api/v2".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv2`]
+    inline def `wc-apiSlashv2`: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv2` = "wc-api/v2".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv2`]
     
-    @scala.inline
-    def `wc-apiSlashv3`: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv3` = "wc-api/v3".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv3`]
+    inline def `wc-apiSlashv3`: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv3` = "wc-api/v3".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.`wc-apiSlashv3`]
     
-    @scala.inline
-    def wcSlashv1: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv1 = "wc/v1".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv1]
+    inline def wcSlashv1: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv1 = "wc/v1".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv1]
     
-    @scala.inline
-    def wcSlashv2: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv2 = "wc/v2".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv2]
+    inline def wcSlashv2: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv2 = "wc/v2".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv2]
     
-    @scala.inline
-    def wcSlashv3: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv3 = "wc/v3".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv3]
+    inline def wcSlashv3: typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv3 = "wc/v3".asInstanceOf[typings.woocommerceWoocommerceRestApi.woocommerceWoocommerceRestApiStrings.wcSlashv3]
   }
 }

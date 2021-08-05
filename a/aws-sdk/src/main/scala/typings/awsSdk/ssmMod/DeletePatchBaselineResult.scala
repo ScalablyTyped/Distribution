@@ -13,19 +13,15 @@ trait DeletePatchBaselineResult extends StObject {
 }
 object DeletePatchBaselineResult {
   
-  @scala.inline
-  def apply(): DeletePatchBaselineResult = {
+  inline def apply(): DeletePatchBaselineResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeletePatchBaselineResult]
   }
   
-  @scala.inline
-  implicit class DeletePatchBaselineResultMutableBuilder[Self <: DeletePatchBaselineResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePatchBaselineResult](x: Self) {
     
-    @scala.inline
-    def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
+    inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineIdUndefined: Self = StObject.set(x, "BaselineId", js.undefined)
+    inline def setBaselineIdUndefined: Self = StObject.set(x, "BaselineId", js.undefined)
   }
 }

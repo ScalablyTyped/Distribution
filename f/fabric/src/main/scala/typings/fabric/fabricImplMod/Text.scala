@@ -589,8 +589,7 @@ object Text {
   @JSImport("fabric/fabric-impl", "Text.DEFAULT_SVG_FONT_SIZE")
   @js.native
   def DEFAULT_SVG_FONT_SIZE: Double = js.native
-  @scala.inline
-  def DEFAULT_SVG_FONT_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SVG_FONT_SIZE")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_SVG_FONT_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_SVG_FONT_SIZE")(x.asInstanceOf[js.Any])
   
   /**
     * Returns fabric.Text instance from an SVG element (<b>not yet implemented</b>)
@@ -600,14 +599,10 @@ object Text {
     * @param {Function} callback callback function invoked after parsing
     * @param {Object} [options] Options object
     */
-  @scala.inline
-  def fromElement(element: SVGElement): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[Text]
-  @scala.inline
-  def fromElement(element: SVGElement, callback: js.Function): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Text]
-  @scala.inline
-  def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Text]
-  @scala.inline
-  def fromElement(element: SVGElement, callback: Unit, options: TextOptions): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Text]
+  inline def fromElement(element: SVGElement): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[Text]
+  inline def fromElement(element: SVGElement, callback: js.Function): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Text]
+  inline def fromElement(element: SVGElement, callback: js.Function, options: TextOptions): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Text]
+  inline def fromElement(element: SVGElement, callback: Unit, options: TextOptions): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Text]
   
   /**
     * Returns fabric.Text instance from an object representation
@@ -616,8 +611,6 @@ object Text {
     * @param {Object} object Object to create an instance from
     * @param {Function} [callback] Callback to invoke when an fabric.Text instance is created
     */
-  @scala.inline
-  def fromObject(`object`: js.Any): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Text]
-  @scala.inline
-  def fromObject(`object`: js.Any, callback: js.Function): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Text]
+  inline def fromObject(`object`: js.Any): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Text]
+  inline def fromObject(`object`: js.Any, callback: js.Function): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Text]
 }

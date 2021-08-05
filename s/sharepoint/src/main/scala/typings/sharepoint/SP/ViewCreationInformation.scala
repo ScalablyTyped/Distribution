@@ -42,8 +42,7 @@ trait ViewCreationInformation
 }
 object ViewCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -70,55 +69,38 @@ object ViewCreationInformation {
     __obj.asInstanceOf[ViewCreationInformation]
   }
   
-  @scala.inline
-  implicit class ViewCreationInformationMutableBuilder[Self <: ViewCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ViewCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_paged(value: () => Boolean): Self = StObject.set(x, "get_paged", js.Any.fromFunction0(value))
+    inline def setGet_paged(value: () => Boolean): Self = StObject.set(x, "get_paged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_personalView(value: () => Boolean): Self = StObject.set(x, "get_personalView", js.Any.fromFunction0(value))
+    inline def setGet_personalView(value: () => Boolean): Self = StObject.set(x, "get_personalView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_query(value: () => String): Self = StObject.set(x, "get_query", js.Any.fromFunction0(value))
+    inline def setGet_query(value: () => String): Self = StObject.set(x, "get_query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_rowLimit(value: () => Double): Self = StObject.set(x, "get_rowLimit", js.Any.fromFunction0(value))
+    inline def setGet_rowLimit(value: () => Double): Self = StObject.set(x, "get_rowLimit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_setAsDefaultView(value: () => Boolean): Self = StObject.set(x, "get_setAsDefaultView", js.Any.fromFunction0(value))
+    inline def setGet_setAsDefaultView(value: () => Boolean): Self = StObject.set(x, "get_setAsDefaultView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
+    inline def setGet_title(value: () => String): Self = StObject.set(x, "get_title", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_viewFields(value: () => js.Array[String]): Self = StObject.set(x, "get_viewFields", js.Any.fromFunction0(value))
+    inline def setGet_viewFields(value: () => js.Array[String]): Self = StObject.set(x, "get_viewFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_viewTypeKind(value: () => ViewType): Self = StObject.set(x, "get_viewTypeKind", js.Any.fromFunction0(value))
+    inline def setGet_viewTypeKind(value: () => ViewType): Self = StObject.set(x, "get_viewTypeKind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_paged(value: Boolean => Unit): Self = StObject.set(x, "set_paged", js.Any.fromFunction1(value))
+    inline def setSet_paged(value: Boolean => Unit): Self = StObject.set(x, "set_paged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_personalView(value: Boolean => Unit): Self = StObject.set(x, "set_personalView", js.Any.fromFunction1(value))
+    inline def setSet_personalView(value: Boolean => Unit): Self = StObject.set(x, "set_personalView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_query(value: String => Unit): Self = StObject.set(x, "set_query", js.Any.fromFunction1(value))
+    inline def setSet_query(value: String => Unit): Self = StObject.set(x, "set_query", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_rowLimit(value: Double => Unit): Self = StObject.set(x, "set_rowLimit", js.Any.fromFunction1(value))
+    inline def setSet_rowLimit(value: Double => Unit): Self = StObject.set(x, "set_rowLimit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_setAsDefaultView(value: Boolean => Unit): Self = StObject.set(x, "set_setAsDefaultView", js.Any.fromFunction1(value))
+    inline def setSet_setAsDefaultView(value: Boolean => Unit): Self = StObject.set(x, "set_setAsDefaultView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
+    inline def setSet_title(value: String => Unit): Self = StObject.set(x, "set_title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_viewFields(value: js.Array[String] => Unit): Self = StObject.set(x, "set_viewFields", js.Any.fromFunction1(value))
+    inline def setSet_viewFields(value: js.Array[String] => Unit): Self = StObject.set(x, "set_viewFields", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_viewTypeKind(value: ViewType => Unit): Self = StObject.set(x, "set_viewTypeKind", js.Any.fromFunction1(value))
+    inline def setSet_viewTypeKind(value: ViewType => Unit): Self = StObject.set(x, "set_viewTypeKind", js.Any.fromFunction1(value))
   }
 }

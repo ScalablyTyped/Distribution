@@ -13,17 +13,14 @@ object anon {
   }
   object HandlerProtocol {
     
-    @scala.inline
-    def apply(handlerProtocol: String): HandlerProtocol = {
+    inline def apply(handlerProtocol: String): HandlerProtocol = {
       val __obj = js.Dynamic.literal(handlerProtocol = handlerProtocol.asInstanceOf[js.Any])
       __obj.asInstanceOf[HandlerProtocol]
     }
     
-    @scala.inline
-    implicit class HandlerProtocolMutableBuilder[Self <: HandlerProtocol] (val x: Self) extends AnyVal {
+    extension [Self <: HandlerProtocol](x: Self) {
       
-      @scala.inline
-      def setHandlerProtocol(value: String): Self = StObject.set(x, "handlerProtocol", value.asInstanceOf[js.Any])
+      inline def setHandlerProtocol(value: String): Self = StObject.set(x, "handlerProtocol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,17 +30,14 @@ object anon {
   }
   object Response {
     
-    @scala.inline
-    def apply(response: HttpResponse): Response = {
+    inline def apply(response: HttpResponse): Response = {
       val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Response]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+    extension [Self <: Response](x: Self) {
       
-      @scala.inline
-      def setResponse(value: HttpResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: HttpResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -22,8 +22,7 @@ trait XRowSetChangeListener
 }
 object XRowSetChangeListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     onRowSetChanged: EventObject => Unit,
@@ -34,10 +33,8 @@ object XRowSetChangeListener {
     __obj.asInstanceOf[XRowSetChangeListener]
   }
   
-  @scala.inline
-  implicit class XRowSetChangeListenerMutableBuilder[Self <: XRowSetChangeListener] (val x: Self) extends AnyVal {
+  extension [Self <: XRowSetChangeListener](x: Self) {
     
-    @scala.inline
-    def setOnRowSetChanged(value: EventObject => Unit): Self = StObject.set(x, "onRowSetChanged", js.Any.fromFunction1(value))
+    inline def setOnRowSetChanged(value: EventObject => Unit): Self = StObject.set(x, "onRowSetChanged", js.Any.fromFunction1(value))
   }
 }

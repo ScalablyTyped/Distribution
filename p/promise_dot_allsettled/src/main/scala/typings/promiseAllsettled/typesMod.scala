@@ -19,20 +19,16 @@ object typesMod {
   }
   object PromiseRejection {
     
-    @scala.inline
-    def apply[E](reason: E): PromiseRejection[E] = {
+    inline def apply[E](reason: E): PromiseRejection[E] = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
       __obj.asInstanceOf[PromiseRejection[E]]
     }
     
-    @scala.inline
-    implicit class PromiseRejectionMutableBuilder[Self <: PromiseRejection[?], E] (val x: Self & PromiseRejection[E]) extends AnyVal {
+    extension [Self <: PromiseRejection[?], E](x: Self & PromiseRejection[E]) {
       
-      @scala.inline
-      def setReason(value: E): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: E): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: rejected): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: rejected): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,20 +42,16 @@ object typesMod {
   }
   object PromiseResolution {
     
-    @scala.inline
-    def apply[T](value: T): PromiseResolution[T] = {
+    inline def apply[T](value: T): PromiseResolution[T] = {
       val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromiseResolution[T]]
     }
     
-    @scala.inline
-    implicit class PromiseResolutionMutableBuilder[Self <: PromiseResolution[?], T] (val x: Self & PromiseResolution[T]) extends AnyVal {
+    extension [Self <: PromiseResolution[?], T](x: Self & PromiseResolution[T]) {
       
-      @scala.inline
-      def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: fulfilled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,14 +62,12 @@ object typesMod {
   trait PromiseResult[T, E] extends StObject
   object PromiseResult {
     
-    @scala.inline
-    def PromiseRejection[E](reason: E): typings.promiseAllsettled.typesMod.PromiseRejection[E] = {
+    inline def PromiseRejection[E](reason: E): typings.promiseAllsettled.typesMod.PromiseRejection[E] = {
       val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], status = "rejected")
       __obj.asInstanceOf[typings.promiseAllsettled.typesMod.PromiseRejection[E]]
     }
     
-    @scala.inline
-    def PromiseResolution[T](value: T): typings.promiseAllsettled.typesMod.PromiseResolution[T] = {
+    inline def PromiseResolution[T](value: T): typings.promiseAllsettled.typesMod.PromiseResolution[T] = {
       val __obj = js.Dynamic.literal(status = "fulfilled", value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.promiseAllsettled.typesMod.PromiseResolution[T]]
     }

@@ -20,25 +20,19 @@ trait MigrationsDeleteArchiveForAuthenticatedUserRequestOptions extends StObject
 }
 object MigrationsDeleteArchiveForAuthenticatedUserRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsDeleteArchiveForAuthenticatedUserRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsDeleteArchiveForAuthenticatedUserRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "DELETE", request = request.asInstanceOf[js.Any], url = "/user/migrations/:migration_id/archive")
     __obj.asInstanceOf[MigrationsDeleteArchiveForAuthenticatedUserRequestOptions]
   }
   
-  @scala.inline
-  implicit class MigrationsDeleteArchiveForAuthenticatedUserRequestOptionsMutableBuilder[Self <: MigrationsDeleteArchiveForAuthenticatedUserRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsDeleteArchiveForAuthenticatedUserRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashuserSlashmigrationsSlashColonmigration_idSlasharchive): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashuserSlashmigrationsSlashColonmigration_idSlasharchive): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

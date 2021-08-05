@@ -15,8 +15,7 @@ object colorMod {
   @js.native
   val color: ValueType = js.native
   
-  @scala.inline
-  def getValueFromFunctionString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromFunctionString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getValueFromFunctionString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromFunctionString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("style-value-types/lib/value-types/color", "hex")
   @js.native

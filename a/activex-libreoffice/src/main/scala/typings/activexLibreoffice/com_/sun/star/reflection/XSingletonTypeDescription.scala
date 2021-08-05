@@ -33,8 +33,7 @@ trait XSingletonTypeDescription
 }
 object XSingletonTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     Service: XServiceTypeDescription,
     TypeClass: TypeClass,
@@ -49,13 +48,10 @@ object XSingletonTypeDescription {
     __obj.asInstanceOf[XSingletonTypeDescription]
   }
   
-  @scala.inline
-  implicit class XSingletonTypeDescriptionMutableBuilder[Self <: XSingletonTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XSingletonTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGetService(value: () => XServiceTypeDescription): Self = StObject.set(x, "getService", js.Any.fromFunction0(value))
+    inline def setGetService(value: () => XServiceTypeDescription): Self = StObject.set(x, "getService", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setService(value: XServiceTypeDescription): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
+    inline def setService(value: XServiceTypeDescription): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
   }
 }

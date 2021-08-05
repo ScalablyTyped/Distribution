@@ -12,25 +12,19 @@ trait PatchIssueTypeParams extends StObject {
 }
 object PatchIssueTypeParams {
   
-  @scala.inline
-  def apply(): PatchIssueTypeParams = {
+  inline def apply(): PatchIssueTypeParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PatchIssueTypeParams]
   }
   
-  @scala.inline
-  implicit class PatchIssueTypeParamsMutableBuilder[Self <: PatchIssueTypeParams] (val x: Self) extends AnyVal {
+  extension [Self <: PatchIssueTypeParams](x: Self) {
     
-    @scala.inline
-    def setColor(value: IssueTypeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: IssueTypeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

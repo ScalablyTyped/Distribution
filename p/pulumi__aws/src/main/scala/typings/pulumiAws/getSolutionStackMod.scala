@@ -11,10 +11,8 @@ object getSolutionStackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSolutionStack(args: GetSolutionStackArgs): js.Promise[GetSolutionStackResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSolutionStackResult]]
-  @scala.inline
-  def getSolutionStack(args: GetSolutionStackArgs, opts: InvokeOptions): js.Promise[GetSolutionStackResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSolutionStackResult]]
+  inline def getSolutionStack(args: GetSolutionStackArgs): js.Promise[GetSolutionStackResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSolutionStackResult]]
+  inline def getSolutionStack(args: GetSolutionStackArgs, opts: InvokeOptions): js.Promise[GetSolutionStackResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSolutionStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSolutionStackResult]]
   
   trait GetSolutionStackArgs extends StObject {
     
@@ -33,23 +31,18 @@ object getSolutionStackMod {
   }
   object GetSolutionStackArgs {
     
-    @scala.inline
-    def apply(nameRegex: String): GetSolutionStackArgs = {
+    inline def apply(nameRegex: String): GetSolutionStackArgs = {
       val __obj = js.Dynamic.literal(nameRegex = nameRegex.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSolutionStackArgs]
     }
     
-    @scala.inline
-    implicit class GetSolutionStackArgsMutableBuilder[Self <: GetSolutionStackArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSolutionStackArgs](x: Self) {
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setNameRegex(value: String): Self = StObject.set(x, "nameRegex", value.asInstanceOf[js.Any])
+      inline def setNameRegex(value: String): Self = StObject.set(x, "nameRegex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,29 +64,22 @@ object getSolutionStackMod {
   }
   object GetSolutionStackResult {
     
-    @scala.inline
-    def apply(id: String, name: String, nameRegex: String): GetSolutionStackResult = {
+    inline def apply(id: String, name: String, nameRegex: String): GetSolutionStackResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameRegex = nameRegex.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSolutionStackResult]
     }
     
-    @scala.inline
-    implicit class GetSolutionStackResultMutableBuilder[Self <: GetSolutionStackResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSolutionStackResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
+      inline def setMostRecent(value: Boolean): Self = StObject.set(x, "mostRecent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
+      inline def setMostRecentUndefined: Self = StObject.set(x, "mostRecent", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameRegex(value: String): Self = StObject.set(x, "nameRegex", value.asInstanceOf[js.Any])
+      inline def setNameRegex(value: String): Self = StObject.set(x, "nameRegex", value.asInstanceOf[js.Any])
     }
   }
 }

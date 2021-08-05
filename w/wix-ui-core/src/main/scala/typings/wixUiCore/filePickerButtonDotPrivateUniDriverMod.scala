@@ -14,8 +14,7 @@ object filePickerButtonDotPrivateUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filePickerButtonPrivateUniDriverFactory(base: UniDriver[js.Any]): FilePickerButtonPrivateUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("filePickerButtonPrivateUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[FilePickerButtonPrivateUniDriver]
+  inline def filePickerButtonPrivateUniDriverFactory(base: UniDriver[js.Any]): FilePickerButtonPrivateUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("filePickerButtonPrivateUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[FilePickerButtonPrivateUniDriver]
   
   trait FilePickerButtonPrivateUniDriver
     extends StObject
@@ -31,8 +30,7 @@ object filePickerButtonDotPrivateUniDriverMod {
   }
   object FilePickerButtonPrivateUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -51,20 +49,15 @@ object filePickerButtonDotPrivateUniDriverMod {
       __obj.asInstanceOf[FilePickerButtonPrivateUniDriver]
     }
     
-    @scala.inline
-    implicit class FilePickerButtonPrivateUniDriverMutableBuilder[Self <: FilePickerButtonPrivateUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: FilePickerButtonPrivateUniDriver](x: Self) {
       
-      @scala.inline
-      def setFocusChooseFileButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "focusChooseFileButton", js.Any.fromFunction0(value))
+      inline def setFocusChooseFileButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "focusChooseFileButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChooseFileButtonAttribute(value: String => js.Promise[String]): Self = StObject.set(x, "getChooseFileButtonAttribute", js.Any.fromFunction1(value))
+      inline def setGetChooseFileButtonAttribute(value: String => js.Promise[String]): Self = StObject.set(x, "getChooseFileButtonAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFileInputAttribute(value: String => js.Promise[String]): Self = StObject.set(x, "getFileInputAttribute", js.Any.fromFunction1(value))
+      inline def setGetFileInputAttribute(value: String => js.Promise[String]): Self = StObject.set(x, "getFileInputAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNativeInput(value: () => js.Promise[HTMLInputElement]): Self = StObject.set(x, "getNativeInput", js.Any.fromFunction0(value))
+      inline def setGetNativeInput(value: () => js.Promise[HTMLInputElement]): Self = StObject.set(x, "getNativeInput", js.Any.fromFunction0(value))
     }
   }
 }

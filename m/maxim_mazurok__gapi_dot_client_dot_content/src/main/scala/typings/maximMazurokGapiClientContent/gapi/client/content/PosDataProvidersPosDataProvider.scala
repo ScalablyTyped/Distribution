@@ -17,31 +17,23 @@ trait PosDataProvidersPosDataProvider extends StObject {
 }
 object PosDataProvidersPosDataProvider {
   
-  @scala.inline
-  def apply(): PosDataProvidersPosDataProvider = {
+  inline def apply(): PosDataProvidersPosDataProvider = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PosDataProvidersPosDataProvider]
   }
   
-  @scala.inline
-  implicit class PosDataProvidersPosDataProviderMutableBuilder[Self <: PosDataProvidersPosDataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: PosDataProvidersPosDataProvider](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
+    inline def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
+    inline def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
   }
 }

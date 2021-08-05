@@ -23,8 +23,7 @@ trait InteractiveSelectionResult extends StObject
 object InteractiveSelectionResult {
   
   /** The interactive selection of a property value was canceled. */
-  @scala.inline
-  def Cancelled: `0` = 0.asInstanceOf[`0`]
+  inline def Cancelled: `0` = 0.asInstanceOf[`0`]
   
   /**
     * The interactive selection of a property value succeeded, a new property value has been obtained, but not yet set at the inspected component.
@@ -32,17 +31,14 @@ object InteractiveSelectionResult {
     * In this case, the obtained value is passed to the caller of {@link XPropertyHandler.onInteractivePropertySelection()} , which is responsible for
     * forwarding this value to the inspected component.
     */
-  @scala.inline
-  def ObtainedValue: `2` = 2.asInstanceOf[`2`]
+  inline def ObtainedValue: `2` = 2.asInstanceOf[`2`]
   
   /** The interactive selection of a property value is still pending. <p>This is usually used when this selection involves non-modal user interface.</p> */
-  @scala.inline
-  def Pending: `3` = 3.asInstanceOf[`3`]
+  inline def Pending: `3` = 3.asInstanceOf[`3`]
   
   /**
     * The interactive selection of a property value succeeded, and the new property value chosen by the user has already been set at the inspected
     * component.
     */
-  @scala.inline
-  def Success: `1` = 1.asInstanceOf[`1`]
+  inline def Success: `1` = 1.asInstanceOf[`1`]
 }

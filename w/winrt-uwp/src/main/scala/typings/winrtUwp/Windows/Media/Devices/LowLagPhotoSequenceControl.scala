@@ -52,8 +52,7 @@ trait LowLagPhotoSequenceControl extends StObject {
 }
 object LowLagPhotoSequenceControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     desiredThumbnailSize: Double,
     getCurrentFrameRate: () => MediaRatio,
     getHighestConcurrentFrameRate: IMediaEncodingProperties => MediaRatio,
@@ -70,40 +69,28 @@ object LowLagPhotoSequenceControl {
     __obj.asInstanceOf[LowLagPhotoSequenceControl]
   }
   
-  @scala.inline
-  implicit class LowLagPhotoSequenceControlMutableBuilder[Self <: LowLagPhotoSequenceControl] (val x: Self) extends AnyVal {
+  extension [Self <: LowLagPhotoSequenceControl](x: Self) {
     
-    @scala.inline
-    def setDesiredThumbnailSize(value: Double): Self = StObject.set(x, "desiredThumbnailSize", value.asInstanceOf[js.Any])
+    inline def setDesiredThumbnailSize(value: Double): Self = StObject.set(x, "desiredThumbnailSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentFrameRate(value: () => MediaRatio): Self = StObject.set(x, "getCurrentFrameRate", js.Any.fromFunction0(value))
+    inline def setGetCurrentFrameRate(value: () => MediaRatio): Self = StObject.set(x, "getCurrentFrameRate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = StObject.set(x, "getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
+    inline def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = StObject.set(x, "getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHardwareAcceleratedThumbnailSupported(value: Double): Self = StObject.set(x, "hardwareAcceleratedThumbnailSupported", value.asInstanceOf[js.Any])
+    inline def setHardwareAcceleratedThumbnailSupported(value: Double): Self = StObject.set(x, "hardwareAcceleratedThumbnailSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPastPhotos(value: Double): Self = StObject.set(x, "maxPastPhotos", value.asInstanceOf[js.Any])
+    inline def setMaxPastPhotos(value: Double): Self = StObject.set(x, "maxPastPhotos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPhotosPerSecond(value: Double): Self = StObject.set(x, "maxPhotosPerSecond", value.asInstanceOf[js.Any])
+    inline def setMaxPhotosPerSecond(value: Double): Self = StObject.set(x, "maxPhotosPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPastPhotoLimit(value: Double): Self = StObject.set(x, "pastPhotoLimit", value.asInstanceOf[js.Any])
+    inline def setPastPhotoLimit(value: Double): Self = StObject.set(x, "pastPhotoLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosPerSecondLimit(value: Double): Self = StObject.set(x, "photosPerSecondLimit", value.asInstanceOf[js.Any])
+    inline def setPhotosPerSecondLimit(value: Double): Self = StObject.set(x, "photosPerSecondLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailEnabled(value: Boolean): Self = StObject.set(x, "thumbnailEnabled", value.asInstanceOf[js.Any])
+    inline def setThumbnailEnabled(value: Boolean): Self = StObject.set(x, "thumbnailEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailFormat(value: MediaThumbnailFormat): Self = StObject.set(x, "thumbnailFormat", value.asInstanceOf[js.Any])
+    inline def setThumbnailFormat(value: MediaThumbnailFormat): Self = StObject.set(x, "thumbnailFormat", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait TimeSpan extends StObject {
 }
 object TimeSpan {
   
-  @scala.inline
-  def apply(): TimeSpan = {
+  inline def apply(): TimeSpan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeSpan]
   }
   
-  @scala.inline
-  implicit class TimeSpanMutableBuilder[Self <: TimeSpan] (val x: Self) extends AnyVal {
+  extension [Self <: TimeSpan](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Time): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Time): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Time): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Time): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

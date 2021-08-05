@@ -26,21 +26,17 @@ object networksMod {
   }
   object Bip32 {
     
-    @scala.inline
-    def apply(`private`: Double, public: Double): Bip32 = {
+    inline def apply(`private`: Double, public: Double): Bip32 = {
       val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any])
       __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bip32]
     }
     
-    @scala.inline
-    implicit class Bip32MutableBuilder[Self <: Bip32] (val x: Self) extends AnyVal {
+    extension [Self <: Bip32](x: Self) {
       
-      @scala.inline
-      def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic(value: Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: Double): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,8 +56,7 @@ object networksMod {
   }
   object Network {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bech32: String,
       bip32: Bip32,
       messagePrefix: String,
@@ -73,26 +68,19 @@ object networksMod {
       __obj.asInstanceOf[Network]
     }
     
-    @scala.inline
-    implicit class NetworkMutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
+    extension [Self <: Network](x: Self) {
       
-      @scala.inline
-      def setBech32(value: String): Self = StObject.set(x, "bech32", value.asInstanceOf[js.Any])
+      inline def setBech32(value: String): Self = StObject.set(x, "bech32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBip32(value: Bip32): Self = StObject.set(x, "bip32", value.asInstanceOf[js.Any])
+      inline def setBip32(value: Bip32): Self = StObject.set(x, "bip32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagePrefix(value: String): Self = StObject.set(x, "messagePrefix", value.asInstanceOf[js.Any])
+      inline def setMessagePrefix(value: String): Self = StObject.set(x, "messagePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubKeyHash(value: Double): Self = StObject.set(x, "pubKeyHash", value.asInstanceOf[js.Any])
+      inline def setPubKeyHash(value: Double): Self = StObject.set(x, "pubKeyHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptHash(value: Double): Self = StObject.set(x, "scriptHash", value.asInstanceOf[js.Any])
+      inline def setScriptHash(value: Double): Self = StObject.set(x, "scriptHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWif(value: Double): Self = StObject.set(x, "wif", value.asInstanceOf[js.Any])
+      inline def setWif(value: Double): Self = StObject.set(x, "wif", value.asInstanceOf[js.Any])
     }
   }
 }

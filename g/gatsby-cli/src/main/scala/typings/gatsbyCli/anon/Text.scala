@@ -14,8 +14,7 @@ trait Text extends StObject {
 }
 object Text {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     level: typings.gatsbyCli.structuredErrorsTypesMod.Level,
     text: js.Any => String,
     `type`: typings.gatsbyCli.structuredErrorsTypesMod.Type
@@ -25,16 +24,12 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  @scala.inline
-  implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+  extension [Self <: Text](x: Self) {
     
-    @scala.inline
-    def setLevel(value: typings.gatsbyCli.structuredErrorsTypesMod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: typings.gatsbyCli.structuredErrorsTypesMod.Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: typings.gatsbyCli.structuredErrorsTypesMod.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.gatsbyCli.structuredErrorsTypesMod.Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

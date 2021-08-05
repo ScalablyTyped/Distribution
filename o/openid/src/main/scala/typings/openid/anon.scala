@@ -14,23 +14,18 @@ object anon {
   }
   object Authenticated {
     
-    @scala.inline
-    def apply(authenticated: Boolean): Authenticated = {
+    inline def apply(authenticated: Boolean): Authenticated = {
       val __obj = js.Dynamic.literal(authenticated = authenticated.asInstanceOf[js.Any])
       __obj.asInstanceOf[Authenticated]
     }
     
-    @scala.inline
-    implicit class AuthenticatedMutableBuilder[Self <: Authenticated] (val x: Self) extends AnyVal {
+    extension [Self <: Authenticated](x: Self) {
       
-      @scala.inline
-      def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
+      inline def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClaimedIdentifier(value: String): Self = StObject.set(x, "claimedIdentifier", value.asInstanceOf[js.Any])
+      inline def setClaimedIdentifier(value: String): Self = StObject.set(x, "claimedIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClaimedIdentifierUndefined: Self = StObject.set(x, "claimedIdentifier", js.undefined)
+      inline def setClaimedIdentifierUndefined: Self = StObject.set(x, "claimedIdentifier", js.undefined)
     }
   }
 }

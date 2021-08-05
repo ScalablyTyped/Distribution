@@ -248,8 +248,7 @@ object mod {
         /* options */ js.UndefOr[BucketOptions], 
         typings.googleCloudStorage.bucketMod.Bucket
       ] = js.native
-    @scala.inline
-    def Bucket_=(
+    inline def Bucket_=(
       x: Instantiable3[
           /* storage */ typings.googleCloudStorage.storageMod.Storage, 
           /* name */ String, 
@@ -273,8 +272,7 @@ object mod {
         /* resourceId */ String, 
         typings.googleCloudStorage.channelMod.Channel
       ] = js.native
-    @scala.inline
-    def Channel_=(
+    inline def Channel_=(
       x: Instantiable3[
           /* storage */ typings.googleCloudStorage.storageMod.Storage, 
           /* id */ String, 
@@ -298,8 +296,7 @@ object mod {
         /* options */ js.UndefOr[FileOptions], 
         typings.googleCloudStorage.fileMod.File
       ] = js.native
-    @scala.inline
-    def File_=(
+    inline def File_=(
       x: Instantiable3[
           /* bucket */ typings.googleCloudStorage.bucketMod.Bucket, 
           /* name */ String, 
@@ -323,8 +320,7 @@ object mod {
         /* options */ js.UndefOr[HmacKeyOptions], 
         typings.googleCloudStorage.hmacKeyMod.HmacKey
       ] = js.native
-    @scala.inline
-    def HmacKey_=(
+    inline def HmacKey_=(
       x: Instantiable3[
           /* storage */ typings.googleCloudStorage.storageMod.Storage, 
           /* accessId */ String, 
@@ -392,13 +388,11 @@ object mod {
     @JSImport("@google-cloud/storage", "Storage.acl")
     @js.native
     def acl: OWNERROLE = js.native
-    @scala.inline
-    def acl_=(x: OWNERROLE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("acl")(x.asInstanceOf[js.Any])
+    inline def acl_=(x: OWNERROLE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("acl")(x.asInstanceOf[js.Any])
     
     @JSImport("@google-cloud/storage", "Storage.sanitizeEndpoint")
     @js.native
     def sanitizeEndpoint: js.Any = js.native
-    @scala.inline
-    def sanitizeEndpoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitizeEndpoint")(x.asInstanceOf[js.Any])
+    inline def sanitizeEndpoint_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sanitizeEndpoint")(x.asInstanceOf[js.Any])
   }
 }

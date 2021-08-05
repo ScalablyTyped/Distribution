@@ -38,49 +38,35 @@ trait AwsApiCallAction extends StObject {
 }
 object AwsApiCallAction {
   
-  @scala.inline
-  def apply(): AwsApiCallAction = {
+  inline def apply(): AwsApiCallAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsApiCallAction]
   }
   
-  @scala.inline
-  implicit class AwsApiCallActionMutableBuilder[Self <: AwsApiCallAction] (val x: Self) extends AnyVal {
+  extension [Self <: AwsApiCallAction](x: Self) {
     
-    @scala.inline
-    def setApi(value: String): Self = StObject.set(x, "Api", value.asInstanceOf[js.Any])
+    inline def setApi(value: String): Self = StObject.set(x, "Api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiUndefined: Self = StObject.set(x, "Api", js.undefined)
+    inline def setApiUndefined: Self = StObject.set(x, "Api", js.undefined)
     
-    @scala.inline
-    def setCallerType(value: String): Self = StObject.set(x, "CallerType", value.asInstanceOf[js.Any])
+    inline def setCallerType(value: String): Self = StObject.set(x, "CallerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerTypeUndefined: Self = StObject.set(x, "CallerType", js.undefined)
+    inline def setCallerTypeUndefined: Self = StObject.set(x, "CallerType", js.undefined)
     
-    @scala.inline
-    def setDomainDetails(value: DomainDetails): Self = StObject.set(x, "DomainDetails", value.asInstanceOf[js.Any])
+    inline def setDomainDetails(value: DomainDetails): Self = StObject.set(x, "DomainDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainDetailsUndefined: Self = StObject.set(x, "DomainDetails", js.undefined)
+    inline def setDomainDetailsUndefined: Self = StObject.set(x, "DomainDetails", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setRemoteIpDetails(value: RemoteIpDetails): Self = StObject.set(x, "RemoteIpDetails", value.asInstanceOf[js.Any])
+    inline def setRemoteIpDetails(value: RemoteIpDetails): Self = StObject.set(x, "RemoteIpDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteIpDetailsUndefined: Self = StObject.set(x, "RemoteIpDetails", js.undefined)
+    inline def setRemoteIpDetailsUndefined: Self = StObject.set(x, "RemoteIpDetails", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
   }
 }

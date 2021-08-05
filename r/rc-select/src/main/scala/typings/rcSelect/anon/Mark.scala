@@ -37,53 +37,39 @@ trait Mark[OptionsType /* <: js.Array[js.Object] */] extends StObject {
 }
 object Mark {
   
-  @scala.inline
-  def apply[OptionsType /* <: js.Array[js.Object] */](): Mark[OptionsType] = {
+  inline def apply[OptionsType /* <: js.Array[js.Object] */](): Mark[OptionsType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mark[OptionsType]]
   }
   
-  @scala.inline
-  implicit class MarkMutableBuilder[Self <: Mark[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & Mark[OptionsType]) extends AnyVal {
+  extension [Self <: Mark[?], OptionsType /* <: js.Array[js.Object] */](x: Self & Mark[OptionsType]) {
     
-    @scala.inline
-    def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
+    inline def setMark(value: String): Self = StObject.set(x, "mark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
+    inline def setMarkUndefined: Self = StObject.set(x, "mark", js.undefined)
     
-    @scala.inline
-    def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
+    inline def setOnClear(value: () => Unit): Self = StObject.set(x, "onClear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
+    inline def setOnClearUndefined: Self = StObject.set(x, "onClear", js.undefined)
     
-    @scala.inline
-    def setOnRawDeselect(
+    inline def setOnRawDeselect(
       value: (/* value */ RawValueType, /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ /* option */ js.Any, /* source */ SelectSource) => Unit
     ): Self = StObject.set(x, "onRawDeselect", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnRawDeselectUndefined: Self = StObject.set(x, "onRawDeselect", js.undefined)
+    inline def setOnRawDeselectUndefined: Self = StObject.set(x, "onRawDeselect", js.undefined)
     
-    @scala.inline
-    def setOnRawSelect(
+    inline def setOnRawSelect(
       value: (/* value */ RawValueType, /* import warning: importer.ImportType#apply Failed type conversion: OptionsType[number] */ /* option */ js.Any, /* source */ SelectSource) => Unit
     ): Self = StObject.set(x, "onRawSelect", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnRawSelectUndefined: Self = StObject.set(x, "onRawSelect", js.undefined)
+    inline def setOnRawSelectUndefined: Self = StObject.set(x, "onRawSelect", js.undefined)
     
-    @scala.inline
-    def setSkipTriggerChange(value: Boolean): Self = StObject.set(x, "skipTriggerChange", value.asInstanceOf[js.Any])
+    inline def setSkipTriggerChange(value: Boolean): Self = StObject.set(x, "skipTriggerChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipTriggerChangeUndefined: Self = StObject.set(x, "skipTriggerChange", js.undefined)
+    inline def setSkipTriggerChangeUndefined: Self = StObject.set(x, "skipTriggerChange", js.undefined)
     
-    @scala.inline
-    def setSkipTriggerSelect(value: Boolean): Self = StObject.set(x, "skipTriggerSelect", value.asInstanceOf[js.Any])
+    inline def setSkipTriggerSelect(value: Boolean): Self = StObject.set(x, "skipTriggerSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipTriggerSelectUndefined: Self = StObject.set(x, "skipTriggerSelect", js.undefined)
+    inline def setSkipTriggerSelectUndefined: Self = StObject.set(x, "skipTriggerSelect", js.undefined)
   }
 }

@@ -94,8 +94,7 @@ trait ChartDataPointProperties
 }
 object ChartDataPointProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharAutoKerning: Boolean,
     CharBackColor: Color,
     CharBackTransparent: Boolean,
@@ -228,34 +227,24 @@ object ChartDataPointProperties {
     __obj.asInstanceOf[ChartDataPointProperties]
   }
   
-  @scala.inline
-  implicit class ChartDataPointPropertiesMutableBuilder[Self <: ChartDataPointProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDataPointProperties](x: Self) {
     
-    @scala.inline
-    def setDataCaption(value: Double): Self = StObject.set(x, "DataCaption", value.asInstanceOf[js.Any])
+    inline def setDataCaption(value: Double): Self = StObject.set(x, "DataCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPlacement(value: Double): Self = StObject.set(x, "LabelPlacement", value.asInstanceOf[js.Any])
+    inline def setLabelPlacement(value: Double): Self = StObject.set(x, "LabelPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelSeparator(value: String): Self = StObject.set(x, "LabelSeparator", value.asInstanceOf[js.Any])
+    inline def setLabelSeparator(value: String): Self = StObject.set(x, "LabelSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Double): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageNumberFormat(value: Double): Self = StObject.set(x, "PercentageNumberFormat", value.asInstanceOf[js.Any])
+    inline def setPercentageNumberFormat(value: Double): Self = StObject.set(x, "PercentageNumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentOffset(value: Double): Self = StObject.set(x, "SegmentOffset", value.asInstanceOf[js.Any])
+    inline def setSegmentOffset(value: Double): Self = StObject.set(x, "SegmentOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolBitmapURL(value: String): Self = StObject.set(x, "SymbolBitmapURL", value.asInstanceOf[js.Any])
+    inline def setSymbolBitmapURL(value: String): Self = StObject.set(x, "SymbolBitmapURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolType(value: Double): Self = StObject.set(x, "SymbolType", value.asInstanceOf[js.Any])
+    inline def setSymbolType(value: Double): Self = StObject.set(x, "SymbolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextWordWrap(value: Boolean): Self = StObject.set(x, "TextWordWrap", value.asInstanceOf[js.Any])
+    inline def setTextWordWrap(value: Boolean): Self = StObject.set(x, "TextWordWrap", value.asInstanceOf[js.Any])
   }
 }

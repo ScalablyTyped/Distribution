@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoDistributeCmd extends StObject
 object MsoDistributeCmd {
   
-  @scala.inline
-  def msoDistributeHorizontally: `0` = 0.asInstanceOf[`0`]
+  inline def msoDistributeHorizontally: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoDistributeVertically: `1` = 1.asInstanceOf[`1`]
+  inline def msoDistributeVertically: `1` = 1.asInstanceOf[`1`]
 }

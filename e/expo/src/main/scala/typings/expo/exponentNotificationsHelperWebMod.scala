@@ -11,12 +11,9 @@ object exponentNotificationsHelperWebMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDevicePushTokenAsync(): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevicePushTokenAsync")().asInstanceOf[js.Promise[Data]]
+  inline def getDevicePushTokenAsync(): js.Promise[Data] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevicePushTokenAsync")().asInstanceOf[js.Promise[Data]]
   
-  @scala.inline
-  def getExponentPushTokenAsync(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExponentPushTokenAsync")().asInstanceOf[js.Promise[String]]
+  inline def getExponentPushTokenAsync(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExponentPushTokenAsync")().asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def guardPermission(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("guardPermission")().asInstanceOf[Unit]
+  inline def guardPermission(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("guardPermission")().asInstanceOf[Unit]
 }

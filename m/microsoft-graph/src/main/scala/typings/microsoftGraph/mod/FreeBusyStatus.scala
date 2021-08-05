@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FreeBusyStatus extends StObject
 object FreeBusyStatus {
   
-  @scala.inline
-  def busy: typings.microsoftGraph.microsoftGraphStrings.busy = "busy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.busy]
+  inline def busy: typings.microsoftGraph.microsoftGraphStrings.busy = "busy".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.busy]
   
-  @scala.inline
-  def free: typings.microsoftGraph.microsoftGraphStrings.free = "free".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.free]
+  inline def free: typings.microsoftGraph.microsoftGraphStrings.free = "free".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.free]
   
-  @scala.inline
-  def oof: typings.microsoftGraph.microsoftGraphStrings.oof = "oof".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.oof]
+  inline def oof: typings.microsoftGraph.microsoftGraphStrings.oof = "oof".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.oof]
   
-  @scala.inline
-  def tentative: typings.microsoftGraph.microsoftGraphStrings.tentative = "tentative".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tentative]
+  inline def tentative: typings.microsoftGraph.microsoftGraphStrings.tentative = "tentative".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tentative]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def workingElsewhere: typings.microsoftGraph.microsoftGraphStrings.workingElsewhere = "workingElsewhere".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.workingElsewhere]
+  inline def workingElsewhere: typings.microsoftGraph.microsoftGraphStrings.workingElsewhere = "workingElsewhere".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.workingElsewhere]
 }

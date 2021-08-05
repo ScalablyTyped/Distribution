@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FocusedInputShape extends StObject
 object FocusedInputShape {
   
-  @scala.inline
-  def endDate: typings.reactDates.reactDatesStrings.endDate = "endDate".asInstanceOf[typings.reactDates.reactDatesStrings.endDate]
+  inline def endDate: typings.reactDates.reactDatesStrings.endDate = "endDate".asInstanceOf[typings.reactDates.reactDatesStrings.endDate]
   
-  @scala.inline
-  def startDate: typings.reactDates.reactDatesStrings.startDate = "startDate".asInstanceOf[typings.reactDates.reactDatesStrings.startDate]
+  inline def startDate: typings.reactDates.reactDatesStrings.startDate = "startDate".asInstanceOf[typings.reactDates.reactDatesStrings.startDate]
 }

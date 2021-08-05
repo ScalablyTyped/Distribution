@@ -13,19 +13,15 @@ trait ListKeyGroupsResult extends StObject {
 }
 object ListKeyGroupsResult {
   
-  @scala.inline
-  def apply(): ListKeyGroupsResult = {
+  inline def apply(): ListKeyGroupsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListKeyGroupsResult]
   }
   
-  @scala.inline
-  implicit class ListKeyGroupsResultMutableBuilder[Self <: ListKeyGroupsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListKeyGroupsResult](x: Self) {
     
-    @scala.inline
-    def setKeyGroupList(value: KeyGroupList): Self = StObject.set(x, "KeyGroupList", value.asInstanceOf[js.Any])
+    inline def setKeyGroupList(value: KeyGroupList): Self = StObject.set(x, "KeyGroupList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyGroupListUndefined: Self = StObject.set(x, "KeyGroupList", js.undefined)
+    inline def setKeyGroupListUndefined: Self = StObject.set(x, "KeyGroupList", js.undefined)
   }
 }

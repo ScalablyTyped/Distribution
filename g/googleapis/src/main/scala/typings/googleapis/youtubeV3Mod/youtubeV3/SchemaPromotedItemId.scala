@@ -38,37 +38,27 @@ trait SchemaPromotedItemId extends StObject {
 }
 object SchemaPromotedItemId {
   
-  @scala.inline
-  def apply(): SchemaPromotedItemId = {
+  inline def apply(): SchemaPromotedItemId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPromotedItemId]
   }
   
-  @scala.inline
-  implicit class SchemaPromotedItemIdMutableBuilder[Self <: SchemaPromotedItemId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPromotedItemId](x: Self) {
     
-    @scala.inline
-    def setRecentlyUploadedBy(value: String): Self = StObject.set(x, "recentlyUploadedBy", value.asInstanceOf[js.Any])
+    inline def setRecentlyUploadedBy(value: String): Self = StObject.set(x, "recentlyUploadedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecentlyUploadedByUndefined: Self = StObject.set(x, "recentlyUploadedBy", js.undefined)
+    inline def setRecentlyUploadedByUndefined: Self = StObject.set(x, "recentlyUploadedBy", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
     
-    @scala.inline
-    def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
+    inline def setWebsiteUrl(value: String): Self = StObject.set(x, "websiteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
+    inline def setWebsiteUrlUndefined: Self = StObject.set(x, "websiteUrl", js.undefined)
   }
 }

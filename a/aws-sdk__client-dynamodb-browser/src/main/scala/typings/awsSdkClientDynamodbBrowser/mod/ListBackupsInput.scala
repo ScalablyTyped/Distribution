@@ -9,8 +9,7 @@ trait ListBackupsInput
      with typings.awsSdkClientDynamodbBrowser.typesListBackupsInputMod.ListBackupsInput
 object ListBackupsInput {
   
-  @scala.inline
-  def apply(): ListBackupsInput = {
+  inline def apply(): ListBackupsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBackupsInput]
   }

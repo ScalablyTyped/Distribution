@@ -18,26 +18,20 @@ object anon {
   }
   object Ack {
     
-    @scala.inline
-    def apply(): Ack = {
+    inline def apply(): Ack = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ack]
     }
     
-    @scala.inline
-    implicit class AckMutableBuilder[Self <: Ack] (val x: Self) extends AnyVal {
+    extension [Self <: Ack](x: Self) {
       
-      @scala.inline
-      def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
+      inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAckUndefined: Self = StObject.set(x, "ack", js.undefined)
+      inline def setAckUndefined: Self = StObject.set(x, "ack", js.undefined)
       
-      @scala.inline
-      def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+      inline def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
+      inline def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
     }
   }
   
@@ -47,17 +41,14 @@ object anon {
   }
   object Devices {
     
-    @scala.inline
-    def apply(devices: States): Devices = {
+    inline def apply(devices: States): Devices = {
       val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
       __obj.asInstanceOf[Devices]
     }
     
-    @scala.inline
-    implicit class DevicesMutableBuilder[Self <: Devices] (val x: Self) extends AnyVal {
+    extension [Self <: Devices](x: Self) {
       
-      @scala.inline
-      def setDevices(value: States): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+      inline def setDevices(value: States): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,17 +58,14 @@ object anon {
   }
   object Intent {
     
-    @scala.inline
-    def apply(): Intent = {
+    inline def apply(): Intent = {
       val __obj = js.Dynamic.literal(intent = "action.devices.DISCONNECT")
       __obj.asInstanceOf[Intent]
     }
     
-    @scala.inline
-    implicit class IntentMutableBuilder[Self <: Intent] (val x: Self) extends AnyVal {
+    extension [Self <: Intent](x: Self) {
       
-      @scala.inline
-      def setIntent(value: actionDotdevicesDotDISCONNECT): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+      inline def setIntent(value: actionDotdevicesDotDISCONNECT): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,18 +78,15 @@ object anon {
   }
   object ProtoAnystringJsonObject {
     
-    @scala.inline
-    def apply(`@type`: String): ProtoAnystringJsonObject = {
+    inline def apply(`@type`: String): ProtoAnystringJsonObject = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("@type")(`@type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProtoAnystringJsonObject]
     }
     
-    @scala.inline
-    implicit class ProtoAnystringJsonObjectMutableBuilder[Self <: ProtoAnystringJsonObject] (val x: Self) extends AnyVal {
+    extension [Self <: ProtoAnystringJsonObject](x: Self) {
       
-      @scala.inline
-      def `set@type`(value: String): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
+      inline def `set@type`(value: String): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,17 +96,14 @@ object anon {
   }
   object States {
     
-    @scala.inline
-    def apply(states: ApiClientObjectMap[js.Any]): States = {
+    inline def apply(states: ApiClientObjectMap[js.Any]): States = {
       val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any])
       __obj.asInstanceOf[States]
     }
     
-    @scala.inline
-    implicit class StatesMutableBuilder[Self <: States] (val x: Self) extends AnyVal {
+    extension [Self <: States](x: Self) {
       
-      @scala.inline
-      def setStates(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+      inline def setStates(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,18 +113,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply[TType](`@type`: TType): Type[TType] = {
+    inline def apply[TType](`@type`: TType): Type[TType] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("@type")(`@type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type[TType]]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[?], TType] (val x: Self & Type[TType]) extends AnyVal {
+    extension [Self <: Type[?], TType](x: Self & Type[TType]) {
       
-      @scala.inline
-      def `set@type`(value: TType): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
+      inline def `set@type`(value: TType): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,18 +131,15 @@ object anon {
   }
   object TypeChallengeType {
     
-    @scala.inline
-    def apply(`type`: challengeType): TypeChallengeType = {
+    inline def apply(`type`: challengeType): TypeChallengeType = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeChallengeType]
     }
     
-    @scala.inline
-    implicit class TypeChallengeTypeMutableBuilder[Self <: TypeChallengeType] (val x: Self) extends AnyVal {
+    extension [Self <: TypeChallengeType](x: Self) {
       
-      @scala.inline
-      def setType(value: challengeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: challengeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

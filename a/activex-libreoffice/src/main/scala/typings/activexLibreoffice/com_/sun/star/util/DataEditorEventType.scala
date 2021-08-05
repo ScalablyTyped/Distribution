@@ -15,10 +15,8 @@ trait DataEditorEventType extends StObject
 object DataEditorEventType {
   
   /** specifies that the data editing was canceled by the user (data not stored). */
-  @scala.inline
-  def CANCELED: `1` = 1.asInstanceOf[`1`]
+  inline def CANCELED: `1` = 1.asInstanceOf[`1`]
   
   /** specifies that the data editing is done (data stored). */
-  @scala.inline
-  def DONE: `0` = 0.asInstanceOf[`0`]
+  inline def DONE: `0` = 0.asInstanceOf[`0`]
 }

@@ -23,31 +23,23 @@ trait ListTagOptionsInput extends StObject {
 }
 object ListTagOptionsInput {
   
-  @scala.inline
-  def apply(): ListTagOptionsInput = {
+  inline def apply(): ListTagOptionsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTagOptionsInput]
   }
   
-  @scala.inline
-  implicit class ListTagOptionsInputMutableBuilder[Self <: ListTagOptionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagOptionsInput](x: Self) {
     
-    @scala.inline
-    def setFilters(value: ListTagOptionsFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ListTagOptionsFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
   }
 }

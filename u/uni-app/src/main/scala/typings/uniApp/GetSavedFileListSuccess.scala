@@ -18,25 +18,19 @@ trait GetSavedFileListSuccess extends StObject {
 }
 object GetSavedFileListSuccess {
   
-  @scala.inline
-  def apply(): GetSavedFileListSuccess = {
+  inline def apply(): GetSavedFileListSuccess = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSavedFileListSuccess]
   }
   
-  @scala.inline
-  implicit class GetSavedFileListSuccessMutableBuilder[Self <: GetSavedFileListSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavedFileListSuccess](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: Double): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: Double): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
     
-    @scala.inline
-    def setFileList(value: String): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
+    inline def setFileList(value: String): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileListUndefined: Self = StObject.set(x, "fileList", js.undefined)
+    inline def setFileListUndefined: Self = StObject.set(x, "fileList", js.undefined)
   }
 }

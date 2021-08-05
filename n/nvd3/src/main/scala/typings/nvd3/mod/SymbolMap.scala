@@ -10,16 +10,13 @@ trait SymbolMap extends StObject {
 }
 object SymbolMap {
   
-  @scala.inline
-  def apply(set: (String, js.Function1[/* size */ js.Any, Unit]) => Unit): SymbolMap = {
+  inline def apply(set: (String, js.Function1[/* size */ js.Any, Unit]) => Unit): SymbolMap = {
     val __obj = js.Dynamic.literal(set = js.Any.fromFunction2(set))
     __obj.asInstanceOf[SymbolMap]
   }
   
-  @scala.inline
-  implicit class SymbolMapMutableBuilder[Self <: SymbolMap] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolMap](x: Self) {
     
-    @scala.inline
-    def setSet(value: (String, js.Function1[/* size */ js.Any, Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, js.Function1[/* size */ js.Any, Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

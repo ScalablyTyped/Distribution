@@ -17,19 +17,15 @@ trait SchemaStatefulPolicyPreservedStateDiskDevice extends StObject {
 }
 object SchemaStatefulPolicyPreservedStateDiskDevice {
   
-  @scala.inline
-  def apply(): SchemaStatefulPolicyPreservedStateDiskDevice = {
+  inline def apply(): SchemaStatefulPolicyPreservedStateDiskDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStatefulPolicyPreservedStateDiskDevice]
   }
   
-  @scala.inline
-  implicit class SchemaStatefulPolicyPreservedStateDiskDeviceMutableBuilder[Self <: SchemaStatefulPolicyPreservedStateDiskDevice] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStatefulPolicyPreservedStateDiskDevice](x: Self) {
     
-    @scala.inline
-    def setAutoDelete(value: String): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
+    inline def setAutoDelete(value: String): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
+    inline def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
   }
 }

@@ -17,25 +17,19 @@ trait PublicKeyInfoPropOfCertPEMResult extends StObject {
 }
 object PublicKeyInfoPropOfCertPEMResult {
   
-  @scala.inline
-  def apply(algoid: String, keyhex: String): PublicKeyInfoPropOfCertPEMResult = {
+  inline def apply(algoid: String, keyhex: String): PublicKeyInfoPropOfCertPEMResult = {
     val __obj = js.Dynamic.literal(algoid = algoid.asInstanceOf[js.Any], keyhex = keyhex.asInstanceOf[js.Any], algparam = null)
     __obj.asInstanceOf[PublicKeyInfoPropOfCertPEMResult]
   }
   
-  @scala.inline
-  implicit class PublicKeyInfoPropOfCertPEMResultMutableBuilder[Self <: PublicKeyInfoPropOfCertPEMResult] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKeyInfoPropOfCertPEMResult](x: Self) {
     
-    @scala.inline
-    def setAlgoid(value: String): Self = StObject.set(x, "algoid", value.asInstanceOf[js.Any])
+    inline def setAlgoid(value: String): Self = StObject.set(x, "algoid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgparam(value: String): Self = StObject.set(x, "algparam", value.asInstanceOf[js.Any])
+    inline def setAlgparam(value: String): Self = StObject.set(x, "algparam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgparamNull: Self = StObject.set(x, "algparam", null)
+    inline def setAlgparamNull: Self = StObject.set(x, "algparam", null)
     
-    @scala.inline
-    def setKeyhex(value: String): Self = StObject.set(x, "keyhex", value.asInstanceOf[js.Any])
+    inline def setKeyhex(value: String): Self = StObject.set(x, "keyhex", value.asInstanceOf[js.Any])
   }
 }

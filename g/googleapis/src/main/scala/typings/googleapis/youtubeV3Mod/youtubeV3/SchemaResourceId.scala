@@ -38,37 +38,27 @@ trait SchemaResourceId extends StObject {
 }
 object SchemaResourceId {
   
-  @scala.inline
-  def apply(): SchemaResourceId = {
+  inline def apply(): SchemaResourceId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourceId]
   }
   
-  @scala.inline
-  implicit class SchemaResourceIdMutableBuilder[Self <: SchemaResourceId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourceId](x: Self) {
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
+    inline def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistIdUndefined: Self = StObject.set(x, "playlistId", js.undefined)
+    inline def setPlaylistIdUndefined: Self = StObject.set(x, "playlistId", js.undefined)
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
+    inline def setVideoIdUndefined: Self = StObject.set(x, "videoId", js.undefined)
   }
 }

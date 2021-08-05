@@ -12,19 +12,15 @@ trait NameGlob extends StObject {
 }
 object NameGlob {
   
-  @scala.inline
-  def apply(): NameGlob = {
+  inline def apply(): NameGlob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NameGlob]
   }
   
-  @scala.inline
-  implicit class NameGlobMutableBuilder[Self <: NameGlob] (val x: Self) extends AnyVal {
+  extension [Self <: NameGlob](x: Self) {
     
-    @scala.inline
-    def setNameGlob(value: Glob): Self = StObject.set(x, "nameGlob", value.asInstanceOf[js.Any])
+    inline def setNameGlob(value: Glob): Self = StObject.set(x, "nameGlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameGlobUndefined: Self = StObject.set(x, "nameGlob", js.undefined)
+    inline def setNameGlobUndefined: Self = StObject.set(x, "nameGlob", js.undefined)
   }
 }

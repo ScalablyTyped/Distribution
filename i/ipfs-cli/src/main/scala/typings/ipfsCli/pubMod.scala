@@ -29,6 +29,5 @@ object pubMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsTopicDataTimeout: CtxData): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsTopicDataTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsTopicDataTimeout: CtxData): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsTopicDataTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

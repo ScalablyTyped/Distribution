@@ -31,22 +31,16 @@ object libStartMod {
   @js.native
   val SUPPORTED_FRAMEWORKS: js.Array[SupportedFramework] = js.native
   
-  @scala.inline
-  def getAdvertisement(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdvertisement")().asInstanceOf[String]
+  inline def getAdvertisement(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdvertisement")().asInstanceOf[String]
   
-  @scala.inline
-  def getStarterList(config: IConfig): js.Promise[StarterList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStarterList")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StarterList]]
-  @scala.inline
-  def getStarterList(config: IConfig, tag: String): js.Promise[StarterList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStarterList")(config.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StarterList]]
+  inline def getStarterList(config: IConfig): js.Promise[StarterList] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStarterList")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StarterList]]
+  inline def getStarterList(config: IConfig, tag: String): js.Promise[StarterList] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStarterList")(config.asInstanceOf[js.Any], tag.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StarterList]]
   
-  @scala.inline
-  def getStarterProjectTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStarterProjectTypes")().asInstanceOf[js.Array[String]]
+  inline def getStarterProjectTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStarterProjectTypes")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def readStarterManifest(p: String): js.Promise[StarterManifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("readStarterManifest")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StarterManifest]]
+  inline def readStarterManifest(p: String): js.Promise[StarterManifest] = ^.asInstanceOf[js.Dynamic].applyDynamic("readStarterManifest")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StarterManifest]]
   
-  @scala.inline
-  def verifyOptions(options: CommandLineOptions, hasLog: Log): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyOptions")(options.asInstanceOf[js.Any], hasLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def verifyOptions(options: CommandLineOptions, hasLog: Log): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyOptions")(options.asInstanceOf[js.Any], hasLog.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ionic.libStartMod.NewAppSchema
@@ -55,14 +49,12 @@ object libStartMod {
   trait AppSchema extends StObject
   object AppSchema {
     
-    @scala.inline
-    def ClonedAppSchema(projectDir: String, projectId: String, url: String): typings.ionic.libStartMod.ClonedAppSchema = {
+    inline def ClonedAppSchema(projectDir: String, projectId: String, url: String): typings.ionic.libStartMod.ClonedAppSchema = {
       val __obj = js.Dynamic.literal(cloned = true, projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionic.libStartMod.ClonedAppSchema]
     }
     
-    @scala.inline
-    def NewAppSchema(name: String, projectDir: String, projectId: String, template: String, `type`: ProjectType): typings.ionic.libStartMod.NewAppSchema = {
+    inline def NewAppSchema(name: String, projectDir: String, projectId: String, template: String, `type`: ProjectType): typings.ionic.libStartMod.NewAppSchema = {
       val __obj = js.Dynamic.literal(cloned = false, name = name.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ionic.libStartMod.NewAppSchema]
@@ -81,32 +73,24 @@ object libStartMod {
   }
   object BaseAppSchema {
     
-    @scala.inline
-    def apply(projectDir: String, projectId: String): BaseAppSchema = {
+    inline def apply(projectDir: String, projectId: String): BaseAppSchema = {
       val __obj = js.Dynamic.literal(projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseAppSchema]
     }
     
-    @scala.inline
-    implicit class BaseAppSchemaMutableBuilder[Self <: BaseAppSchema] (val x: Self) extends AnyVal {
+    extension [Self <: BaseAppSchema](x: Self) {
       
-      @scala.inline
-      def setAppflowId(value: String): Self = StObject.set(x, "appflowId", value.asInstanceOf[js.Any])
+      inline def setAppflowId(value: String): Self = StObject.set(x, "appflowId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppflowIdUndefined: Self = StObject.set(x, "appflowId", js.undefined)
+      inline def setAppflowIdUndefined: Self = StObject.set(x, "appflowId", js.undefined)
       
-      @scala.inline
-      def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
+      inline def setPackageId(value: String): Self = StObject.set(x, "packageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
+      inline def setPackageIdUndefined: Self = StObject.set(x, "packageId", js.undefined)
       
-      @scala.inline
-      def setProjectDir(value: String): Self = StObject.set(x, "projectDir", value.asInstanceOf[js.Any])
+      inline def setProjectDir(value: String): Self = StObject.set(x, "projectDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,20 +105,16 @@ object libStartMod {
   }
   object ClonedAppSchema {
     
-    @scala.inline
-    def apply(projectDir: String, projectId: String, url: String): ClonedAppSchema = {
+    inline def apply(projectDir: String, projectId: String, url: String): ClonedAppSchema = {
       val __obj = js.Dynamic.literal(cloned = true, projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClonedAppSchema]
     }
     
-    @scala.inline
-    implicit class ClonedAppSchemaMutableBuilder[Self <: ClonedAppSchema] (val x: Self) extends AnyVal {
+    extension [Self <: ClonedAppSchema](x: Self) {
       
-      @scala.inline
-      def setCloned(value: `true`): Self = StObject.set(x, "cloned", value.asInstanceOf[js.Any])
+      inline def setCloned(value: `true`): Self = StObject.set(x, "cloned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,27 +133,21 @@ object libStartMod {
   }
   object NewAppSchema {
     
-    @scala.inline
-    def apply(name: String, projectDir: String, projectId: String, template: String, `type`: ProjectType): NewAppSchema = {
+    inline def apply(name: String, projectDir: String, projectId: String, template: String, `type`: ProjectType): NewAppSchema = {
       val __obj = js.Dynamic.literal(cloned = false, name = name.asInstanceOf[js.Any], projectDir = projectDir.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewAppSchema]
     }
     
-    @scala.inline
-    implicit class NewAppSchemaMutableBuilder[Self <: NewAppSchema] (val x: Self) extends AnyVal {
+    extension [Self <: NewAppSchema](x: Self) {
       
-      @scala.inline
-      def setCloned(value: `false`): Self = StObject.set(x, "cloned", value.asInstanceOf[js.Any])
+      inline def setCloned(value: `false`): Self = StObject.set(x, "cloned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ProjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ProjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -187,24 +161,19 @@ object libStartMod {
   }
   object SupportedFramework {
     
-    @scala.inline
-    def apply(description: String, name: String, `type`: ProjectType): SupportedFramework = {
+    inline def apply(description: String, name: String, `type`: ProjectType): SupportedFramework = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SupportedFramework]
     }
     
-    @scala.inline
-    implicit class SupportedFrameworkMutableBuilder[Self <: SupportedFramework] (val x: Self) extends AnyVal {
+    extension [Self <: SupportedFramework](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ProjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ProjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

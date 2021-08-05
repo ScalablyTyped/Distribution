@@ -18,8 +18,7 @@ trait GridState extends StObject {
 }
 object GridState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isScrolling: Boolean,
     scrollDirectionHorizontal: ScrollDirection,
     scrollDirectionVertical: ScrollDirection,
@@ -30,22 +29,16 @@ object GridState {
     __obj.asInstanceOf[GridState]
   }
   
-  @scala.inline
-  implicit class GridStateMutableBuilder[Self <: GridState] (val x: Self) extends AnyVal {
+  extension [Self <: GridState](x: Self) {
     
-    @scala.inline
-    def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+    inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollDirectionHorizontal(value: ScrollDirection): Self = StObject.set(x, "scrollDirectionHorizontal", value.asInstanceOf[js.Any])
+    inline def setScrollDirectionHorizontal(value: ScrollDirection): Self = StObject.set(x, "scrollDirectionHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollDirectionVertical(value: ScrollDirection): Self = StObject.set(x, "scrollDirectionVertical", value.asInstanceOf[js.Any])
+    inline def setScrollDirectionVertical(value: ScrollDirection): Self = StObject.set(x, "scrollDirectionVertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
   }
 }

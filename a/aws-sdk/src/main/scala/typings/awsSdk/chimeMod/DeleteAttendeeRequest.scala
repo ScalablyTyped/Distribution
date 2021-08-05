@@ -18,19 +18,15 @@ trait DeleteAttendeeRequest extends StObject {
 }
 object DeleteAttendeeRequest {
   
-  @scala.inline
-  def apply(AttendeeId: GuidString, MeetingId: GuidString): DeleteAttendeeRequest = {
+  inline def apply(AttendeeId: GuidString, MeetingId: GuidString): DeleteAttendeeRequest = {
     val __obj = js.Dynamic.literal(AttendeeId = AttendeeId.asInstanceOf[js.Any], MeetingId = MeetingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAttendeeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAttendeeRequestMutableBuilder[Self <: DeleteAttendeeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAttendeeRequest](x: Self) {
     
-    @scala.inline
-    def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
+    inline def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
+    inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
   }
 }

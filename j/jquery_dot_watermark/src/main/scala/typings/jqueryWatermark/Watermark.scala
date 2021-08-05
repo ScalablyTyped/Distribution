@@ -18,8 +18,7 @@ trait Watermark extends StObject {
 }
 object Watermark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hide: String => Unit,
     hideAll: () => Unit,
     options: WatermarkOptions,
@@ -30,22 +29,16 @@ object Watermark {
     __obj.asInstanceOf[Watermark]
   }
   
-  @scala.inline
-  implicit class WatermarkMutableBuilder[Self <: Watermark] (val x: Self) extends AnyVal {
+  extension [Self <: Watermark](x: Self) {
     
-    @scala.inline
-    def setHide(value: String => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+    inline def setHide(value: String => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
+    inline def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptions(value: WatermarkOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: WatermarkOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: String => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: String => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowAll(value: () => Unit): Self = StObject.set(x, "showAll", js.Any.fromFunction0(value))
+    inline def setShowAll(value: () => Unit): Self = StObject.set(x, "showAll", js.Any.fromFunction0(value))
   }
 }

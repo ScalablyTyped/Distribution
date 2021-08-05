@@ -13,22 +13,17 @@ trait GetSignalingChannelEndpointOutput extends StObject {
 }
 object GetSignalingChannelEndpointOutput {
   
-  @scala.inline
-  def apply(): GetSignalingChannelEndpointOutput = {
+  inline def apply(): GetSignalingChannelEndpointOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSignalingChannelEndpointOutput]
   }
   
-  @scala.inline
-  implicit class GetSignalingChannelEndpointOutputMutableBuilder[Self <: GetSignalingChannelEndpointOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetSignalingChannelEndpointOutput](x: Self) {
     
-    @scala.inline
-    def setResourceEndpointList(value: ResourceEndpointList): Self = StObject.set(x, "ResourceEndpointList", value.asInstanceOf[js.Any])
+    inline def setResourceEndpointList(value: ResourceEndpointList): Self = StObject.set(x, "ResourceEndpointList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceEndpointListUndefined: Self = StObject.set(x, "ResourceEndpointList", js.undefined)
+    inline def setResourceEndpointListUndefined: Self = StObject.set(x, "ResourceEndpointList", js.undefined)
     
-    @scala.inline
-    def setResourceEndpointListVarargs(value: ResourceEndpointListItem*): Self = StObject.set(x, "ResourceEndpointList", js.Array(value :_*))
+    inline def setResourceEndpointListVarargs(value: ResourceEndpointListItem*): Self = StObject.set(x, "ResourceEndpointList", js.Array(value :_*))
   }
 }

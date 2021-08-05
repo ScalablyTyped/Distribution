@@ -51,8 +51,7 @@ trait INumberRounder extends StObject {
 }
 object INumberRounder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     roundDouble: Double => Double,
     roundInt32: Double => Double,
     roundInt64: Double => Double,
@@ -64,25 +63,18 @@ object INumberRounder {
     __obj.asInstanceOf[INumberRounder]
   }
   
-  @scala.inline
-  implicit class INumberRounderMutableBuilder[Self <: INumberRounder] (val x: Self) extends AnyVal {
+  extension [Self <: INumberRounder](x: Self) {
     
-    @scala.inline
-    def setRoundDouble(value: Double => Double): Self = StObject.set(x, "roundDouble", js.Any.fromFunction1(value))
+    inline def setRoundDouble(value: Double => Double): Self = StObject.set(x, "roundDouble", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoundInt32(value: Double => Double): Self = StObject.set(x, "roundInt32", js.Any.fromFunction1(value))
+    inline def setRoundInt32(value: Double => Double): Self = StObject.set(x, "roundInt32", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoundInt64(value: Double => Double): Self = StObject.set(x, "roundInt64", js.Any.fromFunction1(value))
+    inline def setRoundInt64(value: Double => Double): Self = StObject.set(x, "roundInt64", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoundSingle(value: Double => Double): Self = StObject.set(x, "roundSingle", js.Any.fromFunction1(value))
+    inline def setRoundSingle(value: Double => Double): Self = StObject.set(x, "roundSingle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoundUInt32(value: Double => Double): Self = StObject.set(x, "roundUInt32", js.Any.fromFunction1(value))
+    inline def setRoundUInt32(value: Double => Double): Self = StObject.set(x, "roundUInt32", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRoundUInt64(value: Double => Double): Self = StObject.set(x, "roundUInt64", js.Any.fromFunction1(value))
+    inline def setRoundUInt64(value: Double => Double): Self = StObject.set(x, "roundUInt64", js.Any.fromFunction1(value))
   }
 }

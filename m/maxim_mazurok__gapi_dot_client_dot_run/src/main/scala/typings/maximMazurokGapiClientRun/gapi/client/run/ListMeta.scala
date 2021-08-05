@@ -25,31 +25,23 @@ trait ListMeta extends StObject {
 }
 object ListMeta {
   
-  @scala.inline
-  def apply(): ListMeta = {
+  inline def apply(): ListMeta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMeta]
   }
   
-  @scala.inline
-  implicit class ListMetaMutableBuilder[Self <: ListMeta] (val x: Self) extends AnyVal {
+  extension [Self <: ListMeta](x: Self) {
     
-    @scala.inline
-    def setContinue(value: String): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
+    inline def setContinue(value: String): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
+    inline def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
     
-    @scala.inline
-    def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+    inline def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
+    inline def setResourceVersionUndefined: Self = StObject.set(x, "resourceVersion", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait MxfSettings extends StObject {
 }
 object MxfSettings {
   
-  @scala.inline
-  def apply(): MxfSettings = {
+  inline def apply(): MxfSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MxfSettings]
   }
   
-  @scala.inline
-  implicit class MxfSettingsMutableBuilder[Self <: MxfSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MxfSettings](x: Self) {
     
-    @scala.inline
-    def setAfdSignaling(value: MxfAfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
+    inline def setAfdSignaling(value: MxfAfdSignaling): Self = StObject.set(x, "AfdSignaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfdSignalingUndefined: Self = StObject.set(x, "AfdSignaling", js.undefined)
+    inline def setAfdSignalingUndefined: Self = StObject.set(x, "AfdSignaling", js.undefined)
     
-    @scala.inline
-    def setProfile(value: MxfProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: MxfProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
   }
 }

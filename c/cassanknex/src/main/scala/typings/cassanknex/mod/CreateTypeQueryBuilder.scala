@@ -24,8 +24,7 @@ trait CreateTypeQueryBuilder[T]
      with FieldValueQueryBuilder[T]
 object CreateTypeQueryBuilder {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     ascii: js.Any => TypeMatchedValue[T, js.Any, String, CreateTypeQueryBuilder[T]],
     bigint: js.Any => TypeMatchedValue[T, js.Any, Long, CreateTypeQueryBuilder[T]],
     bindings: () => js.Array[js.Any],

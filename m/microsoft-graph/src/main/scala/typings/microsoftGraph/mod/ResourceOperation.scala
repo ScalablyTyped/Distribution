@@ -25,40 +25,29 @@ trait ResourceOperation
 }
 object ResourceOperation {
   
-  @scala.inline
-  def apply(): ResourceOperation = {
+  inline def apply(): ResourceOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceOperation]
   }
   
-  @scala.inline
-  implicit class ResourceOperationMutableBuilder[Self <: ResourceOperation] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceOperation](x: Self) {
     
-    @scala.inline
-    def setActionName(value: NullableOption[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: NullableOption[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNameNull: Self = StObject.set(x, "actionName", null)
+    inline def setActionNameNull: Self = StObject.set(x, "actionName", null)
     
-    @scala.inline
-    def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
+    inline def setActionNameUndefined: Self = StObject.set(x, "actionName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: NullableOption[String]): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: NullableOption[String]): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameNull: Self = StObject.set(x, "resourceName", null)
+    inline def setResourceNameNull: Self = StObject.set(x, "resourceName", null)
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
   }
 }

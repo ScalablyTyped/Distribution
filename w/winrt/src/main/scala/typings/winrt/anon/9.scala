@@ -13,22 +13,17 @@ trait `9` extends StObject {
 }
 object `9` {
   
-  @scala.inline
-  def apply(items: js.Array[SortEntry], returnValue: Double): `9` = {
+  inline def apply(items: js.Array[SortEntry], returnValue: Double): `9` = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[`9`]
   }
   
-  @scala.inline
-  implicit class `9MutableBuilder`[Self <: `9`] (val x: Self) extends AnyVal {
+  extension [Self <: `9`](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SortEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SortEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: SortEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SortEntry*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

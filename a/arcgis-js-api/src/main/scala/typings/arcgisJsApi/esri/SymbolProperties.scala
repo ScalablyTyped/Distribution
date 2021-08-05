@@ -15,22 +15,17 @@ trait SymbolProperties extends StObject {
 }
 object SymbolProperties {
   
-  @scala.inline
-  def apply(): SymbolProperties = {
+  inline def apply(): SymbolProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SymbolProperties]
   }
   
-  @scala.inline
-  implicit class SymbolPropertiesMutableBuilder[Self <: SymbolProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolProperties](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
   }
 }

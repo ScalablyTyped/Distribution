@@ -23,34 +23,25 @@ trait UpdateTarget extends StObject {
 }
 object UpdateTarget {
   
-  @scala.inline
-  def apply(): UpdateTarget = {
+  inline def apply(): UpdateTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTarget]
   }
   
-  @scala.inline
-  implicit class UpdateTargetMutableBuilder[Self <: UpdateTarget] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTarget](x: Self) {
     
-    @scala.inline
-    def setDatabaseVersion(value: String): Self = StObject.set(x, "DatabaseVersion", value.asInstanceOf[js.Any])
+    inline def setDatabaseVersion(value: String): Self = StObject.set(x, "DatabaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseVersionUndefined: Self = StObject.set(x, "DatabaseVersion", js.undefined)
+    inline def setDatabaseVersionUndefined: Self = StObject.set(x, "DatabaseVersion", js.undefined)
     
-    @scala.inline
-    def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
+    inline def setMaintenanceTrackName(value: String): Self = StObject.set(x, "MaintenanceTrackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
+    inline def setMaintenanceTrackNameUndefined: Self = StObject.set(x, "MaintenanceTrackName", js.undefined)
     
-    @scala.inline
-    def setSupportedOperations(value: SupportedOperationList): Self = StObject.set(x, "SupportedOperations", value.asInstanceOf[js.Any])
+    inline def setSupportedOperations(value: SupportedOperationList): Self = StObject.set(x, "SupportedOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedOperationsUndefined: Self = StObject.set(x, "SupportedOperations", js.undefined)
+    inline def setSupportedOperationsUndefined: Self = StObject.set(x, "SupportedOperations", js.undefined)
     
-    @scala.inline
-    def setSupportedOperationsVarargs(value: SupportedOperation*): Self = StObject.set(x, "SupportedOperations", js.Array(value :_*))
+    inline def setSupportedOperationsVarargs(value: SupportedOperation*): Self = StObject.set(x, "SupportedOperations", js.Array(value :_*))
   }
 }

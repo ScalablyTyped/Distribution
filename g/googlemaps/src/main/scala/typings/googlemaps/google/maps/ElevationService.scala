@@ -18,8 +18,7 @@ trait ElevationService extends StObject {
 }
 object ElevationService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getElevationAlongPath: (PathElevationRequest, js.Function2[/* results */ js.Array[ElevationResult], /* status */ ElevationStatus, Unit]) => Unit,
     getElevationForLocations: (LocationElevationRequest, js.Function2[/* results */ js.Array[ElevationResult], /* status */ ElevationStatus, Unit]) => Unit
   ): ElevationService = {
@@ -27,16 +26,13 @@ object ElevationService {
     __obj.asInstanceOf[ElevationService]
   }
   
-  @scala.inline
-  implicit class ElevationServiceMutableBuilder[Self <: ElevationService] (val x: Self) extends AnyVal {
+  extension [Self <: ElevationService](x: Self) {
     
-    @scala.inline
-    def setGetElevationAlongPath(
+    inline def setGetElevationAlongPath(
       value: (PathElevationRequest, js.Function2[/* results */ js.Array[ElevationResult], /* status */ ElevationStatus, Unit]) => Unit
     ): Self = StObject.set(x, "getElevationAlongPath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetElevationForLocations(
+    inline def setGetElevationForLocations(
       value: (LocationElevationRequest, js.Function2[/* results */ js.Array[ElevationResult], /* status */ ElevationStatus, Unit]) => Unit
     ): Self = StObject.set(x, "getElevationForLocations", js.Any.fromFunction2(value))
   }

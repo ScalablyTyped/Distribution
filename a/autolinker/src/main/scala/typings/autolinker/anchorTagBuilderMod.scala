@@ -33,7 +33,7 @@ object anchorTagBuilderMod {
       * @cfg {String} className
       * @inheritdoc Autolinker#className
       */
-    val className: js.Any = js.native
+    /* private */ val className: js.Any = js.native
     
     /**
       * Creates the Object (map) of the HTML attributes for the anchor (&lt;a&gt;)
@@ -79,13 +79,13 @@ object anchorTagBuilderMod {
       *   displayed).
       * @return {String} The truncated anchor text.
       */
-    var doTruncate: js.Any = js.native
+    /* private */ var doTruncate: js.Any = js.native
     
     /**
       * @cfg {Boolean} newWindow
       * @inheritdoc Autolinker#newWindow
       */
-    val newWindow: js.Any = js.native
+    /* private */ val newWindow: js.Any = js.native
     
     /**
       * Processes the `anchorText` by truncating the text according to the
@@ -96,13 +96,13 @@ object anchorTagBuilderMod {
       *   displayed).
       * @return {String} The processed `anchorText`.
       */
-    var processAnchorText: js.Any = js.native
+    /* private */ var processAnchorText: js.Any = js.native
     
     /**
       * @cfg {Object} truncate
       * @inheritdoc Autolinker#truncate
       */
-    val truncate: js.Any = js.native
+    /* private */ val truncate: js.Any = js.native
   }
   
   trait AnchorTagBuilderCfg extends StObject {
@@ -115,32 +115,24 @@ object anchorTagBuilderMod {
   }
   object AnchorTagBuilderCfg {
     
-    @scala.inline
-    def apply(): AnchorTagBuilderCfg = {
+    inline def apply(): AnchorTagBuilderCfg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AnchorTagBuilderCfg]
     }
     
-    @scala.inline
-    implicit class AnchorTagBuilderCfgMutableBuilder[Self <: AnchorTagBuilderCfg] (val x: Self) extends AnyVal {
+    extension [Self <: AnchorTagBuilderCfg](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setNewWindow(value: Boolean): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
+      inline def setNewWindow(value: Boolean): Self = StObject.set(x, "newWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewWindowUndefined: Self = StObject.set(x, "newWindow", js.undefined)
+      inline def setNewWindowUndefined: Self = StObject.set(x, "newWindow", js.undefined)
       
-      @scala.inline
-      def setTruncate(value: TruncateConfigObj): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: TruncateConfigObj): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
     }
   }
 }

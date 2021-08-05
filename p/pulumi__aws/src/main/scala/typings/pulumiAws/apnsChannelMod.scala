@@ -88,21 +88,16 @@ object apnsChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ApnsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ApnsChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ApnsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApnsChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApnsChannelState): ApnsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ApnsChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ApnsChannelState, opts: CustomResourceOptions): ApnsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApnsChannel]
+    inline def get(name: String, id: Input[ID]): ApnsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ApnsChannel]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ApnsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApnsChannel]
+    inline def get(name: String, id: Input[ID], state: ApnsChannelState): ApnsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ApnsChannel]
+    inline def get(name: String, id: Input[ID], state: ApnsChannelState, opts: CustomResourceOptions): ApnsChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApnsChannel]
     
     /**
       * Returns true if the given object is an instance of ApnsChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsChannel.ApnsChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/apnsChannel.ApnsChannel */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/pinpoint/apnsChannel.ApnsChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/pinpoint/apnsChannel.ApnsChannel */ Boolean]
   }
   
   trait ApnsChannelArgs extends StObject {
@@ -157,65 +152,46 @@ object apnsChannelMod {
   }
   object ApnsChannelArgs {
     
-    @scala.inline
-    def apply(applicationId: Input[String]): ApnsChannelArgs = {
+    inline def apply(applicationId: Input[String]): ApnsChannelArgs = {
       val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApnsChannelArgs]
     }
     
-    @scala.inline
-    implicit class ApnsChannelArgsMutableBuilder[Self <: ApnsChannelArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ApnsChannelArgs](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+      inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
       
-      @scala.inline
-      def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+      inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
       
-      @scala.inline
-      def setDefaultAuthenticationMethod(value: Input[String]): Self = StObject.set(x, "defaultAuthenticationMethod", value.asInstanceOf[js.Any])
+      inline def setDefaultAuthenticationMethod(value: Input[String]): Self = StObject.set(x, "defaultAuthenticationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultAuthenticationMethodUndefined: Self = StObject.set(x, "defaultAuthenticationMethod", js.undefined)
+      inline def setDefaultAuthenticationMethodUndefined: Self = StObject.set(x, "defaultAuthenticationMethod", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+      inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      @scala.inline
-      def setTeamId(value: Input[String]): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: Input[String]): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
+      inline def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
       
-      @scala.inline
-      def setTokenKey(value: Input[String]): Self = StObject.set(x, "tokenKey", value.asInstanceOf[js.Any])
+      inline def setTokenKey(value: Input[String]): Self = StObject.set(x, "tokenKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenKeyId(value: Input[String]): Self = StObject.set(x, "tokenKeyId", value.asInstanceOf[js.Any])
+      inline def setTokenKeyId(value: Input[String]): Self = StObject.set(x, "tokenKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenKeyIdUndefined: Self = StObject.set(x, "tokenKeyId", js.undefined)
+      inline def setTokenKeyIdUndefined: Self = StObject.set(x, "tokenKeyId", js.undefined)
       
-      @scala.inline
-      def setTokenKeyUndefined: Self = StObject.set(x, "tokenKey", js.undefined)
+      inline def setTokenKeyUndefined: Self = StObject.set(x, "tokenKey", js.undefined)
     }
   }
   
@@ -271,68 +247,48 @@ object apnsChannelMod {
   }
   object ApnsChannelState {
     
-    @scala.inline
-    def apply(): ApnsChannelState = {
+    inline def apply(): ApnsChannelState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApnsChannelState]
     }
     
-    @scala.inline
-    implicit class ApnsChannelStateMutableBuilder[Self <: ApnsChannelState] (val x: Self) extends AnyVal {
+    extension [Self <: ApnsChannelState](x: Self) {
       
-      @scala.inline
-      def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
       
-      @scala.inline
-      def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
+      inline def setBundleId(value: Input[String]): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
+      inline def setBundleIdUndefined: Self = StObject.set(x, "bundleId", js.undefined)
       
-      @scala.inline
-      def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: Input[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+      inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
       
-      @scala.inline
-      def setDefaultAuthenticationMethod(value: Input[String]): Self = StObject.set(x, "defaultAuthenticationMethod", value.asInstanceOf[js.Any])
+      inline def setDefaultAuthenticationMethod(value: Input[String]): Self = StObject.set(x, "defaultAuthenticationMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultAuthenticationMethodUndefined: Self = StObject.set(x, "defaultAuthenticationMethod", js.undefined)
+      inline def setDefaultAuthenticationMethodUndefined: Self = StObject.set(x, "defaultAuthenticationMethod", js.undefined)
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: Input[String]): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
+      inline def setPrivateKeyUndefined: Self = StObject.set(x, "privateKey", js.undefined)
       
-      @scala.inline
-      def setTeamId(value: Input[String]): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: Input[String]): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
+      inline def setTeamIdUndefined: Self = StObject.set(x, "teamId", js.undefined)
       
-      @scala.inline
-      def setTokenKey(value: Input[String]): Self = StObject.set(x, "tokenKey", value.asInstanceOf[js.Any])
+      inline def setTokenKey(value: Input[String]): Self = StObject.set(x, "tokenKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenKeyId(value: Input[String]): Self = StObject.set(x, "tokenKeyId", value.asInstanceOf[js.Any])
+      inline def setTokenKeyId(value: Input[String]): Self = StObject.set(x, "tokenKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenKeyIdUndefined: Self = StObject.set(x, "tokenKeyId", js.undefined)
+      inline def setTokenKeyIdUndefined: Self = StObject.set(x, "tokenKeyId", js.undefined)
       
-      @scala.inline
-      def setTokenKeyUndefined: Self = StObject.set(x, "tokenKey", js.undefined)
+      inline def setTokenKeyUndefined: Self = StObject.set(x, "tokenKey", js.undefined)
     }
   }
 }

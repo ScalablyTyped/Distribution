@@ -15,25 +15,19 @@ trait AppOptions extends StObject {
 }
 object AppOptions {
   
-  @scala.inline
-  def apply(): AppOptions = {
+  inline def apply(): AppOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppOptions]
   }
   
-  @scala.inline
-  implicit class AppOptionsMutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setMode(value: `1` | `2` | `3`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: `1` | `2` | `3`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

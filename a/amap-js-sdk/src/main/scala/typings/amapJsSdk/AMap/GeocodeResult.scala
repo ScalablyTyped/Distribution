@@ -14,25 +14,19 @@ trait GeocodeResult extends StObject {
 }
 object GeocodeResult {
   
-  @scala.inline
-  def apply(geocodes: js.Array[LngLat], info: String, resultNum: Double): GeocodeResult = {
+  inline def apply(geocodes: js.Array[LngLat], info: String, resultNum: Double): GeocodeResult = {
     val __obj = js.Dynamic.literal(geocodes = geocodes.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], resultNum = resultNum.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeocodeResult]
   }
   
-  @scala.inline
-  implicit class GeocodeResultMutableBuilder[Self <: GeocodeResult] (val x: Self) extends AnyVal {
+  extension [Self <: GeocodeResult](x: Self) {
     
-    @scala.inline
-    def setGeocodes(value: js.Array[LngLat]): Self = StObject.set(x, "geocodes", value.asInstanceOf[js.Any])
+    inline def setGeocodes(value: js.Array[LngLat]): Self = StObject.set(x, "geocodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeocodesVarargs(value: LngLat*): Self = StObject.set(x, "geocodes", js.Array(value :_*))
+    inline def setGeocodesVarargs(value: LngLat*): Self = StObject.set(x, "geocodes", js.Array(value :_*))
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultNum(value: Double): Self = StObject.set(x, "resultNum", value.asInstanceOf[js.Any])
+    inline def setResultNum(value: Double): Self = StObject.set(x, "resultNum", value.asInstanceOf[js.Any])
   }
 }

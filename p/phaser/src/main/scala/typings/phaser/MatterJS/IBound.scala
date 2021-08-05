@@ -13,19 +13,15 @@ trait IBound extends StObject {
 }
 object IBound {
   
-  @scala.inline
-  def apply(max: X, min: X): IBound = {
+  inline def apply(max: X, min: X): IBound = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBound]
   }
   
-  @scala.inline
-  implicit class IBoundMutableBuilder[Self <: IBound] (val x: Self) extends AnyVal {
+  extension [Self <: IBound](x: Self) {
     
-    @scala.inline
-    def setMax(value: X): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: X): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: X): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: X): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

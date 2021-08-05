@@ -48,64 +48,45 @@ trait CommentsForPullRequest extends StObject {
 }
 object CommentsForPullRequest {
   
-  @scala.inline
-  def apply(): CommentsForPullRequest = {
+  inline def apply(): CommentsForPullRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentsForPullRequest]
   }
   
-  @scala.inline
-  implicit class CommentsForPullRequestMutableBuilder[Self <: CommentsForPullRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CommentsForPullRequest](x: Self) {
     
-    @scala.inline
-    def setAfterBlobId(value: ObjectId): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
+    inline def setAfterBlobId(value: ObjectId): Self = StObject.set(x, "afterBlobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterBlobIdUndefined: Self = StObject.set(x, "afterBlobId", js.undefined)
+    inline def setAfterBlobIdUndefined: Self = StObject.set(x, "afterBlobId", js.undefined)
     
-    @scala.inline
-    def setAfterCommitId(value: CommitId): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
+    inline def setAfterCommitId(value: CommitId): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterCommitIdUndefined: Self = StObject.set(x, "afterCommitId", js.undefined)
+    inline def setAfterCommitIdUndefined: Self = StObject.set(x, "afterCommitId", js.undefined)
     
-    @scala.inline
-    def setBeforeBlobId(value: ObjectId): Self = StObject.set(x, "beforeBlobId", value.asInstanceOf[js.Any])
+    inline def setBeforeBlobId(value: ObjectId): Self = StObject.set(x, "beforeBlobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeBlobIdUndefined: Self = StObject.set(x, "beforeBlobId", js.undefined)
+    inline def setBeforeBlobIdUndefined: Self = StObject.set(x, "beforeBlobId", js.undefined)
     
-    @scala.inline
-    def setBeforeCommitId(value: CommitId): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
+    inline def setBeforeCommitId(value: CommitId): Self = StObject.set(x, "beforeCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
+    inline def setBeforeCommitIdUndefined: Self = StObject.set(x, "beforeCommitId", js.undefined)
     
-    @scala.inline
-    def setComments(value: Comments): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: Comments): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: Comment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
+    inline def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

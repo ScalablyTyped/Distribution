@@ -12,8 +12,7 @@ object graphicMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderTag(container: IGroup, tagCfg: TagCfg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderTag")(container.asInstanceOf[js.Any], tagCfg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderTag(container: IGroup, tagCfg: TagCfg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderTag")(container.asInstanceOf[js.Any], tagCfg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait TagCfg
     extends StObject
@@ -37,32 +36,24 @@ object graphicMod {
   }
   object TagCfg {
     
-    @scala.inline
-    def apply(content: String | Double, x: Double, y: Double): TagCfg = {
+    inline def apply(content: String | Double, x: Double, y: Double): TagCfg = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagCfg]
     }
     
-    @scala.inline
-    implicit class TagCfgMutableBuilder[Self <: TagCfg] (val x: Self) extends AnyVal {
+    extension [Self <: TagCfg](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

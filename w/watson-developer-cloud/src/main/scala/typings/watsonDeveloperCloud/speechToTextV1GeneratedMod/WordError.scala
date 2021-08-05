@@ -12,16 +12,13 @@ trait WordError extends StObject {
 }
 object WordError {
   
-  @scala.inline
-  def apply(element: String): WordError = {
+  inline def apply(element: String): WordError = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordError]
   }
   
-  @scala.inline
-  implicit class WordErrorMutableBuilder[Self <: WordError] (val x: Self) extends AnyVal {
+  extension [Self <: WordError](x: Self) {
     
-    @scala.inline
-    def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

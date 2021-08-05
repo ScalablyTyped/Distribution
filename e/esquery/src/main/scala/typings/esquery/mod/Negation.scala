@@ -16,17 +16,14 @@ trait Negation
 }
 object Negation {
   
-  @scala.inline
-  def apply(selectors: js.Array[SubjectSelector]): Negation = {
+  inline def apply(selectors: js.Array[SubjectSelector]): Negation = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("not")
     __obj.asInstanceOf[Negation]
   }
   
-  @scala.inline
-  implicit class NegationMutableBuilder[Self <: Negation] (val x: Self) extends AnyVal {
+  extension [Self <: Negation](x: Self) {
     
-    @scala.inline
-    def setType(value: not): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: not): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

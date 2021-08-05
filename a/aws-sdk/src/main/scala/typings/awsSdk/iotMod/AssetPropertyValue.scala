@@ -23,25 +23,19 @@ trait AssetPropertyValue extends StObject {
 }
 object AssetPropertyValue {
   
-  @scala.inline
-  def apply(timestamp: AssetPropertyTimestamp, value: AssetPropertyVariant): AssetPropertyValue = {
+  inline def apply(timestamp: AssetPropertyTimestamp, value: AssetPropertyVariant): AssetPropertyValue = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetPropertyValue]
   }
   
-  @scala.inline
-  implicit class AssetPropertyValueMutableBuilder[Self <: AssetPropertyValue] (val x: Self) extends AnyVal {
+  extension [Self <: AssetPropertyValue](x: Self) {
     
-    @scala.inline
-    def setQuality(value: AssetPropertyQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: AssetPropertyQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: AssetPropertyTimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: AssetPropertyTimestamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: AssetPropertyVariant): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AssetPropertyVariant): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

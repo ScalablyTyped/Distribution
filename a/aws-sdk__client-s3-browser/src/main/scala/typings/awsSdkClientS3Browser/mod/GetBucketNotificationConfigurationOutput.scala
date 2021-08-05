@@ -10,8 +10,7 @@ trait GetBucketNotificationConfigurationOutput
      with typings.awsSdkClientS3Browser.typesGetBucketNotificationConfigurationOutputMod.GetBucketNotificationConfigurationOutput
 object GetBucketNotificationConfigurationOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketNotificationConfigurationOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketNotificationConfigurationOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketNotificationConfigurationOutput]
   }

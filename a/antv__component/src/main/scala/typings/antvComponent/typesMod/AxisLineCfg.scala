@@ -15,19 +15,15 @@ trait AxisLineCfg extends StObject {
 }
 object AxisLineCfg {
   
-  @scala.inline
-  def apply(): AxisLineCfg = {
+  inline def apply(): AxisLineCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisLineCfg]
   }
   
-  @scala.inline
-  implicit class AxisLineCfgMutableBuilder[Self <: AxisLineCfg] (val x: Self) extends AnyVal {
+  extension [Self <: AxisLineCfg](x: Self) {
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

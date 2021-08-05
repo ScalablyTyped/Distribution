@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlNetMeetingType extends StObject
 object OlNetMeetingType {
   
-  @scala.inline
-  def olExchangeConferencing: `2` = 2.asInstanceOf[`2`]
+  inline def olExchangeConferencing: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olNetMeeting: `0` = 0.asInstanceOf[`0`]
+  inline def olNetMeeting: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olNetShow: `1` = 1.asInstanceOf[`1`]
+  inline def olNetShow: `1` = 1.asInstanceOf[`1`]
 }

@@ -22,19 +22,15 @@ object releaseNotesStoriesMod {
     @JSImport("@storybook/ui/dist/settings/release_notes.stories", "default.component")
     @js.native
     def component: FunctionComponent[ReleaseNotesProps] = js.native
-    @scala.inline
-    def component_=(x: FunctionComponent[ReleaseNotesProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    inline def component_=(x: FunctionComponent[ReleaseNotesProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/settings/release_notes.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def DidHitMaxWaitTime(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DidHitMaxWaitTime")().asInstanceOf[Element]
+  inline def DidHitMaxWaitTime(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("DidHitMaxWaitTime")().asInstanceOf[Element]
   
-  @scala.inline
-  def Loading(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Loading")().asInstanceOf[Element]
+  inline def Loading(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Loading")().asInstanceOf[Element]
 }

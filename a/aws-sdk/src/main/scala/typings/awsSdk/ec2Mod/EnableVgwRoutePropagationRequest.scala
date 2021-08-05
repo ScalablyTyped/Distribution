@@ -23,25 +23,19 @@ trait EnableVgwRoutePropagationRequest extends StObject {
 }
 object EnableVgwRoutePropagationRequest {
   
-  @scala.inline
-  def apply(GatewayId: VpnGatewayId, RouteTableId: RouteTableId): EnableVgwRoutePropagationRequest = {
+  inline def apply(GatewayId: VpnGatewayId, RouteTableId: RouteTableId): EnableVgwRoutePropagationRequest = {
     val __obj = js.Dynamic.literal(GatewayId = GatewayId.asInstanceOf[js.Any], RouteTableId = RouteTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableVgwRoutePropagationRequest]
   }
   
-  @scala.inline
-  implicit class EnableVgwRoutePropagationRequestMutableBuilder[Self <: EnableVgwRoutePropagationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableVgwRoutePropagationRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setGatewayId(value: VpnGatewayId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
+    inline def setGatewayId(value: VpnGatewayId): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteTableId(value: RouteTableId): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
+    inline def setRouteTableId(value: RouteTableId): Self = StObject.set(x, "RouteTableId", value.asInstanceOf[js.Any])
   }
 }

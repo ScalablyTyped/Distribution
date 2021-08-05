@@ -14,12 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait toolbarFontsizeGroupOptions extends StObject
 object toolbarFontsizeGroupOptions {
   
-  @scala.inline
-  def color: typings.summernote.summernoteStrings.color = "color".asInstanceOf[typings.summernote.summernoteStrings.color]
+  inline def color: typings.summernote.summernoteStrings.color = "color".asInstanceOf[typings.summernote.summernoteStrings.color]
   
-  @scala.inline
-  def fontname: fontname_ = "fontname".asInstanceOf[fontname_]
+  inline def fontname: fontname_ = "fontname".asInstanceOf[fontname_]
   
-  @scala.inline
-  def fontsize: fontsize_ = "fontsize".asInstanceOf[fontsize_]
+  inline def fontsize: fontsize_ = "fontsize".asInstanceOf[fontsize_]
 }

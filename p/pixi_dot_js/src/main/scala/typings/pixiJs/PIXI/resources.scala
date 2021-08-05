@@ -127,8 +127,7 @@ object resources {
   }
   object ArrayResource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _height: Double,
       _width: Double,
       addBaseTextureAt: (BaseTexture, Double) => ArrayResource,
@@ -151,14 +150,11 @@ object resources {
       __obj.asInstanceOf[ArrayResource]
     }
     
-    @scala.inline
-    implicit class ArrayResourceMutableBuilder[Self <: ArrayResource] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayResource](x: Self) {
       
-      @scala.inline
-      def setAddBaseTextureAt(value: (BaseTexture, Double) => ArrayResource): Self = StObject.set(x, "addBaseTextureAt", js.Any.fromFunction2(value))
+      inline def setAddBaseTextureAt(value: (BaseTexture, Double) => ArrayResource): Self = StObject.set(x, "addBaseTextureAt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpload(value: (Renderer, BaseTexture, GLTexture) => Boolean): Self = StObject.set(x, "upload", js.Any.fromFunction3(value))
+      inline def setUpload(value: (Renderer, BaseTexture, GLTexture) => Boolean): Self = StObject.set(x, "upload", js.Any.fromFunction3(value))
     }
   }
   
@@ -224,8 +220,7 @@ object resources {
   }
   object BufferResource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _height: Double,
       _width: Double,
       bind: BaseTexture => Unit,
@@ -248,14 +243,11 @@ object resources {
       __obj.asInstanceOf[BufferResource]
     }
     
-    @scala.inline
-    implicit class BufferResourceMutableBuilder[Self <: BufferResource] (val x: Self) extends AnyVal {
+    extension [Self <: BufferResource](x: Self) {
       
-      @scala.inline
-      def setData(value: Float32Array | Uint8Array | Uint32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Float32Array | Uint8Array | Uint32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload(value: (Renderer, BaseTexture, GLTexture) => Boolean): Self = StObject.set(x, "upload", js.Any.fromFunction3(value))
+      inline def setUpload(value: (Renderer, BaseTexture, GLTexture) => Boolean): Self = StObject.set(x, "upload", js.Any.fromFunction3(value))
     }
   }
   
@@ -295,7 +287,7 @@ object resources {
       * @member {boolean} PIXI.resources.CubeResource#linkBaseTexture
       * @protected
       */
-    var linkBaseTexture: Boolean
+    /* protected */ var linkBaseTexture: Boolean
     
     /**
       * Upload the resource
@@ -306,8 +298,7 @@ object resources {
   }
   object CubeResource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _height: Double,
       _width: Double,
       addBaseTextureAt: (BaseTexture, Double) => ArrayResource,
@@ -331,14 +322,11 @@ object resources {
       __obj.asInstanceOf[CubeResource]
     }
     
-    @scala.inline
-    implicit class CubeResourceMutableBuilder[Self <: CubeResource] (val x: Self) extends AnyVal {
+    extension [Self <: CubeResource](x: Self) {
       
-      @scala.inline
-      def setLinkBaseTexture(value: Boolean): Self = StObject.set(x, "linkBaseTexture", value.asInstanceOf[js.Any])
+      inline def setLinkBaseTexture(value: Boolean): Self = StObject.set(x, "linkBaseTexture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpload(value: () => Boolean): Self = StObject.set(x, "upload", js.Any.fromFunction0(value))
+      inline def setUpload(value: () => Boolean): Self = StObject.set(x, "upload", js.Any.fromFunction0(value))
     }
   }
   
@@ -353,8 +341,7 @@ object resources {
        with BufferResource
   object DepthResource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _height: Double,
       _width: Double,
       bind: BaseTexture => Unit,
@@ -464,14 +451,14 @@ object resources {
       * @member {number} PIXI.resources.Resource#_height
       * @protected
       */
-    var _height: Double
+    /* protected */ var _height: Double
     
     /**
       * Internal width of the resource
       * @member {number} PIXI.resources.Resource#_width
       * @protected
       */
-    var _width: Double
+    /* protected */ var _width: Double
     
     /**
       * Bind to a parent BaseTexture
@@ -518,7 +505,7 @@ object resources {
       * @member {boolean} PIXI.resources.Resource#internal
       * @protected
       */
-    var internal: Boolean
+    /* protected */ var internal: Boolean
     
     /**
       * This can be overridden to start preloading a resource
@@ -574,8 +561,7 @@ object resources {
   }
   object Resource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _height: Double,
       _width: Double,
       bind: BaseTexture => Unit,
@@ -596,53 +582,37 @@ object resources {
       __obj.asInstanceOf[Resource]
     }
     
-    @scala.inline
-    implicit class ResourceMutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
+    extension [Self <: Resource](x: Self) {
       
-      @scala.inline
-      def setBind(value: BaseTexture => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+      inline def setBind(value: BaseTexture => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
+      inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+      inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
+      inline def setLoad(value: () => js.Promise[Unit]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResize(value: (Double, Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
+      inline def setResize(value: (Double, Double) => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStyle(value: (Renderer, BaseTexture, GLTexture) => Boolean): Self = StObject.set(x, "style", js.Any.fromFunction3(value))
+      inline def setStyle(value: (Renderer, BaseTexture, GLTexture) => Boolean): Self = StObject.set(x, "style", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUnbind(value: BaseTexture => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
+      inline def setUnbind(value: BaseTexture => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_height(value: Double): Self = StObject.set(x, "_height", value.asInstanceOf[js.Any])
+      inline def set_height(value: Double): Self = StObject.set(x, "_height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_width(value: Double): Self = StObject.set(x, "_width", value.asInstanceOf[js.Any])
+      inline def set_width(value: Double): Self = StObject.set(x, "_width", value.asInstanceOf[js.Any])
     }
   }
   

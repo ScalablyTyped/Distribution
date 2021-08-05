@@ -33,8 +33,7 @@ trait AlgorithmSummary extends StObject {
 }
 object AlgorithmSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AlgorithmArn: AlgorithmArn,
     AlgorithmName: EntityName,
     AlgorithmStatus: AlgorithmStatus,
@@ -44,25 +43,18 @@ object AlgorithmSummary {
     __obj.asInstanceOf[AlgorithmSummary]
   }
   
-  @scala.inline
-  implicit class AlgorithmSummaryMutableBuilder[Self <: AlgorithmSummary] (val x: Self) extends AnyVal {
+  extension [Self <: AlgorithmSummary](x: Self) {
     
-    @scala.inline
-    def setAlgorithmArn(value: AlgorithmArn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
+    inline def setAlgorithmArn(value: AlgorithmArn): Self = StObject.set(x, "AlgorithmArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmDescription(value: EntityDescription): Self = StObject.set(x, "AlgorithmDescription", value.asInstanceOf[js.Any])
+    inline def setAlgorithmDescription(value: EntityDescription): Self = StObject.set(x, "AlgorithmDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmDescriptionUndefined: Self = StObject.set(x, "AlgorithmDescription", js.undefined)
+    inline def setAlgorithmDescriptionUndefined: Self = StObject.set(x, "AlgorithmDescription", js.undefined)
     
-    @scala.inline
-    def setAlgorithmName(value: EntityName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
+    inline def setAlgorithmName(value: EntityName): Self = StObject.set(x, "AlgorithmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmStatus(value: AlgorithmStatus): Self = StObject.set(x, "AlgorithmStatus", value.asInstanceOf[js.Any])
+    inline def setAlgorithmStatus(value: AlgorithmStatus): Self = StObject.set(x, "AlgorithmStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
   }
 }

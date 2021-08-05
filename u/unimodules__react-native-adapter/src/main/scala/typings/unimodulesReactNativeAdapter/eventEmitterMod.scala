@@ -39,32 +39,24 @@ object eventEmitterMod {
   }
   object NativeModule {
     
-    @scala.inline
-    def apply(addListener: String => Unit, removeListeners: Double => Unit): NativeModule = {
+    inline def apply(addListener: String => Unit, removeListeners: Double => Unit): NativeModule = {
       val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction1(addListener), removeListeners = js.Any.fromFunction1(removeListeners))
       __obj.asInstanceOf[NativeModule]
     }
     
-    @scala.inline
-    implicit class NativeModuleMutableBuilder[Self <: NativeModule] (val x: Self) extends AnyVal {
+    extension [Self <: NativeModule](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
+      inline def setAddListener(value: String => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListeners(value: Double => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
+      inline def setRemoveListeners(value: Double => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartObserving(value: () => Unit): Self = StObject.set(x, "startObserving", js.Any.fromFunction0(value))
+      inline def setStartObserving(value: () => Unit): Self = StObject.set(x, "startObserving", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStartObservingUndefined: Self = StObject.set(x, "startObserving", js.undefined)
+      inline def setStartObservingUndefined: Self = StObject.set(x, "startObserving", js.undefined)
       
-      @scala.inline
-      def setStopObserving(value: () => Unit): Self = StObject.set(x, "stopObserving", js.Any.fromFunction0(value))
+      inline def setStopObserving(value: () => Unit): Self = StObject.set(x, "stopObserving", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopObservingUndefined: Self = StObject.set(x, "stopObserving", js.undefined)
+      inline def setStopObservingUndefined: Self = StObject.set(x, "stopObserving", js.undefined)
     }
   }
   
@@ -74,17 +66,14 @@ object eventEmitterMod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(remove: () => Unit): Subscription = {
+    inline def apply(remove: () => Unit): Subscription = {
       val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
   }
 }

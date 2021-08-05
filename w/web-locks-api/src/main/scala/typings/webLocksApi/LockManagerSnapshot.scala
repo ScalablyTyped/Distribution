@@ -12,25 +12,19 @@ trait LockManagerSnapshot extends StObject {
 }
 object LockManagerSnapshot {
   
-  @scala.inline
-  def apply(held: js.Array[Lock], pending: js.Array[Lock]): LockManagerSnapshot = {
+  inline def apply(held: js.Array[Lock], pending: js.Array[Lock]): LockManagerSnapshot = {
     val __obj = js.Dynamic.literal(held = held.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[LockManagerSnapshot]
   }
   
-  @scala.inline
-  implicit class LockManagerSnapshotMutableBuilder[Self <: LockManagerSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: LockManagerSnapshot](x: Self) {
     
-    @scala.inline
-    def setHeld(value: js.Array[Lock]): Self = StObject.set(x, "held", value.asInstanceOf[js.Any])
+    inline def setHeld(value: js.Array[Lock]): Self = StObject.set(x, "held", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeldVarargs(value: Lock*): Self = StObject.set(x, "held", js.Array(value :_*))
+    inline def setHeldVarargs(value: Lock*): Self = StObject.set(x, "held", js.Array(value :_*))
     
-    @scala.inline
-    def setPending(value: js.Array[Lock]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: js.Array[Lock]): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingVarargs(value: Lock*): Self = StObject.set(x, "pending", js.Array(value :_*))
+    inline def setPendingVarargs(value: Lock*): Self = StObject.set(x, "pending", js.Array(value :_*))
   }
 }

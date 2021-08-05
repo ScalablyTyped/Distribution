@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagVisibility extends StObject
 object TagVisibility {
   
-  @scala.inline
-  def internal: typings.tryghostContentApi.tryghostContentApiStrings.internal = "internal".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.internal]
+  inline def internal: typings.tryghostContentApi.tryghostContentApiStrings.internal = "internal".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.internal]
   
-  @scala.inline
-  def public: typings.tryghostContentApi.tryghostContentApiStrings.public = "public".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.public]
+  inline def public: typings.tryghostContentApi.tryghostContentApiStrings.public = "public".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.public]
 }

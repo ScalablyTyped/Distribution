@@ -18,28 +18,21 @@ trait ConnectConfigResults extends StObject {
 }
 object ConnectConfigResults {
   
-  @scala.inline
-  def apply(): ConnectConfigResults = {
+  inline def apply(): ConnectConfigResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectConfigResults]
   }
   
-  @scala.inline
-  implicit class ConnectConfigResultsMutableBuilder[Self <: ConnectConfigResults] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectConfigResults](x: Self) {
     
-    @scala.inline
-    def setConfigurations(value: js.Array[ConnectCustomConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
+    inline def setConfigurations(value: js.Array[ConnectCustomConfiguration]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
+    inline def setConfigurationsUndefined: Self = StObject.set(x, "configurations", js.undefined)
     
-    @scala.inline
-    def setConfigurationsVarargs(value: ConnectCustomConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
+    inline def setConfigurationsVarargs(value: ConnectCustomConfiguration*): Self = StObject.set(x, "configurations", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalRecords(value: String): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
+    inline def setTotalRecords(value: String): Self = StObject.set(x, "totalRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
+    inline def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
   }
 }

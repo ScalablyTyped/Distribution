@@ -28,8 +28,7 @@ trait GitAsyncRefOperationParameters extends StObject {
 }
 object GitAsyncRefOperationParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     generatedRefName: String,
     ontoRefName: String,
     repository: GitRepository,
@@ -39,19 +38,14 @@ object GitAsyncRefOperationParameters {
     __obj.asInstanceOf[GitAsyncRefOperationParameters]
   }
   
-  @scala.inline
-  implicit class GitAsyncRefOperationParametersMutableBuilder[Self <: GitAsyncRefOperationParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GitAsyncRefOperationParameters](x: Self) {
     
-    @scala.inline
-    def setGeneratedRefName(value: String): Self = StObject.set(x, "generatedRefName", value.asInstanceOf[js.Any])
+    inline def setGeneratedRefName(value: String): Self = StObject.set(x, "generatedRefName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOntoRefName(value: String): Self = StObject.set(x, "ontoRefName", value.asInstanceOf[js.Any])
+    inline def setOntoRefName(value: String): Self = StObject.set(x, "ontoRefName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: GitAsyncRefOperationSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: GitAsyncRefOperationSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

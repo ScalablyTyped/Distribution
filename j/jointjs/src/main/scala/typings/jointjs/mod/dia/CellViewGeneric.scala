@@ -141,6 +141,5 @@ object CellViewGeneric {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def addPresentationAttributes(attributes: PresentationAttributes): PresentationAttributes = ^.asInstanceOf[js.Dynamic].applyDynamic("addPresentationAttributes")(attributes.asInstanceOf[js.Any]).asInstanceOf[PresentationAttributes]
+  inline def addPresentationAttributes(attributes: PresentationAttributes): PresentationAttributes = ^.asInstanceOf[js.Dynamic].applyDynamic("addPresentationAttributes")(attributes.asInstanceOf[js.Any]).asInstanceOf[PresentationAttributes]
 }

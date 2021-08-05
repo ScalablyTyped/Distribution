@@ -39,13 +39,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def setDefaultSpinnerDelay(spinnerDelay: Double): TypeofSpinner = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpinnerDelay")(spinnerDelay.asInstanceOf[js.Any]).asInstanceOf[TypeofSpinner]
+    inline def setDefaultSpinnerDelay(spinnerDelay: Double): TypeofSpinner = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpinnerDelay")(spinnerDelay.asInstanceOf[js.Any]).asInstanceOf[TypeofSpinner]
     
-    @scala.inline
-    def setDefaultSpinnerString(spinnerString: String): TypeofSpinner = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpinnerString")(spinnerString.asInstanceOf[js.Any]).asInstanceOf[TypeofSpinner]
-    @scala.inline
-    def setDefaultSpinnerString(spinnerString: Double): TypeofSpinner = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpinnerString")(spinnerString.asInstanceOf[js.Any]).asInstanceOf[TypeofSpinner]
+    inline def setDefaultSpinnerString(spinnerString: String): TypeofSpinner = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpinnerString")(spinnerString.asInstanceOf[js.Any]).asInstanceOf[TypeofSpinner]
+    inline def setDefaultSpinnerString(spinnerString: Double): TypeofSpinner = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpinnerString")(spinnerString.asInstanceOf[js.Any]).asInstanceOf[TypeofSpinner]
   }
   
   trait Options extends StObject {
@@ -58,32 +55,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnTick(value: js.ThisFunction1[/* this */ Spinner, /* msg */ String, Unit]): Self = StObject.set(x, "onTick", value.asInstanceOf[js.Any])
+      inline def setOnTick(value: js.ThisFunction1[/* this */ Spinner, /* msg */ String, Unit]): Self = StObject.set(x, "onTick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnTickUndefined: Self = StObject.set(x, "onTick", js.undefined)
+      inline def setOnTickUndefined: Self = StObject.set(x, "onTick", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

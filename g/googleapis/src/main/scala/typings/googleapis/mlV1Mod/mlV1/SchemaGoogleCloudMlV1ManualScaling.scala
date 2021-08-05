@@ -19,19 +19,15 @@ trait SchemaGoogleCloudMlV1ManualScaling extends StObject {
 }
 object SchemaGoogleCloudMlV1ManualScaling {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudMlV1ManualScaling = {
+  inline def apply(): SchemaGoogleCloudMlV1ManualScaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudMlV1ManualScaling]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudMlV1ManualScalingMutableBuilder[Self <: SchemaGoogleCloudMlV1ManualScaling] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudMlV1ManualScaling](x: Self) {
     
-    @scala.inline
-    def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
   }
 }

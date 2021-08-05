@@ -33,37 +33,27 @@ trait IonFab extends StObject {
 }
 object IonFab {
   
-  @scala.inline
-  def apply(): IonFab = {
+  inline def apply(): IonFab = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonFab]
   }
   
-  @scala.inline
-  implicit class IonFabMutableBuilder[Self <: IonFab] (val x: Self) extends AnyVal {
+  extension [Self <: IonFab](x: Self) {
     
-    @scala.inline
-    def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
+    inline def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivatedUndefined: Self = StObject.set(x, "activated", js.undefined)
+    inline def setActivatedUndefined: Self = StObject.set(x, "activated", js.undefined)
     
-    @scala.inline
-    def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
+    inline def setEdgeUndefined: Self = StObject.set(x, "edge", js.undefined)
     
-    @scala.inline
-    def setHorizontal(value: start | end | center): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: start | end | center): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    @scala.inline
-    def setVertical(value: top | bottom | center): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: top | bottom | center): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

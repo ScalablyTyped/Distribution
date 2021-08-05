@@ -22,8 +22,7 @@ trait UsageInfo
 }
 object UsageInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -40,25 +39,18 @@ object UsageInfo {
     __obj.asInstanceOf[UsageInfo]
   }
   
-  @scala.inline
-  implicit class UsageInfoMutableBuilder[Self <: UsageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UsageInfo](x: Self) {
     
-    @scala.inline
-    def setGet_bandwidth(value: () => Double): Self = StObject.set(x, "get_bandwidth", js.Any.fromFunction0(value))
+    inline def setGet_bandwidth(value: () => Double): Self = StObject.set(x, "get_bandwidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_discussionStorage(value: () => Double): Self = StObject.set(x, "get_discussionStorage", js.Any.fromFunction0(value))
+    inline def setGet_discussionStorage(value: () => Double): Self = StObject.set(x, "get_discussionStorage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_hits(value: () => Double): Self = StObject.set(x, "get_hits", js.Any.fromFunction0(value))
+    inline def setGet_hits(value: () => Double): Self = StObject.set(x, "get_hits", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_storage(value: () => Double): Self = StObject.set(x, "get_storage", js.Any.fromFunction0(value))
+    inline def setGet_storage(value: () => Double): Self = StObject.set(x, "get_storage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_storagePercentageUsed(value: () => Double): Self = StObject.set(x, "get_storagePercentageUsed", js.Any.fromFunction0(value))
+    inline def setGet_storagePercentageUsed(value: () => Double): Self = StObject.set(x, "get_storagePercentageUsed", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_visits(value: () => Double): Self = StObject.set(x, "get_visits", js.Any.fromFunction0(value))
+    inline def setGet_visits(value: () => Double): Self = StObject.set(x, "get_visits", js.Any.fromFunction0(value))
   }
 }

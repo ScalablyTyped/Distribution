@@ -12,17 +12,14 @@ trait Element extends StObject {
 }
 object Element {
   
-  @scala.inline
-  def apply(_underscore: BlissBindedElement[Element]): Element = {
+  inline def apply(_underscore: BlissBindedElement[Element]): Element = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[Element]
   }
   
-  @scala.inline
-  implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+  extension [Self <: Element](x: Self) {
     
-    @scala.inline
-    def set_underscore(value: BlissBindedElement[Element]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+    inline def set_underscore(value: BlissBindedElement[Element]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
   }
 }

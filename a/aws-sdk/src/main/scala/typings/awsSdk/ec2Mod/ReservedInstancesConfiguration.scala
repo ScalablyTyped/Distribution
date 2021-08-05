@@ -33,43 +33,31 @@ trait ReservedInstancesConfiguration extends StObject {
 }
 object ReservedInstancesConfiguration {
   
-  @scala.inline
-  def apply(): ReservedInstancesConfiguration = {
+  inline def apply(): ReservedInstancesConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservedInstancesConfiguration]
   }
   
-  @scala.inline
-  implicit class ReservedInstancesConfigurationMutableBuilder[Self <: ReservedInstancesConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ReservedInstancesConfiguration](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: Integer): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
-    @scala.inline
-    def setScope(value: scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
   }
 }

@@ -18,37 +18,27 @@ trait TopicalExploreFeedResponseCandidatesItem extends StObject {
 }
 object TopicalExploreFeedResponseCandidatesItem {
   
-  @scala.inline
-  def apply(height: Double, url: String, width: Double): TopicalExploreFeedResponseCandidatesItem = {
+  inline def apply(height: Double, url: String, width: Double): TopicalExploreFeedResponseCandidatesItem = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicalExploreFeedResponseCandidatesItem]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseCandidatesItemMutableBuilder[Self <: TopicalExploreFeedResponseCandidatesItem] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseCandidatesItem](x: Self) {
     
-    @scala.inline
-    def setEstimated_scans_sizes(value: js.Array[Double]): Self = StObject.set(x, "estimated_scans_sizes", value.asInstanceOf[js.Any])
+    inline def setEstimated_scans_sizes(value: js.Array[Double]): Self = StObject.set(x, "estimated_scans_sizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimated_scans_sizesUndefined: Self = StObject.set(x, "estimated_scans_sizes", js.undefined)
+    inline def setEstimated_scans_sizesUndefined: Self = StObject.set(x, "estimated_scans_sizes", js.undefined)
     
-    @scala.inline
-    def setEstimated_scans_sizesVarargs(value: Double*): Self = StObject.set(x, "estimated_scans_sizes", js.Array(value :_*))
+    inline def setEstimated_scans_sizesVarargs(value: Double*): Self = StObject.set(x, "estimated_scans_sizes", js.Array(value :_*))
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScans_profile(value: String): Self = StObject.set(x, "scans_profile", value.asInstanceOf[js.Any])
+    inline def setScans_profile(value: String): Self = StObject.set(x, "scans_profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScans_profileUndefined: Self = StObject.set(x, "scans_profile", js.undefined)
+    inline def setScans_profileUndefined: Self = StObject.set(x, "scans_profile", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

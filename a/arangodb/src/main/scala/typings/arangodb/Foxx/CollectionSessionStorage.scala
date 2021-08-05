@@ -19,8 +19,7 @@ trait CollectionSessionStorage
 }
 object CollectionSessionStorage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: Session => Boolean,
     forClient: Session => String | Null,
     fromClient: String => Session | Null,
@@ -33,19 +32,14 @@ object CollectionSessionStorage {
     __obj.asInstanceOf[CollectionSessionStorage]
   }
   
-  @scala.inline
-  implicit class CollectionSessionStorageMutableBuilder[Self <: CollectionSessionStorage] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionSessionStorage](x: Self) {
     
-    @scala.inline
-    def setClear(value: Session => Boolean): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: Session => Boolean): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNew(value: () => Session): Self = StObject.set(x, "new", js.Any.fromFunction0(value))
+    inline def setNew(value: () => Session): Self = StObject.set(x, "new", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrune(value: () => js.Array[String]): Self = StObject.set(x, "prune", js.Any.fromFunction0(value))
+    inline def setPrune(value: () => js.Array[String]): Self = StObject.set(x, "prune", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: Session => Session): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+    inline def setSave(value: Session => Session): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
   }
 }

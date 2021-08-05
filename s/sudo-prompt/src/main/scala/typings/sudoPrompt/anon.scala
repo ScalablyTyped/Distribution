@@ -17,32 +17,24 @@ object anon {
   }
   object Env {
     
-    @scala.inline
-    def apply(): Env = {
+    inline def apply(): Env = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Env]
     }
     
-    @scala.inline
-    implicit class EnvMutableBuilder[Self <: Env] (val x: Self) extends AnyVal {
+    extension [Self <: Env](x: Self) {
       
-      @scala.inline
-      def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setIcns(value: String): Self = StObject.set(x, "icns", value.asInstanceOf[js.Any])
+      inline def setIcns(value: String): Self = StObject.set(x, "icns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcnsUndefined: Self = StObject.set(x, "icns", js.undefined)
+      inline def setIcnsUndefined: Self = StObject.set(x, "icns", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

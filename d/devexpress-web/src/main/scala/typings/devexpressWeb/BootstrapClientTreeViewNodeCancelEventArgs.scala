@@ -18,16 +18,13 @@ trait BootstrapClientTreeViewNodeCancelEventArgs
 }
 object BootstrapClientTreeViewNodeCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, node: BootstrapClientTreeViewNode, processOnServer: Boolean): BootstrapClientTreeViewNodeCancelEventArgs = {
+  inline def apply(cancel: Boolean, node: BootstrapClientTreeViewNode, processOnServer: Boolean): BootstrapClientTreeViewNodeCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapClientTreeViewNodeCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class BootstrapClientTreeViewNodeCancelEventArgsMutableBuilder[Self <: BootstrapClientTreeViewNodeCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientTreeViewNodeCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setNode(value: BootstrapClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: BootstrapClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

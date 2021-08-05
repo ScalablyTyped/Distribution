@@ -18,22 +18,17 @@ trait GetHostReservationPurchasePreviewRequest extends StObject {
 }
 object GetHostReservationPurchasePreviewRequest {
   
-  @scala.inline
-  def apply(HostIdSet: RequestHostIdSet, OfferingId: OfferingId): GetHostReservationPurchasePreviewRequest = {
+  inline def apply(HostIdSet: RequestHostIdSet, OfferingId: OfferingId): GetHostReservationPurchasePreviewRequest = {
     val __obj = js.Dynamic.literal(HostIdSet = HostIdSet.asInstanceOf[js.Any], OfferingId = OfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHostReservationPurchasePreviewRequest]
   }
   
-  @scala.inline
-  implicit class GetHostReservationPurchasePreviewRequestMutableBuilder[Self <: GetHostReservationPurchasePreviewRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetHostReservationPurchasePreviewRequest](x: Self) {
     
-    @scala.inline
-    def setHostIdSet(value: RequestHostIdSet): Self = StObject.set(x, "HostIdSet", value.asInstanceOf[js.Any])
+    inline def setHostIdSet(value: RequestHostIdSet): Self = StObject.set(x, "HostIdSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostIdSetVarargs(value: DedicatedHostId*): Self = StObject.set(x, "HostIdSet", js.Array(value :_*))
+    inline def setHostIdSetVarargs(value: DedicatedHostId*): Self = StObject.set(x, "HostIdSet", js.Array(value :_*))
     
-    @scala.inline
-    def setOfferingId(value: OfferingId): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
+    inline def setOfferingId(value: OfferingId): Self = StObject.set(x, "OfferingId", value.asInstanceOf[js.Any])
   }
 }

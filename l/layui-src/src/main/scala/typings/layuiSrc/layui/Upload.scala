@@ -10,16 +10,13 @@ trait Upload extends StObject {
 }
 object Upload {
   
-  @scala.inline
-  def apply(render: UploadOption => Upload): Upload = {
+  inline def apply(render: UploadOption => Upload): Upload = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
     __obj.asInstanceOf[Upload]
   }
   
-  @scala.inline
-  implicit class UploadMutableBuilder[Self <: Upload] (val x: Self) extends AnyVal {
+  extension [Self <: Upload](x: Self) {
     
-    @scala.inline
-    def setRender(value: UploadOption => Upload): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: UploadOption => Upload): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
   }
 }

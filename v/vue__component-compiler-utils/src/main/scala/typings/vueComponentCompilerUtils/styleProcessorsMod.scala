@@ -24,29 +24,22 @@ object styleProcessorsMod {
   }
   object StylePreprocessorResults {
     
-    @scala.inline
-    def apply(code: String, errors: js.Array[Error]): StylePreprocessorResults = {
+    inline def apply(code: String, errors: js.Array[Error]): StylePreprocessorResults = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[StylePreprocessorResults]
     }
     
-    @scala.inline
-    implicit class StylePreprocessorResultsMutableBuilder[Self <: StylePreprocessorResults] (val x: Self) extends AnyVal {
+    extension [Self <: StylePreprocessorResults](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     }
   }
 }

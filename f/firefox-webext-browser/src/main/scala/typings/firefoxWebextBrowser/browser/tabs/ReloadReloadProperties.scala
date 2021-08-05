@@ -11,19 +11,15 @@ trait ReloadReloadProperties extends StObject {
 }
 object ReloadReloadProperties {
   
-  @scala.inline
-  def apply(): ReloadReloadProperties = {
+  inline def apply(): ReloadReloadProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReloadReloadProperties]
   }
   
-  @scala.inline
-  implicit class ReloadReloadPropertiesMutableBuilder[Self <: ReloadReloadProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ReloadReloadProperties](x: Self) {
     
-    @scala.inline
-    def setBypassCache(value: Boolean): Self = StObject.set(x, "bypassCache", value.asInstanceOf[js.Any])
+    inline def setBypassCache(value: Boolean): Self = StObject.set(x, "bypassCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassCacheUndefined: Self = StObject.set(x, "bypassCache", js.undefined)
+    inline def setBypassCacheUndefined: Self = StObject.set(x, "bypassCache", js.undefined)
   }
 }

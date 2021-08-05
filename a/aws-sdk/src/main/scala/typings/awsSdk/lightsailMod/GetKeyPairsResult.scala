@@ -18,28 +18,21 @@ trait GetKeyPairsResult extends StObject {
 }
 object GetKeyPairsResult {
   
-  @scala.inline
-  def apply(): GetKeyPairsResult = {
+  inline def apply(): GetKeyPairsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetKeyPairsResult]
   }
   
-  @scala.inline
-  implicit class GetKeyPairsResultMutableBuilder[Self <: GetKeyPairsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetKeyPairsResult](x: Self) {
     
-    @scala.inline
-    def setKeyPairs(value: KeyPairList): Self = StObject.set(x, "keyPairs", value.asInstanceOf[js.Any])
+    inline def setKeyPairs(value: KeyPairList): Self = StObject.set(x, "keyPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairsUndefined: Self = StObject.set(x, "keyPairs", js.undefined)
+    inline def setKeyPairsUndefined: Self = StObject.set(x, "keyPairs", js.undefined)
     
-    @scala.inline
-    def setKeyPairsVarargs(value: KeyPair*): Self = StObject.set(x, "keyPairs", js.Array(value :_*))
+    inline def setKeyPairsVarargs(value: KeyPair*): Self = StObject.set(x, "keyPairs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

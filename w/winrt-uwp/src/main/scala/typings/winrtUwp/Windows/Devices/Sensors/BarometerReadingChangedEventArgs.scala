@@ -12,16 +12,13 @@ trait BarometerReadingChangedEventArgs extends StObject {
 }
 object BarometerReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: BarometerReading): BarometerReadingChangedEventArgs = {
+  inline def apply(reading: BarometerReading): BarometerReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarometerReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class BarometerReadingChangedEventArgsMutableBuilder[Self <: BarometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BarometerReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: BarometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: BarometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

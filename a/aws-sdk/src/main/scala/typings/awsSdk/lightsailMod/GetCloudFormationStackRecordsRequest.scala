@@ -13,19 +13,15 @@ trait GetCloudFormationStackRecordsRequest extends StObject {
 }
 object GetCloudFormationStackRecordsRequest {
   
-  @scala.inline
-  def apply(): GetCloudFormationStackRecordsRequest = {
+  inline def apply(): GetCloudFormationStackRecordsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCloudFormationStackRecordsRequest]
   }
   
-  @scala.inline
-  implicit class GetCloudFormationStackRecordsRequestMutableBuilder[Self <: GetCloudFormationStackRecordsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCloudFormationStackRecordsRequest](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

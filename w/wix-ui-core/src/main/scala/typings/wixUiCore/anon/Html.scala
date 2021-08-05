@@ -10,16 +10,13 @@ trait Html extends StObject {
 }
 object Html {
   
-  @scala.inline
-  def apply(__html: String): Html = {
+  inline def apply(__html: String): Html = {
     val __obj = js.Dynamic.literal(__html = __html.asInstanceOf[js.Any])
     __obj.asInstanceOf[Html]
   }
   
-  @scala.inline
-  implicit class HtmlMutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
+  extension [Self <: Html](x: Self) {
     
-    @scala.inline
-    def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
+    inline def set__html(value: String): Self = StObject.set(x, "__html", value.asInstanceOf[js.Any])
   }
 }

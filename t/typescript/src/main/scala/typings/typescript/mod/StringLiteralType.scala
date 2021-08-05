@@ -13,8 +13,7 @@ trait StringLiteralType
 }
 object StringLiteralType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     flags: TypeFlags,
     freshType: LiteralType,
     getApparentProperties: () => js.Array[Symbol],
@@ -47,10 +46,8 @@ object StringLiteralType {
     __obj.asInstanceOf[StringLiteralType]
   }
   
-  @scala.inline
-  implicit class StringLiteralTypeMutableBuilder[Self <: StringLiteralType] (val x: Self) extends AnyVal {
+  extension [Self <: StringLiteralType](x: Self) {
     
-    @scala.inline
-    def setValue(value: java.lang.String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: java.lang.String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

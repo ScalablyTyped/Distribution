@@ -23,37 +23,27 @@ trait Right extends StObject {
 }
 object Right {
   
-  @scala.inline
-  def apply(__type: String, column: Double, filename: String, left: Node, lineno: Double, right: Node): Right = {
+  inline def apply(__type: String, column: Double, filename: String, left: Node, lineno: Double, right: Node): Right = {
     val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[Right]
   }
   
-  @scala.inline
-  implicit class RightMutableBuilder[Self <: Right] (val x: Self) extends AnyVal {
+  extension [Self <: Right](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+    inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Node): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Node): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValUndefined: Self = StObject.set(x, "val", js.undefined)
+    inline def setValUndefined: Self = StObject.set(x, "val", js.undefined)
     
-    @scala.inline
-    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+    inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

@@ -13,10 +13,8 @@ object iconFontMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SFC[IconFontProps]]
-  @scala.inline
-  def default(options: CustomIconOptions): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[SFC[IconFontProps]]
+  inline def default(): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[SFC[IconFontProps]]
+  inline def default(options: CustomIconOptions): SFC[IconFontProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[SFC[IconFontProps]]
   
   trait CustomIconOptions extends StObject {
     
@@ -26,29 +24,22 @@ object iconFontMod {
   }
   object CustomIconOptions {
     
-    @scala.inline
-    def apply(): CustomIconOptions = {
+    inline def apply(): CustomIconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomIconOptions]
     }
     
-    @scala.inline
-    implicit class CustomIconOptionsMutableBuilder[Self <: CustomIconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CustomIconOptions](x: Self) {
       
-      @scala.inline
-      def setExtraCommonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "extraCommonProps", value.asInstanceOf[js.Any])
+      inline def setExtraCommonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "extraCommonProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraCommonPropsUndefined: Self = StObject.set(x, "extraCommonProps", js.undefined)
+      inline def setExtraCommonPropsUndefined: Self = StObject.set(x, "extraCommonProps", js.undefined)
       
-      @scala.inline
-      def setScriptUrl(value: String | js.Array[String]): Self = StObject.set(x, "scriptUrl", value.asInstanceOf[js.Any])
+      inline def setScriptUrl(value: String | js.Array[String]): Self = StObject.set(x, "scriptUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptUrlUndefined: Self = StObject.set(x, "scriptUrl", js.undefined)
+      inline def setScriptUrlUndefined: Self = StObject.set(x, "scriptUrl", js.undefined)
       
-      @scala.inline
-      def setScriptUrlVarargs(value: String*): Self = StObject.set(x, "scriptUrl", js.Array(value :_*))
+      inline def setScriptUrlVarargs(value: String*): Self = StObject.set(x, "scriptUrl", js.Array(value :_*))
     }
   }
   
@@ -61,18 +52,15 @@ object iconFontMod {
   }
   object IconFontProps {
     
-    @scala.inline
-    def apply(`type`: String): IconFontProps = {
+    inline def apply(`type`: String): IconFontProps = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IconFontProps]
     }
     
-    @scala.inline
-    implicit class IconFontPropsMutableBuilder[Self <: IconFontProps] (val x: Self) extends AnyVal {
+    extension [Self <: IconFontProps](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

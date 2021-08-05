@@ -57,7 +57,7 @@ trait OlkComboBox extends StObject {
   
   var MousePointer: OlMousePointer = js.native
   
-  @JSName("Outlook.OlkComboBox_typekey")
+  /* private */ @JSName("Outlook.OlkComboBox_typekey")
   var OutlookDotOlkComboBox_typekey: OlkComboBox = js.native
   
   def Paste(): Unit = js.native

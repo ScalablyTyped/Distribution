@@ -10,16 +10,13 @@ trait NavigationInjectedProps[P] extends StObject {
 }
 object NavigationInjectedProps {
   
-  @scala.inline
-  def apply[P](navigation: NavigationScreenProp[NavigationRoute[P], P]): NavigationInjectedProps[P] = {
+  inline def apply[P](navigation: NavigationScreenProp[NavigationRoute[P], P]): NavigationInjectedProps[P] = {
     val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationInjectedProps[P]]
   }
   
-  @scala.inline
-  implicit class NavigationInjectedPropsMutableBuilder[Self <: NavigationInjectedProps[?], P] (val x: Self & NavigationInjectedProps[P]) extends AnyVal {
+  extension [Self <: NavigationInjectedProps[?], P](x: Self & NavigationInjectedProps[P]) {
     
-    @scala.inline
-    def setNavigation(value: NavigationScreenProp[NavigationRoute[P], P]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: NavigationScreenProp[NavigationRoute[P], P]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
   }
 }

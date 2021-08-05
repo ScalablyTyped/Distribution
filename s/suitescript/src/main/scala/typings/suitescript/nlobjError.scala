@@ -86,8 +86,7 @@ trait nlobjError extends StObject {
 }
 object nlobjError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCode: () => String,
     getDetails: () => String,
     getId: () => String,
@@ -99,25 +98,18 @@ object nlobjError {
     __obj.asInstanceOf[nlobjError]
   }
   
-  @scala.inline
-  implicit class nlobjErrorMutableBuilder[Self <: nlobjError] (val x: Self) extends AnyVal {
+  extension [Self <: nlobjError](x: Self) {
     
-    @scala.inline
-    def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
+    inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDetails(value: () => String): Self = StObject.set(x, "getDetails", js.Any.fromFunction0(value))
+    inline def setGetDetails(value: () => String): Self = StObject.set(x, "getDetails", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetInternalId(value: () => js.Any): Self = StObject.set(x, "getInternalId", js.Any.fromFunction0(value))
+    inline def setGetInternalId(value: () => js.Any): Self = StObject.set(x, "getInternalId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStackTrace(value: () => Unit): Self = StObject.set(x, "getStackTrace", js.Any.fromFunction0(value))
+    inline def setGetStackTrace(value: () => Unit): Self = StObject.set(x, "getStackTrace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUserEvent(value: () => String): Self = StObject.set(x, "getUserEvent", js.Any.fromFunction0(value))
+    inline def setGetUserEvent(value: () => String): Self = StObject.set(x, "getUserEvent", js.Any.fromFunction0(value))
   }
 }

@@ -9,8 +9,7 @@ trait ScaleTimeline
      with TranslateTimeline
 object ScaleTimeline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Unit,
     boneIndex: Double,
     curves: js.Any,

@@ -24,53 +24,38 @@ object hierarchyPartitionMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(field: String): Options = {
+    inline def apply(field: String): Options = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Tuple2[String, String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Tuple2[String, String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+      inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+      inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
       
-      @scala.inline
-      def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
 }

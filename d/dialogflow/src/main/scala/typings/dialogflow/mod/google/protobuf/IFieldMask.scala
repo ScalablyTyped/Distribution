@@ -12,25 +12,19 @@ trait IFieldMask extends StObject {
 }
 object IFieldMask {
   
-  @scala.inline
-  def apply(): IFieldMask = {
+  inline def apply(): IFieldMask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFieldMask]
   }
   
-  @scala.inline
-  implicit class IFieldMaskMutableBuilder[Self <: IFieldMask] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldMask](x: Self) {
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsNull: Self = StObject.set(x, "paths", null)
+    inline def setPathsNull: Self = StObject.set(x, "paths", null)
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
   }
 }

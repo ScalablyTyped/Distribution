@@ -30,19 +30,18 @@ object carouselIndexNativeMod {
     @JSImport("antd-mobile-rn/lib/carousel/index.native", "default.defaultProps")
     @js.native
     def defaultProps: CarouselProps = js.native
-    @scala.inline
-    def defaultProps_=(x: CarouselProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CarouselProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait Carousel
     extends Component[CarouselProps, CarouselState, js.Any] {
     
-    var androidScrollEndTimer: js.Any = js.native
+    /* private */ var androidScrollEndTimer: js.Any = js.native
     
     def autoplay(): Unit = js.native
     
-    var autoplayTimer: js.Any = js.native
+    /* private */ var autoplayTimer: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MCarousel(): Unit = js.native
@@ -70,11 +69,11 @@ object carouselIndexNativeMod {
     
     def renderDots(index: Double): js.UndefOr[js.Object | Null] = js.native
     
-    var scrollEndTimter: js.Any = js.native
+    /* private */ var scrollEndTimter: js.Any = js.native
     
     def scrollNextPage(): Unit = js.native
     
-    var scrollviewRef: js.Any = js.native
+    /* private */ var scrollviewRef: js.Any = js.native
     
     def updateIndex(offset: CarouselOffset): Unit = js.native
   }
@@ -87,20 +86,16 @@ object carouselIndexNativeMod {
   }
   object CarouselOffset {
     
-    @scala.inline
-    def apply(x: Double, y: Double): CarouselOffset = {
+    inline def apply(x: Double, y: Double): CarouselOffset = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[CarouselOffset]
     }
     
-    @scala.inline
-    implicit class CarouselOffsetMutableBuilder[Self <: CarouselOffset] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselOffset](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,81 +137,58 @@ object carouselIndexNativeMod {
   }
   object CarouselProps {
     
-    @scala.inline
-    def apply(): CarouselProps = {
+    inline def apply(): CarouselProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CarouselProps]
     }
     
-    @scala.inline
-    implicit class CarouselPropsMutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselProps](x: Self) {
       
-      @scala.inline
-      def setAfterChange(value: /* index */ Double => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
+      inline def setAfterChange(value: /* index */ Double => Unit): Self = StObject.set(x, "afterChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterChangeUndefined: Self = StObject.set(x, "afterChange", js.undefined)
+      inline def setAfterChangeUndefined: Self = StObject.set(x, "afterChange", js.undefined)
       
-      @scala.inline
-      def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
+      inline def setBounces(value: Boolean): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBouncesUndefined: Self = StObject.set(x, "bounces", js.undefined)
+      inline def setBouncesUndefined: Self = StObject.set(x, "bounces", js.undefined)
       
-      @scala.inline
-      def setDotActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotActiveStyle", value.asInstanceOf[js.Any])
+      inline def setDotActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotActiveStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotActiveStyleNull: Self = StObject.set(x, "dotActiveStyle", null)
+      inline def setDotActiveStyleNull: Self = StObject.set(x, "dotActiveStyle", null)
       
-      @scala.inline
-      def setDotActiveStyleUndefined: Self = StObject.set(x, "dotActiveStyle", js.undefined)
+      inline def setDotActiveStyleUndefined: Self = StObject.set(x, "dotActiveStyle", js.undefined)
       
-      @scala.inline
-      def setDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
+      inline def setDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotStyleNull: Self = StObject.set(x, "dotStyle", null)
+      inline def setDotStyleNull: Self = StObject.set(x, "dotStyle", null)
       
-      @scala.inline
-      def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
+      inline def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
       
-      @scala.inline
-      def setOnMomentumScrollEnd(
+      inline def setOnMomentumScrollEnd(
         value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ CarouselState, /* carousel */ Carousel) => Unit
       ): Self = StObject.set(x, "onMomentumScrollEnd", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnMomentumScrollEndUndefined: Self = StObject.set(x, "onMomentumScrollEnd", js.undefined)
+      inline def setOnMomentumScrollEndUndefined: Self = StObject.set(x, "onMomentumScrollEnd", js.undefined)
       
-      @scala.inline
-      def setOnScrollBeginDrag(
+      inline def setOnScrollBeginDrag(
         value: (/* event */ NativeSyntheticEvent[NativeScrollEvent], /* state */ CarouselState, /* carousel */ Carousel) => Unit
       ): Self = StObject.set(x, "onScrollBeginDrag", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnScrollBeginDragUndefined: Self = StObject.set(x, "onScrollBeginDrag", js.undefined)
+      inline def setOnScrollBeginDragUndefined: Self = StObject.set(x, "onScrollBeginDrag", js.undefined)
       
-      @scala.inline
-      def setPagination(value: /* props */ PaginationProps => ReactNode): Self = StObject.set(x, "pagination", js.Any.fromFunction1(value))
+      inline def setPagination(value: /* props */ PaginationProps => ReactNode): Self = StObject.set(x, "pagination", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+      inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     }
   }
   
@@ -238,8 +210,7 @@ object carouselIndexNativeMod {
   }
   object CarouselState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoplayEnd: Boolean,
       height: Double,
       isScrolling: Boolean,
@@ -252,29 +223,21 @@ object carouselIndexNativeMod {
       __obj.asInstanceOf[CarouselState]
     }
     
-    @scala.inline
-    implicit class CarouselStateMutableBuilder[Self <: CarouselState] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselState](x: Self) {
       
-      @scala.inline
-      def setAutoplayEnd(value: Boolean): Self = StObject.set(x, "autoplayEnd", value.asInstanceOf[js.Any])
+      inline def setAutoplayEnd(value: Boolean): Self = StObject.set(x, "autoplayEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
+      inline def setIsScrolling(value: Boolean): Self = StObject.set(x, "isScrolling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopJump(value: Boolean): Self = StObject.set(x, "loopJump", value.asInstanceOf[js.Any])
+      inline def setLoopJump(value: Boolean): Self = StObject.set(x, "loopJump", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: CarouselOffset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: CarouselOffset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -294,47 +257,34 @@ object carouselIndexNativeMod {
   }
   object PaginationProps {
     
-    @scala.inline
-    def apply(count: Double, current: Double, styles: js.Any): PaginationProps = {
+    inline def apply(count: Double, current: Double, styles: js.Any): PaginationProps = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationProps]
     }
     
-    @scala.inline
-    implicit class PaginationPropsMutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationProps](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotActiveStyle", value.asInstanceOf[js.Any])
+      inline def setDotActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotActiveStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotActiveStyleNull: Self = StObject.set(x, "dotActiveStyle", null)
+      inline def setDotActiveStyleNull: Self = StObject.set(x, "dotActiveStyle", null)
       
-      @scala.inline
-      def setDotActiveStyleUndefined: Self = StObject.set(x, "dotActiveStyle", js.undefined)
+      inline def setDotActiveStyleUndefined: Self = StObject.set(x, "dotActiveStyle", js.undefined)
       
-      @scala.inline
-      def setDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
+      inline def setDotStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "dotStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotStyleNull: Self = StObject.set(x, "dotStyle", null)
+      inline def setDotStyleNull: Self = StObject.set(x, "dotStyle", null)
       
-      @scala.inline
-      def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
+      inline def setDotStyleUndefined: Self = StObject.set(x, "dotStyle", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
 }

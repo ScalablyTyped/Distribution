@@ -18,28 +18,21 @@ trait FpgaInfo extends StObject {
 }
 object FpgaInfo {
   
-  @scala.inline
-  def apply(): FpgaInfo = {
+  inline def apply(): FpgaInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FpgaInfo]
   }
   
-  @scala.inline
-  implicit class FpgaInfoMutableBuilder[Self <: FpgaInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FpgaInfo](x: Self) {
     
-    @scala.inline
-    def setFpgas(value: FpgaDeviceInfoList): Self = StObject.set(x, "Fpgas", value.asInstanceOf[js.Any])
+    inline def setFpgas(value: FpgaDeviceInfoList): Self = StObject.set(x, "Fpgas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpgasUndefined: Self = StObject.set(x, "Fpgas", js.undefined)
+    inline def setFpgasUndefined: Self = StObject.set(x, "Fpgas", js.undefined)
     
-    @scala.inline
-    def setFpgasVarargs(value: FpgaDeviceInfo*): Self = StObject.set(x, "Fpgas", js.Array(value :_*))
+    inline def setFpgasVarargs(value: FpgaDeviceInfo*): Self = StObject.set(x, "Fpgas", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalFpgaMemoryInMiB(value: totalFpgaMemory): Self = StObject.set(x, "TotalFpgaMemoryInMiB", value.asInstanceOf[js.Any])
+    inline def setTotalFpgaMemoryInMiB(value: totalFpgaMemory): Self = StObject.set(x, "TotalFpgaMemoryInMiB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalFpgaMemoryInMiBUndefined: Self = StObject.set(x, "TotalFpgaMemoryInMiB", js.undefined)
+    inline def setTotalFpgaMemoryInMiBUndefined: Self = StObject.set(x, "TotalFpgaMemoryInMiB", js.undefined)
   }
 }

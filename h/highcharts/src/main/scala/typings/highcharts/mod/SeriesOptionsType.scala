@@ -58,147 +58,99 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeriesOptionsType extends StObject
 object SeriesOptionsType {
   
-  @scala.inline
-  def allAreas: typings.highcharts.highchartsStrings.allAreas = "allAreas".asInstanceOf[typings.highcharts.highchartsStrings.allAreas]
+  inline def allAreas: typings.highcharts.highchartsStrings.allAreas = "allAreas".asInstanceOf[typings.highcharts.highchartsStrings.allAreas]
   
-  @scala.inline
-  def aroonDown: typings.highcharts.highchartsStrings.aroonDown = "aroonDown".asInstanceOf[typings.highcharts.highchartsStrings.aroonDown]
+  inline def aroonDown: typings.highcharts.highchartsStrings.aroonDown = "aroonDown".asInstanceOf[typings.highcharts.highchartsStrings.aroonDown]
   
-  @scala.inline
-  def baseSeries: typings.highcharts.highchartsStrings.baseSeries = "baseSeries".asInstanceOf[typings.highcharts.highchartsStrings.baseSeries]
+  inline def baseSeries: typings.highcharts.highchartsStrings.baseSeries = "baseSeries".asInstanceOf[typings.highcharts.highchartsStrings.baseSeries]
   
-  @scala.inline
-  def boostThreshold: typings.highcharts.highchartsStrings.boostThreshold = "boostThreshold".asInstanceOf[typings.highcharts.highchartsStrings.boostThreshold]
+  inline def boostThreshold: typings.highcharts.highchartsStrings.boostThreshold = "boostThreshold".asInstanceOf[typings.highcharts.highchartsStrings.boostThreshold]
   
-  @scala.inline
-  def borderRadius: typings.highcharts.highchartsStrings.borderRadius = "borderRadius".asInstanceOf[typings.highcharts.highchartsStrings.borderRadius]
+  inline def borderRadius: typings.highcharts.highchartsStrings.borderRadius = "borderRadius".asInstanceOf[typings.highcharts.highchartsStrings.borderRadius]
   
-  @scala.inline
-  def center: typings.highcharts.highchartsStrings.center = "center".asInstanceOf[typings.highcharts.highchartsStrings.center]
+  inline def center: typings.highcharts.highchartsStrings.center = "center".asInstanceOf[typings.highcharts.highchartsStrings.center]
   
-  @scala.inline
-  def colorAxis: typings.highcharts.highchartsStrings.colorAxis = "colorAxis".asInstanceOf[typings.highcharts.highchartsStrings.colorAxis]
+  inline def colorAxis: typings.highcharts.highchartsStrings.colorAxis = "colorAxis".asInstanceOf[typings.highcharts.highchartsStrings.colorAxis]
   
-  @scala.inline
-  def colorByPoint: typings.highcharts.highchartsStrings.colorByPoint = "colorByPoint".asInstanceOf[typings.highcharts.highchartsStrings.colorByPoint]
+  inline def colorByPoint: typings.highcharts.highchartsStrings.colorByPoint = "colorByPoint".asInstanceOf[typings.highcharts.highchartsStrings.colorByPoint]
   
-  @scala.inline
-  def compare: typings.highcharts.highchartsStrings.compare = "compare".asInstanceOf[typings.highcharts.highchartsStrings.compare]
+  inline def compare: typings.highcharts.highchartsStrings.compare = "compare".asInstanceOf[typings.highcharts.highchartsStrings.compare]
   
-  @scala.inline
-  def compareBase: typings.highcharts.highchartsStrings.compareBase = "compareBase".asInstanceOf[typings.highcharts.highchartsStrings.compareBase]
+  inline def compareBase: typings.highcharts.highchartsStrings.compareBase = "compareBase".asInstanceOf[typings.highcharts.highchartsStrings.compareBase]
   
-  @scala.inline
-  def connectEnds: typings.highcharts.highchartsStrings.connectEnds = "connectEnds".asInstanceOf[typings.highcharts.highchartsStrings.connectEnds]
+  inline def connectEnds: typings.highcharts.highchartsStrings.connectEnds = "connectEnds".asInstanceOf[typings.highcharts.highchartsStrings.connectEnds]
   
-  @scala.inline
-  def connectNulls: typings.highcharts.highchartsStrings.connectNulls = "connectNulls".asInstanceOf[typings.highcharts.highchartsStrings.connectNulls]
+  inline def connectNulls: typings.highcharts.highchartsStrings.connectNulls = "connectNulls".asInstanceOf[typings.highcharts.highchartsStrings.connectNulls]
   
-  @scala.inline
-  def data: typings.highcharts.highchartsStrings.data = "data".asInstanceOf[typings.highcharts.highchartsStrings.data]
+  inline def data: typings.highcharts.highchartsStrings.data = "data".asInstanceOf[typings.highcharts.highchartsStrings.data]
   
-  @scala.inline
-  def dataParser: typings.highcharts.highchartsStrings.dataParser = "dataParser".asInstanceOf[typings.highcharts.highchartsStrings.dataParser]
+  inline def dataParser: typings.highcharts.highchartsStrings.dataParser = "dataParser".asInstanceOf[typings.highcharts.highchartsStrings.dataParser]
   
-  @scala.inline
-  def dataSorting: typings.highcharts.highchartsStrings.dataSorting = "dataSorting".asInstanceOf[typings.highcharts.highchartsStrings.dataSorting]
+  inline def dataSorting: typings.highcharts.highchartsStrings.dataSorting = "dataSorting".asInstanceOf[typings.highcharts.highchartsStrings.dataSorting]
   
-  @scala.inline
-  def dataURL: typings.highcharts.highchartsStrings.dataURL = "dataURL".asInstanceOf[typings.highcharts.highchartsStrings.dataURL]
+  inline def dataURL: typings.highcharts.highchartsStrings.dataURL = "dataURL".asInstanceOf[typings.highcharts.highchartsStrings.dataURL]
   
-  @scala.inline
-  def depth: typings.highcharts.highchartsStrings.depth = "depth".asInstanceOf[typings.highcharts.highchartsStrings.depth]
+  inline def depth: typings.highcharts.highchartsStrings.depth = "depth".asInstanceOf[typings.highcharts.highchartsStrings.depth]
   
-  @scala.inline
-  def dial: typings.highcharts.highchartsStrings.dial = "dial".asInstanceOf[typings.highcharts.highchartsStrings.dial]
+  inline def dial: typings.highcharts.highchartsStrings.dial = "dial".asInstanceOf[typings.highcharts.highchartsStrings.dial]
   
-  @scala.inline
-  def edgeColor: typings.highcharts.highchartsStrings.edgeColor = "edgeColor".asInstanceOf[typings.highcharts.highchartsStrings.edgeColor]
+  inline def edgeColor: typings.highcharts.highchartsStrings.edgeColor = "edgeColor".asInstanceOf[typings.highcharts.highchartsStrings.edgeColor]
   
-  @scala.inline
-  def edgeWidth: typings.highcharts.highchartsStrings.edgeWidth = "edgeWidth".asInstanceOf[typings.highcharts.highchartsStrings.edgeWidth]
+  inline def edgeWidth: typings.highcharts.highchartsStrings.edgeWidth = "edgeWidth".asInstanceOf[typings.highcharts.highchartsStrings.edgeWidth]
   
-  @scala.inline
-  def endAngle: typings.highcharts.highchartsStrings.endAngle = "endAngle".asInstanceOf[typings.highcharts.highchartsStrings.endAngle]
+  inline def endAngle: typings.highcharts.highchartsStrings.endAngle = "endAngle".asInstanceOf[typings.highcharts.highchartsStrings.endAngle]
   
-  @scala.inline
-  def fillColor: typings.highcharts.highchartsStrings.fillColor = "fillColor".asInstanceOf[typings.highcharts.highchartsStrings.fillColor]
+  inline def fillColor: typings.highcharts.highchartsStrings.fillColor = "fillColor".asInstanceOf[typings.highcharts.highchartsStrings.fillColor]
   
-  @scala.inline
-  def gapSize: typings.highcharts.highchartsStrings.gapSize = "gapSize".asInstanceOf[typings.highcharts.highchartsStrings.gapSize]
+  inline def gapSize: typings.highcharts.highchartsStrings.gapSize = "gapSize".asInstanceOf[typings.highcharts.highchartsStrings.gapSize]
   
-  @scala.inline
-  def gapUnit: typings.highcharts.highchartsStrings.gapUnit = "gapUnit".asInstanceOf[typings.highcharts.highchartsStrings.gapUnit]
+  inline def gapUnit: typings.highcharts.highchartsStrings.gapUnit = "gapUnit".asInstanceOf[typings.highcharts.highchartsStrings.gapUnit]
   
-  @scala.inline
-  def groupPadding: typings.highcharts.highchartsStrings.groupPadding = "groupPadding".asInstanceOf[typings.highcharts.highchartsStrings.groupPadding]
+  inline def groupPadding: typings.highcharts.highchartsStrings.groupPadding = "groupPadding".asInstanceOf[typings.highcharts.highchartsStrings.groupPadding]
   
-  @scala.inline
-  def groupZPadding: typings.highcharts.highchartsStrings.groupZPadding = "groupZPadding".asInstanceOf[typings.highcharts.highchartsStrings.groupZPadding]
+  inline def groupZPadding: typings.highcharts.highchartsStrings.groupZPadding = "groupZPadding".asInstanceOf[typings.highcharts.highchartsStrings.groupZPadding]
   
-  @scala.inline
-  def grouping: typings.highcharts.highchartsStrings.grouping = "grouping".asInstanceOf[typings.highcharts.highchartsStrings.grouping]
+  inline def grouping: typings.highcharts.highchartsStrings.grouping = "grouping".asInstanceOf[typings.highcharts.highchartsStrings.grouping]
   
-  @scala.inline
-  def ignoreHiddenPoint: typings.highcharts.highchartsStrings.ignoreHiddenPoint = "ignoreHiddenPoint".asInstanceOf[typings.highcharts.highchartsStrings.ignoreHiddenPoint]
+  inline def ignoreHiddenPoint: typings.highcharts.highchartsStrings.ignoreHiddenPoint = "ignoreHiddenPoint".asInstanceOf[typings.highcharts.highchartsStrings.ignoreHiddenPoint]
   
-  @scala.inline
-  def lineWidth: typings.highcharts.highchartsStrings.lineWidth = "lineWidth".asInstanceOf[typings.highcharts.highchartsStrings.lineWidth]
+  inline def lineWidth: typings.highcharts.highchartsStrings.lineWidth = "lineWidth".asInstanceOf[typings.highcharts.highchartsStrings.lineWidth]
   
-  @scala.inline
-  def linecap: typings.highcharts.highchartsStrings.linecap = "linecap".asInstanceOf[typings.highcharts.highchartsStrings.linecap]
+  inline def linecap: typings.highcharts.highchartsStrings.linecap = "linecap".asInstanceOf[typings.highcharts.highchartsStrings.linecap]
   
-  @scala.inline
-  def mapData: typings.highcharts.highchartsStrings.mapData = "mapData".asInstanceOf[typings.highcharts.highchartsStrings.mapData]
+  inline def mapData: typings.highcharts.highchartsStrings.mapData = "mapData".asInstanceOf[typings.highcharts.highchartsStrings.mapData]
   
-  @scala.inline
-  def marker: typings.highcharts.highchartsStrings.marker = "marker".asInstanceOf[typings.highcharts.highchartsStrings.marker]
+  inline def marker: typings.highcharts.highchartsStrings.marker = "marker".asInstanceOf[typings.highcharts.highchartsStrings.marker]
   
-  @scala.inline
-  def maxPointWidth: typings.highcharts.highchartsStrings.maxPointWidth = "maxPointWidth".asInstanceOf[typings.highcharts.highchartsStrings.maxPointWidth]
+  inline def maxPointWidth: typings.highcharts.highchartsStrings.maxPointWidth = "maxPointWidth".asInstanceOf[typings.highcharts.highchartsStrings.maxPointWidth]
   
-  @scala.inline
-  def minSize: typings.highcharts.highchartsStrings.minSize = "minSize".asInstanceOf[typings.highcharts.highchartsStrings.minSize]
+  inline def minSize: typings.highcharts.highchartsStrings.minSize = "minSize".asInstanceOf[typings.highcharts.highchartsStrings.minSize]
   
-  @scala.inline
-  def nodes: typings.highcharts.highchartsStrings.nodes = "nodes".asInstanceOf[typings.highcharts.highchartsStrings.nodes]
+  inline def nodes: typings.highcharts.highchartsStrings.nodes = "nodes".asInstanceOf[typings.highcharts.highchartsStrings.nodes]
   
-  @scala.inline
-  def pivot: typings.highcharts.highchartsStrings.pivot = "pivot".asInstanceOf[typings.highcharts.highchartsStrings.pivot]
+  inline def pivot: typings.highcharts.highchartsStrings.pivot = "pivot".asInstanceOf[typings.highcharts.highchartsStrings.pivot]
   
-  @scala.inline
-  def pointPadding: typings.highcharts.highchartsStrings.pointPadding = "pointPadding".asInstanceOf[typings.highcharts.highchartsStrings.pointPadding]
+  inline def pointPadding: typings.highcharts.highchartsStrings.pointPadding = "pointPadding".asInstanceOf[typings.highcharts.highchartsStrings.pointPadding]
   
-  @scala.inline
-  def pointWidth: typings.highcharts.highchartsStrings.pointWidth = "pointWidth".asInstanceOf[typings.highcharts.highchartsStrings.pointWidth]
+  inline def pointWidth: typings.highcharts.highchartsStrings.pointWidth = "pointWidth".asInstanceOf[typings.highcharts.highchartsStrings.pointWidth]
   
-  @scala.inline
-  def slicedOffset: typings.highcharts.highchartsStrings.slicedOffset = "slicedOffset".asInstanceOf[typings.highcharts.highchartsStrings.slicedOffset]
+  inline def slicedOffset: typings.highcharts.highchartsStrings.slicedOffset = "slicedOffset".asInstanceOf[typings.highcharts.highchartsStrings.slicedOffset]
   
-  @scala.inline
-  def stack: typings.highcharts.highchartsStrings.stack = "stack".asInstanceOf[typings.highcharts.highchartsStrings.stack]
+  inline def stack: typings.highcharts.highchartsStrings.stack = "stack".asInstanceOf[typings.highcharts.highchartsStrings.stack]
   
-  @scala.inline
-  def startAngle: typings.highcharts.highchartsStrings.startAngle = "startAngle".asInstanceOf[typings.highcharts.highchartsStrings.startAngle]
+  inline def startAngle: typings.highcharts.highchartsStrings.startAngle = "startAngle".asInstanceOf[typings.highcharts.highchartsStrings.startAngle]
   
-  @scala.inline
-  def step: typings.highcharts.highchartsStrings.step = "step".asInstanceOf[typings.highcharts.highchartsStrings.step]
+  inline def step: typings.highcharts.highchartsStrings.step = "step".asInstanceOf[typings.highcharts.highchartsStrings.step]
   
-  @scala.inline
-  def steps: typings.highcharts.highchartsStrings.steps = "steps".asInstanceOf[typings.highcharts.highchartsStrings.steps]
+  inline def steps: typings.highcharts.highchartsStrings.steps = "steps".asInstanceOf[typings.highcharts.highchartsStrings.steps]
   
-  @scala.inline
-  def `type`: typings.highcharts.highchartsStrings.`type` = "type".asInstanceOf[typings.highcharts.highchartsStrings.`type`]
+  inline def `type`: typings.highcharts.highchartsStrings.`type` = "type".asInstanceOf[typings.highcharts.highchartsStrings.`type`]
   
-  @scala.inline
-  def useOhlcData: typings.highcharts.highchartsStrings.useOhlcData = "useOhlcData".asInstanceOf[typings.highcharts.highchartsStrings.useOhlcData]
+  inline def useOhlcData: typings.highcharts.highchartsStrings.useOhlcData = "useOhlcData".asInstanceOf[typings.highcharts.highchartsStrings.useOhlcData]
   
-  @scala.inline
-  def wrap: typings.highcharts.highchartsStrings.wrap = "wrap".asInstanceOf[typings.highcharts.highchartsStrings.wrap]
+  inline def wrap: typings.highcharts.highchartsStrings.wrap = "wrap".asInstanceOf[typings.highcharts.highchartsStrings.wrap]
   
-  @scala.inline
-  def xAxis: typings.highcharts.highchartsStrings.xAxis = "xAxis".asInstanceOf[typings.highcharts.highchartsStrings.xAxis]
+  inline def xAxis: typings.highcharts.highchartsStrings.xAxis = "xAxis".asInstanceOf[typings.highcharts.highchartsStrings.xAxis]
   
-  @scala.inline
-  def yAxis: typings.highcharts.highchartsStrings.yAxis = "yAxis".asInstanceOf[typings.highcharts.highchartsStrings.yAxis]
+  inline def yAxis: typings.highcharts.highchartsStrings.yAxis = "yAxis".asInstanceOf[typings.highcharts.highchartsStrings.yAxis]
 }

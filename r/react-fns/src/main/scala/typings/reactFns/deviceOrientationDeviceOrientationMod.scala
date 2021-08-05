@@ -41,35 +41,26 @@ object deviceOrientationDeviceOrientationMod {
   }
   object DeviceOrientationProps {
     
-    @scala.inline
-    def apply(absolute: Boolean): DeviceOrientationProps = {
+    inline def apply(absolute: Boolean): DeviceOrientationProps = {
       val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], alpha = null, beta = null, gamma = null)
       __obj.asInstanceOf[DeviceOrientationProps]
     }
     
-    @scala.inline
-    implicit class DeviceOrientationPropsMutableBuilder[Self <: DeviceOrientationProps] (val x: Self) extends AnyVal {
+    extension [Self <: DeviceOrientationProps](x: Self) {
       
-      @scala.inline
-      def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+      inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaNull: Self = StObject.set(x, "alpha", null)
+      inline def setAlphaNull: Self = StObject.set(x, "alpha", null)
       
-      @scala.inline
-      def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+      inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBetaNull: Self = StObject.set(x, "beta", null)
+      inline def setBetaNull: Self = StObject.set(x, "beta", null)
       
-      @scala.inline
-      def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+      inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGammaNull: Self = StObject.set(x, "gamma", null)
+      inline def setGammaNull: Self = StObject.set(x, "gamma", null)
     }
   }
 }

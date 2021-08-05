@@ -12,116 +12,97 @@ object keycloakJsStrings {
   
   @js.native
   sealed trait default extends StObject
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait S256 extends StObject
-  @scala.inline
-  def S256: S256 = "S256".asInstanceOf[S256]
+  inline def S256: S256 = "S256".asInstanceOf[S256]
   
   @js.native
   sealed trait cancelled extends StObject
-  @scala.inline
-  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   
   @js.native
   sealed trait `check-sso`
     extends StObject
        with KeycloakOnLoad
-  @scala.inline
-  def `check-sso`: `check-sso` = "check-sso".asInstanceOf[`check-sso`]
+  inline def `check-sso`: `check-sso` = "check-sso".asInstanceOf[`check-sso`]
   
   @js.native
   sealed trait code
     extends StObject
        with KeycloakResponseType
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait `code id_token token`
     extends StObject
        with KeycloakResponseType
-  @scala.inline
-  def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
+  inline def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
   
   @js.native
   sealed trait cordova extends StObject
-  @scala.inline
-  def cordova: cordova = "cordova".asInstanceOf[cordova]
+  inline def cordova: cordova = "cordova".asInstanceOf[cordova]
   
   @js.native
   sealed trait `cordova-native` extends StObject
-  @scala.inline
-  def `cordova-native`: `cordova-native` = "cordova-native".asInstanceOf[`cordova-native`]
+  inline def `cordova-native`: `cordova-native` = "cordova-native".asInstanceOf[`cordova-native`]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait fragment
     extends StObject
        with KeycloakResponseMode
-  @scala.inline
-  def fragment: fragment = "fragment".asInstanceOf[fragment]
+  inline def fragment: fragment = "fragment".asInstanceOf[fragment]
   
   @js.native
   sealed trait hybrid
     extends StObject
        with KeycloakFlow
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
+  inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
   sealed trait `id_token token`
     extends StObject
        with KeycloakResponseType
-  @scala.inline
-  def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
+  inline def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   
   @js.native
   sealed trait `implicit`
     extends StObject
        with KeycloakFlow
-  @scala.inline
-  def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
+  inline def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
   @js.native
   sealed trait login extends StObject
-  @scala.inline
-  def login: login = "login".asInstanceOf[login]
+  inline def login: login = "login".asInstanceOf[login]
   
   @js.native
   sealed trait `login-required`
     extends StObject
        with KeycloakOnLoad
-  @scala.inline
-  def `login-required`: `login-required` = "login-required".asInstanceOf[`login-required`]
+  inline def `login-required`: `login-required` = "login-required".asInstanceOf[`login-required`]
   
   @js.native
   sealed trait none extends StObject
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait query
     extends StObject
        with KeycloakResponseMode
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
+  inline def query: query = "query".asInstanceOf[query]
   
   @js.native
   sealed trait standard
     extends StObject
        with KeycloakFlow
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait success extends StObject
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
 }

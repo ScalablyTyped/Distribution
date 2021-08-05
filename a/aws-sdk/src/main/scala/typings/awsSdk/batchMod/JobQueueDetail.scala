@@ -48,8 +48,7 @@ trait JobQueueDetail extends StObject {
 }
 object JobQueueDetail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     computeEnvironmentOrder: ComputeEnvironmentOrders,
     jobQueueArn: String,
     jobQueueName: String,
@@ -60,43 +59,30 @@ object JobQueueDetail {
     __obj.asInstanceOf[JobQueueDetail]
   }
   
-  @scala.inline
-  implicit class JobQueueDetailMutableBuilder[Self <: JobQueueDetail] (val x: Self) extends AnyVal {
+  extension [Self <: JobQueueDetail](x: Self) {
     
-    @scala.inline
-    def setComputeEnvironmentOrder(value: ComputeEnvironmentOrders): Self = StObject.set(x, "computeEnvironmentOrder", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironmentOrder(value: ComputeEnvironmentOrders): Self = StObject.set(x, "computeEnvironmentOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeEnvironmentOrderVarargs(value: ComputeEnvironmentOrder*): Self = StObject.set(x, "computeEnvironmentOrder", js.Array(value :_*))
+    inline def setComputeEnvironmentOrderVarargs(value: ComputeEnvironmentOrder*): Self = StObject.set(x, "computeEnvironmentOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setJobQueueArn(value: String): Self = StObject.set(x, "jobQueueArn", value.asInstanceOf[js.Any])
+    inline def setJobQueueArn(value: String): Self = StObject.set(x, "jobQueueArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobQueueName(value: String): Self = StObject.set(x, "jobQueueName", value.asInstanceOf[js.Any])
+    inline def setJobQueueName(value: String): Self = StObject.set(x, "jobQueueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Integer): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Integer): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: JQState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: JQState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: JQStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: JQStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

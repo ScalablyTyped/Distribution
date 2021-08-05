@@ -30,37 +30,27 @@ trait PlotVectorClusterZonesOptions extends StObject {
 }
 object PlotVectorClusterZonesOptions {
   
-  @scala.inline
-  def apply(): PlotVectorClusterZonesOptions = {
+  inline def apply(): PlotVectorClusterZonesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotVectorClusterZonesOptions]
   }
   
-  @scala.inline
-  implicit class PlotVectorClusterZonesOptionsMutableBuilder[Self <: PlotVectorClusterZonesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotVectorClusterZonesOptions](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

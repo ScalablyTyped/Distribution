@@ -15,7 +15,7 @@ class OAuth2 protected () extends StObject {
   def this(credentials: Credentials) = this()
   def this(credentials: Credentials, timeout: Double) = this()
   
-  var credentials: js.Any = js.native
+  /* private */ var credentials: js.Any = js.native
   
   def getAccessToken(options: Code): js.Promise[AccessToken] = js.native
   
@@ -23,5 +23,5 @@ class OAuth2 protected () extends StObject {
   
   def refreshAccessToken(options: RefreshToken): js.Promise[AccessToken] = js.native
   
-  var timeout: js.Any = js.native
+  /* private */ var timeout: js.Any = js.native
 }

@@ -82,43 +82,31 @@ trait SchemaSoftwareConfig extends StObject {
 }
 object SchemaSoftwareConfig {
   
-  @scala.inline
-  def apply(): SchemaSoftwareConfig = {
+  inline def apply(): SchemaSoftwareConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSoftwareConfig]
   }
   
-  @scala.inline
-  implicit class SchemaSoftwareConfigMutableBuilder[Self <: SchemaSoftwareConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSoftwareConfig](x: Self) {
     
-    @scala.inline
-    def setAirflowConfigOverrides(value: StringDictionary[String]): Self = StObject.set(x, "airflowConfigOverrides", value.asInstanceOf[js.Any])
+    inline def setAirflowConfigOverrides(value: StringDictionary[String]): Self = StObject.set(x, "airflowConfigOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAirflowConfigOverridesUndefined: Self = StObject.set(x, "airflowConfigOverrides", js.undefined)
+    inline def setAirflowConfigOverridesUndefined: Self = StObject.set(x, "airflowConfigOverrides", js.undefined)
     
-    @scala.inline
-    def setEnvVariables(value: StringDictionary[String]): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
+    inline def setEnvVariables(value: StringDictionary[String]): Self = StObject.set(x, "envVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
+    inline def setEnvVariablesUndefined: Self = StObject.set(x, "envVariables", js.undefined)
     
-    @scala.inline
-    def setImageVersion(value: String): Self = StObject.set(x, "imageVersion", value.asInstanceOf[js.Any])
+    inline def setImageVersion(value: String): Self = StObject.set(x, "imageVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageVersionUndefined: Self = StObject.set(x, "imageVersion", js.undefined)
+    inline def setImageVersionUndefined: Self = StObject.set(x, "imageVersion", js.undefined)
     
-    @scala.inline
-    def setPypiPackages(value: StringDictionary[String]): Self = StObject.set(x, "pypiPackages", value.asInstanceOf[js.Any])
+    inline def setPypiPackages(value: StringDictionary[String]): Self = StObject.set(x, "pypiPackages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPypiPackagesUndefined: Self = StObject.set(x, "pypiPackages", js.undefined)
+    inline def setPypiPackagesUndefined: Self = StObject.set(x, "pypiPackages", js.undefined)
     
-    @scala.inline
-    def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
+    inline def setPythonVersion(value: String): Self = StObject.set(x, "pythonVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
+    inline def setPythonVersionUndefined: Self = StObject.set(x, "pythonVersion", js.undefined)
   }
 }

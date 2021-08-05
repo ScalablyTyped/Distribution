@@ -18,28 +18,21 @@ trait GetItemPropsOptions[Item]
 }
 object GetItemPropsOptions {
   
-  @scala.inline
-  def apply[Item](item: Item): GetItemPropsOptions[Item] = {
+  inline def apply[Item](item: Item): GetItemPropsOptions[Item] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetItemPropsOptions[Item]]
   }
   
-  @scala.inline
-  implicit class GetItemPropsOptionsMutableBuilder[Self <: GetItemPropsOptions[?], Item] (val x: Self & GetItemPropsOptions[Item]) extends AnyVal {
+  extension [Self <: GetItemPropsOptions[?], Item](x: Self & GetItemPropsOptions[Item]) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+    inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
     
-    @scala.inline
-    def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

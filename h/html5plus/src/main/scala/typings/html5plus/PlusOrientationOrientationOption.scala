@@ -21,19 +21,15 @@ trait PlusOrientationOrientationOption extends StObject {
 }
 object PlusOrientationOrientationOption {
   
-  @scala.inline
-  def apply(): PlusOrientationOrientationOption = {
+  inline def apply(): PlusOrientationOrientationOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusOrientationOrientationOption]
   }
   
-  @scala.inline
-  implicit class PlusOrientationOrientationOptionMutableBuilder[Self <: PlusOrientationOrientationOption] (val x: Self) extends AnyVal {
+  extension [Self <: PlusOrientationOrientationOption](x: Self) {
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
   }
 }

@@ -41,8 +41,7 @@ trait CustomResourceColumnDefinition extends StObject {
 }
 object CustomResourceColumnDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     JSONPath: String,
     description: String,
     format: String,
@@ -55,25 +54,18 @@ object CustomResourceColumnDefinition {
     __obj.asInstanceOf[CustomResourceColumnDefinition]
   }
   
-  @scala.inline
-  implicit class CustomResourceColumnDefinitionMutableBuilder[Self <: CustomResourceColumnDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceColumnDefinition](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJSONPath(value: String): Self = StObject.set(x, "JSONPath", value.asInstanceOf[js.Any])
+    inline def setJSONPath(value: String): Self = StObject.set(x, "JSONPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

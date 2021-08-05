@@ -25,8 +25,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions extends StObje
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     statelessRules: Input[
       js.Array[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]]
     ]
@@ -35,30 +34,24 @@ object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions {
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions](x: Self) {
     
-    @scala.inline
-    def setCustomActions(
+    inline def setCustomActions(
       value: Input[
           js.Array[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction]]
         ]
     ): Self = StObject.set(x, "customActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomActionsUndefined: Self = StObject.set(x, "customActions", js.undefined)
+    inline def setCustomActionsUndefined: Self = StObject.set(x, "customActions", js.undefined)
     
-    @scala.inline
-    def setCustomActionsVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction]*): Self = StObject.set(x, "customActions", js.Array(value :_*))
+    inline def setCustomActionsVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsCustomAction]*): Self = StObject.set(x, "customActions", js.Array(value :_*))
     
-    @scala.inline
-    def setStatelessRules(
+    inline def setStatelessRules(
       value: Input[
           js.Array[Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]]
         ]
     ): Self = StObject.set(x, "statelessRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatelessRulesVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]*): Self = StObject.set(x, "statelessRules", js.Array(value :_*))
+    inline def setStatelessRulesVarargs(value: Input[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]*): Self = StObject.set(x, "statelessRules", js.Array(value :_*))
   }
 }

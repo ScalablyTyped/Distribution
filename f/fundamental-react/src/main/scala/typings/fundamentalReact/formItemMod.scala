@@ -27,38 +27,28 @@ object formItemMod extends Shortcut {
   }
   object FormItemProps {
     
-    @scala.inline
-    def apply(): FormItemProps = {
+    inline def apply(): FormItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormItemProps]
     }
     
-    @scala.inline
-    implicit class FormItemPropsMutableBuilder[Self <: FormItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormItemProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setIsHorizontal(value: Boolean): Self = StObject.set(x, "isHorizontal", value.asInstanceOf[js.Any])
+      inline def setIsHorizontal(value: Boolean): Self = StObject.set(x, "isHorizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHorizontalUndefined: Self = StObject.set(x, "isHorizontal", js.undefined)
+      inline def setIsHorizontalUndefined: Self = StObject.set(x, "isHorizontal", js.undefined)
       
-      @scala.inline
-      def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+      inline def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInlineUndefined: Self = StObject.set(x, "isInline", js.undefined)
+      inline def setIsInlineUndefined: Self = StObject.set(x, "isInline", js.undefined)
     }
   }
   

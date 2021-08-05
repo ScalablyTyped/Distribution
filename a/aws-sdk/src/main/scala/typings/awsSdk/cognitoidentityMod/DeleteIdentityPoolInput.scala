@@ -13,16 +13,13 @@ trait DeleteIdentityPoolInput extends StObject {
 }
 object DeleteIdentityPoolInput {
   
-  @scala.inline
-  def apply(IdentityPoolId: IdentityPoolId): DeleteIdentityPoolInput = {
+  inline def apply(IdentityPoolId: IdentityPoolId): DeleteIdentityPoolInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIdentityPoolInput]
   }
   
-  @scala.inline
-  implicit class DeleteIdentityPoolInputMutableBuilder[Self <: DeleteIdentityPoolInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIdentityPoolInput](x: Self) {
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }
 }

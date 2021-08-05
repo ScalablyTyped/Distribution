@@ -17,28 +17,21 @@ trait InvitationParticipantInfo extends StObject {
 }
 object InvitationParticipantInfo {
   
-  @scala.inline
-  def apply(): InvitationParticipantInfo = {
+  inline def apply(): InvitationParticipantInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvitationParticipantInfo]
   }
   
-  @scala.inline
-  implicit class InvitationParticipantInfoMutableBuilder[Self <: InvitationParticipantInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InvitationParticipantInfo](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: IdentitySet): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: IdentitySet): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
-    @scala.inline
-    def setReplacesCallId(value: NullableOption[String]): Self = StObject.set(x, "replacesCallId", value.asInstanceOf[js.Any])
+    inline def setReplacesCallId(value: NullableOption[String]): Self = StObject.set(x, "replacesCallId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacesCallIdNull: Self = StObject.set(x, "replacesCallId", null)
+    inline def setReplacesCallIdNull: Self = StObject.set(x, "replacesCallId", null)
     
-    @scala.inline
-    def setReplacesCallIdUndefined: Self = StObject.set(x, "replacesCallId", js.undefined)
+    inline def setReplacesCallIdUndefined: Self = StObject.set(x, "replacesCallId", js.undefined)
   }
 }

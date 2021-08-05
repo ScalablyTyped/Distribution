@@ -23,37 +23,27 @@ trait IgTreeSelectionChangedEventUIParam extends StObject {
 }
 object IgTreeSelectionChangedEventUIParam {
   
-  @scala.inline
-  def apply(): IgTreeSelectionChangedEventUIParam = {
+  inline def apply(): IgTreeSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeSelectionChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class IgTreeSelectionChangedEventUIParamMutableBuilder[Self <: IgTreeSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeSelectionChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setNewNodes(value: js.Array[js.Any]): Self = StObject.set(x, "newNodes", value.asInstanceOf[js.Any])
+    inline def setNewNodes(value: js.Array[js.Any]): Self = StObject.set(x, "newNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewNodesUndefined: Self = StObject.set(x, "newNodes", js.undefined)
+    inline def setNewNodesUndefined: Self = StObject.set(x, "newNodes", js.undefined)
     
-    @scala.inline
-    def setNewNodesVarargs(value: js.Any*): Self = StObject.set(x, "newNodes", js.Array(value :_*))
+    inline def setNewNodesVarargs(value: js.Any*): Self = StObject.set(x, "newNodes", js.Array(value :_*))
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSelectedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
+    inline def setSelectedNodes(value: js.Array[js.Any]): Self = StObject.set(x, "selectedNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
+    inline def setSelectedNodesUndefined: Self = StObject.set(x, "selectedNodes", js.undefined)
     
-    @scala.inline
-    def setSelectedNodesVarargs(value: js.Any*): Self = StObject.set(x, "selectedNodes", js.Array(value :_*))
+    inline def setSelectedNodesVarargs(value: js.Any*): Self = StObject.set(x, "selectedNodes", js.Array(value :_*))
   }
 }

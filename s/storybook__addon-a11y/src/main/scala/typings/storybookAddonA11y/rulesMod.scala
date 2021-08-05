@@ -52,20 +52,16 @@ object rulesMod {
   }
   object RulesProps {
     
-    @scala.inline
-    def apply(rules: js.Array[CheckResult]): RulesProps = {
+    inline def apply(rules: js.Array[CheckResult]): RulesProps = {
       val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[RulesProps]
     }
     
-    @scala.inline
-    implicit class RulesPropsMutableBuilder[Self <: RulesProps] (val x: Self) extends AnyVal {
+    extension [Self <: RulesProps](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[CheckResult]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[CheckResult]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesVarargs(value: CheckResult*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: CheckResult*): Self = StObject.set(x, "rules", js.Array(value :_*))
     }
   }
 }

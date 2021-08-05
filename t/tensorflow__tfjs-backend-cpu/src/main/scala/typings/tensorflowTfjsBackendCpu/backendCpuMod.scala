@@ -27,9 +27,9 @@ object backendCpuMod {
     
     var blockSize: Double = js.native
     
-    var broadcastedBinaryOp: js.Any = js.native
+    /* private */ var broadcastedBinaryOp: js.Any = js.native
     
-    var bufferSync: js.Any = js.native
+    /* private */ var bufferSync: js.Any = js.native
     
     def cropAndResize(
       images: Tensor4D,
@@ -54,7 +54,7 @@ object backendCpuMod {
     
     def disposeIntermediateTensorInfo(tensorInfo: TensorInfo): Unit = js.native
     
-    var firstUse: js.Any = js.native
+    /* private */ var firstUse: js.Any = js.native
     
     /** Increase refCount of a `TensorData`. */
     def incRef(dataId: DataId): Unit = js.native
@@ -71,17 +71,17 @@ object backendCpuMod {
     def makeTensorInfo(shape: js.Array[Double], dtype: DataType, values: js.Array[String]): TensorInfo = js.native
     def makeTensorInfo(shape: js.Array[Double], dtype: DataType, values: BackendValues): TensorInfo = js.native
     
-    var maxPool3dPositions: js.Any = js.native
+    /* private */ var maxPool3dPositions: js.Any = js.native
     
     def move(dataId: DataId, values: BackendValues, shape: js.Array[Double], dtype: DataType): Unit = js.native
     
-    var pool3d: js.Any = js.native
+    /* private */ var pool3d: js.Any = js.native
     
     def read(dataId: DataId): js.Promise[BackendValues] = js.native
     
     def readSync(dataId: DataId): BackendValues = js.native
     
-    var scatter: js.Any = js.native
+    /* private */ var scatter: js.Any = js.native
   }
   
   trait DataId extends StObject
@@ -98,35 +98,26 @@ object backendCpuMod {
   }
   object TensorData {
     
-    @scala.inline
-    def apply[D /* <: DataType */](dtype: D, refCount: Double): TensorData[D] = {
+    inline def apply[D /* <: DataType */](dtype: D, refCount: Double): TensorData[D] = {
       val __obj = js.Dynamic.literal(dtype = dtype.asInstanceOf[js.Any], refCount = refCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[TensorData[D]]
     }
     
-    @scala.inline
-    implicit class TensorDataMutableBuilder[Self <: TensorData[?], D /* <: DataType */] (val x: Self & TensorData[D]) extends AnyVal {
+    extension [Self <: TensorData[?], D /* <: DataType */](x: Self & TensorData[D]) {
       
-      @scala.inline
-      def setComplexTensorInfos(value: Imag): Self = StObject.set(x, "complexTensorInfos", value.asInstanceOf[js.Any])
+      inline def setComplexTensorInfos(value: Imag): Self = StObject.set(x, "complexTensorInfos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplexTensorInfosUndefined: Self = StObject.set(x, "complexTensorInfos", js.undefined)
+      inline def setComplexTensorInfosUndefined: Self = StObject.set(x, "complexTensorInfos", js.undefined)
       
-      @scala.inline
-      def setDtype(value: D): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: D): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefCount(value: Double): Self = StObject.set(x, "refCount", value.asInstanceOf[js.Any])
+      inline def setRefCount(value: Double): Self = StObject.set(x, "refCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: BackendValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: BackendValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: Uint8Array*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Uint8Array*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

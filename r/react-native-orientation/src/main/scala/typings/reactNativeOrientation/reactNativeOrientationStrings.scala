@@ -12,44 +12,38 @@ object reactNativeOrientationStrings {
   sealed trait LANDSCAPE
     extends StObject
        with orientation
-  @scala.inline
-  def LANDSCAPE: LANDSCAPE = "LANDSCAPE".asInstanceOf[LANDSCAPE]
+  inline def LANDSCAPE: LANDSCAPE = "LANDSCAPE".asInstanceOf[LANDSCAPE]
   
   @js.native
   sealed trait `LANDSCAPE-LEFT`
     extends StObject
        with specificOrientation
-  @scala.inline
-  def `LANDSCAPE-LEFT`: `LANDSCAPE-LEFT` = "LANDSCAPE-LEFT".asInstanceOf[`LANDSCAPE-LEFT`]
+  inline def `LANDSCAPE-LEFT`: `LANDSCAPE-LEFT` = "LANDSCAPE-LEFT".asInstanceOf[`LANDSCAPE-LEFT`]
   
   @js.native
   sealed trait `LANDSCAPE-RIGHT`
     extends StObject
        with specificOrientation
-  @scala.inline
-  def `LANDSCAPE-RIGHT`: `LANDSCAPE-RIGHT` = "LANDSCAPE-RIGHT".asInstanceOf[`LANDSCAPE-RIGHT`]
+  inline def `LANDSCAPE-RIGHT`: `LANDSCAPE-RIGHT` = "LANDSCAPE-RIGHT".asInstanceOf[`LANDSCAPE-RIGHT`]
   
   @js.native
   sealed trait PORTRAIT
     extends StObject
        with orientation
        with specificOrientation
-  @scala.inline
-  def PORTRAIT: PORTRAIT = "PORTRAIT".asInstanceOf[PORTRAIT]
+  inline def PORTRAIT: PORTRAIT = "PORTRAIT".asInstanceOf[PORTRAIT]
   
   @js.native
   sealed trait PORTRAITUPSIDEDOWN
     extends StObject
        with orientation
        with specificOrientation
-  @scala.inline
-  def PORTRAITUPSIDEDOWN: PORTRAITUPSIDEDOWN = "PORTRAITUPSIDEDOWN".asInstanceOf[PORTRAITUPSIDEDOWN]
+  inline def PORTRAITUPSIDEDOWN: PORTRAITUPSIDEDOWN = "PORTRAITUPSIDEDOWN".asInstanceOf[PORTRAITUPSIDEDOWN]
   
   @js.native
   sealed trait UNKNOWN
     extends StObject
        with orientation
        with specificOrientation
-  @scala.inline
-  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
+  inline def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
 }

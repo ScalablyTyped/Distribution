@@ -91,67 +91,47 @@ trait PlusOauthUserInfo extends StObject {
 }
 object PlusOauthUserInfo {
   
-  @scala.inline
-  def apply(): PlusOauthUserInfo = {
+  inline def apply(): PlusOauthUserInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusOauthUserInfo]
   }
   
-  @scala.inline
-  implicit class PlusOauthUserInfoMutableBuilder[Self <: PlusOauthUserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PlusOauthUserInfo](x: Self) {
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+    inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setHeadimgurl(value: String): Self = StObject.set(x, "headimgurl", value.asInstanceOf[js.Any])
+    inline def setHeadimgurl(value: String): Self = StObject.set(x, "headimgurl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadimgurlUndefined: Self = StObject.set(x, "headimgurl", js.undefined)
+    inline def setHeadimgurlUndefined: Self = StObject.set(x, "headimgurl", js.undefined)
     
-    @scala.inline
-    def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+    inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
+    inline def setNicknameUndefined: Self = StObject.set(x, "nickname", js.undefined)
     
-    @scala.inline
-    def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
+    inline def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
+    inline def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
     
-    @scala.inline
-    def setPhonenumber(value: String): Self = StObject.set(x, "phonenumber", value.asInstanceOf[js.Any])
+    inline def setPhonenumber(value: String): Self = StObject.set(x, "phonenumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhonenumberUndefined: Self = StObject.set(x, "phonenumber", js.undefined)
+    inline def setPhonenumberUndefined: Self = StObject.set(x, "phonenumber", js.undefined)
     
-    @scala.inline
-    def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvinceUndefined: Self = StObject.set(x, "province", js.undefined)
+    inline def setProvinceUndefined: Self = StObject.set(x, "province", js.undefined)
     
-    @scala.inline
-    def setSex(value: String): Self = StObject.set(x, "sex", value.asInstanceOf[js.Any])
+    inline def setSex(value: String): Self = StObject.set(x, "sex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSexUndefined: Self = StObject.set(x, "sex", js.undefined)
+    inline def setSexUndefined: Self = StObject.set(x, "sex", js.undefined)
   }
 }

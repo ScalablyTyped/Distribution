@@ -23,31 +23,23 @@ trait CancelSpotFleetRequestsSuccessItem extends StObject {
 }
 object CancelSpotFleetRequestsSuccessItem {
   
-  @scala.inline
-  def apply(): CancelSpotFleetRequestsSuccessItem = {
+  inline def apply(): CancelSpotFleetRequestsSuccessItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelSpotFleetRequestsSuccessItem]
   }
   
-  @scala.inline
-  implicit class CancelSpotFleetRequestsSuccessItemMutableBuilder[Self <: CancelSpotFleetRequestsSuccessItem] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSpotFleetRequestsSuccessItem](x: Self) {
     
-    @scala.inline
-    def setCurrentSpotFleetRequestState(value: BatchState): Self = StObject.set(x, "CurrentSpotFleetRequestState", value.asInstanceOf[js.Any])
+    inline def setCurrentSpotFleetRequestState(value: BatchState): Self = StObject.set(x, "CurrentSpotFleetRequestState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSpotFleetRequestStateUndefined: Self = StObject.set(x, "CurrentSpotFleetRequestState", js.undefined)
+    inline def setCurrentSpotFleetRequestStateUndefined: Self = StObject.set(x, "CurrentSpotFleetRequestState", js.undefined)
     
-    @scala.inline
-    def setPreviousSpotFleetRequestState(value: BatchState): Self = StObject.set(x, "PreviousSpotFleetRequestState", value.asInstanceOf[js.Any])
+    inline def setPreviousSpotFleetRequestState(value: BatchState): Self = StObject.set(x, "PreviousSpotFleetRequestState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSpotFleetRequestStateUndefined: Self = StObject.set(x, "PreviousSpotFleetRequestState", js.undefined)
+    inline def setPreviousSpotFleetRequestStateUndefined: Self = StObject.set(x, "PreviousSpotFleetRequestState", js.undefined)
     
-    @scala.inline
-    def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
+    inline def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
+    inline def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
   }
 }

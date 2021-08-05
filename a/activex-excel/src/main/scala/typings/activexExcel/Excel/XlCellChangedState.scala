@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCellChangedState extends StObject
 object XlCellChangedState {
   
-  @scala.inline
-  def xlCellChangeApplied: `3` = 3.asInstanceOf[`3`]
+  inline def xlCellChangeApplied: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlCellChanged: `2` = 2.asInstanceOf[`2`]
+  inline def xlCellChanged: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlCellNotChanged: `1` = 1.asInstanceOf[`1`]
+  inline def xlCellNotChanged: `1` = 1.asInstanceOf[`1`]
 }

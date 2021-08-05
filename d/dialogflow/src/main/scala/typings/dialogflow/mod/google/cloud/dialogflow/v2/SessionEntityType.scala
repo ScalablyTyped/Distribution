@@ -82,10 +82,8 @@ object SessionEntityType {
     * @returns SessionEntityType instance
     */
   /* static member */
-  @scala.inline
-  def create(): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SessionEntityType]
-  @scala.inline
-  def create(properties: ISessionEntityType): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
+  inline def create(): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SessionEntityType]
+  inline def create(properties: ISessionEntityType): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
   
   /**
     * Decodes a SessionEntityType message from the specified reader or buffer.
@@ -96,14 +94,10 @@ object SessionEntityType {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
-  @scala.inline
-  def decode(reader: Reader, length: Double): SessionEntityType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SessionEntityType]
-  @scala.inline
-  def decode(reader: Uint8Array): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): SessionEntityType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SessionEntityType]
+  inline def decode(reader: Reader): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
+  inline def decode(reader: Reader, length: Double): SessionEntityType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SessionEntityType]
+  inline def decode(reader: Uint8Array): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
+  inline def decode(reader: Uint8Array, length: Double): SessionEntityType = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SessionEntityType]
   
   /**
     * Decodes a SessionEntityType message from the specified reader or buffer, length delimited.
@@ -113,10 +107,8 @@ object SessionEntityType {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
+  inline def decodeDelimited(reader: Reader): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
+  inline def decodeDelimited(reader: Uint8Array): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
   
   /**
     * Encodes the specified SessionEntityType message. Does not implicitly {@link google.cloud.dialogflow.v2.SessionEntityType.verify|verify} messages.
@@ -125,10 +117,8 @@ object SessionEntityType {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: ISessionEntityType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: ISessionEntityType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: ISessionEntityType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: ISessionEntityType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified SessionEntityType message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.SessionEntityType.verify|verify} messages.
@@ -137,10 +127,8 @@ object SessionEntityType {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: ISessionEntityType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: ISessionEntityType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ISessionEntityType): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ISessionEntityType, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a SessionEntityType message from a plain object. Also converts values to their respective internal types.
@@ -148,8 +136,7 @@ object SessionEntityType {
     * @returns SessionEntityType
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
+  inline def fromObject(`object`: StringDictionary[js.Any]): SessionEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SessionEntityType]
   
   /**
     * Creates a plain object from a SessionEntityType message. Also converts values to other types if specified.
@@ -158,10 +145,8 @@ object SessionEntityType {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: SessionEntityType): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: SessionEntityType, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SessionEntityType): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: SessionEntityType, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a SessionEntityType message.
@@ -169,6 +154,5 @@ object SessionEntityType {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

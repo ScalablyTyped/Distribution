@@ -36,44 +36,32 @@ object typesProvisionedThroughputDescriptionMod {
   }
   object ProvisionedThroughputDescription {
     
-    @scala.inline
-    def apply(): ProvisionedThroughputDescription = {
+    inline def apply(): ProvisionedThroughputDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProvisionedThroughputDescription]
     }
     
-    @scala.inline
-    implicit class ProvisionedThroughputDescriptionMutableBuilder[Self <: ProvisionedThroughputDescription] (val x: Self) extends AnyVal {
+    extension [Self <: ProvisionedThroughputDescription](x: Self) {
       
-      @scala.inline
-      def setLastDecreaseDateTime(value: Date | String | Double): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastDecreaseDateTime(value: Date | String | Double): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
+      inline def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
       
-      @scala.inline
-      def setLastIncreaseDateTime(value: Date | String | Double): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastIncreaseDateTime(value: Date | String | Double): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
+      inline def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
       
-      @scala.inline
-      def setNumberOfDecreasesToday(value: Double): Self = StObject.set(x, "NumberOfDecreasesToday", value.asInstanceOf[js.Any])
+      inline def setNumberOfDecreasesToday(value: Double): Self = StObject.set(x, "NumberOfDecreasesToday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfDecreasesTodayUndefined: Self = StObject.set(x, "NumberOfDecreasesToday", js.undefined)
+      inline def setNumberOfDecreasesTodayUndefined: Self = StObject.set(x, "NumberOfDecreasesToday", js.undefined)
       
-      @scala.inline
-      def setReadCapacityUnits(value: Double): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setReadCapacityUnits(value: Double): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
+      inline def setReadCapacityUnitsUndefined: Self = StObject.set(x, "ReadCapacityUnits", js.undefined)
       
-      @scala.inline
-      def setWriteCapacityUnits(value: Double): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
+      inline def setWriteCapacityUnits(value: Double): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
+      inline def setWriteCapacityUnitsUndefined: Self = StObject.set(x, "WriteCapacityUnits", js.undefined)
     }
   }
   
@@ -95,26 +83,20 @@ object typesProvisionedThroughputDescriptionMod {
   }
   object UnmarshalledProvisionedThroughputDescription {
     
-    @scala.inline
-    def apply(): UnmarshalledProvisionedThroughputDescription = {
+    inline def apply(): UnmarshalledProvisionedThroughputDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledProvisionedThroughputDescription]
     }
     
-    @scala.inline
-    implicit class UnmarshalledProvisionedThroughputDescriptionMutableBuilder[Self <: UnmarshalledProvisionedThroughputDescription] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledProvisionedThroughputDescription](x: Self) {
       
-      @scala.inline
-      def setLastDecreaseDateTime(value: Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastDecreaseDateTime(value: Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
+      inline def setLastDecreaseDateTimeUndefined: Self = StObject.set(x, "LastDecreaseDateTime", js.undefined)
       
-      @scala.inline
-      def setLastIncreaseDateTime(value: Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
+      inline def setLastIncreaseDateTime(value: Date): Self = StObject.set(x, "LastIncreaseDateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
+      inline def setLastIncreaseDateTimeUndefined: Self = StObject.set(x, "LastIncreaseDateTime", js.undefined)
     }
   }
 }

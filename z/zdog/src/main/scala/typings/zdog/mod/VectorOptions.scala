@@ -16,31 +16,23 @@ trait VectorOptions
 }
 object VectorOptions {
   
-  @scala.inline
-  def apply(): VectorOptions = {
+  inline def apply(): VectorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VectorOptions]
   }
   
-  @scala.inline
-  implicit class VectorOptionsMutableBuilder[Self <: VectorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: VectorOptions](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZUndefined: Self = StObject.set(x, "z", js.undefined)
+    inline def setZUndefined: Self = StObject.set(x, "z", js.undefined)
   }
 }

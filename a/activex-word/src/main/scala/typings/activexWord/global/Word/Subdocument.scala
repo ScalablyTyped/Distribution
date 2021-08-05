@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Subdocument")
 @js.native
-class Subdocument protected ()
+/* private */ class Subdocument ()
   extends StObject
      with typings.activexWord.Word.Subdocument {
   
@@ -46,7 +46,7 @@ class Subdocument protected ()
   /* CompleteClass */
   override def Split(Range: typings.activexWord.Word.Range): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Subdocument_typekey")
   var WordDotSubdocument_typekey: typings.activexWord.Word.Subdocument = js.native
 }

@@ -18,8 +18,7 @@ trait FilterQualityEnumValues
 }
 object FilterQualityEnumValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     High: FilterQuality,
     Low: FilterQuality,
     Medium: FilterQuality,
@@ -30,19 +29,14 @@ object FilterQualityEnumValues {
     __obj.asInstanceOf[FilterQualityEnumValues]
   }
   
-  @scala.inline
-  implicit class FilterQualityEnumValuesMutableBuilder[Self <: FilterQualityEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: FilterQualityEnumValues](x: Self) {
     
-    @scala.inline
-    def setHigh(value: FilterQuality): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
+    inline def setHigh(value: FilterQuality): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLow(value: FilterQuality): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
+    inline def setLow(value: FilterQuality): Self = StObject.set(x, "Low", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedium(value: FilterQuality): Self = StObject.set(x, "Medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: FilterQuality): Self = StObject.set(x, "Medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: FilterQuality): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+    inline def setNone(value: FilterQuality): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
   }
 }

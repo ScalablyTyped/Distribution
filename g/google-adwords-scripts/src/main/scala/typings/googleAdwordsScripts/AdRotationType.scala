@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AdRotationType extends StObject
 object AdRotationType {
   
-  @scala.inline
-  def CONVERSION_OPTIMIZE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CONVERSION_OPTIMIZE = "CONVERSION_OPTIMIZE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CONVERSION_OPTIMIZE]
+  inline def CONVERSION_OPTIMIZE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CONVERSION_OPTIMIZE = "CONVERSION_OPTIMIZE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.CONVERSION_OPTIMIZE]
   
-  @scala.inline
-  def OPTIMIZE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.OPTIMIZE = "OPTIMIZE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.OPTIMIZE]
+  inline def OPTIMIZE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.OPTIMIZE = "OPTIMIZE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.OPTIMIZE]
   
-  @scala.inline
-  def ROTATE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ROTATE = "ROTATE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ROTATE]
+  inline def ROTATE: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ROTATE = "ROTATE".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ROTATE]
   
-  @scala.inline
-  def ROTATE_FOREVER: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ROTATE_FOREVER = "ROTATE_FOREVER".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ROTATE_FOREVER]
+  inline def ROTATE_FOREVER: typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ROTATE_FOREVER = "ROTATE_FOREVER".asInstanceOf[typings.googleAdwordsScripts.googleAdwordsScriptsStrings.ROTATE_FOREVER]
 }

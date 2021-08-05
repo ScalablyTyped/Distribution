@@ -17,19 +17,15 @@ trait LocatorProperties
 }
 object LocatorProperties {
   
-  @scala.inline
-  def apply(): LocatorProperties = {
+  inline def apply(): LocatorProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocatorProperties]
   }
   
-  @scala.inline
-  implicit class LocatorPropertiesMutableBuilder[Self <: LocatorProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LocatorProperties](x: Self) {
     
-    @scala.inline
-    def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
   }
 }

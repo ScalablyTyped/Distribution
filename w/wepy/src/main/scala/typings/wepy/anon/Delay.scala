@@ -16,25 +16,19 @@ trait Delay extends StObject {
 }
 object Delay {
   
-  @scala.inline
-  def apply(delay: Double, duration: Double, timingFunction: String, transformOrigin: String): Delay = {
+  inline def apply(delay: Double, duration: Double, timingFunction: String, transformOrigin: String): Delay = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], timingFunction = timingFunction.asInstanceOf[js.Any], transformOrigin = transformOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Delay]
   }
   
-  @scala.inline
-  implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+  extension [Self <: Delay](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
+    inline def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+    inline def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
   }
 }

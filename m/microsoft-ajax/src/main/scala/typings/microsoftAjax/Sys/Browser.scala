@@ -47,28 +47,21 @@ trait Browser extends StObject {
 }
 object Browser {
   
-  @scala.inline
-  def apply(agent: js.Any, documentMode: Double, hasDebuggerStatement: Boolean, name: String, version: Double): Browser = {
+  inline def apply(agent: js.Any, documentMode: Double, hasDebuggerStatement: Boolean, name: String, version: Double): Browser = {
     val __obj = js.Dynamic.literal(agent = agent.asInstanceOf[js.Any], documentMode = documentMode.asInstanceOf[js.Any], hasDebuggerStatement = hasDebuggerStatement.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Browser]
   }
   
-  @scala.inline
-  implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+  extension [Self <: Browser](x: Self) {
     
-    @scala.inline
-    def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: js.Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentMode(value: Double): Self = StObject.set(x, "documentMode", value.asInstanceOf[js.Any])
+    inline def setDocumentMode(value: Double): Self = StObject.set(x, "documentMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasDebuggerStatement(value: Boolean): Self = StObject.set(x, "hasDebuggerStatement", value.asInstanceOf[js.Any])
+    inline def setHasDebuggerStatement(value: Boolean): Self = StObject.set(x, "hasDebuggerStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

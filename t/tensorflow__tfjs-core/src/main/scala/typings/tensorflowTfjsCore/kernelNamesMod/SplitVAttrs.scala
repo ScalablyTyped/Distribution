@@ -12,22 +12,17 @@ trait SplitVAttrs extends StObject {
 }
 object SplitVAttrs {
   
-  @scala.inline
-  def apply(axis: Double, numOrSizeSplits: js.Array[Double] | Double): SplitVAttrs = {
+  inline def apply(axis: Double, numOrSizeSplits: js.Array[Double] | Double): SplitVAttrs = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], numOrSizeSplits = numOrSizeSplits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitVAttrs]
   }
   
-  @scala.inline
-  implicit class SplitVAttrsMutableBuilder[Self <: SplitVAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: SplitVAttrs](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumOrSizeSplits(value: js.Array[Double] | Double): Self = StObject.set(x, "numOrSizeSplits", value.asInstanceOf[js.Any])
+    inline def setNumOrSizeSplits(value: js.Array[Double] | Double): Self = StObject.set(x, "numOrSizeSplits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumOrSizeSplitsVarargs(value: Double*): Self = StObject.set(x, "numOrSizeSplits", js.Array(value :_*))
+    inline def setNumOrSizeSplitsVarargs(value: Double*): Self = StObject.set(x, "numOrSizeSplits", js.Array(value :_*))
   }
 }

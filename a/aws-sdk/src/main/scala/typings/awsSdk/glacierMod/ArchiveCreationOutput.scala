@@ -23,31 +23,23 @@ trait ArchiveCreationOutput extends StObject {
 }
 object ArchiveCreationOutput {
   
-  @scala.inline
-  def apply(): ArchiveCreationOutput = {
+  inline def apply(): ArchiveCreationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArchiveCreationOutput]
   }
   
-  @scala.inline
-  implicit class ArchiveCreationOutputMutableBuilder[Self <: ArchiveCreationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ArchiveCreationOutput](x: Self) {
     
-    @scala.inline
-    def setArchiveId(value: String): Self = StObject.set(x, "archiveId", value.asInstanceOf[js.Any])
+    inline def setArchiveId(value: String): Self = StObject.set(x, "archiveId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveIdUndefined: Self = StObject.set(x, "archiveId", js.undefined)
+    inline def setArchiveIdUndefined: Self = StObject.set(x, "archiveId", js.undefined)
     
-    @scala.inline
-    def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+    inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

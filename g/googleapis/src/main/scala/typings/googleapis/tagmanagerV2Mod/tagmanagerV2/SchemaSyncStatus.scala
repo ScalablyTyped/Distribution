@@ -21,25 +21,19 @@ trait SchemaSyncStatus extends StObject {
 }
 object SchemaSyncStatus {
   
-  @scala.inline
-  def apply(): SchemaSyncStatus = {
+  inline def apply(): SchemaSyncStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSyncStatus]
   }
   
-  @scala.inline
-  implicit class SchemaSyncStatusMutableBuilder[Self <: SchemaSyncStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSyncStatus](x: Self) {
     
-    @scala.inline
-    def setMergeConflict(value: Boolean): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
+    inline def setMergeConflict(value: Boolean): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
+    inline def setMergeConflictUndefined: Self = StObject.set(x, "mergeConflict", js.undefined)
     
-    @scala.inline
-    def setSyncError(value: Boolean): Self = StObject.set(x, "syncError", value.asInstanceOf[js.Any])
+    inline def setSyncError(value: Boolean): Self = StObject.set(x, "syncError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncErrorUndefined: Self = StObject.set(x, "syncError", js.undefined)
+    inline def setSyncErrorUndefined: Self = StObject.set(x, "syncError", js.undefined)
   }
 }

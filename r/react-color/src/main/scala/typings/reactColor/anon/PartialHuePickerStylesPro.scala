@@ -14,25 +14,19 @@ trait PartialHuePickerStylesPro extends StObject {
 }
 object PartialHuePickerStylesPro {
   
-  @scala.inline
-  def apply(): PartialHuePickerStylesPro = {
+  inline def apply(): PartialHuePickerStylesPro = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialHuePickerStylesPro]
   }
   
-  @scala.inline
-  implicit class PartialHuePickerStylesProMutableBuilder[Self <: PartialHuePickerStylesPro] (val x: Self) extends AnyVal {
+  extension [Self <: PartialHuePickerStylesPro](x: Self) {
     
-    @scala.inline
-    def setHue(value: CSSProperties): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
+    inline def setHue(value: CSSProperties): Self = StObject.set(x, "hue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
+    inline def setHueUndefined: Self = StObject.set(x, "hue", js.undefined)
     
-    @scala.inline
-    def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+    inline def setPicker(value: CSSProperties): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
+    inline def setPickerUndefined: Self = StObject.set(x, "picker", js.undefined)
   }
 }

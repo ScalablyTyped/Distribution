@@ -25,20 +25,16 @@ object icasegeneratorMod {
   }
   object ICaseGenerator {
     
-    @scala.inline
-    def apply(at: Double => js.Array[Double], size: () => Double): ICaseGenerator = {
+    inline def apply(at: Double => js.Array[Double], size: () => Double): ICaseGenerator = {
       val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), size = js.Any.fromFunction0(size))
       __obj.asInstanceOf[ICaseGenerator]
     }
     
-    @scala.inline
-    implicit class ICaseGeneratorMutableBuilder[Self <: ICaseGenerator] (val x: Self) extends AnyVal {
+    extension [Self <: ICaseGenerator](x: Self) {
       
-      @scala.inline
-      def setAt(value: Double => js.Array[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
+      inline def setAt(value: Double => js.Array[Double]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     }
   }
 }

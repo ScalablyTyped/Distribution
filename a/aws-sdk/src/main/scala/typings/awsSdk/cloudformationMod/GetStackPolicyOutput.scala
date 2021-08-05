@@ -13,19 +13,15 @@ trait GetStackPolicyOutput extends StObject {
 }
 object GetStackPolicyOutput {
   
-  @scala.inline
-  def apply(): GetStackPolicyOutput = {
+  inline def apply(): GetStackPolicyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetStackPolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetStackPolicyOutputMutableBuilder[Self <: GetStackPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetStackPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setStackPolicyBody(value: StackPolicyBody): Self = StObject.set(x, "StackPolicyBody", value.asInstanceOf[js.Any])
+    inline def setStackPolicyBody(value: StackPolicyBody): Self = StObject.set(x, "StackPolicyBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackPolicyBodyUndefined: Self = StObject.set(x, "StackPolicyBody", js.undefined)
+    inline def setStackPolicyBodyUndefined: Self = StObject.set(x, "StackPolicyBody", js.undefined)
   }
 }

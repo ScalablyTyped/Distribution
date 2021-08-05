@@ -10,11 +10,8 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
+  inline def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
-  @scala.inline
-  def processSize(size: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("processSize")(size.asInstanceOf[js.Any]).asInstanceOf[String | Double]
-  @scala.inline
-  def processSize(size: Double): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("processSize")(size.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  inline def processSize(size: String): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("processSize")(size.asInstanceOf[js.Any]).asInstanceOf[String | Double]
+  inline def processSize(size: Double): String | Double = ^.asInstanceOf[js.Dynamic].applyDynamic("processSize")(size.asInstanceOf[js.Any]).asInstanceOf[String | Double]
 }

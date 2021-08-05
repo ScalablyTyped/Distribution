@@ -28,22 +28,17 @@ trait IDisplayData
 }
 object IDisplayData {
   
-  @scala.inline
-  def apply(data: IMimeBundle, metadata: OutputMetadata): IDisplayData = {
+  inline def apply(data: IMimeBundle, metadata: OutputMetadata): IDisplayData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], output_type = "display_data")
     __obj.asInstanceOf[IDisplayData]
   }
   
-  @scala.inline
-  implicit class IDisplayDataMutableBuilder[Self <: IDisplayData] (val x: Self) extends AnyVal {
+  extension [Self <: IDisplayData](x: Self) {
     
-    @scala.inline
-    def setData(value: IMimeBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IMimeBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: OutputMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: OutputMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_type(value: display_data): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+    inline def setOutput_type(value: display_data): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }
 }

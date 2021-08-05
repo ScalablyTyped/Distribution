@@ -16,16 +16,13 @@ trait AndroidApi extends StObject {
 }
 object AndroidApi {
   
-  @scala.inline
-  def apply(actionViewIntent: (String, String) => js.Promise[js.Any]): AndroidApi = {
+  inline def apply(actionViewIntent: (String, String) => js.Promise[js.Any]): AndroidApi = {
     val __obj = js.Dynamic.literal(actionViewIntent = js.Any.fromFunction2(actionViewIntent))
     __obj.asInstanceOf[AndroidApi]
   }
   
-  @scala.inline
-  implicit class AndroidApiMutableBuilder[Self <: AndroidApi] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidApi](x: Self) {
     
-    @scala.inline
-    def setActionViewIntent(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "actionViewIntent", js.Any.fromFunction2(value))
+    inline def setActionViewIntent(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "actionViewIntent", js.Any.fromFunction2(value))
   }
 }

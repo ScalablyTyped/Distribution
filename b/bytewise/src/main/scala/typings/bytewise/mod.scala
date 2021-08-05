@@ -23,20 +23,16 @@ object mod extends Shortcut {
   }
   object Bytewise {
     
-    @scala.inline
-    def apply(decode: Buffer => js.Any, encode: js.Any => Buffer): Bytewise = {
+    inline def apply(decode: Buffer => js.Any, encode: js.Any => Buffer): Bytewise = {
       val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode))
       __obj.asInstanceOf[Bytewise]
     }
     
-    @scala.inline
-    implicit class BytewiseMutableBuilder[Self <: Bytewise] (val x: Self) extends AnyVal {
+    extension [Self <: Bytewise](x: Self) {
       
-      @scala.inline
-      def setDecode(value: Buffer => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      inline def setDecode(value: Buffer => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEncode(value: js.Any => Buffer): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      inline def setEncode(value: js.Any => Buffer): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }
   }
   

@@ -18,25 +18,19 @@ trait CommitTransactionResult extends StObject {
 }
 object CommitTransactionResult {
   
-  @scala.inline
-  def apply(): CommitTransactionResult = {
+  inline def apply(): CommitTransactionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitTransactionResult]
   }
   
-  @scala.inline
-  implicit class CommitTransactionResultMutableBuilder[Self <: CommitTransactionResult] (val x: Self) extends AnyVal {
+  extension [Self <: CommitTransactionResult](x: Self) {
     
-    @scala.inline
-    def setCommitDigest(value: CommitDigest): Self = StObject.set(x, "CommitDigest", value.asInstanceOf[js.Any])
+    inline def setCommitDigest(value: CommitDigest): Self = StObject.set(x, "CommitDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitDigestUndefined: Self = StObject.set(x, "CommitDigest", js.undefined)
+    inline def setCommitDigestUndefined: Self = StObject.set(x, "CommitDigest", js.undefined)
     
-    @scala.inline
-    def setTransactionId(value: TransactionId): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
+    inline def setTransactionId(value: TransactionId): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
+    inline def setTransactionIdUndefined: Self = StObject.set(x, "TransactionId", js.undefined)
   }
 }

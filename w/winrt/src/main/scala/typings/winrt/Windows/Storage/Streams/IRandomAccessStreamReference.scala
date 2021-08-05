@@ -11,16 +11,13 @@ trait IRandomAccessStreamReference extends StObject {
 }
 object IRandomAccessStreamReference {
   
-  @scala.inline
-  def apply(openReadAsync: () => IAsyncOperation[IRandomAccessStreamWithContentType]): IRandomAccessStreamReference = {
+  inline def apply(openReadAsync: () => IAsyncOperation[IRandomAccessStreamWithContentType]): IRandomAccessStreamReference = {
     val __obj = js.Dynamic.literal(openReadAsync = js.Any.fromFunction0(openReadAsync))
     __obj.asInstanceOf[IRandomAccessStreamReference]
   }
   
-  @scala.inline
-  implicit class IRandomAccessStreamReferenceMutableBuilder[Self <: IRandomAccessStreamReference] (val x: Self) extends AnyVal {
+  extension [Self <: IRandomAccessStreamReference](x: Self) {
     
-    @scala.inline
-    def setOpenReadAsync(value: () => IAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "openReadAsync", js.Any.fromFunction0(value))
+    inline def setOpenReadAsync(value: () => IAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "openReadAsync", js.Any.fromFunction0(value))
   }
 }

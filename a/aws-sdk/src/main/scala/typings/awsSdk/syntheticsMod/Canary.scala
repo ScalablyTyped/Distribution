@@ -74,103 +74,71 @@ trait Canary extends StObject {
 }
 object Canary {
   
-  @scala.inline
-  def apply(): Canary = {
+  inline def apply(): Canary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Canary]
   }
   
-  @scala.inline
-  implicit class CanaryMutableBuilder[Self <: Canary] (val x: Self) extends AnyVal {
+  extension [Self <: Canary](x: Self) {
     
-    @scala.inline
-    def setArtifactS3Location(value: String): Self = StObject.set(x, "ArtifactS3Location", value.asInstanceOf[js.Any])
+    inline def setArtifactS3Location(value: String): Self = StObject.set(x, "ArtifactS3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactS3LocationUndefined: Self = StObject.set(x, "ArtifactS3Location", js.undefined)
+    inline def setArtifactS3LocationUndefined: Self = StObject.set(x, "ArtifactS3Location", js.undefined)
     
-    @scala.inline
-    def setCode(value: CanaryCodeOutput): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CanaryCodeOutput): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setEngineArn(value: FunctionArn): Self = StObject.set(x, "EngineArn", value.asInstanceOf[js.Any])
+    inline def setEngineArn(value: FunctionArn): Self = StObject.set(x, "EngineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineArnUndefined: Self = StObject.set(x, "EngineArn", js.undefined)
+    inline def setEngineArnUndefined: Self = StObject.set(x, "EngineArn", js.undefined)
     
-    @scala.inline
-    def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: RoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
+    inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
     
-    @scala.inline
-    def setFailureRetentionPeriodInDays(value: MaxSize1024): Self = StObject.set(x, "FailureRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setFailureRetentionPeriodInDays(value: MaxSize1024): Self = StObject.set(x, "FailureRetentionPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureRetentionPeriodInDaysUndefined: Self = StObject.set(x, "FailureRetentionPeriodInDays", js.undefined)
+    inline def setFailureRetentionPeriodInDaysUndefined: Self = StObject.set(x, "FailureRetentionPeriodInDays", js.undefined)
     
-    @scala.inline
-    def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: UUID): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRunConfig(value: CanaryRunConfigOutput): Self = StObject.set(x, "RunConfig", value.asInstanceOf[js.Any])
+    inline def setRunConfig(value: CanaryRunConfigOutput): Self = StObject.set(x, "RunConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunConfigUndefined: Self = StObject.set(x, "RunConfig", js.undefined)
+    inline def setRunConfigUndefined: Self = StObject.set(x, "RunConfig", js.undefined)
     
-    @scala.inline
-    def setRuntimeVersion(value: String): Self = StObject.set(x, "RuntimeVersion", value.asInstanceOf[js.Any])
+    inline def setRuntimeVersion(value: String): Self = StObject.set(x, "RuntimeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeVersionUndefined: Self = StObject.set(x, "RuntimeVersion", js.undefined)
+    inline def setRuntimeVersionUndefined: Self = StObject.set(x, "RuntimeVersion", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: CanaryScheduleOutput): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: CanaryScheduleOutput): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CanaryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CanaryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setSuccessRetentionPeriodInDays(value: MaxSize1024): Self = StObject.set(x, "SuccessRetentionPeriodInDays", value.asInstanceOf[js.Any])
+    inline def setSuccessRetentionPeriodInDays(value: MaxSize1024): Self = StObject.set(x, "SuccessRetentionPeriodInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessRetentionPeriodInDaysUndefined: Self = StObject.set(x, "SuccessRetentionPeriodInDays", js.undefined)
+    inline def setSuccessRetentionPeriodInDaysUndefined: Self = StObject.set(x, "SuccessRetentionPeriodInDays", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTimeline(value: CanaryTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: CanaryTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
+    inline def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
     
-    @scala.inline
-    def setVpcConfig(value: VpcConfigOutput): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+    inline def setVpcConfig(value: VpcConfigOutput): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

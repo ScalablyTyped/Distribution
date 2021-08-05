@@ -38,10 +38,8 @@ object storage {
     * @param app The app to create a storage service for.
     *     If not passed, uses the default app.
     */
-  @scala.inline
-  def apply(): Storage = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Storage]
-  @scala.inline
-  def apply(app: App): Storage = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
+  inline def apply(): Storage = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Storage]
+  inline def apply(app: App): Storage = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Storage]
   
   @JSImport("firebase", "default.storage")
   @js.native
@@ -72,11 +70,9 @@ object storage {
     @JSImport("firebase", "default.storage.StringFormat.BASE64URL")
     @js.native
     def BASE64URL: typings.firebase.mod.firebase.storage.StringFormat = js.native
-    @scala.inline
-    def BASE64URL_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE64URL")(x.asInstanceOf[js.Any])
+    inline def BASE64URL_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE64URL")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def BASE64_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE64")(x.asInstanceOf[js.Any])
+    inline def BASE64_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASE64")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates the string is a data URL, such as one obtained from
@@ -90,8 +86,7 @@ object storage {
     @JSImport("firebase", "default.storage.StringFormat.DATA_URL")
     @js.native
     def DATA_URL: typings.firebase.mod.firebase.storage.StringFormat = js.native
-    @scala.inline
-    def DATA_URL_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_URL")(x.asInstanceOf[js.Any])
+    inline def DATA_URL_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_URL")(x.asInstanceOf[js.Any])
     
     /**
       * Indicates the string should be interpreted "raw", that is, as normal text.
@@ -103,8 +98,7 @@ object storage {
     @JSImport("firebase", "default.storage.StringFormat.RAW")
     @js.native
     def RAW: typings.firebase.mod.firebase.storage.StringFormat = js.native
-    @scala.inline
-    def RAW_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RAW")(x.asInstanceOf[js.Any])
+    inline def RAW_=(x: typings.firebase.mod.firebase.storage.StringFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RAW")(x.asInstanceOf[js.Any])
   }
   
   object TaskEvent {
@@ -129,8 +123,7 @@ object storage {
     @JSImport("firebase", "default.storage.TaskEvent.STATE_CHANGED")
     @js.native
     def STATE_CHANGED: typings.firebase.mod.firebase.storage.TaskEvent = js.native
-    @scala.inline
-    def STATE_CHANGED_=(x: typings.firebase.mod.firebase.storage.TaskEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_CHANGED")(x.asInstanceOf[js.Any])
+    inline def STATE_CHANGED_=(x: typings.firebase.mod.firebase.storage.TaskEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_CHANGED")(x.asInstanceOf[js.Any])
   }
   
   object TaskState {
@@ -142,31 +135,26 @@ object storage {
     @JSImport("firebase", "default.storage.TaskState.CANCELED")
     @js.native
     def CANCELED: typings.firebase.mod.firebase.storage.TaskState = js.native
-    @scala.inline
-    def CANCELED_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELED")(x.asInstanceOf[js.Any])
+    inline def CANCELED_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELED")(x.asInstanceOf[js.Any])
     
     @JSImport("firebase", "default.storage.TaskState.ERROR")
     @js.native
     def ERROR: typings.firebase.mod.firebase.storage.TaskState = js.native
-    @scala.inline
-    def ERROR_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+    inline def ERROR_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
     
     @JSImport("firebase", "default.storage.TaskState.PAUSED")
     @js.native
     def PAUSED: typings.firebase.mod.firebase.storage.TaskState = js.native
-    @scala.inline
-    def PAUSED_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
+    inline def PAUSED_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PAUSED")(x.asInstanceOf[js.Any])
     
     @JSImport("firebase", "default.storage.TaskState.RUNNING")
     @js.native
     def RUNNING: typings.firebase.mod.firebase.storage.TaskState = js.native
-    @scala.inline
-    def RUNNING_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
+    inline def RUNNING_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RUNNING")(x.asInstanceOf[js.Any])
     
     @JSImport("firebase", "default.storage.TaskState.SUCCESS")
     @js.native
     def SUCCESS: typings.firebase.mod.firebase.storage.TaskState = js.native
-    @scala.inline
-    def SUCCESS_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+    inline def SUCCESS_=(x: typings.firebase.mod.firebase.storage.TaskState): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
   }
 }

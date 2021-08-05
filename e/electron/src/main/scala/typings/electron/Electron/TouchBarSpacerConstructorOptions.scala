@@ -16,19 +16,15 @@ trait TouchBarSpacerConstructorOptions extends StObject {
 }
 object TouchBarSpacerConstructorOptions {
   
-  @scala.inline
-  def apply(): TouchBarSpacerConstructorOptions = {
+  inline def apply(): TouchBarSpacerConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchBarSpacerConstructorOptions]
   }
   
-  @scala.inline
-  implicit class TouchBarSpacerConstructorOptionsMutableBuilder[Self <: TouchBarSpacerConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchBarSpacerConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setSize(value: small | large | flexible): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: small | large | flexible): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

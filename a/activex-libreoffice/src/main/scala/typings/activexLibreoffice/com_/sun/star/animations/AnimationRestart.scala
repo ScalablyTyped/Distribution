@@ -19,19 +19,14 @@ object AnimationRestart {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ALWAYS: `1` = 1.asInstanceOf[`1`]
+    inline def ALWAYS: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def DEFAULT: `0` = 0.asInstanceOf[`0`]
+    inline def DEFAULT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def INHERIT: `0` = 0.asInstanceOf[`0`]
+    inline def INHERIT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def NEVER: `3` = 3.asInstanceOf[`3`]
+    inline def NEVER: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def WHEN_NOT_ACTIVE: `2` = 2.asInstanceOf[`2`]
+    inline def WHEN_NOT_ACTIVE: `2` = 2.asInstanceOf[`2`]
   }
 }

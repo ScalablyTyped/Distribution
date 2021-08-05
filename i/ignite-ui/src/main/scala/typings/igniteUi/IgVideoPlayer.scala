@@ -258,259 +258,175 @@ trait IgVideoPlayer
 }
 object IgVideoPlayer {
   
-  @scala.inline
-  def apply(): IgVideoPlayer = {
+  inline def apply(): IgVideoPlayer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgVideoPlayer]
   }
   
-  @scala.inline
-  implicit class IgVideoPlayerMutableBuilder[Self <: IgVideoPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: IgVideoPlayer](x: Self) {
     
-    @scala.inline
-    def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
+    inline def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
+    inline def setAutohideUndefined: Self = StObject.set(x, "autohide", js.undefined)
     
-    @scala.inline
-    def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
-    @scala.inline
-    def setBannerClick(value: (/* event */ Event, /* ui */ BannerClickEventUIParam) => Unit): Self = StObject.set(x, "bannerClick", js.Any.fromFunction2(value))
+    inline def setBannerClick(value: (/* event */ Event, /* ui */ BannerClickEventUIParam) => Unit): Self = StObject.set(x, "bannerClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBannerClickUndefined: Self = StObject.set(x, "bannerClick", js.undefined)
+    inline def setBannerClickUndefined: Self = StObject.set(x, "bannerClick", js.undefined)
     
-    @scala.inline
-    def setBannerHidden(value: (/* event */ Event, /* ui */ BannerHiddenEventUIParam) => Unit): Self = StObject.set(x, "bannerHidden", js.Any.fromFunction2(value))
+    inline def setBannerHidden(value: (/* event */ Event, /* ui */ BannerHiddenEventUIParam) => Unit): Self = StObject.set(x, "bannerHidden", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBannerHiddenUndefined: Self = StObject.set(x, "bannerHidden", js.undefined)
+    inline def setBannerHiddenUndefined: Self = StObject.set(x, "bannerHidden", js.undefined)
     
-    @scala.inline
-    def setBannerVisible(value: (/* event */ Event, /* ui */ BannerVisibleEventUIParam) => Unit): Self = StObject.set(x, "bannerVisible", js.Any.fromFunction2(value))
+    inline def setBannerVisible(value: (/* event */ Event, /* ui */ BannerVisibleEventUIParam) => Unit): Self = StObject.set(x, "bannerVisible", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBannerVisibleUndefined: Self = StObject.set(x, "bannerVisible", js.undefined)
+    inline def setBannerVisibleUndefined: Self = StObject.set(x, "bannerVisible", js.undefined)
     
-    @scala.inline
-    def setBanners(value: js.Array[IgVideoPlayerBanner]): Self = StObject.set(x, "banners", value.asInstanceOf[js.Any])
+    inline def setBanners(value: js.Array[IgVideoPlayerBanner]): Self = StObject.set(x, "banners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBannersUndefined: Self = StObject.set(x, "banners", js.undefined)
+    inline def setBannersUndefined: Self = StObject.set(x, "banners", js.undefined)
     
-    @scala.inline
-    def setBannersVarargs(value: IgVideoPlayerBanner*): Self = StObject.set(x, "banners", js.Array(value :_*))
+    inline def setBannersVarargs(value: IgVideoPlayerBanner*): Self = StObject.set(x, "banners", js.Array(value :_*))
     
-    @scala.inline
-    def setBookmarkClick(value: (/* event */ Event, /* ui */ BookmarkClickEventUIParam) => Unit): Self = StObject.set(x, "bookmarkClick", js.Any.fromFunction2(value))
+    inline def setBookmarkClick(value: (/* event */ Event, /* ui */ BookmarkClickEventUIParam) => Unit): Self = StObject.set(x, "bookmarkClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBookmarkClickUndefined: Self = StObject.set(x, "bookmarkClick", js.undefined)
+    inline def setBookmarkClickUndefined: Self = StObject.set(x, "bookmarkClick", js.undefined)
     
-    @scala.inline
-    def setBookmarkHit(value: (/* event */ Event, /* ui */ BookmarkHitEventUIParam) => Unit): Self = StObject.set(x, "bookmarkHit", js.Any.fromFunction2(value))
+    inline def setBookmarkHit(value: (/* event */ Event, /* ui */ BookmarkHitEventUIParam) => Unit): Self = StObject.set(x, "bookmarkHit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBookmarkHitUndefined: Self = StObject.set(x, "bookmarkHit", js.undefined)
+    inline def setBookmarkHitUndefined: Self = StObject.set(x, "bookmarkHit", js.undefined)
     
-    @scala.inline
-    def setBookmarks(value: js.Array[IgVideoPlayerBookmark]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: js.Array[IgVideoPlayerBookmark]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
+    inline def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
-    @scala.inline
-    def setBookmarksVarargs(value: IgVideoPlayerBookmark*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
+    inline def setBookmarksVarargs(value: IgVideoPlayerBookmark*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
     
-    @scala.inline
-    def setBrowserControls(value: Boolean): Self = StObject.set(x, "browserControls", value.asInstanceOf[js.Any])
+    inline def setBrowserControls(value: Boolean): Self = StObject.set(x, "browserControls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserControlsUndefined: Self = StObject.set(x, "browserControls", js.undefined)
+    inline def setBrowserControlsUndefined: Self = StObject.set(x, "browserControls", js.undefined)
     
-    @scala.inline
-    def setBrowserNotSupported(value: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit): Self = StObject.set(x, "browserNotSupported", js.Any.fromFunction2(value))
+    inline def setBrowserNotSupported(value: (/* event */ Event, /* ui */ BrowserNotSupportedEventUIParam) => Unit): Self = StObject.set(x, "browserNotSupported", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBrowserNotSupportedUndefined: Self = StObject.set(x, "browserNotSupported", js.undefined)
+    inline def setBrowserNotSupportedUndefined: Self = StObject.set(x, "browserNotSupported", js.undefined)
     
-    @scala.inline
-    def setBuffering(value: (/* event */ Event, /* ui */ BufferingEventUIParam) => Unit): Self = StObject.set(x, "buffering", js.Any.fromFunction2(value))
+    inline def setBuffering(value: (/* event */ Event, /* ui */ BufferingEventUIParam) => Unit): Self = StObject.set(x, "buffering", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBufferingUndefined: Self = StObject.set(x, "buffering", js.undefined)
+    inline def setBufferingUndefined: Self = StObject.set(x, "buffering", js.undefined)
     
-    @scala.inline
-    def setCenterButtonHideDelay(value: Double): Self = StObject.set(x, "centerButtonHideDelay", value.asInstanceOf[js.Any])
+    inline def setCenterButtonHideDelay(value: Double): Self = StObject.set(x, "centerButtonHideDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterButtonHideDelayUndefined: Self = StObject.set(x, "centerButtonHideDelay", js.undefined)
+    inline def setCenterButtonHideDelayUndefined: Self = StObject.set(x, "centerButtonHideDelay", js.undefined)
     
-    @scala.inline
-    def setCommercials(value: IgVideoPlayerCommercials): Self = StObject.set(x, "commercials", value.asInstanceOf[js.Any])
+    inline def setCommercials(value: IgVideoPlayerCommercials): Self = StObject.set(x, "commercials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommercialsUndefined: Self = StObject.set(x, "commercials", js.undefined)
+    inline def setCommercialsUndefined: Self = StObject.set(x, "commercials", js.undefined)
     
-    @scala.inline
-    def setEnded(value: (/* event */ Event, /* ui */ EndedEventUIParam) => Unit): Self = StObject.set(x, "ended", js.Any.fromFunction2(value))
+    inline def setEnded(value: (/* event */ Event, /* ui */ EndedEventUIParam) => Unit): Self = StObject.set(x, "ended", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
+    inline def setEndedUndefined: Self = StObject.set(x, "ended", js.undefined)
     
-    @scala.inline
-    def setEnterFullScreen(value: (/* event */ Event, /* ui */ EnterFullScreenEventUIParam) => Unit): Self = StObject.set(x, "enterFullScreen", js.Any.fromFunction2(value))
+    inline def setEnterFullScreen(value: (/* event */ Event, /* ui */ EnterFullScreenEventUIParam) => Unit): Self = StObject.set(x, "enterFullScreen", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnterFullScreenUndefined: Self = StObject.set(x, "enterFullScreen", js.undefined)
+    inline def setEnterFullScreenUndefined: Self = StObject.set(x, "enterFullScreen", js.undefined)
     
-    @scala.inline
-    def setExitFullScreen(value: (/* event */ Event, /* ui */ ExitFullScreenEventUIParam) => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction2(value))
+    inline def setExitFullScreen(value: (/* event */ Event, /* ui */ ExitFullScreenEventUIParam) => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExitFullScreenUndefined: Self = StObject.set(x, "exitFullScreen", js.undefined)
+    inline def setExitFullScreenUndefined: Self = StObject.set(x, "exitFullScreen", js.undefined)
     
-    @scala.inline
-    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+    inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocale(value: IgVideoPlayerLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: IgVideoPlayerLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
     
-    @scala.inline
-    def setPaused(value: (/* event */ Event, /* ui */ PausedEventUIParam) => Unit): Self = StObject.set(x, "paused", js.Any.fromFunction2(value))
+    inline def setPaused(value: (/* event */ Event, /* ui */ PausedEventUIParam) => Unit): Self = StObject.set(x, "paused", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
+    inline def setPausedUndefined: Self = StObject.set(x, "paused", js.undefined)
     
-    @scala.inline
-    def setPlaying(value: (/* event */ Event, /* ui */ PlayingEventUIParam) => Unit): Self = StObject.set(x, "playing", js.Any.fromFunction2(value))
+    inline def setPlaying(value: (/* event */ Event, /* ui */ PlayingEventUIParam) => Unit): Self = StObject.set(x, "playing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
+    inline def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
     
-    @scala.inline
-    def setPosterUrl(value: String): Self = StObject.set(x, "posterUrl", value.asInstanceOf[js.Any])
+    inline def setPosterUrl(value: String): Self = StObject.set(x, "posterUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosterUrlUndefined: Self = StObject.set(x, "posterUrl", js.undefined)
+    inline def setPosterUrlUndefined: Self = StObject.set(x, "posterUrl", js.undefined)
     
-    @scala.inline
-    def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+    inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
     
-    @scala.inline
-    def setProgress(value: (/* event */ Event, /* ui */ ProgressEventUIParam) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    inline def setProgress(value: (/* event */ Event, /* ui */ ProgressEventUIParam) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProgressLabelFormat(value: String): Self = StObject.set(x, "progressLabelFormat", value.asInstanceOf[js.Any])
+    inline def setProgressLabelFormat(value: String): Self = StObject.set(x, "progressLabelFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressLabelFormatUndefined: Self = StObject.set(x, "progressLabelFormat", js.undefined)
+    inline def setProgressLabelFormatUndefined: Self = StObject.set(x, "progressLabelFormat", js.undefined)
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
-    @scala.inline
-    def setRelatedVideoClick(value: (/* event */ Event, /* ui */ RelatedVideoClickEventUIParam) => Unit): Self = StObject.set(x, "relatedVideoClick", js.Any.fromFunction2(value))
+    inline def setRelatedVideoClick(value: (/* event */ Event, /* ui */ RelatedVideoClickEventUIParam) => Unit): Self = StObject.set(x, "relatedVideoClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRelatedVideoClickUndefined: Self = StObject.set(x, "relatedVideoClick", js.undefined)
+    inline def setRelatedVideoClickUndefined: Self = StObject.set(x, "relatedVideoClick", js.undefined)
     
-    @scala.inline
-    def setRelatedVideos(value: js.Array[IgVideoPlayerRelatedVideo]): Self = StObject.set(x, "relatedVideos", value.asInstanceOf[js.Any])
+    inline def setRelatedVideos(value: js.Array[IgVideoPlayerRelatedVideo]): Self = StObject.set(x, "relatedVideos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedVideosUndefined: Self = StObject.set(x, "relatedVideos", js.undefined)
+    inline def setRelatedVideosUndefined: Self = StObject.set(x, "relatedVideos", js.undefined)
     
-    @scala.inline
-    def setRelatedVideosVarargs(value: IgVideoPlayerRelatedVideo*): Self = StObject.set(x, "relatedVideos", js.Array(value :_*))
+    inline def setRelatedVideosVarargs(value: IgVideoPlayerRelatedVideo*): Self = StObject.set(x, "relatedVideos", js.Array(value :_*))
     
-    @scala.inline
-    def setShowSeekTime(value: Boolean): Self = StObject.set(x, "showSeekTime", value.asInstanceOf[js.Any])
+    inline def setShowSeekTime(value: Boolean): Self = StObject.set(x, "showSeekTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSeekTimeUndefined: Self = StObject.set(x, "showSeekTime", js.undefined)
+    inline def setShowSeekTimeUndefined: Self = StObject.set(x, "showSeekTime", js.undefined)
     
-    @scala.inline
-    def setSources(value: js.Array[js.Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[js.Any]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: js.Any*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: js.Any*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeAutohideDelay(value: Double): Self = StObject.set(x, "volumeAutohideDelay", value.asInstanceOf[js.Any])
+    inline def setVolumeAutohideDelay(value: Double): Self = StObject.set(x, "volumeAutohideDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeAutohideDelayUndefined: Self = StObject.set(x, "volumeAutohideDelay", js.undefined)
+    inline def setVolumeAutohideDelayUndefined: Self = StObject.set(x, "volumeAutohideDelay", js.undefined)
     
-    @scala.inline
-    def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     
-    @scala.inline
-    def setWaiting(value: (/* event */ Event, /* ui */ WaitingEventUIParam) => Unit): Self = StObject.set(x, "waiting", js.Any.fromFunction2(value))
+    inline def setWaiting(value: (/* event */ Event, /* ui */ WaitingEventUIParam) => Unit): Self = StObject.set(x, "waiting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
+    inline def setWaitingUndefined: Self = StObject.set(x, "waiting", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

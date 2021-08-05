@@ -23,35 +23,26 @@ trait ErrorFrame
 }
 object ErrorFrame {
   
-  @scala.inline
-  def apply(code: Double, flags: Double, message: String, streamId: Double): ErrorFrame = {
+  inline def apply(code: Double, flags: Double, message: String, streamId: Double): ErrorFrame = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], streamId = streamId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(0x0b)
     __obj.asInstanceOf[ErrorFrame]
   }
   
-  @scala.inline
-  implicit class ErrorFrameMutableBuilder[Self <: ErrorFrame] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorFrame](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamId(value: Double): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: Double): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `0x0b`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `0x0b`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

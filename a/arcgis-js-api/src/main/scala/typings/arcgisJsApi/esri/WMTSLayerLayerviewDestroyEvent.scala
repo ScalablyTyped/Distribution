@@ -12,19 +12,15 @@ trait WMTSLayerLayerviewDestroyEvent extends StObject {
 }
 object WMTSLayerLayerviewDestroyEvent {
   
-  @scala.inline
-  def apply(layerView: LayerView, view: View): WMTSLayerLayerviewDestroyEvent = {
+  inline def apply(layerView: LayerView, view: View): WMTSLayerLayerviewDestroyEvent = {
     val __obj = js.Dynamic.literal(layerView = layerView.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[WMTSLayerLayerviewDestroyEvent]
   }
   
-  @scala.inline
-  implicit class WMTSLayerLayerviewDestroyEventMutableBuilder[Self <: WMTSLayerLayerviewDestroyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WMTSLayerLayerviewDestroyEvent](x: Self) {
     
-    @scala.inline
-    def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
+    inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

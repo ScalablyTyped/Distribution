@@ -20,25 +20,19 @@ trait FontFaceOptions
 }
 object FontFaceOptions {
   
-  @scala.inline
-  def apply(family: String, source: String): FontFaceOptions = {
+  inline def apply(family: String, source: String): FontFaceOptions = {
     val __obj = js.Dynamic.literal(family = family.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFaceOptions]
   }
   
-  @scala.inline
-  implicit class FontFaceOptionsMutableBuilder[Self <: FontFaceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FontFaceOptions](x: Self) {
     
-    @scala.inline
-    def setDesc(value: FontDescOptions): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: FontDescOptions): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+    inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
     
-    @scala.inline
-    def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

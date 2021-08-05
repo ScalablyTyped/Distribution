@@ -97,9 +97,9 @@ object i18nHtmlParserMod {
       console: Console
     ) = this()
     
-    var _htmlParser: js.Any = js.native
+    /* private */ var _htmlParser: js.Any = js.native
     
-    var _translationBundle: js.Any = js.native
+    /* private */ var _translationBundle: js.Any = js.native
     
     var getTagDefinition: js.Any = js.native
   }

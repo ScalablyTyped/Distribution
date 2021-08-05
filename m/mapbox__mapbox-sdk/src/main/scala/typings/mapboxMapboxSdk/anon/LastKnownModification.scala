@@ -17,31 +17,23 @@ trait LastKnownModification extends StObject {
 }
 object LastKnownModification {
   
-  @scala.inline
-  def apply(style: typings.mapboxMapboxSdk.stylesMod.Style, styleId: String): LastKnownModification = {
+  inline def apply(style: typings.mapboxMapboxSdk.stylesMod.Style, styleId: String): LastKnownModification = {
     val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastKnownModification]
   }
   
-  @scala.inline
-  implicit class LastKnownModificationMutableBuilder[Self <: LastKnownModification] (val x: Self) extends AnyVal {
+  extension [Self <: LastKnownModification](x: Self) {
     
-    @scala.inline
-    def setLastKnownModification(value: String | Double | Date): Self = StObject.set(x, "lastKnownModification", value.asInstanceOf[js.Any])
+    inline def setLastKnownModification(value: String | Double | Date): Self = StObject.set(x, "lastKnownModification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastKnownModificationUndefined: Self = StObject.set(x, "lastKnownModification", js.undefined)
+    inline def setLastKnownModificationUndefined: Self = StObject.set(x, "lastKnownModification", js.undefined)
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
     
-    @scala.inline
-    def setStyle(value: typings.mapboxMapboxSdk.stylesMod.Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: typings.mapboxMapboxSdk.stylesMod.Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+    inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
   }
 }

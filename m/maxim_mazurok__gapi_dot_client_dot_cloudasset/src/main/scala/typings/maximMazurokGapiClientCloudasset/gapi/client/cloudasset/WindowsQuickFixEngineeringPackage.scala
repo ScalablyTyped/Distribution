@@ -20,37 +20,27 @@ trait WindowsQuickFixEngineeringPackage extends StObject {
 }
 object WindowsQuickFixEngineeringPackage {
   
-  @scala.inline
-  def apply(): WindowsQuickFixEngineeringPackage = {
+  inline def apply(): WindowsQuickFixEngineeringPackage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsQuickFixEngineeringPackage]
   }
   
-  @scala.inline
-  implicit class WindowsQuickFixEngineeringPackageMutableBuilder[Self <: WindowsQuickFixEngineeringPackage] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsQuickFixEngineeringPackage](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHotFixId(value: String): Self = StObject.set(x, "hotFixId", value.asInstanceOf[js.Any])
+    inline def setHotFixId(value: String): Self = StObject.set(x, "hotFixId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHotFixIdUndefined: Self = StObject.set(x, "hotFixId", js.undefined)
+    inline def setHotFixIdUndefined: Self = StObject.set(x, "hotFixId", js.undefined)
     
-    @scala.inline
-    def setInstallTime(value: String): Self = StObject.set(x, "installTime", value.asInstanceOf[js.Any])
+    inline def setInstallTime(value: String): Self = StObject.set(x, "installTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallTimeUndefined: Self = StObject.set(x, "installTime", js.undefined)
+    inline def setInstallTimeUndefined: Self = StObject.set(x, "installTime", js.undefined)
   }
 }

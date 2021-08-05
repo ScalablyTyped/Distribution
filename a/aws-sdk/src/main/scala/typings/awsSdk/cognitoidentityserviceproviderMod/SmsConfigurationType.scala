@@ -18,22 +18,17 @@ trait SmsConfigurationType extends StObject {
 }
 object SmsConfigurationType {
   
-  @scala.inline
-  def apply(SnsCallerArn: ArnType): SmsConfigurationType = {
+  inline def apply(SnsCallerArn: ArnType): SmsConfigurationType = {
     val __obj = js.Dynamic.literal(SnsCallerArn = SnsCallerArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SmsConfigurationType]
   }
   
-  @scala.inline
-  implicit class SmsConfigurationTypeMutableBuilder[Self <: SmsConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: SmsConfigurationType](x: Self) {
     
-    @scala.inline
-    def setExternalId(value: StringType): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: StringType): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
+    inline def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
     
-    @scala.inline
-    def setSnsCallerArn(value: ArnType): Self = StObject.set(x, "SnsCallerArn", value.asInstanceOf[js.Any])
+    inline def setSnsCallerArn(value: ArnType): Self = StObject.set(x, "SnsCallerArn", value.asInstanceOf[js.Any])
   }
 }

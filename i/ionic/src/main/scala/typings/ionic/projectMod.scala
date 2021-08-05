@@ -10,13 +10,10 @@ object projectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPackagePath(appName: String, platform: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackagePath")(appName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getPackagePath(appName: String, platform: String, hasEmulatorRelease: GetPackagePathOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackagePath")(appName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], hasEmulatorRelease.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getPackagePath(appName: String, platform: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackagePath")(appName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getPackagePath(appName: String, platform: String, hasEmulatorRelease: GetPackagePathOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackagePath")(appName.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], hasEmulatorRelease.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getPlatforms(projectDir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def getPlatforms(projectDir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")(projectDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
   
   trait GetPackagePathOptions extends StObject {
     
@@ -26,26 +23,20 @@ object projectMod {
   }
   object GetPackagePathOptions {
     
-    @scala.inline
-    def apply(): GetPackagePathOptions = {
+    inline def apply(): GetPackagePathOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetPackagePathOptions]
     }
     
-    @scala.inline
-    implicit class GetPackagePathOptionsMutableBuilder[Self <: GetPackagePathOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetPackagePathOptions](x: Self) {
       
-      @scala.inline
-      def setEmulator(value: Boolean): Self = StObject.set(x, "emulator", value.asInstanceOf[js.Any])
+      inline def setEmulator(value: Boolean): Self = StObject.set(x, "emulator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmulatorUndefined: Self = StObject.set(x, "emulator", js.undefined)
+      inline def setEmulatorUndefined: Self = StObject.set(x, "emulator", js.undefined)
       
-      @scala.inline
-      def setRelease(value: Boolean): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: Boolean): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
     }
   }
 }

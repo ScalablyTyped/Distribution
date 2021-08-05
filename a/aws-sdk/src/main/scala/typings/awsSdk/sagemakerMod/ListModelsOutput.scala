@@ -18,25 +18,19 @@ trait ListModelsOutput extends StObject {
 }
 object ListModelsOutput {
   
-  @scala.inline
-  def apply(Models: ModelSummaryList): ListModelsOutput = {
+  inline def apply(Models: ModelSummaryList): ListModelsOutput = {
     val __obj = js.Dynamic.literal(Models = Models.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListModelsOutput]
   }
   
-  @scala.inline
-  implicit class ListModelsOutputMutableBuilder[Self <: ListModelsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListModelsOutput](x: Self) {
     
-    @scala.inline
-    def setModels(value: ModelSummaryList): Self = StObject.set(x, "Models", value.asInstanceOf[js.Any])
+    inline def setModels(value: ModelSummaryList): Self = StObject.set(x, "Models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelsVarargs(value: ModelSummary*): Self = StObject.set(x, "Models", js.Array(value :_*))
+    inline def setModelsVarargs(value: ModelSummary*): Self = StObject.set(x, "Models", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

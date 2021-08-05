@@ -41,8 +41,7 @@ trait XTabListener
 }
 object XTabListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     activated: Double => Unit,
     changed: (Double, SeqEquiv[NamedValue]) => Unit,
@@ -57,22 +56,16 @@ object XTabListener {
     __obj.asInstanceOf[XTabListener]
   }
   
-  @scala.inline
-  implicit class XTabListenerMutableBuilder[Self <: XTabListener] (val x: Self) extends AnyVal {
+  extension [Self <: XTabListener](x: Self) {
     
-    @scala.inline
-    def setActivated(value: Double => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction1(value))
+    inline def setActivated(value: Double => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChanged(value: (Double, SeqEquiv[NamedValue]) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
+    inline def setChanged(value: (Double, SeqEquiv[NamedValue]) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeactivated(value: Double => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction1(value))
+    inline def setDeactivated(value: Double => Unit): Self = StObject.set(x, "deactivated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInserted(value: Double => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction1(value))
+    inline def setInserted(value: Double => Unit): Self = StObject.set(x, "inserted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoved(value: Double => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction1(value))
+    inline def setRemoved(value: Double => Unit): Self = StObject.set(x, "removed", js.Any.fromFunction1(value))
   }
 }

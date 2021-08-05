@@ -12,21 +12,17 @@ trait Xamzid2 extends StObject {
 }
 object Xamzid2 {
   
-  @scala.inline
-  def apply(`x-amz-id-2`: String, `x-amz-request-id`: String): Xamzid2 = {
+  inline def apply(`x-amz-id-2`: String, `x-amz-request-id`: String): Xamzid2 = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("x-amz-id-2")(`x-amz-id-2`.asInstanceOf[js.Any])
     __obj.updateDynamic("x-amz-request-id")(`x-amz-request-id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Xamzid2]
   }
   
-  @scala.inline
-  implicit class Xamzid2MutableBuilder[Self <: Xamzid2] (val x: Self) extends AnyVal {
+  extension [Self <: Xamzid2](x: Self) {
     
-    @scala.inline
-    def `setX-amz-id-2`(value: String): Self = StObject.set(x, "x-amz-id-2", value.asInstanceOf[js.Any])
+    inline def `setX-amz-id-2`(value: String): Self = StObject.set(x, "x-amz-id-2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-amz-request-id`(value: String): Self = StObject.set(x, "x-amz-request-id", value.asInstanceOf[js.Any])
+    inline def `setX-amz-request-id`(value: String): Self = StObject.set(x, "x-amz-request-id", value.asInstanceOf[js.Any])
   }
 }

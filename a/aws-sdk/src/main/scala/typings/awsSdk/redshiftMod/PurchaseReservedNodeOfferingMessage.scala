@@ -18,22 +18,17 @@ trait PurchaseReservedNodeOfferingMessage extends StObject {
 }
 object PurchaseReservedNodeOfferingMessage {
   
-  @scala.inline
-  def apply(ReservedNodeOfferingId: String): PurchaseReservedNodeOfferingMessage = {
+  inline def apply(ReservedNodeOfferingId: String): PurchaseReservedNodeOfferingMessage = {
     val __obj = js.Dynamic.literal(ReservedNodeOfferingId = ReservedNodeOfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedNodeOfferingMessage]
   }
   
-  @scala.inline
-  implicit class PurchaseReservedNodeOfferingMessageMutableBuilder[Self <: PurchaseReservedNodeOfferingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseReservedNodeOfferingMessage](x: Self) {
     
-    @scala.inline
-    def setNodeCount(value: IntegerOptional): Self = StObject.set(x, "NodeCount", value.asInstanceOf[js.Any])
+    inline def setNodeCount(value: IntegerOptional): Self = StObject.set(x, "NodeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeCountUndefined: Self = StObject.set(x, "NodeCount", js.undefined)
+    inline def setNodeCountUndefined: Self = StObject.set(x, "NodeCount", js.undefined)
     
-    @scala.inline
-    def setReservedNodeOfferingId(value: String): Self = StObject.set(x, "ReservedNodeOfferingId", value.asInstanceOf[js.Any])
+    inline def setReservedNodeOfferingId(value: String): Self = StObject.set(x, "ReservedNodeOfferingId", value.asInstanceOf[js.Any])
   }
 }

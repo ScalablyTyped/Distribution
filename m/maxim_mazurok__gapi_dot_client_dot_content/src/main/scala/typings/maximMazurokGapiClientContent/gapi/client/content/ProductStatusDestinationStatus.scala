@@ -23,52 +23,37 @@ trait ProductStatusDestinationStatus extends StObject {
 }
 object ProductStatusDestinationStatus {
   
-  @scala.inline
-  def apply(): ProductStatusDestinationStatus = {
+  inline def apply(): ProductStatusDestinationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProductStatusDestinationStatus]
   }
   
-  @scala.inline
-  implicit class ProductStatusDestinationStatusMutableBuilder[Self <: ProductStatusDestinationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ProductStatusDestinationStatus](x: Self) {
     
-    @scala.inline
-    def setApprovedCountries(value: js.Array[String]): Self = StObject.set(x, "approvedCountries", value.asInstanceOf[js.Any])
+    inline def setApprovedCountries(value: js.Array[String]): Self = StObject.set(x, "approvedCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovedCountriesUndefined: Self = StObject.set(x, "approvedCountries", js.undefined)
+    inline def setApprovedCountriesUndefined: Self = StObject.set(x, "approvedCountries", js.undefined)
     
-    @scala.inline
-    def setApprovedCountriesVarargs(value: String*): Self = StObject.set(x, "approvedCountries", js.Array(value :_*))
+    inline def setApprovedCountriesVarargs(value: String*): Self = StObject.set(x, "approvedCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setDisapprovedCountries(value: js.Array[String]): Self = StObject.set(x, "disapprovedCountries", value.asInstanceOf[js.Any])
+    inline def setDisapprovedCountries(value: js.Array[String]): Self = StObject.set(x, "disapprovedCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisapprovedCountriesUndefined: Self = StObject.set(x, "disapprovedCountries", js.undefined)
+    inline def setDisapprovedCountriesUndefined: Self = StObject.set(x, "disapprovedCountries", js.undefined)
     
-    @scala.inline
-    def setDisapprovedCountriesVarargs(value: String*): Self = StObject.set(x, "disapprovedCountries", js.Array(value :_*))
+    inline def setDisapprovedCountriesVarargs(value: String*): Self = StObject.set(x, "disapprovedCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setPendingCountries(value: js.Array[String]): Self = StObject.set(x, "pendingCountries", value.asInstanceOf[js.Any])
+    inline def setPendingCountries(value: js.Array[String]): Self = StObject.set(x, "pendingCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingCountriesUndefined: Self = StObject.set(x, "pendingCountries", js.undefined)
+    inline def setPendingCountriesUndefined: Self = StObject.set(x, "pendingCountries", js.undefined)
     
-    @scala.inline
-    def setPendingCountriesVarargs(value: String*): Self = StObject.set(x, "pendingCountries", js.Array(value :_*))
+    inline def setPendingCountriesVarargs(value: String*): Self = StObject.set(x, "pendingCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

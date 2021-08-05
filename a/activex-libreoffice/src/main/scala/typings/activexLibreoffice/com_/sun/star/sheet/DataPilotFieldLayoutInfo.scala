@@ -18,19 +18,15 @@ trait DataPilotFieldLayoutInfo extends StObject {
 }
 object DataPilotFieldLayoutInfo {
   
-  @scala.inline
-  def apply(AddEmptyLines: Boolean, LayoutMode: Double): DataPilotFieldLayoutInfo = {
+  inline def apply(AddEmptyLines: Boolean, LayoutMode: Double): DataPilotFieldLayoutInfo = {
     val __obj = js.Dynamic.literal(AddEmptyLines = AddEmptyLines.asInstanceOf[js.Any], LayoutMode = LayoutMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataPilotFieldLayoutInfo]
   }
   
-  @scala.inline
-  implicit class DataPilotFieldLayoutInfoMutableBuilder[Self <: DataPilotFieldLayoutInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DataPilotFieldLayoutInfo](x: Self) {
     
-    @scala.inline
-    def setAddEmptyLines(value: Boolean): Self = StObject.set(x, "AddEmptyLines", value.asInstanceOf[js.Any])
+    inline def setAddEmptyLines(value: Boolean): Self = StObject.set(x, "AddEmptyLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutMode(value: Double): Self = StObject.set(x, "LayoutMode", value.asInstanceOf[js.Any])
+    inline def setLayoutMode(value: Double): Self = StObject.set(x, "LayoutMode", value.asInstanceOf[js.Any])
   }
 }

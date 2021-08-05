@@ -29,31 +29,23 @@ trait ParamsResourceSurveysStart
 }
 object ParamsResourceSurveysStart {
   
-  @scala.inline
-  def apply(): ParamsResourceSurveysStart = {
+  inline def apply(): ParamsResourceSurveysStart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceSurveysStart]
   }
   
-  @scala.inline
-  implicit class ParamsResourceSurveysStartMutableBuilder[Self <: ParamsResourceSurveysStart] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceSurveysStart](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaSurveysStartRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaSurveysStartRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

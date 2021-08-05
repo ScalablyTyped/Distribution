@@ -24,22 +24,17 @@ trait IndirectionBase extends StObject {
 }
 object IndirectionBase {
   
-  @scala.inline
-  def apply(name: String, resourceType: ResourceType, uid: String): IndirectionBase = {
+  inline def apply(name: String, resourceType: ResourceType, uid: String): IndirectionBase = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndirectionBase]
   }
   
-  @scala.inline
-  implicit class IndirectionBaseMutableBuilder[Self <: IndirectionBase] (val x: Self) extends AnyVal {
+  extension [Self <: IndirectionBase](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

@@ -34,29 +34,22 @@ trait AuthProviderConfigFilter extends StObject {
 }
 object AuthProviderConfigFilter {
   
-  @scala.inline
-  def apply(`type`: saml | oidc): AuthProviderConfigFilter = {
+  inline def apply(`type`: saml | oidc): AuthProviderConfigFilter = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthProviderConfigFilter]
   }
   
-  @scala.inline
-  implicit class AuthProviderConfigFilterMutableBuilder[Self <: AuthProviderConfigFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AuthProviderConfigFilter](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setType(value: saml | oidc): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: saml | oidc): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

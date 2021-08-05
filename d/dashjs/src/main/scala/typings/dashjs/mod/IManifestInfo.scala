@@ -23,8 +23,7 @@ trait IManifestInfo extends StObject {
 }
 object IManifestInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DVRWindowSize: Double,
     availableFrom: Date,
     duration: Double,
@@ -37,28 +36,20 @@ object IManifestInfo {
     __obj.asInstanceOf[IManifestInfo]
   }
   
-  @scala.inline
-  implicit class IManifestInfoMutableBuilder[Self <: IManifestInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IManifestInfo](x: Self) {
     
-    @scala.inline
-    def setAvailableFrom(value: Date): Self = StObject.set(x, "availableFrom", value.asInstanceOf[js.Any])
+    inline def setAvailableFrom(value: Date): Self = StObject.set(x, "availableFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDVRWindowSize(value: Double): Self = StObject.set(x, "DVRWindowSize", value.asInstanceOf[js.Any])
+    inline def setDVRWindowSize(value: Double): Self = StObject.set(x, "DVRWindowSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDynamic(value: Boolean): Self = StObject.set(x, "isDynamic", value.asInstanceOf[js.Any])
+    inline def setIsDynamic(value: Boolean): Self = StObject.set(x, "isDynamic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedTime(value: Date): Self = StObject.set(x, "loadedTime", value.asInstanceOf[js.Any])
+    inline def setLoadedTime(value: Date): Self = StObject.set(x, "loadedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFragmentDuration(value: Double): Self = StObject.set(x, "maxFragmentDuration", value.asInstanceOf[js.Any])
+    inline def setMaxFragmentDuration(value: Double): Self = StObject.set(x, "maxFragmentDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinBufferTime(value: Double): Self = StObject.set(x, "minBufferTime", value.asInstanceOf[js.Any])
+    inline def setMinBufferTime(value: Double): Self = StObject.set(x, "minBufferTime", value.asInstanceOf[js.Any])
   }
 }

@@ -33,8 +33,7 @@ trait FeedbackDataInput extends StObject {
 }
 object FeedbackDataInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     feedback_type: String,
     location: Location,
     original_labels: OriginalLabelsIn,
@@ -45,40 +44,28 @@ object FeedbackDataInput {
     __obj.asInstanceOf[FeedbackDataInput]
   }
   
-  @scala.inline
-  implicit class FeedbackDataInputMutableBuilder[Self <: FeedbackDataInput] (val x: Self) extends AnyVal {
+  extension [Self <: FeedbackDataInput](x: Self) {
     
-    @scala.inline
-    def setDocument(value: ShortDoc): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: ShortDoc): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setFeedback_type(value: String): Self = StObject.set(x, "feedback_type", value.asInstanceOf[js.Any])
+    inline def setFeedback_type(value: String): Self = StObject.set(x, "feedback_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
+    inline def setModel_id(value: String): Self = StObject.set(x, "model_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
+    inline def setModel_idUndefined: Self = StObject.set(x, "model_id", js.undefined)
     
-    @scala.inline
-    def setModel_version(value: String): Self = StObject.set(x, "model_version", value.asInstanceOf[js.Any])
+    inline def setModel_version(value: String): Self = StObject.set(x, "model_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel_versionUndefined: Self = StObject.set(x, "model_version", js.undefined)
+    inline def setModel_versionUndefined: Self = StObject.set(x, "model_version", js.undefined)
     
-    @scala.inline
-    def setOriginal_labels(value: OriginalLabelsIn): Self = StObject.set(x, "original_labels", value.asInstanceOf[js.Any])
+    inline def setOriginal_labels(value: OriginalLabelsIn): Self = StObject.set(x, "original_labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_labels(value: UpdatedLabelsIn): Self = StObject.set(x, "updated_labels", value.asInstanceOf[js.Any])
+    inline def setUpdated_labels(value: UpdatedLabelsIn): Self = StObject.set(x, "updated_labels", value.asInstanceOf[js.Any])
   }
 }

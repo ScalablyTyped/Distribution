@@ -13,22 +13,17 @@ trait GetContextKeysForPolicyResponse extends StObject {
 }
 object GetContextKeysForPolicyResponse {
   
-  @scala.inline
-  def apply(): GetContextKeysForPolicyResponse = {
+  inline def apply(): GetContextKeysForPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContextKeysForPolicyResponse]
   }
   
-  @scala.inline
-  implicit class GetContextKeysForPolicyResponseMutableBuilder[Self <: GetContextKeysForPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetContextKeysForPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setContextKeyNames(value: ContextKeyNamesResultListType): Self = StObject.set(x, "ContextKeyNames", value.asInstanceOf[js.Any])
+    inline def setContextKeyNames(value: ContextKeyNamesResultListType): Self = StObject.set(x, "ContextKeyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextKeyNamesUndefined: Self = StObject.set(x, "ContextKeyNames", js.undefined)
+    inline def setContextKeyNamesUndefined: Self = StObject.set(x, "ContextKeyNames", js.undefined)
     
-    @scala.inline
-    def setContextKeyNamesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "ContextKeyNames", js.Array(value :_*))
+    inline def setContextKeyNamesVarargs(value: ContextKeyNameType*): Self = StObject.set(x, "ContextKeyNames", js.Array(value :_*))
   }
 }

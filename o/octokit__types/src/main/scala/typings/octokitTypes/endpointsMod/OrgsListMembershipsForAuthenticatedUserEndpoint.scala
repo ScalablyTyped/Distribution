@@ -25,31 +25,23 @@ trait OrgsListMembershipsForAuthenticatedUserEndpoint extends StObject {
 }
 object OrgsListMembershipsForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(): OrgsListMembershipsForAuthenticatedUserEndpoint = {
+  inline def apply(): OrgsListMembershipsForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrgsListMembershipsForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsListMembershipsForAuthenticatedUserEndpointMutableBuilder[Self <: OrgsListMembershipsForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsListMembershipsForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    @scala.inline
-    def setState(value: active | pending): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: active | pending): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

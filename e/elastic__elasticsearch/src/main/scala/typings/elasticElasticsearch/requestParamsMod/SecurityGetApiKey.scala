@@ -20,43 +20,31 @@ trait SecurityGetApiKey
 }
 object SecurityGetApiKey {
   
-  @scala.inline
-  def apply(): SecurityGetApiKey = {
+  inline def apply(): SecurityGetApiKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecurityGetApiKey]
   }
   
-  @scala.inline
-  implicit class SecurityGetApiKeyMutableBuilder[Self <: SecurityGetApiKey] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityGetApiKey](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Boolean): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setRealm_name(value: String): Self = StObject.set(x, "realm_name", value.asInstanceOf[js.Any])
+    inline def setRealm_name(value: String): Self = StObject.set(x, "realm_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealm_nameUndefined: Self = StObject.set(x, "realm_name", js.undefined)
+    inline def setRealm_nameUndefined: Self = StObject.set(x, "realm_name", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

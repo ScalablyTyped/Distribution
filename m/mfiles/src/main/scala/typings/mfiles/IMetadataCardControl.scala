@@ -86,8 +86,7 @@ trait IMetadataCardControl extends StObject {
 }
 object IMetadataCardControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActivateLink: js.Any => Unit,
     AddNewItem: String => js.Any,
     AddNewSubItem: (String, js.Any) => js.Any,
@@ -131,121 +130,82 @@ object IMetadataCardControl {
     __obj.asInstanceOf[IMetadataCardControl]
   }
   
-  @scala.inline
-  implicit class IMetadataCardControlMutableBuilder[Self <: IMetadataCardControl] (val x: Self) extends AnyVal {
+  extension [Self <: IMetadataCardControl](x: Self) {
     
-    @scala.inline
-    def setActivateLink(value: js.Any => Unit): Self = StObject.set(x, "ActivateLink", js.Any.fromFunction1(value))
+    inline def setActivateLink(value: js.Any => Unit): Self = StObject.set(x, "ActivateLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddNewItem(value: String => js.Any): Self = StObject.set(x, "AddNewItem", js.Any.fromFunction1(value))
+    inline def setAddNewItem(value: String => js.Any): Self = StObject.set(x, "AddNewItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddNewSubItem(value: (String, js.Any) => js.Any): Self = StObject.set(x, "AddNewSubItem", js.Any.fromFunction2(value))
+    inline def setAddNewSubItem(value: (String, js.Any) => js.Any): Self = StObject.set(x, "AddNewSubItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAllowAdding(value: Boolean): Self = StObject.set(x, "AllowAdding", value.asInstanceOf[js.Any])
+    inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "AllowAdding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowHitHighlighting(value: () => Boolean): Self = StObject.set(x, "AllowHitHighlighting", js.Any.fromFunction0(value))
+    inline def setAllowHitHighlighting(value: () => Boolean): Self = StObject.set(x, "AllowHitHighlighting", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCanActivateLink(value: js.Any => Boolean): Self = StObject.set(x, "CanActivateLink", js.Any.fromFunction1(value))
+    inline def setCanActivateLink(value: js.Any => Boolean): Self = StObject.set(x, "CanActivateLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCanAddNewSubItem(value: (String, js.Any) => Boolean): Self = StObject.set(x, "CanAddNewSubItem", js.Any.fromFunction2(value))
+    inline def setCanAddNewSubItem(value: (String, js.Any) => Boolean): Self = StObject.set(x, "CanAddNewSubItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCanEditItem(value: js.Any => Boolean): Self = StObject.set(x, "CanEditItem", js.Any.fromFunction1(value))
+    inline def setCanEditItem(value: js.Any => Boolean): Self = StObject.set(x, "CanEditItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateSelectionList(value: () => IMetadataCardSelectionList): Self = StObject.set(x, "CreateSelectionList", js.Any.fromFunction0(value))
+    inline def setCreateSelectionList(value: () => IMetadataCardSelectionList): Self = StObject.set(x, "CreateSelectionList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateUnvalidatedValue(value: String => IMetadataCardUnvalidatedValue): Self = StObject.set(x, "CreateUnvalidatedValue", js.Any.fromFunction1(value))
+    inline def setCreateUnvalidatedValue(value: String => IMetadataCardUnvalidatedValue): Self = StObject.set(x, "CreateUnvalidatedValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEditItem(value: js.Any => js.Any): Self = StObject.set(x, "EditItem", js.Any.fromFunction1(value))
+    inline def setEditItem(value: js.Any => js.Any): Self = StObject.set(x, "EditItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindItem(value: String => js.Any): Self = StObject.set(x, "FindItem", js.Any.fromFunction1(value))
+    inline def setFindItem(value: String => js.Any): Self = StObject.set(x, "FindItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFindItemByID(value: Double => js.Any): Self = StObject.set(x, "FindItemByID", js.Any.fromFunction1(value))
+    inline def setFindItemByID(value: Double => js.Any): Self = StObject.set(x, "FindItemByID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSelectableValueItemStates(value: () => js.Any): Self = StObject.set(x, "GetSelectableValueItemStates", js.Any.fromFunction0(value))
+    inline def setGetSelectableValueItemStates(value: () => js.Any): Self = StObject.set(x, "GetSelectableValueItemStates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueSuggestions(value: () => js.Any): Self = StObject.set(x, "GetValueSuggestions", js.Any.fromFunction0(value))
+    inline def setGetValueSuggestions(value: () => js.Any): Self = StObject.set(x, "GetValueSuggestions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasAutomaticValue(value: () => Boolean): Self = StObject.set(x, "HasAutomaticValue", js.Any.fromFunction0(value))
+    inline def setHasAutomaticValue(value: () => Boolean): Self = StObject.set(x, "HasAutomaticValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasInitialValue(value: () => Boolean): Self = StObject.set(x, "HasInitialValue", js.Any.fromFunction0(value))
+    inline def setHasInitialValue(value: () => Boolean): Self = StObject.set(x, "HasInitialValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasUncalculatedAutomaticValue(value: () => Boolean): Self = StObject.set(x, "HasUncalculatedAutomaticValue", js.Any.fromFunction0(value))
+    inline def setHasUncalculatedAutomaticValue(value: () => Boolean): Self = StObject.set(x, "HasUncalculatedAutomaticValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHierarchical(value: Boolean): Self = StObject.set(x, "Hierarchical", value.asInstanceOf[js.Any])
+    inline def setHierarchical(value: Boolean): Self = StObject.set(x, "Hierarchical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExternal(value: () => Boolean): Self = StObject.set(x, "IsExternal", js.Any.fromFunction0(value))
+    inline def setIsExternal(value: () => Boolean): Self = StObject.set(x, "IsExternal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinked(value: Boolean): Self = StObject.set(x, "Linked", value.asInstanceOf[js.Any])
+    inline def setLinked(value: Boolean): Self = StObject.set(x, "Linked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModified(value: Boolean): Self = StObject.set(x, "Modified", value.asInstanceOf[js.Any])
+    inline def setModified(value: Boolean): Self = StObject.set(x, "Modified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMustExist(value: Boolean): Self = StObject.set(x, "MustExist", value.asInstanceOf[js.Any])
+    inline def setMustExist(value: Boolean): Self = StObject.set(x, "MustExist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
+    inline def setPropertyDef(value: MFBuiltInPropertyDef | Double): Self = StObject.set(x, "PropertyDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealObjectType(value: Boolean): Self = StObject.set(x, "RealObjectType", value.asInstanceOf[js.Any])
+    inline def setRealObjectType(value: Boolean): Self = StObject.set(x, "RealObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshList(value: () => Unit): Self = StObject.set(x, "RefreshList", js.Any.fromFunction0(value))
+    inline def setRefreshList(value: () => Unit): Self = StObject.set(x, "RefreshList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRevertToInitialValue(value: () => Unit): Self = StObject.set(x, "RevertToInitialValue", js.Any.fromFunction0(value))
+    inline def setRevertToInitialValue(value: () => Unit): Self = StObject.set(x, "RevertToInitialValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetValueItemState(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetValueItemState", js.Any.fromFunction2(value))
+    inline def setSetValueItemState(value: (String, js.Any) => Unit): Self = StObject.set(x, "SetValueItemState", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRequired(value: Boolean): Self = StObject.set(x, "ValueRequired", value.asInstanceOf[js.Any])
+    inline def setValueRequired(value: Boolean): Self = StObject.set(x, "ValueRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuelist(value: MFBuiltInValueList | Double): Self = StObject.set(x, "Valuelist", value.asInstanceOf[js.Any])
+    inline def setValuelist(value: MFBuiltInValueList | Double): Self = StObject.set(x, "Valuelist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

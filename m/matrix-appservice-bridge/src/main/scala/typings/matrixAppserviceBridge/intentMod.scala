@@ -78,17 +78,17 @@ object intentMod {
       * @param isState Are we checking for state permissions or regular event permissions.
       * @return If found, the power level event
       */
-    var _ensureHasPowerLevelFor: js.Any = js.native
+    /* private */ var _ensureHasPowerLevelFor: js.Any = js.native
     
-    var _ensureJoined: js.Any = js.native
+    /* private */ var _ensureJoined: js.Any = js.native
     
-    var _joinGuard: js.Any = js.native
+    /* private */ var _joinGuard: js.Any = js.native
     
-    val _membershipStates: js.Any = js.native
+    /* private */ val _membershipStates: js.Any = js.native
     
-    val _powerLevels: js.Any = js.native
+    /* private */ val _powerLevels: js.Any = js.native
     
-    var _requestCaches: js.Any = js.native
+    /* private */ var _requestCaches: js.Any = js.native
     
     /**
       * <p>Ban a user from a room.</p>
@@ -102,7 +102,7 @@ object intentMod {
     def ban(roomId: String, target: String): js.Promise[js.Any] = js.native
     def ban(roomId: String, target: String, reason: String): js.Promise[js.Any] = js.native
     
-    val botClient: js.Any = js.native
+    /* private */ val botClient: js.Any = js.native
     
     val client: js.Any = js.native
     
@@ -123,7 +123,7 @@ object intentMod {
       */
     def createRoom(opts: RoomCreationOpts): js.Promise[Roomid] = js.native
     
-    val encryption: js.Any = js.native
+    /* private */ val encryption: js.Any = js.native
     
     def ensureRegistered(): js.Promise[js.Any] = js.native
     def ensureRegistered(forceRegister: Boolean): js.Promise[js.Any] = js.native
@@ -214,7 +214,7 @@ object intentMod {
     def leave(roomId: String): js.Promise[js.Any] = js.native
     def leave(roomId: String, reason: String): js.Promise[js.Any] = js.native
     
-    var loginForEncryptedClient: js.Any = js.native
+    /* private */ var loginForEncryptedClient: js.Any = js.native
     
     /**
       * Inform this Intent class of an incoming event. Various optimisations will be
@@ -225,9 +225,9 @@ object intentMod {
       */
     def onEvent(event: Statekey): Unit = js.native
     
-    var opts: js.Any = js.native
+    /* private */ var opts: js.Any = js.native
     
-    var readyPromise: js.Any = js.native
+    /* private */ var readyPromise: js.Any = js.native
     
     /**
       * <p>Get the current room state for a room.</p>
@@ -450,32 +450,24 @@ object intentMod {
   }
   object FileUploadOpts {
     
-    @scala.inline
-    def apply(): FileUploadOpts = {
+    inline def apply(): FileUploadOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileUploadOpts]
     }
     
-    @scala.inline
-    implicit class FileUploadOptsMutableBuilder[Self <: FileUploadOpts] (val x: Self) extends AnyVal {
+    extension [Self <: FileUploadOpts](x: Self) {
       
-      @scala.inline
-      def setIncludeFilename(value: Boolean): Self = StObject.set(x, "includeFilename", value.asInstanceOf[js.Any])
+      inline def setIncludeFilename(value: Boolean): Self = StObject.set(x, "includeFilename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeFilenameUndefined: Self = StObject.set(x, "includeFilename", js.undefined)
+      inline def setIncludeFilenameUndefined: Self = StObject.set(x, "includeFilename", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -493,8 +485,7 @@ object intentMod {
   }
   object IntentBackingStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getMemberProfile: (String, String) => UserProfile,
       getMembership: (String, String) => UserMembership,
       getPowerLevelContent: String => js.UndefOr[Record[String, js.Any]],
@@ -505,23 +496,17 @@ object intentMod {
       __obj.asInstanceOf[IntentBackingStore]
     }
     
-    @scala.inline
-    implicit class IntentBackingStoreMutableBuilder[Self <: IntentBackingStore] (val x: Self) extends AnyVal {
+    extension [Self <: IntentBackingStore](x: Self) {
       
-      @scala.inline
-      def setGetMemberProfile(value: (String, String) => UserProfile): Self = StObject.set(x, "getMemberProfile", js.Any.fromFunction2(value))
+      inline def setGetMemberProfile(value: (String, String) => UserProfile): Self = StObject.set(x, "getMemberProfile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetMembership(value: (String, String) => UserMembership): Self = StObject.set(x, "getMembership", js.Any.fromFunction2(value))
+      inline def setGetMembership(value: (String, String) => UserMembership): Self = StObject.set(x, "getMembership", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetPowerLevelContent(value: String => js.UndefOr[Record[String, js.Any]]): Self = StObject.set(x, "getPowerLevelContent", js.Any.fromFunction1(value))
+      inline def setGetPowerLevelContent(value: String => js.UndefOr[Record[String, js.Any]]): Self = StObject.set(x, "getPowerLevelContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMembership(value: (String, String, UserMembership, UserProfile) => Unit): Self = StObject.set(x, "setMembership", js.Any.fromFunction4(value))
+      inline def setSetMembership(value: (String, String, UserMembership, UserProfile) => Unit): Self = StObject.set(x, "setMembership", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSetPowerLevelContent(value: (String, Record[String, js.Any]) => Unit): Self = StObject.set(x, "setPowerLevelContent", js.Any.fromFunction2(value))
+      inline def setSetPowerLevelContent(value: (String, Record[String, js.Any]) => Unit): Self = StObject.set(x, "setPowerLevelContent", js.Any.fromFunction2(value))
     }
   }
   
@@ -543,56 +528,40 @@ object intentMod {
   }
   object IntentOpts {
     
-    @scala.inline
-    def apply(): IntentOpts = {
+    inline def apply(): IntentOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IntentOpts]
     }
     
-    @scala.inline
-    implicit class IntentOptsMutableBuilder[Self <: IntentOpts] (val x: Self) extends AnyVal {
+    extension [Self <: IntentOpts](x: Self) {
       
-      @scala.inline
-      def setBackingStore(value: IntentBackingStore): Self = StObject.set(x, "backingStore", value.asInstanceOf[js.Any])
+      inline def setBackingStore(value: IntentBackingStore): Self = StObject.set(x, "backingStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackingStoreUndefined: Self = StObject.set(x, "backingStore", js.undefined)
+      inline def setBackingStoreUndefined: Self = StObject.set(x, "backingStore", js.undefined)
       
-      @scala.inline
-      def setCaching(value: Size): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
+      inline def setCaching(value: Size): Self = StObject.set(x, "caching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachingUndefined: Self = StObject.set(x, "caching", js.undefined)
+      inline def setCachingUndefined: Self = StObject.set(x, "caching", js.undefined)
       
-      @scala.inline
-      def setDontCheckPowerLevel(value: Boolean): Self = StObject.set(x, "dontCheckPowerLevel", value.asInstanceOf[js.Any])
+      inline def setDontCheckPowerLevel(value: Boolean): Self = StObject.set(x, "dontCheckPowerLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDontCheckPowerLevelUndefined: Self = StObject.set(x, "dontCheckPowerLevel", js.undefined)
+      inline def setDontCheckPowerLevelUndefined: Self = StObject.set(x, "dontCheckPowerLevel", js.undefined)
       
-      @scala.inline
-      def setDontJoin(value: Boolean): Self = StObject.set(x, "dontJoin", value.asInstanceOf[js.Any])
+      inline def setDontJoin(value: Boolean): Self = StObject.set(x, "dontJoin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDontJoinUndefined: Self = StObject.set(x, "dontJoin", js.undefined)
+      inline def setDontJoinUndefined: Self = StObject.set(x, "dontJoin", js.undefined)
       
-      @scala.inline
-      def setEnablePresence(value: Boolean): Self = StObject.set(x, "enablePresence", value.asInstanceOf[js.Any])
+      inline def setEnablePresence(value: Boolean): Self = StObject.set(x, "enablePresence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePresenceUndefined: Self = StObject.set(x, "enablePresence", js.undefined)
+      inline def setEnablePresenceUndefined: Self = StObject.set(x, "enablePresence", js.undefined)
       
-      @scala.inline
-      def setEncryption(value: EnsureClientSyncingCallback): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+      inline def setEncryption(value: EnsureClientSyncingCallback): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
+      inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
       
-      @scala.inline
-      def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
+      inline def setRegistered(value: Boolean): Self = StObject.set(x, "registered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisteredUndefined: Self = StObject.set(x, "registered", js.undefined)
+      inline def setRegisteredUndefined: Self = StObject.set(x, "registered", js.undefined)
     }
   }
   
@@ -610,44 +579,32 @@ object intentMod {
   }
   object PowerLevelContent {
     
-    @scala.inline
-    def apply(): PowerLevelContent = {
+    inline def apply(): PowerLevelContent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PowerLevelContent]
     }
     
-    @scala.inline
-    implicit class PowerLevelContentMutableBuilder[Self <: PowerLevelContent] (val x: Self) extends AnyVal {
+    extension [Self <: PowerLevelContent](x: Self) {
       
-      @scala.inline
-      def setEvents(value: StringDictionary[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: StringDictionary[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setEvents_default(value: js.Any): Self = StObject.set(x, "events_default", value.asInstanceOf[js.Any])
+      inline def setEvents_default(value: js.Any): Self = StObject.set(x, "events_default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents_defaultUndefined: Self = StObject.set(x, "events_default", js.undefined)
+      inline def setEvents_defaultUndefined: Self = StObject.set(x, "events_default", js.undefined)
       
-      @scala.inline
-      def setState_default(value: js.Any): Self = StObject.set(x, "state_default", value.asInstanceOf[js.Any])
+      inline def setState_default(value: js.Any): Self = StObject.set(x, "state_default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState_defaultUndefined: Self = StObject.set(x, "state_default", js.undefined)
+      inline def setState_defaultUndefined: Self = StObject.set(x, "state_default", js.undefined)
       
-      @scala.inline
-      def setUsers(value: StringDictionary[js.Any]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: StringDictionary[js.Any]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+      inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
       
-      @scala.inline
-      def setUsers_default(value: js.Any): Self = StObject.set(x, "users_default", value.asInstanceOf[js.Any])
+      inline def setUsers_default(value: js.Any): Self = StObject.set(x, "users_default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers_defaultUndefined: Self = StObject.set(x, "users_default", js.undefined)
+      inline def setUsers_defaultUndefined: Self = StObject.set(x, "users_default", js.undefined)
     }
   }
   
@@ -659,23 +616,18 @@ object intentMod {
   }
   object RoomCreationOpts {
     
-    @scala.inline
-    def apply(options: Record[String, js.Any]): RoomCreationOpts = {
+    inline def apply(options: Record[String, js.Any]): RoomCreationOpts = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoomCreationOpts]
     }
     
-    @scala.inline
-    implicit class RoomCreationOptsMutableBuilder[Self <: RoomCreationOpts] (val x: Self) extends AnyVal {
+    extension [Self <: RoomCreationOpts](x: Self) {
       
-      @scala.inline
-      def setCreateAsClient(value: Boolean): Self = StObject.set(x, "createAsClient", value.asInstanceOf[js.Any])
+      inline def setCreateAsClient(value: Boolean): Self = StObject.set(x, "createAsClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateAsClientUndefined: Self = StObject.set(x, "createAsClient", js.undefined)
+      inline def setCreateAsClientUndefined: Self = StObject.set(x, "createAsClient", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Record[String, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Record[String, js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   

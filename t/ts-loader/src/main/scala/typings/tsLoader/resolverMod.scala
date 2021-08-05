@@ -11,8 +11,7 @@ object resolverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeResolver(
+  inline def makeResolver(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
   ): ResolveSync = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResolver")(options.asInstanceOf[js.Any]).asInstanceOf[ResolveSync]
 }

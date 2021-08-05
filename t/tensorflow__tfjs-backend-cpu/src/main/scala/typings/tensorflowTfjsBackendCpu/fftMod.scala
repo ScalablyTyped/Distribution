@@ -13,8 +13,7 @@ object fftMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fft(args: InputsFFTInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fft")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def fft(args: InputsFFTInputs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fft")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/FFT", "fftConfig")
   @js.native

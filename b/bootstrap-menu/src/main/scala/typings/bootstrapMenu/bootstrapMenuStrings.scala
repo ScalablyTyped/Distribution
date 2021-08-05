@@ -13,62 +13,53 @@ object bootstrapMenuStrings {
   sealed trait aboveLeft
     extends StObject
        with BootstrapMenuPosition
-  @scala.inline
-  def aboveLeft: aboveLeft = "aboveLeft".asInstanceOf[aboveLeft]
+  inline def aboveLeft: aboveLeft = "aboveLeft".asInstanceOf[aboveLeft]
   
   @js.native
   sealed trait aboveRight
     extends StObject
        with BootstrapMenuPosition
-  @scala.inline
-  def aboveRight: aboveRight = "aboveRight".asInstanceOf[aboveRight]
+  inline def aboveRight: aboveRight = "aboveRight".asInstanceOf[aboveRight]
   
   @js.native
   sealed trait belowLeft
     extends StObject
        with BootstrapMenuPosition
-  @scala.inline
-  def belowLeft: belowLeft = "belowLeft".asInstanceOf[belowLeft]
+  inline def belowLeft: belowLeft = "belowLeft".asInstanceOf[belowLeft]
   
   @js.native
   sealed trait belowRight
     extends StObject
        with BootstrapMenuPosition
-  @scala.inline
-  def belowRight: belowRight = "belowRight".asInstanceOf[belowRight]
+  inline def belowRight: belowRight = "belowRight".asInstanceOf[belowRight]
   
   @js.native
   sealed trait click
     extends StObject
        with BootstrapMenuEvent
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
   sealed trait element
     extends StObject
        with BootstrapMenuSource
-  @scala.inline
-  def element: element = "element".asInstanceOf[element]
+  inline def element: element = "element".asInstanceOf[element]
   
   @js.native
   sealed trait hover
     extends StObject
        with BootstrapMenuEvent
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
+  inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
   sealed trait mouse
     extends StObject
        with BootstrapMenuSource
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
   sealed trait `right-click`
     extends StObject
        with BootstrapMenuEvent
-  @scala.inline
-  def `right-click`: `right-click` = "right-click".asInstanceOf[`right-click`]
+  inline def `right-click`: `right-click` = "right-click".asInstanceOf[`right-click`]
 }

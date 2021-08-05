@@ -23,31 +23,27 @@ object mod {
     @JSImport("rc-tree-select", "default.SHOW_ALL")
     @js.native
     def SHOW_ALL: /* "SHOW_ALL" */ String = js.native
-    @scala.inline
-    def SHOW_ALL_=(x: /* "SHOW_ALL" */ String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_ALL")(x.asInstanceOf[js.Any])
+    inline def SHOW_ALL_=(x: /* "SHOW_ALL" */ String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_ALL")(x.asInstanceOf[js.Any])
     
     /* static member */
     /* was `typeof SHOW_CHILD` */
     @JSImport("rc-tree-select", "default.SHOW_CHILD")
     @js.native
     def SHOW_CHILD: /* "SHOW_CHILD" */ String = js.native
-    @scala.inline
-    def SHOW_CHILD_=(x: /* "SHOW_CHILD" */ String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_CHILD")(x.asInstanceOf[js.Any])
+    inline def SHOW_CHILD_=(x: /* "SHOW_CHILD" */ String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_CHILD")(x.asInstanceOf[js.Any])
     
     /* static member */
     /* was `typeof SHOW_PARENT` */
     @JSImport("rc-tree-select", "default.SHOW_PARENT")
     @js.native
     def SHOW_PARENT: /* "SHOW_PARENT" */ String = js.native
-    @scala.inline
-    def SHOW_PARENT_=(x: /* "SHOW_PARENT" */ String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_PARENT")(x.asInstanceOf[js.Any])
+    inline def SHOW_PARENT_=(x: /* "SHOW_PARENT" */ String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHOW_PARENT")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("rc-tree-select", "default.TreeNode")
     @js.native
     def TreeNode: FC[TreeNodeProps] = js.native
-    @scala.inline
-    def TreeNode_=(x: FC[TreeNodeProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeNode")(x.asInstanceOf[js.Any])
+    inline def TreeNode_=(x: FC[TreeNodeProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TreeNode")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rc-tree-select", "SHOW_ALL")

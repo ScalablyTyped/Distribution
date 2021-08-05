@@ -18,19 +18,15 @@ trait DescribeDataSourceRequest extends StObject {
 }
 object DescribeDataSourceRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, DataSourceId: ResourceId): DescribeDataSourceRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DataSourceId: ResourceId): DescribeDataSourceRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DataSourceId = DataSourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDataSourceRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDataSourceRequestMutableBuilder[Self <: DescribeDataSourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDataSourceRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceId(value: ResourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: ResourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
   }
 }

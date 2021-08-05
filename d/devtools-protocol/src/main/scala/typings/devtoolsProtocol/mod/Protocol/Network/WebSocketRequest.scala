@@ -13,16 +13,13 @@ trait WebSocketRequest extends StObject {
 }
 object WebSocketRequest {
   
-  @scala.inline
-  def apply(headers: Headers): WebSocketRequest = {
+  inline def apply(headers: Headers): WebSocketRequest = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebSocketRequest]
   }
   
-  @scala.inline
-  implicit class WebSocketRequestMutableBuilder[Self <: WebSocketRequest] (val x: Self) extends AnyVal {
+  extension [Self <: WebSocketRequest](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }
 }

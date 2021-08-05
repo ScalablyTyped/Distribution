@@ -13,19 +13,15 @@ trait RulesConfigurationType extends StObject {
 }
 object RulesConfigurationType {
   
-  @scala.inline
-  def apply(Rules: MappingRulesList): RulesConfigurationType = {
+  inline def apply(Rules: MappingRulesList): RulesConfigurationType = {
     val __obj = js.Dynamic.literal(Rules = Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[RulesConfigurationType]
   }
   
-  @scala.inline
-  implicit class RulesConfigurationTypeMutableBuilder[Self <: RulesConfigurationType] (val x: Self) extends AnyVal {
+  extension [Self <: RulesConfigurationType](x: Self) {
     
-    @scala.inline
-    def setRules(value: MappingRulesList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: MappingRulesList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: MappingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: MappingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

@@ -26,8 +26,7 @@ object mod {
        with GLViewHeadlessProps
   object SurfaceProps {
     
-    @scala.inline
-    def apply(height: Double, width: Double): SurfaceProps = {
+    inline def apply(height: Double, width: Double): SurfaceProps = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[SurfaceProps]
     }

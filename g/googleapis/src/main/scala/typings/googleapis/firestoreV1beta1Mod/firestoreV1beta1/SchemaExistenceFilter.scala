@@ -23,25 +23,19 @@ trait SchemaExistenceFilter extends StObject {
 }
 object SchemaExistenceFilter {
   
-  @scala.inline
-  def apply(): SchemaExistenceFilter = {
+  inline def apply(): SchemaExistenceFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExistenceFilter]
   }
   
-  @scala.inline
-  implicit class SchemaExistenceFilterMutableBuilder[Self <: SchemaExistenceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExistenceFilter](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: Double): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
   }
 }

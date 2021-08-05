@@ -65,40 +65,30 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setIgnoreWatch(
+      inline def setIgnoreWatch(
         value: Boolean | String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean])])
       ): Self = StObject.set(x, "ignoreWatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWatchFunction1(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "ignoreWatch", js.Any.fromFunction1(value))
+      inline def setIgnoreWatchFunction1(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "ignoreWatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIgnoreWatchUndefined: Self = StObject.set(x, "ignoreWatch", js.undefined)
+      inline def setIgnoreWatchUndefined: Self = StObject.set(x, "ignoreWatch", js.undefined)
       
-      @scala.inline
-      def setIgnoreWatchVarargs(value: (String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]))*): Self = StObject.set(x, "ignoreWatch", js.Array(value :_*))
+      inline def setIgnoreWatchVarargs(value: (String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]))*): Self = StObject.set(x, "ignoreWatch", js.Array(value :_*))
       
-      @scala.inline
-      def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+      inline def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
+      inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
     }
   }
   

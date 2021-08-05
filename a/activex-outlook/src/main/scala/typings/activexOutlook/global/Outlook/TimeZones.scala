@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.TimeZones")
 @js.native
-class TimeZones protected ()
+/* private */ class TimeZones ()
   extends StObject
      with typings.activexOutlook.Outlook.TimeZones {
   
@@ -34,7 +34,7 @@ class TimeZones protected ()
   /* CompleteClass */
   override def Item(Index: js.Any): typings.activexOutlook.Outlook.TimeZone = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.TimeZones_typekey")
   var OutlookDotTimeZones_typekey: typings.activexOutlook.Outlook.TimeZones = js.native
   

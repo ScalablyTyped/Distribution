@@ -14,8 +14,6 @@ object retriesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def retryable(func: GRPCCall, retry: RetryOptions, otherArgs: GRPCCallOtherArgs): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("retryable")(func.asInstanceOf[js.Any], retry.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
-  @scala.inline
-  def retryable(func: GRPCCall, retry: RetryOptions, otherArgs: GRPCCallOtherArgs, apiName: String): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("retryable")(func.asInstanceOf[js.Any], retry.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any], apiName.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
+  inline def retryable(func: GRPCCall, retry: RetryOptions, otherArgs: GRPCCallOtherArgs): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("retryable")(func.asInstanceOf[js.Any], retry.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
+  inline def retryable(func: GRPCCall, retry: RetryOptions, otherArgs: GRPCCallOtherArgs, apiName: String): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("retryable")(func.asInstanceOf[js.Any], retry.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any], apiName.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
 }

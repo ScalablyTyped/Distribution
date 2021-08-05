@@ -20,37 +20,27 @@ trait NodePoolAutoscaling extends StObject {
 }
 object NodePoolAutoscaling {
   
-  @scala.inline
-  def apply(): NodePoolAutoscaling = {
+  inline def apply(): NodePoolAutoscaling = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodePoolAutoscaling]
   }
   
-  @scala.inline
-  implicit class NodePoolAutoscalingMutableBuilder[Self <: NodePoolAutoscaling] (val x: Self) extends AnyVal {
+  extension [Self <: NodePoolAutoscaling](x: Self) {
     
-    @scala.inline
-    def setAutoprovisioned(value: Boolean): Self = StObject.set(x, "autoprovisioned", value.asInstanceOf[js.Any])
+    inline def setAutoprovisioned(value: Boolean): Self = StObject.set(x, "autoprovisioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoprovisionedUndefined: Self = StObject.set(x, "autoprovisioned", js.undefined)
+    inline def setAutoprovisionedUndefined: Self = StObject.set(x, "autoprovisioned", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMaxNodeCount(value: Double): Self = StObject.set(x, "maxNodeCount", value.asInstanceOf[js.Any])
+    inline def setMaxNodeCount(value: Double): Self = StObject.set(x, "maxNodeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNodeCountUndefined: Self = StObject.set(x, "maxNodeCount", js.undefined)
+    inline def setMaxNodeCountUndefined: Self = StObject.set(x, "maxNodeCount", js.undefined)
     
-    @scala.inline
-    def setMinNodeCount(value: Double): Self = StObject.set(x, "minNodeCount", value.asInstanceOf[js.Any])
+    inline def setMinNodeCount(value: Double): Self = StObject.set(x, "minNodeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinNodeCountUndefined: Self = StObject.set(x, "minNodeCount", js.undefined)
+    inline def setMinNodeCountUndefined: Self = StObject.set(x, "minNodeCount", js.undefined)
   }
 }

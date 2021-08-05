@@ -86,8 +86,7 @@ object batch {
   }
   object ComputeEnvironmentComputeResources {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       desiredVcpus: Double,
       instanceRole: String,
       instanceTypes: js.Array[String],
@@ -102,83 +101,57 @@ object batch {
       __obj.asInstanceOf[ComputeEnvironmentComputeResources]
     }
     
-    @scala.inline
-    implicit class ComputeEnvironmentComputeResourcesMutableBuilder[Self <: ComputeEnvironmentComputeResources] (val x: Self) extends AnyVal {
+    extension [Self <: ComputeEnvironmentComputeResources](x: Self) {
       
-      @scala.inline
-      def setAllocationStrategy(value: String): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
+      inline def setAllocationStrategy(value: String): Self = StObject.set(x, "allocationStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllocationStrategyUndefined: Self = StObject.set(x, "allocationStrategy", js.undefined)
+      inline def setAllocationStrategyUndefined: Self = StObject.set(x, "allocationStrategy", js.undefined)
       
-      @scala.inline
-      def setBidPercentage(value: Double): Self = StObject.set(x, "bidPercentage", value.asInstanceOf[js.Any])
+      inline def setBidPercentage(value: Double): Self = StObject.set(x, "bidPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBidPercentageUndefined: Self = StObject.set(x, "bidPercentage", js.undefined)
+      inline def setBidPercentageUndefined: Self = StObject.set(x, "bidPercentage", js.undefined)
       
-      @scala.inline
-      def setDesiredVcpus(value: Double): Self = StObject.set(x, "desiredVcpus", value.asInstanceOf[js.Any])
+      inline def setDesiredVcpus(value: Double): Self = StObject.set(x, "desiredVcpus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2KeyPair(value: String): Self = StObject.set(x, "ec2KeyPair", value.asInstanceOf[js.Any])
+      inline def setEc2KeyPair(value: String): Self = StObject.set(x, "ec2KeyPair", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2KeyPairUndefined: Self = StObject.set(x, "ec2KeyPair", js.undefined)
+      inline def setEc2KeyPairUndefined: Self = StObject.set(x, "ec2KeyPair", js.undefined)
       
-      @scala.inline
-      def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+      inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
+      inline def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
       
-      @scala.inline
-      def setInstanceRole(value: String): Self = StObject.set(x, "instanceRole", value.asInstanceOf[js.Any])
+      inline def setInstanceRole(value: String): Self = StObject.set(x, "instanceRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
+      inline def setInstanceTypes(value: js.Array[String]): Self = StObject.set(x, "instanceTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
+      inline def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "instanceTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setLaunchTemplate(value: ComputeEnvironmentComputeResourcesLaunchTemplate): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
+      inline def setLaunchTemplate(value: ComputeEnvironmentComputeResourcesLaunchTemplate): Self = StObject.set(x, "launchTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
+      inline def setLaunchTemplateUndefined: Self = StObject.set(x, "launchTemplate", js.undefined)
       
-      @scala.inline
-      def setMaxVcpus(value: Double): Self = StObject.set(x, "maxVcpus", value.asInstanceOf[js.Any])
+      inline def setMaxVcpus(value: Double): Self = StObject.set(x, "maxVcpus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinVcpus(value: Double): Self = StObject.set(x, "minVcpus", value.asInstanceOf[js.Any])
+      inline def setMinVcpus(value: Double): Self = StObject.set(x, "minVcpus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: js.Array[String]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: String*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setSpotIamFleetRole(value: String): Self = StObject.set(x, "spotIamFleetRole", value.asInstanceOf[js.Any])
+      inline def setSpotIamFleetRole(value: String): Self = StObject.set(x, "spotIamFleetRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpotIamFleetRoleUndefined: Self = StObject.set(x, "spotIamFleetRole", js.undefined)
+      inline def setSpotIamFleetRoleUndefined: Self = StObject.set(x, "spotIamFleetRole", js.undefined)
       
-      @scala.inline
-      def setSubnets(value: js.Array[String]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
+      inline def setSubnets(value: js.Array[String]): Self = StObject.set(x, "subnets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
+      inline def setSubnetsVarargs(value: String*): Self = StObject.set(x, "subnets", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,32 +174,24 @@ object batch {
   }
   object ComputeEnvironmentComputeResourcesLaunchTemplate {
     
-    @scala.inline
-    def apply(): ComputeEnvironmentComputeResourcesLaunchTemplate = {
+    inline def apply(): ComputeEnvironmentComputeResourcesLaunchTemplate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComputeEnvironmentComputeResourcesLaunchTemplate]
     }
     
-    @scala.inline
-    implicit class ComputeEnvironmentComputeResourcesLaunchTemplateMutableBuilder[Self <: ComputeEnvironmentComputeResourcesLaunchTemplate] (val x: Self) extends AnyVal {
+    extension [Self <: ComputeEnvironmentComputeResourcesLaunchTemplate](x: Self) {
       
-      @scala.inline
-      def setLaunchTemplateId(value: String): Self = StObject.set(x, "launchTemplateId", value.asInstanceOf[js.Any])
+      inline def setLaunchTemplateId(value: String): Self = StObject.set(x, "launchTemplateId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTemplateIdUndefined: Self = StObject.set(x, "launchTemplateId", js.undefined)
+      inline def setLaunchTemplateIdUndefined: Self = StObject.set(x, "launchTemplateId", js.undefined)
       
-      @scala.inline
-      def setLaunchTemplateName(value: String): Self = StObject.set(x, "launchTemplateName", value.asInstanceOf[js.Any])
+      inline def setLaunchTemplateName(value: String): Self = StObject.set(x, "launchTemplateName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLaunchTemplateNameUndefined: Self = StObject.set(x, "launchTemplateName", js.undefined)
+      inline def setLaunchTemplateNameUndefined: Self = StObject.set(x, "launchTemplateName", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -238,20 +203,16 @@ object batch {
   }
   object GetJobQueueComputeEnvironmentOrder {
     
-    @scala.inline
-    def apply(computeEnvironment: String, order: Double): GetJobQueueComputeEnvironmentOrder = {
+    inline def apply(computeEnvironment: String, order: Double): GetJobQueueComputeEnvironmentOrder = {
       val __obj = js.Dynamic.literal(computeEnvironment = computeEnvironment.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetJobQueueComputeEnvironmentOrder]
     }
     
-    @scala.inline
-    implicit class GetJobQueueComputeEnvironmentOrderMutableBuilder[Self <: GetJobQueueComputeEnvironmentOrder] (val x: Self) extends AnyVal {
+    extension [Self <: GetJobQueueComputeEnvironmentOrder](x: Self) {
       
-      @scala.inline
-      def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
+      inline def setComputeEnvironment(value: String): Self = StObject.set(x, "computeEnvironment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,20 +225,16 @@ object batch {
   }
   object JobDefinitionRetryStrategy {
     
-    @scala.inline
-    def apply(): JobDefinitionRetryStrategy = {
+    inline def apply(): JobDefinitionRetryStrategy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JobDefinitionRetryStrategy]
     }
     
-    @scala.inline
-    implicit class JobDefinitionRetryStrategyMutableBuilder[Self <: JobDefinitionRetryStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: JobDefinitionRetryStrategy](x: Self) {
       
-      @scala.inline
-      def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
+      inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
     }
   }
   
@@ -290,20 +247,16 @@ object batch {
   }
   object JobDefinitionTimeout {
     
-    @scala.inline
-    def apply(): JobDefinitionTimeout = {
+    inline def apply(): JobDefinitionTimeout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JobDefinitionTimeout]
     }
     
-    @scala.inline
-    implicit class JobDefinitionTimeoutMutableBuilder[Self <: JobDefinitionTimeout] (val x: Self) extends AnyVal {
+    extension [Self <: JobDefinitionTimeout](x: Self) {
       
-      @scala.inline
-      def setAttemptDurationSeconds(value: Double): Self = StObject.set(x, "attemptDurationSeconds", value.asInstanceOf[js.Any])
+      inline def setAttemptDurationSeconds(value: Double): Self = StObject.set(x, "attemptDurationSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptDurationSecondsUndefined: Self = StObject.set(x, "attemptDurationSeconds", js.undefined)
+      inline def setAttemptDurationSecondsUndefined: Self = StObject.set(x, "attemptDurationSeconds", js.undefined)
     }
   }
 }

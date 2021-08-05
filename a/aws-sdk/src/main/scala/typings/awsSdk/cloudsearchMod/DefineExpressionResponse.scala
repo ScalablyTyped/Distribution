@@ -10,16 +10,13 @@ trait DefineExpressionResponse extends StObject {
 }
 object DefineExpressionResponse {
   
-  @scala.inline
-  def apply(Expression: ExpressionStatus): DefineExpressionResponse = {
+  inline def apply(Expression: ExpressionStatus): DefineExpressionResponse = {
     val __obj = js.Dynamic.literal(Expression = Expression.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineExpressionResponse]
   }
   
-  @scala.inline
-  implicit class DefineExpressionResponseMutableBuilder[Self <: DefineExpressionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DefineExpressionResponse](x: Self) {
     
-    @scala.inline
-    def setExpression(value: ExpressionStatus): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: ExpressionStatus): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
   }
 }

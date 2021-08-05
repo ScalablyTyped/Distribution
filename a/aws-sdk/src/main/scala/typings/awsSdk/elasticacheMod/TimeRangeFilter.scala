@@ -18,25 +18,19 @@ trait TimeRangeFilter extends StObject {
 }
 object TimeRangeFilter {
   
-  @scala.inline
-  def apply(): TimeRangeFilter = {
+  inline def apply(): TimeRangeFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeRangeFilter]
   }
   
-  @scala.inline
-  implicit class TimeRangeFilterMutableBuilder[Self <: TimeRangeFilter] (val x: Self) extends AnyVal {
+  extension [Self <: TimeRangeFilter](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: TStamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: TStamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

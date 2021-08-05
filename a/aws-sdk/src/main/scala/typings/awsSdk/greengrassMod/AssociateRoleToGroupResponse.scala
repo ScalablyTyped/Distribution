@@ -13,19 +13,15 @@ trait AssociateRoleToGroupResponse extends StObject {
 }
 object AssociateRoleToGroupResponse {
   
-  @scala.inline
-  def apply(): AssociateRoleToGroupResponse = {
+  inline def apply(): AssociateRoleToGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateRoleToGroupResponse]
   }
   
-  @scala.inline
-  implicit class AssociateRoleToGroupResponseMutableBuilder[Self <: AssociateRoleToGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateRoleToGroupResponse](x: Self) {
     
-    @scala.inline
-    def setAssociatedAt(value: string): Self = StObject.set(x, "AssociatedAt", value.asInstanceOf[js.Any])
+    inline def setAssociatedAt(value: string): Self = StObject.set(x, "AssociatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedAtUndefined: Self = StObject.set(x, "AssociatedAt", js.undefined)
+    inline def setAssociatedAtUndefined: Self = StObject.set(x, "AssociatedAt", js.undefined)
   }
 }

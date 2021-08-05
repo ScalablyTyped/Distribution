@@ -18,22 +18,17 @@ trait DeleteDeliveryStreamInput extends StObject {
 }
 object DeleteDeliveryStreamInput {
   
-  @scala.inline
-  def apply(DeliveryStreamName: DeliveryStreamName): DeleteDeliveryStreamInput = {
+  inline def apply(DeliveryStreamName: DeliveryStreamName): DeleteDeliveryStreamInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDeliveryStreamInput]
   }
   
-  @scala.inline
-  implicit class DeleteDeliveryStreamInputMutableBuilder[Self <: DeleteDeliveryStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDeliveryStreamInput](x: Self) {
     
-    @scala.inline
-    def setAllowForceDelete(value: BooleanObject): Self = StObject.set(x, "AllowForceDelete", value.asInstanceOf[js.Any])
+    inline def setAllowForceDelete(value: BooleanObject): Self = StObject.set(x, "AllowForceDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowForceDeleteUndefined: Self = StObject.set(x, "AllowForceDelete", js.undefined)
+    inline def setAllowForceDeleteUndefined: Self = StObject.set(x, "AllowForceDelete", js.undefined)
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
   }
 }

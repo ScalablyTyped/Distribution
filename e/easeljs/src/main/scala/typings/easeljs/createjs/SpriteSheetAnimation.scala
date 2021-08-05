@@ -17,28 +17,21 @@ trait SpriteSheetAnimation extends StObject {
 }
 object SpriteSheetAnimation {
   
-  @scala.inline
-  def apply(frames: js.Array[Double], name: String, next: String, speed: Double): SpriteSheetAnimation = {
+  inline def apply(frames: js.Array[Double], name: String, next: String, speed: Double): SpriteSheetAnimation = {
     val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpriteSheetAnimation]
   }
   
-  @scala.inline
-  implicit class SpriteSheetAnimationMutableBuilder[Self <: SpriteSheetAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: SpriteSheetAnimation](x: Self) {
     
-    @scala.inline
-    def setFrames(value: js.Array[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    inline def setFrames(value: js.Array[Double]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramesVarargs(value: Double*): Self = StObject.set(x, "frames", js.Array(value :_*))
+    inline def setFramesVarargs(value: Double*): Self = StObject.set(x, "frames", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait Factory extends StObject {
 }
 object Factory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addPathMapping: (String, js.Any) => js.Any,
     addPathMappings: (js.Any, String) => js.Any,
     creatorForPath: (js.Any, String) => js.Any,
@@ -30,22 +29,16 @@ object Factory {
     __obj.asInstanceOf[Factory]
   }
   
-  @scala.inline
-  implicit class FactoryMutableBuilder[Self <: Factory] (val x: Self) extends AnyVal {
+  extension [Self <: Factory](x: Self) {
     
-    @scala.inline
-    def setAddPathMapping(value: (String, js.Any) => js.Any): Self = StObject.set(x, "addPathMapping", js.Any.fromFunction2(value))
+    inline def setAddPathMapping(value: (String, js.Any) => js.Any): Self = StObject.set(x, "addPathMapping", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddPathMappings(value: (js.Any, String) => js.Any): Self = StObject.set(x, "addPathMappings", js.Any.fromFunction2(value))
+    inline def setAddPathMappings(value: (js.Any, String) => js.Any): Self = StObject.set(x, "addPathMappings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreatorForPath(value: (js.Any, String) => js.Any): Self = StObject.set(x, "creatorForPath", js.Any.fromFunction2(value))
+    inline def setCreatorForPath(value: (js.Any, String) => js.Any): Self = StObject.set(x, "creatorForPath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasPath(value: String => Boolean): Self = StObject.set(x, "hasPath", js.Any.fromFunction1(value))
+    inline def setHasPath(value: String => Boolean): Self = StObject.set(x, "hasPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasPathMappings(value: (js.Any, String) => Boolean): Self = StObject.set(x, "hasPathMappings", js.Any.fromFunction2(value))
+    inline def setHasPathMappings(value: (js.Any, String) => Boolean): Self = StObject.set(x, "hasPathMappings", js.Any.fromFunction2(value))
   }
 }

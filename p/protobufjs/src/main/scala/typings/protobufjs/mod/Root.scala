@@ -88,8 +88,6 @@ object Root {
     * @param [root] Root namespace, defaults to create a new one if omitted
     * @returns Root namespace
     */
-  @scala.inline
-  def fromJSON(json: INamespace): Root = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Root]
-  @scala.inline
-  def fromJSON(json: INamespace, root: Root): Root = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Root]
+  inline def fromJSON(json: INamespace): Root = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Root]
+  inline def fromJSON(json: INamespace, root: Root): Root = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[Root]
 }

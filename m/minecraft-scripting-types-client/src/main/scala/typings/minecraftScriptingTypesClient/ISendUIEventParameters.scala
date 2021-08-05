@@ -22,19 +22,15 @@ trait ISendUIEventParameters extends StObject {
 }
 object ISendUIEventParameters {
   
-  @scala.inline
-  def apply(data: String, eventIdentifier: String): ISendUIEventParameters = {
+  inline def apply(data: String, eventIdentifier: String): ISendUIEventParameters = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], eventIdentifier = eventIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISendUIEventParameters]
   }
   
-  @scala.inline
-  implicit class ISendUIEventParametersMutableBuilder[Self <: ISendUIEventParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ISendUIEventParameters](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventIdentifier(value: String): Self = StObject.set(x, "eventIdentifier", value.asInstanceOf[js.Any])
+    inline def setEventIdentifier(value: String): Self = StObject.set(x, "eventIdentifier", value.asInstanceOf[js.Any])
   }
 }

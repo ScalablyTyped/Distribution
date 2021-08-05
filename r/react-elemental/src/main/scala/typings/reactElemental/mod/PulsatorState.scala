@@ -10,16 +10,13 @@ trait PulsatorState extends StObject {
 }
 object PulsatorState {
   
-  @scala.inline
-  def apply(color: js.Any): PulsatorState = {
+  inline def apply(color: js.Any): PulsatorState = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[PulsatorState]
   }
   
-  @scala.inline
-  implicit class PulsatorStateMutableBuilder[Self <: PulsatorState] (val x: Self) extends AnyVal {
+  extension [Self <: PulsatorState](x: Self) {
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }
 }

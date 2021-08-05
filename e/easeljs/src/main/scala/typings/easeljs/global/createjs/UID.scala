@@ -17,6 +17,5 @@ object UID {
   val ^ : js.Any = js.native
   
   // methods
-  @scala.inline
-  def get(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Double]
+  inline def get(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Double]
 }

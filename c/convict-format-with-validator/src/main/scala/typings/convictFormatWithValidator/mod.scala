@@ -14,18 +14,15 @@ object mod {
   @JSImport("convict-format-with-validator", "email")
   @js.native
   def email: Format = js.native
-  @scala.inline
-  def email_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("email")(x.asInstanceOf[js.Any])
+  inline def email_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("email")(x.asInstanceOf[js.Any])
   
   @JSImport("convict-format-with-validator", "ipaddress")
   @js.native
   def ipaddress: Format = js.native
-  @scala.inline
-  def ipaddress_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ipaddress")(x.asInstanceOf[js.Any])
+  inline def ipaddress_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ipaddress")(x.asInstanceOf[js.Any])
   
   @JSImport("convict-format-with-validator", "url")
   @js.native
   def url: Format = js.native
-  @scala.inline
-  def url_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("url")(x.asInstanceOf[js.Any])
+  inline def url_=(x: Format): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("url")(x.asInstanceOf[js.Any])
 }

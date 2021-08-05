@@ -14,31 +14,23 @@ trait StreetViewLink extends StObject {
 }
 object StreetViewLink {
   
-  @scala.inline
-  def apply(): StreetViewLink = {
+  inline def apply(): StreetViewLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreetViewLink]
   }
   
-  @scala.inline
-  implicit class StreetViewLinkMutableBuilder[Self <: StreetViewLink] (val x: Self) extends AnyVal {
+  extension [Self <: StreetViewLink](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
-    @scala.inline
-    def setPano(value: String): Self = StObject.set(x, "pano", value.asInstanceOf[js.Any])
+    inline def setPano(value: String): Self = StObject.set(x, "pano", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanoUndefined: Self = StObject.set(x, "pano", js.undefined)
+    inline def setPanoUndefined: Self = StObject.set(x, "pano", js.undefined)
   }
 }

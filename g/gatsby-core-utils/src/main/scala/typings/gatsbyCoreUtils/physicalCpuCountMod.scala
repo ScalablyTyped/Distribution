@@ -10,6 +10,5 @@ object physicalCpuCountMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPhysicalCpuCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPhysicalCpuCount")().asInstanceOf[Double]
+  inline def getPhysicalCpuCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPhysicalCpuCount")().asInstanceOf[Double]
 }

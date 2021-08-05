@@ -17,6 +17,5 @@ object tagItemSuggestionMod {
   @js.native
   val TagItemSuggestion: FunctionComponent[ITagItemSuggestionProps] = js.native
   
-  @scala.inline
-  def TagItemSuggestionBase(props: ITagItemSuggestionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TagItemSuggestionBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def TagItemSuggestionBase(props: ITagItemSuggestionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TagItemSuggestionBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

@@ -14,6 +14,6 @@ object parentOrElseSamplerMod {
        with Sampler {
     def this(_delegateSampler: Sampler) = this()
     
-    var _delegateSampler: js.Any = js.native
+    /* private */ var _delegateSampler: js.Any = js.native
   }
 }

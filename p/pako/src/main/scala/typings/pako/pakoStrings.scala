@@ -8,6 +8,5 @@ object pakoStrings {
   
   @js.native
   sealed trait string extends StObject
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
 }

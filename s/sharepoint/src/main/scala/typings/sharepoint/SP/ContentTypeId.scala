@@ -12,8 +12,7 @@ trait ContentTypeId
 }
 object ContentTypeId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -25,10 +24,8 @@ object ContentTypeId {
     __obj.asInstanceOf[ContentTypeId]
   }
   
-  @scala.inline
-  implicit class ContentTypeIdMutableBuilder[Self <: ContentTypeId] (val x: Self) extends AnyVal {
+  extension [Self <: ContentTypeId](x: Self) {
     
-    @scala.inline
-    def setGet_stringValue(value: () => String): Self = StObject.set(x, "get_stringValue", js.Any.fromFunction0(value))
+    inline def setGet_stringValue(value: () => String): Self = StObject.set(x, "get_stringValue", js.Any.fromFunction0(value))
   }
 }

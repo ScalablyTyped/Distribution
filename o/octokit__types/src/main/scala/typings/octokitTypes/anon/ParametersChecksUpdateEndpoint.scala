@@ -18,8 +18,7 @@ trait ParametersChecksUpdateEndpoint extends StObject {
 }
 object ParametersChecksUpdateEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ChecksUpdateEndpoint,
     request: ChecksUpdateRequestOptions,
     response: OctokitResponse[ChecksUpdateResponseData]
@@ -28,16 +27,12 @@ object ParametersChecksUpdateEndpoint {
     __obj.asInstanceOf[ParametersChecksUpdateEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersChecksUpdateEndpointMutableBuilder[Self <: ParametersChecksUpdateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersChecksUpdateEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ChecksUpdateEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ChecksUpdateEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ChecksUpdateRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ChecksUpdateRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ChecksUpdateResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ChecksUpdateResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

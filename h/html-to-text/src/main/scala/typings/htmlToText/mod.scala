@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromString(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def fromString(str: String, options: HtmlToTextOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fromString(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromString(str: String, options: HtmlToTextOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Formatter[T] = js.Function3[
     /* el */ T, 
@@ -53,106 +51,80 @@ object mod {
   }
   object Formatters {
     
-    @scala.inline
-    def apply(): Formatters = {
+    inline def apply(): Formatters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Formatters]
     }
     
-    @scala.inline
-    implicit class FormattersMutableBuilder[Self <: Formatters] (val x: Self) extends AnyVal {
+    extension [Self <: Formatters](x: Self) {
       
-      @scala.inline
-      def setAnchor(
+      inline def setAnchor(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "anchor", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setBlockquote(
+      inline def setBlockquote(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "blockquote", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setBlockquoteUndefined: Self = StObject.set(x, "blockquote", js.undefined)
+      inline def setBlockquoteUndefined: Self = StObject.set(x, "blockquote", js.undefined)
       
-      @scala.inline
-      def setHeading(
+      inline def setHeading(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "heading", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+      inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
       
-      @scala.inline
-      def setHorizontalLine(
+      inline def setHorizontalLine(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "horizontalLine", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
+      inline def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
       
-      @scala.inline
-      def setImage(value: (js.Any, /* options */ HtmlToTextOptions) => String): Self = StObject.set(x, "image", js.Any.fromFunction2(value))
+      inline def setImage(value: (js.Any, /* options */ HtmlToTextOptions) => String): Self = StObject.set(x, "image", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setLineBreak(
+      inline def setLineBreak(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "lineBreak", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
+      inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
       
-      @scala.inline
-      def setListItem(
+      inline def setListItem(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "listItem", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+      inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
       
-      @scala.inline
-      def setOrderedList(
+      inline def setOrderedList(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "orderedList", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOrderedListUndefined: Self = StObject.set(x, "orderedList", js.undefined)
+      inline def setOrderedListUndefined: Self = StObject.set(x, "orderedList", js.undefined)
       
-      @scala.inline
-      def setParagraph(
+      inline def setParagraph(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "paragraph", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
+      inline def setParagraphUndefined: Self = StObject.set(x, "paragraph", js.undefined)
       
-      @scala.inline
-      def setTable(
+      inline def setTable(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "table", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      @scala.inline
-      def setText(value: (js.Any, /* options */ HtmlToTextOptions) => String): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
+      inline def setText(value: (js.Any, /* options */ HtmlToTextOptions) => String): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setUnorderedList(
+      inline def setUnorderedList(
         value: (js.Any, /* walk */ js.Function2[/* dom */ js.Array[js.Any], /* options */ HtmlToTextOptions, String], /* options */ HtmlToTextOptions) => String
       ): Self = StObject.set(x, "unorderedList", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUnorderedListUndefined: Self = StObject.set(x, "unorderedList", js.undefined)
+      inline def setUnorderedListUndefined: Self = StObject.set(x, "unorderedList", js.undefined)
     }
   }
   
@@ -262,119 +234,82 @@ object mod {
   }
   object HtmlToTextOptions {
     
-    @scala.inline
-    def apply(): HtmlToTextOptions = {
+    inline def apply(): HtmlToTextOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HtmlToTextOptions]
     }
     
-    @scala.inline
-    implicit class HtmlToTextOptionsMutableBuilder[Self <: HtmlToTextOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlToTextOptions](x: Self) {
       
-      @scala.inline
-      def setBaseElement(value: String | js.Array[String]): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
+      inline def setBaseElement(value: String | js.Array[String]): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
+      inline def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
       
-      @scala.inline
-      def setBaseElementVarargs(value: String*): Self = StObject.set(x, "baseElement", js.Array(value :_*))
+      inline def setBaseElementVarargs(value: String*): Self = StObject.set(x, "baseElement", js.Array(value :_*))
       
-      @scala.inline
-      def setDecodeOptions(value: IsAttributeValue): Self = StObject.set(x, "decodeOptions", value.asInstanceOf[js.Any])
+      inline def setDecodeOptions(value: IsAttributeValue): Self = StObject.set(x, "decodeOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeOptionsUndefined: Self = StObject.set(x, "decodeOptions", js.undefined)
+      inline def setDecodeOptionsUndefined: Self = StObject.set(x, "decodeOptions", js.undefined)
       
-      @scala.inline
-      def setFormat(value: Formatters): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: Formatters): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHideLinkHrefIfSameAsText(value: Boolean): Self = StObject.set(x, "hideLinkHrefIfSameAsText", value.asInstanceOf[js.Any])
+      inline def setHideLinkHrefIfSameAsText(value: Boolean): Self = StObject.set(x, "hideLinkHrefIfSameAsText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideLinkHrefIfSameAsTextUndefined: Self = StObject.set(x, "hideLinkHrefIfSameAsText", js.undefined)
+      inline def setHideLinkHrefIfSameAsTextUndefined: Self = StObject.set(x, "hideLinkHrefIfSameAsText", js.undefined)
       
-      @scala.inline
-      def setIgnoreHref(value: Boolean): Self = StObject.set(x, "ignoreHref", value.asInstanceOf[js.Any])
+      inline def setIgnoreHref(value: Boolean): Self = StObject.set(x, "ignoreHref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreHrefUndefined: Self = StObject.set(x, "ignoreHref", js.undefined)
+      inline def setIgnoreHrefUndefined: Self = StObject.set(x, "ignoreHref", js.undefined)
       
-      @scala.inline
-      def setIgnoreImage(value: Boolean): Self = StObject.set(x, "ignoreImage", value.asInstanceOf[js.Any])
+      inline def setIgnoreImage(value: Boolean): Self = StObject.set(x, "ignoreImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreImageUndefined: Self = StObject.set(x, "ignoreImage", js.undefined)
+      inline def setIgnoreImageUndefined: Self = StObject.set(x, "ignoreImage", js.undefined)
       
-      @scala.inline
-      def setLinkHrefBaseUrl(value: String): Self = StObject.set(x, "linkHrefBaseUrl", value.asInstanceOf[js.Any])
+      inline def setLinkHrefBaseUrl(value: String): Self = StObject.set(x, "linkHrefBaseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkHrefBaseUrlUndefined: Self = StObject.set(x, "linkHrefBaseUrl", js.undefined)
+      inline def setLinkHrefBaseUrlUndefined: Self = StObject.set(x, "linkHrefBaseUrl", js.undefined)
       
-      @scala.inline
-      def setLongWordSplit(value: ForceWrapOnLimit): Self = StObject.set(x, "longWordSplit", value.asInstanceOf[js.Any])
+      inline def setLongWordSplit(value: ForceWrapOnLimit): Self = StObject.set(x, "longWordSplit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongWordSplitUndefined: Self = StObject.set(x, "longWordSplit", js.undefined)
+      inline def setLongWordSplitUndefined: Self = StObject.set(x, "longWordSplit", js.undefined)
       
-      @scala.inline
-      def setNoLinkBrackets(value: Boolean): Self = StObject.set(x, "noLinkBrackets", value.asInstanceOf[js.Any])
+      inline def setNoLinkBrackets(value: Boolean): Self = StObject.set(x, "noLinkBrackets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoLinkBracketsUndefined: Self = StObject.set(x, "noLinkBrackets", js.undefined)
+      inline def setNoLinkBracketsUndefined: Self = StObject.set(x, "noLinkBrackets", js.undefined)
       
-      @scala.inline
-      def setPreserveNewlines(value: Boolean): Self = StObject.set(x, "preserveNewlines", value.asInstanceOf[js.Any])
+      inline def setPreserveNewlines(value: Boolean): Self = StObject.set(x, "preserveNewlines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveNewlinesUndefined: Self = StObject.set(x, "preserveNewlines", js.undefined)
+      inline def setPreserveNewlinesUndefined: Self = StObject.set(x, "preserveNewlines", js.undefined)
       
-      @scala.inline
-      def setReturnDomByDefault(value: Boolean): Self = StObject.set(x, "returnDomByDefault", value.asInstanceOf[js.Any])
+      inline def setReturnDomByDefault(value: Boolean): Self = StObject.set(x, "returnDomByDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnDomByDefaultUndefined: Self = StObject.set(x, "returnDomByDefault", js.undefined)
+      inline def setReturnDomByDefaultUndefined: Self = StObject.set(x, "returnDomByDefault", js.undefined)
       
-      @scala.inline
-      def setSingleNewLineParagraphs(value: Boolean): Self = StObject.set(x, "singleNewLineParagraphs", value.asInstanceOf[js.Any])
+      inline def setSingleNewLineParagraphs(value: Boolean): Self = StObject.set(x, "singleNewLineParagraphs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleNewLineParagraphsUndefined: Self = StObject.set(x, "singleNewLineParagraphs", js.undefined)
+      inline def setSingleNewLineParagraphsUndefined: Self = StObject.set(x, "singleNewLineParagraphs", js.undefined)
       
-      @scala.inline
-      def setTables(value: js.Array[String] | Boolean): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+      inline def setTables(value: js.Array[String] | Boolean): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+      inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
       
-      @scala.inline
-      def setTablesVarargs(value: String*): Self = StObject.set(x, "tables", js.Array(value :_*))
+      inline def setTablesVarargs(value: String*): Self = StObject.set(x, "tables", js.Array(value :_*))
       
-      @scala.inline
-      def setUnorderedListItemPrefix(value: String): Self = StObject.set(x, "unorderedListItemPrefix", value.asInstanceOf[js.Any])
+      inline def setUnorderedListItemPrefix(value: String): Self = StObject.set(x, "unorderedListItemPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnorderedListItemPrefixUndefined: Self = StObject.set(x, "unorderedListItemPrefix", js.undefined)
+      inline def setUnorderedListItemPrefixUndefined: Self = StObject.set(x, "unorderedListItemPrefix", js.undefined)
       
-      @scala.inline
-      def setUppercaseHeadings(value: Boolean): Self = StObject.set(x, "uppercaseHeadings", value.asInstanceOf[js.Any])
+      inline def setUppercaseHeadings(value: Boolean): Self = StObject.set(x, "uppercaseHeadings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUppercaseHeadingsUndefined: Self = StObject.set(x, "uppercaseHeadings", js.undefined)
+      inline def setUppercaseHeadingsUndefined: Self = StObject.set(x, "uppercaseHeadings", js.undefined)
       
-      @scala.inline
-      def setWordwrap(value: Double | `false`): Self = StObject.set(x, "wordwrap", value.asInstanceOf[js.Any])
+      inline def setWordwrap(value: Double | `false`): Self = StObject.set(x, "wordwrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordwrapNull: Self = StObject.set(x, "wordwrap", null)
+      inline def setWordwrapNull: Self = StObject.set(x, "wordwrap", null)
       
-      @scala.inline
-      def setWordwrapUndefined: Self = StObject.set(x, "wordwrap", js.undefined)
+      inline def setWordwrapUndefined: Self = StObject.set(x, "wordwrap", js.undefined)
     }
   }
   

@@ -18,19 +18,15 @@ trait DescribeStepInput extends StObject {
 }
 object DescribeStepInput {
   
-  @scala.inline
-  def apply(ClusterId: ClusterId, StepId: StepId): DescribeStepInput = {
+  inline def apply(ClusterId: ClusterId, StepId: StepId): DescribeStepInput = {
     val __obj = js.Dynamic.literal(ClusterId = ClusterId.asInstanceOf[js.Any], StepId = StepId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStepInput]
   }
   
-  @scala.inline
-  implicit class DescribeStepInputMutableBuilder[Self <: DescribeStepInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStepInput](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepId(value: StepId): Self = StObject.set(x, "StepId", value.asInstanceOf[js.Any])
+    inline def setStepId(value: StepId): Self = StObject.set(x, "StepId", value.asInstanceOf[js.Any])
   }
 }

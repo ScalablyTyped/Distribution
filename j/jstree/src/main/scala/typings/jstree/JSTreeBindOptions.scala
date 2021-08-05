@@ -16,37 +16,27 @@ trait JSTreeBindOptions extends StObject {
 }
 object JSTreeBindOptions {
   
-  @scala.inline
-  def apply(): JSTreeBindOptions = {
+  inline def apply(): JSTreeBindOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JSTreeBindOptions]
   }
   
-  @scala.inline
-  implicit class JSTreeBindOptionsMutableBuilder[Self <: JSTreeBindOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeBindOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setInst(value: js.Any): Self = StObject.set(x, "inst", value.asInstanceOf[js.Any])
+    inline def setInst(value: js.Any): Self = StObject.set(x, "inst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstUndefined: Self = StObject.set(x, "inst", js.undefined)
+    inline def setInstUndefined: Self = StObject.set(x, "inst", js.undefined)
     
-    @scala.inline
-    def setRlbk(value: js.Any): Self = StObject.set(x, "rlbk", value.asInstanceOf[js.Any])
+    inline def setRlbk(value: js.Any): Self = StObject.set(x, "rlbk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRlbkUndefined: Self = StObject.set(x, "rlbk", js.undefined)
+    inline def setRlbkUndefined: Self = StObject.set(x, "rlbk", js.undefined)
     
-    @scala.inline
-    def setRslt(value: js.Any): Self = StObject.set(x, "rslt", value.asInstanceOf[js.Any])
+    inline def setRslt(value: js.Any): Self = StObject.set(x, "rslt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRsltUndefined: Self = StObject.set(x, "rslt", js.undefined)
+    inline def setRsltUndefined: Self = StObject.set(x, "rslt", js.undefined)
   }
 }

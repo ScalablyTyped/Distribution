@@ -13,16 +13,13 @@ trait FullContactCardOptions extends StObject {
 }
 object FullContactCardOptions {
   
-  @scala.inline
-  def apply(desiredRemainingView: ViewSizePreference): FullContactCardOptions = {
+  inline def apply(desiredRemainingView: ViewSizePreference): FullContactCardOptions = {
     val __obj = js.Dynamic.literal(desiredRemainingView = desiredRemainingView.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullContactCardOptions]
   }
   
-  @scala.inline
-  implicit class FullContactCardOptionsMutableBuilder[Self <: FullContactCardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FullContactCardOptions](x: Self) {
     
-    @scala.inline
-    def setDesiredRemainingView(value: ViewSizePreference): Self = StObject.set(x, "desiredRemainingView", value.asInstanceOf[js.Any])
+    inline def setDesiredRemainingView(value: ViewSizePreference): Self = StObject.set(x, "desiredRemainingView", value.asInstanceOf[js.Any])
   }
 }

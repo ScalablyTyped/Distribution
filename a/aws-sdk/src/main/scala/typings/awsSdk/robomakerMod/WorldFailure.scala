@@ -23,31 +23,23 @@ trait WorldFailure extends StObject {
 }
 object WorldFailure {
   
-  @scala.inline
-  def apply(): WorldFailure = {
+  inline def apply(): WorldFailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorldFailure]
   }
   
-  @scala.inline
-  implicit class WorldFailureMutableBuilder[Self <: WorldFailure] (val x: Self) extends AnyVal {
+  extension [Self <: WorldFailure](x: Self) {
     
-    @scala.inline
-    def setFailureCode(value: WorldGenerationJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: WorldGenerationJobErrorCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
+    inline def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
-    @scala.inline
-    def setFailureCount(value: Integer): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
+    inline def setFailureCount(value: Integer): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
+    inline def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
     
-    @scala.inline
-    def setSampleFailureReason(value: GenericString): Self = StObject.set(x, "sampleFailureReason", value.asInstanceOf[js.Any])
+    inline def setSampleFailureReason(value: GenericString): Self = StObject.set(x, "sampleFailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleFailureReasonUndefined: Self = StObject.set(x, "sampleFailureReason", js.undefined)
+    inline def setSampleFailureReasonUndefined: Self = StObject.set(x, "sampleFailureReason", js.undefined)
   }
 }

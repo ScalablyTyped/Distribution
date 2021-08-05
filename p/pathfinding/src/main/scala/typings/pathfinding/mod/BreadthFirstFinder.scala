@@ -15,6 +15,5 @@ trait BreadthFirstFinder
      with Instantiable1[/* opt */ BiBreadthFirstFinderOptions, BreadthFirstFinder]
 object BreadthFirstFinder {
   
-  @scala.inline
-  def apply: BreadthFirstFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BreadthFirstFinder").asInstanceOf[BreadthFirstFinder]
+  inline def apply: BreadthFirstFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BreadthFirstFinder").asInstanceOf[BreadthFirstFinder]
 }

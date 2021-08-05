@@ -13,16 +13,13 @@ trait GetCurrentTimeRequest extends StObject {
 }
 object GetCurrentTimeRequest {
   
-  @scala.inline
-  def apply(id: String): GetCurrentTimeRequest = {
+  inline def apply(id: String): GetCurrentTimeRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCurrentTimeRequest]
   }
   
-  @scala.inline
-  implicit class GetCurrentTimeRequestMutableBuilder[Self <: GetCurrentTimeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCurrentTimeRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientActionAvailabilityChangedEventArgs
 }
 object ASPxClientActionAvailabilityChangedEventArgs {
   
-  @scala.inline
-  def apply(ItemName: String): ASPxClientActionAvailabilityChangedEventArgs = {
+  inline def apply(ItemName: String): ASPxClientActionAvailabilityChangedEventArgs = {
     val __obj = js.Dynamic.literal(ItemName = ItemName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientActionAvailabilityChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientActionAvailabilityChangedEventArgsMutableBuilder[Self <: ASPxClientActionAvailabilityChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientActionAvailabilityChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
+    inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }
 }

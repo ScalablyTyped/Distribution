@@ -16,8 +16,7 @@ trait TestPointsQuery extends StObject {
 }
 object TestPointsQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     orderBy: String,
     points: js.Array[TestPoint],
     pointsFilter: PointsFilter,
@@ -27,25 +26,18 @@ object TestPointsQuery {
     __obj.asInstanceOf[TestPointsQuery]
   }
   
-  @scala.inline
-  implicit class TestPointsQueryMutableBuilder[Self <: TestPointsQuery] (val x: Self) extends AnyVal {
+  extension [Self <: TestPointsQuery](x: Self) {
     
-    @scala.inline
-    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: js.Array[TestPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[TestPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsFilter(value: PointsFilter): Self = StObject.set(x, "pointsFilter", value.asInstanceOf[js.Any])
+    inline def setPointsFilter(value: PointsFilter): Self = StObject.set(x, "pointsFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: TestPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: TestPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setWitFields(value: js.Array[String]): Self = StObject.set(x, "witFields", value.asInstanceOf[js.Any])
+    inline def setWitFields(value: js.Array[String]): Self = StObject.set(x, "witFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWitFieldsVarargs(value: String*): Self = StObject.set(x, "witFields", js.Array(value :_*))
+    inline def setWitFieldsVarargs(value: String*): Self = StObject.set(x, "witFields", js.Array(value :_*))
   }
 }

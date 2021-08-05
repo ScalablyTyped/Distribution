@@ -28,8 +28,7 @@ trait MergeBranchesByFastForwardInput extends StObject {
 }
 object MergeBranchesByFastForwardInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destinationCommitSpecifier: CommitName,
     repositoryName: RepositoryName,
     sourceCommitSpecifier: CommitName
@@ -38,22 +37,16 @@ object MergeBranchesByFastForwardInput {
     __obj.asInstanceOf[MergeBranchesByFastForwardInput]
   }
   
-  @scala.inline
-  implicit class MergeBranchesByFastForwardInputMutableBuilder[Self <: MergeBranchesByFastForwardInput] (val x: Self) extends AnyVal {
+  extension [Self <: MergeBranchesByFastForwardInput](x: Self) {
     
-    @scala.inline
-    def setDestinationCommitSpecifier(value: CommitName): Self = StObject.set(x, "destinationCommitSpecifier", value.asInstanceOf[js.Any])
+    inline def setDestinationCommitSpecifier(value: CommitName): Self = StObject.set(x, "destinationCommitSpecifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCommitSpecifier(value: CommitName): Self = StObject.set(x, "sourceCommitSpecifier", value.asInstanceOf[js.Any])
+    inline def setSourceCommitSpecifier(value: CommitName): Self = StObject.set(x, "sourceCommitSpecifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBranch(value: BranchName): Self = StObject.set(x, "targetBranch", value.asInstanceOf[js.Any])
+    inline def setTargetBranch(value: BranchName): Self = StObject.set(x, "targetBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBranchUndefined: Self = StObject.set(x, "targetBranch", js.undefined)
+    inline def setTargetBranchUndefined: Self = StObject.set(x, "targetBranch", js.undefined)
   }
 }

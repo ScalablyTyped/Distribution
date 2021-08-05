@@ -18,19 +18,15 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(AttributePath: AttributePath, AttributeValue: SensitiveStringType): Filter = {
+  inline def apply(AttributePath: AttributePath, AttributeValue: SensitiveStringType): Filter = {
     val __obj = js.Dynamic.literal(AttributePath = AttributePath.asInstanceOf[js.Any], AttributeValue = AttributeValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setAttributePath(value: AttributePath): Self = StObject.set(x, "AttributePath", value.asInstanceOf[js.Any])
+    inline def setAttributePath(value: AttributePath): Self = StObject.set(x, "AttributePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValue(value: SensitiveStringType): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: SensitiveStringType): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
   }
 }

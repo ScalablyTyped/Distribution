@@ -18,8 +18,7 @@ trait ListReelMediaViewerFeedResponseStoryChatRequestInfosItem extends StObject 
 }
 object ListReelMediaViewerFeedResponseStoryChatRequestInfosItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cursor: String,
     requester_usernames: ListReelMediaViewerFeedResponseRequesterUsernames,
     total_participant_requests: Double,
@@ -30,25 +29,18 @@ object ListReelMediaViewerFeedResponseStoryChatRequestInfosItem {
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseStoryChatRequestInfosItem]
   }
   
-  @scala.inline
-  implicit class ListReelMediaViewerFeedResponseStoryChatRequestInfosItemMutableBuilder[Self <: ListReelMediaViewerFeedResponseStoryChatRequestInfosItem] (val x: Self) extends AnyVal {
+  extension [Self <: ListReelMediaViewerFeedResponseStoryChatRequestInfosItem](x: Self) {
     
-    @scala.inline
-    def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequester_usernames(value: ListReelMediaViewerFeedResponseRequesterUsernames): Self = StObject.set(x, "requester_usernames", value.asInstanceOf[js.Any])
+    inline def setRequester_usernames(value: ListReelMediaViewerFeedResponseRequesterUsernames): Self = StObject.set(x, "requester_usernames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_participant_requests(value: Double): Self = StObject.set(x, "total_participant_requests", value.asInstanceOf[js.Any])
+    inline def setTotal_participant_requests(value: Double): Self = StObject.set(x, "total_participant_requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal_thread_participants(value: Double): Self = StObject.set(x, "total_thread_participants", value.asInstanceOf[js.Any])
+    inline def setTotal_thread_participants(value: Double): Self = StObject.set(x, "total_thread_participants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: js.Array[ListReelMediaViewerFeedResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[ListReelMediaViewerFeedResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: ListReelMediaViewerFeedResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: ListReelMediaViewerFeedResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
   }
 }

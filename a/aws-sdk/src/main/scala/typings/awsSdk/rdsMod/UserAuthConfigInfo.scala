@@ -33,43 +33,31 @@ trait UserAuthConfigInfo extends StObject {
 }
 object UserAuthConfigInfo {
   
-  @scala.inline
-  def apply(): UserAuthConfigInfo = {
+  inline def apply(): UserAuthConfigInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserAuthConfigInfo]
   }
   
-  @scala.inline
-  implicit class UserAuthConfigInfoMutableBuilder[Self <: UserAuthConfigInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UserAuthConfigInfo](x: Self) {
     
-    @scala.inline
-    def setAuthScheme(value: AuthScheme): Self = StObject.set(x, "AuthScheme", value.asInstanceOf[js.Any])
+    inline def setAuthScheme(value: AuthScheme): Self = StObject.set(x, "AuthScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthSchemeUndefined: Self = StObject.set(x, "AuthScheme", js.undefined)
+    inline def setAuthSchemeUndefined: Self = StObject.set(x, "AuthScheme", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setIAMAuth(value: IAMAuthMode): Self = StObject.set(x, "IAMAuth", value.asInstanceOf[js.Any])
+    inline def setIAMAuth(value: IAMAuthMode): Self = StObject.set(x, "IAMAuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIAMAuthUndefined: Self = StObject.set(x, "IAMAuth", js.undefined)
+    inline def setIAMAuthUndefined: Self = StObject.set(x, "IAMAuth", js.undefined)
     
-    @scala.inline
-    def setSecretArn(value: String): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: String): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
+    inline def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object Finished {
     
-    @scala.inline
-    def apply(finished: Boolean): Finished = {
+    inline def apply(finished: Boolean): Finished = {
       val __obj = js.Dynamic.literal(finished = finished.asInstanceOf[js.Any])
       __obj.asInstanceOf[Finished]
     }
     
-    @scala.inline
-    implicit class FinishedMutableBuilder[Self <: Finished] (val x: Self) extends AnyVal {
+    extension [Self <: Finished](x: Self) {
       
-      @scala.inline
-      def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
+      inline def setFinished(value: Boolean): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,20 +29,16 @@ object anon {
   }
   object Style {
     
-    @scala.inline
-    def apply(): Style = {
+    inline def apply(): Style = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Style]
     }
     
-    @scala.inline
-    implicit class StyleMutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
+    extension [Self <: Style](x: Self) {
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

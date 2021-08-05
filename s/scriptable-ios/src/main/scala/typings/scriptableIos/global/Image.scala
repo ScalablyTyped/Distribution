@@ -35,8 +35,7 @@ object Image {
     * @see https://docs.scriptable.app/image/#fromdata
     */
   /* static member */
-  @scala.inline
-  def fromData(data: typings.scriptableIos.Data): typings.scriptableIos.Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Image]
+  inline def fromData(data: typings.scriptableIos.Data): typings.scriptableIos.Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(data.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Image]
   
   /**
     * _Creates an image from file._
@@ -46,6 +45,5 @@ object Image {
     * @see https://docs.scriptable.app/image/#fromfile
     */
   /* static member */
-  @scala.inline
-  def fromFile(filePath: String): typings.scriptableIos.Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Image]
+  inline def fromFile(filePath: String): typings.scriptableIos.Image = ^.asInstanceOf[js.Dynamic].applyDynamic("fromFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[typings.scriptableIos.Image]
 }

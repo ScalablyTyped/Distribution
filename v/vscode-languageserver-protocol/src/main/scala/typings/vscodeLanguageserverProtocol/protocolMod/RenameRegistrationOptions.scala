@@ -10,8 +10,7 @@ trait RenameRegistrationOptions
      with RenameOptions
 object RenameRegistrationOptions {
   
-  @scala.inline
-  def apply(): RenameRegistrationOptions = {
+  inline def apply(): RenameRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[RenameRegistrationOptions]
   }

@@ -23,25 +23,19 @@ trait GeoOptions extends StObject {
 }
 object GeoOptions {
   
-  @scala.inline
-  def apply(latitude: Double, longitude: Double): GeoOptions = {
+  inline def apply(latitude: Double, longitude: Double): GeoOptions = {
     val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoOptions]
   }
   
-  @scala.inline
-  implicit class GeoOptionsMutableBuilder[Self <: GeoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeoOptions](x: Self) {
     
-    @scala.inline
-    def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
+    inline def setAccuracyUndefined: Self = StObject.set(x, "accuracy", js.undefined)
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
   }
 }

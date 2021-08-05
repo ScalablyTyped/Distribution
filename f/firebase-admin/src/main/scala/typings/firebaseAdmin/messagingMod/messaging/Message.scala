@@ -12,20 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Message extends StObject
 object Message {
   
-  @scala.inline
-  def ConditionMessage(condition: String): typings.firebaseAdmin.messagingMod.messaging.ConditionMessage = {
+  inline def ConditionMessage(condition: String): typings.firebaseAdmin.messagingMod.messaging.ConditionMessage = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.firebaseAdmin.messagingMod.messaging.ConditionMessage]
   }
   
-  @scala.inline
-  def TokenMessage(token: String): typings.firebaseAdmin.messagingMod.messaging.TokenMessage = {
+  inline def TokenMessage(token: String): typings.firebaseAdmin.messagingMod.messaging.TokenMessage = {
     val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.firebaseAdmin.messagingMod.messaging.TokenMessage]
   }
   
-  @scala.inline
-  def TopicMessage(topic: String): typings.firebaseAdmin.messagingMod.messaging.TopicMessage = {
+  inline def TopicMessage(topic: String): typings.firebaseAdmin.messagingMod.messaging.TopicMessage = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.firebaseAdmin.messagingMod.messaging.TopicMessage]
   }

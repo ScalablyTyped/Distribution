@@ -23,22 +23,17 @@ trait CreateAppCookieStickinessPolicyInput extends StObject {
 }
 object CreateAppCookieStickinessPolicyInput {
   
-  @scala.inline
-  def apply(CookieName: CookieName, LoadBalancerName: AccessPointName, PolicyName: PolicyName): CreateAppCookieStickinessPolicyInput = {
+  inline def apply(CookieName: CookieName, LoadBalancerName: AccessPointName, PolicyName: PolicyName): CreateAppCookieStickinessPolicyInput = {
     val __obj = js.Dynamic.literal(CookieName = CookieName.asInstanceOf[js.Any], LoadBalancerName = LoadBalancerName.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAppCookieStickinessPolicyInput]
   }
   
-  @scala.inline
-  implicit class CreateAppCookieStickinessPolicyInputMutableBuilder[Self <: CreateAppCookieStickinessPolicyInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAppCookieStickinessPolicyInput](x: Self) {
     
-    @scala.inline
-    def setCookieName(value: CookieName): Self = StObject.set(x, "CookieName", value.asInstanceOf[js.Any])
+    inline def setCookieName(value: CookieName): Self = StObject.set(x, "CookieName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

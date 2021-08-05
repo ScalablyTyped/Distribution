@@ -12,22 +12,17 @@ trait LocationObject extends StObject {
 }
 object LocationObject {
   
-  @scala.inline
-  def apply(id: Double): LocationObject = {
+  inline def apply(id: Double): LocationObject = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationObject]
   }
   
-  @scala.inline
-  implicit class LocationObjectMutableBuilder[Self <: LocationObject] (val x: Self) extends AnyVal {
+  extension [Self <: LocationObject](x: Self) {
     
-    @scala.inline
-    def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
+    inline def setBidModifier(value: Double): Self = StObject.set(x, "bidModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidModifierUndefined: Self = StObject.set(x, "bidModifier", js.undefined)
+    inline def setBidModifierUndefined: Self = StObject.set(x, "bidModifier", js.undefined)
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

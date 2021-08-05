@@ -21,37 +21,27 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(): Source = {
+  inline def apply(): Source = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
+    inline def setCredential_id(value: String): Self = StObject.set(x, "credential_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredential_idUndefined: Self = StObject.set(x, "credential_id", js.undefined)
+    inline def setCredential_idUndefined: Self = StObject.set(x, "credential_id", js.undefined)
     
-    @scala.inline
-    def setOptions(value: SourceOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SourceOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: SourceSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: SourceSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

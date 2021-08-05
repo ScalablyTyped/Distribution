@@ -16,26 +16,20 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(fields: StringDictionary[js.Any]): Fields = {
+    inline def apply(fields: StringDictionary[js.Any]): Fields = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiles(value: js.Array[ReadStream]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[ReadStream]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: ReadStream*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: ReadStream*): Self = StObject.set(x, "files", js.Array(value :_*))
     }
   }
 }

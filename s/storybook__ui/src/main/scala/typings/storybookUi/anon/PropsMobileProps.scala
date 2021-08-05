@@ -11,16 +11,13 @@ trait PropsMobileProps extends StObject {
 }
 object PropsMobileProps {
   
-  @scala.inline
-  def apply(props: MobileProps): PropsMobileProps = {
+  inline def apply(props: MobileProps): PropsMobileProps = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropsMobileProps]
   }
   
-  @scala.inline
-  implicit class PropsMobilePropsMutableBuilder[Self <: PropsMobileProps] (val x: Self) extends AnyVal {
+  extension [Self <: PropsMobileProps](x: Self) {
     
-    @scala.inline
-    def setProps(value: MobileProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: MobileProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

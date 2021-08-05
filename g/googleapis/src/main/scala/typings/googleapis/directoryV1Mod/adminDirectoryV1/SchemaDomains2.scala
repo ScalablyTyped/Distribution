@@ -26,34 +26,25 @@ trait SchemaDomains2 extends StObject {
 }
 object SchemaDomains2 {
   
-  @scala.inline
-  def apply(): SchemaDomains2 = {
+  inline def apply(): SchemaDomains2 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomains2]
   }
   
-  @scala.inline
-  implicit class SchemaDomains2MutableBuilder[Self <: SchemaDomains2] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDomains2](x: Self) {
     
-    @scala.inline
-    def setDomains(value: js.Array[SchemaDomains]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: js.Array[SchemaDomains]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    @scala.inline
-    def setDomainsVarargs(value: SchemaDomains*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: SchemaDomains*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

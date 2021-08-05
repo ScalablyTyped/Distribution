@@ -43,58 +43,41 @@ trait ConfigurationProfile extends StObject {
 }
 object ConfigurationProfile {
   
-  @scala.inline
-  def apply(): ConfigurationProfile = {
+  inline def apply(): ConfigurationProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationProfile]
   }
   
-  @scala.inline
-  implicit class ConfigurationProfileMutableBuilder[Self <: ConfigurationProfile] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationProfile](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
+    inline def setApplicationIdUndefined: Self = StObject.set(x, "ApplicationId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setLocationUri(value: Uri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
+    inline def setLocationUri(value: Uri): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
+    inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setRetrievalRoleArn(value: RoleArn): Self = StObject.set(x, "RetrievalRoleArn", value.asInstanceOf[js.Any])
+    inline def setRetrievalRoleArn(value: RoleArn): Self = StObject.set(x, "RetrievalRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrievalRoleArnUndefined: Self = StObject.set(x, "RetrievalRoleArn", js.undefined)
+    inline def setRetrievalRoleArnUndefined: Self = StObject.set(x, "RetrievalRoleArn", js.undefined)
     
-    @scala.inline
-    def setValidators(value: ValidatorList): Self = StObject.set(x, "Validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: ValidatorList): Self = StObject.set(x, "Validators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorsUndefined: Self = StObject.set(x, "Validators", js.undefined)
+    inline def setValidatorsUndefined: Self = StObject.set(x, "Validators", js.undefined)
     
-    @scala.inline
-    def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "Validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "Validators", js.Array(value :_*))
   }
 }

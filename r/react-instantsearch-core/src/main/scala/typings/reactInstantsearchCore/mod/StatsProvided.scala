@@ -12,19 +12,15 @@ trait StatsProvided extends StObject {
 }
 object StatsProvided {
   
-  @scala.inline
-  def apply(nbHits: Double, processingTimeMS: Double): StatsProvided = {
+  inline def apply(nbHits: Double, processingTimeMS: Double): StatsProvided = {
     val __obj = js.Dynamic.literal(nbHits = nbHits.asInstanceOf[js.Any], processingTimeMS = processingTimeMS.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatsProvided]
   }
   
-  @scala.inline
-  implicit class StatsProvidedMutableBuilder[Self <: StatsProvided] (val x: Self) extends AnyVal {
+  extension [Self <: StatsProvided](x: Self) {
     
-    @scala.inline
-    def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
+    inline def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingTimeMS(value: Double): Self = StObject.set(x, "processingTimeMS", value.asInstanceOf[js.Any])
+    inline def setProcessingTimeMS(value: Double): Self = StObject.set(x, "processingTimeMS", value.asInstanceOf[js.Any])
   }
 }

@@ -26,19 +26,15 @@ trait CustomDocumentBackup extends StObject {
 }
 object CustomDocumentBackup {
   
-  @scala.inline
-  def apply(delete: () => Unit, id: String): CustomDocumentBackup = {
+  inline def apply(delete: () => Unit, id: String): CustomDocumentBackup = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomDocumentBackup]
   }
   
-  @scala.inline
-  implicit class CustomDocumentBackupMutableBuilder[Self <: CustomDocumentBackup] (val x: Self) extends AnyVal {
+  extension [Self <: CustomDocumentBackup](x: Self) {
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

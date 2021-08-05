@@ -29,43 +29,31 @@ trait DynamicListener extends StObject {
 }
 object DynamicListener {
   
-  @scala.inline
-  def apply(): DynamicListener = {
+  inline def apply(): DynamicListener = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamicListener]
   }
   
-  @scala.inline
-  implicit class DynamicListenerMutableBuilder[Self <: DynamicListener] (val x: Self) extends AnyVal {
+  extension [Self <: DynamicListener](x: Self) {
     
-    @scala.inline
-    def setActiveState(value: DynamicListenerState): Self = StObject.set(x, "activeState", value.asInstanceOf[js.Any])
+    inline def setActiveState(value: DynamicListenerState): Self = StObject.set(x, "activeState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveStateUndefined: Self = StObject.set(x, "activeState", js.undefined)
+    inline def setActiveStateUndefined: Self = StObject.set(x, "activeState", js.undefined)
     
-    @scala.inline
-    def setDrainingState(value: DynamicListenerState): Self = StObject.set(x, "drainingState", value.asInstanceOf[js.Any])
+    inline def setDrainingState(value: DynamicListenerState): Self = StObject.set(x, "drainingState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrainingStateUndefined: Self = StObject.set(x, "drainingState", js.undefined)
+    inline def setDrainingStateUndefined: Self = StObject.set(x, "drainingState", js.undefined)
     
-    @scala.inline
-    def setErrorState(value: UpdateFailureState): Self = StObject.set(x, "errorState", value.asInstanceOf[js.Any])
+    inline def setErrorState(value: UpdateFailureState): Self = StObject.set(x, "errorState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorStateUndefined: Self = StObject.set(x, "errorState", js.undefined)
+    inline def setErrorStateUndefined: Self = StObject.set(x, "errorState", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setWarmingState(value: DynamicListenerState): Self = StObject.set(x, "warmingState", value.asInstanceOf[js.Any])
+    inline def setWarmingState(value: DynamicListenerState): Self = StObject.set(x, "warmingState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarmingStateUndefined: Self = StObject.set(x, "warmingState", js.undefined)
+    inline def setWarmingStateUndefined: Self = StObject.set(x, "warmingState", js.undefined)
   }
 }

@@ -40,46 +40,33 @@ trait ShellExecutionOptions extends StObject {
 }
 object ShellExecutionOptions {
   
-  @scala.inline
-  def apply(): ShellExecutionOptions = {
+  inline def apply(): ShellExecutionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShellExecutionOptions]
   }
   
-  @scala.inline
-  implicit class ShellExecutionOptionsMutableBuilder[Self <: ShellExecutionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ShellExecutionOptions](x: Self) {
     
-    @scala.inline
-    def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+    inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+    inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
     
-    @scala.inline
-    def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: StringDictionary[String]): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    @scala.inline
-    def setExecutable(value: String): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
+    inline def setExecutable(value: String): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutableUndefined: Self = StObject.set(x, "executable", js.undefined)
+    inline def setExecutableUndefined: Self = StObject.set(x, "executable", js.undefined)
     
-    @scala.inline
-    def setShellArgs(value: js.Array[String]): Self = StObject.set(x, "shellArgs", value.asInstanceOf[js.Any])
+    inline def setShellArgs(value: js.Array[String]): Self = StObject.set(x, "shellArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellArgsUndefined: Self = StObject.set(x, "shellArgs", js.undefined)
+    inline def setShellArgsUndefined: Self = StObject.set(x, "shellArgs", js.undefined)
     
-    @scala.inline
-    def setShellArgsVarargs(value: String*): Self = StObject.set(x, "shellArgs", js.Array(value :_*))
+    inline def setShellArgsVarargs(value: String*): Self = StObject.set(x, "shellArgs", js.Array(value :_*))
     
-    @scala.inline
-    def setShellQuoting(value: ShellQuotingOptions): Self = StObject.set(x, "shellQuoting", value.asInstanceOf[js.Any])
+    inline def setShellQuoting(value: ShellQuotingOptions): Self = StObject.set(x, "shellQuoting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShellQuotingUndefined: Self = StObject.set(x, "shellQuoting", js.undefined)
+    inline def setShellQuotingUndefined: Self = StObject.set(x, "shellQuoting", js.undefined)
   }
 }

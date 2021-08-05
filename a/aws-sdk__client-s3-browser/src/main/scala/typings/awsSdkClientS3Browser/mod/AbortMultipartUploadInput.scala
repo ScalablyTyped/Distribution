@@ -9,8 +9,7 @@ trait AbortMultipartUploadInput
      with typings.awsSdkClientS3Browser.typesAbortMultipartUploadInputMod.AbortMultipartUploadInput
 object AbortMultipartUploadInput {
   
-  @scala.inline
-  def apply(Bucket: String, Key: String, UploadId: String): AbortMultipartUploadInput = {
+  inline def apply(Bucket: String, Key: String, UploadId: String): AbortMultipartUploadInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any], UploadId = UploadId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbortMultipartUploadInput]
   }

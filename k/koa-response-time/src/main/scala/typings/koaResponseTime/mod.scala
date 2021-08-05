@@ -19,10 +19,8 @@ object mod {
     *          Default is `false` to keep back compatible.
     * @api public
     */
-  @scala.inline
-  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(options: KoaResponseTimeOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(options: KoaResponseTimeOptions): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-response-time", JSImport.Namespace)
   @js.native
@@ -34,20 +32,16 @@ object mod {
   }
   object KoaResponseTimeOptions {
     
-    @scala.inline
-    def apply(): KoaResponseTimeOptions = {
+    inline def apply(): KoaResponseTimeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KoaResponseTimeOptions]
     }
     
-    @scala.inline
-    implicit class KoaResponseTimeOptionsMutableBuilder[Self <: KoaResponseTimeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KoaResponseTimeOptions](x: Self) {
       
-      @scala.inline
-      def setHrtime(value: Boolean): Self = StObject.set(x, "hrtime", value.asInstanceOf[js.Any])
+      inline def setHrtime(value: Boolean): Self = StObject.set(x, "hrtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrtimeUndefined: Self = StObject.set(x, "hrtime", js.undefined)
+      inline def setHrtimeUndefined: Self = StObject.set(x, "hrtime", js.undefined)
     }
   }
 }

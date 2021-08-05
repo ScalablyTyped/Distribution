@@ -13,16 +13,13 @@ trait DescribeTagsRequest extends StObject {
 }
 object DescribeTagsRequest {
   
-  @scala.inline
-  def apply(ResourceId: NonEmptyString): DescribeTagsRequest = {
+  inline def apply(ResourceId: NonEmptyString): DescribeTagsRequest = {
     val __obj = js.Dynamic.literal(ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTagsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTagsRequestMutableBuilder[Self <: DescribeTagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTagsRequest](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: NonEmptyString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: NonEmptyString): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

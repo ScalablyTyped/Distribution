@@ -9,8 +9,7 @@ trait INavbarDividerProps
      with typings.blueprintjsCore.navbarDividerMod.INavbarDividerProps
 object INavbarDividerProps {
   
-  @scala.inline
-  def apply(): INavbarDividerProps = {
+  inline def apply(): INavbarDividerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INavbarDividerProps]
   }

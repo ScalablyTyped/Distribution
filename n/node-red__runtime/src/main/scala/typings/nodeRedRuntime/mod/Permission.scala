@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Permission extends StObject
 object Permission {
   
-  @scala.inline
-  def Asterisk: typings.nodeRedRuntime.nodeRedRuntimeStrings.Asterisk = "*".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.Asterisk]
+  inline def Asterisk: typings.nodeRedRuntime.nodeRedRuntimeStrings.Asterisk = "*".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.Asterisk]
   
-  @scala.inline
-  def contextDotread: typings.nodeRedRuntime.nodeRedRuntimeStrings.contextDotread = "context.read".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.contextDotread]
+  inline def contextDotread: typings.nodeRedRuntime.nodeRedRuntimeStrings.contextDotread = "context.read".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.contextDotread]
   
-  @scala.inline
-  def contextDotwrite: typings.nodeRedRuntime.nodeRedRuntimeStrings.contextDotwrite = "context.write".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.contextDotwrite]
+  inline def contextDotwrite: typings.nodeRedRuntime.nodeRedRuntimeStrings.contextDotwrite = "context.write".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.contextDotwrite]
   
-  @scala.inline
-  def flowsDotread: typings.nodeRedRuntime.nodeRedRuntimeStrings.flowsDotread = "flows.read".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.flowsDotread]
+  inline def flowsDotread: typings.nodeRedRuntime.nodeRedRuntimeStrings.flowsDotread = "flows.read".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.flowsDotread]
   
-  @scala.inline
-  def flowsDotwrite: typings.nodeRedRuntime.nodeRedRuntimeStrings.flowsDotwrite = "flows.write".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.flowsDotwrite]
+  inline def flowsDotwrite: typings.nodeRedRuntime.nodeRedRuntimeStrings.flowsDotwrite = "flows.write".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.flowsDotwrite]
   
-  @scala.inline
-  def nodesDotread: typings.nodeRedRuntime.nodeRedRuntimeStrings.nodesDotread = "nodes.read".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.nodesDotread]
+  inline def nodesDotread: typings.nodeRedRuntime.nodeRedRuntimeStrings.nodesDotread = "nodes.read".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.nodesDotread]
   
-  @scala.inline
-  def nodesDotwrite: typings.nodeRedRuntime.nodeRedRuntimeStrings.nodesDotwrite = "nodes.write".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.nodesDotwrite]
+  inline def nodesDotwrite: typings.nodeRedRuntime.nodeRedRuntimeStrings.nodesDotwrite = "nodes.write".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.nodesDotwrite]
   
-  @scala.inline
-  def read: typings.nodeRedRuntime.nodeRedRuntimeStrings.read = "read".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.read]
+  inline def read: typings.nodeRedRuntime.nodeRedRuntimeStrings.read = "read".asInstanceOf[typings.nodeRedRuntime.nodeRedRuntimeStrings.read]
 }

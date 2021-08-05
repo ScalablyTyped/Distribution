@@ -13,16 +13,13 @@ trait StartDeploymentResult extends StObject {
 }
 object StartDeploymentResult {
   
-  @scala.inline
-  def apply(jobSummary: JobSummary): StartDeploymentResult = {
+  inline def apply(jobSummary: JobSummary): StartDeploymentResult = {
     val __obj = js.Dynamic.literal(jobSummary = jobSummary.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDeploymentResult]
   }
   
-  @scala.inline
-  implicit class StartDeploymentResultMutableBuilder[Self <: StartDeploymentResult] (val x: Self) extends AnyVal {
+  extension [Self <: StartDeploymentResult](x: Self) {
     
-    @scala.inline
-    def setJobSummary(value: JobSummary): Self = StObject.set(x, "jobSummary", value.asInstanceOf[js.Any])
+    inline def setJobSummary(value: JobSummary): Self = StObject.set(x, "jobSummary", value.asInstanceOf[js.Any])
   }
 }

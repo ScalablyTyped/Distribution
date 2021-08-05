@@ -110,17 +110,14 @@ object externalApplicationExternalApplicationMod {
   }
   object ExternalApplicationInfo {
     
-    @scala.inline
-    def apply(parent: Identity): ExternalApplicationInfo = {
+    inline def apply(parent: Identity): ExternalApplicationInfo = {
       val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExternalApplicationInfo]
     }
     
-    @scala.inline
-    implicit class ExternalApplicationInfoMutableBuilder[Self <: ExternalApplicationInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ExternalApplicationInfo](x: Self) {
       
-      @scala.inline
-      def setParent(value: Identity): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Identity): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     }
   }
   

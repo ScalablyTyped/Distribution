@@ -12,25 +12,19 @@ trait PopupAnimation extends StObject {
 }
 object PopupAnimation {
   
-  @scala.inline
-  def apply(): PopupAnimation = {
+  inline def apply(): PopupAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopupAnimation]
   }
   
-  @scala.inline
-  implicit class PopupAnimationMutableBuilder[Self <: PopupAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: PopupAnimation](x: Self) {
     
-    @scala.inline
-    def setClose(value: PopupAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: PopupAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: PopupAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: PopupAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

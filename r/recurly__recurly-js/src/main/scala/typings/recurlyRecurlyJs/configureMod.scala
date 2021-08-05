@@ -31,56 +31,40 @@ object configureMod {
   }
   object RecurlyOptions {
     
-    @scala.inline
-    def apply(publicKey: String): RecurlyOptions = {
+    inline def apply(publicKey: String): RecurlyOptions = {
       val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecurlyOptions]
     }
     
-    @scala.inline
-    implicit class RecurlyOptionsMutableBuilder[Self <: RecurlyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RecurlyOptions](x: Self) {
       
-      @scala.inline
-      def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+      inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+      inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
       
-      @scala.inline
-      def setFields(value: All): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: All): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFraud(value: Braintree): Self = StObject.set(x, "fraud", value.asInstanceOf[js.Any])
+      inline def setFraud(value: Braintree): Self = StObject.set(x, "fraud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFraudUndefined: Self = StObject.set(x, "fraud", js.undefined)
+      inline def setFraudUndefined: Self = StObject.set(x, "fraud", js.undefined)
       
-      @scala.inline
-      def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

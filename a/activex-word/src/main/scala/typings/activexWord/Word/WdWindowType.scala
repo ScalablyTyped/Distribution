@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdWindowType extends StObject
 object WdWindowType {
   
-  @scala.inline
-  def wdWindowDocument: `0` = 0.asInstanceOf[`0`]
+  inline def wdWindowDocument: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdWindowTemplate: `1` = 1.asInstanceOf[`1`]
+  inline def wdWindowTemplate: `1` = 1.asInstanceOf[`1`]
 }

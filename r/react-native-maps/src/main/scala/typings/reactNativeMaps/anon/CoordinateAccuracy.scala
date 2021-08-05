@@ -10,16 +10,13 @@ trait CoordinateAccuracy extends StObject {
 }
 object CoordinateAccuracy {
   
-  @scala.inline
-  def apply(coordinate: Accuracy): CoordinateAccuracy = {
+  inline def apply(coordinate: Accuracy): CoordinateAccuracy = {
     val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoordinateAccuracy]
   }
   
-  @scala.inline
-  implicit class CoordinateAccuracyMutableBuilder[Self <: CoordinateAccuracy] (val x: Self) extends AnyVal {
+  extension [Self <: CoordinateAccuracy](x: Self) {
     
-    @scala.inline
-    def setCoordinate(value: Accuracy): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    inline def setCoordinate(value: Accuracy): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
   }
 }

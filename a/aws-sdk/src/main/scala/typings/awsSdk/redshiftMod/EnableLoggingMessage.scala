@@ -23,25 +23,19 @@ trait EnableLoggingMessage extends StObject {
 }
 object EnableLoggingMessage {
   
-  @scala.inline
-  def apply(BucketName: String, ClusterIdentifier: String): EnableLoggingMessage = {
+  inline def apply(BucketName: String, ClusterIdentifier: String): EnableLoggingMessage = {
     val __obj = js.Dynamic.literal(BucketName = BucketName.asInstanceOf[js.Any], ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableLoggingMessage]
   }
   
-  @scala.inline
-  implicit class EnableLoggingMessageMutableBuilder[Self <: EnableLoggingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: EnableLoggingMessage](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefix(value: String): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setS3KeyPrefix(value: String): Self = StObject.set(x, "S3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
+    inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "S3KeyPrefix", js.undefined)
   }
 }

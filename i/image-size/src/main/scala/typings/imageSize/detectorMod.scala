@@ -11,6 +11,5 @@ object detectorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def detector(buffer: Buffer): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detector")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def detector(buffer: Buffer): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("detector")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

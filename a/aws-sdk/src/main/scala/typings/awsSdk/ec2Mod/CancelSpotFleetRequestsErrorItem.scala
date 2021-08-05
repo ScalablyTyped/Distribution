@@ -18,25 +18,19 @@ trait CancelSpotFleetRequestsErrorItem extends StObject {
 }
 object CancelSpotFleetRequestsErrorItem {
   
-  @scala.inline
-  def apply(): CancelSpotFleetRequestsErrorItem = {
+  inline def apply(): CancelSpotFleetRequestsErrorItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelSpotFleetRequestsErrorItem]
   }
   
-  @scala.inline
-  implicit class CancelSpotFleetRequestsErrorItemMutableBuilder[Self <: CancelSpotFleetRequestsErrorItem] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSpotFleetRequestsErrorItem](x: Self) {
     
-    @scala.inline
-    def setError(value: CancelSpotFleetRequestsError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: CancelSpotFleetRequestsError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
+    inline def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
+    inline def setSpotFleetRequestIdUndefined: Self = StObject.set(x, "SpotFleetRequestId", js.undefined)
   }
 }

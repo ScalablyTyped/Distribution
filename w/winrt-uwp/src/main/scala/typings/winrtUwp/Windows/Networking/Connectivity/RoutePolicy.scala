@@ -20,22 +20,17 @@ trait RoutePolicy extends StObject {
 }
 object RoutePolicy {
   
-  @scala.inline
-  def apply(connectionProfile: ConnectionProfile, hostName: HostName, hostNameType: DomainNameType): RoutePolicy = {
+  inline def apply(connectionProfile: ConnectionProfile, hostName: HostName, hostNameType: DomainNameType): RoutePolicy = {
     val __obj = js.Dynamic.literal(connectionProfile = connectionProfile.asInstanceOf[js.Any], hostName = hostName.asInstanceOf[js.Any], hostNameType = hostNameType.asInstanceOf[js.Any])
     __obj.asInstanceOf[RoutePolicy]
   }
   
-  @scala.inline
-  implicit class RoutePolicyMutableBuilder[Self <: RoutePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RoutePolicy](x: Self) {
     
-    @scala.inline
-    def setConnectionProfile(value: ConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
+    inline def setConnectionProfile(value: ConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostName(value: HostName): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
+    inline def setHostName(value: HostName): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostNameType(value: DomainNameType): Self = StObject.set(x, "hostNameType", value.asInstanceOf[js.Any])
+    inline def setHostNameType(value: DomainNameType): Self = StObject.set(x, "hostNameType", value.asInstanceOf[js.Any])
   }
 }

@@ -15,23 +15,18 @@ object anon {
   }
   object DeclareJestObjGetterIdentifier {
     
-    @scala.inline
-    def apply(declareJestObjGetterIdentifier: () => Identifier_): DeclareJestObjGetterIdentifier = {
+    inline def apply(declareJestObjGetterIdentifier: () => Identifier_): DeclareJestObjGetterIdentifier = {
       val __obj = js.Dynamic.literal(declareJestObjGetterIdentifier = js.Any.fromFunction0(declareJestObjGetterIdentifier))
       __obj.asInstanceOf[DeclareJestObjGetterIdentifier]
     }
     
-    @scala.inline
-    implicit class DeclareJestObjGetterIdentifierMutableBuilder[Self <: DeclareJestObjGetterIdentifier] (val x: Self) extends AnyVal {
+    extension [Self <: DeclareJestObjGetterIdentifier](x: Self) {
       
-      @scala.inline
-      def setDeclareJestObjGetterIdentifier(value: () => Identifier_): Self = StObject.set(x, "declareJestObjGetterIdentifier", js.Any.fromFunction0(value))
+      inline def setDeclareJestObjGetterIdentifier(value: () => Identifier_): Self = StObject.set(x, "declareJestObjGetterIdentifier", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setJestObjGetterIdentifier(value: Identifier_): Self = StObject.set(x, "jestObjGetterIdentifier", value.asInstanceOf[js.Any])
+      inline def setJestObjGetterIdentifier(value: Identifier_): Self = StObject.set(x, "jestObjGetterIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJestObjGetterIdentifierUndefined: Self = StObject.set(x, "jestObjGetterIdentifier", js.undefined)
+      inline def setJestObjGetterIdentifierUndefined: Self = StObject.set(x, "jestObjGetterIdentifier", js.undefined)
     }
   }
 }

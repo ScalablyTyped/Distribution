@@ -12,16 +12,13 @@ trait LimitParams
 }
 object LimitParams {
   
-  @scala.inline
-  def apply(limit: Double): LimitParams = {
+  inline def apply(limit: Double): LimitParams = {
     val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[LimitParams]
   }
   
-  @scala.inline
-  implicit class LimitParamsMutableBuilder[Self <: LimitParams] (val x: Self) extends AnyVal {
+  extension [Self <: LimitParams](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
   }
 }

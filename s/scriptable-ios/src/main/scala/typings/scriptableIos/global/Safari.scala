@@ -21,8 +21,7 @@ object Safari {
     * @param url - URL of website to present.
     * @see https://docs.scriptable.app/safari/#open
     */
-  @scala.inline
-  def open(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def open(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Presents a website in-app._
@@ -32,8 +31,6 @@ object Safari {
     * @param fullscreen - Optional. Set to true to display the web view in fullsceen. This only has an effect when used within the app. Defaults to true.
     * @see https://docs.scriptable.app/safari/#openinapp
     */
-  @scala.inline
-  def openInApp(url: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openInApp")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def openInApp(url: String, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openInApp")(url.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def openInApp(url: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openInApp")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def openInApp(url: String, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openInApp")(url.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

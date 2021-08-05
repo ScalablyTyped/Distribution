@@ -17,19 +17,15 @@ trait DeleteContentRangeRequest extends StObject {
 }
 object DeleteContentRangeRequest {
   
-  @scala.inline
-  def apply(): DeleteContentRangeRequest = {
+  inline def apply(): DeleteContentRangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteContentRangeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteContentRangeRequestMutableBuilder[Self <: DeleteContentRangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteContentRangeRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

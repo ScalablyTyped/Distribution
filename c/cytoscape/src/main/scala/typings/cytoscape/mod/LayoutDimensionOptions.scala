@@ -14,16 +14,13 @@ trait LayoutDimensionOptions extends StObject {
 }
 object LayoutDimensionOptions {
   
-  @scala.inline
-  def apply(nodeDimensionsIncludeLabels: Boolean): LayoutDimensionOptions = {
+  inline def apply(nodeDimensionsIncludeLabels: Boolean): LayoutDimensionOptions = {
     val __obj = js.Dynamic.literal(nodeDimensionsIncludeLabels = nodeDimensionsIncludeLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutDimensionOptions]
   }
   
-  @scala.inline
-  implicit class LayoutDimensionOptionsMutableBuilder[Self <: LayoutDimensionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutDimensionOptions](x: Self) {
     
-    @scala.inline
-    def setNodeDimensionsIncludeLabels(value: Boolean): Self = StObject.set(x, "nodeDimensionsIncludeLabels", value.asInstanceOf[js.Any])
+    inline def setNodeDimensionsIncludeLabels(value: Boolean): Self = StObject.set(x, "nodeDimensionsIncludeLabels", value.asInstanceOf[js.Any])
   }
 }

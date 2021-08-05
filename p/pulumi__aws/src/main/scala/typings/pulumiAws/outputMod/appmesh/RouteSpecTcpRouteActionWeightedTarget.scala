@@ -18,19 +18,15 @@ trait RouteSpecTcpRouteActionWeightedTarget extends StObject {
 }
 object RouteSpecTcpRouteActionWeightedTarget {
   
-  @scala.inline
-  def apply(virtualNode: String, weight: Double): RouteSpecTcpRouteActionWeightedTarget = {
+  inline def apply(virtualNode: String, weight: Double): RouteSpecTcpRouteActionWeightedTarget = {
     val __obj = js.Dynamic.literal(virtualNode = virtualNode.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteSpecTcpRouteActionWeightedTarget]
   }
   
-  @scala.inline
-  implicit class RouteSpecTcpRouteActionWeightedTargetMutableBuilder[Self <: RouteSpecTcpRouteActionWeightedTarget] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecTcpRouteActionWeightedTarget](x: Self) {
     
-    @scala.inline
-    def setVirtualNode(value: String): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
+    inline def setVirtualNode(value: String): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }
 }

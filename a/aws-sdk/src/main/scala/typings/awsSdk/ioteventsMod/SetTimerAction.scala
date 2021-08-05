@@ -23,28 +23,21 @@ trait SetTimerAction extends StObject {
 }
 object SetTimerAction {
   
-  @scala.inline
-  def apply(timerName: TimerName): SetTimerAction = {
+  inline def apply(timerName: TimerName): SetTimerAction = {
     val __obj = js.Dynamic.literal(timerName = timerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetTimerAction]
   }
   
-  @scala.inline
-  implicit class SetTimerActionMutableBuilder[Self <: SetTimerAction] (val x: Self) extends AnyVal {
+  extension [Self <: SetTimerAction](x: Self) {
     
-    @scala.inline
-    def setDurationExpression(value: VariableValue): Self = StObject.set(x, "durationExpression", value.asInstanceOf[js.Any])
+    inline def setDurationExpression(value: VariableValue): Self = StObject.set(x, "durationExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationExpressionUndefined: Self = StObject.set(x, "durationExpression", js.undefined)
+    inline def setDurationExpressionUndefined: Self = StObject.set(x, "durationExpression", js.undefined)
     
-    @scala.inline
-    def setSeconds(value: Seconds): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+    inline def setSeconds(value: Seconds): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
+    inline def setSecondsUndefined: Self = StObject.set(x, "seconds", js.undefined)
     
-    @scala.inline
-    def setTimerName(value: TimerName): Self = StObject.set(x, "timerName", value.asInstanceOf[js.Any])
+    inline def setTimerName(value: TimerName): Self = StObject.set(x, "timerName", value.asInstanceOf[js.Any])
   }
 }

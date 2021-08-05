@@ -38,14 +38,10 @@ object mod {
   //=> 'rgb(0 0 0)'
   ```
   */
-  @scala.inline
-  def apply(hex: String): RgbaObject = ^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any]).asInstanceOf[RgbaObject]
-  @scala.inline
-  def apply(hex: String, options: Optionsformatarray): RgbaTuple = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaTuple]
-  @scala.inline
-  def apply(hex: String, options: Optionsformatcss): String = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(hex: String, options: Optionsformatobject): RgbaObject = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaObject]
+  inline def apply(hex: String): RgbaObject = ^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any]).asInstanceOf[RgbaObject]
+  inline def apply(hex: String, options: Optionsformatarray): RgbaTuple = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaTuple]
+  inline def apply(hex: String, options: Optionsformatcss): String = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(hex: String, options: Optionsformatobject): RgbaObject = (^.asInstanceOf[js.Dynamic].apply(hex.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RgbaObject]
   
   @JSImport("hex-rgb", JSImport.Namespace)
   @js.native
@@ -62,20 +58,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFormat(value: `object` | array | css): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: `object` | array | css): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   
@@ -91,26 +83,20 @@ object mod {
   }
   object RgbaObject {
     
-    @scala.inline
-    def apply(alpha: Double, blue: Double, green: Double, red: Double): RgbaObject = {
+    inline def apply(alpha: Double, blue: Double, green: Double, red: Double): RgbaObject = {
       val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
       __obj.asInstanceOf[RgbaObject]
     }
     
-    @scala.inline
-    implicit class RgbaObjectMutableBuilder[Self <: RgbaObject] (val x: Self) extends AnyVal {
+    extension [Self <: RgbaObject](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+      inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+      inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+      inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
     }
   }
   

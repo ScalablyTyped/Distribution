@@ -20,7 +20,7 @@ object hashTableMod {
       */
     def this(keyDType: DataType, valueDType: DataType) = this()
     
-    var checkKeyAndValueTensor: js.Any = js.native
+    /* private */ var checkKeyAndValueTensor: js.Any = js.native
     
     /**
       * Dispose the tensors and handle and clear the hashtable.
@@ -44,7 +44,7 @@ object hashTableMod {
       */
     def find(keys: Tensor[Rank], defaultValue: Tensor[Rank]): js.Promise[Tensor[Rank]] = js.native
     
-    var findWithDefault: js.Any = js.native
+    /* private */ var findWithDefault: js.Any = js.native
     
     val handle: Tensor[Rank] = js.native
     
@@ -64,7 +64,7 @@ object hashTableMod {
       */
     def size(): Double = js.native
     
-    var tensorMap: js.Any = js.native
+    /* private */ var tensorMap: js.Any = js.native
     
     val valueDType: DataType = js.native
   }

@@ -24,25 +24,19 @@ trait ParamsResourceAchievementsReset
 }
 object ParamsResourceAchievementsReset {
   
-  @scala.inline
-  def apply(): ParamsResourceAchievementsReset = {
+  inline def apply(): ParamsResourceAchievementsReset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAchievementsReset]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAchievementsResetMutableBuilder[Self <: ParamsResourceAchievementsReset] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAchievementsReset](x: Self) {
     
-    @scala.inline
-    def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
+    inline def setAchievementId(value: String): Self = StObject.set(x, "achievementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
+    inline def setAchievementIdUndefined: Self = StObject.set(x, "achievementId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

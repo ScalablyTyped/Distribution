@@ -12,25 +12,19 @@ trait ConfigFrom extends StObject {
 }
 object ConfigFrom {
   
-  @scala.inline
-  def apply(): ConfigFrom = {
+  inline def apply(): ConfigFrom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigFrom]
   }
   
-  @scala.inline
-  implicit class ConfigFromMutableBuilder[Self <: ConfigFrom] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigFrom](x: Self) {
     
-    @scala.inline
-    def setConfigFrom(value: String): Self = StObject.set(x, "configFrom", value.asInstanceOf[js.Any])
+    inline def setConfigFrom(value: String): Self = StObject.set(x, "configFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigFromUndefined: Self = StObject.set(x, "configFrom", js.undefined)
+    inline def setConfigFromUndefined: Self = StObject.set(x, "configFrom", js.undefined)
     
-    @scala.inline
-    def setConfigValue(value: js.Any): Self = StObject.set(x, "configValue", value.asInstanceOf[js.Any])
+    inline def setConfigValue(value: js.Any): Self = StObject.set(x, "configValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigValueUndefined: Self = StObject.set(x, "configValue", js.undefined)
+    inline def setConfigValueUndefined: Self = StObject.set(x, "configValue", js.undefined)
   }
 }

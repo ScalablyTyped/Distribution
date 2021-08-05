@@ -16,25 +16,19 @@ trait LineSeriesPoint
 }
 object LineSeriesPoint {
   
-  @scala.inline
-  def apply(x: Double, y: Double): LineSeriesPoint = {
+  inline def apply(x: Double, y: Double): LineSeriesPoint = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineSeriesPoint]
   }
   
-  @scala.inline
-  implicit class LineSeriesPointMutableBuilder[Self <: LineSeriesPoint] (val x: Self) extends AnyVal {
+  extension [Self <: LineSeriesPoint](x: Self) {
     
-    @scala.inline
-    def setColor(value: String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

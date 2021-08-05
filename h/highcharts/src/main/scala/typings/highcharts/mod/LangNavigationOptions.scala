@@ -13,19 +13,15 @@ trait LangNavigationOptions extends StObject {
 }
 object LangNavigationOptions {
   
-  @scala.inline
-  def apply(): LangNavigationOptions = {
+  inline def apply(): LangNavigationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangNavigationOptions]
   }
   
-  @scala.inline
-  implicit class LangNavigationOptionsMutableBuilder[Self <: LangNavigationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangNavigationOptions](x: Self) {
     
-    @scala.inline
-    def setPopup(value: LangNavigationPopupOptions): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: LangNavigationPopupOptions): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
   }
 }

@@ -15,25 +15,19 @@ trait Tips extends StObject {
 }
 object Tips {
   
-  @scala.inline
-  def apply(dark: TipsTheme, light: TipsTheme): Tips = {
+  inline def apply(dark: TipsTheme, light: TipsTheme): Tips = {
     val __obj = js.Dynamic.literal(dark = dark.asInstanceOf[js.Any], light = light.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tips]
   }
   
-  @scala.inline
-  implicit class TipsMutableBuilder[Self <: Tips] (val x: Self) extends AnyVal {
+  extension [Self <: Tips](x: Self) {
     
-    @scala.inline
-    def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+    inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+    inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
-    @scala.inline
-    def setDark(value: TipsTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: TipsTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLight(value: TipsTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: TipsTheme): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
   }
 }

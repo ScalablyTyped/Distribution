@@ -14,25 +14,19 @@ trait OriginUri extends StObject {
 }
 object OriginUri {
   
-  @scala.inline
-  def apply(): OriginUri = {
+  inline def apply(): OriginUri = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OriginUri]
   }
   
-  @scala.inline
-  implicit class OriginUriMutableBuilder[Self <: OriginUri] (val x: Self) extends AnyVal {
+  extension [Self <: OriginUri](x: Self) {
     
-    @scala.inline
-    def setDash(value: String): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    inline def setDash(value: String): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
+    inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
     
-    @scala.inline
-    def setHls(value: String): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
+    inline def setHls(value: String): Self = StObject.set(x, "hls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlsUndefined: Self = StObject.set(x, "hls", js.undefined)
+    inline def setHlsUndefined: Self = StObject.set(x, "hls", js.undefined)
   }
 }

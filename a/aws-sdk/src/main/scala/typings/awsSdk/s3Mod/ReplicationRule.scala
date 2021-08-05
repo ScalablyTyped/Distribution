@@ -47,61 +47,43 @@ trait ReplicationRule extends StObject {
 }
 object ReplicationRule {
   
-  @scala.inline
-  def apply(Destination: Destination, Status: ReplicationRuleStatus): ReplicationRule = {
+  inline def apply(Destination: Destination, Status: ReplicationRuleStatus): ReplicationRule = {
     val __obj = js.Dynamic.literal(Destination = Destination.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplicationRule]
   }
   
-  @scala.inline
-  implicit class ReplicationRuleMutableBuilder[Self <: ReplicationRule] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationRule](x: Self) {
     
-    @scala.inline
-    def setDeleteMarkerReplication(value: DeleteMarkerReplication): Self = StObject.set(x, "DeleteMarkerReplication", value.asInstanceOf[js.Any])
+    inline def setDeleteMarkerReplication(value: DeleteMarkerReplication): Self = StObject.set(x, "DeleteMarkerReplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteMarkerReplicationUndefined: Self = StObject.set(x, "DeleteMarkerReplication", js.undefined)
+    inline def setDeleteMarkerReplicationUndefined: Self = StObject.set(x, "DeleteMarkerReplication", js.undefined)
     
-    @scala.inline
-    def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Destination): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingObjectReplication(value: ExistingObjectReplication): Self = StObject.set(x, "ExistingObjectReplication", value.asInstanceOf[js.Any])
+    inline def setExistingObjectReplication(value: ExistingObjectReplication): Self = StObject.set(x, "ExistingObjectReplication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExistingObjectReplicationUndefined: Self = StObject.set(x, "ExistingObjectReplication", js.undefined)
+    inline def setExistingObjectReplicationUndefined: Self = StObject.set(x, "ExistingObjectReplication", js.undefined)
     
-    @scala.inline
-    def setFilter(value: ReplicationRuleFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: ReplicationRuleFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setID(value: ID): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: ID): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
+    inline def setIDUndefined: Self = StObject.set(x, "ID", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "Priority", js.undefined)
     
-    @scala.inline
-    def setSourceSelectionCriteria(value: SourceSelectionCriteria): Self = StObject.set(x, "SourceSelectionCriteria", value.asInstanceOf[js.Any])
+    inline def setSourceSelectionCriteria(value: SourceSelectionCriteria): Self = StObject.set(x, "SourceSelectionCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSelectionCriteriaUndefined: Self = StObject.set(x, "SourceSelectionCriteria", js.undefined)
+    inline def setSourceSelectionCriteriaUndefined: Self = StObject.set(x, "SourceSelectionCriteria", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ReplicationRuleStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReplicationRuleStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

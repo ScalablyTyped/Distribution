@@ -77,70 +77,50 @@ object fileUploaderItemMod extends Shortcut {
   }
   object FileUploaderItemProps {
     
-    @scala.inline
-    def apply(): FileUploaderItemProps = {
+    inline def apply(): FileUploaderItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FileUploaderItemProps]
     }
     
-    @scala.inline
-    implicit class FileUploaderItemPropsMutableBuilder[Self <: FileUploaderItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: FileUploaderItemProps](x: Self) {
       
-      @scala.inline
-      def setErrorBody(value: NonNullable[ReactNode]): Self = StObject.set(x, "errorBody", value.asInstanceOf[js.Any])
+      inline def setErrorBody(value: NonNullable[ReactNode]): Self = StObject.set(x, "errorBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorBodyUndefined: Self = StObject.set(x, "errorBody", js.undefined)
+      inline def setErrorBodyUndefined: Self = StObject.set(x, "errorBody", js.undefined)
       
-      @scala.inline
-      def setErrorSubject(value: NonNullable[ReactNode]): Self = StObject.set(x, "errorSubject", value.asInstanceOf[js.Any])
+      inline def setErrorSubject(value: NonNullable[ReactNode]): Self = StObject.set(x, "errorSubject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorSubjectUndefined: Self = StObject.set(x, "errorSubject", js.undefined)
+      inline def setErrorSubjectUndefined: Self = StObject.set(x, "errorSubject", js.undefined)
       
-      @scala.inline
-      def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
+      inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
+      inline def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnDelete(
+      inline def setOnDelete(
         value: (/* event */ (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement], /* content */ Uuid) => Unit
       ): Self = StObject.set(x, "onDelete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
+      inline def setOnDeleteUndefined: Self = StObject.set(x, "onDelete", js.undefined)
       
-      @scala.inline
-      def setSize(value: FileUploaderSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: FileUploaderSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStatus(value: FileStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: FileStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     }
   }
   

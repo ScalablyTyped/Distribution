@@ -12,10 +12,8 @@ object machineLearningMod {
   
   object machineLearning {
     
-    @scala.inline
-    def apply(): MachineLearning = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MachineLearning]
-    @scala.inline
-    def apply(app: App): MachineLearning = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[MachineLearning]
+    inline def apply(): MachineLearning = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MachineLearning]
+    inline def apply(app: App): MachineLearning = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[MachineLearning]
     
     @JSImport("firebase-admin/lib/machine-learning", "machineLearning")
     @js.native
@@ -30,17 +28,14 @@ object machineLearningMod {
     }
     object AutoMLTfliteModelOptions {
       
-      @scala.inline
-      def apply(tfliteModel: AutomlModel): AutoMLTfliteModelOptions = {
+      inline def apply(tfliteModel: AutomlModel): AutoMLTfliteModelOptions = {
         val __obj = js.Dynamic.literal(tfliteModel = tfliteModel.asInstanceOf[js.Any])
         __obj.asInstanceOf[AutoMLTfliteModelOptions]
       }
       
-      @scala.inline
-      implicit class AutoMLTfliteModelOptionsMutableBuilder[Self <: AutoMLTfliteModelOptions] (val x: Self) extends AnyVal {
+      extension [Self <: AutoMLTfliteModelOptions](x: Self) {
         
-        @scala.inline
-        def setTfliteModel(value: AutomlModel): Self = StObject.set(x, "tfliteModel", value.asInstanceOf[js.Any])
+        inline def setTfliteModel(value: AutomlModel): Self = StObject.set(x, "tfliteModel", value.asInstanceOf[js.Any])
       }
     }
     
@@ -53,17 +48,14 @@ object machineLearningMod {
     }
     object GcsTfliteModelOptions {
       
-      @scala.inline
-      def apply(tfliteModel: GcsTfliteUri): GcsTfliteModelOptions = {
+      inline def apply(tfliteModel: GcsTfliteUri): GcsTfliteModelOptions = {
         val __obj = js.Dynamic.literal(tfliteModel = tfliteModel.asInstanceOf[js.Any])
         __obj.asInstanceOf[GcsTfliteModelOptions]
       }
       
-      @scala.inline
-      implicit class GcsTfliteModelOptionsMutableBuilder[Self <: GcsTfliteModelOptions] (val x: Self) extends AnyVal {
+      extension [Self <: GcsTfliteModelOptions](x: Self) {
         
-        @scala.inline
-        def setTfliteModel(value: GcsTfliteUri): Self = StObject.set(x, "tfliteModel", value.asInstanceOf[js.Any])
+        inline def setTfliteModel(value: GcsTfliteUri): Self = StObject.set(x, "tfliteModel", value.asInstanceOf[js.Any])
       }
     }
     
@@ -96,32 +88,24 @@ object machineLearningMod {
     }
     object ListModelsOptions {
       
-      @scala.inline
-      def apply(): ListModelsOptions = {
+      inline def apply(): ListModelsOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ListModelsOptions]
       }
       
-      @scala.inline
-      implicit class ListModelsOptionsMutableBuilder[Self <: ListModelsOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ListModelsOptions](x: Self) {
         
-        @scala.inline
-        def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+        inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+        inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
       }
     }
     
@@ -139,26 +123,20 @@ object machineLearningMod {
     }
     object ListModelsResult {
       
-      @scala.inline
-      def apply(models: js.Array[Model]): ListModelsResult = {
+      inline def apply(models: js.Array[Model]): ListModelsResult = {
         val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any])
         __obj.asInstanceOf[ListModelsResult]
       }
       
-      @scala.inline
-      implicit class ListModelsResultMutableBuilder[Self <: ListModelsResult] (val x: Self) extends AnyVal {
+      extension [Self <: ListModelsResult](x: Self) {
         
-        @scala.inline
-        def setModels(value: js.Array[Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+        inline def setModels(value: js.Array[Model]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value :_*))
+        inline def setModelsVarargs(value: Model*): Self = StObject.set(x, "models", js.Array(value :_*))
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
       }
     }
     
@@ -326,20 +304,17 @@ object machineLearningMod {
     trait ModelOptions extends StObject
     object ModelOptions {
       
-      @scala.inline
-      def AutoMLTfliteModelOptions(tfliteModel: AutomlModel): typings.firebaseAdmin.machineLearningMod.machineLearning.AutoMLTfliteModelOptions = {
+      inline def AutoMLTfliteModelOptions(tfliteModel: AutomlModel): typings.firebaseAdmin.machineLearningMod.machineLearning.AutoMLTfliteModelOptions = {
         val __obj = js.Dynamic.literal(tfliteModel = tfliteModel.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.firebaseAdmin.machineLearningMod.machineLearning.AutoMLTfliteModelOptions]
       }
       
-      @scala.inline
-      def GcsTfliteModelOptions(tfliteModel: GcsTfliteUri): typings.firebaseAdmin.machineLearningMod.machineLearning.GcsTfliteModelOptions = {
+      inline def GcsTfliteModelOptions(tfliteModel: GcsTfliteUri): typings.firebaseAdmin.machineLearningMod.machineLearning.GcsTfliteModelOptions = {
         val __obj = js.Dynamic.literal(tfliteModel = tfliteModel.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.firebaseAdmin.machineLearningMod.machineLearning.GcsTfliteModelOptions]
       }
       
-      @scala.inline
-      def ModelOptionsBase(): typings.firebaseAdmin.machineLearningMod.machineLearning.ModelOptionsBase = {
+      inline def ModelOptionsBase(): typings.firebaseAdmin.machineLearningMod.machineLearning.ModelOptionsBase = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.firebaseAdmin.machineLearningMod.machineLearning.ModelOptionsBase]
       }
@@ -358,29 +333,22 @@ object machineLearningMod {
     }
     object ModelOptionsBase {
       
-      @scala.inline
-      def apply(): ModelOptionsBase = {
+      inline def apply(): ModelOptionsBase = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ModelOptionsBase]
       }
       
-      @scala.inline
-      implicit class ModelOptionsBaseMutableBuilder[Self <: ModelOptionsBase] (val x: Self) extends AnyVal {
+      extension [Self <: ModelOptionsBase](x: Self) {
         
-        @scala.inline
-        def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+        inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+        inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
         
-        @scala.inline
-        def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+        inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+        inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
         
-        @scala.inline
-        def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+        inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       }
     }
     
@@ -406,29 +374,22 @@ object machineLearningMod {
     }
     object TFLiteModel {
       
-      @scala.inline
-      def apply(sizeBytes: Double): TFLiteModel = {
+      inline def apply(sizeBytes: Double): TFLiteModel = {
         val __obj = js.Dynamic.literal(sizeBytes = sizeBytes.asInstanceOf[js.Any])
         __obj.asInstanceOf[TFLiteModel]
       }
       
-      @scala.inline
-      implicit class TFLiteModelMutableBuilder[Self <: TFLiteModel] (val x: Self) extends AnyVal {
+      extension [Self <: TFLiteModel](x: Self) {
         
-        @scala.inline
-        def setAutomlModel(value: String): Self = StObject.set(x, "automlModel", value.asInstanceOf[js.Any])
+        inline def setAutomlModel(value: String): Self = StObject.set(x, "automlModel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutomlModelUndefined: Self = StObject.set(x, "automlModel", js.undefined)
+        inline def setAutomlModelUndefined: Self = StObject.set(x, "automlModel", js.undefined)
         
-        @scala.inline
-        def setGcsTfliteUri(value: String): Self = StObject.set(x, "gcsTfliteUri", value.asInstanceOf[js.Any])
+        inline def setGcsTfliteUri(value: String): Self = StObject.set(x, "gcsTfliteUri", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGcsTfliteUriUndefined: Self = StObject.set(x, "gcsTfliteUri", js.undefined)
+        inline def setGcsTfliteUriUndefined: Self = StObject.set(x, "gcsTfliteUri", js.undefined)
         
-        @scala.inline
-        def setSizeBytes(value: Double): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
+        inline def setSizeBytes(value: Double): Self = StObject.set(x, "sizeBytes", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -40,8 +40,7 @@ object cloudprofilerMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Cloudprofiler
       ] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object cloudprofilerMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object cloudprofilerMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def cloudprofiler(options: Options): Cloudprofiler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudprofiler")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudprofiler]
+  inline def cloudprofiler(options: Options): Cloudprofiler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudprofiler")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudprofiler]
   
-  @scala.inline
-  def cloudprofiler_v2(version: v2): Cloudprofiler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudprofiler")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudprofiler]
+  inline def cloudprofiler_v2(version: v2): Cloudprofiler = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudprofiler")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudprofiler]
 }

@@ -14,27 +14,22 @@ trait FlexDirectionProps extends StObject {
 }
 object FlexDirectionProps {
   
-  @scala.inline
-  def apply(): FlexDirectionProps = {
+  inline def apply(): FlexDirectionProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexDirectionProps]
   }
   
-  @scala.inline
-  implicit class FlexDirectionPropsMutableBuilder[Self <: FlexDirectionProps] (val x: Self) extends AnyVal {
+  extension [Self <: FlexDirectionProps](x: Self) {
     
-    @scala.inline
-    def setFlexDirection(
+    inline def setFlexDirection(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any
         ]
     ): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
+    inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
     
-    @scala.inline
-    def setFlexDirectionVarargs(
+    inline def setFlexDirectionVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexDirection */ js.Any)*
     ): Self = StObject.set(x, "flexDirection", js.Array(value :_*))
   }

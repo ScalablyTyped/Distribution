@@ -10,19 +10,15 @@ trait BandwidthProfileOptions extends StObject {
 }
 object BandwidthProfileOptions {
   
-  @scala.inline
-  def apply(): BandwidthProfileOptions = {
+  inline def apply(): BandwidthProfileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BandwidthProfileOptions]
   }
   
-  @scala.inline
-  implicit class BandwidthProfileOptionsMutableBuilder[Self <: BandwidthProfileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BandwidthProfileOptions](x: Self) {
     
-    @scala.inline
-    def setVideo(value: VideoBandwidthProfileOptions): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: VideoBandwidthProfileOptions): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
   }
 }

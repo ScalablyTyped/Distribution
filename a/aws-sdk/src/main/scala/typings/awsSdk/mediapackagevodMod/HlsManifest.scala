@@ -48,49 +48,35 @@ trait HlsManifest extends StObject {
 }
 object HlsManifest {
   
-  @scala.inline
-  def apply(): HlsManifest = {
+  inline def apply(): HlsManifest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HlsManifest]
   }
   
-  @scala.inline
-  implicit class HlsManifestMutableBuilder[Self <: HlsManifest] (val x: Self) extends AnyVal {
+  extension [Self <: HlsManifest](x: Self) {
     
-    @scala.inline
-    def setAdMarkers(value: AdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
+    inline def setAdMarkers(value: AdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
+    inline def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
     
-    @scala.inline
-    def setIncludeIframeOnlyStream(value: boolean): Self = StObject.set(x, "IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
+    inline def setIncludeIframeOnlyStream(value: boolean): Self = StObject.set(x, "IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeIframeOnlyStreamUndefined: Self = StObject.set(x, "IncludeIframeOnlyStream", js.undefined)
+    inline def setIncludeIframeOnlyStreamUndefined: Self = StObject.set(x, "IncludeIframeOnlyStream", js.undefined)
     
-    @scala.inline
-    def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
+    inline def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
+    inline def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
     
-    @scala.inline
-    def setProgramDateTimeIntervalSeconds(value: integer): Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", value.asInstanceOf[js.Any])
+    inline def setProgramDateTimeIntervalSeconds(value: integer): Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramDateTimeIntervalSecondsUndefined: Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", js.undefined)
+    inline def setProgramDateTimeIntervalSecondsUndefined: Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", js.undefined)
     
-    @scala.inline
-    def setRepeatExtXKey(value: boolean): Self = StObject.set(x, "RepeatExtXKey", value.asInstanceOf[js.Any])
+    inline def setRepeatExtXKey(value: boolean): Self = StObject.set(x, "RepeatExtXKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatExtXKeyUndefined: Self = StObject.set(x, "RepeatExtXKey", js.undefined)
+    inline def setRepeatExtXKeyUndefined: Self = StObject.set(x, "RepeatExtXKey", js.undefined)
     
-    @scala.inline
-    def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
+    inline def setStreamSelection(value: StreamSelection): Self = StObject.set(x, "StreamSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
+    inline def setStreamSelectionUndefined: Self = StObject.set(x, "StreamSelection", js.undefined)
   }
 }

@@ -24,28 +24,21 @@ trait UsbSetupPacket extends StObject {
 }
 object UsbSetupPacket {
   
-  @scala.inline
-  def apply(index: Double, length: Double, request: Double, requestType: UsbControlRequestType, value: Double): UsbSetupPacket = {
+  inline def apply(index: Double, length: Double, request: Double, requestType: UsbControlRequestType, value: Double): UsbSetupPacket = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], requestType = requestType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsbSetupPacket]
   }
   
-  @scala.inline
-  implicit class UsbSetupPacketMutableBuilder[Self <: UsbSetupPacket] (val x: Self) extends AnyVal {
+  extension [Self <: UsbSetupPacket](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestType(value: UsbControlRequestType): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+    inline def setRequestType(value: UsbControlRequestType): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

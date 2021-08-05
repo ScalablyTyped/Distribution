@@ -24,8 +24,7 @@ object observableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def asCreateObservableOptions(thing: js.Any): CreateObservableOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("asCreateObservableOptions")(thing.asInstanceOf[js.Any]).asInstanceOf[CreateObservableOptions]
+  inline def asCreateObservableOptions(thing: js.Any): CreateObservableOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("asCreateObservableOptions")(thing.asInstanceOf[js.Any]).asInstanceOf[CreateObservableOptions]
   
   @JSImport("mobx/lib/api/observable", "deepDecorator")
   @js.native
@@ -38,128 +37,86 @@ object observableMod {
   /* Inlined mobx.mobx/lib/api/observable.IObservableFactory & mobx.mobx/lib/api/observable.IObservableFactories & {  enhancer :mobx.mobx/lib/internal.IEnhancer<any>} */
   object observable {
     
-    @scala.inline
-    def apply(): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[scala.Nothing]
-    @scala.inline
-    def apply(target: js.Object, key: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(target: js.Object, key: String, baseDescriptor: PropertyDescriptor): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], baseDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(target: js.Object, key: js.Symbol): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(target: js.Object, key: js.Symbol, baseDescriptor: PropertyDescriptor): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], baseDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def apply(value: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
-    @scala.inline
-    def apply(value: Boolean): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
-    @scala.inline
-    def apply(value: Double): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
-    @scala.inline
-    def apply[T /* <: js.Object */](value: T): T & IObservableObject = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[T & IObservableObject]
-    @scala.inline
-    def apply[T /* <: js.Object */](
+    inline def apply(): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[scala.Nothing]
+    inline def apply(target: js.Object, key: String): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(target: js.Object, key: String, baseDescriptor: PropertyDescriptor): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], baseDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(target: js.Object, key: js.Symbol): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(target: js.Object, key: js.Symbol, baseDescriptor: PropertyDescriptor): js.Any = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], key.asInstanceOf[js.Any], baseDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def apply(value: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+    inline def apply(value: Boolean): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+    inline def apply(value: Double): scala.Nothing = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+    inline def apply[T /* <: js.Object */](value: T): T & IObservableObject = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[T & IObservableObject]
+    inline def apply[T /* <: js.Object */](
       value: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
       */ typings.mobx.mobxStrings.apply & TopLevel[js.Any]
     ): T & IObservableObject = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
-    @scala.inline
-    def apply[T /* <: js.Object */](
+    inline def apply[T /* <: js.Object */](
       value: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
       */ typings.mobx.mobxStrings.apply & TopLevel[js.Any],
       options: CreateObservableOptions
     ): T & IObservableObject = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
-    @scala.inline
-    def apply[T /* <: js.Object */](value: T, decorators: Unit, options: CreateObservableOptions): T & IObservableObject = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
-    @scala.inline
-    def apply[T](value: js.Array[T]): IObservableArray[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[IObservableArray[T]]
-    @scala.inline
-    def apply[T](value: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
-    @scala.inline
-    def apply[T](value: Set[T]): ObservableSet[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[T]]
-    @scala.inline
-    def apply[T](value: Set[T], options: CreateObservableOptions): ObservableSet[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableSet[T]]
-    @scala.inline
-    def apply[K, V](value: Map[K, V]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
-    @scala.inline
-    def apply[K, V](value: Map[K, V], options: CreateObservableOptions): ObservableMap[K, V] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableMap[K, V]]
+    inline def apply[T /* <: js.Object */](value: T, decorators: Unit, options: CreateObservableOptions): T & IObservableObject = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
+    inline def apply[T](value: js.Array[T]): IObservableArray[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[IObservableArray[T]]
+    inline def apply[T](value: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+    inline def apply[T](value: Set[T]): ObservableSet[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[T]]
+    inline def apply[T](value: Set[T], options: CreateObservableOptions): ObservableSet[T] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableSet[T]]
+    inline def apply[K, V](value: Map[K, V]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
+    inline def apply[K, V](value: Map[K, V], options: CreateObservableOptions): ObservableMap[K, V] = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableMap[K, V]]
     
     @JSImport("mobx/lib/api/observable", "observable")
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def array[T](): IObservableArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")().asInstanceOf[IObservableArray[T]]
-    @scala.inline
-    def array[T](initialValues: js.Array[T]): IObservableArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(initialValues.asInstanceOf[js.Any]).asInstanceOf[IObservableArray[T]]
-    @scala.inline
-    def array[T](initialValues: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
-    @scala.inline
-    def array[T](initialValues: Unit, options: CreateObservableOptions): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+    inline def array[T](): IObservableArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")().asInstanceOf[IObservableArray[T]]
+    inline def array[T](initialValues: js.Array[T]): IObservableArray[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(initialValues.asInstanceOf[js.Any]).asInstanceOf[IObservableArray[T]]
+    inline def array[T](initialValues: js.Array[T], options: CreateObservableOptions): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
+    inline def array[T](initialValues: Unit, options: CreateObservableOptions): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("array")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
     
-    @scala.inline
-    def box[T](): IObservableValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("box")().asInstanceOf[IObservableValue[T]]
-    @scala.inline
-    def box[T](value: T): IObservableValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("box")(value.asInstanceOf[js.Any]).asInstanceOf[IObservableValue[T]]
-    @scala.inline
-    def box[T](value: T, options: CreateObservableOptions): IObservableValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableValue[T]]
-    @scala.inline
-    def box[T](value: Unit, options: CreateObservableOptions): IObservableValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableValue[T]]
+    inline def box[T](): IObservableValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("box")().asInstanceOf[IObservableValue[T]]
+    inline def box[T](value: T): IObservableValue[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("box")(value.asInstanceOf[js.Any]).asInstanceOf[IObservableValue[T]]
+    inline def box[T](value: T, options: CreateObservableOptions): IObservableValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableValue[T]]
+    inline def box[T](value: Unit, options: CreateObservableOptions): IObservableValue[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("box")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObservableValue[T]]
     
     @JSImport("mobx/lib/api/observable", "observable.deep")
     @js.native
     def deep: IObservableDecorator = js.native
-    @scala.inline
-    def deep(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def deep(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def deep(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def deep(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def deep_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deep")(x.asInstanceOf[js.Any])
+    inline def deep(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def deep(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def deep(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def deep(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deep")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def deep_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deep")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx/lib/api/observable", "observable.enhancer")
     @js.native
     def enhancer: IEnhancer[js.Any] = js.native
-    @scala.inline
-    def enhancer(newValue: js.Any, oldValue: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enhancer")(newValue.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def enhancer(newValue: js.Any, oldValue: Unit, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enhancer")(newValue.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def enhancer_=(x: IEnhancer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enhancer")(x.asInstanceOf[js.Any])
+    inline def enhancer(newValue: js.Any, oldValue: js.Any, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enhancer")(newValue.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def enhancer(newValue: js.Any, oldValue: Unit, name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enhancer")(newValue.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def enhancer_=(x: IEnhancer[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enhancer")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def map[K, V](): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[ObservableMap[K, V]]
-    @scala.inline
-    def map[K, V](initialValues: Unit, options: CreateObservableOptions): ObservableMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableMap[K, V]]
-    @scala.inline
-    def map[K, V](initialValues: IObservableMapInitialValues[K, V]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
-    @scala.inline
-    def map[K, V](initialValues: IObservableMapInitialValues[K, V], options: CreateObservableOptions): ObservableMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableMap[K, V]]
+    inline def map[K, V](): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")().asInstanceOf[ObservableMap[K, V]]
+    inline def map[K, V](initialValues: Unit, options: CreateObservableOptions): ObservableMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableMap[K, V]]
+    inline def map[K, V](initialValues: IObservableMapInitialValues[K, V]): ObservableMap[K, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any]).asInstanceOf[ObservableMap[K, V]]
+    inline def map[K, V](initialValues: IObservableMapInitialValues[K, V], options: CreateObservableOptions): ObservableMap[K, V] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableMap[K, V]]
     
-    @scala.inline
-    def `object`[T](props: T): T & IObservableObject = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any]).asInstanceOf[T & IObservableObject]
-    @scala.inline
-    def `object`[T](
+    inline def `object`[T](props: T): T & IObservableObject = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any]).asInstanceOf[T & IObservableObject]
+    inline def `object`[T](
       props: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
       */ typings.mobx.mobxStrings.`object` & TopLevel[js.Any]
     ): T & IObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
-    @scala.inline
-    def `object`[T](
+    inline def `object`[T](
       props: T,
       decorators: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? std.Function}
       */ typings.mobx.mobxStrings.`object` & TopLevel[js.Any],
       options: CreateObservableOptions
     ): T & IObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
-    @scala.inline
-    def `object`[T](props: T, decorators: Unit, options: CreateObservableOptions): T & IObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
+    inline def `object`[T](props: T, decorators: Unit, options: CreateObservableOptions): T & IObservableObject = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(props.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & IObservableObject]
     
     /**
       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
@@ -170,25 +127,16 @@ object observableMod {
     /**
       * Decorator that creates an observable that only observes the references, but doesn't try to turn the assigned value into an observable.ts.
       */
-    @scala.inline
-    def ref(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def ref(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def ref(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def ref(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def ref_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ref")(x.asInstanceOf[js.Any])
+    inline def ref(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def ref(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def ref(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def ref(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ref")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def ref_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ref")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set[T](): ObservableSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")().asInstanceOf[ObservableSet[T]]
-    @scala.inline
-    def set[T](initialValues: Unit, options: CreateObservableOptions): ObservableSet[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableSet[T]]
-    @scala.inline
-    def set[T](initialValues: IObservableSetInitialValues[T]): ObservableSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(initialValues.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[T]]
-    @scala.inline
-    def set[T](initialValues: IObservableSetInitialValues[T], options: CreateObservableOptions): ObservableSet[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableSet[T]]
+    inline def set[T](): ObservableSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")().asInstanceOf[ObservableSet[T]]
+    inline def set[T](initialValues: Unit, options: CreateObservableOptions): ObservableSet[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableSet[T]]
+    inline def set[T](initialValues: IObservableSetInitialValues[T]): ObservableSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(initialValues.asInstanceOf[js.Any]).asInstanceOf[ObservableSet[T]]
+    inline def set[T](initialValues: IObservableSetInitialValues[T], options: CreateObservableOptions): ObservableSet[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(initialValues.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObservableSet[T]]
     
     /**
       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
@@ -199,30 +147,20 @@ object observableMod {
     /**
       * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
       */
-    @scala.inline
-    def shallow(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def shallow(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def shallow(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def shallow(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def shallow_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shallow")(x.asInstanceOf[js.Any])
+    inline def shallow(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def shallow(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def shallow(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def shallow(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shallow")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def shallow_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shallow")(x.asInstanceOf[js.Any])
     
     @JSImport("mobx/lib/api/observable", "observable.struct")
     @js.native
     def struct: IObservableDecorator = js.native
-    @scala.inline
-    def struct(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def struct(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def struct(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def struct(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def struct_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("struct")(x.asInstanceOf[js.Any])
+    inline def struct(target: js.Object, property: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def struct(target: js.Object, property: String, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def struct(target: js.Object, property: js.Symbol): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def struct(target: js.Object, property: js.Symbol, descriptor: PropertyDescriptor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def struct_=(x: IObservableDecorator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("struct")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("mobx/lib/api/observable", "refDecorator")
@@ -244,44 +182,32 @@ object observableMod {
   }
   object CreateObservableOptions {
     
-    @scala.inline
-    def apply(): CreateObservableOptions = {
+    inline def apply(): CreateObservableOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateObservableOptions]
     }
     
-    @scala.inline
-    implicit class CreateObservableOptionsMutableBuilder[Self <: CreateObservableOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateObservableOptions](x: Self) {
       
-      @scala.inline
-      def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
+      inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
+      inline def setDeepUndefined: Self = StObject.set(x, "deep", js.undefined)
       
-      @scala.inline
-      def setDefaultDecorator(value: IObservableDecorator): Self = StObject.set(x, "defaultDecorator", value.asInstanceOf[js.Any])
+      inline def setDefaultDecorator(value: IObservableDecorator): Self = StObject.set(x, "defaultDecorator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDecoratorUndefined: Self = StObject.set(x, "defaultDecorator", js.undefined)
+      inline def setDefaultDecoratorUndefined: Self = StObject.set(x, "defaultDecorator", js.undefined)
       
-      @scala.inline
-      def setEquals_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProxy(value: Boolean): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: Boolean): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
     }
   }
   

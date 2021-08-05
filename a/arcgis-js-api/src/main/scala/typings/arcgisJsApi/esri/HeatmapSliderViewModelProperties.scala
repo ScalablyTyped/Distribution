@@ -17,22 +17,17 @@ trait HeatmapSliderViewModelProperties
 }
 object HeatmapSliderViewModelProperties {
   
-  @scala.inline
-  def apply(): HeatmapSliderViewModelProperties = {
+  inline def apply(): HeatmapSliderViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeatmapSliderViewModelProperties]
   }
   
-  @scala.inline
-  implicit class HeatmapSliderViewModelPropertiesMutableBuilder[Self <: HeatmapSliderViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapSliderViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setStops(value: js.Array[HeatmapColorStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[HeatmapColorStopProperties]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: HeatmapColorStopProperties*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

@@ -32,26 +32,20 @@ trait TwitterIntentEvent extends StObject {
 }
 object TwitterIntentEvent {
   
-  @scala.inline
-  def apply(data: TwitterIntentEventData, region: String, target: HTMLElement, `type`: String): TwitterIntentEvent = {
+  inline def apply(data: TwitterIntentEventData, region: String, target: HTMLElement, `type`: String): TwitterIntentEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TwitterIntentEvent]
   }
   
-  @scala.inline
-  implicit class TwitterIntentEventMutableBuilder[Self <: TwitterIntentEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TwitterIntentEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: TwitterIntentEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: TwitterIntentEventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

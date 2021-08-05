@@ -18,28 +18,21 @@ trait DescribeDirectConnectGatewaysResult extends StObject {
 }
 object DescribeDirectConnectGatewaysResult {
   
-  @scala.inline
-  def apply(): DescribeDirectConnectGatewaysResult = {
+  inline def apply(): DescribeDirectConnectGatewaysResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDirectConnectGatewaysResult]
   }
   
-  @scala.inline
-  implicit class DescribeDirectConnectGatewaysResultMutableBuilder[Self <: DescribeDirectConnectGatewaysResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDirectConnectGatewaysResult](x: Self) {
     
-    @scala.inline
-    def setDirectConnectGateways(value: DirectConnectGatewayList): Self = StObject.set(x, "directConnectGateways", value.asInstanceOf[js.Any])
+    inline def setDirectConnectGateways(value: DirectConnectGatewayList): Self = StObject.set(x, "directConnectGateways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectConnectGatewaysUndefined: Self = StObject.set(x, "directConnectGateways", js.undefined)
+    inline def setDirectConnectGatewaysUndefined: Self = StObject.set(x, "directConnectGateways", js.undefined)
     
-    @scala.inline
-    def setDirectConnectGatewaysVarargs(value: DirectConnectGateway*): Self = StObject.set(x, "directConnectGateways", js.Array(value :_*))
+    inline def setDirectConnectGatewaysVarargs(value: DirectConnectGateway*): Self = StObject.set(x, "directConnectGateways", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

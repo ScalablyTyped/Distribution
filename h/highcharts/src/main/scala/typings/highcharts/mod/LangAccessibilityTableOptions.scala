@@ -12,25 +12,19 @@ trait LangAccessibilityTableOptions extends StObject {
 }
 object LangAccessibilityTableOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilityTableOptions = {
+  inline def apply(): LangAccessibilityTableOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilityTableOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilityTableOptionsMutableBuilder[Self <: LangAccessibilityTableOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilityTableOptions](x: Self) {
     
-    @scala.inline
-    def setTableSummary(value: String): Self = StObject.set(x, "tableSummary", value.asInstanceOf[js.Any])
+    inline def setTableSummary(value: String): Self = StObject.set(x, "tableSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableSummaryUndefined: Self = StObject.set(x, "tableSummary", js.undefined)
+    inline def setTableSummaryUndefined: Self = StObject.set(x, "tableSummary", js.undefined)
     
-    @scala.inline
-    def setViewAsDataTableButtonText(value: String): Self = StObject.set(x, "viewAsDataTableButtonText", value.asInstanceOf[js.Any])
+    inline def setViewAsDataTableButtonText(value: String): Self = StObject.set(x, "viewAsDataTableButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewAsDataTableButtonTextUndefined: Self = StObject.set(x, "viewAsDataTableButtonText", js.undefined)
+    inline def setViewAsDataTableButtonTextUndefined: Self = StObject.set(x, "viewAsDataTableButtonText", js.undefined)
   }
 }

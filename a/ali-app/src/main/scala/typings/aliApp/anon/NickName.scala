@@ -13,19 +13,15 @@ trait NickName extends StObject {
 }
 object NickName {
   
-  @scala.inline
-  def apply(avatar: String, nickName: String): NickName = {
+  inline def apply(avatar: String, nickName: String): NickName = {
     val __obj = js.Dynamic.literal(avatar = avatar.asInstanceOf[js.Any], nickName = nickName.asInstanceOf[js.Any])
     __obj.asInstanceOf[NickName]
   }
   
-  @scala.inline
-  implicit class NickNameMutableBuilder[Self <: NickName] (val x: Self) extends AnyVal {
+  extension [Self <: NickName](x: Self) {
     
-    @scala.inline
-    def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+    inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNickName(value: String): Self = StObject.set(x, "nickName", value.asInstanceOf[js.Any])
+    inline def setNickName(value: String): Self = StObject.set(x, "nickName", value.asInstanceOf[js.Any])
   }
 }

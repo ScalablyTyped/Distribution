@@ -58,64 +58,45 @@ trait ComputeEnvironmentDetail extends StObject {
 }
 object ComputeEnvironmentDetail {
   
-  @scala.inline
-  def apply(computeEnvironmentArn: String, computeEnvironmentName: String, ecsClusterArn: String): ComputeEnvironmentDetail = {
+  inline def apply(computeEnvironmentArn: String, computeEnvironmentName: String, ecsClusterArn: String): ComputeEnvironmentDetail = {
     val __obj = js.Dynamic.literal(computeEnvironmentArn = computeEnvironmentArn.asInstanceOf[js.Any], computeEnvironmentName = computeEnvironmentName.asInstanceOf[js.Any], ecsClusterArn = ecsClusterArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComputeEnvironmentDetail]
   }
   
-  @scala.inline
-  implicit class ComputeEnvironmentDetailMutableBuilder[Self <: ComputeEnvironmentDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ComputeEnvironmentDetail](x: Self) {
     
-    @scala.inline
-    def setComputeEnvironmentArn(value: String): Self = StObject.set(x, "computeEnvironmentArn", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironmentArn(value: String): Self = StObject.set(x, "computeEnvironmentArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
+    inline def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeResources(value: ComputeResource): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
+    inline def setComputeResources(value: ComputeResource): Self = StObject.set(x, "computeResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
+    inline def setComputeResourcesUndefined: Self = StObject.set(x, "computeResources", js.undefined)
     
-    @scala.inline
-    def setEcsClusterArn(value: String): Self = StObject.set(x, "ecsClusterArn", value.asInstanceOf[js.Any])
+    inline def setEcsClusterArn(value: String): Self = StObject.set(x, "ecsClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+    inline def setServiceRole(value: String): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
+    inline def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
     
-    @scala.inline
-    def setState(value: CEState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: CEState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CEStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CEStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: String): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagrisTagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setType(value: CEType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CEType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

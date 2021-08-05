@@ -57,8 +57,7 @@ object ProcessFlow {
   }
   object Process {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getId: () => String,
       getName: () => String,
       getStages: () => ItemCollection[Stage],
@@ -68,20 +67,15 @@ object ProcessFlow {
       __obj.asInstanceOf[Process]
     }
     
-    @scala.inline
-    implicit class ProcessMutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
+    extension [Self <: Process](x: Self) {
       
-      @scala.inline
-      def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStages(value: () => ItemCollection[Stage]): Self = StObject.set(x, "getStages", js.Any.fromFunction0(value))
+      inline def setGetStages(value: () => ItemCollection[Stage]): Self = StObject.set(x, "getStages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRendered(value: () => Boolean): Self = StObject.set(x, "isRendered", js.Any.fromFunction0(value))
+      inline def setIsRendered(value: () => Boolean): Self = StObject.set(x, "isRendered", js.Any.fromFunction0(value))
     }
   }
   
@@ -337,14 +331,11 @@ object ProcessFlow {
   trait ProcessStatus extends StObject
   object ProcessStatus {
     
-    @scala.inline
-    def aborted: typings.xrm.xrmStrings.aborted = "aborted".asInstanceOf[typings.xrm.xrmStrings.aborted]
+    inline def aborted: typings.xrm.xrmStrings.aborted = "aborted".asInstanceOf[typings.xrm.xrmStrings.aborted]
     
-    @scala.inline
-    def active: typings.xrm.xrmStrings.active = "active".asInstanceOf[typings.xrm.xrmStrings.active]
+    inline def active: typings.xrm.xrmStrings.active = "active".asInstanceOf[typings.xrm.xrmStrings.active]
     
-    @scala.inline
-    def finished: typings.xrm.xrmStrings.finished = "finished".asInstanceOf[typings.xrm.xrmStrings.finished]
+    inline def finished: typings.xrm.xrmStrings.finished = "finished".asInstanceOf[typings.xrm.xrmStrings.finished]
   }
   
   /**
@@ -401,8 +392,7 @@ object ProcessFlow {
   }
   object Stage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getCategory: () => GetValue,
       getEntityName: () => String,
       getId: () => String,
@@ -414,26 +404,19 @@ object ProcessFlow {
       __obj.asInstanceOf[Stage]
     }
     
-    @scala.inline
-    implicit class StageMutableBuilder[Self <: Stage] (val x: Self) extends AnyVal {
+    extension [Self <: Stage](x: Self) {
       
-      @scala.inline
-      def setGetCategory(value: () => GetValue): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
+      inline def setGetCategory(value: () => GetValue): Self = StObject.set(x, "getCategory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEntityName(value: () => String): Self = StObject.set(x, "getEntityName", js.Any.fromFunction0(value))
+      inline def setGetEntityName(value: () => String): Self = StObject.set(x, "getEntityName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatus(value: () => StageStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
+      inline def setGetStatus(value: () => StageStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSteps(value: () => js.Array[Step]): Self = StObject.set(x, "getSteps", js.Any.fromFunction0(value))
+      inline def setGetSteps(value: () => js.Array[Step]): Self = StObject.set(x, "getSteps", js.Any.fromFunction0(value))
     }
   }
   
@@ -448,11 +431,9 @@ object ProcessFlow {
   trait StageChangeDirection extends StObject
   object StageChangeDirection {
     
-    @scala.inline
-    def Next: typings.xrm.xrmStrings.Next = "Next".asInstanceOf[typings.xrm.xrmStrings.Next]
+    inline def Next: typings.xrm.xrmStrings.Next = "Next".asInstanceOf[typings.xrm.xrmStrings.Next]
     
-    @scala.inline
-    def Previous: typings.xrm.xrmStrings.Previous = "Previous".asInstanceOf[typings.xrm.xrmStrings.Previous]
+    inline def Previous: typings.xrm.xrmStrings.Previous = "Previous".asInstanceOf[typings.xrm.xrmStrings.Previous]
   }
   
   /**
@@ -466,11 +447,9 @@ object ProcessFlow {
   trait StageStatus extends StObject
   object StageStatus {
     
-    @scala.inline
-    def active: typings.xrm.xrmStrings.active = "active".asInstanceOf[typings.xrm.xrmStrings.active]
+    inline def active: typings.xrm.xrmStrings.active = "active".asInstanceOf[typings.xrm.xrmStrings.active]
     
-    @scala.inline
-    def inactive: typings.xrm.xrmStrings.inactive = "inactive".asInstanceOf[typings.xrm.xrmStrings.inactive]
+    inline def inactive: typings.xrm.xrmStrings.inactive = "inactive".asInstanceOf[typings.xrm.xrmStrings.inactive]
   }
   
   trait Step extends StObject {
@@ -499,23 +478,18 @@ object ProcessFlow {
   }
   object Step {
     
-    @scala.inline
-    def apply(getAttribute: () => String, getName: () => String, isRequired: () => Boolean): Step = {
+    inline def apply(getAttribute: () => String, getName: () => String, isRequired: () => Boolean): Step = {
       val __obj = js.Dynamic.literal(getAttribute = js.Any.fromFunction0(getAttribute), getName = js.Any.fromFunction0(getName), isRequired = js.Any.fromFunction0(isRequired))
       __obj.asInstanceOf[Step]
     }
     
-    @scala.inline
-    implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+    extension [Self <: Step](x: Self) {
       
-      @scala.inline
-      def setGetAttribute(value: () => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction0(value))
+      inline def setGetAttribute(value: () => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsRequired(value: () => Boolean): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
+      inline def setIsRequired(value: () => Boolean): Self = StObject.set(x, "isRequired", js.Any.fromFunction0(value))
     }
   }
 }

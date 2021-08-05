@@ -21,8 +21,7 @@ object DateFormat {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DateFormat.Custom")
   @js.native
   def Custom: DateFormat = js.native
-  @scala.inline
-  def Custom_=(x: DateFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
+  inline def Custom_=(x: DateFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Custom")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DateFormat.Date")
@@ -33,16 +32,13 @@ object DateFormat {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DateFormat.DateTime")
   @js.native
   def DateTime: DateFormat = js.native
-  @scala.inline
-  def DateTime_=(x: DateFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
+  inline def DateTime_=(x: DateFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Date_=(x: DateFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
+  inline def Date_=(x: DateFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.DateFormat.Time")
   @js.native
   def Time: DateFormat = js.native
-  @scala.inline
-  def Time_=(x: DateFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
+  inline def Time_=(x: DateFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
 }

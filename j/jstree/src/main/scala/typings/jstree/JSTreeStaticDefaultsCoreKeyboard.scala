@@ -30,8 +30,7 @@ trait JSTreeStaticDefaultsCoreKeyboard extends StObject {
 }
 object JSTreeStaticDefaultsCoreKeyboard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Asterisk: Event => Unit,
     `ctrl-space`: Event => Unit,
     down: Event => Unit,
@@ -49,37 +48,26 @@ object JSTreeStaticDefaultsCoreKeyboard {
     __obj.asInstanceOf[JSTreeStaticDefaultsCoreKeyboard]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsCoreKeyboardMutableBuilder[Self <: JSTreeStaticDefaultsCoreKeyboard] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaultsCoreKeyboard](x: Self) {
     
-    @scala.inline
-    def setAsterisk(value: Event => Unit): Self = StObject.set(x, "*", js.Any.fromFunction1(value))
+    inline def setAsterisk(value: Event => Unit): Self = StObject.set(x, "*", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setCtrl-space`(value: Event => Unit): Self = StObject.set(x, "ctrl-space", js.Any.fromFunction1(value))
+    inline def `setCtrl-space`(value: Event => Unit): Self = StObject.set(x, "ctrl-space", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDown(value: Event => Unit): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+    inline def setDown(value: Event => Unit): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnd(value: Event => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+    inline def setEnd(value: Event => Unit): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnter(value: Event => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
+    inline def setEnter(value: Event => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setF2(value: Event => Unit): Self = StObject.set(x, "f2", js.Any.fromFunction1(value))
+    inline def setF2(value: Event => Unit): Self = StObject.set(x, "f2", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHome(value: Event => Unit): Self = StObject.set(x, "home", js.Any.fromFunction1(value))
+    inline def setHome(value: Event => Unit): Self = StObject.set(x, "home", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLeft(value: Event => Unit): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
+    inline def setLeft(value: Event => Unit): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRight(value: Event => Unit): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
+    inline def setRight(value: Event => Unit): Self = StObject.set(x, "right", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUp(value: Event => Unit): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+    inline def setUp(value: Event => Unit): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
   }
 }

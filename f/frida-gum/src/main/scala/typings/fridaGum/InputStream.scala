@@ -27,8 +27,7 @@ trait InputStream extends StObject {
 }
 object InputStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => js.Promise[Unit],
     read: Double => js.Promise[ArrayBuffer],
     readAll: Double => js.Promise[ArrayBuffer]
@@ -37,16 +36,12 @@ object InputStream {
     __obj.asInstanceOf[InputStream]
   }
   
-  @scala.inline
-  implicit class InputStreamMutableBuilder[Self <: InputStream] (val x: Self) extends AnyVal {
+  extension [Self <: InputStream](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRead(value: Double => js.Promise[ArrayBuffer]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: Double => js.Promise[ArrayBuffer]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadAll(value: Double => js.Promise[ArrayBuffer]): Self = StObject.set(x, "readAll", js.Any.fromFunction1(value))
+    inline def setReadAll(value: Double => js.Promise[ArrayBuffer]): Self = StObject.set(x, "readAll", js.Any.fromFunction1(value))
   }
 }

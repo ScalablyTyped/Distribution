@@ -19,29 +19,22 @@ object graphqlRequestOptionsMod {
   }
   object GraphQLRequestOptions {
     
-    @scala.inline
-    def apply(documentId: String, surface: FriendlyName, variables: js.Any): GraphQLRequestOptions = {
+    inline def apply(documentId: String, surface: FriendlyName, variables: js.Any): GraphQLRequestOptions = {
       val __obj = js.Dynamic.literal(documentId = documentId.asInstanceOf[js.Any], surface = surface.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[GraphQLRequestOptions]
     }
     
-    @scala.inline
-    implicit class GraphQLRequestOptionsMutableBuilder[Self <: GraphQLRequestOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GraphQLRequestOptions](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
+      inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
       
-      @scala.inline
-      def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+      inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSurface(value: FriendlyName): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
+      inline def setSurface(value: FriendlyName): Self = StObject.set(x, "surface", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: js.Any): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: js.Any): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
   

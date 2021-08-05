@@ -28,34 +28,25 @@ trait CreateMountTargetRequest extends StObject {
 }
 object CreateMountTargetRequest {
   
-  @scala.inline
-  def apply(FileSystemId: FileSystemId, SubnetId: SubnetId): CreateMountTargetRequest = {
+  inline def apply(FileSystemId: FileSystemId, SubnetId: SubnetId): CreateMountTargetRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMountTargetRequest]
   }
   
-  @scala.inline
-  implicit class CreateMountTargetRequestMutableBuilder[Self <: CreateMountTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMountTargetRequest](x: Self) {
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
-    @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroup*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
   }
 }

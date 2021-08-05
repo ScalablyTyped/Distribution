@@ -13,19 +13,15 @@ trait GetQualificationScoreResponse extends StObject {
 }
 object GetQualificationScoreResponse {
   
-  @scala.inline
-  def apply(): GetQualificationScoreResponse = {
+  inline def apply(): GetQualificationScoreResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetQualificationScoreResponse]
   }
   
-  @scala.inline
-  implicit class GetQualificationScoreResponseMutableBuilder[Self <: GetQualificationScoreResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetQualificationScoreResponse](x: Self) {
     
-    @scala.inline
-    def setQualification(value: Qualification): Self = StObject.set(x, "Qualification", value.asInstanceOf[js.Any])
+    inline def setQualification(value: Qualification): Self = StObject.set(x, "Qualification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualificationUndefined: Self = StObject.set(x, "Qualification", js.undefined)
+    inline def setQualificationUndefined: Self = StObject.set(x, "Qualification", js.undefined)
   }
 }

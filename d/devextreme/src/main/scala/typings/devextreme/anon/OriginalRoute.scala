@@ -20,43 +20,31 @@ trait OriginalRoute extends StObject {
 }
 object OriginalRoute {
   
-  @scala.inline
-  def apply(): OriginalRoute = {
+  inline def apply(): OriginalRoute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OriginalRoute]
   }
   
-  @scala.inline
-  implicit class OriginalRouteMutableBuilder[Self <: OriginalRoute] (val x: Self) extends AnyVal {
+  extension [Self <: OriginalRoute](x: Self) {
     
-    @scala.inline
-    def setComponent(value: dxMap): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxMap): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOriginalRoute(value: js.Any): Self = StObject.set(x, "originalRoute", value.asInstanceOf[js.Any])
+    inline def setOriginalRoute(value: js.Any): Self = StObject.set(x, "originalRoute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalRouteUndefined: Self = StObject.set(x, "originalRoute", js.undefined)
+    inline def setOriginalRouteUndefined: Self = StObject.set(x, "originalRoute", js.undefined)
   }
 }

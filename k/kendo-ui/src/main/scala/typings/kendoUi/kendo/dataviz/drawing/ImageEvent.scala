@@ -14,22 +14,17 @@ trait ImageEvent extends StObject {
 }
 object ImageEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Image): ImageEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Image): ImageEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageEvent]
   }
   
-  @scala.inline
-  implicit class ImageEventMutableBuilder[Self <: ImageEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ImageEvent](x: Self) {
     
-    @scala.inline
-    def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+    inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender(value: Image): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Image): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

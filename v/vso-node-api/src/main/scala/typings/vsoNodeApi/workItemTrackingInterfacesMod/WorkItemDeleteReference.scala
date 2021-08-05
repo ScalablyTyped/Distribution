@@ -53,8 +53,7 @@ trait WorkItemDeleteReference extends StObject {
 }
 object WorkItemDeleteReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: Double,
     deletedBy: String,
     deletedDate: String,
@@ -70,34 +69,24 @@ object WorkItemDeleteReference {
     __obj.asInstanceOf[WorkItemDeleteReference]
   }
   
-  @scala.inline
-  implicit class WorkItemDeleteReferenceMutableBuilder[Self <: WorkItemDeleteReference] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemDeleteReference](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedBy(value: String): Self = StObject.set(x, "deletedBy", value.asInstanceOf[js.Any])
+    inline def setDeletedBy(value: String): Self = StObject.set(x, "deletedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedDate(value: String): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
+    inline def setDeletedDate(value: String): Self = StObject.set(x, "deletedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

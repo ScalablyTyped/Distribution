@@ -35,8 +35,7 @@ trait LogicTargetModel extends StObject {
 }
 object LogicTargetModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CoordinateSystems: SafeArray[XPropertySet],
     ID: String,
     LegendID: String,
@@ -46,19 +45,14 @@ object LogicTargetModel {
     __obj.asInstanceOf[LogicTargetModel]
   }
   
-  @scala.inline
-  implicit class LogicTargetModelMutableBuilder[Self <: LogicTargetModel] (val x: Self) extends AnyVal {
+  extension [Self <: LogicTargetModel](x: Self) {
     
-    @scala.inline
-    def setCoordinateSystems(value: SafeArray[XPropertySet]): Self = StObject.set(x, "CoordinateSystems", value.asInstanceOf[js.Any])
+    inline def setCoordinateSystems(value: SafeArray[XPropertySet]): Self = StObject.set(x, "CoordinateSystems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendID(value: String): Self = StObject.set(x, "LegendID", value.asInstanceOf[js.Any])
+    inline def setLegendID(value: String): Self = StObject.set(x, "LegendID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicTargetModels(value: SafeArray[XPropertySet]): Self = StObject.set(x, "LogicTargetModels", value.asInstanceOf[js.Any])
+    inline def setLogicTargetModels(value: SafeArray[XPropertySet]): Self = StObject.set(x, "LogicTargetModels", value.asInstanceOf[js.Any])
   }
 }

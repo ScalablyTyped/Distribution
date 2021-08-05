@@ -13,16 +13,13 @@ trait DescribeStreamOutput extends StObject {
 }
 object DescribeStreamOutput {
   
-  @scala.inline
-  def apply(StreamDescription: StreamDescription): DescribeStreamOutput = {
+  inline def apply(StreamDescription: StreamDescription): DescribeStreamOutput = {
     val __obj = js.Dynamic.literal(StreamDescription = StreamDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStreamOutput]
   }
   
-  @scala.inline
-  implicit class DescribeStreamOutputMutableBuilder[Self <: DescribeStreamOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStreamOutput](x: Self) {
     
-    @scala.inline
-    def setStreamDescription(value: StreamDescription): Self = StObject.set(x, "StreamDescription", value.asInstanceOf[js.Any])
+    inline def setStreamDescription(value: StreamDescription): Self = StObject.set(x, "StreamDescription", value.asInstanceOf[js.Any])
   }
 }

@@ -22,29 +22,23 @@ trait GoogleCloudDialogflowCxV3WebhookRequestIntentInfo extends StObject {
 }
 object GoogleCloudDialogflowCxV3WebhookRequestIntentInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3WebhookRequestIntentInfo = {
+  inline def apply(): GoogleCloudDialogflowCxV3WebhookRequestIntentInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3WebhookRequestIntentInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3WebhookRequestIntentInfoMutableBuilder[Self <: GoogleCloudDialogflowCxV3WebhookRequestIntentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3WebhookRequestIntentInfo](x: Self) {
     
-    @scala.inline
-    def setLastMatchedIntent(value: String): Self = StObject.set(x, "lastMatchedIntent", value.asInstanceOf[js.Any])
+    inline def setLastMatchedIntent(value: String): Self = StObject.set(x, "lastMatchedIntent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastMatchedIntentUndefined: Self = StObject.set(x, "lastMatchedIntent", js.undefined)
+    inline def setLastMatchedIntentUndefined: Self = StObject.set(x, "lastMatchedIntent", js.undefined)
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.dialogflow.gapi.client.dialogflow.GoogleCloudDialogflowCxV3WebhookRequestIntentInfoIntentParameterValue}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowCxV3WebhookRequestIntentInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

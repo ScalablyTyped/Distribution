@@ -51,43 +51,31 @@ trait SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer extends StObject 
 }
 object SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswerMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer](x: Self) {
     
-    @scala.inline
-    def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
+    inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
+    inline def setAnswerUndefined: Self = StObject.set(x, "answer", js.undefined)
     
-    @scala.inline
-    def setFaqQuestion(value: String): Self = StObject.set(x, "faqQuestion", value.asInstanceOf[js.Any])
+    inline def setFaqQuestion(value: String): Self = StObject.set(x, "faqQuestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaqQuestionUndefined: Self = StObject.set(x, "faqQuestion", js.undefined)
+    inline def setFaqQuestionUndefined: Self = StObject.set(x, "faqQuestion", js.undefined)
     
-    @scala.inline
-    def setMatchConfidence(value: Double): Self = StObject.set(x, "matchConfidence", value.asInstanceOf[js.Any])
+    inline def setMatchConfidence(value: Double): Self = StObject.set(x, "matchConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchConfidenceLevel(value: String): Self = StObject.set(x, "matchConfidenceLevel", value.asInstanceOf[js.Any])
+    inline def setMatchConfidenceLevel(value: String): Self = StObject.set(x, "matchConfidenceLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchConfidenceLevelUndefined: Self = StObject.set(x, "matchConfidenceLevel", js.undefined)
+    inline def setMatchConfidenceLevelUndefined: Self = StObject.set(x, "matchConfidenceLevel", js.undefined)
     
-    @scala.inline
-    def setMatchConfidenceUndefined: Self = StObject.set(x, "matchConfidence", js.undefined)
+    inline def setMatchConfidenceUndefined: Self = StObject.set(x, "matchConfidence", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

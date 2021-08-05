@@ -37,8 +37,7 @@ object dialogflowMod {
     @JSImport("googleapis/build/src/apis/dialogflow", "VERSIONS.v2")
     @js.native
     def v2: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dialogflow] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dialogflow]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
     
@@ -57,8 +56,7 @@ object dialogflowMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow
       ] = js.native
-    @scala.inline
-    def v2beta1_=(
+    inline def v2beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -100,8 +98,7 @@ object dialogflowMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -145,14 +142,10 @@ object dialogflowMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def dialogflow(options: Options): Dialogflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dialogflow")(options.asInstanceOf[js.Any]).asInstanceOf[Dialogflow]
-  @scala.inline
-  def dialogflow(options: typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Options): typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dialogflow")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow]
+  inline def dialogflow(options: Options): Dialogflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dialogflow")(options.asInstanceOf[js.Any]).asInstanceOf[Dialogflow]
+  inline def dialogflow(options: typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Options): typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dialogflow")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow]
   
-  @scala.inline
-  def dialogflow_v2(version: v2): Dialogflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dialogflow")(version.asInstanceOf[js.Any]).asInstanceOf[Dialogflow]
+  inline def dialogflow_v2(version: v2): Dialogflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dialogflow")(version.asInstanceOf[js.Any]).asInstanceOf[Dialogflow]
   
-  @scala.inline
-  def dialogflow_v2beta1(version: v2beta1): typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dialogflow")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow]
+  inline def dialogflow_v2beta1(version: v2beta1): typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dialogflow")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1.Dialogflow]
 }

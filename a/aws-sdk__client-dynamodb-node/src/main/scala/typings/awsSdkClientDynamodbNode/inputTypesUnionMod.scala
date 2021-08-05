@@ -58,36 +58,31 @@ object inputTypesUnionMod {
   trait InputTypesUnion extends StObject
   object InputTypesUnion {
     
-    @scala.inline
-    def BatchGetItemInput(
+    inline def BatchGetItemInput(
       RequestItems: StringDictionary[KeysAndAttributes] | (Iterable[js.Tuple2[String, KeysAndAttributes]])
     ): typings.awsSdkClientDynamodbNode.typesBatchGetItemInputMod.BatchGetItemInput = {
       val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesBatchGetItemInputMod.BatchGetItemInput]
     }
     
-    @scala.inline
-    def BatchWriteItemInput(
+    inline def BatchWriteItemInput(
       RequestItems: (StringDictionary[js.Array[WriteRequest] | Iterable[WriteRequest]]) | (Iterable[js.Tuple2[String, js.Array[WriteRequest] | Iterable[WriteRequest]]])
     ): typings.awsSdkClientDynamodbNode.typesBatchWriteItemInputMod.BatchWriteItemInput = {
       val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesBatchWriteItemInputMod.BatchWriteItemInput]
     }
     
-    @scala.inline
-    def CreateBackupInput(BackupName: String, TableName: String): typings.awsSdkClientDynamodbNode.typesCreateBackupInputMod.CreateBackupInput = {
+    inline def CreateBackupInput(BackupName: String, TableName: String): typings.awsSdkClientDynamodbNode.typesCreateBackupInputMod.CreateBackupInput = {
       val __obj = js.Dynamic.literal(BackupName = BackupName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesCreateBackupInputMod.CreateBackupInput]
     }
     
-    @scala.inline
-    def CreateGlobalTableInput(GlobalTableName: String, ReplicationGroup: js.Array[Replica] | Iterable[Replica]): typings.awsSdkClientDynamodbNode.typesCreateGlobalTableInputMod.CreateGlobalTableInput = {
+    inline def CreateGlobalTableInput(GlobalTableName: String, ReplicationGroup: js.Array[Replica] | Iterable[Replica]): typings.awsSdkClientDynamodbNode.typesCreateGlobalTableInputMod.CreateGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicationGroup = ReplicationGroup.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesCreateGlobalTableInputMod.CreateGlobalTableInput]
     }
     
-    @scala.inline
-    def CreateTableInput(
+    inline def CreateTableInput(
       AttributeDefinitions: js.Array[AttributeDefinition] | Iterable[AttributeDefinition],
       KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement],
       ProvisionedThroughput: ProvisionedThroughput,
@@ -97,14 +92,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesCreateTableInputMod.CreateTableInput]
     }
     
-    @scala.inline
-    def DeleteBackupInput(BackupArn: String): typings.awsSdkClientDynamodbNode.typesDeleteBackupInputMod.DeleteBackupInput = {
+    inline def DeleteBackupInput(BackupArn: String): typings.awsSdkClientDynamodbNode.typesDeleteBackupInputMod.DeleteBackupInput = {
       val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDeleteBackupInputMod.DeleteBackupInput]
     }
     
-    @scala.inline
-    def DeleteItemInput(
+    inline def DeleteItemInput(
       Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
       TableName: String
     ): typings.awsSdkClientDynamodbNode.typesDeleteItemInputMod.DeleteItemInput = {
@@ -112,62 +105,52 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDeleteItemInputMod.DeleteItemInput]
     }
     
-    @scala.inline
-    def DeleteTableInput(TableName: String): typings.awsSdkClientDynamodbNode.typesDeleteTableInputMod.DeleteTableInput = {
+    inline def DeleteTableInput(TableName: String): typings.awsSdkClientDynamodbNode.typesDeleteTableInputMod.DeleteTableInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDeleteTableInputMod.DeleteTableInput]
     }
     
-    @scala.inline
-    def DescribeBackupInput(BackupArn: String): typings.awsSdkClientDynamodbNode.typesDescribeBackupInputMod.DescribeBackupInput = {
+    inline def DescribeBackupInput(BackupArn: String): typings.awsSdkClientDynamodbNode.typesDescribeBackupInputMod.DescribeBackupInput = {
       val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDescribeBackupInputMod.DescribeBackupInput]
     }
     
-    @scala.inline
-    def DescribeContinuousBackupsInput(TableName: String): typings.awsSdkClientDynamodbNode.typesDescribeContinuousBackupsInputMod.DescribeContinuousBackupsInput = {
+    inline def DescribeContinuousBackupsInput(TableName: String): typings.awsSdkClientDynamodbNode.typesDescribeContinuousBackupsInputMod.DescribeContinuousBackupsInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDescribeContinuousBackupsInputMod.DescribeContinuousBackupsInput]
     }
     
-    @scala.inline
-    def DescribeEndpointsInput(): typings.awsSdkClientDynamodbNode.typesDescribeEndpointsInputMod.DescribeEndpointsInput = {
+    inline def DescribeEndpointsInput(): typings.awsSdkClientDynamodbNode.typesDescribeEndpointsInputMod.DescribeEndpointsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDescribeEndpointsInputMod.DescribeEndpointsInput]
     }
     
-    @scala.inline
-    def DescribeGlobalTableInput(GlobalTableName: String): typings.awsSdkClientDynamodbNode.typesDescribeGlobalTableInputMod.DescribeGlobalTableInput = {
+    inline def DescribeGlobalTableInput(GlobalTableName: String): typings.awsSdkClientDynamodbNode.typesDescribeGlobalTableInputMod.DescribeGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDescribeGlobalTableInputMod.DescribeGlobalTableInput]
     }
     
-    @scala.inline
-    def DescribeGlobalTableSettingsInput(GlobalTableName: String): typings.awsSdkClientDynamodbNode.typesDescribeGlobalTableSettingsInputMod.DescribeGlobalTableSettingsInput = {
+    inline def DescribeGlobalTableSettingsInput(GlobalTableName: String): typings.awsSdkClientDynamodbNode.typesDescribeGlobalTableSettingsInputMod.DescribeGlobalTableSettingsInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDescribeGlobalTableSettingsInputMod.DescribeGlobalTableSettingsInput]
     }
     
-    @scala.inline
-    def DescribeLimitsInput(): typings.awsSdkClientDynamodbNode.typesDescribeLimitsInputMod.DescribeLimitsInput = {
+    inline def DescribeLimitsInput(): typings.awsSdkClientDynamodbNode.typesDescribeLimitsInputMod.DescribeLimitsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDescribeLimitsInputMod.DescribeLimitsInput]
     }
     
-    @scala.inline
-    def DescribeTableInput(TableName: String): typings.awsSdkClientDynamodbNode.typesDescribeTableInputMod.DescribeTableInput = {
+    inline def DescribeTableInput(TableName: String): typings.awsSdkClientDynamodbNode.typesDescribeTableInputMod.DescribeTableInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDescribeTableInputMod.DescribeTableInput]
     }
     
-    @scala.inline
-    def DescribeTimeToLiveInput(TableName: String): typings.awsSdkClientDynamodbNode.typesDescribeTimeToLiveInputMod.DescribeTimeToLiveInput = {
+    inline def DescribeTimeToLiveInput(TableName: String): typings.awsSdkClientDynamodbNode.typesDescribeTimeToLiveInputMod.DescribeTimeToLiveInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesDescribeTimeToLiveInputMod.DescribeTimeToLiveInput]
     }
     
-    @scala.inline
-    def GetItemInput(
+    inline def GetItemInput(
       Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
       TableName: String
     ): typings.awsSdkClientDynamodbNode.typesGetItemInputMod.GetItemInput = {
@@ -175,32 +158,27 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesGetItemInputMod.GetItemInput]
     }
     
-    @scala.inline
-    def ListBackupsInput(): typings.awsSdkClientDynamodbNode.typesListBackupsInputMod.ListBackupsInput = {
+    inline def ListBackupsInput(): typings.awsSdkClientDynamodbNode.typesListBackupsInputMod.ListBackupsInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesListBackupsInputMod.ListBackupsInput]
     }
     
-    @scala.inline
-    def ListGlobalTablesInput(): typings.awsSdkClientDynamodbNode.typesListGlobalTablesInputMod.ListGlobalTablesInput = {
+    inline def ListGlobalTablesInput(): typings.awsSdkClientDynamodbNode.typesListGlobalTablesInputMod.ListGlobalTablesInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesListGlobalTablesInputMod.ListGlobalTablesInput]
     }
     
-    @scala.inline
-    def ListTablesInput(): typings.awsSdkClientDynamodbNode.typesListTablesInputMod.ListTablesInput = {
+    inline def ListTablesInput(): typings.awsSdkClientDynamodbNode.typesListTablesInputMod.ListTablesInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesListTablesInputMod.ListTablesInput]
     }
     
-    @scala.inline
-    def ListTagsOfResourceInput(ResourceArn: String): typings.awsSdkClientDynamodbNode.typesListTagsOfResourceInputMod.ListTagsOfResourceInput = {
+    inline def ListTagsOfResourceInput(ResourceArn: String): typings.awsSdkClientDynamodbNode.typesListTagsOfResourceInputMod.ListTagsOfResourceInput = {
       val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesListTagsOfResourceInputMod.ListTagsOfResourceInput]
     }
     
-    @scala.inline
-    def PutItemInput(
+    inline def PutItemInput(
       Item: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
       TableName: String
     ): typings.awsSdkClientDynamodbNode.typesPutItemInputMod.PutItemInput = {
@@ -208,62 +186,52 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesPutItemInputMod.PutItemInput]
     }
     
-    @scala.inline
-    def QueryInput(TableName: String): typings.awsSdkClientDynamodbNode.typesQueryInputMod.QueryInput = {
+    inline def QueryInput(TableName: String): typings.awsSdkClientDynamodbNode.typesQueryInputMod.QueryInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesQueryInputMod.QueryInput]
     }
     
-    @scala.inline
-    def RestoreTableFromBackupInput(BackupArn: String, TargetTableName: String): typings.awsSdkClientDynamodbNode.typesRestoreTableFromBackupInputMod.RestoreTableFromBackupInput = {
+    inline def RestoreTableFromBackupInput(BackupArn: String, TargetTableName: String): typings.awsSdkClientDynamodbNode.typesRestoreTableFromBackupInputMod.RestoreTableFromBackupInput = {
       val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any], TargetTableName = TargetTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesRestoreTableFromBackupInputMod.RestoreTableFromBackupInput]
     }
     
-    @scala.inline
-    def RestoreTableToPointInTimeInput(SourceTableName: String, TargetTableName: String): typings.awsSdkClientDynamodbNode.typesRestoreTableToPointInTimeInputMod.RestoreTableToPointInTimeInput = {
+    inline def RestoreTableToPointInTimeInput(SourceTableName: String, TargetTableName: String): typings.awsSdkClientDynamodbNode.typesRestoreTableToPointInTimeInputMod.RestoreTableToPointInTimeInput = {
       val __obj = js.Dynamic.literal(SourceTableName = SourceTableName.asInstanceOf[js.Any], TargetTableName = TargetTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesRestoreTableToPointInTimeInputMod.RestoreTableToPointInTimeInput]
     }
     
-    @scala.inline
-    def ScanInput(TableName: String): typings.awsSdkClientDynamodbNode.typesScanInputMod.ScanInput = {
+    inline def ScanInput(TableName: String): typings.awsSdkClientDynamodbNode.typesScanInputMod.ScanInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesScanInputMod.ScanInput]
     }
     
-    @scala.inline
-    def TagResourceInput(ResourceArn: String, Tags: js.Array[Tag] | Iterable[Tag]): typings.awsSdkClientDynamodbNode.typesTagResourceInputMod.TagResourceInput = {
+    inline def TagResourceInput(ResourceArn: String, Tags: js.Array[Tag] | Iterable[Tag]): typings.awsSdkClientDynamodbNode.typesTagResourceInputMod.TagResourceInput = {
       val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesTagResourceInputMod.TagResourceInput]
     }
     
-    @scala.inline
-    def UntagResourceInput(ResourceArn: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientDynamodbNode.typesUntagResourceInputMod.UntagResourceInput = {
+    inline def UntagResourceInput(ResourceArn: String, TagKeys: js.Array[String] | Iterable[String]): typings.awsSdkClientDynamodbNode.typesUntagResourceInputMod.UntagResourceInput = {
       val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], TagKeys = TagKeys.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUntagResourceInputMod.UntagResourceInput]
     }
     
-    @scala.inline
-    def UpdateContinuousBackupsInput(PointInTimeRecoverySpecification: PointInTimeRecoverySpecification, TableName: String): typings.awsSdkClientDynamodbNode.typesUpdateContinuousBackupsInputMod.UpdateContinuousBackupsInput = {
+    inline def UpdateContinuousBackupsInput(PointInTimeRecoverySpecification: PointInTimeRecoverySpecification, TableName: String): typings.awsSdkClientDynamodbNode.typesUpdateContinuousBackupsInputMod.UpdateContinuousBackupsInput = {
       val __obj = js.Dynamic.literal(PointInTimeRecoverySpecification = PointInTimeRecoverySpecification.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUpdateContinuousBackupsInputMod.UpdateContinuousBackupsInput]
     }
     
-    @scala.inline
-    def UpdateGlobalTableInput(GlobalTableName: String, ReplicaUpdates: js.Array[ReplicaUpdate] | Iterable[ReplicaUpdate]): typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableInputMod.UpdateGlobalTableInput = {
+    inline def UpdateGlobalTableInput(GlobalTableName: String, ReplicaUpdates: js.Array[ReplicaUpdate] | Iterable[ReplicaUpdate]): typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableInputMod.UpdateGlobalTableInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any], ReplicaUpdates = ReplicaUpdates.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableInputMod.UpdateGlobalTableInput]
     }
     
-    @scala.inline
-    def UpdateGlobalTableSettingsInput(GlobalTableName: String): typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableSettingsInputMod.UpdateGlobalTableSettingsInput = {
+    inline def UpdateGlobalTableSettingsInput(GlobalTableName: String): typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableSettingsInputMod.UpdateGlobalTableSettingsInput = {
       val __obj = js.Dynamic.literal(GlobalTableName = GlobalTableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUpdateGlobalTableSettingsInputMod.UpdateGlobalTableSettingsInput]
     }
     
-    @scala.inline
-    def UpdateItemInput(
+    inline def UpdateItemInput(
       Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
       TableName: String
     ): typings.awsSdkClientDynamodbNode.typesUpdateItemInputMod.UpdateItemInput = {
@@ -271,14 +239,12 @@ object inputTypesUnionMod {
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUpdateItemInputMod.UpdateItemInput]
     }
     
-    @scala.inline
-    def UpdateTableInput(TableName: String): typings.awsSdkClientDynamodbNode.typesUpdateTableInputMod.UpdateTableInput = {
+    inline def UpdateTableInput(TableName: String): typings.awsSdkClientDynamodbNode.typesUpdateTableInputMod.UpdateTableInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUpdateTableInputMod.UpdateTableInput]
     }
     
-    @scala.inline
-    def UpdateTimeToLiveInput(TableName: String, TimeToLiveSpecification: TimeToLiveSpecification): typings.awsSdkClientDynamodbNode.typesUpdateTimeToLiveInputMod.UpdateTimeToLiveInput = {
+    inline def UpdateTimeToLiveInput(TableName: String, TimeToLiveSpecification: TimeToLiveSpecification): typings.awsSdkClientDynamodbNode.typesUpdateTimeToLiveInputMod.UpdateTimeToLiveInput = {
       val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any], TimeToLiveSpecification = TimeToLiveSpecification.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesUpdateTimeToLiveInputMod.UpdateTimeToLiveInput]
     }

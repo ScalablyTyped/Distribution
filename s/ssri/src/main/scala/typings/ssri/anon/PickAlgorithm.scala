@@ -12,25 +12,19 @@ trait PickAlgorithm extends StObject {
 }
 object PickAlgorithm {
   
-  @scala.inline
-  def apply(): PickAlgorithm = {
+  inline def apply(): PickAlgorithm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickAlgorithm]
   }
   
-  @scala.inline
-  implicit class PickAlgorithmMutableBuilder[Self <: PickAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: PickAlgorithm](x: Self) {
     
-    @scala.inline
-    def setPickAlgorithm(value: (/* algo1 */ String, /* algo2 */ String) => String): Self = StObject.set(x, "pickAlgorithm", js.Any.fromFunction2(value))
+    inline def setPickAlgorithm(value: (/* algo1 */ String, /* algo2 */ String) => String): Self = StObject.set(x, "pickAlgorithm", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPickAlgorithmUndefined: Self = StObject.set(x, "pickAlgorithm", js.undefined)
+    inline def setPickAlgorithmUndefined: Self = StObject.set(x, "pickAlgorithm", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

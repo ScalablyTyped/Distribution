@@ -22,17 +22,14 @@ trait FilesQuery
 }
 object FilesQuery {
   
-  @scala.inline
-  def apply(): FilesQuery = {
+  inline def apply(): FilesQuery = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("files")
     __obj.asInstanceOf[FilesQuery]
   }
   
-  @scala.inline
-  implicit class FilesQueryMutableBuilder[Self <: FilesQuery] (val x: Self) extends AnyVal {
+  extension [Self <: FilesQuery](x: Self) {
     
-    @scala.inline
-    def setType(value: files): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: files): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

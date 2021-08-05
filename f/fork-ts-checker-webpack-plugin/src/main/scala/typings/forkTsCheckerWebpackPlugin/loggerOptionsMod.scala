@@ -18,32 +18,24 @@ object loggerOptionsMod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply(): LoggerOptions = {
+    inline def apply(): LoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptions](x: Self) {
       
-      @scala.inline
-      def setDevServer(value: Boolean): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
+      inline def setDevServer(value: Boolean): Self = StObject.set(x, "devServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevServerUndefined: Self = StObject.set(x, "devServer", js.undefined)
+      inline def setDevServerUndefined: Self = StObject.set(x, "devServer", js.undefined)
       
-      @scala.inline
-      def setInfrastructure(value: LoggerType | Logger): Self = StObject.set(x, "infrastructure", value.asInstanceOf[js.Any])
+      inline def setInfrastructure(value: LoggerType | Logger): Self = StObject.set(x, "infrastructure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfrastructureUndefined: Self = StObject.set(x, "infrastructure", js.undefined)
+      inline def setInfrastructureUndefined: Self = StObject.set(x, "infrastructure", js.undefined)
       
-      @scala.inline
-      def setIssues(value: LoggerType | Logger): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
+      inline def setIssues(value: LoggerType | Logger): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
+      inline def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     }
   }
 }

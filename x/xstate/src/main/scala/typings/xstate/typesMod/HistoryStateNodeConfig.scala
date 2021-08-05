@@ -18,22 +18,17 @@ trait HistoryStateNodeConfig[TContext, TEvent /* <: EventObject */]
 }
 object HistoryStateNodeConfig {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](history: shallow | deep | `true`, initial: Unit, onDone: Unit, states: Unit): HistoryStateNodeConfig[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](history: shallow | deep | `true`, initial: Unit, onDone: Unit, states: Unit): HistoryStateNodeConfig[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], onDone = onDone.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryStateNodeConfig[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class HistoryStateNodeConfigMutableBuilder[Self <: HistoryStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (HistoryStateNodeConfig[TContext, TEvent])) extends AnyVal {
+  extension [Self <: HistoryStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (HistoryStateNodeConfig[TContext, TEvent])) {
     
-    @scala.inline
-    def setHistory(value: shallow | deep | `true`): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: shallow | deep | `true`): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: StateValue): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: StateValue): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

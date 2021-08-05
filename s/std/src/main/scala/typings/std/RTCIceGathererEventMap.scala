@@ -12,19 +12,15 @@ trait RTCIceGathererEventMap extends StObject {
 }
 object RTCIceGathererEventMap {
   
-  @scala.inline
-  def apply(error: Event, localcandidate: RTCIceGathererEvent): RTCIceGathererEventMap = {
+  inline def apply(error: Event, localcandidate: RTCIceGathererEvent): RTCIceGathererEventMap = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], localcandidate = localcandidate.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCIceGathererEventMap]
   }
   
-  @scala.inline
-  implicit class RTCIceGathererEventMapMutableBuilder[Self <: RTCIceGathererEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: RTCIceGathererEventMap](x: Self) {
     
-    @scala.inline
-    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalcandidate(value: RTCIceGathererEvent): Self = StObject.set(x, "localcandidate", value.asInstanceOf[js.Any])
+    inline def setLocalcandidate(value: RTCIceGathererEvent): Self = StObject.set(x, "localcandidate", value.asInstanceOf[js.Any])
   }
 }

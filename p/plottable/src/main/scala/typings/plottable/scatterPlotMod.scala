@@ -42,11 +42,11 @@ object scatterPlotMod {
     
     /* protected */ def _entityVisibleOnPlot(entity: ILightweightScatterPlotEntity, bounds: Bounds): Boolean = js.native
     
-    var _labelConfig: js.Any = js.native
+    /* private */ var _labelConfig: js.Any = js.native
     
-    var _labelFormatter: js.Any = js.native
+    /* private */ var _labelFormatter: js.Any = js.native
     
-    var _labelsEnabled: js.Any = js.native
+    /* private */ var _labelsEnabled: js.Any = js.native
     
     /**
       * Get whether bar labels are enabled.
@@ -109,26 +109,22 @@ object scatterPlotMod {
     @JSImport("plottable/build/src/plots/scatterPlot", "Scatter._LABEL_AREA_CLASS")
     @js.native
     def _LABEL_AREA_CLASS: String = js.native
-    @scala.inline
-    def _LABEL_AREA_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LABEL_AREA_CLASS")(x.asInstanceOf[js.Any])
+    inline def _LABEL_AREA_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LABEL_AREA_CLASS")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/scatterPlot", "Scatter._LABEL_MARGIN_FROM_BUBBLE")
     @js.native
     def _LABEL_MARGIN_FROM_BUBBLE: Double = js.native
-    @scala.inline
-    def _LABEL_MARGIN_FROM_BUBBLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LABEL_MARGIN_FROM_BUBBLE")(x.asInstanceOf[js.Any])
+    inline def _LABEL_MARGIN_FROM_BUBBLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LABEL_MARGIN_FROM_BUBBLE")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/scatterPlot", "Scatter._SIZE_KEY")
     @js.native
     def _SIZE_KEY: js.Any = js.native
-    @scala.inline
-    def _SIZE_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SIZE_KEY")(x.asInstanceOf[js.Any])
+    inline def _SIZE_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SIZE_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/plots/scatterPlot", "Scatter._SYMBOL_KEY")
     @js.native
     def _SYMBOL_KEY: js.Any = js.native
-    @scala.inline
-    def _SYMBOL_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SYMBOL_KEY")(x.asInstanceOf[js.Any])
+    inline def _SYMBOL_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SYMBOL_KEY")(x.asInstanceOf[js.Any])
   }
   
   trait ILightweightScatterPlotEntity
@@ -139,8 +135,7 @@ object scatterPlotMod {
   }
   object ILightweightScatterPlotEntity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       component: Plot,
       dataset: Dataset,
       datasetIndex: Double,
@@ -155,11 +150,9 @@ object scatterPlotMod {
       __obj.asInstanceOf[ILightweightScatterPlotEntity]
     }
     
-    @scala.inline
-    implicit class ILightweightScatterPlotEntityMutableBuilder[Self <: ILightweightScatterPlotEntity] (val x: Self) extends AnyVal {
+    extension [Self <: ILightweightScatterPlotEntity](x: Self) {
       
-      @scala.inline
-      def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
+      inline def setDiameter(value: Double): Self = StObject.set(x, "diameter", value.asInstanceOf[js.Any])
     }
   }
 }

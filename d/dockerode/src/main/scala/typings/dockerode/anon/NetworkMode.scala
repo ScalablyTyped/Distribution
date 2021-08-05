@@ -10,16 +10,13 @@ trait NetworkMode extends StObject {
 }
 object NetworkMode {
   
-  @scala.inline
-  def apply(NetworkMode: String): NetworkMode = {
+  inline def apply(NetworkMode: String): NetworkMode = {
     val __obj = js.Dynamic.literal(NetworkMode = NetworkMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkMode]
   }
   
-  @scala.inline
-  implicit class NetworkModeMutableBuilder[Self <: NetworkMode] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkMode](x: Self) {
     
-    @scala.inline
-    def setNetworkMode(value: String): Self = StObject.set(x, "NetworkMode", value.asInstanceOf[js.Any])
+    inline def setNetworkMode(value: String): Self = StObject.set(x, "NetworkMode", value.asInstanceOf[js.Any])
   }
 }

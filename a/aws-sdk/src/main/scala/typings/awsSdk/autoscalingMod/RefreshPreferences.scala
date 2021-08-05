@@ -18,25 +18,19 @@ trait RefreshPreferences extends StObject {
 }
 object RefreshPreferences {
   
-  @scala.inline
-  def apply(): RefreshPreferences = {
+  inline def apply(): RefreshPreferences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshPreferences]
   }
   
-  @scala.inline
-  implicit class RefreshPreferencesMutableBuilder[Self <: RefreshPreferences] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshPreferences](x: Self) {
     
-    @scala.inline
-    def setInstanceWarmup(value: RefreshInstanceWarmup): Self = StObject.set(x, "InstanceWarmup", value.asInstanceOf[js.Any])
+    inline def setInstanceWarmup(value: RefreshInstanceWarmup): Self = StObject.set(x, "InstanceWarmup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceWarmupUndefined: Self = StObject.set(x, "InstanceWarmup", js.undefined)
+    inline def setInstanceWarmupUndefined: Self = StObject.set(x, "InstanceWarmup", js.undefined)
     
-    @scala.inline
-    def setMinHealthyPercentage(value: IntPercent): Self = StObject.set(x, "MinHealthyPercentage", value.asInstanceOf[js.Any])
+    inline def setMinHealthyPercentage(value: IntPercent): Self = StObject.set(x, "MinHealthyPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinHealthyPercentageUndefined: Self = StObject.set(x, "MinHealthyPercentage", js.undefined)
+    inline def setMinHealthyPercentageUndefined: Self = StObject.set(x, "MinHealthyPercentage", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait Word extends StObject {
 }
 object Word {
   
-  @scala.inline
-  def apply(translation: String, word: String): Word = {
+  inline def apply(translation: String, word: String): Word = {
     val __obj = js.Dynamic.literal(translation = translation.asInstanceOf[js.Any], word = word.asInstanceOf[js.Any])
     __obj.asInstanceOf[Word]
   }
   
-  @scala.inline
-  implicit class WordMutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
+  extension [Self <: Word](x: Self) {
     
-    @scala.inline
-    def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
+    inline def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
+    inline def setPart_of_speechUndefined: Self = StObject.set(x, "part_of_speech", js.undefined)
     
-    @scala.inline
-    def setTranslation(value: String): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+    inline def setTranslation(value: String): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+    inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
   }
 }

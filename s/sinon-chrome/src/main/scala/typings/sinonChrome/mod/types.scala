@@ -34,26 +34,20 @@ object types {
   }
   object StubbedChromeSetting {
     
-    @scala.inline
-    def apply(clear: SinonChromeStub, get: SinonChromeStub, onChange: Event, set: SinonChromeStub): StubbedChromeSetting = {
+    inline def apply(clear: SinonChromeStub, get: SinonChromeStub, onChange: Event, set: SinonChromeStub): StubbedChromeSetting = {
       val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], onChange = onChange.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
       __obj.asInstanceOf[StubbedChromeSetting]
     }
     
-    @scala.inline
-    implicit class StubbedChromeSettingMutableBuilder[Self <: StubbedChromeSetting] (val x: Self) extends AnyVal {
+    extension [Self <: StubbedChromeSetting](x: Self) {
       
-      @scala.inline
-      def setClear(value: SinonChromeStub): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: SinonChromeStub): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: SinonChromeStub): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: SinonChromeStub): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: Event): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      inline def setOnChange(value: Event): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: SinonChromeStub): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: SinonChromeStub): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     }
   }
 }

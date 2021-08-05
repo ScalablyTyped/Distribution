@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLIFrame")
 @js.native
-class HTMLIFrame protected ()
+/* private */ class HTMLIFrame ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLIFrame

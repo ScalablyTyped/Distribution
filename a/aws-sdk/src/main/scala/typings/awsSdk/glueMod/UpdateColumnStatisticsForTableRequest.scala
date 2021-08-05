@@ -28,31 +28,23 @@ trait UpdateColumnStatisticsForTableRequest extends StObject {
 }
 object UpdateColumnStatisticsForTableRequest {
   
-  @scala.inline
-  def apply(ColumnStatisticsList: UpdateColumnStatisticsList, DatabaseName: NameString, TableName: NameString): UpdateColumnStatisticsForTableRequest = {
+  inline def apply(ColumnStatisticsList: UpdateColumnStatisticsList, DatabaseName: NameString, TableName: NameString): UpdateColumnStatisticsForTableRequest = {
     val __obj = js.Dynamic.literal(ColumnStatisticsList = ColumnStatisticsList.asInstanceOf[js.Any], DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateColumnStatisticsForTableRequest]
   }
   
-  @scala.inline
-  implicit class UpdateColumnStatisticsForTableRequestMutableBuilder[Self <: UpdateColumnStatisticsForTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateColumnStatisticsForTableRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setColumnStatisticsList(value: UpdateColumnStatisticsList): Self = StObject.set(x, "ColumnStatisticsList", value.asInstanceOf[js.Any])
+    inline def setColumnStatisticsList(value: UpdateColumnStatisticsList): Self = StObject.set(x, "ColumnStatisticsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnStatisticsListVarargs(value: ColumnStatistics*): Self = StObject.set(x, "ColumnStatisticsList", js.Array(value :_*))
+    inline def setColumnStatisticsListVarargs(value: ColumnStatistics*): Self = StObject.set(x, "ColumnStatisticsList", js.Array(value :_*))
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

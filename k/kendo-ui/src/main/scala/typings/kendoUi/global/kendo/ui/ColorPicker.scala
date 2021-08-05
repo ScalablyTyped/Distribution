@@ -21,13 +21,11 @@ object ColorPicker {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ColorPicker = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ColorPicker]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.ColorPicker = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ColorPicker]
   
   /* static member */
   @JSGlobal("kendo.ui.ColorPicker.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.ColorPicker = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.ColorPicker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.ColorPicker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

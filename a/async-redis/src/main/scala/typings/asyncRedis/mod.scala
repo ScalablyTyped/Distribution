@@ -473,8 +473,7 @@ object mod extends Shortcut {
   }
   object Omitted {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BATCH: () => Multi,
       MULTI: () => Multi,
       addCommand: /* command */ String => Unit,
@@ -519,127 +518,87 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Omitted]
     }
     
-    @scala.inline
-    implicit class OmittedMutableBuilder[Self <: Omitted] (val x: Self) extends AnyVal {
+    extension [Self <: Omitted](x: Self) {
       
-      @scala.inline
-      def setAddCommand(value: /* command */ String => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
+      inline def setAddCommand(value: /* command */ String => Unit): Self = StObject.set(x, "addCommand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddListener(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAdd_command(value: /* command */ String => Unit): Self = StObject.set(x, "add_command", js.Any.fromFunction1(value))
+      inline def setAdd_command(value: /* command */ String => Unit): Self = StObject.set(x, "add_command", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBATCH(value: () => Multi): Self = StObject.set(x, "BATCH", js.Any.fromFunction0(value))
+      inline def setBATCH(value: () => Multi): Self = StObject.set(x, "BATCH", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCommand_queue(value: js.Array[js.Any]): Self = StObject.set(x, "command_queue", value.asInstanceOf[js.Any])
+      inline def setCommand_queue(value: js.Array[js.Any]): Self = StObject.set(x, "command_queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommand_queueVarargs(value: js.Any*): Self = StObject.set(x, "command_queue", js.Array(value :_*))
+      inline def setCommand_queueVarargs(value: js.Any*): Self = StObject.set(x, "command_queue", js.Array(value :_*))
       
-      @scala.inline
-      def setCommand_queue_length(value: Double): Self = StObject.set(x, "command_queue_length", value.asInstanceOf[js.Any])
+      inline def setCommand_queue_length(value: Double): Self = StObject.set(x, "command_queue_length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnection_id(value: Double): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
+      inline def setConnection_id(value: Double): Self = StObject.set(x, "connection_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstructor(value: () => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction0(value))
+      inline def setConstructor(value: () => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCork(value: () => Unit): Self = StObject.set(x, "cork", js.Any.fromFunction0(value))
+      inline def setCork(value: () => Unit): Self = StObject.set(x, "cork", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDuplicate(value: () => RedisClient): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
+      inline def setDuplicate(value: () => RedisClient): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmit(value: (/* event */ String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (/* event */ String, /* repeated */ js.Any) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEventNames(value: () => js.Array[String | js.Symbol]): Self = StObject.set(x, "eventNames", js.Any.fromFunction0(value))
+      inline def setEventNames(value: () => js.Array[String | js.Symbol]): Self = StObject.set(x, "eventNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxListeners(value: () => Double): Self = StObject.set(x, "getMaxListeners", js.Any.fromFunction0(value))
+      inline def setGetMaxListeners(value: () => Double): Self = StObject.set(x, "getMaxListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setListenerCount(value: /* event */ String => Double): Self = StObject.set(x, "listenerCount", js.Any.fromFunction1(value))
+      inline def setListenerCount(value: /* event */ String => Double): Self = StObject.set(x, "listenerCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListeners(value: /* event */ String => js.Array[js.Function]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+      inline def setListeners(value: /* event */ String => js.Array[js.Function]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMULTI(value: () => Multi): Self = StObject.set(x, "MULTI", js.Any.fromFunction0(value))
+      inline def setMULTI(value: () => Multi): Self = StObject.set(x, "MULTI", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOff(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOffline_queue(value: js.Array[js.Any]): Self = StObject.set(x, "offline_queue", value.asInstanceOf[js.Any])
+      inline def setOffline_queue(value: js.Array[js.Any]): Self = StObject.set(x, "offline_queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffline_queueVarargs(value: js.Any*): Self = StObject.set(x, "offline_queue", js.Array(value :_*))
+      inline def setOffline_queueVarargs(value: js.Any*): Self = StObject.set(x, "offline_queue", js.Array(value :_*))
       
-      @scala.inline
-      def setOffline_queue_length(value: Double): Self = StObject.set(x, "offline_queue_length", value.asInstanceOf[js.Any])
+      inline def setOffline_queue_length(value: Double): Self = StObject.set(x, "offline_queue_length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(
+      inline def setOn(
         value: (message, /* listener */ js.Function2[/* channel */ String, /* message */ String, Unit]) => Omitted
       ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnce(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependListener(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
+      inline def setPrependListener(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrependOnceListener(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
+      inline def setPrependOnceListener(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRawListeners(value: /* event */ String => js.Array[js.Function]): Self = StObject.set(x, "rawListeners", js.Any.fromFunction1(value))
+      inline def setRawListeners(value: /* event */ String => js.Array[js.Function]): Self = StObject.set(x, "rawListeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveAllListeners(value: () => Omitted): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
+      inline def setRemoveAllListeners(value: () => Omitted): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveListener(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (/* event */ String, /* listener */ js.Function1[/* repeated */ js.Any, Unit]) => Omitted): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRetry_backoff(value: Double): Self = StObject.set(x, "retry_backoff", value.asInstanceOf[js.Any])
+      inline def setRetry_backoff(value: Double): Self = StObject.set(x, "retry_backoff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry_delay(value: Double | Error): Self = StObject.set(x, "retry_delay", value.asInstanceOf[js.Any])
+      inline def setRetry_delay(value: Double | Error): Self = StObject.set(x, "retry_delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendCommand(value: /* command */ String => Boolean): Self = StObject.set(x, "sendCommand", js.Any.fromFunction1(value))
+      inline def setSendCommand(value: /* command */ String => Boolean): Self = StObject.set(x, "sendCommand", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSend_command(value: /* command */ String => Boolean): Self = StObject.set(x, "send_command", js.Any.fromFunction1(value))
+      inline def setSend_command(value: /* command */ String => Boolean): Self = StObject.set(x, "send_command", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setServer_info(value: ServerInfo): Self = StObject.set(x, "server_info", value.asInstanceOf[js.Any])
+      inline def setServer_info(value: ServerInfo): Self = StObject.set(x, "server_info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetMaxListeners(value: /* n */ Double => Omitted): Self = StObject.set(x, "setMaxListeners", js.Any.fromFunction1(value))
+      inline def setSetMaxListeners(value: /* n */ Double => Omitted): Self = StObject.set(x, "setMaxListeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStream(value: Duplex): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Duplex): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncork(value: () => Unit): Self = StObject.set(x, "uncork", js.Any.fromFunction0(value))
+      inline def setUncork(value: () => Unit): Self = StObject.set(x, "uncork", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
+      inline def setUnref(value: () => Unit): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
     }
   }
   

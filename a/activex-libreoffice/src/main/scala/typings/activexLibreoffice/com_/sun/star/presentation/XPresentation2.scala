@@ -34,8 +34,7 @@ trait XPresentation2
 }
 object XPresentation2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Controller: XSlideShowController,
     PropertySetInfo: XPropertySetInfo,
     acquire: () => Unit,
@@ -59,19 +58,14 @@ object XPresentation2 {
     __obj.asInstanceOf[XPresentation2]
   }
   
-  @scala.inline
-  implicit class XPresentation2MutableBuilder[Self <: XPresentation2] (val x: Self) extends AnyVal {
+  extension [Self <: XPresentation2](x: Self) {
     
-    @scala.inline
-    def setController(value: XSlideShowController): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
+    inline def setController(value: XSlideShowController): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetController(value: () => XSlideShowController): Self = StObject.set(x, "getController", js.Any.fromFunction0(value))
+    inline def setGetController(value: () => XSlideShowController): Self = StObject.set(x, "getController", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRunning(value: () => Boolean): Self = StObject.set(x, "isRunning", js.Any.fromFunction0(value))
+    inline def setIsRunning(value: () => Boolean): Self = StObject.set(x, "isRunning", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartWithArguments(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "startWithArguments", js.Any.fromFunction1(value))
+    inline def setStartWithArguments(value: SeqEquiv[PropertyValue] => Unit): Self = StObject.set(x, "startWithArguments", js.Any.fromFunction1(value))
   }
 }

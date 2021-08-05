@@ -26,8 +26,7 @@ trait MultiScriptFile
 }
 object MultiScriptFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     addToMultiFile: File => MultiFile,
     baseURL: String,
@@ -50,10 +49,8 @@ object MultiScriptFile {
     __obj.asInstanceOf[MultiScriptFile]
   }
   
-  @scala.inline
-  implicit class MultiScriptFileMutableBuilder[Self <: MultiScriptFile] (val x: Self) extends AnyVal {
+  extension [Self <: MultiScriptFile](x: Self) {
     
-    @scala.inline
-    def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
+    inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }
 }

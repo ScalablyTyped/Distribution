@@ -40,41 +40,30 @@ trait OrgsListMembersEndpoint extends StObject {
 }
 object OrgsListMembersEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): OrgsListMembersEndpoint = {
+  inline def apply(org_ : String): OrgsListMembersEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsListMembersEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsListMembersEndpointMutableBuilder[Self <: OrgsListMembersEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsListMembersEndpoint](x: Self) {
     
-    @scala.inline
-    def setFilter(value: `2fa_disabled` | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: `2fa_disabled` | all): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    @scala.inline
-    def setRole(value: all | admin | member): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: all | admin | member): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

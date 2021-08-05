@@ -18,8 +18,7 @@ trait BootstrapButtonEventMap
 }
 object BootstrapButtonEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkedChanged: ProcessingModeEventArgs,
     click: ButtonClickEventArgs,
     gotFocus: EventArgs,
@@ -30,19 +29,14 @@ object BootstrapButtonEventMap {
     __obj.asInstanceOf[BootstrapButtonEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapButtonEventMapMutableBuilder[Self <: BootstrapButtonEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapButtonEventMap](x: Self) {
     
-    @scala.inline
-    def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
+    inline def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick(value: ButtonClickEventArgs): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: ButtonClickEventArgs): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGotFocus(value: EventArgs): Self = StObject.set(x, "gotFocus", value.asInstanceOf[js.Any])
+    inline def setGotFocus(value: EventArgs): Self = StObject.set(x, "gotFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLostFocus(value: EventArgs): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
+    inline def setLostFocus(value: EventArgs): Self = StObject.set(x, "lostFocus", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait UpdateTopicRuleDestinationRequest extends StObject {
 }
 object UpdateTopicRuleDestinationRequest {
   
-  @scala.inline
-  def apply(arn: AwsArn, status: TopicRuleDestinationStatus): UpdateTopicRuleDestinationRequest = {
+  inline def apply(arn: AwsArn, status: TopicRuleDestinationStatus): UpdateTopicRuleDestinationRequest = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTopicRuleDestinationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTopicRuleDestinationRequestMutableBuilder[Self <: UpdateTopicRuleDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTopicRuleDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: TopicRuleDestinationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TopicRuleDestinationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

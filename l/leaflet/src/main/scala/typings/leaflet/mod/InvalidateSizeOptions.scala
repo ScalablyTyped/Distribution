@@ -14,25 +14,19 @@ trait InvalidateSizeOptions
 }
 object InvalidateSizeOptions {
   
-  @scala.inline
-  def apply(): InvalidateSizeOptions = {
+  inline def apply(): InvalidateSizeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InvalidateSizeOptions]
   }
   
-  @scala.inline
-  implicit class InvalidateSizeOptionsMutableBuilder[Self <: InvalidateSizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidateSizeOptions](x: Self) {
     
-    @scala.inline
-    def setDebounceMoveend(value: Boolean): Self = StObject.set(x, "debounceMoveend", value.asInstanceOf[js.Any])
+    inline def setDebounceMoveend(value: Boolean): Self = StObject.set(x, "debounceMoveend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebounceMoveendUndefined: Self = StObject.set(x, "debounceMoveend", js.undefined)
+    inline def setDebounceMoveendUndefined: Self = StObject.set(x, "debounceMoveend", js.undefined)
     
-    @scala.inline
-    def setPan(value: Boolean): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    inline def setPan(value: Boolean): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait BufferingHints extends StObject {
 }
 object BufferingHints {
   
-  @scala.inline
-  def apply(): BufferingHints = {
+  inline def apply(): BufferingHints = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BufferingHints]
   }
   
-  @scala.inline
-  implicit class BufferingHintsMutableBuilder[Self <: BufferingHints] (val x: Self) extends AnyVal {
+  extension [Self <: BufferingHints](x: Self) {
     
-    @scala.inline
-    def setIntervalInSeconds(value: IntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
+    inline def setIntervalInSeconds(value: IntervalInSeconds): Self = StObject.set(x, "IntervalInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalInSecondsUndefined: Self = StObject.set(x, "IntervalInSeconds", js.undefined)
+    inline def setIntervalInSecondsUndefined: Self = StObject.set(x, "IntervalInSeconds", js.undefined)
     
-    @scala.inline
-    def setSizeInMBs(value: SizeInMBs): Self = StObject.set(x, "SizeInMBs", value.asInstanceOf[js.Any])
+    inline def setSizeInMBs(value: SizeInMBs): Self = StObject.set(x, "SizeInMBs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInMBsUndefined: Self = StObject.set(x, "SizeInMBs", js.undefined)
+    inline def setSizeInMBsUndefined: Self = StObject.set(x, "SizeInMBs", js.undefined)
   }
 }

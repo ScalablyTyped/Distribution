@@ -15,73 +15,72 @@ object portDiscoveryMod {
        with PortDiscovery {
     def this(config: PortDiscoveryConfig, environment: Environment) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var cleanup: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var createDiscoveryNamedPipe: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var createManifest: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var environment: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var listenDiscoveryMessage: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var manifestLocation: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var namedPipeName: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var namedPipeServer: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var pipeConnection: js.Any = js.native
     
     /* CompleteClass */
     override def retrievePort(): js.Promise[Double] = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var savedConfig: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var timeoutTimer: js.Any = js.native
   }
   
   trait PortDiscovery extends StObject {
     
-    var cleanup: js.Any
+    /* private */ var cleanup: js.Any
     
-    var createDiscoveryNamedPipe: js.Any
+    /* private */ var createDiscoveryNamedPipe: js.Any
     
-    var createManifest: js.Any
+    /* private */ var createManifest: js.Any
     
-    var environment: js.Any
+    /* private */ var environment: js.Any
     
-    var listenDiscoveryMessage: js.Any
+    /* private */ var listenDiscoveryMessage: js.Any
     
-    var manifestLocation: js.Any
+    /* private */ var manifestLocation: js.Any
     
-    var namedPipeName: js.Any
+    /* private */ var namedPipeName: js.Any
     
-    var namedPipeServer: js.Any
+    /* private */ var namedPipeServer: js.Any
     
-    var pipeConnection: js.Any
+    /* private */ var pipeConnection: js.Any
     
     def retrievePort(): js.Promise[Double]
     
-    var savedConfig: js.Any
+    /* private */ var savedConfig: js.Any
     
-    var timeoutTimer: js.Any
+    /* private */ var timeoutTimer: js.Any
   }
   object PortDiscovery {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cleanup: js.Any,
       createDiscoveryNamedPipe: js.Any,
       createManifest: js.Any,
@@ -99,44 +98,31 @@ object portDiscoveryMod {
       __obj.asInstanceOf[PortDiscovery]
     }
     
-    @scala.inline
-    implicit class PortDiscoveryMutableBuilder[Self <: PortDiscovery] (val x: Self) extends AnyVal {
+    extension [Self <: PortDiscovery](x: Self) {
       
-      @scala.inline
-      def setCleanup(value: js.Any): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
+      inline def setCleanup(value: js.Any): Self = StObject.set(x, "cleanup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDiscoveryNamedPipe(value: js.Any): Self = StObject.set(x, "createDiscoveryNamedPipe", value.asInstanceOf[js.Any])
+      inline def setCreateDiscoveryNamedPipe(value: js.Any): Self = StObject.set(x, "createDiscoveryNamedPipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateManifest(value: js.Any): Self = StObject.set(x, "createManifest", value.asInstanceOf[js.Any])
+      inline def setCreateManifest(value: js.Any): Self = StObject.set(x, "createManifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: js.Any): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: js.Any): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenDiscoveryMessage(value: js.Any): Self = StObject.set(x, "listenDiscoveryMessage", value.asInstanceOf[js.Any])
+      inline def setListenDiscoveryMessage(value: js.Any): Self = StObject.set(x, "listenDiscoveryMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestLocation(value: js.Any): Self = StObject.set(x, "manifestLocation", value.asInstanceOf[js.Any])
+      inline def setManifestLocation(value: js.Any): Self = StObject.set(x, "manifestLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedPipeName(value: js.Any): Self = StObject.set(x, "namedPipeName", value.asInstanceOf[js.Any])
+      inline def setNamedPipeName(value: js.Any): Self = StObject.set(x, "namedPipeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedPipeServer(value: js.Any): Self = StObject.set(x, "namedPipeServer", value.asInstanceOf[js.Any])
+      inline def setNamedPipeServer(value: js.Any): Self = StObject.set(x, "namedPipeServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipeConnection(value: js.Any): Self = StObject.set(x, "pipeConnection", value.asInstanceOf[js.Any])
+      inline def setPipeConnection(value: js.Any): Self = StObject.set(x, "pipeConnection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetrievePort(value: () => js.Promise[Double]): Self = StObject.set(x, "retrievePort", js.Any.fromFunction0(value))
+      inline def setRetrievePort(value: () => js.Promise[Double]): Self = StObject.set(x, "retrievePort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSavedConfig(value: js.Any): Self = StObject.set(x, "savedConfig", value.asInstanceOf[js.Any])
+      inline def setSavedConfig(value: js.Any): Self = StObject.set(x, "savedConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutTimer(value: js.Any): Self = StObject.set(x, "timeoutTimer", value.asInstanceOf[js.Any])
+      inline def setTimeoutTimer(value: js.Any): Self = StObject.set(x, "timeoutTimer", value.asInstanceOf[js.Any])
     }
   }
 }

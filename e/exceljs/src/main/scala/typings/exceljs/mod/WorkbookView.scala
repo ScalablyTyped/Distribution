@@ -22,8 +22,7 @@ trait WorkbookView extends StObject {
 }
 object WorkbookView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeTab: Double,
     firstSheet: Double,
     height: Double,
@@ -36,28 +35,20 @@ object WorkbookView {
     __obj.asInstanceOf[WorkbookView]
   }
   
-  @scala.inline
-  implicit class WorkbookViewMutableBuilder[Self <: WorkbookView] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookView](x: Self) {
     
-    @scala.inline
-    def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
+    inline def setActiveTab(value: Double): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstSheet(value: Double): Self = StObject.set(x, "firstSheet", value.asInstanceOf[js.Any])
+    inline def setFirstSheet(value: Double): Self = StObject.set(x, "firstSheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

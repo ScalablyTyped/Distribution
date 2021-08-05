@@ -14,27 +14,22 @@ trait MarginXProps[TLength] extends StObject {
 }
 object MarginXProps {
   
-  @scala.inline
-  def apply[TLength](): MarginXProps[TLength] = {
+  inline def apply[TLength](): MarginXProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MarginXProps[TLength]]
   }
   
-  @scala.inline
-  implicit class MarginXPropsMutableBuilder[Self <: MarginXProps[?], TLength] (val x: Self & MarginXProps[TLength]) extends AnyVal {
+  extension [Self <: MarginXProps[?], TLength](x: Self & MarginXProps[TLength]) {
     
-    @scala.inline
-    def setMx(
+    inline def setMx(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
+    inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
     
-    @scala.inline
-    def setMxVarargs(
+    inline def setMxVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.MarginLeft<TLength> */ js.Any)*
     ): Self = StObject.set(x, "mx", js.Array(value :_*))
   }

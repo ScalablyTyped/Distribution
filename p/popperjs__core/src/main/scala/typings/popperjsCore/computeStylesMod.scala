@@ -18,8 +18,7 @@ object computeStylesMod {
   @js.native
   val default: Modifier[computeStyles, Options] = js.native
   
-  @scala.inline
-  def mapToStyles(hasPopperPopperRectPlacementOffsetsPositionGpuAccelerationAdaptive: Adaptive): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("mapToStyles")(hasPopperPopperRectPlacementOffsetsPositionGpuAccelerationAdaptive.asInstanceOf[js.Any]).asInstanceOf[Bottom]
+  inline def mapToStyles(hasPopperPopperRectPlacementOffsetsPositionGpuAccelerationAdaptive: Adaptive): Bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("mapToStyles")(hasPopperPopperRectPlacementOffsetsPositionGpuAccelerationAdaptive.asInstanceOf[js.Any]).asInstanceOf[Bottom]
   
   type ComputeStylesModifier = Modifier[computeStyles, Options]
   
@@ -31,20 +30,16 @@ object computeStylesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(adaptive: Boolean, gpuAcceleration: Boolean): Options = {
+    inline def apply(adaptive: Boolean, gpuAcceleration: Boolean): Options = {
       val __obj = js.Dynamic.literal(adaptive = adaptive.asInstanceOf[js.Any], gpuAcceleration = gpuAcceleration.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAdaptive(value: Boolean): Self = StObject.set(x, "adaptive", value.asInstanceOf[js.Any])
+      inline def setAdaptive(value: Boolean): Self = StObject.set(x, "adaptive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
+      inline def setGpuAcceleration(value: Boolean): Self = StObject.set(x, "gpuAcceleration", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,7 +18,7 @@ trait OutlookBarGroups extends StObject {
   
   def Item(Index: js.Any): OutlookBarGroup = js.native
   
-  @JSName("Outlook.OutlookBarGroups_typekey")
+  /* private */ @JSName("Outlook.OutlookBarGroups_typekey")
   var OutlookDotOutlookBarGroups_typekey: OutlookBarGroups = js.native
   
   val Parent: js.Any = js.native

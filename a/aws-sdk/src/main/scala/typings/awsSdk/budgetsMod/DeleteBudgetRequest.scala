@@ -18,19 +18,15 @@ trait DeleteBudgetRequest extends StObject {
 }
 object DeleteBudgetRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, BudgetName: BudgetName): DeleteBudgetRequest = {
+  inline def apply(AccountId: AccountId, BudgetName: BudgetName): DeleteBudgetRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], BudgetName = BudgetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBudgetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBudgetRequestMutableBuilder[Self <: DeleteBudgetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBudgetRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
   }
 }

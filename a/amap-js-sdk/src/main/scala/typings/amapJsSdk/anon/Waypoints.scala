@@ -11,19 +11,15 @@ trait Waypoints extends StObject {
 }
 object Waypoints {
   
-  @scala.inline
-  def apply(waypoints: js.Array[LngLat]): Waypoints = {
+  inline def apply(waypoints: js.Array[LngLat]): Waypoints = {
     val __obj = js.Dynamic.literal(waypoints = waypoints.asInstanceOf[js.Any])
     __obj.asInstanceOf[Waypoints]
   }
   
-  @scala.inline
-  implicit class WaypointsMutableBuilder[Self <: Waypoints] (val x: Self) extends AnyVal {
+  extension [Self <: Waypoints](x: Self) {
     
-    @scala.inline
-    def setWaypoints(value: js.Array[LngLat]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+    inline def setWaypoints(value: js.Array[LngLat]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaypointsVarargs(value: LngLat*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
+    inline def setWaypointsVarargs(value: LngLat*): Self = StObject.set(x, "waypoints", js.Array(value :_*))
   }
 }

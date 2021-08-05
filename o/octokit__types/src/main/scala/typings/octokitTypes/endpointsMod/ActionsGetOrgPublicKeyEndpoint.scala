@@ -11,17 +11,14 @@ trait ActionsGetOrgPublicKeyEndpoint extends StObject {
 }
 object ActionsGetOrgPublicKeyEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): ActionsGetOrgPublicKeyEndpoint = {
+  inline def apply(org_ : String): ActionsGetOrgPublicKeyEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsGetOrgPublicKeyEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsGetOrgPublicKeyEndpointMutableBuilder[Self <: ActionsGetOrgPublicKeyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsGetOrgPublicKeyEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

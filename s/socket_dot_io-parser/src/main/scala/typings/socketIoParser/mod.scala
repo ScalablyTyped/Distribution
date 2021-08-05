@@ -71,24 +71,19 @@ object mod {
   }
   object Packet {
     
-    @scala.inline
-    def apply(data: js.Any, id: Double, `type`: Double): Packet = {
+    inline def apply(data: js.Any, id: Double, `type`: Double): Packet = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Packet]
     }
     
-    @scala.inline
-    implicit class PacketMutableBuilder[Self <: Packet] (val x: Self) extends AnyVal {
+    extension [Self <: Packet](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

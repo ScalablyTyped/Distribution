@@ -13,16 +13,13 @@ trait DeprecateFlowTemplateRequest extends StObject {
 }
 object DeprecateFlowTemplateRequest {
   
-  @scala.inline
-  def apply(id: Urn): DeprecateFlowTemplateRequest = {
+  inline def apply(id: Urn): DeprecateFlowTemplateRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecateFlowTemplateRequest]
   }
   
-  @scala.inline
-  implicit class DeprecateFlowTemplateRequestMutableBuilder[Self <: DeprecateFlowTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeprecateFlowTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

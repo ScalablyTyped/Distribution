@@ -18,28 +18,21 @@ trait ListProxySessionsResponse extends StObject {
 }
 object ListProxySessionsResponse {
   
-  @scala.inline
-  def apply(): ListProxySessionsResponse = {
+  inline def apply(): ListProxySessionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProxySessionsResponse]
   }
   
-  @scala.inline
-  implicit class ListProxySessionsResponseMutableBuilder[Self <: ListProxySessionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProxySessionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProxySessions(value: ProxySessions): Self = StObject.set(x, "ProxySessions", value.asInstanceOf[js.Any])
+    inline def setProxySessions(value: ProxySessions): Self = StObject.set(x, "ProxySessions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxySessionsUndefined: Self = StObject.set(x, "ProxySessions", js.undefined)
+    inline def setProxySessionsUndefined: Self = StObject.set(x, "ProxySessions", js.undefined)
     
-    @scala.inline
-    def setProxySessionsVarargs(value: ProxySession*): Self = StObject.set(x, "ProxySessions", js.Array(value :_*))
+    inline def setProxySessionsVarargs(value: ProxySession*): Self = StObject.set(x, "ProxySessions", js.Array(value :_*))
   }
 }

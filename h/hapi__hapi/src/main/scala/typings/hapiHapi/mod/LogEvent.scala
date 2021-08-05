@@ -28,8 +28,7 @@ trait LogEvent extends StObject {
 }
 object LogEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: internal | app,
     data: js.Object,
     error: js.Object,
@@ -41,28 +40,20 @@ object LogEvent {
     __obj.asInstanceOf[LogEvent]
   }
   
-  @scala.inline
-  implicit class LogEventMutableBuilder[Self <: LogEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LogEvent](x: Self) {
     
-    @scala.inline
-    def setChannel(value: internal | app): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: internal | app): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

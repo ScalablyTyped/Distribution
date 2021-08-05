@@ -12,16 +12,13 @@ trait PluginAddAttributesToSVGElement
 }
 object PluginAddAttributesToSVGElement {
   
-  @scala.inline
-  def apply(addAttributesToSVGElement: Boolean | js.Object): PluginAddAttributesToSVGElement = {
+  inline def apply(addAttributesToSVGElement: Boolean | js.Object): PluginAddAttributesToSVGElement = {
     val __obj = js.Dynamic.literal(addAttributesToSVGElement = addAttributesToSVGElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginAddAttributesToSVGElement]
   }
   
-  @scala.inline
-  implicit class PluginAddAttributesToSVGElementMutableBuilder[Self <: PluginAddAttributesToSVGElement] (val x: Self) extends AnyVal {
+  extension [Self <: PluginAddAttributesToSVGElement](x: Self) {
     
-    @scala.inline
-    def setAddAttributesToSVGElement(value: Boolean | js.Object): Self = StObject.set(x, "addAttributesToSVGElement", value.asInstanceOf[js.Any])
+    inline def setAddAttributesToSVGElement(value: Boolean | js.Object): Self = StObject.set(x, "addAttributesToSVGElement", value.asInstanceOf[js.Any])
   }
 }

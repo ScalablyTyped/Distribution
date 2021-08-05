@@ -10,16 +10,13 @@ trait SoftmaxAttrs extends StObject {
 }
 object SoftmaxAttrs {
   
-  @scala.inline
-  def apply(dim: Double): SoftmaxAttrs = {
+  inline def apply(dim: Double): SoftmaxAttrs = {
     val __obj = js.Dynamic.literal(dim = dim.asInstanceOf[js.Any])
     __obj.asInstanceOf[SoftmaxAttrs]
   }
   
-  @scala.inline
-  implicit class SoftmaxAttrsMutableBuilder[Self <: SoftmaxAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: SoftmaxAttrs](x: Self) {
     
-    @scala.inline
-    def setDim(value: Double): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
+    inline def setDim(value: Double): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
   }
 }

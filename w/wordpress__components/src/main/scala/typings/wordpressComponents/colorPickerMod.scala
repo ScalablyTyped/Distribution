@@ -49,8 +49,7 @@ object colorPickerMod {
     }
     object OnChangeCompleteValue {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         color: Instance,
         draftHex: String,
         draftHsl: String,
@@ -65,41 +64,29 @@ object colorPickerMod {
         __obj.asInstanceOf[OnChangeCompleteValue]
       }
       
-      @scala.inline
-      implicit class OnChangeCompleteValueMutableBuilder[Self <: OnChangeCompleteValue] (val x: Self) extends AnyVal {
+      extension [Self <: OnChangeCompleteValue](x: Self) {
         
-        @scala.inline
-        def setColor(value: Instance): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: Instance): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDraftHex(value: String): Self = StObject.set(x, "draftHex", value.asInstanceOf[js.Any])
+        inline def setDraftHex(value: String): Self = StObject.set(x, "draftHex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDraftHsl(value: String): Self = StObject.set(x, "draftHsl", value.asInstanceOf[js.Any])
+        inline def setDraftHsl(value: String): Self = StObject.set(x, "draftHsl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDraftRgb(value: String): Self = StObject.set(x, "draftRgb", value.asInstanceOf[js.Any])
+        inline def setDraftRgb(value: String): Self = StObject.set(x, "draftRgb", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+        inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHsl(value: String): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
+        inline def setHsl(value: String): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHsv(value: String): Self = StObject.set(x, "hsv", value.asInstanceOf[js.Any])
+        inline def setHsv(value: String): Self = StObject.set(x, "hsv", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOldHue(value: String): Self = StObject.set(x, "oldHue", value.asInstanceOf[js.Any])
+        inline def setOldHue(value: String): Self = StObject.set(x, "oldHue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRgb(value: String): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
+        inline def setRgb(value: String): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSource(value: rgb): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: rgb): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+        inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       }
     }
     
@@ -132,35 +119,26 @@ object colorPickerMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(onChangeComplete: OnChangeCompleteValue => Unit): Props = {
+      inline def apply(onChangeComplete: OnChangeCompleteValue => Unit): Props = {
         val __obj = js.Dynamic.literal(onChangeComplete = js.Any.fromFunction1(onChangeComplete))
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+        inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
         
-        @scala.inline
-        def setDisableAlpha(value: Boolean): Self = StObject.set(x, "disableAlpha", value.asInstanceOf[js.Any])
+        inline def setDisableAlpha(value: Boolean): Self = StObject.set(x, "disableAlpha", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableAlphaUndefined: Self = StObject.set(x, "disableAlpha", js.undefined)
+        inline def setDisableAlphaUndefined: Self = StObject.set(x, "disableAlpha", js.undefined)
         
-        @scala.inline
-        def setOldHue(value: Double): Self = StObject.set(x, "oldHue", value.asInstanceOf[js.Any])
+        inline def setOldHue(value: Double): Self = StObject.set(x, "oldHue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOldHueUndefined: Self = StObject.set(x, "oldHue", js.undefined)
+        inline def setOldHueUndefined: Self = StObject.set(x, "oldHue", js.undefined)
         
-        @scala.inline
-        def setOnChangeComplete(value: OnChangeCompleteValue => Unit): Self = StObject.set(x, "onChangeComplete", js.Any.fromFunction1(value))
+        inline def setOnChangeComplete(value: OnChangeCompleteValue => Unit): Self = StObject.set(x, "onChangeComplete", js.Any.fromFunction1(value))
       }
     }
   }

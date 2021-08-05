@@ -11,10 +11,8 @@ object concatMod {
   /**
     * Concat stream of strings into single string, then call `cb`.
     */
-  @scala.inline
-  def apply(): Sink[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Sink[String]]
-  @scala.inline
-  def apply(cb: js.Function2[/* err */ EndOrError, /* result */ String, js.Any]): Sink[String] = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Sink[String]]
+  inline def apply(): Sink[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Sink[String]]
+  inline def apply(cb: js.Function2[/* err */ EndOrError, /* result */ String, js.Any]): Sink[String] = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Sink[String]]
   
   @JSImport("pull-stream/sinks/concat", JSImport.Namespace)
   @js.native

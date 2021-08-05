@@ -16,20 +16,16 @@ object anon {
   }
   object Constant {
     
-    @scala.inline
-    def apply(result: js.Any): Constant = {
+    inline def apply(result: js.Any): Constant = {
       val __obj = js.Dynamic.literal(constant = true, result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Constant]
     }
     
-    @scala.inline
-    implicit class ConstantMutableBuilder[Self <: Constant] (val x: Self) extends AnyVal {
+    extension [Self <: Constant](x: Self) {
       
-      @scala.inline
-      def setConstant(value: `true`): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
+      inline def setConstant(value: `true`): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,23 +37,18 @@ object anon {
   }
   object Result {
     
-    @scala.inline
-    def apply(): Result = {
+    inline def apply(): Result = {
       val __obj = js.Dynamic.literal(constant = false)
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setConstant(value: `false`): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
+      inline def setConstant(value: `false`): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: Unit): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: Unit): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
   }
 }

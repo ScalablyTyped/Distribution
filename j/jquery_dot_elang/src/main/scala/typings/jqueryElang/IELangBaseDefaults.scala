@@ -37,8 +37,7 @@ trait IELangBaseDefaults extends StObject {
 }
 object IELangBaseDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentCSS: String,
     contentInnerCSS: String,
     contentInnerHtml: String,
@@ -58,49 +57,34 @@ object IELangBaseDefaults {
     __obj.asInstanceOf[IELangBaseDefaults]
   }
   
-  @scala.inline
-  implicit class IELangBaseDefaultsMutableBuilder[Self <: IELangBaseDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: IELangBaseDefaults](x: Self) {
     
-    @scala.inline
-    def setContentCSS(value: String): Self = StObject.set(x, "contentCSS", value.asInstanceOf[js.Any])
+    inline def setContentCSS(value: String): Self = StObject.set(x, "contentCSS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentInnerCSS(value: String): Self = StObject.set(x, "contentInnerCSS", value.asInstanceOf[js.Any])
+    inline def setContentInnerCSS(value: String): Self = StObject.set(x, "contentInnerCSS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentInnerHtml(value: String): Self = StObject.set(x, "contentInnerHtml", value.asInstanceOf[js.Any])
+    inline def setContentInnerHtml(value: String): Self = StObject.set(x, "contentInnerHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFluidRowHtml(value: String): Self = StObject.set(x, "fluidRowHtml", value.asInstanceOf[js.Any])
+    inline def setFluidRowHtml(value: String): Self = StObject.set(x, "fluidRowHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadLabel(value: String): Self = StObject.set(x, "headLabel", value.asInstanceOf[js.Any])
+    inline def setHeadLabel(value: String): Self = StObject.set(x, "headLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadLabelHtml(value: String): Self = StObject.set(x, "headLabelHtml", value.asInstanceOf[js.Any])
+    inline def setHeadLabelHtml(value: String): Self = StObject.set(x, "headLabelHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioButtonHtml(value: String): Self = StObject.set(x, "radioButtonHtml", value.asInstanceOf[js.Any])
+    inline def setRadioButtonHtml(value: String): Self = StObject.set(x, "radioButtonHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadioGroupHtml(value: String): Self = StObject.set(x, "radioGroupHtml", value.asInstanceOf[js.Any])
+    inline def setRadioGroupHtml(value: String): Self = StObject.set(x, "radioGroupHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultCSS(value: String): Self = StObject.set(x, "resultCSS", value.asInstanceOf[js.Any])
+    inline def setResultCSS(value: String): Self = StObject.set(x, "resultCSS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultHeadCSS(value: String): Self = StObject.set(x, "resultHeadCSS", value.asInstanceOf[js.Any])
+    inline def setResultHeadCSS(value: String): Self = StObject.set(x, "resultHeadCSS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultHeadLabel(value: String): Self = StObject.set(x, "resultHeadLabel", value.asInstanceOf[js.Any])
+    inline def setResultHeadLabel(value: String): Self = StObject.set(x, "resultHeadLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultHeadLabelHtml(value: String): Self = StObject.set(x, "resultHeadLabelHtml", value.asInstanceOf[js.Any])
+    inline def setResultHeadLabelHtml(value: String): Self = StObject.set(x, "resultHeadLabelHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultHtml(value: String): Self = StObject.set(x, "resultHtml", value.asInstanceOf[js.Any])
+    inline def setResultHtml(value: String): Self = StObject.set(x, "resultHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitButtonHtml(value: String): Self = StObject.set(x, "submitButtonHtml", value.asInstanceOf[js.Any])
+    inline def setSubmitButtonHtml(value: String): Self = StObject.set(x, "submitButtonHtml", value.asInstanceOf[js.Any])
   }
 }

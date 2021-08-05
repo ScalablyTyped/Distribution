@@ -27,40 +27,29 @@ trait Connection extends StObject {
 }
 object Connection {
   
-  @scala.inline
-  def apply(): Connection = {
+  inline def apply(): Connection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setPeering(value: String): Self = StObject.set(x, "peering", value.asInstanceOf[js.Any])
+    inline def setPeering(value: String): Self = StObject.set(x, "peering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeeringUndefined: Self = StObject.set(x, "peering", js.undefined)
+    inline def setPeeringUndefined: Self = StObject.set(x, "peering", js.undefined)
     
-    @scala.inline
-    def setReservedPeeringRanges(value: js.Array[String]): Self = StObject.set(x, "reservedPeeringRanges", value.asInstanceOf[js.Any])
+    inline def setReservedPeeringRanges(value: js.Array[String]): Self = StObject.set(x, "reservedPeeringRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedPeeringRangesUndefined: Self = StObject.set(x, "reservedPeeringRanges", js.undefined)
+    inline def setReservedPeeringRangesUndefined: Self = StObject.set(x, "reservedPeeringRanges", js.undefined)
     
-    @scala.inline
-    def setReservedPeeringRangesVarargs(value: String*): Self = StObject.set(x, "reservedPeeringRanges", js.Array(value :_*))
+    inline def setReservedPeeringRangesVarargs(value: String*): Self = StObject.set(x, "reservedPeeringRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

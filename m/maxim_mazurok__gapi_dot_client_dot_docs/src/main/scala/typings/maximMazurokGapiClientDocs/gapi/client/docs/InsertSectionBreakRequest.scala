@@ -24,31 +24,23 @@ trait InsertSectionBreakRequest extends StObject {
 }
 object InsertSectionBreakRequest {
   
-  @scala.inline
-  def apply(): InsertSectionBreakRequest = {
+  inline def apply(): InsertSectionBreakRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertSectionBreakRequest]
   }
   
-  @scala.inline
-  implicit class InsertSectionBreakRequestMutableBuilder[Self <: InsertSectionBreakRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InsertSectionBreakRequest](x: Self) {
     
-    @scala.inline
-    def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
+    inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
+    inline def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
+    inline def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
+    inline def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
   }
 }

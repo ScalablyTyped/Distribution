@@ -19,19 +19,15 @@ trait NamedSheetViewData extends StObject {
 }
 object NamedSheetViewData {
   
-  @scala.inline
-  def apply(): NamedSheetViewData = {
+  inline def apply(): NamedSheetViewData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedSheetViewData]
   }
   
-  @scala.inline
-  implicit class NamedSheetViewDataMutableBuilder[Self <: NamedSheetViewData] (val x: Self) extends AnyVal {
+  extension [Self <: NamedSheetViewData](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

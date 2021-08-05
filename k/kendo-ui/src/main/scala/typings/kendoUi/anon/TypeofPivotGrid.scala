@@ -15,19 +15,15 @@ trait TypeofPivotGrid extends StObject {
 }
 object TypeofPivotGrid {
   
-  @scala.inline
-  def apply(extend: js.Object => PivotGrid, fn: PivotGrid): TypeofPivotGrid = {
+  inline def apply(extend: js.Object => PivotGrid, fn: PivotGrid): TypeofPivotGrid = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPivotGrid]
   }
   
-  @scala.inline
-  implicit class TypeofPivotGridMutableBuilder[Self <: TypeofPivotGrid] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofPivotGrid](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => PivotGrid): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => PivotGrid): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: PivotGrid): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: PivotGrid): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

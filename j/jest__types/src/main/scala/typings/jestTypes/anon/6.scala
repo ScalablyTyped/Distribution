@@ -14,16 +14,13 @@ trait `6`
 }
 object `6` {
   
-  @scala.inline
-  def apply(): `6` = {
+  inline def apply(): `6` = {
     val __obj = js.Dynamic.literal(name = "run_finish")
     __obj.asInstanceOf[`6`]
   }
   
-  @scala.inline
-  implicit class `6MutableBuilder`[Self <: `6`] (val x: Self) extends AnyVal {
+  extension [Self <: `6`](x: Self) {
     
-    @scala.inline
-    def setName(value: run_finish): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: run_finish): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

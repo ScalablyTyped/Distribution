@@ -50,7 +50,7 @@ object fileFlagMod {
       */
     def this(flagStr: String) = this()
     
-    var flagStr: js.Any = js.native
+    /* private */ var flagStr: js.Any = js.native
     
     /**
       * Get the underlying flag string for this flag.
@@ -109,8 +109,7 @@ object fileFlagMod {
     @JSImport("browserfs/dist/node/core/file_flag", "FileFlag.flagCache")
     @js.native
     def flagCache: js.Any = js.native
-    @scala.inline
-    def flagCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flagCache")(x.asInstanceOf[js.Any])
+    inline def flagCache_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flagCache")(x.asInstanceOf[js.Any])
     
     /**
       * Get an object representing the given file flag.
@@ -118,13 +117,11 @@ object fileFlagMod {
       * @return The FileFlag object representing the flag
       * @throw when the flag string is invalid
       */
-    @scala.inline
-    def getFileFlag(flagStr: String): FileFlag = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileFlag")(flagStr.asInstanceOf[js.Any]).asInstanceOf[FileFlag]
+    inline def getFileFlag(flagStr: String): FileFlag = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileFlag")(flagStr.asInstanceOf[js.Any]).asInstanceOf[FileFlag]
     
     @JSImport("browserfs/dist/node/core/file_flag", "FileFlag.validFlagStrs")
     @js.native
     def validFlagStrs: js.Any = js.native
-    @scala.inline
-    def validFlagStrs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validFlagStrs")(x.asInstanceOf[js.Any])
+    inline def validFlagStrs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validFlagStrs")(x.asInstanceOf[js.Any])
   }
 }

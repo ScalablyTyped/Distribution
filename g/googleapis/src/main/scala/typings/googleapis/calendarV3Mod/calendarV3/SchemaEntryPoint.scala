@@ -98,76 +98,53 @@ trait SchemaEntryPoint extends StObject {
 }
 object SchemaEntryPoint {
   
-  @scala.inline
-  def apply(): SchemaEntryPoint = {
+  inline def apply(): SchemaEntryPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEntryPoint]
   }
   
-  @scala.inline
-  implicit class SchemaEntryPointMutableBuilder[Self <: SchemaEntryPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEntryPoint](x: Self) {
     
-    @scala.inline
-    def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
+    inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessCodeUndefined: Self = StObject.set(x, "accessCode", js.undefined)
+    inline def setAccessCodeUndefined: Self = StObject.set(x, "accessCode", js.undefined)
     
-    @scala.inline
-    def setEntryPointFeatures(value: js.Array[String]): Self = StObject.set(x, "entryPointFeatures", value.asInstanceOf[js.Any])
+    inline def setEntryPointFeatures(value: js.Array[String]): Self = StObject.set(x, "entryPointFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPointFeaturesUndefined: Self = StObject.set(x, "entryPointFeatures", js.undefined)
+    inline def setEntryPointFeaturesUndefined: Self = StObject.set(x, "entryPointFeatures", js.undefined)
     
-    @scala.inline
-    def setEntryPointFeaturesVarargs(value: String*): Self = StObject.set(x, "entryPointFeatures", js.Array(value :_*))
+    inline def setEntryPointFeaturesVarargs(value: String*): Self = StObject.set(x, "entryPointFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setEntryPointType(value: String): Self = StObject.set(x, "entryPointType", value.asInstanceOf[js.Any])
+    inline def setEntryPointType(value: String): Self = StObject.set(x, "entryPointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPointTypeUndefined: Self = StObject.set(x, "entryPointType", js.undefined)
+    inline def setEntryPointTypeUndefined: Self = StObject.set(x, "entryPointType", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMeetingCode(value: String): Self = StObject.set(x, "meetingCode", value.asInstanceOf[js.Any])
+    inline def setMeetingCode(value: String): Self = StObject.set(x, "meetingCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingCodeUndefined: Self = StObject.set(x, "meetingCode", js.undefined)
+    inline def setMeetingCodeUndefined: Self = StObject.set(x, "meetingCode", js.undefined)
     
-    @scala.inline
-    def setPasscode(value: String): Self = StObject.set(x, "passcode", value.asInstanceOf[js.Any])
+    inline def setPasscode(value: String): Self = StObject.set(x, "passcode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasscodeUndefined: Self = StObject.set(x, "passcode", js.undefined)
+    inline def setPasscodeUndefined: Self = StObject.set(x, "passcode", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
+    inline def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
     
-    @scala.inline
-    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

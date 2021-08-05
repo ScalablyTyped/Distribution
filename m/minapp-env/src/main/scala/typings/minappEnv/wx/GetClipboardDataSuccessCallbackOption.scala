@@ -11,16 +11,13 @@ trait GetClipboardDataSuccessCallbackOption extends StObject {
 }
 object GetClipboardDataSuccessCallbackOption {
   
-  @scala.inline
-  def apply(data: String): GetClipboardDataSuccessCallbackOption = {
+  inline def apply(data: String): GetClipboardDataSuccessCallbackOption = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClipboardDataSuccessCallbackOption]
   }
   
-  @scala.inline
-  implicit class GetClipboardDataSuccessCallbackOptionMutableBuilder[Self <: GetClipboardDataSuccessCallbackOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetClipboardDataSuccessCallbackOption](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

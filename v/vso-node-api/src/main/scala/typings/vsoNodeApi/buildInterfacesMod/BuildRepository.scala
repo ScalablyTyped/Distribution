@@ -51,8 +51,7 @@ trait BuildRepository extends StObject {
 }
 object BuildRepository {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkoutSubmodules: Boolean,
     clean: String,
     defaultBranch: String,
@@ -68,34 +67,24 @@ object BuildRepository {
     __obj.asInstanceOf[BuildRepository]
   }
   
-  @scala.inline
-  implicit class BuildRepositoryMutableBuilder[Self <: BuildRepository] (val x: Self) extends AnyVal {
+  extension [Self <: BuildRepository](x: Self) {
     
-    @scala.inline
-    def setCheckoutSubmodules(value: Boolean): Self = StObject.set(x, "checkoutSubmodules", value.asInstanceOf[js.Any])
+    inline def setCheckoutSubmodules(value: Boolean): Self = StObject.set(x, "checkoutSubmodules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClean(value: String): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
+    inline def setClean(value: String): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultBranch(value: String): Self = StObject.set(x, "defaultBranch", value.asInstanceOf[js.Any])
+    inline def setDefaultBranch(value: String): Self = StObject.set(x, "defaultBranch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootFolder(value: String): Self = StObject.set(x, "rootFolder", value.asInstanceOf[js.Any])
+    inline def setRootFolder(value: String): Self = StObject.set(x, "rootFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

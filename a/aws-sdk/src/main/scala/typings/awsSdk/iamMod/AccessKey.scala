@@ -33,8 +33,7 @@ trait AccessKey extends StObject {
 }
 object AccessKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessKeyId: accessKeyIdType,
     SecretAccessKey: accessKeySecretType,
     Status: statusType,
@@ -44,25 +43,18 @@ object AccessKey {
     __obj.asInstanceOf[AccessKey]
   }
   
-  @scala.inline
-  implicit class AccessKeyMutableBuilder[Self <: AccessKey] (val x: Self) extends AnyVal {
+  extension [Self <: AccessKey](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setSecretAccessKey(value: accessKeySecretType): Self = StObject.set(x, "SecretAccessKey", value.asInstanceOf[js.Any])
+    inline def setSecretAccessKey(value: accessKeySecretType): Self = StObject.set(x, "SecretAccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

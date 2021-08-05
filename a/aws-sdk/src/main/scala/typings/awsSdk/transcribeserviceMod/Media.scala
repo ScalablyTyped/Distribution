@@ -13,19 +13,15 @@ trait Media extends StObject {
 }
 object Media {
   
-  @scala.inline
-  def apply(): Media = {
+  inline def apply(): Media = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Media]
   }
   
-  @scala.inline
-  implicit class MediaMutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
+  extension [Self <: Media](x: Self) {
     
-    @scala.inline
-    def setMediaFileUri(value: Uri): Self = StObject.set(x, "MediaFileUri", value.asInstanceOf[js.Any])
+    inline def setMediaFileUri(value: Uri): Self = StObject.set(x, "MediaFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaFileUriUndefined: Self = StObject.set(x, "MediaFileUri", js.undefined)
+    inline def setMediaFileUriUndefined: Self = StObject.set(x, "MediaFileUri", js.undefined)
   }
 }

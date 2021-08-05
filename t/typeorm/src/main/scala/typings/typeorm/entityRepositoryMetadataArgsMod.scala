@@ -21,23 +21,18 @@ object entityRepositoryMetadataArgsMod {
   }
   object EntityRepositoryMetadataArgs {
     
-    @scala.inline
-    def apply(target: js.Function): EntityRepositoryMetadataArgs = {
+    inline def apply(target: js.Function): EntityRepositoryMetadataArgs = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntityRepositoryMetadataArgs]
     }
     
-    @scala.inline
-    implicit class EntityRepositoryMetadataArgsMutableBuilder[Self <: EntityRepositoryMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EntityRepositoryMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setEntity(value: EntityTarget[js.Any]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+      inline def setEntity(value: EntityTarget[js.Any]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+      inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Function): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,29 +16,29 @@ object filterManagerMod {
   @js.native
   class FilterManager () extends StObject {
     
-    @JSName("$compile")
+    /* private */ @JSName("$compile")
     var $compile: js.Any = js.native
     
-    @JSName("$scope")
+    /* private */ @JSName("$scope")
     var $scope: js.Any = js.native
     
-    var advancedFilterPresent: js.Any = js.native
+    /* private */ var advancedFilterPresent: js.Any = js.native
     
     /* private */ def aggregateRowForQuickFilter(node: js.Any): js.Any = js.native
     
-    var allFilters: js.Any = js.native
+    /* private */ var allFilters: js.Any = js.native
     
     def cachedFilter(column: Column): FilterWrapper = js.native
     
     /* private */ def checkExternalFilter(): js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var componentResolver: js.Any = js.native
+    /* private */ var componentResolver: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createFilterInstance(column: js.Any, $scope: js.Any): js.Any = js.native
     
@@ -66,11 +66,11 @@ object filterManagerMod {
     
     /* private */ def doesRowPassQuickFilterNoCache(node: js.Any, filterPart: js.Any): js.Any = js.native
     
-    var enterprise: js.Any = js.native
+    /* private */ var enterprise: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var externalFilterPresent: js.Any = js.native
+    /* private */ var externalFilterPresent: js.Any = js.native
     
     def getFilterComponent(column: Column): Promise[IFilterComp] = js.native
     
@@ -80,11 +80,11 @@ object filterManagerMod {
     
     /* private */ def getQuickFilterTextForColumn(column: js.Any, rowNode: js.Any): js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridCore: js.Any = js.native
+    /* private */ var gridCore: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     def init(): Unit = js.native
     
@@ -102,15 +102,15 @@ object filterManagerMod {
     
     /* private */ def parseQuickFilter(newFilter: js.Any): js.Any = js.native
     
-    var popupService: js.Any = js.native
+    /* private */ var popupService: js.Any = js.native
     
     /* private */ def putIntoGui(filterWrapper: js.Any): js.Any = js.native
     
-    var quickFilter: js.Any = js.native
+    /* private */ var quickFilter: js.Any = js.native
     
-    var quickFilterParts: js.Any = js.native
+    /* private */ var quickFilterParts: js.Any = js.native
     
-    var rowModel: js.Any = js.native
+    /* private */ var rowModel: js.Any = js.native
     
     /* private */ def setAdvancedFilterPresent(): js.Any = js.native
     
@@ -124,7 +124,7 @@ object filterManagerMod {
     
     /* private */ def updateFilterFlagInColumns(source: js.Any): js.Any = js.native
     
-    var valueService: js.Any = js.native
+    /* private */ var valueService: js.Any = js.native
   }
   /* static members */
   object FilterManager {
@@ -136,8 +136,7 @@ object filterManagerMod {
     @JSImport("ag-grid/dist/lib/filter/filterManager", "FilterManager.QUICK_FILTER_SEPARATOR")
     @js.native
     def QUICK_FILTER_SEPARATOR: String = js.native
-    @scala.inline
-    def QUICK_FILTER_SEPARATOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUICK_FILTER_SEPARATOR")(x.asInstanceOf[js.Any])
+    inline def QUICK_FILTER_SEPARATOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUICK_FILTER_SEPARATOR")(x.asInstanceOf[js.Any])
   }
   
   trait FilterWrapper extends StObject {
@@ -154,8 +153,7 @@ object filterManagerMod {
   }
   object FilterWrapper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       column: Column,
       compiledElement: js.Any,
       filterPromise: Promise[IFilterComp],
@@ -166,23 +164,17 @@ object filterManagerMod {
       __obj.asInstanceOf[FilterWrapper]
     }
     
-    @scala.inline
-    implicit class FilterWrapperMutableBuilder[Self <: FilterWrapper] (val x: Self) extends AnyVal {
+    extension [Self <: FilterWrapper](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompiledElement(value: js.Any): Self = StObject.set(x, "compiledElement", value.asInstanceOf[js.Any])
+      inline def setCompiledElement(value: js.Any): Self = StObject.set(x, "compiledElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterPromise(value: Promise[IFilterComp]): Self = StObject.set(x, "filterPromise", value.asInstanceOf[js.Any])
+      inline def setFilterPromise(value: Promise[IFilterComp]): Self = StObject.set(x, "filterPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuiPromise(value: ExternalPromise[HTMLElement]): Self = StObject.set(x, "guiPromise", value.asInstanceOf[js.Any])
+      inline def setGuiPromise(value: ExternalPromise[HTMLElement]): Self = StObject.set(x, "guiPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     }
   }
 }

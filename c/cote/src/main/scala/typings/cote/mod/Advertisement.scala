@@ -24,28 +24,21 @@ trait Advertisement extends StObject {
 }
 object Advertisement {
   
-  @scala.inline
-  def apply(name: String): Advertisement = {
+  inline def apply(name: String): Advertisement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Advertisement]
   }
   
-  @scala.inline
-  implicit class AdvertisementMutableBuilder[Self <: Advertisement] (val x: Self) extends AnyVal {
+  extension [Self <: Advertisement](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ListGatewaysInput extends StObject {
 }
 object ListGatewaysInput {
   
-  @scala.inline
-  def apply(): ListGatewaysInput = {
+  inline def apply(): ListGatewaysInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGatewaysInput]
   }
   
-  @scala.inline
-  implicit class ListGatewaysInputMutableBuilder[Self <: ListGatewaysInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListGatewaysInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveIntObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

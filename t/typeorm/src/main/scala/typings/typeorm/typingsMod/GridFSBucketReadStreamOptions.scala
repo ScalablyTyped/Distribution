@@ -28,37 +28,27 @@ trait GridFSBucketReadStreamOptions extends StObject {
 }
 object GridFSBucketReadStreamOptions {
   
-  @scala.inline
-  def apply(): GridFSBucketReadStreamOptions = {
+  inline def apply(): GridFSBucketReadStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridFSBucketReadStreamOptions]
   }
   
-  @scala.inline
-  implicit class GridFSBucketReadStreamOptionsMutableBuilder[Self <: GridFSBucketReadStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridFSBucketReadStreamOptions](x: Self) {
     
-    @scala.inline
-    def setEnd(value: scala.Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: scala.Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setSkip(value: scala.Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: scala.Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setSort(value: scala.Double): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: scala.Double): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setStart(value: scala.Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: scala.Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

@@ -22,25 +22,19 @@ trait SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame extends StObject {
 }
 object SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrameMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1ObjectTrackingFrame](x: Self) {
     
-    @scala.inline
-    def setNormalizedBoundingBox(value: SchemaGoogleCloudVideointelligenceV1NormalizedBoundingBox): Self = StObject.set(x, "normalizedBoundingBox", value.asInstanceOf[js.Any])
+    inline def setNormalizedBoundingBox(value: SchemaGoogleCloudVideointelligenceV1NormalizedBoundingBox): Self = StObject.set(x, "normalizedBoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedBoundingBoxUndefined: Self = StObject.set(x, "normalizedBoundingBox", js.undefined)
+    inline def setNormalizedBoundingBoxUndefined: Self = StObject.set(x, "normalizedBoundingBox", js.undefined)
     
-    @scala.inline
-    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }
 }

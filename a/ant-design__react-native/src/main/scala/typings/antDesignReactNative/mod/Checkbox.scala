@@ -21,12 +21,10 @@ object Checkbox {
   @JSImport("@ant-design/react-native", "Checkbox.AgreeItem")
   @js.native
   def AgreeItem: js.Any = js.native
-  @scala.inline
-  def AgreeItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
+  inline def AgreeItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
   
   @JSImport("@ant-design/react-native", "Checkbox.CheckboxItem")
   @js.native
   def CheckboxItem: js.Any = js.native
-  @scala.inline
-  def CheckboxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
+  inline def CheckboxItem_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
 }

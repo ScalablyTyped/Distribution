@@ -90,8 +90,7 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bucket: (js.Function3[
           /* req */ Request, 
           /* file */ File, 
@@ -104,11 +103,9 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAcl(
+      inline def setAcl(
         value: (js.Function3[
               /* req */ Request, 
               /* file */ File, 
@@ -117,16 +114,13 @@ object mod extends Shortcut {
             ]) | String
       ): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAclFunction3(
+      inline def setAclFunction3(
         value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* acl */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "acl", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
+      inline def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
       
-      @scala.inline
-      def setBucket(
+      inline def setBucket(
         value: (js.Function3[
               /* req */ Request, 
               /* file */ File, 
@@ -135,13 +129,11 @@ object mod extends Shortcut {
             ]) | String
       ): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketFunction3(
+      inline def setBucketFunction3(
         value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* bucket */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "bucket", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCacheControl(
+      inline def setCacheControl(
         value: (js.Function3[
               /* req */ Request, 
               /* file */ File, 
@@ -150,16 +142,13 @@ object mod extends Shortcut {
             ]) | String
       ): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheControlFunction3(
+      inline def setCacheControlFunction3(
         value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* cacheControl */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "cacheControl", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
+      inline def setCacheControlUndefined: Self = StObject.set(x, "cacheControl", js.undefined)
       
-      @scala.inline
-      def setContentType(
+      inline def setContentType(
         value: (/* req */ Request, /* file */ File, /* callback */ js.Function3[
               /* error */ js.Any, 
               /* mime */ js.UndefOr[String], 
@@ -168,30 +157,23 @@ object mod extends Shortcut {
             ]) => Unit
       ): Self = StObject.set(x, "contentType", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setKey(
+      inline def setKey(
         value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* key */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "key", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMetadata(
+      inline def setMetadata(
         value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* metadata */ js.UndefOr[js.Any], Unit]) => Unit
       ): Self = StObject.set(x, "metadata", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setS3(value: S3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+      inline def setS3(value: S3): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryption(
+      inline def setServerSideEncryption(
         value: (js.Function3[
               /* req */ Request, 
               /* file */ File, 
@@ -200,13 +182,11 @@ object mod extends Shortcut {
             ]) | String
       ): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerSideEncryptionFunction3(
+      inline def setServerSideEncryptionFunction3(
         value: (/* req */ Request, /* file */ File, /* callback */ js.Function2[/* error */ js.Any, /* serverSideEncryption */ js.UndefOr[String], Unit]) => Unit
       ): Self = StObject.set(x, "serverSideEncryption", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
+      inline def setServerSideEncryptionUndefined: Self = StObject.set(x, "serverSideEncryption", js.undefined)
     }
   }
   
@@ -271,8 +251,7 @@ object mod extends Shortcut {
         }
         object File {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             acl: String,
             bucket: String,
             buffer: Buffer,
@@ -298,38 +277,27 @@ object mod extends Shortcut {
             __obj.asInstanceOf[typings.multerS3.mod.global.Express.MulterS3.File]
           }
           
-          @scala.inline
-          implicit class FileMutableBuilder[Self <: typings.multerS3.mod.global.Express.MulterS3.File] (val x: Self) extends AnyVal {
+          extension [Self <: typings.multerS3.mod.global.Express.MulterS3.File](x: Self) {
             
-            @scala.inline
-            def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+            inline def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+            inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setContentDisposition(value: Null): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
+            inline def setContentDisposition(value: Null): Self = StObject.set(x, "contentDisposition", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+            inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+            inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+            inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+            inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+            inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setServerSideEncryption(value: Null): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
+            inline def setServerSideEncryption(value: Null): Self = StObject.set(x, "serverSideEncryption", value.asInstanceOf[js.Any])
             
-            @scala.inline
-            def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
+            inline def setStorageClass(value: String): Self = StObject.set(x, "storageClass", value.asInstanceOf[js.Any])
           }
         }
       }

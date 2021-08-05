@@ -41,40 +41,29 @@ trait SchemaSource extends StObject {
 }
 object SchemaSource {
   
-  @scala.inline
-  def apply(): SchemaSource = {
+  inline def apply(): SchemaSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSource]
   }
   
-  @scala.inline
-  implicit class SchemaSourceMutableBuilder[Self <: SchemaSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSource](x: Self) {
     
-    @scala.inline
-    def setAdditionalContexts(value: js.Array[SchemaSourceContext]): Self = StObject.set(x, "additionalContexts", value.asInstanceOf[js.Any])
+    inline def setAdditionalContexts(value: js.Array[SchemaSourceContext]): Self = StObject.set(x, "additionalContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalContextsUndefined: Self = StObject.set(x, "additionalContexts", js.undefined)
+    inline def setAdditionalContextsUndefined: Self = StObject.set(x, "additionalContexts", js.undefined)
     
-    @scala.inline
-    def setAdditionalContextsVarargs(value: SchemaSourceContext*): Self = StObject.set(x, "additionalContexts", js.Array(value :_*))
+    inline def setAdditionalContextsVarargs(value: SchemaSourceContext*): Self = StObject.set(x, "additionalContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setArtifactStorageSourceUri(value: String): Self = StObject.set(x, "artifactStorageSourceUri", value.asInstanceOf[js.Any])
+    inline def setArtifactStorageSourceUri(value: String): Self = StObject.set(x, "artifactStorageSourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactStorageSourceUriUndefined: Self = StObject.set(x, "artifactStorageSourceUri", js.undefined)
+    inline def setArtifactStorageSourceUriUndefined: Self = StObject.set(x, "artifactStorageSourceUri", js.undefined)
     
-    @scala.inline
-    def setContext(value: SchemaSourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: SchemaSourceContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setFileHashes(value: StringDictionary[SchemaFileHashes]): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
+    inline def setFileHashes(value: StringDictionary[SchemaFileHashes]): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
+    inline def setFileHashesUndefined: Self = StObject.set(x, "fileHashes", js.undefined)
   }
 }

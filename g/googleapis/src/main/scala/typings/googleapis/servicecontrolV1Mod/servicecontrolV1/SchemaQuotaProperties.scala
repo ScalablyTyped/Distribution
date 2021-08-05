@@ -16,19 +16,15 @@ trait SchemaQuotaProperties extends StObject {
 }
 object SchemaQuotaProperties {
   
-  @scala.inline
-  def apply(): SchemaQuotaProperties = {
+  inline def apply(): SchemaQuotaProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuotaProperties]
   }
   
-  @scala.inline
-  implicit class SchemaQuotaPropertiesMutableBuilder[Self <: SchemaQuotaProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuotaProperties](x: Self) {
     
-    @scala.inline
-    def setQuotaMode(value: String): Self = StObject.set(x, "quotaMode", value.asInstanceOf[js.Any])
+    inline def setQuotaMode(value: String): Self = StObject.set(x, "quotaMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaModeUndefined: Self = StObject.set(x, "quotaMode", js.undefined)
+    inline def setQuotaModeUndefined: Self = StObject.set(x, "quotaMode", js.undefined)
   }
 }

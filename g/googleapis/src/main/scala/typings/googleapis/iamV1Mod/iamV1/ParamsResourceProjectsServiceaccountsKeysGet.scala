@@ -34,31 +34,23 @@ trait ParamsResourceProjectsServiceaccountsKeysGet
 }
 object ParamsResourceProjectsServiceaccountsKeysGet {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsServiceaccountsKeysGet = {
+  inline def apply(): ParamsResourceProjectsServiceaccountsKeysGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsServiceaccountsKeysGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsServiceaccountsKeysGetMutableBuilder[Self <: ParamsResourceProjectsServiceaccountsKeysGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsServiceaccountsKeysGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPublicKeyType(value: String): Self = StObject.set(x, "publicKeyType", value.asInstanceOf[js.Any])
+    inline def setPublicKeyType(value: String): Self = StObject.set(x, "publicKeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyTypeUndefined: Self = StObject.set(x, "publicKeyType", js.undefined)
+    inline def setPublicKeyTypeUndefined: Self = StObject.set(x, "publicKeyType", js.undefined)
   }
 }

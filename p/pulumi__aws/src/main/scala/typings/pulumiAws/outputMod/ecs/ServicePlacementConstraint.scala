@@ -22,23 +22,18 @@ trait ServicePlacementConstraint extends StObject {
 }
 object ServicePlacementConstraint {
   
-  @scala.inline
-  def apply(`type`: String): ServicePlacementConstraint = {
+  inline def apply(`type`: String): ServicePlacementConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServicePlacementConstraint]
   }
   
-  @scala.inline
-  implicit class ServicePlacementConstraintMutableBuilder[Self <: ServicePlacementConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: ServicePlacementConstraint](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

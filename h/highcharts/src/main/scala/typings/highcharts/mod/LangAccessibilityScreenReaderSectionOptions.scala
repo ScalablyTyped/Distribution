@@ -24,37 +24,27 @@ trait LangAccessibilityScreenReaderSectionOptions extends StObject {
 }
 object LangAccessibilityScreenReaderSectionOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilityScreenReaderSectionOptions = {
+  inline def apply(): LangAccessibilityScreenReaderSectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilityScreenReaderSectionOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilityScreenReaderSectionOptionsMutableBuilder[Self <: LangAccessibilityScreenReaderSectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilityScreenReaderSectionOptions](x: Self) {
     
-    @scala.inline
-    def setAfterRegionLabel(value: String): Self = StObject.set(x, "afterRegionLabel", value.asInstanceOf[js.Any])
+    inline def setAfterRegionLabel(value: String): Self = StObject.set(x, "afterRegionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterRegionLabelUndefined: Self = StObject.set(x, "afterRegionLabel", js.undefined)
+    inline def setAfterRegionLabelUndefined: Self = StObject.set(x, "afterRegionLabel", js.undefined)
     
-    @scala.inline
-    def setAnnotations(value: LangAccessibilityScreenReaderSectionAnnotationsOptions): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: LangAccessibilityScreenReaderSectionAnnotationsOptions): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setBeforeRegionLabel(value: String): Self = StObject.set(x, "beforeRegionLabel", value.asInstanceOf[js.Any])
+    inline def setBeforeRegionLabel(value: String): Self = StObject.set(x, "beforeRegionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeRegionLabelUndefined: Self = StObject.set(x, "beforeRegionLabel", js.undefined)
+    inline def setBeforeRegionLabelUndefined: Self = StObject.set(x, "beforeRegionLabel", js.undefined)
     
-    @scala.inline
-    def setEndOfChartMarker(value: String): Self = StObject.set(x, "endOfChartMarker", value.asInstanceOf[js.Any])
+    inline def setEndOfChartMarker(value: String): Self = StObject.set(x, "endOfChartMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOfChartMarkerUndefined: Self = StObject.set(x, "endOfChartMarker", js.undefined)
+    inline def setEndOfChartMarkerUndefined: Self = StObject.set(x, "endOfChartMarker", js.undefined)
   }
 }

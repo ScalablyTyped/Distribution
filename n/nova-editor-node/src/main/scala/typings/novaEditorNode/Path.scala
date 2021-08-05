@@ -27,8 +27,7 @@ trait Path extends StObject {
 }
 object Path {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     basename: String => String,
     dirname: String => String,
     expanduser: String => String,
@@ -43,34 +42,24 @@ object Path {
     __obj.asInstanceOf[Path]
   }
   
-  @scala.inline
-  implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+  extension [Self <: Path](x: Self) {
     
-    @scala.inline
-    def setBasename(value: String => String): Self = StObject.set(x, "basename", js.Any.fromFunction1(value))
+    inline def setBasename(value: String => String): Self = StObject.set(x, "basename", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDirname(value: String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
+    inline def setDirname(value: String => String): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpanduser(value: String => String): Self = StObject.set(x, "expanduser", js.Any.fromFunction1(value))
+    inline def setExpanduser(value: String => String): Self = StObject.set(x, "expanduser", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtname(value: String => String): Self = StObject.set(x, "extname", js.Any.fromFunction1(value))
+    inline def setExtname(value: String => String): Self = StObject.set(x, "extname", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsAbsolute(value: String => Boolean): Self = StObject.set(x, "isAbsolute", js.Any.fromFunction1(value))
+    inline def setIsAbsolute(value: String => Boolean): Self = StObject.set(x, "isAbsolute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setJoin(value: /* repeated */ String => String): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
+    inline def setJoin(value: /* repeated */ String => String): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNormalize(value: String => String): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+    inline def setNormalize(value: String => String): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSplit(value: String => js.Array[String]): Self = StObject.set(x, "split", js.Any.fromFunction1(value))
+    inline def setSplit(value: String => js.Array[String]): Self = StObject.set(x, "split", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSplitext(value: String => js.Tuple2[String, String]): Self = StObject.set(x, "splitext", js.Any.fromFunction1(value))
+    inline def setSplitext(value: String => js.Tuple2[String, String]): Self = StObject.set(x, "splitext", js.Any.fromFunction1(value))
   }
 }

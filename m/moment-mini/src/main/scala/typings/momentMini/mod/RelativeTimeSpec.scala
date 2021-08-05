@@ -36,8 +36,7 @@ trait RelativeTimeSpec extends StObject {
 }
 object RelativeTimeSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     M: RelativeTimeSpecVal,
     MM: RelativeTimeSpecVal,
     d: RelativeTimeSpecVal,
@@ -57,98 +56,73 @@ object RelativeTimeSpec {
     __obj.asInstanceOf[RelativeTimeSpec]
   }
   
-  @scala.inline
-  implicit class RelativeTimeSpecMutableBuilder[Self <: RelativeTimeSpec] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeTimeSpec](x: Self) {
     
-    @scala.inline
-    def setD(value: RelativeTimeSpecVal): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: RelativeTimeSpecVal): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDFunction4(
+    inline def setDFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "d", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setDd(value: RelativeTimeSpecVal): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
+    inline def setDd(value: RelativeTimeSpecVal): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDdFunction4(
+    inline def setDdFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "dd", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFuture(value: RelativeTimeFuturePastVal): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+    inline def setFuture(value: RelativeTimeFuturePastVal): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFutureFunction1(value: /* relTime */ String => String): Self = StObject.set(x, "future", js.Any.fromFunction1(value))
+    inline def setFutureFunction1(value: /* relTime */ String => String): Self = StObject.set(x, "future", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setH(value: RelativeTimeSpecVal): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: RelativeTimeSpecVal): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHFunction4(
+    inline def setHFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "h", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setHh(value: RelativeTimeSpecVal): Self = StObject.set(x, "hh", value.asInstanceOf[js.Any])
+    inline def setHh(value: RelativeTimeSpecVal): Self = StObject.set(x, "hh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHhFunction4(
+    inline def setHhFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "hh", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setM(value: RelativeTimeSpecVal): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+    inline def setM(value: RelativeTimeSpecVal): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMFunction4(
+    inline def setMFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "M", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setMM(value: RelativeTimeSpecVal): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
+    inline def setMM(value: RelativeTimeSpecVal): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMMFunction4(
+    inline def setMMFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "MM", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setPast(value: RelativeTimeFuturePastVal): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
+    inline def setPast(value: RelativeTimeFuturePastVal): Self = StObject.set(x, "past", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPastFunction1(value: /* relTime */ String => String): Self = StObject.set(x, "past", js.Any.fromFunction1(value))
+    inline def setPastFunction1(value: /* relTime */ String => String): Self = StObject.set(x, "past", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setS(value: RelativeTimeSpecVal): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: RelativeTimeSpecVal): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSFunction4(
+    inline def setSFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "s", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSs(value: RelativeTimeSpecVal): Self = StObject.set(x, "ss", value.asInstanceOf[js.Any])
+    inline def setSs(value: RelativeTimeSpecVal): Self = StObject.set(x, "ss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsFunction4(
+    inline def setSsFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "ss", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setY(value: RelativeTimeSpecVal): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: RelativeTimeSpecVal): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYFunction4(
+    inline def setYFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "y", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setYy(value: RelativeTimeSpecVal): Self = StObject.set(x, "yy", value.asInstanceOf[js.Any])
+    inline def setYy(value: RelativeTimeSpecVal): Self = StObject.set(x, "yy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYyFunction4(
+    inline def setYyFunction4(
       value: (/* n */ Double, /* withoutSuffix */ Boolean, /* key */ RelativeTimeKey, /* isFuture */ Boolean) => String
     ): Self = StObject.set(x, "yy", js.Any.fromFunction4(value))
   }

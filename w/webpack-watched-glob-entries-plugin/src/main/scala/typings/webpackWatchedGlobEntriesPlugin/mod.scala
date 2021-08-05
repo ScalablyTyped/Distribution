@@ -19,24 +19,16 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getEntries(globs: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def getEntries(globs: js.Array[String], globOptions: Unit, pluginOptions: PluginOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getEntries(globs: js.Array[String], globOptions: IOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getEntries(globs: js.Array[String], globOptions: IOptions, pluginOptions: PluginOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getEntries(globs: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getEntries(globs: js.Array[String], globOptions: Unit, pluginOptions: PluginOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getEntries(globs: js.Array[String], globOptions: IOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getEntries(globs: js.Array[String], globOptions: IOptions, pluginOptions: PluginOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def getFiles(globString: String): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
-  @scala.inline
-  def getFiles(globString: String, globOptions: Unit, basename_as_entry_name: Boolean): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], basename_as_entry_name.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
-  @scala.inline
-  def getFiles(globString: String, globOptions: IOptions): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
-  @scala.inline
-  def getFiles(globString: String, globOptions: IOptions, basename_as_entry_name: Boolean): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], basename_as_entry_name.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  inline def getFiles(globString: String): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+  inline def getFiles(globString: String, globOptions: Unit, basename_as_entry_name: Boolean): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], basename_as_entry_name.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  inline def getFiles(globString: String, globOptions: IOptions): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  inline def getFiles(globString: String, globOptions: IOptions, basename_as_entry_name: Boolean): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], basename_as_entry_name.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
   
   trait PluginOptions extends StObject {
     
@@ -44,20 +36,16 @@ object mod {
   }
   object PluginOptions {
     
-    @scala.inline
-    def apply(): PluginOptions = {
+    inline def apply(): PluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PluginOptions]
     }
     
-    @scala.inline
-    implicit class PluginOptionsMutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluginOptions](x: Self) {
       
-      @scala.inline
-      def setBasename_as_entry_name(value: Boolean): Self = StObject.set(x, "basename_as_entry_name", value.asInstanceOf[js.Any])
+      inline def setBasename_as_entry_name(value: Boolean): Self = StObject.set(x, "basename_as_entry_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasename_as_entry_nameUndefined: Self = StObject.set(x, "basename_as_entry_name", js.undefined)
+      inline def setBasename_as_entry_nameUndefined: Self = StObject.set(x, "basename_as_entry_name", js.undefined)
     }
   }
   

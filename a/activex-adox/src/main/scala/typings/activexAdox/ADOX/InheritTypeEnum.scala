@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InheritTypeEnum extends StObject
 object InheritTypeEnum {
   
-  @scala.inline
-  def adInheritBoth: `3` = 3.asInstanceOf[`3`]
+  inline def adInheritBoth: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def adInheritContainers: `2` = 2.asInstanceOf[`2`]
+  inline def adInheritContainers: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adInheritNoPropogate: `4` = 4.asInstanceOf[`4`]
+  inline def adInheritNoPropogate: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adInheritNone: `0` = 0.asInstanceOf[`0`]
+  inline def adInheritNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adInheritObjects: `1` = 1.asInstanceOf[`1`]
+  inline def adInheritObjects: `1` = 1.asInstanceOf[`1`]
 }

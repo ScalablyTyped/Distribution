@@ -16,8 +16,6 @@ object toBooleanMod {
     *
     * @param [strict=false] - in `strict` mode, only `'1'` and `'true'` return `true`.
     */
-  @scala.inline
-  def default(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def default(input: String, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(input: String, strict: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -18,19 +18,15 @@ trait SetV2LoggingLevelRequest extends StObject {
 }
 object SetV2LoggingLevelRequest {
   
-  @scala.inline
-  def apply(logLevel: LogLevel, logTarget: LogTarget): SetV2LoggingLevelRequest = {
+  inline def apply(logLevel: LogLevel, logTarget: LogTarget): SetV2LoggingLevelRequest = {
     val __obj = js.Dynamic.literal(logLevel = logLevel.asInstanceOf[js.Any], logTarget = logTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetV2LoggingLevelRequest]
   }
   
-  @scala.inline
-  implicit class SetV2LoggingLevelRequestMutableBuilder[Self <: SetV2LoggingLevelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetV2LoggingLevelRequest](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogTarget(value: LogTarget): Self = StObject.set(x, "logTarget", value.asInstanceOf[js.Any])
+    inline def setLogTarget(value: LogTarget): Self = StObject.set(x, "logTarget", value.asInstanceOf[js.Any])
   }
 }

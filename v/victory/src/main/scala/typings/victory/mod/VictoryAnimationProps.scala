@@ -47,52 +47,37 @@ trait VictoryAnimationProps extends StObject {
 }
 object VictoryAnimationProps {
   
-  @scala.inline
-  def apply(): VictoryAnimationProps = {
+  inline def apply(): VictoryAnimationProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryAnimationProps]
   }
   
-  @scala.inline
-  implicit class VictoryAnimationPropsMutableBuilder[Self <: VictoryAnimationProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryAnimationProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: /* style */ AnimationStyle => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* style */ AnimationStyle => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setData(value: AnimationData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: AnimationData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: AnimationStyle*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: AnimationStyle*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: AnimationEasing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: AnimationEasing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
+    inline def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
   }
 }

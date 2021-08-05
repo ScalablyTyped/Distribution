@@ -33,8 +33,7 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentDescribeBlock: DescribeBlock,
     hasFocusedTests: Boolean,
     hasStarted: Boolean,
@@ -47,67 +46,46 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setCurrentDescribeBlock(value: DescribeBlock): Self = StObject.set(x, "currentDescribeBlock", value.asInstanceOf[js.Any])
+    inline def setCurrentDescribeBlock(value: DescribeBlock): Self = StObject.set(x, "currentDescribeBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentlyRunningTest(value: TestEntry): Self = StObject.set(x, "currentlyRunningTest", value.asInstanceOf[js.Any])
+    inline def setCurrentlyRunningTest(value: TestEntry): Self = StObject.set(x, "currentlyRunningTest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentlyRunningTestNull: Self = StObject.set(x, "currentlyRunningTest", null)
+    inline def setCurrentlyRunningTestNull: Self = StObject.set(x, "currentlyRunningTest", null)
     
-    @scala.inline
-    def setCurrentlyRunningTestUndefined: Self = StObject.set(x, "currentlyRunningTest", js.undefined)
+    inline def setCurrentlyRunningTestUndefined: Self = StObject.set(x, "currentlyRunningTest", js.undefined)
     
-    @scala.inline
-    def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
     
-    @scala.inline
-    def setHasFocusedTests(value: Boolean): Self = StObject.set(x, "hasFocusedTests", value.asInstanceOf[js.Any])
+    inline def setHasFocusedTests(value: Boolean): Self = StObject.set(x, "hasFocusedTests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasStarted(value: Boolean): Self = StObject.set(x, "hasStarted", value.asInstanceOf[js.Any])
+    inline def setHasStarted(value: Boolean): Self = StObject.set(x, "hasStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTestLocationInResult(value: Boolean): Self = StObject.set(x, "includeTestLocationInResult", value.asInstanceOf[js.Any])
+    inline def setIncludeTestLocationInResult(value: Boolean): Self = StObject.set(x, "includeTestLocationInResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalGlobalErrorHandlers(value: GlobalErrorHandlers): Self = StObject.set(x, "originalGlobalErrorHandlers", value.asInstanceOf[js.Any])
+    inline def setOriginalGlobalErrorHandlers(value: GlobalErrorHandlers): Self = StObject.set(x, "originalGlobalErrorHandlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalGlobalErrorHandlersUndefined: Self = StObject.set(x, "originalGlobalErrorHandlers", js.undefined)
+    inline def setOriginalGlobalErrorHandlersUndefined: Self = StObject.set(x, "originalGlobalErrorHandlers", js.undefined)
     
-    @scala.inline
-    def setParentProcess(value: Process): Self = StObject.set(x, "parentProcess", value.asInstanceOf[js.Any])
+    inline def setParentProcess(value: Process): Self = StObject.set(x, "parentProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentProcessNull: Self = StObject.set(x, "parentProcess", null)
+    inline def setParentProcessNull: Self = StObject.set(x, "parentProcess", null)
     
-    @scala.inline
-    def setRootDescribeBlock(value: DescribeBlock): Self = StObject.set(x, "rootDescribeBlock", value.asInstanceOf[js.Any])
+    inline def setRootDescribeBlock(value: DescribeBlock): Self = StObject.set(x, "rootDescribeBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestNamePattern(value: RegExp): Self = StObject.set(x, "testNamePattern", value.asInstanceOf[js.Any])
+    inline def setTestNamePattern(value: RegExp): Self = StObject.set(x, "testNamePattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestNamePatternNull: Self = StObject.set(x, "testNamePattern", null)
+    inline def setTestNamePatternNull: Self = StObject.set(x, "testNamePattern", null)
     
-    @scala.inline
-    def setTestNamePatternUndefined: Self = StObject.set(x, "testNamePattern", js.undefined)
+    inline def setTestNamePatternUndefined: Self = StObject.set(x, "testNamePattern", js.undefined)
     
-    @scala.inline
-    def setTestTimeout(value: Double): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
+    inline def setTestTimeout(value: Double): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhandledErrors(value: js.Array[Exception]): Self = StObject.set(x, "unhandledErrors", value.asInstanceOf[js.Any])
+    inline def setUnhandledErrors(value: js.Array[Exception]): Self = StObject.set(x, "unhandledErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhandledErrorsVarargs(value: Exception*): Self = StObject.set(x, "unhandledErrors", js.Array(value :_*))
+    inline def setUnhandledErrorsVarargs(value: Exception*): Self = StObject.set(x, "unhandledErrors", js.Array(value :_*))
   }
 }

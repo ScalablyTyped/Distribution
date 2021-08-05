@@ -15,16 +15,13 @@ trait OtherCommon
 }
 object OtherCommon {
   
-  @scala.inline
-  def apply(custom: Unit, name: StringOrTranslated): OtherCommon = {
+  inline def apply(custom: Unit, name: StringOrTranslated): OtherCommon = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[OtherCommon]
   }
   
-  @scala.inline
-  implicit class OtherCommonMutableBuilder[Self <: OtherCommon] (val x: Self) extends AnyVal {
+  extension [Self <: OtherCommon](x: Self) {
     
-    @scala.inline
-    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
   }
 }

@@ -26,29 +26,22 @@ object anon {
   }
   object Accept {
     
-    @scala.inline
-    def apply(url: String): Accept = {
+    inline def apply(url: String): Accept = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Accept]
     }
     
-    @scala.inline
-    implicit class AcceptMutableBuilder[Self <: Accept] (val x: Self) extends AnyVal {
+    extension [Self <: Accept](x: Self) {
       
-      @scala.inline
-      def setAccept(value: CallType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+      inline def setAccept(value: CallType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

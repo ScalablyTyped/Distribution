@@ -58,6 +58,5 @@ object GeographicRegion {
     * @return True if the ID is known; otherwise, false. If this method returns true, an app can safely construct a region by using this region identifier. If it returns false, attempting to construct a region for the given code will throw an exception.
     */
   /* static member */
-  @scala.inline
-  def isSupported(geographicRegionCode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(geographicRegionCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSupported(geographicRegionCode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(geographicRegionCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

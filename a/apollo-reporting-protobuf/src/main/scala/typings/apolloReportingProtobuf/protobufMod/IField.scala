@@ -14,31 +14,23 @@ trait IField extends StObject {
 }
 object IField {
   
-  @scala.inline
-  def apply(): IField = {
+  inline def apply(): IField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IField]
   }
   
-  @scala.inline
-  implicit class IFieldMutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
+  extension [Self <: IField](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: String): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
+    inline def setReturnTypeNull: Self = StObject.set(x, "returnType", null)
     
-    @scala.inline
-    def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
+    inline def setReturnTypeUndefined: Self = StObject.set(x, "returnType", js.undefined)
   }
 }

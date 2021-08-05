@@ -27,70 +27,49 @@ trait PartialGaugeBgcolor extends StObject {
 }
 object PartialGaugeBgcolor {
   
-  @scala.inline
-  def apply(): PartialGaugeBgcolor = {
+  inline def apply(): PartialGaugeBgcolor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialGaugeBgcolor]
   }
   
-  @scala.inline
-  implicit class PartialGaugeBgcolorMutableBuilder[Self <: PartialGaugeBgcolor] (val x: Self) extends AnyVal {
+  extension [Self <: PartialGaugeBgcolor](x: Self) {
     
-    @scala.inline
-    def setAxis(value: PartialAxisAutorange): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: PartialAxisAutorange): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     
-    @scala.inline
-    def setBar(value: PartialGaugeBar): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
+    inline def setBar(value: PartialGaugeBar): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
+    inline def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
-    @scala.inline
-    def setBgcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
+    inline def setBgcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
+    inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
     
-    @scala.inline
-    def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
+    inline def setBgcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bgcolor", js.Array(value :_*))
     
-    @scala.inline
-    def setBordercolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
+    inline def setBordercolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "bordercolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBordercolorUndefined: Self = StObject.set(x, "bordercolor", js.undefined)
+    inline def setBordercolorUndefined: Self = StObject.set(x, "bordercolor", js.undefined)
     
-    @scala.inline
-    def setBordercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bordercolor", js.Array(value :_*))
+    inline def setBordercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "bordercolor", js.Array(value :_*))
     
-    @scala.inline
-    def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
+    inline def setBorderwidth(value: Double): Self = StObject.set(x, "borderwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
+    inline def setBorderwidthUndefined: Self = StObject.set(x, "borderwidth", js.undefined)
     
-    @scala.inline
-    def setShape(value: angular | bullet): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: angular | bullet): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setSteps(value: js.Array[Color]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[Color]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: Color*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Color*): Self = StObject.set(x, "steps", js.Array(value :_*))
     
-    @scala.inline
-    def setThreshold(value: PartialThreshold): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: PartialThreshold): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

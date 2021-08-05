@@ -18,25 +18,19 @@ trait MapIterationEventDetails extends StObject {
 }
 object MapIterationEventDetails {
   
-  @scala.inline
-  def apply(): MapIterationEventDetails = {
+  inline def apply(): MapIterationEventDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapIterationEventDetails]
   }
   
-  @scala.inline
-  implicit class MapIterationEventDetailsMutableBuilder[Self <: MapIterationEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MapIterationEventDetails](x: Self) {
     
-    @scala.inline
-    def setIndex(value: UnsignedInteger): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: UnsignedInteger): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

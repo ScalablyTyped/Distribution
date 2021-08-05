@@ -16,8 +16,7 @@ trait ResourceParameter
 }
 object ResourceParameter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -30,16 +29,12 @@ object ResourceParameter {
     __obj.asInstanceOf[ResourceParameter]
   }
   
-  @scala.inline
-  implicit class ResourceParameterMutableBuilder[Self <: ResourceParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceParameter](x: Self) {
     
-    @scala.inline
-    def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+    inline def setIsRequired(value: Boolean): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ItemDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ItemDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -19,40 +19,29 @@ trait IParameterizedQuery
 }
 object IParameterizedQuery {
   
-  @scala.inline
-  def apply(): IParameterizedQuery = {
+  inline def apply(): IParameterizedQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IParameterizedQuery]
   }
   
-  @scala.inline
-  implicit class IParameterizedQueryMutableBuilder[Self <: IParameterizedQuery] (val x: Self) extends AnyVal {
+  extension [Self <: IParameterizedQuery](x: Self) {
     
-    @scala.inline
-    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
-    @scala.inline
-    def setRowMode(value: Unit | array): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
+    inline def setRowMode(value: Unit | array): Self = StObject.set(x, "rowMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowModeUndefined: Self = StObject.set(x, "rowMode", js.undefined)
+    inline def setRowModeUndefined: Self = StObject.set(x, "rowMode", js.undefined)
     
-    @scala.inline
-    def setText(value: String | QueryFile): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String | QueryFile): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

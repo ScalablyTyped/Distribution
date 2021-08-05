@@ -14,22 +14,17 @@ trait Ip extends StObject {
 }
 object Ip {
   
-  @scala.inline
-  def apply(date: Double, ip: String, user_agent: String): Ip = {
+  inline def apply(date: Double, ip: String, user_agent: String): Ip = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], ip = ip.asInstanceOf[js.Any], user_agent = user_agent.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ip]
   }
   
-  @scala.inline
-  implicit class IpMutableBuilder[Self <: Ip] (val x: Self) extends AnyVal {
+  extension [Self <: Ip](x: Self) {
     
-    @scala.inline
-    def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
+    inline def setUser_agent(value: String): Self = StObject.set(x, "user_agent", value.asInstanceOf[js.Any])
   }
 }

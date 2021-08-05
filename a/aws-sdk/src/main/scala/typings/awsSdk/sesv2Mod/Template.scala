@@ -23,31 +23,23 @@ trait Template extends StObject {
 }
 object Template {
   
-  @scala.inline
-  def apply(): Template = {
+  inline def apply(): Template = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Template]
   }
   
-  @scala.inline
-  implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+  extension [Self <: Template](x: Self) {
     
-    @scala.inline
-    def setTemplateArn(value: AmazonResourceName): Self = StObject.set(x, "TemplateArn", value.asInstanceOf[js.Any])
+    inline def setTemplateArn(value: AmazonResourceName): Self = StObject.set(x, "TemplateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
+    inline def setTemplateArnUndefined: Self = StObject.set(x, "TemplateArn", js.undefined)
     
-    @scala.inline
-    def setTemplateData(value: EmailTemplateData): Self = StObject.set(x, "TemplateData", value.asInstanceOf[js.Any])
+    inline def setTemplateData(value: EmailTemplateData): Self = StObject.set(x, "TemplateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateDataUndefined: Self = StObject.set(x, "TemplateData", js.undefined)
+    inline def setTemplateDataUndefined: Self = StObject.set(x, "TemplateData", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "TemplateName", js.undefined)
   }
 }

@@ -58,73 +58,51 @@ trait DescribeProvisioningTemplateResponse extends StObject {
 }
 object DescribeProvisioningTemplateResponse {
   
-  @scala.inline
-  def apply(): DescribeProvisioningTemplateResponse = {
+  inline def apply(): DescribeProvisioningTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeProvisioningTemplateResponse]
   }
   
-  @scala.inline
-  implicit class DescribeProvisioningTemplateResponseMutableBuilder[Self <: DescribeProvisioningTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeProvisioningTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setDefaultVersionId(value: TemplateVersionId): Self = StObject.set(x, "defaultVersionId", value.asInstanceOf[js.Any])
+    inline def setDefaultVersionId(value: TemplateVersionId): Self = StObject.set(x, "defaultVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionIdUndefined: Self = StObject.set(x, "defaultVersionId", js.undefined)
+    inline def setDefaultVersionIdUndefined: Self = StObject.set(x, "defaultVersionId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: TemplateDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: TemplateDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Enabled): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setPreProvisioningHook(value: ProvisioningHook): Self = StObject.set(x, "preProvisioningHook", value.asInstanceOf[js.Any])
+    inline def setPreProvisioningHook(value: ProvisioningHook): Self = StObject.set(x, "preProvisioningHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreProvisioningHookUndefined: Self = StObject.set(x, "preProvisioningHook", js.undefined)
+    inline def setPreProvisioningHookUndefined: Self = StObject.set(x, "preProvisioningHook", js.undefined)
     
-    @scala.inline
-    def setProvisioningRoleArn(value: RoleArn): Self = StObject.set(x, "provisioningRoleArn", value.asInstanceOf[js.Any])
+    inline def setProvisioningRoleArn(value: RoleArn): Self = StObject.set(x, "provisioningRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningRoleArnUndefined: Self = StObject.set(x, "provisioningRoleArn", js.undefined)
+    inline def setProvisioningRoleArnUndefined: Self = StObject.set(x, "provisioningRoleArn", js.undefined)
     
-    @scala.inline
-    def setTemplateArn(value: TemplateArn): Self = StObject.set(x, "templateArn", value.asInstanceOf[js.Any])
+    inline def setTemplateArn(value: TemplateArn): Self = StObject.set(x, "templateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateArnUndefined: Self = StObject.set(x, "templateArn", js.undefined)
+    inline def setTemplateArnUndefined: Self = StObject.set(x, "templateArn", js.undefined)
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "templateBody", js.undefined)
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "templateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
+    inline def setTemplateNameUndefined: Self = StObject.set(x, "templateName", js.undefined)
   }
 }

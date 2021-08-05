@@ -18,25 +18,19 @@ trait GetItemOutput extends StObject {
 }
 object GetItemOutput {
   
-  @scala.inline
-  def apply(): GetItemOutput = {
+  inline def apply(): GetItemOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetItemOutput]
   }
   
-  @scala.inline
-  implicit class GetItemOutputMutableBuilder[Self <: GetItemOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetItemOutput](x: Self) {
     
-    @scala.inline
-    def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+    inline def setConsumedCapacity(value: ConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+    inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
     
-    @scala.inline
-    def setItem(value: AttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: AttributeMap): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
   }
 }

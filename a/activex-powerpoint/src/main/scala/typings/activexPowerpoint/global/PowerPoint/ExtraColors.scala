@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.ExtraColors")
 @js.native
-class ExtraColors protected ()
+/* private */ class ExtraColors ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.ExtraColors {
   
@@ -29,7 +29,7 @@ class ExtraColors protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.ExtraColors_typekey")
   var PowerPointDotExtraColors_typekey: typings.activexPowerpoint.PowerPoint.ExtraColors = js.native
 }

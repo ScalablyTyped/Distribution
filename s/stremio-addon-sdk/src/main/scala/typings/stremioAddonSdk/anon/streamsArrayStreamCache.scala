@@ -28,37 +28,27 @@ trait streamsArrayStreamCache extends StObject {
 }
 object streamsArrayStreamCache {
   
-  @scala.inline
-  def apply(streams: js.Array[Stream]): streamsArrayStreamCache = {
+  inline def apply(streams: js.Array[Stream]): streamsArrayStreamCache = {
     val __obj = js.Dynamic.literal(streams = streams.asInstanceOf[js.Any])
     __obj.asInstanceOf[streamsArrayStreamCache]
   }
   
-  @scala.inline
-  implicit class streamsArrayStreamCacheMutableBuilder[Self <: streamsArrayStreamCache] (val x: Self) extends AnyVal {
+  extension [Self <: streamsArrayStreamCache](x: Self) {
     
-    @scala.inline
-    def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
+    inline def setCacheMaxAge(value: Double): Self = StObject.set(x, "cacheMaxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
+    inline def setCacheMaxAgeUndefined: Self = StObject.set(x, "cacheMaxAge", js.undefined)
     
-    @scala.inline
-    def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
+    inline def setStaleError(value: Double): Self = StObject.set(x, "staleError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
+    inline def setStaleErrorUndefined: Self = StObject.set(x, "staleError", js.undefined)
     
-    @scala.inline
-    def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
+    inline def setStaleRevalidate(value: Double): Self = StObject.set(x, "staleRevalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
+    inline def setStaleRevalidateUndefined: Self = StObject.set(x, "staleRevalidate", js.undefined)
     
-    @scala.inline
-    def setStreams(value: js.Array[Stream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+    inline def setStreams(value: js.Array[Stream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+    inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
   }
 }

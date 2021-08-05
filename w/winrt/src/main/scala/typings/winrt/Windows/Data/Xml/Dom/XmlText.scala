@@ -9,8 +9,7 @@ trait XmlText
      with IXmlText
 object XmlText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendChild: IXmlNode => IXmlNode,
     appendData: String => Unit,
     attributes: XmlNamedNodeMap,

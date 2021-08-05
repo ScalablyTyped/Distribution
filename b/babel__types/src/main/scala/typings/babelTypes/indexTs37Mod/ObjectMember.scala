@@ -16,8 +16,7 @@ trait ObjectMember
      with _Node
 object ObjectMember {
   
-  @scala.inline
-  def ObjectMethod_(
+  inline def ObjectMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -31,8 +30,7 @@ object ObjectMember {
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ObjectMethod_]
   }
   
-  @scala.inline
-  def ObjectProperty_(
+  inline def ObjectProperty_(
     computed: Boolean,
     key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
     shorthand: Boolean,

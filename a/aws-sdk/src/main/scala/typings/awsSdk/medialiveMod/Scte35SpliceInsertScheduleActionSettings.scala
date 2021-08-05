@@ -18,22 +18,17 @@ trait Scte35SpliceInsertScheduleActionSettings extends StObject {
 }
 object Scte35SpliceInsertScheduleActionSettings {
   
-  @scala.inline
-  def apply(SpliceEventId: longMin0Max4294967295): Scte35SpliceInsertScheduleActionSettings = {
+  inline def apply(SpliceEventId: longMin0Max4294967295): Scte35SpliceInsertScheduleActionSettings = {
     val __obj = js.Dynamic.literal(SpliceEventId = SpliceEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scte35SpliceInsertScheduleActionSettings]
   }
   
-  @scala.inline
-  implicit class Scte35SpliceInsertScheduleActionSettingsMutableBuilder[Self <: Scte35SpliceInsertScheduleActionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: Scte35SpliceInsertScheduleActionSettings](x: Self) {
     
-    @scala.inline
-    def setDuration(value: longMin0Max8589934591): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: longMin0Max8589934591): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setSpliceEventId(value: longMin0Max4294967295): Self = StObject.set(x, "SpliceEventId", value.asInstanceOf[js.Any])
+    inline def setSpliceEventId(value: longMin0Max4294967295): Self = StObject.set(x, "SpliceEventId", value.asInstanceOf[js.Any])
   }
 }

@@ -89,24 +89,19 @@ object CSG {
     @JSGlobal("CSG.ConnectorList.defaultNormal")
     @js.native
     def defaultNormal: js.Array[Double] = js.native
-    @scala.inline
-    def defaultNormal_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNormal")(x.asInstanceOf[js.Any])
+    inline def defaultNormal_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNormal")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def fromPath2D(path2D: typings.std.Path2D, arg1: js.Any, arg2: js.Any): typings.openjscad.CSG.ConnectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPath2D")(path2D.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.ConnectorList]
+    inline def fromPath2D(path2D: typings.std.Path2D, arg1: js.Any, arg2: js.Any): typings.openjscad.CSG.ConnectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPath2D")(path2D.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.ConnectorList]
     
     /* static member */
-    @scala.inline
-    def fromPath2DExplicit(path2D: js.Any, angleIsh: js.Any): typings.openjscad.CSG.ConnectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromPath2DExplicit")(path2D.asInstanceOf[js.Any], angleIsh.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.ConnectorList]
+    inline def fromPath2DExplicit(path2D: js.Any, angleIsh: js.Any): typings.openjscad.CSG.ConnectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromPath2DExplicit")(path2D.asInstanceOf[js.Any], angleIsh.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.ConnectorList]
     
     /* static member */
-    @scala.inline
-    def fromPath2DTangents(path2D: js.Any, start: js.Any, end: js.Any): typings.openjscad.CSG.ConnectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromPath2DTangents")(path2D.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.ConnectorList]
+    inline def fromPath2DTangents(path2D: js.Any, start: js.Any, end: js.Any): typings.openjscad.CSG.ConnectorList = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromPath2DTangents")(path2D.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.ConnectorList]
   }
   
-  @scala.inline
-  def IsFloat(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFloat")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def IsFloat(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsFloat")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSGlobal("CSG.Line2D")
   @js.native
@@ -122,8 +117,7 @@ object CSG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromPoints(p1: typings.openjscad.CSG.Vector2D, p2: typings.openjscad.CSG.Vector2D): typings.openjscad.CSG.Line2D = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Line2D]
+    inline def fromPoints(p1: typings.openjscad.CSG.Vector2D, p2: typings.openjscad.CSG.Vector2D): typings.openjscad.CSG.Line2D = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Line2D]
   }
   
   @JSGlobal("CSG.Line3D")
@@ -140,12 +134,10 @@ object CSG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromPlanes(p1: typings.openjscad.CSG.Plane, p2: typings.openjscad.CSG.Plane): typings.openjscad.CSG.Line3D = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPlanes")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Line3D]
+    inline def fromPlanes(p1: typings.openjscad.CSG.Plane, p2: typings.openjscad.CSG.Plane): typings.openjscad.CSG.Line3D = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPlanes")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Line3D]
     
     /* static member */
-    @scala.inline
-    def fromPoints(p1: typings.openjscad.CSG.Vector3D, p2: typings.openjscad.CSG.Vector3D): typings.openjscad.CSG.Line3D = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Line3D]
+    inline def fromPoints(p1: typings.openjscad.CSG.Vector3D, p2: typings.openjscad.CSG.Vector3D): typings.openjscad.CSG.Line3D = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Line3D]
   }
   
   @JSGlobal("CSG.Matrix4x4")
@@ -189,46 +181,36 @@ object CSG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def mirroring(plane: typings.openjscad.CSG.Plane): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("mirroring")(plane.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
+    inline def mirroring(plane: typings.openjscad.CSG.Plane): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("mirroring")(plane.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
     
     /* static member */
-    @scala.inline
-    def rotation(
+    inline def rotation(
       rotationCenter: typings.openjscad.CSG.Vector3D,
       rotationAxis: typings.openjscad.CSG.Vector3D,
       degrees: Double
     ): typings.openjscad.CSG.Matrix4x4 = (^.asInstanceOf[js.Dynamic].applyDynamic("rotation")(rotationCenter.asInstanceOf[js.Any], rotationAxis.asInstanceOf[js.Any], degrees.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
     
     /* static member */
-    @scala.inline
-    def rotationX(degrees: Double): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("rotationX")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
+    inline def rotationX(degrees: Double): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("rotationX")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
     
     /* static member */
-    @scala.inline
-    def rotationY(degrees: Double): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("rotationY")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
+    inline def rotationY(degrees: Double): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("rotationY")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
     
     /* static member */
-    @scala.inline
-    def rotationZ(degrees: Double): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("rotationZ")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
+    inline def rotationZ(degrees: Double): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("rotationZ")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
     
     /* static member */
-    @scala.inline
-    def scaling(v: js.Array[Double]): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("scaling")(v.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
+    inline def scaling(v: js.Array[Double]): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("scaling")(v.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
     /* static member */
-    @scala.inline
-    def scaling(v: typings.openjscad.CSG.Vector3D): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("scaling")(v.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
+    inline def scaling(v: typings.openjscad.CSG.Vector3D): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("scaling")(v.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
     
     /* static member */
-    @scala.inline
-    def translation(v: js.Array[Double]): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("translation")(v.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
+    inline def translation(v: js.Array[Double]): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("translation")(v.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
     /* static member */
-    @scala.inline
-    def translation(v: typings.openjscad.CSG.Vector3D): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("translation")(v.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
+    inline def translation(v: typings.openjscad.CSG.Vector3D): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("translation")(v.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Matrix4x4]
     
     /* static member */
-    @scala.inline
-    def unity(): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("unity")().asInstanceOf[typings.openjscad.CSG.Matrix4x4]
+    inline def unity(): typings.openjscad.CSG.Matrix4x4 = ^.asInstanceOf[js.Dynamic].applyDynamic("unity")().asInstanceOf[typings.openjscad.CSG.Matrix4x4]
   }
   
   @JSGlobal("CSG.Node")
@@ -287,12 +269,10 @@ object CSG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def GetCartesian(xaxisid: String, yaxisid: String): typings.openjscad.CSG.OrthoNormalBasis = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCartesian")(xaxisid.asInstanceOf[js.Any], yaxisid.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.OrthoNormalBasis]
+    inline def GetCartesian(xaxisid: String, yaxisid: String): typings.openjscad.CSG.OrthoNormalBasis = (^.asInstanceOf[js.Dynamic].applyDynamic("GetCartesian")(xaxisid.asInstanceOf[js.Any], yaxisid.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.OrthoNormalBasis]
     
     /* static member */
-    @scala.inline
-    def Z0Plane(): typings.openjscad.CSG.OrthoNormalBasis = ^.asInstanceOf[js.Dynamic].applyDynamic("Z0Plane")().asInstanceOf[typings.openjscad.CSG.OrthoNormalBasis]
+    inline def Z0Plane(): typings.openjscad.CSG.OrthoNormalBasis = ^.asInstanceOf[js.Dynamic].applyDynamic("Z0Plane")().asInstanceOf[typings.openjscad.CSG.OrthoNormalBasis]
   }
   
   @JSGlobal("CSG.Path2D")
@@ -310,8 +290,7 @@ object CSG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def arc(options: IArcOptions): typings.openjscad.CSG.Path2D = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Path2D]
+    inline def arc(options: IArcOptions): typings.openjscad.CSG.Path2D = ^.asInstanceOf[js.Dynamic].applyDynamic("arc")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Path2D]
   }
   
   @JSGlobal("CSG.Plane")
@@ -331,39 +310,32 @@ object CSG {
     @JSGlobal("CSG.Plane.EPSILON")
     @js.native
     def EPSILON: Double = js.native
-    @scala.inline
-    def EPSILON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPSILON")(x.asInstanceOf[js.Any])
+    inline def EPSILON_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EPSILON")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def anyPlaneFromVector3Ds(
+    inline def anyPlaneFromVector3Ds(
       a: typings.openjscad.CSG.Vector3D,
       b: typings.openjscad.CSG.Vector3D,
       c: typings.openjscad.CSG.Vector3D
     ): typings.openjscad.CSG.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("anyPlaneFromVector3Ds")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Plane]
     
     /* static member */
-    @scala.inline
-    def fromNormalAndPoint(normal: js.Array[Double], point: js.Array[Double]): typings.openjscad.CSG.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNormalAndPoint")(normal.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Plane]
+    inline def fromNormalAndPoint(normal: js.Array[Double], point: js.Array[Double]): typings.openjscad.CSG.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNormalAndPoint")(normal.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Plane]
     /* static member */
-    @scala.inline
-    def fromNormalAndPoint(normal: typings.openjscad.CSG.Vector3D, point: typings.openjscad.CSG.Vector3D): typings.openjscad.CSG.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNormalAndPoint")(normal.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Plane]
+    inline def fromNormalAndPoint(normal: typings.openjscad.CSG.Vector3D, point: typings.openjscad.CSG.Vector3D): typings.openjscad.CSG.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNormalAndPoint")(normal.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Plane]
     
     /* static member */
-    @scala.inline
-    def fromObject(obj: js.Any): typings.openjscad.CSG.Plane = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Plane]
+    inline def fromObject(obj: js.Any): typings.openjscad.CSG.Plane = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Plane]
     
     /* static member */
-    @scala.inline
-    def fromPoints(
+    inline def fromPoints(
       a: typings.openjscad.CSG.Vector3D,
       b: typings.openjscad.CSG.Vector3D,
       c: typings.openjscad.CSG.Vector3D
     ): typings.openjscad.CSG.Plane = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Plane]
     
     /* static member */
-    @scala.inline
-    def fromVector3Ds(
+    inline def fromVector3Ds(
       a: typings.openjscad.CSG.Vector3D,
       b: typings.openjscad.CSG.Vector3D,
       c: typings.openjscad.CSG.Vector3D
@@ -420,23 +392,17 @@ object CSG {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromColor(args: js.Any): typings.openjscad.CSG.Polygon.Shared = ^.asInstanceOf[js.Dynamic].applyDynamic("fromColor")(args.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Polygon.Shared]
+      inline def fromColor(args: js.Any): typings.openjscad.CSG.Polygon.Shared = ^.asInstanceOf[js.Dynamic].applyDynamic("fromColor")(args.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Polygon.Shared]
       
       /* static member */
-      @scala.inline
-      def fromObject(obj: js.Any): typings.openjscad.CSG.Polygon.Shared = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Polygon.Shared]
+      inline def fromObject(obj: js.Any): typings.openjscad.CSG.Polygon.Shared = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Polygon.Shared]
     }
     
     /* static member */
-    @scala.inline
-    def createFromPoints(points: js.Array[js.Array[Double]]): typings.openjscad.CSG.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Polygon]
-    @scala.inline
-    def createFromPoints(points: js.Array[js.Array[Double]], shared: Unit, plane: typings.openjscad.CSG.Plane): typings.openjscad.CSG.Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromPoints")(points.asInstanceOf[js.Any], shared.asInstanceOf[js.Any], plane.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Polygon]
-    @scala.inline
-    def createFromPoints(points: js.Array[js.Array[Double]], shared: typings.openjscad.CSG.Polygon.Shared): typings.openjscad.CSG.Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromPoints")(points.asInstanceOf[js.Any], shared.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Polygon]
-    @scala.inline
-    def createFromPoints(
+    inline def createFromPoints(points: js.Array[js.Array[Double]]): typings.openjscad.CSG.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPoints")(points.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Polygon]
+    inline def createFromPoints(points: js.Array[js.Array[Double]], shared: Unit, plane: typings.openjscad.CSG.Plane): typings.openjscad.CSG.Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromPoints")(points.asInstanceOf[js.Any], shared.asInstanceOf[js.Any], plane.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Polygon]
+    inline def createFromPoints(points: js.Array[js.Array[Double]], shared: typings.openjscad.CSG.Polygon.Shared): typings.openjscad.CSG.Polygon = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromPoints")(points.asInstanceOf[js.Any], shared.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Polygon]
+    inline def createFromPoints(
       points: js.Array[js.Array[Double]],
       shared: typings.openjscad.CSG.Polygon.Shared,
       plane: typings.openjscad.CSG.Plane
@@ -446,24 +412,19 @@ object CSG {
     @JSGlobal("CSG.Polygon.defaultShared")
     @js.native
     def defaultShared: typings.openjscad.CSG.Polygon.Shared = js.native
-    @scala.inline
-    def defaultShared_=(x: typings.openjscad.CSG.Polygon.Shared): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultShared")(x.asInstanceOf[js.Any])
+    inline def defaultShared_=(x: typings.openjscad.CSG.Polygon.Shared): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultShared")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def fromObject(obj: js.Any): typings.openjscad.CSG.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Polygon]
+    inline def fromObject(obj: js.Any): typings.openjscad.CSG.Polygon = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Polygon]
     
     /* static member */
-    @scala.inline
-    def isConvexPoint(prevpoint: js.Any, point: js.Any, nextpoint: js.Any, normal: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isConvexPoint")(prevpoint.asInstanceOf[js.Any], point.asInstanceOf[js.Any], nextpoint.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isConvexPoint(prevpoint: js.Any, point: js.Any, nextpoint: js.Any, normal: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isConvexPoint")(prevpoint.asInstanceOf[js.Any], point.asInstanceOf[js.Any], nextpoint.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def isStrictlyConvexPoint(prevpoint: js.Any, point: js.Any, nextpoint: js.Any, normal: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrictlyConvexPoint")(prevpoint.asInstanceOf[js.Any], point.asInstanceOf[js.Any], nextpoint.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def isStrictlyConvexPoint(prevpoint: js.Any, point: js.Any, nextpoint: js.Any, normal: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrictlyConvexPoint")(prevpoint.asInstanceOf[js.Any], point.asInstanceOf[js.Any], nextpoint.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @scala.inline
-    def verticesConvex(vertices: js.Array[typings.openjscad.CSG.Vertex], planenormal: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verticesConvex")(vertices.asInstanceOf[js.Any], planenormal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def verticesConvex(vertices: js.Array[typings.openjscad.CSG.Vertex], planenormal: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verticesConvex")(vertices.asInstanceOf[js.Any], planenormal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   @JSGlobal("CSG.Polygon2D")
@@ -599,16 +560,13 @@ object CSG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def addFrom(result: js.Any, otherproperties: typings.openjscad.CSG.Properties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFrom")(result.asInstanceOf[js.Any], otherproperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addFrom(result: js.Any, otherproperties: typings.openjscad.CSG.Properties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFrom")(result.asInstanceOf[js.Any], otherproperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def cloneObj(source: js.Any, result: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneObj")(source.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def cloneObj(source: js.Any, result: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneObj")(source.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def transformObj(source: js.Any, result: js.Any, matrix4x4: typings.openjscad.CSG.Matrix4x4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformObj")(source.asInstanceOf[js.Any], result.asInstanceOf[js.Any], matrix4x4.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def transformObj(source: js.Any, result: js.Any, matrix4x4: typings.openjscad.CSG.Matrix4x4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformObj")(source.asInstanceOf[js.Any], result.asInstanceOf[js.Any], matrix4x4.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("CSG.Tree")
@@ -635,20 +593,16 @@ object CSG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def Create(x: Double, y: Double): typings.openjscad.CSG.Vector2D = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Vector2D]
+    inline def Create(x: Double, y: Double): typings.openjscad.CSG.Vector2D = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Vector2D]
     
     /* static member */
-    @scala.inline
-    def fromAngle(radians: Double): typings.openjscad.CSG.Vector2D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAngle")(radians.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Vector2D]
+    inline def fromAngle(radians: Double): typings.openjscad.CSG.Vector2D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAngle")(radians.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Vector2D]
     
     /* static member */
-    @scala.inline
-    def fromAngleDegrees(degrees: Double): typings.openjscad.CSG.Vector2D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAngleDegrees")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Vector2D]
+    inline def fromAngleDegrees(degrees: Double): typings.openjscad.CSG.Vector2D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAngleDegrees")(degrees.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Vector2D]
     
     /* static member */
-    @scala.inline
-    def fromAngleRadians(radians: Double): typings.openjscad.CSG.Vector2D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAngleRadians")(radians.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Vector2D]
+    inline def fromAngleRadians(radians: Double): typings.openjscad.CSG.Vector2D = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAngleRadians")(radians.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Vector2D]
   }
   
   @JSGlobal("CSG.Vector3D")
@@ -669,8 +623,7 @@ object CSG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def Create(x: Double, y: Double, z: Double): typings.openjscad.CSG.Vector3D = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Vector3D]
+    inline def Create(x: Double, y: Double, z: Double): typings.openjscad.CSG.Vector3D = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Vector3D]
   }
   
   @JSGlobal("CSG.Vertex")
@@ -687,48 +640,38 @@ object CSG {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromObject(obj: js.Any): typings.openjscad.CSG.Vertex = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Vertex]
+    inline def fromObject(obj: js.Any): typings.openjscad.CSG.Vertex = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG.Vertex]
   }
   
-  @scala.inline
-  def cube(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("cube")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def cube(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("cube")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
-  @scala.inline
-  def cylinder(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("cylinder")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def cylinder(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("cylinder")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
   /* static member */
   @JSGlobal("CSG.defaultResolution2D")
   @js.native
   def defaultResolution2D: Double = js.native
-  @scala.inline
-  def defaultResolution2D_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolution2D")(x.asInstanceOf[js.Any])
+  inline def defaultResolution2D_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolution2D")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("CSG.defaultResolution3D")
   @js.native
   def defaultResolution3D: Double = js.native
-  @scala.inline
-  def defaultResolution3D_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolution3D")(x.asInstanceOf[js.Any])
+  inline def defaultResolution3D_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolution3D")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def fnNumberSort(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fnNumberSort")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def fnNumberSort(a: js.Any, b: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fnNumberSort")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def fromCompactBinary(bin: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompactBinary")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def fromCompactBinary(bin: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompactBinary")(bin.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
   /* static member */
-  @scala.inline
-  def fromObject(obj: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def fromObject(obj: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
   /* static member */
-  @scala.inline
-  def fromPolygons(polygons: js.Array[typings.openjscad.CSG.Polygon]): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPolygons")(polygons.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def fromPolygons(polygons: js.Array[typings.openjscad.CSG.Polygon]): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPolygons")(polygons.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
   /* static member */
-  @scala.inline
-  def fromSlices(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSlices")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def fromSlices(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSlices")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
   @JSGlobal("CSG.fuzzyCSGFactory")
   @js.native
@@ -778,60 +721,44 @@ object CSG {
     var multiplier: Double = js.native
   }
   
-  @scala.inline
-  def getTag(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTag")().asInstanceOf[Double]
+  inline def getTag(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTag")().asInstanceOf[Double]
   
-  @scala.inline
-  def interpolateBetween2DPointsForY(point1: typings.openjscad.CSG.Vector2D, point2: typings.openjscad.CSG.Vector2D, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBetween2DPointsForY")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def interpolateBetween2DPointsForY(point1: typings.openjscad.CSG.Vector2D, point2: typings.openjscad.CSG.Vector2D, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolateBetween2DPointsForY")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def parseOption(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOption")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseOption(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOption")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parseOptionAs2DVector(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAs2DVector")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseOptionAs2DVector(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAs2DVector")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parseOptionAs3DVector(options: js.Any, optionname: js.Any, defaultvalue: js.Any): typings.openjscad.CSG.Vector3D = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAs3DVector")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Vector3D]
+  inline def parseOptionAs3DVector(options: js.Any, optionname: js.Any, defaultvalue: js.Any): typings.openjscad.CSG.Vector3D = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAs3DVector")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[typings.openjscad.CSG.Vector3D]
   
-  @scala.inline
-  def parseOptionAs3DVectorList(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAs3DVectorList")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseOptionAs3DVectorList(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAs3DVectorList")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parseOptionAsBool(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAsBool")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseOptionAsBool(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAsBool")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parseOptionAsFloat(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAsFloat")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseOptionAsFloat(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAsFloat")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def parseOptionAsInt(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAsInt")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseOptionAsInt(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseOptionAsInt")(options.asInstanceOf[js.Any], optionname.asInstanceOf[js.Any], defaultvalue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * polyhedron accepts openscad style arguments. I.e. define face vertices clockwise looking from outside
     */
-  @scala.inline
-  def polyhedron(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("polyhedron")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def polyhedron(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("polyhedron")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
-  @scala.inline
-  def reTesselateCoplanarPolygons(
+  inline def reTesselateCoplanarPolygons(
     sourcepolygons: js.Array[typings.openjscad.CSG.Polygon],
     destpolygons: js.Array[typings.openjscad.CSG.Polygon]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reTesselateCoplanarPolygons")(sourcepolygons.asInstanceOf[js.Any], destpolygons.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def roundedCube(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("roundedCube")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def roundedCube(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("roundedCube")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
-  @scala.inline
-  def roundedCylinder(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("roundedCylinder")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def roundedCylinder(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("roundedCylinder")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
-  @scala.inline
-  def solve2Linear(a: js.Any, b: js.Any, c: js.Any, d: js.Any, u: js.Any, v: js.Any): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("solve2Linear")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], u.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def solve2Linear(a: js.Any, b: js.Any, c: js.Any, d: js.Any, u: js.Any, v: js.Any): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("solve2Linear")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], u.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def sphere(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("sphere")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
+  inline def sphere(options: js.Any): typings.openjscad.CSG = ^.asInstanceOf[js.Dynamic].applyDynamic("sphere")(options.asInstanceOf[js.Any]).asInstanceOf[typings.openjscad.CSG]
   
   @JSGlobal("CSG.staticTag")
   @js.native
   def staticTag: Double = js.native
-  @scala.inline
-  def staticTag_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("staticTag")(x.asInstanceOf[js.Any])
+  inline def staticTag_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("staticTag")(x.asInstanceOf[js.Any])
 }

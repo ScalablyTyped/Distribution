@@ -22,44 +22,32 @@ object badgePropsTypeMod {
   }
   object BadgePropsTypes {
     
-    @scala.inline
-    def apply(): BadgePropsTypes = {
+    inline def apply(): BadgePropsTypes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BadgePropsTypes]
     }
     
-    @scala.inline
-    implicit class BadgePropsTypesMutableBuilder[Self <: BadgePropsTypes] (val x: Self) extends AnyVal {
+    extension [Self <: BadgePropsTypes](x: Self) {
       
-      @scala.inline
-      def setCorner(value: Boolean): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
+      inline def setCorner(value: Boolean): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerUndefined: Self = StObject.set(x, "corner", js.undefined)
+      inline def setCornerUndefined: Self = StObject.set(x, "corner", js.undefined)
       
-      @scala.inline
-      def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+      inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+      inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
       
-      @scala.inline
-      def setOverflowCount(value: Double): Self = StObject.set(x, "overflowCount", value.asInstanceOf[js.Any])
+      inline def setOverflowCount(value: Double): Self = StObject.set(x, "overflowCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowCountUndefined: Self = StObject.set(x, "overflowCount", js.undefined)
+      inline def setOverflowCountUndefined: Self = StObject.set(x, "overflowCount", js.undefined)
       
-      @scala.inline
-      def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

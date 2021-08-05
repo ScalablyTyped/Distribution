@@ -28,8 +28,7 @@ trait XCellAddressable
 }
 object XCellAddressable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CellAddress: CellAddress,
     acquire: () => Unit,
     getCellAddress: () => CellAddress,
@@ -40,13 +39,10 @@ object XCellAddressable {
     __obj.asInstanceOf[XCellAddressable]
   }
   
-  @scala.inline
-  implicit class XCellAddressableMutableBuilder[Self <: XCellAddressable] (val x: Self) extends AnyVal {
+  extension [Self <: XCellAddressable](x: Self) {
     
-    @scala.inline
-    def setCellAddress(value: CellAddress): Self = StObject.set(x, "CellAddress", value.asInstanceOf[js.Any])
+    inline def setCellAddress(value: CellAddress): Self = StObject.set(x, "CellAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCellAddress(value: () => CellAddress): Self = StObject.set(x, "getCellAddress", js.Any.fromFunction0(value))
+    inline def setGetCellAddress(value: () => CellAddress): Self = StObject.set(x, "getCellAddress", js.Any.fromFunction0(value))
   }
 }

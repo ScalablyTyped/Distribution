@@ -20,16 +20,13 @@ trait templates extends StObject {
 }
 object templates {
   
-  @scala.inline
-  def apply(getTemplates: templatesGetTemplatesParams => js.Promise[Templates_]): templates = {
+  inline def apply(getTemplates: templatesGetTemplatesParams => js.Promise[Templates_]): templates = {
     val __obj = js.Dynamic.literal(getTemplates = js.Any.fromFunction1(getTemplates))
     __obj.asInstanceOf[templates]
   }
   
-  @scala.inline
-  implicit class templatesMutableBuilder[Self <: templates] (val x: Self) extends AnyVal {
+  extension [Self <: templates](x: Self) {
     
-    @scala.inline
-    def setGetTemplates(value: templatesGetTemplatesParams => js.Promise[Templates_]): Self = StObject.set(x, "getTemplates", js.Any.fromFunction1(value))
+    inline def setGetTemplates(value: templatesGetTemplatesParams => js.Promise[Templates_]): Self = StObject.set(x, "getTemplates", js.Any.fromFunction1(value))
   }
 }

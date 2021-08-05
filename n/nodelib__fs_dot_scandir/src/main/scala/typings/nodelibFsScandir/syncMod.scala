@@ -12,12 +12,9 @@ object syncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def read(directory: String, settings: default): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
+  inline def read(directory: String, settings: default): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   
-  @scala.inline
-  def readdir(directory: String, settings: default): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
+  inline def readdir(directory: String, settings: default): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   
-  @scala.inline
-  def readdirWithFileTypes(directory: String, settings: default): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirWithFileTypes")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
+  inline def readdirWithFileTypes(directory: String, settings: default): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirWithFileTypes")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
 }

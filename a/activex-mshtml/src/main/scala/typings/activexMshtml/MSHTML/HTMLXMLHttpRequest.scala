@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait HTMLXMLHttpRequest extends StObject {
   
-  @JSName("MSHTML.HTMLXMLHttpRequest_typekey")
+  /* private */ @JSName("MSHTML.HTMLXMLHttpRequest_typekey")
   var MSHTMLDotHTMLXMLHttpRequest_typekey: HTMLXMLHttpRequest = js.native
   
   def abort(): Unit = js.native

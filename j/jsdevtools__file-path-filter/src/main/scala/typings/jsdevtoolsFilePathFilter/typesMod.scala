@@ -17,11 +17,9 @@ object typesMod {
   trait Filter extends StObject
   object Filter {
     
-    @scala.inline
-    def exclude: typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.exclude = "exclude".asInstanceOf[typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.exclude]
+    inline def exclude: typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.exclude = "exclude".asInstanceOf[typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.exclude]
     
-    @scala.inline
-    def include: typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.include = "include".asInstanceOf[typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.include]
+    inline def include: typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.include = "include".asInstanceOf[typings.jsdevtoolsFilePathFilter.jsdevtoolsFilePathFilterStrings.include]
   }
   
   type FilterCriteria = FilterCriterion | js.Array[FilterCriterion]
@@ -42,20 +40,16 @@ object typesMod {
   }
   object Filters {
     
-    @scala.inline
-    def apply[T](exclude: T, include: T): Filters[T] = {
+    inline def apply[T](exclude: T, include: T): Filters[T] = {
       val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], include = include.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filters[T]]
     }
     
-    @scala.inline
-    implicit class FiltersMutableBuilder[Self <: Filters[?], T] (val x: Self & Filters[T]) extends AnyVal {
+    extension [Self <: Filters[?], T](x: Self & Filters[T]) {
       
-      @scala.inline
-      def setExclude(value: T): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: T): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclude(value: T): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: T): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     }
   }
   
@@ -85,26 +79,20 @@ object typesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setMap(value: MapFunction): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: MapFunction): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
+      inline def setSep(value: String): Self = StObject.set(x, "sep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
+      inline def setSepUndefined: Self = StObject.set(x, "sep", js.undefined)
     }
   }
 }

@@ -15,25 +15,19 @@ trait SpreadsheetExcelExportEvent
 }
 object SpreadsheetExcelExportEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetExcelExportEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Spreadsheet): SpreadsheetExcelExportEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetExcelExportEvent]
   }
   
-  @scala.inline
-  implicit class SpreadsheetExcelExportEventMutableBuilder[Self <: SpreadsheetExcelExportEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetExcelExportEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setWorkbook(value: Workbook): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: Workbook): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkbookUndefined: Self = StObject.set(x, "workbook", js.undefined)
+    inline def setWorkbookUndefined: Self = StObject.set(x, "workbook", js.undefined)
   }
 }

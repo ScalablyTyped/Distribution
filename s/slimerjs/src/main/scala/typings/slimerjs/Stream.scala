@@ -24,8 +24,7 @@ trait Stream extends StObject {
 }
 object Stream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     atEnd: () => Boolean,
     close: () => Unit,
     flush: () => Unit,
@@ -39,31 +38,22 @@ object Stream {
     __obj.asInstanceOf[Stream]
   }
   
-  @scala.inline
-  implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+  extension [Self <: Stream](x: Self) {
     
-    @scala.inline
-    def setAtEnd(value: () => Boolean): Self = StObject.set(x, "atEnd", js.Any.fromFunction0(value))
+    inline def setAtEnd(value: () => Boolean): Self = StObject.set(x, "atEnd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRead(value: () => String): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+    inline def setRead(value: () => String): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadLine(value: () => String): Self = StObject.set(x, "readLine", js.Any.fromFunction0(value))
+    inline def setReadLine(value: () => String): Self = StObject.set(x, "readLine", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
+    inline def setSeek(value: Double => Unit): Self = StObject.set(x, "seek", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWriteLine(value: String => Unit): Self = StObject.set(x, "writeLine", js.Any.fromFunction1(value))
+    inline def setWriteLine(value: String => Unit): Self = StObject.set(x, "writeLine", js.Any.fromFunction1(value))
   }
 }

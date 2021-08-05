@@ -15,19 +15,15 @@ trait TextSegment extends StObject {
 }
 object TextSegment {
   
-  @scala.inline
-  def apply(length: Double, startPosition: Double): TextSegment = {
+  inline def apply(length: Double, startPosition: Double): TextSegment = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], startPosition = startPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSegment]
   }
   
-  @scala.inline
-  implicit class TextSegmentMutableBuilder[Self <: TextSegment] (val x: Self) extends AnyVal {
+  extension [Self <: TextSegment](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
   }
 }

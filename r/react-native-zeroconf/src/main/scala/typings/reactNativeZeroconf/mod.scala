@@ -36,8 +36,7 @@ object mod {
   }
   object Service {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addresses: js.Array[String],
       fullName: String,
       host: String,
@@ -49,29 +48,21 @@ object mod {
       __obj.asInstanceOf[Service]
     }
     
-    @scala.inline
-    implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+    extension [Self <: Service](x: Self) {
       
-      @scala.inline
-      def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+      inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
+      inline def setAddressesVarargs(value: String*): Self = StObject.set(x, "addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+      inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxt(value: StringDictionary[js.Any]): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
+      inline def setTxt(value: StringDictionary[js.Any]): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
     }
   }
   

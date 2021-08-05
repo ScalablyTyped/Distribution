@@ -9,15 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(config: SentryConfig): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def apply(config: SentryConfig): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("bristol-sentry", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatter(opts: js.Object, severity: String, date: Date, elems: js.Array[js.Any]): FormattedLog = (^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(opts.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], date.asInstanceOf[js.Any], elems.asInstanceOf[js.Any])).asInstanceOf[FormattedLog]
+  inline def formatter(opts: js.Object, severity: String, date: Date, elems: js.Array[js.Any]): FormattedLog = (^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(opts.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], date.asInstanceOf[js.Any], elems.asInstanceOf[js.Any])).asInstanceOf[FormattedLog]
   
   trait FormattedLog extends StObject {
     
@@ -29,29 +27,22 @@ object mod {
   }
   object FormattedLog {
     
-    @scala.inline
-    def apply(extra: js.Array[js.Object], message: String): FormattedLog = {
+    inline def apply(extra: js.Array[js.Object], message: String): FormattedLog = {
       val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormattedLog]
     }
     
-    @scala.inline
-    implicit class FormattedLogMutableBuilder[Self <: FormattedLog] (val x: Self) extends AnyVal {
+    extension [Self <: FormattedLog](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setExtra(value: js.Array[js.Object]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+      inline def setExtra(value: js.Array[js.Object]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraVarargs(value: js.Object*): Self = StObject.set(x, "extra", js.Array(value :_*))
+      inline def setExtraVarargs(value: js.Object*): Self = StObject.set(x, "extra", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,20 +52,16 @@ object mod {
   }
   object SentryConfig {
     
-    @scala.inline
-    def apply(): SentryConfig = {
+    inline def apply(): SentryConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SentryConfig]
     }
     
-    @scala.inline
-    implicit class SentryConfigMutableBuilder[Self <: SentryConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SentryConfig](x: Self) {
       
-      @scala.inline
-      def setClient(value: js.Object | Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: js.Object | Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
     }
   }
 }

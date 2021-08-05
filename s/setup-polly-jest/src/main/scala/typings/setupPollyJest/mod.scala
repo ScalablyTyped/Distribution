@@ -12,10 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setupPolly(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPolly")().asInstanceOf[Context]
-  @scala.inline
-  def setupPolly(config: PollyConfig): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPolly")(config.asInstanceOf[js.Any]).asInstanceOf[Context]
+  inline def setupPolly(): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPolly")().asInstanceOf[Context]
+  inline def setupPolly(config: PollyConfig): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("setupPolly")(config.asInstanceOf[js.Any]).asInstanceOf[Context]
   
   trait Context extends StObject {
     
@@ -23,17 +21,14 @@ object mod {
   }
   object Context {
     
-    @scala.inline
-    def apply(polly: Polly): Context = {
+    inline def apply(polly: Polly): Context = {
       val __obj = js.Dynamic.literal(polly = polly.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setPolly(value: Polly): Self = StObject.set(x, "polly", value.asInstanceOf[js.Any])
+      inline def setPolly(value: Polly): Self = StObject.set(x, "polly", value.asInstanceOf[js.Any])
     }
   }
 }

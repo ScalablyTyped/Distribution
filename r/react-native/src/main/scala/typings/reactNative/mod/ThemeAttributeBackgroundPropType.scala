@@ -17,20 +17,16 @@ trait ThemeAttributeBackgroundPropType
 }
 object ThemeAttributeBackgroundPropType {
   
-  @scala.inline
-  def apply(attribute: String): ThemeAttributeBackgroundPropType = {
+  inline def apply(attribute: String): ThemeAttributeBackgroundPropType = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ThemeAttrAndroid")
     __obj.asInstanceOf[ThemeAttributeBackgroundPropType]
   }
   
-  @scala.inline
-  implicit class ThemeAttributeBackgroundPropTypeMutableBuilder[Self <: ThemeAttributeBackgroundPropType] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeAttributeBackgroundPropType](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ThemeAttrAndroid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ThemeAttrAndroid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

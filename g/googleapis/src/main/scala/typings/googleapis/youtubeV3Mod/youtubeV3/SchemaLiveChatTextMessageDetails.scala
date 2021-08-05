@@ -13,19 +13,15 @@ trait SchemaLiveChatTextMessageDetails extends StObject {
 }
 object SchemaLiveChatTextMessageDetails {
   
-  @scala.inline
-  def apply(): SchemaLiveChatTextMessageDetails = {
+  inline def apply(): SchemaLiveChatTextMessageDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatTextMessageDetails]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatTextMessageDetailsMutableBuilder[Self <: SchemaLiveChatTextMessageDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatTextMessageDetails](x: Self) {
     
-    @scala.inline
-    def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
+    inline def setMessageText(value: String): Self = StObject.set(x, "messageText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
+    inline def setMessageTextUndefined: Self = StObject.set(x, "messageText", js.undefined)
   }
 }

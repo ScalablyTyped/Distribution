@@ -18,34 +18,25 @@ trait AuthOptions extends StObject {
 }
 object AuthOptions {
   
-  @scala.inline
-  def apply(): AuthOptions = {
+  inline def apply(): AuthOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthOptions]
   }
   
-  @scala.inline
-  implicit class AuthOptionsMutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthOptions](x: Self) {
     
-    @scala.inline
-    def setMasterKey(value: String): Self = StObject.set(x, "masterKey", value.asInstanceOf[js.Any])
+    inline def setMasterKey(value: String): Self = StObject.set(x, "masterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterKeyUndefined: Self = StObject.set(x, "masterKey", js.undefined)
+    inline def setMasterKeyUndefined: Self = StObject.set(x, "masterKey", js.undefined)
     
-    @scala.inline
-    def setPermissionFeed(value: js.Array[Permission]): Self = StObject.set(x, "permissionFeed", value.asInstanceOf[js.Any])
+    inline def setPermissionFeed(value: js.Array[Permission]): Self = StObject.set(x, "permissionFeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionFeedUndefined: Self = StObject.set(x, "permissionFeed", js.undefined)
+    inline def setPermissionFeedUndefined: Self = StObject.set(x, "permissionFeed", js.undefined)
     
-    @scala.inline
-    def setPermissionFeedVarargs(value: Permission*): Self = StObject.set(x, "permissionFeed", js.Array(value :_*))
+    inline def setPermissionFeedVarargs(value: Permission*): Self = StObject.set(x, "permissionFeed", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceTokens(value: StringDictionary[String]): Self = StObject.set(x, "resourceTokens", value.asInstanceOf[js.Any])
+    inline def setResourceTokens(value: StringDictionary[String]): Self = StObject.set(x, "resourceTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTokensUndefined: Self = StObject.set(x, "resourceTokens", js.undefined)
+    inline def setResourceTokensUndefined: Self = StObject.set(x, "resourceTokens", js.undefined)
   }
 }

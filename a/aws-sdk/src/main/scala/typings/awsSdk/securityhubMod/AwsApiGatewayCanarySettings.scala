@@ -28,37 +28,27 @@ trait AwsApiGatewayCanarySettings extends StObject {
 }
 object AwsApiGatewayCanarySettings {
   
-  @scala.inline
-  def apply(): AwsApiGatewayCanarySettings = {
+  inline def apply(): AwsApiGatewayCanarySettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsApiGatewayCanarySettings]
   }
   
-  @scala.inline
-  implicit class AwsApiGatewayCanarySettingsMutableBuilder[Self <: AwsApiGatewayCanarySettings] (val x: Self) extends AnyVal {
+  extension [Self <: AwsApiGatewayCanarySettings](x: Self) {
     
-    @scala.inline
-    def setDeploymentId(value: NonEmptyString): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: NonEmptyString): Self = StObject.set(x, "DeploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
+    inline def setDeploymentIdUndefined: Self = StObject.set(x, "DeploymentId", js.undefined)
     
-    @scala.inline
-    def setPercentTraffic(value: Double): Self = StObject.set(x, "PercentTraffic", value.asInstanceOf[js.Any])
+    inline def setPercentTraffic(value: Double): Self = StObject.set(x, "PercentTraffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentTrafficUndefined: Self = StObject.set(x, "PercentTraffic", js.undefined)
+    inline def setPercentTrafficUndefined: Self = StObject.set(x, "PercentTraffic", js.undefined)
     
-    @scala.inline
-    def setStageVariableOverrides(value: FieldMap): Self = StObject.set(x, "StageVariableOverrides", value.asInstanceOf[js.Any])
+    inline def setStageVariableOverrides(value: FieldMap): Self = StObject.set(x, "StageVariableOverrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageVariableOverridesUndefined: Self = StObject.set(x, "StageVariableOverrides", js.undefined)
+    inline def setStageVariableOverridesUndefined: Self = StObject.set(x, "StageVariableOverrides", js.undefined)
     
-    @scala.inline
-    def setUseStageCache(value: Boolean): Self = StObject.set(x, "UseStageCache", value.asInstanceOf[js.Any])
+    inline def setUseStageCache(value: Boolean): Self = StObject.set(x, "UseStageCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseStageCacheUndefined: Self = StObject.set(x, "UseStageCache", js.undefined)
+    inline def setUseStageCacheUndefined: Self = StObject.set(x, "UseStageCache", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait VirtualNodeServiceProvider extends StObject {
 }
 object VirtualNodeServiceProvider {
   
-  @scala.inline
-  def apply(virtualNodeName: ResourceName): VirtualNodeServiceProvider = {
+  inline def apply(virtualNodeName: ResourceName): VirtualNodeServiceProvider = {
     val __obj = js.Dynamic.literal(virtualNodeName = virtualNodeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualNodeServiceProvider]
   }
   
-  @scala.inline
-  implicit class VirtualNodeServiceProviderMutableBuilder[Self <: VirtualNodeServiceProvider] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeServiceProvider](x: Self) {
     
-    @scala.inline
-    def setVirtualNodeName(value: ResourceName): Self = StObject.set(x, "virtualNodeName", value.asInstanceOf[js.Any])
+    inline def setVirtualNodeName(value: ResourceName): Self = StObject.set(x, "virtualNodeName", value.asInstanceOf[js.Any])
   }
 }

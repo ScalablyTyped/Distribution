@@ -27,32 +27,24 @@ object typesCampaignSmsMessageMod {
   }
   object CampaignSmsMessage {
     
-    @scala.inline
-    def apply(): CampaignSmsMessage = {
+    inline def apply(): CampaignSmsMessage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CampaignSmsMessage]
     }
     
-    @scala.inline
-    implicit class CampaignSmsMessageMutableBuilder[Self <: CampaignSmsMessage] (val x: Self) extends AnyVal {
+    extension [Self <: CampaignSmsMessage](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
       
-      @scala.inline
-      def setMessageType(value: TRANSACTIONAL | PROMOTIONAL | String): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
+      inline def setMessageType(value: TRANSACTIONAL | PROMOTIONAL | String): Self = StObject.set(x, "MessageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
+      inline def setMessageTypeUndefined: Self = StObject.set(x, "MessageType", js.undefined)
       
-      @scala.inline
-      def setSenderId(value: String): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
+      inline def setSenderId(value: String): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderIdUndefined: Self = StObject.set(x, "SenderId", js.undefined)
+      inline def setSenderIdUndefined: Self = StObject.set(x, "SenderId", js.undefined)
     }
   }
   

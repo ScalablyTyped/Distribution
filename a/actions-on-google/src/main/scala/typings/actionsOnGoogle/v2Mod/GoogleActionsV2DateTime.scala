@@ -21,25 +21,19 @@ trait GoogleActionsV2DateTime
 }
 object GoogleActionsV2DateTime {
   
-  @scala.inline
-  def apply(): GoogleActionsV2DateTime = {
+  inline def apply(): GoogleActionsV2DateTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2DateTime]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2DateTimeMutableBuilder[Self <: GoogleActionsV2DateTime] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2DateTime](x: Self) {
     
-    @scala.inline
-    def setDate(value: GoogleTypeDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: GoogleTypeDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setTime(value: GoogleTypeTimeOfDay): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: GoogleTypeTimeOfDay): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

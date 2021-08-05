@@ -93,8 +93,7 @@ object adapterMod {
   }
   object MDCTooltipAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: CssClasses => Unit,
       deregisterDocumentEventHandler: (js.Any, SpecificEventListener[js.Any]) => Unit,
       getAnchorAttribute: String => String | Null,
@@ -115,53 +114,37 @@ object adapterMod {
       __obj.asInstanceOf[MDCTooltipAdapter]
     }
     
-    @scala.inline
-    implicit class MDCTooltipAdapterMutableBuilder[Self <: MDCTooltipAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTooltipAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: CssClasses => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: CssClasses => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeregisterDocumentEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterDocumentEventHandler", js.Any.fromFunction2(value))
+      inline def setDeregisterDocumentEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "deregisterDocumentEventHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAnchorAttribute(value: String => String | Null): Self = StObject.set(x, "getAnchorAttribute", js.Any.fromFunction1(value))
+      inline def setGetAnchorAttribute(value: String => String | Null): Self = StObject.set(x, "getAnchorAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAnchorBoundingRect(value: () => ClientRect | Null): Self = StObject.set(x, "getAnchorBoundingRect", js.Any.fromFunction0(value))
+      inline def setGetAnchorBoundingRect(value: () => ClientRect | Null): Self = StObject.set(x, "getAnchorBoundingRect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      inline def setGetAttribute(value: String => String | Null): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTooltipSize(value: () => Height): Self = StObject.set(x, "getTooltipSize", js.Any.fromFunction0(value))
+      inline def setGetTooltipSize(value: () => Height): Self = StObject.set(x, "getTooltipSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetViewportHeight(value: () => Double): Self = StObject.set(x, "getViewportHeight", js.Any.fromFunction0(value))
+      inline def setGetViewportHeight(value: () => Double): Self = StObject.set(x, "getViewportHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetViewportWidth(value: () => Double): Self = StObject.set(x, "getViewportWidth", js.Any.fromFunction0(value))
+      inline def setGetViewportWidth(value: () => Double): Self = StObject.set(x, "getViewportWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasClass(value: CssClasses => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
+      inline def setHasClass(value: CssClasses => Boolean): Self = StObject.set(x, "hasClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
+      inline def setIsRTL(value: () => Boolean): Self = StObject.set(x, "isRTL", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyHidden(value: () => Unit): Self = StObject.set(x, "notifyHidden", js.Any.fromFunction0(value))
+      inline def setNotifyHidden(value: () => Unit): Self = StObject.set(x, "notifyHidden", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRegisterDocumentEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerDocumentEventHandler", js.Any.fromFunction2(value))
+      inline def setRegisterDocumentEventHandler(value: (js.Any, SpecificEventListener[js.Any]) => Unit): Self = StObject.set(x, "registerDocumentEventHandler", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveClass(value: CssClasses => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: CssClasses => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
+      inline def setSetAttribute(value: (String, String) => Unit): Self = StObject.set(x, "setAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setStyleProperty", js.Any.fromFunction2(value))
+      inline def setSetStyleProperty(value: (String, String) => Unit): Self = StObject.set(x, "setStyleProperty", js.Any.fromFunction2(value))
     }
   }
 }

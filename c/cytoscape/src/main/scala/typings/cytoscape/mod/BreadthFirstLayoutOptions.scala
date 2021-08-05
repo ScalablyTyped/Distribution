@@ -30,8 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object BreadthFirstLayoutOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     circle: Boolean,
     directed: Boolean,
     fit: Boolean,
@@ -42,25 +41,18 @@ object BreadthFirstLayoutOptions {
     __obj.asInstanceOf[BreadthFirstLayoutOptions]
   }
   
-  @scala.inline
-  implicit class BreadthFirstLayoutOptionsMutableBuilder[Self <: BreadthFirstLayoutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BreadthFirstLayoutOptions](x: Self) {
     
-    @scala.inline
-    def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximalAdjustments(value: Double): Self = StObject.set(x, "maximalAdjustments", value.asInstanceOf[js.Any])
+    inline def setMaximalAdjustments(value: Double): Self = StObject.set(x, "maximalAdjustments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: breadthfirst): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: breadthfirst): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoots(value: String): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
+    inline def setRoots(value: String): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootsUndefined: Self = StObject.set(x, "roots", js.undefined)
+    inline def setRootsUndefined: Self = StObject.set(x, "roots", js.undefined)
   }
 }

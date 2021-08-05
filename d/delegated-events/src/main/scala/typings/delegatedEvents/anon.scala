@@ -14,17 +14,14 @@ object anon {
   }
   object CurrentTarget {
     
-    @scala.inline
-    def apply(currentTarget: Element): CurrentTarget = {
+    inline def apply(currentTarget: Element): CurrentTarget = {
       val __obj = js.Dynamic.literal(currentTarget = currentTarget.asInstanceOf[js.Any])
       __obj.asInstanceOf[CurrentTarget]
     }
     
-    @scala.inline
-    implicit class CurrentTargetMutableBuilder[Self <: CurrentTarget] (val x: Self) extends AnyVal {
+    extension [Self <: CurrentTarget](x: Self) {
       
-      @scala.inline
-      def setCurrentTarget(value: Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     }
   }
   

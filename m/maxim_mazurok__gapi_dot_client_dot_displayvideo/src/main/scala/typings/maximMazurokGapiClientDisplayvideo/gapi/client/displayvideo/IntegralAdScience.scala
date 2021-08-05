@@ -50,100 +50,69 @@ trait IntegralAdScience extends StObject {
 }
 object IntegralAdScience {
   
-  @scala.inline
-  def apply(): IntegralAdScience = {
+  inline def apply(): IntegralAdScience = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegralAdScience]
   }
   
-  @scala.inline
-  implicit class IntegralAdScienceMutableBuilder[Self <: IntegralAdScience] (val x: Self) extends AnyVal {
+  extension [Self <: IntegralAdScience](x: Self) {
     
-    @scala.inline
-    def setCustomSegmentId(value: js.Array[String]): Self = StObject.set(x, "customSegmentId", value.asInstanceOf[js.Any])
+    inline def setCustomSegmentId(value: js.Array[String]): Self = StObject.set(x, "customSegmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSegmentIdUndefined: Self = StObject.set(x, "customSegmentId", js.undefined)
+    inline def setCustomSegmentIdUndefined: Self = StObject.set(x, "customSegmentId", js.undefined)
     
-    @scala.inline
-    def setCustomSegmentIdVarargs(value: String*): Self = StObject.set(x, "customSegmentId", js.Array(value :_*))
+    inline def setCustomSegmentIdVarargs(value: String*): Self = StObject.set(x, "customSegmentId", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayViewability(value: String): Self = StObject.set(x, "displayViewability", value.asInstanceOf[js.Any])
+    inline def setDisplayViewability(value: String): Self = StObject.set(x, "displayViewability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayViewabilityUndefined: Self = StObject.set(x, "displayViewability", js.undefined)
+    inline def setDisplayViewabilityUndefined: Self = StObject.set(x, "displayViewability", js.undefined)
     
-    @scala.inline
-    def setExcludeUnrateable(value: Boolean): Self = StObject.set(x, "excludeUnrateable", value.asInstanceOf[js.Any])
+    inline def setExcludeUnrateable(value: Boolean): Self = StObject.set(x, "excludeUnrateable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUnrateableUndefined: Self = StObject.set(x, "excludeUnrateable", js.undefined)
+    inline def setExcludeUnrateableUndefined: Self = StObject.set(x, "excludeUnrateable", js.undefined)
     
-    @scala.inline
-    def setExcludedAdFraudRisk(value: String): Self = StObject.set(x, "excludedAdFraudRisk", value.asInstanceOf[js.Any])
+    inline def setExcludedAdFraudRisk(value: String): Self = StObject.set(x, "excludedAdFraudRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedAdFraudRiskUndefined: Self = StObject.set(x, "excludedAdFraudRisk", js.undefined)
+    inline def setExcludedAdFraudRiskUndefined: Self = StObject.set(x, "excludedAdFraudRisk", js.undefined)
     
-    @scala.inline
-    def setExcludedAdultRisk(value: String): Self = StObject.set(x, "excludedAdultRisk", value.asInstanceOf[js.Any])
+    inline def setExcludedAdultRisk(value: String): Self = StObject.set(x, "excludedAdultRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedAdultRiskUndefined: Self = StObject.set(x, "excludedAdultRisk", js.undefined)
+    inline def setExcludedAdultRiskUndefined: Self = StObject.set(x, "excludedAdultRisk", js.undefined)
     
-    @scala.inline
-    def setExcludedAlcoholRisk(value: String): Self = StObject.set(x, "excludedAlcoholRisk", value.asInstanceOf[js.Any])
+    inline def setExcludedAlcoholRisk(value: String): Self = StObject.set(x, "excludedAlcoholRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedAlcoholRiskUndefined: Self = StObject.set(x, "excludedAlcoholRisk", js.undefined)
+    inline def setExcludedAlcoholRiskUndefined: Self = StObject.set(x, "excludedAlcoholRisk", js.undefined)
     
-    @scala.inline
-    def setExcludedDrugsRisk(value: String): Self = StObject.set(x, "excludedDrugsRisk", value.asInstanceOf[js.Any])
+    inline def setExcludedDrugsRisk(value: String): Self = StObject.set(x, "excludedDrugsRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedDrugsRiskUndefined: Self = StObject.set(x, "excludedDrugsRisk", js.undefined)
+    inline def setExcludedDrugsRiskUndefined: Self = StObject.set(x, "excludedDrugsRisk", js.undefined)
     
-    @scala.inline
-    def setExcludedGamblingRisk(value: String): Self = StObject.set(x, "excludedGamblingRisk", value.asInstanceOf[js.Any])
+    inline def setExcludedGamblingRisk(value: String): Self = StObject.set(x, "excludedGamblingRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedGamblingRiskUndefined: Self = StObject.set(x, "excludedGamblingRisk", js.undefined)
+    inline def setExcludedGamblingRiskUndefined: Self = StObject.set(x, "excludedGamblingRisk", js.undefined)
     
-    @scala.inline
-    def setExcludedHateSpeechRisk(value: String): Self = StObject.set(x, "excludedHateSpeechRisk", value.asInstanceOf[js.Any])
+    inline def setExcludedHateSpeechRisk(value: String): Self = StObject.set(x, "excludedHateSpeechRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedHateSpeechRiskUndefined: Self = StObject.set(x, "excludedHateSpeechRisk", js.undefined)
+    inline def setExcludedHateSpeechRiskUndefined: Self = StObject.set(x, "excludedHateSpeechRisk", js.undefined)
     
-    @scala.inline
-    def setExcludedIllegalDownloadsRisk(value: String): Self = StObject.set(x, "excludedIllegalDownloadsRisk", value.asInstanceOf[js.Any])
+    inline def setExcludedIllegalDownloadsRisk(value: String): Self = StObject.set(x, "excludedIllegalDownloadsRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedIllegalDownloadsRiskUndefined: Self = StObject.set(x, "excludedIllegalDownloadsRisk", js.undefined)
+    inline def setExcludedIllegalDownloadsRiskUndefined: Self = StObject.set(x, "excludedIllegalDownloadsRisk", js.undefined)
     
-    @scala.inline
-    def setExcludedOffensiveLanguageRisk(value: String): Self = StObject.set(x, "excludedOffensiveLanguageRisk", value.asInstanceOf[js.Any])
+    inline def setExcludedOffensiveLanguageRisk(value: String): Self = StObject.set(x, "excludedOffensiveLanguageRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedOffensiveLanguageRiskUndefined: Self = StObject.set(x, "excludedOffensiveLanguageRisk", js.undefined)
+    inline def setExcludedOffensiveLanguageRiskUndefined: Self = StObject.set(x, "excludedOffensiveLanguageRisk", js.undefined)
     
-    @scala.inline
-    def setExcludedViolenceRisk(value: String): Self = StObject.set(x, "excludedViolenceRisk", value.asInstanceOf[js.Any])
+    inline def setExcludedViolenceRisk(value: String): Self = StObject.set(x, "excludedViolenceRisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedViolenceRiskUndefined: Self = StObject.set(x, "excludedViolenceRisk", js.undefined)
+    inline def setExcludedViolenceRiskUndefined: Self = StObject.set(x, "excludedViolenceRisk", js.undefined)
     
-    @scala.inline
-    def setTraqScoreOption(value: String): Self = StObject.set(x, "traqScoreOption", value.asInstanceOf[js.Any])
+    inline def setTraqScoreOption(value: String): Self = StObject.set(x, "traqScoreOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraqScoreOptionUndefined: Self = StObject.set(x, "traqScoreOption", js.undefined)
+    inline def setTraqScoreOptionUndefined: Self = StObject.set(x, "traqScoreOption", js.undefined)
     
-    @scala.inline
-    def setVideoViewability(value: String): Self = StObject.set(x, "videoViewability", value.asInstanceOf[js.Any])
+    inline def setVideoViewability(value: String): Self = StObject.set(x, "videoViewability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoViewabilityUndefined: Self = StObject.set(x, "videoViewability", js.undefined)
+    inline def setVideoViewabilityUndefined: Self = StObject.set(x, "videoViewability", js.undefined)
   }
 }

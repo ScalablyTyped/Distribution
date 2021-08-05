@@ -19,6 +19,5 @@ class Visibility protected ()
 }
 object Visibility {
   
-  @scala.inline
-  def apply: ComponentClass[VisibilityProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Visibility").asInstanceOf[ComponentClass[VisibilityProps, ComponentState]]
+  inline def apply: ComponentClass[VisibilityProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("Visibility").asInstanceOf[ComponentClass[VisibilityProps, ComponentState]]
 }

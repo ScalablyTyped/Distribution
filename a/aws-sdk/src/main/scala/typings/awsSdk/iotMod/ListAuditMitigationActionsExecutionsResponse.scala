@@ -18,28 +18,21 @@ trait ListAuditMitigationActionsExecutionsResponse extends StObject {
 }
 object ListAuditMitigationActionsExecutionsResponse {
   
-  @scala.inline
-  def apply(): ListAuditMitigationActionsExecutionsResponse = {
+  inline def apply(): ListAuditMitigationActionsExecutionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAuditMitigationActionsExecutionsResponse]
   }
   
-  @scala.inline
-  implicit class ListAuditMitigationActionsExecutionsResponseMutableBuilder[Self <: ListAuditMitigationActionsExecutionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAuditMitigationActionsExecutionsResponse](x: Self) {
     
-    @scala.inline
-    def setActionsExecutions(value: AuditMitigationActionExecutionMetadataList): Self = StObject.set(x, "actionsExecutions", value.asInstanceOf[js.Any])
+    inline def setActionsExecutions(value: AuditMitigationActionExecutionMetadataList): Self = StObject.set(x, "actionsExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsExecutionsUndefined: Self = StObject.set(x, "actionsExecutions", js.undefined)
+    inline def setActionsExecutionsUndefined: Self = StObject.set(x, "actionsExecutions", js.undefined)
     
-    @scala.inline
-    def setActionsExecutionsVarargs(value: AuditMitigationActionExecutionMetadata*): Self = StObject.set(x, "actionsExecutions", js.Array(value :_*))
+    inline def setActionsExecutionsVarargs(value: AuditMitigationActionExecutionMetadata*): Self = StObject.set(x, "actionsExecutions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

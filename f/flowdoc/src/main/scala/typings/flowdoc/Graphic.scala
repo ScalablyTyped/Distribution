@@ -20,8 +20,7 @@ trait Graphic
 }
 object Graphic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     name: String,
     position: Point,
@@ -34,16 +33,12 @@ object Graphic {
     __obj.asInstanceOf[Graphic]
   }
   
-  @scala.inline
-  implicit class GraphicMutableBuilder[Self <: Graphic] (val x: Self) extends AnyVal {
+  extension [Self <: Graphic](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: FileAsset | URLAsset): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: FileAsset | URLAsset): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

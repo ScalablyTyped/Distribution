@@ -10,19 +10,15 @@ trait ManifestBaseApplications extends StObject {
 }
 object ManifestBaseApplications {
   
-  @scala.inline
-  def apply(): ManifestBaseApplications = {
+  inline def apply(): ManifestBaseApplications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManifestBaseApplications]
   }
   
-  @scala.inline
-  implicit class ManifestBaseApplicationsMutableBuilder[Self <: ManifestBaseApplications] (val x: Self) extends AnyVal {
+  extension [Self <: ManifestBaseApplications](x: Self) {
     
-    @scala.inline
-    def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
+    inline def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeckoUndefined: Self = StObject.set(x, "gecko", js.undefined)
+    inline def setGeckoUndefined: Self = StObject.set(x, "gecko", js.undefined)
   }
 }

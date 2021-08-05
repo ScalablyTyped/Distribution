@@ -15,7 +15,7 @@ trait SpinButton extends StObject {
   
   var ForeColor: Double
   
-  @JSName("MSForms.SpinButton_typekey")
+  /* private */ @JSName("MSForms.SpinButton_typekey")
   var MSFormsDotSpinButton_typekey: SpinButton
   
   var Max: Double
@@ -34,8 +34,7 @@ trait SpinButton extends StObject {
 }
 object SpinButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackColor: Double,
     Delay: Double,
     Enabled: Boolean,
@@ -54,43 +53,30 @@ object SpinButton {
     __obj.asInstanceOf[SpinButton]
   }
   
-  @scala.inline
-  implicit class SpinButtonMutableBuilder[Self <: SpinButton] (val x: Self) extends AnyVal {
+  extension [Self <: SpinButton](x: Self) {
     
-    @scala.inline
-    def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "Delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
+    inline def setForeColor(value: Double): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotSpinButton_typekey(value: SpinButton): Self = StObject.set(x, "MSForms.SpinButton_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotSpinButton_typekey(value: SpinButton): Self = StObject.set(x, "MSForms.SpinButton_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "Min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
+    inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePointer(value: fmMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    inline def setMousePointer(value: fmMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientation(value: fmOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: fmOrientation): Self = StObject.set(x, "Orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallChange(value: Double): Self = StObject.set(x, "SmallChange", value.asInstanceOf[js.Any])
+    inline def setSmallChange(value: Double): Self = StObject.set(x, "SmallChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

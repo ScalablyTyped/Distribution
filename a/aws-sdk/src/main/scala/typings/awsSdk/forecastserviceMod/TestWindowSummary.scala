@@ -28,37 +28,27 @@ trait TestWindowSummary extends StObject {
 }
 object TestWindowSummary {
   
-  @scala.inline
-  def apply(): TestWindowSummary = {
+  inline def apply(): TestWindowSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestWindowSummary]
   }
   
-  @scala.inline
-  implicit class TestWindowSummaryMutableBuilder[Self <: TestWindowSummary] (val x: Self) extends AnyVal {
+  extension [Self <: TestWindowSummary](x: Self) {
     
-    @scala.inline
-    def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTestWindowEnd(value: Timestamp): Self = StObject.set(x, "TestWindowEnd", value.asInstanceOf[js.Any])
+    inline def setTestWindowEnd(value: Timestamp): Self = StObject.set(x, "TestWindowEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestWindowEndUndefined: Self = StObject.set(x, "TestWindowEnd", js.undefined)
+    inline def setTestWindowEndUndefined: Self = StObject.set(x, "TestWindowEnd", js.undefined)
     
-    @scala.inline
-    def setTestWindowStart(value: Timestamp): Self = StObject.set(x, "TestWindowStart", value.asInstanceOf[js.Any])
+    inline def setTestWindowStart(value: Timestamp): Self = StObject.set(x, "TestWindowStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestWindowStartUndefined: Self = StObject.set(x, "TestWindowStart", js.undefined)
+    inline def setTestWindowStartUndefined: Self = StObject.set(x, "TestWindowStart", js.undefined)
   }
 }

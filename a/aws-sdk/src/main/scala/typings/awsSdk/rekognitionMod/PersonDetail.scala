@@ -23,31 +23,23 @@ trait PersonDetail extends StObject {
 }
 object PersonDetail {
   
-  @scala.inline
-  def apply(): PersonDetail = {
+  inline def apply(): PersonDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersonDetail]
   }
   
-  @scala.inline
-  implicit class PersonDetailMutableBuilder[Self <: PersonDetail] (val x: Self) extends AnyVal {
+  extension [Self <: PersonDetail](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
-    @scala.inline
-    def setFace(value: FaceDetail): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
+    inline def setFace(value: FaceDetail): Self = StObject.set(x, "Face", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
+    inline def setFaceUndefined: Self = StObject.set(x, "Face", js.undefined)
     
-    @scala.inline
-    def setIndex(value: PersonIndex): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: PersonIndex): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "Index", js.undefined)
   }
 }

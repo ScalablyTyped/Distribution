@@ -10,16 +10,13 @@ trait Boundary extends StObject {
 }
 object Boundary {
   
-  @scala.inline
-  def apply(get: (String, js.Function1[/* result */ js.Array[String], Unit]) => Unit): Boundary = {
+  inline def apply(get: (String, js.Function1[/* result */ js.Array[String], Unit]) => Unit): Boundary = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
     __obj.asInstanceOf[Boundary]
   }
   
-  @scala.inline
-  implicit class BoundaryMutableBuilder[Self <: Boundary] (val x: Self) extends AnyVal {
+  extension [Self <: Boundary](x: Self) {
     
-    @scala.inline
-    def setGet(value: (String, js.Function1[/* result */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (String, js.Function1[/* result */ js.Array[String], Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
   }
 }

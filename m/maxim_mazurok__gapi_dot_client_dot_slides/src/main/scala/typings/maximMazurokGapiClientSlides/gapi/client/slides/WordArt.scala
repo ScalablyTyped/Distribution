@@ -11,19 +11,15 @@ trait WordArt extends StObject {
 }
 object WordArt {
   
-  @scala.inline
-  def apply(): WordArt = {
+  inline def apply(): WordArt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WordArt]
   }
   
-  @scala.inline
-  implicit class WordArtMutableBuilder[Self <: WordArt] (val x: Self) extends AnyVal {
+  extension [Self <: WordArt](x: Self) {
     
-    @scala.inline
-    def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
+    inline def setRenderedText(value: String): Self = StObject.set(x, "renderedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderedTextUndefined: Self = StObject.set(x, "renderedText", js.undefined)
+    inline def setRenderedTextUndefined: Self = StObject.set(x, "renderedText", js.undefined)
   }
 }

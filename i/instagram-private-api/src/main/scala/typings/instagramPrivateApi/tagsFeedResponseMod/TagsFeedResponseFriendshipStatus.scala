@@ -14,22 +14,17 @@ trait TagsFeedResponseFriendshipStatus extends StObject {
 }
 object TagsFeedResponseFriendshipStatus {
   
-  @scala.inline
-  def apply(following: Boolean, is_bestie: Boolean, outgoing_request: Boolean): TagsFeedResponseFriendshipStatus = {
+  inline def apply(following: Boolean, is_bestie: Boolean, outgoing_request: Boolean): TagsFeedResponseFriendshipStatus = {
     val __obj = js.Dynamic.literal(following = following.asInstanceOf[js.Any], is_bestie = is_bestie.asInstanceOf[js.Any], outgoing_request = outgoing_request.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagsFeedResponseFriendshipStatus]
   }
   
-  @scala.inline
-  implicit class TagsFeedResponseFriendshipStatusMutableBuilder[Self <: TagsFeedResponseFriendshipStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TagsFeedResponseFriendshipStatus](x: Self) {
     
-    @scala.inline
-    def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
+    inline def setFollowing(value: Boolean): Self = StObject.set(x, "following", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
+    inline def setIs_bestie(value: Boolean): Self = StObject.set(x, "is_bestie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
+    inline def setOutgoing_request(value: Boolean): Self = StObject.set(x, "outgoing_request", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait GetBackupVaultNotificationsInput extends StObject {
 }
 object GetBackupVaultNotificationsInput {
   
-  @scala.inline
-  def apply(BackupVaultName: BackupVaultName): GetBackupVaultNotificationsInput = {
+  inline def apply(BackupVaultName: BackupVaultName): GetBackupVaultNotificationsInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBackupVaultNotificationsInput]
   }
   
-  @scala.inline
-  implicit class GetBackupVaultNotificationsInputMutableBuilder[Self <: GetBackupVaultNotificationsInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackupVaultNotificationsInput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
   }
 }

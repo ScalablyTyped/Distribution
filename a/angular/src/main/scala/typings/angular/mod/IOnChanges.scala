@@ -21,16 +21,13 @@ trait IOnChanges extends StObject {
 }
 object IOnChanges {
   
-  @scala.inline
-  def apply($onChanges: IOnChangesObject => Unit): IOnChanges = {
+  inline def apply($onChanges: IOnChangesObject => Unit): IOnChanges = {
     val __obj = js.Dynamic.literal($onChanges = js.Any.fromFunction1($onChanges))
     __obj.asInstanceOf[IOnChanges]
   }
   
-  @scala.inline
-  implicit class IOnChangesMutableBuilder[Self <: IOnChanges] (val x: Self) extends AnyVal {
+  extension [Self <: IOnChanges](x: Self) {
     
-    @scala.inline
-    def set$onChanges(value: IOnChangesObject => Unit): Self = StObject.set(x, "$onChanges", js.Any.fromFunction1(value))
+    inline def set$onChanges(value: IOnChangesObject => Unit): Self = StObject.set(x, "$onChanges", js.Any.fromFunction1(value))
   }
 }

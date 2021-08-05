@@ -17,8 +17,7 @@ trait ParametersActivityMarkThreadAsReadEndpoint extends StObject {
 }
 object ParametersActivityMarkThreadAsReadEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityMarkThreadAsReadEndpoint,
     request: ActivityMarkThreadAsReadRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersActivityMarkThreadAsReadEndpoint {
     __obj.asInstanceOf[ParametersActivityMarkThreadAsReadEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityMarkThreadAsReadEndpointMutableBuilder[Self <: ParametersActivityMarkThreadAsReadEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityMarkThreadAsReadEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityMarkThreadAsReadEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityMarkThreadAsReadEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityMarkThreadAsReadRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityMarkThreadAsReadRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait SchemaReadInstruction extends StObject {
 }
 object SchemaReadInstruction {
   
-  @scala.inline
-  def apply(): SchemaReadInstruction = {
+  inline def apply(): SchemaReadInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReadInstruction]
   }
   
-  @scala.inline
-  implicit class SchemaReadInstructionMutableBuilder[Self <: SchemaReadInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReadInstruction](x: Self) {
     
-    @scala.inline
-    def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: SchemaSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

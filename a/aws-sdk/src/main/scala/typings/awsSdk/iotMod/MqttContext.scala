@@ -23,31 +23,23 @@ trait MqttContext extends StObject {
 }
 object MqttContext {
   
-  @scala.inline
-  def apply(): MqttContext = {
+  inline def apply(): MqttContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MqttContext]
   }
   
-  @scala.inline
-  implicit class MqttContextMutableBuilder[Self <: MqttContext] (val x: Self) extends AnyVal {
+  extension [Self <: MqttContext](x: Self) {
     
-    @scala.inline
-    def setClientId(value: MqttClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: MqttClientId): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setPassword(value: MqttPassword): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: MqttPassword): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUsername(value: MqttUsername): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: MqttUsername): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

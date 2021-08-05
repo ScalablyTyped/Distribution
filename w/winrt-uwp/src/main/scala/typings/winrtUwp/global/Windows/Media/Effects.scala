@@ -130,8 +130,7 @@ object Effects {
       * @return The new audio capture effects manager.
       */
     /* static member */
-    @scala.inline
-    def createAudioCaptureEffectsManager(deviceId: String, category: MediaCategory): typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager = (^.asInstanceOf[js.Dynamic].applyDynamic("createAudioCaptureEffectsManager")(deviceId.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager]
+    inline def createAudioCaptureEffectsManager(deviceId: String, category: MediaCategory): typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager = (^.asInstanceOf[js.Dynamic].applyDynamic("createAudioCaptureEffectsManager")(deviceId.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager]
     /**
       * Creates a AudioCaptureEffectsManager object for the specified device for a specific media category and audio processing mode.
       * @param deviceId The device id.
@@ -140,8 +139,7 @@ object Effects {
       * @return The new audio capture effects manager.
       */
     /* static member */
-    @scala.inline
-    def createAudioCaptureEffectsManager(deviceId: String, category: MediaCategory, mode: typings.winrtUwp.Windows.Media.AudioProcessing): typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager = (^.asInstanceOf[js.Dynamic].applyDynamic("createAudioCaptureEffectsManager")(deviceId.asInstanceOf[js.Any], category.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager]
+    inline def createAudioCaptureEffectsManager(deviceId: String, category: MediaCategory, mode: typings.winrtUwp.Windows.Media.AudioProcessing): typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager = (^.asInstanceOf[js.Dynamic].applyDynamic("createAudioCaptureEffectsManager")(deviceId.asInstanceOf[js.Any], category.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Effects.AudioCaptureEffectsManager]
     
     /**
       * Creates a AudioRenderEffectsManager object for the specified device for a specific media category and audio processing mode.
@@ -150,8 +148,7 @@ object Effects {
       * @return The new audio render effects manager.
       */
     /* static member */
-    @scala.inline
-    def createAudioRenderEffectsManager(deviceId: String, category: AudioRenderCategory): typings.winrtUwp.Windows.Media.Effects.AudioRenderEffectsManager = (^.asInstanceOf[js.Dynamic].applyDynamic("createAudioRenderEffectsManager")(deviceId.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Effects.AudioRenderEffectsManager]
+    inline def createAudioRenderEffectsManager(deviceId: String, category: AudioRenderCategory): typings.winrtUwp.Windows.Media.Effects.AudioRenderEffectsManager = (^.asInstanceOf[js.Dynamic].applyDynamic("createAudioRenderEffectsManager")(deviceId.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Media.Effects.AudioRenderEffectsManager]
     /**
       * Creates a AudioRenderEffectsManager object for the specified device for a specific media category.
       * @param deviceId The device id.
@@ -160,8 +157,7 @@ object Effects {
       * @return The new audio render effects manager.
       */
     /* static member */
-    @scala.inline
-    def createAudioRenderEffectsManager(
+    inline def createAudioRenderEffectsManager(
       deviceId: String,
       category: AudioRenderCategory,
       mode: typings.winrtUwp.Windows.Media.AudioProcessing

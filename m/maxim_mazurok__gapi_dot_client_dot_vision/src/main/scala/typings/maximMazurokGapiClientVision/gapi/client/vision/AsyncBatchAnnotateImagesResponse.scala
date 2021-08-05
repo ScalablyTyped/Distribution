@@ -11,19 +11,15 @@ trait AsyncBatchAnnotateImagesResponse extends StObject {
 }
 object AsyncBatchAnnotateImagesResponse {
   
-  @scala.inline
-  def apply(): AsyncBatchAnnotateImagesResponse = {
+  inline def apply(): AsyncBatchAnnotateImagesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncBatchAnnotateImagesResponse]
   }
   
-  @scala.inline
-  implicit class AsyncBatchAnnotateImagesResponseMutableBuilder[Self <: AsyncBatchAnnotateImagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncBatchAnnotateImagesResponse](x: Self) {
     
-    @scala.inline
-    def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
+    inline def setOutputConfig(value: OutputConfig): Self = StObject.set(x, "outputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
+    inline def setOutputConfigUndefined: Self = StObject.set(x, "outputConfig", js.undefined)
   }
 }

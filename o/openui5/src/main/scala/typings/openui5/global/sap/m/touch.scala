@@ -13,18 +13,15 @@ object touch {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def countContained(oTouchList: TouchList, vElement: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countContained")(oTouchList.asInstanceOf[js.Any], vElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def countContained(oTouchList: TouchList, vElement: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countContained")(oTouchList.asInstanceOf[js.Any], vElement.asInstanceOf[js.Any])).asInstanceOf[Double]
   /**
     * Given a list of touches, count the number of touches related with the given element.
     * @param oTouchList The list of touch objects to search.
     * @param vElement A jQuery element or an element reference or an element id.
     * @returns The number of touches related with the given element.
     */
-  @scala.inline
-  def countContained(oTouchList: TouchList, vElement: JQueryStatic): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countContained")(oTouchList.asInstanceOf[js.Any], vElement.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def countContained(oTouchList: TouchList, vElement: Element): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countContained")(oTouchList.asInstanceOf[js.Any], vElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def countContained(oTouchList: TouchList, vElement: JQueryStatic): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countContained")(oTouchList.asInstanceOf[js.Any], vElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def countContained(oTouchList: TouchList, vElement: Element): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countContained")(oTouchList.asInstanceOf[js.Any], vElement.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Given a list of touch objects, find the touch that matches the given one.
@@ -33,11 +30,9 @@ object touch {
     * finger in the touch session.
     * @returns The touch matching if any.
     */
-  @scala.inline
-  def find(
+  inline def find(
     oTouchList: TouchList,
     oTouch: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Touch */ js.Any
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(oTouchList.asInstanceOf[js.Any], oTouch.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def find(oTouchList: TouchList, oTouch: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(oTouchList.asInstanceOf[js.Any], oTouch.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def find(oTouchList: TouchList, oTouch: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(oTouchList.asInstanceOf[js.Any], oTouch.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

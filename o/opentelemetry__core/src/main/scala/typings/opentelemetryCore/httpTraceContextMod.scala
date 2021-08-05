@@ -64,6 +64,5 @@ object httpTraceContextMod {
   @js.native
   val TRACE_STATE_HEADER: /* "tracestate" */ String = js.native
   
-  @scala.inline
-  def parseTraceParent(traceParent: String): SpanContext | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTraceParent")(traceParent.asInstanceOf[js.Any]).asInstanceOf[SpanContext | Null]
+  inline def parseTraceParent(traceParent: String): SpanContext | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTraceParent")(traceParent.asInstanceOf[js.Any]).asInstanceOf[SpanContext | Null]
 }

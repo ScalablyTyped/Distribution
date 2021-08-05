@@ -38,37 +38,27 @@ trait ParamsResourceCommentsSetmoderationstatus
 }
 object ParamsResourceCommentsSetmoderationstatus {
   
-  @scala.inline
-  def apply(): ParamsResourceCommentsSetmoderationstatus = {
+  inline def apply(): ParamsResourceCommentsSetmoderationstatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCommentsSetmoderationstatus]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCommentsSetmoderationstatusMutableBuilder[Self <: ParamsResourceCommentsSetmoderationstatus] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCommentsSetmoderationstatus](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBanAuthor(value: Boolean): Self = StObject.set(x, "banAuthor", value.asInstanceOf[js.Any])
+    inline def setBanAuthor(value: Boolean): Self = StObject.set(x, "banAuthor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBanAuthorUndefined: Self = StObject.set(x, "banAuthor", js.undefined)
+    inline def setBanAuthorUndefined: Self = StObject.set(x, "banAuthor", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setModerationStatus(value: String): Self = StObject.set(x, "moderationStatus", value.asInstanceOf[js.Any])
+    inline def setModerationStatus(value: String): Self = StObject.set(x, "moderationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModerationStatusUndefined: Self = StObject.set(x, "moderationStatus", js.undefined)
+    inline def setModerationStatusUndefined: Self = StObject.set(x, "moderationStatus", js.undefined)
   }
 }

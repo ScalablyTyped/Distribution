@@ -12,19 +12,15 @@ trait CancelItem extends StObject {
 }
 object CancelItem {
   
-  @scala.inline
-  def apply(Cancel: Boolean, Item: js.Any): CancelItem = {
+  inline def apply(Cancel: Boolean, Item: js.Any): CancelItem = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], Item = Item.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelItem]
   }
   
-  @scala.inline
-  implicit class CancelItemMutableBuilder[Self <: CancelItem] (val x: Self) extends AnyVal {
+  extension [Self <: CancelItem](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }
 }

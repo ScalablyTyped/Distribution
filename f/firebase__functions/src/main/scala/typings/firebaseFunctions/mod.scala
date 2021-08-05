@@ -14,20 +14,16 @@ object mod {
   }
   object FirebaseApp {
     
-    @scala.inline
-    def apply(): FirebaseApp = {
+    inline def apply(): FirebaseApp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirebaseApp]
     }
     
-    @scala.inline
-    implicit class FirebaseAppMutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseApp](x: Self) {
       
-      @scala.inline
-      def setFunctions(value: /* regionOrCustomDomain */ js.UndefOr[String] => FirebaseFunctions): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
+      inline def setFunctions(value: /* regionOrCustomDomain */ js.UndefOr[String] => FirebaseFunctions): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     }
   }
   
@@ -37,20 +33,16 @@ object mod {
   }
   object FirebaseNamespace {
     
-    @scala.inline
-    def apply(): FirebaseNamespace = {
+    inline def apply(): FirebaseNamespace = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirebaseNamespace]
     }
     
-    @scala.inline
-    implicit class FirebaseNamespaceMutableBuilder[Self <: FirebaseNamespace] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseNamespace](x: Self) {
       
-      @scala.inline
-      def setFunctions(value: Call): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: Call): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+      inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     }
   }
 }

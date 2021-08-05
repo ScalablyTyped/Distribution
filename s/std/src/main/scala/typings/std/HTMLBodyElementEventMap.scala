@@ -13,8 +13,7 @@ trait HTMLBodyElementEventMap
 }
 object HTMLBodyElementEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: UIEvent,
     afterprint: Event,
     animationcancel: AnimationEvent,
@@ -129,10 +128,8 @@ object HTMLBodyElementEventMap {
     __obj.asInstanceOf[HTMLBodyElementEventMap]
   }
   
-  @scala.inline
-  implicit class HTMLBodyElementEventMapMutableBuilder[Self <: HTMLBodyElementEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLBodyElementEventMap](x: Self) {
     
-    @scala.inline
-    def setOrientationchange(value: Event): Self = StObject.set(x, "orientationchange", value.asInstanceOf[js.Any])
+    inline def setOrientationchange(value: Event): Self = StObject.set(x, "orientationchange", value.asInstanceOf[js.Any])
   }
 }

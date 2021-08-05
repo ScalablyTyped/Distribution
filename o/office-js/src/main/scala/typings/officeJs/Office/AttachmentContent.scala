@@ -42,19 +42,15 @@ trait AttachmentContent extends StObject {
 }
 object AttachmentContent {
   
-  @scala.inline
-  def apply(content: String, format: AttachmentContentFormat | String): AttachmentContent = {
+  inline def apply(content: String, format: AttachmentContentFormat | String): AttachmentContent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentContent]
   }
   
-  @scala.inline
-  implicit class AttachmentContentMutableBuilder[Self <: AttachmentContent] (val x: Self) extends AnyVal {
+  extension [Self <: AttachmentContent](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: AttachmentContentFormat | String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: AttachmentContentFormat | String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

@@ -19,43 +19,31 @@ trait PartialMargin extends StObject {
 }
 object PartialMargin {
   
-  @scala.inline
-  def apply(): PartialMargin = {
+  inline def apply(): PartialMargin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMargin]
   }
   
-  @scala.inline
-  implicit class PartialMarginMutableBuilder[Self <: PartialMargin] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMargin](x: Self) {
     
-    @scala.inline
-    def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
     
-    @scala.inline
-    def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLUndefined: Self = StObject.set(x, "l", js.undefined)
+    inline def setLUndefined: Self = StObject.set(x, "l", js.undefined)
     
-    @scala.inline
-    def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
-    @scala.inline
-    def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Double): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+    inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ object tagTagMod {
   val ^ : js.Any = js.native
   
   // tslint:disable:unified-signatures
-  @scala.inline
-  def default(props: FCProps[ChipTagProps | FilterTagProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default(props: FCProps[ChipTagProps | FilterTagProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   @JSImport("carbon-components-react/lib/components/Tag/Tag", "types")
   @js.native
@@ -38,26 +37,20 @@ object tagTagMod {
   }
   object ChipTagProps {
     
-    @scala.inline
-    def apply(): ChipTagProps = {
+    inline def apply(): ChipTagProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChipTagProps]
     }
     
-    @scala.inline
-    implicit class ChipTagPropsMutableBuilder[Self <: ChipTagProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChipTagProps](x: Self) {
       
-      @scala.inline
-      def setFilter(value: `false`): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: `false`): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setType(value: TagTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TagTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -73,29 +66,22 @@ object tagTagMod {
   }
   object FilterTagProps {
     
-    @scala.inline
-    def apply(): FilterTagProps = {
+    inline def apply(): FilterTagProps = {
       val __obj = js.Dynamic.literal(filter = true)
       __obj.asInstanceOf[FilterTagProps]
     }
     
-    @scala.inline
-    implicit class FilterTagPropsMutableBuilder[Self <: FilterTagProps] (val x: Self) extends AnyVal {
+    extension [Self <: FilterTagProps](x: Self) {
       
-      @scala.inline
-      def setFilter(value: `true`): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: `true`): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setType(value: TagTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TagTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -115,37 +101,26 @@ object tagTagMod {
   trait TagTypeName extends StObject
   object TagTypeName {
     
-    @scala.inline
-    def blue: typings.carbonComponentsReact.carbonComponentsReactStrings.blue = "blue".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.blue]
+    inline def blue: typings.carbonComponentsReact.carbonComponentsReactStrings.blue = "blue".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.blue]
     
-    @scala.inline
-    def `cool-gray`: typings.carbonComponentsReact.carbonComponentsReactStrings.`cool-gray` = "cool-gray".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`cool-gray`]
+    inline def `cool-gray`: typings.carbonComponentsReact.carbonComponentsReactStrings.`cool-gray` = "cool-gray".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`cool-gray`]
     
-    @scala.inline
-    def cyan: typings.carbonComponentsReact.carbonComponentsReactStrings.cyan = "cyan".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.cyan]
+    inline def cyan: typings.carbonComponentsReact.carbonComponentsReactStrings.cyan = "cyan".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.cyan]
     
-    @scala.inline
-    def gray: typings.carbonComponentsReact.carbonComponentsReactStrings.gray = "gray".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.gray]
+    inline def gray: typings.carbonComponentsReact.carbonComponentsReactStrings.gray = "gray".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.gray]
     
-    @scala.inline
-    def green: typings.carbonComponentsReact.carbonComponentsReactStrings.green = "green".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.green]
+    inline def green: typings.carbonComponentsReact.carbonComponentsReactStrings.green = "green".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.green]
     
-    @scala.inline
-    def `high-contrast`: typings.carbonComponentsReact.carbonComponentsReactStrings.`high-contrast` = "high-contrast".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`high-contrast`]
+    inline def `high-contrast`: typings.carbonComponentsReact.carbonComponentsReactStrings.`high-contrast` = "high-contrast".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`high-contrast`]
     
-    @scala.inline
-    def magenta: typings.carbonComponentsReact.carbonComponentsReactStrings.magenta = "magenta".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.magenta]
+    inline def magenta: typings.carbonComponentsReact.carbonComponentsReactStrings.magenta = "magenta".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.magenta]
     
-    @scala.inline
-    def purple: typings.carbonComponentsReact.carbonComponentsReactStrings.purple = "purple".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.purple]
+    inline def purple: typings.carbonComponentsReact.carbonComponentsReactStrings.purple = "purple".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.purple]
     
-    @scala.inline
-    def red: typings.carbonComponentsReact.carbonComponentsReactStrings.red = "red".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.red]
+    inline def red: typings.carbonComponentsReact.carbonComponentsReactStrings.red = "red".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.red]
     
-    @scala.inline
-    def teal: typings.carbonComponentsReact.carbonComponentsReactStrings.teal = "teal".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.teal]
+    inline def teal: typings.carbonComponentsReact.carbonComponentsReactStrings.teal = "teal".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.teal]
     
-    @scala.inline
-    def `warm-gray`: typings.carbonComponentsReact.carbonComponentsReactStrings.`warm-gray` = "warm-gray".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`warm-gray`]
+    inline def `warm-gray`: typings.carbonComponentsReact.carbonComponentsReactStrings.`warm-gray` = "warm-gray".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.`warm-gray`]
   }
 }

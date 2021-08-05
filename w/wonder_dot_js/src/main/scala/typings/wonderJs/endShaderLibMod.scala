@@ -23,7 +23,6 @@ object endShaderLibMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): EndShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EndShaderLib]
+    inline def create(): EndShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EndShaderLib]
   }
 }

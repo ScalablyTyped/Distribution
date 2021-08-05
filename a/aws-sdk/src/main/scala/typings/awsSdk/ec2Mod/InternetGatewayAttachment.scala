@@ -18,25 +18,19 @@ trait InternetGatewayAttachment extends StObject {
 }
 object InternetGatewayAttachment {
   
-  @scala.inline
-  def apply(): InternetGatewayAttachment = {
+  inline def apply(): InternetGatewayAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InternetGatewayAttachment]
   }
   
-  @scala.inline
-  implicit class InternetGatewayAttachmentMutableBuilder[Self <: InternetGatewayAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: InternetGatewayAttachment](x: Self) {
     
-    @scala.inline
-    def setState(value: AttachmentStatus): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: AttachmentStatus): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
+    inline def setVpcId(value: String): Self = StObject.set(x, "VpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
+    inline def setVpcIdUndefined: Self = StObject.set(x, "VpcId", js.undefined)
   }
 }

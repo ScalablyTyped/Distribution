@@ -80,56 +80,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[TValue](): Options[TValue] = {
+    inline def apply[TValue](): Options[TValue] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[TValue]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?], TValue] (val x: Self & Options[TValue]) extends AnyVal {
+    extension [Self <: Options[?], TValue](x: Self & Options[TValue]) {
       
-      @scala.inline
-      def setAdapter(value: redis | mongodb | mongo | sqlite | postgresql | postgres | mysql): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      inline def setAdapter(value: redis | mongodb | mongo | sqlite | postgresql | postgres | mysql): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
-      @scala.inline
-      def setDeserialize(value: /* data */ String => TValue): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: /* data */ String => TValue): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
+      inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: /* data */ TValue => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: /* data */ TValue => String): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
-      @scala.inline
-      def setStore(value: Store[TValue]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store[TValue]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
   

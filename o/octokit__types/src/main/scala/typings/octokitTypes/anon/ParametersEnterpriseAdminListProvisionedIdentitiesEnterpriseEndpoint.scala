@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint exten
 }
 object ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint,
     request: EnterpriseAdminListProvisionedIdentitiesEnterpriseRequestOptions,
     response: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint {
     __obj.asInstanceOf[ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpointMutableBuilder[Self <: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminListProvisionedIdentitiesEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminListProvisionedIdentitiesEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminListProvisionedIdentitiesEnterpriseResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

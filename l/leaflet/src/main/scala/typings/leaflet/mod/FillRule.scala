@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FillRule extends StObject
 object FillRule {
   
-  @scala.inline
-  def evenodd: typings.leaflet.leafletStrings.evenodd = "evenodd".asInstanceOf[typings.leaflet.leafletStrings.evenodd]
+  inline def evenodd: typings.leaflet.leafletStrings.evenodd = "evenodd".asInstanceOf[typings.leaflet.leafletStrings.evenodd]
   
-  @scala.inline
-  def inherit: typings.leaflet.leafletStrings.inherit = "inherit".asInstanceOf[typings.leaflet.leafletStrings.inherit]
+  inline def inherit: typings.leaflet.leafletStrings.inherit = "inherit".asInstanceOf[typings.leaflet.leafletStrings.inherit]
   
-  @scala.inline
-  def nonzero: typings.leaflet.leafletStrings.nonzero = "nonzero".asInstanceOf[typings.leaflet.leafletStrings.nonzero]
+  inline def nonzero: typings.leaflet.leafletStrings.nonzero = "nonzero".asInstanceOf[typings.leaflet.leafletStrings.nonzero]
 }

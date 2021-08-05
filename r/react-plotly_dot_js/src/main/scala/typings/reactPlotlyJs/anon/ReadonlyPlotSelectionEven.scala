@@ -17,31 +17,23 @@ trait ReadonlyPlotSelectionEven extends StObject {
 }
 object ReadonlyPlotSelectionEven {
   
-  @scala.inline
-  def apply(points: js.Array[PlotDatum]): ReadonlyPlotSelectionEven = {
+  inline def apply(points: js.Array[PlotDatum]): ReadonlyPlotSelectionEven = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyPlotSelectionEven]
   }
   
-  @scala.inline
-  implicit class ReadonlyPlotSelectionEvenMutableBuilder[Self <: ReadonlyPlotSelectionEven] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPlotSelectionEven](x: Self) {
     
-    @scala.inline
-    def setLassoPoints(value: SelectionRange): Self = StObject.set(x, "lassoPoints", value.asInstanceOf[js.Any])
+    inline def setLassoPoints(value: SelectionRange): Self = StObject.set(x, "lassoPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLassoPointsUndefined: Self = StObject.set(x, "lassoPoints", js.undefined)
+    inline def setLassoPointsUndefined: Self = StObject.set(x, "lassoPoints", js.undefined)
     
-    @scala.inline
-    def setPoints(value: js.Array[PlotDatum]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[PlotDatum]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: PlotDatum*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: PlotDatum*): Self = StObject.set(x, "points", js.Array(value :_*))
     
-    @scala.inline
-    def setRange(value: SelectionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SelectionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

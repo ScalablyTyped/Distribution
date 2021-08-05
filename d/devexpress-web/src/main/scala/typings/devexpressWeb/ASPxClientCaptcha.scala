@@ -23,8 +23,7 @@ trait ASPxClientCaptcha
 }
 object ASPxClientCaptcha {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Focus: () => Unit,
     GetClientVisible: () => Boolean,
@@ -47,13 +46,10 @@ object ASPxClientCaptcha {
     __obj.asInstanceOf[ASPxClientCaptcha]
   }
   
-  @scala.inline
-  implicit class ASPxClientCaptchaMutableBuilder[Self <: ASPxClientCaptcha] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCaptcha](x: Self) {
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
   }
 }

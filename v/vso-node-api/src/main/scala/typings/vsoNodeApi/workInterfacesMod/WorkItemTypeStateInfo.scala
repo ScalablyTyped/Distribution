@@ -19,19 +19,15 @@ trait WorkItemTypeStateInfo extends StObject {
 }
 object WorkItemTypeStateInfo {
   
-  @scala.inline
-  def apply(states: StringDictionary[String], workItemTypeName: String): WorkItemTypeStateInfo = {
+  inline def apply(states: StringDictionary[String], workItemTypeName: String): WorkItemTypeStateInfo = {
     val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any], workItemTypeName = workItemTypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemTypeStateInfo]
   }
   
-  @scala.inline
-  implicit class WorkItemTypeStateInfoMutableBuilder[Self <: WorkItemTypeStateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTypeStateInfo](x: Self) {
     
-    @scala.inline
-    def setStates(value: StringDictionary[String]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    inline def setStates(value: StringDictionary[String]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypeName(value: String): Self = StObject.set(x, "workItemTypeName", value.asInstanceOf[js.Any])
+    inline def setWorkItemTypeName(value: String): Self = StObject.set(x, "workItemTypeName", value.asInstanceOf[js.Any])
   }
 }

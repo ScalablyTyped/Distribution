@@ -16,8 +16,7 @@ trait ReleaseTaskLogUpdatedEvent
 }
 object ReleaseTaskLogUpdatedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     environmentId: Double,
     lines: js.Array[String],
     projectId: String,
@@ -28,19 +27,14 @@ object ReleaseTaskLogUpdatedEvent {
     __obj.asInstanceOf[ReleaseTaskLogUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class ReleaseTaskLogUpdatedEventMutableBuilder[Self <: ReleaseTaskLogUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseTaskLogUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[String]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: String*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
-    @scala.inline
-    def setTimelineRecordId(value: String): Self = StObject.set(x, "timelineRecordId", value.asInstanceOf[js.Any])
+    inline def setTimelineRecordId(value: String): Self = StObject.set(x, "timelineRecordId", value.asInstanceOf[js.Any])
   }
 }

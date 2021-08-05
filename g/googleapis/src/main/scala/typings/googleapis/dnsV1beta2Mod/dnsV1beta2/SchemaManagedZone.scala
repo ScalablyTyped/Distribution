@@ -41,100 +41,69 @@ trait SchemaManagedZone extends StObject {
 }
 object SchemaManagedZone {
   
-  @scala.inline
-  def apply(): SchemaManagedZone = {
+  inline def apply(): SchemaManagedZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedZone]
   }
   
-  @scala.inline
-  implicit class SchemaManagedZoneMutableBuilder[Self <: SchemaManagedZone] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedZone](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: String): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+    inline def setDnsName(value: String): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
+    inline def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
     
-    @scala.inline
-    def setDnssecConfig(value: SchemaManagedZoneDnsSecConfig): Self = StObject.set(x, "dnssecConfig", value.asInstanceOf[js.Any])
+    inline def setDnssecConfig(value: SchemaManagedZoneDnsSecConfig): Self = StObject.set(x, "dnssecConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnssecConfigUndefined: Self = StObject.set(x, "dnssecConfig", js.undefined)
+    inline def setDnssecConfigUndefined: Self = StObject.set(x, "dnssecConfig", js.undefined)
     
-    @scala.inline
-    def setForwardingConfig(value: SchemaManagedZoneForwardingConfig): Self = StObject.set(x, "forwardingConfig", value.asInstanceOf[js.Any])
+    inline def setForwardingConfig(value: SchemaManagedZoneForwardingConfig): Self = StObject.set(x, "forwardingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardingConfigUndefined: Self = StObject.set(x, "forwardingConfig", js.undefined)
+    inline def setForwardingConfigUndefined: Self = StObject.set(x, "forwardingConfig", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameServerSet(value: String): Self = StObject.set(x, "nameServerSet", value.asInstanceOf[js.Any])
+    inline def setNameServerSet(value: String): Self = StObject.set(x, "nameServerSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameServerSetUndefined: Self = StObject.set(x, "nameServerSet", js.undefined)
+    inline def setNameServerSetUndefined: Self = StObject.set(x, "nameServerSet", js.undefined)
     
-    @scala.inline
-    def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
+    inline def setNameServers(value: js.Array[String]): Self = StObject.set(x, "nameServers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
+    inline def setNameServersUndefined: Self = StObject.set(x, "nameServers", js.undefined)
     
-    @scala.inline
-    def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
+    inline def setNameServersVarargs(value: String*): Self = StObject.set(x, "nameServers", js.Array(value :_*))
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPeeringConfig(value: SchemaManagedZonePeeringConfig): Self = StObject.set(x, "peeringConfig", value.asInstanceOf[js.Any])
+    inline def setPeeringConfig(value: SchemaManagedZonePeeringConfig): Self = StObject.set(x, "peeringConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeeringConfigUndefined: Self = StObject.set(x, "peeringConfig", js.undefined)
+    inline def setPeeringConfigUndefined: Self = StObject.set(x, "peeringConfig", js.undefined)
     
-    @scala.inline
-    def setPrivateVisibilityConfig(value: SchemaManagedZonePrivateVisibilityConfig): Self = StObject.set(x, "privateVisibilityConfig", value.asInstanceOf[js.Any])
+    inline def setPrivateVisibilityConfig(value: SchemaManagedZonePrivateVisibilityConfig): Self = StObject.set(x, "privateVisibilityConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateVisibilityConfigUndefined: Self = StObject.set(x, "privateVisibilityConfig", js.undefined)
+    inline def setPrivateVisibilityConfigUndefined: Self = StObject.set(x, "privateVisibilityConfig", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

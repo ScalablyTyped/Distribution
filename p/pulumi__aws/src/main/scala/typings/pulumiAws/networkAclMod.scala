@@ -78,21 +78,16 @@ object networkAclMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NetworkAclState): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NetworkAclState, opts: CustomResourceOptions): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
+    inline def get(name: String, id: Input[ID]): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
+    inline def get(name: String, id: Input[ID], state: NetworkAclState): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
+    inline def get(name: String, id: Input[ID], state: NetworkAclState, opts: CustomResourceOptions): NetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAcl]
     
     /**
       * Returns true if the given object is an instance of NetworkAcl.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkAcl.NetworkAcl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkAcl.NetworkAcl */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkAcl.NetworkAcl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkAcl.NetworkAcl */ Boolean]
   }
   
   trait NetworkAclArgs extends StObject {
@@ -124,50 +119,36 @@ object networkAclMod {
   }
   object NetworkAclArgs {
     
-    @scala.inline
-    def apply(vpcId: Input[String]): NetworkAclArgs = {
+    inline def apply(vpcId: Input[String]): NetworkAclArgs = {
       val __obj = js.Dynamic.literal(vpcId = vpcId.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkAclArgs]
     }
     
-    @scala.inline
-    implicit class NetworkAclArgsMutableBuilder[Self <: NetworkAclArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkAclArgs](x: Self) {
       
-      @scala.inline
-      def setEgress(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]]]): Self = StObject.set(x, "egress", value.asInstanceOf[js.Any])
+      inline def setEgress(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]]]): Self = StObject.set(x, "egress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEgressUndefined: Self = StObject.set(x, "egress", js.undefined)
+      inline def setEgressUndefined: Self = StObject.set(x, "egress", js.undefined)
       
-      @scala.inline
-      def setEgressVarargs(value: Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]*): Self = StObject.set(x, "egress", js.Array(value :_*))
+      inline def setEgressVarargs(value: Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]*): Self = StObject.set(x, "egress", js.Array(value :_*))
       
-      @scala.inline
-      def setIngress(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]]]): Self = StObject.set(x, "ingress", value.asInstanceOf[js.Any])
+      inline def setIngress(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]]]): Self = StObject.set(x, "ingress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIngressUndefined: Self = StObject.set(x, "ingress", js.undefined)
+      inline def setIngressUndefined: Self = StObject.set(x, "ingress", js.undefined)
       
-      @scala.inline
-      def setIngressVarargs(value: Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]*): Self = StObject.set(x, "ingress", js.Array(value :_*))
+      inline def setIngressVarargs(value: Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]*): Self = StObject.set(x, "ingress", js.Array(value :_*))
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,65 +191,46 @@ object networkAclMod {
   }
   object NetworkAclState {
     
-    @scala.inline
-    def apply(): NetworkAclState = {
+    inline def apply(): NetworkAclState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NetworkAclState]
     }
     
-    @scala.inline
-    implicit class NetworkAclStateMutableBuilder[Self <: NetworkAclState] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkAclState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setEgress(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]]]): Self = StObject.set(x, "egress", value.asInstanceOf[js.Any])
+      inline def setEgress(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]]]): Self = StObject.set(x, "egress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEgressUndefined: Self = StObject.set(x, "egress", js.undefined)
+      inline def setEgressUndefined: Self = StObject.set(x, "egress", js.undefined)
       
-      @scala.inline
-      def setEgressVarargs(value: Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]*): Self = StObject.set(x, "egress", js.Array(value :_*))
+      inline def setEgressVarargs(value: Input[typings.pulumiAws.inputMod.ec2.NetworkAclEgress]*): Self = StObject.set(x, "egress", js.Array(value :_*))
       
-      @scala.inline
-      def setIngress(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]]]): Self = StObject.set(x, "ingress", value.asInstanceOf[js.Any])
+      inline def setIngress(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]]]): Self = StObject.set(x, "ingress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIngressUndefined: Self = StObject.set(x, "ingress", js.undefined)
+      inline def setIngressUndefined: Self = StObject.set(x, "ingress", js.undefined)
       
-      @scala.inline
-      def setIngressVarargs(value: Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]*): Self = StObject.set(x, "ingress", js.Array(value :_*))
+      inline def setIngressVarargs(value: Input[typings.pulumiAws.inputMod.ec2.NetworkAclIngress]*): Self = StObject.set(x, "ingress", js.Array(value :_*))
       
-      @scala.inline
-      def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+      inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
+      inline def setSubnetIdsVarargs(value: Input[String]*): Self = StObject.set(x, "subnetIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
     }
   }
 }

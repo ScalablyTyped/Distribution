@@ -18,31 +18,23 @@ trait ProcessesProcessLoadData extends StObject {
 }
 object ProcessesProcessLoadData {
   
-  @scala.inline
-  def apply(cpu: Double, mem: Double, pid: Double, pids: js.Array[Double], proc: String): ProcessesProcessLoadData = {
+  inline def apply(cpu: Double, mem: Double, pid: Double, pids: js.Array[Double], proc: String): ProcessesProcessLoadData = {
     val __obj = js.Dynamic.literal(cpu = cpu.asInstanceOf[js.Any], mem = mem.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], pids = pids.asInstanceOf[js.Any], proc = proc.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessesProcessLoadData]
   }
   
-  @scala.inline
-  implicit class ProcessesProcessLoadDataMutableBuilder[Self <: ProcessesProcessLoadData] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessesProcessLoadData](x: Self) {
     
-    @scala.inline
-    def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMem(value: Double): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
+    inline def setMem(value: Double): Self = StObject.set(x, "mem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPids(value: js.Array[Double]): Self = StObject.set(x, "pids", value.asInstanceOf[js.Any])
+    inline def setPids(value: js.Array[Double]): Self = StObject.set(x, "pids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidsVarargs(value: Double*): Self = StObject.set(x, "pids", js.Array(value :_*))
+    inline def setPidsVarargs(value: Double*): Self = StObject.set(x, "pids", js.Array(value :_*))
     
-    @scala.inline
-    def setProc(value: String): Self = StObject.set(x, "proc", value.asInstanceOf[js.Any])
+    inline def setProc(value: String): Self = StObject.set(x, "proc", value.asInstanceOf[js.Any])
   }
 }

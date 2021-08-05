@@ -48,61 +48,43 @@ trait ManagedActionHistoryItem extends StObject {
 }
 object ManagedActionHistoryItem {
   
-  @scala.inline
-  def apply(): ManagedActionHistoryItem = {
+  inline def apply(): ManagedActionHistoryItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedActionHistoryItem]
   }
   
-  @scala.inline
-  implicit class ManagedActionHistoryItemMutableBuilder[Self <: ManagedActionHistoryItem] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedActionHistoryItem](x: Self) {
     
-    @scala.inline
-    def setActionDescription(value: String): Self = StObject.set(x, "ActionDescription", value.asInstanceOf[js.Any])
+    inline def setActionDescription(value: String): Self = StObject.set(x, "ActionDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionDescriptionUndefined: Self = StObject.set(x, "ActionDescription", js.undefined)
+    inline def setActionDescriptionUndefined: Self = StObject.set(x, "ActionDescription", js.undefined)
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
     
-    @scala.inline
-    def setActionType(value: ActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: ActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "ActionType", js.undefined)
     
-    @scala.inline
-    def setExecutedTime(value: Timestamp): Self = StObject.set(x, "ExecutedTime", value.asInstanceOf[js.Any])
+    inline def setExecutedTime(value: Timestamp): Self = StObject.set(x, "ExecutedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutedTimeUndefined: Self = StObject.set(x, "ExecutedTime", js.undefined)
+    inline def setExecutedTimeUndefined: Self = StObject.set(x, "ExecutedTime", js.undefined)
     
-    @scala.inline
-    def setFailureDescription(value: String): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
+    inline def setFailureDescription(value: String): Self = StObject.set(x, "FailureDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
+    inline def setFailureDescriptionUndefined: Self = StObject.set(x, "FailureDescription", js.undefined)
     
-    @scala.inline
-    def setFailureType(value: FailureType): Self = StObject.set(x, "FailureType", value.asInstanceOf[js.Any])
+    inline def setFailureType(value: FailureType): Self = StObject.set(x, "FailureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureTypeUndefined: Self = StObject.set(x, "FailureType", js.undefined)
+    inline def setFailureTypeUndefined: Self = StObject.set(x, "FailureType", js.undefined)
     
-    @scala.inline
-    def setFinishedTime(value: Timestamp): Self = StObject.set(x, "FinishedTime", value.asInstanceOf[js.Any])
+    inline def setFinishedTime(value: Timestamp): Self = StObject.set(x, "FinishedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedTimeUndefined: Self = StObject.set(x, "FinishedTime", js.undefined)
+    inline def setFinishedTimeUndefined: Self = StObject.set(x, "FinishedTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ActionHistoryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ActionHistoryStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

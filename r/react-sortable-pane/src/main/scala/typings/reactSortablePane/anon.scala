@@ -25,8 +25,7 @@ object anon {
   }
   object ClassName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       className: String,
       grid: js.Array[Double],
       maxHeight: Unit,
@@ -39,32 +38,23 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    @scala.inline
-    implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+    extension [Self <: ClassName](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrid(value: js.Array[Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: js.Array[Double]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value :_*))
+      inline def setGridVarargs(value: Double*): Self = StObject.set(x, "grid", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxHeight(value: Unit): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Unit): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidth(value: Unit): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Unit): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizable(value: X): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+      inline def setResizable(value: X): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,26 +66,20 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(): Height = {
+    inline def apply(): Height = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: PaneSize): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: PaneSize): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: PaneSize): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: PaneSize): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -107,20 +91,16 @@ object anon {
   }
   object Next {
     
-    @scala.inline
-    def apply(next: Double, previous: Double): Next = {
+    inline def apply(next: Double, previous: Double): Next = {
       val __obj = js.Dynamic.literal(next = next.asInstanceOf[js.Any], previous = previous.asInstanceOf[js.Any])
       __obj.asInstanceOf[Next]
     }
     
-    @scala.inline
-    implicit class NextMutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
+    extension [Self <: Next](x: Self) {
       
-      @scala.inline
-      def setNext(value: Double): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Double): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevious(value: Double): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: Double): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,20 +112,16 @@ object anon {
   }
   object PageX {
     
-    @scala.inline
-    def apply(pageX: Double, pageY: Double): PageX = {
+    inline def apply(pageX: Double, pageY: Double): PageX = {
       val __obj = js.Dynamic.literal(pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any])
       __obj.asInstanceOf[PageX]
     }
     
-    @scala.inline
-    implicit class PageXMutableBuilder[Self <: PageX] (val x: Self) extends AnyVal {
+    extension [Self <: PageX](x: Self) {
       
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+      inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+      inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,23 +135,18 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Boolean, xy: Boolean, y: Boolean): X = {
+    inline def apply(x: Boolean, xy: Boolean, y: Boolean): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXy(value: Boolean): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
+      inline def setXy(value: Boolean): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Boolean): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Boolean): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

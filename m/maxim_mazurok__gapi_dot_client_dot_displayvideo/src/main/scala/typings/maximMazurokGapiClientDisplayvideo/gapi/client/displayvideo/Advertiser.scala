@@ -50,85 +50,59 @@ trait Advertiser extends StObject {
 }
 object Advertiser {
   
-  @scala.inline
-  def apply(): Advertiser = {
+  inline def apply(): Advertiser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Advertiser]
   }
   
-  @scala.inline
-  implicit class AdvertiserMutableBuilder[Self <: Advertiser] (val x: Self) extends AnyVal {
+  extension [Self <: Advertiser](x: Self) {
     
-    @scala.inline
-    def setAdServerConfig(value: AdvertiserAdServerConfig): Self = StObject.set(x, "adServerConfig", value.asInstanceOf[js.Any])
+    inline def setAdServerConfig(value: AdvertiserAdServerConfig): Self = StObject.set(x, "adServerConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdServerConfigUndefined: Self = StObject.set(x, "adServerConfig", js.undefined)
+    inline def setAdServerConfigUndefined: Self = StObject.set(x, "adServerConfig", js.undefined)
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setCreativeConfig(value: AdvertiserCreativeConfig): Self = StObject.set(x, "creativeConfig", value.asInstanceOf[js.Any])
+    inline def setCreativeConfig(value: AdvertiserCreativeConfig): Self = StObject.set(x, "creativeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeConfigUndefined: Self = StObject.set(x, "creativeConfig", js.undefined)
+    inline def setCreativeConfigUndefined: Self = StObject.set(x, "creativeConfig", js.undefined)
     
-    @scala.inline
-    def setDataAccessConfig(value: AdvertiserDataAccessConfig): Self = StObject.set(x, "dataAccessConfig", value.asInstanceOf[js.Any])
+    inline def setDataAccessConfig(value: AdvertiserDataAccessConfig): Self = StObject.set(x, "dataAccessConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataAccessConfigUndefined: Self = StObject.set(x, "dataAccessConfig", js.undefined)
+    inline def setDataAccessConfigUndefined: Self = StObject.set(x, "dataAccessConfig", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
+    inline def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
+    inline def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
     
-    @scala.inline
-    def setGeneralConfig(value: AdvertiserGeneralConfig): Self = StObject.set(x, "generalConfig", value.asInstanceOf[js.Any])
+    inline def setGeneralConfig(value: AdvertiserGeneralConfig): Self = StObject.set(x, "generalConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneralConfigUndefined: Self = StObject.set(x, "generalConfig", js.undefined)
+    inline def setGeneralConfigUndefined: Self = StObject.set(x, "generalConfig", js.undefined)
     
-    @scala.inline
-    def setIntegrationDetails(value: IntegrationDetails): Self = StObject.set(x, "integrationDetails", value.asInstanceOf[js.Any])
+    inline def setIntegrationDetails(value: IntegrationDetails): Self = StObject.set(x, "integrationDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationDetailsUndefined: Self = StObject.set(x, "integrationDetails", js.undefined)
+    inline def setIntegrationDetailsUndefined: Self = StObject.set(x, "integrationDetails", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
     
-    @scala.inline
-    def setServingConfig(value: AdvertiserTargetingConfig): Self = StObject.set(x, "servingConfig", value.asInstanceOf[js.Any])
+    inline def setServingConfig(value: AdvertiserTargetingConfig): Self = StObject.set(x, "servingConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServingConfigUndefined: Self = StObject.set(x, "servingConfig", js.undefined)
+    inline def setServingConfigUndefined: Self = StObject.set(x, "servingConfig", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

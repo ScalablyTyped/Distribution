@@ -47,46 +47,35 @@ trait LokiPersistenceAdapter extends StObject {
 }
 object LokiPersistenceAdapter {
   
-  @scala.inline
-  def apply(loadDatabase: (String, js.Function1[/* value */ js.Any, Unit]) => Unit): LokiPersistenceAdapter = {
+  inline def apply(loadDatabase: (String, js.Function1[/* value */ js.Any, Unit]) => Unit): LokiPersistenceAdapter = {
     val __obj = js.Dynamic.literal(loadDatabase = js.Any.fromFunction2(loadDatabase))
     __obj.asInstanceOf[LokiPersistenceAdapter]
   }
   
-  @scala.inline
-  implicit class LokiPersistenceAdapterMutableBuilder[Self <: LokiPersistenceAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: LokiPersistenceAdapter](x: Self) {
     
-    @scala.inline
-    def setDeleteDatabase(
+    inline def setDeleteDatabase(
       value: (/* dbnameOrOptions */ js.Any, /* callback */ js.Function2[/* err */ js.UndefOr[Error | Null], /* data */ js.UndefOr[js.Any], Unit]) => Unit
     ): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDeleteDatabaseUndefined: Self = StObject.set(x, "deleteDatabase", js.undefined)
+    inline def setDeleteDatabaseUndefined: Self = StObject.set(x, "deleteDatabase", js.undefined)
     
-    @scala.inline
-    def setExportDatabase(
+    inline def setExportDatabase(
       value: (/* dbname */ String, /* dbref */ Loki, /* callback */ js.Function1[/* err */ Error | Null, Unit]) => Unit
     ): Self = StObject.set(x, "exportDatabase", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExportDatabaseUndefined: Self = StObject.set(x, "exportDatabase", js.undefined)
+    inline def setExportDatabaseUndefined: Self = StObject.set(x, "exportDatabase", js.undefined)
     
-    @scala.inline
-    def setLoadDatabase(value: (String, js.Function1[/* value */ js.Any, Unit]) => Unit): Self = StObject.set(x, "loadDatabase", js.Any.fromFunction2(value))
+    inline def setLoadDatabase(value: (String, js.Function1[/* value */ js.Any, Unit]) => Unit): Self = StObject.set(x, "loadDatabase", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSaveDatabase(
+    inline def setSaveDatabase(
       value: (/* dbname */ String, /* dbstring */ js.Any, /* callback */ js.Function1[/* err */ js.UndefOr[Error | Null], Unit]) => Unit
     ): Self = StObject.set(x, "saveDatabase", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSaveDatabaseUndefined: Self = StObject.set(x, "saveDatabase", js.undefined)
+    inline def setSaveDatabaseUndefined: Self = StObject.set(x, "saveDatabase", js.undefined)
   }
 }

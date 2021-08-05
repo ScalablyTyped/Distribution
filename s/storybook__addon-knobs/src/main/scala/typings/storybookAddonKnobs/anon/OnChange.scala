@@ -14,8 +14,7 @@ trait OnChange extends StObject {
 }
 object OnChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     knob: Validator[KnobControlConfig[String]],
     onChange: Validator[js.Function1[/* value */ String, String]]
   ): OnChange = {
@@ -23,13 +22,10 @@ object OnChange {
     __obj.asInstanceOf[OnChange]
   }
   
-  @scala.inline
-  implicit class OnChangeMutableBuilder[Self <: OnChange] (val x: Self) extends AnyVal {
+  extension [Self <: OnChange](x: Self) {
     
-    @scala.inline
-    def setKnob(value: Validator[KnobControlConfig[String]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
+    inline def setKnob(value: Validator[KnobControlConfig[String]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnChange(value: Validator[js.Function1[/* value */ String, String]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    inline def setOnChange(value: Validator[js.Function1[/* value */ String, String]]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
   }
 }

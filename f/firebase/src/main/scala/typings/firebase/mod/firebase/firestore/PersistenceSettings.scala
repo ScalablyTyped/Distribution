@@ -33,25 +33,19 @@ trait PersistenceSettings extends StObject {
 }
 object PersistenceSettings {
   
-  @scala.inline
-  def apply(): PersistenceSettings = {
+  inline def apply(): PersistenceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PersistenceSettings]
   }
   
-  @scala.inline
-  implicit class PersistenceSettingsMutableBuilder[Self <: PersistenceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PersistenceSettings](x: Self) {
     
-    @scala.inline
-    def setExperimentalForceOwningTab(value: Boolean): Self = StObject.set(x, "experimentalForceOwningTab", value.asInstanceOf[js.Any])
+    inline def setExperimentalForceOwningTab(value: Boolean): Self = StObject.set(x, "experimentalForceOwningTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentalForceOwningTabUndefined: Self = StObject.set(x, "experimentalForceOwningTab", js.undefined)
+    inline def setExperimentalForceOwningTabUndefined: Self = StObject.set(x, "experimentalForceOwningTab", js.undefined)
     
-    @scala.inline
-    def setSynchronizeTabs(value: Boolean): Self = StObject.set(x, "synchronizeTabs", value.asInstanceOf[js.Any])
+    inline def setSynchronizeTabs(value: Boolean): Self = StObject.set(x, "synchronizeTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSynchronizeTabsUndefined: Self = StObject.set(x, "synchronizeTabs", js.undefined)
+    inline def setSynchronizeTabsUndefined: Self = StObject.set(x, "synchronizeTabs", js.undefined)
   }
 }

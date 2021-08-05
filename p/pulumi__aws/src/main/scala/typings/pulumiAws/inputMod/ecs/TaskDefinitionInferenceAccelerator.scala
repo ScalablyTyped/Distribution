@@ -19,19 +19,15 @@ trait TaskDefinitionInferenceAccelerator extends StObject {
 }
 object TaskDefinitionInferenceAccelerator {
   
-  @scala.inline
-  def apply(deviceName: Input[String], deviceType: Input[String]): TaskDefinitionInferenceAccelerator = {
+  inline def apply(deviceName: Input[String], deviceType: Input[String]): TaskDefinitionInferenceAccelerator = {
     val __obj = js.Dynamic.literal(deviceName = deviceName.asInstanceOf[js.Any], deviceType = deviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinitionInferenceAccelerator]
   }
   
-  @scala.inline
-  implicit class TaskDefinitionInferenceAcceleratorMutableBuilder[Self <: TaskDefinitionInferenceAccelerator] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefinitionInferenceAccelerator](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceType(value: Input[String]): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
+    inline def setDeviceType(value: Input[String]): Self = StObject.set(x, "deviceType", value.asInstanceOf[js.Any])
   }
 }

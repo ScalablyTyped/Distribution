@@ -14,25 +14,19 @@ trait TermsAndConditions extends StObject {
 }
 object TermsAndConditions {
   
-  @scala.inline
-  def apply(): TermsAndConditions = {
+  inline def apply(): TermsAndConditions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TermsAndConditions]
   }
   
-  @scala.inline
-  implicit class TermsAndConditionsMutableBuilder[Self <: TermsAndConditions] (val x: Self) extends AnyVal {
+  extension [Self <: TermsAndConditions](x: Self) {
     
-    @scala.inline
-    def setContent(value: UserFacingMessage): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: UserFacingMessage): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setHeader(value: UserFacingMessage): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: UserFacingMessage): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
   }
 }

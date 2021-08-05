@@ -328,8 +328,7 @@ trait Accessibility extends StObject {
 }
 object Accessibility {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessibility: String,
     accessibilityalt: String,
     add: String,
@@ -495,487 +494,326 @@ object Accessibility {
     __obj.asInstanceOf[Accessibility]
   }
   
-  @scala.inline
-  implicit class AccessibilityMutableBuilder[Self <: Accessibility] (val x: Self) extends AnyVal {
+  extension [Self <: Accessibility](x: Self) {
     
-    @scala.inline
-    def setAccessibility(value: String): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: String): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityalt(value: String): Self = StObject.set(x, "accessibilityalt", value.asInstanceOf[js.Any])
+    inline def setAccessibilityalt(value: String): Self = StObject.set(x, "accessibilityalt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdd(value: String): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: String): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdmin(value: String): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+    inline def setAdmin(value: String): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlert(value: String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+    inline def setAlert(value: String): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowdown(value: String): Self = StObject.set(x, "arrowdown", value.asInstanceOf[js.Any])
+    inline def setArrowdown(value: String): Self = StObject.set(x, "arrowdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowleft(value: String): Self = StObject.set(x, "arrowleft", value.asInstanceOf[js.Any])
+    inline def setArrowleft(value: String): Self = StObject.set(x, "arrowleft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowleftalt(value: String): Self = StObject.set(x, "arrowleftalt", value.asInstanceOf[js.Any])
+    inline def setArrowleftalt(value: String): Self = StObject.set(x, "arrowleftalt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowright(value: String): Self = StObject.set(x, "arrowright", value.asInstanceOf[js.Any])
+    inline def setArrowright(value: String): Self = StObject.set(x, "arrowright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowrightalt(value: String): Self = StObject.set(x, "arrowrightalt", value.asInstanceOf[js.Any])
+    inline def setArrowrightalt(value: String): Self = StObject.set(x, "arrowrightalt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowup(value: String): Self = StObject.set(x, "arrowup", value.asInstanceOf[js.Any])
+    inline def setArrowup(value: String): Self = StObject.set(x, "arrowup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
+    inline def setBack(value: String): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasket(value: String): Self = StObject.set(x, "basket", value.asInstanceOf[js.Any])
+    inline def setBasket(value: String): Self = StObject.set(x, "basket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchaccept(value: String): Self = StObject.set(x, "batchaccept", value.asInstanceOf[js.Any])
+    inline def setBatchaccept(value: String): Self = StObject.set(x, "batchaccept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchdeny(value: String): Self = StObject.set(x, "batchdeny", value.asInstanceOf[js.Any])
+    inline def setBatchdeny(value: String): Self = StObject.set(x, "batchdeny", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeaker(value: String): Self = StObject.set(x, "beaker", value.asInstanceOf[js.Any])
+    inline def setBeaker(value: String): Self = StObject.set(x, "beaker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBell(value: String): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
+    inline def setBell(value: String): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitbucket(value: String): Self = StObject.set(x, "bitbucket", value.asInstanceOf[js.Any])
+    inline def setBitbucket(value: String): Self = StObject.set(x, "bitbucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBook(value: String): Self = StObject.set(x, "book", value.asInstanceOf[js.Any])
+    inline def setBook(value: String): Self = StObject.set(x, "book", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarkhollow(value: String): Self = StObject.set(x, "bookmarkhollow", value.asInstanceOf[js.Any])
+    inline def setBookmarkhollow(value: String): Self = StObject.set(x, "bookmarkhollow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottombar(value: String): Self = StObject.set(x, "bottombar", value.asInstanceOf[js.Any])
+    inline def setBottombar(value: String): Self = StObject.set(x, "bottombar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBox(value: String): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+    inline def setBox(value: String): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendar(value: String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
+    inline def setCalendar(value: String): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCamera(value: String): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: String): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+    inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChevrondown(value: String): Self = StObject.set(x, "chevrondown", value.asInstanceOf[js.Any])
+    inline def setChevrondown(value: String): Self = StObject.set(x, "chevrondown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChromatic(value: String): Self = StObject.set(x, "chromatic", value.asInstanceOf[js.Any])
+    inline def setChromatic(value: String): Self = StObject.set(x, "chromatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: String): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCirclehollow(value: String): Self = StObject.set(x, "circlehollow", value.asInstanceOf[js.Any])
+    inline def setCirclehollow(value: String): Self = StObject.set(x, "circlehollow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseAlt(value: String): Self = StObject.set(x, "closeAlt", value.asInstanceOf[js.Any])
+    inline def setCloseAlt(value: String): Self = StObject.set(x, "closeAlt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCog(value: String): Self = StObject.set(x, "cog", value.asInstanceOf[js.Any])
+    inline def setCog(value: String): Self = StObject.set(x, "cog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+    inline def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompass(value: String): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
+    inline def setCompass(value: String): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrast(value: String): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: String): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: String): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
+    inline def setCopy(value: String): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+    inline def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredit(value: String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+    inline def setCredit(value: String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCross(value: String): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
+    inline def setCross(value: String): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboard(value: String): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
+    inline def setDashboard(value: String): Self = StObject.set(x, "dashboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscord(value: String): Self = StObject.set(x, "discord", value.asInstanceOf[js.Any])
+    inline def setDiscord(value: String): Self = StObject.set(x, "discord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocchart(value: String): Self = StObject.set(x, "docchart", value.asInstanceOf[js.Any])
+    inline def setDocchart(value: String): Self = StObject.set(x, "docchart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoclist(value: String): Self = StObject.set(x, "doclist", value.asInstanceOf[js.Any])
+    inline def setDoclist(value: String): Self = StObject.set(x, "doclist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    inline def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandalt(value: String): Self = StObject.set(x, "expandalt", value.asInstanceOf[js.Any])
+    inline def setExpandalt(value: String): Self = StObject.set(x, "expandalt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEye(value: String): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
+    inline def setEye(value: String): Self = StObject.set(x, "eye", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEyeclose(value: String): Self = StObject.set(x, "eyeclose", value.asInstanceOf[js.Any])
+    inline def setEyeclose(value: String): Self = StObject.set(x, "eyeclose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebook(value: String): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
+    inline def setFacebook(value: String): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacehappy(value: String): Self = StObject.set(x, "facehappy", value.asInstanceOf[js.Any])
+    inline def setFacehappy(value: String): Self = StObject.set(x, "facehappy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceneutral(value: String): Self = StObject.set(x, "faceneutral", value.asInstanceOf[js.Any])
+    inline def setFaceneutral(value: String): Self = StObject.set(x, "faceneutral", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacesad(value: String): Self = StObject.set(x, "facesad", value.asInstanceOf[js.Any])
+    inline def setFacesad(value: String): Self = StObject.set(x, "facesad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGdrive(value: String): Self = StObject.set(x, "gdrive", value.asInstanceOf[js.Any])
+    inline def setGdrive(value: String): Self = StObject.set(x, "gdrive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGithub(value: String): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
+    inline def setGithub(value: String): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitlab(value: String): Self = StObject.set(x, "gitlab", value.asInstanceOf[js.Any])
+    inline def setGitlab(value: String): Self = StObject.set(x, "gitlab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobe(value: String): Self = StObject.set(x, "globe", value.asInstanceOf[js.Any])
+    inline def setGlobe(value: String): Self = StObject.set(x, "globe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogle(value: String): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
+    inline def setGoogle(value: String): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphbar(value: String): Self = StObject.set(x, "graphbar", value.asInstanceOf[js.Any])
+    inline def setGraphbar(value: String): Self = StObject.set(x, "graphbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphline(value: String): Self = StObject.set(x, "graphline", value.asInstanceOf[js.Any])
+    inline def setGraphline(value: String): Self = StObject.set(x, "graphline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphql(value: String): Self = StObject.set(x, "graphql", value.asInstanceOf[js.Any])
+    inline def setGraphql(value: String): Self = StObject.set(x, "graphql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrid(value: String): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: String): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrow(value: String): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
+    inline def setGrow(value: String): Self = StObject.set(x, "grow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeart(value: String): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
+    inline def setHeart(value: String): Self = StObject.set(x, "heart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHearthollow(value: String): Self = StObject.set(x, "hearthollow", value.asInstanceOf[js.Any])
+    inline def setHearthollow(value: String): Self = StObject.set(x, "hearthollow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHome(value: String): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
+    inline def setHome(value: String): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHourglass(value: String): Self = StObject.set(x, "hourglass", value.asInstanceOf[js.Any])
+    inline def setHourglass(value: String): Self = StObject.set(x, "hourglass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightning(value: String): Self = StObject.set(x, "lightning", value.asInstanceOf[js.Any])
+    inline def setLightning(value: String): Self = StObject.set(x, "lightning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightningoff(value: String): Self = StObject.set(x, "lightningoff", value.asInstanceOf[js.Any])
+    inline def setLightningoff(value: String): Self = StObject.set(x, "lightningoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListunordered(value: String): Self = StObject.set(x, "listunordered", value.asInstanceOf[js.Any])
+    inline def setListunordered(value: String): Self = StObject.set(x, "listunordered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    inline def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkup(value: String): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
+    inline def setMarkup(value: String): Self = StObject.set(x, "markup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+    inline def setMemory(value: String): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerge(value: String): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: String): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMirror(value: String): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+    inline def setMirror(value: String): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNut(value: String): Self = StObject.set(x, "nut", value.asInstanceOf[js.Any])
+    inline def setNut(value: String): Self = StObject.set(x, "nut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutbox(value: String): Self = StObject.set(x, "outbox", value.asInstanceOf[js.Any])
+    inline def setOutbox(value: String): Self = StObject.set(x, "outbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutline(value: String): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: String): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintbrush(value: String): Self = StObject.set(x, "paintbrush", value.asInstanceOf[js.Any])
+    inline def setPaintbrush(value: String): Self = StObject.set(x, "paintbrush", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperclip(value: String): Self = StObject.set(x, "paperclip", value.asInstanceOf[js.Any])
+    inline def setPaperclip(value: String): Self = StObject.set(x, "paperclip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraph(value: String): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
+    inline def setParagraph(value: String): Self = StObject.set(x, "paragraph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoto(value: String): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    inline def setPhoto(value: String): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    inline def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    inline def setPlay(value: String): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlus(value: String): Self = StObject.set(x, "plus", value.asInstanceOf[js.Any])
+    inline def setPlus(value: String): Self = StObject.set(x, "plus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPower(value: String): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
+    inline def setPower(value: String): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
+    inline def setPrint(value: String): Self = StObject.set(x, "print", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProceed(value: String): Self = StObject.set(x, "proceed", value.asInstanceOf[js.Any])
+    inline def setProceed(value: String): Self = StObject.set(x, "proceed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullrequest(value: String): Self = StObject.set(x, "pullrequest", value.asInstanceOf[js.Any])
+    inline def setPullrequest(value: String): Self = StObject.set(x, "pullrequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedux(value: String): Self = StObject.set(x, "redux", value.asInstanceOf[js.Any])
+    inline def setRedux(value: String): Self = StObject.set(x, "redux", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReply(value: String): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
+    inline def setReply(value: String): Self = StObject.set(x, "reply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestchange(value: String): Self = StObject.set(x, "requestchange", value.asInstanceOf[js.Any])
+    inline def setRequestchange(value: String): Self = StObject.set(x, "requestchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRss(value: String): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
+    inline def setRss(value: String): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShare(value: String): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
+    inline def setShare(value: String): Self = StObject.set(x, "share", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharealt(value: String): Self = StObject.set(x, "sharealt", value.asInstanceOf[js.Any])
+    inline def setSharealt(value: String): Self = StObject.set(x, "sharealt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShield(value: String): Self = StObject.set(x, "shield", value.asInstanceOf[js.Any])
+    inline def setShield(value: String): Self = StObject.set(x, "shield", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidebar(value: String): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
+    inline def setSidebar(value: String): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidebaralt(value: String): Self = StObject.set(x, "sidebaralt", value.asInstanceOf[js.Any])
+    inline def setSidebaralt(value: String): Self = StObject.set(x, "sidebaralt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeaker(value: String): Self = StObject.set(x, "speaker", value.asInstanceOf[js.Any])
+    inline def setSpeaker(value: String): Self = StObject.set(x, "speaker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStar(value: String): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+    inline def setStar(value: String): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarhollow(value: String): Self = StObject.set(x, "starhollow", value.asInstanceOf[js.Any])
+    inline def setStarhollow(value: String): Self = StObject.set(x, "starhollow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: String): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: String): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructure(value: String): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
+    inline def setStructure(value: String): Self = StObject.set(x, "structure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtract(value: String): Self = StObject.set(x, "subtract", value.asInstanceOf[js.Any])
+    inline def setSubtract(value: String): Self = StObject.set(x, "subtract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupport(value: String): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
+    inline def setSupport(value: String): Self = StObject.set(x, "support", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchalt(value: String): Self = StObject.set(x, "switchalt", value.asInstanceOf[js.Any])
+    inline def setSwitchalt(value: String): Self = StObject.set(x, "switchalt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSync(value: String): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    inline def setSync(value: String): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablet(value: String): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+    inline def setTablet(value: String): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbsup(value: String): Self = StObject.set(x, "thumbsup", value.asInstanceOf[js.Any])
+    inline def setThumbsup(value: String): Self = StObject.set(x, "thumbsup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimer(value: String): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+    inline def setTimer(value: String): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransfer(value: String): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
+    inline def setTransfer(value: String): Self = StObject.set(x, "transfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrash(value: String): Self = StObject.set(x, "trash", value.asInstanceOf[js.Any])
+    inline def setTrash(value: String): Self = StObject.set(x, "trash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
+    inline def setTwitter(value: String): Self = StObject.set(x, "twitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndo(value: String): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
+    inline def setUndo(value: String): Self = StObject.set(x, "undo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnfold(value: String): Self = StObject.set(x, "unfold", value.asInstanceOf[js.Any])
+    inline def setUnfold(value: String): Self = StObject.set(x, "unfold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlock(value: String): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
+    inline def setUnlock(value: String): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    inline def setUpload(value: String): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseradd(value: String): Self = StObject.set(x, "useradd", value.asInstanceOf[js.Any])
+    inline def setUseradd(value: String): Self = StObject.set(x, "useradd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseralt(value: String): Self = StObject.set(x, "useralt", value.asInstanceOf[js.Any])
+    inline def setUseralt(value: String): Self = StObject.set(x, "useralt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: String): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatch(value: String): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    inline def setWatch(value: String): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrench(value: String): Self = StObject.set(x, "wrench", value.asInstanceOf[js.Any])
+    inline def setWrench(value: String): Self = StObject.set(x, "wrench", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoutube(value: String): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
+    inline def setYoutube(value: String): Self = StObject.set(x, "youtube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: String): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomout(value: String): Self = StObject.set(x, "zoomout", value.asInstanceOf[js.Any])
+    inline def setZoomout(value: String): Self = StObject.set(x, "zoomout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomreset(value: String): Self = StObject.set(x, "zoomreset", value.asInstanceOf[js.Any])
+    inline def setZoomreset(value: String): Self = StObject.set(x, "zoomreset", value.asInstanceOf[js.Any])
   }
 }

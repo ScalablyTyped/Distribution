@@ -8,11 +8,9 @@ object reachAlertStrings {
   
   @js.native
   sealed trait assertive extends StObject
-  @scala.inline
-  def assertive: assertive = "assertive".asInstanceOf[assertive]
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
   sealed trait polite extends StObject
-  @scala.inline
-  def polite: polite = "polite".asInstanceOf[polite]
+  inline def polite: polite = "polite".asInstanceOf[polite]
 }

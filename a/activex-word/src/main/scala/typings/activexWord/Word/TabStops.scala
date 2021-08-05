@@ -28,6 +28,6 @@ trait TabStops extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.TabStops_typekey")
+  /* private */ @JSName("Word.TabStops_typekey")
   var WordDotTabStops_typekey: TabStops = js.native
 }

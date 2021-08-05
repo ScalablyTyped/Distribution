@@ -12,16 +12,13 @@ trait UpdateUserNaturalData
 }
 object UpdateUserNaturalData {
   
-  @scala.inline
-  def apply(Id: String): UpdateUserNaturalData = {
+  inline def apply(Id: String): UpdateUserNaturalData = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], PersonType = "NATURAL")
     __obj.asInstanceOf[UpdateUserNaturalData]
   }
   
-  @scala.inline
-  implicit class UpdateUserNaturalDataMutableBuilder[Self <: UpdateUserNaturalData] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserNaturalData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

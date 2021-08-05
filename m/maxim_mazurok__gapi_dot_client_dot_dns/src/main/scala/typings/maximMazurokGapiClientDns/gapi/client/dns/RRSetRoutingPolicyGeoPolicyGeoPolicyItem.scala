@@ -18,43 +18,31 @@ trait RRSetRoutingPolicyGeoPolicyGeoPolicyItem extends StObject {
 }
 object RRSetRoutingPolicyGeoPolicyGeoPolicyItem {
   
-  @scala.inline
-  def apply(): RRSetRoutingPolicyGeoPolicyGeoPolicyItem = {
+  inline def apply(): RRSetRoutingPolicyGeoPolicyGeoPolicyItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RRSetRoutingPolicyGeoPolicyGeoPolicyItem]
   }
   
-  @scala.inline
-  implicit class RRSetRoutingPolicyGeoPolicyGeoPolicyItemMutableBuilder[Self <: RRSetRoutingPolicyGeoPolicyGeoPolicyItem] (val x: Self) extends AnyVal {
+  extension [Self <: RRSetRoutingPolicyGeoPolicyGeoPolicyItem](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setRrdatas(value: js.Array[String]): Self = StObject.set(x, "rrdatas", value.asInstanceOf[js.Any])
+    inline def setRrdatas(value: js.Array[String]): Self = StObject.set(x, "rrdatas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRrdatasUndefined: Self = StObject.set(x, "rrdatas", js.undefined)
+    inline def setRrdatasUndefined: Self = StObject.set(x, "rrdatas", js.undefined)
     
-    @scala.inline
-    def setRrdatasVarargs(value: String*): Self = StObject.set(x, "rrdatas", js.Array(value :_*))
+    inline def setRrdatasVarargs(value: String*): Self = StObject.set(x, "rrdatas", js.Array(value :_*))
     
-    @scala.inline
-    def setSignatureRrdatas(value: js.Array[String]): Self = StObject.set(x, "signatureRrdatas", value.asInstanceOf[js.Any])
+    inline def setSignatureRrdatas(value: js.Array[String]): Self = StObject.set(x, "signatureRrdatas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureRrdatasUndefined: Self = StObject.set(x, "signatureRrdatas", js.undefined)
+    inline def setSignatureRrdatasUndefined: Self = StObject.set(x, "signatureRrdatas", js.undefined)
     
-    @scala.inline
-    def setSignatureRrdatasVarargs(value: String*): Self = StObject.set(x, "signatureRrdatas", js.Array(value :_*))
+    inline def setSignatureRrdatasVarargs(value: String*): Self = StObject.set(x, "signatureRrdatas", js.Array(value :_*))
   }
 }

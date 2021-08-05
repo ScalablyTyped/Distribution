@@ -51,8 +51,7 @@ object formContextMod {
   }
   object FormContextProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       itemRef: js.Array[String | Double] => js.Function1[/* node */ ReactElement, Unit],
       vertical: Boolean
     ): FormContextProps = {
@@ -60,50 +59,35 @@ object formContextMod {
       __obj.asInstanceOf[FormContextProps]
     }
     
-    @scala.inline
-    implicit class FormContextPropsMutableBuilder[Self <: FormContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormContextProps](x: Self) {
       
-      @scala.inline
-      def setColon(value: Boolean): Self = StObject.set(x, "colon", value.asInstanceOf[js.Any])
+      inline def setColon(value: Boolean): Self = StObject.set(x, "colon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonUndefined: Self = StObject.set(x, "colon", js.undefined)
+      inline def setColonUndefined: Self = StObject.set(x, "colon", js.undefined)
       
-      @scala.inline
-      def setItemRef(value: js.Array[String | Double] => js.Function1[/* node */ ReactElement, Unit]): Self = StObject.set(x, "itemRef", js.Any.fromFunction1(value))
+      inline def setItemRef(value: js.Array[String | Double] => js.Function1[/* node */ ReactElement, Unit]): Self = StObject.set(x, "itemRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLabelAlign(value: FormLabelAlign): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
+      inline def setLabelAlign(value: FormLabelAlign): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
+      inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
       
-      @scala.inline
-      def setLabelCol(value: ColProps): Self = StObject.set(x, "labelCol", value.asInstanceOf[js.Any])
+      inline def setLabelCol(value: ColProps): Self = StObject.set(x, "labelCol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelColUndefined: Self = StObject.set(x, "labelCol", js.undefined)
+      inline def setLabelColUndefined: Self = StObject.set(x, "labelCol", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRequiredMark(value: RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
+      inline def setRequiredMark(value: RequiredMark): Self = StObject.set(x, "requiredMark", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
+      inline def setRequiredMarkUndefined: Self = StObject.set(x, "requiredMark", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperCol(value: ColProps): Self = StObject.set(x, "wrapperCol", value.asInstanceOf[js.Any])
+      inline def setWrapperCol(value: ColProps): Self = StObject.set(x, "wrapperCol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperColUndefined: Self = StObject.set(x, "wrapperCol", js.undefined)
+      inline def setWrapperColUndefined: Self = StObject.set(x, "wrapperCol", js.undefined)
     }
   }
   
@@ -113,17 +97,14 @@ object formContextMod {
   }
   object FormItemContextProps {
     
-    @scala.inline
-    def apply(updateItemErrors: (String, js.Array[String]) => Unit): FormItemContextProps = {
+    inline def apply(updateItemErrors: (String, js.Array[String]) => Unit): FormItemContextProps = {
       val __obj = js.Dynamic.literal(updateItemErrors = js.Any.fromFunction2(updateItemErrors))
       __obj.asInstanceOf[FormItemContextProps]
     }
     
-    @scala.inline
-    implicit class FormItemContextPropsMutableBuilder[Self <: FormItemContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormItemContextProps](x: Self) {
       
-      @scala.inline
-      def setUpdateItemErrors(value: (String, js.Array[String]) => Unit): Self = StObject.set(x, "updateItemErrors", js.Any.fromFunction2(value))
+      inline def setUpdateItemErrors(value: (String, js.Array[String]) => Unit): Self = StObject.set(x, "updateItemErrors", js.Any.fromFunction2(value))
     }
   }
   
@@ -135,23 +116,18 @@ object formContextMod {
   }
   object FormItemPrefixContextProps {
     
-    @scala.inline
-    def apply(prefixCls: String): FormItemPrefixContextProps = {
+    inline def apply(prefixCls: String): FormItemPrefixContextProps = {
       val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormItemPrefixContextProps]
     }
     
-    @scala.inline
-    implicit class FormItemPrefixContextPropsMutableBuilder[Self <: FormItemPrefixContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormItemPrefixContextProps](x: Self) {
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: ValidateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ValidateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -164,26 +140,20 @@ object formContextMod {
   }
   object FormProviderProps {
     
-    @scala.inline
-    def apply(): FormProviderProps = {
+    inline def apply(): FormProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormProviderProps]
     }
     
-    @scala.inline
-    implicit class FormProviderPropsMutableBuilder[Self <: FormProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormProviderProps](x: Self) {
       
-      @scala.inline
-      def setOnFormChange(value: (/* name */ String, /* info */ FormChangeInfo) => Unit): Self = StObject.set(x, "onFormChange", js.Any.fromFunction2(value))
+      inline def setOnFormChange(value: (/* name */ String, /* info */ FormChangeInfo) => Unit): Self = StObject.set(x, "onFormChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFormChangeUndefined: Self = StObject.set(x, "onFormChange", js.undefined)
+      inline def setOnFormChangeUndefined: Self = StObject.set(x, "onFormChange", js.undefined)
       
-      @scala.inline
-      def setOnFormFinish(value: (/* name */ String, /* info */ FormFinishInfo) => Unit): Self = StObject.set(x, "onFormFinish", js.Any.fromFunction2(value))
+      inline def setOnFormFinish(value: (/* name */ String, /* info */ FormFinishInfo) => Unit): Self = StObject.set(x, "onFormFinish", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFormFinishUndefined: Self = StObject.set(x, "onFormFinish", js.undefined)
+      inline def setOnFormFinishUndefined: Self = StObject.set(x, "onFormFinish", js.undefined)
     }
   }
 }

@@ -11,19 +11,15 @@ trait Markers extends StObject {
 }
 object Markers {
   
-  @scala.inline
-  def apply(markers: js.Array[KmlMarker]): Markers = {
+  inline def apply(markers: js.Array[KmlMarker]): Markers = {
     val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Markers]
   }
   
-  @scala.inline
-  implicit class MarkersMutableBuilder[Self <: Markers] (val x: Self) extends AnyVal {
+  extension [Self <: Markers](x: Self) {
     
-    @scala.inline
-    def setMarkers(value: js.Array[KmlMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    inline def setMarkers(value: js.Array[KmlMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkersVarargs(value: KmlMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
+    inline def setMarkersVarargs(value: KmlMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
   }
 }

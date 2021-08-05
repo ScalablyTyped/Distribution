@@ -48,8 +48,7 @@ trait TfvcChangesetSearchCriteria extends StObject {
 }
 object TfvcChangesetSearchCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: String,
     followRenames: Boolean,
     fromDate: String,
@@ -63,31 +62,22 @@ object TfvcChangesetSearchCriteria {
     __obj.asInstanceOf[TfvcChangesetSearchCriteria]
   }
   
-  @scala.inline
-  implicit class TfvcChangesetSearchCriteriaMutableBuilder[Self <: TfvcChangesetSearchCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: TfvcChangesetSearchCriteria](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowRenames(value: Boolean): Self = StObject.set(x, "followRenames", value.asInstanceOf[js.Any])
+    inline def setFollowRenames(value: Boolean): Self = StObject.set(x, "followRenames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
+    inline def setFromDate(value: String): Self = StObject.set(x, "fromDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromId(value: Double): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
+    inline def setFromId(value: Double): Self = StObject.set(x, "fromId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
+    inline def setIncludeLinks(value: Boolean): Self = StObject.set(x, "includeLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
+    inline def setItemPath(value: String): Self = StObject.set(x, "itemPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
+    inline def setToDate(value: String): Self = StObject.set(x, "toDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToId(value: Double): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
+    inline def setToId(value: Double): Self = StObject.set(x, "toId", value.asInstanceOf[js.Any])
   }
 }

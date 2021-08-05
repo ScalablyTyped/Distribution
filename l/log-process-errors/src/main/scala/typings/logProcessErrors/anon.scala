@@ -32,50 +32,36 @@ object anon {
   }
   object PartialRecordExceptionTyp {
     
-    @scala.inline
-    def apply(): PartialRecordExceptionTyp = {
+    inline def apply(): PartialRecordExceptionTyp = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRecordExceptionTyp]
     }
     
-    @scala.inline
-    implicit class PartialRecordExceptionTypMutableBuilder[Self <: PartialRecordExceptionTyp] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRecordExceptionTyp](x: Self) {
       
-      @scala.inline
-      def setDefault(value: /* error */ Error => silent | default): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+      inline def setDefault(value: /* error */ Error => silent | default): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setMultipleResolves(value: LogLevel): Self = StObject.set(x, "multipleResolves", value.asInstanceOf[js.Any])
+      inline def setMultipleResolves(value: LogLevel): Self = StObject.set(x, "multipleResolves", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleResolvesUndefined: Self = StObject.set(x, "multipleResolves", js.undefined)
+      inline def setMultipleResolvesUndefined: Self = StObject.set(x, "multipleResolves", js.undefined)
       
-      @scala.inline
-      def setRejectionHandled(value: LogLevel): Self = StObject.set(x, "rejectionHandled", value.asInstanceOf[js.Any])
+      inline def setRejectionHandled(value: LogLevel): Self = StObject.set(x, "rejectionHandled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectionHandledUndefined: Self = StObject.set(x, "rejectionHandled", js.undefined)
+      inline def setRejectionHandledUndefined: Self = StObject.set(x, "rejectionHandled", js.undefined)
       
-      @scala.inline
-      def setUncaughtException(value: LogLevel): Self = StObject.set(x, "uncaughtException", value.asInstanceOf[js.Any])
+      inline def setUncaughtException(value: LogLevel): Self = StObject.set(x, "uncaughtException", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUncaughtExceptionUndefined: Self = StObject.set(x, "uncaughtException", js.undefined)
+      inline def setUncaughtExceptionUndefined: Self = StObject.set(x, "uncaughtException", js.undefined)
       
-      @scala.inline
-      def setUnhandledRejection(value: LogLevel): Self = StObject.set(x, "unhandledRejection", value.asInstanceOf[js.Any])
+      inline def setUnhandledRejection(value: LogLevel): Self = StObject.set(x, "unhandledRejection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnhandledRejectionUndefined: Self = StObject.set(x, "unhandledRejection", js.undefined)
+      inline def setUnhandledRejectionUndefined: Self = StObject.set(x, "unhandledRejection", js.undefined)
       
-      @scala.inline
-      def setWarning(value: LogLevel): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: LogLevel): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
 }

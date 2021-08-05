@@ -14,8 +14,7 @@ object inputLayerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Input(config: InputConfig): SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("Input")(config.asInstanceOf[js.Any]).asInstanceOf[SymbolicTensor]
+  inline def Input(config: InputConfig): SymbolicTensor = ^.asInstanceOf[js.Dynamic].applyDynamic("Input")(config.asInstanceOf[js.Any]).asInstanceOf[SymbolicTensor]
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/input_layer", "InputLayer")
   @js.native
@@ -65,50 +64,36 @@ object inputLayerMod {
   }
   object InputConfig {
     
-    @scala.inline
-    def apply(): InputConfig = {
+    inline def apply(): InputConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputConfig]
     }
     
-    @scala.inline
-    implicit class InputConfigMutableBuilder[Self <: InputConfig] (val x: Self) extends AnyVal {
+    extension [Self <: InputConfig](x: Self) {
       
-      @scala.inline
-      def setBatchShape(value: Shape): Self = StObject.set(x, "batchShape", value.asInstanceOf[js.Any])
+      inline def setBatchShape(value: Shape): Self = StObject.set(x, "batchShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchShapeUndefined: Self = StObject.set(x, "batchShape", js.undefined)
+      inline def setBatchShapeUndefined: Self = StObject.set(x, "batchShape", js.undefined)
       
-      @scala.inline
-      def setBatchShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchShape", js.Array(value :_*))
+      inline def setBatchShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchShape", js.Array(value :_*))
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
-      @scala.inline
-      def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value :_*))
+      inline def setShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "shape", js.Array(value :_*))
       
-      @scala.inline
-      def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
+      inline def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
+      inline def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
     }
   }
   
@@ -136,56 +121,40 @@ object inputLayerMod {
   }
   object InputLayerArgs {
     
-    @scala.inline
-    def apply(): InputLayerArgs = {
+    inline def apply(): InputLayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InputLayerArgs]
     }
     
-    @scala.inline
-    implicit class InputLayerArgsMutableBuilder[Self <: InputLayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: InputLayerArgs](x: Self) {
       
-      @scala.inline
-      def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
+      inline def setBatchInputShape(value: Shape): Self = StObject.set(x, "batchInputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
+      inline def setBatchInputShapeUndefined: Self = StObject.set(x, "batchInputShape", js.undefined)
       
-      @scala.inline
-      def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
+      inline def setBatchInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "batchInputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
+      inline def setInputShape(value: Shape): Self = StObject.set(x, "inputShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
+      inline def setInputShapeUndefined: Self = StObject.set(x, "inputShape", js.undefined)
       
-      @scala.inline
-      def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
+      inline def setInputShapeVarargs(value: (Null | Double)*): Self = StObject.set(x, "inputShape", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
+      inline def setSparse(value: Boolean): Self = StObject.set(x, "sparse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
+      inline def setSparseUndefined: Self = StObject.set(x, "sparse", js.undefined)
     }
   }
 }

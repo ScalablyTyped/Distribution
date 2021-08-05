@@ -12,19 +12,15 @@ trait ResizeBilinearAttrs extends StObject {
 }
 object ResizeBilinearAttrs {
   
-  @scala.inline
-  def apply(alignCorners: Boolean, size: js.Tuple2[Double, Double]): ResizeBilinearAttrs = {
+  inline def apply(alignCorners: Boolean, size: js.Tuple2[Double, Double]): ResizeBilinearAttrs = {
     val __obj = js.Dynamic.literal(alignCorners = alignCorners.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResizeBilinearAttrs]
   }
   
-  @scala.inline
-  implicit class ResizeBilinearAttrsMutableBuilder[Self <: ResizeBilinearAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeBilinearAttrs](x: Self) {
     
-    @scala.inline
-    def setAlignCorners(value: Boolean): Self = StObject.set(x, "alignCorners", value.asInstanceOf[js.Any])
+    inline def setAlignCorners(value: Boolean): Self = StObject.set(x, "alignCorners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

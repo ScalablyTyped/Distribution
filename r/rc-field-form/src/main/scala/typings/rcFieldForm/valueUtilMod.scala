@@ -15,42 +15,30 @@ object valueUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cloneByNamePathList(store: Store, namePathList: js.Array[InternalNamePath]): Store = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneByNamePathList")(store.asInstanceOf[js.Any], namePathList.asInstanceOf[js.Any])).asInstanceOf[Store]
+  inline def cloneByNamePathList(store: Store, namePathList: js.Array[InternalNamePath]): Store = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneByNamePathList")(store.asInstanceOf[js.Any], namePathList.asInstanceOf[js.Any])).asInstanceOf[Store]
   
-  @scala.inline
-  def containsNamePath(namePathList: js.Array[InternalNamePath], namePath: InternalNamePath): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsNamePath")(namePathList.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def containsNamePath(namePathList: js.Array[InternalNamePath], namePath: InternalNamePath): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsNamePath")(namePathList.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def defaultGetValueFromEvent(
+  inline def defaultGetValueFromEvent(
     valuePropName: String,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventArgs is not an array type */ args: EventArgs
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetValueFromEvent")(valuePropName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getNamePath(): InternalNamePath = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamePath")().asInstanceOf[InternalNamePath]
-  @scala.inline
-  def getNamePath(path: NamePath): InternalNamePath = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamePath")(path.asInstanceOf[js.Any]).asInstanceOf[InternalNamePath]
+  inline def getNamePath(): InternalNamePath = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamePath")().asInstanceOf[InternalNamePath]
+  inline def getNamePath(path: NamePath): InternalNamePath = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamePath")(path.asInstanceOf[js.Any]).asInstanceOf[InternalNamePath]
   
-  @scala.inline
-  def getValue(store: Store, namePath: InternalNamePath): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getValue(store: Store, namePath: InternalNamePath): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isSimilar(source: SimilarObject, target: SimilarObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSimilar")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isSimilar(source: SimilarObject, target: SimilarObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSimilar")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def matchNamePath(namePath: InternalNamePath): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchNamePath")(namePath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def matchNamePath(namePath: InternalNamePath, changedNamePath: InternalNamePath): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchNamePath")(namePath.asInstanceOf[js.Any], changedNamePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def matchNamePath(namePath: InternalNamePath): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchNamePath")(namePath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def matchNamePath(namePath: InternalNamePath, changedNamePath: InternalNamePath): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchNamePath")(namePath.asInstanceOf[js.Any], changedNamePath.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def move[T](array: js.Array[T], moveIndex: Double, toIndex: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(array.asInstanceOf[js.Any], moveIndex.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def move[T](array: js.Array[T], moveIndex: Double, toIndex: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(array.asInstanceOf[js.Any], moveIndex.asInstanceOf[js.Any], toIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @scala.inline
-  def setValue(store: Store, namePath: InternalNamePath, value: StoreValue): Store = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Store]
+  inline def setValue(store: Store, namePath: InternalNamePath, value: StoreValue): Store = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(store.asInstanceOf[js.Any], namePath.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Store]
   
-  @scala.inline
-  def setValues[T](store: T, restValues: T*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setValues")(store.asInstanceOf[js.Any], restValues.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def setValues[T](store: T, restValues: T*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setValues")(store.asInstanceOf[js.Any], restValues.asInstanceOf[js.Any])).asInstanceOf[T]
   
   type SimilarObject = String | Double | js.Object
 }

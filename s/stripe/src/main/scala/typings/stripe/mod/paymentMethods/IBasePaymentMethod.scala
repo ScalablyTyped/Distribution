@@ -33,38 +33,28 @@ trait IBasePaymentMethod
 }
 object IBasePaymentMethod {
   
-  @scala.inline
-  def apply(created: Double, id: String, livemode: Boolean, metadata: IMetadata): IBasePaymentMethod = {
+  inline def apply(created: Double, id: String, livemode: Boolean, metadata: IMetadata): IBasePaymentMethod = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], billing_details = null, customer = null)
     __obj.updateDynamic("object")("payment_method")
     __obj.asInstanceOf[IBasePaymentMethod]
   }
   
-  @scala.inline
-  implicit class IBasePaymentMethodMutableBuilder[Self <: IBasePaymentMethod] (val x: Self) extends AnyVal {
+  extension [Self <: IBasePaymentMethod](x: Self) {
     
-    @scala.inline
-    def setBilling_details(value: Email): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
+    inline def setBilling_details(value: Email): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBilling_detailsNull: Self = StObject.set(x, "billing_details", null)
+    inline def setBilling_detailsNull: Self = StObject.set(x, "billing_details", null)
     
-    @scala.inline
-    def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String | ICustomer): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerNull: Self = StObject.set(x, "customer", null)
+    inline def setCustomerNull: Self = StObject.set(x, "customer", null)
     
-    @scala.inline
-    def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+    inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: payment_method): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: payment_method): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

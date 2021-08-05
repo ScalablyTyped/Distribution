@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait lengthAdjust extends StObject
 object lengthAdjust {
   
-  @scala.inline
-  def LENGTHADJUST_SPACING: `1` = 1.asInstanceOf[`1`]
+  inline def LENGTHADJUST_SPACING: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def LENGTHADJUST_SPACINGANDGLYPHS: `2` = 2.asInstanceOf[`2`]
+  inline def LENGTHADJUST_SPACINGANDGLYPHS: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def LENGTHADJUST_UNKNOWN: `0` = 0.asInstanceOf[`0`]
+  inline def LENGTHADJUST_UNKNOWN: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def lengthAdjust_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def lengthAdjust_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

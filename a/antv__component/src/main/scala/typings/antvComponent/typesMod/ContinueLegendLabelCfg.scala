@@ -30,31 +30,23 @@ trait ContinueLegendLabelCfg extends StObject {
 }
 object ContinueLegendLabelCfg {
   
-  @scala.inline
-  def apply(): ContinueLegendLabelCfg = {
+  inline def apply(): ContinueLegendLabelCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContinueLegendLabelCfg]
   }
   
-  @scala.inline
-  implicit class ContinueLegendLabelCfgMutableBuilder[Self <: ContinueLegendLabelCfg] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueLegendLabelCfg](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: Double): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -22,8 +22,7 @@ trait IJsonValue extends StObject {
 }
 object IJsonValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getArray: () => JsonArray,
     getBoolean: () => Boolean,
     getNumber: () => Double,
@@ -36,28 +35,20 @@ object IJsonValue {
     __obj.asInstanceOf[IJsonValue]
   }
   
-  @scala.inline
-  implicit class IJsonValueMutableBuilder[Self <: IJsonValue] (val x: Self) extends AnyVal {
+  extension [Self <: IJsonValue](x: Self) {
     
-    @scala.inline
-    def setGetArray(value: () => JsonArray): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
+    inline def setGetArray(value: () => JsonArray): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetBoolean(value: () => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction0(value))
+    inline def setGetBoolean(value: () => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumber(value: () => Double): Self = StObject.set(x, "getNumber", js.Any.fromFunction0(value))
+    inline def setGetNumber(value: () => Double): Self = StObject.set(x, "getNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetObject(value: () => JsonObject): Self = StObject.set(x, "getObject", js.Any.fromFunction0(value))
+    inline def setGetObject(value: () => JsonObject): Self = StObject.set(x, "getObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
+    inline def setGetString(value: () => String): Self = StObject.set(x, "getString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStringify(value: () => String): Self = StObject.set(x, "stringify", js.Any.fromFunction0(value))
+    inline def setStringify(value: () => String): Self = StObject.set(x, "stringify", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValueType(value: JsonValueType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: JsonValueType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
   }
 }

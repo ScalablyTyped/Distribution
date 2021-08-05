@@ -12,16 +12,13 @@ trait BulkWriteUpdateOneOperation[TSchema]
 }
 object BulkWriteUpdateOneOperation {
   
-  @scala.inline
-  def apply[TSchema](updateOne: BulkWriteUpdateOperation[TSchema]): BulkWriteUpdateOneOperation[TSchema] = {
+  inline def apply[TSchema](updateOne: BulkWriteUpdateOperation[TSchema]): BulkWriteUpdateOneOperation[TSchema] = {
     val __obj = js.Dynamic.literal(updateOne = updateOne.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkWriteUpdateOneOperation[TSchema]]
   }
   
-  @scala.inline
-  implicit class BulkWriteUpdateOneOperationMutableBuilder[Self <: BulkWriteUpdateOneOperation[?], TSchema] (val x: Self & BulkWriteUpdateOneOperation[TSchema]) extends AnyVal {
+  extension [Self <: BulkWriteUpdateOneOperation[?], TSchema](x: Self & BulkWriteUpdateOneOperation[TSchema]) {
     
-    @scala.inline
-    def setUpdateOne(value: BulkWriteUpdateOperation[TSchema]): Self = StObject.set(x, "updateOne", value.asInstanceOf[js.Any])
+    inline def setUpdateOne(value: BulkWriteUpdateOperation[TSchema]): Self = StObject.set(x, "updateOne", value.asInstanceOf[js.Any])
   }
 }

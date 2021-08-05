@@ -14,25 +14,19 @@ trait SourceReference extends StObject {
 }
 object SourceReference {
   
-  @scala.inline
-  def apply(): SourceReference = {
+  inline def apply(): SourceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceReference]
   }
   
-  @scala.inline
-  implicit class SourceReferenceMutableBuilder[Self <: SourceReference] (val x: Self) extends AnyVal {
+  extension [Self <: SourceReference](x: Self) {
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }
 }

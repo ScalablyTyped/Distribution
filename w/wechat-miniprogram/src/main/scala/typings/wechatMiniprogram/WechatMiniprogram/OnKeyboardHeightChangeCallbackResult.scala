@@ -11,16 +11,13 @@ trait OnKeyboardHeightChangeCallbackResult extends StObject {
 }
 object OnKeyboardHeightChangeCallbackResult {
   
-  @scala.inline
-  def apply(height: Double): OnKeyboardHeightChangeCallbackResult = {
+  inline def apply(height: Double): OnKeyboardHeightChangeCallbackResult = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnKeyboardHeightChangeCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnKeyboardHeightChangeCallbackResultMutableBuilder[Self <: OnKeyboardHeightChangeCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnKeyboardHeightChangeCallbackResult](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
   }
 }

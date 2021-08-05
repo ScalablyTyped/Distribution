@@ -64,17 +64,14 @@ object clusterRoleListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ClusterRoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterRoleList]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ClusterRoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterRoleList]
+    inline def get(name: String, id: Input[ID]): ClusterRoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterRoleList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): ClusterRoleList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterRoleList]
     
     /**
       * Returns true if the given object is an instance of ClusterRoleList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleList.ClusterRoleList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleList.ClusterRoleList */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleList.ClusterRoleList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/rbac/v1alpha1/clusterRoleList.ClusterRoleList */ Boolean]
   }
   
   trait ClusterRoleListArgs extends StObject {
@@ -101,38 +98,28 @@ object clusterRoleListMod {
   }
   object ClusterRoleListArgs {
     
-    @scala.inline
-    def apply(items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1alpha1.ClusterRole]]]): ClusterRoleListArgs = {
+    inline def apply(items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1alpha1.ClusterRole]]]): ClusterRoleListArgs = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClusterRoleListArgs]
     }
     
-    @scala.inline
-    implicit class ClusterRoleListArgsMutableBuilder[Self <: ClusterRoleListArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterRoleListArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[rbacDotauthorizationDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setItems(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1alpha1.ClusterRole]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.rbac.v1alpha1.ClusterRole]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1alpha1.ClusterRole]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.rbac.v1alpha1.ClusterRole]*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRoleList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ClusterRoleList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
 }

@@ -35,8 +35,7 @@ trait PlaceSearchResponse extends StObject {
 }
 object PlaceSearchResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     error_message: String,
     html_attributions: js.Array[String],
     next_page_token: String,
@@ -47,28 +46,20 @@ object PlaceSearchResponse {
     __obj.asInstanceOf[PlaceSearchResponse]
   }
   
-  @scala.inline
-  implicit class PlaceSearchResponseMutableBuilder[Self <: PlaceSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceSearchResponse](x: Self) {
     
-    @scala.inline
-    def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
+    inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_attributions(value: js.Array[String]): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
+    inline def setHtml_attributions(value: js.Array[String]): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_attributionsVarargs(value: String*): Self = StObject.set(x, "html_attributions", js.Array(value :_*))
+    inline def setHtml_attributionsVarargs(value: String*): Self = StObject.set(x, "html_attributions", js.Array(value :_*))
     
-    @scala.inline
-    def setNext_page_token(value: String): Self = StObject.set(x, "next_page_token", value.asInstanceOf[js.Any])
+    inline def setNext_page_token(value: String): Self = StObject.set(x, "next_page_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[PlaceSearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[PlaceSearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: PlaceSearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: PlaceSearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: SearchResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SearchResponseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

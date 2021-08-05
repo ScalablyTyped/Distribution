@@ -28,8 +28,7 @@ trait ContactQueryOptions extends StObject {
 }
 object ContactQueryOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     annotationListIds: IVector[String],
     contactListIds: IVector[String],
     desiredFields: ContactQueryDesiredFields,
@@ -41,25 +40,18 @@ object ContactQueryOptions {
     __obj.asInstanceOf[ContactQueryOptions]
   }
   
-  @scala.inline
-  implicit class ContactQueryOptionsMutableBuilder[Self <: ContactQueryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContactQueryOptions](x: Self) {
     
-    @scala.inline
-    def setAnnotationListIds(value: IVector[String]): Self = StObject.set(x, "annotationListIds", value.asInstanceOf[js.Any])
+    inline def setAnnotationListIds(value: IVector[String]): Self = StObject.set(x, "annotationListIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactListIds(value: IVector[String]): Self = StObject.set(x, "contactListIds", value.asInstanceOf[js.Any])
+    inline def setContactListIds(value: IVector[String]): Self = StObject.set(x, "contactListIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredFields(value: ContactQueryDesiredFields): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
+    inline def setDesiredFields(value: ContactQueryDesiredFields): Self = StObject.set(x, "desiredFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredOperations(value: ContactAnnotationOperations): Self = StObject.set(x, "desiredOperations", value.asInstanceOf[js.Any])
+    inline def setDesiredOperations(value: ContactAnnotationOperations): Self = StObject.set(x, "desiredOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeContactsFromHiddenLists(value: Boolean): Self = StObject.set(x, "includeContactsFromHiddenLists", value.asInstanceOf[js.Any])
+    inline def setIncludeContactsFromHiddenLists(value: Boolean): Self = StObject.set(x, "includeContactsFromHiddenLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSearch(value: ContactQueryTextSearch): Self = StObject.set(x, "textSearch", value.asInstanceOf[js.Any])
+    inline def setTextSearch(value: ContactQueryTextSearch): Self = StObject.set(x, "textSearch", value.asInstanceOf[js.Any])
   }
 }

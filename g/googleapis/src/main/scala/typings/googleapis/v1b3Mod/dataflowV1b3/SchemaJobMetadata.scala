@@ -47,73 +47,51 @@ trait SchemaJobMetadata extends StObject {
 }
 object SchemaJobMetadata {
   
-  @scala.inline
-  def apply(): SchemaJobMetadata = {
+  inline def apply(): SchemaJobMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaJobMetadataMutableBuilder[Self <: SchemaJobMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobMetadata](x: Self) {
     
-    @scala.inline
-    def setBigTableDetails(value: js.Array[SchemaBigTableIODetails]): Self = StObject.set(x, "bigTableDetails", value.asInstanceOf[js.Any])
+    inline def setBigTableDetails(value: js.Array[SchemaBigTableIODetails]): Self = StObject.set(x, "bigTableDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigTableDetailsUndefined: Self = StObject.set(x, "bigTableDetails", js.undefined)
+    inline def setBigTableDetailsUndefined: Self = StObject.set(x, "bigTableDetails", js.undefined)
     
-    @scala.inline
-    def setBigTableDetailsVarargs(value: SchemaBigTableIODetails*): Self = StObject.set(x, "bigTableDetails", js.Array(value :_*))
+    inline def setBigTableDetailsVarargs(value: SchemaBigTableIODetails*): Self = StObject.set(x, "bigTableDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setBigqueryDetails(value: js.Array[SchemaBigQueryIODetails]): Self = StObject.set(x, "bigqueryDetails", value.asInstanceOf[js.Any])
+    inline def setBigqueryDetails(value: js.Array[SchemaBigQueryIODetails]): Self = StObject.set(x, "bigqueryDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigqueryDetailsUndefined: Self = StObject.set(x, "bigqueryDetails", js.undefined)
+    inline def setBigqueryDetailsUndefined: Self = StObject.set(x, "bigqueryDetails", js.undefined)
     
-    @scala.inline
-    def setBigqueryDetailsVarargs(value: SchemaBigQueryIODetails*): Self = StObject.set(x, "bigqueryDetails", js.Array(value :_*))
+    inline def setBigqueryDetailsVarargs(value: SchemaBigQueryIODetails*): Self = StObject.set(x, "bigqueryDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setDatastoreDetails(value: js.Array[SchemaDatastoreIODetails]): Self = StObject.set(x, "datastoreDetails", value.asInstanceOf[js.Any])
+    inline def setDatastoreDetails(value: js.Array[SchemaDatastoreIODetails]): Self = StObject.set(x, "datastoreDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreDetailsUndefined: Self = StObject.set(x, "datastoreDetails", js.undefined)
+    inline def setDatastoreDetailsUndefined: Self = StObject.set(x, "datastoreDetails", js.undefined)
     
-    @scala.inline
-    def setDatastoreDetailsVarargs(value: SchemaDatastoreIODetails*): Self = StObject.set(x, "datastoreDetails", js.Array(value :_*))
+    inline def setDatastoreDetailsVarargs(value: SchemaDatastoreIODetails*): Self = StObject.set(x, "datastoreDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setFileDetails(value: js.Array[SchemaFileIODetails]): Self = StObject.set(x, "fileDetails", value.asInstanceOf[js.Any])
+    inline def setFileDetails(value: js.Array[SchemaFileIODetails]): Self = StObject.set(x, "fileDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileDetailsUndefined: Self = StObject.set(x, "fileDetails", js.undefined)
+    inline def setFileDetailsUndefined: Self = StObject.set(x, "fileDetails", js.undefined)
     
-    @scala.inline
-    def setFileDetailsVarargs(value: SchemaFileIODetails*): Self = StObject.set(x, "fileDetails", js.Array(value :_*))
+    inline def setFileDetailsVarargs(value: SchemaFileIODetails*): Self = StObject.set(x, "fileDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setPubsubDetails(value: js.Array[SchemaPubSubIODetails]): Self = StObject.set(x, "pubsubDetails", value.asInstanceOf[js.Any])
+    inline def setPubsubDetails(value: js.Array[SchemaPubSubIODetails]): Self = StObject.set(x, "pubsubDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubsubDetailsUndefined: Self = StObject.set(x, "pubsubDetails", js.undefined)
+    inline def setPubsubDetailsUndefined: Self = StObject.set(x, "pubsubDetails", js.undefined)
     
-    @scala.inline
-    def setPubsubDetailsVarargs(value: SchemaPubSubIODetails*): Self = StObject.set(x, "pubsubDetails", js.Array(value :_*))
+    inline def setPubsubDetailsVarargs(value: SchemaPubSubIODetails*): Self = StObject.set(x, "pubsubDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setSdkVersion(value: SchemaSdkVersion): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
+    inline def setSdkVersion(value: SchemaSdkVersion): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
+    inline def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
     
-    @scala.inline
-    def setSpannerDetails(value: js.Array[SchemaSpannerIODetails]): Self = StObject.set(x, "spannerDetails", value.asInstanceOf[js.Any])
+    inline def setSpannerDetails(value: js.Array[SchemaSpannerIODetails]): Self = StObject.set(x, "spannerDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpannerDetailsUndefined: Self = StObject.set(x, "spannerDetails", js.undefined)
+    inline def setSpannerDetailsUndefined: Self = StObject.set(x, "spannerDetails", js.undefined)
     
-    @scala.inline
-    def setSpannerDetailsVarargs(value: SchemaSpannerIODetails*): Self = StObject.set(x, "spannerDetails", js.Array(value :_*))
+    inline def setSpannerDetailsVarargs(value: SchemaSpannerIODetails*): Self = StObject.set(x, "spannerDetails", js.Array(value :_*))
   }
 }

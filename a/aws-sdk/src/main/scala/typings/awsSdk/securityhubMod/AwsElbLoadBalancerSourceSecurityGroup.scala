@@ -18,25 +18,19 @@ trait AwsElbLoadBalancerSourceSecurityGroup extends StObject {
 }
 object AwsElbLoadBalancerSourceSecurityGroup {
   
-  @scala.inline
-  def apply(): AwsElbLoadBalancerSourceSecurityGroup = {
+  inline def apply(): AwsElbLoadBalancerSourceSecurityGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElbLoadBalancerSourceSecurityGroup]
   }
   
-  @scala.inline
-  implicit class AwsElbLoadBalancerSourceSecurityGroupMutableBuilder[Self <: AwsElbLoadBalancerSourceSecurityGroup] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElbLoadBalancerSourceSecurityGroup](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setOwnerAlias(value: NonEmptyString): Self = StObject.set(x, "OwnerAlias", value.asInstanceOf[js.Any])
+    inline def setOwnerAlias(value: NonEmptyString): Self = StObject.set(x, "OwnerAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAliasUndefined: Self = StObject.set(x, "OwnerAlias", js.undefined)
+    inline def setOwnerAliasUndefined: Self = StObject.set(x, "OwnerAlias", js.undefined)
   }
 }

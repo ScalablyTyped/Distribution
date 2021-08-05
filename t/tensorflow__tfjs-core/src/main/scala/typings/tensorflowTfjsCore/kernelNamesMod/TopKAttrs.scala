@@ -12,19 +12,15 @@ trait TopKAttrs extends StObject {
 }
 object TopKAttrs {
   
-  @scala.inline
-  def apply(k: Double, sorted: Boolean): TopKAttrs = {
+  inline def apply(k: Double, sorted: Boolean): TopKAttrs = {
     val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], sorted = sorted.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopKAttrs]
   }
   
-  @scala.inline
-  implicit class TopKAttrsMutableBuilder[Self <: TopKAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: TopKAttrs](x: Self) {
     
-    @scala.inline
-    def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+    inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
+    inline def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
   }
 }

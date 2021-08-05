@@ -14,28 +14,21 @@ trait ListWebAppsResponse extends StObject {
 }
 object ListWebAppsResponse {
   
-  @scala.inline
-  def apply(): ListWebAppsResponse = {
+  inline def apply(): ListWebAppsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWebAppsResponse]
   }
   
-  @scala.inline
-  implicit class ListWebAppsResponseMutableBuilder[Self <: ListWebAppsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListWebAppsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setWebApps(value: js.Array[WebApp]): Self = StObject.set(x, "webApps", value.asInstanceOf[js.Any])
+    inline def setWebApps(value: js.Array[WebApp]): Self = StObject.set(x, "webApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAppsUndefined: Self = StObject.set(x, "webApps", js.undefined)
+    inline def setWebAppsUndefined: Self = StObject.set(x, "webApps", js.undefined)
     
-    @scala.inline
-    def setWebAppsVarargs(value: WebApp*): Self = StObject.set(x, "webApps", js.Array(value :_*))
+    inline def setWebAppsVarargs(value: WebApp*): Self = StObject.set(x, "webApps", js.Array(value :_*))
   }
 }

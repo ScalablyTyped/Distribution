@@ -37,29 +37,22 @@ object typesMod {
   }
   object ManifestEntry {
     
-    @scala.inline
-    def apply(url: String): ManifestEntry = {
+    inline def apply(url: String): ManifestEntry = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ManifestEntry]
     }
     
-    @scala.inline
-    implicit class ManifestEntryMutableBuilder[Self <: ManifestEntry] (val x: Self) extends AnyVal {
+    extension [Self <: ManifestEntry](x: Self) {
       
-      @scala.inline
-      def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+      inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
       
-      @scala.inline
-      def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: String): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+      inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,26 +70,20 @@ object typesMod {
   }
   object ManifestTransformResult {
     
-    @scala.inline
-    def apply(manifest: js.Array[ManifestEntry], warnings: js.Array[js.UndefOr[String]]): ManifestTransformResult = {
+    inline def apply(manifest: js.Array[ManifestEntry], warnings: js.Array[js.UndefOr[String]]): ManifestTransformResult = {
       val __obj = js.Dynamic.literal(manifest = manifest.asInstanceOf[js.Any], warnings = warnings.asInstanceOf[js.Any])
       __obj.asInstanceOf[ManifestTransformResult]
     }
     
-    @scala.inline
-    implicit class ManifestTransformResultMutableBuilder[Self <: ManifestTransformResult] (val x: Self) extends AnyVal {
+    extension [Self <: ManifestTransformResult](x: Self) {
       
-      @scala.inline
-      def setManifest(value: js.Array[ManifestEntry]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+      inline def setManifest(value: js.Array[ManifestEntry]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestVarargs(value: ManifestEntry*): Self = StObject.set(x, "manifest", js.Array(value :_*))
+      inline def setManifestVarargs(value: ManifestEntry*): Self = StObject.set(x, "manifest", js.Array(value :_*))
       
-      @scala.inline
-      def setWarnings(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: js.UndefOr[String]*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     }
   }
   
@@ -126,38 +113,28 @@ object typesMod {
   }
   object RuntimeCachingEntry {
     
-    @scala.inline
-    def apply(handler: String | RouteHandlerCallback, urlPattern: String | RegExp | RouteMatchCallback[js.Any]): RuntimeCachingEntry = {
+    inline def apply(handler: String | RouteHandlerCallback, urlPattern: String | RegExp | RouteMatchCallback[js.Any]): RuntimeCachingEntry = {
       val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], urlPattern = urlPattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuntimeCachingEntry]
     }
     
-    @scala.inline
-    implicit class RuntimeCachingEntryMutableBuilder[Self <: RuntimeCachingEntry] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeCachingEntry](x: Self) {
       
-      @scala.inline
-      def setHandler(value: String | RouteHandlerCallback): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: String | RouteHandlerCallback): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerFunction1(value: /* context */ RouteHandlerCallbackContext => js.Promise[Response]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandlerFunction1(value: /* context */ RouteHandlerCallbackContext => js.Promise[Response]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setOptions(value: RuntimeCachingEntryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: RuntimeCachingEntryOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setUrlPattern(value: String | RegExp | RouteMatchCallback[js.Any]): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
+      inline def setUrlPattern(value: String | RegExp | RouteMatchCallback[js.Any]): Self = StObject.set(x, "urlPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlPatternFunction1(value: /* options */ RouteMatchCallbackOptions => js.Any): Self = StObject.set(x, "urlPattern", js.Any.fromFunction1(value))
+      inline def setUrlPatternFunction1(value: /* options */ RouteMatchCallbackOptions => js.Any): Self = StObject.set(x, "urlPattern", js.Any.fromFunction1(value))
     }
   }
   
@@ -203,71 +180,50 @@ object typesMod {
   }
   object RuntimeCachingEntryOptions {
     
-    @scala.inline
-    def apply(): RuntimeCachingEntryOptions = {
+    inline def apply(): RuntimeCachingEntryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RuntimeCachingEntryOptions]
     }
     
-    @scala.inline
-    implicit class RuntimeCachingEntryOptionsMutableBuilder[Self <: RuntimeCachingEntryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RuntimeCachingEntryOptions](x: Self) {
       
-      @scala.inline
-      def setBackgroundSync(value: Name): Self = StObject.set(x, "backgroundSync", value.asInstanceOf[js.Any])
+      inline def setBackgroundSync(value: Name): Self = StObject.set(x, "backgroundSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundSyncUndefined: Self = StObject.set(x, "backgroundSync", js.undefined)
+      inline def setBackgroundSyncUndefined: Self = StObject.set(x, "backgroundSync", js.undefined)
       
-      @scala.inline
-      def setBroadcastUpdate(value: ChannelName): Self = StObject.set(x, "broadcastUpdate", value.asInstanceOf[js.Any])
+      inline def setBroadcastUpdate(value: ChannelName): Self = StObject.set(x, "broadcastUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBroadcastUpdateUndefined: Self = StObject.set(x, "broadcastUpdate", js.undefined)
+      inline def setBroadcastUpdateUndefined: Self = StObject.set(x, "broadcastUpdate", js.undefined)
       
-      @scala.inline
-      def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
+      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
+      inline def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
       
-      @scala.inline
-      def setCacheableResponse(value: Headers): Self = StObject.set(x, "cacheableResponse", value.asInstanceOf[js.Any])
+      inline def setCacheableResponse(value: Headers): Self = StObject.set(x, "cacheableResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheableResponseUndefined: Self = StObject.set(x, "cacheableResponse", js.undefined)
+      inline def setCacheableResponseUndefined: Self = StObject.set(x, "cacheableResponse", js.undefined)
       
-      @scala.inline
-      def setExpiration(value: MaxAgeSeconds): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: MaxAgeSeconds): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
+      inline def setExpirationUndefined: Self = StObject.set(x, "expiration", js.undefined)
       
-      @scala.inline
-      def setFetchOptions(value: js.Object): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
+      inline def setFetchOptions(value: js.Object): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
+      inline def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
       
-      @scala.inline
-      def setMatchOptions(value: js.Object): Self = StObject.set(x, "matchOptions", value.asInstanceOf[js.Any])
+      inline def setMatchOptions(value: js.Object): Self = StObject.set(x, "matchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchOptionsUndefined: Self = StObject.set(x, "matchOptions", js.undefined)
+      inline def setMatchOptionsUndefined: Self = StObject.set(x, "matchOptions", js.undefined)
       
-      @scala.inline
-      def setNetworkTimeoutSeconds(value: Double): Self = StObject.set(x, "networkTimeoutSeconds", value.asInstanceOf[js.Any])
+      inline def setNetworkTimeoutSeconds(value: Double): Self = StObject.set(x, "networkTimeoutSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkTimeoutSecondsUndefined: Self = StObject.set(x, "networkTimeoutSeconds", js.undefined)
+      inline def setNetworkTimeoutSecondsUndefined: Self = StObject.set(x, "networkTimeoutSeconds", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[js.Object]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[js.Object]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: js.Object*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: js.Object*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     }
   }
 }

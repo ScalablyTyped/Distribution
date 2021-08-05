@@ -48,58 +48,41 @@ trait BundleEntry
 }
 object BundleEntry {
   
-  @scala.inline
-  def apply(): BundleEntry = {
+  inline def apply(): BundleEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BundleEntry]
   }
   
-  @scala.inline
-  implicit class BundleEntryMutableBuilder[Self <: BundleEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BundleEntry](x: Self) {
     
-    @scala.inline
-    def setFullUrl(value: uri): Self = StObject.set(x, "fullUrl", value.asInstanceOf[js.Any])
+    inline def setFullUrl(value: uri): Self = StObject.set(x, "fullUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullUrlUndefined: Self = StObject.set(x, "fullUrl", js.undefined)
+    inline def setFullUrlUndefined: Self = StObject.set(x, "fullUrl", js.undefined)
     
-    @scala.inline
-    def setLink(value: js.Array[BundleLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: js.Array[BundleLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setLinkVarargs(value: BundleLink*): Self = StObject.set(x, "link", js.Array(value :_*))
+    inline def setLinkVarargs(value: BundleLink*): Self = StObject.set(x, "link", js.Array(value :_*))
     
-    @scala.inline
-    def setRequest(value: BundleEntryRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: BundleEntryRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setResponse(value: BundleEntryResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: BundleEntryResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setSearch(value: BundleEntrySearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    inline def setSearch(value: BundleEntrySearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def set_fullUrl(value: Element): Self = StObject.set(x, "_fullUrl", value.asInstanceOf[js.Any])
+    inline def set_fullUrl(value: Element): Self = StObject.set(x, "_fullUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_fullUrlUndefined: Self = StObject.set(x, "_fullUrl", js.undefined)
+    inline def set_fullUrlUndefined: Self = StObject.set(x, "_fullUrl", js.undefined)
   }
 }

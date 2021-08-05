@@ -18,19 +18,15 @@ trait GetReusableDelegationSetLimitResponse extends StObject {
 }
 object GetReusableDelegationSetLimitResponse {
   
-  @scala.inline
-  def apply(Count: UsageCount, Limit: ReusableDelegationSetLimit): GetReusableDelegationSetLimitResponse = {
+  inline def apply(Count: UsageCount, Limit: ReusableDelegationSetLimit): GetReusableDelegationSetLimitResponse = {
     val __obj = js.Dynamic.literal(Count = Count.asInstanceOf[js.Any], Limit = Limit.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReusableDelegationSetLimitResponse]
   }
   
-  @scala.inline
-  implicit class GetReusableDelegationSetLimitResponseMutableBuilder[Self <: GetReusableDelegationSetLimitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetReusableDelegationSetLimitResponse](x: Self) {
     
-    @scala.inline
-    def setCount(value: UsageCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: UsageCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: ReusableDelegationSetLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: ReusableDelegationSetLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
   }
 }

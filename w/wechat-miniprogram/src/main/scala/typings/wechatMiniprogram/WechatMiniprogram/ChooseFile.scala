@@ -32,29 +32,22 @@ trait ChooseFile extends StObject {
 }
 object ChooseFile {
   
-  @scala.inline
-  def apply(name: String, path: String, size: Double, time: Double, `type`: video | image | file): ChooseFile = {
+  inline def apply(name: String, path: String, size: Double, time: Double, `type`: video | image | file): ChooseFile = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseFile]
   }
   
-  @scala.inline
-  implicit class ChooseFileMutableBuilder[Self <: ChooseFile] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseFile](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: video | image | file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: video | image | file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

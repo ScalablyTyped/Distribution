@@ -128,8 +128,7 @@ trait XUIConfigurationManager
 }
 object XUIConfigurationManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EventsManager: XInterface,
     ImageManager: XInterface,
     ShortCutManager: XAcceleratorConfiguration,
@@ -152,49 +151,34 @@ object XUIConfigurationManager {
     __obj.asInstanceOf[XUIConfigurationManager]
   }
   
-  @scala.inline
-  implicit class XUIConfigurationManagerMutableBuilder[Self <: XUIConfigurationManager] (val x: Self) extends AnyVal {
+  extension [Self <: XUIConfigurationManager](x: Self) {
     
-    @scala.inline
-    def setCreateSettings(value: () => XIndexContainer): Self = StObject.set(x, "createSettings", js.Any.fromFunction0(value))
+    inline def setCreateSettings(value: () => XIndexContainer): Self = StObject.set(x, "createSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEventsManager(value: XInterface): Self = StObject.set(x, "EventsManager", value.asInstanceOf[js.Any])
+    inline def setEventsManager(value: XInterface): Self = StObject.set(x, "EventsManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetEventsManager(value: () => XInterface): Self = StObject.set(x, "getEventsManager", js.Any.fromFunction0(value))
+    inline def setGetEventsManager(value: () => XInterface): Self = StObject.set(x, "getEventsManager", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetImageManager(value: () => XInterface): Self = StObject.set(x, "getImageManager", js.Any.fromFunction0(value))
+    inline def setGetImageManager(value: () => XInterface): Self = StObject.set(x, "getImageManager", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSettings(value: (String, Boolean) => XIndexAccess): Self = StObject.set(x, "getSettings", js.Any.fromFunction2(value))
+    inline def setGetSettings(value: (String, Boolean) => XIndexAccess): Self = StObject.set(x, "getSettings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetShortCutManager(value: () => XAcceleratorConfiguration): Self = StObject.set(x, "getShortCutManager", js.Any.fromFunction0(value))
+    inline def setGetShortCutManager(value: () => XAcceleratorConfiguration): Self = StObject.set(x, "getShortCutManager", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUIElementsInfo(value: Double => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getUIElementsInfo", js.Any.fromFunction1(value))
+    inline def setGetUIElementsInfo(value: Double => SafeArray[SafeArray[PropertyValue]]): Self = StObject.set(x, "getUIElementsInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasSettings(value: String => Boolean): Self = StObject.set(x, "hasSettings", js.Any.fromFunction1(value))
+    inline def setHasSettings(value: String => Boolean): Self = StObject.set(x, "hasSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImageManager(value: XInterface): Self = StObject.set(x, "ImageManager", value.asInstanceOf[js.Any])
+    inline def setImageManager(value: XInterface): Self = StObject.set(x, "ImageManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertSettings(value: (String, XIndexAccess) => Unit): Self = StObject.set(x, "insertSettings", js.Any.fromFunction2(value))
+    inline def setInsertSettings(value: (String, XIndexAccess) => Unit): Self = StObject.set(x, "insertSettings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveSettings(value: String => Unit): Self = StObject.set(x, "removeSettings", js.Any.fromFunction1(value))
+    inline def setRemoveSettings(value: String => Unit): Self = StObject.set(x, "removeSettings", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceSettings(value: (String, XIndexAccess) => Unit): Self = StObject.set(x, "replaceSettings", js.Any.fromFunction2(value))
+    inline def setReplaceSettings(value: (String, XIndexAccess) => Unit): Self = StObject.set(x, "replaceSettings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShortCutManager(value: XAcceleratorConfiguration): Self = StObject.set(x, "ShortCutManager", value.asInstanceOf[js.Any])
+    inline def setShortCutManager(value: XAcceleratorConfiguration): Self = StObject.set(x, "ShortCutManager", value.asInstanceOf[js.Any])
   }
 }

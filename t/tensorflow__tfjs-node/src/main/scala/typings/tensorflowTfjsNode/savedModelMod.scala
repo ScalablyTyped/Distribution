@@ -25,7 +25,7 @@ object savedModelMod {
        with InferenceModel {
     def this(sessionId: Double, jsid: Double, signature: SignatureDefEntry, backend: NodeJSKernelBackend) = this()
     
-    var backend: js.Any = js.native
+    /* private */ var backend: js.Any = js.native
     
     /**
       * Delete the SavedModel from nodeBackend and delete corresponding session in
@@ -35,13 +35,13 @@ object savedModelMod {
       */
     def dispose(): Unit = js.native
     
-    var disposed: js.Any = js.native
+    /* private */ var disposed: js.Any = js.native
     
-    var jsid: js.Any = js.native
+    /* private */ var jsid: js.Any = js.native
     
     val outputNodeNames: StringDictionary[String] = js.native
     
-    var outputNodeNames_ : js.Any = js.native
+    /* private */ var outputNodeNames_ : js.Any = js.native
     
     def predict(inputs: js.Array[Tensor[Rank]]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     /**
@@ -71,32 +71,23 @@ object savedModelMod {
     def predict(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     def predict(inputs: NamedTensorMap): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     
-    var sessionId: js.Any = js.native
+    /* private */ var sessionId: js.Any = js.native
     
-    var signature: js.Any = js.native
+    /* private */ var signature: js.Any = js.native
   }
   
-  @scala.inline
-  def getEnumKeyFromValue(`object`: js.Any, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getEnumKeyFromValue")(`object`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getEnumKeyFromValue(`object`: js.Any, value: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getEnumKeyFromValue")(`object`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetaGraphsFromSavedModel")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MetaGraph]]]
+  inline def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetaGraphsFromSavedModel")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MetaGraph]]]
   
-  @scala.inline
-  def getNumOfSavedModels(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumOfSavedModels")().asInstanceOf[Double]
+  inline def getNumOfSavedModels(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumOfSavedModels")().asInstanceOf[Double]
   
-  @scala.inline
-  def getSignatureDefEntryFromMetaGraphInfo(savedModelInfo: js.Array[MetaGraph], tags: js.Array[String], signature: String): SignatureDefEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureDefEntryFromMetaGraphInfo")(savedModelInfo.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[SignatureDefEntry]
+  inline def getSignatureDefEntryFromMetaGraphInfo(savedModelInfo: js.Array[MetaGraph], tags: js.Array[String], signature: String): SignatureDefEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignatureDefEntryFromMetaGraphInfo")(savedModelInfo.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[SignatureDefEntry]
   
-  @scala.inline
-  def loadSavedModel(path: String): js.Promise[TFSavedModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFSavedModel]]
-  @scala.inline
-  def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
-  @scala.inline
-  def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
-  @scala.inline
-  def loadSavedModel(path: String, tags: Unit, signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
+  inline def loadSavedModel(path: String): js.Promise[TFSavedModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFSavedModel]]
+  inline def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
+  inline def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
+  inline def loadSavedModel(path: String, tags: Unit, signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
   
-  @scala.inline
-  def readSavedModelProto(path: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readSavedModelProto")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def readSavedModelProto(path: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readSavedModelProto")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

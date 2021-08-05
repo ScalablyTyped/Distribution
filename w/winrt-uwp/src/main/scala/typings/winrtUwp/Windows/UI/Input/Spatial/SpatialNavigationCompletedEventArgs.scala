@@ -13,19 +13,15 @@ trait SpatialNavigationCompletedEventArgs extends StObject {
 }
 object SpatialNavigationCompletedEventArgs {
   
-  @scala.inline
-  def apply(interactionSourceKind: js.Any, normalizedOffset: js.Any): SpatialNavigationCompletedEventArgs = {
+  inline def apply(interactionSourceKind: js.Any, normalizedOffset: js.Any): SpatialNavigationCompletedEventArgs = {
     val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any], normalizedOffset = normalizedOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialNavigationCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialNavigationCompletedEventArgsMutableBuilder[Self <: SpatialNavigationCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialNavigationCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizedOffset(value: js.Any): Self = StObject.set(x, "normalizedOffset", value.asInstanceOf[js.Any])
+    inline def setNormalizedOffset(value: js.Any): Self = StObject.set(x, "normalizedOffset", value.asInstanceOf[js.Any])
   }
 }

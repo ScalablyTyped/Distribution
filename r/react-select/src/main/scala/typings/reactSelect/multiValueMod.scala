@@ -21,11 +21,9 @@ object multiValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedMultiValueProps[OptionType]]]
+  inline def default[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedMultiValueProps[OptionType]]]
   
-  @scala.inline
-  def AnimatedMultiValue[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedMultiValue")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedMultiValueProps[OptionType]]]
+  inline def AnimatedMultiValue[OptionType /* <: OptionTypeBase */](WrappedComponent: ComponentType[MultiValueProps[OptionType]]): ComponentType[AnimatedMultiValueProps[OptionType]] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimatedMultiValue")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[AnimatedMultiValueProps[OptionType]]]
   
   /* Inlined {  in :boolean,   onExited :react-select.react-select/src/animated/transitions.fn} & react-select.react-select/src/components/MultiValue.MultiValueProps<OptionType> */
   @js.native

@@ -38,8 +38,7 @@ trait XLinkCreator
 }
 object XLinkCreator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createInstanceLink: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface,
     queryInterface: `type` => js.Any,
@@ -49,10 +48,8 @@ object XLinkCreator {
     __obj.asInstanceOf[XLinkCreator]
   }
   
-  @scala.inline
-  implicit class XLinkCreatorMutableBuilder[Self <: XLinkCreator] (val x: Self) extends AnyVal {
+  extension [Self <: XLinkCreator](x: Self) {
     
-    @scala.inline
-    def setCreateInstanceLink(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceLink", js.Any.fromFunction4(value))
+    inline def setCreateInstanceLink(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceLink", js.Any.fromFunction4(value))
   }
 }

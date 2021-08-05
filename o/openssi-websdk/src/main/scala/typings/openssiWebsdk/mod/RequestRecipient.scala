@@ -12,25 +12,19 @@ trait RequestRecipient extends StObject {
 }
 object RequestRecipient {
   
-  @scala.inline
-  def apply(): RequestRecipient = {
+  inline def apply(): RequestRecipient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestRecipient]
   }
   
-  @scala.inline
-  implicit class RequestRecipientMutableBuilder[Self <: RequestRecipient] (val x: Self) extends AnyVal {
+  extension [Self <: RequestRecipient](x: Self) {
     
-    @scala.inline
-    def setDid(value: DID): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
+    inline def setDid(value: DID): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
+    inline def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
     
-    @scala.inline
-    def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

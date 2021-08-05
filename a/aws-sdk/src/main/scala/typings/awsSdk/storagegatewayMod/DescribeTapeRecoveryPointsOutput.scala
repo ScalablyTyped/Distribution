@@ -20,34 +20,25 @@ trait DescribeTapeRecoveryPointsOutput extends StObject {
 }
 object DescribeTapeRecoveryPointsOutput {
   
-  @scala.inline
-  def apply(): DescribeTapeRecoveryPointsOutput = {
+  inline def apply(): DescribeTapeRecoveryPointsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTapeRecoveryPointsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTapeRecoveryPointsOutputMutableBuilder[Self <: DescribeTapeRecoveryPointsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTapeRecoveryPointsOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setTapeRecoveryPointInfos(value: TapeRecoveryPointInfos): Self = StObject.set(x, "TapeRecoveryPointInfos", value.asInstanceOf[js.Any])
+    inline def setTapeRecoveryPointInfos(value: TapeRecoveryPointInfos): Self = StObject.set(x, "TapeRecoveryPointInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeRecoveryPointInfosUndefined: Self = StObject.set(x, "TapeRecoveryPointInfos", js.undefined)
+    inline def setTapeRecoveryPointInfosUndefined: Self = StObject.set(x, "TapeRecoveryPointInfos", js.undefined)
     
-    @scala.inline
-    def setTapeRecoveryPointInfosVarargs(value: TapeRecoveryPointInfo*): Self = StObject.set(x, "TapeRecoveryPointInfos", js.Array(value :_*))
+    inline def setTapeRecoveryPointInfosVarargs(value: TapeRecoveryPointInfo*): Self = StObject.set(x, "TapeRecoveryPointInfos", js.Array(value :_*))
   }
 }

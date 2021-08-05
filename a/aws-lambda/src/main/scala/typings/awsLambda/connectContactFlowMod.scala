@@ -21,11 +21,9 @@ object connectContactFlowMod {
   trait ConnectContactFlowChannel extends StObject
   object ConnectContactFlowChannel {
     
-    @scala.inline
-    def CHAT: typings.awsLambda.awsLambdaStrings.CHAT = "CHAT".asInstanceOf[typings.awsLambda.awsLambdaStrings.CHAT]
+    inline def CHAT: typings.awsLambda.awsLambdaStrings.CHAT = "CHAT".asInstanceOf[typings.awsLambda.awsLambdaStrings.CHAT]
     
-    @scala.inline
-    def VOICE: typings.awsLambda.awsLambdaStrings.VOICE = "VOICE".asInstanceOf[typings.awsLambda.awsLambdaStrings.VOICE]
+    inline def VOICE: typings.awsLambda.awsLambdaStrings.VOICE = "VOICE".asInstanceOf[typings.awsLambda.awsLambdaStrings.VOICE]
   }
   
   trait ConnectContactFlowEndpoint extends StObject {
@@ -36,20 +34,16 @@ object connectContactFlowMod {
   }
   object ConnectContactFlowEndpoint {
     
-    @scala.inline
-    def apply(Address: String): ConnectContactFlowEndpoint = {
+    inline def apply(Address: String): ConnectContactFlowEndpoint = {
       val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], Type = "TELEPHONE_NUMBER")
       __obj.asInstanceOf[ConnectContactFlowEndpoint]
     }
     
-    @scala.inline
-    implicit class ConnectContactFlowEndpointMutableBuilder[Self <: ConnectContactFlowEndpoint] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectContactFlowEndpoint](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TELEPHONE_NUMBER): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: TELEPHONE_NUMBER): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,20 +55,16 @@ object connectContactFlowMod {
   }
   object ConnectContactFlowEvent {
     
-    @scala.inline
-    def apply(Details: ContactData): ConnectContactFlowEvent = {
+    inline def apply(Details: ContactData): ConnectContactFlowEvent = {
       val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], Name = "ContactFlowEvent")
       __obj.asInstanceOf[ConnectContactFlowEvent]
     }
     
-    @scala.inline
-    implicit class ConnectContactFlowEventMutableBuilder[Self <: ConnectContactFlowEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectContactFlowEvent](x: Self) {
       
-      @scala.inline
-      def setDetails(value: ContactData): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: ContactData): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: ContactFlowEvent): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: ContactFlowEvent): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,20 +80,15 @@ object connectContactFlowMod {
   trait ConnectContactFlowInitiationMethod extends StObject
   object ConnectContactFlowInitiationMethod {
     
-    @scala.inline
-    def API: typings.awsLambda.awsLambdaStrings.API = "API".asInstanceOf[typings.awsLambda.awsLambdaStrings.API]
+    inline def API: typings.awsLambda.awsLambdaStrings.API = "API".asInstanceOf[typings.awsLambda.awsLambdaStrings.API]
     
-    @scala.inline
-    def CALLBACK: typings.awsLambda.awsLambdaStrings.CALLBACK = "CALLBACK".asInstanceOf[typings.awsLambda.awsLambdaStrings.CALLBACK]
+    inline def CALLBACK: typings.awsLambda.awsLambdaStrings.CALLBACK = "CALLBACK".asInstanceOf[typings.awsLambda.awsLambdaStrings.CALLBACK]
     
-    @scala.inline
-    def INBOUND: typings.awsLambda.awsLambdaStrings.INBOUND = "INBOUND".asInstanceOf[typings.awsLambda.awsLambdaStrings.INBOUND]
+    inline def INBOUND: typings.awsLambda.awsLambdaStrings.INBOUND = "INBOUND".asInstanceOf[typings.awsLambda.awsLambdaStrings.INBOUND]
     
-    @scala.inline
-    def OUTBOUND: typings.awsLambda.awsLambdaStrings.OUTBOUND = "OUTBOUND".asInstanceOf[typings.awsLambda.awsLambdaStrings.OUTBOUND]
+    inline def OUTBOUND: typings.awsLambda.awsLambdaStrings.OUTBOUND = "OUTBOUND".asInstanceOf[typings.awsLambda.awsLambdaStrings.OUTBOUND]
     
-    @scala.inline
-    def TRANSFER: typings.awsLambda.awsLambdaStrings.TRANSFER = "TRANSFER".asInstanceOf[typings.awsLambda.awsLambdaStrings.TRANSFER]
+    inline def TRANSFER: typings.awsLambda.awsLambdaStrings.TRANSFER = "TRANSFER".asInstanceOf[typings.awsLambda.awsLambdaStrings.TRANSFER]
   }
   
   type ConnectContactFlowResult = StringDictionary[String | Null]

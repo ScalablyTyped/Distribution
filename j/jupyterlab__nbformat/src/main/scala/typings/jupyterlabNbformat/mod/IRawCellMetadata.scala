@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object IRawCellMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     format: String,
     jupyter: PartialIBaseCellJupyterMe,
     name: String,
@@ -29,10 +28,8 @@ object IRawCellMetadata {
     __obj.asInstanceOf[IRawCellMetadata]
   }
   
-  @scala.inline
-  implicit class IRawCellMetadataMutableBuilder[Self <: IRawCellMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: IRawCellMetadata](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }
 }

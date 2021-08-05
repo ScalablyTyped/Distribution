@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Record extends StObject {
   
-  @JSName("ADODB.Record_typekey")
+  /* private */ @JSName("ADODB.Record_typekey")
   var ADODBDotRecord_typekey: Record = js.native
   
   /**

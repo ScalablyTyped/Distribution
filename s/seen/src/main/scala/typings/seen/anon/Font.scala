@@ -14,28 +14,21 @@ trait Font extends StObject {
 }
 object Font {
   
-  @scala.inline
-  def apply(font: String): Font = {
+  inline def apply(font: String): Font = {
     val __obj = js.Dynamic.literal(font = font.asInstanceOf[js.Any])
     __obj.asInstanceOf[Font]
   }
   
-  @scala.inline
-  implicit class FontMutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
+  extension [Self <: Font](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setText-anchor`(value: String): Self = StObject.set(x, "text-anchor", value.asInstanceOf[js.Any])
+    inline def `setText-anchor`(value: String): Self = StObject.set(x, "text-anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setText-anchorUndefined`: Self = StObject.set(x, "text-anchor", js.undefined)
+    inline def `setText-anchorUndefined`: Self = StObject.set(x, "text-anchor", js.undefined)
   }
 }

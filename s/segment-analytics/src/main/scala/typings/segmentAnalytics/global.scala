@@ -10,6 +10,5 @@ object global {
   @JSGlobal("analytics")
   @js.native
   def analytics: AnalyticsJS = js.native
-  @scala.inline
-  def analytics_=(x: AnalyticsJS): Unit = js.Dynamic.global.updateDynamic("analytics")(x.asInstanceOf[js.Any])
+  inline def analytics_=(x: AnalyticsJS): Unit = js.Dynamic.global.updateDynamic("analytics")(x.asInstanceOf[js.Any])
 }

@@ -28,8 +28,7 @@ trait ASPxClientFinancialIndicatorPoint
 }
 object ASPxClientFinancialIndicatorPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argument: js.Any,
     chart: ASPxClientWebChart,
     financialIndicator: ASPxClientFinancialIndicator,
@@ -39,16 +38,12 @@ object ASPxClientFinancialIndicatorPoint {
     __obj.asInstanceOf[ASPxClientFinancialIndicatorPoint]
   }
   
-  @scala.inline
-  implicit class ASPxClientFinancialIndicatorPointMutableBuilder[Self <: ASPxClientFinancialIndicatorPoint] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFinancialIndicatorPoint](x: Self) {
     
-    @scala.inline
-    def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinancialIndicator(value: ASPxClientFinancialIndicator): Self = StObject.set(x, "financialIndicator", value.asInstanceOf[js.Any])
+    inline def setFinancialIndicator(value: ASPxClientFinancialIndicator): Self = StObject.set(x, "financialIndicator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
+    inline def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
   }
 }

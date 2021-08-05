@@ -23,25 +23,19 @@ trait SubmitJobResponse extends StObject {
 }
 object SubmitJobResponse {
   
-  @scala.inline
-  def apply(jobId: String, jobName: String): SubmitJobResponse = {
+  inline def apply(jobId: String, jobName: String): SubmitJobResponse = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], jobName = jobName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubmitJobResponse]
   }
   
-  @scala.inline
-  implicit class SubmitJobResponseMutableBuilder[Self <: SubmitJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SubmitJobResponse](x: Self) {
     
-    @scala.inline
-    def setJobArn(value: String): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
+    inline def setJobArn(value: String): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
+    inline def setJobArnUndefined: Self = StObject.set(x, "jobArn", js.undefined)
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
   }
 }

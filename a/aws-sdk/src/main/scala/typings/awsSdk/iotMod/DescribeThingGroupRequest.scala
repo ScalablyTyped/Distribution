@@ -13,16 +13,13 @@ trait DescribeThingGroupRequest extends StObject {
 }
 object DescribeThingGroupRequest {
   
-  @scala.inline
-  def apply(thingGroupName: ThingGroupName): DescribeThingGroupRequest = {
+  inline def apply(thingGroupName: ThingGroupName): DescribeThingGroupRequest = {
     val __obj = js.Dynamic.literal(thingGroupName = thingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThingGroupRequest]
   }
   
-  @scala.inline
-  implicit class DescribeThingGroupRequestMutableBuilder[Self <: DescribeThingGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeThingGroupRequest](x: Self) {
     
-    @scala.inline
-    def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
+    inline def setThingGroupName(value: ThingGroupName): Self = StObject.set(x, "thingGroupName", value.asInstanceOf[js.Any])
   }
 }

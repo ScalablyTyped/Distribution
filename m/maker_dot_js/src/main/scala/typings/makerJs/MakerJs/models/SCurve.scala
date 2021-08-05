@@ -15,16 +15,13 @@ trait SCurve
 }
 object SCurve {
   
-  @scala.inline
-  def apply(paths: IPathMap): SCurve = {
+  inline def apply(paths: IPathMap): SCurve = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[SCurve]
   }
   
-  @scala.inline
-  implicit class SCurveMutableBuilder[Self <: SCurve] (val x: Self) extends AnyVal {
+  extension [Self <: SCurve](x: Self) {
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

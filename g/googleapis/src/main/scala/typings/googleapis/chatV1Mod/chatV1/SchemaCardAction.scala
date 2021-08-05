@@ -23,25 +23,19 @@ trait SchemaCardAction extends StObject {
 }
 object SchemaCardAction {
   
-  @scala.inline
-  def apply(): SchemaCardAction = {
+  inline def apply(): SchemaCardAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCardAction]
   }
   
-  @scala.inline
-  implicit class SchemaCardActionMutableBuilder[Self <: SchemaCardAction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCardAction](x: Self) {
     
-    @scala.inline
-    def setActionLabel(value: String): Self = StObject.set(x, "actionLabel", value.asInstanceOf[js.Any])
+    inline def setActionLabel(value: String): Self = StObject.set(x, "actionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionLabelUndefined: Self = StObject.set(x, "actionLabel", js.undefined)
+    inline def setActionLabelUndefined: Self = StObject.set(x, "actionLabel", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: SchemaOnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    inline def setOnClick(value: SchemaOnClick): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
   }
 }

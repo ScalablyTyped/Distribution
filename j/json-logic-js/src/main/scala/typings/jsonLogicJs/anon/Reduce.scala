@@ -17,8 +17,7 @@ trait Reduce
 }
 object Reduce {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     reduce: js.Tuple3[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
@@ -29,11 +28,9 @@ object Reduce {
     __obj.asInstanceOf[Reduce]
   }
   
-  @scala.inline
-  implicit class ReduceMutableBuilder[Self <: Reduce] (val x: Self) extends AnyVal {
+  extension [Self <: Reduce](x: Self) {
     
-    @scala.inline
-    def setReduce(
+    inline def setReduce(
       value: js.Tuple3[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object, 

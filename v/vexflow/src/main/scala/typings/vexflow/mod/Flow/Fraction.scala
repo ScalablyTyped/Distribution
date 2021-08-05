@@ -18,14 +18,11 @@ object Fraction {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def GCD(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def GCD(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def LCM(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("LCM")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def LCM(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("LCM")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @scala.inline
-  def LCMM(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("LCMM")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def LCMM(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("LCMM")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

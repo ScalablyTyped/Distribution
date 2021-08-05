@@ -21,31 +21,23 @@ trait SchemaVulnerableHeaders extends StObject {
 }
 object SchemaVulnerableHeaders {
   
-  @scala.inline
-  def apply(): SchemaVulnerableHeaders = {
+  inline def apply(): SchemaVulnerableHeaders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVulnerableHeaders]
   }
   
-  @scala.inline
-  implicit class SchemaVulnerableHeadersMutableBuilder[Self <: SchemaVulnerableHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVulnerableHeaders](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Array[SchemaHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[SchemaHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setMissingHeaders(value: js.Array[SchemaHeader]): Self = StObject.set(x, "missingHeaders", value.asInstanceOf[js.Any])
+    inline def setMissingHeaders(value: js.Array[SchemaHeader]): Self = StObject.set(x, "missingHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingHeadersUndefined: Self = StObject.set(x, "missingHeaders", js.undefined)
+    inline def setMissingHeadersUndefined: Self = StObject.set(x, "missingHeaders", js.undefined)
     
-    @scala.inline
-    def setMissingHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "missingHeaders", js.Array(value :_*))
+    inline def setMissingHeadersVarargs(value: SchemaHeader*): Self = StObject.set(x, "missingHeaders", js.Array(value :_*))
   }
 }

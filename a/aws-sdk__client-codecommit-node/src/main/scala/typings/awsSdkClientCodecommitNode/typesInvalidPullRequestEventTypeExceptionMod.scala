@@ -16,17 +16,14 @@ object typesInvalidPullRequestEventTypeExceptionMod {
   }
   object InvalidPullRequestEventTypeException {
     
-    @scala.inline
-    def apply(): InvalidPullRequestEventTypeException = {
+    inline def apply(): InvalidPullRequestEventTypeException = {
       val __obj = js.Dynamic.literal(name = "InvalidPullRequestEventTypeException")
       __obj.asInstanceOf[InvalidPullRequestEventTypeException]
     }
     
-    @scala.inline
-    implicit class InvalidPullRequestEventTypeExceptionMutableBuilder[Self <: InvalidPullRequestEventTypeException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidPullRequestEventTypeException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPullRequestEventTypeException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

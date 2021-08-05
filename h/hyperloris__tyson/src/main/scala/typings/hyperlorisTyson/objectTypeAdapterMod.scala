@@ -16,11 +16,11 @@ object objectTypeAdapterMod {
     extends TypeAdapter[js.Any] {
     def this(tyson: Tyson, typeToken: TypeToken[js.Any]) = this()
     
-    var _jsonPropertyMetadataMap: js.Any = js.native
+    /* private */ var _jsonPropertyMetadataMap: js.Any = js.native
     
-    var _typeToken: js.Any = js.native
+    /* private */ var _typeToken: js.Any = js.native
     
-    var _tyson: js.Any = js.native
+    /* private */ var _tyson: js.Any = js.native
     
     /**
       * This method extracts all the metadata of the class and saves them in a map.

@@ -12,6 +12,5 @@ object groupShowAllStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: RequiredPickIGroupShowAll): IGroupShowAllStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IGroupShowAllStyles]
+  inline def getStyles(props: RequiredPickIGroupShowAll): IGroupShowAllStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IGroupShowAllStyles]
 }

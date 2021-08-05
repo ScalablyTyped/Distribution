@@ -12,19 +12,15 @@ trait ReorderPlaylistTracksOptions
 }
 object ReorderPlaylistTracksOptions {
   
-  @scala.inline
-  def apply(): ReorderPlaylistTracksOptions = {
+  inline def apply(): ReorderPlaylistTracksOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReorderPlaylistTracksOptions]
   }
   
-  @scala.inline
-  implicit class ReorderPlaylistTracksOptionsMutableBuilder[Self <: ReorderPlaylistTracksOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReorderPlaylistTracksOptions](x: Self) {
     
-    @scala.inline
-    def setRange_length(value: Double): Self = StObject.set(x, "range_length", value.asInstanceOf[js.Any])
+    inline def setRange_length(value: Double): Self = StObject.set(x, "range_length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange_lengthUndefined: Self = StObject.set(x, "range_length", js.undefined)
+    inline def setRange_lengthUndefined: Self = StObject.set(x, "range_length", js.undefined)
   }
 }

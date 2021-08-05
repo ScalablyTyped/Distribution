@@ -213,8 +213,7 @@ object ocsp {
       * @example
       * info = KJUR.asn1.ocsp.OCSPUtil.getOCSPResponseInfo("3082...");
       */
-    @scala.inline
-    def getOCSPResponseInfo(h: String): ResponseInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getOCSPResponseInfo")(h.asInstanceOf[js.Any]).asInstanceOf[ResponseInfo]
+    inline def getOCSPResponseInfo(h: String): ResponseInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("getOCSPResponseInfo")(h.asInstanceOf[js.Any]).asInstanceOf[ResponseInfo]
     
     /**
       * generates hexadecimal string of OCSP request
@@ -228,8 +227,7 @@ object ocsp {
       * // generate OCSP request using sha1 algorithnm by default.
       * hReq = KJUR.asn1.ocsp.OCSPUtil.getRequestHex("-----BEGIN...", "-----BEGIN...");
       */
-    @scala.inline
-    def getRequestHex(issuerCert: String, subjectCert: String, alg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestHex")(issuerCert.asInstanceOf[js.Any], subjectCert.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getRequestHex(issuerCert: String, subjectCert: String, alg: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getRequestHex")(issuerCert.asInstanceOf[js.Any], subjectCert.asInstanceOf[js.Any], alg.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   /**

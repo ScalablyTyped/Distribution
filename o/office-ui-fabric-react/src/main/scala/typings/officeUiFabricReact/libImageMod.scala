@@ -29,14 +29,12 @@ object libImageMod {
     @JSImport("office-ui-fabric-react/lib/Image", "ImageBase._svgRegex")
     @js.native
     def _svgRegex: js.Any = js.native
-    @scala.inline
-    def _svgRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
+    inline def _svgRegex_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_svgRegex")(x.asInstanceOf[js.Any])
     
     @JSImport("office-ui-fabric-react/lib/Image", "ImageBase.defaultProps")
     @js.native
     def defaultProps: ShouldFadeIn = js.native
-    @scala.inline
-    def defaultProps_=(x: ShouldFadeIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ShouldFadeIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/Image", "ImageCoverStyle")

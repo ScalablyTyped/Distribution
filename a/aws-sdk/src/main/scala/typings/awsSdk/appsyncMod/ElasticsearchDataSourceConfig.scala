@@ -18,19 +18,15 @@ trait ElasticsearchDataSourceConfig extends StObject {
 }
 object ElasticsearchDataSourceConfig {
   
-  @scala.inline
-  def apply(awsRegion: String, endpoint: String): ElasticsearchDataSourceConfig = {
+  inline def apply(awsRegion: String, endpoint: String): ElasticsearchDataSourceConfig = {
     val __obj = js.Dynamic.literal(awsRegion = awsRegion.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElasticsearchDataSourceConfig]
   }
   
-  @scala.inline
-  implicit class ElasticsearchDataSourceConfigMutableBuilder[Self <: ElasticsearchDataSourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ElasticsearchDataSourceConfig](x: Self) {
     
-    @scala.inline
-    def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+    inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
   }
 }

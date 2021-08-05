@@ -13,19 +13,15 @@ trait DeregisterInstanceResponse extends StObject {
 }
 object DeregisterInstanceResponse {
   
-  @scala.inline
-  def apply(): DeregisterInstanceResponse = {
+  inline def apply(): DeregisterInstanceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeregisterInstanceResponse]
   }
   
-  @scala.inline
-  implicit class DeregisterInstanceResponseMutableBuilder[Self <: DeregisterInstanceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeregisterInstanceResponse](x: Self) {
     
-    @scala.inline
-    def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
   }
 }

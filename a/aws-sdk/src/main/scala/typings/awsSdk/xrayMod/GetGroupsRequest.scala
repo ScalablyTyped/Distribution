@@ -13,19 +13,15 @@ trait GetGroupsRequest extends StObject {
 }
 object GetGroupsRequest {
   
-  @scala.inline
-  def apply(): GetGroupsRequest = {
+  inline def apply(): GetGroupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGroupsRequest]
   }
   
-  @scala.inline
-  implicit class GetGroupsRequestMutableBuilder[Self <: GetGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: GetGroupsNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: GetGroupsNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

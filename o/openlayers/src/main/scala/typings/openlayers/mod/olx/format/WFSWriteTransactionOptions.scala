@@ -23,8 +23,7 @@ trait WFSWriteTransactionOptions extends StObject {
 }
 object WFSWriteTransactionOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     featureNS: String,
     featurePrefix: String,
     featureType: String,
@@ -34,40 +33,28 @@ object WFSWriteTransactionOptions {
     __obj.asInstanceOf[WFSWriteTransactionOptions]
   }
   
-  @scala.inline
-  implicit class WFSWriteTransactionOptionsMutableBuilder[Self <: WFSWriteTransactionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WFSWriteTransactionOptions](x: Self) {
     
-    @scala.inline
-    def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
+    inline def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturePrefix(value: String): Self = StObject.set(x, "featurePrefix", value.asInstanceOf[js.Any])
+    inline def setFeaturePrefix(value: String): Self = StObject.set(x, "featurePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+    inline def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmlOptions(value: GMLOptions): Self = StObject.set(x, "gmlOptions", value.asInstanceOf[js.Any])
+    inline def setGmlOptions(value: GMLOptions): Self = StObject.set(x, "gmlOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmlOptionsUndefined: Self = StObject.set(x, "gmlOptions", js.undefined)
+    inline def setGmlOptionsUndefined: Self = StObject.set(x, "gmlOptions", js.undefined)
     
-    @scala.inline
-    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
-    @scala.inline
-    def setNativeElements(value: js.Array[GlobalObject]): Self = StObject.set(x, "nativeElements", value.asInstanceOf[js.Any])
+    inline def setNativeElements(value: js.Array[GlobalObject]): Self = StObject.set(x, "nativeElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeElementsVarargs(value: GlobalObject*): Self = StObject.set(x, "nativeElements", js.Array(value :_*))
+    inline def setNativeElementsVarargs(value: GlobalObject*): Self = StObject.set(x, "nativeElements", js.Array(value :_*))
     
-    @scala.inline
-    def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
+    inline def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrsNameUndefined: Self = StObject.set(x, "srsName", js.undefined)
+    inline def setSrsNameUndefined: Self = StObject.set(x, "srsName", js.undefined)
   }
 }

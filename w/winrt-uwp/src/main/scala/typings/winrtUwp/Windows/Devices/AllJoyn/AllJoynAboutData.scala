@@ -48,8 +48,7 @@ trait AllJoynAboutData extends StObject {
 }
 object AllJoynAboutData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appId: String,
     appNames: IMap[String, String],
     dateOfManufacture: Date,
@@ -67,43 +66,30 @@ object AllJoynAboutData {
     __obj.asInstanceOf[AllJoynAboutData]
   }
   
-  @scala.inline
-  implicit class AllJoynAboutDataMutableBuilder[Self <: AllJoynAboutData] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynAboutData](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppNames(value: IMap[String, String]): Self = StObject.set(x, "appNames", value.asInstanceOf[js.Any])
+    inline def setAppNames(value: IMap[String, String]): Self = StObject.set(x, "appNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateOfManufacture(value: Date): Self = StObject.set(x, "dateOfManufacture", value.asInstanceOf[js.Any])
+    inline def setDateOfManufacture(value: Date): Self = StObject.set(x, "dateOfManufacture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAppName(value: String): Self = StObject.set(x, "defaultAppName", value.asInstanceOf[js.Any])
+    inline def setDefaultAppName(value: String): Self = StObject.set(x, "defaultAppName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDescription(value: String): Self = StObject.set(x, "defaultDescription", value.asInstanceOf[js.Any])
+    inline def setDefaultDescription(value: String): Self = StObject.set(x, "defaultDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultManufacturer(value: String): Self = StObject.set(x, "defaultManufacturer", value.asInstanceOf[js.Any])
+    inline def setDefaultManufacturer(value: String): Self = StObject.set(x, "defaultManufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptions(value: IMap[String, String]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
+    inline def setDescriptions(value: IMap[String, String]): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturers(value: IMap[String, String]): Self = StObject.set(x, "manufacturers", value.asInstanceOf[js.Any])
+    inline def setManufacturers(value: IMap[String, String]): Self = StObject.set(x, "manufacturers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
+    inline def setModelNumber(value: String): Self = StObject.set(x, "modelNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])
+    inline def setSoftwareVersion(value: String): Self = StObject.set(x, "softwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportUrl(value: Uri): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
+    inline def setSupportUrl(value: Uri): Self = StObject.set(x, "supportUrl", value.asInstanceOf[js.Any])
   }
 }

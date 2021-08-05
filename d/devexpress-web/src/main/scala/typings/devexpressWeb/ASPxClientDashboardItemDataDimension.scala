@@ -42,8 +42,7 @@ trait ASPxClientDashboardItemDataDimension extends StObject {
 }
 object ASPxClientDashboardItemDataDimension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataMember: String,
     DateTimeGroupInterval: String,
     Format: js.Any => String,
@@ -55,25 +54,18 @@ object ASPxClientDashboardItemDataDimension {
     __obj.asInstanceOf[ASPxClientDashboardItemDataDimension]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemDataDimensionMutableBuilder[Self <: ASPxClientDashboardItemDataDimension] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemDataDimension](x: Self) {
     
-    @scala.inline
-    def setDataMember(value: String): Self = StObject.set(x, "DataMember", value.asInstanceOf[js.Any])
+    inline def setDataMember(value: String): Self = StObject.set(x, "DataMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeGroupInterval(value: String): Self = StObject.set(x, "DateTimeGroupInterval", value.asInstanceOf[js.Any])
+    inline def setDateTimeGroupInterval(value: String): Self = StObject.set(x, "DateTimeGroupInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: js.Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
+    inline def setFormat(value: js.Any => String): Self = StObject.set(x, "Format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextGroupInterval(value: String): Self = StObject.set(x, "TextGroupInterval", value.asInstanceOf[js.Any])
+    inline def setTextGroupInterval(value: String): Self = StObject.set(x, "TextGroupInterval", value.asInstanceOf[js.Any])
   }
 }

@@ -30,26 +30,20 @@ trait SiteBoundCredential
 }
 object SiteBoundCredential {
   
-  @scala.inline
-  def apply(id: String, `type`: String): SiteBoundCredential = {
+  inline def apply(id: String, `type`: String): SiteBoundCredential = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], iconURL = null, name = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SiteBoundCredential]
   }
   
-  @scala.inline
-  implicit class SiteBoundCredentialMutableBuilder[Self <: SiteBoundCredential] (val x: Self) extends AnyVal {
+  extension [Self <: SiteBoundCredential](x: Self) {
     
-    @scala.inline
-    def setIconURL(value: String): Self = StObject.set(x, "iconURL", value.asInstanceOf[js.Any])
+    inline def setIconURL(value: String): Self = StObject.set(x, "iconURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconURLNull: Self = StObject.set(x, "iconURL", null)
+    inline def setIconURLNull: Self = StObject.set(x, "iconURL", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
   }
 }

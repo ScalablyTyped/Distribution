@@ -9,8 +9,7 @@ trait DeleteBaiduChannelInput
      with typings.awsSdkClientPinpointBrowser.typesDeleteBaiduChannelInputMod.DeleteBaiduChannelInput
 object DeleteBaiduChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): DeleteBaiduChannelInput = {
+  inline def apply(ApplicationId: String): DeleteBaiduChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBaiduChannelInput]
   }

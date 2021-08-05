@@ -41,9 +41,9 @@ object metaMod {
       enableI18nLegacyMessageIdFormat: Boolean
     ) = this()
     
-    var _createI18nMessage: js.Any = js.native
+    /* private */ var _createI18nMessage: js.Any = js.native
     
-    var _generateI18nMessage: js.Any = js.native
+    /* private */ var _generateI18nMessage: js.Any = js.native
     
     /**
       * Parse the general form `meta` passed into extract the explicit metadata needed to create a
@@ -57,7 +57,7 @@ object metaMod {
       * @param meta the bucket that holds information about the message
       * @returns the parsed metadata.
       */
-    var _parseMetadata: js.Any = js.native
+    /* private */ var _parseMetadata: js.Any = js.native
     
     /**
       * Update the `message` with a `legacyId` if necessary.
@@ -65,20 +65,20 @@ object metaMod {
       * @param message the message whose legacy id should be set
       * @param meta information about the message being processed
       */
-    var _setLegacyIds: js.Any = js.native
+    /* private */ var _setLegacyIds: js.Any = js.native
     
     /**
       * Generate (or restore) message id if not specified already.
       */
-    var _setMessageId: js.Any = js.native
+    /* private */ var _setMessageId: js.Any = js.native
     
-    var enableI18nLegacyMessageIdFormat: js.Any = js.native
+    /* private */ var enableI18nLegacyMessageIdFormat: js.Any = js.native
     
     var hasI18nMeta: Boolean = js.native
     
-    var interpolationConfig: js.Any = js.native
+    /* private */ var interpolationConfig: js.Any = js.native
     
-    var keepI18nAttrs: js.Any = js.native
+    /* private */ var keepI18nAttrs: js.Any = js.native
     
     def visitAttribute(attribute: Attribute): js.Any = js.native
     /* CompleteClass */
@@ -106,13 +106,10 @@ object metaMod {
     override def visitText(text: Text, context: js.Any): js.Any = js.native
   }
   
-  @scala.inline
-  def i18nMetaToJSDoc(meta: I18nMeta): JSDocComment_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nMetaToJSDoc")(meta.asInstanceOf[js.Any]).asInstanceOf[JSDocComment_ | Null]
+  inline def i18nMetaToJSDoc(meta: I18nMeta): JSDocComment_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("i18nMetaToJSDoc")(meta.asInstanceOf[js.Any]).asInstanceOf[JSDocComment_ | Null]
   
-  @scala.inline
-  def parseI18nMeta(): I18nMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("parseI18nMeta")().asInstanceOf[I18nMeta]
-  @scala.inline
-  def parseI18nMeta(meta: String): I18nMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("parseI18nMeta")(meta.asInstanceOf[js.Any]).asInstanceOf[I18nMeta]
+  inline def parseI18nMeta(): I18nMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("parseI18nMeta")().asInstanceOf[I18nMeta]
+  inline def parseI18nMeta(meta: String): I18nMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("parseI18nMeta")(meta.asInstanceOf[js.Any]).asInstanceOf[I18nMeta]
   
   trait I18nMeta extends StObject {
     
@@ -128,47 +125,34 @@ object metaMod {
   }
   object I18nMeta {
     
-    @scala.inline
-    def apply(): I18nMeta = {
+    inline def apply(): I18nMeta = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[I18nMeta]
     }
     
-    @scala.inline
-    implicit class I18nMetaMutableBuilder[Self <: I18nMeta] (val x: Self) extends AnyVal {
+    extension [Self <: I18nMeta](x: Self) {
       
-      @scala.inline
-      def setCustomId(value: String): Self = StObject.set(x, "customId", value.asInstanceOf[js.Any])
+      inline def setCustomId(value: String): Self = StObject.set(x, "customId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomIdUndefined: Self = StObject.set(x, "customId", js.undefined)
+      inline def setCustomIdUndefined: Self = StObject.set(x, "customId", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLegacyIds(value: js.Array[String]): Self = StObject.set(x, "legacyIds", value.asInstanceOf[js.Any])
+      inline def setLegacyIds(value: js.Array[String]): Self = StObject.set(x, "legacyIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegacyIdsUndefined: Self = StObject.set(x, "legacyIds", js.undefined)
+      inline def setLegacyIdsUndefined: Self = StObject.set(x, "legacyIds", js.undefined)
       
-      @scala.inline
-      def setLegacyIdsVarargs(value: String*): Self = StObject.set(x, "legacyIds", js.Array(value :_*))
+      inline def setLegacyIdsVarargs(value: String*): Self = StObject.set(x, "legacyIds", js.Array(value :_*))
       
-      @scala.inline
-      def setMeaning(value: String): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
+      inline def setMeaning(value: String): Self = StObject.set(x, "meaning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeaningUndefined: Self = StObject.set(x, "meaning", js.undefined)
+      inline def setMeaningUndefined: Self = StObject.set(x, "meaning", js.undefined)
     }
   }
 }

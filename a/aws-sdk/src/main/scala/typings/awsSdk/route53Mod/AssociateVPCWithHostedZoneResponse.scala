@@ -13,16 +13,13 @@ trait AssociateVPCWithHostedZoneResponse extends StObject {
 }
 object AssociateVPCWithHostedZoneResponse {
   
-  @scala.inline
-  def apply(ChangeInfo: ChangeInfo): AssociateVPCWithHostedZoneResponse = {
+  inline def apply(ChangeInfo: ChangeInfo): AssociateVPCWithHostedZoneResponse = {
     val __obj = js.Dynamic.literal(ChangeInfo = ChangeInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateVPCWithHostedZoneResponse]
   }
   
-  @scala.inline
-  implicit class AssociateVPCWithHostedZoneResponseMutableBuilder[Self <: AssociateVPCWithHostedZoneResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateVPCWithHostedZoneResponse](x: Self) {
     
-    @scala.inline
-    def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
+    inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }
 }

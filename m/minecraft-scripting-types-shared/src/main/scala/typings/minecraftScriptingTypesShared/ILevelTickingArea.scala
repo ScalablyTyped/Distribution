@@ -21,19 +21,15 @@ trait ILevelTickingArea
 }
 object ILevelTickingArea {
   
-  @scala.inline
-  def apply(level_ticking_area_id: String): ILevelTickingArea = {
+  inline def apply(level_ticking_area_id: String): ILevelTickingArea = {
     val __obj = js.Dynamic.literal(__type__ = "level_ticking_area", level_ticking_area_id = level_ticking_area_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILevelTickingArea]
   }
   
-  @scala.inline
-  implicit class ILevelTickingAreaMutableBuilder[Self <: ILevelTickingArea] (val x: Self) extends AnyVal {
+  extension [Self <: ILevelTickingArea](x: Self) {
     
-    @scala.inline
-    def setLevel_ticking_area_id(value: String): Self = StObject.set(x, "level_ticking_area_id", value.asInstanceOf[js.Any])
+    inline def setLevel_ticking_area_id(value: String): Self = StObject.set(x, "level_ticking_area_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type__(value: level_ticking_area): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
+    inline def set__type__(value: level_ticking_area): Self = StObject.set(x, "__type__", value.asInstanceOf[js.Any])
   }
 }

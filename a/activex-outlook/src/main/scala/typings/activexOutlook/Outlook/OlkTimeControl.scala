@@ -38,7 +38,7 @@ trait OlkTimeControl extends StObject {
   
   var MousePointer: OlMousePointer
   
-  @JSName("Outlook.OlkTimeControl_typekey")
+  /* private */ @JSName("Outlook.OlkTimeControl_typekey")
   var OutlookDotOlkTimeControl_typekey: OlkTimeControl
   
   var ReferenceTime: VarDate
@@ -55,8 +55,7 @@ trait OlkTimeControl extends StObject {
 }
 object OlkTimeControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoSize: Boolean,
     AutoWordSelect: Boolean,
     BackColor: OLE_COLOR,
@@ -84,70 +83,48 @@ object OlkTimeControl {
     __obj.asInstanceOf[OlkTimeControl]
   }
   
-  @scala.inline
-  implicit class OlkTimeControlMutableBuilder[Self <: OlkTimeControl] (val x: Self) extends AnyVal {
+  extension [Self <: OlkTimeControl](x: Self) {
     
-    @scala.inline
-    def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
+    inline def setAutoSize(value: Boolean): Self = StObject.set(x, "AutoSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoWordSelect(value: Boolean): Self = StObject.set(x, "AutoWordSelect", value.asInstanceOf[js.Any])
+    inline def setAutoWordSelect(value: Boolean): Self = StObject.set(x, "AutoWordSelect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackColor(value: OLE_COLOR): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: OLE_COLOR): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackStyle(value: OlBackStyle): Self = StObject.set(x, "BackStyle", value.asInstanceOf[js.Any])
+    inline def setBackStyle(value: OlBackStyle): Self = StObject.set(x, "BackStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropDown(value: () => Unit): Self = StObject.set(x, "DropDown", js.Any.fromFunction0(value))
+    inline def setDropDown(value: () => Unit): Self = StObject.set(x, "DropDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterFieldBehavior(value: OlEnterFieldBehavior): Self = StObject.set(x, "EnterFieldBehavior", value.asInstanceOf[js.Any])
+    inline def setEnterFieldBehavior(value: OlEnterFieldBehavior): Self = StObject.set(x, "EnterFieldBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: StdFont): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeColor(value: OLE_COLOR): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
+    inline def setForeColor(value: OLE_COLOR): Self = StObject.set(x, "ForeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideSelection(value: Boolean): Self = StObject.set(x, "HideSelection", value.asInstanceOf[js.Any])
+    inline def setHideSelection(value: Boolean): Self = StObject.set(x, "HideSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalTime(value: VarDate): Self = StObject.set(x, "IntervalTime", value.asInstanceOf[js.Any])
+    inline def setIntervalTime(value: VarDate): Self = StObject.set(x, "IntervalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
+    inline def setMouseIcon(value: StdPicture): Self = StObject.set(x, "MouseIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
+    inline def setMousePointer(value: OlMousePointer): Self = StObject.set(x, "MousePointer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotOlkTimeControl_typekey(value: OlkTimeControl): Self = StObject.set(x, "Outlook.OlkTimeControl_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotOlkTimeControl_typekey(value: OlkTimeControl): Self = StObject.set(x, "Outlook.OlkTimeControl_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceTime(value: VarDate): Self = StObject.set(x, "ReferenceTime", value.asInstanceOf[js.Any])
+    inline def setReferenceTime(value: VarDate): Self = StObject.set(x, "ReferenceTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: OlTimeStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: OlTimeStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlign(value: OlTextAlign): Self = StObject.set(x, "TextAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: OlTextAlign): Self = StObject.set(x, "TextAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: VarDate): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: VarDate): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

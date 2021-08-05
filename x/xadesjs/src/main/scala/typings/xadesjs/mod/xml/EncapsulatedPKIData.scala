@@ -13,6 +13,5 @@ class EncapsulatedPKIData ()
   extends typings.xadesjs.xmlMod.EncapsulatedPKIData
 object EncapsulatedPKIData {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedPKIData] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedPKIData").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedPKIData]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedPKIData] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedPKIData").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedPKIData]]
 }

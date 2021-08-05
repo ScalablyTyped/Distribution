@@ -17,8 +17,7 @@ object databaseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[I /* <: IndexedModelClasses[
+  inline def default[I /* <: IndexedModelClasses[
     js.Any, 
     Extract[
       /* keyof any */ String, 
@@ -36,8 +35,7 @@ object databaseMod {
     */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
   ]]
   
-  @scala.inline
-  def createDatabase[I /* <: IndexedModelClasses[
+  inline def createDatabase[I /* <: IndexedModelClasses[
     js.Any, 
     Extract[
       /* keyof any */ String, 
@@ -111,8 +109,7 @@ object databaseMod {
   }
   object Database {
     
-    @scala.inline
-    def apply[I /* <: IndexedModelClasses[
+    inline def apply[I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
@@ -128,28 +125,23 @@ object databaseMod {
       __obj.asInstanceOf[Database[I, Tables]]
     }
     
-    @scala.inline
-    implicit class DatabaseMutableBuilder[Self <: Database[?, ?], I /* <: IndexedModelClasses[
+    extension [Self <: Database[?, ?], I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */, Tables] (val x: Self & (Database[I, Tables])) extends AnyVal {
+      ] */, Tables](x: Self & (Database[I, Tables])) {
       
-      @scala.inline
-      def setDescribe(
+      inline def setDescribe(
         value: js.Any => /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any
       ): Self = StObject.set(x, "describe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEmptyState(value: () => OrmState[I]): Self = StObject.set(x, "getEmptyState", js.Any.fromFunction0(value))
+      inline def setGetEmptyState(value: () => OrmState[I]): Self = StObject.set(x, "getEmptyState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setQuery(value: (QuerySpec, OrmState[I]) => QueryResult[js.Object]): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
+      inline def setQuery(value: (QuerySpec, OrmState[I]) => QueryResult[js.Object]): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdate(value: (UpdateSpec[js.Any], Transaction, OrmState[I]) => UpdateResult[I, js.Object]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      inline def setUpdate(value: (UpdateSpec[js.Any], Transaction, OrmState[I]) => UpdateResult[I, js.Object]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     }
   }
   
@@ -178,23 +170,18 @@ object databaseMod {
   }
   object Query {
     
-    @scala.inline
-    def apply(clauses: js.Array[QueryClause[js.Object]], table: String): Query = {
+    inline def apply(clauses: js.Array[QueryClause[js.Object]], table: String): Query = {
       val __obj = js.Dynamic.literal(clauses = clauses.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[Query]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+    extension [Self <: Query](x: Self) {
       
-      @scala.inline
-      def setClauses(value: js.Array[QueryClause[js.Object]]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
+      inline def setClauses(value: js.Array[QueryClause[js.Object]]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClausesVarargs(value: QueryClause[js.Object]*): Self = StObject.set(x, "clauses", js.Array(value :_*))
+      inline def setClausesVarargs(value: QueryClause[js.Object]*): Self = StObject.set(x, "clauses", js.Array(value :_*))
       
-      @scala.inline
-      def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,21 +193,17 @@ object databaseMod {
   }
   object QueryClause {
     
-    @scala.inline
-    def apply[Payload /* <: js.Object */](payload: Payload, `type`: QueryType): QueryClause[Payload] = {
+    inline def apply[Payload /* <: js.Object */](payload: Payload, `type`: QueryType): QueryClause[Payload] = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryClause[Payload]]
     }
     
-    @scala.inline
-    implicit class QueryClauseMutableBuilder[Self <: QueryClause[?], Payload /* <: js.Object */] (val x: Self & QueryClause[Payload]) extends AnyVal {
+    extension [Self <: QueryClause[?], Payload /* <: js.Object */](x: Self & QueryClause[Payload]) {
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: QueryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: QueryType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,20 +213,16 @@ object databaseMod {
   }
   object QueryResult {
     
-    @scala.inline
-    def apply[Row /* <: Record[String, Serializable] */](rows: js.Array[Row]): QueryResult[Row] = {
+    inline def apply[Row /* <: Record[String, Serializable] */](rows: js.Array[Row]): QueryResult[Row] = {
       val __obj = js.Dynamic.literal(rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryResult[Row]]
     }
     
-    @scala.inline
-    implicit class QueryResultMutableBuilder[Self <: QueryResult[?], Row /* <: Record[String, Serializable] */] (val x: Self & QueryResult[Row]) extends AnyVal {
+    extension [Self <: QueryResult[?], Row /* <: Record[String, Serializable] */](x: Self & QueryResult[Row]) {
       
-      @scala.inline
-      def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+      inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
     }
   }
   
@@ -253,17 +232,14 @@ object databaseMod {
   }
   object QuerySpec {
     
-    @scala.inline
-    def apply(query: Query): QuerySpec = {
+    inline def apply(query: Query): QuerySpec = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuerySpec]
     }
     
-    @scala.inline
-    implicit class QuerySpecMutableBuilder[Self <: QuerySpec] (val x: Self) extends AnyVal {
+    extension [Self <: QuerySpec](x: Self) {
       
-      @scala.inline
-      def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,8 +259,7 @@ object databaseMod {
   }
   object SchemaSpec {
     
-    @scala.inline
-    def apply[I /* <: IndexedModelClasses[
+    inline def apply[I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
@@ -299,17 +274,15 @@ object databaseMod {
       __obj.asInstanceOf[SchemaSpec[I]]
     }
     
-    @scala.inline
-    implicit class SchemaSpecMutableBuilder[Self <: SchemaSpec[?], I /* <: IndexedModelClasses[
+    extension [Self <: SchemaSpec[?], I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */] (val x: Self & SchemaSpec[I]) extends AnyVal {
+      ] */](x: Self & SchemaSpec[I]) {
       
-      @scala.inline
-      def setTables(
+      inline def setTables(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof I ]: redux-orm.redux-orm/db/Table.ModelTableOpts<I[K]>}
         */ typings.reduxOrm.reduxOrmStrings.SchemaSpec & TopLevel[I]
@@ -325,20 +298,16 @@ object databaseMod {
   }
   object Transaction {
     
-    @scala.inline
-    def apply(batchToken: BatchToken, withMutations: Boolean): Transaction = {
+    inline def apply(batchToken: BatchToken, withMutations: Boolean): Transaction = {
       val __obj = js.Dynamic.literal(batchToken = batchToken.asInstanceOf[js.Any], withMutations = withMutations.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transaction]
     }
     
-    @scala.inline
-    implicit class TransactionMutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
+    extension [Self <: Transaction](x: Self) {
       
-      @scala.inline
-      def setBatchToken(value: BatchToken): Self = StObject.set(x, "batchToken", value.asInstanceOf[js.Any])
+      inline def setBatchToken(value: BatchToken): Self = StObject.set(x, "batchToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithMutations(value: Boolean): Self = StObject.set(x, "withMutations", value.asInstanceOf[js.Any])
+      inline def setWithMutations(value: Boolean): Self = StObject.set(x, "withMutations", value.asInstanceOf[js.Any])
     }
   }
   
@@ -358,8 +327,7 @@ object databaseMod {
   }
   object UpdateResult {
     
-    @scala.inline
-    def apply[I /* <: IndexedModelClasses[
+    inline def apply[I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
@@ -370,23 +338,19 @@ object databaseMod {
       __obj.asInstanceOf[UpdateResult[I, Payload]]
     }
     
-    @scala.inline
-    implicit class UpdateResultMutableBuilder[Self <: UpdateResult[?, ?], I /* <: IndexedModelClasses[
+    extension [Self <: UpdateResult[?, ?], I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */, Payload /* <: js.Object */] (val x: Self & (UpdateResult[I, Payload])) extends AnyVal {
+      ] */, Payload /* <: js.Object */](x: Self & (UpdateResult[I, Payload])) {
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: OrmState[I]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: OrmState[I]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: UpdateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: UpdateStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -400,29 +364,22 @@ object databaseMod {
   }
   object UpdateSpec {
     
-    @scala.inline
-    def apply[Payload](action: UpdateType): UpdateSpec[Payload] = {
+    inline def apply[Payload](action: UpdateType): UpdateSpec[Payload] = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateSpec[Payload]]
     }
     
-    @scala.inline
-    implicit class UpdateSpecMutableBuilder[Self <: UpdateSpec[?], Payload] (val x: Self & UpdateSpec[Payload]) extends AnyVal {
+    extension [Self <: UpdateSpec[?], Payload](x: Self & UpdateSpec[Payload]) {
       
-      @scala.inline
-      def setAction(value: UpdateType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: UpdateType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   

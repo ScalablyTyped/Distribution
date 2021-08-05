@@ -28,31 +28,23 @@ trait AddFacetToObjectRequest extends StObject {
 }
 object AddFacetToObjectRequest {
   
-  @scala.inline
-  def apply(DirectoryArn: Arn, ObjectReference: ObjectReference, SchemaFacet: SchemaFacet): AddFacetToObjectRequest = {
+  inline def apply(DirectoryArn: Arn, ObjectReference: ObjectReference, SchemaFacet: SchemaFacet): AddFacetToObjectRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any], ObjectReference = ObjectReference.asInstanceOf[js.Any], SchemaFacet = SchemaFacet.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddFacetToObjectRequest]
   }
   
-  @scala.inline
-  implicit class AddFacetToObjectRequestMutableBuilder[Self <: AddFacetToObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddFacetToObjectRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectAttributeList(value: AttributeKeyAndValueList): Self = StObject.set(x, "ObjectAttributeList", value.asInstanceOf[js.Any])
+    inline def setObjectAttributeList(value: AttributeKeyAndValueList): Self = StObject.set(x, "ObjectAttributeList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectAttributeListUndefined: Self = StObject.set(x, "ObjectAttributeList", js.undefined)
+    inline def setObjectAttributeListUndefined: Self = StObject.set(x, "ObjectAttributeList", js.undefined)
     
-    @scala.inline
-    def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value :_*))
+    inline def setObjectAttributeListVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "ObjectAttributeList", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
+    inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaFacet(value: SchemaFacet): Self = StObject.set(x, "SchemaFacet", value.asInstanceOf[js.Any])
+    inline def setSchemaFacet(value: SchemaFacet): Self = StObject.set(x, "SchemaFacet", value.asInstanceOf[js.Any])
   }
 }

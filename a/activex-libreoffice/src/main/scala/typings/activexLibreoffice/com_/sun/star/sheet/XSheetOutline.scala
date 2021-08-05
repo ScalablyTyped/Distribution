@@ -59,8 +59,7 @@ trait XSheetOutline
 }
 object XSheetOutline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     autoOutline: CellRangeAddress => Unit,
     clearOutline: () => Unit,
@@ -76,28 +75,20 @@ object XSheetOutline {
     __obj.asInstanceOf[XSheetOutline]
   }
   
-  @scala.inline
-  implicit class XSheetOutlineMutableBuilder[Self <: XSheetOutline] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetOutline](x: Self) {
     
-    @scala.inline
-    def setAutoOutline(value: CellRangeAddress => Unit): Self = StObject.set(x, "autoOutline", js.Any.fromFunction1(value))
+    inline def setAutoOutline(value: CellRangeAddress => Unit): Self = StObject.set(x, "autoOutline", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearOutline(value: () => Unit): Self = StObject.set(x, "clearOutline", js.Any.fromFunction0(value))
+    inline def setClearOutline(value: () => Unit): Self = StObject.set(x, "clearOutline", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGroup(value: (CellRangeAddress, TableOrientation) => Unit): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
+    inline def setGroup(value: (CellRangeAddress, TableOrientation) => Unit): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHideDetail(value: CellRangeAddress => Unit): Self = StObject.set(x, "hideDetail", js.Any.fromFunction1(value))
+    inline def setHideDetail(value: CellRangeAddress => Unit): Self = StObject.set(x, "hideDetail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowDetail(value: CellRangeAddress => Unit): Self = StObject.set(x, "showDetail", js.Any.fromFunction1(value))
+    inline def setShowDetail(value: CellRangeAddress => Unit): Self = StObject.set(x, "showDetail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowLevel(value: (Double, TableOrientation) => Unit): Self = StObject.set(x, "showLevel", js.Any.fromFunction2(value))
+    inline def setShowLevel(value: (Double, TableOrientation) => Unit): Self = StObject.set(x, "showLevel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUngroup(value: (CellRangeAddress, TableOrientation) => Unit): Self = StObject.set(x, "ungroup", js.Any.fromFunction2(value))
+    inline def setUngroup(value: (CellRangeAddress, TableOrientation) => Unit): Self = StObject.set(x, "ungroup", js.Any.fromFunction2(value))
   }
 }

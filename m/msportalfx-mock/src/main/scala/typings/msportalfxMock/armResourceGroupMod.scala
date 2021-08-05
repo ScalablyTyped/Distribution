@@ -16,14 +16,12 @@ object armResourceGroupMod {
     @JSImport("msportalfx-mock/lib/src/ArmProxy/Models/armResourceGroup", "ResourceLockState.Locked")
     @js.native
     def Locked: String = js.native
-    @scala.inline
-    def Locked_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locked")(x.asInstanceOf[js.Any])
+    inline def Locked_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Locked")(x.asInstanceOf[js.Any])
     
     @JSImport("msportalfx-mock/lib/src/ArmProxy/Models/armResourceGroup", "ResourceLockState.Unlocked")
     @js.native
     def Unlocked: String = js.native
-    @scala.inline
-    def Unlocked_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unlocked")(x.asInstanceOf[js.Any])
+    inline def Unlocked_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unlocked")(x.asInstanceOf[js.Any])
   }
   
   trait ResourceGroup extends StObject {
@@ -55,8 +53,7 @@ object armResourceGroupMod {
   }
   object ResourceGroup {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       location: String,
       name: String,
@@ -67,23 +64,17 @@ object armResourceGroupMod {
       __obj.asInstanceOf[ResourceGroup]
     }
     
-    @scala.inline
-    implicit class ResourceGroupMutableBuilder[Self <: ResourceGroup] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceGroup](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: ResourceGroupProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: ResourceGroupProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringMap[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringMap[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,20 +92,16 @@ object armResourceGroupMod {
   }
   object ResourceGroupProperties {
     
-    @scala.inline
-    def apply(lockState: String, provisioningState: String): ResourceGroupProperties = {
+    inline def apply(lockState: String, provisioningState: String): ResourceGroupProperties = {
       val __obj = js.Dynamic.literal(lockState = lockState.asInstanceOf[js.Any], provisioningState = provisioningState.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceGroupProperties]
     }
     
-    @scala.inline
-    implicit class ResourceGroupPropertiesMutableBuilder[Self <: ResourceGroupProperties] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceGroupProperties](x: Self) {
       
-      @scala.inline
-      def setLockState(value: String): Self = StObject.set(x, "lockState", value.asInstanceOf[js.Any])
+      inline def setLockState(value: String): Self = StObject.set(x, "lockState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
+      inline def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     }
   }
 }

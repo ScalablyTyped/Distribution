@@ -20,19 +20,15 @@ trait TVVIEWERBGNOTEXECUTABLE extends StObject {
 }
 object TVVIEWERBGNOTEXECUTABLE {
   
-  @scala.inline
-  def apply(): TVVIEWERBGNOTEXECUTABLE = {
+  inline def apply(): TVVIEWERBGNOTEXECUTABLE = {
     val __obj = js.Dynamic.literal(TV_VIEWER_BG_EXECUTABLE = 1, TV_VIEWER_BG_NOT_EXECUTABLE = 0)
     __obj.asInstanceOf[TVVIEWERBGNOTEXECUTABLE]
   }
   
-  @scala.inline
-  implicit class TVVIEWERBGNOTEXECUTABLEMutableBuilder[Self <: TVVIEWERBGNOTEXECUTABLE] (val x: Self) extends AnyVal {
+  extension [Self <: TVVIEWERBGNOTEXECUTABLE](x: Self) {
     
-    @scala.inline
-    def setTV_VIEWER_BG_EXECUTABLE(value: `1`): Self = StObject.set(x, "TV_VIEWER_BG_EXECUTABLE", value.asInstanceOf[js.Any])
+    inline def setTV_VIEWER_BG_EXECUTABLE(value: `1`): Self = StObject.set(x, "TV_VIEWER_BG_EXECUTABLE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTV_VIEWER_BG_NOT_EXECUTABLE(value: `0`): Self = StObject.set(x, "TV_VIEWER_BG_NOT_EXECUTABLE", value.asInstanceOf[js.Any])
+    inline def setTV_VIEWER_BG_NOT_EXECUTABLE(value: `0`): Self = StObject.set(x, "TV_VIEWER_BG_NOT_EXECUTABLE", value.asInstanceOf[js.Any])
   }
 }

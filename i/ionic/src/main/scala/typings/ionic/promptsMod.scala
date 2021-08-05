@@ -14,8 +14,7 @@ object promptsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createOnFallback(hasHasConfirmLog: CreateOnFallbackOptions): js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnFallback")(hasHasConfirmLog.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox]]
+  inline def createOnFallback(hasHasConfirmLog: CreateOnFallbackOptions): js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOnFallback")(hasHasConfirmLog.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* question */ PromptQuestion, String | Boolean | Unit | PromptValueCheckbox]]
   
   trait CreateOnFallbackOptions extends StObject {
     
@@ -25,20 +24,16 @@ object promptsMod {
   }
   object CreateOnFallbackOptions {
     
-    @scala.inline
-    def apply(flags: IonicEnvironmentFlags, log: ILogger): CreateOnFallbackOptions = {
+    inline def apply(flags: IonicEnvironmentFlags, log: ILogger): CreateOnFallbackOptions = {
       val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateOnFallbackOptions]
     }
     
-    @scala.inline
-    implicit class CreateOnFallbackOptionsMutableBuilder[Self <: CreateOnFallbackOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateOnFallbackOptions](x: Self) {
       
-      @scala.inline
-      def setFlags(value: IonicEnvironmentFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: IonicEnvironmentFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     }
   }
 }

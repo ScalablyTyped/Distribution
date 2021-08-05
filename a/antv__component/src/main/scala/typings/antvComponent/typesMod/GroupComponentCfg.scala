@@ -23,22 +23,17 @@ trait GroupComponentCfg
 }
 object GroupComponentCfg {
   
-  @scala.inline
-  def apply(container: IGroup): GroupComponentCfg = {
+  inline def apply(container: IGroup): GroupComponentCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupComponentCfg]
   }
   
-  @scala.inline
-  implicit class GroupComponentCfgMutableBuilder[Self <: GroupComponentCfg] (val x: Self) extends AnyVal {
+  extension [Self <: GroupComponentCfg](x: Self) {
     
-    @scala.inline
-    def setContainer(value: IGroup): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: IGroup): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroup(value: IGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: IGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
   }
 }

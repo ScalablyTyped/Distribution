@@ -23,8 +23,7 @@ trait InteractionsSetRestrictionsForOrgEndpoint
 }
 object InteractionsSetRestrictionsForOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     limit: existing_users | contributors_only | collaborators_only,
     mediaType: `0`[sombra],
     org_ : String
@@ -34,13 +33,10 @@ object InteractionsSetRestrictionsForOrgEndpoint {
     __obj.asInstanceOf[InteractionsSetRestrictionsForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class InteractionsSetRestrictionsForOrgEndpointMutableBuilder[Self <: InteractionsSetRestrictionsForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionsSetRestrictionsForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setLimit(value: existing_users | contributors_only | collaborators_only): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: existing_users | contributors_only | collaborators_only): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

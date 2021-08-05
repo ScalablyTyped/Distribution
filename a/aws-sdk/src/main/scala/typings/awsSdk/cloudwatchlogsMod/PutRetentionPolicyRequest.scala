@@ -15,19 +15,15 @@ trait PutRetentionPolicyRequest extends StObject {
 }
 object PutRetentionPolicyRequest {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName, retentionInDays: Days): PutRetentionPolicyRequest = {
+  inline def apply(logGroupName: LogGroupName, retentionInDays: Days): PutRetentionPolicyRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], retentionInDays = retentionInDays.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRetentionPolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutRetentionPolicyRequestMutableBuilder[Self <: PutRetentionPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutRetentionPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionInDays(value: Days): Self = StObject.set(x, "retentionInDays", value.asInstanceOf[js.Any])
+    inline def setRetentionInDays(value: Days): Self = StObject.set(x, "retentionInDays", value.asInstanceOf[js.Any])
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlActionShowOn extends StObject
 object OlActionShowOn {
   
-  @scala.inline
-  def olDontShow: `0` = 0.asInstanceOf[`0`]
+  inline def olDontShow: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olMenu: `1` = 1.asInstanceOf[`1`]
+  inline def olMenu: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olMenuAndToolbar: `2` = 2.asInstanceOf[`2`]
+  inline def olMenuAndToolbar: `2` = 2.asInstanceOf[`2`]
 }

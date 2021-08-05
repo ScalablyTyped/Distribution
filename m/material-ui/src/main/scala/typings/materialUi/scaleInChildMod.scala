@@ -32,38 +32,28 @@ object scaleInChildMod {
   }
   object ScaleInChildProps {
     
-    @scala.inline
-    def apply(): ScaleInChildProps = {
+    inline def apply(): ScaleInChildProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScaleInChildProps]
     }
     
-    @scala.inline
-    implicit class ScaleInChildPropsMutableBuilder[Self <: ScaleInChildProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScaleInChildProps](x: Self) {
       
-      @scala.inline
-      def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
+      inline def setEnterDelay(value: Double): Self = StObject.set(x, "enterDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
+      inline def setEnterDelayUndefined: Self = StObject.set(x, "enterDelay", js.undefined)
       
-      @scala.inline
-      def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+      inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+      inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
       
-      @scala.inline
-      def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+      inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+      inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

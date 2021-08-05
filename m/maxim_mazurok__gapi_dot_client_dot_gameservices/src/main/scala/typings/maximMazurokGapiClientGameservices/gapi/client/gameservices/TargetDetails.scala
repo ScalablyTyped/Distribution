@@ -17,34 +17,25 @@ trait TargetDetails extends StObject {
 }
 object TargetDetails {
   
-  @scala.inline
-  def apply(): TargetDetails = {
+  inline def apply(): TargetDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetDetails]
   }
   
-  @scala.inline
-  implicit class TargetDetailsMutableBuilder[Self <: TargetDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TargetDetails](x: Self) {
     
-    @scala.inline
-    def setFleetDetails(value: js.Array[TargetFleetDetails]): Self = StObject.set(x, "fleetDetails", value.asInstanceOf[js.Any])
+    inline def setFleetDetails(value: js.Array[TargetFleetDetails]): Self = StObject.set(x, "fleetDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetDetailsUndefined: Self = StObject.set(x, "fleetDetails", js.undefined)
+    inline def setFleetDetailsUndefined: Self = StObject.set(x, "fleetDetails", js.undefined)
     
-    @scala.inline
-    def setFleetDetailsVarargs(value: TargetFleetDetails*): Self = StObject.set(x, "fleetDetails", js.Array(value :_*))
+    inline def setFleetDetailsVarargs(value: TargetFleetDetails*): Self = StObject.set(x, "fleetDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setGameServerClusterName(value: String): Self = StObject.set(x, "gameServerClusterName", value.asInstanceOf[js.Any])
+    inline def setGameServerClusterName(value: String): Self = StObject.set(x, "gameServerClusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerClusterNameUndefined: Self = StObject.set(x, "gameServerClusterName", js.undefined)
+    inline def setGameServerClusterNameUndefined: Self = StObject.set(x, "gameServerClusterName", js.undefined)
     
-    @scala.inline
-    def setGameServerDeploymentName(value: String): Self = StObject.set(x, "gameServerDeploymentName", value.asInstanceOf[js.Any])
+    inline def setGameServerDeploymentName(value: String): Self = StObject.set(x, "gameServerDeploymentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerDeploymentNameUndefined: Self = StObject.set(x, "gameServerDeploymentName", js.undefined)
+    inline def setGameServerDeploymentNameUndefined: Self = StObject.set(x, "gameServerDeploymentName", js.undefined)
   }
 }

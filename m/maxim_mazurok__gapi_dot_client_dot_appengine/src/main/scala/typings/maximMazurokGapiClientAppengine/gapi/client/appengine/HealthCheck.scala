@@ -29,55 +29,39 @@ trait HealthCheck extends StObject {
 }
 object HealthCheck {
   
-  @scala.inline
-  def apply(): HealthCheck = {
+  inline def apply(): HealthCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HealthCheck]
   }
   
-  @scala.inline
-  implicit class HealthCheckMutableBuilder[Self <: HealthCheck] (val x: Self) extends AnyVal {
+  extension [Self <: HealthCheck](x: Self) {
     
-    @scala.inline
-    def setCheckInterval(value: String): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
+    inline def setCheckInterval(value: String): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
+    inline def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
     
-    @scala.inline
-    def setDisableHealthCheck(value: Boolean): Self = StObject.set(x, "disableHealthCheck", value.asInstanceOf[js.Any])
+    inline def setDisableHealthCheck(value: Boolean): Self = StObject.set(x, "disableHealthCheck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableHealthCheckUndefined: Self = StObject.set(x, "disableHealthCheck", js.undefined)
+    inline def setDisableHealthCheckUndefined: Self = StObject.set(x, "disableHealthCheck", js.undefined)
     
-    @scala.inline
-    def setHealthyThreshold(value: Double): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
+    inline def setHealthyThreshold(value: Double): Self = StObject.set(x, "healthyThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthyThresholdUndefined: Self = StObject.set(x, "healthyThreshold", js.undefined)
+    inline def setHealthyThresholdUndefined: Self = StObject.set(x, "healthyThreshold", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setRestartThreshold(value: Double): Self = StObject.set(x, "restartThreshold", value.asInstanceOf[js.Any])
+    inline def setRestartThreshold(value: Double): Self = StObject.set(x, "restartThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestartThresholdUndefined: Self = StObject.set(x, "restartThreshold", js.undefined)
+    inline def setRestartThresholdUndefined: Self = StObject.set(x, "restartThreshold", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUnhealthyThreshold(value: Double): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
+    inline def setUnhealthyThreshold(value: Double): Self = StObject.set(x, "unhealthyThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnhealthyThresholdUndefined: Self = StObject.set(x, "unhealthyThreshold", js.undefined)
+    inline def setUnhealthyThresholdUndefined: Self = StObject.set(x, "unhealthyThreshold", js.undefined)
   }
 }

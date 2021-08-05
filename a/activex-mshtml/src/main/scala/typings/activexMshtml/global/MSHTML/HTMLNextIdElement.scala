@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLNextIdElement")
 @js.native
-class HTMLNextIdElement protected ()
+/* private */ class HTMLNextIdElement ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLNextIdElement

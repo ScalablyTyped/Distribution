@@ -29,34 +29,25 @@ trait HlsOutputSettings extends StObject {
 }
 object HlsOutputSettings {
   
-  @scala.inline
-  def apply(HlsSettings: HlsSettings): HlsOutputSettings = {
+  inline def apply(HlsSettings: HlsSettings): HlsOutputSettings = {
     val __obj = js.Dynamic.literal(HlsSettings = HlsSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsOutputSettings]
   }
   
-  @scala.inline
-  implicit class HlsOutputSettingsMutableBuilder[Self <: HlsOutputSettings] (val x: Self) extends AnyVal {
+  extension [Self <: HlsOutputSettings](x: Self) {
     
-    @scala.inline
-    def setH265PackagingType(value: HlsH265PackagingType): Self = StObject.set(x, "H265PackagingType", value.asInstanceOf[js.Any])
+    inline def setH265PackagingType(value: HlsH265PackagingType): Self = StObject.set(x, "H265PackagingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH265PackagingTypeUndefined: Self = StObject.set(x, "H265PackagingType", js.undefined)
+    inline def setH265PackagingTypeUndefined: Self = StObject.set(x, "H265PackagingType", js.undefined)
     
-    @scala.inline
-    def setHlsSettings(value: HlsSettings): Self = StObject.set(x, "HlsSettings", value.asInstanceOf[js.Any])
+    inline def setHlsSettings(value: HlsSettings): Self = StObject.set(x, "HlsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameModifier(value: stringMin1): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
+    inline def setNameModifier(value: stringMin1): Self = StObject.set(x, "NameModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
+    inline def setNameModifierUndefined: Self = StObject.set(x, "NameModifier", js.undefined)
     
-    @scala.inline
-    def setSegmentModifier(value: string): Self = StObject.set(x, "SegmentModifier", value.asInstanceOf[js.Any])
+    inline def setSegmentModifier(value: string): Self = StObject.set(x, "SegmentModifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentModifierUndefined: Self = StObject.set(x, "SegmentModifier", js.undefined)
+    inline def setSegmentModifierUndefined: Self = StObject.set(x, "SegmentModifier", js.undefined)
   }
 }

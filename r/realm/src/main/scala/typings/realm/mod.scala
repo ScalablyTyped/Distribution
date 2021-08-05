@@ -215,29 +215,21 @@ object mod {
       @js.native
       val downloadBeforeOpenBehavior: OpenRealmBehaviorConfiguration = js.native
       
-      @scala.inline
-      def enableSessionMultiplexing(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableSessionMultiplexing")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def enableSessionMultiplexing(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableSessionMultiplexing")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def getAllSyncSessions(user: typings.realm.Realm.User[DefaultFunctionsFactory, js.Any]): js.Array[typings.realm.Realm.App.Sync.Session] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllSyncSessions")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.realm.Realm.App.Sync.Session]]
+      inline def getAllSyncSessions(user: typings.realm.Realm.User[DefaultFunctionsFactory, js.Any]): js.Array[typings.realm.Realm.App.Sync.Session] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllSyncSessions")(user.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.realm.Realm.App.Sync.Session]]
       
-      @scala.inline
-      def getSyncSession(user: typings.realm.Realm.User[DefaultFunctionsFactory, js.Any]): typings.realm.Realm.App.Sync.Session = ^.asInstanceOf[js.Dynamic].applyDynamic("getSyncSession")(user.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.App.Sync.Session]
-      @scala.inline
-      def getSyncSession(user: typings.realm.Realm.User[DefaultFunctionsFactory, js.Any], partitionValue: String): typings.realm.Realm.App.Sync.Session = (^.asInstanceOf[js.Dynamic].applyDynamic("getSyncSession")(user.asInstanceOf[js.Any], partitionValue.asInstanceOf[js.Any])).asInstanceOf[typings.realm.Realm.App.Sync.Session]
-      @scala.inline
-      def getSyncSession(
+      inline def getSyncSession(user: typings.realm.Realm.User[DefaultFunctionsFactory, js.Any]): typings.realm.Realm.App.Sync.Session = ^.asInstanceOf[js.Dynamic].applyDynamic("getSyncSession")(user.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.App.Sync.Session]
+      inline def getSyncSession(user: typings.realm.Realm.User[DefaultFunctionsFactory, js.Any], partitionValue: String): typings.realm.Realm.App.Sync.Session = (^.asInstanceOf[js.Dynamic].applyDynamic("getSyncSession")(user.asInstanceOf[js.Any], partitionValue.asInstanceOf[js.Any])).asInstanceOf[typings.realm.Realm.App.Sync.Session]
+      inline def getSyncSession(
         user: typings.realm.Realm.User[DefaultFunctionsFactory, js.Any],
         partitionValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectId */ js.Any
       ): typings.realm.Realm.App.Sync.Session = (^.asInstanceOf[js.Dynamic].applyDynamic("getSyncSession")(user.asInstanceOf[js.Any], partitionValue.asInstanceOf[js.Any])).asInstanceOf[typings.realm.Realm.App.Sync.Session]
-      @scala.inline
-      def getSyncSession(user: typings.realm.Realm.User[DefaultFunctionsFactory, js.Any], partitionValue: Double): typings.realm.Realm.App.Sync.Session = (^.asInstanceOf[js.Dynamic].applyDynamic("getSyncSession")(user.asInstanceOf[js.Any], partitionValue.asInstanceOf[js.Any])).asInstanceOf[typings.realm.Realm.App.Sync.Session]
+      inline def getSyncSession(user: typings.realm.Realm.User[DefaultFunctionsFactory, js.Any], partitionValue: Double): typings.realm.Realm.App.Sync.Session = (^.asInstanceOf[js.Dynamic].applyDynamic("getSyncSession")(user.asInstanceOf[js.Any], partitionValue.asInstanceOf[js.Any])).asInstanceOf[typings.realm.Realm.App.Sync.Session]
       
-      @scala.inline
-      def hasExistingSessions(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_hasExistingSessions")(app.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def hasExistingSessions(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_hasExistingSessions")(app.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @scala.inline
-      def initiateClientReset(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any], path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initiateClientReset")(app.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def initiateClientReset(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any], path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initiateClientReset")(app.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * The default behavior settings if you want to open a synchronized Realm immediately and start working on it.
@@ -247,20 +239,16 @@ object mod {
       @js.native
       val openLocalRealmBehavior: OpenRealmBehaviorConfiguration = js.native
       
-      @scala.inline
-      def reconnect(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reconnect")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      inline def reconnect(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reconnect")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @scala.inline
-      def setLogLevel(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any], logLevel: LogLevel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(app.asInstanceOf[js.Any], logLevel.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setLogLevel(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any], logLevel: LogLevel): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(app.asInstanceOf[js.Any], logLevel.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def setLogger(
+      inline def setLogger(
         app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any],
         callback: js.Function2[/* level */ NumericLogLevel, /* message */ String, Unit]
       ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(app.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def setUserAgent(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any], userAgent: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserAgent")(app.asInstanceOf[js.Any], userAgent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def setUserAgent(app: typings.realm.Realm.App[DefaultFunctionsFactory, js.Any], userAgent: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUserAgent")(app.asInstanceOf[js.Any], userAgent.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /**
@@ -271,8 +259,7 @@ object mod {
       * @returns The Realm App instance.
       */
     /* static member */
-    @scala.inline
-    def getApp(appId: String): typings.realm.Realm.App[DefaultFunctionsFactory, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApp")(appId.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.App[DefaultFunctionsFactory, js.Any]]
+    inline def getApp(appId: String): typings.realm.Realm.App[DefaultFunctionsFactory, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getApp")(appId.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.App[DefaultFunctionsFactory, js.Any]]
   }
   
   object Auth {
@@ -452,8 +439,7 @@ object mod {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    @scala.inline
-    def anonymous(): typings.realm.Realm.Credentials[AnonymousPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("anonymous")().asInstanceOf[typings.realm.Realm.Credentials[AnonymousPayload]]
+    inline def anonymous(): typings.realm.Realm.Credentials[AnonymousPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("anonymous")().asInstanceOf[typings.realm.Realm.Credentials[AnonymousPayload]]
     
     /**
       * Factory for `Credentials` which authenticate using the [Apple ID Provider](https://docs.mongodb.com/realm/authentication/apple/).
@@ -462,8 +448,7 @@ object mod {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    @scala.inline
-    def apple(idToken: String): typings.realm.Realm.Credentials[ApplePayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("apple")(idToken.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[ApplePayload]]
+    inline def apple(idToken: String): typings.realm.Realm.Credentials[ApplePayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("apple")(idToken.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[ApplePayload]]
     
     /**
       * Factory for `Credentials` which authenticate using the [Email/Password Provider](https://docs.mongodb.com/realm/authentication/email-password/).
@@ -474,8 +459,7 @@ object mod {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    @scala.inline
-    def emailPassword(email: String, password: String): typings.realm.Realm.Credentials[EmailPasswordPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("emailPassword")(email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.realm.Realm.Credentials[EmailPasswordPayload]]
+    inline def emailPassword(email: String, password: String): typings.realm.Realm.Credentials[EmailPasswordPayload] = (^.asInstanceOf[js.Dynamic].applyDynamic("emailPassword")(email.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.realm.Realm.Credentials[EmailPasswordPayload]]
     
     /**
       * Factory for `Credentials` which authenticate using the [Facebook Provider](https://docs.mongodb.com/realm/authentication/facebook/).
@@ -484,8 +468,7 @@ object mod {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    @scala.inline
-    def facebook(accessToken: String): typings.realm.Realm.Credentials[FacebookPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("facebook")(accessToken.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[FacebookPayload]]
+    inline def facebook(accessToken: String): typings.realm.Realm.Credentials[FacebookPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("facebook")(accessToken.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[FacebookPayload]]
     
     /**
       * Factory for `Credentials` which authenticate using the [Custom Function Provider](https://docs.mongodb.com/realm/authentication/custom-function/).
@@ -494,8 +477,7 @@ object mod {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    @scala.inline
-    def function[PayloadType /* <: FunctionPayload */](payload: PayloadType): typings.realm.Realm.Credentials[PayloadType] = ^.asInstanceOf[js.Dynamic].applyDynamic("function")(payload.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[PayloadType]]
+    inline def function[PayloadType /* <: FunctionPayload */](payload: PayloadType): typings.realm.Realm.Credentials[PayloadType] = ^.asInstanceOf[js.Dynamic].applyDynamic("function")(payload.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[PayloadType]]
     
     /**
       * Factory for `Credentials` which authenticate using the [Google Provider](https://docs.mongodb.com/realm/authentication/google/).
@@ -504,8 +486,7 @@ object mod {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    @scala.inline
-    def google(authCode: String): typings.realm.Realm.Credentials[GooglePayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("google")(authCode.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[GooglePayload]]
+    inline def google(authCode: String): typings.realm.Realm.Credentials[GooglePayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("google")(authCode.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[GooglePayload]]
     
     /**
       * Factory for `Credentials` which authenticate using the [Custom JWT Provider](https://docs.mongodb.com/realm/authentication/custom-jwt/).
@@ -514,8 +495,7 @@ object mod {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    @scala.inline
-    def jwt(token: String): typings.realm.Realm.Credentials[JWTPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("jwt")(token.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[JWTPayload]]
+    inline def jwt(token: String): typings.realm.Realm.Credentials[JWTPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("jwt")(token.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[JWTPayload]]
     
     /**
       * Factory for `Credentials` which authenticate using the [API Key Provider](https://docs.mongodb.com/realm/authentication/api-key/).
@@ -526,8 +506,7 @@ object mod {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    @scala.inline
-    def serverApiKey(key: String): typings.realm.Realm.Credentials[ApiKeyPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("serverApiKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[ApiKeyPayload]]
+    inline def serverApiKey(key: String): typings.realm.Realm.Credentials[ApiKeyPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("serverApiKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[ApiKeyPayload]]
     
     /**
       * Factory for `Credentials` which authenticate using the [API Key Provider](https://docs.mongodb.com/realm/authentication/api-key/).
@@ -538,16 +517,14 @@ object mod {
       * @returns A `Credentials` object for logging in using `app.logIn`.
       */
     /* static member */
-    @scala.inline
-    def userApiKey(key: String): typings.realm.Realm.Credentials[ApiKeyPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("userApiKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[ApiKeyPayload]]
+    inline def userApiKey(key: String): typings.realm.Realm.Credentials[ApiKeyPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("userApiKey")(key.asInstanceOf[js.Any]).asInstanceOf[typings.realm.Realm.Credentials[ApiKeyPayload]]
   }
   
   /**
     * JsonSerializationReplacer solves circular structures when serializing Realm entities
     * @example JSON.stringify(realm.objects("Person"), Realm.JsonSerializationReplacer)
     */
-  @scala.inline
-  def JsonSerializationReplacer(key: String, `val`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("JsonSerializationReplacer")(key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def JsonSerializationReplacer(key: String, `val`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("JsonSerializationReplacer")(key.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Object
@@ -819,53 +796,46 @@ object mod {
     * @private Not a part of the public API: It's primarily used from the library's tests.
     */
   /* static member */
-  @scala.inline
-  def clearTestState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTestState")().asInstanceOf[Unit]
+  inline def clearTestState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTestState")().asInstanceOf[Unit]
   
   /**
     * Copy all bundled Realm files to app's default file folder.
     */
   /* static member */
-  @scala.inline
-  def copyBundledRealmFiles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copyBundledRealmFiles")().asInstanceOf[Unit]
+  inline def copyBundledRealmFiles(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copyBundledRealmFiles")().asInstanceOf[Unit]
   
   /**
     * @param {Realm.ObjectSchema} object schema describing the object that should be created.
     * @returns {T}
     */
   /* static member */
-  @scala.inline
-  def createTemplateObject[T](objectSchema: ObjectSchema): T & typings.realm.Realm.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateObject")(objectSchema.asInstanceOf[js.Any]).asInstanceOf[T & typings.realm.Realm.Object]
+  inline def createTemplateObject[T](objectSchema: ObjectSchema): T & typings.realm.Realm.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createTemplateObject")(objectSchema.asInstanceOf[js.Any]).asInstanceOf[T & typings.realm.Realm.Object]
   
   /* static member */
   @JSImport("realm", "defaultPath")
   @js.native
   def defaultPath: String = js.native
-  @scala.inline
-  def defaultPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPath")(x.asInstanceOf[js.Any])
+  inline def defaultPath_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPath")(x.asInstanceOf[js.Any])
   
   /**
     * Delete the Realm file for the given configuration.
     * @param {Configuration} config
     */
   /* static member */
-  @scala.inline
-  def deleteFile(config: Configuration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteFile")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def deleteFile(config: Configuration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteFile")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Checks if the Realm already exists on disk.
     */
   /* static member */
-  @scala.inline
-  def exists(config: Configuration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def exists(config: Configuration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(config.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Open a realm asynchronously with a promise. If the realm is synced, it will be fully synchronized before it is available.
     * @param {Configuration} config
     */
   /* static member */
-  @scala.inline
-  def open(config: Configuration): ProgressPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(config.asInstanceOf[js.Any]).asInstanceOf[ProgressPromise]
+  inline def open(config: Configuration): ProgressPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(config.asInstanceOf[js.Any]).asInstanceOf[ProgressPromise]
   
   /**
     * Get the current schema version of the Realm at the given path.
@@ -874,10 +844,7 @@ object mod {
     * @returns number
     */
   /* static member */
-  @scala.inline
-  def schemaVersion(path: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("schemaVersion")(path.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def schemaVersion(path: String, encryptionKey: ArrayBuffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaVersion")(path.asInstanceOf[js.Any], encryptionKey.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def schemaVersion(path: String, encryptionKey: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaVersion")(path.asInstanceOf[js.Any], encryptionKey.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def schemaVersion(path: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("schemaVersion")(path.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def schemaVersion(path: String, encryptionKey: ArrayBuffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaVersion")(path.asInstanceOf[js.Any], encryptionKey.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def schemaVersion(path: String, encryptionKey: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("schemaVersion")(path.asInstanceOf[js.Any], encryptionKey.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

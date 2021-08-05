@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(cli: Command): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(cli.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def apply(cli: Command): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(cli.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   @JSImport("commander-remaining-args", JSImport.Namespace)
   @js.native

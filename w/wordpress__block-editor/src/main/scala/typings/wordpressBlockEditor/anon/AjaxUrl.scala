@@ -14,22 +14,17 @@ trait AjaxUrl extends StObject {
 }
 object AjaxUrl {
   
-  @scala.inline
-  def apply(ajaxUrl: String, nonce: String, unlockNonce: String): AjaxUrl = {
+  inline def apply(ajaxUrl: String, nonce: String, unlockNonce: String): AjaxUrl = {
     val __obj = js.Dynamic.literal(ajaxUrl = ajaxUrl.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], unlockNonce = unlockNonce.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxUrl]
   }
   
-  @scala.inline
-  implicit class AjaxUrlMutableBuilder[Self <: AjaxUrl] (val x: Self) extends AnyVal {
+  extension [Self <: AjaxUrl](x: Self) {
     
-    @scala.inline
-    def setAjaxUrl(value: String): Self = StObject.set(x, "ajaxUrl", value.asInstanceOf[js.Any])
+    inline def setAjaxUrl(value: String): Self = StObject.set(x, "ajaxUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlockNonce(value: String): Self = StObject.set(x, "unlockNonce", value.asInstanceOf[js.Any])
+    inline def setUnlockNonce(value: String): Self = StObject.set(x, "unlockNonce", value.asInstanceOf[js.Any])
   }
 }

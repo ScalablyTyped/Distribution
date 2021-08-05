@@ -51,113 +51,78 @@ object anon {
   }
   object PartialFormatsInit {
     
-    @scala.inline
-    def apply(): PartialFormatsInit = {
+    inline def apply(): PartialFormatsInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialFormatsInit]
     }
     
-    @scala.inline
-    implicit class PartialFormatsInitMutableBuilder[Self <: PartialFormatsInit] (val x: Self) extends AnyVal {
+    extension [Self <: PartialFormatsInit](x: Self) {
       
-      @scala.inline
-      def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyNull: Self = StObject.set(x, "body", null)
+      inline def setBodyNull: Self = StObject.set(x, "body", null)
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCache(value: RequestCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: RequestCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCredentials(value: RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: RequestCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: FnCall): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
+      inline def setFetchUndefined: Self = StObject.set(x, "fetch", js.undefined)
       
-      @scala.inline
-      def setFormats(value: PickparsersSinkMapEventEm): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      inline def setFormats(value: PickparsersSinkMapEventEm): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+      inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: HeadersInit): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: js.Array[String]*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
+      inline def setIntegrity(value: String): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
+      inline def setIntegrityUndefined: Self = StObject.set(x, "integrity", js.undefined)
       
-      @scala.inline
-      def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
+      inline def setKeepalive(value: Boolean): Self = StObject.set(x, "keepalive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
+      inline def setKeepaliveUndefined: Self = StObject.set(x, "keepalive", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setMode(value: RequestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: RequestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: RequestRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: RequestRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
       
-      @scala.inline
-      def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+      inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+      inline def setReferrerPolicy(value: ReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+      inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
       
-      @scala.inline
-      def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
+      inline def setReferrerUndefined: Self = StObject.set(x, "referrer", js.undefined)
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalNull: Self = StObject.set(x, "signal", null)
+      inline def setSignalNull: Self = StObject.set(x, "signal", null)
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
-      @scala.inline
-      def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      inline def setWindow(value: js.Any): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
     }
   }
 }

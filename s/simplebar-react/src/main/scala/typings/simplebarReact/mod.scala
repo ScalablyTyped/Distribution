@@ -24,26 +24,20 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setScrollableNodeProps(value: js.Object): Self = StObject.set(x, "scrollableNodeProps", value.asInstanceOf[js.Any])
+      inline def setScrollableNodeProps(value: js.Object): Self = StObject.set(x, "scrollableNodeProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollableNodePropsUndefined: Self = StObject.set(x, "scrollableNodeProps", js.undefined)
+      inline def setScrollableNodePropsUndefined: Self = StObject.set(x, "scrollableNodeProps", js.undefined)
     }
   }
   

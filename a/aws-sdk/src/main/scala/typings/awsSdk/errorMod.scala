@@ -69,74 +69,52 @@ object errorMod {
   }
   object AWSError {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String, time: Date): AWSError = {
+    inline def apply(code: String, message: String, name: String, time: Date): AWSError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
       __obj.asInstanceOf[AWSError]
     }
     
-    @scala.inline
-    implicit class AWSErrorMutableBuilder[Self <: AWSError] (val x: Self) extends AnyVal {
+    extension [Self <: AWSError](x: Self) {
       
-      @scala.inline
-      def setCfId(value: String): Self = StObject.set(x, "cfId", value.asInstanceOf[js.Any])
+      inline def setCfId(value: String): Self = StObject.set(x, "cfId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCfIdUndefined: Self = StObject.set(x, "cfId", js.undefined)
+      inline def setCfIdUndefined: Self = StObject.set(x, "cfId", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedRequestId(value: String): Self = StObject.set(x, "extendedRequestId", value.asInstanceOf[js.Any])
+      inline def setExtendedRequestId(value: String): Self = StObject.set(x, "extendedRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedRequestIdUndefined: Self = StObject.set(x, "extendedRequestId", js.undefined)
+      inline def setExtendedRequestIdUndefined: Self = StObject.set(x, "extendedRequestId", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
+      inline def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalErrorUndefined: Self = StObject.set(x, "originalError", js.undefined)
+      inline def setOriginalErrorUndefined: Self = StObject.set(x, "originalError", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+      inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
       
-      @scala.inline
-      def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+      inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
+      inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
-      @scala.inline
-      def setRetryable(value: Boolean): Self = StObject.set(x, "retryable", value.asInstanceOf[js.Any])
+      inline def setRetryable(value: Boolean): Self = StObject.set(x, "retryable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryableUndefined: Self = StObject.set(x, "retryable", js.undefined)
+      inline def setRetryableUndefined: Self = StObject.set(x, "retryable", js.undefined)
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
 }

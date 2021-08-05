@@ -16,8 +16,7 @@ trait FunctorWithIndex1[F /* <: /* import warning: transforms.QualifyReferences#
 }
 object FunctorWithIndex1 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I](
     URI: F,
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
     mapWithIndex: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function2[/* i */ I, js.Any, js.Any]) => js.Any
@@ -26,11 +25,9 @@ object FunctorWithIndex1 {
     __obj.asInstanceOf[FunctorWithIndex1[F, I]]
   }
   
-  @scala.inline
-  implicit class FunctorWithIndex1MutableBuilder[Self <: FunctorWithIndex1[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I] (val x: Self & (FunctorWithIndex1[F, I])) extends AnyVal {
+  extension [Self <: FunctorWithIndex1[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I](x: Self & (FunctorWithIndex1[F, I])) {
     
-    @scala.inline
-    def setMapWithIndex(
+    inline def setMapWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any, js.Function2[/* i */ I, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "mapWithIndex", js.Any.fromFunction2(value))
   }

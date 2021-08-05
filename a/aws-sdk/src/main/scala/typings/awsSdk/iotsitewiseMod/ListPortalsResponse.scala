@@ -18,28 +18,21 @@ trait ListPortalsResponse extends StObject {
 }
 object ListPortalsResponse {
   
-  @scala.inline
-  def apply(): ListPortalsResponse = {
+  inline def apply(): ListPortalsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPortalsResponse]
   }
   
-  @scala.inline
-  implicit class ListPortalsResponseMutableBuilder[Self <: ListPortalsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPortalsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPortalSummaries(value: PortalSummaries): Self = StObject.set(x, "portalSummaries", value.asInstanceOf[js.Any])
+    inline def setPortalSummaries(value: PortalSummaries): Self = StObject.set(x, "portalSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalSummariesUndefined: Self = StObject.set(x, "portalSummaries", js.undefined)
+    inline def setPortalSummariesUndefined: Self = StObject.set(x, "portalSummaries", js.undefined)
     
-    @scala.inline
-    def setPortalSummariesVarargs(value: PortalSummary*): Self = StObject.set(x, "portalSummaries", js.Array(value :_*))
+    inline def setPortalSummariesVarargs(value: PortalSummary*): Self = StObject.set(x, "portalSummaries", js.Array(value :_*))
   }
 }

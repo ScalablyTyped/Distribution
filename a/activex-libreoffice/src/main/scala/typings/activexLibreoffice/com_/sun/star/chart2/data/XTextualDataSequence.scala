@@ -20,8 +20,7 @@ trait XTextualDataSequence
 }
 object XTextualDataSequence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TextualData: SafeArray[String],
     acquire: () => Unit,
     getTextualData: () => SafeArray[String],
@@ -32,13 +31,10 @@ object XTextualDataSequence {
     __obj.asInstanceOf[XTextualDataSequence]
   }
   
-  @scala.inline
-  implicit class XTextualDataSequenceMutableBuilder[Self <: XTextualDataSequence] (val x: Self) extends AnyVal {
+  extension [Self <: XTextualDataSequence](x: Self) {
     
-    @scala.inline
-    def setGetTextualData(value: () => SafeArray[String]): Self = StObject.set(x, "getTextualData", js.Any.fromFunction0(value))
+    inline def setGetTextualData(value: () => SafeArray[String]): Self = StObject.set(x, "getTextualData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextualData(value: SafeArray[String]): Self = StObject.set(x, "TextualData", value.asInstanceOf[js.Any])
+    inline def setTextualData(value: SafeArray[String]): Self = StObject.set(x, "TextualData", value.asInstanceOf[js.Any])
   }
 }

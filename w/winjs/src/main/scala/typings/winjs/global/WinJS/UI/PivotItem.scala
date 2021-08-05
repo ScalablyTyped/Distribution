@@ -65,8 +65,7 @@ object PivotItem {
   @JSGlobal("WinJS.UI.PivotItem.isDeclarativeControlContainer")
   @js.native
   def isDeclarativeControlContainer: js.Any = js.native
-  @scala.inline
-  def isDeclarativeControlContainer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDeclarativeControlContainer")(x.asInstanceOf[js.Any])
+  inline def isDeclarativeControlContainer_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isDeclarativeControlContainer")(x.asInstanceOf[js.Any])
   
   /**
     * Indicates that the object is compatibile with declarative processing.
@@ -75,6 +74,5 @@ object PivotItem {
   @JSGlobal("WinJS.UI.PivotItem.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

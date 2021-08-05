@@ -28,20 +28,16 @@ object LabIcon {
   }
   object IIcon {
     
-    @scala.inline
-    def apply(name: String, svgstr: String): IIcon = {
+    inline def apply(name: String, svgstr: String): IIcon = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], svgstr = svgstr.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIcon]
     }
     
-    @scala.inline
-    implicit class IIconMutableBuilder[Self <: IIcon] (val x: Self) extends AnyVal {
+    extension [Self <: IIcon](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgstr(value: String): Self = StObject.set(x, "svgstr", value.asInstanceOf[js.Any])
+      inline def setSvgstr(value: String): Self = StObject.set(x, "svgstr", value.asInstanceOf[js.Any])
     }
   }
   

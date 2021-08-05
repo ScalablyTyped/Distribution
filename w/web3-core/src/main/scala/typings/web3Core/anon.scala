@@ -22,32 +22,24 @@ object anon {
   }
   object Cipher {
     
-    @scala.inline
-    def apply(cipher: String, cipherparams: Iv, ciphertext: String, kdf: String, kdfparams: Dklen, mac: String): Cipher = {
+    inline def apply(cipher: String, cipherparams: Iv, ciphertext: String, kdf: String, kdfparams: Dklen, mac: String): Cipher = {
       val __obj = js.Dynamic.literal(cipher = cipher.asInstanceOf[js.Any], cipherparams = cipherparams.asInstanceOf[js.Any], ciphertext = ciphertext.asInstanceOf[js.Any], kdf = kdf.asInstanceOf[js.Any], kdfparams = kdfparams.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cipher]
     }
     
-    @scala.inline
-    implicit class CipherMutableBuilder[Self <: Cipher] (val x: Self) extends AnyVal {
+    extension [Self <: Cipher](x: Self) {
       
-      @scala.inline
-      def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
+      inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCipherparams(value: Iv): Self = StObject.set(x, "cipherparams", value.asInstanceOf[js.Any])
+      inline def setCipherparams(value: Iv): Self = StObject.set(x, "cipherparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+      inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKdf(value: String): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
+      inline def setKdf(value: String): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKdfparams(value: Dklen): Self = StObject.set(x, "kdfparams", value.asInstanceOf[js.Any])
+      inline def setKdfparams(value: Dklen): Self = StObject.set(x, "kdfparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,23 +51,18 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: String, topics: js.Array[js.Any]): Data = {
+    inline def apply(data: String, topics: js.Array[js.Any]): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopics(value: js.Array[js.Any]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+      inline def setTopics(value: js.Array[js.Any]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicsVarargs(value: js.Any*): Self = StObject.set(x, "topics", js.Array(value :_*))
+      inline def setTopicsVarargs(value: js.Any*): Self = StObject.set(x, "topics", js.Array(value :_*))
     }
   }
   
@@ -93,29 +80,22 @@ object anon {
   }
   object Dklen {
     
-    @scala.inline
-    def apply(dklen: Double, n: Double, p: Double, r: Double, salt: String): Dklen = {
+    inline def apply(dklen: Double, n: Double, p: Double, r: Double, salt: String): Dklen = {
       val __obj = js.Dynamic.literal(dklen = dklen.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dklen]
     }
     
-    @scala.inline
-    implicit class DklenMutableBuilder[Self <: Dklen] (val x: Self) extends AnyVal {
+    extension [Self <: Dklen](x: Self) {
       
-      @scala.inline
-      def setDklen(value: Double): Self = StObject.set(x, "dklen", value.asInstanceOf[js.Any])
+      inline def setDklen(value: Double): Self = StObject.set(x, "dklen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,8 +123,7 @@ object anon {
   }
   object Gas {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       gas: String,
       gasPrice: String,
       hash: String,
@@ -160,38 +139,27 @@ object anon {
       __obj.asInstanceOf[Gas]
     }
     
-    @scala.inline
-    implicit class GasMutableBuilder[Self <: Gas] (val x: Self) extends AnyVal {
+    extension [Self <: Gas](x: Self) {
       
-      @scala.inline
-      def setGas(value: String): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+      inline def setGas(value: String): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasPrice(value: String): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
+      inline def setGasPrice(value: String): Self = StObject.set(x, "gasPrice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -201,17 +169,14 @@ object anon {
   }
   object Iv {
     
-    @scala.inline
-    def apply(iv: String): Iv = {
+    inline def apply(iv: String): Iv = {
       val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any])
       __obj.asInstanceOf[Iv]
     }
     
-    @scala.inline
-    implicit class IvMutableBuilder[Self <: Iv] (val x: Self) extends AnyVal {
+    extension [Self <: Iv](x: Self) {
       
-      @scala.inline
-      def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     }
   }
 }

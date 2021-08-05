@@ -16,25 +16,19 @@ trait IMetadataCardUnvalidatedValue extends StObject {
 }
 object IMetadataCardUnvalidatedValue {
   
-  @scala.inline
-  def apply(ID: String, IsMultiValue: Boolean, IsUnvalidated: Boolean, Name: String): IMetadataCardUnvalidatedValue = {
+  inline def apply(ID: String, IsMultiValue: Boolean, IsUnvalidated: Boolean, Name: String): IMetadataCardUnvalidatedValue = {
     val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], IsMultiValue = IsMultiValue.asInstanceOf[js.Any], IsUnvalidated = IsUnvalidated.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMetadataCardUnvalidatedValue]
   }
   
-  @scala.inline
-  implicit class IMetadataCardUnvalidatedValueMutableBuilder[Self <: IMetadataCardUnvalidatedValue] (val x: Self) extends AnyVal {
+  extension [Self <: IMetadataCardUnvalidatedValue](x: Self) {
     
-    @scala.inline
-    def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMultiValue(value: Boolean): Self = StObject.set(x, "IsMultiValue", value.asInstanceOf[js.Any])
+    inline def setIsMultiValue(value: Boolean): Self = StObject.set(x, "IsMultiValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUnvalidated(value: Boolean): Self = StObject.set(x, "IsUnvalidated", value.asInstanceOf[js.Any])
+    inline def setIsUnvalidated(value: Boolean): Self = StObject.set(x, "IsUnvalidated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

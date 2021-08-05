@@ -23,31 +23,23 @@ trait DeleteRepositoryPolicyResponse extends StObject {
 }
 object DeleteRepositoryPolicyResponse {
   
-  @scala.inline
-  def apply(): DeleteRepositoryPolicyResponse = {
+  inline def apply(): DeleteRepositoryPolicyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteRepositoryPolicyResponse]
   }
   
-  @scala.inline
-  implicit class DeleteRepositoryPolicyResponseMutableBuilder[Self <: DeleteRepositoryPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRepositoryPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setPolicyText(value: RepositoryPolicyText): Self = StObject.set(x, "policyText", value.asInstanceOf[js.Any])
+    inline def setPolicyText(value: RepositoryPolicyText): Self = StObject.set(x, "policyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTextUndefined: Self = StObject.set(x, "policyText", js.undefined)
+    inline def setPolicyTextUndefined: Self = StObject.set(x, "policyText", js.undefined)
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

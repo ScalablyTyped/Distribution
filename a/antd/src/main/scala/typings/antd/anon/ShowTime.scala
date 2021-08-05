@@ -11,16 +11,13 @@ trait ShowTime[DateType] extends StObject {
 }
 object ShowTime {
   
-  @scala.inline
-  def apply[DateType](showTime: SharedTimeProps[DateType]): ShowTime[DateType] = {
+  inline def apply[DateType](showTime: SharedTimeProps[DateType]): ShowTime[DateType] = {
     val __obj = js.Dynamic.literal(showTime = showTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowTime[DateType]]
   }
   
-  @scala.inline
-  implicit class ShowTimeMutableBuilder[Self <: ShowTime[?], DateType] (val x: Self & ShowTime[DateType]) extends AnyVal {
+  extension [Self <: ShowTime[?], DateType](x: Self & ShowTime[DateType]) {
     
-    @scala.inline
-    def setShowTime(value: SharedTimeProps[DateType]): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
+    inline def setShowTime(value: SharedTimeProps[DateType]): Self = StObject.set(x, "showTime", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait IBufferLevel extends StObject {
 }
 object IBufferLevel {
   
-  @scala.inline
-  def apply(level: Double, t: Date): IBufferLevel = {
+  inline def apply(level: Double, t: Date): IBufferLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBufferLevel]
   }
   
-  @scala.inline
-  implicit class IBufferLevelMutableBuilder[Self <: IBufferLevel] (val x: Self) extends AnyVal {
+  extension [Self <: IBufferLevel](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: Date): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Date): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

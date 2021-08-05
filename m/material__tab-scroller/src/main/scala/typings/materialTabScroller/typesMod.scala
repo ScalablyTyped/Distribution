@@ -14,20 +14,16 @@ object typesMod {
   }
   object MDCTabScrollerAnimation {
     
-    @scala.inline
-    def apply(finalScrollPosition: Double, scrollDelta: Double): MDCTabScrollerAnimation = {
+    inline def apply(finalScrollPosition: Double, scrollDelta: Double): MDCTabScrollerAnimation = {
       val __obj = js.Dynamic.literal(finalScrollPosition = finalScrollPosition.asInstanceOf[js.Any], scrollDelta = scrollDelta.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCTabScrollerAnimation]
     }
     
-    @scala.inline
-    implicit class MDCTabScrollerAnimationMutableBuilder[Self <: MDCTabScrollerAnimation] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTabScrollerAnimation](x: Self) {
       
-      @scala.inline
-      def setFinalScrollPosition(value: Double): Self = StObject.set(x, "finalScrollPosition", value.asInstanceOf[js.Any])
+      inline def setFinalScrollPosition(value: Double): Self = StObject.set(x, "finalScrollPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollDelta(value: Double): Self = StObject.set(x, "scrollDelta", value.asInstanceOf[js.Any])
+      inline def setScrollDelta(value: Double): Self = StObject.set(x, "scrollDelta", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object typesMod {
   }
   object MDCTabScrollerHorizontalEdges {
     
-    @scala.inline
-    def apply(left: Double, right: Double): MDCTabScrollerHorizontalEdges = {
+    inline def apply(left: Double, right: Double): MDCTabScrollerHorizontalEdges = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCTabScrollerHorizontalEdges]
     }
     
-    @scala.inline
-    implicit class MDCTabScrollerHorizontalEdgesMutableBuilder[Self <: MDCTabScrollerHorizontalEdges] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTabScrollerHorizontalEdges](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
 }

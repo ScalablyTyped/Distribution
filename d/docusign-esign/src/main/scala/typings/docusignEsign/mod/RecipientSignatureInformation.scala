@@ -23,31 +23,23 @@ trait RecipientSignatureInformation extends StObject {
 }
 object RecipientSignatureInformation {
   
-  @scala.inline
-  def apply(): RecipientSignatureInformation = {
+  inline def apply(): RecipientSignatureInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientSignatureInformation]
   }
   
-  @scala.inline
-  implicit class RecipientSignatureInformationMutableBuilder[Self <: RecipientSignatureInformation] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientSignatureInformation](x: Self) {
     
-    @scala.inline
-    def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    @scala.inline
-    def setSignatureInitials(value: String): Self = StObject.set(x, "signatureInitials", value.asInstanceOf[js.Any])
+    inline def setSignatureInitials(value: String): Self = StObject.set(x, "signatureInitials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureInitialsUndefined: Self = StObject.set(x, "signatureInitials", js.undefined)
+    inline def setSignatureInitialsUndefined: Self = StObject.set(x, "signatureInitials", js.undefined)
     
-    @scala.inline
-    def setSignatureName(value: String): Self = StObject.set(x, "signatureName", value.asInstanceOf[js.Any])
+    inline def setSignatureName(value: String): Self = StObject.set(x, "signatureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureNameUndefined: Self = StObject.set(x, "signatureName", js.undefined)
+    inline def setSignatureNameUndefined: Self = StObject.set(x, "signatureName", js.undefined)
   }
 }

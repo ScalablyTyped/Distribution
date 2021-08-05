@@ -13,19 +13,15 @@ trait GetOTAUpdateResponse extends StObject {
 }
 object GetOTAUpdateResponse {
   
-  @scala.inline
-  def apply(): GetOTAUpdateResponse = {
+  inline def apply(): GetOTAUpdateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOTAUpdateResponse]
   }
   
-  @scala.inline
-  implicit class GetOTAUpdateResponseMutableBuilder[Self <: GetOTAUpdateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetOTAUpdateResponse](x: Self) {
     
-    @scala.inline
-    def setOtaUpdateInfo(value: OTAUpdateInfo): Self = StObject.set(x, "otaUpdateInfo", value.asInstanceOf[js.Any])
+    inline def setOtaUpdateInfo(value: OTAUpdateInfo): Self = StObject.set(x, "otaUpdateInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtaUpdateInfoUndefined: Self = StObject.set(x, "otaUpdateInfo", js.undefined)
+    inline def setOtaUpdateInfoUndefined: Self = StObject.set(x, "otaUpdateInfo", js.undefined)
   }
 }

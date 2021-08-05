@@ -10,7 +10,7 @@ trait PivotLine extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.PivotLine_typekey")
+  /* private */ @JSName("Excel.PivotLine_typekey")
   var ExcelDotPivotLine_typekey: PivotLine
   
   val LineType: XlPivotLineType
@@ -25,8 +25,7 @@ trait PivotLine extends StObject {
 }
 object PivotLine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     ExcelDotPivotLine_typekey: PivotLine,
@@ -40,28 +39,20 @@ object PivotLine {
     __obj.asInstanceOf[PivotLine]
   }
   
-  @scala.inline
-  implicit class PivotLineMutableBuilder[Self <: PivotLine] (val x: Self) extends AnyVal {
+  extension [Self <: PivotLine](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotPivotLine_typekey(value: PivotLine): Self = StObject.set(x, "Excel.PivotLine_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotPivotLine_typekey(value: PivotLine): Self = StObject.set(x, "Excel.PivotLine_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineType(value: XlPivotLineType): Self = StObject.set(x, "LineType", value.asInstanceOf[js.Any])
+    inline def setLineType(value: XlPivotLineType): Self = StObject.set(x, "LineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotLineCells(value: PivotLineCells): Self = StObject.set(x, "PivotLineCells", value.asInstanceOf[js.Any])
+    inline def setPivotLineCells(value: PivotLineCells): Self = StObject.set(x, "PivotLineCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
   }
 }

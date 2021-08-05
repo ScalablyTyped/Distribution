@@ -80,8 +80,7 @@ object mod {
   @js.native
   val SliderTooltip: ForwardRefExoticComponent[TooltipProps & RefAttributes[js.Any]] = js.native
   
-  @scala.inline
-  def createSliderWithTooltip[Props /* <: GenericSliderProps */](Component: ComponentClass[Props, ComponentState]): Instantiable[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSliderWithTooltip")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable[Props]]
+  inline def createSliderWithTooltip[Props /* <: GenericSliderProps */](Component: ComponentClass[Props, ComponentState]): Instantiable[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSliderWithTooltip")(Component.asInstanceOf[js.Any]).asInstanceOf[Instantiable[Props]]
   
   @js.native
   trait CompoundedComponent

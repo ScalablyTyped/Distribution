@@ -40,8 +40,7 @@ trait INxAppProperties extends StObject {
 }
 object INxAppProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qLastReloadTime: String,
     qMigrationHash: String,
     qSavedInProductVersion: String,
@@ -52,22 +51,16 @@ object INxAppProperties {
     __obj.asInstanceOf[INxAppProperties]
   }
   
-  @scala.inline
-  implicit class INxAppPropertiesMutableBuilder[Self <: INxAppProperties] (val x: Self) extends AnyVal {
+  extension [Self <: INxAppProperties](x: Self) {
     
-    @scala.inline
-    def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
+    inline def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQMigrationHash(value: String): Self = StObject.set(x, "qMigrationHash", value.asInstanceOf[js.Any])
+    inline def setQMigrationHash(value: String): Self = StObject.set(x, "qMigrationHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSavedInProductVersion(value: String): Self = StObject.set(x, "qSavedInProductVersion", value.asInstanceOf[js.Any])
+    inline def setQSavedInProductVersion(value: String): Self = StObject.set(x, "qSavedInProductVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQThumbnail(value: IStaticContentUrlDef): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
+    inline def setQThumbnail(value: IStaticContentUrlDef): Self = StObject.set(x, "qThumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
+    inline def setQTitle(value: String): Self = StObject.set(x, "qTitle", value.asInstanceOf[js.Any])
   }
 }

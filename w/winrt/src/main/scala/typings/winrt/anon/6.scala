@@ -18,8 +18,7 @@ trait `6` extends StObject {
 }
 object `6` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completed: (/* asyncInfo */ IAsyncOperation[UserIdentity], /* asyncStatus */ AsyncStatus) => Unit,
     getResults: () => UserIdentity
   ): `6` = {
@@ -27,13 +26,10 @@ object `6` {
     __obj.asInstanceOf[`6`]
   }
   
-  @scala.inline
-  implicit class `6MutableBuilder`[Self <: `6`] (val x: Self) extends AnyVal {
+  extension [Self <: `6`](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: (/* asyncInfo */ IAsyncOperation[UserIdentity], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
+    inline def setCompleted(value: (/* asyncInfo */ IAsyncOperation[UserIdentity], /* asyncStatus */ AsyncStatus) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetResults(value: () => UserIdentity): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => UserIdentity): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
   }
 }

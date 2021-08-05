@@ -14,7 +14,7 @@ object orderedListMod {
     
     def add(elem: T): this.type = js.native
     
-    var comparer: js.Any = js.native
+    /* private */ var comparer: js.Any = js.native
     
     def findElement(elem: T): T | Null = js.native
     

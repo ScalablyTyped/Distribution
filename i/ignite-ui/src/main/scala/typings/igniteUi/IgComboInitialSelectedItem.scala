@@ -26,25 +26,19 @@ trait IgComboInitialSelectedItem
 }
 object IgComboInitialSelectedItem {
   
-  @scala.inline
-  def apply(): IgComboInitialSelectedItem = {
+  inline def apply(): IgComboInitialSelectedItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgComboInitialSelectedItem]
   }
   
-  @scala.inline
-  implicit class IgComboInitialSelectedItemMutableBuilder[Self <: IgComboInitialSelectedItem] (val x: Self) extends AnyVal {
+  extension [Self <: IgComboInitialSelectedItem](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

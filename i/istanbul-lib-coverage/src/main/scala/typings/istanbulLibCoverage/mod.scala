@@ -121,30 +121,20 @@ object mod {
     @JSImport("istanbul-lib-coverage", "classes.FileCoverage")
     @js.native
     def FileCoverage: typings.istanbulLibCoverage.mod.FileCoverage = js.native
-    @scala.inline
-    def FileCoverage_=(x: FileCoverage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileCoverage")(x.asInstanceOf[js.Any])
+    inline def FileCoverage_=(x: FileCoverage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FileCoverage")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createCoverageMap(): CoverageMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageMap")().asInstanceOf[CoverageMap]
-  @scala.inline
-  def createCoverageMap(data: CoverageMap): CoverageMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageMap")(data.asInstanceOf[js.Any]).asInstanceOf[CoverageMap]
-  @scala.inline
-  def createCoverageMap(data: CoverageMapData): CoverageMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageMap")(data.asInstanceOf[js.Any]).asInstanceOf[CoverageMap]
+  inline def createCoverageMap(): CoverageMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageMap")().asInstanceOf[CoverageMap]
+  inline def createCoverageMap(data: CoverageMap): CoverageMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageMap")(data.asInstanceOf[js.Any]).asInstanceOf[CoverageMap]
+  inline def createCoverageMap(data: CoverageMapData): CoverageMap = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageMap")(data.asInstanceOf[js.Any]).asInstanceOf[CoverageMap]
   
-  @scala.inline
-  def createCoverageSummary(): CoverageSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageSummary")().asInstanceOf[CoverageSummary]
-  @scala.inline
-  def createCoverageSummary(obj: CoverageSummary): CoverageSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageSummary")(obj.asInstanceOf[js.Any]).asInstanceOf[CoverageSummary]
-  @scala.inline
-  def createCoverageSummary(obj: CoverageSummaryData): CoverageSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageSummary")(obj.asInstanceOf[js.Any]).asInstanceOf[CoverageSummary]
+  inline def createCoverageSummary(): CoverageSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageSummary")().asInstanceOf[CoverageSummary]
+  inline def createCoverageSummary(obj: CoverageSummary): CoverageSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageSummary")(obj.asInstanceOf[js.Any]).asInstanceOf[CoverageSummary]
+  inline def createCoverageSummary(obj: CoverageSummaryData): CoverageSummary = ^.asInstanceOf[js.Dynamic].applyDynamic("createCoverageSummary")(obj.asInstanceOf[js.Any]).asInstanceOf[CoverageSummary]
   
-  @scala.inline
-  def createFileCoverage(pathOrObject: String): FileCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileCoverage")(pathOrObject.asInstanceOf[js.Any]).asInstanceOf[FileCoverage]
-  @scala.inline
-  def createFileCoverage(pathOrObject: FileCoverage): FileCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileCoverage")(pathOrObject.asInstanceOf[js.Any]).asInstanceOf[FileCoverage]
-  @scala.inline
-  def createFileCoverage(pathOrObject: FileCoverageData): FileCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileCoverage")(pathOrObject.asInstanceOf[js.Any]).asInstanceOf[FileCoverage]
+  inline def createFileCoverage(pathOrObject: String): FileCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileCoverage")(pathOrObject.asInstanceOf[js.Any]).asInstanceOf[FileCoverage]
+  inline def createFileCoverage(pathOrObject: FileCoverage): FileCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileCoverage")(pathOrObject.asInstanceOf[js.Any]).asInstanceOf[FileCoverage]
+  inline def createFileCoverage(pathOrObject: FileCoverageData): FileCoverage = ^.asInstanceOf[js.Dynamic].applyDynamic("createFileCoverage")(pathOrObject.asInstanceOf[js.Any]).asInstanceOf[FileCoverage]
   
   trait BranchMapping extends StObject {
     
@@ -158,30 +148,23 @@ object mod {
   }
   object BranchMapping {
     
-    @scala.inline
-    def apply(line: Double, loc: Range, locations: js.Array[Range], `type`: String): BranchMapping = {
+    inline def apply(line: Double, loc: Range, locations: js.Array[Range], `type`: String): BranchMapping = {
       val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[BranchMapping]
     }
     
-    @scala.inline
-    implicit class BranchMappingMutableBuilder[Self <: BranchMapping] (val x: Self) extends AnyVal {
+    extension [Self <: BranchMapping](x: Self) {
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc(value: Range): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+      inline def setLoc(value: Range): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocations(value: js.Array[Range]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Range]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsVarargs(value: Range*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Range*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,23 +178,18 @@ object mod {
   }
   object Coverage {
     
-    @scala.inline
-    def apply(coverage: Double, covered: Double, total: Double): Coverage = {
+    inline def apply(coverage: Double, covered: Double, total: Double): Coverage = {
       val __obj = js.Dynamic.literal(coverage = coverage.asInstanceOf[js.Any], covered = covered.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Coverage]
     }
     
-    @scala.inline
-    implicit class CoverageMutableBuilder[Self <: Coverage] (val x: Self) extends AnyVal {
+    extension [Self <: Coverage](x: Self) {
       
-      @scala.inline
-      def setCoverage(value: Double): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
+      inline def setCoverage(value: Double): Self = StObject.set(x, "coverage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCovered(value: Double): Self = StObject.set(x, "covered", value.asInstanceOf[js.Any])
+      inline def setCovered(value: Double): Self = StObject.set(x, "covered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,26 +207,20 @@ object mod {
   }
   object CoverageSummaryData {
     
-    @scala.inline
-    def apply(branches: Totals, functions: Totals, lines: Totals, statements: Totals): CoverageSummaryData = {
+    inline def apply(branches: Totals, functions: Totals, lines: Totals, statements: Totals): CoverageSummaryData = {
       val __obj = js.Dynamic.literal(branches = branches.asInstanceOf[js.Any], functions = functions.asInstanceOf[js.Any], lines = lines.asInstanceOf[js.Any], statements = statements.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoverageSummaryData]
     }
     
-    @scala.inline
-    implicit class CoverageSummaryDataMutableBuilder[Self <: CoverageSummaryData] (val x: Self) extends AnyVal {
+    extension [Self <: CoverageSummaryData](x: Self) {
       
-      @scala.inline
-      def setBranches(value: Totals): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
+      inline def setBranches(value: Totals): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctions(value: Totals): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      inline def setFunctions(value: Totals): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLines(value: Totals): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: Totals): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatements(value: Totals): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+      inline def setStatements(value: Totals): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,8 +242,7 @@ object mod {
   }
   object FileCoverageData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       b: StringDictionary[js.Array[Double]],
       branchMap: StringDictionary[BranchMapping],
       f: StringDictionary[Double],
@@ -284,29 +255,21 @@ object mod {
       __obj.asInstanceOf[FileCoverageData]
     }
     
-    @scala.inline
-    implicit class FileCoverageDataMutableBuilder[Self <: FileCoverageData] (val x: Self) extends AnyVal {
+    extension [Self <: FileCoverageData](x: Self) {
       
-      @scala.inline
-      def setB(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: StringDictionary[js.Array[Double]]): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchMap(value: StringDictionary[BranchMapping]): Self = StObject.set(x, "branchMap", value.asInstanceOf[js.Any])
+      inline def setBranchMap(value: StringDictionary[BranchMapping]): Self = StObject.set(x, "branchMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF(value: StringDictionary[Double]): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+      inline def setF(value: StringDictionary[Double]): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFnMap(value: StringDictionary[FunctionMapping]): Self = StObject.set(x, "fnMap", value.asInstanceOf[js.Any])
+      inline def setFnMap(value: StringDictionary[FunctionMapping]): Self = StObject.set(x, "fnMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: StringDictionary[Double]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: StringDictionary[Double]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatementMap(value: StringDictionary[Range]): Self = StObject.set(x, "statementMap", value.asInstanceOf[js.Any])
+      inline def setStatementMap(value: StringDictionary[Range]): Self = StObject.set(x, "statementMap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,26 +285,20 @@ object mod {
   }
   object FunctionMapping {
     
-    @scala.inline
-    def apply(decl: Range, line: Double, loc: Range, name: String): FunctionMapping = {
+    inline def apply(decl: Range, line: Double, loc: Range, name: String): FunctionMapping = {
       val __obj = js.Dynamic.literal(decl = decl.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunctionMapping]
     }
     
-    @scala.inline
-    implicit class FunctionMappingMutableBuilder[Self <: FunctionMapping] (val x: Self) extends AnyVal {
+    extension [Self <: FunctionMapping](x: Self) {
       
-      @scala.inline
-      def setDecl(value: Range): Self = StObject.set(x, "decl", value.asInstanceOf[js.Any])
+      inline def setDecl(value: Range): Self = StObject.set(x, "decl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoc(value: Range): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+      inline def setLoc(value: Range): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -353,20 +310,16 @@ object mod {
   }
   object Location {
     
-    @scala.inline
-    def apply(column: Double, line: Double): Location = {
+    inline def apply(column: Double, line: Double): Location = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Location]
     }
     
-    @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+    extension [Self <: Location](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -378,20 +331,16 @@ object mod {
   }
   object Range {
     
-    @scala.inline
-    def apply(end: Location, start: Location): Range = {
+    inline def apply(end: Location, start: Location): Range = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Range]
     }
     
-    @scala.inline
-    implicit class RangeMutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
+    extension [Self <: Range](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -407,26 +356,20 @@ object mod {
   }
   object Totals {
     
-    @scala.inline
-    def apply(covered: Double, pct: Double, skipped: Double, total: Double): Totals = {
+    inline def apply(covered: Double, pct: Double, skipped: Double, total: Double): Totals = {
       val __obj = js.Dynamic.literal(covered = covered.asInstanceOf[js.Any], pct = pct.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Totals]
     }
     
-    @scala.inline
-    implicit class TotalsMutableBuilder[Self <: Totals] (val x: Self) extends AnyVal {
+    extension [Self <: Totals](x: Self) {
       
-      @scala.inline
-      def setCovered(value: Double): Self = StObject.set(x, "covered", value.asInstanceOf[js.Any])
+      inline def setCovered(value: Double): Self = StObject.set(x, "covered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPct(value: Double): Self = StObject.set(x, "pct", value.asInstanceOf[js.Any])
+      inline def setPct(value: Double): Self = StObject.set(x, "pct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipped(value: Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
+      inline def setSkipped(value: Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

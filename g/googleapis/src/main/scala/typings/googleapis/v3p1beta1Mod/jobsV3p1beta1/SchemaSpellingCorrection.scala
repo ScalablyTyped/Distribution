@@ -21,25 +21,19 @@ trait SchemaSpellingCorrection extends StObject {
 }
 object SchemaSpellingCorrection {
   
-  @scala.inline
-  def apply(): SchemaSpellingCorrection = {
+  inline def apply(): SchemaSpellingCorrection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSpellingCorrection]
   }
   
-  @scala.inline
-  implicit class SchemaSpellingCorrectionMutableBuilder[Self <: SchemaSpellingCorrection] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSpellingCorrection](x: Self) {
     
-    @scala.inline
-    def setCorrected(value: Boolean): Self = StObject.set(x, "corrected", value.asInstanceOf[js.Any])
+    inline def setCorrected(value: Boolean): Self = StObject.set(x, "corrected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrectedText(value: String): Self = StObject.set(x, "correctedText", value.asInstanceOf[js.Any])
+    inline def setCorrectedText(value: String): Self = StObject.set(x, "correctedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrectedTextUndefined: Self = StObject.set(x, "correctedText", js.undefined)
+    inline def setCorrectedTextUndefined: Self = StObject.set(x, "correctedText", js.undefined)
     
-    @scala.inline
-    def setCorrectedUndefined: Self = StObject.set(x, "corrected", js.undefined)
+    inline def setCorrectedUndefined: Self = StObject.set(x, "corrected", js.undefined)
   }
 }

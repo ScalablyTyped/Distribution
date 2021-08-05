@@ -12,19 +12,15 @@ trait AstWalkOptions extends StObject {
 }
 object AstWalkOptions {
   
-  @scala.inline
-  def apply(goChildren: Boolean, stopWalking: Boolean): AstWalkOptions = {
+  inline def apply(goChildren: Boolean, stopWalking: Boolean): AstWalkOptions = {
     val __obj = js.Dynamic.literal(goChildren = goChildren.asInstanceOf[js.Any], stopWalking = stopWalking.asInstanceOf[js.Any])
     __obj.asInstanceOf[AstWalkOptions]
   }
   
-  @scala.inline
-  implicit class AstWalkOptionsMutableBuilder[Self <: AstWalkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AstWalkOptions](x: Self) {
     
-    @scala.inline
-    def setGoChildren(value: Boolean): Self = StObject.set(x, "goChildren", value.asInstanceOf[js.Any])
+    inline def setGoChildren(value: Boolean): Self = StObject.set(x, "goChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopWalking(value: Boolean): Self = StObject.set(x, "stopWalking", value.asInstanceOf[js.Any])
+    inline def setStopWalking(value: Boolean): Self = StObject.set(x, "stopWalking", value.asInstanceOf[js.Any])
   }
 }

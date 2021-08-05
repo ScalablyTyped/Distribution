@@ -28,7 +28,7 @@ object xMod {
     
     @JSImport("@pulumi/pulumi/x", "automation.LocalWorkspace")
     @js.native
-    class LocalWorkspace protected ()
+    /* private */ class LocalWorkspace ()
       extends typings.pulumiPulumi.automationMod.LocalWorkspace
     /* static members */
     object LocalWorkspace {
@@ -43,8 +43,7 @@ object xMod {
         *
         * @param opts Options used to configure the Workspace
         */
-      @scala.inline
-      def create(opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.localWorkspaceMod.LocalWorkspace] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.localWorkspaceMod.LocalWorkspace]]
+      inline def create(opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.localWorkspaceMod.LocalWorkspace] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.localWorkspaceMod.LocalWorkspace]]
       
       /**
         * Creates or selects an existing Stack with a LocalWorkspace utilizing the specified inline Pulumi CLI program.
@@ -55,10 +54,8 @@ object xMod {
         * @param args A set of arguments to intialize a Stack with and inline `PulumiFn` program that runs in process.
         * @param opts Additional customizations to be applied to the Workspace.
         */
-      @scala.inline
-      def createOrSelectStack(args: InlineProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
-      @scala.inline
-      def createOrSelectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def createOrSelectStack(args: InlineProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def createOrSelectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
       /**
         * Creates or selects an existing Stack with a LocalWorkspace utilizing the specified inline (in process) Pulumi CLI program.
         * This program is fully debuggable and runs in process. If no Project option is specified, default project settings
@@ -68,10 +65,8 @@ object xMod {
         * @param args A set of arguments to intialize a Stack with a pre-configured Pulumi CLI program that already exists on disk.
         * @param opts Additional customizations to be applied to the Workspace.
         */
-      @scala.inline
-      def createOrSelectStack(args: LocalProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
-      @scala.inline
-      def createOrSelectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def createOrSelectStack(args: LocalProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def createOrSelectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
       
       /**
         * Creates a Stack with a LocalWorkspace utilizing the specified inline (in process) Pulumi program.
@@ -82,10 +77,8 @@ object xMod {
         * @param args A set of arguments to intialize a Stack with and inline `PulumiFn` program that runs in process.
         * @param opts Additional customizations to be applied to the Workspace.
         */
-      @scala.inline
-      def createStack(args: InlineProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
-      @scala.inline
-      def createStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def createStack(args: InlineProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def createStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
       /**
         * Creates a Stack with a LocalWorkspace utilizing the local Pulumi CLI program from the specified workDir.
         * This is a way to create drivers on top of pre-existing Pulumi programs. This Workspace will pick up
@@ -94,22 +87,18 @@ object xMod {
         * @param args A set of arguments to intialize a Stack with a pre-configured Pulumi CLI program that already exists on disk.
         * @param opts Additional customizations to be applied to the Workspace.
         */
-      @scala.inline
-      def createStack(args: LocalProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
-      @scala.inline
-      def createStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def createStack(args: LocalProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def createStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
       
       @JSImport("@pulumi/pulumi/x", "automation.LocalWorkspace.inlineSourceStackHelper")
       @js.native
       def inlineSourceStackHelper: js.Any = js.native
-      @scala.inline
-      def inlineSourceStackHelper_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineSourceStackHelper")(x.asInstanceOf[js.Any])
+      inline def inlineSourceStackHelper_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineSourceStackHelper")(x.asInstanceOf[js.Any])
       
       @JSImport("@pulumi/pulumi/x", "automation.LocalWorkspace.localSourceStackHelper")
       @js.native
       def localSourceStackHelper: js.Any = js.native
-      @scala.inline
-      def localSourceStackHelper_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localSourceStackHelper")(x.asInstanceOf[js.Any])
+      inline def localSourceStackHelper_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localSourceStackHelper")(x.asInstanceOf[js.Any])
       
       /**
         * Selects an existing Stack with a LocalWorkspace utilizing the specified inline (in process) Pulumi program.
@@ -120,10 +109,8 @@ object xMod {
         * @param args A set of arguments to intialize a Stack with and inline `PulumiFn` program that runs in process.
         * @param opts Additional customizations to be applied to the Workspace.
         */
-      @scala.inline
-      def selectStack(args: InlineProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
-      @scala.inline
-      def selectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def selectStack(args: InlineProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def selectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
       /**
         * Selects a Stack with a LocalWorkspace utilizing the local Pulumi CLI program from the specified workDir.
         * This is a way to create drivers on top of pre-existing Pulumi programs. This Workspace will pick up
@@ -132,15 +119,13 @@ object xMod {
         * @param args A set of arguments to intialize a Stack with a pre-configured Pulumi CLI program that already exists on disk.
         * @param opts Additional customizations to be applied to the Workspace.
         */
-      @scala.inline
-      def selectStack(args: LocalProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
-      @scala.inline
-      def selectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def selectStack(args: LocalProgramArgs): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def selectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
     }
     
     @JSImport("@pulumi/pulumi/x", "automation.Stack")
     @js.native
-    class Stack protected ()
+    /* private */ class Stack ()
       extends typings.pulumiPulumi.automationMod.Stack
     /* static members */
     object Stack {
@@ -156,8 +141,7 @@ object xMod {
         * @param name The name identifying the Stack.
         * @param workspace The Workspace the Stack was created from.
         */
-      @scala.inline
-      def create(name: String, workspace: Workspace): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def create(name: String, workspace: Workspace): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
       
       /**
         * Tries to create a new stack using the given workspace and
@@ -168,8 +152,7 @@ object xMod {
         * @param name The name identifying the Stack.
         * @param workspace The Workspace the Stack was created from.
         */
-      @scala.inline
-      def createOrSelect(name: String, workspace: Workspace): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelect")(name.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def createOrSelect(name: String, workspace: Workspace): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelect")(name.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
       
       /**
         * Selects stack using the given workspace, and stack name.
@@ -179,8 +162,7 @@ object xMod {
         * @param name The name identifying the Stack.
         * @param workspace The Workspace the Stack was created from.
         */
-      @scala.inline
-      def select(name: String, workspace: Workspace): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
+      inline def select(name: String, workspace: Workspace): js.Promise[typings.pulumiPulumi.automationStackMod.Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(name.asInstanceOf[js.Any], workspace.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.pulumiPulumi.automationStackMod.Stack]]
     }
     
     @JSImport("@pulumi/pulumi/x", "automation.StackAlreadyExistsError")
@@ -193,7 +175,6 @@ object xMod {
     class StackNotFoundError ()
       extends typings.pulumiPulumi.automationMod.StackNotFoundError
     
-    @scala.inline
-    def fullyQualifiedStackName(org_ : String, project: String, stack: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fullyQualifiedStackName")(org_.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def fullyQualifiedStackName(org_ : String, project: String, stack: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fullyQualifiedStackName")(org_.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

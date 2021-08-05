@@ -9,15 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(str: String, regexp: String): IterableIterator[RegExpMatchArray] = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[RegExpMatchArray]]
-  @scala.inline
-  def apply(str: String, regexp: RegExp): IterableIterator[RegExpMatchArray] = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[RegExpMatchArray]]
+  inline def apply(str: String, regexp: String): IterableIterator[RegExpMatchArray] = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[RegExpMatchArray]]
+  inline def apply(str: String, regexp: RegExp): IterableIterator[RegExpMatchArray] = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[RegExpMatchArray]]
   
   @JSImport("string.prototype.matchall", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def shim(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shim")().asInstanceOf[Unit]
+  inline def shim(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shim")().asInstanceOf[Unit]
 }

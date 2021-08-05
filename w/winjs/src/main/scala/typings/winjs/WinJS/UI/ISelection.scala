@@ -75,8 +75,7 @@ trait ISelection[T] extends StObject {
 }
 object ISelection {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     add: js.Any => Promise[js.Any],
     clear: () => Promise[js.Any],
     count: () => Double,
@@ -92,37 +91,26 @@ object ISelection {
     __obj.asInstanceOf[ISelection[T]]
   }
   
-  @scala.inline
-  implicit class ISelectionMutableBuilder[Self <: ISelection[?], T] (val x: Self & ISelection[T]) extends AnyVal {
+  extension [Self <: ISelection[?], T](x: Self & ISelection[T]) {
     
-    @scala.inline
-    def setAdd(value: js.Any => Promise[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: js.Any => Promise[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Promise[js.Any]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Promise[js.Any]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+    inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndices(value: () => js.Array[Double]): Self = StObject.set(x, "getIndices", js.Any.fromFunction0(value))
+    inline def setGetIndices(value: () => js.Array[Double]): Self = StObject.set(x, "getIndices", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItems(value: () => Promise[js.Array[IItem[T]]]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+    inline def setGetItems(value: () => Promise[js.Array[IItem[T]]]): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRanges(value: () => js.Array[ISelectionRange]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
+    inline def setGetRanges(value: () => js.Array[ISelectionRange]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEverything(value: () => Boolean): Self = StObject.set(x, "isEverything", js.Any.fromFunction0(value))
+    inline def setIsEverything(value: () => Boolean): Self = StObject.set(x, "isEverything", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: js.Any => Promise[js.Any]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => Promise[js.Any]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectAll(value: () => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction0(value))
+    inline def setSelectAll(value: () => Unit): Self = StObject.set(x, "selectAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: js.Any => Promise[js.Any]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: js.Any => Promise[js.Any]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

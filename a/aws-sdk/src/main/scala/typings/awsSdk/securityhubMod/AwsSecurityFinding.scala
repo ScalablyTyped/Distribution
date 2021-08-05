@@ -178,8 +178,7 @@ trait AwsSecurityFinding extends StObject {
 }
 object AwsSecurityFinding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AwsAccountId: NonEmptyString,
     CreatedAt: NonEmptyString,
     Description: NonEmptyString,
@@ -197,196 +196,132 @@ object AwsSecurityFinding {
     __obj.asInstanceOf[AwsSecurityFinding]
   }
   
-  @scala.inline
-  implicit class AwsSecurityFindingMutableBuilder[Self <: AwsSecurityFinding] (val x: Self) extends AnyVal {
+  extension [Self <: AwsSecurityFinding](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: NonEmptyString): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: NonEmptyString): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
+    inline def setCompliance(value: Compliance): Self = StObject.set(x, "Compliance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceUndefined: Self = StObject.set(x, "Compliance", js.undefined)
+    inline def setComplianceUndefined: Self = StObject.set(x, "Compliance", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Integer): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Integer): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: NonEmptyString): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: NonEmptyString): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriticality(value: Integer): Self = StObject.set(x, "Criticality", value.asInstanceOf[js.Any])
+    inline def setCriticality(value: Integer): Self = StObject.set(x, "Criticality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriticalityUndefined: Self = StObject.set(x, "Criticality", js.undefined)
+    inline def setCriticalityUndefined: Self = StObject.set(x, "Criticality", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstObservedAt(value: NonEmptyString): Self = StObject.set(x, "FirstObservedAt", value.asInstanceOf[js.Any])
+    inline def setFirstObservedAt(value: NonEmptyString): Self = StObject.set(x, "FirstObservedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstObservedAtUndefined: Self = StObject.set(x, "FirstObservedAt", js.undefined)
+    inline def setFirstObservedAtUndefined: Self = StObject.set(x, "FirstObservedAt", js.undefined)
     
-    @scala.inline
-    def setGeneratorId(value: NonEmptyString): Self = StObject.set(x, "GeneratorId", value.asInstanceOf[js.Any])
+    inline def setGeneratorId(value: NonEmptyString): Self = StObject.set(x, "GeneratorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: NonEmptyString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: NonEmptyString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastObservedAt(value: NonEmptyString): Self = StObject.set(x, "LastObservedAt", value.asInstanceOf[js.Any])
+    inline def setLastObservedAt(value: NonEmptyString): Self = StObject.set(x, "LastObservedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastObservedAtUndefined: Self = StObject.set(x, "LastObservedAt", js.undefined)
+    inline def setLastObservedAtUndefined: Self = StObject.set(x, "LastObservedAt", js.undefined)
     
-    @scala.inline
-    def setMalware(value: MalwareList): Self = StObject.set(x, "Malware", value.asInstanceOf[js.Any])
+    inline def setMalware(value: MalwareList): Self = StObject.set(x, "Malware", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMalwareUndefined: Self = StObject.set(x, "Malware", js.undefined)
+    inline def setMalwareUndefined: Self = StObject.set(x, "Malware", js.undefined)
     
-    @scala.inline
-    def setMalwareVarargs(value: Malware*): Self = StObject.set(x, "Malware", js.Array(value :_*))
+    inline def setMalwareVarargs(value: Malware*): Self = StObject.set(x, "Malware", js.Array(value :_*))
     
-    @scala.inline
-    def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: Network): Self = StObject.set(x, "Network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkPath(value: NetworkPathList): Self = StObject.set(x, "NetworkPath", value.asInstanceOf[js.Any])
+    inline def setNetworkPath(value: NetworkPathList): Self = StObject.set(x, "NetworkPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkPathUndefined: Self = StObject.set(x, "NetworkPath", js.undefined)
+    inline def setNetworkPathUndefined: Self = StObject.set(x, "NetworkPath", js.undefined)
     
-    @scala.inline
-    def setNetworkPathVarargs(value: NetworkPathComponent*): Self = StObject.set(x, "NetworkPath", js.Array(value :_*))
+    inline def setNetworkPathVarargs(value: NetworkPathComponent*): Self = StObject.set(x, "NetworkPath", js.Array(value :_*))
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "Network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "Network", js.undefined)
     
-    @scala.inline
-    def setNote(value: Note): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
+    inline def setNote(value: Note): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "Note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "Note", js.undefined)
     
-    @scala.inline
-    def setPatchSummary(value: PatchSummary): Self = StObject.set(x, "PatchSummary", value.asInstanceOf[js.Any])
+    inline def setPatchSummary(value: PatchSummary): Self = StObject.set(x, "PatchSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchSummaryUndefined: Self = StObject.set(x, "PatchSummary", js.undefined)
+    inline def setPatchSummaryUndefined: Self = StObject.set(x, "PatchSummary", js.undefined)
     
-    @scala.inline
-    def setProcess(value: ProcessDetails): Self = StObject.set(x, "Process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: ProcessDetails): Self = StObject.set(x, "Process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessUndefined: Self = StObject.set(x, "Process", js.undefined)
+    inline def setProcessUndefined: Self = StObject.set(x, "Process", js.undefined)
     
-    @scala.inline
-    def setProductArn(value: NonEmptyString): Self = StObject.set(x, "ProductArn", value.asInstanceOf[js.Any])
+    inline def setProductArn(value: NonEmptyString): Self = StObject.set(x, "ProductArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductFields(value: FieldMap): Self = StObject.set(x, "ProductFields", value.asInstanceOf[js.Any])
+    inline def setProductFields(value: FieldMap): Self = StObject.set(x, "ProductFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductFieldsUndefined: Self = StObject.set(x, "ProductFields", js.undefined)
+    inline def setProductFieldsUndefined: Self = StObject.set(x, "ProductFields", js.undefined)
     
-    @scala.inline
-    def setRecordState(value: RecordState): Self = StObject.set(x, "RecordState", value.asInstanceOf[js.Any])
+    inline def setRecordState(value: RecordState): Self = StObject.set(x, "RecordState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordStateUndefined: Self = StObject.set(x, "RecordState", js.undefined)
+    inline def setRecordStateUndefined: Self = StObject.set(x, "RecordState", js.undefined)
     
-    @scala.inline
-    def setRelatedFindings(value: RelatedFindingList): Self = StObject.set(x, "RelatedFindings", value.asInstanceOf[js.Any])
+    inline def setRelatedFindings(value: RelatedFindingList): Self = StObject.set(x, "RelatedFindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedFindingsUndefined: Self = StObject.set(x, "RelatedFindings", js.undefined)
+    inline def setRelatedFindingsUndefined: Self = StObject.set(x, "RelatedFindings", js.undefined)
     
-    @scala.inline
-    def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value :_*))
+    inline def setRelatedFindingsVarargs(value: RelatedFinding*): Self = StObject.set(x, "RelatedFindings", js.Array(value :_*))
     
-    @scala.inline
-    def setRemediation(value: Remediation): Self = StObject.set(x, "Remediation", value.asInstanceOf[js.Any])
+    inline def setRemediation(value: Remediation): Self = StObject.set(x, "Remediation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemediationUndefined: Self = StObject.set(x, "Remediation", js.undefined)
+    inline def setRemediationUndefined: Self = StObject.set(x, "Remediation", js.undefined)
     
-    @scala.inline
-    def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: Resource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
-    @scala.inline
-    def setSchemaVersion(value: NonEmptyString): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: NonEmptyString): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverity(value: Severity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: Severity): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrl(value: NonEmptyString): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
+    inline def setSourceUrl(value: NonEmptyString): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
+    inline def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
     
-    @scala.inline
-    def setThreatIntelIndicators(value: ThreatIntelIndicatorList): Self = StObject.set(x, "ThreatIntelIndicators", value.asInstanceOf[js.Any])
+    inline def setThreatIntelIndicators(value: ThreatIntelIndicatorList): Self = StObject.set(x, "ThreatIntelIndicators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatIntelIndicatorsUndefined: Self = StObject.set(x, "ThreatIntelIndicators", js.undefined)
+    inline def setThreatIntelIndicatorsUndefined: Self = StObject.set(x, "ThreatIntelIndicators", js.undefined)
     
-    @scala.inline
-    def setThreatIntelIndicatorsVarargs(value: ThreatIntelIndicator*): Self = StObject.set(x, "ThreatIntelIndicators", js.Array(value :_*))
+    inline def setThreatIntelIndicatorsVarargs(value: ThreatIntelIndicator*): Self = StObject.set(x, "ThreatIntelIndicators", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: NonEmptyString): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: NonEmptyString): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: TypeList): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: TypeList): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value :_*))
+    inline def setTypesVarargs(value: NonEmptyString*): Self = StObject.set(x, "Types", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdatedAt(value: NonEmptyString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: NonEmptyString): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedFields(value: FieldMap): Self = StObject.set(x, "UserDefinedFields", value.asInstanceOf[js.Any])
+    inline def setUserDefinedFields(value: FieldMap): Self = StObject.set(x, "UserDefinedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedFieldsUndefined: Self = StObject.set(x, "UserDefinedFields", js.undefined)
+    inline def setUserDefinedFieldsUndefined: Self = StObject.set(x, "UserDefinedFields", js.undefined)
     
-    @scala.inline
-    def setVerificationState(value: VerificationState): Self = StObject.set(x, "VerificationState", value.asInstanceOf[js.Any])
+    inline def setVerificationState(value: VerificationState): Self = StObject.set(x, "VerificationState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationStateUndefined: Self = StObject.set(x, "VerificationState", js.undefined)
+    inline def setVerificationStateUndefined: Self = StObject.set(x, "VerificationState", js.undefined)
     
-    @scala.inline
-    def setVulnerabilities(value: VulnerabilityList): Self = StObject.set(x, "Vulnerabilities", value.asInstanceOf[js.Any])
+    inline def setVulnerabilities(value: VulnerabilityList): Self = StObject.set(x, "Vulnerabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVulnerabilitiesUndefined: Self = StObject.set(x, "Vulnerabilities", js.undefined)
+    inline def setVulnerabilitiesUndefined: Self = StObject.set(x, "Vulnerabilities", js.undefined)
     
-    @scala.inline
-    def setVulnerabilitiesVarargs(value: Vulnerability*): Self = StObject.set(x, "Vulnerabilities", js.Array(value :_*))
+    inline def setVulnerabilitiesVarargs(value: Vulnerability*): Self = StObject.set(x, "Vulnerabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkflow(value: Workflow): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
+    inline def setWorkflow(value: Workflow): Self = StObject.set(x, "Workflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowState(value: WorkflowState): Self = StObject.set(x, "WorkflowState", value.asInstanceOf[js.Any])
+    inline def setWorkflowState(value: WorkflowState): Self = StObject.set(x, "WorkflowState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowStateUndefined: Self = StObject.set(x, "WorkflowState", js.undefined)
+    inline def setWorkflowStateUndefined: Self = StObject.set(x, "WorkflowState", js.undefined)
     
-    @scala.inline
-    def setWorkflowUndefined: Self = StObject.set(x, "Workflow", js.undefined)
+    inline def setWorkflowUndefined: Self = StObject.set(x, "Workflow", js.undefined)
   }
 }

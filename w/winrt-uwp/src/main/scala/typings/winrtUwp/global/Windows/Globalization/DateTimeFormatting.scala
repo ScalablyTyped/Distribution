@@ -127,32 +127,28 @@ object DateTimeFormatting {
     @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter.longDate")
     @js.native
     def longDate: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter = js.native
-    @scala.inline
-    def longDate_=(x: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longDate")(x.asInstanceOf[js.Any])
+    inline def longDate_=(x: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longDate")(x.asInstanceOf[js.Any])
     
     /** Gets the DateTimeFormatter object that formats times according to the user's choice of long time pattern. */
     /* static member */
     @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter.longTime")
     @js.native
     def longTime: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter = js.native
-    @scala.inline
-    def longTime_=(x: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longTime")(x.asInstanceOf[js.Any])
+    inline def longTime_=(x: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("longTime")(x.asInstanceOf[js.Any])
     
     /** Gets the DateTimeFormatter object that formats dates according to the user's choice of short date pattern. */
     /* static member */
     @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter.shortDate")
     @js.native
     def shortDate: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter = js.native
-    @scala.inline
-    def shortDate_=(x: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortDate")(x.asInstanceOf[js.Any])
+    inline def shortDate_=(x: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortDate")(x.asInstanceOf[js.Any])
     
     /** Gets the DateTimeFormatter object that formats times according to the user's choice of short time pattern. */
     /* static member */
     @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter.shortTime")
     @js.native
     def shortTime: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter = js.native
-    @scala.inline
-    def shortTime_=(x: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortTime")(x.asInstanceOf[js.Any])
+    inline def shortTime_=(x: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortTime")(x.asInstanceOf[js.Any])
   }
   
   /** Specifies the intended format for the day in a DateTimeFormatter object. */

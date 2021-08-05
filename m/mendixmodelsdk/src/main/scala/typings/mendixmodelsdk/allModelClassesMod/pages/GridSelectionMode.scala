@@ -21,22 +21,19 @@ object GridSelectionMode {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.Multi")
   @js.native
   def Multi: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode = js.native
-  @scala.inline
-  def Multi_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Multi")(x.asInstanceOf[js.Any])
+  inline def Multi_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Multi")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.None")
   @js.native
   def None: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode = js.native
-  @scala.inline
-  def None_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  inline def None_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.SimpleMulti")
   @js.native
   def SimpleMulti: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode = js.native
-  @scala.inline
-  def SimpleMulti_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SimpleMulti")(x.asInstanceOf[js.Any])
+  inline def SimpleMulti_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SimpleMulti")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.Single")
@@ -47,9 +44,7 @@ object GridSelectionMode {
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "pages.GridSelectionMode.SingleAndMaintain")
   @js.native
   def SingleAndMaintain: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode = js.native
-  @scala.inline
-  def SingleAndMaintain_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleAndMaintain")(x.asInstanceOf[js.Any])
+  inline def SingleAndMaintain_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleAndMaintain")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def Single_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Single")(x.asInstanceOf[js.Any])
+  inline def Single_=(x: typings.mendixmodelsdk.pagesMod.pages.GridSelectionMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Single")(x.asInstanceOf[js.Any])
 }

@@ -24,7 +24,7 @@ object nativeEventsReceiverMod {
   @js.native
   class NativeEventsReceiver () extends StObject {
     
-    var emitter: js.Any = js.native
+    /* private */ var emitter: js.Any = js.native
     
     def registerAppLaunchedListener(callback: js.Function0[Unit]): EmitterSubscription = js.native
     

@@ -13,16 +13,13 @@ trait DescribeIdentityPoolInput extends StObject {
 }
 object DescribeIdentityPoolInput {
   
-  @scala.inline
-  def apply(IdentityPoolId: IdentityPoolId): DescribeIdentityPoolInput = {
+  inline def apply(IdentityPoolId: IdentityPoolId): DescribeIdentityPoolInput = {
     val __obj = js.Dynamic.literal(IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeIdentityPoolInput]
   }
   
-  @scala.inline
-  implicit class DescribeIdentityPoolInputMutableBuilder[Self <: DescribeIdentityPoolInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIdentityPoolInput](x: Self) {
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }
 }

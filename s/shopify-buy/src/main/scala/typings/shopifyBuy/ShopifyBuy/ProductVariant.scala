@@ -78,8 +78,7 @@ trait ProductVariant
 }
 object ProductVariant {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     available: Boolean,
     checkoutUrl: Double => String,
     compareAtPrice: String,
@@ -98,52 +97,36 @@ object ProductVariant {
     __obj.asInstanceOf[ProductVariant]
   }
   
-  @scala.inline
-  implicit class ProductVariantMutableBuilder[Self <: ProductVariant] (val x: Self) extends AnyVal {
+  extension [Self <: ProductVariant](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckoutUrl(value: Double => String): Self = StObject.set(x, "checkoutUrl", js.Any.fromFunction1(value))
+    inline def setCheckoutUrl(value: Double => String): Self = StObject.set(x, "checkoutUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompareAtPrice(value: String): Self = StObject.set(x, "compareAtPrice", value.asInstanceOf[js.Any])
+    inline def setCompareAtPrice(value: String): Self = StObject.set(x, "compareAtPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
+    inline def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrams(value: Double): Self = StObject.set(x, "grams", value.asInstanceOf[js.Any])
+    inline def setGrams(value: Double): Self = StObject.set(x, "grams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageVariant(value: js.Array[ImageVariant]): Self = StObject.set(x, "imageVariant", value.asInstanceOf[js.Any])
+    inline def setImageVariant(value: js.Array[ImageVariant]): Self = StObject.set(x, "imageVariant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageVariantVarargs(value: ImageVariant*): Self = StObject.set(x, "imageVariant", js.Array(value :_*))
+    inline def setImageVariantVarargs(value: ImageVariant*): Self = StObject.set(x, "imageVariant", js.Array(value :_*))
     
-    @scala.inline
-    def setOptionValues(value: js.Array[OptionValue]): Self = StObject.set(x, "optionValues", value.asInstanceOf[js.Any])
+    inline def setOptionValues(value: js.Array[OptionValue]): Self = StObject.set(x, "optionValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionValuesVarargs(value: OptionValue*): Self = StObject.set(x, "optionValues", js.Array(value :_*))
+    inline def setOptionValuesVarargs(value: OptionValue*): Self = StObject.set(x, "optionValues", js.Array(value :_*))
     
-    @scala.inline
-    def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: String | Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String | Double): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductTitle(value: String): Self = StObject.set(x, "productTitle", value.asInstanceOf[js.Any])
+    inline def setProductTitle(value: String): Self = StObject.set(x, "productTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -36,31 +36,23 @@ trait SchemaEventBatchRecordFailure extends StObject {
 }
 object SchemaEventBatchRecordFailure {
   
-  @scala.inline
-  def apply(): SchemaEventBatchRecordFailure = {
+  inline def apply(): SchemaEventBatchRecordFailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEventBatchRecordFailure]
   }
   
-  @scala.inline
-  implicit class SchemaEventBatchRecordFailureMutableBuilder[Self <: SchemaEventBatchRecordFailure] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEventBatchRecordFailure](x: Self) {
     
-    @scala.inline
-    def setFailureCause(value: String): Self = StObject.set(x, "failureCause", value.asInstanceOf[js.Any])
+    inline def setFailureCause(value: String): Self = StObject.set(x, "failureCause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCauseUndefined: Self = StObject.set(x, "failureCause", js.undefined)
+    inline def setFailureCauseUndefined: Self = StObject.set(x, "failureCause", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRange(value: SchemaEventPeriodRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaEventPeriodRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

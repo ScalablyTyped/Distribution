@@ -17,8 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     handler: js.Function3[
       /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], 
       /* res */ Response[js.Any, Double], 
@@ -26,8 +25,7 @@ object mod {
       js.Promise[Unit]
     ]
   ): RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(handler.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, ParsedQs]]
-  @scala.inline
-  def default(
+  inline def default(
     handler: js.Function4[
       /* err */ js.Any, 
       /* req */ Request[ParamsDictionary, js.Any, js.Any, ParsedQs], 

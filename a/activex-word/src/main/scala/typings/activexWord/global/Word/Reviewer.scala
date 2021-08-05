@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Reviewer")
 @js.native
-class Reviewer protected ()
+/* private */ class Reviewer ()
   extends StObject
      with typings.activexWord.Word.Reviewer {
   
@@ -22,7 +22,7 @@ class Reviewer protected ()
   /* CompleteClass */
   var Visible: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Reviewer_typekey")
   var WordDotReviewer_typekey: typings.activexWord.Word.Reviewer = js.native
 }

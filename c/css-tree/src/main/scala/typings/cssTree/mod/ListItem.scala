@@ -14,28 +14,21 @@ trait ListItem[TData] extends StObject {
 }
 object ListItem {
   
-  @scala.inline
-  def apply[TData](data: TData): ListItem[TData] = {
+  inline def apply[TData](data: TData): ListItem[TData] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], next = null, prev = null)
     __obj.asInstanceOf[ListItem[TData]]
   }
   
-  @scala.inline
-  implicit class ListItemMutableBuilder[Self <: ListItem[?], TData] (val x: Self & ListItem[TData]) extends AnyVal {
+  extension [Self <: ListItem[?], TData](x: Self & ListItem[TData]) {
     
-    @scala.inline
-    def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: ListItem[TData]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: ListItem[TData]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNull: Self = StObject.set(x, "next", null)
+    inline def setNextNull: Self = StObject.set(x, "next", null)
     
-    @scala.inline
-    def setPrev(value: ListItem[TData]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: ListItem[TData]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevNull: Self = StObject.set(x, "prev", null)
+    inline def setPrevNull: Self = StObject.set(x, "prev", null)
   }
 }

@@ -43,25 +43,19 @@ trait NotificationMessageAction extends StObject {
 }
 object NotificationMessageAction {
   
-  @scala.inline
-  def apply(actionText: String, actionType: String | ActionType, commandId: String, contextData: js.Any): NotificationMessageAction = {
+  inline def apply(actionText: String, actionType: String | ActionType, commandId: String, contextData: js.Any): NotificationMessageAction = {
     val __obj = js.Dynamic.literal(actionText = actionText.asInstanceOf[js.Any], actionType = actionType.asInstanceOf[js.Any], commandId = commandId.asInstanceOf[js.Any], contextData = contextData.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationMessageAction]
   }
   
-  @scala.inline
-  implicit class NotificationMessageActionMutableBuilder[Self <: NotificationMessageAction] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationMessageAction](x: Self) {
     
-    @scala.inline
-    def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
+    inline def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionType(value: String | ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: String | ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
+    inline def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextData(value: js.Any): Self = StObject.set(x, "contextData", value.asInstanceOf[js.Any])
+    inline def setContextData(value: js.Any): Self = StObject.set(x, "contextData", value.asInstanceOf[js.Any])
   }
 }

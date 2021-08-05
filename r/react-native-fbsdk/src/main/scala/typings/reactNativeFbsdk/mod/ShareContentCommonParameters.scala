@@ -29,40 +29,29 @@ trait ShareContentCommonParameters extends StObject {
 }
 object ShareContentCommonParameters {
   
-  @scala.inline
-  def apply(): ShareContentCommonParameters = {
+  inline def apply(): ShareContentCommonParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShareContentCommonParameters]
   }
   
-  @scala.inline
-  implicit class ShareContentCommonParametersMutableBuilder[Self <: ShareContentCommonParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ShareContentCommonParameters](x: Self) {
     
-    @scala.inline
-    def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+    inline def setHashtag(value: String): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
+    inline def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
     
-    @scala.inline
-    def setPeopleIds(value: js.Array[String]): Self = StObject.set(x, "peopleIds", value.asInstanceOf[js.Any])
+    inline def setPeopleIds(value: js.Array[String]): Self = StObject.set(x, "peopleIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeopleIdsUndefined: Self = StObject.set(x, "peopleIds", js.undefined)
+    inline def setPeopleIdsUndefined: Self = StObject.set(x, "peopleIds", js.undefined)
     
-    @scala.inline
-    def setPeopleIdsVarargs(value: String*): Self = StObject.set(x, "peopleIds", js.Array(value :_*))
+    inline def setPeopleIdsVarargs(value: String*): Self = StObject.set(x, "peopleIds", js.Array(value :_*))
     
-    @scala.inline
-    def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
+    inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
+    inline def setPlaceIdUndefined: Self = StObject.set(x, "placeId", js.undefined)
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
   }
 }

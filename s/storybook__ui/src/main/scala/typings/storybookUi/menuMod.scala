@@ -28,8 +28,7 @@ object menuMod {
   @js.native
   val MenuButton: StyledComponent[PickPropsWithChildrenClas, MenuButtonProps, Theme] = js.native
   
-  @scala.inline
-  def MenuItemIcon(hasIconImgSrc: ListItemIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItemIcon")(hasIconImgSrc.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def MenuItemIcon(hasIconImgSrc: ListItemIconProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuItemIcon")(hasIconImgSrc.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@storybook/ui/dist/components/sidebar/Menu", "SidebarMenu")
   @js.native
@@ -49,28 +48,22 @@ object menuMod {
   }
   object ListItemIconProps {
     
-    @scala.inline
-    def apply(): ListItemIconProps = {
+    inline def apply(): ListItemIconProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListItemIconProps]
     }
     
-    @scala.inline
-    implicit class ListItemIconPropsMutableBuilder[Self <: ListItemIconProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListItemIconProps](x: Self) {
       
-      @scala.inline
-      def setIcon(
+      inline def setIcon(
         value: /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentProps<react.react.FunctionComponent<@storybook/components.@storybook/components/dist/icon/icon.IconsProps>>['icon'] */ js.Any
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setImgSrc(value: String): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
+      inline def setImgSrc(value: String): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImgSrcUndefined: Self = StObject.set(x, "imgSrc", js.undefined)
+      inline def setImgSrcUndefined: Self = StObject.set(x, "imgSrc", js.undefined)
     }
   }
   

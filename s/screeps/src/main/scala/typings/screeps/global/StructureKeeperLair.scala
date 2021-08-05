@@ -87,6 +87,5 @@ class StructureKeeperLair protected ()
 }
 object StructureKeeperLair {
   
-  @scala.inline
-  def apply: StructureKeeperLairConstructor = js.Dynamic.global.selectDynamic("StructureKeeperLair").asInstanceOf[StructureKeeperLairConstructor]
+  inline def apply: StructureKeeperLairConstructor = js.Dynamic.global.selectDynamic("StructureKeeperLair").asInstanceOf[StructureKeeperLairConstructor]
 }

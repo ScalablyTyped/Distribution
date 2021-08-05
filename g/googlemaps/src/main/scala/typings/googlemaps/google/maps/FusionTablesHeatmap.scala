@@ -11,16 +11,13 @@ trait FusionTablesHeatmap extends StObject {
 }
 object FusionTablesHeatmap {
   
-  @scala.inline
-  def apply(enabled: Boolean): FusionTablesHeatmap = {
+  inline def apply(enabled: Boolean): FusionTablesHeatmap = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[FusionTablesHeatmap]
   }
   
-  @scala.inline
-  implicit class FusionTablesHeatmapMutableBuilder[Self <: FusionTablesHeatmap] (val x: Self) extends AnyVal {
+  extension [Self <: FusionTablesHeatmap](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

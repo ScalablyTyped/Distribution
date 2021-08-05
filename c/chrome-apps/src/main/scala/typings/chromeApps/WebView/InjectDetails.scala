@@ -38,25 +38,19 @@ trait InjectDetails extends StObject {
 }
 object InjectDetails {
   
-  @scala.inline
-  def apply(): InjectDetails = {
+  inline def apply(): InjectDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InjectDetails]
   }
   
-  @scala.inline
-  implicit class InjectDetailsMutableBuilder[Self <: InjectDetails] (val x: Self) extends AnyVal {
+  extension [Self <: InjectDetails](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

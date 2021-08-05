@@ -12,25 +12,19 @@ trait ChainOptions extends StObject {
 }
 object ChainOptions {
   
-  @scala.inline
-  def apply(): ChainOptions = {
+  inline def apply(): ChainOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChainOptions]
   }
   
-  @scala.inline
-  implicit class ChainOptionsMutableBuilder[Self <: ChainOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChainOptions](x: Self) {
     
-    @scala.inline
-    def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
+    inline def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnceNextUndefined: Self = StObject.set(x, "onceNext", js.undefined)
+    inline def setOnceNextUndefined: Self = StObject.set(x, "onceNext", js.undefined)
     
-    @scala.inline
-    def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])
+    inline def setStrictNext(value: Boolean): Self = StObject.set(x, "strictNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictNextUndefined: Self = StObject.set(x, "strictNext", js.undefined)
+    inline def setStrictNextUndefined: Self = StObject.set(x, "strictNext", js.undefined)
   }
 }

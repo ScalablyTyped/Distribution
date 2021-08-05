@@ -18,23 +18,18 @@ trait FindingSource extends StObject {
 }
 object FindingSource {
   
-  @scala.inline
-  def apply(`type`: FindingSourceType): FindingSource = {
+  inline def apply(`type`: FindingSourceType): FindingSource = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindingSource]
   }
   
-  @scala.inline
-  implicit class FindingSourceMutableBuilder[Self <: FindingSource] (val x: Self) extends AnyVal {
+  extension [Self <: FindingSource](x: Self) {
     
-    @scala.inline
-    def setDetail(value: FindingSourceDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: FindingSourceDetail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setType(value: FindingSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FindingSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

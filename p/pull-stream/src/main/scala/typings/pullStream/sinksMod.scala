@@ -12,10 +12,8 @@ object sinksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def collect[T](): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("collect")().asInstanceOf[Sink[T]]
-  @scala.inline
-  def collect[T](cb: js.Function2[/* err */ EndOrError, /* results */ js.Array[T], js.Any]): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("collect")(cb.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
+  inline def collect[T](): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("collect")().asInstanceOf[Sink[T]]
+  inline def collect[T](cb: js.Function2[/* err */ EndOrError, /* results */ js.Array[T], js.Any]): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("collect")(cb.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
   
   @JSImport("pull-stream/sinks", "concat")
   @js.native
@@ -24,27 +22,17 @@ object sinksMod {
     Sink[String]
   ] = js.native
   
-  @scala.inline
-  def drain[T](): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("drain")().asInstanceOf[Sink[T]]
-  @scala.inline
-  def drain[T](op: js.Function1[/* data */ T, js.Any]): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("drain")(op.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
-  @scala.inline
-  def drain[T](op: js.Function1[/* data */ T, js.Any], cb: js.Function1[/* err */ EndOrError, js.Any]): Sink[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("drain")(op.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
-  @scala.inline
-  def drain[T](op: Unit, cb: js.Function1[/* err */ EndOrError, js.Any]): Sink[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("drain")(op.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
+  inline def drain[T](): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("drain")().asInstanceOf[Sink[T]]
+  inline def drain[T](op: js.Function1[/* data */ T, js.Any]): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("drain")(op.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
+  inline def drain[T](op: js.Function1[/* data */ T, js.Any], cb: js.Function1[/* err */ EndOrError, js.Any]): Sink[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("drain")(op.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
+  inline def drain[T](op: Unit, cb: js.Function1[/* err */ EndOrError, js.Any]): Sink[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("drain")(op.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
   
-  @scala.inline
-  def find[T](): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")().asInstanceOf[Sink[T]]
-  @scala.inline
-  def find[T](cb: js.Function2[/* err */ EndOrError, /* results */ js.Array[T], js.Any]): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(cb.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
-  @scala.inline
-  def find[T](test: /* keyof T */ String): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(test.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
-  @scala.inline
-  def find[T](test: /* keyof T */ String, cb: js.Function2[/* err */ EndOrError, /* result */ T, js.Any]): Sink[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(test.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
-  @scala.inline
-  def find[T](test: js.Function1[/* data */ T, Boolean]): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(test.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
-  @scala.inline
-  def find[T](
+  inline def find[T](): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")().asInstanceOf[Sink[T]]
+  inline def find[T](cb: js.Function2[/* err */ EndOrError, /* results */ js.Array[T], js.Any]): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(cb.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
+  inline def find[T](test: /* keyof T */ String): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(test.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
+  inline def find[T](test: /* keyof T */ String, cb: js.Function2[/* err */ EndOrError, /* result */ T, js.Any]): Sink[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(test.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
+  inline def find[T](test: js.Function1[/* data */ T, Boolean]): Sink[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(test.asInstanceOf[js.Any]).asInstanceOf[Sink[T]]
+  inline def find[T](
     test: js.Function1[/* data */ T, Boolean],
     cb: js.Function2[/* err */ EndOrError, /* result */ T, js.Any]
   ): Sink[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(test.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
@@ -57,13 +45,11 @@ object sinksMod {
   @js.native
   val onEnd: js.Function1[/* cb */ js.UndefOr[js.Function1[/* err */ EndOrError, js.Any]], Sink[js.Any]] = js.native
   
-  @scala.inline
-  def reduce[T, U](
+  inline def reduce[T, U](
     reducer: js.Function2[/* acc */ U | Null, /* data */ T, U],
     cb: js.Function2[/* err */ EndOrError, /* result */ U, js.Any]
   ): Sink[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(reducer.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Sink[T]]
-  @scala.inline
-  def reduce[T, U](
+  inline def reduce[T, U](
     reducer: js.Function2[/* acc */ U, /* data */ T, U],
     initial: U,
     cb: js.Function2[/* err */ EndOrError, /* result */ U, js.Any]

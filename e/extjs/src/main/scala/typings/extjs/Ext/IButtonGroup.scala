@@ -22,31 +22,23 @@ trait IButtonGroup
 }
 object IButtonGroup {
   
-  @scala.inline
-  def apply(): IButtonGroup = {
+  inline def apply(): IButtonGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IButtonGroup]
   }
   
-  @scala.inline
-  implicit class IButtonGroupMutableBuilder[Self <: IButtonGroup] (val x: Self) extends AnyVal {
+  extension [Self <: IButtonGroup](x: Self) {
     
-    @scala.inline
-    def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setDefaultButtonUI(value: java.lang.String): Self = StObject.set(x, "defaultButtonUI", value.asInstanceOf[js.Any])
+    inline def setDefaultButtonUI(value: java.lang.String): Self = StObject.set(x, "defaultButtonUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultButtonUIUndefined: Self = StObject.set(x, "defaultButtonUI", js.undefined)
+    inline def setDefaultButtonUIUndefined: Self = StObject.set(x, "defaultButtonUI", js.undefined)
     
-    @scala.inline
-    def setOnBeforeAdd(value: /* component */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeAdd", js.Any.fromFunction1(value))
+    inline def setOnBeforeAdd(value: /* component */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "onBeforeAdd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnBeforeAddUndefined: Self = StObject.set(x, "onBeforeAdd", js.undefined)
+    inline def setOnBeforeAddUndefined: Self = StObject.set(x, "onBeforeAdd", js.undefined)
   }
 }

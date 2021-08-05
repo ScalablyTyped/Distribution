@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaKeysRequirement extends StObject
 object MediaKeysRequirement {
   
-  @scala.inline
-  def `not-allowed`: typings.std.stdStrings.`not-allowed` = "not-allowed".asInstanceOf[typings.std.stdStrings.`not-allowed`]
+  inline def `not-allowed`: typings.std.stdStrings.`not-allowed` = "not-allowed".asInstanceOf[typings.std.stdStrings.`not-allowed`]
   
-  @scala.inline
-  def optional: typings.std.stdStrings.optional = "optional".asInstanceOf[typings.std.stdStrings.optional]
+  inline def optional: typings.std.stdStrings.optional = "optional".asInstanceOf[typings.std.stdStrings.optional]
   
-  @scala.inline
-  def required: required_ = "required".asInstanceOf[required_]
+  inline def required: required_ = "required".asInstanceOf[required_]
 }

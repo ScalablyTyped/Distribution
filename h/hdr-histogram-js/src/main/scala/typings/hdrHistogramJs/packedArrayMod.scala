@@ -19,7 +19,7 @@ object packedArrayMod {
       */
     def add(index: Double, value: Double): Unit = js.native
     
-    var arrayContext: js.Any = js.native
+    /* private */ var arrayContext: js.Any = js.native
     
     /**
       * Clear the array contents
@@ -51,7 +51,7 @@ object packedArrayMod {
       */
     def length(): Double = js.native
     
-    var safeGetPackedIndexgetPackedIndex: js.Any = js.native
+    /* private */ var safeGetPackedIndexgetPackedIndex: js.Any = js.native
     
     /**
       * Set the value at a virtual index in the array

@@ -17,31 +17,23 @@ trait TileLayoutReorderEvent
 }
 object TileLayoutReorderEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TileLayout): TileLayoutReorderEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TileLayout): TileLayoutReorderEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileLayoutReorderEvent]
   }
   
-  @scala.inline
-  implicit class TileLayoutReorderEventMutableBuilder[Self <: TileLayoutReorderEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TileLayoutReorderEvent](x: Self) {
     
-    @scala.inline
-    def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+    inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
+    inline def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
   }
 }

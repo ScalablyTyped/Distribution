@@ -25,16 +25,13 @@ trait MissingPropertiesException
 }
 object MissingPropertiesException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, Properties: SafeArray[String]): MissingPropertiesException = {
+  inline def apply(Context: XInterface, Message: String, Properties: SafeArray[String]): MissingPropertiesException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[MissingPropertiesException]
   }
   
-  @scala.inline
-  implicit class MissingPropertiesExceptionMutableBuilder[Self <: MissingPropertiesException] (val x: Self) extends AnyVal {
+  extension [Self <: MissingPropertiesException](x: Self) {
     
-    @scala.inline
-    def setProperties(value: SafeArray[String]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SafeArray[String]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
   }
 }

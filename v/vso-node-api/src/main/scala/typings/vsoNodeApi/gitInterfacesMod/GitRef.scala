@@ -25,8 +25,7 @@ trait GitRef extends StObject {
 }
 object GitRef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     isLocked: Boolean,
     isLockedBy: IdentityRef,
@@ -40,34 +39,24 @@ object GitRef {
     __obj.asInstanceOf[GitRef]
   }
   
-  @scala.inline
-  implicit class GitRefMutableBuilder[Self <: GitRef] (val x: Self) extends AnyVal {
+  extension [Self <: GitRef](x: Self) {
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLockedBy(value: IdentityRef): Self = StObject.set(x, "isLockedBy", value.asInstanceOf[js.Any])
+    inline def setIsLockedBy(value: IdentityRef): Self = StObject.set(x, "isLockedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeeledObjectId(value: String): Self = StObject.set(x, "peeledObjectId", value.asInstanceOf[js.Any])
+    inline def setPeeledObjectId(value: String): Self = StObject.set(x, "peeledObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatuses(value: js.Array[GitStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: js.Array[GitStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusesVarargs(value: GitStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: GitStatus*): Self = StObject.set(x, "statuses", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -92,8 +92,7 @@ object control {
       * @api
       */
     /* static member */
-    @scala.inline
-    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -294,8 +293,7 @@ object control {
       * @api
       */
     /* static member */
-    @scala.inline
-    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -364,8 +362,7 @@ object control {
       * @api
       */
     /* static member */
-    @scala.inline
-    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -403,8 +400,7 @@ object control {
       * @api
       */
     /* static member */
-    @scala.inline
-    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -467,8 +463,7 @@ object control {
       * @api
       */
     /* static member */
-    @scala.inline
-    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * @api
@@ -489,20 +484,15 @@ object control {
     trait Units extends StObject
     object Units {
       
-      @scala.inline
-      def degrees: typings.openlayers.openlayersStrings.degrees = "degrees".asInstanceOf[typings.openlayers.openlayersStrings.degrees]
+      inline def degrees: typings.openlayers.openlayersStrings.degrees = "degrees".asInstanceOf[typings.openlayers.openlayersStrings.degrees]
       
-      @scala.inline
-      def imperial: typings.openlayers.openlayersStrings.imperial = "imperial".asInstanceOf[typings.openlayers.openlayersStrings.imperial]
+      inline def imperial: typings.openlayers.openlayersStrings.imperial = "imperial".asInstanceOf[typings.openlayers.openlayersStrings.imperial]
       
-      @scala.inline
-      def metric: typings.openlayers.openlayersStrings.metric = "metric".asInstanceOf[typings.openlayers.openlayersStrings.metric]
+      inline def metric: typings.openlayers.openlayersStrings.metric = "metric".asInstanceOf[typings.openlayers.openlayersStrings.metric]
       
-      @scala.inline
-      def nautical: typings.openlayers.openlayersStrings.nautical = "nautical".asInstanceOf[typings.openlayers.openlayersStrings.nautical]
+      inline def nautical: typings.openlayers.openlayersStrings.nautical = "nautical".asInstanceOf[typings.openlayers.openlayersStrings.nautical]
       
-      @scala.inline
-      def us: typings.openlayers.openlayersStrings.us = "us".asInstanceOf[typings.openlayers.openlayersStrings.us]
+      inline def us: typings.openlayers.openlayersStrings.us = "us".asInstanceOf[typings.openlayers.openlayersStrings.us]
     }
   }
   
@@ -569,8 +559,7 @@ object control {
       * @api
       */
     /* static member */
-    @scala.inline
-    def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def render(mapEvent: MapEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(mapEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   /**
@@ -607,8 +596,6 @@ object control {
     * @return Controls.
     * @api stable
     */
-  @scala.inline
-  def defaults(): Collection[Control] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[Collection[Control]]
-  @scala.inline
-  def defaults(opt_options: DefaultsOptions): Collection[Control] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Collection[Control]]
+  inline def defaults(): Collection[Control] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")().asInstanceOf[Collection[Control]]
+  inline def defaults(opt_options: DefaultsOptions): Collection[Control] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(opt_options.asInstanceOf[js.Any]).asInstanceOf[Collection[Control]]
 }

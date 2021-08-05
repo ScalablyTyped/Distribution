@@ -12,8 +12,7 @@ object scopeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(fork: Fork): ScopeConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[ScopeConstructor]
+  inline def default(fork: Fork): ScopeConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[ScopeConstructor]
   
   @js.native
   trait Scope extends StObject {

@@ -17,8 +17,7 @@ trait DisplayBuilder[T]
 }
 object DisplayBuilder {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     build: () => AdWordsOperation[T],
     exclude: () => AdWordsOperation[T],
     withCpc: Double => T,
@@ -28,16 +27,12 @@ object DisplayBuilder {
     __obj.asInstanceOf[DisplayBuilder[T]]
   }
   
-  @scala.inline
-  implicit class DisplayBuilderMutableBuilder[Self <: DisplayBuilder[?], T] (val x: Self & DisplayBuilder[T]) extends AnyVal {
+  extension [Self <: DisplayBuilder[?], T](x: Self & DisplayBuilder[T]) {
     
-    @scala.inline
-    def setExclude(value: () => AdWordsOperation[T]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
+    inline def setExclude(value: () => AdWordsOperation[T]): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWithCpc(value: Double => T): Self = StObject.set(x, "withCpc", js.Any.fromFunction1(value))
+    inline def setWithCpc(value: Double => T): Self = StObject.set(x, "withCpc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithCpm(value: Double => T): Self = StObject.set(x, "withCpm", js.Any.fromFunction1(value))
+    inline def setWithCpm(value: Double => T): Self = StObject.set(x, "withCpm", js.Any.fromFunction1(value))
   }
 }

@@ -20,8 +20,7 @@ trait BaseTime extends StObject {
 }
 object BaseTime {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseTime: Double,
     distance: Double,
     flags: js.Array[String],
@@ -33,28 +32,20 @@ object BaseTime {
     __obj.asInstanceOf[BaseTime]
   }
   
-  @scala.inline
-  implicit class BaseTimeMutableBuilder[Self <: BaseTime] (val x: Self) extends AnyVal {
+  extension [Self <: BaseTime](x: Self) {
     
-    @scala.inline
-    def setBaseTime(value: Double): Self = StObject.set(x, "baseTime", value.asInstanceOf[js.Any])
+    inline def setBaseTime(value: Double): Self = StObject.set(x, "baseTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficTime(value: Double): Self = StObject.set(x, "trafficTime", value.asInstanceOf[js.Any])
+    inline def setTrafficTime(value: Double): Self = StObject.set(x, "trafficTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTravelTime(value: Double): Self = StObject.set(x, "travelTime", value.asInstanceOf[js.Any])
+    inline def setTravelTime(value: Double): Self = StObject.set(x, "travelTime", value.asInstanceOf[js.Any])
   }
 }

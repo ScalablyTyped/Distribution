@@ -58,8 +58,7 @@ trait SidenavOptions extends StObject {
 }
 object SidenavOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     draggable: Boolean,
     edge: left | right,
     inDuration: Double,
@@ -73,31 +72,22 @@ object SidenavOptions {
     __obj.asInstanceOf[SidenavOptions]
   }
   
-  @scala.inline
-  implicit class SidenavOptionsMutableBuilder[Self <: SidenavOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SidenavOptions](x: Self) {
     
-    @scala.inline
-    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdge(value: left | right): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: left | right): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
+    inline def setInDuration(value: Double): Self = StObject.set(x, "inDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnCloseEnd(value: Element => Unit): Self = StObject.set(x, "onCloseEnd", js.Any.fromFunction1(value))
+    inline def setOnCloseEnd(value: Element => Unit): Self = StObject.set(x, "onCloseEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCloseStart(value: Element => Unit): Self = StObject.set(x, "onCloseStart", js.Any.fromFunction1(value))
+    inline def setOnCloseStart(value: Element => Unit): Self = StObject.set(x, "onCloseStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOpenEnd(value: Element => Unit): Self = StObject.set(x, "onOpenEnd", js.Any.fromFunction1(value))
+    inline def setOnOpenEnd(value: Element => Unit): Self = StObject.set(x, "onOpenEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOpenStart(value: Element => Unit): Self = StObject.set(x, "onOpenStart", js.Any.fromFunction1(value))
+    inline def setOnOpenStart(value: Element => Unit): Self = StObject.set(x, "onOpenStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
+    inline def setOutDuration(value: Double): Self = StObject.set(x, "outDuration", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait AgentOptions extends StObject {
 }
 object AgentOptions {
   
-  @scala.inline
-  def apply(http: Agent, https: typings.node.httpsMod.Agent): AgentOptions = {
+  inline def apply(http: Agent, https: typings.node.httpsMod.Agent): AgentOptions = {
     val __obj = js.Dynamic.literal(http = http.asInstanceOf[js.Any], https = https.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentOptions]
   }
   
-  @scala.inline
-  implicit class AgentOptionsMutableBuilder[Self <: AgentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AgentOptions](x: Self) {
     
-    @scala.inline
-    def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttps(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
+    inline def setHttps(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
   }
 }

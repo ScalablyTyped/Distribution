@@ -24,8 +24,7 @@ trait EnvironmentOptions extends StObject {
 }
 object EnvironmentOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoLinkWorkItems: Boolean,
     badgeEnabled: Boolean,
     emailNotificationType: String,
@@ -39,31 +38,22 @@ object EnvironmentOptions {
     __obj.asInstanceOf[EnvironmentOptions]
   }
   
-  @scala.inline
-  implicit class EnvironmentOptionsMutableBuilder[Self <: EnvironmentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentOptions](x: Self) {
     
-    @scala.inline
-    def setAutoLinkWorkItems(value: Boolean): Self = StObject.set(x, "autoLinkWorkItems", value.asInstanceOf[js.Any])
+    inline def setAutoLinkWorkItems(value: Boolean): Self = StObject.set(x, "autoLinkWorkItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeEnabled(value: Boolean): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
+    inline def setBadgeEnabled(value: Boolean): Self = StObject.set(x, "badgeEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailNotificationType(value: String): Self = StObject.set(x, "emailNotificationType", value.asInstanceOf[js.Any])
+    inline def setEmailNotificationType(value: String): Self = StObject.set(x, "emailNotificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailRecipients(value: String): Self = StObject.set(x, "emailRecipients", value.asInstanceOf[js.Any])
+    inline def setEmailRecipients(value: String): Self = StObject.set(x, "emailRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAccessToken(value: Boolean): Self = StObject.set(x, "enableAccessToken", value.asInstanceOf[js.Any])
+    inline def setEnableAccessToken(value: Boolean): Self = StObject.set(x, "enableAccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishDeploymentStatus(value: Boolean): Self = StObject.set(x, "publishDeploymentStatus", value.asInstanceOf[js.Any])
+    inline def setPublishDeploymentStatus(value: Boolean): Self = StObject.set(x, "publishDeploymentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipArtifactsDownload(value: Boolean): Self = StObject.set(x, "skipArtifactsDownload", value.asInstanceOf[js.Any])
+    inline def setSkipArtifactsDownload(value: Boolean): Self = StObject.set(x, "skipArtifactsDownload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
   }
 }

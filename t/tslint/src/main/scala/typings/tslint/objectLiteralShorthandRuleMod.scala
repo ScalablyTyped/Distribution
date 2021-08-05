@@ -17,7 +17,7 @@ object objectLiteralShorthandRuleMod {
   class Rule protected () extends AbstractRule {
     def this(options: IOptions) = this()
     
-    var parseOptions: js.Any = js.native
+    /* private */ var parseOptions: js.Any = js.native
   }
   /* static members */
   object Rule {
@@ -29,35 +29,28 @@ object objectLiteralShorthandRuleMod {
     @JSImport("tslint/lib/rules/objectLiteralShorthandRule", "Rule.LONGHAND_METHOD")
     @js.native
     def LONGHAND_METHOD: String = js.native
-    @scala.inline
-    def LONGHAND_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LONGHAND_METHOD")(x.asInstanceOf[js.Any])
+    inline def LONGHAND_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LONGHAND_METHOD")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/objectLiteralShorthandRule", "Rule.LONGHAND_PROPERTY")
     @js.native
     def LONGHAND_PROPERTY: String = js.native
-    @scala.inline
-    def LONGHAND_PROPERTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LONGHAND_PROPERTY")(x.asInstanceOf[js.Any])
+    inline def LONGHAND_PROPERTY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LONGHAND_PROPERTY")(x.asInstanceOf[js.Any])
     
     @JSImport("tslint/lib/rules/objectLiteralShorthandRule", "Rule.SHORTHAND_ASSIGNMENT")
     @js.native
     def SHORTHAND_ASSIGNMENT: String = js.native
-    @scala.inline
-    def SHORTHAND_ASSIGNMENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORTHAND_ASSIGNMENT")(x.asInstanceOf[js.Any])
+    inline def SHORTHAND_ASSIGNMENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORTHAND_ASSIGNMENT")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDisallowedShorthandErrorMessage(options: Options): (`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | (`Shorthand property and method assignments have been disallowedDot`) = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisallowedShorthandErrorMessage")(options.asInstanceOf[js.Any]).asInstanceOf[(`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | (`Shorthand property and method assignments have been disallowedDot`)]
+    inline def getDisallowedShorthandErrorMessage(options: Options): (`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | (`Shorthand property and method assignments have been disallowedDot`) = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisallowedShorthandErrorMessage")(options.asInstanceOf[js.Any]).asInstanceOf[(`Shorthand property assignments have been disallowedDot`) | (`Shorthand method assignments have been disallowedDot`) | (`Shorthand property and method assignments have been disallowedDot`)]
     
-    @scala.inline
-    def getLonghandMethodErrorMessage(nodeText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLonghandMethodErrorMessage")(nodeText.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getLonghandMethodErrorMessage(nodeText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLonghandMethodErrorMessage")(nodeText.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def getLonghandPropertyErrorMessage(nodeText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLonghandPropertyErrorMessage")(nodeText.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getLonghandPropertyErrorMessage(nodeText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLonghandPropertyErrorMessage")(nodeText.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/objectLiteralShorthandRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   trait Options extends StObject {
@@ -68,20 +61,16 @@ object objectLiteralShorthandRuleMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(enforceShorthandMethods: Boolean, enforceShorthandProperties: Boolean): Options = {
+    inline def apply(enforceShorthandMethods: Boolean, enforceShorthandProperties: Boolean): Options = {
       val __obj = js.Dynamic.literal(enforceShorthandMethods = enforceShorthandMethods.asInstanceOf[js.Any], enforceShorthandProperties = enforceShorthandProperties.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEnforceShorthandMethods(value: Boolean): Self = StObject.set(x, "enforceShorthandMethods", value.asInstanceOf[js.Any])
+      inline def setEnforceShorthandMethods(value: Boolean): Self = StObject.set(x, "enforceShorthandMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceShorthandProperties(value: Boolean): Self = StObject.set(x, "enforceShorthandProperties", value.asInstanceOf[js.Any])
+      inline def setEnforceShorthandProperties(value: Boolean): Self = StObject.set(x, "enforceShorthandProperties", value.asInstanceOf[js.Any])
     }
   }
 }

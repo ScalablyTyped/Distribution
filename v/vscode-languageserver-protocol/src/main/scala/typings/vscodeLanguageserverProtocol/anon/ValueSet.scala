@@ -14,19 +14,15 @@ trait ValueSet extends StObject {
 }
 object ValueSet {
   
-  @scala.inline
-  def apply(valueSet: js.Array[DiagnosticTag]): ValueSet = {
+  inline def apply(valueSet: js.Array[DiagnosticTag]): ValueSet = {
     val __obj = js.Dynamic.literal(valueSet = valueSet.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSet]
   }
   
-  @scala.inline
-  implicit class ValueSetMutableBuilder[Self <: ValueSet] (val x: Self) extends AnyVal {
+  extension [Self <: ValueSet](x: Self) {
     
-    @scala.inline
-    def setValueSet(value: js.Array[DiagnosticTag]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
+    inline def setValueSet(value: js.Array[DiagnosticTag]): Self = StObject.set(x, "valueSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueSetVarargs(value: DiagnosticTag*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
+    inline def setValueSetVarargs(value: DiagnosticTag*): Self = StObject.set(x, "valueSet", js.Array(value :_*))
   }
 }

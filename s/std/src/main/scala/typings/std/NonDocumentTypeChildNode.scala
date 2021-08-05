@@ -18,25 +18,19 @@ trait NonDocumentTypeChildNode extends StObject {
 }
 object NonDocumentTypeChildNode {
   
-  @scala.inline
-  def apply(): NonDocumentTypeChildNode = {
+  inline def apply(): NonDocumentTypeChildNode = {
     val __obj = js.Dynamic.literal(nextElementSibling = null, previousElementSibling = null)
     __obj.asInstanceOf[NonDocumentTypeChildNode]
   }
   
-  @scala.inline
-  implicit class NonDocumentTypeChildNodeMutableBuilder[Self <: NonDocumentTypeChildNode] (val x: Self) extends AnyVal {
+  extension [Self <: NonDocumentTypeChildNode](x: Self) {
     
-    @scala.inline
-    def setNextElementSibling(value: Element): Self = StObject.set(x, "nextElementSibling", value.asInstanceOf[js.Any])
+    inline def setNextElementSibling(value: Element): Self = StObject.set(x, "nextElementSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextElementSiblingNull: Self = StObject.set(x, "nextElementSibling", null)
+    inline def setNextElementSiblingNull: Self = StObject.set(x, "nextElementSibling", null)
     
-    @scala.inline
-    def setPreviousElementSibling(value: Element): Self = StObject.set(x, "previousElementSibling", value.asInstanceOf[js.Any])
+    inline def setPreviousElementSibling(value: Element): Self = StObject.set(x, "previousElementSibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousElementSiblingNull: Self = StObject.set(x, "previousElementSibling", null)
+    inline def setPreviousElementSiblingNull: Self = StObject.set(x, "previousElementSibling", null)
   }
 }

@@ -17,22 +17,17 @@ trait TypeofTriangulator extends StObject {
 }
 object TypeofTriangulator {
   
-  @scala.inline
-  def apply(isConcave: js.Any, positiveArea: js.Any, winding: js.Any): TypeofTriangulator = {
+  inline def apply(isConcave: js.Any, positiveArea: js.Any, winding: js.Any): TypeofTriangulator = {
     val __obj = js.Dynamic.literal(isConcave = isConcave.asInstanceOf[js.Any], positiveArea = positiveArea.asInstanceOf[js.Any], winding = winding.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTriangulator]
   }
   
-  @scala.inline
-  implicit class TypeofTriangulatorMutableBuilder[Self <: TypeofTriangulator] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTriangulator](x: Self) {
     
-    @scala.inline
-    def setIsConcave(value: js.Any): Self = StObject.set(x, "isConcave", value.asInstanceOf[js.Any])
+    inline def setIsConcave(value: js.Any): Self = StObject.set(x, "isConcave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositiveArea(value: js.Any): Self = StObject.set(x, "positiveArea", value.asInstanceOf[js.Any])
+    inline def setPositiveArea(value: js.Any): Self = StObject.set(x, "positiveArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWinding(value: js.Any): Self = StObject.set(x, "winding", value.asInstanceOf[js.Any])
+    inline def setWinding(value: js.Any): Self = StObject.set(x, "winding", value.asInstanceOf[js.Any])
   }
 }

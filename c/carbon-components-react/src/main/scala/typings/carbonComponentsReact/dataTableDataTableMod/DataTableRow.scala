@@ -16,34 +16,25 @@ trait DataTableRow[ID /* <: String */] extends StObject {
 }
 object DataTableRow {
   
-  @scala.inline
-  def apply[ID /* <: String */](id: ID): DataTableRow[ID] = {
+  inline def apply[ID /* <: String */](id: ID): DataTableRow[ID] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataTableRow[ID]]
   }
   
-  @scala.inline
-  implicit class DataTableRowMutableBuilder[Self <: DataTableRow[?], ID /* <: String */] (val x: Self & DataTableRow[ID]) extends AnyVal {
+  extension [Self <: DataTableRow[?], ID /* <: String */](x: Self & DataTableRow[ID]) {
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+    inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+    inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
   }
 }

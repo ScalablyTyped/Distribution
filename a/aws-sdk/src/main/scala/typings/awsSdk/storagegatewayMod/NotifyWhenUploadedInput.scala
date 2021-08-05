@@ -10,16 +10,13 @@ trait NotifyWhenUploadedInput extends StObject {
 }
 object NotifyWhenUploadedInput {
   
-  @scala.inline
-  def apply(FileShareARN: FileShareARN): NotifyWhenUploadedInput = {
+  inline def apply(FileShareARN: FileShareARN): NotifyWhenUploadedInput = {
     val __obj = js.Dynamic.literal(FileShareARN = FileShareARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotifyWhenUploadedInput]
   }
   
-  @scala.inline
-  implicit class NotifyWhenUploadedInputMutableBuilder[Self <: NotifyWhenUploadedInput] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyWhenUploadedInput](x: Self) {
     
-    @scala.inline
-    def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
+    inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
   }
 }

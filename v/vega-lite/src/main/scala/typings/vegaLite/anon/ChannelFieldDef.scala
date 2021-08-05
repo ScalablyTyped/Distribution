@@ -16,8 +16,7 @@ trait ChannelFieldDef extends StObject {
 }
 object ChannelFieldDef {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: NonPositionChannel,
     fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
   ): ChannelFieldDef = {
@@ -25,13 +24,10 @@ object ChannelFieldDef {
     __obj.asInstanceOf[ChannelFieldDef]
   }
   
-  @scala.inline
-  implicit class ChannelFieldDefMutableBuilder[Self <: ChannelFieldDef] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelFieldDef](x: Self) {
     
-    @scala.inline
-    def setChannel(value: NonPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: NonPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
+    inline def setFieldDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
   }
 }

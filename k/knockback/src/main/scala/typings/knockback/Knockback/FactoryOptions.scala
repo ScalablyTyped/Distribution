@@ -10,16 +10,13 @@ trait FactoryOptions extends StObject {
 }
 object FactoryOptions {
   
-  @scala.inline
-  def apply(factories: js.Any): FactoryOptions = {
+  inline def apply(factories: js.Any): FactoryOptions = {
     val __obj = js.Dynamic.literal(factories = factories.asInstanceOf[js.Any])
     __obj.asInstanceOf[FactoryOptions]
   }
   
-  @scala.inline
-  implicit class FactoryOptionsMutableBuilder[Self <: FactoryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FactoryOptions](x: Self) {
     
-    @scala.inline
-    def setFactories(value: js.Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
+    inline def setFactories(value: js.Any): Self = StObject.set(x, "factories", value.asInstanceOf[js.Any])
   }
 }

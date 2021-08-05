@@ -10,14 +10,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](): Lru[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Lru[T]]
-  @scala.inline
-  def default[T](max: Double): Lru[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any]).asInstanceOf[Lru[T]]
-  @scala.inline
-  def default[T](max: Double, ttl: Double): Lru[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any])).asInstanceOf[Lru[T]]
-  @scala.inline
-  def default[T](max: Unit, ttl: Double): Lru[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any])).asInstanceOf[Lru[T]]
+  inline def default[T](): Lru[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Lru[T]]
+  inline def default[T](max: Double): Lru[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any]).asInstanceOf[Lru[T]]
+  inline def default[T](max: Double, ttl: Double): Lru[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any])).asInstanceOf[Lru[T]]
+  inline def default[T](max: Unit, ttl: Double): Lru[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any], ttl.asInstanceOf[js.Any])).asInstanceOf[Lru[T]]
   
   @js.native
   trait Lru[T] extends StObject {

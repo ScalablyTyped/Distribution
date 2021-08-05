@@ -18,8 +18,7 @@ trait Rename extends StObject {
 }
 object Rename {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: scala.Double,
     delete: scala.Double,
     edit: scala.Double,
@@ -30,22 +29,16 @@ object Rename {
     __obj.asInstanceOf[Rename]
   }
   
-  @scala.inline
-  implicit class RenameMutableBuilder[Self <: Rename] (val x: Self) extends AnyVal {
+  extension [Self <: Rename](x: Self) {
     
-    @scala.inline
-    def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit(value: scala.Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: scala.Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRename(value: scala.Double): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+    inline def setRename(value: scala.Double): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
   }
 }

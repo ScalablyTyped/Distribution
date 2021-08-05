@@ -20,29 +20,22 @@ object optionsColumnEnumOptionsMod {
   }
   object ColumnEnumOptions {
     
-    @scala.inline
-    def apply(): ColumnEnumOptions = {
+    inline def apply(): ColumnEnumOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnEnumOptions]
     }
     
-    @scala.inline
-    implicit class ColumnEnumOptionsMutableBuilder[Self <: ColumnEnumOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnEnumOptions](x: Self) {
       
-      @scala.inline
-      def setEnum(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: js.Array[js.Any] | js.Object): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumName(value: String): Self = StObject.set(x, "enumName", value.asInstanceOf[js.Any])
+      inline def setEnumName(value: String): Self = StObject.set(x, "enumName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumNameUndefined: Self = StObject.set(x, "enumName", js.undefined)
+      inline def setEnumNameUndefined: Self = StObject.set(x, "enumName", js.undefined)
       
-      @scala.inline
-      def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+      inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      @scala.inline
-      def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: js.Any*): Self = StObject.set(x, "enum", js.Array(value :_*))
     }
   }
 }

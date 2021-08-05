@@ -15,17 +15,14 @@ object typesErrorDocumentMod {
   }
   object ErrorDocument {
     
-    @scala.inline
-    def apply(Key: String): ErrorDocument = {
+    inline def apply(Key: String): ErrorDocument = {
       val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorDocument]
     }
     
-    @scala.inline
-    implicit class ErrorDocumentMutableBuilder[Self <: ErrorDocument] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorDocument](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     }
   }
   

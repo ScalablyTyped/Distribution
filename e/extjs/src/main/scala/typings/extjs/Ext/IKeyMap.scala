@@ -87,107 +87,75 @@ trait IKeyMap
 }
 object IKeyMap {
   
-  @scala.inline
-  def apply(): IKeyMap = {
+  inline def apply(): IKeyMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IKeyMap]
   }
   
-  @scala.inline
-  implicit class IKeyMapMutableBuilder[Self <: IKeyMap] (val x: Self) extends AnyVal {
+  extension [Self <: IKeyMap](x: Self) {
     
-    @scala.inline
-    def setAddBinding(value: /* binding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addBinding", js.Any.fromFunction1(value))
+    inline def setAddBinding(value: /* binding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "addBinding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddBindingUndefined: Self = StObject.set(x, "addBinding", js.undefined)
+    inline def setAddBindingUndefined: Self = StObject.set(x, "addBinding", js.undefined)
     
-    @scala.inline
-    def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
+    inline def setBinding(value: js.Any): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
+    inline def setBindingUndefined: Self = StObject.set(x, "binding", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: /* removeTarget */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    inline def setDestroy(value: /* removeTarget */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     
-    @scala.inline
-    def setEventName(value: java.lang.String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: java.lang.String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
+    inline def setEventNameUndefined: Self = StObject.set(x, "eventName", js.undefined)
     
-    @scala.inline
-    def setIgnoreInputFields(value: Boolean): Self = StObject.set(x, "ignoreInputFields", value.asInstanceOf[js.Any])
+    inline def setIgnoreInputFields(value: Boolean): Self = StObject.set(x, "ignoreInputFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreInputFieldsUndefined: Self = StObject.set(x, "ignoreInputFields", js.undefined)
+    inline def setIgnoreInputFieldsUndefined: Self = StObject.set(x, "ignoreInputFields", js.undefined)
     
-    @scala.inline
-    def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+    inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+    inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
     
-    @scala.inline
-    def setOn(
+    inline def setOn(
       value: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "on", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
-    @scala.inline
-    def setProcessEvent(value: js.Any): Self = StObject.set(x, "processEvent", value.asInstanceOf[js.Any])
+    inline def setProcessEvent(value: js.Any): Self = StObject.set(x, "processEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessEventScope(value: js.Any): Self = StObject.set(x, "processEventScope", value.asInstanceOf[js.Any])
+    inline def setProcessEventScope(value: js.Any): Self = StObject.set(x, "processEventScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessEventScopeUndefined: Self = StObject.set(x, "processEventScope", js.undefined)
+    inline def setProcessEventScopeUndefined: Self = StObject.set(x, "processEventScope", js.undefined)
     
-    @scala.inline
-    def setProcessEventUndefined: Self = StObject.set(x, "processEvent", js.undefined)
+    inline def setProcessEventUndefined: Self = StObject.set(x, "processEvent", js.undefined)
     
-    @scala.inline
-    def setRemoveBinding(value: /* binding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeBinding", js.Any.fromFunction1(value))
+    inline def setRemoveBinding(value: /* binding */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "removeBinding", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveBindingUndefined: Self = StObject.set(x, "removeBinding", js.undefined)
+    inline def setRemoveBindingUndefined: Self = StObject.set(x, "removeBinding", js.undefined)
     
-    @scala.inline
-    def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
+    inline def setSetDisabled(value: /* disabled */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setDisabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
+    inline def setSetDisabledUndefined: Self = StObject.set(x, "setDisabled", js.undefined)
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUn(
+    inline def setUn(
       value: (/* key */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "un", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUnUndefined: Self = StObject.set(x, "un", js.undefined)
+    inline def setUnUndefined: Self = StObject.set(x, "un", js.undefined)
   }
 }

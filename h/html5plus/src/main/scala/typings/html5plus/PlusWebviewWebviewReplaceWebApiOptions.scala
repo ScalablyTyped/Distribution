@@ -39,19 +39,15 @@ trait PlusWebviewWebviewReplaceWebApiOptions extends StObject {
 }
 object PlusWebviewWebviewReplaceWebApiOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewReplaceWebApiOptions = {
+  inline def apply(): PlusWebviewWebviewReplaceWebApiOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewReplaceWebApiOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewReplaceWebApiOptionsMutableBuilder[Self <: PlusWebviewWebviewReplaceWebApiOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewReplaceWebApiOptions](x: Self) {
     
-    @scala.inline
-    def setGeolocation(value: alldevice | auto | none): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
+    inline def setGeolocation(value: alldevice | auto | none): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeolocationUndefined: Self = StObject.set(x, "geolocation", js.undefined)
+    inline def setGeolocationUndefined: Self = StObject.set(x, "geolocation", js.undefined)
   }
 }

@@ -58,8 +58,7 @@ object mod {
   }
   object ResponseLike {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       body: Buffer,
       headers: StringDictionary[js.UndefOr[String | js.Array[String]]],
       statusCode: Double,
@@ -69,20 +68,15 @@ object mod {
       __obj.asInstanceOf[ResponseLike]
     }
     
-    @scala.inline
-    implicit class ResponseLikeMutableBuilder[Self <: ResponseLike] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseLike](x: Self) {
       
-      @scala.inline
-      def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

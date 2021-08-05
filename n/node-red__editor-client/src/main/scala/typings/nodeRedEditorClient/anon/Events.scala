@@ -15,8 +15,7 @@ trait Events extends StObject {
 }
 object Events {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @node-red/editor-client.@node-red/editor-client.HistoryEvent */ js.Object
     ]
@@ -25,22 +24,18 @@ object Events {
     __obj.asInstanceOf[Events]
   }
   
-  @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+  extension [Self <: Events](x: Self) {
     
-    @scala.inline
-    def setEvents(
+    inline def setEvents(
       value: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @node-red/editor-client.@node-red/editor-client.HistoryEvent */ js.Object
         ]
     ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(
+    inline def setEventsVarargs(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @node-red/editor-client.@node-red/editor-client.HistoryEvent */ js.Object)*
     ): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setT(value: multi): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: multi): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

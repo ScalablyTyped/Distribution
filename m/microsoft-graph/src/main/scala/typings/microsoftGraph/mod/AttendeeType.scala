@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttendeeType extends StObject
 object AttendeeType {
   
-  @scala.inline
-  def optional: typings.microsoftGraph.microsoftGraphStrings.optional = "optional".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.optional]
+  inline def optional: typings.microsoftGraph.microsoftGraphStrings.optional = "optional".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.optional]
   
-  @scala.inline
-  def required: typings.microsoftGraph.microsoftGraphStrings.required = "required".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.required]
+  inline def required: typings.microsoftGraph.microsoftGraphStrings.required = "required".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.required]
   
-  @scala.inline
-  def resource: typings.microsoftGraph.microsoftGraphStrings.resource = "resource".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.resource]
+  inline def resource: typings.microsoftGraph.microsoftGraphStrings.resource = "resource".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.resource]
 }

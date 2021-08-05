@@ -13,22 +13,17 @@ trait GetSearchSuggestionsResponse extends StObject {
 }
 object GetSearchSuggestionsResponse {
   
-  @scala.inline
-  def apply(): GetSearchSuggestionsResponse = {
+  inline def apply(): GetSearchSuggestionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSearchSuggestionsResponse]
   }
   
-  @scala.inline
-  implicit class GetSearchSuggestionsResponseMutableBuilder[Self <: GetSearchSuggestionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSearchSuggestionsResponse](x: Self) {
     
-    @scala.inline
-    def setPropertyNameSuggestions(value: PropertyNameSuggestionList): Self = StObject.set(x, "PropertyNameSuggestions", value.asInstanceOf[js.Any])
+    inline def setPropertyNameSuggestions(value: PropertyNameSuggestionList): Self = StObject.set(x, "PropertyNameSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNameSuggestionsUndefined: Self = StObject.set(x, "PropertyNameSuggestions", js.undefined)
+    inline def setPropertyNameSuggestionsUndefined: Self = StObject.set(x, "PropertyNameSuggestions", js.undefined)
     
-    @scala.inline
-    def setPropertyNameSuggestionsVarargs(value: PropertyNameSuggestion*): Self = StObject.set(x, "PropertyNameSuggestions", js.Array(value :_*))
+    inline def setPropertyNameSuggestionsVarargs(value: PropertyNameSuggestion*): Self = StObject.set(x, "PropertyNameSuggestions", js.Array(value :_*))
   }
 }

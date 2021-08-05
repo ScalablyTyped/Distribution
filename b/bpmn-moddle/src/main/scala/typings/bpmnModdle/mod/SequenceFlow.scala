@@ -18,8 +18,7 @@ trait SequenceFlow
 }
 object SequenceFlow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -35,19 +34,14 @@ object SequenceFlow {
     __obj.asInstanceOf[SequenceFlow]
   }
   
-  @scala.inline
-  implicit class SequenceFlowMutableBuilder[Self <: SequenceFlow] (val x: Self) extends AnyVal {
+  extension [Self <: SequenceFlow](x: Self) {
     
-    @scala.inline
-    def setConditionExpression(value: Expression): Self = StObject.set(x, "conditionExpression", value.asInstanceOf[js.Any])
+    inline def setConditionExpression(value: Expression): Self = StObject.set(x, "conditionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsImmediate(value: Boolean): Self = StObject.set(x, "isImmediate", value.asInstanceOf[js.Any])
+    inline def setIsImmediate(value: Boolean): Self = StObject.set(x, "isImmediate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRef(value: FlowNode): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
+    inline def setSourceRef(value: FlowNode): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRef(value: FlowNode): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+    inline def setTargetRef(value: FlowNode): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait ITreeArgs extends StObject {
 }
 object ITreeArgs {
   
-  @scala.inline
-  def apply(section: String): ITreeArgs = {
+  inline def apply(section: String): ITreeArgs = {
     val __obj = js.Dynamic.literal(section = section.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITreeArgs]
   }
   
-  @scala.inline
-  implicit class ITreeArgsMutableBuilder[Self <: ITreeArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ITreeArgs](x: Self) {
     
-    @scala.inline
-    def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+    inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
+    inline def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
     
-    @scala.inline
-    def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
   }
 }

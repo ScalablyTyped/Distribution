@@ -18,28 +18,21 @@ trait HsmConfigurationMessage extends StObject {
 }
 object HsmConfigurationMessage {
   
-  @scala.inline
-  def apply(): HsmConfigurationMessage = {
+  inline def apply(): HsmConfigurationMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HsmConfigurationMessage]
   }
   
-  @scala.inline
-  implicit class HsmConfigurationMessageMutableBuilder[Self <: HsmConfigurationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: HsmConfigurationMessage](x: Self) {
     
-    @scala.inline
-    def setHsmConfigurations(value: HsmConfigurationList): Self = StObject.set(x, "HsmConfigurations", value.asInstanceOf[js.Any])
+    inline def setHsmConfigurations(value: HsmConfigurationList): Self = StObject.set(x, "HsmConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHsmConfigurationsUndefined: Self = StObject.set(x, "HsmConfigurations", js.undefined)
+    inline def setHsmConfigurationsUndefined: Self = StObject.set(x, "HsmConfigurations", js.undefined)
     
-    @scala.inline
-    def setHsmConfigurationsVarargs(value: HsmConfiguration*): Self = StObject.set(x, "HsmConfigurations", js.Array(value :_*))
+    inline def setHsmConfigurationsVarargs(value: HsmConfiguration*): Self = StObject.set(x, "HsmConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

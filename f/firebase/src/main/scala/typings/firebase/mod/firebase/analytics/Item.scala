@@ -64,169 +64,115 @@ trait Item extends StObject {
 }
 object Item {
   
-  @scala.inline
-  def apply(): Item = {
+  inline def apply(): Item = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Item]
   }
   
-  @scala.inline
-  implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+  extension [Self <: Item](x: Self) {
     
-    @scala.inline
-    def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
+    inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffiliationUndefined: Self = StObject.set(x, "affiliation", js.undefined)
+    inline def setAffiliationUndefined: Self = StObject.set(x, "affiliation", js.undefined)
     
-    @scala.inline
-    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
+    inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
+    inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
+    inline def setCouponUndefined: Self = StObject.set(x, "coupon", js.undefined)
     
-    @scala.inline
-    def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
+    inline def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreative_nameUndefined: Self = StObject.set(x, "creative_name", js.undefined)
+    inline def setCreative_nameUndefined: Self = StObject.set(x, "creative_name", js.undefined)
     
-    @scala.inline
-    def setCreative_slot(value: String): Self = StObject.set(x, "creative_slot", value.asInstanceOf[js.Any])
+    inline def setCreative_slot(value: String): Self = StObject.set(x, "creative_slot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreative_slotUndefined: Self = StObject.set(x, "creative_slot", js.undefined)
+    inline def setCreative_slotUndefined: Self = StObject.set(x, "creative_slot", js.undefined)
     
-    @scala.inline
-    def setDiscount(value: Currency): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
+    inline def setDiscount(value: Currency): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscountUndefined: Self = StObject.set(x, "discount", js.undefined)
+    inline def setDiscountUndefined: Self = StObject.set(x, "discount", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setItem_brand(value: String): Self = StObject.set(x, "item_brand", value.asInstanceOf[js.Any])
+    inline def setItem_brand(value: String): Self = StObject.set(x, "item_brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_brandUndefined: Self = StObject.set(x, "item_brand", js.undefined)
+    inline def setItem_brandUndefined: Self = StObject.set(x, "item_brand", js.undefined)
     
-    @scala.inline
-    def setItem_category(value: String): Self = StObject.set(x, "item_category", value.asInstanceOf[js.Any])
+    inline def setItem_category(value: String): Self = StObject.set(x, "item_category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_category2(value: String): Self = StObject.set(x, "item_category2", value.asInstanceOf[js.Any])
+    inline def setItem_category2(value: String): Self = StObject.set(x, "item_category2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_category2Undefined: Self = StObject.set(x, "item_category2", js.undefined)
+    inline def setItem_category2Undefined: Self = StObject.set(x, "item_category2", js.undefined)
     
-    @scala.inline
-    def setItem_category3(value: String): Self = StObject.set(x, "item_category3", value.asInstanceOf[js.Any])
+    inline def setItem_category3(value: String): Self = StObject.set(x, "item_category3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_category3Undefined: Self = StObject.set(x, "item_category3", js.undefined)
+    inline def setItem_category3Undefined: Self = StObject.set(x, "item_category3", js.undefined)
     
-    @scala.inline
-    def setItem_category4(value: String): Self = StObject.set(x, "item_category4", value.asInstanceOf[js.Any])
+    inline def setItem_category4(value: String): Self = StObject.set(x, "item_category4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_category4Undefined: Self = StObject.set(x, "item_category4", js.undefined)
+    inline def setItem_category4Undefined: Self = StObject.set(x, "item_category4", js.undefined)
     
-    @scala.inline
-    def setItem_category5(value: String): Self = StObject.set(x, "item_category5", value.asInstanceOf[js.Any])
+    inline def setItem_category5(value: String): Self = StObject.set(x, "item_category5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_category5Undefined: Self = StObject.set(x, "item_category5", js.undefined)
+    inline def setItem_category5Undefined: Self = StObject.set(x, "item_category5", js.undefined)
     
-    @scala.inline
-    def setItem_categoryUndefined: Self = StObject.set(x, "item_category", js.undefined)
+    inline def setItem_categoryUndefined: Self = StObject.set(x, "item_category", js.undefined)
     
-    @scala.inline
-    def setItem_id(value: String): Self = StObject.set(x, "item_id", value.asInstanceOf[js.Any])
+    inline def setItem_id(value: String): Self = StObject.set(x, "item_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_idUndefined: Self = StObject.set(x, "item_id", js.undefined)
+    inline def setItem_idUndefined: Self = StObject.set(x, "item_id", js.undefined)
     
-    @scala.inline
-    def setItem_list_id(value: String): Self = StObject.set(x, "item_list_id", value.asInstanceOf[js.Any])
+    inline def setItem_list_id(value: String): Self = StObject.set(x, "item_list_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_list_idUndefined: Self = StObject.set(x, "item_list_id", js.undefined)
+    inline def setItem_list_idUndefined: Self = StObject.set(x, "item_list_id", js.undefined)
     
-    @scala.inline
-    def setItem_list_name(value: String): Self = StObject.set(x, "item_list_name", value.asInstanceOf[js.Any])
+    inline def setItem_list_name(value: String): Self = StObject.set(x, "item_list_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_list_nameUndefined: Self = StObject.set(x, "item_list_name", js.undefined)
+    inline def setItem_list_nameUndefined: Self = StObject.set(x, "item_list_name", js.undefined)
     
-    @scala.inline
-    def setItem_name(value: String): Self = StObject.set(x, "item_name", value.asInstanceOf[js.Any])
+    inline def setItem_name(value: String): Self = StObject.set(x, "item_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_nameUndefined: Self = StObject.set(x, "item_name", js.undefined)
+    inline def setItem_nameUndefined: Self = StObject.set(x, "item_name", js.undefined)
     
-    @scala.inline
-    def setItem_variant(value: String): Self = StObject.set(x, "item_variant", value.asInstanceOf[js.Any])
+    inline def setItem_variant(value: String): Self = StObject.set(x, "item_variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_variantUndefined: Self = StObject.set(x, "item_variant", js.undefined)
+    inline def setItem_variantUndefined: Self = StObject.set(x, "item_variant", js.undefined)
     
-    @scala.inline
-    def setLocation_id(value: String): Self = StObject.set(x, "location_id", value.asInstanceOf[js.Any])
+    inline def setLocation_id(value: String): Self = StObject.set(x, "location_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation_idUndefined: Self = StObject.set(x, "location_id", js.undefined)
+    inline def setLocation_idUndefined: Self = StObject.set(x, "location_id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrice(value: Currency): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    inline def setPrice(value: Currency): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
+    inline def setPriceUndefined: Self = StObject.set(x, "price", js.undefined)
     
-    @scala.inline
-    def setPromotion_id(value: String): Self = StObject.set(x, "promotion_id", value.asInstanceOf[js.Any])
+    inline def setPromotion_id(value: String): Self = StObject.set(x, "promotion_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotion_idUndefined: Self = StObject.set(x, "promotion_id", js.undefined)
+    inline def setPromotion_idUndefined: Self = StObject.set(x, "promotion_id", js.undefined)
     
-    @scala.inline
-    def setPromotion_name(value: String): Self = StObject.set(x, "promotion_name", value.asInstanceOf[js.Any])
+    inline def setPromotion_name(value: String): Self = StObject.set(x, "promotion_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotion_nameUndefined: Self = StObject.set(x, "promotion_name", js.undefined)
+    inline def setPromotion_nameUndefined: Self = StObject.set(x, "promotion_name", js.undefined)
     
-    @scala.inline
-    def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
   }
 }

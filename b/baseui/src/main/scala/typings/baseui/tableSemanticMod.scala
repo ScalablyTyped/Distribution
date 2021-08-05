@@ -125,46 +125,36 @@ object tableSemanticMod {
   }
   object BuilderOverrides {
     
-    @scala.inline
-    def apply(): BuilderOverrides = {
+    inline def apply(): BuilderOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BuilderOverrides]
     }
     
-    @scala.inline
-    implicit class BuilderOverridesMutableBuilder[Self <: BuilderOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: BuilderOverrides](x: Self) {
       
-      @scala.inline
-      def setSortAscIcon(
+      inline def setSortAscIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "SortAscIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAscIconUndefined: Self = StObject.set(x, "SortAscIcon", js.undefined)
+      inline def setSortAscIconUndefined: Self = StObject.set(x, "SortAscIcon", js.undefined)
       
-      @scala.inline
-      def setSortDescIcon(
+      inline def setSortDescIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "SortDescIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortDescIconUndefined: Self = StObject.set(x, "SortDescIcon", js.undefined)
+      inline def setSortDescIconUndefined: Self = StObject.set(x, "SortDescIcon", js.undefined)
       
-      @scala.inline
-      def setSortNoneIcon(
+      inline def setSortNoneIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "SortNoneIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortNoneIconUndefined: Self = StObject.set(x, "SortNoneIcon", js.undefined)
+      inline def setSortNoneIconUndefined: Self = StObject.set(x, "SortNoneIcon", js.undefined)
       
-      @scala.inline
-      def setTableHeadCellSortable(
+      inline def setTableHeadCellSortable(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableHeadCellSortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeadCellSortableUndefined: Self = StObject.set(x, "TableHeadCellSortable", js.undefined)
+      inline def setTableHeadCellSortableUndefined: Self = StObject.set(x, "TableHeadCellSortable", js.undefined)
     }
   }
   
@@ -196,62 +186,48 @@ object tableSemanticMod {
   }
   object ColumnOverrides {
     
-    @scala.inline
-    def apply(): ColumnOverrides = {
+    inline def apply(): ColumnOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnOverrides]
     }
     
-    @scala.inline
-    implicit class ColumnOverridesMutableBuilder[Self <: ColumnOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnOverrides](x: Self) {
       
-      @scala.inline
-      def setSortAscIcon(
+      inline def setSortAscIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "SortAscIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortAscIconUndefined: Self = StObject.set(x, "SortAscIcon", js.undefined)
+      inline def setSortAscIconUndefined: Self = StObject.set(x, "SortAscIcon", js.undefined)
       
-      @scala.inline
-      def setSortDescIcon(
+      inline def setSortDescIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "SortDescIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortDescIconUndefined: Self = StObject.set(x, "SortDescIcon", js.undefined)
+      inline def setSortDescIconUndefined: Self = StObject.set(x, "SortDescIcon", js.undefined)
       
-      @scala.inline
-      def setSortNoneIcon(
+      inline def setSortNoneIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "SortNoneIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortNoneIconUndefined: Self = StObject.set(x, "SortNoneIcon", js.undefined)
+      inline def setSortNoneIconUndefined: Self = StObject.set(x, "SortNoneIcon", js.undefined)
       
-      @scala.inline
-      def setTableBodyCell(
+      inline def setTableBodyCell(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableBodyCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableBodyCellUndefined: Self = StObject.set(x, "TableBodyCell", js.undefined)
+      inline def setTableBodyCellUndefined: Self = StObject.set(x, "TableBodyCell", js.undefined)
       
-      @scala.inline
-      def setTableHeadCell(
+      inline def setTableHeadCell(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableHeadCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeadCellSortable(
+      inline def setTableHeadCellSortable(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableHeadCellSortable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeadCellSortableUndefined: Self = StObject.set(x, "TableHeadCellSortable", js.undefined)
+      inline def setTableHeadCellSortableUndefined: Self = StObject.set(x, "TableHeadCellSortable", js.undefined)
       
-      @scala.inline
-      def setTableHeadCellUndefined: Self = StObject.set(x, "TableHeadCell", js.undefined)
+      inline def setTableHeadCellUndefined: Self = StObject.set(x, "TableHeadCell", js.undefined)
     }
   }
   
@@ -300,86 +276,60 @@ object tableSemanticMod {
   }
   object TableBuilderProps {
     
-    @scala.inline
-    def apply[RowT](data: js.Array[RowT]): TableBuilderProps[RowT] = {
+    inline def apply[RowT](data: js.Array[RowT]): TableBuilderProps[RowT] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableBuilderProps[RowT]]
     }
     
-    @scala.inline
-    implicit class TableBuilderPropsMutableBuilder[Self <: TableBuilderProps[?], RowT] (val x: Self & TableBuilderProps[RowT]) extends AnyVal {
+    extension [Self <: TableBuilderProps[?], RowT](x: Self & TableBuilderProps[RowT]) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[RowT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[RowT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: RowT*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: RowT*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setEmptyMessage(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
+      inline def setEmptyMessage(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyMessageFunction0(value: () => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction0(value))
+      inline def setEmptyMessageFunction0(value: () => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmptyMessageUndefined: Self = StObject.set(x, "emptyMessage", js.undefined)
+      inline def setEmptyMessageUndefined: Self = StObject.set(x, "emptyMessage", js.undefined)
       
-      @scala.inline
-      def setHorizontalScrollWidth(value: String): Self = StObject.set(x, "horizontalScrollWidth", value.asInstanceOf[js.Any])
+      inline def setHorizontalScrollWidth(value: String): Self = StObject.set(x, "horizontalScrollWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalScrollWidthUndefined: Self = StObject.set(x, "horizontalScrollWidth", js.undefined)
+      inline def setHorizontalScrollWidthUndefined: Self = StObject.set(x, "horizontalScrollWidth", js.undefined)
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
+      inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
       
-      @scala.inline
-      def setLoadingMessage(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "loadingMessage", value.asInstanceOf[js.Any])
+      inline def setLoadingMessage(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "loadingMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingMessageFunction0(value: () => ReactNode): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction0(value))
+      inline def setLoadingMessageFunction0(value: () => ReactNode): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
+      inline def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
       
-      @scala.inline
-      def setOnSort(value: /* columnId */ String => Unit): Self = StObject.set(x, "onSort", js.Any.fromFunction1(value))
+      inline def setOnSort(value: /* columnId */ String => Unit): Self = StObject.set(x, "onSort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSortUndefined: Self = StObject.set(x, "onSort", js.undefined)
+      inline def setOnSortUndefined: Self = StObject.set(x, "onSort", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: BuilderOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: BuilderOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSortColumn(value: String): Self = StObject.set(x, "sortColumn", value.asInstanceOf[js.Any])
+      inline def setSortColumn(value: String): Self = StObject.set(x, "sortColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortColumnNull: Self = StObject.set(x, "sortColumn", null)
+      inline def setSortColumnNull: Self = StObject.set(x, "sortColumn", null)
       
-      @scala.inline
-      def setSortColumnUndefined: Self = StObject.set(x, "sortColumn", js.undefined)
+      inline def setSortColumnUndefined: Self = StObject.set(x, "sortColumn", js.undefined)
       
-      @scala.inline
-      def setSortOrder(value: ASC | DESC): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+      inline def setSortOrder(value: ASC | DESC): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortOrderNull: Self = StObject.set(x, "sortOrder", null)
+      inline def setSortOrderNull: Self = StObject.set(x, "sortOrder", null)
       
-      @scala.inline
-      def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+      inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     }
   }
   
@@ -427,94 +377,72 @@ object tableSemanticMod {
   }
   object TableOverrides {
     
-    @scala.inline
-    def apply(): TableOverrides = {
+    inline def apply(): TableOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableOverrides]
     }
     
-    @scala.inline
-    implicit class TableOverridesMutableBuilder[Self <: TableOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: TableOverrides](x: Self) {
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setTable(
+      inline def setTable(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableBody(
+      inline def setTableBody(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableBodyCell(
+      inline def setTableBodyCell(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableBodyCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableBodyCellUndefined: Self = StObject.set(x, "TableBodyCell", js.undefined)
+      inline def setTableBodyCellUndefined: Self = StObject.set(x, "TableBodyCell", js.undefined)
       
-      @scala.inline
-      def setTableBodyRow(
+      inline def setTableBodyRow(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableBodyRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableBodyRowUndefined: Self = StObject.set(x, "TableBodyRow", js.undefined)
+      inline def setTableBodyRowUndefined: Self = StObject.set(x, "TableBodyRow", js.undefined)
       
-      @scala.inline
-      def setTableBodyUndefined: Self = StObject.set(x, "TableBody", js.undefined)
+      inline def setTableBodyUndefined: Self = StObject.set(x, "TableBody", js.undefined)
       
-      @scala.inline
-      def setTableEmptyMessage(
+      inline def setTableEmptyMessage(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableEmptyMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableEmptyMessageUndefined: Self = StObject.set(x, "TableEmptyMessage", js.undefined)
+      inline def setTableEmptyMessageUndefined: Self = StObject.set(x, "TableEmptyMessage", js.undefined)
       
-      @scala.inline
-      def setTableHead(
+      inline def setTableHead(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableHead", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeadCell(
+      inline def setTableHeadCell(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableHeadCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeadCellUndefined: Self = StObject.set(x, "TableHeadCell", js.undefined)
+      inline def setTableHeadCellUndefined: Self = StObject.set(x, "TableHeadCell", js.undefined)
       
-      @scala.inline
-      def setTableHeadRow(
+      inline def setTableHeadRow(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableHeadRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableHeadRowUndefined: Self = StObject.set(x, "TableHeadRow", js.undefined)
+      inline def setTableHeadRowUndefined: Self = StObject.set(x, "TableHeadRow", js.undefined)
       
-      @scala.inline
-      def setTableHeadUndefined: Self = StObject.set(x, "TableHead", js.undefined)
+      inline def setTableHeadUndefined: Self = StObject.set(x, "TableHead", js.undefined)
       
-      @scala.inline
-      def setTableLoadingMessage(
+      inline def setTableLoadingMessage(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "TableLoadingMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableLoadingMessageUndefined: Self = StObject.set(x, "TableLoadingMessage", js.undefined)
+      inline def setTableLoadingMessageUndefined: Self = StObject.set(x, "TableLoadingMessage", js.undefined)
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "Table", js.undefined)
     }
   }
   
@@ -536,62 +464,44 @@ object tableSemanticMod {
   }
   object TableProps {
     
-    @scala.inline
-    def apply(columns: js.Array[ReactNode], data: js.Array[js.Array[ReactNode]]): TableProps = {
+    inline def apply(columns: js.Array[ReactNode], data: js.Array[js.Array[ReactNode]]): TableProps = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableProps]
     }
     
-    @scala.inline
-    implicit class TablePropsMutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
+    extension [Self <: TableProps](x: Self) {
       
-      @scala.inline
-      def setColumns(value: js.Array[ReactNode]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[ReactNode]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: ReactNode*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: ReactNode*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Array[js.Array[ReactNode]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Array[ReactNode]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Array[ReactNode]*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Array[ReactNode]*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setEmptyMessage(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
+      inline def setEmptyMessage(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyMessageFunction0(value: () => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction0(value))
+      inline def setEmptyMessageFunction0(value: () => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmptyMessageUndefined: Self = StObject.set(x, "emptyMessage", js.undefined)
+      inline def setEmptyMessageUndefined: Self = StObject.set(x, "emptyMessage", js.undefined)
       
-      @scala.inline
-      def setHorizontalScrollWidth(value: String): Self = StObject.set(x, "horizontalScrollWidth", value.asInstanceOf[js.Any])
+      inline def setHorizontalScrollWidth(value: String): Self = StObject.set(x, "horizontalScrollWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalScrollWidthUndefined: Self = StObject.set(x, "horizontalScrollWidth", js.undefined)
+      inline def setHorizontalScrollWidthUndefined: Self = StObject.set(x, "horizontalScrollWidth", js.undefined)
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
+      inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
       
-      @scala.inline
-      def setLoadingMessage(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "loadingMessage", value.asInstanceOf[js.Any])
+      inline def setLoadingMessage(value: ReactNode | js.Function0[ReactNode]): Self = StObject.set(x, "loadingMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingMessageFunction0(value: () => ReactNode): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction0(value))
+      inline def setLoadingMessageFunction0(value: () => ReactNode): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
+      inline def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: TableOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: TableOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
 }

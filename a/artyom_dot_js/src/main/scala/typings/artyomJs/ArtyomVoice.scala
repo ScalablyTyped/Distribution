@@ -18,28 +18,21 @@ trait ArtyomVoice extends StObject {
 }
 object ArtyomVoice {
   
-  @scala.inline
-  def apply(default: Boolean, lang: String, localService: Boolean, name: String, voiceURI: String): ArtyomVoice = {
+  inline def apply(default: Boolean, lang: String, localService: Boolean, name: String, voiceURI: String): ArtyomVoice = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any], localService = localService.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], voiceURI = voiceURI.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtyomVoice]
   }
   
-  @scala.inline
-  implicit class ArtyomVoiceMutableBuilder[Self <: ArtyomVoice] (val x: Self) extends AnyVal {
+  extension [Self <: ArtyomVoice](x: Self) {
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalService(value: Boolean): Self = StObject.set(x, "localService", value.asInstanceOf[js.Any])
+    inline def setLocalService(value: Boolean): Self = StObject.set(x, "localService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceURI(value: String): Self = StObject.set(x, "voiceURI", value.asInstanceOf[js.Any])
+    inline def setVoiceURI(value: String): Self = StObject.set(x, "voiceURI", value.asInstanceOf[js.Any])
   }
 }

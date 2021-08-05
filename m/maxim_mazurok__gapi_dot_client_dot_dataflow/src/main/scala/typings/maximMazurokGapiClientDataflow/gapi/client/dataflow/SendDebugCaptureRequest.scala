@@ -20,37 +20,27 @@ trait SendDebugCaptureRequest extends StObject {
 }
 object SendDebugCaptureRequest {
   
-  @scala.inline
-  def apply(): SendDebugCaptureRequest = {
+  inline def apply(): SendDebugCaptureRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendDebugCaptureRequest]
   }
   
-  @scala.inline
-  implicit class SendDebugCaptureRequestMutableBuilder[Self <: SendDebugCaptureRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendDebugCaptureRequest](x: Self) {
     
-    @scala.inline
-    def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
+    inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentIdUndefined: Self = StObject.set(x, "componentId", js.undefined)
+    inline def setComponentIdUndefined: Self = StObject.set(x, "componentId", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: String): Self = StObject.set(x, "workerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "workerId", js.undefined)
   }
 }

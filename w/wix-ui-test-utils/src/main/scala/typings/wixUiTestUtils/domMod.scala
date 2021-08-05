@@ -13,9 +13,7 @@ object domMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def queryHook[E /* <: Element */](baseElement: ParentNode, hook: String): E | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("queryHook")(baseElement.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[E | Null]
+  inline def queryHook[E /* <: Element */](baseElement: ParentNode, hook: String): E | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("queryHook")(baseElement.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[E | Null]
   
-  @scala.inline
-  def queryHookAll[E /* <: Element */](baseElement: ParentNode, hook: String): NodeListOf[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("queryHookAll")(baseElement.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[NodeListOf[E]]
+  inline def queryHookAll[E /* <: Element */](baseElement: ParentNode, hook: String): NodeListOf[E] = (^.asInstanceOf[js.Dynamic].applyDynamic("queryHookAll")(baseElement.asInstanceOf[js.Any], hook.asInstanceOf[js.Any])).asInstanceOf[NodeListOf[E]]
 }

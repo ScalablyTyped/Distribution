@@ -17,25 +17,19 @@ trait AppendObjectResult extends StObject {
 }
 object AppendObjectResult {
   
-  @scala.inline
-  def apply(name: String, nextAppendPosition: String, res: NormalSuccessResponse, url: String): AppendObjectResult = {
+  inline def apply(name: String, nextAppendPosition: String, res: NormalSuccessResponse, url: String): AppendObjectResult = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nextAppendPosition = nextAppendPosition.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppendObjectResult]
   }
   
-  @scala.inline
-  implicit class AppendObjectResultMutableBuilder[Self <: AppendObjectResult] (val x: Self) extends AnyVal {
+  extension [Self <: AppendObjectResult](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextAppendPosition(value: String): Self = StObject.set(x, "nextAppendPosition", value.asInstanceOf[js.Any])
+    inline def setNextAppendPosition(value: String): Self = StObject.set(x, "nextAppendPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -18,37 +18,27 @@ trait MlDeleteExpiredData[T]
 }
 object MlDeleteExpiredData {
   
-  @scala.inline
-  def apply[T](): MlDeleteExpiredData[T] = {
+  inline def apply[T](): MlDeleteExpiredData[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MlDeleteExpiredData[T]]
   }
   
-  @scala.inline
-  implicit class MlDeleteExpiredDataMutableBuilder[Self <: MlDeleteExpiredData[?], T] (val x: Self & MlDeleteExpiredData[T]) extends AnyVal {
+  extension [Self <: MlDeleteExpiredData[?], T](x: Self & MlDeleteExpiredData[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
+    inline def setJob_id(value: String): Self = StObject.set(x, "job_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJob_idUndefined: Self = StObject.set(x, "job_id", js.undefined)
+    inline def setJob_idUndefined: Self = StObject.set(x, "job_id", js.undefined)
     
-    @scala.inline
-    def setRequests_per_second(value: Double): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
+    inline def setRequests_per_second(value: Double): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequests_per_secondUndefined: Self = StObject.set(x, "requests_per_second", js.undefined)
+    inline def setRequests_per_secondUndefined: Self = StObject.set(x, "requests_per_second", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

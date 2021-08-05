@@ -14,31 +14,23 @@ trait WaitUntilOptions extends StObject {
 }
 object WaitUntilOptions {
   
-  @scala.inline
-  def apply(): WaitUntilOptions = {
+  inline def apply(): WaitUntilOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WaitUntilOptions]
   }
   
-  @scala.inline
-  implicit class WaitUntilOptionsMutableBuilder[Self <: WaitUntilOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WaitUntilOptions](x: Self) {
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutMsg(value: String): Self = StObject.set(x, "timeoutMsg", value.asInstanceOf[js.Any])
+    inline def setTimeoutMsg(value: String): Self = StObject.set(x, "timeoutMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutMsgUndefined: Self = StObject.set(x, "timeoutMsg", js.undefined)
+    inline def setTimeoutMsgUndefined: Self = StObject.set(x, "timeoutMsg", js.undefined)
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

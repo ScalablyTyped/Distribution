@@ -18,19 +18,15 @@ trait ServiceAccountCredentials extends StObject {
 }
 object ServiceAccountCredentials {
   
-  @scala.inline
-  def apply(AccountName: AccountName, AccountPassword: AccountPassword): ServiceAccountCredentials = {
+  inline def apply(AccountName: AccountName, AccountPassword: AccountPassword): ServiceAccountCredentials = {
     val __obj = js.Dynamic.literal(AccountName = AccountName.asInstanceOf[js.Any], AccountPassword = AccountPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceAccountCredentials]
   }
   
-  @scala.inline
-  implicit class ServiceAccountCredentialsMutableBuilder[Self <: ServiceAccountCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceAccountCredentials](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountPassword(value: AccountPassword): Self = StObject.set(x, "AccountPassword", value.asInstanceOf[js.Any])
+    inline def setAccountPassword(value: AccountPassword): Self = StObject.set(x, "AccountPassword", value.asInstanceOf[js.Any])
   }
 }

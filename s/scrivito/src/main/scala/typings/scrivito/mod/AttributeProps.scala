@@ -17,40 +17,29 @@ trait AttributeProps extends StObject {
 }
 object AttributeProps {
   
-  @scala.inline
-  def apply(): AttributeProps = {
+  inline def apply(): AttributeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributeProps]
   }
   
-  @scala.inline
-  implicit class AttributePropsMutableBuilder[Self <: AttributeProps] (val x: Self) extends AnyVal {
+  extension [Self <: AttributeProps](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setOptions(value: Toolbar): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Toolbar): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[AttributeValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[AttributeValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: AttributeValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: AttributeValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

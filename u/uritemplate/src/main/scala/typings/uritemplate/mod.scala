@@ -27,8 +27,7 @@ object mod {
     def this(options: UriTemplateErrorOptions) = this()
   }
   
-  @scala.inline
-  def parse(templateText: String): UriTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(templateText.asInstanceOf[js.Any]).asInstanceOf[UriTemplate]
+  inline def parse(templateText: String): UriTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(templateText.asInstanceOf[js.Any]).asInstanceOf[UriTemplate]
   
   trait UriTemplateErrorOptions extends StObject {
     
@@ -40,23 +39,18 @@ object mod {
   }
   object UriTemplateErrorOptions {
     
-    @scala.inline
-    def apply(expressionText: String, message: String, position: Double): UriTemplateErrorOptions = {
+    inline def apply(expressionText: String, message: String, position: Double): UriTemplateErrorOptions = {
       val __obj = js.Dynamic.literal(expressionText = expressionText.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[UriTemplateErrorOptions]
     }
     
-    @scala.inline
-    implicit class UriTemplateErrorOptionsMutableBuilder[Self <: UriTemplateErrorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UriTemplateErrorOptions](x: Self) {
       
-      @scala.inline
-      def setExpressionText(value: String): Self = StObject.set(x, "expressionText", value.asInstanceOf[js.Any])
+      inline def setExpressionText(value: String): Self = StObject.set(x, "expressionText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
 }

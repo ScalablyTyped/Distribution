@@ -24,25 +24,19 @@ trait ChangeNotifications extends StObject {
 }
 object ChangeNotifications {
   
-  @scala.inline
-  def apply(): ChangeNotifications = {
+  inline def apply(): ChangeNotifications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangeNotifications]
   }
   
-  @scala.inline
-  implicit class ChangeNotificationsMutableBuilder[Self <: ChangeNotifications] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeNotifications](x: Self) {
     
-    @scala.inline
-    def setChangeNotifications(value: String | Boolean): Self = StObject.set(x, "changeNotifications", value.asInstanceOf[js.Any])
+    inline def setChangeNotifications(value: String | Boolean): Self = StObject.set(x, "changeNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeNotificationsUndefined: Self = StObject.set(x, "changeNotifications", js.undefined)
+    inline def setChangeNotificationsUndefined: Self = StObject.set(x, "changeNotifications", js.undefined)
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedUndefined: Self = StObject.set(x, "supported", js.undefined)
+    inline def setSupportedUndefined: Self = StObject.set(x, "supported", js.undefined)
   }
 }

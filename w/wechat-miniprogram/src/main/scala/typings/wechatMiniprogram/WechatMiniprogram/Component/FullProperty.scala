@@ -27,18 +27,15 @@ trait FullProperty[T /* <: PropertyType */] extends StObject {
 }
 object FullProperty {
   
-  @scala.inline
-  def apply[T /* <: PropertyType */](`type`: T): FullProperty[T] = {
+  inline def apply[T /* <: PropertyType */](`type`: T): FullProperty[T] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullProperty[T]]
   }
   
-  @scala.inline
-  implicit class FullPropertyMutableBuilder[Self <: FullProperty[?], T /* <: PropertyType */] (val x: Self & FullProperty[T]) extends AnyVal {
+  extension [Self <: FullProperty[?], T /* <: PropertyType */](x: Self & FullProperty[T]) {
     
-    @scala.inline
-    def setObserver(
+    inline def setObserver(
       value: String | (js.Function3[
           /* newVal */ ValueType[T], 
           /* oldVal */ ValueType[T], 
@@ -47,33 +44,24 @@ object FullProperty {
         ])
     ): Self = StObject.set(x, "observer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObserverFunction3(
+    inline def setObserverFunction3(
       value: (/* newVal */ ValueType[T], /* oldVal */ ValueType[T], /* changedPath */ js.Array[String | Double]) => Unit
     ): Self = StObject.set(x, "observer", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
+    inline def setObserverUndefined: Self = StObject.set(x, "observer", js.undefined)
     
-    @scala.inline
-    def setOptionalTypes(value: js.Array[ShortProperty]): Self = StObject.set(x, "optionalTypes", value.asInstanceOf[js.Any])
+    inline def setOptionalTypes(value: js.Array[ShortProperty]): Self = StObject.set(x, "optionalTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalTypesUndefined: Self = StObject.set(x, "optionalTypes", js.undefined)
+    inline def setOptionalTypesUndefined: Self = StObject.set(x, "optionalTypes", js.undefined)
     
-    @scala.inline
-    def setOptionalTypesVarargs(value: ShortProperty*): Self = StObject.set(x, "optionalTypes", js.Array(value :_*))
+    inline def setOptionalTypesVarargs(value: ShortProperty*): Self = StObject.set(x, "optionalTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ValueType[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ValueType[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

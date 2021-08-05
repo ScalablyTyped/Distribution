@@ -27,10 +27,8 @@ object messageQueueMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def spy(spyOrToggle: js.Function1[/* data */ SpyData, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def spy(spyOrToggle: js.Function1[/* data */ SpyData, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /* static member */
-    @scala.inline
-    def spy(spyOrToggle: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def spy(spyOrToggle: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(spyOrToggle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

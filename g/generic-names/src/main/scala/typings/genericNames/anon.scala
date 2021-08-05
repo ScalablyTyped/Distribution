@@ -15,26 +15,20 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
+      inline def setHashPrefix(value: String): Self = StObject.set(x, "hashPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
+      inline def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
     }
   }
 }

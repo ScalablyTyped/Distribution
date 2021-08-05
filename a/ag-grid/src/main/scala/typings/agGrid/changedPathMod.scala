@@ -13,7 +13,7 @@ object changedPathMod {
   class ChangedPath protected () extends StObject {
     def this(keepingColumns: Boolean) = this()
     
-    var active: js.Any = js.native
+    /* private */ var active: js.Any = js.native
     
     def addParentNode(rowNode: RowNode): Unit = js.native
     def addParentNode(rowNode: RowNode, columns: js.Array[Column]): Unit = js.native
@@ -26,11 +26,11 @@ object changedPathMod {
     
     def isInPath(rowNode: RowNode): Boolean = js.native
     
-    var keepingColumns: js.Any = js.native
+    /* private */ var keepingColumns: js.Any = js.native
     
-    var nodeIdsToBoolean: js.Any = js.native
+    /* private */ var nodeIdsToBoolean: js.Any = js.native
     
-    var nodeIdsToColumns: js.Any = js.native
+    /* private */ var nodeIdsToColumns: js.Any = js.native
     
     def setInactive(): Unit = js.native
     

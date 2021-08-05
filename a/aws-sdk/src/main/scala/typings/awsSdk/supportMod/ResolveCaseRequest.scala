@@ -13,19 +13,15 @@ trait ResolveCaseRequest extends StObject {
 }
 object ResolveCaseRequest {
   
-  @scala.inline
-  def apply(): ResolveCaseRequest = {
+  inline def apply(): ResolveCaseRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveCaseRequest]
   }
   
-  @scala.inline
-  implicit class ResolveCaseRequestMutableBuilder[Self <: ResolveCaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveCaseRequest](x: Self) {
     
-    @scala.inline
-    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
+    inline def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
+    inline def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
   }
 }

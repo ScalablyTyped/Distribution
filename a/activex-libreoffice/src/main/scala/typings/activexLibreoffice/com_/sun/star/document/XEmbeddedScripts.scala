@@ -28,8 +28,7 @@ trait XEmbeddedScripts extends StObject {
 }
 object XEmbeddedScripts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowMacroExecution: Boolean,
     BasicLibraries: XStorageBasedLibraryContainer,
     DialogLibraries: XStorageBasedLibraryContainer
@@ -38,16 +37,12 @@ object XEmbeddedScripts {
     __obj.asInstanceOf[XEmbeddedScripts]
   }
   
-  @scala.inline
-  implicit class XEmbeddedScriptsMutableBuilder[Self <: XEmbeddedScripts] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbeddedScripts](x: Self) {
     
-    @scala.inline
-    def setAllowMacroExecution(value: Boolean): Self = StObject.set(x, "AllowMacroExecution", value.asInstanceOf[js.Any])
+    inline def setAllowMacroExecution(value: Boolean): Self = StObject.set(x, "AllowMacroExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicLibraries(value: XStorageBasedLibraryContainer): Self = StObject.set(x, "BasicLibraries", value.asInstanceOf[js.Any])
+    inline def setBasicLibraries(value: XStorageBasedLibraryContainer): Self = StObject.set(x, "BasicLibraries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogLibraries(value: XStorageBasedLibraryContainer): Self = StObject.set(x, "DialogLibraries", value.asInstanceOf[js.Any])
+    inline def setDialogLibraries(value: XStorageBasedLibraryContainer): Self = StObject.set(x, "DialogLibraries", value.asInstanceOf[js.Any])
   }
 }

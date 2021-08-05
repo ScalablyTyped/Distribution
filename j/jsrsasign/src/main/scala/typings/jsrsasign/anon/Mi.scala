@@ -22,8 +22,7 @@ trait Mi extends StObject {
 }
 object Mi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     certreq: Boolean,
     mi: MessageImprint,
     nonce: IntegerParam | BigIntegerParam | HexParam | Double,
@@ -33,19 +32,14 @@ object Mi {
     __obj.asInstanceOf[Mi]
   }
   
-  @scala.inline
-  implicit class MiMutableBuilder[Self <: Mi] (val x: Self) extends AnyVal {
+  extension [Self <: Mi](x: Self) {
     
-    @scala.inline
-    def setCertreq(value: Boolean): Self = StObject.set(x, "certreq", value.asInstanceOf[js.Any])
+    inline def setCertreq(value: Boolean): Self = StObject.set(x, "certreq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMi(value: MessageImprint): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
+    inline def setMi(value: MessageImprint): Self = StObject.set(x, "mi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonce(value: IntegerParam | BigIntegerParam | HexParam | Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    inline def setNonce(value: IntegerParam | BigIntegerParam | HexParam | Double): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicy(value: ObjectIdentifierParam | HexParam | NameParam): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ObjectIdentifierParam | HexParam | NameParam): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
   }
 }

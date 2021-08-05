@@ -24,8 +24,7 @@ object valuesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V, A, TD](props: ValueFactoryProps[V, A, TD]): Map[String, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Map[String, V]]
+  inline def default[V, A, TD](props: ValueFactoryProps[V, A, TD]): Map[String, V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Map[String, V]]
   
   @JSImport("pose-core/lib/factories/values", "DEFAULT_INITIAL_POSE")
   @js.native
@@ -69,8 +68,7 @@ object valuesMod {
   }
   object ValueFactoryProps {
     
-    @scala.inline
-    def apply[V, A, TD](
+    inline def apply[V, A, TD](
       activePoses: ActivePoses,
       ancestorValues: AncestorValueList[V],
       convertValue: (/* value */ js.Any, /* key */ String, /* props */ Props) => V,
@@ -85,61 +83,43 @@ object valuesMod {
       __obj.asInstanceOf[ValueFactoryProps[V, A, TD]]
     }
     
-    @scala.inline
-    implicit class ValueFactoryPropsMutableBuilder[Self <: ValueFactoryProps[?, ?, ?], V, A, TD] (val x: Self & (ValueFactoryProps[V, A, TD])) extends AnyVal {
+    extension [Self <: ValueFactoryProps[?, ?, ?], V, A, TD](x: Self & (ValueFactoryProps[V, A, TD])) {
       
-      @scala.inline
-      def setActivePoses(value: ActivePoses): Self = StObject.set(x, "activePoses", value.asInstanceOf[js.Any])
+      inline def setActivePoses(value: ActivePoses): Self = StObject.set(x, "activePoses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAncestorValues(value: AncestorValueList[V]): Self = StObject.set(x, "ancestorValues", value.asInstanceOf[js.Any])
+      inline def setAncestorValues(value: AncestorValueList[V]): Self = StObject.set(x, "ancestorValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAncestorValuesVarargs(value: AncestorValue[V]*): Self = StObject.set(x, "ancestorValues", js.Array(value :_*))
+      inline def setAncestorValuesVarargs(value: AncestorValue[V]*): Self = StObject.set(x, "ancestorValues", js.Array(value :_*))
       
-      @scala.inline
-      def setConvertValue(value: (/* value */ js.Any, /* key */ String, /* props */ Props) => V): Self = StObject.set(x, "convertValue", js.Any.fromFunction3(value))
+      inline def setConvertValue(value: (/* value */ js.Any, /* key */ String, /* props */ Props) => V): Self = StObject.set(x, "convertValue", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCreateValue(
+      inline def setCreateValue(
         value: (/* init */ js.Any, /* key */ String, /* props */ Props, /* createValueProps */ js.UndefOr[CreateValueProps]) => V
       ): Self = StObject.set(x, "createValue", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setInitialPose(value: String | js.Array[String]): Self = StObject.set(x, "initialPose", value.asInstanceOf[js.Any])
+      inline def setInitialPose(value: String | js.Array[String]): Self = StObject.set(x, "initialPose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPoseUndefined: Self = StObject.set(x, "initialPose", js.undefined)
+      inline def setInitialPoseUndefined: Self = StObject.set(x, "initialPose", js.undefined)
       
-      @scala.inline
-      def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value :_*))
+      inline def setInitialPoseVarargs(value: String*): Self = StObject.set(x, "initialPose", js.Array(value :_*))
       
-      @scala.inline
-      def setPassive(value: PassiveValueMap): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+      inline def setPassive(value: PassiveValueMap): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+      inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
       
-      @scala.inline
-      def setPoses(value: PoseMap[A, TD]): Self = StObject.set(x, "poses", value.asInstanceOf[js.Any])
+      inline def setPoses(value: PoseMap[A, TD]): Self = StObject.set(x, "poses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: Props): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Props): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadValue(value: V => js.Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
+      inline def setReadValue(value: V => js.Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadValueFromSource(value: (/* key */ String, /* props */ Props) => js.Any): Self = StObject.set(x, "readValueFromSource", js.Any.fromFunction2(value))
+      inline def setReadValueFromSource(value: (/* key */ String, /* props */ Props) => js.Any): Self = StObject.set(x, "readValueFromSource", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadValueFromSourceUndefined: Self = StObject.set(x, "readValueFromSource", js.undefined)
+      inline def setReadValueFromSourceUndefined: Self = StObject.set(x, "readValueFromSource", js.undefined)
       
-      @scala.inline
-      def setSetValueNative(value: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
+      inline def setSetValueNative(value: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUserSetValues(value: StringDictionary[V]): Self = StObject.set(x, "userSetValues", value.asInstanceOf[js.Any])
+      inline def setUserSetValues(value: StringDictionary[V]): Self = StObject.set(x, "userSetValues", value.asInstanceOf[js.Any])
     }
   }
 }

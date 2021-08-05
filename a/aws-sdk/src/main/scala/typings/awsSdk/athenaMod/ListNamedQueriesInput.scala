@@ -23,31 +23,23 @@ trait ListNamedQueriesInput extends StObject {
 }
 object ListNamedQueriesInput {
   
-  @scala.inline
-  def apply(): ListNamedQueriesInput = {
+  inline def apply(): ListNamedQueriesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNamedQueriesInput]
   }
   
-  @scala.inline
-  implicit class ListNamedQueriesInputMutableBuilder[Self <: ListNamedQueriesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListNamedQueriesInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxNamedQueriesCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxNamedQueriesCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
+    inline def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
+    inline def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
   }
 }

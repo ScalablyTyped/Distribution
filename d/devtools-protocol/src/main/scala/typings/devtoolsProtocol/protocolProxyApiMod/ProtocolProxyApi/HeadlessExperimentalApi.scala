@@ -41,8 +41,7 @@ trait HeadlessExperimentalApi extends StObject {
 }
 object HeadlessExperimentalApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginFrame: BeginFrameRequest => js.Promise[BeginFrameResponse],
     disable: () => js.Promise[Unit],
     enable: () => js.Promise[Unit],
@@ -52,20 +51,15 @@ object HeadlessExperimentalApi {
     __obj.asInstanceOf[HeadlessExperimentalApi]
   }
   
-  @scala.inline
-  implicit class HeadlessExperimentalApiMutableBuilder[Self <: HeadlessExperimentalApi] (val x: Self) extends AnyVal {
+  extension [Self <: HeadlessExperimentalApi](x: Self) {
     
-    @scala.inline
-    def setBeginFrame(value: BeginFrameRequest => js.Promise[BeginFrameResponse]): Self = StObject.set(x, "beginFrame", js.Any.fromFunction1(value))
+    inline def setBeginFrame(value: BeginFrameRequest => js.Promise[BeginFrameResponse]): Self = StObject.set(x, "beginFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(
+    inline def setOn(
       value: (needsBeginFramesChanged, js.Function1[/* params */ NeedsBeginFramesChangedEvent, Unit]) => Unit
     ): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }

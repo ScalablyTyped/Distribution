@@ -24,16 +24,13 @@ trait MailMergeEvent
 }
 object MailMergeEvent {
   
-  @scala.inline
-  def apply(Model: XModel, Source: XInterface): MailMergeEvent = {
+  inline def apply(Model: XModel, Source: XInterface): MailMergeEvent = {
     val __obj = js.Dynamic.literal(Model = Model.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[MailMergeEvent]
   }
   
-  @scala.inline
-  implicit class MailMergeEventMutableBuilder[Self <: MailMergeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MailMergeEvent](x: Self) {
     
-    @scala.inline
-    def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: XModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
   }
 }

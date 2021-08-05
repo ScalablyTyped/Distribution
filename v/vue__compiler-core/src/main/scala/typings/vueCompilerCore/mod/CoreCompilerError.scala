@@ -13,16 +13,13 @@ trait CoreCompilerError
 }
 object CoreCompilerError {
   
-  @scala.inline
-  def apply(code: ErrorCodes, message: String, name: String): CoreCompilerError = {
+  inline def apply(code: ErrorCodes, message: String, name: String): CoreCompilerError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoreCompilerError]
   }
   
-  @scala.inline
-  implicit class CoreCompilerErrorMutableBuilder[Self <: CoreCompilerError] (val x: Self) extends AnyVal {
+  extension [Self <: CoreCompilerError](x: Self) {
     
-    @scala.inline
-    def setCode(value: ErrorCodes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: ErrorCodes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

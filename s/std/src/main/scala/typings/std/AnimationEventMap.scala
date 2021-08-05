@@ -12,19 +12,15 @@ trait AnimationEventMap extends StObject {
 }
 object AnimationEventMap {
   
-  @scala.inline
-  def apply(cancel: AnimationPlaybackEvent, finish: AnimationPlaybackEvent): AnimationEventMap = {
+  inline def apply(cancel: AnimationPlaybackEvent, finish: AnimationPlaybackEvent): AnimationEventMap = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], finish = finish.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationEventMap]
   }
   
-  @scala.inline
-  implicit class AnimationEventMapMutableBuilder[Self <: AnimationEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationEventMap](x: Self) {
     
-    @scala.inline
-    def setCancel(value: AnimationPlaybackEvent): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: AnimationPlaybackEvent): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinish(value: AnimationPlaybackEvent): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
+    inline def setFinish(value: AnimationPlaybackEvent): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
   }
 }

@@ -31,52 +31,37 @@ trait OptionsoutputStream extends StObject {
 }
 object OptionsoutputStream {
   
-  @scala.inline
-  def apply(output: Stream): OptionsoutputStream = {
+  inline def apply(output: Stream): OptionsoutputStream = {
     val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsoutputStream]
   }
   
-  @scala.inline
-  implicit class OptionsoutputStreamMutableBuilder[Self <: OptionsoutputStream] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsoutputStream](x: Self) {
     
-    @scala.inline
-    def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setGenerator(value: js.Object): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
+    inline def setGenerator(value: js.Object): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
+    inline def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
     
-    @scala.inline
-    def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
     
-    @scala.inline
-    def setLineEnd(value: String): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
+    inline def setLineEnd(value: String): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineEndUndefined: Self = StObject.set(x, "lineEnd", js.undefined)
+    inline def setLineEndUndefined: Self = StObject.set(x, "lineEnd", js.undefined)
     
-    @scala.inline
-    def setOutput(value: Stream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: Stream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMap(value: js.Any): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+    inline def setSourceMap(value: js.Any): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+    inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
     
-    @scala.inline
-    def setStartingIndentLevel(value: Double): Self = StObject.set(x, "startingIndentLevel", value.asInstanceOf[js.Any])
+    inline def setStartingIndentLevel(value: Double): Self = StObject.set(x, "startingIndentLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingIndentLevelUndefined: Self = StObject.set(x, "startingIndentLevel", js.undefined)
+    inline def setStartingIndentLevelUndefined: Self = StObject.set(x, "startingIndentLevel", js.undefined)
   }
 }

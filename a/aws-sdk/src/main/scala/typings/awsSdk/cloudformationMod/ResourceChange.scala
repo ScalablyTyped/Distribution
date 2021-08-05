@@ -48,67 +48,47 @@ trait ResourceChange extends StObject {
 }
 object ResourceChange {
   
-  @scala.inline
-  def apply(): ResourceChange = {
+  inline def apply(): ResourceChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceChange]
   }
   
-  @scala.inline
-  implicit class ResourceChangeMutableBuilder[Self <: ResourceChange] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceChange](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setChangeSetId(value: ChangeSetId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
+    inline def setChangeSetId(value: ChangeSetId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
+    inline def setChangeSetIdUndefined: Self = StObject.set(x, "ChangeSetId", js.undefined)
     
-    @scala.inline
-    def setDetails(value: ResourceChangeDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: ResourceChangeDetails): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
-    @scala.inline
-    def setDetailsVarargs(value: ResourceChangeDetail*): Self = StObject.set(x, "Details", js.Array(value :_*))
+    inline def setDetailsVarargs(value: ResourceChangeDetail*): Self = StObject.set(x, "Details", js.Array(value :_*))
     
-    @scala.inline
-    def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
+    inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalResourceIdUndefined: Self = StObject.set(x, "LogicalResourceId", js.undefined)
+    inline def setLogicalResourceIdUndefined: Self = StObject.set(x, "LogicalResourceId", js.undefined)
     
-    @scala.inline
-    def setPhysicalResourceId(value: PhysicalResourceId): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
+    inline def setPhysicalResourceId(value: PhysicalResourceId): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalResourceIdUndefined: Self = StObject.set(x, "PhysicalResourceId", js.undefined)
+    inline def setPhysicalResourceIdUndefined: Self = StObject.set(x, "PhysicalResourceId", js.undefined)
     
-    @scala.inline
-    def setReplacement(value: Replacement): Self = StObject.set(x, "Replacement", value.asInstanceOf[js.Any])
+    inline def setReplacement(value: Replacement): Self = StObject.set(x, "Replacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementUndefined: Self = StObject.set(x, "Replacement", js.undefined)
+    inline def setReplacementUndefined: Self = StObject.set(x, "Replacement", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "Scope", js.undefined)
     
-    @scala.inline
-    def setScopeVarargs(value: ResourceAttribute*): Self = StObject.set(x, "Scope", js.Array(value :_*))
+    inline def setScopeVarargs(value: ResourceAttribute*): Self = StObject.set(x, "Scope", js.Array(value :_*))
   }
 }

@@ -23,31 +23,23 @@ trait SuggestionMatch extends StObject {
 }
 object SuggestionMatch {
   
-  @scala.inline
-  def apply(): SuggestionMatch = {
+  inline def apply(): SuggestionMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestionMatch]
   }
   
-  @scala.inline
-  implicit class SuggestionMatchMutableBuilder[Self <: SuggestionMatch] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestionMatch](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setScore(value: Long): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Long): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setSuggestion(value: String): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+    inline def setSuggestion(value: String): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
+    inline def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
   }
 }

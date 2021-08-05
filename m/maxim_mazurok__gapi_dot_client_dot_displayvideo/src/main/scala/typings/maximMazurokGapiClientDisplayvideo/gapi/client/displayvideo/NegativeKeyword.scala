@@ -18,25 +18,19 @@ trait NegativeKeyword extends StObject {
 }
 object NegativeKeyword {
   
-  @scala.inline
-  def apply(): NegativeKeyword = {
+  inline def apply(): NegativeKeyword = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NegativeKeyword]
   }
   
-  @scala.inline
-  implicit class NegativeKeywordMutableBuilder[Self <: NegativeKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: NegativeKeyword](x: Self) {
     
-    @scala.inline
-    def setKeywordValue(value: String): Self = StObject.set(x, "keywordValue", value.asInstanceOf[js.Any])
+    inline def setKeywordValue(value: String): Self = StObject.set(x, "keywordValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordValueUndefined: Self = StObject.set(x, "keywordValue", js.undefined)
+    inline def setKeywordValueUndefined: Self = StObject.set(x, "keywordValue", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -17,8 +17,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parse(query: String): AST = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any]).asInstanceOf[AST]
+  inline def parse(query: String): AST = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any]).asInstanceOf[AST]
   
   @JSImport("lucene", "phrase")
   @js.native
@@ -28,8 +27,7 @@ object mod {
   @js.native
   val term: Parser = js.native
   
-  @scala.inline
-  def toString_(ast: AST): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(ast: AST): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.lucene.mod.LeftOnlyAST
@@ -38,14 +36,12 @@ object mod {
   trait AST extends StObject
   object AST {
     
-    @scala.inline
-    def BinaryAST(left: AST | Node, operator: Operator, right: AST | Node): typings.lucene.mod.BinaryAST = {
+    inline def BinaryAST(left: AST | Node, operator: Operator, right: AST | Node): typings.lucene.mod.BinaryAST = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.lucene.mod.BinaryAST]
     }
     
-    @scala.inline
-    def LeftOnlyAST(left: Node): typings.lucene.mod.LeftOnlyAST = {
+    inline def LeftOnlyAST(left: Node): typings.lucene.mod.LeftOnlyAST = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.lucene.mod.LeftOnlyAST]
     }
@@ -63,23 +59,18 @@ object mod {
   }
   object BinaryAST {
     
-    @scala.inline
-    def apply(left: AST | Node, operator: Operator, right: AST | Node): BinaryAST = {
+    inline def apply(left: AST | Node, operator: Operator, right: AST | Node): BinaryAST = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
       __obj.asInstanceOf[BinaryAST]
     }
     
-    @scala.inline
-    implicit class BinaryASTMutableBuilder[Self <: BinaryAST] (val x: Self) extends AnyVal {
+    extension [Self <: BinaryAST](x: Self) {
       
-      @scala.inline
-      def setLeft(value: AST | Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: AST | Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperator(value: Operator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: Operator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: AST | Node): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: AST | Node): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     }
   }
   
@@ -93,23 +84,18 @@ object mod {
   }
   object LeftOnlyAST {
     
-    @scala.inline
-    def apply(left: Node): LeftOnlyAST = {
+    inline def apply(left: Node): LeftOnlyAST = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any])
       __obj.asInstanceOf[LeftOnlyAST]
     }
     
-    @scala.inline
-    implicit class LeftOnlyASTMutableBuilder[Self <: LeftOnlyAST] (val x: Self) extends AnyVal {
+    extension [Self <: LeftOnlyAST](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Node): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Operator): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Operator): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -120,8 +106,7 @@ object mod {
   trait Node extends StObject
   object Node {
     
-    @scala.inline
-    def NodeRangedTerm(
+    inline def NodeRangedTerm(
       field: String | LessthansignimplicitGreaterthansign,
       inclusive: both | none | left | right,
       term_max: String,
@@ -131,8 +116,7 @@ object mod {
       __obj.asInstanceOf[typings.lucene.mod.NodeRangedTerm]
     }
     
-    @scala.inline
-    def NodeTerm(
+    inline def NodeTerm(
       field: String | LessthansignimplicitGreaterthansign,
       quoted: Boolean,
       regex: Boolean,
@@ -152,23 +136,18 @@ object mod {
   }
   object NodeField {
     
-    @scala.inline
-    def apply(field: String | LessthansignimplicitGreaterthansign): NodeField = {
+    inline def apply(field: String | LessthansignimplicitGreaterthansign): NodeField = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], fieldLocation = null)
       __obj.asInstanceOf[NodeField]
     }
     
-    @scala.inline
-    implicit class NodeFieldMutableBuilder[Self <: NodeField] (val x: Self) extends AnyVal {
+    extension [Self <: NodeField](x: Self) {
       
-      @scala.inline
-      def setField(value: String | LessthansignimplicitGreaterthansign): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String | LessthansignimplicitGreaterthansign): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldLocation(value: End): Self = StObject.set(x, "fieldLocation", value.asInstanceOf[js.Any])
+      inline def setFieldLocation(value: End): Self = StObject.set(x, "fieldLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldLocationNull: Self = StObject.set(x, "fieldLocation", null)
+      inline def setFieldLocationNull: Self = StObject.set(x, "fieldLocation", null)
     }
   }
   
@@ -185,8 +164,7 @@ object mod {
   }
   object NodeRangedTerm {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       field: String | LessthansignimplicitGreaterthansign,
       inclusive: both | none | left | right,
       term_max: String,
@@ -196,17 +174,13 @@ object mod {
       __obj.asInstanceOf[NodeRangedTerm]
     }
     
-    @scala.inline
-    implicit class NodeRangedTermMutableBuilder[Self <: NodeRangedTerm] (val x: Self) extends AnyVal {
+    extension [Self <: NodeRangedTerm](x: Self) {
       
-      @scala.inline
-      def setInclusive(value: both | none | left | right): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
+      inline def setInclusive(value: both | none | left | right): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerm_max(value: String): Self = StObject.set(x, "term_max", value.asInstanceOf[js.Any])
+      inline def setTerm_max(value: String): Self = StObject.set(x, "term_max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerm_min(value: String): Self = StObject.set(x, "term_min", value.asInstanceOf[js.Any])
+      inline def setTerm_min(value: String): Self = StObject.set(x, "term_min", value.asInstanceOf[js.Any])
     }
   }
   
@@ -231,8 +205,7 @@ object mod {
   }
   object NodeTerm {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       field: String | LessthansignimplicitGreaterthansign,
       quoted: Boolean,
       regex: Boolean,
@@ -243,38 +216,27 @@ object mod {
       __obj.asInstanceOf[NodeTerm]
     }
     
-    @scala.inline
-    implicit class NodeTermMutableBuilder[Self <: NodeTerm] (val x: Self) extends AnyVal {
+    extension [Self <: NodeTerm](x: Self) {
       
-      @scala.inline
-      def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
+      inline def setBoost(value: Double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoostNull: Self = StObject.set(x, "boost", null)
+      inline def setBoostNull: Self = StObject.set(x, "boost", null)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixNull: Self = StObject.set(x, "prefix", null)
+      inline def setPrefixNull: Self = StObject.set(x, "prefix", null)
       
-      @scala.inline
-      def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
+      inline def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegex(value: Boolean): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: Boolean): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimilarity(value: Double): Self = StObject.set(x, "similarity", value.asInstanceOf[js.Any])
+      inline def setSimilarity(value: Double): Self = StObject.set(x, "similarity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSimilarityNull: Self = StObject.set(x, "similarity", null)
+      inline def setSimilarityNull: Self = StObject.set(x, "similarity", null)
       
-      @scala.inline
-      def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+      inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTermLocation(value: Start): Self = StObject.set(x, "termLocation", value.asInstanceOf[js.Any])
+      inline def setTermLocation(value: Start): Self = StObject.set(x, "termLocation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,23 +251,17 @@ object mod {
   trait Operator extends StObject
   object Operator {
     
-    @scala.inline
-    def AND: typings.lucene.luceneStrings.AND = "AND".asInstanceOf[typings.lucene.luceneStrings.AND]
+    inline def AND: typings.lucene.luceneStrings.AND = "AND".asInstanceOf[typings.lucene.luceneStrings.AND]
     
-    @scala.inline
-    def `AND NOT`: typings.lucene.luceneStrings.`AND NOT` = ("AND NOT").asInstanceOf[typings.lucene.luceneStrings.`AND NOT`]
+    inline def `AND NOT`: typings.lucene.luceneStrings.`AND NOT` = ("AND NOT").asInstanceOf[typings.lucene.luceneStrings.`AND NOT`]
     
-    @scala.inline
-    def LessthansignimplicitGreaterthansign: typings.lucene.luceneStrings.LessthansignimplicitGreaterthansign = "<implicit>".asInstanceOf[typings.lucene.luceneStrings.LessthansignimplicitGreaterthansign]
+    inline def LessthansignimplicitGreaterthansign: typings.lucene.luceneStrings.LessthansignimplicitGreaterthansign = "<implicit>".asInstanceOf[typings.lucene.luceneStrings.LessthansignimplicitGreaterthansign]
     
-    @scala.inline
-    def NOT: typings.lucene.luceneStrings.NOT = "NOT".asInstanceOf[typings.lucene.luceneStrings.NOT]
+    inline def NOT: typings.lucene.luceneStrings.NOT = "NOT".asInstanceOf[typings.lucene.luceneStrings.NOT]
     
-    @scala.inline
-    def OR: typings.lucene.luceneStrings.OR = "OR".asInstanceOf[typings.lucene.luceneStrings.OR]
+    inline def OR: typings.lucene.luceneStrings.OR = "OR".asInstanceOf[typings.lucene.luceneStrings.OR]
     
-    @scala.inline
-    def `OR NOT`: typings.lucene.luceneStrings.`OR NOT` = ("OR NOT").asInstanceOf[typings.lucene.luceneStrings.`OR NOT`]
+    inline def `OR NOT`: typings.lucene.luceneStrings.`OR NOT` = ("OR NOT").asInstanceOf[typings.lucene.luceneStrings.`OR NOT`]
   }
   
   trait Parser extends StObject {
@@ -316,20 +272,16 @@ object mod {
   }
   object Parser {
     
-    @scala.inline
-    def apply(escape: String => String, unescape: String => String): Parser = {
+    inline def apply(escape: String => String, unescape: String => String): Parser = {
       val __obj = js.Dynamic.literal(escape = js.Any.fromFunction1(escape), unescape = js.Any.fromFunction1(unescape))
       __obj.asInstanceOf[Parser]
     }
     
-    @scala.inline
-    implicit class ParserMutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
+    extension [Self <: Parser](x: Self) {
       
-      @scala.inline
-      def setEscape(value: String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnescape(value: String => String): Self = StObject.set(x, "unescape", js.Any.fromFunction1(value))
+      inline def setUnescape(value: String => String): Self = StObject.set(x, "unescape", js.Any.fromFunction1(value))
     }
   }
   
@@ -343,23 +295,18 @@ object mod {
   }
   object TermLocation {
     
-    @scala.inline
-    def apply(column: Double, line: Double, offset: Double): TermLocation = {
+    inline def apply(column: Double, line: Double, offset: Double): TermLocation = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[TermLocation]
     }
     
-    @scala.inline
-    implicit class TermLocationMutableBuilder[Self <: TermLocation] (val x: Self) extends AnyVal {
+    extension [Self <: TermLocation](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
 }

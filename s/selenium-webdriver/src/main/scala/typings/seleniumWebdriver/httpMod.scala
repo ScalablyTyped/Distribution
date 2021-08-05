@@ -91,36 +91,24 @@ object httpMod {
     def this(status: Double, headers: js.Object, body: String) = this()
   }
   
-  @scala.inline
-  def buildPath(path: String, parameters: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPath")(path.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def buildPath(path: String, parameters: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPath")(path.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def del(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def del(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def get(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def headersToString(headers: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("headersToString")(headers.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def headersToString(headers: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("headersToString")(headers.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def parseHttpResponse(httpResponse: Response, w3c: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHttpResponse")(httpResponse.asInstanceOf[js.Any], w3c.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def parseHttpResponse(httpResponse: Response, w3c: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHttpResponse")(httpResponse.asInstanceOf[js.Any], w3c.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def post(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def post(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def resource(method: String, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resource")(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def resource(method: String, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resource")(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], opt_data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], opt_data.asInstanceOf[js.Any], opt_proxy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: Unit, opt_proxy: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], opt_data.asInstanceOf[js.Any], opt_proxy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], opt_data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], opt_data.asInstanceOf[js.Any], opt_proxy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: Unit, opt_proxy: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], opt_data.asInstanceOf[js.Any], opt_proxy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def tryParse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def tryParse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

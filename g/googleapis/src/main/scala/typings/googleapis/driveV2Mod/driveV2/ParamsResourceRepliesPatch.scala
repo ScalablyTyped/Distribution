@@ -39,43 +39,31 @@ trait ParamsResourceRepliesPatch
 }
 object ParamsResourceRepliesPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceRepliesPatch = {
+  inline def apply(): ParamsResourceRepliesPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRepliesPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRepliesPatchMutableBuilder[Self <: ParamsResourceRepliesPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRepliesPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: String): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
+    inline def setCommentIdUndefined: Self = StObject.set(x, "commentId", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setReplyId(value: String): Self = StObject.set(x, "replyId", value.asInstanceOf[js.Any])
+    inline def setReplyId(value: String): Self = StObject.set(x, "replyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplyIdUndefined: Self = StObject.set(x, "replyId", js.undefined)
+    inline def setReplyIdUndefined: Self = StObject.set(x, "replyId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCommentReply): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCommentReply): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

@@ -14,19 +14,15 @@ trait SnapshotListenOptions extends StObject {
 }
 object SnapshotListenOptions {
   
-  @scala.inline
-  def apply(): SnapshotListenOptions = {
+  inline def apply(): SnapshotListenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotListenOptions]
   }
   
-  @scala.inline
-  implicit class SnapshotListenOptionsMutableBuilder[Self <: SnapshotListenOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotListenOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeMetadataChanges(value: Boolean): Self = StObject.set(x, "includeMetadataChanges", value.asInstanceOf[js.Any])
+    inline def setIncludeMetadataChanges(value: Boolean): Self = StObject.set(x, "includeMetadataChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeMetadataChangesUndefined: Self = StObject.set(x, "includeMetadataChanges", js.undefined)
+    inline def setIncludeMetadataChangesUndefined: Self = StObject.set(x, "includeMetadataChanges", js.undefined)
   }
 }

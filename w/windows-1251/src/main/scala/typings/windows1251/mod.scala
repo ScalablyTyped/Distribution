@@ -12,27 +12,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def decode(text: String, options: `0`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def decode(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(text: String, options: `0`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encode(input: String, options: Mode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(input: String, options: Mode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("windows-1251", "labels")
   @js.native
   def labels: js.Array[String] = js.native
-  @scala.inline
-  def labels_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labels")(x.asInstanceOf[js.Any])
+  inline def labels_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("labels")(x.asInstanceOf[js.Any])
   
   @JSImport("windows-1251", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   /* Rewritten from type alias, can be one of: 
     - typings.windows1251.windows1251Strings.replacement
@@ -41,11 +35,9 @@ object mod {
   trait DecoderMode extends StObject
   object DecoderMode {
     
-    @scala.inline
-    def fatal: typings.windows1251.windows1251Strings.fatal = "fatal".asInstanceOf[typings.windows1251.windows1251Strings.fatal]
+    inline def fatal: typings.windows1251.windows1251Strings.fatal = "fatal".asInstanceOf[typings.windows1251.windows1251Strings.fatal]
     
-    @scala.inline
-    def replacement: typings.windows1251.windows1251Strings.replacement = "replacement".asInstanceOf[typings.windows1251.windows1251Strings.replacement]
+    inline def replacement: typings.windows1251.windows1251Strings.replacement = "replacement".asInstanceOf[typings.windows1251.windows1251Strings.replacement]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -55,11 +47,9 @@ object mod {
   trait EncoderMode extends StObject
   object EncoderMode {
     
-    @scala.inline
-    def fatal: typings.windows1251.windows1251Strings.fatal = "fatal".asInstanceOf[typings.windows1251.windows1251Strings.fatal]
+    inline def fatal: typings.windows1251.windows1251Strings.fatal = "fatal".asInstanceOf[typings.windows1251.windows1251Strings.fatal]
     
-    @scala.inline
-    def html: typings.windows1251.windows1251Strings.html = "html".asInstanceOf[typings.windows1251.windows1251Strings.html]
+    inline def html: typings.windows1251.windows1251Strings.html = "html".asInstanceOf[typings.windows1251.windows1251Strings.html]
   }
   
   @js.native

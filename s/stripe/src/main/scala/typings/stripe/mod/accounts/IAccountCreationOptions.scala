@@ -27,23 +27,18 @@ trait IAccountCreationOptions
 }
 object IAccountCreationOptions {
   
-  @scala.inline
-  def apply(): IAccountCreationOptions = {
+  inline def apply(): IAccountCreationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("custom")
     __obj.asInstanceOf[IAccountCreationOptions]
   }
   
-  @scala.inline
-  implicit class IAccountCreationOptionsMutableBuilder[Self <: IAccountCreationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IAccountCreationOptions](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setType(value: custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

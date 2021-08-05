@@ -18,25 +18,19 @@ trait BranchInfo extends StObject {
 }
 object BranchInfo {
   
-  @scala.inline
-  def apply(): BranchInfo = {
+  inline def apply(): BranchInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BranchInfo]
   }
   
-  @scala.inline
-  implicit class BranchInfoMutableBuilder[Self <: BranchInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BranchInfo](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
+    inline def setBranchNameUndefined: Self = StObject.set(x, "branchName", js.undefined)
     
-    @scala.inline
-    def setCommitId(value: CommitId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: CommitId): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
+    inline def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
   }
 }

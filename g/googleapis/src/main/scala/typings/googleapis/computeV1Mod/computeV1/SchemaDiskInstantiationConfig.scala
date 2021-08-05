@@ -45,37 +45,27 @@ trait SchemaDiskInstantiationConfig extends StObject {
 }
 object SchemaDiskInstantiationConfig {
   
-  @scala.inline
-  def apply(): SchemaDiskInstantiationConfig = {
+  inline def apply(): SchemaDiskInstantiationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiskInstantiationConfig]
   }
   
-  @scala.inline
-  implicit class SchemaDiskInstantiationConfigMutableBuilder[Self <: SchemaDiskInstantiationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiskInstantiationConfig](x: Self) {
     
-    @scala.inline
-    def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
+    inline def setAutoDelete(value: Boolean): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
+    inline def setAutoDeleteUndefined: Self = StObject.set(x, "autoDelete", js.undefined)
     
-    @scala.inline
-    def setCustomImage(value: String): Self = StObject.set(x, "customImage", value.asInstanceOf[js.Any])
+    inline def setCustomImage(value: String): Self = StObject.set(x, "customImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomImageUndefined: Self = StObject.set(x, "customImage", js.undefined)
+    inline def setCustomImageUndefined: Self = StObject.set(x, "customImage", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setInstantiateFrom(value: String): Self = StObject.set(x, "instantiateFrom", value.asInstanceOf[js.Any])
+    inline def setInstantiateFrom(value: String): Self = StObject.set(x, "instantiateFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstantiateFromUndefined: Self = StObject.set(x, "instantiateFrom", js.undefined)
+    inline def setInstantiateFromUndefined: Self = StObject.set(x, "instantiateFrom", js.undefined)
   }
 }

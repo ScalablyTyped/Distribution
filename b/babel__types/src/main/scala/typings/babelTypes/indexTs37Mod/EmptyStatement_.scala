@@ -16,17 +16,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object EmptyStatement_ {
   
-  @scala.inline
-  def apply(): EmptyStatement_ = {
+  inline def apply(): EmptyStatement_ = {
     val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("EmptyStatement")
     __obj.asInstanceOf[EmptyStatement_]
   }
   
-  @scala.inline
-  implicit class EmptyStatement_MutableBuilder[Self <: EmptyStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: EmptyStatement_](x: Self) {
     
-    @scala.inline
-    def setType(value: EmptyStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EmptyStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

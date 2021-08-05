@@ -43,43 +43,31 @@ trait SchemaKeyRangeLocation extends StObject {
 }
 object SchemaKeyRangeLocation {
   
-  @scala.inline
-  def apply(): SchemaKeyRangeLocation = {
+  inline def apply(): SchemaKeyRangeLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaKeyRangeLocation]
   }
   
-  @scala.inline
-  implicit class SchemaKeyRangeLocationMutableBuilder[Self <: SchemaKeyRangeLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaKeyRangeLocation](x: Self) {
     
-    @scala.inline
-    def setDataDisk(value: String): Self = StObject.set(x, "dataDisk", value.asInstanceOf[js.Any])
+    inline def setDataDisk(value: String): Self = StObject.set(x, "dataDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataDiskUndefined: Self = StObject.set(x, "dataDisk", js.undefined)
+    inline def setDataDiskUndefined: Self = StObject.set(x, "dataDisk", js.undefined)
     
-    @scala.inline
-    def setDeliveryEndpoint(value: String): Self = StObject.set(x, "deliveryEndpoint", value.asInstanceOf[js.Any])
+    inline def setDeliveryEndpoint(value: String): Self = StObject.set(x, "deliveryEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryEndpointUndefined: Self = StObject.set(x, "deliveryEndpoint", js.undefined)
+    inline def setDeliveryEndpointUndefined: Self = StObject.set(x, "deliveryEndpoint", js.undefined)
     
-    @scala.inline
-    def setDeprecatedPersistentDirectory(value: String): Self = StObject.set(x, "deprecatedPersistentDirectory", value.asInstanceOf[js.Any])
+    inline def setDeprecatedPersistentDirectory(value: String): Self = StObject.set(x, "deprecatedPersistentDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedPersistentDirectoryUndefined: Self = StObject.set(x, "deprecatedPersistentDirectory", js.undefined)
+    inline def setDeprecatedPersistentDirectoryUndefined: Self = StObject.set(x, "deprecatedPersistentDirectory", js.undefined)
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

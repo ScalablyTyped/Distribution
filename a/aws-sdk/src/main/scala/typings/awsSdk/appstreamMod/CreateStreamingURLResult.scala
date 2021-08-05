@@ -18,25 +18,19 @@ trait CreateStreamingURLResult extends StObject {
 }
 object CreateStreamingURLResult {
   
-  @scala.inline
-  def apply(): CreateStreamingURLResult = {
+  inline def apply(): CreateStreamingURLResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateStreamingURLResult]
   }
   
-  @scala.inline
-  implicit class CreateStreamingURLResultMutableBuilder[Self <: CreateStreamingURLResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateStreamingURLResult](x: Self) {
     
-    @scala.inline
-    def setExpires(value: Timestamp): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Timestamp): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
+    inline def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
     
-    @scala.inline
-    def setStreamingURL(value: String): Self = StObject.set(x, "StreamingURL", value.asInstanceOf[js.Any])
+    inline def setStreamingURL(value: String): Self = StObject.set(x, "StreamingURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamingURLUndefined: Self = StObject.set(x, "StreamingURL", js.undefined)
+    inline def setStreamingURLUndefined: Self = StObject.set(x, "StreamingURL", js.undefined)
   }
 }

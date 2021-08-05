@@ -32,35 +32,26 @@ object anon {
   }
   object Headers {
     
-    @scala.inline
-    def apply(): Headers = {
+    inline def apply(): Headers = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Headers]
     }
     
-    @scala.inline
-    implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+    extension [Self <: Headers](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: typings.algoliaTransporter.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: typings.algoliaTransporter.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHosts(value: js.Array[HostOptions]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+      inline def setHosts(value: js.Array[HostOptions]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
+      inline def setHostsUndefined: Self = StObject.set(x, "hosts", js.undefined)
       
-      @scala.inline
-      def setHostsVarargs(value: HostOptions*): Self = StObject.set(x, "hosts", js.Array(value :_*))
+      inline def setHostsVarargs(value: HostOptions*): Self = StObject.set(x, "hosts", js.Array(value :_*))
       
-      @scala.inline
-      def setQueryParameters(value: QueryParameters): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
+      inline def setQueryParameters(value: QueryParameters): Self = StObject.set(x, "queryParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
+      inline def setQueryParametersUndefined: Self = StObject.set(x, "queryParameters", js.undefined)
     }
   }
   
@@ -70,20 +61,16 @@ object anon {
   }
   object Methods {
     
-    @scala.inline
-    def apply[TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ js.Any, js.Any]]] */, TClient](): Methods[TMethods, TClient] = {
+    inline def apply[TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ js.Any, js.Any]]] */, TClient](): Methods[TMethods, TClient] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Methods[TMethods, TClient]]
     }
     
-    @scala.inline
-    implicit class MethodsMutableBuilder[Self <: Methods[?, ?], TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ js.Any, js.Any]]] */, TClient] (val x: Self & (Methods[TMethods, TClient])) extends AnyVal {
+    extension [Self <: Methods[?, ?], TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ js.Any, js.Any]]] */, TClient](x: Self & (Methods[TMethods, TClient])) {
       
-      @scala.inline
-      def setMethods(value: TMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: TMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     }
   }
   
@@ -98,8 +85,7 @@ object anon {
   }
   object ReadonlyPromiseany {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: () => js.Promise[js.Any | js.Any],
       `finally`: () => js.Promise[js.Any],
       `then`: () => js.Promise[js.Any | js.Any]
@@ -111,17 +97,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseany]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromiseanyMutableBuilder[Self <: ReadonlyPromiseany] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromiseany](x: Self) {
       
-      @scala.inline
-      def setCatch(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinally(value: () => js.Promise[js.Any]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[js.Any]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -136,8 +118,7 @@ object anon {
   }
   object ReadonlyPromisevoid {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `catch`: () => js.Promise[Unit | js.Any],
       `finally`: () => js.Promise[Unit],
       `then`: () => js.Promise[js.Any | js.Any]
@@ -149,17 +130,13 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromisevoid]
     }
     
-    @scala.inline
-    implicit class ReadonlyPromisevoidMutableBuilder[Self <: ReadonlyPromisevoid] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPromisevoid](x: Self) {
       
-      @scala.inline
-      def setCatch(value: () => js.Promise[Unit | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      inline def setCatch(value: () => js.Promise[Unit | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinally(value: () => js.Promise[Unit]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      inline def setFinally(value: () => js.Promise[Unit]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+      inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
     }
   }
   
@@ -169,17 +146,14 @@ object anon {
   }
   object Transporter {
     
-    @scala.inline
-    def apply(transporter: typings.algoliaTransporter.mod.Transporter): Transporter = {
+    inline def apply(transporter: typings.algoliaTransporter.mod.Transporter): Transporter = {
       val __obj = js.Dynamic.literal(transporter = transporter.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transporter]
     }
     
-    @scala.inline
-    implicit class TransporterMutableBuilder[Self <: Transporter] (val x: Self) extends AnyVal {
+    extension [Self <: Transporter](x: Self) {
       
-      @scala.inline
-      def setTransporter(value: typings.algoliaTransporter.mod.Transporter): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
+      inline def setTransporter(value: typings.algoliaTransporter.mod.Transporter): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
     }
   }
 }

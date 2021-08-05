@@ -12,17 +12,14 @@ object Advertising {
   }
   object AdvertisementBase {
     
-    @scala.inline
-    def apply(source: js.Any): AdvertisementBase = {
+    inline def apply(source: js.Any): AdvertisementBase = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[AdvertisementBase]
     }
     
-    @scala.inline
-    implicit class AdvertisementBaseMutableBuilder[Self <: AdvertisementBase] (val x: Self) extends AnyVal {
+    extension [Self <: AdvertisementBase](x: Self) {
       
-      @scala.inline
-      def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,20 +33,16 @@ object Advertising {
   }
   object MidrollAdvertisement {
     
-    @scala.inline
-    def apply(source: js.Any, time: Double, timePercentage: Double): MidrollAdvertisement = {
+    inline def apply(source: js.Any, time: Double, timePercentage: Double): MidrollAdvertisement = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], timePercentage = timePercentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[MidrollAdvertisement]
     }
     
-    @scala.inline
-    implicit class MidrollAdvertisementMutableBuilder[Self <: MidrollAdvertisement] (val x: Self) extends AnyVal {
+    extension [Self <: MidrollAdvertisement](x: Self) {
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimePercentage(value: Double): Self = StObject.set(x, "timePercentage", value.asInstanceOf[js.Any])
+      inline def setTimePercentage(value: Double): Self = StObject.set(x, "timePercentage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,8 +51,7 @@ object Advertising {
        with AdvertisementBase
   object PrerollAdvertisement {
     
-    @scala.inline
-    def apply(source: js.Any): PrerollAdvertisement = {
+    inline def apply(source: js.Any): PrerollAdvertisement = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[PrerollAdvertisement]
     }

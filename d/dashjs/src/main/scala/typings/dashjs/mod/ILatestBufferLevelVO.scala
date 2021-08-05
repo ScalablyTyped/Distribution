@@ -13,19 +13,15 @@ trait ILatestBufferLevelVO extends StObject {
 }
 object ILatestBufferLevelVO {
   
-  @scala.inline
-  def apply(level: Double, t: Date): ILatestBufferLevelVO = {
+  inline def apply(level: Double, t: Date): ILatestBufferLevelVO = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILatestBufferLevelVO]
   }
   
-  @scala.inline
-  implicit class ILatestBufferLevelVOMutableBuilder[Self <: ILatestBufferLevelVO] (val x: Self) extends AnyVal {
+  extension [Self <: ILatestBufferLevelVO](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: Date): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: Date): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

@@ -60,8 +60,7 @@ trait XStatusIndicator
 }
 object XStatusIndicator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     end: () => Unit,
     queryInterface: `type` => js.Any,
@@ -75,22 +74,16 @@ object XStatusIndicator {
     __obj.asInstanceOf[XStatusIndicator]
   }
   
-  @scala.inline
-  implicit class XStatusIndicatorMutableBuilder[Self <: XStatusIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: XStatusIndicator](x: Self) {
     
-    @scala.inline
-    def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: (String, Double) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    inline def setStart(value: (String, Double) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
   }
 }

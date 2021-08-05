@@ -28,8 +28,7 @@ trait X3DDefaultSetter
 }
 object X3DDefaultSetter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -41,16 +40,12 @@ object X3DDefaultSetter {
     __obj.asInstanceOf[X3DDefaultSetter]
   }
   
-  @scala.inline
-  implicit class X3DDefaultSetterMutableBuilder[Self <: X3DDefaultSetter] (val x: Self) extends AnyVal {
+  extension [Self <: X3DDefaultSetter](x: Self) {
     
-    @scala.inline
-    def setSet3DSettingsToDefault(value: () => Unit): Self = StObject.set(x, "set3DSettingsToDefault", js.Any.fromFunction0(value))
+    inline def setSet3DSettingsToDefault(value: () => Unit): Self = StObject.set(x, "set3DSettingsToDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDefaultIllumination(value: () => Unit): Self = StObject.set(x, "setDefaultIllumination", js.Any.fromFunction0(value))
+    inline def setSetDefaultIllumination(value: () => Unit): Self = StObject.set(x, "setDefaultIllumination", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDefaultRotation(value: () => Unit): Self = StObject.set(x, "setDefaultRotation", js.Any.fromFunction0(value))
+    inline def setSetDefaultRotation(value: () => Unit): Self = StObject.set(x, "setDefaultRotation", js.Any.fromFunction0(value))
   }
 }

@@ -16,22 +16,17 @@ trait DownloadResult extends StObject {
 }
 object DownloadResult {
   
-  @scala.inline
-  def apply(bytesWritten: Double, jobId: Double, statusCode: Double): DownloadResult = {
+  inline def apply(bytesWritten: Double, jobId: Double, statusCode: Double): DownloadResult = {
     val __obj = js.Dynamic.literal(bytesWritten = bytesWritten.asInstanceOf[js.Any], jobId = jobId.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadResult]
   }
   
-  @scala.inline
-  implicit class DownloadResultMutableBuilder[Self <: DownloadResult] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadResult](x: Self) {
     
-    @scala.inline
-    def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
+    inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: Double): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

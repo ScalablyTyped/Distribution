@@ -14,34 +14,25 @@ trait RequestLEScanOptions extends StObject {
 }
 object RequestLEScanOptions {
   
-  @scala.inline
-  def apply(): RequestLEScanOptions = {
+  inline def apply(): RequestLEScanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestLEScanOptions]
   }
   
-  @scala.inline
-  implicit class RequestLEScanOptionsMutableBuilder[Self <: RequestLEScanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestLEScanOptions](x: Self) {
     
-    @scala.inline
-    def setAcceptAllAdvertisements(value: Boolean): Self = StObject.set(x, "acceptAllAdvertisements", value.asInstanceOf[js.Any])
+    inline def setAcceptAllAdvertisements(value: Boolean): Self = StObject.set(x, "acceptAllAdvertisements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptAllAdvertisementsUndefined: Self = StObject.set(x, "acceptAllAdvertisements", js.undefined)
+    inline def setAcceptAllAdvertisementsUndefined: Self = StObject.set(x, "acceptAllAdvertisements", js.undefined)
     
-    @scala.inline
-    def setFilters(value: js.Array[BluetoothLEScanFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[BluetoothLEScanFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: BluetoothLEScanFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: BluetoothLEScanFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setKeepRepeatedDevices(value: Boolean): Self = StObject.set(x, "keepRepeatedDevices", value.asInstanceOf[js.Any])
+    inline def setKeepRepeatedDevices(value: Boolean): Self = StObject.set(x, "keepRepeatedDevices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepRepeatedDevicesUndefined: Self = StObject.set(x, "keepRepeatedDevices", js.undefined)
+    inline def setKeepRepeatedDevicesUndefined: Self = StObject.set(x, "keepRepeatedDevices", js.undefined)
   }
 }

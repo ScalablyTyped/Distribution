@@ -46,49 +46,35 @@ trait ParamsResourcePostsInsert
 }
 object ParamsResourcePostsInsert {
   
-  @scala.inline
-  def apply(): ParamsResourcePostsInsert = {
+  inline def apply(): ParamsResourcePostsInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePostsInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePostsInsertMutableBuilder[Self <: ParamsResourcePostsInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePostsInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
+    inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
+    inline def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
-    @scala.inline
-    def setFetchBody(value: Boolean): Self = StObject.set(x, "fetchBody", value.asInstanceOf[js.Any])
+    inline def setFetchBody(value: Boolean): Self = StObject.set(x, "fetchBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchBodyUndefined: Self = StObject.set(x, "fetchBody", js.undefined)
+    inline def setFetchBodyUndefined: Self = StObject.set(x, "fetchBody", js.undefined)
     
-    @scala.inline
-    def setFetchImages(value: Boolean): Self = StObject.set(x, "fetchImages", value.asInstanceOf[js.Any])
+    inline def setFetchImages(value: Boolean): Self = StObject.set(x, "fetchImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchImagesUndefined: Self = StObject.set(x, "fetchImages", js.undefined)
+    inline def setFetchImagesUndefined: Self = StObject.set(x, "fetchImages", js.undefined)
     
-    @scala.inline
-    def setIsDraft(value: Boolean): Self = StObject.set(x, "isDraft", value.asInstanceOf[js.Any])
+    inline def setIsDraft(value: Boolean): Self = StObject.set(x, "isDraft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDraftUndefined: Self = StObject.set(x, "isDraft", js.undefined)
+    inline def setIsDraftUndefined: Self = StObject.set(x, "isDraft", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaPost): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaPost): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

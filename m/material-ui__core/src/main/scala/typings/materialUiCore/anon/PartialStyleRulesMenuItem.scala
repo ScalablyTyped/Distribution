@@ -16,31 +16,23 @@ trait PartialStyleRulesMenuItem extends StObject {
 }
 object PartialStyleRulesMenuItem {
   
-  @scala.inline
-  def apply(): PartialStyleRulesMenuItem = {
+  inline def apply(): PartialStyleRulesMenuItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesMenuItem]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesMenuItemMutableBuilder[Self <: PartialStyleRulesMenuItem] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesMenuItem](x: Self) {
     
-    @scala.inline
-    def setGutters(value: CSSProperties): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
+    inline def setGutters(value: CSSProperties): Self = StObject.set(x, "gutters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
+    inline def setGuttersUndefined: Self = StObject.set(x, "gutters", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSelected(value: CSSProperties): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: CSSProperties): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

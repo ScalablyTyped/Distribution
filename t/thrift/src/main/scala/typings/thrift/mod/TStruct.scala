@@ -10,16 +10,13 @@ trait TStruct extends StObject {
 }
 object TStruct {
   
-  @scala.inline
-  def apply(fname: String): TStruct = {
+  inline def apply(fname: String): TStruct = {
     val __obj = js.Dynamic.literal(fname = fname.asInstanceOf[js.Any])
     __obj.asInstanceOf[TStruct]
   }
   
-  @scala.inline
-  implicit class TStructMutableBuilder[Self <: TStruct] (val x: Self) extends AnyVal {
+  extension [Self <: TStruct](x: Self) {
     
-    @scala.inline
-    def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
+    inline def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
   }
 }

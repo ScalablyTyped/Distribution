@@ -24,34 +24,25 @@ trait MigrationsMapCommitAuthorEndpoint extends StObject {
 }
 object MigrationsMapCommitAuthorEndpoint {
   
-  @scala.inline
-  def apply(author_id: Double, owner: String, repo: String): MigrationsMapCommitAuthorEndpoint = {
+  inline def apply(author_id: Double, owner: String, repo: String): MigrationsMapCommitAuthorEndpoint = {
     val __obj = js.Dynamic.literal(author_id = author_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsMapCommitAuthorEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsMapCommitAuthorEndpointMutableBuilder[Self <: MigrationsMapCommitAuthorEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsMapCommitAuthorEndpoint](x: Self) {
     
-    @scala.inline
-    def setAuthor_id(value: Double): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
+    inline def setAuthor_id(value: Double): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

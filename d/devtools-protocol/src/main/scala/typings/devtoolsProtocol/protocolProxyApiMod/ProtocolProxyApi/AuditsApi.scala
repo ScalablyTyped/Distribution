@@ -32,8 +32,7 @@ trait AuditsApi extends StObject {
 }
 object AuditsApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disable: () => js.Promise[Unit],
     enable: () => js.Promise[Unit],
     getEncodedResponse: GetEncodedResponseRequest => js.Promise[GetEncodedResponseResponse],
@@ -43,19 +42,14 @@ object AuditsApi {
     __obj.asInstanceOf[AuditsApi]
   }
   
-  @scala.inline
-  implicit class AuditsApiMutableBuilder[Self <: AuditsApi] (val x: Self) extends AnyVal {
+  extension [Self <: AuditsApi](x: Self) {
     
-    @scala.inline
-    def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+    inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEncodedResponse(value: GetEncodedResponseRequest => js.Promise[GetEncodedResponseResponse]): Self = StObject.set(x, "getEncodedResponse", js.Any.fromFunction1(value))
+    inline def setGetEncodedResponse(value: GetEncodedResponseRequest => js.Promise[GetEncodedResponseResponse]): Self = StObject.set(x, "getEncodedResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOn(value: (issueAdded, js.Function1[/* params */ IssueAddedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (issueAdded, js.Function1[/* params */ IssueAddedEvent, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

@@ -23,25 +23,19 @@ trait AddRoleToDBClusterMessage extends StObject {
 }
 object AddRoleToDBClusterMessage {
   
-  @scala.inline
-  def apply(DBClusterIdentifier: String, RoleArn: String): AddRoleToDBClusterMessage = {
+  inline def apply(DBClusterIdentifier: String, RoleArn: String): AddRoleToDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddRoleToDBClusterMessage]
   }
   
-  @scala.inline
-  implicit class AddRoleToDBClusterMessageMutableBuilder[Self <: AddRoleToDBClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AddRoleToDBClusterMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureName(value: String): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
+    inline def setFeatureName(value: String): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureNameUndefined: Self = StObject.set(x, "FeatureName", js.undefined)
+    inline def setFeatureNameUndefined: Self = StObject.set(x, "FeatureName", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

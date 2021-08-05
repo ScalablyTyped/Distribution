@@ -31,7 +31,7 @@ object readlineMod {
       *
       * @see https://nodejs.org/dist/latest-v10.x/docs/api/readline.html#readline_class_interface
       */
-    protected def this(input: ReadableStream) = this()
+    /* protected */ def this(input: ReadableStream) = this()
     /**
       * NOTE: According to the documentation:
       *
@@ -40,18 +40,18 @@ object readlineMod {
       *
       * @see https://nodejs.org/dist/latest-v10.x/docs/api/readline.html#readline_class_interface
       */
-    protected def this(options: ReadLineOptions) = this()
-    protected def this(input: ReadableStream, output: WritableStream) = this()
-    protected def this(input: ReadableStream, output: Unit, completer: AsyncCompleter) = this()
-    protected def this(input: ReadableStream, output: Unit, completer: Completer) = this()
-    protected def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter) = this()
-    protected def this(input: ReadableStream, output: WritableStream, completer: Completer) = this()
-    protected def this(input: ReadableStream, output: Unit, completer: Unit, terminal: Boolean) = this()
-    protected def this(input: ReadableStream, output: Unit, completer: AsyncCompleter, terminal: Boolean) = this()
-    protected def this(input: ReadableStream, output: Unit, completer: Completer, terminal: Boolean) = this()
-    protected def this(input: ReadableStream, output: WritableStream, completer: Unit, terminal: Boolean) = this()
-    protected def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean) = this()
-    protected def this(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean) = this()
+    /* protected */ def this(options: ReadLineOptions) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: AsyncCompleter) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: Completer) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: Completer) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: Unit, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: AsyncCompleter, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: Unit, completer: Completer, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: Unit, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean) = this()
+    /* protected */ def this(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean) = this()
     
     @JSName("addListener")
     def addListener_SIGCONT(event: SIGCONT, listener: js.Function0[Unit]): this.type = js.native
@@ -182,70 +182,45 @@ object readlineMod {
   /**
     * Clears the current line of this WriteStream in a direction identified by `dir`.
     */
-  @scala.inline
-  def clearLine(stream: WritableStream, dir: Direction): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearLine")(stream.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def clearLine(stream: WritableStream, dir: Direction, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearLine")(stream.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def clearLine(stream: WritableStream, dir: Direction): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearLine")(stream.asInstanceOf[js.Any], dir.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def clearLine(stream: WritableStream, dir: Direction, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearLine")(stream.asInstanceOf[js.Any], dir.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Clears this `WriteStream` from the current cursor down.
     */
-  @scala.inline
-  def clearScreenDown(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearScreenDown")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def clearScreenDown(stream: WritableStream, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearScreenDown")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def clearScreenDown(stream: WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("clearScreenDown")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def clearScreenDown(stream: WritableStream, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clearScreenDown")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def createInterface(input: ReadableStream): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any]).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: Unit, completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: Unit, completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: Unit, completer: AsyncCompleter, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: Unit, completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: Unit, completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: WritableStream): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: WritableStream, completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: WritableStream, completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
-  @scala.inline
-  def createInterface(options: ReadLineOptions): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(options.asInstanceOf[js.Any]).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any]).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: AsyncCompleter, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: Unit, completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: Unit, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: AsyncCompleter, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: Completer): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(input: ReadableStream, output: WritableStream, completer: Completer, terminal: Boolean): Interface = (^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], completer.asInstanceOf[js.Any], terminal.asInstanceOf[js.Any])).asInstanceOf[Interface]
+  inline def createInterface(options: ReadLineOptions): Interface = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterface")(options.asInstanceOf[js.Any]).asInstanceOf[Interface]
   
   /**
     * Moves this WriteStream's cursor to the specified position.
     */
-  @scala.inline
-  def cursorTo(stream: WritableStream, x: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def cursorTo(stream: WritableStream, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def cursorTo(stream: WritableStream, x: Double, y: Double, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def cursorTo(stream: WritableStream, x: Double, y: Unit, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cursorTo(stream: WritableStream, x: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cursorTo(stream: WritableStream, x: Double, y: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cursorTo(stream: WritableStream, x: Double, y: Double, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def cursorTo(stream: WritableStream, x: Double, y: Unit, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("cursorTo")(stream.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def emitKeypressEvents(stream: ReadableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emitKeypressEvents")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def emitKeypressEvents(stream: ReadableStream, readlineInterface: Interface): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitKeypressEvents")(stream.asInstanceOf[js.Any], readlineInterface.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def emitKeypressEvents(stream: ReadableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("emitKeypressEvents")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def emitKeypressEvents(stream: ReadableStream, readlineInterface: Interface): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emitKeypressEvents")(stream.asInstanceOf[js.Any], readlineInterface.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Moves this WriteStream's cursor relative to its current position.
     */
-  @scala.inline
-  def moveCursor(stream: WritableStream, dx: Double, dy: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("moveCursor")(stream.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def moveCursor(stream: WritableStream, dx: Double, dy: Double, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("moveCursor")(stream.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def moveCursor(stream: WritableStream, dx: Double, dy: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("moveCursor")(stream.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def moveCursor(stream: WritableStream, dx: Double, dy: Double, callback: js.Function0[Unit]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("moveCursor")(stream.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type AsyncCompleter = js.Function2[
     /* line */ java.lang.String, 
@@ -266,20 +241,16 @@ object readlineMod {
   }
   object CursorPos {
     
-    @scala.inline
-    def apply(cols: Double, rows: Double): CursorPos = {
+    inline def apply(cols: Double, rows: Double): CursorPos = {
       val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[CursorPos]
     }
     
-    @scala.inline
-    implicit class CursorPosMutableBuilder[Self <: CursorPos] (val x: Self) extends AnyVal {
+    extension [Self <: CursorPos](x: Self) {
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     }
   }
   
@@ -291,14 +262,11 @@ object readlineMod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def `-1`: typings.node.nodeNumbers.`-1` = -1.asInstanceOf[typings.node.nodeNumbers.`-1`]
+    inline def `-1`: typings.node.nodeNumbers.`-1` = -1.asInstanceOf[typings.node.nodeNumbers.`-1`]
     
-    @scala.inline
-    def `0`: typings.node.nodeNumbers.`0` = 0.asInstanceOf[typings.node.nodeNumbers.`0`]
+    inline def `0`: typings.node.nodeNumbers.`0` = 0.asInstanceOf[typings.node.nodeNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.node.nodeNumbers.`1` = 1.asInstanceOf[typings.node.nodeNumbers.`1`]
+    inline def `1`: typings.node.nodeNumbers.`1` = 1.asInstanceOf[typings.node.nodeNumbers.`1`]
   }
   
   trait Key extends StObject {
@@ -315,44 +283,32 @@ object readlineMod {
   }
   object Key {
     
-    @scala.inline
-    def apply(): Key = {
+    inline def apply(): Key = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Key]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+    extension [Self <: Key](x: Self) {
       
-      @scala.inline
-      def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
+      inline def setCtrl(value: Boolean): Self = StObject.set(x, "ctrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlUndefined: Self = StObject.set(x, "ctrl", js.undefined)
+      inline def setCtrlUndefined: Self = StObject.set(x, "ctrl", js.undefined)
       
-      @scala.inline
-      def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Boolean): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSequence(value: java.lang.String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+      inline def setSequence(value: java.lang.String): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
+      inline def setSequenceUndefined: Self = StObject.set(x, "sequence", js.undefined)
       
-      @scala.inline
-      def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+      inline def setShift(value: Boolean): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
+      inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
     }
   }
   
@@ -382,79 +338,56 @@ object readlineMod {
   }
   object ReadLineOptions {
     
-    @scala.inline
-    def apply(input: ReadableStream): ReadLineOptions = {
+    inline def apply(input: ReadableStream): ReadLineOptions = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadLineOptions]
     }
     
-    @scala.inline
-    implicit class ReadLineOptionsMutableBuilder[Self <: ReadLineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadLineOptions](x: Self) {
       
-      @scala.inline
-      def setCompleter(value: Completer | AsyncCompleter): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
+      inline def setCompleter(value: Completer | AsyncCompleter): Self = StObject.set(x, "completer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompleterFunction1(value: /* line */ java.lang.String => CompleterResult): Self = StObject.set(x, "completer", js.Any.fromFunction1(value))
+      inline def setCompleterFunction1(value: /* line */ java.lang.String => CompleterResult): Self = StObject.set(x, "completer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompleterFunction2(
+      inline def setCompleterFunction2(
         value: (/* line */ java.lang.String, /* callback */ js.Function2[/* err */ js.UndefOr[Null | Error], /* result */ js.UndefOr[CompleterResult], Unit]) => js.Any
       ): Self = StObject.set(x, "completer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompleterUndefined: Self = StObject.set(x, "completer", js.undefined)
+      inline def setCompleterUndefined: Self = StObject.set(x, "completer", js.undefined)
       
-      @scala.inline
-      def setCrlfDelay(value: Double): Self = StObject.set(x, "crlfDelay", value.asInstanceOf[js.Any])
+      inline def setCrlfDelay(value: Double): Self = StObject.set(x, "crlfDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrlfDelayUndefined: Self = StObject.set(x, "crlfDelay", js.undefined)
+      inline def setCrlfDelayUndefined: Self = StObject.set(x, "crlfDelay", js.undefined)
       
-      @scala.inline
-      def setEscapeCodeTimeout(value: Double): Self = StObject.set(x, "escapeCodeTimeout", value.asInstanceOf[js.Any])
+      inline def setEscapeCodeTimeout(value: Double): Self = StObject.set(x, "escapeCodeTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeCodeTimeoutUndefined: Self = StObject.set(x, "escapeCodeTimeout", js.undefined)
+      inline def setEscapeCodeTimeoutUndefined: Self = StObject.set(x, "escapeCodeTimeout", js.undefined)
       
-      @scala.inline
-      def setHistorySize(value: Double): Self = StObject.set(x, "historySize", value.asInstanceOf[js.Any])
+      inline def setHistorySize(value: Double): Self = StObject.set(x, "historySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistorySizeUndefined: Self = StObject.set(x, "historySize", js.undefined)
+      inline def setHistorySizeUndefined: Self = StObject.set(x, "historySize", js.undefined)
       
-      @scala.inline
-      def setInput(value: ReadableStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: ReadableStream): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: WritableStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: WritableStream): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setPrompt(value: java.lang.String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: java.lang.String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
-      @scala.inline
-      def setRemoveHistoryDuplicates(value: Boolean): Self = StObject.set(x, "removeHistoryDuplicates", value.asInstanceOf[js.Any])
+      inline def setRemoveHistoryDuplicates(value: Boolean): Self = StObject.set(x, "removeHistoryDuplicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveHistoryDuplicatesUndefined: Self = StObject.set(x, "removeHistoryDuplicates", js.undefined)
+      inline def setRemoveHistoryDuplicatesUndefined: Self = StObject.set(x, "removeHistoryDuplicates", js.undefined)
       
-      @scala.inline
-      def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+      inline def setTabSize(value: Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
+      inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
       
-      @scala.inline
-      def setTerminal(value: Boolean): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
+      inline def setTerminal(value: Boolean): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
+      inline def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
     }
   }
 }

@@ -20,23 +20,18 @@ object athena {
   }
   object DatabaseEncryptionConfiguration {
     
-    @scala.inline
-    def apply(encryptionOption: String): DatabaseEncryptionConfiguration = {
+    inline def apply(encryptionOption: String): DatabaseEncryptionConfiguration = {
       val __obj = js.Dynamic.literal(encryptionOption = encryptionOption.asInstanceOf[js.Any])
       __obj.asInstanceOf[DatabaseEncryptionConfiguration]
     }
     
-    @scala.inline
-    implicit class DatabaseEncryptionConfigurationMutableBuilder[Self <: DatabaseEncryptionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: DatabaseEncryptionConfiguration](x: Self) {
       
-      @scala.inline
-      def setEncryptionOption(value: String): Self = StObject.set(x, "encryptionOption", value.asInstanceOf[js.Any])
+      inline def setEncryptionOption(value: String): Self = StObject.set(x, "encryptionOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKey(value: String): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
+      inline def setKmsKey(value: String): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
+      inline def setKmsKeyUndefined: Self = StObject.set(x, "kmsKey", js.undefined)
     }
   }
   
@@ -64,38 +59,28 @@ object athena {
   }
   object WorkgroupConfiguration {
     
-    @scala.inline
-    def apply(): WorkgroupConfiguration = {
+    inline def apply(): WorkgroupConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkgroupConfiguration]
     }
     
-    @scala.inline
-    implicit class WorkgroupConfigurationMutableBuilder[Self <: WorkgroupConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: WorkgroupConfiguration](x: Self) {
       
-      @scala.inline
-      def setBytesScannedCutoffPerQuery(value: Double): Self = StObject.set(x, "bytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
+      inline def setBytesScannedCutoffPerQuery(value: Double): Self = StObject.set(x, "bytesScannedCutoffPerQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesScannedCutoffPerQueryUndefined: Self = StObject.set(x, "bytesScannedCutoffPerQuery", js.undefined)
+      inline def setBytesScannedCutoffPerQueryUndefined: Self = StObject.set(x, "bytesScannedCutoffPerQuery", js.undefined)
       
-      @scala.inline
-      def setEnforceWorkgroupConfiguration(value: Boolean): Self = StObject.set(x, "enforceWorkgroupConfiguration", value.asInstanceOf[js.Any])
+      inline def setEnforceWorkgroupConfiguration(value: Boolean): Self = StObject.set(x, "enforceWorkgroupConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnforceWorkgroupConfigurationUndefined: Self = StObject.set(x, "enforceWorkgroupConfiguration", js.undefined)
+      inline def setEnforceWorkgroupConfigurationUndefined: Self = StObject.set(x, "enforceWorkgroupConfiguration", js.undefined)
       
-      @scala.inline
-      def setPublishCloudwatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "publishCloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
+      inline def setPublishCloudwatchMetricsEnabled(value: Boolean): Self = StObject.set(x, "publishCloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublishCloudwatchMetricsEnabledUndefined: Self = StObject.set(x, "publishCloudwatchMetricsEnabled", js.undefined)
+      inline def setPublishCloudwatchMetricsEnabledUndefined: Self = StObject.set(x, "publishCloudwatchMetricsEnabled", js.undefined)
       
-      @scala.inline
-      def setResultConfiguration(value: WorkgroupConfigurationResultConfiguration): Self = StObject.set(x, "resultConfiguration", value.asInstanceOf[js.Any])
+      inline def setResultConfiguration(value: WorkgroupConfigurationResultConfiguration): Self = StObject.set(x, "resultConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultConfigurationUndefined: Self = StObject.set(x, "resultConfiguration", js.undefined)
+      inline def setResultConfigurationUndefined: Self = StObject.set(x, "resultConfiguration", js.undefined)
     }
   }
   
@@ -113,26 +98,20 @@ object athena {
   }
   object WorkgroupConfigurationResultConfiguration {
     
-    @scala.inline
-    def apply(): WorkgroupConfigurationResultConfiguration = {
+    inline def apply(): WorkgroupConfigurationResultConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkgroupConfigurationResultConfiguration]
     }
     
-    @scala.inline
-    implicit class WorkgroupConfigurationResultConfigurationMutableBuilder[Self <: WorkgroupConfigurationResultConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: WorkgroupConfigurationResultConfiguration](x: Self) {
       
-      @scala.inline
-      def setEncryptionConfiguration(value: WorkgroupConfigurationResultConfigurationEncryptionConfiguration): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
+      inline def setEncryptionConfiguration(value: WorkgroupConfigurationResultConfigurationEncryptionConfiguration): Self = StObject.set(x, "encryptionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionConfigurationUndefined: Self = StObject.set(x, "encryptionConfiguration", js.undefined)
+      inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "encryptionConfiguration", js.undefined)
       
-      @scala.inline
-      def setOutputLocation(value: String): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
+      inline def setOutputLocation(value: String): Self = StObject.set(x, "outputLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
+      inline def setOutputLocationUndefined: Self = StObject.set(x, "outputLocation", js.undefined)
     }
   }
   
@@ -150,26 +129,20 @@ object athena {
   }
   object WorkgroupConfigurationResultConfigurationEncryptionConfiguration {
     
-    @scala.inline
-    def apply(): WorkgroupConfigurationResultConfigurationEncryptionConfiguration = {
+    inline def apply(): WorkgroupConfigurationResultConfigurationEncryptionConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkgroupConfigurationResultConfigurationEncryptionConfiguration]
     }
     
-    @scala.inline
-    implicit class WorkgroupConfigurationResultConfigurationEncryptionConfigurationMutableBuilder[Self <: WorkgroupConfigurationResultConfigurationEncryptionConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: WorkgroupConfigurationResultConfigurationEncryptionConfiguration](x: Self) {
       
-      @scala.inline
-      def setEncryptionOption(value: String): Self = StObject.set(x, "encryptionOption", value.asInstanceOf[js.Any])
+      inline def setEncryptionOption(value: String): Self = StObject.set(x, "encryptionOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionOptionUndefined: Self = StObject.set(x, "encryptionOption", js.undefined)
+      inline def setEncryptionOptionUndefined: Self = StObject.set(x, "encryptionOption", js.undefined)
       
-      @scala.inline
-      def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     }
   }
 }

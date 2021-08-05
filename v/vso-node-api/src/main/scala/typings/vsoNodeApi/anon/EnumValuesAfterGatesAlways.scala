@@ -10,16 +10,13 @@ trait EnumValuesAfterGatesAlways extends StObject {
 }
 object EnumValuesAfterGatesAlways {
   
-  @scala.inline
-  def apply(enumValues: AfterGatesAlways): EnumValuesAfterGatesAlways = {
+  inline def apply(enumValues: AfterGatesAlways): EnumValuesAfterGatesAlways = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAfterGatesAlways]
   }
   
-  @scala.inline
-  implicit class EnumValuesAfterGatesAlwaysMutableBuilder[Self <: EnumValuesAfterGatesAlways] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAfterGatesAlways](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: AfterGatesAlways): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: AfterGatesAlways): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

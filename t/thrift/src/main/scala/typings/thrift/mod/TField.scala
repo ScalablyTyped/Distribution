@@ -15,22 +15,17 @@ trait TField extends StObject {
 }
 object TField {
   
-  @scala.inline
-  def apply(fid: Double, fname: String, ftype: Type): TField = {
+  inline def apply(fid: Double, fname: String, ftype: Type): TField = {
     val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], fname = fname.asInstanceOf[js.Any], ftype = ftype.asInstanceOf[js.Any])
     __obj.asInstanceOf[TField]
   }
   
-  @scala.inline
-  implicit class TFieldMutableBuilder[Self <: TField] (val x: Self) extends AnyVal {
+  extension [Self <: TField](x: Self) {
     
-    @scala.inline
-    def setFid(value: Double): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
+    inline def setFid(value: Double): Self = StObject.set(x, "fid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
+    inline def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFtype(value: Type): Self = StObject.set(x, "ftype", value.asInstanceOf[js.Any])
+    inline def setFtype(value: Type): Self = StObject.set(x, "ftype", value.asInstanceOf[js.Any])
   }
 }

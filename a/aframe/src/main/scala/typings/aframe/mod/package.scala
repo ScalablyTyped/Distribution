@@ -5,27 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def AComponent: typings.aframe.mod.Component[js.Any, typings.aframe.mod.System[js.Any]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AComponent").asInstanceOf[typings.aframe.mod.Component[js.Any, typings.aframe.mod.System[js.Any]]]
+inline def AComponent: typings.aframe.mod.Component[js.Any, typings.aframe.mod.System[js.Any]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AComponent").asInstanceOf[typings.aframe.mod.Component[js.Any, typings.aframe.mod.System[js.Any]]]
 
-@scala.inline
-def AEntity: typings.aframe.mod.Entity[
+inline def AEntity: typings.aframe.mod.Entity[
 typings.aframe.mod.ObjectMap[typings.aframe.mod.Component[js.Any, typings.aframe.mod.System[js.Any]]]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AEntity").asInstanceOf[typings.aframe.mod.Entity[
 typings.aframe.mod.ObjectMap[typings.aframe.mod.Component[js.Any, typings.aframe.mod.System[js.Any]]]]]
 
-@scala.inline
-def AScene: typings.aframe.mod.Scene = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AScene").asInstanceOf[typings.aframe.mod.Scene]
+inline def AScene: typings.aframe.mod.Scene = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("AScene").asInstanceOf[typings.aframe.mod.Scene]
 
-@scala.inline
-def components: typings.aframe.mod.ObjectMap[
+inline def components: typings.aframe.mod.ObjectMap[
 typings.aframe.mod.ComponentDescriptor[typings.aframe.mod.Component[js.Any, typings.aframe.mod.System[js.Any]]]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("components").asInstanceOf[typings.aframe.mod.ObjectMap[
 typings.aframe.mod.ComponentDescriptor[typings.aframe.mod.Component[js.Any, typings.aframe.mod.System[js.Any]]]]]
 
-@scala.inline
-def geometries: typings.aframe.mod.ObjectMap[typings.aframe.mod.GeometryDescriptor[typings.aframe.mod.Geometry[js.Any]]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("geometries").asInstanceOf[typings.aframe.mod.ObjectMap[typings.aframe.mod.GeometryDescriptor[typings.aframe.mod.Geometry[js.Any]]]]
+inline def geometries: typings.aframe.mod.ObjectMap[typings.aframe.mod.GeometryDescriptor[typings.aframe.mod.Geometry[js.Any]]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("geometries").asInstanceOf[typings.aframe.mod.ObjectMap[typings.aframe.mod.GeometryDescriptor[typings.aframe.mod.Geometry[js.Any]]]]
 
-@scala.inline
-def registerComponent: js.Function2[
+inline def registerComponent: js.Function2[
 /* name */ java.lang.String, 
 /* component */ typings.aframe.mod.ComponentDefinition[js.Object], 
 typings.aframe.mod.ComponentConstructor[js.Object]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("registerComponent").asInstanceOf[js.Function2[
@@ -33,11 +27,9 @@ typings.aframe.mod.ComponentConstructor[js.Object]] = typings.aframe.mod.^.asIns
 /* component */ typings.aframe.mod.ComponentDefinition[js.Object], 
 typings.aframe.mod.ComponentConstructor[js.Object]]]
 
-@scala.inline
-def registerElement: js.Function2[/* name */ java.lang.String, /* element */ js.Object, scala.Unit] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("registerElement").asInstanceOf[js.Function2[/* name */ java.lang.String, /* element */ js.Object, scala.Unit]]
+inline def registerElement: js.Function2[/* name */ java.lang.String, /* element */ js.Object, scala.Unit] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("registerElement").asInstanceOf[js.Function2[/* name */ java.lang.String, /* element */ js.Object, scala.Unit]]
 
-@scala.inline
-def registerGeometry: js.Function2[
+inline def registerGeometry: js.Function2[
 /* name */ java.lang.String, 
 /* geometry */ typings.aframe.mod.GeometryDefinition[js.Object, js.Any], 
 typings.aframe.mod.GeometryConstructor[js.Object]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("registerGeometry").asInstanceOf[js.Function2[
@@ -45,8 +37,7 @@ typings.aframe.mod.GeometryConstructor[js.Object]] = typings.aframe.mod.^.asInst
 /* geometry */ typings.aframe.mod.GeometryDefinition[js.Object, js.Any], 
 typings.aframe.mod.GeometryConstructor[js.Object]]]
 
-@scala.inline
-def registerPrimitive: js.Function2[
+inline def registerPrimitive: js.Function2[
 /* name */ java.lang.String, 
 /* primitive */ typings.aframe.mod.PrimitiveDefinition, 
 scala.Unit] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("registerPrimitive").asInstanceOf[js.Function2[
@@ -54,8 +45,7 @@ scala.Unit] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("regis
 /* primitive */ typings.aframe.mod.PrimitiveDefinition, 
 scala.Unit]]
 
-@scala.inline
-def registerShader: js.Function2[
+inline def registerShader: js.Function2[
 /* name */ java.lang.String, 
 /* shader */ typings.aframe.mod.ShaderDefinition[typings.aframe.mod.MinimalShaderDefinition & js.Object], 
 typings.aframe.mod.ShaderConstructor[typings.aframe.mod.MinimalShaderDefinition & js.Object]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("registerShader").asInstanceOf[js.Function2[
@@ -63,8 +53,7 @@ typings.aframe.mod.ShaderConstructor[typings.aframe.mod.MinimalShaderDefinition 
 /* shader */ typings.aframe.mod.ShaderDefinition[typings.aframe.mod.MinimalShaderDefinition & js.Object], 
 typings.aframe.mod.ShaderConstructor[typings.aframe.mod.MinimalShaderDefinition & js.Object]]]
 
-@scala.inline
-def registerSystem: js.Function2[
+inline def registerSystem: js.Function2[
 /* name */ java.lang.String, 
 /* definition */ typings.aframe.mod.SystemDefinition[js.Object], 
 typings.aframe.mod.SystemConstructor[js.Object]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("registerSystem").asInstanceOf[js.Function2[
@@ -72,23 +61,17 @@ typings.aframe.mod.SystemConstructor[js.Object]] = typings.aframe.mod.^.asInstan
 /* definition */ typings.aframe.mod.SystemDefinition[js.Object], 
 typings.aframe.mod.SystemConstructor[js.Object]]]
 
-@scala.inline
-def scenes: js.Array[typings.aframe.mod.Scene] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("scenes").asInstanceOf[js.Array[typings.aframe.mod.Scene]]
+inline def scenes: js.Array[typings.aframe.mod.Scene] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("scenes").asInstanceOf[js.Array[typings.aframe.mod.Scene]]
 
-@scala.inline
-def schema: typings.aframe.mod.SchemaUtils = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("schema").asInstanceOf[typings.aframe.mod.SchemaUtils]
+inline def schema: typings.aframe.mod.SchemaUtils = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("schema").asInstanceOf[typings.aframe.mod.SchemaUtils]
 
-@scala.inline
-def shaders: typings.aframe.mod.ObjectMap[typings.aframe.mod.ShaderDescriptor[typings.aframe.mod.Shader]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("shaders").asInstanceOf[typings.aframe.mod.ObjectMap[typings.aframe.mod.ShaderDescriptor[typings.aframe.mod.Shader]]]
+inline def shaders: typings.aframe.mod.ObjectMap[typings.aframe.mod.ShaderDescriptor[typings.aframe.mod.Shader]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("shaders").asInstanceOf[typings.aframe.mod.ObjectMap[typings.aframe.mod.ShaderDescriptor[typings.aframe.mod.Shader]]]
 
-@scala.inline
-def systems: typings.aframe.mod.ObjectMap[typings.aframe.mod.SystemConstructor[js.Object]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("systems").asInstanceOf[typings.aframe.mod.ObjectMap[typings.aframe.mod.SystemConstructor[js.Object]]]
+inline def systems: typings.aframe.mod.ObjectMap[typings.aframe.mod.SystemConstructor[js.Object]] = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("systems").asInstanceOf[typings.aframe.mod.ObjectMap[typings.aframe.mod.SystemConstructor[js.Object]]]
 
-@scala.inline
-def utils: typings.aframe.mod.Utils_ = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("utils").asInstanceOf[typings.aframe.mod.Utils_]
+inline def utils: typings.aframe.mod.Utils_ = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("utils").asInstanceOf[typings.aframe.mod.Utils_]
 
-@scala.inline
-def version: java.lang.String = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
+inline def version: java.lang.String = typings.aframe.mod.^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[java.lang.String]
 
 type ComponentDefinition[T /* <: js.Object */] = T & typings.aframe.anon.PartialComponentanySystem & (typings.std.ThisType[T & (typings.aframe.mod.Component[js.Any, typings.aframe.mod.System[js.Any]])])
 

@@ -10,16 +10,13 @@ trait PauseRequest extends StObject {
 }
 object PauseRequest {
   
-  @scala.inline
-  def apply(customData: js.Object): PauseRequest = {
+  inline def apply(customData: js.Object): PauseRequest = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PauseRequest]
   }
   
-  @scala.inline
-  implicit class PauseRequestMutableBuilder[Self <: PauseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PauseRequest](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
   }
 }

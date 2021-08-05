@@ -10,16 +10,13 @@ trait IBulkResult extends StObject {
 }
 object IBulkResult {
   
-  @scala.inline
-  def apply(rowsAffected: Double): IBulkResult = {
+  inline def apply(rowsAffected: Double): IBulkResult = {
     val __obj = js.Dynamic.literal(rowsAffected = rowsAffected.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBulkResult]
   }
   
-  @scala.inline
-  implicit class IBulkResultMutableBuilder[Self <: IBulkResult] (val x: Self) extends AnyVal {
+  extension [Self <: IBulkResult](x: Self) {
     
-    @scala.inline
-    def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
+    inline def setRowsAffected(value: Double): Self = StObject.set(x, "rowsAffected", value.asInstanceOf[js.Any])
   }
 }

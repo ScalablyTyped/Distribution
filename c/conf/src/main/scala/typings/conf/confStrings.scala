@@ -8,6 +8,5 @@ object confStrings {
   
   @js.native
   sealed trait Schema extends StObject
-  @scala.inline
-  def Schema: Schema = "Schema".asInstanceOf[Schema]
+  inline def Schema: Schema = "Schema".asInstanceOf[Schema]
 }

@@ -26,8 +26,7 @@ trait Codeblock extends StObject {
 }
 object Codeblock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code_block: js.Any,
     code_inline: js.Any,
     fence: js.Any,
@@ -42,34 +41,24 @@ object Codeblock {
     __obj.asInstanceOf[Codeblock]
   }
   
-  @scala.inline
-  implicit class CodeblockMutableBuilder[Self <: Codeblock] (val x: Self) extends AnyVal {
+  extension [Self <: Codeblock](x: Self) {
     
-    @scala.inline
-    def setCode_block(value: js.Any): Self = StObject.set(x, "code_block", value.asInstanceOf[js.Any])
+    inline def setCode_block(value: js.Any): Self = StObject.set(x, "code_block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode_inline(value: js.Any): Self = StObject.set(x, "code_inline", value.asInstanceOf[js.Any])
+    inline def setCode_inline(value: js.Any): Self = StObject.set(x, "code_inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFence(value: js.Any): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
+    inline def setFence(value: js.Any): Self = StObject.set(x, "fence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardbreak(value: js.Any): Self = StObject.set(x, "hardbreak", value.asInstanceOf[js.Any])
+    inline def setHardbreak(value: js.Any): Self = StObject.set(x, "hardbreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_block(value: js.Any): Self = StObject.set(x, "html_block", value.asInstanceOf[js.Any])
+    inline def setHtml_block(value: js.Any): Self = StObject.set(x, "html_block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_inline(value: js.Any): Self = StObject.set(x, "html_inline", value.asInstanceOf[js.Any])
+    inline def setHtml_inline(value: js.Any): Self = StObject.set(x, "html_inline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: js.Any): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftbreak(value: js.Any): Self = StObject.set(x, "softbreak", value.asInstanceOf[js.Any])
+    inline def setSoftbreak(value: js.Any): Self = StObject.set(x, "softbreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

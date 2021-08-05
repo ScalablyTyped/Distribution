@@ -10,6 +10,5 @@ object getSourceMapUrlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSourceMapUrl(fileContents: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceMapUrl")(fileContents.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def getSourceMapUrl(fileContents: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceMapUrl")(fileContents.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

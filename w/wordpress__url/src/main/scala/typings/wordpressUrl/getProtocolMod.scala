@@ -10,6 +10,5 @@ object getProtocolMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProtocol(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtocol")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
+  inline def getProtocol(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getProtocol")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
 }

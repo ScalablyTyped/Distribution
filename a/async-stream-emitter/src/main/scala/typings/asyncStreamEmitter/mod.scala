@@ -93,8 +93,7 @@ object mod {
   }
   object AsyncStreamEmitter {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       closeAllListeners: () => Unit,
       closeListener: String => Unit,
       emit: (String, T) => Unit,
@@ -115,53 +114,37 @@ object mod {
       __obj.asInstanceOf[AsyncStreamEmitter[T]]
     }
     
-    @scala.inline
-    implicit class AsyncStreamEmitterMutableBuilder[Self <: AsyncStreamEmitter[?], T] (val x: Self & AsyncStreamEmitter[T]) extends AnyVal {
+    extension [Self <: AsyncStreamEmitter[?], T](x: Self & AsyncStreamEmitter[T]) {
       
-      @scala.inline
-      def setCloseAllListeners(value: () => Unit): Self = StObject.set(x, "closeAllListeners", js.Any.fromFunction0(value))
+      inline def setCloseAllListeners(value: () => Unit): Self = StObject.set(x, "closeAllListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCloseListener(value: String => Unit): Self = StObject.set(x, "closeListener", js.Any.fromFunction1(value))
+      inline def setCloseListener(value: String => Unit): Self = StObject.set(x, "closeListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmit(value: (String, T) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, T) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetAllListenersBackpressure(value: () => Double): Self = StObject.set(x, "getAllListenersBackpressure", js.Any.fromFunction0(value))
+      inline def setGetAllListenersBackpressure(value: () => Double): Self = StObject.set(x, "getAllListenersBackpressure", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAllListenersConsumerStatsList(value: () => js.Array[ConsumerStats]): Self = StObject.set(x, "getAllListenersConsumerStatsList", js.Any.fromFunction0(value))
+      inline def setGetAllListenersConsumerStatsList(value: () => js.Array[ConsumerStats]): Self = StObject.set(x, "getAllListenersConsumerStatsList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetListenerBackpressure(value: String => Double): Self = StObject.set(x, "getListenerBackpressure", js.Any.fromFunction1(value))
+      inline def setGetListenerBackpressure(value: String => Double): Self = StObject.set(x, "getListenerBackpressure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetListenerConsumerBackpressure(value: Double => Double): Self = StObject.set(x, "getListenerConsumerBackpressure", js.Any.fromFunction1(value))
+      inline def setGetListenerConsumerBackpressure(value: Double => Double): Self = StObject.set(x, "getListenerConsumerBackpressure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetListenerConsumerStats(value: Double => ConsumerStats): Self = StObject.set(x, "getListenerConsumerStats", js.Any.fromFunction1(value))
+      inline def setGetListenerConsumerStats(value: Double => ConsumerStats): Self = StObject.set(x, "getListenerConsumerStats", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetListenerConsumerStatsList(value: String => js.Array[ConsumerStats]): Self = StObject.set(x, "getListenerConsumerStatsList", js.Any.fromFunction1(value))
+      inline def setGetListenerConsumerStatsList(value: String => js.Array[ConsumerStats]): Self = StObject.set(x, "getListenerConsumerStatsList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasAnyListenerConsumer(value: Double => Boolean): Self = StObject.set(x, "hasAnyListenerConsumer", js.Any.fromFunction1(value))
+      inline def setHasAnyListenerConsumer(value: Double => Boolean): Self = StObject.set(x, "hasAnyListenerConsumer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasListenerConsumer(value: (String, Double) => Boolean): Self = StObject.set(x, "hasListenerConsumer", js.Any.fromFunction2(value))
+      inline def setHasListenerConsumer(value: (String, Double) => Boolean): Self = StObject.set(x, "hasListenerConsumer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKillAllListeners(value: () => Unit): Self = StObject.set(x, "killAllListeners", js.Any.fromFunction0(value))
+      inline def setKillAllListeners(value: () => Unit): Self = StObject.set(x, "killAllListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKillListener(value: String => Unit): Self = StObject.set(x, "killListener", js.Any.fromFunction1(value))
+      inline def setKillListener(value: String => Unit): Self = StObject.set(x, "killListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKillListenerConsumer(value: Double => Unit): Self = StObject.set(x, "killListenerConsumer", js.Any.fromFunction1(value))
+      inline def setKillListenerConsumer(value: Double => Unit): Self = StObject.set(x, "killListenerConsumer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListener(value: String => typings.consumableStream.mod.^[T]): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
+      inline def setListener(value: String => typings.consumableStream.mod.^[T]): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
     }
   }
 }

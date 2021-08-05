@@ -20,6 +20,5 @@ object RefreshControl {
   @JSImport("react-native", "RefreshControl.SIZE")
   @js.native
   def SIZE: js.Object = js.native
-  @scala.inline
-  def SIZE_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIZE")(x.asInstanceOf[js.Any])
+  inline def SIZE_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SIZE")(x.asInstanceOf[js.Any])
 }

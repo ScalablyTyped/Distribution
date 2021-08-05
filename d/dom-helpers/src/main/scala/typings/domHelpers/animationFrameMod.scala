@@ -11,8 +11,7 @@ object animationFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cancel(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cancel(id: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("dom-helpers/cjs/animationFrame", "request")
   @js.native

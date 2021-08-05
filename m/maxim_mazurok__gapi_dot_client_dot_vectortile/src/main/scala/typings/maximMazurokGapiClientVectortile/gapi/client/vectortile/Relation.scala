@@ -14,25 +14,19 @@ trait Relation extends StObject {
 }
 object Relation {
   
-  @scala.inline
-  def apply(): Relation = {
+  inline def apply(): Relation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Relation]
   }
   
-  @scala.inline
-  implicit class RelationMutableBuilder[Self <: Relation] (val x: Self) extends AnyVal {
+  extension [Self <: Relation](x: Self) {
     
-    @scala.inline
-    def setRelatedFeatureIndex(value: Double): Self = StObject.set(x, "relatedFeatureIndex", value.asInstanceOf[js.Any])
+    inline def setRelatedFeatureIndex(value: Double): Self = StObject.set(x, "relatedFeatureIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedFeatureIndexUndefined: Self = StObject.set(x, "relatedFeatureIndex", js.undefined)
+    inline def setRelatedFeatureIndexUndefined: Self = StObject.set(x, "relatedFeatureIndex", js.undefined)
     
-    @scala.inline
-    def setRelationType(value: String): Self = StObject.set(x, "relationType", value.asInstanceOf[js.Any])
+    inline def setRelationType(value: String): Self = StObject.set(x, "relationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationTypeUndefined: Self = StObject.set(x, "relationType", js.undefined)
+    inline def setRelationTypeUndefined: Self = StObject.set(x, "relationType", js.undefined)
   }
 }

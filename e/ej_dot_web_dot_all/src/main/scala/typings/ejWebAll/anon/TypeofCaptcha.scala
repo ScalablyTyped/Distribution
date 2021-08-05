@@ -15,19 +15,15 @@ trait TypeofCaptcha extends StObject {
 }
 object TypeofCaptcha {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Captcha): TypeofCaptcha = {
+  inline def apply(Locale: js.Any, fn: Captcha): TypeofCaptcha = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofCaptcha]
   }
   
-  @scala.inline
-  implicit class TypeofCaptchaMutableBuilder[Self <: TypeofCaptcha] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofCaptcha](x: Self) {
     
-    @scala.inline
-    def setFn(value: Captcha): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Captcha): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

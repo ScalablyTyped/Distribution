@@ -19,25 +19,19 @@ trait FourTrafficLightsSet
 }
 object FourTrafficLightsSet {
   
-  @scala.inline
-  def apply(blackCircleWithBorder: Icon, greenCircle: Icon, redCircleWithBorder: Icon, yellowCircle: Icon): FourTrafficLightsSet = {
+  inline def apply(blackCircleWithBorder: Icon, greenCircle: Icon, redCircleWithBorder: Icon, yellowCircle: Icon): FourTrafficLightsSet = {
     val __obj = js.Dynamic.literal(blackCircleWithBorder = blackCircleWithBorder.asInstanceOf[js.Any], greenCircle = greenCircle.asInstanceOf[js.Any], redCircleWithBorder = redCircleWithBorder.asInstanceOf[js.Any], yellowCircle = yellowCircle.asInstanceOf[js.Any])
     __obj.asInstanceOf[FourTrafficLightsSet]
   }
   
-  @scala.inline
-  implicit class FourTrafficLightsSetMutableBuilder[Self <: FourTrafficLightsSet] (val x: Self) extends AnyVal {
+  extension [Self <: FourTrafficLightsSet](x: Self) {
     
-    @scala.inline
-    def setBlackCircleWithBorder(value: Icon): Self = StObject.set(x, "blackCircleWithBorder", value.asInstanceOf[js.Any])
+    inline def setBlackCircleWithBorder(value: Icon): Self = StObject.set(x, "blackCircleWithBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreenCircle(value: Icon): Self = StObject.set(x, "greenCircle", value.asInstanceOf[js.Any])
+    inline def setGreenCircle(value: Icon): Self = StObject.set(x, "greenCircle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedCircleWithBorder(value: Icon): Self = StObject.set(x, "redCircleWithBorder", value.asInstanceOf[js.Any])
+    inline def setRedCircleWithBorder(value: Icon): Self = StObject.set(x, "redCircleWithBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYellowCircle(value: Icon): Self = StObject.set(x, "yellowCircle", value.asInstanceOf[js.Any])
+    inline def setYellowCircle(value: Icon): Self = StObject.set(x, "yellowCircle", value.asInstanceOf[js.Any])
   }
 }

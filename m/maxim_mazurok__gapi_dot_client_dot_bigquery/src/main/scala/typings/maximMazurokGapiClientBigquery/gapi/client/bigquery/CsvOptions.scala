@@ -45,49 +45,35 @@ trait CsvOptions extends StObject {
 }
 object CsvOptions {
   
-  @scala.inline
-  def apply(): CsvOptions = {
+  inline def apply(): CsvOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CsvOptions]
   }
   
-  @scala.inline
-  implicit class CsvOptionsMutableBuilder[Self <: CsvOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CsvOptions](x: Self) {
     
-    @scala.inline
-    def setAllowJaggedRows(value: Boolean): Self = StObject.set(x, "allowJaggedRows", value.asInstanceOf[js.Any])
+    inline def setAllowJaggedRows(value: Boolean): Self = StObject.set(x, "allowJaggedRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowJaggedRowsUndefined: Self = StObject.set(x, "allowJaggedRows", js.undefined)
+    inline def setAllowJaggedRowsUndefined: Self = StObject.set(x, "allowJaggedRows", js.undefined)
     
-    @scala.inline
-    def setAllowQuotedNewlines(value: Boolean): Self = StObject.set(x, "allowQuotedNewlines", value.asInstanceOf[js.Any])
+    inline def setAllowQuotedNewlines(value: Boolean): Self = StObject.set(x, "allowQuotedNewlines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowQuotedNewlinesUndefined: Self = StObject.set(x, "allowQuotedNewlines", js.undefined)
+    inline def setAllowQuotedNewlinesUndefined: Self = StObject.set(x, "allowQuotedNewlines", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
+    inline def setFieldDelimiter(value: String): Self = StObject.set(x, "fieldDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
+    inline def setFieldDelimiterUndefined: Self = StObject.set(x, "fieldDelimiter", js.undefined)
     
-    @scala.inline
-    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+    inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
     
-    @scala.inline
-    def setSkipLeadingRows(value: String): Self = StObject.set(x, "skipLeadingRows", value.asInstanceOf[js.Any])
+    inline def setSkipLeadingRows(value: String): Self = StObject.set(x, "skipLeadingRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipLeadingRowsUndefined: Self = StObject.set(x, "skipLeadingRows", js.undefined)
+    inline def setSkipLeadingRowsUndefined: Self = StObject.set(x, "skipLeadingRows", js.undefined)
   }
 }

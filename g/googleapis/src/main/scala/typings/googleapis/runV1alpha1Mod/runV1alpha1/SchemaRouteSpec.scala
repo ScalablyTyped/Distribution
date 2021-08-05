@@ -25,28 +25,21 @@ trait SchemaRouteSpec extends StObject {
 }
 object SchemaRouteSpec {
   
-  @scala.inline
-  def apply(): SchemaRouteSpec = {
+  inline def apply(): SchemaRouteSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRouteSpec]
   }
   
-  @scala.inline
-  implicit class SchemaRouteSpecMutableBuilder[Self <: SchemaRouteSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRouteSpec](x: Self) {
     
-    @scala.inline
-    def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setTraffic(value: js.Array[SchemaTrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
+    inline def setTraffic(value: js.Array[SchemaTrafficTarget]): Self = StObject.set(x, "traffic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
+    inline def setTrafficUndefined: Self = StObject.set(x, "traffic", js.undefined)
     
-    @scala.inline
-    def setTrafficVarargs(value: SchemaTrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
+    inline def setTrafficVarargs(value: SchemaTrafficTarget*): Self = StObject.set(x, "traffic", js.Array(value :_*))
   }
 }

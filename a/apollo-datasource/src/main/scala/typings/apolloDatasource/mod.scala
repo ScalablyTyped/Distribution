@@ -22,20 +22,16 @@ object mod {
   }
   object DataSourceConfig {
     
-    @scala.inline
-    def apply[TContext](cache: KeyValueCache[String], context: TContext): DataSourceConfig[TContext] = {
+    inline def apply[TContext](cache: KeyValueCache[String], context: TContext): DataSourceConfig[TContext] = {
       val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any])
       __obj.asInstanceOf[DataSourceConfig[TContext]]
     }
     
-    @scala.inline
-    implicit class DataSourceConfigMutableBuilder[Self <: DataSourceConfig[?], TContext] (val x: Self & DataSourceConfig[TContext]) extends AnyVal {
+    extension [Self <: DataSourceConfig[?], TContext](x: Self & DataSourceConfig[TContext]) {
       
-      @scala.inline
-      def setCache(value: KeyValueCache[String]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: KeyValueCache[String]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
   }
 }

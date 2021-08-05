@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): js.Promise[Icon] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Icon]]
-  @scala.inline
-  def apply(url: String, opts: FetchOptions): js.Promise[Icon] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Icon]]
+  inline def apply(url: String): js.Promise[Icon] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Icon]]
+  inline def apply(url: String, opts: FetchOptions): js.Promise[Icon] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Icon]]
   
   @JSImport("page-icon", JSImport.Namespace)
   @js.native

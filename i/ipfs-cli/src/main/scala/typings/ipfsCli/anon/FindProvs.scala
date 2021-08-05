@@ -21,8 +21,7 @@ trait FindProvs extends StObject {
 }
 object FindProvs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     findPeer: () => js.Promise[scala.Nothing],
     findProvs: () => AsyncGenerator[scala.Nothing, scala.Nothing, js.Any],
     get: () => js.Promise[scala.Nothing],
@@ -34,25 +33,18 @@ object FindProvs {
     __obj.asInstanceOf[FindProvs]
   }
   
-  @scala.inline
-  implicit class FindProvsMutableBuilder[Self <: FindProvs] (val x: Self) extends AnyVal {
+  extension [Self <: FindProvs](x: Self) {
     
-    @scala.inline
-    def setFindPeer(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "findPeer", js.Any.fromFunction0(value))
+    inline def setFindPeer(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "findPeer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindProvs(value: () => AsyncGenerator[scala.Nothing, scala.Nothing, js.Any]): Self = StObject.set(x, "findProvs", js.Any.fromFunction0(value))
+    inline def setFindProvs(value: () => AsyncGenerator[scala.Nothing, scala.Nothing, js.Any]): Self = StObject.set(x, "findProvs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProvide(value: () => AsyncGenerator[scala.Nothing, scala.Nothing, js.Any]): Self = StObject.set(x, "provide", js.Any.fromFunction0(value))
+    inline def setProvide(value: () => AsyncGenerator[scala.Nothing, scala.Nothing, js.Any]): Self = StObject.set(x, "provide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPut(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "put", js.Any.fromFunction0(value))
+    inline def setPut(value: () => js.Promise[scala.Nothing]): Self = StObject.set(x, "put", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQuery(value: () => AsyncGenerator[scala.Nothing, scala.Nothing, js.Any]): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => AsyncGenerator[scala.Nothing, scala.Nothing, js.Any]): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
   }
 }

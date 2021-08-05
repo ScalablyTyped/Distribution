@@ -13,19 +13,15 @@ trait ContentCodingWithQualityHeaderValue extends StObject {
 }
 object ContentCodingWithQualityHeaderValue {
   
-  @scala.inline
-  def apply(contentCodingWithQualityHeaderValue: HttpContentCodingWithQualityHeaderValue, returnValue: Boolean): ContentCodingWithQualityHeaderValue = {
+  inline def apply(contentCodingWithQualityHeaderValue: HttpContentCodingWithQualityHeaderValue, returnValue: Boolean): ContentCodingWithQualityHeaderValue = {
     val __obj = js.Dynamic.literal(contentCodingWithQualityHeaderValue = contentCodingWithQualityHeaderValue.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentCodingWithQualityHeaderValue]
   }
   
-  @scala.inline
-  implicit class ContentCodingWithQualityHeaderValueMutableBuilder[Self <: ContentCodingWithQualityHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: ContentCodingWithQualityHeaderValue](x: Self) {
     
-    @scala.inline
-    def setContentCodingWithQualityHeaderValue(value: HttpContentCodingWithQualityHeaderValue): Self = StObject.set(x, "contentCodingWithQualityHeaderValue", value.asInstanceOf[js.Any])
+    inline def setContentCodingWithQualityHeaderValue(value: HttpContentCodingWithQualityHeaderValue): Self = StObject.set(x, "contentCodingWithQualityHeaderValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

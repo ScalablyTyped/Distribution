@@ -21,21 +21,17 @@ object metadataArgsTreeMetadataArgsMod {
   }
   object TreeMetadataArgs {
     
-    @scala.inline
-    def apply(target: js.Function | String, `type`: TreeType): TreeMetadataArgs = {
+    inline def apply(target: js.Function | String, `type`: TreeType): TreeMetadataArgs = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeMetadataArgs]
     }
     
-    @scala.inline
-    implicit class TreeMetadataArgsMutableBuilder[Self <: TreeMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TreeMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: TreeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: TreeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

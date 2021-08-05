@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineSeparatorEnum extends StObject
 object LineSeparatorEnum {
   
-  @scala.inline
-  def adCR: `13` = 13.asInstanceOf[`13`]
+  inline def adCR: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def adCRLF: `-1` = -1.asInstanceOf[`-1`]
+  inline def adCRLF: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def adLF: `10` = 10.asInstanceOf[`10`]
+  inline def adLF: `10` = 10.asInstanceOf[`10`]
 }

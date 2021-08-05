@@ -13,19 +13,15 @@ trait ParentHyperParameterTuningJob extends StObject {
 }
 object ParentHyperParameterTuningJob {
   
-  @scala.inline
-  def apply(): ParentHyperParameterTuningJob = {
+  inline def apply(): ParentHyperParameterTuningJob = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParentHyperParameterTuningJob]
   }
   
-  @scala.inline
-  implicit class ParentHyperParameterTuningJobMutableBuilder[Self <: ParentHyperParameterTuningJob] (val x: Self) extends AnyVal {
+  extension [Self <: ParentHyperParameterTuningJob](x: Self) {
     
-    @scala.inline
-    def setHyperParameterTuningJobName(value: HyperParameterTuningJobName): Self = StObject.set(x, "HyperParameterTuningJobName", value.asInstanceOf[js.Any])
+    inline def setHyperParameterTuningJobName(value: HyperParameterTuningJobName): Self = StObject.set(x, "HyperParameterTuningJobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperParameterTuningJobNameUndefined: Self = StObject.set(x, "HyperParameterTuningJobName", js.undefined)
+    inline def setHyperParameterTuningJobNameUndefined: Self = StObject.set(x, "HyperParameterTuningJobName", js.undefined)
   }
 }

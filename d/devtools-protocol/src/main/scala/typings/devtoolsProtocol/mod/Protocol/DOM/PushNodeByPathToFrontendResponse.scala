@@ -13,16 +13,13 @@ trait PushNodeByPathToFrontendResponse extends StObject {
 }
 object PushNodeByPathToFrontendResponse {
   
-  @scala.inline
-  def apply(nodeId: NodeId): PushNodeByPathToFrontendResponse = {
+  inline def apply(nodeId: NodeId): PushNodeByPathToFrontendResponse = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNodeByPathToFrontendResponse]
   }
   
-  @scala.inline
-  implicit class PushNodeByPathToFrontendResponseMutableBuilder[Self <: PushNodeByPathToFrontendResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PushNodeByPathToFrontendResponse](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

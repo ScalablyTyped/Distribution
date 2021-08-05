@@ -58,55 +58,39 @@ trait ParamsResourceDeploymentsUpdate
 }
 object ParamsResourceDeploymentsUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourceDeploymentsUpdate = {
+  inline def apply(): ParamsResourceDeploymentsUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDeploymentsUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDeploymentsUpdateMutableBuilder[Self <: ParamsResourceDeploymentsUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDeploymentsUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCreatePolicy(value: String): Self = StObject.set(x, "createPolicy", value.asInstanceOf[js.Any])
+    inline def setCreatePolicy(value: String): Self = StObject.set(x, "createPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatePolicyUndefined: Self = StObject.set(x, "createPolicy", js.undefined)
+    inline def setCreatePolicyUndefined: Self = StObject.set(x, "createPolicy", js.undefined)
     
-    @scala.inline
-    def setDeletePolicy(value: String): Self = StObject.set(x, "deletePolicy", value.asInstanceOf[js.Any])
+    inline def setDeletePolicy(value: String): Self = StObject.set(x, "deletePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletePolicyUndefined: Self = StObject.set(x, "deletePolicy", js.undefined)
+    inline def setDeletePolicyUndefined: Self = StObject.set(x, "deletePolicy", js.undefined)
     
-    @scala.inline
-    def setDeployment(value: String): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: String): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
+    inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
     
-    @scala.inline
-    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaDeployment): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaDeployment): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

@@ -23,17 +23,14 @@ object toBeAfterMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toBeAfter: (/* otherDate */ Date, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
+        inline def apply[T](toBeAfter: (/* otherDate */ Date, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toBeAfter = js.Any.fromFunction2(toBeAfter))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToBeAfter(value: (/* otherDate */ Date, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toBeAfter", js.Any.fromFunction2(value))
+          inline def setToBeAfter(value: (/* otherDate */ Date, /* expectationFailOutput */ js.UndefOr[js.Any]) => Boolean): Self = StObject.set(x, "toBeAfter", js.Any.fromFunction2(value))
         }
       }
     }

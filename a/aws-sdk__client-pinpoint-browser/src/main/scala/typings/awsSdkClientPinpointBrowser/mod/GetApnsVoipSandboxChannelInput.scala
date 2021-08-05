@@ -9,8 +9,7 @@ trait GetApnsVoipSandboxChannelInput
      with typings.awsSdkClientPinpointBrowser.typesGetApnsVoipSandboxChannelInputMod.GetApnsVoipSandboxChannelInput
 object GetApnsVoipSandboxChannelInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): GetApnsVoipSandboxChannelInput = {
+  inline def apply(ApplicationId: String): GetApnsVoipSandboxChannelInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApnsVoipSandboxChannelInput]
   }

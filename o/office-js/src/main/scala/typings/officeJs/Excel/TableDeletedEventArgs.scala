@@ -57,29 +57,22 @@ trait TableDeletedEventArgs extends StObject {
 }
 object TableDeletedEventArgs {
   
-  @scala.inline
-  def apply(source: EventSource | Local | Remote, tableId: String, tableName: String, worksheetId: String): TableDeletedEventArgs = {
+  inline def apply(source: EventSource | Local | Remote, tableId: String, tableName: String, worksheetId: String): TableDeletedEventArgs = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], tableId = tableId.asInstanceOf[js.Any], tableName = tableName.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TableDeleted")
     __obj.asInstanceOf[TableDeletedEventArgs]
   }
   
-  @scala.inline
-  implicit class TableDeletedEventArgsMutableBuilder[Self <: TableDeletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TableDeletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TableDeleted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TableDeleted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

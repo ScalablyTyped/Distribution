@@ -12,6 +12,5 @@ object normalizeModelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normalizeModel(model: ApiModel): NormalizedModel = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeModel")(model.asInstanceOf[js.Any]).asInstanceOf[NormalizedModel]
+  inline def normalizeModel(model: ApiModel): NormalizedModel = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeModel")(model.asInstanceOf[js.Any]).asInstanceOf[NormalizedModel]
 }

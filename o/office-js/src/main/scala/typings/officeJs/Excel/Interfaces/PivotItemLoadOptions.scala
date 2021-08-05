@@ -52,43 +52,31 @@ trait PivotItemLoadOptions extends StObject {
 }
 object PivotItemLoadOptions {
   
-  @scala.inline
-  def apply(): PivotItemLoadOptions = {
+  inline def apply(): PivotItemLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotItemLoadOptions]
   }
   
-  @scala.inline
-  implicit class PivotItemLoadOptionsMutableBuilder[Self <: PivotItemLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PivotItemLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+    inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

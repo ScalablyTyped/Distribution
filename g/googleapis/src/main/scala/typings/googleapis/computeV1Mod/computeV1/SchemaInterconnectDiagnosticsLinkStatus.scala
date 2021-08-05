@@ -39,52 +39,37 @@ trait SchemaInterconnectDiagnosticsLinkStatus extends StObject {
 }
 object SchemaInterconnectDiagnosticsLinkStatus {
   
-  @scala.inline
-  def apply(): SchemaInterconnectDiagnosticsLinkStatus = {
+  inline def apply(): SchemaInterconnectDiagnosticsLinkStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInterconnectDiagnosticsLinkStatus]
   }
   
-  @scala.inline
-  implicit class SchemaInterconnectDiagnosticsLinkStatusMutableBuilder[Self <: SchemaInterconnectDiagnosticsLinkStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInterconnectDiagnosticsLinkStatus](x: Self) {
     
-    @scala.inline
-    def setArpCaches(value: js.Array[SchemaInterconnectDiagnosticsARPEntry]): Self = StObject.set(x, "arpCaches", value.asInstanceOf[js.Any])
+    inline def setArpCaches(value: js.Array[SchemaInterconnectDiagnosticsARPEntry]): Self = StObject.set(x, "arpCaches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
+    inline def setArpCachesUndefined: Self = StObject.set(x, "arpCaches", js.undefined)
     
-    @scala.inline
-    def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
+    inline def setArpCachesVarargs(value: SchemaInterconnectDiagnosticsARPEntry*): Self = StObject.set(x, "arpCaches", js.Array(value :_*))
     
-    @scala.inline
-    def setCircuitId(value: String): Self = StObject.set(x, "circuitId", value.asInstanceOf[js.Any])
+    inline def setCircuitId(value: String): Self = StObject.set(x, "circuitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircuitIdUndefined: Self = StObject.set(x, "circuitId", js.undefined)
+    inline def setCircuitIdUndefined: Self = StObject.set(x, "circuitId", js.undefined)
     
-    @scala.inline
-    def setGoogleDemarc(value: String): Self = StObject.set(x, "googleDemarc", value.asInstanceOf[js.Any])
+    inline def setGoogleDemarc(value: String): Self = StObject.set(x, "googleDemarc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleDemarcUndefined: Self = StObject.set(x, "googleDemarc", js.undefined)
+    inline def setGoogleDemarcUndefined: Self = StObject.set(x, "googleDemarc", js.undefined)
     
-    @scala.inline
-    def setLacpStatus(value: SchemaInterconnectDiagnosticsLinkLACPStatus): Self = StObject.set(x, "lacpStatus", value.asInstanceOf[js.Any])
+    inline def setLacpStatus(value: SchemaInterconnectDiagnosticsLinkLACPStatus): Self = StObject.set(x, "lacpStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLacpStatusUndefined: Self = StObject.set(x, "lacpStatus", js.undefined)
+    inline def setLacpStatusUndefined: Self = StObject.set(x, "lacpStatus", js.undefined)
     
-    @scala.inline
-    def setReceivingOpticalPower(value: SchemaInterconnectDiagnosticsLinkOpticalPower): Self = StObject.set(x, "receivingOpticalPower", value.asInstanceOf[js.Any])
+    inline def setReceivingOpticalPower(value: SchemaInterconnectDiagnosticsLinkOpticalPower): Self = StObject.set(x, "receivingOpticalPower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivingOpticalPowerUndefined: Self = StObject.set(x, "receivingOpticalPower", js.undefined)
+    inline def setReceivingOpticalPowerUndefined: Self = StObject.set(x, "receivingOpticalPower", js.undefined)
     
-    @scala.inline
-    def setTransmittingOpticalPower(value: SchemaInterconnectDiagnosticsLinkOpticalPower): Self = StObject.set(x, "transmittingOpticalPower", value.asInstanceOf[js.Any])
+    inline def setTransmittingOpticalPower(value: SchemaInterconnectDiagnosticsLinkOpticalPower): Self = StObject.set(x, "transmittingOpticalPower", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransmittingOpticalPowerUndefined: Self = StObject.set(x, "transmittingOpticalPower", js.undefined)
+    inline def setTransmittingOpticalPowerUndefined: Self = StObject.set(x, "transmittingOpticalPower", js.undefined)
   }
 }

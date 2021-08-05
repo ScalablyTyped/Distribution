@@ -12,19 +12,15 @@ trait GetACLResult extends StObject {
 }
 object GetACLResult {
   
-  @scala.inline
-  def apply(acl: ACLType, res: NormalSuccessResponse): GetACLResult = {
+  inline def apply(acl: ACLType, res: NormalSuccessResponse): GetACLResult = {
     val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetACLResult]
   }
   
-  @scala.inline
-  implicit class GetACLResultMutableBuilder[Self <: GetACLResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetACLResult](x: Self) {
     
-    @scala.inline
-    def setAcl(value: ACLType): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    inline def setAcl(value: ACLType): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: NormalSuccessResponse): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
   }
 }

@@ -35,8 +35,7 @@ trait GetCredentialsForIdentityInput extends StObject {
 }
 object GetCredentialsForIdentityInput {
   
-  @scala.inline
-  def apply(): GetCredentialsForIdentityInput = {
+  inline def apply(): GetCredentialsForIdentityInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCredentialsForIdentityInput]
   }
@@ -45,28 +44,20 @@ object GetCredentialsForIdentityInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: GetCredentialsForIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: GetCredentialsForIdentityInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class GetCredentialsForIdentityInputMutableBuilder[Self <: GetCredentialsForIdentityInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCredentialsForIdentityInput](x: Self) {
     
-    @scala.inline
-    def setCustomRoleArn(value: String): Self = StObject.set(x, "CustomRoleArn", value.asInstanceOf[js.Any])
+    inline def setCustomRoleArn(value: String): Self = StObject.set(x, "CustomRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomRoleArnUndefined: Self = StObject.set(x, "CustomRoleArn", js.undefined)
+    inline def setCustomRoleArnUndefined: Self = StObject.set(x, "CustomRoleArn", js.undefined)
     
-    @scala.inline
-    def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     
-    @scala.inline
-    def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+    inline def setLogins(value: StringDictionary[String]): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
+    inline def setLoginsUndefined: Self = StObject.set(x, "Logins", js.undefined)
   }
 }

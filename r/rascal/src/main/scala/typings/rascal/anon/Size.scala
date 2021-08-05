@@ -15,23 +15,18 @@ trait Size extends StObject {
 }
 object Size {
   
-  @scala.inline
-  def apply(`type`: stub | inMemory | inMemoryCluster): Size = {
+  inline def apply(`type`: stub | inMemory | inMemoryCluster): Size = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Size]
   }
   
-  @scala.inline
-  implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+  extension [Self <: Size](x: Self) {
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setType(value: stub | inMemory | inMemoryCluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: stub | inMemory | inMemoryCluster): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

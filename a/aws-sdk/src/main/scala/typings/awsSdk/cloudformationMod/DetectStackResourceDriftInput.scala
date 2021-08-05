@@ -18,19 +18,15 @@ trait DetectStackResourceDriftInput extends StObject {
 }
 object DetectStackResourceDriftInput {
   
-  @scala.inline
-  def apply(LogicalResourceId: LogicalResourceId, StackName: StackNameOrId): DetectStackResourceDriftInput = {
+  inline def apply(LogicalResourceId: LogicalResourceId, StackName: StackNameOrId): DetectStackResourceDriftInput = {
     val __obj = js.Dynamic.literal(LogicalResourceId = LogicalResourceId.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectStackResourceDriftInput]
   }
   
-  @scala.inline
-  implicit class DetectStackResourceDriftInputMutableBuilder[Self <: DetectStackResourceDriftInput] (val x: Self) extends AnyVal {
+  extension [Self <: DetectStackResourceDriftInput](x: Self) {
     
-    @scala.inline
-    def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
+    inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
   }
 }

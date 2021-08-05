@@ -63,79 +63,55 @@ trait Backup extends StObject {
 }
 object Backup {
   
-  @scala.inline
-  def apply(BackupId: BackupId): Backup = {
+  inline def apply(BackupId: BackupId): Backup = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Backup]
   }
   
-  @scala.inline
-  implicit class BackupMutableBuilder[Self <: Backup] (val x: Self) extends AnyVal {
+  extension [Self <: Backup](x: Self) {
     
-    @scala.inline
-    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
+    inline def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupState(value: BackupState): Self = StObject.set(x, "BackupState", value.asInstanceOf[js.Any])
+    inline def setBackupState(value: BackupState): Self = StObject.set(x, "BackupState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupStateUndefined: Self = StObject.set(x, "BackupState", js.undefined)
+    inline def setBackupStateUndefined: Self = StObject.set(x, "BackupState", js.undefined)
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
-    @scala.inline
-    def setCopyTimestamp(value: Timestamp): Self = StObject.set(x, "CopyTimestamp", value.asInstanceOf[js.Any])
+    inline def setCopyTimestamp(value: Timestamp): Self = StObject.set(x, "CopyTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyTimestampUndefined: Self = StObject.set(x, "CopyTimestamp", js.undefined)
+    inline def setCopyTimestampUndefined: Self = StObject.set(x, "CopyTimestamp", js.undefined)
     
-    @scala.inline
-    def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreateTimestamp(value: Timestamp): Self = StObject.set(x, "CreateTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
+    inline def setCreateTimestampUndefined: Self = StObject.set(x, "CreateTimestamp", js.undefined)
     
-    @scala.inline
-    def setDeleteTimestamp(value: Timestamp): Self = StObject.set(x, "DeleteTimestamp", value.asInstanceOf[js.Any])
+    inline def setDeleteTimestamp(value: Timestamp): Self = StObject.set(x, "DeleteTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteTimestampUndefined: Self = StObject.set(x, "DeleteTimestamp", js.undefined)
+    inline def setDeleteTimestampUndefined: Self = StObject.set(x, "DeleteTimestamp", js.undefined)
     
-    @scala.inline
-    def setNeverExpires(value: Boolean): Self = StObject.set(x, "NeverExpires", value.asInstanceOf[js.Any])
+    inline def setNeverExpires(value: Boolean): Self = StObject.set(x, "NeverExpires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeverExpiresUndefined: Self = StObject.set(x, "NeverExpires", js.undefined)
+    inline def setNeverExpiresUndefined: Self = StObject.set(x, "NeverExpires", js.undefined)
     
-    @scala.inline
-    def setSourceBackup(value: BackupId): Self = StObject.set(x, "SourceBackup", value.asInstanceOf[js.Any])
+    inline def setSourceBackup(value: BackupId): Self = StObject.set(x, "SourceBackup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupUndefined: Self = StObject.set(x, "SourceBackup", js.undefined)
+    inline def setSourceBackupUndefined: Self = StObject.set(x, "SourceBackup", js.undefined)
     
-    @scala.inline
-    def setSourceCluster(value: ClusterId): Self = StObject.set(x, "SourceCluster", value.asInstanceOf[js.Any])
+    inline def setSourceCluster(value: ClusterId): Self = StObject.set(x, "SourceCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceClusterUndefined: Self = StObject.set(x, "SourceCluster", js.undefined)
+    inline def setSourceClusterUndefined: Self = StObject.set(x, "SourceCluster", js.undefined)
     
-    @scala.inline
-    def setSourceRegion(value: Region): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
+    inline def setSourceRegion(value: Region): Self = StObject.set(x, "SourceRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRegionUndefined: Self = StObject.set(x, "SourceRegion", js.undefined)
+    inline def setSourceRegionUndefined: Self = StObject.set(x, "SourceRegion", js.undefined)
     
-    @scala.inline
-    def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
+    inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
+    inline def setTagListUndefined: Self = StObject.set(x, "TagList", js.undefined)
     
-    @scala.inline
-    def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
+    inline def setTagListVarargs(value: Tag*): Self = StObject.set(x, "TagList", js.Array(value :_*))
   }
 }

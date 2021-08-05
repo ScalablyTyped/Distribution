@@ -19,6 +19,5 @@ object Stepper {
   @JSImport("@ant-design/react-native", "Stepper.defaultProps")
   @js.native
   def defaultProps: StepProps = js.native
-  @scala.inline
-  def defaultProps_=(x: StepProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: StepProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -12,8 +12,7 @@ object generatorWindowsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def copyProjectTemplateAndReplace(
+  inline def copyProjectTemplateAndReplace(
     srcRootPath: String,
     destPath: String,
     newProjectName: String,
@@ -21,6 +20,5 @@ object generatorWindowsMod {
     options: GenerateOptions
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyProjectTemplateAndReplace")(srcRootPath.asInstanceOf[js.Any], destPath.asInstanceOf[js.Any], newProjectName.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def installDependencies(options: Verbose): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installDependencies")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def installDependencies(options: Verbose): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installDependencies")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

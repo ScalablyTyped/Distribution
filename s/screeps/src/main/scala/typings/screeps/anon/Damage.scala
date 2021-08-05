@@ -11,16 +11,13 @@ trait Damage extends StObject {
 }
 object Damage {
   
-  @scala.inline
-  def apply(): Damage = {
+  inline def apply(): Damage = {
     val __obj = js.Dynamic.literal(damage = 0.7)
     __obj.asInstanceOf[Damage]
   }
   
-  @scala.inline
-  implicit class DamageMutableBuilder[Self <: Damage] (val x: Self) extends AnyVal {
+  extension [Self <: Damage](x: Self) {
     
-    @scala.inline
-    def setDamage(value: `0.7`): Self = StObject.set(x, "damage", value.asInstanceOf[js.Any])
+    inline def setDamage(value: `0.7`): Self = StObject.set(x, "damage", value.asInstanceOf[js.Any])
   }
 }

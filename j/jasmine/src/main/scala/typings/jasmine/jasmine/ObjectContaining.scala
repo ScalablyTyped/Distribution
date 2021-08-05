@@ -25,8 +25,7 @@ trait ObjectContaining[T]
 }
 object ObjectContaining {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     asymmetricMatch: (T, js.Array[CustomEqualityTester]) => Boolean,
     jasmineMatches: (js.Any, js.Array[js.Any], js.Array[js.Any]) => Boolean
   ): ObjectContaining[T] = {
@@ -34,14 +33,11 @@ object ObjectContaining {
     __obj.asInstanceOf[ObjectContaining[T]]
   }
   
-  @scala.inline
-  implicit class ObjectContainingMutableBuilder[Self <: ObjectContaining[?], T] (val x: Self & ObjectContaining[T]) extends AnyVal {
+  extension [Self <: ObjectContaining[?], T](x: Self & ObjectContaining[T]) {
     
-    @scala.inline
-    def setJasmineMatches(value: (js.Any, js.Array[js.Any], js.Array[js.Any]) => Boolean): Self = StObject.set(x, "jasmineMatches", js.Any.fromFunction3(value))
+    inline def setJasmineMatches(value: (js.Any, js.Array[js.Any], js.Array[js.Any]) => Boolean): Self = StObject.set(x, "jasmineMatches", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNew(
+    inline def setNew(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? any}
       */ /* sample */ typings.jasmine.jasmineStrings.ObjectContaining & TopLevel[js.Any] => /* import warning: importer.ImportType#apply c Unsupported type mapping: 
@@ -49,7 +45,6 @@ object ObjectContaining {
       */ typings.jasmine.jasmineStrings.ObjectContaining & TopLevel[js.Any]
     ): Self = StObject.set(x, "new", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
+    inline def setNewUndefined: Self = StObject.set(x, "new", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait ThirdPartyVerifierAssignedTargetingOptionDetails extends StObject {
 }
 object ThirdPartyVerifierAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ThirdPartyVerifierAssignedTargetingOptionDetails = {
+  inline def apply(): ThirdPartyVerifierAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThirdPartyVerifierAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ThirdPartyVerifierAssignedTargetingOptionDetailsMutableBuilder[Self <: ThirdPartyVerifierAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ThirdPartyVerifierAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setAdloox(value: Adloox): Self = StObject.set(x, "adloox", value.asInstanceOf[js.Any])
+    inline def setAdloox(value: Adloox): Self = StObject.set(x, "adloox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdlooxUndefined: Self = StObject.set(x, "adloox", js.undefined)
+    inline def setAdlooxUndefined: Self = StObject.set(x, "adloox", js.undefined)
     
-    @scala.inline
-    def setDoubleVerify(value: DoubleVerify): Self = StObject.set(x, "doubleVerify", value.asInstanceOf[js.Any])
+    inline def setDoubleVerify(value: DoubleVerify): Self = StObject.set(x, "doubleVerify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleVerifyUndefined: Self = StObject.set(x, "doubleVerify", js.undefined)
+    inline def setDoubleVerifyUndefined: Self = StObject.set(x, "doubleVerify", js.undefined)
     
-    @scala.inline
-    def setIntegralAdScience(value: IntegralAdScience): Self = StObject.set(x, "integralAdScience", value.asInstanceOf[js.Any])
+    inline def setIntegralAdScience(value: IntegralAdScience): Self = StObject.set(x, "integralAdScience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegralAdScienceUndefined: Self = StObject.set(x, "integralAdScience", js.undefined)
+    inline def setIntegralAdScienceUndefined: Self = StObject.set(x, "integralAdScience", js.undefined)
   }
 }

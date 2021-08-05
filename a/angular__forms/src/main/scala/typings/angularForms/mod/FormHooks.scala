@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormHooks extends StObject
 object FormHooks {
   
-  @scala.inline
-  def blur: typings.angularForms.angularFormsStrings.blur = "blur".asInstanceOf[typings.angularForms.angularFormsStrings.blur]
+  inline def blur: typings.angularForms.angularFormsStrings.blur = "blur".asInstanceOf[typings.angularForms.angularFormsStrings.blur]
   
-  @scala.inline
-  def change: typings.angularForms.angularFormsStrings.change = "change".asInstanceOf[typings.angularForms.angularFormsStrings.change]
+  inline def change: typings.angularForms.angularFormsStrings.change = "change".asInstanceOf[typings.angularForms.angularFormsStrings.change]
   
-  @scala.inline
-  def submit: typings.angularForms.angularFormsStrings.submit = "submit".asInstanceOf[typings.angularForms.angularFormsStrings.submit]
+  inline def submit: typings.angularForms.angularFormsStrings.submit = "submit".asInstanceOf[typings.angularForms.angularFormsStrings.submit]
 }

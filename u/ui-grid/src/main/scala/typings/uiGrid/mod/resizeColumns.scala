@@ -17,20 +17,16 @@ object resizeColumns {
   }
   object IColumnDef {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.resizeColumns.IColumnDef = {
+    inline def apply(): typings.uiGrid.mod.resizeColumns.IColumnDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.resizeColumns.IColumnDef]
     }
     
-    @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.resizeColumns.IColumnDef] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.resizeColumns.IColumnDef](x: Self) {
       
-      @scala.inline
-      def setEnableColumnResizing(value: Boolean): Self = StObject.set(x, "enableColumnResizing", value.asInstanceOf[js.Any])
+      inline def setEnableColumnResizing(value: Boolean): Self = StObject.set(x, "enableColumnResizing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableColumnResizingUndefined: Self = StObject.set(x, "enableColumnResizing", js.undefined)
+      inline def setEnableColumnResizingUndefined: Self = StObject.set(x, "enableColumnResizing", js.undefined)
     }
   }
   
@@ -45,20 +41,16 @@ object resizeColumns {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.resizeColumns.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.resizeColumns.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.resizeColumns.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.resizeColumns.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.resizeColumns.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setEnableColumnResizing(value: Boolean): Self = StObject.set(x, "enableColumnResizing", value.asInstanceOf[js.Any])
+      inline def setEnableColumnResizing(value: Boolean): Self = StObject.set(x, "enableColumnResizing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableColumnResizingUndefined: Self = StObject.set(x, "enableColumnResizing", js.undefined)
+      inline def setEnableColumnResizingUndefined: Self = StObject.set(x, "enableColumnResizing", js.undefined)
     }
   }
   
@@ -69,17 +61,14 @@ object resizeColumns {
   }
   object IGridResizeColumnsApi {
     
-    @scala.inline
-    def apply(on: ColumnSizeChanged): IGridResizeColumnsApi = {
+    inline def apply(on: ColumnSizeChanged): IGridResizeColumnsApi = {
       val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGridResizeColumnsApi]
     }
     
-    @scala.inline
-    implicit class IGridResizeColumnsApiMutableBuilder[Self <: IGridResizeColumnsApi] (val x: Self) extends AnyVal {
+    extension [Self <: IGridResizeColumnsApi](x: Self) {
       
-      @scala.inline
-      def setOn(value: ColumnSizeChanged): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: ColumnSizeChanged): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }
   }
   

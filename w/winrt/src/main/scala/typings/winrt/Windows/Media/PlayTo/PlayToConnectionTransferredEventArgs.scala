@@ -9,8 +9,7 @@ trait PlayToConnectionTransferredEventArgs
      with IPlayToConnectionTransferredEventArgs
 object PlayToConnectionTransferredEventArgs {
   
-  @scala.inline
-  def apply(currentSource: PlayToSource, previousSource: PlayToSource): PlayToConnectionTransferredEventArgs = {
+  inline def apply(currentSource: PlayToSource, previousSource: PlayToSource): PlayToConnectionTransferredEventArgs = {
     val __obj = js.Dynamic.literal(currentSource = currentSource.asInstanceOf[js.Any], previousSource = previousSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayToConnectionTransferredEventArgs]
   }

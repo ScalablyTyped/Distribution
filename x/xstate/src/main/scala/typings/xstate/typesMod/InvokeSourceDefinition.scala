@@ -13,17 +13,14 @@ trait InvokeSourceDefinition
 }
 object InvokeSourceDefinition {
   
-  @scala.inline
-  def apply(`type`: String): InvokeSourceDefinition = {
+  inline def apply(`type`: String): InvokeSourceDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeSourceDefinition]
   }
   
-  @scala.inline
-  implicit class InvokeSourceDefinitionMutableBuilder[Self <: InvokeSourceDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: InvokeSourceDefinition](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

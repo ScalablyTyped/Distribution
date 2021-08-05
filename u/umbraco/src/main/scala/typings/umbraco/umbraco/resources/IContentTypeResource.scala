@@ -48,8 +48,7 @@ trait IContentTypeResource extends StObject {
 }
 object IContentTypeResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAllPropertyTypeAliases: () => IPromise[IResourcePromise],
     getAllowedTypes: Double => IPromise[IResourcePromise]
   ): IContentTypeResource = {
@@ -57,13 +56,10 @@ object IContentTypeResource {
     __obj.asInstanceOf[IContentTypeResource]
   }
   
-  @scala.inline
-  implicit class IContentTypeResourceMutableBuilder[Self <: IContentTypeResource] (val x: Self) extends AnyVal {
+  extension [Self <: IContentTypeResource](x: Self) {
     
-    @scala.inline
-    def setGetAllPropertyTypeAliases(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllPropertyTypeAliases", js.Any.fromFunction0(value))
+    inline def setGetAllPropertyTypeAliases(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllPropertyTypeAliases", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllowedTypes", js.Any.fromFunction1(value))
+    inline def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllowedTypes", js.Any.fromFunction1(value))
   }
 }

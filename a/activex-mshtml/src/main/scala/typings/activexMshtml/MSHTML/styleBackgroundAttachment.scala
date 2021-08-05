@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleBackgroundAttachment extends StObject
 object styleBackgroundAttachment {
   
-  @scala.inline
-  def styleBackgroundAttachmentFixed: `0` = 0.asInstanceOf[`0`]
+  inline def styleBackgroundAttachmentFixed: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleBackgroundAttachmentNotSet: `2` = 2.asInstanceOf[`2`]
+  inline def styleBackgroundAttachmentNotSet: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleBackgroundAttachmentScroll: `1` = 1.asInstanceOf[`1`]
+  inline def styleBackgroundAttachmentScroll: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleBackgroundAttachment_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleBackgroundAttachment_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

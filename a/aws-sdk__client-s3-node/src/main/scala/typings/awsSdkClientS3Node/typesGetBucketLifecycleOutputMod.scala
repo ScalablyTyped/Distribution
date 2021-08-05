@@ -22,23 +22,18 @@ object typesGetBucketLifecycleOutputMod {
   }
   object GetBucketLifecycleOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketLifecycleOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketLifecycleOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketLifecycleOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketLifecycleOutputMutableBuilder[Self <: GetBucketLifecycleOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketLifecycleOutput](x: Self) {
       
-      @scala.inline
-      def setRules(value: js.Array[UnmarshalledRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[UnmarshalledRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: UnmarshalledRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: UnmarshalledRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     }
   }
 }

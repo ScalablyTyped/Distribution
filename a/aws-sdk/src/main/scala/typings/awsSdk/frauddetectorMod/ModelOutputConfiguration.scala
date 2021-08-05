@@ -23,28 +23,21 @@ trait ModelOutputConfiguration extends StObject {
 }
 object ModelOutputConfiguration {
   
-  @scala.inline
-  def apply(format: ModelOutputDataFormat): ModelOutputConfiguration = {
+  inline def apply(format: ModelOutputDataFormat): ModelOutputConfiguration = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModelOutputConfiguration]
   }
   
-  @scala.inline
-  implicit class ModelOutputConfigurationMutableBuilder[Self <: ModelOutputConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ModelOutputConfiguration](x: Self) {
     
-    @scala.inline
-    def setCsvIndexToVariableMap(value: CsvIndexToVariableMap): Self = StObject.set(x, "csvIndexToVariableMap", value.asInstanceOf[js.Any])
+    inline def setCsvIndexToVariableMap(value: CsvIndexToVariableMap): Self = StObject.set(x, "csvIndexToVariableMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvIndexToVariableMapUndefined: Self = StObject.set(x, "csvIndexToVariableMap", js.undefined)
+    inline def setCsvIndexToVariableMapUndefined: Self = StObject.set(x, "csvIndexToVariableMap", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ModelOutputDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ModelOutputDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonKeyToVariableMap(value: JsonKeyToVariableMap): Self = StObject.set(x, "jsonKeyToVariableMap", value.asInstanceOf[js.Any])
+    inline def setJsonKeyToVariableMap(value: JsonKeyToVariableMap): Self = StObject.set(x, "jsonKeyToVariableMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonKeyToVariableMapUndefined: Self = StObject.set(x, "jsonKeyToVariableMap", js.undefined)
+    inline def setJsonKeyToVariableMapUndefined: Self = StObject.set(x, "jsonKeyToVariableMap", js.undefined)
   }
 }

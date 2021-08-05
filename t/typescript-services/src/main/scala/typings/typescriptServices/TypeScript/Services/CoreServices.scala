@@ -23,8 +23,7 @@ trait CoreServices extends StObject {
 }
 object CoreServices {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     collectGarbage: () => Unit,
     dumpMemory: () => String,
     getDefaultCompilationSettings: () => CompilationSettings,
@@ -36,25 +35,18 @@ object CoreServices {
     __obj.asInstanceOf[CoreServices]
   }
   
-  @scala.inline
-  implicit class CoreServicesMutableBuilder[Self <: CoreServices] (val x: Self) extends AnyVal {
+  extension [Self <: CoreServices](x: Self) {
     
-    @scala.inline
-    def setCollectGarbage(value: () => Unit): Self = StObject.set(x, "collectGarbage", js.Any.fromFunction0(value))
+    inline def setCollectGarbage(value: () => Unit): Self = StObject.set(x, "collectGarbage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDumpMemory(value: () => String): Self = StObject.set(x, "dumpMemory", js.Any.fromFunction0(value))
+    inline def setDumpMemory(value: () => String): Self = StObject.set(x, "dumpMemory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultCompilationSettings(value: () => CompilationSettings): Self = StObject.set(x, "getDefaultCompilationSettings", js.Any.fromFunction0(value))
+    inline def setGetDefaultCompilationSettings(value: () => CompilationSettings): Self = StObject.set(x, "getDefaultCompilationSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMemoryInfo(value: () => js.Array[js.Any]): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction0(value))
+    inline def setGetMemoryInfo(value: () => js.Array[js.Any]): Self = StObject.set(x, "getMemoryInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPreProcessedFileInfo(value: (String, IScriptSnapshot) => IPreProcessedFileInfo): Self = StObject.set(x, "getPreProcessedFileInfo", js.Any.fromFunction2(value))
+    inline def setGetPreProcessedFileInfo(value: (String, IScriptSnapshot) => IPreProcessedFileInfo): Self = StObject.set(x, "getPreProcessedFileInfo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHost(value: ICoreServicesHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: ICoreServicesHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
   }
 }

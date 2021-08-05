@@ -12,19 +12,15 @@ trait DataMask extends StObject {
 }
 object DataMask {
   
-  @scala.inline
-  def apply(isMasked: (Double, Double) => Boolean, unmaskBitMatrix: (js.Array[Double], Double) => Unit): DataMask = {
+  inline def apply(isMasked: (Double, Double) => Boolean, unmaskBitMatrix: (js.Array[Double], Double) => Unit): DataMask = {
     val __obj = js.Dynamic.literal(isMasked = js.Any.fromFunction2(isMasked), unmaskBitMatrix = js.Any.fromFunction2(unmaskBitMatrix))
     __obj.asInstanceOf[DataMask]
   }
   
-  @scala.inline
-  implicit class DataMaskMutableBuilder[Self <: DataMask] (val x: Self) extends AnyVal {
+  extension [Self <: DataMask](x: Self) {
     
-    @scala.inline
-    def setIsMasked(value: (Double, Double) => Boolean): Self = StObject.set(x, "isMasked", js.Any.fromFunction2(value))
+    inline def setIsMasked(value: (Double, Double) => Boolean): Self = StObject.set(x, "isMasked", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnmaskBitMatrix(value: (js.Array[Double], Double) => Unit): Self = StObject.set(x, "unmaskBitMatrix", js.Any.fromFunction2(value))
+    inline def setUnmaskBitMatrix(value: (js.Array[Double], Double) => Unit): Self = StObject.set(x, "unmaskBitMatrix", js.Any.fromFunction2(value))
   }
 }

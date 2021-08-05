@@ -48,8 +48,7 @@ trait b2DistanceJoint
 }
 object b2DistanceJoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetAnchorA: () => b2Vec2,
     GetAnchorB: () => b2Vec2,
     GetBodyA: () => b2Body,
@@ -72,25 +71,18 @@ object b2DistanceJoint {
     __obj.asInstanceOf[b2DistanceJoint]
   }
   
-  @scala.inline
-  implicit class b2DistanceJointMutableBuilder[Self <: b2DistanceJoint] (val x: Self) extends AnyVal {
+  extension [Self <: b2DistanceJoint](x: Self) {
     
-    @scala.inline
-    def setGetDampingRatio(value: () => Double): Self = StObject.set(x, "GetDampingRatio", js.Any.fromFunction0(value))
+    inline def setGetDampingRatio(value: () => Double): Self = StObject.set(x, "GetDampingRatio", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFrequency(value: () => Double): Self = StObject.set(x, "GetFrequency", js.Any.fromFunction0(value))
+    inline def setGetFrequency(value: () => Double): Self = StObject.set(x, "GetFrequency", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLength(value: () => Double): Self = StObject.set(x, "GetLength", js.Any.fromFunction0(value))
+    inline def setGetLength(value: () => Double): Self = StObject.set(x, "GetLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDampingRatio(value: Double => Unit): Self = StObject.set(x, "SetDampingRatio", js.Any.fromFunction1(value))
+    inline def setSetDampingRatio(value: Double => Unit): Self = StObject.set(x, "SetDampingRatio", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFrequency(value: Double => Unit): Self = StObject.set(x, "SetFrequency", js.Any.fromFunction1(value))
+    inline def setSetFrequency(value: Double => Unit): Self = StObject.set(x, "SetFrequency", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLength(value: Double => Unit): Self = StObject.set(x, "SetLength", js.Any.fromFunction1(value))
+    inline def setSetLength(value: Double => Unit): Self = StObject.set(x, "SetLength", js.Any.fromFunction1(value))
   }
 }

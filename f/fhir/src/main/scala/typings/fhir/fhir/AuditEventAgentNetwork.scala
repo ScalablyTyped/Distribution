@@ -33,37 +33,27 @@ trait AuditEventAgentNetwork
 }
 object AuditEventAgentNetwork {
   
-  @scala.inline
-  def apply(): AuditEventAgentNetwork = {
+  inline def apply(): AuditEventAgentNetwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditEventAgentNetwork]
   }
   
-  @scala.inline
-  implicit class AuditEventAgentNetworkMutableBuilder[Self <: AuditEventAgentNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: AuditEventAgentNetwork](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: code): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def set_address(value: Element): Self = StObject.set(x, "_address", value.asInstanceOf[js.Any])
+    inline def set_address(value: Element): Self = StObject.set(x, "_address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_addressUndefined: Self = StObject.set(x, "_address", js.undefined)
+    inline def set_addressUndefined: Self = StObject.set(x, "_address", js.undefined)
     
-    @scala.inline
-    def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

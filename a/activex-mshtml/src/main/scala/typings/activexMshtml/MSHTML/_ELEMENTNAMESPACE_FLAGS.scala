@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _ELEMENTNAMESPACE_FLAGS extends StObject
 object _ELEMENTNAMESPACE_FLAGS {
   
-  @scala.inline
-  def ELEMENTNAMESPACEFLAGS_ALLOWANYTAG: `1` = 1.asInstanceOf[`1`]
+  inline def ELEMENTNAMESPACEFLAGS_ALLOWANYTAG: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ELEMENTNAMESPACEFLAGS_QUERYFORUNKNOWNTAGS: `2` = 2.asInstanceOf[`2`]
+  inline def ELEMENTNAMESPACEFLAGS_QUERYFORUNKNOWNTAGS: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ELEMENTNAMESPACE_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def ELEMENTNAMESPACE_FLAGS_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

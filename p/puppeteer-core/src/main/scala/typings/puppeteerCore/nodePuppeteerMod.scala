@@ -23,14 +23,14 @@ object nodePuppeteerMod {
       */
     def this(settings: projectRootstringpreferre) = this()
     
-    var __productName: js.Any = js.native
+    /* private */ var __productName: js.Any = js.native
     
     /**
       * @internal
       */
     def _launcher: ProductLauncher = js.native
     
-    var _lazyLauncher: js.Any = js.native
+    /* private */ var _lazyLauncher: js.Any = js.native
     
     /**
       * @internal
@@ -43,7 +43,7 @@ object nodePuppeteerMod {
     def _productName: Product = js.native
     def _productName_=(name: Product): Unit = js.native
     
-    var _projectRoot: js.Any = js.native
+    /* private */ var _projectRoot: js.Any = js.native
     
     /**
       * @param options - Set of configurable options to specify the settings

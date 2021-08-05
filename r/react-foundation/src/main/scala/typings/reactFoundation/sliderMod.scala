@@ -47,32 +47,24 @@ object sliderMod {
   }
   object SliderCommonProps {
     
-    @scala.inline
-    def apply(): SliderCommonProps = {
+    inline def apply(): SliderCommonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderCommonProps]
     }
     
-    @scala.inline
-    implicit class SliderCommonPropsMutableBuilder[Self <: SliderCommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderCommonProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+      inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
       
-      @scala.inline
-      def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
+      inline def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
+      inline def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
     }
   }
   
@@ -82,20 +74,16 @@ object sliderMod {
   }
   object SliderFillProps {
     
-    @scala.inline
-    def apply(): SliderFillProps = {
+    inline def apply(): SliderFillProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderFillProps]
     }
     
-    @scala.inline
-    implicit class SliderFillPropsMutableBuilder[Self <: SliderFillProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderFillProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   
@@ -118,44 +106,32 @@ object sliderMod {
   }
   object SliderProps {
     
-    @scala.inline
-    def apply(): SliderProps = {
+    inline def apply(): SliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SliderProps]
     }
     
-    @scala.inline
-    implicit class SliderPropsMutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: SliderProps](x: Self) {
       
-      @scala.inline
-      def setFill(value: SliderFillProps): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: SliderFillProps): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setHandle(value: SliderHandleProps): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: SliderHandleProps): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
       
-      @scala.inline
-      def setInitialStart(value: Double): Self = StObject.set(x, "initialStart", value.asInstanceOf[js.Any])
+      inline def setInitialStart(value: Double): Self = StObject.set(x, "initialStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStartUndefined: Self = StObject.set(x, "initialStart", js.undefined)
+      inline def setInitialStartUndefined: Self = StObject.set(x, "initialStart", js.undefined)
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+      inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
       
-      @scala.inline
-      def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
+      inline def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
+      inline def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
     }
   }
   
@@ -165,17 +141,14 @@ object sliderMod {
   }
   object SliderState {
     
-    @scala.inline
-    def apply(value: Double): SliderState = {
+    inline def apply(value: Double): SliderState = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SliderState]
     }
     
-    @scala.inline
-    implicit class SliderStateMutableBuilder[Self <: SliderState] (val x: Self) extends AnyVal {
+    extension [Self <: SliderState](x: Self) {
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,56 +173,40 @@ object sliderMod {
   }
   object TwoHandleSliderProps {
     
-    @scala.inline
-    def apply(): TwoHandleSliderProps = {
+    inline def apply(): TwoHandleSliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TwoHandleSliderProps]
     }
     
-    @scala.inline
-    implicit class TwoHandleSliderPropsMutableBuilder[Self <: TwoHandleSliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: TwoHandleSliderProps](x: Self) {
       
-      @scala.inline
-      def setFill(value: SliderFillProps): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: SliderFillProps): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setInitialEnd(value: Double): Self = StObject.set(x, "initialEnd", value.asInstanceOf[js.Any])
+      inline def setInitialEnd(value: Double): Self = StObject.set(x, "initialEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialEndUndefined: Self = StObject.set(x, "initialEnd", js.undefined)
+      inline def setInitialEndUndefined: Self = StObject.set(x, "initialEnd", js.undefined)
       
-      @scala.inline
-      def setInitialStart(value: Double): Self = StObject.set(x, "initialStart", value.asInstanceOf[js.Any])
+      inline def setInitialStart(value: Double): Self = StObject.set(x, "initialStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialStartUndefined: Self = StObject.set(x, "initialStart", js.undefined)
+      inline def setInitialStartUndefined: Self = StObject.set(x, "initialStart", js.undefined)
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+      inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
       
-      @scala.inline
-      def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
+      inline def setIsVertical(value: Boolean): Self = StObject.set(x, "isVertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
+      inline def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
       
-      @scala.inline
-      def setMaxHandle(value: SliderHandleProps): Self = StObject.set(x, "maxHandle", value.asInstanceOf[js.Any])
+      inline def setMaxHandle(value: SliderHandleProps): Self = StObject.set(x, "maxHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHandleUndefined: Self = StObject.set(x, "maxHandle", js.undefined)
+      inline def setMaxHandleUndefined: Self = StObject.set(x, "maxHandle", js.undefined)
       
-      @scala.inline
-      def setMinHandle(value: SliderHandleProps): Self = StObject.set(x, "minHandle", value.asInstanceOf[js.Any])
+      inline def setMinHandle(value: SliderHandleProps): Self = StObject.set(x, "minHandle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHandleUndefined: Self = StObject.set(x, "minHandle", js.undefined)
+      inline def setMinHandleUndefined: Self = StObject.set(x, "minHandle", js.undefined)
     }
   }
   
@@ -261,20 +218,16 @@ object sliderMod {
   }
   object TwoHandleSliderState {
     
-    @scala.inline
-    def apply(maxValue: Double, minValue: Double): TwoHandleSliderState = {
+    inline def apply(maxValue: Double, minValue: Double): TwoHandleSliderState = {
       val __obj = js.Dynamic.literal(maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[TwoHandleSliderState]
     }
     
-    @scala.inline
-    implicit class TwoHandleSliderStateMutableBuilder[Self <: TwoHandleSliderState] (val x: Self) extends AnyVal {
+    extension [Self <: TwoHandleSliderState](x: Self) {
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+      inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     }
   }
 }

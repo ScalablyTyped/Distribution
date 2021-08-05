@@ -12,19 +12,15 @@ trait Methods[TMethods /* <: StringDictionary[js.Function1[/* base */ SearchInde
 }
 object Methods {
   
-  @scala.inline
-  def apply[TMethods /* <: StringDictionary[js.Function1[/* base */ SearchIndex, js.Function1[/* args */ js.Any, js.Any]]] */](): Methods[TMethods] = {
+  inline def apply[TMethods /* <: StringDictionary[js.Function1[/* base */ SearchIndex, js.Function1[/* args */ js.Any, js.Any]]] */](): Methods[TMethods] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Methods[TMethods]]
   }
   
-  @scala.inline
-  implicit class MethodsMutableBuilder[Self <: Methods[?], TMethods /* <: StringDictionary[js.Function1[/* base */ SearchIndex, js.Function1[/* args */ js.Any, js.Any]]] */] (val x: Self & Methods[TMethods]) extends AnyVal {
+  extension [Self <: Methods[?], TMethods /* <: StringDictionary[js.Function1[/* base */ SearchIndex, js.Function1[/* args */ js.Any, js.Any]]] */](x: Self & Methods[TMethods]) {
     
-    @scala.inline
-    def setMethods(value: TMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: TMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+    inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
   }
 }

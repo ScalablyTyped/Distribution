@@ -14,31 +14,23 @@ trait CollectionIndex extends StObject {
 }
 object CollectionIndex {
   
-  @scala.inline
-  def apply(): CollectionIndex = {
+  inline def apply(): CollectionIndex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionIndex]
   }
   
-  @scala.inline
-  implicit class CollectionIndexMutableBuilder[Self <: CollectionIndex] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionIndex](x: Self) {
     
-    @scala.inline
-    def setCollectionIndex(value: Double): Self = StObject.set(x, "collectionIndex", value.asInstanceOf[js.Any])
+    inline def setCollectionIndex(value: Double): Self = StObject.set(x, "collectionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionIndexUndefined: Self = StObject.set(x, "collectionIndex", js.undefined)
+    inline def setCollectionIndexUndefined: Self = StObject.set(x, "collectionIndex", js.undefined)
     
-    @scala.inline
-    def setDelimited(value: Boolean): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
+    inline def setDelimited(value: Boolean): Self = StObject.set(x, "delimited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimitedUndefined: Self = StObject.set(x, "delimited", js.undefined)
+    inline def setDelimitedUndefined: Self = StObject.set(x, "delimited", js.undefined)
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
   }
 }

@@ -44,58 +44,41 @@ trait GraphTraversal extends StObject {
 }
 object GraphTraversal {
   
-  @scala.inline
-  def apply(): GraphTraversal = {
+  inline def apply(): GraphTraversal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraphTraversal]
   }
   
-  @scala.inline
-  implicit class GraphTraversalMutableBuilder[Self <: GraphTraversal] (val x: Self) extends AnyVal {
+  extension [Self <: GraphTraversal](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEdgeTraversals(value: js.Array[EdgeTraversal]): Self = StObject.set(x, "edgeTraversals", value.asInstanceOf[js.Any])
+    inline def setEdgeTraversals(value: js.Array[EdgeTraversal]): Self = StObject.set(x, "edgeTraversals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgeTraversalsUndefined: Self = StObject.set(x, "edgeTraversals", js.undefined)
+    inline def setEdgeTraversalsUndefined: Self = StObject.set(x, "edgeTraversals", js.undefined)
     
-    @scala.inline
-    def setEdgeTraversalsVarargs(value: EdgeTraversal*): Self = StObject.set(x, "edgeTraversals", js.Array(value :_*))
+    inline def setEdgeTraversalsVarargs(value: EdgeTraversal*): Self = StObject.set(x, "edgeTraversals", js.Array(value :_*))
     
-    @scala.inline
-    def setImmutableState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "immutableState", value.asInstanceOf[js.Any])
+    inline def setImmutableState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "immutableState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmutableStateUndefined: Self = StObject.set(x, "immutableState", js.undefined)
+    inline def setImmutableStateUndefined: Self = StObject.set(x, "immutableState", js.undefined)
     
-    @scala.inline
-    def setInitialState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    inline def setInitialState(value: StringDictionary[MultiformatMessageString]): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setResultGraphIndex(value: Double): Self = StObject.set(x, "resultGraphIndex", value.asInstanceOf[js.Any])
+    inline def setResultGraphIndex(value: Double): Self = StObject.set(x, "resultGraphIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultGraphIndexUndefined: Self = StObject.set(x, "resultGraphIndex", js.undefined)
+    inline def setResultGraphIndexUndefined: Self = StObject.set(x, "resultGraphIndex", js.undefined)
     
-    @scala.inline
-    def setRunGraphIndex(value: Double): Self = StObject.set(x, "runGraphIndex", value.asInstanceOf[js.Any])
+    inline def setRunGraphIndex(value: Double): Self = StObject.set(x, "runGraphIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunGraphIndexUndefined: Self = StObject.set(x, "runGraphIndex", js.undefined)
+    inline def setRunGraphIndexUndefined: Self = StObject.set(x, "runGraphIndex", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object initializeComponentRefMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeComponentRef[TProps /* <: IBaseProps[js.Any] */, TState](obj: Component[TProps, TState, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeComponentRef")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initializeComponentRef[TProps /* <: IBaseProps[js.Any] */, TState](obj: Component[TProps, TState, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeComponentRef")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

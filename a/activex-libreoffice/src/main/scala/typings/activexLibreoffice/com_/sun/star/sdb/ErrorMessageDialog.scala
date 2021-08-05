@@ -38,8 +38,7 @@ trait ErrorMessageDialog
 }
 object ErrorMessageDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     create: (String, XWindow, js.Any) => Unit,
     execute: () => Double,
@@ -51,10 +50,8 @@ object ErrorMessageDialog {
     __obj.asInstanceOf[ErrorMessageDialog]
   }
   
-  @scala.inline
-  implicit class ErrorMessageDialogMutableBuilder[Self <: ErrorMessageDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorMessageDialog](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (String, XWindow, js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
+    inline def setCreate(value: (String, XWindow, js.Any) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
   }
 }

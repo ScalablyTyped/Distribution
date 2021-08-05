@@ -85,10 +85,8 @@ object GraceNoteGroup {
   @JSGlobal("Vex.Flow.GraceNoteGroup.DEBUG")
   @js.native
   def DEBUG: Boolean = js.native
-  @scala.inline
-  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  inline def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def format(gracenote_groups: js.Array[typings.vexflow.Vex.Flow.GraceNoteGroup], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(gracenote_groups.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def format(gracenote_groups: js.Array[typings.vexflow.Vex.Flow.GraceNoteGroup], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(gracenote_groups.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

@@ -11,8 +11,7 @@ object projectTsconfigPathsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProjectTsConfigPaths(
+  inline def getProjectTsConfigPaths(
     tree: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Tree */ js.Any
   ): BuildPaths = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectTsConfigPaths")(tree.asInstanceOf[js.Any]).asInstanceOf[BuildPaths]
 }

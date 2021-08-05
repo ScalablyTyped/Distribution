@@ -47,8 +47,7 @@ trait MediaAudioPlayer extends StObject {
 }
 object MediaAudioPlayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAudioSource: VideoDecoder => js.Promise[js.Any],
     destroy: () => js.Promise[js.Any],
     removeAudioSource: VideoDecoder => js.Promise[js.Any],
@@ -60,25 +59,18 @@ object MediaAudioPlayer {
     __obj.asInstanceOf[MediaAudioPlayer]
   }
   
-  @scala.inline
-  implicit class MediaAudioPlayerMutableBuilder[Self <: MediaAudioPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: MediaAudioPlayer](x: Self) {
     
-    @scala.inline
-    def setAddAudioSource(value: VideoDecoder => js.Promise[js.Any]): Self = StObject.set(x, "addAudioSource", js.Any.fromFunction1(value))
+    inline def setAddAudioSource(value: VideoDecoder => js.Promise[js.Any]): Self = StObject.set(x, "addAudioSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => js.Promise[js.Any]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => js.Promise[js.Any]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveAudioSource(value: VideoDecoder => js.Promise[js.Any]): Self = StObject.set(x, "removeAudioSource", js.Any.fromFunction1(value))
+    inline def setRemoveAudioSource(value: VideoDecoder => js.Promise[js.Any]): Self = StObject.set(x, "removeAudioSource", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: () => js.Promise[js.Any]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => js.Promise[js.Any]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => js.Promise[js.Any]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => js.Promise[js.Any]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

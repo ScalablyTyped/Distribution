@@ -33,43 +33,31 @@ trait Mp4Settings extends StObject {
 }
 object Mp4Settings {
   
-  @scala.inline
-  def apply(): Mp4Settings = {
+  inline def apply(): Mp4Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mp4Settings]
   }
   
-  @scala.inline
-  implicit class Mp4SettingsMutableBuilder[Self <: Mp4Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Mp4Settings](x: Self) {
     
-    @scala.inline
-    def setCslgAtom(value: Mp4CslgAtom): Self = StObject.set(x, "CslgAtom", value.asInstanceOf[js.Any])
+    inline def setCslgAtom(value: Mp4CslgAtom): Self = StObject.set(x, "CslgAtom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCslgAtomUndefined: Self = StObject.set(x, "CslgAtom", js.undefined)
+    inline def setCslgAtomUndefined: Self = StObject.set(x, "CslgAtom", js.undefined)
     
-    @scala.inline
-    def setCttsVersion(value: integerMin0Max1): Self = StObject.set(x, "CttsVersion", value.asInstanceOf[js.Any])
+    inline def setCttsVersion(value: integerMin0Max1): Self = StObject.set(x, "CttsVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCttsVersionUndefined: Self = StObject.set(x, "CttsVersion", js.undefined)
+    inline def setCttsVersionUndefined: Self = StObject.set(x, "CttsVersion", js.undefined)
     
-    @scala.inline
-    def setFreeSpaceBox(value: Mp4FreeSpaceBox): Self = StObject.set(x, "FreeSpaceBox", value.asInstanceOf[js.Any])
+    inline def setFreeSpaceBox(value: Mp4FreeSpaceBox): Self = StObject.set(x, "FreeSpaceBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeSpaceBoxUndefined: Self = StObject.set(x, "FreeSpaceBox", js.undefined)
+    inline def setFreeSpaceBoxUndefined: Self = StObject.set(x, "FreeSpaceBox", js.undefined)
     
-    @scala.inline
-    def setMoovPlacement(value: Mp4MoovPlacement): Self = StObject.set(x, "MoovPlacement", value.asInstanceOf[js.Any])
+    inline def setMoovPlacement(value: Mp4MoovPlacement): Self = StObject.set(x, "MoovPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoovPlacementUndefined: Self = StObject.set(x, "MoovPlacement", js.undefined)
+    inline def setMoovPlacementUndefined: Self = StObject.set(x, "MoovPlacement", js.undefined)
     
-    @scala.inline
-    def setMp4MajorBrand(value: string): Self = StObject.set(x, "Mp4MajorBrand", value.asInstanceOf[js.Any])
+    inline def setMp4MajorBrand(value: string): Self = StObject.set(x, "Mp4MajorBrand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMp4MajorBrandUndefined: Self = StObject.set(x, "Mp4MajorBrand", js.undefined)
+    inline def setMp4MajorBrandUndefined: Self = StObject.set(x, "Mp4MajorBrand", js.undefined)
   }
 }

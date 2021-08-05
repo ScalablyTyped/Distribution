@@ -18,19 +18,15 @@ trait XssMatchSetSummary extends StObject {
 }
 object XssMatchSetSummary {
   
-  @scala.inline
-  def apply(Name: ResourceName, XssMatchSetId: ResourceId): XssMatchSetSummary = {
+  inline def apply(Name: ResourceName, XssMatchSetId: ResourceId): XssMatchSetSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], XssMatchSetId = XssMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[XssMatchSetSummary]
   }
   
-  @scala.inline
-  implicit class XssMatchSetSummaryMutableBuilder[Self <: XssMatchSetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: XssMatchSetSummary](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
+    inline def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
   }
 }

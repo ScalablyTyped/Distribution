@@ -12,19 +12,15 @@ trait Appearance extends StObject {
 }
 object Appearance {
   
-  @scala.inline
-  def apply(appearance: String, font: String): Appearance = {
+  inline def apply(appearance: String, font: String): Appearance = {
     val __obj = js.Dynamic.literal(appearance = appearance.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any])
     __obj.asInstanceOf[Appearance]
   }
   
-  @scala.inline
-  implicit class AppearanceMutableBuilder[Self <: Appearance] (val x: Self) extends AnyVal {
+  extension [Self <: Appearance](x: Self) {
     
-    @scala.inline
-    def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    inline def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
   }
 }

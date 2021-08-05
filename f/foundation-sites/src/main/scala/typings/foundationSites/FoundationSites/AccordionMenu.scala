@@ -20,8 +20,7 @@ trait AccordionMenu extends StObject {
 }
 object AccordionMenu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     down: (JQuery, Boolean) => Unit,
     hideAll: () => Unit,
@@ -32,22 +31,16 @@ object AccordionMenu {
     __obj.asInstanceOf[AccordionMenu]
   }
   
-  @scala.inline
-  implicit class AccordionMenuMutableBuilder[Self <: AccordionMenu] (val x: Self) extends AnyVal {
+  extension [Self <: AccordionMenu](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDown(value: (JQuery, Boolean) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
+    inline def setDown(value: (JQuery, Boolean) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
+    inline def setHideAll(value: () => Unit): Self = StObject.set(x, "hideAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToggle(value: JQuery => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+    inline def setToggle(value: JQuery => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUp(value: JQuery => Unit): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+    inline def setUp(value: JQuery => Unit): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
   }
 }

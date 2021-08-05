@@ -22,12 +22,12 @@ object ReactNativeFirebase {
     /**
       * Returns the shared event emitter instance used for all JS event routing.
       */
-    var emitter: js.Any = js.native
+    /* private */ var emitter: js.Any = js.native
     
     /**
       * The native module instance for this Firebase service.
       */
-    var native: js.Any = js.native
+    /* private */ var native: js.Any = js.native
   }
   
   trait FirebaseApp extends StObject {
@@ -51,8 +51,7 @@ object ReactNativeFirebase {
   }
   object FirebaseApp {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: () => js.Promise[Unit],
       name: String,
       options: FirebaseAppOptions,
@@ -62,20 +61,15 @@ object ReactNativeFirebase {
       __obj.asInstanceOf[FirebaseApp]
     }
     
-    @scala.inline
-    implicit class FirebaseAppMutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseApp](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: FirebaseAppOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: FirebaseAppOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtils(value: () => typings.reactNativeFirebaseApp.mod.Utils_.Module): Self = StObject.set(x, "utils", js.Any.fromFunction0(value))
+      inline def setUtils(value: () => typings.reactNativeFirebaseApp.mod.Utils_.Module): Self = StObject.set(x, "utils", js.Any.fromFunction0(value))
     }
   }
   
@@ -99,32 +93,24 @@ object ReactNativeFirebase {
   }
   object FirebaseAppConfig {
     
-    @scala.inline
-    def apply(): FirebaseAppConfig = {
+    inline def apply(): FirebaseAppConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FirebaseAppConfig]
     }
     
-    @scala.inline
-    implicit class FirebaseAppConfigMutableBuilder[Self <: FirebaseAppConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseAppConfig](x: Self) {
       
-      @scala.inline
-      def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
+      inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticDataCollectionEnabledUndefined: Self = StObject.set(x, "automaticDataCollectionEnabled", js.undefined)
+      inline def setAutomaticDataCollectionEnabledUndefined: Self = StObject.set(x, "automaticDataCollectionEnabled", js.undefined)
       
-      @scala.inline
-      def setAutomaticResourceManagement(value: Boolean): Self = StObject.set(x, "automaticResourceManagement", value.asInstanceOf[js.Any])
+      inline def setAutomaticResourceManagement(value: Boolean): Self = StObject.set(x, "automaticResourceManagement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticResourceManagementUndefined: Self = StObject.set(x, "automaticResourceManagement", js.undefined)
+      inline def setAutomaticResourceManagementUndefined: Self = StObject.set(x, "automaticResourceManagement", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -188,68 +174,48 @@ object ReactNativeFirebase {
   }
   object FirebaseAppOptions {
     
-    @scala.inline
-    def apply(appId: String, projectId: String): FirebaseAppOptions = {
+    inline def apply(appId: String, projectId: String): FirebaseAppOptions = {
       val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
       __obj.asInstanceOf[FirebaseAppOptions]
     }
     
-    @scala.inline
-    implicit class FirebaseAppOptionsMutableBuilder[Self <: FirebaseAppOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FirebaseAppOptions](x: Self) {
       
-      @scala.inline
-      def setAndroidClientId(value: String): Self = StObject.set(x, "androidClientId", value.asInstanceOf[js.Any])
+      inline def setAndroidClientId(value: String): Self = StObject.set(x, "androidClientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAndroidClientIdUndefined: Self = StObject.set(x, "androidClientId", js.undefined)
+      inline def setAndroidClientIdUndefined: Self = StObject.set(x, "androidClientId", js.undefined)
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+      inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
       
-      @scala.inline
-      def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
+      inline def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
+      inline def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
       
-      @scala.inline
-      def setDeepLinkURLScheme(value: String): Self = StObject.set(x, "deepLinkURLScheme", value.asInstanceOf[js.Any])
+      inline def setDeepLinkURLScheme(value: String): Self = StObject.set(x, "deepLinkURLScheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepLinkURLSchemeUndefined: Self = StObject.set(x, "deepLinkURLScheme", js.undefined)
+      inline def setDeepLinkURLSchemeUndefined: Self = StObject.set(x, "deepLinkURLScheme", js.undefined)
       
-      @scala.inline
-      def setGaTrackingId(value: String): Self = StObject.set(x, "gaTrackingId", value.asInstanceOf[js.Any])
+      inline def setGaTrackingId(value: String): Self = StObject.set(x, "gaTrackingId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGaTrackingIdUndefined: Self = StObject.set(x, "gaTrackingId", js.undefined)
+      inline def setGaTrackingIdUndefined: Self = StObject.set(x, "gaTrackingId", js.undefined)
       
-      @scala.inline
-      def setMessagingSenderId(value: String): Self = StObject.set(x, "messagingSenderId", value.asInstanceOf[js.Any])
+      inline def setMessagingSenderId(value: String): Self = StObject.set(x, "messagingSenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagingSenderIdUndefined: Self = StObject.set(x, "messagingSenderId", js.undefined)
+      inline def setMessagingSenderIdUndefined: Self = StObject.set(x, "messagingSenderId", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
+      inline def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
+      inline def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
     }
   }
   
@@ -329,8 +295,7 @@ object ReactNativeFirebase {
   }
   object NativeFirebaseError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       code: String,
       message: String,
       name: String,
@@ -342,20 +307,15 @@ object ReactNativeFirebase {
       __obj.asInstanceOf[NativeFirebaseError]
     }
     
-    @scala.inline
-    implicit class NativeFirebaseErrorMutableBuilder[Self <: NativeFirebaseError] (val x: Self) extends AnyVal {
+    extension [Self <: NativeFirebaseError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeErrorCode(value: String | Double): Self = StObject.set(x, "nativeErrorCode", value.asInstanceOf[js.Any])
+      inline def setNativeErrorCode(value: String | Double): Self = StObject.set(x, "nativeErrorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeErrorMessage(value: String): Self = StObject.set(x, "nativeErrorMessage", value.asInstanceOf[js.Any])
+      inline def setNativeErrorMessage(value: String): Self = StObject.set(x, "nativeErrorMessage", value.asInstanceOf[js.Any])
     }
   }
 }

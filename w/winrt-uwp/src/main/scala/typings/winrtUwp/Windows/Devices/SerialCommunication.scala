@@ -194,17 +194,14 @@ object SerialCommunication {
   }
   object ErrorReceivedEventArgs {
     
-    @scala.inline
-    def apply(error: SerialError): ErrorReceivedEventArgs = {
+    inline def apply(error: SerialError): ErrorReceivedEventArgs = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorReceivedEventArgs]
     }
     
-    @scala.inline
-    implicit class ErrorReceivedEventArgsMutableBuilder[Self <: ErrorReceivedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorReceivedEventArgs](x: Self) {
       
-      @scala.inline
-      def setError(value: SerialError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: SerialError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,17 +213,14 @@ object SerialCommunication {
   }
   object PinChangedEventArgs {
     
-    @scala.inline
-    def apply(pinChange: SerialPinChange): PinChangedEventArgs = {
+    inline def apply(pinChange: SerialPinChange): PinChangedEventArgs = {
       val __obj = js.Dynamic.literal(pinChange = pinChange.asInstanceOf[js.Any])
       __obj.asInstanceOf[PinChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class PinChangedEventArgsMutableBuilder[Self <: PinChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PinChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setPinChange(value: SerialPinChange): Self = StObject.set(x, "pinChange", value.asInstanceOf[js.Any])
+      inline def setPinChange(value: SerialPinChange): Self = StObject.set(x, "pinChange", value.asInstanceOf[js.Any])
     }
   }
   

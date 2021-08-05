@@ -20,43 +20,31 @@ trait ProjectionParametersInput extends StObject {
 }
 object ProjectionParametersInput {
   
-  @scala.inline
-  def apply(height: Double, width: Double): ProjectionParametersInput = {
+  inline def apply(height: Double, width: Double): ProjectionParametersInput = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectionParametersInput]
   }
   
-  @scala.inline
-  implicit class ProjectionParametersInputMutableBuilder[Self <: ProjectionParametersInput] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectionParametersInput](x: Self) {
     
-    @scala.inline
-    def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
     
-    @scala.inline
-    def setFarZMultiplier(value: Double): Self = StObject.set(x, "farZMultiplier", value.asInstanceOf[js.Any])
+    inline def setFarZMultiplier(value: Double): Self = StObject.set(x, "farZMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFarZMultiplierUndefined: Self = StObject.set(x, "farZMultiplier", js.undefined)
+    inline def setFarZMultiplierUndefined: Self = StObject.set(x, "farZMultiplier", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearZMultiplier(value: Double): Self = StObject.set(x, "nearZMultiplier", value.asInstanceOf[js.Any])
+    inline def setNearZMultiplier(value: Double): Self = StObject.set(x, "nearZMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearZMultiplierUndefined: Self = StObject.set(x, "nearZMultiplier", js.undefined)
+    inline def setNearZMultiplierUndefined: Self = StObject.set(x, "nearZMultiplier", js.undefined)
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+    inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

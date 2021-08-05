@@ -18,25 +18,19 @@ trait Sheet extends StObject {
 }
 object Sheet {
   
-  @scala.inline
-  def apply(): Sheet = {
+  inline def apply(): Sheet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sheet]
   }
   
-  @scala.inline
-  implicit class SheetMutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
+  extension [Self <: Sheet](x: Self) {
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSheetId(value: RestrictiveResourceId): Self = StObject.set(x, "SheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: RestrictiveResourceId): Self = StObject.set(x, "SheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetIdUndefined: Self = StObject.set(x, "SheetId", js.undefined)
+    inline def setSheetIdUndefined: Self = StObject.set(x, "SheetId", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait GetOperationsForResourceRequest extends StObject {
 }
 object GetOperationsForResourceRequest {
   
-  @scala.inline
-  def apply(resourceName: ResourceName): GetOperationsForResourceRequest = {
+  inline def apply(resourceName: ResourceName): GetOperationsForResourceRequest = {
     val __obj = js.Dynamic.literal(resourceName = resourceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetOperationsForResourceRequest]
   }
   
-  @scala.inline
-  implicit class GetOperationsForResourceRequestMutableBuilder[Self <: GetOperationsForResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetOperationsForResourceRequest](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: ResourceName): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
   }
 }

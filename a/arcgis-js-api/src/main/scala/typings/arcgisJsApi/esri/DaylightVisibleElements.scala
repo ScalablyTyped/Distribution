@@ -40,8 +40,7 @@ trait DaylightVisibleElements
 }
 object DaylightVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -50,31 +49,22 @@ object DaylightVisibleElements {
     __obj.asInstanceOf[DaylightVisibleElements]
   }
   
-  @scala.inline
-  implicit class DaylightVisibleElementsMutableBuilder[Self <: DaylightVisibleElements] (val x: Self) extends AnyVal {
+  extension [Self <: DaylightVisibleElements](x: Self) {
     
-    @scala.inline
-    def setDatePicker(value: Boolean): Self = StObject.set(x, "datePicker", value.asInstanceOf[js.Any])
+    inline def setDatePicker(value: Boolean): Self = StObject.set(x, "datePicker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatePickerUndefined: Self = StObject.set(x, "datePicker", js.undefined)
+    inline def setDatePickerUndefined: Self = StObject.set(x, "datePicker", js.undefined)
     
-    @scala.inline
-    def setPlayButtons(value: Boolean): Self = StObject.set(x, "playButtons", value.asInstanceOf[js.Any])
+    inline def setPlayButtons(value: Boolean): Self = StObject.set(x, "playButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayButtonsUndefined: Self = StObject.set(x, "playButtons", js.undefined)
+    inline def setPlayButtonsUndefined: Self = StObject.set(x, "playButtons", js.undefined)
     
-    @scala.inline
-    def setShadowsToggle(value: Boolean): Self = StObject.set(x, "shadowsToggle", value.asInstanceOf[js.Any])
+    inline def setShadowsToggle(value: Boolean): Self = StObject.set(x, "shadowsToggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowsToggleUndefined: Self = StObject.set(x, "shadowsToggle", js.undefined)
+    inline def setShadowsToggleUndefined: Self = StObject.set(x, "shadowsToggle", js.undefined)
     
-    @scala.inline
-    def setTimezone(value: Boolean): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: Boolean): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
   }
 }

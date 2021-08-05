@@ -20,40 +20,29 @@ trait BaseRecipient extends StObject {
 }
 object BaseRecipient {
   
-  @scala.inline
-  def apply(): BaseRecipient = {
+  inline def apply(): BaseRecipient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseRecipient]
   }
   
-  @scala.inline
-  implicit class BaseRecipientMutableBuilder[Self <: BaseRecipient] (val x: Self) extends AnyVal {
+  extension [Self <: BaseRecipient](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setReturn_path(value: String): Self = StObject.set(x, "return_path", value.asInstanceOf[js.Any])
+    inline def setReturn_path(value: String): Self = StObject.set(x, "return_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_pathUndefined: Self = StObject.set(x, "return_path", js.undefined)
+    inline def setReturn_pathUndefined: Self = StObject.set(x, "return_path", js.undefined)
     
-    @scala.inline
-    def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
+    inline def setSubstitution_data(value: js.Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
+    inline def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -29,8 +29,7 @@ trait DocumentSaveRequest
 }
 object DocumentSaveRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Content: XContent,
     Context: XInterface,
@@ -41,13 +40,10 @@ object DocumentSaveRequest {
     __obj.asInstanceOf[DocumentSaveRequest]
   }
   
-  @scala.inline
-  implicit class DocumentSaveRequestMutableBuilder[Self <: DocumentSaveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSaveRequest](x: Self) {
     
-    @scala.inline
-    def setContent(value: XContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: XContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

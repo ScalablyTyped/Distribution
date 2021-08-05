@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FacetType extends StObject
 object FacetType {
   
-  @scala.inline
-  def circle: typings.bizcharts.bizchartsStrings.circle = "circle".asInstanceOf[typings.bizcharts.bizchartsStrings.circle]
+  inline def circle: typings.bizcharts.bizchartsStrings.circle = "circle".asInstanceOf[typings.bizcharts.bizchartsStrings.circle]
   
-  @scala.inline
-  def list: typings.bizcharts.bizchartsStrings.list = "list".asInstanceOf[typings.bizcharts.bizchartsStrings.list]
+  inline def list: typings.bizcharts.bizchartsStrings.list = "list".asInstanceOf[typings.bizcharts.bizchartsStrings.list]
   
-  @scala.inline
-  def matrix: typings.bizcharts.bizchartsStrings.matrix = "matrix".asInstanceOf[typings.bizcharts.bizchartsStrings.matrix]
+  inline def matrix: typings.bizcharts.bizchartsStrings.matrix = "matrix".asInstanceOf[typings.bizcharts.bizchartsStrings.matrix]
   
-  @scala.inline
-  def mirror: typings.bizcharts.bizchartsStrings.mirror = "mirror".asInstanceOf[typings.bizcharts.bizchartsStrings.mirror]
+  inline def mirror: typings.bizcharts.bizchartsStrings.mirror = "mirror".asInstanceOf[typings.bizcharts.bizchartsStrings.mirror]
   
-  @scala.inline
-  def rect: typings.bizcharts.bizchartsStrings.rect = "rect".asInstanceOf[typings.bizcharts.bizchartsStrings.rect]
+  inline def rect: typings.bizcharts.bizchartsStrings.rect = "rect".asInstanceOf[typings.bizcharts.bizchartsStrings.rect]
   
-  @scala.inline
-  def tree: typings.bizcharts.bizchartsStrings.tree = "tree".asInstanceOf[typings.bizcharts.bizchartsStrings.tree]
+  inline def tree: typings.bizcharts.bizchartsStrings.tree = "tree".asInstanceOf[typings.bizcharts.bizchartsStrings.tree]
 }

@@ -165,14 +165,12 @@ object modelsMod {
     @JSImport("typedoc/dist/lib/models", "ReferenceType.SYMBOL_FQN_RESOLVED")
     @js.native
     def SYMBOL_FQN_RESOLVED: String = js.native
-    @scala.inline
-    def SYMBOL_FQN_RESOLVED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYMBOL_FQN_RESOLVED")(x.asInstanceOf[js.Any])
+    inline def SYMBOL_FQN_RESOLVED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYMBOL_FQN_RESOLVED")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/models", "ReferenceType.SYMBOL_FQN_RESOLVE_BY_NAME")
     @js.native
     def SYMBOL_FQN_RESOLVE_BY_NAME: String = js.native
-    @scala.inline
-    def SYMBOL_FQN_RESOLVE_BY_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYMBOL_FQN_RESOLVE_BY_NAME")(x.asInstanceOf[js.Any])
+    inline def SYMBOL_FQN_RESOLVE_BY_NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYMBOL_FQN_RESOLVE_BY_NAME")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/models", "Reflection")
@@ -396,14 +394,12 @@ object modelsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isTypeListEqual(
+    inline def isTypeListEqual(
       a: js.Array[typings.typedoc.typesAbstractMod.Type],
       b: js.Array[typings.typedoc.typesAbstractMod.Type]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeListEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isTypeListSimilar(
+    inline def isTypeListSimilar(
       a: js.Array[typings.typedoc.typesAbstractMod.Type],
       b: js.Array[typings.typedoc.typesAbstractMod.Type]
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeListSimilar")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -450,6 +446,5 @@ object modelsMod {
     def this(name: String) = this()
   }
   
-  @scala.inline
-  def splitUnquotedString(input: String, delimiter: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitUnquotedString")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def splitUnquotedString(input: String, delimiter: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitUnquotedString")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

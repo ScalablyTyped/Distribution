@@ -12,25 +12,19 @@ trait ModuleWithProviders extends StObject {
 }
 object ModuleWithProviders {
   
-  @scala.inline
-  def apply(ngModule: Type): ModuleWithProviders = {
+  inline def apply(ngModule: Type): ModuleWithProviders = {
     val __obj = js.Dynamic.literal(ngModule = ngModule.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleWithProviders]
   }
   
-  @scala.inline
-  implicit class ModuleWithProvidersMutableBuilder[Self <: ModuleWithProviders] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleWithProviders](x: Self) {
     
-    @scala.inline
-    def setNgModule(value: Type): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
+    inline def setNgModule(value: Type): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    @scala.inline
-    def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
   }
 }

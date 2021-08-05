@@ -18,19 +18,15 @@ trait GetIntegrationRequest extends StObject {
 }
 object GetIntegrationRequest {
   
-  @scala.inline
-  def apply(ApiId: string, IntegrationId: string): GetIntegrationRequest = {
+  inline def apply(ApiId: string, IntegrationId: string): GetIntegrationRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], IntegrationId = IntegrationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIntegrationRequest]
   }
   
-  @scala.inline
-  implicit class GetIntegrationRequestMutableBuilder[Self <: GetIntegrationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetIntegrationRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationId(value: string): Self = StObject.set(x, "IntegrationId", value.asInstanceOf[js.Any])
+    inline def setIntegrationId(value: string): Self = StObject.set(x, "IntegrationId", value.asInstanceOf[js.Any])
   }
 }

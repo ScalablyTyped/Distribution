@@ -18,6 +18,5 @@ object Shellbar {
   @JSImport("fundamental-react", "Shellbar.displayName")
   @js.native
   def displayName: typings.fundamentalReact.fundamentalReactStrings.Shellbar = js.native
-  @scala.inline
-  def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Shellbar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: typings.fundamentalReact.fundamentalReactStrings.Shellbar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }

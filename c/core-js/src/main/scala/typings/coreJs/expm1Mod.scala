@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object expm1Mod {
   
   /* was `typeof core.Math.expm1` */
-  @scala.inline
-  def apply(x: Double): Double = ^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(x: Double): Double = ^.asInstanceOf[js.Dynamic].apply(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("core-js/fn/math/expm1", JSImport.Namespace)
   @js.native

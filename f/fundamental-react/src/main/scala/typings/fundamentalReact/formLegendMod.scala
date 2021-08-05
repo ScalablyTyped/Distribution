@@ -23,26 +23,20 @@ object formLegendMod extends Shortcut {
   }
   object FormLegendProps {
     
-    @scala.inline
-    def apply(): FormLegendProps = {
+    inline def apply(): FormLegendProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormLegendProps]
     }
     
-    @scala.inline
-    implicit class FormLegendPropsMutableBuilder[Self <: FormLegendProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormLegendProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
     }
   }
   

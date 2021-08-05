@@ -15,20 +15,16 @@ trait MipsImmOperand
 }
 object MipsImmOperand {
   
-  @scala.inline
-  def apply(value: Double): MipsImmOperand = {
+  inline def apply(value: Double): MipsImmOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("imm")
     __obj.asInstanceOf[MipsImmOperand]
   }
   
-  @scala.inline
-  implicit class MipsImmOperandMutableBuilder[Self <: MipsImmOperand] (val x: Self) extends AnyVal {
+  extension [Self <: MipsImmOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: imm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: imm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -15,7 +15,7 @@ object containerMod {
        with typings.inversify.interfacesMod.interfaces.Container {
     def this(containerOptions: ContainerOptions) = this()
     
-    var _bindingDictionary: js.Any = js.native
+    /* private */ var _bindingDictionary: js.Any = js.native
     
     /* private */ def _get[T](
       avoidConstraints: js.Any,
@@ -28,13 +28,13 @@ object containerMod {
     
     /* private */ def _getContainerModuleHelpersFactory(): js.Any = js.native
     
-    var _metadataReader: js.Any = js.native
+    /* private */ var _metadataReader: js.Any = js.native
     
-    var _middleware: js.Any = js.native
+    /* private */ var _middleware: js.Any = js.native
     
     /* private */ def _planAndResolve[T](): js.Any = js.native
     
-    var _snapshots: js.Any = js.native
+    /* private */ var _snapshots: js.Any = js.native
     
     def createChild(containerOptions: ContainerOptions): Container = js.native
     
@@ -53,8 +53,7 @@ object containerMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def merge(
+    inline def merge(
       container1: typings.inversify.interfacesMod.interfaces.Container,
       container2: typings.inversify.interfacesMod.interfaces.Container
     ): typings.inversify.interfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).asInstanceOf[typings.inversify.interfacesMod.interfaces.Container]

@@ -13,17 +13,12 @@ object fontLoaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fontFamilyNeedsScoping(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFamilyNeedsScoping")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def fontFamilyNeedsScoping(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fontFamilyNeedsScoping")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def getAssetForSource(source: FontSource): Asset | FontResource = ^.asInstanceOf[js.Dynamic].applyDynamic("getAssetForSource")(source.asInstanceOf[js.Any]).asInstanceOf[Asset | FontResource]
+  inline def getAssetForSource(source: FontSource): Asset | FontResource = ^.asInstanceOf[js.Dynamic].applyDynamic("getAssetForSource")(source.asInstanceOf[js.Any]).asInstanceOf[Asset | FontResource]
   
-  @scala.inline
-  def getNativeFontName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNativeFontName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getNativeFontName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNativeFontName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def loadSingleFontAsync(name: String, input: Asset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSingleFontAsync")(name.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def loadSingleFontAsync(name: String, input: FontResource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSingleFontAsync")(name.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def loadSingleFontAsync(name: String, input: Asset): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSingleFontAsync")(name.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def loadSingleFontAsync(name: String, input: FontResource): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSingleFontAsync")(name.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

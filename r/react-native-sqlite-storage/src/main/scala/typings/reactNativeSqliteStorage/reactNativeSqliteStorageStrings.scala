@@ -11,27 +11,23 @@ object reactNativeSqliteStorageStrings {
   sealed trait default
     extends StObject
        with Location
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait Documents
     extends StObject
        with Location
-  @scala.inline
-  def Documents: Documents = "Documents".asInstanceOf[Documents]
+  inline def Documents: Documents = "Documents".asInstanceOf[Documents]
   
   @js.native
   sealed trait Library
     extends StObject
        with Location
-  @scala.inline
-  def Library: Library = "Library".asInstanceOf[Library]
+  inline def Library: Library = "Library".asInstanceOf[Library]
   
   @js.native
   sealed trait Shared
     extends StObject
        with Location
-  @scala.inline
-  def Shared: Shared = "Shared".asInstanceOf[Shared]
+  inline def Shared: Shared = "Shared".asInstanceOf[Shared]
 }

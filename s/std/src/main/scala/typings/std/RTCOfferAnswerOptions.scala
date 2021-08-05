@@ -10,19 +10,15 @@ trait RTCOfferAnswerOptions extends StObject {
 }
 object RTCOfferAnswerOptions {
   
-  @scala.inline
-  def apply(): RTCOfferAnswerOptions = {
+  inline def apply(): RTCOfferAnswerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCOfferAnswerOptions]
   }
   
-  @scala.inline
-  implicit class RTCOfferAnswerOptionsMutableBuilder[Self <: RTCOfferAnswerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RTCOfferAnswerOptions](x: Self) {
     
-    @scala.inline
-    def setVoiceActivityDetection(value: scala.Boolean): Self = StObject.set(x, "voiceActivityDetection", value.asInstanceOf[js.Any])
+    inline def setVoiceActivityDetection(value: scala.Boolean): Self = StObject.set(x, "voiceActivityDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceActivityDetectionUndefined: Self = StObject.set(x, "voiceActivityDetection", js.undefined)
+    inline def setVoiceActivityDetectionUndefined: Self = StObject.set(x, "voiceActivityDetection", js.undefined)
   }
 }

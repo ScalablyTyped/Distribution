@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmDragBehavior extends StObject
 object fmDragBehavior {
   
-  @scala.inline
-  def fmDragBehaviorDisabled: `0` = 0.asInstanceOf[`0`]
+  inline def fmDragBehaviorDisabled: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmDragBehaviorEnabled: `1` = 1.asInstanceOf[`1`]
+  inline def fmDragBehaviorEnabled: `1` = 1.asInstanceOf[`1`]
 }

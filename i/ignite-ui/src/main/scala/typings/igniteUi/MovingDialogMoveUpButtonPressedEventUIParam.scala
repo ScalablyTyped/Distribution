@@ -13,19 +13,15 @@ trait MovingDialogMoveUpButtonPressedEventUIParam extends StObject {
 }
 object MovingDialogMoveUpButtonPressedEventUIParam {
   
-  @scala.inline
-  def apply(): MovingDialogMoveUpButtonPressedEventUIParam = {
+  inline def apply(): MovingDialogMoveUpButtonPressedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MovingDialogMoveUpButtonPressedEventUIParam]
   }
   
-  @scala.inline
-  implicit class MovingDialogMoveUpButtonPressedEventUIParamMutableBuilder[Self <: MovingDialogMoveUpButtonPressedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: MovingDialogMoveUpButtonPressedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

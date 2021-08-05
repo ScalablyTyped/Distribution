@@ -12,6 +12,5 @@ object overlayStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IOverlayStyleProps): IOverlayStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IOverlayStyles]
+  inline def getStyles(props: IOverlayStyleProps): IOverlayStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IOverlayStyles]
 }

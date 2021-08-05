@@ -10,14 +10,11 @@ object livelinessCheckingMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLivelinessChecking(): LivelinessMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getLivelinessChecking")().asInstanceOf[LivelinessMode]
+  inline def getLivelinessChecking(): LivelinessMode = ^.asInstanceOf[js.Dynamic].applyDynamic("getLivelinessChecking")().asInstanceOf[LivelinessMode]
   
-  @scala.inline
-  def setLivelinessChecking(mode: LivelinessMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLivelinessChecking")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLivelinessChecking(mode: LivelinessMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLivelinessChecking")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLivelynessChecking(mode: LivelinessMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLivelynessChecking")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setLivelynessChecking(mode: LivelinessMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLivelynessChecking")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.mobxStateTree.mobxStateTreeStrings.warn
@@ -27,14 +24,11 @@ object livelinessCheckingMod {
   trait LivelinessMode extends StObject
   object LivelinessMode {
     
-    @scala.inline
-    def error: typings.mobxStateTree.mobxStateTreeStrings.error = "error".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.error]
+    inline def error: typings.mobxStateTree.mobxStateTreeStrings.error = "error".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.error]
     
-    @scala.inline
-    def ignore: typings.mobxStateTree.mobxStateTreeStrings.ignore = "ignore".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.ignore]
+    inline def ignore: typings.mobxStateTree.mobxStateTreeStrings.ignore = "ignore".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.ignore]
     
-    @scala.inline
-    def warn: typings.mobxStateTree.mobxStateTreeStrings.warn = "warn".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.warn]
+    inline def warn: typings.mobxStateTree.mobxStateTreeStrings.warn = "warn".asInstanceOf[typings.mobxStateTree.mobxStateTreeStrings.warn]
   }
   
   type LivelynessMode = LivelinessMode

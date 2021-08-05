@@ -18,12 +18,11 @@ trait ManagedWebGLRenderingContext extends StObject {
   
   def removeRestorable(restorable: Restorable): Unit
   
-  var restorables: js.Any
+  /* private */ var restorables: js.Any
 }
 object ManagedWebGLRenderingContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addRestorable: Restorable => Unit,
     canvas: HTMLCanvasElement | OffscreenCanvas,
     gl: WebGLRenderingContext,
@@ -34,22 +33,16 @@ object ManagedWebGLRenderingContext {
     __obj.asInstanceOf[ManagedWebGLRenderingContext]
   }
   
-  @scala.inline
-  implicit class ManagedWebGLRenderingContextMutableBuilder[Self <: ManagedWebGLRenderingContext] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedWebGLRenderingContext](x: Self) {
     
-    @scala.inline
-    def setAddRestorable(value: Restorable => Unit): Self = StObject.set(x, "addRestorable", js.Any.fromFunction1(value))
+    inline def setAddRestorable(value: Restorable => Unit): Self = StObject.set(x, "addRestorable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCanvas(value: HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+    inline def setGl(value: WebGLRenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveRestorable(value: Restorable => Unit): Self = StObject.set(x, "removeRestorable", js.Any.fromFunction1(value))
+    inline def setRemoveRestorable(value: Restorable => Unit): Self = StObject.set(x, "removeRestorable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRestorables(value: js.Any): Self = StObject.set(x, "restorables", value.asInstanceOf[js.Any])
+    inline def setRestorables(value: js.Any): Self = StObject.set(x, "restorables", value.asInstanceOf[js.Any])
   }
 }

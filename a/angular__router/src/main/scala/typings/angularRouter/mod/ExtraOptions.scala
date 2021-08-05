@@ -184,94 +184,65 @@ trait ExtraOptions extends StObject {
 }
 object ExtraOptions {
   
-  @scala.inline
-  def apply(): ExtraOptions = {
+  inline def apply(): ExtraOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtraOptions]
   }
   
-  @scala.inline
-  implicit class ExtraOptionsMutableBuilder[Self <: ExtraOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExtraOptions](x: Self) {
     
-    @scala.inline
-    def setAnchorScrolling(value: disabled | enabled): Self = StObject.set(x, "anchorScrolling", value.asInstanceOf[js.Any])
+    inline def setAnchorScrolling(value: disabled | enabled): Self = StObject.set(x, "anchorScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorScrollingUndefined: Self = StObject.set(x, "anchorScrolling", js.undefined)
+    inline def setAnchorScrollingUndefined: Self = StObject.set(x, "anchorScrolling", js.undefined)
     
-    @scala.inline
-    def setEnableTracing(value: Boolean): Self = StObject.set(x, "enableTracing", value.asInstanceOf[js.Any])
+    inline def setEnableTracing(value: Boolean): Self = StObject.set(x, "enableTracing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableTracingUndefined: Self = StObject.set(x, "enableTracing", js.undefined)
+    inline def setEnableTracingUndefined: Self = StObject.set(x, "enableTracing", js.undefined)
     
-    @scala.inline
-    def setErrorHandler(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    inline def setErrorHandler(value: /* error */ js.Any => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+    inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
-    @scala.inline
-    def setInitialNavigation(value: InitialNavigation): Self = StObject.set(x, "initialNavigation", value.asInstanceOf[js.Any])
+    inline def setInitialNavigation(value: InitialNavigation): Self = StObject.set(x, "initialNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialNavigationUndefined: Self = StObject.set(x, "initialNavigation", js.undefined)
+    inline def setInitialNavigationUndefined: Self = StObject.set(x, "initialNavigation", js.undefined)
     
-    @scala.inline
-    def setMalformedUriErrorHandler(value: (/* error */ URIError, /* urlSerializer */ UrlSerializer, /* url */ String) => UrlTree): Self = StObject.set(x, "malformedUriErrorHandler", js.Any.fromFunction3(value))
+    inline def setMalformedUriErrorHandler(value: (/* error */ URIError, /* urlSerializer */ UrlSerializer, /* url */ String) => UrlTree): Self = StObject.set(x, "malformedUriErrorHandler", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMalformedUriErrorHandlerUndefined: Self = StObject.set(x, "malformedUriErrorHandler", js.undefined)
+    inline def setMalformedUriErrorHandlerUndefined: Self = StObject.set(x, "malformedUriErrorHandler", js.undefined)
     
-    @scala.inline
-    def setOnSameUrlNavigation(value: reload | ignore): Self = StObject.set(x, "onSameUrlNavigation", value.asInstanceOf[js.Any])
+    inline def setOnSameUrlNavigation(value: reload | ignore): Self = StObject.set(x, "onSameUrlNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSameUrlNavigationUndefined: Self = StObject.set(x, "onSameUrlNavigation", js.undefined)
+    inline def setOnSameUrlNavigationUndefined: Self = StObject.set(x, "onSameUrlNavigation", js.undefined)
     
-    @scala.inline
-    def setParamsInheritanceStrategy(value: emptyOnly | always): Self = StObject.set(x, "paramsInheritanceStrategy", value.asInstanceOf[js.Any])
+    inline def setParamsInheritanceStrategy(value: emptyOnly | always): Self = StObject.set(x, "paramsInheritanceStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsInheritanceStrategyUndefined: Self = StObject.set(x, "paramsInheritanceStrategy", js.undefined)
+    inline def setParamsInheritanceStrategyUndefined: Self = StObject.set(x, "paramsInheritanceStrategy", js.undefined)
     
-    @scala.inline
-    def setPreloadingStrategy(value: js.Any): Self = StObject.set(x, "preloadingStrategy", value.asInstanceOf[js.Any])
+    inline def setPreloadingStrategy(value: js.Any): Self = StObject.set(x, "preloadingStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadingStrategyUndefined: Self = StObject.set(x, "preloadingStrategy", js.undefined)
+    inline def setPreloadingStrategyUndefined: Self = StObject.set(x, "preloadingStrategy", js.undefined)
     
-    @scala.inline
-    def setRelativeLinkResolution(value: legacy | corrected): Self = StObject.set(x, "relativeLinkResolution", value.asInstanceOf[js.Any])
+    inline def setRelativeLinkResolution(value: legacy | corrected): Self = StObject.set(x, "relativeLinkResolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeLinkResolutionUndefined: Self = StObject.set(x, "relativeLinkResolution", js.undefined)
+    inline def setRelativeLinkResolutionUndefined: Self = StObject.set(x, "relativeLinkResolution", js.undefined)
     
-    @scala.inline
-    def setScrollOffset(value: (js.Tuple2[Double, Double]) | (js.Function0[js.Tuple2[Double, Double]])): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
+    inline def setScrollOffset(value: (js.Tuple2[Double, Double]) | (js.Function0[js.Tuple2[Double, Double]])): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollOffsetFunction0(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "scrollOffset", js.Any.fromFunction0(value))
+    inline def setScrollOffsetFunction0(value: () => js.Tuple2[Double, Double]): Self = StObject.set(x, "scrollOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
+    inline def setScrollOffsetUndefined: Self = StObject.set(x, "scrollOffset", js.undefined)
     
-    @scala.inline
-    def setScrollPositionRestoration(value: disabled | enabled | top): Self = StObject.set(x, "scrollPositionRestoration", value.asInstanceOf[js.Any])
+    inline def setScrollPositionRestoration(value: disabled | enabled | top): Self = StObject.set(x, "scrollPositionRestoration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollPositionRestorationUndefined: Self = StObject.set(x, "scrollPositionRestoration", js.undefined)
+    inline def setScrollPositionRestorationUndefined: Self = StObject.set(x, "scrollPositionRestoration", js.undefined)
     
-    @scala.inline
-    def setUrlUpdateStrategy(value: deferred | eager): Self = StObject.set(x, "urlUpdateStrategy", value.asInstanceOf[js.Any])
+    inline def setUrlUpdateStrategy(value: deferred | eager): Self = StObject.set(x, "urlUpdateStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUpdateStrategyUndefined: Self = StObject.set(x, "urlUpdateStrategy", js.undefined)
+    inline def setUrlUpdateStrategyUndefined: Self = StObject.set(x, "urlUpdateStrategy", js.undefined)
     
-    @scala.inline
-    def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
+    inline def setUseHash(value: Boolean): Self = StObject.set(x, "useHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
+    inline def setUseHashUndefined: Self = StObject.set(x, "useHash", js.undefined)
   }
 }

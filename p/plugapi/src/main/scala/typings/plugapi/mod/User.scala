@@ -22,8 +22,7 @@ object User {
   }
   object Audience {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatarID: String,
       badge: String,
       blurp: js.Any,
@@ -49,29 +48,21 @@ object User {
       __obj.asInstanceOf[Audience]
     }
     
-    @scala.inline
-    implicit class AudienceMutableBuilder[Self <: Audience] (val x: Self) extends AnyVal {
+    extension [Self <: Audience](x: Self) {
       
-      @scala.inline
-      def setIgnores(value: js.Array[js.Any]): Self = StObject.set(x, "ignores", value.asInstanceOf[js.Any])
+      inline def setIgnores(value: js.Array[js.Any]): Self = StObject.set(x, "ignores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoresVarargs(value: js.Any*): Self = StObject.set(x, "ignores", js.Array(value :_*))
+      inline def setIgnoresVarargs(value: js.Any*): Self = StObject.set(x, "ignores", js.Array(value :_*))
       
-      @scala.inline
-      def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setPp(value: Double): Self = StObject.set(x, "pp", value.asInstanceOf[js.Any])
+      inline def setPp(value: Double): Self = StObject.set(x, "pp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPw(value: Double): Self = StObject.set(x, "pw", value.asInstanceOf[js.Any])
+      inline def setPw(value: Double): Self = StObject.set(x, "pw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXp(value: Double): Self = StObject.set(x, "xp", value.asInstanceOf[js.Any])
+      inline def setXp(value: Double): Self = StObject.set(x, "xp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,8 +80,7 @@ object User {
   }
   object DJ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatarID: String,
       badge: String,
       blurp: js.Any,
@@ -111,20 +101,15 @@ object User {
       __obj.asInstanceOf[DJ]
     }
     
-    @scala.inline
-    implicit class DJMutableBuilder[Self <: DJ] (val x: Self) extends AnyVal {
+    extension [Self <: DJ](x: Self) {
       
-      @scala.inline
-      def setBlurp(value: js.Any): Self = StObject.set(x, "blurp", value.asInstanceOf[js.Any])
+      inline def setBlurp(value: js.Any): Self = StObject.set(x, "blurp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrab(value: Boolean): Self = StObject.set(x, "grab", value.asInstanceOf[js.Any])
+      inline def setGrab(value: Boolean): Self = StObject.set(x, "grab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVote(value: Double): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
+      inline def setVote(value: Double): Self = StObject.set(x, "vote", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,23 +123,18 @@ object User {
   }
   object Default {
     
-    @scala.inline
-    def apply(avatarID: String, language: String, username: String): Default = {
+    inline def apply(avatarID: String, language: String, username: String): Default = {
       val __obj = js.Dynamic.literal(avatarID = avatarID.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Default]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+    extension [Self <: Default](x: Self) {
       
-      @scala.inline
-      def setAvatarID(value: String): Self = StObject.set(x, "avatarID", value.asInstanceOf[js.Any])
+      inline def setAvatarID(value: String): Self = StObject.set(x, "avatarID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,8 +156,7 @@ object User {
   }
   object Extended {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatarID: String,
       curatorPoints: Double,
       djPoints: Double,
@@ -192,26 +171,19 @@ object User {
       __obj.asInstanceOf[Extended]
     }
     
-    @scala.inline
-    implicit class ExtendedMutableBuilder[Self <: Extended] (val x: Self) extends AnyVal {
+    extension [Self <: Extended](x: Self) {
       
-      @scala.inline
-      def setCuratorPoints(value: Double): Self = StObject.set(x, "curatorPoints", value.asInstanceOf[js.Any])
+      inline def setCuratorPoints(value: Double): Self = StObject.set(x, "curatorPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDjPoints(value: Double): Self = StObject.set(x, "djPoints", value.asInstanceOf[js.Any])
+      inline def setDjPoints(value: Double): Self = StObject.set(x, "djPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFans(value: Double): Self = StObject.set(x, "fans", value.asInstanceOf[js.Any])
+      inline def setFans(value: Double): Self = StObject.set(x, "fans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenerPoints(value: Double): Self = StObject.set(x, "listenerPoints", value.asInstanceOf[js.Any])
+      inline def setListenerPoints(value: Double): Self = StObject.set(x, "listenerPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,8 +209,7 @@ object User {
   }
   object Room {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatarID: String,
       badge: String,
       gRole: Double,
@@ -255,32 +226,23 @@ object User {
       __obj.asInstanceOf[Room]
     }
     
-    @scala.inline
-    implicit class RoomMutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
+    extension [Self <: Room](x: Self) {
       
-      @scala.inline
-      def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGRole(value: Double): Self = StObject.set(x, "gRole", value.asInstanceOf[js.Any])
+      inline def setGRole(value: Double): Self = StObject.set(x, "gRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoined(value: String): Self = StObject.set(x, "joined", value.asInstanceOf[js.Any])
+      inline def setJoined(value: String): Self = StObject.set(x, "joined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: Double): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: Double): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+      inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSub(value: Double): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
+      inline def setSub(value: Double): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,8 +254,7 @@ object User {
   }
   object Update {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatarID: String,
       curatorPoints: Double,
       dateJoined: String,
@@ -309,11 +270,9 @@ object User {
       __obj.asInstanceOf[Update]
     }
     
-    @scala.inline
-    implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
+    extension [Self <: Update](x: Self) {
       
-      @scala.inline
-      def setDateJoined(value: String): Self = StObject.set(x, "dateJoined", value.asInstanceOf[js.Any])
+      inline def setDateJoined(value: String): Self = StObject.set(x, "dateJoined", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,8 +286,7 @@ object User {
   }
   object User {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatarID: String,
       badge: String,
       gRole: Double,
@@ -347,14 +305,11 @@ object User {
       __obj.asInstanceOf[typings.plugapi.mod.User.User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: typings.plugapi.mod.User.User] (val x: Self) extends AnyVal {
+    extension [Self <: typings.plugapi.mod.User.User](x: Self) {
       
-      @scala.inline
-      def setGuest(value: Boolean): Self = StObject.set(x, "guest", value.asInstanceOf[js.Any])
+      inline def setGuest(value: Boolean): Self = StObject.set(x, "guest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilver(value: Boolean): Self = StObject.set(x, "silver", value.asInstanceOf[js.Any])
+      inline def setSilver(value: Boolean): Self = StObject.set(x, "silver", value.asInstanceOf[js.Any])
     }
   }
 }

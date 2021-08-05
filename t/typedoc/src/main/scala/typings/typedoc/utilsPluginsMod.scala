@@ -14,12 +14,12 @@ object utilsPluginsMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Application) = this()
     
-    var discoverNpmPlugins: js.Any = js.native
+    /* private */ var discoverNpmPlugins: js.Any = js.native
     
     def load(): Boolean = js.native
     
     var plugins: js.Array[String] = js.native
     
-    var resolvePluginPaths: js.Any = js.native
+    /* private */ var resolvePluginPaths: js.Any = js.native
   }
 }

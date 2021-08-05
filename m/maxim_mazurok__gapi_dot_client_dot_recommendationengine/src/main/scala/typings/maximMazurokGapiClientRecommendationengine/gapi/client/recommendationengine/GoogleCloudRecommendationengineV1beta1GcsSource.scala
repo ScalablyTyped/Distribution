@@ -24,28 +24,21 @@ trait GoogleCloudRecommendationengineV1beta1GcsSource extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1GcsSource {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1GcsSource = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1GcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1GcsSource]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1GcsSourceMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1GcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1GcsSource](x: Self) {
     
-    @scala.inline
-    def setInputUris(value: js.Array[String]): Self = StObject.set(x, "inputUris", value.asInstanceOf[js.Any])
+    inline def setInputUris(value: js.Array[String]): Self = StObject.set(x, "inputUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUrisUndefined: Self = StObject.set(x, "inputUris", js.undefined)
+    inline def setInputUrisUndefined: Self = StObject.set(x, "inputUris", js.undefined)
     
-    @scala.inline
-    def setInputUrisVarargs(value: String*): Self = StObject.set(x, "inputUris", js.Array(value :_*))
+    inline def setInputUrisVarargs(value: String*): Self = StObject.set(x, "inputUris", js.Array(value :_*))
     
-    @scala.inline
-    def setJsonSchema(value: String): Self = StObject.set(x, "jsonSchema", value.asInstanceOf[js.Any])
+    inline def setJsonSchema(value: String): Self = StObject.set(x, "jsonSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonSchemaUndefined: Self = StObject.set(x, "jsonSchema", js.undefined)
+    inline def setJsonSchemaUndefined: Self = StObject.set(x, "jsonSchema", js.undefined)
   }
 }

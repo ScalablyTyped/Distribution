@@ -23,8 +23,7 @@ object dsnMod {
   }
   object Dsn {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       host: String,
       projectId: String,
       protocol: DsnProtocol,
@@ -36,11 +35,9 @@ object dsnMod {
       __obj.asInstanceOf[Dsn]
     }
     
-    @scala.inline
-    implicit class DsnMutableBuilder[Self <: Dsn] (val x: Self) extends AnyVal {
+    extension [Self <: Dsn](x: Self) {
       
-      @scala.inline
-      def setToString_(value: Boolean => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+      inline def setToString_(value: Boolean => String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     }
   }
   
@@ -69,44 +66,32 @@ object dsnMod {
   }
   object DsnComponents {
     
-    @scala.inline
-    def apply(host: String, projectId: String, protocol: DsnProtocol, user: String): DsnComponents = {
+    inline def apply(host: String, projectId: String, protocol: DsnProtocol, user: String): DsnComponents = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[DsnComponents]
     }
     
-    @scala.inline
-    implicit class DsnComponentsMutableBuilder[Self <: DsnComponents] (val x: Self) extends AnyVal {
+    extension [Self <: DsnComponents](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
+      inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: DsnProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: DsnProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,10 +104,8 @@ object dsnMod {
   trait DsnProtocol extends StObject
   object DsnProtocol {
     
-    @scala.inline
-    def http: typings.sentryTypes.sentryTypesStrings.http = "http".asInstanceOf[typings.sentryTypes.sentryTypesStrings.http]
+    inline def http: typings.sentryTypes.sentryTypesStrings.http = "http".asInstanceOf[typings.sentryTypes.sentryTypesStrings.http]
     
-    @scala.inline
-    def https: typings.sentryTypes.sentryTypesStrings.https = "https".asInstanceOf[typings.sentryTypes.sentryTypesStrings.https]
+    inline def https: typings.sentryTypes.sentryTypesStrings.https = "https".asInstanceOf[typings.sentryTypes.sentryTypesStrings.https]
   }
 }

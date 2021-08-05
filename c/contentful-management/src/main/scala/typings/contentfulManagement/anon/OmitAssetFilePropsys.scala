@@ -11,16 +11,13 @@ trait OmitAssetFilePropsys extends StObject {
 }
 object OmitAssetFilePropsys {
   
-  @scala.inline
-  def apply(fields: Title): OmitAssetFilePropsys = {
+  inline def apply(fields: Title): OmitAssetFilePropsys = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitAssetFilePropsys]
   }
   
-  @scala.inline
-  implicit class OmitAssetFilePropsysMutableBuilder[Self <: OmitAssetFilePropsys] (val x: Self) extends AnyVal {
+  extension [Self <: OmitAssetFilePropsys](x: Self) {
     
-    @scala.inline
-    def setFields(value: Title): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: Title): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }
 }

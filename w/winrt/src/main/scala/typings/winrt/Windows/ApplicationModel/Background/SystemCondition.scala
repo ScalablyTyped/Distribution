@@ -9,8 +9,7 @@ trait SystemCondition
      with ISystemCondition
 object SystemCondition {
   
-  @scala.inline
-  def apply(conditionType: SystemConditionType): SystemCondition = {
+  inline def apply(conditionType: SystemConditionType): SystemCondition = {
     val __obj = js.Dynamic.literal(conditionType = conditionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemCondition]
   }

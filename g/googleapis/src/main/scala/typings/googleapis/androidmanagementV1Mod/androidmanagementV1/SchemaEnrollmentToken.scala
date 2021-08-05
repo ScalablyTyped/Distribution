@@ -79,67 +79,47 @@ trait SchemaEnrollmentToken extends StObject {
 }
 object SchemaEnrollmentToken {
   
-  @scala.inline
-  def apply(): SchemaEnrollmentToken = {
+  inline def apply(): SchemaEnrollmentToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnrollmentToken]
   }
   
-  @scala.inline
-  implicit class SchemaEnrollmentTokenMutableBuilder[Self <: SchemaEnrollmentToken] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnrollmentToken](x: Self) {
     
-    @scala.inline
-    def setAdditionalData(value: String): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+    inline def setAdditionalData(value: String): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
+    inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setExpirationTimestamp(value: String): Self = StObject.set(x, "expirationTimestamp", value.asInstanceOf[js.Any])
+    inline def setExpirationTimestamp(value: String): Self = StObject.set(x, "expirationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimestampUndefined: Self = StObject.set(x, "expirationTimestamp", js.undefined)
+    inline def setExpirationTimestampUndefined: Self = StObject.set(x, "expirationTimestamp", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOneTimeOnly(value: Boolean): Self = StObject.set(x, "oneTimeOnly", value.asInstanceOf[js.Any])
+    inline def setOneTimeOnly(value: Boolean): Self = StObject.set(x, "oneTimeOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneTimeOnlyUndefined: Self = StObject.set(x, "oneTimeOnly", js.undefined)
+    inline def setOneTimeOnlyUndefined: Self = StObject.set(x, "oneTimeOnly", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: String): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
     
-    @scala.inline
-    def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
+    inline def setQrCode(value: String): Self = StObject.set(x, "qrCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
+    inline def setQrCodeUndefined: Self = StObject.set(x, "qrCode", js.undefined)
     
-    @scala.inline
-    def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: SchemaUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

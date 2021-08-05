@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.TextRange")
 @js.native
-class TextRange protected ()
+/* private */ class TextRange ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.TextRange

@@ -23,31 +23,23 @@ trait MouseupEventUIParam extends StObject {
 }
 object MouseupEventUIParam {
   
-  @scala.inline
-  def apply(): MouseupEventUIParam = {
+  inline def apply(): MouseupEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MouseupEventUIParam]
   }
   
-  @scala.inline
-  implicit class MouseupEventUIParamMutableBuilder[Self <: MouseupEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: MouseupEventUIParam](x: Self) {
     
-    @scala.inline
-    def setEditorInput(value: js.Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
+    inline def setEditorInput(value: js.Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
+    inline def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

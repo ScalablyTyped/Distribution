@@ -30,23 +30,16 @@ object CzmlDataSource {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def load(czml: String): js.Promise[CzmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CzmlDataSource]]
-  @scala.inline
-  def load(czml: String, options: SourceUri): js.Promise[CzmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CzmlDataSource]]
-  @scala.inline
-  def load(czml: js.Object): js.Promise[CzmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CzmlDataSource]]
-  @scala.inline
-  def load(czml: js.Object, options: SourceUri): js.Promise[CzmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CzmlDataSource]]
+  inline def load(czml: String): js.Promise[CzmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CzmlDataSource]]
+  inline def load(czml: String, options: SourceUri): js.Promise[CzmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CzmlDataSource]]
+  inline def load(czml: js.Object): js.Promise[CzmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CzmlDataSource]]
+  inline def load(czml: js.Object, options: SourceUri): js.Promise[CzmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CzmlDataSource]]
   /* static member */
-  @scala.inline
-  def load(czml: Resource): js.Promise[CzmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CzmlDataSource]]
-  @scala.inline
-  def load(czml: Resource, options: SourceUri): js.Promise[CzmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CzmlDataSource]]
+  inline def load(czml: Resource): js.Promise[CzmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CzmlDataSource]]
+  inline def load(czml: Resource, options: SourceUri): js.Promise[CzmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CzmlDataSource]]
   
   /* static member */
-  @scala.inline
-  def processMaterialPacketData(
+  inline def processMaterialPacketData(
     `object`: js.Object,
     propertyName: String,
     packetData: js.Object,
@@ -56,8 +49,7 @@ object CzmlDataSource {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("processMaterialPacketData")(`object`.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], packetData.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], sourceUri.asInstanceOf[js.Any], entityCollection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def processPacketData(
+  inline def processPacketData(
     `type`: js.Function0[js.Any],
     `object`: js.Object,
     propertyName: String,
@@ -68,8 +60,7 @@ object CzmlDataSource {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("processPacketData")(`type`.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], packetData.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], sourceUri.asInstanceOf[js.Any], entityCollection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def processPositionPacketData(
+  inline def processPositionPacketData(
     `object`: js.Object,
     propertyName: String,
     packetData: js.Object,
@@ -82,6 +73,5 @@ object CzmlDataSource {
   @JSImport("cesium", "CzmlDataSource.updaters")
   @js.native
   def updaters: js.Array[js.Any] = js.native
-  @scala.inline
-  def updaters_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updaters")(x.asInstanceOf[js.Any])
+  inline def updaters_=(x: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("updaters")(x.asInstanceOf[js.Any])
 }

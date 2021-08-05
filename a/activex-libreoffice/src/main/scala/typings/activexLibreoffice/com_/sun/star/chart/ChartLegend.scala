@@ -51,8 +51,7 @@ trait ChartLegend
 }
 object ChartLegend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alignment: ChartLegendPosition,
     AutomaticPosition: Boolean,
     CharAutoKerning: Boolean,
@@ -170,13 +169,10 @@ object ChartLegend {
     __obj.asInstanceOf[ChartLegend]
   }
   
-  @scala.inline
-  implicit class ChartLegendMutableBuilder[Self <: ChartLegend] (val x: Self) extends AnyVal {
+  extension [Self <: ChartLegend](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: ChartLegendPosition): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: ChartLegendPosition): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticPosition(value: Boolean): Self = StObject.set(x, "AutomaticPosition", value.asInstanceOf[js.Any])
+    inline def setAutomaticPosition(value: Boolean): Self = StObject.set(x, "AutomaticPosition", value.asInstanceOf[js.Any])
   }
 }

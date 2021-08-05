@@ -13,16 +13,13 @@ trait DeleteResolverEndpointRequest extends StObject {
 }
 object DeleteResolverEndpointRequest {
   
-  @scala.inline
-  def apply(ResolverEndpointId: ResourceId): DeleteResolverEndpointRequest = {
+  inline def apply(ResolverEndpointId: ResourceId): DeleteResolverEndpointRequest = {
     val __obj = js.Dynamic.literal(ResolverEndpointId = ResolverEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResolverEndpointRequest]
   }
   
-  @scala.inline
-  implicit class DeleteResolverEndpointRequestMutableBuilder[Self <: DeleteResolverEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResolverEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
+    inline def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
   }
 }

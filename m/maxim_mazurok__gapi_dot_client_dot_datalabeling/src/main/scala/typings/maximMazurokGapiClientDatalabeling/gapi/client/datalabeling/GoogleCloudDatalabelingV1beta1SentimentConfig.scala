@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1SentimentConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1SentimentConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1SentimentConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1SentimentConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1SentimentConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1SentimentConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1SentimentConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1SentimentConfig](x: Self) {
     
-    @scala.inline
-    def setEnableLabelSentimentSelection(value: Boolean): Self = StObject.set(x, "enableLabelSentimentSelection", value.asInstanceOf[js.Any])
+    inline def setEnableLabelSentimentSelection(value: Boolean): Self = StObject.set(x, "enableLabelSentimentSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableLabelSentimentSelectionUndefined: Self = StObject.set(x, "enableLabelSentimentSelection", js.undefined)
+    inline def setEnableLabelSentimentSelectionUndefined: Self = StObject.set(x, "enableLabelSentimentSelection", js.undefined)
   }
 }

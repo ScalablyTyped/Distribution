@@ -18,25 +18,19 @@ trait IgTimePickerItemsDelta
 }
 object IgTimePickerItemsDelta {
   
-  @scala.inline
-  def apply(): IgTimePickerItemsDelta = {
+  inline def apply(): IgTimePickerItemsDelta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTimePickerItemsDelta]
   }
   
-  @scala.inline
-  implicit class IgTimePickerItemsDeltaMutableBuilder[Self <: IgTimePickerItemsDelta] (val x: Self) extends AnyVal {
+  extension [Self <: IgTimePickerItemsDelta](x: Self) {
     
-    @scala.inline
-    def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+    inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
+    inline def setHoursUndefined: Self = StObject.set(x, "hours", js.undefined)
     
-    @scala.inline
-    def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+    inline def setMinutes(value: Double): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
+    inline def setMinutesUndefined: Self = StObject.set(x, "minutes", js.undefined)
   }
 }

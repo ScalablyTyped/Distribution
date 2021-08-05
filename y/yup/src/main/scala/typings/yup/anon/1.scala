@@ -11,16 +11,13 @@ trait `1` extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply(max: Date | String): `1` = {
+  inline def apply(max: Date | String): `1` = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+  extension [Self <: `1`](x: Self) {
     
-    @scala.inline
-    def setMax(value: Date | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Date | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }
 }

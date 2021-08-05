@@ -22,25 +22,19 @@ trait SchemaSurveyRejection extends StObject {
 }
 object SchemaSurveyRejection {
   
-  @scala.inline
-  def apply(): SchemaSurveyRejection = {
+  inline def apply(): SchemaSurveyRejection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSurveyRejection]
   }
   
-  @scala.inline
-  implicit class SchemaSurveyRejectionMutableBuilder[Self <: SchemaSurveyRejection] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSurveyRejection](x: Self) {
     
-    @scala.inline
-    def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
+    inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
+    inline def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

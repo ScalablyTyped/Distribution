@@ -13,19 +13,15 @@ trait DeleteEgressOnlyInternetGatewayResult extends StObject {
 }
 object DeleteEgressOnlyInternetGatewayResult {
   
-  @scala.inline
-  def apply(): DeleteEgressOnlyInternetGatewayResult = {
+  inline def apply(): DeleteEgressOnlyInternetGatewayResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteEgressOnlyInternetGatewayResult]
   }
   
-  @scala.inline
-  implicit class DeleteEgressOnlyInternetGatewayResultMutableBuilder[Self <: DeleteEgressOnlyInternetGatewayResult] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEgressOnlyInternetGatewayResult](x: Self) {
     
-    @scala.inline
-    def setReturnCode(value: Boolean): Self = StObject.set(x, "ReturnCode", value.asInstanceOf[js.Any])
+    inline def setReturnCode(value: Boolean): Self = StObject.set(x, "ReturnCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnCodeUndefined: Self = StObject.set(x, "ReturnCode", js.undefined)
+    inline def setReturnCodeUndefined: Self = StObject.set(x, "ReturnCode", js.undefined)
   }
 }

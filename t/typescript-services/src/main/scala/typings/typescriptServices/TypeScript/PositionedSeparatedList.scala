@@ -12,8 +12,7 @@ trait PositionedSeparatedList
 }
 object PositionedSeparatedList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _element: js.Any,
     _fullStart: js.Any,
     _parent: js.Any,
@@ -42,10 +41,8 @@ object PositionedSeparatedList {
     __obj.asInstanceOf[PositionedSeparatedList]
   }
   
-  @scala.inline
-  implicit class PositionedSeparatedListMutableBuilder[Self <: PositionedSeparatedList] (val x: Self) extends AnyVal {
+  extension [Self <: PositionedSeparatedList](x: Self) {
     
-    @scala.inline
-    def setList(value: () => ISeparatedSyntaxList): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+    inline def setList(value: () => ISeparatedSyntaxList): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
   }
 }

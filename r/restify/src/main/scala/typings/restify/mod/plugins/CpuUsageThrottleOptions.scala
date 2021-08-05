@@ -16,37 +16,27 @@ trait CpuUsageThrottleOptions extends StObject {
 }
 object CpuUsageThrottleOptions {
   
-  @scala.inline
-  def apply(): CpuUsageThrottleOptions = {
+  inline def apply(): CpuUsageThrottleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CpuUsageThrottleOptions]
   }
   
-  @scala.inline
-  implicit class CpuUsageThrottleOptionsMutableBuilder[Self <: CpuUsageThrottleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CpuUsageThrottleOptions](x: Self) {
     
-    @scala.inline
-    def setHalfLife(value: Double): Self = StObject.set(x, "halfLife", value.asInstanceOf[js.Any])
+    inline def setHalfLife(value: Double): Self = StObject.set(x, "halfLife", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHalfLifeUndefined: Self = StObject.set(x, "halfLife", js.undefined)
+    inline def setHalfLifeUndefined: Self = StObject.set(x, "halfLife", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
   }
 }

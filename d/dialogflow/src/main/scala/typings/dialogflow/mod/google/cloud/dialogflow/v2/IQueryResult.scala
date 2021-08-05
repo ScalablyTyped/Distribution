@@ -56,154 +56,105 @@ trait IQueryResult extends StObject {
 }
 object IQueryResult {
   
-  @scala.inline
-  def apply(): IQueryResult = {
+  inline def apply(): IQueryResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IQueryResult]
   }
   
-  @scala.inline
-  implicit class IQueryResultMutableBuilder[Self <: IQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: IQueryResult](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNull: Self = StObject.set(x, "action", null)
+    inline def setActionNull: Self = StObject.set(x, "action", null)
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setAllRequiredParamsPresent(value: Boolean): Self = StObject.set(x, "allRequiredParamsPresent", value.asInstanceOf[js.Any])
+    inline def setAllRequiredParamsPresent(value: Boolean): Self = StObject.set(x, "allRequiredParamsPresent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllRequiredParamsPresentNull: Self = StObject.set(x, "allRequiredParamsPresent", null)
+    inline def setAllRequiredParamsPresentNull: Self = StObject.set(x, "allRequiredParamsPresent", null)
     
-    @scala.inline
-    def setAllRequiredParamsPresentUndefined: Self = StObject.set(x, "allRequiredParamsPresent", js.undefined)
+    inline def setAllRequiredParamsPresentUndefined: Self = StObject.set(x, "allRequiredParamsPresent", js.undefined)
     
-    @scala.inline
-    def setDiagnosticInfo(value: IStruct): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
+    inline def setDiagnosticInfo(value: IStruct): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticInfoNull: Self = StObject.set(x, "diagnosticInfo", null)
+    inline def setDiagnosticInfoNull: Self = StObject.set(x, "diagnosticInfo", null)
     
-    @scala.inline
-    def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
+    inline def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
     
-    @scala.inline
-    def setFulfillmentMessages(value: js.Array[IMessage]): Self = StObject.set(x, "fulfillmentMessages", value.asInstanceOf[js.Any])
+    inline def setFulfillmentMessages(value: js.Array[IMessage]): Self = StObject.set(x, "fulfillmentMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentMessagesNull: Self = StObject.set(x, "fulfillmentMessages", null)
+    inline def setFulfillmentMessagesNull: Self = StObject.set(x, "fulfillmentMessages", null)
     
-    @scala.inline
-    def setFulfillmentMessagesUndefined: Self = StObject.set(x, "fulfillmentMessages", js.undefined)
+    inline def setFulfillmentMessagesUndefined: Self = StObject.set(x, "fulfillmentMessages", js.undefined)
     
-    @scala.inline
-    def setFulfillmentMessagesVarargs(value: IMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value :_*))
+    inline def setFulfillmentMessagesVarargs(value: IMessage*): Self = StObject.set(x, "fulfillmentMessages", js.Array(value :_*))
     
-    @scala.inline
-    def setFulfillmentText(value: String): Self = StObject.set(x, "fulfillmentText", value.asInstanceOf[js.Any])
+    inline def setFulfillmentText(value: String): Self = StObject.set(x, "fulfillmentText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFulfillmentTextNull: Self = StObject.set(x, "fulfillmentText", null)
+    inline def setFulfillmentTextNull: Self = StObject.set(x, "fulfillmentText", null)
     
-    @scala.inline
-    def setFulfillmentTextUndefined: Self = StObject.set(x, "fulfillmentText", js.undefined)
+    inline def setFulfillmentTextUndefined: Self = StObject.set(x, "fulfillmentText", js.undefined)
     
-    @scala.inline
-    def setIntent(value: IIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
+    inline def setIntent(value: IIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentDetectionConfidence(value: Double): Self = StObject.set(x, "intentDetectionConfidence", value.asInstanceOf[js.Any])
+    inline def setIntentDetectionConfidence(value: Double): Self = StObject.set(x, "intentDetectionConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentDetectionConfidenceNull: Self = StObject.set(x, "intentDetectionConfidence", null)
+    inline def setIntentDetectionConfidenceNull: Self = StObject.set(x, "intentDetectionConfidence", null)
     
-    @scala.inline
-    def setIntentDetectionConfidenceUndefined: Self = StObject.set(x, "intentDetectionConfidence", js.undefined)
+    inline def setIntentDetectionConfidenceUndefined: Self = StObject.set(x, "intentDetectionConfidence", js.undefined)
     
-    @scala.inline
-    def setIntentNull: Self = StObject.set(x, "intent", null)
+    inline def setIntentNull: Self = StObject.set(x, "intent", null)
     
-    @scala.inline
-    def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
+    inline def setIntentUndefined: Self = StObject.set(x, "intent", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
+    inline def setLanguageCodeNull: Self = StObject.set(x, "languageCode", null)
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
     
-    @scala.inline
-    def setOutputContexts(value: js.Array[IContext]): Self = StObject.set(x, "outputContexts", value.asInstanceOf[js.Any])
+    inline def setOutputContexts(value: js.Array[IContext]): Self = StObject.set(x, "outputContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputContextsNull: Self = StObject.set(x, "outputContexts", null)
+    inline def setOutputContextsNull: Self = StObject.set(x, "outputContexts", null)
     
-    @scala.inline
-    def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
+    inline def setOutputContextsUndefined: Self = StObject.set(x, "outputContexts", js.undefined)
     
-    @scala.inline
-    def setOutputContextsVarargs(value: IContext*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
+    inline def setOutputContextsVarargs(value: IContext*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setParameters(value: IStruct): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: IStruct): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersNull: Self = StObject.set(x, "parameters", null)
+    inline def setParametersNull: Self = StObject.set(x, "parameters", null)
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
+    inline def setQueryText(value: String): Self = StObject.set(x, "queryText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTextNull: Self = StObject.set(x, "queryText", null)
+    inline def setQueryTextNull: Self = StObject.set(x, "queryText", null)
     
-    @scala.inline
-    def setQueryTextUndefined: Self = StObject.set(x, "queryText", js.undefined)
+    inline def setQueryTextUndefined: Self = StObject.set(x, "queryText", js.undefined)
     
-    @scala.inline
-    def setSentimentAnalysisResult(value: ISentimentAnalysisResult): Self = StObject.set(x, "sentimentAnalysisResult", value.asInstanceOf[js.Any])
+    inline def setSentimentAnalysisResult(value: ISentimentAnalysisResult): Self = StObject.set(x, "sentimentAnalysisResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentAnalysisResultNull: Self = StObject.set(x, "sentimentAnalysisResult", null)
+    inline def setSentimentAnalysisResultNull: Self = StObject.set(x, "sentimentAnalysisResult", null)
     
-    @scala.inline
-    def setSentimentAnalysisResultUndefined: Self = StObject.set(x, "sentimentAnalysisResult", js.undefined)
+    inline def setSentimentAnalysisResultUndefined: Self = StObject.set(x, "sentimentAnalysisResult", js.undefined)
     
-    @scala.inline
-    def setSpeechRecognitionConfidence(value: Double): Self = StObject.set(x, "speechRecognitionConfidence", value.asInstanceOf[js.Any])
+    inline def setSpeechRecognitionConfidence(value: Double): Self = StObject.set(x, "speechRecognitionConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechRecognitionConfidenceNull: Self = StObject.set(x, "speechRecognitionConfidence", null)
+    inline def setSpeechRecognitionConfidenceNull: Self = StObject.set(x, "speechRecognitionConfidence", null)
     
-    @scala.inline
-    def setSpeechRecognitionConfidenceUndefined: Self = StObject.set(x, "speechRecognitionConfidence", js.undefined)
+    inline def setSpeechRecognitionConfidenceUndefined: Self = StObject.set(x, "speechRecognitionConfidence", js.undefined)
     
-    @scala.inline
-    def setWebhookPayload(value: IStruct): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
+    inline def setWebhookPayload(value: IStruct): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookPayloadNull: Self = StObject.set(x, "webhookPayload", null)
+    inline def setWebhookPayloadNull: Self = StObject.set(x, "webhookPayload", null)
     
-    @scala.inline
-    def setWebhookPayloadUndefined: Self = StObject.set(x, "webhookPayload", js.undefined)
+    inline def setWebhookPayloadUndefined: Self = StObject.set(x, "webhookPayload", js.undefined)
     
-    @scala.inline
-    def setWebhookSource(value: String): Self = StObject.set(x, "webhookSource", value.asInstanceOf[js.Any])
+    inline def setWebhookSource(value: String): Self = StObject.set(x, "webhookSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookSourceNull: Self = StObject.set(x, "webhookSource", null)
+    inline def setWebhookSourceNull: Self = StObject.set(x, "webhookSource", null)
     
-    @scala.inline
-    def setWebhookSourceUndefined: Self = StObject.set(x, "webhookSource", js.undefined)
+    inline def setWebhookSourceUndefined: Self = StObject.set(x, "webhookSource", js.undefined)
   }
 }

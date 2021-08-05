@@ -22,26 +22,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ContentToken {
   
-  @scala.inline
-  def apply(level: Double, `type`: String): ContentToken = {
+  inline def apply(level: Double, `type`: String): ContentToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentToken]
   }
   
-  @scala.inline
-  implicit class ContentTokenMutableBuilder[Self <: ContentToken] (val x: Self) extends AnyVal {
+  extension [Self <: ContentToken](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+    inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

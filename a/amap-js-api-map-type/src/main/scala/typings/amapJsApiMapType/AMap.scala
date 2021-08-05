@@ -31,20 +31,16 @@ object AMap {
     }
     object EventMap {
       
-      @scala.inline
-      def apply(hide: Event_[hide, Unit], show: Event_[show, Unit]): EventMap = {
+      inline def apply(hide: Event_[hide, Unit], show: Event_[show, Unit]): EventMap = {
         val __obj = js.Dynamic.literal(hide = hide.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
         __obj.asInstanceOf[EventMap]
       }
       
-      @scala.inline
-      implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
+      extension [Self <: EventMap](x: Self) {
         
-        @scala.inline
-        def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+        inline def setHide(value: Event_[hide, Unit]): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        inline def setShow(value: Event_[show, Unit]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       }
     }
     
@@ -69,32 +65,24 @@ object AMap {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setDefaultType(value: `0` | `1`): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
+        inline def setDefaultType(value: `0` | `1`): Self = StObject.set(x, "defaultType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
+        inline def setDefaultTypeUndefined: Self = StObject.set(x, "defaultType", js.undefined)
         
-        @scala.inline
-        def setShowRoad(value: Boolean): Self = StObject.set(x, "showRoad", value.asInstanceOf[js.Any])
+        inline def setShowRoad(value: Boolean): Self = StObject.set(x, "showRoad", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowRoadUndefined: Self = StObject.set(x, "showRoad", js.undefined)
+        inline def setShowRoadUndefined: Self = StObject.set(x, "showRoad", js.undefined)
         
-        @scala.inline
-        def setShowTraffic(value: Boolean): Self = StObject.set(x, "showTraffic", value.asInstanceOf[js.Any])
+        inline def setShowTraffic(value: Boolean): Self = StObject.set(x, "showTraffic", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowTrafficUndefined: Self = StObject.set(x, "showTraffic", js.undefined)
+        inline def setShowTrafficUndefined: Self = StObject.set(x, "showTraffic", js.undefined)
       }
     }
   }

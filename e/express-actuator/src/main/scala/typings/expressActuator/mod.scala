@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-actuator", JSImport.Namespace)
   @js.native
@@ -43,20 +41,16 @@ object mod {
   }
   object CustomEndpoint {
     
-    @scala.inline
-    def apply(controller: (/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any]) => Unit, id: String): CustomEndpoint = {
+    inline def apply(controller: (/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any]) => Unit, id: String): CustomEndpoint = {
       val __obj = js.Dynamic.literal(controller = js.Any.fromFunction2(controller), id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomEndpoint]
     }
     
-    @scala.inline
-    implicit class CustomEndpointMutableBuilder[Self <: CustomEndpoint] (val x: Self) extends AnyVal {
+    extension [Self <: CustomEndpoint](x: Self) {
       
-      @scala.inline
-      def setController(value: (/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "controller", js.Any.fromFunction2(value))
+      inline def setController(value: (/* req */ js.UndefOr[js.Any], /* res */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "controller", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,11 +61,9 @@ object mod {
   trait InfoGitMode extends StObject
   object InfoGitMode {
     
-    @scala.inline
-    def full: typings.expressActuator.expressActuatorStrings.full = "full".asInstanceOf[typings.expressActuator.expressActuatorStrings.full]
+    inline def full: typings.expressActuator.expressActuatorStrings.full = "full".asInstanceOf[typings.expressActuator.expressActuatorStrings.full]
     
-    @scala.inline
-    def simple: typings.expressActuator.expressActuatorStrings.simple = "simple".asInstanceOf[typings.expressActuator.expressActuatorStrings.simple]
+    inline def simple: typings.expressActuator.expressActuatorStrings.simple = "simple".asInstanceOf[typings.expressActuator.expressActuatorStrings.simple]
   }
   
   /**
@@ -106,47 +98,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setCustomEndpoints(value: js.Array[CustomEndpoint]): Self = StObject.set(x, "customEndpoints", value.asInstanceOf[js.Any])
+      inline def setCustomEndpoints(value: js.Array[CustomEndpoint]): Self = StObject.set(x, "customEndpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomEndpointsUndefined: Self = StObject.set(x, "customEndpoints", js.undefined)
+      inline def setCustomEndpointsUndefined: Self = StObject.set(x, "customEndpoints", js.undefined)
       
-      @scala.inline
-      def setCustomEndpointsVarargs(value: CustomEndpoint*): Self = StObject.set(x, "customEndpoints", js.Array(value :_*))
+      inline def setCustomEndpointsVarargs(value: CustomEndpoint*): Self = StObject.set(x, "customEndpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setInfoBuildOptions(value: Record[String, js.Any]): Self = StObject.set(x, "infoBuildOptions", value.asInstanceOf[js.Any])
+      inline def setInfoBuildOptions(value: Record[String, js.Any]): Self = StObject.set(x, "infoBuildOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoBuildOptionsUndefined: Self = StObject.set(x, "infoBuildOptions", js.undefined)
+      inline def setInfoBuildOptionsUndefined: Self = StObject.set(x, "infoBuildOptions", js.undefined)
       
-      @scala.inline
-      def setInfoDateFormat(value: String): Self = StObject.set(x, "infoDateFormat", value.asInstanceOf[js.Any])
+      inline def setInfoDateFormat(value: String): Self = StObject.set(x, "infoDateFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoDateFormatUndefined: Self = StObject.set(x, "infoDateFormat", js.undefined)
+      inline def setInfoDateFormatUndefined: Self = StObject.set(x, "infoDateFormat", js.undefined)
       
-      @scala.inline
-      def setInfoGitMode(value: InfoGitMode): Self = StObject.set(x, "infoGitMode", value.asInstanceOf[js.Any])
+      inline def setInfoGitMode(value: InfoGitMode): Self = StObject.set(x, "infoGitMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoGitModeUndefined: Self = StObject.set(x, "infoGitMode", js.undefined)
+      inline def setInfoGitModeUndefined: Self = StObject.set(x, "infoGitMode", js.undefined)
     }
   }
 }

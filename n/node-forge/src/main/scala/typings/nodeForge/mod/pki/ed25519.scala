@@ -41,19 +41,14 @@ object ed25519 {
   }
   
   // generateKeyPair does not currently accept `util.ByteBuffer` as the seed.
-  @scala.inline
-  def generateKeyPair(): typings.nodeForge.anon.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[typings.nodeForge.anon.PrivateKey]
-  @scala.inline
-  def generateKeyPair(options: Seed): typings.nodeForge.anon.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.anon.PrivateKey]
+  inline def generateKeyPair(): typings.nodeForge.anon.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")().asInstanceOf[typings.nodeForge.anon.PrivateKey]
+  inline def generateKeyPair(options: Seed): typings.nodeForge.anon.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(options.asInstanceOf[js.Any]).asInstanceOf[typings.nodeForge.anon.PrivateKey]
   
-  @scala.inline
-  def publicKeyFromPrivateKey(options: PrivateKeyBinaryBuffer): NativeBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyFromPrivateKey")(options.asInstanceOf[js.Any]).asInstanceOf[NativeBuffer]
+  inline def publicKeyFromPrivateKey(options: PrivateKeyBinaryBuffer): NativeBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyFromPrivateKey")(options.asInstanceOf[js.Any]).asInstanceOf[NativeBuffer]
   
-  @scala.inline
-  def sign(options: ToNativeBufferParameters & PrivateKeyBinaryBuffer): NativeBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[NativeBuffer]
+  inline def sign(options: ToNativeBufferParameters & PrivateKeyBinaryBuffer): NativeBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any]).asInstanceOf[NativeBuffer]
   
-  @scala.inline
-  def verify(options: ToNativeBufferParameters & typings.nodeForge.anon.PublicKey): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def verify(options: ToNativeBufferParameters & typings.nodeForge.anon.PublicKey): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   // `string`s will be converted by toNativeBuffer with `encoding: 'binary'`
   type BinaryBuffer = NativeBuffer | ByteBuffer | String
@@ -69,14 +64,12 @@ object ed25519 {
   trait ToNativeBufferParameters extends StObject
   object ToNativeBufferParameters {
     
-    @scala.inline
-    def Encoding(encoding: binary | utf8, message: String): typings.nodeForge.anon.Encoding = {
+    inline def Encoding(encoding: binary | utf8, message: String): typings.nodeForge.anon.Encoding = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeForge.anon.Encoding]
     }
     
-    @scala.inline
-    def Message(message: NativeBuffer | ByteBuffer): typings.nodeForge.anon.Message = {
+    inline def Message(message: NativeBuffer | ByteBuffer): typings.nodeForge.anon.Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nodeForge.anon.Message]
     }

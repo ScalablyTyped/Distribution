@@ -20,37 +20,27 @@ trait CandleStickValue extends StObject {
 }
 object CandleStickValue {
   
-  @scala.inline
-  def apply(close: Double, open: Double, shadowH: Double, shadowL: Double): CandleStickValue = {
+  inline def apply(close: Double, open: Double, shadowH: Double, shadowL: Double): CandleStickValue = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], shadowH = shadowH.asInstanceOf[js.Any], shadowL = shadowL.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandleStickValue]
   }
   
-  @scala.inline
-  implicit class CandleStickValueMutableBuilder[Self <: CandleStickValue] (val x: Self) extends AnyVal {
+  extension [Self <: CandleStickValue](x: Self) {
     
-    @scala.inline
-    def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: Double): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setOpen(value: Double): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Double): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowH(value: Double): Self = StObject.set(x, "shadowH", value.asInstanceOf[js.Any])
+    inline def setShadowH(value: Double): Self = StObject.set(x, "shadowH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowL(value: Double): Self = StObject.set(x, "shadowL", value.asInstanceOf[js.Any])
+    inline def setShadowL(value: Double): Self = StObject.set(x, "shadowL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

@@ -63,8 +63,7 @@ trait PutAlarmRequest extends StObject {
 }
 object PutAlarmRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alarmName: ResourceName,
     comparisonOperator: ComparisonOperator,
     evaluationPeriods: integer,
@@ -76,61 +75,42 @@ object PutAlarmRequest {
     __obj.asInstanceOf[PutAlarmRequest]
   }
   
-  @scala.inline
-  implicit class PutAlarmRequestMutableBuilder[Self <: PutAlarmRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAlarmRequest](x: Self) {
     
-    @scala.inline
-    def setAlarmName(value: ResourceName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: ResourceName): Self = StObject.set(x, "alarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactProtocols(value: ContactProtocolsList): Self = StObject.set(x, "contactProtocols", value.asInstanceOf[js.Any])
+    inline def setContactProtocols(value: ContactProtocolsList): Self = StObject.set(x, "contactProtocols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactProtocolsUndefined: Self = StObject.set(x, "contactProtocols", js.undefined)
+    inline def setContactProtocolsUndefined: Self = StObject.set(x, "contactProtocols", js.undefined)
     
-    @scala.inline
-    def setContactProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "contactProtocols", js.Array(value :_*))
+    inline def setContactProtocolsVarargs(value: ContactProtocol*): Self = StObject.set(x, "contactProtocols", js.Array(value :_*))
     
-    @scala.inline
-    def setDatapointsToAlarm(value: integer): Self = StObject.set(x, "datapointsToAlarm", value.asInstanceOf[js.Any])
+    inline def setDatapointsToAlarm(value: integer): Self = StObject.set(x, "datapointsToAlarm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatapointsToAlarmUndefined: Self = StObject.set(x, "datapointsToAlarm", js.undefined)
+    inline def setDatapointsToAlarmUndefined: Self = StObject.set(x, "datapointsToAlarm", js.undefined)
     
-    @scala.inline
-    def setEvaluationPeriods(value: integer): Self = StObject.set(x, "evaluationPeriods", value.asInstanceOf[js.Any])
+    inline def setEvaluationPeriods(value: integer): Self = StObject.set(x, "evaluationPeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoredResourceName(value: ResourceName): Self = StObject.set(x, "monitoredResourceName", value.asInstanceOf[js.Any])
+    inline def setMonitoredResourceName(value: ResourceName): Self = StObject.set(x, "monitoredResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEnabled(value: Boolean): Self = StObject.set(x, "notificationEnabled", value.asInstanceOf[js.Any])
+    inline def setNotificationEnabled(value: Boolean): Self = StObject.set(x, "notificationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationEnabledUndefined: Self = StObject.set(x, "notificationEnabled", js.undefined)
+    inline def setNotificationEnabledUndefined: Self = StObject.set(x, "notificationEnabled", js.undefined)
     
-    @scala.inline
-    def setNotificationTriggers(value: NotificationTriggerList): Self = StObject.set(x, "notificationTriggers", value.asInstanceOf[js.Any])
+    inline def setNotificationTriggers(value: NotificationTriggerList): Self = StObject.set(x, "notificationTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTriggersUndefined: Self = StObject.set(x, "notificationTriggers", js.undefined)
+    inline def setNotificationTriggersUndefined: Self = StObject.set(x, "notificationTriggers", js.undefined)
     
-    @scala.inline
-    def setNotificationTriggersVarargs(value: AlarmState*): Self = StObject.set(x, "notificationTriggers", js.Array(value :_*))
+    inline def setNotificationTriggersVarargs(value: AlarmState*): Self = StObject.set(x, "notificationTriggers", js.Array(value :_*))
     
-    @scala.inline
-    def setThreshold(value: double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreatMissingData(value: TreatMissingData): Self = StObject.set(x, "treatMissingData", value.asInstanceOf[js.Any])
+    inline def setTreatMissingData(value: TreatMissingData): Self = StObject.set(x, "treatMissingData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTreatMissingDataUndefined: Self = StObject.set(x, "treatMissingData", js.undefined)
+    inline def setTreatMissingDataUndefined: Self = StObject.set(x, "treatMissingData", js.undefined)
   }
 }

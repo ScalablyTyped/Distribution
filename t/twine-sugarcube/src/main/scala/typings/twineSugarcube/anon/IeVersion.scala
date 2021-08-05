@@ -24,8 +24,7 @@ trait IeVersion extends StObject {
 }
 object IeVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isGecko: Boolean,
     isIE: Boolean,
     isMobile: Android,
@@ -37,37 +36,26 @@ object IeVersion {
     __obj.asInstanceOf[IeVersion]
   }
   
-  @scala.inline
-  implicit class IeVersionMutableBuilder[Self <: IeVersion] (val x: Self) extends AnyVal {
+  extension [Self <: IeVersion](x: Self) {
     
-    @scala.inline
-    def setIeVersion(value: Double): Self = StObject.set(x, "ieVersion", value.asInstanceOf[js.Any])
+    inline def setIeVersion(value: Double): Self = StObject.set(x, "ieVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIeVersionNull: Self = StObject.set(x, "ieVersion", null)
+    inline def setIeVersionNull: Self = StObject.set(x, "ieVersion", null)
     
-    @scala.inline
-    def setIsGecko(value: Boolean): Self = StObject.set(x, "isGecko", value.asInstanceOf[js.Any])
+    inline def setIsGecko(value: Boolean): Self = StObject.set(x, "isGecko", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsIE(value: Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
+    inline def setIsIE(value: Boolean): Self = StObject.set(x, "isIE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMobile(value: Android): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    inline def setIsMobile(value: Android): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
+    inline def setIsOpera(value: Boolean): Self = StObject.set(x, "isOpera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVivaldi(value: Boolean): Self = StObject.set(x, "isVivaldi", value.asInstanceOf[js.Any])
+    inline def setIsVivaldi(value: Boolean): Self = StObject.set(x, "isVivaldi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperaVersion(value: Double): Self = StObject.set(x, "operaVersion", value.asInstanceOf[js.Any])
+    inline def setOperaVersion(value: Double): Self = StObject.set(x, "operaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperaVersionNull: Self = StObject.set(x, "operaVersion", null)
+    inline def setOperaVersionNull: Self = StObject.set(x, "operaVersion", null)
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
   }
 }

@@ -18,10 +18,8 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[T](filePath: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def apply[T](filePath: String, options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def apply[T](filePath: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  inline def apply[T](filePath: String, options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   @JSImport("load-json-file", JSImport.Namespace)
   @js.native
@@ -37,10 +35,8 @@ object mod {
   	//=> {foo: true}
   	```
   	*/
-  @scala.inline
-  def sync[T](filePath: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def sync[T](filePath: String, options: Options): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def sync[T](filePath: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def sync[T](filePath: String, options: Options): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   type BeforeParse = js.Function1[/* data */ String, String]
   
@@ -59,26 +55,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBeforeParse(value: /* data */ String => String): Self = StObject.set(x, "beforeParse", js.Any.fromFunction1(value))
+      inline def setBeforeParse(value: /* data */ String => String): Self = StObject.set(x, "beforeParse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBeforeParseUndefined: Self = StObject.set(x, "beforeParse", js.undefined)
+      inline def setBeforeParseUndefined: Self = StObject.set(x, "beforeParse", js.undefined)
       
-      @scala.inline
-      def setReviver(value: Reviver): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
+      inline def setReviver(value: Reviver): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
+      inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
     }
   }
   

@@ -18,19 +18,15 @@ trait ClipFragmentSelector extends StObject {
 }
 object ClipFragmentSelector {
   
-  @scala.inline
-  def apply(FragmentSelectorType: ClipFragmentSelectorType, TimestampRange: ClipTimestampRange): ClipFragmentSelector = {
+  inline def apply(FragmentSelectorType: ClipFragmentSelectorType, TimestampRange: ClipTimestampRange): ClipFragmentSelector = {
     val __obj = js.Dynamic.literal(FragmentSelectorType = FragmentSelectorType.asInstanceOf[js.Any], TimestampRange = TimestampRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipFragmentSelector]
   }
   
-  @scala.inline
-  implicit class ClipFragmentSelectorMutableBuilder[Self <: ClipFragmentSelector] (val x: Self) extends AnyVal {
+  extension [Self <: ClipFragmentSelector](x: Self) {
     
-    @scala.inline
-    def setFragmentSelectorType(value: ClipFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
+    inline def setFragmentSelectorType(value: ClipFragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampRange(value: ClipTimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
+    inline def setTimestampRange(value: ClipTimestampRange): Self = StObject.set(x, "TimestampRange", value.asInstanceOf[js.Any])
   }
 }

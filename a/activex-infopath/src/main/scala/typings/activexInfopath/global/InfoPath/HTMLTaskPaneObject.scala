@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.HTMLTaskPaneObject")
 @js.native
-class HTMLTaskPaneObject protected ()
+/* private */ class HTMLTaskPaneObject ()
   extends StObject
      with typings.activexInfopath.InfoPath.HTMLTaskPaneObject {
   
@@ -22,7 +22,7 @@ class HTMLTaskPaneObject protected ()
   @JSName("HTMLWindow")
   override val HTMLWindow_Original: IHTMLWindow2 = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.HTMLTaskPaneObject_typekey")
   var InfoPathDotHTMLTaskPaneObject_typekey: typings.activexInfopath.InfoPath.HTMLTaskPaneObject = js.native
   

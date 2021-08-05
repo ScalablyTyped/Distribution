@@ -15,7 +15,7 @@ object smoothScrollbarTrackMod {
        with typings.smoothScrollbar.trackMod.TrackController {
     def this(_scrollbar: Scrollbar) = this()
     
-    var _scrollbar: js.Any = js.native
+    /* private */ var _scrollbar: js.Any = js.native
     
     /* CompleteClass */
     override def autoHideOnIdle(): Unit = js.native

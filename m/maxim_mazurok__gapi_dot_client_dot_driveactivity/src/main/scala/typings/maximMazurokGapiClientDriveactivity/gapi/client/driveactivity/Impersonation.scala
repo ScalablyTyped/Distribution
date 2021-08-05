@@ -11,19 +11,15 @@ trait Impersonation extends StObject {
 }
 object Impersonation {
   
-  @scala.inline
-  def apply(): Impersonation = {
+  inline def apply(): Impersonation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Impersonation]
   }
   
-  @scala.inline
-  implicit class ImpersonationMutableBuilder[Self <: Impersonation] (val x: Self) extends AnyVal {
+  extension [Self <: Impersonation](x: Self) {
     
-    @scala.inline
-    def setImpersonatedUser(value: User): Self = StObject.set(x, "impersonatedUser", value.asInstanceOf[js.Any])
+    inline def setImpersonatedUser(value: User): Self = StObject.set(x, "impersonatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpersonatedUserUndefined: Self = StObject.set(x, "impersonatedUser", js.undefined)
+    inline def setImpersonatedUserUndefined: Self = StObject.set(x, "impersonatedUser", js.undefined)
   }
 }

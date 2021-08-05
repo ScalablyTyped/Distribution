@@ -13,16 +13,13 @@ trait GetDomainRequest extends StObject {
 }
 object GetDomainRequest {
   
-  @scala.inline
-  def apply(domainName: DomainName): GetDomainRequest = {
+  inline def apply(domainName: DomainName): GetDomainRequest = {
     val __obj = js.Dynamic.literal(domainName = domainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDomainRequest]
   }
   
-  @scala.inline
-  implicit class GetDomainRequestMutableBuilder[Self <: GetDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainRequest](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
   }
 }

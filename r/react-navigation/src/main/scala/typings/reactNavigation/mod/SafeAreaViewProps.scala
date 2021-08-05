@@ -17,25 +17,19 @@ trait SafeAreaViewProps
 }
 object SafeAreaViewProps {
   
-  @scala.inline
-  def apply(): SafeAreaViewProps = {
+  inline def apply(): SafeAreaViewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SafeAreaViewProps]
   }
   
-  @scala.inline
-  implicit class SafeAreaViewPropsMutableBuilder[Self <: SafeAreaViewProps] (val x: Self) extends AnyVal {
+  extension [Self <: SafeAreaViewProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setForceInset(value: Bottom): Self = StObject.set(x, "forceInset", value.asInstanceOf[js.Any])
+    inline def setForceInset(value: Bottom): Self = StObject.set(x, "forceInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceInsetUndefined: Self = StObject.set(x, "forceInset", js.undefined)
+    inline def setForceInsetUndefined: Self = StObject.set(x, "forceInset", js.undefined)
   }
 }

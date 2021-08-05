@@ -16,19 +16,15 @@ trait UpdateOptions extends StObject {
 }
 object UpdateOptions {
   
-  @scala.inline
-  def apply(): UpdateOptions = {
+  inline def apply(): UpdateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateOptions]
   }
   
-  @scala.inline
-  implicit class UpdateOptionsMutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateOptions](x: Self) {
     
-    @scala.inline
-    def setThrowOnReadOnly(value: Boolean): Self = StObject.set(x, "throwOnReadOnly", value.asInstanceOf[js.Any])
+    inline def setThrowOnReadOnly(value: Boolean): Self = StObject.set(x, "throwOnReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrowOnReadOnlyUndefined: Self = StObject.set(x, "throwOnReadOnly", js.undefined)
+    inline def setThrowOnReadOnlyUndefined: Self = StObject.set(x, "throwOnReadOnly", js.undefined)
   }
 }

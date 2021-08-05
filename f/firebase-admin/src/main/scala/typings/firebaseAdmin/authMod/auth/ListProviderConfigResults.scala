@@ -23,25 +23,19 @@ trait ListProviderConfigResults extends StObject {
 }
 object ListProviderConfigResults {
   
-  @scala.inline
-  def apply(providerConfigs: js.Array[AuthProviderConfig]): ListProviderConfigResults = {
+  inline def apply(providerConfigs: js.Array[AuthProviderConfig]): ListProviderConfigResults = {
     val __obj = js.Dynamic.literal(providerConfigs = providerConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListProviderConfigResults]
   }
   
-  @scala.inline
-  implicit class ListProviderConfigResultsMutableBuilder[Self <: ListProviderConfigResults] (val x: Self) extends AnyVal {
+  extension [Self <: ListProviderConfigResults](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setProviderConfigs(value: js.Array[AuthProviderConfig]): Self = StObject.set(x, "providerConfigs", value.asInstanceOf[js.Any])
+    inline def setProviderConfigs(value: js.Array[AuthProviderConfig]): Self = StObject.set(x, "providerConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderConfigsVarargs(value: AuthProviderConfig*): Self = StObject.set(x, "providerConfigs", js.Array(value :_*))
+    inline def setProviderConfigsVarargs(value: AuthProviderConfig*): Self = StObject.set(x, "providerConfigs", js.Array(value :_*))
   }
 }

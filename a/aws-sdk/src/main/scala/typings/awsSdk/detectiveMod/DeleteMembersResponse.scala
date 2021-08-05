@@ -18,31 +18,23 @@ trait DeleteMembersResponse extends StObject {
 }
 object DeleteMembersResponse {
   
-  @scala.inline
-  def apply(): DeleteMembersResponse = {
+  inline def apply(): DeleteMembersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteMembersResponse]
   }
   
-  @scala.inline
-  implicit class DeleteMembersResponseMutableBuilder[Self <: DeleteMembersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMembersResponse](x: Self) {
     
-    @scala.inline
-    def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
+    inline def setAccountIds(value: AccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
+    inline def setAccountIdsUndefined: Self = StObject.set(x, "AccountIds", js.undefined)
     
-    @scala.inline
-    def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
+    inline def setAccountIdsVarargs(value: AccountId*): Self = StObject.set(x, "AccountIds", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedAccounts(value: UnprocessedAccountList): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
+    inline def setUnprocessedAccounts(value: UnprocessedAccountList): Self = StObject.set(x, "UnprocessedAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedAccountsUndefined: Self = StObject.set(x, "UnprocessedAccounts", js.undefined)
+    inline def setUnprocessedAccountsUndefined: Self = StObject.set(x, "UnprocessedAccounts", js.undefined)
     
-    @scala.inline
-    def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
+    inline def setUnprocessedAccountsVarargs(value: UnprocessedAccount*): Self = StObject.set(x, "UnprocessedAccounts", js.Array(value :_*))
   }
 }

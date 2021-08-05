@@ -27,8 +27,7 @@ trait `type` extends StObject {
 }
 object `type` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createPCClassRenderer: typeCreatePCClassRendererParams => js.Promise[PCClassRendererResult],
     createRenderer: typeCreateRendererParams => js.Promise[typeRendererResult]
   ): `type` = {
@@ -36,13 +35,10 @@ object `type` {
     __obj.asInstanceOf[`type`]
   }
   
-  @scala.inline
-  implicit class typeMutableBuilder[Self <: `type`] (val x: Self) extends AnyVal {
+  extension [Self <: `type`](x: Self) {
     
-    @scala.inline
-    def setCreatePCClassRenderer(value: typeCreatePCClassRendererParams => js.Promise[PCClassRendererResult]): Self = StObject.set(x, "createPCClassRenderer", js.Any.fromFunction1(value))
+    inline def setCreatePCClassRenderer(value: typeCreatePCClassRendererParams => js.Promise[PCClassRendererResult]): Self = StObject.set(x, "createPCClassRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateRenderer(value: typeCreateRendererParams => js.Promise[typeRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
+    inline def setCreateRenderer(value: typeCreateRendererParams => js.Promise[typeRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }
 }

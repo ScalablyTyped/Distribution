@@ -15,10 +15,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): EmotionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[EmotionCache]
-  @scala.inline
-  def default(options: Options): EmotionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[EmotionCache]
+  inline def default(): EmotionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[EmotionCache]
+  inline def default(options: Options): EmotionCache = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[EmotionCache]
   
   trait Options extends StObject {
     
@@ -36,56 +34,40 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: Prefix): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: Prefix): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixFunction3(value: (/* key */ String, /* value */ String, /* context */ PrefixContext) => Boolean): Self = StObject.set(x, "prefix", js.Any.fromFunction3(value))
+      inline def setPrefixFunction3(value: (/* key */ String, /* value */ String, /* context */ PrefixContext) => Boolean): Self = StObject.set(x, "prefix", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSpeedy(value: Boolean): Self = StObject.set(x, "speedy", value.asInstanceOf[js.Any])
+      inline def setSpeedy(value: Boolean): Self = StObject.set(x, "speedy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedyUndefined: Self = StObject.set(x, "speedy", js.undefined)
+      inline def setSpeedyUndefined: Self = StObject.set(x, "speedy", js.undefined)
       
-      @scala.inline
-      def setStylisPlugins(value: Plugin | js.Array[Plugin]): Self = StObject.set(x, "stylisPlugins", value.asInstanceOf[js.Any])
+      inline def setStylisPlugins(value: Plugin | js.Array[Plugin]): Self = StObject.set(x, "stylisPlugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylisPluginsUndefined: Self = StObject.set(x, "stylisPlugins", js.undefined)
+      inline def setStylisPluginsUndefined: Self = StObject.set(x, "stylisPlugins", js.undefined)
       
-      @scala.inline
-      def setStylisPluginsVarargs(value: Plugin*): Self = StObject.set(x, "stylisPlugins", js.Array(value :_*))
+      inline def setStylisPluginsVarargs(value: Plugin*): Self = StObject.set(x, "stylisPlugins", js.Array(value :_*))
     }
   }
 }

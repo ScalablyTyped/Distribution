@@ -10,16 +10,13 @@ trait MessageID extends StObject {
 }
 object MessageID {
   
-  @scala.inline
-  def apply(messageID: String): MessageID = {
+  inline def apply(messageID: String): MessageID = {
     val __obj = js.Dynamic.literal(messageID = messageID.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageID]
   }
   
-  @scala.inline
-  implicit class MessageIDMutableBuilder[Self <: MessageID] (val x: Self) extends AnyVal {
+  extension [Self <: MessageID](x: Self) {
     
-    @scala.inline
-    def setMessageID(value: String): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
+    inline def setMessageID(value: String): Self = StObject.set(x, "messageID", value.asInstanceOf[js.Any])
   }
 }

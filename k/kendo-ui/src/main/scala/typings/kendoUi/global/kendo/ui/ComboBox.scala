@@ -21,13 +21,11 @@ object ComboBox {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ComboBox = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ComboBox]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.ComboBox = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ComboBox]
   
   /* static member */
   @JSGlobal("kendo.ui.ComboBox.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.ComboBox = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.ComboBox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.ComboBox): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

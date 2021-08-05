@@ -30,79 +30,55 @@ trait BorderWidthsCSSProperties extends StObject {
 }
 object BorderWidthsCSSProperties {
   
-  @scala.inline
-  def apply(): BorderWidthsCSSProperties = {
+  inline def apply(): BorderWidthsCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderWidthsCSSProperties]
   }
   
-  @scala.inline
-  implicit class BorderWidthsCSSPropertiesMutableBuilder[Self <: BorderWidthsCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BorderWidthsCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBorderBlockEndWidth(value: BorderWidths): Self = StObject.set(x, "borderBlockEndWidth", value.asInstanceOf[js.Any])
+    inline def setBorderBlockEndWidth(value: BorderWidths): Self = StObject.set(x, "borderBlockEndWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBlockEndWidthUndefined: Self = StObject.set(x, "borderBlockEndWidth", js.undefined)
+    inline def setBorderBlockEndWidthUndefined: Self = StObject.set(x, "borderBlockEndWidth", js.undefined)
     
-    @scala.inline
-    def setBorderBlockStartWidth(value: BorderWidths): Self = StObject.set(x, "borderBlockStartWidth", value.asInstanceOf[js.Any])
+    inline def setBorderBlockStartWidth(value: BorderWidths): Self = StObject.set(x, "borderBlockStartWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBlockStartWidthUndefined: Self = StObject.set(x, "borderBlockStartWidth", js.undefined)
+    inline def setBorderBlockStartWidthUndefined: Self = StObject.set(x, "borderBlockStartWidth", js.undefined)
     
-    @scala.inline
-    def setBorderBlockWidth(value: BorderWidths): Self = StObject.set(x, "borderBlockWidth", value.asInstanceOf[js.Any])
+    inline def setBorderBlockWidth(value: BorderWidths): Self = StObject.set(x, "borderBlockWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBlockWidthUndefined: Self = StObject.set(x, "borderBlockWidth", js.undefined)
+    inline def setBorderBlockWidthUndefined: Self = StObject.set(x, "borderBlockWidth", js.undefined)
     
-    @scala.inline
-    def setBorderBottomWidth(value: BorderWidths): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
+    inline def setBorderBottomWidth(value: BorderWidths): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
+    inline def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
     
-    @scala.inline
-    def setBorderInlineEndWidth(value: BorderWidths): Self = StObject.set(x, "borderInlineEndWidth", value.asInstanceOf[js.Any])
+    inline def setBorderInlineEndWidth(value: BorderWidths): Self = StObject.set(x, "borderInlineEndWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderInlineEndWidthUndefined: Self = StObject.set(x, "borderInlineEndWidth", js.undefined)
+    inline def setBorderInlineEndWidthUndefined: Self = StObject.set(x, "borderInlineEndWidth", js.undefined)
     
-    @scala.inline
-    def setBorderInlineStartWidth(value: BorderWidths): Self = StObject.set(x, "borderInlineStartWidth", value.asInstanceOf[js.Any])
+    inline def setBorderInlineStartWidth(value: BorderWidths): Self = StObject.set(x, "borderInlineStartWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderInlineStartWidthUndefined: Self = StObject.set(x, "borderInlineStartWidth", js.undefined)
+    inline def setBorderInlineStartWidthUndefined: Self = StObject.set(x, "borderInlineStartWidth", js.undefined)
     
-    @scala.inline
-    def setBorderInlineWidth(value: BorderWidths): Self = StObject.set(x, "borderInlineWidth", value.asInstanceOf[js.Any])
+    inline def setBorderInlineWidth(value: BorderWidths): Self = StObject.set(x, "borderInlineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderInlineWidthUndefined: Self = StObject.set(x, "borderInlineWidth", js.undefined)
+    inline def setBorderInlineWidthUndefined: Self = StObject.set(x, "borderInlineWidth", js.undefined)
     
-    @scala.inline
-    def setBorderLeftWidth(value: BorderWidths): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
+    inline def setBorderLeftWidth(value: BorderWidths): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
+    inline def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
     
-    @scala.inline
-    def setBorderRightWidth(value: BorderWidths): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
+    inline def setBorderRightWidth(value: BorderWidths): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
+    inline def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
     
-    @scala.inline
-    def setBorderTopWidth(value: BorderWidths): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
+    inline def setBorderTopWidth(value: BorderWidths): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
+    inline def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
     
-    @scala.inline
-    def setBorderWidth(value: BorderWidths): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: BorderWidths): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
   }
 }

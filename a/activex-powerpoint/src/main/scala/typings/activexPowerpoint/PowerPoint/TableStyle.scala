@@ -10,28 +10,23 @@ trait TableStyle extends StObject {
   
   val Name: String
   
-  @JSName("PowerPoint.TableStyle_typekey")
+  /* private */ @JSName("PowerPoint.TableStyle_typekey")
   var PowerPointDotTableStyle_typekey: TableStyle
 }
 object TableStyle {
   
-  @scala.inline
-  def apply(Id: String, Name: String, PowerPointDotTableStyle_typekey: TableStyle): TableStyle = {
+  inline def apply(Id: String, Name: String, PowerPointDotTableStyle_typekey: TableStyle): TableStyle = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.updateDynamic("PowerPoint.TableStyle_typekey")(PowerPointDotTableStyle_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableStyle]
   }
   
-  @scala.inline
-  implicit class TableStyleMutableBuilder[Self <: TableStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TableStyle](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotTableStyle_typekey(value: TableStyle): Self = StObject.set(x, "PowerPoint.TableStyle_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotTableStyle_typekey(value: TableStyle): Self = StObject.set(x, "PowerPoint.TableStyle_typekey", value.asInstanceOf[js.Any])
   }
 }

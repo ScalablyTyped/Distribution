@@ -38,56 +38,40 @@ object timelineTimelineMod extends Shortcut {
   }
   object TimelineProps {
     
-    @scala.inline
-    def apply(): TimelineProps = {
+    inline def apply(): TimelineProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimelineProps]
     }
     
-    @scala.inline
-    implicit class TimelinePropsMutableBuilder[Self <: TimelineProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimelineProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setMode(value: left | alternate | right): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: left | alternate | right): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setPending(value: ReactNode): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: ReactNode): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingDot(value: ReactNode): Self = StObject.set(x, "pendingDot", value.asInstanceOf[js.Any])
+      inline def setPendingDot(value: ReactNode): Self = StObject.set(x, "pendingDot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPendingDotUndefined: Self = StObject.set(x, "pendingDot", js.undefined)
+      inline def setPendingDotUndefined: Self = StObject.set(x, "pendingDot", js.undefined)
       
-      @scala.inline
-      def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+      inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

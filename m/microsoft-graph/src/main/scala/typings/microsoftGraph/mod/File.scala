@@ -19,40 +19,29 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(): File = {
+  inline def apply(): File = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setHashes(value: NullableOption[Hashes]): Self = StObject.set(x, "hashes", value.asInstanceOf[js.Any])
+    inline def setHashes(value: NullableOption[Hashes]): Self = StObject.set(x, "hashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashesNull: Self = StObject.set(x, "hashes", null)
+    inline def setHashesNull: Self = StObject.set(x, "hashes", null)
     
-    @scala.inline
-    def setHashesUndefined: Self = StObject.set(x, "hashes", js.undefined)
+    inline def setHashesUndefined: Self = StObject.set(x, "hashes", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: NullableOption[String]): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: NullableOption[String]): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
+    inline def setMimeTypeNull: Self = StObject.set(x, "mimeType", null)
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setProcessingMetadata(value: NullableOption[Boolean]): Self = StObject.set(x, "processingMetadata", value.asInstanceOf[js.Any])
+    inline def setProcessingMetadata(value: NullableOption[Boolean]): Self = StObject.set(x, "processingMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingMetadataNull: Self = StObject.set(x, "processingMetadata", null)
+    inline def setProcessingMetadataNull: Self = StObject.set(x, "processingMetadata", null)
     
-    @scala.inline
-    def setProcessingMetadataUndefined: Self = StObject.set(x, "processingMetadata", js.undefined)
+    inline def setProcessingMetadataUndefined: Self = StObject.set(x, "processingMetadata", js.undefined)
   }
 }

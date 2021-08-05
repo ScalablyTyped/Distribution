@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.OtherCorrectionsException")
 @js.native
-class OtherCorrectionsException protected ()
+/* private */ class OtherCorrectionsException ()
   extends StObject
      with typings.activexWord.Word.OtherCorrectionsException {
   
@@ -28,7 +28,7 @@ class OtherCorrectionsException protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.OtherCorrectionsException_typekey")
   var WordDotOtherCorrectionsException_typekey: typings.activexWord.Word.OtherCorrectionsException = js.native
 }

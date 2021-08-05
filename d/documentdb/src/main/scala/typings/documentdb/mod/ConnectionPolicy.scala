@@ -35,8 +35,7 @@ trait ConnectionPolicy extends StObject {
 }
 object ConnectionPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DisableSSLVerification: Boolean,
     EnableEndpointDiscovery: Boolean,
     MediaReadMode: MediaReadMode,
@@ -49,31 +48,22 @@ object ConnectionPolicy {
     __obj.asInstanceOf[ConnectionPolicy]
   }
   
-  @scala.inline
-  implicit class ConnectionPolicyMutableBuilder[Self <: ConnectionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionPolicy](x: Self) {
     
-    @scala.inline
-    def setDisableSSLVerification(value: Boolean): Self = StObject.set(x, "DisableSSLVerification", value.asInstanceOf[js.Any])
+    inline def setDisableSSLVerification(value: Boolean): Self = StObject.set(x, "DisableSSLVerification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableEndpointDiscovery(value: Boolean): Self = StObject.set(x, "EnableEndpointDiscovery", value.asInstanceOf[js.Any])
+    inline def setEnableEndpointDiscovery(value: Boolean): Self = StObject.set(x, "EnableEndpointDiscovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaReadMode(value: MediaReadMode): Self = StObject.set(x, "MediaReadMode", value.asInstanceOf[js.Any])
+    inline def setMediaReadMode(value: MediaReadMode): Self = StObject.set(x, "MediaReadMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaRequestTimeout(value: Double): Self = StObject.set(x, "MediaRequestTimeout", value.asInstanceOf[js.Any])
+    inline def setMediaRequestTimeout(value: Double): Self = StObject.set(x, "MediaRequestTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredLocations(value: js.Array[js.Any]): Self = StObject.set(x, "PreferredLocations", value.asInstanceOf[js.Any])
+    inline def setPreferredLocations(value: js.Array[js.Any]): Self = StObject.set(x, "PreferredLocations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredLocationsVarargs(value: js.Any*): Self = StObject.set(x, "PreferredLocations", js.Array(value :_*))
+    inline def setPreferredLocationsVarargs(value: js.Any*): Self = StObject.set(x, "PreferredLocations", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestTimeout(value: Double): Self = StObject.set(x, "RequestTimeout", value.asInstanceOf[js.Any])
+    inline def setRequestTimeout(value: Double): Self = StObject.set(x, "RequestTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryOptions(value: RetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
+    inline def setRetryOptions(value: RetryOptions): Self = StObject.set(x, "RetryOptions", value.asInstanceOf[js.Any])
   }
 }

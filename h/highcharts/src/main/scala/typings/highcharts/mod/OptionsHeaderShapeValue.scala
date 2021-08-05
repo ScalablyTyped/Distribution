@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsHeaderShapeValue extends StObject
 object OptionsHeaderShapeValue {
   
-  @scala.inline
-  def callout: typings.highcharts.highchartsStrings.callout = "callout".asInstanceOf[typings.highcharts.highchartsStrings.callout]
+  inline def callout: typings.highcharts.highchartsStrings.callout = "callout".asInstanceOf[typings.highcharts.highchartsStrings.callout]
   
-  @scala.inline
-  def square: typings.highcharts.highchartsStrings.square = "square".asInstanceOf[typings.highcharts.highchartsStrings.square]
+  inline def square: typings.highcharts.highchartsStrings.square = "square".asInstanceOf[typings.highcharts.highchartsStrings.square]
 }

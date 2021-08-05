@@ -27,8 +27,7 @@ object AppointmentManager {
     * @return An asynchronous operation that returns an AppointmentStore upon successful completion.
     */
   /* static member */
-  @scala.inline
-  def requestStoreAsync(options: typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(options.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStore]]
+  inline def requestStoreAsync(options: typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(options.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Appointments.AppointmentStore]]
   
   /**
     * Shows the Appointments provider Add Appointment UI, to enable the user to add an appointment.
@@ -37,8 +36,7 @@ object AppointmentManager {
     * @return When this method completes, it returns a String object that represents the appointment. This serves as an appointment identifier for future reference when updating or removing. If the appointment identifier returned is an empty string, the appointment was not added to the Appointments provider app.
     */
   /* static member */
-  @scala.inline
-  def showAddAppointmentAsync(appointment: typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment, selection: Rect): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showAddAppointmentAsync")(appointment.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+  inline def showAddAppointmentAsync(appointment: typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment, selection: Rect): IPromiseWithIAsyncOperation[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("showAddAppointmentAsync")(appointment.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[String]]
   /**
     * Shows the Appointments provider Add Appointment UI, to enable the user to add an appointment.
     * @param appointment The object representing the information for the appointment to add.
@@ -47,8 +45,7 @@ object AppointmentManager {
     * @return When this method completes, it returns a String object that represents the appointment. This serves as an appointment identifier for future reference when updating or removing. If the appointment identifier returned is an empty string, the appointment was not added to the Appointments provider app.
     */
   /* static member */
-  @scala.inline
-  def showAddAppointmentAsync(
+  inline def showAddAppointmentAsync(
     appointment: typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment,
     selection: Rect,
     preferredPlacement: Placement
@@ -60,8 +57,7 @@ object AppointmentManager {
     * @return An asynchronous action.
     */
   /* static member */
-  @scala.inline
-  def showAppointmentDetailsAsync(appointmentId: String): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showAppointmentDetailsAsync")(appointmentId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def showAppointmentDetailsAsync(appointmentId: String): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("showAppointmentDetailsAsync")(appointmentId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
   /**
     * Shows the Appointments provider Appointment Details UI, to enable the user to view the specified appointment.
     * @param appointmentId The LocalId of the appointment to be displayed.
@@ -69,8 +65,7 @@ object AppointmentManager {
     * @return An asynchronous action.
     */
   /* static member */
-  @scala.inline
-  def showAppointmentDetailsAsync(appointmentId: String, instanceStartDate: Date): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("showAppointmentDetailsAsync")(appointmentId.asInstanceOf[js.Any], instanceStartDate.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def showAppointmentDetailsAsync(appointmentId: String, instanceStartDate: Date): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("showAppointmentDetailsAsync")(appointmentId.asInstanceOf[js.Any], instanceStartDate.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
   
   /**
     * Shows the Appointments provider Add Appointment UI including the full edit experience, to enable the user to add an appointment.
@@ -78,8 +73,7 @@ object AppointmentManager {
     * @return An asynchronous operation that returns a string containing an appointment ID upon successful completion.
     */
   /* static member */
-  @scala.inline
-  def showEditNewAppointmentAsync(appointment: typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("showEditNewAppointmentAsync")(appointment.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+  inline def showEditNewAppointmentAsync(appointment: typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("showEditNewAppointmentAsync")(appointment.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
   
   /**
     * Shows the Appointments provider Remove Appointment UI, to enable the user to remove an appointment.
@@ -88,8 +82,7 @@ object AppointmentManager {
     * @return When this method completes, it returns a Boolean value that indicates whether the Appointment provider app removed the appointment.
     */
   /* static member */
-  @scala.inline
-  def showRemoveAppointmentAsync(appointmentId: String, selection: Rect): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("showRemoveAppointmentAsync")(appointmentId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def showRemoveAppointmentAsync(appointmentId: String, selection: Rect): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("showRemoveAppointmentAsync")(appointmentId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   /**
     * Shows the Appointments provider Remove Appointment UI, to enable the user to remove an appointment.
     * @param appointmentId The appointment identifier. This is typically obtained from the async return value of a previous ShowAddAppointmentAsync call.
@@ -98,8 +91,7 @@ object AppointmentManager {
     * @return When this method completes, it returns a Boolean value that indicates whether the Appointment provider app removed the appointment.
     */
   /* static member */
-  @scala.inline
-  def showRemoveAppointmentAsync(appointmentId: String, selection: Rect, preferredPlacement: Placement): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("showRemoveAppointmentAsync")(appointmentId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], preferredPlacement.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def showRemoveAppointmentAsync(appointmentId: String, selection: Rect, preferredPlacement: Placement): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("showRemoveAppointmentAsync")(appointmentId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], preferredPlacement.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   /**
     * Shows the Appointments provider Remove Appointment UI, to enable the user to remove an appointment.
     * @param appointmentId The appointment identifier. This is typically obtained from the async return value of a previous ShowAddAppointmentAsync call.
@@ -109,8 +101,7 @@ object AppointmentManager {
     * @return When this method completes, it returns a Boolean value that indicates whether the Appointment provider app removed the appointment.
     */
   /* static member */
-  @scala.inline
-  def showRemoveAppointmentAsync(appointmentId: String, selection: Rect, preferredPlacement: Placement, instanceStartDate: Date): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("showRemoveAppointmentAsync")(appointmentId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], preferredPlacement.asInstanceOf[js.Any], instanceStartDate.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+  inline def showRemoveAppointmentAsync(appointmentId: String, selection: Rect, preferredPlacement: Placement, instanceStartDate: Date): IPromiseWithIAsyncOperation[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("showRemoveAppointmentAsync")(appointmentId.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], preferredPlacement.asInstanceOf[js.Any], instanceStartDate.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   
   /**
     * Shows the Appointments provider Replace Appointment UI, to enable the user to replace an appointment.
@@ -120,8 +111,7 @@ object AppointmentManager {
     * @return When this method completes, it returns a String object that represents the appointment. This serves as an appointment identifier for future reference when updating or removing. If the appointment identifier returned is an empty string, the appointment was not replaced in the Appointments provider app.
     */
   /* static member */
-  @scala.inline
-  def showReplaceAppointmentAsync(
+  inline def showReplaceAppointmentAsync(
     appointmentId: String,
     appointment: typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment,
     selection: Rect
@@ -135,8 +125,7 @@ object AppointmentManager {
     * @return When this method completes, it returns a String object that represents the appointment. This serves as an appointment identifier for future reference when updating or removing. If the appointment identifier returned is an empty string, the appointment was not replaced in the Appointments provider app.
     */
   /* static member */
-  @scala.inline
-  def showReplaceAppointmentAsync(
+  inline def showReplaceAppointmentAsync(
     appointmentId: String,
     appointment: typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment,
     selection: Rect,
@@ -152,8 +141,7 @@ object AppointmentManager {
     * @return When this method completes, it returns a String object that represents the appointment. This serves as an appointment identifier for future reference when updating or removing. If the appointment identifier returned is an empty string, the appointment was not replaced in the Appointments provider app.
     */
   /* static member */
-  @scala.inline
-  def showReplaceAppointmentAsync(
+  inline def showReplaceAppointmentAsync(
     appointmentId: String,
     appointment: typings.winrtUwp.Windows.ApplicationModel.Appointments.Appointment,
     selection: Rect,
@@ -168,6 +156,5 @@ object AppointmentManager {
     * @return When this method returns, it does not return a result. On completion, the AsyncActionCompletedHandler specified by get_Completed / Completed is invoked.
     */
   /* static member */
-  @scala.inline
-  def showTimeFrameAsync(timeToShow: Date, duration: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("showTimeFrameAsync")(timeToShow.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
+  inline def showTimeFrameAsync(timeToShow: Date, duration: Double): IPromiseWithIAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("showTimeFrameAsync")(timeToShow.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncAction]
 }

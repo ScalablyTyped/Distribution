@@ -23,25 +23,19 @@ trait IonSplitPane extends StObject {
 }
 object IonSplitPane {
   
-  @scala.inline
-  def apply(disabled: Boolean, when: String | Boolean): IonSplitPane = {
+  inline def apply(disabled: Boolean, when: String | Boolean): IonSplitPane = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonSplitPane]
   }
   
-  @scala.inline
-  implicit class IonSplitPaneMutableBuilder[Self <: IonSplitPane] (val x: Self) extends AnyVal {
+  extension [Self <: IonSplitPane](x: Self) {
     
-    @scala.inline
-    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+    inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
+    inline def setContentIdUndefined: Self = StObject.set(x, "contentId", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhen(value: String | Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: String | Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
   }
 }

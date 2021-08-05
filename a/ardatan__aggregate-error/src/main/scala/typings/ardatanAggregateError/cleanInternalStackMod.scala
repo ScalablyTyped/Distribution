@@ -10,6 +10,5 @@ object cleanInternalStackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cleanInternalStack(stack: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanInternalStack")(stack.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cleanInternalStack(stack: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanInternalStack")(stack.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -20,38 +20,28 @@ object ssh {
   /**
     * @description Gets the SSH fingerprint for the given public key
     */
-  @scala.inline
-  def getPublicKeyFingerprint(publicKey: PublicKey): ByteStringBuffer | Hex | String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any]).asInstanceOf[ByteStringBuffer | Hex | String]
-  @scala.inline
-  def getPublicKeyFingerprint(publicKey: PublicKey, options: FingerprintOptions): ByteStringBuffer | Hex | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ByteStringBuffer | Hex | String]
+  inline def getPublicKeyFingerprint(publicKey: PublicKey): ByteStringBuffer | Hex | String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any]).asInstanceOf[ByteStringBuffer | Hex | String]
+  inline def getPublicKeyFingerprint(publicKey: PublicKey, options: FingerprintOptions): ByteStringBuffer | Hex | String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPublicKeyFingerprint")(publicKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ByteStringBuffer | Hex | String]
   
   /**
     * @description Encodes a private RSA key as an OpenSSH file
     */
-  @scala.inline
-  def privateKeyToOpenSSH(privateKey: PrivateKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToOpenSSH")(privateKey.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def privateKeyToOpenSSH(privateKey: PrivateKey, passphrase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToOpenSSH")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def privateKeyToOpenSSH(privateKey: PrivateKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToOpenSSH")(privateKey.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def privateKeyToOpenSSH(privateKey: PrivateKey, passphrase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToOpenSSH")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * @description Encodes (and optionally encrypts) a private RSA key as a Putty PPK file
     */
-  @scala.inline
-  def privateKeyToPutty(privateKey: PrivateKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def privateKeyToPutty(privateKey: PrivateKey, passphrase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def privateKeyToPutty(privateKey: PrivateKey, passphrase: String, comment: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def privateKeyToPutty(privateKey: PrivateKey, passphrase: Unit, comment: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def privateKeyToPutty(privateKey: PrivateKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def privateKeyToPutty(privateKey: PrivateKey, passphrase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def privateKeyToPutty(privateKey: PrivateKey, passphrase: String, comment: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def privateKeyToPutty(privateKey: PrivateKey, passphrase: Unit, comment: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("privateKeyToPutty")(privateKey.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * @description Encodes a public RSA key as an OpenSSH file
     */
-  @scala.inline
-  def publicKeyToOpenSSH(publicKey: PublicKey): String | PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToOpenSSH")(publicKey.asInstanceOf[js.Any]).asInstanceOf[String | PEM]
-  @scala.inline
-  def publicKeyToOpenSSH(publicKey: PublicKey, comment: String): String | PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToOpenSSH")(publicKey.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String | PEM]
+  inline def publicKeyToOpenSSH(publicKey: PublicKey): String | PEM = ^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToOpenSSH")(publicKey.asInstanceOf[js.Any]).asInstanceOf[String | PEM]
+  inline def publicKeyToOpenSSH(publicKey: PublicKey, comment: String): String | PEM = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyToOpenSSH")(publicKey.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String | PEM]
   
   trait FingerprintOptions extends StObject {
     
@@ -72,32 +62,24 @@ object ssh {
   }
   object FingerprintOptions {
     
-    @scala.inline
-    def apply(): FingerprintOptions = {
+    inline def apply(): FingerprintOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FingerprintOptions]
     }
     
-    @scala.inline
-    implicit class FingerprintOptionsMutableBuilder[Self <: FingerprintOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FingerprintOptions](x: Self) {
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: hex | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: hex | binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setMd(value: MessageDigest): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: MessageDigest): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+      inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
     }
   }
 }

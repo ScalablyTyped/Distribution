@@ -122,8 +122,7 @@ object layer {
   }
   object IMarkerLayer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       requestDomMarkers: (typings.heremaps.H.geo.Rect, Double, Boolean, Point) => typings.heremaps.H.map.layer.IMarkerLayer.Response | TiledResponse,
       requestMarkers: (typings.heremaps.H.geo.Rect, Double, Boolean, Point) => typings.heremaps.H.map.layer.IMarkerLayer.Response | TiledResponse
     ): IMarkerLayer = {
@@ -131,16 +130,13 @@ object layer {
       __obj.asInstanceOf[IMarkerLayer]
     }
     
-    @scala.inline
-    implicit class IMarkerLayerMutableBuilder[Self <: IMarkerLayer] (val x: Self) extends AnyVal {
+    extension [Self <: IMarkerLayer](x: Self) {
       
-      @scala.inline
-      def setRequestDomMarkers(
+      inline def setRequestDomMarkers(
         value: (typings.heremaps.H.geo.Rect, Double, Boolean, Point) => typings.heremaps.H.map.layer.IMarkerLayer.Response | TiledResponse
       ): Self = StObject.set(x, "requestDomMarkers", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRequestMarkers(
+      inline def setRequestMarkers(
         value: (typings.heremaps.H.geo.Rect, Double, Boolean, Point) => typings.heremaps.H.map.layer.IMarkerLayer.Response | TiledResponse
       ): Self = StObject.set(x, "requestMarkers", js.Any.fromFunction4(value))
     }
@@ -158,23 +154,18 @@ object layer {
     }
     object Response {
       
-      @scala.inline
-      def apply(markers: js.Array[AbstractMarker], total: Double): typings.heremaps.H.map.layer.IMarkerLayer.Response = {
+      inline def apply(markers: js.Array[AbstractMarker], total: Double): typings.heremaps.H.map.layer.IMarkerLayer.Response = {
         val __obj = js.Dynamic.literal(markers = markers.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.heremaps.H.map.layer.IMarkerLayer.Response]
       }
       
-      @scala.inline
-      implicit class ResponseMutableBuilder[Self <: typings.heremaps.H.map.layer.IMarkerLayer.Response] (val x: Self) extends AnyVal {
+      extension [Self <: typings.heremaps.H.map.layer.IMarkerLayer.Response](x: Self) {
         
-        @scala.inline
-        def setMarkers(value: js.Array[AbstractMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+        inline def setMarkers(value: js.Array[AbstractMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkersVarargs(value: AbstractMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
+        inline def setMarkersVarargs(value: AbstractMarker*): Self = StObject.set(x, "markers", js.Array(value :_*))
         
-        @scala.inline
-        def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+        inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       }
     }
     
@@ -194,26 +185,20 @@ object layer {
     }
     object TiledResponse {
       
-      @scala.inline
-      def apply(number: Double, objects: js.Array[AbstractMarker], requested: Double): TiledResponse = {
+      inline def apply(number: Double, objects: js.Array[AbstractMarker], requested: Double): TiledResponse = {
         val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], objects = objects.asInstanceOf[js.Any], requested = requested.asInstanceOf[js.Any])
         __obj.asInstanceOf[TiledResponse]
       }
       
-      @scala.inline
-      implicit class TiledResponseMutableBuilder[Self <: TiledResponse] (val x: Self) extends AnyVal {
+      extension [Self <: TiledResponse](x: Self) {
         
-        @scala.inline
-        def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+        inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjects(value: js.Array[AbstractMarker]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+        inline def setObjects(value: js.Array[AbstractMarker]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setObjectsVarargs(value: AbstractMarker*): Self = StObject.set(x, "objects", js.Array(value :_*))
+        inline def setObjectsVarargs(value: AbstractMarker*): Self = StObject.set(x, "objects", js.Array(value :_*))
         
-        @scala.inline
-        def setRequested(value: Double): Self = StObject.set(x, "requested", value.asInstanceOf[js.Any])
+        inline def setRequested(value: Double): Self = StObject.set(x, "requested", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -259,8 +244,7 @@ object layer {
   }
   object ITileLayer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelTile: (Double, Double, Double) => Unit,
       requestTile: (Double, Double, Double, Boolean) => Tile | Unit,
       requestTiles: (typings.heremaps.H.geo.Rect, Double, Boolean, Point) => Response
@@ -269,17 +253,13 @@ object layer {
       __obj.asInstanceOf[ITileLayer]
     }
     
-    @scala.inline
-    implicit class ITileLayerMutableBuilder[Self <: ITileLayer] (val x: Self) extends AnyVal {
+    extension [Self <: ITileLayer](x: Self) {
       
-      @scala.inline
-      def setCancelTile(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "cancelTile", js.Any.fromFunction3(value))
+      inline def setCancelTile(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "cancelTile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRequestTile(value: (Double, Double, Double, Boolean) => Tile | Unit): Self = StObject.set(x, "requestTile", js.Any.fromFunction4(value))
+      inline def setRequestTile(value: (Double, Double, Double, Boolean) => Tile | Unit): Self = StObject.set(x, "requestTile", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setRequestTiles(value: (typings.heremaps.H.geo.Rect, Double, Boolean, Point) => Response): Self = StObject.set(x, "requestTiles", js.Any.fromFunction4(value))
+      inline def setRequestTiles(value: (typings.heremaps.H.geo.Rect, Double, Boolean, Point) => Response): Self = StObject.set(x, "requestTiles", js.Any.fromFunction4(value))
     }
     
     /**
@@ -295,26 +275,20 @@ object layer {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+        inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+        inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
         
-        @scala.inline
-        def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+        inline def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+        inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       }
     }
     
@@ -331,23 +305,18 @@ object layer {
     }
     object Response {
       
-      @scala.inline
-      def apply(tiles: js.Array[Tile], total: Double): Response = {
+      inline def apply(tiles: js.Array[Tile], total: Double): Response = {
         val __obj = js.Dynamic.literal(tiles = tiles.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
         __obj.asInstanceOf[Response]
       }
       
-      @scala.inline
-      implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+      extension [Self <: Response](x: Self) {
         
-        @scala.inline
-        def setTiles(value: js.Array[Tile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+        inline def setTiles(value: js.Array[Tile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
+        inline def setTilesVarargs(value: Tile*): Self = StObject.set(x, "tiles", js.Array(value :_*))
         
-        @scala.inline
-        def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+        inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -416,44 +385,32 @@ object layer {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+        inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+        inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
         
-        @scala.inline
-        def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+        inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+        inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
         
-        @scala.inline
-        def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+        inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+        inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
         
-        @scala.inline
-        def setMinWorldSize(value: Double): Self = StObject.set(x, "minWorldSize", value.asInstanceOf[js.Any])
+        inline def setMinWorldSize(value: Double): Self = StObject.set(x, "minWorldSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinWorldSizeUndefined: Self = StObject.set(x, "minWorldSize", js.undefined)
+        inline def setMinWorldSizeUndefined: Self = StObject.set(x, "minWorldSize", js.undefined)
         
-        @scala.inline
-        def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+        inline def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+        inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
       }
     }
   }
@@ -544,38 +501,28 @@ object layer {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setDataCacheSize(value: Double): Self = StObject.set(x, "dataCacheSize", value.asInstanceOf[js.Any])
+        inline def setDataCacheSize(value: Double): Self = StObject.set(x, "dataCacheSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataCacheSizeUndefined: Self = StObject.set(x, "dataCacheSize", js.undefined)
+        inline def setDataCacheSizeUndefined: Self = StObject.set(x, "dataCacheSize", js.undefined)
         
-        @scala.inline
-        def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+        inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+        inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
         
-        @scala.inline
-        def setTileCacheSize(value: Double): Self = StObject.set(x, "tileCacheSize", value.asInstanceOf[js.Any])
+        inline def setTileCacheSize(value: Double): Self = StObject.set(x, "tileCacheSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTileCacheSizeUndefined: Self = StObject.set(x, "tileCacheSize", js.undefined)
+        inline def setTileCacheSizeUndefined: Self = StObject.set(x, "tileCacheSize", js.undefined)
         
-        @scala.inline
-        def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+        inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+        inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
       }
     }
     
@@ -592,23 +539,18 @@ object layer {
     }
     object OverlaysResponse {
       
-      @scala.inline
-      def apply(overlays: js.Array[Overlay], total: Double): OverlaysResponse = {
+      inline def apply(overlays: js.Array[Overlay], total: Double): OverlaysResponse = {
         val __obj = js.Dynamic.literal(overlays = overlays.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
         __obj.asInstanceOf[OverlaysResponse]
       }
       
-      @scala.inline
-      implicit class OverlaysResponseMutableBuilder[Self <: OverlaysResponse] (val x: Self) extends AnyVal {
+      extension [Self <: OverlaysResponse](x: Self) {
         
-        @scala.inline
-        def setOverlays(value: js.Array[Overlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+        inline def setOverlays(value: js.Array[Overlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+        inline def setOverlaysVarargs(value: Overlay*): Self = StObject.set(x, "overlays", js.Array(value :_*))
         
-        @scala.inline
-        def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+        inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       }
     }
   }

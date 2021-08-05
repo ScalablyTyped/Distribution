@@ -25,14 +25,12 @@ object datePickerMod {
     @JSImport("@ant-design/react-native/lib/date-picker", "default.contextTypes")
     @js.native
     def contextTypes: AntLocale = js.native
-    @scala.inline
-    def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("@ant-design/react-native/lib/date-picker", "default.defaultProps")
     @js.native
     def defaultProps: Mode = js.native
-    @scala.inline
-    def defaultProps_=(x: Mode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Mode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -48,20 +46,16 @@ object datePickerMod {
   }
   object DatePickerProps {
     
-    @scala.inline
-    def apply(): DatePickerProps = {
+    inline def apply(): DatePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    @scala.inline
-    implicit class DatePickerPropsMutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: DatePickerProps](x: Self) {
       
-      @scala.inline
-      def setTriggerTypes(value: String): Self = StObject.set(x, "triggerTypes", value.asInstanceOf[js.Any])
+      inline def setTriggerTypes(value: String): Self = StObject.set(x, "triggerTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerTypesUndefined: Self = StObject.set(x, "triggerTypes", js.undefined)
+      inline def setTriggerTypesUndefined: Self = StObject.set(x, "triggerTypes", js.undefined)
     }
   }
 }

@@ -25,8 +25,7 @@ object linePartMod {
     @JSImport("react-lazylog/build/LinePart", "default.defaultProps")
     @js.native
     def defaultProps: PartialLinePartProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialLinePartProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialLinePartProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   type LinePart = Component[LinePartProps, js.Object, js.Any]
@@ -41,29 +40,22 @@ object linePartMod {
   }
   object LinePartProps {
     
-    @scala.inline
-    def apply(part: Text): LinePartProps = {
+    inline def apply(part: Text): LinePartProps = {
       val __obj = js.Dynamic.literal(part = part.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinePartProps]
     }
     
-    @scala.inline
-    implicit class LinePartPropsMutableBuilder[Self <: LinePartProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinePartProps](x: Self) {
       
-      @scala.inline
-      def setFormat(value: /* text */ String => ReactNode): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: /* text */ String => ReactNode): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setPart(value: Text): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+      inline def setPart(value: Text): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

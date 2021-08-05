@@ -18,25 +18,19 @@ trait InstanceFamilyCreditSpecification extends StObject {
 }
 object InstanceFamilyCreditSpecification {
   
-  @scala.inline
-  def apply(): InstanceFamilyCreditSpecification = {
+  inline def apply(): InstanceFamilyCreditSpecification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceFamilyCreditSpecification]
   }
   
-  @scala.inline
-  implicit class InstanceFamilyCreditSpecificationMutableBuilder[Self <: InstanceFamilyCreditSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceFamilyCreditSpecification](x: Self) {
     
-    @scala.inline
-    def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
+    inline def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuCreditsUndefined: Self = StObject.set(x, "CpuCredits", js.undefined)
+    inline def setCpuCreditsUndefined: Self = StObject.set(x, "CpuCredits", js.undefined)
     
-    @scala.inline
-    def setInstanceFamily(value: UnlimitedSupportedInstanceFamily): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
+    inline def setInstanceFamily(value: UnlimitedSupportedInstanceFamily): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
+    inline def setInstanceFamilyUndefined: Self = StObject.set(x, "InstanceFamily", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait TrustedScriptURL extends StObject {
 }
 object TrustedScriptURL {
   
-  @scala.inline
-  def apply(): TrustedScriptURL = {
+  inline def apply(): TrustedScriptURL = {
     val __obj = js.Dynamic.literal(__brand__ = "TrustedScriptURL")
     __obj.asInstanceOf[TrustedScriptURL]
   }
   
-  @scala.inline
-  implicit class TrustedScriptURLMutableBuilder[Self <: TrustedScriptURL] (val x: Self) extends AnyVal {
+  extension [Self <: TrustedScriptURL](x: Self) {
     
-    @scala.inline
-    def set__brand__(value: typings.angularCore.angularCoreStrings.TrustedScriptURL): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: typings.angularCore.angularCoreStrings.TrustedScriptURL): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

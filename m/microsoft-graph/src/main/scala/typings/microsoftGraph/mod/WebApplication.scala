@@ -26,49 +26,35 @@ trait WebApplication extends StObject {
 }
 object WebApplication {
   
-  @scala.inline
-  def apply(): WebApplication = {
+  inline def apply(): WebApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebApplication]
   }
   
-  @scala.inline
-  implicit class WebApplicationMutableBuilder[Self <: WebApplication] (val x: Self) extends AnyVal {
+  extension [Self <: WebApplication](x: Self) {
     
-    @scala.inline
-    def setHomePageUrl(value: NullableOption[String]): Self = StObject.set(x, "homePageUrl", value.asInstanceOf[js.Any])
+    inline def setHomePageUrl(value: NullableOption[String]): Self = StObject.set(x, "homePageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomePageUrlNull: Self = StObject.set(x, "homePageUrl", null)
+    inline def setHomePageUrlNull: Self = StObject.set(x, "homePageUrl", null)
     
-    @scala.inline
-    def setHomePageUrlUndefined: Self = StObject.set(x, "homePageUrl", js.undefined)
+    inline def setHomePageUrlUndefined: Self = StObject.set(x, "homePageUrl", js.undefined)
     
-    @scala.inline
-    def setImplicitGrantSettings(value: NullableOption[ImplicitGrantSettings]): Self = StObject.set(x, "implicitGrantSettings", value.asInstanceOf[js.Any])
+    inline def setImplicitGrantSettings(value: NullableOption[ImplicitGrantSettings]): Self = StObject.set(x, "implicitGrantSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImplicitGrantSettingsNull: Self = StObject.set(x, "implicitGrantSettings", null)
+    inline def setImplicitGrantSettingsNull: Self = StObject.set(x, "implicitGrantSettings", null)
     
-    @scala.inline
-    def setImplicitGrantSettingsUndefined: Self = StObject.set(x, "implicitGrantSettings", js.undefined)
+    inline def setImplicitGrantSettingsUndefined: Self = StObject.set(x, "implicitGrantSettings", js.undefined)
     
-    @scala.inline
-    def setLogoutUrl(value: NullableOption[String]): Self = StObject.set(x, "logoutUrl", value.asInstanceOf[js.Any])
+    inline def setLogoutUrl(value: NullableOption[String]): Self = StObject.set(x, "logoutUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoutUrlNull: Self = StObject.set(x, "logoutUrl", null)
+    inline def setLogoutUrlNull: Self = StObject.set(x, "logoutUrl", null)
     
-    @scala.inline
-    def setLogoutUrlUndefined: Self = StObject.set(x, "logoutUrl", js.undefined)
+    inline def setLogoutUrlUndefined: Self = StObject.set(x, "logoutUrl", js.undefined)
     
-    @scala.inline
-    def setRedirectUris(value: js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
+    inline def setRedirectUris(value: js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
+    inline def setRedirectUrisUndefined: Self = StObject.set(x, "redirectUris", js.undefined)
     
-    @scala.inline
-    def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
+    inline def setRedirectUrisVarargs(value: String*): Self = StObject.set(x, "redirectUris", js.Array(value :_*))
   }
 }

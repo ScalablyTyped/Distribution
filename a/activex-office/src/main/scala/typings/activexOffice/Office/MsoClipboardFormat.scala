@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoClipboardFormat extends StObject
 object MsoClipboardFormat {
   
-  @scala.inline
-  def msoClipboardFormatHTML: `2` = 2.asInstanceOf[`2`]
+  inline def msoClipboardFormatHTML: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoClipboardFormatMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoClipboardFormatMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoClipboardFormatNative: `1` = 1.asInstanceOf[`1`]
+  inline def msoClipboardFormatNative: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoClipboardFormatPlainText: `4` = 4.asInstanceOf[`4`]
+  inline def msoClipboardFormatPlainText: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoClipboardFormatRTF: `3` = 3.asInstanceOf[`3`]
+  inline def msoClipboardFormatRTF: `3` = 3.asInstanceOf[`3`]
 }

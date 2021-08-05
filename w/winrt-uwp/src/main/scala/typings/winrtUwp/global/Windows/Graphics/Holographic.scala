@@ -154,14 +154,12 @@ object Holographic {
     @JSGlobal("Windows.Graphics.Holographic.HolographicFramePresentResult.deviceRemoved")
     @js.native
     def deviceRemoved: js.Any = js.native
-    @scala.inline
-    def deviceRemoved_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceRemoved")(x.asInstanceOf[js.Any])
+    inline def deviceRemoved_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deviceRemoved")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Holographic.HolographicFramePresentResult.success")
     @js.native
     def success: js.Any = js.native
-    @scala.inline
-    def success_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
+    inline def success_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
   }
   
   object HolographicFramePresentWaitBehavior {
@@ -174,14 +172,12 @@ object Holographic {
     @JSGlobal("Windows.Graphics.Holographic.HolographicFramePresentWaitBehavior.doNotWaitForFrameToFinish")
     @js.native
     def doNotWaitForFrameToFinish: js.Any = js.native
-    @scala.inline
-    def doNotWaitForFrameToFinish_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doNotWaitForFrameToFinish")(x.asInstanceOf[js.Any])
+    inline def doNotWaitForFrameToFinish_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doNotWaitForFrameToFinish")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Holographic.HolographicFramePresentWaitBehavior.waitForFrameToFinish")
     @js.native
     def waitForFrameToFinish: js.Any = js.native
-    @scala.inline
-    def waitForFrameToFinish_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForFrameToFinish")(x.asInstanceOf[js.Any])
+    inline def waitForFrameToFinish_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("waitForFrameToFinish")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicSpace")
@@ -228,8 +224,7 @@ object Holographic {
     @JSGlobal("Windows.Graphics.Holographic.HolographicSpace.createForCoreWindow")
     @js.native
     def createForCoreWindow: js.Any = js.native
-    @scala.inline
-    def createForCoreWindow_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createForCoreWindow")(x.asInstanceOf[js.Any])
+    inline def createForCoreWindow_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createForCoreWindow")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Graphics.Holographic.HolographicSpaceCameraAddedEventArgs")

@@ -13,9 +13,9 @@ object sequenceComparisonStringMod {
   class StringSequenceComparator protected () extends StObject {
     def this(a: String, b: String) = this()
     
-    var a: js.Any = js.native
+    /* private */ var a: js.Any = js.native
     
-    var b: js.Any = js.native
+    /* private */ var b: js.Any = js.native
     
     def calculate(): js.Array[StringSesElem] = js.native
     
@@ -23,19 +23,19 @@ object sequenceComparisonStringMod {
     
     var lcs: String = js.native
     
-    var m: js.Any = js.native
+    /* private */ var m: js.Any = js.native
     
-    var n: js.Any = js.native
+    /* private */ var n: js.Any = js.native
     
-    val offset: js.Any = js.native
+    /* private */ val offset: js.Any = js.native
     
-    val path: js.Any = js.native
+    /* private */ val path: js.Any = js.native
     
-    val pathposi: js.Any = js.native
+    /* private */ val pathposi: js.Any = js.native
     
     /* protected */ def recordSeq(epc: js.Array[PathElem]): Unit = js.native
     
-    val reverse: js.Any = js.native
+    /* private */ val reverse: js.Any = js.native
     
     var ses: js.Array[StringSesElem] = js.native
     
@@ -81,26 +81,20 @@ object sequenceComparisonStringMod {
   }
   object PathElem {
     
-    @scala.inline
-    def apply(x: Double, y: Double): PathElem = {
+    inline def apply(x: Double, y: Double): PathElem = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], k = null)
       __obj.asInstanceOf[PathElem]
     }
     
-    @scala.inline
-    implicit class PathElemMutableBuilder[Self <: PathElem] (val x: Self) extends AnyVal {
+    extension [Self <: PathElem](x: Self) {
       
-      @scala.inline
-      def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+      inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKNull: Self = StObject.set(x, "k", null)
+      inline def setKNull: Self = StObject.set(x, "k", null)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

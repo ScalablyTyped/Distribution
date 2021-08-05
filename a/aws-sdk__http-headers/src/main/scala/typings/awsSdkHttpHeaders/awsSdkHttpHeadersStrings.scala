@@ -8,6 +8,5 @@ object awsSdkHttpHeadersStrings {
   
   @js.native
   sealed trait Map extends StObject
-  @scala.inline
-  def Map: Map = "Map".asInstanceOf[Map]
+  inline def Map: Map = "Map".asInstanceOf[Map]
 }

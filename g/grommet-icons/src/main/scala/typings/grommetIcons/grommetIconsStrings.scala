@@ -8,21 +8,17 @@ object grommetIconsStrings {
   
   @js.native
   sealed trait large extends StObject
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
   sealed trait medium extends StObject
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
   sealed trait small extends StObject
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
   sealed trait xlarge extends StObject
-  @scala.inline
-  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  inline def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
 }

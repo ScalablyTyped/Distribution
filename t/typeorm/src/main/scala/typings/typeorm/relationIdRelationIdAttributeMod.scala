@@ -62,7 +62,7 @@ object relationIdRelationIdAttributeMod {
       */
     var queryBuilderFactory: js.UndefOr[js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]] = js.native
     
-    var queryExpressionMap: js.Any = js.native
+    /* private */ var queryExpressionMap: js.Any = js.native
     
     /**
       * Relation of the parent.

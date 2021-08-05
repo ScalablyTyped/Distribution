@@ -23,22 +23,17 @@ trait PutGroupPolicyRequest extends StObject {
 }
 object PutGroupPolicyRequest {
   
-  @scala.inline
-  def apply(GroupName: groupNameType, PolicyDocument: policyDocumentType, PolicyName: policyNameType): PutGroupPolicyRequest = {
+  inline def apply(GroupName: groupNameType, PolicyDocument: policyDocumentType, PolicyName: policyNameType): PutGroupPolicyRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], PolicyDocument = PolicyDocument.asInstanceOf[js.Any], PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutGroupPolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutGroupPolicyRequestMutableBuilder[Self <: PutGroupPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutGroupPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: groupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyDocument(value: policyDocumentType): Self = StObject.set(x, "PolicyDocument", value.asInstanceOf[js.Any])
+    inline def setPolicyDocument(value: policyDocumentType): Self = StObject.set(x, "PolicyDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: policyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: policyNameType): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

@@ -29,73 +29,51 @@ trait PartialClassNameMapFabCla extends StObject {
 }
 object PartialClassNameMapFabCla {
   
-  @scala.inline
-  def apply(): PartialClassNameMapFabCla = {
+  inline def apply(): PartialClassNameMapFabCla = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapFabCla]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapFabClaMutableBuilder[Self <: PartialClassNameMapFabCla] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapFabCla](x: Self) {
     
-    @scala.inline
-    def setColorInherit(value: String): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
+    inline def setColorInherit(value: String): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
+    inline def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setExtended(value: String): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
+    inline def setExtended(value: String): Self = StObject.set(x, "extended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
+    inline def setExtendedUndefined: Self = StObject.set(x, "extended", js.undefined)
     
-    @scala.inline
-    def setFocusVisible(value: String): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+    inline def setFocusVisible(value: String): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
+    inline def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: String): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: String): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
-    @scala.inline
-    def setSizeMedium(value: String): Self = StObject.set(x, "sizeMedium", value.asInstanceOf[js.Any])
+    inline def setSizeMedium(value: String): Self = StObject.set(x, "sizeMedium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeMediumUndefined: Self = StObject.set(x, "sizeMedium", js.undefined)
+    inline def setSizeMediumUndefined: Self = StObject.set(x, "sizeMedium", js.undefined)
     
-    @scala.inline
-    def setSizeSmall(value: String): Self = StObject.set(x, "sizeSmall", value.asInstanceOf[js.Any])
+    inline def setSizeSmall(value: String): Self = StObject.set(x, "sizeSmall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeSmallUndefined: Self = StObject.set(x, "sizeSmall", js.undefined)
+    inline def setSizeSmallUndefined: Self = StObject.set(x, "sizeSmall", js.undefined)
   }
 }

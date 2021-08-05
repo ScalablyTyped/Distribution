@@ -31,8 +31,7 @@ trait XTextContent
 }
 object XTextContent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     acquire: () => Unit,
     addEventListener: XEventListener => Unit,
@@ -47,16 +46,12 @@ object XTextContent {
     __obj.asInstanceOf[XTextContent]
   }
   
-  @scala.inline
-  implicit class XTextContentMutableBuilder[Self <: XTextContent] (val x: Self) extends AnyVal {
+  extension [Self <: XTextContent](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: XTextRange): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: XTextRange): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttach(value: XTextRange => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+    inline def setAttach(value: XTextRange => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAnchor(value: () => XTextRange): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
+    inline def setGetAnchor(value: () => XTextRange): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
   }
 }

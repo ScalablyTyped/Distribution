@@ -33,43 +33,31 @@ trait UpdateRoomRequest extends StObject {
 }
 object UpdateRoomRequest {
   
-  @scala.inline
-  def apply(): UpdateRoomRequest = {
+  inline def apply(): UpdateRoomRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateRoomRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRoomRequestMutableBuilder[Self <: UpdateRoomRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRoomRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: RoomDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: RoomDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setProfileArn(value: Arn): Self = StObject.set(x, "ProfileArn", value.asInstanceOf[js.Any])
+    inline def setProfileArn(value: Arn): Self = StObject.set(x, "ProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileArnUndefined: Self = StObject.set(x, "ProfileArn", js.undefined)
+    inline def setProfileArnUndefined: Self = StObject.set(x, "ProfileArn", js.undefined)
     
-    @scala.inline
-    def setProviderCalendarId(value: ProviderCalendarId): Self = StObject.set(x, "ProviderCalendarId", value.asInstanceOf[js.Any])
+    inline def setProviderCalendarId(value: ProviderCalendarId): Self = StObject.set(x, "ProviderCalendarId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderCalendarIdUndefined: Self = StObject.set(x, "ProviderCalendarId", js.undefined)
+    inline def setProviderCalendarIdUndefined: Self = StObject.set(x, "ProviderCalendarId", js.undefined)
     
-    @scala.inline
-    def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
+    inline def setRoomArn(value: Arn): Self = StObject.set(x, "RoomArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
+    inline def setRoomArnUndefined: Self = StObject.set(x, "RoomArn", js.undefined)
     
-    @scala.inline
-    def setRoomName(value: RoomName): Self = StObject.set(x, "RoomName", value.asInstanceOf[js.Any])
+    inline def setRoomName(value: RoomName): Self = StObject.set(x, "RoomName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomNameUndefined: Self = StObject.set(x, "RoomName", js.undefined)
+    inline def setRoomNameUndefined: Self = StObject.set(x, "RoomName", js.undefined)
   }
 }

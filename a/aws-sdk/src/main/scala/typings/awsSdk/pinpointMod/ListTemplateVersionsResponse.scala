@@ -10,16 +10,13 @@ trait ListTemplateVersionsResponse extends StObject {
 }
 object ListTemplateVersionsResponse {
   
-  @scala.inline
-  def apply(TemplateVersionsResponse: TemplateVersionsResponse): ListTemplateVersionsResponse = {
+  inline def apply(TemplateVersionsResponse: TemplateVersionsResponse): ListTemplateVersionsResponse = {
     val __obj = js.Dynamic.literal(TemplateVersionsResponse = TemplateVersionsResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTemplateVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListTemplateVersionsResponseMutableBuilder[Self <: ListTemplateVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTemplateVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setTemplateVersionsResponse(value: TemplateVersionsResponse): Self = StObject.set(x, "TemplateVersionsResponse", value.asInstanceOf[js.Any])
+    inline def setTemplateVersionsResponse(value: TemplateVersionsResponse): Self = StObject.set(x, "TemplateVersionsResponse", value.asInstanceOf[js.Any])
   }
 }

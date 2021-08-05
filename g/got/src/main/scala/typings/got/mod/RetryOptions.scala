@@ -35,55 +35,39 @@ trait RetryOptions extends StObject {
 }
 object RetryOptions {
   
-  @scala.inline
-  def apply(): RetryOptions = {
+  inline def apply(): RetryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryOptions]
   }
   
-  @scala.inline
-  implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RetryOptions](x: Self) {
     
-    @scala.inline
-    def setErrorCodes(value: js.Array[String]): Self = StObject.set(x, "errorCodes", value.asInstanceOf[js.Any])
+    inline def setErrorCodes(value: js.Array[String]): Self = StObject.set(x, "errorCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodesUndefined: Self = StObject.set(x, "errorCodes", js.undefined)
+    inline def setErrorCodesUndefined: Self = StObject.set(x, "errorCodes", js.undefined)
     
-    @scala.inline
-    def setErrorCodesVarargs(value: String*): Self = StObject.set(x, "errorCodes", js.Array(value :_*))
+    inline def setErrorCodesVarargs(value: String*): Self = StObject.set(x, "errorCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxRetryAfter(value: Double): Self = StObject.set(x, "maxRetryAfter", value.asInstanceOf[js.Any])
+    inline def setMaxRetryAfter(value: Double): Self = StObject.set(x, "maxRetryAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetryAfterUndefined: Self = StObject.set(x, "maxRetryAfter", js.undefined)
+    inline def setMaxRetryAfterUndefined: Self = StObject.set(x, "maxRetryAfter", js.undefined)
     
-    @scala.inline
-    def setMethods(value: js.Array[GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: js.Array[GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+    inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
-    @scala.inline
-    def setMethodsVarargs(value: (GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE)*): Self = StObject.set(x, "methods", js.Array(value :_*))
+    inline def setMethodsVarargs(value: (GET | POST | PUT | HEAD | DELETE | OPTIONS | TRACE)*): Self = StObject.set(x, "methods", js.Array(value :_*))
     
-    @scala.inline
-    def setRetries(value: Double | RetryFunction): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Double | RetryFunction): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetriesFunction2(value: (/* retry */ Double, /* error */ js.Any) => Double): Self = StObject.set(x, "retries", js.Any.fromFunction2(value))
+    inline def setRetriesFunction2(value: (/* retry */ Double, /* error */ js.Any) => Double): Self = StObject.set(x, "retries", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+    inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
     
-    @scala.inline
-    def setStatusCodes(value: js.Array[`408` | `413` | `429` | `500` | `502` | `503` | `504`]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
+    inline def setStatusCodes(value: js.Array[`408` | `413` | `429` | `500` | `502` | `503` | `504`]): Self = StObject.set(x, "statusCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
+    inline def setStatusCodesUndefined: Self = StObject.set(x, "statusCodes", js.undefined)
     
-    @scala.inline
-    def setStatusCodesVarargs(value: (`408` | `413` | `429` | `500` | `502` | `503` | `504`)*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
+    inline def setStatusCodesVarargs(value: (`408` | `413` | `429` | `500` | `502` | `503` | `504`)*): Self = StObject.set(x, "statusCodes", js.Array(value :_*))
   }
 }

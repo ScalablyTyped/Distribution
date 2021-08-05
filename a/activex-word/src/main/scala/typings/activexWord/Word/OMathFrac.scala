@@ -18,13 +18,12 @@ trait OMathFrac extends StObject {
   
   var Type: WdOMathFracType
   
-  @JSName("Word.OMathFrac_typekey")
+  /* private */ @JSName("Word.OMathFrac_typekey")
   var WordDotOMathFrac_typekey: OMathFrac
 }
 object OMathFrac {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Den: OMath,
@@ -38,28 +37,20 @@ object OMathFrac {
     __obj.asInstanceOf[OMathFrac]
   }
   
-  @scala.inline
-  implicit class OMathFracMutableBuilder[Self <: OMathFrac] (val x: Self) extends AnyVal {
+  extension [Self <: OMathFrac](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDen(value: OMath): Self = StObject.set(x, "Den", value.asInstanceOf[js.Any])
+    inline def setDen(value: OMath): Self = StObject.set(x, "Den", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum(value: OMath): Self = StObject.set(x, "Num", value.asInstanceOf[js.Any])
+    inline def setNum(value: OMath): Self = StObject.set(x, "Num", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WdOMathFracType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WdOMathFracType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotOMathFrac_typekey(value: OMathFrac): Self = StObject.set(x, "Word.OMathFrac_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotOMathFrac_typekey(value: OMathFrac): Self = StObject.set(x, "Word.OMathFrac_typekey", value.asInstanceOf[js.Any])
   }
 }

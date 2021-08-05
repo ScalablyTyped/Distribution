@@ -10,16 +10,13 @@ trait QueryModel extends StObject {
 }
 object QueryModel {
   
-  @scala.inline
-  def apply(query: String): QueryModel = {
+  inline def apply(query: String): QueryModel = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryModel]
   }
   
-  @scala.inline
-  implicit class QueryModelMutableBuilder[Self <: QueryModel] (val x: Self) extends AnyVal {
+  extension [Self <: QueryModel](x: Self) {
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

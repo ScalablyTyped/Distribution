@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGPathSegArcAbs")
 @js.native
-class SVGPathSegArcAbs protected ()
+/* private */ class SVGPathSegArcAbs ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGPathSegArcAbs {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGPathSegArcAbs_typekey")
   var MSHTMLDotSVGPathSegArcAbs_typekey: typings.activexMshtml.MSHTML.SVGPathSegArcAbs = js.native
   

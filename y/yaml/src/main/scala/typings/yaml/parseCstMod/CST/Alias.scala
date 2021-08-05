@@ -19,8 +19,7 @@ trait Alias
 }
 object Alias {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasComment: Boolean,
     hasProps: Boolean,
     jsonLike: Boolean,
@@ -34,13 +33,10 @@ object Alias {
     __obj.asInstanceOf[Alias]
   }
   
-  @scala.inline
-  implicit class AliasMutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
+  extension [Self <: Alias](x: Self) {
     
-    @scala.inline
-    def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
+    inline def setRawValue(value: String): Self = StObject.set(x, "rawValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ALIAS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ALIAS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

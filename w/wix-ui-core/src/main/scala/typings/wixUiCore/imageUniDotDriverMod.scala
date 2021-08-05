@@ -12,8 +12,7 @@ object imageUniDotDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def imageDriverFactory(base: UniDriver[js.Any]): ImageDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("imageDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ImageDriver]
+  inline def imageDriverFactory(base: UniDriver[js.Any]): ImageDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("imageDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[ImageDriver]
   
   trait ImageDriver
     extends StObject
@@ -27,8 +26,7 @@ object imageUniDotDriverMod {
   }
   object ImageDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -40,17 +38,13 @@ object imageUniDotDriverMod {
       __obj.asInstanceOf[ImageDriver]
     }
     
-    @scala.inline
-    implicit class ImageDriverMutableBuilder[Self <: ImageDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ImageDriver](x: Self) {
       
-      @scala.inline
-      def setGetAlt(value: () => js.Promise[String]): Self = StObject.set(x, "getAlt", js.Any.fromFunction0(value))
+      inline def setGetAlt(value: () => js.Promise[String]): Self = StObject.set(x, "getAlt", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLoadStatus(value: () => js.Promise[String]): Self = StObject.set(x, "getLoadStatus", js.Any.fromFunction0(value))
+      inline def setGetLoadStatus(value: () => js.Promise[String]): Self = StObject.set(x, "getLoadStatus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSrc(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
+      inline def setGetSrc(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSrc", js.Any.fromFunction0(value))
     }
   }
 }

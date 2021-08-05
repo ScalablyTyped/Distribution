@@ -12,19 +12,15 @@ trait NxAttrExprDef extends StObject {
 }
 object NxAttrExprDef {
   
-  @scala.inline
-  def apply(qExpression: String, qLibraryId: String): NxAttrExprDef = {
+  inline def apply(qExpression: String, qLibraryId: String): NxAttrExprDef = {
     val __obj = js.Dynamic.literal(qExpression = qExpression.asInstanceOf[js.Any], qLibraryId = qLibraryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxAttrExprDef]
   }
   
-  @scala.inline
-  implicit class NxAttrExprDefMutableBuilder[Self <: NxAttrExprDef] (val x: Self) extends AnyVal {
+  extension [Self <: NxAttrExprDef](x: Self) {
     
-    @scala.inline
-    def setQExpression(value: String): Self = StObject.set(x, "qExpression", value.asInstanceOf[js.Any])
+    inline def setQExpression(value: String): Self = StObject.set(x, "qExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
+    inline def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
   }
 }

@@ -66,8 +66,7 @@ trait SecurityContext extends StObject {
 }
 object SecurityContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowPrivilegeEscalation: Boolean,
     capabilities: Capabilities,
     privileged: Boolean,
@@ -84,40 +83,28 @@ object SecurityContext {
     __obj.asInstanceOf[SecurityContext]
   }
   
-  @scala.inline
-  implicit class SecurityContextMutableBuilder[Self <: SecurityContext] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityContext](x: Self) {
     
-    @scala.inline
-    def setAllowPrivilegeEscalation(value: Boolean): Self = StObject.set(x, "allowPrivilegeEscalation", value.asInstanceOf[js.Any])
+    inline def setAllowPrivilegeEscalation(value: Boolean): Self = StObject.set(x, "allowPrivilegeEscalation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilities(value: Capabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: Capabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
+    inline def setPrivileged(value: Boolean): Self = StObject.set(x, "privileged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcMount(value: String): Self = StObject.set(x, "procMount", value.asInstanceOf[js.Any])
+    inline def setProcMount(value: String): Self = StObject.set(x, "procMount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyRootFilesystem(value: Boolean): Self = StObject.set(x, "readOnlyRootFilesystem", value.asInstanceOf[js.Any])
+    inline def setReadOnlyRootFilesystem(value: Boolean): Self = StObject.set(x, "readOnlyRootFilesystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsGroup(value: Double): Self = StObject.set(x, "runAsGroup", value.asInstanceOf[js.Any])
+    inline def setRunAsGroup(value: Double): Self = StObject.set(x, "runAsGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsNonRoot(value: Boolean): Self = StObject.set(x, "runAsNonRoot", value.asInstanceOf[js.Any])
+    inline def setRunAsNonRoot(value: Boolean): Self = StObject.set(x, "runAsNonRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsUser(value: Double): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
+    inline def setRunAsUser(value: Double): Self = StObject.set(x, "runAsUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeLinuxOptions(value: SELinuxOptions): Self = StObject.set(x, "seLinuxOptions", value.asInstanceOf[js.Any])
+    inline def setSeLinuxOptions(value: SELinuxOptions): Self = StObject.set(x, "seLinuxOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeccompProfile(value: SeccompProfile): Self = StObject.set(x, "seccompProfile", value.asInstanceOf[js.Any])
+    inline def setSeccompProfile(value: SeccompProfile): Self = StObject.set(x, "seccompProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowsOptions(value: WindowsSecurityContextOptions): Self = StObject.set(x, "windowsOptions", value.asInstanceOf[js.Any])
+    inline def setWindowsOptions(value: WindowsSecurityContextOptions): Self = StObject.set(x, "windowsOptions", value.asInstanceOf[js.Any])
   }
 }

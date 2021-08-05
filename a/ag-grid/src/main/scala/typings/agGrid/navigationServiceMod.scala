@@ -12,15 +12,15 @@ object navigationServiceMod {
   @js.native
   class NavigationService () extends StObject {
     
-    var animationFrameService: js.Any = js.native
+    /* private */ var animationFrameService: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var focusedCellController: js.Any = js.native
+    /* private */ var focusedCellController: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
     def handlePageScrollingKey(event: KeyboardEvent): Boolean = js.native
     
@@ -28,7 +28,7 @@ object navigationServiceMod {
     
     /* private */ def isTimeSinceLastPageEventToRecent(): js.Any = js.native
     
-    var mouseEventService: js.Any = js.native
+    /* private */ var mouseEventService: js.Any = js.native
     
     /* private */ def navigateTo(
       scrollIndex: js.Any,
@@ -48,16 +48,16 @@ object navigationServiceMod {
     
     /* private */ def onPageUp(gridCell: js.Any): js.Any = js.native
     
-    var paginationProxy: js.Any = js.native
+    /* private */ var paginationProxy: js.Any = js.native
     
-    var rangeController: js.Any = js.native
+    /* private */ var rangeController: js.Any = js.native
     
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
     
-    var scrollWidth: js.Any = js.native
+    /* private */ var scrollWidth: js.Any = js.native
     
     /* private */ def setTimeLastPageEventProcessed(): js.Any = js.native
     
-    var timeLastPageEventProcessed: js.Any = js.native
+    /* private */ var timeLastPageEventProcessed: js.Any = js.native
   }
 }

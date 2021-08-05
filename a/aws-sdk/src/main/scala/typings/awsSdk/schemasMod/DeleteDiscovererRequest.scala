@@ -13,16 +13,13 @@ trait DeleteDiscovererRequest extends StObject {
 }
 object DeleteDiscovererRequest {
   
-  @scala.inline
-  def apply(DiscovererId: string): DeleteDiscovererRequest = {
+  inline def apply(DiscovererId: string): DeleteDiscovererRequest = {
     val __obj = js.Dynamic.literal(DiscovererId = DiscovererId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDiscovererRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDiscovererRequestMutableBuilder[Self <: DeleteDiscovererRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDiscovererRequest](x: Self) {
     
-    @scala.inline
-    def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
+    inline def setDiscovererId(value: string): Self = StObject.set(x, "DiscovererId", value.asInstanceOf[js.Any])
   }
 }

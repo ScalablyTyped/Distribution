@@ -13,28 +13,21 @@ trait ClientConfig extends StObject {
 }
 object ClientConfig {
   
-  @scala.inline
-  def apply(): ClientConfig = {
+  inline def apply(): ClientConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientConfig]
   }
   
-  @scala.inline
-  implicit class ClientConfigMutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClientConfig](x: Self) {
     
-    @scala.inline
-    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setXdsConfig(value: js.Array[PerXdsConfig]): Self = StObject.set(x, "xdsConfig", value.asInstanceOf[js.Any])
+    inline def setXdsConfig(value: js.Array[PerXdsConfig]): Self = StObject.set(x, "xdsConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXdsConfigUndefined: Self = StObject.set(x, "xdsConfig", js.undefined)
+    inline def setXdsConfigUndefined: Self = StObject.set(x, "xdsConfig", js.undefined)
     
-    @scala.inline
-    def setXdsConfigVarargs(value: PerXdsConfig*): Self = StObject.set(x, "xdsConfig", js.Array(value :_*))
+    inline def setXdsConfigVarargs(value: PerXdsConfig*): Self = StObject.set(x, "xdsConfig", js.Array(value :_*))
   }
 }

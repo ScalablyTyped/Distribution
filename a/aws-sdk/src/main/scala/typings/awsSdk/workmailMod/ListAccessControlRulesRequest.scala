@@ -13,16 +13,13 @@ trait ListAccessControlRulesRequest extends StObject {
 }
 object ListAccessControlRulesRequest {
   
-  @scala.inline
-  def apply(OrganizationId: OrganizationId): ListAccessControlRulesRequest = {
+  inline def apply(OrganizationId: OrganizationId): ListAccessControlRulesRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAccessControlRulesRequest]
   }
   
-  @scala.inline
-  implicit class ListAccessControlRulesRequestMutableBuilder[Self <: ListAccessControlRulesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccessControlRulesRequest](x: Self) {
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait ItemsCharacterGrouping extends StObject {
 }
 object ItemsCharacterGrouping {
   
-  @scala.inline
-  def apply(items: CharacterGrouping, returnValue: Double): ItemsCharacterGrouping = {
+  inline def apply(items: CharacterGrouping, returnValue: Double): ItemsCharacterGrouping = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemsCharacterGrouping]
   }
   
-  @scala.inline
-  implicit class ItemsCharacterGroupingMutableBuilder[Self <: ItemsCharacterGrouping] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsCharacterGrouping](x: Self) {
     
-    @scala.inline
-    def setItems(value: CharacterGrouping): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: CharacterGrouping): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Double): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

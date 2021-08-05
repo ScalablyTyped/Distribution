@@ -125,13 +125,10 @@ object Range {
   val ^ : js.Any = js.native
   
   /** Call this with the result of Range::serialize to construct a new Range. */
-  @scala.inline
-  def deserialize(array: js.Object): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(array.asInstanceOf[js.Any]).asInstanceOf[Range]
+  inline def deserialize(array: js.Object): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(array.asInstanceOf[js.Any]).asInstanceOf[Range]
   
   // Construction
   /** Convert any range-compatible object to a Range. */
-  @scala.inline
-  def fromObject(`object`: RangeCompatible): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Range]
-  @scala.inline
-  def fromObject(`object`: RangeCompatible, copy: Boolean): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], copy.asInstanceOf[js.Any])).asInstanceOf[Range]
+  inline def fromObject(`object`: RangeCompatible): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Range]
+  inline def fromObject(`object`: RangeCompatible, copy: Boolean): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], copy.asInstanceOf[js.Any])).asInstanceOf[Range]
 }

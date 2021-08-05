@@ -14,22 +14,17 @@ trait Inherited extends StObject {
 }
 object Inherited {
   
-  @scala.inline
-  def apply(custom: scala.Double, inherited: scala.Double, system: scala.Double): Inherited = {
+  inline def apply(custom: scala.Double, inherited: scala.Double, system: scala.Double): Inherited = {
     val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], inherited = inherited.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inherited]
   }
   
-  @scala.inline
-  implicit class InheritedMutableBuilder[Self <: Inherited] (val x: Self) extends AnyVal {
+  extension [Self <: Inherited](x: Self) {
     
-    @scala.inline
-    def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: scala.Double): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInherited(value: scala.Double): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
+    inline def setInherited(value: scala.Double): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem(value: scala.Double): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: scala.Double): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait XRViewerPose extends StObject {
 }
 object XRViewerPose {
   
-  @scala.inline
-  def apply(transform: XRRigidTransform, views: js.Array[XRView]): XRViewerPose = {
+  inline def apply(transform: XRRigidTransform, views: js.Array[XRView]): XRViewerPose = {
     val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any], views = views.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRViewerPose]
   }
   
-  @scala.inline
-  implicit class XRViewerPoseMutableBuilder[Self <: XRViewerPose] (val x: Self) extends AnyVal {
+  extension [Self <: XRViewerPose](x: Self) {
     
-    @scala.inline
-    def setTransform(value: XRRigidTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: XRRigidTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViews(value: js.Array[XRView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    inline def setViews(value: js.Array[XRView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewsVarargs(value: XRView*): Self = StObject.set(x, "views", js.Array(value :_*))
+    inline def setViewsVarargs(value: XRView*): Self = StObject.set(x, "views", js.Array(value :_*))
   }
 }

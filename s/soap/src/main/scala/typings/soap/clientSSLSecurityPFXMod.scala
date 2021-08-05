@@ -21,11 +21,11 @@ object clientSSLSecurityPFXMod {
     @JSName("addOptions")
     def addOptions_MClientSSLSecurityPFX(options: js.Any): Unit = js.native
     
-    var defaults: js.Any = js.native
+    /* private */ var defaults: js.Any = js.native
     
-    var passphrase: js.Any = js.native
+    /* private */ var passphrase: js.Any = js.native
     
-    var pfx: js.Any = js.native
+    /* private */ var pfx: js.Any = js.native
     
     @JSName("toXML")
     def toXML_MClientSSLSecurityPFX(): String = js.native

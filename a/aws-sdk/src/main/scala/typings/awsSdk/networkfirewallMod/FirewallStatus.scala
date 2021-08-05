@@ -23,25 +23,19 @@ trait FirewallStatus extends StObject {
 }
 object FirewallStatus {
   
-  @scala.inline
-  def apply(ConfigurationSyncStateSummary: ConfigurationSyncState, Status: FirewallStatusValue): FirewallStatus = {
+  inline def apply(ConfigurationSyncStateSummary: ConfigurationSyncState, Status: FirewallStatusValue): FirewallStatus = {
     val __obj = js.Dynamic.literal(ConfigurationSyncStateSummary = ConfigurationSyncStateSummary.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallStatus]
   }
   
-  @scala.inline
-  implicit class FirewallStatusMutableBuilder[Self <: FirewallStatus] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallStatus](x: Self) {
     
-    @scala.inline
-    def setConfigurationSyncStateSummary(value: ConfigurationSyncState): Self = StObject.set(x, "ConfigurationSyncStateSummary", value.asInstanceOf[js.Any])
+    inline def setConfigurationSyncStateSummary(value: ConfigurationSyncState): Self = StObject.set(x, "ConfigurationSyncStateSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: FirewallStatusValue): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FirewallStatusValue): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncStates(value: SyncStates): Self = StObject.set(x, "SyncStates", value.asInstanceOf[js.Any])
+    inline def setSyncStates(value: SyncStates): Self = StObject.set(x, "SyncStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncStatesUndefined: Self = StObject.set(x, "SyncStates", js.undefined)
+    inline def setSyncStatesUndefined: Self = StObject.set(x, "SyncStates", js.undefined)
   }
 }

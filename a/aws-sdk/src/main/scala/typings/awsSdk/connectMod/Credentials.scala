@@ -28,37 +28,27 @@ trait Credentials extends StObject {
 }
 object Credentials {
   
-  @scala.inline
-  def apply(): Credentials = {
+  inline def apply(): Credentials = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Credentials]
   }
   
-  @scala.inline
-  implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+  extension [Self <: Credentials](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: SecurityToken): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: SecurityToken): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenExpiration(value: timestamp): Self = StObject.set(x, "AccessTokenExpiration", value.asInstanceOf[js.Any])
+    inline def setAccessTokenExpiration(value: timestamp): Self = StObject.set(x, "AccessTokenExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessTokenExpirationUndefined: Self = StObject.set(x, "AccessTokenExpiration", js.undefined)
+    inline def setAccessTokenExpirationUndefined: Self = StObject.set(x, "AccessTokenExpiration", js.undefined)
     
-    @scala.inline
-    def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
+    inline def setAccessTokenUndefined: Self = StObject.set(x, "AccessToken", js.undefined)
     
-    @scala.inline
-    def setRefreshToken(value: SecurityToken): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: SecurityToken): Self = StObject.set(x, "RefreshToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenExpiration(value: timestamp): Self = StObject.set(x, "RefreshTokenExpiration", value.asInstanceOf[js.Any])
+    inline def setRefreshTokenExpiration(value: timestamp): Self = StObject.set(x, "RefreshTokenExpiration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshTokenExpirationUndefined: Self = StObject.set(x, "RefreshTokenExpiration", js.undefined)
+    inline def setRefreshTokenExpirationUndefined: Self = StObject.set(x, "RefreshTokenExpiration", js.undefined)
     
-    @scala.inline
-    def setRefreshTokenUndefined: Self = StObject.set(x, "RefreshToken", js.undefined)
+    inline def setRefreshTokenUndefined: Self = StObject.set(x, "RefreshToken", js.undefined)
   }
 }

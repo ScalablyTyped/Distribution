@@ -93,26 +93,20 @@ object mod {
     }
     object BackSpaceProps {
       
-      @scala.inline
-      def apply(): BackSpaceProps = {
+      inline def apply(): BackSpaceProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[BackSpaceProps]
       }
       
-      @scala.inline
-      implicit class BackSpacePropsMutableBuilder[Self <: BackSpaceProps] (val x: Self) extends AnyVal {
+      extension [Self <: BackSpaceProps](x: Self) {
         
-        @scala.inline
-        def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+        inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
         
-        @scala.inline
-        def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+        inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+        inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       }
     }
     
@@ -130,8 +124,7 @@ object mod {
     }
     object CurrentTextProps {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         charIdx: Double,
         character: String,
         defDelayGenerator: (Double, Double) => js.Function1[/* params */ js.Any, Double],
@@ -142,23 +135,17 @@ object mod {
         __obj.asInstanceOf[CurrentTextProps]
       }
       
-      @scala.inline
-      implicit class CurrentTextPropsMutableBuilder[Self <: CurrentTextProps] (val x: Self) extends AnyVal {
+      extension [Self <: CurrentTextProps](x: Self) {
         
-        @scala.inline
-        def setCharIdx(value: Double): Self = StObject.set(x, "charIdx", value.asInstanceOf[js.Any])
+        inline def setCharIdx(value: Double): Self = StObject.set(x, "charIdx", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+        inline def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefDelayGenerator(value: (Double, Double) => js.Function1[/* params */ js.Any, Double]): Self = StObject.set(x, "defDelayGenerator", js.Any.fromFunction2(value))
+        inline def setDefDelayGenerator(value: (Double, Double) => js.Function1[/* params */ js.Any, Double]): Self = StObject.set(x, "defDelayGenerator", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLineIdx(value: Double): Self = StObject.set(x, "lineIdx", value.asInstanceOf[js.Any])
+        inline def setLineIdx(value: Double): Self = StObject.set(x, "lineIdx", value.asInstanceOf[js.Any])
       }
     }
     
@@ -176,44 +163,32 @@ object mod {
     }
     object CursorProps {
       
-      @scala.inline
-      def apply(): CursorProps = {
+      inline def apply(): CursorProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CursorProps]
       }
       
-      @scala.inline
-      implicit class CursorPropsMutableBuilder[Self <: CursorProps] (val x: Self) extends AnyVal {
+      extension [Self <: CursorProps](x: Self) {
         
-        @scala.inline
-        def setBlink(value: Boolean): Self = StObject.set(x, "blink", value.asInstanceOf[js.Any])
+        inline def setBlink(value: Boolean): Self = StObject.set(x, "blink", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBlinkUndefined: Self = StObject.set(x, "blink", js.undefined)
+        inline def setBlinkUndefined: Self = StObject.set(x, "blink", js.undefined)
         
-        @scala.inline
-        def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+        inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+        inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
         
-        @scala.inline
-        def setHideWhenDone(value: Boolean): Self = StObject.set(x, "hideWhenDone", value.asInstanceOf[js.Any])
+        inline def setHideWhenDone(value: Boolean): Self = StObject.set(x, "hideWhenDone", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHideWhenDoneDelay(value: Double): Self = StObject.set(x, "hideWhenDoneDelay", value.asInstanceOf[js.Any])
+        inline def setHideWhenDoneDelay(value: Double): Self = StObject.set(x, "hideWhenDoneDelay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHideWhenDoneDelayUndefined: Self = StObject.set(x, "hideWhenDoneDelay", js.undefined)
+        inline def setHideWhenDoneDelayUndefined: Self = StObject.set(x, "hideWhenDoneDelay", js.undefined)
         
-        @scala.inline
-        def setHideWhenDoneUndefined: Self = StObject.set(x, "hideWhenDone", js.undefined)
+        inline def setHideWhenDoneUndefined: Self = StObject.set(x, "hideWhenDone", js.undefined)
         
-        @scala.inline
-        def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+        inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
       }
     }
     
@@ -223,17 +198,14 @@ object mod {
     }
     object DelayProps {
       
-      @scala.inline
-      def apply(ms: Double): DelayProps = {
+      inline def apply(ms: Double): DelayProps = {
         val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any])
         __obj.asInstanceOf[DelayProps]
       }
       
-      @scala.inline
-      implicit class DelayPropsMutableBuilder[Self <: DelayProps] (val x: Self) extends AnyVal {
+      extension [Self <: DelayProps](x: Self) {
         
-        @scala.inline
-        def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+        inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -262,68 +234,48 @@ object mod {
   }
   object TypistProps {
     
-    @scala.inline
-    def apply(): TypistProps = {
+    inline def apply(): TypistProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypistProps]
     }
     
-    @scala.inline
-    implicit class TypistPropsMutableBuilder[Self <: TypistProps] (val x: Self) extends AnyVal {
+    extension [Self <: TypistProps](x: Self) {
       
-      @scala.inline
-      def setAvgTypingDelay(value: Double): Self = StObject.set(x, "avgTypingDelay", value.asInstanceOf[js.Any])
+      inline def setAvgTypingDelay(value: Double): Self = StObject.set(x, "avgTypingDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvgTypingDelayUndefined: Self = StObject.set(x, "avgTypingDelay", js.undefined)
+      inline def setAvgTypingDelayUndefined: Self = StObject.set(x, "avgTypingDelay", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCursor(value: CursorProps): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: CursorProps): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setDelayGenerator(value: (/* mean */ Double, /* std */ Double, /* current */ CurrentTextProps) => Double): Self = StObject.set(x, "delayGenerator", js.Any.fromFunction3(value))
+      inline def setDelayGenerator(value: (/* mean */ Double, /* std */ Double, /* current */ CurrentTextProps) => Double): Self = StObject.set(x, "delayGenerator", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDelayGeneratorUndefined: Self = StObject.set(x, "delayGenerator", js.undefined)
+      inline def setDelayGeneratorUndefined: Self = StObject.set(x, "delayGenerator", js.undefined)
       
-      @scala.inline
-      def setOnCharacterTyped(value: (/* char */ String, /* charIndex */ Double) => Unit): Self = StObject.set(x, "onCharacterTyped", js.Any.fromFunction2(value))
+      inline def setOnCharacterTyped(value: (/* char */ String, /* charIndex */ Double) => Unit): Self = StObject.set(x, "onCharacterTyped", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCharacterTypedUndefined: Self = StObject.set(x, "onCharacterTyped", js.undefined)
+      inline def setOnCharacterTypedUndefined: Self = StObject.set(x, "onCharacterTyped", js.undefined)
       
-      @scala.inline
-      def setOnLineTyped(value: (/* line */ String, /* lineIndex */ Double) => Unit): Self = StObject.set(x, "onLineTyped", js.Any.fromFunction2(value))
+      inline def setOnLineTyped(value: (/* line */ String, /* lineIndex */ Double) => Unit): Self = StObject.set(x, "onLineTyped", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnLineTypedUndefined: Self = StObject.set(x, "onLineTyped", js.undefined)
+      inline def setOnLineTypedUndefined: Self = StObject.set(x, "onLineTyped", js.undefined)
       
-      @scala.inline
-      def setOnTypingDone(value: () => Unit): Self = StObject.set(x, "onTypingDone", js.Any.fromFunction0(value))
+      inline def setOnTypingDone(value: () => Unit): Self = StObject.set(x, "onTypingDone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnTypingDoneUndefined: Self = StObject.set(x, "onTypingDone", js.undefined)
+      inline def setOnTypingDoneUndefined: Self = StObject.set(x, "onTypingDone", js.undefined)
       
-      @scala.inline
-      def setStartDelay(value: Double): Self = StObject.set(x, "startDelay", value.asInstanceOf[js.Any])
+      inline def setStartDelay(value: Double): Self = StObject.set(x, "startDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartDelayUndefined: Self = StObject.set(x, "startDelay", js.undefined)
+      inline def setStartDelayUndefined: Self = StObject.set(x, "startDelay", js.undefined)
       
-      @scala.inline
-      def setStdTypingDelay(value: Double): Self = StObject.set(x, "stdTypingDelay", value.asInstanceOf[js.Any])
+      inline def setStdTypingDelay(value: Double): Self = StObject.set(x, "stdTypingDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdTypingDelayUndefined: Self = StObject.set(x, "stdTypingDelay", js.undefined)
+      inline def setStdTypingDelayUndefined: Self = StObject.set(x, "stdTypingDelay", js.undefined)
     }
   }
 }

@@ -37,8 +37,7 @@ object speechMod {
     @JSImport("googleapis/build/src/apis/speech", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Speech] = js.native
-    @scala.inline
-    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Speech]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Speech]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("googleapis/build/src/apis/speech", "VERSIONS.v1p1beta1")
@@ -55,8 +54,7 @@ object speechMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech
       ] = js.native
-    @scala.inline
-    def v1p1beta1_=(
+    inline def v1p1beta1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -98,8 +96,7 @@ object speechMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -143,14 +140,10 @@ object speechMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def speech(options: Options): Speech = ^.asInstanceOf[js.Dynamic].applyDynamic("speech")(options.asInstanceOf[js.Any]).asInstanceOf[Speech]
-  @scala.inline
-  def speech(options: typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Options): typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech = ^.asInstanceOf[js.Dynamic].applyDynamic("speech")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech]
+  inline def speech(options: Options): Speech = ^.asInstanceOf[js.Dynamic].applyDynamic("speech")(options.asInstanceOf[js.Any]).asInstanceOf[Speech]
+  inline def speech(options: typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Options): typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech = ^.asInstanceOf[js.Dynamic].applyDynamic("speech")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech]
   
-  @scala.inline
-  def speech_v1(version: v1): Speech = ^.asInstanceOf[js.Dynamic].applyDynamic("speech")(version.asInstanceOf[js.Any]).asInstanceOf[Speech]
+  inline def speech_v1(version: v1): Speech = ^.asInstanceOf[js.Dynamic].applyDynamic("speech")(version.asInstanceOf[js.Any]).asInstanceOf[Speech]
   
-  @scala.inline
-  def speech_v1p1beta1(version: v1p1beta1): typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech = ^.asInstanceOf[js.Dynamic].applyDynamic("speech")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech]
+  inline def speech_v1p1beta1(version: v1p1beta1): typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech = ^.asInstanceOf[js.Dynamic].applyDynamic("speech")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1p1beta1Mod.speechV1p1beta1.Speech]
 }

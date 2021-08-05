@@ -12,19 +12,15 @@ trait DisplayVerticalAlign extends StObject {
 }
 object DisplayVerticalAlign {
   
-  @scala.inline
-  def apply(display: String, verticalAlign: String): DisplayVerticalAlign = {
+  inline def apply(display: String, verticalAlign: String): DisplayVerticalAlign = {
     val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], verticalAlign = verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayVerticalAlign]
   }
   
-  @scala.inline
-  implicit class DisplayVerticalAlignMutableBuilder[Self <: DisplayVerticalAlign] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayVerticalAlign](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
   }
 }

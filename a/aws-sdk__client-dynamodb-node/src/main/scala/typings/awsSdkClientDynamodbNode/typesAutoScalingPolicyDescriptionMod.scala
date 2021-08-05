@@ -22,26 +22,20 @@ object typesAutoScalingPolicyDescriptionMod {
   }
   object AutoScalingPolicyDescription {
     
-    @scala.inline
-    def apply(): AutoScalingPolicyDescription = {
+    inline def apply(): AutoScalingPolicyDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AutoScalingPolicyDescription]
     }
     
-    @scala.inline
-    implicit class AutoScalingPolicyDescriptionMutableBuilder[Self <: AutoScalingPolicyDescription] (val x: Self) extends AnyVal {
+    extension [Self <: AutoScalingPolicyDescription](x: Self) {
       
-      @scala.inline
-      def setPolicyName(value: String): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+      inline def setPolicyName(value: String): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+      inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
       
-      @scala.inline
-      def setTargetTrackingScalingPolicyConfiguration(value: AutoScalingTargetTrackingScalingPolicyConfigurationDescription): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
+      inline def setTargetTrackingScalingPolicyConfiguration(value: AutoScalingTargetTrackingScalingPolicyConfigurationDescription): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTrackingScalingPolicyConfigurationUndefined: Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", js.undefined)
+      inline def setTargetTrackingScalingPolicyConfigurationUndefined: Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", js.undefined)
     }
   }
   
@@ -57,20 +51,16 @@ object typesAutoScalingPolicyDescriptionMod {
   }
   object UnmarshalledAutoScalingPolicyDescription {
     
-    @scala.inline
-    def apply(): UnmarshalledAutoScalingPolicyDescription = {
+    inline def apply(): UnmarshalledAutoScalingPolicyDescription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledAutoScalingPolicyDescription]
     }
     
-    @scala.inline
-    implicit class UnmarshalledAutoScalingPolicyDescriptionMutableBuilder[Self <: UnmarshalledAutoScalingPolicyDescription] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledAutoScalingPolicyDescription](x: Self) {
       
-      @scala.inline
-      def setTargetTrackingScalingPolicyConfiguration(value: UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
+      inline def setTargetTrackingScalingPolicyConfiguration(value: UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetTrackingScalingPolicyConfigurationUndefined: Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", js.undefined)
+      inline def setTargetTrackingScalingPolicyConfigurationUndefined: Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", js.undefined)
     }
   }
 }

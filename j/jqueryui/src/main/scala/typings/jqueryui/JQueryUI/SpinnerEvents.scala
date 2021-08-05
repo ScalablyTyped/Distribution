@@ -19,43 +19,31 @@ trait SpinnerEvents extends StObject {
 }
 object SpinnerEvents {
   
-  @scala.inline
-  def apply(): SpinnerEvents = {
+  inline def apply(): SpinnerEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpinnerEvents]
   }
   
-  @scala.inline
-  implicit class SpinnerEventsMutableBuilder[Self <: SpinnerEvents] (val x: Self) extends AnyVal {
+  extension [Self <: SpinnerEvents](x: Self) {
     
-    @scala.inline
-    def setChange(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
+    inline def setChange(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
     
-    @scala.inline
-    def setCreate(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+    inline def setCreate(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
     
-    @scala.inline
-    def setSpin(value: (/* event */ JQueryEventObject, SpinnerUIParam) => Unit): Self = StObject.set(x, "spin", js.Any.fromFunction2(value))
+    inline def setSpin(value: (/* event */ JQueryEventObject, SpinnerUIParam) => Unit): Self = StObject.set(x, "spin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
+    inline def setSpinUndefined: Self = StObject.set(x, "spin", js.undefined)
     
-    @scala.inline
-    def setStart(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
+    inline def setStart(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "start", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setStop(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
+    inline def setStop(value: (/* event */ JQueryEventObject, js.Object) => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
   }
 }

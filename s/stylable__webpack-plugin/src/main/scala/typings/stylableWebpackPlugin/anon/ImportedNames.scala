@@ -15,28 +15,21 @@ trait ImportedNames extends StObject {
 }
 object ImportedNames {
   
-  @scala.inline
-  def apply(importedNames: js.Array[String], module: StylableModule): ImportedNames = {
+  inline def apply(importedNames: js.Array[String], module: StylableModule): ImportedNames = {
     val __obj = js.Dynamic.literal(importedNames = importedNames.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportedNames]
   }
   
-  @scala.inline
-  implicit class ImportedNamesMutableBuilder[Self <: ImportedNames] (val x: Self) extends AnyVal {
+  extension [Self <: ImportedNames](x: Self) {
     
-    @scala.inline
-    def setImportedNames(value: js.Array[String]): Self = StObject.set(x, "importedNames", value.asInstanceOf[js.Any])
+    inline def setImportedNames(value: js.Array[String]): Self = StObject.set(x, "importedNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportedNamesVarargs(value: String*): Self = StObject.set(x, "importedNames", js.Array(value :_*))
+    inline def setImportedNamesVarargs(value: String*): Self = StObject.set(x, "importedNames", js.Array(value :_*))
     
-    @scala.inline
-    def setModule(value: StylableModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: StylableModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
+    inline def setWeak(value: Boolean): Self = StObject.set(x, "weak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
+    inline def setWeakUndefined: Self = StObject.set(x, "weak", js.undefined)
   }
 }

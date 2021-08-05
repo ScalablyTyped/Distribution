@@ -13,20 +13,16 @@ object PageIcon {
   }
   object FetchOptions {
     
-    @scala.inline
-    def apply(): FetchOptions = {
+    inline def apply(): FetchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FetchOptions]
     }
     
-    @scala.inline
-    implicit class FetchOptionsMutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FetchOptions](x: Self) {
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
     }
   }
   
@@ -46,32 +42,24 @@ object PageIcon {
   }
   object Icon {
     
-    @scala.inline
-    def apply(data: Buffer, ext: String, mime: String, name: String, size: Double, source: String): Icon = {
+    inline def apply(data: Buffer, ext: String, mime: String, name: String, size: Double, source: String): Icon = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], mime = mime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[Icon]
     }
     
-    @scala.inline
-    implicit class IconMutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
+    extension [Self <: Icon](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
+      inline def setMime(value: String): Self = StObject.set(x, "mime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
 }

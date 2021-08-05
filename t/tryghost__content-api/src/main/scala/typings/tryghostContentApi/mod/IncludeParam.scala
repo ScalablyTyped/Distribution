@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IncludeParam extends StObject
 object IncludeParam {
   
-  @scala.inline
-  def authors: typings.tryghostContentApi.tryghostContentApiStrings.authors = "authors".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.authors]
+  inline def authors: typings.tryghostContentApi.tryghostContentApiStrings.authors = "authors".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.authors]
   
-  @scala.inline
-  def countDotposts: typings.tryghostContentApi.tryghostContentApiStrings.countDotposts = "count.posts".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.countDotposts]
+  inline def countDotposts: typings.tryghostContentApi.tryghostContentApiStrings.countDotposts = "count.posts".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.countDotposts]
   
-  @scala.inline
-  def tags: typings.tryghostContentApi.tryghostContentApiStrings.tags = "tags".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.tags]
+  inline def tags: typings.tryghostContentApi.tryghostContentApiStrings.tags = "tags".asInstanceOf[typings.tryghostContentApi.tryghostContentApiStrings.tags]
 }

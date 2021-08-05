@@ -25,8 +25,7 @@ trait Resources extends StObject {
 }
 object Resources {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getResource: (String, js.Function1[/* data */ String, Unit], js.Function0[Unit]) => Unit,
     getString: String => String
   ): Resources = {
@@ -34,13 +33,10 @@ object Resources {
     __obj.asInstanceOf[Resources]
   }
   
-  @scala.inline
-  implicit class ResourcesMutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
+  extension [Self <: Resources](x: Self) {
     
-    @scala.inline
-    def setGetResource(value: (String, js.Function1[/* data */ String, Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "getResource", js.Any.fromFunction3(value))
+    inline def setGetResource(value: (String, js.Function1[/* data */ String, Unit], js.Function0[Unit]) => Unit): Self = StObject.set(x, "getResource", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
+    inline def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
   }
 }

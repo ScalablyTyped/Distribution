@@ -13,19 +13,15 @@ trait Format extends StObject {
 }
 object Format {
   
-  @scala.inline
-  def apply(format: String | (Record[String, js.Any]), formatType: String): Format = {
+  inline def apply(format: String | (Record[String, js.Any]), formatType: String): Format = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], formatType = formatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Format]
   }
   
-  @scala.inline
-  implicit class FormatMutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
+  extension [Self <: Format](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String | (Record[String, js.Any])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String | (Record[String, js.Any])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    inline def setFormatType(value: String): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
   }
 }

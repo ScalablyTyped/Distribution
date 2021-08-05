@@ -18,22 +18,17 @@ trait ContentTypeProfileConfig extends StObject {
 }
 object ContentTypeProfileConfig {
   
-  @scala.inline
-  def apply(ForwardWhenContentTypeIsUnknown: Boolean): ContentTypeProfileConfig = {
+  inline def apply(ForwardWhenContentTypeIsUnknown: Boolean): ContentTypeProfileConfig = {
     val __obj = js.Dynamic.literal(ForwardWhenContentTypeIsUnknown = ForwardWhenContentTypeIsUnknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentTypeProfileConfig]
   }
   
-  @scala.inline
-  implicit class ContentTypeProfileConfigMutableBuilder[Self <: ContentTypeProfileConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ContentTypeProfileConfig](x: Self) {
     
-    @scala.inline
-    def setContentTypeProfiles(value: ContentTypeProfiles): Self = StObject.set(x, "ContentTypeProfiles", value.asInstanceOf[js.Any])
+    inline def setContentTypeProfiles(value: ContentTypeProfiles): Self = StObject.set(x, "ContentTypeProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeProfilesUndefined: Self = StObject.set(x, "ContentTypeProfiles", js.undefined)
+    inline def setContentTypeProfilesUndefined: Self = StObject.set(x, "ContentTypeProfiles", js.undefined)
     
-    @scala.inline
-    def setForwardWhenContentTypeIsUnknown(value: Boolean): Self = StObject.set(x, "ForwardWhenContentTypeIsUnknown", value.asInstanceOf[js.Any])
+    inline def setForwardWhenContentTypeIsUnknown(value: Boolean): Self = StObject.set(x, "ForwardWhenContentTypeIsUnknown", value.asInstanceOf[js.Any])
   }
 }

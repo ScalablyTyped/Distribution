@@ -18,28 +18,21 @@ trait DescribeCanariesLastRunResponse extends StObject {
 }
 object DescribeCanariesLastRunResponse {
   
-  @scala.inline
-  def apply(): DescribeCanariesLastRunResponse = {
+  inline def apply(): DescribeCanariesLastRunResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCanariesLastRunResponse]
   }
   
-  @scala.inline
-  implicit class DescribeCanariesLastRunResponseMutableBuilder[Self <: DescribeCanariesLastRunResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCanariesLastRunResponse](x: Self) {
     
-    @scala.inline
-    def setCanariesLastRun(value: CanariesLastRun): Self = StObject.set(x, "CanariesLastRun", value.asInstanceOf[js.Any])
+    inline def setCanariesLastRun(value: CanariesLastRun): Self = StObject.set(x, "CanariesLastRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanariesLastRunUndefined: Self = StObject.set(x, "CanariesLastRun", js.undefined)
+    inline def setCanariesLastRunUndefined: Self = StObject.set(x, "CanariesLastRun", js.undefined)
     
-    @scala.inline
-    def setCanariesLastRunVarargs(value: CanaryLastRun*): Self = StObject.set(x, "CanariesLastRun", js.Array(value :_*))
+    inline def setCanariesLastRunVarargs(value: CanaryLastRun*): Self = StObject.set(x, "CanariesLastRun", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

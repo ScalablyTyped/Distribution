@@ -23,28 +23,21 @@ trait PurchaseReservedCacheNodesOfferingMessage extends StObject {
 }
 object PurchaseReservedCacheNodesOfferingMessage {
   
-  @scala.inline
-  def apply(ReservedCacheNodesOfferingId: String): PurchaseReservedCacheNodesOfferingMessage = {
+  inline def apply(ReservedCacheNodesOfferingId: String): PurchaseReservedCacheNodesOfferingMessage = {
     val __obj = js.Dynamic.literal(ReservedCacheNodesOfferingId = ReservedCacheNodesOfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedCacheNodesOfferingMessage]
   }
   
-  @scala.inline
-  implicit class PurchaseReservedCacheNodesOfferingMessageMutableBuilder[Self <: PurchaseReservedCacheNodesOfferingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseReservedCacheNodesOfferingMessage](x: Self) {
     
-    @scala.inline
-    def setCacheNodeCount(value: IntegerOptional): Self = StObject.set(x, "CacheNodeCount", value.asInstanceOf[js.Any])
+    inline def setCacheNodeCount(value: IntegerOptional): Self = StObject.set(x, "CacheNodeCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheNodeCountUndefined: Self = StObject.set(x, "CacheNodeCount", js.undefined)
+    inline def setCacheNodeCountUndefined: Self = StObject.set(x, "CacheNodeCount", js.undefined)
     
-    @scala.inline
-    def setReservedCacheNodeId(value: String): Self = StObject.set(x, "ReservedCacheNodeId", value.asInstanceOf[js.Any])
+    inline def setReservedCacheNodeId(value: String): Self = StObject.set(x, "ReservedCacheNodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedCacheNodeIdUndefined: Self = StObject.set(x, "ReservedCacheNodeId", js.undefined)
+    inline def setReservedCacheNodeIdUndefined: Self = StObject.set(x, "ReservedCacheNodeId", js.undefined)
     
-    @scala.inline
-    def setReservedCacheNodesOfferingId(value: String): Self = StObject.set(x, "ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
+    inline def setReservedCacheNodesOfferingId(value: String): Self = StObject.set(x, "ReservedCacheNodesOfferingId", value.asInstanceOf[js.Any])
   }
 }

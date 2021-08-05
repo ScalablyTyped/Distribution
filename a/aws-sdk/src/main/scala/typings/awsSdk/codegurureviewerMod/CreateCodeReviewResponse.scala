@@ -10,19 +10,15 @@ trait CreateCodeReviewResponse extends StObject {
 }
 object CreateCodeReviewResponse {
   
-  @scala.inline
-  def apply(): CreateCodeReviewResponse = {
+  inline def apply(): CreateCodeReviewResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCodeReviewResponse]
   }
   
-  @scala.inline
-  implicit class CreateCodeReviewResponseMutableBuilder[Self <: CreateCodeReviewResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCodeReviewResponse](x: Self) {
     
-    @scala.inline
-    def setCodeReview(value: CodeReview): Self = StObject.set(x, "CodeReview", value.asInstanceOf[js.Any])
+    inline def setCodeReview(value: CodeReview): Self = StObject.set(x, "CodeReview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeReviewUndefined: Self = StObject.set(x, "CodeReview", js.undefined)
+    inline def setCodeReviewUndefined: Self = StObject.set(x, "CodeReview", js.undefined)
   }
 }

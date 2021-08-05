@@ -16,17 +16,14 @@ object typesInvalidFileModeExceptionMod {
   }
   object InvalidFileModeException {
     
-    @scala.inline
-    def apply(): InvalidFileModeException = {
+    inline def apply(): InvalidFileModeException = {
       val __obj = js.Dynamic.literal(name = "InvalidFileModeException")
       __obj.asInstanceOf[InvalidFileModeException]
     }
     
-    @scala.inline
-    implicit class InvalidFileModeExceptionMutableBuilder[Self <: InvalidFileModeException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidFileModeException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidFileModeException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

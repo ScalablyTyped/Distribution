@@ -21,9 +21,9 @@ object multiSliderMod {
     def this(props: IMultiSliderProps) = this()
     def this(props: IMultiSliderProps, context: js.Any) = this()
     
-    var addHandleRef: js.Any = js.native
+    /* private */ var addHandleRef: js.Any = js.native
     
-    var canHandleTrackEvent: js.Any = js.native
+    /* private */ var canHandleTrackEvent: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MMultiSlider(): Unit = js.native
@@ -31,46 +31,46 @@ object multiSliderMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MMultiSlider(prevProps: IMultiSliderProps, prevState: ISliderState): Unit = js.native
     
-    var findFirstLockedHandleIndex: js.Any = js.native
+    /* private */ var findFirstLockedHandleIndex: js.Any = js.native
     
-    var formatLabel: js.Any = js.native
+    /* private */ var formatLabel: js.Any = js.native
     
-    var getHandlerForIndex: js.Any = js.native
+    /* private */ var getHandlerForIndex: js.Any = js.native
     
-    var getLabelValues: js.Any = js.native
+    /* private */ var getLabelValues: js.Any = js.native
     
-    var getNewHandleValues: js.Any = js.native
+    /* private */ var getNewHandleValues: js.Any = js.native
     
-    var getOffsetRatio: js.Any = js.native
+    /* private */ var getOffsetRatio: js.Any = js.native
     
     @JSName("getSnapshotBeforeUpdate")
     def getSnapshotBeforeUpdate_MMultiSlider(prevProps: IMultiSliderProps): Null = js.native
     
-    var getTrackIntent: js.Any = js.native
+    /* private */ var getTrackIntent: js.Any = js.native
     
-    var handleChange: js.Any = js.native
+    /* private */ var handleChange: js.Any = js.native
     
-    var handleElements: js.Any = js.native
+    /* private */ var handleElements: js.Any = js.native
     
-    var handleRelease: js.Any = js.native
+    /* private */ var handleRelease: js.Any = js.native
     
-    var maybeHandleTrackClick: js.Any = js.native
+    /* private */ var maybeHandleTrackClick: js.Any = js.native
     
-    var maybeHandleTrackTouch: js.Any = js.native
+    /* private */ var maybeHandleTrackTouch: js.Any = js.native
     
-    var nearestHandleForValue: js.Any = js.native
+    /* private */ var nearestHandleForValue: js.Any = js.native
     
-    var renderHandles: js.Any = js.native
+    /* private */ var renderHandles: js.Any = js.native
     
-    var renderLabels: js.Any = js.native
+    /* private */ var renderLabels: js.Any = js.native
     
-    var renderTrackFill: js.Any = js.native
+    /* private */ var renderTrackFill: js.Any = js.native
     
-    var renderTracks: js.Any = js.native
+    /* private */ var renderTracks: js.Any = js.native
     
-    var trackElement: js.Any = js.native
+    /* private */ var trackElement: js.Any = js.native
     
-    var updateTickSize: js.Any = js.native
+    /* private */ var updateTickSize: js.Any = js.native
   }
   /* static members */
   object MultiSlider {
@@ -82,35 +82,29 @@ object multiSliderMod {
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.Handle")
     @js.native
     def Handle: FunctionComponent[IHandleProps] = js.native
-    @scala.inline
-    def Handle_=(x: FunctionComponent[IHandleProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Handle")(x.asInstanceOf[js.Any])
+    inline def Handle_=(x: FunctionComponent[IHandleProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Handle")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.defaultProps")
     @js.native
     def defaultProps: IMultiSliderProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IMultiSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IMultiSliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.defaultSliderProps")
     @js.native
     def defaultSliderProps: ISliderBaseProps = js.native
-    @scala.inline
-    def defaultSliderProps_=(x: ISliderBaseProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSliderProps")(x.asInstanceOf[js.Any])
+    inline def defaultSliderProps_=(x: ISliderBaseProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSliderProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getDerivedStateFromProps(props: IMultiSliderProps): LabelPrecision = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[LabelPrecision]
+    inline def getDerivedStateFromProps(props: IMultiSliderProps): LabelPrecision = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[LabelPrecision]
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.getLabelPrecision")
     @js.native
     def getLabelPrecision: js.Any = js.native
-    @scala.inline
-    def getLabelPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLabelPrecision")(x.asInstanceOf[js.Any])
+    inline def getLabelPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLabelPrecision")(x.asInstanceOf[js.Any])
   }
   
   trait IMultiSliderProps
@@ -128,32 +122,24 @@ object multiSliderMod {
   }
   object IMultiSliderProps {
     
-    @scala.inline
-    def apply(): IMultiSliderProps = {
+    inline def apply(): IMultiSliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMultiSliderProps]
     }
     
-    @scala.inline
-    implicit class IMultiSliderPropsMutableBuilder[Self <: IMultiSliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IMultiSliderProps](x: Self) {
       
-      @scala.inline
-      def setDefaultTrackIntent(value: Intent): Self = StObject.set(x, "defaultTrackIntent", value.asInstanceOf[js.Any])
+      inline def setDefaultTrackIntent(value: Intent): Self = StObject.set(x, "defaultTrackIntent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultTrackIntentUndefined: Self = StObject.set(x, "defaultTrackIntent", js.undefined)
+      inline def setDefaultTrackIntentUndefined: Self = StObject.set(x, "defaultTrackIntent", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnRelease(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
+      inline def setOnRelease(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onRelease", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
+      inline def setOnReleaseUndefined: Self = StObject.set(x, "onRelease", js.undefined)
     }
   }
   
@@ -229,80 +215,56 @@ object multiSliderMod {
   }
   object ISliderBaseProps {
     
-    @scala.inline
-    def apply(): ISliderBaseProps = {
+    inline def apply(): ISliderBaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISliderBaseProps]
     }
     
-    @scala.inline
-    implicit class ISliderBasePropsMutableBuilder[Self <: ISliderBaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: ISliderBaseProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLabelPrecision(value: Double): Self = StObject.set(x, "labelPrecision", value.asInstanceOf[js.Any])
+      inline def setLabelPrecision(value: Double): Self = StObject.set(x, "labelPrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPrecisionUndefined: Self = StObject.set(x, "labelPrecision", js.undefined)
+      inline def setLabelPrecisionUndefined: Self = StObject.set(x, "labelPrecision", js.undefined)
       
-      @scala.inline
-      def setLabelRenderer(value: Boolean | (js.Function1[/* value */ Double, String | Element])): Self = StObject.set(x, "labelRenderer", value.asInstanceOf[js.Any])
+      inline def setLabelRenderer(value: Boolean | (js.Function1[/* value */ Double, String | Element])): Self = StObject.set(x, "labelRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelRendererFunction1(value: /* value */ Double => String | Element): Self = StObject.set(x, "labelRenderer", js.Any.fromFunction1(value))
+      inline def setLabelRendererFunction1(value: /* value */ Double => String | Element): Self = StObject.set(x, "labelRenderer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLabelRendererUndefined: Self = StObject.set(x, "labelRenderer", js.undefined)
+      inline def setLabelRendererUndefined: Self = StObject.set(x, "labelRenderer", js.undefined)
       
-      @scala.inline
-      def setLabelStepSize(value: Double): Self = StObject.set(x, "labelStepSize", value.asInstanceOf[js.Any])
+      inline def setLabelStepSize(value: Double): Self = StObject.set(x, "labelStepSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelStepSizeUndefined: Self = StObject.set(x, "labelStepSize", js.undefined)
+      inline def setLabelStepSizeUndefined: Self = StObject.set(x, "labelStepSize", js.undefined)
       
-      @scala.inline
-      def setLabelValues(value: js.Array[Double]): Self = StObject.set(x, "labelValues", value.asInstanceOf[js.Any])
+      inline def setLabelValues(value: js.Array[Double]): Self = StObject.set(x, "labelValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelValuesUndefined: Self = StObject.set(x, "labelValues", js.undefined)
+      inline def setLabelValuesUndefined: Self = StObject.set(x, "labelValues", js.undefined)
       
-      @scala.inline
-      def setLabelValuesVarargs(value: Double*): Self = StObject.set(x, "labelValues", js.Array(value :_*))
+      inline def setLabelValuesVarargs(value: Double*): Self = StObject.set(x, "labelValues", js.Array(value :_*))
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setShowTrackFill(value: Boolean): Self = StObject.set(x, "showTrackFill", value.asInstanceOf[js.Any])
+      inline def setShowTrackFill(value: Boolean): Self = StObject.set(x, "showTrackFill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowTrackFillUndefined: Self = StObject.set(x, "showTrackFill", js.undefined)
+      inline def setShowTrackFillUndefined: Self = StObject.set(x, "showTrackFill", js.undefined)
       
-      @scala.inline
-      def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
+      inline def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepSizeUndefined: Self = StObject.set(x, "stepSize", js.undefined)
+      inline def setStepSizeUndefined: Self = StObject.set(x, "stepSize", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
     }
   }
   
@@ -318,23 +280,18 @@ object multiSliderMod {
   }
   object ISliderState {
     
-    @scala.inline
-    def apply(labelPrecision: Double, tickSize: Double, tickSizeRatio: Double): ISliderState = {
+    inline def apply(labelPrecision: Double, tickSize: Double, tickSizeRatio: Double): ISliderState = {
       val __obj = js.Dynamic.literal(labelPrecision = labelPrecision.asInstanceOf[js.Any], tickSize = tickSize.asInstanceOf[js.Any], tickSizeRatio = tickSizeRatio.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISliderState]
     }
     
-    @scala.inline
-    implicit class ISliderStateMutableBuilder[Self <: ISliderState] (val x: Self) extends AnyVal {
+    extension [Self <: ISliderState](x: Self) {
       
-      @scala.inline
-      def setLabelPrecision(value: Double): Self = StObject.set(x, "labelPrecision", value.asInstanceOf[js.Any])
+      inline def setLabelPrecision(value: Double): Self = StObject.set(x, "labelPrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
+      inline def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickSizeRatio(value: Double): Self = StObject.set(x, "tickSizeRatio", value.asInstanceOf[js.Any])
+      inline def setTickSizeRatio(value: Double): Self = StObject.set(x, "tickSizeRatio", value.asInstanceOf[js.Any])
     }
   }
 }

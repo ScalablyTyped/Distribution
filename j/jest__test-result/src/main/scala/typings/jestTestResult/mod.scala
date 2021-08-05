@@ -16,25 +16,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addResult(aggregatedResults: AggregatedResult, testResult: TestResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addResult")(aggregatedResults.asInstanceOf[js.Any], testResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addResult(aggregatedResults: AggregatedResult, testResult: TestResult): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addResult")(aggregatedResults.asInstanceOf[js.Any], testResult.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def buildFailureTestResult(testPath: String, err: SerializableError): TestResult = (^.asInstanceOf[js.Dynamic].applyDynamic("buildFailureTestResult")(testPath.asInstanceOf[js.Any], err.asInstanceOf[js.Any])).asInstanceOf[TestResult]
+  inline def buildFailureTestResult(testPath: String, err: SerializableError): TestResult = (^.asInstanceOf[js.Dynamic].applyDynamic("buildFailureTestResult")(testPath.asInstanceOf[js.Any], err.asInstanceOf[js.Any])).asInstanceOf[TestResult]
   
-  @scala.inline
-  def formatTestResults(results: AggregatedResult): FormattedTestResults = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTestResults")(results.asInstanceOf[js.Any]).asInstanceOf[FormattedTestResults]
-  @scala.inline
-  def formatTestResults(results: AggregatedResult, codeCoverageFormatter: Unit, reporter: CodeCoverageReporter): FormattedTestResults = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTestResults")(results.asInstanceOf[js.Any], codeCoverageFormatter.asInstanceOf[js.Any], reporter.asInstanceOf[js.Any])).asInstanceOf[FormattedTestResults]
-  @scala.inline
-  def formatTestResults(results: AggregatedResult, codeCoverageFormatter: CodeCoverageFormatter): FormattedTestResults = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTestResults")(results.asInstanceOf[js.Any], codeCoverageFormatter.asInstanceOf[js.Any])).asInstanceOf[FormattedTestResults]
-  @scala.inline
-  def formatTestResults(
+  inline def formatTestResults(results: AggregatedResult): FormattedTestResults = ^.asInstanceOf[js.Dynamic].applyDynamic("formatTestResults")(results.asInstanceOf[js.Any]).asInstanceOf[FormattedTestResults]
+  inline def formatTestResults(results: AggregatedResult, codeCoverageFormatter: Unit, reporter: CodeCoverageReporter): FormattedTestResults = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTestResults")(results.asInstanceOf[js.Any], codeCoverageFormatter.asInstanceOf[js.Any], reporter.asInstanceOf[js.Any])).asInstanceOf[FormattedTestResults]
+  inline def formatTestResults(results: AggregatedResult, codeCoverageFormatter: CodeCoverageFormatter): FormattedTestResults = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTestResults")(results.asInstanceOf[js.Any], codeCoverageFormatter.asInstanceOf[js.Any])).asInstanceOf[FormattedTestResults]
+  inline def formatTestResults(
     results: AggregatedResult,
     codeCoverageFormatter: CodeCoverageFormatter,
     reporter: CodeCoverageReporter
   ): FormattedTestResults = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTestResults")(results.asInstanceOf[js.Any], codeCoverageFormatter.asInstanceOf[js.Any], reporter.asInstanceOf[js.Any])).asInstanceOf[FormattedTestResults]
   
-  @scala.inline
-  def makeEmptyAggregatedTestResult(): AggregatedResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeEmptyAggregatedTestResult")().asInstanceOf[AggregatedResult]
+  inline def makeEmptyAggregatedTestResult(): AggregatedResult = ^.asInstanceOf[js.Dynamic].applyDynamic("makeEmptyAggregatedTestResult")().asInstanceOf[AggregatedResult]
 }

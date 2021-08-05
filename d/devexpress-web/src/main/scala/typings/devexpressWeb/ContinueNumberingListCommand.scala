@@ -18,16 +18,13 @@ trait ContinueNumberingListCommand
 }
 object ContinueNumberingListCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): ContinueNumberingListCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): ContinueNumberingListCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ContinueNumberingListCommand]
   }
   
-  @scala.inline
-  implicit class ContinueNumberingListCommandMutableBuilder[Self <: ContinueNumberingListCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueNumberingListCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

@@ -10,22 +10,17 @@ trait GetCustomerQueryStatsResponse extends StObject {
 }
 object GetCustomerQueryStatsResponse {
   
-  @scala.inline
-  def apply(): GetCustomerQueryStatsResponse = {
+  inline def apply(): GetCustomerQueryStatsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCustomerQueryStatsResponse]
   }
   
-  @scala.inline
-  implicit class GetCustomerQueryStatsResponseMutableBuilder[Self <: GetCustomerQueryStatsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCustomerQueryStatsResponse](x: Self) {
     
-    @scala.inline
-    def setStats(value: js.Array[CustomerQueryStats]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: js.Array[CustomerQueryStats]): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    @scala.inline
-    def setStatsVarargs(value: CustomerQueryStats*): Self = StObject.set(x, "stats", js.Array(value :_*))
+    inline def setStatsVarargs(value: CustomerQueryStats*): Self = StObject.set(x, "stats", js.Array(value :_*))
   }
 }

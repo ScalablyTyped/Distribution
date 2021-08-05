@@ -22,7 +22,7 @@ object innerSubscribeMod {
     
     var outerValue: T = js.native
     
-    var parent: js.Any = js.native
+    /* private */ var parent: js.Any = js.native
   }
   
   @JSImport("rxjs/internal/innerSubscribe", "ComplexOuterSubscriber")
@@ -84,7 +84,7 @@ object innerSubscribeMod {
   class SimpleInnerSubscriber[T] protected () extends Subscriber[T] {
     def this(parent: SimpleOuterSubscriberLike[js.Any]) = this()
     
-    var parent: js.Any = js.native
+    /* private */ var parent: js.Any = js.native
   }
   
   @JSImport("rxjs/internal/innerSubscribe", "SimpleOuterSubscriber")
@@ -148,8 +148,7 @@ object innerSubscribeMod {
     override def notifyNext(innerValue: R): Unit = js.native
   }
   
-  @scala.inline
-  def innerSubscribe(result: js.Any, innerSubscriber: Subscriber[js.Any]): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("innerSubscribe")(result.asInstanceOf[js.Any], innerSubscriber.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
+  inline def innerSubscribe(result: js.Any, innerSubscriber: Subscriber[js.Any]): js.UndefOr[Subscription] = (^.asInstanceOf[js.Dynamic].applyDynamic("innerSubscribe")(result.asInstanceOf[js.Any], innerSubscriber.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Subscription]]
   
   trait SimpleOuterSubscriberLike[T] extends StObject {
     
@@ -172,23 +171,18 @@ object innerSubscribeMod {
   }
   object SimpleOuterSubscriberLike {
     
-    @scala.inline
-    def apply[T](notifyComplete: () => Unit, notifyError: js.Any => Unit, notifyNext: T => Unit): SimpleOuterSubscriberLike[T] = {
+    inline def apply[T](notifyComplete: () => Unit, notifyError: js.Any => Unit, notifyNext: T => Unit): SimpleOuterSubscriberLike[T] = {
       val __obj = js.Dynamic.literal(notifyComplete = js.Any.fromFunction0(notifyComplete), notifyError = js.Any.fromFunction1(notifyError), notifyNext = js.Any.fromFunction1(notifyNext))
       __obj.asInstanceOf[SimpleOuterSubscriberLike[T]]
     }
     
-    @scala.inline
-    implicit class SimpleOuterSubscriberLikeMutableBuilder[Self <: SimpleOuterSubscriberLike[?], T] (val x: Self & SimpleOuterSubscriberLike[T]) extends AnyVal {
+    extension [Self <: SimpleOuterSubscriberLike[?], T](x: Self & SimpleOuterSubscriberLike[T]) {
       
-      @scala.inline
-      def setNotifyComplete(value: () => Unit): Self = StObject.set(x, "notifyComplete", js.Any.fromFunction0(value))
+      inline def setNotifyComplete(value: () => Unit): Self = StObject.set(x, "notifyComplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyError(value: js.Any => Unit): Self = StObject.set(x, "notifyError", js.Any.fromFunction1(value))
+      inline def setNotifyError(value: js.Any => Unit): Self = StObject.set(x, "notifyError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyNext(value: T => Unit): Self = StObject.set(x, "notifyNext", js.Any.fromFunction1(value))
+      inline def setNotifyNext(value: T => Unit): Self = StObject.set(x, "notifyNext", js.Any.fromFunction1(value))
     }
   }
 }

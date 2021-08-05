@@ -18,23 +18,18 @@ trait Geometry
 }
 object Geometry {
   
-  @scala.inline
-  def apply(geometry: typings.amapJsApi.AMap.GeoJSON.Geometry, properties: js.Any): Geometry = {
+  inline def apply(geometry: typings.amapJsApi.AMap.GeoJSON.Geometry, properties: js.Any): Geometry = {
     val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Feature")
     __obj.asInstanceOf[Geometry]
   }
   
-  @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+  extension [Self <: Geometry](x: Self) {
     
-    @scala.inline
-    def setGeometry(value: typings.amapJsApi.AMap.GeoJSON.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: typings.amapJsApi.AMap.GeoJSON.Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Feature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Feature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

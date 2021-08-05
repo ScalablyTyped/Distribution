@@ -26,70 +26,49 @@ trait ToolBarOptions extends StObject {
 }
 object ToolBarOptions {
   
-  @scala.inline
-  def apply(): ToolBarOptions = {
+  inline def apply(): ToolBarOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolBarOptions]
   }
   
-  @scala.inline
-  implicit class ToolBarOptionsMutableBuilder[Self <: ToolBarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ToolBarOptions](x: Self) {
     
-    @scala.inline
-    def setClick(value: /* e */ ToolBarClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    inline def setClick(value: /* e */ ToolBarClickEvent => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setClose(value: /* e */ ToolBarCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    inline def setClose(value: /* e */ ToolBarCloseEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[ToolBarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ToolBarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: ToolBarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ToolBarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOpen(value: /* e */ ToolBarOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: /* e */ ToolBarOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     
-    @scala.inline
-    def setOverflowClose(value: /* e */ ToolBarOverflowCloseEvent => Unit): Self = StObject.set(x, "overflowClose", js.Any.fromFunction1(value))
+    inline def setOverflowClose(value: /* e */ ToolBarOverflowCloseEvent => Unit): Self = StObject.set(x, "overflowClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOverflowCloseUndefined: Self = StObject.set(x, "overflowClose", js.undefined)
+    inline def setOverflowCloseUndefined: Self = StObject.set(x, "overflowClose", js.undefined)
     
-    @scala.inline
-    def setOverflowOpen(value: /* e */ ToolBarOverflowOpenEvent => Unit): Self = StObject.set(x, "overflowOpen", js.Any.fromFunction1(value))
+    inline def setOverflowOpen(value: /* e */ ToolBarOverflowOpenEvent => Unit): Self = StObject.set(x, "overflowOpen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOverflowOpenUndefined: Self = StObject.set(x, "overflowOpen", js.undefined)
+    inline def setOverflowOpenUndefined: Self = StObject.set(x, "overflowOpen", js.undefined)
     
-    @scala.inline
-    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
     
-    @scala.inline
-    def setToggle(value: /* e */ ToolBarToggleEvent => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+    inline def setToggle(value: /* e */ ToolBarToggleEvent => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
   }
 }

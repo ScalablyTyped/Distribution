@@ -13,19 +13,15 @@ trait AssignmentsResponse extends StObject {
 }
 object AssignmentsResponse {
   
-  @scala.inline
-  def apply(failedAssignments: js.Array[AssignmentFailure]): AssignmentsResponse = {
+  inline def apply(failedAssignments: js.Array[AssignmentFailure]): AssignmentsResponse = {
     val __obj = js.Dynamic.literal(failedAssignments = failedAssignments.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignmentsResponse]
   }
   
-  @scala.inline
-  implicit class AssignmentsResponseMutableBuilder[Self <: AssignmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssignmentsResponse](x: Self) {
     
-    @scala.inline
-    def setFailedAssignments(value: js.Array[AssignmentFailure]): Self = StObject.set(x, "failedAssignments", value.asInstanceOf[js.Any])
+    inline def setFailedAssignments(value: js.Array[AssignmentFailure]): Self = StObject.set(x, "failedAssignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedAssignmentsVarargs(value: AssignmentFailure*): Self = StObject.set(x, "failedAssignments", js.Array(value :_*))
+    inline def setFailedAssignmentsVarargs(value: AssignmentFailure*): Self = StObject.set(x, "failedAssignments", js.Array(value :_*))
   }
 }

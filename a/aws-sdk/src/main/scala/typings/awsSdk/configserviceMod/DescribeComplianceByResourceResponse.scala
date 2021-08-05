@@ -18,28 +18,21 @@ trait DescribeComplianceByResourceResponse extends StObject {
 }
 object DescribeComplianceByResourceResponse {
   
-  @scala.inline
-  def apply(): DescribeComplianceByResourceResponse = {
+  inline def apply(): DescribeComplianceByResourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeComplianceByResourceResponse]
   }
   
-  @scala.inline
-  implicit class DescribeComplianceByResourceResponseMutableBuilder[Self <: DescribeComplianceByResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeComplianceByResourceResponse](x: Self) {
     
-    @scala.inline
-    def setComplianceByResources(value: ComplianceByResources): Self = StObject.set(x, "ComplianceByResources", value.asInstanceOf[js.Any])
+    inline def setComplianceByResources(value: ComplianceByResources): Self = StObject.set(x, "ComplianceByResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceByResourcesUndefined: Self = StObject.set(x, "ComplianceByResources", js.undefined)
+    inline def setComplianceByResourcesUndefined: Self = StObject.set(x, "ComplianceByResources", js.undefined)
     
-    @scala.inline
-    def setComplianceByResourcesVarargs(value: ComplianceByResource*): Self = StObject.set(x, "ComplianceByResources", js.Array(value :_*))
+    inline def setComplianceByResourcesVarargs(value: ComplianceByResource*): Self = StObject.set(x, "ComplianceByResources", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

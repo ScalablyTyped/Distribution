@@ -10,16 +10,13 @@ trait Capacity extends StObject {
 }
 object Capacity {
   
-  @scala.inline
-  def apply(): Capacity = {
+  inline def apply(): Capacity = {
     val __obj = js.Dynamic.literal(capacity = 2)
     __obj.asInstanceOf[Capacity]
   }
   
-  @scala.inline
-  implicit class CapacityMutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
+  extension [Self <: Capacity](x: Self) {
     
-    @scala.inline
-    def setCapacity(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
   }
 }

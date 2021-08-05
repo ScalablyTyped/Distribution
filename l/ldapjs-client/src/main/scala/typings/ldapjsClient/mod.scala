@@ -86,20 +86,16 @@ object mod {
   }
   object Change {
     
-    @scala.inline
-    def apply(modification: StringDictionary[js.Any], operation: add | delete | replace): Change = {
+    inline def apply(modification: StringDictionary[js.Any], operation: add | delete | replace): Change = {
       val __obj = js.Dynamic.literal(modification = modification.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
       __obj.asInstanceOf[Change]
     }
     
-    @scala.inline
-    implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+    extension [Self <: Change](x: Self) {
       
-      @scala.inline
-      def setModification(value: StringDictionary[js.Any]): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
+      inline def setModification(value: StringDictionary[js.Any]): Self = StObject.set(x, "modification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperation(value: add | delete | replace): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: add | delete | replace): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,29 +109,22 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(url: String): ClientOptions = {
+    inline def apply(url: String): ClientOptions = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTlsOptions(value: js.Object): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
+      inline def setTlsOptions(value: js.Object): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsOptionsUndefined: Self = StObject.set(x, "tlsOptions", js.undefined)
+      inline def setTlsOptionsUndefined: Self = StObject.set(x, "tlsOptions", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -195,8 +184,7 @@ object mod {
   }
   object LdapClient {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (String, js.Object) => js.Promise[js.Any],
       bind: (String, String) => js.Promise[js.Any],
       del: String => js.Promise[js.Any],
@@ -210,32 +198,23 @@ object mod {
       __obj.asInstanceOf[LdapClient]
     }
     
-    @scala.inline
-    implicit class LdapClientMutableBuilder[Self <: LdapClient] (val x: Self) extends AnyVal {
+    extension [Self <: LdapClient](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (String, js.Object) => js.Promise[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (String, js.Object) => js.Promise[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBind(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+      inline def setBind(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDel(value: String => js.Promise[js.Any]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+      inline def setDel(value: String => js.Promise[js.Any]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => js.Promise[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => js.Promise[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setModify(value: (String, Change) => js.Promise[js.Any]): Self = StObject.set(x, "modify", js.Any.fromFunction2(value))
+      inline def setModify(value: (String, Change) => js.Promise[js.Any]): Self = StObject.set(x, "modify", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setModifyDN(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "modifyDN", js.Any.fromFunction2(value))
+      inline def setModifyDN(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "modifyDN", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSearch(value: (String, SearchOptions) => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+      inline def setSearch(value: (String, SearchOptions) => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnbind(value: () => js.Promise[js.Any]): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
+      inline def setUnbind(value: () => js.Promise[js.Any]): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
     }
   }
   
@@ -255,53 +234,38 @@ object mod {
   }
   object SearchOptions {
     
-    @scala.inline
-    def apply(): SearchOptions = {
+    inline def apply(): SearchOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SearchOptions]
     }
     
-    @scala.inline
-    implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SearchOptions](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+      inline def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
+      inline def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
       
-      @scala.inline
-      def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+      inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
+      inline def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
       
-      @scala.inline
-      def setTypesOnly(value: Boolean): Self = StObject.set(x, "typesOnly", value.asInstanceOf[js.Any])
+      inline def setTypesOnly(value: Boolean): Self = StObject.set(x, "typesOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesOnlyUndefined: Self = StObject.set(x, "typesOnly", js.undefined)
+      inline def setTypesOnlyUndefined: Self = StObject.set(x, "typesOnly", js.undefined)
     }
   }
 }

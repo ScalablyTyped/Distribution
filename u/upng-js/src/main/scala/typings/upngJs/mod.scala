@@ -13,18 +13,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decode(buffer: ArrayBuffer): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Image]
+  inline def decode(buffer: ArrayBuffer): Image = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[Image]
   
-  @scala.inline
-  def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
-  @scala.inline
-  def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double, dels: js.Array[Double]): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any], dels.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  inline def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  inline def encode(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cnum: Double, dels: js.Array[Double]): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cnum.asInstanceOf[js.Any], dels.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
   
-  @scala.inline
-  def encodeLL(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cc: Double, ac: Double, depth: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeLL")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], ac.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
-  @scala.inline
-  def encodeLL(
+  inline def encodeLL(imgs: js.Array[ArrayBuffer], w: Double, h: Double, cc: Double, ac: Double, depth: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeLL")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], ac.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  inline def encodeLL(
     imgs: js.Array[ArrayBuffer],
     w: Double,
     h: Double,
@@ -34,11 +29,9 @@ object mod {
     dels: js.Array[Double]
   ): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeLL")(imgs.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], cc.asInstanceOf[js.Any], ac.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], dels.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
   
-  @scala.inline
-  def quantize(data: ArrayBuffer, psize: Double): QuantizeResult = (^.asInstanceOf[js.Dynamic].applyDynamic("quantize")(data.asInstanceOf[js.Any], psize.asInstanceOf[js.Any])).asInstanceOf[QuantizeResult]
+  inline def quantize(data: ArrayBuffer, psize: Double): QuantizeResult = (^.asInstanceOf[js.Dynamic].applyDynamic("quantize")(data.asInstanceOf[js.Any], psize.asInstanceOf[js.Any])).asInstanceOf[QuantizeResult]
   
-  @scala.inline
-  def toRGBA8(out: Image): js.Array[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGBA8")(out.asInstanceOf[js.Any]).asInstanceOf[js.Array[ArrayBuffer]]
+  inline def toRGBA8(out: Image): js.Array[ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGBA8")(out.asInstanceOf[js.Any]).asInstanceOf[js.Array[ArrayBuffer]]
   
   trait Image extends StObject {
     
@@ -58,8 +51,7 @@ object mod {
   }
   object Image {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ctype: Double,
       data: ArrayBuffer,
       depth: Double,
@@ -72,32 +64,23 @@ object mod {
       __obj.asInstanceOf[Image]
     }
     
-    @scala.inline
-    implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+    extension [Self <: Image](x: Self) {
       
-      @scala.inline
-      def setCtype(value: Double): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
+      inline def setCtype(value: Double): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+      inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrames(value: js.Array[ImageFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+      inline def setFrames(value: js.Array[ImageFrame]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramesVarargs(value: ImageFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
+      inline def setFramesVarargs(value: ImageFrame*): Self = StObject.set(x, "frames", js.Array(value :_*))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabs(value: ImageTabs): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: ImageTabs): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -113,26 +96,20 @@ object mod {
   }
   object ImageFrame {
     
-    @scala.inline
-    def apply(blend: Double, delay: Double, dispose: Double, rect: ImageFrameRect): ImageFrame = {
+    inline def apply(blend: Double, delay: Double, dispose: Double, rect: ImageFrameRect): ImageFrame = {
       val __obj = js.Dynamic.literal(blend = blend.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], dispose = dispose.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageFrame]
     }
     
-    @scala.inline
-    implicit class ImageFrameMutableBuilder[Self <: ImageFrame] (val x: Self) extends AnyVal {
+    extension [Self <: ImageFrame](x: Self) {
       
-      @scala.inline
-      def setBlend(value: Double): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
+      inline def setBlend(value: Double): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDispose(value: Double): Self = StObject.set(x, "dispose", value.asInstanceOf[js.Any])
+      inline def setDispose(value: Double): Self = StObject.set(x, "dispose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRect(value: ImageFrameRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+      inline def setRect(value: ImageFrameRect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     }
   }
   
@@ -148,26 +125,20 @@ object mod {
   }
   object ImageFrameRect {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): ImageFrameRect = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): ImageFrameRect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageFrameRect]
     }
     
-    @scala.inline
-    implicit class ImageFrameRectMutableBuilder[Self <: ImageFrameRect] (val x: Self) extends AnyVal {
+    extension [Self <: ImageFrameRect](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -179,20 +150,16 @@ object mod {
   }
   object ImageTabACTL {
     
-    @scala.inline
-    def apply(num_frames: Double, num_plays: Double): ImageTabACTL = {
+    inline def apply(num_frames: Double, num_plays: Double): ImageTabACTL = {
       val __obj = js.Dynamic.literal(num_frames = num_frames.asInstanceOf[js.Any], num_plays = num_plays.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImageTabACTL]
     }
     
-    @scala.inline
-    implicit class ImageTabACTLMutableBuilder[Self <: ImageTabACTL] (val x: Self) extends AnyVal {
+    extension [Self <: ImageTabACTL](x: Self) {
       
-      @scala.inline
-      def setNum_frames(value: Double): Self = StObject.set(x, "num_frames", value.asInstanceOf[js.Any])
+      inline def setNum_frames(value: Double): Self = StObject.set(x, "num_frames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNum_plays(value: Double): Self = StObject.set(x, "num_plays", value.asInstanceOf[js.Any])
+      inline def setNum_plays(value: Double): Self = StObject.set(x, "num_plays", value.asInstanceOf[js.Any])
     }
   }
   
@@ -225,98 +192,68 @@ object mod {
   }
   object ImageTabs {
     
-    @scala.inline
-    def apply(): ImageTabs = {
+    inline def apply(): ImageTabs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageTabs]
     }
     
-    @scala.inline
-    implicit class ImageTabsMutableBuilder[Self <: ImageTabs] (val x: Self) extends AnyVal {
+    extension [Self <: ImageTabs](x: Self) {
       
-      @scala.inline
-      def setAcTL(value: ImageTabACTL): Self = StObject.set(x, "acTL", value.asInstanceOf[js.Any])
+      inline def setAcTL(value: ImageTabACTL): Self = StObject.set(x, "acTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcTLUndefined: Self = StObject.set(x, "acTL", js.undefined)
+      inline def setAcTLUndefined: Self = StObject.set(x, "acTL", js.undefined)
       
-      @scala.inline
-      def setBKGD(value: Double | js.Array[Double]): Self = StObject.set(x, "bKGD", value.asInstanceOf[js.Any])
+      inline def setBKGD(value: Double | js.Array[Double]): Self = StObject.set(x, "bKGD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBKGDUndefined: Self = StObject.set(x, "bKGD", js.undefined)
+      inline def setBKGDUndefined: Self = StObject.set(x, "bKGD", js.undefined)
       
-      @scala.inline
-      def setBKGDVarargs(value: Double*): Self = StObject.set(x, "bKGD", js.Array(value :_*))
+      inline def setBKGDVarargs(value: Double*): Self = StObject.set(x, "bKGD", js.Array(value :_*))
       
-      @scala.inline
-      def setCHRM(value: js.Array[Double]): Self = StObject.set(x, "cHRM", value.asInstanceOf[js.Any])
+      inline def setCHRM(value: js.Array[Double]): Self = StObject.set(x, "cHRM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCHRMUndefined: Self = StObject.set(x, "cHRM", js.undefined)
+      inline def setCHRMUndefined: Self = StObject.set(x, "cHRM", js.undefined)
       
-      @scala.inline
-      def setCHRMVarargs(value: Double*): Self = StObject.set(x, "cHRM", js.Array(value :_*))
+      inline def setCHRMVarargs(value: Double*): Self = StObject.set(x, "cHRM", js.Array(value :_*))
       
-      @scala.inline
-      def setGAMA(value: Double): Self = StObject.set(x, "gAMA", value.asInstanceOf[js.Any])
+      inline def setGAMA(value: Double): Self = StObject.set(x, "gAMA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGAMAUndefined: Self = StObject.set(x, "gAMA", js.undefined)
+      inline def setGAMAUndefined: Self = StObject.set(x, "gAMA", js.undefined)
       
-      @scala.inline
-      def setHIST(value: js.Array[Double]): Self = StObject.set(x, "hIST", value.asInstanceOf[js.Any])
+      inline def setHIST(value: js.Array[Double]): Self = StObject.set(x, "hIST", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHISTUndefined: Self = StObject.set(x, "hIST", js.undefined)
+      inline def setHISTUndefined: Self = StObject.set(x, "hIST", js.undefined)
       
-      @scala.inline
-      def setHISTVarargs(value: Double*): Self = StObject.set(x, "hIST", js.Array(value :_*))
+      inline def setHISTVarargs(value: Double*): Self = StObject.set(x, "hIST", js.Array(value :_*))
       
-      @scala.inline
-      def setITXt(value: ImageTabText): Self = StObject.set(x, "iTXt", value.asInstanceOf[js.Any])
+      inline def setITXt(value: ImageTabText): Self = StObject.set(x, "iTXt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setITXtUndefined: Self = StObject.set(x, "iTXt", js.undefined)
+      inline def setITXtUndefined: Self = StObject.set(x, "iTXt", js.undefined)
       
-      @scala.inline
-      def setPHYs(value: js.Array[Double]): Self = StObject.set(x, "pHYs", value.asInstanceOf[js.Any])
+      inline def setPHYs(value: js.Array[Double]): Self = StObject.set(x, "pHYs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPHYsUndefined: Self = StObject.set(x, "pHYs", js.undefined)
+      inline def setPHYsUndefined: Self = StObject.set(x, "pHYs", js.undefined)
       
-      @scala.inline
-      def setPHYsVarargs(value: Double*): Self = StObject.set(x, "pHYs", js.Array(value :_*))
+      inline def setPHYsVarargs(value: Double*): Self = StObject.set(x, "pHYs", js.Array(value :_*))
       
-      @scala.inline
-      def setPLTE(value: js.Array[Double]): Self = StObject.set(x, "PLTE", value.asInstanceOf[js.Any])
+      inline def setPLTE(value: js.Array[Double]): Self = StObject.set(x, "PLTE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPLTEUndefined: Self = StObject.set(x, "PLTE", js.undefined)
+      inline def setPLTEUndefined: Self = StObject.set(x, "PLTE", js.undefined)
       
-      @scala.inline
-      def setPLTEVarargs(value: Double*): Self = StObject.set(x, "PLTE", js.Array(value :_*))
+      inline def setPLTEVarargs(value: Double*): Self = StObject.set(x, "PLTE", js.Array(value :_*))
       
-      @scala.inline
-      def setSRGB(value: Double): Self = StObject.set(x, "sRGB", value.asInstanceOf[js.Any])
+      inline def setSRGB(value: Double): Self = StObject.set(x, "sRGB", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSRGBUndefined: Self = StObject.set(x, "sRGB", js.undefined)
+      inline def setSRGBUndefined: Self = StObject.set(x, "sRGB", js.undefined)
       
-      @scala.inline
-      def setTEXt(value: ImageTabText): Self = StObject.set(x, "tEXt", value.asInstanceOf[js.Any])
+      inline def setTEXt(value: ImageTabText): Self = StObject.set(x, "tEXt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTEXtUndefined: Self = StObject.set(x, "tEXt", js.undefined)
+      inline def setTEXtUndefined: Self = StObject.set(x, "tEXt", js.undefined)
       
-      @scala.inline
-      def setTRNS(value: Double | js.Array[Double]): Self = StObject.set(x, "tRNS", value.asInstanceOf[js.Any])
+      inline def setTRNS(value: Double | js.Array[Double]): Self = StObject.set(x, "tRNS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRNSUndefined: Self = StObject.set(x, "tRNS", js.undefined)
+      inline def setTRNSUndefined: Self = StObject.set(x, "tRNS", js.undefined)
       
-      @scala.inline
-      def setTRNSVarargs(value: Double*): Self = StObject.set(x, "tRNS", js.Array(value :_*))
+      inline def setTRNSVarargs(value: Double*): Self = StObject.set(x, "tRNS", js.Array(value :_*))
     }
   }
   
@@ -331,26 +268,20 @@ object mod {
   }
   object QuantizeResult {
     
-    @scala.inline
-    def apply(abuf: ArrayBuffer, inds: Uint8Array, plte: js.Array[js.Any]): QuantizeResult = {
+    inline def apply(abuf: ArrayBuffer, inds: Uint8Array, plte: js.Array[js.Any]): QuantizeResult = {
       val __obj = js.Dynamic.literal(abuf = abuf.asInstanceOf[js.Any], inds = inds.asInstanceOf[js.Any], plte = plte.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuantizeResult]
     }
     
-    @scala.inline
-    implicit class QuantizeResultMutableBuilder[Self <: QuantizeResult] (val x: Self) extends AnyVal {
+    extension [Self <: QuantizeResult](x: Self) {
       
-      @scala.inline
-      def setAbuf(value: ArrayBuffer): Self = StObject.set(x, "abuf", value.asInstanceOf[js.Any])
+      inline def setAbuf(value: ArrayBuffer): Self = StObject.set(x, "abuf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInds(value: Uint8Array): Self = StObject.set(x, "inds", value.asInstanceOf[js.Any])
+      inline def setInds(value: Uint8Array): Self = StObject.set(x, "inds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlte(value: js.Array[js.Any]): Self = StObject.set(x, "plte", value.asInstanceOf[js.Any])
+      inline def setPlte(value: js.Array[js.Any]): Self = StObject.set(x, "plte", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlteVarargs(value: js.Any*): Self = StObject.set(x, "plte", js.Array(value :_*))
+      inline def setPlteVarargs(value: js.Any*): Self = StObject.set(x, "plte", js.Array(value :_*))
     }
   }
 }

@@ -22,25 +22,19 @@ trait DeploymentStrategy extends StObject {
 }
 object DeploymentStrategy {
   
-  @scala.inline
-  def apply(): DeploymentStrategy = {
+  inline def apply(): DeploymentStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentStrategy]
   }
   
-  @scala.inline
-  implicit class DeploymentStrategyMutableBuilder[Self <: DeploymentStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentStrategy](x: Self) {
     
-    @scala.inline
-    def setRollingUpdate(value: Input[RollingUpdateDeployment]): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
+    inline def setRollingUpdate(value: Input[RollingUpdateDeployment]): Self = StObject.set(x, "rollingUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollingUpdateUndefined: Self = StObject.set(x, "rollingUpdate", js.undefined)
+    inline def setRollingUpdateUndefined: Self = StObject.set(x, "rollingUpdate", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

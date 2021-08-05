@@ -18,8 +18,7 @@ trait ParametersPullsListFilesEndpoint extends StObject {
 }
 object ParametersPullsListFilesEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: PullsListFilesEndpoint,
     request: PullsListFilesRequestOptions,
     response: OctokitResponse[PullsListFilesResponseData]
@@ -28,16 +27,12 @@ object ParametersPullsListFilesEndpoint {
     __obj.asInstanceOf[ParametersPullsListFilesEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersPullsListFilesEndpointMutableBuilder[Self <: ParametersPullsListFilesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersPullsListFilesEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: PullsListFilesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PullsListFilesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: PullsListFilesRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: PullsListFilesRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[PullsListFilesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[PullsListFilesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

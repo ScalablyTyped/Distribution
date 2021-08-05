@@ -18,8 +18,7 @@ trait ParametersActivityGetFeedsEndpoint extends StObject {
 }
 object ParametersActivityGetFeedsEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityGetFeedsEndpoint,
     request: ActivityGetFeedsRequestOptions,
     response: OctokitResponse[ActivityGetFeedsResponseData]
@@ -28,16 +27,12 @@ object ParametersActivityGetFeedsEndpoint {
     __obj.asInstanceOf[ParametersActivityGetFeedsEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityGetFeedsEndpointMutableBuilder[Self <: ParametersActivityGetFeedsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityGetFeedsEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityGetFeedsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityGetFeedsEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityGetFeedsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityGetFeedsRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActivityGetFeedsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActivityGetFeedsResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

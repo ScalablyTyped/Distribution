@@ -20,23 +20,18 @@ trait Recorded extends StObject {
 }
 object Recorded {
   
-  @scala.inline
-  def apply(equals_ : Recorded => Boolean, time: Double, value: js.Any): Recorded = {
+  inline def apply(equals_ : Recorded => Boolean, time: Double, value: js.Any): Recorded = {
     val __obj = js.Dynamic.literal(time = time.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[Recorded]
   }
   
-  @scala.inline
-  implicit class RecordedMutableBuilder[Self <: Recorded] (val x: Self) extends AnyVal {
+  extension [Self <: Recorded](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: Recorded => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: Recorded => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

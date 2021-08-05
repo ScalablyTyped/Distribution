@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoLineCapStyle extends StObject
 object MsoLineCapStyle {
   
-  @scala.inline
-  def msoLineCapFlat: `3` = 3.asInstanceOf[`3`]
+  inline def msoLineCapFlat: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoLineCapMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoLineCapMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoLineCapRound: `2` = 2.asInstanceOf[`2`]
+  inline def msoLineCapRound: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoLineCapSquare: `1` = 1.asInstanceOf[`1`]
+  inline def msoLineCapSquare: `1` = 1.asInstanceOf[`1`]
 }

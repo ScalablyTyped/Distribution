@@ -20,8 +20,7 @@ trait `568` extends StObject {
 }
 object `568` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[ActionsGetSelfHostedRunnerForRepoEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ActionsGetSelfHostedRunnerForRepoResponseData]
   ): `568` = {
@@ -29,15 +28,12 @@ object `568` {
     __obj.asInstanceOf[`568`]
   }
   
-  @scala.inline
-  implicit class `568MutableBuilder`[Self <: `568`] (val x: Self) extends AnyVal {
+  extension [Self <: `568`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[ActionsGetSelfHostedRunnerForRepoEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsGetSelfHostedRunnerForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsGetSelfHostedRunnerForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

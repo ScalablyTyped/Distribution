@@ -18,19 +18,15 @@ trait CreateIPSetRequest extends StObject {
 }
 object CreateIPSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateIPSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateIPSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIPSetRequest]
   }
   
-  @scala.inline
-  implicit class CreateIPSetRequestMutableBuilder[Self <: CreateIPSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIPSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

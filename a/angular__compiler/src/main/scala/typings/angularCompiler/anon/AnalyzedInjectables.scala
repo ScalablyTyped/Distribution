@@ -14,22 +14,17 @@ trait AnalyzedInjectables extends StObject {
 }
 object AnalyzedInjectables {
   
-  @scala.inline
-  def apply(analyzedInjectables: js.Array[NgAnalyzedFileWithInjectables], analyzedModules: NgAnalyzedModules): AnalyzedInjectables = {
+  inline def apply(analyzedInjectables: js.Array[NgAnalyzedFileWithInjectables], analyzedModules: NgAnalyzedModules): AnalyzedInjectables = {
     val __obj = js.Dynamic.literal(analyzedInjectables = analyzedInjectables.asInstanceOf[js.Any], analyzedModules = analyzedModules.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyzedInjectables]
   }
   
-  @scala.inline
-  implicit class AnalyzedInjectablesMutableBuilder[Self <: AnalyzedInjectables] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyzedInjectables](x: Self) {
     
-    @scala.inline
-    def setAnalyzedInjectables(value: js.Array[NgAnalyzedFileWithInjectables]): Self = StObject.set(x, "analyzedInjectables", value.asInstanceOf[js.Any])
+    inline def setAnalyzedInjectables(value: js.Array[NgAnalyzedFileWithInjectables]): Self = StObject.set(x, "analyzedInjectables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyzedInjectablesVarargs(value: NgAnalyzedFileWithInjectables*): Self = StObject.set(x, "analyzedInjectables", js.Array(value :_*))
+    inline def setAnalyzedInjectablesVarargs(value: NgAnalyzedFileWithInjectables*): Self = StObject.set(x, "analyzedInjectables", js.Array(value :_*))
     
-    @scala.inline
-    def setAnalyzedModules(value: NgAnalyzedModules): Self = StObject.set(x, "analyzedModules", value.asInstanceOf[js.Any])
+    inline def setAnalyzedModules(value: NgAnalyzedModules): Self = StObject.set(x, "analyzedModules", value.asInstanceOf[js.Any])
   }
 }

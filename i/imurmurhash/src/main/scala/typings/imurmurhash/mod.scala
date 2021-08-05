@@ -13,14 +13,10 @@ object mod {
     * This is safe to use as long as the object is only used from a single thread and no other hashes are created while operating on this one.
     * If this constraint cannot be met, you can use new to create a new state object
     */
-  @scala.inline
-  def apply(): MurmurHash3 = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MurmurHash3]
-  @scala.inline
-  def apply(text: String): MurmurHash3 = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[MurmurHash3]
-  @scala.inline
-  def apply(text: String, seed: Double): MurmurHash3 = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[MurmurHash3]
-  @scala.inline
-  def apply(text: Unit, seed: Double): MurmurHash3 = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[MurmurHash3]
+  inline def apply(): MurmurHash3 = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MurmurHash3]
+  inline def apply(text: String): MurmurHash3 = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[MurmurHash3]
+  inline def apply(text: String, seed: Double): MurmurHash3 = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[MurmurHash3]
+  inline def apply(text: Unit, seed: Double): MurmurHash3 = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[MurmurHash3]
   
   @JSImport("imurmurhash", JSImport.Namespace)
   @js.native

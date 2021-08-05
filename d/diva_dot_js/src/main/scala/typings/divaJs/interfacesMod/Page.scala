@@ -36,8 +36,7 @@ trait Page extends StObject {
 }
 object Page {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api: Double,
     canvas: String,
     d: H,
@@ -56,46 +55,32 @@ object Page {
     __obj.asInstanceOf[Page]
   }
   
-  @scala.inline
-  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+  extension [Self <: Page](x: Self) {
     
-    @scala.inline
-    def setApi(value: Double): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: Double): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanvas(value: String): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: String): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setD(value: H): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: H): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacingPages(value: Boolean): Self = StObject.set(x, "facingPages", value.asInstanceOf[js.Any])
+    inline def setFacingPages(value: Boolean): Self = StObject.set(x, "facingPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIl(value: String): Self = StObject.set(x, "il", value.asInstanceOf[js.Any])
+    inline def setIl(value: String): Self = StObject.set(x, "il", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: String): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: String): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherImages(value: D): Self = StObject.set(x, "otherImages", value.asInstanceOf[js.Any])
+    inline def setOtherImages(value: D): Self = StObject.set(x, "otherImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaged(value: Boolean): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
+    inline def setPaged(value: Boolean): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXoffset(value: Double): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
+    inline def setXoffset(value: Double): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYoffset(value: Double): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
+    inline def setYoffset(value: Double): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
   }
 }

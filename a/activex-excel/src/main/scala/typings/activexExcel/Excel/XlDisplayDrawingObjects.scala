@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlDisplayDrawingObjects extends StObject
 object XlDisplayDrawingObjects {
   
-  @scala.inline
-  def xlDisplayShapes: `-4104` = -4104.asInstanceOf[`-4104`]
+  inline def xlDisplayShapes: `-4104` = -4104.asInstanceOf[`-4104`]
   
-  @scala.inline
-  def xlHide: `3` = 3.asInstanceOf[`3`]
+  inline def xlHide: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlPlaceholders: `2` = 2.asInstanceOf[`2`]
+  inline def xlPlaceholders: `2` = 2.asInstanceOf[`2`]
 }

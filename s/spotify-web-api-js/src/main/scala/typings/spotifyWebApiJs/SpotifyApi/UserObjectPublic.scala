@@ -29,50 +29,36 @@ trait UserObjectPublic extends StObject {
 }
 object UserObjectPublic {
   
-  @scala.inline
-  def apply(external_urls: ExternalUrlObject, href: String, id: String, uri: String): UserObjectPublic = {
+  inline def apply(external_urls: ExternalUrlObject, href: String, id: String, uri: String): UserObjectPublic = {
     val __obj = js.Dynamic.literal(external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[UserObjectPublic]
   }
   
-  @scala.inline
-  implicit class UserObjectPublicMutableBuilder[Self <: UserObjectPublic] (val x: Self) extends AnyVal {
+  extension [Self <: UserObjectPublic](x: Self) {
     
-    @scala.inline
-    def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+    inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
+    inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
     
-    @scala.inline
-    def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
+    inline def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowers(value: FollowersObject): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
+    inline def setFollowers(value: FollowersObject): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFollowersUndefined: Self = StObject.set(x, "followers", js.undefined)
+    inline def setFollowersUndefined: Self = StObject.set(x, "followers", js.undefined)
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Array[ImageObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
     
-    @scala.inline
-    def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
+    inline def setImagesVarargs(value: ImageObject*): Self = StObject.set(x, "images", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: user): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: user): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

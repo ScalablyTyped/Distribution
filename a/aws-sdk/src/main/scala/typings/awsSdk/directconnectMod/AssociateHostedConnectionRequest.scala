@@ -18,19 +18,15 @@ trait AssociateHostedConnectionRequest extends StObject {
 }
 object AssociateHostedConnectionRequest {
   
-  @scala.inline
-  def apply(connectionId: ConnectionId, parentConnectionId: ConnectionId): AssociateHostedConnectionRequest = {
+  inline def apply(connectionId: ConnectionId, parentConnectionId: ConnectionId): AssociateHostedConnectionRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], parentConnectionId = parentConnectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateHostedConnectionRequest]
   }
   
-  @scala.inline
-  implicit class AssociateHostedConnectionRequestMutableBuilder[Self <: AssociateHostedConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateHostedConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentConnectionId(value: ConnectionId): Self = StObject.set(x, "parentConnectionId", value.asInstanceOf[js.Any])
+    inline def setParentConnectionId(value: ConnectionId): Self = StObject.set(x, "parentConnectionId", value.asInstanceOf[js.Any])
   }
 }

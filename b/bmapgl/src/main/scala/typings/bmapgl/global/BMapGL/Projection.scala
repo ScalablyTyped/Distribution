@@ -23,14 +23,11 @@ object Projection {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def convertLL2MC(point: typings.bmapgl.BMapGL.Point): typings.bmapgl.BMapGL.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLL2MC")(point.asInstanceOf[js.Any]).asInstanceOf[typings.bmapgl.BMapGL.Point]
+  inline def convertLL2MC(point: typings.bmapgl.BMapGL.Point): typings.bmapgl.BMapGL.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("convertLL2MC")(point.asInstanceOf[js.Any]).asInstanceOf[typings.bmapgl.BMapGL.Point]
   
   /* static member */
-  @scala.inline
-  def convertMC2LL(point: typings.bmapgl.BMapGL.Point): typings.bmapgl.BMapGL.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("convertMC2LL")(point.asInstanceOf[js.Any]).asInstanceOf[typings.bmapgl.BMapGL.Point]
+  inline def convertMC2LL(point: typings.bmapgl.BMapGL.Point): typings.bmapgl.BMapGL.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("convertMC2LL")(point.asInstanceOf[js.Any]).asInstanceOf[typings.bmapgl.BMapGL.Point]
   
   /* static member */
-  @scala.inline
-  def proximityConvertMC2LL(point: typings.bmapgl.BMapGL.Point): typings.bmapgl.BMapGL.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("proximityConvertMC2LL")(point.asInstanceOf[js.Any]).asInstanceOf[typings.bmapgl.BMapGL.Point]
+  inline def proximityConvertMC2LL(point: typings.bmapgl.BMapGL.Point): typings.bmapgl.BMapGL.Point = ^.asInstanceOf[js.Dynamic].applyDynamic("proximityConvertMC2LL")(point.asInstanceOf[js.Any]).asInstanceOf[typings.bmapgl.BMapGL.Point]
 }

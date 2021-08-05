@@ -17,8 +17,7 @@ trait IMediaProtectionManager extends StObject {
 }
 object IMediaProtectionManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     oncomponentloadfailed: js.Any,
     onrebootneeded: js.Any,
     onservicerequested: js.Any,
@@ -28,19 +27,14 @@ object IMediaProtectionManager {
     __obj.asInstanceOf[IMediaProtectionManager]
   }
   
-  @scala.inline
-  implicit class IMediaProtectionManagerMutableBuilder[Self <: IMediaProtectionManager] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaProtectionManager](x: Self) {
     
-    @scala.inline
-    def setOncomponentloadfailed(value: js.Any): Self = StObject.set(x, "oncomponentloadfailed", value.asInstanceOf[js.Any])
+    inline def setOncomponentloadfailed(value: js.Any): Self = StObject.set(x, "oncomponentloadfailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnrebootneeded(value: js.Any): Self = StObject.set(x, "onrebootneeded", value.asInstanceOf[js.Any])
+    inline def setOnrebootneeded(value: js.Any): Self = StObject.set(x, "onrebootneeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnservicerequested(value: js.Any): Self = StObject.set(x, "onservicerequested", value.asInstanceOf[js.Any])
+    inline def setOnservicerequested(value: js.Any): Self = StObject.set(x, "onservicerequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

@@ -15,6 +15,5 @@ trait AtomRender extends StObject {
 }
 object AtomRender {
   
-  @scala.inline
-  def apply: AtomRender = ^.asInstanceOf[js.Dynamic].selectDynamic("AtomRender").asInstanceOf[AtomRender]
+  inline def apply: AtomRender = ^.asInstanceOf[js.Dynamic].selectDynamic("AtomRender").asInstanceOf[AtomRender]
 }

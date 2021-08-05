@@ -38,8 +38,7 @@ trait ImportAsProvisionedProductInput extends StObject {
 }
 object ImportAsProvisionedProductInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IdempotencyToken: IdempotencyToken,
     PhysicalId: PhysicalId,
     ProductId: Id,
@@ -50,28 +49,20 @@ object ImportAsProvisionedProductInput {
     __obj.asInstanceOf[ImportAsProvisionedProductInput]
   }
   
-  @scala.inline
-  implicit class ImportAsProvisionedProductInputMutableBuilder[Self <: ImportAsProvisionedProductInput] (val x: Self) extends AnyVal {
+  extension [Self <: ImportAsProvisionedProductInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalId(value: PhysicalId): Self = StObject.set(x, "PhysicalId", value.asInstanceOf[js.Any])
+    inline def setPhysicalId(value: PhysicalId): Self = StObject.set(x, "PhysicalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
   }
 }

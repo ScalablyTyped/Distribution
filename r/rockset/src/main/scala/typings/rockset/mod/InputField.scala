@@ -22,37 +22,27 @@ trait InputField extends StObject {
 }
 object InputField {
   
-  @scala.inline
-  def apply(): InputField = {
+  inline def apply(): InputField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputField]
   }
   
-  @scala.inline
-  implicit class InputFieldMutableBuilder[Self <: InputField] (val x: Self) extends AnyVal {
+  extension [Self <: InputField](x: Self) {
     
-    @scala.inline
-    def setField_name(value: String): Self = StObject.set(x, "field_name", value.asInstanceOf[js.Any])
+    inline def setField_name(value: String): Self = StObject.set(x, "field_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField_nameUndefined: Self = StObject.set(x, "field_name", js.undefined)
+    inline def setField_nameUndefined: Self = StObject.set(x, "field_name", js.undefined)
     
-    @scala.inline
-    def setIf_missing(value: SKIP | PASS): Self = StObject.set(x, "if_missing", value.asInstanceOf[js.Any])
+    inline def setIf_missing(value: SKIP | PASS): Self = StObject.set(x, "if_missing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIf_missingUndefined: Self = StObject.set(x, "if_missing", js.undefined)
+    inline def setIf_missingUndefined: Self = StObject.set(x, "if_missing", js.undefined)
     
-    @scala.inline
-    def setIs_drop(value: Boolean): Self = StObject.set(x, "is_drop", value.asInstanceOf[js.Any])
+    inline def setIs_drop(value: Boolean): Self = StObject.set(x, "is_drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_dropUndefined: Self = StObject.set(x, "is_drop", js.undefined)
+    inline def setIs_dropUndefined: Self = StObject.set(x, "is_drop", js.undefined)
     
-    @scala.inline
-    def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+    inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
   }
 }

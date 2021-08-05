@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MicrosoftStoreForBusinessLicenseType extends StObject
 object MicrosoftStoreForBusinessLicenseType {
   
-  @scala.inline
-  def offline: typings.microsoftGraph.microsoftGraphStrings.offline = "offline".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.offline]
+  inline def offline: typings.microsoftGraph.microsoftGraphStrings.offline = "offline".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.offline]
   
-  @scala.inline
-  def online: typings.microsoftGraph.microsoftGraphStrings.online = "online".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.online]
+  inline def online: typings.microsoftGraph.microsoftGraphStrings.online = "online".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.online]
 }

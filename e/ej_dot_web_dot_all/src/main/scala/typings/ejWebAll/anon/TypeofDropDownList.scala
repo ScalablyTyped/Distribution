@@ -15,19 +15,15 @@ trait TypeofDropDownList extends StObject {
 }
 object TypeofDropDownList {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: DropDownList): TypeofDropDownList = {
+  inline def apply(Locale: js.Any, fn: DropDownList): TypeofDropDownList = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDropDownList]
   }
   
-  @scala.inline
-  implicit class TypeofDropDownListMutableBuilder[Self <: TypeofDropDownList] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDropDownList](x: Self) {
     
-    @scala.inline
-    def setFn(value: DropDownList): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: DropDownList): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

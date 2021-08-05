@@ -30,61 +30,43 @@ trait DeployButton extends StObject {
 }
 object DeployButton {
   
-  @scala.inline
-  def apply(): DeployButton = {
+  inline def apply(): DeployButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeployButton]
   }
   
-  @scala.inline
-  implicit class DeployButtonMutableBuilder[Self <: DeployButton] (val x: Self) extends AnyVal {
+  extension [Self <: DeployButton](x: Self) {
     
-    @scala.inline
-    def setDeployButton(value: Label): Self = StObject.set(x, "deployButton", value.asInstanceOf[js.Any])
+    inline def setDeployButton(value: Label): Self = StObject.set(x, "deployButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployButtonUndefined: Self = StObject.set(x, "deployButton", js.undefined)
+    inline def setDeployButtonUndefined: Self = StObject.set(x, "deployButton", js.undefined)
     
-    @scala.inline
-    def setHeader(value: Image): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Image): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setLogin(value: `0`): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: `0`): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
+    inline def setLoginUndefined: Self = StObject.set(x, "login", js.undefined)
     
-    @scala.inline
-    def setMenu(value: Menuitemexportlibrary): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: Menuitemexportlibrary): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    @scala.inline
-    def setPage(value: Css): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Css): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPalette(value: Catalogues): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: Catalogues): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
     
-    @scala.inline
-    def setProjects(value: Enabled): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
+    inline def setProjects(value: Enabled): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
+    inline def setProjectsUndefined: Self = StObject.set(x, "projects", js.undefined)
     
-    @scala.inline
-    def setUserMenu(value: Boolean): Self = StObject.set(x, "userMenu", value.asInstanceOf[js.Any])
+    inline def setUserMenu(value: Boolean): Self = StObject.set(x, "userMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserMenuUndefined: Self = StObject.set(x, "userMenu", js.undefined)
+    inline def setUserMenuUndefined: Self = StObject.set(x, "userMenu", js.undefined)
   }
 }

@@ -38,33 +38,23 @@ trait LineStyle
      with _WebkitBorderBeforeStyleProperty
 object LineStyle {
   
-  @scala.inline
-  def dashed: typings.preact.preactStrings.dashed = "dashed".asInstanceOf[typings.preact.preactStrings.dashed]
+  inline def dashed: typings.preact.preactStrings.dashed = "dashed".asInstanceOf[typings.preact.preactStrings.dashed]
   
-  @scala.inline
-  def dotted: typings.preact.preactStrings.dotted = "dotted".asInstanceOf[typings.preact.preactStrings.dotted]
+  inline def dotted: typings.preact.preactStrings.dotted = "dotted".asInstanceOf[typings.preact.preactStrings.dotted]
   
-  @scala.inline
-  def double: typings.preact.preactStrings.double = "double".asInstanceOf[typings.preact.preactStrings.double]
+  inline def double: typings.preact.preactStrings.double = "double".asInstanceOf[typings.preact.preactStrings.double]
   
-  @scala.inline
-  def groove: typings.preact.preactStrings.groove = "groove".asInstanceOf[typings.preact.preactStrings.groove]
+  inline def groove: typings.preact.preactStrings.groove = "groove".asInstanceOf[typings.preact.preactStrings.groove]
   
-  @scala.inline
-  def hidden: typings.preact.preactStrings.hidden = "hidden".asInstanceOf[typings.preact.preactStrings.hidden]
+  inline def hidden: typings.preact.preactStrings.hidden = "hidden".asInstanceOf[typings.preact.preactStrings.hidden]
   
-  @scala.inline
-  def inset: typings.preact.preactStrings.inset = "inset".asInstanceOf[typings.preact.preactStrings.inset]
+  inline def inset: typings.preact.preactStrings.inset = "inset".asInstanceOf[typings.preact.preactStrings.inset]
   
-  @scala.inline
-  def none: typings.preact.preactStrings.none = "none".asInstanceOf[typings.preact.preactStrings.none]
+  inline def none: typings.preact.preactStrings.none = "none".asInstanceOf[typings.preact.preactStrings.none]
   
-  @scala.inline
-  def outset: typings.preact.preactStrings.outset = "outset".asInstanceOf[typings.preact.preactStrings.outset]
+  inline def outset: typings.preact.preactStrings.outset = "outset".asInstanceOf[typings.preact.preactStrings.outset]
   
-  @scala.inline
-  def ridge: typings.preact.preactStrings.ridge = "ridge".asInstanceOf[typings.preact.preactStrings.ridge]
+  inline def ridge: typings.preact.preactStrings.ridge = "ridge".asInstanceOf[typings.preact.preactStrings.ridge]
   
-  @scala.inline
-  def solid: typings.preact.preactStrings.solid = "solid".asInstanceOf[typings.preact.preactStrings.solid]
+  inline def solid: typings.preact.preactStrings.solid = "solid".asInstanceOf[typings.preact.preactStrings.solid]
 }

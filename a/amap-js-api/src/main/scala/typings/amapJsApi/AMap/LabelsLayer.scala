@@ -46,20 +46,16 @@ object LabelsLayer {
   }
   object EventData {
     
-    @scala.inline
-    def apply(data: Id, opts: typings.amapJsApi.anon.Icon): EventData = {
+    inline def apply(data: Id, opts: typings.amapJsApi.anon.Icon): EventData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventData]
     }
     
-    @scala.inline
-    implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
+    extension [Self <: EventData](x: Self) {
       
-      @scala.inline
-      def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Id): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpts(value: typings.amapJsApi.anon.Icon): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: typings.amapJsApi.anon.Icon): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,8 +79,7 @@ object LabelsLayer {
   }
   object EventMap {
     
-    @scala.inline
-    def apply[I](
+    inline def apply[I](
       click: Event_[click, LabelsLayerEvent[I]],
       mousedown: Event_[mousedown, LabelsLayerEvent[I]],
       mousemove: Event_[mousemove, LabelsLayerEvent[I]],
@@ -98,32 +93,23 @@ object LabelsLayer {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
+    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
       
-      @scala.inline
-      def setClick(value: Event_[click, LabelsLayerEvent[I]]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+      inline def setClick(value: Event_[click, LabelsLayerEvent[I]]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousedown(value: Event_[mousedown, LabelsLayerEvent[I]]): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
+      inline def setMousedown(value: Event_[mousedown, LabelsLayerEvent[I]]): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMousemove(value: Event_[mousemove, LabelsLayerEvent[I]]): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
+      inline def setMousemove(value: Event_[mousemove, LabelsLayerEvent[I]]): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseout(value: Event_[mouseout, LabelsLayerEvent[I]]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
+      inline def setMouseout(value: Event_[mouseout, LabelsLayerEvent[I]]): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseover(value: Event_[mouseover, LabelsLayerEvent[I]]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
+      inline def setMouseover(value: Event_[mouseover, LabelsLayerEvent[I]]): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseup(value: Event_[mouseup, LabelsLayerEvent[I]]): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
+      inline def setMouseup(value: Event_[mouseup, LabelsLayerEvent[I]]): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchend(value: Event_[touchend, LabelsLayerEvent[I]]): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
+      inline def setTouchend(value: Event_[touchend, LabelsLayerEvent[I]]): Self = StObject.set(x, "touchend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchstart(value: Event_[touchstart, LabelsLayerEvent[I]]): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
+      inline def setTouchstart(value: Event_[touchstart, LabelsLayerEvent[I]]): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,26 +125,20 @@ object LabelsLayer {
   }
   object LabelsLayerEvent {
     
-    @scala.inline
-    def apply[I](data: EventData, lnglat: LngLat, pixel: Pixel, target: I): LabelsLayerEvent[I] = {
+    inline def apply[I](data: EventData, lnglat: LngLat, pixel: Pixel, target: I): LabelsLayerEvent[I] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], lnglat = lnglat.asInstanceOf[js.Any], pixel = pixel.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[LabelsLayerEvent[I]]
     }
     
-    @scala.inline
-    implicit class LabelsLayerEventMutableBuilder[Self <: LabelsLayerEvent[?], I] (val x: Self & LabelsLayerEvent[I]) extends AnyVal {
+    extension [Self <: LabelsLayerEvent[?], I](x: Self & LabelsLayerEvent[I]) {
       
-      @scala.inline
-      def setData(value: EventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: EventData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
+      inline def setLnglat(value: LngLat): Self = StObject.set(x, "lnglat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixel(value: Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
+      inline def setPixel(value: Pixel): Self = StObject.set(x, "pixel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: I): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: I): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -185,38 +165,28 @@ object LabelsLayer {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
       
-      @scala.inline
-      def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
+      inline def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
+      inline def setZoomsUndefined: Self = StObject.set(x, "zooms", js.undefined)
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxIncomingMessageIterator Class */
 @JSGlobal("FAXCOMEXLib.FaxIncomingMessageIterator")
 @js.native
-class FaxIncomingMessageIterator protected ()
+/* private */ class FaxIncomingMessageIterator ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxIncomingMessageIterator {
   
@@ -15,7 +15,7 @@ class FaxIncomingMessageIterator protected ()
   /* CompleteClass */
   override val AtEOF: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxIncomingMessageIterator_typekey")
   var FAXCOMEXLibDotFaxIncomingMessageIterator_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxIncomingMessageIterator = js.native
   

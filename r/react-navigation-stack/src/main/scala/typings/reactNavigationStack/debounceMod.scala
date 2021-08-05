@@ -10,6 +10,5 @@ object debounceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](func: T, duration: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](func: T, duration: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(func.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[T]
 }

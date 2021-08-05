@@ -18,8 +18,7 @@ trait ASPxClientStaticEdit
 }
 object ASPxClientStaticEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Click: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]],
     GetCaption: () => String,
@@ -47,10 +46,8 @@ object ASPxClientStaticEdit {
     __obj.asInstanceOf[ASPxClientStaticEdit]
   }
   
-  @scala.inline
-  implicit class ASPxClientStaticEditMutableBuilder[Self <: ASPxClientStaticEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientStaticEdit](x: Self) {
     
-    @scala.inline
-    def setClick(value: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]]): Self = StObject.set(x, "Click", value.asInstanceOf[js.Any])
+    inline def setClick(value: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]]): Self = StObject.set(x, "Click", value.asInstanceOf[js.Any])
   }
 }

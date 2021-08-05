@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBarType extends StObject
 object MsoBarType {
   
-  @scala.inline
-  def msoBarTypeMenuBar: `1` = 1.asInstanceOf[`1`]
+  inline def msoBarTypeMenuBar: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoBarTypeNormal: `0` = 0.asInstanceOf[`0`]
+  inline def msoBarTypeNormal: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoBarTypePopup: `2` = 2.asInstanceOf[`2`]
+  inline def msoBarTypePopup: `2` = 2.asInstanceOf[`2`]
 }

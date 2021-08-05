@@ -12,9 +12,7 @@ object cMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def abs(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")().asInstanceOf[js.Any]
-    @scala.inline
-    def abs(mixedNumber: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(mixedNumber.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def abs(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")().asInstanceOf[js.Any]
+    inline def abs(mixedNumber: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(mixedNumber.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
 }

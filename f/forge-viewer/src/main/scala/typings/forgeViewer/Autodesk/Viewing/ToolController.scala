@@ -30,8 +30,7 @@ trait ToolController extends StObject {
 }
 object ToolController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activateTool: String => Boolean,
     deactivateTool: String => Boolean,
     deregisterTool: js.Any => Boolean,
@@ -48,40 +47,28 @@ object ToolController {
     __obj.asInstanceOf[ToolController]
   }
   
-  @scala.inline
-  implicit class ToolControllerMutableBuilder[Self <: ToolController] (val x: Self) extends AnyVal {
+  extension [Self <: ToolController](x: Self) {
     
-    @scala.inline
-    def setActivateTool(value: String => Boolean): Self = StObject.set(x, "activateTool", js.Any.fromFunction1(value))
+    inline def setActivateTool(value: String => Boolean): Self = StObject.set(x, "activateTool", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeactivateTool(value: String => Boolean): Self = StObject.set(x, "deactivateTool", js.Any.fromFunction1(value))
+    inline def setDeactivateTool(value: String => Boolean): Self = StObject.set(x, "deactivateTool", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeregisterTool(value: js.Any => Boolean): Self = StObject.set(x, "deregisterTool", js.Any.fromFunction1(value))
+    inline def setDeregisterTool(value: js.Any => Boolean): Self = StObject.set(x, "deregisterTool", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetActiveTool(value: () => ToolInterface): Self = StObject.set(x, "getActiveTool", js.Any.fromFunction0(value))
+    inline def setGetActiveTool(value: () => ToolInterface): Self = StObject.set(x, "getActiveTool", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetActiveToolName(value: () => String): Self = StObject.set(x, "getActiveToolName", js.Any.fromFunction0(value))
+    inline def setGetActiveToolName(value: () => String): Self = StObject.set(x, "getActiveToolName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultTool(value: () => ToolInterface): Self = StObject.set(x, "getDefaultTool", js.Any.fromFunction0(value))
+    inline def setGetDefaultTool(value: () => ToolInterface): Self = StObject.set(x, "getDefaultTool", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsLocked(value: () => Boolean): Self = StObject.set(x, "getIsLocked", js.Any.fromFunction0(value))
+    inline def setGetIsLocked(value: () => Boolean): Self = StObject.set(x, "getIsLocked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTool(value: String => ToolInterface): Self = StObject.set(x, "getTool", js.Any.fromFunction1(value))
+    inline def setGetTool(value: String => ToolInterface): Self = StObject.set(x, "getTool", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetToolNames(value: () => js.Array[String]): Self = StObject.set(x, "getToolNames", js.Any.fromFunction0(value))
+    inline def setGetToolNames(value: () => js.Array[String]): Self = StObject.set(x, "getToolNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRegisterTool(value: js.Any => Boolean): Self = StObject.set(x, "registerTool", js.Any.fromFunction1(value))
+    inline def setRegisterTool(value: js.Any => Boolean): Self = StObject.set(x, "registerTool", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIsLocked(value: Boolean => Boolean): Self = StObject.set(x, "setIsLocked", js.Any.fromFunction1(value))
+    inline def setSetIsLocked(value: Boolean => Boolean): Self = StObject.set(x, "setIsLocked", js.Any.fromFunction1(value))
   }
 }

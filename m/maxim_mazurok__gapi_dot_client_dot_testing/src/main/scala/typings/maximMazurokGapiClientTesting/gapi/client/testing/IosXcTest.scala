@@ -35,43 +35,31 @@ trait IosXcTest extends StObject {
 }
 object IosXcTest {
   
-  @scala.inline
-  def apply(): IosXcTest = {
+  inline def apply(): IosXcTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosXcTest]
   }
   
-  @scala.inline
-  implicit class IosXcTestMutableBuilder[Self <: IosXcTest] (val x: Self) extends AnyVal {
+  extension [Self <: IosXcTest](x: Self) {
     
-    @scala.inline
-    def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
+    inline def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppBundleIdUndefined: Self = StObject.set(x, "appBundleId", js.undefined)
+    inline def setAppBundleIdUndefined: Self = StObject.set(x, "appBundleId", js.undefined)
     
-    @scala.inline
-    def setTestSpecialEntitlements(value: Boolean): Self = StObject.set(x, "testSpecialEntitlements", value.asInstanceOf[js.Any])
+    inline def setTestSpecialEntitlements(value: Boolean): Self = StObject.set(x, "testSpecialEntitlements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestSpecialEntitlementsUndefined: Self = StObject.set(x, "testSpecialEntitlements", js.undefined)
+    inline def setTestSpecialEntitlementsUndefined: Self = StObject.set(x, "testSpecialEntitlements", js.undefined)
     
-    @scala.inline
-    def setTestsZip(value: FileReference): Self = StObject.set(x, "testsZip", value.asInstanceOf[js.Any])
+    inline def setTestsZip(value: FileReference): Self = StObject.set(x, "testsZip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestsZipUndefined: Self = StObject.set(x, "testsZip", js.undefined)
+    inline def setTestsZipUndefined: Self = StObject.set(x, "testsZip", js.undefined)
     
-    @scala.inline
-    def setXcodeVersion(value: String): Self = StObject.set(x, "xcodeVersion", value.asInstanceOf[js.Any])
+    inline def setXcodeVersion(value: String): Self = StObject.set(x, "xcodeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXcodeVersionUndefined: Self = StObject.set(x, "xcodeVersion", js.undefined)
+    inline def setXcodeVersionUndefined: Self = StObject.set(x, "xcodeVersion", js.undefined)
     
-    @scala.inline
-    def setXctestrun(value: FileReference): Self = StObject.set(x, "xctestrun", value.asInstanceOf[js.Any])
+    inline def setXctestrun(value: FileReference): Self = StObject.set(x, "xctestrun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXctestrunUndefined: Self = StObject.set(x, "xctestrun", js.undefined)
+    inline def setXctestrunUndefined: Self = StObject.set(x, "xctestrun", js.undefined)
   }
 }

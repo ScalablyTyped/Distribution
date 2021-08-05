@@ -18,25 +18,19 @@ trait IdentityUserAssignedIdentitiesValue extends StObject {
 }
 object IdentityUserAssignedIdentitiesValue {
   
-  @scala.inline
-  def apply(): IdentityUserAssignedIdentitiesValue = {
+  inline def apply(): IdentityUserAssignedIdentitiesValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentityUserAssignedIdentitiesValue]
   }
   
-  @scala.inline
-  implicit class IdentityUserAssignedIdentitiesValueMutableBuilder[Self <: IdentityUserAssignedIdentitiesValue] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityUserAssignedIdentitiesValue](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+    inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
+    inline def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
   }
 }

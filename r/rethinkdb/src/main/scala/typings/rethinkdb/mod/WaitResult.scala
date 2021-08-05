@@ -10,16 +10,13 @@ trait WaitResult extends StObject {
 }
 object WaitResult {
   
-  @scala.inline
-  def apply(ready: Double): WaitResult = {
+  inline def apply(ready: Double): WaitResult = {
     val __obj = js.Dynamic.literal(ready = ready.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaitResult]
   }
   
-  @scala.inline
-  implicit class WaitResultMutableBuilder[Self <: WaitResult] (val x: Self) extends AnyVal {
+  extension [Self <: WaitResult](x: Self) {
     
-    @scala.inline
-    def setReady(value: Double): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    inline def setReady(value: Double): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
   }
 }

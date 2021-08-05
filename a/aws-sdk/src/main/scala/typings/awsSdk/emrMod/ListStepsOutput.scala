@@ -18,28 +18,21 @@ trait ListStepsOutput extends StObject {
 }
 object ListStepsOutput {
   
-  @scala.inline
-  def apply(): ListStepsOutput = {
+  inline def apply(): ListStepsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStepsOutput]
   }
   
-  @scala.inline
-  implicit class ListStepsOutputMutableBuilder[Self <: ListStepsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStepsOutput](x: Self) {
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setSteps(value: StepSummaryList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: StepSummaryList): Self = StObject.set(x, "Steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "Steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: StepSummary*): Self = StObject.set(x, "Steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: StepSummary*): Self = StObject.set(x, "Steps", js.Array(value :_*))
   }
 }

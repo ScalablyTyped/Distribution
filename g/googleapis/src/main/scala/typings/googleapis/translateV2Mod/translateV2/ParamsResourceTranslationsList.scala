@@ -57,61 +57,43 @@ trait ParamsResourceTranslationsList
 }
 object ParamsResourceTranslationsList {
   
-  @scala.inline
-  def apply(): ParamsResourceTranslationsList = {
+  inline def apply(): ParamsResourceTranslationsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTranslationsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTranslationsListMutableBuilder[Self <: ParamsResourceTranslationsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTranslationsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCid(value: js.Array[String]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: js.Array[String]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+    inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
     
-    @scala.inline
-    def setCidVarargs(value: String*): Self = StObject.set(x, "cid", js.Array(value :_*))
+    inline def setCidVarargs(value: String*): Self = StObject.set(x, "cid", js.Array(value :_*))
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
-    @scala.inline
-    def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
+    inline def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

@@ -78,8 +78,7 @@ trait TimelineTeamData extends StObject {
 }
 object TimelineTeamData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backlog: BacklogLevel,
     fieldReferenceNames: js.Array[String],
     id: String,
@@ -99,64 +98,44 @@ object TimelineTeamData {
     __obj.asInstanceOf[TimelineTeamData]
   }
   
-  @scala.inline
-  implicit class TimelineTeamDataMutableBuilder[Self <: TimelineTeamData] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineTeamData](x: Self) {
     
-    @scala.inline
-    def setBacklog(value: BacklogLevel): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
+    inline def setBacklog(value: BacklogLevel): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldReferenceNames(value: js.Array[String]): Self = StObject.set(x, "fieldReferenceNames", value.asInstanceOf[js.Any])
+    inline def setFieldReferenceNames(value: js.Array[String]): Self = StObject.set(x, "fieldReferenceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldReferenceNamesVarargs(value: String*): Self = StObject.set(x, "fieldReferenceNames", js.Array(value :_*))
+    inline def setFieldReferenceNamesVarargs(value: String*): Self = StObject.set(x, "fieldReferenceNames", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+    inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterations(value: js.Array[TimelineTeamIteration]): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: js.Array[TimelineTeamIteration]): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationsVarargs(value: TimelineTeamIteration*): Self = StObject.set(x, "iterations", js.Array(value :_*))
+    inline def setIterationsVarargs(value: TimelineTeamIteration*): Self = StObject.set(x, "iterations", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByField(value: String): Self = StObject.set(x, "orderByField", value.asInstanceOf[js.Any])
+    inline def setOrderByField(value: String): Self = StObject.set(x, "orderByField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartiallyPagedFieldReferenceNames(value: js.Array[String]): Self = StObject.set(x, "partiallyPagedFieldReferenceNames", value.asInstanceOf[js.Any])
+    inline def setPartiallyPagedFieldReferenceNames(value: js.Array[String]): Self = StObject.set(x, "partiallyPagedFieldReferenceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartiallyPagedFieldReferenceNamesVarargs(value: String*): Self = StObject.set(x, "partiallyPagedFieldReferenceNames", js.Array(value :_*))
+    inline def setPartiallyPagedFieldReferenceNamesVarargs(value: String*): Self = StObject.set(x, "partiallyPagedFieldReferenceNames", js.Array(value :_*))
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: TimelineTeamStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TimelineTeamStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamFieldDefaultValue(value: String): Self = StObject.set(x, "teamFieldDefaultValue", value.asInstanceOf[js.Any])
+    inline def setTeamFieldDefaultValue(value: String): Self = StObject.set(x, "teamFieldDefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamFieldName(value: String): Self = StObject.set(x, "teamFieldName", value.asInstanceOf[js.Any])
+    inline def setTeamFieldName(value: String): Self = StObject.set(x, "teamFieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamFieldValues(value: js.Array[TeamFieldValue]): Self = StObject.set(x, "teamFieldValues", value.asInstanceOf[js.Any])
+    inline def setTeamFieldValues(value: js.Array[TeamFieldValue]): Self = StObject.set(x, "teamFieldValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamFieldValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "teamFieldValues", js.Array(value :_*))
+    inline def setTeamFieldValuesVarargs(value: TeamFieldValue*): Self = StObject.set(x, "teamFieldValues", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkItemTypeColors(value: js.Array[WorkItemColor]): Self = StObject.set(x, "workItemTypeColors", value.asInstanceOf[js.Any])
+    inline def setWorkItemTypeColors(value: js.Array[WorkItemColor]): Self = StObject.set(x, "workItemTypeColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkItemTypeColorsVarargs(value: WorkItemColor*): Self = StObject.set(x, "workItemTypeColors", js.Array(value :_*))
+    inline def setWorkItemTypeColorsVarargs(value: WorkItemColor*): Self = StObject.set(x, "workItemTypeColors", js.Array(value :_*))
   }
 }

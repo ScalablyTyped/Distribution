@@ -44,25 +44,19 @@ trait SchemaGoogleFirestoreAdminV1Field extends StObject {
 }
 object SchemaGoogleFirestoreAdminV1Field {
   
-  @scala.inline
-  def apply(): SchemaGoogleFirestoreAdminV1Field = {
+  inline def apply(): SchemaGoogleFirestoreAdminV1Field = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1Field]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1FieldMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1Field] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFirestoreAdminV1Field](x: Self) {
     
-    @scala.inline
-    def setIndexConfig(value: SchemaGoogleFirestoreAdminV1IndexConfig): Self = StObject.set(x, "indexConfig", value.asInstanceOf[js.Any])
+    inline def setIndexConfig(value: SchemaGoogleFirestoreAdminV1IndexConfig): Self = StObject.set(x, "indexConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexConfigUndefined: Self = StObject.set(x, "indexConfig", js.undefined)
+    inline def setIndexConfigUndefined: Self = StObject.set(x, "indexConfig", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

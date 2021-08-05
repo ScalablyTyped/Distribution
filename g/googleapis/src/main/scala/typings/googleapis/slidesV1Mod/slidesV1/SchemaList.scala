@@ -26,25 +26,19 @@ trait SchemaList extends StObject {
 }
 object SchemaList {
   
-  @scala.inline
-  def apply(): SchemaList = {
+  inline def apply(): SchemaList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaList]
   }
   
-  @scala.inline
-  implicit class SchemaListMutableBuilder[Self <: SchemaList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaList](x: Self) {
     
-    @scala.inline
-    def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
+    inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
+    inline def setListIdUndefined: Self = StObject.set(x, "listId", js.undefined)
     
-    @scala.inline
-    def setNestingLevel(value: StringDictionary[SchemaNestingLevel]): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
+    inline def setNestingLevel(value: StringDictionary[SchemaNestingLevel]): Self = StObject.set(x, "nestingLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
+    inline def setNestingLevelUndefined: Self = StObject.set(x, "nestingLevel", js.undefined)
   }
 }

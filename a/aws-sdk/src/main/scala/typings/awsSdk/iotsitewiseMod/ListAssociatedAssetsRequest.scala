@@ -33,40 +33,29 @@ trait ListAssociatedAssetsRequest extends StObject {
 }
 object ListAssociatedAssetsRequest {
   
-  @scala.inline
-  def apply(assetId: ID): ListAssociatedAssetsRequest = {
+  inline def apply(assetId: ID): ListAssociatedAssetsRequest = {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssociatedAssetsRequest]
   }
   
-  @scala.inline
-  implicit class ListAssociatedAssetsRequestMutableBuilder[Self <: ListAssociatedAssetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssociatedAssetsRequest](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchyId(value: ID): Self = StObject.set(x, "hierarchyId", value.asInstanceOf[js.Any])
+    inline def setHierarchyId(value: ID): Self = StObject.set(x, "hierarchyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchyIdUndefined: Self = StObject.set(x, "hierarchyId", js.undefined)
+    inline def setHierarchyIdUndefined: Self = StObject.set(x, "hierarchyId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setTraversalDirection(value: TraversalDirection): Self = StObject.set(x, "traversalDirection", value.asInstanceOf[js.Any])
+    inline def setTraversalDirection(value: TraversalDirection): Self = StObject.set(x, "traversalDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraversalDirectionUndefined: Self = StObject.set(x, "traversalDirection", js.undefined)
+    inline def setTraversalDirectionUndefined: Self = StObject.set(x, "traversalDirection", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteVirtualMFADeviceRequest extends StObject {
 }
 object DeleteVirtualMFADeviceRequest {
   
-  @scala.inline
-  def apply(SerialNumber: serialNumberType): DeleteVirtualMFADeviceRequest = {
+  inline def apply(SerialNumber: serialNumberType): DeleteVirtualMFADeviceRequest = {
     val __obj = js.Dynamic.literal(SerialNumber = SerialNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVirtualMFADeviceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVirtualMFADeviceRequestMutableBuilder[Self <: DeleteVirtualMFADeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVirtualMFADeviceRequest](x: Self) {
     
-    @scala.inline
-    def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
   }
 }

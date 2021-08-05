@@ -51,55 +51,39 @@ trait IDocumentWidgetFactoryOptions extends StObject {
 }
 object IDocumentWidgetFactoryOptions {
   
-  @scala.inline
-  def apply(fileTypes: js.Array[String], name: String, primaryFileType: String): IDocumentWidgetFactoryOptions = {
+  inline def apply(fileTypes: js.Array[String], name: String, primaryFileType: String): IDocumentWidgetFactoryOptions = {
     val __obj = js.Dynamic.literal(fileTypes = fileTypes.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], primaryFileType = primaryFileType.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDocumentWidgetFactoryOptions]
   }
   
-  @scala.inline
-  implicit class IDocumentWidgetFactoryOptionsMutableBuilder[Self <: IDocumentWidgetFactoryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDocumentWidgetFactoryOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultFor(value: js.Array[String]): Self = StObject.set(x, "defaultFor", value.asInstanceOf[js.Any])
+    inline def setDefaultFor(value: js.Array[String]): Self = StObject.set(x, "defaultFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultForUndefined: Self = StObject.set(x, "defaultFor", js.undefined)
+    inline def setDefaultForUndefined: Self = StObject.set(x, "defaultFor", js.undefined)
     
-    @scala.inline
-    def setDefaultForVarargs(value: String*): Self = StObject.set(x, "defaultFor", js.Array(value :_*))
+    inline def setDefaultForVarargs(value: String*): Self = StObject.set(x, "defaultFor", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultRendered(value: js.Array[String]): Self = StObject.set(x, "defaultRendered", value.asInstanceOf[js.Any])
+    inline def setDefaultRendered(value: js.Array[String]): Self = StObject.set(x, "defaultRendered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRenderedUndefined: Self = StObject.set(x, "defaultRendered", js.undefined)
+    inline def setDefaultRenderedUndefined: Self = StObject.set(x, "defaultRendered", js.undefined)
     
-    @scala.inline
-    def setDefaultRenderedVarargs(value: String*): Self = StObject.set(x, "defaultRendered", js.Array(value :_*))
+    inline def setDefaultRenderedVarargs(value: String*): Self = StObject.set(x, "defaultRendered", js.Array(value :_*))
     
-    @scala.inline
-    def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
+    inline def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
+    inline def setFileTypesVarargs(value: String*): Self = StObject.set(x, "fileTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
+    inline def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryFileType(value: String): Self = StObject.set(x, "primaryFileType", value.asInstanceOf[js.Any])
+    inline def setPrimaryFileType(value: String): Self = StObject.set(x, "primaryFileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarFactory(value: /* widget */ js.UndefOr[IRenderer] => js.Array[IToolbarItem]): Self = StObject.set(x, "toolbarFactory", js.Any.fromFunction1(value))
+    inline def setToolbarFactory(value: /* widget */ js.UndefOr[IRenderer] => js.Array[IToolbarItem]): Self = StObject.set(x, "toolbarFactory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToolbarFactoryUndefined: Self = StObject.set(x, "toolbarFactory", js.undefined)
+    inline def setToolbarFactoryUndefined: Self = StObject.set(x, "toolbarFactory", js.undefined)
   }
 }

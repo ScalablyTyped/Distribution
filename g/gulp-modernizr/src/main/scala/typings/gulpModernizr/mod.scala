@@ -10,16 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
-  @scala.inline
-  def apply(file: String): Transform = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[Transform]
-  @scala.inline
-  def apply(file: String, parames: Params): Transform = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], parames.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(file: Unit, parames: Params): Transform = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], parames.asInstanceOf[js.Any])).asInstanceOf[Transform]
-  @scala.inline
-  def apply(parames: Params): Transform = ^.asInstanceOf[js.Dynamic].apply(parames.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  inline def apply(file: String): Transform = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(file: String, parames: Params): Transform = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], parames.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(file: Unit, parames: Params): Transform = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], parames.asInstanceOf[js.Any])).asInstanceOf[Transform]
+  inline def apply(parames: Params): Transform = ^.asInstanceOf[js.Dynamic].apply(parames.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("gulp-modernizr", JSImport.Namespace)
   @js.native
@@ -87,89 +82,62 @@ object mod {
   }
   object Params {
     
-    @scala.inline
-    def apply(): Params = {
+    inline def apply(): Params = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Params]
     }
     
-    @scala.inline
-    implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+    extension [Self <: Params](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCrawl(value: Boolean): Self = StObject.set(x, "crawl", value.asInstanceOf[js.Any])
+      inline def setCrawl(value: Boolean): Self = StObject.set(x, "crawl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrawlUndefined: Self = StObject.set(x, "crawl", js.undefined)
+      inline def setCrawlUndefined: Self = StObject.set(x, "crawl", js.undefined)
       
-      @scala.inline
-      def setCustomTests(value: js.Array[String]): Self = StObject.set(x, "customTests", value.asInstanceOf[js.Any])
+      inline def setCustomTests(value: js.Array[String]): Self = StObject.set(x, "customTests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomTestsUndefined: Self = StObject.set(x, "customTests", js.undefined)
+      inline def setCustomTestsUndefined: Self = StObject.set(x, "customTests", js.undefined)
       
-      @scala.inline
-      def setCustomTestsVarargs(value: String*): Self = StObject.set(x, "customTests", js.Array(value :_*))
+      inline def setCustomTestsVarargs(value: String*): Self = StObject.set(x, "customTests", js.Array(value :_*))
       
-      @scala.inline
-      def setDest(value: String | `false`): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String | `false`): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+      inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
-      @scala.inline
-      def setDevFile(value: String | `false`): Self = StObject.set(x, "devFile", value.asInstanceOf[js.Any])
+      inline def setDevFile(value: String | `false`): Self = StObject.set(x, "devFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevFileUndefined: Self = StObject.set(x, "devFile", js.undefined)
+      inline def setDevFileUndefined: Self = StObject.set(x, "devFile", js.undefined)
       
-      @scala.inline
-      def setExcludeTests(value: js.Array[String]): Self = StObject.set(x, "excludeTests", value.asInstanceOf[js.Any])
+      inline def setExcludeTests(value: js.Array[String]): Self = StObject.set(x, "excludeTests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeTestsUndefined: Self = StObject.set(x, "excludeTests", js.undefined)
+      inline def setExcludeTestsUndefined: Self = StObject.set(x, "excludeTests", js.undefined)
       
-      @scala.inline
-      def setExcludeTestsVarargs(value: String*): Self = StObject.set(x, "excludeTests", js.Array(value :_*))
+      inline def setExcludeTestsVarargs(value: String*): Self = StObject.set(x, "excludeTests", js.Array(value :_*))
       
-      @scala.inline
-      def setFiles(value: Src): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: Src): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setOptions(value: ClassPrefix): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ClassPrefix): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setTests(value: js.Array[String]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+      inline def setTests(value: js.Array[String]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
+      inline def setTestsUndefined: Self = StObject.set(x, "tests", js.undefined)
       
-      @scala.inline
-      def setTestsVarargs(value: String*): Self = StObject.set(x, "tests", js.Array(value :_*))
+      inline def setTestsVarargs(value: String*): Self = StObject.set(x, "tests", js.Array(value :_*))
       
-      @scala.inline
-      def setUglify(value: Boolean): Self = StObject.set(x, "uglify", value.asInstanceOf[js.Any])
+      inline def setUglify(value: Boolean): Self = StObject.set(x, "uglify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUglifyUndefined: Self = StObject.set(x, "uglify", js.undefined)
+      inline def setUglifyUndefined: Self = StObject.set(x, "uglify", js.undefined)
       
-      @scala.inline
-      def setUseBuffers(value: Boolean): Self = StObject.set(x, "useBuffers", value.asInstanceOf[js.Any])
+      inline def setUseBuffers(value: Boolean): Self = StObject.set(x, "useBuffers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBuffersUndefined: Self = StObject.set(x, "useBuffers", js.undefined)
+      inline def setUseBuffersUndefined: Self = StObject.set(x, "useBuffers", js.undefined)
     }
   }
 }

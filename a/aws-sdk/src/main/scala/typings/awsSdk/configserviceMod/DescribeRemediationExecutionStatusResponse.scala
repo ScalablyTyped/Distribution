@@ -18,28 +18,21 @@ trait DescribeRemediationExecutionStatusResponse extends StObject {
 }
 object DescribeRemediationExecutionStatusResponse {
   
-  @scala.inline
-  def apply(): DescribeRemediationExecutionStatusResponse = {
+  inline def apply(): DescribeRemediationExecutionStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRemediationExecutionStatusResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRemediationExecutionStatusResponseMutableBuilder[Self <: DescribeRemediationExecutionStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRemediationExecutionStatusResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRemediationExecutionStatuses(value: RemediationExecutionStatuses): Self = StObject.set(x, "RemediationExecutionStatuses", value.asInstanceOf[js.Any])
+    inline def setRemediationExecutionStatuses(value: RemediationExecutionStatuses): Self = StObject.set(x, "RemediationExecutionStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemediationExecutionStatusesUndefined: Self = StObject.set(x, "RemediationExecutionStatuses", js.undefined)
+    inline def setRemediationExecutionStatusesUndefined: Self = StObject.set(x, "RemediationExecutionStatuses", js.undefined)
     
-    @scala.inline
-    def setRemediationExecutionStatusesVarargs(value: RemediationExecutionStatus*): Self = StObject.set(x, "RemediationExecutionStatuses", js.Array(value :_*))
+    inline def setRemediationExecutionStatusesVarargs(value: RemediationExecutionStatus*): Self = StObject.set(x, "RemediationExecutionStatuses", js.Array(value :_*))
   }
 }

@@ -12,14 +12,12 @@ object expoSplashScreenWebMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def hideAsync(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAsync")().asInstanceOf[Boolean]
+    inline def hideAsync(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hideAsync")().asInstanceOf[Boolean]
     
     @JSImport("expo-splash-screen/build/ExpoSplashScreen.web", "default.name")
     @js.native
     val name: String = js.native
     
-    @scala.inline
-    def preventAutoHideAsync(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("preventAutoHideAsync")().asInstanceOf[Boolean]
+    inline def preventAutoHideAsync(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("preventAutoHideAsync")().asInstanceOf[Boolean]
   }
 }

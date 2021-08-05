@@ -48,8 +48,7 @@ trait CreateQuantumTaskRequest extends StObject {
 }
 object CreateQuantumTaskRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: JsonValue,
     clientToken: String64,
     deviceArn: DeviceArn,
@@ -61,37 +60,26 @@ object CreateQuantumTaskRequest {
     __obj.asInstanceOf[CreateQuantumTaskRequest]
   }
   
-  @scala.inline
-  implicit class CreateQuantumTaskRequestMutableBuilder[Self <: CreateQuantumTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateQuantumTaskRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: JsonValue): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: JsonValue): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: String64): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String64): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceParameters(value: CreateQuantumTaskRequestDeviceParametersString): Self = StObject.set(x, "deviceParameters", value.asInstanceOf[js.Any])
+    inline def setDeviceParameters(value: CreateQuantumTaskRequestDeviceParametersString): Self = StObject.set(x, "deviceParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceParametersUndefined: Self = StObject.set(x, "deviceParameters", js.undefined)
+    inline def setDeviceParametersUndefined: Self = StObject.set(x, "deviceParameters", js.undefined)
     
-    @scala.inline
-    def setOutputS3Bucket(value: CreateQuantumTaskRequestOutputS3BucketString): Self = StObject.set(x, "outputS3Bucket", value.asInstanceOf[js.Any])
+    inline def setOutputS3Bucket(value: CreateQuantumTaskRequestOutputS3BucketString): Self = StObject.set(x, "outputS3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3KeyPrefix(value: CreateQuantumTaskRequestOutputS3KeyPrefixString): Self = StObject.set(x, "outputS3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputS3KeyPrefix(value: CreateQuantumTaskRequestOutputS3KeyPrefixString): Self = StObject.set(x, "outputS3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShots(value: CreateQuantumTaskRequestShotsLong): Self = StObject.set(x, "shots", value.asInstanceOf[js.Any])
+    inline def setShots(value: CreateQuantumTaskRequestShotsLong): Self = StObject.set(x, "shots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

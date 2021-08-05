@@ -26,19 +26,15 @@ trait Manager extends StObject {
 }
 object Manager {
   
-  @scala.inline
-  def apply(enable: Boolean, manager: memory | redis): Manager = {
+  inline def apply(enable: Boolean, manager: memory | redis): Manager = {
     val __obj = js.Dynamic.literal(enable = enable.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any])
     __obj.asInstanceOf[Manager]
   }
   
-  @scala.inline
-  implicit class ManagerMutableBuilder[Self <: Manager] (val x: Self) extends AnyVal {
+  extension [Self <: Manager](x: Self) {
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManager(value: memory | redis): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+    inline def setManager(value: memory | redis): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
   }
 }

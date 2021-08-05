@@ -53,8 +53,7 @@ trait WindowEvent
 }
 object WindowEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BottomInset: Double,
     Height: Double,
     LeftInset: Double,
@@ -69,31 +68,22 @@ object WindowEvent {
     __obj.asInstanceOf[WindowEvent]
   }
   
-  @scala.inline
-  implicit class WindowEventMutableBuilder[Self <: WindowEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowEvent](x: Self) {
     
-    @scala.inline
-    def setBottomInset(value: Double): Self = StObject.set(x, "BottomInset", value.asInstanceOf[js.Any])
+    inline def setBottomInset(value: Double): Self = StObject.set(x, "BottomInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftInset(value: Double): Self = StObject.set(x, "LeftInset", value.asInstanceOf[js.Any])
+    inline def setLeftInset(value: Double): Self = StObject.set(x, "LeftInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightInset(value: Double): Self = StObject.set(x, "RightInset", value.asInstanceOf[js.Any])
+    inline def setRightInset(value: Double): Self = StObject.set(x, "RightInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopInset(value: Double): Self = StObject.set(x, "TopInset", value.asInstanceOf[js.Any])
+    inline def setTopInset(value: Double): Self = StObject.set(x, "TopInset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
   }
 }

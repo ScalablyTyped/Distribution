@@ -14,31 +14,23 @@ trait SocialSharingW3CData extends StObject {
 }
 object SocialSharingW3CData {
   
-  @scala.inline
-  def apply(): SocialSharingW3CData = {
+  inline def apply(): SocialSharingW3CData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SocialSharingW3CData]
   }
   
-  @scala.inline
-  implicit class SocialSharingW3CDataMutableBuilder[Self <: SocialSharingW3CData] (val x: Self) extends AnyVal {
+  extension [Self <: SocialSharingW3CData](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

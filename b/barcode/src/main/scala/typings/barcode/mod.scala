@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(`type`: String, options: BarcodeOptions): BarcodeResult = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BarcodeResult]
+  inline def apply(`type`: String, options: BarcodeOptions): BarcodeResult = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BarcodeResult]
   
   @JSImport("barcode", JSImport.Namespace)
   @js.native
@@ -25,23 +24,18 @@ object mod {
   }
   object BarcodeOptions {
     
-    @scala.inline
-    def apply(data: String | Double, height: Double, width: Double): BarcodeOptions = {
+    inline def apply(data: String | Double, height: Double, width: Double): BarcodeOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[BarcodeOptions]
     }
     
-    @scala.inline
-    implicit class BarcodeOptionsMutableBuilder[Self <: BarcodeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BarcodeOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: String | Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,8 +49,7 @@ object mod {
   }
   object BarcodeResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getBase64: js.Function2[/* err */ ErrnoException, /* base64String */ String, Unit] => Unit,
       getStream: js.Function2[/* err */ ErrnoException, /* stream */ ReadableStream, Unit] => Unit,
       saveImage: (String, js.Function1[/* err */ ErrnoException, Unit]) => Unit
@@ -65,17 +58,13 @@ object mod {
       __obj.asInstanceOf[BarcodeResult]
     }
     
-    @scala.inline
-    implicit class BarcodeResultMutableBuilder[Self <: BarcodeResult] (val x: Self) extends AnyVal {
+    extension [Self <: BarcodeResult](x: Self) {
       
-      @scala.inline
-      def setGetBase64(value: js.Function2[/* err */ ErrnoException, /* base64String */ String, Unit] => Unit): Self = StObject.set(x, "getBase64", js.Any.fromFunction1(value))
+      inline def setGetBase64(value: js.Function2[/* err */ ErrnoException, /* base64String */ String, Unit] => Unit): Self = StObject.set(x, "getBase64", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStream(value: js.Function2[/* err */ ErrnoException, /* stream */ ReadableStream, Unit] => Unit): Self = StObject.set(x, "getStream", js.Any.fromFunction1(value))
+      inline def setGetStream(value: js.Function2[/* err */ ErrnoException, /* stream */ ReadableStream, Unit] => Unit): Self = StObject.set(x, "getStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSaveImage(value: (String, js.Function1[/* err */ ErrnoException, Unit]) => Unit): Self = StObject.set(x, "saveImage", js.Any.fromFunction2(value))
+      inline def setSaveImage(value: (String, js.Function1[/* err */ ErrnoException, Unit]) => Unit): Self = StObject.set(x, "saveImage", js.Any.fromFunction2(value))
     }
   }
 }

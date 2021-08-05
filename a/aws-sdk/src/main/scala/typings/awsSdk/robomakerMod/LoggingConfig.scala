@@ -13,16 +13,13 @@ trait LoggingConfig extends StObject {
 }
 object LoggingConfig {
   
-  @scala.inline
-  def apply(recordAllRosTopics: BoxedBoolean): LoggingConfig = {
+  inline def apply(recordAllRosTopics: BoxedBoolean): LoggingConfig = {
     val __obj = js.Dynamic.literal(recordAllRosTopics = recordAllRosTopics.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggingConfig]
   }
   
-  @scala.inline
-  implicit class LoggingConfigMutableBuilder[Self <: LoggingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoggingConfig](x: Self) {
     
-    @scala.inline
-    def setRecordAllRosTopics(value: BoxedBoolean): Self = StObject.set(x, "recordAllRosTopics", value.asInstanceOf[js.Any])
+    inline def setRecordAllRosTopics(value: BoxedBoolean): Self = StObject.set(x, "recordAllRosTopics", value.asInstanceOf[js.Any])
   }
 }

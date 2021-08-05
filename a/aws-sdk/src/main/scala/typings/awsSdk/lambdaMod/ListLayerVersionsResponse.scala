@@ -18,28 +18,21 @@ trait ListLayerVersionsResponse extends StObject {
 }
 object ListLayerVersionsResponse {
   
-  @scala.inline
-  def apply(): ListLayerVersionsResponse = {
+  inline def apply(): ListLayerVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLayerVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListLayerVersionsResponseMutableBuilder[Self <: ListLayerVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListLayerVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setLayerVersions(value: LayerVersionsList): Self = StObject.set(x, "LayerVersions", value.asInstanceOf[js.Any])
+    inline def setLayerVersions(value: LayerVersionsList): Self = StObject.set(x, "LayerVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerVersionsUndefined: Self = StObject.set(x, "LayerVersions", js.undefined)
+    inline def setLayerVersionsUndefined: Self = StObject.set(x, "LayerVersions", js.undefined)
     
-    @scala.inline
-    def setLayerVersionsVarargs(value: LayerVersionsListItem*): Self = StObject.set(x, "LayerVersions", js.Array(value :_*))
+    inline def setLayerVersionsVarargs(value: LayerVersionsListItem*): Self = StObject.set(x, "LayerVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

@@ -33,79 +33,55 @@ trait BackgroundColor extends StObject {
 }
 object BackgroundColor {
   
-  @scala.inline
-  def apply(): BackgroundColor = {
+  inline def apply(): BackgroundColor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundColor]
   }
   
-  @scala.inline
-  implicit class BackgroundColorMutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColor](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBackgroundImage(value: String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+    inline def setBackgroundImage(value: String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+    inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
-    @scala.inline
-    def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
+    inline def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundOpacityUndefined: Self = StObject.set(x, "backgroundOpacity", js.undefined)
+    inline def setBackgroundOpacityUndefined: Self = StObject.set(x, "backgroundOpacity", js.undefined)
     
-    @scala.inline
-    def setBackgroundPosition(value: String): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+    inline def setBackgroundPosition(value: String): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
+    inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
-    @scala.inline
-    def setBackgroundRepeat(value: String): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
+    inline def setBackgroundRepeat(value: String): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
+    inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
     
-    @scala.inline
-    def setBackgroundSize(value: String): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
+    inline def setBackgroundSize(value: String): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
+    inline def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
+    inline def setScaleRatio(value: Double): Self = StObject.set(x, "scaleRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
+    inline def setScaleRatioUndefined: Self = StObject.set(x, "scaleRatio", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: /* options */ CurrentSlide => ReactNode): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplate(value: /* options */ CurrentSlide => ReactNode): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
-    @scala.inline
-    def setTransitionEffect(value: TransitionEffect): Self = StObject.set(x, "transitionEffect", value.asInstanceOf[js.Any])
+    inline def setTransitionEffect(value: TransitionEffect): Self = StObject.set(x, "transitionEffect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionEffectUndefined: Self = StObject.set(x, "transitionEffect", js.undefined)
+    inline def setTransitionEffectUndefined: Self = StObject.set(x, "transitionEffect", js.undefined)
   }
 }

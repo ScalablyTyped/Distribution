@@ -45,28 +45,21 @@ trait autosizeAutosizeTypeAutoS extends StObject {
 }
 object autosizeAutosizeTypeAutoS {
   
-  @scala.inline
-  def apply(autosize: AutosizeType | AutoSizeParams): autosizeAutosizeTypeAutoS = {
+  inline def apply(autosize: AutosizeType | AutoSizeParams): autosizeAutosizeTypeAutoS = {
     val __obj = js.Dynamic.literal(autosize = autosize.asInstanceOf[js.Any])
     __obj.asInstanceOf[autosizeAutosizeTypeAutoS]
   }
   
-  @scala.inline
-  implicit class autosizeAutosizeTypeAutoSMutableBuilder[Self <: autosizeAutosizeTypeAutoS] (val x: Self) extends AnyVal {
+  extension [Self <: autosizeAutosizeTypeAutoS](x: Self) {
     
-    @scala.inline
-    def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
+    inline def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | container | typings.vegaLite.specBaseMod.Step): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

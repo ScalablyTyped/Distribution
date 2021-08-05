@@ -23,25 +23,19 @@ trait ConfirmProductInstanceRequest extends StObject {
 }
 object ConfirmProductInstanceRequest {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId, ProductCode: String): ConfirmProductInstanceRequest = {
+  inline def apply(InstanceId: InstanceId, ProductCode: String): ConfirmProductInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any], ProductCode = ProductCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfirmProductInstanceRequest]
   }
   
-  @scala.inline
-  implicit class ConfirmProductInstanceRequestMutableBuilder[Self <: ConfirmProductInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ConfirmProductInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCode(value: String): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
+    inline def setProductCode(value: String): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
   }
 }

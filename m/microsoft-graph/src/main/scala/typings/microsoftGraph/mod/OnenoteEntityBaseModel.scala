@@ -13,22 +13,17 @@ trait OnenoteEntityBaseModel
 }
 object OnenoteEntityBaseModel {
   
-  @scala.inline
-  def apply(): OnenoteEntityBaseModel = {
+  inline def apply(): OnenoteEntityBaseModel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenoteEntityBaseModel]
   }
   
-  @scala.inline
-  implicit class OnenoteEntityBaseModelMutableBuilder[Self <: OnenoteEntityBaseModel] (val x: Self) extends AnyVal {
+  extension [Self <: OnenoteEntityBaseModel](x: Self) {
     
-    @scala.inline
-    def setSelf(value: NullableOption[String]): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: NullableOption[String]): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfNull: Self = StObject.set(x, "self", null)
+    inline def setSelfNull: Self = StObject.set(x, "self", null)
     
-    @scala.inline
-    def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
+    inline def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
   }
 }

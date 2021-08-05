@@ -19,16 +19,13 @@ trait ValueSansProvider extends StObject {
 }
 object ValueSansProvider {
   
-  @scala.inline
-  def apply(useValue: js.Any): ValueSansProvider = {
+  inline def apply(useValue: js.Any): ValueSansProvider = {
     val __obj = js.Dynamic.literal(useValue = useValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSansProvider]
   }
   
-  @scala.inline
-  implicit class ValueSansProviderMutableBuilder[Self <: ValueSansProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ValueSansProvider](x: Self) {
     
-    @scala.inline
-    def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
+    inline def setUseValue(value: js.Any): Self = StObject.set(x, "useValue", value.asInstanceOf[js.Any])
   }
 }

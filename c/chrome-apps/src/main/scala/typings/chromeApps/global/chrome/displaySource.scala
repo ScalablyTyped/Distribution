@@ -46,14 +46,12 @@ object displaySource {
     @JSGlobal("chrome.displaySource.AuthenticationMethod.PBC")
     @js.native
     def PBC: typings.chromeApps.chromeAppsStrings.PBC = js.native
-    @scala.inline
-    def PBC_=(x: PBC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PBC")(x.asInstanceOf[js.Any])
+    inline def PBC_=(x: PBC): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PBC")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.displaySource.AuthenticationMethod.PIN")
     @js.native
     def PIN: typings.chromeApps.chromeAppsStrings.PIN = js.native
-    @scala.inline
-    def PIN_=(x: PIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PIN")(x.asInstanceOf[js.Any])
+    inline def PIN_=(x: PIN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PIN")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -86,32 +84,27 @@ object displaySource {
     @JSGlobal("chrome.displaySource.ErrorType.CAPABILITIES_NEGOTIATION_ERROR")
     @js.native
     def CAPABILITIES_NEGOTIATION_ERROR: capabilities_negotiation_error_ = js.native
-    @scala.inline
-    def CAPABILITIES_NEGOTIATION_ERROR_=(x: capabilities_negotiation_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPABILITIES_NEGOTIATION_ERROR")(x.asInstanceOf[js.Any])
+    inline def CAPABILITIES_NEGOTIATION_ERROR_=(x: capabilities_negotiation_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CAPABILITIES_NEGOTIATION_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.displaySource.ErrorType.CONNECTION_ERROR")
     @js.native
     def CONNECTION_ERROR: connection_error_ = js.native
-    @scala.inline
-    def CONNECTION_ERROR_=(x: connection_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_ERROR")(x.asInstanceOf[js.Any])
+    inline def CONNECTION_ERROR_=(x: connection_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTION_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.displaySource.ErrorType.MEDIA_PIPELINE_ERROR")
     @js.native
     def MEDIA_PIPELINE_ERROR: media_pipeline_error_ = js.native
-    @scala.inline
-    def MEDIA_PIPELINE_ERROR_=(x: media_pipeline_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_PIPELINE_ERROR")(x.asInstanceOf[js.Any])
+    inline def MEDIA_PIPELINE_ERROR_=(x: media_pipeline_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_PIPELINE_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.displaySource.ErrorType.TIMEOUT_ERROR")
     @js.native
     def TIMEOUT_ERROR: timeout_error_ = js.native
-    @scala.inline
-    def TIMEOUT_ERROR_=(x: timeout_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_ERROR")(x.asInstanceOf[js.Any])
+    inline def TIMEOUT_ERROR_=(x: timeout_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TIMEOUT_ERROR")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.displaySource.ErrorType.UNKNOWN_ERROR")
     @js.native
     def UNKNOWN_ERROR: unknown_error_ = js.native
-    @scala.inline
-    def UNKNOWN_ERROR_=(x: unknown_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
+    inline def UNKNOWN_ERROR_=(x: unknown_error_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UNKNOWN_ERROR")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -135,20 +128,17 @@ object displaySource {
     @JSGlobal("chrome.displaySource.SinkState.CONNECTED")
     @js.native
     def CONNECTED: Connected_ = js.native
-    @scala.inline
-    def CONNECTED_=(x: Connected_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTED")(x.asInstanceOf[js.Any])
+    inline def CONNECTED_=(x: Connected_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.displaySource.SinkState.CONNECTING")
     @js.native
     def CONNECTING: Connecting_ = js.native
-    @scala.inline
-    def CONNECTING_=(x: Connecting_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
+    inline def CONNECTING_=(x: Connecting_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECTING")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.displaySource.SinkState.DISCONNECTED")
     @js.native
     def DISCONNECTED: Disconnected_ = js.native
-    @scala.inline
-    def DISCONNECTED_=(x: Disconnected_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCONNECTED")(x.asInstanceOf[js.Any])
+    inline def DISCONNECTED_=(x: Disconnected_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISCONNECTED")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("chrome.displaySource.getAvailableSinks")

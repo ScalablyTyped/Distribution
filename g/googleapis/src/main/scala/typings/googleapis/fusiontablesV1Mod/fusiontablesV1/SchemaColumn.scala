@@ -50,55 +50,39 @@ trait SchemaColumn extends StObject {
 }
 object SchemaColumn {
   
-  @scala.inline
-  def apply(): SchemaColumn = {
+  inline def apply(): SchemaColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaColumn]
   }
   
-  @scala.inline
-  implicit class SchemaColumnMutableBuilder[Self <: SchemaColumn] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaColumn](x: Self) {
     
-    @scala.inline
-    def setBaseColumn(value: ColumnId): Self = StObject.set(x, "baseColumn", value.asInstanceOf[js.Any])
+    inline def setBaseColumn(value: ColumnId): Self = StObject.set(x, "baseColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseColumnUndefined: Self = StObject.set(x, "baseColumn", js.undefined)
+    inline def setBaseColumnUndefined: Self = StObject.set(x, "baseColumn", js.undefined)
     
-    @scala.inline
-    def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
+    inline def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
+    inline def setColumnIdUndefined: Self = StObject.set(x, "columnId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setGraph_predicate(value: String): Self = StObject.set(x, "graph_predicate", value.asInstanceOf[js.Any])
+    inline def setGraph_predicate(value: String): Self = StObject.set(x, "graph_predicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraph_predicateUndefined: Self = StObject.set(x, "graph_predicate", js.undefined)
+    inline def setGraph_predicateUndefined: Self = StObject.set(x, "graph_predicate", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

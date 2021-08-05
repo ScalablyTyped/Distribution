@@ -12,8 +12,7 @@ trait ChangeFloatingObjectAlignmentPositionCommand
      with ChangeFloatingObjectPropertyCommandBase[FloatingObjectAlignmentPositionSettings]
 object ChangeFloatingObjectAlignmentPositionCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: FloatingObjectAlignmentPositionSettings => Boolean,
     getState: () => CommandState[FloatingObjectAlignmentPositionSettings]
   ): ChangeFloatingObjectAlignmentPositionCommand = {

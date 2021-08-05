@@ -33,40 +33,29 @@ trait ListFindingsRequest extends StObject {
 }
 object ListFindingsRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId): ListFindingsRequest = {
+  inline def apply(DetectorId: DetectorId): ListFindingsRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFindingsRequest]
   }
   
-  @scala.inline
-  implicit class ListFindingsRequestMutableBuilder[Self <: ListFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "FindingCriteria", value.asInstanceOf[js.Any])
+    inline def setFindingCriteria(value: FindingCriteria): Self = StObject.set(x, "FindingCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingCriteriaUndefined: Self = StObject.set(x, "FindingCriteria", js.undefined)
+    inline def setFindingCriteriaUndefined: Self = StObject.set(x, "FindingCriteria", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSortCriteria(value: SortCriteria): Self = StObject.set(x, "SortCriteria", value.asInstanceOf[js.Any])
+    inline def setSortCriteria(value: SortCriteria): Self = StObject.set(x, "SortCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCriteriaUndefined: Self = StObject.set(x, "SortCriteria", js.undefined)
+    inline def setSortCriteriaUndefined: Self = StObject.set(x, "SortCriteria", js.undefined)
   }
 }

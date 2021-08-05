@@ -17,16 +17,13 @@ trait Placement extends StObject {
 }
 object Placement {
   
-  @scala.inline
-  def apply($placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Placement = {
+  inline def apply($placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Placement = {
     val __obj = js.Dynamic.literal($placement = $placement.asInstanceOf[js.Any])
     __obj.asInstanceOf[Placement]
   }
   
-  @scala.inline
-  implicit class PlacementMutableBuilder[Self <: Placement] (val x: Self) extends AnyVal {
+  extension [Self <: Placement](x: Self) {
     
-    @scala.inline
-    def set$placement(value: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Self = StObject.set(x, "$placement", value.asInstanceOf[js.Any])
+    inline def set$placement(value: topLeft | topRight | bottomLeft | bottomRight | bottom | top): Self = StObject.set(x, "$placement", value.asInstanceOf[js.Any])
   }
 }

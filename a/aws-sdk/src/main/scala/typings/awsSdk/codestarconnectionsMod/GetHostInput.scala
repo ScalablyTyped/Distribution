@@ -13,16 +13,13 @@ trait GetHostInput extends StObject {
 }
 object GetHostInput {
   
-  @scala.inline
-  def apply(HostArn: HostArn): GetHostInput = {
+  inline def apply(HostArn: HostArn): GetHostInput = {
     val __obj = js.Dynamic.literal(HostArn = HostArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetHostInput]
   }
   
-  @scala.inline
-  implicit class GetHostInputMutableBuilder[Self <: GetHostInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetHostInput](x: Self) {
     
-    @scala.inline
-    def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
+    inline def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
   }
 }

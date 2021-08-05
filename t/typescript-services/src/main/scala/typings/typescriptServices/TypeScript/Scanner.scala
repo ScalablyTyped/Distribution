@@ -8,7 +8,7 @@ trait Scanner
   extends StObject
      with ISlidingWindowSource {
   
-  var _languageVersion: js.Any
+  /* private */ var _languageVersion: js.Any
   
   def absoluteIndex(): Double
   
@@ -29,7 +29,7 @@ trait Scanner
   
   /* private */ def currentCharCode(): js.Any
   
-  var fileName: js.Any
+  /* private */ var fileName: js.Any
   
   /* private */ def getErrorMessageText(text: js.Any): js.Any
   
@@ -121,13 +121,13 @@ trait Scanner
   
   /* private */ def skipEscapeSequence(diagnostics: js.Any): js.Any
   
-  var slidingWindow: js.Any
+  /* private */ var slidingWindow: js.Any
   
   /* private */ def slowScanIdentifierOrKeyword(diagnostics: js.Any): js.Any
   
   def substring(start: Double, end: Double, intern: Boolean): String
   
-  var text: js.Any
+  /* private */ var text: js.Any
   
   /* private */ def tryFastScanIdentifierOrKeyword(firstCharacter: js.Any): js.Any
   
@@ -135,8 +135,7 @@ trait Scanner
 }
 object Scanner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _languageVersion: js.Any,
     absoluteIndex: () => Double,
     advanceAndSetTokenKind: js.Any => js.Any,
@@ -201,181 +200,122 @@ object Scanner {
     __obj.asInstanceOf[Scanner]
   }
   
-  @scala.inline
-  implicit class ScannerMutableBuilder[Self <: Scanner] (val x: Self) extends AnyVal {
+  extension [Self <: Scanner](x: Self) {
     
-    @scala.inline
-    def setAbsoluteIndex(value: () => Double): Self = StObject.set(x, "absoluteIndex", js.Any.fromFunction0(value))
+    inline def setAbsoluteIndex(value: () => Double): Self = StObject.set(x, "absoluteIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAdvanceAndSetTokenKind(value: js.Any => js.Any): Self = StObject.set(x, "advanceAndSetTokenKind", js.Any.fromFunction1(value))
+    inline def setAdvanceAndSetTokenKind(value: js.Any => js.Any): Self = StObject.set(x, "advanceAndSetTokenKind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateIllegalEscapeDiagnostic(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "createIllegalEscapeDiagnostic", js.Any.fromFunction2(value))
+    inline def setCreateIllegalEscapeDiagnostic(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "createIllegalEscapeDiagnostic", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateToken(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "createToken", js.Any.fromFunction8(value))
+    inline def setCreateToken(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "createToken", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setCurrentCharCode(value: () => js.Any): Self = StObject.set(x, "currentCharCode", js.Any.fromFunction0(value))
+    inline def setCurrentCharCode(value: () => js.Any): Self = StObject.set(x, "currentCharCode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFileName(value: js.Any): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: js.Any): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetErrorMessageText(value: js.Any => js.Any): Self = StObject.set(x, "getErrorMessageText", js.Any.fromFunction1(value))
+    inline def setGetErrorMessageText(value: js.Any => js.Any): Self = StObject.set(x, "getErrorMessageText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDotPrefixedNumericLiteral(value: () => js.Any): Self = StObject.set(x, "isDotPrefixedNumericLiteral", js.Any.fromFunction0(value))
+    inline def setIsDotPrefixedNumericLiteral(value: () => js.Any): Self = StObject.set(x, "isDotPrefixedNumericLiteral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsHexNumericLiteral(value: () => js.Any): Self = StObject.set(x, "isHexNumericLiteral", js.Any.fromFunction0(value))
+    inline def setIsHexNumericLiteral(value: () => js.Any): Self = StObject.set(x, "isHexNumericLiteral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsIdentifierPart(value: js.Any => js.Any): Self = StObject.set(x, "isIdentifierPart", js.Any.fromFunction1(value))
+    inline def setIsIdentifierPart(value: js.Any => js.Any): Self = StObject.set(x, "isIdentifierPart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsIdentifierStart(value: js.Any => js.Any): Self = StObject.set(x, "isIdentifierStart", js.Any.fromFunction1(value))
+    inline def setIsIdentifierStart(value: js.Any => js.Any): Self = StObject.set(x, "isIdentifierStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsNewLineCharacter(value: js.Any => js.Any): Self = StObject.set(x, "isNewLineCharacter", js.Any.fromFunction1(value))
+    inline def setIsNewLineCharacter(value: js.Any => js.Any): Self = StObject.set(x, "isNewLineCharacter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsOctalNumericLiteral(value: () => js.Any): Self = StObject.set(x, "isOctalNumericLiteral", js.Any.fromFunction0(value))
+    inline def setIsOctalNumericLiteral(value: () => js.Any): Self = StObject.set(x, "isOctalNumericLiteral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsUnicodeEscape(value: js.Any => js.Any): Self = StObject.set(x, "isUnicodeEscape", js.Any.fromFunction1(value))
+    inline def setIsUnicodeEscape(value: js.Any => js.Any): Self = StObject.set(x, "isUnicodeEscape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLanguageVersion(value: () => LanguageVersion): Self = StObject.set(x, "languageVersion", js.Any.fromFunction0(value))
+    inline def setLanguageVersion(value: () => LanguageVersion): Self = StObject.set(x, "languageVersion", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPeekCharOrUnicodeEscape(value: () => js.Any): Self = StObject.set(x, "peekCharOrUnicodeEscape", js.Any.fromFunction0(value))
+    inline def setPeekCharOrUnicodeEscape(value: () => js.Any): Self = StObject.set(x, "peekCharOrUnicodeEscape", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPeekUnicodeOrHexEscape(value: () => js.Any): Self = StObject.set(x, "peekUnicodeOrHexEscape", js.Any.fromFunction0(value))
+    inline def setPeekUnicodeOrHexEscape(value: () => js.Any): Self = StObject.set(x, "peekUnicodeOrHexEscape", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScan(value: (js.Array[Diagnostic], Boolean) => ISyntaxToken): Self = StObject.set(x, "scan", js.Any.fromFunction2(value))
+    inline def setScan(value: (js.Array[Diagnostic], Boolean) => ISyntaxToken): Self = StObject.set(x, "scan", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScanAmpersandToken(value: () => js.Any): Self = StObject.set(x, "scanAmpersandToken", js.Any.fromFunction0(value))
+    inline def setScanAmpersandToken(value: () => js.Any): Self = StObject.set(x, "scanAmpersandToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanAsteriskToken(value: () => js.Any): Self = StObject.set(x, "scanAsteriskToken", js.Any.fromFunction0(value))
+    inline def setScanAsteriskToken(value: () => js.Any): Self = StObject.set(x, "scanAsteriskToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanBarToken(value: () => js.Any): Self = StObject.set(x, "scanBarToken", js.Any.fromFunction0(value))
+    inline def setScanBarToken(value: () => js.Any): Self = StObject.set(x, "scanBarToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanCaretToken(value: () => js.Any): Self = StObject.set(x, "scanCaretToken", js.Any.fromFunction0(value))
+    inline def setScanCaretToken(value: () => js.Any): Self = StObject.set(x, "scanCaretToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanCharOrUnicodeEscape(value: js.Any => js.Any): Self = StObject.set(x, "scanCharOrUnicodeEscape", js.Any.fromFunction1(value))
+    inline def setScanCharOrUnicodeEscape(value: js.Any => js.Any): Self = StObject.set(x, "scanCharOrUnicodeEscape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanDecimalDigits(value: () => js.Any): Self = StObject.set(x, "scanDecimalDigits", js.Any.fromFunction0(value))
+    inline def setScanDecimalDigits(value: () => js.Any): Self = StObject.set(x, "scanDecimalDigits", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanDecimalNumericLiteral(value: () => js.Any): Self = StObject.set(x, "scanDecimalNumericLiteral", js.Any.fromFunction0(value))
+    inline def setScanDecimalNumericLiteral(value: () => js.Any): Self = StObject.set(x, "scanDecimalNumericLiteral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanDefaultCharacter(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanDefaultCharacter", js.Any.fromFunction2(value))
+    inline def setScanDefaultCharacter(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanDefaultCharacter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScanDotToken(value: js.Any => js.Any): Self = StObject.set(x, "scanDotToken", js.Any.fromFunction1(value))
+    inline def setScanDotToken(value: js.Any => js.Any): Self = StObject.set(x, "scanDotToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanEqualsToken(value: () => js.Any): Self = StObject.set(x, "scanEqualsToken", js.Any.fromFunction0(value))
+    inline def setScanEqualsToken(value: () => js.Any): Self = StObject.set(x, "scanEqualsToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanExclamationToken(value: () => js.Any): Self = StObject.set(x, "scanExclamationToken", js.Any.fromFunction0(value))
+    inline def setScanExclamationToken(value: () => js.Any): Self = StObject.set(x, "scanExclamationToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanHexNumericLiteral(value: () => js.Any): Self = StObject.set(x, "scanHexNumericLiteral", js.Any.fromFunction0(value))
+    inline def setScanHexNumericLiteral(value: () => js.Any): Self = StObject.set(x, "scanHexNumericLiteral", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanLessThanToken(value: () => js.Any): Self = StObject.set(x, "scanLessThanToken", js.Any.fromFunction0(value))
+    inline def setScanLessThanToken(value: () => js.Any): Self = StObject.set(x, "scanLessThanToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanLineTerminatorSequenceLength(value: js.Any => js.Any): Self = StObject.set(x, "scanLineTerminatorSequenceLength", js.Any.fromFunction1(value))
+    inline def setScanLineTerminatorSequenceLength(value: js.Any => js.Any): Self = StObject.set(x, "scanLineTerminatorSequenceLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanLineTerminatorSequenceTrivia(value: js.Any => js.Any): Self = StObject.set(x, "scanLineTerminatorSequenceTrivia", js.Any.fromFunction1(value))
+    inline def setScanLineTerminatorSequenceTrivia(value: js.Any => js.Any): Self = StObject.set(x, "scanLineTerminatorSequenceTrivia", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanMinusToken(value: () => js.Any): Self = StObject.set(x, "scanMinusToken", js.Any.fromFunction0(value))
+    inline def setScanMinusToken(value: () => js.Any): Self = StObject.set(x, "scanMinusToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanMultiLineCommentTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanMultiLineCommentTrivia", js.Any.fromFunction2(value))
+    inline def setScanMultiLineCommentTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanMultiLineCommentTrivia", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScanMultiLineCommentTriviaLength(value: js.Any => js.Any): Self = StObject.set(x, "scanMultiLineCommentTriviaLength", js.Any.fromFunction1(value))
+    inline def setScanMultiLineCommentTriviaLength(value: js.Any => js.Any): Self = StObject.set(x, "scanMultiLineCommentTriviaLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanNumericLiteral(value: js.Any => js.Any): Self = StObject.set(x, "scanNumericLiteral", js.Any.fromFunction1(value))
+    inline def setScanNumericLiteral(value: js.Any => js.Any): Self = StObject.set(x, "scanNumericLiteral", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanOctalNumericLiteral(value: js.Any => js.Any): Self = StObject.set(x, "scanOctalNumericLiteral", js.Any.fromFunction1(value))
+    inline def setScanOctalNumericLiteral(value: js.Any => js.Any): Self = StObject.set(x, "scanOctalNumericLiteral", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanPercentToken(value: () => js.Any): Self = StObject.set(x, "scanPercentToken", js.Any.fromFunction0(value))
+    inline def setScanPercentToken(value: () => js.Any): Self = StObject.set(x, "scanPercentToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanPlusToken(value: () => js.Any): Self = StObject.set(x, "scanPlusToken", js.Any.fromFunction0(value))
+    inline def setScanPlusToken(value: () => js.Any): Self = StObject.set(x, "scanPlusToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanSingleLineCommentTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanSingleLineCommentTrivia", js.Any.fromFunction2(value))
+    inline def setScanSingleLineCommentTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanSingleLineCommentTrivia", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScanSingleLineCommentTriviaLength(value: () => js.Any): Self = StObject.set(x, "scanSingleLineCommentTriviaLength", js.Any.fromFunction0(value))
+    inline def setScanSingleLineCommentTriviaLength(value: () => js.Any): Self = StObject.set(x, "scanSingleLineCommentTriviaLength", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScanSlashToken(value: js.Any => js.Any): Self = StObject.set(x, "scanSlashToken", js.Any.fromFunction1(value))
+    inline def setScanSlashToken(value: js.Any => js.Any): Self = StObject.set(x, "scanSlashToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanStringLiteral(value: js.Any => js.Any): Self = StObject.set(x, "scanStringLiteral", js.Any.fromFunction1(value))
+    inline def setScanStringLiteral(value: js.Any => js.Any): Self = StObject.set(x, "scanStringLiteral", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanSyntaxToken(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanSyntaxToken", js.Any.fromFunction2(value))
+    inline def setScanSyntaxToken(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanSyntaxToken", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScanTrivia(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanTrivia", js.Any.fromFunction3(value))
+    inline def setScanTrivia(value: (js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanTrivia", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setScanTriviaInfo(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanTriviaInfo", js.Any.fromFunction2(value))
+    inline def setScanTriviaInfo(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanTriviaInfo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScanUnicodeOrHexEscape(value: js.Any => js.Any): Self = StObject.set(x, "scanUnicodeOrHexEscape", js.Any.fromFunction1(value))
+    inline def setScanUnicodeOrHexEscape(value: js.Any => js.Any): Self = StObject.set(x, "scanUnicodeOrHexEscape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScanWhitespaceTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanWhitespaceTrivia", js.Any.fromFunction2(value))
+    inline def setScanWhitespaceTrivia(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "scanWhitespaceTrivia", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetAbsoluteIndex(value: Double => Unit): Self = StObject.set(x, "setAbsoluteIndex", js.Any.fromFunction1(value))
+    inline def setSetAbsoluteIndex(value: Double => Unit): Self = StObject.set(x, "setAbsoluteIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSkipEscapeSequence(value: js.Any => js.Any): Self = StObject.set(x, "skipEscapeSequence", js.Any.fromFunction1(value))
+    inline def setSkipEscapeSequence(value: js.Any => js.Any): Self = StObject.set(x, "skipEscapeSequence", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSlidingWindow(value: js.Any): Self = StObject.set(x, "slidingWindow", value.asInstanceOf[js.Any])
+    inline def setSlidingWindow(value: js.Any): Self = StObject.set(x, "slidingWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlowScanIdentifierOrKeyword(value: js.Any => js.Any): Self = StObject.set(x, "slowScanIdentifierOrKeyword", js.Any.fromFunction1(value))
+    inline def setSlowScanIdentifierOrKeyword(value: js.Any => js.Any): Self = StObject.set(x, "slowScanIdentifierOrKeyword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubstring(value: (Double, Double, Boolean) => String): Self = StObject.set(x, "substring", js.Any.fromFunction3(value))
+    inline def setSubstring(value: (Double, Double, Boolean) => String): Self = StObject.set(x, "substring", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryFastScanIdentifierOrKeyword(value: js.Any => js.Any): Self = StObject.set(x, "tryFastScanIdentifierOrKeyword", js.Any.fromFunction1(value))
+    inline def setTryFastScanIdentifierOrKeyword(value: js.Any => js.Any): Self = StObject.set(x, "tryFastScanIdentifierOrKeyword", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTryScanRegularExpressionToken(value: () => js.Any): Self = StObject.set(x, "tryScanRegularExpressionToken", js.Any.fromFunction0(value))
+    inline def setTryScanRegularExpressionToken(value: () => js.Any): Self = StObject.set(x, "tryScanRegularExpressionToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_languageVersion(value: js.Any): Self = StObject.set(x, "_languageVersion", value.asInstanceOf[js.Any])
+    inline def set_languageVersion(value: js.Any): Self = StObject.set(x, "_languageVersion", value.asInstanceOf[js.Any])
   }
 }

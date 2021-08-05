@@ -19,6 +19,5 @@ class PreviewWidget protected ()
 }
 object PreviewWidget {
   
-  @scala.inline
-  def apply: ComponentClass[PreviewWidgetProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("PreviewWidget").asInstanceOf[ComponentClass[PreviewWidgetProps, ComponentState]]
+  inline def apply: ComponentClass[PreviewWidgetProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("PreviewWidget").asInstanceOf[ComponentClass[PreviewWidgetProps, ComponentState]]
 }

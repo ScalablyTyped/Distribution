@@ -16,20 +16,16 @@ trait InlineQueryResultGame
 }
 object InlineQueryResultGame {
   
-  @scala.inline
-  def apply(game_short_name: String, id: String): InlineQueryResultGame = {
+  inline def apply(game_short_name: String, id: String): InlineQueryResultGame = {
     val __obj = js.Dynamic.literal(game_short_name = game_short_name.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("game")
     __obj.asInstanceOf[InlineQueryResultGame]
   }
   
-  @scala.inline
-  implicit class InlineQueryResultGameMutableBuilder[Self <: InlineQueryResultGame] (val x: Self) extends AnyVal {
+  extension [Self <: InlineQueryResultGame](x: Self) {
     
-    @scala.inline
-    def setGame_short_name(value: String): Self = StObject.set(x, "game_short_name", value.asInstanceOf[js.Any])
+    inline def setGame_short_name(value: String): Self = StObject.set(x, "game_short_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: game): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: game): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

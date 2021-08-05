@@ -13,22 +13,17 @@ trait DescribeEventTopicsResult extends StObject {
 }
 object DescribeEventTopicsResult {
   
-  @scala.inline
-  def apply(): DescribeEventTopicsResult = {
+  inline def apply(): DescribeEventTopicsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEventTopicsResult]
   }
   
-  @scala.inline
-  implicit class DescribeEventTopicsResultMutableBuilder[Self <: DescribeEventTopicsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventTopicsResult](x: Self) {
     
-    @scala.inline
-    def setEventTopics(value: EventTopics): Self = StObject.set(x, "EventTopics", value.asInstanceOf[js.Any])
+    inline def setEventTopics(value: EventTopics): Self = StObject.set(x, "EventTopics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTopicsUndefined: Self = StObject.set(x, "EventTopics", js.undefined)
+    inline def setEventTopicsUndefined: Self = StObject.set(x, "EventTopics", js.undefined)
     
-    @scala.inline
-    def setEventTopicsVarargs(value: EventTopic*): Self = StObject.set(x, "EventTopics", js.Array(value :_*))
+    inline def setEventTopicsVarargs(value: EventTopic*): Self = StObject.set(x, "EventTopics", js.Array(value :_*))
   }
 }

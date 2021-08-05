@@ -14,8 +14,7 @@ trait IPositioningContext extends StObject {
 }
 object IPositioningContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fromClientPixels: js.Array[Double] => js.Array[Double],
     getZoom: () => Double,
     toClientPixels: js.Array[Double] => js.Array[Double]
@@ -24,16 +23,12 @@ object IPositioningContext {
     __obj.asInstanceOf[IPositioningContext]
   }
   
-  @scala.inline
-  implicit class IPositioningContextMutableBuilder[Self <: IPositioningContext] (val x: Self) extends AnyVal {
+  extension [Self <: IPositioningContext](x: Self) {
     
-    @scala.inline
-    def setFromClientPixels(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "fromClientPixels", js.Any.fromFunction1(value))
+    inline def setFromClientPixels(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "fromClientPixels", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetZoom(value: () => Double): Self = StObject.set(x, "getZoom", js.Any.fromFunction0(value))
+    inline def setGetZoom(value: () => Double): Self = StObject.set(x, "getZoom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setToClientPixels(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "toClientPixels", js.Any.fromFunction1(value))
+    inline def setToClientPixels(value: js.Array[Double] => js.Array[Double]): Self = StObject.set(x, "toClientPixels", js.Any.fromFunction1(value))
   }
 }

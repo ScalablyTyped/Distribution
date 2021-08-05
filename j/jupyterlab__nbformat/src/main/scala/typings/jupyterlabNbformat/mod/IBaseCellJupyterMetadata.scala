@@ -16,16 +16,13 @@ trait IBaseCellJupyterMetadata
 }
 object IBaseCellJupyterMetadata {
   
-  @scala.inline
-  def apply(source_hidden: Boolean): IBaseCellJupyterMetadata = {
+  inline def apply(source_hidden: Boolean): IBaseCellJupyterMetadata = {
     val __obj = js.Dynamic.literal(source_hidden = source_hidden.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBaseCellJupyterMetadata]
   }
   
-  @scala.inline
-  implicit class IBaseCellJupyterMetadataMutableBuilder[Self <: IBaseCellJupyterMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: IBaseCellJupyterMetadata](x: Self) {
     
-    @scala.inline
-    def setSource_hidden(value: Boolean): Self = StObject.set(x, "source_hidden", value.asInstanceOf[js.Any])
+    inline def setSource_hidden(value: Boolean): Self = StObject.set(x, "source_hidden", value.asInstanceOf[js.Any])
   }
 }

@@ -13,17 +13,14 @@ trait NavigationUriAction
 }
 object NavigationUriAction {
   
-  @scala.inline
-  def apply(uri: String): NavigationUriAction = {
+  inline def apply(uri: String): NavigationUriAction = {
     val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/URI")
     __obj.asInstanceOf[NavigationUriAction]
   }
   
-  @scala.inline
-  implicit class NavigationUriActionMutableBuilder[Self <: NavigationUriAction] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationUriAction](x: Self) {
     
-    @scala.inline
-    def setType(value: NavigationSlashURI): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NavigationSlashURI): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

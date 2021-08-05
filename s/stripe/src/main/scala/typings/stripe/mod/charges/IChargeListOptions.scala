@@ -23,25 +23,19 @@ trait IChargeListOptions
 }
 object IChargeListOptions {
   
-  @scala.inline
-  def apply(): IChargeListOptions = {
+  inline def apply(): IChargeListOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChargeListOptions]
   }
   
-  @scala.inline
-  implicit class IChargeListOptionsMutableBuilder[Self <: IChargeListOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IChargeListOptions](x: Self) {
     
-    @scala.inline
-    def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
+    inline def setCustomer(value: String): Self = StObject.set(x, "customer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
+    inline def setCustomerUndefined: Self = StObject.set(x, "customer", js.undefined)
     
-    @scala.inline
-    def setSource(value: Object): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Object): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

@@ -29,26 +29,20 @@ trait NumberLiteral
 }
 object NumberLiteral {
   
-  @scala.inline
-  def apply(number: String): NumberLiteral = {
+  inline def apply(number: String): NumberLiteral = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], subdenomination = null)
     __obj.updateDynamic("type")("NumberLiteral")
     __obj.asInstanceOf[NumberLiteral]
   }
   
-  @scala.inline
-  implicit class NumberLiteralMutableBuilder[Self <: NumberLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: NumberLiteral](x: Self) {
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdenomination(value: wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years): Self = StObject.set(x, "subdenomination", value.asInstanceOf[js.Any])
+    inline def setSubdenomination(value: wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years): Self = StObject.set(x, "subdenomination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdenominationNull: Self = StObject.set(x, "subdenomination", null)
+    inline def setSubdenominationNull: Self = StObject.set(x, "subdenomination", null)
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

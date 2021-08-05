@@ -41,49 +41,35 @@ trait ProfileNode extends StObject {
 }
 object ProfileNode {
   
-  @scala.inline
-  def apply(callFrame: CallFrame, id: integer): ProfileNode = {
+  inline def apply(callFrame: CallFrame, id: integer): ProfileNode = {
     val __obj = js.Dynamic.literal(callFrame = callFrame.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProfileNode]
   }
   
-  @scala.inline
-  implicit class ProfileNodeMutableBuilder[Self <: ProfileNode] (val x: Self) extends AnyVal {
+  extension [Self <: ProfileNode](x: Self) {
     
-    @scala.inline
-    def setCallFrame(value: CallFrame): Self = StObject.set(x, "callFrame", value.asInstanceOf[js.Any])
+    inline def setCallFrame(value: CallFrame): Self = StObject.set(x, "callFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: js.Array[integer]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[integer]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: integer*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: integer*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setDeoptReason(value: String): Self = StObject.set(x, "deoptReason", value.asInstanceOf[js.Any])
+    inline def setDeoptReason(value: String): Self = StObject.set(x, "deoptReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeoptReasonUndefined: Self = StObject.set(x, "deoptReason", js.undefined)
+    inline def setDeoptReasonUndefined: Self = StObject.set(x, "deoptReason", js.undefined)
     
-    @scala.inline
-    def setHitCount(value: integer): Self = StObject.set(x, "hitCount", value.asInstanceOf[js.Any])
+    inline def setHitCount(value: integer): Self = StObject.set(x, "hitCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHitCountUndefined: Self = StObject.set(x, "hitCount", js.undefined)
+    inline def setHitCountUndefined: Self = StObject.set(x, "hitCount", js.undefined)
     
-    @scala.inline
-    def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionTicks(value: js.Array[PositionTickInfo]): Self = StObject.set(x, "positionTicks", value.asInstanceOf[js.Any])
+    inline def setPositionTicks(value: js.Array[PositionTickInfo]): Self = StObject.set(x, "positionTicks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionTicksUndefined: Self = StObject.set(x, "positionTicks", js.undefined)
+    inline def setPositionTicksUndefined: Self = StObject.set(x, "positionTicks", js.undefined)
     
-    @scala.inline
-    def setPositionTicksVarargs(value: PositionTickInfo*): Self = StObject.set(x, "positionTicks", js.Array(value :_*))
+    inline def setPositionTicksVarargs(value: PositionTickInfo*): Self = StObject.set(x, "positionTicks", js.Array(value :_*))
   }
 }

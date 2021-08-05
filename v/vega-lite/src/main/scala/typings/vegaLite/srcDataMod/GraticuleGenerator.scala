@@ -17,16 +17,13 @@ trait GraticuleGenerator
 }
 object GraticuleGenerator {
   
-  @scala.inline
-  def apply(graticule: `true` | GraticuleParams): GraticuleGenerator = {
+  inline def apply(graticule: `true` | GraticuleParams): GraticuleGenerator = {
     val __obj = js.Dynamic.literal(graticule = graticule.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraticuleGenerator]
   }
   
-  @scala.inline
-  implicit class GraticuleGeneratorMutableBuilder[Self <: GraticuleGenerator] (val x: Self) extends AnyVal {
+  extension [Self <: GraticuleGenerator](x: Self) {
     
-    @scala.inline
-    def setGraticule(value: `true` | GraticuleParams): Self = StObject.set(x, "graticule", value.asInstanceOf[js.Any])
+    inline def setGraticule(value: `true` | GraticuleParams): Self = StObject.set(x, "graticule", value.asInstanceOf[js.Any])
   }
 }

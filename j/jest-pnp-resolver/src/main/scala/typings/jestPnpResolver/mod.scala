@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(request: String, options: JestResolverOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(request.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(request: String, options: JestResolverOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(request.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait JestResolverOptions extends StObject {
     
@@ -23,29 +22,22 @@ object mod {
   }
   object JestResolverOptions {
     
-    @scala.inline
-    def apply(basedir: String, defaultResolver: (String, js.Any) => String): JestResolverOptions = {
+    inline def apply(basedir: String, defaultResolver: (String, js.Any) => String): JestResolverOptions = {
       val __obj = js.Dynamic.literal(basedir = basedir.asInstanceOf[js.Any], defaultResolver = js.Any.fromFunction2(defaultResolver))
       __obj.asInstanceOf[JestResolverOptions]
     }
     
-    @scala.inline
-    implicit class JestResolverOptionsMutableBuilder[Self <: JestResolverOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JestResolverOptions](x: Self) {
       
-      @scala.inline
-      def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
+      inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultResolver(value: (String, js.Any) => String): Self = StObject.set(x, "defaultResolver", js.Any.fromFunction2(value))
+      inline def setDefaultResolver(value: (String, js.Any) => String): Self = StObject.set(x, "defaultResolver", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     }
   }
 }

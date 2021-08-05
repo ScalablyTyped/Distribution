@@ -26,49 +26,35 @@ trait AlertFeedback extends StObject {
 }
 object AlertFeedback {
   
-  @scala.inline
-  def apply(): AlertFeedback = {
+  inline def apply(): AlertFeedback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlertFeedback]
   }
   
-  @scala.inline
-  implicit class AlertFeedbackMutableBuilder[Self <: AlertFeedback] (val x: Self) extends AnyVal {
+  extension [Self <: AlertFeedback](x: Self) {
     
-    @scala.inline
-    def setAlertId(value: String): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
+    inline def setAlertId(value: String): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
+    inline def setAlertIdUndefined: Self = StObject.set(x, "alertId", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFeedbackId(value: String): Self = StObject.set(x, "feedbackId", value.asInstanceOf[js.Any])
+    inline def setFeedbackId(value: String): Self = StObject.set(x, "feedbackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackIdUndefined: Self = StObject.set(x, "feedbackId", js.undefined)
+    inline def setFeedbackIdUndefined: Self = StObject.set(x, "feedbackId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

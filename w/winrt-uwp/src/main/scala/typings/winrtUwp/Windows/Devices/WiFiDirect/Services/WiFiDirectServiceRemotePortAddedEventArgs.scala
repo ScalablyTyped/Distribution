@@ -17,19 +17,15 @@ trait WiFiDirectServiceRemotePortAddedEventArgs extends StObject {
 }
 object WiFiDirectServiceRemotePortAddedEventArgs {
   
-  @scala.inline
-  def apply(endpointPairs: IVectorView[EndpointPair], protocol: WiFiDirectServiceIPProtocol): WiFiDirectServiceRemotePortAddedEventArgs = {
+  inline def apply(endpointPairs: IVectorView[EndpointPair], protocol: WiFiDirectServiceIPProtocol): WiFiDirectServiceRemotePortAddedEventArgs = {
     val __obj = js.Dynamic.literal(endpointPairs = endpointPairs.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiDirectServiceRemotePortAddedEventArgs]
   }
   
-  @scala.inline
-  implicit class WiFiDirectServiceRemotePortAddedEventArgsMutableBuilder[Self <: WiFiDirectServiceRemotePortAddedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectServiceRemotePortAddedEventArgs](x: Self) {
     
-    @scala.inline
-    def setEndpointPairs(value: IVectorView[EndpointPair]): Self = StObject.set(x, "endpointPairs", value.asInstanceOf[js.Any])
+    inline def setEndpointPairs(value: IVectorView[EndpointPair]): Self = StObject.set(x, "endpointPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: WiFiDirectServiceIPProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: WiFiDirectServiceIPProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }
 }

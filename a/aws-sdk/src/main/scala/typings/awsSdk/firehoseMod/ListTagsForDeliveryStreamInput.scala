@@ -23,28 +23,21 @@ trait ListTagsForDeliveryStreamInput extends StObject {
 }
 object ListTagsForDeliveryStreamInput {
   
-  @scala.inline
-  def apply(DeliveryStreamName: DeliveryStreamName): ListTagsForDeliveryStreamInput = {
+  inline def apply(DeliveryStreamName: DeliveryStreamName): ListTagsForDeliveryStreamInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTagsForDeliveryStreamInput]
   }
   
-  @scala.inline
-  implicit class ListTagsForDeliveryStreamInputMutableBuilder[Self <: ListTagsForDeliveryStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForDeliveryStreamInput](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartTagKey(value: TagKey): Self = StObject.set(x, "ExclusiveStartTagKey", value.asInstanceOf[js.Any])
+    inline def setExclusiveStartTagKey(value: TagKey): Self = StObject.set(x, "ExclusiveStartTagKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartTagKeyUndefined: Self = StObject.set(x, "ExclusiveStartTagKey", js.undefined)
+    inline def setExclusiveStartTagKeyUndefined: Self = StObject.set(x, "ExclusiveStartTagKey", js.undefined)
     
-    @scala.inline
-    def setLimit(value: ListTagsForDeliveryStreamInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: ListTagsForDeliveryStreamInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
   }
 }

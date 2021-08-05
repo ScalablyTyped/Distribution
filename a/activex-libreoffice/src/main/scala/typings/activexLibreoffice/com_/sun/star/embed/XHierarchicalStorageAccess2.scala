@@ -31,8 +31,7 @@ trait XHierarchicalStorageAccess2
 }
 object XHierarchicalStorageAccess2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     openEncryptedStreamByHierarchicalName: (String, Double, SeqEquiv[NamedValue]) => XExtendedStorageStream,
     openEncryptedStreamElementByHierarchicalName: (String, Double, String) => XExtendedStorageStream,
     openStreamElementByHierarchicalName: (String, Double) => XExtendedStorageStream,
@@ -42,10 +41,8 @@ object XHierarchicalStorageAccess2 {
     __obj.asInstanceOf[XHierarchicalStorageAccess2]
   }
   
-  @scala.inline
-  implicit class XHierarchicalStorageAccess2MutableBuilder[Self <: XHierarchicalStorageAccess2] (val x: Self) extends AnyVal {
+  extension [Self <: XHierarchicalStorageAccess2](x: Self) {
     
-    @scala.inline
-    def setOpenEncryptedStreamByHierarchicalName(value: (String, Double, SeqEquiv[NamedValue]) => XExtendedStorageStream): Self = StObject.set(x, "openEncryptedStreamByHierarchicalName", js.Any.fromFunction3(value))
+    inline def setOpenEncryptedStreamByHierarchicalName(value: (String, Double, SeqEquiv[NamedValue]) => XExtendedStorageStream): Self = StObject.set(x, "openEncryptedStreamByHierarchicalName", js.Any.fromFunction3(value))
   }
 }

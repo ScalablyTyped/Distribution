@@ -20,7 +20,7 @@ trait BootstrapListBoxItem extends StObject {
   
   val index: Double = js.native
   
-  val instance: js.Any = js.native
+  /* protected */ val instance: js.Any = js.native
   
   val listEditBase: BootstrapListBox | Null = js.native
   

@@ -13,19 +13,15 @@ trait GetObjectRetentionOutput extends StObject {
 }
 object GetObjectRetentionOutput {
   
-  @scala.inline
-  def apply(): GetObjectRetentionOutput = {
+  inline def apply(): GetObjectRetentionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetObjectRetentionOutput]
   }
   
-  @scala.inline
-  implicit class GetObjectRetentionOutputMutableBuilder[Self <: GetObjectRetentionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectRetentionOutput](x: Self) {
     
-    @scala.inline
-    def setRetention(value: ObjectLockRetention): Self = StObject.set(x, "Retention", value.asInstanceOf[js.Any])
+    inline def setRetention(value: ObjectLockRetention): Self = StObject.set(x, "Retention", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionUndefined: Self = StObject.set(x, "Retention", js.undefined)
+    inline def setRetentionUndefined: Self = StObject.set(x, "Retention", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait DocumentLocation extends StObject {
 }
 object DocumentLocation {
   
-  @scala.inline
-  def apply(): DocumentLocation = {
+  inline def apply(): DocumentLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentLocation]
   }
   
-  @scala.inline
-  implicit class DocumentLocationMutableBuilder[Self <: DocumentLocation] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentLocation](x: Self) {
     
-    @scala.inline
-    def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
+    inline def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
+    inline def setS3ObjectUndefined: Self = StObject.set(x, "S3Object", js.undefined)
   }
 }

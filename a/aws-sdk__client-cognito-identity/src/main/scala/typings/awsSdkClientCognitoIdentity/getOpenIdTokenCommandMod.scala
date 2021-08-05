@@ -30,7 +30,7 @@ object getOpenIdTokenCommandMod {
         ] {
     def this(input: GetOpenIdTokenCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -42,7 +42,7 @@ object getOpenIdTokenCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetOpenIdTokenCommandInput, GetOpenIdTokenCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type GetOpenIdTokenCommandInput = GetOpenIdTokenInput
@@ -54,8 +54,7 @@ object getOpenIdTokenCommandMod {
        with _ServiceOutputTypes
   object GetOpenIdTokenCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetOpenIdTokenCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): GetOpenIdTokenCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOpenIdTokenCommandOutput]
     }

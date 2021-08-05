@@ -14,6 +14,5 @@ object logoutMod {
   /**
     * React component which renders Logout button.
     */
-  @scala.inline
-  def default(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element]
+  inline def default(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element]
 }

@@ -13,28 +13,21 @@ trait BarData extends StObject {
 }
 object BarData {
   
-  @scala.inline
-  def apply(): BarData = {
+  inline def apply(): BarData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarData]
   }
   
-  @scala.inline
-  implicit class BarDataMutableBuilder[Self <: BarData] (val x: Self) extends AnyVal {
+  extension [Self <: BarData](x: Self) {
     
-    @scala.inline
-    def setConfig(value: BarWidth): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: BarWidth): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDataSets(value: js.Array[BarDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
+    inline def setDataSets(value: js.Array[BarDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
+    inline def setDataSetsUndefined: Self = StObject.set(x, "dataSets", js.undefined)
     
-    @scala.inline
-    def setDataSetsVarargs(value: BarDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
+    inline def setDataSetsVarargs(value: BarDataset*): Self = StObject.set(x, "dataSets", js.Array(value :_*))
   }
 }

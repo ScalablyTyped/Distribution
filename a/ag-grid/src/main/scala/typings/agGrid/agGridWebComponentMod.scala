@@ -10,6 +10,5 @@ object agGridWebComponentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initialiseAgGridWithWebComponents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialiseAgGridWithWebComponents")().asInstanceOf[Unit]
+  inline def initialiseAgGridWithWebComponents(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialiseAgGridWithWebComponents")().asInstanceOf[Unit]
 }

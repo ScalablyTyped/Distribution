@@ -23,37 +23,27 @@ trait InsightsConfig extends StObject {
 }
 object InsightsConfig {
   
-  @scala.inline
-  def apply(): InsightsConfig = {
+  inline def apply(): InsightsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsightsConfig]
   }
   
-  @scala.inline
-  implicit class InsightsConfigMutableBuilder[Self <: InsightsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsConfig](x: Self) {
     
-    @scala.inline
-    def setQueryInsightsEnabled(value: Boolean): Self = StObject.set(x, "queryInsightsEnabled", value.asInstanceOf[js.Any])
+    inline def setQueryInsightsEnabled(value: Boolean): Self = StObject.set(x, "queryInsightsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryInsightsEnabledUndefined: Self = StObject.set(x, "queryInsightsEnabled", js.undefined)
+    inline def setQueryInsightsEnabledUndefined: Self = StObject.set(x, "queryInsightsEnabled", js.undefined)
     
-    @scala.inline
-    def setQueryStringLength(value: Double): Self = StObject.set(x, "queryStringLength", value.asInstanceOf[js.Any])
+    inline def setQueryStringLength(value: Double): Self = StObject.set(x, "queryStringLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringLengthUndefined: Self = StObject.set(x, "queryStringLength", js.undefined)
+    inline def setQueryStringLengthUndefined: Self = StObject.set(x, "queryStringLength", js.undefined)
     
-    @scala.inline
-    def setRecordApplicationTags(value: Boolean): Self = StObject.set(x, "recordApplicationTags", value.asInstanceOf[js.Any])
+    inline def setRecordApplicationTags(value: Boolean): Self = StObject.set(x, "recordApplicationTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordApplicationTagsUndefined: Self = StObject.set(x, "recordApplicationTags", js.undefined)
+    inline def setRecordApplicationTagsUndefined: Self = StObject.set(x, "recordApplicationTags", js.undefined)
     
-    @scala.inline
-    def setRecordClientAddress(value: Boolean): Self = StObject.set(x, "recordClientAddress", value.asInstanceOf[js.Any])
+    inline def setRecordClientAddress(value: Boolean): Self = StObject.set(x, "recordClientAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordClientAddressUndefined: Self = StObject.set(x, "recordClientAddress", js.undefined)
+    inline def setRecordClientAddressUndefined: Self = StObject.set(x, "recordClientAddress", js.undefined)
   }
 }

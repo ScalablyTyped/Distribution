@@ -30,8 +30,7 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: Validator[String],
       on: Validator[
           (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[(js.Function1[/* repeated */ js.Any, js.Any]) | Null])
@@ -43,24 +42,19 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: Validator[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Validator[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(
+      inline def setOn(
         value: Validator[
               (js.Function1[/* repeated */ js.Any, js.Any]) | (js.Array[(js.Function1[/* repeated */ js.Any, js.Any]) | Null])
             ]
       ): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPool(value: Requireable[String]): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: Requireable[String]): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: Requireable[js.Object]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Requireable[js.Object]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,20 +66,16 @@ object anon {
   }
   object Pool {
     
-    @scala.inline
-    def apply(pool: String, target: String): Pool = {
+    inline def apply(pool: String, target: String): Pool = {
       val __obj = js.Dynamic.literal(pool = pool.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pool]
     }
     
-    @scala.inline
-    implicit class PoolMutableBuilder[Self <: Pool] (val x: Self) extends AnyVal {
+    extension [Self <: Pool](x: Self) {
       
-      @scala.inline
-      def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,38 +92,28 @@ object anon {
   }
   object ReadonlyEventStackProps {
     
-    @scala.inline
-    def apply(name: String, on: InputEventListener): ReadonlyEventStackProps = {
+    inline def apply(name: String, on: InputEventListener): ReadonlyEventStackProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyEventStackProps]
     }
     
-    @scala.inline
-    implicit class ReadonlyEventStackPropsMutableBuilder[Self <: ReadonlyEventStackProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyEventStackProps](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOn(value: InputEventListener): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: InputEventListener): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+      inline def setOnFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVarargs(value: EventListener*): Self = StObject.set(x, "on", js.Array(value :_*))
+      inline def setOnVarargs(value: EventListener*): Self = StObject.set(x, "on", js.Array(value :_*))
       
-      @scala.inline
-      def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: String): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
+      inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
       
-      @scala.inline
-      def setTarget(value: InputTargetElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: InputTargetElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

@@ -10,8 +10,7 @@ object filesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def builder(yargs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("builder")(yargs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def builder(yargs: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("builder")(yargs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("ipfs-cli/dist/src/commands/files", "command")
   @js.native
@@ -21,6 +20,5 @@ object filesMod {
   @js.native
   val description: String = js.native
   
-  @scala.inline
-  def handler(argv: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(argv.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def handler(argv: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(argv.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

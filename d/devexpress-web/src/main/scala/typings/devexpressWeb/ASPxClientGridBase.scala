@@ -35,8 +35,7 @@ trait ASPxClientGridBase
 }
 object ASPxClientGridBase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     BatchEditSummaryDisplayText: ASPxClientEvent[ASPxClientGridBatchEditSummaryDisplayTextEventHandler[ASPxClientGridBase]],
     GetClientVisible: () => Boolean,
@@ -61,19 +60,14 @@ object ASPxClientGridBase {
     __obj.asInstanceOf[ASPxClientGridBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientGridBaseMutableBuilder[Self <: ASPxClientGridBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientGridBase](x: Self) {
     
-    @scala.inline
-    def setBatchEditSummaryDisplayText(value: ASPxClientEvent[ASPxClientGridBatchEditSummaryDisplayTextEventHandler[ASPxClientGridBase]]): Self = StObject.set(x, "BatchEditSummaryDisplayText", value.asInstanceOf[js.Any])
+    inline def setBatchEditSummaryDisplayText(value: ASPxClientEvent[ASPxClientGridBatchEditSummaryDisplayTextEventHandler[ASPxClientGridBase]]): Self = StObject.set(x, "BatchEditSummaryDisplayText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetToolbar(value: Double => ASPxClientMenu): Self = StObject.set(x, "GetToolbar", js.Any.fromFunction1(value))
+    inline def setGetToolbar(value: Double => ASPxClientMenu): Self = StObject.set(x, "GetToolbar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetToolbarByName(value: String => ASPxClientMenu): Self = StObject.set(x, "GetToolbarByName", js.Any.fromFunction1(value))
+    inline def setGetToolbarByName(value: String => ASPxClientMenu): Self = StObject.set(x, "GetToolbarByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToolbarItemClick(value: ASPxClientEvent[ASPxClientGridToolbarItemClickEventHandler[ASPxClientGridBase]]): Self = StObject.set(x, "ToolbarItemClick", value.asInstanceOf[js.Any])
+    inline def setToolbarItemClick(value: ASPxClientEvent[ASPxClientGridToolbarItemClickEventHandler[ASPxClientGridBase]]): Self = StObject.set(x, "ToolbarItemClick", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attach(selector: js.Any, menuObjects: js.Array[MenuObject]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], menuObjects.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(selector: js.Any, menuObjects: js.Array[MenuObject]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], menuObjects.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def destroy(selector: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def destroy(selector: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(selector.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-  @scala.inline
-  def init(settings: InitSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  inline def init(settings: InitSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def settings(settings: InitSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def settings(settings: InitSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait InitSettings extends StObject {
     
@@ -40,44 +35,32 @@ object mod {
   }
   object InitSettings {
     
-    @scala.inline
-    def apply(): InitSettings = {
+    inline def apply(): InitSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitSettings]
     }
     
-    @scala.inline
-    implicit class InitSettingsMutableBuilder[Self <: InitSettings] (val x: Self) extends AnyVal {
+    extension [Self <: InitSettings](x: Self) {
       
-      @scala.inline
-      def setAbove(value: String | Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
+      inline def setAbove(value: String | Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAboveUndefined: Self = StObject.set(x, "above", js.undefined)
+      inline def setAboveUndefined: Self = StObject.set(x, "above", js.undefined)
       
-      @scala.inline
-      def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
       
-      @scala.inline
-      def setFadeSpeed(value: Double): Self = StObject.set(x, "fadeSpeed", value.asInstanceOf[js.Any])
+      inline def setFadeSpeed(value: Double): Self = StObject.set(x, "fadeSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeSpeedUndefined: Self = StObject.set(x, "fadeSpeed", js.undefined)
+      inline def setFadeSpeedUndefined: Self = StObject.set(x, "fadeSpeed", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* e */ Element => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* e */ Element => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setPreventDoubleContext(value: Boolean): Self = StObject.set(x, "preventDoubleContext", value.asInstanceOf[js.Any])
+      inline def setPreventDoubleContext(value: Boolean): Self = StObject.set(x, "preventDoubleContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDoubleContextUndefined: Self = StObject.set(x, "preventDoubleContext", js.undefined)
+      inline def setPreventDoubleContextUndefined: Self = StObject.set(x, "preventDoubleContext", js.undefined)
     }
   }
   
@@ -99,59 +82,42 @@ object mod {
   }
   object MenuObject {
     
-    @scala.inline
-    def apply(): MenuObject = {
+    inline def apply(): MenuObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuObject]
     }
     
-    @scala.inline
-    implicit class MenuObjectMutableBuilder[Self <: MenuObject] (val x: Self) extends AnyVal {
+    extension [Self <: MenuObject](x: Self) {
       
-      @scala.inline
-      def setAction(value: /* e */ Event => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
+      inline def setAction(value: /* e */ Event => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: Boolean): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setSubMenu(value: js.Array[MenuObject]): Self = StObject.set(x, "subMenu", value.asInstanceOf[js.Any])
+      inline def setSubMenu(value: js.Array[MenuObject]): Self = StObject.set(x, "subMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubMenuUndefined: Self = StObject.set(x, "subMenu", js.undefined)
+      inline def setSubMenuUndefined: Self = StObject.set(x, "subMenu", js.undefined)
       
-      @scala.inline
-      def setSubMenuVarargs(value: MenuObject*): Self = StObject.set(x, "subMenu", js.Array(value :_*))
+      inline def setSubMenuVarargs(value: MenuObject*): Self = StObject.set(x, "subMenu", js.Array(value :_*))
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

@@ -22,20 +22,16 @@ object textJustifySmallMod extends Shortcut {
   }
   object TextJustifySmallProps {
     
-    @scala.inline
-    def apply(): TextJustifySmallProps = {
+    inline def apply(): TextJustifySmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TextJustifySmallProps]
     }
     
-    @scala.inline
-    implicit class TextJustifySmallPropsMutableBuilder[Self <: TextJustifySmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: TextJustifySmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

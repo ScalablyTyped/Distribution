@@ -18,25 +18,19 @@ trait DataSourceErrorInfo extends StObject {
 }
 object DataSourceErrorInfo {
   
-  @scala.inline
-  def apply(): DataSourceErrorInfo = {
+  inline def apply(): DataSourceErrorInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceErrorInfo]
   }
   
-  @scala.inline
-  implicit class DataSourceErrorInfoMutableBuilder[Self <: DataSourceErrorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceErrorInfo](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setType(value: DataSourceErrorInfoType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: DataSourceErrorInfoType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

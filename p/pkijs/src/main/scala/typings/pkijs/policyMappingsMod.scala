@@ -32,13 +32,10 @@ object policyMappingsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait PolicyMappings extends StObject {
@@ -53,8 +50,7 @@ object policyMappingsMod {
   }
   object PolicyMappings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fromSchema: js.Any => Unit,
       mappings: js.Array[typings.pkijs.policyMappingMod.default],
       toJSON: () => js.Any,
@@ -64,23 +60,17 @@ object policyMappingsMod {
       __obj.asInstanceOf[PolicyMappings]
     }
     
-    @scala.inline
-    implicit class PolicyMappingsMutableBuilder[Self <: PolicyMappings] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyMappings](x: Self) {
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMappings(value: js.Array[typings.pkijs.policyMappingMod.default]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+      inline def setMappings(value: js.Array[typings.pkijs.policyMappingMod.default]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappingsVarargs(value: typings.pkijs.policyMappingMod.default*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+      inline def setMappingsVarargs(value: typings.pkijs.policyMappingMod.default*): Self = StObject.set(x, "mappings", js.Array(value :_*))
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

@@ -23,20 +23,16 @@ object dropdownContextMod {
   }
   object DropdownContextValue {
     
-    @scala.inline
-    def apply(active: Boolean, setActive: Boolean => Unit): DropdownContextValue = {
+    inline def apply(active: Boolean, setActive: Boolean => Unit): DropdownContextValue = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], setActive = js.Any.fromFunction1(setActive))
       __obj.asInstanceOf[DropdownContextValue]
     }
     
-    @scala.inline
-    implicit class DropdownContextValueMutableBuilder[Self <: DropdownContextValue] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownContextValue](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
+      inline def setSetActive(value: Boolean => Unit): Self = StObject.set(x, "setActive", js.Any.fromFunction1(value))
     }
   }
 }

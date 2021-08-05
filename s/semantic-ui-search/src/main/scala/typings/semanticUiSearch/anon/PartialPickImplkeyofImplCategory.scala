@@ -17,37 +17,27 @@ trait PartialPickImplkeyofImplCategory extends StObject {
 }
 object PartialPickImplkeyofImplCategory {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplCategory = {
+  inline def apply(): PartialPickImplkeyofImplCategory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplCategory]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplCategoryMutableBuilder[Self <: PartialPickImplkeyofImplCategory] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplCategory](x: Self) {
     
-    @scala.inline
-    def setCategory(value: /* response */ js.Any => String): Self = StObject.set(x, "category", js.Any.fromFunction1(value))
+    inline def setCategory(value: /* response */ js.Any => String): Self = StObject.set(x, "category", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setEscape(value: /* string */ String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+    inline def setEscape(value: /* string */ String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
+    inline def setEscapeUndefined: Self = StObject.set(x, "escape", js.undefined)
     
-    @scala.inline
-    def setMessage(value: (/* message */ String, /* type */ String) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
+    inline def setMessage(value: (/* message */ String, /* type */ String) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setStandard(value: /* response */ js.Any => String): Self = StObject.set(x, "standard", js.Any.fromFunction1(value))
+    inline def setStandard(value: /* response */ js.Any => String): Self = StObject.set(x, "standard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
+    inline def setStandardUndefined: Self = StObject.set(x, "standard", js.undefined)
   }
 }

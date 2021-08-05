@@ -16,28 +16,21 @@ trait Tabs extends StObject {
 }
 object Tabs {
   
-  @scala.inline
-  def apply(): Tabs = {
+  inline def apply(): Tabs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Tabs]
   }
   
-  @scala.inline
-  implicit class TabsMutableBuilder[Self <: Tabs] (val x: Self) extends AnyVal {
+  extension [Self <: Tabs](x: Self) {
     
-    @scala.inline
-    def setTabs(value: js.Array[Groups]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+    inline def setTabs(value: js.Array[Groups]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+    inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
     
-    @scala.inline
-    def setTabsVarargs(value: Groups*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+    inline def setTabsVarargs(value: Groups*): Self = StObject.set(x, "tabs", js.Array(value :_*))
     
-    @scala.inline
-    def setVisibility(value: auto | visible | collapsed | disabled): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: auto | visible | collapsed | disabled): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

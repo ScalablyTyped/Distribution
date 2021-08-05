@@ -32,8 +32,7 @@ trait PackageRegistryBackend
 }
 object PackageRegistryBackend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedPackageTypes: SafeArray[XPackageTypeInfo],
     bindPackage: (String, String, Boolean, String, XCommandEnvironment) => XPackage,
     createPersistent: (String, String, Boolean) => Unit,
@@ -45,13 +44,10 @@ object PackageRegistryBackend {
     __obj.asInstanceOf[PackageRegistryBackend]
   }
   
-  @scala.inline
-  implicit class PackageRegistryBackendMutableBuilder[Self <: PackageRegistryBackend] (val x: Self) extends AnyVal {
+  extension [Self <: PackageRegistryBackend](x: Self) {
     
-    @scala.inline
-    def setCreatePersistent(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "createPersistent", js.Any.fromFunction3(value))
+    inline def setCreatePersistent(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "createPersistent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCreateTransient(value: String => Unit): Self = StObject.set(x, "createTransient", js.Any.fromFunction1(value))
+    inline def setCreateTransient(value: String => Unit): Self = StObject.set(x, "createTransient", js.Any.fromFunction1(value))
   }
 }

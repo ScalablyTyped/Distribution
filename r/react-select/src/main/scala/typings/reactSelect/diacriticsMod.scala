@@ -10,6 +10,5 @@ object diacriticsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def stripDiacritics(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripDiacritics")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stripDiacritics(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripDiacritics")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

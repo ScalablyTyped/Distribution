@@ -14,25 +14,19 @@ trait ZoneOffsetOptions extends StObject {
 }
 object ZoneOffsetOptions {
   
-  @scala.inline
-  def apply(): ZoneOffsetOptions = {
+  inline def apply(): ZoneOffsetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoneOffsetOptions]
   }
   
-  @scala.inline
-  implicit class ZoneOffsetOptionsMutableBuilder[Self <: ZoneOffsetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneOffsetOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: short | long): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: short | long): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
   }
 }

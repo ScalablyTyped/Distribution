@@ -13,25 +13,19 @@ trait Sudoproviderstringundefin extends StObject {
 }
 object Sudoproviderstringundefin {
   
-  @scala.inline
-  def apply(): Sudoproviderstringundefin = {
+  inline def apply(): Sudoproviderstringundefin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Sudoproviderstringundefin]
   }
   
-  @scala.inline
-  implicit class SudoproviderstringundefinMutableBuilder[Self <: Sudoproviderstringundefin] (val x: Self) extends AnyVal {
+  extension [Self <: Sudoproviderstringundefin](x: Self) {
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

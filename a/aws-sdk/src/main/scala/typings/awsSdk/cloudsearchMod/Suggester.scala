@@ -12,19 +12,15 @@ trait Suggester extends StObject {
 }
 object Suggester {
   
-  @scala.inline
-  def apply(DocumentSuggesterOptions: DocumentSuggesterOptions, SuggesterName: StandardName): Suggester = {
+  inline def apply(DocumentSuggesterOptions: DocumentSuggesterOptions, SuggesterName: StandardName): Suggester = {
     val __obj = js.Dynamic.literal(DocumentSuggesterOptions = DocumentSuggesterOptions.asInstanceOf[js.Any], SuggesterName = SuggesterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Suggester]
   }
   
-  @scala.inline
-  implicit class SuggesterMutableBuilder[Self <: Suggester] (val x: Self) extends AnyVal {
+  extension [Self <: Suggester](x: Self) {
     
-    @scala.inline
-    def setDocumentSuggesterOptions(value: DocumentSuggesterOptions): Self = StObject.set(x, "DocumentSuggesterOptions", value.asInstanceOf[js.Any])
+    inline def setDocumentSuggesterOptions(value: DocumentSuggesterOptions): Self = StObject.set(x, "DocumentSuggesterOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggesterName(value: StandardName): Self = StObject.set(x, "SuggesterName", value.asInstanceOf[js.Any])
+    inline def setSuggesterName(value: StandardName): Self = StObject.set(x, "SuggesterName", value.asInstanceOf[js.Any])
   }
 }

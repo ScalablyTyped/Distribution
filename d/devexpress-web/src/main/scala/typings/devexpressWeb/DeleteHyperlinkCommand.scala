@@ -18,16 +18,13 @@ trait DeleteHyperlinkCommand
 }
 object DeleteHyperlinkCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): DeleteHyperlinkCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): DeleteHyperlinkCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[DeleteHyperlinkCommand]
   }
   
-  @scala.inline
-  implicit class DeleteHyperlinkCommandMutableBuilder[Self <: DeleteHyperlinkCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHyperlinkCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

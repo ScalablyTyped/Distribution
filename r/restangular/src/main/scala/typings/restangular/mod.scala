@@ -467,26 +467,20 @@ object mod {
   }
   object IResponse {
     
-    @scala.inline
-    def apply(config: Method, data: js.Any, headers: String => String, status: Double): IResponse = {
+    inline def apply(config: Method, data: js.Any, headers: String => String, status: Double): IResponse = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = js.Any.fromFunction1(headers), status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[IResponse]
     }
     
-    @scala.inline
-    implicit class IResponseMutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
+    extension [Self <: IResponse](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Method): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Method): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: String => String): Self = StObject.set(x, "headers", js.Any.fromFunction1(value))
+      inline def setHeaders(value: String => String): Self = StObject.set(x, "headers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   

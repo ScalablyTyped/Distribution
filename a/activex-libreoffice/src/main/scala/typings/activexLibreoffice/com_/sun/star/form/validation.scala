@@ -89,8 +89,7 @@ object validation {
   }
   object XFormComponentValidityListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       componentValidityChanged: EventObject => Unit,
       disposing: EventObject => Unit,
@@ -101,11 +100,9 @@ object validation {
       __obj.asInstanceOf[XFormComponentValidityListener]
     }
     
-    @scala.inline
-    implicit class XFormComponentValidityListenerMutableBuilder[Self <: XFormComponentValidityListener] (val x: Self) extends AnyVal {
+    extension [Self <: XFormComponentValidityListener](x: Self) {
       
-      @scala.inline
-      def setComponentValidityChanged(value: EventObject => Unit): Self = StObject.set(x, "componentValidityChanged", js.Any.fromFunction1(value))
+      inline def setComponentValidityChanged(value: EventObject => Unit): Self = StObject.set(x, "componentValidityChanged", js.Any.fromFunction1(value))
     }
   }
   
@@ -134,8 +131,7 @@ object validation {
   }
   object XValidatable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Validator: XValidator,
       acquire: () => Unit,
       getValidator: () => XValidator,
@@ -147,17 +143,13 @@ object validation {
       __obj.asInstanceOf[XValidatable]
     }
     
-    @scala.inline
-    implicit class XValidatableMutableBuilder[Self <: XValidatable] (val x: Self) extends AnyVal {
+    extension [Self <: XValidatable](x: Self) {
       
-      @scala.inline
-      def setGetValidator(value: () => XValidator): Self = StObject.set(x, "getValidator", js.Any.fromFunction0(value))
+      inline def setGetValidator(value: () => XValidator): Self = StObject.set(x, "getValidator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetValidator(value: XValidator => Unit): Self = StObject.set(x, "setValidator", js.Any.fromFunction1(value))
+      inline def setSetValidator(value: XValidator => Unit): Self = StObject.set(x, "setValidator", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidator(value: XValidator): Self = StObject.set(x, "Validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: XValidator): Self = StObject.set(x, "Validator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,8 +222,7 @@ object validation {
   }
   object XValidatableFormComponent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CurrentValue: js.Any,
       Validator: XValidator,
       acquire: () => Unit,
@@ -248,23 +239,17 @@ object validation {
       __obj.asInstanceOf[XValidatableFormComponent]
     }
     
-    @scala.inline
-    implicit class XValidatableFormComponentMutableBuilder[Self <: XValidatableFormComponent] (val x: Self) extends AnyVal {
+    extension [Self <: XValidatableFormComponent](x: Self) {
       
-      @scala.inline
-      def setAddFormComponentValidityListener(value: XFormComponentValidityListener => Unit): Self = StObject.set(x, "addFormComponentValidityListener", js.Any.fromFunction1(value))
+      inline def setAddFormComponentValidityListener(value: XFormComponentValidityListener => Unit): Self = StObject.set(x, "addFormComponentValidityListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCurrentValue(value: js.Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
+      inline def setCurrentValue(value: js.Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCurrentValue(value: () => js.Any): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
+      inline def setGetCurrentValue(value: () => js.Any): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+      inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveFormComponentValidityListener(value: XFormComponentValidityListener => Unit): Self = StObject.set(x, "removeFormComponentValidityListener", js.Any.fromFunction1(value))
+      inline def setRemoveFormComponentValidityListener(value: XFormComponentValidityListener => Unit): Self = StObject.set(x, "removeFormComponentValidityListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -315,8 +300,7 @@ object validation {
   }
   object XValidator {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       addValidityConstraintListener: XValidityConstraintListener => Unit,
       explainInvalid: js.Any => String,
@@ -329,20 +313,15 @@ object validation {
       __obj.asInstanceOf[XValidator]
     }
     
-    @scala.inline
-    implicit class XValidatorMutableBuilder[Self <: XValidator] (val x: Self) extends AnyVal {
+    extension [Self <: XValidator](x: Self) {
       
-      @scala.inline
-      def setAddValidityConstraintListener(value: XValidityConstraintListener => Unit): Self = StObject.set(x, "addValidityConstraintListener", js.Any.fromFunction1(value))
+      inline def setAddValidityConstraintListener(value: XValidityConstraintListener => Unit): Self = StObject.set(x, "addValidityConstraintListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExplainInvalid(value: js.Any => String): Self = StObject.set(x, "explainInvalid", js.Any.fromFunction1(value))
+      inline def setExplainInvalid(value: js.Any => String): Self = StObject.set(x, "explainInvalid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValid(value: js.Any => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction1(value))
+      inline def setIsValid(value: js.Any => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveValidityConstraintListener(value: XValidityConstraintListener => Unit): Self = StObject.set(x, "removeValidityConstraintListener", js.Any.fromFunction1(value))
+      inline def setRemoveValidityConstraintListener(value: XValidityConstraintListener => Unit): Self = StObject.set(x, "removeValidityConstraintListener", js.Any.fromFunction1(value))
     }
   }
   
@@ -359,8 +338,7 @@ object validation {
   }
   object XValidityConstraintListener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       disposing: EventObject => Unit,
       queryInterface: `type` => js.Any,
@@ -371,11 +349,9 @@ object validation {
       __obj.asInstanceOf[XValidityConstraintListener]
     }
     
-    @scala.inline
-    implicit class XValidityConstraintListenerMutableBuilder[Self <: XValidityConstraintListener] (val x: Self) extends AnyVal {
+    extension [Self <: XValidityConstraintListener](x: Self) {
       
-      @scala.inline
-      def setValidityConstraintChanged(value: EventObject => Unit): Self = StObject.set(x, "validityConstraintChanged", js.Any.fromFunction1(value))
+      inline def setValidityConstraintChanged(value: EventObject => Unit): Self = StObject.set(x, "validityConstraintChanged", js.Any.fromFunction1(value))
     }
   }
 }

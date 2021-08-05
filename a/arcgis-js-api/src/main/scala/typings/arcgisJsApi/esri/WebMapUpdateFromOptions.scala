@@ -47,8 +47,7 @@ trait WebMapUpdateFromOptions
 }
 object WebMapUpdateFromOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -57,37 +56,26 @@ object WebMapUpdateFromOptions {
     __obj.asInstanceOf[WebMapUpdateFromOptions]
   }
   
-  @scala.inline
-  implicit class WebMapUpdateFromOptionsMutableBuilder[Self <: WebMapUpdateFromOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebMapUpdateFromOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundExcluded(value: Boolean): Self = StObject.set(x, "backgroundExcluded", value.asInstanceOf[js.Any])
+    inline def setBackgroundExcluded(value: Boolean): Self = StObject.set(x, "backgroundExcluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundExcludedUndefined: Self = StObject.set(x, "backgroundExcluded", js.undefined)
+    inline def setBackgroundExcludedUndefined: Self = StObject.set(x, "backgroundExcluded", js.undefined)
     
-    @scala.inline
-    def setScalePreserved(value: Boolean): Self = StObject.set(x, "scalePreserved", value.asInstanceOf[js.Any])
+    inline def setScalePreserved(value: Boolean): Self = StObject.set(x, "scalePreserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScalePreservedUndefined: Self = StObject.set(x, "scalePreserved", js.undefined)
+    inline def setScalePreservedUndefined: Self = StObject.set(x, "scalePreserved", js.undefined)
     
-    @scala.inline
-    def setThumbnailExcluded(value: Boolean): Self = StObject.set(x, "thumbnailExcluded", value.asInstanceOf[js.Any])
+    inline def setThumbnailExcluded(value: Boolean): Self = StObject.set(x, "thumbnailExcluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailExcludedUndefined: Self = StObject.set(x, "thumbnailExcluded", js.undefined)
+    inline def setThumbnailExcludedUndefined: Self = StObject.set(x, "thumbnailExcluded", js.undefined)
     
-    @scala.inline
-    def setThumbnailSize(value: WebMapUpdateFromOptionsThumbnailSize): Self = StObject.set(x, "thumbnailSize", value.asInstanceOf[js.Any])
+    inline def setThumbnailSize(value: WebMapUpdateFromOptionsThumbnailSize): Self = StObject.set(x, "thumbnailSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnailSizeUndefined: Self = StObject.set(x, "thumbnailSize", js.undefined)
+    inline def setThumbnailSizeUndefined: Self = StObject.set(x, "thumbnailSize", js.undefined)
     
-    @scala.inline
-    def setViewpointExcluded(value: Boolean): Self = StObject.set(x, "viewpointExcluded", value.asInstanceOf[js.Any])
+    inline def setViewpointExcluded(value: Boolean): Self = StObject.set(x, "viewpointExcluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewpointExcludedUndefined: Self = StObject.set(x, "viewpointExcluded", js.undefined)
+    inline def setViewpointExcludedUndefined: Self = StObject.set(x, "viewpointExcluded", js.undefined)
   }
 }

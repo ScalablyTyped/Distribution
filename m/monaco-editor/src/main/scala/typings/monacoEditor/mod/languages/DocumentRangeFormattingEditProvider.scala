@@ -22,25 +22,20 @@ trait DocumentRangeFormattingEditProvider extends StObject {
 }
 object DocumentRangeFormattingEditProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideDocumentRangeFormattingEdits: (ITextModel, Range, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): DocumentRangeFormattingEditProvider = {
     val __obj = js.Dynamic.literal(provideDocumentRangeFormattingEdits = js.Any.fromFunction4(provideDocumentRangeFormattingEdits))
     __obj.asInstanceOf[DocumentRangeFormattingEditProvider]
   }
   
-  @scala.inline
-  implicit class DocumentRangeFormattingEditProviderMutableBuilder[Self <: DocumentRangeFormattingEditProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentRangeFormattingEditProvider](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setProvideDocumentRangeFormattingEdits(
+    inline def setProvideDocumentRangeFormattingEdits(
       value: (ITextModel, Range, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
     ): Self = StObject.set(x, "provideDocumentRangeFormattingEdits", js.Any.fromFunction4(value))
   }

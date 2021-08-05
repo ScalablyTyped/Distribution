@@ -16,17 +16,14 @@ trait ImageSourceRaw
 }
 object ImageSourceRaw {
   
-  @scala.inline
-  def apply(): ImageSourceRaw = {
+  inline def apply(): ImageSourceRaw = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[ImageSourceRaw]
   }
   
-  @scala.inline
-  implicit class ImageSourceRawMutableBuilder[Self <: ImageSourceRaw] (val x: Self) extends AnyVal {
+  extension [Self <: ImageSourceRaw](x: Self) {
     
-    @scala.inline
-    def setType(value: image_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: image_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

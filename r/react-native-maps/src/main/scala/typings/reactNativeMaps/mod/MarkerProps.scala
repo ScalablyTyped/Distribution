@@ -71,172 +71,117 @@ trait MarkerProps
 }
 object MarkerProps {
   
-  @scala.inline
-  def apply(coordinate: LatLng | AnimatedRegion): MarkerProps = {
+  inline def apply(coordinate: LatLng | AnimatedRegion): MarkerProps = {
     val __obj = js.Dynamic.literal(coordinate = coordinate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerProps]
   }
   
-  @scala.inline
-  implicit class MarkerPropsMutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerProps](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setCalloutAnchor(value: Point): Self = StObject.set(x, "calloutAnchor", value.asInstanceOf[js.Any])
+    inline def setCalloutAnchor(value: Point): Self = StObject.set(x, "calloutAnchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalloutAnchorUndefined: Self = StObject.set(x, "calloutAnchor", js.undefined)
+    inline def setCalloutAnchorUndefined: Self = StObject.set(x, "calloutAnchor", js.undefined)
     
-    @scala.inline
-    def setCalloutOffset(value: Point): Self = StObject.set(x, "calloutOffset", value.asInstanceOf[js.Any])
+    inline def setCalloutOffset(value: Point): Self = StObject.set(x, "calloutOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalloutOffsetUndefined: Self = StObject.set(x, "calloutOffset", js.undefined)
+    inline def setCalloutOffsetUndefined: Self = StObject.set(x, "calloutOffset", js.undefined)
     
-    @scala.inline
-    def setCenterOffset(value: Point): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
+    inline def setCenterOffset(value: Point): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterOffsetUndefined: Self = StObject.set(x, "centerOffset", js.undefined)
+    inline def setCenterOffsetUndefined: Self = StObject.set(x, "centerOffset", js.undefined)
     
-    @scala.inline
-    def setCoordinate(value: LatLng | AnimatedRegion): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    inline def setCoordinate(value: LatLng | AnimatedRegion): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    @scala.inline
-    def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+    inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
     
-    @scala.inline
-    def setIcon(value: ImageURISource | ImageRequireSource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: ImageURISource | ImageRequireSource): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setImage(value: ImageURISource | ImageRequireSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ImageURISource | ImageRequireSource): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setOnCalloutPress(value: /* event */ MapEvent[`0`] => Unit): Self = StObject.set(x, "onCalloutPress", js.Any.fromFunction1(value))
+    inline def setOnCalloutPress(value: /* event */ MapEvent[`0`] => Unit): Self = StObject.set(x, "onCalloutPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCalloutPressUndefined: Self = StObject.set(x, "onCalloutPress", js.undefined)
+    inline def setOnCalloutPressUndefined: Self = StObject.set(x, "onCalloutPress", js.undefined)
     
-    @scala.inline
-    def setOnDeselect(value: /* event */ MapEvent[ActionId] => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
+    inline def setOnDeselect(value: /* event */ MapEvent[ActionId] => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
+    inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
     
-    @scala.inline
-    def setOnDrag(value: /* event */ MapEvent[js.Object] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
+    inline def setOnDrag(value: /* event */ MapEvent[js.Object] => Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragEnd(value: /* event */ MapEvent[js.Object] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    inline def setOnDragEnd(value: /* event */ MapEvent[js.Object] => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+    inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
-    @scala.inline
-    def setOnDragStart(value: /* event */ MapEvent[js.Object] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    inline def setOnDragStart(value: /* event */ MapEvent[js.Object] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+    inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
-    @scala.inline
-    def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
+    inline def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: /* event */ MapEvent[Action] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: /* event */ MapEvent[Action] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setOnSelect(value: /* event */ MapEvent[Id] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(value: /* event */ MapEvent[Id] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+    inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setPinColor(value: String): Self = StObject.set(x, "pinColor", value.asInstanceOf[js.Any])
+    inline def setPinColor(value: String): Self = StObject.set(x, "pinColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinColorUndefined: Self = StObject.set(x, "pinColor", js.undefined)
+    inline def setPinColorUndefined: Self = StObject.set(x, "pinColor", js.undefined)
     
-    @scala.inline
-    def setReuseIdentifier(value: String): Self = StObject.set(x, "reuseIdentifier", value.asInstanceOf[js.Any])
+    inline def setReuseIdentifier(value: String): Self = StObject.set(x, "reuseIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReuseIdentifierUndefined: Self = StObject.set(x, "reuseIdentifier", js.undefined)
+    inline def setReuseIdentifierUndefined: Self = StObject.set(x, "reuseIdentifier", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    inline def setStopPropagation(value: Boolean): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+    inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTracksInfoWindowChanges(value: Boolean): Self = StObject.set(x, "tracksInfoWindowChanges", value.asInstanceOf[js.Any])
+    inline def setTracksInfoWindowChanges(value: Boolean): Self = StObject.set(x, "tracksInfoWindowChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracksInfoWindowChangesUndefined: Self = StObject.set(x, "tracksInfoWindowChanges", js.undefined)
+    inline def setTracksInfoWindowChangesUndefined: Self = StObject.set(x, "tracksInfoWindowChanges", js.undefined)
     
-    @scala.inline
-    def setTracksViewChanges(value: Boolean): Self = StObject.set(x, "tracksViewChanges", value.asInstanceOf[js.Any])
+    inline def setTracksViewChanges(value: Boolean): Self = StObject.set(x, "tracksViewChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracksViewChangesUndefined: Self = StObject.set(x, "tracksViewChanges", js.undefined)
+    inline def setTracksViewChangesUndefined: Self = StObject.set(x, "tracksViewChanges", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

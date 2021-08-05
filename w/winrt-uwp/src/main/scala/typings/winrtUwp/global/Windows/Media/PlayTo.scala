@@ -144,13 +144,11 @@ object PlayTo {
       * @return The Play To manager for the current view.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.Media.PlayTo.PlayToManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Media.PlayTo.PlayToManager]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.Media.PlayTo.PlayToManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Media.PlayTo.PlayToManager]
     
     /** Displays the Play To UI. */
     /* static member */
-    @scala.inline
-    def showPlayToUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showPlayToUI")().asInstanceOf[Unit]
+    inline def showPlayToUI(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showPlayToUI")().asInstanceOf[Unit]
   }
   
   /** Represents a Play To target. */

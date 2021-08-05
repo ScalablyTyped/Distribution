@@ -29,19 +29,15 @@ trait SchemaGoogleCloudHealthcareV1alphaGcsSource extends StObject {
 }
 object SchemaGoogleCloudHealthcareV1alphaGcsSource {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudHealthcareV1alphaGcsSource = {
+  inline def apply(): SchemaGoogleCloudHealthcareV1alphaGcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudHealthcareV1alphaGcsSource]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudHealthcareV1alphaGcsSourceMutableBuilder[Self <: SchemaGoogleCloudHealthcareV1alphaGcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudHealthcareV1alphaGcsSource](x: Self) {
     
-    @scala.inline
-    def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
+    inline def setContentUri(value: String): Self = StObject.set(x, "contentUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUriUndefined: Self = StObject.set(x, "contentUri", js.undefined)
+    inline def setContentUriUndefined: Self = StObject.set(x, "contentUri", js.undefined)
   }
 }

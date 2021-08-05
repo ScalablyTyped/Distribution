@@ -25,8 +25,7 @@ trait Chart3DBarProperties
 }
 object Chart3DBarProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     SolidType: Double,
     acquire: () => Unit,
@@ -44,10 +43,8 @@ object Chart3DBarProperties {
     __obj.asInstanceOf[Chart3DBarProperties]
   }
   
-  @scala.inline
-  implicit class Chart3DBarPropertiesMutableBuilder[Self <: Chart3DBarProperties] (val x: Self) extends AnyVal {
+  extension [Self <: Chart3DBarProperties](x: Self) {
     
-    @scala.inline
-    def setSolidType(value: Double): Self = StObject.set(x, "SolidType", value.asInstanceOf[js.Any])
+    inline def setSolidType(value: Double): Self = StObject.set(x, "SolidType", value.asInstanceOf[js.Any])
   }
 }

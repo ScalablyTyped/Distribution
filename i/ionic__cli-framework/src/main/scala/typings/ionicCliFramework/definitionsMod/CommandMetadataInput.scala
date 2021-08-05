@@ -16,34 +16,25 @@ trait CommandMetadataInput extends StObject {
 }
 object CommandMetadataInput {
   
-  @scala.inline
-  def apply(name: String, summary: String): CommandMetadataInput = {
+  inline def apply(name: String, summary: String): CommandMetadataInput = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandMetadataInput]
   }
   
-  @scala.inline
-  implicit class CommandMetadataInputMutableBuilder[Self <: CommandMetadataInput] (val x: Self) extends AnyVal {
+  extension [Self <: CommandMetadataInput](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+    inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
-    @scala.inline
-    def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: String): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    inline def setValidators(value: js.Array[Validator]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
+    inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
     
-    @scala.inline
-    def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
+    inline def setValidatorsVarargs(value: Validator*): Self = StObject.set(x, "validators", js.Array(value :_*))
   }
 }

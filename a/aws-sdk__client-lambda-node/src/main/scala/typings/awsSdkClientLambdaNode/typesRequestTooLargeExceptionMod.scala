@@ -16,17 +16,14 @@ object typesRequestTooLargeExceptionMod {
   }
   object RequestTooLargeException {
     
-    @scala.inline
-    def apply(): RequestTooLargeException = {
+    inline def apply(): RequestTooLargeException = {
       val __obj = js.Dynamic.literal(name = "RequestTooLargeException")
       __obj.asInstanceOf[RequestTooLargeException]
     }
     
-    @scala.inline
-    implicit class RequestTooLargeExceptionMutableBuilder[Self <: RequestTooLargeException] (val x: Self) extends AnyVal {
+    extension [Self <: RequestTooLargeException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.RequestTooLargeException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.RequestTooLargeException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,26 +41,20 @@ object typesRequestTooLargeExceptionMod {
   }
   object RequestTooLargeExceptionDetails {
     
-    @scala.inline
-    def apply(): RequestTooLargeExceptionDetails = {
+    inline def apply(): RequestTooLargeExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestTooLargeExceptionDetails]
     }
     
-    @scala.inline
-    implicit class RequestTooLargeExceptionDetailsMutableBuilder[Self <: RequestTooLargeExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: RequestTooLargeExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

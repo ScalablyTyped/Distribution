@@ -20,10 +20,8 @@ object mod {
   	//=> '/home/sindresorhus/.config/MyApp-nodejs'
   	```
   	*/
-  @scala.inline
-  def apply(name: String): Paths = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Paths]
-  @scala.inline
-  def apply(name: String, options: Options): Paths = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Paths]
+  inline def apply(name: String): Paths = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Paths]
+  inline def apply(name: String, options: Options): Paths = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Paths]
   
   @JSImport("env-paths", JSImport.Namespace)
   @js.native
@@ -35,8 +33,7 @@ object mod {
   @JSImport("env-paths", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof envPaths */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof envPaths */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof envPaths */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait Options extends StObject {
     
@@ -49,20 +46,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     }
   }
   
@@ -95,29 +88,22 @@ object mod {
   }
   object Paths {
     
-    @scala.inline
-    def apply(cache: String, config: String, data: String, log: String, temp: String): Paths = {
+    inline def apply(cache: String, config: String, data: String, log: String, temp: String): Paths = {
       val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], temp = temp.asInstanceOf[js.Any])
       __obj.asInstanceOf[Paths]
     }
     
-    @scala.inline
-    implicit class PathsMutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
+    extension [Self <: Paths](x: Self) {
       
-      @scala.inline
-      def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: String): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: String): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemp(value: String): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
+      inline def setTemp(value: String): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,20 +15,16 @@ object anon {
   }
   object Maxage {
     
-    @scala.inline
-    def apply(): Maxage = {
+    inline def apply(): Maxage = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Maxage]
     }
     
-    @scala.inline
-    implicit class MaxageMutableBuilder[Self <: Maxage] (val x: Self) extends AnyVal {
+    extension [Self <: Maxage](x: Self) {
       
-      @scala.inline
-      def setMaxage(value: Double): Self = StObject.set(x, "maxage", value.asInstanceOf[js.Any])
+      inline def setMaxage(value: Double): Self = StObject.set(x, "maxage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxageUndefined: Self = StObject.set(x, "maxage", js.undefined)
+      inline def setMaxageUndefined: Self = StObject.set(x, "maxage", js.undefined)
     }
   }
 }

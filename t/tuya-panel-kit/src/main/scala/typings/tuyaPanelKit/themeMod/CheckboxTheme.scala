@@ -16,25 +16,19 @@ trait CheckboxTheme extends StObject {
 }
 object CheckboxTheme {
   
-  @scala.inline
-  def apply(activeColor: String, disabledColor: String, fontColor: String, size: Double): CheckboxTheme = {
+  inline def apply(activeColor: String, disabledColor: String, fontColor: String, size: Double): CheckboxTheme = {
     val __obj = js.Dynamic.literal(activeColor = activeColor.asInstanceOf[js.Any], disabledColor = disabledColor.asInstanceOf[js.Any], fontColor = fontColor.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxTheme]
   }
   
-  @scala.inline
-  implicit class CheckboxThemeMutableBuilder[Self <: CheckboxTheme] (val x: Self) extends AnyVal {
+  extension [Self <: CheckboxTheme](x: Self) {
     
-    @scala.inline
-    def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
+    inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledColor(value: String): Self = StObject.set(x, "disabledColor", value.asInstanceOf[js.Any])
+    inline def setDisabledColor(value: String): Self = StObject.set(x, "disabledColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

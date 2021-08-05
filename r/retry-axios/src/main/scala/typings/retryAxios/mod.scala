@@ -13,18 +13,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attach(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")().asInstanceOf[Double]
-  @scala.inline
-  def attach(instance: AxiosInstance): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(instance.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def attach(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")().asInstanceOf[Double]
+  inline def attach(instance: AxiosInstance): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(instance.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def detach(interceptorId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(interceptorId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def detach(interceptorId: Double, instance: AxiosInstance): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(interceptorId.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def detach(interceptorId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(interceptorId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def detach(interceptorId: Double, instance: AxiosInstance): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(interceptorId.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getConfig(err: AxiosError[js.Any]): js.UndefOr[RetryConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(err.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[RetryConfig]]
+  inline def getConfig(err: AxiosError[js.Any]): js.UndefOr[RetryConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(err.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[RetryConfig]]
   
   trait RaxConfig
     extends StObject
@@ -34,17 +29,14 @@ object mod {
   }
   object RaxConfig {
     
-    @scala.inline
-    def apply(raxConfig: RetryConfig): RaxConfig = {
+    inline def apply(raxConfig: RetryConfig): RaxConfig = {
       val __obj = js.Dynamic.literal(raxConfig = raxConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[RaxConfig]
     }
     
-    @scala.inline
-    implicit class RaxConfigMutableBuilder[Self <: RaxConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RaxConfig](x: Self) {
       
-      @scala.inline
-      def setRaxConfig(value: RetryConfig): Self = StObject.set(x, "raxConfig", value.asInstanceOf[js.Any])
+      inline def setRaxConfig(value: RetryConfig): Self = StObject.set(x, "raxConfig", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,74 +91,52 @@ object mod {
   }
   object RetryConfig {
     
-    @scala.inline
-    def apply(): RetryConfig = {
+    inline def apply(): RetryConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RetryConfig]
     }
     
-    @scala.inline
-    implicit class RetryConfigMutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RetryConfig](x: Self) {
       
-      @scala.inline
-      def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
+      inline def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentRetryAttemptUndefined: Self = StObject.set(x, "currentRetryAttempt", js.undefined)
+      inline def setCurrentRetryAttemptUndefined: Self = StObject.set(x, "currentRetryAttempt", js.undefined)
       
-      @scala.inline
-      def setHttpMethodsToRetry(value: js.Array[String]): Self = StObject.set(x, "httpMethodsToRetry", value.asInstanceOf[js.Any])
+      inline def setHttpMethodsToRetry(value: js.Array[String]): Self = StObject.set(x, "httpMethodsToRetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpMethodsToRetryUndefined: Self = StObject.set(x, "httpMethodsToRetry", js.undefined)
+      inline def setHttpMethodsToRetryUndefined: Self = StObject.set(x, "httpMethodsToRetry", js.undefined)
       
-      @scala.inline
-      def setHttpMethodsToRetryVarargs(value: String*): Self = StObject.set(x, "httpMethodsToRetry", js.Array(value :_*))
+      inline def setHttpMethodsToRetryVarargs(value: String*): Self = StObject.set(x, "httpMethodsToRetry", js.Array(value :_*))
       
-      @scala.inline
-      def setInstance(value: AxiosInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: AxiosInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+      inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
       
-      @scala.inline
-      def setNoResponseRetries(value: Double): Self = StObject.set(x, "noResponseRetries", value.asInstanceOf[js.Any])
+      inline def setNoResponseRetries(value: Double): Self = StObject.set(x, "noResponseRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoResponseRetriesUndefined: Self = StObject.set(x, "noResponseRetries", js.undefined)
+      inline def setNoResponseRetriesUndefined: Self = StObject.set(x, "noResponseRetries", js.undefined)
       
-      @scala.inline
-      def setOnRetryAttempt(value: /* err */ AxiosError[js.Any] => Unit): Self = StObject.set(x, "onRetryAttempt", js.Any.fromFunction1(value))
+      inline def setOnRetryAttempt(value: /* err */ AxiosError[js.Any] => Unit): Self = StObject.set(x, "onRetryAttempt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRetryAttemptUndefined: Self = StObject.set(x, "onRetryAttempt", js.undefined)
+      inline def setOnRetryAttemptUndefined: Self = StObject.set(x, "onRetryAttempt", js.undefined)
       
-      @scala.inline
-      def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
+      inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
+      inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setShouldRetry(value: /* err */ AxiosError[js.Any] => Boolean): Self = StObject.set(x, "shouldRetry", js.Any.fromFunction1(value))
+      inline def setShouldRetry(value: /* err */ AxiosError[js.Any] => Boolean): Self = StObject.set(x, "shouldRetry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldRetryUndefined: Self = StObject.set(x, "shouldRetry", js.undefined)
+      inline def setShouldRetryUndefined: Self = StObject.set(x, "shouldRetry", js.undefined)
       
-      @scala.inline
-      def setStatusCodesToRetry(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "statusCodesToRetry", value.asInstanceOf[js.Any])
+      inline def setStatusCodesToRetry(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "statusCodesToRetry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodesToRetryUndefined: Self = StObject.set(x, "statusCodesToRetry", js.undefined)
+      inline def setStatusCodesToRetryUndefined: Self = StObject.set(x, "statusCodesToRetry", js.undefined)
       
-      @scala.inline
-      def setStatusCodesToRetryVarargs(value: js.Array[Double]*): Self = StObject.set(x, "statusCodesToRetry", js.Array(value :_*))
+      inline def setStatusCodesToRetryVarargs(value: js.Array[Double]*): Self = StObject.set(x, "statusCodesToRetry", js.Array(value :_*))
     }
   }
 }

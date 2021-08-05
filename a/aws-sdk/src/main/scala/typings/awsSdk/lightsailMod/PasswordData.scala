@@ -18,25 +18,19 @@ trait PasswordData extends StObject {
 }
 object PasswordData {
   
-  @scala.inline
-  def apply(): PasswordData = {
+  inline def apply(): PasswordData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PasswordData]
   }
   
-  @scala.inline
-  implicit class PasswordDataMutableBuilder[Self <: PasswordData] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordData](x: Self) {
     
-    @scala.inline
-    def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+    inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
+    inline def setCiphertextUndefined: Self = StObject.set(x, "ciphertext", js.undefined)
     
-    @scala.inline
-    def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
+    inline def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairNameUndefined: Self = StObject.set(x, "keyPairName", js.undefined)
+    inline def setKeyPairNameUndefined: Self = StObject.set(x, "keyPairName", js.undefined)
   }
 }

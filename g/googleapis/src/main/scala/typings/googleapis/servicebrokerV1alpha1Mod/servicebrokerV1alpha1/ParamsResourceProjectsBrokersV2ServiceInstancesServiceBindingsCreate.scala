@@ -46,49 +46,35 @@ trait ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate
 }
 object ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate = {
+  inline def apply(): ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreateMutableBuilder[Self <: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsCreate](x: Self) {
     
-    @scala.inline
-    def setAcceptsIncomplete(value: Boolean): Self = StObject.set(x, "acceptsIncomplete", value.asInstanceOf[js.Any])
+    inline def setAcceptsIncomplete(value: Boolean): Self = StObject.set(x, "acceptsIncomplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptsIncompleteUndefined: Self = StObject.set(x, "acceptsIncomplete", js.undefined)
+    inline def setAcceptsIncompleteUndefined: Self = StObject.set(x, "acceptsIncomplete", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBinding_id(value: String): Self = StObject.set(x, "binding_id", value.asInstanceOf[js.Any])
+    inline def setBinding_id(value: String): Self = StObject.set(x, "binding_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinding_idUndefined: Self = StObject.set(x, "binding_id", js.undefined)
+    inline def setBinding_idUndefined: Self = StObject.set(x, "binding_id", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
     
-    @scala.inline
-    def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaGoogleCloudServicebrokerV1alpha1Binding): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaGoogleCloudServicebrokerV1alpha1Binding): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

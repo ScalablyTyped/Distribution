@@ -1073,8 +1073,7 @@ object global {
         * Creates a point of interest filter that excludes categories from a list that you provide.
         */
       /* static member */
-      @scala.inline
-      def excluding(categoryList: js.Array[PointOfInterestCategory]): typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("excluding")(categoryList.asInstanceOf[js.Any]).asInstanceOf[typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter]
+      inline def excluding(categoryList: js.Array[PointOfInterestCategory]): typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("excluding")(categoryList.asInstanceOf[js.Any]).asInstanceOf[typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter]
       
       /**
         * A filter that excludes all point of interest categories.
@@ -1096,8 +1095,7 @@ object global {
         * Creates a point of interest filter that includes categories from a list that you provide.
         */
       /* static member */
-      @scala.inline
-      def including(categoryList: js.Array[PointOfInterestCategory]): typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("including")(categoryList.asInstanceOf[js.Any]).asInstanceOf[typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter]
+      inline def including(categoryList: js.Array[PointOfInterestCategory]): typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter = ^.asInstanceOf[js.Dynamic].applyDynamic("including")(categoryList.asInstanceOf[js.Any]).asInstanceOf[typings.appleMapkitJsBrowser.mapkit.PointOfInterestFilter]
     }
     
     /**
@@ -1328,13 +1326,11 @@ object global {
       * Event as its sole argument.
       * @param thisObject An object set as the this keyword on the listener function.
       */
-    @scala.inline
-    def addEventListener[T](
+    inline def addEventListener[T](
       `type`: InitializationEventType,
       listener: js.ThisFunction1[/* this */ T, /* event */ InitializationEvent, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addEventListener[T](
+    inline def addEventListener[T](
       `type`: InitializationEventType,
       listener: js.ThisFunction1[/* this */ T, /* event */ InitializationEvent, Unit],
       thisObject: T
@@ -1354,24 +1350,17 @@ object global {
       * @param callback A callback function that is required if you provide a URL
       * for the data parameter, and optional otherwise.
       */
-    @scala.inline
-    def importGeoJSON(data: String): ItemCollection | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | Error]
-    @scala.inline
-    def importGeoJSON(data: String, callback: GeoJSONDelegate): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
-    @scala.inline
-    def importGeoJSON(data: String, callback: ImportGeoJSONCallback): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
-    @scala.inline
-    def importGeoJSON(data: js.Object): ItemCollection | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | Error]
-    @scala.inline
-    def importGeoJSON(data: js.Object, callback: GeoJSONDelegate): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
-    @scala.inline
-    def importGeoJSON(data: js.Object, callback: ImportGeoJSONCallback): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
+    inline def importGeoJSON(data: String): ItemCollection | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | Error]
+    inline def importGeoJSON(data: String, callback: GeoJSONDelegate): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
+    inline def importGeoJSON(data: String, callback: ImportGeoJSONCallback): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
+    inline def importGeoJSON(data: js.Object): ItemCollection | Error = ^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any]).asInstanceOf[ItemCollection | Error]
+    inline def importGeoJSON(data: js.Object, callback: GeoJSONDelegate): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
+    inline def importGeoJSON(data: js.Object, callback: ImportGeoJSONCallback): ItemCollection | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("importGeoJSON")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ItemCollection | Error]
     
     /**
       * Initialize a mapkit object by providing an authorization callback and language.
       */
-    @scala.inline
-    def init(options: MapKitInitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(options: MapKitInitOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * A language ID indicating the selected language.
@@ -1379,8 +1368,7 @@ object global {
     @JSGlobal("mapkit.language")
     @js.native
     def language: String = js.native
-    @scala.inline
-    def language_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("language")(x.asInstanceOf[js.Any])
+    inline def language_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("language")(x.asInstanceOf[js.Any])
     
     /**
       * An array to which maps are automatically added and removed as they are
@@ -1397,13 +1385,11 @@ object global {
       * @param listener The callback function to remove.
       * @param thisObject An object set as the this keyword on the listener function.
       */
-    @scala.inline
-    def removeEventListener[T](
+    inline def removeEventListener[T](
       `type`: InitializationEventType,
       listener: js.ThisFunction1[/* this */ T, /* event */ InitializationEvent, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeEventListener[T](
+    inline def removeEventListener[T](
       `type`: InitializationEventType,
       listener: js.ThisFunction1[/* this */ T, /* event */ InitializationEvent, Unit],
       thisObject: T

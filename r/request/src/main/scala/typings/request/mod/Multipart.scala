@@ -13,28 +13,21 @@ trait Multipart extends StObject {
 }
 object Multipart {
   
-  @scala.inline
-  def apply(): Multipart = {
+  inline def apply(): Multipart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Multipart]
   }
   
-  @scala.inline
-  implicit class MultipartMutableBuilder[Self <: Multipart] (val x: Self) extends AnyVal {
+  extension [Self <: Multipart](x: Self) {
     
-    @scala.inline
-    def setChunked(value: Boolean): Self = StObject.set(x, "chunked", value.asInstanceOf[js.Any])
+    inline def setChunked(value: Boolean): Self = StObject.set(x, "chunked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkedUndefined: Self = StObject.set(x, "chunked", js.undefined)
+    inline def setChunkedUndefined: Self = StObject.set(x, "chunked", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[Body]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Body]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: Body*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Body*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

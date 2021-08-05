@@ -14,25 +14,19 @@ trait GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech extends
 }
 object GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech = {
+  inline def apply(): GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeechMutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech](x: Self) {
     
-    @scala.inline
-    def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
+    inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
+    inline def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

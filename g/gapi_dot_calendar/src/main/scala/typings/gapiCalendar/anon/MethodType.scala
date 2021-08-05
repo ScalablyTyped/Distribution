@@ -13,20 +13,16 @@ trait MethodType extends StObject {
 }
 object MethodType {
   
-  @scala.inline
-  def apply(method: String, `type`: NotificationType): MethodType = {
+  inline def apply(method: String, `type`: NotificationType): MethodType = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodType]
   }
   
-  @scala.inline
-  implicit class MethodTypeMutableBuilder[Self <: MethodType] (val x: Self) extends AnyVal {
+  extension [Self <: MethodType](x: Self) {
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NotificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NotificationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

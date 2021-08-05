@@ -12,22 +12,17 @@ trait MaintenanceWindowTargetTarget extends StObject {
 }
 object MaintenanceWindowTargetTarget {
   
-  @scala.inline
-  def apply(key: String, values: js.Array[String]): MaintenanceWindowTargetTarget = {
+  inline def apply(key: String, values: js.Array[String]): MaintenanceWindowTargetTarget = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaintenanceWindowTargetTarget]
   }
   
-  @scala.inline
-  implicit class MaintenanceWindowTargetTargetMutableBuilder[Self <: MaintenanceWindowTargetTarget] (val x: Self) extends AnyVal {
+  extension [Self <: MaintenanceWindowTargetTarget](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

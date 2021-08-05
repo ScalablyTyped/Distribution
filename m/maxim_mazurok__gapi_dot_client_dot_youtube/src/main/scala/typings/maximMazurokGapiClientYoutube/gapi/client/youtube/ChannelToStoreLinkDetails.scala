@@ -14,25 +14,19 @@ trait ChannelToStoreLinkDetails extends StObject {
 }
 object ChannelToStoreLinkDetails {
   
-  @scala.inline
-  def apply(): ChannelToStoreLinkDetails = {
+  inline def apply(): ChannelToStoreLinkDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelToStoreLinkDetails]
   }
   
-  @scala.inline
-  implicit class ChannelToStoreLinkDetailsMutableBuilder[Self <: ChannelToStoreLinkDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelToStoreLinkDetails](x: Self) {
     
-    @scala.inline
-    def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+    inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
+    inline def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
     
-    @scala.inline
-    def setStoreUrl(value: String): Self = StObject.set(x, "storeUrl", value.asInstanceOf[js.Any])
+    inline def setStoreUrl(value: String): Self = StObject.set(x, "storeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUrlUndefined: Self = StObject.set(x, "storeUrl", js.undefined)
+    inline def setStoreUrlUndefined: Self = StObject.set(x, "storeUrl", js.undefined)
   }
 }

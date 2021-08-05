@@ -20,7 +20,7 @@ object modelMod {
   class Model protected () extends BaseModel {
     def this(_client: IModelServerClient, _errorHandler: IErrorCallback) = this()
     
-    var allModelClasses: js.Any = js.native
+    /* private */ var allModelClasses: js.Any = js.native
     
     /**
       * Given a qualified name, returns a Module.
@@ -34,8 +34,7 @@ object modelMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createSdkClient(connectionConfig: ISdkConfig): ModelSdkClientImpl[IModel, Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSdkClient")(connectionConfig.asInstanceOf[js.Any]).asInstanceOf[ModelSdkClientImpl[IModel, Model]]
+    inline def createSdkClient(connectionConfig: ISdkConfig): ModelSdkClientImpl[IModel, Model] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSdkClient")(connectionConfig.asInstanceOf[js.Any]).asInstanceOf[ModelSdkClientImpl[IModel, Model]]
   }
   
   type IModel = typings.mendixmodelsdk.baseModelMod.IModel

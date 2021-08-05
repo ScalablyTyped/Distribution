@@ -20,25 +20,19 @@ trait WiFi extends StObject {
 }
 object WiFi {
   
-  @scala.inline
-  def apply(BSSID: String, SSID: String, secure: Boolean, signalStrength: Double): WiFi = {
+  inline def apply(BSSID: String, SSID: String, secure: Boolean, signalStrength: Double): WiFi = {
     val __obj = js.Dynamic.literal(BSSID = BSSID.asInstanceOf[js.Any], SSID = SSID.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], signalStrength = signalStrength.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFi]
   }
   
-  @scala.inline
-  implicit class WiFiMutableBuilder[Self <: WiFi] (val x: Self) extends AnyVal {
+  extension [Self <: WiFi](x: Self) {
     
-    @scala.inline
-    def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
+    inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
+    inline def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalStrength(value: Double): Self = StObject.set(x, "signalStrength", value.asInstanceOf[js.Any])
+    inline def setSignalStrength(value: Double): Self = StObject.set(x, "signalStrength", value.asInstanceOf[js.Any])
   }
 }

@@ -28,8 +28,7 @@ trait XSpreadsheetDocument
 }
 object XSpreadsheetDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Sheets: XSpreadsheets,
     acquire: () => Unit,
     getSheets: () => XSpreadsheets,
@@ -40,13 +39,10 @@ object XSpreadsheetDocument {
     __obj.asInstanceOf[XSpreadsheetDocument]
   }
   
-  @scala.inline
-  implicit class XSpreadsheetDocumentMutableBuilder[Self <: XSpreadsheetDocument] (val x: Self) extends AnyVal {
+  extension [Self <: XSpreadsheetDocument](x: Self) {
     
-    @scala.inline
-    def setGetSheets(value: () => XSpreadsheets): Self = StObject.set(x, "getSheets", js.Any.fromFunction0(value))
+    inline def setGetSheets(value: () => XSpreadsheets): Self = StObject.set(x, "getSheets", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSheets(value: XSpreadsheets): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
+    inline def setSheets(value: XSpreadsheets): Self = StObject.set(x, "Sheets", value.asInstanceOf[js.Any])
   }
 }

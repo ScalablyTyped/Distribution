@@ -16,8 +16,7 @@ trait ArraySqlTokenType
 }
 object ArraySqlTokenType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     memberType: TypeNameIdentifierType | SqlTokenType,
     `type`: js.Symbol,
     values: js.Array[ValueExpressionType]
@@ -27,19 +26,14 @@ object ArraySqlTokenType {
     __obj.asInstanceOf[ArraySqlTokenType]
   }
   
-  @scala.inline
-  implicit class ArraySqlTokenTypeMutableBuilder[Self <: ArraySqlTokenType] (val x: Self) extends AnyVal {
+  extension [Self <: ArraySqlTokenType](x: Self) {
     
-    @scala.inline
-    def setMemberType(value: TypeNameIdentifierType | SqlTokenType): Self = StObject.set(x, "memberType", value.asInstanceOf[js.Any])
+    inline def setMemberType(value: TypeNameIdentifierType | SqlTokenType): Self = StObject.set(x, "memberType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[ValueExpressionType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[ValueExpressionType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: ValueExpressionType*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: ValueExpressionType*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

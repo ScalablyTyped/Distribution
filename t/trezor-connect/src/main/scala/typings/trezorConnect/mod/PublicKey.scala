@@ -34,8 +34,7 @@ trait PublicKey extends StObject {
 }
 object PublicKey {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chainCode: String,
     childNum: Double,
     depth: Double,
@@ -49,40 +48,28 @@ object PublicKey {
     __obj.asInstanceOf[PublicKey]
   }
   
-  @scala.inline
-  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKey](x: Self) {
     
-    @scala.inline
-    def setChainCode(value: String): Self = StObject.set(x, "chainCode", value.asInstanceOf[js.Any])
+    inline def setChainCode(value: String): Self = StObject.set(x, "chainCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNum(value: Double): Self = StObject.set(x, "childNum", value.asInstanceOf[js.Any])
+    inline def setChildNum(value: Double): Self = StObject.set(x, "childNum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprint(value: Double): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: Double): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: String): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializedPath(value: String): Self = StObject.set(x, "serializedPath", value.asInstanceOf[js.Any])
+    inline def setSerializedPath(value: String): Self = StObject.set(x, "serializedPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
+    inline def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXpubSegwit(value: String): Self = StObject.set(x, "xpubSegwit", value.asInstanceOf[js.Any])
+    inline def setXpubSegwit(value: String): Self = StObject.set(x, "xpubSegwit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXpubSegwitUndefined: Self = StObject.set(x, "xpubSegwit", js.undefined)
+    inline def setXpubSegwitUndefined: Self = StObject.set(x, "xpubSegwit", js.undefined)
   }
 }

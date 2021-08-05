@@ -12,19 +12,15 @@ trait IXMLSearchResult extends StObject {
 }
 object IXMLSearchResult {
   
-  @scala.inline
-  def apply(MoreResults: Boolean, SearchResult: String): IXMLSearchResult = {
+  inline def apply(MoreResults: Boolean, SearchResult: String): IXMLSearchResult = {
     val __obj = js.Dynamic.literal(MoreResults = MoreResults.asInstanceOf[js.Any], SearchResult = SearchResult.asInstanceOf[js.Any])
     __obj.asInstanceOf[IXMLSearchResult]
   }
   
-  @scala.inline
-  implicit class IXMLSearchResultMutableBuilder[Self <: IXMLSearchResult] (val x: Self) extends AnyVal {
+  extension [Self <: IXMLSearchResult](x: Self) {
     
-    @scala.inline
-    def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
+    inline def setMoreResults(value: Boolean): Self = StObject.set(x, "MoreResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchResult(value: String): Self = StObject.set(x, "SearchResult", value.asInstanceOf[js.Any])
+    inline def setSearchResult(value: String): Self = StObject.set(x, "SearchResult", value.asInstanceOf[js.Any])
   }
 }

@@ -11,6 +11,5 @@ object hasChangedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hasChanged(prev: CurrentPose, next: CurrentPose): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasChanged")(prev.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasChanged(prev: CurrentPose, next: CurrentPose): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasChanged")(prev.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

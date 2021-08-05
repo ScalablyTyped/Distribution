@@ -58,8 +58,7 @@ object outputPluginsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def splitLinkText(text: String): Caption = ^.asInstanceOf[js.Dynamic].applyDynamic("splitLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[Caption]
+    inline def splitLinkText(text: String): Caption = ^.asInstanceOf[js.Dynamic].applyDynamic("splitLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[Caption]
   }
   
   @JSImport("typedoc/dist/lib/output/plugins", "MarkedPlugin")
@@ -95,14 +94,12 @@ object outputPluginsMod {
     @JSImport("typedoc/dist/lib/output/plugins", "PrettyPrintPlugin.IGNORED_TAGS")
     @js.native
     def IGNORED_TAGS: Area = js.native
-    @scala.inline
-    def IGNORED_TAGS_=(x: Area): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORED_TAGS")(x.asInstanceOf[js.Any])
+    inline def IGNORED_TAGS_=(x: Area): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORED_TAGS")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/output/plugins", "PrettyPrintPlugin.PRE_TAGS")
     @js.native
     def PRE_TAGS: Code = js.native
-    @scala.inline
-    def PRE_TAGS_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRE_TAGS")(x.asInstanceOf[js.Any])
+    inline def PRE_TAGS_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRE_TAGS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/output/plugins", "TocPlugin")
@@ -119,10 +116,8 @@ object outputPluginsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def buildToc(model: Reflection, trail: js.Array[Reflection], parent: NavigationItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], trail.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def buildToc(
+    inline def buildToc(model: Reflection, trail: js.Array[Reflection], parent: NavigationItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], trail.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def buildToc(
       model: Reflection,
       trail: js.Array[Reflection],
       parent: NavigationItem,

@@ -30,8 +30,7 @@ object sliderProtractorDriverMod {
   }
   object SliderDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clickTrack: ILocation => js.Promise[Unit],
       dragAndDropThumb: ILocation => js.Promise[Unit],
       dragThumb: ILocation => js.Promise[Unit],
@@ -43,23 +42,17 @@ object sliderProtractorDriverMod {
       __obj.asInstanceOf[SliderDriver]
     }
     
-    @scala.inline
-    implicit class SliderDriverMutableBuilder[Self <: SliderDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SliderDriver](x: Self) {
       
-      @scala.inline
-      def setClickTrack(value: ILocation => js.Promise[Unit]): Self = StObject.set(x, "clickTrack", js.Any.fromFunction1(value))
+      inline def setClickTrack(value: ILocation => js.Promise[Unit]): Self = StObject.set(x, "clickTrack", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragAndDropThumb(value: ILocation => js.Promise[Unit]): Self = StObject.set(x, "dragAndDropThumb", js.Any.fromFunction1(value))
+      inline def setDragAndDropThumb(value: ILocation => js.Promise[Unit]): Self = StObject.set(x, "dragAndDropThumb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragThumb(value: ILocation => js.Promise[Unit]): Self = StObject.set(x, "dragThumb", js.Any.fromFunction1(value))
+      inline def setDragThumb(value: ILocation => js.Promise[Unit]): Self = StObject.set(x, "dragThumb", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSliderValue(value: () => js.Promise[String]): Self = StObject.set(x, "getSliderValue", js.Any.fromFunction0(value))
+      inline def setGetSliderValue(value: () => js.Promise[String]): Self = StObject.set(x, "getSliderValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipValue(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipValue", js.Any.fromFunction0(value))
+      inline def setGetTooltipValue(value: () => js.Promise[String]): Self = StObject.set(x, "getTooltipValue", js.Any.fromFunction0(value))
     }
   }
 }

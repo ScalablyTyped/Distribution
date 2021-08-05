@@ -22,20 +22,16 @@ object alignCenterVerticallyMod extends Shortcut {
   }
   object AlignCenterVerticallyProps {
     
-    @scala.inline
-    def apply(): AlignCenterVerticallyProps = {
+    inline def apply(): AlignCenterVerticallyProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AlignCenterVerticallyProps]
     }
     
-    @scala.inline
-    implicit class AlignCenterVerticallyPropsMutableBuilder[Self <: AlignCenterVerticallyProps] (val x: Self) extends AnyVal {
+    extension [Self <: AlignCenterVerticallyProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

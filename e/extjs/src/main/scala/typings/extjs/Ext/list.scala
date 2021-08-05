@@ -22,20 +22,16 @@ object list {
   }
   object IListView {
     
-    @scala.inline
-    def apply(): typings.extjs.Ext.list.IListView = {
+    inline def apply(): typings.extjs.Ext.list.IListView = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.extjs.Ext.list.IListView]
     }
     
-    @scala.inline
-    implicit class IListViewMutableBuilder[Self <: typings.extjs.Ext.list.IListView] (val x: Self) extends AnyVal {
+    extension [Self <: typings.extjs.Ext.list.IListView](x: Self) {
       
-      @scala.inline
-      def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction2(value))
+      inline def setReconfigure(value: (/* store */ js.UndefOr[IStore], /* columns */ js.UndefOr[Array]) => Unit): Self = StObject.set(x, "reconfigure", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReconfigureUndefined: Self = StObject.set(x, "reconfigure", js.undefined)
+      inline def setReconfigureUndefined: Self = StObject.set(x, "reconfigure", js.undefined)
     }
   }
 }

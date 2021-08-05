@@ -20,8 +20,7 @@ trait XUser
 }
 object XUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     changePassword: (String, String) => Unit,
     getGrantablePrivileges: (String, Double) => Double,
@@ -35,10 +34,8 @@ object XUser {
     __obj.asInstanceOf[XUser]
   }
   
-  @scala.inline
-  implicit class XUserMutableBuilder[Self <: XUser] (val x: Self) extends AnyVal {
+  extension [Self <: XUser](x: Self) {
     
-    @scala.inline
-    def setChangePassword(value: (String, String) => Unit): Self = StObject.set(x, "changePassword", js.Any.fromFunction2(value))
+    inline def setChangePassword(value: (String, String) => Unit): Self = StObject.set(x, "changePassword", js.Any.fromFunction2(value))
   }
 }

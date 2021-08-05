@@ -24,6 +24,6 @@ trait SmartTags extends StObject {
   
   def SmartTagsByType(Name: String): SmartTags = js.native
   
-  @JSName("Word.SmartTags_typekey")
+  /* private */ @JSName("Word.SmartTags_typekey")
   var WordDotSmartTags_typekey: SmartTags = js.native
 }

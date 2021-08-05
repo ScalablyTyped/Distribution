@@ -20,16 +20,13 @@ trait StateChangeInProgressException
 }
 object StateChangeInProgressException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, TargetState: Double): StateChangeInProgressException = {
+  inline def apply(Context: XInterface, Message: String, TargetState: Double): StateChangeInProgressException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], TargetState = TargetState.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateChangeInProgressException]
   }
   
-  @scala.inline
-  implicit class StateChangeInProgressExceptionMutableBuilder[Self <: StateChangeInProgressException] (val x: Self) extends AnyVal {
+  extension [Self <: StateChangeInProgressException](x: Self) {
     
-    @scala.inline
-    def setTargetState(value: Double): Self = StObject.set(x, "TargetState", value.asInstanceOf[js.Any])
+    inline def setTargetState(value: Double): Self = StObject.set(x, "TargetState", value.asInstanceOf[js.Any])
   }
 }

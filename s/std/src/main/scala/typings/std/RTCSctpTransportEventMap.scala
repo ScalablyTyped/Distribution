@@ -10,16 +10,13 @@ trait RTCSctpTransportEventMap extends StObject {
 }
 object RTCSctpTransportEventMap {
   
-  @scala.inline
-  def apply(statechange: Event): RTCSctpTransportEventMap = {
+  inline def apply(statechange: Event): RTCSctpTransportEventMap = {
     val __obj = js.Dynamic.literal(statechange = statechange.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCSctpTransportEventMap]
   }
   
-  @scala.inline
-  implicit class RTCSctpTransportEventMapMutableBuilder[Self <: RTCSctpTransportEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: RTCSctpTransportEventMap](x: Self) {
     
-    @scala.inline
-    def setStatechange(value: Event): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
+    inline def setStatechange(value: Event): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
   }
 }

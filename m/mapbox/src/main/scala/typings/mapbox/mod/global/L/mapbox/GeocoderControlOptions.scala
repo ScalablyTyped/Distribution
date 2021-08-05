@@ -12,19 +12,15 @@ trait GeocoderControlOptions
 }
 object GeocoderControlOptions {
   
-  @scala.inline
-  def apply(): GeocoderControlOptions = {
+  inline def apply(): GeocoderControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeocoderControlOptions]
   }
   
-  @scala.inline
-  implicit class GeocoderControlOptionsMutableBuilder[Self <: GeocoderControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GeocoderControlOptions](x: Self) {
     
-    @scala.inline
-    def setKeepOpen(value: Boolean): Self = StObject.set(x, "keepOpen", value.asInstanceOf[js.Any])
+    inline def setKeepOpen(value: Boolean): Self = StObject.set(x, "keepOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepOpenUndefined: Self = StObject.set(x, "keepOpen", js.undefined)
+    inline def setKeepOpenUndefined: Self = StObject.set(x, "keepOpen", js.undefined)
   }
 }

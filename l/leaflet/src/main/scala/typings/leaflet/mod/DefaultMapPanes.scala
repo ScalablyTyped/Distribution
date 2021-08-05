@@ -23,8 +23,7 @@ trait DefaultMapPanes extends StObject {
 }
 object DefaultMapPanes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mapPane: HTMLElement,
     markerPane: HTMLElement,
     overlayPane: HTMLElement,
@@ -37,28 +36,20 @@ object DefaultMapPanes {
     __obj.asInstanceOf[DefaultMapPanes]
   }
   
-  @scala.inline
-  implicit class DefaultMapPanesMutableBuilder[Self <: DefaultMapPanes] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultMapPanes](x: Self) {
     
-    @scala.inline
-    def setMapPane(value: HTMLElement): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
+    inline def setMapPane(value: HTMLElement): Self = StObject.set(x, "mapPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerPane(value: HTMLElement): Self = StObject.set(x, "markerPane", value.asInstanceOf[js.Any])
+    inline def setMarkerPane(value: HTMLElement): Self = StObject.set(x, "markerPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayPane(value: HTMLElement): Self = StObject.set(x, "overlayPane", value.asInstanceOf[js.Any])
+    inline def setOverlayPane(value: HTMLElement): Self = StObject.set(x, "overlayPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupPane(value: HTMLElement): Self = StObject.set(x, "popupPane", value.asInstanceOf[js.Any])
+    inline def setPopupPane(value: HTMLElement): Self = StObject.set(x, "popupPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowPane(value: HTMLElement): Self = StObject.set(x, "shadowPane", value.asInstanceOf[js.Any])
+    inline def setShadowPane(value: HTMLElement): Self = StObject.set(x, "shadowPane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTilePane(value: HTMLElement): Self = StObject.set(x, "tilePane", value.asInstanceOf[js.Any])
+    inline def setTilePane(value: HTMLElement): Self = StObject.set(x, "tilePane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPane(value: HTMLElement): Self = StObject.set(x, "tooltipPane", value.asInstanceOf[js.Any])
+    inline def setTooltipPane(value: HTMLElement): Self = StObject.set(x, "tooltipPane", value.asInstanceOf[js.Any])
   }
 }

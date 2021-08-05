@@ -13,16 +13,13 @@ trait ReplayXHRRequest extends StObject {
 }
 object ReplayXHRRequest {
   
-  @scala.inline
-  def apply(requestId: RequestId): ReplayXHRRequest = {
+  inline def apply(requestId: RequestId): ReplayXHRRequest = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplayXHRRequest]
   }
   
-  @scala.inline
-  implicit class ReplayXHRRequestMutableBuilder[Self <: ReplayXHRRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplayXHRRequest](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

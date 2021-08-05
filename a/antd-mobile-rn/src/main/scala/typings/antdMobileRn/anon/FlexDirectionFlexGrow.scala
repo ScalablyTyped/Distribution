@@ -12,19 +12,15 @@ trait FlexDirectionFlexGrow extends StObject {
 }
 object FlexDirectionFlexGrow {
   
-  @scala.inline
-  def apply(flexDirection: String, flexGrow: Double): FlexDirectionFlexGrow = {
+  inline def apply(flexDirection: String, flexGrow: Double): FlexDirectionFlexGrow = {
     val __obj = js.Dynamic.literal(flexDirection = flexDirection.asInstanceOf[js.Any], flexGrow = flexGrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexDirectionFlexGrow]
   }
   
-  @scala.inline
-  implicit class FlexDirectionFlexGrowMutableBuilder[Self <: FlexDirectionFlexGrow] (val x: Self) extends AnyVal {
+  extension [Self <: FlexDirectionFlexGrow](x: Self) {
     
-    @scala.inline
-    def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexGrow(value: Double): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+    inline def setFlexGrow(value: Double): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait MergePullRequestByFastForwardOutput extends StObject {
 }
 object MergePullRequestByFastForwardOutput {
   
-  @scala.inline
-  def apply(): MergePullRequestByFastForwardOutput = {
+  inline def apply(): MergePullRequestByFastForwardOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergePullRequestByFastForwardOutput]
   }
   
-  @scala.inline
-  implicit class MergePullRequestByFastForwardOutputMutableBuilder[Self <: MergePullRequestByFastForwardOutput] (val x: Self) extends AnyVal {
+  extension [Self <: MergePullRequestByFastForwardOutput](x: Self) {
     
-    @scala.inline
-    def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+    inline def setPullRequest(value: PullRequest): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
+    inline def setPullRequestUndefined: Self = StObject.set(x, "pullRequest", js.undefined)
   }
 }

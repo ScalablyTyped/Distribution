@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(emojiName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(emojiName.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(emojiName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(emojiName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("get-emoji", "emojiList")
   @js.native

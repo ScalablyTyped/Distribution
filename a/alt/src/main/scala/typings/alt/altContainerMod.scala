@@ -51,71 +51,50 @@ object altContainerMod extends Shortcut {
   }
   object ContainerProps {
     
-    @scala.inline
-    def apply(): ContainerProps = {
+    inline def apply(): ContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerProps]
     }
     
-    @scala.inline
-    implicit class ContainerPropsMutableBuilder[Self <: ContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerProps](x: Self) {
       
-      @scala.inline
-      def setActions(value: StringDictionary[js.Object]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: StringDictionary[js.Object]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setComponent(value: Component[js.Any, js.Object, js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Component[js.Any, js.Object, js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setFlux(value: Alt): Self = StObject.set(x, "flux", value.asInstanceOf[js.Any])
+      inline def setFlux(value: Alt): Self = StObject.set(x, "flux", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFluxUndefined: Self = StObject.set(x, "flux", js.undefined)
+      inline def setFluxUndefined: Self = StObject.set(x, "flux", js.undefined)
       
-      @scala.inline
-      def setInject(value: StringDictionary[js.Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
+      inline def setInject(value: StringDictionary[js.Any]): Self = StObject.set(x, "inject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
+      inline def setInjectUndefined: Self = StObject.set(x, "inject", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* repeated */ js.Any => ReactElement): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* repeated */ js.Any => ReactElement): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setShouldComponentUpdate(value: /* props */ js.Any => Boolean): Self = StObject.set(x, "shouldComponentUpdate", js.Any.fromFunction1(value))
+      inline def setShouldComponentUpdate(value: /* props */ js.Any => Boolean): Self = StObject.set(x, "shouldComponentUpdate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldComponentUpdateUndefined: Self = StObject.set(x, "shouldComponentUpdate", js.undefined)
+      inline def setShouldComponentUpdateUndefined: Self = StObject.set(x, "shouldComponentUpdate", js.undefined)
       
-      @scala.inline
-      def setStore(value: AltStore[js.Any]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: AltStore[js.Any]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
       
-      @scala.inline
-      def setStores(value: js.Array[AltStore[js.Any]]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
+      inline def setStores(value: js.Array[AltStore[js.Any]]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
+      inline def setStoresUndefined: Self = StObject.set(x, "stores", js.undefined)
       
-      @scala.inline
-      def setStoresVarargs(value: AltStore[js.Any]*): Self = StObject.set(x, "stores", js.Array(value :_*))
+      inline def setStoresVarargs(value: AltStore[js.Any]*): Self = StObject.set(x, "stores", js.Array(value :_*))
       
-      @scala.inline
-      def setTransform(value: (/* store */ AltStore[js.Any], /* actions */ js.Any) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+      inline def setTransform(value: (/* store */ AltStore[js.Any], /* actions */ js.Any) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   

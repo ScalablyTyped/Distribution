@@ -18,16 +18,16 @@ object darwinMod {
     extends StObject
        with Platform {
     
-    var FIREFOX_BIN_PATH: js.Any = js.native
+    /* private */ var FIREFOX_BIN_PATH: js.Any = js.native
     
-    var FIREFOX_BUNDLE_PATH: js.Any = js.native
+    /* private */ var FIREFOX_BUNDLE_PATH: js.Any = js.native
     
-    var FIREFOX_NSS_DIR: js.Any = js.native
+    /* private */ var FIREFOX_NSS_DIR: js.Any = js.native
     
-    var HOST_FILE_PATH: js.Any = js.native
+    /* private */ var HOST_FILE_PATH: js.Any = js.native
     
-    var isFirefoxInstalled: js.Any = js.native
+    /* private */ var isFirefoxInstalled: js.Any = js.native
     
-    var isNSSInstalled: js.Any = js.native
+    /* private */ var isNSSInstalled: js.Any = js.native
   }
 }

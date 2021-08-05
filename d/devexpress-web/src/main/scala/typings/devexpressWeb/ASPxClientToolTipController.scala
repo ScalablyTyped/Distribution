@@ -33,8 +33,7 @@ trait ASPxClientToolTipController
 }
 object ASPxClientToolTipController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chart: ASPxClientWebChart,
     imagePosition: String,
     openMode: String,
@@ -45,19 +44,14 @@ object ASPxClientToolTipController {
     __obj.asInstanceOf[ASPxClientToolTipController]
   }
   
-  @scala.inline
-  implicit class ASPxClientToolTipControllerMutableBuilder[Self <: ASPxClientToolTipController] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientToolTipController](x: Self) {
     
-    @scala.inline
-    def setImagePosition(value: String): Self = StObject.set(x, "imagePosition", value.asInstanceOf[js.Any])
+    inline def setImagePosition(value: String): Self = StObject.set(x, "imagePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenMode(value: String): Self = StObject.set(x, "openMode", value.asInstanceOf[js.Any])
+    inline def setOpenMode(value: String): Self = StObject.set(x, "openMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowImage(value: Boolean): Self = StObject.set(x, "showImage", value.asInstanceOf[js.Any])
+    inline def setShowImage(value: Boolean): Self = StObject.set(x, "showImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowText(value: Boolean): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
+    inline def setShowText(value: Boolean): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
   }
 }

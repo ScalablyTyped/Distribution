@@ -13,16 +13,13 @@ trait DescribeDashboardRequest extends StObject {
 }
 object DescribeDashboardRequest {
   
-  @scala.inline
-  def apply(dashboardId: ID): DescribeDashboardRequest = {
+  inline def apply(dashboardId: ID): DescribeDashboardRequest = {
     val __obj = js.Dynamic.literal(dashboardId = dashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDashboardRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDashboardRequestMutableBuilder[Self <: DescribeDashboardRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDashboardRequest](x: Self) {
     
-    @scala.inline
-    def setDashboardId(value: ID): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ID): Self = StObject.set(x, "dashboardId", value.asInstanceOf[js.Any])
   }
 }

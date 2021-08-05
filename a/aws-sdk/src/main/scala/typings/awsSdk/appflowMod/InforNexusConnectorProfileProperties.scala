@@ -13,16 +13,13 @@ trait InforNexusConnectorProfileProperties extends StObject {
 }
 object InforNexusConnectorProfileProperties {
   
-  @scala.inline
-  def apply(instanceUrl: InstanceUrl): InforNexusConnectorProfileProperties = {
+  inline def apply(instanceUrl: InstanceUrl): InforNexusConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(instanceUrl = instanceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[InforNexusConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class InforNexusConnectorProfilePropertiesMutableBuilder[Self <: InforNexusConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: InforNexusConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
+    inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }
 }

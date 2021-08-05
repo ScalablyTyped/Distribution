@@ -13,17 +13,14 @@ trait MessagePassThroughLayout
 }
 object MessagePassThroughLayout {
   
-  @scala.inline
-  def apply(): MessagePassThroughLayout = {
+  inline def apply(): MessagePassThroughLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("messagePassThrough")
     __obj.asInstanceOf[MessagePassThroughLayout]
   }
   
-  @scala.inline
-  implicit class MessagePassThroughLayoutMutableBuilder[Self <: MessagePassThroughLayout] (val x: Self) extends AnyVal {
+  extension [Self <: MessagePassThroughLayout](x: Self) {
     
-    @scala.inline
-    def setType(value: messagePassThrough): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: messagePassThrough): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

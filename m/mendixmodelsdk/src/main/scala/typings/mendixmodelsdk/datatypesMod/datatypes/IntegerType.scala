@@ -84,8 +84,7 @@ object IntegerType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def create(model: IModel): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -96,8 +95,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -108,8 +106,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -120,8 +117,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConstantUnderType(container: Constant): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInConstantUnderType(container: Constant): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -132,8 +128,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -144,8 +139,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataSetColumnUnderColumnType(container: DataSetColumn): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -156,8 +150,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataSetParameterUnderParameterType(container: DataSetParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -168,8 +161,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -180,8 +172,7 @@ object IntegerType {
     *  7.16.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInImportMappingUnderParameterType(container: ImportMapping): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInImportMappingUnderParameterType(container: ImportMapping): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -192,8 +183,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -204,8 +194,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -216,8 +205,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -228,8 +216,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -240,8 +227,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPublishedParameterUnderParameterType(container: PublishedParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -252,8 +238,7 @@ object IntegerType {
     *  7.17.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestOperationParameterUnderType(container: RestOperationParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInRestOperationParameterUnderType(container: RestOperationParameter): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -264,8 +249,7 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInResultHandlingUnderVariableType(container: ResultHandling): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInResultHandlingUnderVariableType(container: ResultHandling): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /**
     * Creates and returns a new IntegerType instance in the SDK and on the server.
@@ -276,20 +260,17 @@ object IntegerType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInValueMappingElementUnderType(container: ValueMappingElement): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
+  inline def createInValueMappingElementUnderType(container: ValueMappingElement): IntegerType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[IntegerType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.IntegerType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

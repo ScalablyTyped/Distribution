@@ -45,8 +45,7 @@ object cards {
   }
   object ICardAuthorizationControls {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowed_categories: js.Array[String],
       blocked_categories: js.Array[String],
       currency: String,
@@ -58,14 +57,11 @@ object cards {
       __obj.asInstanceOf[ICardAuthorizationControls]
     }
     
-    @scala.inline
-    implicit class ICardAuthorizationControlsMutableBuilder[Self <: ICardAuthorizationControls] (val x: Self) extends AnyVal {
+    extension [Self <: ICardAuthorizationControls](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_approvals(value: Double): Self = StObject.set(x, "max_approvals", value.asInstanceOf[js.Any])
+      inline def setMax_approvals(value: Double): Self = StObject.set(x, "max_approvals", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,8 +165,7 @@ object cards {
   }
   object IIssuingCard {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authorization_controls: ICardAuthorizationControls,
       brand: String,
       cardholder: ICardholder,
@@ -196,62 +191,43 @@ object cards {
       __obj.asInstanceOf[IIssuingCard]
     }
     
-    @scala.inline
-    implicit class IIssuingCardMutableBuilder[Self <: IIssuingCard] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingCard](x: Self) {
       
-      @scala.inline
-      def setAuthorization_controls(value: ICardAuthorizationControls): Self = StObject.set(x, "authorization_controls", value.asInstanceOf[js.Any])
+      inline def setAuthorization_controls(value: ICardAuthorizationControls): Self = StObject.set(x, "authorization_controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+      inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardholder(value: ICardholder): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
+      inline def setCardholder(value: ICardholder): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
+      inline def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
+      inline def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
+      inline def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: issuingDotcard): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: issuingDotcard): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPin(value: IIssuingCardPin): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+      inline def setPin(value: IIssuingCardPin): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacement_for(value: String | IIssuingCard): Self = StObject.set(x, "replacement_for", value.asInstanceOf[js.Any])
+      inline def setReplacement_for(value: String | IIssuingCard): Self = StObject.set(x, "replacement_for", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacement_reason(value: IssuingCardReplacementReason): Self = StObject.set(x, "replacement_reason", value.asInstanceOf[js.Any])
+      inline def setReplacement_reason(value: IssuingCardReplacementReason): Self = StObject.set(x, "replacement_reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShipping(value: IIssuingCardShippingDetails): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+      inline def setShipping(value: IIssuingCardShippingDetails): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: IssuingCardStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: IssuingCardStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: IssuingCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IssuingCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,39 +265,29 @@ object cards {
   }
   object IIssuingCardCreateOptions {
     
-    @scala.inline
-    def apply(currency: String, `type`: IssuingCardType): IIssuingCardCreateOptions = {
+    inline def apply(currency: String, `type`: IssuingCardType): IIssuingCardCreateOptions = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIssuingCardCreateOptions]
     }
     
-    @scala.inline
-    implicit class IIssuingCardCreateOptionsMutableBuilder[Self <: IIssuingCardCreateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingCardCreateOptions](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacement_for(value: String): Self = StObject.set(x, "replacement_for", value.asInstanceOf[js.Any])
+      inline def setReplacement_for(value: String): Self = StObject.set(x, "replacement_for", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacement_forUndefined: Self = StObject.set(x, "replacement_for", js.undefined)
+      inline def setReplacement_forUndefined: Self = StObject.set(x, "replacement_for", js.undefined)
       
-      @scala.inline
-      def setReplacement_reason(value: IssuingCardReplacementReason): Self = StObject.set(x, "replacement_reason", value.asInstanceOf[js.Any])
+      inline def setReplacement_reason(value: IssuingCardReplacementReason): Self = StObject.set(x, "replacement_reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplacement_reasonUndefined: Self = StObject.set(x, "replacement_reason", js.undefined)
+      inline def setReplacement_reasonUndefined: Self = StObject.set(x, "replacement_reason", js.undefined)
       
-      @scala.inline
-      def setShipping(value: IIssuingCardShippingAddress): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
+      inline def setShipping(value: IIssuingCardShippingAddress): Self = StObject.set(x, "shipping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
+      inline def setShippingUndefined: Self = StObject.set(x, "shipping", js.undefined)
       
-      @scala.inline
-      def setType(value: IssuingCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IssuingCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -359,33 +325,25 @@ object cards {
   }
   object IIssuingCardDetails {
     
-    @scala.inline
-    def apply(card: IIssuingCard, cvc: String, exp_month: Double, exp_year: Double, number: String): IIssuingCardDetails = {
+    inline def apply(card: IIssuingCard, cvc: String, exp_month: Double, exp_year: Double, number: String): IIssuingCardDetails = {
       val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], cvc = cvc.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.updateDynamic("object")("issuing.card_details")
       __obj.asInstanceOf[IIssuingCardDetails]
     }
     
-    @scala.inline
-    implicit class IIssuingCardDetailsMutableBuilder[Self <: IIssuingCardDetails] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingCardDetails](x: Self) {
       
-      @scala.inline
-      def setCard(value: IIssuingCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+      inline def setCard(value: IIssuingCard): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCvc(value: String): Self = StObject.set(x, "cvc", value.asInstanceOf[js.Any])
+      inline def setCvc(value: String): Self = StObject.set(x, "cvc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
+      inline def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
+      inline def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: issuingDotcard_details): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: issuingDotcard_details): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     }
   }
   
@@ -460,86 +418,60 @@ object cards {
   }
   object IIssuingCardListOptions {
     
-    @scala.inline
-    def apply(): IIssuingCardListOptions = {
+    inline def apply(): IIssuingCardListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IIssuingCardListOptions]
     }
     
-    @scala.inline
-    implicit class IIssuingCardListOptionsMutableBuilder[Self <: IIssuingCardListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingCardListOptions](x: Self) {
       
-      @scala.inline
-      def setCardholder(value: String): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
+      inline def setCardholder(value: String): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardholderUndefined: Self = StObject.set(x, "cardholder", js.undefined)
+      inline def setCardholderUndefined: Self = StObject.set(x, "cardholder", js.undefined)
       
-      @scala.inline
-      def setCreated(value: String | ICreated): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String | ICreated): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
+      inline def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
+      inline def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
       
-      @scala.inline
-      def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
+      inline def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExp_monthUndefined: Self = StObject.set(x, "exp_month", js.undefined)
+      inline def setExp_monthUndefined: Self = StObject.set(x, "exp_month", js.undefined)
       
-      @scala.inline
-      def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
+      inline def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExp_yearUndefined: Self = StObject.set(x, "exp_year", js.undefined)
+      inline def setExp_yearUndefined: Self = StObject.set(x, "exp_year", js.undefined)
       
-      @scala.inline
-      def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
+      inline def setLast4(value: String): Self = StObject.set(x, "last4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast4Undefined: Self = StObject.set(x, "last4", js.undefined)
+      inline def setLast4Undefined: Self = StObject.set(x, "last4", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
+      inline def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
+      inline def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
       
-      @scala.inline
-      def setStatus(value: IssuingCardStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: IssuingCardStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setType(value: IssuingCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IssuingCardType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -552,17 +484,14 @@ object cards {
   }
   object IIssuingCardPin {
     
-    @scala.inline
-    def apply(status: blocked | active): IIssuingCardPin = {
+    inline def apply(status: blocked | active): IIssuingCardPin = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIssuingCardPin]
     }
     
-    @scala.inline
-    implicit class IIssuingCardPinMutableBuilder[Self <: IIssuingCardPin] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingCardPin](x: Self) {
       
-      @scala.inline
-      def setStatus(value: blocked | active): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: blocked | active): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -585,26 +514,20 @@ object cards {
   }
   object IIssuingCardShippingAddress {
     
-    @scala.inline
-    def apply(address: ICardholderBillingAddress, name: String): IIssuingCardShippingAddress = {
+    inline def apply(address: ICardholderBillingAddress, name: String): IIssuingCardShippingAddress = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IIssuingCardShippingAddress]
     }
     
-    @scala.inline
-    implicit class IIssuingCardShippingAddressMutableBuilder[Self <: IIssuingCardShippingAddress] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingCardShippingAddress](x: Self) {
       
-      @scala.inline
-      def setAddress(value: ICardholderBillingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: ICardholderBillingAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: bulk | individual): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: bulk | individual): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -639,8 +562,7 @@ object cards {
   }
   object IIssuingCardShippingDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       address: ICardholderBillingAddress,
       carrier: String,
       eta: Double,
@@ -653,23 +575,17 @@ object cards {
       __obj.asInstanceOf[IIssuingCardShippingDetails]
     }
     
-    @scala.inline
-    implicit class IIssuingCardShippingDetailsMutableBuilder[Self <: IIssuingCardShippingDetails] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingCardShippingDetails](x: Self) {
       
-      @scala.inline
-      def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
+      inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEta(value: Double): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
+      inline def setEta(value: Double): Self = StObject.set(x, "eta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: pending | shipped | delivered | returned | failure | canceled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: pending | shipped | delivered | returned | failure | canceled): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracking_number(value: String): Self = StObject.set(x, "tracking_number", value.asInstanceOf[js.Any])
+      inline def setTracking_number(value: String): Self = StObject.set(x, "tracking_number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracking_url(value: String): Self = StObject.set(x, "tracking_url", value.asInstanceOf[js.Any])
+      inline def setTracking_url(value: String): Self = StObject.set(x, "tracking_url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -697,38 +613,28 @@ object cards {
   }
   object IIssuingCardUpdateOptions {
     
-    @scala.inline
-    def apply(): IIssuingCardUpdateOptions = {
+    inline def apply(): IIssuingCardUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IIssuingCardUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IIssuingCardUpdateOptionsMutableBuilder[Self <: IIssuingCardUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IIssuingCardUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setAuhtorization_controls(value: ICardAuthorizationControls): Self = StObject.set(x, "auhtorization_controls", value.asInstanceOf[js.Any])
+      inline def setAuhtorization_controls(value: ICardAuthorizationControls): Self = StObject.set(x, "auhtorization_controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuhtorization_controlsUndefined: Self = StObject.set(x, "auhtorization_controls", js.undefined)
+      inline def setAuhtorization_controlsUndefined: Self = StObject.set(x, "auhtorization_controls", js.undefined)
       
-      @scala.inline
-      def setCardholder(value: String): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
+      inline def setCardholder(value: String): Self = StObject.set(x, "cardholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardholderUndefined: Self = StObject.set(x, "cardholder", js.undefined)
+      inline def setCardholderUndefined: Self = StObject.set(x, "cardholder", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setStatus(value: IssuingCardStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: IssuingCardStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -741,17 +647,13 @@ object cards {
   trait IssuingCardReplacementReason extends StObject
   object IssuingCardReplacementReason {
     
-    @scala.inline
-    def damage: typings.stripe.stripeStrings.damage = "damage".asInstanceOf[typings.stripe.stripeStrings.damage]
+    inline def damage: typings.stripe.stripeStrings.damage = "damage".asInstanceOf[typings.stripe.stripeStrings.damage]
     
-    @scala.inline
-    def expiration: typings.stripe.stripeStrings.expiration = "expiration".asInstanceOf[typings.stripe.stripeStrings.expiration]
+    inline def expiration: typings.stripe.stripeStrings.expiration = "expiration".asInstanceOf[typings.stripe.stripeStrings.expiration]
     
-    @scala.inline
-    def loss: typings.stripe.stripeStrings.loss = "loss".asInstanceOf[typings.stripe.stripeStrings.loss]
+    inline def loss: typings.stripe.stripeStrings.loss = "loss".asInstanceOf[typings.stripe.stripeStrings.loss]
     
-    @scala.inline
-    def theft: typings.stripe.stripeStrings.theft = "theft".asInstanceOf[typings.stripe.stripeStrings.theft]
+    inline def theft: typings.stripe.stripeStrings.theft = "theft".asInstanceOf[typings.stripe.stripeStrings.theft]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -764,20 +666,15 @@ object cards {
   trait IssuingCardStatus extends StObject
   object IssuingCardStatus {
     
-    @scala.inline
-    def active: typings.stripe.stripeStrings.active = "active".asInstanceOf[typings.stripe.stripeStrings.active]
+    inline def active: typings.stripe.stripeStrings.active = "active".asInstanceOf[typings.stripe.stripeStrings.active]
     
-    @scala.inline
-    def canceled: typings.stripe.stripeStrings.canceled = "canceled".asInstanceOf[typings.stripe.stripeStrings.canceled]
+    inline def canceled: typings.stripe.stripeStrings.canceled = "canceled".asInstanceOf[typings.stripe.stripeStrings.canceled]
     
-    @scala.inline
-    def inactive: typings.stripe.stripeStrings.inactive = "inactive".asInstanceOf[typings.stripe.stripeStrings.inactive]
+    inline def inactive: typings.stripe.stripeStrings.inactive = "inactive".asInstanceOf[typings.stripe.stripeStrings.inactive]
     
-    @scala.inline
-    def lost: typings.stripe.stripeStrings.lost = "lost".asInstanceOf[typings.stripe.stripeStrings.lost]
+    inline def lost: typings.stripe.stripeStrings.lost = "lost".asInstanceOf[typings.stripe.stripeStrings.lost]
     
-    @scala.inline
-    def stolen: typings.stripe.stripeStrings.stolen = "stolen".asInstanceOf[typings.stripe.stripeStrings.stolen]
+    inline def stolen: typings.stripe.stripeStrings.stolen = "stolen".asInstanceOf[typings.stripe.stripeStrings.stolen]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -787,10 +684,8 @@ object cards {
   trait IssuingCardType extends StObject
   object IssuingCardType {
     
-    @scala.inline
-    def physical: typings.stripe.stripeStrings.physical = "physical".asInstanceOf[typings.stripe.stripeStrings.physical]
+    inline def physical: typings.stripe.stripeStrings.physical = "physical".asInstanceOf[typings.stripe.stripeStrings.physical]
     
-    @scala.inline
-    def virtual: typings.stripe.stripeStrings.virtual = "virtual".asInstanceOf[typings.stripe.stripeStrings.virtual]
+    inline def virtual: typings.stripe.stripeStrings.virtual = "virtual".asInstanceOf[typings.stripe.stripeStrings.virtual]
   }
 }

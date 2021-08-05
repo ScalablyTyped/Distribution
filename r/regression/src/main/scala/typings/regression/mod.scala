@@ -10,33 +10,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def exponential(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
-  @scala.inline
-  def exponential(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def exponential(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def exponential(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  @scala.inline
-  def linear(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
-  @scala.inline
-  def linear(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("linear")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def linear(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def linear(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("linear")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  @scala.inline
-  def logarithmic(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("logarithmic")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
-  @scala.inline
-  def logarithmic(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("logarithmic")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def logarithmic(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("logarithmic")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def logarithmic(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("logarithmic")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  @scala.inline
-  def polynomial(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("polynomial")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
-  @scala.inline
-  def polynomial(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("polynomial")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def polynomial(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("polynomial")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def polynomial(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("polynomial")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  @scala.inline
-  def power(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("power")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
-  @scala.inline
-  def power(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("power")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def power(data: js.Array[DataPoint]): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("power")(data.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def power(data: js.Array[DataPoint], options: Options): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("power")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
-  @scala.inline
-  def round(number: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("_round")(number.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def round(number: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("_round")(number.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   type DataPoint = js.Tuple2[Double, Double]
   
@@ -58,26 +47,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     }
   }
   
@@ -136,8 +119,7 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       equation: js.Array[Double],
       points: js.Array[DataPoint],
       predict: Double => DataPoint,
@@ -148,29 +130,21 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setEquation(value: js.Array[Double]): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
+      inline def setEquation(value: js.Array[Double]): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquationVarargs(value: Double*): Self = StObject.set(x, "equation", js.Array(value :_*))
+      inline def setEquationVarargs(value: Double*): Self = StObject.set(x, "equation", js.Array(value :_*))
       
-      @scala.inline
-      def setPoints(value: js.Array[DataPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+      inline def setPoints(value: js.Array[DataPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointsVarargs(value: DataPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
+      inline def setPointsVarargs(value: DataPoint*): Self = StObject.set(x, "points", js.Array(value :_*))
       
-      @scala.inline
-      def setPredict(value: Double => DataPoint): Self = StObject.set(x, "predict", js.Any.fromFunction1(value))
+      inline def setPredict(value: Double => DataPoint): Self = StObject.set(x, "predict", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
+      inline def setR2(value: Double): Self = StObject.set(x, "r2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
   }
 }

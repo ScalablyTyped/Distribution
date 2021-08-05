@@ -37,22 +37,17 @@ trait ConstructorProvider
 }
 object ConstructorProvider {
   
-  @scala.inline
-  def apply(provide: Type[js.Any]): ConstructorProvider = {
+  inline def apply(provide: Type[js.Any]): ConstructorProvider = {
     val __obj = js.Dynamic.literal(provide = provide.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorProvider]
   }
   
-  @scala.inline
-  implicit class ConstructorProviderMutableBuilder[Self <: ConstructorProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ConstructorProvider](x: Self) {
     
-    @scala.inline
-    def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
-    @scala.inline
-    def setProvide(value: Type[js.Any]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+    inline def setProvide(value: Type[js.Any]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
   }
 }

@@ -35,8 +35,7 @@ trait Package extends StObject {
 }
 object Package {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBuildFailureOutput: () => String | Null,
     isCompatible: () => Boolean,
     name: String,
@@ -48,25 +47,18 @@ object Package {
     __obj.asInstanceOf[Package]
   }
   
-  @scala.inline
-  implicit class PackageMutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
+  extension [Self <: Package](x: Self) {
     
-    @scala.inline
-    def setGetBuildFailureOutput(value: () => String | Null): Self = StObject.set(x, "getBuildFailureOutput", js.Any.fromFunction0(value))
+    inline def setGetBuildFailureOutput(value: () => String | Null): Self = StObject.set(x, "getBuildFailureOutput", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCompatible(value: () => Boolean): Self = StObject.set(x, "isCompatible", js.Any.fromFunction0(value))
+    inline def setIsCompatible(value: () => Boolean): Self = StObject.set(x, "isCompatible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDidDeactivate(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDeactivate", js.Any.fromFunction1(value))
+    inline def setOnDidDeactivate(value: js.Function0[Unit] => Disposable): Self = StObject.set(x, "onDidDeactivate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRebuild(value: () => js.Promise[Code]): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
+    inline def setRebuild(value: () => js.Promise[Code]): Self = StObject.set(x, "rebuild", js.Any.fromFunction0(value))
   }
 }

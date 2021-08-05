@@ -22,7 +22,7 @@ trait DisplayFormat extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.DisplayFormat_typekey")
+  /* private */ @JSName("Excel.DisplayFormat_typekey")
   var ExcelDotDisplayFormat_typekey: DisplayFormat = js.native
   
   val Font: typings.activexExcel.Excel.Font = js.native

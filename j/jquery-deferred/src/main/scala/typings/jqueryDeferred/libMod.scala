@@ -10,42 +10,30 @@ object libMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Callbacks(flags: js.Any): JQueryCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("Callbacks")(flags.asInstanceOf[js.Any]).asInstanceOf[JQueryCallback]
+  inline def Callbacks(flags: js.Any): JQueryCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("Callbacks")(flags.asInstanceOf[js.Any]).asInstanceOf[JQueryCallback]
   
-  @scala.inline
-  def Deferred(): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")().asInstanceOf[JQueryDeferred]
-  @scala.inline
-  def Deferred(beforeStart: js.Function1[/* deferred */ JQueryDeferred, js.Any]): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")(beforeStart.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred]
+  inline def Deferred(): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")().asInstanceOf[JQueryDeferred]
+  inline def Deferred(beforeStart: js.Function1[/* deferred */ JQueryDeferred, js.Any]): JQueryDeferred = ^.asInstanceOf[js.Dynamic].applyDynamic("Deferred")(beforeStart.asInstanceOf[js.Any]).asInstanceOf[JQueryDeferred]
   
-  @scala.inline
-  def each(
+  inline def each(
     collection: js.Any,
     callback: js.Function2[/* indexInArray */ js.Any, /* valueOfElement */ js.Any, js.Any]
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(collection.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def extend(deep: Boolean, target: js.Any, objs: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any], objs.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def extend(target: js.Any, objs: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], objs.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def extend(deep: Boolean, target: js.Any, objs: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(deep.asInstanceOf[js.Any], target.asInstanceOf[js.Any], objs.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def extend(target: js.Any, objs: js.Any*): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], objs.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @scala.inline
-  def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isFunction(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFunction(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPlainObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPlainObject(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def noop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[js.Any]
+  inline def noop(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def `type`(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def `type`(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("type")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def when(deferreds: js.Any*): JQueryPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(deferreds.asInstanceOf[js.Any]).asInstanceOf[JQueryPromise]
+  inline def when(deferreds: js.Any*): JQueryPromise = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(deferreds.asInstanceOf[js.Any]).asInstanceOf[JQueryPromise]
   
   trait JQueryCallback extends StObject {
     
@@ -73,8 +61,7 @@ object libMod {
   }
   object JQueryCallback {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: /* repeated */ js.Any => js.Any,
       disable: () => js.Any,
       disabled: () => Boolean,
@@ -91,41 +78,29 @@ object libMod {
       __obj.asInstanceOf[JQueryCallback]
     }
     
-    @scala.inline
-    implicit class JQueryCallbackMutableBuilder[Self <: JQueryCallback] (val x: Self) extends AnyVal {
+    extension [Self <: JQueryCallback](x: Self) {
       
-      @scala.inline
-      def setAdd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisable(value: () => js.Any): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => js.Any): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisabled(value: () => Boolean): Self = StObject.set(x, "disabled", js.Any.fromFunction0(value))
+      inline def setDisabled(value: () => Boolean): Self = StObject.set(x, "disabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEmpty(value: () => js.Any): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
+      inline def setEmpty(value: () => js.Any): Self = StObject.set(x, "empty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFire(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
+      inline def setFire(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFireWith(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "fireWith", js.Any.fromFunction2(value))
+      inline def setFireWith(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "fireWith", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFired(value: () => Boolean): Self = StObject.set(x, "fired", js.Any.fromFunction0(value))
+      inline def setFired(value: () => Boolean): Self = StObject.set(x, "fired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: js.Any => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLock(value: () => js.Any): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
+      inline def setLock(value: () => js.Any): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLocked(value: () => Boolean): Self = StObject.set(x, "locked", js.Any.fromFunction0(value))
+      inline def setLocked(value: () => Boolean): Self = StObject.set(x, "locked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     }
   }
   

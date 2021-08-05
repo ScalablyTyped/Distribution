@@ -29,14 +29,11 @@ object mod {
     def this(props: AppContainerProps & AppChildren, context: js.Any) = this()
   }
   
-  @scala.inline
-  def areComponentsEqual[T](typeA: ComponentType[T], typeB: ComponentType[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areComponentsEqual")(typeA.asInstanceOf[js.Any], typeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def areComponentsEqual[T](typeA: ComponentType[T], typeB: ComponentType[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areComponentsEqual")(typeA.asInstanceOf[js.Any], typeB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def cold[T](component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cold")(component.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def cold[T](component: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cold")(component.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def hot(module: js.Any): js.Function2[
+  inline def hot(module: js.Any): js.Function2[
     /* Component */ ComponentType[js.Any], 
     /* props */ js.UndefOr[AppContainerProps], 
     ComponentType[js.Any]
@@ -46,8 +43,7 @@ object mod {
     ComponentType[js.Any]
   ]]
   
-  @scala.inline
-  def setConfig(config: PartialConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setConfig(config: PartialConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait AppChildren extends StObject {
     
@@ -55,20 +51,16 @@ object mod {
   }
   object AppChildren {
     
-    @scala.inline
-    def apply(): AppChildren = {
+    inline def apply(): AppChildren = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppChildren]
     }
     
-    @scala.inline
-    implicit class AppChildrenMutableBuilder[Self <: AppChildren] (val x: Self) extends AnyVal {
+    extension [Self <: AppChildren](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -80,26 +72,20 @@ object mod {
   }
   object AppContainerProps {
     
-    @scala.inline
-    def apply(): AppContainerProps = {
+    inline def apply(): AppContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppContainerProps]
     }
     
-    @scala.inline
-    implicit class AppContainerPropsMutableBuilder[Self <: AppContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: AppContainerProps](x: Self) {
       
-      @scala.inline
-      def setErrorBoundary(value: Boolean): Self = StObject.set(x, "errorBoundary", value.asInstanceOf[js.Any])
+      inline def setErrorBoundary(value: Boolean): Self = StObject.set(x, "errorBoundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorBoundaryUndefined: Self = StObject.set(x, "errorBoundary", js.undefined)
+      inline def setErrorBoundaryUndefined: Self = StObject.set(x, "errorBoundary", js.undefined)
       
-      @scala.inline
-      def setErrorReporter(value: ComponentType[ErrorReporterProps]): Self = StObject.set(x, "errorReporter", value.asInstanceOf[js.Any])
+      inline def setErrorReporter(value: ComponentType[ErrorReporterProps]): Self = StObject.set(x, "errorReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorReporterUndefined: Self = StObject.set(x, "errorReporter", js.undefined)
+      inline def setErrorReporterUndefined: Self = StObject.set(x, "errorReporter", js.undefined)
     }
   }
   
@@ -189,8 +175,7 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ErrorOverlay: ComponentType[Errors],
       allowSFC: Boolean,
       disableHotRenderer: Boolean,
@@ -211,53 +196,37 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAllowSFC(value: Boolean): Self = StObject.set(x, "allowSFC", value.asInstanceOf[js.Any])
+      inline def setAllowSFC(value: Boolean): Self = StObject.set(x, "allowSFC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHotRenderer(value: Boolean): Self = StObject.set(x, "disableHotRenderer", value.asInstanceOf[js.Any])
+      inline def setDisableHotRenderer(value: Boolean): Self = StObject.set(x, "disableHotRenderer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableHotRendererWhenInjected(value: Boolean): Self = StObject.set(x, "disableHotRendererWhenInjected", value.asInstanceOf[js.Any])
+      inline def setDisableHotRendererWhenInjected(value: Boolean): Self = StObject.set(x, "disableHotRendererWhenInjected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorOverlay(value: ComponentType[Errors]): Self = StObject.set(x, "ErrorOverlay", value.asInstanceOf[js.Any])
+      inline def setErrorOverlay(value: ComponentType[Errors]): Self = StObject.set(x, "ErrorOverlay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorReporter(value: ComponentType[HotError]): Self = StObject.set(x, "errorReporter", value.asInstanceOf[js.Any])
+      inline def setErrorReporter(value: ComponentType[HotError]): Self = StObject.set(x, "errorReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreComponents(value: Boolean): Self = StObject.set(x, "ignoreComponents", value.asInstanceOf[js.Any])
+      inline def setIgnoreComponents(value: Boolean): Self = StObject.set(x, "ignoreComponents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSFC(value: Boolean): Self = StObject.set(x, "ignoreSFC", value.asInstanceOf[js.Any])
+      inline def setIgnoreSFC(value: Boolean): Self = StObject.set(x, "ignoreSFC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnComponentCreate(value: (js.Any, String) => js.Any): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
+      inline def setOnComponentCreate(value: (js.Any, String) => js.Any): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnComponentRegister(value: (js.Any, String, String) => js.Any): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
+      inline def setOnComponentRegister(value: (js.Any, String, String) => js.Any): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPureRender(value: Boolean): Self = StObject.set(x, "pureRender", value.asInstanceOf[js.Any])
+      inline def setPureRender(value: Boolean): Self = StObject.set(x, "pureRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPureSFC(value: Boolean): Self = StObject.set(x, "pureSFC", value.asInstanceOf[js.Any])
+      inline def setPureSFC(value: Boolean): Self = StObject.set(x, "pureSFC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReloadHooks(value: Boolean): Self = StObject.set(x, "reloadHooks", value.asInstanceOf[js.Any])
+      inline def setReloadHooks(value: Boolean): Self = StObject.set(x, "reloadHooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowReactDomPatchNotification(value: Boolean): Self = StObject.set(x, "showReactDomPatchNotification", value.asInstanceOf[js.Any])
+      inline def setShowReactDomPatchNotification(value: Boolean): Self = StObject.set(x, "showReactDomPatchNotification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackTailUpdates(value: Boolean): Self = StObject.set(x, "trackTailUpdates", value.asInstanceOf[js.Any])
+      inline def setTrackTailUpdates(value: Boolean): Self = StObject.set(x, "trackTailUpdates", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,17 +236,14 @@ object mod {
   }
   object ErrorReporterProps {
     
-    @scala.inline
-    def apply(error: js.Any): ErrorReporterProps = {
+    inline def apply(error: js.Any): ErrorReporterProps = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorReporterProps]
     }
     
-    @scala.inline
-    implicit class ErrorReporterPropsMutableBuilder[Self <: ErrorReporterProps] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorReporterProps](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,23 +255,18 @@ object mod {
   }
   object HotError {
     
-    @scala.inline
-    def apply(error: Error): HotError = {
+    inline def apply(error: Error): HotError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[HotError]
     }
     
-    @scala.inline
-    implicit class HotErrorMutableBuilder[Self <: HotError] (val x: Self) extends AnyVal {
+    extension [Self <: HotError](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
+      inline def setErrorInfo(value: ErrorInfo): Self = StObject.set(x, "errorInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorInfoUndefined: Self = StObject.set(x, "errorInfo", js.undefined)
+      inline def setErrorInfoUndefined: Self = StObject.set(x, "errorInfo", js.undefined)
     }
   }
 }

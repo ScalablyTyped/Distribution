@@ -14,22 +14,17 @@ trait ClassName extends StObject {
 }
 object ClassName {
   
-  @scala.inline
-  def apply(className: js.Any, item: js.Any, styles: js.Any): ClassName = {
+  inline def apply(className: js.Any, item: js.Any, styles: js.Any): ClassName = {
     val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassName]
   }
   
-  @scala.inline
-  implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+  extension [Self <: ClassName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: js.Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

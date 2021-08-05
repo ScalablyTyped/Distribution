@@ -20,17 +20,14 @@ object anon {
   }
   object Dictindex {
     
-    @scala.inline
-    def apply(behaviorClass: Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]): Dictindex = {
+    inline def apply(behaviorClass: Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]): Dictindex = {
       val __obj = js.Dynamic.literal(behaviorClass = behaviorClass.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dictindex]
     }
     
-    @scala.inline
-    implicit class DictindexMutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
+    extension [Self <: Dictindex](x: Self) {
       
-      @scala.inline
-      def setBehaviorClass(value: Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]): Self = StObject.set(x, "behaviorClass", value.asInstanceOf[js.Any])
+      inline def setBehaviorClass(value: Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]): Self = StObject.set(x, "behaviorClass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,17 +47,14 @@ object anon {
   }
   object PreventRender {
     
-    @scala.inline
-    def apply(preventRender: Boolean): PreventRender = {
+    inline def apply(preventRender: Boolean): PreventRender = {
       val __obj = js.Dynamic.literal(preventRender = preventRender.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreventRender]
     }
     
-    @scala.inline
-    implicit class PreventRenderMutableBuilder[Self <: PreventRender] (val x: Self) extends AnyVal {
+    extension [Self <: PreventRender](x: Self) {
       
-      @scala.inline
-      def setPreventRender(value: Boolean): Self = StObject.set(x, "preventRender", value.asInstanceOf[js.Any])
+      inline def setPreventRender(value: Boolean): Self = StObject.set(x, "preventRender", value.asInstanceOf[js.Any])
     }
   }
   

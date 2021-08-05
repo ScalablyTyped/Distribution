@@ -12,22 +12,17 @@ trait MapStyle extends StObject {
 }
 object MapStyle {
   
-  @scala.inline
-  def apply(features: js.Array[js.Any], style: String): MapStyle = {
+  inline def apply(features: js.Array[js.Any], style: String): MapStyle = {
     val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapStyle]
   }
   
-  @scala.inline
-  implicit class MapStyleMutableBuilder[Self <: MapStyle] (val x: Self) extends AnyVal {
+  extension [Self <: MapStyle](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: js.Array[js.Any]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: js.Array[js.Any]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesVarargs(value: js.Any*): Self = StObject.set(x, "features", js.Array(value :_*))
+    inline def setFeaturesVarargs(value: js.Any*): Self = StObject.set(x, "features", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

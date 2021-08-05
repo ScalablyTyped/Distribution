@@ -12,8 +12,7 @@ trait ASPxDesignerOpenDialog
 }
 object ASPxDesignerOpenDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     buttons: js.Array[js.Any],
     cancel: () => Unit,
     customize: (String, ASPxDesignerDialogModel) => Unit,
@@ -31,10 +30,8 @@ object ASPxDesignerOpenDialog {
     __obj.asInstanceOf[ASPxDesignerOpenDialog]
   }
   
-  @scala.inline
-  implicit class ASPxDesignerOpenDialogMutableBuilder[Self <: ASPxDesignerOpenDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxDesignerOpenDialog](x: Self) {
     
-    @scala.inline
-    def setOpen(value: String => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: String => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }
 }

@@ -21,8 +21,7 @@ trait JSXElement
 }
 object JSXElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment],
     openingElement: JSXOpeningElement
   ): JSXElement = {
@@ -31,25 +30,18 @@ object JSXElement {
     __obj.asInstanceOf[JSXElement]
   }
   
-  @scala.inline
-  implicit class JSXElementMutableBuilder[Self <: JSXElement] (val x: Self) extends AnyVal {
+  extension [Self <: JSXElement](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: (JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment)*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (JSXText | JSXExpressionContainer | JSXSpreadChild | JSXElement | JSXFragment)*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setClosingElement(value: JSXClosingElement): Self = StObject.set(x, "closingElement", value.asInstanceOf[js.Any])
+    inline def setClosingElement(value: JSXClosingElement): Self = StObject.set(x, "closingElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosingElementNull: Self = StObject.set(x, "closingElement", null)
+    inline def setClosingElementNull: Self = StObject.set(x, "closingElement", null)
     
-    @scala.inline
-    def setOpeningElement(value: JSXOpeningElement): Self = StObject.set(x, "openingElement", value.asInstanceOf[js.Any])
+    inline def setOpeningElement(value: JSXOpeningElement): Self = StObject.set(x, "openingElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXElement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

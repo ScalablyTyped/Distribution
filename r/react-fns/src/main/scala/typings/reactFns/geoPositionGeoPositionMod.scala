@@ -47,31 +47,24 @@ object geoPositionGeoPositionMod {
   }
   object GeoPositionProps {
     
-    @scala.inline
-    def apply(isLoading: Boolean): GeoPositionProps = {
+    inline def apply(isLoading: Boolean): GeoPositionProps = {
       val __obj = js.Dynamic.literal(isLoading = isLoading.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeoPositionProps]
     }
     
-    @scala.inline
-    implicit class GeoPositionPropsMutableBuilder[Self <: GeoPositionProps] (val x: Self) extends AnyVal {
+    extension [Self <: GeoPositionProps](x: Self) {
       
-      @scala.inline
-      def setCoords(value: Latitude): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: Latitude): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
+      inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PositionError */ js.Any
       ): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
     }
   }
 }

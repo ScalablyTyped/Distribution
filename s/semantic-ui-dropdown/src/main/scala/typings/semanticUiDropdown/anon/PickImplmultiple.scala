@@ -11,16 +11,13 @@ trait PickImplmultiple extends StObject {
 }
 object PickImplmultiple {
   
-  @scala.inline
-  def apply(multiple: String): PickImplmultiple = {
+  inline def apply(multiple: String): PickImplmultiple = {
     val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmultiple]
   }
   
-  @scala.inline
-  implicit class PickImplmultipleMutableBuilder[Self <: PickImplmultiple] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmultiple](x: Self) {
     
-    @scala.inline
-    def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: String): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
   }
 }

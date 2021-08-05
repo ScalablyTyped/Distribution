@@ -42,70 +42,49 @@ trait AndroidInstrumentationTest extends StObject {
 }
 object AndroidInstrumentationTest {
   
-  @scala.inline
-  def apply(): AndroidInstrumentationTest = {
+  inline def apply(): AndroidInstrumentationTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidInstrumentationTest]
   }
   
-  @scala.inline
-  implicit class AndroidInstrumentationTestMutableBuilder[Self <: AndroidInstrumentationTest] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidInstrumentationTest](x: Self) {
     
-    @scala.inline
-    def setAppApk(value: FileReference): Self = StObject.set(x, "appApk", value.asInstanceOf[js.Any])
+    inline def setAppApk(value: FileReference): Self = StObject.set(x, "appApk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppApkUndefined: Self = StObject.set(x, "appApk", js.undefined)
+    inline def setAppApkUndefined: Self = StObject.set(x, "appApk", js.undefined)
     
-    @scala.inline
-    def setAppBundle(value: AppBundle): Self = StObject.set(x, "appBundle", value.asInstanceOf[js.Any])
+    inline def setAppBundle(value: AppBundle): Self = StObject.set(x, "appBundle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppBundleUndefined: Self = StObject.set(x, "appBundle", js.undefined)
+    inline def setAppBundleUndefined: Self = StObject.set(x, "appBundle", js.undefined)
     
-    @scala.inline
-    def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
+    inline def setAppPackageId(value: String): Self = StObject.set(x, "appPackageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
+    inline def setAppPackageIdUndefined: Self = StObject.set(x, "appPackageId", js.undefined)
     
-    @scala.inline
-    def setOrchestratorOption(value: String): Self = StObject.set(x, "orchestratorOption", value.asInstanceOf[js.Any])
+    inline def setOrchestratorOption(value: String): Self = StObject.set(x, "orchestratorOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrchestratorOptionUndefined: Self = StObject.set(x, "orchestratorOption", js.undefined)
+    inline def setOrchestratorOptionUndefined: Self = StObject.set(x, "orchestratorOption", js.undefined)
     
-    @scala.inline
-    def setShardingOption(value: ShardingOption): Self = StObject.set(x, "shardingOption", value.asInstanceOf[js.Any])
+    inline def setShardingOption(value: ShardingOption): Self = StObject.set(x, "shardingOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardingOptionUndefined: Self = StObject.set(x, "shardingOption", js.undefined)
+    inline def setShardingOptionUndefined: Self = StObject.set(x, "shardingOption", js.undefined)
     
-    @scala.inline
-    def setTestApk(value: FileReference): Self = StObject.set(x, "testApk", value.asInstanceOf[js.Any])
+    inline def setTestApk(value: FileReference): Self = StObject.set(x, "testApk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestApkUndefined: Self = StObject.set(x, "testApk", js.undefined)
+    inline def setTestApkUndefined: Self = StObject.set(x, "testApk", js.undefined)
     
-    @scala.inline
-    def setTestPackageId(value: String): Self = StObject.set(x, "testPackageId", value.asInstanceOf[js.Any])
+    inline def setTestPackageId(value: String): Self = StObject.set(x, "testPackageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPackageIdUndefined: Self = StObject.set(x, "testPackageId", js.undefined)
+    inline def setTestPackageIdUndefined: Self = StObject.set(x, "testPackageId", js.undefined)
     
-    @scala.inline
-    def setTestRunnerClass(value: String): Self = StObject.set(x, "testRunnerClass", value.asInstanceOf[js.Any])
+    inline def setTestRunnerClass(value: String): Self = StObject.set(x, "testRunnerClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRunnerClassUndefined: Self = StObject.set(x, "testRunnerClass", js.undefined)
+    inline def setTestRunnerClassUndefined: Self = StObject.set(x, "testRunnerClass", js.undefined)
     
-    @scala.inline
-    def setTestTargets(value: js.Array[String]): Self = StObject.set(x, "testTargets", value.asInstanceOf[js.Any])
+    inline def setTestTargets(value: js.Array[String]): Self = StObject.set(x, "testTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
+    inline def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
     
-    @scala.inline
-    def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
+    inline def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
   }
 }

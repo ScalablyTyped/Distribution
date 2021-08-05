@@ -20,8 +20,7 @@ trait SAPeerAgent extends StObject {
 }
 object SAPeerAgent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appName: String,
     feature: js.Array[String],
     maxAllowedDataSize: Double,
@@ -33,28 +32,20 @@ object SAPeerAgent {
     __obj.asInstanceOf[SAPeerAgent]
   }
   
-  @scala.inline
-  implicit class SAPeerAgentMutableBuilder[Self <: SAPeerAgent] (val x: Self) extends AnyVal {
+  extension [Self <: SAPeerAgent](x: Self) {
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeature(value: js.Array[String]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: js.Array[String]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureVarargs(value: String*): Self = StObject.set(x, "feature", js.Array(value :_*))
+    inline def setFeatureVarargs(value: String*): Self = StObject.set(x, "feature", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxAllowedDataSize(value: Double): Self = StObject.set(x, "maxAllowedDataSize", value.asInstanceOf[js.Any])
+    inline def setMaxAllowedDataSize(value: Double): Self = StObject.set(x, "maxAllowedDataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerAccessory(value: SAPeerAccessory): Self = StObject.set(x, "peerAccessory", value.asInstanceOf[js.Any])
+    inline def setPeerAccessory(value: SAPeerAccessory): Self = StObject.set(x, "peerAccessory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerId(value: String): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
+    inline def setPeerId(value: String): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileVersion(value: String): Self = StObject.set(x, "profileVersion", value.asInstanceOf[js.Any])
+    inline def setProfileVersion(value: String): Self = StObject.set(x, "profileVersion", value.asInstanceOf[js.Any])
   }
 }

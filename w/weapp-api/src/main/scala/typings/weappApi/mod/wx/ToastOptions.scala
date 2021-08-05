@@ -25,37 +25,27 @@ trait ToastOptions
 }
 object ToastOptions {
   
-  @scala.inline
-  def apply(mask: Boolean, title: String): ToastOptions = {
+  inline def apply(mask: Boolean, title: String): ToastOptions = {
     val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToastOptions]
   }
   
-  @scala.inline
-  implicit class ToastOptionsMutableBuilder[Self <: ToastOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ToastOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setIcon(value: icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setImgage(value: String): Self = StObject.set(x, "imgage", value.asInstanceOf[js.Any])
+    inline def setImgage(value: String): Self = StObject.set(x, "imgage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgageUndefined: Self = StObject.set(x, "imgage", js.undefined)
+    inline def setImgageUndefined: Self = StObject.set(x, "imgage", js.undefined)
     
-    @scala.inline
-    def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait XSAXDocumentBuilder2
      with XDocumentHandler
 object XSAXDocumentBuilder2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Document: XDocument,
     DocumentFragment: XDocumentFragment,
     State: SAXDocumentBuilderState,

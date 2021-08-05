@@ -64,8 +64,7 @@ trait ServerInfo extends StObject {
 }
 object ServerInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     azureVersion: Double,
     engineEditionId: Double,
     isCloud: Boolean,
@@ -82,40 +81,28 @@ object ServerInfo {
     __obj.asInstanceOf[ServerInfo]
   }
   
-  @scala.inline
-  implicit class ServerInfoMutableBuilder[Self <: ServerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ServerInfo](x: Self) {
     
-    @scala.inline
-    def setAzureVersion(value: Double): Self = StObject.set(x, "azureVersion", value.asInstanceOf[js.Any])
+    inline def setAzureVersion(value: Double): Self = StObject.set(x, "azureVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineEditionId(value: Double): Self = StObject.set(x, "engineEditionId", value.asInstanceOf[js.Any])
+    inline def setEngineEditionId(value: Double): Self = StObject.set(x, "engineEditionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCloud(value: Boolean): Self = StObject.set(x, "isCloud", value.asInstanceOf[js.Any])
+    inline def setIsCloud(value: Boolean): Self = StObject.set(x, "isCloud", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
+    inline def setOsVersion(value: String): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerEdition(value: String): Self = StObject.set(x, "serverEdition", value.asInstanceOf[js.Any])
+    inline def setServerEdition(value: String): Self = StObject.set(x, "serverEdition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerLevel(value: String): Self = StObject.set(x, "serverLevel", value.asInstanceOf[js.Any])
+    inline def setServerLevel(value: String): Self = StObject.set(x, "serverLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerMajorVersion(value: Double): Self = StObject.set(x, "serverMajorVersion", value.asInstanceOf[js.Any])
+    inline def setServerMajorVersion(value: Double): Self = StObject.set(x, "serverMajorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerMinorVersion(value: Double): Self = StObject.set(x, "serverMinorVersion", value.asInstanceOf[js.Any])
+    inline def setServerMinorVersion(value: Double): Self = StObject.set(x, "serverMinorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerReleaseVersion(value: Double): Self = StObject.set(x, "serverReleaseVersion", value.asInstanceOf[js.Any])
+    inline def setServerReleaseVersion(value: Double): Self = StObject.set(x, "serverReleaseVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerVersion(value: String): Self = StObject.set(x, "serverVersion", value.asInstanceOf[js.Any])
+    inline def setServerVersion(value: String): Self = StObject.set(x, "serverVersion", value.asInstanceOf[js.Any])
   }
 }

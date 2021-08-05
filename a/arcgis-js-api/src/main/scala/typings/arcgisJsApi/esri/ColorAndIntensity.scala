@@ -27,8 +27,7 @@ trait ColorAndIntensity
 }
 object ColorAndIntensity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: ArrayLike[Double],
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -39,13 +38,10 @@ object ColorAndIntensity {
     __obj.asInstanceOf[ColorAndIntensity]
   }
   
-  @scala.inline
-  implicit class ColorAndIntensityMutableBuilder[Self <: ColorAndIntensity] (val x: Self) extends AnyVal {
+  extension [Self <: ColorAndIntensity](x: Self) {
     
-    @scala.inline
-    def setColor(value: ArrayLike[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ArrayLike[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
+    inline def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
   }
 }

@@ -13,25 +13,19 @@ trait PartialStatsProvided extends StObject {
 }
 object PartialStatsProvided {
   
-  @scala.inline
-  def apply(): PartialStatsProvided = {
+  inline def apply(): PartialStatsProvided = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStatsProvided]
   }
   
-  @scala.inline
-  implicit class PartialStatsProvidedMutableBuilder[Self <: PartialStatsProvided] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStatsProvided](x: Self) {
     
-    @scala.inline
-    def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
+    inline def setNbHits(value: Double): Self = StObject.set(x, "nbHits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNbHitsUndefined: Self = StObject.set(x, "nbHits", js.undefined)
+    inline def setNbHitsUndefined: Self = StObject.set(x, "nbHits", js.undefined)
     
-    @scala.inline
-    def setProcessingTimeMS(value: Double): Self = StObject.set(x, "processingTimeMS", value.asInstanceOf[js.Any])
+    inline def setProcessingTimeMS(value: Double): Self = StObject.set(x, "processingTimeMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingTimeMSUndefined: Self = StObject.set(x, "processingTimeMS", js.undefined)
+    inline def setProcessingTimeMSUndefined: Self = StObject.set(x, "processingTimeMS", js.undefined)
   }
 }

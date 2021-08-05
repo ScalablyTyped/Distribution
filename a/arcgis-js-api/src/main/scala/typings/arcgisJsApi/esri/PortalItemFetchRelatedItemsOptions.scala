@@ -20,8 +20,7 @@ trait PortalItemFetchRelatedItemsOptions
 }
 object PortalItemFetchRelatedItemsOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -30,13 +29,10 @@ object PortalItemFetchRelatedItemsOptions {
     __obj.asInstanceOf[PortalItemFetchRelatedItemsOptions]
   }
   
-  @scala.inline
-  implicit class PortalItemFetchRelatedItemsOptionsMutableBuilder[Self <: PortalItemFetchRelatedItemsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PortalItemFetchRelatedItemsOptions](x: Self) {
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait PeerVpcResult extends StObject {
 }
 object PeerVpcResult {
   
-  @scala.inline
-  def apply(): PeerVpcResult = {
+  inline def apply(): PeerVpcResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PeerVpcResult]
   }
   
-  @scala.inline
-  implicit class PeerVpcResultMutableBuilder[Self <: PeerVpcResult] (val x: Self) extends AnyVal {
+  extension [Self <: PeerVpcResult](x: Self) {
     
-    @scala.inline
-    def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
   }
 }

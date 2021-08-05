@@ -12,7 +12,7 @@ trait SoundFormat extends StObject {
   
   def Play(): Unit
   
-  @JSName("PowerPoint.SoundFormat_typekey")
+  /* private */ @JSName("PowerPoint.SoundFormat_typekey")
   var PowerPointDotSoundFormat_typekey: SoundFormat
   
   val SourceFullName: String
@@ -21,8 +21,7 @@ trait SoundFormat extends StObject {
 }
 object SoundFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Export: String => PpSoundFormatType,
     Import: String => Unit,
     Play: () => Unit,
@@ -35,25 +34,18 @@ object SoundFormat {
     __obj.asInstanceOf[SoundFormat]
   }
   
-  @scala.inline
-  implicit class SoundFormatMutableBuilder[Self <: SoundFormat] (val x: Self) extends AnyVal {
+  extension [Self <: SoundFormat](x: Self) {
     
-    @scala.inline
-    def setExport(value: String => PpSoundFormatType): Self = StObject.set(x, "Export", js.Any.fromFunction1(value))
+    inline def setExport(value: String => PpSoundFormatType): Self = StObject.set(x, "Export", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setImport(value: String => Unit): Self = StObject.set(x, "Import", js.Any.fromFunction1(value))
+    inline def setImport(value: String => Unit): Self = StObject.set(x, "Import", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPowerPointDotSoundFormat_typekey(value: SoundFormat): Self = StObject.set(x, "PowerPoint.SoundFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotSoundFormat_typekey(value: SoundFormat): Self = StObject.set(x, "PowerPoint.SoundFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceFullName(value: String): Self = StObject.set(x, "SourceFullName", value.asInstanceOf[js.Any])
+    inline def setSourceFullName(value: String): Self = StObject.set(x, "SourceFullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PpSoundFormatType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PpSoundFormatType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

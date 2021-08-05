@@ -14,25 +14,19 @@ trait Group extends StObject {
 }
 object Group {
   
-  @scala.inline
-  def apply(): Group = {
+  inline def apply(): Group = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

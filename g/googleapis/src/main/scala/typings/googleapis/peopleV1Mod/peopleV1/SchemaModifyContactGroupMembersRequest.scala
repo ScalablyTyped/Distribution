@@ -25,31 +25,23 @@ trait SchemaModifyContactGroupMembersRequest extends StObject {
 }
 object SchemaModifyContactGroupMembersRequest {
   
-  @scala.inline
-  def apply(): SchemaModifyContactGroupMembersRequest = {
+  inline def apply(): SchemaModifyContactGroupMembersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModifyContactGroupMembersRequest]
   }
   
-  @scala.inline
-  implicit class SchemaModifyContactGroupMembersRequestMutableBuilder[Self <: SchemaModifyContactGroupMembersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModifyContactGroupMembersRequest](x: Self) {
     
-    @scala.inline
-    def setResourceNamesToAdd(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToAdd", value.asInstanceOf[js.Any])
+    inline def setResourceNamesToAdd(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNamesToAddUndefined: Self = StObject.set(x, "resourceNamesToAdd", js.undefined)
+    inline def setResourceNamesToAddUndefined: Self = StObject.set(x, "resourceNamesToAdd", js.undefined)
     
-    @scala.inline
-    def setResourceNamesToAddVarargs(value: String*): Self = StObject.set(x, "resourceNamesToAdd", js.Array(value :_*))
+    inline def setResourceNamesToAddVarargs(value: String*): Self = StObject.set(x, "resourceNamesToAdd", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceNamesToRemove(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToRemove", value.asInstanceOf[js.Any])
+    inline def setResourceNamesToRemove(value: js.Array[String]): Self = StObject.set(x, "resourceNamesToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNamesToRemoveUndefined: Self = StObject.set(x, "resourceNamesToRemove", js.undefined)
+    inline def setResourceNamesToRemoveUndefined: Self = StObject.set(x, "resourceNamesToRemove", js.undefined)
     
-    @scala.inline
-    def setResourceNamesToRemoveVarargs(value: String*): Self = StObject.set(x, "resourceNamesToRemove", js.Array(value :_*))
+    inline def setResourceNamesToRemoveVarargs(value: String*): Self = StObject.set(x, "resourceNamesToRemove", js.Array(value :_*))
   }
 }

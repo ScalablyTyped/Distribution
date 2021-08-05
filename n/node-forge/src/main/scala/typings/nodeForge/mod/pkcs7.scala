@@ -16,11 +16,9 @@ object pkcs7 {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createEnvelopedData(): PkcsEnvelopedData = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnvelopedData")().asInstanceOf[PkcsEnvelopedData]
+  inline def createEnvelopedData(): PkcsEnvelopedData = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnvelopedData")().asInstanceOf[PkcsEnvelopedData]
   
-  @scala.inline
-  def createSignedData(): PkcsSignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("createSignedData")().asInstanceOf[PkcsSignedData]
+  inline def createSignedData(): PkcsSignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("createSignedData")().asInstanceOf[PkcsSignedData]
   
   trait PkcsEnvelopedData extends StObject {
     
@@ -34,29 +32,22 @@ object pkcs7 {
   }
   object PkcsEnvelopedData {
     
-    @scala.inline
-    def apply(addRecipient: Certificate => Unit, encrypt: () => Unit, toAsn1: () => Asn1): PkcsEnvelopedData = {
+    inline def apply(addRecipient: Certificate => Unit, encrypt: () => Unit, toAsn1: () => Asn1): PkcsEnvelopedData = {
       val __obj = js.Dynamic.literal(addRecipient = js.Any.fromFunction1(addRecipient), encrypt = js.Any.fromFunction0(encrypt), toAsn1 = js.Any.fromFunction0(toAsn1))
       __obj.asInstanceOf[PkcsEnvelopedData]
     }
     
-    @scala.inline
-    implicit class PkcsEnvelopedDataMutableBuilder[Self <: PkcsEnvelopedData] (val x: Self) extends AnyVal {
+    extension [Self <: PkcsEnvelopedData](x: Self) {
       
-      @scala.inline
-      def setAddRecipient(value: Certificate => Unit): Self = StObject.set(x, "addRecipient", js.Any.fromFunction1(value))
+      inline def setAddRecipient(value: Certificate => Unit): Self = StObject.set(x, "addRecipient", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContent(value: String | ByteBuffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | ByteBuffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setEncrypt(value: () => Unit): Self = StObject.set(x, "encrypt", js.Any.fromFunction0(value))
+      inline def setEncrypt(value: () => Unit): Self = StObject.set(x, "encrypt", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToAsn1(value: () => Asn1): Self = StObject.set(x, "toAsn1", js.Any.fromFunction0(value))
+      inline def setToAsn1(value: () => Asn1): Self = StObject.set(x, "toAsn1", js.Any.fromFunction0(value))
     }
   }
   

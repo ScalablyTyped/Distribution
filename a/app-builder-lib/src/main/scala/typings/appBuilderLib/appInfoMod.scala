@@ -40,7 +40,7 @@ object appInfoMod {
     
     def id: String = js.native
     
-    val info: js.Any = js.native
+    /* private */ val info: js.Any = js.native
     
     def linuxPackageName: String = js.native
     
@@ -50,7 +50,7 @@ object appInfoMod {
     
     /* private */ def notNullDevMetadata: js.Any = js.native
     
-    val platformSpecificOptions: js.Any = js.native
+    /* private */ val platformSpecificOptions: js.Any = js.native
     
     val productFilename: String = js.native
     
@@ -67,6 +67,5 @@ object appInfoMod {
     val version: String = js.native
   }
   
-  @scala.inline
-  def smarten(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("smarten")(s.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def smarten(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("smarten")(s.asInstanceOf[js.Any]).asInstanceOf[String]
 }

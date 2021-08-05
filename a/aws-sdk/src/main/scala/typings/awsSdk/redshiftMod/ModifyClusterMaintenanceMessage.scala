@@ -38,46 +38,33 @@ trait ModifyClusterMaintenanceMessage extends StObject {
 }
 object ModifyClusterMaintenanceMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): ModifyClusterMaintenanceMessage = {
+  inline def apply(ClusterIdentifier: String): ModifyClusterMaintenanceMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterMaintenanceMessage]
   }
   
-  @scala.inline
-  implicit class ModifyClusterMaintenanceMessageMutableBuilder[Self <: ModifyClusterMaintenanceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClusterMaintenanceMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenance(value: BooleanOptional): Self = StObject.set(x, "DeferMaintenance", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenance(value: BooleanOptional): Self = StObject.set(x, "DeferMaintenance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceDuration(value: IntegerOptional): Self = StObject.set(x, "DeferMaintenanceDuration", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceDuration(value: IntegerOptional): Self = StObject.set(x, "DeferMaintenanceDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceDurationUndefined: Self = StObject.set(x, "DeferMaintenanceDuration", js.undefined)
+    inline def setDeferMaintenanceDurationUndefined: Self = StObject.set(x, "DeferMaintenanceDuration", js.undefined)
     
-    @scala.inline
-    def setDeferMaintenanceEndTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceEndTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
+    inline def setDeferMaintenanceEndTimeUndefined: Self = StObject.set(x, "DeferMaintenanceEndTime", js.undefined)
     
-    @scala.inline
-    def setDeferMaintenanceIdentifier(value: String): Self = StObject.set(x, "DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceIdentifier(value: String): Self = StObject.set(x, "DeferMaintenanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
+    inline def setDeferMaintenanceIdentifierUndefined: Self = StObject.set(x, "DeferMaintenanceIdentifier", js.undefined)
     
-    @scala.inline
-    def setDeferMaintenanceStartTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
+    inline def setDeferMaintenanceStartTime(value: TStamp): Self = StObject.set(x, "DeferMaintenanceStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
+    inline def setDeferMaintenanceStartTimeUndefined: Self = StObject.set(x, "DeferMaintenanceStartTime", js.undefined)
     
-    @scala.inline
-    def setDeferMaintenanceUndefined: Self = StObject.set(x, "DeferMaintenance", js.undefined)
+    inline def setDeferMaintenanceUndefined: Self = StObject.set(x, "DeferMaintenance", js.undefined)
   }
 }

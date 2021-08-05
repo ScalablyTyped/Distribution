@@ -38,46 +38,33 @@ trait GetCurrentMetricDataRequest extends StObject {
 }
 object GetCurrentMetricDataRequest {
   
-  @scala.inline
-  def apply(CurrentMetrics: CurrentMetrics, Filters: Filters, InstanceId: InstanceId): GetCurrentMetricDataRequest = {
+  inline def apply(CurrentMetrics: CurrentMetrics, Filters: Filters, InstanceId: InstanceId): GetCurrentMetricDataRequest = {
     val __obj = js.Dynamic.literal(CurrentMetrics = CurrentMetrics.asInstanceOf[js.Any], Filters = Filters.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCurrentMetricDataRequest]
   }
   
-  @scala.inline
-  implicit class GetCurrentMetricDataRequestMutableBuilder[Self <: GetCurrentMetricDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCurrentMetricDataRequest](x: Self) {
     
-    @scala.inline
-    def setCurrentMetrics(value: CurrentMetrics): Self = StObject.set(x, "CurrentMetrics", value.asInstanceOf[js.Any])
+    inline def setCurrentMetrics(value: CurrentMetrics): Self = StObject.set(x, "CurrentMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentMetricsVarargs(value: CurrentMetric*): Self = StObject.set(x, "CurrentMetrics", js.Array(value :_*))
+    inline def setCurrentMetricsVarargs(value: CurrentMetric*): Self = StObject.set(x, "CurrentMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupings(value: Groupings): Self = StObject.set(x, "Groupings", value.asInstanceOf[js.Any])
+    inline def setGroupings(value: Groupings): Self = StObject.set(x, "Groupings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupingsUndefined: Self = StObject.set(x, "Groupings", js.undefined)
+    inline def setGroupingsUndefined: Self = StObject.set(x, "Groupings", js.undefined)
     
-    @scala.inline
-    def setGroupingsVarargs(value: Grouping*): Self = StObject.set(x, "Groupings", js.Array(value :_*))
+    inline def setGroupingsVarargs(value: Grouping*): Self = StObject.set(x, "Groupings", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResult100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResult100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

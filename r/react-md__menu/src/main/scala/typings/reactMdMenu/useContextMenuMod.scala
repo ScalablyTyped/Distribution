@@ -18,10 +18,8 @@ object useContextMenuMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ReturnValue[CE]]
-  @scala.inline
-  def useContextMenu[CE /* <: HTMLElement */](hasIdPropRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasIdPropRefAnchorClassNamesDisableDeselect.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[CE]]
+  inline def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ReturnValue[CE]]
+  inline def useContextMenu[CE /* <: HTMLElement */](hasIdPropRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasIdPropRefAnchorClassNamesDisableDeselect.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[CE]]
   
   trait Options extends StObject {
     
@@ -61,50 +59,36 @@ object useContextMenuMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      @scala.inline
-      def setDisableDeselect(value: Boolean): Self = StObject.set(x, "disableDeselect", value.asInstanceOf[js.Any])
+      inline def setDisableDeselect(value: Boolean): Self = StObject.set(x, "disableDeselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableDeselectUndefined: Self = StObject.set(x, "disableDeselect", js.undefined)
+      inline def setDisableDeselectUndefined: Self = StObject.set(x, "disableDeselect", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ HTMLDivElement | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
@@ -150,26 +134,19 @@ object useContextMenuMod {
   trait ProvidedPropNames extends StObject
   object ProvidedPropNames {
     
-    @scala.inline
-    def anchor: typings.reactMdMenu.reactMdMenuStrings.anchor = "anchor".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.anchor]
+    inline def anchor: typings.reactMdMenu.reactMdMenuStrings.anchor = "anchor".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.anchor]
     
-    @scala.inline
-    def classNames: typings.reactMdMenu.reactMdMenuStrings.classNames = "classNames".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.classNames]
+    inline def classNames: typings.reactMdMenu.reactMdMenuStrings.classNames = "classNames".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.classNames]
     
-    @scala.inline
-    def disableControlClickOkay: typings.reactMdMenu.reactMdMenuStrings.disableControlClickOkay = "disableControlClickOkay".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.disableControlClickOkay]
+    inline def disableControlClickOkay: typings.reactMdMenu.reactMdMenuStrings.disableControlClickOkay = "disableControlClickOkay".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.disableControlClickOkay]
     
-    @scala.inline
-    def id: typings.reactMdMenu.reactMdMenuStrings.id = "id".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.id]
+    inline def id: typings.reactMdMenu.reactMdMenuStrings.id = "id".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.id]
     
-    @scala.inline
-    def onRequestClose: typings.reactMdMenu.reactMdMenuStrings.onRequestClose = "onRequestClose".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.onRequestClose]
+    inline def onRequestClose: typings.reactMdMenu.reactMdMenuStrings.onRequestClose = "onRequestClose".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.onRequestClose]
     
-    @scala.inline
-    def positionOptions: typings.reactMdMenu.reactMdMenuStrings.positionOptions = "positionOptions".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.positionOptions]
+    inline def positionOptions: typings.reactMdMenu.reactMdMenuStrings.positionOptions = "positionOptions".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.positionOptions]
     
-    @scala.inline
-    def visible: typings.reactMdMenu.reactMdMenuStrings.visible = "visible".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.visible]
+    inline def visible: typings.reactMdMenu.reactMdMenuStrings.visible = "visible".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.visible]
   }
   
   type ReturnValue[CE /* <: HTMLElement */] = js.Tuple3[ProvidedContextMenuProps, MouseEventHandler[CE], VisibilityDispatcher]

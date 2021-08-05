@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * During the deprecation period this constructor is private, to avoid consumers from creating
   * a `Unary` with the fallback properties for `Binary`.
   */
-class Unary protected ()
+/* private */ class Unary ()
   extends typings.angularCompiler.publicApiMod.Unary
 /* static members */
 object Unary {
@@ -22,8 +22,7 @@ object Unary {
   /**
     * Creates a unary minus expression "-x", represented as `Binary` using "0 - x".
     */
-  @scala.inline
-  def createMinus(
+  inline def createMinus(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
     expr: typings.angularCompiler.astMod.AST
@@ -32,8 +31,7 @@ object Unary {
   /**
     * Creates a unary plus expression "+x", represented as `Binary` using "x - 0".
     */
-  @scala.inline
-  def createPlus(
+  inline def createPlus(
     span: typings.angularCompiler.astMod.ParseSpan,
     sourceSpan: typings.angularCompiler.astMod.AbsoluteSourceSpan,
     expr: typings.angularCompiler.astMod.AST

@@ -22,31 +22,23 @@ trait IAuto
 }
 object IAuto {
   
-  @scala.inline
-  def apply(): IAuto = {
+  inline def apply(): IAuto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAuto]
   }
   
-  @scala.inline
-  implicit class IAutoMutableBuilder[Self <: IAuto] (val x: Self) extends AnyVal {
+  extension [Self <: IAuto](x: Self) {
     
-    @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
+    inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
-    @scala.inline
-    def setSetHeightInDom(value: Boolean): Self = StObject.set(x, "setHeightInDom", value.asInstanceOf[js.Any])
+    inline def setSetHeightInDom(value: Boolean): Self = StObject.set(x, "setHeightInDom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetHeightInDomUndefined: Self = StObject.set(x, "setHeightInDom", js.undefined)
+    inline def setSetHeightInDomUndefined: Self = StObject.set(x, "setHeightInDom", js.undefined)
     
-    @scala.inline
-    def setSetWidthInDom(value: Boolean): Self = StObject.set(x, "setWidthInDom", value.asInstanceOf[js.Any])
+    inline def setSetWidthInDom(value: Boolean): Self = StObject.set(x, "setWidthInDom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetWidthInDomUndefined: Self = StObject.set(x, "setWidthInDom", js.undefined)
+    inline def setSetWidthInDomUndefined: Self = StObject.set(x, "setWidthInDom", js.undefined)
   }
 }

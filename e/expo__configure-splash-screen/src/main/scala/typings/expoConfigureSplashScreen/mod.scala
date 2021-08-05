@@ -48,9 +48,7 @@ object mod {
     val LIGHT_CONTENT: `light-content` = js.native
   }
   
-  @scala.inline
-  def configureAndroidSplashScreen(projectRootPath: String, configJSON: AndroidSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureAndroidSplashScreen")(projectRootPath.asInstanceOf[js.Any], configJSON.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def configureAndroidSplashScreen(projectRootPath: String, configJSON: AndroidSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureAndroidSplashScreen")(projectRootPath.asInstanceOf[js.Any], configJSON.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def configureIosSplashScreen(projectRootPath: String, config: IosSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureIosSplashScreen")(projectRootPath.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def configureIosSplashScreen(projectRootPath: String, config: IosSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("configureIosSplashScreen")(projectRootPath.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

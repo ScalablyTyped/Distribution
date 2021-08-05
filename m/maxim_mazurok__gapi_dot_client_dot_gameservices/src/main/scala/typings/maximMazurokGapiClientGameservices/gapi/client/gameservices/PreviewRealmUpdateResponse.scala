@@ -14,25 +14,19 @@ trait PreviewRealmUpdateResponse extends StObject {
 }
 object PreviewRealmUpdateResponse {
   
-  @scala.inline
-  def apply(): PreviewRealmUpdateResponse = {
+  inline def apply(): PreviewRealmUpdateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreviewRealmUpdateResponse]
   }
   
-  @scala.inline
-  implicit class PreviewRealmUpdateResponseMutableBuilder[Self <: PreviewRealmUpdateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PreviewRealmUpdateResponse](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setTargetState(value: TargetState): Self = StObject.set(x, "targetState", value.asInstanceOf[js.Any])
+    inline def setTargetState(value: TargetState): Self = StObject.set(x, "targetState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetStateUndefined: Self = StObject.set(x, "targetState", js.undefined)
+    inline def setTargetStateUndefined: Self = StObject.set(x, "targetState", js.undefined)
   }
 }

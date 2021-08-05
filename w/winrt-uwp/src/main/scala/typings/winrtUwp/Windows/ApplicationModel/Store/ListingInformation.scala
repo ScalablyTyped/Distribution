@@ -39,8 +39,7 @@ trait ListingInformation extends StObject {
 }
 object ListingInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ageRating: Double,
     currencyCode: js.Any,
     currentMarket: String,
@@ -56,37 +55,26 @@ object ListingInformation {
     __obj.asInstanceOf[ListingInformation]
   }
   
-  @scala.inline
-  implicit class ListingInformationMutableBuilder[Self <: ListingInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ListingInformation](x: Self) {
     
-    @scala.inline
-    def setAgeRating(value: Double): Self = StObject.set(x, "ageRating", value.asInstanceOf[js.Any])
+    inline def setAgeRating(value: Double): Self = StObject.set(x, "ageRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCode(value: js.Any): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: js.Any): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentMarket(value: String): Self = StObject.set(x, "currentMarket", value.asInstanceOf[js.Any])
+    inline def setCurrentMarket(value: String): Self = StObject.set(x, "currentMarket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedBasePrice(value: js.Any): Self = StObject.set(x, "formattedBasePrice", value.asInstanceOf[js.Any])
+    inline def setFormattedBasePrice(value: js.Any): Self = StObject.set(x, "formattedBasePrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
+    inline def setFormattedPrice(value: String): Self = StObject.set(x, "formattedPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOnSale(value: js.Any): Self = StObject.set(x, "isOnSale", value.asInstanceOf[js.Any])
+    inline def setIsOnSale(value: js.Any): Self = StObject.set(x, "isOnSale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductListings(value: IMapView[String, ProductListing]): Self = StObject.set(x, "productListings", value.asInstanceOf[js.Any])
+    inline def setProductListings(value: IMapView[String, ProductListing]): Self = StObject.set(x, "productListings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaleEndDate(value: js.Any): Self = StObject.set(x, "saleEndDate", value.asInstanceOf[js.Any])
+    inline def setSaleEndDate(value: js.Any): Self = StObject.set(x, "saleEndDate", value.asInstanceOf[js.Any])
   }
 }

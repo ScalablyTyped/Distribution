@@ -18,25 +18,19 @@ trait PlacementConstraint extends StObject {
 }
 object PlacementConstraint {
   
-  @scala.inline
-  def apply(): PlacementConstraint = {
+  inline def apply(): PlacementConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlacementConstraint]
   }
   
-  @scala.inline
-  implicit class PlacementConstraintMutableBuilder[Self <: PlacementConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: PlacementConstraint](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setType(value: PlacementConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PlacementConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

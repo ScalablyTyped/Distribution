@@ -22,6 +22,5 @@ object Face {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getMaxNdnPacketSize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxNdnPacketSize")().asInstanceOf[Double]
+  inline def getMaxNdnPacketSize(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxNdnPacketSize")().asInstanceOf[Double]
 }

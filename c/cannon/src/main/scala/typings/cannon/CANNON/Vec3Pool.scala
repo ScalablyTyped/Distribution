@@ -9,8 +9,7 @@ trait Vec3Pool
      with Pool
 object Vec3Pool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructObject: () => js.Any,
     get: () => js.Any,
     objects: js.Array[js.Any],

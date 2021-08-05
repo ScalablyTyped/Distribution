@@ -65,67 +65,47 @@ trait HlsManifestCreateOrUpdateParameters extends StObject {
 }
 object HlsManifestCreateOrUpdateParameters {
   
-  @scala.inline
-  def apply(Id: string): HlsManifestCreateOrUpdateParameters = {
+  inline def apply(Id: string): HlsManifestCreateOrUpdateParameters = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[HlsManifestCreateOrUpdateParameters]
   }
   
-  @scala.inline
-  implicit class HlsManifestCreateOrUpdateParametersMutableBuilder[Self <: HlsManifestCreateOrUpdateParameters] (val x: Self) extends AnyVal {
+  extension [Self <: HlsManifestCreateOrUpdateParameters](x: Self) {
     
-    @scala.inline
-    def setAdMarkers(value: AdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
+    inline def setAdMarkers(value: AdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
+    inline def setAdMarkersUndefined: Self = StObject.set(x, "AdMarkers", js.undefined)
     
-    @scala.inline
-    def setAdTriggers(value: AdTriggers): Self = StObject.set(x, "AdTriggers", value.asInstanceOf[js.Any])
+    inline def setAdTriggers(value: AdTriggers): Self = StObject.set(x, "AdTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdTriggersUndefined: Self = StObject.set(x, "AdTriggers", js.undefined)
+    inline def setAdTriggersUndefined: Self = StObject.set(x, "AdTriggers", js.undefined)
     
-    @scala.inline
-    def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value :_*))
+    inline def setAdTriggersVarargs(value: AdTriggersElement*): Self = StObject.set(x, "AdTriggers", js.Array(value :_*))
     
-    @scala.inline
-    def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = StObject.set(x, "AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
+    inline def setAdsOnDeliveryRestrictions(value: AdsOnDeliveryRestrictions): Self = StObject.set(x, "AdsOnDeliveryRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdsOnDeliveryRestrictionsUndefined: Self = StObject.set(x, "AdsOnDeliveryRestrictions", js.undefined)
+    inline def setAdsOnDeliveryRestrictionsUndefined: Self = StObject.set(x, "AdsOnDeliveryRestrictions", js.undefined)
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeIframeOnlyStream(value: boolean): Self = StObject.set(x, "IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
+    inline def setIncludeIframeOnlyStream(value: boolean): Self = StObject.set(x, "IncludeIframeOnlyStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeIframeOnlyStreamUndefined: Self = StObject.set(x, "IncludeIframeOnlyStream", js.undefined)
+    inline def setIncludeIframeOnlyStreamUndefined: Self = StObject.set(x, "IncludeIframeOnlyStream", js.undefined)
     
-    @scala.inline
-    def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
+    inline def setManifestName(value: string): Self = StObject.set(x, "ManifestName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
+    inline def setManifestNameUndefined: Self = StObject.set(x, "ManifestName", js.undefined)
     
-    @scala.inline
-    def setPlaylistType(value: PlaylistType): Self = StObject.set(x, "PlaylistType", value.asInstanceOf[js.Any])
+    inline def setPlaylistType(value: PlaylistType): Self = StObject.set(x, "PlaylistType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistTypeUndefined: Self = StObject.set(x, "PlaylistType", js.undefined)
+    inline def setPlaylistTypeUndefined: Self = StObject.set(x, "PlaylistType", js.undefined)
     
-    @scala.inline
-    def setPlaylistWindowSeconds(value: integer): Self = StObject.set(x, "PlaylistWindowSeconds", value.asInstanceOf[js.Any])
+    inline def setPlaylistWindowSeconds(value: integer): Self = StObject.set(x, "PlaylistWindowSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistWindowSecondsUndefined: Self = StObject.set(x, "PlaylistWindowSeconds", js.undefined)
+    inline def setPlaylistWindowSecondsUndefined: Self = StObject.set(x, "PlaylistWindowSeconds", js.undefined)
     
-    @scala.inline
-    def setProgramDateTimeIntervalSeconds(value: integer): Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", value.asInstanceOf[js.Any])
+    inline def setProgramDateTimeIntervalSeconds(value: integer): Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramDateTimeIntervalSecondsUndefined: Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", js.undefined)
+    inline def setProgramDateTimeIntervalSecondsUndefined: Self = StObject.set(x, "ProgramDateTimeIntervalSeconds", js.undefined)
   }
 }

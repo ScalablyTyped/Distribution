@@ -38,8 +38,7 @@ trait Clang extends StObject {
 }
 object Clang {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clang: Double,
     host_arch: String,
     node_install_npm: Boolean,
@@ -60,52 +59,36 @@ object Clang {
     __obj.asInstanceOf[Clang]
   }
   
-  @scala.inline
-  implicit class ClangMutableBuilder[Self <: Clang] (val x: Self) extends AnyVal {
+  extension [Self <: Clang](x: Self) {
     
-    @scala.inline
-    def setClang(value: Double): Self = StObject.set(x, "clang", value.asInstanceOf[js.Any])
+    inline def setClang(value: Double): Self = StObject.set(x, "clang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost_arch(value: String): Self = StObject.set(x, "host_arch", value.asInstanceOf[js.Any])
+    inline def setHost_arch(value: String): Self = StObject.set(x, "host_arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_install_npm(value: Boolean): Self = StObject.set(x, "node_install_npm", value.asInstanceOf[js.Any])
+    inline def setNode_install_npm(value: Boolean): Self = StObject.set(x, "node_install_npm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_install_waf(value: Boolean): Self = StObject.set(x, "node_install_waf", value.asInstanceOf[js.Any])
+    inline def setNode_install_waf(value: Boolean): Self = StObject.set(x, "node_install_waf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_prefix(value: String): Self = StObject.set(x, "node_prefix", value.asInstanceOf[js.Any])
+    inline def setNode_prefix(value: String): Self = StObject.set(x, "node_prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_shared_openssl(value: Boolean): Self = StObject.set(x, "node_shared_openssl", value.asInstanceOf[js.Any])
+    inline def setNode_shared_openssl(value: Boolean): Self = StObject.set(x, "node_shared_openssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_shared_v8(value: Boolean): Self = StObject.set(x, "node_shared_v8", value.asInstanceOf[js.Any])
+    inline def setNode_shared_v8(value: Boolean): Self = StObject.set(x, "node_shared_v8", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_shared_zlib(value: Boolean): Self = StObject.set(x, "node_shared_zlib", value.asInstanceOf[js.Any])
+    inline def setNode_shared_zlib(value: Boolean): Self = StObject.set(x, "node_shared_zlib", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_use_dtrace(value: Boolean): Self = StObject.set(x, "node_use_dtrace", value.asInstanceOf[js.Any])
+    inline def setNode_use_dtrace(value: Boolean): Self = StObject.set(x, "node_use_dtrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_use_etw(value: Boolean): Self = StObject.set(x, "node_use_etw", value.asInstanceOf[js.Any])
+    inline def setNode_use_etw(value: Boolean): Self = StObject.set(x, "node_use_etw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_use_openssl(value: Boolean): Self = StObject.set(x, "node_use_openssl", value.asInstanceOf[js.Any])
+    inline def setNode_use_openssl(value: Boolean): Self = StObject.set(x, "node_use_openssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget_arch(value: String): Self = StObject.set(x, "target_arch", value.asInstanceOf[js.Any])
+    inline def setTarget_arch(value: String): Self = StObject.set(x, "target_arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV8_no_strict_aliasing(value: Double): Self = StObject.set(x, "v8_no_strict_aliasing", value.asInstanceOf[js.Any])
+    inline def setV8_no_strict_aliasing(value: Double): Self = StObject.set(x, "v8_no_strict_aliasing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setV8_use_snapshot(value: Boolean): Self = StObject.set(x, "v8_use_snapshot", value.asInstanceOf[js.Any])
+    inline def setV8_use_snapshot(value: Boolean): Self = StObject.set(x, "v8_use_snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

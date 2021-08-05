@@ -28,37 +28,27 @@ trait RegisterUserResponse extends StObject {
 }
 object RegisterUserResponse {
   
-  @scala.inline
-  def apply(): RegisterUserResponse = {
+  inline def apply(): RegisterUserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterUserResponse]
   }
   
-  @scala.inline
-  implicit class RegisterUserResponseMutableBuilder[Self <: RegisterUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterUserResponse](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInvitationUrl(value: String): Self = StObject.set(x, "UserInvitationUrl", value.asInstanceOf[js.Any])
+    inline def setUserInvitationUrl(value: String): Self = StObject.set(x, "UserInvitationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInvitationUrlUndefined: Self = StObject.set(x, "UserInvitationUrl", js.undefined)
+    inline def setUserInvitationUrlUndefined: Self = StObject.set(x, "UserInvitationUrl", js.undefined)
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "User", js.undefined)
   }
 }

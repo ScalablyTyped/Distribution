@@ -10,16 +10,13 @@ trait IControlChannelTriggerEventDetails extends StObject {
 }
 object IControlChannelTriggerEventDetails {
   
-  @scala.inline
-  def apply(controlChannelTrigger: ControlChannelTrigger): IControlChannelTriggerEventDetails = {
+  inline def apply(controlChannelTrigger: ControlChannelTrigger): IControlChannelTriggerEventDetails = {
     val __obj = js.Dynamic.literal(controlChannelTrigger = controlChannelTrigger.asInstanceOf[js.Any])
     __obj.asInstanceOf[IControlChannelTriggerEventDetails]
   }
   
-  @scala.inline
-  implicit class IControlChannelTriggerEventDetailsMutableBuilder[Self <: IControlChannelTriggerEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IControlChannelTriggerEventDetails](x: Self) {
     
-    @scala.inline
-    def setControlChannelTrigger(value: ControlChannelTrigger): Self = StObject.set(x, "controlChannelTrigger", value.asInstanceOf[js.Any])
+    inline def setControlChannelTrigger(value: ControlChannelTrigger): Self = StObject.set(x, "controlChannelTrigger", value.asInstanceOf[js.Any])
   }
 }

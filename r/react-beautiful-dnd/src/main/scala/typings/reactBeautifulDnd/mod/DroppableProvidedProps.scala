@@ -14,21 +14,17 @@ trait DroppableProvidedProps extends StObject {
 }
 object DroppableProvidedProps {
   
-  @scala.inline
-  def apply(`data-rbd-droppable-context-id`: String, `data-rbd-droppable-id`: DroppableId): DroppableProvidedProps = {
+  inline def apply(`data-rbd-droppable-context-id`: String, `data-rbd-droppable-id`: DroppableId): DroppableProvidedProps = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("data-rbd-droppable-context-id")(`data-rbd-droppable-context-id`.asInstanceOf[js.Any])
     __obj.updateDynamic("data-rbd-droppable-id")(`data-rbd-droppable-id`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableProvidedProps]
   }
   
-  @scala.inline
-  implicit class DroppableProvidedPropsMutableBuilder[Self <: DroppableProvidedProps] (val x: Self) extends AnyVal {
+  extension [Self <: DroppableProvidedProps](x: Self) {
     
-    @scala.inline
-    def `setData-rbd-droppable-context-id`(value: String): Self = StObject.set(x, "data-rbd-droppable-context-id", value.asInstanceOf[js.Any])
+    inline def `setData-rbd-droppable-context-id`(value: String): Self = StObject.set(x, "data-rbd-droppable-context-id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setData-rbd-droppable-id`(value: DroppableId): Self = StObject.set(x, "data-rbd-droppable-id", value.asInstanceOf[js.Any])
+    inline def `setData-rbd-droppable-id`(value: DroppableId): Self = StObject.set(x, "data-rbd-droppable-id", value.asInstanceOf[js.Any])
   }
 }

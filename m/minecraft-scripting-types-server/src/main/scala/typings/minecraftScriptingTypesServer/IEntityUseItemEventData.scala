@@ -28,22 +28,17 @@ trait IEntityUseItemEventData extends StObject {
 }
 object IEntityUseItemEventData {
   
-  @scala.inline
-  def apply(entity: IEntity, item_stack: IItemStack, use_method: String): IEntityUseItemEventData = {
+  inline def apply(entity: IEntity, item_stack: IItemStack, use_method: String): IEntityUseItemEventData = {
     val __obj = js.Dynamic.literal(entity = entity.asInstanceOf[js.Any], item_stack = item_stack.asInstanceOf[js.Any], use_method = use_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEntityUseItemEventData]
   }
   
-  @scala.inline
-  implicit class IEntityUseItemEventDataMutableBuilder[Self <: IEntityUseItemEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IEntityUseItemEventData](x: Self) {
     
-    @scala.inline
-    def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem_stack(value: IItemStack): Self = StObject.set(x, "item_stack", value.asInstanceOf[js.Any])
+    inline def setItem_stack(value: IItemStack): Self = StObject.set(x, "item_stack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse_method(value: String): Self = StObject.set(x, "use_method", value.asInstanceOf[js.Any])
+    inline def setUse_method(value: String): Self = StObject.set(x, "use_method", value.asInstanceOf[js.Any])
   }
 }

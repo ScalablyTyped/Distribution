@@ -57,8 +57,7 @@ object PageVariable {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
+  inline def create(model: IModel): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -69,8 +68,7 @@ object PageVariable {
     *  8.8.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAttributeWidgetUnderSourceVariable(container: AttributeWidget): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
+  inline def createInAttributeWidgetUnderSourceVariable(container: AttributeWidget): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -81,8 +79,7 @@ object PageVariable {
     *  8.4.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowParameterMappingUnderVariable(container: MicroflowParameterMapping): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
+  inline def createInMicroflowParameterMappingUnderVariable(container: MicroflowParameterMapping): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -93,8 +90,7 @@ object PageVariable {
     *  8.4.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInNanoflowParameterMappingUnderVariable(container: NanoflowParameterMapping): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
+  inline def createInNanoflowParameterMappingUnderVariable(container: NanoflowParameterMapping): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNanoflowParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -105,20 +101,17 @@ object PageVariable {
     *  8.8.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderSourceVariable(container: WidgetValue): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
+  inline def createInWidgetValueUnderSourceVariable(container: WidgetValue): PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[PageVariable]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.PageVariable.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

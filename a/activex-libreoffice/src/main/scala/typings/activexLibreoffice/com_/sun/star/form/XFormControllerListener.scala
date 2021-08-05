@@ -32,8 +32,7 @@ trait XFormControllerListener
 }
 object XFormControllerListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     formActivated: EventObject => Unit,
@@ -45,13 +44,10 @@ object XFormControllerListener {
     __obj.asInstanceOf[XFormControllerListener]
   }
   
-  @scala.inline
-  implicit class XFormControllerListenerMutableBuilder[Self <: XFormControllerListener] (val x: Self) extends AnyVal {
+  extension [Self <: XFormControllerListener](x: Self) {
     
-    @scala.inline
-    def setFormActivated(value: EventObject => Unit): Self = StObject.set(x, "formActivated", js.Any.fromFunction1(value))
+    inline def setFormActivated(value: EventObject => Unit): Self = StObject.set(x, "formActivated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormDeactivated(value: EventObject => Unit): Self = StObject.set(x, "formDeactivated", js.Any.fromFunction1(value))
+    inline def setFormDeactivated(value: EventObject => Unit): Self = StObject.set(x, "formDeactivated", js.Any.fromFunction1(value))
   }
 }

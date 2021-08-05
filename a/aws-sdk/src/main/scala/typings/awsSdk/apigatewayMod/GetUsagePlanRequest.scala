@@ -13,16 +13,13 @@ trait GetUsagePlanRequest extends StObject {
 }
 object GetUsagePlanRequest {
   
-  @scala.inline
-  def apply(usagePlanId: String): GetUsagePlanRequest = {
+  inline def apply(usagePlanId: String): GetUsagePlanRequest = {
     val __obj = js.Dynamic.literal(usagePlanId = usagePlanId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUsagePlanRequest]
   }
   
-  @scala.inline
-  implicit class GetUsagePlanRequestMutableBuilder[Self <: GetUsagePlanRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUsagePlanRequest](x: Self) {
     
-    @scala.inline
-    def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
+    inline def setUsagePlanId(value: String): Self = StObject.set(x, "usagePlanId", value.asInstanceOf[js.Any])
   }
 }

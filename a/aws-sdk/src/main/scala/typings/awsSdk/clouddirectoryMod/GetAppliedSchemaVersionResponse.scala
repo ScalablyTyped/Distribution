@@ -13,19 +13,15 @@ trait GetAppliedSchemaVersionResponse extends StObject {
 }
 object GetAppliedSchemaVersionResponse {
   
-  @scala.inline
-  def apply(): GetAppliedSchemaVersionResponse = {
+  inline def apply(): GetAppliedSchemaVersionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAppliedSchemaVersionResponse]
   }
   
-  @scala.inline
-  implicit class GetAppliedSchemaVersionResponseMutableBuilder[Self <: GetAppliedSchemaVersionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAppliedSchemaVersionResponse](x: Self) {
     
-    @scala.inline
-    def setAppliedSchemaArn(value: Arn): Self = StObject.set(x, "AppliedSchemaArn", value.asInstanceOf[js.Any])
+    inline def setAppliedSchemaArn(value: Arn): Self = StObject.set(x, "AppliedSchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppliedSchemaArnUndefined: Self = StObject.set(x, "AppliedSchemaArn", js.undefined)
+    inline def setAppliedSchemaArnUndefined: Self = StObject.set(x, "AppliedSchemaArn", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait CreateDirectoryRequest extends StObject {
 }
 object CreateDirectoryRequest {
   
-  @scala.inline
-  def apply(Name: DirectoryName, SchemaArn: Arn): CreateDirectoryRequest = {
+  inline def apply(Name: DirectoryName, SchemaArn: Arn): CreateDirectoryRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], SchemaArn = SchemaArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDirectoryRequest]
   }
   
-  @scala.inline
-  implicit class CreateDirectoryRequestMutableBuilder[Self <: CreateDirectoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDirectoryRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
   }
 }

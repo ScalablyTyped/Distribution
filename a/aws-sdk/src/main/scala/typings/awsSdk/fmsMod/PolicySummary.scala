@@ -38,49 +38,35 @@ trait PolicySummary extends StObject {
 }
 object PolicySummary {
   
-  @scala.inline
-  def apply(): PolicySummary = {
+  inline def apply(): PolicySummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicySummary]
   }
   
-  @scala.inline
-  implicit class PolicySummaryMutableBuilder[Self <: PolicySummary] (val x: Self) extends AnyVal {
+  extension [Self <: PolicySummary](x: Self) {
     
-    @scala.inline
-    def setPolicyArn(value: ResourceArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: ResourceArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
+    inline def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
+    inline def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
     
-    @scala.inline
-    def setRemediationEnabled(value: Boolean): Self = StObject.set(x, "RemediationEnabled", value.asInstanceOf[js.Any])
+    inline def setRemediationEnabled(value: Boolean): Self = StObject.set(x, "RemediationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemediationEnabledUndefined: Self = StObject.set(x, "RemediationEnabled", js.undefined)
+    inline def setRemediationEnabledUndefined: Self = StObject.set(x, "RemediationEnabled", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setSecurityServiceType(value: SecurityServiceType): Self = StObject.set(x, "SecurityServiceType", value.asInstanceOf[js.Any])
+    inline def setSecurityServiceType(value: SecurityServiceType): Self = StObject.set(x, "SecurityServiceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityServiceTypeUndefined: Self = StObject.set(x, "SecurityServiceType", js.undefined)
+    inline def setSecurityServiceTypeUndefined: Self = StObject.set(x, "SecurityServiceType", js.undefined)
   }
 }

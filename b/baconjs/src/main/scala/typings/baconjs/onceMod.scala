@@ -12,8 +12,6 @@ object onceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[V](value: V): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
-  @scala.inline
-  def default[V](value: Event[V]): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
+  inline def default[V](value: V): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
+  inline def default[V](value: Event[V]): EventStream[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[EventStream[V]]
 }

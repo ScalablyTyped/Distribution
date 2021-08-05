@@ -20,25 +20,19 @@ trait ProjectsCreateForOrgRequestOptions extends StObject {
 }
 object ProjectsCreateForOrgRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsCreateForOrgRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsCreateForOrgRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/orgs/:org/projects")
     __obj.asInstanceOf[ProjectsCreateForOrgRequestOptions]
   }
   
-  @scala.inline
-  implicit class ProjectsCreateForOrgRequestOptionsMutableBuilder[Self <: ProjectsCreateForOrgRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsCreateForOrgRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashorgsSlashColonorgSlashprojects): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashorgsSlashColonorgSlashprojects): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

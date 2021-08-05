@@ -23,31 +23,23 @@ trait CreateTransitGatewayRouteTableRequest extends StObject {
 }
 object CreateTransitGatewayRouteTableRequest {
   
-  @scala.inline
-  def apply(TransitGatewayId: TransitGatewayId): CreateTransitGatewayRouteTableRequest = {
+  inline def apply(TransitGatewayId: TransitGatewayId): CreateTransitGatewayRouteTableRequest = {
     val __obj = js.Dynamic.literal(TransitGatewayId = TransitGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTransitGatewayRouteTableRequest]
   }
   
-  @scala.inline
-  implicit class CreateTransitGatewayRouteTableRequestMutableBuilder[Self <: CreateTransitGatewayRouteTableRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTransitGatewayRouteTableRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
   }
 }

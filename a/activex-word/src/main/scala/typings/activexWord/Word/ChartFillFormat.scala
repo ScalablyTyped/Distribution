@@ -78,6 +78,6 @@ trait ChartFillFormat extends StObject {
   
   var Visible: MsoTriState = js.native
   
-  @JSName("Word.ChartFillFormat_typekey")
+  /* private */ @JSName("Word.ChartFillFormat_typekey")
   var WordDotChartFillFormat_typekey: ChartFillFormat = js.native
 }

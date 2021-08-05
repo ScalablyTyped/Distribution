@@ -23,34 +23,25 @@ trait SchemaLayersummaries extends StObject {
 }
 object SchemaLayersummaries {
   
-  @scala.inline
-  def apply(): SchemaLayersummaries = {
+  inline def apply(): SchemaLayersummaries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLayersummaries]
   }
   
-  @scala.inline
-  implicit class SchemaLayersummariesMutableBuilder[Self <: SchemaLayersummaries] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLayersummaries](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaLayersummary]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaLayersummary]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaLayersummary*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaLayersummary*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
+    inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

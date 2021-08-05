@@ -38,8 +38,7 @@ trait AuthorityInfoAccess
 }
 object AuthorityInfoAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getExtnValueHex: () => String,
     getFreshValueHex: () => String,
@@ -56,13 +55,10 @@ object AuthorityInfoAccess {
     __obj.asInstanceOf[AuthorityInfoAccess]
   }
   
-  @scala.inline
-  implicit class AuthorityInfoAccessMutableBuilder[Self <: AuthorityInfoAccess] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorityInfoAccess](x: Self) {
     
-    @scala.inline
-    def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
+    inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAccessDescriptionArray(value: js.Array[ExtensionParam] => Unit): Self = StObject.set(x, "setAccessDescriptionArray", js.Any.fromFunction1(value))
+    inline def setSetAccessDescriptionArray(value: js.Array[ExtensionParam] => Unit): Self = StObject.set(x, "setAccessDescriptionArray", js.Any.fromFunction1(value))
   }
 }

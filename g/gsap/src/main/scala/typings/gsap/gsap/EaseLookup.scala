@@ -10,16 +10,13 @@ trait EaseLookup extends StObject {
 }
 object EaseLookup {
   
-  @scala.inline
-  def apply(find: String => Ease): EaseLookup = {
+  inline def apply(find: String => Ease): EaseLookup = {
     val __obj = js.Dynamic.literal(find = js.Any.fromFunction1(find))
     __obj.asInstanceOf[EaseLookup]
   }
   
-  @scala.inline
-  implicit class EaseLookupMutableBuilder[Self <: EaseLookup] (val x: Self) extends AnyVal {
+  extension [Self <: EaseLookup](x: Self) {
     
-    @scala.inline
-    def setFind(value: String => Ease): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    inline def setFind(value: String => Ease): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
   }
 }

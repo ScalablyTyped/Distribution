@@ -18,22 +18,17 @@ trait SchemaGetJSONWebKeysResponse extends StObject {
 }
 object SchemaGetJSONWebKeysResponse {
   
-  @scala.inline
-  def apply(): SchemaGetJSONWebKeysResponse = {
+  inline def apply(): SchemaGetJSONWebKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetJSONWebKeysResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetJSONWebKeysResponseMutableBuilder[Self <: SchemaGetJSONWebKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetJSONWebKeysResponse](x: Self) {
     
-    @scala.inline
-    def setKeys(value: js.Array[SchemaJwk]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[SchemaJwk]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: SchemaJwk*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: SchemaJwk*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

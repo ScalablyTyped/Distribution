@@ -31,40 +31,29 @@ trait SchemaGooglePrivacyDlpV2InspectJobConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2InspectJobConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2InspectJobConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2InspectJobConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InspectJobConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InspectJobConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InspectJobConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2InspectJobConfig](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[SchemaGooglePrivacyDlpV2Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[SchemaGooglePrivacyDlpV2Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: SchemaGooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: SchemaGooglePrivacyDlpV2Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setInspectConfig(value: SchemaGooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
+    inline def setInspectConfig(value: SchemaGooglePrivacyDlpV2InspectConfig): Self = StObject.set(x, "inspectConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
+    inline def setInspectConfigUndefined: Self = StObject.set(x, "inspectConfig", js.undefined)
     
-    @scala.inline
-    def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
+    inline def setInspectTemplateName(value: String): Self = StObject.set(x, "inspectTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
+    inline def setInspectTemplateNameUndefined: Self = StObject.set(x, "inspectTemplateName", js.undefined)
     
-    @scala.inline
-    def setStorageConfig(value: SchemaGooglePrivacyDlpV2StorageConfig): Self = StObject.set(x, "storageConfig", value.asInstanceOf[js.Any])
+    inline def setStorageConfig(value: SchemaGooglePrivacyDlpV2StorageConfig): Self = StObject.set(x, "storageConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageConfigUndefined: Self = StObject.set(x, "storageConfig", js.undefined)
+    inline def setStorageConfigUndefined: Self = StObject.set(x, "storageConfig", js.undefined)
   }
 }

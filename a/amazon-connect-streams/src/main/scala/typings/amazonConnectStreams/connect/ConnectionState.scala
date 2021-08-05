@@ -15,20 +15,16 @@ trait ConnectionState extends StObject {
 }
 object ConnectionState {
   
-  @scala.inline
-  def apply(timestamp: Date, `type`: ConnectionStateType): ConnectionState = {
+  inline def apply(timestamp: Date, `type`: ConnectionStateType): ConnectionState = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionState]
   }
   
-  @scala.inline
-  implicit class ConnectionStateMutableBuilder[Self <: ConnectionState] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionState](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ConnectionStateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ConnectionStateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait Certificate extends StObject {
 }
 object Certificate {
   
-  @scala.inline
-  def apply(): Certificate = {
+  inline def apply(): Certificate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Certificate]
   }
   
-  @scala.inline
-  implicit class CertificateMutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
+  extension [Self <: Certificate](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
+    inline def setCertificateArnUndefined: Self = StObject.set(x, "CertificateArn", js.undefined)
     
-    @scala.inline
-    def setIsDefault(value: Default): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Default): Self = StObject.set(x, "IsDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "IsDefault", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ object Tracker {
   }
   object Computation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       firstRun: Boolean,
       invalidate: () => Unit,
       invalidated: Boolean,
@@ -39,29 +38,21 @@ object Tracker {
       __obj.asInstanceOf[Computation]
     }
     
-    @scala.inline
-    implicit class ComputationMutableBuilder[Self <: Computation] (val x: Self) extends AnyVal {
+    extension [Self <: Computation](x: Self) {
       
-      @scala.inline
-      def setFirstRun(value: Boolean): Self = StObject.set(x, "firstRun", value.asInstanceOf[js.Any])
+      inline def setFirstRun(value: Boolean): Self = StObject.set(x, "firstRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
+      inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInvalidated(value: Boolean): Self = StObject.set(x, "invalidated", value.asInstanceOf[js.Any])
+      inline def setInvalidated(value: Boolean): Self = StObject.set(x, "invalidated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnInvalidate(value: js.Function => Unit): Self = StObject.set(x, "onInvalidate", js.Any.fromFunction1(value))
+      inline def setOnInvalidate(value: js.Function => Unit): Self = StObject.set(x, "onInvalidate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStop(value: js.Function => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+      inline def setOnStop(value: js.Function => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+      inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     }
   }
   

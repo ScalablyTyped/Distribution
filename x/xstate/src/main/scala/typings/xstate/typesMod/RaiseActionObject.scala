@@ -13,20 +13,16 @@ trait RaiseActionObject[TEvent /* <: EventObject */] extends StObject {
 }
 object RaiseActionObject {
   
-  @scala.inline
-  def apply[TEvent /* <: EventObject */](_event: typings.xstate.typesMod.SCXML.Event[TEvent], `type`: Raise): RaiseActionObject[TEvent] = {
+  inline def apply[TEvent /* <: EventObject */](_event: typings.xstate.typesMod.SCXML.Event[TEvent], `type`: Raise): RaiseActionObject[TEvent] = {
     val __obj = js.Dynamic.literal(_event = _event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RaiseActionObject[TEvent]]
   }
   
-  @scala.inline
-  implicit class RaiseActionObjectMutableBuilder[Self <: RaiseActionObject[?], TEvent /* <: EventObject */] (val x: Self & RaiseActionObject[TEvent]) extends AnyVal {
+  extension [Self <: RaiseActionObject[?], TEvent /* <: EventObject */](x: Self & RaiseActionObject[TEvent]) {
     
-    @scala.inline
-    def setType(value: Raise): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Raise): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
+    inline def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
   }
 }

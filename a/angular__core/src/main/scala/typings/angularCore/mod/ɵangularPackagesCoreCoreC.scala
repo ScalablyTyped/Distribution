@@ -13,17 +13,17 @@ class ɵangularPackagesCoreCoreC protected () extends ReflectiveInjector {
   def this(_providers: js.Array[ResolvedReflectiveProvider]) = this()
   def this(_providers: js.Array[ResolvedReflectiveProvider], _parent: Injector) = this()
   
-  var _getByKey: js.Any = js.native
+  /* private */ var _getByKey: js.Any = js.native
   
-  var _getByReflectiveDependency: js.Any = js.native
+  /* private */ var _getByReflectiveDependency: js.Any = js.native
   
-  var _getMaxNumberOfObjects: js.Any = js.native
+  /* private */ var _getMaxNumberOfObjects: js.Any = js.native
   
-  var _getObjByKeyId: js.Any = js.native
+  /* private */ var _getObjByKeyId: js.Any = js.native
   
-  var _instantiate: js.Any = js.native
+  /* private */ var _instantiate: js.Any = js.native
   
-  var _instantiateProvider: js.Any = js.native
+  /* private */ var _instantiateProvider: js.Any = js.native
   
   def displayName: String = js.native
   
@@ -46,6 +46,5 @@ object ɵangularPackagesCoreCoreC {
   @JSImport("@angular/core", "\u0275angular_packages_core_core_c.INJECTOR_KEY")
   @js.native
   def INJECTOR_KEY: js.Any = js.native
-  @scala.inline
-  def INJECTOR_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INJECTOR_KEY")(x.asInstanceOf[js.Any])
+  inline def INJECTOR_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INJECTOR_KEY")(x.asInstanceOf[js.Any])
 }

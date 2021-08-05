@@ -18,25 +18,19 @@ trait CreateCustomActionTypeOutput extends StObject {
 }
 object CreateCustomActionTypeOutput {
   
-  @scala.inline
-  def apply(actionType: ActionType): CreateCustomActionTypeOutput = {
+  inline def apply(actionType: ActionType): CreateCustomActionTypeOutput = {
     val __obj = js.Dynamic.literal(actionType = actionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCustomActionTypeOutput]
   }
   
-  @scala.inline
-  implicit class CreateCustomActionTypeOutputMutableBuilder[Self <: CreateCustomActionTypeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCustomActionTypeOutput](x: Self) {
     
-    @scala.inline
-    def setActionType(value: ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -10,9 +10,7 @@ object validatorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def validateKey(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateKey")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validateKey(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateKey")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def validateValue(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validateValue(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateValue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

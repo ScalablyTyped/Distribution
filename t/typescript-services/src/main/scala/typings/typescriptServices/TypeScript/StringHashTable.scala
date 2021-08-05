@@ -8,16 +8,15 @@ trait StringHashTable[T]
   extends StObject
      with IHashTable[T] {
   
-  var itemCount: js.Any
+  /* private */ var itemCount: js.Any
   
   def remove(key: String): Unit
   
-  var table: js.Any
+  /* private */ var table: js.Any
 }
 object StringHashTable {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     add: (String, T) => Boolean,
     addOrUpdate: (String, T) => Boolean,
     count: () => Double,
@@ -34,16 +33,12 @@ object StringHashTable {
     __obj.asInstanceOf[StringHashTable[T]]
   }
   
-  @scala.inline
-  implicit class StringHashTableMutableBuilder[Self <: StringHashTable[?], T] (val x: Self & StringHashTable[T]) extends AnyVal {
+  extension [Self <: StringHashTable[?], T](x: Self & StringHashTable[T]) {
     
-    @scala.inline
-    def setItemCount(value: js.Any): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: js.Any): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTable(value: js.Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: js.Any): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
   }
 }

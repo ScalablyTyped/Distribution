@@ -16,8 +16,7 @@ trait ReadonlyPromiseArraySearc extends StObject {
 }
 object ReadonlyPromiseArraySearc {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[js.Array[SearchForFacetValuesResponse] | js.Any],
     `finally`: () => js.Promise[js.Array[SearchForFacetValuesResponse]],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyPromiseArraySearc {
     __obj.asInstanceOf[ReadonlyPromiseArraySearc]
   }
   
-  @scala.inline
-  implicit class ReadonlyPromiseArraySearcMutableBuilder[Self <: ReadonlyPromiseArraySearc] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPromiseArraySearc](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[js.Array[SearchForFacetValuesResponse] | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[js.Array[SearchForFacetValuesResponse] | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[js.Array[SearchForFacetValuesResponse]]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[js.Array[SearchForFacetValuesResponse]]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

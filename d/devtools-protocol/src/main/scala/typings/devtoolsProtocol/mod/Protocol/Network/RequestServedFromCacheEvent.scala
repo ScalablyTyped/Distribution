@@ -13,16 +13,13 @@ trait RequestServedFromCacheEvent extends StObject {
 }
 object RequestServedFromCacheEvent {
   
-  @scala.inline
-  def apply(requestId: RequestId): RequestServedFromCacheEvent = {
+  inline def apply(requestId: RequestId): RequestServedFromCacheEvent = {
     val __obj = js.Dynamic.literal(requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestServedFromCacheEvent]
   }
   
-  @scala.inline
-  implicit class RequestServedFromCacheEventMutableBuilder[Self <: RequestServedFromCacheEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RequestServedFromCacheEvent](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

@@ -20,43 +20,31 @@ trait NodeModule
 }
 object NodeModule {
   
-  @scala.inline
-  def apply(module: String): NodeModule = {
+  inline def apply(module: String): NodeModule = {
     val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeModule]
   }
   
-  @scala.inline
-  implicit class NodeModuleMutableBuilder[Self <: NodeModule] (val x: Self) extends AnyVal {
+  extension [Self <: NodeModule](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: ForkOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ForkOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+    inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
+    inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
-    @scala.inline
-    def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+    inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
   }
 }

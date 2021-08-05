@@ -33,43 +33,31 @@ trait PipelineContext extends StObject {
 }
 object PipelineContext {
   
-  @scala.inline
-  def apply(): PipelineContext = {
+  inline def apply(): PipelineContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PipelineContext]
   }
   
-  @scala.inline
-  implicit class PipelineContextMutableBuilder[Self <: PipelineContext] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineContext](x: Self) {
     
-    @scala.inline
-    def setAction(value: ActionContext): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionContext): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setPipelineArn(value: PipelineArn): Self = StObject.set(x, "pipelineArn", value.asInstanceOf[js.Any])
+    inline def setPipelineArn(value: PipelineArn): Self = StObject.set(x, "pipelineArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineArnUndefined: Self = StObject.set(x, "pipelineArn", js.undefined)
+    inline def setPipelineArnUndefined: Self = StObject.set(x, "pipelineArn", js.undefined)
     
-    @scala.inline
-    def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
+    inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
+    inline def setPipelineExecutionIdUndefined: Self = StObject.set(x, "pipelineExecutionId", js.undefined)
     
-    @scala.inline
-    def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
+    inline def setPipelineNameUndefined: Self = StObject.set(x, "pipelineName", js.undefined)
     
-    @scala.inline
-    def setStage(value: StageContext): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: StageContext): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+    inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
   }
 }

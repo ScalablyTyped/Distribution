@@ -13,22 +13,17 @@ trait IndexDocumentsResponse extends StObject {
 }
 object IndexDocumentsResponse {
   
-  @scala.inline
-  def apply(): IndexDocumentsResponse = {
+  inline def apply(): IndexDocumentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndexDocumentsResponse]
   }
   
-  @scala.inline
-  implicit class IndexDocumentsResponseMutableBuilder[Self <: IndexDocumentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IndexDocumentsResponse](x: Self) {
     
-    @scala.inline
-    def setFieldNames(value: FieldNameList): Self = StObject.set(x, "FieldNames", value.asInstanceOf[js.Any])
+    inline def setFieldNames(value: FieldNameList): Self = StObject.set(x, "FieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNamesUndefined: Self = StObject.set(x, "FieldNames", js.undefined)
+    inline def setFieldNamesUndefined: Self = StObject.set(x, "FieldNames", js.undefined)
     
-    @scala.inline
-    def setFieldNamesVarargs(value: FieldName*): Self = StObject.set(x, "FieldNames", js.Array(value :_*))
+    inline def setFieldNamesVarargs(value: FieldName*): Self = StObject.set(x, "FieldNames", js.Array(value :_*))
   }
 }

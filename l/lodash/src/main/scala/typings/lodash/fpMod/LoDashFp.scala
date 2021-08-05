@@ -5918,8 +5918,7 @@ trait LoDashFp extends StObject {
 }
 object LoDashFp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     F: () => `false`,
     T: () => `true`,
     __ : __,
@@ -6182,1198 +6181,812 @@ object LoDashFp {
     __obj.asInstanceOf[LoDashFp]
   }
   
-  @scala.inline
-  implicit class LoDashFpMutableBuilder[Self <: LoDashFp] (val x: Self) extends AnyVal {
+  extension [Self <: LoDashFp](x: Self) {
     
-    @scala.inline
-    def setAdd(value: LodashAdd): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: LodashAdd): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfter(value: LodashAfter): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: LodashAfter): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAll(value: LodashEvery): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: LodashEvery): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllPass(
+    inline def setAllPass(
       value: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean]
     ): Self = StObject.set(x, "allPass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAlways(value: /* value */ js.Any => js.Function0[js.Any]): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
+    inline def setAlways(value: /* value */ js.Any => js.Function0[js.Any]): Self = StObject.set(x, "always", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAny(value: LodashSome): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+    inline def setAny(value: LodashSome): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyPass(
+    inline def setAnyPass(
       value: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean]
     ): Self = StObject.set(x, "anyPass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApply(
+    inline def setApply(
       value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Function1[/* repeated */ js.Any, js.Any]
     ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAry(value: LodashAry): Self = StObject.set(x, "ary", value.asInstanceOf[js.Any])
+    inline def setAry(value: LodashAry): Self = StObject.set(x, "ary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssign(value: LodashAssign): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
+    inline def setAssign(value: LodashAssign): Self = StObject.set(x, "assign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignAll(value: LodashAssignAll): Self = StObject.set(x, "assignAll", value.asInstanceOf[js.Any])
+    inline def setAssignAll(value: LodashAssignAll): Self = StObject.set(x, "assignAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignAllWith(value: LodashAssignAllWith): Self = StObject.set(x, "assignAllWith", value.asInstanceOf[js.Any])
+    inline def setAssignAllWith(value: LodashAssignAllWith): Self = StObject.set(x, "assignAllWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignIn(value: LodashAssignIn): Self = StObject.set(x, "assignIn", value.asInstanceOf[js.Any])
+    inline def setAssignIn(value: LodashAssignIn): Self = StObject.set(x, "assignIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignInAll(value: LodashAssignInAll): Self = StObject.set(x, "assignInAll", value.asInstanceOf[js.Any])
+    inline def setAssignInAll(value: LodashAssignInAll): Self = StObject.set(x, "assignInAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignInAllWith(value: LodashAssignInAllWith): Self = StObject.set(x, "assignInAllWith", value.asInstanceOf[js.Any])
+    inline def setAssignInAllWith(value: LodashAssignInAllWith): Self = StObject.set(x, "assignInAllWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignInWith(value: LodashAssignInWith): Self = StObject.set(x, "assignInWith", value.asInstanceOf[js.Any])
+    inline def setAssignInWith(value: LodashAssignInWith): Self = StObject.set(x, "assignInWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignWith(value: LodashAssignWith): Self = StObject.set(x, "assignWith", value.asInstanceOf[js.Any])
+    inline def setAssignWith(value: LodashAssignWith): Self = StObject.set(x, "assignWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssoc(value: LodashSet): Self = StObject.set(x, "assoc", value.asInstanceOf[js.Any])
+    inline def setAssoc(value: LodashSet): Self = StObject.set(x, "assoc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssocPath(value: LodashSet): Self = StObject.set(x, "assocPath", value.asInstanceOf[js.Any])
+    inline def setAssocPath(value: LodashSet): Self = StObject.set(x, "assocPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAt(value: LodashAt): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    inline def setAt(value: LodashAt): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttempt(value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Any | Error): Self = StObject.set(x, "attempt", js.Any.fromFunction1(value))
+    inline def setAttempt(value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Any | Error): Self = StObject.set(x, "attempt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBefore(value: LodashBefore): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    inline def setBefore(value: LodashBefore): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBind(value: LodashBind): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
+    inline def setBind(value: LodashBind): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindAll(value: LodashBindAll): Self = StObject.set(x, "bindAll", value.asInstanceOf[js.Any])
+    inline def setBindAll(value: LodashBindAll): Self = StObject.set(x, "bindAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindKey(value: LodashBindKey): Self = StObject.set(x, "bindKey", value.asInstanceOf[js.Any])
+    inline def setBindKey(value: LodashBindKey): Self = StObject.set(x, "bindKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCamelCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "camelCase", js.Any.fromFunction1(value))
+    inline def setCamelCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "camelCase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCapitalize(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "capitalize", js.Any.fromFunction1(value))
+    inline def setCapitalize(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "capitalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCastArray(value: /* value */ Many[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "castArray", js.Any.fromFunction1(value))
+    inline def setCastArray(value: /* value */ Many[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "castArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCeil(value: /* n */ Double => Double): Self = StObject.set(x, "ceil", js.Any.fromFunction1(value))
+    inline def setCeil(value: /* n */ Double => Double): Self = StObject.set(x, "ceil", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChunk(value: LodashChunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+    inline def setChunk(value: LodashChunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClamp(value: LodashClamp): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
+    inline def setClamp(value: LodashClamp): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloneDeep(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "cloneDeep", js.Any.fromFunction1(value))
+    inline def setCloneDeep(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "cloneDeep", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCloneDeepWith(value: LodashCloneDeepWith): Self = StObject.set(x, "cloneDeepWith", value.asInstanceOf[js.Any])
+    inline def setCloneDeepWith(value: LodashCloneDeepWith): Self = StObject.set(x, "cloneDeepWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloneWith(value: LodashCloneWith): Self = StObject.set(x, "cloneWith", value.asInstanceOf[js.Any])
+    inline def setCloneWith(value: LodashCloneWith): Self = StObject.set(x, "cloneWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone_(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+    inline def setClone_(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompact(
+    inline def setCompact(
       value: /* array */ js.UndefOr[(List[js.UndefOr[js.Any | Null | `false` | _empty | `0`]]) | Null] => js.Array[js.Any]
     ): Self = StObject.set(x, "compact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComplement(
+    inline def setComplement(
       value: /* predicate */ js.Function1[/* args */ js.Array[js.Any], js.Any] => js.Function1[/* args */ js.Array[js.Any], Boolean]
     ): Self = StObject.set(x, "complement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompose(value: LodashFlowRight): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
+    inline def setCompose(value: LodashFlowRight): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConcat(value: LodashConcat): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
+    inline def setConcat(value: LodashConcat): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCond(value: /* pairs */ js.Array[CondPair[js.Any, js.Any]] => js.Function1[/* Target */ js.Any, js.Any]): Self = StObject.set(x, "cond", js.Any.fromFunction1(value))
+    inline def setCond(value: /* pairs */ js.Array[CondPair[js.Any, js.Any]] => js.Function1[/* Target */ js.Any, js.Any]): Self = StObject.set(x, "cond", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConforms(value: LodashConformsTo): Self = StObject.set(x, "conforms", value.asInstanceOf[js.Any])
+    inline def setConforms(value: LodashConformsTo): Self = StObject.set(x, "conforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConformsTo(value: LodashConformsTo): Self = StObject.set(x, "conformsTo", value.asInstanceOf[js.Any])
+    inline def setConformsTo(value: LodashConformsTo): Self = StObject.set(x, "conformsTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstant(value: /* value */ js.Any => js.Function0[js.Any]): Self = StObject.set(x, "constant", js.Any.fromFunction1(value))
+    inline def setConstant(value: /* value */ js.Any => js.Function0[js.Any]): Self = StObject.set(x, "constant", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContains(value: LodashContains): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: LodashContains): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountBy(value: LodashCountBy): Self = StObject.set(x, "countBy", value.asInstanceOf[js.Any])
+    inline def setCountBy(value: LodashCountBy): Self = StObject.set(x, "countBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate(value: /* prototype */ js.Object => js.Object): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: /* prototype */ js.Object => js.Object): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurry(value: LodashCurry): Self = StObject.set(x, "curry", value.asInstanceOf[js.Any])
+    inline def setCurry(value: LodashCurry): Self = StObject.set(x, "curry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurryN(value: LodashCurryN): Self = StObject.set(x, "curryN", value.asInstanceOf[js.Any])
+    inline def setCurryN(value: LodashCurryN): Self = StObject.set(x, "curryN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurryRight(value: LodashCurryRight): Self = StObject.set(x, "curryRight", value.asInstanceOf[js.Any])
+    inline def setCurryRight(value: LodashCurryRight): Self = StObject.set(x, "curryRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurryRightN(value: LodashCurryRightN): Self = StObject.set(x, "curryRightN", value.asInstanceOf[js.Any])
+    inline def setCurryRightN(value: LodashCurryRightN): Self = StObject.set(x, "curryRightN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebounce(value: LodashDebounce): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
+    inline def setDebounce(value: LodashDebounce): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeburr(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "deburr", js.Any.fromFunction1(value))
+    inline def setDeburr(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "deburr", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultTo(value: LodashDefaultTo): Self = StObject.set(x, "defaultTo", value.asInstanceOf[js.Any])
+    inline def setDefaultTo(value: LodashDefaultTo): Self = StObject.set(x, "defaultTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaults(value: LodashDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    inline def setDefaults(value: LodashDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultsAll(value: LodashDefaultsAll): Self = StObject.set(x, "defaultsAll", value.asInstanceOf[js.Any])
+    inline def setDefaultsAll(value: LodashDefaultsAll): Self = StObject.set(x, "defaultsAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultsDeep(value: LodashDefaultsDeep): Self = StObject.set(x, "defaultsDeep", value.asInstanceOf[js.Any])
+    inline def setDefaultsDeep(value: LodashDefaultsDeep): Self = StObject.set(x, "defaultsDeep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultsDeepAll(value: /* object */ js.Array[js.Any] => js.Any): Self = StObject.set(x, "defaultsDeepAll", js.Any.fromFunction1(value))
+    inline def setDefaultsDeepAll(value: /* object */ js.Array[js.Any] => js.Any): Self = StObject.set(x, "defaultsDeepAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefer(value: LodashDefer): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: LodashDefer): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelay(value: LodashDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: LodashDelay): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDifference(value: LodashDifference): Self = StObject.set(x, "difference", value.asInstanceOf[js.Any])
+    inline def setDifference(value: LodashDifference): Self = StObject.set(x, "difference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDifferenceBy(value: LodashDifferenceBy): Self = StObject.set(x, "differenceBy", value.asInstanceOf[js.Any])
+    inline def setDifferenceBy(value: LodashDifferenceBy): Self = StObject.set(x, "differenceBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDifferenceWith(value: LodashDifferenceWith): Self = StObject.set(x, "differenceWith", value.asInstanceOf[js.Any])
+    inline def setDifferenceWith(value: LodashDifferenceWith): Self = StObject.set(x, "differenceWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDissoc(value: LodashUnset): Self = StObject.set(x, "dissoc", value.asInstanceOf[js.Any])
+    inline def setDissoc(value: LodashUnset): Self = StObject.set(x, "dissoc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDissocPath(value: LodashUnset): Self = StObject.set(x, "dissocPath", value.asInstanceOf[js.Any])
+    inline def setDissocPath(value: LodashUnset): Self = StObject.set(x, "dissocPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDivide(value: LodashDivide): Self = StObject.set(x, "divide", value.asInstanceOf[js.Any])
+    inline def setDivide(value: LodashDivide): Self = StObject.set(x, "divide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrop(value: LodashDrop): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+    inline def setDrop(value: LodashDrop): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropLast(value: LodashDropRight): Self = StObject.set(x, "dropLast", value.asInstanceOf[js.Any])
+    inline def setDropLast(value: LodashDropRight): Self = StObject.set(x, "dropLast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropLastWhile(value: LodashDropRightWhile): Self = StObject.set(x, "dropLastWhile", value.asInstanceOf[js.Any])
+    inline def setDropLastWhile(value: LodashDropRightWhile): Self = StObject.set(x, "dropLastWhile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropRight(value: LodashDropRight): Self = StObject.set(x, "dropRight", value.asInstanceOf[js.Any])
+    inline def setDropRight(value: LodashDropRight): Self = StObject.set(x, "dropRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropRightWhile(value: LodashDropRightWhile): Self = StObject.set(x, "dropRightWhile", value.asInstanceOf[js.Any])
+    inline def setDropRightWhile(value: LodashDropRightWhile): Self = StObject.set(x, "dropRightWhile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropWhile(value: LodashDropWhile): Self = StObject.set(x, "dropWhile", value.asInstanceOf[js.Any])
+    inline def setDropWhile(value: LodashDropWhile): Self = StObject.set(x, "dropWhile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEach(value: LodashForEach): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
+    inline def setEach(value: LodashForEach): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEachRight(value: LodashForEachRight): Self = StObject.set(x, "eachRight", value.asInstanceOf[js.Any])
+    inline def setEachRight(value: LodashForEachRight): Self = StObject.set(x, "eachRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndsWith(value: LodashEndsWith): Self = StObject.set(x, "endsWith", value.asInstanceOf[js.Any])
+    inline def setEndsWith(value: LodashEndsWith): Self = StObject.set(x, "endsWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntries(value: LodashToPairs): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: LodashToPairs): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesIn(value: LodashToPairsIn): Self = StObject.set(x, "entriesIn", value.asInstanceOf[js.Any])
+    inline def setEntriesIn(value: LodashToPairsIn): Self = StObject.set(x, "entriesIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEq_(value: LodashEq): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
+    inline def setEq_(value: LodashEq): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquals_(value: LodashIsEqual): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+    inline def setEquals_(value: LodashIsEqual): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscape(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+    inline def setEscape(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEscapeRegExp(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "escapeRegExp", js.Any.fromFunction1(value))
+    inline def setEscapeRegExp(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "escapeRegExp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEvery(value: LodashEvery): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
+    inline def setEvery(value: LodashEvery): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtend(value: LodashExtend): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: LodashExtend): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendAll(value: LodashExtendAll): Self = StObject.set(x, "extendAll", value.asInstanceOf[js.Any])
+    inline def setExtendAll(value: LodashExtendAll): Self = StObject.set(x, "extendAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendAllWith(value: LodashExtendAllWith): Self = StObject.set(x, "extendAllWith", value.asInstanceOf[js.Any])
+    inline def setExtendAllWith(value: LodashExtendAllWith): Self = StObject.set(x, "extendAllWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendWith(value: LodashExtendWith): Self = StObject.set(x, "extendWith", value.asInstanceOf[js.Any])
+    inline def setExtendWith(value: LodashExtendWith): Self = StObject.set(x, "extendWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setF(value: () => `false`): Self = StObject.set(x, "F", js.Any.fromFunction0(value))
+    inline def setF(value: () => `false`): Self = StObject.set(x, "F", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFill(value: LodashFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: LodashFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: LodashFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: LodashFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFind(value: LodashFind): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
+    inline def setFind(value: LodashFind): Self = StObject.set(x, "find", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindFrom(value: LodashFindFrom): Self = StObject.set(x, "findFrom", value.asInstanceOf[js.Any])
+    inline def setFindFrom(value: LodashFindFrom): Self = StObject.set(x, "findFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindIndex(value: LodashFindIndex): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
+    inline def setFindIndex(value: LodashFindIndex): Self = StObject.set(x, "findIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindIndexFrom(value: LodashFindIndexFrom): Self = StObject.set(x, "findIndexFrom", value.asInstanceOf[js.Any])
+    inline def setFindIndexFrom(value: LodashFindIndexFrom): Self = StObject.set(x, "findIndexFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindKey(value: LodashFindKey): Self = StObject.set(x, "findKey", value.asInstanceOf[js.Any])
+    inline def setFindKey(value: LodashFindKey): Self = StObject.set(x, "findKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindLast(value: LodashFindLast): Self = StObject.set(x, "findLast", value.asInstanceOf[js.Any])
+    inline def setFindLast(value: LodashFindLast): Self = StObject.set(x, "findLast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindLastFrom(value: LodashFindLastFrom): Self = StObject.set(x, "findLastFrom", value.asInstanceOf[js.Any])
+    inline def setFindLastFrom(value: LodashFindLastFrom): Self = StObject.set(x, "findLastFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindLastIndex(value: LodashFindLastIndex): Self = StObject.set(x, "findLastIndex", value.asInstanceOf[js.Any])
+    inline def setFindLastIndex(value: LodashFindLastIndex): Self = StObject.set(x, "findLastIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindLastIndexFrom(value: LodashFindLastIndexFrom): Self = StObject.set(x, "findLastIndexFrom", value.asInstanceOf[js.Any])
+    inline def setFindLastIndexFrom(value: LodashFindLastIndexFrom): Self = StObject.set(x, "findLastIndexFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindLastKey(value: LodashFindLastKey): Self = StObject.set(x, "findLastKey", value.asInstanceOf[js.Any])
+    inline def setFindLastKey(value: LodashFindLastKey): Self = StObject.set(x, "findLastKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
+    inline def setFirst(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "first", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlatMap(value: LodashFlatMap): Self = StObject.set(x, "flatMap", value.asInstanceOf[js.Any])
+    inline def setFlatMap(value: LodashFlatMap): Self = StObject.set(x, "flatMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatMapDeep(value: LodashFlatMapDeep): Self = StObject.set(x, "flatMapDeep", value.asInstanceOf[js.Any])
+    inline def setFlatMapDeep(value: LodashFlatMapDeep): Self = StObject.set(x, "flatMapDeep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatMapDepth(value: LodashFlatMapDepth): Self = StObject.set(x, "flatMapDepth", value.asInstanceOf[js.Any])
+    inline def setFlatMapDepth(value: LodashFlatMapDepth): Self = StObject.set(x, "flatMapDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatten(value: /* array */ js.UndefOr[List[Many[js.Any]] | Null] => js.Array[js.Any]): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
+    inline def setFlatten(value: /* array */ js.UndefOr[List[Many[js.Any]] | Null] => js.Array[js.Any]): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlattenDeep(value: /* array */ js.UndefOr[ListOfRecursiveArraysOrValues[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "flattenDeep", js.Any.fromFunction1(value))
+    inline def setFlattenDeep(value: /* array */ js.UndefOr[ListOfRecursiveArraysOrValues[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "flattenDeep", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlattenDepth(value: LodashFlattenDepth): Self = StObject.set(x, "flattenDepth", value.asInstanceOf[js.Any])
+    inline def setFlattenDepth(value: LodashFlattenDepth): Self = StObject.set(x, "flattenDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlip(
+    inline def setFlip(
       value: /* func */ js.Function1[/* args */ js.Any, js.Any] => js.Function1[/* args */ js.Any, js.Any]
     ): Self = StObject.set(x, "flip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFloor(value: /* n */ Double => Double): Self = StObject.set(x, "floor", js.Any.fromFunction1(value))
+    inline def setFloor(value: /* n */ Double => Double): Self = StObject.set(x, "floor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlow(value: LodashFlow): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: LodashFlow): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowRight(value: LodashFlowRight): Self = StObject.set(x, "flowRight", value.asInstanceOf[js.Any])
+    inline def setFlowRight(value: LodashFlowRight): Self = StObject.set(x, "flowRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForEach(value: LodashForEach): Self = StObject.set(x, "forEach", value.asInstanceOf[js.Any])
+    inline def setForEach(value: LodashForEach): Self = StObject.set(x, "forEach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForEachRight(value: LodashForEachRight): Self = StObject.set(x, "forEachRight", value.asInstanceOf[js.Any])
+    inline def setForEachRight(value: LodashForEachRight): Self = StObject.set(x, "forEachRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForIn(value: LodashForIn): Self = StObject.set(x, "forIn", value.asInstanceOf[js.Any])
+    inline def setForIn(value: LodashForIn): Self = StObject.set(x, "forIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForInRight(value: LodashForInRight): Self = StObject.set(x, "forInRight", value.asInstanceOf[js.Any])
+    inline def setForInRight(value: LodashForInRight): Self = StObject.set(x, "forInRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForOwn(value: LodashForOwn): Self = StObject.set(x, "forOwn", value.asInstanceOf[js.Any])
+    inline def setForOwn(value: LodashForOwn): Self = StObject.set(x, "forOwn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForOwnRight(value: LodashForOwnRight): Self = StObject.set(x, "forOwnRight", value.asInstanceOf[js.Any])
+    inline def setForOwnRight(value: LodashForOwnRight): Self = StObject.set(x, "forOwnRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromPairs(value: LodashFromPairs): Self = StObject.set(x, "fromPairs", value.asInstanceOf[js.Any])
+    inline def setFromPairs(value: LodashFromPairs): Self = StObject.set(x, "fromPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctions(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
+    inline def setFunctions(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFunctionsIn(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "functionsIn", js.Any.fromFunction1(value))
+    inline def setFunctionsIn(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "functionsIn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: LodashGet): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: LodashGet): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetOr(value: LodashGetOr): Self = StObject.set(x, "getOr", value.asInstanceOf[js.Any])
+    inline def setGetOr(value: LodashGetOr): Self = StObject.set(x, "getOr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupBy(value: LodashGroupBy): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: LodashGroupBy): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGt(value: LodashGt): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
+    inline def setGt(value: LodashGt): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGte(value: LodashGte): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
+    inline def setGte(value: LodashGte): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas(value: LodashHas): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
+    inline def setHas(value: LodashHas): Self = StObject.set(x, "has", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasIn(value: LodashHasIn): Self = StObject.set(x, "hasIn", value.asInstanceOf[js.Any])
+    inline def setHasIn(value: LodashHasIn): Self = StObject.set(x, "hasIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHead(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "head", js.Any.fromFunction1(value))
+    inline def setHead(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "head", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIdentical(value: LodashEq): Self = StObject.set(x, "identical", value.asInstanceOf[js.Any])
+    inline def setIdentical(value: LodashEq): Self = StObject.set(x, "identical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentity(value: LodashIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: LodashIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInRange(value: LodashInRange): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
+    inline def setInRange(value: LodashInRange): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludes(value: LodashIncludes): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
+    inline def setIncludes(value: LodashIncludes): Self = StObject.set(x, "includes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludesFrom(value: LodashIncludesFrom): Self = StObject.set(x, "includesFrom", value.asInstanceOf[js.Any])
+    inline def setIncludesFrom(value: LodashIncludesFrom): Self = StObject.set(x, "includesFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexBy(value: LodashKeyBy): Self = StObject.set(x, "indexBy", value.asInstanceOf[js.Any])
+    inline def setIndexBy(value: LodashKeyBy): Self = StObject.set(x, "indexBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexOf(value: LodashIndexOf): Self = StObject.set(x, "indexOf", value.asInstanceOf[js.Any])
+    inline def setIndexOf(value: LodashIndexOf): Self = StObject.set(x, "indexOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexOfFrom(value: LodashIndexOfFrom): Self = StObject.set(x, "indexOfFrom", value.asInstanceOf[js.Any])
+    inline def setIndexOfFrom(value: LodashIndexOfFrom): Self = StObject.set(x, "indexOfFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitial(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))
+    inline def setInitial(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "initial", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIntersection(value: LodashIntersection): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
+    inline def setIntersection(value: LodashIntersection): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionBy(value: LodashIntersectionBy): Self = StObject.set(x, "intersectionBy", value.asInstanceOf[js.Any])
+    inline def setIntersectionBy(value: LodashIntersectionBy): Self = StObject.set(x, "intersectionBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionWith(value: LodashIntersectionWith): Self = StObject.set(x, "intersectionWith", value.asInstanceOf[js.Any])
+    inline def setIntersectionWith(value: LodashIntersectionWith): Self = StObject.set(x, "intersectionWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvert(value: /* object */ js.Object => Dictionary[java.lang.String]): Self = StObject.set(x, "invert", js.Any.fromFunction1(value))
+    inline def setInvert(value: /* object */ js.Object => Dictionary[java.lang.String]): Self = StObject.set(x, "invert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInvertBy(value: LodashInvertBy): Self = StObject.set(x, "invertBy", value.asInstanceOf[js.Any])
+    inline def setInvertBy(value: LodashInvertBy): Self = StObject.set(x, "invertBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertObj(value: /* object */ js.Object => Dictionary[java.lang.String]): Self = StObject.set(x, "invertObj", js.Any.fromFunction1(value))
+    inline def setInvertObj(value: /* object */ js.Object => Dictionary[java.lang.String]): Self = StObject.set(x, "invertObj", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInvoke(value: LodashInvoke): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
+    inline def setInvoke(value: LodashInvoke): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvokeArgs(value: LodashInvokeArgs): Self = StObject.set(x, "invokeArgs", value.asInstanceOf[js.Any])
+    inline def setInvokeArgs(value: LodashInvokeArgs): Self = StObject.set(x, "invokeArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvokeArgsMap(value: LodashInvokeArgsMap): Self = StObject.set(x, "invokeArgsMap", value.asInstanceOf[js.Any])
+    inline def setInvokeArgsMap(value: LodashInvokeArgsMap): Self = StObject.set(x, "invokeArgsMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvokeMap(value: LodashInvokeMap): Self = StObject.set(x, "invokeMap", value.asInstanceOf[js.Any])
+    inline def setInvokeMap(value: LodashInvokeMap): Self = StObject.set(x, "invokeMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsArguments(value: /* value */ js.Any => /* is std.IArguments */ Boolean): Self = StObject.set(x, "isArguments", js.Any.fromFunction1(value))
+    inline def setIsArguments(value: /* value */ js.Any => /* is std.IArguments */ Boolean): Self = StObject.set(x, "isArguments", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsArray(value: /* value */ js.Any => /* is std.Array<any> */ Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
+    inline def setIsArray(value: /* value */ js.Any => /* is std.Array<any> */ Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsArrayBuffer(value: /* value */ js.Any => /* is std.ArrayBuffer */ Boolean): Self = StObject.set(x, "isArrayBuffer", js.Any.fromFunction1(value))
+    inline def setIsArrayBuffer(value: /* value */ js.Any => /* is std.ArrayBuffer */ Boolean): Self = StObject.set(x, "isArrayBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsArrayLike(value: LodashIsArrayLike): Self = StObject.set(x, "isArrayLike", value.asInstanceOf[js.Any])
+    inline def setIsArrayLike(value: LodashIsArrayLike): Self = StObject.set(x, "isArrayLike", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsArrayLikeObject(value: LodashIsArrayLikeObject): Self = StObject.set(x, "isArrayLikeObject", value.asInstanceOf[js.Any])
+    inline def setIsArrayLikeObject(value: LodashIsArrayLikeObject): Self = StObject.set(x, "isArrayLikeObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBoolean(value: /* value */ js.Any => /* is boolean */ Boolean): Self = StObject.set(x, "isBoolean", js.Any.fromFunction1(value))
+    inline def setIsBoolean(value: /* value */ js.Any => /* is boolean */ Boolean): Self = StObject.set(x, "isBoolean", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsBuffer(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isBuffer", js.Any.fromFunction1(value))
+    inline def setIsBuffer(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDate(value: /* value */ js.Any => /* is std.Date */ Boolean): Self = StObject.set(x, "isDate", js.Any.fromFunction1(value))
+    inline def setIsDate(value: /* value */ js.Any => /* is std.Date */ Boolean): Self = StObject.set(x, "isDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsElement(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isElement", js.Any.fromFunction1(value))
+    inline def setIsElement(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmpty(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
+    inline def setIsEmpty(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEqual(value: LodashIsEqual): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
+    inline def setIsEqual(value: LodashIsEqual): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEqualWith(value: LodashIsEqualWith): Self = StObject.set(x, "isEqualWith", value.asInstanceOf[js.Any])
+    inline def setIsEqualWith(value: LodashIsEqualWith): Self = StObject.set(x, "isEqualWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsError(value: /* value */ js.Any => /* is std.Error */ Boolean): Self = StObject.set(x, "isError", js.Any.fromFunction1(value))
+    inline def setIsError(value: /* value */ js.Any => /* is std.Error */ Boolean): Self = StObject.set(x, "isError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFinite(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isFinite", js.Any.fromFunction1(value))
+    inline def setIsFinite(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isFinite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFunction(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
+    inline def setIsFunction(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isFunction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsInteger(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isInteger", js.Any.fromFunction1(value))
+    inline def setIsInteger(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isInteger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLength(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isLength", js.Any.fromFunction1(value))
+    inline def setIsLength(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsMap(value: /* value */ js.Any => /* is std.Map<any, any> */ Boolean): Self = StObject.set(x, "isMap", js.Any.fromFunction1(value))
+    inline def setIsMap(value: /* value */ js.Any => /* is std.Map<any, any> */ Boolean): Self = StObject.set(x, "isMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsMatch(value: LodashIsMatch): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
+    inline def setIsMatch(value: LodashIsMatch): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMatchWith(value: LodashIsMatchWith): Self = StObject.set(x, "isMatchWith", value.asInstanceOf[js.Any])
+    inline def setIsMatchWith(value: LodashIsMatchWith): Self = StObject.set(x, "isMatchWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsNaN(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isNaN", js.Any.fromFunction1(value))
+    inline def setIsNaN(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isNaN", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsNative(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isNative", js.Any.fromFunction1(value))
+    inline def setIsNative(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isNative", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsNil(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isNil", js.Any.fromFunction1(value))
+    inline def setIsNil(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isNil", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsNull(value: /* value */ js.Any => /* is null */ Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction1(value))
+    inline def setIsNull(value: /* value */ js.Any => /* is null */ Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsNumber(value: /* value */ js.Any => /* is number */ Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
+    inline def setIsNumber(value: /* value */ js.Any => /* is number */ Boolean): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsObject(value: /* value */ js.Any => /* is object */ Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
+    inline def setIsObject(value: /* value */ js.Any => /* is object */ Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsObjectLike(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isObjectLike", js.Any.fromFunction1(value))
+    inline def setIsObjectLike(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isObjectLike", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsPlainObject(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isPlainObject", js.Any.fromFunction1(value))
+    inline def setIsPlainObject(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isPlainObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsRegExp(value: /* value */ js.Any => /* is std.RegExp */ Boolean): Self = StObject.set(x, "isRegExp", js.Any.fromFunction1(value))
+    inline def setIsRegExp(value: /* value */ js.Any => /* is std.RegExp */ Boolean): Self = StObject.set(x, "isRegExp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsSafeInteger(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isSafeInteger", js.Any.fromFunction1(value))
+    inline def setIsSafeInteger(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isSafeInteger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsSet(value: /* value */ js.Any => /* is std.Set<any> */ Boolean): Self = StObject.set(x, "isSet", js.Any.fromFunction1(value))
+    inline def setIsSet(value: /* value */ js.Any => /* is std.Set<any> */ Boolean): Self = StObject.set(x, "isSet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsString(value: /* value */ js.Any => /* is string */ Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
+    inline def setIsString(value: /* value */ js.Any => /* is string */ Boolean): Self = StObject.set(x, "isString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsSymbol(value: /* value */ js.Any => /* is symbol */ Boolean): Self = StObject.set(x, "isSymbol", js.Any.fromFunction1(value))
+    inline def setIsSymbol(value: /* value */ js.Any => /* is symbol */ Boolean): Self = StObject.set(x, "isSymbol", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsTypedArray(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isTypedArray", js.Any.fromFunction1(value))
+    inline def setIsTypedArray(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isTypedArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsUndefined(value: /* value */ js.Any => /* is undefined */ Boolean): Self = StObject.set(x, "isUndefined", js.Any.fromFunction1(value))
+    inline def setIsUndefined(value: /* value */ js.Any => /* is undefined */ Boolean): Self = StObject.set(x, "isUndefined", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsWeakMap(value: /* value */ js.Any => /* is std.WeakMap<object, any> */ Boolean): Self = StObject.set(x, "isWeakMap", js.Any.fromFunction1(value))
+    inline def setIsWeakMap(value: /* value */ js.Any => /* is std.WeakMap<object, any> */ Boolean): Self = StObject.set(x, "isWeakMap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsWeakSet(value: /* value */ js.Any => /* is std.WeakSet<object> */ Boolean): Self = StObject.set(x, "isWeakSet", js.Any.fromFunction1(value))
+    inline def setIsWeakSet(value: /* value */ js.Any => /* is std.WeakSet<object> */ Boolean): Self = StObject.set(x, "isWeakSet", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIteratee(value: LodashIteratee): Self = StObject.set(x, "iteratee", value.asInstanceOf[js.Any])
+    inline def setIteratee(value: LodashIteratee): Self = StObject.set(x, "iteratee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoin(value: LodashJoin): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+    inline def setJoin(value: LodashJoin): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJuxt(
+    inline def setJuxt(
       value: /* iteratees */ Many[js.Function1[/* repeated */ js.Any, js.Any]] => js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
     ): Self = StObject.set(x, "juxt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKebabCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "kebabCase", js.Any.fromFunction1(value))
+    inline def setKebabCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "kebabCase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeyBy(value: LodashKeyBy): Self = StObject.set(x, "keyBy", value.asInstanceOf[js.Any])
+    inline def setKeyBy(value: LodashKeyBy): Self = StObject.set(x, "keyBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
+    inline def setKeys(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeysIn(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "keysIn", js.Any.fromFunction1(value))
+    inline def setKeysIn(value: /* object */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "keysIn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLast(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
+    inline def setLast(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "last", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLastIndexOf(value: LodashLastIndexOf): Self = StObject.set(x, "lastIndexOf", value.asInstanceOf[js.Any])
+    inline def setLastIndexOf(value: LodashLastIndexOf): Self = StObject.set(x, "lastIndexOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastIndexOfFrom(value: LodashLastIndexOfFrom): Self = StObject.set(x, "lastIndexOfFrom", value.asInstanceOf[js.Any])
+    inline def setLastIndexOfFrom(value: LodashLastIndexOfFrom): Self = StObject.set(x, "lastIndexOfFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "lowerCase", js.Any.fromFunction1(value))
+    inline def setLowerCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "lowerCase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLowerFirst(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "lowerFirst", js.Any.fromFunction1(value))
+    inline def setLowerFirst(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "lowerFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLt(value: LodashLt): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
+    inline def setLt(value: LodashLt): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLte(value: LodashLte): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
+    inline def setLte(value: LodashLte): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: LodashMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: LodashMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapKeys(value: LodashMapKeys): Self = StObject.set(x, "mapKeys", value.asInstanceOf[js.Any])
+    inline def setMapKeys(value: LodashMapKeys): Self = StObject.set(x, "mapKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapValues(value: LodashMapValues): Self = StObject.set(x, "mapValues", value.asInstanceOf[js.Any])
+    inline def setMapValues(value: LodashMapValues): Self = StObject.set(x, "mapValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatches(value: LodashIsMatch): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: LodashIsMatch): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesProperty(value: LodashMatchesProperty): Self = StObject.set(x, "matchesProperty", value.asInstanceOf[js.Any])
+    inline def setMatchesProperty(value: LodashMatchesProperty): Self = StObject.set(x, "matchesProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: /* collection */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+    inline def setMax(value: /* collection */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxBy(value: LodashMaxBy): Self = StObject.set(x, "maxBy", value.asInstanceOf[js.Any])
+    inline def setMaxBy(value: LodashMaxBy): Self = StObject.set(x, "maxBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMean(value: /* collection */ js.UndefOr[List[js.Any] | Null] => Double): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
+    inline def setMean(value: /* collection */ js.UndefOr[List[js.Any] | Null] => Double): Self = StObject.set(x, "mean", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMeanBy(value: LodashMeanBy): Self = StObject.set(x, "meanBy", value.asInstanceOf[js.Any])
+    inline def setMeanBy(value: LodashMeanBy): Self = StObject.set(x, "meanBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoize(
+    inline def setMemoize(
       value: /* func */ js.Function1[/* args */ js.Any, js.Any] => (js.Function1[/* args */ js.Any, js.Any]) & MemoizedFunction
     ): Self = StObject.set(x, "memoize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMerge(value: LodashMerge): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: LodashMerge): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeAll(value: LodashMergeAll): Self = StObject.set(x, "mergeAll", value.asInstanceOf[js.Any])
+    inline def setMergeAll(value: LodashMergeAll): Self = StObject.set(x, "mergeAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeAllWith(value: LodashMergeAllWith): Self = StObject.set(x, "mergeAllWith", value.asInstanceOf[js.Any])
+    inline def setMergeAllWith(value: LodashMergeAllWith): Self = StObject.set(x, "mergeAllWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeWith(value: LodashMergeWith): Self = StObject.set(x, "mergeWith", value.asInstanceOf[js.Any])
+    inline def setMergeWith(value: LodashMergeWith): Self = StObject.set(x, "mergeWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: /* path */ PropertyPath => js.Function1[/* object */ js.Any, js.Any]): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
+    inline def setMethod(value: /* path */ PropertyPath => js.Function1[/* object */ js.Any, js.Any]): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMethodOf(value: /* object */ js.Object => js.Function1[/* path */ PropertyPath, js.Any]): Self = StObject.set(x, "methodOf", js.Any.fromFunction1(value))
+    inline def setMethodOf(value: /* object */ js.Object => js.Function1[/* path */ PropertyPath, js.Any]): Self = StObject.set(x, "methodOf", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMin(value: /* collection */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+    inline def setMin(value: /* collection */ js.UndefOr[List[js.Any] | Null] => js.UndefOr[js.Any]): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMinBy(value: LodashMinBy): Self = StObject.set(x, "minBy", value.asInstanceOf[js.Any])
+    inline def setMinBy(value: LodashMinBy): Self = StObject.set(x, "minBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiply(value: LodashMultiply): Self = StObject.set(x, "multiply", value.asInstanceOf[js.Any])
+    inline def setMultiply(value: LodashMultiply): Self = StObject.set(x, "multiply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNAry(value: LodashAry): Self = StObject.set(x, "nAry", value.asInstanceOf[js.Any])
+    inline def setNAry(value: LodashAry): Self = StObject.set(x, "nAry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegate(
+    inline def setNegate(
       value: /* predicate */ js.Function1[/* args */ js.Array[js.Any], js.Any] => js.Function1[/* args */ js.Array[js.Any], Boolean]
     ): Self = StObject.set(x, "negate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNoConflict(value: () => Typeoflodash): Self = StObject.set(x, "noConflict", js.Any.fromFunction0(value))
+    inline def setNoConflict(value: () => Typeoflodash): Self = StObject.set(x, "noConflict", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNoop(value: LodashNoop): Self = StObject.set(x, "noop", value.asInstanceOf[js.Any])
+    inline def setNoop(value: LodashNoop): Self = StObject.set(x, "noop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+    inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNth(value: LodashNth): Self = StObject.set(x, "nth", value.asInstanceOf[js.Any])
+    inline def setNth(value: LodashNth): Self = StObject.set(x, "nth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNthArg(value: /* n */ Double => js.Function1[/* repeated */ js.Any, js.Any]): Self = StObject.set(x, "nthArg", js.Any.fromFunction1(value))
+    inline def setNthArg(value: /* n */ Double => js.Function1[/* repeated */ js.Any, js.Any]): Self = StObject.set(x, "nthArg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOmit(value: LodashOmit): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
+    inline def setOmit(value: LodashOmit): Self = StObject.set(x, "omit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmitAll(value: LodashOmit): Self = StObject.set(x, "omitAll", value.asInstanceOf[js.Any])
+    inline def setOmitAll(value: LodashOmit): Self = StObject.set(x, "omitAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmitBy(value: LodashOmitBy): Self = StObject.set(x, "omitBy", value.asInstanceOf[js.Any])
+    inline def setOmitBy(value: LodashOmitBy): Self = StObject.set(x, "omitBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnce(
+    inline def setOnce(
       value: /* func */ js.Function1[/* args */ js.Any, js.Any] => js.Function1[/* args */ js.Any, js.Any]
     ): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrderBy(value: LodashOrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: LodashOrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOver(
+    inline def setOver(
       value: /* iteratees */ Many[js.Function1[/* repeated */ js.Any, js.Any]] => js.Function1[/* repeated */ js.Any, js.Array[js.Any]]
     ): Self = StObject.set(x, "over", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOverArgs(value: LodashOverArgs): Self = StObject.set(x, "overArgs", value.asInstanceOf[js.Any])
+    inline def setOverArgs(value: LodashOverArgs): Self = StObject.set(x, "overArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverEvery(
+    inline def setOverEvery(
       value: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean]
     ): Self = StObject.set(x, "overEvery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOverSome(
+    inline def setOverSome(
       value: /* predicates */ Many[js.Function1[/* repeated */ js.Any, Boolean]] => js.Function1[/* repeated */ js.Any, Boolean]
     ): Self = StObject.set(x, "overSome", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPad(value: LodashPad): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: LodashPad): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadChars(value: LodashPadChars): Self = StObject.set(x, "padChars", value.asInstanceOf[js.Any])
+    inline def setPadChars(value: LodashPadChars): Self = StObject.set(x, "padChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadCharsEnd(value: LodashPadCharsEnd): Self = StObject.set(x, "padCharsEnd", value.asInstanceOf[js.Any])
+    inline def setPadCharsEnd(value: LodashPadCharsEnd): Self = StObject.set(x, "padCharsEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadCharsStart(value: LodashPadCharsStart): Self = StObject.set(x, "padCharsStart", value.asInstanceOf[js.Any])
+    inline def setPadCharsStart(value: LodashPadCharsStart): Self = StObject.set(x, "padCharsStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadEnd(value: LodashPadEnd): Self = StObject.set(x, "padEnd", value.asInstanceOf[js.Any])
+    inline def setPadEnd(value: LodashPadEnd): Self = StObject.set(x, "padEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadStart(value: LodashPadStart): Self = StObject.set(x, "padStart", value.asInstanceOf[js.Any])
+    inline def setPadStart(value: LodashPadStart): Self = StObject.set(x, "padStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseInt(value: LodashParseInt): Self = StObject.set(x, "parseInt", value.asInstanceOf[js.Any])
+    inline def setParseInt(value: LodashParseInt): Self = StObject.set(x, "parseInt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartial(value: LodashPartial): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+    inline def setPartial(value: LodashPartial): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialRight(value: LodashPartialRight): Self = StObject.set(x, "partialRight", value.asInstanceOf[js.Any])
+    inline def setPartialRight(value: LodashPartialRight): Self = StObject.set(x, "partialRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartition(value: LodashPartition): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: LodashPartition): Self = StObject.set(x, "partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: LodashPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: LodashPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathEq(value: LodashMatchesProperty): Self = StObject.set(x, "pathEq", value.asInstanceOf[js.Any])
+    inline def setPathEq(value: LodashMatchesProperty): Self = StObject.set(x, "pathEq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathOr(value: LodashPathOr): Self = StObject.set(x, "pathOr", value.asInstanceOf[js.Any])
+    inline def setPathOr(value: LodashPathOr): Self = StObject.set(x, "pathOr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: LodashAt): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: LodashAt): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPick(value: LodashPick): Self = StObject.set(x, "pick", value.asInstanceOf[js.Any])
+    inline def setPick(value: LodashPick): Self = StObject.set(x, "pick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickAll(value: LodashPick): Self = StObject.set(x, "pickAll", value.asInstanceOf[js.Any])
+    inline def setPickAll(value: LodashPick): Self = StObject.set(x, "pickAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickBy(value: LodashPickBy): Self = StObject.set(x, "pickBy", value.asInstanceOf[js.Any])
+    inline def setPickBy(value: LodashPickBy): Self = StObject.set(x, "pickBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipe(value: LodashFlow): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
+    inline def setPipe(value: LodashFlow): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholder(value: __): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: __): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluck(value: LodashMap): Self = StObject.set(x, "pluck", value.asInstanceOf[js.Any])
+    inline def setPluck(value: LodashMap): Self = StObject.set(x, "pluck", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProp(value: LodashProp): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+    inline def setProp(value: LodashProp): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropEq(value: LodashMatchesProperty): Self = StObject.set(x, "propEq", value.asInstanceOf[js.Any])
+    inline def setPropEq(value: LodashMatchesProperty): Self = StObject.set(x, "propEq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropOr(value: LodashPropOr): Self = StObject.set(x, "propOr", value.asInstanceOf[js.Any])
+    inline def setPropOr(value: LodashPropOr): Self = StObject.set(x, "propOr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: LodashProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: LodashProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyOf(value: LodashPropertyOf): Self = StObject.set(x, "propertyOf", value.asInstanceOf[js.Any])
+    inline def setPropertyOf(value: LodashPropertyOf): Self = StObject.set(x, "propertyOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProps(value: LodashAt): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: LodashAt): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPull(value: LodashPull): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
+    inline def setPull(value: LodashPull): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullAll(value: LodashPullAll): Self = StObject.set(x, "pullAll", value.asInstanceOf[js.Any])
+    inline def setPullAll(value: LodashPullAll): Self = StObject.set(x, "pullAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullAllBy(value: LodashPullAllBy): Self = StObject.set(x, "pullAllBy", value.asInstanceOf[js.Any])
+    inline def setPullAllBy(value: LodashPullAllBy): Self = StObject.set(x, "pullAllBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullAllWith(value: LodashPullAllWith): Self = StObject.set(x, "pullAllWith", value.asInstanceOf[js.Any])
+    inline def setPullAllWith(value: LodashPullAllWith): Self = StObject.set(x, "pullAllWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullAt(value: LodashPullAt): Self = StObject.set(x, "pullAt", value.asInstanceOf[js.Any])
+    inline def setPullAt(value: LodashPullAt): Self = StObject.set(x, "pullAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandom(value: LodashRandom): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+    inline def setRandom(value: LodashRandom): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: LodashRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: LodashRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeRight(value: LodashRangeRight): Self = StObject.set(x, "rangeRight", value.asInstanceOf[js.Any])
+    inline def setRangeRight(value: LodashRangeRight): Self = StObject.set(x, "rangeRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeStep(value: LodashRangeStep): Self = StObject.set(x, "rangeStep", value.asInstanceOf[js.Any])
+    inline def setRangeStep(value: LodashRangeStep): Self = StObject.set(x, "rangeStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeStepRight(value: LodashRangeStepRight): Self = StObject.set(x, "rangeStepRight", value.asInstanceOf[js.Any])
+    inline def setRangeStepRight(value: LodashRangeStepRight): Self = StObject.set(x, "rangeStepRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRearg(value: LodashRearg): Self = StObject.set(x, "rearg", value.asInstanceOf[js.Any])
+    inline def setRearg(value: LodashRearg): Self = StObject.set(x, "rearg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReduce(value: LodashReduce): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
+    inline def setReduce(value: LodashReduce): Self = StObject.set(x, "reduce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReduceRight(value: LodashReduceRight): Self = StObject.set(x, "reduceRight", value.asInstanceOf[js.Any])
+    inline def setReduceRight(value: LodashReduceRight): Self = StObject.set(x, "reduceRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReject(value: LodashReject): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
+    inline def setReject(value: LodashReject): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: LodashRemove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: LodashRemove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeat(value: LodashRepeat): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: LodashRepeat): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplace(value: LodashReplace): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: LodashReplace): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRest(
+    inline def setRest(
       value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Function1[/* repeated */ js.Any, js.Any]
     ): Self = StObject.set(x, "rest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRestFrom(value: LodashRestFrom): Self = StObject.set(x, "restFrom", value.asInstanceOf[js.Any])
+    inline def setRestFrom(value: LodashRestFrom): Self = StObject.set(x, "restFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: LodashResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: LodashResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverse(value: /* array */ List[js.Any] => List[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
+    inline def setReverse(value: /* array */ List[js.Any] => List[js.Any]): Self = StObject.set(x, "reverse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRound(value: /* n */ Double => Double): Self = StObject.set(x, "round", js.Any.fromFunction1(value))
+    inline def setRound(value: /* n */ Double => Double): Self = StObject.set(x, "round", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRunInContext(value: /* context */ js.Object => LoDashStatic): Self = StObject.set(x, "runInContext", js.Any.fromFunction1(value))
+    inline def setRunInContext(value: /* context */ js.Object => LoDashStatic): Self = StObject.set(x, "runInContext", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSample(value: LodashSample): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+    inline def setSample(value: LodashSample): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleSize(value: LodashSampleSize): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
+    inline def setSampleSize(value: LodashSampleSize): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSet(value: LodashSet): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    inline def setSet(value: LodashSet): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetWith(value: LodashSetWith): Self = StObject.set(x, "setWith", value.asInstanceOf[js.Any])
+    inline def setSetWith(value: LodashSetWith): Self = StObject.set(x, "setWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShuffle(value: LodashShuffle): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
+    inline def setShuffle(value: LodashShuffle): Self = StObject.set(x, "shuffle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: /* collection */ js.UndefOr[js.Object | java.lang.String | Null] => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
+    inline def setSize(value: /* collection */ js.UndefOr[js.Object | java.lang.String | Null] => Double): Self = StObject.set(x, "size", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSlice(value: LodashSlice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+    inline def setSlice(value: LodashSlice): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnakeCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "snakeCase", js.Any.fromFunction1(value))
+    inline def setSnakeCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "snakeCase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSome(value: LodashSome): Self = StObject.set(x, "some", value.asInstanceOf[js.Any])
+    inline def setSome(value: LodashSome): Self = StObject.set(x, "some", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortBy(value: LodashSortBy): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: LodashSortBy): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedIndex(value: LodashSortedIndex): Self = StObject.set(x, "sortedIndex", value.asInstanceOf[js.Any])
+    inline def setSortedIndex(value: LodashSortedIndex): Self = StObject.set(x, "sortedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedIndexBy(value: LodashSortedIndexBy): Self = StObject.set(x, "sortedIndexBy", value.asInstanceOf[js.Any])
+    inline def setSortedIndexBy(value: LodashSortedIndexBy): Self = StObject.set(x, "sortedIndexBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedIndexOf(value: LodashSortedIndexOf): Self = StObject.set(x, "sortedIndexOf", value.asInstanceOf[js.Any])
+    inline def setSortedIndexOf(value: LodashSortedIndexOf): Self = StObject.set(x, "sortedIndexOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedLastIndex(value: LodashSortedLastIndex): Self = StObject.set(x, "sortedLastIndex", value.asInstanceOf[js.Any])
+    inline def setSortedLastIndex(value: LodashSortedLastIndex): Self = StObject.set(x, "sortedLastIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedLastIndexBy(value: LodashSortedLastIndexBy): Self = StObject.set(x, "sortedLastIndexBy", value.asInstanceOf[js.Any])
+    inline def setSortedLastIndexBy(value: LodashSortedLastIndexBy): Self = StObject.set(x, "sortedLastIndexBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedLastIndexOf(value: LodashSortedLastIndexOf): Self = StObject.set(x, "sortedLastIndexOf", value.asInstanceOf[js.Any])
+    inline def setSortedLastIndexOf(value: LodashSortedLastIndexOf): Self = StObject.set(x, "sortedLastIndexOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortedUniq(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "sortedUniq", js.Any.fromFunction1(value))
+    inline def setSortedUniq(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "sortedUniq", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortedUniqBy(value: LodashSortedUniqBy): Self = StObject.set(x, "sortedUniqBy", value.asInstanceOf[js.Any])
+    inline def setSortedUniqBy(value: LodashSortedUniqBy): Self = StObject.set(x, "sortedUniqBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplit(value: LodashSplit): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+    inline def setSplit(value: LodashSplit): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpread(
+    inline def setSpread(
       value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Function1[/* repeated */ js.Any, js.Any]
     ): Self = StObject.set(x, "spread", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpreadFrom(value: LodashSpreadFrom): Self = StObject.set(x, "spreadFrom", value.asInstanceOf[js.Any])
+    inline def setSpreadFrom(value: LodashSpreadFrom): Self = StObject.set(x, "spreadFrom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "startCase", js.Any.fromFunction1(value))
+    inline def setStartCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "startCase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartsWith(value: LodashStartsWith): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
+    inline def setStartsWith(value: LodashStartsWith): Self = StObject.set(x, "startsWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStubArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "stubArray", js.Any.fromFunction0(value))
+    inline def setStubArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "stubArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStubFalse(value: () => `false`): Self = StObject.set(x, "stubFalse", js.Any.fromFunction0(value))
+    inline def setStubFalse(value: () => `false`): Self = StObject.set(x, "stubFalse", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStubObject(value: () => js.Any): Self = StObject.set(x, "stubObject", js.Any.fromFunction0(value))
+    inline def setStubObject(value: () => js.Any): Self = StObject.set(x, "stubObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStubString(value: () => java.lang.String): Self = StObject.set(x, "stubString", js.Any.fromFunction0(value))
+    inline def setStubString(value: () => java.lang.String): Self = StObject.set(x, "stubString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStubTrue(value: () => `true`): Self = StObject.set(x, "stubTrue", js.Any.fromFunction0(value))
+    inline def setStubTrue(value: () => `true`): Self = StObject.set(x, "stubTrue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubtract(value: LodashSubtract): Self = StObject.set(x, "subtract", value.asInstanceOf[js.Any])
+    inline def setSubtract(value: LodashSubtract): Self = StObject.set(x, "subtract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSum(value: /* collection */ js.UndefOr[List[js.Any] | Null] => Double): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
+    inline def setSum(value: /* collection */ js.UndefOr[List[js.Any] | Null] => Double): Self = StObject.set(x, "sum", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSumBy(value: LodashSumBy): Self = StObject.set(x, "sumBy", value.asInstanceOf[js.Any])
+    inline def setSumBy(value: LodashSumBy): Self = StObject.set(x, "sumBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymmetricDifference(value: LodashXor): Self = StObject.set(x, "symmetricDifference", value.asInstanceOf[js.Any])
+    inline def setSymmetricDifference(value: LodashXor): Self = StObject.set(x, "symmetricDifference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymmetricDifferenceBy(value: LodashXorBy): Self = StObject.set(x, "symmetricDifferenceBy", value.asInstanceOf[js.Any])
+    inline def setSymmetricDifferenceBy(value: LodashXorBy): Self = StObject.set(x, "symmetricDifferenceBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymmetricDifferenceWith(value: LodashXorWith): Self = StObject.set(x, "symmetricDifferenceWith", value.asInstanceOf[js.Any])
+    inline def setSymmetricDifferenceWith(value: LodashXorWith): Self = StObject.set(x, "symmetricDifferenceWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setT(value: () => `true`): Self = StObject.set(x, "T", js.Any.fromFunction0(value))
+    inline def setT(value: () => `true`): Self = StObject.set(x, "T", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTail(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "tail", js.Any.fromFunction1(value))
+    inline def setTail(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "tail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTake(value: LodashTake): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
+    inline def setTake(value: LodashTake): Self = StObject.set(x, "take", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeLast(value: LodashTakeRight): Self = StObject.set(x, "takeLast", value.asInstanceOf[js.Any])
+    inline def setTakeLast(value: LodashTakeRight): Self = StObject.set(x, "takeLast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeLastWhile(value: LodashTakeRightWhile): Self = StObject.set(x, "takeLastWhile", value.asInstanceOf[js.Any])
+    inline def setTakeLastWhile(value: LodashTakeRightWhile): Self = StObject.set(x, "takeLastWhile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeRight(value: LodashTakeRight): Self = StObject.set(x, "takeRight", value.asInstanceOf[js.Any])
+    inline def setTakeRight(value: LodashTakeRight): Self = StObject.set(x, "takeRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeRightWhile(value: LodashTakeRightWhile): Self = StObject.set(x, "takeRightWhile", value.asInstanceOf[js.Any])
+    inline def setTakeRightWhile(value: LodashTakeRightWhile): Self = StObject.set(x, "takeRightWhile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakeWhile(value: LodashTakeWhile): Self = StObject.set(x, "takeWhile", value.asInstanceOf[js.Any])
+    inline def setTakeWhile(value: LodashTakeWhile): Self = StObject.set(x, "takeWhile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTap(value: LodashTap): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
+    inline def setTap(value: LodashTap): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: /* string */ java.lang.String => TemplateExecutor): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    inline def setTemplate(value: /* string */ java.lang.String => TemplateExecutor): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThrottle(value: LodashThrottle): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+    inline def setThrottle(value: LodashThrottle): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThru(value: LodashThru): Self = StObject.set(x, "thru", value.asInstanceOf[js.Any])
+    inline def setThru(value: LodashThru): Self = StObject.set(x, "thru", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimes(value: LodashTimes): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
+    inline def setTimes(value: LodashTimes): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToArray(value: LodashToArray): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
+    inline def setToArray(value: LodashToArray): Self = StObject.set(x, "toArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToFinite(value: /* value */ js.Any => Double): Self = StObject.set(x, "toFinite", js.Any.fromFunction1(value))
+    inline def setToFinite(value: /* value */ js.Any => Double): Self = StObject.set(x, "toFinite", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToInteger(value: /* value */ js.Any => Double): Self = StObject.set(x, "toInteger", js.Any.fromFunction1(value))
+    inline def setToInteger(value: /* value */ js.Any => Double): Self = StObject.set(x, "toInteger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToLength(value: /* value */ js.Any => Double): Self = StObject.set(x, "toLength", js.Any.fromFunction1(value))
+    inline def setToLength(value: /* value */ js.Any => Double): Self = StObject.set(x, "toLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToLower(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "toLower", js.Any.fromFunction1(value))
+    inline def setToLower(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "toLower", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToNumber(value: /* value */ js.Any => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction1(value))
+    inline def setToNumber(value: /* value */ js.Any => Double): Self = StObject.set(x, "toNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToPairs(value: LodashToPairs): Self = StObject.set(x, "toPairs", value.asInstanceOf[js.Any])
+    inline def setToPairs(value: LodashToPairs): Self = StObject.set(x, "toPairs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPairsIn(value: LodashToPairsIn): Self = StObject.set(x, "toPairsIn", value.asInstanceOf[js.Any])
+    inline def setToPairsIn(value: LodashToPairsIn): Self = StObject.set(x, "toPairsIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPath(value: /* value */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "toPath", js.Any.fromFunction1(value))
+    inline def setToPath(value: /* value */ js.Any => js.Array[java.lang.String]): Self = StObject.set(x, "toPath", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToPlainObject(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction1(value))
+    inline def setToPlainObject(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToSafeInteger(value: /* value */ js.Any => Double): Self = StObject.set(x, "toSafeInteger", js.Any.fromFunction1(value))
+    inline def setToSafeInteger(value: /* value */ js.Any => Double): Self = StObject.set(x, "toSafeInteger", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToString_(value: /* value */ js.Any => java.lang.String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
+    inline def setToString_(value: /* value */ js.Any => java.lang.String): Self = StObject.set(x, "toString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToUpper(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "toUpper", js.Any.fromFunction1(value))
+    inline def setToUpper(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "toUpper", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransform(value: LodashTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: LodashTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrim(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "trim", js.Any.fromFunction1(value))
+    inline def setTrim(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "trim", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrimChars(value: LodashTrimChars): Self = StObject.set(x, "trimChars", value.asInstanceOf[js.Any])
+    inline def setTrimChars(value: LodashTrimChars): Self = StObject.set(x, "trimChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimCharsEnd(value: LodashTrimCharsEnd): Self = StObject.set(x, "trimCharsEnd", value.asInstanceOf[js.Any])
+    inline def setTrimCharsEnd(value: LodashTrimCharsEnd): Self = StObject.set(x, "trimCharsEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimCharsStart(value: LodashTrimCharsStart): Self = StObject.set(x, "trimCharsStart", value.asInstanceOf[js.Any])
+    inline def setTrimCharsStart(value: LodashTrimCharsStart): Self = StObject.set(x, "trimCharsStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimEnd(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "trimEnd", js.Any.fromFunction1(value))
+    inline def setTrimEnd(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "trimEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrimStart(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "trimStart", js.Any.fromFunction1(value))
+    inline def setTrimStart(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "trimStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTruncate(value: LodashTruncate): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+    inline def setTruncate(value: LodashTruncate): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnapply(
+    inline def setUnapply(
       value: /* func */ js.Function1[/* repeated */ js.Any, js.Any] => js.Function1[/* repeated */ js.Any, js.Any]
     ): Self = StObject.set(x, "unapply", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnary(
+    inline def setUnary(
       value: /* func */ js.Function2[/* arg1 */ js.Any, /* repeated */ js.Any, js.Any] => js.Function1[/* arg1 */ js.Any, js.Any]
     ): Self = StObject.set(x, "unary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnescape(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "unescape", js.Any.fromFunction1(value))
+    inline def setUnescape(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "unescape", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnion(value: LodashUnion): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
+    inline def setUnion(value: LodashUnion): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnionBy(value: LodashUnionBy): Self = StObject.set(x, "unionBy", value.asInstanceOf[js.Any])
+    inline def setUnionBy(value: LodashUnionBy): Self = StObject.set(x, "unionBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnionWith(value: LodashUnionWith): Self = StObject.set(x, "unionWith", value.asInstanceOf[js.Any])
+    inline def setUnionWith(value: LodashUnionWith): Self = StObject.set(x, "unionWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniq(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "uniq", js.Any.fromFunction1(value))
+    inline def setUniq(value: /* array */ js.UndefOr[List[js.Any] | Null] => js.Array[js.Any]): Self = StObject.set(x, "uniq", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUniqBy(value: LodashUniqBy): Self = StObject.set(x, "uniqBy", value.asInstanceOf[js.Any])
+    inline def setUniqBy(value: LodashUniqBy): Self = StObject.set(x, "uniqBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqWith(value: LodashUniqWith): Self = StObject.set(x, "uniqWith", value.asInstanceOf[js.Any])
+    inline def setUniqWith(value: LodashUniqWith): Self = StObject.set(x, "uniqWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueId(value: /* prefix */ java.lang.String => java.lang.String): Self = StObject.set(x, "uniqueId", js.Any.fromFunction1(value))
+    inline def setUniqueId(value: /* prefix */ java.lang.String => java.lang.String): Self = StObject.set(x, "uniqueId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnnest(value: /* array */ js.UndefOr[List[Many[js.Any]] | Null] => js.Array[js.Any]): Self = StObject.set(x, "unnest", js.Any.fromFunction1(value))
+    inline def setUnnest(value: /* array */ js.UndefOr[List[Many[js.Any]] | Null] => js.Array[js.Any]): Self = StObject.set(x, "unnest", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnset(value: LodashUnset): Self = StObject.set(x, "unset", value.asInstanceOf[js.Any])
+    inline def setUnset(value: LodashUnset): Self = StObject.set(x, "unset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnzip(
+    inline def setUnzip(
       value: /* array */ js.UndefOr[js.Array[js.Array[js.Any]] | List[List[js.Any]] | Null] => js.Array[js.Array[js.Any]]
     ): Self = StObject.set(x, "unzip", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnzipWith(value: LodashUnzipWith): Self = StObject.set(x, "unzipWith", value.asInstanceOf[js.Any])
+    inline def setUnzipWith(value: LodashUnzipWith): Self = StObject.set(x, "unzipWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: LodashUpdate): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: LodashUpdate): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateWith(value: LodashUpdateWith): Self = StObject.set(x, "updateWith", value.asInstanceOf[js.Any])
+    inline def setUpdateWith(value: LodashUpdateWith): Self = StObject.set(x, "updateWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "upperCase", js.Any.fromFunction1(value))
+    inline def setUpperCase(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "upperCase", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpperFirst(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "upperFirst", js.Any.fromFunction1(value))
+    inline def setUpperFirst(value: /* string */ java.lang.String => java.lang.String): Self = StObject.set(x, "upperFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUseWith(value: LodashOverArgs): Self = StObject.set(x, "useWith", value.asInstanceOf[js.Any])
+    inline def setUseWith(value: LodashOverArgs): Self = StObject.set(x, "useWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: LodashValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: LodashValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesIn(value: LodashValuesIn): Self = StObject.set(x, "valuesIn", value.asInstanceOf[js.Any])
+    inline def setValuesIn(value: LodashValuesIn): Self = StObject.set(x, "valuesIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhere(value: LodashConformsTo): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    inline def setWhere(value: LodashConformsTo): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhereEq(value: LodashIsMatch): Self = StObject.set(x, "whereEq", value.asInstanceOf[js.Any])
+    inline def setWhereEq(value: LodashIsMatch): Self = StObject.set(x, "whereEq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithout(value: LodashWithout): Self = StObject.set(x, "without", value.asInstanceOf[js.Any])
+    inline def setWithout(value: LodashWithout): Self = StObject.set(x, "without", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWords(value: /* string */ java.lang.String => js.Array[java.lang.String]): Self = StObject.set(x, "words", js.Any.fromFunction1(value))
+    inline def setWords(value: /* string */ java.lang.String => js.Array[java.lang.String]): Self = StObject.set(x, "words", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrap(value: LodashWrap): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    inline def setWrap(value: LodashWrap): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXor(value: LodashXor): Self = StObject.set(x, "xor", value.asInstanceOf[js.Any])
+    inline def setXor(value: LodashXor): Self = StObject.set(x, "xor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXorBy(value: LodashXorBy): Self = StObject.set(x, "xorBy", value.asInstanceOf[js.Any])
+    inline def setXorBy(value: LodashXorBy): Self = StObject.set(x, "xorBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXorWith(value: LodashXorWith): Self = StObject.set(x, "xorWith", value.asInstanceOf[js.Any])
+    inline def setXorWith(value: LodashXorWith): Self = StObject.set(x, "xorWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZip(value: LodashZip): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
+    inline def setZip(value: LodashZip): Self = StObject.set(x, "zip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipAll(value: LodashZipAll): Self = StObject.set(x, "zipAll", value.asInstanceOf[js.Any])
+    inline def setZipAll(value: LodashZipAll): Self = StObject.set(x, "zipAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipObj(value: LodashZipObject): Self = StObject.set(x, "zipObj", value.asInstanceOf[js.Any])
+    inline def setZipObj(value: LodashZipObject): Self = StObject.set(x, "zipObj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipObject(value: LodashZipObject): Self = StObject.set(x, "zipObject", value.asInstanceOf[js.Any])
+    inline def setZipObject(value: LodashZipObject): Self = StObject.set(x, "zipObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipObjectDeep(value: LodashZipObjectDeep): Self = StObject.set(x, "zipObjectDeep", value.asInstanceOf[js.Any])
+    inline def setZipObjectDeep(value: LodashZipObjectDeep): Self = StObject.set(x, "zipObjectDeep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZipWith(value: LodashZipWith): Self = StObject.set(x, "zipWith", value.asInstanceOf[js.Any])
+    inline def setZipWith(value: LodashZipWith): Self = StObject.set(x, "zipWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__(value: __): Self = StObject.set(x, "__", value.asInstanceOf[js.Any])
+    inline def set__(value: __): Self = StObject.set(x, "__", value.asInstanceOf[js.Any])
   }
 }

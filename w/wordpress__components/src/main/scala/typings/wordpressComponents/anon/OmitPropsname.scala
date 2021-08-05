@@ -12,19 +12,15 @@ trait OmitPropsname extends StObject {
 }
 object OmitPropsname {
   
-  @scala.inline
-  def apply(): OmitPropsname = {
+  inline def apply(): OmitPropsname = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmitPropsname]
   }
   
-  @scala.inline
-  implicit class OmitPropsnameMutableBuilder[Self <: OmitPropsname] (val x: Self) extends AnyVal {
+  extension [Self <: OmitPropsname](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

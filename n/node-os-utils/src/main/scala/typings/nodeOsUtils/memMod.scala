@@ -37,8 +37,7 @@ object memMod {
   }
   object Mem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       free: () => js.Promise[MemFreeInfo],
       info: () => js.Promise[MemInfo],
       totalMem: () => Double,
@@ -48,20 +47,15 @@ object memMod {
       __obj.asInstanceOf[Mem]
     }
     
-    @scala.inline
-    implicit class MemMutableBuilder[Self <: Mem] (val x: Self) extends AnyVal {
+    extension [Self <: Mem](x: Self) {
       
-      @scala.inline
-      def setFree(value: () => js.Promise[MemFreeInfo]): Self = StObject.set(x, "free", js.Any.fromFunction0(value))
+      inline def setFree(value: () => js.Promise[MemFreeInfo]): Self = StObject.set(x, "free", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInfo(value: () => js.Promise[MemInfo]): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
+      inline def setInfo(value: () => js.Promise[MemInfo]): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTotalMem(value: () => Double): Self = StObject.set(x, "totalMem", js.Any.fromFunction0(value))
+      inline def setTotalMem(value: () => Double): Self = StObject.set(x, "totalMem", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUsed(value: () => js.Promise[MemUsedInfo]): Self = StObject.set(x, "used", js.Any.fromFunction0(value))
+      inline def setUsed(value: () => js.Promise[MemUsedInfo]): Self = StObject.set(x, "used", js.Any.fromFunction0(value))
     }
   }
   
@@ -73,20 +67,16 @@ object memMod {
   }
   object MemFreeInfo {
     
-    @scala.inline
-    def apply(freeMemMb: Double, totalMemMb: Double): MemFreeInfo = {
+    inline def apply(freeMemMb: Double, totalMemMb: Double): MemFreeInfo = {
       val __obj = js.Dynamic.literal(freeMemMb = freeMemMb.asInstanceOf[js.Any], totalMemMb = totalMemMb.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemFreeInfo]
     }
     
-    @scala.inline
-    implicit class MemFreeInfoMutableBuilder[Self <: MemFreeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MemFreeInfo](x: Self) {
       
-      @scala.inline
-      def setFreeMemMb(value: Double): Self = StObject.set(x, "freeMemMb", value.asInstanceOf[js.Any])
+      inline def setFreeMemMb(value: Double): Self = StObject.set(x, "freeMemMb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalMemMb(value: Double): Self = StObject.set(x, "totalMemMb", value.asInstanceOf[js.Any])
+      inline def setTotalMemMb(value: Double): Self = StObject.set(x, "totalMemMb", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,20 +91,16 @@ object memMod {
   }
   object MemInfo {
     
-    @scala.inline
-    def apply(freeMemMb: Double, freeMemPercentage: Double, totalMemMb: Double, usedMemMb: Double): MemInfo = {
+    inline def apply(freeMemMb: Double, freeMemPercentage: Double, totalMemMb: Double, usedMemMb: Double): MemInfo = {
       val __obj = js.Dynamic.literal(freeMemMb = freeMemMb.asInstanceOf[js.Any], freeMemPercentage = freeMemPercentage.asInstanceOf[js.Any], totalMemMb = totalMemMb.asInstanceOf[js.Any], usedMemMb = usedMemMb.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemInfo]
     }
     
-    @scala.inline
-    implicit class MemInfoMutableBuilder[Self <: MemInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MemInfo](x: Self) {
       
-      @scala.inline
-      def setFreeMemPercentage(value: Double): Self = StObject.set(x, "freeMemPercentage", value.asInstanceOf[js.Any])
+      inline def setFreeMemPercentage(value: Double): Self = StObject.set(x, "freeMemPercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsedMemMb(value: Double): Self = StObject.set(x, "usedMemMb", value.asInstanceOf[js.Any])
+      inline def setUsedMemMb(value: Double): Self = StObject.set(x, "usedMemMb", value.asInstanceOf[js.Any])
     }
   }
   
@@ -126,20 +112,16 @@ object memMod {
   }
   object MemUsedInfo {
     
-    @scala.inline
-    def apply(totalMemMb: Double, usedMemMb: Double): MemUsedInfo = {
+    inline def apply(totalMemMb: Double, usedMemMb: Double): MemUsedInfo = {
       val __obj = js.Dynamic.literal(totalMemMb = totalMemMb.asInstanceOf[js.Any], usedMemMb = usedMemMb.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemUsedInfo]
     }
     
-    @scala.inline
-    implicit class MemUsedInfoMutableBuilder[Self <: MemUsedInfo] (val x: Self) extends AnyVal {
+    extension [Self <: MemUsedInfo](x: Self) {
       
-      @scala.inline
-      def setTotalMemMb(value: Double): Self = StObject.set(x, "totalMemMb", value.asInstanceOf[js.Any])
+      inline def setTotalMemMb(value: Double): Self = StObject.set(x, "totalMemMb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsedMemMb(value: Double): Self = StObject.set(x, "usedMemMb", value.asInstanceOf[js.Any])
+      inline def setUsedMemMb(value: Double): Self = StObject.set(x, "usedMemMb", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -9,13 +9,11 @@ object esmAreIntervalsOverlappingMod {
   
   object default {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       intervalLeft: typings.dateFns.mod.Interval | Interval,
       intervalRight: typings.dateFns.mod.Interval | Interval
     ): Boolean = (^.asInstanceOf[js.Dynamic].apply(intervalLeft.asInstanceOf[js.Any], intervalRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def apply(
+    inline def apply(
       intervalLeft: typings.dateFns.mod.Interval | Interval,
       intervalRight: typings.dateFns.mod.Interval | Interval,
       options: Inclusive

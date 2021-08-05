@@ -16,8 +16,7 @@ trait GetContext extends StObject {
 }
 object GetContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContext: js.Function,
     getMetrics: js.Function,
     renderToStave: js.Function,
@@ -27,19 +26,14 @@ object GetContext {
     __obj.asInstanceOf[GetContext]
   }
   
-  @scala.inline
-  implicit class GetContextMutableBuilder[Self <: GetContext] (val x: Self) extends AnyVal {
+  extension [Self <: GetContext](x: Self) {
     
-    @scala.inline
-    def setGetContext(value: js.Function): Self = StObject.set(x, "getContext", value.asInstanceOf[js.Any])
+    inline def setGetContext(value: js.Function): Self = StObject.set(x, "getContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMetrics(value: js.Function): Self = StObject.set(x, "getMetrics", value.asInstanceOf[js.Any])
+    inline def setGetMetrics(value: js.Function): Self = StObject.set(x, "getMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderToStave(value: js.Function): Self = StObject.set(x, "renderToStave", value.asInstanceOf[js.Any])
+    inline def setRenderToStave(value: js.Function): Self = StObject.set(x, "renderToStave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetStave(value: js.Function): Self = StObject.set(x, "setStave", value.asInstanceOf[js.Any])
+    inline def setSetStave(value: js.Function): Self = StObject.set(x, "setStave", value.asInstanceOf[js.Any])
   }
 }

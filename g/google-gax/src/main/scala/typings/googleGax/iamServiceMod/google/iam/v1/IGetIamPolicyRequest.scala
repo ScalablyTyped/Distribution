@@ -15,31 +15,23 @@ trait IGetIamPolicyRequest extends StObject {
 }
 object IGetIamPolicyRequest {
   
-  @scala.inline
-  def apply(): IGetIamPolicyRequest = {
+  inline def apply(): IGetIamPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGetIamPolicyRequest]
   }
   
-  @scala.inline
-  implicit class IGetIamPolicyRequestMutableBuilder[Self <: IGetIamPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IGetIamPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setOptions(value: IGetPolicyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IGetPolicyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsNull: Self = StObject.set(x, "options", null)
+    inline def setOptionsNull: Self = StObject.set(x, "options", null)
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNull: Self = StObject.set(x, "resource", null)
+    inline def setResourceNull: Self = StObject.set(x, "resource", null)
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait InstanceUsage extends StObject {
 }
 object InstanceUsage {
   
-  @scala.inline
-  def apply(): InstanceUsage = {
+  inline def apply(): InstanceUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceUsage]
   }
   
-  @scala.inline
-  implicit class InstanceUsageMutableBuilder[Self <: InstanceUsage] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceUsage](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setUsedInstanceCount(value: Integer): Self = StObject.set(x, "UsedInstanceCount", value.asInstanceOf[js.Any])
+    inline def setUsedInstanceCount(value: Integer): Self = StObject.set(x, "UsedInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsedInstanceCountUndefined: Self = StObject.set(x, "UsedInstanceCount", js.undefined)
+    inline def setUsedInstanceCountUndefined: Self = StObject.set(x, "UsedInstanceCount", js.undefined)
   }
 }

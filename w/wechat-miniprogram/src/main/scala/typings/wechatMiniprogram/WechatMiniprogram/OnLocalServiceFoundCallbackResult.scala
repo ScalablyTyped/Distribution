@@ -20,25 +20,19 @@ trait OnLocalServiceFoundCallbackResult extends StObject {
 }
 object OnLocalServiceFoundCallbackResult {
   
-  @scala.inline
-  def apply(ip: String, port: Double, serviceName: String, serviceType: String): OnLocalServiceFoundCallbackResult = {
+  inline def apply(ip: String, port: Double, serviceName: String, serviceType: String): OnLocalServiceFoundCallbackResult = {
     val __obj = js.Dynamic.literal(ip = ip.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], serviceName = serviceName.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnLocalServiceFoundCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnLocalServiceFoundCallbackResultMutableBuilder[Self <: OnLocalServiceFoundCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnLocalServiceFoundCallbackResult](x: Self) {
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
   }
 }

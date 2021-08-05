@@ -14,26 +14,20 @@ object anon {
   }
   object CrossOrigin {
     
-    @scala.inline
-    def apply(): CrossOrigin = {
+    inline def apply(): CrossOrigin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CrossOrigin]
     }
     
-    @scala.inline
-    implicit class CrossOriginMutableBuilder[Self <: CrossOrigin] (val x: Self) extends AnyVal {
+    extension [Self <: CrossOrigin](x: Self) {
       
-      @scala.inline
-      def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
-      @scala.inline
-      def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
+      inline def setDecode(value: Boolean): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
+      inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
     }
   }
   
@@ -47,26 +41,20 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: js.Any, isLoading: Boolean): Error = {
+    inline def apply(error: js.Any, isLoading: Boolean): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     }
   }
 }

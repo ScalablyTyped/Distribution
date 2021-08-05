@@ -16,19 +16,15 @@ trait SchemaIngestMessageRequest extends StObject {
 }
 object SchemaIngestMessageRequest {
   
-  @scala.inline
-  def apply(): SchemaIngestMessageRequest = {
+  inline def apply(): SchemaIngestMessageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIngestMessageRequest]
   }
   
-  @scala.inline
-  implicit class SchemaIngestMessageRequestMutableBuilder[Self <: SchemaIngestMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIngestMessageRequest](x: Self) {
     
-    @scala.inline
-    def setMessage(value: SchemaMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: SchemaMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ trait DomainVerification
 }
 object DomainVerification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     custom_domain_id: String,
     domain: String,
     primary: Boolean,
@@ -27,13 +26,10 @@ object DomainVerification {
     __obj.asInstanceOf[DomainVerification]
   }
   
-  @scala.inline
-  implicit class DomainVerificationMutableBuilder[Self <: DomainVerification] (val x: Self) extends AnyVal {
+  extension [Self <: DomainVerification](x: Self) {
     
-    @scala.inline
-    def setCname_api_key(value: String): Self = StObject.set(x, "cname_api_key", value.asInstanceOf[js.Any])
+    inline def setCname_api_key(value: String): Self = StObject.set(x, "cname_api_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCname_api_keyUndefined: Self = StObject.set(x, "cname_api_key", js.undefined)
+    inline def setCname_api_keyUndefined: Self = StObject.set(x, "cname_api_key", js.undefined)
   }
 }

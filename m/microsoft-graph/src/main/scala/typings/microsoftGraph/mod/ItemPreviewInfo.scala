@@ -14,40 +14,29 @@ trait ItemPreviewInfo extends StObject {
 }
 object ItemPreviewInfo {
   
-  @scala.inline
-  def apply(): ItemPreviewInfo = {
+  inline def apply(): ItemPreviewInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemPreviewInfo]
   }
   
-  @scala.inline
-  implicit class ItemPreviewInfoMutableBuilder[Self <: ItemPreviewInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ItemPreviewInfo](x: Self) {
     
-    @scala.inline
-    def setGetUrl(value: NullableOption[String]): Self = StObject.set(x, "getUrl", value.asInstanceOf[js.Any])
+    inline def setGetUrl(value: NullableOption[String]): Self = StObject.set(x, "getUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetUrlNull: Self = StObject.set(x, "getUrl", null)
+    inline def setGetUrlNull: Self = StObject.set(x, "getUrl", null)
     
-    @scala.inline
-    def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
+    inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
-    @scala.inline
-    def setPostParameters(value: NullableOption[String]): Self = StObject.set(x, "postParameters", value.asInstanceOf[js.Any])
+    inline def setPostParameters(value: NullableOption[String]): Self = StObject.set(x, "postParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostParametersNull: Self = StObject.set(x, "postParameters", null)
+    inline def setPostParametersNull: Self = StObject.set(x, "postParameters", null)
     
-    @scala.inline
-    def setPostParametersUndefined: Self = StObject.set(x, "postParameters", js.undefined)
+    inline def setPostParametersUndefined: Self = StObject.set(x, "postParameters", js.undefined)
     
-    @scala.inline
-    def setPostUrl(value: NullableOption[String]): Self = StObject.set(x, "postUrl", value.asInstanceOf[js.Any])
+    inline def setPostUrl(value: NullableOption[String]): Self = StObject.set(x, "postUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostUrlNull: Self = StObject.set(x, "postUrl", null)
+    inline def setPostUrlNull: Self = StObject.set(x, "postUrl", null)
     
-    @scala.inline
-    def setPostUrlUndefined: Self = StObject.set(x, "postUrl", js.undefined)
+    inline def setPostUrlUndefined: Self = StObject.set(x, "postUrl", js.undefined)
   }
 }

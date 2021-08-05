@@ -20,31 +20,23 @@ trait GooglePrivacyDlpV2CreateJobTriggerRequest extends StObject {
 }
 object GooglePrivacyDlpV2CreateJobTriggerRequest {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2CreateJobTriggerRequest = {
+  inline def apply(): GooglePrivacyDlpV2CreateJobTriggerRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2CreateJobTriggerRequest]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2CreateJobTriggerRequestMutableBuilder[Self <: GooglePrivacyDlpV2CreateJobTriggerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2CreateJobTriggerRequest](x: Self) {
     
-    @scala.inline
-    def setJobTrigger(value: GooglePrivacyDlpV2JobTrigger): Self = StObject.set(x, "jobTrigger", value.asInstanceOf[js.Any])
+    inline def setJobTrigger(value: GooglePrivacyDlpV2JobTrigger): Self = StObject.set(x, "jobTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobTriggerUndefined: Self = StObject.set(x, "jobTrigger", js.undefined)
+    inline def setJobTriggerUndefined: Self = StObject.set(x, "jobTrigger", js.undefined)
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
-    @scala.inline
-    def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+    inline def setTriggerId(value: String): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
+    inline def setTriggerIdUndefined: Self = StObject.set(x, "triggerId", js.undefined)
   }
 }

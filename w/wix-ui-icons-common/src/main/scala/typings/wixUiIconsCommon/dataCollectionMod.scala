@@ -22,20 +22,16 @@ object dataCollectionMod extends Shortcut {
   }
   object DataCollectionProps {
     
-    @scala.inline
-    def apply(): DataCollectionProps = {
+    inline def apply(): DataCollectionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DataCollectionProps]
     }
     
-    @scala.inline
-    implicit class DataCollectionPropsMutableBuilder[Self <: DataCollectionProps] (val x: Self) extends AnyVal {
+    extension [Self <: DataCollectionProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

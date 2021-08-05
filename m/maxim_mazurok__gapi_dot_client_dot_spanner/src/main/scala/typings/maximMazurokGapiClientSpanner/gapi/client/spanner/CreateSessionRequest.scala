@@ -11,19 +11,15 @@ trait CreateSessionRequest extends StObject {
 }
 object CreateSessionRequest {
   
-  @scala.inline
-  def apply(): CreateSessionRequest = {
+  inline def apply(): CreateSessionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSessionRequest]
   }
   
-  @scala.inline
-  implicit class CreateSessionRequestMutableBuilder[Self <: CreateSessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSessionRequest](x: Self) {
     
-    @scala.inline
-    def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
   }
 }

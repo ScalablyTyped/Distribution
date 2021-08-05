@@ -23,28 +23,21 @@ trait S3LogsConfig extends StObject {
 }
 object S3LogsConfig {
   
-  @scala.inline
-  def apply(status: LogsConfigStatusType): S3LogsConfig = {
+  inline def apply(status: LogsConfigStatusType): S3LogsConfig = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[S3LogsConfig]
   }
   
-  @scala.inline
-  implicit class S3LogsConfigMutableBuilder[Self <: S3LogsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: S3LogsConfig](x: Self) {
     
-    @scala.inline
-    def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
+    inline def setEncryptionDisabled(value: WrapperBoolean): Self = StObject.set(x, "encryptionDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
+    inline def setEncryptionDisabledUndefined: Self = StObject.set(x, "encryptionDisabled", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setStatus(value: LogsConfigStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: LogsConfigStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

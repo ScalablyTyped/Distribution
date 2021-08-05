@@ -18,25 +18,19 @@ trait NodeFabricLogPublishingConfiguration extends StObject {
 }
 object NodeFabricLogPublishingConfiguration {
   
-  @scala.inline
-  def apply(): NodeFabricLogPublishingConfiguration = {
+  inline def apply(): NodeFabricLogPublishingConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeFabricLogPublishingConfiguration]
   }
   
-  @scala.inline
-  implicit class NodeFabricLogPublishingConfigurationMutableBuilder[Self <: NodeFabricLogPublishingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NodeFabricLogPublishingConfiguration](x: Self) {
     
-    @scala.inline
-    def setChaincodeLogs(value: LogConfigurations): Self = StObject.set(x, "ChaincodeLogs", value.asInstanceOf[js.Any])
+    inline def setChaincodeLogs(value: LogConfigurations): Self = StObject.set(x, "ChaincodeLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChaincodeLogsUndefined: Self = StObject.set(x, "ChaincodeLogs", js.undefined)
+    inline def setChaincodeLogsUndefined: Self = StObject.set(x, "ChaincodeLogs", js.undefined)
     
-    @scala.inline
-    def setPeerLogs(value: LogConfigurations): Self = StObject.set(x, "PeerLogs", value.asInstanceOf[js.Any])
+    inline def setPeerLogs(value: LogConfigurations): Self = StObject.set(x, "PeerLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerLogsUndefined: Self = StObject.set(x, "PeerLogs", js.undefined)
+    inline def setPeerLogsUndefined: Self = StObject.set(x, "PeerLogs", js.undefined)
   }
 }

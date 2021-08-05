@@ -11,10 +11,8 @@ object errorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def errorMessage(option: String, received: js.Any, defaultValue: js.Any, options: ValidationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorMessage")(option.asInstanceOf[js.Any], received.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def errorMessage(
+  inline def errorMessage(option: String, received: js.Any, defaultValue: js.Any, options: ValidationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorMessage")(option.asInstanceOf[js.Any], received.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def errorMessage(
     option: String,
     received: js.Any,
     defaultValue: js.Any,

@@ -14,15 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FailureStage extends StObject
 object FailureStage {
   
-  @scala.inline
-  def callSetup: typings.microsoftGraph.microsoftGraphStrings.callSetup = "callSetup".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.callSetup]
+  inline def callSetup: typings.microsoftGraph.microsoftGraphStrings.callSetup = "callSetup".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.callSetup]
   
-  @scala.inline
-  def midcall: typings.microsoftGraph.microsoftGraphStrings.midcall = "midcall".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.midcall]
+  inline def midcall: typings.microsoftGraph.microsoftGraphStrings.midcall = "midcall".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.midcall]
   
-  @scala.inline
-  def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

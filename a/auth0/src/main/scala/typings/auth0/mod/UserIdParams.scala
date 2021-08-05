@@ -12,22 +12,17 @@ trait UserIdParams extends StObject {
 }
 object UserIdParams {
   
-  @scala.inline
-  def apply(user_id: String): UserIdParams = {
+  inline def apply(user_id: String): UserIdParams = {
     val __obj = js.Dynamic.literal(user_id = user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserIdParams]
   }
   
-  @scala.inline
-  implicit class UserIdParamsMutableBuilder[Self <: UserIdParams] (val x: Self) extends AnyVal {
+  extension [Self <: UserIdParams](x: Self) {
     
-    @scala.inline
-    def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
+    inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
+    inline def setClient_idUndefined: Self = StObject.set(x, "client_id", js.undefined)
     
-    @scala.inline
-    def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait GetDomainNamesRequest extends StObject {
 }
 object GetDomainNamesRequest {
   
-  @scala.inline
-  def apply(): GetDomainNamesRequest = {
+  inline def apply(): GetDomainNamesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDomainNamesRequest]
   }
   
-  @scala.inline
-  implicit class GetDomainNamesRequestMutableBuilder[Self <: GetDomainNamesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDomainNamesRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

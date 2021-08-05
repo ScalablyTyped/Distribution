@@ -12,19 +12,15 @@ trait ContainerRaws
 }
 object ContainerRaws {
   
-  @scala.inline
-  def apply(): ContainerRaws = {
+  inline def apply(): ContainerRaws = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerRaws]
   }
   
-  @scala.inline
-  implicit class ContainerRawsMutableBuilder[Self <: ContainerRaws] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerRaws](x: Self) {
     
-    @scala.inline
-    def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
   }
 }

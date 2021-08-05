@@ -50,21 +50,16 @@ object associationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Association]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AssociationState): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Association]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
+    inline def get(name: String, id: Input[ID]): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Association]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
+    inline def get(name: String, id: Input[ID], state: AssociationState): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Association]
+    inline def get(name: String, id: Input[ID], state: AssociationState, opts: CustomResourceOptions): Association = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Association]
     
     /**
       * Returns true if the given object is an instance of Association.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/licensemanager/association.Association */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/licensemanager/association.Association */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/licensemanager/association.Association */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/licensemanager/association.Association */ Boolean]
   }
   
   trait AssociationArgs extends StObject {
@@ -81,20 +76,16 @@ object associationMod {
   }
   object AssociationArgs {
     
-    @scala.inline
-    def apply(licenseConfigurationArn: Input[String], resourceArn: Input[String]): AssociationArgs = {
+    inline def apply(licenseConfigurationArn: Input[String], resourceArn: Input[String]): AssociationArgs = {
       val __obj = js.Dynamic.literal(licenseConfigurationArn = licenseConfigurationArn.asInstanceOf[js.Any], resourceArn = resourceArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssociationArgs]
     }
     
-    @scala.inline
-    implicit class AssociationArgsMutableBuilder[Self <: AssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AssociationArgs](x: Self) {
       
-      @scala.inline
-      def setLicenseConfigurationArn(value: Input[String]): Self = StObject.set(x, "licenseConfigurationArn", value.asInstanceOf[js.Any])
+      inline def setLicenseConfigurationArn(value: Input[String]): Self = StObject.set(x, "licenseConfigurationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object associationMod {
   }
   object AssociationState {
     
-    @scala.inline
-    def apply(): AssociationState = {
+    inline def apply(): AssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AssociationState]
     }
     
-    @scala.inline
-    implicit class AssociationStateMutableBuilder[Self <: AssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: AssociationState](x: Self) {
       
-      @scala.inline
-      def setLicenseConfigurationArn(value: Input[String]): Self = StObject.set(x, "licenseConfigurationArn", value.asInstanceOf[js.Any])
+      inline def setLicenseConfigurationArn(value: Input[String]): Self = StObject.set(x, "licenseConfigurationArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseConfigurationArnUndefined: Self = StObject.set(x, "licenseConfigurationArn", js.undefined)
+      inline def setLicenseConfigurationArnUndefined: Self = StObject.set(x, "licenseConfigurationArn", js.undefined)
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+      inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
     }
   }
 }

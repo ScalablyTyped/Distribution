@@ -14,28 +14,21 @@ trait DataType extends StObject {
 }
 object DataType {
   
-  @scala.inline
-  def apply(): DataType = {
+  inline def apply(): DataType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataType]
   }
   
-  @scala.inline
-  implicit class DataTypeMutableBuilder[Self <: DataType] (val x: Self) extends AnyVal {
+  extension [Self <: DataType](x: Self) {
     
-    @scala.inline
-    def setField(value: js.Array[DataTypeField]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: js.Array[DataTypeField]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setFieldVarargs(value: DataTypeField*): Self = StObject.set(x, "field", js.Array(value :_*))
+    inline def setFieldVarargs(value: DataTypeField*): Self = StObject.set(x, "field", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

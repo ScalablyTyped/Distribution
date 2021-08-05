@@ -12,16 +12,13 @@ trait UnlinkOptions
 }
 object UnlinkOptions {
   
-  @scala.inline
-  def apply(filePath: String): UnlinkOptions = {
+  inline def apply(filePath: String): UnlinkOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlinkOptions]
   }
   
-  @scala.inline
-  implicit class UnlinkOptionsMutableBuilder[Self <: UnlinkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UnlinkOptions](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }
 }

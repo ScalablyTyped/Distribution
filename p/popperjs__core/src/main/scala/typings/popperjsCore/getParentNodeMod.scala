@@ -12,8 +12,6 @@ object getParentNodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(element: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Node]
-  @scala.inline
-  def default(element: ShadowRoot): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def default(element: Node): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def default(element: ShadowRoot): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Node]
 }

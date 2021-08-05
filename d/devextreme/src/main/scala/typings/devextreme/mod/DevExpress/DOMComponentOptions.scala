@@ -49,61 +49,43 @@ trait DOMComponentOptions[T]
 }
 object DOMComponentOptions {
   
-  @scala.inline
-  def apply[T](): DOMComponentOptions[T] = {
+  inline def apply[T](): DOMComponentOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DOMComponentOptions[T]]
   }
   
-  @scala.inline
-  implicit class DOMComponentOptionsMutableBuilder[Self <: DOMComponentOptions[?], T] (val x: Self & DOMComponentOptions[T]) extends AnyVal {
+  extension [Self <: DOMComponentOptions[?], T](x: Self & DOMComponentOptions[T]) {
     
-    @scala.inline
-    def setBindingOptions(value: js.Any): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
+    inline def setBindingOptions(value: js.Any): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
+    inline def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
     
-    @scala.inline
-    def setElementAttr(value: js.Any): Self = StObject.set(x, "elementAttr", value.asInstanceOf[js.Any])
+    inline def setElementAttr(value: js.Any): Self = StObject.set(x, "elementAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementAttrUndefined: Self = StObject.set(x, "elementAttr", js.undefined)
+    inline def setElementAttrUndefined: Self = StObject.set(x, "elementAttr", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightFunction0(value: () => Double | String): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
+    inline def setHeightFunction0(value: () => Double | String): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setOnDisposing(value: /* e */ Model[T] => js.Any): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
+    inline def setOnDisposing(value: /* e */ Model[T] => js.Any): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
+    inline def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
     
-    @scala.inline
-    def setOnOptionChanged(value: /* e */ Name[T] => js.Any): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
+    inline def setOnOptionChanged(value: /* e */ Name[T] => js.Any): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
+    inline def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
     
-    @scala.inline
-    def setRtlEnabled(value: Boolean): Self = StObject.set(x, "rtlEnabled", value.asInstanceOf[js.Any])
+    inline def setRtlEnabled(value: Boolean): Self = StObject.set(x, "rtlEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtlEnabledUndefined: Self = StObject.set(x, "rtlEnabled", js.undefined)
+    inline def setRtlEnabledUndefined: Self = StObject.set(x, "rtlEnabled", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthFunction0(value: () => Double | String): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
+    inline def setWidthFunction0(value: () => Double | String): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

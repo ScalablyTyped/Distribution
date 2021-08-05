@@ -11,28 +11,23 @@ object jsYamlStrings {
   sealed trait close
     extends StObject
        with EventType
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
   sealed trait mapping extends StObject
-  @scala.inline
-  def mapping: mapping = "mapping".asInstanceOf[mapping]
+  inline def mapping: mapping = "mapping".asInstanceOf[mapping]
   
   @js.native
   sealed trait open
     extends StObject
        with EventType
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
   sealed trait scalar extends StObject
-  @scala.inline
-  def scalar: scalar = "scalar".asInstanceOf[scalar]
+  inline def scalar: scalar = "scalar".asInstanceOf[scalar]
   
   @js.native
   sealed trait sequence extends StObject
-  @scala.inline
-  def sequence: sequence = "sequence".asInstanceOf[sequence]
+  inline def sequence: sequence = "sequence".asInstanceOf[sequence]
 }

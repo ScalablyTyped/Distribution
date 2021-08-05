@@ -30,47 +30,34 @@ object recipientsMod {
   }
   object CreateRecipientProps {
     
-    @scala.inline
-    def apply(name: String, phone: String): CreateRecipientProps = {
+    inline def apply(name: String, phone: String): CreateRecipientProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateRecipientProps]
     }
     
-    @scala.inline
-    implicit class CreateRecipientPropsMutableBuilder[Self <: CreateRecipientProps] (val x: Self) extends AnyVal {
+    extension [Self <: CreateRecipientProps](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+      inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipPhoneNumberValidation(value: Boolean): Self = StObject.set(x, "skipPhoneNumberValidation", value.asInstanceOf[js.Any])
+      inline def setSkipPhoneNumberValidation(value: Boolean): Self = StObject.set(x, "skipPhoneNumberValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipPhoneNumberValidationUndefined: Self = StObject.set(x, "skipPhoneNumberValidation", js.undefined)
+      inline def setSkipPhoneNumberValidationUndefined: Self = StObject.set(x, "skipPhoneNumberValidation", js.undefined)
       
-      @scala.inline
-      def setSkipSMSNotifications(value: Boolean): Self = StObject.set(x, "skipSMSNotifications", value.asInstanceOf[js.Any])
+      inline def setSkipSMSNotifications(value: Boolean): Self = StObject.set(x, "skipSMSNotifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipSMSNotificationsUndefined: Self = StObject.set(x, "skipSMSNotifications", js.undefined)
+      inline def setSkipSMSNotificationsUndefined: Self = StObject.set(x, "skipSMSNotifications", js.undefined)
     }
   }
   
@@ -96,8 +83,7 @@ object recipientsMod {
   }
   object OnfleetRecipient {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       id: String,
       metadata: js.Array[OnfleetMetadata],
       name: String,
@@ -112,38 +98,27 @@ object recipientsMod {
       __obj.asInstanceOf[OnfleetRecipient]
     }
     
-    @scala.inline
-    implicit class OnfleetRecipientMutableBuilder[Self <: OnfleetRecipient] (val x: Self) extends AnyVal {
+    extension [Self <: OnfleetRecipient](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Array[OnfleetMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
+      inline def setMetadataVarargs(value: OnfleetMetadata*): Self = StObject.set(x, "metadata", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+      inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+      inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipSMSNotifications(value: Boolean): Self = StObject.set(x, "skipSMSNotifications", value.asInstanceOf[js.Any])
+      inline def setSkipSMSNotifications(value: Boolean): Self = StObject.set(x, "skipSMSNotifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+      inline def setTimeCreated(value: Double): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeLastModified(value: Double): Self = StObject.set(x, "timeLastModified", value.asInstanceOf[js.Any])
+      inline def setTimeLastModified(value: Double): Self = StObject.set(x, "timeLastModified", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,10 +140,8 @@ object recipientsMod {
   trait RecipientQueryKey extends StObject
   object RecipientQueryKey {
     
-    @scala.inline
-    def name: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.name = "name".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.name]
+    inline def name: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.name = "name".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.name]
     
-    @scala.inline
-    def phone: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.phone = "phone".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.phone]
+    inline def phone: typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.phone = "phone".asInstanceOf[typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.phone]
   }
 }

@@ -12,8 +12,7 @@ object pluginHooksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getForkTsCheckerWebpackPluginHooks(
+  inline def getForkTsCheckerWebpackPluginHooks(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.MultiCompiler */ js.Any
   ): Canceled = ^.asInstanceOf[js.Dynamic].applyDynamic("getForkTsCheckerWebpackPluginHooks")(compiler.asInstanceOf[js.Any]).asInstanceOf[Canceled]
   

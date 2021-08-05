@@ -28,14 +28,11 @@ object DOMComponent {
   /**
     * [descr:DOMComponent.defaultOptions(rule)]
     */
-  @scala.inline
-  def defaultOptions(rule: Device): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(rule.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def defaultOptions(rule: Device): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")(rule.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getInstance(element: JQuery): typings.devextreme.mod.DevExpress.DOMComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.devextreme.mod.DevExpress.DOMComponent]
+  inline def getInstance(element: JQuery): typings.devextreme.mod.DevExpress.DOMComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.devextreme.mod.DevExpress.DOMComponent]
   /**
     * [descr:DOMComponent.getInstance(element)]
     */
-  @scala.inline
-  def getInstance(element: Element): typings.devextreme.mod.DevExpress.DOMComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.devextreme.mod.DevExpress.DOMComponent]
+  inline def getInstance(element: Element): typings.devextreme.mod.DevExpress.DOMComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[typings.devextreme.mod.DevExpress.DOMComponent]
 }

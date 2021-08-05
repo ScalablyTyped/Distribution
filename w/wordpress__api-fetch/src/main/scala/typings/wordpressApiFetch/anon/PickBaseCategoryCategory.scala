@@ -28,8 +28,7 @@ trait PickBaseCategoryCategory
 }
 object PickBaseCategoryCategory {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: Record[String, js.Array[Dictk]],
     id: Double,
     link: String,
@@ -41,31 +40,22 @@ object PickBaseCategoryCategory {
     __obj.asInstanceOf[PickBaseCategoryCategory]
   }
   
-  @scala.inline
-  implicit class PickBaseCategoryCategoryMutableBuilder[Self <: PickBaseCategoryCategory] (val x: Self) extends AnyVal {
+  extension [Self <: PickBaseCategoryCategory](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxonomy(value: TaxonomyKind): Self = StObject.set(x, "taxonomy", value.asInstanceOf[js.Any])
+    inline def setTaxonomy(value: TaxonomyKind): Self = StObject.set(x, "taxonomy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
+    inline def set_embedded(value: Record[String, js.Array[js.Any]]): Self = StObject.set(x, "_embedded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)
+    inline def set_embeddedUndefined: Self = StObject.set(x, "_embedded", js.undefined)
     
-    @scala.inline
-    def set_links(value: Record[String, js.Array[Dictk]]): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: Record[String, js.Array[Dictk]]): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

@@ -14,19 +14,15 @@ trait IRightTappedEventArgs extends StObject {
 }
 object IRightTappedEventArgs {
   
-  @scala.inline
-  def apply(pointerDeviceType: PointerDeviceType, position: Point): IRightTappedEventArgs = {
+  inline def apply(pointerDeviceType: PointerDeviceType, position: Point): IRightTappedEventArgs = {
     val __obj = js.Dynamic.literal(pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRightTappedEventArgs]
   }
   
-  @scala.inline
-  implicit class IRightTappedEventArgsMutableBuilder[Self <: IRightTappedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IRightTappedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
+    inline def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

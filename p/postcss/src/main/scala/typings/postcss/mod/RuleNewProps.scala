@@ -25,34 +25,25 @@ trait RuleNewProps
 }
 object RuleNewProps {
   
-  @scala.inline
-  def apply(): RuleNewProps = {
+  inline def apply(): RuleNewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleNewProps]
   }
   
-  @scala.inline
-  implicit class RuleNewPropsMutableBuilder[Self <: RuleNewProps] (val x: Self) extends AnyVal {
+  extension [Self <: RuleNewProps](x: Self) {
     
-    @scala.inline
-    def setRaws(value: RuleRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
+    inline def setRaws(value: RuleRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
+    inline def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+    inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    @scala.inline
-    def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

@@ -31,48 +31,48 @@ object moveColumnControllerMod {
     
     /* private */ def calculateValidMoves(movingCols: js.Any, draggingRight: js.Any, x: js.Any): js.Any = js.native
     
-    var centerContainer: js.Any = js.native
+    /* private */ var centerContainer: js.Any = js.native
     
     /* private */ def checkCenterForScrolling(xAdjustedForScroll: js.Any): js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var dragAndDropService: js.Any = js.native
+    /* private */ var dragAndDropService: js.Any = js.native
     
-    var eContainer: js.Any = js.native
+    /* private */ var eContainer: js.Any = js.native
     
     /* private */ def ensureIntervalCleared(): js.Any = js.native
     
     /* private */ def ensureIntervalStarted(): js.Any = js.native
     
-    var failedMoveAttempts: js.Any = js.native
+    /* private */ var failedMoveAttempts: js.Any = js.native
     
     /* CompleteClass */
     override def getIconName(): String = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
     def init(): Unit = js.native
     
-    var intervalCount: js.Any = js.native
+    /* private */ var intervalCount: js.Any = js.native
     
     /* private */ def isColumnHidden(displayedColumns: js.Any, col: js.Any): js.Any = js.native
     
-    var lastDraggingEvent: js.Any = js.native
+    /* private */ var lastDraggingEvent: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var loggerFactory: js.Any = js.native
+    /* private */ var loggerFactory: js.Any = js.native
     
     /* private */ def moveInterval(): js.Any = js.native
     
-    var movingIntervalId: js.Any = js.native
+    /* private */ var movingIntervalId: js.Any = js.native
     
-    var needToMoveLeft: js.Any = js.native
+    /* private */ var needToMoveLeft: js.Any = js.native
     
-    var needToMoveRight: js.Any = js.native
+    /* private */ var needToMoveRight: js.Any = js.native
     
     /* private */ def normaliseDirection(hDirection: js.Any): js.Any = js.native
     
@@ -92,7 +92,7 @@ object moveColumnControllerMod {
     /* CompleteClass */
     override def onDragging(params: DraggingEvent): Unit = js.native
     
-    var pinned: js.Any = js.native
+    /* private */ var pinned: js.Any = js.native
     
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
     

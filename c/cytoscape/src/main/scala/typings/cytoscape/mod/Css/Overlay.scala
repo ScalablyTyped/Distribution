@@ -29,8 +29,7 @@ trait Overlay extends StObject {
 }
 object Overlay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `overlay-color`: PropertyValueEdge[Colour],
     `overlay-opacity`: PropertyValueEdge[Double],
     `overlay-padding`: PropertyValueEdge[Double | String]
@@ -42,25 +41,18 @@ object Overlay {
     __obj.asInstanceOf[Overlay]
   }
   
-  @scala.inline
-  implicit class OverlayMutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
+  extension [Self <: Overlay](x: Self) {
     
-    @scala.inline
-    def `setOverlay-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "overlay-color", value.asInstanceOf[js.Any])
+    inline def `setOverlay-color`(value: PropertyValueEdge[Colour]): Self = StObject.set(x, "overlay-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOverlay-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "overlay-color", js.Any.fromFunction1(value))
+    inline def `setOverlay-colorFunction1`(value: EdgeSingular => Colour): Self = StObject.set(x, "overlay-color", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setOverlay-opacity`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "overlay-opacity", value.asInstanceOf[js.Any])
+    inline def `setOverlay-opacity`(value: PropertyValueEdge[Double]): Self = StObject.set(x, "overlay-opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOverlay-opacityFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "overlay-opacity", js.Any.fromFunction1(value))
+    inline def `setOverlay-opacityFunction1`(value: EdgeSingular => Double): Self = StObject.set(x, "overlay-opacity", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setOverlay-padding`(value: PropertyValueEdge[Double | String]): Self = StObject.set(x, "overlay-padding", value.asInstanceOf[js.Any])
+    inline def `setOverlay-padding`(value: PropertyValueEdge[Double | String]): Self = StObject.set(x, "overlay-padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setOverlay-paddingFunction1`(value: EdgeSingular => Double | String): Self = StObject.set(x, "overlay-padding", js.Any.fromFunction1(value))
+    inline def `setOverlay-paddingFunction1`(value: EdgeSingular => Double | String): Self = StObject.set(x, "overlay-padding", js.Any.fromFunction1(value))
   }
 }

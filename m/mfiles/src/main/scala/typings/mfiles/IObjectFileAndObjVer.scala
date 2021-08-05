@@ -16,25 +16,19 @@ trait IObjectFileAndObjVer extends StObject {
 }
 object IObjectFileAndObjVer {
   
-  @scala.inline
-  def apply(Clone: () => IObjectFileAndObjVer, ObjVer: IObjVer, ObjectFile: IObjectFile, ToJSON: () => String): IObjectFileAndObjVer = {
+  inline def apply(Clone: () => IObjectFileAndObjVer, ObjVer: IObjVer, ObjectFile: IObjectFile, ToJSON: () => String): IObjectFileAndObjVer = {
     val __obj = js.Dynamic.literal(Clone = js.Any.fromFunction0(Clone), ObjVer = ObjVer.asInstanceOf[js.Any], ObjectFile = ObjectFile.asInstanceOf[js.Any], ToJSON = js.Any.fromFunction0(ToJSON))
     __obj.asInstanceOf[IObjectFileAndObjVer]
   }
   
-  @scala.inline
-  implicit class IObjectFileAndObjVerMutableBuilder[Self <: IObjectFileAndObjVer] (val x: Self) extends AnyVal {
+  extension [Self <: IObjectFileAndObjVer](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IObjectFileAndObjVer): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IObjectFileAndObjVer): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
+    inline def setObjVer(value: IObjVer): Self = StObject.set(x, "ObjVer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectFile(value: IObjectFile): Self = StObject.set(x, "ObjectFile", value.asInstanceOf[js.Any])
+    inline def setObjectFile(value: IObjectFile): Self = StObject.set(x, "ObjectFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => String): Self = StObject.set(x, "ToJSON", js.Any.fromFunction0(value))
   }
 }

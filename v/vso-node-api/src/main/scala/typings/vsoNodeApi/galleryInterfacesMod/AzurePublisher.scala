@@ -12,19 +12,15 @@ trait AzurePublisher extends StObject {
 }
 object AzurePublisher {
   
-  @scala.inline
-  def apply(azurePublisherId: String, publisherName: String): AzurePublisher = {
+  inline def apply(azurePublisherId: String, publisherName: String): AzurePublisher = {
     val __obj = js.Dynamic.literal(azurePublisherId = azurePublisherId.asInstanceOf[js.Any], publisherName = publisherName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzurePublisher]
   }
   
-  @scala.inline
-  implicit class AzurePublisherMutableBuilder[Self <: AzurePublisher] (val x: Self) extends AnyVal {
+  extension [Self <: AzurePublisher](x: Self) {
     
-    @scala.inline
-    def setAzurePublisherId(value: String): Self = StObject.set(x, "azurePublisherId", value.asInstanceOf[js.Any])
+    inline def setAzurePublisherId(value: String): Self = StObject.set(x, "azurePublisherId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait Source extends StObject {
 }
 object Source {
   
-  @scala.inline
-  def apply(event: typings.std.Event, source: js.Any, target: js.Any): Source = {
+  inline def apply(event: typings.std.Event, source: js.Any, target: js.Any): Source = {
     val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
   
-  @scala.inline
-  implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+  extension [Self <: Source](x: Self) {
     
-    @scala.inline
-    def setEvent(value: typings.std.Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: typings.std.Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

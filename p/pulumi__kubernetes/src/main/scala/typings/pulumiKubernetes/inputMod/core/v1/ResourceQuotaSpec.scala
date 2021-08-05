@@ -28,34 +28,25 @@ trait ResourceQuotaSpec extends StObject {
 }
 object ResourceQuotaSpec {
   
-  @scala.inline
-  def apply(): ResourceQuotaSpec = {
+  inline def apply(): ResourceQuotaSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceQuotaSpec]
   }
   
-  @scala.inline
-  implicit class ResourceQuotaSpecMutableBuilder[Self <: ResourceQuotaSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceQuotaSpec](x: Self) {
     
-    @scala.inline
-    def setHard(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
+    inline def setHard(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
+    inline def setHardUndefined: Self = StObject.set(x, "hard", js.undefined)
     
-    @scala.inline
-    def setScopeSelector(value: Input[ScopeSelector]): Self = StObject.set(x, "scopeSelector", value.asInstanceOf[js.Any])
+    inline def setScopeSelector(value: Input[ScopeSelector]): Self = StObject.set(x, "scopeSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeSelectorUndefined: Self = StObject.set(x, "scopeSelector", js.undefined)
+    inline def setScopeSelectorUndefined: Self = StObject.set(x, "scopeSelector", js.undefined)
     
-    @scala.inline
-    def setScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    @scala.inline
-    def setScopesVarargs(value: Input[String]*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: Input[String]*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

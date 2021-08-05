@@ -35,37 +35,27 @@ trait ParamsResourceAccountsClientsInvitationsGet
 }
 object ParamsResourceAccountsClientsInvitationsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceAccountsClientsInvitationsGet = {
+  inline def apply(): ParamsResourceAccountsClientsInvitationsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAccountsClientsInvitationsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAccountsClientsInvitationsGetMutableBuilder[Self <: ParamsResourceAccountsClientsInvitationsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAccountsClientsInvitationsGet](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setClientAccountId(value: String): Self = StObject.set(x, "clientAccountId", value.asInstanceOf[js.Any])
+    inline def setClientAccountId(value: String): Self = StObject.set(x, "clientAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientAccountIdUndefined: Self = StObject.set(x, "clientAccountId", js.undefined)
+    inline def setClientAccountIdUndefined: Self = StObject.set(x, "clientAccountId", js.undefined)
     
-    @scala.inline
-    def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: String): Self = StObject.set(x, "invitationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
+    inline def setInvitationIdUndefined: Self = StObject.set(x, "invitationId", js.undefined)
   }
 }

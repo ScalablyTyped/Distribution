@@ -18,25 +18,19 @@ trait Option extends StObject {
 }
 object Option {
   
-  @scala.inline
-  def apply(option: ruleOptions, priority: Double, value: rule): Option = {
+  inline def apply(option: ruleOptions, priority: Double, value: rule): Option = {
     val __obj = js.Dynamic.literal(option = option.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
   
-  @scala.inline
-  implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+  extension [Self <: Option](x: Self) {
     
-    @scala.inline
-    def setOption(value: ruleOptions): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: ruleOptions): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: rule): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: rule): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFunction1(value: /* value */ node | fragment | String => Boolean): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+    inline def setValueFunction1(value: /* value */ node | fragment | String => Boolean): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
   }
 }

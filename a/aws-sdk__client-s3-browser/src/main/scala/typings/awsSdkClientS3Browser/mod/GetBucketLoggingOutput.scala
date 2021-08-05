@@ -10,8 +10,7 @@ trait GetBucketLoggingOutput
      with typings.awsSdkClientS3Browser.typesGetBucketLoggingOutputMod.GetBucketLoggingOutput
 object GetBucketLoggingOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketLoggingOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketLoggingOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketLoggingOutput]
   }

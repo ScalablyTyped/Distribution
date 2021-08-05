@@ -16,19 +16,15 @@ trait GetServerTimeOptions
 }
 object GetServerTimeOptions {
   
-  @scala.inline
-  def apply(): GetServerTimeOptions = {
+  inline def apply(): GetServerTimeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetServerTimeOptions]
   }
   
-  @scala.inline
-  implicit class GetServerTimeOptionsMutableBuilder[Self <: GetServerTimeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetServerTimeOptions](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* res */ Time => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ Time => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

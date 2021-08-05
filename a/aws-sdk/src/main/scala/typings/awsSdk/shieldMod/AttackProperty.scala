@@ -33,46 +33,33 @@ trait AttackProperty extends StObject {
 }
 object AttackProperty {
   
-  @scala.inline
-  def apply(): AttackProperty = {
+  inline def apply(): AttackProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttackProperty]
   }
   
-  @scala.inline
-  implicit class AttackPropertyMutableBuilder[Self <: AttackProperty] (val x: Self) extends AnyVal {
+  extension [Self <: AttackProperty](x: Self) {
     
-    @scala.inline
-    def setAttackLayer(value: AttackLayer): Self = StObject.set(x, "AttackLayer", value.asInstanceOf[js.Any])
+    inline def setAttackLayer(value: AttackLayer): Self = StObject.set(x, "AttackLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackLayerUndefined: Self = StObject.set(x, "AttackLayer", js.undefined)
+    inline def setAttackLayerUndefined: Self = StObject.set(x, "AttackLayer", js.undefined)
     
-    @scala.inline
-    def setAttackPropertyIdentifier(value: AttackPropertyIdentifier): Self = StObject.set(x, "AttackPropertyIdentifier", value.asInstanceOf[js.Any])
+    inline def setAttackPropertyIdentifier(value: AttackPropertyIdentifier): Self = StObject.set(x, "AttackPropertyIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackPropertyIdentifierUndefined: Self = StObject.set(x, "AttackPropertyIdentifier", js.undefined)
+    inline def setAttackPropertyIdentifierUndefined: Self = StObject.set(x, "AttackPropertyIdentifier", js.undefined)
     
-    @scala.inline
-    def setTopContributors(value: TopContributors): Self = StObject.set(x, "TopContributors", value.asInstanceOf[js.Any])
+    inline def setTopContributors(value: TopContributors): Self = StObject.set(x, "TopContributors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopContributorsUndefined: Self = StObject.set(x, "TopContributors", js.undefined)
+    inline def setTopContributorsUndefined: Self = StObject.set(x, "TopContributors", js.undefined)
     
-    @scala.inline
-    def setTopContributorsVarargs(value: Contributor*): Self = StObject.set(x, "TopContributors", js.Array(value :_*))
+    inline def setTopContributorsVarargs(value: Contributor*): Self = StObject.set(x, "TopContributors", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: Long): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Long): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
     
-    @scala.inline
-    def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: Unit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

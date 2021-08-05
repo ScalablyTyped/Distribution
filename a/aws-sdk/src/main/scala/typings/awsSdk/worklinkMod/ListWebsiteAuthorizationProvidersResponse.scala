@@ -18,28 +18,21 @@ trait ListWebsiteAuthorizationProvidersResponse extends StObject {
 }
 object ListWebsiteAuthorizationProvidersResponse {
   
-  @scala.inline
-  def apply(): ListWebsiteAuthorizationProvidersResponse = {
+  inline def apply(): ListWebsiteAuthorizationProvidersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWebsiteAuthorizationProvidersResponse]
   }
   
-  @scala.inline
-  implicit class ListWebsiteAuthorizationProvidersResponseMutableBuilder[Self <: ListWebsiteAuthorizationProvidersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListWebsiteAuthorizationProvidersResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setWebsiteAuthorizationProviders(value: WebsiteAuthorizationProvidersSummaryList): Self = StObject.set(x, "WebsiteAuthorizationProviders", value.asInstanceOf[js.Any])
+    inline def setWebsiteAuthorizationProviders(value: WebsiteAuthorizationProvidersSummaryList): Self = StObject.set(x, "WebsiteAuthorizationProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebsiteAuthorizationProvidersUndefined: Self = StObject.set(x, "WebsiteAuthorizationProviders", js.undefined)
+    inline def setWebsiteAuthorizationProvidersUndefined: Self = StObject.set(x, "WebsiteAuthorizationProviders", js.undefined)
     
-    @scala.inline
-    def setWebsiteAuthorizationProvidersVarargs(value: WebsiteAuthorizationProviderSummary*): Self = StObject.set(x, "WebsiteAuthorizationProviders", js.Array(value :_*))
+    inline def setWebsiteAuthorizationProvidersVarargs(value: WebsiteAuthorizationProviderSummary*): Self = StObject.set(x, "WebsiteAuthorizationProviders", js.Array(value :_*))
   }
 }

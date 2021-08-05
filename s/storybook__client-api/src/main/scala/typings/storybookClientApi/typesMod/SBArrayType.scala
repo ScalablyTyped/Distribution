@@ -16,19 +16,15 @@ trait SBArrayType
 }
 object SBArrayType {
   
-  @scala.inline
-  def apply(value: SBType): SBArrayType = {
+  inline def apply(value: SBType): SBArrayType = {
     val __obj = js.Dynamic.literal(name = "array", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SBArrayType]
   }
   
-  @scala.inline
-  implicit class SBArrayTypeMutableBuilder[Self <: SBArrayType] (val x: Self) extends AnyVal {
+  extension [Self <: SBArrayType](x: Self) {
     
-    @scala.inline
-    def setName(value: array): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: array): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: SBType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SBType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

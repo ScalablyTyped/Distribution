@@ -20,16 +20,13 @@ trait scaleRange extends StObject {
 }
 object scaleRange {
   
-  @scala.inline
-  def apply(scaleRange: scaleRangeScaleRangeParams => js.Promise[ScaleRangeResult]): scaleRange = {
+  inline def apply(scaleRange: scaleRangeScaleRangeParams => js.Promise[ScaleRangeResult]): scaleRange = {
     val __obj = js.Dynamic.literal(scaleRange = js.Any.fromFunction1(scaleRange))
     __obj.asInstanceOf[scaleRange]
   }
   
-  @scala.inline
-  implicit class scaleRangeMutableBuilder[Self <: scaleRange] (val x: Self) extends AnyVal {
+  extension [Self <: scaleRange](x: Self) {
     
-    @scala.inline
-    def setScaleRange(value: scaleRangeScaleRangeParams => js.Promise[ScaleRangeResult]): Self = StObject.set(x, "scaleRange", js.Any.fromFunction1(value))
+    inline def setScaleRange(value: scaleRangeScaleRangeParams => js.Promise[ScaleRangeResult]): Self = StObject.set(x, "scaleRange", js.Any.fromFunction1(value))
   }
 }

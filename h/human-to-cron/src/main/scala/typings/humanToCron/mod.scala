@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(expression: String): String = ^.asInstanceOf[js.Dynamic].apply(expression.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(expression: String): String = ^.asInstanceOf[js.Dynamic].apply(expression.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("human-to-cron", JSImport.Namespace)
   @js.native

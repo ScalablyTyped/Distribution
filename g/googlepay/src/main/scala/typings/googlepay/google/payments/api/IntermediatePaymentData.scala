@@ -33,34 +33,25 @@ trait IntermediatePaymentData extends StObject {
 }
 object IntermediatePaymentData {
   
-  @scala.inline
-  def apply(callbackTrigger: js.Array[CallbackTrigger], paymentMethodData: IntermediatePaymentMethodData): IntermediatePaymentData = {
+  inline def apply(callbackTrigger: js.Array[CallbackTrigger], paymentMethodData: IntermediatePaymentMethodData): IntermediatePaymentData = {
     val __obj = js.Dynamic.literal(callbackTrigger = callbackTrigger.asInstanceOf[js.Any], paymentMethodData = paymentMethodData.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntermediatePaymentData]
   }
   
-  @scala.inline
-  implicit class IntermediatePaymentDataMutableBuilder[Self <: IntermediatePaymentData] (val x: Self) extends AnyVal {
+  extension [Self <: IntermediatePaymentData](x: Self) {
     
-    @scala.inline
-    def setCallbackTrigger(value: js.Array[CallbackTrigger]): Self = StObject.set(x, "callbackTrigger", value.asInstanceOf[js.Any])
+    inline def setCallbackTrigger(value: js.Array[CallbackTrigger]): Self = StObject.set(x, "callbackTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackTriggerVarargs(value: CallbackTrigger*): Self = StObject.set(x, "callbackTrigger", js.Array(value :_*))
+    inline def setCallbackTriggerVarargs(value: CallbackTrigger*): Self = StObject.set(x, "callbackTrigger", js.Array(value :_*))
     
-    @scala.inline
-    def setPaymentMethodData(value: IntermediatePaymentMethodData): Self = StObject.set(x, "paymentMethodData", value.asInstanceOf[js.Any])
+    inline def setPaymentMethodData(value: IntermediatePaymentMethodData): Self = StObject.set(x, "paymentMethodData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddress(value: IntermediateAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
+    inline def setShippingAddress(value: IntermediateAddress): Self = StObject.set(x, "shippingAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
+    inline def setShippingAddressUndefined: Self = StObject.set(x, "shippingAddress", js.undefined)
     
-    @scala.inline
-    def setShippingOptionData(value: SelectionOptionData): Self = StObject.set(x, "shippingOptionData", value.asInstanceOf[js.Any])
+    inline def setShippingOptionData(value: SelectionOptionData): Self = StObject.set(x, "shippingOptionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingOptionDataUndefined: Self = StObject.set(x, "shippingOptionData", js.undefined)
+    inline def setShippingOptionDataUndefined: Self = StObject.set(x, "shippingOptionData", js.undefined)
   }
 }

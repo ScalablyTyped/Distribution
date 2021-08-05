@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SaveDisposition extends StObject
 object SaveDisposition {
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def `print-save`: typings.ipp.ippStrings.`print-save` = "print-save".asInstanceOf[typings.ipp.ippStrings.`print-save`]
+  inline def `print-save`: typings.ipp.ippStrings.`print-save` = "print-save".asInstanceOf[typings.ipp.ippStrings.`print-save`]
   
-  @scala.inline
-  def `save-only`: typings.ipp.ippStrings.`save-only` = "save-only".asInstanceOf[typings.ipp.ippStrings.`save-only`]
+  inline def `save-only`: typings.ipp.ippStrings.`save-only` = "save-only".asInstanceOf[typings.ipp.ippStrings.`save-only`]
 }

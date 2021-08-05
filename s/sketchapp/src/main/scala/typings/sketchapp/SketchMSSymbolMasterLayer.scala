@@ -30,8 +30,7 @@ trait SketchMSSymbolMasterLayer
 }
 object SketchMSSymbolMasterLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: SketchMSColor,
     booleanOperation: SketchMSLayerBooleanOperation,
     changeIdentifier: Double,
@@ -69,34 +68,24 @@ object SketchMSSymbolMasterLayer {
     __obj.asInstanceOf[SketchMSSymbolMasterLayer]
   }
   
-  @scala.inline
-  implicit class SketchMSSymbolMasterLayerMutableBuilder[Self <: SketchMSSymbolMasterLayer] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSSymbolMasterLayer](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: SketchMSColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: SketchMSColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeIdentifier(value: Double): Self = StObject.set(x, "changeIdentifier", value.asInstanceOf[js.Any])
+    inline def setChangeIdentifier(value: Double): Self = StObject.set(x, "changeIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasBackgroundColor(value: Boolean): Self = StObject.set(x, "hasBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHasBackgroundColor(value: Boolean): Self = StObject.set(x, "hasBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBackgroundColorInExport(value: Boolean): Self = StObject.set(x, "includeBackgroundColorInExport", value.asInstanceOf[js.Any])
+    inline def setIncludeBackgroundColorInExport(value: Boolean): Self = StObject.set(x, "includeBackgroundColorInExport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBackgroundColorInInstance(value: Boolean): Self = StObject.set(x, "includeBackgroundColorInInstance", value.asInstanceOf[js.Any])
+    inline def setIncludeBackgroundColorInInstance(value: Boolean): Self = StObject.set(x, "includeBackgroundColorInInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFlowHome(value: Boolean): Self = StObject.set(x, "isFlowHome", value.asInstanceOf[js.Any])
+    inline def setIsFlowHome(value: Boolean): Self = StObject.set(x, "isFlowHome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizesContent(value: Boolean): Self = StObject.set(x, "resizesContent", value.asInstanceOf[js.Any])
+    inline def setResizesContent(value: Boolean): Self = StObject.set(x, "resizesContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolID(value: String): Self = StObject.set(x, "symbolID", value.asInstanceOf[js.Any])
+    inline def setSymbolID(value: String): Self = StObject.set(x, "symbolID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: symbolMaster): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: symbolMaster): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

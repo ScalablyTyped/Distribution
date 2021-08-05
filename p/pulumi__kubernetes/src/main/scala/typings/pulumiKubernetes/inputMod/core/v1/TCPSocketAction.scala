@@ -22,22 +22,17 @@ trait TCPSocketAction extends StObject {
 }
 object TCPSocketAction {
   
-  @scala.inline
-  def apply(port: Input[Double | String]): TCPSocketAction = {
+  inline def apply(port: Input[Double | String]): TCPSocketAction = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[TCPSocketAction]
   }
   
-  @scala.inline
-  implicit class TCPSocketActionMutableBuilder[Self <: TCPSocketAction] (val x: Self) extends AnyVal {
+  extension [Self <: TCPSocketAction](x: Self) {
     
-    @scala.inline
-    def setHost(value: Input[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Input[String]): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPort(value: Input[Double | String]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Input[Double | String]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

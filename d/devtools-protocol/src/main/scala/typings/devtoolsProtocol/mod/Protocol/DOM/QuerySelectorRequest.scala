@@ -18,19 +18,15 @@ trait QuerySelectorRequest extends StObject {
 }
 object QuerySelectorRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId, selector: String): QuerySelectorRequest = {
+  inline def apply(nodeId: NodeId, selector: String): QuerySelectorRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuerySelectorRequest]
   }
   
-  @scala.inline
-  implicit class QuerySelectorRequestMutableBuilder[Self <: QuerySelectorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: QuerySelectorRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }
 }

@@ -73,8 +73,7 @@ trait ASPxClientTextEdit
 }
 object ASPxClientTextEdit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Focus: () => Unit,
     GetCaption: () => String,
@@ -125,40 +124,28 @@ object ASPxClientTextEdit {
     __obj.asInstanceOf[ASPxClientTextEdit]
   }
   
-  @scala.inline
-  implicit class ASPxClientTextEditMutableBuilder[Self <: ASPxClientTextEdit] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientTextEdit](x: Self) {
     
-    @scala.inline
-    def setGetCaretPosition(value: () => Double): Self = StObject.set(x, "GetCaretPosition", js.Any.fromFunction0(value))
+    inline def setGetCaretPosition(value: () => Double): Self = StObject.set(x, "GetCaretPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyDown(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "KeyDown", value.asInstanceOf[js.Any])
+    inline def setKeyDown(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "KeyDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPress(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "KeyPress", value.asInstanceOf[js.Any])
+    inline def setKeyPress(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "KeyPress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUp(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "KeyUp", value.asInstanceOf[js.Any])
+    inline def setKeyUp(value: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "KeyUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
+    inline def setSelectAll(value: () => Unit): Self = StObject.set(x, "SelectAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCaretPosition(value: Double => Unit): Self = StObject.set(x, "SetCaretPosition", js.Any.fromFunction1(value))
+    inline def setSetCaretPosition(value: Double => Unit): Self = StObject.set(x, "SetCaretPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSelection(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "SetSelection", js.Any.fromFunction3(value))
+    inline def setSetSelection(value: (Double, Double, Boolean) => Unit): Self = StObject.set(x, "SetSelection", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
+    inline def setTextChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "TextChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInput(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "UserInput", value.asInstanceOf[js.Any])
+    inline def setUserInput(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientTextEdit]]): Self = StObject.set(x, "UserInput", value.asInstanceOf[js.Any])
   }
 }

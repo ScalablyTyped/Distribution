@@ -15,25 +15,19 @@ trait PlotVbpVolumeDivisionOptions extends StObject {
 }
 object PlotVbpVolumeDivisionOptions {
   
-  @scala.inline
-  def apply(): PlotVbpVolumeDivisionOptions = {
+  inline def apply(): PlotVbpVolumeDivisionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotVbpVolumeDivisionOptions]
   }
   
-  @scala.inline
-  implicit class PlotVbpVolumeDivisionOptionsMutableBuilder[Self <: PlotVbpVolumeDivisionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotVbpVolumeDivisionOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setStyles(value: PlotVbpVolumeDivisionStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlotVbpVolumeDivisionStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

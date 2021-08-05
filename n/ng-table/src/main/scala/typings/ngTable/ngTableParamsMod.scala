@@ -31,9 +31,9 @@ object ngTableParamsMod {
     def this(baseParameters: Unit, baseSettings: ISettings[T]) = this()
     def this(baseParameters: IParamValues[T], baseSettings: ISettings[T]) = this()
     
-    var _params: js.Any = js.native
+    /* private */ var _params: js.Any = js.native
     
-    var _settings: js.Any = js.native
+    /* private */ var _settings: js.Any = js.native
     
     /**
       * Returns the number of data rows per page
@@ -52,9 +52,9 @@ object ngTableParamsMod {
       */
     var data: js.Array[T] = js.native
     
-    var defaultSettings: js.Any = js.native
+    /* private */ var defaultSettings: js.Any = js.native
     
-    var errParamsMemento: js.Any = js.native
+    /* private */ var errParamsMemento: js.Any = js.native
     
     /**
       * Returns the current filter values used to restrict the set of data rows.
@@ -151,9 +151,9 @@ object ngTableParamsMod {
     def hasGroup(group: IGroupingFunc[T]): Boolean = js.native
     def hasGroup(group: IGroupingFunc[T], sortDirection: String): Boolean = js.native
     
-    var initialEvents: js.Any = js.native
+    /* private */ var initialEvents: js.Any = js.native
     
-    var isCommittedDataset: js.Any = js.native
+    /* private */ var isCommittedDataset: js.Any = js.native
     
     /**
       * Return true when a change to this instance should require the `reload` method
@@ -209,7 +209,7 @@ object ngTableParamsMod {
     
     /* private */ def parseGroup(group: js.Any): js.Any = js.native
     
-    var prevParamsMemento: js.Any = js.native
+    /* private */ var prevParamsMemento: js.Any = js.native
     
     /**
       * Trigger a reload of the data rows
@@ -284,17 +284,14 @@ object ngTableParamsMod {
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.$log")
     @js.native
     def $log: js.Any = js.native
-    @scala.inline
-    def $log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
+    inline def $log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$log")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.$q")
     @js.native
     def $q: js.Any = js.native
-    @scala.inline
-    def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
+    inline def $q_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$q")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def init(
+    inline def init(
       $q: IQService,
       $log: ILogService,
       ngTableDefaults: IDefaults,
@@ -305,20 +302,17 @@ object ngTableParamsMod {
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.ngTableDefaults")
     @js.native
     def ngTableDefaults: js.Any = js.native
-    @scala.inline
-    def ngTableDefaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
+    inline def ngTableDefaults_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableDefaults")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.ngTableEventsChannel")
     @js.native
     def ngTableEventsChannel: js.Any = js.native
-    @scala.inline
-    def ngTableEventsChannel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
+    inline def ngTableEventsChannel_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableEventsChannel")(x.asInstanceOf[js.Any])
     
     @JSImport("ng-table/src/core/ngTableParams", "NgTableParams.ngTableSettings")
     @js.native
     def ngTableSettings: js.Any = js.native
-    @scala.inline
-    def ngTableSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
+    inline def ngTableSettings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ngTableSettings")(x.asInstanceOf[js.Any])
   }
   
   trait IParamValues[T] extends StObject {
@@ -350,44 +344,32 @@ object ngTableParamsMod {
   }
   object IParamValues {
     
-    @scala.inline
-    def apply[T](): IParamValues[T] = {
+    inline def apply[T](): IParamValues[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IParamValues[T]]
     }
     
-    @scala.inline
-    implicit class IParamValuesMutableBuilder[Self <: IParamValues[?], T] (val x: Self & IParamValues[T]) extends AnyVal {
+    extension [Self <: IParamValues[?], T](x: Self & IParamValues[T]) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setFilter(value: IFilterValues): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: IFilterValues): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setGroup(value: String | Grouping[T]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String | Grouping[T]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
-      @scala.inline
-      def setSorting(value: ISortingValues): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
+      inline def setSorting(value: ISortingValues): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
+      inline def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
     }
   }
   

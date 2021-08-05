@@ -48,8 +48,7 @@ trait Events extends StObject {
 }
 object Events {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     afterLoad: File => Unit,
     beforeLoad: File => Unit,
     completion: (File, CompletionsQuery) => CompletionsQueryResult | Unit,
@@ -64,34 +63,24 @@ object Events {
     __obj.asInstanceOf[Events]
   }
   
-  @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+  extension [Self <: Events](x: Self) {
     
-    @scala.inline
-    def setAfterLoad(value: File => Unit): Self = StObject.set(x, "afterLoad", js.Any.fromFunction1(value))
+    inline def setAfterLoad(value: File => Unit): Self = StObject.set(x, "afterLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeLoad(value: File => Unit): Self = StObject.set(x, "beforeLoad", js.Any.fromFunction1(value))
+    inline def setBeforeLoad(value: File => Unit): Self = StObject.set(x, "beforeLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompletion(value: (File, CompletionsQuery) => CompletionsQueryResult | Unit): Self = StObject.set(x, "completion", js.Any.fromFunction2(value))
+    inline def setCompletion(value: (File, CompletionsQuery) => CompletionsQueryResult | Unit): Self = StObject.set(x, "completion", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPostInfer(value: (Program, Scope) => Unit): Self = StObject.set(x, "postInfer", js.Any.fromFunction2(value))
+    inline def setPostInfer(value: (Program, Scope) => Unit): Self = StObject.set(x, "postInfer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPostParse(value: (Program, String) => Unit): Self = StObject.set(x, "postParse", js.Any.fromFunction2(value))
+    inline def setPostParse(value: (Program, String) => Unit): Self = StObject.set(x, "postParse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPreInfer(value: (Program, Scope) => Unit): Self = StObject.set(x, "preInfer", js.Any.fromFunction2(value))
+    inline def setPreInfer(value: (Program, Scope) => Unit): Self = StObject.set(x, "preInfer", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPreParse(value: (String, js.Object) => String | Unit): Self = StObject.set(x, "preParse", js.Any.fromFunction2(value))
+    inline def setPreParse(value: (String, js.Object) => String | Unit): Self = StObject.set(x, "preParse", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTypeAt(value: (File, Position, Node, Type) => Type | Unit): Self = StObject.set(x, "typeAt", js.Any.fromFunction4(value))
+    inline def setTypeAt(value: (File, Position, Node, Type) => Type | Unit): Self = StObject.set(x, "typeAt", js.Any.fromFunction4(value))
   }
 }

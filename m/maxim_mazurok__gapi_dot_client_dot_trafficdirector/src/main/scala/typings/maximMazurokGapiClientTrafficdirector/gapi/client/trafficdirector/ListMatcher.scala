@@ -11,19 +11,15 @@ trait ListMatcher extends StObject {
 }
 object ListMatcher {
   
-  @scala.inline
-  def apply(): ListMatcher = {
+  inline def apply(): ListMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMatcher]
   }
   
-  @scala.inline
-  implicit class ListMatcherMutableBuilder[Self <: ListMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: ListMatcher](x: Self) {
     
-    @scala.inline
-    def setOneOf(value: ValueMatcher): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
+    inline def setOneOf(value: ValueMatcher): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
+    inline def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
   }
 }

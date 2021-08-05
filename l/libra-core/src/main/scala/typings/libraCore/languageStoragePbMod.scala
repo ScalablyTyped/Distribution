@@ -37,11 +37,9 @@ object languageStoragePbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): ModuleId = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ModuleId]
+    inline def deserializeBinary(bytes: Uint8Array): ModuleId = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ModuleId]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: ModuleId, reader: BinaryReader): ModuleId = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ModuleId]
+    inline def deserializeBinaryFromReader(message: ModuleId, reader: BinaryReader): ModuleId = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ModuleId]
     
     @JSImport("libra-core/lib/@/generated/language_storage_pb", "ModuleId.extensions")
     @js.native
@@ -50,17 +48,13 @@ object languageStoragePbMod {
     @JSImport("libra-core/lib/@/generated/language_storage_pb", "ModuleId.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: ModuleId, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: ModuleId, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: ModuleId): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: ModuleId): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -70,20 +64,16 @@ object languageStoragePbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(address: Uint8Array | String, name: String): AsObject = {
+      inline def apply(address: Uint8Array | String, name: String): AsObject = {
         val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setAddress(value: Uint8Array | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+        inline def setAddress(value: Uint8Array | String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
   }

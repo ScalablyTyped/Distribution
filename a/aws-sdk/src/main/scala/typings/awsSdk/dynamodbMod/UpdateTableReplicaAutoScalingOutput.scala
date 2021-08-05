@@ -13,19 +13,15 @@ trait UpdateTableReplicaAutoScalingOutput extends StObject {
 }
 object UpdateTableReplicaAutoScalingOutput {
   
-  @scala.inline
-  def apply(): UpdateTableReplicaAutoScalingOutput = {
+  inline def apply(): UpdateTableReplicaAutoScalingOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTableReplicaAutoScalingOutput]
   }
   
-  @scala.inline
-  implicit class UpdateTableReplicaAutoScalingOutputMutableBuilder[Self <: UpdateTableReplicaAutoScalingOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTableReplicaAutoScalingOutput](x: Self) {
     
-    @scala.inline
-    def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
+    inline def setTableAutoScalingDescription(value: TableAutoScalingDescription): Self = StObject.set(x, "TableAutoScalingDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableAutoScalingDescriptionUndefined: Self = StObject.set(x, "TableAutoScalingDescription", js.undefined)
+    inline def setTableAutoScalingDescriptionUndefined: Self = StObject.set(x, "TableAutoScalingDescription", js.undefined)
   }
 }

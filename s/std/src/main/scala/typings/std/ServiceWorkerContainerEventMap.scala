@@ -14,22 +14,17 @@ trait ServiceWorkerContainerEventMap extends StObject {
 }
 object ServiceWorkerContainerEventMap {
   
-  @scala.inline
-  def apply(controllerchange: Event, message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): ServiceWorkerContainerEventMap = {
+  inline def apply(controllerchange: Event, message: MessageEvent[js.Any], messageerror: MessageEvent[js.Any]): ServiceWorkerContainerEventMap = {
     val __obj = js.Dynamic.literal(controllerchange = controllerchange.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], messageerror = messageerror.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceWorkerContainerEventMap]
   }
   
-  @scala.inline
-  implicit class ServiceWorkerContainerEventMapMutableBuilder[Self <: ServiceWorkerContainerEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceWorkerContainerEventMap](x: Self) {
     
-    @scala.inline
-    def setControllerchange(value: Event): Self = StObject.set(x, "controllerchange", value.asInstanceOf[js.Any])
+    inline def setControllerchange(value: Event): Self = StObject.set(x, "controllerchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: MessageEvent[js.Any]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
+    inline def setMessageerror(value: MessageEvent[js.Any]): Self = StObject.set(x, "messageerror", value.asInstanceOf[js.Any])
   }
 }

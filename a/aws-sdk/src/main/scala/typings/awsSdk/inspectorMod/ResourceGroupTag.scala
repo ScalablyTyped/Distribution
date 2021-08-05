@@ -18,22 +18,17 @@ trait ResourceGroupTag extends StObject {
 }
 object ResourceGroupTag {
   
-  @scala.inline
-  def apply(key: TagKey): ResourceGroupTag = {
+  inline def apply(key: TagKey): ResourceGroupTag = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceGroupTag]
   }
   
-  @scala.inline
-  implicit class ResourceGroupTagMutableBuilder[Self <: ResourceGroupTag] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceGroupTag](x: Self) {
     
-    @scala.inline
-    def setKey(value: TagKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: TagValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TagValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

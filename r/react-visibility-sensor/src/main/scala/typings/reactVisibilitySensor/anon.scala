@@ -15,23 +15,18 @@ object anon {
   }
   object IsVisible {
     
-    @scala.inline
-    def apply(isVisible: Boolean): IsVisible = {
+    inline def apply(isVisible: Boolean): IsVisible = {
       val __obj = js.Dynamic.literal(isVisible = isVisible.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsVisible]
     }
     
-    @scala.inline
-    implicit class IsVisibleMutableBuilder[Self <: IsVisible] (val x: Self) extends AnyVal {
+    extension [Self <: IsVisible](x: Self) {
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityRect(value: Shape): Self = StObject.set(x, "visibilityRect", value.asInstanceOf[js.Any])
+      inline def setVisibilityRect(value: Shape): Self = StObject.set(x, "visibilityRect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityRectUndefined: Self = StObject.set(x, "visibilityRect", js.undefined)
+      inline def setVisibilityRectUndefined: Self = StObject.set(x, "visibilityRect", js.undefined)
     }
   }
 }

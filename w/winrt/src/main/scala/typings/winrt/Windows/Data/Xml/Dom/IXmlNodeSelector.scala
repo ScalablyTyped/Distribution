@@ -16,8 +16,7 @@ trait IXmlNodeSelector extends StObject {
 }
 object IXmlNodeSelector {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     selectNodes: String => XmlNodeList,
     selectNodesNS: (String, js.Any) => XmlNodeList,
     selectSingleNode: String => IXmlNode,
@@ -27,19 +26,14 @@ object IXmlNodeSelector {
     __obj.asInstanceOf[IXmlNodeSelector]
   }
   
-  @scala.inline
-  implicit class IXmlNodeSelectorMutableBuilder[Self <: IXmlNodeSelector] (val x: Self) extends AnyVal {
+  extension [Self <: IXmlNodeSelector](x: Self) {
     
-    @scala.inline
-    def setSelectNodes(value: String => XmlNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
+    inline def setSelectNodes(value: String => XmlNodeList): Self = StObject.set(x, "selectNodes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectNodesNS(value: (String, js.Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
+    inline def setSelectNodesNS(value: (String, js.Any) => XmlNodeList): Self = StObject.set(x, "selectNodesNS", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectSingleNode(value: String => IXmlNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
+    inline def setSelectSingleNode(value: String => IXmlNode): Self = StObject.set(x, "selectSingleNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectSingleNodeNS(value: (String, js.Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
+    inline def setSelectSingleNodeNS(value: (String, js.Any) => IXmlNode): Self = StObject.set(x, "selectSingleNodeNS", js.Any.fromFunction2(value))
   }
 }

@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoTextEffectAlignment extends StObject
 object MsoTextEffectAlignment {
   
-  @scala.inline
-  def msoTextEffectAlignmentCentered: `2` = 2.asInstanceOf[`2`]
+  inline def msoTextEffectAlignmentCentered: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoTextEffectAlignmentLeft: `1` = 1.asInstanceOf[`1`]
+  inline def msoTextEffectAlignmentLeft: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoTextEffectAlignmentLetterJustify: `4` = 4.asInstanceOf[`4`]
+  inline def msoTextEffectAlignmentLetterJustify: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoTextEffectAlignmentMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def msoTextEffectAlignmentMixed: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def msoTextEffectAlignmentRight: `3` = 3.asInstanceOf[`3`]
+  inline def msoTextEffectAlignmentRight: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoTextEffectAlignmentStretchJustify: `6` = 6.asInstanceOf[`6`]
+  inline def msoTextEffectAlignmentStretchJustify: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoTextEffectAlignmentWordJustify: `5` = 5.asInstanceOf[`5`]
+  inline def msoTextEffectAlignmentWordJustify: `5` = 5.asInstanceOf[`5`]
 }

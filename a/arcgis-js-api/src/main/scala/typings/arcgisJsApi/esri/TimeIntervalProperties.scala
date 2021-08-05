@@ -34,27 +34,21 @@ trait TimeIntervalProperties extends StObject {
 }
 object TimeIntervalProperties {
   
-  @scala.inline
-  def apply(): TimeIntervalProperties = {
+  inline def apply(): TimeIntervalProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeIntervalProperties]
   }
   
-  @scala.inline
-  implicit class TimeIntervalPropertiesMutableBuilder[Self <: TimeIntervalProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TimeIntervalProperties](x: Self) {
     
-    @scala.inline
-    def setUnit(
+    inline def setUnit(
       value: milliseconds | seconds | minutes | hours | days | weeks | months | years | decades | centuries
     ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

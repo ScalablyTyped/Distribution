@@ -13,12 +13,8 @@ object imfilterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def imfilter(A: Matrix, f: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("imfilter")(A.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  @scala.inline
-  def imfilter(A: Matrix, f: Matrix, pad: Unit, resSize: Shape): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("imfilter")(A.asInstanceOf[js.Any], f.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], resSize.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  @scala.inline
-  def imfilter(A: Matrix, f: Matrix, pad: PaddingValue): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("imfilter")(A.asInstanceOf[js.Any], f.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  @scala.inline
-  def imfilter(A: Matrix, f: Matrix, pad: PaddingValue, resSize: Shape): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("imfilter")(A.asInstanceOf[js.Any], f.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], resSize.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def imfilter(A: Matrix, f: Matrix): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("imfilter")(A.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def imfilter(A: Matrix, f: Matrix, pad: Unit, resSize: Shape): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("imfilter")(A.asInstanceOf[js.Any], f.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], resSize.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def imfilter(A: Matrix, f: Matrix, pad: PaddingValue): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("imfilter")(A.asInstanceOf[js.Any], f.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def imfilter(A: Matrix, f: Matrix, pad: PaddingValue, resSize: Shape): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("imfilter")(A.asInstanceOf[js.Any], f.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], resSize.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

@@ -28,23 +28,18 @@ object proxy {
   }
   object ErrorDetails {
     
-    @scala.inline
-    def apply(details: String, error: String, fatal: Boolean): ErrorDetails = {
+    inline def apply(details: String, error: String, fatal: Boolean): ErrorDetails = {
       val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorDetails]
     }
     
-    @scala.inline
-    implicit class ErrorDetailsMutableBuilder[Self <: ErrorDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorDetails](x: Self) {
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,32 +56,24 @@ object proxy {
   }
   object PacScript {
     
-    @scala.inline
-    def apply(): PacScript = {
+    inline def apply(): PacScript = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PacScript]
     }
     
-    @scala.inline
-    implicit class PacScriptMutableBuilder[Self <: PacScript] (val x: Self) extends AnyVal {
+    extension [Self <: PacScript](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+      inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
+      inline def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -109,29 +96,22 @@ object proxy {
   }
   object ProxyConfig {
     
-    @scala.inline
-    def apply(mode: String): ProxyConfig = {
+    inline def apply(mode: String): ProxyConfig = {
       val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxyConfig]
     }
     
-    @scala.inline
-    implicit class ProxyConfigMutableBuilder[Self <: ProxyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyConfig](x: Self) {
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPacScript(value: typings.chrome.chrome.proxy.PacScript): Self = StObject.set(x, "pacScript", value.asInstanceOf[js.Any])
+      inline def setPacScript(value: typings.chrome.chrome.proxy.PacScript): Self = StObject.set(x, "pacScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPacScriptUndefined: Self = StObject.set(x, "pacScript", js.undefined)
+      inline def setPacScriptUndefined: Self = StObject.set(x, "pacScript", js.undefined)
       
-      @scala.inline
-      def setRules(value: typings.chrome.chrome.proxy.ProxyRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: typings.chrome.chrome.proxy.ProxyRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     }
   }
   
@@ -159,53 +139,38 @@ object proxy {
   }
   object ProxyRules {
     
-    @scala.inline
-    def apply(): ProxyRules = {
+    inline def apply(): ProxyRules = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProxyRules]
     }
     
-    @scala.inline
-    implicit class ProxyRulesMutableBuilder[Self <: ProxyRules] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyRules](x: Self) {
       
-      @scala.inline
-      def setBypassList(value: js.Array[String]): Self = StObject.set(x, "bypassList", value.asInstanceOf[js.Any])
+      inline def setBypassList(value: js.Array[String]): Self = StObject.set(x, "bypassList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBypassListUndefined: Self = StObject.set(x, "bypassList", js.undefined)
+      inline def setBypassListUndefined: Self = StObject.set(x, "bypassList", js.undefined)
       
-      @scala.inline
-      def setBypassListVarargs(value: String*): Self = StObject.set(x, "bypassList", js.Array(value :_*))
+      inline def setBypassListVarargs(value: String*): Self = StObject.set(x, "bypassList", js.Array(value :_*))
       
-      @scala.inline
-      def setFallbackProxy(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "fallbackProxy", value.asInstanceOf[js.Any])
+      inline def setFallbackProxy(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "fallbackProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackProxyUndefined: Self = StObject.set(x, "fallbackProxy", js.undefined)
+      inline def setFallbackProxyUndefined: Self = StObject.set(x, "fallbackProxy", js.undefined)
       
-      @scala.inline
-      def setProxyForFtp(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "proxyForFtp", value.asInstanceOf[js.Any])
+      inline def setProxyForFtp(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "proxyForFtp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyForFtpUndefined: Self = StObject.set(x, "proxyForFtp", js.undefined)
+      inline def setProxyForFtpUndefined: Self = StObject.set(x, "proxyForFtp", js.undefined)
       
-      @scala.inline
-      def setProxyForHttp(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "proxyForHttp", value.asInstanceOf[js.Any])
+      inline def setProxyForHttp(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "proxyForHttp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyForHttpUndefined: Self = StObject.set(x, "proxyForHttp", js.undefined)
+      inline def setProxyForHttpUndefined: Self = StObject.set(x, "proxyForHttp", js.undefined)
       
-      @scala.inline
-      def setProxyForHttps(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "proxyForHttps", value.asInstanceOf[js.Any])
+      inline def setProxyForHttps(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "proxyForHttps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyForHttpsUndefined: Self = StObject.set(x, "proxyForHttps", js.undefined)
+      inline def setProxyForHttpsUndefined: Self = StObject.set(x, "proxyForHttps", js.undefined)
       
-      @scala.inline
-      def setSingleProxy(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "singleProxy", value.asInstanceOf[js.Any])
+      inline def setSingleProxy(value: typings.chrome.chrome.proxy.ProxyServer): Self = StObject.set(x, "singleProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleProxyUndefined: Self = StObject.set(x, "singleProxy", js.undefined)
+      inline def setSingleProxyUndefined: Self = StObject.set(x, "singleProxy", js.undefined)
     }
   }
   
@@ -222,29 +187,22 @@ object proxy {
   }
   object ProxyServer {
     
-    @scala.inline
-    def apply(host: String): ProxyServer = {
+    inline def apply(host: String): ProxyServer = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProxyServer]
     }
     
-    @scala.inline
-    implicit class ProxyServerMutableBuilder[Self <: ProxyServer] (val x: Self) extends AnyVal {
+    extension [Self <: ProxyServer](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+      inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
     }
   }
 }

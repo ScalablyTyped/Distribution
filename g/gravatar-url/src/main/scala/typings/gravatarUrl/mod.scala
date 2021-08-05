@@ -28,10 +28,8 @@ object mod {
   //=> 'https://gravatar.com/avatar/d36a92237c75c5337c17b60d90686bf9?size=200'
   ```
   */
-  @scala.inline
-  def apply(identifier: String): String = ^.asInstanceOf[js.Dynamic].apply(identifier.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(identifier: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(identifier.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(identifier: String): String = ^.asInstanceOf[js.Dynamic].apply(identifier.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(identifier: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(identifier.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("gravatar-url", JSImport.Namespace)
   @js.native
@@ -61,32 +59,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDefault(value: LiteralUnion[`404` | mm | identicon | monsterid | wavatar | retro | blank, String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: LiteralUnion[`404` | mm | identicon | monsterid | wavatar | retro | blank, String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setRating(value: g | pg | r | typings.gravatarUrl.gravatarUrlStrings.x): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
+      inline def setRating(value: g | pg | r | typings.gravatarUrl.gravatarUrlStrings.x): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
+      inline def setRatingUndefined: Self = StObject.set(x, "rating", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

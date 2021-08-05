@@ -17,8 +17,7 @@ object badgeSelectItemUniDriverMod {
   }
   object BadgeSelectItemUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object badgeSelectItemUniDriverMod {
       __obj.asInstanceOf[BadgeSelectItemUniDriver]
     }
     
-    @scala.inline
-    implicit class BadgeSelectItemUniDriverMutableBuilder[Self <: BadgeSelectItemUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeSelectItemUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitleText", js.Any.fromFunction0(value))
+      inline def setGetSubtitleText(value: () => js.Promise[String]): Self = StObject.set(x, "getSubtitleText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+      inline def setGetText(value: () => js.Promise[String]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     }
   }
 }

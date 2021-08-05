@@ -18,19 +18,15 @@ trait AssociateConnectionWithLagRequest extends StObject {
 }
 object AssociateConnectionWithLagRequest {
   
-  @scala.inline
-  def apply(connectionId: ConnectionId, lagId: LagId): AssociateConnectionWithLagRequest = {
+  inline def apply(connectionId: ConnectionId, lagId: LagId): AssociateConnectionWithLagRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], lagId = lagId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateConnectionWithLagRequest]
   }
   
-  @scala.inline
-  implicit class AssociateConnectionWithLagRequestMutableBuilder[Self <: AssociateConnectionWithLagRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateConnectionWithLagRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
+    inline def setLagId(value: LagId): Self = StObject.set(x, "lagId", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait OnPageChangeCancel extends StObject {
 }
 object OnPageChangeCancel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onPageChangeCancel: () => Unit,
     onPageChangeConfirm: Boolean => Unit,
     onPageChangeStart: () => Unit
@@ -24,16 +23,12 @@ object OnPageChangeCancel {
     __obj.asInstanceOf[OnPageChangeCancel]
   }
   
-  @scala.inline
-  implicit class OnPageChangeCancelMutableBuilder[Self <: OnPageChangeCancel] (val x: Self) extends AnyVal {
+  extension [Self <: OnPageChangeCancel](x: Self) {
     
-    @scala.inline
-    def setOnPageChangeCancel(value: () => Unit): Self = StObject.set(x, "onPageChangeCancel", js.Any.fromFunction0(value))
+    inline def setOnPageChangeCancel(value: () => Unit): Self = StObject.set(x, "onPageChangeCancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPageChangeConfirm(value: Boolean => Unit): Self = StObject.set(x, "onPageChangeConfirm", js.Any.fromFunction1(value))
+    inline def setOnPageChangeConfirm(value: Boolean => Unit): Self = StObject.set(x, "onPageChangeConfirm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPageChangeStart(value: () => Unit): Self = StObject.set(x, "onPageChangeStart", js.Any.fromFunction0(value))
+    inline def setOnPageChangeStart(value: () => Unit): Self = StObject.set(x, "onPageChangeStart", js.Any.fromFunction0(value))
   }
 }

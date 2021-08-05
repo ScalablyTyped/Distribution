@@ -19,8 +19,7 @@ trait Category extends StObject {
 }
 object Category {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     category: CodePipelineActionCategory,
     owner: AWS | typings.awsLambda.awsLambdaStrings.Custom | ThirdParty,
     provider: String,
@@ -30,19 +29,14 @@ object Category {
     __obj.asInstanceOf[Category]
   }
   
-  @scala.inline
-  implicit class CategoryMutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
+  extension [Self <: Category](x: Self) {
     
-    @scala.inline
-    def setCategory(value: CodePipelineActionCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: CodePipelineActionCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: AWS | typings.awsLambda.awsLambdaStrings.Custom | ThirdParty): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: AWS | typings.awsLambda.awsLambdaStrings.Custom | ThirdParty): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

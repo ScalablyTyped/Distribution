@@ -24,31 +24,23 @@ trait HeaderCellRenderedEventUIParam extends StObject {
 }
 object HeaderCellRenderedEventUIParam {
   
-  @scala.inline
-  def apply(): HeaderCellRenderedEventUIParam = {
+  inline def apply(): HeaderCellRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderCellRenderedEventUIParam]
   }
   
-  @scala.inline
-  implicit class HeaderCellRenderedEventUIParamMutableBuilder[Self <: HeaderCellRenderedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderCellRenderedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTh(value: Element): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
+    inline def setTh(value: Element): Self = StObject.set(x, "th", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThUndefined: Self = StObject.set(x, "th", js.undefined)
+    inline def setThUndefined: Self = StObject.set(x, "th", js.undefined)
   }
 }

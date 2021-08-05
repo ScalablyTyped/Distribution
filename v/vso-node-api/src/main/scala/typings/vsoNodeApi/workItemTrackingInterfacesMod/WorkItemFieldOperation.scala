@@ -18,19 +18,15 @@ trait WorkItemFieldOperation extends StObject {
 }
 object WorkItemFieldOperation {
   
-  @scala.inline
-  def apply(name: String, referenceName: String): WorkItemFieldOperation = {
+  inline def apply(name: String, referenceName: String): WorkItemFieldOperation = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], referenceName = referenceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemFieldOperation]
   }
   
-  @scala.inline
-  implicit class WorkItemFieldOperationMutableBuilder[Self <: WorkItemFieldOperation] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemFieldOperation](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+    inline def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
   }
 }

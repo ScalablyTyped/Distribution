@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Hyperlink")
 @js.native
-class Hyperlink protected ()
+/* private */ class Hyperlink ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Hyperlink {
   
@@ -36,7 +36,7 @@ class Hyperlink protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Hyperlink_typekey")
   var PowerPointDotHyperlink_typekey: typings.activexPowerpoint.PowerPoint.Hyperlink = js.native
   

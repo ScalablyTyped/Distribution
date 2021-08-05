@@ -18,8 +18,7 @@ trait ASPxClientHtmlEditorPasteFromWordDialog
 }
 object ASPxClientHtmlEditorPasteFromWordDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCancelButton: () => ASPxClientButton,
     GetFormLayout: () => ASPxClientFormLayout,
     GetOkButton: () => ASPxClientButton,
@@ -29,10 +28,8 @@ object ASPxClientHtmlEditorPasteFromWordDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorPasteFromWordDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorPasteFromWordDialogMutableBuilder[Self <: ASPxClientHtmlEditorPasteFromWordDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorPasteFromWordDialog](x: Self) {
     
-    @scala.inline
-    def setGetRemoveFontFamilyCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetRemoveFontFamilyCheckBox", js.Any.fromFunction0(value))
+    inline def setGetRemoveFontFamilyCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetRemoveFontFamilyCheckBox", js.Any.fromFunction0(value))
   }
 }

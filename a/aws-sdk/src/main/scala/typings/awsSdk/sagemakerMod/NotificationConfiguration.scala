@@ -13,19 +13,15 @@ trait NotificationConfiguration extends StObject {
 }
 object NotificationConfiguration {
   
-  @scala.inline
-  def apply(): NotificationConfiguration = {
+  inline def apply(): NotificationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationConfiguration]
   }
   
-  @scala.inline
-  implicit class NotificationConfigurationMutableBuilder[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationConfiguration](x: Self) {
     
-    @scala.inline
-    def setNotificationTopicArn(value: NotificationTopicArn): Self = StObject.set(x, "NotificationTopicArn", value.asInstanceOf[js.Any])
+    inline def setNotificationTopicArn(value: NotificationTopicArn): Self = StObject.set(x, "NotificationTopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTopicArnUndefined: Self = StObject.set(x, "NotificationTopicArn", js.undefined)
+    inline def setNotificationTopicArnUndefined: Self = StObject.set(x, "NotificationTopicArn", js.undefined)
   }
 }

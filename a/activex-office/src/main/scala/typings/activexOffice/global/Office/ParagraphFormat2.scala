@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ParagraphFormat2")
 @js.native
-class ParagraphFormat2 protected ()
+/* private */ class ParagraphFormat2 ()
   extends StObject
      with typings.activexOffice.Office.ParagraphFormat2 {
   
@@ -54,7 +54,7 @@ class ParagraphFormat2 protected ()
   /* CompleteClass */
   var LineRuleWithin: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ParagraphFormat2_typekey")
   var OfficeDotParagraphFormat2_typekey: typings.activexOffice.Office.ParagraphFormat2 = js.native
   

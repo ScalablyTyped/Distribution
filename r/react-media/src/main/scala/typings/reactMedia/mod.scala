@@ -16,10 +16,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: SingleQueryProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-  @scala.inline
-  def default[Q](props: MultiQueryProps[Q]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default(props: SingleQueryProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def default[Q](props: MultiQueryProps[Q]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait BaseProps extends StObject {
     
@@ -29,26 +27,20 @@ object mod {
   }
   object BaseProps {
     
-    @scala.inline
-    def apply(): BaseProps = {
+    inline def apply(): BaseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseProps]
     }
     
-    @scala.inline
-    implicit class BasePropsMutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
+    extension [Self <: BaseProps](x: Self) {
       
-      @scala.inline
-      def setRender(value: () => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setTargetWindow(value: Window): Self = StObject.set(x, "targetWindow", value.asInstanceOf[js.Any])
+      inline def setTargetWindow(value: Window): Self = StObject.set(x, "targetWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetWindowUndefined: Self = StObject.set(x, "targetWindow", js.undefined)
+      inline def setTargetWindowUndefined: Self = StObject.set(x, "targetWindow", js.undefined)
     }
   }
   
@@ -78,38 +70,28 @@ object mod {
   }
   object MultiQueryProps {
     
-    @scala.inline
-    def apply[Queries](queries: Queries): MultiQueryProps[Queries] = {
+    inline def apply[Queries](queries: Queries): MultiQueryProps[Queries] = {
       val __obj = js.Dynamic.literal(queries = queries.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiQueryProps[Queries]]
     }
     
-    @scala.inline
-    implicit class MultiQueryPropsMutableBuilder[Self <: MultiQueryProps[?], Queries] (val x: Self & MultiQueryProps[Queries]) extends AnyVal {
+    extension [Self <: MultiQueryProps[?], Queries](x: Self & MultiQueryProps[Queries]) {
       
-      @scala.inline
-      def setChildren(value: (js.Function1[/* matches */ QueryResults[Queries], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: (js.Function1[/* matches */ QueryResults[Queries], ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* matches */ QueryResults[Queries] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* matches */ QueryResults[Queries] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultMatches(value: Partial[QueryResults[Queries]]): Self = StObject.set(x, "defaultMatches", value.asInstanceOf[js.Any])
+      inline def setDefaultMatches(value: Partial[QueryResults[Queries]]): Self = StObject.set(x, "defaultMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMatchesUndefined: Self = StObject.set(x, "defaultMatches", js.undefined)
+      inline def setDefaultMatchesUndefined: Self = StObject.set(x, "defaultMatches", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* matches */ QueryResults[Queries] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* matches */ QueryResults[Queries] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setQueries(value: Queries): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+      inline def setQueries(value: Queries): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,41 +124,30 @@ object mod {
   }
   object SingleQueryProps {
     
-    @scala.inline
-    def apply(query: MediaQueryValue): SingleQueryProps = {
+    inline def apply(query: MediaQueryValue): SingleQueryProps = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[SingleQueryProps]
     }
     
-    @scala.inline
-    implicit class SingleQueryPropsMutableBuilder[Self <: SingleQueryProps] (val x: Self) extends AnyVal {
+    extension [Self <: SingleQueryProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: (js.Function1[/* matches */ Boolean, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: (js.Function1[/* matches */ Boolean, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenFunction1(value: /* matches */ Boolean => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* matches */ Boolean => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultMatches(value: Boolean): Self = StObject.set(x, "defaultMatches", value.asInstanceOf[js.Any])
+      inline def setDefaultMatches(value: Boolean): Self = StObject.set(x, "defaultMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMatchesUndefined: Self = StObject.set(x, "defaultMatches", js.undefined)
+      inline def setDefaultMatchesUndefined: Self = StObject.set(x, "defaultMatches", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* matches */ Boolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* matches */ Boolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setQuery(value: MediaQueryValue): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: MediaQueryValue): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryVarargs(value: MediaQueryObject*): Self = StObject.set(x, "query", js.Array(value :_*))
+      inline def setQueryVarargs(value: MediaQueryObject*): Self = StObject.set(x, "query", js.Array(value :_*))
     }
   }
 }

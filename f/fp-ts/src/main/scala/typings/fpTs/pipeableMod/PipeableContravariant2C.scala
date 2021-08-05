@@ -13,8 +13,7 @@ trait PipeableContravariant2C[F /* <: /* import warning: transforms.QualifyRefer
 }
 object PipeableContravariant2C {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
     contramap: js.Function1[js.Any, js.Any] => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any
@@ -24,11 +23,9 @@ object PipeableContravariant2C {
     __obj.asInstanceOf[PipeableContravariant2C[F, E]]
   }
   
-  @scala.inline
-  implicit class PipeableContravariant2CMutableBuilder[Self <: PipeableContravariant2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (PipeableContravariant2C[F, E])) extends AnyVal {
+  extension [Self <: PipeableContravariant2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (PipeableContravariant2C[F, E])) {
     
-    @scala.inline
-    def setContramap(
+    inline def setContramap(
       value: js.Function1[js.Any, js.Any] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, B> */ js.Any

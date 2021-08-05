@@ -15,8 +15,7 @@ object ServiceSettings {
   @JSImport("azure", "ServiceSettings.DEFAULT_PROTOCOL")
   @js.native
   def DEFAULT_PROTOCOL: String = js.native
-  @scala.inline
-  def DEFAULT_PROTOCOL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PROTOCOL")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_PROTOCOL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PROTOCOL")(x.asInstanceOf[js.Any])
   
   @JSImport("azure", "ServiceSettings.NoMatchError")
   @js.native
@@ -35,36 +34,25 @@ object ServiceSettings {
     var name: String = js.native
   }
   
-  @scala.inline
-  def allRequired(args: js.Any*): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("allRequired")(args.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+  inline def allRequired(args: js.Any*): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("allRequired")(args.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
   
-  @scala.inline
-  def atLeastOne(args: js.Any*): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("atLeastOne")(args.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+  inline def atLeastOne(args: js.Any*): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("atLeastOne")(args.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
   
-  @scala.inline
-  def getValidator(requirements: Dictionary[Requirement], isRequired: Boolean, atLeastOne: Boolean): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidator")(requirements.asInstanceOf[js.Any], isRequired.asInstanceOf[js.Any], atLeastOne.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
+  inline def getValidator(requirements: Dictionary[Requirement], isRequired: Boolean, atLeastOne: Boolean): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidator")(requirements.asInstanceOf[js.Any], isRequired.asInstanceOf[js.Any], atLeastOne.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
   
-  @scala.inline
-  def matchedSpecification(settings: Dictionary[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchedSpecification")(settings.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def matchedSpecification(settings: Dictionary[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchedSpecification")(settings.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def noMatchConnectionString(connectionString: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noMatchConnectionString")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def noMatchConnectionString(connectionString: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noMatchConnectionString")(connectionString.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def noMatchSettings(settings: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noMatchSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def noMatchSettings(settings: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noMatchSettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def optional(args: js.Any*): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("optional")(args.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+  inline def optional(args: js.Any*): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("optional")(args.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
   
-  @scala.inline
-  def parseAndValidateKeys(connectionString: String, validKeys: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAndValidateKeys")(connectionString.asInstanceOf[js.Any], validKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def parseAndValidateKeys(connectionString: String, validKeys: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAndValidateKeys")(connectionString.asInstanceOf[js.Any], validKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def parseHost(uri: String): Url = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHost")(uri.asInstanceOf[js.Any]).asInstanceOf[Url]
+  inline def parseHost(uri: String): Url = ^.asInstanceOf[js.Dynamic].applyDynamic("parseHost")(uri.asInstanceOf[js.Any]).asInstanceOf[Url]
   
-  @scala.inline
-  def setting(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setting")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def setting(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("setting")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def settingWithFunc(name: String, predicate: js.Function): js.Array[Requirement] = (^.asInstanceOf[js.Dynamic].applyDynamic("settingWithFunc")(name.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Requirement]]
+  inline def settingWithFunc(name: String, predicate: js.Function): js.Array[Requirement] = (^.asInstanceOf[js.Dynamic].applyDynamic("settingWithFunc")(name.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Requirement]]
 }

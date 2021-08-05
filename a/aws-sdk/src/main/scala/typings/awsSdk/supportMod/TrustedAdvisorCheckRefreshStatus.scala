@@ -23,22 +23,17 @@ trait TrustedAdvisorCheckRefreshStatus extends StObject {
 }
 object TrustedAdvisorCheckRefreshStatus {
   
-  @scala.inline
-  def apply(checkId: String, millisUntilNextRefreshable: Long, status: String): TrustedAdvisorCheckRefreshStatus = {
+  inline def apply(checkId: String, millisUntilNextRefreshable: Long, status: String): TrustedAdvisorCheckRefreshStatus = {
     val __obj = js.Dynamic.literal(checkId = checkId.asInstanceOf[js.Any], millisUntilNextRefreshable = millisUntilNextRefreshable.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustedAdvisorCheckRefreshStatus]
   }
   
-  @scala.inline
-  implicit class TrustedAdvisorCheckRefreshStatusMutableBuilder[Self <: TrustedAdvisorCheckRefreshStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TrustedAdvisorCheckRefreshStatus](x: Self) {
     
-    @scala.inline
-    def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
+    inline def setCheckId(value: String): Self = StObject.set(x, "checkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMillisUntilNextRefreshable(value: Long): Self = StObject.set(x, "millisUntilNextRefreshable", value.asInstanceOf[js.Any])
+    inline def setMillisUntilNextRefreshable(value: Long): Self = StObject.set(x, "millisUntilNextRefreshable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

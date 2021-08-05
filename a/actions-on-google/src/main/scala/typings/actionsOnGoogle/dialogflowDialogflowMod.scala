@@ -30,11 +30,9 @@ object dialogflowDialogflowMod {
   trait DefaultDialogflowIntent extends StObject
   object DefaultDialogflowIntent {
     
-    @scala.inline
-    def `Default Fallback Intent`: typings.actionsOnGoogle.actionsOnGoogleStrings.`Default Fallback Intent` = ("Default Fallback Intent").asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.`Default Fallback Intent`]
+    inline def `Default Fallback Intent`: typings.actionsOnGoogle.actionsOnGoogleStrings.`Default Fallback Intent` = ("Default Fallback Intent").asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.`Default Fallback Intent`]
     
-    @scala.inline
-    def `Default Welcome Intent`: typings.actionsOnGoogle.actionsOnGoogleStrings.`Default Welcome Intent` = ("Default Welcome Intent").asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.`Default Welcome Intent`]
+    inline def `Default Welcome Intent`: typings.actionsOnGoogle.actionsOnGoogleStrings.`Default Welcome Intent` = ("Default Welcome Intent").asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.`Default Welcome Intent`]
   }
   
   @js.native
@@ -200,8 +198,7 @@ object dialogflowDialogflowMod {
   }
   object DialogflowHandlers {
     
-    @scala.inline
-    def apply[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */](
+    inline def apply[TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */](
       catcher: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any,
       intents: DialogflowIntentHandlers
     ): DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation] = {
@@ -209,20 +206,15 @@ object dialogflowDialogflowMod {
       __obj.asInstanceOf[DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation]]
     }
     
-    @scala.inline
-    implicit class DialogflowHandlersMutableBuilder[Self <: DialogflowHandlers[?, ?, ?, ?], TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */] (val x: Self & (DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation])) extends AnyVal {
+    extension [Self <: DialogflowHandlers[?, ?, ?, ?], TConvData, TUserStorage, TContexts /* <: Contexts */, TConversation /* <: DialogflowConversation[TConvData, TUserStorage, TContexts] */](x: Self & (DialogflowHandlers[TConvData, TUserStorage, TContexts, TConversation])) {
       
-      @scala.inline
-      def setCatcher(value: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
+      inline def setCatcher(value: (TConversation, /* error */ Error) => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "catcher", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFallback(value: js.Function | String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: js.Function | String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setIntents(value: DialogflowIntentHandlers): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
+      inline def setIntents(value: DialogflowIntentHandlers): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,20 +253,16 @@ object dialogflowDialogflowMod {
   }
   object DialogflowOptions {
     
-    @scala.inline
-    def apply[TConvData, TUserStorage](): DialogflowOptions[TConvData, TUserStorage] = {
+    inline def apply[TConvData, TUserStorage](): DialogflowOptions[TConvData, TUserStorage] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DialogflowOptions[TConvData, TUserStorage]]
     }
     
-    @scala.inline
-    implicit class DialogflowOptionsMutableBuilder[Self <: DialogflowOptions[?, ?], TConvData, TUserStorage] (val x: Self & (DialogflowOptions[TConvData, TUserStorage])) extends AnyVal {
+    extension [Self <: DialogflowOptions[?, ?], TConvData, TUserStorage](x: Self & (DialogflowOptions[TConvData, TUserStorage])) {
       
-      @scala.inline
-      def setVerification(value: DialogflowVerification | DialogflowVerificationHeaders): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+      inline def setVerification(value: DialogflowVerification | DialogflowVerificationHeaders): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
+      inline def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
     }
   }
   
@@ -303,32 +291,24 @@ object dialogflowDialogflowMod {
   }
   object DialogflowVerification {
     
-    @scala.inline
-    def apply(headers: DialogflowVerificationHeaders): DialogflowVerification = {
+    inline def apply(headers: DialogflowVerificationHeaders): DialogflowVerification = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[DialogflowVerification]
     }
     
-    @scala.inline
-    implicit class DialogflowVerificationMutableBuilder[Self <: DialogflowVerification] (val x: Self) extends AnyVal {
+    extension [Self <: DialogflowVerification](x: Self) {
       
-      @scala.inline
-      def setError(value: String | (js.Function1[/* error */ String, String])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | (js.Function1[/* error */ String, String])): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorFunction1(value: /* error */ String => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setErrorFunction1(value: /* error */ String => String): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: DialogflowVerificationHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: DialogflowVerificationHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   

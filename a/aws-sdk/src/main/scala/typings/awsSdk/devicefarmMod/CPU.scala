@@ -23,31 +23,23 @@ trait CPU extends StObject {
 }
 object CPU {
   
-  @scala.inline
-  def apply(): CPU = {
+  inline def apply(): CPU = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CPU]
   }
   
-  @scala.inline
-  implicit class CPUMutableBuilder[Self <: CPU] (val x: Self) extends AnyVal {
+  extension [Self <: CPU](x: Self) {
     
-    @scala.inline
-    def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
-    @scala.inline
-    def setClock(value: Double): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
+    inline def setClock(value: Double): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
+    inline def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: String): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
   }
 }

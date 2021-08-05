@@ -16,37 +16,27 @@ trait LoadConfig extends StObject {
 }
 object LoadConfig {
   
-  @scala.inline
-  def apply(): LoadConfig = {
+  inline def apply(): LoadConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadConfig]
   }
   
-  @scala.inline
-  implicit class LoadConfigMutableBuilder[Self <: LoadConfig] (val x: Self) extends AnyVal {
+  extension [Self <: LoadConfig](x: Self) {
     
-    @scala.inline
-    def setCheckPolicy(value: Boolean): Self = StObject.set(x, "checkPolicy", value.asInstanceOf[js.Any])
+    inline def setCheckPolicy(value: Boolean): Self = StObject.set(x, "checkPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckPolicyUndefined: Self = StObject.set(x, "checkPolicy", js.undefined)
+    inline def setCheckPolicyUndefined: Self = StObject.set(x, "checkPolicy", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: LoadPolicyConfig): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: LoadPolicyConfig): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setProcess(value: LoadProcessConfig): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: LoadProcessConfig): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+    inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     
-    @scala.inline
-    def setShouldCrash(value: Boolean): Self = StObject.set(x, "shouldCrash", value.asInstanceOf[js.Any])
+    inline def setShouldCrash(value: Boolean): Self = StObject.set(x, "shouldCrash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldCrashUndefined: Self = StObject.set(x, "shouldCrash", js.undefined)
+    inline def setShouldCrashUndefined: Self = StObject.set(x, "shouldCrash", js.undefined)
   }
 }

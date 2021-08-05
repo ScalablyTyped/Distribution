@@ -13,17 +13,14 @@ object anon {
   }
   object PostMessage {
     
-    @scala.inline
-    def apply(postMessage: js.Any => Unit): PostMessage = {
+    inline def apply(postMessage: js.Any => Unit): PostMessage = {
       val __obj = js.Dynamic.literal(postMessage = js.Any.fromFunction1(postMessage))
       __obj.asInstanceOf[PostMessage]
     }
     
-    @scala.inline
-    implicit class PostMessageMutableBuilder[Self <: PostMessage] (val x: Self) extends AnyVal {
+    extension [Self <: PostMessage](x: Self) {
       
-      @scala.inline
-      def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+      inline def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
     }
   }
   

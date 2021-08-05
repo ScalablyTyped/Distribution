@@ -22,35 +22,26 @@ object mod {
   }
   object PhoneNumberOptions {
     
-    @scala.inline
-    def apply(): PhoneNumberOptions = {
+    inline def apply(): PhoneNumberOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PhoneNumberOptions]
     }
     
-    @scala.inline
-    implicit class PhoneNumberOptionsMutableBuilder[Self <: PhoneNumberOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PhoneNumberOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultCountry(value: js.Array[String] | String): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
+      inline def setDefaultCountry(value: js.Array[String] | String): Self = StObject.set(x, "defaultCountry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
+      inline def setDefaultCountryUndefined: Self = StObject.set(x, "defaultCountry", js.undefined)
       
-      @scala.inline
-      def setDefaultCountryVarargs(value: String*): Self = StObject.set(x, "defaultCountry", js.Array(value :_*))
+      inline def setDefaultCountryVarargs(value: String*): Self = StObject.set(x, "defaultCountry", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: e164 | international | national | rfc3966): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: e164 | international | national | rfc3966): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
   

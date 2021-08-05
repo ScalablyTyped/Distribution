@@ -8,11 +8,9 @@ object maximMazurokGapiClientPubsubliteStrings {
   
   @js.native
   sealed trait pubsublite extends StObject
-  @scala.inline
-  def pubsublite: pubsublite = "pubsublite".asInstanceOf[pubsublite]
+  inline def pubsublite: pubsublite = "pubsublite".asInstanceOf[pubsublite]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

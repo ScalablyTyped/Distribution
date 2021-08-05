@@ -10,16 +10,13 @@ trait PostsInsightsFeedResponseShareCount extends StObject {
 }
 object PostsInsightsFeedResponseShareCount {
   
-  @scala.inline
-  def apply(tray: PostsInsightsFeedResponseTray): PostsInsightsFeedResponseShareCount = {
+  inline def apply(tray: PostsInsightsFeedResponseTray): PostsInsightsFeedResponseShareCount = {
     val __obj = js.Dynamic.literal(tray = tray.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostsInsightsFeedResponseShareCount]
   }
   
-  @scala.inline
-  implicit class PostsInsightsFeedResponseShareCountMutableBuilder[Self <: PostsInsightsFeedResponseShareCount] (val x: Self) extends AnyVal {
+  extension [Self <: PostsInsightsFeedResponseShareCount](x: Self) {
     
-    @scala.inline
-    def setTray(value: PostsInsightsFeedResponseTray): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
+    inline def setTray(value: PostsInsightsFeedResponseTray): Self = StObject.set(x, "tray", value.asInstanceOf[js.Any])
   }
 }

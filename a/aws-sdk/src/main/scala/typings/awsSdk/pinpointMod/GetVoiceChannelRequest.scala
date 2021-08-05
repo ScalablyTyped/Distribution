@@ -13,16 +13,13 @@ trait GetVoiceChannelRequest extends StObject {
 }
 object GetVoiceChannelRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): GetVoiceChannelRequest = {
+  inline def apply(ApplicationId: string): GetVoiceChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetVoiceChannelRequest]
   }
   
-  @scala.inline
-  implicit class GetVoiceChannelRequestMutableBuilder[Self <: GetVoiceChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetVoiceChannelRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

@@ -9,6 +9,5 @@ object global {
   @JSGlobal("xssFilters")
   @js.native
   def xssFilters: XSSFilters = js.native
-  @scala.inline
-  def xssFilters_=(x: XSSFilters): Unit = js.Dynamic.global.updateDynamic("xssFilters")(x.asInstanceOf[js.Any])
+  inline def xssFilters_=(x: XSSFilters): Unit = js.Dynamic.global.updateDynamic("xssFilters")(x.asInstanceOf[js.Any])
 }

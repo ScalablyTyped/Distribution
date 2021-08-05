@@ -53,38 +53,28 @@ object anon {
   }
   object OmitRenderOptionsreadonly {
     
-    @scala.inline
-    def apply(): OmitRenderOptionsreadonly = {
+    inline def apply(): OmitRenderOptionsreadonly = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OmitRenderOptionsreadonly]
     }
     
-    @scala.inline
-    implicit class OmitRenderOptionsreadonlyMutableBuilder[Self <: OmitRenderOptionsreadonly] (val x: Self) extends AnyVal {
+    extension [Self <: OmitRenderOptionsreadonly](x: Self) {
       
-      @scala.inline
-      def setBaseElement(value: Element): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
+      inline def setBaseElement(value: Element): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
+      inline def setBaseElementUndefined: Self = StObject.set(x, "baseElement", js.undefined)
       
-      @scala.inline
-      def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      @scala.inline
-      def setHydrate(value: Boolean): Self = StObject.set(x, "hydrate", value.asInstanceOf[js.Any])
+      inline def setHydrate(value: Boolean): Self = StObject.set(x, "hydrate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHydrateUndefined: Self = StObject.set(x, "hydrate", js.undefined)
+      inline def setHydrateUndefined: Self = StObject.set(x, "hydrate", js.undefined)
       
-      @scala.inline
-      def setWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+      inline def setWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
+      inline def setWrapperUndefined: Self = StObject.set(x, "wrapper", js.undefined)
     }
   }
   
@@ -316,8 +306,7 @@ object anon {
   }
   object Typeofqueries {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       findAllByAltText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
       findAllByDisplayValue: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
       findAllByLabelText: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]],
@@ -371,246 +360,197 @@ object anon {
       __obj.asInstanceOf[Typeofqueries]
     }
     
-    @scala.inline
-    implicit class TypeofqueriesMutableBuilder[Self <: Typeofqueries] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofqueries](x: Self) {
       
-      @scala.inline
-      def setFindAllByAltText(
+      inline def setFindAllByAltText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
       ): Self = StObject.set(x, "findAllByAltText", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindAllByDisplayValue(
+      inline def setFindAllByDisplayValue(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
       ): Self = StObject.set(x, "findAllByDisplayValue", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindAllByLabelText(
+      inline def setFindAllByLabelText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
       ): Self = StObject.set(x, "findAllByLabelText", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindAllByPlaceholderText(
+      inline def setFindAllByPlaceholderText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
       ): Self = StObject.set(x, "findAllByPlaceholderText", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindAllByRole(
+      inline def setFindAllByRole(
         value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
       ): Self = StObject.set(x, "findAllByRole", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindAllByTestId(
+      inline def setFindAllByTestId(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
       ): Self = StObject.set(x, "findAllByTestId", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindAllByText(
+      inline def setFindAllByText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
       ): Self = StObject.set(x, "findAllByText", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindAllByTitle(
+      inline def setFindAllByTitle(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[js.Array[HTMLElement]]
       ): Self = StObject.set(x, "findAllByTitle", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindByAltText(
+      inline def setFindByAltText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
       ): Self = StObject.set(x, "findByAltText", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindByDisplayValue(
+      inline def setFindByDisplayValue(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
       ): Self = StObject.set(x, "findByDisplayValue", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindByLabelText(
+      inline def setFindByLabelText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
       ): Self = StObject.set(x, "findByLabelText", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindByPlaceholderText(
+      inline def setFindByPlaceholderText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
       ): Self = StObject.set(x, "findByPlaceholderText", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindByRole(
+      inline def setFindByRole(
         value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
       ): Self = StObject.set(x, "findByRole", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindByTestId(
+      inline def setFindByTestId(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
       ): Self = StObject.set(x, "findByTestId", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindByText(
+      inline def setFindByText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
       ): Self = StObject.set(x, "findByText", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFindByTitle(
+      inline def setFindByTitle(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions], /* waitForElementOptions */ js.UndefOr[waitForOptions]) => js.Promise[HTMLElement]
       ): Self = StObject.set(x, "findByTitle", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetAllByAltText(
+      inline def setGetAllByAltText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "getAllByAltText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetAllByDisplayValue(
+      inline def setGetAllByDisplayValue(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "getAllByDisplayValue", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetAllByLabelText(
+      inline def setGetAllByLabelText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "getAllByLabelText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetAllByPlaceholderText(
+      inline def setGetAllByPlaceholderText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "getAllByPlaceholderText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetAllByRole(
+      inline def setGetAllByRole(
         value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "getAllByRole", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetAllByTestId(
+      inline def setGetAllByTestId(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "getAllByTestId", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetAllByText(
+      inline def setGetAllByText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "getAllByText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetAllByTitle(
+      inline def setGetAllByTitle(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "getAllByTitle", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetByAltText(
+      inline def setGetByAltText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
       ): Self = StObject.set(x, "getByAltText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetByDisplayValue(
+      inline def setGetByDisplayValue(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
       ): Self = StObject.set(x, "getByDisplayValue", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetByLabelText(
+      inline def setGetByLabelText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement
       ): Self = StObject.set(x, "getByLabelText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetByPlaceholderText(
+      inline def setGetByPlaceholderText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
       ): Self = StObject.set(x, "getByPlaceholderText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetByRole(
+      inline def setGetByRole(
         value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement
       ): Self = StObject.set(x, "getByRole", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetByTestId(
+      inline def setGetByTestId(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
       ): Self = StObject.set(x, "getByTestId", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetByText(
+      inline def setGetByText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement
       ): Self = StObject.set(x, "getByText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetByTitle(
+      inline def setGetByTitle(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement
       ): Self = StObject.set(x, "getByTitle", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryAllByAltText(
+      inline def setQueryAllByAltText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "queryAllByAltText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryAllByDisplayValue(
+      inline def setQueryAllByDisplayValue(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "queryAllByDisplayValue", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryAllByLabelText(
+      inline def setQueryAllByLabelText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "queryAllByLabelText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryAllByPlaceholderText(
+      inline def setQueryAllByPlaceholderText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "queryAllByPlaceholderText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryAllByRole(
+      inline def setQueryAllByRole(
         value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "queryAllByRole", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryAllByTestId(
+      inline def setQueryAllByTestId(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "queryAllByTestId", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryAllByText(
+      inline def setQueryAllByText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "queryAllByText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryAllByTitle(
+      inline def setQueryAllByTitle(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => js.Array[HTMLElement]
       ): Self = StObject.set(x, "queryAllByTitle", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryByAltText(
+      inline def setQueryByAltText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
       ): Self = StObject.set(x, "queryByAltText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryByDisplayValue(
+      inline def setQueryByDisplayValue(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
       ): Self = StObject.set(x, "queryByDisplayValue", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryByLabelText(
+      inline def setQueryByLabelText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null
       ): Self = StObject.set(x, "queryByLabelText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryByPlaceholderText(
+      inline def setQueryByPlaceholderText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
       ): Self = StObject.set(x, "queryByPlaceholderText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryByRole(
+      inline def setQueryByRole(
         value: (/* container */ HTMLElement, /* role */ ByRoleMatcher, /* options */ js.UndefOr[ByRoleOptions]) => HTMLElement | Null
       ): Self = StObject.set(x, "queryByRole", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryByTestId(
+      inline def setQueryByTestId(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
       ): Self = StObject.set(x, "queryByTestId", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryByText(
+      inline def setQueryByText(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[SelectorMatcherOptions]) => HTMLElement | Null
       ): Self = StObject.set(x, "queryByText", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setQueryByTitle(
+      inline def setQueryByTitle(
         value: (/* container */ HTMLElement, /* id */ Matcher, /* options */ js.UndefOr[MatcherOptions]) => HTMLElement | Null
       ): Self = StObject.set(x, "queryByTitle", js.Any.fromFunction3(value))
     }

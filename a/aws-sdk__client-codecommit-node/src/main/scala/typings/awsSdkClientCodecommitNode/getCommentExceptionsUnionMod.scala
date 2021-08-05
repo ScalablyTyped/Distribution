@@ -15,26 +15,22 @@ object getCommentExceptionsUnionMod {
   trait GetCommentExceptionsUnion extends StObject
   object GetCommentExceptionsUnion {
     
-    @scala.inline
-    def CommentDeletedException(): typings.awsSdkClientCodecommitNode.typesCommentDeletedExceptionMod.CommentDeletedException = {
+    inline def CommentDeletedException(): typings.awsSdkClientCodecommitNode.typesCommentDeletedExceptionMod.CommentDeletedException = {
       val __obj = js.Dynamic.literal(name = "CommentDeletedException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentDeletedExceptionMod.CommentDeletedException]
     }
     
-    @scala.inline
-    def CommentDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException = {
+    inline def CommentDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException = {
       val __obj = js.Dynamic.literal(name = "CommentDoesNotExistException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentDoesNotExistExceptionMod.CommentDoesNotExistException]
     }
     
-    @scala.inline
-    def CommentIdRequiredException(): typings.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException = {
+    inline def CommentIdRequiredException(): typings.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException = {
       val __obj = js.Dynamic.literal(name = "CommentIdRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommentIdRequiredExceptionMod.CommentIdRequiredException]
     }
     
-    @scala.inline
-    def InvalidCommentIdException(): typings.awsSdkClientCodecommitNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException = {
+    inline def InvalidCommentIdException(): typings.awsSdkClientCodecommitNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException = {
       val __obj = js.Dynamic.literal(name = "InvalidCommentIdException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidCommentIdExceptionMod.InvalidCommentIdException]
     }

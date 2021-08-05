@@ -19,8 +19,7 @@ trait typeCreateRendererParamsLegendOptions
 }
 object typeCreateRendererParamsLegendOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object typeCreateRendererParamsLegendOptions {
     __obj.asInstanceOf[typeCreateRendererParamsLegendOptions]
   }
   
-  @scala.inline
-  implicit class typeCreateRendererParamsLegendOptionsMutableBuilder[Self <: typeCreateRendererParamsLegendOptions] (val x: Self) extends AnyVal {
+  extension [Self <: typeCreateRendererParamsLegendOptions](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

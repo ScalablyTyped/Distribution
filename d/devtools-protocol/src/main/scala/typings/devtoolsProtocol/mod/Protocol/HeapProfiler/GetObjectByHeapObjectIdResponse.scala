@@ -14,16 +14,13 @@ trait GetObjectByHeapObjectIdResponse extends StObject {
 }
 object GetObjectByHeapObjectIdResponse {
   
-  @scala.inline
-  def apply(result: RemoteObject): GetObjectByHeapObjectIdResponse = {
+  inline def apply(result: RemoteObject): GetObjectByHeapObjectIdResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectByHeapObjectIdResponse]
   }
   
-  @scala.inline
-  implicit class GetObjectByHeapObjectIdResponseMutableBuilder[Self <: GetObjectByHeapObjectIdResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectByHeapObjectIdResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

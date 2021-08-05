@@ -9,8 +9,7 @@ trait SearchPaneSuggestionsRequestedEventArgs
      with ISearchPaneSuggestionsRequestedEventArgs
 object SearchPaneSuggestionsRequestedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     language: String,
     linguisticDetails: SearchPaneQueryLinguisticDetails,
     queryText: String,

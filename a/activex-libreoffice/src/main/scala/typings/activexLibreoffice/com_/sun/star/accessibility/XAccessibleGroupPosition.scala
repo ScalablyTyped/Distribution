@@ -17,8 +17,7 @@ trait XAccessibleGroupPosition
 }
 object XAccessibleGroupPosition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getGroupPosition: js.Any => SafeArray[Double],
     getObjectLink: js.Any => String,
@@ -29,13 +28,10 @@ object XAccessibleGroupPosition {
     __obj.asInstanceOf[XAccessibleGroupPosition]
   }
   
-  @scala.inline
-  implicit class XAccessibleGroupPositionMutableBuilder[Self <: XAccessibleGroupPosition] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleGroupPosition](x: Self) {
     
-    @scala.inline
-    def setGetGroupPosition(value: js.Any => SafeArray[Double]): Self = StObject.set(x, "getGroupPosition", js.Any.fromFunction1(value))
+    inline def setGetGroupPosition(value: js.Any => SafeArray[Double]): Self = StObject.set(x, "getGroupPosition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetObjectLink(value: js.Any => String): Self = StObject.set(x, "getObjectLink", js.Any.fromFunction1(value))
+    inline def setGetObjectLink(value: js.Any => String): Self = StObject.set(x, "getObjectLink", js.Any.fromFunction1(value))
   }
 }

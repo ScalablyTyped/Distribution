@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object CommitTransOptionsEnum {
   
-  @scala.inline
-  def dbForceOSFlush: `1` = 1.asInstanceOf[`1`]
+  inline def dbForceOSFlush: `1` = 1.asInstanceOf[`1`]
 }

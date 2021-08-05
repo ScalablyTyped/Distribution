@@ -237,21 +237,16 @@ object launchTemplateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LaunchTemplateState): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LaunchTemplateState, opts: CustomResourceOptions): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
+    inline def get(name: String, id: Input[ID]): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
+    inline def get(name: String, id: Input[ID], state: LaunchTemplateState): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
+    inline def get(name: String, id: Input[ID], state: LaunchTemplateState, opts: CustomResourceOptions): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
     
     /**
       * Returns true if the given object is an instance of LaunchTemplate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/launchTemplate.LaunchTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/launchTemplate.LaunchTemplate */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/launchTemplate.LaunchTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/launchTemplate.LaunchTemplate */ Boolean]
   }
   
   trait LaunchTemplateArgs extends StObject {
@@ -443,235 +438,162 @@ object launchTemplateMod {
   }
   object LaunchTemplateArgs {
     
-    @scala.inline
-    def apply(): LaunchTemplateArgs = {
+    inline def apply(): LaunchTemplateArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LaunchTemplateArgs]
     }
     
-    @scala.inline
-    implicit class LaunchTemplateArgsMutableBuilder[Self <: LaunchTemplateArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LaunchTemplateArgs](x: Self) {
       
-      @scala.inline
-      def setBlockDeviceMappings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]]]): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
+      inline def setBlockDeviceMappings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]]]): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "blockDeviceMappings", js.undefined)
+      inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "blockDeviceMappings", js.undefined)
       
-      @scala.inline
-      def setBlockDeviceMappingsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
+      inline def setBlockDeviceMappingsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setCapacityReservationSpecification(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCapacityReservationSpecification]): Self = StObject.set(x, "capacityReservationSpecification", value.asInstanceOf[js.Any])
+      inline def setCapacityReservationSpecification(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCapacityReservationSpecification]): Self = StObject.set(x, "capacityReservationSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityReservationSpecificationUndefined: Self = StObject.set(x, "capacityReservationSpecification", js.undefined)
+      inline def setCapacityReservationSpecificationUndefined: Self = StObject.set(x, "capacityReservationSpecification", js.undefined)
       
-      @scala.inline
-      def setCpuOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions]): Self = StObject.set(x, "cpuOptions", value.asInstanceOf[js.Any])
+      inline def setCpuOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions]): Self = StObject.set(x, "cpuOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuOptionsUndefined: Self = StObject.set(x, "cpuOptions", js.undefined)
+      inline def setCpuOptionsUndefined: Self = StObject.set(x, "cpuOptions", js.undefined)
       
-      @scala.inline
-      def setCreditSpecification(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification]): Self = StObject.set(x, "creditSpecification", value.asInstanceOf[js.Any])
+      inline def setCreditSpecification(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification]): Self = StObject.set(x, "creditSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditSpecificationUndefined: Self = StObject.set(x, "creditSpecification", js.undefined)
+      inline def setCreditSpecificationUndefined: Self = StObject.set(x, "creditSpecification", js.undefined)
       
-      @scala.inline
-      def setDefaultVersion(value: Input[Double]): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
+      inline def setDefaultVersion(value: Input[Double]): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
+      inline def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDisableApiTermination(value: Input[Boolean]): Self = StObject.set(x, "disableApiTermination", value.asInstanceOf[js.Any])
+      inline def setDisableApiTermination(value: Input[Boolean]): Self = StObject.set(x, "disableApiTermination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableApiTerminationUndefined: Self = StObject.set(x, "disableApiTermination", js.undefined)
+      inline def setDisableApiTerminationUndefined: Self = StObject.set(x, "disableApiTermination", js.undefined)
       
-      @scala.inline
-      def setEbsOptimized(value: Input[String]): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
+      inline def setEbsOptimized(value: Input[String]): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptimizedUndefined: Self = StObject.set(x, "ebsOptimized", js.undefined)
+      inline def setEbsOptimizedUndefined: Self = StObject.set(x, "ebsOptimized", js.undefined)
       
-      @scala.inline
-      def setElasticGpuSpecifications(
+      inline def setElasticGpuSpecifications(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification]]
             ]
       ): Self = StObject.set(x, "elasticGpuSpecifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticGpuSpecificationsUndefined: Self = StObject.set(x, "elasticGpuSpecifications", js.undefined)
+      inline def setElasticGpuSpecificationsUndefined: Self = StObject.set(x, "elasticGpuSpecifications", js.undefined)
       
-      @scala.inline
-      def setElasticGpuSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification]*): Self = StObject.set(x, "elasticGpuSpecifications", js.Array(value :_*))
+      inline def setElasticGpuSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification]*): Self = StObject.set(x, "elasticGpuSpecifications", js.Array(value :_*))
       
-      @scala.inline
-      def setElasticInferenceAccelerator(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator]): Self = StObject.set(x, "elasticInferenceAccelerator", value.asInstanceOf[js.Any])
+      inline def setElasticInferenceAccelerator(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator]): Self = StObject.set(x, "elasticInferenceAccelerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticInferenceAcceleratorUndefined: Self = StObject.set(x, "elasticInferenceAccelerator", js.undefined)
+      inline def setElasticInferenceAcceleratorUndefined: Self = StObject.set(x, "elasticInferenceAccelerator", js.undefined)
       
-      @scala.inline
-      def setHibernationOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateHibernationOptions]): Self = StObject.set(x, "hibernationOptions", value.asInstanceOf[js.Any])
+      inline def setHibernationOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateHibernationOptions]): Self = StObject.set(x, "hibernationOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHibernationOptionsUndefined: Self = StObject.set(x, "hibernationOptions", js.undefined)
+      inline def setHibernationOptionsUndefined: Self = StObject.set(x, "hibernationOptions", js.undefined)
       
-      @scala.inline
-      def setIamInstanceProfile(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateIamInstanceProfile]): Self = StObject.set(x, "iamInstanceProfile", value.asInstanceOf[js.Any])
+      inline def setIamInstanceProfile(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateIamInstanceProfile]): Self = StObject.set(x, "iamInstanceProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamInstanceProfileUndefined: Self = StObject.set(x, "iamInstanceProfile", js.undefined)
+      inline def setIamInstanceProfileUndefined: Self = StObject.set(x, "iamInstanceProfile", js.undefined)
       
-      @scala.inline
-      def setImageId(value: Input[String]): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+      inline def setImageId(value: Input[String]): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
+      inline def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
       
-      @scala.inline
-      def setInstanceInitiatedShutdownBehavior(value: Input[String]): Self = StObject.set(x, "instanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
+      inline def setInstanceInitiatedShutdownBehavior(value: Input[String]): Self = StObject.set(x, "instanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceInitiatedShutdownBehaviorUndefined: Self = StObject.set(x, "instanceInitiatedShutdownBehavior", js.undefined)
+      inline def setInstanceInitiatedShutdownBehaviorUndefined: Self = StObject.set(x, "instanceInitiatedShutdownBehavior", js.undefined)
       
-      @scala.inline
-      def setInstanceMarketOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateInstanceMarketOptions]): Self = StObject.set(x, "instanceMarketOptions", value.asInstanceOf[js.Any])
+      inline def setInstanceMarketOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateInstanceMarketOptions]): Self = StObject.set(x, "instanceMarketOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceMarketOptionsUndefined: Self = StObject.set(x, "instanceMarketOptions", js.undefined)
+      inline def setInstanceMarketOptionsUndefined: Self = StObject.set(x, "instanceMarketOptions", js.undefined)
       
-      @scala.inline
-      def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+      inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
       
-      @scala.inline
-      def setKernelId(value: Input[String]): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
+      inline def setKernelId(value: Input[String]): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelIdUndefined: Self = StObject.set(x, "kernelId", js.undefined)
+      inline def setKernelIdUndefined: Self = StObject.set(x, "kernelId", js.undefined)
       
-      @scala.inline
-      def setKeyName(value: Input[String]): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+      inline def setKeyName(value: Input[String]): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
+      inline def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
       
-      @scala.inline
-      def setLicenseSpecifications(
+      inline def setLicenseSpecifications(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateLicenseSpecification]]
             ]
       ): Self = StObject.set(x, "licenseSpecifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseSpecificationsUndefined: Self = StObject.set(x, "licenseSpecifications", js.undefined)
+      inline def setLicenseSpecificationsUndefined: Self = StObject.set(x, "licenseSpecifications", js.undefined)
       
-      @scala.inline
-      def setLicenseSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateLicenseSpecification]*): Self = StObject.set(x, "licenseSpecifications", js.Array(value :_*))
+      inline def setLicenseSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateLicenseSpecification]*): Self = StObject.set(x, "licenseSpecifications", js.Array(value :_*))
       
-      @scala.inline
-      def setMetadataOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMetadataOptions]): Self = StObject.set(x, "metadataOptions", value.asInstanceOf[js.Any])
+      inline def setMetadataOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMetadataOptions]): Self = StObject.set(x, "metadataOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataOptionsUndefined: Self = StObject.set(x, "metadataOptions", js.undefined)
+      inline def setMetadataOptionsUndefined: Self = StObject.set(x, "metadataOptions", js.undefined)
       
-      @scala.inline
-      def setMonitoring(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMonitoring]): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
+      inline def setMonitoring(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMonitoring]): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
+      inline def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfaces(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]]]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaces(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]]]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
+      inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfacesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+      inline def setNetworkInterfacesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
       
-      @scala.inline
-      def setPlacement(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplatePlacement]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplatePlacement]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setRamDiskId(value: Input[String]): Self = StObject.set(x, "ramDiskId", value.asInstanceOf[js.Any])
+      inline def setRamDiskId(value: Input[String]): Self = StObject.set(x, "ramDiskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRamDiskIdUndefined: Self = StObject.set(x, "ramDiskId", js.undefined)
+      inline def setRamDiskIdUndefined: Self = StObject.set(x, "ramDiskId", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupNamesUndefined: Self = StObject.set(x, "securityGroupNames", js.undefined)
+      inline def setSecurityGroupNamesUndefined: Self = StObject.set(x, "securityGroupNames", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
+      inline def setSecurityGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
       
-      @scala.inline
-      def setTagSpecifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]]]): Self = StObject.set(x, "tagSpecifications", value.asInstanceOf[js.Any])
+      inline def setTagSpecifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]]]): Self = StObject.set(x, "tagSpecifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagSpecificationsUndefined: Self = StObject.set(x, "tagSpecifications", js.undefined)
+      inline def setTagSpecificationsUndefined: Self = StObject.set(x, "tagSpecifications", js.undefined)
       
-      @scala.inline
-      def setTagSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]*): Self = StObject.set(x, "tagSpecifications", js.Array(value :_*))
+      inline def setTagSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]*): Self = StObject.set(x, "tagSpecifications", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUpdateDefaultVersion(value: Input[Boolean]): Self = StObject.set(x, "updateDefaultVersion", value.asInstanceOf[js.Any])
+      inline def setUpdateDefaultVersion(value: Input[Boolean]): Self = StObject.set(x, "updateDefaultVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateDefaultVersionUndefined: Self = StObject.set(x, "updateDefaultVersion", js.undefined)
+      inline def setUpdateDefaultVersionUndefined: Self = StObject.set(x, "updateDefaultVersion", js.undefined)
       
-      @scala.inline
-      def setUserData(value: Input[String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: Input[String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+      inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
       
-      @scala.inline
-      def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "vpcSecurityGroupIds", value.asInstanceOf[js.Any])
+      inline def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "vpcSecurityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "vpcSecurityGroupIds", js.undefined)
+      inline def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "vpcSecurityGroupIds", js.undefined)
       
-      @scala.inline
-      def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "vpcSecurityGroupIds", js.Array(value :_*))
+      inline def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "vpcSecurityGroupIds", js.Array(value :_*))
     }
   }
   
@@ -874,247 +796,170 @@ object launchTemplateMod {
   }
   object LaunchTemplateState {
     
-    @scala.inline
-    def apply(): LaunchTemplateState = {
+    inline def apply(): LaunchTemplateState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LaunchTemplateState]
     }
     
-    @scala.inline
-    implicit class LaunchTemplateStateMutableBuilder[Self <: LaunchTemplateState] (val x: Self) extends AnyVal {
+    extension [Self <: LaunchTemplateState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setBlockDeviceMappings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]]]): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
+      inline def setBlockDeviceMappings(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]]]): Self = StObject.set(x, "blockDeviceMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "blockDeviceMappings", js.undefined)
+      inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "blockDeviceMappings", js.undefined)
       
-      @scala.inline
-      def setBlockDeviceMappingsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
+      inline def setBlockDeviceMappingsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]*): Self = StObject.set(x, "blockDeviceMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setCapacityReservationSpecification(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCapacityReservationSpecification]): Self = StObject.set(x, "capacityReservationSpecification", value.asInstanceOf[js.Any])
+      inline def setCapacityReservationSpecification(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCapacityReservationSpecification]): Self = StObject.set(x, "capacityReservationSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapacityReservationSpecificationUndefined: Self = StObject.set(x, "capacityReservationSpecification", js.undefined)
+      inline def setCapacityReservationSpecificationUndefined: Self = StObject.set(x, "capacityReservationSpecification", js.undefined)
       
-      @scala.inline
-      def setCpuOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions]): Self = StObject.set(x, "cpuOptions", value.asInstanceOf[js.Any])
+      inline def setCpuOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions]): Self = StObject.set(x, "cpuOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuOptionsUndefined: Self = StObject.set(x, "cpuOptions", js.undefined)
+      inline def setCpuOptionsUndefined: Self = StObject.set(x, "cpuOptions", js.undefined)
       
-      @scala.inline
-      def setCreditSpecification(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification]): Self = StObject.set(x, "creditSpecification", value.asInstanceOf[js.Any])
+      inline def setCreditSpecification(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification]): Self = StObject.set(x, "creditSpecification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreditSpecificationUndefined: Self = StObject.set(x, "creditSpecification", js.undefined)
+      inline def setCreditSpecificationUndefined: Self = StObject.set(x, "creditSpecification", js.undefined)
       
-      @scala.inline
-      def setDefaultVersion(value: Input[Double]): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
+      inline def setDefaultVersion(value: Input[Double]): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
+      inline def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDisableApiTermination(value: Input[Boolean]): Self = StObject.set(x, "disableApiTermination", value.asInstanceOf[js.Any])
+      inline def setDisableApiTermination(value: Input[Boolean]): Self = StObject.set(x, "disableApiTermination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableApiTerminationUndefined: Self = StObject.set(x, "disableApiTermination", js.undefined)
+      inline def setDisableApiTerminationUndefined: Self = StObject.set(x, "disableApiTermination", js.undefined)
       
-      @scala.inline
-      def setEbsOptimized(value: Input[String]): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
+      inline def setEbsOptimized(value: Input[String]): Self = StObject.set(x, "ebsOptimized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEbsOptimizedUndefined: Self = StObject.set(x, "ebsOptimized", js.undefined)
+      inline def setEbsOptimizedUndefined: Self = StObject.set(x, "ebsOptimized", js.undefined)
       
-      @scala.inline
-      def setElasticGpuSpecifications(
+      inline def setElasticGpuSpecifications(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification]]
             ]
       ): Self = StObject.set(x, "elasticGpuSpecifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticGpuSpecificationsUndefined: Self = StObject.set(x, "elasticGpuSpecifications", js.undefined)
+      inline def setElasticGpuSpecificationsUndefined: Self = StObject.set(x, "elasticGpuSpecifications", js.undefined)
       
-      @scala.inline
-      def setElasticGpuSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification]*): Self = StObject.set(x, "elasticGpuSpecifications", js.Array(value :_*))
+      inline def setElasticGpuSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification]*): Self = StObject.set(x, "elasticGpuSpecifications", js.Array(value :_*))
       
-      @scala.inline
-      def setElasticInferenceAccelerator(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator]): Self = StObject.set(x, "elasticInferenceAccelerator", value.asInstanceOf[js.Any])
+      inline def setElasticInferenceAccelerator(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator]): Self = StObject.set(x, "elasticInferenceAccelerator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElasticInferenceAcceleratorUndefined: Self = StObject.set(x, "elasticInferenceAccelerator", js.undefined)
+      inline def setElasticInferenceAcceleratorUndefined: Self = StObject.set(x, "elasticInferenceAccelerator", js.undefined)
       
-      @scala.inline
-      def setHibernationOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateHibernationOptions]): Self = StObject.set(x, "hibernationOptions", value.asInstanceOf[js.Any])
+      inline def setHibernationOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateHibernationOptions]): Self = StObject.set(x, "hibernationOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHibernationOptionsUndefined: Self = StObject.set(x, "hibernationOptions", js.undefined)
+      inline def setHibernationOptionsUndefined: Self = StObject.set(x, "hibernationOptions", js.undefined)
       
-      @scala.inline
-      def setIamInstanceProfile(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateIamInstanceProfile]): Self = StObject.set(x, "iamInstanceProfile", value.asInstanceOf[js.Any])
+      inline def setIamInstanceProfile(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateIamInstanceProfile]): Self = StObject.set(x, "iamInstanceProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamInstanceProfileUndefined: Self = StObject.set(x, "iamInstanceProfile", js.undefined)
+      inline def setIamInstanceProfileUndefined: Self = StObject.set(x, "iamInstanceProfile", js.undefined)
       
-      @scala.inline
-      def setImageId(value: Input[String]): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+      inline def setImageId(value: Input[String]): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
+      inline def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
       
-      @scala.inline
-      def setInstanceInitiatedShutdownBehavior(value: Input[String]): Self = StObject.set(x, "instanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
+      inline def setInstanceInitiatedShutdownBehavior(value: Input[String]): Self = StObject.set(x, "instanceInitiatedShutdownBehavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceInitiatedShutdownBehaviorUndefined: Self = StObject.set(x, "instanceInitiatedShutdownBehavior", js.undefined)
+      inline def setInstanceInitiatedShutdownBehaviorUndefined: Self = StObject.set(x, "instanceInitiatedShutdownBehavior", js.undefined)
       
-      @scala.inline
-      def setInstanceMarketOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateInstanceMarketOptions]): Self = StObject.set(x, "instanceMarketOptions", value.asInstanceOf[js.Any])
+      inline def setInstanceMarketOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateInstanceMarketOptions]): Self = StObject.set(x, "instanceMarketOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceMarketOptionsUndefined: Self = StObject.set(x, "instanceMarketOptions", js.undefined)
+      inline def setInstanceMarketOptionsUndefined: Self = StObject.set(x, "instanceMarketOptions", js.undefined)
       
-      @scala.inline
-      def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+      inline def setInstanceType(value: Input[String]): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+      inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
       
-      @scala.inline
-      def setKernelId(value: Input[String]): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
+      inline def setKernelId(value: Input[String]): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelIdUndefined: Self = StObject.set(x, "kernelId", js.undefined)
+      inline def setKernelIdUndefined: Self = StObject.set(x, "kernelId", js.undefined)
       
-      @scala.inline
-      def setKeyName(value: Input[String]): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+      inline def setKeyName(value: Input[String]): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
+      inline def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
       
-      @scala.inline
-      def setLatestVersion(value: Input[Double]): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
+      inline def setLatestVersion(value: Input[Double]): Self = StObject.set(x, "latestVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatestVersionUndefined: Self = StObject.set(x, "latestVersion", js.undefined)
+      inline def setLatestVersionUndefined: Self = StObject.set(x, "latestVersion", js.undefined)
       
-      @scala.inline
-      def setLicenseSpecifications(
+      inline def setLicenseSpecifications(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateLicenseSpecification]]
             ]
       ): Self = StObject.set(x, "licenseSpecifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseSpecificationsUndefined: Self = StObject.set(x, "licenseSpecifications", js.undefined)
+      inline def setLicenseSpecificationsUndefined: Self = StObject.set(x, "licenseSpecifications", js.undefined)
       
-      @scala.inline
-      def setLicenseSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateLicenseSpecification]*): Self = StObject.set(x, "licenseSpecifications", js.Array(value :_*))
+      inline def setLicenseSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateLicenseSpecification]*): Self = StObject.set(x, "licenseSpecifications", js.Array(value :_*))
       
-      @scala.inline
-      def setMetadataOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMetadataOptions]): Self = StObject.set(x, "metadataOptions", value.asInstanceOf[js.Any])
+      inline def setMetadataOptions(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMetadataOptions]): Self = StObject.set(x, "metadataOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataOptionsUndefined: Self = StObject.set(x, "metadataOptions", js.undefined)
+      inline def setMetadataOptionsUndefined: Self = StObject.set(x, "metadataOptions", js.undefined)
       
-      @scala.inline
-      def setMonitoring(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMonitoring]): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
+      inline def setMonitoring(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMonitoring]): Self = StObject.set(x, "monitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
+      inline def setMonitoringUndefined: Self = StObject.set(x, "monitoring", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfaces(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]]]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaces(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]]]): Self = StObject.set(x, "networkInterfaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
+      inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "networkInterfaces", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfacesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
+      inline def setNetworkInterfacesVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]*): Self = StObject.set(x, "networkInterfaces", js.Array(value :_*))
       
-      @scala.inline
-      def setPlacement(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplatePlacement]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplatePlacement]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setRamDiskId(value: Input[String]): Self = StObject.set(x, "ramDiskId", value.asInstanceOf[js.Any])
+      inline def setRamDiskId(value: Input[String]): Self = StObject.set(x, "ramDiskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRamDiskIdUndefined: Self = StObject.set(x, "ramDiskId", js.undefined)
+      inline def setRamDiskIdUndefined: Self = StObject.set(x, "ramDiskId", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupNamesUndefined: Self = StObject.set(x, "securityGroupNames", js.undefined)
+      inline def setSecurityGroupNamesUndefined: Self = StObject.set(x, "securityGroupNames", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
+      inline def setSecurityGroupNamesVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupNames", js.Array(value :_*))
       
-      @scala.inline
-      def setTagSpecifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]]]): Self = StObject.set(x, "tagSpecifications", value.asInstanceOf[js.Any])
+      inline def setTagSpecifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]]]): Self = StObject.set(x, "tagSpecifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagSpecificationsUndefined: Self = StObject.set(x, "tagSpecifications", js.undefined)
+      inline def setTagSpecificationsUndefined: Self = StObject.set(x, "tagSpecifications", js.undefined)
       
-      @scala.inline
-      def setTagSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]*): Self = StObject.set(x, "tagSpecifications", js.Array(value :_*))
+      inline def setTagSpecificationsVarargs(value: Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]*): Self = StObject.set(x, "tagSpecifications", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setUpdateDefaultVersion(value: Input[Boolean]): Self = StObject.set(x, "updateDefaultVersion", value.asInstanceOf[js.Any])
+      inline def setUpdateDefaultVersion(value: Input[Boolean]): Self = StObject.set(x, "updateDefaultVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateDefaultVersionUndefined: Self = StObject.set(x, "updateDefaultVersion", js.undefined)
+      inline def setUpdateDefaultVersionUndefined: Self = StObject.set(x, "updateDefaultVersion", js.undefined)
       
-      @scala.inline
-      def setUserData(value: Input[String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+      inline def setUserData(value: Input[String]): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+      inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
       
-      @scala.inline
-      def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "vpcSecurityGroupIds", value.asInstanceOf[js.Any])
+      inline def setVpcSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "vpcSecurityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "vpcSecurityGroupIds", js.undefined)
+      inline def setVpcSecurityGroupIdsUndefined: Self = StObject.set(x, "vpcSecurityGroupIds", js.undefined)
       
-      @scala.inline
-      def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "vpcSecurityGroupIds", js.Array(value :_*))
+      inline def setVpcSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "vpcSecurityGroupIds", js.Array(value :_*))
     }
   }
 }

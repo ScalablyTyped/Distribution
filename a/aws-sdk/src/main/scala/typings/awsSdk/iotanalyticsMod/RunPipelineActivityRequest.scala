@@ -18,22 +18,17 @@ trait RunPipelineActivityRequest extends StObject {
 }
 object RunPipelineActivityRequest {
   
-  @scala.inline
-  def apply(payloads: MessagePayloads, pipelineActivity: PipelineActivity): RunPipelineActivityRequest = {
+  inline def apply(payloads: MessagePayloads, pipelineActivity: PipelineActivity): RunPipelineActivityRequest = {
     val __obj = js.Dynamic.literal(payloads = payloads.asInstanceOf[js.Any], pipelineActivity = pipelineActivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunPipelineActivityRequest]
   }
   
-  @scala.inline
-  implicit class RunPipelineActivityRequestMutableBuilder[Self <: RunPipelineActivityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RunPipelineActivityRequest](x: Self) {
     
-    @scala.inline
-    def setPayloads(value: MessagePayloads): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
+    inline def setPayloads(value: MessagePayloads): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value :_*))
+    inline def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value :_*))
     
-    @scala.inline
-    def setPipelineActivity(value: PipelineActivity): Self = StObject.set(x, "pipelineActivity", value.asInstanceOf[js.Any])
+    inline def setPipelineActivity(value: PipelineActivity): Self = StObject.set(x, "pipelineActivity", value.asInstanceOf[js.Any])
   }
 }

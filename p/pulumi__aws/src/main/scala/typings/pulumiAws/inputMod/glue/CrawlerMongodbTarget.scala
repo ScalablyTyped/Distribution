@@ -24,25 +24,19 @@ trait CrawlerMongodbTarget extends StObject {
 }
 object CrawlerMongodbTarget {
   
-  @scala.inline
-  def apply(connectionName: Input[String], path: Input[String]): CrawlerMongodbTarget = {
+  inline def apply(connectionName: Input[String], path: Input[String]): CrawlerMongodbTarget = {
     val __obj = js.Dynamic.literal(connectionName = connectionName.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[CrawlerMongodbTarget]
   }
   
-  @scala.inline
-  implicit class CrawlerMongodbTargetMutableBuilder[Self <: CrawlerMongodbTarget] (val x: Self) extends AnyVal {
+  extension [Self <: CrawlerMongodbTarget](x: Self) {
     
-    @scala.inline
-    def setConnectionName(value: Input[String]): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
+    inline def setConnectionName(value: Input[String]): Self = StObject.set(x, "connectionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanAll(value: Input[Boolean]): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
+    inline def setScanAll(value: Input[Boolean]): Self = StObject.set(x, "scanAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
+    inline def setScanAllUndefined: Self = StObject.set(x, "scanAll", js.undefined)
   }
 }

@@ -16,32 +16,24 @@ object anon {
   }
   object CellSize {
     
-    @scala.inline
-    def apply(): CellSize = {
+    inline def apply(): CellSize = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellSize]
     }
     
-    @scala.inline
-    implicit class CellSizeMutableBuilder[Self <: CellSize] (val x: Self) extends AnyVal {
+    extension [Self <: CellSize](x: Self) {
       
-      @scala.inline
-      def setCellSize(value: Double): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
+      inline def setCellSize(value: Double): Self = StObject.set(x, "cellSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellSizeUndefined: Self = StObject.set(x, "cellSize", js.undefined)
+      inline def setCellSizeUndefined: Self = StObject.set(x, "cellSize", js.undefined)
       
-      @scala.inline
-      def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
+      inline def setScalable(value: Boolean): Self = StObject.set(x, "scalable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalableUndefined: Self = StObject.set(x, "scalable", js.undefined)
+      inline def setScalableUndefined: Self = StObject.set(x, "scalable", js.undefined)
     }
   }
 }

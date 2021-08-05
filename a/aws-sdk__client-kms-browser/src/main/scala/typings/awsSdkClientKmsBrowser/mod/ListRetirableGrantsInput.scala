@@ -9,8 +9,7 @@ trait ListRetirableGrantsInput
      with typings.awsSdkClientKmsBrowser.typesListRetirableGrantsInputMod.ListRetirableGrantsInput
 object ListRetirableGrantsInput {
   
-  @scala.inline
-  def apply(RetiringPrincipal: String): ListRetirableGrantsInput = {
+  inline def apply(RetiringPrincipal: String): ListRetirableGrantsInput = {
     val __obj = js.Dynamic.literal(RetiringPrincipal = RetiringPrincipal.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRetirableGrantsInput]
   }

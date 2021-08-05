@@ -38,20 +38,16 @@ object buttonMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(onChange: (/* url */ String, /* post */ PostType | Null) => Unit, url: String): Props = {
+      inline def apply(onChange: (/* url */ String, /* post */ PostType | Null) => Unit, url: String): Props = {
         val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setOnChange(value: (/* url */ String, /* post */ PostType | Null) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+        inline def setOnChange(value: (/* url */ String, /* post */ PostType | Null) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
   }

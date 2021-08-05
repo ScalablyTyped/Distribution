@@ -36,86 +36,60 @@ trait IsocontourTransform
 }
 object IsocontourTransform {
   
-  @scala.inline
-  def apply(): IsocontourTransform = {
+  inline def apply(): IsocontourTransform = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("isocontour")
     __obj.asInstanceOf[IsocontourTransform]
   }
   
-  @scala.inline
-  implicit class IsocontourTransformMutableBuilder[Self <: IsocontourTransform] (val x: Self) extends AnyVal {
+  extension [Self <: IsocontourTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsNull: Self = StObject.set(x, "as", null)
+    inline def setAsNull: Self = StObject.set(x, "as", null)
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
     
-    @scala.inline
-    def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String | TransformField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setLevels(value: Double | SignalRef): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: Double | SignalRef): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    @scala.inline
-    def setNice(value: Boolean | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+    inline def setNice(value: Boolean | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
+    inline def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
     
-    @scala.inline
-    def setResolve(value: shared | independent | SignalRef): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+    inline def setResolve(value: shared | independent | SignalRef): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+    inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double | TransformField): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double | TransformField): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setSmooth(value: Boolean | SignalRef): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+    inline def setSmooth(value: Boolean | SignalRef): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+    inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
     
-    @scala.inline
-    def setThresholds(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+    inline def setThresholds(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
+    inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
     
-    @scala.inline
-    def setThresholdsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
+    inline def setThresholdsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "thresholds", js.Array(value :_*))
     
-    @scala.inline
-    def setTranslate(value: js.Array[Double] | TransformField): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
+    inline def setTranslate(value: js.Array[Double] | TransformField): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
     
-    @scala.inline
-    def setTranslateVarargs(value: Double*): Self = StObject.set(x, "translate", js.Array(value :_*))
+    inline def setTranslateVarargs(value: Double*): Self = StObject.set(x, "translate", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: isocontour): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: isocontour): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZero(value: Boolean | SignalRef): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+    inline def setZero(value: Boolean | SignalRef): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+    inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
   }
 }

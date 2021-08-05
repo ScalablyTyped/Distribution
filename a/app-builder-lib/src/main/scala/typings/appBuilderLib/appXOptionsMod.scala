@@ -84,119 +84,82 @@ object appXOptionsMod {
   }
   object AppXOptions {
     
-    @scala.inline
-    def apply(): AppXOptions = {
+    inline def apply(): AppXOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppXOptions]
     }
     
-    @scala.inline
-    implicit class AppXOptionsMutableBuilder[Self <: AppXOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AppXOptions](x: Self) {
       
-      @scala.inline
-      def setAddAutoLaunchExtension(value: Boolean): Self = StObject.set(x, "addAutoLaunchExtension", value.asInstanceOf[js.Any])
+      inline def setAddAutoLaunchExtension(value: Boolean): Self = StObject.set(x, "addAutoLaunchExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddAutoLaunchExtensionUndefined: Self = StObject.set(x, "addAutoLaunchExtension", js.undefined)
+      inline def setAddAutoLaunchExtensionUndefined: Self = StObject.set(x, "addAutoLaunchExtension", js.undefined)
       
-      @scala.inline
-      def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+      inline def setApplicationId(value: String): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
+      inline def setApplicationIdUndefined: Self = StObject.set(x, "applicationId", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
+      inline def setBackgroundColorNull: Self = StObject.set(x, "backgroundColor", null)
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setCustomExtensionsPath(value: String): Self = StObject.set(x, "customExtensionsPath", value.asInstanceOf[js.Any])
+      inline def setCustomExtensionsPath(value: String): Self = StObject.set(x, "customExtensionsPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomExtensionsPathUndefined: Self = StObject.set(x, "customExtensionsPath", js.undefined)
+      inline def setCustomExtensionsPathUndefined: Self = StObject.set(x, "customExtensionsPath", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+      inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setElectronUpdaterAware(value: Boolean): Self = StObject.set(x, "electronUpdaterAware", value.asInstanceOf[js.Any])
+      inline def setElectronUpdaterAware(value: Boolean): Self = StObject.set(x, "electronUpdaterAware", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElectronUpdaterAwareUndefined: Self = StObject.set(x, "electronUpdaterAware", js.undefined)
+      inline def setElectronUpdaterAwareUndefined: Self = StObject.set(x, "electronUpdaterAware", js.undefined)
       
-      @scala.inline
-      def setIdentityName(value: String): Self = StObject.set(x, "identityName", value.asInstanceOf[js.Any])
+      inline def setIdentityName(value: String): Self = StObject.set(x, "identityName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityNameNull: Self = StObject.set(x, "identityName", null)
+      inline def setIdentityNameNull: Self = StObject.set(x, "identityName", null)
       
-      @scala.inline
-      def setIdentityNameUndefined: Self = StObject.set(x, "identityName", js.undefined)
+      inline def setIdentityNameUndefined: Self = StObject.set(x, "identityName", js.undefined)
       
-      @scala.inline
-      def setLanguages(value: js.Array[String] | String): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: js.Array[String] | String): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguagesNull: Self = StObject.set(x, "languages", null)
+      inline def setLanguagesNull: Self = StObject.set(x, "languages", null)
       
-      @scala.inline
-      def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+      inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
       
-      @scala.inline
-      def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
+      inline def setLanguagesVarargs(value: String*): Self = StObject.set(x, "languages", js.Array(value :_*))
       
-      @scala.inline
-      def setMakeappxArgs(value: js.Array[String]): Self = StObject.set(x, "makeappxArgs", value.asInstanceOf[js.Any])
+      inline def setMakeappxArgs(value: js.Array[String]): Self = StObject.set(x, "makeappxArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMakeappxArgsNull: Self = StObject.set(x, "makeappxArgs", null)
+      inline def setMakeappxArgsNull: Self = StObject.set(x, "makeappxArgs", null)
       
-      @scala.inline
-      def setMakeappxArgsUndefined: Self = StObject.set(x, "makeappxArgs", js.undefined)
+      inline def setMakeappxArgsUndefined: Self = StObject.set(x, "makeappxArgs", js.undefined)
       
-      @scala.inline
-      def setMakeappxArgsVarargs(value: String*): Self = StObject.set(x, "makeappxArgs", js.Array(value :_*))
+      inline def setMakeappxArgsVarargs(value: String*): Self = StObject.set(x, "makeappxArgs", js.Array(value :_*))
       
-      @scala.inline
-      def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+      inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublisherDisplayName(value: String): Self = StObject.set(x, "publisherDisplayName", value.asInstanceOf[js.Any])
+      inline def setPublisherDisplayName(value: String): Self = StObject.set(x, "publisherDisplayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublisherDisplayNameNull: Self = StObject.set(x, "publisherDisplayName", null)
+      inline def setPublisherDisplayNameNull: Self = StObject.set(x, "publisherDisplayName", null)
       
-      @scala.inline
-      def setPublisherDisplayNameUndefined: Self = StObject.set(x, "publisherDisplayName", js.undefined)
+      inline def setPublisherDisplayNameUndefined: Self = StObject.set(x, "publisherDisplayName", js.undefined)
       
-      @scala.inline
-      def setPublisherNull: Self = StObject.set(x, "publisher", null)
+      inline def setPublisherNull: Self = StObject.set(x, "publisher", null)
       
-      @scala.inline
-      def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+      inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
       
-      @scala.inline
-      def setSetBuildNumber(value: Boolean): Self = StObject.set(x, "setBuildNumber", value.asInstanceOf[js.Any])
+      inline def setSetBuildNumber(value: Boolean): Self = StObject.set(x, "setBuildNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetBuildNumberUndefined: Self = StObject.set(x, "setBuildNumber", js.undefined)
+      inline def setSetBuildNumberUndefined: Self = StObject.set(x, "setBuildNumber", js.undefined)
       
-      @scala.inline
-      def setShowNameOnTiles(value: Boolean): Self = StObject.set(x, "showNameOnTiles", value.asInstanceOf[js.Any])
+      inline def setShowNameOnTiles(value: Boolean): Self = StObject.set(x, "showNameOnTiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowNameOnTilesUndefined: Self = StObject.set(x, "showNameOnTiles", js.undefined)
+      inline def setShowNameOnTilesUndefined: Self = StObject.set(x, "showNameOnTiles", js.undefined)
     }
   }
 }

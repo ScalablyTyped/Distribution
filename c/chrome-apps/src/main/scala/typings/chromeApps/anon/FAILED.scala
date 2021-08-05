@@ -20,25 +20,19 @@ trait FAILED extends StObject {
 }
 object FAILED {
   
-  @scala.inline
-  def apply(): FAILED = {
+  inline def apply(): FAILED = {
     val __obj = js.Dynamic.literal(FAILED = "failed", REJECTED = "rejected", SUCCEEDED = "succeeded", UNHANDLED = "unhandled")
     __obj.asInstanceOf[FAILED]
   }
   
-  @scala.inline
-  implicit class FAILEDMutableBuilder[Self <: FAILED] (val x: Self) extends AnyVal {
+  extension [Self <: FAILED](x: Self) {
     
-    @scala.inline
-    def setFAILED(value: failed_): Self = StObject.set(x, "FAILED", value.asInstanceOf[js.Any])
+    inline def setFAILED(value: failed_): Self = StObject.set(x, "FAILED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREJECTED(value: rejected_): Self = StObject.set(x, "REJECTED", value.asInstanceOf[js.Any])
+    inline def setREJECTED(value: rejected_): Self = StObject.set(x, "REJECTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUCCEEDED(value: succeeded_): Self = StObject.set(x, "SUCCEEDED", value.asInstanceOf[js.Any])
+    inline def setSUCCEEDED(value: succeeded_): Self = StObject.set(x, "SUCCEEDED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUNHANDLED(value: unhandled_): Self = StObject.set(x, "UNHANDLED", value.asInstanceOf[js.Any])
+    inline def setUNHANDLED(value: unhandled_): Self = StObject.set(x, "UNHANDLED", value.asInstanceOf[js.Any])
   }
 }

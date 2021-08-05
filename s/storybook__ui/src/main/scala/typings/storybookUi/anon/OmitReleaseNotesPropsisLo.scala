@@ -11,16 +11,13 @@ trait OmitReleaseNotesPropsisLo extends StObject {
 }
 object OmitReleaseNotesPropsisLo {
   
-  @scala.inline
-  def apply(version: String): OmitReleaseNotesPropsisLo = {
+  inline def apply(version: String): OmitReleaseNotesPropsisLo = {
     val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmitReleaseNotesPropsisLo]
   }
   
-  @scala.inline
-  implicit class OmitReleaseNotesPropsisLoMutableBuilder[Self <: OmitReleaseNotesPropsisLo] (val x: Self) extends AnyVal {
+  extension [Self <: OmitReleaseNotesPropsisLo](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

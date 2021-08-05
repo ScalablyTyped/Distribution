@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdRoutingSlipDelivery extends StObject
 object WdRoutingSlipDelivery {
   
-  @scala.inline
-  def wdAllAtOnce: `1` = 1.asInstanceOf[`1`]
+  inline def wdAllAtOnce: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdOneAfterAnother: `0` = 0.asInstanceOf[`0`]
+  inline def wdOneAfterAnother: `0` = 0.asInstanceOf[`0`]
 }

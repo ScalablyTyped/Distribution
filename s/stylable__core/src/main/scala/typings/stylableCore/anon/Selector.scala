@@ -13,19 +13,15 @@ trait Selector extends StObject {
 }
 object Selector {
   
-  @scala.inline
-  def apply(selector: String, selectorAst: SelectorAstNode): Selector = {
+  inline def apply(selector: String, selectorAst: SelectorAstNode): Selector = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any], selectorAst = selectorAst.asInstanceOf[js.Any])
     __obj.asInstanceOf[Selector]
   }
   
-  @scala.inline
-  implicit class SelectorMutableBuilder[Self <: Selector] (val x: Self) extends AnyVal {
+  extension [Self <: Selector](x: Self) {
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorAst(value: SelectorAstNode): Self = StObject.set(x, "selectorAst", value.asInstanceOf[js.Any])
+    inline def setSelectorAst(value: SelectorAstNode): Self = StObject.set(x, "selectorAst", value.asInstanceOf[js.Any])
   }
 }

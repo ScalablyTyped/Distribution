@@ -34,85 +34,59 @@ trait PopupOptions
 }
 object PopupOptions {
   
-  @scala.inline
-  def apply(): PopupOptions = {
+  inline def apply(): PopupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopupOptions]
   }
   
-  @scala.inline
-  implicit class PopupOptionsMutableBuilder[Self <: PopupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PopupOptions](x: Self) {
     
-    @scala.inline
-    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+    inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
+    inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
     
-    @scala.inline
-    def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
+    inline def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPanPadding(value: PointExpression): Self = StObject.set(x, "autoPanPadding", value.asInstanceOf[js.Any])
+    inline def setAutoPanPadding(value: PointExpression): Self = StObject.set(x, "autoPanPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPanPaddingBottomRight(value: PointExpression): Self = StObject.set(x, "autoPanPaddingBottomRight", value.asInstanceOf[js.Any])
+    inline def setAutoPanPaddingBottomRight(value: PointExpression): Self = StObject.set(x, "autoPanPaddingBottomRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPanPaddingBottomRightUndefined: Self = StObject.set(x, "autoPanPaddingBottomRight", js.undefined)
+    inline def setAutoPanPaddingBottomRightUndefined: Self = StObject.set(x, "autoPanPaddingBottomRight", js.undefined)
     
-    @scala.inline
-    def setAutoPanPaddingTopLeft(value: PointExpression): Self = StObject.set(x, "autoPanPaddingTopLeft", value.asInstanceOf[js.Any])
+    inline def setAutoPanPaddingTopLeft(value: PointExpression): Self = StObject.set(x, "autoPanPaddingTopLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPanPaddingTopLeftUndefined: Self = StObject.set(x, "autoPanPaddingTopLeft", js.undefined)
+    inline def setAutoPanPaddingTopLeftUndefined: Self = StObject.set(x, "autoPanPaddingTopLeft", js.undefined)
     
-    @scala.inline
-    def setAutoPanPaddingUndefined: Self = StObject.set(x, "autoPanPadding", js.undefined)
+    inline def setAutoPanPaddingUndefined: Self = StObject.set(x, "autoPanPadding", js.undefined)
     
-    @scala.inline
-    def setAutoPanUndefined: Self = StObject.set(x, "autoPan", js.undefined)
+    inline def setAutoPanUndefined: Self = StObject.set(x, "autoPan", js.undefined)
     
-    @scala.inline
-    def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
-    @scala.inline
-    def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+    inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+    inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
     
-    @scala.inline
-    def setCloseOnEscapeKey(value: Boolean): Self = StObject.set(x, "closeOnEscapeKey", value.asInstanceOf[js.Any])
+    inline def setCloseOnEscapeKey(value: Boolean): Self = StObject.set(x, "closeOnEscapeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseOnEscapeKeyUndefined: Self = StObject.set(x, "closeOnEscapeKey", js.undefined)
+    inline def setCloseOnEscapeKeyUndefined: Self = StObject.set(x, "closeOnEscapeKey", js.undefined)
     
-    @scala.inline
-    def setKeepInView(value: Boolean): Self = StObject.set(x, "keepInView", value.asInstanceOf[js.Any])
+    inline def setKeepInView(value: Boolean): Self = StObject.set(x, "keepInView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepInViewUndefined: Self = StObject.set(x, "keepInView", js.undefined)
+    inline def setKeepInViewUndefined: Self = StObject.set(x, "keepInView", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
-    @scala.inline
-    def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
   }
 }

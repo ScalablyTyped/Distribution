@@ -33,43 +33,31 @@ trait RightsizingRecommendation extends StObject {
 }
 object RightsizingRecommendation {
   
-  @scala.inline
-  def apply(): RightsizingRecommendation = {
+  inline def apply(): RightsizingRecommendation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RightsizingRecommendation]
   }
   
-  @scala.inline
-  implicit class RightsizingRecommendationMutableBuilder[Self <: RightsizingRecommendation] (val x: Self) extends AnyVal {
+  extension [Self <: RightsizingRecommendation](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: GenericString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: GenericString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
-    @scala.inline
-    def setCurrentInstance(value: CurrentInstance): Self = StObject.set(x, "CurrentInstance", value.asInstanceOf[js.Any])
+    inline def setCurrentInstance(value: CurrentInstance): Self = StObject.set(x, "CurrentInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentInstanceUndefined: Self = StObject.set(x, "CurrentInstance", js.undefined)
+    inline def setCurrentInstanceUndefined: Self = StObject.set(x, "CurrentInstance", js.undefined)
     
-    @scala.inline
-    def setModifyRecommendationDetail(value: ModifyRecommendationDetail): Self = StObject.set(x, "ModifyRecommendationDetail", value.asInstanceOf[js.Any])
+    inline def setModifyRecommendationDetail(value: ModifyRecommendationDetail): Self = StObject.set(x, "ModifyRecommendationDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifyRecommendationDetailUndefined: Self = StObject.set(x, "ModifyRecommendationDetail", js.undefined)
+    inline def setModifyRecommendationDetailUndefined: Self = StObject.set(x, "ModifyRecommendationDetail", js.undefined)
     
-    @scala.inline
-    def setRightsizingType(value: RightsizingType): Self = StObject.set(x, "RightsizingType", value.asInstanceOf[js.Any])
+    inline def setRightsizingType(value: RightsizingType): Self = StObject.set(x, "RightsizingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightsizingTypeUndefined: Self = StObject.set(x, "RightsizingType", js.undefined)
+    inline def setRightsizingTypeUndefined: Self = StObject.set(x, "RightsizingType", js.undefined)
     
-    @scala.inline
-    def setTerminateRecommendationDetail(value: TerminateRecommendationDetail): Self = StObject.set(x, "TerminateRecommendationDetail", value.asInstanceOf[js.Any])
+    inline def setTerminateRecommendationDetail(value: TerminateRecommendationDetail): Self = StObject.set(x, "TerminateRecommendationDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateRecommendationDetailUndefined: Self = StObject.set(x, "TerminateRecommendationDetail", js.undefined)
+    inline def setTerminateRecommendationDetailUndefined: Self = StObject.set(x, "TerminateRecommendationDetail", js.undefined)
   }
 }

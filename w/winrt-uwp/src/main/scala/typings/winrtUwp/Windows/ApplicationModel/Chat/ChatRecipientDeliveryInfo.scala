@@ -34,8 +34,7 @@ trait ChatRecipientDeliveryInfo extends StObject {
 }
 object ChatRecipientDeliveryInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deliveryTime: Date,
     isErrorPermanent: Boolean,
     readTime: Date,
@@ -49,31 +48,22 @@ object ChatRecipientDeliveryInfo {
     __obj.asInstanceOf[ChatRecipientDeliveryInfo]
   }
   
-  @scala.inline
-  implicit class ChatRecipientDeliveryInfoMutableBuilder[Self <: ChatRecipientDeliveryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRecipientDeliveryInfo](x: Self) {
     
-    @scala.inline
-    def setDeliveryTime(value: Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
+    inline def setDeliveryTime(value: Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsErrorPermanent(value: Boolean): Self = StObject.set(x, "isErrorPermanent", value.asInstanceOf[js.Any])
+    inline def setIsErrorPermanent(value: Boolean): Self = StObject.set(x, "isErrorPermanent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTime(value: Date): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setReadTime(value: Date): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: ChatMessageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ChatMessageStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportAddress(value: String): Self = StObject.set(x, "transportAddress", value.asInstanceOf[js.Any])
+    inline def setTransportAddress(value: String): Self = StObject.set(x, "transportAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportErrorCode(value: Double): Self = StObject.set(x, "transportErrorCode", value.asInstanceOf[js.Any])
+    inline def setTransportErrorCode(value: Double): Self = StObject.set(x, "transportErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportErrorCodeCategory(value: ChatTransportErrorCodeCategory): Self = StObject.set(x, "transportErrorCodeCategory", value.asInstanceOf[js.Any])
+    inline def setTransportErrorCodeCategory(value: ChatTransportErrorCodeCategory): Self = StObject.set(x, "transportErrorCodeCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportInterpretedErrorCode(value: ChatTransportInterpretedErrorCode): Self = StObject.set(x, "transportInterpretedErrorCode", value.asInstanceOf[js.Any])
+    inline def setTransportInterpretedErrorCode(value: ChatTransportInterpretedErrorCode): Self = StObject.set(x, "transportInterpretedErrorCode", value.asInstanceOf[js.Any])
   }
 }

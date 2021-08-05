@@ -19,16 +19,13 @@ trait OpenCustomNumberingListDialogCommand
 }
 object OpenCustomNumberingListDialogCommand {
   
-  @scala.inline
-  def apply(execute: Double => Boolean, getState: () => SimpleCommandState): OpenCustomNumberingListDialogCommand = {
+  inline def apply(execute: Double => Boolean, getState: () => SimpleCommandState): OpenCustomNumberingListDialogCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[OpenCustomNumberingListDialogCommand]
   }
   
-  @scala.inline
-  implicit class OpenCustomNumberingListDialogCommandMutableBuilder[Self <: OpenCustomNumberingListDialogCommand] (val x: Self) extends AnyVal {
+  extension [Self <: OpenCustomNumberingListDialogCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
   }
 }

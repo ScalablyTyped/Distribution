@@ -58,8 +58,7 @@ trait IdentityPool extends StObject {
 }
 object IdentityPool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowUnauthenticatedIdentities: IdentityPoolUnauthenticated,
     IdentityPoolId: IdentityPoolId,
     IdentityPoolName: IdentityPoolName
@@ -68,67 +67,46 @@ object IdentityPool {
     __obj.asInstanceOf[IdentityPool]
   }
   
-  @scala.inline
-  implicit class IdentityPoolMutableBuilder[Self <: IdentityPool] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityPool](x: Self) {
     
-    @scala.inline
-    def setAllowClassicFlow(value: ClassicFlow): Self = StObject.set(x, "AllowClassicFlow", value.asInstanceOf[js.Any])
+    inline def setAllowClassicFlow(value: ClassicFlow): Self = StObject.set(x, "AllowClassicFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowClassicFlowUndefined: Self = StObject.set(x, "AllowClassicFlow", js.undefined)
+    inline def setAllowClassicFlowUndefined: Self = StObject.set(x, "AllowClassicFlow", js.undefined)
     
-    @scala.inline
-    def setAllowUnauthenticatedIdentities(value: IdentityPoolUnauthenticated): Self = StObject.set(x, "AllowUnauthenticatedIdentities", value.asInstanceOf[js.Any])
+    inline def setAllowUnauthenticatedIdentities(value: IdentityPoolUnauthenticated): Self = StObject.set(x, "AllowUnauthenticatedIdentities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCognitoIdentityProviders(value: CognitoIdentityProviderList): Self = StObject.set(x, "CognitoIdentityProviders", value.asInstanceOf[js.Any])
+    inline def setCognitoIdentityProviders(value: CognitoIdentityProviderList): Self = StObject.set(x, "CognitoIdentityProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "CognitoIdentityProviders", js.undefined)
+    inline def setCognitoIdentityProvidersUndefined: Self = StObject.set(x, "CognitoIdentityProviders", js.undefined)
     
-    @scala.inline
-    def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = StObject.set(x, "CognitoIdentityProviders", js.Array(value :_*))
+    inline def setCognitoIdentityProvidersVarargs(value: CognitoIdentityProvider*): Self = StObject.set(x, "CognitoIdentityProviders", js.Array(value :_*))
     
-    @scala.inline
-    def setDeveloperProviderName(value: DeveloperProviderName): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
+    inline def setDeveloperProviderName(value: DeveloperProviderName): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperProviderNameUndefined: Self = StObject.set(x, "DeveloperProviderName", js.undefined)
+    inline def setDeveloperProviderNameUndefined: Self = StObject.set(x, "DeveloperProviderName", js.undefined)
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolName(value: IdentityPoolName): Self = StObject.set(x, "IdentityPoolName", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolName(value: IdentityPoolName): Self = StObject.set(x, "IdentityPoolName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolTags(value: IdentityPoolTagsType): Self = StObject.set(x, "IdentityPoolTags", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolTags(value: IdentityPoolTagsType): Self = StObject.set(x, "IdentityPoolTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolTagsUndefined: Self = StObject.set(x, "IdentityPoolTags", js.undefined)
+    inline def setIdentityPoolTagsUndefined: Self = StObject.set(x, "IdentityPoolTags", js.undefined)
     
-    @scala.inline
-    def setOpenIdConnectProviderARNs(value: OIDCProviderList): Self = StObject.set(x, "OpenIdConnectProviderARNs", value.asInstanceOf[js.Any])
+    inline def setOpenIdConnectProviderARNs(value: OIDCProviderList): Self = StObject.set(x, "OpenIdConnectProviderARNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenIdConnectProviderARNsUndefined: Self = StObject.set(x, "OpenIdConnectProviderARNs", js.undefined)
+    inline def setOpenIdConnectProviderARNsUndefined: Self = StObject.set(x, "OpenIdConnectProviderARNs", js.undefined)
     
-    @scala.inline
-    def setOpenIdConnectProviderARNsVarargs(value: ARNString*): Self = StObject.set(x, "OpenIdConnectProviderARNs", js.Array(value :_*))
+    inline def setOpenIdConnectProviderARNsVarargs(value: ARNString*): Self = StObject.set(x, "OpenIdConnectProviderARNs", js.Array(value :_*))
     
-    @scala.inline
-    def setSamlProviderARNs(value: SAMLProviderList): Self = StObject.set(x, "SamlProviderARNs", value.asInstanceOf[js.Any])
+    inline def setSamlProviderARNs(value: SAMLProviderList): Self = StObject.set(x, "SamlProviderARNs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamlProviderARNsUndefined: Self = StObject.set(x, "SamlProviderARNs", js.undefined)
+    inline def setSamlProviderARNsUndefined: Self = StObject.set(x, "SamlProviderARNs", js.undefined)
     
-    @scala.inline
-    def setSamlProviderARNsVarargs(value: ARNString*): Self = StObject.set(x, "SamlProviderARNs", js.Array(value :_*))
+    inline def setSamlProviderARNsVarargs(value: ARNString*): Self = StObject.set(x, "SamlProviderARNs", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedLoginProviders(value: IdentityProviders): Self = StObject.set(x, "SupportedLoginProviders", value.asInstanceOf[js.Any])
+    inline def setSupportedLoginProviders(value: IdentityProviders): Self = StObject.set(x, "SupportedLoginProviders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedLoginProvidersUndefined: Self = StObject.set(x, "SupportedLoginProviders", js.undefined)
+    inline def setSupportedLoginProvidersUndefined: Self = StObject.set(x, "SupportedLoginProviders", js.undefined)
   }
 }

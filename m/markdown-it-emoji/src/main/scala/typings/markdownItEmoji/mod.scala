@@ -27,35 +27,26 @@ object mod extends Shortcut {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setDefs(value: Record[String, String]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+        inline def setDefs(value: Record[String, String]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
+        inline def setDefsUndefined: Self = StObject.set(x, "defs", js.undefined)
         
-        @scala.inline
-        def setEnabled(value: js.Array[String]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+        inline def setEnabled(value: js.Array[String]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+        inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
         
-        @scala.inline
-        def setEnabledVarargs(value: String*): Self = StObject.set(x, "enabled", js.Array(value :_*))
+        inline def setEnabledVarargs(value: String*): Self = StObject.set(x, "enabled", js.Array(value :_*))
         
-        @scala.inline
-        def setShortcuts(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
+        inline def setShortcuts(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
+        inline def setShortcutsUndefined: Self = StObject.set(x, "shortcuts", js.undefined)
       }
     }
   }

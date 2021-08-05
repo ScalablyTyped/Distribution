@@ -12,6 +12,5 @@ object scriptsGetElementRectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(html: HTMLElement, elem: HTMLElement): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[Height]
+  inline def default(html: HTMLElement, elem: HTMLElement): Height = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(html.asInstanceOf[js.Any], elem.asInstanceOf[js.Any])).asInstanceOf[Height]
 }

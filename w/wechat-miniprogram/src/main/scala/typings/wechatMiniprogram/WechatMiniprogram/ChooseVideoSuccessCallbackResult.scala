@@ -25,8 +25,7 @@ trait ChooseVideoSuccessCallbackResult extends StObject {
 }
 object ChooseVideoSuccessCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: Double,
     errMsg: String,
     height: Double,
@@ -38,25 +37,18 @@ object ChooseVideoSuccessCallbackResult {
     __obj.asInstanceOf[ChooseVideoSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ChooseVideoSuccessCallbackResultMutableBuilder[Self <: ChooseVideoSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseVideoSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
+    inline def setTempFilePath(value: String): Self = StObject.set(x, "tempFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

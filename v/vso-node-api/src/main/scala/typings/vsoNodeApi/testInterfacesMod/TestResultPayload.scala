@@ -14,22 +14,17 @@ trait TestResultPayload extends StObject {
 }
 object TestResultPayload {
   
-  @scala.inline
-  def apply(comment: String, name: String, stream: String): TestResultPayload = {
+  inline def apply(comment: String, name: String, stream: String): TestResultPayload = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestResultPayload]
   }
   
-  @scala.inline
-  implicit class TestResultPayloadMutableBuilder[Self <: TestResultPayload] (val x: Self) extends AnyVal {
+  extension [Self <: TestResultPayload](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStream(value: String): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: String): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

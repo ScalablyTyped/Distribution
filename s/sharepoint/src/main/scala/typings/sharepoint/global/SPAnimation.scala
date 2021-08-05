@@ -159,16 +159,13 @@ object SPAnimation {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def DisableAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisableAnimation")().asInstanceOf[Unit]
+    inline def DisableAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisableAnimation")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def DisableSessionAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisableSessionAnimation")().asInstanceOf[Unit]
+    inline def DisableSessionAnimation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("DisableSessionAnimation")().asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def IsAnimationEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAnimationEnabled")().asInstanceOf[Boolean]
+    inline def IsAnimationEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAnimationEnabled")().asInstanceOf[Boolean]
   }
   
   @JSGlobal("SPAnimation.State")

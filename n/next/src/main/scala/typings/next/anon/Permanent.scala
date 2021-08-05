@@ -12,25 +12,19 @@ trait Permanent extends StObject {
 }
 object Permanent {
   
-  @scala.inline
-  def apply(): Permanent = {
+  inline def apply(): Permanent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Permanent]
   }
   
-  @scala.inline
-  implicit class PermanentMutableBuilder[Self <: Permanent] (val x: Self) extends AnyVal {
+  extension [Self <: Permanent](x: Self) {
     
-    @scala.inline
-    def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
+    inline def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
+    inline def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

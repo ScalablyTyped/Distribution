@@ -23,31 +23,23 @@ trait CreateGroupMembershipResponse extends StObject {
 }
 object CreateGroupMembershipResponse {
   
-  @scala.inline
-  def apply(): CreateGroupMembershipResponse = {
+  inline def apply(): CreateGroupMembershipResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGroupMembershipResponse]
   }
   
-  @scala.inline
-  implicit class CreateGroupMembershipResponseMutableBuilder[Self <: CreateGroupMembershipResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGroupMembershipResponse](x: Self) {
     
-    @scala.inline
-    def setGroupMember(value: GroupMember): Self = StObject.set(x, "GroupMember", value.asInstanceOf[js.Any])
+    inline def setGroupMember(value: GroupMember): Self = StObject.set(x, "GroupMember", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupMemberUndefined: Self = StObject.set(x, "GroupMember", js.undefined)
+    inline def setGroupMemberUndefined: Self = StObject.set(x, "GroupMember", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "RequestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusCode): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

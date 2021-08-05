@@ -21,25 +21,19 @@ trait CreateFootnoteRequest extends StObject {
 }
 object CreateFootnoteRequest {
   
-  @scala.inline
-  def apply(): CreateFootnoteRequest = {
+  inline def apply(): CreateFootnoteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFootnoteRequest]
   }
   
-  @scala.inline
-  implicit class CreateFootnoteRequestMutableBuilder[Self <: CreateFootnoteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFootnoteRequest](x: Self) {
     
-    @scala.inline
-    def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
+    inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
+    inline def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

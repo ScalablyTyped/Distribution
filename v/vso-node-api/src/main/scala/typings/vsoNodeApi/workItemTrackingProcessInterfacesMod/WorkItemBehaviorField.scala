@@ -14,22 +14,17 @@ trait WorkItemBehaviorField extends StObject {
 }
 object WorkItemBehaviorField {
   
-  @scala.inline
-  def apply(behaviorFieldId: String, id: String, url: String): WorkItemBehaviorField = {
+  inline def apply(behaviorFieldId: String, id: String, url: String): WorkItemBehaviorField = {
     val __obj = js.Dynamic.literal(behaviorFieldId = behaviorFieldId.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkItemBehaviorField]
   }
   
-  @scala.inline
-  implicit class WorkItemBehaviorFieldMutableBuilder[Self <: WorkItemBehaviorField] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemBehaviorField](x: Self) {
     
-    @scala.inline
-    def setBehaviorFieldId(value: String): Self = StObject.set(x, "behaviorFieldId", value.asInstanceOf[js.Any])
+    inline def setBehaviorFieldId(value: String): Self = StObject.set(x, "behaviorFieldId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

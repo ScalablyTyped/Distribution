@@ -27,20 +27,16 @@ object mod {
   }
   object ComponentOptions {
     
-    @scala.inline
-    def apply[V /* <: Vue */](): ComponentOptions[V] = {
+    inline def apply[V /* <: Vue */](): ComponentOptions[V] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptions[V]]
     }
     
-    @scala.inline
-    implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
+    extension [Self <: ComponentOptions[?], V /* <: Vue */](x: Self & ComponentOptions[V]) {
       
-      @scala.inline
-      def setMpType(value: String): Self = StObject.set(x, "mpType", value.asInstanceOf[js.Any])
+      inline def setMpType(value: String): Self = StObject.set(x, "mpType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMpTypeUndefined: Self = StObject.set(x, "mpType", js.undefined)
+      inline def setMpTypeUndefined: Self = StObject.set(x, "mpType", js.undefined)
     }
   }
   
@@ -146,98 +142,68 @@ object mod {
   }
   object Hooks {
     
-    @scala.inline
-    def apply(): Hooks = {
+    inline def apply(): Hooks = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Hooks]
     }
     
-    @scala.inline
-    implicit class HooksMutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
+    extension [Self <: Hooks](x: Self) {
       
-      @scala.inline
-      def setOnBackPress(value: /* options */ BackPressOption => js.Any): Self = StObject.set(x, "onBackPress", js.Any.fromFunction1(value))
+      inline def setOnBackPress(value: /* options */ BackPressOption => js.Any): Self = StObject.set(x, "onBackPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBackPressUndefined: Self = StObject.set(x, "onBackPress", js.undefined)
+      inline def setOnBackPressUndefined: Self = StObject.set(x, "onBackPress", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: /* query */ js.UndefOr[AnyObject] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
+      inline def setOnLoad(value: /* query */ js.UndefOr[AnyObject] => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnNavigationBarButtonTap(value: /* options */ NavigationBarButtonTapOption => Unit): Self = StObject.set(x, "onNavigationBarButtonTap", js.Any.fromFunction1(value))
+      inline def setOnNavigationBarButtonTap(value: /* options */ NavigationBarButtonTapOption => Unit): Self = StObject.set(x, "onNavigationBarButtonTap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNavigationBarButtonTapUndefined: Self = StObject.set(x, "onNavigationBarButtonTap", js.undefined)
+      inline def setOnNavigationBarButtonTapUndefined: Self = StObject.set(x, "onNavigationBarButtonTap", js.undefined)
       
-      @scala.inline
-      def setOnNavigationBarSearchInputChanged(value: /* event */ NavigationBarSearchInputEvent => Unit): Self = StObject.set(x, "onNavigationBarSearchInputChanged", js.Any.fromFunction1(value))
+      inline def setOnNavigationBarSearchInputChanged(value: /* event */ NavigationBarSearchInputEvent => Unit): Self = StObject.set(x, "onNavigationBarSearchInputChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNavigationBarSearchInputChangedUndefined: Self = StObject.set(x, "onNavigationBarSearchInputChanged", js.undefined)
+      inline def setOnNavigationBarSearchInputChangedUndefined: Self = StObject.set(x, "onNavigationBarSearchInputChanged", js.undefined)
       
-      @scala.inline
-      def setOnNavigationBarSearchInputClicked(value: () => Unit): Self = StObject.set(x, "onNavigationBarSearchInputClicked", js.Any.fromFunction0(value))
+      inline def setOnNavigationBarSearchInputClicked(value: () => Unit): Self = StObject.set(x, "onNavigationBarSearchInputClicked", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNavigationBarSearchInputClickedUndefined: Self = StObject.set(x, "onNavigationBarSearchInputClicked", js.undefined)
+      inline def setOnNavigationBarSearchInputClickedUndefined: Self = StObject.set(x, "onNavigationBarSearchInputClicked", js.undefined)
       
-      @scala.inline
-      def setOnNavigationBarSearchInputConfirmed(value: /* event */ NavigationBarSearchInputEvent => Unit): Self = StObject.set(x, "onNavigationBarSearchInputConfirmed", js.Any.fromFunction1(value))
+      inline def setOnNavigationBarSearchInputConfirmed(value: /* event */ NavigationBarSearchInputEvent => Unit): Self = StObject.set(x, "onNavigationBarSearchInputConfirmed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNavigationBarSearchInputConfirmedUndefined: Self = StObject.set(x, "onNavigationBarSearchInputConfirmed", js.undefined)
+      inline def setOnNavigationBarSearchInputConfirmedUndefined: Self = StObject.set(x, "onNavigationBarSearchInputConfirmed", js.undefined)
       
-      @scala.inline
-      def setOnPageScroll(value: /* options */ PageScrollOption => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
+      inline def setOnPageScroll(value: /* options */ PageScrollOption => Unit): Self = StObject.set(x, "onPageScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPageScrollUndefined: Self = StObject.set(x, "onPageScroll", js.undefined)
+      inline def setOnPageScrollUndefined: Self = StObject.set(x, "onPageScroll", js.undefined)
       
-      @scala.inline
-      def setOnPullDownRefresh(value: () => Unit): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction0(value))
+      inline def setOnPullDownRefresh(value: () => Unit): Self = StObject.set(x, "onPullDownRefresh", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPullDownRefreshUndefined: Self = StObject.set(x, "onPullDownRefresh", js.undefined)
+      inline def setOnPullDownRefreshUndefined: Self = StObject.set(x, "onPullDownRefresh", js.undefined)
       
-      @scala.inline
-      def setOnReachBottom(value: () => Unit): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction0(value))
+      inline def setOnReachBottom(value: () => Unit): Self = StObject.set(x, "onReachBottom", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnReachBottomUndefined: Self = StObject.set(x, "onReachBottom", js.undefined)
+      inline def setOnReachBottomUndefined: Self = StObject.set(x, "onReachBottom", js.undefined)
       
-      @scala.inline
-      def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+      inline def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+      inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: /* options */ PageScrollOption => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* options */ PageScrollOption => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
+      inline def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
-      @scala.inline
-      def setOnShareAppMessage(value: /* options */ ShareAppMessageOption => CustomShareContent): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
+      inline def setOnShareAppMessage(value: /* options */ ShareAppMessageOption => CustomShareContent): Self = StObject.set(x, "onShareAppMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShareAppMessageUndefined: Self = StObject.set(x, "onShareAppMessage", js.undefined)
+      inline def setOnShareAppMessageUndefined: Self = StObject.set(x, "onShareAppMessage", js.undefined)
       
-      @scala.inline
-      def setOnTabItemTap(value: /* options */ TabItemTapOption => Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
+      inline def setOnTabItemTap(value: /* options */ TabItemTapOption => Unit): Self = StObject.set(x, "onTabItemTap", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTabItemTapUndefined: Self = StObject.set(x, "onTabItemTap", js.undefined)
+      inline def setOnTabItemTapUndefined: Self = StObject.set(x, "onTabItemTap", js.undefined)
       
-      @scala.inline
-      def setOnUnload(value: () => Unit): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
+      inline def setOnUnload(value: () => Unit): Self = StObject.set(x, "onUnload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnUnloadUndefined: Self = StObject.set(x, "onUnload", js.undefined)
+      inline def setOnUnloadUndefined: Self = StObject.set(x, "onUnload", js.undefined)
     }
   }
 }

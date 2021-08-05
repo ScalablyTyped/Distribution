@@ -11,19 +11,15 @@ trait MessageOptions extends StObject {
 }
 object MessageOptions {
   
-  @scala.inline
-  def apply(): MessageOptions = {
+  inline def apply(): MessageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageOptions]
   }
   
-  @scala.inline
-  implicit class MessageOptionsMutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessageOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeTlsChannelId(value: Boolean): Self = StObject.set(x, "includeTlsChannelId", value.asInstanceOf[js.Any])
+    inline def setIncludeTlsChannelId(value: Boolean): Self = StObject.set(x, "includeTlsChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTlsChannelIdUndefined: Self = StObject.set(x, "includeTlsChannelId", js.undefined)
+    inline def setIncludeTlsChannelIdUndefined: Self = StObject.set(x, "includeTlsChannelId", js.undefined)
   }
 }

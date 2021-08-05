@@ -23,25 +23,19 @@ trait RenewDomainRequest extends StObject {
 }
 object RenewDomainRequest {
   
-  @scala.inline
-  def apply(CurrentExpiryYear: CurrentExpiryYear, DomainName: DomainName): RenewDomainRequest = {
+  inline def apply(CurrentExpiryYear: CurrentExpiryYear, DomainName: DomainName): RenewDomainRequest = {
     val __obj = js.Dynamic.literal(CurrentExpiryYear = CurrentExpiryYear.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenewDomainRequest]
   }
   
-  @scala.inline
-  implicit class RenewDomainRequestMutableBuilder[Self <: RenewDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RenewDomainRequest](x: Self) {
     
-    @scala.inline
-    def setCurrentExpiryYear(value: CurrentExpiryYear): Self = StObject.set(x, "CurrentExpiryYear", value.asInstanceOf[js.Any])
+    inline def setCurrentExpiryYear(value: CurrentExpiryYear): Self = StObject.set(x, "CurrentExpiryYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInYears(value: DurationInYears): Self = StObject.set(x, "DurationInYears", value.asInstanceOf[js.Any])
+    inline def setDurationInYears(value: DurationInYears): Self = StObject.set(x, "DurationInYears", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInYearsUndefined: Self = StObject.set(x, "DurationInYears", js.undefined)
+    inline def setDurationInYearsUndefined: Self = StObject.set(x, "DurationInYears", js.undefined)
   }
 }

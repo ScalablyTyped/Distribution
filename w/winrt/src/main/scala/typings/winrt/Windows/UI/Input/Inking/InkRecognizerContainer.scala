@@ -11,8 +11,7 @@ trait InkRecognizerContainer
      with IInkRecognizerContainer
 object InkRecognizerContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getRecognizers: () => IVectorView[InkRecognizer],
     recognizeAsync: (InkStrokeContainer, InkRecognitionTarget) => IAsyncOperation[IVectorView[InkRecognitionResult]],
     setDefaultRecognizer: InkRecognizer => Unit

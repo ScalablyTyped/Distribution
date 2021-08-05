@@ -34,8 +34,7 @@ object anon {
   }
   object ChangeMonth {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       changeMonth: Double => Unit,
       changeYear: Double => Unit,
       date: Date,
@@ -52,41 +51,29 @@ object anon {
       __obj.asInstanceOf[ChangeMonth]
     }
     
-    @scala.inline
-    implicit class ChangeMonthMutableBuilder[Self <: ChangeMonth] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeMonth](x: Self) {
       
-      @scala.inline
-      def setChangeMonth(value: Double => Unit): Self = StObject.set(x, "changeMonth", js.Any.fromFunction1(value))
+      inline def setChangeMonth(value: Double => Unit): Self = StObject.set(x, "changeMonth", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChangeYear(value: Double => Unit): Self = StObject.set(x, "changeYear", js.Any.fromFunction1(value))
+      inline def setChangeYear(value: Double => Unit): Self = StObject.set(x, "changeYear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecreaseMonth(value: () => Unit): Self = StObject.set(x, "decreaseMonth", js.Any.fromFunction0(value))
+      inline def setDecreaseMonth(value: () => Unit): Self = StObject.set(x, "decreaseMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDecreaseYear(value: () => Unit): Self = StObject.set(x, "decreaseYear", js.Any.fromFunction0(value))
+      inline def setDecreaseYear(value: () => Unit): Self = StObject.set(x, "decreaseYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIncreaseMonth(value: () => Unit): Self = StObject.set(x, "increaseMonth", js.Any.fromFunction0(value))
+      inline def setIncreaseMonth(value: () => Unit): Self = StObject.set(x, "increaseMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIncreaseYear(value: () => Unit): Self = StObject.set(x, "increaseYear", js.Any.fromFunction0(value))
+      inline def setIncreaseYear(value: () => Unit): Self = StObject.set(x, "increaseYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNextMonthButtonDisabled(value: Boolean): Self = StObject.set(x, "nextMonthButtonDisabled", value.asInstanceOf[js.Any])
+      inline def setNextMonthButtonDisabled(value: Boolean): Self = StObject.set(x, "nextMonthButtonDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextYearButtonDisabled(value: Boolean): Self = StObject.set(x, "nextYearButtonDisabled", value.asInstanceOf[js.Any])
+      inline def setNextYearButtonDisabled(value: Boolean): Self = StObject.set(x, "nextYearButtonDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevMonthButtonDisabled(value: Boolean): Self = StObject.set(x, "prevMonthButtonDisabled", value.asInstanceOf[js.Any])
+      inline def setPrevMonthButtonDisabled(value: Boolean): Self = StObject.set(x, "prevMonthButtonDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevYearButtonDisabled(value: Boolean): Self = StObject.set(x, "prevYearButtonDisabled", value.asInstanceOf[js.Any])
+      inline def setPrevYearButtonDisabled(value: Boolean): Self = StObject.set(x, "prevYearButtonDisabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -96,20 +83,16 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(children: js.Array[ReactNode]): Children = {
+    inline def apply(children: js.Array[ReactNode]): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     }
   }
   
@@ -121,20 +104,16 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: Double, msg: String): Code = {
+    inline def apply(code: Double, msg: String): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     }
   }
 }

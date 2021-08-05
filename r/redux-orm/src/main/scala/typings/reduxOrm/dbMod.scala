@@ -23,8 +23,7 @@ object dbMod {
     @JSImport("redux-orm/db", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
-    @scala.inline
-    def default[I /* <: IndexedModelClasses[
+    inline def default[I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
@@ -42,8 +41,7 @@ object dbMod {
       */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
       ]]
     
-    @scala.inline
-    def createDatabase[I /* <: IndexedModelClasses[
+    inline def createDatabase[I /* <: IndexedModelClasses[
         js.Any, 
         Extract[
           /* keyof any */ String, 
@@ -81,8 +79,7 @@ object dbMod {
     def this(userOpts: ModelTableOpts[MClass]) = this()
   }
   
-  @scala.inline
-  def createDatabase[I /* <: IndexedModelClasses[
+  inline def createDatabase[I /* <: IndexedModelClasses[
     js.Any, 
     Extract[
       /* keyof any */ String, 

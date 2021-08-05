@@ -33,8 +33,7 @@ trait Menu extends StObject {
 }
 object Menu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addItem: (String, String) => Menu,
     addSeparator: () => Menu,
     addSubMenu: Menu => Menu,
@@ -44,19 +43,14 @@ object Menu {
     __obj.asInstanceOf[Menu]
   }
   
-  @scala.inline
-  implicit class MenuMutableBuilder[Self <: Menu] (val x: Self) extends AnyVal {
+  extension [Self <: Menu](x: Self) {
     
-    @scala.inline
-    def setAddItem(value: (String, String) => Menu): Self = StObject.set(x, "addItem", js.Any.fromFunction2(value))
+    inline def setAddItem(value: (String, String) => Menu): Self = StObject.set(x, "addItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddSeparator(value: () => Menu): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
+    inline def setAddSeparator(value: () => Menu): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAddSubMenu(value: Menu => Menu): Self = StObject.set(x, "addSubMenu", js.Any.fromFunction1(value))
+    inline def setAddSubMenu(value: Menu => Menu): Self = StObject.set(x, "addSubMenu", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddToUi(value: () => Unit): Self = StObject.set(x, "addToUi", js.Any.fromFunction0(value))
+    inline def setAddToUi(value: () => Unit): Self = StObject.set(x, "addToUi", js.Any.fromFunction0(value))
   }
 }

@@ -23,31 +23,23 @@ trait ListSigningCertificatesRequest extends StObject {
 }
 object ListSigningCertificatesRequest {
   
-  @scala.inline
-  def apply(): ListSigningCertificatesRequest = {
+  inline def apply(): ListSigningCertificatesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSigningCertificatesRequest]
   }
   
-  @scala.inline
-  implicit class ListSigningCertificatesRequestMutableBuilder[Self <: ListSigningCertificatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListSigningCertificatesRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: maxItemsType): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: existingUserNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
   }
 }

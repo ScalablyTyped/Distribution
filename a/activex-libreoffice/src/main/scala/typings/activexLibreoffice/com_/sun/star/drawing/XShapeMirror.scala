@@ -22,8 +22,7 @@ trait XShapeMirror
 }
 object XShapeMirror {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     mirror: (js.Array[XShapes], MirrorAxis) => Unit,
     mirrorAtAxis: (js.Array[XShapes], XShape) => Unit,
@@ -34,13 +33,10 @@ object XShapeMirror {
     __obj.asInstanceOf[XShapeMirror]
   }
   
-  @scala.inline
-  implicit class XShapeMirrorMutableBuilder[Self <: XShapeMirror] (val x: Self) extends AnyVal {
+  extension [Self <: XShapeMirror](x: Self) {
     
-    @scala.inline
-    def setMirror(value: (js.Array[XShapes], MirrorAxis) => Unit): Self = StObject.set(x, "mirror", js.Any.fromFunction2(value))
+    inline def setMirror(value: (js.Array[XShapes], MirrorAxis) => Unit): Self = StObject.set(x, "mirror", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMirrorAtAxis(value: (js.Array[XShapes], XShape) => Unit): Self = StObject.set(x, "mirrorAtAxis", js.Any.fromFunction2(value))
+    inline def setMirrorAtAxis(value: (js.Array[XShapes], XShape) => Unit): Self = StObject.set(x, "mirrorAtAxis", js.Any.fromFunction2(value))
   }
 }

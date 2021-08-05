@@ -94,6 +94,5 @@ object Date2 {
   //   and doesn't include all ES5+ features.
   //   Thus developers using the Date class must alias the type in their own TS projects.
   // - We cannot use lib.es3.d.ts because it is no longer by dtslint.
-  @scala.inline
-  def apply: DateConstructor = js.Dynamic.global.selectDynamic("Date2").asInstanceOf[DateConstructor]
+  inline def apply: DateConstructor = js.Dynamic.global.selectDynamic("Date2").asInstanceOf[DateConstructor]
 }

@@ -14,31 +14,23 @@ trait AutoCompleteVirtual extends StObject {
 }
 object AutoCompleteVirtual {
   
-  @scala.inline
-  def apply(): AutoCompleteVirtual = {
+  inline def apply(): AutoCompleteVirtual = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoCompleteVirtual]
   }
   
-  @scala.inline
-  implicit class AutoCompleteVirtualMutableBuilder[Self <: AutoCompleteVirtual] (val x: Self) extends AnyVal {
+  extension [Self <: AutoCompleteVirtual](x: Self) {
     
-    @scala.inline
-    def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+    inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
+    inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
     
-    @scala.inline
-    def setMapValueTo(value: String): Self = StObject.set(x, "mapValueTo", value.asInstanceOf[js.Any])
+    inline def setMapValueTo(value: String): Self = StObject.set(x, "mapValueTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapValueToUndefined: Self = StObject.set(x, "mapValueTo", js.undefined)
+    inline def setMapValueToUndefined: Self = StObject.set(x, "mapValueTo", js.undefined)
     
-    @scala.inline
-    def setValueMapper(value: js.Function): Self = StObject.set(x, "valueMapper", value.asInstanceOf[js.Any])
+    inline def setValueMapper(value: js.Function): Self = StObject.set(x, "valueMapper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueMapperUndefined: Self = StObject.set(x, "valueMapper", js.undefined)
+    inline def setValueMapperUndefined: Self = StObject.set(x, "valueMapper", js.undefined)
   }
 }

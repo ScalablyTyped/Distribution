@@ -43,8 +43,7 @@ object Game {
   }
   object GameDto {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       championId: Double,
       createDate: Double,
       fellowPlayers: js.Array[PlayerDto],
@@ -65,56 +64,39 @@ object Game {
       __obj.asInstanceOf[GameDto]
     }
     
-    @scala.inline
-    implicit class GameDtoMutableBuilder[Self <: GameDto] (val x: Self) extends AnyVal {
+    extension [Self <: GameDto](x: Self) {
       
-      @scala.inline
-      def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
+      inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDate(value: Double): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
+      inline def setCreateDate(value: Double): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFellowPlayers(value: js.Array[PlayerDto]): Self = StObject.set(x, "fellowPlayers", value.asInstanceOf[js.Any])
+      inline def setFellowPlayers(value: js.Array[PlayerDto]): Self = StObject.set(x, "fellowPlayers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFellowPlayersVarargs(value: PlayerDto*): Self = StObject.set(x, "fellowPlayers", js.Array(value :_*))
+      inline def setFellowPlayersVarargs(value: PlayerDto*): Self = StObject.set(x, "fellowPlayers", js.Array(value :_*))
       
-      @scala.inline
-      def setGameId(value: Double): Self = StObject.set(x, "gameId", value.asInstanceOf[js.Any])
+      inline def setGameId(value: Double): Self = StObject.set(x, "gameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameMode(value: String): Self = StObject.set(x, "gameMode", value.asInstanceOf[js.Any])
+      inline def setGameMode(value: String): Self = StObject.set(x, "gameMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGameType(value: String): Self = StObject.set(x, "gameType", value.asInstanceOf[js.Any])
+      inline def setGameType(value: String): Self = StObject.set(x, "gameType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpEarned(value: Double): Self = StObject.set(x, "ipEarned", value.asInstanceOf[js.Any])
+      inline def setIpEarned(value: Double): Self = StObject.set(x, "ipEarned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
+      inline def setMapId(value: Double): Self = StObject.set(x, "mapId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpell1(value: Double): Self = StObject.set(x, "spell1", value.asInstanceOf[js.Any])
+      inline def setSpell1(value: Double): Self = StObject.set(x, "spell1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpell2(value: Double): Self = StObject.set(x, "spell2", value.asInstanceOf[js.Any])
+      inline def setSpell2(value: Double): Self = StObject.set(x, "spell2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: RawStatsDto): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: RawStatsDto): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubType(value: String): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
+      inline def setSubType(value: String): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,23 +110,18 @@ object Game {
   }
   object PlayerDto {
     
-    @scala.inline
-    def apply(championId: Double, summonerId: Double, teamId: Double): PlayerDto = {
+    inline def apply(championId: Double, summonerId: Double, teamId: Double): PlayerDto = {
       val __obj = js.Dynamic.literal(championId = championId.asInstanceOf[js.Any], summonerId = summonerId.asInstanceOf[js.Any], teamId = teamId.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlayerDto]
     }
     
-    @scala.inline
-    implicit class PlayerDtoMutableBuilder[Self <: PlayerDto] (val x: Self) extends AnyVal {
+    extension [Self <: PlayerDto](x: Self) {
       
-      @scala.inline
-      def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
+      inline def setChampionId(value: Double): Self = StObject.set(x, "championId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummonerId(value: Double): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
+      inline def setSummonerId(value: Double): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: Double): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,8 +285,7 @@ object Game {
   }
   object RawStatsDto {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       assists: Double,
       barracksKilled: Double,
       championsKilled: Double,
@@ -393,242 +369,163 @@ object Game {
       __obj.asInstanceOf[RawStatsDto]
     }
     
-    @scala.inline
-    implicit class RawStatsDtoMutableBuilder[Self <: RawStatsDto] (val x: Self) extends AnyVal {
+    extension [Self <: RawStatsDto](x: Self) {
       
-      @scala.inline
-      def setAssists(value: Double): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
+      inline def setAssists(value: Double): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarracksKilled(value: Double): Self = StObject.set(x, "barracksKilled", value.asInstanceOf[js.Any])
+      inline def setBarracksKilled(value: Double): Self = StObject.set(x, "barracksKilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChampionsKilled(value: Double): Self = StObject.set(x, "championsKilled", value.asInstanceOf[js.Any])
+      inline def setChampionsKilled(value: Double): Self = StObject.set(x, "championsKilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCombatPlayerScore(value: Double): Self = StObject.set(x, "combatPlayerScore", value.asInstanceOf[js.Any])
+      inline def setCombatPlayerScore(value: Double): Self = StObject.set(x, "combatPlayerScore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumablesPurchased(value: Double): Self = StObject.set(x, "consumablesPurchased", value.asInstanceOf[js.Any])
+      inline def setConsumablesPurchased(value: Double): Self = StObject.set(x, "consumablesPurchased", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDamageDealtPlayer(value: Double): Self = StObject.set(x, "damageDealtPlayer", value.asInstanceOf[js.Any])
+      inline def setDamageDealtPlayer(value: Double): Self = StObject.set(x, "damageDealtPlayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoubleKills(value: Double): Self = StObject.set(x, "doubleKills", value.asInstanceOf[js.Any])
+      inline def setDoubleKills(value: Double): Self = StObject.set(x, "doubleKills", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstBlood(value: Double): Self = StObject.set(x, "firstBlood", value.asInstanceOf[js.Any])
+      inline def setFirstBlood(value: Double): Self = StObject.set(x, "firstBlood", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGold(value: Double): Self = StObject.set(x, "gold", value.asInstanceOf[js.Any])
+      inline def setGold(value: Double): Self = StObject.set(x, "gold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoldEarned(value: Double): Self = StObject.set(x, "goldEarned", value.asInstanceOf[js.Any])
+      inline def setGoldEarned(value: Double): Self = StObject.set(x, "goldEarned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoldSpent(value: Double): Self = StObject.set(x, "goldSpent", value.asInstanceOf[js.Any])
+      inline def setGoldSpent(value: Double): Self = StObject.set(x, "goldSpent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem0(value: Double): Self = StObject.set(x, "item0", value.asInstanceOf[js.Any])
+      inline def setItem0(value: Double): Self = StObject.set(x, "item0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem1(value: Double): Self = StObject.set(x, "item1", value.asInstanceOf[js.Any])
+      inline def setItem1(value: Double): Self = StObject.set(x, "item1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem2(value: Double): Self = StObject.set(x, "item2", value.asInstanceOf[js.Any])
+      inline def setItem2(value: Double): Self = StObject.set(x, "item2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem3(value: Double): Self = StObject.set(x, "item3", value.asInstanceOf[js.Any])
+      inline def setItem3(value: Double): Self = StObject.set(x, "item3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem4(value: Double): Self = StObject.set(x, "item4", value.asInstanceOf[js.Any])
+      inline def setItem4(value: Double): Self = StObject.set(x, "item4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem5(value: Double): Self = StObject.set(x, "item5", value.asInstanceOf[js.Any])
+      inline def setItem5(value: Double): Self = StObject.set(x, "item5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem6(value: Double): Self = StObject.set(x, "item6", value.asInstanceOf[js.Any])
+      inline def setItem6(value: Double): Self = StObject.set(x, "item6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsPurchased(value: Double): Self = StObject.set(x, "itemsPurchased", value.asInstanceOf[js.Any])
+      inline def setItemsPurchased(value: Double): Self = StObject.set(x, "itemsPurchased", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKillingSprees(value: Double): Self = StObject.set(x, "killingSprees", value.asInstanceOf[js.Any])
+      inline def setKillingSprees(value: Double): Self = StObject.set(x, "killingSprees", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargestCriticalStrike(value: Double): Self = StObject.set(x, "largestCriticalStrike", value.asInstanceOf[js.Any])
+      inline def setLargestCriticalStrike(value: Double): Self = StObject.set(x, "largestCriticalStrike", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargestKillingSpree(value: Double): Self = StObject.set(x, "largestKillingSpree", value.asInstanceOf[js.Any])
+      inline def setLargestKillingSpree(value: Double): Self = StObject.set(x, "largestKillingSpree", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargestMultiKill(value: Double): Self = StObject.set(x, "largestMultiKill", value.asInstanceOf[js.Any])
+      inline def setLargestMultiKill(value: Double): Self = StObject.set(x, "largestMultiKill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegendaryItemsCreated(value: Double): Self = StObject.set(x, "legendaryItemsCreated", value.asInstanceOf[js.Any])
+      inline def setLegendaryItemsCreated(value: Double): Self = StObject.set(x, "legendaryItemsCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagicDamageDealtPlayer(value: Double): Self = StObject.set(x, "magicDamageDealtPlayer", value.asInstanceOf[js.Any])
+      inline def setMagicDamageDealtPlayer(value: Double): Self = StObject.set(x, "magicDamageDealtPlayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagicDamageDealtToChampions(value: Double): Self = StObject.set(x, "magicDamageDealtToChampions", value.asInstanceOf[js.Any])
+      inline def setMagicDamageDealtToChampions(value: Double): Self = StObject.set(x, "magicDamageDealtToChampions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagicDamageTaken(value: Double): Self = StObject.set(x, "magicDamageTaken", value.asInstanceOf[js.Any])
+      inline def setMagicDamageTaken(value: Double): Self = StObject.set(x, "magicDamageTaken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinionsDenied(value: Double): Self = StObject.set(x, "minionsDenied", value.asInstanceOf[js.Any])
+      inline def setMinionsDenied(value: Double): Self = StObject.set(x, "minionsDenied", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinionsKilled(value: Double): Self = StObject.set(x, "minionsKilled", value.asInstanceOf[js.Any])
+      inline def setMinionsKilled(value: Double): Self = StObject.set(x, "minionsKilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralMinionsKilled(value: Double): Self = StObject.set(x, "neutralMinionsKilled", value.asInstanceOf[js.Any])
+      inline def setNeutralMinionsKilled(value: Double): Self = StObject.set(x, "neutralMinionsKilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralMinionsKilledEnemyJungle(value: Double): Self = StObject.set(x, "neutralMinionsKilledEnemyJungle", value.asInstanceOf[js.Any])
+      inline def setNeutralMinionsKilledEnemyJungle(value: Double): Self = StObject.set(x, "neutralMinionsKilledEnemyJungle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeutralMinionsKilledYourJungle(value: Double): Self = StObject.set(x, "neutralMinionsKilledYourJungle", value.asInstanceOf[js.Any])
+      inline def setNeutralMinionsKilledYourJungle(value: Double): Self = StObject.set(x, "neutralMinionsKilledYourJungle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNexusKilled(value: Boolean): Self = StObject.set(x, "nexusKilled", value.asInstanceOf[js.Any])
+      inline def setNexusKilled(value: Boolean): Self = StObject.set(x, "nexusKilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeCapture(value: Double): Self = StObject.set(x, "nodeCapture", value.asInstanceOf[js.Any])
+      inline def setNodeCapture(value: Double): Self = StObject.set(x, "nodeCapture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeCaptureAssist(value: Double): Self = StObject.set(x, "nodeCaptureAssist", value.asInstanceOf[js.Any])
+      inline def setNodeCaptureAssist(value: Double): Self = StObject.set(x, "nodeCaptureAssist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeNeutralize(value: Double): Self = StObject.set(x, "nodeNeutralize", value.asInstanceOf[js.Any])
+      inline def setNodeNeutralize(value: Double): Self = StObject.set(x, "nodeNeutralize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeNeutralizeAssist(value: Double): Self = StObject.set(x, "nodeNeutralizeAssist", value.asInstanceOf[js.Any])
+      inline def setNodeNeutralizeAssist(value: Double): Self = StObject.set(x, "nodeNeutralizeAssist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumDeaths(value: Double): Self = StObject.set(x, "numDeaths", value.asInstanceOf[js.Any])
+      inline def setNumDeaths(value: Double): Self = StObject.set(x, "numDeaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumItemsBought(value: Double): Self = StObject.set(x, "numItemsBought", value.asInstanceOf[js.Any])
+      inline def setNumItemsBought(value: Double): Self = StObject.set(x, "numItemsBought", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectivePlayerScore(value: Double): Self = StObject.set(x, "objectivePlayerScore", value.asInstanceOf[js.Any])
+      inline def setObjectivePlayerScore(value: Double): Self = StObject.set(x, "objectivePlayerScore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPentaKills(value: Double): Self = StObject.set(x, "pentaKills", value.asInstanceOf[js.Any])
+      inline def setPentaKills(value: Double): Self = StObject.set(x, "pentaKills", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhysicalDamageDealtPlayer(value: Double): Self = StObject.set(x, "physicalDamageDealtPlayer", value.asInstanceOf[js.Any])
+      inline def setPhysicalDamageDealtPlayer(value: Double): Self = StObject.set(x, "physicalDamageDealtPlayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhysicalDamageDealtToChampions(value: Double): Self = StObject.set(x, "physicalDamageDealtToChampions", value.asInstanceOf[js.Any])
+      inline def setPhysicalDamageDealtToChampions(value: Double): Self = StObject.set(x, "physicalDamageDealtToChampions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhysicalDamageTaken(value: Double): Self = StObject.set(x, "physicalDamageTaken", value.asInstanceOf[js.Any])
+      inline def setPhysicalDamageTaken(value: Double): Self = StObject.set(x, "physicalDamageTaken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayerPosition(value: Double): Self = StObject.set(x, "playerPosition", value.asInstanceOf[js.Any])
+      inline def setPlayerPosition(value: Double): Self = StObject.set(x, "playerPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayerRole(value: Double): Self = StObject.set(x, "playerRole", value.asInstanceOf[js.Any])
+      inline def setPlayerRole(value: Double): Self = StObject.set(x, "playerRole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuadraKills(value: Double): Self = StObject.set(x, "quadraKills", value.asInstanceOf[js.Any])
+      inline def setQuadraKills(value: Double): Self = StObject.set(x, "quadraKills", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSightWardsBought(value: Double): Self = StObject.set(x, "sightWardsBought", value.asInstanceOf[js.Any])
+      inline def setSightWardsBought(value: Double): Self = StObject.set(x, "sightWardsBought", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpell1Cast(value: Double): Self = StObject.set(x, "spell1Cast", value.asInstanceOf[js.Any])
+      inline def setSpell1Cast(value: Double): Self = StObject.set(x, "spell1Cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpell2Cast(value: Double): Self = StObject.set(x, "spell2Cast", value.asInstanceOf[js.Any])
+      inline def setSpell2Cast(value: Double): Self = StObject.set(x, "spell2Cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpell3Cast(value: Double): Self = StObject.set(x, "spell3Cast", value.asInstanceOf[js.Any])
+      inline def setSpell3Cast(value: Double): Self = StObject.set(x, "spell3Cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpell4Cast(value: Double): Self = StObject.set(x, "spell4Cast", value.asInstanceOf[js.Any])
+      inline def setSpell4Cast(value: Double): Self = StObject.set(x, "spell4Cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummonSpell1Cast(value: Double): Self = StObject.set(x, "summonSpell1Cast", value.asInstanceOf[js.Any])
+      inline def setSummonSpell1Cast(value: Double): Self = StObject.set(x, "summonSpell1Cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSummonSpell2Cast(value: Double): Self = StObject.set(x, "summonSpell2Cast", value.asInstanceOf[js.Any])
+      inline def setSummonSpell2Cast(value: Double): Self = StObject.set(x, "summonSpell2Cast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuperMonsterKilled(value: Double): Self = StObject.set(x, "superMonsterKilled", value.asInstanceOf[js.Any])
+      inline def setSuperMonsterKilled(value: Double): Self = StObject.set(x, "superMonsterKilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeam(value: Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
+      inline def setTeam(value: Double): Self = StObject.set(x, "team", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamObjective(value: Double): Self = StObject.set(x, "teamObjective", value.asInstanceOf[js.Any])
+      inline def setTeamObjective(value: Double): Self = StObject.set(x, "teamObjective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimePlayed(value: Double): Self = StObject.set(x, "timePlayed", value.asInstanceOf[js.Any])
+      inline def setTimePlayed(value: Double): Self = StObject.set(x, "timePlayed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDamageDealt(value: Double): Self = StObject.set(x, "totalDamageDealt", value.asInstanceOf[js.Any])
+      inline def setTotalDamageDealt(value: Double): Self = StObject.set(x, "totalDamageDealt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDamageDealtToChampions(value: Double): Self = StObject.set(x, "totalDamageDealtToChampions", value.asInstanceOf[js.Any])
+      inline def setTotalDamageDealtToChampions(value: Double): Self = StObject.set(x, "totalDamageDealtToChampions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalDamageTaker(value: Double): Self = StObject.set(x, "totalDamageTaker", value.asInstanceOf[js.Any])
+      inline def setTotalDamageTaker(value: Double): Self = StObject.set(x, "totalDamageTaker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalHeal(value: Double): Self = StObject.set(x, "totalHeal", value.asInstanceOf[js.Any])
+      inline def setTotalHeal(value: Double): Self = StObject.set(x, "totalHeal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalPlayerScore(value: Double): Self = StObject.set(x, "totalPlayerScore", value.asInstanceOf[js.Any])
+      inline def setTotalPlayerScore(value: Double): Self = StObject.set(x, "totalPlayerScore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalScoreRank(value: Double): Self = StObject.set(x, "totalScoreRank", value.asInstanceOf[js.Any])
+      inline def setTotalScoreRank(value: Double): Self = StObject.set(x, "totalScoreRank", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalTimeCrowdControlDealt(value: Double): Self = StObject.set(x, "totalTimeCrowdControlDealt", value.asInstanceOf[js.Any])
+      inline def setTotalTimeCrowdControlDealt(value: Double): Self = StObject.set(x, "totalTimeCrowdControlDealt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUnitsHealed(value: Double): Self = StObject.set(x, "totalUnitsHealed", value.asInstanceOf[js.Any])
+      inline def setTotalUnitsHealed(value: Double): Self = StObject.set(x, "totalUnitsHealed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTripleKills(value: Double): Self = StObject.set(x, "tripleKills", value.asInstanceOf[js.Any])
+      inline def setTripleKills(value: Double): Self = StObject.set(x, "tripleKills", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrueDamageDealtPlayer(value: Double): Self = StObject.set(x, "trueDamageDealtPlayer", value.asInstanceOf[js.Any])
+      inline def setTrueDamageDealtPlayer(value: Double): Self = StObject.set(x, "trueDamageDealtPlayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrueDamageDealtToChampions(value: Double): Self = StObject.set(x, "trueDamageDealtToChampions", value.asInstanceOf[js.Any])
+      inline def setTrueDamageDealtToChampions(value: Double): Self = StObject.set(x, "trueDamageDealtToChampions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrueDamageTaken(value: Double): Self = StObject.set(x, "trueDamageTaken", value.asInstanceOf[js.Any])
+      inline def setTrueDamageTaken(value: Double): Self = StObject.set(x, "trueDamageTaken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTurrentsKilled(value: Double): Self = StObject.set(x, "turrentsKilled", value.asInstanceOf[js.Any])
+      inline def setTurrentsKilled(value: Double): Self = StObject.set(x, "turrentsKilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnrealKills(value: Double): Self = StObject.set(x, "unrealKills", value.asInstanceOf[js.Any])
+      inline def setUnrealKills(value: Double): Self = StObject.set(x, "unrealKills", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVictoryPointTotal(value: Double): Self = StObject.set(x, "victoryPointTotal", value.asInstanceOf[js.Any])
+      inline def setVictoryPointTotal(value: Double): Self = StObject.set(x, "victoryPointTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisionWardsBought(value: Double): Self = StObject.set(x, "visionWardsBought", value.asInstanceOf[js.Any])
+      inline def setVisionWardsBought(value: Double): Self = StObject.set(x, "visionWardsBought", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWardKilled(value: Double): Self = StObject.set(x, "wardKilled", value.asInstanceOf[js.Any])
+      inline def setWardKilled(value: Double): Self = StObject.set(x, "wardKilled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWardPlaced(value: Double): Self = StObject.set(x, "wardPlaced", value.asInstanceOf[js.Any])
+      inline def setWardPlaced(value: Double): Self = StObject.set(x, "wardPlaced", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWin(value: Boolean): Self = StObject.set(x, "win", value.asInstanceOf[js.Any])
+      inline def setWin(value: Boolean): Self = StObject.set(x, "win", value.asInstanceOf[js.Any])
     }
   }
   
@@ -640,23 +537,18 @@ object Game {
   }
   object RecentGamesDto {
     
-    @scala.inline
-    def apply(games: js.Array[GameDto], summonerId: Double): RecentGamesDto = {
+    inline def apply(games: js.Array[GameDto], summonerId: Double): RecentGamesDto = {
       val __obj = js.Dynamic.literal(games = games.asInstanceOf[js.Any], summonerId = summonerId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecentGamesDto]
     }
     
-    @scala.inline
-    implicit class RecentGamesDtoMutableBuilder[Self <: RecentGamesDto] (val x: Self) extends AnyVal {
+    extension [Self <: RecentGamesDto](x: Self) {
       
-      @scala.inline
-      def setGames(value: js.Array[GameDto]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
+      inline def setGames(value: js.Array[GameDto]): Self = StObject.set(x, "games", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGamesVarargs(value: GameDto*): Self = StObject.set(x, "games", js.Array(value :_*))
+      inline def setGamesVarargs(value: GameDto*): Self = StObject.set(x, "games", js.Array(value :_*))
       
-      @scala.inline
-      def setSummonerId(value: Double): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
+      inline def setSummonerId(value: Double): Self = StObject.set(x, "summonerId", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,16 +10,13 @@ trait ReferenceDotAxisConfiguration extends StObject {
 }
 object ReferenceDotAxisConfiguration {
   
-  @scala.inline
-  def apply(scale: /* x */ Double | String => Double): ReferenceDotAxisConfiguration = {
+  inline def apply(scale: /* x */ Double | String => Double): ReferenceDotAxisConfiguration = {
     val __obj = js.Dynamic.literal(scale = js.Any.fromFunction1(scale))
     __obj.asInstanceOf[ReferenceDotAxisConfiguration]
   }
   
-  @scala.inline
-  implicit class ReferenceDotAxisConfigurationMutableBuilder[Self <: ReferenceDotAxisConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceDotAxisConfiguration](x: Self) {
     
-    @scala.inline
-    def setScale(value: /* x */ Double | String => Double): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
+    inline def setScale(value: /* x */ Double | String => Double): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
   }
 }

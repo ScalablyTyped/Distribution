@@ -15,13 +15,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def contentLengthMiddleware(bodyLengthChecker: BodyLengthCalculator): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("contentLengthMiddleware")(bodyLengthChecker.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  inline def contentLengthMiddleware(bodyLengthChecker: BodyLengthCalculator): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("contentLengthMiddleware")(bodyLengthChecker.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
   
   @JSImport("@aws-sdk/middleware-content-length", "contentLengthMiddlewareOptions")
   @js.native
   val contentLengthMiddlewareOptions: BuildHandlerOptions = js.native
   
-  @scala.inline
-  def getContentLengthPlugin(options: BodyLengthChecker): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentLengthPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  inline def getContentLengthPlugin(options: BodyLengthChecker): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentLengthPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
 }

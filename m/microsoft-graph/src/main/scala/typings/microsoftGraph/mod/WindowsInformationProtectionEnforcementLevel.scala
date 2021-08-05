@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WindowsInformationProtectionEnforcementLevel extends StObject
 object WindowsInformationProtectionEnforcementLevel {
   
-  @scala.inline
-  def encryptAndAuditOnly: typings.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly = "encryptAndAuditOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly]
+  inline def encryptAndAuditOnly: typings.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly = "encryptAndAuditOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly]
   
-  @scala.inline
-  def encryptAuditAndBlock: typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock = "encryptAuditAndBlock".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock]
+  inline def encryptAuditAndBlock: typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock = "encryptAuditAndBlock".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock]
   
-  @scala.inline
-  def encryptAuditAndPrompt: typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt = "encryptAuditAndPrompt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt]
+  inline def encryptAuditAndPrompt: typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt = "encryptAuditAndPrompt".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt]
   
-  @scala.inline
-  def noProtection: typings.microsoftGraph.microsoftGraphStrings.noProtection = "noProtection".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noProtection]
+  inline def noProtection: typings.microsoftGraph.microsoftGraphStrings.noProtection = "noProtection".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.noProtection]
 }

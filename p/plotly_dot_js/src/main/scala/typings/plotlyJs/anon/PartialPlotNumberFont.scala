@@ -17,37 +17,27 @@ trait PartialPlotNumberFont extends StObject {
 }
 object PartialPlotNumberFont {
   
-  @scala.inline
-  def apply(): PartialPlotNumberFont = {
+  inline def apply(): PartialPlotNumberFont = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPlotNumberFont]
   }
   
-  @scala.inline
-  implicit class PartialPlotNumberFontMutableBuilder[Self <: PartialPlotNumberFont] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPlotNumberFont](x: Self) {
     
-    @scala.inline
-    def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: PartialFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     
-    @scala.inline
-    def setValueformat(value: String): Self = StObject.set(x, "valueformat", value.asInstanceOf[js.Any])
+    inline def setValueformat(value: String): Self = StObject.set(x, "valueformat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueformatUndefined: Self = StObject.set(x, "valueformat", js.undefined)
+    inline def setValueformatUndefined: Self = StObject.set(x, "valueformat", js.undefined)
   }
 }

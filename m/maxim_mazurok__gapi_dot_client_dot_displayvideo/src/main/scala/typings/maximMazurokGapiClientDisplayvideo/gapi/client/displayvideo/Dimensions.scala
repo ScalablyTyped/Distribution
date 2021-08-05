@@ -14,25 +14,19 @@ trait Dimensions extends StObject {
 }
 object Dimensions {
   
-  @scala.inline
-  def apply(): Dimensions = {
+  inline def apply(): Dimensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dimensions]
   }
   
-  @scala.inline
-  implicit class DimensionsMutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
+  extension [Self <: Dimensions](x: Self) {
     
-    @scala.inline
-    def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
+    inline def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightPixelsUndefined: Self = StObject.set(x, "heightPixels", js.undefined)
+    inline def setHeightPixelsUndefined: Self = StObject.set(x, "heightPixels", js.undefined)
     
-    @scala.inline
-    def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
+    inline def setWidthPixels(value: Double): Self = StObject.set(x, "widthPixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthPixelsUndefined: Self = StObject.set(x, "widthPixels", js.undefined)
+    inline def setWidthPixelsUndefined: Self = StObject.set(x, "widthPixels", js.undefined)
   }
 }

@@ -13,25 +13,19 @@ trait FlashInstance extends StObject {
 }
 object FlashInstance {
   
-  @scala.inline
-  def apply(): FlashInstance = {
+  inline def apply(): FlashInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlashInstance]
   }
   
-  @scala.inline
-  implicit class FlashInstanceMutableBuilder[Self <: FlashInstance] (val x: Self) extends AnyVal {
+  extension [Self <: FlashInstance](x: Self) {
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "instanceType", js.undefined)
     
-    @scala.inline
-    def setLibraryItem(value: FlashItem): Self = StObject.set(x, "libraryItem", value.asInstanceOf[js.Any])
+    inline def setLibraryItem(value: FlashItem): Self = StObject.set(x, "libraryItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibraryItemUndefined: Self = StObject.set(x, "libraryItem", js.undefined)
+    inline def setLibraryItemUndefined: Self = StObject.set(x, "libraryItem", js.undefined)
   }
 }

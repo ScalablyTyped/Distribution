@@ -15,19 +15,15 @@ trait TypeofSplitView extends StObject {
 }
 object TypeofSplitView {
   
-  @scala.inline
-  def apply(extend: js.Object => SplitView, fn: SplitView): TypeofSplitView = {
+  inline def apply(extend: js.Object => SplitView, fn: SplitView): TypeofSplitView = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSplitView]
   }
   
-  @scala.inline
-  implicit class TypeofSplitViewMutableBuilder[Self <: TypeofSplitView] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSplitView](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => SplitView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => SplitView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: SplitView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: SplitView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait GetGroupRequest extends StObject {
 }
 object GetGroupRequest {
   
-  @scala.inline
-  def apply(): GetGroupRequest = {
+  inline def apply(): GetGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetGroupRequest]
   }
   
-  @scala.inline
-  implicit class GetGroupRequestMutableBuilder[Self <: GetGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGroupRequest](x: Self) {
     
-    @scala.inline
-    def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
+    inline def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
+    inline def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

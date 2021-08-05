@@ -17,11 +17,11 @@ object markedLinksPluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Renderer) = this()
     
-    var brackets: js.Any = js.native
+    /* private */ var brackets: js.Any = js.native
     
-    var buildLink: js.Any = js.native
+    /* private */ var buildLink: js.Any = js.native
     
-    var inlineTag: js.Any = js.native
+    /* private */ var inlineTag: js.Any = js.native
     
     var listInvalidSymbolLinks: Boolean = js.native
     
@@ -29,11 +29,11 @@ object markedLinksPluginMod {
     
     def onParseMarkdown(event: MarkdownEvent): Unit = js.native
     
-    var replaceBrackets: js.Any = js.native
+    /* private */ var replaceBrackets: js.Any = js.native
     
-    var replaceInlineTags: js.Any = js.native
+    /* private */ var replaceInlineTags: js.Any = js.native
     
-    var warnings: js.Any = js.native
+    /* private */ var warnings: js.Any = js.native
   }
   /* static members */
   object MarkedLinksPlugin {
@@ -42,7 +42,6 @@ object markedLinksPluginMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def splitLinkText(text: String): Caption = ^.asInstanceOf[js.Dynamic].applyDynamic("splitLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[Caption]
+    inline def splitLinkText(text: String): Caption = ^.asInstanceOf[js.Dynamic].applyDynamic("splitLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[Caption]
   }
 }

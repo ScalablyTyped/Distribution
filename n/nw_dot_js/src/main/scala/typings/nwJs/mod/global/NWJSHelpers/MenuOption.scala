@@ -16,17 +16,14 @@ trait MenuOption extends StObject {
 }
 object MenuOption {
   
-  @scala.inline
-  def apply(`type`: String): MenuOption = {
+  inline def apply(`type`: String): MenuOption = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuOption]
   }
   
-  @scala.inline
-  implicit class MenuOptionMutableBuilder[Self <: MenuOption] (val x: Self) extends AnyVal {
+  extension [Self <: MenuOption](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

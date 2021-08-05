@@ -33,8 +33,7 @@ trait QueryPropertyValue
 }
 object QueryPropertyValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -55,37 +54,26 @@ object QueryPropertyValue {
     __obj.asInstanceOf[QueryPropertyValue]
   }
   
-  @scala.inline
-  implicit class QueryPropertyValueMutableBuilder[Self <: QueryPropertyValue] (val x: Self) extends AnyVal {
+  extension [Self <: QueryPropertyValue](x: Self) {
     
-    @scala.inline
-    def setGet_boolVal(value: () => Boolean): Self = StObject.set(x, "get_boolVal", js.Any.fromFunction0(value))
+    inline def setGet_boolVal(value: () => Boolean): Self = StObject.set(x, "get_boolVal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_intVal(value: () => Double): Self = StObject.set(x, "get_intVal", js.Any.fromFunction0(value))
+    inline def setGet_intVal(value: () => Double): Self = StObject.set(x, "get_intVal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryPropertyValueTypeIndex(value: () => Double): Self = StObject.set(x, "get_queryPropertyValueTypeIndex", js.Any.fromFunction0(value))
+    inline def setGet_queryPropertyValueTypeIndex(value: () => Double): Self = StObject.set(x, "get_queryPropertyValueTypeIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_strArray(value: () => js.Array[String]): Self = StObject.set(x, "get_strArray", js.Any.fromFunction0(value))
+    inline def setGet_strArray(value: () => js.Array[String]): Self = StObject.set(x, "get_strArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_strVal(value: () => String): Self = StObject.set(x, "get_strVal", js.Any.fromFunction0(value))
+    inline def setGet_strVal(value: () => String): Self = StObject.set(x, "get_strVal", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_boolVal(value: Boolean => Boolean): Self = StObject.set(x, "set_boolVal", js.Any.fromFunction1(value))
+    inline def setSet_boolVal(value: Boolean => Boolean): Self = StObject.set(x, "set_boolVal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_intVal(value: Double => Double): Self = StObject.set(x, "set_intVal", js.Any.fromFunction1(value))
+    inline def setSet_intVal(value: Double => Double): Self = StObject.set(x, "set_intVal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queryPropertyValueTypeIndex(value: Double => Unit): Self = StObject.set(x, "set_queryPropertyValueTypeIndex", js.Any.fromFunction1(value))
+    inline def setSet_queryPropertyValueTypeIndex(value: Double => Unit): Self = StObject.set(x, "set_queryPropertyValueTypeIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_strArray(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "set_strArray", js.Any.fromFunction1(value))
+    inline def setSet_strArray(value: js.Array[String] => js.Array[String]): Self = StObject.set(x, "set_strArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_strVal(value: String => String): Self = StObject.set(x, "set_strVal", js.Any.fromFunction1(value))
+    inline def setSet_strVal(value: String => String): Self = StObject.set(x, "set_strVal", js.Any.fromFunction1(value))
   }
 }

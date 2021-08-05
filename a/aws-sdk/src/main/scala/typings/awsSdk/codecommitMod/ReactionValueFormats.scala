@@ -23,31 +23,23 @@ trait ReactionValueFormats extends StObject {
 }
 object ReactionValueFormats {
   
-  @scala.inline
-  def apply(): ReactionValueFormats = {
+  inline def apply(): ReactionValueFormats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReactionValueFormats]
   }
   
-  @scala.inline
-  implicit class ReactionValueFormatsMutableBuilder[Self <: ReactionValueFormats] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionValueFormats](x: Self) {
     
-    @scala.inline
-    def setEmoji(value: ReactionEmoji): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+    inline def setEmoji(value: ReactionEmoji): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
+    inline def setEmojiUndefined: Self = StObject.set(x, "emoji", js.undefined)
     
-    @scala.inline
-    def setShortCode(value: ReactionShortCode): Self = StObject.set(x, "shortCode", value.asInstanceOf[js.Any])
+    inline def setShortCode(value: ReactionShortCode): Self = StObject.set(x, "shortCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortCodeUndefined: Self = StObject.set(x, "shortCode", js.undefined)
+    inline def setShortCodeUndefined: Self = StObject.set(x, "shortCode", js.undefined)
     
-    @scala.inline
-    def setUnicode(value: ReactionUnicode): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+    inline def setUnicode(value: ReactionUnicode): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
+    inline def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
   }
 }

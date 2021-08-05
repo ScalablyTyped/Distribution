@@ -35,8 +35,7 @@ object JsMockito {
   }
   object JsMockitoStubBuilder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `then`: /* repeated */ js.Function1[/* obj */ js.Any, js.Any] => JsMockitoStubBuilder,
       thenReturn: /* repeated */ js.Any => JsMockitoStubBuilder,
       thenThrow: /* repeated */ Error => JsMockitoStubBuilder
@@ -46,17 +45,13 @@ object JsMockito {
       __obj.asInstanceOf[JsMockitoStubBuilder]
     }
     
-    @scala.inline
-    implicit class JsMockitoStubBuilderMutableBuilder[Self <: JsMockitoStubBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: JsMockitoStubBuilder](x: Self) {
       
-      @scala.inline
-      def setThen(value: /* repeated */ js.Function1[/* obj */ js.Any, js.Any] => JsMockitoStubBuilder): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+      inline def setThen(value: /* repeated */ js.Function1[/* obj */ js.Any, js.Any] => JsMockitoStubBuilder): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThenReturn(value: /* repeated */ js.Any => JsMockitoStubBuilder): Self = StObject.set(x, "thenReturn", js.Any.fromFunction1(value))
+      inline def setThenReturn(value: /* repeated */ js.Any => JsMockitoStubBuilder): Self = StObject.set(x, "thenReturn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThenThrow(value: /* repeated */ Error => JsMockitoStubBuilder): Self = StObject.set(x, "thenThrow", js.Any.fromFunction1(value))
+      inline def setThenThrow(value: /* repeated */ Error => JsMockitoStubBuilder): Self = StObject.set(x, "thenThrow", js.Any.fromFunction1(value))
     }
   }
   

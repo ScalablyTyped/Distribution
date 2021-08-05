@@ -10,19 +10,15 @@ trait MoveToEndOfSelection extends StObject {
 }
 object MoveToEndOfSelection {
   
-  @scala.inline
-  def apply(): MoveToEndOfSelection = {
+  inline def apply(): MoveToEndOfSelection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveToEndOfSelection]
   }
   
-  @scala.inline
-  implicit class MoveToEndOfSelectionMutableBuilder[Self <: MoveToEndOfSelection] (val x: Self) extends AnyVal {
+  extension [Self <: MoveToEndOfSelection](x: Self) {
     
-    @scala.inline
-    def setMoveToEndOfSelection(value: Boolean): Self = StObject.set(x, "moveToEndOfSelection", value.asInstanceOf[js.Any])
+    inline def setMoveToEndOfSelection(value: Boolean): Self = StObject.set(x, "moveToEndOfSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveToEndOfSelectionUndefined: Self = StObject.set(x, "moveToEndOfSelection", js.undefined)
+    inline def setMoveToEndOfSelectionUndefined: Self = StObject.set(x, "moveToEndOfSelection", js.undefined)
   }
 }

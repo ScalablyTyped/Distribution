@@ -22,8 +22,7 @@ trait CompactableComposition[F, G]
 }
 object CompactableComposition {
   
-  @scala.inline
-  def apply[F, G](
+  inline def apply[F, G](
     compact: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, Option<A>>> */ js.Any => js.Any,
     map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, js.Function1[js.Any, js.Any]) => js.Any,
     separate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, Either<A, B>>> */ js.Any => Separated[
@@ -35,16 +34,13 @@ object CompactableComposition {
     __obj.asInstanceOf[CompactableComposition[F, G]]
   }
   
-  @scala.inline
-  implicit class CompactableCompositionMutableBuilder[Self <: CompactableComposition[?, ?], F, G] (val x: Self & (CompactableComposition[F, G])) extends AnyVal {
+  extension [Self <: CompactableComposition[?, ?], F, G](x: Self & (CompactableComposition[F, G])) {
     
-    @scala.inline
-    def setCompact(
+    inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, Option<A>>> */ js.Any => js.Any
     ): Self = StObject.set(x, "compact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparate(
+    inline def setSeparate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, Either<A, B>>> */ js.Any => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, A>> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, HKT<G, B>> */ js.Any

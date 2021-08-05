@@ -14,17 +14,14 @@ trait `1`
 }
 object `1` {
   
-  @scala.inline
-  def apply(): `1` = {
+  inline def apply(): `1` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("decelerateAccelerate")
     __obj.asInstanceOf[`1`]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+  extension [Self <: `1`](x: Self) {
     
-    @scala.inline
-    def setType(value: decelerateAccelerate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: decelerateAccelerate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

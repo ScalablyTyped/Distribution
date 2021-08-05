@@ -30,8 +30,7 @@ trait ChartDocumentWrapper
      with XAggregation
 object ChartDocumentWrapper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Area: XPropertySet,
     Args: SafeArray[PropertyValue],
     CurrentController: XController,

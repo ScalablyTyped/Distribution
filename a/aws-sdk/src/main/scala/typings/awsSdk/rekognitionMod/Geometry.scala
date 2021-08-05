@@ -18,28 +18,21 @@ trait Geometry extends StObject {
 }
 object Geometry {
   
-  @scala.inline
-  def apply(): Geometry = {
+  inline def apply(): Geometry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Geometry]
   }
   
-  @scala.inline
-  implicit class GeometryMutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
+  extension [Self <: Geometry](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
-    @scala.inline
-    def setPolygon(value: Polygon): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
+    inline def setPolygon(value: Polygon): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonUndefined: Self = StObject.set(x, "Polygon", js.undefined)
+    inline def setPolygonUndefined: Self = StObject.set(x, "Polygon", js.undefined)
     
-    @scala.inline
-    def setPolygonVarargs(value: Point*): Self = StObject.set(x, "Polygon", js.Array(value :_*))
+    inline def setPolygonVarargs(value: Point*): Self = StObject.set(x, "Polygon", js.Array(value :_*))
   }
 }

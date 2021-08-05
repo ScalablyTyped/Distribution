@@ -33,8 +33,7 @@ trait SuggestionResult
 }
 object SuggestionResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     isCollection: Boolean,
@@ -46,16 +45,12 @@ object SuggestionResult {
     __obj.asInstanceOf[SuggestionResult]
   }
   
-  @scala.inline
-  implicit class SuggestionResultMutableBuilder[Self <: SuggestionResult] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestionResult](x: Self) {
     
-    @scala.inline
-    def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
+    inline def setIsCollection(value: Boolean): Self = StObject.set(x, "isCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagicKey(value: String): Self = StObject.set(x, "magicKey", value.asInstanceOf[js.Any])
+    inline def setMagicKey(value: String): Self = StObject.set(x, "magicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

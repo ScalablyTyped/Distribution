@@ -13,16 +13,13 @@ trait InvalidateCachedTypings
 }
 object InvalidateCachedTypings {
   
-  @scala.inline
-  def apply(kind: ActionInvalidate, projectName: String): InvalidateCachedTypings = {
+  inline def apply(kind: ActionInvalidate, projectName: String): InvalidateCachedTypings = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvalidateCachedTypings]
   }
   
-  @scala.inline
-  implicit class InvalidateCachedTypingsMutableBuilder[Self <: InvalidateCachedTypings] (val x: Self) extends AnyVal {
+  extension [Self <: InvalidateCachedTypings](x: Self) {
     
-    @scala.inline
-    def setKind(value: ActionInvalidate): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActionInvalidate): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

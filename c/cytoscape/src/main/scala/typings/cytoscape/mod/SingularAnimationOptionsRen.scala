@@ -10,8 +10,7 @@ trait SingularAnimationOptionsRen
      with SingularAnimationOptionsBase
 object SingularAnimationOptionsRen {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     duration: Double,
     easing: TransitionTimingFunction,
     position: Position,

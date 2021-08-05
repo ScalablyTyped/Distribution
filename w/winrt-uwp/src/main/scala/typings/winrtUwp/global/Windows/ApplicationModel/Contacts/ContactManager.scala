@@ -27,8 +27,7 @@ object ContactManager {
     * @return A stream containing the vCard data.
     */
   /* static member */
-  @scala.inline
-  def convertContactToVCardAsync(contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact): IPromiseWithIAsyncOperation[RandomAccessStreamReference] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertContactToVCardAsync")(contact.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[RandomAccessStreamReference]]
+  inline def convertContactToVCardAsync(contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact): IPromiseWithIAsyncOperation[RandomAccessStreamReference] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertContactToVCardAsync")(contact.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[RandomAccessStreamReference]]
   /**
     * Asynchronously converts a Contact to a vCard.
     * @param contact The Contact to convert.
@@ -36,8 +35,7 @@ object ContactManager {
     * @return A stream containing the vCard data.
     */
   /* static member */
-  @scala.inline
-  def convertContactToVCardAsync(contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact, maxBytes: Double): IPromiseWithIAsyncOperation[RandomAccessStreamReference] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertContactToVCardAsync")(contact.asInstanceOf[js.Any], maxBytes.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[RandomAccessStreamReference]]
+  inline def convertContactToVCardAsync(contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact, maxBytes: Double): IPromiseWithIAsyncOperation[RandomAccessStreamReference] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertContactToVCardAsync")(contact.asInstanceOf[js.Any], maxBytes.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[RandomAccessStreamReference]]
   
   /**
     * Asynchronously converts a vCard to a Contact .
@@ -45,24 +43,21 @@ object ContactManager {
     * @return The converted Contact .
     */
   /* static member */
-  @scala.inline
-  def convertVCardToContactAsync(vCard: IRandomAccessStreamReference): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertVCardToContactAsync")(vCard.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact]]
+  inline def convertVCardToContactAsync(vCard: IRandomAccessStreamReference): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertVCardToContactAsync")(vCard.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact]]
   
   /**
     * Gets a Boolean value indicating if the ShowContactCard method is supported on the current platform.
     * @return A Boolean value indicating if the ShowContactCard method is supported on the current platform.
     */
   /* static member */
-  @scala.inline
-  def isShowContactCardSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShowContactCardSupported")().asInstanceOf[Boolean]
+  inline def isShowContactCardSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShowContactCardSupported")().asInstanceOf[Boolean]
   
   /**
     * Gets a Boolean value indicating if the ShowDelayLoadedContactCard method is supported on the current platform.
     * @return A Boolean value indicating if the ShowDelayLoadedContactCard method is supported on the current platform.
     */
   /* static member */
-  @scala.inline
-  def isShowDelayLoadedContactCardSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShowDelayLoadedContactCardSupported")().asInstanceOf[Boolean]
+  inline def isShowDelayLoadedContactCardSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShowDelayLoadedContactCardSupported")().asInstanceOf[Boolean]
   
   /**
     * Asynchronously requests access to the ContactAnnotationStore .
@@ -70,24 +65,21 @@ object ContactManager {
     * @return The requested ContactAnnotationStore .
     */
   /* static member */
-  @scala.inline
-  def requestAnnotationStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnnotationStoreAsync")(accessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStore]]
+  inline def requestAnnotationStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnnotationStoreAsync")(accessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactAnnotationStore]]
   
   /**
     * Retrieves a ContactStore object that enables searching or retrieving contacts on the device.
     * @return An asynchronous operation that returns a ContactStore object on successful completion.
     */
   /* static member */
-  @scala.inline
-  def requestStoreAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStore]]
+  inline def requestStoreAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStore]]
   /**
     * Retrieves a ContactStore object that enables searching or retrieving contacts on the device.
     * @param accessType Specifies the type of read/write access requested.
     * @return An asynchronous operation that returns a ContactStore object on successful completion.
     */
   /* static member */
-  @scala.inline
-  def requestStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(accessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStore]]
+  inline def requestStoreAsync(accessType: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStoreAccessType): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStore] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestStoreAsync")(accessType.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactStore]]
   
   /**
     * Queries the operating system for a user’s contact and shows the contact data in a contact card.
@@ -95,8 +87,7 @@ object ContactManager {
     * @param selection The Rect is the rectangular area of user selection (for example, pressing a button), around which the operating system displays the contact card, not within that rectangular area. For example, if an app uses a button to show the contact card, pass the Rect of the button so the contact card displays around the button, not overlapping it.
     */
   /* static member */
-  @scala.inline
-  def showContactCard(contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact, selection: Rect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showContactCard")(contact.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def showContactCard(contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact, selection: Rect): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showContactCard")(contact.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Queries the operating system for a user’s contact and shows the contact data in a contact card.
     * @param contact The object that represents the contact that the app wants to display the contact card for.
@@ -104,8 +95,7 @@ object ContactManager {
     * @param preferredPlacement The Placement that describes the preferred placement of the contact card.
     */
   /* static member */
-  @scala.inline
-  def showContactCard(
+  inline def showContactCard(
     contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact,
     selection: Rect,
     preferredPlacement: Placement
@@ -118,8 +108,7 @@ object ContactManager {
     * @param contactCardOptions Specifies how to display the contact card, such as which tab to start on when displaying a mini contact card.
     */
   /* static member */
-  @scala.inline
-  def showContactCard(
+  inline def showContactCard(
     contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact,
     selection: Rect,
     preferredPlacement: Placement,
@@ -134,8 +123,7 @@ object ContactManager {
     * @return Returns the ContactCardDelayedDataLoader object that can be used to update the contact card.
     */
   /* static member */
-  @scala.inline
-  def showDelayLoadedContactCard(
+  inline def showDelayLoadedContactCard(
     contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact,
     selection: Rect,
     preferredPlacement: Placement
@@ -149,8 +137,7 @@ object ContactManager {
     * @return Returns the ContactCardDelayedDataLoader object that can be used to update the contact card.
     */
   /* static member */
-  @scala.inline
-  def showDelayLoadedContactCard(
+  inline def showDelayLoadedContactCard(
     contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact,
     selection: Rect,
     preferredPlacement: Placement,
@@ -163,8 +150,7 @@ object ContactManager {
     * @param fullContactCardOptions Specifies how to display the full contact card.
     */
   /* static member */
-  @scala.inline
-  def showFullContactCard(
+  inline def showFullContactCard(
     contact: typings.winrtUwp.Windows.ApplicationModel.Contacts.Contact,
     fullContactCardOptions: typings.winrtUwp.Windows.ApplicationModel.Contacts.FullContactCardOptions
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showFullContactCard")(contact.asInstanceOf[js.Any], fullContactCardOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -174,14 +160,12 @@ object ContactManager {
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactManager.systemDisplayNameOrder")
   @js.native
   def systemDisplayNameOrder: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder = js.native
-  @scala.inline
-  def systemDisplayNameOrder_=(x: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("systemDisplayNameOrder")(x.asInstanceOf[js.Any])
+  inline def systemDisplayNameOrder_=(x: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("systemDisplayNameOrder")(x.asInstanceOf[js.Any])
   
   /** Gets or puts the sort order. */
   /* static member */
   @JSGlobal("Windows.ApplicationModel.Contacts.ContactManager.systemSortOrder")
   @js.native
   def systemSortOrder: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder = js.native
-  @scala.inline
-  def systemSortOrder_=(x: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("systemSortOrder")(x.asInstanceOf[js.Any])
+  inline def systemSortOrder_=(x: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactNameOrder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("systemSortOrder")(x.asInstanceOf[js.Any])
 }

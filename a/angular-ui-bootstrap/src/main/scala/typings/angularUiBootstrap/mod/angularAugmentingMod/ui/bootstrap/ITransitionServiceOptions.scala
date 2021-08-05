@@ -10,19 +10,15 @@ trait ITransitionServiceOptions extends StObject {
 }
 object ITransitionServiceOptions {
   
-  @scala.inline
-  def apply(): ITransitionServiceOptions = {
+  inline def apply(): ITransitionServiceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITransitionServiceOptions]
   }
   
-  @scala.inline
-  implicit class ITransitionServiceOptionsMutableBuilder[Self <: ITransitionServiceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITransitionServiceOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
   }
 }

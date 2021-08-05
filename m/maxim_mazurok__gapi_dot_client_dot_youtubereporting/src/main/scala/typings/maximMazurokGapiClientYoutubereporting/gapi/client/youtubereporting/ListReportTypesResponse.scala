@@ -17,28 +17,21 @@ trait ListReportTypesResponse extends StObject {
 }
 object ListReportTypesResponse {
   
-  @scala.inline
-  def apply(): ListReportTypesResponse = {
+  inline def apply(): ListReportTypesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListReportTypesResponse]
   }
   
-  @scala.inline
-  implicit class ListReportTypesResponseMutableBuilder[Self <: ListReportTypesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListReportTypesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setReportTypes(value: js.Array[ReportType]): Self = StObject.set(x, "reportTypes", value.asInstanceOf[js.Any])
+    inline def setReportTypes(value: js.Array[ReportType]): Self = StObject.set(x, "reportTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTypesUndefined: Self = StObject.set(x, "reportTypes", js.undefined)
+    inline def setReportTypesUndefined: Self = StObject.set(x, "reportTypes", js.undefined)
     
-    @scala.inline
-    def setReportTypesVarargs(value: ReportType*): Self = StObject.set(x, "reportTypes", js.Array(value :_*))
+    inline def setReportTypesVarargs(value: ReportType*): Self = StObject.set(x, "reportTypes", js.Array(value :_*))
   }
 }

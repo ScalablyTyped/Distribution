@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumericBoolean extends StObject
 object NumericBoolean {
   
-  @scala.inline
-  def `0`: typings.vkOpenapi.vkOpenapiNumbers.`0` = 0.asInstanceOf[typings.vkOpenapi.vkOpenapiNumbers.`0`]
+  inline def `0`: typings.vkOpenapi.vkOpenapiNumbers.`0` = 0.asInstanceOf[typings.vkOpenapi.vkOpenapiNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.vkOpenapi.vkOpenapiNumbers.`1` = 1.asInstanceOf[typings.vkOpenapi.vkOpenapiNumbers.`1`]
+  inline def `1`: typings.vkOpenapi.vkOpenapiNumbers.`1` = 1.asInstanceOf[typings.vkOpenapi.vkOpenapiNumbers.`1`]
 }

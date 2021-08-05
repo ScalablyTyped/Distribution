@@ -12,22 +12,17 @@ trait NewValueOldValue extends StObject {
 }
 object NewValueOldValue {
   
-  @scala.inline
-  def apply(newValue: Boolean): NewValueOldValue = {
+  inline def apply(newValue: Boolean): NewValueOldValue = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewValueOldValue]
   }
   
-  @scala.inline
-  implicit class NewValueOldValueMutableBuilder[Self <: NewValueOldValue] (val x: Self) extends AnyVal {
+  extension [Self <: NewValueOldValue](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: Boolean): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: Boolean): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: Boolean): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Boolean): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
   }
 }

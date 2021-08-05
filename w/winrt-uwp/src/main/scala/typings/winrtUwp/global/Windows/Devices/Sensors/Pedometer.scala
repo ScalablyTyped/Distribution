@@ -25,31 +25,27 @@ object Pedometer {
     * @return Returns the Pedometer object from its identifier.
     */
   /* static member */
-  @scala.inline
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Pedometer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Pedometer]]
+  inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Pedometer] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Pedometer]]
   
   /**
     * Asynchronously obtains the default pedometer.
     * @return Asynchronously returns a Pedometer object that represents the default sensor.
     */
   /* static member */
-  @scala.inline
-  def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Pedometer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Pedometer]]
+  inline def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Pedometer] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Sensors.Pedometer]]
   
   /**
     * Gets the device selector.
     * @return Returns the device selector, if it exists; otherwise null.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+  inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   
   /* static member */
   @JSGlobal("Windows.Devices.Sensors.Pedometer.getReadingsFromTriggerDetails")
   @js.native
   def getReadingsFromTriggerDetails: js.Any = js.native
-  @scala.inline
-  def getReadingsFromTriggerDetails_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getReadingsFromTriggerDetails")(x.asInstanceOf[js.Any])
+  inline def getReadingsFromTriggerDetails_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getReadingsFromTriggerDetails")(x.asInstanceOf[js.Any])
   
   /* unmapped type */
   /**
@@ -58,8 +54,7 @@ object Pedometer {
     * @return Asynchronously returns a list of PedometerReading objects that represent info about the sensor.
     */
   /* static member */
-  @scala.inline
-  def getSystemHistoryAsync(fromTime: Date): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def getSystemHistoryAsync(fromTime: Date): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
   /**
     * Asynchronously gets pedometer readings from a specific time and duration.
     * @param fromTime The time for which you want to retrieve the reading.
@@ -67,6 +62,5 @@ object Pedometer {
     * @return Asynchronously returns a list of PedometerReading objects that represent info about the sensor.
     */
   /* static member */
-  @scala.inline
-  def getSystemHistoryAsync(fromTime: Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
+  inline def getSystemHistoryAsync(fromTime: Date, duration: Double): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSystemHistoryAsync")(fromTime.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[IVectorView[js.Any]]]
 }

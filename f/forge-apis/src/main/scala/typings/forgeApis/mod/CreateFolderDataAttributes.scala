@@ -12,20 +12,16 @@ trait CreateFolderDataAttributes extends StObject {
 }
 object CreateFolderDataAttributes {
   
-  @scala.inline
-  def apply(`extension`: BaseAttributesExtensionObject, name: String): CreateFolderDataAttributes = {
+  inline def apply(`extension`: BaseAttributesExtensionObject, name: String): CreateFolderDataAttributes = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFolderDataAttributes]
   }
   
-  @scala.inline
-  implicit class CreateFolderDataAttributesMutableBuilder[Self <: CreateFolderDataAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFolderDataAttributes](x: Self) {
     
-    @scala.inline
-    def setExtension(value: BaseAttributesExtensionObject): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: BaseAttributesExtensionObject): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

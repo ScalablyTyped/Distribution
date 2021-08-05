@@ -8,6 +8,5 @@ object jsqubitsNumbers {
   
   @js.native
   sealed trait `0.0000001` extends StObject
-  @scala.inline
-  def `0.0000001`: `0.0000001` = 0.0000001.asInstanceOf[`0.0000001`]
+  inline def `0.0000001`: `0.0000001` = 0.0000001.asInstanceOf[`0.0000001`]
 }

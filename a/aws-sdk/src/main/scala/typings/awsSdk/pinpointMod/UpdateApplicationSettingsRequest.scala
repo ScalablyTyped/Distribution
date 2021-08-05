@@ -15,19 +15,15 @@ trait UpdateApplicationSettingsRequest extends StObject {
 }
 object UpdateApplicationSettingsRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, WriteApplicationSettingsRequest: WriteApplicationSettingsRequest): UpdateApplicationSettingsRequest = {
+  inline def apply(ApplicationId: string, WriteApplicationSettingsRequest: WriteApplicationSettingsRequest): UpdateApplicationSettingsRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], WriteApplicationSettingsRequest = WriteApplicationSettingsRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateApplicationSettingsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateApplicationSettingsRequestMutableBuilder[Self <: UpdateApplicationSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateApplicationSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteApplicationSettingsRequest(value: WriteApplicationSettingsRequest): Self = StObject.set(x, "WriteApplicationSettingsRequest", value.asInstanceOf[js.Any])
+    inline def setWriteApplicationSettingsRequest(value: WriteApplicationSettingsRequest): Self = StObject.set(x, "WriteApplicationSettingsRequest", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait DisableFastSnapshotRestoreErrorItem extends StObject {
 }
 object DisableFastSnapshotRestoreErrorItem {
   
-  @scala.inline
-  def apply(): DisableFastSnapshotRestoreErrorItem = {
+  inline def apply(): DisableFastSnapshotRestoreErrorItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableFastSnapshotRestoreErrorItem]
   }
   
-  @scala.inline
-  implicit class DisableFastSnapshotRestoreErrorItemMutableBuilder[Self <: DisableFastSnapshotRestoreErrorItem] (val x: Self) extends AnyVal {
+  extension [Self <: DisableFastSnapshotRestoreErrorItem](x: Self) {
     
-    @scala.inline
-    def setFastSnapshotRestoreStateErrors(value: DisableFastSnapshotRestoreStateErrorSet): Self = StObject.set(x, "FastSnapshotRestoreStateErrors", value.asInstanceOf[js.Any])
+    inline def setFastSnapshotRestoreStateErrors(value: DisableFastSnapshotRestoreStateErrorSet): Self = StObject.set(x, "FastSnapshotRestoreStateErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFastSnapshotRestoreStateErrorsUndefined: Self = StObject.set(x, "FastSnapshotRestoreStateErrors", js.undefined)
+    inline def setFastSnapshotRestoreStateErrorsUndefined: Self = StObject.set(x, "FastSnapshotRestoreStateErrors", js.undefined)
     
-    @scala.inline
-    def setFastSnapshotRestoreStateErrorsVarargs(value: DisableFastSnapshotRestoreStateErrorItem*): Self = StObject.set(x, "FastSnapshotRestoreStateErrors", js.Array(value :_*))
+    inline def setFastSnapshotRestoreStateErrorsVarargs(value: DisableFastSnapshotRestoreStateErrorItem*): Self = StObject.set(x, "FastSnapshotRestoreStateErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object scrollMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(size: Double, hasOffsetMax: ScrollOptions): End = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], hasOffsetMax.asInstanceOf[js.Any])).asInstanceOf[End]
+  inline def default(size: Double, hasOffsetMax: ScrollOptions): End = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(size.asInstanceOf[js.Any], hasOffsetMax.asInstanceOf[js.Any])).asInstanceOf[End]
 }

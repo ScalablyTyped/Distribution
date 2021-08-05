@@ -51,43 +51,31 @@ trait SchemaGoogleLongrunningOperation extends StObject {
 }
 object SchemaGoogleLongrunningOperation {
   
-  @scala.inline
-  def apply(): SchemaGoogleLongrunningOperation = {
+  inline def apply(): SchemaGoogleLongrunningOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleLongrunningOperation]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleLongrunningOperationMutableBuilder[Self <: SchemaGoogleLongrunningOperation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleLongrunningOperation](x: Self) {
     
-    @scala.inline
-    def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setError(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResponse(value: StringDictionary[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: StringDictionary[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
   }
 }

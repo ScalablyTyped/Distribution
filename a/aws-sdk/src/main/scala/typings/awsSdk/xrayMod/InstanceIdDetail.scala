@@ -13,19 +13,15 @@ trait InstanceIdDetail extends StObject {
 }
 object InstanceIdDetail {
   
-  @scala.inline
-  def apply(): InstanceIdDetail = {
+  inline def apply(): InstanceIdDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceIdDetail]
   }
   
-  @scala.inline
-  implicit class InstanceIdDetailMutableBuilder[Self <: InstanceIdDetail] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceIdDetail](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
   }
 }

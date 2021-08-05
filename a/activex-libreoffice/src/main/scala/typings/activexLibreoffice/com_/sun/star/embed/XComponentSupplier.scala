@@ -30,8 +30,7 @@ trait XComponentSupplier
 }
 object XComponentSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Component: XCloseable,
     acquire: () => Unit,
     getComponent: () => XCloseable,
@@ -42,13 +41,10 @@ object XComponentSupplier {
     __obj.asInstanceOf[XComponentSupplier]
   }
   
-  @scala.inline
-  implicit class XComponentSupplierMutableBuilder[Self <: XComponentSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XComponentSupplier](x: Self) {
     
-    @scala.inline
-    def setComponent(value: XCloseable): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: XCloseable): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetComponent(value: () => XCloseable): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
+    inline def setGetComponent(value: () => XCloseable): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
   }
 }

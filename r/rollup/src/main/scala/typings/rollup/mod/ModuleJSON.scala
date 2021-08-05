@@ -21,8 +21,7 @@ trait ModuleJSON
 }
 object ModuleJSON {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alwaysRemovedCode: js.Array[js.Tuple2[Double, Double]],
     ast: AcornNode,
     code: String,
@@ -37,34 +36,24 @@ object ModuleJSON {
     __obj.asInstanceOf[ModuleJSON]
   }
   
-  @scala.inline
-  implicit class ModuleJSONMutableBuilder[Self <: ModuleJSON] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleJSON](x: Self) {
     
-    @scala.inline
-    def setAlwaysRemovedCode(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "alwaysRemovedCode", value.asInstanceOf[js.Any])
+    inline def setAlwaysRemovedCode(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "alwaysRemovedCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysRemovedCodeVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "alwaysRemovedCode", js.Array(value :_*))
+    inline def setAlwaysRemovedCodeVarargs(value: (js.Tuple2[Double, Double])*): Self = StObject.set(x, "alwaysRemovedCode", js.Array(value :_*))
     
-    @scala.inline
-    def setAst(value: AcornNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
+    inline def setAst(value: AcornNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformFiles(value: js.Array[EmittedFile]): Self = StObject.set(x, "transformFiles", value.asInstanceOf[js.Any])
+    inline def setTransformFiles(value: js.Array[EmittedFile]): Self = StObject.set(x, "transformFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformFilesUndefined: Self = StObject.set(x, "transformFiles", js.undefined)
+    inline def setTransformFilesUndefined: Self = StObject.set(x, "transformFiles", js.undefined)
     
-    @scala.inline
-    def setTransformFilesVarargs(value: EmittedFile*): Self = StObject.set(x, "transformFiles", js.Array(value :_*))
+    inline def setTransformFilesVarargs(value: EmittedFile*): Self = StObject.set(x, "transformFiles", js.Array(value :_*))
   }
 }

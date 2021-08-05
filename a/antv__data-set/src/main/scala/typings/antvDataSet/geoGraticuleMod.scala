@@ -11,6 +11,5 @@ object geoGraticuleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(_options: js.Any, dataView: View): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_options.asInstanceOf[js.Any], dataView.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default(_options: js.Any, dataView: View): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_options.asInstanceOf[js.Any], dataView.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

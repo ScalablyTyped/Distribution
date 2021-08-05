@@ -29,19 +29,15 @@ trait ExternalLinkInfo extends StObject {
 }
 object ExternalLinkInfo {
   
-  @scala.inline
-  def apply(Data: js.Any, Type: Double): ExternalLinkInfo = {
+  inline def apply(Data: js.Any, Type: Double): ExternalLinkInfo = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalLinkInfo]
   }
   
-  @scala.inline
-  implicit class ExternalLinkInfoMutableBuilder[Self <: ExternalLinkInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExternalLinkInfo](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

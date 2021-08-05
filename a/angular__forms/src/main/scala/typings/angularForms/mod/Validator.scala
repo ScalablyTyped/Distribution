@@ -27,22 +27,17 @@ trait Validator extends StObject {
 }
 object Validator {
   
-  @scala.inline
-  def apply(validate: AbstractControl => ValidationErrors | Null): Validator = {
+  inline def apply(validate: AbstractControl => ValidationErrors | Null): Validator = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate))
     __obj.asInstanceOf[Validator]
   }
   
-  @scala.inline
-  implicit class ValidatorMutableBuilder[Self <: Validator] (val x: Self) extends AnyVal {
+  extension [Self <: Validator](x: Self) {
     
-    @scala.inline
-    def setRegisterOnValidatorChange(value: /* fn */ js.Function0[Unit] => Unit): Self = StObject.set(x, "registerOnValidatorChange", js.Any.fromFunction1(value))
+    inline def setRegisterOnValidatorChange(value: /* fn */ js.Function0[Unit] => Unit): Self = StObject.set(x, "registerOnValidatorChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterOnValidatorChangeUndefined: Self = StObject.set(x, "registerOnValidatorChange", js.undefined)
+    inline def setRegisterOnValidatorChangeUndefined: Self = StObject.set(x, "registerOnValidatorChange", js.undefined)
     
-    @scala.inline
-    def setValidate(value: AbstractControl => ValidationErrors | Null): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    inline def setValidate(value: AbstractControl => ValidationErrors | Null): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
   }
 }

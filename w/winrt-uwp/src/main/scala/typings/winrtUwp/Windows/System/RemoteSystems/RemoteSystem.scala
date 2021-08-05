@@ -44,8 +44,7 @@ trait RemoteSystem extends StObject {
 }
 object RemoteSystem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apps: IVectorView[RemoteSystemApp],
     displayName: String,
     getCapabilitySupportedAsync: String => IPromiseWithIAsyncOperation[Boolean],
@@ -62,40 +61,28 @@ object RemoteSystem {
     __obj.asInstanceOf[RemoteSystem]
   }
   
-  @scala.inline
-  implicit class RemoteSystemMutableBuilder[Self <: RemoteSystem] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteSystem](x: Self) {
     
-    @scala.inline
-    def setApps(value: IVectorView[RemoteSystemApp]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
+    inline def setApps(value: IVectorView[RemoteSystemApp]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCapabilitySupportedAsync(value: String => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "getCapabilitySupportedAsync", js.Any.fromFunction1(value))
+    inline def setGetCapabilitySupportedAsync(value: String => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "getCapabilitySupportedAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAvailableByProximity(value: Boolean): Self = StObject.set(x, "isAvailableByProximity", value.asInstanceOf[js.Any])
+    inline def setIsAvailableByProximity(value: Boolean): Self = StObject.set(x, "isAvailableByProximity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAvailableBySpatialProximity(value: Boolean): Self = StObject.set(x, "isAvailableBySpatialProximity", value.asInstanceOf[js.Any])
+    inline def setIsAvailableBySpatialProximity(value: Boolean): Self = StObject.set(x, "isAvailableBySpatialProximity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerDisplayName(value: String): Self = StObject.set(x, "manufacturerDisplayName", value.asInstanceOf[js.Any])
+    inline def setManufacturerDisplayName(value: String): Self = StObject.set(x, "manufacturerDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelDisplayName(value: String): Self = StObject.set(x, "modelDisplayName", value.asInstanceOf[js.Any])
+    inline def setModelDisplayName(value: String): Self = StObject.set(x, "modelDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatform(value: RemoteSystemPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: RemoteSystemPlatform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: RemoteSystemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RemoteSystemStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ trait Scope extends StObject {
 }
 object Scope {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `object`: RemoteObject,
     `type`: global | local | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack`
   ): Scope = {
@@ -54,32 +53,23 @@ object Scope {
     __obj.asInstanceOf[Scope]
   }
   
-  @scala.inline
-  implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+  extension [Self <: Scope](x: Self) {
     
-    @scala.inline
-    def setEndLocation(value: Location): Self = StObject.set(x, "endLocation", value.asInstanceOf[js.Any])
+    inline def setEndLocation(value: Location): Self = StObject.set(x, "endLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLocationUndefined: Self = StObject.set(x, "endLocation", js.undefined)
+    inline def setEndLocationUndefined: Self = StObject.set(x, "endLocation", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLocation(value: Location): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
+    inline def setStartLocation(value: Location): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
+    inline def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: global | local | `with` | closure | `catch` | block | script_ | eval | module | `wasm-expression-stack`
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

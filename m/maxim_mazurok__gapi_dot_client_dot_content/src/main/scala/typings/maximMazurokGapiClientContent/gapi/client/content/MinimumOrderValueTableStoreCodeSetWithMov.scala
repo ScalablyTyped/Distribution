@@ -14,28 +14,21 @@ trait MinimumOrderValueTableStoreCodeSetWithMov extends StObject {
 }
 object MinimumOrderValueTableStoreCodeSetWithMov {
   
-  @scala.inline
-  def apply(): MinimumOrderValueTableStoreCodeSetWithMov = {
+  inline def apply(): MinimumOrderValueTableStoreCodeSetWithMov = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MinimumOrderValueTableStoreCodeSetWithMov]
   }
   
-  @scala.inline
-  implicit class MinimumOrderValueTableStoreCodeSetWithMovMutableBuilder[Self <: MinimumOrderValueTableStoreCodeSetWithMov] (val x: Self) extends AnyVal {
+  extension [Self <: MinimumOrderValueTableStoreCodeSetWithMov](x: Self) {
     
-    @scala.inline
-    def setStoreCodes(value: js.Array[String]): Self = StObject.set(x, "storeCodes", value.asInstanceOf[js.Any])
+    inline def setStoreCodes(value: js.Array[String]): Self = StObject.set(x, "storeCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreCodesUndefined: Self = StObject.set(x, "storeCodes", js.undefined)
+    inline def setStoreCodesUndefined: Self = StObject.set(x, "storeCodes", js.undefined)
     
-    @scala.inline
-    def setStoreCodesVarargs(value: String*): Self = StObject.set(x, "storeCodes", js.Array(value :_*))
+    inline def setStoreCodesVarargs(value: String*): Self = StObject.set(x, "storeCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: Price): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Price): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

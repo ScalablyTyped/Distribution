@@ -17,22 +17,17 @@ trait DraggableEventUIParams extends StObject {
 }
 object DraggableEventUIParams {
   
-  @scala.inline
-  def apply(helper: JQuery, offset: Left, position: Left): DraggableEventUIParams = {
+  inline def apply(helper: JQuery, offset: Left, position: Left): DraggableEventUIParams = {
     val __obj = js.Dynamic.literal(helper = helper.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableEventUIParams]
   }
   
-  @scala.inline
-  implicit class DraggableEventUIParamsMutableBuilder[Self <: DraggableEventUIParams] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableEventUIParams](x: Self) {
     
-    @scala.inline
-    def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    inline def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Left): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Left): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -40,8 +40,7 @@ trait Scheme
 }
 object Scheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clusterMinSize: Double,
     constructor: js.Function,
     fieldName: String,
@@ -54,22 +53,16 @@ object Scheme {
     __obj.asInstanceOf[Scheme]
   }
   
-  @scala.inline
-  implicit class SchemeMutableBuilder[Self <: Scheme] (val x: Self) extends AnyVal {
+  extension [Self <: Scheme](x: Self) {
     
-    @scala.inline
-    def setClusterMinSize(value: Double): Self = StObject.set(x, "clusterMinSize", value.asInstanceOf[js.Any])
+    inline def setClusterMinSize(value: Double): Self = StObject.set(x, "clusterMinSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingInfo(value: js.Array[LabelClass]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
+    inline def setLabelingInfo(value: js.Array[LabelClass]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingInfoVarargs(value: LabelClass*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClass*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

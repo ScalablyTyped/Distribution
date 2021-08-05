@@ -14,22 +14,17 @@ trait Allow extends StObject {
 }
 object Allow {
   
-  @scala.inline
-  def apply(allow: scala.Double, completed: scala.Double, disallow: scala.Double): Allow = {
+  inline def apply(allow: scala.Double, completed: scala.Double, disallow: scala.Double): Allow = {
     val __obj = js.Dynamic.literal(allow = allow.asInstanceOf[js.Any], completed = completed.asInstanceOf[js.Any], disallow = disallow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Allow]
   }
   
-  @scala.inline
-  implicit class AllowMutableBuilder[Self <: Allow] (val x: Self) extends AnyVal {
+  extension [Self <: Allow](x: Self) {
     
-    @scala.inline
-    def setAllow(value: scala.Double): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    inline def setAllow(value: scala.Double): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisallow(value: scala.Double): Self = StObject.set(x, "disallow", value.asInstanceOf[js.Any])
+    inline def setDisallow(value: scala.Double): Self = StObject.set(x, "disallow", value.asInstanceOf[js.Any])
   }
 }

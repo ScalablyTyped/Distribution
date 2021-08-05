@@ -23,49 +23,35 @@ trait FollowupFlag extends StObject {
 }
 object FollowupFlag {
   
-  @scala.inline
-  def apply(): FollowupFlag = {
+  inline def apply(): FollowupFlag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FollowupFlag]
   }
   
-  @scala.inline
-  implicit class FollowupFlagMutableBuilder[Self <: FollowupFlag] (val x: Self) extends AnyVal {
+  extension [Self <: FollowupFlag](x: Self) {
     
-    @scala.inline
-    def setCompletedDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
+    inline def setCompletedDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedDateTimeNull: Self = StObject.set(x, "completedDateTime", null)
+    inline def setCompletedDateTimeNull: Self = StObject.set(x, "completedDateTime", null)
     
-    @scala.inline
-    def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
+    inline def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
     
-    @scala.inline
-    def setDueDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "dueDateTime", value.asInstanceOf[js.Any])
+    inline def setDueDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "dueDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDueDateTimeNull: Self = StObject.set(x, "dueDateTime", null)
+    inline def setDueDateTimeNull: Self = StObject.set(x, "dueDateTime", null)
     
-    @scala.inline
-    def setDueDateTimeUndefined: Self = StObject.set(x, "dueDateTime", js.undefined)
+    inline def setDueDateTimeUndefined: Self = StObject.set(x, "dueDateTime", js.undefined)
     
-    @scala.inline
-    def setFlagStatus(value: NullableOption[FollowupFlagStatus]): Self = StObject.set(x, "flagStatus", value.asInstanceOf[js.Any])
+    inline def setFlagStatus(value: NullableOption[FollowupFlagStatus]): Self = StObject.set(x, "flagStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagStatusNull: Self = StObject.set(x, "flagStatus", null)
+    inline def setFlagStatusNull: Self = StObject.set(x, "flagStatus", null)
     
-    @scala.inline
-    def setFlagStatusUndefined: Self = StObject.set(x, "flagStatus", js.undefined)
+    inline def setFlagStatusUndefined: Self = StObject.set(x, "flagStatus", js.undefined)
     
-    @scala.inline
-    def setStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
+    inline def setStartDateTimeNull: Self = StObject.set(x, "startDateTime", null)
     
-    @scala.inline
-    def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
   }
 }

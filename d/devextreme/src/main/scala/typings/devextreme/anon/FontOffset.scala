@@ -23,43 +23,31 @@ trait FontOffset extends StObject {
 }
 object FontOffset {
   
-  @scala.inline
-  def apply(): FontOffset = {
+  inline def apply(): FontOffset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontOffset]
   }
   
-  @scala.inline
-  implicit class FontOffsetMutableBuilder[Self <: FontOffset] (val x: Self) extends AnyVal {
+  extension [Self <: FontOffset](x: Self) {
     
-    @scala.inline
-    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+    inline def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
+    inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setWordWrap(value: normal | breakWord | none): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: normal | breakWord | none): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
+    inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
   }
 }

@@ -11,14 +11,10 @@ object spawnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def spawn(cmd: String): js.Promise[SpawnResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpawnResult]]
-  @scala.inline
-  def spawn(cmd: String, args: js.Array[String]): js.Promise[SpawnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpawnResult]]
-  @scala.inline
-  def spawn(cmd: String, args: js.Array[String], opts: SpawnOptions): js.Promise[SpawnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpawnResult]]
-  @scala.inline
-  def spawn(cmd: String, args: Unit, opts: SpawnOptions): js.Promise[SpawnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpawnResult]]
+  inline def spawn(cmd: String): js.Promise[SpawnResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpawnResult]]
+  inline def spawn(cmd: String, args: js.Array[String]): js.Promise[SpawnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpawnResult]]
+  inline def spawn(cmd: String, args: js.Array[String], opts: SpawnOptions): js.Promise[SpawnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpawnResult]]
+  inline def spawn(cmd: String, args: Unit, opts: SpawnOptions): js.Promise[SpawnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpawnResult]]
   
   trait SpawnResult extends StObject {
     
@@ -28,23 +24,18 @@ object spawnMod {
   }
   object SpawnResult {
     
-    @scala.inline
-    def apply(output: String): SpawnResult = {
+    inline def apply(output: String): SpawnResult = {
       val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], code = null)
       __obj.asInstanceOf[SpawnResult]
     }
     
-    @scala.inline
-    implicit class SpawnResultMutableBuilder[Self <: SpawnResult] (val x: Self) extends AnyVal {
+    extension [Self <: SpawnResult](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeNull: Self = StObject.set(x, "code", null)
+      inline def setCodeNull: Self = StObject.set(x, "code", null)
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
 }

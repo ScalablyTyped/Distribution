@@ -23,28 +23,21 @@ trait GetSystemTemplateRevisionsRequest extends StObject {
 }
 object GetSystemTemplateRevisionsRequest {
   
-  @scala.inline
-  def apply(id: Urn): GetSystemTemplateRevisionsRequest = {
+  inline def apply(id: Urn): GetSystemTemplateRevisionsRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSystemTemplateRevisionsRequest]
   }
   
-  @scala.inline
-  implicit class GetSystemTemplateRevisionsRequestMutableBuilder[Self <: GetSystemTemplateRevisionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSystemTemplateRevisionsRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Urn): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

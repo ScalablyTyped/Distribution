@@ -85,67 +85,48 @@ trait RemoteObject extends StObject {
 }
 object RemoteObject {
   
-  @scala.inline
-  def apply(`type`: `object` | function | undefined | string | number | boolean | symbol | bigint | wasm): RemoteObject = {
+  inline def apply(`type`: `object` | function | undefined | string | number | boolean | symbol | bigint | wasm): RemoteObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteObject]
   }
   
-  @scala.inline
-  implicit class RemoteObjectMutableBuilder[Self <: RemoteObject] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteObject](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCustomPreview(value: CustomPreview): Self = StObject.set(x, "customPreview", value.asInstanceOf[js.Any])
+    inline def setCustomPreview(value: CustomPreview): Self = StObject.set(x, "customPreview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomPreviewUndefined: Self = StObject.set(x, "customPreview", js.undefined)
+    inline def setCustomPreviewUndefined: Self = StObject.set(x, "customPreview", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     
-    @scala.inline
-    def setPreview(value: ObjectPreview): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: ObjectPreview): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    @scala.inline
-    def setSubtype(
+    inline def setSubtype(
       value: array | `null` | node | regexp | date | map | set | weakmap | weakset | iterator | generator | error | proxy_ | promise | typedarray | arraybuffer | dataview | i32 | i64 | f32 | f64 | v128 | externref
     ): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
+    inline def setSubtypeUndefined: Self = StObject.set(x, "subtype", js.undefined)
     
-    @scala.inline
-    def setType(value: `object` | function | undefined | string | number | boolean | symbol | bigint | wasm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `object` | function | undefined | string | number | boolean | symbol | bigint | wasm): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnserializableValue(value: UnserializableValue): Self = StObject.set(x, "unserializableValue", value.asInstanceOf[js.Any])
+    inline def setUnserializableValue(value: UnserializableValue): Self = StObject.set(x, "unserializableValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnserializableValueUndefined: Self = StObject.set(x, "unserializableValue", js.undefined)
+    inline def setUnserializableValueUndefined: Self = StObject.set(x, "unserializableValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

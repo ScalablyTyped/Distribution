@@ -24,58 +24,41 @@ trait CatSnapshotsParams
 }
 object CatSnapshotsParams {
   
-  @scala.inline
-  def apply(format: String): CatSnapshotsParams = {
+  inline def apply(format: String): CatSnapshotsParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatSnapshotsParams]
   }
   
-  @scala.inline
-  implicit class CatSnapshotsParamsMutableBuilder[Self <: CatSnapshotsParams] (val x: Self) extends AnyVal {
+  extension [Self <: CatSnapshotsParams](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH(value: NameList): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: NameList): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+    inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
-    @scala.inline
-    def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
+    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
     
-    @scala.inline
-    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
-    @scala.inline
-    def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
+    inline def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
     
-    @scala.inline
-    def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
-    @scala.inline
-    def setRepository(value: NameList): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: NameList): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
-    @scala.inline
-    def setRepositoryVarargs(value: String*): Self = StObject.set(x, "repository", js.Array(value :_*))
+    inline def setRepositoryVarargs(value: String*): Self = StObject.set(x, "repository", js.Array(value :_*))
     
-    @scala.inline
-    def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

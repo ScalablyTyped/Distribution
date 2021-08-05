@@ -13,22 +13,17 @@ trait CancelSpotInstanceRequestsResult extends StObject {
 }
 object CancelSpotInstanceRequestsResult {
   
-  @scala.inline
-  def apply(): CancelSpotInstanceRequestsResult = {
+  inline def apply(): CancelSpotInstanceRequestsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelSpotInstanceRequestsResult]
   }
   
-  @scala.inline
-  implicit class CancelSpotInstanceRequestsResultMutableBuilder[Self <: CancelSpotInstanceRequestsResult] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSpotInstanceRequestsResult](x: Self) {
     
-    @scala.inline
-    def setCancelledSpotInstanceRequests(value: CancelledSpotInstanceRequestList): Self = StObject.set(x, "CancelledSpotInstanceRequests", value.asInstanceOf[js.Any])
+    inline def setCancelledSpotInstanceRequests(value: CancelledSpotInstanceRequestList): Self = StObject.set(x, "CancelledSpotInstanceRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelledSpotInstanceRequestsUndefined: Self = StObject.set(x, "CancelledSpotInstanceRequests", js.undefined)
+    inline def setCancelledSpotInstanceRequestsUndefined: Self = StObject.set(x, "CancelledSpotInstanceRequests", js.undefined)
     
-    @scala.inline
-    def setCancelledSpotInstanceRequestsVarargs(value: CancelledSpotInstanceRequest*): Self = StObject.set(x, "CancelledSpotInstanceRequests", js.Array(value :_*))
+    inline def setCancelledSpotInstanceRequestsVarargs(value: CancelledSpotInstanceRequest*): Self = StObject.set(x, "CancelledSpotInstanceRequests", js.Array(value :_*))
   }
 }

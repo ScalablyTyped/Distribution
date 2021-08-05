@@ -13,8 +13,7 @@ trait ServerDeploymentInput
 }
 object ServerDeploymentInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     condition: String,
     jobCancelTimeoutInMinutes: Double,
     overrideInputs: StringDictionary[String],
@@ -25,10 +24,8 @@ object ServerDeploymentInput {
     __obj.asInstanceOf[ServerDeploymentInput]
   }
   
-  @scala.inline
-  implicit class ServerDeploymentInputMutableBuilder[Self <: ServerDeploymentInput] (val x: Self) extends AnyVal {
+  extension [Self <: ServerDeploymentInput](x: Self) {
     
-    @scala.inline
-    def setParallelExecution(value: ExecutionInput): Self = StObject.set(x, "parallelExecution", value.asInstanceOf[js.Any])
+    inline def setParallelExecution(value: ExecutionInput): Self = StObject.set(x, "parallelExecution", value.asInstanceOf[js.Any])
   }
 }

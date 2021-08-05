@@ -14,16 +14,13 @@ trait AnalyticsConfigurationStorageClassAnalysis extends StObject {
 }
 object AnalyticsConfigurationStorageClassAnalysis {
   
-  @scala.inline
-  def apply(dataExport: Input[AnalyticsConfigurationStorageClassAnalysisDataExport]): AnalyticsConfigurationStorageClassAnalysis = {
+  inline def apply(dataExport: Input[AnalyticsConfigurationStorageClassAnalysisDataExport]): AnalyticsConfigurationStorageClassAnalysis = {
     val __obj = js.Dynamic.literal(dataExport = dataExport.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsConfigurationStorageClassAnalysis]
   }
   
-  @scala.inline
-  implicit class AnalyticsConfigurationStorageClassAnalysisMutableBuilder[Self <: AnalyticsConfigurationStorageClassAnalysis] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsConfigurationStorageClassAnalysis](x: Self) {
     
-    @scala.inline
-    def setDataExport(value: Input[AnalyticsConfigurationStorageClassAnalysisDataExport]): Self = StObject.set(x, "dataExport", value.asInstanceOf[js.Any])
+    inline def setDataExport(value: Input[AnalyticsConfigurationStorageClassAnalysisDataExport]): Self = StObject.set(x, "dataExport", value.asInstanceOf[js.Any])
   }
 }

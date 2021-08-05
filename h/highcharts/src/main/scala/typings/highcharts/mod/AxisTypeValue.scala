@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AxisTypeValue extends StObject
 object AxisTypeValue {
   
-  @scala.inline
-  def category: typings.highcharts.highchartsStrings.category = "category".asInstanceOf[typings.highcharts.highchartsStrings.category]
+  inline def category: typings.highcharts.highchartsStrings.category = "category".asInstanceOf[typings.highcharts.highchartsStrings.category]
   
-  @scala.inline
-  def datetime: typings.highcharts.highchartsStrings.datetime = "datetime".asInstanceOf[typings.highcharts.highchartsStrings.datetime]
+  inline def datetime: typings.highcharts.highchartsStrings.datetime = "datetime".asInstanceOf[typings.highcharts.highchartsStrings.datetime]
   
-  @scala.inline
-  def linear: typings.highcharts.highchartsStrings.linear = "linear".asInstanceOf[typings.highcharts.highchartsStrings.linear]
+  inline def linear: typings.highcharts.highchartsStrings.linear = "linear".asInstanceOf[typings.highcharts.highchartsStrings.linear]
   
-  @scala.inline
-  def logarithmic: typings.highcharts.highchartsStrings.logarithmic = "logarithmic".asInstanceOf[typings.highcharts.highchartsStrings.logarithmic]
+  inline def logarithmic: typings.highcharts.highchartsStrings.logarithmic = "logarithmic".asInstanceOf[typings.highcharts.highchartsStrings.logarithmic]
   
-  @scala.inline
-  def treegrid: typings.highcharts.highchartsStrings.treegrid = "treegrid".asInstanceOf[typings.highcharts.highchartsStrings.treegrid]
+  inline def treegrid: typings.highcharts.highchartsStrings.treegrid = "treegrid".asInstanceOf[typings.highcharts.highchartsStrings.treegrid]
 }

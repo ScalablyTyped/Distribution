@@ -32,37 +32,27 @@ trait LegendBubbleLegendRangesOptions extends StObject {
 }
 object LegendBubbleLegendRangesOptions {
   
-  @scala.inline
-  def apply(): LegendBubbleLegendRangesOptions = {
+  inline def apply(): LegendBubbleLegendRangesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendBubbleLegendRangesOptions]
   }
   
-  @scala.inline
-  implicit class LegendBubbleLegendRangesOptionsMutableBuilder[Self <: LegendBubbleLegendRangesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LegendBubbleLegendRangesOptions](x: Self) {
     
-    @scala.inline
-    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setConnectorColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "connectorColor", value.asInstanceOf[js.Any])
+    inline def setConnectorColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "connectorColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorColorUndefined: Self = StObject.set(x, "connectorColor", js.undefined)
+    inline def setConnectorColorUndefined: Self = StObject.set(x, "connectorColor", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

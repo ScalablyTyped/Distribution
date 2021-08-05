@@ -12,19 +12,15 @@ trait CustomFilterParameters[Params /* <: js.Object */] extends StObject {
 }
 object CustomFilterParameters {
   
-  @scala.inline
-  def apply[Params /* <: js.Object */](callback: (js.Any, Params) => Boolean, callbackParameters: Params): CustomFilterParameters[Params] = {
+  inline def apply[Params /* <: js.Object */](callback: (js.Any, Params) => Boolean, callbackParameters: Params): CustomFilterParameters[Params] = {
     val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), callbackParameters = callbackParameters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomFilterParameters[Params]]
   }
   
-  @scala.inline
-  implicit class CustomFilterParametersMutableBuilder[Self <: CustomFilterParameters[?], Params /* <: js.Object */] (val x: Self & CustomFilterParameters[Params]) extends AnyVal {
+  extension [Self <: CustomFilterParameters[?], Params /* <: js.Object */](x: Self & CustomFilterParameters[Params]) {
     
-    @scala.inline
-    def setCallback(value: (js.Any, Params) => Boolean): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (js.Any, Params) => Boolean): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCallbackParameters(value: Params): Self = StObject.set(x, "callbackParameters", value.asInstanceOf[js.Any])
+    inline def setCallbackParameters(value: Params): Self = StObject.set(x, "callbackParameters", value.asInstanceOf[js.Any])
   }
 }

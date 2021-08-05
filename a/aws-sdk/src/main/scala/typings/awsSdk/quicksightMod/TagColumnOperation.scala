@@ -18,22 +18,17 @@ trait TagColumnOperation extends StObject {
 }
 object TagColumnOperation {
   
-  @scala.inline
-  def apply(ColumnName: ColumnName, Tags: ColumnTagList): TagColumnOperation = {
+  inline def apply(ColumnName: ColumnName, Tags: ColumnTagList): TagColumnOperation = {
     val __obj = js.Dynamic.literal(ColumnName = ColumnName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagColumnOperation]
   }
   
-  @scala.inline
-  implicit class TagColumnOperationMutableBuilder[Self <: TagColumnOperation] (val x: Self) extends AnyVal {
+  extension [Self <: TagColumnOperation](x: Self) {
     
-    @scala.inline
-    def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: ColumnTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: ColumnTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: ColumnTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: ColumnTag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -21,22 +21,17 @@ trait ApplyWorkspaceEditParams extends StObject {
 }
 object ApplyWorkspaceEditParams {
   
-  @scala.inline
-  def apply(edit: WorkspaceEdit): ApplyWorkspaceEditParams = {
+  inline def apply(edit: WorkspaceEdit): ApplyWorkspaceEditParams = {
     val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplyWorkspaceEditParams]
   }
   
-  @scala.inline
-  implicit class ApplyWorkspaceEditParamsMutableBuilder[Self <: ApplyWorkspaceEditParams] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyWorkspaceEditParams](x: Self) {
     
-    @scala.inline
-    def setEdit(value: WorkspaceEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: WorkspaceEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

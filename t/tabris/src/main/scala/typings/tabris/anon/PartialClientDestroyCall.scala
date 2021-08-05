@@ -14,25 +14,19 @@ trait PartialClientDestroyCall extends StObject {
 }
 object PartialClientDestroyCall {
   
-  @scala.inline
-  def apply(): PartialClientDestroyCall = {
+  inline def apply(): PartialClientDestroyCall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClientDestroyCall]
   }
   
-  @scala.inline
-  implicit class PartialClientDestroyCallMutableBuilder[Self <: PartialClientDestroyCall] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClientDestroyCall](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOp(value: destroy): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: destroy): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+    inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
   }
 }

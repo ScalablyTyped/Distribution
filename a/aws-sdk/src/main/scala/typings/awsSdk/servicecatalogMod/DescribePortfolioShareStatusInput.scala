@@ -13,16 +13,13 @@ trait DescribePortfolioShareStatusInput extends StObject {
 }
 object DescribePortfolioShareStatusInput {
   
-  @scala.inline
-  def apply(PortfolioShareToken: Id): DescribePortfolioShareStatusInput = {
+  inline def apply(PortfolioShareToken: Id): DescribePortfolioShareStatusInput = {
     val __obj = js.Dynamic.literal(PortfolioShareToken = PortfolioShareToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribePortfolioShareStatusInput]
   }
   
-  @scala.inline
-  implicit class DescribePortfolioShareStatusInputMutableBuilder[Self <: DescribePortfolioShareStatusInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePortfolioShareStatusInput](x: Self) {
     
-    @scala.inline
-    def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
+    inline def setPortfolioShareToken(value: Id): Self = StObject.set(x, "PortfolioShareToken", value.asInstanceOf[js.Any])
   }
 }

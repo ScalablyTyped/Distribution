@@ -37,55 +37,39 @@ trait GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs extends StObject {
 }
 object GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs = {
+  inline def apply(): GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsMutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
+    inline def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)
     
-    @scala.inline
-    def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironmentVariables(value: js.Array[GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
+    inline def setEnvironmentVariables(value: js.Array[GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable]): Self = StObject.set(x, "environmentVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "environmentVariables", js.undefined)
     
-    @scala.inline
-    def setEnvironmentVariablesVarargs(value: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
+    inline def setEnvironmentVariablesVarargs(value: GoogleDevtoolsRemoteworkersV1test2CommandTaskInputsEnvironmentVariable*): Self = StObject.set(x, "environmentVariables", js.Array(value :_*))
     
-    @scala.inline
-    def setFiles(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Digest]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Digest]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setFilesVarargs(value: GoogleDevtoolsRemoteworkersV1test2Digest*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: GoogleDevtoolsRemoteworkersV1test2Digest*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setInlineBlobs(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Blob]): Self = StObject.set(x, "inlineBlobs", value.asInstanceOf[js.Any])
+    inline def setInlineBlobs(value: js.Array[GoogleDevtoolsRemoteworkersV1test2Blob]): Self = StObject.set(x, "inlineBlobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineBlobsUndefined: Self = StObject.set(x, "inlineBlobs", js.undefined)
+    inline def setInlineBlobsUndefined: Self = StObject.set(x, "inlineBlobs", js.undefined)
     
-    @scala.inline
-    def setInlineBlobsVarargs(value: GoogleDevtoolsRemoteworkersV1test2Blob*): Self = StObject.set(x, "inlineBlobs", js.Array(value :_*))
+    inline def setInlineBlobsVarargs(value: GoogleDevtoolsRemoteworkersV1test2Blob*): Self = StObject.set(x, "inlineBlobs", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
+    inline def setWorkingDirectory(value: String): Self = StObject.set(x, "workingDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
+    inline def setWorkingDirectoryUndefined: Self = StObject.set(x, "workingDirectory", js.undefined)
   }
 }

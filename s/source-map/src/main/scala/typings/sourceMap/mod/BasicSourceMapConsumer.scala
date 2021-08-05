@@ -20,6 +20,5 @@ trait BasicSourceMapConsumer
 }
 object BasicSourceMapConsumer {
   
-  @scala.inline
-  def apply: BasicSourceMapConsumerConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("BasicSourceMapConsumer").asInstanceOf[BasicSourceMapConsumerConstructor]
+  inline def apply: BasicSourceMapConsumerConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("BasicSourceMapConsumer").asInstanceOf[BasicSourceMapConsumerConstructor]
 }

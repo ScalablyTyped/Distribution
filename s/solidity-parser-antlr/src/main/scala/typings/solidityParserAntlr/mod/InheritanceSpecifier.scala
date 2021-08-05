@@ -18,26 +18,20 @@ trait InheritanceSpecifier
 }
 object InheritanceSpecifier {
   
-  @scala.inline
-  def apply(arguments: js.Array[Expression], baseName: UserDefinedTypeName): InheritanceSpecifier = {
+  inline def apply(arguments: js.Array[Expression], baseName: UserDefinedTypeName): InheritanceSpecifier = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], baseName = baseName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("InheritanceSpecifier")
     __obj.asInstanceOf[InheritanceSpecifier]
   }
   
-  @scala.inline
-  implicit class InheritanceSpecifierMutableBuilder[Self <: InheritanceSpecifier] (val x: Self) extends AnyVal {
+  extension [Self <: InheritanceSpecifier](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Expression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Expression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: Expression*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Expression*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setBaseName(value: UserDefinedTypeName): Self = StObject.set(x, "baseName", value.asInstanceOf[js.Any])
+    inline def setBaseName(value: UserDefinedTypeName): Self = StObject.set(x, "baseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.InheritanceSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.InheritanceSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

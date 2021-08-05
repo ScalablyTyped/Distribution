@@ -38,8 +38,7 @@ trait XFileDialog
 }
 object XFileDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentFilter: String,
     Path: String,
     acquire: () => Unit,
@@ -55,28 +54,20 @@ object XFileDialog {
     __obj.asInstanceOf[XFileDialog]
   }
   
-  @scala.inline
-  implicit class XFileDialogMutableBuilder[Self <: XFileDialog] (val x: Self) extends AnyVal {
+  extension [Self <: XFileDialog](x: Self) {
     
-    @scala.inline
-    def setCurrentFilter(value: String): Self = StObject.set(x, "CurrentFilter", value.asInstanceOf[js.Any])
+    inline def setCurrentFilter(value: String): Self = StObject.set(x, "CurrentFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentFilter(value: () => String): Self = StObject.set(x, "getCurrentFilter", js.Any.fromFunction0(value))
+    inline def setGetCurrentFilter(value: () => String): Self = StObject.set(x, "getCurrentFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPath(value: () => String): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
+    inline def setGetPath(value: () => String): Self = StObject.set(x, "getPath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetCurrentFilter(value: String => Unit): Self = StObject.set(x, "setCurrentFilter", js.Any.fromFunction1(value))
+    inline def setSetCurrentFilter(value: String => Unit): Self = StObject.set(x, "setCurrentFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilters(value: (SeqEquiv[String], SeqEquiv[String]) => Unit): Self = StObject.set(x, "setFilters", js.Any.fromFunction2(value))
+    inline def setSetFilters(value: (SeqEquiv[String], SeqEquiv[String]) => Unit): Self = StObject.set(x, "setFilters", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetPath(value: String => Unit): Self = StObject.set(x, "setPath", js.Any.fromFunction1(value))
+    inline def setSetPath(value: String => Unit): Self = StObject.set(x, "setPath", js.Any.fromFunction1(value))
   }
 }

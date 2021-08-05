@@ -22,19 +22,15 @@ trait TemplateIdentifier extends StObject {
 }
 object TemplateIdentifier {
   
-  @scala.inline
-  def apply(Component: String, Name: String): TemplateIdentifier = {
+  inline def apply(Component: String, Name: String): TemplateIdentifier = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateIdentifier]
   }
   
-  @scala.inline
-  implicit class TemplateIdentifierMutableBuilder[Self <: TemplateIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateIdentifier](x: Self) {
     
-    @scala.inline
-    def setComponent(value: String): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: String): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

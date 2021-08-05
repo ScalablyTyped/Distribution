@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[TInput, TOutput, TThis](
+  inline def apply[TInput, TOutput, TThis](
     target: StringDictionary[TInput],
     callback: js.ThisFunction3[
       /* this */ TThis, 
@@ -18,8 +17,7 @@ object mod {
       TOutput
     ]
   ): StringDictionary[TOutput] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[TOutput]]
-  @scala.inline
-  def apply[TInput, TOutput, TThis](
+  inline def apply[TInput, TOutput, TThis](
     target: StringDictionary[TInput],
     callback: js.ThisFunction3[
       /* this */ TThis, 

@@ -12,19 +12,15 @@ trait Borderless extends StObject {
 }
 object Borderless {
   
-  @scala.inline
-  def apply(activeOpacity: Double, borderless: Boolean): Borderless = {
+  inline def apply(activeOpacity: Double, borderless: Boolean): Borderless = {
     val __obj = js.Dynamic.literal(activeOpacity = activeOpacity.asInstanceOf[js.Any], borderless = borderless.asInstanceOf[js.Any])
     __obj.asInstanceOf[Borderless]
   }
   
-  @scala.inline
-  implicit class BorderlessMutableBuilder[Self <: Borderless] (val x: Self) extends AnyVal {
+  extension [Self <: Borderless](x: Self) {
     
-    @scala.inline
-    def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
+    inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
   }
 }

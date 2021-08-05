@@ -13,19 +13,15 @@ trait AwsSecretsManagerSecretRotationRules extends StObject {
 }
 object AwsSecretsManagerSecretRotationRules {
   
-  @scala.inline
-  def apply(): AwsSecretsManagerSecretRotationRules = {
+  inline def apply(): AwsSecretsManagerSecretRotationRules = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsSecretsManagerSecretRotationRules]
   }
   
-  @scala.inline
-  implicit class AwsSecretsManagerSecretRotationRulesMutableBuilder[Self <: AwsSecretsManagerSecretRotationRules] (val x: Self) extends AnyVal {
+  extension [Self <: AwsSecretsManagerSecretRotationRules](x: Self) {
     
-    @scala.inline
-    def setAutomaticallyAfterDays(value: Integer): Self = StObject.set(x, "AutomaticallyAfterDays", value.asInstanceOf[js.Any])
+    inline def setAutomaticallyAfterDays(value: Integer): Self = StObject.set(x, "AutomaticallyAfterDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticallyAfterDaysUndefined: Self = StObject.set(x, "AutomaticallyAfterDays", js.undefined)
+    inline def setAutomaticallyAfterDaysUndefined: Self = StObject.set(x, "AutomaticallyAfterDays", js.undefined)
   }
 }

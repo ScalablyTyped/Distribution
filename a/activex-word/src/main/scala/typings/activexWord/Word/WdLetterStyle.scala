@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdLetterStyle extends StObject
 object WdLetterStyle {
   
-  @scala.inline
-  def wdFullBlock: `0` = 0.asInstanceOf[`0`]
+  inline def wdFullBlock: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdModifiedBlock: `1` = 1.asInstanceOf[`1`]
+  inline def wdModifiedBlock: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdSemiBlock: `2` = 2.asInstanceOf[`2`]
+  inline def wdSemiBlock: `2` = 2.asInstanceOf[`2`]
 }

@@ -16,25 +16,19 @@ trait GetConnectedBluetoothDevicesOptions
 }
 object GetConnectedBluetoothDevicesOptions {
   
-  @scala.inline
-  def apply(success: devicesArrayBluetoothDevi => Unit): GetConnectedBluetoothDevicesOptions = {
+  inline def apply(success: devicesArrayBluetoothDevi => Unit): GetConnectedBluetoothDevicesOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetConnectedBluetoothDevicesOptions]
   }
   
-  @scala.inline
-  implicit class GetConnectedBluetoothDevicesOptionsMutableBuilder[Self <: GetConnectedBluetoothDevicesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectedBluetoothDevicesOptions](x: Self) {
     
-    @scala.inline
-    def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccess(value: devicesArrayBluetoothDevi => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: devicesArrayBluetoothDevi => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

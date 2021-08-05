@@ -12,19 +12,15 @@ trait GetMembershipsParametersv2
 }
 object GetMembershipsParametersv2 {
   
-  @scala.inline
-  def apply(): GetMembershipsParametersv2 = {
+  inline def apply(): GetMembershipsParametersv2 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMembershipsParametersv2]
   }
   
-  @scala.inline
-  implicit class GetMembershipsParametersv2MutableBuilder[Self <: GetMembershipsParametersv2] (val x: Self) extends AnyVal {
+  extension [Self <: GetMembershipsParametersv2](x: Self) {
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
   }
 }

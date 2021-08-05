@@ -23,25 +23,19 @@ trait UpdateInputRequest extends StObject {
 }
 object UpdateInputRequest {
   
-  @scala.inline
-  def apply(inputDefinition: InputDefinition, inputName: InputName): UpdateInputRequest = {
+  inline def apply(inputDefinition: InputDefinition, inputName: InputName): UpdateInputRequest = {
     val __obj = js.Dynamic.literal(inputDefinition = inputDefinition.asInstanceOf[js.Any], inputName = inputName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInputRequest]
   }
   
-  @scala.inline
-  implicit class UpdateInputRequestMutableBuilder[Self <: UpdateInputRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInputRequest](x: Self) {
     
-    @scala.inline
-    def setInputDefinition(value: InputDefinition): Self = StObject.set(x, "inputDefinition", value.asInstanceOf[js.Any])
+    inline def setInputDefinition(value: InputDefinition): Self = StObject.set(x, "inputDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescription(value: InputDescription): Self = StObject.set(x, "inputDescription", value.asInstanceOf[js.Any])
+    inline def setInputDescription(value: InputDescription): Self = StObject.set(x, "inputDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDescriptionUndefined: Self = StObject.set(x, "inputDescription", js.undefined)
+    inline def setInputDescriptionUndefined: Self = StObject.set(x, "inputDescription", js.undefined)
     
-    @scala.inline
-    def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
   }
 }

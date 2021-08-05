@@ -17,15 +17,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compileConverter(): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("compileConverter")().asInstanceOf[Converter]
-  @scala.inline
-  def compileConverter(options: PartialOptions): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("compileConverter")(options.asInstanceOf[js.Any]).asInstanceOf[Converter]
+  inline def compileConverter(): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("compileConverter")().asInstanceOf[Converter]
+  inline def compileConverter(options: PartialOptions): Converter = ^.asInstanceOf[js.Dynamic].applyDynamic("compileConverter")(options.asInstanceOf[js.Any]).asInstanceOf[Converter]
   
-  @scala.inline
-  def convertPDF(pdfFilePath: String): js.Promise[js.Array[ConvertedFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPDF")(pdfFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ConvertedFile]]]
-  @scala.inline
-  def convertPDF(pdfFilePath: String, options: PartialOptions): js.Promise[js.Array[ConvertedFile]] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPDF")(pdfFilePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ConvertedFile]]]
+  inline def convertPDF(pdfFilePath: String): js.Promise[js.Array[ConvertedFile]] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertPDF")(pdfFilePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ConvertedFile]]]
+  inline def convertPDF(pdfFilePath: String, options: PartialOptions): js.Promise[js.Array[ConvertedFile]] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPDF")(pdfFilePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ConvertedFile]]]
   
   trait ConvertedFile extends StObject {
     
@@ -39,26 +35,20 @@ object mod {
   }
   object ConvertedFile {
     
-    @scala.inline
-    def apply(index: Double, name: String, page: Double, path: String): ConvertedFile = {
+    inline def apply(index: Double, name: String, page: Double, path: String): ConvertedFile = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConvertedFile]
     }
     
-    @scala.inline
-    implicit class ConvertedFileMutableBuilder[Self <: ConvertedFile] (val x: Self) extends AnyVal {
+    extension [Self <: ConvertedFile](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,8 +60,7 @@ object mod {
   }
   object Converter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       convertPDF: String => js.Promise[js.Array[ConvertedFile]],
       convertPDFList: js.Array[String] => js.Promise[js.Array[ConvertedFile]]
     ): Converter = {
@@ -79,14 +68,11 @@ object mod {
       __obj.asInstanceOf[Converter]
     }
     
-    @scala.inline
-    implicit class ConverterMutableBuilder[Self <: Converter] (val x: Self) extends AnyVal {
+    extension [Self <: Converter](x: Self) {
       
-      @scala.inline
-      def setConvertPDF(value: String => js.Promise[js.Array[ConvertedFile]]): Self = StObject.set(x, "convertPDF", js.Any.fromFunction1(value))
+      inline def setConvertPDF(value: String => js.Promise[js.Array[ConvertedFile]]): Self = StObject.set(x, "convertPDF", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConvertPDFList(value: js.Array[String] => js.Promise[js.Array[ConvertedFile]]): Self = StObject.set(x, "convertPDFList", js.Any.fromFunction1(value))
+      inline def setConvertPDFList(value: js.Array[String] => js.Promise[js.Array[ConvertedFile]]): Self = StObject.set(x, "convertPDFList", js.Any.fromFunction1(value))
     }
   }
   
@@ -114,8 +100,7 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundColor: String,
       density: Double,
       height: Double,
@@ -130,40 +115,29 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+      inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: OutputFormat): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormatFunction7(
+      inline def setOutputFormatFunction7(
         value: (/* pageNum */ Double, /* pageIndex */ Double, /* totalPagesProcessed */ Double, /* totalPDFPages */ Double, /* name */ String, /* path */ String, /* vm */ TypeofimportedVm) => String
       ): Self = StObject.set(x, "outputFormat", js.Any.fromFunction7(value))
       
-      @scala.inline
-      def setOutputType(value: jpg | png | Dotjpg | Dotpng): Self = StObject.set(x, "outputType", value.asInstanceOf[js.Any])
+      inline def setOutputType(value: jpg | png | Dotjpg | Dotpng): Self = StObject.set(x, "outputType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages(value: Asterisk | String): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: Asterisk | String): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleProcess(value: Boolean): Self = StObject.set(x, "singleProcess", value.asInstanceOf[js.Any])
+      inline def setSingleProcess(value: Boolean): Self = StObject.set(x, "singleProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   

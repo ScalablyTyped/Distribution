@@ -18,25 +18,19 @@ trait Bandwidth extends StObject {
 }
 object Bandwidth {
   
-  @scala.inline
-  def apply(): Bandwidth = {
+  inline def apply(): Bandwidth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bandwidth]
   }
   
-  @scala.inline
-  implicit class BandwidthMutableBuilder[Self <: Bandwidth] (val x: Self) extends AnyVal {
+  extension [Self <: Bandwidth](x: Self) {
     
-    @scala.inline
-    def setDownloadSpeed(value: Integer): Self = StObject.set(x, "DownloadSpeed", value.asInstanceOf[js.Any])
+    inline def setDownloadSpeed(value: Integer): Self = StObject.set(x, "DownloadSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadSpeedUndefined: Self = StObject.set(x, "DownloadSpeed", js.undefined)
+    inline def setDownloadSpeedUndefined: Self = StObject.set(x, "DownloadSpeed", js.undefined)
     
-    @scala.inline
-    def setUploadSpeed(value: Integer): Self = StObject.set(x, "UploadSpeed", value.asInstanceOf[js.Any])
+    inline def setUploadSpeed(value: Integer): Self = StObject.set(x, "UploadSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadSpeedUndefined: Self = StObject.set(x, "UploadSpeed", js.undefined)
+    inline def setUploadSpeedUndefined: Self = StObject.set(x, "UploadSpeed", js.undefined)
   }
 }

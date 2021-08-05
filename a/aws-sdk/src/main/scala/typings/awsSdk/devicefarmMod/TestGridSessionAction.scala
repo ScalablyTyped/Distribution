@@ -33,43 +33,31 @@ trait TestGridSessionAction extends StObject {
 }
 object TestGridSessionAction {
   
-  @scala.inline
-  def apply(): TestGridSessionAction = {
+  inline def apply(): TestGridSessionAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestGridSessionAction]
   }
   
-  @scala.inline
-  implicit class TestGridSessionActionMutableBuilder[Self <: TestGridSessionAction] (val x: Self) extends AnyVal {
+  extension [Self <: TestGridSessionAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Long): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Long): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
+    inline def setRequestMethod(value: String): Self = StObject.set(x, "requestMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestMethodUndefined: Self = StObject.set(x, "requestMethod", js.undefined)
+    inline def setRequestMethodUndefined: Self = StObject.set(x, "requestMethod", js.undefined)
     
-    @scala.inline
-    def setStarted(value: DateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: DateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
+    inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

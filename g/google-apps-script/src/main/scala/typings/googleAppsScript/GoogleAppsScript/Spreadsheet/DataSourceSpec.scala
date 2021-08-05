@@ -31,8 +31,7 @@ trait DataSourceSpec extends StObject {
 }
 object DataSourceSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asBigQuery: () => BigQueryDataSourceSpec,
     copy: () => DataSourceSpecBuilder,
     getParameters: () => js.Array[DataSourceParameter],
@@ -42,19 +41,14 @@ object DataSourceSpec {
     __obj.asInstanceOf[DataSourceSpec]
   }
   
-  @scala.inline
-  implicit class DataSourceSpecMutableBuilder[Self <: DataSourceSpec] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSpec](x: Self) {
     
-    @scala.inline
-    def setAsBigQuery(value: () => BigQueryDataSourceSpec): Self = StObject.set(x, "asBigQuery", js.Any.fromFunction0(value))
+    inline def setAsBigQuery(value: () => BigQueryDataSourceSpec): Self = StObject.set(x, "asBigQuery", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopy(value: () => DataSourceSpecBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
+    inline def setCopy(value: () => DataSourceSpecBuilder): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameters(value: () => js.Array[DataSourceParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => js.Array[DataSourceParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => DataSourceType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => DataSourceType): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
   }
 }

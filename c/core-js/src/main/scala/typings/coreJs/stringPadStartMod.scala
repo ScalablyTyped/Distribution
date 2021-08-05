@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object stringPadStartMod {
   
   /* was `typeof core.String.padStart` */
-  @scala.inline
-  def apply(text: java.lang.String, length: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
-  @scala.inline
-  def apply(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any], fillStr.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  inline def apply(text: java.lang.String, length: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  inline def apply(text: java.lang.String, length: Double, fillStr: java.lang.String): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], length.asInstanceOf[js.Any], fillStr.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
   
   @JSImport("core-js/library/fn/string/pad-start", JSImport.Namespace)
   @js.native

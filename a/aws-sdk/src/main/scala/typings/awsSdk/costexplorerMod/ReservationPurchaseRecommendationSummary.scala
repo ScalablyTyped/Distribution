@@ -23,31 +23,23 @@ trait ReservationPurchaseRecommendationSummary extends StObject {
 }
 object ReservationPurchaseRecommendationSummary {
   
-  @scala.inline
-  def apply(): ReservationPurchaseRecommendationSummary = {
+  inline def apply(): ReservationPurchaseRecommendationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservationPurchaseRecommendationSummary]
   }
   
-  @scala.inline
-  implicit class ReservationPurchaseRecommendationSummaryMutableBuilder[Self <: ReservationPurchaseRecommendationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ReservationPurchaseRecommendationSummary](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: GenericString): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setTotalEstimatedMonthlySavingsAmount(value: GenericString): Self = StObject.set(x, "TotalEstimatedMonthlySavingsAmount", value.asInstanceOf[js.Any])
+    inline def setTotalEstimatedMonthlySavingsAmount(value: GenericString): Self = StObject.set(x, "TotalEstimatedMonthlySavingsAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalEstimatedMonthlySavingsAmountUndefined: Self = StObject.set(x, "TotalEstimatedMonthlySavingsAmount", js.undefined)
+    inline def setTotalEstimatedMonthlySavingsAmountUndefined: Self = StObject.set(x, "TotalEstimatedMonthlySavingsAmount", js.undefined)
     
-    @scala.inline
-    def setTotalEstimatedMonthlySavingsPercentage(value: GenericString): Self = StObject.set(x, "TotalEstimatedMonthlySavingsPercentage", value.asInstanceOf[js.Any])
+    inline def setTotalEstimatedMonthlySavingsPercentage(value: GenericString): Self = StObject.set(x, "TotalEstimatedMonthlySavingsPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalEstimatedMonthlySavingsPercentageUndefined: Self = StObject.set(x, "TotalEstimatedMonthlySavingsPercentage", js.undefined)
+    inline def setTotalEstimatedMonthlySavingsPercentageUndefined: Self = StObject.set(x, "TotalEstimatedMonthlySavingsPercentage", js.undefined)
   }
 }

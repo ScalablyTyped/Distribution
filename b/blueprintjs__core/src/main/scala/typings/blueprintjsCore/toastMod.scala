@@ -30,15 +30,15 @@ object toastMod {
     @JSName("componentWillUnmount")
     def componentWillUnmount_MToast(): Unit = js.native
     
-    var handleActionClick: js.Any = js.native
+    /* private */ var handleActionClick: js.Any = js.native
     
-    var handleCloseClick: js.Any = js.native
+    /* private */ var handleCloseClick: js.Any = js.native
     
-    var maybeRenderActionButton: js.Any = js.native
+    /* private */ var maybeRenderActionButton: js.Any = js.native
     
-    var startTimeout: js.Any = js.native
+    /* private */ var startTimeout: js.Any = js.native
     
-    var triggerDismiss: js.Any = js.native
+    /* private */ var triggerDismiss: js.Any = js.native
   }
   /* static members */
   object Toast {
@@ -50,14 +50,12 @@ object toastMod {
     @JSImport("@blueprintjs/core/lib/esm/components/toast/toast", "Toast.defaultProps")
     @js.native
     def defaultProps: IToastProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IToastProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IToastProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/core/lib/esm/components/toast/toast", "Toast.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait IToastProps
@@ -94,47 +92,34 @@ object toastMod {
   }
   object IToastProps {
     
-    @scala.inline
-    def apply(): IToastProps = {
+    inline def apply(): IToastProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IToastProps]
     }
     
-    @scala.inline
-    implicit class IToastPropsMutableBuilder[Self <: IToastProps] (val x: Self) extends AnyVal {
+    extension [Self <: IToastProps](x: Self) {
       
-      @scala.inline
-      def setAction(value: IActionProps & ILinkProps): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: IActionProps & ILinkProps): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: IconName | MaybeElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconNull: Self = StObject.set(x, "icon", null)
+      inline def setIconNull: Self = StObject.set(x, "icon", null)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: /* didTimeoutExpire */ Boolean => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
+      inline def setOnDismiss(value: /* didTimeoutExpire */ Boolean => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

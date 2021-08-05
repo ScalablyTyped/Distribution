@@ -11,16 +11,13 @@ trait PickImplfilterRemoteData extends StObject {
 }
 object PickImplfilterRemoteData {
   
-  @scala.inline
-  def apply(filterRemoteData: Boolean): PickImplfilterRemoteData = {
+  inline def apply(filterRemoteData: Boolean): PickImplfilterRemoteData = {
     val __obj = js.Dynamic.literal(filterRemoteData = filterRemoteData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplfilterRemoteData]
   }
   
-  @scala.inline
-  implicit class PickImplfilterRemoteDataMutableBuilder[Self <: PickImplfilterRemoteData] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplfilterRemoteData](x: Self) {
     
-    @scala.inline
-    def setFilterRemoteData(value: Boolean): Self = StObject.set(x, "filterRemoteData", value.asInstanceOf[js.Any])
+    inline def setFilterRemoteData(value: Boolean): Self = StObject.set(x, "filterRemoteData", value.asInstanceOf[js.Any])
   }
 }

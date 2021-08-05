@@ -34,8 +34,7 @@ object DrawEvents {
   }
   object Created {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       layer: Circle_[js.Any] | CircleMarker_[js.Any] | Marker_[js.Any] | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) | Rectangle_[js.Any],
       layerType: String,
       propagatedFrom: js.Any,
@@ -48,16 +47,13 @@ object DrawEvents {
       __obj.asInstanceOf[Created]
     }
     
-    @scala.inline
-    implicit class CreatedMutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
+    extension [Self <: Created](x: Self) {
       
-      @scala.inline
-      def setLayer(
+      inline def setLayer(
         value: Circle_[js.Any] | CircleMarker_[js.Any] | Marker_[js.Any] | Polygon_[js.Any] | (Polyline_[LineString | MultiLineString, js.Any]) | Rectangle_[js.Any]
       ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerType(value: String): Self = StObject.set(x, "layerType", value.asInstanceOf[js.Any])
+      inline def setLayerType(value: String): Self = StObject.set(x, "layerType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -72,8 +68,7 @@ object DrawEvents {
   }
   object DeleteStart {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handler: String,
       layer: js.Any,
       propagatedFrom: js.Any,
@@ -86,11 +81,9 @@ object DrawEvents {
       __obj.asInstanceOf[DeleteStart]
     }
     
-    @scala.inline
-    implicit class DeleteStartMutableBuilder[Self <: DeleteStart] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteStart](x: Self) {
       
-      @scala.inline
-      def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,8 +98,7 @@ object DrawEvents {
   }
   object DeleteStop {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handler: String,
       layer: js.Any,
       propagatedFrom: js.Any,
@@ -119,11 +111,9 @@ object DrawEvents {
       __obj.asInstanceOf[DeleteStop]
     }
     
-    @scala.inline
-    implicit class DeleteStopMutableBuilder[Self <: DeleteStop] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteStop](x: Self) {
       
-      @scala.inline
-      def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,8 +131,7 @@ object DrawEvents {
   }
   object Deleted {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       layer: js.Any,
       layers: LayerGroup_[js.Any],
       propagatedFrom: js.Any,
@@ -155,11 +144,9 @@ object DrawEvents {
       __obj.asInstanceOf[Deleted]
     }
     
-    @scala.inline
-    implicit class DeletedMutableBuilder[Self <: Deleted] (val x: Self) extends AnyVal {
+    extension [Self <: Deleted](x: Self) {
       
-      @scala.inline
-      def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,8 +161,7 @@ object DrawEvents {
   }
   object DrawStart {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       layer: js.Any,
       layerType: String,
       propagatedFrom: js.Any,
@@ -188,11 +174,9 @@ object DrawEvents {
       __obj.asInstanceOf[DrawStart]
     }
     
-    @scala.inline
-    implicit class DrawStartMutableBuilder[Self <: DrawStart] (val x: Self) extends AnyVal {
+    extension [Self <: DrawStart](x: Self) {
       
-      @scala.inline
-      def setLayerType(value: String): Self = StObject.set(x, "layerType", value.asInstanceOf[js.Any])
+      inline def setLayerType(value: String): Self = StObject.set(x, "layerType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,8 +191,7 @@ object DrawEvents {
   }
   object DrawStop {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       layer: js.Any,
       layerType: String,
       propagatedFrom: js.Any,
@@ -221,11 +204,9 @@ object DrawEvents {
       __obj.asInstanceOf[DrawStop]
     }
     
-    @scala.inline
-    implicit class DrawStopMutableBuilder[Self <: DrawStop] (val x: Self) extends AnyVal {
+    extension [Self <: DrawStop](x: Self) {
       
-      @scala.inline
-      def setLayerType(value: String): Self = StObject.set(x, "layerType", value.asInstanceOf[js.Any])
+      inline def setLayerType(value: String): Self = StObject.set(x, "layerType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -240,8 +221,7 @@ object DrawEvents {
   }
   object DrawVertex {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       layer: js.Any,
       layers: LayerGroup_[js.Any],
       propagatedFrom: js.Any,
@@ -254,11 +234,9 @@ object DrawEvents {
       __obj.asInstanceOf[DrawVertex]
     }
     
-    @scala.inline
-    implicit class DrawVertexMutableBuilder[Self <: DrawVertex] (val x: Self) extends AnyVal {
+    extension [Self <: DrawVertex](x: Self) {
       
-      @scala.inline
-      def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,18 +252,15 @@ object DrawEvents {
   }
   object EditMove {
     
-    @scala.inline
-    def apply(layer: Layer, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): EditMove = {
+    inline def apply(layer: Layer, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): EditMove = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditMove]
     }
     
-    @scala.inline
-    implicit class EditMoveMutableBuilder[Self <: EditMove] (val x: Self) extends AnyVal {
+    extension [Self <: EditMove](x: Self) {
       
-      @scala.inline
-      def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -301,18 +276,15 @@ object DrawEvents {
   }
   object EditResize {
     
-    @scala.inline
-    def apply(layer: Layer, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): EditResize = {
+    inline def apply(layer: Layer, propagatedFrom: js.Any, sourceTarget: js.Any, target: js.Any, `type`: String): EditResize = {
       val __obj = js.Dynamic.literal(layer = layer.asInstanceOf[js.Any], propagatedFrom = propagatedFrom.asInstanceOf[js.Any], sourceTarget = sourceTarget.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditResize]
     }
     
-    @scala.inline
-    implicit class EditResizeMutableBuilder[Self <: EditResize] (val x: Self) extends AnyVal {
+    extension [Self <: EditResize](x: Self) {
       
-      @scala.inline
-      def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,8 +299,7 @@ object DrawEvents {
   }
   object EditStart {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handler: String,
       layer: js.Any,
       propagatedFrom: js.Any,
@@ -341,11 +312,9 @@ object DrawEvents {
       __obj.asInstanceOf[EditStart]
     }
     
-    @scala.inline
-    implicit class EditStartMutableBuilder[Self <: EditStart] (val x: Self) extends AnyVal {
+    extension [Self <: EditStart](x: Self) {
       
-      @scala.inline
-      def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -360,8 +329,7 @@ object DrawEvents {
   }
   object EditStop {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handler: String,
       layer: js.Any,
       propagatedFrom: js.Any,
@@ -374,11 +342,9 @@ object DrawEvents {
       __obj.asInstanceOf[EditStop]
     }
     
-    @scala.inline
-    implicit class EditStopMutableBuilder[Self <: EditStop] (val x: Self) extends AnyVal {
+    extension [Self <: EditStop](x: Self) {
       
-      @scala.inline
-      def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -395,8 +361,7 @@ object DrawEvents {
   }
   object EditVertex {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       layer: js.Any,
       layers: LayerGroup_[js.Any],
       poly: (Polyline_[LineString | MultiLineString, js.Any]) | Polygon_[js.Any],
@@ -410,14 +375,11 @@ object DrawEvents {
       __obj.asInstanceOf[EditVertex]
     }
     
-    @scala.inline
-    implicit class EditVertexMutableBuilder[Self <: EditVertex] (val x: Self) extends AnyVal {
+    extension [Self <: EditVertex](x: Self) {
       
-      @scala.inline
-      def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoly(value: (Polyline_[LineString | MultiLineString, js.Any]) | Polygon_[js.Any]): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
+      inline def setPoly(value: (Polyline_[LineString | MultiLineString, js.Any]) | Polygon_[js.Any]): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
     }
   }
   
@@ -432,8 +394,7 @@ object DrawEvents {
   }
   object Edited {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       layer: js.Any,
       layers: LayerGroup_[js.Any],
       propagatedFrom: js.Any,
@@ -446,11 +407,9 @@ object DrawEvents {
       __obj.asInstanceOf[Edited]
     }
     
-    @scala.inline
-    implicit class EditedMutableBuilder[Self <: Edited] (val x: Self) extends AnyVal {
+    extension [Self <: Edited](x: Self) {
       
-      @scala.inline
-      def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+      inline def setLayers(value: LayerGroup_[js.Any]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     }
   }
   

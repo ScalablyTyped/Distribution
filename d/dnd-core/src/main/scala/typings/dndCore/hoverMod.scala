@@ -14,8 +14,7 @@ object hoverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createHover(manager: DragDropManager): js.Function2[
+  inline def createHover(manager: DragDropManager): js.Function2[
     /* targetIdsArg */ js.Array[String], 
     /* hasClientOffset */ js.UndefOr[HoverOptions], 
     Action[HoverPayload]

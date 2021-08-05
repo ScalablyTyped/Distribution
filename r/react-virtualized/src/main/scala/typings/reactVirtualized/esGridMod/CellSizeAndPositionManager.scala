@@ -58,8 +58,7 @@ trait CellSizeAndPositionManager extends StObject {
 }
 object CellSizeAndPositionManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     areOffsetsAdjusted: () => Boolean,
     configure: ConfigureParams => Unit,
     getCellCount: () => Double,
@@ -77,43 +76,30 @@ object CellSizeAndPositionManager {
     __obj.asInstanceOf[CellSizeAndPositionManager]
   }
   
-  @scala.inline
-  implicit class CellSizeAndPositionManagerMutableBuilder[Self <: CellSizeAndPositionManager] (val x: Self) extends AnyVal {
+  extension [Self <: CellSizeAndPositionManager](x: Self) {
     
-    @scala.inline
-    def setAreOffsetsAdjusted(value: () => Boolean): Self = StObject.set(x, "areOffsetsAdjusted", js.Any.fromFunction0(value))
+    inline def setAreOffsetsAdjusted(value: () => Boolean): Self = StObject.set(x, "areOffsetsAdjusted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConfigure(value: ConfigureParams => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
+    inline def setConfigure(value: ConfigureParams => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCellCount(value: () => Double): Self = StObject.set(x, "getCellCount", js.Any.fromFunction0(value))
+    inline def setGetCellCount(value: () => Double): Self = StObject.set(x, "getCellCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEstimatedCellSize(value: () => Double): Self = StObject.set(x, "getEstimatedCellSize", js.Any.fromFunction0(value))
+    inline def setGetEstimatedCellSize(value: () => Double): Self = StObject.set(x, "getEstimatedCellSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastMeasuredIndex(value: () => Double): Self = StObject.set(x, "getLastMeasuredIndex", js.Any.fromFunction0(value))
+    inline def setGetLastMeasuredIndex(value: () => Double): Self = StObject.set(x, "getLastMeasuredIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOffsetAdjustment(value: ContainerSizeAndOffset => Double): Self = StObject.set(x, "getOffsetAdjustment", js.Any.fromFunction1(value))
+    inline def setGetOffsetAdjustment(value: ContainerSizeAndOffset => Double): Self = StObject.set(x, "getOffsetAdjustment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSizeAndPositionOfCell(value: Double => SizeAndPositionData): Self = StObject.set(x, "getSizeAndPositionOfCell", js.Any.fromFunction1(value))
+    inline def setGetSizeAndPositionOfCell(value: Double => SizeAndPositionData): Self = StObject.set(x, "getSizeAndPositionOfCell", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSizeAndPositionOfLastMeasuredCell(value: () => SizeAndPositionData): Self = StObject.set(x, "getSizeAndPositionOfLastMeasuredCell", js.Any.fromFunction0(value))
+    inline def setGetSizeAndPositionOfLastMeasuredCell(value: () => SizeAndPositionData): Self = StObject.set(x, "getSizeAndPositionOfLastMeasuredCell", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTotalSize(value: () => Double): Self = StObject.set(x, "getTotalSize", js.Any.fromFunction0(value))
+    inline def setGetTotalSize(value: () => Double): Self = StObject.set(x, "getTotalSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpdatedOffsetForIndex(value: ContainerSize => Double): Self = StObject.set(x, "getUpdatedOffsetForIndex", js.Any.fromFunction1(value))
+    inline def setGetUpdatedOffsetForIndex(value: ContainerSize => Double): Self = StObject.set(x, "getUpdatedOffsetForIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVisibleCellRange(value: GetVisibleCellRangeParams => VisibleCellRange): Self = StObject.set(x, "getVisibleCellRange", js.Any.fromFunction1(value))
+    inline def setGetVisibleCellRange(value: GetVisibleCellRangeParams => VisibleCellRange): Self = StObject.set(x, "getVisibleCellRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResetCell(value: Double => Unit): Self = StObject.set(x, "resetCell", js.Any.fromFunction1(value))
+    inline def setResetCell(value: Double => Unit): Self = StObject.set(x, "resetCell", js.Any.fromFunction1(value))
   }
 }

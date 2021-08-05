@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Align extends StObject
 object Align {
   
-  @scala.inline
-  def auto: typings.reactWindow.reactWindowStrings.auto = "auto".asInstanceOf[typings.reactWindow.reactWindowStrings.auto]
+  inline def auto: typings.reactWindow.reactWindowStrings.auto = "auto".asInstanceOf[typings.reactWindow.reactWindowStrings.auto]
   
-  @scala.inline
-  def center: typings.reactWindow.reactWindowStrings.center = "center".asInstanceOf[typings.reactWindow.reactWindowStrings.center]
+  inline def center: typings.reactWindow.reactWindowStrings.center = "center".asInstanceOf[typings.reactWindow.reactWindowStrings.center]
   
-  @scala.inline
-  def end: typings.reactWindow.reactWindowStrings.end = "end".asInstanceOf[typings.reactWindow.reactWindowStrings.end]
+  inline def end: typings.reactWindow.reactWindowStrings.end = "end".asInstanceOf[typings.reactWindow.reactWindowStrings.end]
   
-  @scala.inline
-  def smart: typings.reactWindow.reactWindowStrings.smart = "smart".asInstanceOf[typings.reactWindow.reactWindowStrings.smart]
+  inline def smart: typings.reactWindow.reactWindowStrings.smart = "smart".asInstanceOf[typings.reactWindow.reactWindowStrings.smart]
   
-  @scala.inline
-  def start: typings.reactWindow.reactWindowStrings.start = "start".asInstanceOf[typings.reactWindow.reactWindowStrings.start]
+  inline def start: typings.reactWindow.reactWindowStrings.start = "start".asInstanceOf[typings.reactWindow.reactWindowStrings.start]
 }

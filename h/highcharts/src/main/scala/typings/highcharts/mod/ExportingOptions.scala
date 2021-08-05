@@ -213,151 +213,103 @@ trait ExportingOptions extends StObject {
 }
 object ExportingOptions {
   
-  @scala.inline
-  def apply(): ExportingOptions = {
+  inline def apply(): ExportingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportingOptions]
   }
   
-  @scala.inline
-  implicit class ExportingOptionsMutableBuilder[Self <: ExportingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportingOptions](x: Self) {
     
-    @scala.inline
-    def setAccessibility(value: ExportingAccessibilityOptions): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: ExportingAccessibilityOptions): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
-    @scala.inline
-    def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
+    inline def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowHTMLUndefined: Self = StObject.set(x, "allowHTML", js.undefined)
+    inline def setAllowHTMLUndefined: Self = StObject.set(x, "allowHTML", js.undefined)
     
-    @scala.inline
-    def setButtons(value: ExportingButtonsOptions | Dictionary[ExportingButtonsOptionsObject]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: ExportingButtonsOptions | Dictionary[ExportingButtonsOptionsObject]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setChartOptions(value: Options): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
+    inline def setChartOptions(value: Options): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartOptionsUndefined: Self = StObject.set(x, "chartOptions", js.undefined)
+    inline def setChartOptionsUndefined: Self = StObject.set(x, "chartOptions", js.undefined)
     
-    @scala.inline
-    def setCsv(value: ExportingCsvOptions): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+    inline def setCsv(value: ExportingCsvOptions): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+    inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setError(value: (/* options */ ExportingOptions, /* err */ Error) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    inline def setError(value: (/* options */ ExportingOptions, /* err */ Error) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFallbackToExportServer(value: Boolean): Self = StObject.set(x, "fallbackToExportServer", value.asInstanceOf[js.Any])
+    inline def setFallbackToExportServer(value: Boolean): Self = StObject.set(x, "fallbackToExportServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackToExportServerUndefined: Self = StObject.set(x, "fallbackToExportServer", js.undefined)
+    inline def setFallbackToExportServerUndefined: Self = StObject.set(x, "fallbackToExportServer", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setFormAttributes(value: HTMLAttributes): Self = StObject.set(x, "formAttributes", value.asInstanceOf[js.Any])
+    inline def setFormAttributes(value: HTMLAttributes): Self = StObject.set(x, "formAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormAttributesUndefined: Self = StObject.set(x, "formAttributes", js.undefined)
+    inline def setFormAttributesUndefined: Self = StObject.set(x, "formAttributes", js.undefined)
     
-    @scala.inline
-    def setLibURL(value: String): Self = StObject.set(x, "libURL", value.asInstanceOf[js.Any])
+    inline def setLibURL(value: String): Self = StObject.set(x, "libURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibURLUndefined: Self = StObject.set(x, "libURL", js.undefined)
+    inline def setLibURLUndefined: Self = StObject.set(x, "libURL", js.undefined)
     
-    @scala.inline
-    def setMenuItemDefinitions(value: Dictionary[ExportingMenuObject]): Self = StObject.set(x, "menuItemDefinitions", value.asInstanceOf[js.Any])
+    inline def setMenuItemDefinitions(value: Dictionary[ExportingMenuObject]): Self = StObject.set(x, "menuItemDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuItemDefinitionsUndefined: Self = StObject.set(x, "menuItemDefinitions", js.undefined)
+    inline def setMenuItemDefinitionsUndefined: Self = StObject.set(x, "menuItemDefinitions", js.undefined)
     
-    @scala.inline
-    def setPrintMaxWidth(value: Double): Self = StObject.set(x, "printMaxWidth", value.asInstanceOf[js.Any])
+    inline def setPrintMaxWidth(value: Double): Self = StObject.set(x, "printMaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintMaxWidthUndefined: Self = StObject.set(x, "printMaxWidth", js.undefined)
+    inline def setPrintMaxWidthUndefined: Self = StObject.set(x, "printMaxWidth", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setShowTable(value: Boolean): Self = StObject.set(x, "showTable", value.asInstanceOf[js.Any])
+    inline def setShowTable(value: Boolean): Self = StObject.set(x, "showTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTableUndefined: Self = StObject.set(x, "showTable", js.undefined)
+    inline def setShowTableUndefined: Self = StObject.set(x, "showTable", js.undefined)
     
-    @scala.inline
-    def setSourceHeight(value: Double): Self = StObject.set(x, "sourceHeight", value.asInstanceOf[js.Any])
+    inline def setSourceHeight(value: Double): Self = StObject.set(x, "sourceHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceHeightUndefined: Self = StObject.set(x, "sourceHeight", js.undefined)
+    inline def setSourceHeightUndefined: Self = StObject.set(x, "sourceHeight", js.undefined)
     
-    @scala.inline
-    def setSourceWidth(value: Double): Self = StObject.set(x, "sourceWidth", value.asInstanceOf[js.Any])
+    inline def setSourceWidth(value: Double): Self = StObject.set(x, "sourceWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceWidthUndefined: Self = StObject.set(x, "sourceWidth", js.undefined)
+    inline def setSourceWidthUndefined: Self = StObject.set(x, "sourceWidth", js.undefined)
     
-    @scala.inline
-    def setTableCaption(value: Boolean | String): Self = StObject.set(x, "tableCaption", value.asInstanceOf[js.Any])
+    inline def setTableCaption(value: Boolean | String): Self = StObject.set(x, "tableCaption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCaptionUndefined: Self = StObject.set(x, "tableCaption", js.undefined)
+    inline def setTableCaptionUndefined: Self = StObject.set(x, "tableCaption", js.undefined)
     
-    @scala.inline
-    def setType(value: ExportingMimeTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExportingMimeTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUseMultiLevelHeaders(value: Boolean): Self = StObject.set(x, "useMultiLevelHeaders", value.asInstanceOf[js.Any])
+    inline def setUseMultiLevelHeaders(value: Boolean): Self = StObject.set(x, "useMultiLevelHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMultiLevelHeadersUndefined: Self = StObject.set(x, "useMultiLevelHeaders", js.undefined)
+    inline def setUseMultiLevelHeadersUndefined: Self = StObject.set(x, "useMultiLevelHeaders", js.undefined)
     
-    @scala.inline
-    def setUseRowspanHeaders(value: Boolean): Self = StObject.set(x, "useRowspanHeaders", value.asInstanceOf[js.Any])
+    inline def setUseRowspanHeaders(value: Boolean): Self = StObject.set(x, "useRowspanHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseRowspanHeadersUndefined: Self = StObject.set(x, "useRowspanHeaders", js.undefined)
+    inline def setUseRowspanHeadersUndefined: Self = StObject.set(x, "useRowspanHeaders", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

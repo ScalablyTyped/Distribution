@@ -21,8 +21,7 @@ trait InteractiveAugmentedIOException
 }
 object InteractiveAugmentedIOException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Arguments: SafeArray[js.Any],
     Classification: InteractionClassification,
     Code: IOErrorCode,
@@ -33,10 +32,8 @@ object InteractiveAugmentedIOException {
     __obj.asInstanceOf[InteractiveAugmentedIOException]
   }
   
-  @scala.inline
-  implicit class InteractiveAugmentedIOExceptionMutableBuilder[Self <: InteractiveAugmentedIOException] (val x: Self) extends AnyVal {
+  extension [Self <: InteractiveAugmentedIOException](x: Self) {
     
-    @scala.inline
-    def setArguments(value: SafeArray[js.Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: SafeArray[js.Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
   }
 }

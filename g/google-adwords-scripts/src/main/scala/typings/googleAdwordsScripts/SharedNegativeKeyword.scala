@@ -18,8 +18,7 @@ trait SharedNegativeKeyword
 }
 object SharedNegativeKeyword {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getMatchType: () => MatchType,
     getNegativeKeywordList: () => NegativeKeywordList,
     getText: () => String,
@@ -29,19 +28,14 @@ object SharedNegativeKeyword {
     __obj.asInstanceOf[SharedNegativeKeyword]
   }
   
-  @scala.inline
-  implicit class SharedNegativeKeywordMutableBuilder[Self <: SharedNegativeKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: SharedNegativeKeyword](x: Self) {
     
-    @scala.inline
-    def setGetMatchType(value: () => MatchType): Self = StObject.set(x, "getMatchType", js.Any.fromFunction0(value))
+    inline def setGetMatchType(value: () => MatchType): Self = StObject.set(x, "getMatchType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNegativeKeywordList(value: () => NegativeKeywordList): Self = StObject.set(x, "getNegativeKeywordList", js.Any.fromFunction0(value))
+    inline def setGetNegativeKeywordList(value: () => NegativeKeywordList): Self = StObject.set(x, "getNegativeKeywordList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

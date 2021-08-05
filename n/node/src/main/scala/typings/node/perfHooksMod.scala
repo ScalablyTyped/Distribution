@@ -79,10 +79,8 @@ object perfHooksMod {
     val NODE_PERFORMANCE_GC_WEAKCB: Double = js.native
   }
   
-  @scala.inline
-  def monitorEventLoopDelay(): EventLoopDelayMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorEventLoopDelay")().asInstanceOf[EventLoopDelayMonitor]
-  @scala.inline
-  def monitorEventLoopDelay(options: EventLoopMonitorOptions): EventLoopDelayMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorEventLoopDelay")(options.asInstanceOf[js.Any]).asInstanceOf[EventLoopDelayMonitor]
+  inline def monitorEventLoopDelay(): EventLoopDelayMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorEventLoopDelay")().asInstanceOf[EventLoopDelayMonitor]
+  inline def monitorEventLoopDelay(options: EventLoopMonitorOptions): EventLoopDelayMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorEventLoopDelay")(options.asInstanceOf[js.Any]).asInstanceOf[EventLoopDelayMonitor]
   
   @JSImport("perf_hooks", "performance")
   @js.native
@@ -100,26 +98,19 @@ object perfHooksMod {
   trait EntryType extends StObject
   object EntryType {
     
-    @scala.inline
-    def function: typings.node.nodeStrings.function = "function".asInstanceOf[typings.node.nodeStrings.function]
+    inline def function: typings.node.nodeStrings.function = "function".asInstanceOf[typings.node.nodeStrings.function]
     
-    @scala.inline
-    def gc: typings.node.nodeStrings.gc = "gc".asInstanceOf[typings.node.nodeStrings.gc]
+    inline def gc: typings.node.nodeStrings.gc = "gc".asInstanceOf[typings.node.nodeStrings.gc]
     
-    @scala.inline
-    def http: typings.node.nodeStrings.http = "http".asInstanceOf[typings.node.nodeStrings.http]
+    inline def http: typings.node.nodeStrings.http = "http".asInstanceOf[typings.node.nodeStrings.http]
     
-    @scala.inline
-    def http2: typings.node.nodeStrings.http2 = "http2".asInstanceOf[typings.node.nodeStrings.http2]
+    inline def http2: typings.node.nodeStrings.http2 = "http2".asInstanceOf[typings.node.nodeStrings.http2]
     
-    @scala.inline
-    def mark: typings.node.nodeStrings.mark = "mark".asInstanceOf[typings.node.nodeStrings.mark]
+    inline def mark: typings.node.nodeStrings.mark = "mark".asInstanceOf[typings.node.nodeStrings.mark]
     
-    @scala.inline
-    def measure: typings.node.nodeStrings.measure = "measure".asInstanceOf[typings.node.nodeStrings.measure]
+    inline def measure: typings.node.nodeStrings.measure = "measure".asInstanceOf[typings.node.nodeStrings.measure]
     
-    @scala.inline
-    def node: typings.node.nodeStrings.node = "node".asInstanceOf[typings.node.nodeStrings.node]
+    inline def node: typings.node.nodeStrings.node = "node".asInstanceOf[typings.node.nodeStrings.node]
   }
   
   trait EventLoopDelayMonitor extends StObject {
@@ -177,8 +168,7 @@ object perfHooksMod {
   }
   object EventLoopDelayMonitor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disable: () => Boolean,
       enable: () => Boolean,
       exceeds: Double,
@@ -194,38 +184,27 @@ object perfHooksMod {
       __obj.asInstanceOf[EventLoopDelayMonitor]
     }
     
-    @scala.inline
-    implicit class EventLoopDelayMonitorMutableBuilder[Self <: EventLoopDelayMonitor] (val x: Self) extends AnyVal {
+    extension [Self <: EventLoopDelayMonitor](x: Self) {
       
-      @scala.inline
-      def setDisable(value: () => Boolean): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+      inline def setDisable(value: () => Boolean): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnable(value: () => Boolean): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+      inline def setEnable(value: () => Boolean): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExceeds(value: Double): Self = StObject.set(x, "exceeds", value.asInstanceOf[js.Any])
+      inline def setExceeds(value: Double): Self = StObject.set(x, "exceeds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
+      inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentile(value: Double => Double): Self = StObject.set(x, "percentile", js.Any.fromFunction1(value))
+      inline def setPercentile(value: Double => Double): Self = StObject.set(x, "percentile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPercentiles(value: Map[Double, Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
+      inline def setPercentiles(value: Map[Double, Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
+      inline def setStddev(value: Double): Self = StObject.set(x, "stddev", value.asInstanceOf[js.Any])
     }
   }
   
@@ -240,20 +219,16 @@ object perfHooksMod {
   }
   object EventLoopMonitorOptions {
     
-    @scala.inline
-    def apply(): EventLoopMonitorOptions = {
+    inline def apply(): EventLoopMonitorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventLoopMonitorOptions]
     }
     
-    @scala.inline
-    implicit class EventLoopMonitorOptionsMutableBuilder[Self <: EventLoopMonitorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EventLoopMonitorOptions](x: Self) {
       
-      @scala.inline
-      def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+      inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
     }
   }
   
@@ -267,23 +242,18 @@ object perfHooksMod {
   }
   object EventLoopUtilization {
     
-    @scala.inline
-    def apply(active: Double, idle: Double, utilization: Double): EventLoopUtilization = {
+    inline def apply(active: Double, idle: Double, utilization: Double): EventLoopUtilization = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], utilization = utilization.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventLoopUtilization]
     }
     
-    @scala.inline
-    implicit class EventLoopUtilizationMutableBuilder[Self <: EventLoopUtilization] (val x: Self) extends AnyVal {
+    extension [Self <: EventLoopUtilization](x: Self) {
       
-      @scala.inline
-      def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+      inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtilization(value: Double): Self = StObject.set(x, "utilization", value.asInstanceOf[js.Any])
+      inline def setUtilization(value: Double): Self = StObject.set(x, "utilization", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,38 +297,28 @@ object perfHooksMod {
   }
   object PerformanceEntry {
     
-    @scala.inline
-    def apply(duration: Double, entryType: EntryType, name: java.lang.String, startTime: Double): PerformanceEntry = {
+    inline def apply(duration: Double, entryType: EntryType, name: java.lang.String, startTime: Double): PerformanceEntry = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], entryType = entryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[PerformanceEntry]
     }
     
-    @scala.inline
-    implicit class PerformanceEntryMutableBuilder[Self <: PerformanceEntry] (val x: Self) extends AnyVal {
+    extension [Self <: PerformanceEntry](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntryType(value: EntryType): Self = StObject.set(x, "entryType", value.asInstanceOf[js.Any])
+      inline def setEntryType(value: EntryType): Self = StObject.set(x, "entryType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setKind(value: Double): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Double): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: java.lang.String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     }
   }
   
@@ -403,8 +363,7 @@ object perfHooksMod {
   }
   object PerformanceNodeTiming {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bootstrapComplete: Double,
       duration: Double,
       entryType: EntryType,
@@ -420,26 +379,19 @@ object perfHooksMod {
       __obj.asInstanceOf[PerformanceNodeTiming]
     }
     
-    @scala.inline
-    implicit class PerformanceNodeTimingMutableBuilder[Self <: PerformanceNodeTiming] (val x: Self) extends AnyVal {
+    extension [Self <: PerformanceNodeTiming](x: Self) {
       
-      @scala.inline
-      def setBootstrapComplete(value: Double): Self = StObject.set(x, "bootstrapComplete", value.asInstanceOf[js.Any])
+      inline def setBootstrapComplete(value: Double): Self = StObject.set(x, "bootstrapComplete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: Double): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: Double): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdleTime(value: Double): Self = StObject.set(x, "idleTime", value.asInstanceOf[js.Any])
+      inline def setIdleTime(value: Double): Self = StObject.set(x, "idleTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopExit(value: Double): Self = StObject.set(x, "loopExit", value.asInstanceOf[js.Any])
+      inline def setLoopExit(value: Double): Self = StObject.set(x, "loopExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopStart(value: Double): Self = StObject.set(x, "loopStart", value.asInstanceOf[js.Any])
+      inline def setLoopStart(value: Double): Self = StObject.set(x, "loopStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV8Start(value: Double): Self = StObject.set(x, "v8Start", value.asInstanceOf[js.Any])
+      inline def setV8Start(value: Double): Self = StObject.set(x, "v8Start", value.asInstanceOf[js.Any])
     }
   }
   

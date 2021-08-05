@@ -12,6 +12,5 @@ object getActiveElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Promise[Recordelement606611e4a52e | Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Recordelement606611e4a52e | Error]]
+  inline def default(): js.Promise[Recordelement606611e4a52e | Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Promise[Recordelement606611e4a52e | Error]]
 }

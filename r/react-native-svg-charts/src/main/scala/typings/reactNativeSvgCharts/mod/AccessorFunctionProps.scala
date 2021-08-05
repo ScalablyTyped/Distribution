@@ -12,19 +12,15 @@ trait AccessorFunctionProps[T] extends StObject {
 }
 object AccessorFunctionProps {
   
-  @scala.inline
-  def apply[T](index: Double, item: T): AccessorFunctionProps[T] = {
+  inline def apply[T](index: Double, item: T): AccessorFunctionProps[T] = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessorFunctionProps[T]]
   }
   
-  @scala.inline
-  implicit class AccessorFunctionPropsMutableBuilder[Self <: AccessorFunctionProps[?], T] (val x: Self & AccessorFunctionProps[T]) extends AnyVal {
+  extension [Self <: AccessorFunctionProps[?], T](x: Self & AccessorFunctionProps[T]) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }
 }

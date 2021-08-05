@@ -16,34 +16,34 @@ object global {
     
     @JSGlobal("ADODB.Bookmark")
     @js.native
-    class Bookmark protected ()
+    /* private */ class Bookmark ()
       extends StObject
          with typings.activexAdodb.ADODB.Bookmark {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADODB.Bookmark_typekey")
       var ADODBDotBookmark_typekey: typings.activexAdodb.ADODB.Bookmark = js.native
     }
     
     @JSGlobal("ADODB.Command")
     @js.native
-    class Command protected ()
+    /* private */ class Command ()
       extends StObject
          with typings.activexAdodb.ADODB.Command
     
     @JSGlobal("ADODB.Connection")
     @js.native
-    class Connection protected ()
+    /* private */ class Connection ()
       extends StObject
          with typings.activexAdodb.ADODB.Connection
     
     @JSGlobal("ADODB.Error")
     @js.native
-    class Error protected ()
+    /* private */ class Error ()
       extends StObject
          with typings.activexAdodb.ADODB.Error {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADODB.Error_typekey")
       var ADODBDotError_typekey: typings.activexAdodb.ADODB.Error = js.native
       
@@ -71,11 +71,11 @@ object global {
     
     @JSGlobal("ADODB.Field")
     @js.native
-    class Field protected ()
+    /* private */ class Field ()
       extends StObject
          with typings.activexAdodb.ADODB.Field {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADODB.Field_typekey")
       var ADODBDotField_typekey: typings.activexAdodb.ADODB.Field = js.native
       
@@ -133,11 +133,11 @@ object global {
     
     @JSGlobal("ADODB.Parameter")
     @js.native
-    class Parameter protected ()
+    /* private */ class Parameter ()
       extends StObject
          with typings.activexAdodb.ADODB.Parameter {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADODB.Parameter_typekey")
       var ADODBDotParameter_typekey: typings.activexAdodb.ADODB.Parameter = js.native
       
@@ -180,11 +180,11 @@ object global {
     
     @JSGlobal("ADODB.Property")
     @js.native
-    class Property protected ()
+    /* private */ class Property ()
       extends StObject
          with typings.activexAdodb.ADODB.Property {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADODB.Property_typekey")
       var ADODBDotProperty_typekey: typings.activexAdodb.ADODB.Property = js.native
       
@@ -204,13 +204,13 @@ object global {
     
     @JSGlobal("ADODB.Record")
     @js.native
-    class Record protected ()
+    /* private */ class Record ()
       extends StObject
          with typings.activexAdodb.ADODB.Record
     
     @JSGlobal("ADODB.Stream")
     @js.native
-    class Stream protected ()
+    /* private */ class Stream ()
       extends StObject
          with typings.activexAdodb.ADODB.Stream
   }

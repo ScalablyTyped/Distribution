@@ -13,19 +13,15 @@ trait DeprovisionByoipCidrResponse extends StObject {
 }
 object DeprovisionByoipCidrResponse {
   
-  @scala.inline
-  def apply(): DeprovisionByoipCidrResponse = {
+  inline def apply(): DeprovisionByoipCidrResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeprovisionByoipCidrResponse]
   }
   
-  @scala.inline
-  implicit class DeprovisionByoipCidrResponseMutableBuilder[Self <: DeprovisionByoipCidrResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeprovisionByoipCidrResponse](x: Self) {
     
-    @scala.inline
-    def setByoipCidr(value: ByoipCidr): Self = StObject.set(x, "ByoipCidr", value.asInstanceOf[js.Any])
+    inline def setByoipCidr(value: ByoipCidr): Self = StObject.set(x, "ByoipCidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByoipCidrUndefined: Self = StObject.set(x, "ByoipCidr", js.undefined)
+    inline def setByoipCidrUndefined: Self = StObject.set(x, "ByoipCidr", js.undefined)
   }
 }

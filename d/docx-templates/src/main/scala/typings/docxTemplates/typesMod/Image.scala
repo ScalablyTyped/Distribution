@@ -14,20 +14,16 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(data: Buffer | ArrayBuffer | String, `extension`: ImageExtension): Image = {
+  inline def apply(data: Buffer | ArrayBuffer | String, `extension`: ImageExtension): Image = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setData(value: Buffer | ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer | ArrayBuffer | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtension(value: ImageExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: ImageExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
   }
 }

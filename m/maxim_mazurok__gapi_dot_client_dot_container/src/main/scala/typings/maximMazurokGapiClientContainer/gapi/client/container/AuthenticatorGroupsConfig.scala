@@ -14,25 +14,19 @@ trait AuthenticatorGroupsConfig extends StObject {
 }
 object AuthenticatorGroupsConfig {
   
-  @scala.inline
-  def apply(): AuthenticatorGroupsConfig = {
+  inline def apply(): AuthenticatorGroupsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticatorGroupsConfig]
   }
   
-  @scala.inline
-  implicit class AuthenticatorGroupsConfigMutableBuilder[Self <: AuthenticatorGroupsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticatorGroupsConfig](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setSecurityGroup(value: String): Self = StObject.set(x, "securityGroup", value.asInstanceOf[js.Any])
+    inline def setSecurityGroup(value: String): Self = StObject.set(x, "securityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupUndefined: Self = StObject.set(x, "securityGroup", js.undefined)
+    inline def setSecurityGroupUndefined: Self = StObject.set(x, "securityGroup", js.undefined)
   }
 }

@@ -14,9 +14,9 @@ object compressionFilterMod {
   @js.native
   class CompressionFilter () extends BaseFilter {
     
-    var receiveCompression: js.Any = js.native
+    /* private */ var receiveCompression: js.Any = js.native
     
-    var sendCompression: js.Any = js.native
+    /* private */ var sendCompression: js.Any = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/compression-filter", "CompressionFilterFactory")
@@ -26,7 +26,7 @@ object compressionFilterMod {
        with FilterFactory[CompressionFilter] {
     def this(channel: Channel) = this()
     
-    val channel: js.Any = js.native
+    /* private */ val channel: js.Any = js.native
     
     /* CompleteClass */
     override def createFilter(callStream: Call): CompressionFilter = js.native

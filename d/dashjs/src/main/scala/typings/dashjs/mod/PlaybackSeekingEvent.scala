@@ -16,23 +16,18 @@ trait PlaybackSeekingEvent
 }
 object PlaybackSeekingEvent {
   
-  @scala.inline
-  def apply(): PlaybackSeekingEvent = {
+  inline def apply(): PlaybackSeekingEvent = {
     val __obj = js.Dynamic.literal(seekTime = null)
     __obj.updateDynamic("type")("playbackSeeking")
     __obj.asInstanceOf[PlaybackSeekingEvent]
   }
   
-  @scala.inline
-  implicit class PlaybackSeekingEventMutableBuilder[Self <: PlaybackSeekingEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlaybackSeekingEvent](x: Self) {
     
-    @scala.inline
-    def setSeekTime(value: Double): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
+    inline def setSeekTime(value: Double): Self = StObject.set(x, "seekTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeekTimeNull: Self = StObject.set(x, "seekTime", null)
+    inline def setSeekTimeNull: Self = StObject.set(x, "seekTime", null)
     
-    @scala.inline
-    def setType(value: playbackSeeking): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: playbackSeeking): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

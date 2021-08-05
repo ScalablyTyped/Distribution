@@ -21,46 +21,33 @@ trait SpeechRecognitionResults extends StObject {
 }
 object SpeechRecognitionResults {
   
-  @scala.inline
-  def apply(): SpeechRecognitionResults = {
+  inline def apply(): SpeechRecognitionResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpeechRecognitionResults]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionResultsMutableBuilder[Self <: SpeechRecognitionResults] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionResults](x: Self) {
     
-    @scala.inline
-    def setResult_index(value: Double): Self = StObject.set(x, "result_index", value.asInstanceOf[js.Any])
+    inline def setResult_index(value: Double): Self = StObject.set(x, "result_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult_indexUndefined: Self = StObject.set(x, "result_index", js.undefined)
+    inline def setResult_indexUndefined: Self = StObject.set(x, "result_index", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[SpeechRecognitionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SpeechRecognitionResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: SpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SpeechRecognitionResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setSpeaker_labels(value: js.Array[SpeakerLabelsResult]): Self = StObject.set(x, "speaker_labels", value.asInstanceOf[js.Any])
+    inline def setSpeaker_labels(value: js.Array[SpeakerLabelsResult]): Self = StObject.set(x, "speaker_labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeaker_labelsUndefined: Self = StObject.set(x, "speaker_labels", js.undefined)
+    inline def setSpeaker_labelsUndefined: Self = StObject.set(x, "speaker_labels", js.undefined)
     
-    @scala.inline
-    def setSpeaker_labelsVarargs(value: SpeakerLabelsResult*): Self = StObject.set(x, "speaker_labels", js.Array(value :_*))
+    inline def setSpeaker_labelsVarargs(value: SpeakerLabelsResult*): Self = StObject.set(x, "speaker_labels", js.Array(value :_*))
     
-    @scala.inline
-    def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

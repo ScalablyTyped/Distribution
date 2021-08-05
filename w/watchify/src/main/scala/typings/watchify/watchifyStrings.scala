@@ -8,21 +8,17 @@ object watchifyStrings {
   
   @js.native
   sealed trait bytes extends StObject
-  @scala.inline
-  def bytes: bytes = "bytes".asInstanceOf[bytes]
+  inline def bytes: bytes = "bytes".asInstanceOf[bytes]
   
   @js.native
   sealed trait log extends StObject
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait time extends StObject
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
   sealed trait update extends StObject
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  inline def update: update = "update".asInstanceOf[update]
 }

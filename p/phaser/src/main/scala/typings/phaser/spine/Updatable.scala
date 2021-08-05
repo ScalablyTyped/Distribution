@@ -12,19 +12,15 @@ trait Updatable extends StObject {
 }
 object Updatable {
   
-  @scala.inline
-  def apply(isActive: () => Boolean, update: () => Unit): Updatable = {
+  inline def apply(isActive: () => Boolean, update: () => Unit): Updatable = {
     val __obj = js.Dynamic.literal(isActive = js.Any.fromFunction0(isActive), update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[Updatable]
   }
   
-  @scala.inline
-  implicit class UpdatableMutableBuilder[Self <: Updatable] (val x: Self) extends AnyVal {
+  extension [Self <: Updatable](x: Self) {
     
-    @scala.inline
-    def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+    inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

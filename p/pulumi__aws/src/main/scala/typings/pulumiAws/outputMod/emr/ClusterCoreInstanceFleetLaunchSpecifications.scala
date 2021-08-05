@@ -18,31 +18,23 @@ trait ClusterCoreInstanceFleetLaunchSpecifications extends StObject {
 }
 object ClusterCoreInstanceFleetLaunchSpecifications {
   
-  @scala.inline
-  def apply(): ClusterCoreInstanceFleetLaunchSpecifications = {
+  inline def apply(): ClusterCoreInstanceFleetLaunchSpecifications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterCoreInstanceFleetLaunchSpecifications]
   }
   
-  @scala.inline
-  implicit class ClusterCoreInstanceFleetLaunchSpecificationsMutableBuilder[Self <: ClusterCoreInstanceFleetLaunchSpecifications] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterCoreInstanceFleetLaunchSpecifications](x: Self) {
     
-    @scala.inline
-    def setOnDemandSpecifications(value: js.Array[ClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification]): Self = StObject.set(x, "onDemandSpecifications", value.asInstanceOf[js.Any])
+    inline def setOnDemandSpecifications(value: js.Array[ClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification]): Self = StObject.set(x, "onDemandSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandSpecificationsUndefined: Self = StObject.set(x, "onDemandSpecifications", js.undefined)
+    inline def setOnDemandSpecificationsUndefined: Self = StObject.set(x, "onDemandSpecifications", js.undefined)
     
-    @scala.inline
-    def setOnDemandSpecificationsVarargs(value: ClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification*): Self = StObject.set(x, "onDemandSpecifications", js.Array(value :_*))
+    inline def setOnDemandSpecificationsVarargs(value: ClusterCoreInstanceFleetLaunchSpecificationsOnDemandSpecification*): Self = StObject.set(x, "onDemandSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setSpotSpecifications(value: js.Array[ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification]): Self = StObject.set(x, "spotSpecifications", value.asInstanceOf[js.Any])
+    inline def setSpotSpecifications(value: js.Array[ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification]): Self = StObject.set(x, "spotSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotSpecificationsUndefined: Self = StObject.set(x, "spotSpecifications", js.undefined)
+    inline def setSpotSpecificationsUndefined: Self = StObject.set(x, "spotSpecifications", js.undefined)
     
-    @scala.inline
-    def setSpotSpecificationsVarargs(value: ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification*): Self = StObject.set(x, "spotSpecifications", js.Array(value :_*))
+    inline def setSpotSpecificationsVarargs(value: ClusterCoreInstanceFleetLaunchSpecificationsSpotSpecification*): Self = StObject.set(x, "spotSpecifications", js.Array(value :_*))
   }
 }

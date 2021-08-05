@@ -54,8 +54,7 @@ object typesGetFileOutputMod {
   }
   object GetFileOutput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $metadata: ResponseMetadata,
       blobId: String,
       commitId: String,
@@ -68,29 +67,21 @@ object typesGetFileOutputMod {
       __obj.asInstanceOf[GetFileOutput]
     }
     
-    @scala.inline
-    implicit class GetFileOutputMutableBuilder[Self <: GetFileOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetFileOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
+      inline def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+      inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileContent(value: Uint8Array): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
+      inline def setFileContent(value: Uint8Array): Self = StObject.set(x, "fileContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileMode(value: EXECUTABLE | NORMAL | SYMLINK | String): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
+      inline def setFileMode(value: EXECUTABLE | NORMAL | SYMLINK | String): Self = StObject.set(x, "fileMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+      inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+      inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     }
   }
 }

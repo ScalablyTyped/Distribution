@@ -18,15 +18,14 @@ trait NegativeBarFormat extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.NegativeBarFormat_typekey")
+  /* private */ @JSName("Excel.NegativeBarFormat_typekey")
   var ExcelDotNegativeBarFormat_typekey: NegativeBarFormat
   
   val Parent: js.Any
 }
 object NegativeBarFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BorderColor: FormatColor,
     BorderColorType: XlDataBarNegativeColorType,
@@ -41,31 +40,22 @@ object NegativeBarFormat {
     __obj.asInstanceOf[NegativeBarFormat]
   }
   
-  @scala.inline
-  implicit class NegativeBarFormatMutableBuilder[Self <: NegativeBarFormat] (val x: Self) extends AnyVal {
+  extension [Self <: NegativeBarFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: FormatColor): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: FormatColor): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorType(value: XlDataBarNegativeColorType): Self = StObject.set(x, "BorderColorType", value.asInstanceOf[js.Any])
+    inline def setBorderColorType(value: XlDataBarNegativeColorType): Self = StObject.set(x, "BorderColorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: FormatColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: FormatColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorType(value: XlDataBarNegativeColorType): Self = StObject.set(x, "ColorType", value.asInstanceOf[js.Any])
+    inline def setColorType(value: XlDataBarNegativeColorType): Self = StObject.set(x, "ColorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotNegativeBarFormat_typekey(value: NegativeBarFormat): Self = StObject.set(x, "Excel.NegativeBarFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotNegativeBarFormat_typekey(value: NegativeBarFormat): Self = StObject.set(x, "Excel.NegativeBarFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

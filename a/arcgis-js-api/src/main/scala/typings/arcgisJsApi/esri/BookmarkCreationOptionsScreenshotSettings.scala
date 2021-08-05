@@ -40,8 +40,7 @@ trait BookmarkCreationOptionsScreenshotSettings
 }
 object BookmarkCreationOptionsScreenshotSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -50,34 +49,24 @@ object BookmarkCreationOptionsScreenshotSettings {
     __obj.asInstanceOf[BookmarkCreationOptionsScreenshotSettings]
   }
   
-  @scala.inline
-  implicit class BookmarkCreationOptionsScreenshotSettingsMutableBuilder[Self <: BookmarkCreationOptionsScreenshotSettings] (val x: Self) extends AnyVal {
+  extension [Self <: BookmarkCreationOptionsScreenshotSettings](x: Self) {
     
-    @scala.inline
-    def setArea(value: BookmarkCreationOptionsScreenshotSettingsArea): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: BookmarkCreationOptionsScreenshotSettingsArea): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+    inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

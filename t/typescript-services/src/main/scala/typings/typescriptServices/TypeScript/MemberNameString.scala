@@ -12,8 +12,7 @@ trait MemberNameString
 }
 object MemberNameString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isArray: () => Boolean,
     isMarker: () => Boolean,
     isString: () => Boolean,
@@ -25,10 +24,8 @@ object MemberNameString {
     __obj.asInstanceOf[MemberNameString]
   }
   
-  @scala.inline
-  implicit class MemberNameStringMutableBuilder[Self <: MemberNameString] (val x: Self) extends AnyVal {
+  extension [Self <: MemberNameString](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

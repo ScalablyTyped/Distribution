@@ -40,8 +40,7 @@ object siteVerificationMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Siteverification
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object siteVerificationMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object siteVerificationMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def siteVerification(options: Options): Siteverification = ^.asInstanceOf[js.Dynamic].applyDynamic("siteVerification")(options.asInstanceOf[js.Any]).asInstanceOf[Siteverification]
+  inline def siteVerification(options: Options): Siteverification = ^.asInstanceOf[js.Dynamic].applyDynamic("siteVerification")(options.asInstanceOf[js.Any]).asInstanceOf[Siteverification]
   
-  @scala.inline
-  def siteVerification_v1(version: v1): Siteverification = ^.asInstanceOf[js.Dynamic].applyDynamic("siteVerification")(version.asInstanceOf[js.Any]).asInstanceOf[Siteverification]
+  inline def siteVerification_v1(version: v1): Siteverification = ^.asInstanceOf[js.Dynamic].applyDynamic("siteVerification")(version.asInstanceOf[js.Any]).asInstanceOf[Siteverification]
 }

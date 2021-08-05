@@ -22,28 +22,21 @@ trait HeatmapColorStopProperties extends StObject {
 }
 object HeatmapColorStopProperties {
   
-  @scala.inline
-  def apply(): HeatmapColorStopProperties = {
+  inline def apply(): HeatmapColorStopProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeatmapColorStopProperties]
   }
   
-  @scala.inline
-  implicit class HeatmapColorStopPropertiesMutableBuilder[Self <: HeatmapColorStopProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapColorStopProperties](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
   }
 }

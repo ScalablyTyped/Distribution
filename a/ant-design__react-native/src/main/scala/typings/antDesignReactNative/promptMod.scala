@@ -14,25 +14,21 @@ object promptMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[TextStyle]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(title: ReactNode, message: ReactNode, callbackOrActions: CallbackOrActions[TextStyle]): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
     `type`: String
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
     `type`: String,
     defaultValue: String
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -40,8 +36,7 @@ object promptMod {
     defaultValue: String,
     placeholders: js.Array[String]
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -50,8 +45,7 @@ object promptMod {
     placeholders: js.Array[String],
     onBackHandler: CallbackOnBackHandler
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -60,8 +54,7 @@ object promptMod {
     placeholders: Unit,
     onBackHandler: CallbackOnBackHandler
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -69,8 +62,7 @@ object promptMod {
     defaultValue: Unit,
     placeholders: js.Array[String]
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -79,8 +71,7 @@ object promptMod {
     placeholders: js.Array[String],
     onBackHandler: CallbackOnBackHandler
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -89,16 +80,14 @@ object promptMod {
     placeholders: Unit,
     onBackHandler: CallbackOnBackHandler
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
     `type`: Unit,
     defaultValue: String
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -106,8 +95,7 @@ object promptMod {
     defaultValue: String,
     placeholders: js.Array[String]
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -116,8 +104,7 @@ object promptMod {
     placeholders: js.Array[String],
     onBackHandler: CallbackOnBackHandler
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -126,8 +113,7 @@ object promptMod {
     placeholders: Unit,
     onBackHandler: CallbackOnBackHandler
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -135,8 +121,7 @@ object promptMod {
     defaultValue: Unit,
     placeholders: js.Array[String]
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],
@@ -145,8 +130,7 @@ object promptMod {
     placeholders: js.Array[String],
     onBackHandler: CallbackOnBackHandler
   ): js.UndefOr[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(title.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callbackOrActions.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], placeholders.asInstanceOf[js.Any], onBackHandler.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Double]]
-  @scala.inline
-  def default(
+  inline def default(
     title: ReactNode,
     message: ReactNode,
     callbackOrActions: CallbackOrActions[TextStyle],

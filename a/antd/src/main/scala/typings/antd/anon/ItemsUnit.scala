@@ -31,8 +31,7 @@ trait ItemsUnit extends StObject {
 }
 object ItemsUnit {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     itemUnit: String,
     itemsUnit: String,
     remove: String,
@@ -48,46 +47,32 @@ object ItemsUnit {
     __obj.asInstanceOf[ItemsUnit]
   }
   
-  @scala.inline
-  implicit class ItemsUnitMutableBuilder[Self <: ItemsUnit] (val x: Self) extends AnyVal {
+  extension [Self <: ItemsUnit](x: Self) {
     
-    @scala.inline
-    def setItemUnit(value: String): Self = StObject.set(x, "itemUnit", value.asInstanceOf[js.Any])
+    inline def setItemUnit(value: String): Self = StObject.set(x, "itemUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUnit(value: String): Self = StObject.set(x, "itemsUnit", value.asInstanceOf[js.Any])
+    inline def setItemsUnit(value: String): Self = StObject.set(x, "itemsUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundContent(value: ReactNode): Self = StObject.set(x, "notFoundContent", value.asInstanceOf[js.Any])
+    inline def setNotFoundContent(value: ReactNode): Self = StObject.set(x, "notFoundContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
+    inline def setNotFoundContentUndefined: Self = StObject.set(x, "notFoundContent", js.undefined)
     
-    @scala.inline
-    def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: String): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveAll(value: String): Self = StObject.set(x, "removeAll", value.asInstanceOf[js.Any])
+    inline def setRemoveAll(value: String): Self = StObject.set(x, "removeAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveCurrent(value: String): Self = StObject.set(x, "removeCurrent", value.asInstanceOf[js.Any])
+    inline def setRemoveCurrent(value: String): Self = StObject.set(x, "removeCurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
+    inline def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectAll(value: String): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
+    inline def setSelectAll(value: String): Self = StObject.set(x, "selectAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectCurrent(value: String): Self = StObject.set(x, "selectCurrent", value.asInstanceOf[js.Any])
+    inline def setSelectCurrent(value: String): Self = StObject.set(x, "selectCurrent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectInvert(value: String): Self = StObject.set(x, "selectInvert", value.asInstanceOf[js.Any])
+    inline def setSelectInvert(value: String): Self = StObject.set(x, "selectInvert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitles(value: js.Array[String]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
+    inline def setTitles(value: js.Array[String]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value :_*))
+    inline def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value :_*))
   }
 }

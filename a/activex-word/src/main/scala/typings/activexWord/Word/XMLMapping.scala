@@ -34,7 +34,7 @@ trait XMLMapping extends StObject {
   
   def SetMappingByNode(Node: typings.activexOffice.Office.CustomXMLNode): Boolean = js.native
   
-  @JSName("Word.XMLMapping_typekey")
+  /* private */ @JSName("Word.XMLMapping_typekey")
   var WordDotXMLMapping_typekey: XMLMapping = js.native
   
   val XPath: String = js.native

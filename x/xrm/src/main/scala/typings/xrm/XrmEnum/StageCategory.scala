@@ -26,24 +26,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StageCategory extends StObject
 object StageCategory {
   
-  @scala.inline
-  def Close: `3` = 3.asInstanceOf[`3`]
+  inline def Close: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def Develop: `1` = 1.asInstanceOf[`1`]
+  inline def Develop: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Identify: `4` = 4.asInstanceOf[`4`]
+  inline def Identify: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def Propose: `2` = 2.asInstanceOf[`2`]
+  inline def Propose: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Qualify: `0` = 0.asInstanceOf[`0`]
+  inline def Qualify: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Research: `5` = 5.asInstanceOf[`5`]
+  inline def Research: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def Resolve: `6` = 6.asInstanceOf[`6`]
+  inline def Resolve: `6` = 6.asInstanceOf[`6`]
 }

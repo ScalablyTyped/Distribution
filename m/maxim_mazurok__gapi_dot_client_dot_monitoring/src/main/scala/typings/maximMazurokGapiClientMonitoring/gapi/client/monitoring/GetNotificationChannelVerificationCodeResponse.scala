@@ -20,25 +20,19 @@ trait GetNotificationChannelVerificationCodeResponse extends StObject {
 }
 object GetNotificationChannelVerificationCodeResponse {
   
-  @scala.inline
-  def apply(): GetNotificationChannelVerificationCodeResponse = {
+  inline def apply(): GetNotificationChannelVerificationCodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetNotificationChannelVerificationCodeResponse]
   }
   
-  @scala.inline
-  implicit class GetNotificationChannelVerificationCodeResponseMutableBuilder[Self <: GetNotificationChannelVerificationCodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetNotificationChannelVerificationCodeResponse](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
+    inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
+    inline def setExpireTimeUndefined: Self = StObject.set(x, "expireTime", js.undefined)
   }
 }

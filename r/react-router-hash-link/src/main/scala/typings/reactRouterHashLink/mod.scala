@@ -47,28 +47,22 @@ object mod {
   }
   object HashLinkProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       to: LocationDescriptor[LocationState] | (js.Function1[/* location */ Location[LocationState], LocationDescriptor[LocationState]])
     ): HashLinkProps = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[HashLinkProps]
     }
     
-    @scala.inline
-    implicit class HashLinkPropsMutableBuilder[Self <: HashLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: HashLinkProps](x: Self) {
       
-      @scala.inline
-      def setScroll(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
+      inline def setScroll(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      @scala.inline
-      def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+      inline def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+      inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
     }
   }
   
@@ -96,28 +90,22 @@ object mod {
   }
   object NavHashLinkProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       to: LocationDescriptor[LocationState] | (js.Function1[/* location */ Location[LocationState], LocationDescriptor[LocationState]])
     ): NavHashLinkProps = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavHashLinkProps]
     }
     
-    @scala.inline
-    implicit class NavHashLinkPropsMutableBuilder[Self <: NavHashLinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: NavHashLinkProps](x: Self) {
       
-      @scala.inline
-      def setScroll(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
+      inline def setScroll(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "scroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+      inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
       
-      @scala.inline
-      def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+      inline def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
+      inline def setSmoothUndefined: Self = StObject.set(x, "smooth", js.undefined)
     }
   }
 }

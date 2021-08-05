@@ -10,19 +10,15 @@ trait PutEventsConfigurationResponse extends StObject {
 }
 object PutEventsConfigurationResponse {
   
-  @scala.inline
-  def apply(): PutEventsConfigurationResponse = {
+  inline def apply(): PutEventsConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutEventsConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class PutEventsConfigurationResponseMutableBuilder[Self <: PutEventsConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutEventsConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setEventsConfiguration(value: EventsConfiguration): Self = StObject.set(x, "EventsConfiguration", value.asInstanceOf[js.Any])
+    inline def setEventsConfiguration(value: EventsConfiguration): Self = StObject.set(x, "EventsConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsConfigurationUndefined: Self = StObject.set(x, "EventsConfiguration", js.undefined)
+    inline def setEventsConfigurationUndefined: Self = StObject.set(x, "EventsConfiguration", js.undefined)
   }
 }

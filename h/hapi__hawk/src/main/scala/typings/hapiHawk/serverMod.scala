@@ -15,18 +15,13 @@ object serverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc): js.Promise[Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authentication]]
-  @scala.inline
-  def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateOptions): js.Promise[Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authentication]]
+  inline def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc): js.Promise[Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authentication]]
+  inline def authenticate(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateOptions): js.Promise[Authentication] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Authentication]]
   
-  @scala.inline
-  def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc): AuthenticatedBewit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[AuthenticatedBewit]
-  @scala.inline
-  def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateBewitOptions): AuthenticatedBewit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AuthenticatedBewit]
+  inline def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc): AuthenticatedBewit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any])).asInstanceOf[AuthenticatedBewit]
+  inline def authenticateBewit(req: IncomingMessage, credentialsFunc: CredentialsFunc, options: AuthenticateBewitOptions): AuthenticatedBewit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateBewit")(req.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AuthenticatedBewit]
   
-  @scala.inline
-  def authenticateMessage(
+  inline def authenticateMessage(
     host: String,
     port: Double,
     message: String,
@@ -35,16 +30,12 @@ object serverMod {
     options: AuthenticateMessageOptions
   ): js.Promise[AuthenticatedMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticateMessage")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], message.asInstanceOf[js.Any], authorization.asInstanceOf[js.Any], credentialsFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticatedMessage]]
   
-  @scala.inline
-  def authenticatePayload(payload: String, credentials: Credentials, artifacts: Artifacts, contentType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayload")(payload.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def authenticatePayload(payload: String, credentials: Credentials, artifacts: Artifacts, contentType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayload")(payload.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def authenticatePayloadHash(calculatedHash: String, artifacts: Artifacts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayloadHash")(calculatedHash.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def authenticatePayloadHash(calculatedHash: String, artifacts: Artifacts): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatePayloadHash")(calculatedHash.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def header(credentials: Credentials, artifacts: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def header(credentials: Credentials, artifacts: Artifacts, options: HeaderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def header(credentials: Credentials, artifacts: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def header(credentials: Credentials, artifacts: Artifacts, options: HeaderOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(credentials.asInstanceOf[js.Any], artifacts.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Inlined std.Pick<@hapi/hawk.@hapi/hawk/lib/server.AuthenticateOptions, 'hostHeaderName' | 'localtimeOffsetMsec' | 'host' | 'port'> */
   trait AuthenticateBewitOptions extends StObject {
@@ -59,38 +50,28 @@ object serverMod {
   }
   object AuthenticateBewitOptions {
     
-    @scala.inline
-    def apply(): AuthenticateBewitOptions = {
+    inline def apply(): AuthenticateBewitOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthenticateBewitOptions]
     }
     
-    @scala.inline
-    implicit class AuthenticateBewitOptionsMutableBuilder[Self <: AuthenticateBewitOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticateBewitOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostHeaderName(value: String): Self = StObject.set(x, "hostHeaderName", value.asInstanceOf[js.Any])
+      inline def setHostHeaderName(value: String): Self = StObject.set(x, "hostHeaderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostHeaderNameUndefined: Self = StObject.set(x, "hostHeaderName", js.undefined)
+      inline def setHostHeaderNameUndefined: Self = StObject.set(x, "hostHeaderName", js.undefined)
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLocaltimeOffsetMsec(value: Double): Self = StObject.set(x, "localtimeOffsetMsec", value.asInstanceOf[js.Any])
+      inline def setLocaltimeOffsetMsec(value: Double): Self = StObject.set(x, "localtimeOffsetMsec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaltimeOffsetMsecUndefined: Self = StObject.set(x, "localtimeOffsetMsec", js.undefined)
+      inline def setLocaltimeOffsetMsecUndefined: Self = StObject.set(x, "localtimeOffsetMsec", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -105,32 +86,24 @@ object serverMod {
   }
   object AuthenticateMessageOptions {
     
-    @scala.inline
-    def apply(): AuthenticateMessageOptions = {
+    inline def apply(): AuthenticateMessageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthenticateMessageOptions]
     }
     
-    @scala.inline
-    implicit class AuthenticateMessageOptionsMutableBuilder[Self <: AuthenticateMessageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticateMessageOptions](x: Self) {
       
-      @scala.inline
-      def setLocaltimeOffsetMsec(value: Double): Self = StObject.set(x, "localtimeOffsetMsec", value.asInstanceOf[js.Any])
+      inline def setLocaltimeOffsetMsec(value: Double): Self = StObject.set(x, "localtimeOffsetMsec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaltimeOffsetMsecUndefined: Self = StObject.set(x, "localtimeOffsetMsec", js.undefined)
+      inline def setLocaltimeOffsetMsecUndefined: Self = StObject.set(x, "localtimeOffsetMsec", js.undefined)
       
-      @scala.inline
-      def setNonceFunc(value: (/* key */ String, /* nonce */ String, /* ts */ String) => js.Promise[Unit] | Unit): Self = StObject.set(x, "nonceFunc", js.Any.fromFunction3(value))
+      inline def setNonceFunc(value: (/* key */ String, /* nonce */ String, /* ts */ String) => js.Promise[Unit] | Unit): Self = StObject.set(x, "nonceFunc", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNonceFuncUndefined: Self = StObject.set(x, "nonceFunc", js.undefined)
+      inline def setNonceFuncUndefined: Self = StObject.set(x, "nonceFunc", js.undefined)
       
-      @scala.inline
-      def setTimestampSkewSec(value: Double): Self = StObject.set(x, "timestampSkewSec", value.asInstanceOf[js.Any])
+      inline def setTimestampSkewSec(value: Double): Self = StObject.set(x, "timestampSkewSec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampSkewSecUndefined: Self = StObject.set(x, "timestampSkewSec", js.undefined)
+      inline def setTimestampSkewSecUndefined: Self = StObject.set(x, "timestampSkewSec", js.undefined)
     }
   }
   
@@ -185,56 +158,40 @@ object serverMod {
   }
   object AuthenticateOptions {
     
-    @scala.inline
-    def apply(): AuthenticateOptions = {
+    inline def apply(): AuthenticateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthenticateOptions]
     }
     
-    @scala.inline
-    implicit class AuthenticateOptionsMutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticateOptions](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostHeaderName(value: String): Self = StObject.set(x, "hostHeaderName", value.asInstanceOf[js.Any])
+      inline def setHostHeaderName(value: String): Self = StObject.set(x, "hostHeaderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostHeaderNameUndefined: Self = StObject.set(x, "hostHeaderName", js.undefined)
+      inline def setHostHeaderNameUndefined: Self = StObject.set(x, "hostHeaderName", js.undefined)
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLocaltimeOffsetMsec(value: Double): Self = StObject.set(x, "localtimeOffsetMsec", value.asInstanceOf[js.Any])
+      inline def setLocaltimeOffsetMsec(value: Double): Self = StObject.set(x, "localtimeOffsetMsec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaltimeOffsetMsecUndefined: Self = StObject.set(x, "localtimeOffsetMsec", js.undefined)
+      inline def setLocaltimeOffsetMsecUndefined: Self = StObject.set(x, "localtimeOffsetMsec", js.undefined)
       
-      @scala.inline
-      def setNonceFunc(value: (/* key */ String, /* nonce */ String, /* ts */ String) => js.Promise[Unit] | Unit): Self = StObject.set(x, "nonceFunc", js.Any.fromFunction3(value))
+      inline def setNonceFunc(value: (/* key */ String, /* nonce */ String, /* ts */ String) => js.Promise[Unit] | Unit): Self = StObject.set(x, "nonceFunc", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNonceFuncUndefined: Self = StObject.set(x, "nonceFunc", js.undefined)
+      inline def setNonceFuncUndefined: Self = StObject.set(x, "nonceFunc", js.undefined)
       
-      @scala.inline
-      def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setTimestampSkewSec(value: Double): Self = StObject.set(x, "timestampSkewSec", value.asInstanceOf[js.Any])
+      inline def setTimestampSkewSec(value: Double): Self = StObject.set(x, "timestampSkewSec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampSkewSecUndefined: Self = StObject.set(x, "timestampSkewSec", js.undefined)
+      inline def setTimestampSkewSecUndefined: Self = StObject.set(x, "timestampSkewSec", js.undefined)
     }
   }
   
@@ -246,17 +203,14 @@ object serverMod {
   }
   object AuthenticatedBewit {
     
-    @scala.inline
-    def apply(bewit: Bewit, credentials: Credentials): AuthenticatedBewit = {
+    inline def apply(bewit: Bewit, credentials: Credentials): AuthenticatedBewit = {
       val __obj = js.Dynamic.literal(bewit = bewit.asInstanceOf[js.Any], credentials = credentials.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthenticatedBewit]
     }
     
-    @scala.inline
-    implicit class AuthenticatedBewitMutableBuilder[Self <: AuthenticatedBewit] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticatedBewit](x: Self) {
       
-      @scala.inline
-      def setBewit(value: Bewit): Self = StObject.set(x, "bewit", value.asInstanceOf[js.Any])
+      inline def setBewit(value: Bewit): Self = StObject.set(x, "bewit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,17 +220,14 @@ object serverMod {
   }
   object AuthenticatedMessage {
     
-    @scala.inline
-    def apply(credentials: Credentials): AuthenticatedMessage = {
+    inline def apply(credentials: Credentials): AuthenticatedMessage = {
       val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthenticatedMessage]
     }
     
-    @scala.inline
-    implicit class AuthenticatedMessageMutableBuilder[Self <: AuthenticatedMessage] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticatedMessage](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,20 +239,16 @@ object serverMod {
   }
   object Authentication {
     
-    @scala.inline
-    def apply(artifacts: Artifacts, credentials: Credentials): Authentication = {
+    inline def apply(artifacts: Artifacts, credentials: Credentials): Authentication = {
       val __obj = js.Dynamic.literal(artifacts = artifacts.asInstanceOf[js.Any], credentials = credentials.asInstanceOf[js.Any])
       __obj.asInstanceOf[Authentication]
     }
     
-    @scala.inline
-    implicit class AuthenticationMutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
+    extension [Self <: Authentication](x: Self) {
       
-      @scala.inline
-      def setArtifacts(value: Artifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+      inline def setArtifacts(value: Artifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     }
   }
   
@@ -317,26 +264,20 @@ object serverMod {
   }
   object Bewit {
     
-    @scala.inline
-    def apply(exp: String, ext: String, id: String, mac: String): Bewit = {
+    inline def apply(exp: String, ext: String, id: String, mac: String): Bewit = {
       val __obj = js.Dynamic.literal(exp = exp.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bewit]
     }
     
-    @scala.inline
-    implicit class BewitMutableBuilder[Self <: Bewit] (val x: Self) extends AnyVal {
+    extension [Self <: Bewit](x: Self) {
       
-      @scala.inline
-      def setExp(value: String): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+      inline def setExp(value: String): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,23 +291,18 @@ object serverMod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(algorithm: sha1 | sha256, key: String, user: String): Credentials = {
+    inline def apply(algorithm: sha1 | sha256, key: String, user: String): Credentials = {
       val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: sha1 | sha256): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: sha1 | sha256): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -388,38 +324,28 @@ object serverMod {
   }
   object HeaderOptions {
     
-    @scala.inline
-    def apply(): HeaderOptions = {
+    inline def apply(): HeaderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeaderOptions]
     }
     
-    @scala.inline
-    implicit class HeaderOptionsMutableBuilder[Self <: HeaderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderOptions](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     }
   }
   

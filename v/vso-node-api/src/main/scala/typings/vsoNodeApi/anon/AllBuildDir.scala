@@ -16,8 +16,7 @@ trait AllBuildDir extends StObject {
 }
 object AllBuildDir {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allBuildDir: scala.Double,
     source: scala.Double,
     sourceAndOutputDir: scala.Double,
@@ -27,19 +26,14 @@ object AllBuildDir {
     __obj.asInstanceOf[AllBuildDir]
   }
   
-  @scala.inline
-  implicit class AllBuildDirMutableBuilder[Self <: AllBuildDir] (val x: Self) extends AnyVal {
+  extension [Self <: AllBuildDir](x: Self) {
     
-    @scala.inline
-    def setAllBuildDir(value: scala.Double): Self = StObject.set(x, "allBuildDir", value.asInstanceOf[js.Any])
+    inline def setAllBuildDir(value: scala.Double): Self = StObject.set(x, "allBuildDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: scala.Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: scala.Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceAndOutputDir(value: scala.Double): Self = StObject.set(x, "sourceAndOutputDir", value.asInstanceOf[js.Any])
+    inline def setSourceAndOutputDir(value: scala.Double): Self = StObject.set(x, "sourceAndOutputDir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceDir(value: scala.Double): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+    inline def setSourceDir(value: scala.Double): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
   }
 }

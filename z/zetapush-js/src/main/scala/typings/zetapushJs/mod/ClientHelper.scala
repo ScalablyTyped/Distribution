@@ -16,8 +16,7 @@ trait ClientHelper extends StObject {
 }
 object ClientHelper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authentication: () => AbstractHandshake,
     getUniqRequestId: () => String,
     servers: js.Promise[js.Array[String]]
@@ -26,16 +25,12 @@ object ClientHelper {
     __obj.asInstanceOf[ClientHelper]
   }
   
-  @scala.inline
-  implicit class ClientHelperMutableBuilder[Self <: ClientHelper] (val x: Self) extends AnyVal {
+  extension [Self <: ClientHelper](x: Self) {
     
-    @scala.inline
-    def setAuthentication(value: () => AbstractHandshake): Self = StObject.set(x, "authentication", js.Any.fromFunction0(value))
+    inline def setAuthentication(value: () => AbstractHandshake): Self = StObject.set(x, "authentication", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUniqRequestId(value: () => String): Self = StObject.set(x, "getUniqRequestId", js.Any.fromFunction0(value))
+    inline def setGetUniqRequestId(value: () => String): Self = StObject.set(x, "getUniqRequestId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setServers(value: js.Promise[js.Array[String]]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
+    inline def setServers(value: js.Promise[js.Array[String]]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
   }
 }

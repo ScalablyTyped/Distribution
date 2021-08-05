@@ -10,6 +10,5 @@ object getIconClassNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getIconClassName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconClassName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getIconClassName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconClassName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -21,12 +21,10 @@ object tslibMod {
   @JSImport("rollup-plugin-typescript2/dist/tslib", "tslibSource")
   @js.native
   def tslibSource: String = js.native
-  @scala.inline
-  def tslibSource_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tslibSource")(x.asInstanceOf[js.Any])
+  inline def tslibSource_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tslibSource")(x.asInstanceOf[js.Any])
   
   @JSImport("rollup-plugin-typescript2/dist/tslib", "tslibVersion")
   @js.native
   def tslibVersion: String = js.native
-  @scala.inline
-  def tslibVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tslibVersion")(x.asInstanceOf[js.Any])
+  inline def tslibVersion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tslibVersion")(x.asInstanceOf[js.Any])
 }

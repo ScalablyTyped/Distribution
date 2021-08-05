@@ -51,85 +51,59 @@ trait IFilter
 }
 object IFilter {
   
-  @scala.inline
-  def apply(): IFilter = {
+  inline def apply(): IFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFilter]
   }
   
-  @scala.inline
-  implicit class IFilterMutableBuilder[Self <: IFilter] (val x: Self) extends AnyVal {
+  extension [Self <: IFilter](x: Self) {
     
-    @scala.inline
-    def setAnyMatch(value: Boolean): Self = StObject.set(x, "anyMatch", value.asInstanceOf[js.Any])
+    inline def setAnyMatch(value: Boolean): Self = StObject.set(x, "anyMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyMatchUndefined: Self = StObject.set(x, "anyMatch", js.undefined)
+    inline def setAnyMatchUndefined: Self = StObject.set(x, "anyMatch", js.undefined)
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
+    inline def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
+    inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
-    @scala.inline
-    def setFilterFn(value: js.Any): Self = StObject.set(x, "filterFn", value.asInstanceOf[js.Any])
+    inline def setFilterFn(value: js.Any): Self = StObject.set(x, "filterFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterFnUndefined: Self = StObject.set(x, "filterFn", js.undefined)
+    inline def setFilterFnUndefined: Self = StObject.set(x, "filterFn", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSetFilterFn(value: /* filterFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFilterFn", js.Any.fromFunction1(value))
+    inline def setSetFilterFn(value: /* filterFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFilterFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilterFnUndefined: Self = StObject.set(x, "setFilterFn", js.undefined)
+    inline def setSetFilterFnUndefined: Self = StObject.set(x, "setFilterFn", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

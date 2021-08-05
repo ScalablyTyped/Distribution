@@ -13,16 +13,13 @@ trait ExcludedRule extends StObject {
 }
 object ExcludedRule {
   
-  @scala.inline
-  def apply(RuleId: ResourceId): ExcludedRule = {
+  inline def apply(RuleId: ResourceId): ExcludedRule = {
     val __obj = js.Dynamic.literal(RuleId = RuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcludedRule]
   }
   
-  @scala.inline
-  implicit class ExcludedRuleMutableBuilder[Self <: ExcludedRule] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludedRule](x: Self) {
     
-    @scala.inline
-    def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: ResourceId): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
   }
 }

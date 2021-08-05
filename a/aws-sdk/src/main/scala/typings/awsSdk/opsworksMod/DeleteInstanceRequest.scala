@@ -23,28 +23,21 @@ trait DeleteInstanceRequest extends StObject {
 }
 object DeleteInstanceRequest {
   
-  @scala.inline
-  def apply(InstanceId: String): DeleteInstanceRequest = {
+  inline def apply(InstanceId: String): DeleteInstanceRequest = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteInstanceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteInstanceRequestMutableBuilder[Self <: DeleteInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setDeleteElasticIp(value: Boolean): Self = StObject.set(x, "DeleteElasticIp", value.asInstanceOf[js.Any])
+    inline def setDeleteElasticIp(value: Boolean): Self = StObject.set(x, "DeleteElasticIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteElasticIpUndefined: Self = StObject.set(x, "DeleteElasticIp", js.undefined)
+    inline def setDeleteElasticIpUndefined: Self = StObject.set(x, "DeleteElasticIp", js.undefined)
     
-    @scala.inline
-    def setDeleteVolumes(value: Boolean): Self = StObject.set(x, "DeleteVolumes", value.asInstanceOf[js.Any])
+    inline def setDeleteVolumes(value: Boolean): Self = StObject.set(x, "DeleteVolumes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteVolumesUndefined: Self = StObject.set(x, "DeleteVolumes", js.undefined)
+    inline def setDeleteVolumesUndefined: Self = StObject.set(x, "DeleteVolumes", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

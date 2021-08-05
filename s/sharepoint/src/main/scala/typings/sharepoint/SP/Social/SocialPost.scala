@@ -50,8 +50,7 @@ trait SocialPost
 }
 object SocialPost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -74,43 +73,30 @@ object SocialPost {
     __obj.asInstanceOf[SocialPost]
   }
   
-  @scala.inline
-  implicit class SocialPostMutableBuilder[Self <: SocialPost] (val x: Self) extends AnyVal {
+  extension [Self <: SocialPost](x: Self) {
     
-    @scala.inline
-    def setGet_attachment(value: () => SocialAttachment): Self = StObject.set(x, "get_attachment", js.Any.fromFunction0(value))
+    inline def setGet_attachment(value: () => SocialAttachment): Self = StObject.set(x, "get_attachment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_attributes(value: () => SocialPostAttributes): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
+    inline def setGet_attributes(value: () => SocialPostAttributes): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_authorIndex(value: () => Double): Self = StObject.set(x, "get_authorIndex", js.Any.fromFunction0(value))
+    inline def setGet_authorIndex(value: () => Double): Self = StObject.set(x, "get_authorIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_createdTime(value: () => String): Self = StObject.set(x, "get_createdTime", js.Any.fromFunction0(value))
+    inline def setGet_createdTime(value: () => String): Self = StObject.set(x, "get_createdTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
+    inline def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_likerInfo(value: () => SocialPostActorInfo): Self = StObject.set(x, "get_likerInfo", js.Any.fromFunction0(value))
+    inline def setGet_likerInfo(value: () => SocialPostActorInfo): Self = StObject.set(x, "get_likerInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_modifiedTime(value: () => String): Self = StObject.set(x, "get_modifiedTime", js.Any.fromFunction0(value))
+    inline def setGet_modifiedTime(value: () => String): Self = StObject.set(x, "get_modifiedTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_overlays(value: () => js.Array[SocialDataOverlay]): Self = StObject.set(x, "get_overlays", js.Any.fromFunction0(value))
+    inline def setGet_overlays(value: () => js.Array[SocialDataOverlay]): Self = StObject.set(x, "get_overlays", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_postType(value: () => SocialPostType): Self = StObject.set(x, "get_postType", js.Any.fromFunction0(value))
+    inline def setGet_postType(value: () => SocialPostType): Self = StObject.set(x, "get_postType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_preferredImageUri(value: () => String): Self = StObject.set(x, "get_preferredImageUri", js.Any.fromFunction0(value))
+    inline def setGet_preferredImageUri(value: () => String): Self = StObject.set(x, "get_preferredImageUri", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_source(value: () => SocialLink): Self = StObject.set(x, "get_source", js.Any.fromFunction0(value))
+    inline def setGet_source(value: () => SocialLink): Self = StObject.set(x, "get_source", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_text(value: () => String): Self = StObject.set(x, "get_text", js.Any.fromFunction0(value))
+    inline def setGet_text(value: () => String): Self = StObject.set(x, "get_text", js.Any.fromFunction0(value))
   }
 }

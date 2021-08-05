@@ -23,34 +23,25 @@ trait BannerConfig extends StObject {
 }
 object BannerConfig {
   
-  @scala.inline
-  def apply(): BannerConfig = {
+  inline def apply(): BannerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BannerConfig]
   }
   
-  @scala.inline
-  implicit class BannerConfigMutableBuilder[Self <: BannerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: BannerConfig](x: Self) {
     
-    @scala.inline
-    def setBackground(value: js.Array[String]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: js.Array[String]): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBackgroundVarargs(value: String*): Self = StObject.set(x, "background", js.Array(value :_*))
+    inline def setBackgroundVarargs(value: String*): Self = StObject.set(x, "background", js.Array(value :_*))
     
-    @scala.inline
-    def setHidePhaser(value: Boolean): Self = StObject.set(x, "hidePhaser", value.asInstanceOf[js.Any])
+    inline def setHidePhaser(value: Boolean): Self = StObject.set(x, "hidePhaser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidePhaserUndefined: Self = StObject.set(x, "hidePhaser", js.undefined)
+    inline def setHidePhaserUndefined: Self = StObject.set(x, "hidePhaser", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

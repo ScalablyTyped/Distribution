@@ -22,50 +22,36 @@ object anon {
   }
   object After {
     
-    @scala.inline
-    def apply(): After = {
+    inline def apply(): After = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[After]
     }
     
-    @scala.inline
-    implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
+    extension [Self <: After](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setAttribute(value: PartialSpaceAround): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: PartialSpaceAround): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setInsensitive(value: PartialSpaceAround): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
+      inline def setInsensitive(value: PartialSpaceAround): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
+      inline def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
       
-      @scala.inline
-      def setOperator(value: PartialSpaceAround): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: PartialSpaceAround): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      @scala.inline
-      def setValue(value: PartialSpaceAround): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PartialSpaceAround): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -81,38 +67,28 @@ object anon {
   }
   object Attribute {
     
-    @scala.inline
-    def apply(): Attribute = {
+    inline def apply(): Attribute = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attribute]
     }
     
-    @scala.inline
-    implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+    extension [Self <: Attribute](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: PartialSpaces): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: PartialSpaces): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setInsensitive(value: PartialSpaces): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
+      inline def setInsensitive(value: PartialSpaces): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
+      inline def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
       
-      @scala.inline
-      def setOperator(value: PartialSpaces): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: PartialSpaces): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      @scala.inline
-      def setValue(value: PartialSpaces): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PartialSpaces): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -132,44 +108,32 @@ object anon {
   }
   object Before {
     
-    @scala.inline
-    def apply(after: String, before: String): Before = {
+    inline def apply(after: String, before: String): Before = {
       val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any])
       __obj.asInstanceOf[Before]
     }
     
-    @scala.inline
-    implicit class BeforeMutableBuilder[Self <: Before] (val x: Self) extends AnyVal {
+    extension [Self <: Before](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttribute(value: PartialSpaces): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: PartialSpaces): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsensitive(value: PartialSpaces): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
+      inline def setInsensitive(value: PartialSpaces): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
+      inline def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
       
-      @scala.inline
-      def setOperator(value: PartialSpaces): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: PartialSpaces): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      @scala.inline
-      def setValue(value: PartialSpaces): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PartialSpaces): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -181,20 +145,16 @@ object anon {
   }
   object Column {
     
-    @scala.inline
-    def apply(column: Double, line: Double): Column = {
+    inline def apply(column: Double, line: Double): Column = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Column]
     }
     
-    @scala.inline
-    implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+    extension [Self <: Column](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -216,50 +176,36 @@ object anon {
   }
   object Insensitive {
     
-    @scala.inline
-    def apply(): Insensitive = {
+    inline def apply(): Insensitive = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Insensitive]
     }
     
-    @scala.inline
-    implicit class InsensitiveMutableBuilder[Self <: Insensitive] (val x: Self) extends AnyVal {
+    extension [Self <: Insensitive](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setInsensitive(value: String): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
+      inline def setInsensitive(value: String): Self = StObject.set(x, "insensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
+      inline def setInsensitiveUndefined: Self = StObject.set(x, "insensitive", js.undefined)
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+      inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
       
-      @scala.inline
-      def setSpaces(value: Attribute): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      inline def setSpaces(value: Attribute): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+      inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
       
-      @scala.inline
-      def setUnquoted(value: String): Self = StObject.set(x, "unquoted", value.asInstanceOf[js.Any])
+      inline def setUnquoted(value: String): Self = StObject.set(x, "unquoted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnquotedUndefined: Self = StObject.set(x, "unquoted", js.undefined)
+      inline def setUnquotedUndefined: Self = StObject.set(x, "unquoted", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -272,26 +218,20 @@ object anon {
   }
   object PartialOptions {
     
-    @scala.inline
-    def apply(): PartialOptions = {
+    inline def apply(): PartialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialOptions]
     }
     
-    @scala.inline
-    implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialOptions](x: Self) {
       
-      @scala.inline
-      def setLossless(value: Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
+      inline def setLossless(value: Boolean): Self = StObject.set(x, "lossless", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
+      inline def setLosslessUndefined: Self = StObject.set(x, "lossless", js.undefined)
       
-      @scala.inline
-      def setUpdateSelector(value: Boolean): Self = StObject.set(x, "updateSelector", value.asInstanceOf[js.Any])
+      inline def setUpdateSelector(value: Boolean): Self = StObject.set(x, "updateSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateSelectorUndefined: Self = StObject.set(x, "updateSelector", js.undefined)
+      inline def setUpdateSelectorUndefined: Self = StObject.set(x, "updateSelector", js.undefined)
     }
   }
   
@@ -304,26 +244,20 @@ object anon {
   }
   object PartialSpaceAround {
     
-    @scala.inline
-    def apply(): PartialSpaceAround = {
+    inline def apply(): PartialSpaceAround = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSpaceAround]
     }
     
-    @scala.inline
-    implicit class PartialSpaceAroundMutableBuilder[Self <: PartialSpaceAround] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSpaceAround](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     }
   }
   
@@ -336,26 +270,20 @@ object anon {
   }
   object PartialSpaces {
     
-    @scala.inline
-    def apply(): PartialSpaces = {
+    inline def apply(): PartialSpaces = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSpaces]
     }
     
-    @scala.inline
-    implicit class PartialSpacesMutableBuilder[Self <: PartialSpaces] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSpaces](x: Self) {
       
-      @scala.inline
-      def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     }
   }
 }

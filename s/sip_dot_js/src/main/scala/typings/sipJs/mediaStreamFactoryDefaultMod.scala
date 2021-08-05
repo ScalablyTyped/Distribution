@@ -11,6 +11,5 @@ object mediaStreamFactoryDefaultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultMediaStreamFactory(): MediaStreamFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMediaStreamFactory")().asInstanceOf[MediaStreamFactory]
+  inline def defaultMediaStreamFactory(): MediaStreamFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMediaStreamFactory")().asInstanceOf[MediaStreamFactory]
 }

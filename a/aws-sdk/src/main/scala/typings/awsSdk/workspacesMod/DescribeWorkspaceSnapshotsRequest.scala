@@ -13,16 +13,13 @@ trait DescribeWorkspaceSnapshotsRequest extends StObject {
 }
 object DescribeWorkspaceSnapshotsRequest {
   
-  @scala.inline
-  def apply(WorkspaceId: WorkspaceId): DescribeWorkspaceSnapshotsRequest = {
+  inline def apply(WorkspaceId: WorkspaceId): DescribeWorkspaceSnapshotsRequest = {
     val __obj = js.Dynamic.literal(WorkspaceId = WorkspaceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeWorkspaceSnapshotsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspaceSnapshotsRequestMutableBuilder[Self <: DescribeWorkspaceSnapshotsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspaceSnapshotsRequest](x: Self) {
     
-    @scala.inline
-    def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
   }
 }

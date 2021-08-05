@@ -15,7 +15,7 @@ class IonGrid protected ()
      with typings.ionicCore.componentsMod.Components.IonGrid {
   def this(c: ChangeDetectorRef, r: ElementRef[js.Any], z: NgZone) = this()
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * If `true`, the grid will have a fixed width based on the screen size.
@@ -23,5 +23,5 @@ class IonGrid protected ()
   /* CompleteClass */
   var fixed: Boolean = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

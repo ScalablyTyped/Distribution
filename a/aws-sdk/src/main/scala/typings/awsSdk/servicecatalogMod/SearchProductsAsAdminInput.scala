@@ -48,61 +48,43 @@ trait SearchProductsAsAdminInput extends StObject {
 }
 object SearchProductsAsAdminInput {
   
-  @scala.inline
-  def apply(): SearchProductsAsAdminInput = {
+  inline def apply(): SearchProductsAsAdminInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchProductsAsAdminInput]
   }
   
-  @scala.inline
-  implicit class SearchProductsAsAdminInputMutableBuilder[Self <: SearchProductsAsAdminInput] (val x: Self) extends AnyVal {
+  extension [Self <: SearchProductsAsAdminInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setFilters(value: ProductViewFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ProductViewFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "PageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: PageToken): Self = StObject.set(x, "PageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "PageToken", js.undefined)
     
-    @scala.inline
-    def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
+    inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortfolioIdUndefined: Self = StObject.set(x, "PortfolioId", js.undefined)
+    inline def setPortfolioIdUndefined: Self = StObject.set(x, "PortfolioId", js.undefined)
     
-    @scala.inline
-    def setProductSource(value: ProductSource): Self = StObject.set(x, "ProductSource", value.asInstanceOf[js.Any])
+    inline def setProductSource(value: ProductSource): Self = StObject.set(x, "ProductSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductSourceUndefined: Self = StObject.set(x, "ProductSource", js.undefined)
+    inline def setProductSourceUndefined: Self = StObject.set(x, "ProductSource", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: ProductViewSortBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: ProductViewSortBy): Self = StObject.set(x, "SortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "SortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "SortOrder", js.undefined)
   }
 }

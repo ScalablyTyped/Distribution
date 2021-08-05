@@ -13,20 +13,16 @@ trait MapLoadEvent extends StObject {
 }
 object MapLoadEvent {
   
-  @scala.inline
-  def apply(target: Map, `type`: String): MapLoadEvent = {
+  inline def apply(target: Map, `type`: String): MapLoadEvent = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLoadEvent]
   }
   
-  @scala.inline
-  implicit class MapLoadEventMutableBuilder[Self <: MapLoadEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MapLoadEvent](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Map): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Map): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

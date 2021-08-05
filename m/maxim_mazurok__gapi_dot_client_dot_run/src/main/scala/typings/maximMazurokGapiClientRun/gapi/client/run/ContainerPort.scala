@@ -17,31 +17,23 @@ trait ContainerPort extends StObject {
 }
 object ContainerPort {
   
-  @scala.inline
-  def apply(): ContainerPort = {
+  inline def apply(): ContainerPort = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerPort]
   }
   
-  @scala.inline
-  implicit class ContainerPortMutableBuilder[Self <: ContainerPort] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerPort](x: Self) {
     
-    @scala.inline
-    def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
+    inline def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
+    inline def setContainerPortUndefined: Self = StObject.set(x, "containerPort", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait OAuthCreateTokenFromRefreshTokenRequest extends StObject {
 }
 object OAuthCreateTokenFromRefreshTokenRequest {
   
-  @scala.inline
-  def apply(refreshToken: String): OAuthCreateTokenFromRefreshTokenRequest = {
+  inline def apply(refreshToken: String): OAuthCreateTokenFromRefreshTokenRequest = {
     val __obj = js.Dynamic.literal(refreshToken = refreshToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[OAuthCreateTokenFromRefreshTokenRequest]
   }
   
-  @scala.inline
-  implicit class OAuthCreateTokenFromRefreshTokenRequestMutableBuilder[Self <: OAuthCreateTokenFromRefreshTokenRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OAuthCreateTokenFromRefreshTokenRequest](x: Self) {
     
-    @scala.inline
-    def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
+    inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
   }
 }

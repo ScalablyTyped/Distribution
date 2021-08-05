@@ -82,103 +82,71 @@ trait NightwatchOptions extends StObject {
 }
 object NightwatchOptions {
   
-  @scala.inline
-  def apply(src_folders: String | js.Array[String], test_settings: NightwatchTestSettings): NightwatchOptions = {
+  inline def apply(src_folders: String | js.Array[String], test_settings: NightwatchTestSettings): NightwatchOptions = {
     val __obj = js.Dynamic.literal(src_folders = src_folders.asInstanceOf[js.Any], test_settings = test_settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[NightwatchOptions]
   }
   
-  @scala.inline
-  implicit class NightwatchOptionsMutableBuilder[Self <: NightwatchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchOptions](x: Self) {
     
-    @scala.inline
-    def setCustom_assertions_path(value: String | js.Array[String]): Self = StObject.set(x, "custom_assertions_path", value.asInstanceOf[js.Any])
+    inline def setCustom_assertions_path(value: String | js.Array[String]): Self = StObject.set(x, "custom_assertions_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom_assertions_pathUndefined: Self = StObject.set(x, "custom_assertions_path", js.undefined)
+    inline def setCustom_assertions_pathUndefined: Self = StObject.set(x, "custom_assertions_path", js.undefined)
     
-    @scala.inline
-    def setCustom_assertions_pathVarargs(value: String*): Self = StObject.set(x, "custom_assertions_path", js.Array(value :_*))
+    inline def setCustom_assertions_pathVarargs(value: String*): Self = StObject.set(x, "custom_assertions_path", js.Array(value :_*))
     
-    @scala.inline
-    def setCustom_commands_path(value: String | js.Array[String]): Self = StObject.set(x, "custom_commands_path", value.asInstanceOf[js.Any])
+    inline def setCustom_commands_path(value: String | js.Array[String]): Self = StObject.set(x, "custom_commands_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustom_commands_pathUndefined: Self = StObject.set(x, "custom_commands_path", js.undefined)
+    inline def setCustom_commands_pathUndefined: Self = StObject.set(x, "custom_commands_path", js.undefined)
     
-    @scala.inline
-    def setCustom_commands_pathVarargs(value: String*): Self = StObject.set(x, "custom_commands_path", js.Array(value :_*))
+    inline def setCustom_commands_pathVarargs(value: String*): Self = StObject.set(x, "custom_commands_path", js.Array(value :_*))
     
-    @scala.inline
-    def setDisable_color(value: Boolean): Self = StObject.set(x, "disable_color", value.asInstanceOf[js.Any])
+    inline def setDisable_color(value: Boolean): Self = StObject.set(x, "disable_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisable_colorUndefined: Self = StObject.set(x, "disable_color", js.undefined)
+    inline def setDisable_colorUndefined: Self = StObject.set(x, "disable_color", js.undefined)
     
-    @scala.inline
-    def setGlobals_path(value: String): Self = StObject.set(x, "globals_path", value.asInstanceOf[js.Any])
+    inline def setGlobals_path(value: String): Self = StObject.set(x, "globals_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobals_pathUndefined: Self = StObject.set(x, "globals_path", js.undefined)
+    inline def setGlobals_pathUndefined: Self = StObject.set(x, "globals_path", js.undefined)
     
-    @scala.inline
-    def setLive_output(value: Boolean): Self = StObject.set(x, "live_output", value.asInstanceOf[js.Any])
+    inline def setLive_output(value: Boolean): Self = StObject.set(x, "live_output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLive_outputUndefined: Self = StObject.set(x, "live_output", js.undefined)
+    inline def setLive_outputUndefined: Self = StObject.set(x, "live_output", js.undefined)
     
-    @scala.inline
-    def setOutput_folder(value: String): Self = StObject.set(x, "output_folder", value.asInstanceOf[js.Any])
+    inline def setOutput_folder(value: String): Self = StObject.set(x, "output_folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput_folderUndefined: Self = StObject.set(x, "output_folder", js.undefined)
+    inline def setOutput_folderUndefined: Self = StObject.set(x, "output_folder", js.undefined)
     
-    @scala.inline
-    def setPage_objects_path(value: String | js.Array[String]): Self = StObject.set(x, "page_objects_path", value.asInstanceOf[js.Any])
+    inline def setPage_objects_path(value: String | js.Array[String]): Self = StObject.set(x, "page_objects_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage_objects_pathUndefined: Self = StObject.set(x, "page_objects_path", js.undefined)
+    inline def setPage_objects_pathUndefined: Self = StObject.set(x, "page_objects_path", js.undefined)
     
-    @scala.inline
-    def setPage_objects_pathVarargs(value: String*): Self = StObject.set(x, "page_objects_path", js.Array(value :_*))
+    inline def setPage_objects_pathVarargs(value: String*): Self = StObject.set(x, "page_objects_path", js.Array(value :_*))
     
-    @scala.inline
-    def setParallel_process_delay(value: Double): Self = StObject.set(x, "parallel_process_delay", value.asInstanceOf[js.Any])
+    inline def setParallel_process_delay(value: Double): Self = StObject.set(x, "parallel_process_delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallel_process_delayUndefined: Self = StObject.set(x, "parallel_process_delay", js.undefined)
+    inline def setParallel_process_delayUndefined: Self = StObject.set(x, "parallel_process_delay", js.undefined)
     
-    @scala.inline
-    def setSelenium(value: NightwatchSeleniumOptions): Self = StObject.set(x, "selenium", value.asInstanceOf[js.Any])
+    inline def setSelenium(value: NightwatchSeleniumOptions): Self = StObject.set(x, "selenium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeleniumUndefined: Self = StObject.set(x, "selenium", js.undefined)
+    inline def setSeleniumUndefined: Self = StObject.set(x, "selenium", js.undefined)
     
-    @scala.inline
-    def setSrc_folders(value: String | js.Array[String]): Self = StObject.set(x, "src_folders", value.asInstanceOf[js.Any])
+    inline def setSrc_folders(value: String | js.Array[String]): Self = StObject.set(x, "src_folders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc_foldersVarargs(value: String*): Self = StObject.set(x, "src_folders", js.Array(value :_*))
+    inline def setSrc_foldersVarargs(value: String*): Self = StObject.set(x, "src_folders", js.Array(value :_*))
     
-    @scala.inline
-    def setTest_runner(value: String | NightwatchTestRunner): Self = StObject.set(x, "test_runner", value.asInstanceOf[js.Any])
+    inline def setTest_runner(value: String | NightwatchTestRunner): Self = StObject.set(x, "test_runner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest_runnerUndefined: Self = StObject.set(x, "test_runner", js.undefined)
+    inline def setTest_runnerUndefined: Self = StObject.set(x, "test_runner", js.undefined)
     
-    @scala.inline
-    def setTest_settings(value: NightwatchTestSettings): Self = StObject.set(x, "test_settings", value.asInstanceOf[js.Any])
+    inline def setTest_settings(value: NightwatchTestSettings): Self = StObject.set(x, "test_settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest_workers(value: Boolean | NightwatchTestWorker): Self = StObject.set(x, "test_workers", value.asInstanceOf[js.Any])
+    inline def setTest_workers(value: Boolean | NightwatchTestWorker): Self = StObject.set(x, "test_workers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest_workersUndefined: Self = StObject.set(x, "test_workers", js.undefined)
+    inline def setTest_workersUndefined: Self = StObject.set(x, "test_workers", js.undefined)
     
-    @scala.inline
-    def setWebdriver(value: Cliargs): Self = StObject.set(x, "webdriver", value.asInstanceOf[js.Any])
+    inline def setWebdriver(value: Cliargs): Self = StObject.set(x, "webdriver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebdriverUndefined: Self = StObject.set(x, "webdriver", js.undefined)
+    inline def setWebdriverUndefined: Self = StObject.set(x, "webdriver", js.undefined)
   }
 }

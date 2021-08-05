@@ -14,8 +14,7 @@ trait NameRouteName[RouteName /* <: /* keyof @react-navigation/routers.@react-na
 }
 object NameRouteName {
   
-  @scala.inline
-  def apply[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](
+  inline def apply[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](
     name: RouteName,
     params: /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] */ js.Any
   ): NameRouteName[RouteName] = {
@@ -23,20 +22,15 @@ object NameRouteName {
     __obj.asInstanceOf[NameRouteName[RouteName]]
   }
   
-  @scala.inline
-  implicit class NameRouteNameMutableBuilder[Self <: NameRouteName[?], RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */] (val x: Self & NameRouteName[RouteName]) extends AnyVal {
+  extension [Self <: NameRouteName[?], RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */](x: Self & NameRouteName[RouteName]) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: RouteName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(
+    inline def setParams(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] */ js.Any
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }

@@ -33,25 +33,19 @@ trait PlusWebviewWebviewProgressStyles extends StObject {
 }
 object PlusWebviewWebviewProgressStyles {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewProgressStyles = {
+  inline def apply(): PlusWebviewWebviewProgressStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewProgressStyles]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewProgressStylesMutableBuilder[Self <: PlusWebviewWebviewProgressStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewProgressStyles](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
   }
 }
